@@ -2,6 +2,8 @@
 
 ## 2026-04-02
 
+- 新增《五层合同、缓存断点与Prompt装配时序》《统一预算器：能力裁剪、Token延续与状态外化》《Contract优先、运行时底盘与公开镜像缺口》三篇架构专题，把 prompt 五层合同、统一预算器与 contract-first / runtime-first 判断标准继续下沉到机制层
+- 更新《使用指南》与架构 / 使用专题 README，把五层合同、稳定前缀、省 token 正解与“先找 contract 再看热点文件”的使用与阅读顺序收编进主入口
 - 新增哲学专题《可见边界优于脑补全貌》《Workflow不是脚本而是编排对象》《用户可见真相优于底层原始文本》《治理开关不是部署尾巴而是输入边界》，并把这些第一性原理正式收编到《设计哲学》与《第一性原理与苏格拉底反思》
 - 新增《workflow engine、LocalWorkflowTask 与可见边界》《REPL transcript search、selection 与 scroll 协同》两篇架构专题，补 workflow 可见边界与前台认知控制面的更细机制
 - 新增《Channels、托管策略与组织级治理实践》《企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批》两篇使用专题，补组织级治理与托管 rollout 路径

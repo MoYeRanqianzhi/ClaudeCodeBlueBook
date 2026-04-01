@@ -11,11 +11,13 @@
 ## 0. 代表性源码锚点
 
 - `claude-code-source-code/src/utils/systemPrompt.ts:29-123`
+- `claude-code-source-code/src/tools.ts:253-366`
 - `claude-code-source-code/src/constants/prompts.ts:105-115`
 - `claude-code-source-code/src/constants/prompts.ts:343-350`
 - `claude-code-source-code/src/constants/prompts.ts:508-549`
 - `claude-code-source-code/src/context.ts:22-34`
 - `claude-code-source-code/src/context.ts:113-149`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-158`
 - `claude-code-source-code/src/utils/attachments.ts:500-522`
 - `claude-code-source-code/src/utils/attachments.ts:1403-1489`
 - `claude-code-source-code/src/utils/attachments.ts:3521-3685`
@@ -58,6 +60,24 @@ Claude Code 的 prompt 魔力来自四层叠加：
 - 再决定注入层次
 - 最后才得到最终文案
 
+### 2.1 装配顺序比“提示词写得漂亮”更重要
+
+很多系统把 prompt 设计理解成：
+
+- 先写一段 system prompt
+- 再往里面慢慢缝补规则
+
+Claude Code 不是这样。它先决定：
+
+1. 当前是不是 coordinator
+2. 当前是不是 main-thread agent
+3. custom prompt 和 append prompt 各自处在什么层
+4. proactive 模式下 agent prompt 是替换默认 prompt，还是叠加在默认 prompt 上
+
+这意味着真正的设计单位不是某一段词，而是：
+
+- 合同装配图
+
 ## 3. cache 稳定性直接塑造了 prompt 结构
 
 `SYSTEM_PROMPT_DYNAMIC_BOUNDARY` 明确把系统提示词切成：
@@ -76,6 +96,17 @@ Claude Code 的 prompt 魔力来自四层叠加：
 - agent listing、deferred tools、MCP instructions 都尽量走 delta，而不是每轮重写整段说明。
 
 所以 Claude Code 的 prompt 结构，本质上是被 token 经济和 cache 语义共同雕出来的。
+
+### 3.1 工具 ABI 也被做成 cache-stable contract
+
+Claude Code 没有把“工具池”当作系统提示词之外的独立小事。
+
+`filterToolsByDenyRules(...)` 会在调用前就剥离 blanket deny 工具，`assembleToolPool(...)` 则把 built-in 工具和 MCP 工具分区排序，保持 built-in 前缀连续，避免新连接的 MCP 工具把 prompt cache 前缀整体打碎。
+
+所以 prompt 稳定性至少有两部分：
+
+1. system prompt 和 attachments 的文本稳定性
+2. 当前可见工具 ABI 的排序稳定性
 
 ## 4. prompt 魔力来自“状态晚绑定”
 
@@ -96,6 +127,19 @@ Claude Code 很少把动态状态直接塞进静态 prompt。
 这解释了为什么 Claude Code 的 prompt 看起来“像懂现场”：
 
 - 因为现场真的被运行时状态对象持续喂进来了。
+
+`promptCacheBreakDetection.ts` 进一步说明作者没有把这件事停留在理念层。
+
+它显式跟踪：
+
+- system hash
+- tools hash
+- cache control hash
+- per-tool schema hash
+- global cache strategy
+- beta headers
+
+换句话说，Claude Code 甚至把“prompt 魔力失效”的条件也写成了可检测对象。
 
 ## 5. 多 Agent prompt 的本体是协作语法
 
@@ -120,6 +164,19 @@ Claude Code 很少把动态状态直接塞进静态 prompt。
 - 权限与状态通道
 
 四者一起工作。
+
+### 5.1 mailbox 不是聊天框，而是受过滤的协作入口
+
+`getTeammateMailboxAttachments(...)` 最有价值的地方不是“能收消息”，而是它显式处理了三类协作污染：
+
+1. 结构化协议消息不能当普通 LLM 文本投喂
+2. leader inbox 不能泄漏到 teammate 视角
+3. 文件邮箱和 AppState inbox 之间的重复消息要做去重
+
+这说明 Claude Code 的多 Agent 语法并不是“谁都给彼此发点话”，而是：
+
+- 协作文本和协作协议必须分流
+- 同一条消息在不同视角下必须维持一致真相
 
 ## 6. 苏格拉底式追问
 
@@ -151,6 +208,16 @@ Claude Code 很少把动态状态直接塞进静态 prompt。
 而不是：
 
 - 多个受约束的协作单元
+
+### 6.4 如果 prompt 已经这么强，为什么还要坚持过滤协议消息
+
+因为 prompt 再强，也不该承担协议解析器的职责。
+
+如果权限响应、shutdown 协议、结构化 mailbox 消息都混进普通上下文：
+
+- 模型看到的“当前现场”就不再可靠
+- 协作语法和系统语法会相互污染
+- 搜索、复制、前台来源判断也会一起失真
 
 ## 7. 一句话总结
 
