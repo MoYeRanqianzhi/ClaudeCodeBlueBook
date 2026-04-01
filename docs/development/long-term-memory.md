@@ -145,6 +145,8 @@
   - 安装状态、启用状态与策略状态必须分层叙述
   - PolicySettings控制平面、Sandbox契约与三套预算器
   - 统一第一性原理不等于单一预算实现
+  - 安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation
+  - 安全、治理、Token与Prompt稳定性本质上是同一收口问题
   - CLAUDE.md、记忆层与上下文注入实践
   - Channels、托管策略与组织级治理实践
   - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
@@ -203,6 +205,8 @@
 - 远程恢复深线还应继续补 close code 分层、401 transport rebuild、timeout budget、preflight fail-closed 与“恢复期间主动丢消息”的哲学，不要退回“断线重连”叙述
 - 插件深线还应继续补 authoritative enabled truth、editable scope truth、installation truth 与 policy truth 的分层，不要退回“enabled 开关”叙述
 - 安全/省 token 深线还应继续补 `policySettings` 作为控制平面、sandbox contract 到 adapter enforcement、以及“对象级替换 / headroom / continuation”三套预算器的分工
+- 安全深线还应继续补“扩权输入只认高信任来源、收权允许本地自限、adapter 还要反向保护控制平面本身”这条输入边界控制平面主线
+- 更高一层的第一性原理已升级为“Claude Code 真正在压制的是模型可达世界的无序扩张”，安全、治理、token 与 prompt 稳定性应按动作空间 / 权威空间 / 上下文空间 / 时间空间四面统一叙述
 - 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
 - 主入口、navigation 与专题 README 必须和正文同步更新，否则蓝皮书会先在检索层失真
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述

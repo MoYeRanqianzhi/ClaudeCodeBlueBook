@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation》《安全、治理、Token与Prompt稳定性本质上是同一收口问题》，并回写《第一性原理与苏格拉底反思》与多处索引，把“反无序扩张”提升为安全/治理/token/prompt 稳定性四线共用的总解释轴
 - 新增《PolicySettings控制平面、Sandbox契约与三套预算器》《统一第一性原理不等于单一预算实现》，把安全/省 token 深线继续推进到“高阶治理控制平面 + 多套预算实现共用同一反扩张原则”的层次
 - 新增《插件双真相：enabled、editable scope与policy block不能混写》《安装状态、启用状态与策略状态必须分层叙述》，把插件设计深线推进到 runtime truth、editable truth 与 policy truth 必须分开的层次
 - 新增《远程恢复、401与Close Code语义手册》《远程失败不是断线重连：401、Close Code与环境恢复的分层语义》《显式远程失败优于模糊在线状态》，并清理远程失败旧稿编号冲突，把远程恢复深线推进到“分层失败语义、防假连续性、预检消毒”这一层

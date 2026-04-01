@@ -32,18 +32,20 @@
 10. `philosophy/21-Prompt魔力来自约束叠加与状态反馈.md`
 11. `philosophy/30-Prompt不是一次请求而是可复用前缀资产.md`
 12. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
+13. `philosophy/38-安全、治理、Token与Prompt稳定性本质上是同一收口问题.md`
 
 这条线的核心结论是：
 
-- prompt 魔力来自装配顺序、工具 ABI、缓存边界、状态晚绑定、协作语法、辅助循环共享同一前缀资产，以及系统能够解释为什么稳定与为什么失稳
+- prompt 魔力来自装配顺序、工具 ABI、缓存边界、状态晚绑定、协作语法、辅助循环共享同一前缀资产，以及系统把稳定前缀本身当成运行时治理对象
 
-## 2. 统一预算器深线
+## 2. 反扩张与预算实现深线
 
 如果问题是：
 
 - 为什么安全和省 token 不是两套系统。
-- 为什么治理设置、能力裁剪、budget continuation 应该放到同一张图里。
+- 为什么治理设置、能力裁剪、budget continuation 与 prompt 稳定性应该放到同一张图里。
 - 为什么“省 token”首先在控制什么进入上下文，而不是在压缩句子。
+- 为什么运行时里需要多套预算机制，却仍共享同一第一性原理。
 
 建议顺序：
 
@@ -58,13 +60,15 @@
 9. `guides/07-用Context Usage与状态回写调优Prompt和预算.md`
 10. `architecture/43-预算观测、Context Suggestions与调优闭环.md`
 11. `architecture/50-PolicySettings控制平面、Sandbox契约与三套预算器.md`
-12. `philosophy/22-安全、成本与体验必须共用预算器.md`
-13. `philosophy/31-可观测预算优于经验调优.md`
-14. `philosophy/37-统一第一性原理不等于单一预算实现.md`
+12. `architecture/51-安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation.md`
+13. `philosophy/22-安全、成本与体验必须共用预算器.md`
+14. `philosophy/31-可观测预算优于经验调优.md`
+15. `philosophy/37-统一第一性原理不等于单一预算实现.md`
+16. `philosophy/38-安全、治理、Token与Prompt稳定性本质上是同一收口问题.md`
 
 这条线的核心结论是：
 
-- Claude Code 的预算思想同时裁动作空间、上下文空间与认知噪音，但运行时里并不是一个计数器统治一切，而是多套预算机制共同服务同一反扩张原则
+- Claude Code 真正持续压制的是模型可达世界的无序扩张；预算器只是它在动作空间、权威空间、上下文空间与时间空间上的若干具体控制器
 
 ## 3. 权威真相深线
 
@@ -131,10 +135,11 @@
 5. `guides/05-企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批.md`
 6. `philosophy/26-用户可见真相优于底层原始文本.md`
 7. `philosophy/27-治理开关不是部署尾巴而是输入边界.md`
+8. `philosophy/38-安全、治理、Token与Prompt稳定性本质上是同一收口问题.md`
 
 这条线的核心结论是：
 
-- 用户可见真相和输入边界共同决定系统为什么可信
+- 用户可见真相、输入边界与稳定前缀共同决定系统为什么可信
 
 ## 6. 远程恢复与失败语义深线
 
@@ -178,10 +183,11 @@
 10. `philosophy/28-复杂性应该收敛到扼流点而不是散落到产品层.md`
 11. `philosophy/29-反竞争条件意识优于局部功能正确.md`
 12. `philosophy/34-控制平面先于加载表现.md`
+13. `architecture/51-安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation.md`
 
 这条线的核心结论是：
 
-- Claude Code 值得学的不是“零技术债”，而是 contract-first、race-aware、runtime-first，以及连本地查询都要先建立 authoritative control plane 的偿债方向
+- Claude Code 值得学的不是“零技术债”，而是 contract-first、race-aware、runtime-first，以及连输入边界都要先建立 authority control plane 的偿债方向
 
 ## 8. 真正的使用路线
 

@@ -53,6 +53,7 @@
 - [32-安全、权限、治理与Token预算统一图](32-%E5%AE%89%E5%85%A8%E3%80%81%E6%9D%83%E9%99%90%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8EToken%E9%A2%84%E7%AE%97%E7%BB%9F%E4%B8%80%E5%9B%BE.md)
 - [37-统一预算器：能力裁剪、Token延续与状态外化](37-%E7%BB%9F%E4%B8%80%E9%A2%84%E7%AE%97%E5%99%A8%EF%BC%9A%E8%83%BD%E5%8A%9B%E8%A3%81%E5%89%AA%E3%80%81Token%E5%BB%B6%E7%BB%AD%E4%B8%8E%E7%8A%B6%E6%80%81%E5%A4%96%E5%8C%96.md)
 - [50-PolicySettings控制平面、Sandbox契约与三套预算器](50-PolicySettings%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%E3%80%81Sandbox%E5%A5%91%E7%BA%A6%E4%B8%8E%E4%B8%89%E5%A5%97%E9%A2%84%E7%AE%97%E5%99%A8.md)
+- [51-安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation](51-%E5%AE%89%E5%85%A8%E5%8D%B3%E8%BE%93%E5%85%A5%E8%BE%B9%E7%95%8C%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%EF%BC%9AManaged%20Authority%E3%80%81Trusted%20Sources%E4%B8%8ERuntime%20Boundary%20Compilation.md)
 
 ### 7. 宿主、前台与产品边界平面
 
@@ -85,7 +86,8 @@
 - 想看 prompt 魔力怎样扩展到 `/btw`、suggestion、memory、summary 这些辅助循环：`31 -> 39 -> 42`
 - 想看 prompt 为什么继续升级成“可解释稳定性系统”：`39 -> 42 -> 46`
 - 想看多 Agent、workflow 与隔离：`10 -> 30 -> 34 -> 45`
-- 想看权限、安全、治理与 token 预算统一图：`05 -> 11 -> 19 -> 23 -> 32 -> 37 -> 50`
+- 想看权限、安全、治理与 token 预算统一图：`05 -> 11 -> 19 -> 23 -> 32 -> 37 -> 50 -> 51`
+- 想看安全为什么更像输入边界控制平面而不是事后检查：`19 -> 23 -> 50 -> 51`
 - 想看宿主控制平面：`13 -> 14 -> 15 -> 17`
 - 想看远程失败为什么也是分层语义而不是“断线重连”：`15 -> 16 -> 48`
 - 想看 REPL 前台如何从状态机深入到 search / selection / scroll 协同：`04 -> 26 -> 35`

@@ -1097,6 +1097,62 @@
 - `claude-code-source-code/src/components/ContextSuggestions.tsx:11-45`
 - `claude-code-source-code/src/cli/print.ts:2961-2978`
 
+### AE. 安全深线还应升级到“输入边界控制平面”
+
+- `policySettings` 最关键的作用不是“多一个 enterprise source”，而是把“谁有资格扩张运行时边界”建模成一等 authority source。
+- Claude Code 明显采用不对称安全模型：allow/allowlist/可执行 hook 这类扩权输入可以被锁到 managed source；deny 与自我限制仍允许来自本地来源。这在 sandbox、permission rules、hooks、MCP allowlist 上都能看到同构模式。
+- `sandboxTypes -> settings/types -> sdk/coreTypes -> sandbox-adapter` 说明安全边界是正式 contract 再编译成 runtime hard boundary，而不是工具内部零散判断。
+- `sandbox-adapter` 不只执行限制，还会 deny write 到 settings 文件、managed drop-ins 和 `.claude/skills`，说明 runtime boundary 还在反向保护 control plane 本身不被 agent 篡改。
+- `remoteManagedSettings` 更像策略分发与热更新通道；真正的安全边界仍在 source gating、settings merge 与 adapter enforcement。
+
+证据：
+
+- `claude-code-source-code/src/utils/settings/constants.ts:159-180`
+- `claude-code-source-code/src/utils/settings/settings.ts:319-343`
+- `claude-code-source-code/src/utils/settings/settings.ts:665-689`
+- `claude-code-source-code/src/utils/managedEnv.ts:93-135`
+- `claude-code-source-code/src/entrypoints/sandboxTypes.ts:1-133`
+- `claude-code-source-code/src/entrypoints/sdk/coreTypes.ts:1-16`
+- `claude-code-source-code/src/utils/settings/types.ts:655-655`
+- `claude-code-source-code/src/utils/permissions/permissionsLoader.ts:27-120`
+- `claude-code-source-code/src/utils/hooks/hooksConfigSnapshot.ts:9-83`
+- `claude-code-source-code/src/services/mcp/config.ts:337-360`
+- `claude-code-source-code/src/utils/settings/pluginOnlyPolicy.ts:1-58`
+- `claude-code-source-code/src/utils/sandbox/sandbox-adapter.ts:172-247`
+- `claude-code-source-code/src/utils/sandbox/sandbox-adapter.ts:743-752`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:15-60`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:321-337`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:457-550`
+- `claude-code-source-code/src/utils/settings/changeDetector.ts:437-447`
+
+### AF. Claude Code 真正在预算的是“无序自由度”
+
+- 更高一层的统一解释不是“单一预算器”，而是 Claude Code 在同时约束动作空间、权威空间、上下文空间与时间空间的无序扩张。
+- 工具过滤、`policySettings` 的 first-source-wins、memoized system sections、tool result replacement、turn continuation、cache-break explanation 这些看似分散的机制，本质上都在反对“先全暴露再事后补救”。
+- prompt 稳定性不只是性能技巧，而是运行时治理的一部分；如果 authority、tool order、sections、fork prefix 都会漂移，系统就既不安全，也不稳定，还更贵。
+- Claude Code 共享的不只是原则，也共享方法：typed decision、frozen decisions、stable prefix、explicit observability。
+- `get_context_usage` 外化 `systemPromptSections` 与 `messageBreakdown`，说明这套反扩张系统并不是内部优化，而是正式控制面真相。
+
+证据：
+
+- `claude-code-source-code/src/tools.ts:345-364`
+- `claude-code-source-code/src/utils/toolPool.ts:63-74`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1167-1259`
+- `claude-code-source-code/src/utils/settings/settings.ts:322-343`
+- `claude-code-source-code/src/utils/settings/settings.ts:675-689`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:17-50`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:272-320`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:740-772`
+- `claude-code-source-code/src/query.ts:369-383`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-75`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-315`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:437-470`
+- `claude-code-source-code/src/utils/forkedAgent.ts:47-79`
+- `claude-code-source-code/src/query/stopHooks.ts:92-99`
+- `claude-code-source-code/src/commands/btw/btw.tsx:183-210`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1353-1363`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:175-215`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。

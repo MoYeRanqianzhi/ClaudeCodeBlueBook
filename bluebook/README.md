@@ -67,8 +67,8 @@
 
 ### 5. 想研究安全、风控与治理
 
-- 产品内安全先读 `architecture/05 -> architecture/11 -> architecture/19 -> architecture/32 -> architecture/37`
-- 哲学收束看 `philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/27 -> philosophy/31`
+- 产品内安全先读 `architecture/05 -> architecture/11 -> architecture/19 -> architecture/32 -> architecture/37 -> architecture/50 -> architecture/51`
+- 哲学收束看 `philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/27 -> philosophy/31 -> philosophy/37 -> philosophy/38`
 - 平台风控与账号治理读 [risk/README](risk/README.md)
 
 ### 6. 想研究源码结构与工程先进性
@@ -86,15 +86,15 @@
 - 协作：`architecture/10` -> `architecture/30` -> `architecture/34` -> `guides/02`
 - 宿主：`api/13` -> `architecture/13` -> `philosophy/09`
 - 恢复：`architecture/06` -> `architecture/16` -> `architecture/25`
-- 预算：`architecture/21` -> `architecture/32` -> `architecture/37` -> `philosophy/22`
-- 治理：`04` -> `api/28` -> `guides/04` -> `guides/05` -> `philosophy/27` -> `risk/README`
+- 预算：`architecture/21` -> `architecture/32` -> `architecture/37` -> `architecture/50` -> `philosophy/22` -> `philosophy/37` -> `philosophy/38`
+- 治理：`04` -> `api/28` -> `guides/04` -> `guides/05` -> `architecture/50` -> `architecture/51` -> `philosophy/27` -> `philosophy/38` -> `risk/README`
 - 目录拓扑：`05` -> `api/23` -> `api/29` -> `api/30`
 
 ## 按问题阅读
 
 ### 为什么 prompt 看起来有魔力
 
-- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> architecture/46 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30 -> philosophy/33`
+- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> architecture/46 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30 -> philosophy/33 -> philosophy/38`
 
 ### 为什么它不像普通 IDE 插件
 
@@ -110,7 +110,15 @@
 
 ### 为什么安全和 token 经济要一起看
 
-- `03 -> architecture/19 -> architecture/21 -> architecture/32 -> architecture/37 -> architecture/50 -> philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/37`
+- `03 -> architecture/19 -> architecture/21 -> architecture/32 -> architecture/37 -> architecture/50 -> architecture/51 -> philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/37 -> philosophy/38`
+
+### 为什么安全不是事后检查而是输入边界控制平面
+
+- `03 -> architecture/19 -> architecture/23 -> architecture/50 -> architecture/51 -> philosophy/27 -> philosophy/38`
+
+### 为什么 prompt 稳定性不是性能技巧而是运行时治理
+
+- `06 -> architecture/31 -> architecture/39 -> architecture/46 -> architecture/50 -> philosophy/30 -> philosophy/33 -> philosophy/38`
 
 ### 为什么宿主接入不能只看 `query(prompt)`
 
