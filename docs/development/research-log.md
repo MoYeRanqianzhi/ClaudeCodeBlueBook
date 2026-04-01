@@ -992,6 +992,39 @@
 - `claude-code-source-code/src/cli/handlers/auth.ts:233-315`
 - `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:1-88`
 
+### AX. China-facing access ecology should be analyzed with explicit epistemic boundaries
+
+- Anthropic 官方支持国家/地区页面当前未列出中国大陆，Claude Code 相关文档又明确要求互联网连接完成认证和 AI 处理，并支持 Claude.ai、API、Bedrock、Vertex 等官方路径；这解释了中国用户面临的基础接入摩擦不是单一网络问题，而是入口层摩擦。
+- Anthropic 官方还公开写了第三方 LLM gateway / proxy 的集成文档，这说明“兼容入口”是被产品面显式考虑过的接入形态，但不等于任何第三方入口都与官方全链路能力等价。
+- AnyRouter 自身公开文档明确把自己定位为 Claude Code 中转/API 转发入口，强调国内直连、免费额度、无信用卡门槛，并公开展示基于 `ANTHROPIC_BASE_URL` 的使用方式。
+- AnyRouter FAQ 还公开承认 `claude --offline` 的相关检查主要看 Google 连通性，且 `fetch` 仍依赖 Claude 国际版服务，说明第三方兼容入口重写的是部分接入面，而不是整个官方能力面。
+- 公开社区材料能够支持“中转站/兼容代理是中国用户常见实际使用方式”这一观察，但不能自动推出某个具体幕后公司关系。
+- 截至当前检索到的公开资料，我未找到足够可靠证据证明 AnyRouter 与智谱存在明确控制/运营关系；这类说法应保持在“未证实传闻”或“一般性战略推演”层面。
+- 智谱官网公开材料能够支持另一类更稳健的推断：其确实高度重视 coding/agentic workflow、API 平台、agent 产品和开发者流量，并使用大规模 token 激励；但这与 AnyRouter 的具体归属关系不是同一层事实。
+- Claude Code 源码还能进一步校正认知边界：客户端虽支持 `ANTHROPIC_BASE_URL`，但会显式区分第一方 Anthropic host 与第三方 host；工具搜索、流式接口、Remote Control、OAuth 上传/附件、远程托管设置等能力都表明第三方兼容入口通常只能部分重写接入问题，不能自动等价官方全链路。
+
+证据:
+
+- `https://www.anthropic.com/supported-countries`
+- `https://docs.anthropic.com/zh-CN/docs/claude-code/setup`
+- `https://docs.anthropic.com/zh-TW/docs/claude-code/third-party-integrations`
+- `https://docs.anthropic.com/zh-CN/docs/claude-code/amazon-bedrock`
+- `https://docs.anyrouter.top/`
+- `https://www.whois.com/whois/anyrouter.top`
+- `https://www.zhipuai.cn/zh`
+- `claude-code-source-code/src/utils/preflightChecks.tsx:19-21`
+- `claude-code-source-code/src/utils/preflightChecks.tsx:130-130`
+- `claude-code-source-code/src/utils/apiPreconnect.ts:56-60`
+- `claude-code-source-code/src/services/api/filesApi.ts:30-36`
+- `claude-code-source-code/src/utils/model/providers.ts:21-36`
+- `claude-code-source-code/src/utils/toolSearch.ts:282-307`
+- `claude-code-source-code/src/services/api/claude.ts:2607-2618`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:19-23`
+- `claude-code-source-code/src/utils/auth.ts:1611-1616`
+- `claude-code-source-code/src/tools/BriefTool/upload.ts:121-122`
+- `claude-code-source-code/src/bridge/inboundAttachments.ts:77-83`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:188-201`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -1059,6 +1092,7 @@
 - 已补风控专题 `58-治理主权与恢复主动权：谁能关、谁能开、谁能替你说 yes`，把平台、组织、用户、替代批准面和自动恢复主权收束成一张主权图
 - 已补风控专题 `59-资产保全与退出策略：账号风控窗口里真正该保护的不是面子而是工作连续性`，把用户利益保护进一步压缩成 transcript、日志、录屏和 worktree 资产保全逻辑
 - 已补风控专题 `60-结构化求助模板库：用户、管理员与平台支持的最短高质量文本`，把状态面和分流逻辑转化成可直接复制的高质量求助文本
+- 已补风控专题 `61-中国用户使用生态与认识论边界：官方路径、中转站与幕后叙事该如何判断`，把官方门槛、AnyRouter 这类中转站、以及 AnyRouter/智谱 关系的证据边界明确分层
 
 ## 下一步待办
 
