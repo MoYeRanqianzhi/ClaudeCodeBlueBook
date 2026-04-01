@@ -890,6 +890,25 @@
 - `claude-code-source-code/src/cli/print.ts:5241-5270`
 - `claude-code-source-code/src/utils/messages.ts:5133-5188`
 
+### AC. Prompt 深线还应继续升级到“辅助循环共享前缀资产网络”
+
+- `CacheSafeParams` 不只服务主线程本轮请求，还被 `/btw`、prompt suggestion、session memory、extract memories、auto-dream、agent summary 这些辅助循环复用。
+- 这说明 Claude Code 的 prompt 魔力并不是“主线程 system prompt 很强”，而是主线程持续生产可被旁路循环继承的 prefix asset。
+- 真正的设计单位因此不只是单次 query，而是“主线程 + 多个 post-turn / side-loop fork”组成的前缀共享网络。
+
+证据：
+
+- `claude-code-source-code/src/query/stopHooks.ts:92-99`
+- `claude-code-source-code/src/commands/btw/btw.tsx:183-227`
+- `claude-code-source-code/src/cli/print.ts:2274-2298`
+- `claude-code-source-code/src/utils/forkedAgent.ts:70-141`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-221`
+- `claude-code-source-code/src/services/SessionMemory/sessionMemory.ts:315-325`
+- `claude-code-source-code/src/services/extractMemories/extractMemories.ts:371-427`
+- `claude-code-source-code/src/services/autoDream/autoDream.ts:224-233`
+- `claude-code-source-code/src/services/AgentSummary/agentSummary.ts:81-109`
+- `claude-code-source-code/src/tools/AgentTool/runAgent.ts:721-729`
+
 ### AC. 预算器深线已升级到“观测型预算与实际调优方法”
 
 - `get_context_usage` 暴露的不只是总 token，还显式暴露 `systemPromptSections`、`systemTools`、`deferredBuiltinTools`、`mcpTools`、`skills`、`attachmentsByType` 与 `toolCallsByType`，这说明 prompt 预算已被外化成可诊断对象。
