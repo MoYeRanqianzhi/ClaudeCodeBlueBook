@@ -965,6 +965,22 @@
 - `claude-code-source-code/src/services/mcp/channelAllowlist.ts:1-77`
 - `claude-code-source-code/src/utils/permissions/permissionSetup.ts:593-633`
 
+### AV. User-interest protection is often better framed as asset preservation than immediate continuation
+
+- `sessionStorage.ts` 的 transcriptPath/sessionProjectDir 逻辑说明 transcript 文件本身是会话主资产；路径漂移会直接伤害恢复和 hooks 的正确性。
+- `reAppendSessionMetadata()` 说明 title/tag 等元数据会被持续保尾部化，本质是在保护会话资产而不是单纯优化展示。
+- `sessionRestore.ts` 会在 resume 时同时接管 session ID、recording 文件名、cost state、metadata 和 worktree 绑定，说明恢复的对象是一整套资产关系，而非单一消息列表。
+- `asciicast.ts` 与 `errorLogSink.ts` 又说明录屏、JSONL 错误日志、MCP 日志都被设计成会话相关资产；一旦风控窗口里把这些资产保护住，用户即使暂时不能继续运行，也仍保有恢复与自证抓手。
+- 更高抽象看，用户利益保护不应只被理解成“马上继续用”，更应被理解成“在异常窗口里最大化工作连续性资产的可恢复性和可证据化”。
+
+证据:
+
+- `claude-code-source-code/src/utils/sessionStorage.ts:203-255`
+- `claude-code-source-code/src/utils/sessionStorage.ts:694-740`
+- `claude-code-source-code/src/utils/sessionRestore.ts:437-520`
+- `claude-code-source-code/src/utils/asciicast.ts:12-104`
+- `claude-code-source-code/src/utils/errorLogSink.ts:1-198`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -1030,6 +1046,7 @@
 - 已补风控专题 `56-反规避原则：为什么任何绕过思路都会回到更高风险与更高证明负担`，把“规避冲动”改写为第一性原理层面的反规避论证
 - 已补风控专题 `57-终局总指南：Claude Code风控研究的最佳最全合规版`，把后期全部研究压缩成一份面向用户和平台构建者的终局合规总结
 - 已补风控专题 `58-治理主权与恢复主动权：谁能关、谁能开、谁能替你说 yes`，把平台、组织、用户、替代批准面和自动恢复主权收束成一张主权图
+- 已补风控专题 `59-资产保全与退出策略：账号风控窗口里真正该保护的不是面子而是工作连续性`，把用户利益保护进一步压缩成 transcript、日志、录屏和 worktree 资产保全逻辑
 
 ## 下一步待办
 
