@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《工作语法机：Claude Code如何把软件工程世界编译成模型可行动的Protocol Surface》《Narrow、Later、Outside：安全设计与省Token设计的统一反扩张运行时》《可演化内核：Claude Code如何在持续增长中维持不变量》《先把世界压缩成可治理语法，再让模型变聪明》《真正的省Token不是压缩文本，而是改变世界暴露给模型的方式》《先进源码不是一开始就完美分层，而是增长时仍能守住不变量》《设计母线导航：工作语法、反扩张与可演化内核》，并回写主索引、专题 README、导航 README 与《第一性原理与苏格拉底反思》，把“工作语法 / 反扩张 / 可演化内核”提升为新的高阶主线
 - 新增《协议全集、控制平面主路径与Consumer Subset：Claude Code的宿主三层治理》《恢复优先的双通道状态面：writeback、resume与reconnect一体化》《单一权威优于单一全景：多消费者系统必须分层暴露真相》《当前真相必须可恢复，而不是事后可观测》，并回写主索引、专题 README 与深度专题导航，把“协议全集 / 权威主路径 / consumer subset”与“writeback = durability”提升为正式主线
 - 新增《让依赖图说真话：Leaf Module、Anti-Cycle Seam与Single-Source File》《先让依赖关系诚实，再让抽象显得优雅》，并在深度专题导航中新增“依赖图诚实性深线”，把 leaf module、anti-cycle seam、single-source file 收束成独立主线
 - 新增《可解释运行时：输入真相、状态真相与稳定性真相》《Observability不是Debug层，而是正式运行时合同》，并在专题导航里新增“可解释运行时深线”，把 `context usage`、状态回写与 cache break 诊断正式收束成同一主线

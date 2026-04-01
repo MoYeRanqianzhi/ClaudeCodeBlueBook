@@ -1409,6 +1409,9 @@
 - `worker_status / requires_action_details / external_metadata` 当前必须按 durability surface 叙述，而不是 telemetry；resume、reconnect 与 stale-write rejection 都直接依赖它。
 - `WorkerStateUploader` 的 `1 inflight + 1 pending`、无限重试、RFC 7396 merge 与 `null` 删除语义，说明作者在保护“可恢复当前真相”的最终收敛，而不是在做 best-effort 状态上报。
 - “单一权威”必须与“单一全景表示”分开叙述；多消费者系统共享的是权威合同，不是同一种展示或请求表示。
+- prompt 魔力当前必须稳定成“世界先被编成可治理语法，再让模型思考”；`systemPromptSections`、tool schema、protocol transcript、delta attachments、deferred discovery 都属于这条工作语法链。
+- 安全设计与省 token 设计当前必须用 `Narrow / Later / Outside` 三种动作统一叙述；它们是在控制模型可达世界的宽度、时间与位置，而不是分别做两套优化。
+- 源码先进性当前必须继续上升到“可演化内核 / 熵治理”层：config、deps、state machine、leaf module 都是在回答增长时 authority、transition、boundary、dependency 如何不裂。
 
 ## 下一步待办
 

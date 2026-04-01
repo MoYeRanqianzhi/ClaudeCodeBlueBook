@@ -177,6 +177,7 @@
 ### 想按深度专题而不是按目录来读
 
 - 先读 [navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理](navigation/03-%E6%B7%B1%E5%BA%A6%E4%B8%93%E9%A2%98%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E5%BA%95%E7%9B%98%E4%B8%8E%E6%B2%BB%E7%90%86.md)
+- 想直接看高阶设计母线，再读 [navigation/05-设计母线导航：工作语法、反扩张与可演化内核](navigation/05-%E8%AE%BE%E8%AE%A1%E6%AF%8D%E7%BA%BF%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%B7%A5%E4%BD%9C%E8%AF%AD%E6%B3%95%E3%80%81%E5%8F%8D%E6%89%A9%E5%BC%A0%E4%B8%8E%E5%8F%AF%E6%BC%94%E5%8C%96%E5%86%85%E6%A0%B8.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
@@ -190,6 +191,18 @@
 ### 为什么状态回写不是遥测附属层
 
 - `architecture/17 -> architecture/25 -> architecture/57 -> architecture/60 -> philosophy/44 -> philosophy/47`
+
+### 为什么 Claude Code 的 prompt 魔力更像工作语法机
+
+- `architecture/39 -> architecture/53 -> architecture/54 -> architecture/61 -> philosophy/39 -> philosophy/48`
+
+### 为什么安全设计和省Token设计其实是同一个系统
+
+- `architecture/37 -> architecture/51 -> architecture/56 -> architecture/62 -> philosophy/38 -> philosophy/49`
+
+### 为什么 Claude Code 值得学的是“可演化内核”
+
+- `architecture/41 -> architecture/52 -> architecture/58 -> architecture/63 -> philosophy/45 -> philosophy/50`
 
 ### 为什么调优上下文前必须先看预算结构
 

@@ -165,6 +165,12 @@
   - 恢复优先的双通道状态面：writeback、resume与reconnect一体化
   - 单一权威优于单一全景：多消费者系统必须分层暴露真相
   - 当前真相必须可恢复，而不是事后可观测
+  - 工作语法机：Claude Code如何把软件工程世界编译成模型可行动的Protocol Surface
+  - Narrow、Later、Outside：安全设计与省Token设计的统一反扩张运行时
+  - 可演化内核：Claude Code如何在持续增长中维持不变量
+  - 先把世界压缩成可治理语法，再让模型变聪明
+  - 真正的省Token不是压缩文本，而是改变世界暴露给模型的方式
+  - 先进源码不是一开始就完美分层，而是增长时仍能守住不变量
   - CLAUDE.md、记忆层与上下文注入实践
   - Channels、托管策略与组织级治理实践
   - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
@@ -240,6 +246,10 @@
 - `worker_status / external_metadata` 当前必须按 durability surface 叙述，而不是 telemetry；resume、reconnect 与 stale-write rejection 都依赖它
 - “单一权威”当前必须继续与“单一全景表示”分开叙述；多消费者系统共享的是权威合同，不是同一种展示或请求表示
 - 当前真相优先级高于表面连续性；初始化清旧 metadata、恢复期间丢弃 stale control/result 都应被视为成熟设计
+- prompt 魔力当前应继续稳定成“工作语法机”叙述：世界先被编成可治理语法，再被翻译成模型可行动的 protocol surface
+- 安全与省 token 当前应继续稳定成 `Narrow / Later / Outside` 三种统一动作，不要退回“成本优化”和“安全防护”两套分裂叙述
+- 源码先进性当前应继续稳定成“可演化内核 / 熵治理”叙述：新增 feature 时 authority、transition、boundary、dependency 必须仍然可控
+- 目录优化当前应继续沿“问题入口先于目录入口”的方向推进；导航层应承载高阶设计母线，而不只是文件索引
 - 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
 - 主入口、navigation 与专题 README 必须和正文同步更新，否则蓝皮书会先在检索层失真
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述
