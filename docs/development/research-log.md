@@ -3,7 +3,7 @@
 ## 当前基线
 
 - 日期: `2026-04-02`
-- 工作目录: `/home/mo/m/projects/cc/analysis`
+- 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
@@ -318,6 +318,49 @@
 - `claude-code-source-code/src/utils/task/TaskOutput.ts:257-388`
 - `claude-code-source-code/src/cli/transports/ccrClient.ts:789-854`
 
+### U. Capability atlas now requires object truth, not just plane truth
+
+- “全部功能和 API”不能只按能力平面写，还必须继续补命令 truth、工具 truth、任务 truth、服务 truth、宿主 truth 五张对象表。
+- `TaskType` 与 `getAllTasks()` 的差异说明 task model truth 与 task registry truth 必须分开写。
+- `constants/tools.ts` 说明 async agent、in-process teammate、coordinator 拥有不同的工具子集 truth，不能把“系统支持某工具”写成单层判断。
+- `src/services/` 的约 `20` 个一级子域说明能力大量沉在 subsystem planes 里，而不只长在 commands/tools 上。
+
+证据：
+
+- `claude-code-source-code/src/Task.ts:6-124`
+- `claude-code-source-code/src/tasks.ts:1-39`
+- `claude-code-source-code/src/constants/tools.ts:36-112`
+- `claude-code-source-code/src/tools.ts:193-250`
+- `claude-code-source-code/src/services/`
+
+### V. Governance APIs are formal control planes, not misc helpers
+
+- channels、`get_context_usage`、`get_settings` / `apply_flag_settings` 应一起写成治理型 API。
+- channels 体现外部输入治理；context usage 体现上下文预算治理；settings 则体现配置真相与运行态治理。
+- 这三条 API 共同说明 Claude Code 不只开放“让你做事”的接口，也开放“让你约束 runtime”的接口。
+
+证据：
+
+- `claude-code-source-code/src/services/mcp/channelNotification.ts:1-280`
+- `claude-code-source-code/src/utils/messages.ts:5496-5507`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:175-288`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:467-507`
+
+### W. Prompt magic, unified budgeter, and source quality are now explicit philosophy axes
+
+- Prompt 魔力更准确的结构应写成“角色合同 + 工具边界 + 缓存结构 + 状态反馈 + 协作语法”。
+- 安全、成本与体验必须共用预算器，因为它们分别约束动作空间、上下文空间与认知噪音。
+- 源码质量不能只写成卫生层评价，而应写成 contract、失败语义、恢复路径和共享基础设施如何直接决定产品能力。
+
+证据：
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:29-123`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:24-260`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:510-645`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/query.ts:369-540`
+- `claude-code-source-code/src/query.ts:1065-1247`
+
 ### U. REPL front-end is a cognitive control plane, not a chat shell
 
 - transcript mode 不是历史视图，而是 pager/runtime。
@@ -544,6 +587,52 @@
 
 - `query.ts` 与 `QueryGuard` 说明 turn lifecycle 被显式状态机化。
 - `Tool` 接口与 toolExecution pipeline 说明扩展能力先进入平台 ABI，再进入具体实现。
+## 2026-04-02 第二十八轮
+
+目标:
+
+- 优化蓝皮书目录结构，使其更适合继续扩张
+- 把第一性原理从六问升级为八问
+- 给后续 API 全集与哲学深挖预留导航层
+
+结论:
+
+### I. 蓝皮书已经需要显式的 navigation 层
+
+- 现在主线、机制、接口、哲学、风险、实践已经足够多，如果继续只把阅读路径压在 `bluebook/README.md`，检索成本会继续上升。
+- `navigation/` 更适合作为蓝皮书内部导航层，单独承担“从什么问题进入”和“这章属于哪一平面”。
+
+证据:
+
+- `bluebook/README.md`
+- `docs/development/01-章节规划.md`
+
+### II. Claude Code 的第一性原理应从六问升级为八问
+
+- 旧写法已经覆盖观察、决策、行动、记忆、协作、恢复。
+- 但源码已经清楚显示它还在持续处理治理与经济两个问题：
+  - 治理：账号、组织、策略、遥测、remote managed settings、trusted device
+  - 经济：prompt cache、tool/result budget、compact、输出外置、认知控制面
+
+证据:
+
+- `claude-code-source-code/src/query.ts:571-703`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:1-1`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:1-1`
+- `claude-code-source-code/src/tools/AgentTool/prompt.ts:191-243`
+- `claude-code-source-code/src/cli/structuredIO.ts:59-173`
+
+### III. 目录优化不是审美问题，而是可持续研究的基础设施
+
+- 当章节跨越主线、API、架构、哲学、风险之后，如果不明确“章节所属平面”，后续写作会反复混写：
+  - 功能全集
+  - 公开支持边界
+  - 设计解释
+  - 风控治理
+- 所以目录结构本身已经变成研究质量的一部分。
+
+## 2026-04-02 第二十七轮
+
 - `lazySchema`、`toolPool`、`WorkerStateUploader`、`promptCacheBreakDetection` 说明 schema、cache、retry、merge 都被做成正式结构对象。
 - 真正的工程债务集中在少数超大核心文件，而不是整体架构缺少方法。
 
@@ -709,6 +798,49 @@
 - 已补风控专题 `25-问题导向索引：按症状、源码入口与合规动作阅读风控专题`，把症状、章节、源码入口、支持路径与 `risk/` 的问题主线压到同一张检索页
 - 已补风控专题 `27-判定非对称性矩阵：哪些路径要快放行，哪些路径必须硬收口`，把 selective failure semantics 从设计哲学下沉成工程对照表
 - 已补风控专题 `26-苏格拉底附录：如果要把误伤再降一半，系统该追问什么`，把平台改进、研究方法反思与用户自保标准提升到“总伤害最小化”视角
+
+### R. 能力全集必须和公开度 / 成熟度一起叙述
+
+- 当前源码基线同时包含“正式公共表面”“正式宿主表面”“声明存在但实现未闭合的入口”“gated/internal 痕迹”“受策略与组织约束的产品面”。
+- `agentSdkTypes.ts` 暴露了 session 管理函数族，但当前提取树里多个函数体仍是显式 `not implemented`，因此蓝皮书必须持续区分“声明接口”和“可见实现”。
+- `README.md` 明确指出公开源码仍缺失 `108` 个 `feature()` 相关模块，因此“公开源码边界”与“内部真实能力全集”不能混写。
+- 后续“全部功能和 API”章节必须继续按“能力平面 + 公开度 / 成熟度矩阵”双层写法推进，而不是回到单层能力清单。
+
+证据：
+
+- `claude-code-source-code/package.json:2-19`
+- `claude-code-source-code/README.md:70-74`
+- `claude-code-source-code/README.md:250-280`
+- `claude-code-source-code/src/entrypoints/agentSdkTypes.ts:103-272`
+- `claude-code-source-code/src/main.tsx:1497-1520`
+- `claude-code-source-code/src/main.tsx:1635-1688`
+
+### S. API 写作已进入“总表先行”阶段
+
+- 现在已经有两份总表型文档分别负责“能力平面 + 公开度矩阵”与“命令 / 工具 / 会话 / 宿主 / 协作 API 全谱系”。
+- 这意味着后续再补任何单篇 API 章节时，都必须先回到总表检查：它位于哪个平面，属于哪个公开度标签，是否只是 adapter 子集。
+- 主线 `08` 负责给出判断标准，`api/23` 与 `api/24` 负责把判断标准落成可检索索引，这三层已经形成稳定写作骨架。
+
+证据：
+
+- `bluebook/08-能力全集、公开度与成熟度矩阵.md`
+- `bluebook/api/23-能力平面、公开度与宿主支持矩阵.md`
+- `bluebook/api/24-命令、工具、会话、宿主与协作API全谱系.md`
+
+### T. Prompt、安全与源码质量三条母线已经收编为正式专题
+
+- prompt 魔力现在不再只按“runtime contract”抽象描述，而被进一步下沉成“角色合同、缓存结构、状态晚绑定、多 Agent 语法”四层机制。
+- 安全与 token 经济现在不再只写成两篇并列专题，而被进一步统一成“预算器”视角，明确动作空间和上下文空间是同构约束。
+- 源码质量现在不再只写成泛泛“工程先进”，而是同时写“公开镜像仍然先进的原因”和“热点大文件、测试面缺失、镜像不完整”三类真实局限。
+
+证据：
+
+- `bluebook/architecture/31-提示词合同、缓存稳定性与多Agent语法.md`
+- `bluebook/architecture/32-安全、权限、治理与Token预算统一图.md`
+- `bluebook/architecture/33-公开源码镜像的先进性、热点与技术债.md`
+- `bluebook/philosophy/21-Prompt魔力来自约束叠加与状态反馈.md`
+- `bluebook/philosophy/22-安全、成本与体验必须共用预算器.md`
+- `bluebook/philosophy/23-源码质量不是卫生而是产品能力.md`
 
 ## 下一步待办
 

@@ -21,6 +21,10 @@
   - 功能全景与 API 支持
   - 第一性原理与苏格拉底反思
   - 运行时契约、知识层与生态边界
+  - 能力全集、公开度与成熟度矩阵
+  - 导航专题
+  - 第一性原理阅读地图
+  - 能力、API与治理检索图
   - 命令与功能矩阵
   - Agent SDK 与控制协议
   - MCP 与远程传输
@@ -82,14 +86,27 @@
   - 提示词契约分层、知识注入与缓存稳定性
   - 知识层栈：CLAUDE.md、Session Memory、Auto-memory与Attachments
   - 多Agent任务对象、Mailbox与后台协作运行时
+  - 提示词合同、缓存稳定性与多Agent语法
+  - 安全、权限、治理与Token预算统一图
+  - 公开源码镜像的先进性、热点与技术债
   - 宿主实现最小闭环与恢复案例手册
   - 提示词控制、知识注入与记忆 API 手册
   - 插件、Marketplace、MCPB、LSP与Channels接入边界手册
+  - 能力平面、公开度与宿主支持矩阵
+  - 命令、工具、会话、宿主与协作API全谱系
+  - 命令、工具、任务与团队能力全集手册
+  - SDK、Control、Session与Remote接入全景矩阵
+  - 插件协议全生命周期：Manifest、Marketplace、Options、MCPB与Reload
+  - 治理型API：Channels、Context Usage与Settings三重真相
+  - 动态能力暴露、裁剪链与运行时可见性
   - 真正的设计单位不是功能，而是运行时平面
   - 前台交互不是 UI 皮肤，而是认知控制面
   - Prompt 不是文本技巧而是契约分层
   - 安全与 Token 经济不是权衡而是同一优化
   - 生态成熟度必须与协议支持分开叙述
+  - Prompt魔力来自约束叠加与状态反馈
+  - 安全、成本与体验必须共用预算器
+  - 源码质量不是卫生而是产品能力
   - CLAUDE.md、记忆层与上下文注入实践
 
 ## 已确认事实
@@ -115,6 +132,16 @@
 - Claude Code SDK 的输出面更适合概括成“runtime event stream”，而不是“助手答案流”
 - `query.ts` + `services/api/claude.ts` 维护的是可恢复执行轨迹，不是单纯流式文本输出
 - MCP 更适合按“配置面 + transport 面 + 连接状态面 + 控制面”理解，而不是“外接工具协议”
+- “功能支持”后续必须持续按两层写：先写能力平面，再写公开度与成熟度矩阵
+- `navigation/` 负责读者检索，根目录主线负责判断标准，这两层不能重新混回一篇大总文
+- API 写作现在已有统一基线：先用总表型文档确定能力平面、公开度与 adapter 宽度，再进入具体专题
+- API atlas 现在已经分成两层：`23/24` 负责矩阵与谱系，`25-29` 负责能力对象、宿主接入、插件生命周期、治理型 API 与动态可见性
+- 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
+- prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述
+- Prompt 魔力更精确的第一性原理表述应升级为“角色合同 + 工具边界 + 缓存结构 + 状态反馈 + 协作语法”
+- 安全、token 经济与体验本质上共用一个预算器，分别约束动作空间、上下文空间与认知噪音
+- 治理型 API 不是附属 introspection，而是输入治理、成本治理与配置治理三条正式控制面
+- 当前公开源码镜像的工程先进性与局限必须一起写：既要写 contract-first / runtime-first，也要写热点大文件与公开树不完整
 - `message_delta` 对已 yield assistant message 的原地写回，是 transcript 引用一致性的重要实现细节
 - plugin MCP 的动态 scope 与环境变量分层解析，说明连接治理是扩展模型的一部分，不是附加逻辑
 - Claude Code 更适合被理解成 host-integrated runtime，而不是 terminal shell
@@ -148,6 +175,8 @@
 - Claude Code 的多 Agent 更适合按“coordinator law + task object + mailbox/team context + inherited runtime”理解，而不是按并发数量理解
 - Claude Code 的安全与 token 经济本质上都在做“限制无序扩张”的同一优化，只是分别作用于动作空间和上下文空间
 - Claude Code 的生态写作必须持续区分 protocol support、runtime path 与 product maturity，不能因为代码里有入口就上升为稳定公共承诺
+- 蓝皮书目录现在必须显式分成“主线正文”“导航层”“机制层”“接口层”“哲学层”“风险层”“实践层”，否则章节增多后会失去检索性
+- Claude Code 的第一性原理不应再只写成六问，而应扩展为观察、决策、行动、记忆、协作、恢复、治理、经济八问
 
 ## 后续章节建议
 
@@ -159,6 +188,8 @@
 6. 深挖 REPL 的 scroll/search/selection 时序与更多前台认知机制
 7. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
 8. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、提示词面、工程面、协作面、前台面、演化面都做成清晰阅读路径
+9. 把命令全集、工具全集、任务/团队/remote 能力全集从零散章节提升为统一可检索手册
+10. 把治理型 API、插件 lifecycle、动态可见性继续做成宿主实践 casebook
 
 ## 编写约定
 
@@ -179,3 +210,4 @@
 - 写状态相关结论时，必须同时标出事件时间线、当前快照、恢复路径，以及 consumer subset
 - 写 prompt 相关结论时，必须同时标出装配链、角色合同、attachment 注入与 cache 约束
 - 写源码质量相关结论时，必须同时标出 invariant、边界、cache/retry 结构与真实工程债务
+- 写目录结构相关结论时，必须先问清自己是在补“正文主线”还是在补“导航/检索入口”
