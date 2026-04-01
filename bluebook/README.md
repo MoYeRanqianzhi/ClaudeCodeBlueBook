@@ -51,6 +51,11 @@
 - 安全链：`architecture/05-权限系统与安全状态机.md` -> `architecture/11-权限系统全链路与Auto Mode.md` -> `architecture/19-安全分层、策略收口与沙箱边界.md` -> `philosophy/03-安全观与边界设计.md`
 - 工程链：`architecture/20-源码质量、分层与工程先进性.md` -> `philosophy/15-工程化质量优于聪明技巧.md`
 - 上下文链：`philosophy/02-上下文经济学.md` -> `architecture/08-compact算法与上下文管理细拆.md` -> `architecture/21-消息塑形、输出外置与Token经济.md`
+- Query 链：`architecture/02-Agent循环与工具系统.md` -> `architecture/12-ClaudeAPI与流式工具执行.md` -> `architecture/22-query-turn状态机、继续语义与恢复链.md`
+- 权限决策链：`architecture/05-权限系统与安全状态机.md` -> `architecture/11-权限系统全链路与Auto Mode.md` -> `architecture/23-统一权限决策流水线与多路仲裁.md`
+- 状态字段链：`api/17-状态消息、外部元数据与宿主消费矩阵.md` -> `api/19-SDKMessage、worker_status与external_metadata字段级对照手册.md` -> `architecture/17-双通道状态同步与外部元数据回写.md`
+- 协作链：`architecture/10-AgentTool与隔离编排.md` -> `guides/02-多Agent编排与Prompt模板.md` -> `philosophy/07-隔离优先于并发.md`
+- 分层链：`architecture/20-源码质量、分层与工程先进性.md` -> `architecture/24-services层全景与utils-heavy设计.md`
 - 事件链：`api/04-SDK消息与事件字典.md` -> `api/11-SDKMessageSchema与事件流手册.md` -> `architecture/12-ClaudeAPI与流式工具执行.md` -> `philosophy/06-状态优先于对话.md`
 - 连接链：`api/03-MCP与远程传输.md` -> `api/12-MCP配置与连接状态机.md` -> `architecture/03-扩展能力与远程架构.md` -> `philosophy/08-统一配置语言优于扩展孤岛.md`
 - 策略链：`architecture/05-权限系统与安全状态机.md` -> `architecture/11-权限系统全链路与Auto Mode.md` -> `philosophy/03-安全观与边界设计.md`
@@ -73,6 +78,10 @@
 - 上下文：`philosophy/02-上下文经济学.md`、`architecture/08-compact算法与上下文管理细拆.md`、`architecture/21-消息塑形、输出外置与Token经济.md`
 - 工程：`architecture/20-源码质量、分层与工程先进性.md`、`philosophy/15-工程化质量优于聪明技巧.md`
 - 恢复：`architecture/06-上下文压缩与恢复链.md`、`architecture/12-ClaudeAPI与流式工具执行.md`、`philosophy/06-状态优先于对话.md`
+- 继续：`architecture/22-query-turn状态机、继续语义与恢复链.md`
+- 权限：`architecture/23-统一权限决策流水线与多路仲裁.md`
+- 分层：`architecture/24-services层全景与utils-heavy设计.md`
+- 协作：`guides/02-多Agent编排与Prompt模板.md`
 
 ## 正式主线与兼容入口
 
@@ -132,6 +141,11 @@
 - [源码质量、分层与工程先进性](architecture/20-%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E3%80%81%E5%88%86%E5%B1%82%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%85%88%E8%BF%9B%E6%80%A7.md)
 - [消息塑形、输出外置与 Token 经济](architecture/21-%E6%B6%88%E6%81%AF%E5%A1%91%E5%BD%A2%E3%80%81%E8%BE%93%E5%87%BA%E5%A4%96%E7%BD%AE%E4%B8%8EToken%E7%BB%8F%E6%B5%8E.md)
 - [工程化质量优于聪明技巧](philosophy/15-%E5%B7%A5%E7%A8%8B%E5%8C%96%E8%B4%A8%E9%87%8F%E4%BC%98%E4%BA%8E%E8%81%AA%E6%98%8E%E6%8A%80%E5%B7%A7.md)
+- [query turn 状态机、继续语义与恢复链](architecture/22-query-turn%E7%8A%B6%E6%80%81%E6%9C%BA%E3%80%81%E7%BB%A7%E7%BB%AD%E8%AF%AD%E4%B9%89%E4%B8%8E%E6%81%A2%E5%A4%8D%E9%93%BE.md)
+- [统一权限决策流水线与多路仲裁](architecture/23-%E7%BB%9F%E4%B8%80%E6%9D%83%E9%99%90%E5%86%B3%E7%AD%96%E6%B5%81%E6%B0%B4%E7%BA%BF%E4%B8%8E%E5%A4%9A%E8%B7%AF%E4%BB%B2%E8%A3%81.md)
+- [services 层全景与 utils-heavy 设计](architecture/24-services%E5%B1%82%E5%85%A8%E6%99%AF%E4%B8%8Eutils-heavy%E8%AE%BE%E8%AE%A1.md)
+- [SDKMessage、worker_status 与 external_metadata 字段级对照手册](api/19-SDKMessage%E3%80%81worker_status%E4%B8%8Eexternal_metadata%E5%AD%97%E6%AE%B5%E7%BA%A7%E5%AF%B9%E7%85%A7%E6%89%8B%E5%86%8C.md)
+- [多 Agent 编排与 Prompt 模板](guides/02-%E5%A4%9AAgent%E7%BC%96%E6%8E%92%E4%B8%8EPrompt%E6%A8%A1%E6%9D%BF.md)
 - [SDKMessageSchema 与事件流手册](api/11-SDKMessageSchema%E4%B8%8E%E4%BA%8B%E4%BB%B6%E6%B5%81%E6%89%8B%E5%86%8C.md)
 - [MCP 配置与连接状态机](api/12-MCP%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%BF%9E%E6%8E%A5%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 - [ClaudeAPI 与流式工具执行](architecture/12-ClaudeAPI%E4%B8%8E%E6%B5%81%E5%BC%8F%E5%B7%A5%E5%85%B7%E6%89%A7%E8%A1%8C.md)

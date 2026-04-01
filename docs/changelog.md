@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-04-02
+
+- 新增 `query turn` 状态机、统一权限决策流水线、`services/utils` 分层三篇架构专题
+- 新增 `SDKMessage` / `worker_status` / `external_metadata` 字段级 crosswalk API 手册
+- 新增多 Agent 编排与 prompt 模板指南，明确 coordinator、fresh subagent、fork、team/swarm、workflow 的协作边界
+- 补强主线章节《功能全景与 API 支持》《第一性原理与苏格拉底反思》，把协作接口、continue 语义、permission engine、分层解释纳入正式主线
+- 更新蓝皮书总索引、架构/API/使用专题 README，新增 Query 链、权限决策链、状态字段链、分层链
+- 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化 query runtime / permission engine / services panorama / host crosswalk / multi-agent prompt contract 这一轮结论
+
 ## 2026-04-01
 
 - 初始化蓝皮书文档结构

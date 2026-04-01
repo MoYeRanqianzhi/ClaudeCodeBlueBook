@@ -7,9 +7,9 @@
 
 为了避免“看到一点功能就写一点功能”的碎片化，本章按 runtime 表面来组织。
 
-## 1. 从第一性原理看，Claude Code 至少有七个接口表面
+## 1. 从第一性原理看，Claude Code 至少有八个接口表面
 
-如果把 Claude Code 当作一个 coding agent runtime，而不是一个聊天框，它至少要暴露七类接口:
+如果把 Claude Code 当作一个 coding agent runtime，而不是一个聊天框，它至少要暴露八类接口:
 
 1. 人类交互接口: CLI、REPL、slash command。
 2. 执行接口: tool、task、subagent。
@@ -18,8 +18,9 @@
 5. 宿主控制接口: control request/response、permission handshake、interrupt、settings/context/state control。
 6. 远程接口: remote session、bridge、CCR transport、direct connect。
 7. 状态接口: transcript、session、context usage、settings、rewind、`worker_status` / `external_metadata`。
+8. 协作接口: coordinator、team context、task list、task progress、workflow progress、task notification。
 
-Claude Code 强的原因之一，是它几乎把这七类接口都做成了正式模块，而不是临时拼接。
+Claude Code 强的原因之一，是它几乎把这八类接口都做成了正式模块，而不是临时拼接。
 
 ## 2. 功能总矩阵
 
@@ -221,7 +222,31 @@ Claude Code 还有一层经常被低估的正式接口面：
 - `claude-code-source-code/src/skills/loadSkillsDir.ts:181-344`
 - `claude-code-source-code/src/tools/AgentTool/loadAgentsDir.ts:474-731`
 
-## 3. API 支持不是一层，而是四层
+### 2.10 协作与 workflow 面
+
+Claude Code 还有一层常被低估的正式接口面：
+
+- coordinator system prompt
+- worker / teammate prompt addendum
+- `team_context` / `teammate_mailbox` attachments
+- `task_started` / `task_progress` / `task_notification`
+- workflow progress delta
+
+这意味着它暴露的不只是“起一个 subagent”：
+
+- 还有多 Agent 协作协议
+- task 生命周期事件
+- workflow 分阶段进度
+
+证据：
+
+- `claude-code-source-code/src/coordinator/coordinatorMode.ts:111-260`
+- `claude-code-source-code/src/utils/messages.ts:3457-3490`
+- `claude-code-source-code/src/utils/swarm/inProcessRunner.ts:871-1043`
+- `claude-code-source-code/src/utils/sdkEventQueue.ts:1-118`
+- `claude-code-source-code/src/utils/task/sdkProgress.ts:1-35`
+
+## 3. API 支持不是一层，而是五层
 
 从源码看，Claude Code 的“API”至少可以拆成五层。
 
@@ -257,6 +282,30 @@ Claude Code 还有一层经常被低估的正式接口面：
 - mcp_set_servers
 
 以及其他控制消息。
+
+### 3.4 状态真相 API
+
+这一层的重点不是 request/response，而是宿主如何知道“当前到底发生了什么”：
+
+- `SDKMessage`
+- `worker_status`
+- `external_metadata`
+- `session_state_changed`
+- `pending_action`
+
+这一层决定 Claude Code SDK 更像 runtime event/state API，而不是普通回答 API。
+
+### 3.5 协作与任务 API
+
+这一层更贴近多 Agent 与 workflow：
+
+- `task_started`
+- `task_progress`
+- `task_notification`
+- workflow progress
+- coordinator / worker prompt contract
+
+它说明 Claude Code 的正式对外面已经覆盖“协作运行时”，而不是只覆盖“单 agent 对话”。
 
 ### 3.4 传输 API
 

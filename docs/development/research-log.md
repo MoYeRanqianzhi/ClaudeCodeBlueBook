@@ -2,7 +2,7 @@
 
 ## 当前基线
 
-- 日期: `2026-04-01`
+- 日期: `2026-04-02`
 - 工作目录: `/home/mo/m/projects/cc/analysis`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
@@ -215,6 +215,92 @@
 - outbound-only bridge 对 mutable request 也显式回 error，避免“看起来成功但本地没生效”的假成功错觉。
 - `StructuredIO` 把 abort、cancel、duplicate/orphan 防护都做成显式协议动作或显式 reject，而不是依赖宿主自己猜测请求是否还有效。
 
+### O. `query.ts` is a turn runtime kernel, not a thin model loop
+
+- `query.ts` 维护的是 `State + while(true) + continue sites + terminal reasons` 的 turn runtime。
+- `continue` 不是简单 retry，而是“同一次 `query()` 调用内替换下一轮状态”的 self-loop。
+- tool follow-up、recovery、stop hook blocking、token budget continuation 都被统一规约成内部 continue。
+- transcript / resume 不是 query 之外的附属日志，而是 turn runtime 的恢复契约。
+
+证据：
+
+- `claude-code-source-code/src/query.ts:203-235`
+- `claude-code-source-code/src/query.ts:365-540`
+- `claude-code-source-code/src/query.ts:652-950`
+- `claude-code-source-code/src/query.ts:1065-1305`
+- `claude-code-source-code/src/query.ts:1363-1714`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-99`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:159-273`
+- `claude-code-source-code/src/utils/sessionRestore.ts:409-545`
+
+### P. Permission system is a typed decision engine, not a modal UX
+
+- 权限链必须按 `typed model -> context/materialization -> rule/tool engine -> mode transform -> automation -> relay/renderer -> hard enforcement` 理解。
+- permission modal 只是 `ask` 分支的 renderer，不是安全本体。
+- 同一个 `ask` 可以由本地 UI、SDK host、bridge/channel、swarm leader、permission prompt tool 共同消费。
+- sandbox、workspace trust、managed policy、MCP approval/auth 是正交的硬边界。
+
+证据：
+
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:510-645`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:689-1033`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1061-1312`
+- `claude-code-source-code/src/services/tools/toolHooks.ts:332-417`
+- `claude-code-source-code/src/hooks/toolPermission/handlers/interactiveHandler.ts:43-236`
+- `claude-code-source-code/src/cli/structuredIO.ts:534-653`
+- `claude-code-source-code/src/cli/print.ts:4146-4340`
+- `claude-code-source-code/src/utils/sandbox/sandbox-adapter.ts:172-260`
+
+### Q. Host truth is tri-surface: event stream, snapshot, recovery
+
+- 宿主真相至少分成三层：`SDKMessage` 时间线、`worker_status/external_metadata` 快照、transcript/internal-events 恢复面。
+- `request_id`、`tool_use_id`、`uuid`、`session_id`、`parentUuid` 是跨平面的关键主键。
+- `control_request / control_response / control_cancel_request` 才是宿主命令闭环。
+- `worker_status` 与 `session_state_changed` 比 `system:status` 更接近 authoritative running/idle 真相。
+
+证据：
+
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-519`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:578-612`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1457-1779`
+- `claude-code-source-code/src/utils/sessionState.ts:1-149`
+- `claude-code-source-code/src/cli/structuredIO.ts:469-773`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:1-118`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1307-1637`
+- `claude-code-source-code/src/utils/sessionRestore.ts:99-177`
+
+### R. `services` are subsystem planes; `utils` are invariant kernels
+
+- `services/` 更像执行、连接、记忆、治理、观测五个长生命周期子平面。
+- `utils-heavy` 的关键不在 helper 多，而在 shared invariant 多：cache-key prefix、tool ordering、fork contract、session truth 都是跨域基础设施。
+- 真正的工程债务主要是热点文件过大，而不是 `services` / `utils` 边界崩坏。
+
+证据：
+
+- `claude-code-source-code/src/services/tools/toolExecution.ts:1-260`
+- `claude-code-source-code/src/services/tools/toolOrchestration.ts:19-132`
+- `claude-code-source-code/src/services/mcp/useManageMCPConnections.ts:143-450`
+- `claude-code-source-code/src/services/SessionMemory/sessionMemory.ts:134-387`
+- `claude-code-source-code/src/utils/queryContext.ts:30-41`
+- `claude-code-source-code/src/utils/toolPool.ts:43-73`
+- `claude-code-source-code/src/utils/forkedAgent.ts:46-110`
+- `claude-code-source-code/src/utils/markdownConfigLoader.ts:1-240`
+
+### S. Multi-agent prompt quality comes from runtime contract, not wording tricks
+
+- coordinator、fresh subagent、fork、team/swarm、workflow 需要分开写，不能都叫“subagent prompt”。
+- worker prompt 必须自包含，因为 worker 看不到主线程对话。
+- team/swarm 的关键是 team context、mailbox、task list、名字寻址与 leader 审批，而不是普通 prompt 复述。
+- Prompt 模板最可靠的来源是源码里的角色合同：`coordinatorMode.ts`、`AgentTool/prompt.ts`、`TeamCreateTool/prompt.ts`、`messages.ts`。
+
+证据：
+
+- `claude-code-source-code/src/coordinator/coordinatorMode.ts:111-260`
+- `claude-code-source-code/src/tools/AgentTool/prompt.ts:48-112`
+- `claude-code-source-code/src/tools/TeamCreateTool/prompt.ts:37-166`
+- `claude-code-source-code/src/utils/messages.ts:3457-3490`
+- `claude-code-source-code/src/utils/swarm/inProcessRunner.ts:871-1043`
+
 证据:
 
 - `claude-code-source-code/src/cli/structuredIO.ts:362-429`
@@ -393,13 +479,10 @@
 
 ## 下一步待办
 
+- 补 `SDKMessage`、control、snapshot、recovery 四面统一的宿主实现 casebook
+- 补 `query.ts` / `sessionStorage.ts` / `REPL.tsx` / `replBridge.ts` 四个热点文件的债务与分层图
 - 补 bridge / direct-connect / remote-session 三类宿主路径的更细时序图
-- 补一章“多 Agent 协作模式与 prompt 模板”
 - 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
-- 给 `SDKMessageSchema` 与 control subtype 做更细的 message-response crosswalk casebook，并补更细宿主接入样例
-- 给 `SDKMessage`、`worker_status`、`external_metadata` 做更细字段级 crosswalk，并补 consumer subset 对照表
-- 给 `query.ts` 的 turn state machine 单独成章，并把 continue/recovery 语义做成时序图
-- 给统一权限决策流水线单独成章，明确 modal renderer 与 decision engine 的边界
 - 补 `REPL.tsx` / Ink 更细的 transcript mode、message actions、PromptInput 交互链
 - 补命令索引的更细表格化版本与 workflow/dynamic skills 交叉核对
 - 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
@@ -427,4 +510,4 @@
 - 显式失败路径目前已经能被解释为架构原则，但尚未对 `authRecoveryInFlight`、transport close code、prompt timeout 等失败语义做完全文级整理，后续仍要继续补。
 - request / response / follow-on message 的闭环主线已经建立，但仍未把所有 subtype 做成统一 casebook；后续若继续深化，应防止不同闭环粒度混写。
 - 运行时真相的双通道主线已经建立，但仍未把每个状态项都标清“时间线 / 快照 / 恢复 / consumer subset”四层；后续若继续深化，应防止再次退回单通道叙述。
-- prompt 装配链和安全分层主线已经建立，但仍未把 `query.ts` turn state、统一权限流水线、services 层全景拆完；后续若继续深化，应防止再次只写哲学，不写执行内核。
+- `query.ts`、`sessionStorage.ts`、`REPL.tsx`、`replBridge.ts` 等热点文件依然很大；后续若继续写“源码先进性”，必须同时写基础设施优点与热点文件债务。

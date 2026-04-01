@@ -23,6 +23,9 @@
 19. [安全分层、策略收口与沙箱边界](19-%E5%AE%89%E5%85%A8%E5%88%86%E5%B1%82%E3%80%81%E7%AD%96%E7%95%A5%E6%94%B6%E5%8F%A3%E4%B8%8E%E6%B2%99%E7%AE%B1%E8%BE%B9%E7%95%8C.md)
 20. [源码质量、分层与工程先进性](20-%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E3%80%81%E5%88%86%E5%B1%82%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%85%88%E8%BF%9B%E6%80%A7.md)
 21. [消息塑形、输出外置与 Token 经济](21-%E6%B6%88%E6%81%AF%E5%A1%91%E5%BD%A2%E3%80%81%E8%BE%93%E5%87%BA%E5%A4%96%E7%BD%AE%E4%B8%8EToken%E7%BB%8F%E6%B5%8E.md)
+22. [query turn 状态机、继续语义与恢复链](22-query-turn%E7%8A%B6%E6%80%81%E6%9C%BA%E3%80%81%E7%BB%A7%E7%BB%AD%E8%AF%AD%E4%B9%89%E4%B8%8E%E6%81%A2%E5%A4%8D%E9%93%BE.md)
+23. [统一权限决策流水线与多路仲裁](23-%E7%BB%9F%E4%B8%80%E6%9D%83%E9%99%90%E5%86%B3%E7%AD%96%E6%B5%81%E6%B0%B4%E7%BA%BF%E4%B8%8E%E5%A4%9A%E8%B7%AF%E4%BB%B2%E8%A3%81.md)
+24. [services 层全景与 utils-heavy 设计](24-services%E5%B1%82%E5%85%A8%E6%99%AF%E4%B8%8Eutils-heavy%E8%AE%BE%E8%AE%A1.md)
 
 这几章和 `bluebook/` 的区别是：
 
@@ -45,3 +48,6 @@
 - 想看 trust、permission、filesystem、sandbox、hooks、policy、MCP auth 的完整安全边界：`19`
 - 想看这个仓库为什么在工程结构上显得先进：`20`
 - 想看省 token 为什么不只是 compact，而是消息塑形、目录外移和大块输出外置：`21`
+- 想看 `query.ts` 如何把 tool follow-up、recovery、stop hook、budget continuation 收敛成一台 turn runtime：`22`
+- 想看 permission dialog、SDK `can_use_tool`、prompt tool、classifier、sandbox 如何接成统一权限链：`23`
+- 想看为什么这个仓库 `services` 没有无限膨胀，而 `utils` 又为什么这么重：`24`

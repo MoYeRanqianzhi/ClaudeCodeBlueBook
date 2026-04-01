@@ -70,6 +70,11 @@
   - 消息塑形、输出外置与Token经济
   - 提示词魔力来自运行时而非咒语
   - 工程化质量优于聪明技巧
+  - query turn 状态机、继续语义与恢复链
+  - 统一权限决策流水线与多路仲裁
+  - services 层全景与 utils-heavy 设计
+  - SDKMessage、worker_status 与 external_metadata 字段级对照手册
+  - 多 Agent 编排与 Prompt 模板
 
 ## 已确认事实
 
@@ -112,24 +117,23 @@
 - Claude Code 的安全更适合按 trust / policy / typed permission / sandbox / hook / MCP auth 分层理解，而不是按 permission modal 理解
 - Claude Code 的源码先进性更适合按 query turn state、Tool ABI、schema/cache/retry 基础设施理解，而不是按“文件整洁度”理解
 - Claude Code 的省 token 更适合按“稳定前缀 + 按需目录 + 大块输出外置 + 尾部回收”四层经济系统理解，而不是按“是否会 compact”理解
+- `query.ts` 更适合被理解成 turn runtime kernel，而不是“模型请求循环”
+- Claude Code 的 continue 语义更适合按 tool follow-up、recovery self-loop、policy continuation 三类理解
+- Claude Code 的权限链更适合按 typed decision engine + relay/renderer + hard boundary 理解，而不是按 permission modal 理解
+- Claude Code 的宿主真相更适合按 event stream、snapshot、recovery 三层理解，而不是只按 SDK message 理解
+- `services` 更适合被理解成长生命周期 subsystem planes，`utils` 更适合被理解为 invariant kernels
+- 多 Agent prompt 的效果更适合按 runtime contract、ownership、mailbox/task bus 与隔离语义理解，而不是按措辞技巧理解
 
 ## 后续章节建议
 
-1. 深挖 `REPL.tsx` 的交互状态机
-2. 深挖 Team、Coordinator、Workflow 的更高层编排范式
-3. 深挖 `REPL.tsx` 的 transcript search / sticky prompt / message actions
-4. 深挖权限系统与 auto mode 的风险控制
-5. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
-6. 给 bridge / direct-connect / remote-session 三类宿主路径做更细时序图
-7. 把 `SDKMessageSchema` 与 control subtype 做成更细的 message-response crosswalk casebook
-8. 把 `SDKMessage`、`worker_status`、`external_metadata`、consumer subset 做成更细字段级 crosswalk
-9. 给 `query.ts` 的 turn state machine 与 continue/recovery 语义单独成章
-10. 给统一权限决策流水线单独成章，明确 modal renderer 与 decision engine 边界
-11. 给 MCP 状态、命令 availability、控制请求做时序化视图
-12. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
-13. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
-14. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、提示词面、工程面、演化面都做成清晰阅读路径
-15. 把 plugin manifest / marketplace / MCPB / LSP / channels 的产品边界继续写实
+1. 深挖 `REPL.tsx` 的交互状态机与 message actions
+2. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
+3. 给 bridge / direct-connect / remote-session 三类宿主路径做更细时序图
+4. 把 `SDKMessage`、control、snapshot、recovery 做成更细宿主实现 casebook
+5. 给 MCP 状态、命令 availability、控制请求做时序化视图
+6. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
+7. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、提示词面、工程面、协作面、演化面都做成清晰阅读路径
+8. 把 plugin manifest / marketplace / MCPB / LSP / channels 的产品边界继续写实
 
 ## 编写约定
 
