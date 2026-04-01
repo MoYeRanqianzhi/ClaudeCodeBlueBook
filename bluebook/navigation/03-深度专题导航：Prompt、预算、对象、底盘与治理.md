@@ -146,15 +146,17 @@
 3. `architecture/24-services层全景与utils-heavy设计.md`
 4. `architecture/40-显式失败语义、重复响应与反竞争条件设计.md`
 5. `architecture/41-叶子模块、扼流点与循环依赖切断法.md`
-6. `architecture/33-公开源码镜像的先进性、热点与技术债.md`
-7. `architecture/38-Contract优先、运行时底盘与公开镜像缺口.md`
-8. `philosophy/23-源码质量不是卫生而是产品能力.md`
-9. `philosophy/28-复杂性应该收敛到扼流点而不是散落到产品层.md`
-10. `philosophy/29-反竞争条件意识优于局部功能正确.md`
+6. `architecture/47-QueryGuard：本地查询生命周期的authoritative state machine.md`
+7. `architecture/33-公开源码镜像的先进性、热点与技术债.md`
+8. `architecture/38-Contract优先、运行时底盘与公开镜像缺口.md`
+9. `philosophy/23-源码质量不是卫生而是产品能力.md`
+10. `philosophy/28-复杂性应该收敛到扼流点而不是散落到产品层.md`
+11. `philosophy/29-反竞争条件意识优于局部功能正确.md`
+12. `philosophy/34-控制平面先于加载表现.md`
 
 这条线的核心结论是：
 
-- Claude Code 值得学的不是“零技术债”，而是 contract-first、race-aware 与 runtime-first 的偿债方向
+- Claude Code 值得学的不是“零技术债”，而是 contract-first、race-aware、runtime-first，以及连本地查询都要先建立 authoritative control plane 的偿债方向
 
 ## 7. 真正的使用路线
 

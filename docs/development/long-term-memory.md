@@ -136,6 +136,8 @@
   - 对象升级而非继续对话：session、task、worktree与compact的选择机理
   - Prompt稳定性解释层：cache-break detection的两阶段诊断器
   - 可解释稳定性比神秘措辞更接近Prompt魔力
+  - QueryGuard：本地查询生命周期的authoritative state machine
+  - 控制平面先于加载表现
   - CLAUDE.md、记忆层与上下文注入实践
   - Channels、托管策略与组织级治理实践
   - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
@@ -190,6 +192,7 @@
 - 源码质量与宿主真相深线还应继续补 authoritative surface、single source of truth、session/worktree split-brain 防治与 schema 共源设计
 - 使用与对象深线还应继续补“上下文压力 / 阻塞压力 / 协作压力 / 隔离压力”对应的对象升级法，不要退回“继续聊或换 prompt”二分法
 - prompt 深线还应继续补“可解释稳定性系统”：cache break 归因、TTL / server-side 分流、tool ABI 稳定性与 shared prefix 经济应该合写
+- 源码质量深线还应继续补本地查询 authority、dispatching 空窗、generation 熔断与 UI 派生状态分离，不要只停留在远程 race 和 duplicate/orphan 上
 - 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
 - 主入口、navigation 与专题 README 必须和正文同步更新，否则蓝皮书会先在检索层失真
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述

@@ -322,6 +322,23 @@
 - `claude-code-source-code/src/tools.ts:329-367`
 - `claude-code-source-code/src/query/stopHooks.ts:92-99`
 
+### U. QueryGuard turns local query state into a synchronous control plane
+
+- `QueryGuard` 不是 loading helper，而是三态 `idle / dispatching / running` 的同步状态机，并通过 `useSyncExternalStore` 暴露给 REPL，作者已明确把它定义为 local query in flight 的 single source of truth。
+- `dispatching` 这个中间态专门治理“队列刚出队、异步链还没到 onQuery”这段空窗；如果没有它，queue processor 和 submit path 都会在同一个异步 gap 里把系统误认成 idle。
+- `handlePromptSubmit` 会在 `processUserInput(...)` 前先 `reserve()`，说明系统要求“先占住运行权，再开始 await 链”，而不是等真正 query 启动后再补 loading state。
+- `tryStart()` / `end(generation)` / `forceEnd()` 把 stale finally、cancel-resubmit race 做成显式代际裁决，说明作者已经把 finally 视为潜在 stale writer，而不是天然可信的 cleanup path。
+- `useQueueProcessor` 不再拥有自己的 reservation/finally，而是完全订阅 `queryGuard`；这说明本地查询 authority 已经升级成一个局部控制协议，而不只是 util 类。
+
+证据:
+
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-104`
+- `claude-code-source-code/src/screens/REPL.tsx:897-918`
+- `claude-code-source-code/src/screens/REPL.tsx:2113-2135`
+- `claude-code-source-code/src/screens/REPL.tsx:2866-2928`
+- `claude-code-source-code/src/utils/handlePromptSubmit.ts:426-607`
+- `claude-code-source-code/src/hooks/useQueueProcessor.ts:1-59`
+
 证据：
 
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-519`
