@@ -26,11 +26,12 @@
 4. `architecture/28-提示词契约分层、知识注入与缓存稳定性.md`
 5. `architecture/31-提示词合同、缓存稳定性与多Agent语法.md`
 6. `architecture/36-五层合同、缓存断点与Prompt装配时序.md`
-7. `philosophy/21-Prompt魔力来自约束叠加与状态反馈.md`
+7. `architecture/39-Prompt可重放前缀、可观测预算与Section编译器.md`
+8. `philosophy/21-Prompt魔力来自约束叠加与状态反馈.md`
 
 这条线的核心结论是：
 
-- prompt 魔力来自装配顺序、工具 ABI、缓存边界、状态晚绑定与协作语法的叠加
+- prompt 魔力来自装配顺序、工具 ABI、缓存边界、状态晚绑定、协作语法，以及 prompt 本身的可重放与可观测性
 
 ## 2. 统一预算器深线
 

@@ -824,6 +824,26 @@
 - `claude-code-source-code/src/services/mcp/channelPermissions.ts:1-18`
 - `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:15-73`
 
+### Z. Prompt 深线已升级到“可重放、可观测、可编译、可分层”
+
+- `stopHooks` 会保存 `CacheSafeParams`，让 `/btw` 和 post-turn forks 复用与主线程一致的安全前缀；这说明 prompt 不只是单轮文本，而是可重放前缀资产。
+- `get_context_usage` 已把 `systemPromptSections`、`systemTools`、`attachmentsByType`、`messageBreakdown` 暴露出来，说明 prompt 结构本身已经进入可观测预算面。
+- `memdir` 与 `systemPromptSectionCache` 说明 prompt 正在按 section 编译和缓存，而不是每轮重写整段 memory 指南。
+- `nullRenderingAttachments` 进一步说明“模型可见真相”和“用户可见真相”被显式分层，这是 prompt 低噪音注入的前提。
+
+证据：
+
+- `claude-code-source-code/src/query/stopHooks.ts:84-99`
+- `claude-code-source-code/src/commands/btw/btw.tsx:183-227`
+- `claude-code-source-code/src/utils/forkedAgent.ts:70-141`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:220-305`
+- `claude-code-source-code/src/components/ContextVisualization.tsx:110-149`
+- `claude-code-source-code/src/memdir/memdir.ts:121-128`
+- `claude-code-source-code/src/memdir/memdir.ts:187-205`
+- `claude-code-source-code/src/bootstrap/state.ts:1641-1653`
+- `claude-code-source-code/src/components/messages/nullRenderingAttachments.ts:4-69`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:332-460`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。

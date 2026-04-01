@@ -19,7 +19,7 @@
 
 ## 1. 先说结论
 
-Claude Code 的 prompt 魔力，至少来自六层叠加：
+Claude Code 的 prompt 魔力，至少来自七层叠加：
 
 1. 装配顺序：
    - override、coordinator、agent、custom、default、append 不是一段 prompt，而是一条优先级链。
@@ -33,8 +33,10 @@ Claude Code 的 prompt 魔力，至少来自六层叠加：
    - date change、relevant memories、mailbox、task notification、channel input 都通过运行时对象晚绑定进入当前轮。
 6. 协作语法：
    - 多 Agent prompt 不只是指导语，而是 ownership、汇报格式、禁止事项和任务边界的正式语法。
+7. 可观测性：
+   - context usage、cache break detection、section 预算让 prompt 不再是黑箱。
 
-所以 Claude Code 的 prompt 强，不是因为某段 system prompt 单独强，而是因为 prompt 已经被嵌进了一个持续运行的约束系统。
+所以 Claude Code 的 prompt 强，不是因为某段 system prompt 单独强，而是因为 prompt 已经被嵌进了一个持续运行、可复用、可观测的约束系统。
 
 ## 2. Prompt 首先是合同，不是文案
 
@@ -98,6 +100,12 @@ Claude Code 的源码恰恰说明相反：
 
 - 模型看到的是一组被提前裁剪、排序并稳定过的行动空间
 
+再往下一层看，Claude Code 实际上还在把 prompt 当前缀资产管理。
+
+`stopHooks` 会保存 `CacheSafeParams`，让 `/btw` 和 post-turn forks 复用与主线程一致的安全前缀；这说明 prompt 并不只是“这一轮发出去的文本”，而是：
+
+- 可被后续查询重放的前缀资产
+
 ## 4. 为什么状态反馈比文案更重要
 
 Claude Code 很少让静态 prompt 独自承担“理解现场”的任务。
@@ -117,6 +125,20 @@ Claude Code 很少让静态 prompt 独自承担“理解现场”的任务。
 这正是很多人主观感受到的“Claude Code 好像更懂现场”的来源。
 
 它不是猜得更准，而是现场真的被 runtime 以更低噪音的方式喂给了它。
+
+而且这个“低噪音”并不是黑箱。
+
+`get_context_usage` 已经把 `systemPromptSections`、`systemTools`、`attachmentsByType` 等结构公开成预算对象，`promptCacheBreakDetection.ts` 又能继续解释：
+
+- 为什么 cache 断了
+- 断在 system、tools、betas 还是 effort
+
+所以 Claude Code 的 prompt 魔力还应继续升级成四个词：
+
+- 可重放
+- 可观测
+- 可编译
+- 可分层
 
 ## 5. 为什么多 Agent prompt 的本体是协作语法
 
@@ -203,4 +225,4 @@ Claude Code 更强的地方恰恰在于，它努力把：
 
 ## 7. 一句话总结
 
-Claude Code 的 prompt 魔力，不是神秘文案，而是“装配顺序 + 角色合同 + 工具边界 + 缓存结构 + 状态反馈 + 协作语法”六层叠加出来的 runtime 效果。
+Claude Code 的 prompt 魔力，不是神秘文案，而是“装配顺序 + 角色合同 + 工具边界 + 缓存结构 + 状态反馈 + 协作语法 + 可观测预算”七层叠加出来的 runtime 效果。
