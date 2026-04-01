@@ -745,6 +745,25 @@
 - `claude-code-source-code/src/utils/permissions/permissionsLoader.ts:40-130`
 - `claude-code-source-code/src/services/mcp/config.ts:338-355`
 
+### AI. The repository itself is treated as a potentially hostile input source
+
+- `permissions.ts` 把 deny / ask / safety check 放在 bypass 和 always-allow 之前，说明系统默认更重视“先避免错误放权”，而不是“尽快让配置生效”。
+- `shadowedRuleDetection.ts` 会把宽 deny/ask 遮蔽窄 allow 视为显式不可达规则，说明规则面的可解释性本身就是治理目标之一。
+- `settings.ts` 明确把 `projectSettings` 排除在 dangerous mode、auto mode、plan mode 相关高风险 opt-in 之外，并直接写明是 malicious project / RCE risk。
+- `permissionsLoader.ts` 的 `allowManagedPermissionRulesOnly` 表明企业托管可以直接收缩权限规则面，而不只是提高某条规则优先级。
+- `settings.ts` 对 `policySettings` 使用 first source wins，说明某些治理面关心的首先是“来源是否可信”，而不是“把所有来源都合并一下”。
+- `mcp/config.ts` 又进一步展示了 allow/deny 的非对称：allow 可以被托管垄断，deny 仍允许用户保留自我保护权。
+- 更高抽象看，Claude Code 的信任模型不是“项目声明什么就信什么”，而是“共享对象不能自动替操作者声明高风险同意”。
+
+证据:
+
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1161-1295`
+- `claude-code-source-code/src/utils/permissions/shadowedRuleDetection.ts:1-220`
+- `claude-code-source-code/src/utils/settings/settings.ts:675-726`
+- `claude-code-source-code/src/utils/settings/settings.ts:875-940`
+- `claude-code-source-code/src/utils/permissions/permissionsLoader.ts:28-130`
+- `claude-code-source-code/src/services/mcp/config.ts:338-355`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -795,6 +814,7 @@
 - 已补风控专题 `41-连续性成本最小化：把合规自保从故障窗口扩展到日常操作纪律`，把分钟级故障纪律上升到日级、周级的连续性成本管理
 - 已补风控专题 `42-风控最小公理与反公理：从第一性原理重写控制面哲学`，把散点机制压缩成持续证明、分层放权、受控恢复的最小原则集
 - 已补风控专题 `43-支持联动附录：按症状、证明链、归属方与证据面快速分流`，把用户、管理员、平台支持的分流规则和证据面合并成一张运行手册
+- 已补风控专题 `44-仓库不是可信主体：从权限优先级到托管收口的信任边界`，把权限顺序、托管收口和项目不可信原则收束成同一套信任模型
 
 ## 下一步待办
 
