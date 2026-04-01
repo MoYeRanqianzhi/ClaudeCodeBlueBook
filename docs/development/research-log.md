@@ -88,6 +88,37 @@
 - `claude-code-source-code/src/tools/EnterWorktreeTool/EnterWorktreeTool.ts:52-127`
 - `claude-code-source-code/src/tools/ExitWorktreeTool/ExitWorktreeTool.ts:67-320`
 
+### G. Unified extension surface
+
+- Claude Code 的扩展面不是“plugins、skills、agents 各自一套系统”，而是目录约定、frontmatter 与 manifest 共同驱动的统一声明式装配面。
+- skills / legacy commands / agents 共享大量 frontmatter 语义，但默认值与 trust boundary 按对象类型不同。
+- plugin manifest 解决的是 bundle-level distribution 与 install-time trust，而不是取代本地 `.claude/*` 的高信任配置面。
+- plugin agent 故意忽略 `permissionMode`、`hooks`、`mcpServers`，表明团队刻意把 plugin 内部单体升权和 manifest 级安装批准分开。
+
+证据:
+
+- `claude-code-source-code/src/utils/frontmatterParser.ts:10-232`
+- `claude-code-source-code/src/utils/markdownConfigLoader.ts:28-360`
+- `claude-code-source-code/src/skills/loadSkillsDir.ts:185-315`
+- `claude-code-source-code/src/tools/AgentTool/loadAgentsDir.ts:541-748`
+- `claude-code-source-code/src/utils/plugins/schemas.ts:429-898`
+- `claude-code-source-code/src/utils/plugins/loadPluginCommands.ts:218-340`
+- `claude-code-source-code/src/utils/plugins/loadPluginAgents.ts:153-168`
+
+### H. Permission chain 与 auto mode
+
+- 权限系统必须按“初始 mode 决议 -> context 装配 -> rule/tool check -> mode 覆写 -> classifier/hooks/headless fallback”理解，不能只看 permission dialog。
+- auto mode 的安全性并不只来自 classifier，还来自进入 auto 前对危险 allow rule 的 strip，以及 classifier 前的多层 fast-path / bypass-immune safety check。
+- `verifyAutoModeGateAccess(...)` 返回 transform function 而不是静态 context，说明作者明确在处理 gate 异步校验与用户中途切 mode 的竞争问题。
+
+证据:
+
+- `claude-code-source-code/src/utils/permissions/PermissionMode.ts:42-140`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:510-645`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:689-1033`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:1078-1158`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:473-1471`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -104,11 +135,12 @@
 - 已补会话与状态 API 手册，明确区分 SDK 文档化接口与当前提取实现边界
 - 已补 AgentTool 与隔离编排专题，把 fork/background/worktree/remote 收拢成统一编排面
 - 已补“隔离优先于并发”专题，并把第一性原理阅读路径显式映射到目录
+- 已补扩展 Frontmatter 与插件 Agent 手册，把 skills / agents / plugins / manifest 收拢成统一扩展面
+- 已补权限系统全链路与 Auto Mode 细拆，把 mode、rule、classifier、headless fallback 串成完整状态机
+- 已补“统一配置语言优于扩展孤岛”专题，并把扩展面提升为单独阅读链
 
 ## 下一步待办
 
-- 补一章“权限系统全链路”深挖 `permissionSetup.ts` / `permissions.ts`
-- 补一章“Skills / frontmatter / plugin agent”统一扩展范式
 - 补一章“MCP 实战配置与集成范式”
 - 补一章“多 Agent 协作模式与 prompt 模板”
 - 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
@@ -117,6 +149,7 @@
 - 补命令索引的更细表格化版本与 workflow/dynamic skills 交叉核对
 - 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
 - 继续把 session/state API 与子代理状态回收做成字段级索引与时序图
+- 把插件市场、manifest、MCPB、LSP、channels 的产品层边界继续写成实战与策略手册
 
 ## 当前风险
 
@@ -129,3 +162,5 @@
 - session/state 面横跨 `sessionStorage.ts`、`fileHistory.ts`、SessionMemory、SDK control schema，后续必须继续防止“API、机制、产品行为”三层混写。
 - session API 在 `agentSdkTypes.ts` 中的实现可见度仍不完整，后续写作必须继续强调“入口已声明”不等于“当前提取树里已有完整实现”。
 - 多 Agent 隔离逻辑横跨 `AgentTool.tsx`、`runAgent.ts`、`forkedAgent.ts`、worktree tools，后续若继续细拆时应防止把“并发能力”和“隔离约束”混成一个概念。
+- 扩展面虽然已经能被解释为统一配置语言，但 plugin manifest、marketplace、MCPB、LSP 仍存在明显的产品成熟度差异，后续不能把 schema 支持直接写成生态成熟。
+- 权限系统的很多细节受 ant-only feature、classifier gate、fail-open/fail-closed 配置影响，后续必须持续区分“源码路径存在”和“公开构建稳定可用”。

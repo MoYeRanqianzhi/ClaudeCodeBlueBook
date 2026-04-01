@@ -31,8 +31,16 @@
 
 - 控制面：命令、权限、REPL、remote/bridge。
 - 执行面：tools、subagent、MCP、tool orchestration。
+- 扩展面：skills、commands、agents、plugins、hooks、MCP、LSP、output styles。
 - 状态面：transcript、memory、session、rewind、compact/recovery。
 - 演化面：feature gate、runtime gate、compat shim、默认值与 rollout。
+
+## 按专题链阅读
+
+- 扩展链：`05-功能全景与API支持.md` -> `api/10-扩展Frontmatter与插件Agent手册.md` -> `architecture/03-扩展能力与远程架构.md` -> `philosophy/08-统一配置语言优于扩展孤岛.md`
+- 策略链：`architecture/05-权限系统与安全状态机.md` -> `architecture/11-权限系统全链路与Auto Mode.md` -> `philosophy/03-安全观与边界设计.md`
+- 会话链：`architecture/09-会话存储记忆与回溯状态面.md` -> `api/09-会话与状态API手册.md` -> `philosophy/06-状态优先于对话.md`
+- 协作链：`architecture/10-AgentTool与隔离编排.md` -> `philosophy/07-隔离优先于并发.md` -> `06-第一性原理与苏格拉底反思.md`
 
 ## 按第一性原理阅读
 
@@ -85,6 +93,9 @@
 - [命令字段与可用性索引](api/07-%E5%91%BD%E4%BB%A4%E5%AD%97%E6%AE%B5%E4%B8%8E%E5%8F%AF%E7%94%A8%E6%80%A7%E7%B4%A2%E5%BC%95.md)
 - [工具协议与 ToolUseContext](api/08-%E5%B7%A5%E5%85%B7%E5%8D%8F%E8%AE%AE%E4%B8%8EToolUseContext.md)
 - [会话与状态 API 手册](api/09-%E4%BC%9A%E8%AF%9D%E4%B8%8E%E7%8A%B6%E6%80%81API%E6%89%8B%E5%86%8C.md)
+- [扩展 Frontmatter 与插件 Agent 手册](api/10-%E6%89%A9%E5%B1%95Frontmatter%E4%B8%8E%E6%8F%92%E4%BB%B6Agent%E6%89%8B%E5%86%8C.md)
 - [构建期开关、运行期开关与兼容层](philosophy/05-%E6%9E%84%E5%BB%BA%E6%9C%9F%E5%BC%80%E5%85%B3%E3%80%81%E8%BF%90%E8%A1%8C%E6%9C%9F%E5%BC%80%E5%85%B3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%B1%82.md)
 - [状态优先于对话](philosophy/06-%E7%8A%B6%E6%80%81%E4%BC%98%E5%85%88%E4%BA%8E%E5%AF%B9%E8%AF%9D.md)
 - [隔离优先于并发](philosophy/07-%E9%9A%94%E7%A6%BB%E4%BC%98%E5%85%88%E4%BA%8E%E5%B9%B6%E5%8F%91.md)
+- [统一配置语言优于扩展孤岛](philosophy/08-%E7%BB%9F%E4%B8%80%E9%85%8D%E7%BD%AE%E8%AF%AD%E8%A8%80%E4%BC%98%E4%BA%8E%E6%89%A9%E5%B1%95%E5%AD%A4%E5%B2%9B.md)
+- [权限系统全链路与 Auto Mode](architecture/11-%E6%9D%83%E9%99%90%E7%B3%BB%E7%BB%9F%E5%85%A8%E9%93%BE%E8%B7%AF%E4%B8%8EAuto%20Mode.md)

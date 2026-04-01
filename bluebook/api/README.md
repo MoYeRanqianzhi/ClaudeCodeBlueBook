@@ -17,6 +17,7 @@
 - [命令字段与可用性索引](07-%E5%91%BD%E4%BB%A4%E5%AD%97%E6%AE%B5%E4%B8%8E%E5%8F%AF%E7%94%A8%E6%80%A7%E7%B4%A2%E5%BC%95.md)
 - [工具协议与 ToolUseContext](08-%E5%B7%A5%E5%85%B7%E5%8D%8F%E8%AE%AE%E4%B8%8EToolUseContext.md)
 - [会话与状态 API 手册](09-%E4%BC%9A%E8%AF%9D%E4%B8%8E%E7%8A%B6%E6%80%81API%E6%89%8B%E5%86%8C.md)
+- [扩展 Frontmatter 与插件 Agent 手册](10-%E6%89%A9%E5%B1%95Frontmatter%E4%B8%8E%E6%8F%92%E4%BB%B6Agent%E6%89%8B%E5%86%8C.md)
 
 建议和蓝皮书主线搭配阅读：
 
@@ -26,3 +27,4 @@
 - 需要字段与 gating 细节时再看 `07`
 - 需要工具协议与 runtime context 时再看 `08`
 - 需要 session/state surface、runtime truth 与恢复接口时再看 `09`
+- 需要统一扩展面、frontmatter 字段、plugin/agent trust boundary 时再看 `10`

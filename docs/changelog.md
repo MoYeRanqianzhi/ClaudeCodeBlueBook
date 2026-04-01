@@ -25,3 +25,6 @@
 - 新增 AgentTool 与隔离编排专题，补强 fork/background/worktree/remote 的统一编排视角
 - 新增“隔离优先于并发”专题，并将第一性原理阅读路径映射到主索引
 - 同步更新章节规划、证据索引、研究日志与长期记忆，固化本轮结论
+- 新增扩展 Frontmatter 与插件 Agent 手册，补强 skills / agents / plugins 的统一扩展 API 视角
+- 新增权限系统全链路与 Auto Mode 细拆，补强 mode、rule、classifier、headless fallback 的全链路理解
+- 新增“统一配置语言优于扩展孤岛”专题，并将扩展面提升为单独阅读链
