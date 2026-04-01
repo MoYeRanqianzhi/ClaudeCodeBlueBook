@@ -805,6 +805,19 @@
 - `claude-code-source-code/src/utils/fastMode.ts:178-228`
 - `claude-code-source-code/src/bridge/replBridge.ts:1028-1055`
 
+### AL. High-volatility users need rights-preserving discipline more than evasive tactics
+
+- `errors.ts` 的 `token_revoked`、`oauth_org_not_allowed`、generic auth_error 以及 CCR 专用 auth 提示，说明平台内部已有比较明确的身份/组织错误分层；用户若只说“被封了”会丢失最短分流路径。
+- `rateLimitMessages.ts` 把 reset time、session limit、weekly limit、out of extra usage 显式建模，说明很多“突然不能继续”并不是处罚，而是额度/冷却窗口；用户利益保护首先要求不要把这类问题误报成封禁。
+- `diagLogs.ts` 提供无 PII 的 diagnostics 事件面，意味着高波动环境用户可以在较低敏感度前提下保留第一现场，而不必在证据保护和隐私之间二选一。
+- 结合前面认证连续性、冻结语义、支持分流的证据，可以得出一个更高层结论：对高波动环境用户，最有效的权益保护不是规避检测，而是稳定主路径、减少连续性噪声、保留第一现场并用共享词汇描述问题。
+
+证据:
+
+- `claude-code-source-code/src/services/api/errors.ts:838-878`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:143-199`
+- `claude-code-source-code/src/utils/diagLogs.ts:13-30`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -858,6 +871,7 @@
 - 已补风控专题 `44-仓库不是可信主体：从权限优先级到托管收口的信任边界`，把权限顺序、托管收口和项目不可信原则收束成同一套信任模型
 - 已补风控专题 `45-认证连续性工程：缓存、锁、密钥链与为什么不要乱换登录路径`，把认证问题从“登录成功/失败”提升为多缓存、多进程的连续性工程
 - 已补风控专题 `46-冻结语义与单链恢复：为什么故障窗口越乱试越像被封了`，把恢复问题从“多试几次”提升为单链、一致性和前缀稳定问题
+- 已补风控专题 `47-高波动环境用户的合规权益保护：如何降低误伤并缩短自证路径`，把中国/高波动环境用户的利益保护收束成稳定主路径、证据保全和共享词汇三条主线
 
 ## 下一步待办
 
