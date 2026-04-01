@@ -824,6 +824,21 @@
 - `claude-code-source-code/src/services/mcp/channelPermissions.ts:1-18`
 - `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:15-73`
 
+### Z. 入口索引层必须被当成正式产物，而不是维护附录
+
+- 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。
+- 这说明检索层本身也是蓝皮书结构的一部分，不只是排版工作；它决定读者是否能按“问题 -> 平面 -> 章节”而不是按文件名碰运气进入正文。
+
+证据：
+
+- `bluebook/README.md`
+- `bluebook/navigation/01-第一性原理阅读地图.md`
+- `bluebook/navigation/02-能力、API与治理检索图.md`
+- `bluebook/api/README.md`
+- `bluebook/architecture/README.md`
+- `bluebook/guides/README.md`
+- `bluebook/philosophy/README.md`
+
 ## 下一步待办
 
 - 补 `SDKMessage`、control、snapshot、recovery 四面统一的宿主实现 casebook

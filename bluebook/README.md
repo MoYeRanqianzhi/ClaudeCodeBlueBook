@@ -47,6 +47,7 @@
 - 再读 [guides/01-使用指南](guides/01-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md)
 - 多 Agent 与 prompt 编排继续读 [guides/02-多Agent编排与Prompt模板](guides/02-%E5%A4%9AAgent%E7%BC%96%E6%8E%92%E4%B8%8EPrompt%E6%A8%A1%E6%9D%BF.md)
 - 知识层与 `CLAUDE.md` 实践继续读 [guides/03-CLAUDE.md、记忆层与上下文注入实践](guides/03-CLAUDE.md%E3%80%81%E8%AE%B0%E5%BF%86%E5%B1%82%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5%E5%AE%9E%E8%B7%B5.md)
+- 想把复杂任务压缩成稳定方法，再读 [guides/06-第一性原理实践：目标、预算、对象、边界与回写](guides/06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E5%AE%9E%E8%B7%B5%EF%BC%9A%E7%9B%AE%E6%A0%87%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E8%BE%B9%E7%95%8C%E4%B8%8E%E5%9B%9E%E5%86%99.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -58,20 +59,20 @@
 ### 4. 想研究 prompt、知识、记忆与上下文经济
 
 - 先读 `06 -> 07`
-- 再读 `api/18 -> api/21 -> architecture/18 -> architecture/28 -> architecture/29`
-- 哲学收束看 `philosophy/14 -> philosophy/18 -> philosophy/19`
+- 再读 `api/18 -> api/21 -> architecture/18 -> architecture/28 -> architecture/29 -> architecture/31 -> architecture/36`
+- 哲学收束看 `philosophy/14 -> philosophy/18 -> philosophy/21`
 
 ### 5. 想研究安全、风控与治理
 
-- 产品内安全先读 `architecture/05 -> architecture/11 -> architecture/19`
-- 哲学收束看 `philosophy/03 -> philosophy/19`
+- 产品内安全先读 `architecture/05 -> architecture/11 -> architecture/19 -> architecture/32 -> architecture/37`
+- 哲学收束看 `philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/27`
 - 平台风控与账号治理读 [risk/README](risk/README.md)
 
 ### 6. 想研究源码结构与工程先进性
 
 - 先读 `01 -> 03 -> 05`
-- 再读 `architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25`
-- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/17`
+- 再读 `architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38`
+- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/23 -> philosophy/24`
 
 ## 按第一性原理阅读
 
@@ -79,16 +80,18 @@
 - 决策：`03` -> `architecture/02` -> `architecture/22`
 - 行动：`architecture/05` -> `architecture/11` -> `architecture/19`
 - 记忆：`architecture/09` -> `api/09` -> `architecture/29`
-- 协作：`architecture/10` -> `architecture/30` -> `guides/02`
+- 协作：`architecture/10` -> `architecture/30` -> `architecture/34` -> `guides/02`
 - 宿主：`api/13` -> `architecture/13` -> `philosophy/09`
 - 恢复：`architecture/06` -> `architecture/16` -> `architecture/25`
-- 治理：`04` -> `philosophy/20` -> `risk/README`
+- 预算：`architecture/21` -> `architecture/32` -> `architecture/37` -> `philosophy/22`
+- 治理：`04` -> `api/28` -> `guides/04` -> `guides/05` -> `philosophy/27` -> `risk/README`
+- 目录拓扑：`05` -> `api/23` -> `api/29` -> `api/30`
 
 ## 按问题阅读
 
 ### 为什么 prompt 看起来有魔力
 
-- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> philosophy/14 -> philosophy/18`
+- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> philosophy/14 -> philosophy/18 -> philosophy/21`
 
 ### 为什么它不像普通 IDE 插件
 
@@ -98,9 +101,13 @@
 
 - `06 -> architecture/10 -> architecture/30 -> guides/02 -> philosophy/07`
 
+### 为什么复杂任务不该继续写成多轮聊天
+
+- `06 -> architecture/30 -> architecture/34 -> guides/06 -> philosophy/25`
+
 ### 为什么安全和 token 经济要一起看
 
-- `03 -> architecture/19 -> architecture/21 -> philosophy/03 -> philosophy/19`
+- `03 -> architecture/19 -> architecture/21 -> architecture/32 -> architecture/37 -> philosophy/03 -> philosophy/19 -> philosophy/22`
 
 ### 为什么宿主接入不能只看 `query(prompt)`
 
@@ -109,6 +116,10 @@
 ### 为什么有代码不等于有公共承诺
 
 - `04 -> 08 -> architecture/27 -> philosophy/05 -> philosophy/20`
+
+### 为什么目录结构本身也在暴露能力拓扑
+
+- `05 -> api/24 -> api/29 -> api/30 -> architecture/24 -> architecture/38`
 
 ## 专题入口
 
