@@ -890,6 +890,20 @@
 - `claude-code-source-code/src/cli/print.ts:5241-5270`
 - `claude-code-source-code/src/utils/messages.ts:5133-5188`
 
+### AC. 预算器深线已升级到“观测型预算与实际调优方法”
+
+- `get_context_usage` 暴露的不只是总 token，还显式暴露 `systemPromptSections`、`systemTools`、`deferredBuiltinTools`、`mcpTools`、`skills`、`attachmentsByType` 与 `toolCallsByType`，这说明 prompt 预算已被外化成可诊断对象。
+- `ContextVisualization` 证明这些字段不是纯 SDK 调试残留，而是前台实际消费的正式观测面。
+- 预算观测必须和 `pending_action`、`permission_mode`、`session_state_changed` 一起理解，否则宿主仍会把“预算问题”“审批阻塞”“模式变化”混成一种“系统卡住”。
+
+证据：
+
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:175-305`
+- `claude-code-source-code/src/components/ContextVisualization.tsx:110-220`
+- `claude-code-source-code/src/utils/sessionState.ts:92-130`
+- `claude-code-source-code/src/state/onChangeAppState.ts:50-92`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:332-460`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。

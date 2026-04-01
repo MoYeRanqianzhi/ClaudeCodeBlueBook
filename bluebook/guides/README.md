@@ -10,6 +10,7 @@
 4. [04-Channels、托管策略与组织级治理实践](04-Channels%E3%80%81%E6%89%98%E7%AE%A1%E7%AD%96%E7%95%A5%E4%B8%8E%E7%BB%84%E7%BB%87%E7%BA%A7%E6%B2%BB%E7%90%86%E5%AE%9E%E8%B7%B5.md)
 5. [05-企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批](05-%E4%BC%81%E4%B8%9A%E6%89%98%E7%AE%A1%E8%AE%BE%E7%BD%AE%E5%AE%9E%E6%88%98%EF%BC%9AchannelsEnabled%E3%80%81allowedChannelPlugins%E4%B8%8E%E5%8D%B1%E9%99%A9%E9%85%8D%E7%BD%AE%E5%AE%A1%E6%89%B9.md)
 6. [06-第一性原理实践：目标、预算、对象、边界与回写](06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E5%AE%9E%E8%B7%B5%EF%BC%9A%E7%9B%AE%E6%A0%87%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E8%BE%B9%E7%95%8C%E4%B8%8E%E5%9B%9E%E5%86%99.md)
+7. [07-用Context Usage与状态回写调优Prompt和预算](07-%E7%94%A8Context%20Usage%E4%B8%8E%E7%8A%B6%E6%80%81%E5%9B%9E%E5%86%99%E8%B0%83%E4%BC%98Prompt%E5%92%8C%E9%A2%84%E7%AE%97.md)
 
 ## 按使用目标阅读
 
@@ -21,6 +22,7 @@
 - 想理解 Claude Code 为什么能同时兼顾安全、成本与体验：`01 -> ../architecture/32 -> ../architecture/37 -> ../philosophy/22`
 - 想从源码反推更一般的 Agent runtime 设计法：`01 -> ../architecture/33 -> ../architecture/38 -> ../philosophy/23`
 - 想把复杂任务压缩成一套可执行方法：`01 -> 06 -> ../architecture/36 -> ../architecture/37`
+- 想真正调优 prompt 和预算，而不是凭感觉乱改：`06 -> 07 -> ../api/32 -> ../architecture/37`
 
 ## 与其他目录的边界
 

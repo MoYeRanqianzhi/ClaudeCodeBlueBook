@@ -101,6 +101,7 @@
   - 动态能力暴露、裁剪链与运行时可见性
   - 源码目录级能力地图：commands、tools、services、状态与宿主平面
   - 失败语义、取消请求与孤儿修复API手册
+  - Context Usage、Prompt预算与观测型宿主手册
   - 深度专题导航：Prompt、预算、对象、底盘与治理
   - workflow engine、LocalWorkflowTask 与可见边界
   - REPL transcript search、selection 与 scroll 协同
@@ -128,6 +129,7 @@
   - Channels、托管策略与组织级治理实践
   - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
   - 第一性原理实践：目标、预算、对象、边界与回写
+  - 用Context Usage与状态回写调优Prompt和预算
 
 ## 已确认事实
 
@@ -171,6 +173,7 @@
 - 源码质量深线还应继续升级为“显式失败 + 反竞争条件 + chokepoint + leaf module”，不要退回“大文件很多/代码很复杂”的空泛评价
 - API atlas 还应继续补目录级能力地图，避免“字段齐了，但能力地形仍然不可检索”
 - 宿主 API 还应继续补失败语义、取消请求、orphan response 与 transcript repair，不要只写 happy path
+- 预算器深线还应继续补 context usage、systemPromptSections、attachmentsByType 与 pending_action 的联合调优方法
 - 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
 - 主入口、navigation 与专题 README 必须和正文同步更新，否则蓝皮书会先在检索层失真
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述
