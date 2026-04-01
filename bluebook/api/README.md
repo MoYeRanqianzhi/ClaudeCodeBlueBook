@@ -42,6 +42,8 @@
 - [20-宿主实现最小闭环与恢复案例手册](20-%E5%AE%BF%E4%B8%BB%E5%AE%9E%E7%8E%B0%E6%9C%80%E5%B0%8F%E9%97%AD%E7%8E%AF%E4%B8%8E%E6%81%A2%E5%A4%8D%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.md)
 - [31-失败语义、取消请求与孤儿修复API手册](31-%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E3%80%81%E5%8F%96%E6%B6%88%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%AD%A4%E5%84%BF%E4%BF%AE%E5%A4%8DAPI%E6%89%8B%E5%86%8C.md)
 - [32-Context Usage、Prompt预算与观测型宿主手册](32-Context%20Usage%E3%80%81Prompt%E9%A2%84%E7%AE%97%E4%B8%8E%E8%A7%82%E6%B5%8B%E5%9E%8B%E5%AE%BF%E4%B8%BB%E6%89%8B%E5%86%8C.md)
+- [33-远程恢复、401与Close Code语义手册](33-%E8%BF%9C%E7%A8%8B%E6%81%A2%E5%A4%8D%E3%80%81401%E4%B8%8EClose%20Code%E8%AF%AD%E4%B9%89%E6%89%8B%E5%86%8C.md)
+- [34-单一真相入口、权威状态面与Chokepoint手册](34-%E5%8D%95%E4%B8%80%E7%9C%9F%E7%9B%B8%E5%85%A5%E5%8F%A3%E3%80%81%E6%9D%83%E5%A8%81%E7%8A%B6%E6%80%81%E9%9D%A2%E4%B8%8EChokepoint%E6%89%8B%E5%86%8C.md)
 
 ### 4. Prompt、知识与上下文装配面
 
@@ -71,7 +73,7 @@
 ### 2. 想把 Claude Code 嵌进宿主
 
 - 先读 `24 -> 26 -> 02 -> 13 -> 15 -> 16 -> 20`
-- 补充 `11 -> 17 -> 19 -> 31 -> 32`
+- 补充 `11 -> 17 -> 19 -> 31 -> 32 -> 33 -> 34`
 - 目标：把 request / response / follow-on event / snapshot / recovery 一起看成闭环
 
 ### 3. 想控制 prompt、知识和记忆
@@ -97,5 +99,6 @@
 - 代码里有 schema，不等于所有 adapter 都支持。
 - 有类型声明，不等于当前提取树里已有完整实现。
 - 有实现，不等于产品公开承诺稳定支持。
+- 关键状态应先找 authoritative surface，再找调用点散布。
 
 主线结论先看 [../05-功能全景与 API 支持](../05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)。

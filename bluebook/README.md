@@ -73,8 +73,8 @@
 ### 6. 想研究源码结构与工程先进性
 
 - 先读 `01 -> 03 -> 05`
-- 再读 `api/30 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38 -> architecture/40 -> architecture/41`
-- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/17 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29`
+- 再读 `api/30 -> api/34 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38 -> architecture/40 -> architecture/41 -> architecture/44`
+- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/17 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29 -> philosophy/32`
 
 ## 按专题链速查
 
@@ -118,6 +118,7 @@
 - 目录拓扑链：`05 -> api/24 -> api/29 -> api/30 -> architecture/38 -> philosophy/24`
 - 失败语义链：`api/31 -> architecture/40 -> philosophy/29`
 - 预算观测链：`api/32 -> architecture/37 -> architecture/43 -> philosophy/31`
+- 单一真相入口链：`api/34 -> architecture/44 -> philosophy/32`
 
 ## 按第一性原理阅读
 
@@ -178,6 +179,10 @@
 
 - `guides/07 -> api/32 -> architecture/43 -> philosophy/22 -> philosophy/31`
 
+### 为什么单一真相入口比多处半真相实现更可靠
+
+- `api/34 -> architecture/41 -> architecture/44 -> philosophy/28 -> philosophy/32`
+
 ## 专题入口
 
 - [导航专题](navigation/README.md)
@@ -203,12 +208,14 @@
 - [插件协议全生命周期：Manifest、Marketplace、Options、MCPB与Reload](api/27-%E6%8F%92%E4%BB%B6%E5%8D%8F%E8%AE%AE%E5%85%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%EF%BC%9AManifest%E3%80%81Marketplace%E3%80%81Options%E3%80%81MCPB%E4%B8%8EReload.md)
 - [治理型API：Channels、Context Usage与Settings三重真相](api/28-%E6%B2%BB%E7%90%86%E5%9E%8BAPI%EF%BC%9AChannels%E3%80%81Context%20Usage%E4%B8%8ESettings%E4%B8%89%E9%87%8D%E7%9C%9F%E7%9B%B8.md)
 - [动态能力暴露、裁剪链与运行时可见性](api/29-%E5%8A%A8%E6%80%81%E8%83%BD%E5%8A%9B%E6%9A%B4%E9%9C%B2%E3%80%81%E8%A3%81%E5%89%AA%E9%93%BE%E4%B8%8E%E8%BF%90%E8%A1%8C%E6%97%B6%E5%8F%AF%E8%A7%81%E6%80%A7.md)
+- [单一真相入口、权威状态面与Chokepoint手册](api/34-%E5%8D%95%E4%B8%80%E7%9C%9F%E7%9B%B8%E5%85%A5%E5%8F%A3%E3%80%81%E6%9D%83%E5%A8%81%E7%8A%B6%E6%80%81%E9%9D%A2%E4%B8%8EChokepoint%E6%89%8B%E5%86%8C.md)
 - [提示词契约分层、知识注入与缓存稳定性](architecture/28-%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%A5%91%E7%BA%A6%E5%88%86%E5%B1%82%E3%80%81%E7%9F%A5%E8%AF%86%E6%B3%A8%E5%85%A5%E4%B8%8E%E7%BC%93%E5%AD%98%E7%A8%B3%E5%AE%9A%E6%80%A7.md)
 - [知识层栈：CLAUDE.md、Session Memory、Auto-memory与Attachments](architecture/29-%E7%9F%A5%E8%AF%86%E5%B1%82%E6%A0%88%EF%BC%9ACLAUDE.md%E3%80%81Session%20Memory%E3%80%81Auto-memory%E4%B8%8EAttachments.md)
 - [多Agent任务对象、Mailbox与后台协作运行时](architecture/30-%E5%A4%9AAgent%E4%BB%BB%E5%8A%A1%E5%AF%B9%E8%B1%A1%E3%80%81Mailbox%E4%B8%8E%E5%90%8E%E5%8F%B0%E5%8D%8F%E4%BD%9C%E8%BF%90%E8%A1%8C%E6%97%B6.md)
 - [提示词合同、缓存稳定性与多Agent语法](architecture/31-%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%90%88%E5%90%8C%E3%80%81%E7%BC%93%E5%AD%98%E7%A8%B3%E5%AE%9A%E6%80%A7%E4%B8%8E%E5%A4%9AAgent%E8%AF%AD%E6%B3%95.md)
 - [安全、权限、治理与Token预算统一图](architecture/32-%E5%AE%89%E5%85%A8%E3%80%81%E6%9D%83%E9%99%90%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8EToken%E9%A2%84%E7%AE%97%E7%BB%9F%E4%B8%80%E5%9B%BE.md)
 - [公开源码镜像的先进性、热点与技术债](architecture/33-%E5%85%AC%E5%BC%80%E6%BA%90%E7%A0%81%E9%95%9C%E5%83%8F%E7%9A%84%E5%85%88%E8%BF%9B%E6%80%A7%E3%80%81%E7%83%AD%E7%82%B9%E4%B8%8E%E6%8A%80%E6%9C%AF%E5%80%BA.md)
+- [单一真相入口：mode、tool pool、state与metadata的权威面](architecture/44-%E5%8D%95%E4%B8%80%E7%9C%9F%E7%9B%B8%E5%85%A5%E5%8F%A3%EF%BC%9Amode%E3%80%81tool%20pool%E3%80%81state%E4%B8%8Emetadata%E7%9A%84%E6%9D%83%E5%A8%81%E9%9D%A2.md)
 - [CLAUDE.md、记忆层与上下文注入实践](guides/03-CLAUDE.md%E3%80%81%E8%AE%B0%E5%BF%86%E5%B1%82%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5%E5%AE%9E%E8%B7%B5.md)
 - [Prompt 不是文本技巧而是契约分层](philosophy/18-Prompt%E4%B8%8D%E6%98%AF%E6%96%87%E6%9C%AC%E6%8A%80%E5%B7%A7%E8%80%8C%E6%98%AF%E5%A5%91%E7%BA%A6%E5%88%86%E5%B1%82.md)
 - [安全与 Token 经济不是权衡而是同一优化](philosophy/19-%E5%AE%89%E5%85%A8%E4%B8%8EToken%E7%BB%8F%E6%B5%8E%E4%B8%8D%E6%98%AF%E6%9D%83%E8%A1%A1%E8%80%8C%E6%98%AF%E5%90%8C%E4%B8%80%E4%BC%98%E5%8C%96.md)
@@ -216,6 +223,7 @@
 - [Prompt魔力来自约束叠加与状态反馈](philosophy/21-Prompt%E9%AD%94%E5%8A%9B%E6%9D%A5%E8%87%AA%E7%BA%A6%E6%9D%9F%E5%8F%A0%E5%8A%A0%E4%B8%8E%E7%8A%B6%E6%80%81%E5%8F%8D%E9%A6%88.md)
 - [安全、成本与体验必须共用预算器](philosophy/22-%E5%AE%89%E5%85%A8%E3%80%81%E6%88%90%E6%9C%AC%E4%B8%8E%E4%BD%93%E9%AA%8C%E5%BF%85%E9%A1%BB%E5%85%B1%E7%94%A8%E9%A2%84%E7%AE%97%E5%99%A8.md)
 - [源码质量不是卫生而是产品能力](philosophy/23-%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E4%B8%8D%E6%98%AF%E5%8D%AB%E7%94%9F%E8%80%8C%E6%98%AF%E4%BA%A7%E5%93%81%E8%83%BD%E5%8A%9B.md)
+- [单一真相入口优于多处半真相实现](philosophy/32-%E5%8D%95%E4%B8%80%E7%9C%9F%E7%9B%B8%E5%85%A5%E5%8F%A3%E4%BC%98%E4%BA%8E%E5%A4%9A%E5%A4%84%E5%8D%8A%E7%9C%9F%E7%9B%B8%E5%AE%9E%E7%8E%B0.md)
 - [信号融合、连续性断裂与“像被封了”的生成机制](risk/24-%E4%BF%A1%E5%8F%B7%E8%9E%8D%E5%90%88%E3%80%81%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%AD%E8%A3%82%E4%B8%8E%E2%80%9C%E5%83%8F%E8%A2%AB%E5%B0%81%E4%BA%86%E7%9A%84%E7%94%9F%E6%88%90%E6%9C%BA%E5%88%B6.md)
 - [问题导向索引：按症状、源码入口与合规动作阅读风控专题](risk/25-%E9%97%AE%E9%A2%98%E5%AF%BC%E5%90%91%E7%B4%A2%E5%BC%95%EF%BC%9A%E6%8C%89%E7%97%87%E7%8A%B6%E3%80%81%E6%BA%90%E7%A0%81%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%90%88%E8%A7%84%E5%8A%A8%E4%BD%9C%E9%98%85%E8%AF%BB%E9%A3%8E%E6%8E%A7%E4%B8%93%E9%A2%98.md)
 - [苏格拉底附录：如果要把误伤再降一半，系统该追问什么](risk/26-%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E9%99%84%E5%BD%95%EF%BC%9A%E5%A6%82%E6%9E%9C%E8%A6%81%E6%8A%8A%E8%AF%AF%E4%BC%A4%E5%86%8D%E9%99%8D%E4%B8%80%E5%8D%8A%EF%BC%8C%E7%B3%BB%E7%BB%9F%E8%AF%A5%E8%BF%BD%E9%97%AE%E4%BB%80%E4%B9%88.md)

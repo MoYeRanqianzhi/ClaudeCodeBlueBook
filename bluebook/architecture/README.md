@@ -67,6 +67,7 @@
 - [40-显式失败语义、重复响应与反竞争条件设计](40-%E6%98%BE%E5%BC%8F%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E3%80%81%E9%87%8D%E5%A4%8D%E5%93%8D%E5%BA%94%E4%B8%8E%E5%8F%8D%E7%AB%9E%E4%BA%89%E6%9D%A1%E4%BB%B6%E8%AE%BE%E8%AE%A1.md)
 - [41-叶子模块、扼流点与循环依赖切断法](41-%E5%8F%B6%E5%AD%90%E6%A8%A1%E5%9D%97%E3%80%81%E6%89%BC%E6%B5%81%E7%82%B9%E4%B8%8E%E5%BE%AA%E7%8E%AF%E4%BE%9D%E8%B5%96%E5%88%87%E6%96%AD%E6%B3%95.md)
 - [43-预算观测、Context Suggestions与调优闭环](43-%E9%A2%84%E7%AE%97%E8%A7%82%E6%B5%8B%E3%80%81Context%20Suggestions%E4%B8%8E%E8%B0%83%E4%BC%98%E9%97%AD%E7%8E%AF.md)
+- [44-单一真相入口：mode、tool pool、state与metadata的权威面](44-%E5%8D%95%E4%B8%80%E7%9C%9F%E7%9B%B8%E5%85%A5%E5%8F%A3%EF%BC%9Amode%E3%80%81tool%20pool%E3%80%81state%E4%B8%8Emetadata%E7%9A%84%E6%9D%83%E5%A8%81%E9%9D%A2.md)
 
 ## 推荐阅读链
 
@@ -84,5 +85,6 @@
 - 想看显式失败、重复响应与 race-aware runtime：`13 -> 14 -> 17 -> 40`
 - 想看 chokepoint、leaf module 与依赖图切断：`24 -> 38 -> 41`
 - 想看预算为什么会走向“观测 -> 建议 -> 调优”的闭环：`21 -> 37 -> 43`
+- 想看为什么关键状态必须收口成 authoritative surface：`17 -> 41 -> 44`
 
 主线结论先看 [../03-设计哲学](../03-%E8%AE%BE%E8%AE%A1%E5%93%B2%E5%AD%A6.md) 和 [../07-运行时契约、知识层与生态边界](../07-%E8%BF%90%E8%A1%8C%E6%97%B6%E5%A5%91%E7%BA%A6%E3%80%81%E7%9F%A5%E8%AF%86%E5%B1%82%E4%B8%8E%E7%94%9F%E6%80%81%E8%BE%B9%E7%95%8C.md)。
