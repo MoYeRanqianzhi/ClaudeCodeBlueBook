@@ -170,6 +170,10 @@
 
 - `architecture/17 -> architecture/43 -> architecture/57 -> philosophy/31 -> philosophy/33 -> philosophy/44`
 
+### 为什么依赖图诚实性比抽象洁癖更重要
+
+- `architecture/41 -> architecture/58 -> philosophy/28 -> philosophy/45`
+
 ### 想按深度专题而不是按目录来读
 
 - 先读 [navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理](navigation/03-%E6%B7%B1%E5%BA%A6%E4%B8%93%E9%A2%98%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E5%BA%95%E7%9B%98%E4%B8%8E%E6%B2%BB%E7%90%86.md)

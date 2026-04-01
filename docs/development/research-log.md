@@ -1368,6 +1368,25 @@
 - `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:640-705`
 - `claude-code-source-code/src/utils/contextSuggestions.ts:30-90`
 
+### AP. 依赖图诚实性是 Claude Code 的正式工程方法
+
+- `queryContext.ts` 不是 leaf，而是受控 anti-cycle seam；它把高位共享依赖关进小房间，并限制只有入口层文件可用。
+- `analytics/index.ts`、`pluginPolicy.ts`、`normalization.ts`、`systemPromptType.ts` 都在展示同一纪律：高扇入共享面必须极薄，最好 zero/low-dep。
+- `types/permissions.ts` 说明更成熟的做法是先抽类型中心，再让实现层依赖它，而不是类型和实现互相咬住。
+- `mcpSkillBuilders.ts` 与 `teammateViewHelpers.ts` 证明这不是个别文件习惯，而是仓库级 graph discipline：宁可 registry leaf、宁可内联 type check，也不随手闭合 runtime cycle。
+- 更强的总结不是“模块多”，而是“import 边表达真实责任，而不是哪里顺手就从哪里拿”。
+
+证据：
+
+- `claude-code-source-code/src/utils/queryContext.ts:1-40`
+- `claude-code-source-code/src/services/analytics/index.ts:1-40`
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-18`
+- `claude-code-source-code/src/services/mcp/normalization.ts:1-20`
+- `claude-code-source-code/src/utils/systemPromptType.ts:1-12`
+- `claude-code-source-code/src/types/permissions.ts:1-36`
+- `claude-code-source-code/src/skills/mcpSkillBuilders.ts:1-40`
+- `claude-code-source-code/src/state/teammateViewHelpers.ts:1-20`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。

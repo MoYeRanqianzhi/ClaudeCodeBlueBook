@@ -159,6 +159,8 @@
   - 最小可见面优于全量能力表
   - 可解释运行时：输入真相、状态真相与稳定性真相
   - Observability不是Debug层，而是正式运行时合同
+  - 让依赖图说真话：Leaf Module、Anti-Cycle Seam与Single-Source File
+  - 先让依赖关系诚实，再让抽象显得优雅
   - CLAUDE.md、记忆层与上下文注入实践
   - Channels、托管策略与组织级治理实践
   - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
@@ -229,6 +231,7 @@
 - 源码先进性深线还应继续明确：成熟架构不是消灭所有大文件，而是让合法复杂度只停留在少数 kernel / shell / chokepoint，周围继续用 leaf modules 与 single source of truth 兜底
 - “模型此刻看见什么”现在应被视为正式设计平面，而不是 prompt 细节；最小可见面、deferred、delta 与 source gating 是同一 visibility control plane 的不同投影
 - observability 深线当前应稳定成三层：输入真相、状态真相、稳定性真相；它不是 debug 层，而是 explainability contract
+- 依赖图治理深线当前应稳定成三件事：高扇入入口必须薄、共享真相必须小、不可避免脏边必须显式隔离；这比单纯追求 DRY 或文件更碎更重要
 - 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
 - 主入口、navigation 与专题 README 必须和正文同步更新，否则蓝皮书会先在检索层失真
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述

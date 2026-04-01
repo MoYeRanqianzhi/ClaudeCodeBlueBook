@@ -205,6 +205,7 @@
 13. `architecture/51-安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation.md`
 14. `architecture/52-Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法.md`
 15. `architecture/55-热点文件不是坏味道：Kernel、Shell与Chokepoint的分工.md`
+16. `architecture/58-让依赖图说真话：Leaf Module、Anti-Cycle Seam与Single-Source File.md`
 
 这条线的核心结论是：
 
@@ -233,7 +234,28 @@
 
 - Claude Code 的 observability 不是为了调试方便，而是为了让输入真相、状态真相与稳定性真相都变成正式运行时合同
 
-## 9. 真正的使用路线
+## 9. 依赖图诚实性深线
+
+如果问题是：
+
+- 为什么 Claude Code 会刻意做 leaf module、anti-cycle seam、single-source file。
+- 为什么依赖图治理不是代码洁癖，而是 runtime 正确性工程。
+- 为什么有时宁可少一点 DRY，也要让 import 边说真话。
+
+建议顺序：
+
+1. `architecture/41-叶子模块、扼流点与循环依赖切断法.md`
+2. `architecture/52-Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法.md`
+3. `architecture/58-让依赖图说真话：Leaf Module、Anti-Cycle Seam与Single-Source File.md`
+4. `philosophy/28-复杂性应该收敛到扼流点而不是散落到产品层.md`
+5. `philosophy/42-成熟架构不是没有大文件，而是不把复杂性撒满全仓.md`
+6. `philosophy/45-先让依赖关系诚实，再让抽象显得优雅.md`
+
+这条线的核心结论是：
+
+- Claude Code 的模块化不是拆分数量竞赛，而是持续让高扇入入口更薄、共享真相更小、脏边更可见
+
+## 10. 真正的使用路线
 
 如果你的目标不是研究，而是把 Claude Code 真正用顺：
 
@@ -247,7 +269,7 @@
 
 - 最佳使用方式不是写更长 prompt，而是先选对 runtime 形态
 
-## 10. 最后一句
+## 11. 最后一句
 
 如果你只想记一个阅读原则：
 
