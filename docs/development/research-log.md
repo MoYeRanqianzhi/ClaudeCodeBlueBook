@@ -981,6 +981,17 @@
 - `claude-code-source-code/src/utils/asciicast.ts:12-104`
 - `claude-code-source-code/src/utils/errorLogSink.ts:1-198`
 
+### AW. A large share of support cost is really template cost
+
+- `authStatus()` 已经能输出足够多的主体/组织/订阅信息，说明高质量求助文本所需的大部分主体状态其实已经可低成本获得。
+- 前面的通知面和状态面又已经能把 local MCP failed、claude.ai connector unavailable、needs-auth 分层提示，这意味着用户如果仍只写“被封了”，问题往往不在证据缺失，而在表达模板缺失。
+- 更高抽象看，很多误伤恢复效率低，并不是系统完全没有状态面，而是用户、管理员和平台支持缺少一套统一的最短高质量文本模板。
+
+证据:
+
+- `claude-code-source-code/src/cli/handlers/auth.ts:233-315`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:1-88`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -1047,6 +1058,7 @@
 - 已补风控专题 `57-终局总指南：Claude Code风控研究的最佳最全合规版`，把后期全部研究压缩成一份面向用户和平台构建者的终局合规总结
 - 已补风控专题 `58-治理主权与恢复主动权：谁能关、谁能开、谁能替你说 yes`，把平台、组织、用户、替代批准面和自动恢复主权收束成一张主权图
 - 已补风控专题 `59-资产保全与退出策略：账号风控窗口里真正该保护的不是面子而是工作连续性`，把用户利益保护进一步压缩成 transcript、日志、录屏和 worktree 资产保全逻辑
+- 已补风控专题 `60-结构化求助模板库：用户、管理员与平台支持的最短高质量文本`，把状态面和分流逻辑转化成可直接复制的高质量求助文本
 
 ## 下一步待办
 
