@@ -418,6 +418,23 @@
 - 当前源码已经明显在做这件事的一部分，例如更细错误语义、无 PII 诊断、step-up 区分、trusted device、dangerous settings 显式确认，但对用户可见 reason code、会前体检和结构化证据包仍有继续提升空间。
 - 这意味着下一轮研究不能只继续找 gate，还应继续研究 preflight、reason code、证据导出和平台正义这些“解释层基础设施”。
 
+### V. User self-protection should optimize continuity discipline, not retry volume
+
+- `checkGate_CACHED_OR_BLOCKING(...)` 对 entitlement gate 明显偏向减少 stale `false` 误伤，说明平台本身就在努力避免把用户主动触发的功能误判成不可用。
+- `isRemoteManagedSettingsEligible()` 接受 externally injected token 的资格假阳性，说明“多一次查询”被认为比“把企业治理完全漏掉”代价更低，也提醒用户不要把一次额外查询误解成针对性限制。
+- `bridgeMain` 的 `heartbeatActiveWorkItems()` 明确区分 `auth_failed` 和 `fatal`，说明高安全远程失败并不都是终局处罚，用户首先要分语义，而不是放大成统一封号体感。
+- `useMcpConnectivityStatus.tsx` 只对“曾经成功连接过”的 claude.ai connector 做 `failed/needs-auth` 提示，说明“最近一次成功时间”是高价值诊断证据。
+- `rateLimitMessages.ts` 把 usage、session、weekly、extra usage、reset time 等单独建模，说明很多“突然不能用”本质是计费/额度语义，不应被误写成处罚。
+- 更高抽象看，用户最有效的合规自保不是规避检测，而是保持身份、组织、设备、网络和证据链的连续性，并在故障窗口里冻结变量、减少噪声。
+
+证据:
+
+- `claude-code-source-code/src/services/analytics/growthbook.ts:892-935`
+- `claude-code-source-code/src/services/remoteManagedSettings/syncCache.ts:32-111`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:198-269`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:25-87`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:17-103`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
