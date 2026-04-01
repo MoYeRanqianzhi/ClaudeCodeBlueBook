@@ -25,6 +25,7 @@
 - 想先建立整体判断：顺读 `bluebook/` 主线。
 - 想查具体机制：看 `architecture/`。
 - 想查接口、字段和协议：看 `api/`。
+- 想研究风控、账号治理与封号技术：看 `risk/`。
 - 想理解设计内涵与演化方法：看 `philosophy/`。
 - 想核对证据、日志与边界：看 `../docs/development/`。
 
@@ -39,6 +40,7 @@
 - 状态面：transcript、memory、session、rewind、compact/recovery。
 - 真相面：`worker_status`、`requires_action_details`、`external_metadata`、state writeback。
 - 演化面：feature gate、runtime gate、compat shim、默认值与 rollout。
+- 治理面：账号、订阅、组织 policy、remote managed settings、telemetry、trusted device。
 
 ## 按专题链阅读
 
@@ -68,6 +70,7 @@
 - 事件链：`api/04-SDK消息与事件字典.md` -> `api/11-SDKMessageSchema与事件流手册.md` -> `architecture/12-ClaudeAPI与流式工具执行.md` -> `philosophy/06-状态优先于对话.md`
 - 连接链：`api/03-MCP与远程传输.md` -> `api/12-MCP配置与连接状态机.md` -> `architecture/03-扩展能力与远程架构.md` -> `philosophy/08-统一配置语言优于扩展孤岛.md`
 - 策略链：`architecture/05-权限系统与安全状态机.md` -> `architecture/11-权限系统全链路与Auto Mode.md` -> `philosophy/03-安全观与边界设计.md`
+- 风控链：`risk/00-研究方法与可信边界.md` -> `risk/01-风控总论：封禁不是单点开关.md` -> `risk/02-身份、订阅、组织与策略限制.md` -> `risk/03-遥测、GrowthBook 与远程下发控制.md` -> `risk/04-本地执行面：权限、Auto Mode、Sandbox 与阻断.md` -> `risk/05-Remote Control、Trusted Device 与高安全会话.md` -> `risk/06-失效模式、封禁表现与合规使用边界.md` -> `risk/07-合规降低误判、保护权益与高风险地区用户建议.md` -> `risk/08-风控检测技术的先进性、原理与源码启示.md` -> `risk/09-第一性原理与苏格拉底式反思.md` -> `risk/10-错误语义、能力撤回与治理层矩阵.md` -> `risk/11-治理闭环时序：观测、判定、下发、阻断与恢复.md` -> `risk/12-Selective Fail-Open  Fail-Closed 的设计哲学.md` -> `risk/13-误伤处置、支持路径与证据保全决策树.md` -> `risk/14-图解：Remote Control、能力门槛与误伤处置流程.md` -> `risk/15-平台正义、误伤、公平性与可解释性.md` -> `risk/16-图解：Bridge、Trusted Device 与 401 Recovery 精细时序.md` -> `risk/17-速查卡：错误语义、用户动作与支持路径.md` -> `risk/18-可迁移设计法则：给 Agent 平台构建者的启示.md` -> `risk/19-单页总纲：从主体到处置的风控研究地图.md` -> `risk/20-高波动网络环境、中国用户与连续性破坏机制.md` -> `risk/21-给平台方的改进清单：诊断、解释层与恢复路径.md`
 - 会话链：`architecture/09-会话存储记忆与回溯状态面.md` -> `api/09-会话与状态API手册.md` -> `philosophy/06-状态优先于对话.md`
 
 ## 按第一性原理阅读
@@ -124,6 +127,7 @@
 - `architecture/`: 机制、状态机与算法深挖
 - `api/`: 接口、字段与可用性索引
 - `guides/`: 用法与工作流
+- `risk/`: 风控、账号限制与远程高安全链路专题
 - `philosophy/`: 哲学、产品演化与第一性原理解读
 - `../docs/`: 持久化记忆、研究过程、日志与迭代准则
 
@@ -132,6 +136,7 @@
 - [架构专题](architecture/README.md)
 - [API 专题](api/README.md)
 - [使用专题](guides/README.md)
+- [风控专题](risk/README.md)
 - [哲学专题](philosophy/README.md)
 
 近期新增的深挖入口：
