@@ -31,14 +31,17 @@
   - compact 算法与上下文管理细拆
   - PromptInput 与消息渲染链
   - 会话存储、记忆与回溯状态面
+  - AgentTool 与隔离编排
   - 上下文经济学
   - 安全观与边界设计
   - 产品实验与演化方法
   - 构建期开关、运行期开关与兼容层
   - 状态优先于对话
+  - 隔离优先于并发
   - 内置命令域索引
   - 命令字段与可用性索引
   - 工具协议与 ToolUseContext
+  - 会话与状态 API 手册
 
 ## 已确认事实
 
@@ -56,6 +59,8 @@
 - `Command` 类型空间远大于内置 slash command 本身，很多高级字段主要为技能、插件、MCP 命令面准备
 - Claude Code 的状态面至少应按 transcript、memory、session memory、metadata、file history / rewind 分层理解
 - “对话只是入口，状态才是运行时真相”已经成为当前蓝皮书的一个核心解释轴
+- session/state surface 必须继续区分两层：SDK 文档化入口，与当前提取源码里真实可见的 control/runtime 实现
+- Claude Code 的多 Agent 设计更适合概括成“隔离优先于并发”，而不是简单的“支持并行”
 
 ## 后续章节建议
 
@@ -64,7 +69,7 @@
 3. 深挖 `REPL.tsx` 的 transcript search / sticky prompt / message actions
 4. 深挖权限系统与 auto mode 的风险控制
 5. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
-6. 深挖 AgentTool、Team、Coordinator 的编排范式
+6. 深挖 Team、Coordinator、Workflow 的更高层编排范式
 7. 深挖 MCP 接入面与插件生态边界
 8. 深挖 `StructuredIO` / `RemoteIO` 的 host-CLI 协议与时序
 9. 深挖 `services/api/claude.ts` 与 streaming tool execution
@@ -73,6 +78,7 @@
 12. 给 MCP 状态、命令 availability、控制请求做时序化视图
 13. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
 14. 把工具面、状态面、控制面、演化面都做成清晰阅读路径
+15. 把 Skills / Plugins / MCP / agents 的统一扩展模型讲清楚
 
 ## 编写约定
 
@@ -80,3 +86,5 @@
 - 缺失模块不臆测，只写“可见事实 + 保守推断”
 - 新研究先写入文档，再依赖上下文
 - 正式章节优先写入 `bluebook/`，方法论和自我反思写入 `development/`
+- 写 session/state 相关结论时，必须显式标注“声明接口”“运行协议”“后端机制”分别属于哪一层
+- 写多 Agent 相关结论时，必须优先问清这是并发语义还是隔离语义

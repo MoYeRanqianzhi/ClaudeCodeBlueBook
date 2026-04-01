@@ -27,17 +27,27 @@
 - 想理解设计内涵与演化方法：看 `philosophy/`。
 - 想核对证据、日志与边界：看 `../docs/development/`。
 
-## 按对象阅读
+## 按分析面阅读
 
 - 控制面：命令、权限、REPL、remote/bridge。
 - 执行面：tools、subagent、MCP、tool orchestration。
 - 状态面：transcript、memory、session、rewind、compact/recovery。
 - 演化面：feature gate、runtime gate、compat shim、默认值与 rollout。
 
-## 兼容入口
+## 按第一性原理阅读
 
-- 历史总览类入口如 `00-蓝皮书总览.md`、`01-源码总地图.md` 仍保留在 `bluebook/` 根目录。
-- 正式主线以 `bluebook/00-导读.md` 到 `bluebook/06-第一性原理与苏格拉底反思.md` 为准，后续持续扩写也优先落在 `bluebook/`。
+- 观察：`05-功能全景与API支持.md`、`api/08-工具协议与ToolUseContext.md`
+- 决策：`architecture/02-Agent循环与工具系统.md`、`architecture/08-compact算法与上下文管理细拆.md`
+- 行动：`architecture/05-权限系统与安全状态机.md`、`api/01-命令与功能矩阵.md`
+- 记忆：`architecture/09-会话存储记忆与回溯状态面.md`、`api/09-会话与状态API手册.md`
+- 协作：`architecture/10-AgentTool与隔离编排.md`、`philosophy/07-隔离优先于并发.md`
+- 恢复：`architecture/06-上下文压缩与恢复链.md`、`philosophy/06-状态优先于对话.md`
+
+## 正式主线与兼容入口
+
+- 正式主线以 `bluebook/00-导读.md` 到 `bluebook/06-第一性原理与苏格拉底反思.md` 为准。
+- 历史兼容入口如 `00-蓝皮书总览.md`、`01-源码总地图.md` 仍保留在 `bluebook/` 根目录，主要用于兼容旧链接与旧阅读习惯。
+- 后续持续扩写的正文也优先落在 `bluebook/`。
 
 ## 当前结论的可信边界
 
@@ -71,7 +81,10 @@
 
 - [compact 算法与上下文管理细拆](architecture/08-compact%E7%AE%97%E6%B3%95%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E7%BB%86%E6%8B%86.md)
 - [会话存储、记忆与回溯状态面](architecture/09-%E4%BC%9A%E8%AF%9D%E5%AD%98%E5%82%A8%E8%AE%B0%E5%BF%86%E4%B8%8E%E5%9B%9E%E6%BA%AF%E7%8A%B6%E6%80%81%E9%9D%A2.md)
+- [AgentTool 与隔离编排](architecture/10-AgentTool%E4%B8%8E%E9%9A%94%E7%A6%BB%E7%BC%96%E6%8E%92.md)
 - [命令字段与可用性索引](api/07-%E5%91%BD%E4%BB%A4%E5%AD%97%E6%AE%B5%E4%B8%8E%E5%8F%AF%E7%94%A8%E6%80%A7%E7%B4%A2%E5%BC%95.md)
 - [工具协议与 ToolUseContext](api/08-%E5%B7%A5%E5%85%B7%E5%8D%8F%E8%AE%AE%E4%B8%8EToolUseContext.md)
+- [会话与状态 API 手册](api/09-%E4%BC%9A%E8%AF%9D%E4%B8%8E%E7%8A%B6%E6%80%81API%E6%89%8B%E5%86%8C.md)
 - [构建期开关、运行期开关与兼容层](philosophy/05-%E6%9E%84%E5%BB%BA%E6%9C%9F%E5%BC%80%E5%85%B3%E3%80%81%E8%BF%90%E8%A1%8C%E6%9C%9F%E5%BC%80%E5%85%B3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%B1%82.md)
 - [状态优先于对话](philosophy/06-%E7%8A%B6%E6%80%81%E4%BC%98%E5%85%88%E4%BA%8E%E5%AF%B9%E8%AF%9D.md)
+- [隔离优先于并发](philosophy/07-%E9%9A%94%E7%A6%BB%E4%BC%98%E5%85%88%E4%BA%8E%E5%B9%B6%E5%8F%91.md)
