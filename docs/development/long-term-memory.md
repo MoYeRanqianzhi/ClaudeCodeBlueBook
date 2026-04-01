@@ -99,6 +99,7 @@
   - 插件协议全生命周期：Manifest、Marketplace、Options、MCPB与Reload
   - 治理型API：Channels、Context Usage与Settings三重真相
   - 动态能力暴露、裁剪链与运行时可见性
+  - 源码目录级能力地图：commands、tools、services、状态与宿主平面
   - workflow engine、LocalWorkflowTask 与可见边界
   - REPL transcript search、selection 与 scroll 协同
   - 五层合同、缓存断点与Prompt装配时序
@@ -119,6 +120,7 @@
   - CLAUDE.md、记忆层与上下文注入实践
   - Channels、托管策略与组织级治理实践
   - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
+  - 第一性原理实践：目标、预算、对象、边界与回写
 
 ## 已确认事实
 
@@ -158,6 +160,8 @@
 - prompt 魔力的更深层写法应稳定为“五层合同 + 缓存断点 + 状态晚绑定”，不要退回对单段 system prompt 的评论
 - 统一预算器的更深层写法应稳定为“请求前裁能力、请求中保工作集、请求后做恢复与继续”，不要退回“省 token 技巧”叙述
 - 源码质量研究的更稳顺序应是“先找 contract，再找 runtime 底盘，再看热点与缺口”
+- API atlas 还应继续补目录级能力地图，避免“字段齐了，但能力地形仍然不可检索”
+- 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述
 - Prompt 魔力更精确的第一性原理表述应升级为“角色合同 + 工具边界 + 缓存结构 + 状态反馈 + 协作语法”
 - 安全、token 经济与体验本质上共用一个预算器，分别约束动作空间、上下文空间与认知噪音

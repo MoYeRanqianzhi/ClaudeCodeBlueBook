@@ -16,6 +16,7 @@
 - [25-命令、工具、任务与团队能力全集手册](25-%E5%91%BD%E4%BB%A4%E3%80%81%E5%B7%A5%E5%85%B7%E3%80%81%E4%BB%BB%E5%8A%A1%E4%B8%8E%E5%9B%A2%E9%98%9F%E8%83%BD%E5%8A%9B%E5%85%A8%E9%9B%86%E6%89%8B%E5%86%8C.md)
 - [26-SDK、Control、Session与Remote接入全景矩阵](26-SDK%E3%80%81Control%E3%80%81Session%E4%B8%8ERemote%E6%8E%A5%E5%85%A5%E5%85%A8%E6%99%AF%E7%9F%A9%E9%98%B5.md)
 - [29-动态能力暴露、裁剪链与运行时可见性](29-%E5%8A%A8%E6%80%81%E8%83%BD%E5%8A%9B%E6%9A%B4%E9%9C%B2%E3%80%81%E8%A3%81%E5%89%AA%E9%93%BE%E4%B8%8E%E8%BF%90%E8%A1%8C%E6%97%B6%E5%8F%AF%E8%A7%81%E6%80%A7.md)
+- [30-源码目录级能力地图：commands、tools、services、状态与宿主平面](30-%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BA%A7%E8%83%BD%E5%8A%9B%E5%9C%B0%E5%9B%BE%EF%BC%9Acommands%E3%80%81tools%E3%80%81services%E3%80%81%E7%8A%B6%E6%80%81%E4%B8%8E%E5%AE%BF%E4%B8%BB%E5%B9%B3%E9%9D%A2.md)
 - [27-插件协议全生命周期：Manifest、Marketplace、Options、MCPB与Reload](27-%E6%8F%92%E4%BB%B6%E5%8D%8F%E8%AE%AE%E5%85%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%EF%BC%9AManifest%E3%80%81Marketplace%E3%80%81Options%E3%80%81MCPB%E4%B8%8EReload.md)
 - [28-治理型API：Channels、Context Usage与Settings三重真相](28-%E6%B2%BB%E7%90%86%E5%9E%8BAPI%EF%BC%9AChannels%E3%80%81Context%20Usage%E4%B8%8ESettings%E4%B8%89%E9%87%8D%E7%9C%9F%E7%9B%B8.md)
 
@@ -62,7 +63,7 @@
 
 ### 1. 想知道能不能接
 
-- 先读 `23 -> 24 -> 25 -> 29 -> 01 -> 05 -> 07`
+- 先读 `23 -> 24 -> 25 -> 29 -> 30 -> 01 -> 05 -> 07`
 - 目标：先分清表面、字段和 availability，再决定是否落地
 
 ### 2. 想把 Claude Code 嵌进宿主
@@ -84,7 +85,7 @@
 
 ### 5. 想先搞清“支持了什么”与“承诺了什么”
 
-- 先读 `23 -> 24 -> 29`
+- 先读 `23 -> 24 -> 29 -> 30`
 - 再回到 `../08`
 - 最后按具体平面跳转到命令、宿主、状态、扩展任一专题
 
