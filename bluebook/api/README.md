@@ -16,6 +16,7 @@
 - [25-命令、工具、任务与团队能力全集手册](25-%E5%91%BD%E4%BB%A4%E3%80%81%E5%B7%A5%E5%85%B7%E3%80%81%E4%BB%BB%E5%8A%A1%E4%B8%8E%E5%9B%A2%E9%98%9F%E8%83%BD%E5%8A%9B%E5%85%A8%E9%9B%86%E6%89%8B%E5%86%8C.md)
 - [26-SDK、Control、Session与Remote接入全景矩阵](26-SDK%E3%80%81Control%E3%80%81Session%E4%B8%8ERemote%E6%8E%A5%E5%85%A5%E5%85%A8%E6%99%AF%E7%9F%A9%E9%98%B5.md)
 - [29-动态能力暴露、裁剪链与运行时可见性](29-%E5%8A%A8%E6%80%81%E8%83%BD%E5%8A%9B%E6%9A%B4%E9%9C%B2%E3%80%81%E8%A3%81%E5%89%AA%E9%93%BE%E4%B8%8E%E8%BF%90%E8%A1%8C%E6%97%B6%E5%8F%AF%E8%A7%81%E6%80%A7.md)
+- [30-源码目录级能力地图：commands、tools、services、状态与宿主平面](30-%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BA%A7%E8%83%BD%E5%8A%9B%E5%9C%B0%E5%9B%BE%EF%BC%9Acommands%E3%80%81tools%E3%80%81services%E3%80%81%E7%8A%B6%E6%80%81%E4%B8%8E%E5%AE%BF%E4%B8%BB%E5%B9%B3%E9%9D%A2.md)
 - [27-插件协议全生命周期：Manifest、Marketplace、Options、MCPB与Reload](27-%E6%8F%92%E4%BB%B6%E5%8D%8F%E8%AE%AE%E5%85%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%EF%BC%9AManifest%E3%80%81Marketplace%E3%80%81Options%E3%80%81MCPB%E4%B8%8EReload.md)
 - [28-治理型API：Channels、Context Usage与Settings三重真相](28-%E6%B2%BB%E7%90%86%E5%9E%8BAPI%EF%BC%9AChannels%E3%80%81Context%20Usage%E4%B8%8ESettings%E4%B8%89%E9%87%8D%E7%9C%9F%E7%9B%B8.md)
 
@@ -39,6 +40,8 @@
 - [17-状态消息、外部元数据与宿主消费矩阵](17-%E7%8A%B6%E6%80%81%E6%B6%88%E6%81%AF%E3%80%81%E5%A4%96%E9%83%A8%E5%85%83%E6%95%B0%E6%8D%AE%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E7%9F%A9%E9%98%B5.md)
 - [19-SDKMessage、worker_status与external_metadata字段级对照手册](19-SDKMessage%E3%80%81worker_status%E4%B8%8Eexternal_metadata%E5%AD%97%E6%AE%B5%E7%BA%A7%E5%AF%B9%E7%85%A7%E6%89%8B%E5%86%8C.md)
 - [20-宿主实现最小闭环与恢复案例手册](20-%E5%AE%BF%E4%B8%BB%E5%AE%9E%E7%8E%B0%E6%9C%80%E5%B0%8F%E9%97%AD%E7%8E%AF%E4%B8%8E%E6%81%A2%E5%A4%8D%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.md)
+- [31-失败语义、取消请求与孤儿修复API手册](31-%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E3%80%81%E5%8F%96%E6%B6%88%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%AD%A4%E5%84%BF%E4%BF%AE%E5%A4%8DAPI%E6%89%8B%E5%86%8C.md)
+- [32-Context Usage、Prompt预算与观测型宿主手册](32-Context%20Usage%E3%80%81Prompt%E9%A2%84%E7%AE%97%E4%B8%8E%E8%A7%82%E6%B5%8B%E5%9E%8B%E5%AE%BF%E4%B8%BB%E6%89%8B%E5%86%8C.md)
 
 ### 4. Prompt、知识与上下文装配面
 
@@ -62,13 +65,13 @@
 
 ### 1. 想知道能不能接
 
-- 先读 `23 -> 24 -> 25 -> 29 -> 01 -> 05 -> 07`
+- 先读 `23 -> 24 -> 25 -> 29 -> 30 -> 01 -> 05 -> 07`
 - 目标：先分清表面、字段和 availability，再决定是否落地
 
 ### 2. 想把 Claude Code 嵌进宿主
 
 - 先读 `24 -> 26 -> 02 -> 13 -> 15 -> 16 -> 20`
-- 补充 `11 -> 17 -> 19`
+- 补充 `11 -> 17 -> 19 -> 31 -> 32`
 - 目标：把 request / response / follow-on event / snapshot / recovery 一起看成闭环
 
 ### 3. 想控制 prompt、知识和记忆
@@ -84,7 +87,7 @@
 
 ### 5. 想先搞清“支持了什么”与“承诺了什么”
 
-- 先读 `23 -> 24 -> 29`
+- 先读 `23 -> 24 -> 29 -> 30`
 - 再回到 `../08`
 - 最后按具体平面跳转到命令、宿主、状态、扩展任一专题
 

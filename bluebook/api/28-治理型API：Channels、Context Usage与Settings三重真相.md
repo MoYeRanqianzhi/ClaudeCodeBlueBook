@@ -26,9 +26,14 @@ Claude Code 有一组很容易被低估的“治理型 API”：
 
 - `claude-code-source-code/src/services/mcp/channelNotification.ts:1-220`
 - `claude-code-source-code/src/services/mcp/channelNotification.ts:186-280`
+- `claude-code-source-code/src/services/mcp/channelAllowlist.ts:1-76`
+- `claude-code-source-code/src/services/mcp/channelPermissions.ts:1-180`
 - `claude-code-source-code/src/utils/messages.ts:5496-5507`
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:175-288`
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:467-507`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:15-56`
+- `claude-code-source-code/src/utils/settings/types.ts:896-920`
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-20`
 
 ## 3. Channels：它不是普通 MCP，而是受治理的外部消息注入面
 
@@ -50,6 +55,33 @@ Claude Code 有一组很容易被低估的“治理型 API”：
 这说明 channels 的本体不是 transport，而是：
 
 - 受信任边界严格约束的外部消息入口
+
+### 3.1 channel permission relay 不是“聊天里回 yes”
+
+`channelPermissions.ts` 说明 Claude Code 对 channel 审批还有第二层协议化：
+
+- 回复格式被限制为短 request id
+- 真正生效的是专门的 `notifications/claude/channel/permission` 事件
+- server 还必须显式声明 `claude/channel/permission` capability
+
+所以 channel 在 Claude Code 里既不是普通 MCP 工具，也不是普通聊天 transport，而是：
+
+- 受 allowlist、capability 与结构化事件共同约束的治理接口
+
+### 3.2 Anthropic ledger 与 org allowlist 是两套治理真相
+
+`channelAllowlist.ts` 与 `allowedChannelPlugins` 说明 channel plugin allowlist 至少有两层来源：
+
+1. Anthropic 默认 ledger
+2. 组织级 managed settings override
+
+这再次证明 governance API 的本质不是：
+
+- 查一下配置文件里有没有某个值
+
+而是：
+
+- 决定哪类外部输入源有资格进入当前 runtime
 
 ## 4. 外部消息 origin 语义本身就是 API 语义
 
@@ -113,6 +145,15 @@ Claude Code 有一组很容易被低估的“治理型 API”：
 
 所以 Claude Code 明确拒绝把“配置文件长什么样”和“API 最终实际会怎么调用”混成一层。
 
+`pluginPolicy.ts` 与 `checkManagedSettingsSecurity(...)` 又把这件事再推进一步：
+
+- 某些设置不只是“会改变显示结果”
+- 它们会直接改写安装、启用、审批与远程输入的边界
+
+因此 settings surface 不能只按“preferences API”理解，更该按：
+
+- runtime governance surface
+
 ## 7. `apply_flag_settings`：宿主能改的不是外层 UI，而是配置层
 
 `apply_flag_settings` 说明宿主可以向 flag settings layer 合并设置，并更新 active configuration。
@@ -137,6 +178,12 @@ Claude Code 有一组很容易被低估的“治理型 API”：
 - settings / flag settings 约束配置与行为基线
 
 所以它们都属于治理 API，而不属于业务功能 API。
+
+更进一步说，这三组接口共同构成了一台输入预算器：
+
+- channels 决定哪些外部输入可进来
+- settings 决定谁有资格改写边界
+- context usage 决定当前预算被花到了哪里
 
 ## 9. 对平台构建者的直接启发
 

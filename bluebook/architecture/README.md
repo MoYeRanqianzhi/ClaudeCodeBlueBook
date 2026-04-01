@@ -32,11 +32,15 @@
 - [21-消息塑形、输出外置与Token经济](21-%E6%B6%88%E6%81%AF%E5%A1%91%E5%BD%A2%E3%80%81%E8%BE%93%E5%87%BA%E5%A4%96%E7%BD%AE%E4%B8%8EToken%E7%BB%8F%E6%B5%8E.md)
 - [28-提示词契约分层、知识注入与缓存稳定性](28-%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%A5%91%E7%BA%A6%E5%88%86%E5%B1%82%E3%80%81%E7%9F%A5%E8%AF%86%E6%B3%A8%E5%85%A5%E4%B8%8E%E7%BC%93%E5%AD%98%E7%A8%B3%E5%AE%9A%E6%80%A7.md)
 - [31-提示词合同、缓存稳定性与多Agent语法](31-%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%90%88%E5%90%8C%E3%80%81%E7%BC%93%E5%AD%98%E7%A8%B3%E5%AE%9A%E6%80%A7%E4%B8%8E%E5%A4%9AAgent%E8%AF%AD%E6%B3%95.md)
+- [36-五层合同、缓存断点与Prompt装配时序](36-%E4%BA%94%E5%B1%82%E5%90%88%E5%90%8C%E3%80%81%E7%BC%93%E5%AD%98%E6%96%AD%E7%82%B9%E4%B8%8EPrompt%E8%A3%85%E9%85%8D%E6%97%B6%E5%BA%8F.md)
+- [39-Prompt可重放前缀、可观测预算与Section编译器](39-Prompt%E5%8F%AF%E9%87%8D%E6%94%BE%E5%89%8D%E7%BC%80%E3%80%81%E5%8F%AF%E8%A7%82%E6%B5%8B%E9%A2%84%E7%AE%97%E4%B8%8ESection%E7%BC%96%E8%AF%91%E5%99%A8.md)
+- [42-辅助循环、侧问题与后回合Fork共享前缀](42-%E8%BE%85%E5%8A%A9%E5%BE%AA%E7%8E%AF%E3%80%81%E4%BE%A7%E9%97%AE%E9%A2%98%E4%B8%8E%E5%90%8E%E5%9B%9E%E5%90%88Fork%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80.md)
 
 ### 5. 协作与隔离平面
 
 - [10-AgentTool与隔离编排](10-AgentTool%E4%B8%8E%E9%9A%94%E7%A6%BB%E7%BC%96%E6%8E%92.md)
 - [30-多Agent任务对象、Mailbox与后台协作运行时](30-%E5%A4%9AAgent%E4%BB%BB%E5%8A%A1%E5%AF%B9%E8%B1%A1%E3%80%81Mailbox%E4%B8%8E%E5%90%8E%E5%8F%B0%E5%8D%8F%E4%BD%9C%E8%BF%90%E8%A1%8C%E6%97%B6.md)
+- [34-workflow engine、LocalWorkflowTask与可见边界](34-workflow%20engine%E3%80%81LocalWorkflowTask%E4%B8%8E%E5%8F%AF%E8%A7%81%E8%BE%B9%E7%95%8C.md)
 
 ### 6. 权限、安全与治理平面
 
@@ -45,6 +49,7 @@
 - [19-安全分层、策略收口与沙箱边界](19-%E5%AE%89%E5%85%A8%E5%88%86%E5%B1%82%E3%80%81%E7%AD%96%E7%95%A5%E6%94%B6%E5%8F%A3%E4%B8%8E%E6%B2%99%E7%AE%B1%E8%BE%B9%E7%95%8C.md)
 - [23-统一权限决策流水线与多路仲裁](23-%E7%BB%9F%E4%B8%80%E6%9D%83%E9%99%90%E5%86%B3%E7%AD%96%E6%B5%81%E6%B0%B4%E7%BA%BF%E4%B8%8E%E5%A4%9A%E8%B7%AF%E4%BB%B2%E8%A3%81.md)
 - [32-安全、权限、治理与Token预算统一图](32-%E5%AE%89%E5%85%A8%E3%80%81%E6%9D%83%E9%99%90%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8EToken%E9%A2%84%E7%AE%97%E7%BB%9F%E4%B8%80%E5%9B%BE.md)
+- [37-统一预算器：能力裁剪、Token延续与状态外化](37-%E7%BB%9F%E4%B8%80%E9%A2%84%E7%AE%97%E5%99%A8%EF%BC%9A%E8%83%BD%E5%8A%9B%E8%A3%81%E5%89%AA%E3%80%81Token%E5%BB%B6%E7%BB%AD%E4%B8%8E%E7%8A%B6%E6%80%81%E5%A4%96%E5%8C%96.md)
 
 ### 7. 宿主、前台与产品边界平面
 
@@ -55,18 +60,29 @@
 - [20-源码质量、分层与工程先进性](20-%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E3%80%81%E5%88%86%E5%B1%82%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%85%88%E8%BF%9B%E6%80%A7.md)
 - [24-services层全景与utils-heavy设计](24-services%E5%B1%82%E5%85%A8%E6%99%AF%E4%B8%8Eutils-heavy%E8%AE%BE%E8%AE%A1.md)
 - [26-REPL前台状态机、Sticky Prompt与消息动作](26-REPL%E5%89%8D%E5%8F%B0%E7%8A%B6%E6%80%81%E6%9C%BA%E3%80%81Sticky%20Prompt%E4%B8%8E%E6%B6%88%E6%81%AF%E5%8A%A8%E4%BD%9C.md)
+- [35-REPL transcript search、selection与scroll协同](35-REPL%20transcript%20search%E3%80%81selection%E4%B8%8Escroll%E5%8D%8F%E5%90%8C.md)
 - [27-能力迁移、Consumer Subset与产品边界](27-%E8%83%BD%E5%8A%9B%E8%BF%81%E7%A7%BB%E3%80%81Consumer%20Subset%E4%B8%8E%E4%BA%A7%E5%93%81%E8%BE%B9%E7%95%8C.md)
 - [33-公开源码镜像的先进性、热点与技术债](33-%E5%85%AC%E5%BC%80%E6%BA%90%E7%A0%81%E9%95%9C%E5%83%8F%E7%9A%84%E5%85%88%E8%BF%9B%E6%80%A7%E3%80%81%E7%83%AD%E7%82%B9%E4%B8%8E%E6%8A%80%E6%9C%AF%E5%80%BA.md)
+- [38-Contract优先、运行时底盘与公开镜像缺口](38-Contract%E4%BC%98%E5%85%88%E3%80%81%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BA%95%E7%9B%98%E4%B8%8E%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E7%BC%BA%E5%8F%A3.md)
+- [40-显式失败语义、重复响应与反竞争条件设计](40-%E6%98%BE%E5%BC%8F%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E3%80%81%E9%87%8D%E5%A4%8D%E5%93%8D%E5%BA%94%E4%B8%8E%E5%8F%8D%E7%AB%9E%E4%BA%89%E6%9D%A1%E4%BB%B6%E8%AE%BE%E8%AE%A1.md)
+- [41-叶子模块、扼流点与循环依赖切断法](41-%E5%8F%B6%E5%AD%90%E6%A8%A1%E5%9D%97%E3%80%81%E6%89%BC%E6%B5%81%E7%82%B9%E4%B8%8E%E5%BE%AA%E7%8E%AF%E4%BE%9D%E8%B5%96%E5%88%87%E6%96%AD%E6%B3%95.md)
+- [43-预算观测、Context Suggestions与调优闭环](43-%E9%A2%84%E7%AE%97%E8%A7%82%E6%B5%8B%E3%80%81Context%20Suggestions%E4%B8%8E%E8%B0%83%E4%BC%98%E9%97%AD%E7%8E%AF.md)
 
 ## 推荐阅读链
 
 - 想看 turn runtime 内核：`02 -> 12 -> 22`
 - 想看状态与恢复：`06 -> 09 -> 16 -> 17 -> 25`
 - 想看 prompt contract：`18 -> 21 -> 28 -> 29`
-- 想看 prompt 魔力如何落到缓存、attachment 与协作语法：`18 -> 28 -> 31`
-- 想看多 Agent 与隔离：`10 -> 30`
-- 想看权限、安全、治理与 token 预算统一图：`05 -> 11 -> 19 -> 23 -> 32`
+- 想看 prompt 魔力如何落到五层合同、缓存断点与协作语法：`18 -> 28 -> 31 -> 36`
+- 想看 prompt 为什么还能继续下沉到可重放、可观测、可编译：`28 -> 31 -> 36 -> 39`
+- 想看 prompt 魔力怎样扩展到 `/btw`、suggestion、memory、summary 这些辅助循环：`31 -> 39 -> 42`
+- 想看多 Agent、workflow 与隔离：`10 -> 30 -> 34`
+- 想看权限、安全、治理与 token 预算统一图：`05 -> 11 -> 19 -> 23 -> 32 -> 37`
 - 想看宿主控制平面：`13 -> 14 -> 15 -> 17`
-- 想看源码先进性、热点与产品边界：`20 -> 24 -> 26 -> 27 -> 33`
+- 想看 REPL 前台如何从状态机深入到 search / selection / scroll 协同：`04 -> 26 -> 35`
+- 想看源码先进性、热点与产品边界：`20 -> 24 -> 26 -> 27 -> 33 -> 38`
+- 想看显式失败、重复响应与 race-aware runtime：`13 -> 14 -> 17 -> 40`
+- 想看 chokepoint、leaf module 与依赖图切断：`24 -> 38 -> 41`
+- 想看预算为什么会走向“观测 -> 建议 -> 调优”的闭环：`21 -> 37 -> 43`
 
 主线结论先看 [../03-设计哲学](../03-%E8%AE%BE%E8%AE%A1%E5%93%B2%E5%AD%A6.md) 和 [../07-运行时契约、知识层与生态边界](../07-%E8%BF%90%E8%A1%8C%E6%97%B6%E5%A5%91%E7%BA%A6%E3%80%81%E7%9F%A5%E8%AF%86%E5%B1%82%E4%B8%8E%E7%94%9F%E6%80%81%E8%BE%B9%E7%95%8C.md)。

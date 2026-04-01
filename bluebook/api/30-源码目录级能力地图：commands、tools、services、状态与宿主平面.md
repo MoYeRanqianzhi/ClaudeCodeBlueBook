@@ -1,0 +1,389 @@
+# 源码目录级能力地图：commands、tools、services、状态与宿主平面
+
+这一章不继续拆字段，而是回答四个问题：
+
+1. Claude Code 的源码顶层到底分成了哪些能力平面。
+2. `commands/`、`tools/`、`services/` 分别承担什么职责。
+3. 为什么 `utils/` 与 `components/` 的体量本身就是架构信号。
+4. 目录级地图怎样帮助我们补足“全部功能与 API 支持”的覆盖面。
+
+## 0. 代表性源码锚点与本地扫描
+
+源码锚点：
+
+- `claude-code-source-code/src/commands.ts:224-320`
+- `claude-code-source-code/src/tools.ts:193-367`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-220`
+- `claude-code-source-code/src/cli/structuredIO.ts:135-162`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/Task.ts:6-124`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+
+本地扫描（`2026-04-02`，工作区源码镜像）：
+
+- `src/` 顶层可见 `53` 个一级入口
+- `src/commands/` 可见 `86` 个目录 + `15` 个根命令文件，共 `101` 个顶层命令入口，文件总数约 `207`
+- `src/tools/` 可见 `42` 个目录 + `1` 个根文件，共 `43` 个顶层工具入口，文件总数约 `184`
+- `src/services/` 可见 `20` 个目录 + `16` 个根文件，共 `36` 个顶层服务入口，文件总数约 `130`
+- `src/utils/` 文件总数约 `564`
+- `src/components/` 文件总数约 `389`
+
+这些数字本身不等于“产品承诺”，但足以说明：
+
+- Claude Code 的能力面远不是“几个命令 + 几个工具”
+
+## 1. 先说结论
+
+目录级看，Claude Code 至少由六个平面构成：
+
+1. `commands/`：用户与宿主的显式控制平面
+2. `tools/`：模型可调用的执行原语平面
+3. `services/`：长生命周期子系统平面
+4. `state/`、`Task.ts`、`query.ts`：运行时真相平面
+5. `entrypoints/`、`cli/`、`remote/`、`server/`：宿主与 transport 平面
+6. `utils/`、`components/`、`screens/`：不变量内核与前台控制面
+
+这张图最重要的意义不是“目录很多”，而是：
+
+- Claude Code 把控制、执行、治理、恢复、前台、宿主适配拆成了不同演化速度的平面
+
+## 2. `commands/` 是控制平面，不是 slash 外壳
+
+`commands.ts` 已经说明两件事：
+
+1. `INTERNAL_ONLY_COMMANDS` 与 `COMMANDS()` 共同定义了“源码存在面”。
+2. 真正运行时命令面还会叠加 skills、plugins、workflow、dynamic skills。
+
+因此 `commands/` 的 `101` 个顶层入口，不能只当成“一堆 slash 命令”。
+
+更稳妥的分类是：
+
+### 2.1 会话与状态
+
+- `clear`
+- `compact`
+- `context`
+- `memory`
+- `resume`
+- `rewind`
+- `session`
+- `status`
+
+### 2.2 配置与模式
+
+- `config`
+- `permissions`
+- `plan`
+- `model`
+- `output-style`
+- `theme`
+- `keybindings`
+- `vim`
+
+### 2.3 扩展与连接
+
+- `mcp`
+- `skills`
+- `plugin`
+- `reload-plugins`
+- `remote-env`
+- `bridge`
+- `ide`
+
+### 2.4 开发与交付
+
+- `diff`
+- `review`
+- `security-review.ts`
+- `commit.ts`
+- `branch`
+- `tag`
+
+### 2.5 运营与诊断
+
+- `doctor`
+- `usage`
+- `stats`
+- `feedback`
+- `cost`
+- `release-notes`
+
+### 2.6 协作与实验
+
+- `agents`
+- `tasks`
+- `voice`
+- `advisor.ts`
+- `ultraplan.tsx`
+- `autofix-pr`
+
+这说明命令面已经覆盖：
+
+- 会话生命周期
+- 模式治理
+- 扩展装配
+- 开发工作流
+- 诊断与运营
+- 协作与实验入口
+
+## 3. `tools/` 是动作原语平面，不是零散函数集合
+
+`tools.ts` 把 `getAllBaseTools()`、`getTools()`、`assembleToolPool()` 写成统一真相，说明工具面不是插件式拼盘，而是正式 ABI。
+
+`43` 个顶层工具入口大致可以按六类理解：
+
+### 3.1 工作区与执行原语
+
+- `BashTool`
+- `PowerShellTool`
+- `FileReadTool`
+- `FileEditTool`
+- `FileWriteTool`
+- `NotebookEditTool`
+
+### 3.2 搜索与外部信息
+
+- `GlobTool`
+- `GrepTool`
+- `WebFetchTool`
+- `WebSearchTool`
+- `ToolSearchTool`
+
+### 3.3 认知控制与交互
+
+- `TodoWriteTool`
+- `AskUserQuestionTool`
+- `BriefTool`
+- `EnterPlanModeTool`
+- `ExitPlanModeTool`
+- `REPLTool`
+
+### 3.4 任务、团队与 workflow 编排
+
+- `AgentTool`
+- `SendMessageTool`
+- `TaskCreateTool`
+- `TaskGetTool`
+- `TaskUpdateTool`
+- `TaskListTool`
+- `TaskStopTool`
+- `TaskOutputTool`
+- `TeamCreateTool`
+- `TeamDeleteTool`
+
+### 3.5 扩展与连接
+
+- `MCPTool`
+- `ListMcpResourcesTool`
+- `ReadMcpResourceTool`
+- `McpAuthTool`
+- `SkillTool`
+- `LSPTool`
+
+### 3.6 执行环境与自动化
+
+- `EnterWorktreeTool`
+- `ExitWorktreeTool`
+- `RemoteTriggerTool`
+- `ScheduleCronTool`
+- `SleepTool`
+
+这里最关键的不是枚举，而是 `tools.ts` 还进一步显式处理了：
+
+- simple mode 裁剪
+- REPL mode 原语隐藏
+- deny rules 预过滤
+- MCP 工具去重与 cache-stable 排序
+
+也就是说：
+
+- 工具面本身就已经带治理、可见性和 token/caching 约束
+
+## 4. `services/` 是长生命周期子系统平面
+
+如果 `commands/` 是显式控制面，`tools/` 是执行面，那么 `services/` 更像后台长期子系统。
+
+当前 `36` 个顶层服务入口至少能分五组：
+
+### 4.1 API、预算与上下文经济
+
+- `api`
+- `compact`
+- `tokenEstimation.ts`
+- `claudeAiLimits.ts`
+- `policyLimits`
+- `rateLimitMessages.ts`
+
+### 4.2 扩展、治理与组织策略
+
+- `mcp`
+- `plugins`
+- `oauth`
+- `remoteManagedSettings`
+- `settingsSync`
+- `mcpServerApproval.tsx`
+
+### 4.3 记忆、总结与协作沉淀
+
+- `SessionMemory`
+- `AgentSummary`
+- `PromptSuggestion`
+- `extractMemories`
+- `teamMemorySync`
+- `toolUseSummary`
+
+### 4.4 IDE 与多模态能力
+
+- `lsp`
+- `voice.ts`
+- `voiceStreamSTT.ts`
+- `voiceKeyterms.ts`
+- `MagicDocs`
+
+### 4.5 观测、诊断与用户辅助
+
+- `analytics`
+- `diagnosticTracking.ts`
+- `internalLogging.ts`
+- `notifier.ts`
+- `tips`
+- `preventSleep.ts`
+
+这说明 Claude Code 的真正后台不是“模型调用器”，而是一组围绕：
+
+- 预算
+- 治理
+- 记忆
+- 同步
+- 多模态
+- 观测
+
+持续运行的服务平面。
+
+## 5. `state/`、`Task.ts`、`query.ts` 才是运行时真相面
+
+目录级地图如果只写 `commands/`、`tools/`、`services/`，还是会低估 Claude Code。
+
+因为真正把这些平面粘成 runtime 的，是另一组核心文件：
+
+### 5.1 `Task.ts`
+
+`TaskType` 直接暴露：
+
+- `local_bash`
+- `local_agent`
+- `remote_agent`
+- `in_process_teammate`
+- `local_workflow`
+- `monitor_mcp`
+- `dream`
+
+这说明任务系统已经把本地执行、远程协作、workflow 与监控对象化。
+
+### 5.2 `onChangeAppState.ts`
+
+这里不是普通 store 订阅器，而是：
+
+- permission mode 外化
+- session metadata 同步
+- model / view / config 写回
+
+的单点扼流口。
+
+### 5.3 `query/tokenBudget.ts`
+
+token 预算不是“附带算法”，而是 turn runtime 的 continuation 决策器。
+
+### 5.4 `StructuredIO`
+
+`pendingRequests`、`resolvedToolUseIds`、统一 outbound FIFO 说明宿主协议也是 runtime 主路径，而不是外围包装。
+
+所以目录级看，Claude Code 的真相并不住在某个单独目录里，而是住在：
+
+- task
+- state
+- query
+- host control
+
+四条骨架文件中。
+
+## 6. 为什么 `utils/` 与 `components/` 的体量本身是架构信号
+
+本地扫描里：
+
+- `src/utils/` 约 `564` 个文件
+- `src/components/` 约 `389` 个文件
+
+这两个数字的价值不在“文件多”，而在它们分别暗示：
+
+### 6.1 `utils/` 是不变量内核
+
+这里吸收的是：
+
+- cache 规则
+- session storage
+- permissions
+- task framework
+- worktree
+- message shaping
+
+也就是最容易被很多团队散落到业务层的 invariant kernels。
+
+### 6.2 `components/` + `screens/` 是前台控制面
+
+Claude Code 前台不是 terminal 皮肤，而是：
+
+- transcript truth
+- sticky prompt
+- footer status
+- message actions
+- teammate routing
+
+的组合控制面。
+
+所以目录体量本身就在说明：
+
+- 这套系统既不是“后端工具壳”，也不是“前端聊天壳”，而是双重 runtime
+
+## 7. 这张图怎样帮助补足“全部功能与 API 支持”
+
+如果没有目录级地图，后续章节容易掉进三个坑：
+
+1. 只盯 `commands`，低估 `services`
+2. 只盯 `tools`，低估 `state/query/Task`
+3. 只盯 schema，低估 `components/screens` 对用户可见真相的塑形
+
+更好的用法是：
+
+1. 先用本章判断问题属于哪个平面。
+2. 再去 `23-30` 的 API atlas 查字段、公开度和宿主支持面。
+3. 最后去 `architecture/` 与 `philosophy/` 找运行时机制与设计解释。
+
+## 8. 使用与设计启发
+
+### 8.1 对使用者
+
+真正高效使用 Claude Code，不只是会几条命令，而是知道：
+
+- 何时用命令控制平面
+- 何时用工具执行面
+- 何时依赖任务/团队/worktree
+- 何时回到 session / rewind / context usage
+
+### 8.2 对平台构建者
+
+如果想复刻 Claude Code，不能只抄：
+
+- 一个命令列表
+- 一组 tool schema
+
+还必须补上：
+
+- 长生命周期 services
+- task/state/query 骨架
+- host control plane
+- 前台 truth surface
+
+## 9. 一句话总结
+
+Claude Code 的“全部功能”不是平铺在一张命令表里，而是分布在 commands、tools、services、state/query、host control 与 frontend truth 六个目录级平面上。

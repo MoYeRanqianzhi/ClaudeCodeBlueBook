@@ -2,6 +2,20 @@
 
 ## 2026-04-02
 
+- 新增《辅助循环、侧问题与后回合Fork共享前缀》与《Prompt不是一次请求而是可复用前缀资产》，把 prompt 深线继续推进到 `/btw`、suggestion、memory、summary、dream 共享主线程前缀这一层
+- 新增《预算观测、Context Suggestions与调优闭环》《可观测预算优于经验调优》，把“统一预算器”继续推进到“观测 -> 建议 -> 调优”的闭环
+- 新增《Context Usage、Prompt预算与观测型宿主手册》《用Context Usage与状态回写调优Prompt和预算》，把观测型预算 API 与实际调优方法补成单独手册
+- 新增《失败语义、取消请求与孤儿修复API手册》，把 host/control/transcript repair 的失败路径从架构深文收束成单独 API 手册
+- 新增《显式失败语义、重复响应与反竞争条件设计》《叶子模块、扼流点与循环依赖切断法》两篇架构专题，以及《复杂性应该收敛到扼流点而不是散落到产品层》《反竞争条件意识优于局部功能正确》两篇哲学专题，把源码质量深线继续推进到显式失败、chokepoint 与 race-aware runtime
+- 新增《Prompt可重放前缀、可观测预算与Section编译器》，并继续补强《Prompt魔力来自约束叠加与状态反馈》，把 prompt 深线从“五层合同”继续推进到“可重放、可观测、可编译、可分层”
+- 更新蓝皮书总索引、三篇 navigation 地图、哲学专题 README 与反思准则，把 `30/36/37/38/06` 等新章节正式编进阅读链，并把“正文增长后优先补入口索引”升级为显式写作纪律
+- 新增《五层合同、缓存断点与Prompt装配时序》《统一预算器：能力裁剪、Token延续与状态外化》《Contract优先、运行时底盘与公开镜像缺口》三篇架构专题，并继续补强《提示词合同、缓存稳定性与多Agent语法》《安全、权限、治理与Token预算统一图》《公开源码镜像的先进性、热点与技术债》《Prompt魔力来自约束叠加与状态反馈》
+- 新增《源码目录级能力地图：commands、tools、services、状态与宿主平面》与《第一性原理实践：目标、预算、对象、边界与回写》，把“全部功能/API 覆盖”与“第一性原理使用法”分别下沉到 API atlas 和使用专题
+- 更新《使用指南》与架构 / 使用专题 README，把五层合同、稳定前缀、省 token 正解与“先找 contract 再看热点文件”的使用与阅读顺序收编进主入口
+- 新增哲学专题《可见边界优于脑补全貌》《Workflow不是脚本而是编排对象》《用户可见真相优于底层原始文本》《治理开关不是部署尾巴而是输入边界》，并把这些第一性原理正式收编到《设计哲学》与《第一性原理与苏格拉底反思》
+- 新增《workflow engine、LocalWorkflowTask 与可见边界》《REPL transcript search、selection 与 scroll 协同》两篇架构专题，补 workflow 可见边界与前台认知控制面的更细机制
+- 新增《Channels、托管策略与组织级治理实践》《企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批》两篇使用专题，补组织级治理与托管 rollout 路径
+- 更新使用专题 README、章节规划、证据索引、研究日志与长期记忆，固化 workflow 边界、REPL 精细时序与 managed settings / channels 治理这一轮结论
 - 新增《命令、工具、任务与团队能力全集手册》《SDK、Control、Session 与 Remote 接入全景矩阵》《插件协议全生命周期：Manifest、Marketplace、Options、MCPB与Reload》《治理型 API：Channels、Context Usage 与 Settings 三重真相》《动态能力暴露、裁剪链与运行时可见性》五篇 API 深化专题
 - 继续补强《能力全集、公开度与成熟度矩阵》《功能全景与 API 支持》《能力平面、公开度与宿主支持矩阵》《命令、工具、会话、宿主与协作 API 全谱系》四篇总表型章节，把任务/工作流/服务平面、动态裁剪链、snapshot/recovery 真相、角色化工具子集正式收口
 - 把《Prompt魔力来自约束叠加与状态反馈》《安全、成本与体验必须共用预算器》《源码质量不是卫生而是产品能力》从短论补成正式哲学章节，并更新 API README 使 23-29 成为统一能力图谱入口

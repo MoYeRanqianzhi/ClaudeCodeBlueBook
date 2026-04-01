@@ -878,20 +878,245 @@
 - `bluebook/philosophy/22-安全、成本与体验必须共用预算器.md`
 - `bluebook/philosophy/23-源码质量不是卫生而是产品能力.md`
 
+### U. workflow 当前最稳的写法是“对象模型已可见，执行内核仍缺席”
+
+- `local_workflow` 已经是正式 `TaskType`，而不是评论性术语。
+- `LocalWorkflowTaskState` 已进入 `TaskState` / `BackgroundTaskState` 联合类型，说明 workflow 是后台任务对象，不是命令宏。
+- SDK 进度面允许携带 `workflow_progress`，说明宿主已经被预留了 phase/progress 消费面。
+- transcript 与 worktree 命名都显式提到 `subagents/workflows/<runId>/` 与 `wf_<runId>-<idx>`，说明 workflow 是独立 sidechain runtime。
+- 但 `LocalWorkflowTask` 主体实现当前公开镜像未展开，因此后续必须继续区分“对象模型已可证实”与“执行机理未完整公开”。
+
+证据：
+
+- `claude-code-source-code/src/Task.ts:6-84`
+- `claude-code-source-code/src/tasks/types.ts:1-27`
+- `claude-code-source-code/src/utils/task/framework.ts:111-128`
+- `claude-code-source-code/src/utils/task/sdkProgress.ts:1-34`
+- `claude-code-source-code/src/utils/sessionStorage.ts:232-258`
+- `claude-code-source-code/src/utils/worktree.ts:1021-1052`
+
+### V. REPL 的 search、selection、scroll 共同维护的是前台认知真相
+
+- transcript search 不是对 raw transcript 做 grep，而是对 render truth 做索引，显式剔除不可见 sentinel 与 system reminder。
+- selection 子系统显式维护 anchor/focus、drag scroll、keyboard scroll 与 scrolled-off rows，目的是让高亮与复制结果尽量一致。
+- scroll / sticky prompt 不是视觉润色，而是在长对话里维持“当前正在回复哪个 prompt”的因果锚点。
+- PromptInput footer 与 teammate view 进一步把后台任务、agent transcript 与输入路由收进同一前台状态机。
+
+证据：
+
+- `claude-code-source-code/src/utils/transcriptSearch.ts:1-166`
+- `claude-code-source-code/src/ink/selection.ts:1-220`
+- `claude-code-source-code/src/ink/components/ScrollBox.tsx:1-210`
+- `claude-code-source-code/src/screens/REPL.tsx:879-910`
+- `claude-code-source-code/src/screens/REPL.tsx:1248-1374`
+- `claude-code-source-code/src/screens/REPL.tsx:2068-2140`
+- `claude-code-source-code/src/components/PromptInput/PromptInputFooterLeftSide.tsx:417-462`
+
+### W. channels 与托管策略最适合概括成“输入预算 + 管理员预算”
+
+- channels 不是普通 MCP，而是 capability、OAuth、org policy、session opt-in 与 allowlist 联合约束的外部输入面。
+- `allowedChannelPlugins` 一旦设置就替换 Anthropic ledger，说明管理员接管的是最终信任决策，而不是“推荐插件列表”。
+- permission relay 是第二层 opt-in：除了 channel capability，还必须声明 `claude/channel/permission`。
+- 危险 remote managed settings 变化会触发阻塞式安全对话，说明管理员权力本身也被放进预算器，而不是静默全权生效。
+
+证据：
+
+- `claude-code-source-code/src/services/mcp/channelAllowlist.ts:1-67`
+- `claude-code-source-code/src/services/mcp/channelNotification.ts:120-310`
+- `claude-code-source-code/src/services/mcp/channelPermissions.ts:1-204`
+- `claude-code-source-code/src/interactiveHelpers.tsx:237-283`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:15-56`
+- `claude-code-source-code/src/utils/settings/types.ts:896-920`
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-17`
+
+### X. API atlas 已补到“目录级拓扑 + 动态暴露即预算”这一层
+
+- `api/30` 把 `commands / tools / services / state-query / host control / frontend truth` 六个目录级平面挂到一张能力地图上，避免“字段表齐了，但能力地形仍然不可检索”。
+- `api/29` 现在应继续按“动态能力暴露本身也是 token 策略”理解：减少无关工具、稳定 built-in 前缀、把 deferred tools 外移，本质上都在维护 prompt cache 与预算主路径。
+
+证据：
+
+- `claude-code-source-code/src/commands.ts:224-320`
+- `claude-code-source-code/src/tools.ts:193-367`
+- `claude-code-source-code/src/query.ts:369-395`
+- `claude-code-source-code/src/services/api/claude.ts:1270-1355`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-158`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-220`
+- `claude-code-source-code/src/cli/structuredIO.ts:135-162`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/Task.ts:6-124`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+
+### Y. 第一性原理实践最稳的写法应收敛为“目标、预算、对象、边界、回写”
+
+- 使用专题不能继续只给命令清单，而应先帮助读者判断：这次任务属于 session、task/workflow、worktree 还是单轮对话。
+- 更稳的 Claude Code 使用法不是“写更长 prompt”，而是先分目标预算、动作预算、上下文预算、协作预算与治理预算，再决定哪些状态进入稳定层，哪些状态只做晚绑定。
+- 长任务若仍被当作多轮聊天来承载，通常已经在逆用 Claude Code；应升级到 task/workflow/session/worktree 等正式对象。
+
+证据：
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:29-122`
+- `claude-code-source-code/src/query/tokenBudget.ts:3-92`
+- `claude-code-source-code/src/utils/toolPool.ts:43-79`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-158`
+- `claude-code-source-code/src/Task.ts:6-106`
+- `claude-code-source-code/src/utils/task/framework.ts:101-117`
+- `claude-code-source-code/src/utils/sessionStorage.ts:231-258`
+- `claude-code-source-code/src/utils/worktree.ts:1022-1058`
+- `claude-code-source-code/src/utils/transcriptSearch.ts:9-59`
+- `claude-code-source-code/src/ink/selection.ts:19-63`
+- `claude-code-source-code/src/services/mcp/channelPermissions.ts:1-18`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:15-73`
+
+### Z. Prompt 深线已升级到“可重放、可观测、可编译、可分层”
+
+- `stopHooks` 会保存 `CacheSafeParams`，让 `/btw` 和 post-turn forks 复用与主线程一致的安全前缀；这说明 prompt 不只是单轮文本，而是可重放前缀资产。
+- `get_context_usage` 已把 `systemPromptSections`、`systemTools`、`attachmentsByType`、`messageBreakdown` 暴露出来，说明 prompt 结构本身已经进入可观测预算面。
+- `memdir` 与 `systemPromptSectionCache` 说明 prompt 正在按 section 编译和缓存，而不是每轮重写整段 memory 指南。
+- `nullRenderingAttachments` 进一步说明“模型可见真相”和“用户可见真相”被显式分层，这是 prompt 低噪音注入的前提。
+
+证据：
+
+- `claude-code-source-code/src/query/stopHooks.ts:84-99`
+- `claude-code-source-code/src/commands/btw/btw.tsx:183-227`
+- `claude-code-source-code/src/utils/forkedAgent.ts:70-141`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:220-305`
+- `claude-code-source-code/src/components/ContextVisualization.tsx:110-149`
+- `claude-code-source-code/src/memdir/memdir.ts:121-128`
+- `claude-code-source-code/src/memdir/memdir.ts:187-205`
+- `claude-code-source-code/src/bootstrap/state.ts:1641-1653`
+- `claude-code-source-code/src/components/messages/nullRenderingAttachments.ts:4-69`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:332-460`
+
+### AA. 源码质量深线已升级到“显式失败、反竞争条件、chokepoint 与 leaf module”
+
+- `StructuredIO`、`DirectConnectManager`、`RemoteSessionManager`、`bridgeMessaging` 反复体现同一原则：unsupported / unknown / outbound-only control request 必须显式回 error，不能制造假成功。
+- `updateTaskState(...)`、`generateTaskAttachments(...)` 与 mailbox attachment 去重逻辑说明作者不是按“单次调用正确”写代码，而是按 stale snapshot、duplicate response、双来源消息这些 race-aware 主路径写代码。
+- `onChangeAppState(...)`、`assembleToolPool(...)`、`promptCacheBreakDetection.ts` 说明 Claude Code 倾向于用少数 chokepoint 统一维护 mode sync、tool truth、cache break 解释等全局不变量。
+- `pluginPolicy.ts`、`normalization.ts`、`toolPool.ts`、`teammateViewHelpers.ts` 等 leaf module 则说明作者会主动切断循环依赖和模块图污染，以保护这些 chokepoint 不被反向拖垮。
+
+证据：
+
+- `claude-code-source-code/src/cli/structuredIO.ts:135-162`
+- `claude-code-source-code/src/cli/structuredIO.ts:533-658`
+- `claude-code-source-code/src/server/directConnectManager.ts:81-99`
+- `claude-code-source-code/src/server/directConnectManager.ts:188-200`
+- `claude-code-source-code/src/remote/RemoteSessionManager.ts:189-213`
+- `claude-code-source-code/src/bridge/bridgeMessaging.ts:126-157`
+- `claude-code-source-code/src/bridge/bridgeMessaging.ts:215-283`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/tools.ts:193-367`
+- `claude-code-source-code/src/utils/task/framework.ts:48-71`
+- `claude-code-source-code/src/utils/task/framework.ts:158-248`
+- `claude-code-source-code/src/utils/attachments.ts:3583-3665`
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-20`
+- `claude-code-source-code/src/services/mcp/normalization.ts:1-23`
+- `claude-code-source-code/src/utils/toolPool.ts:43-79`
+- `claude-code-source-code/src/state/teammateViewHelpers.ts:5-21`
+
+### AB. 宿主 API 深线已升级到“失败语义、取消请求与 transcript 防腐层”
+
+- `control_response(error)`、`control_cancel_request`、orphan/duplicate response 不能再被当成边角协议；它们共同决定 host control loop 是否仍然活着。
+- `notifySessionStateChanged(...)`、`external_metadata.pending_action`、`permission_mode` 外化说明失败之后系统不会让宿主继续猜当前状态。
+- `ensureToolResultPairing(...)` 说明 transcript repair 也应被视为正式 API 现实的一部分，而不是内部补丁层。
+
+证据：
+
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:606-619`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-429`
+- `claude-code-source-code/src/cli/structuredIO.ts:469-520`
+- `claude-code-source-code/src/bridge/bridgeMessaging.ts:265-283`
+- `claude-code-source-code/src/bridge/bridgeMessaging.ts:373-383`
+- `claude-code-source-code/src/server/directConnectManager.ts:81-99`
+- `claude-code-source-code/src/remote/RemoteSessionManager.ts:159-170`
+- `claude-code-source-code/src/remote/RemoteSessionManager.ts:189-213`
+- `claude-code-source-code/src/utils/sessionState.ts:92-130`
+- `claude-code-source-code/src/cli/print.ts:5241-5270`
+- `claude-code-source-code/src/utils/messages.ts:5133-5188`
+
+### AC. Prompt 深线还应继续升级到“辅助循环共享前缀资产网络”
+
+- `CacheSafeParams` 不只服务主线程本轮请求，还被 `/btw`、prompt suggestion、session memory、extract memories、auto-dream、agent summary 这些辅助循环复用。
+- 这说明 Claude Code 的 prompt 魔力并不是“主线程 system prompt 很强”，而是主线程持续生产可被旁路循环继承的 prefix asset。
+- 真正的设计单位因此不只是单次 query，而是“主线程 + 多个 post-turn / side-loop fork”组成的前缀共享网络。
+
+证据：
+
+- `claude-code-source-code/src/query/stopHooks.ts:92-99`
+- `claude-code-source-code/src/commands/btw/btw.tsx:183-227`
+- `claude-code-source-code/src/cli/print.ts:2274-2298`
+- `claude-code-source-code/src/utils/forkedAgent.ts:70-141`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-221`
+- `claude-code-source-code/src/services/SessionMemory/sessionMemory.ts:315-325`
+- `claude-code-source-code/src/services/extractMemories/extractMemories.ts:371-427`
+- `claude-code-source-code/src/services/autoDream/autoDream.ts:224-233`
+- `claude-code-source-code/src/services/AgentSummary/agentSummary.ts:81-109`
+- `claude-code-source-code/src/tools/AgentTool/runAgent.ts:721-729`
+
+### AC. 预算器深线已升级到“观测型预算与实际调优方法”
+
+- `get_context_usage` 暴露的不只是总 token，还显式暴露 `systemPromptSections`、`systemTools`、`deferredBuiltinTools`、`mcpTools`、`skills`、`attachmentsByType` 与 `toolCallsByType`，这说明 prompt 预算已被外化成可诊断对象。
+- `ContextVisualization` 证明这些字段不是纯 SDK 调试残留，而是前台实际消费的正式观测面。
+- 预算观测必须和 `pending_action`、`permission_mode`、`session_state_changed` 一起理解，否则宿主仍会把“预算问题”“审批阻塞”“模式变化”混成一种“系统卡住”。
+- `ContextSuggestions` 与 worker init 时对 stale `pending_action` 的清理进一步说明：Claude Code 不是只想让你“看见预算”，而是想形成“观测 -> 建议 -> 调优”的闭环，并防止 crash 后沿用过期阻塞真相。
+
+证据：
+
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:175-305`
+- `claude-code-source-code/src/utils/analyzeContext.ts:918-1085`
+- `claude-code-source-code/src/utils/contextSuggestions.ts:31-220`
+- `claude-code-source-code/src/commands/context/context.tsx:12-60`
+- `claude-code-source-code/src/components/ContextVisualization.tsx:110-220`
+- `claude-code-source-code/src/components/ContextSuggestions.tsx:11-45`
+- `claude-code-source-code/src/utils/sessionState.ts:92-130`
+- `claude-code-source-code/src/cli/transports/ccrClient.ts:476-487`
+- `claude-code-source-code/src/state/onChangeAppState.ts:50-92`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:332-460`
+
+### AD. 预算深线已升级到“观测 -> 建议 -> 调优”的闭环
+
+- `get_context_usage`、`/context` 与 `ContextVisualization` 共享同一条采集路径，观测的是模型实际会看到的工作集，而不是 REPL 原始历史。
+- `ContextSuggestions` 说明 Claude Code 不满足于告诉你“哪里胖”，还会继续把预算结构翻译成下一步动作建议。
+- 这意味着预算在 Claude Code 里不只是控制器，也是建议器；它既约束系统，也帮助人类和宿主决定下一步该改 prompt、改工具面，还是改对象选择。
+
+证据：
+
+- `claude-code-source-code/src/utils/analyzeContext.ts:918-1085`
+- `claude-code-source-code/src/utils/contextSuggestions.ts:31-220`
+- `claude-code-source-code/src/commands/context/context.tsx:12-60`
+- `claude-code-source-code/src/commands/context/context-noninteractive.ts:16-120`
+- `claude-code-source-code/src/components/ContextVisualization.tsx:14-20`
+- `claude-code-source-code/src/components/ContextVisualization.tsx:105-245`
+- `claude-code-source-code/src/components/ContextSuggestions.tsx:11-45`
+- `claude-code-source-code/src/cli/print.ts:2961-2978`
+
+### Z. 入口索引层必须被当成正式产物，而不是维护附录
+
+- 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。
+- 这说明检索层本身也是蓝皮书结构的一部分，不只是排版工作；它决定读者是否能按“问题 -> 平面 -> 章节”而不是按文件名碰运气进入正文。
+
+证据：
+
+- `bluebook/README.md`
+- `bluebook/navigation/01-第一性原理阅读地图.md`
+- `bluebook/navigation/02-能力、API与治理检索图.md`
+- `bluebook/api/README.md`
+- `bluebook/architecture/README.md`
+- `bluebook/guides/README.md`
+- `bluebook/philosophy/README.md`
+
 ## 下一步待办
 
-- 补 workflow engine 当前可见边界与 `LocalWorkflowTask` 实现缺口
-- 补 REPL 更细的 scroll/search/selection 时序图
 - 补 `SDKMessage`、control、snapshot、recovery 四面统一的宿主实现 casebook
 - 补 `query.ts` / `sessionStorage.ts` / `REPL.tsx` / `replBridge.ts` 四个热点文件的债务与分层图
 - 补 bridge / direct-connect / remote-session 三类宿主路径的更细时序图
-- 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
+- 继续把源码目录级索引表下沉到二级目录与代表性叶子模块
 - 补 `REPL.tsx` / Ink 更细的 transcript mode、message actions、PromptInput 交互链
 - 补命令索引的更细表格化版本与 workflow/dynamic skills 交叉核对
 - 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
 - 继续把 session/state API 与子代理状态回收做成字段级索引与时序图
 - 补一章“MCP 实战配置与集成范式”
-- 补一章“managed-only / channels / policy / allowlist 的组织级治理手册”
+- 补一章“治理型 API 的宿主实践样例”
 
 ## 当前风险
 

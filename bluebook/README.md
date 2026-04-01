@@ -47,31 +47,34 @@
 - 再读 [guides/01-使用指南](guides/01-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md)
 - 多 Agent 与 prompt 编排继续读 [guides/02-多Agent编排与Prompt模板](guides/02-%E5%A4%9AAgent%E7%BC%96%E6%8E%92%E4%B8%8EPrompt%E6%A8%A1%E6%9D%BF.md)
 - 知识层与 `CLAUDE.md` 实践继续读 [guides/03-CLAUDE.md、记忆层与上下文注入实践](guides/03-CLAUDE.md%E3%80%81%E8%AE%B0%E5%BF%86%E5%B1%82%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5%E5%AE%9E%E8%B7%B5.md)
+- 想把复杂任务压缩成稳定方法，再读 [guides/06-第一性原理实践：目标、预算、对象、边界与回写](guides/06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E5%AE%9E%E8%B7%B5%EF%BC%9A%E7%9B%AE%E6%A0%87%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E8%BE%B9%E7%95%8C%E4%B8%8E%E5%9B%9E%E5%86%99.md)
+- 想先观测预算再调 prompt / tools / memory，再读 [guides/07-用Context Usage与状态回写调优Prompt和预算](guides/07-%E7%94%A8Context%20Usage%E4%B8%8E%E7%8A%B6%E6%80%81%E5%9B%9E%E5%86%99%E8%B0%83%E4%BC%98Prompt%E5%92%8C%E9%A2%84%E7%AE%97.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
 - 先读 [05-功能全景与 API 支持](05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)
 - 再读 [08-能力全集、公开度与成熟度矩阵](08-%E8%83%BD%E5%8A%9B%E5%85%A8%E9%9B%86%E3%80%81%E5%85%AC%E5%BC%80%E5%BA%A6%E4%B8%8E%E6%88%90%E7%86%9F%E5%BA%A6%E7%9F%A9%E9%98%B5.md)
 - 再读 [api/README](api/README.md)
-- 最后顺着 `13 -> 14 -> 15 -> 16 -> 17 -> 20 -> 26 -> 28` 读宿主闭环和治理型 API
+- 先用 [api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面](api/30-%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BA%A7%E8%83%BD%E5%8A%9B%E5%9C%B0%E5%9B%BE%EF%BC%9Acommands%E3%80%81tools%E3%80%81services%E3%80%81%E7%8A%B6%E6%80%81%E4%B8%8E%E5%AE%BF%E4%B8%BB%E5%B9%B3%E9%9D%A2.md) 校准能力地形
+- 最后顺着 `13 -> 14 -> 15 -> 16 -> 17 -> 20 -> 26 -> 28 -> 31` 读宿主闭环、治理型 API 与失败修复语义
 
 ### 4. 想研究 prompt、知识、记忆与上下文经济
 
 - 先读 `06 -> 07`
-- 再读 `api/18 -> api/21 -> architecture/18 -> architecture/28 -> architecture/29`
+- 再读 `api/18 -> api/21 -> architecture/18 -> architecture/28 -> architecture/29 -> architecture/31 -> architecture/36`
 - 哲学收束看 `philosophy/14 -> philosophy/18 -> philosophy/19 -> philosophy/21 -> philosophy/22`
 
 ### 5. 想研究安全、风控与治理
 
-- 产品内安全先读 `architecture/05 -> architecture/11 -> architecture/19 -> architecture/32`
-- 哲学收束看 `philosophy/03 -> philosophy/19 -> philosophy/22`
+- 产品内安全先读 `architecture/05 -> architecture/11 -> architecture/19 -> architecture/32 -> architecture/37`
+- 哲学收束看 `philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/27 -> philosophy/31`
 - 平台风控与账号治理读 [risk/README](risk/README.md)
 
 ### 6. 想研究源码结构与工程先进性
 
 - 先读 `01 -> 03 -> 05`
-- 再读 `architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33`
-- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/17 -> philosophy/23`
+- 再读 `api/30 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38 -> architecture/40 -> architecture/41`
+- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/17 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29`
 
 ## 按专题链速查
 
@@ -111,6 +114,10 @@
 - 风控链：`risk/00-研究方法与可信边界.md` -> `risk/01-风控总论：封禁不是单点开关.md` -> `risk/02-身份、订阅、组织与策略限制.md` -> `risk/03-遥测、GrowthBook 与远程下发控制.md` -> `risk/04-本地执行面：权限、Auto Mode、Sandbox 与阻断.md` -> `risk/05-Remote Control、Trusted Device 与高安全会话.md` -> `risk/06-失效模式、封禁表现与合规使用边界.md` -> `risk/07-合规降低误判、保护权益与高风险地区用户建议.md` -> `risk/08-风控检测技术的先进性、原理与源码启示.md` -> `risk/09-第一性原理与苏格拉底式反思.md` -> `risk/10-错误语义、能力撤回与治理层矩阵.md` -> `risk/11-治理闭环时序：观测、判定、下发、阻断与恢复.md` -> `risk/12-Selective Fail-Open  Fail-Closed 的设计哲学.md` -> `risk/13-误伤处置、支持路径与证据保全决策树.md` -> `risk/14-图解：Remote Control、能力门槛与误伤处置流程.md` -> `risk/15-平台正义、误伤、公平性与可解释性.md` -> `risk/16-图解：Bridge、Trusted Device 与 401 Recovery 精细时序.md` -> `risk/17-速查卡：错误语义、用户动作与支持路径.md` -> `risk/18-可迁移设计法则：给 Agent 平台构建者的启示.md` -> `risk/19-单页总纲：从主体到处置的风控研究地图.md` -> `risk/20-高波动网络环境、中国用户与连续性破坏机制.md` -> `risk/21-给平台方的改进清单：诊断、解释层与恢复路径.md` -> `risk/22-源码模块地图：风控相关代码入口与职责分层.md` -> `risk/23-案例推演：五类“像被封了”的典型路径.md` -> `risk/24-信号融合、连续性断裂与“像被封了”的生成机制.md` -> `risk/25-问题导向索引：按症状、源码入口与合规动作阅读风控专题.md` -> `risk/26-苏格拉底附录：如果要把误伤再降一半，系统该追问什么.md` -> `risk/27-判定非对称性矩阵：哪些路径要快放行，哪些路径必须硬收口.md`
 - 风控增量链：`risk/28-连续性自检、故障窗口纪律与证据包：高波动环境用户的合规自保手册.md` -> `risk/29-控制平面先进性：从信号、判定、恢复到解释的技术设计图谱.md`
 - 会话链：`architecture/09-会话存储记忆与回溯状态面.md` -> `api/09-会话与状态API手册.md` -> `philosophy/06-状态优先于对话.md`
+- workflow 链：`architecture/30 -> architecture/34 -> philosophy/25`
+- 目录拓扑链：`05 -> api/24 -> api/29 -> api/30 -> architecture/38 -> philosophy/24`
+- 失败语义链：`api/31 -> architecture/40 -> philosophy/29`
+- 预算观测链：`api/32 -> architecture/37 -> architecture/43 -> philosophy/31`
 
 ## 按第一性原理阅读
 
@@ -118,16 +125,18 @@
 - 决策：`03` -> `architecture/02` -> `architecture/22`
 - 行动：`architecture/05` -> `architecture/11` -> `architecture/19`
 - 记忆：`architecture/09` -> `api/09` -> `architecture/29`
-- 协作：`architecture/10` -> `architecture/30` -> `guides/02`
+- 协作：`architecture/10` -> `architecture/30` -> `architecture/34` -> `guides/02`
 - 宿主：`api/13` -> `architecture/13` -> `philosophy/09`
 - 恢复：`architecture/06` -> `architecture/16` -> `architecture/25`
-- 治理：`04` -> `philosophy/20` -> `risk/README`
+- 预算：`architecture/21` -> `architecture/32` -> `architecture/37` -> `philosophy/22`
+- 治理：`04` -> `api/28` -> `guides/04` -> `guides/05` -> `philosophy/27` -> `risk/README`
+- 目录拓扑：`05` -> `api/23` -> `api/29` -> `api/30`
 
 ## 按问题阅读
 
 ### 为什么 prompt 看起来有魔力
 
-- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> philosophy/14 -> philosophy/18`
+- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30`
 
 ### 为什么它不像普通 IDE 插件
 
@@ -137,17 +146,37 @@
 
 - `06 -> architecture/10 -> architecture/30 -> guides/02 -> philosophy/07`
 
+### 为什么复杂任务不该继续写成多轮聊天
+
+- `06 -> architecture/30 -> architecture/34 -> guides/06 -> philosophy/25`
+
 ### 为什么安全和 token 经济要一起看
 
-- `03 -> architecture/19 -> architecture/21 -> philosophy/03 -> philosophy/19`
+- `03 -> architecture/19 -> architecture/21 -> architecture/32 -> architecture/37 -> philosophy/03 -> philosophy/19 -> philosophy/22`
 
 ### 为什么宿主接入不能只看 `query(prompt)`
 
-- `05 -> api/02 -> api/13 -> api/15 -> api/16 -> api/20`
+- `05 -> api/30 -> api/02 -> api/13 -> api/15 -> api/16 -> api/20 -> api/31`
 
 ### 为什么有代码不等于有公共承诺
 
 - `04 -> 08 -> architecture/27 -> philosophy/05 -> philosophy/20`
+
+### 为什么目录结构本身也在暴露能力拓扑
+
+- `05 -> api/24 -> api/29 -> api/30 -> architecture/24 -> architecture/38`
+
+### 想按深度专题而不是按目录来读
+
+- 先读 [navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理](navigation/03-%E6%B7%B1%E5%BA%A6%E4%B8%93%E9%A2%98%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E5%BA%95%E7%9B%98%E4%B8%8E%E6%B2%BB%E7%90%86.md)
+
+### 为什么宿主不该猜，而系统必须显式失败与显式回写
+
+- `architecture/13 -> architecture/17 -> architecture/40 -> philosophy/11 -> philosophy/29`
+
+### 为什么调优上下文前必须先看预算结构
+
+- `guides/07 -> api/32 -> architecture/43 -> philosophy/22 -> philosophy/31`
 
 ## 专题入口
 

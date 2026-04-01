@@ -99,6 +99,20 @@
   - 插件协议全生命周期：Manifest、Marketplace、Options、MCPB与Reload
   - 治理型API：Channels、Context Usage与Settings三重真相
   - 动态能力暴露、裁剪链与运行时可见性
+  - 源码目录级能力地图：commands、tools、services、状态与宿主平面
+  - 失败语义、取消请求与孤儿修复API手册
+  - Context Usage、Prompt预算与观测型宿主手册
+  - 深度专题导航：Prompt、预算、对象、底盘与治理
+  - workflow engine、LocalWorkflowTask 与可见边界
+  - REPL transcript search、selection 与 scroll 协同
+  - 五层合同、缓存断点与Prompt装配时序
+  - 统一预算器：能力裁剪、Token延续与状态外化
+  - Contract优先、运行时底盘与公开镜像缺口
+  - Prompt可重放前缀、可观测预算与Section编译器
+  - 辅助循环、侧问题与后回合Fork共享前缀
+  - 显式失败语义、重复响应与反竞争条件设计
+  - 叶子模块、扼流点与循环依赖切断法
+  - 预算观测、Context Suggestions与调优闭环
   - 真正的设计单位不是功能，而是运行时平面
   - 前台交互不是 UI 皮肤，而是认知控制面
   - Prompt 不是文本技巧而是契约分层
@@ -107,7 +121,19 @@
   - Prompt魔力来自约束叠加与状态反馈
   - 安全、成本与体验必须共用预算器
   - 源码质量不是卫生而是产品能力
+  - 可见边界优于脑补全貌
+  - Workflow不是脚本而是编排对象
+  - 用户可见真相优于底层原始文本
+  - 治理开关不是部署尾巴而是输入边界
+  - 复杂性应该收敛到扼流点而不是散落到产品层
+  - 反竞争条件意识优于局部功能正确
+  - Prompt不是一次请求而是可复用前缀资产
+  - 可观测预算优于经验调优
   - CLAUDE.md、记忆层与上下文注入实践
+  - Channels、托管策略与组织级治理实践
+  - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
+  - 第一性原理实践：目标、预算、对象、边界与回写
+  - 用Context Usage与状态回写调优Prompt和预算
 
 ## 已确认事实
 
@@ -137,6 +163,25 @@
 - API 写作现在已有统一基线：先用总表型文档确定能力平面、公开度与 adapter 宽度，再进入具体专题
 - API atlas 现在已经分成两层：`23/24` 负责矩阵与谱系，`25-29` 负责能力对象、宿主接入、插件生命周期、治理型 API 与动态可见性
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
+- workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
+- REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释
+- channels 与托管设置应从“组织级治理实践”角度单独写，不再只散落在 API 与 risk 章节里
+- 公开镜像相关写作纪律应升级为“可见边界优于脑补全貌”
+- workflow 的下一层哲学表述应稳定为“正式编排对象”，不要退回“脚本系统”叙述
+- 前台研究的下一层哲学表述应稳定为“用户可见真相”，不要退回“显示层优化”叙述
+- 治理层研究的下一层哲学表述应稳定为“输入边界”，不要退回“企业配置项”叙述
+- prompt 魔力的更深层写法应稳定为“五层合同 + 缓存断点 + 状态晚绑定”，不要退回对单段 system prompt 的评论
+- prompt 深线还应继续升级为“可重放前缀 + 可观测预算 + section 编译器 + 模型真相/用户真相分层”
+- prompt 深线还应继续升级为“主线程生产 prefix asset，辅助循环共享同一前缀网络”
+- 统一预算器的更深层写法应稳定为“请求前裁能力、请求中保工作集、请求后做恢复与继续”，不要退回“省 token 技巧”叙述
+- 源码质量研究的更稳顺序应是“先找 contract，再找 runtime 底盘，再看热点与缺口”
+- 源码质量深线还应继续升级为“显式失败 + 反竞争条件 + chokepoint + leaf module”，不要退回“大文件很多/代码很复杂”的空泛评价
+- API atlas 还应继续补目录级能力地图，避免“字段齐了，但能力地形仍然不可检索”
+- 宿主 API 还应继续补失败语义、取消请求、orphan response 与 transcript repair，不要只写 happy path
+- 预算器深线还应继续补 context usage、systemPromptSections、attachmentsByType 与 pending_action 的联合调优方法
+- 预算深线还应继续从“统一预算器”推进到“观测面 + 建议层 + 调优动作”的闭环写法
+- 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
+- 主入口、navigation 与专题 README 必须和正文同步更新，否则蓝皮书会先在检索层失真
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述
 - Prompt 魔力更精确的第一性原理表述应升级为“角色合同 + 工具边界 + 缓存结构 + 状态反馈 + 协作语法”
 - 安全、token 经济与体验本质上共用一个预算器，分别约束动作空间、上下文空间与认知噪音
@@ -180,16 +225,15 @@
 
 ## 后续章节建议
 
-1. 深挖 workflow engine 当前可见边界与 `LocalWorkflowTask` 实现缺口
-2. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
-3. 给 bridge / direct-connect / remote-session 三类宿主路径做更细时序图
-4. 把 `SDKMessage`、control、snapshot、recovery 做成更细宿主实现 casebook
-5. 给 MCP 状态、命令 availability、控制请求做时序化视图
-6. 深挖 REPL 的 scroll/search/selection 时序与更多前台认知机制
-7. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
-8. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、提示词面、工程面、协作面、前台面、演化面都做成清晰阅读路径
-9. 把命令全集、工具全集、任务/团队/remote 能力全集从零散章节提升为统一可检索手册
-10. 把治理型 API、插件 lifecycle、动态可见性继续做成宿主实践 casebook
+1. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
+2. 给 bridge / direct-connect / remote-session 三类宿主路径做更细时序图
+3. 把 `SDKMessage`、control、snapshot、recovery 做成更细宿主实现 casebook
+4. 给 MCP 状态、命令 availability、控制请求做时序化视图
+5. 深挖 REPL 的 transcript mode、message actions、footer / quick search 协同
+6. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
+7. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、提示词面、工程面、协作面、前台面、演化面都做成清晰阅读路径
+8. 把命令全集、工具全集、任务/团队/remote 能力全集从零散章节提升为统一可检索手册
+9. 把治理型 API、插件 lifecycle、动态可见性继续做成宿主实践 casebook
 
 ## 编写约定
 
