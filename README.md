@@ -15,6 +15,8 @@
 - [docs/bluebook/05-功能全景与API支持.md](docs/bluebook/05-功能全景与API支持.md): 功能矩阵、命令面、SDK 面、MCP 面、远程面
 - [docs/bluebook/06-第一性原理与苏格拉底反思.md](docs/bluebook/06-第一性原理与苏格拉底反思.md): 从第一性原理回看 Claude Code 与蓝皮书自身
 - [docs/api/README.md](docs/api/README.md): 接口与协议索引
+- [docs/architecture/README.md](docs/architecture/README.md): 架构深挖索引
+- [docs/philosophy/README.md](docs/philosophy/README.md): 哲学专题索引
 - [docs/development/research-log.md](docs/development/research-log.md): 研究日志、证据锚点、后续待办
 - [docs/development/03-反思与迭代准则.md](docs/development/03-反思与迭代准则.md): 写作约束与下一轮迭代方法
 - [docs/changelog.md](docs/changelog.md): 文档版本记录

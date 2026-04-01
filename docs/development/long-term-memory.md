@@ -23,6 +23,13 @@
   - 命令与功能矩阵
   - Agent SDK 与控制协议
   - MCP 与远程传输
+  - SDK 消息与事件字典
+  - 控制请求与响应矩阵
+  - REPL 与 Ink 交互架构
+  - 权限系统与安全状态机
+  - 上下文压缩与恢复链
+  - 上下文经济学
+  - 安全观与边界设计
 
 ## 已确认事实
 
@@ -32,6 +39,8 @@
 - 技能、工具、权限、压缩、远程、子代理都是 Claude Code 的核心能力层，不是边角模块
 - SDK 面不仅有 query，还有会话、session 管理、控制协议与 SDK-MCP server 面
 - Claude Code 的对外接口应至少按命令面、工具面、SDK 控制面、MCP 面、远程面分层理解
+- REPL 本身是 orchestration layer，不是薄 UI
+- Claude Code 的上下文管理应被理解为工作集管理，而不是“大窗口”策略
 
 ## 后续章节建议
 
@@ -45,6 +54,8 @@
 8. 深挖 `StructuredIO` / `RemoteIO` 的 host-CLI 协议与时序
 9. 深挖 `commands.ts` 的全量功能域与 availability/gating
 10. 把 `SDKMessageSchema` 做成可检索的消息字典
+11. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
+12. 深挖 `services/compact/*` 的具体实现差异
 
 ## 编写约定
 

@@ -39,3 +39,9 @@
 - `guides/`: 用法与工作流
 - `philosophy/`: 哲学与方法论
 - `development/`: 研究过程、日志、记忆与迭代准则
+
+## 专题索引
+
+- [架构专题](architecture/README.md)
+- [API 专题](api/README.md)
+- [哲学专题](philosophy/README.md)

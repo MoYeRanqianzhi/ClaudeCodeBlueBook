@@ -68,6 +68,8 @@
 - 已补“功能全景与 API 支持”主线章节
 - 已补命令矩阵、SDK 控制协议、MCP/远程传输三篇接口文档
 - 已补第一性原理与苏格拉底反思章节，以及内部迭代准则
+- 已补 REPL、权限状态机、上下文压缩恢复链三篇架构深挖
+- 已补 SDK 消息字典、控制请求矩阵、上下文经济学、安全观四篇专题文档
 
 ## 下一步待办
 
@@ -77,7 +79,7 @@
 - 补一章“多 Agent 协作模式与 prompt 模板”
 - 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
 - 给 `SDKMessageSchema` 与 control subtype 做完整对照表
-- 补 `REPL.tsx` / Ink 交互状态机
+- 补 `REPL.tsx` / Ink 更细的 transcript mode、message actions、PromptInput 交互链
 
 ## 当前风险
 
@@ -85,3 +87,4 @@
 - `query.ts` 仍有大量细节未拆完，尤其是 compact / reactive compact / media recovery 分支。
 - plugin 市场能力的基础设施很完整，但现阶段不能夸大其生态成熟度。
 - SDK 入口可见，但部分 `runtimeTypes` / `toolTypes` / `controlTypes` 源文件未在当前提取树中展开，接口分析需持续标注这层边界。
+- `query.ts` 的具体 compact 算法实现在 `services/compact/*`，当前章节已讲主链，细算法仍待继续下钻。
