@@ -568,6 +568,28 @@
 - `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:25-64`
 - `claude-code-source-code/src/utils/diagLogs.ts:14-57`
 
+### AD. Failure handling is a four-layer budget: retry, cooldown, cached denial, terminal stop
+
+- `withRetry.ts` 说明很多 401/403/408/409/429/529 不是统一失败，而是进入不同重试预算；CCR 模式、persistent retry、subscriber gates 等都会改变是否重试。
+- `handleOAuth401Error()` 明确先检查“是不是别的进程已经恢复了”，说明恢复预算先处理并发与重复成本，再处理刷新本身。
+- `fastMode.ts` 把 runtime state 建模成 `active/cooldown`，说明某些失败的正确动作不是继续试，而是进入正式冷却层。
+- `mcp/client.ts` 的 15 分钟 `needs-auth` cache 说明系统会对某些路径做短期必败记忆，而不是每次都重新撞墙。
+- `initReplBridge.ts` 对 dead token 做跨进程 fail count 和记忆，达到阈值后直接跳过注册，说明 bridge 也有自己的缓存拒绝层。
+- `bridgeMain.ts` / `replBridge.ts` 把 `auth_failed` 与 `fatal` 分开，并在 fatal/auth_failed 后 backoff，说明终止层和恢复层并非同一语义。
+
+证据:
+
+- `claude-code-source-code/src/services/api/withRetry.ts:91-98`
+- `claude-code-source-code/src/services/api/withRetry.ts:696-780`
+- `claude-code-source-code/src/utils/auth.ts:1345-1392`
+- `claude-code-source-code/src/utils/fastMode.ts:178-233`
+- `claude-code-source-code/src/services/mcp/client.ts:257-263`
+- `claude-code-source-code/src/services/mcp/client.ts:363-370`
+- `claude-code-source-code/src/services/mcp/client.ts:2311-2322`
+- `claude-code-source-code/src/bridge/initReplBridge.ts:169-239`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:659-730`
+- `claude-code-source-code/src/bridge/replBridge.ts:2080-2105`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
