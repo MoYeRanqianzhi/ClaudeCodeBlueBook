@@ -552,6 +552,22 @@
 - `claude-code-source-code/src/services/mcp/useManageMCPConnections.ts:755-759`
 - `claude-code-source-code/src/services/rateLimitMessages.ts:143-220`
 
+### AC. Proof surfaces should be productized, not left as scattered diagnostics
+
+- `authStatus()` 已经能输出当前 `authMethod`、`orgId`、`orgName`、`subscriptionType` 等核心事实，说明平台已有自证面雏形。
+- `commands/bridge/bridge.tsx` 的 `checkBridgePrerequisites()` 已把 policy、资格、版本、token 组成完整 preflight，说明高价值能力的前提检查其实已经存在，只是还未统一产品化。
+- `useCanSwitchToExistingSubscription()` 与 `useMcpConnectivityStatus()` 已在产品层提供轻量提示，分别覆盖订阅激活与连接域状态，说明平台并非没有用户面零件。
+- `diagLogs.ts` 则构成支持侧的低敏感度证据面，说明“用户仪表盘”和“支持仪表盘”本来就共享一套可证明性基础设施。
+- 更高抽象看，当前系统缺的不是诊断零件，而是把 `auth status`、资格 preflight、startup notification、support diagnostics 收敛成同一张用户可执行状态面。
+
+证据:
+
+- `claude-code-source-code/src/cli/handlers/auth.ts:232-317`
+- `claude-code-source-code/src/commands/bridge/bridge.tsx:467-503`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:17-58`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:25-64`
+- `claude-code-source-code/src/utils/diagLogs.ts:14-57`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
