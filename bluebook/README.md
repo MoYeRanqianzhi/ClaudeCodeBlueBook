@@ -20,9 +20,27 @@
 7. [06-第一性原理与苏格拉底反思](06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md)
 8. [07-运行时契约、知识层与生态边界](07-%E8%BF%90%E8%A1%8C%E6%97%B6%E5%A5%91%E7%BA%A6%E3%80%81%E7%9F%A5%E8%AF%86%E5%B1%82%E4%B8%8E%E7%94%9F%E6%80%81%E8%BE%B9%E7%95%8C.md)
 
+## 目录协议
+
+- `bluebook/` 根目录：正式主线结论与兼容入口。
+- `navigation/`：阅读地图、检索路径与问题导向入口。
+- `architecture/`：状态机、恢复链、装配链、运行时平面。
+- `api/`：命令、工具、SDK、control、session、remote、扩展表面。
+- `guides/`：面向使用者与接入者的实践路径。
+- `risk/`：风控、治理、账号/策略/设备/恢复专题。
+- `philosophy/`：设计内涵、第一性原理与演化方法。
+- `../docs/`：持久化记忆、研究日志、章节规划与写作约束。
+
+## 导航入口
+
+- [导航专题](navigation/README.md)
+- [第一性原理阅读地图](navigation/01-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E9%98%85%E8%AF%BB%E5%9C%B0%E5%9B%BE.md)
+- [能力、API 与治理检索图](navigation/02-%E8%83%BD%E5%8A%9B%E3%80%81API%E4%B8%8E%E6%B2%BB%E7%90%86%E6%A3%80%E7%B4%A2%E5%9B%BE.md)
+
 ## 按目标阅读
 
 - 想先建立整体判断：顺读 `bluebook/` 主线。
+- 想先知道这套书应该怎么读：先看 `navigation/`。
 - 想查具体机制：看 `architecture/`。
 - 想查接口、字段和协议：看 `api/`。
 - 想研究风控、账号治理与封号技术：看 `risk/`。
@@ -124,6 +142,7 @@
 ## 目录结构
 
 - `bluebook/`: 正式主线章节与兼容入口
+- `navigation/`: 蓝皮书内部导航、阅读地图与检索入口
 - `architecture/`: 机制、状态机与算法深挖
 - `api/`: 接口、字段与可用性索引
 - `guides/`: 用法与工作流
@@ -135,6 +154,7 @@
 
 - [架构专题](architecture/README.md)
 - [API 专题](api/README.md)
+- [导航专题](navigation/README.md)
 - [使用专题](guides/README.md)
 - [风控专题](risk/README.md)
 - [哲学专题](philosophy/README.md)

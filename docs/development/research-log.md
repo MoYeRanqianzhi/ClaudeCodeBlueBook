@@ -519,6 +519,52 @@
 
 - `query.ts` 与 `QueryGuard` 说明 turn lifecycle 被显式状态机化。
 - `Tool` 接口与 toolExecution pipeline 说明扩展能力先进入平台 ABI，再进入具体实现。
+## 2026-04-02 第二十八轮
+
+目标:
+
+- 优化蓝皮书目录结构，使其更适合继续扩张
+- 把第一性原理从六问升级为八问
+- 给后续 API 全集与哲学深挖预留导航层
+
+结论:
+
+### I. 蓝皮书已经需要显式的 navigation 层
+
+- 现在主线、机制、接口、哲学、风险、实践已经足够多，如果继续只把阅读路径压在 `bluebook/README.md`，检索成本会继续上升。
+- `navigation/` 更适合作为蓝皮书内部导航层，单独承担“从什么问题进入”和“这章属于哪一平面”。
+
+证据:
+
+- `bluebook/README.md`
+- `docs/development/01-章节规划.md`
+
+### II. Claude Code 的第一性原理应从六问升级为八问
+
+- 旧写法已经覆盖观察、决策、行动、记忆、协作、恢复。
+- 但源码已经清楚显示它还在持续处理治理与经济两个问题：
+  - 治理：账号、组织、策略、遥测、remote managed settings、trusted device
+  - 经济：prompt cache、tool/result budget、compact、输出外置、认知控制面
+
+证据:
+
+- `claude-code-source-code/src/query.ts:571-703`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:1-1`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:1-1`
+- `claude-code-source-code/src/tools/AgentTool/prompt.ts:191-243`
+- `claude-code-source-code/src/cli/structuredIO.ts:59-173`
+
+### III. 目录优化不是审美问题，而是可持续研究的基础设施
+
+- 当章节跨越主线、API、架构、哲学、风险之后，如果不明确“章节所属平面”，后续写作会反复混写：
+  - 功能全集
+  - 公开支持边界
+  - 设计解释
+  - 风控治理
+- 所以目录结构本身已经变成研究质量的一部分。
+
+## 2026-04-02 第二十七轮
+
 - `lazySchema`、`toolPool`、`WorkerStateUploader`、`promptCacheBreakDetection` 说明 schema、cache、retry、merge 都被做成正式结构对象。
 - 真正的工程债务集中在少数超大核心文件，而不是整体架构缺少方法。
 
