@@ -456,6 +456,22 @@
 - `claude-code-source-code/src/bridge/remoteBridgeCore.ts:824-878`
 - `claude-code-source-code/src/utils/diagLogs.ts:14-57`
 
+### X. Preflight and shortest-recovery paths are already implicit in the source
+
+- `useCanSwitchToExistingSubscription()` 已经能识别“你有 Pro/Max 权益，但当前没激活到此身份路径”，并直接提示 `/login to activate`，说明权益恢复最短路径在部分场景里已存在。
+- `getBridgeDisabledReason()` 已经把 Remote Control 的资格前提拆成订阅、full-scope token、组织画像、gate、build 五类诊断，这本质上已经是一个准 preflight 系统。
+- `trustedDevice` enrollment 依赖 fresh login 后的短窗口，说明某些高安全能力天然需要“会前体检”，而不是等到失败后再做 lazy 修补。
+- `errors.ts` 已把 token revoked、组织不允许、通用 auth error、模型不可用、refusal 等分成不同恢复文案，说明最短恢复路径在 API 错误层已具雏形。
+- 更高抽象看，平台当前更像“拥有分散的 preflight 零件”，而不是“没有 preflight”；下一步最值得补的是把这些零件组合成显式的预检面。
+
+证据:
+
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:10-58`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:38-87`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:89-180`
+- `claude-code-source-code/src/services/api/errors.ts:838-883`
+- `claude-code-source-code/src/services/api/errors.ts:1109-1177`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
