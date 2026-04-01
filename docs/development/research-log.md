@@ -738,6 +738,42 @@
 - `claude-code-source-code/src/bridge/remoteBridgeCore.ts:824-878`
 - `claude-code-source-code/src/utils/diagLogs.ts:14-57`
 
+### X. Preflight and shortest-recovery paths are already implicit in the source
+
+- `useCanSwitchToExistingSubscription()` 已经能识别“你有 Pro/Max 权益，但当前没激活到此身份路径”，并直接提示 `/login to activate`，说明权益恢复最短路径在部分场景里已存在。
+- `getBridgeDisabledReason()` 已经把 Remote Control 的资格前提拆成订阅、full-scope token、组织画像、gate、build 五类诊断，这本质上已经是一个准 preflight 系统。
+- `trustedDevice` enrollment 依赖 fresh login 后的短窗口，说明某些高安全能力天然需要“会前体检”，而不是等到失败后再做 lazy 修补。
+- `errors.ts` 已把 token revoked、组织不允许、通用 auth error、模型不可用、refusal 等分成不同恢复文案，说明最短恢复路径在 API 错误层已具雏形。
+- 更高抽象看，平台当前更像“拥有分散的 preflight 零件”，而不是“没有 preflight”；下一步最值得补的是把这些零件组合成显式的预检面。
+
+证据:
+
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:10-58`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:38-87`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:89-180`
+- `claude-code-source-code/src/services/api/errors.ts:838-883`
+- `claude-code-source-code/src/services/api/errors.ts:1109-1177`
+
+### Y. Semantic compression tax is a real governance cost
+
+- `getBridgeDisabledReason()` 已经把订阅、full-scope、组织画像、gate、build 拆开，但对用户而言这些差异仍可能被主观压缩成统一的“不能用”体感。
+- `errors.ts` 已把 token revoked、组织不允许、通用 auth、model not available、refusal 做分类，说明系统内部有更细 reason families，但体验层仍可能进一步塌缩。
+- `useCanSwitchToExistingSubscription()` 证明“没有能力”和“能力未激活到当前路径”根本不是一回事，若提示未被正确吸收，用户很容易误判成权限被收回。
+- `mcp/client.ts` 把远程 auth failure 提升成 `needs-auth` 的连接状态，而不是全局账号状态，但用户直觉上仍容易把 connector 故障外推成整套账号不稳定。
+- `sessionIngress.ts` 把多种 401 类连续性问题统一翻译成“Please run /login”，恢复上很务实，但也会让不同底层原因在体验层被压缩为同一动作。
+- 更高抽象看，系统内部的多层治理语义若没有被充分结构化地暴露给用户，就会把解释负担转嫁给用户和支持团队，这就是语义压缩税。
+
+证据:
+
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:57-83`
+- `claude-code-source-code/src/services/api/errors.ts:838-883`
+- `claude-code-source-code/src/services/api/errors.ts:1109-1177`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:17-58`
+- `claude-code-source-code/src/services/mcp/client.ts:335-370`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:144-147`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:355-359`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:462-467`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
