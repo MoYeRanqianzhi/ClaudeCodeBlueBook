@@ -258,6 +258,28 @@
 - `control_request / control_response / control_cancel_request` 才是宿主命令闭环。
 - `worker_status` 与 `session_state_changed` 比 `system:status` 更接近 authoritative running/idle 真相。
 
+### R. Claude Code repeatedly builds authoritative surfaces, not scattered semi-truths
+
+- `onChangeAppState(...)` 说明 mode sync 的成熟修法不是补更多 mutation callsite，而是把外部可见 mode 真相统一收口到一个 state diff choke point。
+- `getAllBaseTools()`、`assembleToolPool(...)`、`mergeAndFilterTools(...)` 说明工具真相至少分成“基础全集”“运行时组合”“多路径共享组合逻辑”三层权威面，而且 capability、policy、prompt-cache 稳定性三者共用同一入口。
+- `coreSchemas.ts` 与 `sandboxTypes.ts` 说明 SDK 类型、runtime 校验、settings schema 被刻意设计成共源，而不是 IDE 类型和 runtime shape 各写各的。
+- `sessionStorage.ts` 对 `sessionProjectDir`、subagent transcript path、`currentSessionWorktree` tri-state 的处理说明恢复系统最怕 split-brain，路径和 worktree 真相不能由 hooks / resume / cwd 各自推导。
+- `pluginPolicy.ts` 说明权威真相面最好同时是 leaf module，这样 single source of truth 不会再次被依赖图污染成多处半真相。
+- 更抽象地说，Claude Code 正在把“名词真相”推进到 schema / pure leaf，把“动词真相”推进到 chokepoint / state machine。
+
+证据:
+
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/utils/sessionState.ts:27-146`
+- `claude-code-source-code/src/tools.ts:188-367`
+- `claude-code-source-code/src/utils/toolPool.ts:20-79`
+- `claude-code-source-code/src/utils/api.ts:119-259`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1-8`
+- `claude-code-source-code/src/entrypoints/sandboxTypes.ts:1-6`
+- `claude-code-source-code/src/utils/sessionStorage.ts:203-258`
+- `claude-code-source-code/src/utils/sessionStorage.ts:533-822`
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-20`
+
 证据：
 
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-519`

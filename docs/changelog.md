@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《单一真相入口、权威状态面与Chokepoint手册》《单一真相入口：mode、tool pool、state与metadata的权威面》《单一真相入口优于多处半真相实现》，把源码质量与宿主真相深线继续推进到 authoritative surface、schema 共源、session/worktree split-brain 防治这一层
 - 新增《辅助循环、侧问题与后回合Fork共享前缀》与《Prompt不是一次请求而是可复用前缀资产》，把 prompt 深线继续推进到 `/btw`、suggestion、memory、summary、dream 共享主线程前缀这一层
 - 新增《预算观测、Context Suggestions与调优闭环》《可观测预算优于经验调优》，把“统一预算器”继续推进到“观测 -> 建议 -> 调优”的闭环
 - 新增《Context Usage、Prompt预算与观测型宿主手册》《用Context Usage与状态回写调优Prompt和预算》，把观测型预算 API 与实际调优方法补成单独手册

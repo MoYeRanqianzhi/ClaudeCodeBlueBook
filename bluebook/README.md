@@ -73,8 +73,8 @@
 ### 6. 想研究源码结构与工程先进性
 
 - 先读 `01 -> 03 -> 05`
-- 再读 `api/30 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38 -> architecture/40 -> architecture/41`
-- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29`
+- 再读 `api/30 -> api/34 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38 -> architecture/40 -> architecture/41 -> architecture/44`
+- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29 -> philosophy/32`
 
 ## 按第一性原理阅读
 
@@ -134,6 +134,10 @@
 ### 为什么调优上下文前必须先看预算结构
 
 - `guides/07 -> api/32 -> architecture/43 -> philosophy/22 -> philosophy/31`
+
+### 为什么单一真相入口比多处半真相实现更可靠
+
+- `api/34 -> architecture/41 -> architecture/44 -> philosophy/28 -> philosophy/32`
 
 ## 专题入口
 
