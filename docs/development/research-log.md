@@ -1368,6 +1368,96 @@
 - `claude-code-source-code/src/components/mcp/MCPListPanel.tsx:1-160`
 - `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:1-88`
 
+### AT. Evasion attempts generally trade short-term friction relief for higher long-term proof burden
+
+- `auth.ts` 明确禁止 managed session 回退到用户终端私有凭证来源，说明“换一条凭证路径先过再说”在受管上下文里本身就会制造 wrong-org 或 wrong-context 风险。
+- `trustedDevice.ts` 中 env token precedence 与 fresh-login enrollment 说明，高安全链路有自己的证明要求；用替代 token / 替代路径临时顶上，并不能稳定替代正确的主体链和设备链。
+- `channelAllowlist.ts` 和 `pluginOnlyPolicy.ts` 又说明，即使是扩展面或替代批准面，也被显式放进 allowlist / admin-trusted 边界里；能发声不等于有资格替用户放权。
+- 更高抽象看，规避思路的共同问题是：它们试图绕开一层证明，却会同时破坏身份路径、组织边界、批准链或主体连续性中的另一层，因此长期看通常不是最优策略。
+
+证据:
+
+- `claude-code-source-code/src/utils/auth.ts:83-110`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:65-115`
+- `claude-code-source-code/src/services/mcp/channelAllowlist.ts:1-77`
+- `claude-code-source-code/src/utils/settings/pluginOnlyPolicy.ts:1-56`
+
+### AU. Governance is easier to explain when sovereignty and recovery agency are split
+
+- `settings.ts` 的 policySettings first-source-wins 说明组织主权是正式上位裁决层，而不是普通 merge 参与者。
+- `pluginOnlyPolicy.ts` 进一步表明管理员不只决定“内容”，还决定“哪些来源还有资格发声”。
+- `channelNotification.ts` 和 `channelAllowlist.ts` 则说明替代批准面可以代行批准，但其合法性仍受平台 gate、组织 policy、allowlist 和 session opt-in 共同约束。
+- `permissionSetup.ts` 展示了另一类主权：系统可以阻止 mode transition（例如 gate 未开启时不允许进入 auto mode），说明自动化/本地选择权仍受上位边界约束。
+- 更高抽象看，平台主权、组织主权、用户主权、替代批准面和自动恢复主权并不对等；很多混乱感来自读者把“能发信号”“能代批”“能恢复”和“能最终裁决”误当成同一件事。
+
+证据:
+
+- `claude-code-source-code/src/utils/settings/settings.ts:675-726`
+- `claude-code-source-code/src/utils/settings/pluginOnlyPolicy.ts:1-56`
+- `claude-code-source-code/src/services/mcp/channelNotification.ts:220-318`
+- `claude-code-source-code/src/services/mcp/channelAllowlist.ts:1-77`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:593-633`
+
+### AV. User-interest protection is often better framed as asset preservation than immediate continuation
+
+- `sessionStorage.ts` 的 transcriptPath/sessionProjectDir 逻辑说明 transcript 文件本身是会话主资产；路径漂移会直接伤害恢复和 hooks 的正确性。
+- `reAppendSessionMetadata()` 说明 title/tag 等元数据会被持续保尾部化，本质是在保护会话资产而不是单纯优化展示。
+- `sessionRestore.ts` 会在 resume 时同时接管 session ID、recording 文件名、cost state、metadata 和 worktree 绑定，说明恢复的对象是一整套资产关系，而非单一消息列表。
+- `asciicast.ts` 与 `errorLogSink.ts` 又说明录屏、JSONL 错误日志、MCP 日志都被设计成会话相关资产；一旦风控窗口里把这些资产保护住，用户即使暂时不能继续运行，也仍保有恢复与自证抓手。
+- 更高抽象看，用户利益保护不应只被理解成“马上继续用”，更应被理解成“在异常窗口里最大化工作连续性资产的可恢复性和可证据化”。
+
+证据:
+
+- `claude-code-source-code/src/utils/sessionStorage.ts:203-255`
+- `claude-code-source-code/src/utils/sessionStorage.ts:694-740`
+- `claude-code-source-code/src/utils/sessionRestore.ts:437-520`
+- `claude-code-source-code/src/utils/asciicast.ts:12-104`
+- `claude-code-source-code/src/utils/errorLogSink.ts:1-198`
+
+### AW. A large share of support cost is really template cost
+
+- `authStatus()` 已经能输出足够多的主体/组织/订阅信息，说明高质量求助文本所需的大部分主体状态其实已经可低成本获得。
+- 前面的通知面和状态面又已经能把 local MCP failed、claude.ai connector unavailable、needs-auth 分层提示，这意味着用户如果仍只写“被封了”，问题往往不在证据缺失，而在表达模板缺失。
+- 更高抽象看，很多误伤恢复效率低，并不是系统完全没有状态面，而是用户、管理员和平台支持缺少一套统一的最短高质量文本模板。
+
+证据:
+
+- `claude-code-source-code/src/cli/handlers/auth.ts:233-315`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:1-88`
+
+### AX. China-facing access ecology should be analyzed with explicit epistemic boundaries
+
+- Anthropic 官方支持国家/地区页面当前未列出中国大陆，Claude Code 相关文档又明确要求互联网连接完成认证和 AI 处理，并支持 Claude.ai、API、Bedrock、Vertex 等官方路径；这解释了中国用户面临的基础接入摩擦不是单一网络问题，而是入口层摩擦。
+- Anthropic 官方还公开写了第三方 LLM gateway / proxy 的集成文档，这说明“兼容入口”是被产品面显式考虑过的接入形态，但不等于任何第三方入口都与官方全链路能力等价。
+- AnyRouter 自身公开文档明确把自己定位为 Claude Code 中转/API 转发入口，强调国内直连、免费额度、无信用卡门槛，并公开展示基于 `ANTHROPIC_BASE_URL` 的使用方式。
+- AnyRouter FAQ 还公开承认 `claude --offline` 的相关检查主要看 Google 连通性，且 `fetch` 仍依赖 Claude 国际版服务，说明第三方兼容入口重写的是部分接入面，而不是整个官方能力面。
+- 公开社区材料能够支持“中转站/兼容代理是中国用户常见实际使用方式”这一观察，但不能自动推出某个具体幕后公司关系。
+- 截至当前检索到的公开资料，我未找到足够可靠证据证明 AnyRouter 与智谱存在明确控制/运营关系；这类说法应保持在“未证实传闻”或“一般性战略推演”层面。
+- 智谱官网公开材料能够支持另一类更稳健的推断：其确实高度重视 coding/agentic workflow、API 平台、agent 产品和开发者流量，并使用大规模 token 激励；但这与 AnyRouter 的具体归属关系不是同一层事实。
+- Claude Code 源码还能进一步校正认知边界：客户端虽支持 `ANTHROPIC_BASE_URL`，但会显式区分第一方 Anthropic host 与第三方 host；工具搜索、流式接口、Remote Control、OAuth 上传/附件、远程托管设置等能力都表明第三方兼容入口通常只能部分重写接入问题，不能自动等价官方全链路。
+
+证据:
+
+- `https://www.anthropic.com/supported-countries`
+- `https://docs.anthropic.com/zh-CN/docs/claude-code/setup`
+- `https://docs.anthropic.com/zh-TW/docs/claude-code/third-party-integrations`
+- `https://docs.anthropic.com/zh-CN/docs/claude-code/amazon-bedrock`
+- `https://docs.anyrouter.top/`
+- `https://www.whois.com/whois/anyrouter.top`
+- `https://www.zhipuai.cn/zh`
+- `claude-code-source-code/src/utils/preflightChecks.tsx:19-21`
+- `claude-code-source-code/src/utils/preflightChecks.tsx:130-130`
+- `claude-code-source-code/src/utils/apiPreconnect.ts:56-60`
+- `claude-code-source-code/src/services/api/filesApi.ts:30-36`
+- `claude-code-source-code/src/utils/model/providers.ts:21-36`
+- `claude-code-source-code/src/utils/toolSearch.ts:282-307`
+- `claude-code-source-code/src/services/api/claude.ts:2607-2618`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:19-23`
+- `claude-code-source-code/src/utils/auth.ts:1611-1616`
+- `claude-code-source-code/src/tools/BriefTool/upload.ts:121-122`
+- `claude-code-source-code/src/bridge/inboundAttachments.ts:77-83`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:188-201`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -1443,6 +1533,12 @@
 - 已补风控专题 `53-高波动环境严格运行SOP：从日常纪律到升级求助的四阶段手册`，把中国/高波动环境用户的合规建议压成可执行顺序
 - 已补风控专题 `54-如果要把误伤再降一半：平台必须把哪些现有能力前置成产品`，把改进重点从“再加 gate”转向“统一状态面、证据面和升级面”
 - 已补风控专题 `55-后期研究索引：41-54的二级导航、问题入口与最短阅读链`，把后期高密度章节拆成四条二级主线，改善检索结构
+- 已补风控专题 `56-反规避原则：为什么任何绕过思路都会回到更高风险与更高证明负担`，把“规避冲动”改写为第一性原理层面的反规避论证
+- 已补风控专题 `57-终局总指南：Claude Code风控研究的最佳最全合规版`，把后期全部研究压缩成一份面向用户和平台构建者的终局合规总结
+- 已补风控专题 `58-治理主权与恢复主动权：谁能关、谁能开、谁能替你说 yes`，把平台、组织、用户、替代批准面和自动恢复主权收束成一张主权图
+- 已补风控专题 `59-资产保全与退出策略：账号风控窗口里真正该保护的不是面子而是工作连续性`，把用户利益保护进一步压缩成 transcript、日志、录屏和 worktree 资产保全逻辑
+- 已补风控专题 `60-结构化求助模板库：用户、管理员与平台支持的最短高质量文本`，把状态面和分流逻辑转化成可直接复制的高质量求助文本
+- 已补风控专题 `61-中国用户使用生态与认识论边界：官方路径、中转站与幕后叙事该如何判断`，把官方门槛、AnyRouter 这类中转站、以及 AnyRouter/智谱 关系的证据边界明确分层
 
 ### R. 能力全集必须和公开度 / 成熟度一起叙述
 
