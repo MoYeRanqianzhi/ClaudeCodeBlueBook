@@ -153,6 +153,30 @@
   - 允许轻微陈旧，换取系统级确定性
   - 从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放
   - 渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明
+  - 热点文件不是坏味道：Kernel、Shell与Chokepoint的分工
+  - 成熟架构不是没有大文件，而是不把复杂性撒满全仓
+  - 能力可见性控制平面：Deferred、Delta与最小可见面
+  - 最小可见面优于全量能力表
+  - 可解释运行时：输入真相、状态真相与稳定性真相
+  - Observability不是Debug层，而是正式运行时合同
+  - 让依赖图说真话：Leaf Module、Anti-Cycle Seam与Single-Source File
+  - 先让依赖关系诚实，再让抽象显得优雅
+  - 协议全集、控制平面主路径与Consumer Subset：Claude Code的宿主三层治理
+  - 恢复优先的双通道状态面：writeback、resume与reconnect一体化
+  - 单一权威优于单一全景：多消费者系统必须分层暴露真相
+  - 当前真相必须可恢复，而不是事后可观测
+  - 工作语法机：Claude Code如何把软件工程世界编译成模型可行动的Protocol Surface
+  - Narrow、Later、Outside：安全设计与省Token设计的统一反扩张运行时
+  - 可演化内核：Claude Code如何在持续增长中维持不变量
+  - 先把世界压缩成可治理语法，再让模型变聪明
+  - 真正的省Token不是压缩文本，而是改变世界暴露给模型的方式
+  - 先进源码不是一开始就完美分层，而是增长时仍能守住不变量
+  - 语义压缩器：Claude Code如何把工作现场压成可继续行动的最小语义体
+  - 资源宪法：Claude Code如何统一分配能力、时间、注意力与权威
+  - 演化制度设计：Claude Code如何在增长中保留重构可能性
+  - 真正强的Prompt不是信息更多，而是行动语义更密
+  - 模型不是资源的主人，Runtime才是
+  - 好架构不是更会重构，而是始终保留重构可能性
   - CLAUDE.md、记忆层与上下文注入实践
   - Channels、托管策略与组织级治理实践
   - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
@@ -220,6 +244,21 @@
 - prompt runtime 还应继续明确区分 UI transcript truth 与 protocol transcript truth，不要把前台看到的消息顺序直接当成模型请求的协议顺序
 - 能力设计深线还应继续固定为“渐进暴露优于全量声明”：deferred tools、delta attachments、managed-only source gating 应被视为同一设计动作
 - 根目录旧命名页当前仅应作为兼容别名保留；规范入口是 `README + 00-08`，`docs/` 是开发与记忆层而非正文层，这一点必须持续明确
+- 源码先进性深线还应继续明确：成熟架构不是消灭所有大文件，而是让合法复杂度只停留在少数 kernel / shell / chokepoint，周围继续用 leaf modules 与 single source of truth 兜底
+- “模型此刻看见什么”现在应被视为正式设计平面，而不是 prompt 细节；最小可见面、deferred、delta 与 source gating 是同一 visibility control plane 的不同投影
+- observability 深线当前应稳定成三层：输入真相、状态真相、稳定性真相；它不是 debug 层，而是 explainability contract
+- 依赖图治理深线当前应稳定成三件事：高扇入入口必须薄、共享真相必须小、不可避免脏边必须显式隔离；这比单纯追求 DRY 或文件更碎更重要
+- 宿主分析当前必须稳定成三层写法：协议全集、控制平面主路径、consumer subset；不能再把 schema、执行面与消费面混成同一层
+- `worker_status / external_metadata` 当前必须按 durability surface 叙述，而不是 telemetry；resume、reconnect 与 stale-write rejection 都依赖它
+- “单一权威”当前必须继续与“单一全景表示”分开叙述；多消费者系统共享的是权威合同，不是同一种展示或请求表示
+- 当前真相优先级高于表面连续性；初始化清旧 metadata、恢复期间丢弃 stale control/result 都应被视为成熟设计
+- prompt 魔力当前应继续稳定成“工作语法机”叙述：世界先被编成可治理语法，再被翻译成模型可行动的 protocol surface
+- 安全与省 token 当前应继续稳定成 `Narrow / Later / Outside` 三种统一动作，不要退回“成本优化”和“安全防护”两套分裂叙述
+- 源码先进性当前应继续稳定成“可演化内核 / 熵治理”叙述：新增 feature 时 authority、transition、boundary、dependency 必须仍然可控
+- 目录优化当前应继续沿“问题入口先于目录入口”的方向推进；导航层应承载高阶设计母线，而不只是文件索引
+- prompt 深线当前还应继续稳定成“语义压缩器”叙述：目标不是更短文本，而是更高密度的行动语义
+- 安全与省 token 当前还应继续稳定成“资源宪法 / 资源主权”叙述：runtime 统一分配能力、时间、注意力与权威
+- 源码先进性当前还应继续稳定成“演化制度设计”叙述：系统的高级感来自始终保留下一次重构可能性
 - 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
 - 主入口、navigation 与专题 README 必须和正文同步更新，否则蓝皮书会先在检索层失真
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述

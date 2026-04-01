@@ -38,6 +38,8 @@
 16. `philosophy/39-治理必须落到字节级确定性：上下文准入优于功能堆叠.md`
 17. `philosophy/40-允许轻微陈旧，换取系统级确定性.md`
 18. `philosophy/41-渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明.md`
+19. `architecture/56-能力可见性控制平面：Deferred、Delta与最小可见面.md`
+20. `philosophy/43-最小可见面优于全量能力表.md`
 
 这条线的核心结论是：
 
@@ -80,6 +82,8 @@
 14. `philosophy/31-可观测预算优于经验调优.md`
 15. `philosophy/37-统一第一性原理不等于单一预算实现.md`
 16. `philosophy/38-安全、治理、Token与Prompt稳定性本质上是同一收口问题.md`
+17. `architecture/56-能力可见性控制平面：Deferred、Delta与最小可见面.md`
+18. `philosophy/43-最小可见面优于全量能力表.md`
 
 这条线的核心结论是：
 
@@ -101,13 +105,15 @@
 4. `architecture/41-叶子模块、扼流点与循环依赖切断法.md`
 5. `architecture/44-单一真相入口：mode、tool pool、state与metadata的权威面.md`
 6. `architecture/49-插件双真相：enabled、editable scope与policy block不能混写.md`
-7. `philosophy/28-复杂性应该收敛到扼流点而不是散落到产品层.md`
-8. `philosophy/32-单一真相入口优于多处半真相实现.md`
-9. `philosophy/36-安装状态、启用状态与策略状态必须分层叙述.md`
+7. `architecture/59-协议全集、控制平面主路径与Consumer Subset：Claude Code的宿主三层治理.md`
+8. `philosophy/28-复杂性应该收敛到扼流点而不是散落到产品层.md`
+9. `philosophy/32-单一真相入口优于多处半真相实现.md`
+10. `philosophy/36-安装状态、启用状态与策略状态必须分层叙述.md`
+11. `philosophy/46-单一权威优于单一全景：多消费者系统必须分层暴露真相.md`
 
 这条线的核心结论是：
 
-- Claude Code 的稳定性不只来自更多状态外化，还来自关键状态必须只有一个真正可信的入口，并且插件这类多作用域对象必须显式承认自己有多重真相
+- Claude Code 的稳定性不只来自更多状态外化，还来自关键状态必须只有一个真正可信的入口，并且同一权威真相必须允许面向不同消费者的诚实投影
 
 ## 4. 对象化深线
 
@@ -200,12 +206,60 @@
 12. `philosophy/34-控制平面先于加载表现.md`
 13. `architecture/51-安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation.md`
 14. `architecture/52-Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法.md`
+15. `architecture/55-热点文件不是坏味道：Kernel、Shell与Chokepoint的分工.md`
+16. `architecture/58-让依赖图说真话：Leaf Module、Anti-Cycle Seam与Single-Source File.md`
 
 这条线的核心结论是：
 
 - Claude Code 值得学的不是“零技术债”，而是 contract-first、race-aware、runtime-first，以及把不变量收口进 chokepoint、authoritative surface 与 typed transition 的工程方向
 
-## 8. 真正的使用路线
+## 8. 可解释运行时深线
+
+如果问题是：
+
+- 为什么 Claude Code 的 observability 不是调试附属层。
+- 为什么 `context usage`、`worker_status/external_metadata`、`cache break detection` 应该放在同一张图里。
+- 为什么一个成熟 runtime 必须能解释“模型看到了什么”“系统现在处于什么状态”“为什么前缀稳定或失稳”。
+
+建议顺序：
+
+1. `api/32-Context Usage、Prompt预算与观测型宿主手册.md`
+2. `architecture/17-双通道状态同步与外部元数据回写.md`
+3. `architecture/43-预算观测、Context Suggestions与调优闭环.md`
+4. `architecture/46-Prompt稳定性解释层：cache-break detection的两阶段诊断器.md`
+5. `architecture/57-可解释运行时：输入真相、状态真相与稳定性真相.md`
+6. `architecture/60-恢复优先的双通道状态面：writeback、resume与reconnect一体化.md`
+7. `philosophy/31-可观测预算优于经验调优.md`
+8. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
+9. `philosophy/44-Observability不是Debug层，而是正式运行时合同.md`
+10. `philosophy/47-当前真相必须可恢复，而不是事后可观测.md`
+
+这条线的核心结论是：
+
+- Claude Code 的 observability 不是为了调试方便，而是为了让输入真相、状态真相与稳定性真相都变成正式运行时合同，并让当前真相在恢复后仍然站得住
+
+## 9. 依赖图诚实性深线
+
+如果问题是：
+
+- 为什么 Claude Code 会刻意做 leaf module、anti-cycle seam、single-source file。
+- 为什么依赖图治理不是代码洁癖，而是 runtime 正确性工程。
+- 为什么有时宁可少一点 DRY，也要让 import 边说真话。
+
+建议顺序：
+
+1. `architecture/41-叶子模块、扼流点与循环依赖切断法.md`
+2. `architecture/52-Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法.md`
+3. `architecture/58-让依赖图说真话：Leaf Module、Anti-Cycle Seam与Single-Source File.md`
+4. `philosophy/28-复杂性应该收敛到扼流点而不是散落到产品层.md`
+5. `philosophy/42-成熟架构不是没有大文件，而是不把复杂性撒满全仓.md`
+6. `philosophy/45-先让依赖关系诚实，再让抽象显得优雅.md`
+
+这条线的核心结论是：
+
+- Claude Code 的模块化不是拆分数量竞赛，而是持续让高扇入入口更薄、共享真相更小、脏边更可见
+
+## 10. 真正的使用路线
 
 如果你的目标不是研究，而是把 Claude Code 真正用顺：
 
@@ -219,7 +273,7 @@
 
 - 最佳使用方式不是写更长 prompt，而是先选对 runtime 形态
 
-## 9. 最后一句
+## 11. 最后一句
 
 如果你只想记一个阅读原则：
 

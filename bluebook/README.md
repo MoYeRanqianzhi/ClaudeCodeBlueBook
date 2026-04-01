@@ -63,7 +63,7 @@
 - 再读 [08-能力全集、公开度与成熟度矩阵](08-%E8%83%BD%E5%8A%9B%E5%85%A8%E9%9B%86%E3%80%81%E5%85%AC%E5%BC%80%E5%BA%A6%E4%B8%8E%E6%88%90%E7%86%9F%E5%BA%A6%E7%9F%A9%E9%98%B5.md)
 - 再读 [api/README](api/README.md)
 - 先用 [api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面](api/30-%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BA%A7%E8%83%BD%E5%8A%9B%E5%9C%B0%E5%9B%BE%EF%BC%9Acommands%E3%80%81tools%E3%80%81services%E3%80%81%E7%8A%B6%E6%80%81%E4%B8%8E%E5%AE%BF%E4%B8%BB%E5%B9%B3%E9%9D%A2.md) 校准能力地形
-- 最后顺着 `13 -> 14 -> 15 -> 16 -> 17 -> 20 -> 26 -> 28 -> 31` 读宿主闭环、治理型 API 与失败修复语义
+- 最后顺着 `13 -> 14 -> 15 -> 17 -> 59 -> 16 -> 60 -> 20 -> 26 -> 28 -> 31` 读宿主闭环、治理型 API 与失败修复语义
 
 ### 4. 想研究 prompt、知识、记忆与上下文经济
 
@@ -140,8 +140,8 @@
 - 行动：`architecture/05` -> `architecture/11` -> `architecture/19`
 - 记忆：`architecture/09` -> `api/09` -> `architecture/29`
 - 协作：`architecture/10` -> `architecture/30` -> `architecture/34` -> `guides/02`
-- 宿主：`api/13` -> `architecture/13` -> `philosophy/09`
-- 恢复：`architecture/06` -> `architecture/16` -> `architecture/25`
+- 宿主：`api/13` -> `architecture/13` -> `architecture/59` -> `philosophy/46`
+- 恢复：`architecture/06` -> `architecture/16` -> `architecture/25` -> `architecture/60` -> `philosophy/47`
 - 预算：`architecture/21` -> `architecture/32` -> `architecture/37` -> `architecture/50` -> `philosophy/22` -> `philosophy/37` -> `philosophy/38`
 - 治理：`04` -> `api/28` -> `guides/04` -> `guides/05` -> `architecture/50` -> `architecture/51` -> `philosophy/27` -> `philosophy/38` -> `risk/README`
 - 目录拓扑：`05` -> `api/23` -> `api/29` -> `api/30`
@@ -192,6 +192,10 @@
 
 - `architecture/51 -> architecture/53 -> philosophy/38 -> philosophy/41`
 
+### 为什么最小可见面比全量能力表更强
+
+- `architecture/56 -> philosophy/41 -> philosophy/43`
+
 ### 为什么宿主接入不能只看 `query(prompt)`
 
 - `05 -> api/30 -> api/02 -> api/13 -> api/15 -> api/16 -> api/20 -> api/31`
@@ -208,14 +212,59 @@
 
 - `01 -> api/30 -> architecture/20 -> architecture/40 -> architecture/41 -> architecture/47 -> architecture/52 -> philosophy/23 -> philosophy/29 -> philosophy/39`
 
+### 为什么 `query.ts`、`REPL.tsx` 很大，却不等于架构失控
+
+- `architecture/52 -> architecture/55 -> philosophy/42`
+
+### 为什么 observability 不是调试附属层，而是正式运行时合同
+
+- `architecture/17 -> architecture/43 -> architecture/57 -> philosophy/31 -> philosophy/33 -> philosophy/44`
+
+### 为什么依赖图诚实性比抽象洁癖更重要
+
+- `architecture/41 -> architecture/58 -> philosophy/28 -> philosophy/45`
+
 ### 想按深度专题而不是按目录来读
 
 - 先读 [navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理](navigation/03-%E6%B7%B1%E5%BA%A6%E4%B8%93%E9%A2%98%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E5%BA%95%E7%9B%98%E4%B8%8E%E6%B2%BB%E7%90%86.md)
+- 想直接看高阶设计母线，再读 [navigation/05-设计母线导航：工作语法、反扩张与可演化内核](navigation/05-%E8%AE%BE%E8%AE%A1%E6%AF%8D%E7%BA%BF%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%B7%A5%E4%BD%9C%E8%AF%AD%E6%B3%95%E3%80%81%E5%8F%8D%E6%89%A9%E5%BC%A0%E4%B8%8E%E5%8F%AF%E6%BC%94%E5%8C%96%E5%86%85%E6%A0%B8.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
 
-- `architecture/13 -> architecture/17 -> architecture/40 -> philosophy/11 -> philosophy/29`
+- `architecture/13 -> architecture/17 -> architecture/40 -> architecture/59 -> architecture/60 -> philosophy/11 -> philosophy/29 -> philosophy/47`
+
+### 为什么单一权威不等于单一全景
+
+- `philosophy/10 -> architecture/14 -> architecture/59 -> philosophy/32 -> philosophy/46`
+
+### 为什么状态回写不是遥测附属层
+
+- `architecture/17 -> architecture/25 -> architecture/57 -> architecture/60 -> philosophy/44 -> philosophy/47`
+
+### 为什么 Claude Code 的 prompt 魔力更像工作语法机
+
+- `architecture/39 -> architecture/53 -> architecture/54 -> architecture/61 -> philosophy/39 -> philosophy/48`
+
+### 为什么真正强的Prompt不是信息更多，而是行动语义更密
+
+- `architecture/61 -> architecture/64 -> philosophy/48 -> philosophy/51`
+
+### 为什么安全设计和省Token设计其实是同一个系统
+
+- `architecture/37 -> architecture/51 -> architecture/56 -> architecture/62 -> philosophy/38 -> philosophy/49`
+
+### 为什么模型不是资源的主人，Runtime才是
+
+- `architecture/62 -> architecture/65 -> philosophy/49 -> philosophy/52`
+
+### 为什么 Claude Code 值得学的是“可演化内核”
+
+- `architecture/41 -> architecture/52 -> architecture/58 -> architecture/63 -> philosophy/45 -> philosophy/50`
+
+### 为什么好架构不是更会重构，而是始终保留重构可能性
+
+- `architecture/63 -> architecture/66 -> philosophy/50 -> philosophy/53`
 
 ### 为什么调优上下文前必须先看预算结构
 

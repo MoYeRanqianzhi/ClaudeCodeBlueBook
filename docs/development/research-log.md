@@ -1989,6 +1989,102 @@
 - `claude-code-source-code/src/utils/settings/types.ts:542-548`
 - `claude-code-source-code/src/utils/permissions/permissions.ts:1417-1445`
 
+### AM. 热点大文件并不自动等于坏架构
+
+- `query.ts` 的“大”主要承载 turn kernel 的时序耦合；旁边显式抽出了 `config/deps/tokenBudget/stopHooks/queryContext` 这些 seams，说明它是在集中合法复杂度，而不是放任膨胀。
+- `REPL.tsx` 的“大”主要承载前台 orchestration shell：query lifecycle、transcript/fullscreen 分支、scroll chokepoint、modal/overlay 组合，而不是把所有 contract 内联。
+- `assembleToolPool()` 统一 REPL 与 runAgent 的工具装配，`QueryGuard` 统一本地 query in-flight 真相，说明热点文件周围的 single source of truth 很强。
+- `analytics/index.ts`、`pluginPolicy.ts`、`types/permissions.ts`、`mcp/normalization.ts` 这类 leaf modules 说明仓库在主动用纯模块给热点文件兜边界、断循环。
+- 更成熟的工程判断不该停留在“文件大小”，而应升级到“这个文件是不是 kernel / shell / chokepoint，它周围有没有 leaf modules 和 anti-cycle seams”。
+
+证据：
+
+- `claude-code-source-code/src/query.ts:181-260`
+- `claude-code-source-code/src/query.ts:365-420`
+- `claude-code-source-code/src/query.ts:659-865`
+- `claude-code-source-code/src/query.ts:1065-1085`
+- `claude-code-source-code/src/query.ts:1678-1735`
+- `claude-code-source-code/src/query/config.ts:1-43`
+- `claude-code-source-code/src/query/deps.ts:1-37`
+- `claude-code-source-code/src/utils/queryContext.ts:1-40`
+- `claude-code-source-code/src/QueryEngine.ts:175-210`
+- `claude-code-source-code/src/screens/REPL.tsx:889-907`
+- `claude-code-source-code/src/screens/REPL.tsx:4392-4408`
+- `claude-code-source-code/src/screens/REPL.tsx:4548-4566`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-108`
+- `claude-code-source-code/src/tools.ts:329-345`
+- `claude-code-source-code/src/hooks/useMergedTools.ts:1-30`
+- `claude-code-source-code/src/services/mcp/config.ts:337-365`
+- `claude-code-source-code/src/services/mcp/normalization.ts:1-20`
+- `claude-code-source-code/src/services/analytics/index.ts:1-40`
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-18`
+- `claude-code-source-code/src/types/permissions.ts:1-36`
+
+### AN. “模型可见世界”本身就是控制平面
+
+- `shouldDefer/alwaysLoad` 已经把“哪些工具应该首轮可见、哪些能力应延后暴露”写进工具协议，而不是散落在调用点里。
+- `ToolSearch + discovered set + filteredTools` 说明 Claude Code 更像在维护一个逐步扩张的可见世界，而不是一张静态能力表。
+- deferred tools delta、agent listing delta、MCP instructions delta 共同说明：高波动能力描述应走尾部增量，而不是主前缀常驻。
+- compaction 后重播这些 delta，说明它们不是 UI 附属提示，而是会话级 capability state continuation。
+- trusted sources / managed-only source gating 则说明：不仅“哪些能力可见”被治理，“谁有资格定义这些能力可见性”也被治理。
+
+证据：
+
+- `claude-code-source-code/src/Tool.ts:438-448`
+- `claude-code-source-code/src/tools/ToolSearchTool/prompt.ts:53-105`
+- `claude-code-source-code/src/utils/toolSearch.ts:385-430`
+- `claude-code-source-code/src/utils/toolSearch.ts:540-560`
+- `claude-code-source-code/src/services/api/claude.ts:1118-1175`
+- `claude-code-source-code/src/utils/toolSchemaCache.ts:1-20`
+- `claude-code-source-code/src/utils/attachments.ts:1455-1505`
+- `claude-code-source-code/src/utils/attachments.ts:1550-1575`
+- `claude-code-source-code/src/services/compact/compact.ts:563-575`
+- `claude-code-source-code/src/utils/managedEnv.ts:93-115`
+- `claude-code-source-code/src/utils/settings/types.ts:468-525`
+- `claude-code-source-code/src/utils/permissions/permissionsLoader.ts:27-40`
+- `claude-code-source-code/src/services/mcp/config.ts:337-360`
+- `claude-code-source-code/src/utils/settings/pluginOnlyPolicy.ts:1-30`
+- `claude-code-source-code/src/tools/AgentTool/runAgent.ts:108-130`
+- `claude-code-source-code/src/tools/AgentTool/runAgent.ts:548-565`
+
+### AO. Observability 在 Claude Code 里是正式 explainability contract
+
+- `get_context_usage` 不是 debug dump，而是正式 control schema，且返回的不是一个 token 数字，而是 `systemPromptSections`、`messageBreakdown`、`mcpTools`、`agents` 等分层对象。
+- `analyzeContext.ts` 说明这些对象的语义是“模型真正看到的输入真相”，而不是 REPL raw history 的近似统计。
+- `sessionState` 与 `onChangeAppState` 说明状态真相不能只靠事件流推理；`pending_action`、`permission_mode`、`task_summary` 都有快照回写职责。
+- `promptCacheBreakDetection` 通过 pre-call snapshot + post-call token validation 构成稳定性因果解释层，说明 cache miss 被当成正式运行时真相处理。
+- `contextSuggestions` 会继续消费这些观测对象并翻译成建议，说明 observability 不是展示层，而是闭环的一部分。
+
+证据：
+
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:175-305`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1325-1370`
+- `claude-code-source-code/src/state/onChangeAppState.ts:23-70`
+- `claude-code-source-code/src/utils/sessionState.ts:90-135`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:240-315`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:430-520`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:640-705`
+- `claude-code-source-code/src/utils/contextSuggestions.ts:30-90`
+
+### AP. 依赖图诚实性是 Claude Code 的正式工程方法
+
+- `queryContext.ts` 不是 leaf，而是受控 anti-cycle seam；它把高位共享依赖关进小房间，并限制只有入口层文件可用。
+- `analytics/index.ts`、`pluginPolicy.ts`、`normalization.ts`、`systemPromptType.ts` 都在展示同一纪律：高扇入共享面必须极薄，最好 zero/low-dep。
+- `types/permissions.ts` 说明更成熟的做法是先抽类型中心，再让实现层依赖它，而不是类型和实现互相咬住。
+- `mcpSkillBuilders.ts` 与 `teammateViewHelpers.ts` 证明这不是个别文件习惯，而是仓库级 graph discipline：宁可 registry leaf、宁可内联 type check，也不随手闭合 runtime cycle。
+- 更强的总结不是“模块多”，而是“import 边表达真实责任，而不是哪里顺手就从哪里拿”。
+
+证据：
+
+- `claude-code-source-code/src/utils/queryContext.ts:1-40`
+- `claude-code-source-code/src/services/analytics/index.ts:1-40`
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-18`
+- `claude-code-source-code/src/services/mcp/normalization.ts:1-20`
+- `claude-code-source-code/src/utils/systemPromptType.ts:1-12`
+- `claude-code-source-code/src/types/permissions.ts:1-36`
+- `claude-code-source-code/src/skills/mcpSkillBuilders.ts:1-40`
+- `claude-code-source-code/src/state/teammateViewHelpers.ts:1-20`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。
@@ -2003,6 +2099,20 @@
 - `bluebook/architecture/README.md`
 - `bluebook/guides/README.md`
 - `bluebook/philosophy/README.md`
+
+## 本轮新增结论
+
+- 宿主分析当前必须稳定成三层写法：协议全集、控制平面主路径、consumer subset；不能再把 schema、执行面与消费面混成同一层。
+- `controlSchemas.ts` 治理的是可表达协议全集，`StructuredIO + print.ts (+ RemoteIO)` 才是权威控制主路径，bridge / direct connect / `RemoteSessionManager` 是不同宽度的诚实子集。
+- `worker_status / requires_action_details / external_metadata` 当前必须按 durability surface 叙述，而不是 telemetry；resume、reconnect 与 stale-write rejection 都直接依赖它。
+- `WorkerStateUploader` 的 `1 inflight + 1 pending`、无限重试、RFC 7396 merge 与 `null` 删除语义，说明作者在保护“可恢复当前真相”的最终收敛，而不是在做 best-effort 状态上报。
+- “单一权威”必须与“单一全景表示”分开叙述；多消费者系统共享的是权威合同，不是同一种展示或请求表示。
+- prompt 魔力当前必须稳定成“世界先被编成可治理语法，再让模型思考”；`systemPromptSections`、tool schema、protocol transcript、delta attachments、deferred discovery 都属于这条工作语法链。
+- 安全设计与省 token 设计当前必须用 `Narrow / Later / Outside` 三种动作统一叙述；它们是在控制模型可达世界的宽度、时间与位置，而不是分别做两套优化。
+- 源码先进性当前必须继续上升到“可演化内核 / 熵治理”层：config、deps、state machine、leaf module 都是在回答增长时 authority、transition、boundary、dependency 如何不裂。
+- prompt 深线当前还应继续上升到“语义压缩器”层：session memory、prompt suggestion、stop hooks、tool result fate freeze 共同保住的是可继续行动的语义，而不是更短原文。
+- 安全与省 token 深线当前还应继续上升到“资源宪法”层：runtime 在统一分配能力、时间、注意力与权威，模型不是资源主权拥有者。
+- 源码先进性当前还应继续上升到“演化制度设计”层：注释、leaf module、snapshot、narrow extraction 在保留下一次重构可能性，不只是体现作者经验。
 
 ## 下一步待办
 

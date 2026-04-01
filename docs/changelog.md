@@ -2,6 +2,13 @@
 
 ## 2026-04-02
 
+- 新增《语义压缩器：Claude Code如何把工作现场压成可继续行动的最小语义体》《资源宪法：Claude Code如何统一分配能力、时间、注意力与权威》《演化制度设计：Claude Code如何在增长中保留重构可能性》《真正强的Prompt不是信息更多，而是行动语义更密》《模型不是资源的主人，Runtime才是》《好架构不是更会重构，而是始终保留重构可能性》，并补强《设计哲学》《运行时契约、知识层与生态边界》《第一性原理与苏格拉底反思》及多处索引，把“语义压缩 / 资源主权 / 重构可能性”提升为第二序主线
+- 新增《工作语法机：Claude Code如何把软件工程世界编译成模型可行动的Protocol Surface》《Narrow、Later、Outside：安全设计与省Token设计的统一反扩张运行时》《可演化内核：Claude Code如何在持续增长中维持不变量》《先把世界压缩成可治理语法，再让模型变聪明》《真正的省Token不是压缩文本，而是改变世界暴露给模型的方式》《先进源码不是一开始就完美分层，而是增长时仍能守住不变量》《设计母线导航：工作语法、反扩张与可演化内核》，并回写主索引、专题 README、导航 README 与《第一性原理与苏格拉底反思》，把“工作语法 / 反扩张 / 可演化内核”提升为新的高阶主线
+- 新增《协议全集、控制平面主路径与Consumer Subset：Claude Code的宿主三层治理》《恢复优先的双通道状态面：writeback、resume与reconnect一体化》《单一权威优于单一全景：多消费者系统必须分层暴露真相》《当前真相必须可恢复，而不是事后可观测》，并回写主索引、专题 README 与深度专题导航，把“协议全集 / 权威主路径 / consumer subset”与“writeback = durability”提升为正式主线
+- 新增《让依赖图说真话：Leaf Module、Anti-Cycle Seam与Single-Source File》《先让依赖关系诚实，再让抽象显得优雅》，并在深度专题导航中新增“依赖图诚实性深线”，把 leaf module、anti-cycle seam、single-source file 收束成独立主线
+- 新增《可解释运行时：输入真相、状态真相与稳定性真相》《Observability不是Debug层，而是正式运行时合同》，并在专题导航里新增“可解释运行时深线”，把 `context usage`、状态回写与 cache break 诊断正式收束成同一主线
+- 新增《能力可见性控制平面：Deferred、Delta与最小可见面》《最小可见面优于全量能力表》，并把 `architecture/README` 从七平面重编为八平面，把工程与底盘单独分组，把“模型此刻看见什么”正式提升为一条独立主线
+- 新增《热点文件不是坏味道：Kernel、Shell与Chokepoint的分工》《成熟架构不是没有大文件，而是不把复杂性撒满全仓》，把源码先进性深线继续推进到“合法复杂度中心 / 伪模块化 / 大文件职责命名”这一层
 - 新增《从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放》《渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明》《目录职责、规范入口与兼容别名页说明》，并把根目录旧命名页明确降为兼容入口，把 prompt 深线推进到 protocol transcript 与 progressive exposure 这一层
 - 新增《稳定前缀、动态尾部与旁路Fork：Claude Code的Cache-Aware Prompt Assembly》《允许轻微陈旧，换取系统级确定性》，把 prompt 深线继续推进到“cache-aware 组装链 + 允许轻微陈旧以换取整体确定性”的层次
 - 新增《Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法》《治理必须落到字节级确定性：上下文准入优于功能堆叠》，把“源码先进性”推进到不变量治理五法，把“prompt 魔力”推进到上下文准入编译器这一层
