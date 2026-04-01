@@ -30,12 +30,15 @@
   - 上下文压缩与恢复链
   - compact 算法与上下文管理细拆
   - PromptInput 与消息渲染链
+  - 会话存储、记忆与回溯状态面
   - 上下文经济学
   - 安全观与边界设计
   - 产品实验与演化方法
   - 构建期开关、运行期开关与兼容层
+  - 状态优先于对话
   - 内置命令域索引
   - 命令字段与可用性索引
+  - 工具协议与 ToolUseContext
 
 ## 已确认事实
 
@@ -51,6 +54,8 @@
 - 产品能力需要按 build-time gate、runtime gate、compat shim 三层理解
 - `services/compact/*` 体现的是多层上下文工作集管理，不是单一摘要算法
 - `Command` 类型空间远大于内置 slash command 本身，很多高级字段主要为技能、插件、MCP 命令面准备
+- Claude Code 的状态面至少应按 transcript、memory、session memory、metadata、file history / rewind 分层理解
+- “对话只是入口，状态才是运行时真相”已经成为当前蓝皮书的一个核心解释轴
 
 ## 后续章节建议
 
@@ -67,6 +72,7 @@
 11. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
 12. 给 MCP 状态、命令 availability、控制请求做时序化视图
 13. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
+14. 把工具面、状态面、控制面、演化面都做成清晰阅读路径
 
 ## 编写约定
 
