@@ -36,6 +36,7 @@
 - 连接面：MCP config scope、transport、auth、reconnect/toggle 与连接治理。
 - 扩展面：skills、commands、agents、plugins、hooks、MCP、LSP、output styles。
 - 状态面：transcript、memory、session、rewind、compact/recovery。
+- 真相面：`worker_status`、`requires_action_details`、`external_metadata`、state writeback。
 - 演化面：feature gate、runtime gate、compat shim、默认值与 rollout。
 
 ## 按专题链阅读
@@ -45,6 +46,7 @@
 - 适配器链：`api/14-Control子类型与宿主适配矩阵.md` -> `architecture/14-Bridge与宿主适配器分层.md` -> `philosophy/10-协议全集不等于适配器子集.md`
 - 时序链：`api/15-Control协议字段对照与宿主接入样例.md` -> `architecture/15-宿主路径时序与竞速.md` -> `philosophy/11-显式失败优于假成功.md`
 - 闭环链：`api/16-SDK消息与Control闭环对照表.md` -> `architecture/16-远程恢复与重连状态机.md` -> `philosophy/12-闭环状态机优于单向请求.md`
+- 状态同步链：`api/17-状态消息、外部元数据与宿主消费矩阵.md` -> `architecture/17-双通道状态同步与外部元数据回写.md` -> `philosophy/13-外化状态优于推断状态.md`
 - 事件链：`api/04-SDK消息与事件字典.md` -> `api/11-SDKMessageSchema与事件流手册.md` -> `architecture/12-ClaudeAPI与流式工具执行.md` -> `philosophy/06-状态优先于对话.md`
 - 连接链：`api/03-MCP与远程传输.md` -> `api/12-MCP配置与连接状态机.md` -> `architecture/03-扩展能力与远程架构.md` -> `philosophy/08-统一配置语言优于扩展孤岛.md`
 - 策略链：`architecture/05-权限系统与安全状态机.md` -> `architecture/11-权限系统全链路与Auto Mode.md` -> `philosophy/03-安全观与边界设计.md`
@@ -62,6 +64,7 @@
 - 适配器：`api/14-Control子类型与宿主适配矩阵.md`、`architecture/14-Bridge与宿主适配器分层.md`、`philosophy/10-协议全集不等于适配器子集.md`
 - 时序：`api/15-Control协议字段对照与宿主接入样例.md`、`architecture/15-宿主路径时序与竞速.md`、`philosophy/11-显式失败优于假成功.md`
 - 闭环：`api/16-SDK消息与Control闭环对照表.md`、`architecture/16-远程恢复与重连状态机.md`、`philosophy/12-闭环状态机优于单向请求.md`
+- 真相：`api/17-状态消息、外部元数据与宿主消费矩阵.md`、`architecture/17-双通道状态同步与外部元数据回写.md`、`philosophy/13-外化状态优于推断状态.md`
 - 恢复：`architecture/06-上下文压缩与恢复链.md`、`architecture/12-ClaudeAPI与流式工具执行.md`、`philosophy/06-状态优先于对话.md`
 
 ## 正式主线与兼容入口
@@ -112,6 +115,9 @@
 - [SDK 消息与 Control 闭环对照表](api/16-SDK%E6%B6%88%E6%81%AF%E4%B8%8EControl%E9%97%AD%E7%8E%AF%E5%AF%B9%E7%85%A7%E8%A1%A8.md)
 - [远程恢复与重连状态机](architecture/16-%E8%BF%9C%E7%A8%8B%E6%81%A2%E5%A4%8D%E4%B8%8E%E9%87%8D%E8%BF%9E%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 - [闭环状态机优于单向请求](philosophy/12-%E9%97%AD%E7%8E%AF%E7%8A%B6%E6%80%81%E6%9C%BA%E4%BC%98%E4%BA%8E%E5%8D%95%E5%90%91%E8%AF%B7%E6%B1%82.md)
+- [状态消息、外部元数据与宿主消费矩阵](api/17-%E7%8A%B6%E6%80%81%E6%B6%88%E6%81%AF%E3%80%81%E5%A4%96%E9%83%A8%E5%85%83%E6%95%B0%E6%8D%AE%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E7%9F%A9%E9%98%B5.md)
+- [双通道状态同步与外部元数据回写](architecture/17-%E5%8F%8C%E9%80%9A%E9%81%93%E7%8A%B6%E6%80%81%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%A4%96%E9%83%A8%E5%85%83%E6%95%B0%E6%8D%AE%E5%9B%9E%E5%86%99.md)
+- [外化状态优于推断状态](philosophy/13-%E5%A4%96%E5%8C%96%E7%8A%B6%E6%80%81%E4%BC%98%E4%BA%8E%E6%8E%A8%E6%96%AD%E7%8A%B6%E6%80%81.md)
 - [SDKMessageSchema 与事件流手册](api/11-SDKMessageSchema%E4%B8%8E%E4%BA%8B%E4%BB%B6%E6%B5%81%E6%89%8B%E5%86%8C.md)
 - [MCP 配置与连接状态机](api/12-MCP%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%BF%9E%E6%8E%A5%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 - [ClaudeAPI 与流式工具执行](architecture/12-ClaudeAPI%E4%B8%8E%E6%B5%81%E5%BC%8F%E5%B7%A5%E5%85%B7%E6%89%A7%E8%A1%8C.md)

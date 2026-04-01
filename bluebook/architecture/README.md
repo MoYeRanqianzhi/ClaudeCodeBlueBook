@@ -18,6 +18,7 @@
 14. [Bridge 与宿主适配器分层](14-Bridge%E4%B8%8E%E5%AE%BF%E4%B8%BB%E9%80%82%E9%85%8D%E5%99%A8%E5%88%86%E5%B1%82.md)
 15. [宿主路径时序与竞速](15-%E5%AE%BF%E4%B8%BB%E8%B7%AF%E5%BE%84%E6%97%B6%E5%BA%8F%E4%B8%8E%E7%AB%9E%E9%80%9F.md)
 16. [远程恢复与重连状态机](16-%E8%BF%9C%E7%A8%8B%E6%81%A2%E5%A4%8D%E4%B8%8E%E9%87%8D%E8%BF%9E%E7%8A%B6%E6%80%81%E6%9C%BA.md)
+17. [双通道状态同步与外部元数据回写](17-%E5%8F%8C%E9%80%9A%E9%81%93%E7%8A%B6%E6%80%81%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%A4%96%E9%83%A8%E5%85%83%E6%95%B0%E6%8D%AE%E5%9B%9E%E5%86%99.md)
 
 这几章和 `bluebook/` 的区别是：
 
@@ -35,3 +36,4 @@
 - 想看 bridge、direct-connect、remote-session 各自位于哪一层：`14`
 - 想看本地 host、bridge、direct-connect、remote-session 的时序与 race：`15`
 - 想看 401/4001/4003、epoch rebuild、worker_status 回写等恢复状态机：`16`
+- 想看 `SDKMessage`、`worker_status`、`external_metadata` 如何组成双通道状态真相：`17`

@@ -25,6 +25,7 @@
 - [SDK 消息与事件字典](04-SDK%E6%B6%88%E6%81%AF%E4%B8%8E%E4%BA%8B%E4%BB%B6%E5%AD%97%E5%85%B8.md)
 - [会话与状态 API 手册](09-%E4%BC%9A%E8%AF%9D%E4%B8%8E%E7%8A%B6%E6%80%81API%E6%89%8B%E5%86%8C.md)
 - [SDKMessageSchema 与事件流手册](11-SDKMessageSchema%E4%B8%8E%E4%BA%8B%E4%BB%B6%E6%B5%81%E6%89%8B%E5%86%8C.md)
+- [状态消息、外部元数据与宿主消费矩阵](17-%E7%8A%B6%E6%80%81%E6%B6%88%E6%81%AF%E3%80%81%E5%A4%96%E9%83%A8%E5%85%83%E6%95%B0%E6%8D%AE%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E7%9F%A9%E9%98%B5.md)
 
 ## 扩展与连接面
 
@@ -46,6 +47,7 @@
 - 需要命令域全景时先看 `01 -> 05 -> 06 -> 07`
 - 需要工具协议与 runtime context 时再看 `02 -> 08`
 - 需要 runtime event stream、宿主可观测信号与消息族时再看 `04 -> 11 -> ../architecture/12`
+- 需要区分事件时间线、`worker_status`、`external_metadata` 与 consumer subset 时再看 `11 -> 17 -> ../architecture/17 -> ../philosophy/13`
 - 需要 session/state surface、runtime truth 与恢复接口时再看 `09 -> ../architecture/09 -> ../philosophy/06`
 - 需要统一扩展面、frontmatter 字段、plugin/agent trust boundary 与 MCP 连接平面时再看 `03 -> 10 -> 12 -> ../philosophy/08`
 - 需要 host control protocol、`control_request` / `control_response`、远程 host 适配路径时再看 `13 -> ../architecture/13 -> ../philosophy/09`

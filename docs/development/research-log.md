@@ -253,6 +253,35 @@
 - `claude-code-source-code/src/cli/remoteIO.ts:71-85`
 - `claude-code-source-code/src/cli/remoteIO.ts:155-196`
 
+### Q. Runtime truth is dual-channel, not pure event stream
+
+- Claude Code 对宿主暴露的不只是 `SDKMessage` 时间线，还包括 `worker_status`、`requires_action_details` 与 `external_metadata` 快照。
+- `notifySessionStateChanged(...)`、`notifySessionMetadataChanged(...)`、`onChangeAppState(...)` 构成统一 choke point，让 permission mode、pending action、model 等状态不会因为 mutation path 分散而失同步。
+- `WorkerStateUploader` 说明这不是零散 side effect，而是明确设计过的 merge / retry / last-value 语义。
+- `CCRClient.initialize()` 还会主动清理 stale `pending_action` / `task_summary`，说明“恢复后真相”是状态面的一部分，而不是后处理。
+
+证据:
+
+- `claude-code-source-code/src/utils/sessionState.ts:1-149`
+- `claude-code-source-code/src/state/onChangeAppState.ts:19-91`
+- `claude-code-source-code/src/cli/remoteIO.ts:111-168`
+- `claude-code-source-code/src/cli/transports/ccrClient.ts:476-545`
+- `claude-code-source-code/src/cli/transports/ccrClient.ts:645-662`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:1-118`
+
+### R. Consumer subset and compatibility shim are part of the API reality
+
+- `coreSchemas.ts` 声明了消息全集，但 `sdkMessageAdapter`、direct connect、`messages/mappers.ts` 明确证明并非每个 consumer 都完整消费它。
+- `auth_status`、`tool_use_summary`、`rate_limit_event` 在 remote adapter 里会被主动忽略。
+- `system:local_command_output` 甚至会被降级成 `assistant`，以适配尚未认识该 subtype 的下游。
+- 因此“schema 存在”与“所有宿主完整渲染”必须继续分开写。
+
+证据:
+
+- `claude-code-source-code/src/remote/sdkMessageAdapter.ts:223-267`
+- `claude-code-source-code/src/utils/messages/mappers.ts:145-196`
+- `claude-code-source-code/src/server/directConnectManager.ts:100-109`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -292,6 +321,10 @@
 - 已补远程恢复与重连状态机，把 `4001` / `4003` / `401` / epoch rebuild / worker_status 回写收拢成分层恢复模型
 - 已补“闭环状态机优于单向请求”专题，把 Claude Code 从宿主控制面进一步提升为 control-loop runtime
 - 已把 `bluebook/` 目录进一步扩展为宿主链、适配器链、时序链、闭环链、事件链、连接链、策略链、会话链、协作链九条阅读线
+- 已补状态消息、外部元数据与宿主消费矩阵，把 `SDKMessage`、`worker_status`、`external_metadata` 与 consumer subset 放到同一张 API 图里
+- 已补双通道状态同步与外部元数据回写专题，把事件时间线与状态快照回写收拢成统一架构图
+- 已补“外化状态优于推断状态”专题，把宿主真相从“自己猜”提升为“主动外化”
+- 已把 `bluebook/` 目录进一步扩展为状态同步链，并把“真相面”加入第一性原理阅读路径
 
 ## 下一步待办
 
@@ -299,6 +332,7 @@
 - 补一章“多 Agent 协作模式与 prompt 模板”
 - 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
 - 给 `SDKMessageSchema` 与 control subtype 做更细的 message-response crosswalk casebook，并补更细宿主接入样例
+- 给 `SDKMessage`、`worker_status`、`external_metadata` 做更细字段级 crosswalk，并补 consumer subset 对照表
 - 补 `REPL.tsx` / Ink 更细的 transcript mode、message actions、PromptInput 交互链
 - 补命令索引的更细表格化版本与 workflow/dynamic skills 交叉核对
 - 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
@@ -325,3 +359,4 @@
 - bridge 当前虽然明显宽于 direct connect / `RemoteSessionManager`，但仍不是完整 control subtype 全集；后续必须避免把它直接等同于完整 SDK host。
 - 显式失败路径目前已经能被解释为架构原则，但尚未对 `authRecoveryInFlight`、transport close code、prompt timeout 等失败语义做完全文级整理，后续仍要继续补。
 - request / response / follow-on message 的闭环主线已经建立，但仍未把所有 subtype 做成统一 casebook；后续若继续深化，应防止不同闭环粒度混写。
+- 运行时真相的双通道主线已经建立，但仍未把每个状态项都标清“时间线 / 快照 / 恢复 / consumer subset”四层；后续若继续深化，应防止再次退回单通道叙述。

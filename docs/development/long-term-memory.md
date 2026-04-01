@@ -60,6 +60,9 @@
   - SDK 消息与 Control 闭环对照表
   - 远程恢复与重连状态机
   - 闭环状态机优于单向请求
+  - 状态消息、外部元数据与宿主消费矩阵
+  - 双通道状态同步与外部元数据回写
+  - 外化状态优于推断状态
 
 ## 已确认事实
 
@@ -96,6 +99,8 @@
 - 在宿主控制面里，“显式失败优于假成功”已经可以视为稳定设计原则：unknown subtype error、outbound-only error、abort reject 都是在防状态错觉
 - Claude Code 的宿主协议更适合按 request / response / follow-on SDKMessage 的闭环来理解，而不是按单次 RPC 理解
 - 远程恢复更适合按 `SessionsWebSocket`、`remoteBridgeCore`、`RemoteIO` 三层状态机理解，而不是一句“自动重连”
+- Claude Code 的宿主状态真相更适合按“双通道”理解：`SDKMessage` 负责时间线，`worker_status` / `external_metadata` 负责当前快照与恢复后真相
+- consumer subset 与 compatibility shim 是 API 现实的一部分：schema 全集并不等于每个 adapter / UI 都完整消费
 
 ## 后续章节建议
 
@@ -106,11 +111,12 @@
 5. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
 6. 给 bridge / direct-connect / remote-session 三类宿主路径做更细时序图
 7. 把 `SDKMessageSchema` 与 control subtype 做成更细的 message-response crosswalk casebook
-8. 给 MCP 状态、命令 availability、控制请求做时序化视图
-9. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
-10. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
-11. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、控制面、演化面都做成清晰阅读路径
-12. 把 plugin manifest / marketplace / MCPB / LSP / channels 的产品边界继续写实
+8. 把 `SDKMessage`、`worker_status`、`external_metadata`、consumer subset 做成更细字段级 crosswalk
+9. 给 MCP 状态、命令 availability、控制请求做时序化视图
+10. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
+11. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
+12. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、演化面都做成清晰阅读路径
+13. 把 plugin manifest / marketplace / MCPB / LSP / channels 的产品边界继续写实
 
 ## 编写约定
 
@@ -128,3 +134,4 @@
 - 写宿主适配相关结论时，必须同时标出“协议全集”“控制平面主路径”“当前适配器子集”三层
 - 写时序相关结论时，必须同时标出成功路径、失败路径，以及删除失败路径后会出现的假成功错觉
 - 写闭环相关结论时，必须同时标出 request、response、follow-on SDKMessage，以及哪个信号才算真正闭环完成
+- 写状态相关结论时，必须同时标出事件时间线、当前快照、恢复路径，以及 consumer subset

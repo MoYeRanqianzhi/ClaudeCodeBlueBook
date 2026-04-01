@@ -17,7 +17,7 @@
 4. 自动化接口: headless、SDK、structured IO。
 5. 宿主控制接口: control request/response、permission handshake、interrupt、settings/context/state control。
 6. 远程接口: remote session、bridge、CCR transport、direct connect。
-7. 状态接口: transcript、session、context usage、settings、rewind。
+7. 状态接口: transcript、session、context usage、settings、rewind、`worker_status` / `external_metadata`。
 
 Claude Code 强的原因之一，是它几乎把这七类接口都做成了正式模块，而不是临时拼接。
 
@@ -173,9 +173,35 @@ MCP 在 Claude Code 中既是 client 扩展总线，也是可反向暴露的 ser
 - `claude-code-source-code/src/server/directConnectManager.ts:40-210`
 - `claude-code-source-code/src/remote/RemoteSessionManager.ts:87-323`
 
+### 2.8 状态回写与宿主真相面
+
+Claude Code 的状态接口不只体现在：
+
+- `SDKMessage`
+- session API
+- transcript / rewind
+
+还体现在宿主真相回写面：
+
+- `worker_status`
+- `requires_action_details`
+- `external_metadata.pending_action`
+- `external_metadata.permission_mode`
+- `external_metadata.model`
+
+这说明它给宿主暴露的不是“只读消息流”，而是“消息流 + 可查询状态快照”的组合 API。
+
+证据：
+
+- `claude-code-source-code/src/utils/sessionState.ts:1-149`
+- `claude-code-source-code/src/state/onChangeAppState.ts:19-91`
+- `claude-code-source-code/src/cli/transports/ccrClient.ts:476-545`
+- `claude-code-source-code/src/cli/transports/ccrClient.ts:645-662`
+- `claude-code-source-code/src/cli/remoteIO.ts:111-168`
+
 ## 3. API 支持不是一层，而是四层
 
-从源码看，Claude Code 的“API”至少可以拆成四层。
+从源码看，Claude Code 的“API”至少可以拆成五层。
 
 ### 3.1 人类命令 API
 
@@ -220,13 +246,24 @@ MCP 在 Claude Code 中既是 client 扩展总线，也是可反向暴露的 ser
 - session ingress
 - CCR v2 internal events
 
+### 3.5 状态同步 API
+
+这是最容易被漏写，但对宿主最关键的一层:
+
+- `worker_status`
+- `requires_action_details`
+- `external_metadata`
+- delivery ack
+- 远程恢复后的状态回写
+
 ## 4. 目前蓝皮书对“API 支持”的增强点
 
-这一轮相较前一版，补的是三类缺口:
+这一轮相较前一版，补的是四类缺口:
 
 1. 不再只讲架构，还补命令、工具、SDK、MCP、远程这些实际接口面。
 2. 不再把 public/gated/internal 混写，而是把接口边界和能力边界分开。
 3. 不再只看“模型如何调用工具”，而是把“外部宿主如何控制 CLI”也纳入 API 版图。
+4. 不再把宿主集成只写成事件流，而开始把状态回写、外部 metadata 与 consumer subset 也纳入 API 版图。
 
 ## 5. 仍然存在的边界
 
@@ -258,9 +295,11 @@ MCP 在 Claude Code 中既是 client 扩展总线，也是可反向暴露的 ser
 10. 把 transport plane、control plane、host adapter 三层边界继续做成对照图。
 11. 把 control subtype 的协议全集与宿主适配矩阵并排写清。
 12. 把 control protocol 的字段级对照表与最小宿主接入样例补齐。
-13. 把 bridge / direct-connect / remote-session 的时序与 race 语义单独拆章。
-14. 把 request / response / follow-on `SDKMessage` 的闭环关系补成对照表。
-15. 把远程恢复、401/4001/4003、epoch rebuild、worker_status 回写单独写成状态机。
+13. 把 `SDKMessage`、`worker_status`、`requires_action_details`、`external_metadata` 做成状态同步矩阵。
+14. 把 adapter 忽略、过滤、降级消息的 consumer subset 与兼容层写清。
+15. 把 `set_model` / `apply_flag_settings` / `set_permission_mode` / `can_use_tool` 做成字段级闭环 casebook。
+16. 把 `system:status`、`session_state_changed`、`worker_status`、`external_metadata` 的真相边界继续做成对照图。
+17. 把 transcript、internal events、external metadata 三条恢复路径继续写清它们各自负责的状态范围。
 
 本章对应的详细接口文档:
 
@@ -276,6 +315,7 @@ MCP 在 Claude Code 中既是 client 扩展总线，也是可反向暴露的 ser
 - [Control 子类型与宿主适配矩阵](api/14-Control%E5%AD%90%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%AE%BF%E4%B8%BB%E9%80%82%E9%85%8D%E7%9F%A9%E9%98%B5.md)
 - [Control 协议字段对照与宿主接入样例](api/15-Control%E5%8D%8F%E8%AE%AE%E5%AD%97%E6%AE%B5%E5%AF%B9%E7%85%A7%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%8E%A5%E5%85%A5%E6%A0%B7%E4%BE%8B.md)
 - [SDK 消息与 Control 闭环对照表](api/16-SDK%E6%B6%88%E6%81%AF%E4%B8%8EControl%E9%97%AD%E7%8E%AF%E5%AF%B9%E7%85%A7%E8%A1%A8.md)
+- [状态消息、外部元数据与宿主消费矩阵](api/17-%E7%8A%B6%E6%80%81%E6%B6%88%E6%81%AF%E3%80%81%E5%A4%96%E9%83%A8%E5%85%83%E6%95%B0%E6%8D%AE%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E7%9F%A9%E9%98%B5.md)
 - [Agent SDK 与控制协议](api/02-Agent%20SDK%E4%B8%8E%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE.md)
 - [MCP 与远程传输](api/03-MCP%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BC%A0%E8%BE%93.md)
 - [SDK 消息与事件字典](api/04-SDK%E6%B6%88%E6%81%AF%E4%B8%8E%E4%BA%8B%E4%BB%B6%E5%AD%97%E5%85%B8.md)
