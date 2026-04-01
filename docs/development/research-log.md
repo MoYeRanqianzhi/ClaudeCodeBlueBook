@@ -689,6 +689,38 @@
 - `claude-code-source-code/src/services/policyLimits/index.ts:1-23`
 - `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:14-57`
 
+### AG. The control plane can be compressed into a small set of axioms
+
+- `bridgeEnabled.ts` 与 `trustedDevice.ts` 共同说明：权限越高，所需证明越重；claude.ai 订阅、profile scope、组织画像、fresh login、trusted device 并不是可替换条件，而是高能力路径的叠加证明。
+- `growthbook.ts` 的 `checkGate_CACHED_OR_BLOCKING()` 明确承认 stale `false` 比 stale `true` 更容易伤害用户，因此对负向拒绝要求更强的新鲜证据；这是“高伤害拒绝比低伤害放行更谨慎”的工程化版本。
+- `permissions.ts` 与 `shadowedRuleDetection.ts` 说明这种非对称甚至内建在本地权限引擎里：deny / ask / safety check 先于 bypass 和 allow 执行，宽规则遮蔽窄 allow 还会被显式标记。
+- `auth.ts` 的 `validateForceLoginOrg()` 强制去服务端 profile 验证组织，而不是信任本地可写配置；这表明本地真相只能作加速层，不能单独承担裁决。
+- `settings.ts` 与 `permissionsLoader.ts` 还说明治理看重“来源可信度”而不只看“配置内容”本身：危险模式和某些自动行为不信任 projectSettings，企业托管策略甚至可以直接压缩规则面。
+- `remoteManagedSettings/index.ts` 的 fail-open 与 `securityCheck.tsx` 的危险设置强确认共同表明：治理策略必须按风险等级切换，不能一律 fail-open 或一律 fail-closed。
+- `errors.ts`、`mcp/client.ts`、`toolExecution.ts` 则说明系统允许局部撤权、局部失效、局部恢复，而不是把所有失败压成单一“封禁”语义。
+- `diagLogs.ts` 进一步说明可解释性也要受限于低敏感证据面；平台并没有把“无限采集”当成成熟风控的前提。
+- 更高抽象看，这套系统的核心哲学可以压缩为：持续证明、分层放权、受控恢复、低敏感诊断。
+
+证据:
+
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:15-88`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:17-27`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:87-98`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:891-929`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1-220`
+- `claude-code-source-code/src/utils/permissions/shadowedRuleDetection.ts:1-220`
+- `claude-code-source-code/src/utils/auth.ts:1917-1969`
+- `claude-code-source-code/src/utils/settings/settings.ts:1-220`
+- `claude-code-source-code/src/utils/permissions/permissionsLoader.ts:1-220`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:431-500`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:604-604`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:14-57`
+- `claude-code-source-code/src/services/api/errors.ts:838-878`
+- `claude-code-source-code/src/services/api/errors.ts:1109-1132`
+- `claude-code-source-code/src/services/mcp/client.ts:319-360`
+- `claude-code-source-code/src/services/tools/toolExecution.ts:1599-1623`
+- `claude-code-source-code/src/utils/diagLogs.ts:13-30`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -737,6 +769,7 @@
 - 已补风控专题 `27-判定非对称性矩阵：哪些路径要快放行，哪些路径必须硬收口`，把 selective failure semantics 从设计哲学下沉成工程对照表
 - 已补风控专题 `26-苏格拉底附录：如果要把误伤再降一半，系统该追问什么`，把平台改进、研究方法反思与用户自保标准提升到“总伤害最小化”视角
 - 已补风控专题 `41-连续性成本最小化：把合规自保从故障窗口扩展到日常操作纪律`，把分钟级故障纪律上升到日级、周级的连续性成本管理
+- 已补风控专题 `42-风控最小公理与反公理：从第一性原理重写控制面哲学`，把散点机制压缩成持续证明、分层放权、受控恢复的最小原则集
 
 ## 下一步待办
 
