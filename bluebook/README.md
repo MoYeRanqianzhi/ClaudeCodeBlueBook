@@ -74,8 +74,8 @@
 ### 6. 想研究源码结构与工程先进性
 
 - 先读 `01 -> 03 -> 05`
-- 再读 `api/30 -> api/34 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38 -> architecture/40 -> architecture/41 -> architecture/44 -> architecture/47`
-- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29 -> philosophy/32 -> philosophy/34`
+- 再读 `api/30 -> api/34 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38 -> architecture/40 -> architecture/41 -> architecture/44 -> architecture/47 -> architecture/52`
+- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29 -> philosophy/32 -> philosophy/34 -> philosophy/39`
 
 ## 按第一性原理阅读
 
@@ -94,7 +94,7 @@
 
 ### 为什么 prompt 看起来有魔力
 
-- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> architecture/46 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30 -> philosophy/33 -> philosophy/38`
+- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> architecture/46 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30 -> philosophy/33 -> philosophy/38 -> philosophy/39`
 
 ### 为什么它不像普通 IDE 插件
 
@@ -118,7 +118,11 @@
 
 ### 为什么 prompt 稳定性不是性能技巧而是运行时治理
 
-- `06 -> architecture/31 -> architecture/39 -> architecture/46 -> architecture/50 -> philosophy/30 -> philosophy/33 -> philosophy/38`
+- `06 -> architecture/31 -> architecture/39 -> architecture/46 -> architecture/50 -> philosophy/30 -> philosophy/33 -> philosophy/38 -> philosophy/39`
+
+### 为什么 Claude Code 的 prompt 更像上下文准入编译器
+
+- `07 -> architecture/28 -> architecture/39 -> architecture/46 -> philosophy/18 -> philosophy/30 -> philosophy/39`
 
 ### 为什么宿主接入不能只看 `query(prompt)`
 
@@ -131,6 +135,10 @@
 ### 为什么目录结构本身也在暴露能力拓扑
 
 - `05 -> api/24 -> api/29 -> api/30 -> architecture/24 -> architecture/38`
+
+### 为什么高级工程不在功能数量，而在不变量治理
+
+- `01 -> api/30 -> architecture/20 -> architecture/40 -> architecture/41 -> architecture/47 -> architecture/52 -> philosophy/23 -> philosophy/29 -> philosophy/39`
 
 ### 想按深度专题而不是按目录来读
 

@@ -1153,6 +1153,57 @@
 - `claude-code-source-code/src/utils/analyzeContext.ts:1353-1363`
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:175-215`
 
+### AG. 源码先进性更适合压成“五种不变量治理模式”
+
+- `query.ts` 更像 query runtime 的 control-plane chokepoint，而不是单纯的大文件；预算、snip、microcompact、恢复、续轮都被明确排进一条主链。
+- `QueryGuard`、`tokenBudget` 与 `state.transition.reason` 说明 Claude Code 偏爱 typed decision / typed transition，而不是让复杂状态继续留在布尔泥团里。
+- `normalizeMessagesForAPI()` 与 `claude.ts` 请求出口承担的是 authoritative surface，负责统一合法化 API 输入与最终 wire shape。
+- `QueryGuard` generation、防 orphan tool_use、frozen replacement fate 等都说明它按 race-aware runtime 写代码，默认真实世界会中断、重试、fallback、resume。
+- `Tool.ts` 把模型序列化、UI 渲染、搜索文本、自动分类输入拆开，说明它理解的“工具”是 contract，而不是一个 `call()`。
+
+证据：
+
+- `claude-code-source-code/src/query.ts:265-420`
+- `claude-code-source-code/src/query.ts:1190-1235`
+- `claude-code-source-code/src/query.ts:1700-1735`
+- `claude-code-source-code/src/query/config.ts:1-43`
+- `claude-code-source-code/src/query/deps.ts:1-37`
+- `claude-code-source-code/src/QueryEngine.ts:176-210`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-108`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-75`
+- `claude-code-source-code/src/utils/messages.ts:1989-2045`
+- `claude-code-source-code/src/utils/messages.ts:5200-5225`
+- `claude-code-source-code/src/Tool.ts:158-220`
+- `claude-code-source-code/src/Tool.ts:362-390`
+- `claude-code-source-code/src/Tool.ts:557-595`
+- `claude-code-source-code/src/Tool.ts:717-750`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:835-924`
+
+### AH. Prompt 魔力更像“上下文准入编译器”
+
+- 更强的表述不是“稳定前缀”，而是 Claude Code 有一条上下文准入编译链：先定来源优先级，再分 static/dynamic block，再锁定 schema/header 字节，最后在 compaction 时保住意图连续性。
+- `buildEffectiveSystemPrompt()`、dynamic boundary、`splitSysPromptPrefix()` 与 `buildSystemPromptBlocks()` 共同说明 prompt 是编译产物，不是字符串拼接结果。
+- `toolSchemaCache` 与 sticky beta headers 说明 prompt 稳定性真正追求的是 byte-level determinism，而不只是语义大致相同。
+- `yoloClassifier` 复用 `CLAUDE.md` 前缀给权限分类器，说明安全判断也必须共享同一上下文准入真相。
+- compaction 在保留 primary intent / current work / next step 的同时，去掉会重注入的 attachments，并在 context-collapse 接管时主动让路，说明“省 token”不能破坏语义连续性。
+
+证据：
+
+- `claude-code-source-code/src/utils/settings/settings.ts:798-812`
+- `claude-code-source-code/src/utils/settings/types.ts:542-548`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1417-1445`
+- `claude-code-source-code/src/utils/systemPrompt.ts:25-56`
+- `claude-code-source-code/src/constants/prompts.ts:343-355`
+- `claude-code-source-code/src/constants/prompts.ts:492-510`
+- `claude-code-source-code/src/utils/api.ts:300-340`
+- `claude-code-source-code/src/utils/toolSchemaCache.ts:1-20`
+- `claude-code-source-code/src/services/api/claude.ts:1405-1418`
+- `claude-code-source-code/src/services/api/claude.ts:3213-3234`
+- `claude-code-source-code/src/utils/permissions/yoloClassifier.ts:442-470`
+- `claude-code-source-code/src/services/compact/prompt.ts:55-95`
+- `claude-code-source-code/src/services/compact/compact.ts:120-215`
+- `claude-code-source-code/src/services/compact/autoCompact.ts:200-220`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。

@@ -33,10 +33,11 @@
 11. `philosophy/30-Prompt不是一次请求而是可复用前缀资产.md`
 12. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
 13. `philosophy/38-安全、治理、Token与Prompt稳定性本质上是同一收口问题.md`
+14. `philosophy/39-治理必须落到字节级确定性：上下文准入优于功能堆叠.md`
 
 这条线的核心结论是：
 
-- prompt 魔力来自装配顺序、工具 ABI、缓存边界、状态晚绑定、协作语法、辅助循环共享同一前缀资产，以及系统把稳定前缀本身当成运行时治理对象
+- prompt 魔力来自装配顺序、工具 ABI、缓存边界、状态晚绑定、协作语法、辅助循环共享同一前缀资产，以及系统把 prompt 做成一条受治理的上下文准入编译链
 
 ## 2. 反扩张与预算实现深线
 
@@ -184,10 +185,11 @@
 11. `philosophy/29-反竞争条件意识优于局部功能正确.md`
 12. `philosophy/34-控制平面先于加载表现.md`
 13. `architecture/51-安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation.md`
+14. `architecture/52-Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法.md`
 
 这条线的核心结论是：
 
-- Claude Code 值得学的不是“零技术债”，而是 contract-first、race-aware、runtime-first，以及连输入边界都要先建立 authority control plane 的偿债方向
+- Claude Code 值得学的不是“零技术债”，而是 contract-first、race-aware、runtime-first，以及把不变量收口进 chokepoint、authoritative surface 与 typed transition 的工程方向
 
 ## 8. 真正的使用路线
 

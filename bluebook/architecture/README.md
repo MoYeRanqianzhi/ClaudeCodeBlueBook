@@ -75,6 +75,7 @@
 - [47-QueryGuard：本地查询生命周期的authoritative state machine](47-QueryGuard%EF%BC%9A%E6%9C%AC%E5%9C%B0%E6%9F%A5%E8%AF%A2%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84authoritative%20state%20machine.md)
 - [48-远程失败不是断线重连：401、Close Code与环境恢复的分层语义](48-%E8%BF%9C%E7%A8%8B%E5%A4%B1%E8%B4%A5%E4%B8%8D%E6%98%AF%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E%EF%BC%9A401%E3%80%81Close%20Code%E4%B8%8E%E7%8E%AF%E5%A2%83%E6%81%A2%E5%A4%8D%E7%9A%84%E5%88%86%E5%B1%82%E8%AF%AD%E4%B9%89.md)
 - [49-插件双真相：enabled、editable scope与policy block不能混写](49-%E6%8F%92%E4%BB%B6%E5%8F%8C%E7%9C%9F%E7%9B%B8%EF%BC%9Aenabled%E3%80%81editable%20scope%E4%B8%8Epolicy%20block%E4%B8%8D%E8%83%BD%E6%B7%B7%E5%86%99.md)
+- [52-Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法](52-Chokepoint%E3%80%81Typed%20Decision%E3%80%81Authoritative%20Surface%E3%80%81Race-Aware%20Runtime%E4%B8%8EContract-First%EF%BC%9AClaude%20Code%E6%BA%90%E7%A0%81%E5%85%88%E8%BF%9B%E6%80%A7%E4%BA%94%E6%B3%95.md)
 
 ## 推荐阅读链
 
@@ -92,6 +93,7 @@
 - 想看远程失败为什么也是分层语义而不是“断线重连”：`15 -> 16 -> 48`
 - 想看 REPL 前台如何从状态机深入到 search / selection / scroll 协同：`04 -> 26 -> 35`
 - 想看源码先进性、热点与产品边界：`20 -> 24 -> 26 -> 27 -> 33 -> 38`
+- 想看源码先进性如何继续压成几种可迁移工程模式：`20 -> 40 -> 41 -> 47 -> 52`
 - 想看显式失败、重复响应与 race-aware runtime：`13 -> 14 -> 17 -> 40`
 - 想看 chokepoint、leaf module 与依赖图切断：`24 -> 38 -> 41`
 - 想看预算为什么会走向“观测 -> 建议 -> 调优”的闭环：`21 -> 37 -> 43`
