@@ -785,12 +785,51 @@
 - `claude-code-source-code/src/utils/settings/types.ts:896-920`
 - `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-17`
 
+### X. API atlas 已补到“目录级拓扑 + 动态暴露即预算”这一层
+
+- `api/30` 把 `commands / tools / services / state-query / host control / frontend truth` 六个目录级平面挂到一张能力地图上，避免“字段表齐了，但能力地形仍然不可检索”。
+- `api/29` 现在应继续按“动态能力暴露本身也是 token 策略”理解：减少无关工具、稳定 built-in 前缀、把 deferred tools 外移，本质上都在维护 prompt cache 与预算主路径。
+
+证据：
+
+- `claude-code-source-code/src/commands.ts:224-320`
+- `claude-code-source-code/src/tools.ts:193-367`
+- `claude-code-source-code/src/query.ts:369-395`
+- `claude-code-source-code/src/services/api/claude.ts:1270-1355`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-158`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-220`
+- `claude-code-source-code/src/cli/structuredIO.ts:135-162`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/Task.ts:6-124`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+
+### Y. 第一性原理实践最稳的写法应收敛为“目标、预算、对象、边界、回写”
+
+- 使用专题不能继续只给命令清单，而应先帮助读者判断：这次任务属于 session、task/workflow、worktree 还是单轮对话。
+- 更稳的 Claude Code 使用法不是“写更长 prompt”，而是先分目标预算、动作预算、上下文预算、协作预算与治理预算，再决定哪些状态进入稳定层，哪些状态只做晚绑定。
+- 长任务若仍被当作多轮聊天来承载，通常已经在逆用 Claude Code；应升级到 task/workflow/session/worktree 等正式对象。
+
+证据：
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:29-122`
+- `claude-code-source-code/src/query/tokenBudget.ts:3-92`
+- `claude-code-source-code/src/utils/toolPool.ts:43-79`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-158`
+- `claude-code-source-code/src/Task.ts:6-106`
+- `claude-code-source-code/src/utils/task/framework.ts:101-117`
+- `claude-code-source-code/src/utils/sessionStorage.ts:231-258`
+- `claude-code-source-code/src/utils/worktree.ts:1022-1058`
+- `claude-code-source-code/src/utils/transcriptSearch.ts:9-59`
+- `claude-code-source-code/src/ink/selection.ts:19-63`
+- `claude-code-source-code/src/services/mcp/channelPermissions.ts:1-18`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:15-73`
+
 ## 下一步待办
 
 - 补 `SDKMessage`、control、snapshot、recovery 四面统一的宿主实现 casebook
 - 补 `query.ts` / `sessionStorage.ts` / `REPL.tsx` / `replBridge.ts` 四个热点文件的债务与分层图
 - 补 bridge / direct-connect / remote-session 三类宿主路径的更细时序图
-- 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
+- 继续把源码目录级索引表下沉到二级目录与代表性叶子模块
 - 补 `REPL.tsx` / Ink 更细的 transcript mode、message actions、PromptInput 交互链
 - 补命令索引的更细表格化版本与 workflow/dynamic skills 交叉核对
 - 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
