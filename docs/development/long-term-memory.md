@@ -161,6 +161,10 @@
   - Observability不是Debug层，而是正式运行时合同
   - 让依赖图说真话：Leaf Module、Anti-Cycle Seam与Single-Source File
   - 先让依赖关系诚实，再让抽象显得优雅
+  - 协议全集、控制平面主路径与Consumer Subset：Claude Code的宿主三层治理
+  - 恢复优先的双通道状态面：writeback、resume与reconnect一体化
+  - 单一权威优于单一全景：多消费者系统必须分层暴露真相
+  - 当前真相必须可恢复，而不是事后可观测
   - CLAUDE.md、记忆层与上下文注入实践
   - Channels、托管策略与组织级治理实践
   - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
@@ -232,6 +236,10 @@
 - “模型此刻看见什么”现在应被视为正式设计平面，而不是 prompt 细节；最小可见面、deferred、delta 与 source gating 是同一 visibility control plane 的不同投影
 - observability 深线当前应稳定成三层：输入真相、状态真相、稳定性真相；它不是 debug 层，而是 explainability contract
 - 依赖图治理深线当前应稳定成三件事：高扇入入口必须薄、共享真相必须小、不可避免脏边必须显式隔离；这比单纯追求 DRY 或文件更碎更重要
+- 宿主分析当前必须稳定成三层写法：协议全集、控制平面主路径、consumer subset；不能再把 schema、执行面与消费面混成同一层
+- `worker_status / external_metadata` 当前必须按 durability surface 叙述，而不是 telemetry；resume、reconnect 与 stale-write rejection 都依赖它
+- “单一权威”当前必须继续与“单一全景表示”分开叙述；多消费者系统共享的是权威合同，不是同一种展示或请求表示
+- 当前真相优先级高于表面连续性；初始化清旧 metadata、恢复期间丢弃 stale control/result 都应被视为成熟设计
 - 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
 - 主入口、navigation 与专题 README 必须和正文同步更新，否则蓝皮书会先在检索层失真
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述

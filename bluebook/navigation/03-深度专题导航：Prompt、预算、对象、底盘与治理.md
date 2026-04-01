@@ -105,13 +105,15 @@
 4. `architecture/41-叶子模块、扼流点与循环依赖切断法.md`
 5. `architecture/44-单一真相入口：mode、tool pool、state与metadata的权威面.md`
 6. `architecture/49-插件双真相：enabled、editable scope与policy block不能混写.md`
-7. `philosophy/28-复杂性应该收敛到扼流点而不是散落到产品层.md`
-8. `philosophy/32-单一真相入口优于多处半真相实现.md`
-9. `philosophy/36-安装状态、启用状态与策略状态必须分层叙述.md`
+7. `architecture/59-协议全集、控制平面主路径与Consumer Subset：Claude Code的宿主三层治理.md`
+8. `philosophy/28-复杂性应该收敛到扼流点而不是散落到产品层.md`
+9. `philosophy/32-单一真相入口优于多处半真相实现.md`
+10. `philosophy/36-安装状态、启用状态与策略状态必须分层叙述.md`
+11. `philosophy/46-单一权威优于单一全景：多消费者系统必须分层暴露真相.md`
 
 这条线的核心结论是：
 
-- Claude Code 的稳定性不只来自更多状态外化，还来自关键状态必须只有一个真正可信的入口，并且插件这类多作用域对象必须显式承认自己有多重真相
+- Claude Code 的稳定性不只来自更多状态外化，还来自关键状态必须只有一个真正可信的入口，并且同一权威真相必须允许面向不同消费者的诚实投影
 
 ## 4. 对象化深线
 
@@ -226,13 +228,15 @@
 3. `architecture/43-预算观测、Context Suggestions与调优闭环.md`
 4. `architecture/46-Prompt稳定性解释层：cache-break detection的两阶段诊断器.md`
 5. `architecture/57-可解释运行时：输入真相、状态真相与稳定性真相.md`
-6. `philosophy/31-可观测预算优于经验调优.md`
-7. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
-8. `philosophy/44-Observability不是Debug层，而是正式运行时合同.md`
+6. `architecture/60-恢复优先的双通道状态面：writeback、resume与reconnect一体化.md`
+7. `philosophy/31-可观测预算优于经验调优.md`
+8. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
+9. `philosophy/44-Observability不是Debug层，而是正式运行时合同.md`
+10. `philosophy/47-当前真相必须可恢复，而不是事后可观测.md`
 
 这条线的核心结论是：
 
-- Claude Code 的 observability 不是为了调试方便，而是为了让输入真相、状态真相与稳定性真相都变成正式运行时合同
+- Claude Code 的 observability 不是为了调试方便，而是为了让输入真相、状态真相与稳定性真相都变成正式运行时合同，并让当前真相在恢复后仍然站得住
 
 ## 9. 依赖图诚实性深线
 

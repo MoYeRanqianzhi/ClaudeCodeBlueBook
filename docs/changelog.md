@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《协议全集、控制平面主路径与Consumer Subset：Claude Code的宿主三层治理》《恢复优先的双通道状态面：writeback、resume与reconnect一体化》《单一权威优于单一全景：多消费者系统必须分层暴露真相》《当前真相必须可恢复，而不是事后可观测》，并回写主索引、专题 README 与深度专题导航，把“协议全集 / 权威主路径 / consumer subset”与“writeback = durability”提升为正式主线
 - 新增《让依赖图说真话：Leaf Module、Anti-Cycle Seam与Single-Source File》《先让依赖关系诚实，再让抽象显得优雅》，并在深度专题导航中新增“依赖图诚实性深线”，把 leaf module、anti-cycle seam、single-source file 收束成独立主线
 - 新增《可解释运行时：输入真相、状态真相与稳定性真相》《Observability不是Debug层，而是正式运行时合同》，并在专题导航里新增“可解释运行时深线”，把 `context usage`、状态回写与 cache break 诊断正式收束成同一主线
 - 新增《能力可见性控制平面：Deferred、Delta与最小可见面》《最小可见面优于全量能力表》，并把 `architecture/README` 从七平面重编为八平面，把工程与底盘单独分组，把“模型此刻看见什么”正式提升为一条独立主线

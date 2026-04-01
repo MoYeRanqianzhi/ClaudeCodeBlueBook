@@ -24,6 +24,7 @@
 - [17-双通道状态同步与外部元数据回写](17-%E5%8F%8C%E9%80%9A%E9%81%93%E7%8A%B6%E6%80%81%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%A4%96%E9%83%A8%E5%85%83%E6%95%B0%E6%8D%AE%E5%9B%9E%E5%86%99.md)
 - [25-会话持久化、TaskOutput与Sidechain恢复图](25-%E4%BC%9A%E8%AF%9D%E6%8C%81%E4%B9%85%E5%8C%96%E3%80%81TaskOutput%E4%B8%8ESidechain%E6%81%A2%E5%A4%8D%E5%9B%BE.md)
 - [29-知识层栈：CLAUDE.md、Session Memory、Auto-memory与Attachments](29-%E7%9F%A5%E8%AF%86%E5%B1%82%E6%A0%88%EF%BC%9ACLAUDE.md%E3%80%81Session%20Memory%E3%80%81Auto-memory%E4%B8%8EAttachments.md)
+- [60-恢复优先的双通道状态面：writeback、resume与reconnect一体化](60-%E6%81%A2%E5%A4%8D%E4%BC%98%E5%85%88%E7%9A%84%E5%8F%8C%E9%80%9A%E9%81%93%E7%8A%B6%E6%80%81%E9%9D%A2%EF%BC%9Awriteback%E3%80%81resume%E4%B8%8Ereconnect%E4%B8%80%E4%BD%93%E5%8C%96.md)
 
 ### 4. Prompt 与上下文成形平面
 
@@ -85,11 +86,12 @@
 - [27-能力迁移、Consumer Subset与产品边界](27-%E8%83%BD%E5%8A%9B%E8%BF%81%E7%A7%BB%E3%80%81Consumer%20Subset%E4%B8%8E%E4%BA%A7%E5%93%81%E8%BE%B9%E7%95%8C.md)
 - [48-远程失败不是断线重连：401、Close Code与环境恢复的分层语义](48-%E8%BF%9C%E7%A8%8B%E5%A4%B1%E8%B4%A5%E4%B8%8D%E6%98%AF%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E%EF%BC%9A401%E3%80%81Close%20Code%E4%B8%8E%E7%8E%AF%E5%A2%83%E6%81%A2%E5%A4%8D%E7%9A%84%E5%88%86%E5%B1%82%E8%AF%AD%E4%B9%89.md)
 - [49-插件双真相：enabled、editable scope与policy block不能混写](49-%E6%8F%92%E4%BB%B6%E5%8F%8C%E7%9C%9F%E7%9B%B8%EF%BC%9Aenabled%E3%80%81editable%20scope%E4%B8%8Epolicy%20block%E4%B8%8D%E8%83%BD%E6%B7%B7%E5%86%99.md)
+- [59-协议全集、控制平面主路径与Consumer Subset：Claude Code的宿主三层治理](59-%E5%8D%8F%E8%AE%AE%E5%85%A8%E9%9B%86%E3%80%81%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%E4%B8%BB%E8%B7%AF%E5%BE%84%E4%B8%8EConsumer%20Subset%EF%BC%9AClaude%20Code%E7%9A%84%E5%AE%BF%E4%B8%BB%E4%B8%89%E5%B1%82%E6%B2%BB%E7%90%86.md)
 
 ## 推荐阅读链
 
 - 想看 turn runtime 内核：`02 -> 12 -> 22`
-- 想看状态与恢复：`06 -> 09 -> 16 -> 17 -> 25`
+- 想看状态与恢复：`06 -> 09 -> 16 -> 17 -> 25 -> 60`
 - 想看 prompt contract：`18 -> 21 -> 28 -> 29`
 - 想看 prompt 魔力如何落到五层合同、缓存断点与协作语法：`18 -> 28 -> 31 -> 36`
 - 想看 prompt 为什么还能继续下沉到可重放、可观测、可编译：`28 -> 31 -> 36 -> 39`
@@ -101,13 +103,15 @@
 - 想看多 Agent、workflow 与隔离：`10 -> 30 -> 34 -> 45`
 - 想看权限、安全、治理与 token 预算统一图：`05 -> 11 -> 19 -> 23 -> 32 -> 37 -> 50 -> 51`
 - 想看安全为什么更像输入边界控制平面而不是事后检查：`19 -> 23 -> 50 -> 51`
-- 想看宿主控制平面：`13 -> 14 -> 15 -> 17`
+- 想看宿主控制平面：`13 -> 14 -> 15 -> 17 -> 59`
+- 想看为什么协议全集、权威主路径与 consumer subset 必须分三层：`13 -> 14 -> 17 -> 59`
 - 想看远程失败为什么也是分层语义而不是“断线重连”：`15 -> 16 -> 48`
 - 想看 REPL 前台如何从状态机深入到 search / selection / scroll 协同：`04 -> 26 -> 35`
 - 想看源码先进性、热点与产品边界：`20 -> 24 -> 33 -> 38`
 - 想看源码先进性如何继续压成几种可迁移工程模式：`20 -> 40 -> 41 -> 47 -> 52`
 - 想看热点大文件为什么仍然可以是成熟架构的一部分：`52 -> 55`
 - 想看预算观测、状态回写与 cache break 为什么应该合写成“可解释运行时”：`17 -> 43 -> 57`
+- 想看状态回写为什么属于 durability，而不是遥测附属层：`17 -> 25 -> 57 -> 60`
 - 想看 leaf module、anti-cycle seam 与 single-source file 为什么同属一套依赖图治理方法：`41 -> 58`
 - 想看显式失败、重复响应与 race-aware runtime：`13 -> 14 -> 17 -> 40`
 - 想看 chokepoint、leaf module 与依赖图切断：`24 -> 38 -> 41`

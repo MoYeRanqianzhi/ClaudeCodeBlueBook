@@ -1402,6 +1402,14 @@
 - `bluebook/guides/README.md`
 - `bluebook/philosophy/README.md`
 
+## 本轮新增结论
+
+- 宿主分析当前必须稳定成三层写法：协议全集、控制平面主路径、consumer subset；不能再把 schema、执行面与消费面混成同一层。
+- `controlSchemas.ts` 治理的是可表达协议全集，`StructuredIO + print.ts (+ RemoteIO)` 才是权威控制主路径，bridge / direct connect / `RemoteSessionManager` 是不同宽度的诚实子集。
+- `worker_status / requires_action_details / external_metadata` 当前必须按 durability surface 叙述，而不是 telemetry；resume、reconnect 与 stale-write rejection 都直接依赖它。
+- `WorkerStateUploader` 的 `1 inflight + 1 pending`、无限重试、RFC 7396 merge 与 `null` 删除语义，说明作者在保护“可恢复当前真相”的最终收敛，而不是在做 best-effort 状态上报。
+- “单一权威”必须与“单一全景表示”分开叙述；多消费者系统共享的是权威合同，不是同一种展示或请求表示。
+
 ## 下一步待办
 
 - 补 `SDKMessage`、control、snapshot、recovery 四面统一的宿主实现 casebook

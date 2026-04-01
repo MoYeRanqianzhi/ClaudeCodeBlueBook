@@ -63,7 +63,7 @@
 - 再读 [08-能力全集、公开度与成熟度矩阵](08-%E8%83%BD%E5%8A%9B%E5%85%A8%E9%9B%86%E3%80%81%E5%85%AC%E5%BC%80%E5%BA%A6%E4%B8%8E%E6%88%90%E7%86%9F%E5%BA%A6%E7%9F%A9%E9%98%B5.md)
 - 再读 [api/README](api/README.md)
 - 先用 [api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面](api/30-%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BA%A7%E8%83%BD%E5%8A%9B%E5%9C%B0%E5%9B%BE%EF%BC%9Acommands%E3%80%81tools%E3%80%81services%E3%80%81%E7%8A%B6%E6%80%81%E4%B8%8E%E5%AE%BF%E4%B8%BB%E5%B9%B3%E9%9D%A2.md) 校准能力地形
-- 最后顺着 `13 -> 14 -> 15 -> 16 -> 17 -> 20 -> 26` 读宿主闭环
+- 最后顺着 `13 -> 14 -> 15 -> 17 -> 59 -> 16 -> 60 -> 20 -> 26` 读宿主闭环
 
 ### 4. 想研究 prompt、知识、记忆与上下文经济
 
@@ -90,8 +90,8 @@
 - 行动：`architecture/05` -> `architecture/11` -> `architecture/19`
 - 记忆：`architecture/09` -> `api/09` -> `architecture/29`
 - 协作：`architecture/10` -> `architecture/30` -> `architecture/34` -> `guides/02`
-- 宿主：`api/13` -> `architecture/13` -> `philosophy/09`
-- 恢复：`architecture/06` -> `architecture/16` -> `architecture/25`
+- 宿主：`api/13` -> `architecture/13` -> `architecture/59` -> `philosophy/46`
+- 恢复：`architecture/06` -> `architecture/16` -> `architecture/25` -> `architecture/60` -> `philosophy/47`
 - 预算：`architecture/21` -> `architecture/32` -> `architecture/37` -> `architecture/50` -> `philosophy/22` -> `philosophy/37` -> `philosophy/38`
 - 治理：`04` -> `api/28` -> `guides/04` -> `guides/05` -> `architecture/50` -> `architecture/51` -> `philosophy/27` -> `philosophy/38` -> `risk/README`
 - 目录拓扑：`05` -> `api/23` -> `api/29` -> `api/30`
@@ -181,7 +181,15 @@
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
 
-- `architecture/13 -> architecture/17 -> architecture/40 -> philosophy/11 -> philosophy/29`
+- `architecture/13 -> architecture/17 -> architecture/40 -> architecture/59 -> architecture/60 -> philosophy/11 -> philosophy/29 -> philosophy/47`
+
+### 为什么单一权威不等于单一全景
+
+- `philosophy/10 -> architecture/14 -> architecture/59 -> philosophy/32 -> philosophy/46`
+
+### 为什么状态回写不是遥测附属层
+
+- `architecture/17 -> architecture/25 -> architecture/57 -> architecture/60 -> philosophy/44 -> philosophy/47`
 
 ### 为什么调优上下文前必须先看预算结构
 
