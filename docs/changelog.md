@@ -28,3 +28,8 @@
 - 新增扩展 Frontmatter 与插件 Agent 手册，补强 skills / agents / plugins 的统一扩展 API 视角
 - 新增权限系统全链路与 Auto Mode 细拆，补强 mode、rule、classifier、headless fallback 的全链路理解
 - 新增“统一配置语言优于扩展孤岛”专题，并将扩展面提升为单独阅读链
+- 新增 SDKMessageSchema 与事件流手册，明确 SDK 暴露的是 runtime event stream 而不是简单答案流
+- 新增 MCP 配置与连接状态机，补强 config scope、transport、auth 与五态连接模型分析
+- 新增 ClaudeAPI 与流式工具执行专题，补强 query loop、stream parser、tool executor、fallback 与 recovery 的完整链路
+- 更新蓝皮书主索引、API/架构专题 README，新增事件链与连接链阅读路径
+- 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化本轮新增结论

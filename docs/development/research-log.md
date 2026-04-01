@@ -119,6 +119,58 @@
 - `claude-code-source-code/src/utils/permissions/permissionSetup.ts:1078-1158`
 - `claude-code-source-code/src/utils/permissions/permissions.ts:473-1471`
 
+### I. SDK host surface is event stream, not answer stream
+
+- `SDKMessageSchema` 的公共面已经覆盖 user / assistant / `stream_event`、result、system、hook / tool / auth、task / persistence、rate-limit / elicitation / suggestion 等多类消息。
+- `system:init` 暴露的不是欢迎文本，而是 runtime 装配态快照。
+- 对宿主来说，Claude Code SDK 的价值不只是“拿到模型回复”，而是“接入运行中的事件脉搏、状态变化与执行摘要”。
+
+证据:
+
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1290-1302`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1347-1455`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1457-1602`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1604-1779`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1794-1880`
+
+### J. Claude API stream is recoverable execution trajectory
+
+- `query.ts` 在调模型前准备的是工作集、工具、权限、budget、MCP readiness 等执行上下文，而不是裸消息数组。
+- 流式解析阶段必须处理 `message_start -> content_block_* -> message_delta -> message_stop`，并在 `message_delta` 上对已 yield 的 assistant message 做原地 mutation，才能保持 transcript 引用一致性。
+- streaming fallback、missing tool result repair、reactive compact、max output recovery 共同维护的是“可恢复执行轨迹”，而不是单纯的文本续写。
+
+证据:
+
+- `claude-code-source-code/src/query.ts:123-179`
+- `claude-code-source-code/src/query.ts:650-930`
+- `claude-code-source-code/src/query.ts:980-1265`
+- `claude-code-source-code/src/query.ts:1368-1728`
+- `claude-code-source-code/src/services/api/claude.ts:588-673`
+- `claude-code-source-code/src/services/api/claude.ts:1270-1335`
+- `claude-code-source-code/src/services/api/claude.ts:1979-2365`
+- `claude-code-source-code/src/services/api/claude.ts:2366-2475`
+- `claude-code-source-code/src/services/api/claude.ts:2560-2825`
+- `claude-code-source-code/src/services/api/claude.ts:2924-3025`
+
+### K. MCP is a governed connection plane
+
+- MCP 至少要按 config scope、transport、connection state、control surface 四层理解。
+- `needs-auth`、`pending`、`disabled`、`failed`、`connected` 说明它不是一个简单 connect / fail 布尔量。
+- plugin MCP 通过动态 scope、名称重写与环境变量分层解析，进一步说明这是受治理的连接平面，而不是“manifest 里顺手带几个 server”。
+
+证据:
+
+- `claude-code-source-code/src/services/mcp/types.ts:10-257`
+- `claude-code-source-code/src/services/mcp/config.ts:1253-1569`
+- `claude-code-source-code/src/services/mcp/client.ts:340-421`
+- `claude-code-source-code/src/services/mcp/client.ts:595-1128`
+- `claude-code-source-code/src/services/mcp/client.ts:1216-1402`
+- `claude-code-source-code/src/services/mcp/useManageMCPConnections.ts:333-450`
+- `claude-code-source-code/src/services/mcp/useManageMCPConnections.ts:765-1128`
+- `claude-code-source-code/src/utils/plugins/mcpPluginIntegration.ts:341-620`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:157-173`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:374-452`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -138,17 +190,22 @@
 - 已补扩展 Frontmatter 与插件 Agent 手册，把 skills / agents / plugins / manifest 收拢成统一扩展面
 - 已补权限系统全链路与 Auto Mode 细拆，把 mode、rule、classifier、headless fallback 串成完整状态机
 - 已补“统一配置语言优于扩展孤岛”专题，并把扩展面提升为单独阅读链
+- 已补 `SDKMessageSchema` 与事件流手册，把 SDK 从“答案流”纠正为“runtime event stream”
+- 已补 MCP 配置与连接状态机，把 scope、transport、connection state、control surface 收拢成统一连接平面
+- 已补 Claude API 与流式工具执行专题，把 query loop、stream parser、tool executor、fallback、recovery 串成完整执行链
+- 已同步更新主索引、API/架构 README、章节规划、证据索引、长期记忆与反思准则
 
 ## 下一步待办
 
-- 补一章“MCP 实战配置与集成范式”
 - 补一章“多 Agent 协作模式与 prompt 模板”
 - 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
-- 给 `SDKMessageSchema` 与 control subtype 做完整对照表
+- 给 `SDKMessageSchema` 与 control subtype 做完整对照表，并补宿主接入样例
 - 补 `REPL.tsx` / Ink 更细的 transcript mode、message actions、PromptInput 交互链
+- 补 `StructuredIO` / `RemoteIO` 的 host-CLI 协议与时序
 - 补命令索引的更细表格化版本与 workflow/dynamic skills 交叉核对
 - 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
 - 继续把 session/state API 与子代理状态回收做成字段级索引与时序图
+- 补一章“MCP 实战配置与集成范式”
 - 把插件市场、manifest、MCPB、LSP、channels 的产品层边界继续写成实战与策略手册
 
 ## 当前风险
@@ -164,3 +221,5 @@
 - 多 Agent 隔离逻辑横跨 `AgentTool.tsx`、`runAgent.ts`、`forkedAgent.ts`、worktree tools，后续若继续细拆时应防止把“并发能力”和“隔离约束”混成一个概念。
 - 扩展面虽然已经能被解释为统一配置语言，但 plugin manifest、marketplace、MCPB、LSP 仍存在明显的产品成熟度差异，后续不能把 schema 支持直接写成生态成熟。
 - 权限系统的很多细节受 ant-only feature、classifier gate、fail-open/fail-closed 配置影响，后续必须持续区分“源码路径存在”和“公开构建稳定可用”。
+- `stream_event`、`research`、`advisor`、`claudeai-proxy`、`ws-ide` 等痕迹里混有 internal / host-specific 信号，后续不能直接当作稳定公共契约。
+- Claude API 流式执行链与当前 Anthropic event shape、tool execution harness 强绑定，后续若源码升级，最可能先变化的是恢复细节与引用写回策略。

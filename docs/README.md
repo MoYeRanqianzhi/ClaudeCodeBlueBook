@@ -9,6 +9,8 @@
 
 ## 当前内容
 
+- [development/00-研究方法.md](development/00-研究方法.md): 研究方法与证据约束
+- [development/01-章节规划.md](development/01-章节规划.md): 蓝皮书章节规划与优先级
 - [development/long-term-memory.md](development/long-term-memory.md): 长期记忆与持续研究约束
 - [development/research-log.md](development/research-log.md): 研究日志与后续待办
 - [development/02-证据索引.md](development/02-证据索引.md): 源码证据锚点

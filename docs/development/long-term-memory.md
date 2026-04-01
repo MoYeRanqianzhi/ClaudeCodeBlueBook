@@ -45,6 +45,9 @@
   - 工具协议与 ToolUseContext
   - 会话与状态 API 手册
   - 扩展 Frontmatter 与插件 Agent 手册
+  - SDKMessageSchema 与事件流手册
+  - MCP 配置与连接状态机
+  - ClaudeAPI 与流式工具执行
 
 ## 已确认事实
 
@@ -66,25 +69,26 @@
 - Claude Code 的多 Agent 设计更适合概括成“隔离优先于并发”，而不是简单的“支持并行”
 - Claude Code 的扩展面更适合概括成“统一配置语言 + 分层信任边界”，而不是“功能越来越多的插件拼盘”
 - 权限系统必须按“context 装配 + 规则匹配 + mode 覆写 + classifier / hooks fallback”理解，不能只看 prompt 弹窗
+- Claude Code SDK 的输出面更适合概括成“runtime event stream”，而不是“助手答案流”
+- `query.ts` + `services/api/claude.ts` 维护的是可恢复执行轨迹，不是单纯流式文本输出
+- MCP 更适合按“配置面 + transport 面 + 连接状态面 + 控制面”理解，而不是“外接工具协议”
+- `message_delta` 对已 yield assistant message 的原地写回，是 transcript 引用一致性的重要实现细节
+- plugin MCP 的动态 scope 与环境变量分层解析，说明连接治理是扩展模型的一部分，不是附加逻辑
 
 ## 后续章节建议
 
 1. 深挖 `REPL.tsx` 的交互状态机
-2. 深挖 `services/api/claude.ts` 与 streaming tool execution
+2. 深挖 Team、Coordinator、Workflow 的更高层编排范式
 3. 深挖 `REPL.tsx` 的 transcript search / sticky prompt / message actions
 4. 深挖权限系统与 auto mode 的风险控制
 5. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
-6. 深挖 Team、Coordinator、Workflow 的更高层编排范式
-7. 深挖 MCP 接入面与插件生态边界
-8. 深挖 `StructuredIO` / `RemoteIO` 的 host-CLI 协议与时序
-9. 深挖 `services/api/claude.ts` 与 streaming tool execution
-10. 把 `SDKMessageSchema` 做成可检索的消息字典
-11. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
-12. 给 MCP 状态、命令 availability、控制请求做时序化视图
-13. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
-14. 把工具面、状态面、控制面、演化面都做成清晰阅读路径
-15. 把 Skills / Plugins / MCP / agents 的统一扩展模型讲清楚
-16. 把 plugin manifest / marketplace / MCPB / LSP / channels 的产品边界继续写实
+6. 深挖 `StructuredIO` / `RemoteIO` 的 host-CLI 协议与时序
+7. 把 `SDKMessageSchema` 与 control subtype 做成可检索对照表
+8. 给 MCP 状态、命令 availability、控制请求做时序化视图
+9. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
+10. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
+11. 把工具面、事件面、连接面、状态面、控制面、演化面都做成清晰阅读路径
+12. 把 plugin manifest / marketplace / MCPB / LSP / channels 的产品边界继续写实
 
 ## 编写约定
 
@@ -96,3 +100,5 @@
 - 写多 Agent 相关结论时，必须优先问清这是并发语义还是隔离语义
 - 写扩展面相关结论时，必须优先问清这是“共享配置语言”还是“某个对象的局部特例”
 - 写权限面相关结论时，必须先标出它位于初始装配、规则层、mode 层、classifier 层还是 fallback 层
+- 写 SDK 相关结论时，必须先问清自己描述的是 answer stream 还是 event stream
+- 写 MCP 相关结论时，必须先区分配置面、连接状态面、控制面与 transport 面
