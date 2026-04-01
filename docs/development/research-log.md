@@ -664,6 +664,18 @@
 - `claude-code-source-code/src/main.tsx:1497-1520`
 - `claude-code-source-code/src/main.tsx:1635-1688`
 
+### S. API 写作已进入“总表先行”阶段
+
+- 现在已经有两份总表型文档分别负责“能力平面 + 公开度矩阵”与“命令 / 工具 / 会话 / 宿主 / 协作 API 全谱系”。
+- 这意味着后续再补任何单篇 API 章节时，都必须先回到总表检查：它位于哪个平面，属于哪个公开度标签，是否只是 adapter 子集。
+- 主线 `08` 负责给出判断标准，`api/23` 与 `api/24` 负责把判断标准落成可检索索引，这三层已经形成稳定写作骨架。
+
+证据：
+
+- `bluebook/08-能力全集、公开度与成熟度矩阵.md`
+- `bluebook/api/23-能力平面、公开度与宿主支持矩阵.md`
+- `bluebook/api/24-命令、工具、会话、宿主与协作API全谱系.md`
+
 ## 下一步待办
 
 - 补 workflow engine 当前可见边界与 `LocalWorkflowTask` 实现缺口

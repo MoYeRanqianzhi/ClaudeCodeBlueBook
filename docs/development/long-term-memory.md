@@ -89,6 +89,8 @@
   - 宿主实现最小闭环与恢复案例手册
   - 提示词控制、知识注入与记忆 API 手册
   - 插件、Marketplace、MCPB、LSP与Channels接入边界手册
+  - 能力平面、公开度与宿主支持矩阵
+  - 命令、工具、会话、宿主与协作API全谱系
   - 真正的设计单位不是功能，而是运行时平面
   - 前台交互不是 UI 皮肤，而是认知控制面
   - Prompt 不是文本技巧而是契约分层
@@ -121,6 +123,8 @@
 - MCP 更适合按“配置面 + transport 面 + 连接状态面 + 控制面”理解，而不是“外接工具协议”
 - “功能支持”后续必须持续按两层写：先写能力平面，再写公开度与成熟度矩阵
 - `navigation/` 负责读者检索，根目录主线负责判断标准，这两层不能重新混回一篇大总文
+- API 写作现在已有统一基线：先用总表型文档确定能力平面、公开度与 adapter 宽度，再进入具体专题
+- 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - `message_delta` 对已 yield assistant message 的原地写回，是 transcript 引用一致性的重要实现细节
 - plugin MCP 的动态 scope 与环境变量分层解析，说明连接治理是扩展模型的一部分，不是附加逻辑
 - Claude Code 更适合被理解成 host-integrated runtime，而不是 terminal shell
