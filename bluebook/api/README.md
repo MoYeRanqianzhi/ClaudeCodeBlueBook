@@ -19,8 +19,8 @@
 
 建议和蓝皮书主线搭配阅读：
 
-- 先看 [导读](../bluebook/00-%E5%AF%BC%E8%AF%BB.md)
-- 再看 [功能全景与 API 支持](../bluebook/05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)
+- 先看 [导读](../00-%E5%AF%BC%E8%AF%BB.md)
+- 再看 [功能全景与 API 支持](../05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)
 - 需要命令域全景时先看 `06`
 - 需要字段与 gating 细节时再看 `07`
 - 需要工具协议与 runtime context 时再看 `08`

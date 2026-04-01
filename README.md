@@ -6,18 +6,19 @@
 
 ## 导航
 
-- [docs/README.md](docs/README.md): 蓝皮书总索引
-- [docs/bluebook/00-导读.md](docs/bluebook/00-导读.md): 研究范围、方法、阅读路径
-- [docs/bluebook/01-源码结构地图.md](docs/bluebook/01-源码结构地图.md): 启动链路、核心模块、运行时结构
-- [docs/bluebook/02-使用指南.md](docs/bluebook/02-使用指南.md): 基于源码反推出的高价值使用方法
-- [docs/bluebook/03-设计哲学.md](docs/bluebook/03-设计哲学.md): 为什么 Claude Code 强，以及它依赖的设计选择
-- [docs/bluebook/04-公开能力与隐藏能力.md](docs/bluebook/04-公开能力与隐藏能力.md): public / gated / internal 能力边界
-- [docs/bluebook/05-功能全景与API支持.md](docs/bluebook/05-功能全景与API支持.md): 功能矩阵、命令面、SDK 面、MCP 面、远程面
-- [docs/bluebook/06-第一性原理与苏格拉底反思.md](docs/bluebook/06-第一性原理与苏格拉底反思.md): 从第一性原理回看 Claude Code 与蓝皮书自身
-- [docs/api/README.md](docs/api/README.md): 接口与协议索引
-- [docs/architecture/README.md](docs/architecture/README.md): 架构深挖索引
-- [docs/guides/README.md](docs/guides/README.md): 使用专题索引
-- [docs/philosophy/README.md](docs/philosophy/README.md): 哲学专题索引
+- [bluebook/README.md](bluebook/README.md): 蓝皮书总索引
+- [bluebook/00-导读.md](bluebook/00-导读.md): 研究范围、方法、阅读路径
+- [bluebook/01-源码结构地图.md](bluebook/01-源码结构地图.md): 启动链路、核心模块、运行时结构
+- [bluebook/02-使用指南.md](bluebook/02-使用指南.md): 基于源码反推出的高价值使用方法
+- [bluebook/03-设计哲学.md](bluebook/03-设计哲学.md): 为什么 Claude Code 强，以及它依赖的设计选择
+- [bluebook/04-公开能力与隐藏能力.md](bluebook/04-公开能力与隐藏能力.md): public / gated / internal 能力边界
+- [bluebook/05-功能全景与API支持.md](bluebook/05-功能全景与API支持.md): 功能矩阵、命令面、SDK 面、MCP 面、远程面
+- [bluebook/06-第一性原理与苏格拉底反思.md](bluebook/06-第一性原理与苏格拉底反思.md): 从第一性原理回看 Claude Code 与蓝皮书自身
+- [bluebook/api/README.md](bluebook/api/README.md): 接口与协议索引
+- [bluebook/architecture/README.md](bluebook/architecture/README.md): 架构深挖索引
+- [bluebook/guides/README.md](bluebook/guides/README.md): 使用专题索引
+- [bluebook/philosophy/README.md](bluebook/philosophy/README.md): 哲学专题索引
+- [docs/README.md](docs/README.md): 持久化记忆与开发文档索引
 - [docs/development/research-log.md](docs/development/research-log.md): 研究日志、证据锚点、后续待办
 - [docs/development/03-反思与迭代准则.md](docs/development/03-反思与迭代准则.md): 写作约束与下一轮迭代方法
 - [docs/changelog.md](docs/changelog.md): 文档版本记录
@@ -34,6 +35,6 @@
 ## 工作原则
 
 - 所有关键结论都尽量指向具体源码文件与行号。
-- 文档是长期记忆，后续分析继续增量写入 `docs/`。
+- 蓝皮书正文写入 `bluebook/`，持久化记忆与开发文档写入 `docs/`。
 - `claude-code-source-code/` 保持在 `.gitignore` 中，不直接纳入本仓库版本管理。
-- 正式读者主线以 `docs/bluebook/` 为准，专题深挖分别放入 `architecture/`、`api/`、`guides/`、`philosophy/`、`development/`。
+- 正式读者主线以 `bluebook/` 为准，`docs/` 只保留开发与记忆相关内容。
