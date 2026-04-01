@@ -764,6 +764,24 @@
 - `claude-code-source-code/src/utils/permissions/permissionsLoader.ts:28-130`
 - `claude-code-source-code/src/services/mcp/config.ts:338-355`
 
+### AJ. Auth continuity is engineered as a multi-cache, multi-process coordination problem
+
+- `saveOAuthTokensIfNeeded()` 不会让 refresh 过程里的空 `subscriptionType` / `rateLimitTier` 覆盖已有稳定值，说明作者在主动防止局部不完整响应破坏连续主体画像。
+- `handleOAuth401Error()` 先清缓存并重读 secure storage，若发现另一个终端已经写入新 token 就直接接上，而不是立刻强制重登；401 被当作连续性再协商，而不是简单失败。
+- `checkAndRefreshOAuthTokenIfNeeded()` 通过 mtime 检测、pending promise 去重、跨进程 lockfile 和锁后二次确认，对抗多终端并发刷新造成的 relogin loops。
+- `macOsKeychainStorage.ts` 的 stale-while-error、TTL、generation guard 说明在安全存储短时不稳定时，系统宁可短时保留旧真相，也不愿立刻把所有子系统打成未登录。
+- `login.tsx` 在登录成功后会重同步 GrowthBook、policy limits、managed settings、trusted device 与 authVersion，说明登录本质上是控制面重建动作，不是单一按钮事件。
+- `trustedDevice.ts` 进一步证明高安全远程链路有独立于普通登录的认证连续性要求：fresh login 10 分钟窗口、旧 token 清理、再 enrollment。
+- 更高抽象看，Claude Code 的认证问题不是“有没有登录”，而是“多个子系统是否仍共享足够新鲜的同一主体真相”。
+
+证据:
+
+- `claude-code-source-code/src/utils/auth.ts:1193-1252`
+- `claude-code-source-code/src/utils/auth.ts:1303-1556`
+- `claude-code-source-code/src/utils/secureStorage/macOsKeychainStorage.ts:25-111`
+- `claude-code-source-code/src/commands/login/login.tsx:20-61`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:41-98`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -815,6 +833,7 @@
 - 已补风控专题 `42-风控最小公理与反公理：从第一性原理重写控制面哲学`，把散点机制压缩成持续证明、分层放权、受控恢复的最小原则集
 - 已补风控专题 `43-支持联动附录：按症状、证明链、归属方与证据面快速分流`，把用户、管理员、平台支持的分流规则和证据面合并成一张运行手册
 - 已补风控专题 `44-仓库不是可信主体：从权限优先级到托管收口的信任边界`，把权限顺序、托管收口和项目不可信原则收束成同一套信任模型
+- 已补风控专题 `45-认证连续性工程：缓存、锁、密钥链与为什么不要乱换登录路径`，把认证问题从“登录成功/失败”提升为多缓存、多进程的连续性工程
 
 ## 下一步待办
 
