@@ -54,7 +54,8 @@
 - 先读 [05-功能全景与 API 支持](05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)
 - 再读 [08-能力全集、公开度与成熟度矩阵](08-%E8%83%BD%E5%8A%9B%E5%85%A8%E9%9B%86%E3%80%81%E5%85%AC%E5%BC%80%E5%BA%A6%E4%B8%8E%E6%88%90%E7%86%9F%E5%BA%A6%E7%9F%A9%E9%98%B5.md)
 - 再读 [api/README](api/README.md)
-- 最后顺着 `13 -> 14 -> 15 -> 16 -> 17 -> 20` 读宿主闭环
+- 先用 [api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面](api/30-%E6%BA%90%E7%A0%81%E7%9B%AE%E5%BD%95%E7%BA%A7%E8%83%BD%E5%8A%9B%E5%9C%B0%E5%9B%BE%EF%BC%9Acommands%E3%80%81tools%E3%80%81services%E3%80%81%E7%8A%B6%E6%80%81%E4%B8%8E%E5%AE%BF%E4%B8%BB%E5%B9%B3%E9%9D%A2.md) 校准能力地形
+- 最后顺着 `13 -> 14 -> 15 -> 16 -> 17 -> 20 -> 26` 读宿主闭环
 
 ### 4. 想研究 prompt、知识、记忆与上下文经济
 
@@ -71,7 +72,7 @@
 ### 6. 想研究源码结构与工程先进性
 
 - 先读 `01 -> 03 -> 05`
-- 再读 `architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38`
+- 再读 `api/30 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38`
 - 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/23 -> philosophy/24`
 
 ## 按第一性原理阅读
@@ -111,7 +112,7 @@
 
 ### 为什么宿主接入不能只看 `query(prompt)`
 
-- `05 -> api/02 -> api/13 -> api/15 -> api/16 -> api/20`
+- `05 -> api/30 -> api/02 -> api/13 -> api/15 -> api/16 -> api/20`
 
 ### 为什么有代码不等于有公共承诺
 
@@ -120,6 +121,10 @@
 ### 为什么目录结构本身也在暴露能力拓扑
 
 - `05 -> api/24 -> api/29 -> api/30 -> architecture/24 -> architecture/38`
+
+### 想按深度专题而不是按目录来读
+
+- 先读 [navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理](navigation/03-%E6%B7%B1%E5%BA%A6%E4%B8%93%E9%A2%98%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E5%BA%95%E7%9B%98%E4%B8%8E%E6%B2%BB%E7%90%86.md)
 
 ## 专题入口
 

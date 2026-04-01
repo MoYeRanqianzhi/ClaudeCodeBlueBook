@@ -100,6 +100,7 @@
   - 治理型API：Channels、Context Usage与Settings三重真相
   - 动态能力暴露、裁剪链与运行时可见性
   - 源码目录级能力地图：commands、tools、services、状态与宿主平面
+  - 深度专题导航：Prompt、预算、对象、底盘与治理
   - workflow engine、LocalWorkflowTask 与可见边界
   - REPL transcript search、selection 与 scroll 协同
   - 五层合同、缓存断点与Prompt装配时序

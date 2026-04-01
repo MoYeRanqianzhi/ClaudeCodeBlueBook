@@ -42,9 +42,12 @@
 | 宿主如何接控制协议 | `api/13`、`api/14`、`api/15` | `architecture/13`、`architecture/15` |
 | 宿主如何拿到恢复与状态真相 | `api/16`、`api/17`、`api/19`、`api/20` | `architecture/16`、`architecture/17`、`architecture/25` |
 | prompt、知识、记忆从哪里注入 | `api/18`、`api/21` | `architecture/18`、`architecture/28`、`architecture/29` |
+| prompt 为什么强到不像单段 system prompt | `architecture/31`、`architecture/36` | `philosophy/21`、`navigation/03` |
 | plugin / MCP / MCPB / channels / LSP 到底边界在哪 | `api/22` | `architecture/27`、`philosophy/20` |
 | 安全、治理、远程高安全链路如何理解 | `risk/README.md` | `architecture/19`、`risk/05`、`risk/11` |
 | 目录结构为什么本身就在暴露能力拓扑 | `api/30` | `architecture/24`、`architecture/38` |
+| 为什么安全、治理与省 token 应该共读 | `architecture/32`、`architecture/37` | `api/28`、`api/29`、`philosophy/22` |
+| 为什么公开镜像仍然值得学 | `architecture/33`、`architecture/38` | `philosophy/23`、`navigation/03` |
 
 ## 4. 功能全集和公开承诺不是一回事
 
