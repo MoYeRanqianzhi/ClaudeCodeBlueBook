@@ -99,6 +99,8 @@
   - 插件协议全生命周期：Manifest、Marketplace、Options、MCPB与Reload
   - 治理型API：Channels、Context Usage与Settings三重真相
   - 动态能力暴露、裁剪链与运行时可见性
+  - workflow engine、LocalWorkflowTask 与可见边界
+  - REPL transcript search、selection 与 scroll 协同
   - 真正的设计单位不是功能，而是运行时平面
   - 前台交互不是 UI 皮肤，而是认知控制面
   - Prompt 不是文本技巧而是契约分层
@@ -108,6 +110,8 @@
   - 安全、成本与体验必须共用预算器
   - 源码质量不是卫生而是产品能力
   - CLAUDE.md、记忆层与上下文注入实践
+  - Channels、托管策略与组织级治理实践
+  - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
 
 ## 已确认事实
 
@@ -137,6 +141,9 @@
 - API 写作现在已有统一基线：先用总表型文档确定能力平面、公开度与 adapter 宽度，再进入具体专题
 - API atlas 现在已经分成两层：`23/24` 负责矩阵与谱系，`25-29` 负责能力对象、宿主接入、插件生命周期、治理型 API 与动态可见性
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
+- workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
+- REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释
+- channels 与托管设置应从“组织级治理实践”角度单独写，不再只散落在 API 与 risk 章节里
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述
 - Prompt 魔力更精确的第一性原理表述应升级为“角色合同 + 工具边界 + 缓存结构 + 状态反馈 + 协作语法”
 - 安全、token 经济与体验本质上共用一个预算器，分别约束动作空间、上下文空间与认知噪音
@@ -180,16 +187,15 @@
 
 ## 后续章节建议
 
-1. 深挖 workflow engine 当前可见边界与 `LocalWorkflowTask` 实现缺口
-2. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
-3. 给 bridge / direct-connect / remote-session 三类宿主路径做更细时序图
-4. 把 `SDKMessage`、control、snapshot、recovery 做成更细宿主实现 casebook
-5. 给 MCP 状态、命令 availability、控制请求做时序化视图
-6. 深挖 REPL 的 scroll/search/selection 时序与更多前台认知机制
-7. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
-8. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、提示词面、工程面、协作面、前台面、演化面都做成清晰阅读路径
-9. 把命令全集、工具全集、任务/团队/remote 能力全集从零散章节提升为统一可检索手册
-10. 把治理型 API、插件 lifecycle、动态可见性继续做成宿主实践 casebook
+1. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
+2. 给 bridge / direct-connect / remote-session 三类宿主路径做更细时序图
+3. 把 `SDKMessage`、control、snapshot、recovery 做成更细宿主实现 casebook
+4. 给 MCP 状态、命令 availability、控制请求做时序化视图
+5. 深挖 REPL 的 transcript mode、message actions、footer / quick search 协同
+6. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
+7. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、提示词面、工程面、协作面、前台面、演化面都做成清晰阅读路径
+8. 把命令全集、工具全集、任务/团队/remote 能力全集从零散章节提升为统一可检索手册
+9. 把治理型 API、插件 lifecycle、动态可见性继续做成宿主实践 casebook
 
 ## 编写约定
 

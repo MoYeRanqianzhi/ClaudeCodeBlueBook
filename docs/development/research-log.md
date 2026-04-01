@@ -734,10 +734,59 @@
 - `bluebook/philosophy/22-安全、成本与体验必须共用预算器.md`
 - `bluebook/philosophy/23-源码质量不是卫生而是产品能力.md`
 
+### U. workflow 当前最稳的写法是“对象模型已可见，执行内核仍缺席”
+
+- `local_workflow` 已经是正式 `TaskType`，而不是评论性术语。
+- `LocalWorkflowTaskState` 已进入 `TaskState` / `BackgroundTaskState` 联合类型，说明 workflow 是后台任务对象，不是命令宏。
+- SDK 进度面允许携带 `workflow_progress`，说明宿主已经被预留了 phase/progress 消费面。
+- transcript 与 worktree 命名都显式提到 `subagents/workflows/<runId>/` 与 `wf_<runId>-<idx>`，说明 workflow 是独立 sidechain runtime。
+- 但 `LocalWorkflowTask` 主体实现当前公开镜像未展开，因此后续必须继续区分“对象模型已可证实”与“执行机理未完整公开”。
+
+证据：
+
+- `claude-code-source-code/src/Task.ts:6-84`
+- `claude-code-source-code/src/tasks/types.ts:1-27`
+- `claude-code-source-code/src/utils/task/framework.ts:111-128`
+- `claude-code-source-code/src/utils/task/sdkProgress.ts:1-34`
+- `claude-code-source-code/src/utils/sessionStorage.ts:232-258`
+- `claude-code-source-code/src/utils/worktree.ts:1021-1052`
+
+### V. REPL 的 search、selection、scroll 共同维护的是前台认知真相
+
+- transcript search 不是对 raw transcript 做 grep，而是对 render truth 做索引，显式剔除不可见 sentinel 与 system reminder。
+- selection 子系统显式维护 anchor/focus、drag scroll、keyboard scroll 与 scrolled-off rows，目的是让高亮与复制结果尽量一致。
+- scroll / sticky prompt 不是视觉润色，而是在长对话里维持“当前正在回复哪个 prompt”的因果锚点。
+- PromptInput footer 与 teammate view 进一步把后台任务、agent transcript 与输入路由收进同一前台状态机。
+
+证据：
+
+- `claude-code-source-code/src/utils/transcriptSearch.ts:1-166`
+- `claude-code-source-code/src/ink/selection.ts:1-220`
+- `claude-code-source-code/src/ink/components/ScrollBox.tsx:1-210`
+- `claude-code-source-code/src/screens/REPL.tsx:879-910`
+- `claude-code-source-code/src/screens/REPL.tsx:1248-1374`
+- `claude-code-source-code/src/screens/REPL.tsx:2068-2140`
+- `claude-code-source-code/src/components/PromptInput/PromptInputFooterLeftSide.tsx:417-462`
+
+### W. channels 与托管策略最适合概括成“输入预算 + 管理员预算”
+
+- channels 不是普通 MCP，而是 capability、OAuth、org policy、session opt-in 与 allowlist 联合约束的外部输入面。
+- `allowedChannelPlugins` 一旦设置就替换 Anthropic ledger，说明管理员接管的是最终信任决策，而不是“推荐插件列表”。
+- permission relay 是第二层 opt-in：除了 channel capability，还必须声明 `claude/channel/permission`。
+- 危险 remote managed settings 变化会触发阻塞式安全对话，说明管理员权力本身也被放进预算器，而不是静默全权生效。
+
+证据：
+
+- `claude-code-source-code/src/services/mcp/channelAllowlist.ts:1-67`
+- `claude-code-source-code/src/services/mcp/channelNotification.ts:120-310`
+- `claude-code-source-code/src/services/mcp/channelPermissions.ts:1-204`
+- `claude-code-source-code/src/interactiveHelpers.tsx:237-283`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:15-56`
+- `claude-code-source-code/src/utils/settings/types.ts:896-920`
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-17`
+
 ## 下一步待办
 
-- 补 workflow engine 当前可见边界与 `LocalWorkflowTask` 实现缺口
-- 补 REPL 更细的 scroll/search/selection 时序图
 - 补 `SDKMessage`、control、snapshot、recovery 四面统一的宿主实现 casebook
 - 补 `query.ts` / `sessionStorage.ts` / `REPL.tsx` / `replBridge.ts` 四个热点文件的债务与分层图
 - 补 bridge / direct-connect / remote-session 三类宿主路径的更细时序图
@@ -747,7 +796,7 @@
 - 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
 - 继续把 session/state API 与子代理状态回收做成字段级索引与时序图
 - 补一章“MCP 实战配置与集成范式”
-- 补一章“managed-only / channels / policy / allowlist 的组织级治理手册”
+- 补一章“治理型 API 的宿主实践样例”
 
 ## 当前风险
 

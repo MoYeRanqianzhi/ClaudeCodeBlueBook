@@ -8,6 +8,7 @@
 2. [02-多Agent编排与Prompt模板](02-%E5%A4%9AAgent%E7%BC%96%E6%8E%92%E4%B8%8EPrompt%E6%A8%A1%E6%9D%BF.md)
 3. [03-CLAUDE.md、记忆层与上下文注入实践](03-CLAUDE.md%E3%80%81%E8%AE%B0%E5%BF%86%E5%B1%82%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5%E5%AE%9E%E8%B7%B5.md)
 4. [04-Channels、托管策略与组织级治理实践](04-Channels%E3%80%81%E6%89%98%E7%AE%A1%E7%AD%96%E7%95%A5%E4%B8%8E%E7%BB%84%E7%BB%87%E7%BA%A7%E6%B2%BB%E7%90%86%E5%AE%9E%E8%B7%B5.md)
+5. [05-企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批](05-%E4%BC%81%E4%B8%9A%E6%89%98%E7%AE%A1%E8%AE%BE%E7%BD%AE%E5%AE%9E%E6%88%98%EF%BC%9AchannelsEnabled%E3%80%81allowedChannelPlugins%E4%B8%8E%E5%8D%B1%E9%99%A9%E9%85%8D%E7%BD%AE%E5%AE%A1%E6%89%B9.md)
 
 ## 按使用目标阅读
 
@@ -15,7 +16,7 @@
 - 想把多 Agent 用对，而不是只会并行：`01 -> 02`
 - 想把规则层、长期记忆、会话连续性分层设计清楚：`01 -> 03`
 - 想把 Prompt 写成可运行的 contract，而不是一次性文案：`02 -> 03 -> ../philosophy/18`
-- 想把 channels 用在团队里而不是把风险直接带进会话：`04 -> ../api/28 -> ../risk/05`
+- 想把 channels 用在团队里而不是把风险直接带进会话：`04 -> 05 -> ../api/28 -> ../risk/05`
 
 ## 与其他目录的边界
 
@@ -26,5 +27,4 @@
 后续继续补：
 
 - 项目级 skills 工程化设计
-- 团队权限与托管策略配置
 - 宿主接入与远程协作实践
