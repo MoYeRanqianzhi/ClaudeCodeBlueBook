@@ -209,6 +209,21 @@
 - `claude-code-source-code/src/server/directConnectManager.ts:81-200`
 - `claude-code-source-code/src/remote/RemoteSessionManager.ts:153-297`
 
+### N. Explicit failure matters as much as success path
+
+- bridge、direct connect、`RemoteSessionManager` 都不把 unknown control subtype 静默吞掉，而是显式回 error，避免 server 因等待 reply 而挂死连接。
+- outbound-only bridge 对 mutable request 也显式回 error，避免“看起来成功但本地没生效”的假成功错觉。
+- `StructuredIO` 把 abort、cancel、duplicate/orphan 防护都做成显式协议动作或显式 reject，而不是依赖宿主自己猜测请求是否还有效。
+
+证据:
+
+- `claude-code-source-code/src/cli/structuredIO.ts:362-429`
+- `claude-code-source-code/src/cli/structuredIO.ts:490-504`
+- `claude-code-source-code/src/bridge/bridgeMessaging.ts:265-283`
+- `claude-code-source-code/src/bridge/bridgeMessaging.ts:373-390`
+- `claude-code-source-code/src/server/directConnectManager.ts:88-98`
+- `claude-code-source-code/src/remote/RemoteSessionManager.ts:199-213`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -240,13 +255,17 @@
 - 已补 bridge / direct-connect / remote-session 的适配器分层专题，明确 bridge 是中等宽度控制面而不是薄 websocket wrapper
 - 已补“协议全集不等于适配器子集”专题，把这条边界上升为正式写作原则
 - 已把 `bluebook/` 目录进一步扩展为宿主链、适配器链、事件链、连接链、策略链、会话链、协作链七条阅读线
+- 已补 control protocol 字段级对照与最小宿主接入样例，补强 request/response 封套与 payload 字段支持
+- 已补宿主路径时序与竞速专题，把本地 host、bridge、direct-connect、remote-session 四条链收拢成统一时序视角
+- 已补“显式失败优于假成功”专题，把 explicit error / cancel / reject 提升为 Agent runtime 的正式设计原则
+- 已把 `bluebook/` 目录进一步扩展为宿主链、适配器链、时序链、事件链、连接链、策略链、会话链、协作链八条阅读线
 
 ## 下一步待办
 
-- 补 bridge / direct-connect / remote-session 三类宿主路径的时序图
+- 补 bridge / direct-connect / remote-session 三类宿主路径的更细时序图
 - 补一章“多 Agent 协作模式与 prompt 模板”
 - 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
-- 给 `SDKMessageSchema` 与 control subtype 做完整字段对照表，并补宿主接入样例
+- 给 `SDKMessageSchema` 与 control subtype 做 message-response crosswalk，并补更细宿主接入样例
 - 补 `REPL.tsx` / Ink 更细的 transcript mode、message actions、PromptInput 交互链
 - 补命令索引的更细表格化版本与 workflow/dynamic skills 交叉核对
 - 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
@@ -271,3 +290,4 @@
 - Claude API 流式执行链与当前 Anthropic event shape、tool execution harness 强绑定，后续若源码升级，最可能先变化的是恢复细节与引用写回策略。
 - direct connect 与 `RemoteSessionManager` 当前实现的 control surface 明显窄于 `StructuredIO` 全量 schema，后续必须持续避免把“schema 全集”和“某个宿主已支持的子集”写成同一层事实。
 - bridge 当前虽然明显宽于 direct connect / `RemoteSessionManager`，但仍不是完整 control subtype 全集；后续必须避免把它直接等同于完整 SDK host。
+- 显式失败路径目前已经能被解释为架构原则，但尚未对 `authRecoveryInFlight`、transport close code、prompt timeout 等失败语义做完全文级整理，后续仍要继续补。

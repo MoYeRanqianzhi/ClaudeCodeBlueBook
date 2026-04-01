@@ -36,6 +36,7 @@
 
 - [StructuredIO 与 RemoteIO 宿主协议手册](13-StructuredIO%E4%B8%8ERemoteIO%E5%AE%BF%E4%B8%BB%E5%8D%8F%E8%AE%AE%E6%89%8B%E5%86%8C.md)
 - [Control 子类型与宿主适配矩阵](14-Control%E5%AD%90%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%AE%BF%E4%B8%BB%E9%80%82%E9%85%8D%E7%9F%A9%E9%98%B5.md)
+- [Control 协议字段对照与宿主接入样例](15-Control%E5%8D%8F%E8%AE%AE%E5%AD%97%E6%AE%B5%E5%AF%B9%E7%85%A7%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%8E%A5%E5%85%A5%E6%A0%B7%E4%BE%8B.md)
 
 建议和蓝皮书主线搭配阅读：
 
@@ -48,3 +49,4 @@
 - 需要统一扩展面、frontmatter 字段、plugin/agent trust boundary 与 MCP 连接平面时再看 `03 -> 10 -> 12 -> ../philosophy/08`
 - 需要 host control protocol、`control_request` / `control_response`、远程 host 适配路径时再看 `13 -> ../architecture/13 -> ../philosophy/09`
 - 需要分清 schema 全集、bridge 子集、direct-connect 子集、remote-session 子集时再看 `14 -> ../architecture/14 -> ../philosophy/10`
+- 需要字段级 payload 对照、最小 NDJSON 样例与宿主请求封套时再看 `15 -> ../architecture/15 -> ../philosophy/11`

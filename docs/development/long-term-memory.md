@@ -54,6 +54,9 @@
   - Control 子类型与宿主适配矩阵
   - Bridge 与宿主适配器分层
   - 协议全集不等于适配器子集
+  - Control 协议字段对照与宿主接入样例
+  - 宿主路径时序与竞速
+  - 显式失败优于假成功
 
 ## 已确认事实
 
@@ -86,6 +89,8 @@
 - direct connect / remote session manager 目前都只实现了完整控制协议的窄化子集，后续写作必须持续区分“协议全集”和“适配器子集”
 - bridge 当前支持的是中等宽度控制子集：比 direct connect / `RemoteSessionManager` 宽，但仍明显窄于完整 `StructuredIO` / schema 全集
 - `handleIngressMessage(...)` 与 `handleServerControlRequest(...)` 说明 bridge 不是全量 SDKMessage 镜像，而是显式分流 control、permission 与 user inbound 的控制面适配器
+- control protocol 的最小封套可以压成 `control_request` / `control_response(success|error)` / `control_cancel_request` 四个核心对象
+- 在宿主控制面里，“显式失败优于假成功”已经可以视为稳定设计原则：unknown subtype error、outbound-only error、abort reject 都是在防状态错觉
 
 ## 后续章节建议
 
@@ -94,12 +99,12 @@
 3. 深挖 `REPL.tsx` 的 transcript search / sticky prompt / message actions
 4. 深挖权限系统与 auto mode 的风险控制
 5. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
-6. 给 bridge / direct-connect / remote-session 三类宿主路径做时序图
-7. 把 `SDKMessageSchema` 与 control subtype 做成可检索字段对照表
+6. 给 bridge / direct-connect / remote-session 三类宿主路径做更细时序图
+7. 把 `SDKMessageSchema` 与 control subtype 做成 message-response crosswalk
 8. 给 MCP 状态、命令 availability、控制请求做时序化视图
 9. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
 10. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
-11. 把工具面、宿主面、适配器面、事件面、连接面、状态面、控制面、演化面都做成清晰阅读路径
+11. 把工具面、宿主面、适配器面、时序面、事件面、连接面、状态面、控制面、演化面都做成清晰阅读路径
 12. 把 plugin manifest / marketplace / MCPB / LSP / channels 的产品边界继续写实
 
 ## 编写约定
@@ -116,3 +121,4 @@
 - 写 MCP 相关结论时，必须先区分配置面、连接状态面、控制面与 transport 面
 - 写宿主相关结论时，必须先区分聊天外壳、control plane、transport plane 与 host adapter
 - 写宿主适配相关结论时，必须同时标出“协议全集”“控制平面主路径”“当前适配器子集”三层
+- 写时序相关结论时，必须同时标出成功路径、失败路径，以及删除失败路径后会出现的假成功错觉

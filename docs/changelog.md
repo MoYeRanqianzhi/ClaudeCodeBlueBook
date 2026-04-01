@@ -43,3 +43,8 @@
 - 新增“协议全集不等于适配器子集”专题，把协议全集 vs 宿主子集提升为长期写作约束
 - 更新蓝皮书主索引、API/架构/哲学 README，新增适配器链阅读路径
 - 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化适配器分层这一轮结论
+- 新增 Control 协议字段对照与宿主接入样例，补强 control_request / control_response / control_cancel_request 的字段级支持
+- 新增宿主路径时序与竞速专题，把本地 host、bridge、direct-connect、remote-session 的时序与 race 收拢成统一视图
+- 新增“显式失败优于假成功”专题，把 unknown subtype error、outbound-only error、abort reject 上升为设计原则
+- 更新蓝皮书主索引、API/架构/哲学 README，新增时序链阅读路径
+- 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化字段级和时序级这一轮结论
