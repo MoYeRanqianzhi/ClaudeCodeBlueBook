@@ -891,6 +891,24 @@
 - `claude-code-source-code/src/services/mcp/channelPermissions.ts:1-240`
 - `claude-code-source-code/src/services/mcp/channelAllowlist.ts:1-77`
 
+### AQ. The system often prefers partial revocation over whole-subject bans
+
+- `mcp/client.ts` 与 `toolExecution.ts` 在认证失败时倾向于只把对应连接打成 `needs-auth`，而不把主体整体判死，说明连接域可以被局部撤权。
+- `bridgeMain.ts` / `replBridge.ts` 把 `auth_failed` 与 `fatal` 分开，说明高安全会话链的失效也会分层，而不是一律理解成终局封禁。
+- `errors.ts` 与 `rateLimitMessages.ts` 把 quota limit、capacity 429、extra usage requirement 等分开表达，说明时间窗口撤权与主体处罚并不是同一层语义。
+- `mcp/config.ts` 和托管权限相关代码还说明组织经常收回的是“谁能放权”的权力，而不是主体本身。
+- 更高抽象看，Claude Code 更偏向保住主体，再按连接、能力、时间窗口或自扩权力做局部撤回；用户把这些都压成“被封了”会丢失结构诊断。
+
+证据:
+
+- `claude-code-source-code/src/services/mcp/client.ts:337-360`
+- `claude-code-source-code/src/services/tools/toolExecution.ts:1599-1623`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:198-267`
+- `claude-code-source-code/src/bridge/replBridge.ts:2018-2041`
+- `claude-code-source-code/src/services/api/errors.ts:520-575`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:143-199`
+- `claude-code-source-code/src/services/mcp/config.ts:338-355`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -949,6 +967,7 @@
 - 已补风控专题 `49-检测先进性再评估：风控不是规则堆积，而是观测驱动的分布式控制平面`，把高级性从“gate 很多”提升为“观测-恢复-判定一体化控制面”
 - 已补风控专题 `50-损失函数视角：平台究竟在最小化什么，而用户又在失去什么`，把 fail-open、fail-closed、cooldown 与误伤统一翻译成多目标损失平衡
 - 已补风控专题 `51-批准链分析：谁有资格替用户说“可以”，以及这本身为何是风控问题`，把权限批准、替代审批面和 allowlist 收束成正式信任边界
+- 已补风控专题 `52-局部撤权优于全局封号：能力撤回、连接降级与主体保全的治理哲学`，把大量“像封号”的体验重新分层为连接、能力、时间窗口和自扩权力撤回
 
 ## 下一步待办
 
