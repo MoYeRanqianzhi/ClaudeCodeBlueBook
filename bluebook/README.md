@@ -48,6 +48,7 @@
 - 多 Agent 与 prompt 编排继续读 [guides/02-多Agent编排与Prompt模板](guides/02-%E5%A4%9AAgent%E7%BC%96%E6%8E%92%E4%B8%8EPrompt%E6%A8%A1%E6%9D%BF.md)
 - 知识层与 `CLAUDE.md` 实践继续读 [guides/03-CLAUDE.md、记忆层与上下文注入实践](guides/03-CLAUDE.md%E3%80%81%E8%AE%B0%E5%BF%86%E5%B1%82%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5%E5%AE%9E%E8%B7%B5.md)
 - 想把复杂任务压缩成稳定方法，再读 [guides/06-第一性原理实践：目标、预算、对象、边界与回写](guides/06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E5%AE%9E%E8%B7%B5%EF%BC%9A%E7%9B%AE%E6%A0%87%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E8%BE%B9%E7%95%8C%E4%B8%8E%E5%9B%9E%E5%86%99.md)
+- 想先观测预算再调 prompt / tools / memory，再读 [guides/07-用Context Usage与状态回写调优Prompt和预算](guides/07-%E7%94%A8Context%20Usage%E4%B8%8E%E7%8A%B6%E6%80%81%E5%9B%9E%E5%86%99%E8%B0%83%E4%BC%98Prompt%E5%92%8C%E9%A2%84%E7%AE%97.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -66,7 +67,7 @@
 ### 5. 想研究安全、风控与治理
 
 - 产品内安全先读 `architecture/05 -> architecture/11 -> architecture/19 -> architecture/32 -> architecture/37`
-- 哲学收束看 `philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/27`
+- 哲学收束看 `philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/27 -> philosophy/31`
 - 平台风控与账号治理读 [risk/README](risk/README.md)
 
 ### 6. 想研究源码结构与工程先进性
@@ -129,6 +130,10 @@
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
 
 - `architecture/13 -> architecture/17 -> architecture/40 -> philosophy/11 -> philosophy/29`
+
+### 为什么调优上下文前必须先看预算结构
+
+- `guides/07 -> api/32 -> architecture/43 -> philosophy/22 -> philosophy/31`
 
 ## 专题入口
 

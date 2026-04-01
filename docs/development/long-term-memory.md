@@ -112,6 +112,7 @@
   - 辅助循环、侧问题与后回合Fork共享前缀
   - 显式失败语义、重复响应与反竞争条件设计
   - 叶子模块、扼流点与循环依赖切断法
+  - 预算观测、Context Suggestions与调优闭环
   - 真正的设计单位不是功能，而是运行时平面
   - 前台交互不是 UI 皮肤，而是认知控制面
   - Prompt 不是文本技巧而是契约分层
@@ -127,6 +128,7 @@
   - 复杂性应该收敛到扼流点而不是散落到产品层
   - 反竞争条件意识优于局部功能正确
   - Prompt不是一次请求而是可复用前缀资产
+  - 可观测预算优于经验调优
   - CLAUDE.md、记忆层与上下文注入实践
   - Channels、托管策略与组织级治理实践
   - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
@@ -177,6 +179,7 @@
 - API atlas 还应继续补目录级能力地图，避免“字段齐了，但能力地形仍然不可检索”
 - 宿主 API 还应继续补失败语义、取消请求、orphan response 与 transcript repair，不要只写 happy path
 - 预算器深线还应继续补 context usage、systemPromptSections、attachmentsByType 与 pending_action 的联合调优方法
+- 预算深线还应继续从“统一预算器”推进到“观测面 + 建议层 + 调优动作”的闭环写法
 - 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
 - 主入口、navigation 与专题 README 必须和正文同步更新，否则蓝皮书会先在检索层失真
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述
