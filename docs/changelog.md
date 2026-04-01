@@ -48,3 +48,8 @@
 - 新增“显式失败优于假成功”专题，把 unknown subtype error、outbound-only error、abort reject 上升为设计原则
 - 更新蓝皮书主索引、API/架构/哲学 README，新增时序链阅读路径
 - 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化字段级和时序级这一轮结论
+- 新增 SDK 消息与 Control 闭环对照表，把 request / response / follow-on message 串成宿主闭环视图
+- 新增远程恢复与重连状态机，补强 `4001` / `4003` / `401` / epoch rebuild / worker_status 回写分析
+- 新增“闭环状态机优于单向请求”专题，把宿主协议从 RPC 视角提升为 control-loop 视角
+- 更新蓝皮书主索引、API/架构/哲学 README，新增闭环链阅读路径
+- 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化闭环与远程恢复这一轮结论

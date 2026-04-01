@@ -224,6 +224,35 @@
 - `claude-code-source-code/src/server/directConnectManager.ts:88-98`
 - `claude-code-source-code/src/remote/RemoteSessionManager.ts:199-213`
 
+### O. Host protocol is a closed loop, not RPC
+
+- `initialize` 不只返回 `control_response(success)`，还会继续通过 `system:init` 把 runtime 装配态发给宿主。
+- `set_permission_mode` 不只返回 success/error，还会通过 `system:status` 把 mode 变化广播出来。
+- `can_use_tool` 的真正完成也不是 response 本身，而是 `requires_action -> running/idle` 与后续 tool/task/system messages 一起形成闭环。
+- SDK 非交互 session 还会通过 `sdkEventQueue` 补发 `task_started`、`task_progress`、`task_notification`、`session_state_changed`，说明宿主真相来自持续事件流，而不是单次 ack。
+
+证据:
+
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1457-1880`
+- `claude-code-source-code/src/utils/sessionState.ts:92-149`
+- `claude-code-source-code/src/utils/sdkEventQueue.ts:1-121`
+- `claude-code-source-code/src/cli/print.ts:1051-1076`
+
+### P. Remote recovery is layered state machine, not plain reconnect
+
+- `SessionsWebSocket` 对 `4003`、`4001`、一般 reconnect budget 做了分级处理。
+- `remoteBridgeCore` 把 `401` 看成 JWT/epoch/transport rebuild 问题，而不是普通 socket close。
+- `authRecoveryInFlight` 期间主动 drop `control_request` / `control_response` / `control_cancel_request` / `result`，说明作者宁可丢消息，也不愿制造 stale-epoch 的假成功。
+- `RemoteIO` 又在更外层补了 token refresh callback、keepalive 与 CCR state reporting，说明“恢复”还包括远端状态真相回写。
+
+证据:
+
+- `claude-code-source-code/src/remote/SessionsWebSocket.ts:234-403`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:456-588`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:780-878`
+- `claude-code-source-code/src/cli/remoteIO.ts:71-85`
+- `claude-code-source-code/src/cli/remoteIO.ts:155-196`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -259,13 +288,17 @@
 - 已补宿主路径时序与竞速专题，把本地 host、bridge、direct-connect、remote-session 四条链收拢成统一时序视角
 - 已补“显式失败优于假成功”专题，把 explicit error / cancel / reject 提升为 Agent runtime 的正式设计原则
 - 已把 `bluebook/` 目录进一步扩展为宿主链、适配器链、时序链、事件链、连接链、策略链、会话链、协作链八条阅读线
+- 已补 SDK 消息与 Control 闭环对照表，把 request / response / follow-on SDKMessage 串成闭环视角
+- 已补远程恢复与重连状态机，把 `4001` / `4003` / `401` / epoch rebuild / worker_status 回写收拢成分层恢复模型
+- 已补“闭环状态机优于单向请求”专题，把 Claude Code 从宿主控制面进一步提升为 control-loop runtime
+- 已把 `bluebook/` 目录进一步扩展为宿主链、适配器链、时序链、闭环链、事件链、连接链、策略链、会话链、协作链九条阅读线
 
 ## 下一步待办
 
 - 补 bridge / direct-connect / remote-session 三类宿主路径的更细时序图
 - 补一章“多 Agent 协作模式与 prompt 模板”
 - 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
-- 给 `SDKMessageSchema` 与 control subtype 做 message-response crosswalk，并补更细宿主接入样例
+- 给 `SDKMessageSchema` 与 control subtype 做更细的 message-response crosswalk casebook，并补更细宿主接入样例
 - 补 `REPL.tsx` / Ink 更细的 transcript mode、message actions、PromptInput 交互链
 - 补命令索引的更细表格化版本与 workflow/dynamic skills 交叉核对
 - 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
@@ -291,3 +324,4 @@
 - direct connect 与 `RemoteSessionManager` 当前实现的 control surface 明显窄于 `StructuredIO` 全量 schema，后续必须持续避免把“schema 全集”和“某个宿主已支持的子集”写成同一层事实。
 - bridge 当前虽然明显宽于 direct connect / `RemoteSessionManager`，但仍不是完整 control subtype 全集；后续必须避免把它直接等同于完整 SDK host。
 - 显式失败路径目前已经能被解释为架构原则，但尚未对 `authRecoveryInFlight`、transport close code、prompt timeout 等失败语义做完全文级整理，后续仍要继续补。
+- request / response / follow-on message 的闭环主线已经建立，但仍未把所有 subtype 做成统一 casebook；后续若继续深化，应防止不同闭环粒度混写。

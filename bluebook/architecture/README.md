@@ -17,6 +17,7 @@
 13. [StructuredIO 与 RemoteIO 控制平面](13-StructuredIO%E4%B8%8ERemoteIO%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2.md)
 14. [Bridge 与宿主适配器分层](14-Bridge%E4%B8%8E%E5%AE%BF%E4%B8%BB%E9%80%82%E9%85%8D%E5%99%A8%E5%88%86%E5%B1%82.md)
 15. [宿主路径时序与竞速](15-%E5%AE%BF%E4%B8%BB%E8%B7%AF%E5%BE%84%E6%97%B6%E5%BA%8F%E4%B8%8E%E7%AB%9E%E9%80%9F.md)
+16. [远程恢复与重连状态机](16-%E8%BF%9C%E7%A8%8B%E6%81%A2%E5%A4%8D%E4%B8%8E%E9%87%8D%E8%BF%9E%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 
 这几章和 `bluebook/` 的区别是：
 
@@ -33,3 +34,4 @@
 - 想看 host protocol、桥接、direct-connect、remote session 的控制平面：`13`
 - 想看 bridge、direct-connect、remote-session 各自位于哪一层：`14`
 - 想看本地 host、bridge、direct-connect、remote-session 的时序与 race：`15`
+- 想看 401/4001/4003、epoch rebuild、worker_status 回写等恢复状态机：`16`
