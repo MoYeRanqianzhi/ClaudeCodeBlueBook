@@ -1204,6 +1204,57 @@
 - `claude-code-source-code/src/services/compact/compact.ts:120-215`
 - `claude-code-source-code/src/services/compact/autoCompact.ts:200-220`
 
+### AI. Prompt 组装深线还应升级到“稳定前缀 + 动态尾部 + 旁路 fork”
+
+- `SYSTEM_PROMPT_DYNAMIC_BOUNDARY` 不是注释，而是 prompt cache topology 的正式边界；system prompt 的 static/dynamic 分层被源码显式固定。
+- `systemPromptSection` / `DANGEROUS_uncachedSystemPromptSection` 说明 section cache 属于 prompt runtime 本体；稳定是默认，破坏稳定必须被显式承认。
+- built-in tool 前缀、session-stable tool schema、deferred tools discovered set 共同说明“工具暴露”也是 prompt assembly 的一部分，而不是另一个独立子系统。
+- 高波动信息被不断迁出主 prompt/tool description，改成 deferred/agent/MCP delta attachments，本质是在把变化从前缀搬到尾部。
+- `CacheSafeParams`、prompt suggestion、speculation、session memory 说明 Claude Code 真正依赖的是 prefix asset network：辅助智能旁路 fork，并复用主线程前缀，而不是继续膨胀主循环。
+- `normalizeMessagesForAPI()` 说明模型最终看到的是 protocol transcript，而不是 UI transcript；prompt assembly 的最后一步是协议化整形。
+
+证据：
+
+- `claude-code-source-code/src/constants/prompts.ts:104-114`
+- `claude-code-source-code/src/constants/prompts.ts:343-355`
+- `claude-code-source-code/src/constants/prompts.ts:492-510`
+- `claude-code-source-code/src/constants/prompts.ts:560-578`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:17-50`
+- `claude-code-source-code/src/utils/systemPrompt.ts:25-56`
+- `claude-code-source-code/src/utils/api.ts:300-340`
+- `claude-code-source-code/src/tools.ts:345-364`
+- `claude-code-source-code/src/utils/toolSchemaCache.ts:1-20`
+- `claude-code-source-code/src/utils/attachments.ts:1448-1495`
+- `claude-code-source-code/src/utils/mcpInstructionsDelta.ts:20-52`
+- `claude-code-source-code/src/utils/toolSearch.ts:385-430`
+- `claude-code-source-code/src/utils/toolSearch.ts:540-560`
+- `claude-code-source-code/src/query.ts:1001-1001`
+- `claude-code-source-code/src/query/stopHooks.ts:92-99`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-220`
+- `claude-code-source-code/src/services/PromptSuggestion/speculation.ts:402-420`
+- `claude-code-source-code/src/services/PromptSuggestion/speculation.ts:740-759`
+- `claude-code-source-code/src/services/SessionMemory/sessionMemory.ts:303-325`
+- `claude-code-source-code/src/utils/messages.ts:1989-2045`
+
+### AJ. Claude Code 接受“轻微陈旧”，来换取系统级确定性
+
+- `getSessionStartDate`、memoized `getSystemContext/getUserContext` 说明 Claude Code 不把“每次都最新”当成最高目标，而把“会话内前缀尽量稳定”放在更高优先级。
+- section cache 与 sticky beta headers 共同说明：系统默认接受受控陈旧，拒绝无规律漂移。
+- 这种轻微陈旧并不是放弃更新，而是配合 delta attachments 把变化迁到尾部，以更便宜的方式回写。
+- 从 prompt 运行时看，这是一条非常成熟的取舍：与其追求所有信息绝对实时，不如先保证跨轮一致性、fork 复用性与 cache 可解释性。
+
+证据：
+
+- `claude-code-source-code/src/constants/common.ts:17-24`
+- `claude-code-source-code/src/context.ts:116-165`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:17-50`
+- `claude-code-source-code/src/utils/toolSchemaCache.ts:1-20`
+- `claude-code-source-code/src/services/api/claude.ts:1398-1418`
+- `claude-code-source-code/src/services/api/claude.ts:1460-1478`
+- `claude-code-source-code/src/services/api/claude.ts:1640-1674`
+- `claude-code-source-code/src/utils/attachments.ts:1448-1495`
+- `claude-code-source-code/src/utils/mcpInstructionsDelta.ts:20-52`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。

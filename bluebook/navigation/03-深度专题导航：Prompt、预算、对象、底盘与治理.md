@@ -29,15 +29,17 @@
 7. `architecture/39-Prompt可重放前缀、可观测预算与Section编译器.md`
 8. `architecture/42-辅助循环、侧问题与后回合Fork共享前缀.md`
 9. `architecture/46-Prompt稳定性解释层：cache-break detection的两阶段诊断器.md`
-10. `philosophy/21-Prompt魔力来自约束叠加与状态反馈.md`
-11. `philosophy/30-Prompt不是一次请求而是可复用前缀资产.md`
-12. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
-13. `philosophy/38-安全、治理、Token与Prompt稳定性本质上是同一收口问题.md`
-14. `philosophy/39-治理必须落到字节级确定性：上下文准入优于功能堆叠.md`
+10. `architecture/53-稳定前缀、动态尾部与旁路Fork：Claude Code的Cache-Aware Prompt Assembly.md`
+11. `philosophy/21-Prompt魔力来自约束叠加与状态反馈.md`
+12. `philosophy/30-Prompt不是一次请求而是可复用前缀资产.md`
+13. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
+14. `philosophy/38-安全、治理、Token与Prompt稳定性本质上是同一收口问题.md`
+15. `philosophy/39-治理必须落到字节级确定性：上下文准入优于功能堆叠.md`
+16. `philosophy/40-允许轻微陈旧，换取系统级确定性.md`
 
 这条线的核心结论是：
 
-- prompt 魔力来自装配顺序、工具 ABI、缓存边界、状态晚绑定、协作语法、辅助循环共享同一前缀资产，以及系统把 prompt 做成一条受治理的上下文准入编译链
+- prompt 魔力来自装配顺序、工具 ABI、缓存边界、状态晚绑定、协作语法、辅助循环共享同一前缀资产，以及系统敢于用“稳定前缀 + 动态尾部 + 旁路 fork”保护整体确定性
 
 ## 2. 反扩张与预算实现深线
 

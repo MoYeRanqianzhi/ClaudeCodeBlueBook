@@ -94,7 +94,7 @@
 
 ### 为什么 prompt 看起来有魔力
 
-- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> architecture/46 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30 -> philosophy/33 -> philosophy/38 -> philosophy/39`
+- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> architecture/46 -> architecture/53 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30 -> philosophy/33 -> philosophy/38 -> philosophy/39 -> philosophy/40`
 
 ### 为什么它不像普通 IDE 插件
 
@@ -122,7 +122,11 @@
 
 ### 为什么 Claude Code 的 prompt 更像上下文准入编译器
 
-- `07 -> architecture/28 -> architecture/39 -> architecture/46 -> philosophy/18 -> philosophy/30 -> philosophy/39`
+- `07 -> architecture/28 -> architecture/39 -> architecture/46 -> architecture/53 -> philosophy/18 -> philosophy/30 -> philosophy/39 -> philosophy/40`
+
+### 为什么 Claude Code 宁可接受轻微陈旧，也要换取系统级确定性
+
+- `architecture/39 -> architecture/53 -> philosophy/33 -> philosophy/39 -> philosophy/40`
 
 ### 为什么宿主接入不能只看 `query(prompt)`
 
