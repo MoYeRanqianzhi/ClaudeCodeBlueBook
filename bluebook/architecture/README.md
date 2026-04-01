@@ -37,6 +37,7 @@
 
 - [10-AgentTool与隔离编排](10-AgentTool%E4%B8%8E%E9%9A%94%E7%A6%BB%E7%BC%96%E6%8E%92.md)
 - [30-多Agent任务对象、Mailbox与后台协作运行时](30-%E5%A4%9AAgent%E4%BB%BB%E5%8A%A1%E5%AF%B9%E8%B1%A1%E3%80%81Mailbox%E4%B8%8E%E5%90%8E%E5%8F%B0%E5%8D%8F%E4%BD%9C%E8%BF%90%E8%A1%8C%E6%97%B6.md)
+- [34-workflow engine、LocalWorkflowTask与可见边界](34-workflow%20engine%E3%80%81LocalWorkflowTask%E4%B8%8E%E5%8F%AF%E8%A7%81%E8%BE%B9%E7%95%8C.md)
 
 ### 6. 权限、安全与治理平面
 
@@ -55,6 +56,7 @@
 - [20-源码质量、分层与工程先进性](20-%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E3%80%81%E5%88%86%E5%B1%82%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%85%88%E8%BF%9B%E6%80%A7.md)
 - [24-services层全景与utils-heavy设计](24-services%E5%B1%82%E5%85%A8%E6%99%AF%E4%B8%8Eutils-heavy%E8%AE%BE%E8%AE%A1.md)
 - [26-REPL前台状态机、Sticky Prompt与消息动作](26-REPL%E5%89%8D%E5%8F%B0%E7%8A%B6%E6%80%81%E6%9C%BA%E3%80%81Sticky%20Prompt%E4%B8%8E%E6%B6%88%E6%81%AF%E5%8A%A8%E4%BD%9C.md)
+- [35-REPL transcript search、selection与scroll协同](35-REPL%20transcript%20search%E3%80%81selection%E4%B8%8Escroll%E5%8D%8F%E5%90%8C.md)
 - [27-能力迁移、Consumer Subset与产品边界](27-%E8%83%BD%E5%8A%9B%E8%BF%81%E7%A7%BB%E3%80%81Consumer%20Subset%E4%B8%8E%E4%BA%A7%E5%93%81%E8%BE%B9%E7%95%8C.md)
 - [33-公开源码镜像的先进性、热点与技术债](33-%E5%85%AC%E5%BC%80%E6%BA%90%E7%A0%81%E9%95%9C%E5%83%8F%E7%9A%84%E5%85%88%E8%BF%9B%E6%80%A7%E3%80%81%E7%83%AD%E7%82%B9%E4%B8%8E%E6%8A%80%E6%9C%AF%E5%80%BA.md)
 
@@ -64,9 +66,10 @@
 - 想看状态与恢复：`06 -> 09 -> 16 -> 17 -> 25`
 - 想看 prompt contract：`18 -> 21 -> 28 -> 29`
 - 想看 prompt 魔力如何落到缓存、attachment 与协作语法：`18 -> 28 -> 31`
-- 想看多 Agent 与隔离：`10 -> 30`
+- 想看多 Agent、workflow 与隔离：`10 -> 30 -> 34`
 - 想看权限、安全、治理与 token 预算统一图：`05 -> 11 -> 19 -> 23 -> 32`
 - 想看宿主控制平面：`13 -> 14 -> 15 -> 17`
+- 想看 REPL 前台如何从状态机深入到 search / selection / scroll 协同：`04 -> 26 -> 35`
 - 想看源码先进性、热点与产品边界：`20 -> 24 -> 26 -> 27 -> 33`
 
 主线结论先看 [../03-设计哲学](../03-%E8%AE%BE%E8%AE%A1%E5%93%B2%E5%AD%A6.md) 和 [../07-运行时契约、知识层与生态边界](../07-%E8%BF%90%E8%A1%8C%E6%97%B6%E5%A5%91%E7%BA%A6%E3%80%81%E7%9F%A5%E8%AF%86%E5%B1%82%E4%B8%8E%E7%94%9F%E6%80%81%E8%BE%B9%E7%95%8C.md)。
