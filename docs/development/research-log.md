@@ -721,6 +721,30 @@
 - `claude-code-source-code/src/services/tools/toolExecution.ts:1599-1623`
 - `claude-code-source-code/src/utils/diagLogs.ts:13-30`
 
+### AH. Support routing quality depends on preserving first-party evidence surfaces
+
+- `sessionIngress.ts` 把每个 session 的远程追加串成单链，409 时会采纳服务端链头并继续，401 则立即停止；这说明会话问题首先是链路一致性问题，不是“多试几次”问题。
+- `errorLogSink.ts` 把错误和 MCP 调试写成带 `timestamp`、`cwd`、`sessionId`、`version` 的 JSONL，说明支持路径天然偏好结构化证据而不是口头描述。
+- `diagLogs.ts` 提供了无 PII 的事件与时长面，适合在用户、管理员、平台支持之间共享而不暴露过多敏感内容。
+- `sessionStorage.ts` 的 `tengu_resume_consistency_delta` 说明恢复一致性已经被当成可观测对象；“恢复后前后不一致”不应被简化成用户感受问题。
+- `asciicast.ts` 说明终端录制在存在时可以跟随 session ID 重命名并成为补充证据面，适合重建故障发生过程。
+- `toolResultStorage.ts` 明确把“已经被模型看到的内容”冻结成决策边界；从支持角度看，第一现场证据价值高于后续大量变更后的证据。
+- `settings.ts`、`permissionsLoader.ts`、`mcp/config.ts` 还说明管理员路径必须先确认是不是 managed-only 策略接管，而不是默认把一切都转成平台封禁叙事。
+- 更高抽象看，支持效率取决于三件事：正确归属、结构化证据、保护第一现场。
+
+证据:
+
+- `claude-code-source-code/src/services/api/sessionIngress.ts:28-171`
+- `claude-code-source-code/src/utils/errorLogSink.ts:1-198`
+- `claude-code-source-code/src/utils/diagLogs.ts:13-30`
+- `claude-code-source-code/src/utils/sessionStorage.ts:2208-2235`
+- `claude-code-source-code/src/utils/asciicast.ts:20-104`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:440-505`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:642-690`
+- `claude-code-source-code/src/utils/settings/settings.ts:675-726`
+- `claude-code-source-code/src/utils/permissions/permissionsLoader.ts:40-130`
+- `claude-code-source-code/src/services/mcp/config.ts:338-355`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -770,6 +794,7 @@
 - 已补风控专题 `26-苏格拉底附录：如果要把误伤再降一半，系统该追问什么`，把平台改进、研究方法反思与用户自保标准提升到“总伤害最小化”视角
 - 已补风控专题 `41-连续性成本最小化：把合规自保从故障窗口扩展到日常操作纪律`，把分钟级故障纪律上升到日级、周级的连续性成本管理
 - 已补风控专题 `42-风控最小公理与反公理：从第一性原理重写控制面哲学`，把散点机制压缩成持续证明、分层放权、受控恢复的最小原则集
+- 已补风控专题 `43-支持联动附录：按症状、证明链、归属方与证据面快速分流`，把用户、管理员、平台支持的分流规则和证据面合并成一张运行手册
 
 ## 下一步待办
 
