@@ -774,6 +774,449 @@
 - `claude-code-source-code/src/services/api/sessionIngress.ts:355-359`
 - `claude-code-source-code/src/services/api/sessionIngress.ts:462-467`
 
+### Z. Identity is assembled from multiple truth sources, not one
+
+- `config.ts` 持久化了 `oauthAccount`、`cachedStatsigGates`、`cachedGrowthBookFeatures`、`claudeCodeFirstTokenDate` 等状态，说明本地快照本身就是治理真相的一部分。
+- `storeOAuthAccountInfo(...)` 会把服务端 profile 摘要持久化进 `oauthAccount`，但 `validateForceLoginOrg()` 又明确要求关键组织边界必须重新向 `/api/oauth/profile` 取权威真相，说明快照真相和权威真相被刻意分层。
+- `user.ts` 和 `telemetryAttributes.ts` 会把 `deviceId/sessionId/accountUuid/organizationUuid/subscriptionType/rateLimitTier/firstTokenTime` 重新拼成 GrowthBook/telemetry 用户模型，说明观测层看到的是“组装后的你”。
+- `growthbook.ts` 同时依赖本地 cached features 与 fresh value；某些 cached `true` 可直接放行，cached `false` 则要阻塞复核，说明 gate 真相也有自己的时间层。
+- `sessionStorage.ts` 与 `sessionIngress.ts` 维护的是另一条会话连续性真相面：`Last-Uuid` 链、409 adopt server UUID、401 bad token，它不等同于账号画像真相。
+- 更高抽象看，很多“明明还是同一个账号，为什么系统前后说法变了”的体验，来自本地快照、服务端画像、gate 缓存与会话连续性在短时间内没有同步收敛。
+
+证据:
+
+- `claude-code-source-code/src/utils/config.ts:440-449`
+- `claude-code-source-code/src/utils/config.ts:783-795`
+- `claude-code-source-code/src/services/oauth/client.ts:517-565`
+- `claude-code-source-code/src/utils/auth.ts:1919-1999`
+- `claude-code-source-code/src/utils/user.ts:31-47`
+- `claude-code-source-code/src/utils/user.ts:78-127`
+- `claude-code-source-code/src/utils/telemetryAttributes.ts:29-70`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:466-480`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:770-789`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:921-935`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1238-1260`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-75`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:138-147`
+
+### AA. Proof burden transfer is a fairness issue, not just a support issue
+
+- `getBridgeDisabledReason()`、`useCanSwitchToExistingSubscription()`、`errors.ts` 已在主动承担一部分解释责任，说明平台并非完全把恢复路径留给用户自己猜。
+- `validateForceLoginOrg()` 在关键边界上仍要求用户补完组织与 scope 的证明链，说明某些证明责任无法被平台完全内包。
+- `diagLogs.ts` 和 startup/connectivity notifications 说明支持体系正在承接内部细语义与外部有限提示之间的翻译责任。
+- 对高波动环境用户而言，更高的连续性维护成本，本质上也是更高的证明成本；这解释了为什么“高封号体感”常常不是更高惩罚，而是更高举证难度。
+- 更高抽象看，可证明性的成本分配是否公平，本身就是平台正义问题，而不只是 UX 或支持效率问题。
+
+证据:
+
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:57-83`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:17-58`
+- `claude-code-source-code/src/services/api/errors.ts:838-883`
+- `claude-code-source-code/src/services/api/errors.ts:1109-1177`
+- `claude-code-source-code/src/utils/auth.ts:1919-1999`
+- `claude-code-source-code/src/utils/diagLogs.ts:14-57`
+
+### AB. Error families should map to shortest support paths
+
+- `errors.ts` 已将 `invalid_api_key`、`token_revoked`、`oauth_org_not_allowed`、`auth_error`、`bedrock_model_access`、`connection_error`、`ssl_cert_error`、`rate_limit` 等拆成不同分类，说明系统内部已有较完整的 error families。
+- `useCanSwitchToExistingSubscription()` 与 `getBridgeDisabledReason()` 进一步说明 entitlement/订阅激活问题不应被混写进通用 auth 家族。
+- `mcp/useManageMCPConnections.ts` 把 `needs-auth` 与 `failed/pending/disabled` 明确区分，说明连接域问题本来就应走单独支持路径。
+- `rateLimitMessages.ts` 把 session/weekly/Opus/Sonnet/extra usage/reset time 拆开，说明计费家族本身已具独立支持语义。
+- 更高抽象看，真正成熟的解释层不只要有错误分类，还要把每个错误家族绑定到最短恢复动作和支持归属，否则复杂度仍会回流到用户和支持团队。
+
+证据:
+
+- `claude-code-source-code/src/services/api/errors.ts:154-219`
+- `claude-code-source-code/src/services/api/errors.ts:838-883`
+- `claude-code-source-code/src/services/api/errors.ts:1109-1181`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:17-58`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:57-83`
+- `claude-code-source-code/src/services/mcp/useManageMCPConnections.ts:755-759`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:143-220`
+
+### AC. Proof surfaces should be productized, not left as scattered diagnostics
+
+- `authStatus()` 已经能输出当前 `authMethod`、`orgId`、`orgName`、`subscriptionType` 等核心事实，说明平台已有自证面雏形。
+- `commands/bridge/bridge.tsx` 的 `checkBridgePrerequisites()` 已把 policy、资格、版本、token 组成完整 preflight，说明高价值能力的前提检查其实已经存在，只是还未统一产品化。
+- `useCanSwitchToExistingSubscription()` 与 `useMcpConnectivityStatus()` 已在产品层提供轻量提示，分别覆盖订阅激活与连接域状态，说明平台并非没有用户面零件。
+- `diagLogs.ts` 则构成支持侧的低敏感度证据面，说明“用户仪表盘”和“支持仪表盘”本来就共享一套可证明性基础设施。
+- 更高抽象看，当前系统缺的不是诊断零件，而是把 `auth status`、资格 preflight、startup notification、support diagnostics 收敛成同一张用户可执行状态面。
+
+证据:
+
+- `claude-code-source-code/src/cli/handlers/auth.ts:232-317`
+- `claude-code-source-code/src/commands/bridge/bridge.tsx:467-503`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:17-58`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:25-64`
+- `claude-code-source-code/src/utils/diagLogs.ts:14-57`
+
+### AD. Failure handling is a four-layer budget: retry, cooldown, cached denial, terminal stop
+
+- `withRetry.ts` 说明很多 401/403/408/409/429/529 不是统一失败，而是进入不同重试预算；CCR 模式、persistent retry、subscriber gates 等都会改变是否重试。
+- `handleOAuth401Error()` 明确先检查“是不是别的进程已经恢复了”，说明恢复预算先处理并发与重复成本，再处理刷新本身。
+- `fastMode.ts` 把 runtime state 建模成 `active/cooldown`，说明某些失败的正确动作不是继续试，而是进入正式冷却层。
+- `mcp/client.ts` 的 15 分钟 `needs-auth` cache 说明系统会对某些路径做短期必败记忆，而不是每次都重新撞墙。
+- `initReplBridge.ts` 对 dead token 做跨进程 fail count 和记忆，达到阈值后直接跳过注册，说明 bridge 也有自己的缓存拒绝层。
+- `bridgeMain.ts` / `replBridge.ts` 把 `auth_failed` 与 `fatal` 分开，并在 fatal/auth_failed 后 backoff，说明终止层和恢复层并非同一语义。
+
+证据:
+
+- `claude-code-source-code/src/services/api/withRetry.ts:91-98`
+- `claude-code-source-code/src/services/api/withRetry.ts:696-780`
+- `claude-code-source-code/src/utils/auth.ts:1345-1392`
+- `claude-code-source-code/src/utils/fastMode.ts:178-233`
+- `claude-code-source-code/src/services/mcp/client.ts:257-263`
+- `claude-code-source-code/src/services/mcp/client.ts:363-370`
+- `claude-code-source-code/src/services/mcp/client.ts:2311-2322`
+- `claude-code-source-code/src/bridge/initReplBridge.ts:169-239`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:659-730`
+- `claude-code-source-code/src/bridge/replBridge.ts:2080-2105`
+
+### AE. Organization governance is a three-party coordination problem
+
+- `policyLimits` 表明平台负责下发策略接口和客户端消费链，而不是把组织限制硬编码到本地。
+- `remoteManagedSettings` 进一步说明组织治理会进入本地运行时：读取缓存、远程拉取、危险设置确认、热更新。
+- `securityCheck.tsx` 表明危险变更并非管理员单方面静默生效，终端用户仍是本地最后一跳确认者。
+- 更高抽象看，很多“像封号”的体验并不是平台与用户的二元问题，而是平台、管理员、用户三方责任边界没有被清楚对齐。
+
+证据:
+
+- `claude-code-source-code/src/services/policyLimits/index.ts:217-320`
+- `claude-code-source-code/src/services/policyLimits/index.ts:505-535`
+- `claude-code-source-code/src/services/policyLimits/index.ts:618-629`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:410-560`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:22-73`
+
+### AF. Risk control can be reduced to three proof chains
+
+- `isClaudeAISubscriber()`、`hasProfileScope()`、`getOauthAccountInfo()` 共同说明“有 token”不等于主体链成立，主体链需要凭证、来源、画像一起闭合。
+- `getBridgeDisabledReason()` 则表明资格链要额外证明订阅、full-scope、组织画像与 feature gate，而不仅是主体存在。
+- `sessionIngress.ts` 与 `mcp/client.ts` 进一步说明会话链是独立事实面：`Last-Uuid`、401、409 adopt server UUID、`needs-auth` 都不等同于主体链或资格链。
+- 更高抽象看，很多“像被封了”的体验不是单点风控，而是主体链、资格链、会话链中至少一条未能持续成立。
+
+证据:
+
+- `claude-code-source-code/src/utils/auth.ts:1564-1617`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:57-83`
+- `claude-code-source-code/src/utils/auth.ts:1919-1999`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-75`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:138-147`
+- `claude-code-source-code/src/services/mcp/client.ts:335-360`
+- `claude-code-source-code/src/services/mcp/client.ts:2311-2322`
+
+### AG. Shared vocabulary reduces semantic mismatch across user, admin, and support
+
+- `getBridgeDisabledReason()` 已能把用户最常感受到的“不能用”拆成订阅、full-scope、组织画像、gate 等共享 reason family 雏形。
+- `useCanSwitchToExistingSubscription()` 把“已有权益但未激活”做成单独提示，说明 entitlement/activation 本来就应与 auth_error 分开命名。
+- `useMcpConnectivityStatus()` 对 `failed`、`needs-auth`、connector unavailable 使用不同提示，说明连接域本来就需要单独词汇。
+- `errors.ts` 进一步把 `token_revoked`、`oauth_org_not_allowed`、`auth_error` 区分成不同错误族，说明支持侧早已有共享词汇基础。
+- `diagLogs.ts` 则提供了低敏感度事件面，支持团队可以在不看 PII 的前提下沿这些 reason family 做调查。
+- 更高抽象看，很多误伤不是因为没有答案，而是三方没用同一套词汇描述同一个失败；共享词汇本身就是降低总伤害的治理基础设施。
+
+证据:
+
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:70-83`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:21-35`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:36-63`
+- `claude-code-source-code/src/services/api/errors.ts:838-883`
+- `claude-code-source-code/src/services/api/errors.ts:1109-1133`
+- `claude-code-source-code/src/utils/diagLogs.ts:14-30`
+
+### AE. Governance uses multiple clocks, not one static boundary
+
+- `mcp/auth.ts` 会在 token 距离过期 5 分钟时主动刷新，说明会话治理在时间上前移，而不是等 401 才处理。
+- `envLessBridgeConfig.ts` 也默认把 `token_refresh_buffer_ms` 设为 300_000，说明 5 分钟预刷新是跨模块时间哲学。
+- `trustedDevice.ts` 明确要求 trusted device enrollment 必须发生在 fresh login 后 10 分钟内，说明高安全能力依赖“会话新鲜度”这一时间边界。
+- `mcp/client.ts` 把 `needs-auth` 缓存 15 分钟，说明某些失败状态会被短期记忆，而不是每次重新判断。
+- `ccrClient.ts` / `envLessBridgeConfig.ts` 使用 20 秒 heartbeat 对应 60 秒 TTL，`withRetry.ts` 用 30 秒切片 keepalive，说明会话连续性在秒级被周期性再证明。
+- `useReplBridge.tsx` 与 `initReplBridge.ts` 的 3 次失败阈值、`withRetry.ts` 的 6 小时 reset cap，则说明恢复预算还有更长时间尺度的熔断与等待上界。
+- 更高抽象看，很多“刚刚还能用、后来像被封了”的体验，不是新处罚，而是多个治理时钟在高波动环境中同时错位。
+
+证据:
+
+- `claude-code-source-code/src/services/mcp/auth.ts:1645-1660`
+- `claude-code-source-code/src/bridge/envLessBridgeConfig.ts:17-23`
+- `claude-code-source-code/src/bridge/envLessBridgeConfig.ts:51-53`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:94-97`
+- `claude-code-source-code/src/services/mcp/client.ts:257-263`
+- `claude-code-source-code/src/services/mcp/client.ts:368-370`
+- `claude-code-source-code/src/cli/transports/ccrClient.ts:32-33`
+- `claude-code-source-code/src/services/api/withRetry.ts:96-98`
+- `claude-code-source-code/src/services/api/withRetry.ts:444-459`
+- `claude-code-source-code/src/services/api/withRetry.ts:500-505`
+- `claude-code-source-code/src/services/api/withRetry.ts:818-821`
+- `claude-code-source-code/src/hooks/useReplBridge.tsx:35-40`
+- `claude-code-source-code/src/bridge/initReplBridge.ts:169-239`
+
+### AF. Long-horizon user safety is mostly continuity-cost management
+
+- `auth.ts` 的缓存失效、401 去重、跨进程刷新锁，说明系统显式在对抗“多实例、多缓存、多时钟”导致的身份分叉；用户长期混用多条身份路径，会抬高主体链重证明成本。
+- `mcp/auth.ts` 与 `envLessBridgeConfig.ts` 都采用 5 分钟级的预刷新缓冲，说明成熟控制面更关心“不要带着快过期凭证进入长链路”，而不是“等出错后再补救”。
+- `mcp/client.ts` 的 `needs-auth` 15 分钟缓存，以及 `toolExecution.ts` 把局部连接域直接标记为 `needs-auth`，说明局部认证失效会被短期记忆；用户应先局部恢复，避免把子系统问题扩大成全局重置。
+- `trustedDevice.ts` 把 fresh login 10 分钟窗口与 90 天滚动 token 结合起来，说明高安全能力依赖的是“设备连续性 + 会话新鲜度”，不是普通登录成功后的自动延伸。
+- `remoteManagedSettings/index.ts`、`policyLimits/index.ts` 与 `securityCheck.tsx` 共同表明：平台治理是缓慢轮询、校验和缓存、危险变更强确认的组合；长期频繁切组织、切环境、切机器，会显著增加资格链与会话链的解释成本。
+- 更高抽象看，合规自保的核心不是对抗检测，而是长期降低主体链、资格链、会话链的重证明成本。
+
+证据:
+
+- `claude-code-source-code/src/utils/auth.ts:1303-1556`
+- `claude-code-source-code/src/services/mcp/auth.ts:1633-1668`
+- `claude-code-source-code/src/bridge/envLessBridgeConfig.ts:14-23`
+- `claude-code-source-code/src/bridge/envLessBridgeConfig.ts:47-90`
+- `claude-code-source-code/src/services/mcp/client.ts:257-337`
+- `claude-code-source-code/src/services/tools/toolExecution.ts:1599-1623`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:17-27`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:87-98`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:1-23`
+- `claude-code-source-code/src/services/policyLimits/index.ts:1-23`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:14-57`
+
+### AG. The control plane can be compressed into a small set of axioms
+
+- `bridgeEnabled.ts` 与 `trustedDevice.ts` 共同说明：权限越高，所需证明越重；claude.ai 订阅、profile scope、组织画像、fresh login、trusted device 并不是可替换条件，而是高能力路径的叠加证明。
+- `growthbook.ts` 的 `checkGate_CACHED_OR_BLOCKING()` 明确承认 stale `false` 比 stale `true` 更容易伤害用户，因此对负向拒绝要求更强的新鲜证据；这是“高伤害拒绝比低伤害放行更谨慎”的工程化版本。
+- `permissions.ts` 与 `shadowedRuleDetection.ts` 说明这种非对称甚至内建在本地权限引擎里：deny / ask / safety check 先于 bypass 和 allow 执行，宽规则遮蔽窄 allow 还会被显式标记。
+- `auth.ts` 的 `validateForceLoginOrg()` 强制去服务端 profile 验证组织，而不是信任本地可写配置；这表明本地真相只能作加速层，不能单独承担裁决。
+- `settings.ts` 与 `permissionsLoader.ts` 还说明治理看重“来源可信度”而不只看“配置内容”本身：危险模式和某些自动行为不信任 projectSettings，企业托管策略甚至可以直接压缩规则面。
+- `remoteManagedSettings/index.ts` 的 fail-open 与 `securityCheck.tsx` 的危险设置强确认共同表明：治理策略必须按风险等级切换，不能一律 fail-open 或一律 fail-closed。
+- `errors.ts`、`mcp/client.ts`、`toolExecution.ts` 则说明系统允许局部撤权、局部失效、局部恢复，而不是把所有失败压成单一“封禁”语义。
+- `diagLogs.ts` 进一步说明可解释性也要受限于低敏感证据面；平台并没有把“无限采集”当成成熟风控的前提。
+- 更高抽象看，这套系统的核心哲学可以压缩为：持续证明、分层放权、受控恢复、低敏感诊断。
+
+证据:
+
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:15-88`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:17-27`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:87-98`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:891-929`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1-220`
+- `claude-code-source-code/src/utils/permissions/shadowedRuleDetection.ts:1-220`
+- `claude-code-source-code/src/utils/auth.ts:1917-1969`
+- `claude-code-source-code/src/utils/settings/settings.ts:1-220`
+- `claude-code-source-code/src/utils/permissions/permissionsLoader.ts:1-220`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:431-500`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:604-604`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:14-57`
+- `claude-code-source-code/src/services/api/errors.ts:838-878`
+- `claude-code-source-code/src/services/api/errors.ts:1109-1132`
+- `claude-code-source-code/src/services/mcp/client.ts:319-360`
+- `claude-code-source-code/src/services/tools/toolExecution.ts:1599-1623`
+- `claude-code-source-code/src/utils/diagLogs.ts:13-30`
+
+### AH. Support routing quality depends on preserving first-party evidence surfaces
+
+- `sessionIngress.ts` 把每个 session 的远程追加串成单链，409 时会采纳服务端链头并继续，401 则立即停止；这说明会话问题首先是链路一致性问题，不是“多试几次”问题。
+- `errorLogSink.ts` 把错误和 MCP 调试写成带 `timestamp`、`cwd`、`sessionId`、`version` 的 JSONL，说明支持路径天然偏好结构化证据而不是口头描述。
+- `diagLogs.ts` 提供了无 PII 的事件与时长面，适合在用户、管理员、平台支持之间共享而不暴露过多敏感内容。
+- `sessionStorage.ts` 的 `tengu_resume_consistency_delta` 说明恢复一致性已经被当成可观测对象；“恢复后前后不一致”不应被简化成用户感受问题。
+- `asciicast.ts` 说明终端录制在存在时可以跟随 session ID 重命名并成为补充证据面，适合重建故障发生过程。
+- `toolResultStorage.ts` 明确把“已经被模型看到的内容”冻结成决策边界；从支持角度看，第一现场证据价值高于后续大量变更后的证据。
+- `settings.ts`、`permissionsLoader.ts`、`mcp/config.ts` 还说明管理员路径必须先确认是不是 managed-only 策略接管，而不是默认把一切都转成平台封禁叙事。
+- 更高抽象看，支持效率取决于三件事：正确归属、结构化证据、保护第一现场。
+
+证据:
+
+- `claude-code-source-code/src/services/api/sessionIngress.ts:28-171`
+- `claude-code-source-code/src/utils/errorLogSink.ts:1-198`
+- `claude-code-source-code/src/utils/diagLogs.ts:13-30`
+- `claude-code-source-code/src/utils/sessionStorage.ts:2208-2235`
+- `claude-code-source-code/src/utils/asciicast.ts:20-104`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:440-505`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:642-690`
+- `claude-code-source-code/src/utils/settings/settings.ts:675-726`
+- `claude-code-source-code/src/utils/permissions/permissionsLoader.ts:40-130`
+- `claude-code-source-code/src/services/mcp/config.ts:338-355`
+
+### AI. The repository itself is treated as a potentially hostile input source
+
+- `permissions.ts` 把 deny / ask / safety check 放在 bypass 和 always-allow 之前，说明系统默认更重视“先避免错误放权”，而不是“尽快让配置生效”。
+- `shadowedRuleDetection.ts` 会把宽 deny/ask 遮蔽窄 allow 视为显式不可达规则，说明规则面的可解释性本身就是治理目标之一。
+- `settings.ts` 明确把 `projectSettings` 排除在 dangerous mode、auto mode、plan mode 相关高风险 opt-in 之外，并直接写明是 malicious project / RCE risk。
+- `permissionsLoader.ts` 的 `allowManagedPermissionRulesOnly` 表明企业托管可以直接收缩权限规则面，而不只是提高某条规则优先级。
+- `settings.ts` 对 `policySettings` 使用 first source wins，说明某些治理面关心的首先是“来源是否可信”，而不是“把所有来源都合并一下”。
+- `mcp/config.ts` 又进一步展示了 allow/deny 的非对称：allow 可以被托管垄断，deny 仍允许用户保留自我保护权。
+- 更高抽象看，Claude Code 的信任模型不是“项目声明什么就信什么”，而是“共享对象不能自动替操作者声明高风险同意”。
+
+证据:
+
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1161-1295`
+- `claude-code-source-code/src/utils/permissions/shadowedRuleDetection.ts:1-220`
+- `claude-code-source-code/src/utils/settings/settings.ts:675-726`
+- `claude-code-source-code/src/utils/settings/settings.ts:875-940`
+- `claude-code-source-code/src/utils/permissions/permissionsLoader.ts:28-130`
+- `claude-code-source-code/src/services/mcp/config.ts:338-355`
+
+### AJ. Auth continuity is engineered as a multi-cache, multi-process coordination problem
+
+- `saveOAuthTokensIfNeeded()` 不会让 refresh 过程里的空 `subscriptionType` / `rateLimitTier` 覆盖已有稳定值，说明作者在主动防止局部不完整响应破坏连续主体画像。
+- `handleOAuth401Error()` 先清缓存并重读 secure storage，若发现另一个终端已经写入新 token 就直接接上，而不是立刻强制重登；401 被当作连续性再协商，而不是简单失败。
+- `checkAndRefreshOAuthTokenIfNeeded()` 通过 mtime 检测、pending promise 去重、跨进程 lockfile 和锁后二次确认，对抗多终端并发刷新造成的 relogin loops。
+- `macOsKeychainStorage.ts` 的 stale-while-error、TTL、generation guard 说明在安全存储短时不稳定时，系统宁可短时保留旧真相，也不愿立刻把所有子系统打成未登录。
+- `login.tsx` 在登录成功后会重同步 GrowthBook、policy limits、managed settings、trusted device 与 authVersion，说明登录本质上是控制面重建动作，不是单一按钮事件。
+- `trustedDevice.ts` 进一步证明高安全远程链路有独立于普通登录的认证连续性要求：fresh login 10 分钟窗口、旧 token 清理、再 enrollment。
+- 更高抽象看，Claude Code 的认证问题不是“有没有登录”，而是“多个子系统是否仍共享足够新鲜的同一主体真相”。
+
+证据:
+
+- `claude-code-source-code/src/utils/auth.ts:1193-1252`
+- `claude-code-source-code/src/utils/auth.ts:1303-1556`
+- `claude-code-source-code/src/utils/secureStorage/macOsKeychainStorage.ts:25-111`
+- `claude-code-source-code/src/commands/login/login.tsx:20-61`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:41-98`
+
+### AK. Recovery is constrained by freeze semantics and single-chain continuity
+
+- `sessionIngress.ts` 通过 per-session sequential append、`Last-Uuid`、409 adopt server UUID 与 401 immediate fail，把远程 transcript 明确建模成单链追加，而不是自由并发写入。
+- `sessionStorage.ts` 对 sidechain/main-thread 的注释说明，本地可有局部分支，但权威远程链仍必须单线；否则就会出现 409、悬挂 parentUuid 与 resume 断链。
+- `toolResultStorage.ts` 明确把“模型已经见过的结果”冻结成后续决策边界：已替换的要 byte-identical 重放，已见未替换的不能事后再改写，以保持 prompt cache 稳定。
+- `withRetry.ts` 与 `fastMode.ts` 则把短等待保持 fast mode、长等待进入 cooldown 做成显式状态机；失败窗口并非空白，而是带状态的窗口。
+- `replBridge.ts` 又说明某些 stale transport/work state 若继续硬撑，会形成 10 分钟以上 dead window，因此系统宁可 tear down 旧状态以换取快速重分发。
+- `sessionStorage.ts` 的 `tengu_resume_consistency_delta` 表明恢复前后的一致性本身就是正式监控对象，不是附带体验问题。
+- 更高抽象看，Claude Code 恢复逻辑优先保护链头一致性与已见前缀稳定，因此用户在故障窗口里乱试，往往是在一个已冻结部分历史事实的系统里继续叠加噪声。
+
+证据:
+
+- `claude-code-source-code/src/services/api/sessionIngress.ts:28-171`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1228-1261`
+- `claude-code-source-code/src/utils/sessionStorage.ts:2208-2235`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:440-505`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:642-690`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:939-970`
+- `claude-code-source-code/src/services/api/withRetry.ts:261-301`
+- `claude-code-source-code/src/services/api/withRetry.ts:433-505`
+- `claude-code-source-code/src/utils/fastMode.ts:178-228`
+- `claude-code-source-code/src/bridge/replBridge.ts:1028-1055`
+
+### AL. High-volatility users need rights-preserving discipline more than evasive tactics
+
+- `errors.ts` 的 `token_revoked`、`oauth_org_not_allowed`、generic auth_error 以及 CCR 专用 auth 提示，说明平台内部已有比较明确的身份/组织错误分层；用户若只说“被封了”会丢失最短分流路径。
+- `rateLimitMessages.ts` 把 reset time、session limit、weekly limit、out of extra usage 显式建模，说明很多“突然不能继续”并不是处罚，而是额度/冷却窗口；用户利益保护首先要求不要把这类问题误报成封禁。
+- `diagLogs.ts` 提供无 PII 的 diagnostics 事件面，意味着高波动环境用户可以在较低敏感度前提下保留第一现场，而不必在证据保护和隐私之间二选一。
+- 结合前面认证连续性、冻结语义、支持分流的证据，可以得出一个更高层结论：对高波动环境用户，最有效的权益保护不是规避检测，而是稳定主路径、减少连续性噪声、保留第一现场并用共享词汇描述问题。
+
+证据:
+
+- `claude-code-source-code/src/services/api/errors.ts:838-878`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:143-199`
+- `claude-code-source-code/src/utils/diagLogs.ts:13-30`
+
+### AM. Identity continuity is bound to config-home path, storage slot, and org-scoped managed context
+
+- `envUtils.ts` 把 Claude 的本地状态根绑定到 `CLAUDE_CONFIG_DIR` 或 `~/.claude`，说明 config home 本身就是连续性边界的一部分。
+- `macOsKeychainHelpers.ts` 用 config-dir 路径哈希参与 keychain service name，意味着不同 config home 对应不同 secure-storage 槽位，而不是同一身份池。
+- `plainTextStorage.ts` 与 `fallbackStorage.ts` 则说明即使走 plaintext fallback，也仍沿同一 config home 写 `.credentials.json`，并尽量删除旧主存储以免 stale 凭证遮蔽 fresh 凭证。
+- `auth.ts` 的 managed OAuth context 明确禁止 CCR / Claude Desktop 这类受管环境回退到用户终端自己的 API key 来源；凭证存在不等于这条身份路径对当前环境合法。
+- `validateForceLoginOrg()` 进一步对组织不匹配做 fail-closed，并明确要求移除错误 env token 或重新按正确组织登录。
+- 更高抽象看，Claude Code 在验证的不只是 token，而是“这个 token 是否沿正确 config root、正确 storage slot、正确运行场景和正确组织边界进入当前环境”。
+
+证据:
+
+- `claude-code-source-code/src/utils/envUtils.ts:5-14`
+- `claude-code-source-code/src/utils/secureStorage/index.ts:1-16`
+- `claude-code-source-code/src/utils/secureStorage/macOsKeychainHelpers.ts:23-40`
+- `claude-code-source-code/src/utils/secureStorage/plainTextStorage.ts:8-57`
+- `claude-code-source-code/src/utils/secureStorage/fallbackStorage.ts:20-58`
+- `claude-code-source-code/src/utils/auth.ts:83-110`
+- `claude-code-source-code/src/utils/auth.ts:1917-2000`
+
+### AN. The system’s technical sophistication is in observability-coupled control, not just more gates
+
+- `permissionLogging.ts` 把 permission accept/reject 正式接入 analytics、OTel 和 code-edit metrics，说明权限判定本身就是控制面事件，而非本地黑箱结果。
+- `telemetry/events.ts` 给事件加上 session-scoped attributes 与 monotonic `event.sequence`，`sessionTracing.ts` 又把 interaction / tool / llm_request 做成统一 tracing 语义，说明系统把时序与归属当成一等事实。
+- `perfettoTracing.ts` 进一步把 agent hierarchy、API 时长、tool 执行、等待时间写成 Perfetto trace，代表它不仅记录结果，还记录跨 agent 的运行机制。
+- `bridgeMain.ts` 的 heartbeat/re-dispatch/ack-after-commit 逻辑说明系统在很多关键点上优化的是“不可恢复损失窗口最小化”，而不是表面吞吐或单次成功率最大化。
+- `firstPartyEventLoggingExporter.ts` 还会把本 session 的事件批量落盘并重试前批次，说明观测连续性本身也是正式工程目标。
+- 更高抽象看，Claude Code 的先进性不在 gate 数量，而在把权限、恢复、观测、实验和分布式时序组织成同一张控制平面。
+
+证据:
+
+- `claude-code-source-code/src/hooks/toolPermission/permissionLogging.ts:1-220`
+- `claude-code-source-code/src/utils/telemetry/events.ts:1-63`
+- `claude-code-source-code/src/utils/telemetry/sessionTracing.ts:1-220`
+- `claude-code-source-code/src/utils/telemetry/perfettoTracing.ts:1-220`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:196-320`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:832-890`
+- `claude-code-source-code/src/services/analytics/firstPartyEventLoggingExporter.ts:130-240`
+
+### AO. Many seemingly inconsistent choices become coherent under a multi-loss objective
+
+- `growthbook.ts` 的 `checkGate_CACHED_OR_BLOCKING()` 说明 stale `true` 和 stale `false` 的损失不对称；系统优先减少错误阻断而不是追求表面判定对称。
+- `remoteManagedSettings/index.ts` 的 stale-cache / fail-open，与 `securityCheck.tsx` 的危险变更强确认，说明低风险和高风险路径在损失排序上不同。
+- `withRetry.ts`、`fastMode.ts` 与 `rateLimitMessages.ts` 说明平台显式把短时等待、长时 cooldown、reset time 变成正式状态，而不是把一切都简化成继续重试。
+- `bridgeMain.ts` 的 ack-after-commit、heartbeat-before-backoff 与 re-dispatch 逻辑说明系统更怕不可恢复丢失窗口，而不是短时多做一次重发或多留一个 stale 状态。
+- `permissions.ts` 与 `settings.ts` 的 deny/ask 优先、projectSettings 不可信，则说明高风险错误放权的损失被排在很前面。
+- 更高抽象看，Claude Code 的风控不是在最小化一个指标，而是在平台安全、不可恢复状态、用户误伤、支持解释成本之间做动态平衡。
+
+证据:
+
+- `claude-code-source-code/src/services/analytics/growthbook.ts:891-929`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:431-500`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:14-57`
+- `claude-code-source-code/src/services/api/withRetry.ts:261-304`
+- `claude-code-source-code/src/utils/fastMode.ts:178-228`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:143-199`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:196-269`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:832-890`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1161-1295`
+- `claude-code-source-code/src/utils/settings/settings.ts:875-940`
+
+### AP. Approval itself is treated as a governed trust surface
+
+- `permissionLogging.ts` 把 accept/reject 来源显式建模为 config/user/hook/classifier，并把批准结果写入 analytics、OTel 和 toolDecisions，说明批准不是无来源事件。
+- `channelPermissions.ts` 允许 Telegram/iMessage/Discord 之类 channel relay 参与 permission prompt，但批准必须通过结构化事件而非普通文本；源码还明确指出真正的 trust boundary 是 allowlist。
+- `channelAllowlist.ts` 进一步说明替代批准面必须先通过 `{marketplace, plugin}` allowlist 和总开关 gate，而不是任何能发消息的插件都自动拥有批准资格。
+- 更高抽象看，Claude Code 在治理的不只是动作本身，也在治理“谁有资格替用户说 yes”。批准权本身就是风控对象。
+
+证据:
+
+- `claude-code-source-code/src/hooks/toolPermission/permissionLogging.ts:1-240`
+- `claude-code-source-code/src/services/mcp/channelPermissions.ts:1-240`
+- `claude-code-source-code/src/services/mcp/channelAllowlist.ts:1-77`
+
+### AQ. The system often prefers partial revocation over whole-subject bans
+
+- `mcp/client.ts` 与 `toolExecution.ts` 在认证失败时倾向于只把对应连接打成 `needs-auth`，而不把主体整体判死，说明连接域可以被局部撤权。
+- `bridgeMain.ts` / `replBridge.ts` 把 `auth_failed` 与 `fatal` 分开，说明高安全会话链的失效也会分层，而不是一律理解成终局封禁。
+- `errors.ts` 与 `rateLimitMessages.ts` 把 quota limit、capacity 429、extra usage requirement 等分开表达，说明时间窗口撤权与主体处罚并不是同一层语义。
+- `mcp/config.ts` 和托管权限相关代码还说明组织经常收回的是“谁能放权”的权力，而不是主体本身。
+- 更高抽象看，Claude Code 更偏向保住主体，再按连接、能力、时间窗口或自扩权力做局部撤回；用户把这些都压成“被封了”会丢失结构诊断。
+
+证据:
+
+- `claude-code-source-code/src/services/mcp/client.ts:337-360`
+- `claude-code-source-code/src/services/tools/toolExecution.ts:1599-1623`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:198-267`
+- `claude-code-source-code/src/bridge/replBridge.ts:2018-2041`
+- `claude-code-source-code/src/services/api/errors.ts:520-575`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:143-199`
+- `claude-code-source-code/src/services/mcp/config.ts:338-355`
+
+### AR. High-volatility users benefit most from low-cost status surfaces and fixed operating order
+
+- `authStatus()` 已经能输出 `authMethod`、`apiProvider`、`orgId`、`subscriptionType` 等最关键状态，这说明平台至少为用户提供了低成本的会前/故障时自检入口。
+- `useMcpConnectivityStatus.tsx` 会把 local MCP failed、claude.ai connector unavailable、needs-auth 分开提示，并且只对“曾经连通过”的 claude.ai connector 提高提醒优先级，说明平台在鼓励用户按状态变化而不是按情绪升级问题。
+- 结合前面认证连续性、局部撤权和支持分流的证据，可以推导出一个更严格的运行 SOP：平时固定主路径，开工前先看状态面，故障窗口先冻结变量，再按共享词汇和结构化证据升级求助。
+
+证据:
+
+- `claude-code-source-code/src/cli/handlers/auth.ts:233-315`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:1-88`
+
+### AS. Many platform-side gains now depend more on productizing existing surfaces than inventing new gates
+
+- `authStatus()` 已经提供主体、组织、订阅、provider 维度的低成本状态面，但仍主要停留在命令输出层。
+- `status.tsx` 已经能汇总 MCP connected / needs-auth / failed / pending，说明连接健康面已经具备产品化基础。
+- `MCPListPanel.tsx` 进一步把 enterprise / user / local / project / claude.ai connector 分层展示，意味着连接状态不仅存在，而且已经有分层 UI 语义。
+- `useMcpConnectivityStatus.tsx` 说明平台已经掌握“状态变化优于静态坏状态”的提示原则，只是还没有完全扩展到统一风控状态面。
+- 更高抽象看，误伤进一步下降的主要瓶颈不再只是缺少底层能力，而是这些现有状态面、证据面和分流面还没完全前置成统一产品。
+
+证据:
+
+- `claude-code-source-code/src/cli/handlers/auth.ts:233-315`
+- `claude-code-source-code/src/utils/status.tsx:1-180`
+- `claude-code-source-code/src/components/mcp/MCPListPanel.tsx:1-160`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:1-88`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -834,6 +1277,20 @@
 - 已补风控专题 `25-问题导向索引：按症状、源码入口与合规动作阅读风控专题`，把症状、章节、源码入口、支持路径与 `risk/` 的问题主线压到同一张检索页
 - 已补风控专题 `27-判定非对称性矩阵：哪些路径要快放行，哪些路径必须硬收口`，把 selective failure semantics 从设计哲学下沉成工程对照表
 - 已补风控专题 `26-苏格拉底附录：如果要把误伤再降一半，系统该追问什么`，把平台改进、研究方法反思与用户自保标准提升到“总伤害最小化”视角
+- 已补风控专题 `41-连续性成本最小化：把合规自保从故障窗口扩展到日常操作纪律`，把分钟级故障纪律上升到日级、周级的连续性成本管理
+- 已补风控专题 `42-风控最小公理与反公理：从第一性原理重写控制面哲学`，把散点机制压缩成持续证明、分层放权、受控恢复的最小原则集
+- 已补风控专题 `43-支持联动附录：按症状、证明链、归属方与证据面快速分流`，把用户、管理员、平台支持的分流规则和证据面合并成一张运行手册
+- 已补风控专题 `44-仓库不是可信主体：从权限优先级到托管收口的信任边界`，把权限顺序、托管收口和项目不可信原则收束成同一套信任模型
+- 已补风控专题 `45-认证连续性工程：缓存、锁、密钥链与为什么不要乱换登录路径`，把认证问题从“登录成功/失败”提升为多缓存、多进程的连续性工程
+- 已补风控专题 `46-冻结语义与单链恢复：为什么故障窗口越乱试越像被封了`，把恢复问题从“多试几次”提升为单链、一致性和前缀稳定问题
+- 已补风控专题 `47-高波动环境用户的合规权益保护：如何降低误伤并缩短自证路径`，把中国/高波动环境用户的利益保护收束成稳定主路径、证据保全和共享词汇三条主线
+- 已补风控专题 `48-身份路径绑定：配置根、托管环境与组织闭锁为什么必须一致`，把 config root、storage slot、managed context 与 forceLoginOrg 收束成同一条身份路径模型
+- 已补风控专题 `49-检测先进性再评估：风控不是规则堆积，而是观测驱动的分布式控制平面`，把高级性从“gate 很多”提升为“观测-恢复-判定一体化控制面”
+- 已补风控专题 `50-损失函数视角：平台究竟在最小化什么，而用户又在失去什么`，把 fail-open、fail-closed、cooldown 与误伤统一翻译成多目标损失平衡
+- 已补风控专题 `51-批准链分析：谁有资格替用户说“可以”，以及这本身为何是风控问题`，把权限批准、替代审批面和 allowlist 收束成正式信任边界
+- 已补风控专题 `52-局部撤权优于全局封号：能力撤回、连接降级与主体保全的治理哲学`，把大量“像封号”的体验重新分层为连接、能力、时间窗口和自扩权力撤回
+- 已补风控专题 `53-高波动环境严格运行SOP：从日常纪律到升级求助的四阶段手册`，把中国/高波动环境用户的合规建议压成可执行顺序
+- 已补风控专题 `54-如果要把误伤再降一半：平台必须把哪些现有能力前置成产品`，把改进重点从“再加 gate”转向“统一状态面、证据面和升级面”
 
 ### R. 能力全集必须和公开度 / 成熟度一起叙述
 
