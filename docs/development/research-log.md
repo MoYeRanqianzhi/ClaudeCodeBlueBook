@@ -354,6 +354,33 @@
 - `claude-code-source-code/src/utils/messages/mappers.ts:145-196`
 - `claude-code-source-code/src/server/directConnectManager.ts:100-109`
 
+### S. Risk control is signal fusion around continuity, not a single ban verdict
+
+- `bridgeEnabled.ts` 把“Remote Control 不可用”拆成订阅缺失、full-scope token 缺失、组织画像缺失、gate 未放开、build 不支持等多类诊断，说明资格拒绝是分层语义，不是单点处罚。
+- `validateForceLoginOrg()` 在 `forceLoginOrgUUID` 存在时对“无法证明组织归属”也 fail-closed，说明组织边界优先级高于可用性，网络或画像问题也会被收敛成拒绝体验。
+- `policyLimits` 整体偏 fail-open，但 dangerous managed settings 变化会弹本地阻塞确认框，拒绝后直接退出，说明系统在普通连续性与危险边界之间做分级治理。
+- `trustedDevice`、`bridgeApi`、`sessionIngress` 共同体现“高安全会话连续性”思路：trusted device 有独立 enrollment 窗口，401 只做有条件恢复，409 优先恢复服务端状态真相。
+- `mcp/auth.ts` 把 `403 insufficient_scope` 单独转为 step-up pending，而不是误走 refresh，说明“授权不足”被明确定义为不同于“凭证失效”的治理语义。
+- `rateLimitMessages.ts` 与 `useCanSwitchToExistingSubscription.tsx` 明确把 usage limit、extra usage、订阅未激活写成独立解释路径，进一步证明很多“不能用”并不是处罚。
+- `diagLogs.ts` 与 MCP 通知路径体现出无 PII 诊断和 anti-nag 设计，说明平台已把误伤后的支持成本与解释成本纳入工程边界。
+
+证据:
+
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:17-82`
+- `claude-code-source-code/src/utils/auth.ts:1917-1999`
+- `claude-code-source-code/src/services/policyLimits/index.ts:1-111`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:1-64`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:17-174`
+- `claude-code-source-code/src/bridge/bridgeApi.ts:15-122`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:47-169`
+- `claude-code-source-code/src/services/mcp/auth.ts:1345-1468`
+- `claude-code-source-code/src/services/mcp/auth.ts:1614-1667`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:1-179`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:1-48`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:1-80`
+- `claude-code-source-code/src/utils/config.ts:194-211`
+- `claude-code-source-code/src/utils/diagLogs.ts:1-60`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -397,6 +424,7 @@
 - 已补双通道状态同步与外部元数据回写专题，把事件时间线与状态快照回写收拢成统一架构图
 - 已补“外化状态优于推断状态”专题，把宿主真相从“自己猜”提升为“主动外化”
 - 已把 `bluebook/` 目录进一步扩展为状态同步链，并把“真相面”加入第一性原理阅读路径
+- 已补风控专题 `24-信号融合、连续性断裂与“像被封了”的生成机制`，把资格、组织、设备、授权、计费、诊断信号如何压缩成封号体感单独抽成一章
 
 ## 下一步待办
 
