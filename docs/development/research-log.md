@@ -929,6 +929,23 @@
 - `claude-code-source-code/src/state/onChangeAppState.ts:50-92`
 - `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:332-460`
 
+### AD. 预算深线已升级到“观测 -> 建议 -> 调优”的闭环
+
+- `get_context_usage`、`/context` 与 `ContextVisualization` 共享同一条采集路径，观测的是模型实际会看到的工作集，而不是 REPL 原始历史。
+- `ContextSuggestions` 说明 Claude Code 不满足于告诉你“哪里胖”，还会继续把预算结构翻译成下一步动作建议。
+- 这意味着预算在 Claude Code 里不只是控制器，也是建议器；它既约束系统，也帮助人类和宿主决定下一步该改 prompt、改工具面，还是改对象选择。
+
+证据：
+
+- `claude-code-source-code/src/utils/analyzeContext.ts:918-1085`
+- `claude-code-source-code/src/utils/contextSuggestions.ts:31-220`
+- `claude-code-source-code/src/commands/context/context.tsx:12-60`
+- `claude-code-source-code/src/commands/context/context-noninteractive.ts:16-120`
+- `claude-code-source-code/src/components/ContextVisualization.tsx:14-20`
+- `claude-code-source-code/src/components/ContextVisualization.tsx:105-245`
+- `claude-code-source-code/src/components/ContextSuggestions.tsx:11-45`
+- `claude-code-source-code/src/cli/print.ts:2961-2978`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。
