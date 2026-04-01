@@ -15,6 +15,7 @@
 11. [权限系统全链路与 Auto Mode](11-%E6%9D%83%E9%99%90%E7%B3%BB%E7%BB%9F%E5%85%A8%E9%93%BE%E8%B7%AF%E4%B8%8EAuto%20Mode.md)
 12. [ClaudeAPI 与流式工具执行](12-ClaudeAPI%E4%B8%8E%E6%B5%81%E5%BC%8F%E5%B7%A5%E5%85%B7%E6%89%A7%E8%A1%8C.md)
 13. [StructuredIO 与 RemoteIO 控制平面](13-StructuredIO%E4%B8%8ERemoteIO%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2.md)
+14. [Bridge 与宿主适配器分层](14-Bridge%E4%B8%8E%E5%AE%BF%E4%B8%BB%E9%80%82%E9%85%8D%E5%99%A8%E5%88%86%E5%B1%82.md)
 
 这几章和 `bluebook/` 的区别是：
 
@@ -29,3 +30,4 @@
 - 想看多 Agent 的隔离编排：`10`
 - 想看扩展与 remote 装配：`03`
 - 想看 host protocol、桥接、direct-connect、remote session 的控制平面：`13`
+- 想看 bridge、direct-connect、remote-session 各自位于哪一层：`14`

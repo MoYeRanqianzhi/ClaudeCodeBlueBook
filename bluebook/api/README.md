@@ -35,6 +35,7 @@
 ## 宿主与传输面
 
 - [StructuredIO 与 RemoteIO 宿主协议手册](13-StructuredIO%E4%B8%8ERemoteIO%E5%AE%BF%E4%B8%BB%E5%8D%8F%E8%AE%AE%E6%89%8B%E5%86%8C.md)
+- [Control 子类型与宿主适配矩阵](14-Control%E5%AD%90%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%AE%BF%E4%B8%BB%E9%80%82%E9%85%8D%E7%9F%A9%E9%98%B5.md)
 
 建议和蓝皮书主线搭配阅读：
 
@@ -46,3 +47,4 @@
 - 需要 session/state surface、runtime truth 与恢复接口时再看 `09 -> ../architecture/09 -> ../philosophy/06`
 - 需要统一扩展面、frontmatter 字段、plugin/agent trust boundary 与 MCP 连接平面时再看 `03 -> 10 -> 12 -> ../philosophy/08`
 - 需要 host control protocol、`control_request` / `control_response`、远程 host 适配路径时再看 `13 -> ../architecture/13 -> ../philosophy/09`
+- 需要分清 schema 全集、bridge 子集、direct-connect 子集、remote-session 子集时再看 `14 -> ../architecture/14 -> ../philosophy/10`

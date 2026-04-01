@@ -190,6 +190,25 @@
 - `claude-code-source-code/src/remote/RemoteSessionManager.ts:87-323`
 - `claude-code-source-code/src/remote/SessionsWebSocket.ts:74-403`
 
+### M. Protocol superset is not the same as adapter subset
+
+- `controlSchemas.ts` 给出的是完整协议全集，但 bridge、direct connect、`RemoteSessionManager` 当前实现的是不同宽度的子集。
+- bridge 当前显式处理中等宽度的 inbound control request：`initialize`、`set_model`、`set_max_thinking_tokens`、`set_permission_mode`、`interrupt`，并单独为 `can_use_tool` 构建 permission callback 面。
+- direct connect 与 `RemoteSessionManager` 当前更窄，主要围绕 `can_use_tool` 与 `interrupt`，不能把它们直接写成完整 SDK host。
+- `handleIngressMessage(...)` 只把 `control_response`、`control_request` 和 `user` inbound message 单独分流，也说明 bridge 不是“把所有 SDKMessage 原样搬进 REPL”。
+
+证据:
+
+- `claude-code-source-code/src/bridge/bridgeMessaging.ts:126-208`
+- `claude-code-source-code/src/bridge/bridgeMessaging.ts:243-391`
+- `claude-code-source-code/src/bridge/replBridge.ts:1190-1235`
+- `claude-code-source-code/src/bridge/replBridge.ts:1528-1819`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:422-456`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:824-878`
+- `claude-code-source-code/src/hooks/useReplBridge.tsx:367-586`
+- `claude-code-source-code/src/server/directConnectManager.ts:81-200`
+- `claude-code-source-code/src/remote/RemoteSessionManager.ts:153-297`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -217,13 +236,17 @@
 - 已补 `StructuredIO` 与 `RemoteIO` 控制平面专题，把 request correlation、cancel、duplicate/orphan、防乱序与远程 transport 串成完整架构链
 - 已补“宿主控制平面优于聊天外壳”专题，把 Claude Code 从 terminal shell 视角提升为 host-integrated runtime
 - 已把 `bluebook/` 目录进一步收紧为宿主链、事件链、连接链、策略链、会话链、协作链六条阅读线
+- 已补 control subtype 与宿主适配矩阵，明确区分 schema 全集与宿主子集
+- 已补 bridge / direct-connect / remote-session 的适配器分层专题，明确 bridge 是中等宽度控制面而不是薄 websocket wrapper
+- 已补“协议全集不等于适配器子集”专题，把这条边界上升为正式写作原则
+- 已把 `bluebook/` 目录进一步扩展为宿主链、适配器链、事件链、连接链、策略链、会话链、协作链七条阅读线
 
 ## 下一步待办
 
-- 补 bridge / direct-connect / remote-session 三类宿主路径的并排对照图
+- 补 bridge / direct-connect / remote-session 三类宿主路径的时序图
 - 补一章“多 Agent 协作模式与 prompt 模板”
 - 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
-- 给 `SDKMessageSchema` 与 control subtype 做完整对照表，并补宿主接入样例
+- 给 `SDKMessageSchema` 与 control subtype 做完整字段对照表，并补宿主接入样例
 - 补 `REPL.tsx` / Ink 更细的 transcript mode、message actions、PromptInput 交互链
 - 补命令索引的更细表格化版本与 workflow/dynamic skills 交叉核对
 - 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
@@ -247,3 +270,4 @@
 - `stream_event`、`research`、`advisor`、`claudeai-proxy`、`ws-ide` 等痕迹里混有 internal / host-specific 信号，后续不能直接当作稳定公共契约。
 - Claude API 流式执行链与当前 Anthropic event shape、tool execution harness 强绑定，后续若源码升级，最可能先变化的是恢复细节与引用写回策略。
 - direct connect 与 `RemoteSessionManager` 当前实现的 control surface 明显窄于 `StructuredIO` 全量 schema，后续必须持续避免把“schema 全集”和“某个宿主已支持的子集”写成同一层事实。
+- bridge 当前虽然明显宽于 direct connect / `RemoteSessionManager`，但仍不是完整 control subtype 全集；后续必须避免把它直接等同于完整 SDK host。

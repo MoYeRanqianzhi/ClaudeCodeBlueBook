@@ -19,7 +19,7 @@
 6. 远程接口: remote session、bridge、CCR transport、direct connect。
 7. 状态接口: transcript、session、context usage、settings、rewind。
 
-Claude Code 强的原因之一，是它几乎把这六类接口都做成了正式模块，而不是临时拼接。
+Claude Code 强的原因之一，是它几乎把这七类接口都做成了正式模块，而不是临时拼接。
 
 ## 2. 功能总矩阵
 
@@ -256,6 +256,7 @@ MCP 在 Claude Code 中既是 client 扩展总线，也是可反向暴露的 ser
 8. 把 MCP config scope、auth、needs-auth/pending/disabled/failed 状态补成完整状态机。
 9. 把 bridge / direct-connect / remote-session 三类宿主路径继续做成对照图。
 10. 把 transport plane、control plane、host adapter 三层边界继续做成对照图。
+11. 把 control subtype 的协议全集与宿主适配矩阵并排写清。
 
 本章对应的详细接口文档:
 
@@ -268,6 +269,7 @@ MCP 在 Claude Code 中既是 client 扩展总线，也是可反向暴露的 ser
 - [SDKMessageSchema 与事件流手册](api/11-SDKMessageSchema%E4%B8%8E%E4%BA%8B%E4%BB%B6%E6%B5%81%E6%89%8B%E5%86%8C.md)
 - [MCP 配置与连接状态机](api/12-MCP%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%BF%9E%E6%8E%A5%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 - [StructuredIO 与 RemoteIO 宿主协议手册](api/13-StructuredIO%E4%B8%8ERemoteIO%E5%AE%BF%E4%B8%BB%E5%8D%8F%E8%AE%AE%E6%89%8B%E5%86%8C.md)
+- [Control 子类型与宿主适配矩阵](api/14-Control%E5%AD%90%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%AE%BF%E4%B8%BB%E9%80%82%E9%85%8D%E7%9F%A9%E9%98%B5.md)
 - [Agent SDK 与控制协议](api/02-Agent%20SDK%E4%B8%8E%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE.md)
 - [MCP 与远程传输](api/03-MCP%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BC%A0%E8%BE%93.md)
 - [SDK 消息与事件字典](api/04-SDK%E6%B6%88%E6%81%AF%E4%B8%8E%E4%BA%8B%E4%BB%B6%E5%AD%97%E5%85%B8.md)
@@ -278,4 +280,6 @@ MCP 在 Claude Code 中既是 client 扩展总线，也是可反向暴露的 ser
 - [权限系统全链路与 Auto Mode](architecture/11-%E6%9D%83%E9%99%90%E7%B3%BB%E7%BB%9F%E5%85%A8%E9%93%BE%E8%B7%AF%E4%B8%8EAuto%20Mode.md)
 - [ClaudeAPI 与流式工具执行](architecture/12-ClaudeAPI%E4%B8%8E%E6%B5%81%E5%BC%8F%E5%B7%A5%E5%85%B7%E6%89%A7%E8%A1%8C.md)
 - [StructuredIO 与 RemoteIO 控制平面](architecture/13-StructuredIO%E4%B8%8ERemoteIO%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2.md)
+- [Bridge 与宿主适配器分层](architecture/14-Bridge%E4%B8%8E%E5%AE%BF%E4%B8%BB%E9%80%82%E9%85%8D%E5%99%A8%E5%88%86%E5%B1%82.md)
 - [宿主控制平面优于聊天外壳](philosophy/09-%E5%AE%BF%E4%B8%BB%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%E4%BC%98%E4%BA%8E%E8%81%8A%E5%A4%A9%E5%A4%96%E5%A3%B3.md)
+- [协议全集不等于适配器子集](philosophy/10-%E5%8D%8F%E8%AE%AE%E5%85%A8%E9%9B%86%E4%B8%8D%E7%AD%89%E4%BA%8E%E9%80%82%E9%85%8D%E5%99%A8%E5%AD%90%E9%9B%86.md)

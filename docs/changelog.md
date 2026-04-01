@@ -38,3 +38,8 @@
 - 新增“宿主控制平面优于聊天外壳”专题，把 Claude Code 从 terminal shell 视角提升为 host-integrated runtime
 - 更新蓝皮书主索引、API/架构/哲学 README，新增宿主链阅读路径
 - 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化宿主控制平面这一轮结论
+- 新增 Control 子类型与宿主适配矩阵，明确 schema 全集与 bridge / direct-connect / remote-session 子集边界
+- 新增 Bridge 与宿主适配器分层专题，补强 bridgeMessaging、remoteBridgeCore、useReplBridge 的结构化分析
+- 新增“协议全集不等于适配器子集”专题，把协议全集 vs 宿主子集提升为长期写作约束
+- 更新蓝皮书主索引、API/架构/哲学 README，新增适配器链阅读路径
+- 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化适配器分层这一轮结论

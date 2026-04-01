@@ -42,6 +42,7 @@
 
 - 扩展链：`05-功能全景与API支持.md` -> `api/10-扩展Frontmatter与插件Agent手册.md` -> `architecture/03-扩展能力与远程架构.md` -> `philosophy/08-统一配置语言优于扩展孤岛.md`
 - 宿主链：`api/13-StructuredIO与RemoteIO宿主协议手册.md` -> `architecture/13-StructuredIO与RemoteIO控制平面.md` -> `philosophy/09-宿主控制平面优于聊天外壳.md`
+- 适配器链：`api/14-Control子类型与宿主适配矩阵.md` -> `architecture/14-Bridge与宿主适配器分层.md` -> `philosophy/10-协议全集不等于适配器子集.md`
 - 事件链：`api/04-SDK消息与事件字典.md` -> `api/11-SDKMessageSchema与事件流手册.md` -> `architecture/12-ClaudeAPI与流式工具执行.md` -> `philosophy/06-状态优先于对话.md`
 - 连接链：`api/03-MCP与远程传输.md` -> `api/12-MCP配置与连接状态机.md` -> `architecture/03-扩展能力与远程架构.md` -> `philosophy/08-统一配置语言优于扩展孤岛.md`
 - 策略链：`architecture/05-权限系统与安全状态机.md` -> `architecture/11-权限系统全链路与Auto Mode.md` -> `philosophy/03-安全观与边界设计.md`
@@ -56,6 +57,7 @@
 - 记忆：`architecture/09-会话存储记忆与回溯状态面.md`、`api/09-会话与状态API手册.md`
 - 协作：`architecture/10-AgentTool与隔离编排.md`、`philosophy/07-隔离优先于并发.md`
 - 宿主：`api/13-StructuredIO与RemoteIO宿主协议手册.md`、`architecture/13-StructuredIO与RemoteIO控制平面.md`、`philosophy/09-宿主控制平面优于聊天外壳.md`
+- 适配器：`api/14-Control子类型与宿主适配矩阵.md`、`architecture/14-Bridge与宿主适配器分层.md`、`philosophy/10-协议全集不等于适配器子集.md`
 - 恢复：`architecture/06-上下文压缩与恢复链.md`、`architecture/12-ClaudeAPI与流式工具执行.md`、`philosophy/06-状态优先于对话.md`
 
 ## 正式主线与兼容入口
@@ -97,6 +99,9 @@
 - [StructuredIO 与 RemoteIO 宿主协议手册](api/13-StructuredIO%E4%B8%8ERemoteIO%E5%AE%BF%E4%B8%BB%E5%8D%8F%E8%AE%AE%E6%89%8B%E5%86%8C.md)
 - [StructuredIO 与 RemoteIO 控制平面](architecture/13-StructuredIO%E4%B8%8ERemoteIO%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2.md)
 - [宿主控制平面优于聊天外壳](philosophy/09-%E5%AE%BF%E4%B8%BB%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%E4%BC%98%E4%BA%8E%E8%81%8A%E5%A4%A9%E5%A4%96%E5%A3%B3.md)
+- [Control 子类型与宿主适配矩阵](api/14-Control%E5%AD%90%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%AE%BF%E4%B8%BB%E9%80%82%E9%85%8D%E7%9F%A9%E9%98%B5.md)
+- [Bridge 与宿主适配器分层](architecture/14-Bridge%E4%B8%8E%E5%AE%BF%E4%B8%BB%E9%80%82%E9%85%8D%E5%99%A8%E5%88%86%E5%B1%82.md)
+- [协议全集不等于适配器子集](philosophy/10-%E5%8D%8F%E8%AE%AE%E5%85%A8%E9%9B%86%E4%B8%8D%E7%AD%89%E4%BA%8E%E9%80%82%E9%85%8D%E5%99%A8%E5%AD%90%E9%9B%86.md)
 - [SDKMessageSchema 与事件流手册](api/11-SDKMessageSchema%E4%B8%8E%E4%BA%8B%E4%BB%B6%E6%B5%81%E6%89%8B%E5%86%8C.md)
 - [MCP 配置与连接状态机](api/12-MCP%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%BF%9E%E6%8E%A5%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 - [ClaudeAPI 与流式工具执行](architecture/12-ClaudeAPI%E4%B8%8E%E6%B5%81%E5%BC%8F%E5%B7%A5%E5%85%B7%E6%89%A7%E8%A1%8C.md)
