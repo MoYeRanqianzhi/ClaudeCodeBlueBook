@@ -909,6 +909,17 @@
 - `claude-code-source-code/src/services/rateLimitMessages.ts:143-199`
 - `claude-code-source-code/src/services/mcp/config.ts:338-355`
 
+### AR. High-volatility users benefit most from low-cost status surfaces and fixed operating order
+
+- `authStatus()` 已经能输出 `authMethod`、`apiProvider`、`orgId`、`subscriptionType` 等最关键状态，这说明平台至少为用户提供了低成本的会前/故障时自检入口。
+- `useMcpConnectivityStatus.tsx` 会把 local MCP failed、claude.ai connector unavailable、needs-auth 分开提示，并且只对“曾经连通过”的 claude.ai connector 提高提醒优先级，说明平台在鼓励用户按状态变化而不是按情绪升级问题。
+- 结合前面认证连续性、局部撤权和支持分流的证据，可以推导出一个更严格的运行 SOP：平时固定主路径，开工前先看状态面，故障窗口先冻结变量，再按共享词汇和结构化证据升级求助。
+
+证据:
+
+- `claude-code-source-code/src/cli/handlers/auth.ts:233-315`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:1-88`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -968,6 +979,7 @@
 - 已补风控专题 `50-损失函数视角：平台究竟在最小化什么，而用户又在失去什么`，把 fail-open、fail-closed、cooldown 与误伤统一翻译成多目标损失平衡
 - 已补风控专题 `51-批准链分析：谁有资格替用户说“可以”，以及这本身为何是风控问题`，把权限批准、替代审批面和 allowlist 收束成正式信任边界
 - 已补风控专题 `52-局部撤权优于全局封号：能力撤回、连接降级与主体保全的治理哲学`，把大量“像封号”的体验重新分层为连接、能力、时间窗口和自扩权力撤回
+- 已补风控专题 `53-高波动环境严格运行SOP：从日常纪律到升级求助的四阶段手册`，把中国/高波动环境用户的合规建议压成可执行顺序
 
 ## 下一步待办
 
