@@ -534,6 +534,24 @@
 - `claude-code-source-code/src/utils/auth.ts:1919-1999`
 - `claude-code-source-code/src/utils/diagLogs.ts:14-57`
 
+### AB. Error families should map to shortest support paths
+
+- `errors.ts` 已将 `invalid_api_key`、`token_revoked`、`oauth_org_not_allowed`、`auth_error`、`bedrock_model_access`、`connection_error`、`ssl_cert_error`、`rate_limit` 等拆成不同分类，说明系统内部已有较完整的 error families。
+- `useCanSwitchToExistingSubscription()` 与 `getBridgeDisabledReason()` 进一步说明 entitlement/订阅激活问题不应被混写进通用 auth 家族。
+- `mcp/useManageMCPConnections.ts` 把 `needs-auth` 与 `failed/pending/disabled` 明确区分，说明连接域问题本来就应走单独支持路径。
+- `rateLimitMessages.ts` 把 session/weekly/Opus/Sonnet/extra usage/reset time 拆开，说明计费家族本身已具独立支持语义。
+- 更高抽象看，真正成熟的解释层不只要有错误分类，还要把每个错误家族绑定到最短恢复动作和支持归属，否则复杂度仍会回流到用户和支持团队。
+
+证据:
+
+- `claude-code-source-code/src/services/api/errors.ts:154-219`
+- `claude-code-source-code/src/services/api/errors.ts:838-883`
+- `claude-code-source-code/src/services/api/errors.ts:1109-1181`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:17-58`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:57-83`
+- `claude-code-source-code/src/services/mcp/useManageMCPConnections.ts:755-759`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:143-220`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
