@@ -1349,6 +1349,25 @@
 - `claude-code-source-code/src/tools/AgentTool/runAgent.ts:108-130`
 - `claude-code-source-code/src/tools/AgentTool/runAgent.ts:548-565`
 
+### AO. Observability 在 Claude Code 里是正式 explainability contract
+
+- `get_context_usage` 不是 debug dump，而是正式 control schema，且返回的不是一个 token 数字，而是 `systemPromptSections`、`messageBreakdown`、`mcpTools`、`agents` 等分层对象。
+- `analyzeContext.ts` 说明这些对象的语义是“模型真正看到的输入真相”，而不是 REPL raw history 的近似统计。
+- `sessionState` 与 `onChangeAppState` 说明状态真相不能只靠事件流推理；`pending_action`、`permission_mode`、`task_summary` 都有快照回写职责。
+- `promptCacheBreakDetection` 通过 pre-call snapshot + post-call token validation 构成稳定性因果解释层，说明 cache miss 被当成正式运行时真相处理。
+- `contextSuggestions` 会继续消费这些观测对象并翻译成建议，说明 observability 不是展示层，而是闭环的一部分。
+
+证据：
+
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:175-305`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1325-1370`
+- `claude-code-source-code/src/state/onChangeAppState.ts:23-70`
+- `claude-code-source-code/src/utils/sessionState.ts:90-135`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:240-315`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:430-520`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:640-705`
+- `claude-code-source-code/src/utils/contextSuggestions.ts:30-90`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。

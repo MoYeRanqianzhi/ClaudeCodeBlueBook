@@ -71,6 +71,7 @@
 - [47-QueryGuard：本地查询生命周期的authoritative state machine](47-QueryGuard%EF%BC%9A%E6%9C%AC%E5%9C%B0%E6%9F%A5%E8%AF%A2%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84authoritative%20state%20machine.md)
 - [52-Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法](52-Chokepoint%E3%80%81Typed%20Decision%E3%80%81Authoritative%20Surface%E3%80%81Race-Aware%20Runtime%E4%B8%8EContract-First%EF%BC%9AClaude%20Code%E6%BA%90%E7%A0%81%E5%85%88%E8%BF%9B%E6%80%A7%E4%BA%94%E6%B3%95.md)
 - [55-热点文件不是坏味道：Kernel、Shell与Chokepoint的分工](55-%E7%83%AD%E7%82%B9%E6%96%87%E4%BB%B6%E4%B8%8D%E6%98%AF%E5%9D%8F%E5%91%B3%E9%81%93%EF%BC%9AKernel%E3%80%81Shell%E4%B8%8EChokepoint%E7%9A%84%E5%88%86%E5%B7%A5.md)
+- [57-可解释运行时：输入真相、状态真相与稳定性真相](57-%E5%8F%AF%E8%A7%A3%E9%87%8A%E8%BF%90%E8%A1%8C%E6%97%B6%EF%BC%9A%E8%BE%93%E5%85%A5%E7%9C%9F%E7%9B%B8%E3%80%81%E7%8A%B6%E6%80%81%E7%9C%9F%E7%9B%B8%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E7%9C%9F%E7%9B%B8.md)
 
 ### 8. 宿主、前台与产品边界平面
 
@@ -105,6 +106,7 @@
 - 想看源码先进性、热点与产品边界：`20 -> 24 -> 33 -> 38`
 - 想看源码先进性如何继续压成几种可迁移工程模式：`20 -> 40 -> 41 -> 47 -> 52`
 - 想看热点大文件为什么仍然可以是成熟架构的一部分：`52 -> 55`
+- 想看预算观测、状态回写与 cache break 为什么应该合写成“可解释运行时”：`17 -> 43 -> 57`
 - 想看显式失败、重复响应与 race-aware runtime：`13 -> 14 -> 17 -> 40`
 - 想看 chokepoint、leaf module 与依赖图切断：`24 -> 38 -> 41`
 - 想看预算为什么会走向“观测 -> 建议 -> 调优”的闭环：`21 -> 37 -> 43`

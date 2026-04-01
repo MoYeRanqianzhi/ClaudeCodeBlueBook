@@ -210,7 +210,30 @@
 
 - Claude Code 值得学的不是“零技术债”，而是 contract-first、race-aware、runtime-first，以及把不变量收口进 chokepoint、authoritative surface 与 typed transition 的工程方向
 
-## 8. 真正的使用路线
+## 8. 可解释运行时深线
+
+如果问题是：
+
+- 为什么 Claude Code 的 observability 不是调试附属层。
+- 为什么 `context usage`、`worker_status/external_metadata`、`cache break detection` 应该放在同一张图里。
+- 为什么一个成熟 runtime 必须能解释“模型看到了什么”“系统现在处于什么状态”“为什么前缀稳定或失稳”。
+
+建议顺序：
+
+1. `api/32-Context Usage、Prompt预算与观测型宿主手册.md`
+2. `architecture/17-双通道状态同步与外部元数据回写.md`
+3. `architecture/43-预算观测、Context Suggestions与调优闭环.md`
+4. `architecture/46-Prompt稳定性解释层：cache-break detection的两阶段诊断器.md`
+5. `architecture/57-可解释运行时：输入真相、状态真相与稳定性真相.md`
+6. `philosophy/31-可观测预算优于经验调优.md`
+7. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
+8. `philosophy/44-Observability不是Debug层，而是正式运行时合同.md`
+
+这条线的核心结论是：
+
+- Claude Code 的 observability 不是为了调试方便，而是为了让输入真相、状态真相与稳定性真相都变成正式运行时合同
+
+## 9. 真正的使用路线
 
 如果你的目标不是研究，而是把 Claude Code 真正用顺：
 
@@ -224,7 +247,7 @@
 
 - 最佳使用方式不是写更长 prompt，而是先选对 runtime 形态
 
-## 9. 最后一句
+## 10. 最后一句
 
 如果你只想记一个阅读原则：
 
