@@ -47,6 +47,10 @@
 - 时序链：`api/15-Control协议字段对照与宿主接入样例.md` -> `architecture/15-宿主路径时序与竞速.md` -> `philosophy/11-显式失败优于假成功.md`
 - 闭环链：`api/16-SDK消息与Control闭环对照表.md` -> `architecture/16-远程恢复与重连状态机.md` -> `philosophy/12-闭环状态机优于单向请求.md`
 - 状态同步链：`api/17-状态消息、外部元数据与宿主消费矩阵.md` -> `architecture/17-双通道状态同步与外部元数据回写.md` -> `philosophy/13-外化状态优于推断状态.md`
+- Prompt 链：`api/18-系统提示词、Frontmatter与上下文注入手册.md` -> `architecture/18-提示词装配链与上下文成形.md` -> `philosophy/14-提示词魔力来自运行时而非咒语.md`
+- 安全链：`architecture/05-权限系统与安全状态机.md` -> `architecture/11-权限系统全链路与Auto Mode.md` -> `architecture/19-安全分层、策略收口与沙箱边界.md` -> `philosophy/03-安全观与边界设计.md`
+- 工程链：`architecture/20-源码质量、分层与工程先进性.md` -> `philosophy/15-工程化质量优于聪明技巧.md`
+- 上下文链：`philosophy/02-上下文经济学.md` -> `architecture/08-compact算法与上下文管理细拆.md` -> `architecture/21-消息塑形、输出外置与Token经济.md`
 - 事件链：`api/04-SDK消息与事件字典.md` -> `api/11-SDKMessageSchema与事件流手册.md` -> `architecture/12-ClaudeAPI与流式工具执行.md` -> `philosophy/06-状态优先于对话.md`
 - 连接链：`api/03-MCP与远程传输.md` -> `api/12-MCP配置与连接状态机.md` -> `architecture/03-扩展能力与远程架构.md` -> `philosophy/08-统一配置语言优于扩展孤岛.md`
 - 策略链：`architecture/05-权限系统与安全状态机.md` -> `architecture/11-权限系统全链路与Auto Mode.md` -> `philosophy/03-安全观与边界设计.md`
@@ -65,6 +69,9 @@
 - 时序：`api/15-Control协议字段对照与宿主接入样例.md`、`architecture/15-宿主路径时序与竞速.md`、`philosophy/11-显式失败优于假成功.md`
 - 闭环：`api/16-SDK消息与Control闭环对照表.md`、`architecture/16-远程恢复与重连状态机.md`、`philosophy/12-闭环状态机优于单向请求.md`
 - 真相：`api/17-状态消息、外部元数据与宿主消费矩阵.md`、`architecture/17-双通道状态同步与外部元数据回写.md`、`philosophy/13-外化状态优于推断状态.md`
+- 提示词：`api/18-系统提示词、Frontmatter与上下文注入手册.md`、`architecture/18-提示词装配链与上下文成形.md`、`philosophy/14-提示词魔力来自运行时而非咒语.md`
+- 上下文：`philosophy/02-上下文经济学.md`、`architecture/08-compact算法与上下文管理细拆.md`、`architecture/21-消息塑形、输出外置与Token经济.md`
+- 工程：`architecture/20-源码质量、分层与工程先进性.md`、`philosophy/15-工程化质量优于聪明技巧.md`
 - 恢复：`architecture/06-上下文压缩与恢复链.md`、`architecture/12-ClaudeAPI与流式工具执行.md`、`philosophy/06-状态优先于对话.md`
 
 ## 正式主线与兼容入口
@@ -118,6 +125,13 @@
 - [状态消息、外部元数据与宿主消费矩阵](api/17-%E7%8A%B6%E6%80%81%E6%B6%88%E6%81%AF%E3%80%81%E5%A4%96%E9%83%A8%E5%85%83%E6%95%B0%E6%8D%AE%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E7%9F%A9%E9%98%B5.md)
 - [双通道状态同步与外部元数据回写](architecture/17-%E5%8F%8C%E9%80%9A%E9%81%93%E7%8A%B6%E6%80%81%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%A4%96%E9%83%A8%E5%85%83%E6%95%B0%E6%8D%AE%E5%9B%9E%E5%86%99.md)
 - [外化状态优于推断状态](philosophy/13-%E5%A4%96%E5%8C%96%E7%8A%B6%E6%80%81%E4%BC%98%E4%BA%8E%E6%8E%A8%E6%96%AD%E7%8A%B6%E6%80%81.md)
+- [系统提示词、Frontmatter 与上下文注入手册](api/18-%E7%B3%BB%E7%BB%9F%E6%8F%90%E7%A4%BA%E8%AF%8D%E3%80%81Frontmatter%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5%E6%89%8B%E5%86%8C.md)
+- [提示词装配链与上下文成形](architecture/18-%E6%8F%90%E7%A4%BA%E8%AF%8D%E8%A3%85%E9%85%8D%E9%93%BE%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%88%90%E5%BD%A2.md)
+- [提示词魔力来自运行时而非咒语](philosophy/14-%E6%8F%90%E7%A4%BA%E8%AF%8D%E9%AD%94%E5%8A%9B%E6%9D%A5%E8%87%AA%E8%BF%90%E8%A1%8C%E6%97%B6%E8%80%8C%E9%9D%9E%E5%92%92%E8%AF%AD.md)
+- [安全分层、策略收口与沙箱边界](architecture/19-%E5%AE%89%E5%85%A8%E5%88%86%E5%B1%82%E3%80%81%E7%AD%96%E7%95%A5%E6%94%B6%E5%8F%A3%E4%B8%8E%E6%B2%99%E7%AE%B1%E8%BE%B9%E7%95%8C.md)
+- [源码质量、分层与工程先进性](architecture/20-%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E3%80%81%E5%88%86%E5%B1%82%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%85%88%E8%BF%9B%E6%80%A7.md)
+- [消息塑形、输出外置与 Token 经济](architecture/21-%E6%B6%88%E6%81%AF%E5%A1%91%E5%BD%A2%E3%80%81%E8%BE%93%E5%87%BA%E5%A4%96%E7%BD%AE%E4%B8%8EToken%E7%BB%8F%E6%B5%8E.md)
+- [工程化质量优于聪明技巧](philosophy/15-%E5%B7%A5%E7%A8%8B%E5%8C%96%E8%B4%A8%E9%87%8F%E4%BC%98%E4%BA%8E%E8%81%AA%E6%98%8E%E6%8A%80%E5%B7%A7.md)
 - [SDKMessageSchema 与事件流手册](api/11-SDKMessageSchema%E4%B8%8E%E4%BA%8B%E4%BB%B6%E6%B5%81%E6%89%8B%E5%86%8C.md)
 - [MCP 配置与连接状态机](api/12-MCP%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%BF%9E%E6%8E%A5%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 - [ClaudeAPI 与流式工具执行](architecture/12-ClaudeAPI%E4%B8%8E%E6%B5%81%E5%BC%8F%E5%B7%A5%E5%85%B7%E6%89%A7%E8%A1%8C.md)

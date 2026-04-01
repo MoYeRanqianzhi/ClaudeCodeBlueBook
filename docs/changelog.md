@@ -58,3 +58,11 @@
 - 新增“外化状态优于推断状态”专题，把宿主真相从单通道消息流提升为双通道状态观
 - 更新蓝皮书主索引、API/架构/哲学 README，新增状态同步链与真相面阅读路径
 - 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化双通道状态同步这一轮结论
+- 新增系统提示词、Frontmatter 与上下文注入手册，补强 `systemPrompt` / `appendSystemPrompt` / agent / skill / attachment 的统一 prompt API 支持
+- 新增提示词装配链与上下文成形，补强 prompt cache、dynamic boundary、role prompt 与 attachment delta 分析
+- 新增安全分层、策略收口与沙箱边界，补强 trust、policy、sandbox、SSRF、MCP auth 的统一安全架构分析
+- 新增源码质量、分层与工程先进性，补强 query turn state、Tool ABI、schema/cache/retry 的工程化质量主线
+- 新增消息塑形、输出外置与 Token 经济，补强 message shaping、tool result budget、dynamic catalog delta、compact 顺序分析
+- 新增“提示词魔力来自运行时而非咒语”和“工程化质量优于聪明技巧”两篇哲学专题
+- 更新蓝皮书主索引、API/架构/哲学 README，新增 Prompt 链、安全链、工程链、上下文链
+- 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化 prompt / safety / source quality / token economics 这一轮结论

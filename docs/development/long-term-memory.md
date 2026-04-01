@@ -63,6 +63,13 @@
   - 状态消息、外部元数据与宿主消费矩阵
   - 双通道状态同步与外部元数据回写
   - 外化状态优于推断状态
+  - 系统提示词、Frontmatter 与上下文注入手册
+  - 提示词装配链与上下文成形
+  - 安全分层、策略收口与沙箱边界
+  - 源码质量、分层与工程先进性
+  - 消息塑形、输出外置与Token经济
+  - 提示词魔力来自运行时而非咒语
+  - 工程化质量优于聪明技巧
 
 ## 已确认事实
 
@@ -101,6 +108,10 @@
 - 远程恢复更适合按 `SessionsWebSocket`、`remoteBridgeCore`、`RemoteIO` 三层状态机理解，而不是一句“自动重连”
 - Claude Code 的宿主状态真相更适合按“双通道”理解：`SDKMessage` 负责时间线，`worker_status` / `external_metadata` 负责当前快照与恢复后真相
 - consumer subset 与 compatibility shim 是 API 现实的一部分：schema 全集并不等于每个 adapter / UI 都完整消费
+- Claude Code 的 prompt 魔力更适合按“装配链 + 角色合同 + cache 稳定性 + attachment 注入”理解，而不是按单段 system prompt 理解
+- Claude Code 的安全更适合按 trust / policy / typed permission / sandbox / hook / MCP auth 分层理解，而不是按 permission modal 理解
+- Claude Code 的源码先进性更适合按 query turn state、Tool ABI、schema/cache/retry 基础设施理解，而不是按“文件整洁度”理解
+- Claude Code 的省 token 更适合按“稳定前缀 + 按需目录 + 大块输出外置 + 尾部回收”四层经济系统理解，而不是按“是否会 compact”理解
 
 ## 后续章节建议
 
@@ -112,11 +123,13 @@
 6. 给 bridge / direct-connect / remote-session 三类宿主路径做更细时序图
 7. 把 `SDKMessageSchema` 与 control subtype 做成更细的 message-response crosswalk casebook
 8. 把 `SDKMessage`、`worker_status`、`external_metadata`、consumer subset 做成更细字段级 crosswalk
-9. 给 MCP 状态、命令 availability、控制请求做时序化视图
-10. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
-11. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
-12. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、演化面都做成清晰阅读路径
-13. 把 plugin manifest / marketplace / MCPB / LSP / channels 的产品边界继续写实
+9. 给 `query.ts` 的 turn state machine 与 continue/recovery 语义单独成章
+10. 给统一权限决策流水线单独成章，明确 modal renderer 与 decision engine 边界
+11. 给 MCP 状态、命令 availability、控制请求做时序化视图
+12. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
+13. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
+14. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、提示词面、工程面、演化面都做成清晰阅读路径
+15. 把 plugin manifest / marketplace / MCPB / LSP / channels 的产品边界继续写实
 
 ## 编写约定
 
@@ -135,3 +148,5 @@
 - 写时序相关结论时，必须同时标出成功路径、失败路径，以及删除失败路径后会出现的假成功错觉
 - 写闭环相关结论时，必须同时标出 request、response、follow-on SDKMessage，以及哪个信号才算真正闭环完成
 - 写状态相关结论时，必须同时标出事件时间线、当前快照、恢复路径，以及 consumer subset
+- 写 prompt 相关结论时，必须同时标出装配链、角色合同、attachment 注入与 cache 约束
+- 写源码质量相关结论时，必须同时标出 invariant、边界、cache/retry 结构与真实工程债务

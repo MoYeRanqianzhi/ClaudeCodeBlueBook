@@ -199,6 +199,28 @@ Claude Code 的状态接口不只体现在：
 - `claude-code-source-code/src/cli/transports/ccrClient.ts:645-662`
 - `claude-code-source-code/src/cli/remoteIO.ts:111-168`
 
+### 2.9 提示词与上下文注入面
+
+Claude Code 还有一层经常被低估的正式接口面：
+
+- `--system-prompt`
+- `--append-system-prompt`
+- SDK `initialize.systemPrompt`
+- SDK `initialize.appendSystemPrompt`
+- agent `getSystemPrompt()`
+- skill `getPromptForCommand(...)`
+- attachment / reminder 注入
+
+也就是说，prompt 在 Claude Code 中不是一段隐藏常量，而是一组可装配注入面。
+
+证据:
+
+- `claude-code-source-code/src/main.tsx:1343-1387`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-72`
+- `claude-code-source-code/src/utils/systemPrompt.ts:27-121`
+- `claude-code-source-code/src/skills/loadSkillsDir.ts:181-344`
+- `claude-code-source-code/src/tools/AgentTool/loadAgentsDir.ts:474-731`
+
 ## 3. API 支持不是一层，而是四层
 
 从源码看，Claude Code 的“API”至少可以拆成五层。
@@ -316,6 +338,7 @@ Claude Code 的状态接口不只体现在：
 - [Control 协议字段对照与宿主接入样例](api/15-Control%E5%8D%8F%E8%AE%AE%E5%AD%97%E6%AE%B5%E5%AF%B9%E7%85%A7%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%8E%A5%E5%85%A5%E6%A0%B7%E4%BE%8B.md)
 - [SDK 消息与 Control 闭环对照表](api/16-SDK%E6%B6%88%E6%81%AF%E4%B8%8EControl%E9%97%AD%E7%8E%AF%E5%AF%B9%E7%85%A7%E8%A1%A8.md)
 - [状态消息、外部元数据与宿主消费矩阵](api/17-%E7%8A%B6%E6%80%81%E6%B6%88%E6%81%AF%E3%80%81%E5%A4%96%E9%83%A8%E5%85%83%E6%95%B0%E6%8D%AE%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E7%9F%A9%E9%98%B5.md)
+- [系统提示词、Frontmatter 与上下文注入手册](api/18-%E7%B3%BB%E7%BB%9F%E6%8F%90%E7%A4%BA%E8%AF%8D%E3%80%81Frontmatter%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5%E6%89%8B%E5%86%8C.md)
 - [Agent SDK 与控制协议](api/02-Agent%20SDK%E4%B8%8E%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE.md)
 - [MCP 与远程传输](api/03-MCP%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BC%A0%E8%BE%93.md)
 - [SDK 消息与事件字典](api/04-SDK%E6%B6%88%E6%81%AF%E4%B8%8E%E4%BA%8B%E4%BB%B6%E5%AD%97%E5%85%B8.md)

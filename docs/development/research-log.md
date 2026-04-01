@@ -282,6 +282,64 @@
 - `claude-code-source-code/src/utils/messages/mappers.ts:145-196`
 - `claude-code-source-code/src/server/directConnectManager.ts:100-109`
 
+### S. Prompt magic is runtime assembly, not mystical wording
+
+- `queryContext`、`getSystemPrompt`、`buildEffectiveSystemPrompt`、`systemPromptSections`、attachments 共同说明 Claude Code 的 prompt 是分层装配链，不是单段字符串。
+- 动态 agent list、deferred tools、MCP instructions delta、fork cache sharing 说明 prompt 设计始终服从 cache stability 与 token economics。
+- coordinator / worker / fork / proactive 各自的 prompt 合同不同，所谓“魔力”更多来自角色契约与 runtime 约束，而不是几句文案本身。
+
+证据:
+
+- `claude-code-source-code/src/utils/queryContext.ts:1-41`
+- `claude-code-source-code/src/constants/prompts.ts:444-579`
+- `claude-code-source-code/src/utils/systemPrompt.ts:27-121`
+- `claude-code-source-code/src/tools/AgentTool/prompt.ts:48-95`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:1-170`
+
+### T. Security is a layered policy-and-runtime closure system
+
+- trust 判定、managed policy、typed permission model、tool-local validator、classifier / hook、sandbox、MCP / remote protocol 构成统一安全架构；UI modal 只是 `ask` 的一种 renderer。
+- `policySettings` 与 remote managed settings 证明组织治理是单独平面，不应和普通用户设置混写。
+- sandbox、SSRF guard、MCP auth 又说明安全不止于 permission decision，还要下沉到文件系统、网络和外部 trust domain。
+
+证据:
+
+- `claude-code-source-code/src/components/TrustDialog/TrustDialog.tsx:208-208`
+- `claude-code-source-code/src/utils/settings/settings.ts:675-675`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1158-1262`
+- `claude-code-source-code/src/utils/sandbox/sandbox-adapter.ts:172-266`
+- `claude-code-source-code/src/utils/hooks/ssrfGuard.ts:5-17`
+
+### U. Source quality comes from engineered invariants, not local elegance
+
+- `query.ts` 与 `QueryGuard` 说明 turn lifecycle 被显式状态机化。
+- `Tool` 接口与 toolExecution pipeline 说明扩展能力先进入平台 ABI，再进入具体实现。
+- `lazySchema`、`toolPool`、`WorkerStateUploader`、`promptCacheBreakDetection` 说明 schema、cache、retry、merge 都被做成正式结构对象。
+- 真正的工程债务集中在少数超大核心文件，而不是整体架构缺少方法。
+
+证据:
+
+- `claude-code-source-code/src/query.ts:203-268`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-1`
+- `claude-code-source-code/src/Tool.ts:158-792`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:1-118`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:1-170`
+
+### V. Token economy is a four-layer system, not just compact
+
+- Claude Code 的省 token 主要不是靠单次摘要，而是靠稳定前缀、动态目录外移、工具输出外置、最后才 compact 的四层经济系统。
+- `messages.ts` 的 normalize/shaping 行为，本质上更像“上下文编译器”，先修消息拓扑与体积，再决定要不要做摘要。
+- shell / local command / task output 被 tag 化、截断、落盘，本质是在把“可再生的大块输出”搬出上下文。
+
+证据:
+
+- `claude-code-source-code/src/utils/analyzeContext.ts:363-1164`
+- `claude-code-source-code/src/query.ts:365-468`
+- `claude-code-source-code/src/utils/messages.ts:1989-2534`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:769-941`
+- `claude-code-source-code/src/utils/toolSearch.ts:545-646`
+- `claude-code-source-code/src/utils/task/TaskOutput.ts:32-282`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -325,6 +383,13 @@
 - 已补双通道状态同步与外部元数据回写专题，把事件时间线与状态快照回写收拢成统一架构图
 - 已补“外化状态优于推断状态”专题，把宿主真相从“自己猜”提升为“主动外化”
 - 已把 `bluebook/` 目录进一步扩展为状态同步链，并把“真相面”加入第一性原理阅读路径
+- 已补系统提示词、Frontmatter 与上下文注入手册，把 CLI / SDK / agent / skill / attachment prompt surface 收拢成统一 API 面
+- 已补提示词装配链与上下文成形专题，把 prompt 魔力从“文案”上升为装配链、角色合同与 cache 稳定性
+- 已补安全分层、策略收口与沙箱边界专题，把 trust、policy、sandbox、SSRF、MCP auth 收拢成统一安全架构
+- 已补源码质量、分层与工程先进性专题，把 query turn state、Tool ABI、schema/cache/retry 结构化为工程质量主线
+- 已补消息塑形、输出外置与 Token 经济专题，把 message shaping、tool result budget、deferred delta、compact 顺序收拢成统一上下文经济链
+- 已补“提示词魔力来自运行时而非咒语”和“工程化质量优于聪明技巧”两篇哲学专题
+- 已把 `bluebook/` 目录进一步扩展为 Prompt 链、安全链、工程链、上下文链
 
 ## 下一步待办
 
@@ -333,6 +398,8 @@
 - 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
 - 给 `SDKMessageSchema` 与 control subtype 做更细的 message-response crosswalk casebook，并补更细宿主接入样例
 - 给 `SDKMessage`、`worker_status`、`external_metadata` 做更细字段级 crosswalk，并补 consumer subset 对照表
+- 给 `query.ts` 的 turn state machine 单独成章，并把 continue/recovery 语义做成时序图
+- 给统一权限决策流水线单独成章，明确 modal renderer 与 decision engine 的边界
 - 补 `REPL.tsx` / Ink 更细的 transcript mode、message actions、PromptInput 交互链
 - 补命令索引的更细表格化版本与 workflow/dynamic skills 交叉核对
 - 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
@@ -360,3 +427,4 @@
 - 显式失败路径目前已经能被解释为架构原则，但尚未对 `authRecoveryInFlight`、transport close code、prompt timeout 等失败语义做完全文级整理，后续仍要继续补。
 - request / response / follow-on message 的闭环主线已经建立，但仍未把所有 subtype 做成统一 casebook；后续若继续深化，应防止不同闭环粒度混写。
 - 运行时真相的双通道主线已经建立，但仍未把每个状态项都标清“时间线 / 快照 / 恢复 / consumer subset”四层；后续若继续深化，应防止再次退回单通道叙述。
+- prompt 装配链和安全分层主线已经建立，但仍未把 `query.ts` turn state、统一权限流水线、services 层全景拆完；后续若继续深化，应防止再次只写哲学，不写执行内核。

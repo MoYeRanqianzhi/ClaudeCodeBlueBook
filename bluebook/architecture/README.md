@@ -19,6 +19,10 @@
 15. [宿主路径时序与竞速](15-%E5%AE%BF%E4%B8%BB%E8%B7%AF%E5%BE%84%E6%97%B6%E5%BA%8F%E4%B8%8E%E7%AB%9E%E9%80%9F.md)
 16. [远程恢复与重连状态机](16-%E8%BF%9C%E7%A8%8B%E6%81%A2%E5%A4%8D%E4%B8%8E%E9%87%8D%E8%BF%9E%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 17. [双通道状态同步与外部元数据回写](17-%E5%8F%8C%E9%80%9A%E9%81%93%E7%8A%B6%E6%80%81%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%A4%96%E9%83%A8%E5%85%83%E6%95%B0%E6%8D%AE%E5%9B%9E%E5%86%99.md)
+18. [提示词装配链与上下文成形](18-%E6%8F%90%E7%A4%BA%E8%AF%8D%E8%A3%85%E9%85%8D%E9%93%BE%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%88%90%E5%BD%A2.md)
+19. [安全分层、策略收口与沙箱边界](19-%E5%AE%89%E5%85%A8%E5%88%86%E5%B1%82%E3%80%81%E7%AD%96%E7%95%A5%E6%94%B6%E5%8F%A3%E4%B8%8E%E6%B2%99%E7%AE%B1%E8%BE%B9%E7%95%8C.md)
+20. [源码质量、分层与工程先进性](20-%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E3%80%81%E5%88%86%E5%B1%82%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%85%88%E8%BF%9B%E6%80%A7.md)
+21. [消息塑形、输出外置与 Token 经济](21-%E6%B6%88%E6%81%AF%E5%A1%91%E5%BD%A2%E3%80%81%E8%BE%93%E5%87%BA%E5%A4%96%E7%BD%AE%E4%B8%8EToken%E7%BB%8F%E6%B5%8E.md)
 
 这几章和 `bluebook/` 的区别是：
 
@@ -37,3 +41,7 @@
 - 想看本地 host、bridge、direct-connect、remote-session 的时序与 race：`15`
 - 想看 401/4001/4003、epoch rebuild、worker_status 回写等恢复状态机：`16`
 - 想看 `SDKMessage`、`worker_status`、`external_metadata` 如何组成双通道状态真相：`17`
+- 想看 prompt 如何从 system sections、agent prompt、attachment、fork cache 一路装出来：`18`
+- 想看 trust、permission、filesystem、sandbox、hooks、policy、MCP auth 的完整安全边界：`19`
+- 想看这个仓库为什么在工程结构上显得先进：`20`
+- 想看省 token 为什么不只是 compact，而是消息塑形、目录外移和大块输出外置：`21`
