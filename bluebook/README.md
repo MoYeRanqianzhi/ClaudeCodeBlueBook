@@ -110,7 +110,7 @@
 
 ### 为什么安全和 token 经济要一起看
 
-- `03 -> architecture/19 -> architecture/21 -> architecture/32 -> architecture/37 -> philosophy/03 -> philosophy/19 -> philosophy/22`
+- `03 -> architecture/19 -> architecture/21 -> architecture/32 -> architecture/37 -> architecture/50 -> philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/37`
 
 ### 为什么宿主接入不能只看 `query(prompt)`
 

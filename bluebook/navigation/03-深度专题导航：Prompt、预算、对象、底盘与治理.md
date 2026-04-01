@@ -57,12 +57,14 @@
 8. `api/32-Context Usage、Prompt预算与观测型宿主手册.md`
 9. `guides/07-用Context Usage与状态回写调优Prompt和预算.md`
 10. `architecture/43-预算观测、Context Suggestions与调优闭环.md`
-11. `philosophy/22-安全、成本与体验必须共用预算器.md`
-12. `philosophy/31-可观测预算优于经验调优.md`
+11. `architecture/50-PolicySettings控制平面、Sandbox契约与三套预算器.md`
+12. `philosophy/22-安全、成本与体验必须共用预算器.md`
+13. `philosophy/31-可观测预算优于经验调优.md`
+14. `philosophy/37-统一第一性原理不等于单一预算实现.md`
 
 这条线的核心结论是：
 
-- Claude Code 的预算器同时裁动作空间、上下文空间与认知噪音，而且会把这些约束外化成可观测、可建议、可调优的闭环
+- Claude Code 的预算思想同时裁动作空间、上下文空间与认知噪音，但运行时里并不是一个计数器统治一切，而是多套预算机制共同服务同一反扩张原则
 
 ## 3. 权威真相深线
 

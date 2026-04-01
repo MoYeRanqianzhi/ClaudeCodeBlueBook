@@ -380,6 +380,35 @@
 - `claude-code-source-code/src/utils/plugins/installedPluginsManager.ts:1033-1164`
 - `claude-code-source-code/src/utils/plugins/marketplaceHelpers.ts:472-520`
 
+### X. Unified first principle, multiple budget implementations
+
+- `policySettings` 在 `settings.ts` 里采用 first-source-wins（remote > HKLM/plist > file/drop-ins > HKCU），这说明它更像高阶控制平面，而不是普通 merge source。
+- `sandboxTypes` 主要承担策略契约角色，而 `sandbox-adapter` 继续把 `allowManagedDomainsOnly`、`allowManagedReadPathsOnly`、`failIfUnavailable`、`allowUnsandboxedCommands` 等写成运行时硬执行；schema 不是终点，adapter enforcement 才是边界完成点。
+- 安全模型是明显不对称的：危险 remote managed settings 触发 blocking dialog；`forceLoginOrgUUID` fail-closed；`--dangerously-skip-permissions` 只在隔离且无公网时放行。这说明治理和安全不是“越严越好”，而是在不同风险面做不同 fail-open / fail-closed 策略。
+- Claude Code 实际上不是一个总预算器，而是至少三套：工具结果对象/消息级预算、上下文 headroom/autocompact 预算、turn continuation/token target 预算。它们治理的对象和阶段不同，但共同服务于“限制无序扩张”的同一原则。
+- “省 token”最先发生在工具结果外置与聚合替换，不在 summarize 历史；`applyToolResultBudget()` 运行在 `microcompact` / `autocompact` 之前，就是这条顺序的最强证据。
+
+证据:
+
+- `claude-code-source-code/src/utils/settings/settings.ts:74-110`
+- `claude-code-source-code/src/utils/settings/settings.ts:319-343`
+- `claude-code-source-code/src/utils/settings/settings.ts:645-689`
+- `claude-code-source-code/src/entrypoints/sandboxTypes.ts:1-133`
+- `claude-code-source-code/src/utils/sandbox/sandbox-adapter.ts:152-235`
+- `claude-code-source-code/src/utils/sandbox/sandbox-adapter.ts:475-560`
+- `claude-code-source-code/src/utils/sandbox/sandbox-adapter.ts:720-752`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:1-69`
+- `claude-code-source-code/src/components/ManagedSettingsSecurityDialog/utils.ts:20-87`
+- `claude-code-source-code/src/utils/managedEnvConstants.ts:75-125`
+- `claude-code-source-code/src/utils/auth.ts:1914-1955`
+- `claude-code-source-code/src/setup.ts:400-439`
+- `claude-code-source-code/src/services/tools/toolExecution.ts:1403-1458`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:272-357`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:575-924`
+- `claude-code-source-code/src/query.ts:369-383`
+- `claude-code-source-code/src/services/compact/autoCompact.ts:33-140`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-75`
+
 证据：
 
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-519`
