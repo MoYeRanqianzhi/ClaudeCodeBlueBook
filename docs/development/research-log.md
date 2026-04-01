@@ -837,6 +837,25 @@
 - `claude-code-source-code/src/utils/auth.ts:83-110`
 - `claude-code-source-code/src/utils/auth.ts:1917-2000`
 
+### AN. The system’s technical sophistication is in observability-coupled control, not just more gates
+
+- `permissionLogging.ts` 把 permission accept/reject 正式接入 analytics、OTel 和 code-edit metrics，说明权限判定本身就是控制面事件，而非本地黑箱结果。
+- `telemetry/events.ts` 给事件加上 session-scoped attributes 与 monotonic `event.sequence`，`sessionTracing.ts` 又把 interaction / tool / llm_request 做成统一 tracing 语义，说明系统把时序与归属当成一等事实。
+- `perfettoTracing.ts` 进一步把 agent hierarchy、API 时长、tool 执行、等待时间写成 Perfetto trace，代表它不仅记录结果，还记录跨 agent 的运行机制。
+- `bridgeMain.ts` 的 heartbeat/re-dispatch/ack-after-commit 逻辑说明系统在很多关键点上优化的是“不可恢复损失窗口最小化”，而不是表面吞吐或单次成功率最大化。
+- `firstPartyEventLoggingExporter.ts` 还会把本 session 的事件批量落盘并重试前批次，说明观测连续性本身也是正式工程目标。
+- 更高抽象看，Claude Code 的先进性不在 gate 数量，而在把权限、恢复、观测、实验和分布式时序组织成同一张控制平面。
+
+证据:
+
+- `claude-code-source-code/src/hooks/toolPermission/permissionLogging.ts:1-220`
+- `claude-code-source-code/src/utils/telemetry/events.ts:1-63`
+- `claude-code-source-code/src/utils/telemetry/sessionTracing.ts:1-220`
+- `claude-code-source-code/src/utils/telemetry/perfettoTracing.ts:1-220`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:196-320`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:832-890`
+- `claude-code-source-code/src/services/analytics/firstPartyEventLoggingExporter.ts:130-240`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -892,6 +911,7 @@
 - 已补风控专题 `46-冻结语义与单链恢复：为什么故障窗口越乱试越像被封了`，把恢复问题从“多试几次”提升为单链、一致性和前缀稳定问题
 - 已补风控专题 `47-高波动环境用户的合规权益保护：如何降低误伤并缩短自证路径`，把中国/高波动环境用户的利益保护收束成稳定主路径、证据保全和共享词汇三条主线
 - 已补风控专题 `48-身份路径绑定：配置根、托管环境与组织闭锁为什么必须一致`，把 config root、storage slot、managed context 与 forceLoginOrg 收束成同一条身份路径模型
+- 已补风控专题 `49-检测先进性再评估：风控不是规则堆积，而是观测驱动的分布式控制平面`，把高级性从“gate 很多”提升为“观测-恢复-判定一体化控制面”
 
 ## 下一步待办
 
