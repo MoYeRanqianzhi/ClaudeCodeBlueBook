@@ -935,6 +935,20 @@
 - `claude-code-source-code/src/components/mcp/MCPListPanel.tsx:1-160`
 - `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:1-88`
 
+### AT. Evasion attempts generally trade short-term friction relief for higher long-term proof burden
+
+- `auth.ts` 明确禁止 managed session 回退到用户终端私有凭证来源，说明“换一条凭证路径先过再说”在受管上下文里本身就会制造 wrong-org 或 wrong-context 风险。
+- `trustedDevice.ts` 中 env token precedence 与 fresh-login enrollment 说明，高安全链路有自己的证明要求；用替代 token / 替代路径临时顶上，并不能稳定替代正确的主体链和设备链。
+- `channelAllowlist.ts` 和 `pluginOnlyPolicy.ts` 又说明，即使是扩展面或替代批准面，也被显式放进 allowlist / admin-trusted 边界里；能发声不等于有资格替用户放权。
+- 更高抽象看，规避思路的共同问题是：它们试图绕开一层证明，却会同时破坏身份路径、组织边界、批准链或主体连续性中的另一层，因此长期看通常不是最优策略。
+
+证据:
+
+- `claude-code-source-code/src/utils/auth.ts:83-110`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:65-115`
+- `claude-code-source-code/src/services/mcp/channelAllowlist.ts:1-77`
+- `claude-code-source-code/src/utils/settings/pluginOnlyPolicy.ts:1-56`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -997,6 +1011,7 @@
 - 已补风控专题 `53-高波动环境严格运行SOP：从日常纪律到升级求助的四阶段手册`，把中国/高波动环境用户的合规建议压成可执行顺序
 - 已补风控专题 `54-如果要把误伤再降一半：平台必须把哪些现有能力前置成产品`，把改进重点从“再加 gate”转向“统一状态面、证据面和升级面”
 - 已补风控专题 `55-后期研究索引：41-54的二级导航、问题入口与最短阅读链`，把后期高密度章节拆成四条二级主线，改善检索结构
+- 已补风控专题 `56-反规避原则：为什么任何绕过思路都会回到更高风险与更高证明负担`，把“规避冲动”改写为第一性原理层面的反规避论证
 
 ## 下一步待办
 
