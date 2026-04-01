@@ -196,13 +196,25 @@
 
 - `architecture/39 -> architecture/53 -> architecture/54 -> architecture/61 -> philosophy/39 -> philosophy/48`
 
+### 为什么真正强的Prompt不是信息更多，而是行动语义更密
+
+- `architecture/61 -> architecture/64 -> philosophy/48 -> philosophy/51`
+
 ### 为什么安全设计和省Token设计其实是同一个系统
 
 - `architecture/37 -> architecture/51 -> architecture/56 -> architecture/62 -> philosophy/38 -> philosophy/49`
 
+### 为什么模型不是资源的主人，Runtime才是
+
+- `architecture/62 -> architecture/65 -> philosophy/49 -> philosophy/52`
+
 ### 为什么 Claude Code 值得学的是“可演化内核”
 
 - `architecture/41 -> architecture/52 -> architecture/58 -> architecture/63 -> philosophy/45 -> philosophy/50`
+
+### 为什么好架构不是更会重构，而是始终保留重构可能性
+
+- `architecture/63 -> architecture/66 -> philosophy/50 -> philosophy/53`
 
 ### 为什么调优上下文前必须先看预算结构
 
