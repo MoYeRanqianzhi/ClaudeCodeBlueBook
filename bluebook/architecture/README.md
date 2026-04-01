@@ -71,6 +71,7 @@
 - [43-预算观测、Context Suggestions与调优闭环](43-%E9%A2%84%E7%AE%97%E8%A7%82%E6%B5%8B%E3%80%81Context%20Suggestions%E4%B8%8E%E8%B0%83%E4%BC%98%E9%97%AD%E7%8E%AF.md)
 - [44-单一真相入口：mode、tool pool、state与metadata的权威面](44-%E5%8D%95%E4%B8%80%E7%9C%9F%E7%9B%B8%E5%85%A5%E5%8F%A3%EF%BC%9Amode%E3%80%81tool%20pool%E3%80%81state%E4%B8%8Emetadata%E7%9A%84%E6%9D%83%E5%A8%81%E9%9D%A2.md)
 - [47-QueryGuard：本地查询生命周期的authoritative state machine](47-QueryGuard%EF%BC%9A%E6%9C%AC%E5%9C%B0%E6%9F%A5%E8%AF%A2%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84authoritative%20state%20machine.md)
+- [48-远程失败不是断线重连：401、Close Code与环境恢复的分层语义](48-%E8%BF%9C%E7%A8%8B%E5%A4%B1%E8%B4%A5%E4%B8%8D%E6%98%AF%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E%EF%BC%9A401%E3%80%81Close%20Code%E4%B8%8E%E7%8E%AF%E5%A2%83%E6%81%A2%E5%A4%8D%E7%9A%84%E5%88%86%E5%B1%82%E8%AF%AD%E4%B9%89.md)
 
 ## 推荐阅读链
 
@@ -84,6 +85,7 @@
 - 想看多 Agent、workflow 与隔离：`10 -> 30 -> 34 -> 45`
 - 想看权限、安全、治理与 token 预算统一图：`05 -> 11 -> 19 -> 23 -> 32 -> 37`
 - 想看宿主控制平面：`13 -> 14 -> 15 -> 17`
+- 想看远程失败为什么也是分层语义而不是“断线重连”：`15 -> 16 -> 48`
 - 想看 REPL 前台如何从状态机深入到 search / selection / scroll 协同：`04 -> 26 -> 35`
 - 想看源码先进性、热点与产品边界：`20 -> 24 -> 26 -> 27 -> 33 -> 38`
 - 想看显式失败、重复响应与 race-aware runtime：`13 -> 14 -> 17 -> 40`

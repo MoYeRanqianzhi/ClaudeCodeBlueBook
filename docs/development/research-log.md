@@ -339,6 +339,25 @@
 - `claude-code-source-code/src/utils/handlePromptSubmit.ts:426-607`
 - `claude-code-source-code/src/hooks/useQueueProcessor.ts:1-59`
 
+### V. Remote failure is a layered semantics system, not “disconnect and reconnect”
+
+- `SessionsWebSocket` 已经把 close code 分成 permanent close、session-not-found limited retry、一般 reconnect 三类；这说明连接层失败不是单一布尔值，而是预算化分级。
+- `remoteBridgeCore` 把 `401` 做成 transport-semantic change：必须 refresh OAuth、重新取 remote credentials、rebuild transport、切换 epoch，而不是只换 token 继续。
+- `authRecoveryInFlight` 期间主动 drop `control_request/response/cancel/result`，说明系统宁可显式丢弃，也不接受陈旧 transport 上制造“好像发出去了”的假成功。
+- `replBridge` 在 transport permanent close 后进一步尝试 env reconnect，说明 close code 之外还有“环境级恢复”一层；`envLessBridgeConfig` 则把 connect/archive/http/heartbeat 等超时预算显式制度化。
+- `initReplBridge` 在 preflight 阶段主动避免 expired-and-unrefreshable token 继续发请求，说明失败语义还包括 fail-closed 的 guaranteed-fail path 消毒，而不是只覆盖 post-close recovery。
+
+证据:
+
+- `claude-code-source-code/src/remote/SessionsWebSocket.ts:21-36`
+- `claude-code-source-code/src/remote/SessionsWebSocket.ts:234-299`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:456-588`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:824-878`
+- `claude-code-source-code/src/bridge/replBridge.ts:887-965`
+- `claude-code-source-code/src/bridge/initReplBridge.ts:192-215`
+- `claude-code-source-code/src/cli/transports/WebSocketTransport.ts:38-58`
+- `claude-code-source-code/src/bridge/envLessBridgeConfig.ts:13-33`
+
 证据：
 
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-519`

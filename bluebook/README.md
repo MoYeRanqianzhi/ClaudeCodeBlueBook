@@ -136,6 +136,10 @@
 
 - `guides/07 -> api/32 -> architecture/43 -> philosophy/22 -> philosophy/31`
 
+### 为什么远程失败不该写成“断线重连”
+
+- `api/33 -> architecture/16 -> architecture/48 -> philosophy/11 -> philosophy/35`
+
 ### 为什么单一真相入口比多处半真相实现更可靠
 
 - `api/34 -> architecture/41 -> architecture/44 -> philosophy/28 -> philosophy/32`

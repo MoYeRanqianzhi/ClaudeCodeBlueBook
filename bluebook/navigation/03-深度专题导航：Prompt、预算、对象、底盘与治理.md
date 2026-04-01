@@ -131,7 +131,27 @@
 
 - 用户可见真相和输入边界共同决定系统为什么可信
 
-## 6. 源码先进性深线
+## 6. 远程恢复与失败语义深线
+
+如果问题是：
+
+- 为什么 Claude Code 的远程恢复不能被压成“断线重连”。
+- 为什么 `401`、close code、epoch、timeout budget 与 env reconnect 必须一起看。
+- 为什么恢复期间主动 drop 消息，反而比“尽量不丢”更成熟。
+
+建议顺序：
+
+1. `api/33-远程恢复、401与Close Code语义手册.md`
+2. `architecture/16-远程恢复与重连状态机.md`
+3. `architecture/48-远程失败不是断线重连：401、Close Code与环境恢复的分层语义.md`
+4. `philosophy/11-显式失败优于假成功.md`
+5. `philosophy/35-显式远程失败优于模糊在线状态.md`
+
+这条线的核心结论是：
+
+- Claude Code 的远程可用性不是靠“断了再试”，而是靠分层失败语义、防假连续性和恢复边界管理
+
+## 7. 源码先进性深线
 
 如果问题是：
 
@@ -158,7 +178,7 @@
 
 - Claude Code 值得学的不是“零技术债”，而是 contract-first、race-aware、runtime-first，以及连本地查询都要先建立 authoritative control plane 的偿债方向
 
-## 7. 真正的使用路线
+## 8. 真正的使用路线
 
 如果你的目标不是研究，而是把 Claude Code 真正用顺：
 
@@ -172,7 +192,7 @@
 
 - 最佳使用方式不是写更长 prompt，而是先选对 runtime 形态
 
-## 8. 最后一句
+## 9. 最后一句
 
 如果你只想记一个阅读原则：
 
