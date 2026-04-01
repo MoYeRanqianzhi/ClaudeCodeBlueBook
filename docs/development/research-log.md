@@ -878,6 +878,19 @@
 - `claude-code-source-code/src/utils/permissions/permissions.ts:1161-1295`
 - `claude-code-source-code/src/utils/settings/settings.ts:875-940`
 
+### AP. Approval itself is treated as a governed trust surface
+
+- `permissionLogging.ts` 把 accept/reject 来源显式建模为 config/user/hook/classifier，并把批准结果写入 analytics、OTel 和 toolDecisions，说明批准不是无来源事件。
+- `channelPermissions.ts` 允许 Telegram/iMessage/Discord 之类 channel relay 参与 permission prompt，但批准必须通过结构化事件而非普通文本；源码还明确指出真正的 trust boundary 是 allowlist。
+- `channelAllowlist.ts` 进一步说明替代批准面必须先通过 `{marketplace, plugin}` allowlist 和总开关 gate，而不是任何能发消息的插件都自动拥有批准资格。
+- 更高抽象看，Claude Code 在治理的不只是动作本身，也在治理“谁有资格替用户说 yes”。批准权本身就是风控对象。
+
+证据:
+
+- `claude-code-source-code/src/hooks/toolPermission/permissionLogging.ts:1-240`
+- `claude-code-source-code/src/services/mcp/channelPermissions.ts:1-240`
+- `claude-code-source-code/src/services/mcp/channelAllowlist.ts:1-77`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -935,6 +948,7 @@
 - 已补风控专题 `48-身份路径绑定：配置根、托管环境与组织闭锁为什么必须一致`，把 config root、storage slot、managed context 与 forceLoginOrg 收束成同一条身份路径模型
 - 已补风控专题 `49-检测先进性再评估：风控不是规则堆积，而是观测驱动的分布式控制平面`，把高级性从“gate 很多”提升为“观测-恢复-判定一体化控制面”
 - 已补风控专题 `50-损失函数视角：平台究竟在最小化什么，而用户又在失去什么`，把 fail-open、fail-closed、cooldown 与误伤统一翻译成多目标损失平衡
+- 已补风控专题 `51-批准链分析：谁有资格替用户说“可以”，以及这本身为何是风控问题`，把权限批准、替代审批面和 allowlist 收束成正式信任边界
 
 ## 下一步待办
 
