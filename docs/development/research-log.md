@@ -435,6 +435,27 @@
 - `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:25-87`
 - `claude-code-source-code/src/services/rateLimitMessages.ts:17-103`
 
+### W. Technical sophistication is the collaboration of signal, decision, recovery, and explanation planes
+
+- `initializeTelemetryAfterTrust()` 先等待 remote managed settings，再初始化 telemetry，说明观测层本身就受治理层约束，而不是治理之外的旁路。
+- `checkSecurityRestrictionGate(...)` 与 `checkGate_CACHED_OR_BLOCKING(...)` 使用不同缓存语义，说明安全限制和 entitlement 并不是同一类 gate。
+- `checkManagedSettingsSecurity(...)` 把危险设置变化提升为交互式确认，说明平台会把某些远程配置变化当成“治理命令”，而不只是普通同步。
+- `mcp/client.ts` 把远程认证失败提升为 `needs-auth` 状态并缓存，说明子系统失败被建模成有记忆的连接状态，而不是瞬时异常。
+- `remoteBridgeCore.ts` 在 401 恢复窗口主动 drop stale control/result 消息，说明恢复层优先保护因果一致性，而不是表面不断。
+- `diagLogs.ts` 明确禁止 PII，说明解释层追求的是低敏感度可解释性，而不是无限制地收集更多数据。
+- 更高抽象看，Claude Code 风控技术的先进性不在秘密检测器，而在信号层、判定层、恢复层、解释层被整合成一套可持续演进的控制平面。
+
+证据:
+
+- `claude-code-source-code/src/entrypoints/init.ts:241-280`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:851-935`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:14-73`
+- `claude-code-source-code/src/services/mcp/client.ts:335-370`
+- `claude-code-source-code/src/services/mcp/client.ts:2311-2334`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:529-588`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:824-878`
+- `claude-code-source-code/src/utils/diagLogs.ts:14-57`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
