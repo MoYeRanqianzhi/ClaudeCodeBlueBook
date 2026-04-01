@@ -303,6 +303,25 @@
 - `claude-code-source-code/src/utils/sessionStorage.ts:804-822`
 - `claude-code-source-code/src/utils/sessionStorage.ts:2884-2917`
 
+### T. Prompt magic keeps descending into an explainable stability system
+
+- `promptCacheBreakDetection` 不是简单“缓存断点统计”，而是 pre-call snapshot + post-call token verification 的两阶段诊断器：先记录所有可能影响 server-side cache key 的客户端状态，再用真实 `cache_read_input_tokens` 下降验证 break 是否真的发生。
+- 它追踪的不只 system prompt 文本，还包括 tools hash、per-tool schema hash、cache_control、globalCacheStrategy、betas、effort、extraBody 等，说明 Claude Code 把 prompt 看成整条 request surface，而不是一段文案。
+- `claude.ts` 显式把 defer-loading tools 排除出 cache detection，因为这些工具不会真正进入 API prompt；这说明作者关心的是“实际发给模型的稳定性对象”，不是本地代码里潜在可见的对象。
+- `notifyCacheDeletion(...)`、`notifyCompaction(...)` 与 TTL / server-side 分流说明系统已经把“预期下降”“TTL 过期”“疑似服务端逐出”从真正 client-side break 中分离出来，prompt 失稳不再被一概写成本地 prompt 问题。
+- 更抽象地说，Claude Code 的 prompt 魔力正在从“共享前缀资产”继续升级成“可解释稳定性系统”：不仅能复用前缀，还能解释前缀为什么稳定、为什么失稳。
+
+证据:
+
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-119`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:220-433`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:437-706`
+- `claude-code-source-code/src/services/api/claude.ts:1457-1486`
+- `claude-code-source-code/src/services/api/claude.ts:2380-2391`
+- `claude-code-source-code/src/utils/toolPool.ts:55-71`
+- `claude-code-source-code/src/tools.ts:329-367`
+- `claude-code-source-code/src/query/stopHooks.ts:92-99`
+
 证据：
 
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-519`

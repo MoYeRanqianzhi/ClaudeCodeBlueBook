@@ -28,12 +28,14 @@
 6. `architecture/36-五层合同、缓存断点与Prompt装配时序.md`
 7. `architecture/39-Prompt可重放前缀、可观测预算与Section编译器.md`
 8. `architecture/42-辅助循环、侧问题与后回合Fork共享前缀.md`
-9. `philosophy/21-Prompt魔力来自约束叠加与状态反馈.md`
-10. `philosophy/30-Prompt不是一次请求而是可复用前缀资产.md`
+9. `architecture/46-Prompt稳定性解释层：cache-break detection的两阶段诊断器.md`
+10. `philosophy/21-Prompt魔力来自约束叠加与状态反馈.md`
+11. `philosophy/30-Prompt不是一次请求而是可复用前缀资产.md`
+12. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
 
 这条线的核心结论是：
 
-- prompt 魔力来自装配顺序、工具 ABI、缓存边界、状态晚绑定、协作语法，以及辅助循环共享同一前缀资产
+- prompt 魔力来自装配顺序、工具 ABI、缓存边界、状态晚绑定、协作语法、辅助循环共享同一前缀资产，以及系统能够解释为什么稳定与为什么失稳
 
 ## 2. 统一预算器深线
 

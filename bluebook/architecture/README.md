@@ -35,6 +35,7 @@
 - [36-五层合同、缓存断点与Prompt装配时序](36-%E4%BA%94%E5%B1%82%E5%90%88%E5%90%8C%E3%80%81%E7%BC%93%E5%AD%98%E6%96%AD%E7%82%B9%E4%B8%8EPrompt%E8%A3%85%E9%85%8D%E6%97%B6%E5%BA%8F.md)
 - [39-Prompt可重放前缀、可观测预算与Section编译器](39-Prompt%E5%8F%AF%E9%87%8D%E6%94%BE%E5%89%8D%E7%BC%80%E3%80%81%E5%8F%AF%E8%A7%82%E6%B5%8B%E9%A2%84%E7%AE%97%E4%B8%8ESection%E7%BC%96%E8%AF%91%E5%99%A8.md)
 - [42-辅助循环、侧问题与后回合Fork共享前缀](42-%E8%BE%85%E5%8A%A9%E5%BE%AA%E7%8E%AF%E3%80%81%E4%BE%A7%E9%97%AE%E9%A2%98%E4%B8%8E%E5%90%8E%E5%9B%9E%E5%90%88Fork%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80.md)
+- [46-Prompt稳定性解释层：cache-break detection的两阶段诊断器](46-Prompt%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%A7%A3%E9%87%8A%E5%B1%82%EF%BC%9Acache-break%20detection%E7%9A%84%E4%B8%A4%E9%98%B6%E6%AE%B5%E8%AF%8A%E6%96%AD%E5%99%A8.md)
 
 ### 5. 协作与隔离平面
 
@@ -78,6 +79,7 @@
 - 想看 prompt 魔力如何落到五层合同、缓存断点与协作语法：`18 -> 28 -> 31 -> 36`
 - 想看 prompt 为什么还能继续下沉到可重放、可观测、可编译：`28 -> 31 -> 36 -> 39`
 - 想看 prompt 魔力怎样扩展到 `/btw`、suggestion、memory、summary 这些辅助循环：`31 -> 39 -> 42`
+- 想看 prompt 为什么继续升级成“可解释稳定性系统”：`39 -> 42 -> 46`
 - 想看多 Agent、workflow 与隔离：`10 -> 30 -> 34 -> 45`
 - 想看权限、安全、治理与 token 预算统一图：`05 -> 11 -> 19 -> 23 -> 32 -> 37`
 - 想看宿主控制平面：`13 -> 14 -> 15 -> 17`
