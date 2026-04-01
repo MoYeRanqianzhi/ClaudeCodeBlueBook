@@ -844,6 +844,32 @@
 - `claude-code-source-code/src/components/messages/nullRenderingAttachments.ts:4-69`
 - `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:332-460`
 
+### AA. 源码质量深线已升级到“显式失败、反竞争条件、chokepoint 与 leaf module”
+
+- `StructuredIO`、`DirectConnectManager`、`RemoteSessionManager`、`bridgeMessaging` 反复体现同一原则：unsupported / unknown / outbound-only control request 必须显式回 error，不能制造假成功。
+- `updateTaskState(...)`、`generateTaskAttachments(...)` 与 mailbox attachment 去重逻辑说明作者不是按“单次调用正确”写代码，而是按 stale snapshot、duplicate response、双来源消息这些 race-aware 主路径写代码。
+- `onChangeAppState(...)`、`assembleToolPool(...)`、`promptCacheBreakDetection.ts` 说明 Claude Code 倾向于用少数 chokepoint 统一维护 mode sync、tool truth、cache break 解释等全局不变量。
+- `pluginPolicy.ts`、`normalization.ts`、`toolPool.ts`、`teammateViewHelpers.ts` 等 leaf module 则说明作者会主动切断循环依赖和模块图污染，以保护这些 chokepoint 不被反向拖垮。
+
+证据：
+
+- `claude-code-source-code/src/cli/structuredIO.ts:135-162`
+- `claude-code-source-code/src/cli/structuredIO.ts:533-658`
+- `claude-code-source-code/src/server/directConnectManager.ts:81-99`
+- `claude-code-source-code/src/server/directConnectManager.ts:188-200`
+- `claude-code-source-code/src/remote/RemoteSessionManager.ts:189-213`
+- `claude-code-source-code/src/bridge/bridgeMessaging.ts:126-157`
+- `claude-code-source-code/src/bridge/bridgeMessaging.ts:215-283`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/tools.ts:193-367`
+- `claude-code-source-code/src/utils/task/framework.ts:48-71`
+- `claude-code-source-code/src/utils/task/framework.ts:158-248`
+- `claude-code-source-code/src/utils/attachments.ts:3583-3665`
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-20`
+- `claude-code-source-code/src/services/mcp/normalization.ts:1-23`
+- `claude-code-source-code/src/utils/toolPool.ts:43-79`
+- `claude-code-source-code/src/state/teammateViewHelpers.ts:5-21`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。

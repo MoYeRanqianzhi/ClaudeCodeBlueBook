@@ -72,8 +72,8 @@
 ### 6. 想研究源码结构与工程先进性
 
 - 先读 `01 -> 03 -> 05`
-- 再读 `api/30 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38`
-- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/23 -> philosophy/24`
+- 再读 `api/30 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38 -> architecture/40 -> architecture/41`
+- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29`
 
 ## 按第一性原理阅读
 
@@ -125,6 +125,10 @@
 ### 想按深度专题而不是按目录来读
 
 - 先读 [navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理](navigation/03-%E6%B7%B1%E5%BA%A6%E4%B8%93%E9%A2%98%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E5%BA%95%E7%9B%98%E4%B8%8E%E6%B2%BB%E7%90%86.md)
+
+### 为什么宿主不该猜，而系统必须显式失败与显式回写
+
+- `architecture/13 -> architecture/17 -> architecture/40 -> philosophy/11 -> philosophy/29`
 
 ## 专题入口
 
