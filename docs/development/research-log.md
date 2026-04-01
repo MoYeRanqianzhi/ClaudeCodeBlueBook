@@ -590,6 +590,21 @@
 - `claude-code-source-code/src/bridge/bridgeMain.ts:659-730`
 - `claude-code-source-code/src/bridge/replBridge.ts:2080-2105`
 
+### AE. Organization governance is a three-party coordination problem
+
+- `policyLimits` 表明平台负责下发策略接口和客户端消费链，而不是把组织限制硬编码到本地。
+- `remoteManagedSettings` 进一步说明组织治理会进入本地运行时：读取缓存、远程拉取、危险设置确认、热更新。
+- `securityCheck.tsx` 表明危险变更并非管理员单方面静默生效，终端用户仍是本地最后一跳确认者。
+- 更高抽象看，很多“像封号”的体验并不是平台与用户的二元问题，而是平台、管理员、用户三方责任边界没有被清楚对齐。
+
+证据:
+
+- `claude-code-source-code/src/services/policyLimits/index.ts:217-320`
+- `claude-code-source-code/src/services/policyLimits/index.ts:505-535`
+- `claude-code-source-code/src/services/policyLimits/index.ts:618-629`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:410-560`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:22-73`
+
 ### AE. Governance uses multiple clocks, not one static boundary
 
 - `mcp/auth.ts` 会在 token 距离过期 5 分钟时主动刷新，说明会话治理在时间上前移，而不是等 401 才处理。
