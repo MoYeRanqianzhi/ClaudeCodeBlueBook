@@ -71,18 +71,18 @@
 - 已补 REPL、权限状态机、上下文压缩恢复链三篇架构深挖
 - 已补 SDK 消息字典、控制请求矩阵、上下文经济学、安全观四篇专题文档
 - 已补 PromptInput/消息渲染链、内置命令域索引、产品实验与演化方法
+- 已补 `services/compact/*` 细拆、命令字段与可用性索引、构建期开关/运行期开关/兼容层专题
 
 ## 下一步待办
 
-- 补一章“上下文压缩与恢复机制”深挖 `query.ts`
 - 补一章“权限系统全链路”深挖 `permissionSetup.ts` / `permissions.ts`
 - 补一章“MCP 实战配置与集成范式”
 - 补一章“多 Agent 协作模式与 prompt 模板”
 - 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
 - 给 `SDKMessageSchema` 与 control subtype 做完整对照表
 - 补 `REPL.tsx` / Ink 更细的 transcript mode、message actions、PromptInput 交互链
-- 补命令索引的字段级表格化版本
-- 补 feature gate / runtime gate / compat shim 的统一演化图
+- 补命令索引的更细表格化版本与 workflow/dynamic skills 交叉核对
+- 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
 
 ## 当前风险
 
@@ -90,5 +90,5 @@
 - `query.ts` 仍有大量细节未拆完，尤其是 compact / reactive compact / media recovery 分支。
 - plugin 市场能力的基础设施很完整，但现阶段不能夸大其生态成熟度。
 - SDK 入口可见，但部分 `runtimeTypes` / `toolTypes` / `controlTypes` 源文件未在当前提取树中展开，接口分析需持续标注这层边界。
-- `query.ts` 的具体 compact 算法实现在 `services/compact/*`，当前章节已讲主链，细算法仍待继续下钻。
-- `commands/` 目录很多模块名与最终 slash name 可能不完全同名，命令索引章节当前仍偏结构化索引，后续要继续核实名义层。
+- `services/compact/*` 已明显显示多条 gated/ant-only 路径，不能把 cached microcompact、API-native clear edits 等直接当作所有 build 的公开能力。
+- `commands/` 目录很多模块名与最终 slash name 可能不完全同名，虽然字段级索引已补，但 workflow/dynamic skills 仍需继续核实。

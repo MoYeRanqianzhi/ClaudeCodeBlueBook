@@ -19,6 +19,14 @@
 6. [05-功能全景与 API 支持](bluebook/05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)
 7. [06-第一性原理与苏格拉底反思](bluebook/06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md)
 
+## 按目标阅读
+
+- 想先建立整体判断：顺读 `bluebook/` 主线。
+- 想查具体机制：看 `architecture/`。
+- 想查接口、字段和协议：看 `api/`。
+- 想理解设计内涵与演化方法：看 `philosophy/`。
+- 想核对证据、日志与边界：看 `development/`。
+
 ## 兼容入口
 
 - 顶层 `docs/00-03` 文件保留作为兼容入口。
@@ -39,10 +47,10 @@
 ## 目录结构
 
 - `bluebook/`: 正式主线章节
-- `architecture/`: 结构深挖
-- `api/`: 接口与能力支持
+- `architecture/`: 机制、状态机与算法深挖
+- `api/`: 接口、字段与可用性索引
 - `guides/`: 用法与工作流
-- `philosophy/`: 哲学与方法论
+- `philosophy/`: 哲学、产品演化与第一性原理解读
 - `development/`: 研究过程、日志、记忆与迭代准则
 
 ## 专题索引
@@ -51,3 +59,9 @@
 - [API 专题](api/README.md)
 - [使用专题](guides/README.md)
 - [哲学专题](philosophy/README.md)
+
+本轮新增的深挖入口：
+
+- [compact 算法与上下文管理细拆](architecture/08-compact%E7%AE%97%E6%B3%95%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E7%BB%86%E6%8B%86.md)
+- [命令字段与可用性索引](api/07-%E5%91%BD%E4%BB%A4%E5%AD%97%E6%AE%B5%E4%B8%8E%E5%8F%AF%E7%94%A8%E6%80%A7%E7%B4%A2%E5%BC%95.md)
+- [构建期开关、运行期开关与兼容层](philosophy/05-%E6%9E%84%E5%BB%BA%E6%9C%9F%E5%BC%80%E5%85%B3%E3%80%81%E8%BF%90%E8%A1%8C%E6%9C%9F%E5%BC%80%E5%85%B3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%B1%82.md)

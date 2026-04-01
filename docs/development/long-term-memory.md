@@ -28,11 +28,14 @@
   - REPL 与 Ink 交互架构
   - 权限系统与安全状态机
   - 上下文压缩与恢复链
+  - compact 算法与上下文管理细拆
   - PromptInput 与消息渲染链
   - 上下文经济学
   - 安全观与边界设计
   - 产品实验与演化方法
+  - 构建期开关、运行期开关与兼容层
   - 内置命令域索引
+  - 命令字段与可用性索引
 
 ## 已确认事实
 
@@ -46,22 +49,24 @@
 - Claude Code 的上下文管理应被理解为工作集管理，而不是“大窗口”策略
 - PromptInput/Messages/VirtualMessageList/messageActions 共同构成前台控制面，而不是单纯输入框与滚动日志
 - 产品能力需要按 build-time gate、runtime gate、compat shim 三层理解
+- `services/compact/*` 体现的是多层上下文工作集管理，不是单一摘要算法
+- `Command` 类型空间远大于内置 slash command 本身，很多高级字段主要为技能、插件、MCP 命令面准备
 
 ## 后续章节建议
 
 1. 深挖 `REPL.tsx` 的交互状态机
 2. 深挖 `services/api/claude.ts` 与 streaming tool execution
-3. 深挖 compact / microcompact / context collapse
+3. 深挖 `REPL.tsx` 的 transcript search / sticky prompt / message actions
 4. 深挖权限系统与 auto mode 的风险控制
 5. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
 6. 深挖 AgentTool、Team、Coordinator 的编排范式
 7. 深挖 MCP 接入面与插件生态边界
 8. 深挖 `StructuredIO` / `RemoteIO` 的 host-CLI 协议与时序
-9. 深挖 `commands.ts` 的全量功能域与 availability/gating
+9. 深挖 `services/api/claude.ts` 与 streaming tool execution
 10. 把 `SDKMessageSchema` 做成可检索的消息字典
 11. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
-12. 深挖 `services/compact/*` 的具体实现差异
-13. 给命令域索引补真实 `name` / `aliases` / `type` / `availability`
+12. 给 MCP 状态、命令 availability、控制请求做时序化视图
+13. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
 
 ## 编写约定
 

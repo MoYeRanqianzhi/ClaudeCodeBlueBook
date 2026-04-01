@@ -217,18 +217,26 @@ MCP 在 Claude Code 中既是 client 扩展总线，也是可反向暴露的 ser
 
 ## 6. 下一步应该怎么继续补
 
-如果目标真的是“尽量覆盖全部功能和 API”，下一阶段优先级应是:
+如果目标真的是“尽量覆盖全部功能和 API”，这一轮已经补上三块关键缺口:
 
-1. 把 slash command 按功能域做完整目录表。
-2. 把 `SDKMessageSchema` 的消息变体做完整表格。
-3. 把 control request/response subtype 做协议矩阵。
-4. 把 MCP config scope、transport、auth/needs-auth/error 状态做状态机图。
+1. 把命令面从功能域索引推进到字段级与可用性级。
+2. 把 compact 从 query 主链推进到 `services/compact/*` 的算法层。
+3. 把 feature gate 从概念描述推进到 build-time / runtime / compat shim 三层。
+
+在此基础上，下一阶段优先级应是:
+
+1. 把 `SDKMessageSchema` 的消息变体继续做完整表格。
+2. 把 control request/response subtype 做更细的协议时序图。
+3. 把 MCP config scope、transport、auth/needs-auth/error 状态做状态机图。
+4. 把前台交互层继续下钻到 transcript search / sticky prompt / message actions。
 
 本章对应的详细接口文档:
 
 - [命令与功能矩阵](../api/01-%E5%91%BD%E4%BB%A4%E4%B8%8E%E5%8A%9F%E8%83%BD%E7%9F%A9%E9%98%B5.md)
 - [内置命令域索引](../api/06-%E5%86%85%E7%BD%AE%E5%91%BD%E4%BB%A4%E5%9F%9F%E7%B4%A2%E5%BC%95.md)
+- [命令字段与可用性索引](../api/07-%E5%91%BD%E4%BB%A4%E5%AD%97%E6%AE%B5%E4%B8%8E%E5%8F%AF%E7%94%A8%E6%80%A7%E7%B4%A2%E5%BC%95.md)
 - [Agent SDK 与控制协议](../api/02-Agent%20SDK%E4%B8%8E%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE.md)
 - [MCP 与远程传输](../api/03-MCP%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BC%A0%E8%BE%93.md)
 - [SDK 消息与事件字典](../api/04-SDK%E6%B6%88%E6%81%AF%E4%B8%8E%E4%BA%8B%E4%BB%B6%E5%AD%97%E5%85%B8.md)
 - [控制请求与响应矩阵](../api/05-%E6%8E%A7%E5%88%B6%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%93%8D%E5%BA%94%E7%9F%A9%E9%98%B5.md)
+- [compact 算法与上下文管理细拆](../architecture/08-compact%E7%AE%97%E6%B3%95%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E7%BB%86%E6%8B%86.md)

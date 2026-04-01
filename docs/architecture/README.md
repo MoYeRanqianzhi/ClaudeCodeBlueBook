@@ -9,6 +9,7 @@
 5. [权限系统与安全状态机](05-%E6%9D%83%E9%99%90%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 6. [上下文压缩与恢复链](06-%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8E%8B%E7%BC%A9%E4%B8%8E%E6%81%A2%E5%A4%8D%E9%93%BE.md)
 7. [PromptInput 与消息渲染链](07-PromptInput%E4%B8%8E%E6%B6%88%E6%81%AF%E6%B8%B2%E6%9F%93%E9%93%BE.md)
+8. [compact 算法与上下文管理细拆](08-compact%E7%AE%97%E6%B3%95%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E7%BB%86%E6%8B%86.md)
 
 这几章和 `bluebook/` 的区别是：
 
