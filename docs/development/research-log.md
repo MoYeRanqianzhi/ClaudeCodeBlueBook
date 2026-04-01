@@ -378,6 +378,8 @@
 - 单页总纲已经稳定形成：主体层、资格层、组织层、观测层、动作层、高安全会话层、计费层、哲学层和用户处置层，可以作为后续所有风险研究的统一骨架。
 - 更稳妥的“高封号率中国用户”技术表述不是平台一定针对，而是高波动网络、身份路径分裂、设备/网络切换、组织与权益错配更容易把多层连续性问题压缩成“像被封了”的单一体感。
 - 给平台方最有价值的改进建议集中在：更细 reason code、结构化诊断包、高安全远程链路状态可视化、资格与处罚语义分离、以及面向高波动环境用户的低成本恢复路径。
+- 风控研究已经可以稳定沉淀成一张源码地图：身份与组织、资格与订阅、组织策略与远程下发、遥测与实验开关、本地动作治理、高安全远程会话、连接认证子系统、解释层与支持层这八组入口。
+- 典型案例推演已经足够说明：401、not enabled、policy denied、needs-auth、rate limit 这五类“像被封了”的体感，背后实际上对应不同治理层和完全不同的处理顺序。
 
 证据:
 
@@ -406,6 +408,29 @@
 - `claude-code-source-code/src/server/directConnectManager.ts:88-98`
 - `claude-code-source-code/src/remote/RemoteSessionManager.ts:199-213`
 - `claude-code-source-code/src/services/mcp/client.ts:335-370`
+
+### V. 判定非对称性矩阵与边界成本函数
+
+- GrowthBook 安全限制 gate 和 entitlement gate 的缓存语义并不一致，说明平台明确区分“安全限制不能轻放”和“资格误伤要尽量减少”这两类成本函数。
+- `isRemoteManagedSettingsEligible()` 愿意接受 externally injected token 的资格假阳性，以避免把企业治理完全漏掉，表明“多一次查询”被认为比“治理不可见”便宜得多。
+- `policyLimits` 的主路径整体偏 fail-open，但 `ESSENTIAL_TRAFFIC_DENY_ON_MISS` 又在高敏感场景下保留局部 fail-closed，说明平台不是在选一种哲学，而是在按策略伤害面细分。
+- `validateForceLoginOrg()` 强制以 profile 端点确认组织权威来源，本地可写缓存不能替代；组织边界因此被放在“不能模糊”的层级。
+- dangerous managed settings 变更要经过交互式确认，拒绝则退出，说明“远程配置”在高风险情况下已经被提升为“治理命令”，而不只是同步配置。
+- `bridgeEnabled` 与 `bridgeMain` 的组合明确区分了资格不足、画像不全、session token 过期、环境失效等不同远程失败语义；401/403 会先恢复，404/410 更接近终局失败。
+- `rateLimitMessages` 和 `diagLogs` 进一步说明：计费真相与支持证据被刻意从处罚语义里剥离出来，这能显著降低“所有失败都像封号”的认知污染。
+
+证据:
+
+- `claude-code-source-code/src/services/analytics/growthbook.ts:851-975`
+- `claude-code-source-code/src/services/remoteManagedSettings/syncCache.ts:32-112`
+- `claude-code-source-code/src/services/policyLimits/index.ts:167-220`
+- `claude-code-source-code/src/services/policyLimits/index.ts:497-526`
+- `claude-code-source-code/src/utils/auth.ts:1917-1989`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:14-73`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:16-87`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:198-285`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:17-120`
+- `claude-code-source-code/src/utils/diagLogs.ts:14-94`
 - `claude-code-source-code/src/services/mcp/auth.ts:1344-1470`
 - `claude-code-source-code/src/services/rateLimitMessages.ts:41-104`
 - `claude-code-source-code/src/services/analytics/growthbook.ts:892-903`
@@ -545,6 +570,85 @@
 - `claude-code-source-code/src/utils/toolSearch.ts:545-646`
 - `claude-code-source-code/src/utils/task/TaskOutput.ts:32-282`
 
+### S. Risk control is signal fusion around continuity, not a single ban verdict
+
+- `bridgeEnabled.ts` 把“Remote Control 不可用”拆成订阅缺失、full-scope token 缺失、组织画像缺失、gate 未放开、build 不支持等多类诊断，说明资格拒绝是分层语义，不是单点处罚。
+- `validateForceLoginOrg()` 在 `forceLoginOrgUUID` 存在时对“无法证明组织归属”也 fail-closed，说明组织边界优先级高于可用性，网络或画像问题也会被收敛成拒绝体验。
+- `policyLimits` 整体偏 fail-open，但 dangerous managed settings 变化会弹本地阻塞确认框，拒绝后直接退出，说明系统在普通连续性与危险边界之间做分级治理。
+- `trustedDevice`、`bridgeApi`、`sessionIngress` 共同体现“高安全会话连续性”思路：trusted device 有独立 enrollment 窗口，401 只做有条件恢复，409 优先恢复服务端状态真相。
+- `mcp/auth.ts` 把 `403 insufficient_scope` 单独转为 step-up pending，而不是误走 refresh，说明“授权不足”被明确定义为不同于“凭证失效”的治理语义。
+- `rateLimitMessages.ts` 与 `useCanSwitchToExistingSubscription.tsx` 明确把 usage limit、extra usage、订阅未激活写成独立解释路径，进一步证明很多“不能用”并不是处罚。
+- `diagLogs.ts` 与 MCP 通知路径体现出无 PII 诊断和 anti-nag 设计，说明平台已把误伤后的支持成本与解释成本纳入工程边界。
+
+证据:
+
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:17-82`
+- `claude-code-source-code/src/utils/auth.ts:1917-1999`
+- `claude-code-source-code/src/services/policyLimits/index.ts:1-111`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:1-64`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:17-174`
+- `claude-code-source-code/src/bridge/bridgeApi.ts:15-122`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:47-169`
+- `claude-code-source-code/src/services/mcp/auth.ts:1345-1468`
+- `claude-code-source-code/src/services/mcp/auth.ts:1614-1667`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:1-179`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:1-48`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:1-80`
+- `claude-code-source-code/src/utils/config.ts:194-211`
+- `claude-code-source-code/src/utils/diagLogs.ts:1-60`
+
+### T. Risk research now has a question-oriented navigation layer
+
+- 现有 `risk/` 章节已经能覆盖方法、机制、失效、误伤、平台改进，但目录层面仍偏顺序阅读，不利于遇到具体症状时快速定位。
+- 把“怀疑被封”“Remote Control 失效”“中国用户连续性破坏”“计费还是风控”“needs-auth / insufficient_scope”这类问题改造成显式入口后，研究目录就从线性蓝皮书升级为问题驱动蓝皮书。
+- 这类重组不新增事实判断，但显著降低了在章节、源码模块地图、速查卡之间反复跳转的成本。
+- 后续如果继续扩写，只要先判断新内容属于哪类问题，再决定挂到哪条入口链，就能减少重复章节和概念漂移。
+
+### U. A second Socratic pass should optimize for total harm, not only strict gating
+
+- 如果把风控目标只写成“拦住不该放的行为”，会低估误伤、解释不足、恢复失败和支持成本带来的总伤害。
+- 更高标准的治理目标应是同时降低：滥用伤害、误伤伤害、失败风暴伤害、解释成本和申诉成本。
+- 当前源码已经明显在做这件事的一部分，例如更细错误语义、无 PII 诊断、step-up 区分、trusted device、dangerous settings 显式确认，但对用户可见 reason code、会前体检和结构化证据包仍有继续提升空间。
+- 这意味着下一轮研究不能只继续找 gate，还应继续研究 preflight、reason code、证据导出和平台正义这些“解释层基础设施”。
+
+### V. User self-protection should optimize continuity discipline, not retry volume
+
+- `checkGate_CACHED_OR_BLOCKING(...)` 对 entitlement gate 明显偏向减少 stale `false` 误伤，说明平台本身就在努力避免把用户主动触发的功能误判成不可用。
+- `isRemoteManagedSettingsEligible()` 接受 externally injected token 的资格假阳性，说明“多一次查询”被认为比“把企业治理完全漏掉”代价更低，也提醒用户不要把一次额外查询误解成针对性限制。
+- `bridgeMain` 的 `heartbeatActiveWorkItems()` 明确区分 `auth_failed` 和 `fatal`，说明高安全远程失败并不都是终局处罚，用户首先要分语义，而不是放大成统一封号体感。
+- `useMcpConnectivityStatus.tsx` 只对“曾经成功连接过”的 claude.ai connector 做 `failed/needs-auth` 提示，说明“最近一次成功时间”是高价值诊断证据。
+- `rateLimitMessages.ts` 把 usage、session、weekly、extra usage、reset time 等单独建模，说明很多“突然不能用”本质是计费/额度语义，不应被误写成处罚。
+- 更高抽象看，用户最有效的合规自保不是规避检测，而是保持身份、组织、设备、网络和证据链的连续性，并在故障窗口里冻结变量、减少噪声。
+
+证据:
+
+- `claude-code-source-code/src/services/analytics/growthbook.ts:892-935`
+- `claude-code-source-code/src/services/remoteManagedSettings/syncCache.ts:32-111`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:198-269`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:25-87`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:17-103`
+
+### W. Technical sophistication is the collaboration of signal, decision, recovery, and explanation planes
+
+- `initializeTelemetryAfterTrust()` 先等待 remote managed settings，再初始化 telemetry，说明观测层本身就受治理层约束，而不是治理之外的旁路。
+- `checkSecurityRestrictionGate(...)` 与 `checkGate_CACHED_OR_BLOCKING(...)` 使用不同缓存语义，说明安全限制和 entitlement 并不是同一类 gate。
+- `checkManagedSettingsSecurity(...)` 把危险设置变化提升为交互式确认，说明平台会把某些远程配置变化当成“治理命令”，而不只是普通同步。
+- `mcp/client.ts` 把远程认证失败提升为 `needs-auth` 状态并缓存，说明子系统失败被建模成有记忆的连接状态，而不是瞬时异常。
+- `remoteBridgeCore.ts` 在 401 恢复窗口主动 drop stale control/result 消息，说明恢复层优先保护因果一致性，而不是表面不断。
+- `diagLogs.ts` 明确禁止 PII，说明解释层追求的是低敏感度可解释性，而不是无限制地收集更多数据。
+- 更高抽象看，Claude Code 风控技术的先进性不在秘密检测器，而在信号层、判定层、恢复层、解释层被整合成一套可持续演进的控制平面。
+
+证据:
+
+- `claude-code-source-code/src/entrypoints/init.ts:241-280`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:851-935`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:14-73`
+- `claude-code-source-code/src/services/mcp/client.ts:335-370`
+- `claude-code-source-code/src/services/mcp/client.ts:2311-2334`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:529-588`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:824-878`
+- `claude-code-source-code/src/utils/diagLogs.ts:14-57`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -601,6 +705,10 @@
 - 已补 `CLAUDE.md`、记忆层与上下文注入实践指南，把规则层、长期记忆、会话连续性、临时 prompt 约束的使用边界写成实战路径
 - 已补“Prompt 不是文本技巧而是契约分层”“安全与 Token 经济不是权衡而是同一优化”“生态成熟度必须与协议支持分开叙述”三篇哲学专题
 - 已把 `bluebook/` 主线继续提升为“运行时契约、知识层与生态边界”，并把目录阅读链扩展为契约链、知识链、安全经济链、协作运行时链、生态边界链
+- 已补风控专题 `24-信号融合、连续性断裂与“像被封了”的生成机制`，把资格、组织、设备、授权、计费、诊断信号如何压缩成封号体感单独抽成一章
+- 已补风控专题 `25-问题导向索引：按症状、源码入口与合规动作阅读风控专题`，把症状、章节、源码入口、支持路径与 `risk/` 的问题主线压到同一张检索页
+- 已补风控专题 `27-判定非对称性矩阵：哪些路径要快放行，哪些路径必须硬收口`，把 selective failure semantics 从设计哲学下沉成工程对照表
+- 已补风控专题 `26-苏格拉底附录：如果要把误伤再降一半，系统该追问什么`，把平台改进、研究方法反思与用户自保标准提升到“总伤害最小化”视角
 
 ## 下一步待办
 
