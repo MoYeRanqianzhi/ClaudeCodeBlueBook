@@ -492,6 +492,31 @@
 - `claude-code-source-code/src/services/api/sessionIngress.ts:355-359`
 - `claude-code-source-code/src/services/api/sessionIngress.ts:462-467`
 
+### Z. Identity is assembled from multiple truth sources, not one
+
+- `config.ts` 持久化了 `oauthAccount`、`cachedStatsigGates`、`cachedGrowthBookFeatures`、`claudeCodeFirstTokenDate` 等状态，说明本地快照本身就是治理真相的一部分。
+- `storeOAuthAccountInfo(...)` 会把服务端 profile 摘要持久化进 `oauthAccount`，但 `validateForceLoginOrg()` 又明确要求关键组织边界必须重新向 `/api/oauth/profile` 取权威真相，说明快照真相和权威真相被刻意分层。
+- `user.ts` 和 `telemetryAttributes.ts` 会把 `deviceId/sessionId/accountUuid/organizationUuid/subscriptionType/rateLimitTier/firstTokenTime` 重新拼成 GrowthBook/telemetry 用户模型，说明观测层看到的是“组装后的你”。
+- `growthbook.ts` 同时依赖本地 cached features 与 fresh value；某些 cached `true` 可直接放行，cached `false` 则要阻塞复核，说明 gate 真相也有自己的时间层。
+- `sessionStorage.ts` 与 `sessionIngress.ts` 维护的是另一条会话连续性真相面：`Last-Uuid` 链、409 adopt server UUID、401 bad token，它不等同于账号画像真相。
+- 更高抽象看，很多“明明还是同一个账号，为什么系统前后说法变了”的体验，来自本地快照、服务端画像、gate 缓存与会话连续性在短时间内没有同步收敛。
+
+证据:
+
+- `claude-code-source-code/src/utils/config.ts:440-449`
+- `claude-code-source-code/src/utils/config.ts:783-795`
+- `claude-code-source-code/src/services/oauth/client.ts:517-565`
+- `claude-code-source-code/src/utils/auth.ts:1919-1999`
+- `claude-code-source-code/src/utils/user.ts:31-47`
+- `claude-code-source-code/src/utils/user.ts:78-127`
+- `claude-code-source-code/src/utils/telemetryAttributes.ts:29-70`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:466-480`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:770-789`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:921-935`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1238-1260`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-75`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:138-147`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
