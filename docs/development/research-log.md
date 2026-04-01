@@ -622,6 +622,24 @@
 - `claude-code-source-code/src/services/mcp/client.ts:335-360`
 - `claude-code-source-code/src/services/mcp/client.ts:2311-2322`
 
+### AG. Shared vocabulary reduces semantic mismatch across user, admin, and support
+
+- `getBridgeDisabledReason()` 已能把用户最常感受到的“不能用”拆成订阅、full-scope、组织画像、gate 等共享 reason family 雏形。
+- `useCanSwitchToExistingSubscription()` 把“已有权益但未激活”做成单独提示，说明 entitlement/activation 本来就应与 auth_error 分开命名。
+- `useMcpConnectivityStatus()` 对 `failed`、`needs-auth`、connector unavailable 使用不同提示，说明连接域本来就需要单独词汇。
+- `errors.ts` 进一步把 `token_revoked`、`oauth_org_not_allowed`、`auth_error` 区分成不同错误族，说明支持侧早已有共享词汇基础。
+- `diagLogs.ts` 则提供了低敏感度事件面，支持团队可以在不看 PII 的前提下沿这些 reason family 做调查。
+- 更高抽象看，很多误伤不是因为没有答案，而是三方没用同一套词汇描述同一个失败；共享词汇本身就是降低总伤害的治理基础设施。
+
+证据:
+
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:70-83`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:21-35`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:36-63`
+- `claude-code-source-code/src/services/api/errors.ts:838-883`
+- `claude-code-source-code/src/services/api/errors.ts:1109-1133`
+- `claude-code-source-code/src/utils/diagLogs.ts:14-30`
+
 ### AE. Governance uses multiple clocks, not one static boundary
 
 - `mcp/auth.ts` 会在 token 距离过期 5 分钟时主动刷新，说明会话治理在时间上前移，而不是等 401 才处理。
