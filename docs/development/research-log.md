@@ -1322,6 +1322,33 @@
 - `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-18`
 - `claude-code-source-code/src/types/permissions.ts:1-36`
 
+### AN. “模型可见世界”本身就是控制平面
+
+- `shouldDefer/alwaysLoad` 已经把“哪些工具应该首轮可见、哪些能力应延后暴露”写进工具协议，而不是散落在调用点里。
+- `ToolSearch + discovered set + filteredTools` 说明 Claude Code 更像在维护一个逐步扩张的可见世界，而不是一张静态能力表。
+- deferred tools delta、agent listing delta、MCP instructions delta 共同说明：高波动能力描述应走尾部增量，而不是主前缀常驻。
+- compaction 后重播这些 delta，说明它们不是 UI 附属提示，而是会话级 capability state continuation。
+- trusted sources / managed-only source gating 则说明：不仅“哪些能力可见”被治理，“谁有资格定义这些能力可见性”也被治理。
+
+证据：
+
+- `claude-code-source-code/src/Tool.ts:438-448`
+- `claude-code-source-code/src/tools/ToolSearchTool/prompt.ts:53-105`
+- `claude-code-source-code/src/utils/toolSearch.ts:385-430`
+- `claude-code-source-code/src/utils/toolSearch.ts:540-560`
+- `claude-code-source-code/src/services/api/claude.ts:1118-1175`
+- `claude-code-source-code/src/utils/toolSchemaCache.ts:1-20`
+- `claude-code-source-code/src/utils/attachments.ts:1455-1505`
+- `claude-code-source-code/src/utils/attachments.ts:1550-1575`
+- `claude-code-source-code/src/services/compact/compact.ts:563-575`
+- `claude-code-source-code/src/utils/managedEnv.ts:93-115`
+- `claude-code-source-code/src/utils/settings/types.ts:468-525`
+- `claude-code-source-code/src/utils/permissions/permissionsLoader.ts:27-40`
+- `claude-code-source-code/src/services/mcp/config.ts:337-360`
+- `claude-code-source-code/src/utils/settings/pluginOnlyPolicy.ts:1-30`
+- `claude-code-source-code/src/tools/AgentTool/runAgent.ts:108-130`
+- `claude-code-source-code/src/tools/AgentTool/runAgent.ts:548-565`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。

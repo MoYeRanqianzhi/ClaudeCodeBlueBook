@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《能力可见性控制平面：Deferred、Delta与最小可见面》《最小可见面优于全量能力表》，并把 `architecture/README` 从七平面重编为八平面，把工程与底盘单独分组，把“模型此刻看见什么”正式提升为一条独立主线
 - 新增《热点文件不是坏味道：Kernel、Shell与Chokepoint的分工》《成熟架构不是没有大文件，而是不把复杂性撒满全仓》，把源码先进性深线继续推进到“合法复杂度中心 / 伪模块化 / 大文件职责命名”这一层
 - 新增《从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放》《渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明》《目录职责、规范入口与兼容别名页说明》，并把根目录旧命名页明确降为兼容入口，把 prompt 深线推进到 protocol transcript 与 progressive exposure 这一层
 - 新增《稳定前缀、动态尾部与旁路Fork：Claude Code的Cache-Aware Prompt Assembly》《允许轻微陈旧，换取系统级确定性》，把 prompt 深线继续推进到“cache-aware 组装链 + 允许轻微陈旧以换取整体确定性”的层次

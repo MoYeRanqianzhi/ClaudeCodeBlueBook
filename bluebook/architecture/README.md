@@ -2,7 +2,7 @@
 
 本目录回答的不是“有哪些文件夹”，而是“Claude Code 作为 runtime 是怎么成立的”。
 
-## 七个运行时平面
+## 八个运行时平面
 
 ### 1. 启动与装配平面
 
@@ -38,7 +38,6 @@
 - [46-Prompt稳定性解释层：cache-break detection的两阶段诊断器](46-Prompt%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%A7%A3%E9%87%8A%E5%B1%82%EF%BC%9Acache-break%20detection%E7%9A%84%E4%B8%A4%E9%98%B6%E6%AE%B5%E8%AF%8A%E6%96%AD%E5%99%A8.md)
 - [53-稳定前缀、动态尾部与旁路Fork：Claude Code的Cache-Aware Prompt Assembly](53-%E7%A8%B3%E5%AE%9A%E5%89%8D%E7%BC%80%E3%80%81%E5%8A%A8%E6%80%81%E5%B0%BE%E9%83%A8%E4%B8%8E%E6%97%81%E8%B7%AFFork%EF%BC%9AClaude%20Code%E7%9A%84Cache-Aware%20Prompt%20Assembly.md)
 - [54-从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放](54-%E4%BB%8EUI%20Transcript%E5%88%B0Protocol%20Transcript%EF%BC%9APrompt%E4%B8%8D%E6%98%AF%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95%E7%9A%84%E7%9B%B4%E6%8E%A5%E9%87%8D%E6%94%BE.md)
-- [55-热点文件不是坏味道：Kernel、Shell与Chokepoint的分工](55-%E7%83%AD%E7%82%B9%E6%96%87%E4%BB%B6%E4%B8%8D%E6%98%AF%E5%9D%8F%E5%91%B3%E9%81%93%EF%BC%9AKernel%E3%80%81Shell%E4%B8%8EChokepoint%E7%9A%84%E5%88%86%E5%B7%A5.md)
 
 ### 5. 协作与隔离平面
 
@@ -57,18 +56,12 @@
 - [37-统一预算器：能力裁剪、Token延续与状态外化](37-%E7%BB%9F%E4%B8%80%E9%A2%84%E7%AE%97%E5%99%A8%EF%BC%9A%E8%83%BD%E5%8A%9B%E8%A3%81%E5%89%AA%E3%80%81Token%E5%BB%B6%E7%BB%AD%E4%B8%8E%E7%8A%B6%E6%80%81%E5%A4%96%E5%8C%96.md)
 - [50-PolicySettings控制平面、Sandbox契约与三套预算器](50-PolicySettings%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%E3%80%81Sandbox%E5%A5%91%E7%BA%A6%E4%B8%8E%E4%B8%89%E5%A5%97%E9%A2%84%E7%AE%97%E5%99%A8.md)
 - [51-安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation](51-%E5%AE%89%E5%85%A8%E5%8D%B3%E8%BE%93%E5%85%A5%E8%BE%B9%E7%95%8C%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%EF%BC%9AManaged%20Authority%E3%80%81Trusted%20Sources%E4%B8%8ERuntime%20Boundary%20Compilation.md)
+- [56-能力可见性控制平面：Deferred、Delta与最小可见面](56-%E8%83%BD%E5%8A%9B%E5%8F%AF%E8%A7%81%E6%80%A7%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%EF%BC%9ADeferred%E3%80%81Delta%E4%B8%8E%E6%9C%80%E5%B0%8F%E5%8F%AF%E8%A7%81%E9%9D%A2.md)
 
-### 7. 宿主、前台与产品边界平面
+### 7. 工程与底盘平面
 
-- [04-REPL与Ink交互架构](04-REPL%E4%B8%8EInk%E4%BA%A4%E4%BA%92%E6%9E%B6%E6%9E%84.md)
-- [13-StructuredIO与RemoteIO控制平面](13-StructuredIO%E4%B8%8ERemoteIO%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2.md)
-- [14-Bridge与宿主适配器分层](14-Bridge%E4%B8%8E%E5%AE%BF%E4%B8%BB%E9%80%82%E9%85%8D%E5%99%A8%E5%88%86%E5%B1%82.md)
-- [15-宿主路径时序与竞速](15-%E5%AE%BF%E4%B8%BB%E8%B7%AF%E5%BE%84%E6%97%B6%E5%BA%8F%E4%B8%8E%E7%AB%9E%E9%80%9F.md)
 - [20-源码质量、分层与工程先进性](20-%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E3%80%81%E5%88%86%E5%B1%82%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%85%88%E8%BF%9B%E6%80%A7.md)
 - [24-services层全景与utils-heavy设计](24-services%E5%B1%82%E5%85%A8%E6%99%AF%E4%B8%8Eutils-heavy%E8%AE%BE%E8%AE%A1.md)
-- [26-REPL前台状态机、Sticky Prompt与消息动作](26-REPL%E5%89%8D%E5%8F%B0%E7%8A%B6%E6%80%81%E6%9C%BA%E3%80%81Sticky%20Prompt%E4%B8%8E%E6%B6%88%E6%81%AF%E5%8A%A8%E4%BD%9C.md)
-- [35-REPL transcript search、selection与scroll协同](35-REPL%20transcript%20search%E3%80%81selection%E4%B8%8Escroll%E5%8D%8F%E5%90%8C.md)
-- [27-能力迁移、Consumer Subset与产品边界](27-%E8%83%BD%E5%8A%9B%E8%BF%81%E7%A7%BB%E3%80%81Consumer%20Subset%E4%B8%8E%E4%BA%A7%E5%93%81%E8%BE%B9%E7%95%8C.md)
 - [33-公开源码镜像的先进性、热点与技术债](33-%E5%85%AC%E5%BC%80%E6%BA%90%E7%A0%81%E9%95%9C%E5%83%8F%E7%9A%84%E5%85%88%E8%BF%9B%E6%80%A7%E3%80%81%E7%83%AD%E7%82%B9%E4%B8%8E%E6%8A%80%E6%9C%AF%E5%80%BA.md)
 - [38-Contract优先、运行时底盘与公开镜像缺口](38-Contract%E4%BC%98%E5%85%88%E3%80%81%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BA%95%E7%9B%98%E4%B8%8E%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E7%BC%BA%E5%8F%A3.md)
 - [40-显式失败语义、重复响应与反竞争条件设计](40-%E6%98%BE%E5%BC%8F%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E3%80%81%E9%87%8D%E5%A4%8D%E5%93%8D%E5%BA%94%E4%B8%8E%E5%8F%8D%E7%AB%9E%E4%BA%89%E6%9D%A1%E4%BB%B6%E8%AE%BE%E8%AE%A1.md)
@@ -76,9 +69,20 @@
 - [43-预算观测、Context Suggestions与调优闭环](43-%E9%A2%84%E7%AE%97%E8%A7%82%E6%B5%8B%E3%80%81Context%20Suggestions%E4%B8%8E%E8%B0%83%E4%BC%98%E9%97%AD%E7%8E%AF.md)
 - [44-单一真相入口：mode、tool pool、state与metadata的权威面](44-%E5%8D%95%E4%B8%80%E7%9C%9F%E7%9B%B8%E5%85%A5%E5%8F%A3%EF%BC%9Amode%E3%80%81tool%20pool%E3%80%81state%E4%B8%8Emetadata%E7%9A%84%E6%9D%83%E5%A8%81%E9%9D%A2.md)
 - [47-QueryGuard：本地查询生命周期的authoritative state machine](47-QueryGuard%EF%BC%9A%E6%9C%AC%E5%9C%B0%E6%9F%A5%E8%AF%A2%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84authoritative%20state%20machine.md)
+- [52-Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法](52-Chokepoint%E3%80%81Typed%20Decision%E3%80%81Authoritative%20Surface%E3%80%81Race-Aware%20Runtime%E4%B8%8EContract-First%EF%BC%9AClaude%20Code%E6%BA%90%E7%A0%81%E5%85%88%E8%BF%9B%E6%80%A7%E4%BA%94%E6%B3%95.md)
+- [55-热点文件不是坏味道：Kernel、Shell与Chokepoint的分工](55-%E7%83%AD%E7%82%B9%E6%96%87%E4%BB%B6%E4%B8%8D%E6%98%AF%E5%9D%8F%E5%91%B3%E9%81%93%EF%BC%9AKernel%E3%80%81Shell%E4%B8%8EChokepoint%E7%9A%84%E5%88%86%E5%B7%A5.md)
+
+### 8. 宿主、前台与产品边界平面
+
+- [04-REPL与Ink交互架构](04-REPL%E4%B8%8EInk%E4%BA%A4%E4%BA%92%E6%9E%B6%E6%9E%84.md)
+- [13-StructuredIO与RemoteIO控制平面](13-StructuredIO%E4%B8%8ERemoteIO%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2.md)
+- [14-Bridge与宿主适配器分层](14-Bridge%E4%B8%8E%E5%AE%BF%E4%B8%BB%E9%80%82%E9%85%8D%E5%99%A8%E5%88%86%E5%B1%82.md)
+- [15-宿主路径时序与竞速](15-%E5%AE%BF%E4%B8%BB%E8%B7%AF%E5%BE%84%E6%97%B6%E5%BA%8F%E4%B8%8E%E7%AB%9E%E9%80%9F.md)
+- [26-REPL前台状态机、Sticky Prompt与消息动作](26-REPL%E5%89%8D%E5%8F%B0%E7%8A%B6%E6%80%81%E6%9C%BA%E3%80%81Sticky%20Prompt%E4%B8%8E%E6%B6%88%E6%81%AF%E5%8A%A8%E4%BD%9C.md)
+- [35-REPL transcript search、selection与scroll协同](35-REPL%20transcript%20search%E3%80%81selection%E4%B8%8Escroll%E5%8D%8F%E5%90%8C.md)
+- [27-能力迁移、Consumer Subset与产品边界](27-%E8%83%BD%E5%8A%9B%E8%BF%81%E7%A7%BB%E3%80%81Consumer%20Subset%E4%B8%8E%E4%BA%A7%E5%93%81%E8%BE%B9%E7%95%8C.md)
 - [48-远程失败不是断线重连：401、Close Code与环境恢复的分层语义](48-%E8%BF%9C%E7%A8%8B%E5%A4%B1%E8%B4%A5%E4%B8%8D%E6%98%AF%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E%EF%BC%9A401%E3%80%81Close%20Code%E4%B8%8E%E7%8E%AF%E5%A2%83%E6%81%A2%E5%A4%8D%E7%9A%84%E5%88%86%E5%B1%82%E8%AF%AD%E4%B9%89.md)
 - [49-插件双真相：enabled、editable scope与policy block不能混写](49-%E6%8F%92%E4%BB%B6%E5%8F%8C%E7%9C%9F%E7%9B%B8%EF%BC%9Aenabled%E3%80%81editable%20scope%E4%B8%8Epolicy%20block%E4%B8%8D%E8%83%BD%E6%B7%B7%E5%86%99.md)
-- [52-Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法](52-Chokepoint%E3%80%81Typed%20Decision%E3%80%81Authoritative%20Surface%E3%80%81Race-Aware%20Runtime%E4%B8%8EContract-First%EF%BC%9AClaude%20Code%E6%BA%90%E7%A0%81%E5%85%88%E8%BF%9B%E6%80%A7%E4%BA%94%E6%B3%95.md)
 
 ## 推荐阅读链
 
@@ -91,13 +95,14 @@
 - 想看 prompt 为什么继续升级成“可解释稳定性系统”：`39 -> 42 -> 46`
 - 想看 prompt 如何进一步落成“稳定前缀 + 动态尾部 + 旁路 fork”的组装底盘：`39 -> 42 -> 46 -> 53`
 - 想看 UI transcript 为什么还要在 API 边界前被重新编译成 protocol transcript：`53 -> 54`
+- 想看“最小可见面”怎样把 deferred、delta 与 managed-only 输入写成统一控制平面：`51 -> 54 -> 56`
 - 想看多 Agent、workflow 与隔离：`10 -> 30 -> 34 -> 45`
 - 想看权限、安全、治理与 token 预算统一图：`05 -> 11 -> 19 -> 23 -> 32 -> 37 -> 50 -> 51`
 - 想看安全为什么更像输入边界控制平面而不是事后检查：`19 -> 23 -> 50 -> 51`
 - 想看宿主控制平面：`13 -> 14 -> 15 -> 17`
 - 想看远程失败为什么也是分层语义而不是“断线重连”：`15 -> 16 -> 48`
 - 想看 REPL 前台如何从状态机深入到 search / selection / scroll 协同：`04 -> 26 -> 35`
-- 想看源码先进性、热点与产品边界：`20 -> 24 -> 26 -> 27 -> 33 -> 38`
+- 想看源码先进性、热点与产品边界：`20 -> 24 -> 33 -> 38`
 - 想看源码先进性如何继续压成几种可迁移工程模式：`20 -> 40 -> 41 -> 47 -> 52`
 - 想看热点大文件为什么仍然可以是成熟架构的一部分：`52 -> 55`
 - 想看显式失败、重复响应与 race-aware runtime：`13 -> 14 -> 17 -> 40`

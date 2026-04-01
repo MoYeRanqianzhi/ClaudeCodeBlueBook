@@ -38,6 +38,8 @@
 16. `philosophy/39-治理必须落到字节级确定性：上下文准入优于功能堆叠.md`
 17. `philosophy/40-允许轻微陈旧，换取系统级确定性.md`
 18. `philosophy/41-渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明.md`
+19. `architecture/56-能力可见性控制平面：Deferred、Delta与最小可见面.md`
+20. `philosophy/43-最小可见面优于全量能力表.md`
 
 这条线的核心结论是：
 
@@ -80,6 +82,8 @@
 14. `philosophy/31-可观测预算优于经验调优.md`
 15. `philosophy/37-统一第一性原理不等于单一预算实现.md`
 16. `philosophy/38-安全、治理、Token与Prompt稳定性本质上是同一收口问题.md`
+17. `architecture/56-能力可见性控制平面：Deferred、Delta与最小可见面.md`
+18. `philosophy/43-最小可见面优于全量能力表.md`
 
 这条线的核心结论是：
 

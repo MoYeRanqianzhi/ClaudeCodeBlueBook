@@ -142,6 +142,10 @@
 
 - `architecture/51 -> architecture/53 -> philosophy/38 -> philosophy/41`
 
+### 为什么最小可见面比全量能力表更强
+
+- `architecture/56 -> philosophy/41 -> philosophy/43`
+
 ### 为什么宿主接入不能只看 `query(prompt)`
 
 - `05 -> api/30 -> api/02 -> api/13 -> api/15 -> api/16 -> api/20 -> api/31`
