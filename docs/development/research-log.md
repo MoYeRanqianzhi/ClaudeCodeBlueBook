@@ -218,11 +218,81 @@
 证据:
 
 - `claude-code-source-code/src/cli/structuredIO.ts:362-429`
+
+### O. 风控、账号治理与封号技术
+
+- 客户端源码没有暴露一个单点“ban user”逻辑；更可信的结构是身份鉴权、账号资格、组织策略、远程设置、遥测 targeting 与本地执行边界的组合治理。
+- `policyLimits` 和 `remoteManagedSettings` 都是服务端下发的控制面，具备缓存、轮询、热更新和 fail-open/stale-cache 退化路径，说明客户端是治理执行端，不是唯一决策端。
+- telemetry 与 GrowthBook 明确绑定用户、会话、设备、组织、订阅、rate limit tier 等属性，说明平台具备按账号与组织维度分流能力和观测行为的基础设施。
+- Auto mode、sandbox、workspace trust、trusted device 解决的是动作级或设备级安全边界，不应直接等同于账号封禁；其中 bridge trusted device 明确属于 elevated auth enforcement。
+- `forceLoginOrg` 使用服务端 profile 作为组织权威来源并明确 fail-closed，说明组织绑定属于硬边界，不信任本地可写缓存。
+- managed settings 对危险 shell settings、非安全 env vars 和 hooks 的变更会触发阻塞确认或直接退出，说明远程下发不仅是配置同步，也是受审查的治理命令通道。
+- 从合规使用角度，最能降低误伤和能力撤回风险的不是“规避风控”，而是保持身份源、组织归属、设备和网络环境的可解释一致性，并准备完整支持证据。
+- 从技术先进性角度，这套系统的核心不在单个检测器，而在“身份连续性维护 + 远程策略下发 + 本地动作收口 + 高安全会话 + 观测闭环”的分层组合。
+- bridge / REPL 相关逻辑明确把 401 风暴、跨进程 backoff、连续失败上限当成一等问题，说明“抑制失败扩散”本身也是风控设计的一部分。
+- `403 insufficient_scope` 在 MCP OAuth 里被显式识别为 step-up auth，而不是普通 refresh 失败，说明作者非常清楚地区分“身份失效”和“授权范围不足”。
+- rate limit / extra usage exhausted 属于计费与消耗层，而 `not enabled for your account` 更接近 entitlement/rollout；它们都不应被粗暴归类为“封号”。
+- 从更高抽象看，Claude Code 的治理闭环至少包含“识别主体 -> 观测主体 -> 判定资格 -> 下发边界 -> 阻断/放行动作 -> 失败与恢复”六段时序，研究风控不能只盯某个点。
+- 系统在 failure semantics 上采取明显的 selective fail-open / fail-closed 哲学：资格缓存与普通配置同步更偏向减少误伤，而组织边界、危险变更、高安全远程能力与复杂解析路径更偏向强收口。
+- 对用户保护最有价值的不是“继续试错”，而是先识别错误语义、冻结变量、保留证据，再按身份/资格/组织/本地执行/高安全会话这几个层级选择支持路径。
+- 图解层面的抽象已经稳定：Remote Control 的成立至少经历“订阅 -> 组织画像 -> entitlement gate -> 组织 policy -> trust / trusted device / env register”这条链，而误伤处置也可以稳定压缩成“识别语义 -> 冻结变量 -> 证据保全 -> 分层支持路径”。
+- 平台正义视角下，这套系统最值得继续追问的不是“它能不能挡住风险”，而是“它能否把资格缺失、组织治理、动作阻断与真正处罚清楚地区分给用户”，以及“高波动环境用户是否承担了过高的解释成本”。
+- 更细的 bridge / trusted device / 401 recovery 时序已经足以说明：高安全远程会话不是普通请求恢复逻辑的延长，而是“身份恢复 -> 凭证重取 -> transport 重建 -> cleanup/backoff”的独立系统。
+- 一页式速查卡已经可以稳定给出：不同错误语义对应不同治理层、不同用户动作和不同支持路径；这对减少用户把所有问题误读成“封号”非常重要。
+- 这套系统已经可以被提炼成一组可迁移的 agent 治理法则：主体连续性优先、资格与处罚分离、组织治理独立、高安全远程会话独立建模、本地动作治理前置、策略数据化、selective failure semantics、step-up auth 与 token expiry 分离、失败风暴治理、解释层与支持路径一体化。
+- 单页总纲已经稳定形成：主体层、资格层、组织层、观测层、动作层、高安全会话层、计费层、哲学层和用户处置层，可以作为后续所有风险研究的统一骨架。
+- 更稳妥的“高封号率中国用户”技术表述不是平台一定针对，而是高波动网络、身份路径分裂、设备/网络切换、组织与权益错配更容易把多层连续性问题压缩成“像被封了”的单一体感。
+- 给平台方最有价值的改进建议集中在：更细 reason code、结构化诊断包、高安全远程链路状态可视化、资格与处罚语义分离、以及面向高波动环境用户的低成本恢复路径。
+
+证据:
+
+- `claude-code-source-code/src/utils/auth.ts:83-149`
+- `claude-code-source-code/src/utils/auth.ts:1360-1561`
+- `claude-code-source-code/src/utils/auth.ts:1923-2000`
+- `claude-code-source-code/src/entrypoints/cli.tsx:132-159`
+- `claude-code-source-code/src/services/policyLimits/index.ts:167-210`
+- `claude-code-source-code/src/services/policyLimits/index.ts:505-526`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:410-555`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:22-72`
+- `claude-code-source-code/src/components/ManagedSettingsSecurityDialog/utils.ts:24-117`
+- `claude-code-source-code/src/utils/managedEnv.ts:93-177`
+- `claude-code-source-code/src/utils/user.ts:34-135`
+- `claude-code-source-code/src/utils/telemetryAttributes.ts:29-70`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:29-47`
+- `claude-code-source-code/src/components/AutoModeOptInDialog.tsx:9-10`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:15-33`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:198-269`
+- `claude-code-source-code/src/bridge/initReplBridge.ts:189-220`
+- `claude-code-source-code/src/hooks/useReplBridge.tsx:31-40`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:17-87`
 - `claude-code-source-code/src/cli/structuredIO.ts:490-504`
 - `claude-code-source-code/src/bridge/bridgeMessaging.ts:265-283`
 - `claude-code-source-code/src/bridge/bridgeMessaging.ts:373-390`
 - `claude-code-source-code/src/server/directConnectManager.ts:88-98`
 - `claude-code-source-code/src/remote/RemoteSessionManager.ts:199-213`
+- `claude-code-source-code/src/services/mcp/client.ts:335-370`
+- `claude-code-source-code/src/services/mcp/auth.ts:1344-1470`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:41-104`
+- `claude-code-source-code/src/services/analytics/growthbook.ts:892-903`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:843-875`
+- `claude-code-source-code/src/services/mcp/officialRegistry.ts:62-67`
+- `claude-code-source-code/src/Tool.ts:743-756`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:11-58`
+- `claude-code-source-code/src/bridge/bridgeApi.ts:100-138`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:144-182`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:57-84`
+- `claude-code-source-code/src/services/mcp/client.ts:2311-2334`
+- `claude-code-source-code/src/commands/remote-setup/index.ts:10-16`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:529-589`
+- `claude-code-source-code/src/bridge/replBridge.ts:2272-2303`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:89-180`
+- `claude-code-source-code/src/services/analytics/firstPartyEventLoggingExporter.ts:570-609`
+- `claude-code-source-code/src/utils/plugins/pluginLoader.ts:1922-1929`
+- `claude-code-source-code/src/services/policyLimits/index.ts:618-629`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:432-442`
+- `claude-code-source-code/src/utils/diagLogs.ts:14-31`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:72-83`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:21-35`
 
 ### O. Host protocol is a closed loop, not RPC
 

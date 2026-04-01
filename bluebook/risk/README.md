@@ -1,0 +1,72 @@
+# 风控专题
+
+本目录专门研究 Claude Code 的风控、能力封控、账号限制与远程高安全链路。
+
+这里的“风控”不等于单纯的“封号按钮”，而是以下几层机制的组合：
+
+1. 身份、订阅、组织与 token 新鲜度。
+2. 远程下发的 managed settings、policy limits 与 feature gates。
+3. 本地权限、auto mode classifier、sandbox 与 safety check。
+4. Remote Control / bridge / trusted device 这类高安全会话约束。
+5. 遥测、实验平台与后台轮询形成的持续控制闭环。
+
+本专题只讨论系统边界与合规使用约束，不提供绕过、伪装或规避平台策略的方法。
+
+建议阅读顺序：
+
+1. [研究方法与可信边界](00-研究方法与可信边界.md)
+2. [风控总论：封禁不是单点开关](01-风控总论：封禁不是单点开关.md)
+3. [身份、订阅、组织与策略限制](02-身份、订阅、组织与策略限制.md)
+4. [遥测、GrowthBook 与远程下发控制](03-遥测、GrowthBook 与远程下发控制.md)
+5. [本地执行面：权限、Auto Mode、Sandbox 与阻断](04-本地执行面：权限、Auto%20Mode、Sandbox%20与阻断.md)
+6. [Remote Control、Trusted Device 与高安全会话](05-Remote%20Control%E3%80%81Trusted%20Device%20%E4%B8%8E%E9%AB%98%E5%AE%89%E5%85%A8%E4%BC%9A%E8%AF%9D.md)
+7. [失效模式、封禁表现与合规使用边界](06-失效模式、封禁表现与合规使用边界.md)
+8. [合规降低误判、保护权益与高风险地区用户建议](07-%E5%90%88%E8%A7%84%E9%99%8D%E4%BD%8E%E8%AF%AF%E5%88%A4%E3%80%81%E4%BF%9D%E6%8A%A4%E6%9D%83%E7%9B%8A%E4%B8%8E%E9%AB%98%E9%A3%8E%E9%99%A9%E5%9C%B0%E5%8C%BA%E7%94%A8%E6%88%B7%E5%BB%BA%E8%AE%AE.md)
+9. [风控检测技术的先进性、原理与源码启示](08-%E9%A3%8E%E6%8E%A7%E6%A3%80%E6%B5%8B%E6%8A%80%E6%9C%AF%E7%9A%84%E5%85%88%E8%BF%9B%E6%80%A7%E3%80%81%E5%8E%9F%E7%90%86%E4%B8%8E%E6%BA%90%E7%A0%81%E5%90%AF%E7%A4%BA.md)
+10. [第一性原理与苏格拉底式反思](09-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%BC%8F%E5%8F%8D%E6%80%9D.md)
+11. [错误语义、能力撤回与治理层矩阵](10-%E9%94%99%E8%AF%AF%E8%AF%AD%E4%B9%89%E3%80%81%E8%83%BD%E5%8A%9B%E6%92%A4%E5%9B%9E%E4%B8%8E%E6%B2%BB%E7%90%86%E5%B1%82%E7%9F%A9%E9%98%B5.md)
+12. [治理闭环时序：观测、判定、下发、阻断与恢复](11-%E6%B2%BB%E7%90%86%E9%97%AD%E7%8E%AF%E6%97%B6%E5%BA%8F%EF%BC%9A%E8%A7%82%E6%B5%8B%E3%80%81%E5%88%A4%E5%AE%9A%E3%80%81%E4%B8%8B%E5%8F%91%E3%80%81%E9%98%BB%E6%96%AD%E4%B8%8E%E6%81%A2%E5%A4%8D.md)
+13. [Selective Fail-Open / Fail-Closed 的设计哲学](12-Selective%20Fail-Open%20%20Fail-Closed%20%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%93%B2%E5%AD%A6.md)
+14. [误伤处置、支持路径与证据保全决策树](13-%E8%AF%AF%E4%BC%A4%E5%A4%84%E7%BD%AE%E3%80%81%E6%94%AF%E6%8C%81%E8%B7%AF%E5%BE%84%E4%B8%8E%E8%AF%81%E6%8D%AE%E4%BF%9D%E5%85%A8%E5%86%B3%E7%AD%96%E6%A0%91.md)
+15. [图解：Remote Control、能力门槛与误伤处置流程](14-%E5%9B%BE%E8%A7%A3%EF%BC%9ARemote%20Control%E3%80%81%E8%83%BD%E5%8A%9B%E9%97%A8%E6%A7%9B%E4%B8%8E%E8%AF%AF%E4%BC%A4%E5%A4%84%E7%BD%AE%E6%B5%81%E7%A8%8B.md)
+16. [平台正义、误伤、公平性与可解释性](15-%E5%B9%B3%E5%8F%B0%E6%AD%A3%E4%B9%89%E3%80%81%E8%AF%AF%E4%BC%A4%E3%80%81%E5%85%AC%E5%B9%B3%E6%80%A7%E4%B8%8E%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7.md)
+17. [图解：Bridge、Trusted Device 与 401 Recovery 精细时序](16-%E5%9B%BE%E8%A7%A3%EF%BC%9ABridge%E3%80%81Trusted%20Device%20%E4%B8%8E%20401%20Recovery%20%E7%B2%BE%E7%BB%86%E6%97%B6%E5%BA%8F.md)
+18. [速查卡：错误语义、用户动作与支持路径](17-%E9%80%9F%E6%9F%A5%E5%8D%A1%EF%BC%9A%E9%94%99%E8%AF%AF%E8%AF%AD%E4%B9%89%E3%80%81%E7%94%A8%E6%88%B7%E5%8A%A8%E4%BD%9C%E4%B8%8E%E6%94%AF%E6%8C%81%E8%B7%AF%E5%BE%84.md)
+19. [可迁移设计法则：给 Agent 平台构建者的启示](18-%E5%8F%AF%E8%BF%81%E7%A7%BB%E8%AE%BE%E8%AE%A1%E6%B3%95%E5%88%99%EF%BC%9A%E7%BB%99%20Agent%20%E5%B9%B3%E5%8F%B0%E6%9E%84%E5%BB%BA%E8%80%85%E7%9A%84%E5%90%AF%E7%A4%BA.md)
+20. [单页总纲：从主体到处置的风控研究地图](19-%E5%8D%95%E9%A1%B5%E6%80%BB%E7%BA%B2%EF%BC%9A%E4%BB%8E%E4%B8%BB%E4%BD%93%E5%88%B0%E5%A4%84%E7%BD%AE%E7%9A%84%E9%A3%8E%E6%8E%A7%E7%A0%94%E7%A9%B6%E5%9C%B0%E5%9B%BE.md)
+21. [高波动网络环境、中国用户与连续性破坏机制](20-%E9%AB%98%E6%B3%A2%E5%8A%A8%E7%BD%91%E7%BB%9C%E7%8E%AF%E5%A2%83%E3%80%81%E4%B8%AD%E5%9B%BD%E7%94%A8%E6%88%B7%E4%B8%8E%E8%BF%9E%E7%BB%AD%E6%80%A7%E7%A0%B4%E5%9D%8F%E6%9C%BA%E5%88%B6.md)
+22. [给平台方的改进清单：诊断、解释层与恢复路径](21-%E7%BB%99%E5%B9%B3%E5%8F%B0%E6%96%B9%E7%9A%84%E6%94%B9%E8%BF%9B%E6%B8%85%E5%8D%95%EF%BC%9A%E8%AF%8A%E6%96%AD%E3%80%81%E8%A7%A3%E9%87%8A%E5%B1%82%E4%B8%8E%E6%81%A2%E5%A4%8D%E8%B7%AF%E5%BE%84.md)
+
+推荐和其他目录交叉阅读：
+
+- 本地权限与状态机：`architecture/05`、`architecture/11`、`philosophy/03`
+- 远程控制与宿主边界：`architecture/13`、`architecture/14`、`architecture/16`
+- 状态与外部真相：`architecture/17`、`philosophy/13`
+
+这个专题的核心判断是：
+
+- Claude Code 的“封号/风控”在客户端源码里表现为大量能力门槛、会话失效、组织策略拒绝、设备校验和远程环境不可用。
+- 真正的决策中心主要不在本地 if/else，而在服务端 API、GrowthBook、managed settings、policy limits 与会话基础设施。
+- 客户端的主要职责不是“单独决定封不封”，而是把身份、组织、设备、策略、遥测与执行面状态拼接成一个可持续收敛的控制平面。
+
+建议先读 `00` 再进入正文，这样后面的证据和结论边界会更清楚。
+
+按主题也可以这样读：
+
+- 机制层：`01` 到 `05`
+- 失效与边界层：`06`
+- 合规自保层：`07`
+- 技术评估层：`08`
+- 哲学与反思层：`09`
+- 诊断与矩阵层：`10`
+- 时序与闭环层：`11`
+- 策略哲学层：`12`
+- 误伤支持层：`13`
+- 图解层：`14`
+- 平台正义层：`15`
+- 精细时序层：`16`
+- 速查卡层：`17`
+- 设计法则层：`18`
+- 总纲层：`19`
+- 区域与连续性层：`20`
+- 平台改进层：`21`
