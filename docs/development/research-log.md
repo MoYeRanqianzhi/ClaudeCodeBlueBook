@@ -605,6 +605,23 @@
 - `claude-code-source-code/src/services/remoteManagedSettings/index.ts:410-560`
 - `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:22-73`
 
+### AF. Risk control can be reduced to three proof chains
+
+- `isClaudeAISubscriber()`、`hasProfileScope()`、`getOauthAccountInfo()` 共同说明“有 token”不等于主体链成立，主体链需要凭证、来源、画像一起闭合。
+- `getBridgeDisabledReason()` 则表明资格链要额外证明订阅、full-scope、组织画像与 feature gate，而不仅是主体存在。
+- `sessionIngress.ts` 与 `mcp/client.ts` 进一步说明会话链是独立事实面：`Last-Uuid`、401、409 adopt server UUID、`needs-auth` 都不等同于主体链或资格链。
+- 更高抽象看，很多“像被封了”的体验不是单点风控，而是主体链、资格链、会话链中至少一条未能持续成立。
+
+证据:
+
+- `claude-code-source-code/src/utils/auth.ts:1564-1617`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:57-83`
+- `claude-code-source-code/src/utils/auth.ts:1919-1999`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-75`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:138-147`
+- `claude-code-source-code/src/services/mcp/client.ts:335-360`
+- `claude-code-source-code/src/services/mcp/client.ts:2311-2322`
+
 ### AE. Governance uses multiple clocks, not one static boundary
 
 - `mcp/auth.ts` 会在 token 距离过期 5 分钟时主动刷新，说明会话治理在时间上前移，而不是等 401 才处理。
