@@ -38,6 +38,7 @@
 - [46-Prompt稳定性解释层：cache-break detection的两阶段诊断器](46-Prompt%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%A7%A3%E9%87%8A%E5%B1%82%EF%BC%9Acache-break%20detection%E7%9A%84%E4%B8%A4%E9%98%B6%E6%AE%B5%E8%AF%8A%E6%96%AD%E5%99%A8.md)
 - [53-稳定前缀、动态尾部与旁路Fork：Claude Code的Cache-Aware Prompt Assembly](53-%E7%A8%B3%E5%AE%9A%E5%89%8D%E7%BC%80%E3%80%81%E5%8A%A8%E6%80%81%E5%B0%BE%E9%83%A8%E4%B8%8E%E6%97%81%E8%B7%AFFork%EF%BC%9AClaude%20Code%E7%9A%84Cache-Aware%20Prompt%20Assembly.md)
 - [54-从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放](54-%E4%BB%8EUI%20Transcript%E5%88%B0Protocol%20Transcript%EF%BC%9APrompt%E4%B8%8D%E6%98%AF%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95%E7%9A%84%E7%9B%B4%E6%8E%A5%E9%87%8D%E6%94%BE.md)
+- [55-热点文件不是坏味道：Kernel、Shell与Chokepoint的分工](55-%E7%83%AD%E7%82%B9%E6%96%87%E4%BB%B6%E4%B8%8D%E6%98%AF%E5%9D%8F%E5%91%B3%E9%81%93%EF%BC%9AKernel%E3%80%81Shell%E4%B8%8EChokepoint%E7%9A%84%E5%88%86%E5%B7%A5.md)
 
 ### 5. 协作与隔离平面
 
@@ -98,6 +99,7 @@
 - 想看 REPL 前台如何从状态机深入到 search / selection / scroll 协同：`04 -> 26 -> 35`
 - 想看源码先进性、热点与产品边界：`20 -> 24 -> 26 -> 27 -> 33 -> 38`
 - 想看源码先进性如何继续压成几种可迁移工程模式：`20 -> 40 -> 41 -> 47 -> 52`
+- 想看热点大文件为什么仍然可以是成熟架构的一部分：`52 -> 55`
 - 想看显式失败、重复响应与 race-aware runtime：`13 -> 14 -> 17 -> 40`
 - 想看 chokepoint、leaf module 与依赖图切断：`24 -> 38 -> 41`
 - 想看预算为什么会走向“观测 -> 建议 -> 调优”的闭环：`21 -> 37 -> 43`

@@ -1291,6 +1291,37 @@
 - `claude-code-source-code/src/utils/settings/types.ts:542-548`
 - `claude-code-source-code/src/utils/permissions/permissions.ts:1417-1445`
 
+### AM. 热点大文件并不自动等于坏架构
+
+- `query.ts` 的“大”主要承载 turn kernel 的时序耦合；旁边显式抽出了 `config/deps/tokenBudget/stopHooks/queryContext` 这些 seams，说明它是在集中合法复杂度，而不是放任膨胀。
+- `REPL.tsx` 的“大”主要承载前台 orchestration shell：query lifecycle、transcript/fullscreen 分支、scroll chokepoint、modal/overlay 组合，而不是把所有 contract 内联。
+- `assembleToolPool()` 统一 REPL 与 runAgent 的工具装配，`QueryGuard` 统一本地 query in-flight 真相，说明热点文件周围的 single source of truth 很强。
+- `analytics/index.ts`、`pluginPolicy.ts`、`types/permissions.ts`、`mcp/normalization.ts` 这类 leaf modules 说明仓库在主动用纯模块给热点文件兜边界、断循环。
+- 更成熟的工程判断不该停留在“文件大小”，而应升级到“这个文件是不是 kernel / shell / chokepoint，它周围有没有 leaf modules 和 anti-cycle seams”。
+
+证据：
+
+- `claude-code-source-code/src/query.ts:181-260`
+- `claude-code-source-code/src/query.ts:365-420`
+- `claude-code-source-code/src/query.ts:659-865`
+- `claude-code-source-code/src/query.ts:1065-1085`
+- `claude-code-source-code/src/query.ts:1678-1735`
+- `claude-code-source-code/src/query/config.ts:1-43`
+- `claude-code-source-code/src/query/deps.ts:1-37`
+- `claude-code-source-code/src/utils/queryContext.ts:1-40`
+- `claude-code-source-code/src/QueryEngine.ts:175-210`
+- `claude-code-source-code/src/screens/REPL.tsx:889-907`
+- `claude-code-source-code/src/screens/REPL.tsx:4392-4408`
+- `claude-code-source-code/src/screens/REPL.tsx:4548-4566`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-108`
+- `claude-code-source-code/src/tools.ts:329-345`
+- `claude-code-source-code/src/hooks/useMergedTools.ts:1-30`
+- `claude-code-source-code/src/services/mcp/config.ts:337-365`
+- `claude-code-source-code/src/services/mcp/normalization.ts:1-20`
+- `claude-code-source-code/src/services/analytics/index.ts:1-40`
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-18`
+- `claude-code-source-code/src/types/permissions.ts:1-36`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。

@@ -200,6 +200,7 @@
 12. `philosophy/34-控制平面先于加载表现.md`
 13. `architecture/51-安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation.md`
 14. `architecture/52-Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法.md`
+15. `architecture/55-热点文件不是坏味道：Kernel、Shell与Chokepoint的分工.md`
 
 这条线的核心结论是：
 

@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《热点文件不是坏味道：Kernel、Shell与Chokepoint的分工》《成熟架构不是没有大文件，而是不把复杂性撒满全仓》，把源码先进性深线继续推进到“合法复杂度中心 / 伪模块化 / 大文件职责命名”这一层
 - 新增《从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放》《渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明》《目录职责、规范入口与兼容别名页说明》，并把根目录旧命名页明确降为兼容入口，把 prompt 深线推进到 protocol transcript 与 progressive exposure 这一层
 - 新增《稳定前缀、动态尾部与旁路Fork：Claude Code的Cache-Aware Prompt Assembly》《允许轻微陈旧，换取系统级确定性》，把 prompt 深线继续推进到“cache-aware 组装链 + 允许轻微陈旧以换取整体确定性”的层次
 - 新增《Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法》《治理必须落到字节级确定性：上下文准入优于功能堆叠》，把“源码先进性”推进到不变量治理五法，把“prompt 魔力”推进到上下文准入编译器这一层
