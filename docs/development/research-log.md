@@ -870,6 +870,26 @@
 - `claude-code-source-code/src/utils/toolPool.ts:43-79`
 - `claude-code-source-code/src/state/teammateViewHelpers.ts:5-21`
 
+### AB. 宿主 API 深线已升级到“失败语义、取消请求与 transcript 防腐层”
+
+- `control_response(error)`、`control_cancel_request`、orphan/duplicate response 不能再被当成边角协议；它们共同决定 host control loop 是否仍然活着。
+- `notifySessionStateChanged(...)`、`external_metadata.pending_action`、`permission_mode` 外化说明失败之后系统不会让宿主继续猜当前状态。
+- `ensureToolResultPairing(...)` 说明 transcript repair 也应被视为正式 API 现实的一部分，而不是内部补丁层。
+
+证据：
+
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:606-619`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-429`
+- `claude-code-source-code/src/cli/structuredIO.ts:469-520`
+- `claude-code-source-code/src/bridge/bridgeMessaging.ts:265-283`
+- `claude-code-source-code/src/bridge/bridgeMessaging.ts:373-383`
+- `claude-code-source-code/src/server/directConnectManager.ts:81-99`
+- `claude-code-source-code/src/remote/RemoteSessionManager.ts:159-170`
+- `claude-code-source-code/src/remote/RemoteSessionManager.ts:189-213`
+- `claude-code-source-code/src/utils/sessionState.ts:92-130`
+- `claude-code-source-code/src/cli/print.ts:5241-5270`
+- `claude-code-source-code/src/utils/messages.ts:5133-5188`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。

@@ -40,6 +40,7 @@
 - [17-状态消息、外部元数据与宿主消费矩阵](17-%E7%8A%B6%E6%80%81%E6%B6%88%E6%81%AF%E3%80%81%E5%A4%96%E9%83%A8%E5%85%83%E6%95%B0%E6%8D%AE%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E7%9F%A9%E9%98%B5.md)
 - [19-SDKMessage、worker_status与external_metadata字段级对照手册](19-SDKMessage%E3%80%81worker_status%E4%B8%8Eexternal_metadata%E5%AD%97%E6%AE%B5%E7%BA%A7%E5%AF%B9%E7%85%A7%E6%89%8B%E5%86%8C.md)
 - [20-宿主实现最小闭环与恢复案例手册](20-%E5%AE%BF%E4%B8%BB%E5%AE%9E%E7%8E%B0%E6%9C%80%E5%B0%8F%E9%97%AD%E7%8E%AF%E4%B8%8E%E6%81%A2%E5%A4%8D%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.md)
+- [31-失败语义、取消请求与孤儿修复API手册](31-%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E3%80%81%E5%8F%96%E6%B6%88%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%AD%A4%E5%84%BF%E4%BF%AE%E5%A4%8DAPI%E6%89%8B%E5%86%8C.md)
 
 ### 4. Prompt、知识与上下文装配面
 
@@ -69,7 +70,7 @@
 ### 2. 想把 Claude Code 嵌进宿主
 
 - 先读 `24 -> 26 -> 02 -> 13 -> 15 -> 16 -> 20`
-- 补充 `11 -> 17 -> 19`
+- 补充 `11 -> 17 -> 19 -> 31`
 - 目标：把 request / response / follow-on event / snapshot / recovery 一起看成闭环
 
 ### 3. 想控制 prompt、知识和记忆
