@@ -920,6 +920,21 @@
 - `claude-code-source-code/src/cli/handlers/auth.ts:233-315`
 - `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:1-88`
 
+### AS. Many platform-side gains now depend more on productizing existing surfaces than inventing new gates
+
+- `authStatus()` 已经提供主体、组织、订阅、provider 维度的低成本状态面，但仍主要停留在命令输出层。
+- `status.tsx` 已经能汇总 MCP connected / needs-auth / failed / pending，说明连接健康面已经具备产品化基础。
+- `MCPListPanel.tsx` 进一步把 enterprise / user / local / project / claude.ai connector 分层展示，意味着连接状态不仅存在，而且已经有分层 UI 语义。
+- `useMcpConnectivityStatus.tsx` 说明平台已经掌握“状态变化优于静态坏状态”的提示原则，只是还没有完全扩展到统一风控状态面。
+- 更高抽象看，误伤进一步下降的主要瓶颈不再只是缺少底层能力，而是这些现有状态面、证据面和分流面还没完全前置成统一产品。
+
+证据:
+
+- `claude-code-source-code/src/cli/handlers/auth.ts:233-315`
+- `claude-code-source-code/src/utils/status.tsx:1-180`
+- `claude-code-source-code/src/components/mcp/MCPListPanel.tsx:1-160`
+- `claude-code-source-code/src/hooks/notifs/useMcpConnectivityStatus.tsx:1-88`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -980,6 +995,7 @@
 - 已补风控专题 `51-批准链分析：谁有资格替用户说“可以”，以及这本身为何是风控问题`，把权限批准、替代审批面和 allowlist 收束成正式信任边界
 - 已补风控专题 `52-局部撤权优于全局封号：能力撤回、连接降级与主体保全的治理哲学`，把大量“像封号”的体验重新分层为连接、能力、时间窗口和自扩权力撤回
 - 已补风控专题 `53-高波动环境严格运行SOP：从日常纪律到升级求助的四阶段手册`，把中国/高波动环境用户的合规建议压成可执行顺序
+- 已补风控专题 `54-如果要把误伤再降一半：平台必须把哪些现有能力前置成产品`，把改进重点从“再加 gate”转向“统一状态面、证据面和升级面”
 
 ## 下一步待办
 
