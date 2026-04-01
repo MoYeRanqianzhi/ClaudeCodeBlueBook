@@ -19,6 +19,11 @@
 6. [05-功能全景与 API 支持](bluebook/05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)
 7. [06-第一性原理与苏格拉底反思](bluebook/06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md)
 
+## 兼容入口
+
+- 顶层 `docs/00-03` 文件保留作为兼容入口。
+- 正式主线以 `docs/bluebook/` 为准，后续持续扩写也优先落在 `bluebook/`。
+
 ## 当前结论的可信边界
 
 - 可靠: 目录结构、启动路径、工具与权限模型、技能与 MCP 装配方式、远程与多 Agent 主流程。
@@ -44,4 +49,5 @@
 
 - [架构专题](architecture/README.md)
 - [API 专题](api/README.md)
+- [使用专题](guides/README.md)
 - [哲学专题](philosophy/README.md)

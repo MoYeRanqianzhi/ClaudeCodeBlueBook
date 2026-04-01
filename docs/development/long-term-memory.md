@@ -28,8 +28,11 @@
   - REPL 与 Ink 交互架构
   - 权限系统与安全状态机
   - 上下文压缩与恢复链
+  - PromptInput 与消息渲染链
   - 上下文经济学
   - 安全观与边界设计
+  - 产品实验与演化方法
+  - 内置命令域索引
 
 ## 已确认事实
 
@@ -41,6 +44,8 @@
 - Claude Code 的对外接口应至少按命令面、工具面、SDK 控制面、MCP 面、远程面分层理解
 - REPL 本身是 orchestration layer，不是薄 UI
 - Claude Code 的上下文管理应被理解为工作集管理，而不是“大窗口”策略
+- PromptInput/Messages/VirtualMessageList/messageActions 共同构成前台控制面，而不是单纯输入框与滚动日志
+- 产品能力需要按 build-time gate、runtime gate、compat shim 三层理解
 
 ## 后续章节建议
 
@@ -56,6 +61,7 @@
 10. 把 `SDKMessageSchema` 做成可检索的消息字典
 11. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
 12. 深挖 `services/compact/*` 的具体实现差异
+13. 给命令域索引补真实 `name` / `aliases` / `type` / `availability`
 
 ## 编写约定
 

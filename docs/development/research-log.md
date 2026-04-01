@@ -70,6 +70,7 @@
 - 已补第一性原理与苏格拉底反思章节，以及内部迭代准则
 - 已补 REPL、权限状态机、上下文压缩恢复链三篇架构深挖
 - 已补 SDK 消息字典、控制请求矩阵、上下文经济学、安全观四篇专题文档
+- 已补 PromptInput/消息渲染链、内置命令域索引、产品实验与演化方法
 
 ## 下一步待办
 
@@ -80,6 +81,8 @@
 - 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
 - 给 `SDKMessageSchema` 与 control subtype 做完整对照表
 - 补 `REPL.tsx` / Ink 更细的 transcript mode、message actions、PromptInput 交互链
+- 补命令索引的字段级表格化版本
+- 补 feature gate / runtime gate / compat shim 的统一演化图
 
 ## 当前风险
 
@@ -88,3 +91,4 @@
 - plugin 市场能力的基础设施很完整，但现阶段不能夸大其生态成熟度。
 - SDK 入口可见，但部分 `runtimeTypes` / `toolTypes` / `controlTypes` 源文件未在当前提取树中展开，接口分析需持续标注这层边界。
 - `query.ts` 的具体 compact 算法实现在 `services/compact/*`，当前章节已讲主链，细算法仍待继续下钻。
+- `commands/` 目录很多模块名与最终 slash name 可能不完全同名，命令索引章节当前仍偏结构化索引，后续要继续核实名义层。
