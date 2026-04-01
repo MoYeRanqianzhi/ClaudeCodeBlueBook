@@ -13,7 +13,13 @@
 - `claude-code-source-code/src/types/command.ts:74-152`
 - `claude-code-source-code/src/tools.ts:253-367`
 - `claude-code-source-code/src/entrypoints/agentSdkTypes.ts:103-272`
+- `claude-code-source-code/src/entrypoints/agentSdkTypes.ts:377-440`
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-519`
+- `claude-code-source-code/src/cli/structuredIO.ts:59-173`
+- `claude-code-source-code/src/cli/remoteIO.ts:127-238`
+- `claude-code-source-code/src/utils/sdkEventQueue.ts:8-126`
+- `claude-code-source-code/src/tools/TaskCreateTool/TaskCreateTool.ts:48-1`
+- `claude-code-source-code/src/tools/SendMessageTool/SendMessageTool.ts:520-917`
 - `claude-code-source-code/src/utils/systemPrompt.ts:29-123`
 - `claude-code-source-code/src/coordinator/coordinatorMode.ts:120-300`
 - `claude-code-source-code/src/utils/attachments.ts:3521-3685`
@@ -83,16 +89,21 @@ Claude Code 的 API 全谱系至少有七条：
 
 ## 4. 会话与状态谱系
 
-会话谱系至少有两层：
+会话谱系至少有三层：
 
-1. SDK session 入口：
+1. query / session runtime 入口：
+   - `query`
+   - `unstable_v2_createSession`
+   - `unstable_v2_resumeSession`
+   - `unstable_v2_prompt`
+2. SDK session 资产入口：
    - `getSessionMessages`
    - `listSessions`
    - `getSessionInfo`
    - `renameSession`
    - `tagSession`
    - `forkSession`
-2. 运行时状态入口：
+3. 运行时状态入口：
    - transcript
    - `worker_status`
    - `external_metadata`
@@ -101,12 +112,13 @@ Claude Code 的 API 全谱系至少有七条：
 
 这条谱系最重要的判断是：
 
-- Claude Code 的 session 不是“聊天记录文件”，而是运行时状态管理面。
+- Claude Code 的 session 不是“聊天记录文件”，而是运行时状态与执行资产管理面。
 
 ## 5. 宿主控制谱系
 
 宿主控制谱系至少包含：
 
+- `initialize`
 - `control_request`
 - `control_response`
 - `control_cancel_request`
@@ -121,6 +133,31 @@ Claude Code 的 API 全谱系至少有七条：
 4. 恢复后重建
 
 所以宿主接入的不是简单 answer stream，而是 control-loop runtime。
+
+其中 `initialize` 特别关键，因为它会同时装配：
+
+- hooks
+- MCP servers
+- prompt 注入
+- agents
+- prompt suggestions / progress summaries
+
+也就是说，prompt、agents、hooks、MCP 在宿主侧不是分散配置，而是在控制谱系起点收束。
+
+### 5.1 这里的 snapshot / recovery 不是可有可无的补充
+
+如果只写 control 与 event，宿主仍然无法回答三个关键问题：
+
+1. 当前 turn 现在是 `idle`、`running` 还是 `requires_action`
+2. 当前 authoritative truth 是哪份 `worker_status` / `external_metadata`
+3. 远程重连或 resume 之后，哪些状态需要从 transcript / session 资产面重建
+
+所以 Claude Code 的宿主谱系至少同时包含：
+
+- request / response 闭环
+- 事件时间线
+- 当前快照真相
+- 恢复后的重建真相
 
 ## 6. 远程与适配器谱系
 
@@ -140,6 +177,30 @@ Claude Code 的 API 全谱系至少有七条：
 1. 协议全集
 2. 主控制平面
 3. 具体 adapter 子集
+
+而 `connectRemoteControl(...)` 又进一步说明，remote 不是“远程 transport 包一下”，而是要求宿主能够：
+
+- `write()` Claude Code 事件
+- `sendResult()`
+- 消费 `inboundPrompts()`
+
+换句话说，远程控制本质上是在延长同一条 control-loop。
+
+### 6.1 remote handle 本身已经说明它不是 transport wrapper
+
+`connectRemoteControl(...)` 返回的句柄要求宿主能处理：
+
+- `write(msg: SDKMessage)`
+- `sendResult()`
+- `sendControlRequest(...)`
+- `sendControlResponse(...)`
+- `sendControlCancelRequest(...)`
+- `inboundPrompts()`
+- `controlRequests()`
+- `permissionResponses()`
+- `onStateChange(...)`
+
+这说明 remote 接入不是把文本搬到远端，而是把整条 control-loop 和状态迁移到远程 session。
 
 ## 7. Prompt / 知识 / 记忆谱系
 
@@ -188,7 +249,17 @@ Prompt 相关 API 绝不只是：
 
 这两条谱系合在一起，解释了为什么 Claude Code 不是“单 Agent + 一堆工具”，而是“可治理、可协作、可迁移的 runtime”。
 
-## 9. 三种角色的最小阅读集
+## 9. 最小宿主闭环
+
+对宿主开发者来说，最小可用闭环不是“一次 `query()` 调用”，而是五段：
+
+1. 用 `initialize` 装配 prompt、hooks、agents、MCP。
+2. 用 `query()` 或 session 入口驱动 runtime。
+3. 处理 `control_request` / `control_response` / `control_cancel_request`。
+4. 消费 `SDKMessage`、`task_*`、`session_state_changed` 等事件。
+5. 在 remote / recovery 场景里继续处理状态回写与 `inboundPrompts()`。
+
+## 10. 三种角色的最小阅读集
 
 ### 9.1 使用者
 
@@ -220,6 +291,6 @@ Prompt 相关 API 绝不只是：
 - `../philosophy/19`
 - `../philosophy/20`
 
-## 10. 一句话总结
+## 11. 一句话总结
 
 Claude Code 的 API 不是命令、工具、会话、宿主和协作几套平行列表，而是一条从角色合同到状态闭环再到治理边界的完整谱系。

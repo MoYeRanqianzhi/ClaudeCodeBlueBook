@@ -11,11 +11,6 @@
 
 ### 0. 能力全集与接入总图
 
-- [23-命令、工具、任务与团队能力全集手册](23-%E5%91%BD%E4%BB%A4%E3%80%81%E5%B7%A5%E5%85%B7%E3%80%81%E4%BB%BB%E5%8A%A1%E4%B8%8E%E5%9B%A2%E9%98%9F%E8%83%BD%E5%8A%9B%E5%85%A8%E9%9B%86%E6%89%8B%E5%86%8C.md)
-- [24-SDK、Control、Session与Remote接入全景矩阵](24-SDK%E3%80%81Control%E3%80%81Session%E4%B8%8ERemote%E6%8E%A5%E5%85%A5%E5%85%A8%E6%99%AF%E7%9F%A9%E9%98%B5.md)
-
-### 0. 总览与矩阵面
-
 - [23-能力平面、公开度与宿主支持矩阵](23-%E8%83%BD%E5%8A%9B%E5%B9%B3%E9%9D%A2%E3%80%81%E5%85%AC%E5%BC%80%E5%BA%A6%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%94%AF%E6%8C%81%E7%9F%A9%E9%98%B5.md)
 - [24-命令、工具、会话、宿主与协作API全谱系](24-%E5%91%BD%E4%BB%A4%E3%80%81%E5%B7%A5%E5%85%B7%E3%80%81%E4%BC%9A%E8%AF%9D%E3%80%81%E5%AE%BF%E4%B8%BB%E4%B8%8E%E5%8D%8F%E4%BD%9CAPI%E5%85%A8%E8%B0%B1%E7%B3%BB.md)
 
@@ -65,7 +60,7 @@
 
 ### 2. 想把 Claude Code 嵌进宿主
 
-- 先读 `02 -> 13 -> 15 -> 16 -> 20`
+- 先读 `24 -> 02 -> 13 -> 15 -> 16 -> 20`
 - 补充 `11 -> 17 -> 19`
 - 目标：把 request / response / follow-on event / snapshot / recovery 一起看成闭环
 
