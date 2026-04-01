@@ -273,6 +273,29 @@
 - `claude-code-source-code/src/server/directConnectManager.ts:88-98`
 - `claude-code-source-code/src/remote/RemoteSessionManager.ts:199-213`
 - `claude-code-source-code/src/services/mcp/client.ts:335-370`
+
+### V. 判定非对称性矩阵与边界成本函数
+
+- GrowthBook 安全限制 gate 和 entitlement gate 的缓存语义并不一致，说明平台明确区分“安全限制不能轻放”和“资格误伤要尽量减少”这两类成本函数。
+- `isRemoteManagedSettingsEligible()` 愿意接受 externally injected token 的资格假阳性，以避免把企业治理完全漏掉，表明“多一次查询”被认为比“治理不可见”便宜得多。
+- `policyLimits` 的主路径整体偏 fail-open，但 `ESSENTIAL_TRAFFIC_DENY_ON_MISS` 又在高敏感场景下保留局部 fail-closed，说明平台不是在选一种哲学，而是在按策略伤害面细分。
+- `validateForceLoginOrg()` 强制以 profile 端点确认组织权威来源，本地可写缓存不能替代；组织边界因此被放在“不能模糊”的层级。
+- dangerous managed settings 变更要经过交互式确认，拒绝则退出，说明“远程配置”在高风险情况下已经被提升为“治理命令”，而不只是同步配置。
+- `bridgeEnabled` 与 `bridgeMain` 的组合明确区分了资格不足、画像不全、session token 过期、环境失效等不同远程失败语义；401/403 会先恢复，404/410 更接近终局失败。
+- `rateLimitMessages` 和 `diagLogs` 进一步说明：计费真相与支持证据被刻意从处罚语义里剥离出来，这能显著降低“所有失败都像封号”的认知污染。
+
+证据:
+
+- `claude-code-source-code/src/services/analytics/growthbook.ts:851-975`
+- `claude-code-source-code/src/services/remoteManagedSettings/syncCache.ts:32-112`
+- `claude-code-source-code/src/services/policyLimits/index.ts:167-220`
+- `claude-code-source-code/src/services/policyLimits/index.ts:497-526`
+- `claude-code-source-code/src/utils/auth.ts:1917-1989`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:14-73`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:16-87`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:198-285`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:17-120`
+- `claude-code-source-code/src/utils/diagLogs.ts:14-94`
 - `claude-code-source-code/src/services/mcp/auth.ts:1344-1470`
 - `claude-code-source-code/src/services/rateLimitMessages.ts:41-104`
 - `claude-code-source-code/src/services/analytics/growthbook.ts:892-903`
@@ -440,6 +463,7 @@
 - 已把 `bluebook/` 目录进一步扩展为状态同步链，并把“真相面”加入第一性原理阅读路径
 - 已补风控专题 `24-信号融合、连续性断裂与“像被封了”的生成机制`，把资格、组织、设备、授权、计费、诊断信号如何压缩成封号体感单独抽成一章
 - 已补风控专题 `25-问题导向索引：按症状、源码入口与合规动作阅读风控专题`，把症状、章节、源码入口、支持路径与 `risk/` 的问题主线压到同一张检索页
+- 已补风控专题 `27-判定非对称性矩阵：哪些路径要快放行，哪些路径必须硬收口`，把 selective failure semantics 从设计哲学下沉成工程对照表
 - 已补风控专题 `26-苏格拉底附录：如果要把误伤再降一半，系统该追问什么`，把平台改进、研究方法反思与用户自保标准提升到“总伤害最小化”视角
 
 ## 下一步待办
