@@ -782,6 +782,29 @@
 - `claude-code-source-code/src/commands/login/login.tsx:20-61`
 - `claude-code-source-code/src/bridge/trustedDevice.ts:41-98`
 
+### AK. Recovery is constrained by freeze semantics and single-chain continuity
+
+- `sessionIngress.ts` 通过 per-session sequential append、`Last-Uuid`、409 adopt server UUID 与 401 immediate fail，把远程 transcript 明确建模成单链追加，而不是自由并发写入。
+- `sessionStorage.ts` 对 sidechain/main-thread 的注释说明，本地可有局部分支，但权威远程链仍必须单线；否则就会出现 409、悬挂 parentUuid 与 resume 断链。
+- `toolResultStorage.ts` 明确把“模型已经见过的结果”冻结成后续决策边界：已替换的要 byte-identical 重放，已见未替换的不能事后再改写，以保持 prompt cache 稳定。
+- `withRetry.ts` 与 `fastMode.ts` 则把短等待保持 fast mode、长等待进入 cooldown 做成显式状态机；失败窗口并非空白，而是带状态的窗口。
+- `replBridge.ts` 又说明某些 stale transport/work state 若继续硬撑，会形成 10 分钟以上 dead window，因此系统宁可 tear down 旧状态以换取快速重分发。
+- `sessionStorage.ts` 的 `tengu_resume_consistency_delta` 表明恢复前后的一致性本身就是正式监控对象，不是附带体验问题。
+- 更高抽象看，Claude Code 恢复逻辑优先保护链头一致性与已见前缀稳定，因此用户在故障窗口里乱试，往往是在一个已冻结部分历史事实的系统里继续叠加噪声。
+
+证据:
+
+- `claude-code-source-code/src/services/api/sessionIngress.ts:28-171`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1228-1261`
+- `claude-code-source-code/src/utils/sessionStorage.ts:2208-2235`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:440-505`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:642-690`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:939-970`
+- `claude-code-source-code/src/services/api/withRetry.ts:261-301`
+- `claude-code-source-code/src/services/api/withRetry.ts:433-505`
+- `claude-code-source-code/src/utils/fastMode.ts:178-228`
+- `claude-code-source-code/src/bridge/replBridge.ts:1028-1055`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -834,6 +857,7 @@
 - 已补风控专题 `43-支持联动附录：按症状、证明链、归属方与证据面快速分流`，把用户、管理员、平台支持的分流规则和证据面合并成一张运行手册
 - 已补风控专题 `44-仓库不是可信主体：从权限优先级到托管收口的信任边界`，把权限顺序、托管收口和项目不可信原则收束成同一套信任模型
 - 已补风控专题 `45-认证连续性工程：缓存、锁、密钥链与为什么不要乱换登录路径`，把认证问题从“登录成功/失败”提升为多缓存、多进程的连续性工程
+- 已补风控专题 `46-冻结语义与单链恢复：为什么故障窗口越乱试越像被封了`，把恢复问题从“多试几次”提升为单链、一致性和前缀稳定问题
 
 ## 下一步待办
 
