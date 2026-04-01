@@ -472,6 +472,26 @@
 - `claude-code-source-code/src/services/api/errors.ts:838-883`
 - `claude-code-source-code/src/services/api/errors.ts:1109-1177`
 
+### Y. Semantic compression tax is a real governance cost
+
+- `getBridgeDisabledReason()` 已经把订阅、full-scope、组织画像、gate、build 拆开，但对用户而言这些差异仍可能被主观压缩成统一的“不能用”体感。
+- `errors.ts` 已把 token revoked、组织不允许、通用 auth、model not available、refusal 做分类，说明系统内部有更细 reason families，但体验层仍可能进一步塌缩。
+- `useCanSwitchToExistingSubscription()` 证明“没有能力”和“能力未激活到当前路径”根本不是一回事，若提示未被正确吸收，用户很容易误判成权限被收回。
+- `mcp/client.ts` 把远程 auth failure 提升成 `needs-auth` 的连接状态，而不是全局账号状态，但用户直觉上仍容易把 connector 故障外推成整套账号不稳定。
+- `sessionIngress.ts` 把多种 401 类连续性问题统一翻译成“Please run /login”，恢复上很务实，但也会让不同底层原因在体验层被压缩为同一动作。
+- 更高抽象看，系统内部的多层治理语义若没有被充分结构化地暴露给用户，就会把解释负担转嫁给用户和支持团队，这就是语义压缩税。
+
+证据:
+
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:57-83`
+- `claude-code-source-code/src/services/api/errors.ts:838-883`
+- `claude-code-source-code/src/services/api/errors.ts:1109-1177`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:17-58`
+- `claude-code-source-code/src/services/mcp/client.ts:335-370`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:144-147`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:355-359`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:462-467`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
