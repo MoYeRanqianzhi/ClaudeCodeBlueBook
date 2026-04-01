@@ -14,6 +14,7 @@
 10. [AgentTool 与隔离编排](10-AgentTool%E4%B8%8E%E9%9A%94%E7%A6%BB%E7%BC%96%E6%8E%92.md)
 11. [权限系统全链路与 Auto Mode](11-%E6%9D%83%E9%99%90%E7%B3%BB%E7%BB%9F%E5%85%A8%E9%93%BE%E8%B7%AF%E4%B8%8EAuto%20Mode.md)
 12. [ClaudeAPI 与流式工具执行](12-ClaudeAPI%E4%B8%8E%E6%B5%81%E5%BC%8F%E5%B7%A5%E5%85%B7%E6%89%A7%E8%A1%8C.md)
+13. [StructuredIO 与 RemoteIO 控制平面](13-StructuredIO%E4%B8%8ERemoteIO%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2.md)
 
 这几章和 `bluebook/` 的区别是：
 
@@ -27,3 +28,4 @@
 - 想看会话状态、记忆与可恢复性：`06 -> 08 -> 09`
 - 想看多 Agent 的隔离编排：`10`
 - 想看扩展与 remote 装配：`03`
+- 想看 host protocol、桥接、direct-connect、remote session 的控制平面：`13`

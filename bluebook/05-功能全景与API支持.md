@@ -7,16 +7,17 @@
 
 为了避免“看到一点功能就写一点功能”的碎片化，本章按 runtime 表面来组织。
 
-## 1. 从第一性原理看，Claude Code 至少有六个接口表面
+## 1. 从第一性原理看，Claude Code 至少有七个接口表面
 
-如果把 Claude Code 当作一个 coding agent runtime，而不是一个聊天框，它至少要暴露六类接口:
+如果把 Claude Code 当作一个 coding agent runtime，而不是一个聊天框，它至少要暴露七类接口:
 
 1. 人类交互接口: CLI、REPL、slash command。
 2. 执行接口: tool、task、subagent。
 3. 扩展接口: skill、plugin、MCP。
 4. 自动化接口: headless、SDK、structured IO。
-5. 远程接口: remote session、bridge、CCR transport。
-6. 状态接口: transcript、session、context usage、settings、rewind。
+5. 宿主控制接口: control request/response、permission handshake、interrupt、settings/context/state control。
+6. 远程接口: remote session、bridge、CCR transport、direct connect。
+7. 状态接口: transcript、session、context usage、settings、rewind。
 
 Claude Code 强的原因之一，是它几乎把这六类接口都做成了正式模块，而不是临时拼接。
 
@@ -120,7 +121,25 @@ SDK 公开入口 `agentSdkTypes.ts` 暴露了至少两类东西:
 - `claude-code-source-code/src/entrypoints/agentSdkTypes.ts:73-107`
 - `claude-code-source-code/src/entrypoints/agentSdkTypes.ts:111-272`
 
-### 2.5 MCP / transport 面
+### 2.5 宿主与控制协议面
+
+`StructuredIO`、`controlSchemas.ts`、`print.ts` 共同说明：
+
+- Claude Code 有正式的 `control_request` / `control_response` / `control_cancel_request` 协议。
+- host 可以发 `interrupt`、`get_context_usage`、`mcp_status`、`mcp_set_servers`、`get_settings` 等控制请求。
+- `StructuredIO` 内部显式维护 `pendingRequests`、`resolvedToolUseIds`、统一 FIFO outbound。
+
+这意味着 Claude Code 的自动化面并不止于“脚本化 query”，还包括“宿主级控制平面”。
+
+证据:
+
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-173`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:175-519`
+- `claude-code-source-code/src/cli/structuredIO.ts:135-162`
+- `claude-code-source-code/src/cli/structuredIO.ts:333-429`
+- `claude-code-source-code/src/cli/structuredIO.ts:470-773`
+
+### 2.6 MCP / transport 面
 
 MCP 在 Claude Code 中既是 client 扩展总线，也是可反向暴露的 server 表面。
 
@@ -138,19 +157,21 @@ MCP 在 Claude Code 中既是 client 扩展总线，也是可反向暴露的 ser
 - `claude-code-source-code/src/services/mcp/types.ts:10-26`
 - `claude-code-source-code/src/services/mcp/types.ts:124-161`
 
-### 2.6 远程与桥接面
+### 2.7 远程与桥接面
 
-远程执行面并不是单一 websocket，而是:
+远程执行面并不是单一 websocket，而是至少三条路径:
 
 - `StructuredIO` 负责 control request/response 语义
 - `RemoteIO` 负责 transport、session token、CCR v2、keepalive
-- bridge / remote session 分担不同的产品角色
+- `DirectConnectSessionManager` 与 `RemoteSessionManager` 进一步把宿主面窄化成 direct-connect 与 remote-session 两类接入器
 
 证据:
 
 - `claude-code-source-code/src/cli/structuredIO.ts:135-162`
 - `claude-code-source-code/src/cli/remoteIO.ts:31-42`
 - `claude-code-source-code/src/cli/remoteIO.ts:111-168`
+- `claude-code-source-code/src/server/directConnectManager.ts:40-210`
+- `claude-code-source-code/src/remote/RemoteSessionManager.ts:87-323`
 
 ## 3. API 支持不是一层，而是四层
 
@@ -233,6 +254,8 @@ MCP 在 Claude Code 中既是 client 扩展总线，也是可反向暴露的 ser
 6. 把 permissions / auto mode / classifier / headless fallback 补到与工具面同等级的可检索粒度。
 7. 把 SDK 事件流与 Claude API 流式执行链补到字段级与时序级。
 8. 把 MCP config scope、auth、needs-auth/pending/disabled/failed 状态补成完整状态机。
+9. 把 bridge / direct-connect / remote-session 三类宿主路径继续做成对照图。
+10. 把 transport plane、control plane、host adapter 三层边界继续做成对照图。
 
 本章对应的详细接口文档:
 
@@ -244,6 +267,7 @@ MCP 在 Claude Code 中既是 client 扩展总线，也是可反向暴露的 ser
 - [扩展 Frontmatter 与插件 Agent 手册](api/10-%E6%89%A9%E5%B1%95Frontmatter%E4%B8%8E%E6%8F%92%E4%BB%B6Agent%E6%89%8B%E5%86%8C.md)
 - [SDKMessageSchema 与事件流手册](api/11-SDKMessageSchema%E4%B8%8E%E4%BA%8B%E4%BB%B6%E6%B5%81%E6%89%8B%E5%86%8C.md)
 - [MCP 配置与连接状态机](api/12-MCP%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%BF%9E%E6%8E%A5%E7%8A%B6%E6%80%81%E6%9C%BA.md)
+- [StructuredIO 与 RemoteIO 宿主协议手册](api/13-StructuredIO%E4%B8%8ERemoteIO%E5%AE%BF%E4%B8%BB%E5%8D%8F%E8%AE%AE%E6%89%8B%E5%86%8C.md)
 - [Agent SDK 与控制协议](api/02-Agent%20SDK%E4%B8%8E%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE.md)
 - [MCP 与远程传输](api/03-MCP%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BC%A0%E8%BE%93.md)
 - [SDK 消息与事件字典](api/04-SDK%E6%B6%88%E6%81%AF%E4%B8%8E%E4%BA%8B%E4%BB%B6%E5%AD%97%E5%85%B8.md)
@@ -253,3 +277,5 @@ MCP 在 Claude Code 中既是 client 扩展总线，也是可反向暴露的 ser
 - [AgentTool 与隔离编排](architecture/10-AgentTool%E4%B8%8E%E9%9A%94%E7%A6%BB%E7%BC%96%E6%8E%92.md)
 - [权限系统全链路与 Auto Mode](architecture/11-%E6%9D%83%E9%99%90%E7%B3%BB%E7%BB%9F%E5%85%A8%E9%93%BE%E8%B7%AF%E4%B8%8EAuto%20Mode.md)
 - [ClaudeAPI 与流式工具执行](architecture/12-ClaudeAPI%E4%B8%8E%E6%B5%81%E5%BC%8F%E5%B7%A5%E5%85%B7%E6%89%A7%E8%A1%8C.md)
+- [StructuredIO 与 RemoteIO 控制平面](architecture/13-StructuredIO%E4%B8%8ERemoteIO%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2.md)
+- [宿主控制平面优于聊天外壳](philosophy/09-%E5%AE%BF%E4%B8%BB%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%E4%BC%98%E4%BA%8E%E8%81%8A%E5%A4%A9%E5%A4%96%E5%A3%B3.md)

@@ -171,6 +171,25 @@
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:157-173`
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:374-452`
 
+### L. Claude Code is host-integrated runtime, not terminal shell
+
+- `StructuredIO` 的职责不是“把 stdin/stdout 包一层”，而是维持 request correlation、cancel、duplicate/orphan 防护、permission race 与 schema-validated control flow。
+- `RemoteIO` 没有发明一套 remote-only protocol，而是在 `StructuredIO` 之上扩 transport、token refresh、CCR v2 internal events、bridge-only keepalive。
+- direct connect 与 `RemoteSessionManager` 都复用了同一控制语义，但当前支持面明显窄于完整 `StructuredIO`：它们更接近宿主适配器，而不是完整 CLI worker control plane。
+
+证据:
+
+- `claude-code-source-code/src/cli/print.ts:587-620`
+- `claude-code-source-code/src/cli/print.ts:1021-1048`
+- `claude-code-source-code/src/cli/print.ts:5199-5232`
+- `claude-code-source-code/src/cli/structuredIO.ts:135-162`
+- `claude-code-source-code/src/cli/structuredIO.ts:275-429`
+- `claude-code-source-code/src/cli/structuredIO.ts:470-773`
+- `claude-code-source-code/src/cli/remoteIO.ts:35-240`
+- `claude-code-source-code/src/server/directConnectManager.ts:40-210`
+- `claude-code-source-code/src/remote/RemoteSessionManager.ts:87-323`
+- `claude-code-source-code/src/remote/SessionsWebSocket.ts:74-403`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -194,14 +213,18 @@
 - 已补 MCP 配置与连接状态机，把 scope、transport、connection state、control surface 收拢成统一连接平面
 - 已补 Claude API 与流式工具执行专题，把 query loop、stream parser、tool executor、fallback、recovery 串成完整执行链
 - 已同步更新主索引、API/架构 README、章节规划、证据索引、长期记忆与反思准则
+- 已补 `StructuredIO` 与 `RemoteIO` 宿主协议手册，把 host-facing control protocol 做成单独 API 章节
+- 已补 `StructuredIO` 与 `RemoteIO` 控制平面专题，把 request correlation、cancel、duplicate/orphan、防乱序与远程 transport 串成完整架构链
+- 已补“宿主控制平面优于聊天外壳”专题，把 Claude Code 从 terminal shell 视角提升为 host-integrated runtime
+- 已把 `bluebook/` 目录进一步收紧为宿主链、事件链、连接链、策略链、会话链、协作链六条阅读线
 
 ## 下一步待办
 
+- 补 bridge / direct-connect / remote-session 三类宿主路径的并排对照图
 - 补一章“多 Agent 协作模式与 prompt 模板”
 - 补源码目录级索引表，把 `services/`、`tools/`、`commands/` 细分到二级目录
 - 给 `SDKMessageSchema` 与 control subtype 做完整对照表，并补宿主接入样例
 - 补 `REPL.tsx` / Ink 更细的 transcript mode、message actions、PromptInput 交互链
-- 补 `StructuredIO` / `RemoteIO` 的 host-CLI 协议与时序
 - 补命令索引的更细表格化版本与 workflow/dynamic skills 交叉核对
 - 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
 - 继续把 session/state API 与子代理状态回收做成字段级索引与时序图
@@ -223,3 +246,4 @@
 - 权限系统的很多细节受 ant-only feature、classifier gate、fail-open/fail-closed 配置影响，后续必须持续区分“源码路径存在”和“公开构建稳定可用”。
 - `stream_event`、`research`、`advisor`、`claudeai-proxy`、`ws-ide` 等痕迹里混有 internal / host-specific 信号，后续不能直接当作稳定公共契约。
 - Claude API 流式执行链与当前 Anthropic event shape、tool execution harness 强绑定，后续若源码升级，最可能先变化的是恢复细节与引用写回策略。
+- direct connect 与 `RemoteSessionManager` 当前实现的 control surface 明显窄于 `StructuredIO` 全量 schema，后续必须持续避免把“schema 全集”和“某个宿主已支持的子集”写成同一层事实。

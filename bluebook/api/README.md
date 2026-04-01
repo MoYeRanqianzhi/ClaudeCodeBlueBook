@@ -6,7 +6,7 @@
 2. 这些能力通过什么接口暴露。
 3. 哪些接口是 runtime 主路径，哪些只是 gated/internal 痕迹。
 
-当前目录建议按四组理解：
+当前目录建议按五组理解：
 
 ## 命令与控制面
 
@@ -32,6 +32,10 @@
 - [扩展 Frontmatter 与插件 Agent 手册](10-%E6%89%A9%E5%B1%95Frontmatter%E4%B8%8E%E6%8F%92%E4%BB%B6Agent%E6%89%8B%E5%86%8C.md)
 - [MCP 配置与连接状态机](12-MCP%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%BF%9E%E6%8E%A5%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 
+## 宿主与传输面
+
+- [StructuredIO 与 RemoteIO 宿主协议手册](13-StructuredIO%E4%B8%8ERemoteIO%E5%AE%BF%E4%B8%BB%E5%8D%8F%E8%AE%AE%E6%89%8B%E5%86%8C.md)
+
 建议和蓝皮书主线搭配阅读：
 
 - 先看 [导读](../00-%E5%AF%BC%E8%AF%BB.md)
@@ -41,3 +45,4 @@
 - 需要 runtime event stream、宿主可观测信号与消息族时再看 `04 -> 11 -> ../architecture/12`
 - 需要 session/state surface、runtime truth 与恢复接口时再看 `09 -> ../architecture/09 -> ../philosophy/06`
 - 需要统一扩展面、frontmatter 字段、plugin/agent trust boundary 与 MCP 连接平面时再看 `03 -> 10 -> 12 -> ../philosophy/08`
+- 需要 host control protocol、`control_request` / `control_response`、远程 host 适配路径时再看 `13 -> ../architecture/13 -> ../philosophy/09`

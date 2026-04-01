@@ -33,3 +33,8 @@
 - 新增 ClaudeAPI 与流式工具执行专题，补强 query loop、stream parser、tool executor、fallback 与 recovery 的完整链路
 - 更新蓝皮书主索引、API/架构专题 README，新增事件链与连接链阅读路径
 - 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化本轮新增结论
+- 新增 StructuredIO 与 RemoteIO 宿主协议手册，补强 host control protocol、cancel、permission race 与 remote host 接入分析
+- 新增 StructuredIO 与 RemoteIO 控制平面专题，补强宿主装配、统一 FIFO、duplicate/orphan 防护与远程 transport 增强链路
+- 新增“宿主控制平面优于聊天外壳”专题，把 Claude Code 从 terminal shell 视角提升为 host-integrated runtime
+- 更新蓝皮书主索引、API/架构/哲学 README，新增宿主链阅读路径
+- 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化宿主控制平面这一轮结论

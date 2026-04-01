@@ -48,6 +48,9 @@
   - SDKMessageSchema 与事件流手册
   - MCP 配置与连接状态机
   - ClaudeAPI 与流式工具执行
+  - StructuredIO 与 RemoteIO 宿主协议手册
+  - StructuredIO 与 RemoteIO 控制平面
+  - 宿主控制平面优于聊天外壳
 
 ## 已确认事实
 
@@ -74,6 +77,10 @@
 - MCP 更适合按“配置面 + transport 面 + 连接状态面 + 控制面”理解，而不是“外接工具协议”
 - `message_delta` 对已 yield assistant message 的原地写回，是 transcript 引用一致性的重要实现细节
 - plugin MCP 的动态 scope 与环境变量分层解析，说明连接治理是扩展模型的一部分，不是附加逻辑
+- Claude Code 更适合被理解成 host-integrated runtime，而不是 terminal shell
+- `StructuredIO` 的本质是 request correlation + cancel + permission race + duplicate/orphan 防护，而不是 stdin/stdout 包装器
+- `RemoteIO` 的价值是把同一控制平面投射到远程 transport，并接上 CCR v2 internal events 与 session ingress
+- direct connect / remote session manager 目前都只实现了完整控制协议的窄化子集，后续写作必须持续区分“协议全集”和“适配器子集”
 
 ## 后续章节建议
 
@@ -82,12 +89,12 @@
 3. 深挖 `REPL.tsx` 的 transcript search / sticky prompt / message actions
 4. 深挖权限系统与 auto mode 的风险控制
 5. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
-6. 深挖 `StructuredIO` / `RemoteIO` 的 host-CLI 协议与时序
+6. 给 bridge / direct-connect / remote-session 三类宿主路径做并排对照图
 7. 把 `SDKMessageSchema` 与 control subtype 做成可检索对照表
 8. 给 MCP 状态、命令 availability、控制请求做时序化视图
 9. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
 10. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
-11. 把工具面、事件面、连接面、状态面、控制面、演化面都做成清晰阅读路径
+11. 把工具面、宿主面、事件面、连接面、状态面、控制面、演化面都做成清晰阅读路径
 12. 把 plugin manifest / marketplace / MCPB / LSP / channels 的产品边界继续写实
 
 ## 编写约定
@@ -102,3 +109,4 @@
 - 写权限面相关结论时，必须先标出它位于初始装配、规则层、mode 层、classifier 层还是 fallback 层
 - 写 SDK 相关结论时，必须先问清自己描述的是 answer stream 还是 event stream
 - 写 MCP 相关结论时，必须先区分配置面、连接状态面、控制面与 transport 面
+- 写宿主相关结论时，必须先区分聊天外壳、control plane、transport plane 与 host adapter
