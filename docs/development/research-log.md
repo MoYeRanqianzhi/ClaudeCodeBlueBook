@@ -949,6 +949,22 @@
 - `claude-code-source-code/src/services/mcp/channelAllowlist.ts:1-77`
 - `claude-code-source-code/src/utils/settings/pluginOnlyPolicy.ts:1-56`
 
+### AU. Governance is easier to explain when sovereignty and recovery agency are split
+
+- `settings.ts` 的 policySettings first-source-wins 说明组织主权是正式上位裁决层，而不是普通 merge 参与者。
+- `pluginOnlyPolicy.ts` 进一步表明管理员不只决定“内容”，还决定“哪些来源还有资格发声”。
+- `channelNotification.ts` 和 `channelAllowlist.ts` 则说明替代批准面可以代行批准，但其合法性仍受平台 gate、组织 policy、allowlist 和 session opt-in 共同约束。
+- `permissionSetup.ts` 展示了另一类主权：系统可以阻止 mode transition（例如 gate 未开启时不允许进入 auto mode），说明自动化/本地选择权仍受上位边界约束。
+- 更高抽象看，平台主权、组织主权、用户主权、替代批准面和自动恢复主权并不对等；很多混乱感来自读者把“能发信号”“能代批”“能恢复”和“能最终裁决”误当成同一件事。
+
+证据:
+
+- `claude-code-source-code/src/utils/settings/settings.ts:675-726`
+- `claude-code-source-code/src/utils/settings/pluginOnlyPolicy.ts:1-56`
+- `claude-code-source-code/src/services/mcp/channelNotification.ts:220-318`
+- `claude-code-source-code/src/services/mcp/channelAllowlist.ts:1-77`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:593-633`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -1013,6 +1029,7 @@
 - 已补风控专题 `55-后期研究索引：41-54的二级导航、问题入口与最短阅读链`，把后期高密度章节拆成四条二级主线，改善检索结构
 - 已补风控专题 `56-反规避原则：为什么任何绕过思路都会回到更高风险与更高证明负担`，把“规避冲动”改写为第一性原理层面的反规避论证
 - 已补风控专题 `57-终局总指南：Claude Code风控研究的最佳最全合规版`，把后期全部研究压缩成一份面向用户和平台构建者的终局合规总结
+- 已补风控专题 `58-治理主权与恢复主动权：谁能关、谁能开、谁能替你说 yes`，把平台、组织、用户、替代批准面和自动恢复主权收束成一张主权图
 
 ## 下一步待办
 
