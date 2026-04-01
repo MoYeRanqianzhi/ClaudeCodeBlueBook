@@ -318,6 +318,49 @@
 - `claude-code-source-code/src/utils/task/TaskOutput.ts:257-388`
 - `claude-code-source-code/src/cli/transports/ccrClient.ts:789-854`
 
+### U. Capability atlas now requires object truth, not just plane truth
+
+- “全部功能和 API”不能只按能力平面写，还必须继续补命令 truth、工具 truth、任务 truth、服务 truth、宿主 truth 五张对象表。
+- `TaskType` 与 `getAllTasks()` 的差异说明 task model truth 与 task registry truth 必须分开写。
+- `constants/tools.ts` 说明 async agent、in-process teammate、coordinator 拥有不同的工具子集 truth，不能把“系统支持某工具”写成单层判断。
+- `src/services/` 的约 `20` 个一级子域说明能力大量沉在 subsystem planes 里，而不只长在 commands/tools 上。
+
+证据：
+
+- `claude-code-source-code/src/Task.ts:6-124`
+- `claude-code-source-code/src/tasks.ts:1-39`
+- `claude-code-source-code/src/constants/tools.ts:36-112`
+- `claude-code-source-code/src/tools.ts:193-250`
+- `claude-code-source-code/src/services/`
+
+### V. Governance APIs are formal control planes, not misc helpers
+
+- channels、`get_context_usage`、`get_settings` / `apply_flag_settings` 应一起写成治理型 API。
+- channels 体现外部输入治理；context usage 体现上下文预算治理；settings 则体现配置真相与运行态治理。
+- 这三条 API 共同说明 Claude Code 不只开放“让你做事”的接口，也开放“让你约束 runtime”的接口。
+
+证据：
+
+- `claude-code-source-code/src/services/mcp/channelNotification.ts:1-280`
+- `claude-code-source-code/src/utils/messages.ts:5496-5507`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:175-288`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:467-507`
+
+### W. Prompt magic, unified budgeter, and source quality are now explicit philosophy axes
+
+- Prompt 魔力更准确的结构应写成“角色合同 + 工具边界 + 缓存结构 + 状态反馈 + 协作语法”。
+- 安全、成本与体验必须共用预算器，因为它们分别约束动作空间、上下文空间与认知噪音。
+- 源码质量不能只写成卫生层评价，而应写成 contract、失败语义、恢复路径和共享基础设施如何直接决定产品能力。
+
+证据：
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:29-123`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:24-260`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:510-645`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/query.ts:369-540`
+- `claude-code-source-code/src/query.ts:1065-1247`
+
 ### U. REPL front-end is a cognitive control plane, not a chat shell
 
 - transcript mode 不是历史视图，而是 pager/runtime。
