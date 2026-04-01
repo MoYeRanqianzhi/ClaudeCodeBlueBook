@@ -517,6 +517,23 @@
 - `claude-code-source-code/src/services/api/sessionIngress.ts:57-75`
 - `claude-code-source-code/src/services/api/sessionIngress.ts:138-147`
 
+### AA. Proof burden transfer is a fairness issue, not just a support issue
+
+- `getBridgeDisabledReason()`、`useCanSwitchToExistingSubscription()`、`errors.ts` 已在主动承担一部分解释责任，说明平台并非完全把恢复路径留给用户自己猜。
+- `validateForceLoginOrg()` 在关键边界上仍要求用户补完组织与 scope 的证明链，说明某些证明责任无法被平台完全内包。
+- `diagLogs.ts` 和 startup/connectivity notifications 说明支持体系正在承接内部细语义与外部有限提示之间的翻译责任。
+- 对高波动环境用户而言，更高的连续性维护成本，本质上也是更高的证明成本；这解释了为什么“高封号体感”常常不是更高惩罚，而是更高举证难度。
+- 更高抽象看，可证明性的成本分配是否公平，本身就是平台正义问题，而不只是 UX 或支持效率问题。
+
+证据:
+
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:57-83`
+- `claude-code-source-code/src/hooks/notifs/useCanSwitchToExistingSubscription.tsx:17-58`
+- `claude-code-source-code/src/services/api/errors.ts:838-883`
+- `claude-code-source-code/src/services/api/errors.ts:1109-1177`
+- `claude-code-source-code/src/utils/auth.ts:1919-1999`
+- `claude-code-source-code/src/utils/diagLogs.ts:14-57`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
