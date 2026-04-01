@@ -666,6 +666,29 @@
 - `claude-code-source-code/src/hooks/useReplBridge.tsx:35-40`
 - `claude-code-source-code/src/bridge/initReplBridge.ts:169-239`
 
+### AF. Long-horizon user safety is mostly continuity-cost management
+
+- `auth.ts` 的缓存失效、401 去重、跨进程刷新锁，说明系统显式在对抗“多实例、多缓存、多时钟”导致的身份分叉；用户长期混用多条身份路径，会抬高主体链重证明成本。
+- `mcp/auth.ts` 与 `envLessBridgeConfig.ts` 都采用 5 分钟级的预刷新缓冲，说明成熟控制面更关心“不要带着快过期凭证进入长链路”，而不是“等出错后再补救”。
+- `mcp/client.ts` 的 `needs-auth` 15 分钟缓存，以及 `toolExecution.ts` 把局部连接域直接标记为 `needs-auth`，说明局部认证失效会被短期记忆；用户应先局部恢复，避免把子系统问题扩大成全局重置。
+- `trustedDevice.ts` 把 fresh login 10 分钟窗口与 90 天滚动 token 结合起来，说明高安全能力依赖的是“设备连续性 + 会话新鲜度”，不是普通登录成功后的自动延伸。
+- `remoteManagedSettings/index.ts`、`policyLimits/index.ts` 与 `securityCheck.tsx` 共同表明：平台治理是缓慢轮询、校验和缓存、危险变更强确认的组合；长期频繁切组织、切环境、切机器，会显著增加资格链与会话链的解释成本。
+- 更高抽象看，合规自保的核心不是对抗检测，而是长期降低主体链、资格链、会话链的重证明成本。
+
+证据:
+
+- `claude-code-source-code/src/utils/auth.ts:1303-1556`
+- `claude-code-source-code/src/services/mcp/auth.ts:1633-1668`
+- `claude-code-source-code/src/bridge/envLessBridgeConfig.ts:14-23`
+- `claude-code-source-code/src/bridge/envLessBridgeConfig.ts:47-90`
+- `claude-code-source-code/src/services/mcp/client.ts:257-337`
+- `claude-code-source-code/src/services/tools/toolExecution.ts:1599-1623`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:17-27`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:87-98`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:1-23`
+- `claude-code-source-code/src/services/policyLimits/index.ts:1-23`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:14-57`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -713,6 +736,7 @@
 - 已补风控专题 `25-问题导向索引：按症状、源码入口与合规动作阅读风控专题`，把症状、章节、源码入口、支持路径与 `risk/` 的问题主线压到同一张检索页
 - 已补风控专题 `27-判定非对称性矩阵：哪些路径要快放行，哪些路径必须硬收口`，把 selective failure semantics 从设计哲学下沉成工程对照表
 - 已补风控专题 `26-苏格拉底附录：如果要把误伤再降一半，系统该追问什么`，把平台改进、研究方法反思与用户自保标准提升到“总伤害最小化”视角
+- 已补风控专题 `41-连续性成本最小化：把合规自保从故障窗口扩展到日常操作纪律`，把分钟级故障纪律上升到日级、周级的连续性成本管理
 
 ## 下一步待办
 
