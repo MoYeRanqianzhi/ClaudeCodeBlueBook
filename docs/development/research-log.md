@@ -1255,6 +1255,42 @@
 - `claude-code-source-code/src/utils/attachments.ts:1448-1495`
 - `claude-code-source-code/src/utils/mcpInstructionsDelta.ts:20-52`
 
+### AK. Prompt 运行时并不会把 UI transcript 直接喂给模型
+
+- `normalizeMessagesForAPI()` 本质上是 protocol compiler：attachment reorder、virtual message strip、targeted strip、tool_reference boundary 注入、adjacent user merge、tool_result hoist 都发生在 API 边界前。
+- attachment-origin 内容会被统一包成 `<system-reminder>`，随后再尽量 smoosh 进最后一个 `tool_result`，说明 runtime 在主动区分“辅助上下文”和“真实用户输入”。
+- tool_reference 的边界注入与 sibling 迁移说明 Claude Code 在处理的是 server-side prompt 语义，而不是前台显示语义。
+- `extractDiscoveredToolNames(messages)` 说明 protocol transcript 不只是重放历史，还承担 deferred tool 暴露的记忆功能。
+- 结论应升级为：UI transcript 服务人类可见真相，protocol transcript 服务模型侧协议真相；二者相关，但不相同。
+
+证据：
+
+- `claude-code-source-code/src/utils/messages.ts:1760-1858`
+- `claude-code-source-code/src/utils/messages.ts:1989-2045`
+- `claude-code-source-code/src/utils/messages.ts:2130-2195`
+- `claude-code-source-code/src/utils/messages.ts:2440-2485`
+- `claude-code-source-code/src/utils/messages.ts:5200-5225`
+- `claude-code-source-code/src/utils/toolSearch.ts:540-560`
+- `claude-code-source-code/src/services/api/claude.ts:1145-1175`
+
+### AL. Claude Code 偏爱渐进暴露，而不是全量声明
+
+- `ToolSearch + deferred tools` 说明能力可以先存在，但不必先全量暴露给模型；运行时更偏爱“发现 -> 回填”闭环。
+- `toolSchemaCache` 与 delta attachments 说明即使能力要变化，也尽量把变化留在尾部或增量，而不是主前缀。
+- `strictPluginOnlyCustomization`、`allowManagedPermissionRulesOnly` 说明这种“先限制模型可见世界”也发生在 authority/source 层，而不只发生在 tool 层。
+- 这条线的更强哲学表述应是：先限制模型可见世界，再要求模型聪明；否则安全、token、cache、治理四条线会同时变差。
+
+证据：
+
+- `claude-code-source-code/src/utils/toolSchemaCache.ts:1-20`
+- `claude-code-source-code/src/utils/toolSearch.ts:385-430`
+- `claude-code-source-code/src/utils/toolSearch.ts:540-560`
+- `claude-code-source-code/src/services/api/claude.ts:1145-1175`
+- `claude-code-source-code/src/utils/attachments.ts:1448-1495`
+- `claude-code-source-code/src/utils/mcpInstructionsDelta.ts:20-52`
+- `claude-code-source-code/src/utils/settings/types.ts:542-548`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1417-1445`
+
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 
 - 当正文已经长出 `api/30`、`architecture/36/37/38`、`guides/06` 这类新判断标准时，`bluebook/README.md`、`navigation/*`、专题 README 若不立刻同步，就会让读者继续沿过时链路阅读。

@@ -151,6 +151,8 @@
   - 治理必须落到字节级确定性：上下文准入优于功能堆叠
   - 稳定前缀、动态尾部与旁路Fork：Claude Code的Cache-Aware Prompt Assembly
   - 允许轻微陈旧，换取系统级确定性
+  - 从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放
+  - 渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明
   - CLAUDE.md、记忆层与上下文注入实践
   - Channels、托管策略与组织级治理实践
   - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
@@ -215,6 +217,9 @@
 - prompt 深线应继续固定为“上下文准入编译器”叙述：来源优先级、system prompt block 编译、schema 字节稳定、分类器共享上下文与意图连续性压缩必须合写
 - prompt 组装深线应继续固定为“稳定前缀 + 动态尾部 + delta attachments + side-loop fork + protocol transcript”一条 cache-aware assembly pipeline，不要退回对单段 prompt 文案的讨论
 - `getSessionStartDate`、memoized context、section cache、sticky headers 共同表明 Claude Code 接受“轻微陈旧”来换取系统级确定性，这应被视为刻意设计，而不是偶然副作用
+- prompt runtime 还应继续明确区分 UI transcript truth 与 protocol transcript truth，不要把前台看到的消息顺序直接当成模型请求的协议顺序
+- 能力设计深线还应继续固定为“渐进暴露优于全量声明”：deferred tools、delta attachments、managed-only source gating 应被视为同一设计动作
+- 根目录旧命名页当前仅应作为兼容别名保留；规范入口是 `README + 00-08`，`docs/` 是开发与记忆层而非正文层，这一点必须持续明确
 - 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
 - 主入口、navigation 与专题 README 必须和正文同步更新，否则蓝皮书会先在检索层失真
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述

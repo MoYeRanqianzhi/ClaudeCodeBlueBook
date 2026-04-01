@@ -30,16 +30,28 @@
 8. `architecture/42-辅助循环、侧问题与后回合Fork共享前缀.md`
 9. `architecture/46-Prompt稳定性解释层：cache-break detection的两阶段诊断器.md`
 10. `architecture/53-稳定前缀、动态尾部与旁路Fork：Claude Code的Cache-Aware Prompt Assembly.md`
-11. `philosophy/21-Prompt魔力来自约束叠加与状态反馈.md`
-12. `philosophy/30-Prompt不是一次请求而是可复用前缀资产.md`
-13. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
-14. `philosophy/38-安全、治理、Token与Prompt稳定性本质上是同一收口问题.md`
-15. `philosophy/39-治理必须落到字节级确定性：上下文准入优于功能堆叠.md`
-16. `philosophy/40-允许轻微陈旧，换取系统级确定性.md`
+11. `architecture/54-从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放.md`
+12. `philosophy/21-Prompt魔力来自约束叠加与状态反馈.md`
+13. `philosophy/30-Prompt不是一次请求而是可复用前缀资产.md`
+14. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
+15. `philosophy/38-安全、治理、Token与Prompt稳定性本质上是同一收口问题.md`
+16. `philosophy/39-治理必须落到字节级确定性：上下文准入优于功能堆叠.md`
+17. `philosophy/40-允许轻微陈旧，换取系统级确定性.md`
+18. `philosophy/41-渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明.md`
 
 这条线的核心结论是：
 
 - prompt 魔力来自装配顺序、工具 ABI、缓存边界、状态晚绑定、协作语法、辅助循环共享同一前缀资产，以及系统敢于用“稳定前缀 + 动态尾部 + 旁路 fork”保护整体确定性
+
+如果问题进一步升级成：
+
+- 为什么模型看到的 transcript 不能直接等于 UI transcript。
+- 为什么 Claude Code 偏爱渐进暴露，而不是一开始全量声明。
+
+补充阅读：
+
+1. `architecture/54-从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放.md`
+2. `philosophy/41-渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明.md`
 
 ## 2. 反扩张与预算实现深线
 

@@ -22,6 +22,12 @@
 - `bluebook/risk/`：账号治理、风控、远程控制与误伤处置。
 - `docs/`：持久化记忆与开发文档，不承载蓝皮书正文。
 
+## 规范入口
+
+- 规范主线入口是 `README.md + 00-08`
+- `00-总览.md`、`00-蓝皮书总览.md`、`01-源码总地图.md` 作为兼容别名页保留，不再承担规范主线职责
+- 目录治理说明见 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
+
 ## 主线阅读
 
 1. [00-导读](00-%E5%AF%BC%E8%AF%BB.md)
@@ -128,6 +134,14 @@
 
 - `architecture/39 -> architecture/53 -> philosophy/33 -> philosophy/39 -> philosophy/40`
 
+### 为什么模型看到的 transcript 不等于界面上看到的 transcript
+
+- `architecture/53 -> architecture/54 -> philosophy/26 -> philosophy/30 -> philosophy/41`
+
+### 为什么 Claude Code 偏爱渐进暴露，而不是全量声明
+
+- `architecture/51 -> architecture/53 -> philosophy/38 -> philosophy/41`
+
 ### 为什么宿主接入不能只看 `query(prompt)`
 
 - `05 -> api/30 -> api/02 -> api/13 -> api/15 -> api/16 -> api/20 -> api/31`
@@ -147,6 +161,7 @@
 ### 想按深度专题而不是按目录来读
 
 - 先读 [navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理](navigation/03-%E6%B7%B1%E5%BA%A6%E4%B8%93%E9%A2%98%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E5%BA%95%E7%9B%98%E4%B8%8E%E6%B2%BB%E7%90%86.md)
+- 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
 

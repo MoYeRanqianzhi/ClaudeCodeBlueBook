@@ -37,6 +37,7 @@
 - [42-辅助循环、侧问题与后回合Fork共享前缀](42-%E8%BE%85%E5%8A%A9%E5%BE%AA%E7%8E%AF%E3%80%81%E4%BE%A7%E9%97%AE%E9%A2%98%E4%B8%8E%E5%90%8E%E5%9B%9E%E5%90%88Fork%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80.md)
 - [46-Prompt稳定性解释层：cache-break detection的两阶段诊断器](46-Prompt%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%A7%A3%E9%87%8A%E5%B1%82%EF%BC%9Acache-break%20detection%E7%9A%84%E4%B8%A4%E9%98%B6%E6%AE%B5%E8%AF%8A%E6%96%AD%E5%99%A8.md)
 - [53-稳定前缀、动态尾部与旁路Fork：Claude Code的Cache-Aware Prompt Assembly](53-%E7%A8%B3%E5%AE%9A%E5%89%8D%E7%BC%80%E3%80%81%E5%8A%A8%E6%80%81%E5%B0%BE%E9%83%A8%E4%B8%8E%E6%97%81%E8%B7%AFFork%EF%BC%9AClaude%20Code%E7%9A%84Cache-Aware%20Prompt%20Assembly.md)
+- [54-从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放](54-%E4%BB%8EUI%20Transcript%E5%88%B0Protocol%20Transcript%EF%BC%9APrompt%E4%B8%8D%E6%98%AF%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95%E7%9A%84%E7%9B%B4%E6%8E%A5%E9%87%8D%E6%94%BE.md)
 
 ### 5. 协作与隔离平面
 
@@ -88,6 +89,7 @@
 - 想看 prompt 魔力怎样扩展到 `/btw`、suggestion、memory、summary 这些辅助循环：`31 -> 39 -> 42`
 - 想看 prompt 为什么继续升级成“可解释稳定性系统”：`39 -> 42 -> 46`
 - 想看 prompt 如何进一步落成“稳定前缀 + 动态尾部 + 旁路 fork”的组装底盘：`39 -> 42 -> 46 -> 53`
+- 想看 UI transcript 为什么还要在 API 边界前被重新编译成 protocol transcript：`53 -> 54`
 - 想看多 Agent、workflow 与隔离：`10 -> 30 -> 34 -> 45`
 - 想看权限、安全、治理与 token 预算统一图：`05 -> 11 -> 19 -> 23 -> 32 -> 37 -> 50 -> 51`
 - 想看安全为什么更像输入边界控制平面而不是事后检查：`19 -> 23 -> 50 -> 51`
