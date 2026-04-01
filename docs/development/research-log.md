@@ -676,6 +676,21 @@
 - `bluebook/api/23-能力平面、公开度与宿主支持矩阵.md`
 - `bluebook/api/24-命令、工具、会话、宿主与协作API全谱系.md`
 
+### T. Prompt、安全与源码质量三条母线已经收编为正式专题
+
+- prompt 魔力现在不再只按“runtime contract”抽象描述，而被进一步下沉成“角色合同、缓存结构、状态晚绑定、多 Agent 语法”四层机制。
+- 安全与 token 经济现在不再只写成两篇并列专题，而被进一步统一成“预算器”视角，明确动作空间和上下文空间是同构约束。
+- 源码质量现在不再只写成泛泛“工程先进”，而是同时写“公开镜像仍然先进的原因”和“热点大文件、测试面缺失、镜像不完整”三类真实局限。
+
+证据：
+
+- `bluebook/architecture/31-提示词合同、缓存稳定性与多Agent语法.md`
+- `bluebook/architecture/32-安全、权限、治理与Token预算统一图.md`
+- `bluebook/architecture/33-公开源码镜像的先进性、热点与技术债.md`
+- `bluebook/philosophy/21-Prompt魔力来自约束叠加与状态反馈.md`
+- `bluebook/philosophy/22-安全、成本与体验必须共用预算器.md`
+- `bluebook/philosophy/23-源码质量不是卫生而是产品能力.md`
+
 ## 下一步待办
 
 - 补 workflow engine 当前可见边界与 `LocalWorkflowTask` 实现缺口

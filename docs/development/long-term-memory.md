@@ -86,6 +86,9 @@
   - 提示词契约分层、知识注入与缓存稳定性
   - 知识层栈：CLAUDE.md、Session Memory、Auto-memory与Attachments
   - 多Agent任务对象、Mailbox与后台协作运行时
+  - 提示词合同、缓存稳定性与多Agent语法
+  - 安全、权限、治理与Token预算统一图
+  - 公开源码镜像的先进性、热点与技术债
   - 宿主实现最小闭环与恢复案例手册
   - 提示词控制、知识注入与记忆 API 手册
   - 插件、Marketplace、MCPB、LSP与Channels接入边界手册
@@ -96,6 +99,9 @@
   - Prompt 不是文本技巧而是契约分层
   - 安全与 Token 经济不是权衡而是同一优化
   - 生态成熟度必须与协议支持分开叙述
+  - Prompt魔力来自约束叠加与状态反馈
+  - 安全、成本与体验必须共用预算器
+  - 源码质量不是卫生而是产品能力
   - CLAUDE.md、记忆层与上下文注入实践
 
 ## 已确认事实
@@ -125,6 +131,9 @@
 - `navigation/` 负责读者检索，根目录主线负责判断标准，这两层不能重新混回一篇大总文
 - API 写作现在已有统一基线：先用总表型文档确定能力平面、公开度与 adapter 宽度，再进入具体专题
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
+- prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述
+- 安全、token 经济与体验本质上共用一个预算器，分别约束动作空间、上下文空间与认知噪音
+- 当前公开源码镜像的工程先进性与局限必须一起写：既要写 contract-first / runtime-first，也要写热点大文件与公开树不完整
 - `message_delta` 对已 yield assistant message 的原地写回，是 transcript 引用一致性的重要实现细节
 - plugin MCP 的动态 scope 与环境变量分层解析，说明连接治理是扩展模型的一部分，不是附加逻辑
 - Claude Code 更适合被理解成 host-integrated runtime，而不是 terminal shell
