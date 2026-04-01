@@ -56,11 +56,13 @@
 - 状态字段链：`api/17-状态消息、外部元数据与宿主消费矩阵.md` -> `api/19-SDKMessage、worker_status与external_metadata字段级对照手册.md` -> `architecture/17-双通道状态同步与外部元数据回写.md`
 - 协作链：`architecture/10-AgentTool与隔离编排.md` -> `guides/02-多Agent编排与Prompt模板.md` -> `philosophy/07-隔离优先于并发.md`
 - 分层链：`architecture/20-源码质量、分层与工程先进性.md` -> `architecture/24-services层全景与utils-heavy设计.md`
+- 恢复链：`architecture/09-会话存储记忆与回溯状态面.md` -> `architecture/25-会话持久化、TaskOutput与Sidechain恢复图.md` -> `api/20-宿主实现最小闭环与恢复案例手册.md`
+- 前台链：`architecture/04-REPL与Ink交互架构.md` -> `architecture/26-REPL前台状态机、Sticky Prompt与消息动作.md` -> `philosophy/17-前台交互不是UI皮肤而是认知控制面.md`
+- 迁移链：`philosophy/05-构建期开关、运行期开关与兼容层.md` -> `architecture/27-能力迁移、Consumer Subset与产品边界.md`
 - 事件链：`api/04-SDK消息与事件字典.md` -> `api/11-SDKMessageSchema与事件流手册.md` -> `architecture/12-ClaudeAPI与流式工具执行.md` -> `philosophy/06-状态优先于对话.md`
 - 连接链：`api/03-MCP与远程传输.md` -> `api/12-MCP配置与连接状态机.md` -> `architecture/03-扩展能力与远程架构.md` -> `philosophy/08-统一配置语言优于扩展孤岛.md`
 - 策略链：`architecture/05-权限系统与安全状态机.md` -> `architecture/11-权限系统全链路与Auto Mode.md` -> `philosophy/03-安全观与边界设计.md`
 - 会话链：`architecture/09-会话存储记忆与回溯状态面.md` -> `api/09-会话与状态API手册.md` -> `philosophy/06-状态优先于对话.md`
-- 协作链：`architecture/10-AgentTool与隔离编排.md` -> `philosophy/07-隔离优先于并发.md` -> `06-第一性原理与苏格拉底反思.md`
 
 ## 按第一性原理阅读
 
@@ -82,6 +84,10 @@
 - 权限：`architecture/23-统一权限决策流水线与多路仲裁.md`
 - 分层：`architecture/24-services层全景与utils-heavy设计.md`
 - 协作：`guides/02-多Agent编排与Prompt模板.md`
+- 恢复：`architecture/25-会话持久化、TaskOutput与Sidechain恢复图.md`
+- 前台：`architecture/26-REPL前台状态机、Sticky Prompt与消息动作.md`
+- 迁移：`architecture/27-能力迁移、Consumer Subset与产品边界.md`
+- 母题：`philosophy/16-真正的设计单位不是功能，而是运行时平面.md`
 
 ## 正式主线与兼容入口
 
@@ -144,8 +150,14 @@
 - [query turn 状态机、继续语义与恢复链](architecture/22-query-turn%E7%8A%B6%E6%80%81%E6%9C%BA%E3%80%81%E7%BB%A7%E7%BB%AD%E8%AF%AD%E4%B9%89%E4%B8%8E%E6%81%A2%E5%A4%8D%E9%93%BE.md)
 - [统一权限决策流水线与多路仲裁](architecture/23-%E7%BB%9F%E4%B8%80%E6%9D%83%E9%99%90%E5%86%B3%E7%AD%96%E6%B5%81%E6%B0%B4%E7%BA%BF%E4%B8%8E%E5%A4%9A%E8%B7%AF%E4%BB%B2%E8%A3%81.md)
 - [services 层全景与 utils-heavy 设计](architecture/24-services%E5%B1%82%E5%85%A8%E6%99%AF%E4%B8%8Eutils-heavy%E8%AE%BE%E8%AE%A1.md)
+- [会话持久化、TaskOutput 与 Sidechain 恢复图](architecture/25-%E4%BC%9A%E8%AF%9D%E6%8C%81%E4%B9%85%E5%8C%96%E3%80%81TaskOutput%E4%B8%8ESidechain%E6%81%A2%E5%A4%8D%E5%9B%BE.md)
+- [REPL 前台状态机、Sticky Prompt 与消息动作](architecture/26-REPL%E5%89%8D%E5%8F%B0%E7%8A%B6%E6%80%81%E6%9C%BA%E3%80%81Sticky%20Prompt%E4%B8%8E%E6%B6%88%E6%81%AF%E5%8A%A8%E4%BD%9C.md)
+- [能力迁移、Consumer Subset 与产品边界](architecture/27-%E8%83%BD%E5%8A%9B%E8%BF%81%E7%A7%BB%E3%80%81Consumer%20Subset%E4%B8%8E%E4%BA%A7%E5%93%81%E8%BE%B9%E7%95%8C.md)
 - [SDKMessage、worker_status 与 external_metadata 字段级对照手册](api/19-SDKMessage%E3%80%81worker_status%E4%B8%8Eexternal_metadata%E5%AD%97%E6%AE%B5%E7%BA%A7%E5%AF%B9%E7%85%A7%E6%89%8B%E5%86%8C.md)
+- [宿主实现最小闭环与恢复案例手册](api/20-%E5%AE%BF%E4%B8%BB%E5%AE%9E%E7%8E%B0%E6%9C%80%E5%B0%8F%E9%97%AD%E7%8E%AF%E4%B8%8E%E6%81%A2%E5%A4%8D%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.md)
 - [多 Agent 编排与 Prompt 模板](guides/02-%E5%A4%9AAgent%E7%BC%96%E6%8E%92%E4%B8%8EPrompt%E6%A8%A1%E6%9D%BF.md)
+- [真正的设计单位不是功能，而是运行时平面](philosophy/16-%E7%9C%9F%E6%AD%A3%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%8D%95%E4%BD%8D%E4%B8%8D%E6%98%AF%E5%8A%9F%E8%83%BD%E8%80%8C%E6%98%AF%E8%BF%90%E8%A1%8C%E6%97%B6%E5%B9%B3%E9%9D%A2.md)
+- [前台交互不是 UI 皮肤，而是认知控制面](philosophy/17-%E5%89%8D%E5%8F%B0%E4%BA%A4%E4%BA%92%E4%B8%8D%E6%98%AFUI%E7%9A%AE%E8%82%A4%E8%80%8C%E6%98%AF%E8%AE%A4%E7%9F%A5%E6%8E%A7%E5%88%B6%E9%9D%A2.md)
 - [SDKMessageSchema 与事件流手册](api/11-SDKMessageSchema%E4%B8%8E%E4%BA%8B%E4%BB%B6%E6%B5%81%E6%89%8B%E5%86%8C.md)
 - [MCP 配置与连接状态机](api/12-MCP%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%BF%9E%E6%8E%A5%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 - [ClaudeAPI 与流式工具执行](architecture/12-ClaudeAPI%E4%B8%8E%E6%B5%81%E5%BC%8F%E5%B7%A5%E5%85%B7%E6%89%A7%E8%A1%8C.md)

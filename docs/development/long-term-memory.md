@@ -75,6 +75,12 @@
   - services 层全景与 utils-heavy 设计
   - SDKMessage、worker_status 与 external_metadata 字段级对照手册
   - 多 Agent 编排与 Prompt 模板
+  - 会话持久化、TaskOutput 与 Sidechain 恢复图
+  - REPL 前台状态机、Sticky Prompt 与消息动作
+  - 能力迁移、Consumer Subset 与产品边界
+  - 宿主实现最小闭环与恢复案例手册
+  - 真正的设计单位不是功能，而是运行时平面
+  - 前台交互不是 UI 皮肤，而是认知控制面
 
 ## 已确认事实
 
@@ -123,17 +129,21 @@
 - Claude Code 的宿主真相更适合按 event stream、snapshot、recovery 三层理解，而不是只按 SDK message 理解
 - `services` 更适合被理解成长生命周期 subsystem planes，`utils` 更适合被理解为 invariant kernels
 - 多 Agent prompt 的效果更适合按 runtime contract、ownership、mailbox/task bus 与隔离语义理解，而不是按措辞技巧理解
+- Claude Code 的恢复更适合按主 transcript、sidechain transcript、task output、state restore 四层理解，而不是按“会话日志”单层理解
+- Claude Code 的前台更适合被理解成认知控制面，而不是终端聊天 UI
+- Claude Code 的产品现实更适合按 build gate、runtime gate、compat shim、consumer subset 四层理解
+- Claude Code 的更高层设计单位更适合概括成 runtime planes，而不是功能清单
 
 ## 后续章节建议
 
-1. 深挖 `REPL.tsx` 的交互状态机与 message actions
+1. 深挖 workflow engine 当前可见边界与 `LocalWorkflowTask` 实现缺口
 2. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
 3. 给 bridge / direct-connect / remote-session 三类宿主路径做更细时序图
 4. 把 `SDKMessage`、control、snapshot、recovery 做成更细宿主实现 casebook
 5. 给 MCP 状态、命令 availability、控制请求做时序化视图
-6. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
-7. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、提示词面、工程面、协作面、演化面都做成清晰阅读路径
-8. 把 plugin manifest / marketplace / MCPB / LSP / channels 的产品边界继续写实
+6. 深挖 REPL 的 scroll/search/selection 时序与更多前台认知机制
+7. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
+8. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、提示词面、工程面、协作面、前台面、演化面都做成清晰阅读路径
 
 ## 编写约定
 

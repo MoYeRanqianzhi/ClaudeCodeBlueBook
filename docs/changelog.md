@@ -8,6 +8,12 @@
 - 补强主线章节《功能全景与 API 支持》《第一性原理与苏格拉底反思》，把协作接口、continue 语义、permission engine、分层解释纳入正式主线
 - 更新蓝皮书总索引、架构/API/使用专题 README，新增 Query 链、权限决策链、状态字段链、分层链
 - 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化 query runtime / permission engine / services panorama / host crosswalk / multi-agent prompt contract 这一轮结论
+- 新增会话持久化 / TaskOutput / sidechain 恢复图、REPL 前台状态机、能力迁移与产品边界三篇架构专题
+- 新增宿主实现最小闭环与恢复 casebook，补强 control/event/snapshot/recovery 四通道 API 支持
+- 新增“真正的设计单位不是功能，而是运行时平面”“前台交互不是 UI 皮肤，而是认知控制面”两篇哲学专题
+- 继续补强主线章节《设计哲学》《功能全景与 API 支持》《第一性原理与苏格拉底反思》，把 runtime plane、前台控制面、恢复分层提升为正式主线
+- 更新蓝皮书总索引、架构/API/哲学专题 README，新增恢复链、前台链、迁移链与母题入口
+- 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化恢复面 / 前台面 / 迁移面 / 哲学母题这一轮结论
 
 ## 2026-04-01
 

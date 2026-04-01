@@ -246,6 +246,28 @@ Claude Code 还有一层常被低估的正式接口面：
 - `claude-code-source-code/src/utils/sdkEventQueue.ts:1-118`
 - `claude-code-source-code/src/utils/task/sdkProgress.ts:1-35`
 
+### 2.11 恢复与持久化面
+
+Claude Code 还有一层很容易被误算进“内部实现”的正式表面：
+
+- transcript
+- sidechain transcript
+- `output_file`
+- resume / continue
+- file history / rewind
+
+这说明它暴露的不是一次性执行 API，而是：
+
+- 可恢复执行 API
+
+证据：
+
+- `claude-code-source-code/src/utils/sessionStorage.ts:1451-1545`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:456-541`
+- `claude-code-source-code/src/utils/sessionRestore.ts:99-147`
+- `claude-code-source-code/src/tasks/LocalMainSessionTask.ts:358-416`
+- `claude-code-source-code/src/utils/task/TaskOutput.ts:32-110`
+
 ## 3. API 支持不是一层，而是五层
 
 从源码看，Claude Code 的“API”至少可以拆成五层。

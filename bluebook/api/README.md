@@ -44,6 +44,7 @@
 - [Control 子类型与宿主适配矩阵](14-Control%E5%AD%90%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%AE%BF%E4%B8%BB%E9%80%82%E9%85%8D%E7%9F%A9%E9%98%B5.md)
 - [Control 协议字段对照与宿主接入样例](15-Control%E5%8D%8F%E8%AE%AE%E5%AD%97%E6%AE%B5%E5%AF%B9%E7%85%A7%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%8E%A5%E5%85%A5%E6%A0%B7%E4%BE%8B.md)
 - [SDK 消息与 Control 闭环对照表](16-SDK%E6%B6%88%E6%81%AF%E4%B8%8EControl%E9%97%AD%E7%8E%AF%E5%AF%B9%E7%85%A7%E8%A1%A8.md)
+- [宿主实现最小闭环与恢复案例手册](20-%E5%AE%BF%E4%B8%BB%E5%AE%9E%E7%8E%B0%E6%9C%80%E5%B0%8F%E9%97%AD%E7%8E%AF%E4%B8%8E%E6%81%A2%E5%A4%8D%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.md)
 
 建议和蓝皮书主线搭配阅读：
 
@@ -61,3 +62,5 @@
 - 需要分清 schema 全集、bridge 子集、direct-connect 子集、remote-session 子集时再看 `14 -> ../architecture/14 -> ../philosophy/10`
 - 需要字段级 payload 对照、最小 NDJSON 样例与宿主请求封套时再看 `15 -> ../architecture/15 -> ../philosophy/11`
 - 需要把 request/response 和 follow-on SDKMessage 一起看成闭环时再看 `16 -> ../architecture/16 -> ../philosophy/12`
+- 需要按 host implementer 视角把 control、event stream、snapshot、recovery 一起吃下时再看 `19 -> 20 -> ../architecture/25`
+- 需要把 session API、resume 恢复、`output_file`、host snapshot 一起看成完整状态接入面时再看 `09 -> 19 -> 20 -> ../architecture/25`

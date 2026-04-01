@@ -301,6 +301,55 @@
 - `claude-code-source-code/src/utils/messages.ts:3457-3490`
 - `claude-code-source-code/src/utils/swarm/inProcessRunner.ts:871-1043`
 
+### T. Recovery is a multi-surface persistence system, not transcript replay
+
+- Claude Code 的恢复链至少分成主 transcript、sidechain transcript、task output、state restore 四层。
+- `TaskOutput` 负责长输出与进度观察，不等于 transcript。
+- `loadConversationForResume(...)` 与 `restoreSessionStateFromLog(...)` 做的是 runtime re-materialization，而不是只读回消息。
+- v1 ingress、v2 internal-events、本地 JSONL 最终都服务同一恢复面。
+
+证据：
+
+- `claude-code-source-code/src/utils/sessionStorage.ts:1451-1545`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:456-541`
+- `claude-code-source-code/src/utils/sessionRestore.ts:99-147`
+- `claude-code-source-code/src/tasks/LocalMainSessionTask.ts:358-416`
+- `claude-code-source-code/src/utils/task/TaskOutput.ts:32-110`
+- `claude-code-source-code/src/utils/task/TaskOutput.ts:257-388`
+- `claude-code-source-code/src/cli/transports/ccrClient.ts:789-854`
+
+### U. REPL front-end is a cognitive control plane, not a chat shell
+
+- transcript mode 不是历史视图，而是 pager/runtime。
+- sticky prompt、search、message actions、teammate view、queued commands 共同组成前台状态机。
+- 前台主语切换与锚点保持，是长会话和多 Agent 可用性的核心部分。
+
+证据：
+
+- `claude-code-source-code/src/screens/REPL.tsx:4183-4595`
+- `claude-code-source-code/src/components/Messages.tsx:229-320`
+- `claude-code-source-code/src/components/FullscreenLayout.tsx:1-120`
+- `claude-code-source-code/src/components/VirtualMessageList.tsx:43-99`
+- `claude-code-source-code/src/components/VirtualMessageList.tsx:289-767`
+- `claude-code-source-code/src/components/messageActions.tsx:1-176`
+
+### V. Product reality is shaped by migration layers and consumer subsets
+
+- Claude Code 的能力边界至少要按 build-time gate、runtime gate、compat shim、consumer subset 四层理解。
+- marketplace、plugin manifest、MCPB、LSP、channels 都属于扩展/产品边界，但不处于同一成熟度和同一职责层。
+- schema 存在、安装流存在、adapter 消费存在，不等于同一条产品能力链已经完整打通。
+
+证据：
+
+- `claude-code-source-code/src/entrypoints/cli.tsx:18-26`
+- `claude-code-source-code/src/bridge/bridgeEnabled.ts:120-202`
+- `claude-code-source-code/src/services/mcp/channelNotification.ts:1-220`
+- `claude-code-source-code/src/services/mcp/channelAllowlist.ts:1-67`
+- `claude-code-source-code/src/utils/plugins/marketplaceManager.ts:1-169`
+- `claude-code-source-code/src/utils/plugins/schemas.ts:1-180`
+- `claude-code-source-code/src/utils/plugins/mcpbHandler.ts:1-220`
+- `claude-code-source-code/src/services/lsp/manager.ts:1-180`
+
 证据:
 
 - `claude-code-source-code/src/cli/structuredIO.ts:362-429`
@@ -479,6 +528,9 @@
 
 ## 下一步待办
 
+- 补 workflow engine 当前可见边界与 `LocalWorkflowTask` 实现缺口
+- 补 memory / CLAUDE.md / scratchpad / durable knowledge 的统一知识层专题
+- 补 REPL 更细的 scroll/search/selection 时序图
 - 补 `SDKMessage`、control、snapshot、recovery 四面统一的宿主实现 casebook
 - 补 `query.ts` / `sessionStorage.ts` / `REPL.tsx` / `replBridge.ts` 四个热点文件的债务与分层图
 - 补 bridge / direct-connect / remote-session 三类宿主路径的更细时序图
@@ -511,3 +563,4 @@
 - request / response / follow-on message 的闭环主线已经建立，但仍未把所有 subtype 做成统一 casebook；后续若继续深化，应防止不同闭环粒度混写。
 - 运行时真相的双通道主线已经建立，但仍未把每个状态项都标清“时间线 / 快照 / 恢复 / consumer subset”四层；后续若继续深化，应防止再次退回单通道叙述。
 - `query.ts`、`sessionStorage.ts`、`REPL.tsx`、`replBridge.ts` 等热点文件依然很大；后续若继续写“源码先进性”，必须同时写基础设施优点与热点文件债务。
+- workflow engine 的类型入口和 transcript 归档语义当前可见，但主体实现未完整展开；后续必须持续区分“已可证实的 task 维度”与“尚未完全展开的引擎细节”。

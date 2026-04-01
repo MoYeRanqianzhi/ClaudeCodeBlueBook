@@ -26,6 +26,9 @@
 22. [query turn 状态机、继续语义与恢复链](22-query-turn%E7%8A%B6%E6%80%81%E6%9C%BA%E3%80%81%E7%BB%A7%E7%BB%AD%E8%AF%AD%E4%B9%89%E4%B8%8E%E6%81%A2%E5%A4%8D%E9%93%BE.md)
 23. [统一权限决策流水线与多路仲裁](23-%E7%BB%9F%E4%B8%80%E6%9D%83%E9%99%90%E5%86%B3%E7%AD%96%E6%B5%81%E6%B0%B4%E7%BA%BF%E4%B8%8E%E5%A4%9A%E8%B7%AF%E4%BB%B2%E8%A3%81.md)
 24. [services 层全景与 utils-heavy 设计](24-services%E5%B1%82%E5%85%A8%E6%99%AF%E4%B8%8Eutils-heavy%E8%AE%BE%E8%AE%A1.md)
+25. [会话持久化、TaskOutput 与 Sidechain 恢复图](25-%E4%BC%9A%E8%AF%9D%E6%8C%81%E4%B9%85%E5%8C%96%E3%80%81TaskOutput%E4%B8%8ESidechain%E6%81%A2%E5%A4%8D%E5%9B%BE.md)
+26. [REPL 前台状态机、Sticky Prompt 与消息动作](26-REPL%E5%89%8D%E5%8F%B0%E7%8A%B6%E6%80%81%E6%9C%BA%E3%80%81Sticky%20Prompt%E4%B8%8E%E6%B6%88%E6%81%AF%E5%8A%A8%E4%BD%9C.md)
+27. [能力迁移、Consumer Subset 与产品边界](27-%E8%83%BD%E5%8A%9B%E8%BF%81%E7%A7%BB%E3%80%81Consumer%20Subset%E4%B8%8E%E4%BA%A7%E5%93%81%E8%BE%B9%E7%95%8C.md)
 
 这几章和 `bluebook/` 的区别是：
 
@@ -51,3 +54,9 @@
 - 想看 `query.ts` 如何把 tool follow-up、recovery、stop hook、budget continuation 收敛成一台 turn runtime：`22`
 - 想看 permission dialog、SDK `can_use_tool`、prompt tool、classifier、sandbox 如何接成统一权限链：`23`
 - 想看为什么这个仓库 `services` 没有无限膨胀，而 `utils` 又为什么这么重：`24`
+- 想看 transcript、sidechain transcript、task output、state restore 如何一起构成恢复面：`25`
+- 想看 transcript mode、sticky prompt、search、message actions、teammate view 如何构成前台状态机：`26`
+- 想看 feature gate、compat shim、consumer subset、marketplace/MCPB/LSP/channels 的产品边界：`27`
+- 想看 transcript、sidechain transcript、task output、resume restore 如何拼成完整恢复面：`25`
+- 想看 REPL 的 transcript mode、sticky prompt、message actions、teammate view 如何构成前台控制面：`26`
+- 想看 feature gate、compat shim、consumer subset、marketplace/MCPB/LSP/channels 的真实产品边界：`27`
