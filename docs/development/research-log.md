@@ -280,6 +280,135 @@
 - `claude-code-source-code/src/utils/sessionStorage.ts:533-822`
 - `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-20`
 
+### S. Claude Code prefers object escalation over endless continuation
+
+- `compact` 主要吸收的是上下文压力，不是协作压力；`ContextSuggestions` 已经在用 token / read / memory / autocompact 信号区分这些上下文类问题。
+- `TaskCreateTool` 明确把“3 步以上、non-trivial、需要跟踪”的工作推进到 task object，说明复杂任务的正式承载体是 lifecycle object，不是继续聊天。
+- `checkTokenBudget(...)` 在接近阈值或出现 diminishing returns 时停止 continue，这意味着 token budget 不只是省 token 逻辑，也是对象升级信号。
+- `EnterWorktreeTool` 与 `createWorktreeForSession(...)` 说明 worktree 是独立 cwd / branch / resume state 的强隔离对象，不是 branch 语法糖；但产品暴露仍然要求用户显式提出 worktree。
+- `sessionStorage.ts` 对 subagent transcript、worktree-state 的持久化说明 session 的职责是恢复多对象宇宙，而不是只保存一串聊天历史。
+
+证据:
+
+- `claude-code-source-code/src/query/tokenBudget.ts:1-75`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1000-1098`
+- `claude-code-source-code/src/utils/contextSuggestions.ts:31-233`
+- `claude-code-source-code/src/Task.ts:6-121`
+- `claude-code-source-code/src/utils/task/framework.ts:31-117`
+- `claude-code-source-code/src/tools/TaskCreateTool/prompt.ts:7-49`
+- `claude-code-source-code/src/tools/EnterWorktreeTool/prompt.ts:1-36`
+- `claude-code-source-code/src/tools/EnterWorktreeTool/EnterWorktreeTool.ts:68-116`
+- `claude-code-source-code/src/utils/worktree.ts:702-770`
+- `claude-code-source-code/src/utils/sessionStorage.ts:247-285`
+- `claude-code-source-code/src/utils/sessionStorage.ts:804-822`
+- `claude-code-source-code/src/utils/sessionStorage.ts:2884-2917`
+
+### T. Prompt magic keeps descending into an explainable stability system
+
+- `promptCacheBreakDetection` 不是简单“缓存断点统计”，而是 pre-call snapshot + post-call token verification 的两阶段诊断器：先记录所有可能影响 server-side cache key 的客户端状态，再用真实 `cache_read_input_tokens` 下降验证 break 是否真的发生。
+- 它追踪的不只 system prompt 文本，还包括 tools hash、per-tool schema hash、cache_control、globalCacheStrategy、betas、effort、extraBody 等，说明 Claude Code 把 prompt 看成整条 request surface，而不是一段文案。
+- `claude.ts` 显式把 defer-loading tools 排除出 cache detection，因为这些工具不会真正进入 API prompt；这说明作者关心的是“实际发给模型的稳定性对象”，不是本地代码里潜在可见的对象。
+- `notifyCacheDeletion(...)`、`notifyCompaction(...)` 与 TTL / server-side 分流说明系统已经把“预期下降”“TTL 过期”“疑似服务端逐出”从真正 client-side break 中分离出来，prompt 失稳不再被一概写成本地 prompt 问题。
+- 更抽象地说，Claude Code 的 prompt 魔力正在从“共享前缀资产”继续升级成“可解释稳定性系统”：不仅能复用前缀，还能解释前缀为什么稳定、为什么失稳。
+
+证据:
+
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-119`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:220-433`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:437-706`
+- `claude-code-source-code/src/services/api/claude.ts:1457-1486`
+- `claude-code-source-code/src/services/api/claude.ts:2380-2391`
+- `claude-code-source-code/src/utils/toolPool.ts:55-71`
+- `claude-code-source-code/src/tools.ts:329-367`
+- `claude-code-source-code/src/query/stopHooks.ts:92-99`
+
+### U. QueryGuard turns local query state into a synchronous control plane
+
+- `QueryGuard` 不是 loading helper，而是三态 `idle / dispatching / running` 的同步状态机，并通过 `useSyncExternalStore` 暴露给 REPL，作者已明确把它定义为 local query in flight 的 single source of truth。
+- `dispatching` 这个中间态专门治理“队列刚出队、异步链还没到 onQuery”这段空窗；如果没有它，queue processor 和 submit path 都会在同一个异步 gap 里把系统误认成 idle。
+- `handlePromptSubmit` 会在 `processUserInput(...)` 前先 `reserve()`，说明系统要求“先占住运行权，再开始 await 链”，而不是等真正 query 启动后再补 loading state。
+- `tryStart()` / `end(generation)` / `forceEnd()` 把 stale finally、cancel-resubmit race 做成显式代际裁决，说明作者已经把 finally 视为潜在 stale writer，而不是天然可信的 cleanup path。
+- `useQueueProcessor` 不再拥有自己的 reservation/finally，而是完全订阅 `queryGuard`；这说明本地查询 authority 已经升级成一个局部控制协议，而不只是 util 类。
+
+证据:
+
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-104`
+- `claude-code-source-code/src/screens/REPL.tsx:897-918`
+- `claude-code-source-code/src/screens/REPL.tsx:2113-2135`
+- `claude-code-source-code/src/screens/REPL.tsx:2866-2928`
+- `claude-code-source-code/src/utils/handlePromptSubmit.ts:426-607`
+- `claude-code-source-code/src/hooks/useQueueProcessor.ts:1-59`
+
+### V. Remote failure is a layered semantics system, not “disconnect and reconnect”
+
+- `SessionsWebSocket` 已经把 close code 分成 permanent close、session-not-found limited retry、一般 reconnect 三类；这说明连接层失败不是单一布尔值，而是预算化分级。
+- `remoteBridgeCore` 把 `401` 做成 transport-semantic change：必须 refresh OAuth、重新取 remote credentials、rebuild transport、切换 epoch，而不是只换 token 继续。
+- `authRecoveryInFlight` 期间主动 drop `control_request/response/cancel/result`，说明系统宁可显式丢弃，也不接受陈旧 transport 上制造“好像发出去了”的假成功。
+- `replBridge` 在 transport permanent close 后进一步尝试 env reconnect，说明 close code 之外还有“环境级恢复”一层；`envLessBridgeConfig` 则把 connect/archive/http/heartbeat 等超时预算显式制度化。
+- `initReplBridge` 在 preflight 阶段主动避免 expired-and-unrefreshable token 继续发请求，说明失败语义还包括 fail-closed 的 guaranteed-fail path 消毒，而不是只覆盖 post-close recovery。
+
+证据:
+
+- `claude-code-source-code/src/remote/SessionsWebSocket.ts:21-36`
+- `claude-code-source-code/src/remote/SessionsWebSocket.ts:234-299`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:456-588`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:824-878`
+- `claude-code-source-code/src/bridge/replBridge.ts:887-965`
+- `claude-code-source-code/src/bridge/initReplBridge.ts:192-215`
+- `claude-code-source-code/src/cli/transports/WebSocketTransport.ts:38-58`
+- `claude-code-source-code/src/bridge/envLessBridgeConfig.ts:13-33`
+
+### W. Plugin runtime truth and editable truth must stay separate
+
+- `checkEnabledPlugins()` 明确是 authoritative enabled check，因为它基于 merged settings 处理 policy > local > project > user，再把 `--add-dir` 作为更低优先级来源合并；这意味着“当前是否启用”不是某个单一 scope 的布尔值。
+- `getPluginEditableScopes()` 则显式声明自己不是 authoritative enabled check，它解决的是“如果用户要写回，哪个 user-editable scope 拥有这个插件”；说明 editable truth 和 runtime truth 不是同一层。
+- `pluginPolicy.ts` 把 policy-blocked plugin 作为 leaf single source of truth，避免安装、启用、UI 过滤各处各写一套企业策略判断。
+- 真正的 startup 总控链路并不在 `pluginStartupCheck.ts`，而在 `REPL.tsx -> performStartupChecks -> PluginInstallationManager -> reconciler -> refresh`；`pluginStartupCheck.ts` 更像 enable/scope 计算辅助模块，而不是启动总控。
+- `installedPluginsManager.ts` 明确把 installation state 与 enablement state 分离：安装是全局资产面，scope/enablement 仍以 settings.json 为 source of truth；同时 `installed_plugins.json` 只是 persistent metadata，不等于 live session state。loader 的 cache-on-miss materialization 也不自动回写安装记录。
+- policy 也不是单轴：除了插件级 block，还有 marketplace source 级策略限制；“插件被禁”与“来源被禁”不是同一个问题。
+
+证据:
+
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-20`
+- `claude-code-source-code/src/utils/plugins/pluginStartupCheck.ts:30-71`
+- `claude-code-source-code/src/utils/plugins/pluginStartupCheck.ts:75-159`
+- `claude-code-source-code/src/utils/plugins/performStartupChecks.tsx:24-61`
+- `claude-code-source-code/src/services/plugins/PluginInstallationManager.ts:51-90`
+- `claude-code-source-code/src/utils/plugins/pluginIdentifier.ts:98-117`
+- `claude-code-source-code/src/utils/plugins/installedPluginsManager.ts:4-12`
+- `claude-code-source-code/src/utils/plugins/installedPluginsManager.ts:488-537`
+- `claude-code-source-code/src/utils/plugins/installedPluginsManager.ts:1033-1164`
+- `claude-code-source-code/src/utils/plugins/marketplaceHelpers.ts:472-520`
+
+### X. Unified first principle, multiple budget implementations
+
+- `policySettings` 在 `settings.ts` 里采用 first-source-wins（remote > HKLM/plist > file/drop-ins > HKCU），这说明它更像高阶控制平面，而不是普通 merge source。
+- `sandboxTypes` 主要承担策略契约角色，而 `sandbox-adapter` 继续把 `allowManagedDomainsOnly`、`allowManagedReadPathsOnly`、`failIfUnavailable`、`allowUnsandboxedCommands` 等写成运行时硬执行；schema 不是终点，adapter enforcement 才是边界完成点。
+- 安全模型是明显不对称的：危险 remote managed settings 触发 blocking dialog；`forceLoginOrgUUID` fail-closed；`--dangerously-skip-permissions` 只在隔离且无公网时放行。这说明治理和安全不是“越严越好”，而是在不同风险面做不同 fail-open / fail-closed 策略。
+- Claude Code 实际上不是一个总预算器，而是至少三套：工具结果对象/消息级预算、上下文 headroom/autocompact 预算、turn continuation/token target 预算。它们治理的对象和阶段不同，但共同服务于“限制无序扩张”的同一原则。
+- “省 token”最先发生在工具结果外置与聚合替换，不在 summarize 历史；`applyToolResultBudget()` 运行在 `microcompact` / `autocompact` 之前，就是这条顺序的最强证据。
+
+证据:
+
+- `claude-code-source-code/src/utils/settings/settings.ts:74-110`
+- `claude-code-source-code/src/utils/settings/settings.ts:319-343`
+- `claude-code-source-code/src/utils/settings/settings.ts:645-689`
+- `claude-code-source-code/src/entrypoints/sandboxTypes.ts:1-133`
+- `claude-code-source-code/src/utils/sandbox/sandbox-adapter.ts:152-235`
+- `claude-code-source-code/src/utils/sandbox/sandbox-adapter.ts:475-560`
+- `claude-code-source-code/src/utils/sandbox/sandbox-adapter.ts:720-752`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:1-69`
+- `claude-code-source-code/src/components/ManagedSettingsSecurityDialog/utils.ts:20-87`
+- `claude-code-source-code/src/utils/managedEnvConstants.ts:75-125`
+- `claude-code-source-code/src/utils/auth.ts:1914-1955`
+- `claude-code-source-code/src/setup.ts:400-439`
+- `claude-code-source-code/src/services/tools/toolExecution.ts:1403-1458`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:272-357`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:575-924`
+- `claude-code-source-code/src/query.ts:369-383`
+- `claude-code-source-code/src/services/compact/autoCompact.ts:33-140`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-75`
+
 证据：
 
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-519`
@@ -1569,6 +1698,200 @@
 - `claude-code-source-code/src/components/ContextVisualization.tsx:105-245`
 - `claude-code-source-code/src/components/ContextSuggestions.tsx:11-45`
 - `claude-code-source-code/src/cli/print.ts:2961-2978`
+
+### AE. 安全深线还应升级到“输入边界控制平面”
+
+- `policySettings` 最关键的作用不是“多一个 enterprise source”，而是把“谁有资格扩张运行时边界”建模成一等 authority source。
+- Claude Code 明显采用不对称安全模型：allow/allowlist/可执行 hook 这类扩权输入可以被锁到 managed source；deny 与自我限制仍允许来自本地来源。这在 sandbox、permission rules、hooks、MCP allowlist 上都能看到同构模式。
+- `sandboxTypes -> settings/types -> sdk/coreTypes -> sandbox-adapter` 说明安全边界是正式 contract 再编译成 runtime hard boundary，而不是工具内部零散判断。
+- `sandbox-adapter` 不只执行限制，还会 deny write 到 settings 文件、managed drop-ins 和 `.claude/skills`，说明 runtime boundary 还在反向保护 control plane 本身不被 agent 篡改。
+- `remoteManagedSettings` 更像策略分发与热更新通道；真正的安全边界仍在 source gating、settings merge 与 adapter enforcement。
+
+证据：
+
+- `claude-code-source-code/src/utils/settings/constants.ts:159-180`
+- `claude-code-source-code/src/utils/settings/settings.ts:319-343`
+- `claude-code-source-code/src/utils/settings/settings.ts:665-689`
+- `claude-code-source-code/src/utils/managedEnv.ts:93-135`
+- `claude-code-source-code/src/entrypoints/sandboxTypes.ts:1-133`
+- `claude-code-source-code/src/entrypoints/sdk/coreTypes.ts:1-16`
+- `claude-code-source-code/src/utils/settings/types.ts:655-655`
+- `claude-code-source-code/src/utils/permissions/permissionsLoader.ts:27-120`
+- `claude-code-source-code/src/utils/hooks/hooksConfigSnapshot.ts:9-83`
+- `claude-code-source-code/src/services/mcp/config.ts:337-360`
+- `claude-code-source-code/src/utils/settings/pluginOnlyPolicy.ts:1-58`
+- `claude-code-source-code/src/utils/sandbox/sandbox-adapter.ts:172-247`
+- `claude-code-source-code/src/utils/sandbox/sandbox-adapter.ts:743-752`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:15-60`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:321-337`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:457-550`
+- `claude-code-source-code/src/utils/settings/changeDetector.ts:437-447`
+
+### AF. Claude Code 真正在预算的是“无序自由度”
+
+- 更高一层的统一解释不是“单一预算器”，而是 Claude Code 在同时约束动作空间、权威空间、上下文空间与时间空间的无序扩张。
+- 工具过滤、`policySettings` 的 first-source-wins、memoized system sections、tool result replacement、turn continuation、cache-break explanation 这些看似分散的机制，本质上都在反对“先全暴露再事后补救”。
+- prompt 稳定性不只是性能技巧，而是运行时治理的一部分；如果 authority、tool order、sections、fork prefix 都会漂移，系统就既不安全，也不稳定，还更贵。
+- Claude Code 共享的不只是原则，也共享方法：typed decision、frozen decisions、stable prefix、explicit observability。
+- `get_context_usage` 外化 `systemPromptSections` 与 `messageBreakdown`，说明这套反扩张系统并不是内部优化，而是正式控制面真相。
+
+证据：
+
+- `claude-code-source-code/src/tools.ts:345-364`
+- `claude-code-source-code/src/utils/toolPool.ts:63-74`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1167-1259`
+- `claude-code-source-code/src/utils/settings/settings.ts:322-343`
+- `claude-code-source-code/src/utils/settings/settings.ts:675-689`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:17-50`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:272-320`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:740-772`
+- `claude-code-source-code/src/query.ts:369-383`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-75`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-315`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:437-470`
+- `claude-code-source-code/src/utils/forkedAgent.ts:47-79`
+- `claude-code-source-code/src/query/stopHooks.ts:92-99`
+- `claude-code-source-code/src/commands/btw/btw.tsx:183-210`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1353-1363`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:175-215`
+
+### AG. 源码先进性更适合压成“五种不变量治理模式”
+
+- `query.ts` 更像 query runtime 的 control-plane chokepoint，而不是单纯的大文件；预算、snip、microcompact、恢复、续轮都被明确排进一条主链。
+- `QueryGuard`、`tokenBudget` 与 `state.transition.reason` 说明 Claude Code 偏爱 typed decision / typed transition，而不是让复杂状态继续留在布尔泥团里。
+- `normalizeMessagesForAPI()` 与 `claude.ts` 请求出口承担的是 authoritative surface，负责统一合法化 API 输入与最终 wire shape。
+- `QueryGuard` generation、防 orphan tool_use、frozen replacement fate 等都说明它按 race-aware runtime 写代码，默认真实世界会中断、重试、fallback、resume。
+- `Tool.ts` 把模型序列化、UI 渲染、搜索文本、自动分类输入拆开，说明它理解的“工具”是 contract，而不是一个 `call()`。
+
+证据：
+
+- `claude-code-source-code/src/query.ts:265-420`
+- `claude-code-source-code/src/query.ts:1190-1235`
+- `claude-code-source-code/src/query.ts:1700-1735`
+- `claude-code-source-code/src/query/config.ts:1-43`
+- `claude-code-source-code/src/query/deps.ts:1-37`
+- `claude-code-source-code/src/QueryEngine.ts:176-210`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-108`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-75`
+- `claude-code-source-code/src/utils/messages.ts:1989-2045`
+- `claude-code-source-code/src/utils/messages.ts:5200-5225`
+- `claude-code-source-code/src/Tool.ts:158-220`
+- `claude-code-source-code/src/Tool.ts:362-390`
+- `claude-code-source-code/src/Tool.ts:557-595`
+- `claude-code-source-code/src/Tool.ts:717-750`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:835-924`
+
+### AH. Prompt 魔力更像“上下文准入编译器”
+
+- 更强的表述不是“稳定前缀”，而是 Claude Code 有一条上下文准入编译链：先定来源优先级，再分 static/dynamic block，再锁定 schema/header 字节，最后在 compaction 时保住意图连续性。
+- `buildEffectiveSystemPrompt()`、dynamic boundary、`splitSysPromptPrefix()` 与 `buildSystemPromptBlocks()` 共同说明 prompt 是编译产物，不是字符串拼接结果。
+- `toolSchemaCache` 与 sticky beta headers 说明 prompt 稳定性真正追求的是 byte-level determinism，而不只是语义大致相同。
+- `yoloClassifier` 复用 `CLAUDE.md` 前缀给权限分类器，说明安全判断也必须共享同一上下文准入真相。
+- compaction 在保留 primary intent / current work / next step 的同时，去掉会重注入的 attachments，并在 context-collapse 接管时主动让路，说明“省 token”不能破坏语义连续性。
+
+证据：
+
+- `claude-code-source-code/src/utils/settings/settings.ts:798-812`
+- `claude-code-source-code/src/utils/settings/types.ts:542-548`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1417-1445`
+- `claude-code-source-code/src/utils/systemPrompt.ts:25-56`
+- `claude-code-source-code/src/constants/prompts.ts:343-355`
+- `claude-code-source-code/src/constants/prompts.ts:492-510`
+- `claude-code-source-code/src/utils/api.ts:300-340`
+- `claude-code-source-code/src/utils/toolSchemaCache.ts:1-20`
+- `claude-code-source-code/src/services/api/claude.ts:1405-1418`
+- `claude-code-source-code/src/services/api/claude.ts:3213-3234`
+- `claude-code-source-code/src/utils/permissions/yoloClassifier.ts:442-470`
+- `claude-code-source-code/src/services/compact/prompt.ts:55-95`
+- `claude-code-source-code/src/services/compact/compact.ts:120-215`
+- `claude-code-source-code/src/services/compact/autoCompact.ts:200-220`
+
+### AI. Prompt 组装深线还应升级到“稳定前缀 + 动态尾部 + 旁路 fork”
+
+- `SYSTEM_PROMPT_DYNAMIC_BOUNDARY` 不是注释，而是 prompt cache topology 的正式边界；system prompt 的 static/dynamic 分层被源码显式固定。
+- `systemPromptSection` / `DANGEROUS_uncachedSystemPromptSection` 说明 section cache 属于 prompt runtime 本体；稳定是默认，破坏稳定必须被显式承认。
+- built-in tool 前缀、session-stable tool schema、deferred tools discovered set 共同说明“工具暴露”也是 prompt assembly 的一部分，而不是另一个独立子系统。
+- 高波动信息被不断迁出主 prompt/tool description，改成 deferred/agent/MCP delta attachments，本质是在把变化从前缀搬到尾部。
+- `CacheSafeParams`、prompt suggestion、speculation、session memory 说明 Claude Code 真正依赖的是 prefix asset network：辅助智能旁路 fork，并复用主线程前缀，而不是继续膨胀主循环。
+- `normalizeMessagesForAPI()` 说明模型最终看到的是 protocol transcript，而不是 UI transcript；prompt assembly 的最后一步是协议化整形。
+
+证据：
+
+- `claude-code-source-code/src/constants/prompts.ts:104-114`
+- `claude-code-source-code/src/constants/prompts.ts:343-355`
+- `claude-code-source-code/src/constants/prompts.ts:492-510`
+- `claude-code-source-code/src/constants/prompts.ts:560-578`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:17-50`
+- `claude-code-source-code/src/utils/systemPrompt.ts:25-56`
+- `claude-code-source-code/src/utils/api.ts:300-340`
+- `claude-code-source-code/src/tools.ts:345-364`
+- `claude-code-source-code/src/utils/toolSchemaCache.ts:1-20`
+- `claude-code-source-code/src/utils/attachments.ts:1448-1495`
+- `claude-code-source-code/src/utils/mcpInstructionsDelta.ts:20-52`
+- `claude-code-source-code/src/utils/toolSearch.ts:385-430`
+- `claude-code-source-code/src/utils/toolSearch.ts:540-560`
+- `claude-code-source-code/src/query.ts:1001-1001`
+- `claude-code-source-code/src/query/stopHooks.ts:92-99`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-220`
+- `claude-code-source-code/src/services/PromptSuggestion/speculation.ts:402-420`
+- `claude-code-source-code/src/services/PromptSuggestion/speculation.ts:740-759`
+- `claude-code-source-code/src/services/SessionMemory/sessionMemory.ts:303-325`
+- `claude-code-source-code/src/utils/messages.ts:1989-2045`
+
+### AJ. Claude Code 接受“轻微陈旧”，来换取系统级确定性
+
+- `getSessionStartDate`、memoized `getSystemContext/getUserContext` 说明 Claude Code 不把“每次都最新”当成最高目标，而把“会话内前缀尽量稳定”放在更高优先级。
+- section cache 与 sticky beta headers 共同说明：系统默认接受受控陈旧，拒绝无规律漂移。
+- 这种轻微陈旧并不是放弃更新，而是配合 delta attachments 把变化迁到尾部，以更便宜的方式回写。
+- 从 prompt 运行时看，这是一条非常成熟的取舍：与其追求所有信息绝对实时，不如先保证跨轮一致性、fork 复用性与 cache 可解释性。
+
+证据：
+
+- `claude-code-source-code/src/constants/common.ts:17-24`
+- `claude-code-source-code/src/context.ts:116-165`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:17-50`
+- `claude-code-source-code/src/utils/toolSchemaCache.ts:1-20`
+- `claude-code-source-code/src/services/api/claude.ts:1398-1418`
+- `claude-code-source-code/src/services/api/claude.ts:1460-1478`
+- `claude-code-source-code/src/services/api/claude.ts:1640-1674`
+- `claude-code-source-code/src/utils/attachments.ts:1448-1495`
+- `claude-code-source-code/src/utils/mcpInstructionsDelta.ts:20-52`
+
+### AK. Prompt 运行时并不会把 UI transcript 直接喂给模型
+
+- `normalizeMessagesForAPI()` 本质上是 protocol compiler：attachment reorder、virtual message strip、targeted strip、tool_reference boundary 注入、adjacent user merge、tool_result hoist 都发生在 API 边界前。
+- attachment-origin 内容会被统一包成 `<system-reminder>`，随后再尽量 smoosh 进最后一个 `tool_result`，说明 runtime 在主动区分“辅助上下文”和“真实用户输入”。
+- tool_reference 的边界注入与 sibling 迁移说明 Claude Code 在处理的是 server-side prompt 语义，而不是前台显示语义。
+- `extractDiscoveredToolNames(messages)` 说明 protocol transcript 不只是重放历史，还承担 deferred tool 暴露的记忆功能。
+- 结论应升级为：UI transcript 服务人类可见真相，protocol transcript 服务模型侧协议真相；二者相关，但不相同。
+
+证据：
+
+- `claude-code-source-code/src/utils/messages.ts:1760-1858`
+- `claude-code-source-code/src/utils/messages.ts:1989-2045`
+- `claude-code-source-code/src/utils/messages.ts:2130-2195`
+- `claude-code-source-code/src/utils/messages.ts:2440-2485`
+- `claude-code-source-code/src/utils/messages.ts:5200-5225`
+- `claude-code-source-code/src/utils/toolSearch.ts:540-560`
+- `claude-code-source-code/src/services/api/claude.ts:1145-1175`
+
+### AL. Claude Code 偏爱渐进暴露，而不是全量声明
+
+- `ToolSearch + deferred tools` 说明能力可以先存在，但不必先全量暴露给模型；运行时更偏爱“发现 -> 回填”闭环。
+- `toolSchemaCache` 与 delta attachments 说明即使能力要变化，也尽量把变化留在尾部或增量，而不是主前缀。
+- `strictPluginOnlyCustomization`、`allowManagedPermissionRulesOnly` 说明这种“先限制模型可见世界”也发生在 authority/source 层，而不只发生在 tool 层。
+- 这条线的更强哲学表述应是：先限制模型可见世界，再要求模型聪明；否则安全、token、cache、治理四条线会同时变差。
+
+证据：
+
+- `claude-code-source-code/src/utils/toolSchemaCache.ts:1-20`
+- `claude-code-source-code/src/utils/toolSearch.ts:385-430`
+- `claude-code-source-code/src/utils/toolSearch.ts:540-560`
+- `claude-code-source-code/src/services/api/claude.ts:1145-1175`
+- `claude-code-source-code/src/utils/attachments.ts:1448-1495`
+- `claude-code-source-code/src/utils/mcpInstructionsDelta.ts:20-52`
+- `claude-code-source-code/src/utils/settings/types.ts:542-548`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1417-1445`
 
 ### Z. 入口索引层必须被当成正式产物，而不是维护附录
 

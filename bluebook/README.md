@@ -22,6 +22,12 @@
 - `bluebook/risk/`：账号治理、风控、远程控制与误伤处置。
 - `docs/`：持久化记忆与开发文档，不承载蓝皮书正文。
 
+## 规范入口
+
+- 规范主线入口是 `README.md + 00-08`
+- `00-总览.md`、`00-蓝皮书总览.md`、`01-源码总地图.md` 作为兼容别名页保留，不再承担规范主线职责
+- 目录治理说明见 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
+
 ## 主线阅读
 
 1. [00-导读](00-%E5%AF%BC%E8%AF%BB.md)
@@ -49,6 +55,7 @@
 - 知识层与 `CLAUDE.md` 实践继续读 [guides/03-CLAUDE.md、记忆层与上下文注入实践](guides/03-CLAUDE.md%E3%80%81%E8%AE%B0%E5%BF%86%E5%B1%82%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5%E5%AE%9E%E8%B7%B5.md)
 - 想把复杂任务压缩成稳定方法，再读 [guides/06-第一性原理实践：目标、预算、对象、边界与回写](guides/06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E5%AE%9E%E8%B7%B5%EF%BC%9A%E7%9B%AE%E6%A0%87%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E8%BE%B9%E7%95%8C%E4%B8%8E%E5%9B%9E%E5%86%99.md)
 - 想先观测预算再调 prompt / tools / memory，再读 [guides/07-用Context Usage与状态回写调优Prompt和预算](guides/07-%E7%94%A8Context%20Usage%E4%B8%8E%E7%8A%B6%E6%80%81%E5%9B%9E%E5%86%99%E8%B0%83%E4%BC%98Prompt%E5%92%8C%E9%A2%84%E7%AE%97.md)
+- 想知道什么时候该继续当前 session、什么时候该升级成 task / worktree / compact，再读 [guides/08-如何根据预算、阻塞与风险选择session、task、worktree与compact](guides/08-%E5%A6%82%E4%BD%95%E6%A0%B9%E6%8D%AE%E9%A2%84%E7%AE%97%E3%80%81%E9%98%BB%E5%A1%9E%E4%B8%8E%E9%A3%8E%E9%99%A9%E9%80%89%E6%8B%A9session%E3%80%81task%E3%80%81worktree%E4%B8%8Ecompact.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -66,15 +73,15 @@
 
 ### 5. 想研究安全、风控与治理
 
-- 产品内安全先读 `architecture/05 -> architecture/11 -> architecture/19 -> architecture/32 -> architecture/37`
-- 哲学收束看 `philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/27 -> philosophy/31`
+- 产品内安全先读 `architecture/05 -> architecture/11 -> architecture/19 -> architecture/32 -> architecture/37 -> architecture/50 -> architecture/51`
+- 哲学收束看 `philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/27 -> philosophy/31 -> philosophy/37 -> philosophy/38`
 - 平台风控与账号治理读 [risk/README](risk/README.md)
 
 ### 6. 想研究源码结构与工程先进性
 
 - 先读 `01 -> 03 -> 05`
-- 再读 `api/30 -> api/34 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38 -> architecture/40 -> architecture/41 -> architecture/44`
-- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/17 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29 -> philosophy/32`
+- 再读 `api/30 -> api/34 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38 -> architecture/40 -> architecture/41 -> architecture/44 -> architecture/47 -> architecture/52`
+- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/17 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29 -> philosophy/32 -> philosophy/34 -> philosophy/39`
 
 ## 按专题链速查
 
@@ -119,6 +126,12 @@
 - 失败语义链：`api/31 -> architecture/40 -> philosophy/29`
 - 预算观测链：`api/32 -> architecture/37 -> architecture/43 -> philosophy/31`
 - 单一真相入口链：`api/34 -> architecture/44 -> philosophy/32`
+- 对象升级链：`06 -> architecture/30 -> architecture/45 -> guides/08 -> philosophy/25`
+- 远程失败链：`api/33 -> architecture/16 -> architecture/48 -> philosophy/11 -> philosophy/35`
+- 插件真相链：`api/27 -> api/34 -> architecture/49 -> philosophy/20 -> philosophy/36`
+- 边界编译链：`architecture/19 -> architecture/50 -> architecture/51 -> philosophy/37 -> philosophy/38`
+- Prompt 稳定链：`architecture/31 -> architecture/46 -> architecture/53 -> philosophy/33 -> philosophy/39 -> philosophy/40`
+- 前后台 transcript 链：`architecture/35 -> architecture/54 -> philosophy/26 -> philosophy/41`
 
 ## 按第一性原理阅读
 
@@ -129,15 +142,15 @@
 - 协作：`architecture/10` -> `architecture/30` -> `architecture/34` -> `guides/02`
 - 宿主：`api/13` -> `architecture/13` -> `philosophy/09`
 - 恢复：`architecture/06` -> `architecture/16` -> `architecture/25`
-- 预算：`architecture/21` -> `architecture/32` -> `architecture/37` -> `philosophy/22`
-- 治理：`04` -> `api/28` -> `guides/04` -> `guides/05` -> `philosophy/27` -> `risk/README`
+- 预算：`architecture/21` -> `architecture/32` -> `architecture/37` -> `architecture/50` -> `philosophy/22` -> `philosophy/37` -> `philosophy/38`
+- 治理：`04` -> `api/28` -> `guides/04` -> `guides/05` -> `architecture/50` -> `architecture/51` -> `philosophy/27` -> `philosophy/38` -> `risk/README`
 - 目录拓扑：`05` -> `api/23` -> `api/29` -> `api/30`
 
 ## 按问题阅读
 
 ### 为什么 prompt 看起来有魔力
 
-- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30`
+- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> architecture/46 -> architecture/53 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30 -> philosophy/33 -> philosophy/38 -> philosophy/39 -> philosophy/40`
 
 ### 为什么它不像普通 IDE 插件
 
@@ -149,11 +162,35 @@
 
 ### 为什么复杂任务不该继续写成多轮聊天
 
-- `06 -> architecture/30 -> architecture/34 -> guides/06 -> philosophy/25`
+- `06 -> architecture/30 -> architecture/34 -> architecture/45 -> guides/06 -> guides/08 -> philosophy/25`
 
 ### 为什么安全和 token 经济要一起看
 
-- `03 -> architecture/19 -> architecture/21 -> architecture/32 -> architecture/37 -> philosophy/03 -> philosophy/19 -> philosophy/22`
+- `03 -> architecture/19 -> architecture/21 -> architecture/32 -> architecture/37 -> architecture/50 -> architecture/51 -> philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/37 -> philosophy/38`
+
+### 为什么安全不是事后检查而是输入边界控制平面
+
+- `03 -> architecture/19 -> architecture/23 -> architecture/50 -> architecture/51 -> philosophy/27 -> philosophy/38`
+
+### 为什么 prompt 稳定性不是性能技巧而是运行时治理
+
+- `06 -> architecture/31 -> architecture/39 -> architecture/46 -> architecture/50 -> philosophy/30 -> philosophy/33 -> philosophy/38 -> philosophy/39`
+
+### 为什么 Claude Code 的 prompt 更像上下文准入编译器
+
+- `07 -> architecture/28 -> architecture/39 -> architecture/46 -> architecture/53 -> philosophy/18 -> philosophy/30 -> philosophy/39 -> philosophy/40`
+
+### 为什么 Claude Code 宁可接受轻微陈旧，也要换取系统级确定性
+
+- `architecture/39 -> architecture/53 -> philosophy/33 -> philosophy/39 -> philosophy/40`
+
+### 为什么模型看到的 transcript 不等于界面上看到的 transcript
+
+- `architecture/53 -> architecture/54 -> philosophy/26 -> philosophy/30 -> philosophy/41`
+
+### 为什么 Claude Code 偏爱渐进暴露，而不是全量声明
+
+- `architecture/51 -> architecture/53 -> philosophy/38 -> philosophy/41`
 
 ### 为什么宿主接入不能只看 `query(prompt)`
 
@@ -167,9 +204,14 @@
 
 - `05 -> api/24 -> api/29 -> api/30 -> architecture/24 -> architecture/38`
 
+### 为什么高级工程不在功能数量，而在不变量治理
+
+- `01 -> api/30 -> architecture/20 -> architecture/40 -> architecture/41 -> architecture/47 -> architecture/52 -> philosophy/23 -> philosophy/29 -> philosophy/39`
+
 ### 想按深度专题而不是按目录来读
 
 - 先读 [navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理](navigation/03-%E6%B7%B1%E5%BA%A6%E4%B8%93%E9%A2%98%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E5%BA%95%E7%9B%98%E4%B8%8E%E6%B2%BB%E7%90%86.md)
+- 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
 
@@ -179,9 +221,17 @@
 
 - `guides/07 -> api/32 -> architecture/43 -> philosophy/22 -> philosophy/31`
 
+### 为什么远程失败不该写成“断线重连”
+
+- `api/33 -> architecture/16 -> architecture/48 -> philosophy/11 -> philosophy/35`
+
 ### 为什么单一真相入口比多处半真相实现更可靠
 
 - `api/34 -> architecture/41 -> architecture/44 -> philosophy/28 -> philosophy/32`
+
+### 为什么插件系统不能只看一个 enabled 开关
+
+- `api/27 -> api/34 -> architecture/49 -> philosophy/20 -> philosophy/36`
 
 ## 专题入口
 
@@ -199,6 +249,7 @@
 - [能力全集、公开度与成熟度矩阵](08-%E8%83%BD%E5%8A%9B%E5%85%A8%E9%9B%86%E3%80%81%E5%85%AC%E5%BC%80%E5%BA%A6%E4%B8%8E%E6%88%90%E7%86%9F%E5%BA%A6%E7%9F%A9%E9%98%B5.md)
 - [第一性原理阅读地图](navigation/01-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E9%98%85%E8%AF%BB%E5%9C%B0%E5%9B%BE.md)
 - [能力、API与治理检索图](navigation/02-%E8%83%BD%E5%8A%9B%E3%80%81API%E4%B8%8E%E6%B2%BB%E7%90%86%E6%A3%80%E7%B4%A2%E5%9B%BE.md)
+- [目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 - [提示词控制、知识注入与记忆 API 手册](api/21-%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%8E%A7%E5%88%B6%E3%80%81%E7%9F%A5%E8%AF%86%E6%B3%A8%E5%85%A5%E4%B8%8E%E8%AE%B0%E5%BF%86API%E6%89%8B%E5%86%8C.md)
 - [插件、Marketplace、MCPB、LSP与Channels接入边界手册](api/22-%E6%8F%92%E4%BB%B6%E3%80%81Marketplace%E3%80%81MCPB%E3%80%81LSP%E4%B8%8EChannels%E6%8E%A5%E5%85%A5%E8%BE%B9%E7%95%8C%E6%89%8B%E5%86%8C.md)
 - [能力平面、公开度与宿主支持矩阵](api/23-%E8%83%BD%E5%8A%9B%E5%B9%B3%E9%9D%A2%E3%80%81%E5%85%AC%E5%BC%80%E5%BA%A6%E4%B8%8E%E5%AE%BF%E4%B8%BB%E6%94%AF%E6%8C%81%E7%9F%A9%E9%98%B5.md)
@@ -208,6 +259,7 @@
 - [插件协议全生命周期：Manifest、Marketplace、Options、MCPB与Reload](api/27-%E6%8F%92%E4%BB%B6%E5%8D%8F%E8%AE%AE%E5%85%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%EF%BC%9AManifest%E3%80%81Marketplace%E3%80%81Options%E3%80%81MCPB%E4%B8%8EReload.md)
 - [治理型API：Channels、Context Usage与Settings三重真相](api/28-%E6%B2%BB%E7%90%86%E5%9E%8BAPI%EF%BC%9AChannels%E3%80%81Context%20Usage%E4%B8%8ESettings%E4%B8%89%E9%87%8D%E7%9C%9F%E7%9B%B8.md)
 - [动态能力暴露、裁剪链与运行时可见性](api/29-%E5%8A%A8%E6%80%81%E8%83%BD%E5%8A%9B%E6%9A%B4%E9%9C%B2%E3%80%81%E8%A3%81%E5%89%AA%E9%93%BE%E4%B8%8E%E8%BF%90%E8%A1%8C%E6%97%B6%E5%8F%AF%E8%A7%81%E6%80%A7.md)
+- [远程恢复、401与Close Code语义手册](api/33-%E8%BF%9C%E7%A8%8B%E6%81%A2%E5%A4%8D%E3%80%81401%E4%B8%8EClose%20Code%E8%AF%AD%E4%B9%89%E6%89%8B%E5%86%8C.md)
 - [单一真相入口、权威状态面与Chokepoint手册](api/34-%E5%8D%95%E4%B8%80%E7%9C%9F%E7%9B%B8%E5%85%A5%E5%8F%A3%E3%80%81%E6%9D%83%E5%A8%81%E7%8A%B6%E6%80%81%E9%9D%A2%E4%B8%8EChokepoint%E6%89%8B%E5%86%8C.md)
 - [提示词契约分层、知识注入与缓存稳定性](architecture/28-%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%A5%91%E7%BA%A6%E5%88%86%E5%B1%82%E3%80%81%E7%9F%A5%E8%AF%86%E6%B3%A8%E5%85%A5%E4%B8%8E%E7%BC%93%E5%AD%98%E7%A8%B3%E5%AE%9A%E6%80%A7.md)
 - [知识层栈：CLAUDE.md、Session Memory、Auto-memory与Attachments](architecture/29-%E7%9F%A5%E8%AF%86%E5%B1%82%E6%A0%88%EF%BC%9ACLAUDE.md%E3%80%81Session%20Memory%E3%80%81Auto-memory%E4%B8%8EAttachments.md)
@@ -216,6 +268,17 @@
 - [安全、权限、治理与Token预算统一图](architecture/32-%E5%AE%89%E5%85%A8%E3%80%81%E6%9D%83%E9%99%90%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8EToken%E9%A2%84%E7%AE%97%E7%BB%9F%E4%B8%80%E5%9B%BE.md)
 - [公开源码镜像的先进性、热点与技术债](architecture/33-%E5%85%AC%E5%BC%80%E6%BA%90%E7%A0%81%E9%95%9C%E5%83%8F%E7%9A%84%E5%85%88%E8%BF%9B%E6%80%A7%E3%80%81%E7%83%AD%E7%82%B9%E4%B8%8E%E6%8A%80%E6%9C%AF%E5%80%BA.md)
 - [单一真相入口：mode、tool pool、state与metadata的权威面](architecture/44-%E5%8D%95%E4%B8%80%E7%9C%9F%E7%9B%B8%E5%85%A5%E5%8F%A3%EF%BC%9Amode%E3%80%81tool%20pool%E3%80%81state%E4%B8%8Emetadata%E7%9A%84%E6%9D%83%E5%A8%81%E9%9D%A2.md)
+- [对象升级而非继续对话：session、task、worktree与compact的选择机理](architecture/45-%E5%AF%B9%E8%B1%A1%E5%8D%87%E7%BA%A7%E8%80%8C%E9%9D%9E%E7%BB%A7%E7%BB%AD%E5%AF%B9%E8%AF%9D%EF%BC%9Asession%E3%80%81task%E3%80%81worktree%E4%B8%8Ecompact%E7%9A%84%E9%80%89%E6%8B%A9%E6%9C%BA%E7%90%86.md)
+- [Prompt稳定性解释层：cache-break detection的两阶段诊断器](architecture/46-Prompt%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%A7%A3%E9%87%8A%E5%B1%82%EF%BC%9Acache-break%20detection%E7%9A%84%E4%B8%A4%E9%98%B6%E6%AE%B5%E8%AF%8A%E6%96%AD%E5%99%A8.md)
+- [QueryGuard：本地查询生命周期的authoritative state machine](architecture/47-QueryGuard%EF%BC%9A%E6%9C%AC%E5%9C%B0%E6%9F%A5%E8%AF%A2%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84authoritative%20state%20machine.md)
+- [远程失败不是断线重连：401、Close Code与环境恢复的分层语义](architecture/48-%E8%BF%9C%E7%A8%8B%E5%A4%B1%E8%B4%A5%E4%B8%8D%E6%98%AF%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E%EF%BC%9A401%E3%80%81Close%20Code%E4%B8%8E%E7%8E%AF%E5%A2%83%E6%81%A2%E5%A4%8D%E7%9A%84%E5%88%86%E5%B1%82%E8%AF%AD%E4%B9%89.md)
+- [插件双真相：enabled、editable scope与policy block不能混写](architecture/49-%E6%8F%92%E4%BB%B6%E5%8F%8C%E7%9C%9F%E7%9B%B8%EF%BC%9Aenabled%E3%80%81editable%20scope%E4%B8%8Epolicy%20block%E4%B8%8D%E8%83%BD%E6%B7%B7%E5%86%99.md)
+- [PolicySettings控制平面、Sandbox契约与三套预算器](architecture/50-PolicySettings%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%E3%80%81Sandbox%E5%A5%91%E7%BA%A6%E4%B8%8E%E4%B8%89%E5%A5%97%E9%A2%84%E7%AE%97%E5%99%A8.md)
+- [安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation](architecture/51-%E5%AE%89%E5%85%A8%E5%8D%B3%E8%BE%93%E5%85%A5%E8%BE%B9%E7%95%8C%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%EF%BC%9AManaged%20Authority%E3%80%81Trusted%20Sources%E4%B8%8ERuntime%20Boundary%20Compilation.md)
+- [Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法](architecture/52-Chokepoint%E3%80%81Typed%20Decision%E3%80%81Authoritative%20Surface%E3%80%81Race-Aware%20Runtime%E4%B8%8EContract-First%EF%BC%9AClaude%20Code%E6%BA%90%E7%A0%81%E5%85%88%E8%BF%9B%E6%80%A7%E4%BA%94%E6%B3%95.md)
+- [稳定前缀、动态尾部与旁路Fork：Claude Code的Cache-Aware Prompt Assembly](architecture/53-%E7%A8%B3%E5%AE%9A%E5%89%8D%E7%BC%80%E3%80%81%E5%8A%A8%E6%80%81%E5%B0%BE%E9%83%A8%E4%B8%8E%E6%97%81%E8%B7%AFFork%EF%BC%9AClaude%20Code%E7%9A%84Cache-Aware%20Prompt%20Assembly.md)
+- [从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放](architecture/54-%E4%BB%8EUI%20Transcript%E5%88%B0Protocol%20Transcript%EF%BC%9APrompt%E4%B8%8D%E6%98%AF%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95%E7%9A%84%E7%9B%B4%E6%8E%A5%E9%87%8D%E6%94%BE.md)
+- [如何根据预算、阻塞与风险选择session、task、worktree与compact](guides/08-%E5%A6%82%E4%BD%95%E6%A0%B9%E6%8D%AE%E9%A2%84%E7%AE%97%E3%80%81%E9%98%BB%E5%A1%9E%E4%B8%8E%E9%A3%8E%E9%99%A9%E9%80%89%E6%8B%A9session%E3%80%81task%E3%80%81worktree%E4%B8%8Ecompact.md)
 - [CLAUDE.md、记忆层与上下文注入实践](guides/03-CLAUDE.md%E3%80%81%E8%AE%B0%E5%BF%86%E5%B1%82%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5%E5%AE%9E%E8%B7%B5.md)
 - [Prompt 不是文本技巧而是契约分层](philosophy/18-Prompt%E4%B8%8D%E6%98%AF%E6%96%87%E6%9C%AC%E6%8A%80%E5%B7%A7%E8%80%8C%E6%98%AF%E5%A5%91%E7%BA%A6%E5%88%86%E5%B1%82.md)
 - [安全与 Token 经济不是权衡而是同一优化](philosophy/19-%E5%AE%89%E5%85%A8%E4%B8%8EToken%E7%BB%8F%E6%B5%8E%E4%B8%8D%E6%98%AF%E6%9D%83%E8%A1%A1%E8%80%8C%E6%98%AF%E5%90%8C%E4%B8%80%E4%BC%98%E5%8C%96.md)
@@ -224,6 +287,15 @@
 - [安全、成本与体验必须共用预算器](philosophy/22-%E5%AE%89%E5%85%A8%E3%80%81%E6%88%90%E6%9C%AC%E4%B8%8E%E4%BD%93%E9%AA%8C%E5%BF%85%E9%A1%BB%E5%85%B1%E7%94%A8%E9%A2%84%E7%AE%97%E5%99%A8.md)
 - [源码质量不是卫生而是产品能力](philosophy/23-%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E4%B8%8D%E6%98%AF%E5%8D%AB%E7%94%9F%E8%80%8C%E6%98%AF%E4%BA%A7%E5%93%81%E8%83%BD%E5%8A%9B.md)
 - [单一真相入口优于多处半真相实现](philosophy/32-%E5%8D%95%E4%B8%80%E7%9C%9F%E7%9B%B8%E5%85%A5%E5%8F%A3%E4%BC%98%E4%BA%8E%E5%A4%9A%E5%A4%84%E5%8D%8A%E7%9C%9F%E7%9B%B8%E5%AE%9E%E7%8E%B0.md)
+- [可解释稳定性比神秘秘诀更接近Prompt魔力](philosophy/33-%E5%8F%AF%E8%A7%A3%E9%87%8A%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%AF%94%E7%A5%9E%E7%A7%98%E7%A7%98%E8%AF%80%E6%9B%B4%E6%8E%A5%E8%BF%91Prompt%E9%AD%94%E5%8A%9B.md)
+- [控制平面先于加载表现](philosophy/34-%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%E5%85%88%E4%BA%8E%E5%8A%A0%E8%BD%BD%E8%A1%A8%E7%8E%B0.md)
+- [显式远程失败优于模糊在线状态](philosophy/35-%E6%98%BE%E5%BC%8F%E8%BF%9C%E7%A8%8B%E5%A4%B1%E8%B4%A5%E4%BC%98%E4%BA%8E%E6%A8%A1%E7%B3%8A%E5%9C%A8%E7%BA%BF%E7%8A%B6%E6%80%81.md)
+- [安装状态、启用状态与策略状态必须分层叙述](philosophy/36-%E5%AE%89%E8%A3%85%E7%8A%B6%E6%80%81%E3%80%81%E5%90%AF%E7%94%A8%E7%8A%B6%E6%80%81%E4%B8%8E%E7%AD%96%E7%95%A5%E7%8A%B6%E6%80%81%E5%BF%85%E9%A1%BB%E5%88%86%E5%B1%82%E5%8F%99%E8%BF%B0.md)
+- [统一第一性原理不等于单一预算实现](philosophy/37-%E7%BB%9F%E4%B8%80%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8D%E7%AD%89%E4%BA%8E%E5%8D%95%E4%B8%80%E9%A2%84%E7%AE%97%E5%AE%9E%E7%8E%B0.md)
+- [安全、治理、Token与Prompt稳定性本质上是同一收口问题](philosophy/38-%E5%AE%89%E5%85%A8%E3%80%81%E6%B2%BB%E7%90%86%E3%80%81Token%E4%B8%8EPrompt%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%9C%AC%E8%B4%A8%E4%B8%8A%E6%98%AF%E5%90%8C%E4%B8%80%E6%94%B6%E5%8F%A3%E9%97%AE%E9%A2%98.md)
+- [治理必须落到字节级确定性：上下文准入优于功能堆叠](philosophy/39-%E6%B2%BB%E7%90%86%E5%BF%85%E9%A1%BB%E8%90%BD%E5%88%B0%E5%AD%97%E8%8A%82%E7%BA%A7%E7%A1%AE%E5%AE%9A%E6%80%A7%EF%BC%9A%E4%B8%8A%E4%B8%8B%E6%96%87%E5%87%86%E5%85%A5%E4%BC%98%E4%BA%8E%E5%8A%9F%E8%83%BD%E5%A0%86%E5%8F%A0.md)
+- [允许轻微陈旧，换取系统级确定性](philosophy/40-%E5%85%81%E8%AE%B8%E8%BD%BB%E5%BE%AE%E9%99%88%E6%97%A7%EF%BC%8C%E6%8D%A2%E5%8F%96%E7%B3%BB%E7%BB%9F%E7%BA%A7%E7%A1%AE%E5%AE%9A%E6%80%A7.md)
+- [渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明](philosophy/41-%E6%B8%90%E8%BF%9B%E6%9A%B4%E9%9C%B2%E4%BC%98%E4%BA%8E%E5%85%A8%E9%87%8F%E5%A3%B0%E6%98%8E%EF%BC%9A%E5%85%88%E9%99%90%E5%88%B6%E6%A8%A1%E5%9E%8B%E5%8F%AF%E8%A7%81%E4%B8%96%E7%95%8C%EF%BC%8C%E5%86%8D%E8%A6%81%E6%B1%82%E6%A8%A1%E5%9E%8B%E8%81%AA%E6%98%8E.md)
 - [信号融合、连续性断裂与“像被封了”的生成机制](risk/24-%E4%BF%A1%E5%8F%B7%E8%9E%8D%E5%90%88%E3%80%81%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%96%AD%E8%A3%82%E4%B8%8E%E2%80%9C%E5%83%8F%E8%A2%AB%E5%B0%81%E4%BA%86%E7%9A%84%E7%94%9F%E6%88%90%E6%9C%BA%E5%88%B6.md)
 - [问题导向索引：按症状、源码入口与合规动作阅读风控专题](risk/25-%E9%97%AE%E9%A2%98%E5%AF%BC%E5%90%91%E7%B4%A2%E5%BC%95%EF%BC%9A%E6%8C%89%E7%97%87%E7%8A%B6%E3%80%81%E6%BA%90%E7%A0%81%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%90%88%E8%A7%84%E5%8A%A8%E4%BD%9C%E9%98%85%E8%AF%BB%E9%A3%8E%E6%8E%A7%E4%B8%93%E9%A2%98.md)
 - [苏格拉底附录：如果要把误伤再降一半，系统该追问什么](risk/26-%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E9%99%84%E5%BD%95%EF%BC%9A%E5%A6%82%E6%9E%9C%E8%A6%81%E6%8A%8A%E8%AF%AF%E4%BC%A4%E5%86%8D%E9%99%8D%E4%B8%80%E5%8D%8A%EF%BC%8C%E7%B3%BB%E7%BB%9F%E8%AF%A5%E8%BF%BD%E9%97%AE%E4%BB%80%E4%B9%88.md)

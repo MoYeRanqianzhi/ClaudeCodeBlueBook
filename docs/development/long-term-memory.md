@@ -132,6 +132,27 @@
   - 单一真相入口、权威状态面与Chokepoint手册
   - 单一真相入口：mode、tool pool、state与metadata的权威面
   - 单一真相入口优于多处半真相实现
+  - 如何根据预算、阻塞与风险选择session、task、worktree与compact
+  - 对象升级而非继续对话：session、task、worktree与compact的选择机理
+  - Prompt稳定性解释层：cache-break detection的两阶段诊断器
+  - 可解释稳定性比神秘措辞更接近Prompt魔力
+  - QueryGuard：本地查询生命周期的authoritative state machine
+  - 控制平面先于加载表现
+  - 远程恢复、401与Close Code语义手册
+  - 远程失败不是断线重连：401、Close Code与环境恢复的分层语义
+  - 显式远程失败优于模糊在线状态
+  - 插件双真相：enabled、editable scope与policy block不能混写
+  - 安装状态、启用状态与策略状态必须分层叙述
+  - PolicySettings控制平面、Sandbox契约与三套预算器
+  - 统一第一性原理不等于单一预算实现
+  - 安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation
+  - 安全、治理、Token与Prompt稳定性本质上是同一收口问题
+  - Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法
+  - 治理必须落到字节级确定性：上下文准入优于功能堆叠
+  - 稳定前缀、动态尾部与旁路Fork：Claude Code的Cache-Aware Prompt Assembly
+  - 允许轻微陈旧，换取系统级确定性
+  - 从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放
+  - 渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明
   - CLAUDE.md、记忆层与上下文注入实践
   - Channels、托管策略与组织级治理实践
   - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
@@ -184,6 +205,21 @@
 - 预算器深线还应继续补 context usage、systemPromptSections、attachmentsByType 与 pending_action 的联合调优方法
 - 预算深线还应继续从“统一预算器”推进到“观测面 + 建议层 + 调优动作”的闭环写法
 - 源码质量与宿主真相深线还应继续补 authoritative surface、single source of truth、session/worktree split-brain 防治与 schema 共源设计
+- 使用与对象深线还应继续补“上下文压力 / 阻塞压力 / 协作压力 / 隔离压力”对应的对象升级法，不要退回“继续聊或换 prompt”二分法
+- prompt 深线还应继续补“可解释稳定性系统”：cache break 归因、TTL / server-side 分流、tool ABI 稳定性与 shared prefix 经济应该合写
+- 源码质量深线还应继续补本地查询 authority、dispatching 空窗、generation 熔断与 UI 派生状态分离，不要只停留在远程 race 和 duplicate/orphan 上
+- 远程恢复深线还应继续补 close code 分层、401 transport rebuild、timeout budget、preflight fail-closed 与“恢复期间主动丢消息”的哲学，不要退回“断线重连”叙述
+- 插件深线还应继续补 authoritative enabled truth、editable scope truth、installation truth 与 policy truth 的分层，不要退回“enabled 开关”叙述
+- 安全/省 token 深线还应继续补 `policySettings` 作为控制平面、sandbox contract 到 adapter enforcement、以及“对象级替换 / headroom / continuation”三套预算器的分工
+- 安全深线还应继续补“扩权输入只认高信任来源、收权允许本地自限、adapter 还要反向保护控制平面本身”这条输入边界控制平面主线
+- 更高一层的第一性原理已升级为“Claude Code 真正在压制的是模型可达世界的无序扩张”，安全、治理、token 与 prompt 稳定性应按动作空间 / 权威空间 / 上下文空间 / 时间空间四面统一叙述
+- 源码质量深线应继续固定为“五种不变量治理模式”：chokepoint、typed transition、authoritative surface、race-aware runtime、contract-first，不要退回“文件大 / 模块多 / 功能多”的空泛评价
+- prompt 深线应继续固定为“上下文准入编译器”叙述：来源优先级、system prompt block 编译、schema 字节稳定、分类器共享上下文与意图连续性压缩必须合写
+- prompt 组装深线应继续固定为“稳定前缀 + 动态尾部 + delta attachments + side-loop fork + protocol transcript”一条 cache-aware assembly pipeline，不要退回对单段 prompt 文案的讨论
+- `getSessionStartDate`、memoized context、section cache、sticky headers 共同表明 Claude Code 接受“轻微陈旧”来换取系统级确定性，这应被视为刻意设计，而不是偶然副作用
+- prompt runtime 还应继续明确区分 UI transcript truth 与 protocol transcript truth，不要把前台看到的消息顺序直接当成模型请求的协议顺序
+- 能力设计深线还应继续固定为“渐进暴露优于全量声明”：deferred tools、delta attachments、managed-only source gating 应被视为同一设计动作
+- 根目录旧命名页当前仅应作为兼容别名保留；规范入口是 `README + 00-08`，`docs/` 是开发与记忆层而非正文层，这一点必须持续明确
 - 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
 - 主入口、navigation 与专题 README 必须和正文同步更新，否则蓝皮书会先在检索层失真
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述

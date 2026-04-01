@@ -2,6 +2,16 @@
 
 ## 2026-04-02
 
+- 新增《从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放》《渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明》《目录职责、规范入口与兼容别名页说明》，并把根目录旧命名页明确降为兼容入口，把 prompt 深线推进到 protocol transcript 与 progressive exposure 这一层
+- 新增《稳定前缀、动态尾部与旁路Fork：Claude Code的Cache-Aware Prompt Assembly》《允许轻微陈旧，换取系统级确定性》，把 prompt 深线继续推进到“cache-aware 组装链 + 允许轻微陈旧以换取整体确定性”的层次
+- 新增《Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法》《治理必须落到字节级确定性：上下文准入优于功能堆叠》，把“源码先进性”推进到不变量治理五法，把“prompt 魔力”推进到上下文准入编译器这一层
+- 新增《安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation》《安全、治理、Token与Prompt稳定性本质上是同一收口问题》，并回写《第一性原理与苏格拉底反思》与多处索引，把“反无序扩张”提升为安全/治理/token/prompt 稳定性四线共用的总解释轴
+- 新增《PolicySettings控制平面、Sandbox契约与三套预算器》《统一第一性原理不等于单一预算实现》，把安全/省 token 深线继续推进到“高阶治理控制平面 + 多套预算实现共用同一反扩张原则”的层次
+- 新增《插件双真相：enabled、editable scope与policy block不能混写》《安装状态、启用状态与策略状态必须分层叙述》，把插件设计深线推进到 runtime truth、editable truth 与 policy truth 必须分开的层次
+- 新增《远程恢复、401与Close Code语义手册》《远程失败不是断线重连：401、Close Code与环境恢复的分层语义》《显式远程失败优于模糊在线状态》，并清理远程失败旧稿编号冲突，把远程恢复深线推进到“分层失败语义、防假连续性、预检消毒”这一层
+- 新增《QueryGuard：本地查询生命周期的authoritative state machine》《控制平面先于加载表现》，把源码质量深线继续推进到本地查询同步 authority、dispatching 空窗治理与 stale finally 熔断这一层
+- 新增《Prompt稳定性解释层：cache-break detection的两阶段诊断器》《可解释稳定性比神秘措辞更接近Prompt魔力》，把 prompt 深线继续推进到“为什么稳定、为什么失稳都可被解释”的层次
+- 新增《如何根据预算、阻塞与风险选择session、task、worktree与compact》《对象升级而非继续对话：session、task、worktree与compact的选择机理》，把使用与架构两条线继续推进到“不同压力由不同对象承载”的选择方法
 - 新增《单一真相入口、权威状态面与Chokepoint手册》《单一真相入口：mode、tool pool、state与metadata的权威面》《单一真相入口优于多处半真相实现》，把源码质量与宿主真相深线继续推进到 authoritative surface、schema 共源、session/worktree split-brain 防治这一层
 - 新增《辅助循环、侧问题与后回合Fork共享前缀》与《Prompt不是一次请求而是可复用前缀资产》，把 prompt 深线继续推进到 `/btw`、suggestion、memory、summary、dream 共享主线程前缀这一层
 - 新增《预算观测、Context Suggestions与调优闭环》《可观测预算优于经验调优》，把“统一预算器”继续推进到“观测 -> 建议 -> 调优”的闭环
