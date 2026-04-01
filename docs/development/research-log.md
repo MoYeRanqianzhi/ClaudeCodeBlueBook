@@ -818,6 +818,25 @@
 - `claude-code-source-code/src/services/rateLimitMessages.ts:143-199`
 - `claude-code-source-code/src/utils/diagLogs.ts:13-30`
 
+### AM. Identity continuity is bound to config-home path, storage slot, and org-scoped managed context
+
+- `envUtils.ts` 把 Claude 的本地状态根绑定到 `CLAUDE_CONFIG_DIR` 或 `~/.claude`，说明 config home 本身就是连续性边界的一部分。
+- `macOsKeychainHelpers.ts` 用 config-dir 路径哈希参与 keychain service name，意味着不同 config home 对应不同 secure-storage 槽位，而不是同一身份池。
+- `plainTextStorage.ts` 与 `fallbackStorage.ts` 则说明即使走 plaintext fallback，也仍沿同一 config home 写 `.credentials.json`，并尽量删除旧主存储以免 stale 凭证遮蔽 fresh 凭证。
+- `auth.ts` 的 managed OAuth context 明确禁止 CCR / Claude Desktop 这类受管环境回退到用户终端自己的 API key 来源；凭证存在不等于这条身份路径对当前环境合法。
+- `validateForceLoginOrg()` 进一步对组织不匹配做 fail-closed，并明确要求移除错误 env token 或重新按正确组织登录。
+- 更高抽象看，Claude Code 在验证的不只是 token，而是“这个 token 是否沿正确 config root、正确 storage slot、正确运行场景和正确组织边界进入当前环境”。
+
+证据:
+
+- `claude-code-source-code/src/utils/envUtils.ts:5-14`
+- `claude-code-source-code/src/utils/secureStorage/index.ts:1-16`
+- `claude-code-source-code/src/utils/secureStorage/macOsKeychainHelpers.ts:23-40`
+- `claude-code-source-code/src/utils/secureStorage/plainTextStorage.ts:8-57`
+- `claude-code-source-code/src/utils/secureStorage/fallbackStorage.ts:20-58`
+- `claude-code-source-code/src/utils/auth.ts:83-110`
+- `claude-code-source-code/src/utils/auth.ts:1917-2000`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -872,6 +891,7 @@
 - 已补风控专题 `45-认证连续性工程：缓存、锁、密钥链与为什么不要乱换登录路径`，把认证问题从“登录成功/失败”提升为多缓存、多进程的连续性工程
 - 已补风控专题 `46-冻结语义与单链恢复：为什么故障窗口越乱试越像被封了`，把恢复问题从“多试几次”提升为单链、一致性和前缀稳定问题
 - 已补风控专题 `47-高波动环境用户的合规权益保护：如何降低误伤并缩短自证路径`，把中国/高波动环境用户的利益保护收束成稳定主路径、证据保全和共享词汇三条主线
+- 已补风控专题 `48-身份路径绑定：配置根、托管环境与组织闭锁为什么必须一致`，把 config root、storage slot、managed context 与 forceLoginOrg 收束成同一条身份路径模型
 
 ## 下一步待办
 
