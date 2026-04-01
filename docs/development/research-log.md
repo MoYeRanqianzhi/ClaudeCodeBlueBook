@@ -590,6 +590,32 @@
 - `claude-code-source-code/src/bridge/bridgeMain.ts:659-730`
 - `claude-code-source-code/src/bridge/replBridge.ts:2080-2105`
 
+### AE. Governance uses multiple clocks, not one static boundary
+
+- `mcp/auth.ts` 会在 token 距离过期 5 分钟时主动刷新，说明会话治理在时间上前移，而不是等 401 才处理。
+- `envLessBridgeConfig.ts` 也默认把 `token_refresh_buffer_ms` 设为 300_000，说明 5 分钟预刷新是跨模块时间哲学。
+- `trustedDevice.ts` 明确要求 trusted device enrollment 必须发生在 fresh login 后 10 分钟内，说明高安全能力依赖“会话新鲜度”这一时间边界。
+- `mcp/client.ts` 把 `needs-auth` 缓存 15 分钟，说明某些失败状态会被短期记忆，而不是每次重新判断。
+- `ccrClient.ts` / `envLessBridgeConfig.ts` 使用 20 秒 heartbeat 对应 60 秒 TTL，`withRetry.ts` 用 30 秒切片 keepalive，说明会话连续性在秒级被周期性再证明。
+- `useReplBridge.tsx` 与 `initReplBridge.ts` 的 3 次失败阈值、`withRetry.ts` 的 6 小时 reset cap，则说明恢复预算还有更长时间尺度的熔断与等待上界。
+- 更高抽象看，很多“刚刚还能用、后来像被封了”的体验，不是新处罚，而是多个治理时钟在高波动环境中同时错位。
+
+证据:
+
+- `claude-code-source-code/src/services/mcp/auth.ts:1645-1660`
+- `claude-code-source-code/src/bridge/envLessBridgeConfig.ts:17-23`
+- `claude-code-source-code/src/bridge/envLessBridgeConfig.ts:51-53`
+- `claude-code-source-code/src/bridge/trustedDevice.ts:94-97`
+- `claude-code-source-code/src/services/mcp/client.ts:257-263`
+- `claude-code-source-code/src/services/mcp/client.ts:368-370`
+- `claude-code-source-code/src/cli/transports/ccrClient.ts:32-33`
+- `claude-code-source-code/src/services/api/withRetry.ts:96-98`
+- `claude-code-source-code/src/services/api/withRetry.ts:444-459`
+- `claude-code-source-code/src/services/api/withRetry.ts:500-505`
+- `claude-code-source-code/src/services/api/withRetry.ts:818-821`
+- `claude-code-source-code/src/hooks/useReplBridge.tsx:35-40`
+- `claude-code-source-code/src/bridge/initReplBridge.ts:169-239`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
