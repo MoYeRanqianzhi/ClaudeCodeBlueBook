@@ -76,14 +76,17 @@
 
 1. `api/17-状态消息、外部元数据与宿主消费矩阵.md`
 2. `api/34-单一真相入口、权威状态面与Chokepoint手册.md`
-3. `architecture/41-叶子模块、扼流点与循环依赖切断法.md`
-4. `architecture/44-单一真相入口：mode、tool pool、state与metadata的权威面.md`
-5. `philosophy/28-复杂性应该收敛到扼流点而不是散落到产品层.md`
-6. `philosophy/32-单一真相入口优于多处半真相实现.md`
+3. `api/27-插件协议全生命周期：Manifest、Marketplace、Options、MCPB与Reload.md`
+4. `architecture/41-叶子模块、扼流点与循环依赖切断法.md`
+5. `architecture/44-单一真相入口：mode、tool pool、state与metadata的权威面.md`
+6. `architecture/49-插件双真相：enabled、editable scope与policy block不能混写.md`
+7. `philosophy/28-复杂性应该收敛到扼流点而不是散落到产品层.md`
+8. `philosophy/32-单一真相入口优于多处半真相实现.md`
+9. `philosophy/36-安装状态、启用状态与策略状态必须分层叙述.md`
 
 这条线的核心结论是：
 
-- Claude Code 的稳定性不只来自更多状态外化，还来自关键状态必须只有一个真正可信的入口
+- Claude Code 的稳定性不只来自更多状态外化，还来自关键状态必须只有一个真正可信的入口，并且插件这类多作用域对象必须显式承认自己有多重真相
 
 ## 4. 对象化深线
 

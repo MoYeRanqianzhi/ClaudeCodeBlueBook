@@ -141,6 +141,8 @@
   - 远程恢复、401与Close Code语义手册
   - 远程失败不是断线重连：401、Close Code与环境恢复的分层语义
   - 显式远程失败优于模糊在线状态
+  - 插件双真相：enabled、editable scope与policy block不能混写
+  - 安装状态、启用状态与策略状态必须分层叙述
   - CLAUDE.md、记忆层与上下文注入实践
   - Channels、托管策略与组织级治理实践
   - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
@@ -197,6 +199,7 @@
 - prompt 深线还应继续补“可解释稳定性系统”：cache break 归因、TTL / server-side 分流、tool ABI 稳定性与 shared prefix 经济应该合写
 - 源码质量深线还应继续补本地查询 authority、dispatching 空窗、generation 熔断与 UI 派生状态分离，不要只停留在远程 race 和 duplicate/orphan 上
 - 远程恢复深线还应继续补 close code 分层、401 transport rebuild、timeout budget、preflight fail-closed 与“恢复期间主动丢消息”的哲学，不要退回“断线重连”叙述
+- 插件深线还应继续补 authoritative enabled truth、editable scope truth、installation truth 与 policy truth 的分层，不要退回“enabled 开关”叙述
 - 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
 - 主入口、navigation 与专题 README 必须和正文同步更新，否则蓝皮书会先在检索层失真
 - prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述

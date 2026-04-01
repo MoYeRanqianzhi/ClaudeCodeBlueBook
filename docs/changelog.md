@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《插件双真相：enabled、editable scope与policy block不能混写》《安装状态、启用状态与策略状态必须分层叙述》，把插件设计深线推进到 runtime truth、editable truth 与 policy truth 必须分开的层次
 - 新增《远程恢复、401与Close Code语义手册》《远程失败不是断线重连：401、Close Code与环境恢复的分层语义》《显式远程失败优于模糊在线状态》，并清理远程失败旧稿编号冲突，把远程恢复深线推进到“分层失败语义、防假连续性、预检消毒”这一层
 - 新增《QueryGuard：本地查询生命周期的authoritative state machine》《控制平面先于加载表现》，把源码质量深线继续推进到本地查询同步 authority、dispatching 空窗治理与 stale finally 熔断这一层
 - 新增《Prompt稳定性解释层：cache-break detection的两阶段诊断器》《可解释稳定性比神秘措辞更接近Prompt魔力》，把 prompt 深线继续推进到“为什么稳定、为什么失稳都可被解释”的层次

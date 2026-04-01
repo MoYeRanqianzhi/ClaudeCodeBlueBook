@@ -144,6 +144,10 @@
 
 - `api/34 -> architecture/41 -> architecture/44 -> philosophy/28 -> philosophy/32`
 
+### 为什么插件系统不能只看一个 enabled 开关
+
+- `api/27 -> api/34 -> architecture/49 -> philosophy/20 -> philosophy/36`
+
 ## 专题入口
 
 - [导航专题](navigation/README.md)

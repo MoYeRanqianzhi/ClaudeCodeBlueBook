@@ -358,6 +358,28 @@
 - `claude-code-source-code/src/cli/transports/WebSocketTransport.ts:38-58`
 - `claude-code-source-code/src/bridge/envLessBridgeConfig.ts:13-33`
 
+### W. Plugin runtime truth and editable truth must stay separate
+
+- `checkEnabledPlugins()` 明确是 authoritative enabled check，因为它基于 merged settings 处理 policy > local > project > user，再把 `--add-dir` 作为更低优先级来源合并；这意味着“当前是否启用”不是某个单一 scope 的布尔值。
+- `getPluginEditableScopes()` 则显式声明自己不是 authoritative enabled check，它解决的是“如果用户要写回，哪个 user-editable scope 拥有这个插件”；说明 editable truth 和 runtime truth 不是同一层。
+- `pluginPolicy.ts` 把 policy-blocked plugin 作为 leaf single source of truth，避免安装、启用、UI 过滤各处各写一套企业策略判断。
+- 真正的 startup 总控链路并不在 `pluginStartupCheck.ts`，而在 `REPL.tsx -> performStartupChecks -> PluginInstallationManager -> reconciler -> refresh`；`pluginStartupCheck.ts` 更像 enable/scope 计算辅助模块，而不是启动总控。
+- `installedPluginsManager.ts` 明确把 installation state 与 enablement state 分离：安装是全局资产面，scope/enablement 仍以 settings.json 为 source of truth；同时 `installed_plugins.json` 只是 persistent metadata，不等于 live session state。loader 的 cache-on-miss materialization 也不自动回写安装记录。
+- policy 也不是单轴：除了插件级 block，还有 marketplace source 级策略限制；“插件被禁”与“来源被禁”不是同一个问题。
+
+证据:
+
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-20`
+- `claude-code-source-code/src/utils/plugins/pluginStartupCheck.ts:30-71`
+- `claude-code-source-code/src/utils/plugins/pluginStartupCheck.ts:75-159`
+- `claude-code-source-code/src/utils/plugins/performStartupChecks.tsx:24-61`
+- `claude-code-source-code/src/services/plugins/PluginInstallationManager.ts:51-90`
+- `claude-code-source-code/src/utils/plugins/pluginIdentifier.ts:98-117`
+- `claude-code-source-code/src/utils/plugins/installedPluginsManager.ts:4-12`
+- `claude-code-source-code/src/utils/plugins/installedPluginsManager.ts:488-537`
+- `claude-code-source-code/src/utils/plugins/installedPluginsManager.ts:1033-1164`
+- `claude-code-source-code/src/utils/plugins/marketplaceHelpers.ts:472-520`
+
 证据：
 
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-519`

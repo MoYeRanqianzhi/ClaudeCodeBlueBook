@@ -72,6 +72,7 @@
 - [44-单一真相入口：mode、tool pool、state与metadata的权威面](44-%E5%8D%95%E4%B8%80%E7%9C%9F%E7%9B%B8%E5%85%A5%E5%8F%A3%EF%BC%9Amode%E3%80%81tool%20pool%E3%80%81state%E4%B8%8Emetadata%E7%9A%84%E6%9D%83%E5%A8%81%E9%9D%A2.md)
 - [47-QueryGuard：本地查询生命周期的authoritative state machine](47-QueryGuard%EF%BC%9A%E6%9C%AC%E5%9C%B0%E6%9F%A5%E8%AF%A2%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84authoritative%20state%20machine.md)
 - [48-远程失败不是断线重连：401、Close Code与环境恢复的分层语义](48-%E8%BF%9C%E7%A8%8B%E5%A4%B1%E8%B4%A5%E4%B8%8D%E6%98%AF%E6%96%AD%E7%BA%BF%E9%87%8D%E8%BF%9E%EF%BC%9A401%E3%80%81Close%20Code%E4%B8%8E%E7%8E%AF%E5%A2%83%E6%81%A2%E5%A4%8D%E7%9A%84%E5%88%86%E5%B1%82%E8%AF%AD%E4%B9%89.md)
+- [49-插件双真相：enabled、editable scope与policy block不能混写](49-%E6%8F%92%E4%BB%B6%E5%8F%8C%E7%9C%9F%E7%9B%B8%EF%BC%9Aenabled%E3%80%81editable%20scope%E4%B8%8Epolicy%20block%E4%B8%8D%E8%83%BD%E6%B7%B7%E5%86%99.md)
 
 ## 推荐阅读链
 
@@ -94,5 +95,6 @@
 - 想看为什么关键状态必须收口成 authoritative surface：`17 -> 41 -> 44`
 - 想看为什么复杂任务应先升级对象再继续对话：`25 -> 30 -> 34 -> 45`
 - 想看本地查询为什么也需要同步 authority 与 generation 防竞态：`26 -> 40 -> 47`
+- 想看插件系统为什么要把 enabled truth、editable scope 与 policy block 分开：`27 -> 44 -> 49`
 
 主线结论先看 [../03-设计哲学](../03-%E8%AE%BE%E8%AE%A1%E5%93%B2%E5%AD%A6.md) 和 [../07-运行时契约、知识层与生态边界](../07-%E8%BF%90%E8%A1%8C%E6%97%B6%E5%A5%91%E7%BA%A6%E3%80%81%E7%9F%A5%E8%AF%86%E5%B1%82%E4%B8%8E%E7%94%9F%E6%80%81%E8%BE%B9%E7%95%8C.md)。
