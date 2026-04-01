@@ -31,12 +31,14 @@
 ## 提示词与上下文装配面
 
 - [系统提示词、Frontmatter 与上下文注入手册](18-%E7%B3%BB%E7%BB%9F%E6%8F%90%E7%A4%BA%E8%AF%8D%E3%80%81Frontmatter%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5%E6%89%8B%E5%86%8C.md)
+- [提示词控制、知识注入与记忆 API 手册](21-%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%8E%A7%E5%88%B6%E3%80%81%E7%9F%A5%E8%AF%86%E6%B3%A8%E5%85%A5%E4%B8%8E%E8%AE%B0%E5%BF%86API%E6%89%8B%E5%86%8C.md)
 
 ## 扩展与连接面
 
 - [MCP 与远程传输](03-MCP%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BC%A0%E8%BE%93.md)
 - [扩展 Frontmatter 与插件 Agent 手册](10-%E6%89%A9%E5%B1%95Frontmatter%E4%B8%8E%E6%8F%92%E4%BB%B6Agent%E6%89%8B%E5%86%8C.md)
 - [MCP 配置与连接状态机](12-MCP%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%BF%9E%E6%8E%A5%E7%8A%B6%E6%80%81%E6%9C%BA.md)
+- [插件、Marketplace、MCPB、LSP与Channels接入边界手册](22-%E6%8F%92%E4%BB%B6%E3%80%81Marketplace%E3%80%81MCPB%E3%80%81LSP%E4%B8%8EChannels%E6%8E%A5%E5%85%A5%E8%BE%B9%E7%95%8C%E6%89%8B%E5%86%8C.md)
 
 ## 宿主与传输面
 
@@ -55,9 +57,11 @@
 - 需要 runtime event stream、宿主可观测信号与消息族时再看 `04 -> 11 -> ../architecture/12`
 - 需要区分事件时间线、`worker_status`、`external_metadata` 与 consumer subset 时再看 `11 -> 17 -> ../architecture/17 -> ../philosophy/13`
 - 需要区分 `systemPrompt` / `appendSystemPrompt` / agent prompt / skill frontmatter / attachment 注入时再看 `18 -> ../architecture/18 -> ../philosophy/14`
+- 需要分清 CLI prompt flag、SDK initialize 字段、`CLAUDE.md`、typed memory、session memory 与 attachment 知识注入时再看 `21 -> ../architecture/28 -> ../architecture/29 -> ../guides/03`
 - 需要 session/state surface、runtime truth 与恢复接口时再看 `09 -> ../architecture/09 -> ../philosophy/06`
 - 需要把 `SDKMessage`、`worker_status`、`external_metadata`、control subtype 放到同一字段图里时再看 `17 -> 19 -> ../architecture/17 -> ../architecture/22`
 - 需要统一扩展面、frontmatter 字段、plugin/agent trust boundary 与 MCP 连接平面时再看 `03 -> 10 -> 12 -> ../philosophy/08`
+- 需要把 builtin plugin、marketplace plugin、MCPB、LSP、channels 放回各自真正的产品边界时再看 `22 -> ../architecture/27 -> ../philosophy/20`
 - 需要 host control protocol、`control_request` / `control_response`、远程 host 适配路径时再看 `13 -> ../architecture/13 -> ../philosophy/09`
 - 需要分清 schema 全集、bridge 子集、direct-connect 子集、remote-session 子集时再看 `14 -> ../architecture/14 -> ../philosophy/10`
 - 需要字段级 payload 对照、最小 NDJSON 样例与宿主请求封套时再看 `15 -> ../architecture/15 -> ../philosophy/11`

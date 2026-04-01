@@ -20,6 +20,7 @@
   - 公开能力与隐藏能力
   - 功能全景与 API 支持
   - 第一性原理与苏格拉底反思
+  - 运行时契约、知识层与生态边界
   - 命令与功能矩阵
   - Agent SDK 与控制协议
   - MCP 与远程传输
@@ -78,9 +79,18 @@
   - 会话持久化、TaskOutput 与 Sidechain 恢复图
   - REPL 前台状态机、Sticky Prompt 与消息动作
   - 能力迁移、Consumer Subset 与产品边界
+  - 提示词契约分层、知识注入与缓存稳定性
+  - 知识层栈：CLAUDE.md、Session Memory、Auto-memory与Attachments
+  - 多Agent任务对象、Mailbox与后台协作运行时
   - 宿主实现最小闭环与恢复案例手册
+  - 提示词控制、知识注入与记忆 API 手册
+  - 插件、Marketplace、MCPB、LSP与Channels接入边界手册
   - 真正的设计单位不是功能，而是运行时平面
   - 前台交互不是 UI 皮肤，而是认知控制面
+  - Prompt 不是文本技巧而是契约分层
+  - 安全与 Token 经济不是权衡而是同一优化
+  - 生态成熟度必须与协议支持分开叙述
+  - CLAUDE.md、记忆层与上下文注入实践
 
 ## 已确认事实
 
@@ -133,6 +143,11 @@
 - Claude Code 的前台更适合被理解成认知控制面，而不是终端聊天 UI
 - Claude Code 的产品现实更适合按 build gate、runtime gate、compat shim、consumer subset 四层理解
 - Claude Code 的更高层设计单位更适合概括成 runtime planes，而不是功能清单
+- Claude Code 的 prompt 更适合按“静态法 + 动态 section + 角色覆盖层 + attachment 晚绑定”理解，而不是按单段文案理解
+- Claude Code 的知识更适合按“规则层 + typed memory + session memory + relevant memories”四层栈理解，而不是按单层记忆理解
+- Claude Code 的多 Agent 更适合按“coordinator law + task object + mailbox/team context + inherited runtime”理解，而不是按并发数量理解
+- Claude Code 的安全与 token 经济本质上都在做“限制无序扩张”的同一优化，只是分别作用于动作空间和上下文空间
+- Claude Code 的生态写作必须持续区分 protocol support、runtime path 与 product maturity，不能因为代码里有入口就上升为稳定公共承诺
 
 ## 后续章节建议
 

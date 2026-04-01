@@ -29,6 +29,9 @@
 25. [会话持久化、TaskOutput 与 Sidechain 恢复图](25-%E4%BC%9A%E8%AF%9D%E6%8C%81%E4%B9%85%E5%8C%96%E3%80%81TaskOutput%E4%B8%8ESidechain%E6%81%A2%E5%A4%8D%E5%9B%BE.md)
 26. [REPL 前台状态机、Sticky Prompt 与消息动作](26-REPL%E5%89%8D%E5%8F%B0%E7%8A%B6%E6%80%81%E6%9C%BA%E3%80%81Sticky%20Prompt%E4%B8%8E%E6%B6%88%E6%81%AF%E5%8A%A8%E4%BD%9C.md)
 27. [能力迁移、Consumer Subset 与产品边界](27-%E8%83%BD%E5%8A%9B%E8%BF%81%E7%A7%BB%E3%80%81Consumer%20Subset%E4%B8%8E%E4%BA%A7%E5%93%81%E8%BE%B9%E7%95%8C.md)
+28. [提示词契约分层、知识注入与缓存稳定性](28-%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%A5%91%E7%BA%A6%E5%88%86%E5%B1%82%E3%80%81%E7%9F%A5%E8%AF%86%E6%B3%A8%E5%85%A5%E4%B8%8E%E7%BC%93%E5%AD%98%E7%A8%B3%E5%AE%9A%E6%80%A7.md)
+29. [知识层栈：CLAUDE.md、Session Memory、Auto-memory与Attachments](29-%E7%9F%A5%E8%AF%86%E5%B1%82%E6%A0%88%EF%BC%9ACLAUDE.md%E3%80%81Session%20Memory%E3%80%81Auto-memory%E4%B8%8EAttachments.md)
+30. [多Agent任务对象、Mailbox与后台协作运行时](30-%E5%A4%9AAgent%E4%BB%BB%E5%8A%A1%E5%AF%B9%E8%B1%A1%E3%80%81Mailbox%E4%B8%8E%E5%90%8E%E5%8F%B0%E5%8D%8F%E4%BD%9C%E8%BF%90%E8%A1%8C%E6%97%B6.md)
 
 这几章和 `bluebook/` 的区别是：
 
@@ -57,6 +60,6 @@
 - 想看 transcript、sidechain transcript、task output、state restore 如何一起构成恢复面：`25`
 - 想看 transcript mode、sticky prompt、search、message actions、teammate view 如何构成前台状态机：`26`
 - 想看 feature gate、compat shim、consumer subset、marketplace/MCPB/LSP/channels 的产品边界：`27`
-- 想看 transcript、sidechain transcript、task output、resume restore 如何拼成完整恢复面：`25`
-- 想看 REPL 的 transcript mode、sticky prompt、message actions、teammate view 如何构成前台控制面：`26`
-- 想看 feature gate、compat shim、consumer subset、marketplace/MCPB/LSP/channels 的真实产品边界：`27`
+- 想看 prompt 为什么必须和 cache、attachment、角色覆盖层一起理解：`28`
+- 想看 `CLAUDE.md`、typed memory、session memory、relevant memories 如何组成知识层栈：`29`
+- 想看 coordinator、task、mailbox、team context 如何组成真正的多 Agent 运行时：`30`

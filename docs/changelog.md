@@ -2,6 +2,13 @@
 
 ## 2026-04-02
 
+- 新增主线章节《运行时契约、知识层与生态边界》，把 prompt contract、knowledge stack、协作运行时、生态治理提升为正式主线
+- 新增提示词控制 / 知识注入 / 记忆 API 手册，以及 plugin / marketplace / MCPB / LSP / channels 接入边界手册
+- 新增提示词契约分层、知识层栈、多Agent任务对象三篇架构专题
+- 新增《CLAUDE.md、记忆层与上下文注入实践》指南，明确规则层、长期记忆、会话连续性、临时 prompt 约束的分层用法
+- 新增“Prompt 不是文本技巧而是契约分层”“安全与 Token 经济不是权衡而是同一优化”“生态成熟度必须与协议支持分开叙述”三篇哲学专题
+- 更新蓝皮书总索引、架构/API/哲学/使用专题 README，新增契约链、知识链、安全经济链、协作运行时链、生态边界链
+- 补强《功能全景与 API 支持》《使用指南》与章节规划、研究日志、长期记忆，使主线、专题索引与持久化记忆重新同步
 - 新增 `query turn` 状态机、统一权限决策流水线、`services/utils` 分层三篇架构专题
 - 新增 `SDKMessage` / `worker_status` / `external_metadata` 字段级 crosswalk API 手册
 - 新增多 Agent 编排与 prompt 模板指南，明确 coordinator、fresh subagent、fork、team/swarm、workflow 的协作边界

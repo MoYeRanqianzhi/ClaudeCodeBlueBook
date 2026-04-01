@@ -18,6 +18,7 @@
 5. [04-公开能力与隐藏能力](04-%E5%85%AC%E5%BC%80%E8%83%BD%E5%8A%9B%E4%B8%8E%E9%9A%90%E8%97%8F%E8%83%BD%E5%8A%9B.md)
 6. [05-功能全景与 API 支持](05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)
 7. [06-第一性原理与苏格拉底反思](06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md)
+8. [07-运行时契约、知识层与生态边界](07-%E8%BF%90%E8%A1%8C%E6%97%B6%E5%A5%91%E7%BA%A6%E3%80%81%E7%9F%A5%E8%AF%86%E5%B1%82%E4%B8%8E%E7%94%9F%E6%80%81%E8%BE%B9%E7%95%8C.md)
 
 ## 按目标阅读
 
@@ -55,6 +56,11 @@
 - 权限决策链：`architecture/05-权限系统与安全状态机.md` -> `architecture/11-权限系统全链路与Auto Mode.md` -> `architecture/23-统一权限决策流水线与多路仲裁.md`
 - 状态字段链：`api/17-状态消息、外部元数据与宿主消费矩阵.md` -> `api/19-SDKMessage、worker_status与external_metadata字段级对照手册.md` -> `architecture/17-双通道状态同步与外部元数据回写.md`
 - 协作链：`architecture/10-AgentTool与隔离编排.md` -> `guides/02-多Agent编排与Prompt模板.md` -> `philosophy/07-隔离优先于并发.md`
+- 契约链：`api/21-提示词控制、知识注入与记忆API手册.md` -> `architecture/28-提示词契约分层、知识注入与缓存稳定性.md` -> `philosophy/18-Prompt不是文本技巧而是契约分层.md`
+- 知识链：`guides/03-CLAUDE.md、记忆层与上下文注入实践.md` -> `api/21-提示词控制、知识注入与记忆API手册.md` -> `architecture/29-知识层栈：CLAUDE.md、Session Memory、Auto-memory与Attachments.md`
+- 安全经济链：`architecture/19-安全分层、策略收口与沙箱边界.md` -> `architecture/21-消息塑形、输出外置与Token经济.md` -> `philosophy/19-安全与Token经济不是权衡而是同一优化.md`
+- 协作运行时链：`architecture/10-AgentTool与隔离编排.md` -> `architecture/30-多Agent任务对象、Mailbox与后台协作运行时.md` -> `guides/02-多Agent编排与Prompt模板.md`
+- 生态边界链：`api/22-插件、Marketplace、MCPB、LSP与Channels接入边界手册.md` -> `architecture/27-能力迁移、Consumer Subset与产品边界.md` -> `philosophy/20-生态成熟度必须与协议支持分开叙述.md`
 - 分层链：`architecture/20-源码质量、分层与工程先进性.md` -> `architecture/24-services层全景与utils-heavy设计.md`
 - 恢复链：`architecture/09-会话存储记忆与回溯状态面.md` -> `architecture/25-会话持久化、TaskOutput与Sidechain恢复图.md` -> `api/20-宿主实现最小闭环与恢复案例手册.md`
 - 前台链：`architecture/04-REPL与Ink交互架构.md` -> `architecture/26-REPL前台状态机、Sticky Prompt与消息动作.md` -> `philosophy/17-前台交互不是UI皮肤而是认知控制面.md`
@@ -78,6 +84,9 @@
 - 真相：`api/17-状态消息、外部元数据与宿主消费矩阵.md`、`architecture/17-双通道状态同步与外部元数据回写.md`、`philosophy/13-外化状态优于推断状态.md`
 - 提示词：`api/18-系统提示词、Frontmatter与上下文注入手册.md`、`architecture/18-提示词装配链与上下文成形.md`、`philosophy/14-提示词魔力来自运行时而非咒语.md`
 - 上下文：`philosophy/02-上下文经济学.md`、`architecture/08-compact算法与上下文管理细拆.md`、`architecture/21-消息塑形、输出外置与Token经济.md`
+- 契约：`api/21-提示词控制、知识注入与记忆API手册.md`、`architecture/28-提示词契约分层、知识注入与缓存稳定性.md`、`philosophy/18-Prompt不是文本技巧而是契约分层.md`
+- 知识：`guides/03-CLAUDE.md、记忆层与上下文注入实践.md`、`architecture/29-知识层栈：CLAUDE.md、Session Memory、Auto-memory与Attachments.md`
+- 安全经济：`architecture/19-安全分层、策略收口与沙箱边界.md`、`architecture/21-消息塑形、输出外置与Token经济.md`、`philosophy/19-安全与Token经济不是权衡而是同一优化.md`
 - 工程：`architecture/20-源码质量、分层与工程先进性.md`、`philosophy/15-工程化质量优于聪明技巧.md`
 - 恢复：`architecture/06-上下文压缩与恢复链.md`、`architecture/12-ClaudeAPI与流式工具执行.md`、`philosophy/06-状态优先于对话.md`
 - 继续：`architecture/22-query-turn状态机、继续语义与恢复链.md`
@@ -88,10 +97,12 @@
 - 前台：`architecture/26-REPL前台状态机、Sticky Prompt与消息动作.md`
 - 迁移：`architecture/27-能力迁移、Consumer Subset与产品边界.md`
 - 母题：`philosophy/16-真正的设计单位不是功能，而是运行时平面.md`
+- 协作运行时：`architecture/30-多Agent任务对象、Mailbox与后台协作运行时.md`
+- 生态：`api/22-插件、Marketplace、MCPB、LSP与Channels接入边界手册.md`、`philosophy/20-生态成熟度必须与协议支持分开叙述.md`
 
 ## 正式主线与兼容入口
 
-- 正式主线以 `bluebook/00-导读.md` 到 `bluebook/06-第一性原理与苏格拉底反思.md` 为准。
+- 正式主线以 `bluebook/00-导读.md` 到 `bluebook/07-运行时契约、知识层与生态边界.md` 为准。
 - 历史兼容入口如 `00-蓝皮书总览.md`、`01-源码总地图.md` 仍保留在 `bluebook/` 根目录，主要用于兼容旧链接与旧阅读习惯。
 - 后续主线增补继续放在 `bluebook/` 根目录，字段级、状态机级、算法级细拆优先下沉到 `api/`、`architecture/`、`philosophy/`。
 
@@ -125,6 +136,15 @@
 
 近期新增的深挖入口：
 
+- [运行时契约、知识层与生态边界](07-%E8%BF%90%E8%A1%8C%E6%97%B6%E5%A5%91%E7%BA%A6%E3%80%81%E7%9F%A5%E8%AF%86%E5%B1%82%E4%B8%8E%E7%94%9F%E6%80%81%E8%BE%B9%E7%95%8C.md)
+- [提示词控制、知识注入与记忆 API 手册](api/21-%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%8E%A7%E5%88%B6%E3%80%81%E7%9F%A5%E8%AF%86%E6%B3%A8%E5%85%A5%E4%B8%8E%E8%AE%B0%E5%BF%86API%E6%89%8B%E5%86%8C.md)
+- [提示词契约分层、知识注入与缓存稳定性](architecture/28-%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%A5%91%E7%BA%A6%E5%88%86%E5%B1%82%E3%80%81%E7%9F%A5%E8%AF%86%E6%B3%A8%E5%85%A5%E4%B8%8E%E7%BC%93%E5%AD%98%E7%A8%B3%E5%AE%9A%E6%80%A7.md)
+- [知识层栈：CLAUDE.md、Session Memory、Auto-memory与Attachments](architecture/29-%E7%9F%A5%E8%AF%86%E5%B1%82%E6%A0%88%EF%BC%9ACLAUDE.md%E3%80%81Session%20Memory%E3%80%81Auto-memory%E4%B8%8EAttachments.md)
+- [多Agent任务对象、Mailbox与后台协作运行时](architecture/30-%E5%A4%9AAgent%E4%BB%BB%E5%8A%A1%E5%AF%B9%E8%B1%A1%E3%80%81Mailbox%E4%B8%8E%E5%90%8E%E5%8F%B0%E5%8D%8F%E4%BD%9C%E8%BF%90%E8%A1%8C%E6%97%B6.md)
+- [CLAUDE.md、记忆层与上下文注入实践](guides/03-CLAUDE.md%E3%80%81%E8%AE%B0%E5%BF%86%E5%B1%82%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5%E5%AE%9E%E8%B7%B5.md)
+- [Prompt 不是文本技巧而是契约分层](philosophy/18-Prompt%E4%B8%8D%E6%98%AF%E6%96%87%E6%9C%AC%E6%8A%80%E5%B7%A7%E8%80%8C%E6%98%AF%E5%A5%91%E7%BA%A6%E5%88%86%E5%B1%82.md)
+- [安全与 Token 经济不是权衡而是同一优化](philosophy/19-%E5%AE%89%E5%85%A8%E4%B8%8EToken%E7%BB%8F%E6%B5%8E%E4%B8%8D%E6%98%AF%E6%9D%83%E8%A1%A1%E8%80%8C%E6%98%AF%E5%90%8C%E4%B8%80%E4%BC%98%E5%8C%96.md)
+- [生态成熟度必须与协议支持分开叙述](philosophy/20-%E7%94%9F%E6%80%81%E6%88%90%E7%86%9F%E5%BA%A6%E5%BF%85%E9%A1%BB%E4%B8%8E%E5%8D%8F%E8%AE%AE%E6%94%AF%E6%8C%81%E5%88%86%E5%BC%80%E5%8F%99%E8%BF%B0.md)
 - [StructuredIO 与 RemoteIO 宿主协议手册](api/13-StructuredIO%E4%B8%8ERemoteIO%E5%AE%BF%E4%B8%BB%E5%8D%8F%E8%AE%AE%E6%89%8B%E5%86%8C.md)
 - [StructuredIO 与 RemoteIO 控制平面](architecture/13-StructuredIO%E4%B8%8ERemoteIO%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2.md)
 - [宿主控制平面优于聊天外壳](philosophy/09-%E5%AE%BF%E4%B8%BB%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%E4%BC%98%E4%BA%8E%E8%81%8A%E5%A4%A9%E5%A4%96%E5%A3%B3.md)
@@ -153,11 +173,20 @@
 - [会话持久化、TaskOutput 与 Sidechain 恢复图](architecture/25-%E4%BC%9A%E8%AF%9D%E6%8C%81%E4%B9%85%E5%8C%96%E3%80%81TaskOutput%E4%B8%8ESidechain%E6%81%A2%E5%A4%8D%E5%9B%BE.md)
 - [REPL 前台状态机、Sticky Prompt 与消息动作](architecture/26-REPL%E5%89%8D%E5%8F%B0%E7%8A%B6%E6%80%81%E6%9C%BA%E3%80%81Sticky%20Prompt%E4%B8%8E%E6%B6%88%E6%81%AF%E5%8A%A8%E4%BD%9C.md)
 - [能力迁移、Consumer Subset 与产品边界](architecture/27-%E8%83%BD%E5%8A%9B%E8%BF%81%E7%A7%BB%E3%80%81Consumer%20Subset%E4%B8%8E%E4%BA%A7%E5%93%81%E8%BE%B9%E7%95%8C.md)
+- [提示词控制、知识注入与记忆 API 手册](api/21-%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%8E%A7%E5%88%B6%E3%80%81%E7%9F%A5%E8%AF%86%E6%B3%A8%E5%85%A5%E4%B8%8E%E8%AE%B0%E5%BF%86API%E6%89%8B%E5%86%8C.md)
+- [插件、Marketplace、MCPB、LSP与Channels接入边界手册](api/22-%E6%8F%92%E4%BB%B6%E3%80%81Marketplace%E3%80%81MCPB%E3%80%81LSP%E4%B8%8EChannels%E6%8E%A5%E5%85%A5%E8%BE%B9%E7%95%8C%E6%89%8B%E5%86%8C.md)
+- [提示词契约分层、知识注入与缓存稳定性](architecture/28-%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%A5%91%E7%BA%A6%E5%88%86%E5%B1%82%E3%80%81%E7%9F%A5%E8%AF%86%E6%B3%A8%E5%85%A5%E4%B8%8E%E7%BC%93%E5%AD%98%E7%A8%B3%E5%AE%9A%E6%80%A7.md)
+- [知识层栈：CLAUDE.md、Session Memory、Auto-memory与Attachments](architecture/29-%E7%9F%A5%E8%AF%86%E5%B1%82%E6%A0%88%EF%BC%9ACLAUDE.md%E3%80%81Session%20Memory%E3%80%81Auto-memory%E4%B8%8EAttachments.md)
+- [多Agent任务对象、Mailbox与后台协作运行时](architecture/30-%E5%A4%9AAgent%E4%BB%BB%E5%8A%A1%E5%AF%B9%E8%B1%A1%E3%80%81Mailbox%E4%B8%8E%E5%90%8E%E5%8F%B0%E5%8D%8F%E4%BD%9C%E8%BF%90%E8%A1%8C%E6%97%B6.md)
 - [SDKMessage、worker_status 与 external_metadata 字段级对照手册](api/19-SDKMessage%E3%80%81worker_status%E4%B8%8Eexternal_metadata%E5%AD%97%E6%AE%B5%E7%BA%A7%E5%AF%B9%E7%85%A7%E6%89%8B%E5%86%8C.md)
 - [宿主实现最小闭环与恢复案例手册](api/20-%E5%AE%BF%E4%B8%BB%E5%AE%9E%E7%8E%B0%E6%9C%80%E5%B0%8F%E9%97%AD%E7%8E%AF%E4%B8%8E%E6%81%A2%E5%A4%8D%E6%A1%88%E4%BE%8B%E6%89%8B%E5%86%8C.md)
 - [多 Agent 编排与 Prompt 模板](guides/02-%E5%A4%9AAgent%E7%BC%96%E6%8E%92%E4%B8%8EPrompt%E6%A8%A1%E6%9D%BF.md)
+- [CLAUDE.md、记忆层与上下文注入实践](guides/03-CLAUDE.md%E3%80%81%E8%AE%B0%E5%BF%86%E5%B1%82%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5%E5%AE%9E%E8%B7%B5.md)
 - [真正的设计单位不是功能，而是运行时平面](philosophy/16-%E7%9C%9F%E6%AD%A3%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%8D%95%E4%BD%8D%E4%B8%8D%E6%98%AF%E5%8A%9F%E8%83%BD%E8%80%8C%E6%98%AF%E8%BF%90%E8%A1%8C%E6%97%B6%E5%B9%B3%E9%9D%A2.md)
 - [前台交互不是 UI 皮肤，而是认知控制面](philosophy/17-%E5%89%8D%E5%8F%B0%E4%BA%A4%E4%BA%92%E4%B8%8D%E6%98%AFUI%E7%9A%AE%E8%82%A4%E8%80%8C%E6%98%AF%E8%AE%A4%E7%9F%A5%E6%8E%A7%E5%88%B6%E9%9D%A2.md)
+- [Prompt 不是文本技巧而是契约分层](philosophy/18-Prompt%E4%B8%8D%E6%98%AF%E6%96%87%E6%9C%AC%E6%8A%80%E5%B7%A7%E8%80%8C%E6%98%AF%E5%A5%91%E7%BA%A6%E5%88%86%E5%B1%82.md)
+- [安全与 Token 经济不是权衡而是同一优化](philosophy/19-%E5%AE%89%E5%85%A8%E4%B8%8EToken%E7%BB%8F%E6%B5%8E%E4%B8%8D%E6%98%AF%E6%9D%83%E8%A1%A1%E8%80%8C%E6%98%AF%E5%90%8C%E4%B8%80%E4%BC%98%E5%8C%96.md)
+- [生态成熟度必须与协议支持分开叙述](philosophy/20-%E7%94%9F%E6%80%81%E6%88%90%E7%86%9F%E5%BA%A6%E5%BF%85%E9%A1%BB%E4%B8%8E%E5%8D%8F%E8%AE%AE%E6%94%AF%E6%8C%81%E5%88%86%E5%BC%80%E5%8F%99%E8%BF%B0.md)
 - [SDKMessageSchema 与事件流手册](api/11-SDKMessageSchema%E4%B8%8E%E4%BA%8B%E4%BB%B6%E6%B5%81%E6%89%8B%E5%86%8C.md)
 - [MCP 配置与连接状态机](api/12-MCP%E9%85%8D%E7%BD%AE%E4%B8%8E%E8%BF%9E%E6%8E%A5%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 - [ClaudeAPI 与流式工具执行](architecture/12-ClaudeAPI%E4%B8%8E%E6%B5%81%E5%BC%8F%E5%B7%A5%E5%85%B7%E6%89%A7%E8%A1%8C.md)

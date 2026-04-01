@@ -525,11 +525,16 @@
 - 已补消息塑形、输出外置与 Token 经济专题，把 message shaping、tool result budget、deferred delta、compact 顺序收拢成统一上下文经济链
 - 已补“提示词魔力来自运行时而非咒语”和“工程化质量优于聪明技巧”两篇哲学专题
 - 已把 `bluebook/` 目录进一步扩展为 Prompt 链、安全链、工程链、上下文链
+- 已补提示词控制、知识注入与记忆 API 手册，把 CLI / SDK initialize / `CLAUDE.md` / typed memory / attachment surface 放到同一层
+- 已补插件、Marketplace、MCPB、LSP、channels 接入边界手册，把格式支持、产品边界、信任与治理模型显式拆开
+- 已补提示词契约分层、知识层栈、多 Agent 任务对象三篇架构专题，把 prompt contract、knowledge stack、task/mailbox runtime 从主线下沉为机制专题
+- 已补 `CLAUDE.md`、记忆层与上下文注入实践指南，把规则层、长期记忆、会话连续性、临时 prompt 约束的使用边界写成实战路径
+- 已补“Prompt 不是文本技巧而是契约分层”“安全与 Token 经济不是权衡而是同一优化”“生态成熟度必须与协议支持分开叙述”三篇哲学专题
+- 已把 `bluebook/` 主线继续提升为“运行时契约、知识层与生态边界”，并把目录阅读链扩展为契约链、知识链、安全经济链、协作运行时链、生态边界链
 
 ## 下一步待办
 
 - 补 workflow engine 当前可见边界与 `LocalWorkflowTask` 实现缺口
-- 补 memory / CLAUDE.md / scratchpad / durable knowledge 的统一知识层专题
 - 补 REPL 更细的 scroll/search/selection 时序图
 - 补 `SDKMessage`、control、snapshot、recovery 四面统一的宿主实现 casebook
 - 补 `query.ts` / `sessionStorage.ts` / `REPL.tsx` / `replBridge.ts` 四个热点文件的债务与分层图
@@ -540,7 +545,7 @@
 - 补 feature gate / runtime gate / compat shim 的统一时序与迁移图
 - 继续把 session/state API 与子代理状态回收做成字段级索引与时序图
 - 补一章“MCP 实战配置与集成范式”
-- 把插件市场、manifest、MCPB、LSP、channels 的产品层边界继续写成实战与策略手册
+- 补一章“managed-only / channels / policy / allowlist 的组织级治理手册”
 
 ## 当前风险
 
