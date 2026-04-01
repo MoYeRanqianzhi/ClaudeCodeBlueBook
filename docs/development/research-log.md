@@ -856,6 +856,28 @@
 - `claude-code-source-code/src/bridge/bridgeMain.ts:832-890`
 - `claude-code-source-code/src/services/analytics/firstPartyEventLoggingExporter.ts:130-240`
 
+### AO. Many seemingly inconsistent choices become coherent under a multi-loss objective
+
+- `growthbook.ts` 的 `checkGate_CACHED_OR_BLOCKING()` 说明 stale `true` 和 stale `false` 的损失不对称；系统优先减少错误阻断而不是追求表面判定对称。
+- `remoteManagedSettings/index.ts` 的 stale-cache / fail-open，与 `securityCheck.tsx` 的危险变更强确认，说明低风险和高风险路径在损失排序上不同。
+- `withRetry.ts`、`fastMode.ts` 与 `rateLimitMessages.ts` 说明平台显式把短时等待、长时 cooldown、reset time 变成正式状态，而不是把一切都简化成继续重试。
+- `bridgeMain.ts` 的 ack-after-commit、heartbeat-before-backoff 与 re-dispatch 逻辑说明系统更怕不可恢复丢失窗口，而不是短时多做一次重发或多留一个 stale 状态。
+- `permissions.ts` 与 `settings.ts` 的 deny/ask 优先、projectSettings 不可信，则说明高风险错误放权的损失被排在很前面。
+- 更高抽象看，Claude Code 的风控不是在最小化一个指标，而是在平台安全、不可恢复状态、用户误伤、支持解释成本之间做动态平衡。
+
+证据:
+
+- `claude-code-source-code/src/services/analytics/growthbook.ts:891-929`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:431-500`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:14-57`
+- `claude-code-source-code/src/services/api/withRetry.ts:261-304`
+- `claude-code-source-code/src/utils/fastMode.ts:178-228`
+- `claude-code-source-code/src/services/rateLimitMessages.ts:143-199`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:196-269`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:832-890`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1161-1295`
+- `claude-code-source-code/src/utils/settings/settings.ts:875-940`
+
 ## 本轮输出
 
 - 已建立蓝皮书主索引
@@ -912,6 +934,7 @@
 - 已补风控专题 `47-高波动环境用户的合规权益保护：如何降低误伤并缩短自证路径`，把中国/高波动环境用户的利益保护收束成稳定主路径、证据保全和共享词汇三条主线
 - 已补风控专题 `48-身份路径绑定：配置根、托管环境与组织闭锁为什么必须一致`，把 config root、storage slot、managed context 与 forceLoginOrg 收束成同一条身份路径模型
 - 已补风控专题 `49-检测先进性再评估：风控不是规则堆积，而是观测驱动的分布式控制平面`，把高级性从“gate 很多”提升为“观测-恢复-判定一体化控制面”
+- 已补风控专题 `50-损失函数视角：平台究竟在最小化什么，而用户又在失去什么`，把 fail-open、fail-closed、cooldown 与误伤统一翻译成多目标损失平衡
 
 ## 下一步待办
 
