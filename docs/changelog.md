@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增哲学专题《可见边界优于脑补全貌》，并把公开镜像研究边界正式收编到《第一性原理与苏格拉底反思》
 - 新增《workflow engine、LocalWorkflowTask 与可见边界》《REPL transcript search、selection 与 scroll 协同》两篇架构专题，补 workflow 可见边界与前台认知控制面的更细机制
 - 新增《Channels、托管策略与组织级治理实践》《企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批》两篇使用专题，补组织级治理与托管 rollout 路径
 - 更新使用专题 README、章节规划、证据索引、研究日志与长期记忆，固化 workflow 边界、REPL 精细时序与 managed settings / channels 治理这一轮结论
