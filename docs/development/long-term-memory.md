@@ -21,6 +21,7 @@
   - 功能全景与 API 支持
   - 第一性原理与苏格拉底反思
   - 运行时契约、知识层与生态边界
+  - 能力全集、公开度与成熟度矩阵
   - 导航专题
   - 第一性原理阅读地图
   - 能力、API与治理检索图
@@ -118,6 +119,8 @@
 - Claude Code SDK 的输出面更适合概括成“runtime event stream”，而不是“助手答案流”
 - `query.ts` + `services/api/claude.ts` 维护的是可恢复执行轨迹，不是单纯流式文本输出
 - MCP 更适合按“配置面 + transport 面 + 连接状态面 + 控制面”理解，而不是“外接工具协议”
+- “功能支持”后续必须持续按两层写：先写能力平面，再写公开度与成熟度矩阵
+- `navigation/` 负责读者检索，根目录主线负责判断标准，这两层不能重新混回一篇大总文
 - `message_delta` 对已 yield assistant message 的原地写回，是 transcript 引用一致性的重要实现细节
 - plugin MCP 的动态 scope 与环境变量分层解析，说明连接治理是扩展模型的一部分，不是附加逻辑
 - Claude Code 更适合被理解成 host-integrated runtime，而不是 terminal shell

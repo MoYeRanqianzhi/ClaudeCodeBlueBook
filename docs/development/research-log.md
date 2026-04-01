@@ -3,7 +3,7 @@
 ## 当前基线
 
 - 日期: `2026-04-02`
-- 工作目录: `/home/mo/m/projects/cc/analysis`
+- 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
@@ -647,6 +647,22 @@
 - 已补 `CLAUDE.md`、记忆层与上下文注入实践指南，把规则层、长期记忆、会话连续性、临时 prompt 约束的使用边界写成实战路径
 - 已补“Prompt 不是文本技巧而是契约分层”“安全与 Token 经济不是权衡而是同一优化”“生态成熟度必须与协议支持分开叙述”三篇哲学专题
 - 已把 `bluebook/` 主线继续提升为“运行时契约、知识层与生态边界”，并把目录阅读链扩展为契约链、知识链、安全经济链、协作运行时链、生态边界链
+
+### R. 能力全集必须和公开度 / 成熟度一起叙述
+
+- 当前源码基线同时包含“正式公共表面”“正式宿主表面”“声明存在但实现未闭合的入口”“gated/internal 痕迹”“受策略与组织约束的产品面”。
+- `agentSdkTypes.ts` 暴露了 session 管理函数族，但当前提取树里多个函数体仍是显式 `not implemented`，因此蓝皮书必须持续区分“声明接口”和“可见实现”。
+- `README.md` 明确指出公开源码仍缺失 `108` 个 `feature()` 相关模块，因此“公开源码边界”与“内部真实能力全集”不能混写。
+- 后续“全部功能和 API”章节必须继续按“能力平面 + 公开度 / 成熟度矩阵”双层写法推进，而不是回到单层能力清单。
+
+证据：
+
+- `claude-code-source-code/package.json:2-19`
+- `claude-code-source-code/README.md:70-74`
+- `claude-code-source-code/README.md:250-280`
+- `claude-code-source-code/src/entrypoints/agentSdkTypes.ts:103-272`
+- `claude-code-source-code/src/main.tsx:1497-1520`
+- `claude-code-source-code/src/main.tsx:1635-1688`
 
 ## 下一步待办
 

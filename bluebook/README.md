@@ -16,6 +16,7 @@
 - `bluebook/` 根目录：主线结论，强调一跳能懂。
 - `bluebook/architecture/`：运行时结构拆解，强调链路、状态机、时序和分层。
 - `bluebook/api/`：接口、字段、协议和能力支持面，强调宿主可接入性。
+- `bluebook/navigation/`：阅读地图与检索入口，不承载新的正文平面。
 - `bluebook/philosophy/`：设计内涵、第一性原理与演化方法。
 - `bluebook/guides/`：从源码反推的实战使用方法。
 - `bluebook/risk/`：账号治理、风控、远程控制与误伤处置。
@@ -31,12 +32,13 @@
 6. [05-功能全景与 API 支持](05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)
 7. [06-第一性原理与苏格拉底反思](06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md)
 8. [07-运行时契约、知识层与生态边界](07-%E8%BF%90%E8%A1%8C%E6%97%B6%E5%A5%91%E7%BA%A6%E3%80%81%E7%9F%A5%E8%AF%86%E5%B1%82%E4%B8%8E%E7%94%9F%E6%80%81%E8%BE%B9%E7%95%8C.md)
+9. [08-能力全集、公开度与成熟度矩阵](08-%E8%83%BD%E5%8A%9B%E5%85%A8%E9%9B%86%E3%80%81%E5%85%AC%E5%BC%80%E5%BA%A6%E4%B8%8E%E6%88%90%E7%86%9F%E5%BA%A6%E7%9F%A9%E9%98%B5.md)
 
 ## 按角色阅读
 
 ### 1. 想先建立整体判断
 
-- 先读 `00 -> 01 -> 03 -> 06 -> 07`
+- 先读 `00 -> 01 -> 03 -> 06 -> 07 -> 08`
 - 目标：先看清 Claude Code 的设计单位是 runtime plane，而不是功能清单
 
 ### 2. 想高效使用 Claude Code
@@ -49,6 +51,7 @@
 ### 3. 想接入宿主、SDK 或控制协议
 
 - 先读 [05-功能全景与 API 支持](05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)
+- 再读 [08-能力全集、公开度与成熟度矩阵](08-%E8%83%BD%E5%8A%9B%E5%85%A8%E9%9B%86%E3%80%81%E5%85%AC%E5%BC%80%E5%BA%A6%E4%B8%8E%E6%88%90%E7%86%9F%E5%BA%A6%E7%9F%A9%E9%98%B5.md)
 - 再读 [api/README](api/README.md)
 - 最后顺着 `13 -> 14 -> 15 -> 16 -> 17 -> 20` 读宿主闭环
 
@@ -105,10 +108,11 @@
 
 ### 为什么有代码不等于有公共承诺
 
-- `04 -> architecture/27 -> philosophy/05 -> philosophy/20`
+- `04 -> 08 -> architecture/27 -> philosophy/05 -> philosophy/20`
 
 ## 专题入口
 
+- [导航专题](navigation/README.md)
 - [架构专题](architecture/README.md)
 - [API 手册](api/README.md)
 - [哲学专题](philosophy/README.md)
