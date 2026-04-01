@@ -280,6 +280,29 @@
 - `claude-code-source-code/src/utils/sessionStorage.ts:533-822`
 - `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-20`
 
+### S. Claude Code prefers object escalation over endless continuation
+
+- `compact` 主要吸收的是上下文压力，不是协作压力；`ContextSuggestions` 已经在用 token / read / memory / autocompact 信号区分这些上下文类问题。
+- `TaskCreateTool` 明确把“3 步以上、non-trivial、需要跟踪”的工作推进到 task object，说明复杂任务的正式承载体是 lifecycle object，不是继续聊天。
+- `checkTokenBudget(...)` 在接近阈值或出现 diminishing returns 时停止 continue，这意味着 token budget 不只是省 token 逻辑，也是对象升级信号。
+- `EnterWorktreeTool` 与 `createWorktreeForSession(...)` 说明 worktree 是独立 cwd / branch / resume state 的强隔离对象，不是 branch 语法糖；但产品暴露仍然要求用户显式提出 worktree。
+- `sessionStorage.ts` 对 subagent transcript、worktree-state 的持久化说明 session 的职责是恢复多对象宇宙，而不是只保存一串聊天历史。
+
+证据:
+
+- `claude-code-source-code/src/query/tokenBudget.ts:1-75`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1000-1098`
+- `claude-code-source-code/src/utils/contextSuggestions.ts:31-233`
+- `claude-code-source-code/src/Task.ts:6-121`
+- `claude-code-source-code/src/utils/task/framework.ts:31-117`
+- `claude-code-source-code/src/tools/TaskCreateTool/prompt.ts:7-49`
+- `claude-code-source-code/src/tools/EnterWorktreeTool/prompt.ts:1-36`
+- `claude-code-source-code/src/tools/EnterWorktreeTool/EnterWorktreeTool.ts:68-116`
+- `claude-code-source-code/src/utils/worktree.ts:702-770`
+- `claude-code-source-code/src/utils/sessionStorage.ts:247-285`
+- `claude-code-source-code/src/utils/sessionStorage.ts:804-822`
+- `claude-code-source-code/src/utils/sessionStorage.ts:2884-2917`
+
 证据：
 
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-519`

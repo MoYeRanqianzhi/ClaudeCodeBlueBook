@@ -97,13 +97,15 @@
 2. `architecture/25-会话持久化、TaskOutput与Sidechain恢复图.md`
 3. `architecture/30-多Agent任务对象、Mailbox与后台协作运行时.md`
 4. `architecture/34-workflow engine、LocalWorkflowTask与可见边界.md`
-5. `guides/02-多Agent编排与Prompt模板.md`
-6. `guides/06-第一性原理实践：目标、预算、对象、边界与回写.md`
-7. `philosophy/25-Workflow不是脚本而是编排对象.md`
+5. `architecture/45-对象升级而非继续对话：session、task、worktree与compact的选择机理.md`
+6. `guides/02-多Agent编排与Prompt模板.md`
+7. `guides/06-第一性原理实践：目标、预算、对象、边界与回写.md`
+8. `guides/08-如何根据预算、阻塞与风险选择session、task、worktree与compact.md`
+9. `philosophy/25-Workflow不是脚本而是编排对象.md`
 
 这条线的核心结论是：
 
-- Claude Code 的强项在于把长流程对象化、可观察化、可恢复化
+- Claude Code 的强项在于把长流程对象化、可观察化、可恢复化，并在预算、阻塞、风险变化时主动升级承载对象
 
 ## 5. 前台真相与治理输入深线
 

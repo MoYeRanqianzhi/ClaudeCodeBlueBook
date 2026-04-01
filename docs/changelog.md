@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《如何根据预算、阻塞与风险选择session、task、worktree与compact》《对象升级而非继续对话：session、task、worktree与compact的选择机理》，把使用与架构两条线继续推进到“不同压力由不同对象承载”的选择方法
 - 新增《单一真相入口、权威状态面与Chokepoint手册》《单一真相入口：mode、tool pool、state与metadata的权威面》《单一真相入口优于多处半真相实现》，把源码质量与宿主真相深线继续推进到 authoritative surface、schema 共源、session/worktree split-brain 防治这一层
 - 新增《辅助循环、侧问题与后回合Fork共享前缀》与《Prompt不是一次请求而是可复用前缀资产》，把 prompt 深线继续推进到 `/btw`、suggestion、memory、summary、dream 共享主线程前缀这一层
 - 新增《预算观测、Context Suggestions与调优闭环》《可观测预算优于经验调优》，把“统一预算器”继续推进到“观测 -> 建议 -> 调优”的闭环

@@ -41,6 +41,7 @@
 - [10-AgentTool与隔离编排](10-AgentTool%E4%B8%8E%E9%9A%94%E7%A6%BB%E7%BC%96%E6%8E%92.md)
 - [30-多Agent任务对象、Mailbox与后台协作运行时](30-%E5%A4%9AAgent%E4%BB%BB%E5%8A%A1%E5%AF%B9%E8%B1%A1%E3%80%81Mailbox%E4%B8%8E%E5%90%8E%E5%8F%B0%E5%8D%8F%E4%BD%9C%E8%BF%90%E8%A1%8C%E6%97%B6.md)
 - [34-workflow engine、LocalWorkflowTask与可见边界](34-workflow%20engine%E3%80%81LocalWorkflowTask%E4%B8%8E%E5%8F%AF%E8%A7%81%E8%BE%B9%E7%95%8C.md)
+- [45-对象升级而非继续对话：session、task、worktree与compact的选择机理](45-%E5%AF%B9%E8%B1%A1%E5%8D%87%E7%BA%A7%E8%80%8C%E9%9D%9E%E7%BB%A7%E7%BB%AD%E5%AF%B9%E8%AF%9D%EF%BC%9Asession%E3%80%81task%E3%80%81worktree%E4%B8%8Ecompact%E7%9A%84%E9%80%89%E6%8B%A9%E6%9C%BA%E7%90%86.md)
 
 ### 6. 权限、安全与治理平面
 
@@ -77,7 +78,7 @@
 - 想看 prompt 魔力如何落到五层合同、缓存断点与协作语法：`18 -> 28 -> 31 -> 36`
 - 想看 prompt 为什么还能继续下沉到可重放、可观测、可编译：`28 -> 31 -> 36 -> 39`
 - 想看 prompt 魔力怎样扩展到 `/btw`、suggestion、memory、summary 这些辅助循环：`31 -> 39 -> 42`
-- 想看多 Agent、workflow 与隔离：`10 -> 30 -> 34`
+- 想看多 Agent、workflow 与隔离：`10 -> 30 -> 34 -> 45`
 - 想看权限、安全、治理与 token 预算统一图：`05 -> 11 -> 19 -> 23 -> 32 -> 37`
 - 想看宿主控制平面：`13 -> 14 -> 15 -> 17`
 - 想看 REPL 前台如何从状态机深入到 search / selection / scroll 协同：`04 -> 26 -> 35`
@@ -86,5 +87,6 @@
 - 想看 chokepoint、leaf module 与依赖图切断：`24 -> 38 -> 41`
 - 想看预算为什么会走向“观测 -> 建议 -> 调优”的闭环：`21 -> 37 -> 43`
 - 想看为什么关键状态必须收口成 authoritative surface：`17 -> 41 -> 44`
+- 想看为什么复杂任务应先升级对象再继续对话：`25 -> 30 -> 34 -> 45`
 
 主线结论先看 [../03-设计哲学](../03-%E8%AE%BE%E8%AE%A1%E5%93%B2%E5%AD%A6.md) 和 [../07-运行时契约、知识层与生态边界](../07-%E8%BF%90%E8%A1%8C%E6%97%B6%E5%A5%91%E7%BA%A6%E3%80%81%E7%9F%A5%E8%AF%86%E5%B1%82%E4%B8%8E%E7%94%9F%E6%80%81%E8%BE%B9%E7%95%8C.md)。
