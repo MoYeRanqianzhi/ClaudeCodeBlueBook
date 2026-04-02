@@ -191,11 +191,17 @@
   - 如何降低人类-模型协调成本：Sticky Prompt、Suggestion、Session Memory与接手连续性
   - 如何在约束中保持高行动力：permission mode、反馈式审批与渐进能力暴露
   - 给Agent平台构建者：如何把源码写成治理界面并保留重构余量
+  - 如何把Prompt当成人机协作接口：固定主语、反馈纠偏与低成本接手
+  - 如何在秩序中释放有效自由：mode选择、审批协商与能力按需出现
+  - 如何为未来维护者设计Agent Runtime：注释、命名、leaf module与重构余量
 
 ## 已确认事实
 
 - 研究对象版本：`2.1.88`
 - 上游源码目录：`./claude-code-source-code`
+- prompt 深线不能只写成“模型提示词设计”，还应稳定写成“固定主语 + 压短下一步 + 低成本接手 + protocol transcript 编译”的协作接口
+- “有效自由”当前应被视为安全、审批、能力可见性、长输出外置与时间预算共同编排后的结果，而不是“权限给得越大越自由”
+- builder 侧当前最值得下沉的方法不是目录模仿，而是 leaf module、single source、config / deps seam、snapshot 语义与显式状态机这几类可迁移制度
 - 公开源码中大量能力受 `feature()` 影响
 - 技能、工具、权限、压缩、远程、子代理都是 Claude Code 的核心能力层，不是边角模块
 - SDK 面不仅有 query，还有会话、session 管理、控制协议与 SDK-MCP server 面

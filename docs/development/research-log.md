@@ -9,6 +9,33 @@
 
 ## 已确认结论
 
+### A0. 协作接口、有效自由与治理界面
+
+- Sticky Prompt 只从真实用户主语与非 meta 的 `queued_command` 中提炼可见锚点，还会裁掉 system reminder 与无意义前缀，说明它在维护的是“当前到底在回应什么”的协作接口，而不是简单 UI 装饰。
+- Suggestion 只在输入为空且 assistant 未响应时出现，且生成目标被明确约束为“预测用户自然会输入什么”，说明它服务的是低成本接手，而不是替用户发明计划。
+- protocol transcript 与 UI transcript 不是同一物：部分 system message 会并入 user turn，不可用的 `tool_reference` 会被剥离，还会为 server 采样稳定性注入额外 sibling text，因此 prompt 纠偏应优先补新边界，而不是机械复述完整聊天历史。
+- Session Memory 通过隔离上下文和 forked agent 更新 memory 文件，说明它保存的是未来继续执行需要的最小语义体，而不是普通聊天纪要。
+- permission mode 的设计目标是“有效自由”而不是“最大自由”：deny rule、ask rule、content-specific ask 与 safety check 都能在高权限路径上继续生效，bypass 不是对边界的取消。
+- Permission Prompt 的 accept / reject 两侧都支持附带反馈，说明审批在作者心中是协商接口，而不是单纯停顿；远程 channel 审批也被设计成结构化事件 race，而不是文本聊天猜测。
+- deferred tools delta、tool result replacement state 与 token budget continuation 共同说明：Claude Code 更偏爱按需出现能力、外置大结果、在边际收益下降时主动停止，而不是用全量能力和超长回合换取假自由。
+- builder 侧的核心经验不是“目录像不像”，而是把单一真相文件、leaf module、config / deps seam、snapshot 语义和显式状态机写进代码边界，让维护者读代码时直接读到治理规则。
+
+证据:
+
+- `claude-code-source-code/src/components/VirtualMessageList.tsx:145-180`
+- `claude-code-source-code/src/components/VirtualMessageList.tsx:946-1035`
+- `claude-code-source-code/src/hooks/usePromptSuggestion.ts:15-176`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-270`
+- `claude-code-source-code/src/services/SessionMemory/sessionMemory.ts:303-345`
+- `claude-code-source-code/src/utils/messages.ts:2078-2148`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1169-1280`
+- `claude-code-source-code/src/components/permissions/PermissionPrompt.tsx:30-212`
+- `claude-code-source-code/src/services/mcp/channelPermissions.ts:1-240`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-93`
+- `claude-code-source-code/src/query/config.ts:8-45`
+- `claude-code-source-code/src/query/deps.ts:8-39`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+
 ### A. 启动与入口
 
 - CLI 先走 fast path，再决定是否 import `main.js`。
