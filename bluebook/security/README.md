@@ -399,4 +399,6 @@
 - 想把 `94` 的长文压成一张资格对象矩阵，快速看出不同 artifact 的 boundary binding、freshness proof、revocation gate 与 regrant path：`94` -> `appendix/78`
 - 想看为什么即使资格对象已经定义清楚，失效对象也不能靠残留工件直接回到 `current`，而必须先走 `pending`、`reload` 或 `fresh-session` 这类重签发路径：`94` -> `95`
 - 想把 `95` 的长文压成一张重签发矩阵，快速看出不同 artifact 的 revocation trigger、regrant path 与 forbidden shortcut：`95` -> `appendix/79`
+- 想看为什么即使重签发协议已经成立，`needsRefresh`、`pending`、retryable 与 `fresh-session-fallback` 这些中间态仍不能压成同一句“正在恢复”：`95` -> `96`
+- 想把 `96` 的长文压成一张中间态矩阵，快速看出不同 state 的 meaning、allowed promise 与 next action：`96` -> `appendix/80`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
