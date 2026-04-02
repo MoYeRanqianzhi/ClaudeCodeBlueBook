@@ -109,6 +109,7 @@
 87. [86-安全恢复承诺诚实性：为什么--continue、pointer与resume提示不是帮助文案，而是对边界可恢复性的安全承诺](86-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E6%89%BF%E8%AF%BA%E8%AF%9A%E5%AE%9E%E6%80%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88--continue%E3%80%81pointer%E4%B8%8Eresume%E6%8F%90%E7%A4%BA%E4%B8%8D%E6%98%AF%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%88%EF%BC%8C%E8%80%8C%E6%98%AF%E5%AF%B9%E8%BE%B9%E7%95%8C%E5%8F%AF%E6%81%A2%E5%A4%8D%E6%80%A7%E7%9A%84%E5%AE%89%E5%85%A8%E6%89%BF%E8%AF%BA.md)
 88. [87-安全恢复资格签发权：为什么不是任何局部signal都配说仍可恢复，而必须由掌握边界真相的控制层签字](87-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%B5%84%E6%A0%BC%E7%AD%BE%E5%8F%91%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%80%E9%83%A8signal%E9%83%BD%E9%85%8D%E8%AF%B4%E4%BB%8D%E5%8F%AF%E6%81%A2%E5%A4%8D%EF%BC%8C%E8%80%8C%E5%BF%85%E9%A1%BB%E7%94%B1%E6%8E%8C%E6%8F%A1%E8%BE%B9%E7%95%8C%E7%9C%9F%E7%9B%B8%E7%9A%84%E6%8E%A7%E5%88%B6%E5%B1%82%E7%AD%BE%E5%AD%97.md)
 89. [88-安全恢复资格证据门槛：为什么即使signer正确，仍可恢复也必须建立在最小truth-bundle之上](88-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%B5%84%E6%A0%BC%E8%AF%81%E6%8D%AE%E9%97%A8%E6%A7%9B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8D%B3%E4%BD%BFsigner%E6%AD%A3%E7%A1%AE%EF%BC%8C%E4%BB%8D%E5%8F%AF%E6%81%A2%E5%A4%8D%E4%B9%9F%E5%BF%85%E9%A1%BB%E5%BB%BA%E7%AB%8B%E5%9C%A8%E6%9C%80%E5%B0%8Ftruth-bundle%E4%B9%8B%E4%B8%8A.md)
+90. [89-安全恢复资格降级语法：为什么no-candidate、invalid-id、dead-session、fresh-session-fallback与retryable不能压成同一句无法恢复](89-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%B5%84%E6%A0%BC%E9%99%8D%E7%BA%A7%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88no-candidate%E3%80%81invalid-id%E3%80%81dead-session%E3%80%81fresh-session-fallback%E4%B8%8Eretryable%E4%B8%8D%E8%83%BD%E5%8E%8B%E6%88%90%E5%90%8C%E4%B8%80%E5%8F%A5%E6%97%A0%E6%B3%95%E6%81%A2%E5%A4%8D.md)
 85. [84-安全失效边界复活禁令：为什么最危险的不是脏状态，而是已归档旧session被重新认证为当前边界](84-%E5%AE%89%E5%85%A8%E5%A4%B1%E6%95%88%E8%BE%B9%E7%95%8C%E5%A4%8D%E6%B4%BB%E7%A6%81%E4%BB%A4%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%80%E5%8D%B1%E9%99%A9%E7%9A%84%E4%B8%8D%E6%98%AF%E8%84%8F%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E6%98%AF%E5%B7%B2%E5%BD%92%E6%A1%A3%E6%97%A7session%E8%A2%AB%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%81%E4%B8%BA%E5%BD%93%E5%89%8D%E8%BE%B9%E7%95%8C.md)
 
 ## 附录目录
@@ -227,6 +228,8 @@
 - 想直接看不同恢复表面到底由谁签字、依赖哪些 truth inputs、最多配说到哪一步，以及哪些 overclaim 绝不能说：看 `appendix/71`
 - 想直接看为什么即使 signer 已经正确仍然不够，以及“仍可恢复”还必须满足哪些最小证据门槛：看 `88`
 - 想直接看不同 evidence piece 到底由谁提供、最低 threshold 是什么、缺失后该降级成什么：看 `appendix/72`
+- 想直接看为什么即使证据门槛已经建立仍然不够，以及不同恢复失败为什么还必须继续分层改口，而不能压成同一句“无法恢复”：看 `89`
+- 想直接看不同 resume result 到底代表什么、下一步该做什么、何时该清理什么，以及哪些压平说法绝不能再说：看 `appendix/73`
 
 ## 和其他目录的关系
 
@@ -376,4 +379,6 @@
 - 想把 `87` 的长文压成一张签发矩阵，快速看出不同 surface 的 signer、truth inputs 与 forbidden overclaim：`87` -> `appendix/71`
 - 想看为什么即使 signer 已经找对，单个 signal 仍然不够，以及 why resumability 必须建立在最小 truth bundle 上：`87` -> `88`
 - 想把 `88` 的长文压成一张证据矩阵，快速看出不同 evidence piece、owner、threshold 与 failure downgrade：`88` -> `appendix/72`
+- 想看为什么即使 truth bundle 已经齐全，系统仍不能把所有失败统一压成 generic failed，而必须继续区分 no-candidate、dead-session、fresh fallback 与 retryable：`88` -> `89`
+- 想把 `89` 的长文压成一张降级矩阵，快速看出不同 resume result、meaning、next action 与 forbidden flattening：`89` -> `appendix/73`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
