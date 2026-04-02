@@ -1415,6 +1415,9 @@
 - prompt 深线当前还应继续上升到“语义压缩器”层：session memory、prompt suggestion、stop hooks、tool result fate freeze 共同保住的是可继续行动的语义，而不是更短原文。
 - 安全与省 token 深线当前还应继续上升到“资源宪法”层：runtime 在统一分配能力、时间、注意力与权威，模型不是资源主权拥有者。
 - 源码先进性当前还应继续上升到“演化制度设计”层：注释、leaf module、snapshot、narrow extraction 在保留下一次重构可能性，不只是体现作者经验。
+- prompt 深线当前还应继续上升到“协调成本控制面”层：prompt 不只组织模型，也在组织人类如何接手、确认、切换与纠偏。
+- 安全与省 token 深线当前还应继续上升到“有效自由”层：ask/deny/bypass/deferred/externalize 共同目标不是更保守，而是让约束不破坏高行动力。
+- 源码先进性当前还应继续上升到“源码即治理界面”层：命名、注释、显式边界和 dependency-free 小模块都在降低误改、误扩展与制度失忆成本。
 
 ## 下一步待办
 

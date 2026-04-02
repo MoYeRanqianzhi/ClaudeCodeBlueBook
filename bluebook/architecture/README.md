@@ -41,6 +41,7 @@
 - [54-从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放](54-%E4%BB%8EUI%20Transcript%E5%88%B0Protocol%20Transcript%EF%BC%9APrompt%E4%B8%8D%E6%98%AF%E8%81%8A%E5%A4%A9%E8%AE%B0%E5%BD%95%E7%9A%84%E7%9B%B4%E6%8E%A5%E9%87%8D%E6%94%BE.md)
 - [61-工作语法机：Claude Code如何把软件工程世界编译成模型可行动的Protocol Surface](61-%E5%B7%A5%E4%BD%9C%E8%AF%AD%E6%B3%95%E6%9C%BA%EF%BC%9AClaude%20Code%E5%A6%82%E4%BD%95%E6%8A%8A%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C%E7%BC%96%E8%AF%91%E6%88%90%E6%A8%A1%E5%9E%8B%E5%8F%AF%E8%A1%8C%E5%8A%A8%E7%9A%84Protocol%20Surface.md)
 - [64-语义压缩器：Claude Code如何把工作现场压成可继续行动的最小语义体](64-%E8%AF%AD%E4%B9%89%E5%8E%8B%E7%BC%A9%E5%99%A8%EF%BC%9AClaude%20Code%E5%A6%82%E4%BD%95%E6%8A%8A%E5%B7%A5%E4%BD%9C%E7%8E%B0%E5%9C%BA%E5%8E%8B%E6%88%90%E5%8F%AF%E7%BB%A7%E7%BB%AD%E8%A1%8C%E5%8A%A8%E7%9A%84%E6%9C%80%E5%B0%8F%E8%AF%AD%E4%B9%89%E4%BD%93.md)
+- [67-协调成本控制面：Prompt如何同时组织模型推理与人类接手](67-%E5%8D%8F%E8%B0%83%E6%88%90%E6%9C%AC%E6%8E%A7%E5%88%B6%E9%9D%A2%EF%BC%9APrompt%E5%A6%82%E4%BD%95%E5%90%8C%E6%97%B6%E7%BB%84%E7%BB%87%E6%A8%A1%E5%9E%8B%E6%8E%A8%E7%90%86%E4%B8%8E%E4%BA%BA%E7%B1%BB%E6%8E%A5%E6%89%8B.md)
 
 ### 5. 协作与隔离平面
 
@@ -62,6 +63,7 @@
 - [56-能力可见性控制平面：Deferred、Delta与最小可见面](56-%E8%83%BD%E5%8A%9B%E5%8F%AF%E8%A7%81%E6%80%A7%E6%8E%A7%E5%88%B6%E5%B9%B3%E9%9D%A2%EF%BC%9ADeferred%E3%80%81Delta%E4%B8%8E%E6%9C%80%E5%B0%8F%E5%8F%AF%E8%A7%81%E9%9D%A2.md)
 - [62-Narrow、Later、Outside：安全设计与省Token设计的统一反扩张运行时](62-Narrow%E3%80%81Later%E3%80%81Outside%EF%BC%9A%E5%AE%89%E5%85%A8%E8%AE%BE%E8%AE%A1%E4%B8%8E%E7%9C%81Token%E8%AE%BE%E8%AE%A1%E7%9A%84%E7%BB%9F%E4%B8%80%E5%8F%8D%E6%89%A9%E5%BC%A0%E8%BF%90%E8%A1%8C%E6%97%B6.md)
 - [65-资源宪法：Claude Code如何统一分配能力、时间、注意力与权威](65-%E8%B5%84%E6%BA%90%E5%AE%AA%E6%B3%95%EF%BC%9AClaude%20Code%E5%A6%82%E4%BD%95%E7%BB%9F%E4%B8%80%E5%88%86%E9%85%8D%E8%83%BD%E5%8A%9B%E3%80%81%E6%97%B6%E9%97%B4%E3%80%81%E6%B3%A8%E6%84%8F%E5%8A%9B%E4%B8%8E%E6%9D%83%E5%A8%81.md)
+- [68-有效自由控制面：为什么约束不是在削弱Claude Code的行动力](68-%E6%9C%89%E6%95%88%E8%87%AA%E7%94%B1%E6%8E%A7%E5%88%B6%E9%9D%A2%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BA%A6%E6%9D%9F%E4%B8%8D%E6%98%AF%E5%9C%A8%E5%89%8A%E5%BC%B1Claude%20Code%E7%9A%84%E8%A1%8C%E5%8A%A8%E5%8A%9B.md)
 
 ### 7. 工程与底盘平面
 
@@ -80,6 +82,7 @@
 - [58-让依赖图说真话：Leaf Module、Anti-Cycle Seam与Single-Source File](58-%E8%AE%A9%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%B4%E7%9C%9F%E8%AF%9D%EF%BC%9ALeaf%20Module%E3%80%81Anti-Cycle%20Seam%E4%B8%8ESingle-Source%20File.md)
 - [63-可演化内核：Claude Code如何在持续增长中维持不变量](63-%E5%8F%AF%E6%BC%94%E5%8C%96%E5%86%85%E6%A0%B8%EF%BC%9AClaude%20Code%E5%A6%82%E4%BD%95%E5%9C%A8%E6%8C%81%E7%BB%AD%E5%A2%9E%E9%95%BF%E4%B8%AD%E7%BB%B4%E6%8C%81%E4%B8%8D%E5%8F%98%E9%87%8F.md)
 - [66-演化制度设计：Claude Code如何在增长中保留重构可能性](66-%E6%BC%94%E5%8C%96%E5%88%B6%E5%BA%A6%E8%AE%BE%E8%AE%A1%EF%BC%9AClaude%20Code%E5%A6%82%E4%BD%95%E5%9C%A8%E5%A2%9E%E9%95%BF%E4%B8%AD%E4%BF%9D%E7%95%99%E9%87%8D%E6%9E%84%E5%8F%AF%E8%83%BD%E6%80%A7.md)
+- [69-源码即治理界面：注释、命名与显式边界如何降低误改成本](69-%E6%BA%90%E7%A0%81%E5%8D%B3%E6%B2%BB%E7%90%86%E7%95%8C%E9%9D%A2%EF%BC%9A%E6%B3%A8%E9%87%8A%E3%80%81%E5%91%BD%E5%90%8D%E4%B8%8E%E6%98%BE%E5%BC%8F%E8%BE%B9%E7%95%8C%E5%A6%82%E4%BD%95%E9%99%8D%E4%BD%8E%E8%AF%AF%E6%94%B9%E6%88%90%E6%9C%AC.md)
 
 ### 8. 宿主、前台与产品边界平面
 
@@ -107,12 +110,14 @@
 - 想看 UI transcript 为什么还要在 API 边界前被重新编译成 protocol transcript：`53 -> 54`
 - 想看 prompt 为什么还能再上升成“工作语法机”：`39 -> 53 -> 54 -> 61`
 - 想看 prompt 为什么还能继续上升成“语义压缩器”：`53 -> 61 -> 64`
+- 想看 prompt 为什么还在继续压低人类-模型协调成本：`26 -> 35 -> 64 -> 67`
 - 想看“最小可见面”怎样把 deferred、delta 与 managed-only 输入写成统一控制平面：`51 -> 54 -> 56`
 - 想看多 Agent、workflow 与隔离：`10 -> 30 -> 34 -> 45`
 - 想看权限、安全、治理与 token 预算统一图：`05 -> 11 -> 19 -> 23 -> 32 -> 37 -> 50 -> 51`
 - 想看安全为什么更像输入边界控制平面而不是事后检查：`19 -> 23 -> 50 -> 51`
 - 想看安全和省 token 为什么其实共享 `Narrow / Later / Outside` 三种动作：`21 -> 37 -> 51 -> 56 -> 62`
 - 想看安全、省 token 与治理为什么还能再上升成“资源宪法”：`50 -> 51 -> 62 -> 65`
+- 想看为什么约束反而能换来更高行动力：`23 -> 62 -> 65 -> 68`
 - 想看宿主控制平面：`13 -> 14 -> 15 -> 17 -> 59`
 - 想看为什么协议全集、权威主路径与 consumer subset 必须分三层：`13 -> 14 -> 17 -> 59`
 - 想看远程失败为什么也是分层语义而不是“断线重连”：`15 -> 16 -> 48`
@@ -122,6 +127,7 @@
 - 想看热点大文件为什么仍然可以是成熟架构的一部分：`52 -> 55`
 - 想看源码先进性为什么最终会收束成“可演化内核”：`41 -> 47 -> 52 -> 58 -> 63`
 - 想看源码先进性为什么还能继续上升成“演化制度设计”：`63 -> 66`
+- 想看源码为什么还在同时服务机器执行和人类治理：`58 -> 66 -> 69`
 - 想看预算观测、状态回写与 cache break 为什么应该合写成“可解释运行时”：`17 -> 43 -> 57`
 - 想看状态回写为什么属于 durability，而不是遥测附属层：`17 -> 25 -> 57 -> 60`
 - 想看 leaf module、anti-cycle seam 与 single-source file 为什么同属一套依赖图治理方法：`41 -> 58`

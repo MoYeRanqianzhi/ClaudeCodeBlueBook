@@ -216,6 +216,18 @@
 
 - `architecture/63 -> architecture/66 -> philosophy/50 -> philosophy/53`
 
+### 为什么好的Prompt同时组织模型与人类接手路径
+
+- `architecture/64 -> architecture/67 -> philosophy/51 -> philosophy/54`
+
+### 为什么真正的自由不是少约束，而是约束不再破坏行动
+
+- `architecture/62 -> architecture/68 -> philosophy/52 -> philosophy/55`
+
+### 为什么可读性不是修辞，而是系统治理能力
+
+- `architecture/66 -> architecture/69 -> philosophy/53 -> philosophy/56`
+
 ### 为什么调优上下文前必须先看预算结构
 
 - `guides/07 -> api/32 -> architecture/43 -> philosophy/22 -> philosophy/31`
