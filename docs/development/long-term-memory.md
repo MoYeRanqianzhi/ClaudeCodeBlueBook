@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主迁移失真 / migration distortion casebook”继续推进到“宿主迁移纠偏 / correction guide”层。
+- 新增结论：
+  - Prompt 宿主迁移如果要真正纠偏，必须先把截图交接、摘要 handoff、黑箱 cache 曲线与 `stop_reason` 幻觉压回 `compiled request truth`、protocol truth、cache explainability 与 continue qualification。
+  - 治理宿主迁移如果要真正纠偏，必须先把 mode 崇拜、权限账本缺席、假窗口对齐与默认继续压回 authority source、pending permission ledger、decision window、continuation gate 与 rollback object。
+  - 结构宿主迁移如果要真正纠偏，必须先把伪恢复采纳、指针健康幻觉、写回分叉与成功率崇拜压回 authority state、resume 顺序、recovery boundary、writeback 主路径与 anti-zombie 结果面。
+- 新增目录责任：
+  - `navigation/49` 负责宿主迁移纠偏入口。
+  - `guides/57-59` 负责三类宿主迁移失真的固定纠偏顺序、拒收规则与模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些信号在说谎”，还要写“纠偏时先救哪个对象、哪些现象必须立即拒收、模板最小骨架应是什么”。
+  - 每次继续深化都要回答“当前纠偏顺序保护的是单一真相，还是只是在修补一个更高级的替身”。
 - 蓝皮书已经从“宿主迁移演练 / handoff-gray-rollback playbook”继续推进到“宿主迁移失真 / migration distortion casebook”层。
 - 新增结论：
   - Prompt 宿主迁移即使已经有交接包、灰度记录与回退演练，仍最容易死于 prompt 摘要 handoff、cache explainability 黑箱化、protocol truth 缺席与 continue qualification 幻觉。
