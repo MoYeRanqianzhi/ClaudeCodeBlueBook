@@ -403,4 +403,6 @@
 - 想把 `96` 的长文压成一张中间态矩阵，快速看出不同 state 的 meaning、allowed promise 与 next action：`96` -> `appendix/80`
 - 想看为什么即使中间态语法已经分清，每一种状态仍只能说到自己的承诺上限，不能把 `pending`、`reconnecting` 或 `needsRefresh` 说成 `active`：`96` -> `97`
 - 想把 `97` 的长文压成一张承诺矩阵，快速看出不同 state 的 lexical ceiling、forbidden stronger claim 与 default route：`97` -> `appendix/81`
+- 想看为什么即使语言上限已经守住，每一种资格状态仍必须继续绑定唯一 dominant route，而不能把修复选择权外包给用户自己猜：`97` -> `98`
+- 想把 `98` 的长文压成一张动作路由矩阵，快速看出不同 state 的 dominant route、route owner 与 forbidden adjacent path：`98` -> `appendix/82`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
