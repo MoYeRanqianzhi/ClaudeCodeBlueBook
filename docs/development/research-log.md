@@ -9,6 +9,33 @@
 
 ## 已确认结论
 
+### A00. 协作语法、资源定价与未来维护者消费者
+
+- Claude Code 的 prompt 魔力更准确地说来自“先规定协作语法，再让模型发言”：system prompt 先决定谁代表谁发言，stop hooks 又把 cache-safe 协作上下文存下供 suggestion、session memory 与旁路 fork 复用，说明 prompt 的真正形态是跨当前、下一步和接手后的协作状态，而不是一次性文案。
+- UI transcript 与 protocol transcript 必须分离：显示层需要 progress、虚拟消息和交互提示，执行层需要结构合法、可继续推理的协议消息；compact / resume 之后还要补回 tool_use/tool_result 与 thinking 不变量，说明模型消费的从来不是前台原样历史。
+- sticky prompt、suggestion、session memory 应被理解成同一协作接口在不同时间尺度上的投影：sticky 管当前主语，suggestion 管下一步输入，session memory 管压缩后的长期接手连续性。
+- Claude Code 的安全不是单点拦截器，而是资源定价秩序：mode 在给动作定价，tool visibility 在给能力定价，externalization 在给上下文席位定价，token continuation 在给时间定价。
+- `bypassPermissions` 不是无限自由，而是提高某些动作的通行级别；content-specific ask、`requiresUserInteraction` 与 safety check 等更高价格仍然存在，说明系统追求的是有效自由而不是最大裸露面。
+- 审批在实现上是多路协商协议而不是单个弹窗：本地 UI、SDK host、bridge、hook、channel relay、classifier 围绕同一请求并行竞速，谁先给出合法决定，谁就结束等待。
+- 源码先进性不在静态分层本身，而在未来维护者被当成正式消费者：`DANGEROUS`、`single choke point`、`IMPORTANT` 这类命名和注释都在提前暴露未来修改的代价与条件。
+- 命名、注释、leaf module、config / deps seam、snapshot、state machine 共同构成同一治理制度：用显式边界保护未来维护与未来重构，而不是只服务当前执行。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-127`
+- `claude-code-source-code/src/constants/prompts.ts:105-127`
+- `claude-code-source-code/src/query/stopHooks.ts:84-120`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:232-395`
+- `claude-code-source-code/src/components/VirtualMessageList.tsx:145-180`
+- `claude-code-source-code/src/components/VirtualMessageList.tsx:946-1035`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1795-1830`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:503-640`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1238-1280`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:27-38`
+- `claude-code-source-code/src/state/onChangeAppState.ts:50-91`
+- `claude-code-source-code/src/utils/fingerprint.ts:40-63`
+
 ### A0. 协作接口、有效自由与治理界面
 
 - Sticky Prompt 只从真实用户主语与非 meta 的 `queued_command` 中提炼可见锚点，还会裁掉 system reminder 与无意义前缀，说明它在维护的是“当前到底在回应什么”的协作接口，而不是简单 UI 装饰。
