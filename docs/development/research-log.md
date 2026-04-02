@@ -563,6 +563,24 @@
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00y. artifact drift casebook 之后，下一层应进入 artifact validator / linter 层
+
+- 当 `navigation/28 + casebooks/19-21` 已经把 Prompt、治理与结构三条线的工件级失真原型写出来之后，下一步最值钱的不是继续补更多漂移故事，而是补 artifact validator / linter：把 shared header、hard contract 与 drift 原型编译成自动校验、reviewer gate 与 handoff reject。
+- `guides/39` 应把 Prompt 线的 validator 写成共享对象校验：先锁 `prompt_object_id`、`authority_source`、`assembly_path`、`compiled_request_diff_ref`、`stable_bytes_ledger_ref`、`lawful_forgetting_abi_ref` 与 `next_step_guard`，再让宿主卡、CI 附件、评审卡与交接包围绕同一 `compiled request object` 被持续验证；这样才能把 Prompt 魔力继续固定在 shared object continuity，而不是退回文案崇拜。
+- `guides/40` 应把治理线的 validator 写成统一判断链校验：先锁 `governance_object_id`、`decision_window`、`winner_source`、`control_arbitration_truth`、`failure_semantics`、`rollback_object` 与 `next_action`，再让状态色、计数、verdict 与交接摘要失去独立夺权资格；这样才能把安全与省 token 继续固定在决策增益判断，而不是退回局部 KPI。
+- `guides/41` 应把结构线的 validator 写成对象级结构校验：先锁 `structure_object_id`、`authoritative_path`、`current_read_path`、`current_write_path`、`recovery_asset_ledger`、`anti_zombie_evidence`、`danger_paths` 与 `rollback_object`，再让目录图、恢复成功率与作者说明失去独立夺权资格；这样才能把源码先进性继续固定在 shared structure object，而不是退回目录审美。
+- `navigation/29` 因而成为必要入口：`28` 负责知道“这些工件最常怎样重新说谎”，`29` 负责知道“系统应怎样正式拒绝这些谎言”，避免蓝皮书重新停在反例识别层而没有执行收束层。
+- `philosophy/70` 因而成为必要收束：真正成熟的校验，不是字段齐全，而是共享对象能拒绝漂移；没有这层收束，validator 很快又会退回 checklist 与格式巡检。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

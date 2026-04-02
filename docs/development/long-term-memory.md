@@ -355,6 +355,12 @@
 - `casebooks/20` 当前应负责治理 artifact 失真：窗口卡退回状态色、仲裁附件退回计数、评审卡退回 verdict 与交接包失去回退对象
 - `casebooks/21` 当前应负责结构 artifact 失真：权威路径卡退回目录图、恢复附件只剩成功率、评审卡退回结构夸奖与交接包回到作者说明
 - `navigation/28` 的职责应稳定为“artifact samplebook 层如何进入 artifact drift casebook 层”，避免 `27` 同时承担最小样例与工件级失真两类职责
+- 当 `navigation/28 + casebooks/19-21` 稳定后，下一步最值钱的不是继续补更多漂移叙述，而是补 artifact validator / linter：把 shared header、hard contract 与 drift 原型编译成 reviewer gate、CI gate 与 handoff reject
+- `guides/39` 当前应负责 Prompt artifact validator：把 prompt_object、compiled_request_diff、stable bytes、lawful forgetting ABI 与 next-step guard 压成统一 hard fail 与 reject rule
+- `guides/40` 当前应负责治理 artifact validator：把 governance object、decision window、arbitration truth、failure semantics、rollback object 与 next action 压成统一 hard fail 与 reject rule
+- `guides/41` 当前应负责结构 artifact validator：把 structure object、authoritative path、recovery asset ledger、anti-zombie evidence、danger paths 与 rollback object 压成统一 hard fail 与 reject rule
+- `navigation/29` 的职责应稳定为“artifact drift casebook 层如何进入 artifact validator / linter 层”，避免 `28` 同时承担反例识别与自动校验两类职责
+- `philosophy/70` 当前应负责把“成熟校验 = 共享对象能拒绝漂移”稳定成新的长期判断
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

@@ -42,6 +42,9 @@
 36. [36-Prompt Host Implementation审读模板：编译真相、稳定字节、合法遗忘与交接闸门](36-Prompt%20Host%20Implementation%E5%AE%A1%E8%AF%BB%E6%A8%A1%E6%9D%BF%EF%BC%9A%E7%BC%96%E8%AF%91%E7%9C%9F%E7%9B%B8%E3%80%81%E7%A8%B3%E5%AE%9A%E5%AD%97%E8%8A%82%E3%80%81%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E4%B8%8E%E4%BA%A4%E6%8E%A5%E9%97%B8%E9%97%A8.md)
 37. [37-治理 Host Implementation审读模板：决策窗口、仲裁证据、对象升级与回退边界](37-%E6%B2%BB%E7%90%86%20Host%20Implementation%E5%AE%A1%E8%AF%BB%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%86%B3%E7%AD%96%E7%AA%97%E5%8F%A3%E3%80%81%E4%BB%B2%E8%A3%81%E8%AF%81%E6%8D%AE%E3%80%81%E5%AF%B9%E8%B1%A1%E5%8D%87%E7%BA%A7%E4%B8%8E%E5%9B%9E%E9%80%80%E8%BE%B9%E7%95%8C.md)
 38. [38-结构 Host Implementation审读模板：权威路径、恢复资产、反zombie 与危险路径交接](38-%E7%BB%93%E6%9E%84%20Host%20Implementation%E5%AE%A1%E8%AF%BB%E6%A8%A1%E6%9D%BF%EF%BC%9A%E6%9D%83%E5%A8%81%E8%B7%AF%E5%BE%84%E3%80%81%E6%81%A2%E5%A4%8D%E8%B5%84%E4%BA%A7%E3%80%81%E5%8F%8Dzombie%20%E4%B8%8E%E5%8D%B1%E9%99%A9%E8%B7%AF%E5%BE%84%E4%BA%A4%E6%8E%A5.md)
+39. [39-Prompt Artifact Validator模板：共享对象、稳定字节、合法遗忘与交接拒收](39-Prompt%20Artifact%20Validator%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%85%B1%E4%BA%AB%E5%AF%B9%E8%B1%A1%E3%80%81%E7%A8%B3%E5%AE%9A%E5%AD%97%E8%8A%82%E3%80%81%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E4%B8%8E%E4%BA%A4%E6%8E%A5%E6%8B%92%E6%94%B6.md)
+40. [40-治理 Artifact Validator模板：决策窗口、仲裁证据、回退对象与行动语义拒收](40-%E6%B2%BB%E7%90%86%20Artifact%20Validator%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%86%B3%E7%AD%96%E7%AA%97%E5%8F%A3%E3%80%81%E4%BB%B2%E8%A3%81%E8%AF%81%E6%8D%AE%E3%80%81%E5%9B%9E%E9%80%80%E5%AF%B9%E8%B1%A1%E4%B8%8E%E8%A1%8C%E5%8A%A8%E8%AF%AD%E4%B9%89%E6%8B%92%E6%94%B6.md)
+41. [41-结构 Artifact Validator模板：权威路径、恢复资产、anti-zombie 与交接拒收](41-%E7%BB%93%E6%9E%84%20Artifact%20Validator%E6%A8%A1%E6%9D%BF%EF%BC%9A%E6%9D%83%E5%A8%81%E8%B7%AF%E5%BE%84%E3%80%81%E6%81%A2%E5%A4%8D%E8%B5%84%E4%BA%A7%E3%80%81anti-zombie%20%E4%B8%8E%E4%BA%A4%E6%8E%A5%E6%8B%92%E6%94%B6.md)
 
 ## 按使用目标阅读
 
@@ -89,6 +92,7 @@
 - 想把 host implementation 的检查点和反例继续反压成统一审读模板，而不是继续靠资深 reviewer 心法：`35 -> ../navigation/25 -> 36 -> 37 -> 38`
 - 想把这些统一审读模板继续压成正式共享工件协议，而不是继续靠不同角色各自导出材料：`../navigation/26 -> ../api/37 -> ../api/38 -> ../api/39`
 - 想把这些统一审读模板继续落成正式宿主卡、CI附件、评审卡与交接包协议，而不是继续靠团队本地约定：`../navigation/26 -> ../api/37 -> ../api/38 -> ../api/39`
+- 想把 artifact drift 继续编译成自动校验、reviewer gate 与 handoff reject，而不是停在反例识别：`../navigation/29 -> 39 -> 40 -> 41 -> ../philosophy/70`
 
 ## 与其他目录的边界
 
@@ -99,7 +103,8 @@
 - 需要具体失败样本、事故原型与反模式样本库时切到 [../casebooks/README.md](../casebooks/README.md)
 - 再往下一层，应由 `../navigation/25 -> 36-38` 继续回答“怎样把 host implementation 检查点与失真样本统一压成 builder-facing 审读模板”。
 - 再往下一层，应由 `../navigation/26 -> ../api/37-39` 继续回答“怎样把统一审读对象压成宿主卡、CI附件、评审卡与 handoff package 的正式共享工件协议”。
-- 再往下一层，应由 `../navigation/26 -> ../api/37-39` 继续回答“怎样把这些统一审读模板真正压成共享工件协议”。
+- 再往下一层，应由 `../navigation/29 -> 39-41` 继续回答“怎样把 shared header、hard contract 与 drift 原型编译成 validator / linter / reject rule”。
+- `../philosophy/70` 负责回答“为什么真正成熟的校验，不是字段齐全，而是共享对象能拒绝漂移”。
 
 后续继续补：
 

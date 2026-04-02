@@ -67,4 +67,5 @@
 - 再往下一层，应由 `../navigation/25 -> ../guides/36-38` 继续回答“怎样把这些实施级失真反压成统一审读模板”。
 - `casebooks/19-21` 继续回答“这些最小共享工件在 artifact 层最常会怎样重新退回原文、计数、状态色、目录图与作者说明等局部真相”。
 - 再往下一层，应由 `../navigation/28 -> ../casebooks/19-21` 继续回答“shared artifact 明明已经存在时，四类角色最常怎样各自重新说谎”。
+- 再往下一层，应由 `../navigation/29 -> ../guides/39-41` 继续回答“怎样把这些 drift 原型编译成 validator / linter / reject rule”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。
