@@ -90,7 +90,7 @@
 - 想把这套 shared Evidence Envelope 继续真正落成宿主、CI、评审与交接检查点，再读 [navigation/23-Host Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点](navigation/23-Host%20Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点.md)
 - 想直接看这些检查点在实施里最常怎样重新退回形式主义，再读 [navigation/24-Host Implementation反例导航：宿主只看卡片、CI只看通过、评审只看顺序与交接只看导出包](navigation/24-Host%20Implementation反例导航：宿主只看卡片、CI只看通过、评审只看顺序与交接只看导出包.md)
 - 想把这些实施级失真继续反压成统一审读模板，再读 [navigation/25-Host Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计](navigation/25-Host%20Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计.md)
-- 想把这些统一审读模板继续落成宿主卡、CI附件、评审卡与交接包的正式协议，再读 [navigation/26-Host Artifact Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象](navigation/26-Host%20Artifact%20Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象.md)
+- 想把这些统一审读模板继续压成宿主卡、CI附件、评审卡与交接包共享的正式工件协议，再读 [navigation/26-Host Artifact Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象](navigation/26-Host%20Artifact%20Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -428,3 +428,4 @@
 - [使用专题](guides/README.md)
 - [风险与治理专题](risk/README.md)
 - [开发与持久化记忆](../docs/README.md)
+- 想直接看这些统一审读对象怎样继续被压成正式共享工件协议，再读 [navigation/26-Host Artifact Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象](navigation/26-Host%20Artifact%20Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象.md)
