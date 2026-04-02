@@ -407,4 +407,6 @@
 - 想把 `98` 的长文压成一张动作路由矩阵，快速看出不同 state 的 dominant route、route owner 与 forbidden adjacent path：`98` -> `appendix/82`
 - 想看为什么即使正确默认动作已经存在，系统仍必须显式禁止那些看起来合理、却会破坏资格真相的近邻错路：`98` -> `99`
 - 想把 `99` 的长文压成一张禁令矩阵，快速看出不同 state 的 dominant route、forbidden adjacent path 与 block reason：`99` -> `appendix/83`
+- 想看为什么即使用户已经走上正确修复路径，系统仍不能立刻宣布资格已恢复，而必须等待对应 completion-signer 签字：`99` -> `100`
+- 想把 `100` 的长文压成一张完成矩阵，快速看出不同 action 的 completion-signer、completion signal 与 forbidden premature success：`100` -> `appendix/84`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
