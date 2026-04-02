@@ -72,6 +72,9 @@
 53. [53-Prompt宿主修复稳态纠偏执行手册：correction card、recovery verdict order、requalification drill与threshold reinstatement drill](53-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Acorrection%20card%E3%80%81recovery%20verdict%20order%E3%80%81requalification%20drill%E4%B8%8Ethreshold%20reinstatement%20drill.md)
 54. [54-治理宿主修复稳态纠偏执行手册：correction card、correction verdict order、capability recustody与threshold rebinding drill](54-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Acorrection%20card%E3%80%81correction%20verdict%20order%E3%80%81capability%20recustody%E4%B8%8Ethreshold%20rebinding%20drill.md)
 55. [55-结构宿主修复稳态纠偏执行手册：correction card、correction verdict order、archive restitution、re-entry threshold与reopen responsibility drill](55-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Acorrection%20card%E3%80%81correction%20verdict%20order%E3%80%81archive%20restitution%E3%80%81re-entry%20threshold%E4%B8%8Ereopen%20responsibility%20drill.md)
+56. [56-Prompt宿主修复稳态纠偏再纠偏执行手册：recorrection card、reject verdict order、protocol repair drill与threshold liability drill](56-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arecorrection%20card%E3%80%81reject%20verdict%20order%E3%80%81protocol%20repair%20drill%E4%B8%8Ethreshold%20liability%20drill.md)
+57. [57-治理宿主修复稳态纠偏再纠偏执行手册：recorrection card、reject verdict order、window refreeze drill、capability liability与threshold rebinding drill](57-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arecorrection%20card%E3%80%81reject%20verdict%20order%E3%80%81window%20refreeze%20drill%E3%80%81capability%20liability%E4%B8%8Ethreshold%20rebinding%20drill.md)
+58. [58-结构宿主修复稳态纠偏再纠偏执行手册：recorrection card、authority-first reject order、single-source seam audit、anti-zombie evidence rebinding与reopen liability drill](58-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arecorrection%20card%E3%80%81authority-first%20reject%20order%E3%80%81single-source%20seam%20audit%E3%80%81anti-zombie%20evidence%20rebinding%E4%B8%8Ereopen%20liability%20drill.md)
 
 ## 按目标阅读
 
@@ -143,7 +146,9 @@
 - 再往下一层，应由 `../navigation/74 -> ../api/72-74 -> ../navigation/75 -> 53-55` 继续回答“怎样把这些稳态纠偏协议继续压成固定 correction card、执行顺序与 re-entry / reopen 责任演练”。
 - 再往下一层，应由 `../navigation/76 -> ../casebooks/49-51` 继续回答“为什么这些宿主修复稳态纠偏执行明明已经存在，仍会重新退回假修正卡、假恢复顺序与假责任演练”。
 - `../navigation/77 -> ../guides/78-80` 继续回答“怎样把这些稳态纠偏执行失真重新压回固定顺序、拒收升级路径与改写模板骨架”。
-- 下一层入口见 `../navigation/78 -> ../api/75-77`，继续回答“怎样把这些稳态纠偏再纠偏继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面”。
-- 再往下一层，应由 `../navigation/79 -> ../playbooks/56-58` 继续回答“怎样把这些稳态纠偏再纠偏协议继续压成固定 correction card、reject 顺序与 re-entry / reopen 责任演练”。
+- `../navigation/78 -> ../api/75-77` 继续回答“怎样把这些稳态纠偏再纠偏继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面”。
+- `../navigation/79 -> 56-58` 继续回答“怎样把这些稳态纠偏再纠偏协议继续压成固定 recorrection card、reject 顺序与 re-entry / reopen 责任演练”。
+- `53-55` 负责 first-order correction execution；`56-58` 负责 correction-of-correction protocol execution。
+- 再往下一层，应由 `../navigation/80 -> ../casebooks/52-54` 继续回答“为什么这些稳态纠偏再纠偏执行明明已经存在，仍会重新退回假 recorrection card、假 reject 顺序与假 reopen 责任演练”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。

@@ -138,6 +138,8 @@
 - 想把这些稳态纠偏继续压成宿主、SDK、CI、评审与交接都能共享的修正对象、拒收升级语义与长期 reopen 责任面，而不是继续停在 builder 心里：`../navigation/74 -> 72 -> 73 -> 74 -> ../guides/75 -> ../guides/76 -> ../guides/77`
 - 想把这些纠偏规则面继续压成固定 correction card、reject 顺序与 re-entry / reopen 责任演练，而不是继续停在 contract 字段层：`../navigation/75 -> ../playbooks/53 -> ../playbooks/54 -> ../playbooks/55`
 - 想把这些稳态纠偏执行失真继续压成宿主、SDK、CI、评审与交接都能共享的再纠偏对象、拒收升级语义与长期 reopen 责任面，而不是继续把 correction prose、mode 平静感与 pointer 健康感误当恢复对象：`../navigation/78 -> 75 -> 76 -> 77 -> ../guides/78 -> ../guides/79 -> ../guides/80`
+- 想把这些再纠偏协议继续压成宿主、SDK、CI、评审与交接都能共享的 recorrection card、reject 顺序与 re-entry / reopen 责任演练，而不是继续停在 rule surface 字段层：`../navigation/79 -> ../playbooks/56 -> ../playbooks/57 -> ../playbooks/58`
+- 想继续看这些再纠偏执行为什么仍会重新退回假 recorrection card、假 reject 顺序与假 reopen 责任演练，而不是误把 recorrection card 当成正式恢复证明：`../navigation/80 -> ../casebooks/52 -> ../casebooks/53 -> ../casebooks/54`
 - 想把 validator / linter 继续压成 machine-readable rule ABI：`../navigation/30 -> 40 -> 41 -> 42 -> ../philosophy/71`
 - 想把这些 rule packet 继续压成最小规则样例、失败样例与 evaluator 接口：`../navigation/31 -> ../playbooks/20 -> ../playbooks/21 -> ../playbooks/22 -> ../philosophy/72`
 - 想把这些样例接口继续接成 replay harness、cross-consumer alignment 与 drift regression lab：`../navigation/32 -> ../playbooks/23 -> ../playbooks/24 -> ../playbooks/25 -> ../philosophy/73`

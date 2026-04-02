@@ -134,7 +134,8 @@
 - `casebooks/49-51` 继续回答“宿主修复稳态纠偏执行明明已经存在，为什么仍会重新退回假修正卡、假恢复顺序、假再托管、伪复证与假责任保留等更高级 correction 幻觉”。
 - 再往下一层，应由 `../navigation/76 -> ../casebooks/49-51` 继续回答“这些 steady-state correction execution 最常怎样死于看起来已经正式 restored 的假修正卡、假恢复顺序与假责任演练”。
 - `../navigation/77 -> ../guides/78-80` 继续回答“怎样把这些 steady-state correction execution 失真重新压回固定顺序、拒收升级路径与改写模板骨架”。
-- 下一层入口见 `../navigation/78 -> ../api/75-77`，继续回答“怎样把这些 steady-state correction-of-correction 继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面”。
-- 再往下一层，应由 `../navigation/79 -> ../playbooks/56-58` 继续回答“怎样把这些 steady-state correction-of-correction protocol 继续压成固定 correction card、reject 顺序与 re-entry / reopen 责任演练”。
+- `../navigation/78 -> ../api/75-77` 继续回答“怎样把这些 steady-state correction-of-correction 继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面”。
+- `../navigation/79 -> ../playbooks/56-58` 继续回答“怎样把这些 steady-state correction-of-correction protocol 继续压成固定 recorrection card、reject 顺序与 re-entry / reopen 责任演练”。
+- 再往下一层，应由 `../navigation/80 -> ../casebooks/52-54` 继续回答“为什么这些 steady-state correction-of-correction execution 明明已经存在，仍会重新退回假 recorrection card、假 reject 顺序与假 reopen 责任演练”。
 - 再往下一层，应由 `../navigation/29 -> ../guides/39-41` 继续回答“怎样把这些 drift 原型编译成 validator / linter / reject rule”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。

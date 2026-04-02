@@ -68,6 +68,17 @@
 - `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
 - `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+
+### A049. 宿主修复稳态纠偏再纠偏协议之后，下一层应进入宿主修复稳态纠偏再纠偏执行层
+
+- Prompt repair steady-state correction-of-correction protocol 即使已经被写成宿主可消费规则面，如果团队不能继续把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 压成同一张 `recorrection card`，Prompt 世界就仍会重新退回 prompt 原文崇拜、UI 历史与默认继续；这说明 Prompt 线下一层最值钱的不是继续补 protocol 解释，而是把 repair steady-state correction-of-correction protocol 压成 execution。
+- Governance repair steady-state correction-of-correction protocol 即使已经被写成宿主可消费规则面，如果团队不能继续把 `authority -> ledger -> decision window -> continuation pricing -> capability liability -> threshold` 当成同一条拒绝免费扩张的控制面来运行，安全设计与省 token 设计就仍会重新拆成 mode 面板、usage dashboard 与保守建议；这说明治理线下一层最值钱的不是继续补 protocol 解释，而是把 repair steady-state correction-of-correction protocol 压成 execution。
+- Structure repair steady-state correction-of-correction protocol 即使已经被写成宿主可消费规则面，如果团队不能继续把 `authority surface`、`single-source`、`resume lineage`、`writeback custody`、`anti-zombie evidence` 与 `reopen liability` 压成同一张 `recorrection card`，源码先进性就仍会继续围绕 pointer、telemetry、archive prose 与作者说明工作；这说明结构线下一层最值钱的不是继续补 protocol 解释，而是把 repair steady-state correction-of-correction protocol 压成 execution。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏协议之后需要继续长出“宿主修复稳态纠偏再纠偏执行层”：
+  - `navigation/79` 负责统一入口。
+  - `playbooks/56-58` 负责三类宿主修复稳态纠偏再纠偏协议的 `recorrection card`、`reject verdict order` 与 `re-entry / reopen` 责任演练。
+- 这也意味着 `74-79` 应被视为一条连续小循环，而不是六篇并列文章：`纠偏协议 -> 纠偏执行 -> 纠偏执行失真 -> 再纠偏 -> 再纠偏协议 -> 再纠偏执行`。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 execution 口号，而是考虑新的 `casebooks/52-54`，把这些 steady-state correction-of-correction execution 最常怎样退回假 `recorrection card`、假 `reject verdict` 与假 `reopen liability` 写成新的反例层。
 - `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
 
 ### A045. 宿主修复稳态纠偏协议之后，下一层应进入宿主修复稳态纠偏执行层
