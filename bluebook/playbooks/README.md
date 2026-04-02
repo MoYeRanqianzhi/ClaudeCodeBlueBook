@@ -39,6 +39,9 @@
 20. [20-Prompt Artifact Rule Sample Kit：Shared Object、Stable Bytes、Lawful Forgetting 与 Rewrite Hint 最小规则样例](20-Prompt%20Artifact%20Rule%20Sample%20Kit%EF%BC%9AShared%20Object%E3%80%81Stable%20Bytes%E3%80%81Lawful%20Forgetting%20%E4%B8%8E%20Rewrite%20Hint%20%E6%9C%80%E5%B0%8F%E8%A7%84%E5%88%99%E6%A0%B7%E4%BE%8B.md)
 21. [21-治理 Artifact Rule Sample Kit：Decision Gain、Failure Semantics、Rollback Object 与 Reject 最小规则样例](21-%E6%B2%BB%E7%90%86%20Artifact%20Rule%20Sample%20Kit%EF%BC%9ADecision%20Gain%E3%80%81Failure%20Semantics%E3%80%81Rollback%20Object%20%E4%B8%8E%20Reject%20%E6%9C%80%E5%B0%8F%E8%A7%84%E5%88%99%E6%A0%B7%E4%BE%8B.md)
 22. [22-结构 Artifact Rule Sample Kit：Authoritative Path、Recovery Asset、Anti-Zombie 与 Reject 最小规则样例](22-%E7%BB%93%E6%9E%84%20Artifact%20Rule%20Sample%20Kit%EF%BC%9AAuthoritative%20Path%E3%80%81Recovery%20Asset%E3%80%81Anti-Zombie%20%E4%B8%8E%20Reject%20%E6%9C%80%E5%B0%8F%E8%A7%84%E5%88%99%E6%A0%B7%E4%BE%8B.md)
+23. [23-Prompt Artifact Evaluator Harness：Continuation Replay、跨消费者对齐与 Drift 回归实验室](23-Prompt%20Artifact%20Evaluator%20Harness%EF%BC%9AContinuation%20Replay%E3%80%81%E8%B7%A8%E6%B6%88%E8%B4%B9%E8%80%85%E5%AF%B9%E9%BD%90%E4%B8%8E%20Drift%20%E5%9B%9E%E5%BD%92%E5%AE%9E%E9%AA%8C%E5%AE%A4.md)
+24. [24-治理 Artifact Evaluator Harness：Decision Gain Replay、跨消费者对齐与 Drift 回归实验室](24-%E6%B2%BB%E7%90%86%20Artifact%20Evaluator%20Harness%EF%BC%9ADecision%20Gain%20Replay%E3%80%81%E8%B7%A8%E6%B6%88%E8%B4%B9%E8%80%85%E5%AF%B9%E9%BD%90%E4%B8%8E%20Drift%20%E5%9B%9E%E5%BD%92%E5%AE%9E%E9%AA%8C%E5%AE%A4.md)
+25. [25-结构 Artifact Evaluator Harness：Split-Brain Replay、Anti-Zombie 对齐与 Drift 回归实验室](25-%E7%BB%93%E6%9E%84%20Artifact%20Evaluator%20Harness%EF%BC%9ASplit-Brain%20Replay%E3%80%81Anti-Zombie%20%E5%AF%B9%E9%BD%90%E4%B8%8E%20Drift%20%E5%9B%9E%E5%BD%92%E5%AE%9E%E9%AA%8C%E5%AE%A4.md)
 
 ## 按目标阅读
 
@@ -60,6 +63,7 @@
 - 想直接看宿主卡、CI附件、评审卡与交接包真正填出来是什么样，而不是只看 contract：`../navigation/27 -> 17 -> 18 -> 19`
 - 想直接看这些最小共享工件在团队执行里最常怎样重新退回局部真相，而不是误把样例当落地完成：`../navigation/28 -> ../casebooks/19 -> ../casebooks/20 -> ../casebooks/21`
 - 想直接看这些 rule packet 在不同消费者里怎样被最小样例、失败样例与 rewrite 样例反复验证：`../navigation/31 -> 20 -> 21 -> 22`
+- 想直接看这些规则样例怎样继续被组织成可重放验证、跨消费者对齐与 drift 回归实验室：`../navigation/32 -> 23 -> 24 -> 25`
 
 ## 与其他目录的边界
 
@@ -77,5 +81,6 @@
 - 再往下一层，应由 `navigation/28 -> casebooks/19-21` 继续回答“这些最小共享工件在真实执行里最常怎样重新退回局部真相”。
 - 再往下一层，应由 `navigation/29 -> guides/39-41` 继续回答“怎样把这些局部真相漂移正式编译成自动校验、reviewer gate 与 handoff reject”。
 - 再往下一层，应由 `navigation/31 -> playbooks/20-22` 继续回答“怎样把这些 machine-readable 规则包压成可反复验证的最小样例、失败样例与 evaluator 接口”。
+- 再往下一层，应由 `navigation/32 -> playbooks/23-25` 继续回答“怎样把这些样例接口接成可重放验证、跨消费者对齐与 drift 回归实验室”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。

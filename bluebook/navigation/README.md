@@ -41,6 +41,7 @@
 29. [Artifact Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验](29-Artifact%20Validator%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%85%B1%E4%BA%AB%E5%AF%B9%E8%B1%A1%E3%80%81%E7%A1%AC%E5%90%88%E5%90%8C%E4%B8%8E%E6%BC%82%E7%A7%BB%E5%8E%9F%E5%9E%8B%E5%A6%82%E4%BD%95%E7%BC%96%E8%AF%91%E6%88%90%E8%87%AA%E5%8A%A8%E6%A0%A1%E9%AA%8C.md)
 30. [Artifact Rule ABI导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何共享同一规则包](30-Artifact%20Rule%20ABI%E5%AF%BC%E8%88%AA%EF%BC%9AHard%20Fail%E3%80%81Lint%20Warn%E3%80%81Reviewer%20Gate%E3%80%81Handoff%20Reject%20%E4%B8%8E%20Rewrite%20Hint%20%E5%A6%82%E4%BD%95%E5%85%B1%E4%BA%AB%E5%90%8C%E4%B8%80%E8%A7%84%E5%88%99%E5%8C%85.md)
 31. [Artifact Rule Sample Kit导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何被反复验证](31-Artifact%20Rule%20Sample%20Kit%E5%AF%BC%E8%88%AA%EF%BC%9AHard%20Fail%E3%80%81Lint%20Warn%E3%80%81Reviewer%20Gate%E3%80%81Handoff%20Reject%20%E4%B8%8E%20Rewrite%20Hint%20%E5%A6%82%E4%BD%95%E8%A2%AB%E5%8F%8D%E5%A4%8D%E9%AA%8C%E8%AF%81.md)
+32. [Artifact Evaluator Harness导航：可重放验证、跨消费者对齐与 Drift 回归如何证明同一拒收语义](32-Artifact%20Evaluator%20Harness%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%8F%AF%E9%87%8D%E6%94%BE%E9%AA%8C%E8%AF%81%E3%80%81%E8%B7%A8%E6%B6%88%E8%B4%B9%E8%80%85%E5%AF%B9%E9%BD%90%E4%B8%8E%20Drift%20%E5%9B%9E%E5%BD%92%E5%A6%82%E4%BD%95%E8%AF%81%E6%98%8E%E5%90%8C%E4%B8%80%E6%8B%92%E6%94%B6%E8%AF%AD%E4%B9%89.md)
 
 和其他目录的关系：
 

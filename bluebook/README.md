@@ -405,6 +405,10 @@
 
 - `navigation/31 -> playbooks/20 -> playbooks/21 -> playbooks/22 -> philosophy/72`
 
+### 为什么 Artifact Rule Sample Kit / Evaluator 还必须继续进入 Harness / Replay Lab 层
+
+- `navigation/32 -> playbooks/23 -> playbooks/24 -> playbooks/25 -> philosophy/73`
+
 ### 为什么高行动力来自统一定价而不是统一放权
 
 - `architecture/50 -> architecture/56 -> architecture/68 -> architecture/71 -> philosophy/58`

@@ -608,6 +608,24 @@
 - `navigation/31` 因而成为必要入口：`30` 负责知道“规则包怎样定义”，`31` 负责知道“这些规则包怎样被重复验证”，避免蓝皮书重新停在 rule ABI 层而没有验证样例层。
 - `philosophy/72` 因而成为必要收束：真正成熟的验证，不是规则会跑，而是共享拒收语义能被反复证明；没有这层收束，sample kit 很快又会退回零散 YAML 与一次性演示。
 
+### A011. artifact rule sample kit / evaluator 之后，下一层应进入 artifact evaluator harness / replay lab 层
+
+- 当 `navigation/31 + playbooks/20-22` 已经把 Prompt、治理与结构三条线的最小规则样例、失败样例与 evaluator 接口写出来之后，下一步最值钱的不是继续补更多 YAML，而是补 evaluator harness / replay lab：把 replay case、cross-consumer alignment、drift regression 与 rewrite replay 接成可重放验证实验室。
+- `playbooks/23` 应把 Prompt 线的 harness 写成 continuation replay 实验室：先锁 `prompt_object_id`、`compiled_request_diff_ref`、`lawful_forgetting_abi_ref` 与 `next_step_guard`，再让宿主、CI、评审与交接在同一 replay case 里重复触发相同 reject reason；这样才能把 Prompt 魔力继续固定在 shared continuation，而不是退回原文、绿灯与摘要。
+- `playbooks/24` 应把治理线的 harness 写成 decision gain replay 实验室：先锁 `governance_object_id`、`decision_window`、`failure_semantics`、`rollback_object` 与 `next_action`，再让状态色、计数、verdict 与状态摘要在同一 replay case 里重复触发相同 reject reason；这样才能把安全与省 token 继续固定在统一决策增益，而不是退回局部 KPI。
+- `playbooks/25` 应把结构线的 harness 写成 split-brain / anti-zombie replay 实验室：先锁 `structure_object_id`、`authoritative_path`、`recovery_asset_ledger`、`anti_zombie_evidence`、`danger_paths` 与 `rollback_object`，再让目录图、恢复成功率与作者说明在同一 replay case 里重复触发相同 reject reason；这样才能把源码先进性继续固定在 authoritative surface 与 stale-writer 清退，而不是退回结构展示。
+- `navigation/32` 因而成为必要入口：`31` 负责知道“这些样例怎样定义”，`32` 负责知道“这些样例怎样被重放、对齐与回归”，避免蓝皮书重新停在 sample kit 层而没有验证实验室层。
+- `philosophy/73` 因而成为必要收束：真正成熟的回放，不是脚本重跑，而是共享拒收语义能跨消费者重复成立；没有这层收束，replay lab 很快又会退回一次性 demo。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 证据:
 
 - `claude-code-source-code/src/constants/prompts.ts:491-557`
