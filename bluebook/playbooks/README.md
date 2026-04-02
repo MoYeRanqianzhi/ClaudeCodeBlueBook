@@ -63,6 +63,9 @@
 44. [44-Prompt宿主修复监护执行手册：watch card、drift verdict order、handoff freeze与reopen drill](44-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%9B%91%E6%8A%A4%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Awatch%20card%E3%80%81drift%20verdict%20order%E3%80%81handoff%20freeze%E4%B8%8Ereopen%20drill.md)
 45. [45-治理宿主修复监护执行手册：watch card、drift verdict order、quarantine order与reopen drill](45-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%9B%91%E6%8A%A4%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Awatch%20card%E3%80%81drift%20verdict%20order%E3%80%81quarantine%20order%E4%B8%8Ereopen%20drill.md)
 46. [46-结构宿主修复监护执行手册：watch card、drift verdict order、handoff freeze与reopen drill](46-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%9B%91%E6%8A%A4%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Awatch%20card%E3%80%81drift%20verdict%20order%E3%80%81handoff%20freeze%E4%B8%8Ereopen%20drill.md)
+47. [47-Prompt宿主修复解除监护执行手册：release card、release verdict order、handoff release与residual reopen drill](47-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E8%A7%A3%E9%99%A4%E7%9B%91%E6%8A%A4%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arelease%20card%E3%80%81release%20verdict%20order%E3%80%81handoff%20release%E4%B8%8Eresidual%20reopen%20drill.md)
+48. [48-治理宿主修复解除监护执行手册：release card、release verdict order、capability release与reopen liability drill](48-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E8%A7%A3%E9%99%A4%E7%9B%91%E6%8A%A4%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arelease%20card%E3%80%81release%20verdict%20order%E3%80%81capability%20release%E4%B8%8Ereopen%20liability%20drill.md)
+49. [49-结构宿主修复解除监护执行手册：release card、release verdict order、archive drill、boundary retirement与reopen reservation drill](49-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E8%A7%A3%E9%99%A4%E7%9B%91%E6%8A%A4%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arelease%20card%E3%80%81release%20verdict%20order%E3%80%81archive%20drill%E3%80%81boundary%20retirement%E4%B8%8Ereopen%20reservation%20drill.md)
 
 ## 按目标阅读
 
@@ -92,6 +95,7 @@
 - 想把这些宿主验收协议继续压成值班、CI、评审与交接共享的执行卡、拒收顺序与回退剧本，而不是停在 contract 字段层：`../navigation/51 -> 35 -> 36 -> 37`
 - 想继续看这些宿主验收执行明明已经存在，为什么仍会重新退回表单化绿灯、假拒收与伪回退，而不是误把执行卡当完成证明：`../navigation/52 -> ../casebooks/31 -> ../casebooks/32 -> ../casebooks/33`
 - 想继续把这些宿主修复监护协议压成真正值班可执行的 watch card、drift verdict order 与 reopen drill，而不是停在 watch contract 字段层：`../navigation/63 -> 44 -> 45 -> 46`
+- 想继续把这些宿主修复解除监护协议压成真正值班可执行的 release card、release verdict order 与 reopen 责任演练，而不是停在 release contract 字段层：`../navigation/67 -> 47 -> 48 -> 49`
 
 ## 与其他目录的边界
 
@@ -120,5 +124,6 @@
 - 再往下一层，应由 `../navigation/56 -> ../casebooks/34-36` 继续回答“为什么这些宿主修复演练明明已经存在，仍会重新退回假修复、假回滚与假重入”。
 - 再往下一层，应由 `../navigation/58 -> ../api/60-62 -> ../navigation/59 -> 41-43` 继续回答“怎样把这些宿主修复收口协议继续压成固定收口卡、完成判定顺序与交接剧本”。
 - 再往下一层，应由 `../navigation/62 -> ../api/63-65 -> ../navigation/63 -> 44-46` 继续回答“怎样把这些宿主修复监护协议继续压成固定监护卡、漂移判定顺序与重开演练”。
+- 再往下一层，应由 `../navigation/66 -> ../api/66-68 -> ../navigation/67 -> 47-49` 继续回答“怎样把这些宿主修复解除监护协议继续压成固定 release card、release verdict 顺序、capability / handoff release 与 reopen 责任演练”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。
