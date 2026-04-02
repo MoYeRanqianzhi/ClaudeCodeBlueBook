@@ -417,4 +417,6 @@
 - 想把 `103` 的长文压成一张字段矩阵，快速看出不同 projection protocol field 的 meaning、example source 与 UI gain：`103` -> `appendix/87`
 - 想看为什么即使 projection protocol fields 已经定义出来，这些字段仍不应平均撒到所有 surface，而应随控制面强弱、带宽与责任分层落位：`103` -> `104`
 - 想把 `104` 的长文压成一张落位矩阵，快速看出不同 surface 的 must-show fields、optional fields 与 forbidden clutter：`104` -> `appendix/88`
+- 想看为什么即使字段已经落在正确 surface，上面出现的多个 signal 仍不能平权竞争，而应让强断点抢占弱信号：`104` -> `105`
+- 想把 `105` 的长文压成一张优先级矩阵，快速看出不同 signal 的 priority、preemption target 与 display policy：`105` -> `appendix/89`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
