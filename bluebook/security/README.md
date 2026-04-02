@@ -405,4 +405,6 @@
 - 想把 `97` 的长文压成一张承诺矩阵，快速看出不同 state 的 lexical ceiling、forbidden stronger claim 与 default route：`97` -> `appendix/81`
 - 想看为什么即使语言上限已经守住，每一种资格状态仍必须继续绑定唯一 dominant route，而不能把修复选择权外包给用户自己猜：`97` -> `98`
 - 想把 `98` 的长文压成一张动作路由矩阵，快速看出不同 state 的 dominant route、route owner 与 forbidden adjacent path：`98` -> `appendix/82`
+- 想看为什么即使正确默认动作已经存在，系统仍必须显式禁止那些看起来合理、却会破坏资格真相的近邻错路：`98` -> `99`
+- 想把 `99` 的长文压成一张禁令矩阵，快速看出不同 state 的 dominant route、forbidden adjacent path 与 block reason：`99` -> `appendix/83`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
