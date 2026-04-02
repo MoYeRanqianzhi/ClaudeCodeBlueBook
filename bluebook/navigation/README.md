@@ -61,4 +61,4 @@
 - `casebooks/`：失败样本库、事故原型与结构反模式样本。
 - `risk/`：风控、治理、账号/设备/策略专题。
 - 再往下一层，应由 `36 -> 37 -> guides/48-50` 继续回答“怎样把 Runtime 构建层继续压成上下文编译、治理控制面与可演化内核三条 builder-facing 方法线”。
-- 再往下一层，应由 `38 -> architecture/79-81` 继续回答“怎样把这些方法线重新回灌成 compiled request truth、governance control plane 与 evolvable kernel object boundary 三条机制层对象”。
+- 再往下一层，应由 `38 -> architecture/79-81 + api/49-50` 继续回答“怎样把这些方法线重新回灌成机制层对象与可消费支持面”。

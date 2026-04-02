@@ -55,6 +55,7 @@
 - [43-Prompt Artifact Harness Runner API：Replay Queue、Alignment Assertion、Drift Ledger 与 Rewrite Adoption 的持续执行协议](43-Prompt%20Artifact%20Harness%20Runner%20API%EF%BC%9AReplay%20Queue%E3%80%81Alignment%20Assertion%E3%80%81Drift%20Ledger%20%E4%B8%8E%20Rewrite%20Adoption%20%E7%9A%84%E6%8C%81%E7%BB%AD%E6%89%A7%E8%A1%8C%E5%8D%8F%E8%AE%AE.md)
 - [44-治理 Artifact Harness Runner API：Decision Window Replay Queue、Arbitration Assertion、Drift Ledger 与 Upgrade Adoption 协议](44-%E6%B2%BB%E7%90%86%20Artifact%20Harness%20Runner%20API%EF%BC%9ADecision%20Window%20Replay%20Queue%E3%80%81Arbitration%20Assertion%E3%80%81Drift%20Ledger%20%E4%B8%8E%20Upgrade%20Adoption%20%E5%8D%8F%E8%AE%AE.md)
 - [45-结构 Artifact Harness Runner API：Authoritative Replay Queue、Anti-Zombie Assertion、Drift Ledger 与 Recovery Adoption 协议](45-%E7%BB%93%E6%9E%84%20Artifact%20Harness%20Runner%20API%EF%BC%9AAuthoritative%20Replay%20Queue%E3%80%81Anti-Zombie%20Assertion%E3%80%81Drift%20Ledger%20%E4%B8%8E%20Recovery%20Adoption%20%E5%8D%8F%E8%AE%AE.md)
+- [50-治理控制面支持面手册：Settings、Permission、MCP、Context Usage、状态写回与继续门控](50-%E6%B2%BB%E7%90%86%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%94%AF%E6%8C%81%E9%9D%A2%E6%89%8B%E5%86%8C%EF%BC%9ASettings%E3%80%81Permission%E3%80%81MCP%E3%80%81Context%20Usage%E3%80%81%E7%8A%B6%E6%80%81%E5%86%99%E5%9B%9E%E4%B8%8E%E7%BB%A7%E7%BB%AD%E9%97%A8%E6%8E%A7.md)
 - [46-Services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口](46-services%20%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%20Atlas%EF%BC%9AAPI%E3%80%81Compact%E3%80%81Memory%E3%80%81MCP%E3%80%81LSP%20%E4%B8%8E%20Observability%20%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%9D%83%E5%A8%81%E5%85%A5%E5%8F%A3.md)
 - [47-Tools 二级目录 Atlas：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界](47-tools%20%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%20Atlas%EF%BC%9A%E6%89%A7%E8%A1%8C%E5%8E%9F%E8%AF%AD%E3%80%81%E4%BA%A4%E4%BA%92%E6%8E%A7%E5%88%B6%E3%80%81%E4%BB%BB%E5%8A%A1%E7%BC%96%E6%8E%92%E3%80%81%E6%89%A9%E5%B1%95%E6%A1%A5%E6%8E%A5%E4%B8%8E%E5%BB%B6%E8%BF%9F%E6%9A%B4%E9%9C%B2%E8%BE%B9%E7%95%8C.md)
 - [48-Commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界](48-commands%20%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%20Atlas%EF%BC%9A%E4%BC%9A%E8%AF%9D%E6%8E%A7%E5%88%B6%E3%80%81%E6%A8%A1%E5%BC%8F%E6%B2%BB%E7%90%86%E3%80%81%E6%89%A9%E5%B1%95%E8%A3%85%E9%85%8D%E3%80%81%E4%BA%A4%E4%BB%98%E8%AF%8A%E6%96%AD%E4%B8%8E%E5%86%85%E9%83%A8%E5%91%BD%E4%BB%A4%E8%BE%B9%E7%95%8C.md)
@@ -63,6 +64,7 @@
 
 - [18-系统提示词、Frontmatter与上下文注入手册](18-%E7%B3%BB%E7%BB%9F%E6%8F%90%E7%A4%BA%E8%AF%8D%E3%80%81Frontmatter%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E6%B3%A8%E5%85%A5%E6%89%8B%E5%86%8C.md)
 - [21-提示词控制、知识注入与记忆API手册](21-%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%8E%A7%E5%88%B6%E3%80%81%E7%9F%A5%E8%AF%86%E6%B3%A8%E5%85%A5%E4%B8%8E%E8%AE%B0%E5%BF%86API%E6%89%8B%E5%86%8C.md)
+- [49-Prompt编译与稳定性支持面手册：注入入口、协议转译、缓存断点与合法遗忘边界](49-Prompt%E7%BC%96%E8%AF%91%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%94%AF%E6%8C%81%E9%9D%A2%E6%89%8B%E5%86%8C%EF%BC%9A%E6%B3%A8%E5%85%A5%E5%85%A5%E5%8F%A3%E3%80%81%E5%8D%8F%E8%AE%AE%E8%BD%AC%E8%AF%91%E3%80%81%E7%BC%93%E5%AD%98%E6%96%AD%E7%82%B9%E4%B8%8E%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E8%BE%B9%E7%95%8C.md)
 
 ### 5. 扩展、连接与宿主适配面
 
@@ -89,6 +91,8 @@
 - 先读 `24 -> 26 -> 02 -> 13 -> 15 -> 16 -> 20`
 - 补充 `11 -> 17 -> 19 -> 31 -> 32 -> 33 -> 34 -> 35 -> 36`
 - 想把宿主卡、CI附件、评审卡与交接包继续压成统一工件协议：`35 -> 36 -> 37 -> 38 -> 39 -> ../navigation/26`
+- 想把 Prompt 构建层继续回灌成可消费的编译/稳定性支持面，而不是把内部编译细节误当公共 ABI：`18 -> 21 -> 49 -> ../architecture/79`
+- 想把 Settings、Permission、MCP、Context Usage 与状态写回继续收口成统一治理支持面，而不是只把它们当分散 control request：`28 -> 32 -> 35 -> 50 -> ../architecture/80`
 - 想把 validator / linter 继续压成 machine-readable rule ABI：`../navigation/30 -> 40 -> 41 -> 42 -> ../philosophy/71`
 - 想把这些 rule packet 继续压成最小规则样例、失败样例与 evaluator 接口：`../navigation/31 -> ../playbooks/20 -> ../playbooks/21 -> ../playbooks/22 -> ../philosophy/72`
 - 想把这些样例接口继续接成 replay harness、cross-consumer alignment 与 drift regression lab：`../navigation/32 -> ../playbooks/23 -> ../playbooks/24 -> ../playbooks/25 -> ../philosophy/73`
@@ -120,11 +124,14 @@
 - 有类型声明，不等于当前提取树里已有完整实现。
 - 有实现，不等于产品公开承诺稳定支持。
 - 关键状态应先找 authoritative surface，再找调用点散布。
+- internal compiler surface 不等于公共 ABI。
+- 内部 continuation / classifier 细节不应被宿主直接依赖。
 - 再往下一层，应由 `../navigation/26 -> 37-39` 继续回答“怎样把统一审读对象压成正式共享工件协议”。
 - 再往下一层，应由 `../navigation/30 -> 40-42` 继续回答“怎样把 hard fail、lint warn、reviewer gate、handoff reject 与 rewrite hint 压成 machine-readable rule packet”。
 - 再往下一层，应由 `../navigation/31 -> ../playbooks/20-22` 继续回答“怎样把 machine-readable rule packet 写成最小可验证样例与 evaluator 样例”。
 - 再往下一层，应由 `../navigation/32 -> ../playbooks/23-25` 继续回答“怎样把这些 evaluator 样例接成可重放验证与跨消费者对齐实验室”。
 - 再往下一层，应由 `../navigation/33 -> 43-45 -> ../architecture/78` 继续回答“怎样把 replay case、alignment assertion、drift ledger 与 rewrite adoption 接成持续执行协议与底盘”。
 - 再往下一层，应由 `../navigation/35 -> 46-48 -> ../philosophy/76` 继续回答“怎样把顶层目录地图继续拆成二级目录 atlas，并显式暴露权威入口、消费者子集与危险改动面”。
+- 再往下一层，应由 `../navigation/38 -> 49-50 -> ../architecture/79-80` 继续回答“怎样把 builder-facing 方法线重新压成可消费支持面与机制对象”。
 
 主线结论先看 [../05-功能全景与 API 支持](../05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)。

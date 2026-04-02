@@ -15,7 +15,8 @@
 - 这意味着蓝皮书当前最稳的继续方式，不是新开平面，而是新增一层机制回灌：
   - `navigation/38` 负责入口。
   - `architecture/79-81` 负责三条对象化回灌。
-- 下一步如果继续深化，最值钱的候选不是更多 architecture 哲学，而是考虑补 `api/49+`，把 compiled request truth 与 governance control plane 的消费字段与宿主 contract 再显式化。
+  - `api/49-50` 负责 Prompt 编译/稳定性与治理控制面的支持面显式化。
+- 下一步如果继续深化，最值钱的候选不是更多 architecture 哲学，而是判断这些机制对象怎样继续进入 host implementation、casebook 与 playbook 的验证层。
 
 证据:
 
