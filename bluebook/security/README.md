@@ -100,6 +100,7 @@
 78. [77-安全状态替换语法：为什么新增、折叠、失效、移除与共存必须是不同的状态动作，而不能统一成再发一条通知](77-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E6%9B%BF%E6%8D%A2%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%96%B0%E5%A2%9E%E3%80%81%E6%8A%98%E5%8F%A0%E3%80%81%E5%A4%B1%E6%95%88%E3%80%81%E7%A7%BB%E9%99%A4%E4%B8%8E%E5%85%B1%E5%AD%98%E5%BF%85%E9%A1%BB%E6%98%AF%E4%B8%8D%E5%90%8C%E7%9A%84%E7%8A%B6%E6%80%81%E5%8A%A8%E4%BD%9C%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E7%BB%9F%E4%B8%80%E6%88%90%E5%86%8D%E5%8F%91%E4%B8%80%E6%9D%A1%E9%80%9A%E7%9F%A5.md)
 79. [78-安全状态编辑主权：为什么状态替换语法之后，还必须继续回答谁有资格编辑谁的状态](78-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E7%BC%96%E8%BE%91%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E7%8A%B6%E6%80%81%E6%9B%BF%E6%8D%A2%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%90%8E%EF%BC%8C%E8%BF%98%E5%BF%85%E9%A1%BB%E7%BB%A7%E7%BB%AD%E5%9B%9E%E7%AD%94%E8%B0%81%E6%9C%89%E8%B5%84%E6%A0%BC%E7%BC%96%E8%BE%91%E8%B0%81%E7%9A%84%E7%8A%B6%E6%80%81.md)
 80. [79-安全状态家族作用域：为什么全局key字符串不是长期安全边界，family scope才是状态编辑主权的真正载体](79-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E5%AE%B6%E6%97%8F%E4%BD%9C%E7%94%A8%E5%9F%9F%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%85%A8%E5%B1%80key%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8D%E6%98%AF%E9%95%BF%E6%9C%9F%E5%AE%89%E5%85%A8%E8%BE%B9%E7%95%8C%EF%BC%8Cfamily%20scope%E6%89%8D%E6%98%AF%E7%8A%B6%E6%80%81%E7%BC%96%E8%BE%91%E4%B8%BB%E6%9D%83%E7%9A%84%E7%9C%9F%E6%AD%A3%E8%BD%BD%E4%BD%93.md)
+81. [80-安全状态句柄化：为什么下一代控制面不该继续用裸key编辑状态，而应把family scope升级为opaque handle](80-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E5%8F%A5%E6%9F%84%E5%8C%96%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8B%E4%B8%80%E4%BB%A3%E6%8E%A7%E5%88%B6%E9%9D%A2%E4%B8%8D%E8%AF%A5%E7%BB%A7%E7%BB%AD%E7%94%A8%E8%A3%B8key%E7%BC%96%E8%BE%91%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E5%BA%94%E6%8A%8Afamily%20scope%E5%8D%87%E7%BA%A7%E4%B8%BAopaque%20handle.md)
 
 ## 附录目录
 
@@ -199,6 +200,8 @@
 - 想直接看不同 status family 到底允许谁编辑、允许用什么 operator、以及最危险的 outsider 是谁：看 `appendix/62`
 - 想直接看为什么回答了“谁有资格编辑”仍然不够，以及为什么真正的长期边界不该只是全局 key 名，而应是被正式承认的 family scope：看 `79`
 - 想直接看不同 key pattern 当前隐含着什么 family、它现在靠什么维持作用域，以及最大的 scope risk 在哪：看 `appendix/63`
+- 想直接看为什么即使 family scope 已经被看见，也仍然不该继续停留在命名约定，而应升级成真正的句柄能力对象：看 `80`
+- 想直接看 notifications 当前 carrier 缺了哪些 scope、推荐的 handle 字段是什么，以及迁移后先解决哪类风险：看 `appendix/64`
 
 ## 和其他目录的关系
 
@@ -330,4 +333,6 @@
 - 想把 `78` 的长文压成一张主权矩阵，快速看出不同 status family、allowed editor、allowed operator 与 forbidden outsider：`78` -> `appendix/62`
 - 想看为什么即使主语已经分清，系统仍可能因为 family scope 只存在于命名习惯里而不够稳，以及 why 全局 key 不是长期安全边界：`78` -> `79`
 - 想把 `79` 的长文压成一张作用域矩阵，快速看出不同 key pattern、implicit family、current guarantee 与 scope risk：`79` -> `appendix/63`
+- 想看为什么即使作用域已经看清，系统仍应继续从裸 key 迁移到句柄，以及 why bridge handle 提供了现成范式：`79` -> `80`
+- 想把 `80` 的长文压成一张句柄化矩阵，快速看出不同 subsystem 的 current carrier、missing scope、recommended handle fields 与 migration gain：`80` -> `appendix/64`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
