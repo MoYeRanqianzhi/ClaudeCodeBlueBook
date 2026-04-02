@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“机制支持面 / host-consumable API”继续推进到“支持面反例 / consumer misuse”层。
+- 新增结论：
+  - Prompt 宿主消费最危险的失败方式不是没接 prompt，而是把编译请求真相重新消费成 `systemPrompt` 字符串、cache 黑箱与 last-message heuristic。
+  - 治理宿主消费最危险的失败方式不是没接控制请求，而是把统一定价治理重新消费成 mode 投影、pending action 文案与文件级回退。
+  - 故障模型宿主消费最危险的失败方式不是没接恢复接口，而是把 authority state、recovery boundary 与 anti-zombie 结果面重新消费成 spinner、pointer 与成功率。
+- 新增目录责任：
+  - `navigation/44` 负责支持面误用入口。
+  - `casebooks/25-27` 负责三类 host-consumable support surface 的 consumer misuse 反例。
+- 当前新的写作约束：
+  - 不再只写“宿主该消费什么”，还要写“宿主最常把什么假信号误当正式对象”。
+  - 每次继续深化都要回答“当前消费者是否又重新制造了一套第二真相”。
 - 蓝皮书已经从“机制实现 / builder-facing 手册”继续推进到“机制支持面 / host-consumable API”层。
 - 新增结论：
   - 编译请求真相如果要被宿主稳定消费，必须被翻译成 Prompt 输入面、section breakdown、message breakdown、continue qualification 等正式投影，而不是内部编译 trace。

@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《支持面反例导航：编译请求真相、治理控制面与故障模型证据如何重新退回宿主猜测》《Prompt宿主消费反例：字符串崇拜、缓存黑箱与继续资格误判》《治理宿主消费反例：mode投影崇拜、pending action降格与rollback object文件化》《故障模型宿主消费反例：权威状态猜测、恢复指针神化与成功率崇拜》，并同步回写主索引、导航/案例库 README 与开发文档，把蓝皮书从“机制支持面 / host-consumable API”继续推进到“支持面反例 / consumer misuse”层
 - 新增《机制支持面导航：编译请求真相、治理控制面与故障模型证据如何进入宿主消费》《编译请求真相宿主消费面手册：systemPrompt输入、section breakdown、cache break reason与continue qualification》《统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate》《故障模型宿主消费面手册：authority state、generation evidence、recovery boundary与anti-zombie projection》，并同步回写主索引、导航/API README 与开发文档，把蓝皮书从“机制实现 / builder-facing 手册”继续推进到“机制支持面 / host-consumable API”层
 - 新增《机制实现导航：Prompt编译链、统一定价治理与故障模型编码如何落成Builder手册》《如何把Prompt魔力落成编译链实现：section registry、stable boundary、protocol rewrite与continue qualification》《如何把统一定价治理落成控制面实现：authority source、decision window、Context Usage与rollback object》《如何把故障模型编码进源码结构：authority surface、dependency seam、stale-safe merge与recovery boundary》，并同步回写主索引、导航/使用专题 README 与开发文档，把蓝皮书从“机制哲学 / 第一性原理收束”继续推进到“机制实现 / builder-facing 手册”层
 - 新增《机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理》《Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链》《安全与省Token之所以同构，是因为治理控制面在统一定价一切扩张》《源码先进性之所以成立，是因为故障模型先于模块美学进入结构》，并同步回写主索引、导航/哲学 README 与开发文档，把蓝皮书从“机制失真 / 形式主义反例”继续推进到“机制哲学 / 第一性原理收束”层
