@@ -177,6 +177,7 @@
 - 想直接看为什么“入口可见”本身也是一种安全承诺，以及为什么不是任何 adapter / 宿主都能把能力发布成前台入口：看 `71`
 - 想直接看不同 surface 到底由谁发布能力入口、最危险的 overclaim 是什么，以及哪些层只能转述不能自报：看 `appendix/55`
 - 想直接看为什么不是任何镜像层都能把入口撤回，以及为什么撤回一项能力同样是一种主权改口：看 `72`
+- 想直接看不同 surface 到底由谁撤回入口、触发条件是什么，以及继续保留旧入口会形成哪种 stale promise：看 `appendix/56`
 
 ## 和其他目录的关系
 
@@ -293,4 +294,5 @@
 - 想看为什么能力一旦被显示成入口，就已经构成安全承诺，以及 why 只有 authoritative publish set 才有资格决定“现在可见”：`70` -> `71`
 - 想把 `71` 的长文压成一张发布主权矩阵，快速看出不同 surface 的 authoritative publisher、visible capability 与 forbidden overclaim：`71` -> `appendix/55`
 - 想看为什么能力撤回和能力发布一样都必须服从同一主权层，以及 why stale client、dead button 与局部隐藏都不足以代表正式撤回：`71` -> `72`
+- 想把 `72` 的长文压成一张撤回矩阵，快速看出不同 surface 的 revocation authority、retraction trigger 与 forbidden stale promise：`72` -> `appendix/56`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
