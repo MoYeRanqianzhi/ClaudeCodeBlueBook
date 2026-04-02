@@ -147,6 +147,10 @@
 
 - `architecture/53 -> architecture/54 -> philosophy/26 -> philosophy/30 -> philosophy/41`
 
+### 为什么 UI 历史必须在 API 边界前被重新编译
+
+- `architecture/54 -> architecture/70 -> philosophy/57`
+
 ### 为什么 Claude Code 偏爱渐进暴露，而不是全量声明
 
 - `architecture/51 -> architecture/53 -> philosophy/38 -> philosophy/41`
@@ -225,6 +229,10 @@
 ### 为什么真正的安全不是拦截动作，而是资源定价
 
 - `navigation/06 -> architecture/50 -> architecture/56 -> architecture/65 -> philosophy/55 -> philosophy/58`
+
+### 为什么高行动力来自统一定价而不是统一放权
+
+- `architecture/50 -> architecture/56 -> architecture/68 -> architecture/71 -> philosophy/58`
 
 ### 为什么 Claude Code 值得学的是“可演化内核”
 

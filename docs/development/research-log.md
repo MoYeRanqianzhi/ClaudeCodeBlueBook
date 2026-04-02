@@ -28,6 +28,10 @@
 
 - 在终局判断稳定后，下一步不应继续只加哲学收束，而应把 protocol transcript、资源定价、未来维护者消费者三条线分别下沉成高级 guide，让“为什么如此设计”转写成“怎样照此设计 / 使用 / 迁移”。
 
+补充底盘回灌判断：
+
+- 当高级 guide 稳定后，还应再回灌到 `architecture/`：把 `54/57` 与 `15` 收束成 protocol truth control plane，把 `56/58` 与 `16` 收束成 pricing runtime，把 `69/59` 与 `17` 收束成 future-maintainer consumer plane，避免“实践有了，但底盘抽象仍缺席”。
+
 证据:
 
 - `claude-code-source-code/src/utils/systemPrompt.ts:28-127`
