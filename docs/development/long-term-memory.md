@@ -319,6 +319,11 @@
 - `navigation/21` 的职责应稳定为“证据真相面如何进入共享 evidence envelope 层”，避免 `20` 同时承担消费接口与共享消费结构两类职责
 - `guides/35` 当前应负责用苏格拉底诘问法审读 shared evidence envelope，而不是继续只补流程化落地建议
 - `philosophy/68` 当前应负责把“成熟证据 = 约束未来判断”稳定成新的长期判断
+- 当 `navigation/21 + architecture/77 + api/36` 稳定后，下一步最值钱的不是继续补更多 envelope 原则，而是补 Evidence Envelope 失真样本层：把宿主、CI、评审与交接最常见的拆散消费方式写成正式 casebook
+- `casebooks/13` 当前应负责 Prompt envelope 失真样本：原文崇拜、cache 指标崇拜、汇总崇拜与只读历史交接
+- `casebooks/14` 当前应负责治理 envelope 失真样本：只看 token、只看审批、只看最终结果与忽略 rollback boundary
+- `casebooks/15` 当前应负责结构 envelope 失真样本：只看文件 diff、只看目录美观、只看恢复成功率与只靠作者记忆
+- `navigation/22` 的职责应稳定为“shared evidence envelope 层如何进入 consumer distortion casebook 层”，避免 `21` 同时承担 envelope 设计与 envelope 失真原型两类职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

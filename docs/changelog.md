@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《Evidence Envelope反例导航：宿主猜状态、CI只看阈值、评审只看结论与交接只读历史》《Prompt Evidence Envelope反例：原文崇拜、汇总崇拜与只读历史交接》《治理 Evidence Envelope反例：只看Token、只看审批与只看结果》《结构 Evidence Envelope反例：只看文件Diff、目录美观与作者记忆》，并同步回写主索引、案例库 README 与开发文档，把蓝皮书从“共享 Evidence Envelope 层”继续推进到“Evidence Envelope 失真样本层”
 - 新增《Evidence Envelope导航：宿主、CI、评审与交接如何共享升级真相》《共享证据包络：宿主、CI、评审与接手如何共用同一升级真相》《Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序》《如何用苏格拉底诘问法审读Evidence Envelope：对象、窗口、字节与回退边界》《真正成熟的证据，不只解释过去，还要约束未来判断》，并同步回写主索引、专题 README 与开发文档，把蓝皮书从“证据真相面与宿主消费层”继续推进到“共享 Evidence Envelope 层”
 - 新增《证据接口导航：从Rollout ABI到宿主消费、回退对象与复盘真相面》《升级证据真相面：状态写回、可观测Diff、决策窗口与回退对象》《Rollout证据消费API手册：worker_status、external_metadata、Context Usage与回退对象边界》《如何让宿主、评审者与后来者共享同一Rollout ABI：对象、指标、回退与附件消费顺序》《真正成熟的Runtime，不只会运行当前任务，还会为下一次升级保存判断条件》，并同步回写主索引、专题 README 与开发文档，把蓝皮书从“统一证据 ABI 层”继续推进到“证据真相面与宿主消费层”
 - 新增《Rollout模板导航：统一Diff卡、阶段评审卡、灰度结果卡与回退记录ABI》《统一Rollout ABI模板：对象、Diff、阶段、观测与回退记录》《Rollout证据卡样例库：Prompt、治理与结构三类最小填写示例》《如何为Agent Runtime设计统一Rollout ABI：Diff卡、阶段评审卡、灰度结果与回退记录》《真正成熟的升级，不是一次成功发布，而是每一步都留下可复查证据》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“rollout 样例层”继续推进到“统一证据 ABI 层”

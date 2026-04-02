@@ -445,6 +445,22 @@
 - `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00r. shared evidence envelope 之后，下一层应进入 consumer distortion casebook 层
+
+- 当 `navigation/21 + architecture/77 + api/36` 已经把 shared evidence envelope 收口成对象、状态、compiled request truth、decision window 与 rollback boundary 五层骨架后，下一步最值钱的不是继续重复 envelope 原则，而是补 consumer distortion casebook：让团队真正看到这套骨架最常见会怎样被宿主、CI、评审与交接拆散消费。
+- `casebooks/13` 应把 Prompt 线的 envelope 失真写成四种坏读法：只看原文 prompt、只看 cache 指标、只看人工总结、只读 transcript 交接；这样才能暴露 Prompt 魔力为什么一旦失去 compiled request truth 就会退回文案崇拜。
+- `casebooks/14` 应把治理线的 envelope 失真写成四种坏读法：只看 token、只看审批次数、只看最终结果、只看当前状态；这样才能暴露统一定价秩序为什么一旦失去 decision window 与 rollback boundary 就会退回局部 KPI。
+- `casebooks/15` 应把结构线的 envelope 失真写成四种坏读法：只看文件 diff、只看目录图、只看恢复成功率、只靠作者记忆；这样才能暴露源码先进性为什么一旦失去 object boundary 与 retained assets 就会退回文件级回退与目录审美。
+- `navigation/22` 因而成为必要入口：`21` 负责知道“shared envelope 该怎样成立”，`22` 负责知道“它最常见会怎样被拆散并失真”，避免蓝皮书重新停在理想设计层而没有消费者失真样本。
+
+证据:
+
+- `claude-code-source-code/src/utils/sessionState.ts:92-146`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-360`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

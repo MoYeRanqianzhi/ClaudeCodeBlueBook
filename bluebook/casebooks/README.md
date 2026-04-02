@@ -28,6 +28,9 @@
 10. [10-Prompt反例对照：长文案崇拜、主语漂移与共享前缀分叉](10-Prompt%E5%8F%8D%E4%BE%8B%E5%AF%B9%E7%85%A7%EF%BC%9A%E9%95%BF%E6%96%87%E6%A1%88%E5%B4%87%E6%8B%9C%E3%80%81%E4%B8%BB%E8%AF%AD%E6%BC%82%E7%A7%BB%E4%B8%8E%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E5%88%86%E5%8F%89.md)
 11. [11-安全反例对照：免费扩张、假预算器与不可撤销自动化](11-%E5%AE%89%E5%85%A8%E5%8F%8D%E4%BE%8B%E5%AF%B9%E7%85%A7%EF%BC%9A%E5%85%8D%E8%B4%B9%E6%89%A9%E5%BC%A0%E3%80%81%E5%81%87%E9%A2%84%E7%AE%97%E5%99%A8%E4%B8%8E%E4%B8%8D%E5%8F%AF%E6%92%A4%E9%94%80%E8%87%AA%E5%8A%A8%E5%8C%96.md)
 12. [12-源码反例对照：伪模块化、第二真相与zombie温床](12-%E6%BA%90%E7%A0%81%E5%8F%8D%E4%BE%8B%E5%AF%B9%E7%85%A7%EF%BC%9A%E4%BC%AA%E6%A8%A1%E5%9D%97%E5%8C%96%E3%80%81%E7%AC%AC%E4%BA%8C%E7%9C%9F%E7%9B%B8%E4%B8%8Ezombie%E6%B8%A9%E5%BA%8A.md)
+13. [13-Prompt Evidence Envelope反例：原文崇拜、汇总崇拜与只读历史交接](13-Prompt%20Evidence%20Envelope%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%8E%9F%E6%96%87%E5%B4%87%E6%8B%9C%E3%80%81%E6%B1%87%E6%80%BB%E5%B4%87%E6%8B%9C%E4%B8%8E%E5%8F%AA%E8%AF%BB%E5%8E%86%E5%8F%B2%E4%BA%A4%E6%8E%A5.md)
+14. [14-治理 Evidence Envelope反例：只看Token、只看审批与只看结果](14-%E6%B2%BB%E7%90%86%20Evidence%20Envelope%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%8F%AA%E7%9C%8BToken%E3%80%81%E5%8F%AA%E7%9C%8B%E5%AE%A1%E6%89%B9%E4%B8%8E%E5%8F%AA%E7%9C%8B%E7%BB%93%E6%9E%9C.md)
+15. [15-结构 Evidence Envelope反例：只看文件Diff、目录美观与作者记忆](15-%E7%BB%93%E6%9E%84%20Evidence%20Envelope%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%8F%AA%E7%9C%8B%E6%96%87%E4%BB%B6Diff%E3%80%81%E7%9B%AE%E5%BD%95%E7%BE%8E%E8%A7%82%E4%B8%8E%E4%BD%9C%E8%80%85%E8%AE%B0%E5%BF%86.md)
 
 ## 按目标阅读
 
@@ -41,10 +44,12 @@
 - 想先按生命周期阶段判断问题诞生位置，而不是把所有锅都丢给 runtime：`08 -> ../navigation/14`
 - 想先按受损制度资产反查，而不是先按文件名搜索：`09 -> ../navigation/14`
 - 想把这些自反问题继续落成“同题坏解 vs Claude Code 式正解”的迁移样例：`../navigation/15 -> 10 -> 11 -> 12 -> ../navigation/16`
+- 想看 shared evidence envelope 一旦被不同消费者拆散会怎样退回半真相：`../navigation/21 -> ../navigation/22 -> 13 -> 14 -> 15`
 
 ## 与其他目录的边界
 
 - `guides/` 负责“怎么设计”。
 - `playbooks/` 负责“怎么运行、怎么复盘”。
 - `casebooks/` 负责“坏会怎样、为什么坏、坏在哪”。
+- `casebooks/13-15` 继续回答“shared evidence envelope 一旦被宿主、CI、评审与交接拆散消费，会怎样重新退回局部真相”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。
