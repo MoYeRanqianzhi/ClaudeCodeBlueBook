@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“机制哲学 / 第一性原理收束”继续推进到“机制实现 / builder-facing 手册”层。
+- 新增结论：
+  - Prompt 魔力如果要迁移，必须继续被翻译成 section registry、stable boundary、protocol rewrite、lawful forgetting 与 continue qualification 的实现顺序。
+  - 统一定价治理如果要迁移，必须继续被翻译成 authority source、typed decision、decision window、continuation gate 与 rollback object 的实现顺序。
+  - 故障模型编码如果要迁移，必须继续被翻译成 authority surface、dependency seam、stale-safe merge、recovery boundary 与 anti-zombie evidence 的实现顺序。
+- 新增目录责任：
+  - `navigation/42` 负责机制实现入口。
+  - `guides/51-53` 负责三类机制对象的 builder-facing 实现翻译。
+- 当前新的写作约束：
+  - 不再只写“原则是什么”，还要写“实现顺序如何固定”。
+  - 每次继续深化都要回答“later drift 发生时该先回哪个对象、哪个边界、哪个状态面”。
 - 蓝皮书已经从“机制失真 / 形式主义反例”继续推进到“机制哲学 / 第一性原理收束”层。
 - 新增结论：
   - Prompt 的魔力，本质上来自把提示词写成可缓存、可转写、可继续的编译链，而不是更会说服模型的文案。

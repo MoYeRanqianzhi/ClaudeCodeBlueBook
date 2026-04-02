@@ -51,6 +51,12 @@
 45. [45-从第一性原理构建Agent Runtime：对象、协作语法、资源定价与恢复闭环](45-%E4%BB%8E%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E6%9E%84%E5%BB%BAAgent%20Runtime%EF%BC%9A%E5%AF%B9%E8%B1%A1%E3%80%81%E5%8D%8F%E4%BD%9C%E8%AF%AD%E6%B3%95%E3%80%81%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BB%B7%E4%B8%8E%E6%81%A2%E5%A4%8D%E9%97%AD%E7%8E%AF.md)
 46. [46-Agent Runtime宿主落地模板：Control、状态写回、Context Usage、恢复与证据包络](46-Agent%20Runtime%E5%AE%BF%E4%B8%BB%E8%90%BD%E5%9C%B0%E6%A8%A1%E6%9D%BF%EF%BC%9AControl%E3%80%81%E7%8A%B6%E6%80%81%E5%86%99%E5%9B%9E%E3%80%81Context%20Usage%E3%80%81%E6%81%A2%E5%A4%8D%E4%B8%8E%E8%AF%81%E6%8D%AE%E5%8C%85%E7%BB%9C.md)
 47. [47-统一蓝图手册：把协作语法、资源定价与可演化内核编译成Agent Runtime](47-%E7%BB%9F%E4%B8%80%E8%93%9D%E5%9B%BE%E6%89%8B%E5%86%8C%EF%BC%9A%E6%8A%8A%E5%8D%8F%E4%BD%9C%E8%AF%AD%E6%B3%95%E3%80%81%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BB%B7%E4%B8%8E%E5%8F%AF%E6%BC%94%E5%8C%96%E5%86%85%E6%A0%B8%E7%BC%96%E8%AF%91%E6%88%90Agent%20Runtime.md)
+48. [48-如何把Prompt写成上下文准入编译器：section law、stable prefix、协议真相与合法遗忘](48-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%86%99%E6%88%90%E4%B8%8A%E4%B8%8B%E6%96%87%E5%87%86%E5%85%A5%E7%BC%96%E8%AF%91%E5%99%A8%EF%BC%9Asection%20law%E3%80%81stable%20prefix%E3%80%81%E5%8D%8F%E8%AE%AE%E7%9C%9F%E7%9B%B8%E4%B8%8E%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98.md)
+49. [49-如何把安全与省Token写成治理控制面：typed decision、渐进暴露、Context Usage与继续预算](49-%E5%A6%82%E4%BD%95%E6%8A%8A%E5%AE%89%E5%85%A8%E4%B8%8E%E7%9C%81Token%E5%86%99%E6%88%90%E6%B2%BB%E7%90%86%E6%8E%A7%E5%88%B6%E9%9D%A2%EF%BC%9Atyped%20decision%E3%80%81%E6%B8%90%E8%BF%9B%E6%9A%B4%E9%9C%B2%E3%80%81Context%20Usage%E4%B8%8E%E7%BB%A7%E7%BB%AD%E9%A2%84%E7%AE%97.md)
+50. [50-如何把源码先进性落成可演化内核：权威入口、单一来源、anti-cycle seam与未来维护者消费者](50-%E5%A6%82%E4%BD%95%E6%8A%8A%E6%BA%90%E7%A0%81%E5%85%88%E8%BF%9B%E6%80%A7%E8%90%BD%E6%88%90%E5%8F%AF%E6%BC%94%E5%8C%96%E5%86%85%E6%A0%B8%EF%BC%9A%E6%9D%83%E5%A8%81%E5%85%A5%E5%8F%A3%E3%80%81%E5%8D%95%E4%B8%80%E6%9D%A5%E6%BA%90%E3%80%81anti-cycle%20seam%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85.md)
+51. [51-如何把Prompt魔力落成编译链实现：section registry、stable boundary、protocol rewrite与continue qualification](51-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E9%AD%94%E5%8A%9B%E8%90%BD%E6%88%90%E7%BC%96%E8%AF%91%E9%93%BE%E5%AE%9E%E7%8E%B0%EF%BC%9Asection%20registry%E3%80%81stable%20boundary%E3%80%81protocol%20rewrite%E4%B8%8Econtinue%20qualification.md)
+52. [52-如何把统一定价治理落成控制面实现：authority source、decision window、Context Usage与rollback object](52-%E5%A6%82%E4%BD%95%E6%8A%8A%E7%BB%9F%E4%B8%80%E5%AE%9A%E4%BB%B7%E6%B2%BB%E7%90%86%E8%90%BD%E6%88%90%E6%8E%A7%E5%88%B6%E9%9D%A2%E5%AE%9E%E7%8E%B0%EF%BC%9Aauthority%20source%E3%80%81decision%20window%E3%80%81Context%20Usage%E4%B8%8Erollback%20object.md)
+53. [53-如何把故障模型编码进源码结构：authority surface、dependency seam、stale-safe merge与recovery boundary](53-%E5%A6%82%E4%BD%95%E6%8A%8A%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E7%BC%96%E7%A0%81%E8%BF%9B%E6%BA%90%E7%A0%81%E7%BB%93%E6%9E%84%EF%BC%9Aauthority%20surface%E3%80%81dependency%20seam%E3%80%81stale-safe%20merge%E4%B8%8Erecovery%20boundary.md)
 
 ## 按使用目标阅读
 
@@ -105,6 +111,7 @@
 - 想把这些方法继续收束成可迁移的 Agent Runtime 构建指南、宿主模板与统一蓝图，而不是继续停在阅读与审读层：`../navigation/36 -> 45 -> 46 -> 47 -> ../philosophy/77`
 - 想把这些构建方法继续下沉成上下文编译、治理控制面与可演化内核三条 builder-facing 手册，而不是重新退回“强 prompt / 强规则 / 好结构”的表面叙述：`../navigation/37 -> 48 -> 49 -> 50 -> ../philosophy/78 -> ../philosophy/79 -> ../philosophy/80`
 - 想把这些 builder-facing 手册继续回灌成真正的运行时机制层，而不是停在方法摘要：`../navigation/38 -> ../architecture/79 -> ../architecture/80 -> ../architecture/81`
+- 想把这些第一性原理继续翻译成实现者真的可以照着搭的 builder-facing 手册：`../navigation/42 -> 51 -> 52 -> 53 -> ../philosophy/81 -> ../philosophy/82 -> ../philosophy/83`
 
 ## 与其他目录的边界
 
@@ -126,6 +133,8 @@
 - 再往下一层，应由 `../navigation/37 -> 48-50` 继续回答“怎样把 Prompt 魔力、安全/省 token 同构与源码先进性继续压成上下文编译、治理控制面与可演化内核三条 builder-facing 方法线”。
 - `../philosophy/78-80` 负责回答“为什么世界必须先被编译进模型、治理必须同时决定允许什么/看见什么/继续多久、结构必须先替未来维护者保留反驳能力”。
 - 再往下一层，应由 `../navigation/38 -> ../architecture/79-81` 继续回答“怎样把这些方法线重新回灌成 compiled request truth、governance control plane 与 evolvable kernel object boundary 三条机制层对象”。
+- 再往下一层，应由 `../navigation/42 -> 51-53` 继续回答“怎样把这些第一性原理重新翻译成 section registry / authority source / authority surface 等可执行实现顺序”。
+- `../philosophy/81-83` 负责回答“为什么这些实现顺序不是经验技巧，而是 Prompt 编译链、统一定价治理与故障模型编码的不可约判断”。
 
 后续继续补：
 
