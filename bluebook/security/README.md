@@ -134,6 +134,7 @@
 - 想直接看为什么这些痕迹不是谁都能删，以及哪些痕迹只能由对应闭环所有者或更高层 signer 清理：看 `57`
 - 想直接看不同 trace 对象到底由谁拥有、谁能清、谁绝不能清：看 `appendix/41`
 - 想直接看为什么即便清理者正确也不能立刻删痕迹，以及控制面该等哪些 full rebuild、terminal 或 manual-confirmed 证据：看 `58`
+- 想直接看不同 trace 到底需要什么 minimum clearer、哪类证据才过门槛、何时允许 auto-clear：看 `appendix/42`
 
 ## 和其他目录的关系
 
@@ -222,4 +223,5 @@
 - 想看为什么留痕即使已经存在，也仍可能被错误层级越权清掉，以及 why `notification key`、`needsRefresh`、reconnect trace、pointer、高层解释痕迹必须分别由不同所有者清理：`56` -> `57`
 - 想把 `57` 的长文压成一张清理权限矩阵，快速看出不同 trace 的 owner、allowed clearer 和 forbidden clearer：`57` -> `appendix/41`
 - 想看为什么 owner 已经正确仍然不等于现在就能清，以及 why timeout/invalidates、full rebuild、retry budget、archive+deregister、fatal/stale 都是清理门槛的一部分：`57` -> `58`
+- 想把 `58` 的长文压成一张清理门槛矩阵，快速看出不同 trace 的 minimum clearer、threshold evidence 与 auto-clear 许可：`58` -> `appendix/42`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
