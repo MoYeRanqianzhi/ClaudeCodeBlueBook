@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主验收协议 / acceptance contract”继续推进到“宿主验收执行 / acceptance execution”层。
+- 新增结论：
+  - Prompt 宿主验收如果要真正落地运行，必须继续围绕 `compiled request truth`、`section registry`、`protocol transcript health`、`lawful forgetting object` 与 `continue qualification` 执行固定验收顺序，而不是继续围绕 prompt 截图、摘要 handoff 与最后一条消息判断。
+  - 治理宿主验收如果要真正落地运行，必须继续围绕 authority source、permission ledger、decision window、continuation gate 与 rollback object 执行固定验收顺序，而不是继续围绕 mode、审批弹窗与 token 仪表盘判断。
+  - 结构宿主验收如果要真正落地运行，必须继续围绕 authority state、resume order、recovery boundary、writeback path 与 anti-zombie projection 执行固定验收顺序，而不是继续围绕 pointer、spinner、成功率与作者口述判断。
+- 新增目录责任：
+  - `navigation/51` 负责宿主验收执行入口。
+  - `playbooks/35-37` 负责三类宿主验收协议的执行卡、拒收顺序与回退剧本。
+- 当前新的写作约束：
+  - 不再只写“该消费哪些 contract 字段”，还要写“现场先看什么、何时直接拒收、回退到底回哪个对象边界”。
+  - 每次继续深化都要回答“当前执行层保护的是单一真相的运行顺序，还是只是在把 contract 重新翻译成更细的表单流程”。
 - 蓝皮书已经从“宿主迁移纠偏 / correction guide”继续推进到“宿主验收协议 / acceptance contract”层。
 - 新增结论：
   - Prompt 宿主迁移如果要真正验收，必须继续围绕 `compiled request truth`、`section registry`、`protocol transcript health`、`lawful forgetting object` 与 `continue qualification` 的共享规则面，而不是继续围绕截图、摘要与 token 曲线。
