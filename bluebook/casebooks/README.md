@@ -70,6 +70,9 @@
 52. [52-Prompt宿主修复稳态纠偏再纠偏执行反例：假recorrection card、假protocol repair与假threshold liability](52-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87recorrection%20card%E3%80%81%E5%81%87protocol%20repair%E4%B8%8E%E5%81%87threshold%20liability.md)
 53. [53-治理宿主修复稳态纠偏再纠偏执行反例：假authority source、假window refreeze与假threshold rebinding](53-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87authority%20source%E3%80%81%E5%81%87window%20refreeze%E4%B8%8E%E5%81%87threshold%20rebinding.md)
 54. [54-结构宿主修复稳态纠偏再纠偏执行反例：假authority surface、假single-source与假reopen liability](54-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87authority%20surface%E3%80%81%E5%81%87single-source%E4%B8%8E%E5%81%87reopen%20liability.md)
+55. [55-Prompt宿主修复稳态纠偏再纠偏改写执行反例：假rewrite card、假protocol rewrite与假threshold liability](55-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87rewrite%20card%E3%80%81%E5%81%87protocol%20rewrite%E4%B8%8E%E5%81%87threshold%20liability.md)
+56. [56-治理宿主修复稳态纠偏再纠偏改写执行反例：假rewrite card、假window repricing与假threshold rebinding](56-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87rewrite%20card%E3%80%81%E5%81%87window%20repricing%E4%B8%8E%E5%81%87threshold%20rebinding.md)
+57. [57-结构宿主修复稳态纠偏再纠偏改写执行反例：假rewrite card、假authority-first reject与假reopen liability](57-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87rewrite%20card%E3%80%81%E5%81%87authority-first%20reject%E4%B8%8E%E5%81%87reopen%20liability.md)
 
 ## 按目标阅读
 
@@ -98,6 +101,8 @@
 - 想继续看这些宿主修复解除监护执行明明已经存在，为什么仍会重新退回静默放行、免责式出监与假退休：`../navigation/68 -> 43 -> 44 -> 45`
 - 想继续看这些宿主修复稳态执行明明已经存在，为什么仍会重新退回假稳态、假托管与假阈值：`../navigation/72 -> 46 -> 47 -> 48`
 - 想继续看这些宿主修复稳态纠偏执行明明已经存在，为什么仍会重新退回假修正卡、假恢复顺序与假责任演练：`../navigation/76 -> 49 -> 50 -> 51`
+- 想继续看这些宿主修复稳态纠偏再纠偏执行明明已经存在，为什么仍会重新退回假 recorrection card、假 reject 顺序与假 reopen 责任演练：`../navigation/80 -> 52 -> 53 -> 54`
+- 想继续看这些宿主修复稳态纠偏再纠偏改写执行明明已经存在，为什么仍会重新退回假 rewrite card、假 reject 顺序与假 reopen 责任演练：`../navigation/84 -> 55 -> 56 -> 57`
 
 ## 与其他目录的边界
 
@@ -141,6 +146,9 @@
 - `../navigation/79 -> ../playbooks/56-58` 继续回答“怎样把这些 steady-state correction-of-correction protocol 继续压成固定 recorrection card、reject 顺序与 re-entry / reopen 责任演练”。
 - `../navigation/80 -> ../casebooks/52-54` 继续回答“为什么这些 steady-state correction-of-correction execution 明明已经存在，仍会重新退回假 recorrection card、假 reject 顺序与假 reopen 责任演练”。
 - `../navigation/81 -> ../guides/81-83` 继续回答“怎样把这些 steady-state correction-of-correction execution distortion 重新压回固定顺序、拒收升级路径与改写模板骨架”。
-- 再往下一层，应由 `../navigation/82 -> ../api/78-80` 继续回答“怎样把这些 steady-state correction-of-correction rewrite 继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面”。
+- `../navigation/82 -> ../api/78-80` 继续回答“怎样把这些 steady-state correction-of-correction rewrite 继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面”。
+- `../navigation/83 -> ../playbooks/59-61` 继续回答“怎样把这些 steady-state correction-of-correction rewrite protocol 继续压成固定 rewrite card、reject 顺序与 re-entry / reopen 责任演练”。
+- `casebooks/55-57` 继续回答“为什么这些 steady-state correction-of-correction rewrite execution 明明已经存在，仍会重新退回假 rewrite card、假 reject 顺序与假 reopen 责任演练”。
+- 再往下一层，应由 `../navigation/85 -> ../guides/84-86` 继续回答“怎样把这些 steady-state correction-of-correction rewrite execution distortion 重新压回固定 rewrite 顺序、拒收升级路径与改写模板骨架”。
 - 再往下一层，应由 `../navigation/29 -> ../guides/39-41` 继续回答“怎样把这些 drift 原型编译成 validator / linter / reject rule”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。

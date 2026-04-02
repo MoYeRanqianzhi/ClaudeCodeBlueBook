@@ -8,6 +8,19 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写执行 / repair steady-state correction-of-correction rewrite execution”继续推进到“宿主修复稳态纠偏再纠偏改写失真 / repair steady-state correction-of-correction rewrite distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写执行最危险的失败不是没跑 `rewrite card`，而是让 rewrite prose、summary 平静感与 UI 历史重新充当编译链真相；一旦如此，Prompt 的魔力就会从 `systemPrompt + userContext + systemContext + protocol transcript` 的编译链退回更会解释的文本。
+  - 治理宿主修复稳态纠偏再纠偏改写执行最危险的失败不是没写 `window repricing drill`，而是让 usage dashboard 与 mode 平静感提前消费 verdict；一旦如此，安全设计与省 token 设计就会同时从统一定价控制面退回运营感觉。
+  - 结构宿主修复稳态纠偏再纠偏改写执行最危险的失败不是没写 `authority-first reject order`，而是让 pointer、telemetry 与 architecture prose 重新排在 authority、single-source、lineage 与 anti-zombie 证据之前；一旦如此，源码先进性就会从结构真相面退回目录美学。
+- 新增目录责任：
+  - `navigation/84` 负责宿主修复稳态纠偏再纠偏改写失真入口。
+  - `casebooks/55-57` 负责三类宿主修复稳态纠偏再纠偏改写执行为什么仍会退回假 `rewrite card`、假 `reject verdict` 与假 `reopen liability`。
+- 当前新的写作约束：
+  - `59-61` 只表示 `rewrite card`，只用于 correction-of-correction rewrite protocol execution。
+  - `55-57` 只表示 correction-of-correction rewrite execution distortion，不再回头重写 `52-54` 的 recorrection 反例。
+  - `74-84` 应被持续当成一条连续小循环来写，而不是十一篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/84-86`，把这一层 distortion 重新压回固定 rewrite 顺序、拒收升级路径与改写模板骨架。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写协议 / repair steady-state correction-of-correction rewrite protocol”继续推进到“宿主修复稳态纠偏再纠偏改写执行 / repair steady-state correction-of-correction rewrite execution”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏改写如果要真正落地，不能只把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 写成协议，还要把它们继续压成同一张 `rewrite card` 与同一条 `reject verdict order`；否则 Prompt 魔力仍会重新退回 prose 与默认继续。
