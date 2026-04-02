@@ -94,6 +94,13 @@
 72. [71-安全能力发布主权：为什么不是任何接入层都能把能力显示成可用入口](71-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E5%8F%91%E5%B8%83%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E6%8E%A5%E5%85%A5%E5%B1%82%E9%83%BD%E8%83%BD%E6%8A%8A%E8%83%BD%E5%8A%9B%E6%98%BE%E7%A4%BA%E6%88%90%E5%8F%AF%E7%94%A8%E5%85%A5%E5%8F%A3.md)
 73. [72-安全能力撤回主权：为什么不是任何层都能撤回已发布入口，必须由authoritative publisher改口](72-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E6%92%A4%E5%9B%9E%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%82%E9%83%BD%E8%83%BD%E6%92%A4%E5%9B%9E%E5%B7%B2%E5%8F%91%E5%B8%83%E5%85%A5%E5%8F%A3%EF%BC%8C%E5%BF%85%E9%A1%BB%E7%94%B1authoritative%20publisher%E6%94%B9%E5%8F%A3.md)
 74. [73-安全能力恢复主权：为什么不是任何层都能把已撤回入口重新恢复为可见可用](73-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E6%81%A2%E5%A4%8D%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%82%E9%83%BD%E8%83%BD%E6%8A%8A%E5%B7%B2%E6%92%A4%E5%9B%9E%E5%85%A5%E5%8F%A3%E9%87%8D%E6%96%B0%E6%81%A2%E5%A4%8D%E4%B8%BA%E5%8F%AF%E8%A7%81%E5%8F%AF%E7%94%A8.md)
+75. [74-安全能力声明主权：为什么不是任何层都配把能力状态说成enabled、pending、connected、active](74-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E5%A3%B0%E6%98%8E%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%82%E9%83%BD%E9%85%8D%E6%8A%8A%E8%83%BD%E5%8A%9B%E7%8A%B6%E6%80%81%E8%AF%B4%E6%88%90enabled%E3%80%81pending%E3%80%81connected%E3%80%81active.md)
+76. [75-安全能力声明仲裁：当status、notification、footer与hook同时说话时，谁有资格代表当前能力真相](75-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E5%A3%B0%E6%98%8E%E4%BB%B2%E8%A3%81%EF%BC%9A%E5%BD%93status%E3%80%81notification%E3%80%81footer%E4%B8%8Ehook%E5%90%8C%E6%97%B6%E8%AF%B4%E8%AF%9D%E6%97%B6%EF%BC%8C%E8%B0%81%E6%9C%89%E8%B5%84%E6%A0%BC%E4%BB%A3%E8%A1%A8%E5%BD%93%E5%89%8D%E8%83%BD%E5%8A%9B%E7%9C%9F%E7%9B%B8.md)
+77. [76-安全能力显式让位：为什么更高风险、更具体的新状态必须主动驱逐旧的弱状态，而不能等它自然过期](76-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E6%98%BE%E5%BC%8F%E8%AE%A9%E4%BD%8D%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9B%B4%E9%AB%98%E9%A3%8E%E9%99%A9%E3%80%81%E6%9B%B4%E5%85%B7%E4%BD%93%E7%9A%84%E6%96%B0%E7%8A%B6%E6%80%81%E5%BF%85%E9%A1%BB%E4%B8%BB%E5%8A%A8%E9%A9%B1%E9%80%90%E6%97%A7%E7%9A%84%E5%BC%B1%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E7%AD%89%E5%AE%83%E8%87%AA%E7%84%B6%E8%BF%87%E6%9C%9F.md)
+78. [77-安全状态替换语法：为什么新增、折叠、失效、移除与共存必须是不同的状态动作，而不能统一成再发一条通知](77-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E6%9B%BF%E6%8D%A2%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%96%B0%E5%A2%9E%E3%80%81%E6%8A%98%E5%8F%A0%E3%80%81%E5%A4%B1%E6%95%88%E3%80%81%E7%A7%BB%E9%99%A4%E4%B8%8E%E5%85%B1%E5%AD%98%E5%BF%85%E9%A1%BB%E6%98%AF%E4%B8%8D%E5%90%8C%E7%9A%84%E7%8A%B6%E6%80%81%E5%8A%A8%E4%BD%9C%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E7%BB%9F%E4%B8%80%E6%88%90%E5%86%8D%E5%8F%91%E4%B8%80%E6%9D%A1%E9%80%9A%E7%9F%A5.md)
+79. [78-安全状态编辑主权：为什么状态替换语法之后，还必须继续回答谁有资格编辑谁的状态](78-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E7%BC%96%E8%BE%91%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E7%8A%B6%E6%80%81%E6%9B%BF%E6%8D%A2%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%90%8E%EF%BC%8C%E8%BF%98%E5%BF%85%E9%A1%BB%E7%BB%A7%E7%BB%AD%E5%9B%9E%E7%AD%94%E8%B0%81%E6%9C%89%E8%B5%84%E6%A0%BC%E7%BC%96%E8%BE%91%E8%B0%81%E7%9A%84%E7%8A%B6%E6%80%81.md)
+80. [79-安全状态家族作用域：为什么全局key字符串不是长期安全边界，family scope才是状态编辑主权的真正载体](79-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E5%AE%B6%E6%97%8F%E4%BD%9C%E7%94%A8%E5%9F%9F%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%85%A8%E5%B1%80key%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8D%E6%98%AF%E9%95%BF%E6%9C%9F%E5%AE%89%E5%85%A8%E8%BE%B9%E7%95%8C%EF%BC%8Cfamily%20scope%E6%89%8D%E6%98%AF%E7%8A%B6%E6%80%81%E7%BC%96%E8%BE%91%E4%B8%BB%E6%9D%83%E7%9A%84%E7%9C%9F%E6%AD%A3%E8%BD%BD%E4%BD%93.md)
+81. [80-安全状态句柄化：为什么下一代控制面不该继续用裸key编辑状态，而应把family scope升级为opaque handle](80-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E5%8F%A5%E6%9F%84%E5%8C%96%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8B%E4%B8%80%E4%BB%A3%E6%8E%A7%E5%88%B6%E9%9D%A2%E4%B8%8D%E8%AF%A5%E7%BB%A7%E7%BB%AD%E7%94%A8%E8%A3%B8key%E7%BC%96%E8%BE%91%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E5%BA%94%E6%8A%8Afamily%20scope%E5%8D%87%E7%BA%A7%E4%B8%BAopaque%20handle.md)
 
 ## 附录目录
 
@@ -181,6 +188,20 @@
 - 想直接看不同 surface 到底由谁撤回入口、触发条件是什么，以及继续保留旧入口会形成哪种 stale promise：看 `appendix/56`
 - 想直接看为什么不是任何局部回暖信号都能把入口恢复回来，以及为什么能力恢复本质上是重新授权：看 `73`
 - 想直接看不同 surface 到底由谁重新授予入口、正式恢复链是什么，以及哪些“恢复”其实只是提前改口：看 `appendix/57`
+- 想直接看为什么不是任何表面都配把能力状态说成 `connected`、`active`、`installed` 或 `failed`，以及谁只能提醒、谁才配完整命名：看 `74`
+- 想直接看不同 surface 当前最多配说到哪一个能力词、哪些更满词绝对不能说，以及用户下一步该去哪确认：看 `appendix/58`
+- 想直接看为什么多个 surface 同时发声时，不能把“谁更显眼”误当成“谁更权威”，以及 notification、`/status`、footer 与 hook 到底谁该赢什么：看 `75`
+- 想直接看不同 surface 到底拥有什么仲裁权、冲突时谁必须让位、以及哪条 handoff 是硬规则：看 `appendix/59`
+- 想直接看为什么“仲裁已决定谁该赢”仍然不够，以及为什么系统还必须主动撤掉旧的弱状态，避免旧真相赖在屏幕上：看 `76`
+- 想直接看不同 incoming state 到底应该驱逐哪条旧状态、驱逐靠什么机制、以及不驱逐会形成哪种 stale risk：看 `appendix/60`
+- 想直接看为什么“驱逐旧状态”仍然不够，以及为什么 Claude Code 还必须区分折叠、失效、移除与共存，而不是把所有变化都压成再发一条提示：看 `77`
+- 想直接看不同 change pattern 到底该用哪一种 operator、每种 operator 的安全效果是什么、以及最危险的 shortcut 是什么：看 `appendix/61`
+- 想直接看为什么 replacement grammar 仍然不够，以及为什么 fold、invalidate、remove 这些动词之后还必须继续追问“谁配说这句改口”：看 `78`
+- 想直接看不同 status family 到底允许谁编辑、允许用什么 operator、以及最危险的 outsider 是谁：看 `appendix/62`
+- 想直接看为什么回答了“谁有资格编辑”仍然不够，以及为什么真正的长期边界不该只是全局 key 名，而应是被正式承认的 family scope：看 `79`
+- 想直接看不同 key pattern 当前隐含着什么 family、它现在靠什么维持作用域，以及最大的 scope risk 在哪：看 `appendix/63`
+- 想直接看为什么即使 family scope 已经被看见，也仍然不该继续停留在命名约定，而应升级成真正的句柄能力对象：看 `80`
+- 想直接看 notifications 当前 carrier 缺了哪些 scope、推荐的 handle 字段是什么，以及迁移后先解决哪类风险：看 `appendix/64`
 
 ## 和其他目录的关系
 
@@ -300,4 +321,18 @@
 - 想把 `72` 的长文压成一张撤回矩阵，快速看出不同 surface 的 revocation authority、retraction trigger 与 forbidden stale promise：`72` -> `appendix/56`
 - 想看为什么能力恢复不是简单回暖，而必须重新经过同一条主权链签字，以及 why `pending` 往往比“已可用”更诚实：`72` -> `73`
 - 想把 `73` 的长文压成一张恢复矩阵，快速看出不同 surface 的 restoration authority、regrant path 与 forbidden premature return：`73` -> `appendix/57`
+- 想看为什么状态枚举和前台词法必须继续分层，以及 why `/status`、notification、footer 与 hook 不该说同样满的能力词：`71` -> `72` -> `73` -> `74`
+- 想把 `74` 的长文压成一张声明矩阵，快速看出不同 surface 的 visible inputs、max allowed lexicon 与 forbidden stronger claim：`74` -> `appendix/58`
+- 想看为什么有了词法 ceiling 仍然不够，以及 why notification priority、`/status` handoff 与 footer 让位还必须继续组成同一套仲裁规则：`74` -> `75`
+- 想把 `75` 的长文压成一张仲裁矩阵，快速看出不同 surface 的 authority kind、conflict winner-loser 与 forced handoff：`75` -> `appendix/59`
+- 想看为什么知道“谁更权威”仍然不够，以及 why 更高风险、更具体的新状态还必须显式驱逐旧的弱状态，而不能只靠 timeout：`75` -> `76`
+- 想把 `76` 的长文压成一张驱逐矩阵，快速看出不同 incoming state、evicted state、eviction mechanism 与 stale risk：`76` -> `appendix/60`
+- 想看为什么即使已经知道该不该驱逐，也仍然不能把所有状态变化统一成一种更新方式，以及 why `fold`、`invalidate`、`remove` 与 `coexist` 必须分开：`76` -> `77`
+- 想把 `77` 的长文压成一张编辑矩阵，快速看出不同 change pattern、operator、safe effect 与 forbidden shortcut：`77` -> `appendix/61`
+- 想看为什么即使编辑动词已经分清，系统仍然可能因为“谁都能删谁”而失控，以及 why 下一代控制台必须把编辑主权也编码进接口：`77` -> `78`
+- 想把 `78` 的长文压成一张主权矩阵，快速看出不同 status family、allowed editor、allowed operator 与 forbidden outsider：`78` -> `appendix/62`
+- 想看为什么即使主语已经分清，系统仍可能因为 family scope 只存在于命名习惯里而不够稳，以及 why 全局 key 不是长期安全边界：`78` -> `79`
+- 想把 `79` 的长文压成一张作用域矩阵，快速看出不同 key pattern、implicit family、current guarantee 与 scope risk：`79` -> `appendix/63`
+- 想看为什么即使作用域已经看清，系统仍应继续从裸 key 迁移到句柄，以及 why bridge handle 提供了现成范式：`79` -> `80`
+- 想把 `80` 的长文压成一张句柄化矩阵，快速看出不同 subsystem 的 current carrier、missing scope、recommended handle fields 与 migration gain：`80` -> `appendix/64`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
