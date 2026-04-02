@@ -104,6 +104,7 @@
 - 想把顶层目录地图继续拆到 `services/`、`tools/`、`commands/` 的二级目录，并明确权威入口、消费者子集与危险改动面：`../navigation/35 -> ../api/46 -> ../api/47 -> ../api/48 -> ../philosophy/76`
 - 想把这些方法继续收束成可迁移的 Agent Runtime 构建指南、宿主模板与统一蓝图，而不是继续停在阅读与审读层：`../navigation/36 -> 45 -> 46 -> 47 -> ../philosophy/77`
 - 想把这些构建方法继续下沉成上下文编译、治理控制面与可演化内核三条 builder-facing 手册，而不是重新退回“强 prompt / 强规则 / 好结构”的表面叙述：`../navigation/37 -> 48 -> 49 -> 50 -> ../philosophy/78 -> ../philosophy/79 -> ../philosophy/80`
+- 想把这些 builder-facing 手册继续回灌成真正的运行时机制层，而不是停在方法摘要：`../navigation/38 -> ../architecture/79 -> ../architecture/80 -> ../architecture/81`
 
 ## 与其他目录的边界
 
@@ -124,6 +125,7 @@
 - `../philosophy/77` 负责回答“为什么真正成熟的构建，不是复刻功能，而是先固定对象、边界、预算与恢复闭环”。
 - 再往下一层，应由 `../navigation/37 -> 48-50` 继续回答“怎样把 Prompt 魔力、安全/省 token 同构与源码先进性继续压成上下文编译、治理控制面与可演化内核三条 builder-facing 方法线”。
 - `../philosophy/78-80` 负责回答“为什么世界必须先被编译进模型、治理必须同时决定允许什么/看见什么/继续多久、结构必须先替未来维护者保留反驳能力”。
+- 再往下一层，应由 `../navigation/38 -> ../architecture/79-81` 继续回答“怎样把这些方法线重新回灌成 compiled request truth、governance control plane 与 evolvable kernel object boundary 三条机制层对象”。
 
 后续继续补：
 
