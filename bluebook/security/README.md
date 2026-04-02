@@ -435,4 +435,6 @@
 - 想把 `112` 的长文压成一张分层矩阵，快速看出不同 layer 的 responsibility、best-fit rules 与 current evidence：`112` -> `appendix/96`
 - 想看为什么即使验证金字塔已经成形，测试补强仍不能平均推进，而必须优先覆盖最贵的失真与最脆的时序：`112` -> `113`
 - 想把 `113` 的长文压成一张优先级矩阵，快速看出不同 area 的 historical signal、recommended test type 与 priority：`113` -> `appendix/97`
+- 想看为什么即使优先级已经排清，下一步仍不能停留在路线图，而必须直接收口成首批可执行测试套件与 rollout order：`113` -> `114`
+- 想把 `114` 的长文压成一张执行矩阵，快速看出不同 suite 的 first test、minimal assertion 与 rollout order：`114` -> `appendix/98`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
