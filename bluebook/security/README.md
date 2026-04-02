@@ -152,6 +152,7 @@
 - 想直接看为什么 lease failure 不能一律压成“挂了”，而必须分别降到 hidden、pending、reconnecting、failed、stale 与 auth_failed：看 `66`
 - 想直接看不同绿色词分别靠什么续租、多久续租一次、续租失败后会掉到哪条分支：看 `appendix/49`
 - 想直接看为什么这些 failure 层级还必须直接决定下一步 repair path，而不是让用户自己猜：看 `67`
+- 想直接看不同 failure tier 的 dominant repair path 是什么，以及哪些 wrong path 绝对不能走：看 `appendix/51`
 
 ## 和其他目录的关系
 
@@ -258,4 +259,5 @@
 - 想把 `66` 的长文压成一张失败梯子矩阵，快速看出不同 lease failure type 的 recovery capacity 与 next repair path：`66` -> `appendix/50`
 - 想看为什么续租失败后还不能只剩一个 failed，以及 why 不同 failure 必须继续分层表达剩余恢复能力：`65` -> `66`
 - 想看为什么有了 failure ladder 还不够，以及 why 不同 failure tier 还必须直接绑定不同的 next repair path：`66` -> `67`
+- 想把 `67` 的长文压成一张路径选择器矩阵，快速看出不同 failure tier 的 dominant repair path 与 forbidden wrong path：`67` -> `appendix/51`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
