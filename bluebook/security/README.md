@@ -165,6 +165,7 @@
 - 想直接看为什么这些 failure 层级还必须直接决定下一步 repair path，而不是让用户自己猜：看 `67`
 - 想直接看不同 failure tier 的 dominant repair path 是什么，以及哪些 wrong path 绝对不能走：看 `appendix/51`
 - 想直接看为什么只给 dominant repair path 仍然不够，以及系统为什么还必须主动禁止邻近 wrong path：看 `68`
+- 想直接看不同 failure tier 当前绝不能走哪条邻近 wrong path、为什么被禁、什么时候才会解除禁令：看 `appendix/52`
 
 ## 和其他目录的关系
 
@@ -273,4 +274,5 @@
 - 想看为什么有了 failure ladder 还不够，以及 why 不同 failure tier 还必须直接绑定不同的 next repair path：`66` -> `67`
 - 想把 `67` 的长文压成一张路径选择器矩阵，快速看出不同 failure tier 的 dominant repair path 与 forbidden wrong path：`67` -> `appendix/51`
 - 想看为什么 dominant repair path 即使已经存在也仍然不够，以及 why 控制面还必须显式禁止邻近错误路径、收缩动作空间：`67` -> `68`
+- 想把 `68` 的长文压成一张禁令矩阵，快速看出不同 failure tier 的 forbidden adjacent path、block reason 与 release condition：`68` -> `appendix/52`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
