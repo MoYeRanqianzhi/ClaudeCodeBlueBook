@@ -8,7 +8,7 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
-- 蓝皮书已经从“宿主修复稳态纠偏再纠偏失真 / repair steady-state correction-of-correction distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏再纠偏 / repair steady-state correction-of-correction-of-correction guide”层。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏失真 / repair steady-state correction-of-correction distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写 / repair steady-state correction-of-correction rewrite guide”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏执行失真如果要真正被压回 `compiled request truth`，不能只救 `recorrection card`，还要把 `protocol transcript`、`lawful forgetting boundary`、`stable prefix`、`continue qualification` 与 `threshold liability` 一起拉回同一个编译对象；否则 Prompt 魔力仍会从编译链退回解释链。
   - 治理宿主修复稳态纠偏再纠偏执行失真如果要真正被压回统一定价控制面，必须把 `authority`、`decision window`、`continuation pricing`、`capability liability` 与 `threshold` 继续视作同一条拒绝免费扩张的控制面；否则安全设计与省 token 设计仍会在 guide 层重新脱钩。
@@ -19,7 +19,7 @@
 - 当前新的写作约束：
   - 不能只写“再纠偏执行失真该怎样改”，还要写“哪些更制度化的 recorrection 工件正在冒充恢复对象本身”。
   - `74-81` 应被持续当成一条连续小循环来写，而不是八篇并列新增文章。
-- 下一步最值钱的候选应切到 `api/78-80`，把这一层 rewrite guide 明确压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面。
+- 下一步最值钱的候选应切到 `api/78-80`，把这一层改写规则继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏执行 / repair steady-state correction-of-correction execution”继续推进到“宿主修复稳态纠偏再纠偏失真 / repair steady-state correction-of-correction distortion casebook”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏执行最危险的失败，不是没有 `recorrection card`，而是 `recorrection card` 已存在却仍围绕可读 transcript、礼貌 summary、安静 cache 曲线与默认继续工作；这说明 Prompt 魔力最容易从编译链退回解释链。
@@ -31,7 +31,7 @@
 - 当前新的写作约束：
   - 不能只写“再纠偏执行为什么会坏”，还要写“哪些更制度化的执行工件正在冒充恢复对象本身”。
   - `74-80` 应被持续当成一条连续小循环来写，而不是七篇并列新增文章。
-- 该层已由 `navigation/81`、`guides/81-83` 承接；下一步最值钱的候选应切到 `api/78-80`，把这一层 rewrite guide 明确压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面。
+- 该层已由 `navigation/81`、`guides/81-83` 承接；下一步最值钱的候选应切到 `api/78-80`，把这一层改写规则继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏协议 / repair steady-state correction-of-correction protocol”继续推进到“宿主修复稳态纠偏再纠偏执行 / repair steady-state correction-of-correction execution”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏执行如果要真正成立，不能只看 correction prose 与 UI 历史是否平静，必须把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary` 与 `continue qualification` 继续压成同一张 `recorrection card`；否则 Prompt 魔力仍会退回文案崇拜。
