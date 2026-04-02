@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复监护执行 / repair watch execution”继续推进到“宿主修复监护失真 / repair watch distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复监护执行即使已经有 watch card、drift verdict order、handoff freeze 与 reopen drill，仍最容易死于 monitor_only 叙事化、baseline drift ledger 故事化、freeze 软化、deadline 装饰化与假 reopen；否则 Prompt 的编译链魔力会在售后监护层重新退回备注、提醒与按钮判断。
+  - 治理宿主修复监护执行即使已经有 watch card、drift verdict order、quarantine order 与 reopen drill，仍最容易死于 authority watch 退回 mode 看板、ledger residue 噪声化、window watch 面板化、quarantine 备注化与免费重开；否则安全设计与省 token 设计会在监护层重新拆成 mode 面板、usage 图表与保守建议三套投影。
+  - 结构宿主修复监护执行即使已经有 watch card、drift verdict order、handoff freeze 与 reopen drill，仍最容易死于 breadcrumb 复活、telemetry 冒充 writeback watch、anti-zombie 口头化、freeze 退回备注与 reconnect 冒充 reopen；否则源码先进性会在监护层重新退回 pointer、监控与作者记忆。
+- 新增目录责任：
+  - `navigation/64` 负责宿主修复监护失真入口。
+  - `casebooks/40-42` 负责三类宿主修复监护执行的假观察、假冻结与假重开反例。
+- 当前新的写作约束：
+  - 不再只写“监护执行该怎样运行”，还要写“哪些看起来已经在认真观察的工件其实正在重新制造第二真相、假冻结与免费重开”。
+  - 每次继续深化都要回答“当前 watch distortion 暴露的是单一真相正在失守，还是只是在被一套更制度化的售后叙事替位”。
 - 蓝皮书已经从“宿主修复监护协议 / repair watch contract”继续推进到“宿主修复监护执行 / repair watch execution”层。
 - 新增结论：
   - Prompt 宿主修复监护如果要真正落地运行，必须继续围绕 watch window、continuation watch、baseline drift ledger、handoff watch 与 reopen gate 执行固定漂移判定顺序，而不是继续围绕 closeout note、summary handoff 与观察建议判断。

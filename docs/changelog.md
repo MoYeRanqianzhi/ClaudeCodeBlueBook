@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《宿主修复监护失真导航：Prompt、治理与故障模型监护执行如何重新退回假观察、假冻结与假重开》《Prompt宿主修复监护执行反例：假观察、假冻结与假reopen》《治理宿主修复监护执行反例：假观察、假隔离与免费重开》《结构宿主修复监护执行反例：假稳定、假冻结与假重开》，并同步回写主索引、导航/案例库 README 与开发文档，把蓝皮书从“宿主修复监护执行 / repair watch execution”继续推进到“宿主修复监护失真 / repair watch distortion casebook”层
 - 新增《宿主修复监护执行导航：Prompt、治理与故障模型监护协议如何进入监护卡、漂移判定顺序与重开演练》《Prompt宿主修复监护执行手册：watch card、drift verdict order、handoff freeze与reopen drill》《治理宿主修复监护执行手册：watch card、drift verdict order、quarantine order与reopen drill》《结构宿主修复监护执行手册：watch card、drift verdict order、handoff freeze与reopen drill》，并同步回写主索引、导航/运营手册 README 与开发文档，把蓝皮书从“宿主修复监护协议 / repair watch contract”继续推进到“宿主修复监护执行 / repair watch execution”层
 - 新增《宿主修复监护协议导航：Prompt、治理与故障模型收口纠偏如何进入监护窗口、漂移观察与重开闸门面》《Prompt宿主修复监护协议：watch window、handoff watch、baseline drift ledger与reopen gate》《治理宿主修复监护协议：authority watch、ledger residue、window watch、continuation repricing与rollback quarantine》《结构宿主修复监护协议：authority watch、writeback watch、anti-zombie watch与boundary quarantine》，并同步回写主索引、导航/API README 与开发文档，把蓝皮书从“宿主修复收口纠偏 / repair closeout correction guide”继续推进到“宿主修复监护协议 / repair watch contract”层
 - 新增《宿主修复收口纠偏导航：Prompt、治理与故障模型收口失真如何压回固定顺序、拒收升级路径与改写模板骨架》《如何把Prompt宿主修复收口失真压回compiled request truth：固定纠偏顺序、拒收升级路径与改写模板骨架》《如何把治理宿主修复收口失真压回统一定价控制面：固定纠偏顺序、拒收升级路径与改写模板骨架》《如何把结构宿主修复收口失真压回结构真相面：固定纠偏顺序、拒收升级路径与改写模板骨架》，并同步回写主索引、导航/使用专题/案例库 README 与开发文档，把蓝皮书从“宿主修复收口失真 / repair closeout distortion casebook”继续推进到“宿主修复收口纠偏 / repair closeout correction guide”层
