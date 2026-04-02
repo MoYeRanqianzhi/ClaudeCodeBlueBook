@@ -126,6 +126,6 @@
 - 再往下一层，应由 `../navigation/69 -> ../guides/72-74` 继续回答“怎样把这些 watch release execution 失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
 - `casebooks/46-48` 继续回答“宿主修复稳态执行明明已经存在，为什么仍会重新退回假稳态、假托管、假阈值、免费继续复活、pointer 健康感与作者记忆等更高级 steady-state 幻觉”。
 - 再往下一层，应由 `../navigation/72 -> ../casebooks/46-48` 继续回答“这些 steady-state execution 最常怎样死于看起来已经正式 steady 的假稳态、假托管与假阈值”。
-- 再往下一层，应由 `../navigation/73 -> ../guides/75-77` 继续回答“怎样把这些 steady-state execution 失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
+- 下一层入口见 `../navigation/73 -> ../guides/75-77`，继续回答“怎样把这些 steady-state execution 失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
 - 再往下一层，应由 `../navigation/29 -> ../guides/39-41` 继续回答“怎样把这些 drift 原型编译成 validator / linter / reject rule”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。

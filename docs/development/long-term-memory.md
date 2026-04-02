@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复稳态失真 / repair steady-state distortion casebook”继续推进到“宿主修复稳态纠偏 / repair steady-state correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复稳态失真如果要真正纠偏，必须先冻结假稳态，再把 `truth_continuity`、`stable_prefix_custody`、`baseline_dormancy_seal`、`continuation_eligibility`、`handoff_continuity_warranty` 与 `reopen_threshold` 拉回同一个 `compiled request truth`，而不是继续围绕 summary、平静感与默认 continuation 修补；否则 Prompt 的编译链魔力会在 steady-state 层退回叙事链。
+  - 治理宿主修复稳态失真如果要真正纠偏，必须先拆掉 authority 投影，再把 `authority_continuity`、`ledger_dormancy_seal`、`window_dormancy`、`continuation_pricing_covenant`、`capability_custody` 与 `reopen_threshold` 拉回同一个统一定价治理对象，而不是继续围绕 mode 面板、usage dashboard 与经验式保守建议修补；否则安全设计与省 token 设计会在 steady-state 层重新脱钩。
+  - 结构宿主修复稳态失真如果要真正纠偏，必须先 demote pointer、side-write、监控转绿与 archive prose，再把 `authority_continuity`、`resume_continuity_seal`、`writeback_custody`、`anti_zombie_dormancy`、`archive_truth` 与 `reopen_reservation_boundary` 拉回同一个结构真相面，而不是继续围绕 pointer、telemetry 与作者说明修补；否则源码先进性会在 steady-state 层退回健康感、复盘文本与 reconnect 提示。
+- 新增目录责任：
+  - `navigation/73` 负责宿主修复稳态纠偏入口。
+  - `guides/75-77` 负责三类宿主修复稳态执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“steady-state distortion 在说谎”，还要写“纠偏时先冻结哪个假 steady 信号、再救哪个正式对象、哪些情况必须直接 hard reject、模板骨架该如何重写”。
+  - 每次继续深化都要回答“当前 steady-state correction 保护的是未来仍可反对当前 steady 的正式条件，还是只是在制造一份更制度化的平静叙事”。
 - 蓝皮书已经从“宿主修复稳态执行 / repair steady-state execution”继续推进到“宿主修复稳态失真 / repair steady-state distortion casebook”层。
 - 新增结论：
   - Prompt 宿主修复稳态执行即使已经有 steady-state card、continuity verdict order、re-entry threshold 与 residual reopen drill，仍最容易死于假稳态、前缀托管表演、handoff 口头化与无阈值继续；否则 Prompt 的编译链魔力会在稳态层重新退回 summary、平静感与继续幻觉。
