@@ -9,6 +9,50 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复稳态协议 / repair steady-state contract”继续推进到“宿主修复稳态执行 / repair steady-state execution”层。
+- 新增结论：
+  - Prompt 宿主修复稳态如果要真正可运行，必须继续围绕 `truth continuity`、`stable prefix custody`、`baseline dormancy seal`、`continuation eligibility`、`handoff continuity` 与 `reopen threshold` 执行固定稳态判定顺序，而不是继续围绕 summary、watch note 与“最近一直很稳”宣布 steady。
+  - 治理宿主修复稳态如果要真正可运行，必须继续围绕 `authority continuity`、`ledger dormancy seal`、`window dormancy`、`continuation pricing covenant`、`capability custody` 与 `reopen threshold` 执行固定稳态判定顺序，而不是继续围绕 mode 面板、usage dashboard 与经验式保守建议宣布 capability 仍安全。
+  - 结构宿主修复稳态如果要真正可运行，必须继续围绕 `authority continuity`、`resume continuity seal`、`writeback custody`、`anti-zombie dormancy`、`archive truth` 与 `reopen reservation boundary` 执行固定稳态判定顺序，而不是继续围绕 pointer、telemetry 转绿与作者说明宣布系统仍健康。
+- 新增目录责任：
+  - `navigation/71` 负责宿主修复稳态执行入口。
+  - `playbooks/50-52` 负责三类宿主修复稳态协议的巡检卡、稳态判定顺序与再入场责任演练。
+- 当前新的写作约束：
+  - 不再只写“哪些 steady-state object 应被消费”，还要写“现场先看什么、谁有权宣布 stable / blocked / reentry_required、什么时候必须回到 reopen threshold”。
+  - 每次继续深化都要回答“当前 steady-state execution 保护的是无人盯防时的单一真相延续，还是只是在维护一套更制度化的 release 后秩序幻觉”。
+- 蓝皮书已经从“宿主修复解除监护纠偏 / repair watch release correction guide”继续推进到“宿主修复稳态协议 / repair steady-state contract”层。
+- 新增结论：
+  - Prompt 宿主修复解除监护纠偏如果要真正进入稳态，必须继续把 `truth continuity`、`stable prefix custody`、`baseline dormancy seal`、`continuation eligibility`、`handoff continuity` 与 `reopen threshold` 拉回同一个 `compiled request truth`，而不是继续围绕 summary、watch note 与“最近一直很稳”维持 released 幻觉。
+  - 治理宿主修复解除监护纠偏如果要真正进入稳态，必须继续把 `authority continuity`、`ledger dormancy seal`、`window dormancy`、`continuation pricing covenant`、`capability custody` 与 `reopen threshold` 拉回同一个统一定价治理对象，而不是继续围绕 mode 面板、usage dashboard 与经验式保守建议维持 capability released 幻觉。
+  - 结构宿主修复解除监护纠偏如果要真正进入稳态，必须继续把 `authority continuity`、`resume continuity seal`、`writeback custody`、`anti-zombie dormancy`、`archive truth` 与 `reopen reservation boundary` 拉回同一个结构真相面，而不是继续围绕 pointer、telemetry 转绿与作者说明维持系统仍然健康的幻觉。
+- 新增目录责任：
+  - `navigation/70` 负责宿主修复稳态协议入口。
+  - `api/69-71` 负责三类宿主修复解除监护纠偏的无人盯防延续、继续定价、写回托管与 residual reopen threshold 规则面。
+- 当前新的写作约束：
+  - 不再只写“release correction 该怎样拒收假放行”，还要写“停止额外监护之后，哪些正式对象继续维持真相成立，哪些 reopen threshold 仍必须被宿主保留”。
+  - 每次继续深化都要回答“当前 steady-state contract 保护的是无人盯防时的单一真相延续，还是只是在修补一份更稳定的 release 后叙事”。
+- 蓝皮书已经从“宿主修复解除监护失真 / repair watch release distortion casebook”继续推进到“宿主修复解除监护纠偏 / repair watch release correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复解除监护失真如果要真正纠偏，必须先冻结假 released 与静默放行，再把 watch release object、stability witness、baseline drift ledger seal、continuation clearance、handoff release warranty 与 residual reopen gate 拉回同一个 `compiled request truth`，而不是继续围绕 watch note、summary handoff 与“最近没出事”修补。
+  - 治理宿主修复解除监护失真如果要真正纠偏，必须先拆掉免责式出监，再把 authority release、ledger clearance、window exit、continuation settlement、quarantine release 与 reopen liability 拉回同一个统一定价治理对象，而不是继续围绕 mode 面板、usage dashboard、经验式保守建议与主观放心感修补。
+  - 结构宿主修复解除监护失真如果要真正纠偏，必须先 demote 假退休信号，再把 authority release、resume stability seal、writeback release、anti-zombie archive、boundary retirement 与 reopen reservation 拉回同一个结构真相面，而不是继续围绕 pointer、监控转绿、telemetry 繁荣与作者说明修补。
+- 新增目录责任：
+  - `navigation/69` 负责宿主修复解除监护纠偏入口。
+  - `guides/72-74` 负责三类宿主修复解除监护执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些 release execution 信号在说谎”，还要写“纠偏时先冻结哪个假放行信号、再救哪个正式对象、哪些情况必须直接 hard reject”。
+  - 每次继续深化都要回答“当前 watch release correction 保护的是无人继续盯防时的单一真相延续，还是只是在修补一个更制度化的结案叙事”。
+- 蓝皮书已经从“宿主修复解除监护执行 / repair watch release execution”继续推进到“宿主修复解除监护失真 / repair watch release distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复解除监护执行即使已经有 release card、release verdict order、handoff release 与 residual reopen drill，仍最容易死于静默放行、叙事放行、gate 装饰化与无责任 release；否则 Prompt 的编译链魔力会在 release 层重新退回 watch note、summary handoff 与“最近没出事”。
+  - 治理宿主修复解除监护执行即使已经有 release card、release verdict order、capability release 与 reopen liability drill，仍最容易死于免责式出监、假清账、quarantine 建议化与免费继续；否则安全设计与省 token 设计会在 release 层重新拆成 mode 面板、usage dashboard 与经验式保守建议。
+  - 结构宿主修复解除监护执行即使已经有 release card、release verdict order、archive drill、boundary retirement 与 reopen reservation drill，仍最容易死于假退休、归档表演、pointer 式稳定与假保留重开；否则源码先进性会在 release 层重新退回 pointer、监控与作者记忆。
+- 新增目录责任：
+  - `navigation/68` 负责宿主修复解除监护失真入口。
+  - `casebooks/43-45` 负责三类宿主修复解除监护执行的静默放行、免责式出监与假退休反例。
+- 当前新的写作约束：
+  - 不再只写“release execution 该怎样运行”，还要写“哪些看起来已经正式 released 的工件其实正在重新制造第二真相、免责式放行与假退休”。
+  - 每次继续深化都要回答“当前 watch release distortion 暴露的是单一真相正在失守，还是只是在被一套更制度化的结案叙事替位”。
 - 蓝皮书已经从“宿主修复解除监护协议 / repair watch release contract”继续推进到“宿主修复解除监护执行 / repair watch release execution”层。
 - 新增结论：
   - Prompt 宿主修复解除监护如果要真正落地运行，必须继续围绕 watch release object、stability witness、baseline drift ledger seal、continuation clearance、handoff release warranty 与 reopen residual gate 执行固定 release verdict 顺序，而不是继续围绕 watch note、交接文案与“最近没出事”宣布 released。

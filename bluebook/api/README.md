@@ -101,6 +101,9 @@
 - [66-Prompt宿主修复解除监护协议：watch release object、stability witness、baseline drift ledger seal、continuation clearance、handoff release warranty与reopen residual gate](66-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E8%A7%A3%E9%99%A4%E7%9B%91%E6%8A%A4%E5%8D%8F%E8%AE%AE%EF%BC%9Awatch%20release%20object%E3%80%81stability%20witness%E3%80%81baseline%20drift%20ledger%20seal%E3%80%81continuation%20clearance%E3%80%81handoff%20release%20warranty%E4%B8%8Ereopen%20residual%20gate.md)
 - [67-治理宿主修复解除监护协议：authority release、ledger residue clearance、window exit、continuation settlement、quarantine release与reopen liability](67-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E8%A7%A3%E9%99%A4%E7%9B%91%E6%8A%A4%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20release%E3%80%81ledger%20residue%20clearance%E3%80%81window%20exit%E3%80%81continuation%20settlement%E3%80%81quarantine%20release%E4%B8%8Ereopen%20liability.md)
 - [68-结构宿主修复解除监护协议：authority release、resume stability seal、writeback release、anti-zombie archive与boundary retirement](68-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E8%A7%A3%E9%99%A4%E7%9B%91%E6%8A%A4%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20release%E3%80%81resume%20stability%20seal%E3%80%81writeback%20release%E3%80%81anti-zombie%20archive%E4%B8%8Eboundary%20retirement.md)
+- [69-Prompt宿主修复稳态协议：truth continuity、stable prefix custody、baseline dormancy seal、continuation eligibility、handoff continuity与reopen threshold](69-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E5%8D%8F%E8%AE%AE%EF%BC%9Atruth%20continuity%E3%80%81stable%20prefix%20custody%E3%80%81baseline%20dormancy%20seal%E3%80%81continuation%20eligibility%E3%80%81handoff%20continuity%E4%B8%8Ereopen%20threshold.md)
+- [70-治理宿主修复稳态协议：authority continuity、ledger dormancy seal、window dormancy、continuation pricing covenant、capability custody与reopen threshold](70-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20continuity%E3%80%81ledger%20dormancy%20seal%E3%80%81window%20dormancy%E3%80%81continuation%20pricing%20covenant%E3%80%81capability%20custody%E4%B8%8Ereopen%20threshold.md)
+- [71-结构宿主修复稳态协议：authority continuity、writeback custody、resume continuity seal、anti-zombie dormancy、archive truth与reopen reservation boundary](71-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20continuity%E3%80%81writeback%20custody%E3%80%81resume%20continuity%20seal%E3%80%81anti-zombie%20dormancy%E3%80%81archive%20truth%E4%B8%8Ereopen%20reservation%20boundary.md)
 
 ## 按接入任务阅读
 
@@ -124,6 +127,8 @@
 - 想把这些修复纠偏继续压成宿主、SDK、CI、评审与交接都能共享的收口卡、完成语义与交接保证面，而不是继续停在 builder 心里：`../navigation/58 -> 60 -> 61 -> 62 -> ../guides/63 -> ../guides/64 -> ../guides/65`
 - 想把这些收口纠偏继续压成宿主、SDK、CI、评审与交接都能共享的监护窗口、漂移观察与重开闸门面，而不是继续停在 builder 心里：`../navigation/62 -> 63 -> 64 -> 65 -> ../guides/66 -> ../guides/67 -> ../guides/68`
 - 想把这些监护纠偏继续压成宿主、SDK、CI、评审与交接都能共享的解除判定、稳定释压、解除隔离、归档保证与 residual reopen 责任面，而不是继续停在 builder 心里：`../navigation/66 -> 66 -> 67 -> 68 -> ../guides/69 -> ../guides/70 -> ../guides/71`
+- 想把这些解除监护纠偏继续压成宿主、SDK、CI、评审与交接都能共享的稳态协议，而不是继续靠 summary、dashboard 与 pointer 维持 released 幻觉：`../navigation/70 -> 69 -> 70 -> 71 -> ../guides/72 -> ../guides/73 -> ../guides/74`
+- 想把这些稳态协议继续压成宿主、SDK、CI、评审与交接都能共享的巡检卡、稳态判定顺序、再入场阈值与 residual reopen 责任演练，而不是继续停在 contract 字段层：`../navigation/71 -> ../playbooks/50 -> ../playbooks/51 -> ../playbooks/52`
 - 想把 validator / linter 继续压成 machine-readable rule ABI：`../navigation/30 -> 40 -> 41 -> 42 -> ../philosophy/71`
 - 想把这些 rule packet 继续压成最小规则样例、失败样例与 evaluator 接口：`../navigation/31 -> ../playbooks/20 -> ../playbooks/21 -> ../playbooks/22 -> ../philosophy/72`
 - 想把这些样例接口继续接成 replay harness、cross-consumer alignment 与 drift regression lab：`../navigation/32 -> ../playbooks/23 -> ../playbooks/24 -> ../playbooks/25 -> ../philosophy/73`
@@ -169,6 +174,8 @@
 - 再往下一层，应由 `../navigation/54 -> 57-59` 继续回答“怎样把执行纠偏继续压成宿主可消费的修复卡、reject escalation 与 rollback 重入规则面”。
 - 再往下一层，应由 `../navigation/62 -> 63-65` 继续回答“怎样把收口纠偏继续压成宿主可消费的监护窗口、漂移观察与重开闸门面”。
 - 再往下一层，应由 `../navigation/66 -> 66-68` 继续回答“怎样把监护纠偏继续压成宿主可消费的解除判定、稳定释压、解除隔离、归档保证与 residual reopen 责任面”。
+- 再往下一层，应由 `../navigation/70 -> 69-71` 继续回答“怎样把解除监护纠偏继续压成宿主可消费的无人盯防延续、继续定价、写回托管与 residual reopen threshold 面”。
+- 再往下一层，应由 `../navigation/71 -> ../playbooks/50-52` 继续回答“怎样把稳态协议继续压成宿主、CI、评审与交接共享的巡检卡、稳态判定顺序与再入场责任演练”。
 - 机制对象宿主消费面不等于内部实现面。
 - host-consumable projection 不等于 internal compiler / internal fault-model trace。
 
