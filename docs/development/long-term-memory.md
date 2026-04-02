@@ -271,6 +271,11 @@
 - `casebooks/04` 当前应作为样本层的总索引：按阶段、资产、症状、根因与恢复动作统一编目
 - `playbooks/04` 当前应作为运营层与样本层的统一记录模板：让演练和事故复盘能回填进案例库，而不是继续散落在文字里
 - `navigation/12` 的职责应稳定为“样本层如何进入索引层”，避免 `11` 同时承担样本入口和标签索引入口
+- 当 `casebooks/04 + playbooks/04` 稳定后，下一步最值钱的不是继续补说明，而是补参考层：标签字典、源码锚点反查与记录样例库
+- `casebooks/05` 当前应负责“标签定义、判定边界与误分类警戒”，避免团队只会贴标签，不会区分标签
+- `casebooks/06` 当前应负责 “tag -> sample -> playbook -> chapter -> source anchor” 的 crosswalk，避免知道标签却找不到正文与代码
+- `playbooks/05` 当前应负责三类完整填表示例，避免模板层在实际使用时仍然过空
+- `navigation/13` 的职责应稳定为“索引层如何进入参考层”，避免 `12` 同时承担结构索引和具体参考入口
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

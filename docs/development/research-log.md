@@ -244,6 +244,32 @@
 - `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00i. 索引层之后，下一层应进入参考层
+
+- 当 `navigation/12 + casebooks/04 + playbooks/04` 已经把制度压成索引层后，下一步最值钱的不是继续补抽象索引说明，而是补参考层：标签字典、源码锚点反查与完整填表示例。
+- `casebooks/05` 应把 `section / boundary / path parity / lawful forgetting / invalidation / order / hard guard / approval race / stable bytes / stop logic / build surface / shadow-stub / transport shell / recovery asset / zombie risk` 这些标签继续压成定义、边界与误分类警戒；否则团队只会给事故贴名词，不会稳定判定。
+- `casebooks/06` 应把 `tag -> sample -> playbook -> architecture/api/philosophy/source anchor` 做成反查表；否则知道标签的人，仍然找不到正文和实现入口。
+- `playbooks/05` 应提供 Prompt、治理、结构三类完整填表示例，把 `authority source / assembly path / decision gain / evidence schema` 这些字段真正示范出来；否则模板层仍停在空 ABI。
+- `navigation/13` 因而成为必要入口：`12` 负责索引结构，`13` 负责“怎样直接查定义、查锚点、查样例”，避免索引层继续抽象化。
+
+证据:
+
+- `claude-code-source-code/src/memdir/memoryTypes.ts:228-240`
+- `claude-code-source-code/src/QueryEngine.ts:284-321`
+- `claude-code-source-code/src/utils/queryContext.ts:77-84`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-62`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:437-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/cli/structuredIO.ts:561-608`
+- `claude-code-source-code/src/hooks/toolPermission/handlers/interactiveHandler.ts:138-455`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-860`
+- `claude-code-source-code/scripts/prepare-src.mjs:3-64`
+- `claude-code-source-code/scripts/stub-modules.mjs:2-42`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

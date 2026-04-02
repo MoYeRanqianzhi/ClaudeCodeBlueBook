@@ -21,6 +21,7 @@
 2. [02-治理事故运营手册：approval-race、auto-mode撤销、stable-bytes漂移与stop-logic回归](02-治理事故运营手册：approval-race、auto-mode撤销、stable-bytes漂移与stop-logic回归.md)
 3. [03-源码演化演练手册：build-surface、shadow-stub退出、recovery-drill与anti-zombie复盘](03-源码演化演练手册：build-surface、shadow-stub退出、recovery-drill与anti-zombie复盘.md)
 4. [04-演练记录模板：前提、触发器、观测、判定、修复与防再发](04-演练记录模板：前提、触发器、观测、判定、修复与防再发.md)
+5. [05-演练记录样例库：Prompt、治理与结构演化三类完整样例](05-演练记录样例库：Prompt、治理与结构演化三类完整样例.md)
 
 ## 按目标阅读
 
@@ -30,6 +31,7 @@
 - 想先看运营层入口，而不是直接挑单篇：`../navigation/10 -> README`
 - 想直接看真实失败样本和事故原型，而不是先读手册：`../navigation/11 -> ../casebooks/README`
 - 想把手册层和样本层继续压成统一记录格式：`04 -> ../casebooks/04 -> ../navigation/12`
+- 想直接看三类完整填表示例，而不是自己从空模板起步：`05 -> ../navigation/13`
 
 ## 与其他目录的边界
 
