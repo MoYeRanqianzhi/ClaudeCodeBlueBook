@@ -68,7 +68,40 @@
 - `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
 - `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+
+### A049. 宿主修复稳态纠偏再纠偏协议之后，下一层应进入宿主修复稳态纠偏再纠偏执行层
+
+- Prompt repair steady-state correction-of-correction protocol 即使已经被写成宿主可消费规则面，如果团队不能继续把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 压成同一张 `recorrection card`，Prompt 世界就仍会重新退回 prompt 原文崇拜、UI 历史与默认继续；这说明 Prompt 线下一层最值钱的不是继续补 protocol 解释，而是把 repair steady-state correction-of-correction protocol 压成 execution。
+- Governance repair steady-state correction-of-correction protocol 即使已经被写成宿主可消费规则面，如果团队不能继续把 `authority -> ledger -> decision window -> continuation pricing -> capability liability -> threshold` 当成同一条拒绝免费扩张的控制面来运行，安全设计与省 token 设计就仍会重新拆成 mode 面板、usage dashboard 与保守建议；这说明治理线下一层最值钱的不是继续补 protocol 解释，而是把 repair steady-state correction-of-correction protocol 压成 execution。
+- Structure repair steady-state correction-of-correction protocol 即使已经被写成宿主可消费规则面，如果团队不能继续把 `authority surface`、`single-source`、`resume lineage`、`writeback custody`、`anti-zombie evidence` 与 `reopen liability` 压成同一张 `recorrection card`，源码先进性就仍会继续围绕 pointer、telemetry、archive prose 与作者说明工作；这说明结构线下一层最值钱的不是继续补 protocol 解释，而是把 repair steady-state correction-of-correction protocol 压成 execution。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏协议之后需要继续长出“宿主修复稳态纠偏再纠偏执行层”：
+  - `navigation/79` 负责统一入口。
+  - `playbooks/56-58` 负责三类宿主修复稳态纠偏再纠偏协议的 `recorrection card`、`reject verdict order` 与 `re-entry / reopen` 责任演练。
+- 这也意味着 `74-79` 应被视为一条连续小循环，而不是六篇并列文章：`纠偏协议 -> 纠偏执行 -> 纠偏执行失真 -> 再纠偏 -> 再纠偏协议 -> 再纠偏执行`。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 execution 口号，而是考虑新的 `casebooks/52-54`，把这些 steady-state correction-of-correction execution 最常怎样退回假 `recorrection card`、假 `reject verdict` 与假 `reopen liability` 写成新的反例层。
 - `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
+### A050. 宿主修复稳态纠偏再纠偏执行之后，下一层应进入宿主修复稳态纠偏再纠偏失真层
+
+- Prompt repair steady-state correction-of-correction execution 即使已经被写成 `recorrection card`、`reject verdict order`、`protocol repair drill` 与 `threshold liability drill`，如果团队仍把协议真相退回可读 transcript、礼貌 summary、安静 cache 曲线与默认继续，那么再纠偏执行就仍会继续围绕假对象工作；这说明 Prompt 线下一层最值钱的不是继续补执行手册，而是把 repair steady-state correction-of-correction execution 压成 distortion casebook。
+- Governance repair steady-state correction-of-correction execution 即使已经被写成 `recorrection card`、`window refreeze drill`、`capability liability` 与 `threshold rebinding drill`，如果团队仍把 authority、window、pricing 与 threshold 退回 mode 面板、usage dashboard 与默认继续，那么安全设计与省 token 设计就仍会继续在执行层脱钩；这说明治理线下一层最值钱的不是继续补执行手册，而是把 repair steady-state correction-of-correction execution 压成 distortion casebook。
+- Structure repair steady-state correction-of-correction execution 即使已经被写成 `recorrection card`、`authority-first reject order`、`single-source seam audit`、`anti-zombie evidence rebinding` 与 `reopen liability drill`，如果团队仍把 authority、single-source、lineage、anti-zombie 与 reopen 责任退回 pointer、目录审美、archive prose 与 reconnect 提示，那么源码先进性就仍会继续围绕叙事而不是对象工作；这说明结构线下一层最值钱的不是继续补执行手册，而是把 repair steady-state correction-of-correction execution 压成 distortion casebook。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏执行之后需要继续长出“宿主修复稳态纠偏再纠偏失真层”：
+  - `navigation/80` 负责统一入口。
+  - `casebooks/52-54` 负责三类宿主修复稳态纠偏再纠偏执行的高阶恢复幻觉样本。
+- 这也意味着 `74-80` 应被视为一条连续小循环，而不是七篇并列文章：`纠偏协议 -> 纠偏执行 -> 纠偏执行失真 -> 再纠偏 -> 再纠偏协议 -> 再纠偏执行 -> 再纠偏执行失真`。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补坏样例名录，而是考虑新的 `guides/81-83`，把这些 steady-state correction-of-correction execution distortion 继续压成固定顺序、拒收升级路径与改写模板骨架。
+
+### A051. 宿主修复稳态纠偏再纠偏执行失真之后，下一层应进入宿主修复稳态纠偏再纠偏改写层
+
+- Prompt repair steady-state correction-of-correction execution distortion 即使已经被写成反例层，如果团队不能继续把假 `recorrection card`、假 `protocol repair`、假 `lawful forgetting reseal`、前缀平静表演与假 `threshold liability` 压回同一个 `compiled request truth`，Prompt 世界就仍会继续围绕可读 transcript、礼貌 summary 与默认继续工作；这说明 Prompt 线下一层最值钱的不是继续补反例，而是把 repair steady-state correction-of-correction execution distortion 压成 rewrite guide。
+- Governance repair steady-state correction-of-correction execution distortion 即使已经被写成反例层，如果团队不能继续把假 `authority source`、假 `decision window`、免费继续回魂、假 `capability liability` 与假 `threshold rebinding` 压回同一个统一定价治理对象，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与默认继续工作；这说明治理线下一层最值钱的不是继续补反例，而是把 repair steady-state correction-of-correction execution distortion 压成 rewrite guide。
+- Structure repair steady-state correction-of-correction execution distortion 即使已经被写成反例层，如果团队不能继续把假 `authority surface`、伪 `single-source`、假 `lineage reproof`、伪 `anti-zombie evidence` 与假 `reopen liability` 压回同一个结构真相面，源码先进性就仍会继续围绕 pointer、telemetry、archive prose 与 reconnect 提示工作；这说明结构线下一层最值钱的不是继续补反例，而是把 repair steady-state correction-of-correction execution distortion 压成 rewrite guide。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏执行失真之后需要继续长出“宿主修复稳态纠偏再纠偏改写层”：
+  - `navigation/81` 负责统一入口。
+  - `guides/81-83` 负责三类宿主修复稳态纠偏再纠偏执行失真的固定纠偏顺序、硬拒收项与模板骨架。
+- 这也意味着 `74-81` 应被视为一条连续小循环，而不是八篇并列文章：`纠偏协议 -> 纠偏执行 -> 纠偏执行失真 -> 再纠偏 -> 再纠偏协议 -> 再纠偏执行 -> 再纠偏执行失真 -> 再纠偏改写`。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 guide 口号，而是考虑新的 `api/78-80`，把这些 steady-state correction-of-correction-of-correction 继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面。
 
 ### A045. 宿主修复稳态纠偏协议之后，下一层应进入宿主修复稳态纠偏执行层
 
