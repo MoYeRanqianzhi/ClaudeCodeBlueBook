@@ -168,6 +168,7 @@
 - 想直接看为什么只给 dominant repair path 仍然不够，以及系统为什么还必须主动禁止邻近 wrong path：看 `68`
 - 想直接看不同 failure tier 当前绝不能走哪条邻近 wrong path、为什么被禁、什么时候才会解除禁令：看 `appendix/52`
 - 想直接看为什么 cleanup 不是默认合法动作，以及系统何时必须保留 pointer、retry 与 needsRefresh 这类恢复资产：看 `69`
+- 想直接看不同 recoverability asset 当前禁止什么 cleanup、为什么还受保护、以及何时才会重新放行：看 `appendix/53`
 
 ## 和其他目录的关系
 
@@ -278,4 +279,5 @@
 - 想看为什么 dominant repair path 即使已经存在也仍然不够，以及 why 控制面还必须显式禁止邻近错误路径、收缩动作空间：`67` -> `68`
 - 想把 `68` 的长文压成一张禁令矩阵，快速看出不同 failure tier 的 forbidden adjacent path、block reason 与 release condition：`68` -> `appendix/52`
 - 想看为什么 wrong path 里最危险的是 destructive cleanup，以及 why pointer、retry、needsRefresh 这些对象在可恢复性耗尽前都不该被删：`68` -> `69`
+- 想把 `69` 的长文压成一张合法性矩阵，快速看出不同 recoverability asset 的 forbidden cleanup 与 release condition：`69` -> `appendix/53`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
