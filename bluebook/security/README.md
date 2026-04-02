@@ -180,6 +180,7 @@
 - 想直接看为什么不是任何镜像层都能把入口撤回，以及为什么撤回一项能力同样是一种主权改口：看 `72`
 - 想直接看不同 surface 到底由谁撤回入口、触发条件是什么，以及继续保留旧入口会形成哪种 stale promise：看 `appendix/56`
 - 想直接看为什么不是任何局部回暖信号都能把入口恢复回来，以及为什么能力恢复本质上是重新授权：看 `73`
+- 想直接看不同 surface 到底由谁重新授予入口、正式恢复链是什么，以及哪些“恢复”其实只是提前改口：看 `appendix/57`
 
 ## 和其他目录的关系
 
@@ -298,4 +299,5 @@
 - 想看为什么能力撤回和能力发布一样都必须服从同一主权层，以及 why stale client、dead button 与局部隐藏都不足以代表正式撤回：`71` -> `72`
 - 想把 `72` 的长文压成一张撤回矩阵，快速看出不同 surface 的 revocation authority、retraction trigger 与 forbidden stale promise：`72` -> `appendix/56`
 - 想看为什么能力恢复不是简单回暖，而必须重新经过同一条主权链签字，以及 why `pending` 往往比“已可用”更诚实：`72` -> `73`
+- 想把 `73` 的长文压成一张恢复矩阵，快速看出不同 surface 的 restoration authority、regrant path 与 forbidden premature return：`73` -> `appendix/57`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
