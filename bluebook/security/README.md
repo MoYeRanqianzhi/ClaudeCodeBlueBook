@@ -393,4 +393,6 @@
 - 想把 `91` 的长文压成一张保全矩阵，快速看出不同 asset、preservation owner、expiry basis 与 forbidden early loss：`91` -> `appendix/75`
 - 想看为什么即使恢复资产已经被保住，系统仍必须继续为这些资产持续续保 freshness proof，而不是等它们静静变 stale：`91` -> `92`
 - 想把 `92` 的长文压成一张续保矩阵，快速看出不同 asset、freshness signal、refresh cadence 与 stale consequence：`92` -> `appendix/76`
+- 想看为什么即使恢复资产已经持续续保，系统仍不能让“当前目录里的那个 pointer”天然胜出，以及 why 多 worktree 并存时必须由最新活性证明而不是路径亲缘决定当前真相：`92` -> `93`
+- 想把 `93` 的长文压成一张仲裁矩阵，快速看出不同 candidate 的 admission gate、winner rule 与 loser handling：`93` -> `appendix/77`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
