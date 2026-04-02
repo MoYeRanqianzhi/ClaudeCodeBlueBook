@@ -52,6 +52,9 @@
 34. [34-Prompt宿主修复演练反例：repair object伪绑定、摘要回滚与假重入](34-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%BC%94%E7%BB%83%E5%8F%8D%E4%BE%8B%EF%BC%9Arepair%20object%E4%BC%AA%E7%BB%91%E5%AE%9A%E3%80%81%E6%91%98%E8%A6%81%E5%9B%9E%E6%BB%9A%E4%B8%8E%E5%81%87%E9%87%8D%E5%85%A5.md)
 35. [35-治理宿主修复演练反例：authority假恢复、假窗口重置与免费重入](35-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%BC%94%E7%BB%83%E5%8F%8D%E4%BE%8B%EF%BC%9Aauthority%E5%81%87%E6%81%A2%E5%A4%8D%E3%80%81%E5%81%87%E7%AA%97%E5%8F%A3%E9%87%8D%E7%BD%AE%E4%B8%8E%E5%85%8D%E8%B4%B9%E9%87%8D%E5%85%A5.md)
 36. [36-结构宿主修复演练反例：breadcrumb篡位、旁路写回与anti-zombie伪证明](36-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%BC%94%E7%BB%83%E5%8F%8D%E4%BE%8B%EF%BC%9Abreadcrumb%E7%AF%A1%E4%BD%8D%E3%80%81%E6%97%81%E8%B7%AF%E5%86%99%E5%9B%9E%E4%B8%8Eanti-zombie%E4%BC%AA%E8%AF%81%E6%98%8E.md)
+37. [37-Prompt宿主修复收口执行反例：假完成、假交接与假reopen](37-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%94%B6%E5%8F%A3%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87%E5%AE%8C%E6%88%90%E3%80%81%E5%81%87%E4%BA%A4%E6%8E%A5%E4%B8%8E%E5%81%87reopen.md)
+38. [38-治理宿主修复收口执行反例：假关账、假交接与免费重开](38-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%94%B6%E5%8F%A3%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87%E5%85%B3%E8%B4%A6%E3%80%81%E5%81%87%E4%BA%A4%E6%8E%A5%E4%B8%8E%E5%85%8D%E8%B4%B9%E9%87%8D%E5%BC%80.md)
+39. [39-结构宿主修复收口执行反例：假seal、假交接与假重开](39-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%94%B6%E5%8F%A3%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87seal%E3%80%81%E5%81%87%E4%BA%A4%E6%8E%A5%E4%B8%8E%E5%81%87%E9%87%8D%E5%BC%80.md)
 
 ## 按目标阅读
 
@@ -75,6 +78,7 @@
 - 想继续看这些宿主迁移演练明明已经执行，为什么仍会重新退回伪交接、假灰度与回退幻觉：`../navigation/48 -> 28 -> 29 -> 30`
 - 想继续看这些宿主验收执行明明已经存在，为什么仍会重新退回表单化绿灯、假拒收与伪回退：`../navigation/52 -> 31 -> 32 -> 33`
 - 想继续看这些宿主修复演练明明已经存在，为什么仍会重新退回假修复、假回滚与假重入：`../navigation/56 -> 34 -> 35 -> 36`
+- 想继续看这些宿主修复收口执行明明已经存在，为什么仍会重新退回假完成、假交接与假重开：`../navigation/60 -> 37 -> 38 -> 39`
 
 ## 与其他目录的边界
 
@@ -99,5 +103,7 @@
 - `casebooks/34-36` 继续回答“宿主修复演练明明已经存在，为什么仍会重新退回 repair object 伪绑定、authority 假恢复、breadcrumb 篡位、摘要回滚、免费重入与 anti-zombie 伪证明等更高级修复幻觉”。
 - 再往下一层，应由 `../navigation/56 -> ../casebooks/34-36` 继续回答“这些修复演练最常怎样死于看起来已经更制度化的假修复、假回滚与假重入”。
 - 再往下一层，应由 `../navigation/57 -> ../guides/63-65` 继续回答“怎样把这些 repair drill 失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
+- `casebooks/37-39` 继续回答“宿主修复收口执行明明已经存在，为什么仍会重新退回假完成、假交接、假关账、免费重开、假 seal 与假连续性等更高级收口幻觉”。
+- 再往下一层，应由 `../navigation/60 -> ../casebooks/37-39` 继续回答“这些收口执行最常怎样死于看起来已经正式 closeout 的假完成、假交接与假重开”。
 - 再往下一层，应由 `../navigation/29 -> ../guides/39-41` 继续回答“怎样把这些 drift 原型编译成 validator / linter / reject rule”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。
