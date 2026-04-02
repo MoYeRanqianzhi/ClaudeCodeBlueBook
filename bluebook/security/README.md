@@ -126,6 +126,7 @@
 - 想直接看为什么用户执行了修复命令仍不等于系统已经恢复，以及控制面该等哪类回读和 signer 来真正关环：看 `54`
 - 想直接看每条修复路径对应的 verifier、最终 signer 和可清除对象，快速判断有没有“假闭环”：看 `appendix/38`
 - 想直接看为什么有些闭环可以自动撤警而另一些必须停在人类确认态，以及这条门槛到底由什么决定：看 `55`
+- 想直接看不同 repair path 的 ownership 完整度，以及哪些路径允许 auto-close、哪些必须转人工确认：看 `appendix/39`
 
 ## 和其他目录的关系
 
@@ -208,4 +209,5 @@
 - 想看为什么 dominant repair path 仍然不够，以及 why repair action 只能产生修复意图，真正恢复还必须继续经过 verifier readback、state signer、effect signer 关环：`53` -> `54`
 - 想把 `54` 的长文压成一张恢复闭环矩阵，快速看出不同 repair path 对应的 verifier、最终 signer 和可清除对象：`54` -> `appendix/38`
 - 想看为什么 verifier 和 signer 即使已经存在，也不代表系统就该自动撤警，以及 why 只有在 action/verifier/signer 三权都在系统手里时才配 auto-close：`54` -> `55`
+- 想把 `55` 的长文压成一张自动验证门槛矩阵，快速看出各类 repair path 的 ownership 完整度、是否允许 auto-close、何时必须转人工确认：`55` -> `appendix/39`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
