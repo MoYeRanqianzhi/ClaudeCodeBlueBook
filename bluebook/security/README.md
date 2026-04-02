@@ -103,6 +103,7 @@
 81. [80-安全状态句柄化：为什么下一代控制面不该继续用裸key编辑状态，而应把family scope升级为opaque handle](80-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E5%8F%A5%E6%9F%84%E5%8C%96%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8B%E4%B8%80%E4%BB%A3%E6%8E%A7%E5%88%B6%E9%9D%A2%E4%B8%8D%E8%AF%A5%E7%BB%A7%E7%BB%AD%E7%94%A8%E8%A3%B8key%E7%BC%96%E8%BE%91%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E5%BA%94%E6%8A%8Afamily%20scope%E5%8D%87%E7%BA%A7%E4%B8%BAopaque%20handle.md)
 82. [81-安全能力闭包绑定：为什么句柄真正承载的不是方法集合，而是创建时上下文](81-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E9%97%AD%E5%8C%85%E7%BB%91%E5%AE%9A%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8F%A5%E6%9F%84%E7%9C%9F%E6%AD%A3%E6%89%BF%E8%BD%BD%E7%9A%84%E4%B8%8D%E6%98%AF%E6%96%B9%E6%B3%95%E9%9B%86%E5%90%88%EF%BC%8C%E8%80%8C%E6%98%AF%E5%88%9B%E5%BB%BA%E6%97%B6%E4%B8%8A%E4%B8%8B%E6%96%87.md)
 83. [82-安全上下文重推导禁令：为什么session、token、transport与scope不能像标题那样交给调用方二次重算](82-%E5%AE%89%E5%85%A8%E4%B8%8A%E4%B8%8B%E6%96%87%E9%87%8D%E6%8E%A8%E5%AF%BC%E7%A6%81%E4%BB%A4%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88session%E3%80%81token%E3%80%81transport%E4%B8%8Escope%E4%B8%8D%E8%83%BD%E5%83%8F%E6%A0%87%E9%A2%98%E9%82%A3%E6%A0%B7%E4%BA%A4%E7%BB%99%E8%B0%83%E7%94%A8%E6%96%B9%E4%BA%8C%E6%AC%A1%E9%87%8D%E7%AE%97.md)
+84. [83-安全授权连续性：为什么session、token、transport与scope真正需要被保护的不是值，而是其背后的授权连续性](83-%E5%AE%89%E5%85%A8%E6%8E%88%E6%9D%83%E8%BF%9E%E7%BB%AD%E6%80%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88session%E3%80%81token%E3%80%81transport%E4%B8%8Escope%E7%9C%9F%E6%AD%A3%E9%9C%80%E8%A6%81%E8%A2%AB%E4%BF%9D%E6%8A%A4%E7%9A%84%E4%B8%8D%E6%98%AF%E5%80%BC%EF%BC%8C%E8%80%8C%E6%98%AF%E5%85%B6%E8%83%8C%E5%90%8E%E7%9A%84%E6%8E%88%E6%9D%83%E8%BF%9E%E7%BB%AD%E6%80%A7.md)
 
 ## 附录目录
 
@@ -208,6 +209,8 @@
 - 想直接看不同 handle 到底捕获了什么上下文、禁止调用方重建什么对象，以及闭包绑定带来的直接安全收益：看 `appendix/65`
 - 想直接看为什么“句柄里有上下文”仍然不够，以及为什么系统必须继续明确禁止对 authority-bearing context 二次重算，而不是把它们当普通派生值：看 `82`
 - 想直接看不同 surface 上哪些上下文可重推导、哪些绝不能重推导，以及误重算后的 failure mode 是什么：看 `appendix/66`
+- 想直接看为什么这些 authority-bearing context 真正需要被保护的不是值本身，而是它们共同维持的 authorization continuity：看 `83`
+- 想直接看不同 context 的 continuity owner、allowed substitution、explicit break signal 与 boundary failure：看 `appendix/67`
 
 ## 和其他目录的关系
 
@@ -345,4 +348,6 @@
 - 想把 `81` 的长文压成一张闭包矩阵，快速看出不同 handle、captured context、forbidden re-derivation 与 security gain：`81` -> `appendix/65`
 - 想看为什么闭包绑定之后还必须继续提出“禁止重推导”的硬禁令，以及 why title 这种 cosmetic context 与 session/token 这种 authority context 必须分治：`81` -> `82`
 - 想把 `82` 的长文压成一张禁令矩阵，快速看出不同 surface、re-derivable context、forbidden authority context 与 failure mode：`82` -> `appendix/66`
+- 想看为什么禁止重推导之后还必须继续追问“系统真正保护的对象到底是什么”，以及 why session/token/transport/scope 最终都要落到 authorization continuity：`82` -> `83`
+- 想把 `83` 的长文压成一张 continuity 矩阵，快速看出不同 context、continuity owner、allowed substitution 与 boundary failure：`83` -> `appendix/67`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
