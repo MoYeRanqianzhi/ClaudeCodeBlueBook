@@ -397,4 +397,6 @@
 - 想把 `93` 的长文压成一张仲裁矩阵，快速看出不同 candidate 的 admission gate、winner rule 与 loser handling：`93` -> `appendix/77`
 - 想看为什么即使仲裁规则已经正确，系统真正保护的仍不是 pointer、plugin 文件或 MCP client 这些工件，而是同一边界下的继续行动权：`93` -> `94`
 - 想把 `94` 的长文压成一张资格对象矩阵，快速看出不同 artifact 的 boundary binding、freshness proof、revocation gate 与 regrant path：`94` -> `appendix/78`
+- 想看为什么即使资格对象已经定义清楚，失效对象也不能靠残留工件直接回到 `current`，而必须先走 `pending`、`reload` 或 `fresh-session` 这类重签发路径：`94` -> `95`
+- 想把 `95` 的长文压成一张重签发矩阵，快速看出不同 artifact 的 revocation trigger、regrant path 与 forbidden shortcut：`95` -> `appendix/79`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
