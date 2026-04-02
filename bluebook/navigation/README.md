@@ -79,6 +79,7 @@
 67. [宿主修复解除监护执行导航：Prompt、治理与故障模型解除监护协议如何进入release card、release verdict顺序与reopen责任演练](67-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E8%A7%A3%E9%99%A4%E7%9B%91%E6%8A%A4%E6%89%A7%E8%A1%8C%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E8%A7%A3%E9%99%A4%E7%9B%91%E6%8A%A4%E5%8D%8F%E8%AE%AE%E5%A6%82%E4%BD%95%E8%BF%9B%E5%85%A5release%20card%E3%80%81release%20verdict%E9%A1%BA%E5%BA%8F%E4%B8%8Ereopen%E8%B4%A3%E4%BB%BB%E6%BC%94%E7%BB%83.md)
 68. [宿主修复解除监护失真导航：Prompt、治理与故障模型解除监护执行如何重新退回静默放行、免责式出监与假退休](68-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E8%A7%A3%E9%99%A4%E7%9B%91%E6%8A%A4%E5%A4%B1%E7%9C%9F%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E8%A7%A3%E9%99%A4%E7%9B%91%E6%8A%A4%E6%89%A7%E8%A1%8C%E5%A6%82%E4%BD%95%E9%87%8D%E6%96%B0%E9%80%80%E5%9B%9E%E9%9D%99%E9%BB%98%E6%94%BE%E8%A1%8C%E3%80%81%E5%85%8D%E8%B4%A3%E5%BC%8F%E5%87%BA%E7%9B%91%E4%B8%8E%E5%81%87%E9%80%80%E4%BC%91.md)
 69. [宿主修复解除监护纠偏导航：Prompt、治理与故障模型解除监护失真如何压回固定顺序、拒收升级路径与改写模板骨架](69-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E8%A7%A3%E9%99%A4%E7%9B%91%E6%8A%A4%E7%BA%A0%E5%81%8F%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E8%A7%A3%E9%99%A4%E7%9B%91%E6%8A%A4%E5%A4%B1%E7%9C%9F%E5%A6%82%E4%BD%95%E5%8E%8B%E5%9B%9E%E5%9B%BA%E5%AE%9A%E9%A1%BA%E5%BA%8F%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E4%B8%8E%E6%94%B9%E5%86%99%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
+70. [宿主修复稳态协议导航：Prompt、治理与故障模型解除监护纠偏如何进入无人盯防延续、继续定价与权威留存面](70-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E5%8D%8F%E8%AE%AE%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E8%A7%A3%E9%99%A4%E7%9B%91%E6%8A%A4%E7%BA%A0%E5%81%8F%E5%A6%82%E4%BD%95%E8%BF%9B%E5%85%A5%E6%97%A0%E4%BA%BA%E7%9B%AF%E9%98%B2%E5%BB%B6%E7%BB%AD%E3%80%81%E7%BB%A7%E7%BB%AD%E5%AE%9A%E4%BB%B7%E4%B8%8E%E6%9D%83%E5%A8%81%E7%95%99%E5%AD%98%E9%9D%A2.md)
 
 和其他目录的关系：
 
@@ -124,3 +125,4 @@
 - 再往下一层，应由 `67 -> playbooks/47-49` 继续回答“怎样把这些宿主修复解除监护协议继续压成固定 release card、release verdict 顺序、capability / handoff release 与 reopen 责任演练”。
 - 再往下一层，应由 `68 -> casebooks/43-45` 继续回答“为什么这些宿主修复解除监护执行即使已经存在，仍会重新退回静默放行、免责式出监与假退休”。
 - 再往下一层，应由 `69 -> guides/72-74` 继续回答“怎样把这些宿主修复解除监护失真重新压回固定顺序、拒收升级路径与改写模板骨架”。
+- 再往下一层，应由 `70 -> api/69-71` 继续回答“怎样把这些宿主修复解除监护纠偏继续压成宿主可消费的 truth continuity、continuation pricing covenant、writeback custody 与 residual reopen threshold 面”。

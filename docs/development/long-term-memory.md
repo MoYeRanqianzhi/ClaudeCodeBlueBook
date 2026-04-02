@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复解除监护纠偏 / repair watch release correction guide”继续推进到“宿主修复稳态协议 / repair steady-state contract”层。
+- 新增结论：
+  - Prompt 宿主修复解除监护纠偏如果要真正进入稳态，必须继续把 `truth continuity`、`stable prefix custody`、`baseline dormancy seal`、`continuation eligibility`、`handoff continuity` 与 `reopen threshold` 拉回同一个 `compiled request truth`，而不是继续围绕 summary、watch note 与“最近一直很稳”维持 released 幻觉。
+  - 治理宿主修复解除监护纠偏如果要真正进入稳态，必须继续把 `authority continuity`、`ledger dormancy seal`、`window dormancy`、`continuation pricing covenant`、`capability custody` 与 `reopen threshold` 拉回同一个统一定价治理对象，而不是继续围绕 mode 面板、usage dashboard 与经验式保守建议维持 capability released 幻觉。
+  - 结构宿主修复解除监护纠偏如果要真正进入稳态，必须继续把 `authority continuity`、`resume continuity seal`、`writeback custody`、`anti-zombie dormancy`、`archive truth` 与 `reopen reservation boundary` 拉回同一个结构真相面，而不是继续围绕 pointer、telemetry 转绿与作者说明维持系统仍然健康的幻觉。
+- 新增目录责任：
+  - `navigation/70` 负责宿主修复稳态协议入口。
+  - `api/69-71` 负责三类宿主修复解除监护纠偏的无人盯防延续、继续定价、写回托管与 residual reopen threshold 规则面。
+- 当前新的写作约束：
+  - 不再只写“release correction 该怎样拒收假放行”，还要写“停止额外监护之后，哪些正式对象继续维持真相成立，哪些 reopen threshold 仍必须被宿主保留”。
+  - 每次继续深化都要回答“当前 steady-state contract 保护的是无人盯防时的单一真相延续，还是只是在修补一份更稳定的 release 后叙事”。
 - 蓝皮书已经从“宿主修复解除监护失真 / repair watch release distortion casebook”继续推进到“宿主修复解除监护纠偏 / repair watch release correction guide”层。
 - 新增结论：
   - Prompt 宿主修复解除监护失真如果要真正纠偏，必须先冻结假 released 与静默放行，再把 watch release object、stability witness、baseline drift ledger seal、continuation clearance、handoff release warranty 与 residual reopen gate 拉回同一个 `compiled request truth`，而不是继续围绕 watch note、summary handoff 与“最近没出事”修补。

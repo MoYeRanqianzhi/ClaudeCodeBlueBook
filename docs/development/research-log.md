@@ -7,6 +7,46 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A040. 宿主修复解除监护纠偏之后，下一层应进入宿主修复稳态协议层
+
+- Prompt repair watch release correction 即使已经被写成固定纠偏顺序、硬拒收与模板骨架，如果团队不能继续把这些 release correction 压成 `truth continuity`、`stable prefix custody`、`baseline dormancy seal`、`continuation eligibility`、`handoff continuity` 与 `reopen threshold` 的宿主可消费规则面，Prompt released 之后的继续就仍会重新围绕 summary、watch note 与“最近一直很稳”工作；这说明 Prompt 线下一层最值钱的不是继续补纠偏口号，而是把 repair watch release correction 压成 repair steady-state contract。
+- Governance repair watch release correction 即使已经被写成固定纠偏顺序、硬拒收与模板骨架，如果团队不能继续把这些 release correction 压成 `authority continuity`、`ledger dormancy seal`、`window dormancy`、`continuation pricing covenant`、`capability custody` 与 `reopen threshold` 的宿主可消费规则面，安全设计与省 token 设计就仍会重新围绕 mode 面板、usage dashboard 与经验式保守建议工作；这说明治理线下一层最值钱的不是继续补纠偏口号，而是把 repair watch release correction 压成 repair steady-state contract。
+- Structure repair watch release correction 即使已经被写成固定纠偏顺序、硬拒收与模板骨架，如果团队不能继续把这些 release correction 压成 `authority continuity`、`resume continuity seal`、`writeback custody`、`anti-zombie dormancy`、`archive truth` 与 `reopen reservation boundary` 的宿主可消费规则面，源码先进性就仍会重新围绕 pointer、telemetry 转绿与作者说明工作；这说明结构线下一层最值钱的不是继续补纠偏口号，而是把 repair watch release correction 压成 repair steady-state contract。
+- 这意味着蓝皮书在宿主修复解除监护纠偏之后需要继续长出“宿主修复稳态协议层”：
+  - `navigation/70` 负责统一入口。
+  - `api/69-71` 负责三类宿主修复解除监护纠偏的无人盯防延续、继续定价、写回托管与 residual reopen threshold 规则面。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 steady-state 口号，而是考虑新的 `playbooks/50+`，把这些稳态协议继续压成固定巡检、再入场阈值与追责演练手册。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:343-347`
+- `claude-code-source-code/src/utils/api.ts:136-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1533-1541`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/cli/print.ts:1052-1075`
+- `claude-code-source-code/src/cli/print.ts:4568-4641`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:84-645`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/query.ts:1308-1518`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
 ### A039. 宿主修复解除监护失真之后，下一层应进入宿主修复解除监护纠偏层
 
 - Prompt repair watch release distortion 即使已经被写成静默放行、叙事放行与无责任 release 的反例，如果团队不能继续把这些失真压回固定纠偏顺序、拒收升级路径与改写模板骨架，Prompt release 之后的继续就仍会继续围绕 watch note、summary handoff 与“最近没出事”工作；这说明 Prompt 线下一层最值钱的不是继续补坏样例，而是把 repair watch release distortion 压成 repair watch release correction guide。
