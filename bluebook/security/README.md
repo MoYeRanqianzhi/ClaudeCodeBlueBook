@@ -90,6 +90,7 @@
 68. [67-安全恢复失败路径选择器：为什么failure ladder必须直接决定下一步repair path，而不是让用户自己猜](67-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E5%A4%B1%E8%B4%A5%E8%B7%AF%E5%BE%84%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88failure%20ladder%E5%BF%85%E9%A1%BB%E7%9B%B4%E6%8E%A5%E5%86%B3%E5%AE%9A%E4%B8%8B%E4%B8%80%E6%AD%A5repair%20path%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF%E8%AE%A9%E7%94%A8%E6%88%B7%E8%87%AA%E5%B7%B1%E7%8C%9C.md)
 69. [68-安全恢复错误路径禁令：为什么控制面必须主动禁止邻近wrong path，而不只是提示dominant repair path](68-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E9%94%99%E8%AF%AF%E8%B7%AF%E5%BE%84%E7%A6%81%E4%BB%A4%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8E%A7%E5%88%B6%E9%9D%A2%E5%BF%85%E9%A1%BB%E4%B8%BB%E5%8A%A8%E7%A6%81%E6%AD%A2%E9%82%BB%E8%BF%91wrong%20path%EF%BC%8C%E8%80%8C%E4%B8%8D%E5%8F%AA%E6%98%AF%E6%8F%90%E7%A4%BAdominant%20repair%20path.md)
 70. [69-安全恢复合法性：为什么只要剩余可恢复性仍在，系统就必须禁止destructive cleanup](69-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E5%90%88%E6%B3%95%E6%80%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8F%AA%E8%A6%81%E5%89%A9%E4%BD%99%E5%8F%AF%E6%81%A2%E5%A4%8D%E6%80%A7%E4%BB%8D%E5%9C%A8%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%B0%B1%E5%BF%85%E9%A1%BB%E7%A6%81%E6%AD%A2destructive%20cleanup.md)
+71. [70-安全多重窄门：为什么Claude Code不是先给全量能力再补权限，而是逐层借出能力](70-%E5%AE%89%E5%85%A8%E5%A4%9A%E9%87%8D%E7%AA%84%E9%97%A8%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88Claude%20Code%E4%B8%8D%E6%98%AF%E5%85%88%E7%BB%99%E5%85%A8%E9%87%8F%E8%83%BD%E5%8A%9B%E5%86%8D%E8%A1%A5%E6%9D%83%E9%99%90%EF%BC%8C%E8%80%8C%E6%98%AF%E9%80%90%E5%B1%82%E5%80%9F%E5%87%BA%E8%83%BD%E5%8A%9B.md)
 
 ## 附录目录
 
@@ -169,6 +170,7 @@
 - 想直接看不同 failure tier 当前绝不能走哪条邻近 wrong path、为什么被禁、什么时候才会解除禁令：看 `appendix/52`
 - 想直接看为什么 cleanup 不是默认合法动作，以及系统何时必须保留 pointer、retry 与 needsRefresh 这类恢复资产：看 `69`
 - 想直接看不同 recoverability asset 当前禁止什么 cleanup、为什么还受保护、以及何时才会重新放行：看 `appendix/53`
+- 想直接看为什么这套系统不是靠最后一个 permission dialog 才安全，而是靠环境门、信任门、内容门、决议门与发布门逐层缩减能力面：看 `70`
 
 ## 和其他目录的关系
 
@@ -280,4 +282,5 @@
 - 想把 `68` 的长文压成一张禁令矩阵，快速看出不同 failure tier 的 forbidden adjacent path、block reason 与 release condition：`68` -> `appendix/52`
 - 想看为什么 wrong path 里最危险的是 destructive cleanup，以及 why pointer、retry、needsRefresh 这些对象在可恢复性耗尽前都不该被删：`68` -> `69`
 - 想把 `69` 的长文压成一张合法性矩阵，快速看出不同 recoverability asset 的 forbidden cleanup 与 release condition：`69` -> `appendix/53`
+- 想看为什么 bypass、workspace trust、bridge-safe commands、MCP 审批与 channel relay 不是互相替代，而是同一条能力发布链上的多重窄门：`02` -> `03` -> `04` -> `07` -> `70`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
