@@ -154,6 +154,13 @@
 - 这也意味着 `74-85` 应被视为一条连续小循环，而不是十二篇并列文章：`纠偏协议 -> 纠偏执行 -> 纠偏执行失真 -> 再纠偏 -> 再纠偏协议 -> 再纠偏执行 -> 再纠偏执行失真 -> 再纠偏改写 -> 再纠偏改写协议 -> 再纠偏改写执行 -> 再纠偏改写执行失真 -> 再纠偏改写纠偏`。
 - 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 guide 口号，而是考虑新的 `api/81-83`，把这些 steady-state correction-of-correction rewrite correction 继续压成宿主可消费的 rewrite correction 对象、拒收语义与长期 reopen 责任面。
 
+### A057. `correction / recorrection / rewrite` 需要被提升成目录法则，而不是写作习惯
+
+- `correction` 只表示 first-order correction，`recorrection` 只表示 correction-of-correction protocol execution，`rewrite` 只表示“已证明 recorrection execution 本身仍会稳定制造假对象，必须改写执行语法”的层。只有这样，`74-85` 这条小循环才不会在命名上重新塌缩成“同一件事换不同修辞”。
+- 一旦进入 `rewrite` 母线，主工件名必须全部切换为 `rewrite card / rewrite protocol / rewrite execution / rewrite distortion / rewrite correction`，不能再让 `recorrection card` 继续充当主工件名；否则读者会把 `81-85` 误读成“再来一轮更复杂的 recorrection”。
+- 从层级准入看：只有“共享对象必须被运行起来”时，才能从 `api` 进入 `playbook`；只有“执行工件本身会说谎”时，才能从 `playbook` 进入 `casebook`；只有“问题不再是执行漏项，而是执行语法稳定制造假对象”时，才能从 `casebook` 进入 `guide`。这组准入条件比“按节奏补下一层”更重要。
+- 这组法则最适合放在开发文档和长期记忆里，而不应塞回蓝皮书正文，因为它们管理的是目录生成语法，而不是 Claude Code 本体的对象语法。
+
 ### A045. 宿主修复稳态纠偏协议之后，下一层应进入宿主修复稳态纠偏执行层
 
 - Prompt repair steady-state correction protocol 即使已经把 correction object、reject semantics 与 threshold retention 压成正式规则面，如果团队不能继续把这些对象压成 correction card、recovery verdict order、requalification drill 与 threshold reinstatement drill，Prompt 世界就仍会继续围绕 steady note、summary prose 与“最近没出事”工作；这说明 Prompt 线下一层最值钱的不是继续补 protocol，而是把 repair steady-state correction protocol 压成 repair steady-state correction execution。

@@ -2,6 +2,7 @@
 
 ## 2026-04-03
 
+- 在开发文档中新增 `correction / recorrection / rewrite` 命名法则与 `api -> playbook -> casebook -> guide -> api -> playbook -> casebook` 准入法则，明确 `74-85` 连续小循环每一层的进入条件，防止目录继续增长时主工件名和层级职责重新混淆
 - 新增《宿主修复稳态纠偏再纠偏改写纠偏导航：Prompt、治理与故障模型再纠偏改写执行失真如何压回固定rewrite顺序、拒收升级路径与改写模板骨架》《如何把Prompt宿主修复稳态纠偏再纠偏改写执行失真压回compiled request truth：固定rewrite顺序、拒收升级路径与rewrite、prefix、threshold改写模板骨架》《如何把治理宿主修复稳态纠偏再纠偏改写执行失真压回统一定价控制面：固定rewrite顺序、拒收升级路径与authority、window、pricing改写模板骨架》《如何把结构宿主修复稳态纠偏再纠偏改写执行失真压回结构真相面：固定rewrite顺序、拒收升级路径与authority、lineage、liability改写模板骨架》，并同步回写主索引、导航/使用专题 README 与开发文档，把蓝皮书从“宿主修复稳态纠偏再纠偏改写失真 / repair steady-state correction-of-correction rewrite distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏 / repair steady-state correction-of-correction rewrite correction guide”层
 - 深化《Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链》《安全与省Token之所以同构，是因为治理控制面在统一定价一切扩张》《源码先进性之所以成立，是因为故障模型先于模块美学进入结构》，把 section registry 生命周期、late-bound attachment、classifier 定价、decision window 诚实性、外部可验证 authority surface、fresh merge、fail-closed worktree 与统一 transport boundary 进一步压回第一性原理
 - 新增《宿主修复稳态纠偏再纠偏改写失真导航：Prompt、治理与故障模型再纠偏改写执行如何重新退回假rewrite card、假reject顺序与假reopen责任演练》《Prompt宿主修复稳态纠偏再纠偏改写执行反例：假rewrite card、假protocol rewrite与假threshold liability》《治理宿主修复稳态纠偏再纠偏改写执行反例：假rewrite card、假window repricing与假threshold rebinding》《结构宿主修复稳态纠偏再纠偏改写执行反例：假rewrite card、假authority-first reject与假reopen liability》，并同步回写主索引、导航/案例库 README 与开发文档，把蓝皮书从“宿主修复稳态纠偏再纠偏改写执行 / repair steady-state correction-of-correction rewrite execution”继续推进到“宿主修复稳态纠偏再纠偏改写失真 / repair steady-state correction-of-correction rewrite distortion casebook”层

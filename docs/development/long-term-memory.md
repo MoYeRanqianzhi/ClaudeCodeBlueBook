@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 新增硬法则：
+  - `correction` 只用于 first-order correction；`recorrection` 只用于 correction-of-correction protocol execution；`rewrite` 只用于“已证明 recorrection execution 本身仍会稳定制造假对象，必须改写执行语法”的层。
+  - 一旦进入 `rewrite` 母线，主工件名必须统一切换为 `rewrite card / rewrite protocol / rewrite execution / rewrite distortion / rewrite correction`，不得继续让 `recorrection card` 充当主工件名。
+  - 只有“执行工件本身会说谎”时，才能从 `playbook` 进入 `casebook`；只有“问题不再是执行漏项，而是执行语法稳定制造假对象”时，才能从 `casebook` 进入 `guide`。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写失真 / repair steady-state correction-of-correction rewrite distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏 / repair steady-state correction-of-correction rewrite correction guide”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏改写执行失真如果要真正被纠偏，不能只继续批评假 `rewrite card`，还要把 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continue qualification` 与 `threshold liability` 重新压回同一条固定 `rewrite order`。
