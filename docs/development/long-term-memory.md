@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复纠偏 / repair correction guide”继续推进到“宿主修复收口协议 / repair closeout contract”层。
+- 新增结论：
+  - Prompt 宿主修复纠偏如果要真正结束，必须继续围绕 restored request object、protocol truth witness、rollback witness、re-entry warranty 与 closeout verdict，而不是继续围绕事故说明、summary handoff 与默认继续。
+  - 治理宿主修复纠偏如果要真正结束，必须继续围绕 authority settlement、ledger seal、window closure、continuation warranty 与 rollback clearance，而不是继续围绕 mode 恢复、审批完成感与 token 图表转绿。
+  - 结构宿主修复纠偏如果要真正结束，必须继续围绕 authority seal、resume closure order、writeback seal、anti-zombie witness 与 boundary closure，而不是继续围绕 pointer、重连通过感、日志繁荣与恢复成功率。
+- 新增目录责任：
+  - `navigation/58` 负责宿主修复收口协议入口。
+  - `api/60-62` 负责三类宿主修复纠偏的收口卡、完成语义与交接保证面。
+- 当前新的写作约束：
+  - 不再只写“该怎样纠偏”，还要写“哪些收口对象必须被宿主正式消费、哪些完成 verdict 必须共享、哪些内部止血动作绝不能被绑成公共完成语义”。
+  - 每次继续深化都要回答“当前 repair closeout contract 保护的是单一真相的正式收口，还是只是在把修复完成感写成更细的说明书”。
 - 蓝皮书已经从“宿主修复失真 / repair distortion casebook”继续推进到“宿主修复纠偏 / repair correction guide”层。
 - 新增结论：
   - Prompt 宿主修复失真如果要真正纠偏，必须先把 repair object 从事故说明与摘要故事里降回对象绑定，再把 protocol truth、rollback boundary、lawful forgetting object 与 re-entry gate 重新拉回固定顺序，而不是继续围绕修复解释、旧 summary 与默认继续修补。
