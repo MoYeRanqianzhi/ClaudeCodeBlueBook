@@ -334,6 +334,11 @@
 - `casebooks/17` 当前应负责治理 host implementation 失真：只看仪表盘转绿、只看审批结束、只看阈值安全与对象升级失语
 - `casebooks/18` 当前应负责结构 host implementation 失真：只看门禁存在、只看恢复通过、只看 anti-zombie 规则存在与危险路径口头化
 - `navigation/24` 的职责应稳定为“host implementation playbook 层如何进入 implementation distortion casebook 层”，避免 `23` 同时承担落地手册与实施级失真样本两类职责
+- 当 `navigation/24 + casebooks/16-18` 稳定后，下一步最值钱的不是继续补更多事故，而是补 host implementation audit guide：把对象、authority source、decision window、rollback boundary 与 retained assets 反压成统一审读模板
+- `guides/36` 当前应负责 Prompt host implementation 审读模板：把 compiled request truth、stable bytes、lawful forgetting ABI 与 handoff guard 压成统一审读 header
+- `guides/37` 当前应负责治理 host implementation 审读模板：把 decision window、control arbitration、Context Usage、object upgrade 与 rollback object 压成统一审读 header
+- `guides/38` 当前应负责结构 host implementation 审读模板：把 authoritative path、recovery asset ledger、anti-zombie evidence、retained assets 与 danger paths 压成统一审读 header
+- `navigation/25` 的职责应稳定为“implementation distortion casebook 层如何进入 host implementation audit guide 层”，避免 `24` 同时承担事故样本与统一审读模板两类职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

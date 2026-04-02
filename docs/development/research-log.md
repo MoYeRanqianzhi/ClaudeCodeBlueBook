@@ -493,6 +493,23 @@
 - `claude-code-source-code/src/utils/sessionState.ts:92-146`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00u. implementation distortion casebook 之后，下一层应进入 host implementation audit guide 层
+
+- 当 `navigation/24 + casebooks/16-18` 已经把 Prompt、治理与结构三条线在真实执行里最常见的形式主义失真写成正式样本后，下一步最值钱的不是继续补更多事故，而是补 host implementation audit guide：把这些失真重新反压成统一审读顺序，让团队不再靠资深 reviewer 心法维持制度。
+- `guides/36` 应把 Prompt 线的 audit guide 写成统一审读 header：先锁 authority source、assembly path 与 compiled request truth，再锁 stable bytes、lawful forgetting ABI 与 handoff guard；这样才能把 Prompt 魔力继续固定在可编译真相，而不是退回卡片、摘要与原文 prompt。
+- `guides/37` 应把治理线的 audit guide 写成统一审读 header：先锁 current object、decision window、winner source 与 failure semantics，再锁 Context Usage、rollback object 与 object-upgrade rule；这样才能把安全与省 token 继续固定在统一定价判断链，而不是退回 dashboard 与局部 KPI。
+- `guides/38` 应把结构线的 audit guide 写成统一审读 header：先锁 authoritative path、current read/write path 与 recovery asset ledger，再锁 anti-zombie evidence、retained assets、danger paths 与 rollback object；这样才能把源码先进性继续固定在对象真相，而不是退回结构图、恢复成功率与作者记忆。
+- `navigation/25` 因而成为必要入口：`24` 负责知道“这些检查点最常会怎样在真实执行里重新失真”，`25` 负责知道“怎样把这些失真统一反压成审读模板”，避免蓝皮书重新停在事故层而没有 builder-facing 审读层。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。
