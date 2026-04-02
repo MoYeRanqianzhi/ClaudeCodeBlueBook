@@ -141,6 +141,7 @@
 - 想直接看 hidden、suppressed、cleared、resolved 四个词到底各自代表什么、允许说什么、禁止说什么：看 `appendix/44`
 - 想直接看为什么通知、摘要、footer 与账本不能各自发明恢复语言，以及谁才有资格给恢复状态命名：看 `61`
 - 想直接看不同 surface 最多能说到哪一步、哪些更强词绝对不能说：看 `appendix/45`
+- 想直接看当通知、卡片、摘要和 footer 同时说话时，谁有资格代表当前真相：看 `62`
 
 ## 和其他目录的关系
 
@@ -236,4 +237,5 @@
 - 想把 `60` 的长文压成一张词法矩阵，快速看出 hidden、suppressed、cleared、resolved 的定义、禁止误说与责任层：`60` -> `appendix/44`
 - 想看为什么有了词法还不够，以及 why 不同界面、通知、footer 和摘要仍必须服从同一套命名主权与表达 ceiling：`60` -> `61`
 - 想把 `61` 的长文压成一张命名仲裁矩阵，快速看出不同 surface 的 visible inputs、max allowed lexicon 与 forbidden stronger terms：`61` -> `appendix/45`
+- 想看为什么有了命名主权仍然不够，以及 why 多个 surface 同时存在时还必须继续仲裁谁能代表当前真相：`61` -> `62`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
