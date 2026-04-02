@@ -92,16 +92,15 @@
 - 这也意味着 `74-80` 应被视为一条连续小循环，而不是七篇并列文章：`纠偏协议 -> 纠偏执行 -> 纠偏执行失真 -> 再纠偏 -> 再纠偏协议 -> 再纠偏执行 -> 再纠偏执行失真`。
 - 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补坏样例名录，而是考虑新的 `guides/81-83`，把这些 steady-state correction-of-correction execution distortion 继续压成固定顺序、拒收升级路径与改写模板骨架。
 
-### A051. 宿主修复稳态纠偏再纠偏失真之后，下一层应进入宿主修复稳态纠偏再纠偏再纠偏层
-### A051. 宿主修复稳态纠偏再纠偏执行失真之后，下一层应进入宿主修复稳态纠偏再纠偏再纠偏层
+### A051. 宿主修复稳态纠偏再纠偏执行失真之后，下一层应进入宿主修复稳态纠偏再纠偏改写层
 
-- Prompt repair steady-state correction-of-correction execution distortion 即使已经被写成反例层，如果团队不能继续把假 `recorrection card`、假 `protocol repair`、假 `lawful forgetting reseal`、前缀平静表演与假 `threshold liability` 压回同一个 `compiled request truth`，Prompt 世界就仍会继续围绕可读 transcript、礼貌 summary 与默认继续工作；这说明 Prompt 线下一层最值钱的不是继续补反例，而是把 repair steady-state correction-of-correction execution distortion 压成新的 guide。
-- Governance repair steady-state correction-of-correction execution distortion 即使已经被写成反例层，如果团队不能继续把假 `authority source`、假 `decision window`、免费继续回魂、假 `capability liability` 与假 `threshold rebinding` 压回同一个统一定价治理对象，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与默认继续工作；这说明治理线下一层最值钱的不是继续补反例，而是把 repair steady-state correction-of-correction execution distortion 压成新的 guide。
-- Structure repair steady-state correction-of-correction execution distortion 即使已经被写成反例层，如果团队不能继续把假 `authority surface`、伪 `single-source`、假 `lineage reproof`、伪 `anti-zombie evidence` 与假 `reopen liability` 压回同一个结构真相面，源码先进性就仍会继续围绕 pointer、telemetry、archive prose 与 reconnect 提示工作；这说明结构线下一层最值钱的不是继续补反例，而是把 repair steady-state correction-of-correction execution distortion 压成新的 guide。
-- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏执行失真之后需要继续长出“宿主修复稳态纠偏再纠偏再纠偏层”：
+- Prompt repair steady-state correction-of-correction execution distortion 即使已经被写成反例层，如果团队不能继续把假 `recorrection card`、假 `protocol repair`、假 `lawful forgetting reseal`、前缀平静表演与假 `threshold liability` 压回同一个 `compiled request truth`，Prompt 世界就仍会继续围绕可读 transcript、礼貌 summary 与默认继续工作；这说明 Prompt 线下一层最值钱的不是继续补反例，而是把 repair steady-state correction-of-correction execution distortion 压成 rewrite guide。
+- Governance repair steady-state correction-of-correction execution distortion 即使已经被写成反例层，如果团队不能继续把假 `authority source`、假 `decision window`、免费继续回魂、假 `capability liability` 与假 `threshold rebinding` 压回同一个统一定价治理对象，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与默认继续工作；这说明治理线下一层最值钱的不是继续补反例，而是把 repair steady-state correction-of-correction execution distortion 压成 rewrite guide。
+- Structure repair steady-state correction-of-correction execution distortion 即使已经被写成反例层，如果团队不能继续把假 `authority surface`、伪 `single-source`、假 `lineage reproof`、伪 `anti-zombie evidence` 与假 `reopen liability` 压回同一个结构真相面，源码先进性就仍会继续围绕 pointer、telemetry、archive prose 与 reconnect 提示工作；这说明结构线下一层最值钱的不是继续补反例，而是把 repair steady-state correction-of-correction execution distortion 压成 rewrite guide。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏执行失真之后需要继续长出“宿主修复稳态纠偏再纠偏改写层”：
   - `navigation/81` 负责统一入口。
   - `guides/81-83` 负责三类宿主修复稳态纠偏再纠偏执行失真的固定纠偏顺序、硬拒收项与模板骨架。
-- 这也意味着 `74-81` 应被视为一条连续小循环，而不是八篇并列文章：`纠偏协议 -> 纠偏执行 -> 纠偏执行失真 -> 再纠偏 -> 再纠偏协议 -> 再纠偏执行 -> 再纠偏执行失真 -> 再纠偏再纠偏`。
+- 这也意味着 `74-81` 应被视为一条连续小循环，而不是八篇并列文章：`纠偏协议 -> 纠偏执行 -> 纠偏执行失真 -> 再纠偏 -> 再纠偏协议 -> 再纠偏执行 -> 再纠偏执行失真 -> 再纠偏改写`。
 - 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 guide 口号，而是考虑新的 `api/78-80`，把这些 steady-state correction-of-correction-of-correction 继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面。
 
 ### A045. 宿主修复稳态纠偏协议之后，下一层应进入宿主修复稳态纠偏执行层
