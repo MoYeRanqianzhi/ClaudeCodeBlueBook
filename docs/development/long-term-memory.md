@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复收口失真 / repair closeout distortion casebook”继续推进到“宿主修复收口纠偏 / repair closeout correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复收口失真如果要真正纠偏，必须先冻结假完成与 summary-only closeout，再把 restored request object、protocol truth witness、baseline reset、handoff warranty 与 reopen gate 拉回同一个 `compiled request truth`，而不是继续围绕 closeout 文案、compact 后的轻量感与按钮式 reopen 修补。
+  - 治理宿主修复收口失真如果要真正纠偏，必须先拆掉 authority 假收口，再把 ledger seal、window closure、continuation repricing、rollback clearance 与 handoff warranty 拉回同一个统一定价治理对象，而不是继续围绕 mode 面板、审批完成感、usage dashboard 与经验式 handoff 修补。
+  - 结构宿主修复收口失真如果要真正纠偏，必须先 demote breadcrumb，再把 authority seal、resume closure order、writeback 主路径、anti-zombie witness 与 recovery boundary 拉回同一个结构真相面，而不是继续围绕 reconnect 成功感、telemetry 繁荣与作者说明修补。
+- 新增目录责任：
+  - `navigation/61` 负责宿主修复收口纠偏入口。
+  - `guides/66-68` 负责三类宿主修复收口执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些收口执行信号在说谎”，还要写“纠偏时先冻结哪个假完成信号、再救哪个正式对象、哪些情况必须直接 hard reject”。
+  - 每次继续深化都要回答“当前 closeout correction 保护的是单一真相的结束能力，还是只是在修补一个更制度化的完成叙事”。
 - 蓝皮书已经从“宿主修复收口执行 / repair closeout execution”继续推进到“宿主修复收口失真 / repair closeout distortion casebook”层。
 - 新增结论：
   - Prompt 宿主修复收口执行即使已经有 closeout card、completion verdict order、handoff warranty 与 reopen drill，仍最容易死于假完成、protocol witness 漂白、summary handoff、baseline reset 假证明与假 reopen；否则 Prompt 的编译链魔力会在收口层重新退回 closeout 文案、摘要交接与按钮式重开。
