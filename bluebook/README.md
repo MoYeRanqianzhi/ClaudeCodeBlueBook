@@ -107,6 +107,7 @@
 - 想直接看这些实验室怎样继续变成 replay queue、alignment gate、drift ledger 与 rewrite adoption 的持续执行底盘，再读 [navigation/33-Artifact Harness Runner导航：Replay Queue、Alignment Gate、Drift Ledger 与 Rewrite Adoption 如何成为持续执行底盘](navigation/33-Artifact%20Harness%20Runner导航：Replay%20Queue、Alignment%20Gate、Drift%20Ledger%20与%20Rewrite%20Adoption%20如何成为持续执行底盘.md)
 - 想直接看这些持续执行协议怎样进一步变成团队每天会执行的操作手册，再读 [navigation/34-Artifact Runner落地导航：Queue Policy、Alignment Gate、Drift Review 与 Adoption Runbook 如何进入团队手册](navigation/34-Artifact%20Runner落地导航：Queue%20Policy、Alignment%20Gate、Drift%20Review%20与%20Adoption%20Runbook%20如何进入团队手册.md)
 - 想直接看顶层目录地图怎样继续拆到 `services/`、`tools/`、`commands/` 的二级目录，并明确权威入口与消费者边界，再读 [navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界](navigation/35-%E6%BA%90%E7%A0%81%20Atlas%E5%AF%BC%E8%88%AA%EF%BC%9Aservices%E3%80%81tools%E3%80%81commands%20%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%E5%A6%82%E4%BD%95%E5%9B%9E%E5%88%B0%E6%9D%83%E5%A8%81%E5%85%A5%E5%8F%A3%E4%B8%8E%E6%B6%88%E8%B4%B9%E8%80%85%E8%BE%B9%E7%95%8C.md)
+- 想把这些分析继续压成真正可迁移的 Agent Runtime 构建方法，再读 [navigation/36-Agent Runtime构建导航：第一性原理、宿主模板与统一蓝图](navigation/36-Agent%20Runtime%E6%9E%84%E5%BB%BA%E5%AF%BC%E8%88%AA%EF%BC%9A%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E3%80%81%E5%AE%BF%E4%B8%BB%E6%A8%A1%E6%9D%BF%E4%B8%8E%E7%BB%9F%E4%B8%80%E8%93%9D%E5%9B%BE.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -484,6 +485,10 @@
 ### 为什么顶层目录地图还必须继续进入二级目录 Atlas 层
 
 - `navigation/35 -> api/46 -> api/47 -> api/48 -> philosophy/76`
+
+### 为什么源码 Atlas 还必须继续进入 Agent Runtime 构建层
+
+- `navigation/36 -> guides/45 -> guides/46 -> guides/47 -> philosophy/77`
 
 ### 为什么高行动力来自统一定价而不是统一放权
 

@@ -48,6 +48,9 @@
 42. [42-Prompt Artifact Harness Runner落地手册：Replay Queue、Prefix Ledger、Continuation Gate 与 Rewrite Adoption](42-Prompt%20Artifact%20Harness%20Runner%E8%90%BD%E5%9C%B0%E6%89%8B%E5%86%8C%EF%BC%9AReplay%20Queue%E3%80%81Prefix%20Ledger%E3%80%81Continuation%20Gate%20%E4%B8%8E%20Rewrite%20Adoption.md)
 43. [43-治理 Artifact Harness Runner落地手册：Decision Window、Alignment Gate、Arbitration Ledger 与 Object Upgrade](43-%E6%B2%BB%E7%90%86%20Artifact%20Harness%20Runner%E8%90%BD%E5%9C%B0%E6%89%8B%E5%86%8C%EF%BC%9ADecision%20Window%E3%80%81Alignment%20Gate%E3%80%81Arbitration%20Ledger%20%E4%B8%8E%20Object%20Upgrade.md)
 44. [44-结构 Artifact Harness Runner落地手册：Authoritative Queue、Recovery Ledger、Anti-Zombie 审读与 Recovery Adoption](44-%E7%BB%93%E6%9E%84%20Artifact%20Harness%20Runner%E8%90%BD%E5%9C%B0%E6%89%8B%E5%86%8C%EF%BC%9AAuthoritative%20Queue%E3%80%81Recovery%20Ledger%E3%80%81Anti-Zombie%20%E5%AE%A1%E8%AF%BB%E4%B8%8E%20Recovery%20Adoption.md)
+45. [45-从第一性原理构建Agent Runtime：对象、协作语法、资源定价与恢复闭环](45-%E4%BB%8E%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E6%9E%84%E5%BB%BAAgent%20Runtime%EF%BC%9A%E5%AF%B9%E8%B1%A1%E3%80%81%E5%8D%8F%E4%BD%9C%E8%AF%AD%E6%B3%95%E3%80%81%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BB%B7%E4%B8%8E%E6%81%A2%E5%A4%8D%E9%97%AD%E7%8E%AF.md)
+46. [46-Agent Runtime宿主落地模板：Control、状态写回、Context Usage、恢复与证据包络](46-Agent%20Runtime%E5%AE%BF%E4%B8%BB%E8%90%BD%E5%9C%B0%E6%A8%A1%E6%9D%BF%EF%BC%9AControl%E3%80%81%E7%8A%B6%E6%80%81%E5%86%99%E5%9B%9E%E3%80%81Context%20Usage%E3%80%81%E6%81%A2%E5%A4%8D%E4%B8%8E%E8%AF%81%E6%8D%AE%E5%8C%85%E7%BB%9C.md)
+47. [47-统一蓝图手册：把协作语法、资源定价与可演化内核编译成Agent Runtime](47-%E7%BB%9F%E4%B8%80%E8%93%9D%E5%9B%BE%E6%89%8B%E5%86%8C%EF%BC%9A%E6%8A%8A%E5%8D%8F%E4%BD%9C%E8%AF%AD%E6%B3%95%E3%80%81%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BB%B7%E4%B8%8E%E5%8F%AF%E6%BC%94%E5%8C%96%E5%86%85%E6%A0%B8%E7%BC%96%E8%AF%91%E6%88%90Agent%20Runtime.md)
 
 ## 按使用目标阅读
 
@@ -99,6 +102,7 @@
 - 想把这些 validator / linter 继续压成 machine-readable rule ABI，而不是继续靠不同消费者手抄规则：`../navigation/30 -> ../api/40 -> ../api/41 -> ../api/42 -> ../philosophy/71`
 - 想把这些 runner / ledger 协议继续下沉成团队每天真的会执行的操作手册，而不是继续停在 API / 架构层：`../navigation/34 -> 42 -> 43 -> 44 -> ../philosophy/75`
 - 想把顶层目录地图继续拆到 `services/`、`tools/`、`commands/` 的二级目录，并明确权威入口、消费者子集与危险改动面：`../navigation/35 -> ../api/46 -> ../api/47 -> ../api/48 -> ../philosophy/76`
+- 想把这些方法继续收束成可迁移的 Agent Runtime 构建指南、宿主模板与统一蓝图，而不是继续停在阅读与审读层：`../navigation/36 -> 45 -> 46 -> 47 -> ../philosophy/77`
 
 ## 与其他目录的边界
 
@@ -115,6 +119,8 @@
 - `../philosophy/71` 负责回答“为什么真正成熟的规则，不是更多检查，而是不同消费者共享同一拒收语义”。
 - 再往下一层，应由 `../navigation/34 -> 42-44` 继续回答“怎样把 replay queue、alignment gate、drift review 与 adoption runbook 压成 builder-facing 手册”。
 - `../philosophy/75` 负责回答“为什么真正成熟的继续，不是复用上一轮结论，而是重新消费上一轮留下的判断条件”。
+- 再往下一层，应由 `../navigation/36 -> 45-47` 继续回答“怎样把前面所有对象、语法、预算、恢复与 atlas 原则统一压成可迁移的 Agent Runtime 构建方法”。
+- `../philosophy/77` 负责回答“为什么真正成熟的构建，不是复刻功能，而是先固定对象、边界、预算与恢复闭环”。
 
 后续继续补：
 
