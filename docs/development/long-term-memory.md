@@ -9,6 +9,18 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复稳态纠偏失真 / repair steady-state correction distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏 / repair steady-state correction-of-correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏执行失真如果要真正被压回 `compiled request truth`，不能只救 correction card，还要把 `protocol transcript` 与 `lawful forgetting boundary` 明确收回正式对象；否则 Prompt 魔力会在“更会解释的 correction prose”里再次失守。
+  - 治理宿主修复稳态纠偏执行失真如果要真正被压回统一定价控制面，必须把 `Context Usage` 明确还原成 `decision window` 的一部分，而不是留在 usage dashboard；否则安全设计与省 token 设计会重新拆开。
+  - 结构宿主修复稳态纠偏执行失真如果要真正被压回结构真相面，必须把 `authority surface`、`single-source`、`anti-cycle seam` 与 `anti-zombie evidence` 放在目录美学之前；否则源码先进性会在“更整洁的修正流程”里再次退回 pointer、telemetry 与作者记忆。
+- 新增目录责任：
+  - `navigation/77` 负责宿主修复稳态纠偏再纠偏入口。
+  - `guides/78-80` 负责三类宿主修复稳态纠偏执行失真的固定纠偏顺序、硬拒收项与模板骨架。
+- 当前新的写作约束：
+  - 不再只写“steady-state correction execution distortion 该怎样纠偏”，还要写“哪些看起来已经 restored 的 correction prose、mode 平静感、pointer 健康感与作者解释，其实正在重新抢走正式对象”。
+  - 每次继续深化都要回答“当前 correction-of-correction 暴露的是单一真相正在被重新救回，还是只是在制造一套更会安抚人的制度化修正叙事”。
+- 下一步最值钱的候选应切到 `api/75-77`，把这一层 guide 明确压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面。
 - 蓝皮书已经从“宿主修复稳态纠偏执行 / repair steady-state correction execution”继续推进到“宿主修复稳态纠偏失真 / repair steady-state correction distortion casebook”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏执行即使已经有 correction card、recovery verdict order、requalification drill 与 threshold reinstatement drill，仍最容易死于假修正卡、口头真相恢复、前缀复托管表演与阈值装饰化；否则 Prompt 的编译链魔力会在纠偏执行层重新退回 steady note、summary prose 与“最近没出事”。

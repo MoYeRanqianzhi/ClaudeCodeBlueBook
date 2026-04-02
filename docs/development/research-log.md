@@ -33,6 +33,16 @@
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
 - `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
 - `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1533-1541`
+
+### A047. 宿主修复稳态纠偏失真之后，下一层应进入宿主修复稳态纠偏再纠偏层
+
+- Prompt repair steady-state correction distortion 即使已经被写成假修正卡、口头真相恢复、前缀复托管表演与阈值装饰化的新反例层，如果团队不能继续把这些失真重新压回 `compiled request truth`、`protocol transcript`、`lawful forgetting boundary` 与 `threshold reinstatement`，Prompt 世界就仍会继续围绕 correction prose、summary 与“最近没出事”工作；这说明 Prompt 线下一层最值钱的不是继续补 casebook，而是把 repair steady-state correction distortion 压成 repair steady-state correction-of-correction guide。
+- Governance repair steady-state correction distortion 即使已经被写成假纠偏、假再托管、免费继续回魂与假阈值重绑的新反例层，如果团队不能继续把这些失真重新压回 `authority -> ledger -> window -> pricing -> capability custody -> threshold` 共用的治理对象，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与保守建议工作；这说明治理线下一层最值钱的不是继续补 casebook，而是把 repair steady-state correction distortion 压成 repair steady-state correction-of-correction guide。
+- Structure repair steady-state correction distortion 即使已经被写成假修正、假恢复顺序、伪复证与假责任保留的新反例层，如果团队不能继续把这些失真重新压回 `authority surface`、`single-source`、`anti-cycle seam`、`writeback custody`、`anti-zombie evidence` 与 `reservation rebinding`，源码先进性就仍会继续围绕 pointer、telemetry、archive prose 与作者说明工作；这说明结构线下一层最值钱的不是继续补 casebook，而是把 repair steady-state correction distortion 压成 repair steady-state correction-of-correction guide。
+- 这意味着蓝皮书在宿主修复稳态纠偏失真之后需要继续长出“宿主修复稳态纠偏再纠偏层”：
+  - `navigation/77` 负责统一入口。
+  - `guides/78-80` 负责三类宿主修复稳态纠偏执行失真的固定纠偏顺序、硬拒收项与模板骨架。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 guide 口号，而是考虑新的 `api/75-77`，把这些 steady-state correction-of-correction 继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面。
 - `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
 - `claude-code-source-code/src/cli/structuredIO.ts:362-657`
 - `claude-code-source-code/src/cli/print.ts:1052-1075`
