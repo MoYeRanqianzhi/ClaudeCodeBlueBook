@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主迁移工单 / migration workorder”继续推进到“宿主迁移演练 / handoff-gray-rollback playbook”层。
+- 新增结论：
+  - Prompt 宿主迁移如果要真正稳定，必须继续围绕 `compiled request truth` 交接包、protocol rewrite 灰度记录、cache explainability 观测与 continue qualification 回退演练运行，而不是只停在迁移工单。
+  - 治理宿主迁移如果要真正稳定，必须继续围绕 authority source、typed decision、decision window、continuation gate 与 rollback object 的交接包、灰度记录与回退演练运行，而不是只停在控制面迁移顺序。
+  - 故障模型宿主迁移如果要真正稳定，必须继续围绕 authority state、transition legality、anti-zombie projection、recovery boundary 与 writeback 主路径的交接包、灰度记录与回退演练运行，而不是只停在恢复迁移顺序。
+- 新增目录责任：
+  - `navigation/47` 负责宿主迁移演练入口。
+  - `playbooks/32-34` 负责三类宿主迁移的交接包、灰度记录与回退演练。
+- 当前新的写作约束：
+  - 不再只写“应该怎样迁移”，还要写“交接至少留下什么、灰度阶段先看什么、何时必须立即回退”。
+  - 每次继续深化都要回答“当前演练记录保护的是同一机制对象，还是又退回截图、摘要、成功率与作者说明”。
 - 蓝皮书已经从“宿主接入审读 / runbook”继续推进到“宿主迁移工单 / migration workorder”层。
 - 新增结论：
   - Prompt 宿主接入如果要真正可迁移，必须继续围绕输入面冻结、协议重写、cache explainability、lawful forgetting 与 continue qualification 写成固定实施顺序，而不是继续停在排查 checklist。

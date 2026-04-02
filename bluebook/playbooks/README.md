@@ -48,6 +48,9 @@
 29. [29-Prompt宿主接入审读手册：输入面、section breakdown、cache break可解释性与continue qualification排查](29-Prompt%E5%AE%BF%E4%B8%BB%E6%8E%A5%E5%85%A5%E5%AE%A1%E8%AF%BB%E6%89%8B%E5%86%8C%EF%BC%9A%E8%BE%93%E5%85%A5%E9%9D%A2%E3%80%81section%20breakdown%E3%80%81cache%20break%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7%E4%B8%8Econtinue%20qualification%E6%8E%92%E6%9F%A5.md)
 30. [30-治理宿主接入审读手册：authority source、decision window、pending action与rollback object排查](30-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E6%8E%A5%E5%85%A5%E5%AE%A1%E8%AF%BB%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20source%E3%80%81decision%20window%E3%80%81pending%20action%E4%B8%8Erollback%20object%E6%8E%92%E6%9F%A5.md)
 31. [31-故障模型宿主接入审读手册：authority state、recovery boundary与anti-zombie结果面排查](31-%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E5%AE%BF%E4%B8%BB%E6%8E%A5%E5%85%A5%E5%AE%A1%E8%AF%BB%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20state%E3%80%81recovery%20boundary%E4%B8%8Eanti-zombie%E7%BB%93%E6%9E%9C%E9%9D%A2%E6%8E%92%E6%9F%A5.md)
+32. [32-Prompt宿主迁移演练手册：compiled request truth交接包、灰度记录与回退演练](32-Prompt%E5%AE%BF%E4%B8%BB%E8%BF%81%E7%A7%BB%E6%BC%94%E7%BB%83%E6%89%8B%E5%86%8C%EF%BC%9Acompiled%20request%20truth%E4%BA%A4%E6%8E%A5%E5%8C%85%E3%80%81%E7%81%B0%E5%BA%A6%E8%AE%B0%E5%BD%95%E4%B8%8E%E5%9B%9E%E9%80%80%E6%BC%94%E7%BB%83.md)
+33. [33-治理宿主迁移演练手册：统一定价控制面交接包、灰度记录与回退演练](33-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E8%BF%81%E7%A7%BB%E6%BC%94%E7%BB%83%E6%89%8B%E5%86%8C%EF%BC%9A%E7%BB%9F%E4%B8%80%E5%AE%9A%E4%BB%B7%E6%8E%A7%E5%88%B6%E9%9D%A2%E4%BA%A4%E6%8E%A5%E5%8C%85%E3%80%81%E7%81%B0%E5%BA%A6%E8%AE%B0%E5%BD%95%E4%B8%8E%E5%9B%9E%E9%80%80%E6%BC%94%E7%BB%83.md)
+34. [34-故障模型宿主迁移演练手册：结构真相面交接包、灰度记录与回退演练](34-%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E5%AE%BF%E4%B8%BB%E8%BF%81%E7%A7%BB%E6%BC%94%E7%BB%83%E6%89%8B%E5%86%8C%EF%BC%9A%E7%BB%93%E6%9E%84%E7%9C%9F%E7%9B%B8%E9%9D%A2%E4%BA%A4%E6%8E%A5%E5%8C%85%E3%80%81%E7%81%B0%E5%BA%A6%E8%AE%B0%E5%BD%95%E4%B8%8E%E5%9B%9E%E9%80%80%E6%BC%94%E7%BB%83.md)
 
 ## 按目标阅读
 
@@ -73,6 +76,7 @@
 - 想直接看这些实验室怎样继续进入 replay queue、alignment gate、drift ledger 与 rewrite adoption 的持续执行底盘：`../navigation/33 -> ../api/43 -> ../api/44 -> ../api/45 -> ../architecture/78 -> ../philosophy/74`
 - 想把刚回灌出来的机制对象继续变成长期运行里的真实回归门禁，而不是停在架构解释层：`../navigation/39 -> 26 -> 27 -> 28`
 - 想把这些 support-surface misuse 继续压成宿主接入排查、演练与拒收顺序，而不是停在反例描述：`../navigation/45 -> 29 -> 30 -> 31`
+- 想把这些宿主迁移工单继续压成交接样例、灰度记录与回退演练，而不是停在实施顺序：`../navigation/47 -> 32 -> 33 -> 34`
 
 ## 与其他目录的边界
 
@@ -94,5 +98,6 @@
 - 再往下一层，应由 `../navigation/33 -> ../api/43-45 -> ../architecture/78` 继续回答“怎样把这些实验室继续接成可持续执行的 runner / ledger 底盘”。
 - 再往下一层，应由 `../navigation/39 -> 26-28 -> ../architecture/79-81 -> ../api/49-50` 继续回答“怎样让 compiled request truth、governance object 与 evolvable kernel object boundary 进入持续回归与拒收门禁”。
 - 再往下一层，应由 `../navigation/45 -> 29-31 -> ../api/51-53 -> ../casebooks/25-27` 继续回答“怎样把宿主消费面误用继续压成排查顺序、演练集、拒收条件与复盘动作”。
+- 再往下一层，应由 `../navigation/47 -> 32-34 -> ../guides/54-56` 继续回答“怎样把这些宿主迁移工单继续压成交接样例、灰度记录与回退演练”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。

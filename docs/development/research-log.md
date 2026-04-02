@@ -7,6 +7,40 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A017. 宿主迁移工单之后，下一层应进入宿主迁移演练层
+
+- `compiled request truth` 即使已经被写成宿主迁移工单，如果团队仍不能把 section projection、protocol rewrite、cache explainability、compact boundary 与 continue qualification 压成交接包、灰度记录与回退演练，Prompt 迁移就仍会退回 prompt 截图、摘要 handoff 与黑箱继续；这说明 Prompt 线下一层最值钱的不是继续补工单，而是把迁移工单压成 playbook。
+- `governance control plane object` 即使已经被写成宿主迁移工单，如果团队仍不能把 authority source、typed decision、decision window、continuation gate 与 rollback object 压成交接包、灰度记录与回退演练，治理迁移就仍会退回 mode 面板、pending action 文案与文件级回退；这说明治理线下一层最值钱的不是继续补控制面说明，而是把迁移工单压成 playbook。
+- 结构真相面即使已经被写成宿主迁移工单，如果团队仍不能把 authority state、transition legality、anti-zombie evidence、recovery boundary 与 writeback 主路径压成交接包、灰度记录与回退演练，结构迁移就仍会退回 spinner、pointer、成功率与作者口述；这说明结构线下一层最值钱的不是继续补恢复顺序，而是把迁移工单压成 playbook。
+- 这意味着蓝皮书在宿主迁移工单之后需要继续长出“宿主迁移演练层”：
+  - `navigation/47` 负责统一入口。
+  - `playbooks/32-34` 负责三类宿主迁移的交接包、灰度记录与回退演练。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 playbook 句子，而是考虑新的 `casebooks/28+`，把这些迁移演练最常见的伪交接、假灰度与回退幻觉写成新的反例层。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:247-666`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/query/stopHooks.ts:257-331`
+- `claude-code-source-code/src/query.ts:1223-1340`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-260`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/cli/print.ts:2918-3010`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1020-1382`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/state/onChangeAppState.ts:50-92`
+- `claude-code-source-code/src/utils/sessionState.ts:92-149`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:450-529`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
 ### A016. 宿主接入审读之后，下一层应进入宿主迁移工单层
 
 - `compiled request truth` 即使已经进入宿主接入审读层，如果团队仍不能把输入面冻结、协议重写、cache explainability、lawful forgetting 与 continue qualification 压成固定实施顺序，Prompt 宿主接入就仍会退回字符串接入、raw transcript 与 summary handoff；这说明 Prompt 线下一层最值钱的不是继续补排查 checklist，而是把审读结果压成迁移工单、交接包与灰度发布顺序。
