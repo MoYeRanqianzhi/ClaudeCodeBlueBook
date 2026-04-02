@@ -417,4 +417,22 @@
 - 想把 `103` 的长文压成一张字段矩阵，快速看出不同 projection protocol field 的 meaning、example source 与 UI gain：`103` -> `appendix/87`
 - 想看为什么即使 projection protocol fields 已经定义出来，这些字段仍不应平均撒到所有 surface，而应随控制面强弱、带宽与责任分层落位：`103` -> `104`
 - 想把 `104` 的长文压成一张落位矩阵，快速看出不同 surface 的 must-show fields、optional fields 与 forbidden clutter：`104` -> `appendix/88`
+- 想看为什么即使字段已经落在正确 surface，上面出现的多个 signal 仍不能平权竞争，而应让强断点抢占弱信号：`104` -> `105`
+- 想把 `105` 的长文压成一张优先级矩阵，快速看出不同 signal 的 priority、preemption target 与 display policy：`105` -> `appendix/89`
+- 想看为什么即使优先级已经分出来，系统仍不能只靠“谁更强”治理字段，而必须继续回答它何时配升级、何时该留场、何时必须退场：`105` -> `106`
+- 想把 `106` 的长文压成一张生命周期矩阵，快速看出不同 signal 的 upgrade threshold、stay condition、retire trigger 与 premature exit risk：`106` -> `appendix/90`
+- 想看为什么即使生命周期规则已经被找出来，它们仍不该继续散落在局部 hook、controller 与 comment 里，而应升级成统一 field-lifecycle protocol：`106` -> `107`
+- 想把 `107` 的长文压成一张协议化矩阵，快速看出不同 subsystem 的 current carrier、hidden lifecycle rule 与 recommended protocol fields：`107` -> `appendix/91`
+- 想看为什么即使协议已经定义出来，统一控制台仍不能只保存当前快照，而必须保存字段为何升级、为何留场、为何退场的时间性依据：`107` -> `108`
+- 想把 `108` 的长文压成一张账本矩阵，快速看出不同 subsystem 的 current snapshot、missing temporal basis 与 recommended ledger record：`108` -> `appendix/92`
+- 想看为什么即使 lifecycle ledger 已经成立，系统仍不能继续让高风险字段通过裸 `setState` 变化，而必须补统一 transition dispatch / state machine：`108` -> `109`
+- 想把 `109` 的长文压成一张调度矩阵，快速看出不同 subsystem 的 current writer、implicit transition 与 recommended dispatch event：`109` -> `appendix/93`
+- 想看为什么即使 dispatch 已经存在，状态机仍不能只会“调度”，而必须继续回答哪些 from_state -> to_state 根本不被允许：`109` -> `110`
+- 想把 `110` 的长文压成一张宪法矩阵，快速看出不同 subsystem 的 forbidden jump、allowed gate 与 reason：`110` -> `appendix/94`
+- 想看为什么即使 transition constitution 已经成立，如果这些禁令不能被机器持续验证，就仍然太依赖维护者记忆：`110` -> `111`
+- 想把 `111` 的长文压成一张机检矩阵，快速看出不同 subsystem 的 candidate invariant、current guard 与 recommended automated check：`111` -> `appendix/95`
+- 想看为什么即使 candidate invariants 已经被找出来，安全验证仍不能停留在单点机检，而必须把 schema、guard、transition、ledger 与 tests 组织成验证金字塔：`111` -> `112`
+- 想把 `112` 的长文压成一张分层矩阵，快速看出不同 layer 的 responsibility、best-fit rules 与 current evidence：`112` -> `appendix/96`
+- 想看为什么即使验证金字塔已经成形，测试补强仍不能平均推进，而必须优先覆盖最贵的失真与最脆的时序：`112` -> `113`
+- 想把 `113` 的长文压成一张优先级矩阵，快速看出不同 area 的 historical signal、recommended test type 与 priority：`113` -> `appendix/97`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
