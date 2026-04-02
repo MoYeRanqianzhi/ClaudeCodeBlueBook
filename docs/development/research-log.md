@@ -1123,6 +1123,8 @@
 - 在这之后，再单独补一个 `15-来源主权总表` 就有了明确价值：`settings/settings.ts` 里的 policy first-source-wins、`managedEnv.ts` 的 host-managed provider env、`permissionsLoader.ts` / `hooksConfigSnapshot.ts` / `mcp/config.ts` / `pluginOnlyPolicy.ts` 的 managed-only 与 plugin-only 收口、以及 `managedPlugins.ts` / `marketplaceHelpers.ts` 对插件供应链主权的收束，已经足够支持一张“谁能定义、谁能覆盖、谁能最终收口”的总表。这让安全专题不只是在讲机制，而是在讲整套系统的主权编排。 
 - 有了总图和总表之后，再单独补一个 `16-安全反模式与反公理` 就很自然了：`shadowedRuleDetection.ts` 说明“规则写上去”不等于规则真正可达，`managedEnv.ts` 说明 project/local settings 不是随意改写主链的合法入口，`bridgeEnabled.ts` 说明兼容不等于 entitlement 等价，`validation.ts` 说明系统宁愿过滤坏规则也不让一个坏值毒化整份设置文件。把这些负面教材单独收束后，安全专题就不再只有“正面原则”，也有了一套“哪些做法会慢慢掏空边界”的反公理。 
 - 到这里再补一个 `17-终局总指南` 就很有价值了：安全专题已经从方法论一路扩到总图、总表、反模式和产品路线图，继续线性加章节的收益开始下降；更值得做的是把 `00-16` 压缩成一份最短、最高密度、最适合引用的终局版，让读者可以先抓全局判断，再按 `13-二级索引` 回到局部细读。 
+- 继续往源码内核层下钻后，可以更明确地把安全检测技术单独抽成一章：`dangerousPatterns.ts` / `permissionSetup.ts` / `permissions.ts` 说明系统先防“危险 allow rule 架空仲裁层”，`pathValidation.ts` 说明它防的不是路径复杂而是路径语义漂移，`WebFetchTool/preapproved.ts` / `mcpValidation.ts` / `services/mcp/config.ts` 说明外部入口被拆成读取、输出半径、连接定义权三类治理对象，`managedEnv.ts` / `settings.ts` / `validation.ts` / `pluginOnlyPolicy.ts` 则说明真正高风险的是低信任来源改写高风险运行时主链。因此补一个 `18-安全检测技术内核` 是有明确价值的，它把“安全控制面”进一步压成“检测链控制面”。 
+- 安全专题做到这里后，目录结构也应该从纯线性主目录升级成“主线 + 附录证据”：新增 `security/appendix/` 承载模块到结论的证据索引、图表和速查材料，能避免主目录继续无限拉长，也更符合后续继续做图谱化、表格化和证据化维护的方向。 
 
 ## 下一步待办
 
