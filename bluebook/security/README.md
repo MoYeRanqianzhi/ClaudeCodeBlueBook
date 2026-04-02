@@ -427,4 +427,6 @@
 - 想把 `108` 的长文压成一张账本矩阵，快速看出不同 subsystem 的 current snapshot、missing temporal basis 与 recommended ledger record：`108` -> `appendix/92`
 - 想看为什么即使 lifecycle ledger 已经成立，系统仍不能继续让高风险字段通过裸 `setState` 变化，而必须补统一 transition dispatch / state machine：`108` -> `109`
 - 想把 `109` 的长文压成一张调度矩阵，快速看出不同 subsystem 的 current writer、implicit transition 与 recommended dispatch event：`109` -> `appendix/93`
+- 想看为什么即使 dispatch 已经存在，状态机仍不能只会“调度”，而必须继续回答哪些 from_state -> to_state 根本不被允许：`109` -> `110`
+- 想把 `110` 的长文压成一张宪法矩阵，快速看出不同 subsystem 的 forbidden jump、allowed gate 与 reason：`110` -> `appendix/94`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
