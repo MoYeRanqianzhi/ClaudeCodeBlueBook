@@ -393,6 +393,11 @@
 - `navigation/34` 的职责应稳定为“artifact harness runner / drift ledger 层如何进入 builder-facing 操作手册层”，避免 `33` 同时承担持续执行协议与团队手册两类职责
 - `philosophy/75` 当前应负责把“成熟继续 = 每次继续前重新消费上一轮留下的判断条件”稳定成新的长期判断
 - 当 `navigation/34 + guides/42-44` 稳定后，下一步最值钱的不是继续补更多 runner checklist，而是回到源码目录级 atlas：把 `services/`、`tools/`、`commands/` 细分到二级目录并重新校准控制平面、消费者子集与权威入口
+- `api/46` 当前应负责 services atlas：把 `api/compact/memory/mcp/lsp/analytics/services/tools` 子系统的权威入口、主要消费者与危险改动面拉平
+- `api/47` 当前应负责 tools atlas：把执行原语、控制工具、任务编排、扩展桥接、deferred visibility 与 consumer subset 边界拉平
+- `api/48` 当前应负责 commands atlas：把会话控制、模式治理、扩展装配、运营诊断与 internal-only 边界拉平
+- `navigation/35` 的职责应稳定为“顶层目录地图如何进入二级目录 atlas 层”，避免 `30` 同时承担顶层地图与二级目录 atlas 两类职责
+- `philosophy/76` 当前应负责把“成熟源码地图 = 更快暴露权威入口、消费者子集与危险改动面”稳定成新的长期判断
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

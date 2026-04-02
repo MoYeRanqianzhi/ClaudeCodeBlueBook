@@ -99,6 +99,7 @@
 - 想直接看这些样例怎样继续接成 replay harness、cross-consumer alignment 与 drift 回归实验室，再读 [navigation/32-Artifact Evaluator Harness导航：可重放验证、跨消费者对齐与 Drift 回归如何证明同一拒收语义](navigation/32-Artifact%20Evaluator%20Harness导航：可重放验证、跨消费者对齐与%20Drift%20回归如何证明同一拒收语义.md)
 - 想直接看这些实验室怎样继续变成 replay queue、alignment gate、drift ledger 与 rewrite adoption 的持续执行底盘，再读 [navigation/33-Artifact Harness Runner导航：Replay Queue、Alignment Gate、Drift Ledger 与 Rewrite Adoption 如何成为持续执行底盘](navigation/33-Artifact%20Harness%20Runner导航：Replay%20Queue、Alignment%20Gate、Drift%20Ledger%20与%20Rewrite%20Adoption%20如何成为持续执行底盘.md)
 - 想直接看这些持续执行协议怎样进一步变成团队每天会执行的操作手册，再读 [navigation/34-Artifact Runner落地导航：Queue Policy、Alignment Gate、Drift Review 与 Adoption Runbook 如何进入团队手册](navigation/34-Artifact%20Runner落地导航：Queue%20Policy、Alignment%20Gate、Drift%20Review%20与%20Adoption%20Runbook%20如何进入团队手册.md)
+- 想直接看顶层目录地图怎样继续拆到 `services/`、`tools/`、`commands/` 的二级目录，并明确权威入口与消费者边界，再读 [navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界](navigation/35-%E6%BA%90%E7%A0%81%20Atlas%E5%AF%BC%E8%88%AA%EF%BC%9Aservices%E3%80%81tools%E3%80%81commands%20%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%E5%A6%82%E4%BD%95%E5%9B%9E%E5%88%B0%E6%9D%83%E5%A8%81%E5%85%A5%E5%8F%A3%E4%B8%8E%E6%B6%88%E8%B4%B9%E8%80%85%E8%BE%B9%E7%95%8C.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -422,6 +423,10 @@
 
 - `navigation/34 -> guides/42 -> guides/43 -> guides/44 -> philosophy/75`
 
+### 为什么顶层目录地图还必须继续进入二级目录 Atlas 层
+
+- `navigation/35 -> api/46 -> api/47 -> api/48 -> philosophy/76`
+
 ### 为什么高行动力来自统一定价而不是统一放权
 
 - `architecture/50 -> architecture/56 -> architecture/68 -> architecture/71 -> philosophy/58`
@@ -483,3 +488,4 @@
 - 想直接看这些样例怎样继续接成 replay harness、cross-consumer alignment 与 drift 回归实验室，再读 [navigation/32-Artifact Evaluator Harness导航：可重放验证、跨消费者对齐与 Drift 回归如何证明同一拒收语义](navigation/32-Artifact%20Evaluator%20Harness导航：可重放验证、跨消费者对齐与%20Drift%20回归如何证明同一拒收语义.md)
 - 想直接看这些实验室怎样继续变成持续执行的 runner / ledger 底盘，再读 [navigation/33-Artifact Harness Runner导航：Replay Queue、Alignment Gate、Drift Ledger 与 Rewrite Adoption 如何成为持续执行底盘](navigation/33-Artifact%20Harness%20Runner导航：Replay%20Queue、Alignment%20Gate、Drift%20Ledger%20与%20Rewrite%20Adoption%20如何成为持续执行底盘.md)
 - 想直接看这些持续执行协议怎样继续变成团队真正会执行的操作手册，再读 [navigation/34-Artifact Runner落地导航：Queue Policy、Alignment Gate、Drift Review 与 Adoption Runbook 如何进入团队手册](navigation/34-Artifact%20Runner落地导航：Queue%20Policy、Alignment%20Gate、Drift%20Review%20与%20Adoption%20Runbook%20如何进入团队手册.md)
+- 想直接看 `services/`、`tools/`、`commands/` 怎样继续拆到二级目录 atlas，并更快找到权威入口、消费者子集与危险改动面，再读 [navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界](navigation/35-%E6%BA%90%E7%A0%81%20Atlas%E5%AF%BC%E8%88%AA%EF%BC%9Aservices%E3%80%81tools%E3%80%81commands%20%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%E5%A6%82%E4%BD%95%E5%9B%9E%E5%88%B0%E6%9D%83%E5%A8%81%E5%85%A5%E5%8F%A3%E4%B8%8E%E6%B6%88%E8%B4%B9%E8%80%85%E8%BE%B9%E7%95%8C.md)

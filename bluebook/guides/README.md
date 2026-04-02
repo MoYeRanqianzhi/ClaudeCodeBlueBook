@@ -98,6 +98,7 @@
 - 想把 artifact drift 继续编译成自动校验、reviewer gate 与 handoff reject，而不是停在反例识别：`../navigation/29 -> 39 -> 40 -> 41 -> ../philosophy/70`
 - 想把这些 validator / linter 继续压成 machine-readable rule ABI，而不是继续靠不同消费者手抄规则：`../navigation/30 -> ../api/40 -> ../api/41 -> ../api/42 -> ../philosophy/71`
 - 想把这些 runner / ledger 协议继续下沉成团队每天真的会执行的操作手册，而不是继续停在 API / 架构层：`../navigation/34 -> 42 -> 43 -> 44 -> ../philosophy/75`
+- 想把顶层目录地图继续拆到 `services/`、`tools/`、`commands/` 的二级目录，并明确权威入口、消费者子集与危险改动面：`../navigation/35 -> ../api/46 -> ../api/47 -> ../api/48 -> ../philosophy/76`
 
 ## 与其他目录的边界
 

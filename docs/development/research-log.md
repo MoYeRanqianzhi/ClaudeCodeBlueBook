@@ -676,6 +676,28 @@
 - `claude-code-source-code/src/utils/task/framework.ts:160-269`
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
 
+### A014. builder-facing runner 手册层之后，下一层应进入源码 atlas 层
+
+- 当 `navigation/34 + guides/42-44` 已经把 runner / ledger 方法压成团队操作顺序之后，下一步最值钱的不是继续补更多 checklist，而是回到 `services/`、`tools/`、`commands/` 的二级目录 atlas：把权威入口、消费者子集、internal-only 边界与危险改动面重新拉平。
+- `api/46` 应把 `services/` 继续拆成子系统 atlas：至少要分清 `api`、`compact`、`SessionMemory/PromptSuggestion`、`mcp/plugins/oauth/settingsSync`、`lsp/voice/MagicDocs`、`analytics/logging/notifier`、`services/tools` 这几组，并明确哪个目录在宣布真相、哪个目录只是消费它。
+- `api/47` 应把 `tools/` 继续拆成工具族群 atlas：至少要分清执行原语、搜索检索、认知控制、任务编排、扩展桥接、环境自动化与 internal/testing；同时要把 `tools.ts` 的 `getAllBaseTools/getTools/assembleToolPool` 立为单一权威入口，避免读者把某个工具目录误当成真实可见面。
+- `api/48` 应把 `commands/` 继续拆成命令族群 atlas：至少要分清会话控制、模式治理、扩展装配、交付诊断、协作工作流与 internal-only surface；同时要把 `commands.ts` 的 `INTERNAL_ONLY_COMMANDS + COMMANDS()` 立为公开/内部边界入口，避免“代码里有命令 = 产品承诺支持”的误读。
+- `navigation/35` 因而成为必要入口：`30` 负责知道“顶层目录大致分成哪些能力平面”，`35` 负责知道“进入这些平面后，二级目录应该怎样读”，避免蓝皮书重新停在一级目录概览。
+- `philosophy/76` 因而成为必要收束：真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面；没有这层收束，atlas 很快又会退回更长的目录树。
+
+证据:
+
+- `claude-code-source-code/src/commands.ts:224-340`
+- `claude-code-source-code/src/tools.ts:193-367`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-186`
+- `claude-code-source-code/src/services/compact/compact.ts:766-899`
+- `claude-code-source-code/src/services/SessionMemory/sessionMemory.ts:302-375`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-244`
+- `claude-code-source-code/src/services/mcp/config.ts:888-980`
+- `claude-code-source-code/src/services/tools/toolOrchestration.ts:19-80`
+- `claude-code-source-code/src/tools/ToolSearchTool/ToolSearchTool.ts:21-120`
+- `claude-code-source-code/src/commands/mcp/mcp.tsx:63-85`
+
 证据:
 
 - `claude-code-source-code/src/constants/prompts.ts:491-557`
