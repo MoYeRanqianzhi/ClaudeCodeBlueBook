@@ -391,4 +391,6 @@
 - 想把 `90` 的长文压成一张清理权限矩阵，快速看出不同 carrier、clearer、clear trigger 与 forbidden premature clear：`90` -> `appendix/74`
 - 想看为什么即使撤回权已经管住了，系统仍必须继续回答哪些恢复资产在资格未撤回前必须被主动保全：`90` -> `91`
 - 想把 `91` 的长文压成一张保全矩阵，快速看出不同 asset、preservation owner、expiry basis 与 forbidden early loss：`91` -> `appendix/75`
+- 想看为什么即使恢复资产已经被保住，系统仍必须继续为这些资产持续续保 freshness proof，而不是等它们静静变 stale：`91` -> `92`
+- 想把 `92` 的长文压成一张续保矩阵，快速看出不同 asset、freshness signal、refresh cadence 与 stale consequence：`92` -> `appendix/76`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
