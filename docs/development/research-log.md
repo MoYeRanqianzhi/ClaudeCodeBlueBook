@@ -1098,6 +1098,11 @@
 - Anthropic 官方 costs 文档进一步确认了 `/cost`、团队成本管理与正式支持路径的重要性；从用户利益保护角度看，一个缺少标准化成本面和正式支持面的中转入口，应被视为更高的沉没成本风险源，而不是单纯“更便宜”。
 - 源码进一步确认 `ANTHROPIC_BASE_URL` 依赖不仅存在于 env，还会进入 settings / worktree 传播面；`worktree.ts` 会复制 `settings.local.json`，这意味着中转站依赖一旦写入 local settings，可能沿 worktree 扩散，退出时必须做本地配置清点，而不能只删一个 shell 变量。
 - 已补风控专题 `62-中国用户利益保护与中转站退出策略：把接入便利转化为可控退出权`，把本地资产主权、成本止损、worktree 配置扩散、组织监控证据和 staged exit 收束成单独一章
+- 截至 2026 年 4 月 2 日再次核对 Anthropic 官方 supported countries 与 setup / llm gateway 文档后可以更明确地写：对中国用户而言，Claude Code 的困难不是单一网络问题，而是地区边界、资格边界、在线运行时边界和支持边界的叠加；而 gateway / proxy 作为架构形态本身是被官方文档承认的，但这不等于对任何具体 relay 背书。
+- 截至 2026 年 4 月 2 日核对 AnyRouter 公开文档与 WHOIS 后可以更明确地写：AnyRouter 公开卖点确实集中在“国内直连、免费额度、无需信用卡、Claude Code 兼容”，说明它卖的是低摩擦接入权；但公开资料仍不足以把 AnyRouter 与智谱关系写成已证事实。
+- 截至 2026 年 4 月 2 日核对智谱官方 Claude Code 文档与更新页后可以更明确地写：智谱已经公开把 Claude Code 作为目标宿主来争夺，直接提供 `ANTHROPIC_BASE_URL` / `ANTHROPIC_AUTH_TOKEN` 配置、Claude 到 GLM 的模型映射与面向 Claude Code 的价格叙事；这说明国内厂商的战略重点已经从单纯“模型替代”前移到“工作流入口竞争”。
+- 源码进一步确认这种入口竞争在技术上确实可行但不等于官方等价：`providers.ts` 区分 first-party 与第三方 host，`toolSearch.ts` 明确提示很多 `ANTHROPIC_BASE_URL` 代理不支持 `tool_reference`，`auth.ts` 对第一方账号信息有单独语义，说明兼容入口更准确的产品定义是“部分等价的工作流接入层”而不是“完整官方替身”。
+- 已补风控专题 `63-中国用户为什么在买入口而不是买模型：Claude Code 的地区摩擦、兼容层补贴与工作流争夺`，把中国用户困难、AnyRouter 这类中转站、智谱公开 Claude-compatible 战略、以及补贴兼容入口背后的入口争夺哲学压成独立一章
 
 ## 下一步待办
 
