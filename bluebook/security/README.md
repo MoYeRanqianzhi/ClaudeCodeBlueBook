@@ -96,6 +96,7 @@
 74. [73-安全能力恢复主权：为什么不是任何层都能把已撤回入口重新恢复为可见可用](73-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E6%81%A2%E5%A4%8D%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%82%E9%83%BD%E8%83%BD%E6%8A%8A%E5%B7%B2%E6%92%A4%E5%9B%9E%E5%85%A5%E5%8F%A3%E9%87%8D%E6%96%B0%E6%81%A2%E5%A4%8D%E4%B8%BA%E5%8F%AF%E8%A7%81%E5%8F%AF%E7%94%A8.md)
 75. [74-安全能力声明主权：为什么不是任何层都配把能力状态说成enabled、pending、connected、active](74-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E5%A3%B0%E6%98%8E%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%82%E9%83%BD%E9%85%8D%E6%8A%8A%E8%83%BD%E5%8A%9B%E7%8A%B6%E6%80%81%E8%AF%B4%E6%88%90enabled%E3%80%81pending%E3%80%81connected%E3%80%81active.md)
 76. [75-安全能力声明仲裁：当status、notification、footer与hook同时说话时，谁有资格代表当前能力真相](75-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E5%A3%B0%E6%98%8E%E4%BB%B2%E8%A3%81%EF%BC%9A%E5%BD%93status%E3%80%81notification%E3%80%81footer%E4%B8%8Ehook%E5%90%8C%E6%97%B6%E8%AF%B4%E8%AF%9D%E6%97%B6%EF%BC%8C%E8%B0%81%E6%9C%89%E8%B5%84%E6%A0%BC%E4%BB%A3%E8%A1%A8%E5%BD%93%E5%89%8D%E8%83%BD%E5%8A%9B%E7%9C%9F%E7%9B%B8.md)
+77. [76-安全能力显式让位：为什么更高风险、更具体的新状态必须主动驱逐旧的弱状态，而不能等它自然过期](76-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E6%98%BE%E5%BC%8F%E8%AE%A9%E4%BD%8D%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9B%B4%E9%AB%98%E9%A3%8E%E9%99%A9%E3%80%81%E6%9B%B4%E5%85%B7%E4%BD%93%E7%9A%84%E6%96%B0%E7%8A%B6%E6%80%81%E5%BF%85%E9%A1%BB%E4%B8%BB%E5%8A%A8%E9%A9%B1%E9%80%90%E6%97%A7%E7%9A%84%E5%BC%B1%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E7%AD%89%E5%AE%83%E8%87%AA%E7%84%B6%E8%BF%87%E6%9C%9F.md)
 
 ## 附录目录
 
@@ -187,6 +188,8 @@
 - 想直接看不同 surface 当前最多配说到哪一个能力词、哪些更满词绝对不能说，以及用户下一步该去哪确认：看 `appendix/58`
 - 想直接看为什么多个 surface 同时发声时，不能把“谁更显眼”误当成“谁更权威”，以及 notification、`/status`、footer 与 hook 到底谁该赢什么：看 `75`
 - 想直接看不同 surface 到底拥有什么仲裁权、冲突时谁必须让位、以及哪条 handoff 是硬规则：看 `appendix/59`
+- 想直接看为什么“仲裁已决定谁该赢”仍然不够，以及为什么系统还必须主动撤掉旧的弱状态，避免旧真相赖在屏幕上：看 `76`
+- 想直接看不同 incoming state 到底应该驱逐哪条旧状态、驱逐靠什么机制、以及不驱逐会形成哪种 stale risk：看 `appendix/60`
 
 ## 和其他目录的关系
 
@@ -310,4 +313,6 @@
 - 想把 `74` 的长文压成一张声明矩阵，快速看出不同 surface 的 visible inputs、max allowed lexicon 与 forbidden stronger claim：`74` -> `appendix/58`
 - 想看为什么有了词法 ceiling 仍然不够，以及 why notification priority、`/status` handoff 与 footer 让位还必须继续组成同一套仲裁规则：`74` -> `75`
 - 想把 `75` 的长文压成一张仲裁矩阵，快速看出不同 surface 的 authority kind、conflict winner-loser 与 forced handoff：`75` -> `appendix/59`
+- 想看为什么知道“谁更权威”仍然不够，以及 why 更高风险、更具体的新状态还必须显式驱逐旧的弱状态，而不能只靠 timeout：`75` -> `76`
+- 想把 `76` 的长文压成一张驱逐矩阵，快速看出不同 incoming state、evicted state、eviction mechanism 与 stale risk：`76` -> `appendix/60`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
