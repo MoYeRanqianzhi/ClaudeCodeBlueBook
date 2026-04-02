@@ -94,6 +94,7 @@
 72. [71-安全能力发布主权：为什么不是任何接入层都能把能力显示成可用入口](71-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E5%8F%91%E5%B8%83%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E6%8E%A5%E5%85%A5%E5%B1%82%E9%83%BD%E8%83%BD%E6%8A%8A%E8%83%BD%E5%8A%9B%E6%98%BE%E7%A4%BA%E6%88%90%E5%8F%AF%E7%94%A8%E5%85%A5%E5%8F%A3.md)
 73. [72-安全能力撤回主权：为什么不是任何层都能撤回已发布入口，必须由authoritative publisher改口](72-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E6%92%A4%E5%9B%9E%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%82%E9%83%BD%E8%83%BD%E6%92%A4%E5%9B%9E%E5%B7%B2%E5%8F%91%E5%B8%83%E5%85%A5%E5%8F%A3%EF%BC%8C%E5%BF%85%E9%A1%BB%E7%94%B1authoritative%20publisher%E6%94%B9%E5%8F%A3.md)
 74. [73-安全能力恢复主权：为什么不是任何层都能把已撤回入口重新恢复为可见可用](73-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E6%81%A2%E5%A4%8D%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%82%E9%83%BD%E8%83%BD%E6%8A%8A%E5%B7%B2%E6%92%A4%E5%9B%9E%E5%85%A5%E5%8F%A3%E9%87%8D%E6%96%B0%E6%81%A2%E5%A4%8D%E4%B8%BA%E5%8F%AF%E8%A7%81%E5%8F%AF%E7%94%A8.md)
+75. [74-安全能力声明主权：为什么不是任何层都配把能力状态说成enabled、pending、connected、active](74-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E5%A3%B0%E6%98%8E%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%82%E9%83%BD%E9%85%8D%E6%8A%8A%E8%83%BD%E5%8A%9B%E7%8A%B6%E6%80%81%E8%AF%B4%E6%88%90enabled%E3%80%81pending%E3%80%81connected%E3%80%81active.md)
 
 ## 附录目录
 
@@ -181,6 +182,7 @@
 - 想直接看不同 surface 到底由谁撤回入口、触发条件是什么，以及继续保留旧入口会形成哪种 stale promise：看 `appendix/56`
 - 想直接看为什么不是任何局部回暖信号都能把入口恢复回来，以及为什么能力恢复本质上是重新授权：看 `73`
 - 想直接看不同 surface 到底由谁重新授予入口、正式恢复链是什么，以及哪些“恢复”其实只是提前改口：看 `appendix/57`
+- 想直接看为什么不是任何表面都配把能力状态说成 `connected`、`active`、`installed` 或 `failed`，以及谁只能提醒、谁才配完整命名：看 `74`
 
 ## 和其他目录的关系
 
@@ -300,4 +302,5 @@
 - 想把 `72` 的长文压成一张撤回矩阵，快速看出不同 surface 的 revocation authority、retraction trigger 与 forbidden stale promise：`72` -> `appendix/56`
 - 想看为什么能力恢复不是简单回暖，而必须重新经过同一条主权链签字，以及 why `pending` 往往比“已可用”更诚实：`72` -> `73`
 - 想把 `73` 的长文压成一张恢复矩阵，快速看出不同 surface 的 restoration authority、regrant path 与 forbidden premature return：`73` -> `appendix/57`
+- 想看为什么状态枚举和前台词法必须继续分层，以及 why `/status`、notification、footer 与 hook 不该说同样满的能力词：`71` -> `72` -> `73` -> `74`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
