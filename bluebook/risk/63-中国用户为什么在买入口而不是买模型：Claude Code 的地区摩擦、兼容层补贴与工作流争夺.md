@@ -93,6 +93,7 @@ Anthropic 官方 Claude Code LLM gateway 文档明确讨论了：
 - 注册赠送免费额度
 - 无需信用卡或境外信用卡
 - 通过 `ANTHROPIC_BASE_URL` 和兼容 token 接入 Claude Code
+- FAQ 还明确写到：`offline` 往往只是 Claude Code 的 Google 连通性检查失败，而网页 `Fetch` 相关能力仍需要国际互联网连接
 
 这些公开文案卖点几乎一一对应中国用户的现实摩擦：
 
@@ -121,15 +122,14 @@ WHOIS 公开页显示：
 
 ### 4.5 智谱官方确实在公开争夺 Claude Code 这条工作流入口
 
-截至 2026 年 4 月 2 日，我核对到智谱官方公开材料中至少有三类高度相关信息：
+截至 2026 年 4 月 2 日，我核对到智谱官方公开材料中至少有四类高度相关信息：
 
-1. 官方 Claude Code 接入文档直接教用户在本地写入 `ANTHROPIC_BASE_URL`、`ANTHROPIC_AUTH_TOKEN`，并把 Claude Code 指向智谱兼容入口
-2. 官方文档直接提供 Claude 模型名到 GLM 模型名的映射与配置 helper
-3. 官方更新页明确宣传：
-   - API 价格可低至 Claude 的约十分之一
-   - 可通过兼容层“一键兼容 Claude Code 框架”
+1. 官方 Claude Code 接入文档直接教用户在本地写入 `ANTHROPIC_BASE_URL`、`ANTHROPIC_AUTH_TOKEN`，并把 Claude Code 指向 `https://open.bigmodel.cn/api/anthropic` 这类兼容入口
+2. 官方文档直接提供 Claude 模型名到 GLM 模型名的映射与配置 helper，说明目标不是抽象 API 调用，而是现成 Claude Code 工作流迁移
+3. 智谱官网关于页公开把 2025 年旗舰模型描述为把推理、编码与智能体能力原生融合，并强调其开发者规模、OpenRouter 调用量与 API 收入
+4. 智谱 `GLM-4.7` 页面明确写到可用于 Claude Code、Kilo Code、Roo Code、Cline 等编程智能体，并把 `GLM Coding Plan` 直接包装成以更低价格获得 Claude 级别编程体验的方案
 
-这三点足以说明一个非常重要的事实：
+这四点足以说明一个非常重要的事实：
 
 `智谱不是在抽象地争夺“开发者 AI 市场”，而是在非常具体地争夺 Claude Code 用户的默认入口。`
 
@@ -313,6 +313,15 @@ Claude Code 官方 setup 文档要求的不是任意免费账户，
 
 - `tool_reference` 这类 beta 形态，很多 `ANTHROPIC_BASE_URL` 代理通常不支持
 - 当 base URL 不是第一方 host 时，工具搜索会更保守地关闭默认 optimistic 路径
+
+`src/bridge/bridgeEnabled.ts` 还进一步把：
+
+- Bedrock / Vertex / Foundry
+- gateway deployment
+- env-var API key
+- Console API login
+
+与 claude.ai OAuth 订阅路径明确区分开来，说明 Remote Control 一类高阶能力天然依赖第一方 OAuth 身份面。
 
 这意味着 relay / proxy / compatibility layer 的真实产品形态更接近：
 
@@ -543,14 +552,17 @@ Claude Code 官方 setup 文档要求的不是任意免费账户，
 
 ## 13. 一句话总结
 
-中国用户使用 Claude Code 的艰难，本质上是地区、支付、连续性和支持摩擦的叠加；AnyRouter 这类中转站与智谱这类 Claude-compatible 兼容提供方之所以重要，不是因为它们重新发明了模型，而是因为它们在争夺更稀缺的东西：开发者的入口、工作流和未来迁移权；至于具体幕后关系，公开证据不足以把传闻写成事实，但这并不妨碍我们看清入口补贴背后的真实战略结构。
+中国用户使用 Claude Code 的艰难，本质上是地区、支付、连续性和支持摩擦的叠加；AnyRouter 这类中转站与智谱这类 Claude-compatible 兼容提供方之所以重要，不是因为它们重新发明了模型，而是因为它们在争夺更稀缺的东西：开发者的入口、工作流和未来迁移权；至于具体幕后关系，公开证据不足以把传闻写成事实，但这并不妨碍我们看清入口补贴背后的真实战略结构，以及路由层、工作流层和未来迁移层的控制权究竟落在谁手里。
 
 ## 14. 公开来源
 
 - Anthropic supported countries: `https://www.anthropic.com/supported-countries`
 - Claude Code setup: `https://docs.anthropic.com/zh-CN/docs/claude-code/setup`
 - Claude Code LLM gateway: `https://docs.anthropic.com/en/docs/claude-code/llm-gateway`
+- Claude Code third-party integrations: `https://docs.anthropic.com/zh-TW/docs/claude-code/third-party-integrations`
 - AnyRouter docs: `https://docs.anyrouter.top/`
 - AnyRouter WHOIS: `https://www.whois.com/whois/anyrouter.top`
 - 智谱 Claude Code 兼容接入文档: `https://docs.bigmodel.cn/cn/guide/develop/claude`
 - 智谱更新页: `https://docs.bigmodel.cn/cn/update`
+- 智谱关于页: `https://www.zhipuai.cn/zh/about`
+- 智谱 GLM-4.7 页面: `https://www.zhipuai.cn/zh/research/143`
