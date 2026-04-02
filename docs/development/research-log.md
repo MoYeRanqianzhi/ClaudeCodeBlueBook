@@ -3385,3 +3385,5 @@
 - 继续往前推进后，可以更明确地把 `39-安全声明等级` 单独写出来：`38` 已经回答了“什么时候必须说不知道”，但还没有回答“在知道时为什么也不能只说 yes/no”。`SDKRateLimitInfoSchema` 把 allowed 拆成 `allowed / allowed_warning / rejected`；MCP 连接状态被拆成 `connected / failed / needs-auth / pending / disabled`；`post_turn_summary` 继续把运行结论细分成 `blocked / waiting / completed / review_ready / failed`，并附带 `status_detail` 与 `is_noteworthy`；`SDKAPIRetryMessageSchema` 又把失败声明细化成 typed error、HTTP status 与 retry budget；`CCRInitFailReason` 和 `OrgValidationResult` 则说明初始化和组织校验都更偏向“typed reason + descriptive message”而不是裸布尔。这样一来，源码已经很清楚地说明：成熟安全控制面不是二元裁决器，而是一台会按强度、理由和条件分级说话的声明机器。
 - `query.ts`、`sessionStorage.ts`、`REPL.tsx`、`replBridge.ts` 等热点文件依然很大；后续若继续写“源码先进性”，必须同时写基础设施优点与热点文件债务。
 - workflow engine 的类型入口和 transcript 归档语义当前可见，但主体实现未完整展开；后续必须持续区分“已可证实的 task 维度”与“尚未完全展开的引擎细节”。
+- 在 `39-安全声明等级` 之后，再补一个 `appendix/23-安全声明等级速查表` 就很自然了：长文已经把允许类、连接类、运行类、重试类和初始化/校验类声明的分级逻辑讲清楚，但实现和评审时仍然需要一张更短的声明矩阵。把“声明族、典型等级、典型字段、真正表达什么、最危险的压扁误读”压进一页后，安全专题就第一次拥有了可直接用于下游接口评审和语义压缩审查的速查表。
+- 在 `39-安全声明等级` 之后，再补一个 `appendix/23-安全声明等级速查表` 就很自然了：长文已经把允许类、连接类、运行类、重试类和初始化/校验类声明的分级逻辑讲清楚，但实现和评审时仍然需要一张更短的声明矩阵。把“声明族、典型等级、典型字段、真正表达什么、最危险的压扁误读”压进一页后，安全专题就第一次拥有了可直接用于下游接口评审和语义压缩审查的速查表。
