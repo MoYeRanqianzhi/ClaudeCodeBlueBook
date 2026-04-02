@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“支持面反例 / consumer misuse”继续推进到“宿主接入审读 / runbook”层。
+- 新增结论：
+  - Prompt 宿主接入如果要稳定，必须继续围绕输入面、section breakdown、cache break explainability 与 continue qualification 做定期审读，而不是等黑箱行为出现后再猜。
+  - 治理宿主接入如果要稳定，必须继续围绕 authority source、decision window、pending action、continuation gate 与 rollback object 做定期审读，而不是等 mode 漂移或 rollback 混乱后再修。
+  - 故障模型宿主接入如果要稳定，必须继续围绕 authority state、recovery boundary 与 anti-zombie 结果面做定期审读，而不是等恢复成功率异常后再补字段。
+- 新增目录责任：
+  - `navigation/45` 负责宿主接入审读入口。
+  - `playbooks/29-31` 负责三类 support-surface misuse 的排查、演练、拒收与防再发动作。
+- 当前新的写作约束：
+  - 不再只写“哪里接错了”，还要写“排查时先看什么、演练时怎么测、拒收时凭什么拒”。
+  - 每次继续深化都要回答“当前 runbook 是否仍围绕同一机制对象，而不是退回局部症状处置”。
 - 蓝皮书已经从“机制支持面 / host-consumable API”继续推进到“支持面反例 / consumer misuse”层。
 - 新增结论：
   - Prompt 宿主消费最危险的失败方式不是没接 prompt，而是把编译请求真相重新消费成 `systemPrompt` 字符串、cache 黑箱与 last-message heuristic。

@@ -214,6 +214,43 @@
 - `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
 - `claude-code-source-code/src/bridge/remoteBridgeCore.ts:824-880`
 
+### A00r. 支持面反例之后，下一层应进入宿主接入审读层
+
+- `compiled request truth` 即使已经识别出字符串崇拜、cache 黑箱与 continue qualification 误判，团队若不能把这些误用重新压成“先查输入面、再查 section breakdown、再查 cache break reason、最后查 continue qualification”的固定排查顺序，Prompt 宿主接入就仍然会反复漂移；这说明 support-surface misuse 的下一层最值钱的是 runbook，而不是更多反例叙述。
+- `governance control plane object` 即使已经识别出 mode 崇拜、pending action 降格与 rollback object 文件化，团队若不能把这些误用重新压成“先查 authority source、再查 decision window、再查 continuation gate、最后查 rollback object”的固定排查顺序，治理宿主接入就仍然会反复退回面板与流程幻觉。
+- `evolvable kernel object boundary` 即使已经识别出 authority state 猜测、pointer 神化与成功率崇拜，团队若不能把这些误用重新压成“先查 authority state、再查 recovery boundary、再查 anti-zombie 结果面”的固定排查顺序，结构宿主接入就仍然会反复退回恢复玄学与作者解释。
+- 这意味着蓝皮书在“支持面反例层”之后需要继续长出“宿主接入审读层”：
+  - `navigation/45` 负责统一入口。
+  - `playbooks/29-31` 负责三类 support-surface misuse 的排查、演练、拒收与防再发顺序。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 runbook 描述，而是考虑新的 `casebooks/28+` 或 `guides/54+`，把这些宿主接入审读继续压成迁移工单、交接模板与灰度顺序。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:343-347`
+- `claude-code-source-code/src/constants/prompts.ts:560-576`
+- `claude-code-source-code/src/utils/api.ts:119-150`
+- `claude-code-source-code/src/utils/api.ts:321-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/claude.ts:3213-3236`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:470-698`
+- `claude-code-source-code/src/query/stopHooks.ts:257-331`
+- `claude-code-source-code/src/query.ts:1258-1340`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-260`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:308-328`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:475-519`
+- `claude-code-source-code/src/cli/structuredIO.ts:470-639`
+- `claude-code-source-code/src/utils/sessionState.ts:15-45`
+- `claude-code-source-code/src/utils/sessionState.ts:92-149`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/cli/print.ts:2961-3010`
+- `claude-code-source-code/src/utils/QueryGuard.ts:55-121`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:824-880`
+
 ### A00k. 方法层之后，最值钱的是把三条线重新回灌成机制层对象
 
 - Prompt 线下一步不应继续停在 Prompt Constitution 或上下文编译方法，而应继续把 `section law + stable prefix producer + protocol transcript + lawful forgetting + cache-break observability` 收口成同一个 `compiled request truth` 对象。
