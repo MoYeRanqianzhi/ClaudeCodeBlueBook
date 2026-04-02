@@ -7,6 +7,50 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A020. 宿主迁移纠偏之后，下一层应进入宿主验收协议层
+
+- `compiled request truth` 即使已经被写成固定纠偏顺序与拒收规则，如果团队不能进一步把它压成 `compiled_request_truth`、`section_registry_snapshot`、`protocol_transcript_health`、`lawful_forgetting_object` 与 `continue_qualification` 的宿主可消费规则面，就仍会继续围绕 builder 心里的经验判断工作；这说明 Prompt 线下一层最值钱的不是继续补纠偏描述，而是把纠偏压成 acceptance contract。
+- `governance control plane object` 即使已经被写成固定纠偏顺序与拒收规则，如果团队不能进一步把它压成 authority source、typed decision、permission ledger、decision window、continuation gate 与 rollback object 的宿主可消费规则面，就仍会继续围绕 mode、弹窗与仪表盘工作；这说明治理线下一层最值钱的不是继续补 guide，而是把纠偏压成 acceptance contract。
+- 结构真相面即使已经被写成固定纠偏顺序与拒收规则，如果团队不能进一步把它压成 authority state、resume order、recovery boundary、writeback path 与 anti-zombie projection 的宿主可消费规则面，就仍会继续围绕 pointer、成功率与恢复口述工作；这说明结构线下一层最值钱的不是继续补 guide，而是把纠偏压成 acceptance contract。
+- 这意味着蓝皮书在宿主迁移纠偏之后需要继续长出“宿主验收协议层”：
+  - `navigation/50` 负责统一入口。
+  - `api/54-56` 负责三类宿主迁移纠偏的验收卡、拒收语义与规则面。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 contract 叙述，而是考虑新的 `playbooks/35+`，把这些验收协议继续压成固定验收卡、拒收执行顺序与回退处理剧本。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/utils/api.ts:136-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:337-348`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1506-1531`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/cli/print.ts:1052-1075`
+- `claude-code-source-code/src/cli/print.ts:4568-4641`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:510-645`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1071-1318`
+- `claude-code-source-code/src/utils/sessionState.ts:92-149`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:450-529`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:824-880`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
 ### A019. 宿主迁移失真之后，下一层应进入宿主迁移纠偏层
 
 - `compiled request truth` 即使已经被写成宿主迁移失真反例，团队若不能把截图交接、摘要 handoff、黑箱 cache 曲线与 `stop_reason` 幻觉重新压回 `compiled request truth ledger`、protocol truth、cache explainability 与 continue qualification，就仍会继续围绕更高级的替身工作；这说明 Prompt 线下一层最值钱的不是继续补坏例子，而是把坏例子压成固定纠偏顺序与拒收规则。

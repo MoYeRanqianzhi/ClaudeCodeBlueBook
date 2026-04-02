@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主迁移纠偏 / correction guide”继续推进到“宿主验收协议 / acceptance contract”层。
+- 新增结论：
+  - Prompt 宿主迁移如果要真正验收，必须继续围绕 `compiled request truth`、`section registry`、`protocol transcript health`、`lawful forgetting object` 与 `continue qualification` 的共享规则面，而不是继续围绕截图、摘要与 token 曲线。
+  - 治理宿主迁移如果要真正验收，必须继续围绕 authority source、typed decision、permission ledger、decision window、continuation gate 与 rollback object 的共享规则面，而不是继续围绕 mode、弹窗与仪表盘。
+  - 结构宿主迁移如果要真正验收，必须继续围绕 authority state、resume order、recovery boundary、writeback path 与 anti-zombie projection 的共享规则面，而不是继续围绕 pointer、成功率与恢复口述。
+- 新增目录责任：
+  - `navigation/50` 负责宿主验收协议入口。
+  - `api/54-56` 负责三类宿主迁移纠偏的验收卡、拒收语义与规则面。
+- 当前新的写作约束：
+  - 不再只写“该怎么纠偏”，还要写“宿主、SDK、CI 与交接系统到底该消费哪些对象、字段与 reject reason”。
+  - 每次继续深化都要回答“当前 contract 保护的是单一真相，还是只是在把经验判断改写成更详细的经验判断”。
 - 蓝皮书已经从“宿主迁移失真 / migration distortion casebook”继续推进到“宿主迁移纠偏 / correction guide”层。
 - 新增结论：
   - Prompt 宿主迁移如果要真正纠偏，必须先把截图交接、摘要 handoff、黑箱 cache 曲线与 `stop_reason` 幻觉压回 `compiled request truth`、protocol truth、cache explainability 与 continue qualification。
