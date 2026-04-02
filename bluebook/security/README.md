@@ -413,4 +413,6 @@
 - 想把 `101` 的长文压成一张完成投影矩阵，快速看出不同 surface 的 visible completion subset、hidden truth 与 overclaim risk：`101` -> `appendix/85`
 - 想看为什么即使完成投影已经分层，系统仍不应让用户自己猜某个 surface 漏看了什么，而应显式说明自己的投影盲区：`101` -> `102`
 - 想把 `102` 的长文压成一张差异显化矩阵，快速看出不同 surface 的 projection scope、missing truth 与 recommended disclosure：`102` -> `appendix/86`
+- 想看为什么即使差异显化理念已经成立，下一代控制台仍必须把 projection-scope、hidden-truth、handoff-route 做成结构化字段，而不是继续散落在注释里：`102` -> `103`
+- 想把 `103` 的长文压成一张字段矩阵，快速看出不同 projection protocol field 的 meaning、example source 与 UI gain：`103` -> `appendix/87`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
