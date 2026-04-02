@@ -68,6 +68,7 @@
 - 想直接看统一安全控制台最少必须保真哪些安全对象、这些对象从哪里来、又最容易在哪被压扁：看 `appendix/11`
 - 想直接看 bridge、direct connect、remote session manager 和适配层这几类宿主分别属于什么子集、哪些地方最危险：看 `appendix/12`
 - 想直接看不同宿主到底属于观察、控制还是证明层，以及每一层最少承担什么责任：看 `appendix/13`
+- 想直接看 `worker_status`、`external_metadata`、本地状态和 UI 文案分别属于哪一层真相，以及最常见的误读是什么：看 `appendix/14`
 
 ## 和其他目录的关系
 
