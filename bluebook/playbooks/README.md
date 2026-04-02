@@ -57,6 +57,9 @@
 38. [38-Prompt宿主修复演练手册：repair object共享升级卡、rollback drill与re-entry drill](38-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%BC%94%E7%BB%83%E6%89%8B%E5%86%8C%EF%BC%9Arepair%20object%E5%85%B1%E4%BA%AB%E5%8D%87%E7%BA%A7%E5%8D%A1%E3%80%81rollback%20drill%E4%B8%8Ere-entry%20drill.md)
 39. [39-治理宿主修复演练手册：authority repair共享升级卡、rollback drill与re-entry drill](39-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%BC%94%E7%BB%83%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20repair%E5%85%B1%E4%BA%AB%E5%8D%87%E7%BA%A7%E5%8D%A1%E3%80%81rollback%20drill%E4%B8%8Ere-entry%20drill.md)
 40. [40-结构宿主修复演练手册：authority recovery共享升级卡、rollback drill与re-entry drill](40-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%BC%94%E7%BB%83%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20recovery%E5%85%B1%E4%BA%AB%E5%8D%87%E7%BA%A7%E5%8D%A1%E3%80%81rollback%20drill%E4%B8%8Ere-entry%20drill.md)
+41. [41-Prompt宿主修复收口执行手册：closeout card、completion verdict order、handoff warranty与reopen drill](41-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%94%B6%E5%8F%A3%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Acloseout%20card%E3%80%81completion%20verdict%20order%E3%80%81handoff%20warranty%E4%B8%8Ereopen%20drill.md)
+42. [42-治理宿主修复收口执行手册：closeout card、completion verdict order、handoff warranty与reopen drill](42-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%94%B6%E5%8F%A3%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Acloseout%20card%E3%80%81completion%20verdict%20order%E3%80%81handoff%20warranty%E4%B8%8Ereopen%20drill.md)
+43. [43-结构宿主修复收口执行手册：closeout card、completion verdict order、handoff warranty与reopen drill](43-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%94%B6%E5%8F%A3%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Acloseout%20card%E3%80%81completion%20verdict%20order%E3%80%81handoff%20warranty%E4%B8%8Ereopen%20drill.md)
 
 ## 按目标阅读
 
@@ -111,5 +114,6 @@
 - 再往下一层，应由 `../navigation/52 -> ../casebooks/31-33` 继续回答“为什么这些宿主验收执行明明已经存在，仍会重新退回假严格、假拒收与假回退”。
 - 再往下一层，应由 `../navigation/54 -> ../api/57-59 -> ../navigation/55 -> 38-40` 继续回答“怎样把这些宿主修复协议继续压成共享升级卡、rollback drill 与 re-entry drill”。
 - 再往下一层，应由 `../navigation/56 -> ../casebooks/34-36` 继续回答“为什么这些宿主修复演练明明已经存在，仍会重新退回假修复、假回滚与假重入”。
+- 再往下一层，应由 `../navigation/58 -> ../api/60-62 -> ../navigation/59 -> 41-43` 继续回答“怎样把这些宿主修复收口协议继续压成固定收口卡、完成判定顺序与交接剧本”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。

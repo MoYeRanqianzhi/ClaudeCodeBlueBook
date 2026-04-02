@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《宿主修复收口执行导航：Prompt、治理与故障模型收口协议如何进入收口卡、完成判定顺序与交接剧本》《Prompt宿主修复收口执行手册：closeout card、completion verdict order、handoff warranty与reopen drill》《治理宿主修复收口执行手册：closeout card、completion verdict order、handoff warranty与reopen drill》《结构宿主修复收口执行手册：closeout card、completion verdict order、handoff warranty与reopen drill》，并同步回写主索引、导航/运营手册 README 与开发文档，把蓝皮书从“宿主修复收口协议 / repair closeout contract”继续推进到“宿主修复收口执行 / repair closeout execution”层
 - 新增《宿主修复收口协议导航：Prompt、治理与故障模型修复纠偏如何进入收口卡、完成语义与交接保证面》《Prompt宿主修复收口协议：restored request object、protocol truth witness、rollback witness与re-entry warranty》《治理宿主修复收口协议：authority settlement、ledger seal、window closure、continuation warranty与rollback clearance》《结构宿主修复收口协议：authority seal、writeback seal、anti-zombie witness与boundary closure》，并同步回写主索引、导航/API README 与开发文档，把蓝皮书从“宿主修复纠偏 / repair correction guide”继续推进到“宿主修复收口协议 / repair closeout contract”层
 - 新增《宿主修复纠偏导航：Prompt、治理与故障模型修复失真如何压回固定顺序、拒收升级路径与改写模板骨架》《如何把Prompt宿主修复失真压回compiled request truth：固定纠偏顺序、拒收升级路径与改写模板骨架》《如何把治理宿主修复失真压回统一定价控制面：固定纠偏顺序、拒收升级路径与改写模板骨架》《如何把结构宿主修复失真压回结构真相面：固定纠偏顺序、拒收升级路径与改写模板骨架》，并同步回写主索引、导航/使用专题 README 与开发文档，把蓝皮书从“宿主修复失真 / repair distortion casebook”继续推进到“宿主修复纠偏 / repair correction guide”层
 - 新增《宿主修复失真导航：Prompt、治理与故障模型修复演练如何重新退回假修复、假回滚与假重入》《Prompt宿主修复演练反例：repair object伪绑定、摘要回滚与假重入》《治理宿主修复演练反例：authority假恢复、假窗口重置与免费重入》《结构宿主修复演练反例：breadcrumb篡位、旁路写回与anti-zombie伪证明》，并同步回写主索引、导航/案例库 README 与开发文档，把蓝皮书从“宿主修复演练 / repair drill”继续推进到“宿主修复失真 / repair distortion casebook”层

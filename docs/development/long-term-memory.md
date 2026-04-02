@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复收口协议 / repair closeout contract”继续推进到“宿主修复收口执行 / repair closeout execution”层。
+- 新增结论：
+  - Prompt 宿主修复收口如果要真正落地运行，必须继续围绕 restored request object、protocol truth witness、rollback witness、handoff warranty 与 reopen trigger 执行固定完成判定顺序，而不是继续围绕事故总结、summary handoff 与默认继续判断。
+  - 治理宿主修复收口如果要真正落地运行，必须继续围绕 authority settlement、ledger seal、window closure、continuation warranty 与 rollback clearance 执行固定完成判定顺序，而不是继续围绕 mode、审批弹窗与 token 仪表盘判断。
+  - 结构宿主修复收口如果要真正落地运行，必须继续围绕 authority seal、resume closure order、writeback seal、anti-zombie witness 与 boundary closure 执行固定完成判定顺序，而不是继续围绕 pointer、重连成功率、日志繁荣与作者口述判断。
+- 新增目录责任：
+  - `navigation/59` 负责宿主修复收口执行入口。
+  - `playbooks/41-43` 负责三类宿主修复收口协议的执行卡、完成判定顺序与交接剧本。
+- 当前新的写作约束：
+  - 不再只写“该消费哪些 closeout contract 字段”，还要写“现场先看什么、何时阻断 handoff、何时必须 reopen、完成判定到底回哪个对象边界”。
+  - 每次继续深化都要回答“当前 closeout execution 保护的是单一真相的完成顺序，还是只是在把收口协议重新翻译成更细的完成表单”。
 - 蓝皮书已经从“宿主修复纠偏 / repair correction guide”继续推进到“宿主修复收口协议 / repair closeout contract”层。
 - 新增结论：
   - Prompt 宿主修复纠偏如果要真正结束，必须继续围绕 restored request object、protocol truth witness、rollback witness、re-entry warranty 与 closeout verdict，而不是继续围绕事故说明、summary handoff 与默认继续。
