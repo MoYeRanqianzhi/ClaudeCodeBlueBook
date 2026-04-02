@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写失真 / repair steady-state correction-of-correction rewrite distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏 / repair steady-state correction-of-correction rewrite correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写执行失真如果要真正被纠偏，不能只继续批评假 `rewrite card`，还要把 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continue qualification` 与 `threshold liability` 重新压回同一条固定 `rewrite order`。
+  - 治理宿主修复稳态纠偏再纠偏改写执行失真如果要真正被纠偏，不能只继续批评 mode / dashboard 幻觉，还要把 authority、ledger、window、pricing、classifier 开销、writeback seam、capability liability 与 threshold 重新压回同一个统一定价控制面。
+  - 结构宿主修复稳态纠偏再纠偏改写执行失真如果要真正被纠偏，不能只继续批评 pointer / telemetry 幻觉，还要把 authority surface、single-source seam、lineage、fresh merge、anti-zombie evidence、transport boundary 与 reopen liability 重新压回同一个结构真相面。
+- 新增目录责任：
+  - `navigation/85` 负责宿主修复稳态纠偏再纠偏改写纠偏入口。
+  - `guides/84-86` 负责三类宿主修复稳态纠偏再纠偏改写执行失真的固定 `rewrite order`、硬拒收项与模板骨架。
+- 当前新的写作约束：
+  - `84-86` 只表示 correction-of-correction rewrite execution distortion rewrite，不再回头重写 `81-83` 的 recorrection 改写。
+  - `74-85` 应被持续当成一条连续小循环来写，而不是十二篇并列新增文章。
+- 下一步最值钱的候选应切到 `api/81-83`，把这一层 correction guide 继续压成宿主可消费的 rewrite correction 对象、拒收语义与长期 reopen 责任面。
 - 已基于并行多 Agent 回读源码，继续加厚 `philosophy/81-83`：
   - Prompt 线新增结论：section registry 具有 runtime 生命周期；late-bound attachment 不是 stable prefix 正文；多 Agent prompt 的强度首先来自 coordinator 持有 synthesis ownership。
   - 治理线新增结论：authority 必须被外化成单一真相链；classifier 自身也必须被纳入 continuation pricing；`requires_action -> pending_action -> session_state_changed` 是安全与成本共用的 writeback seam。
