@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《宿主修复协议导航：Prompt、治理与故障模型执行纠偏如何进入修复卡、拒收升级语义与重入规则面》《Prompt宿主修复协议：repair object、reject escalation、rollback boundary与re-entry qualification》《治理宿主修复协议：authority repair、ledger rebuild、decision window reset、continuation repricing与rollback object》《结构宿主修复协议：authority recovery、resume replay order、writeback restoration、anti-zombie verdict与boundary reset》，并同步回写主索引、导航/API README 与开发文档，把蓝皮书从“宿主验收纠偏 / acceptance correction guide”继续推进到“宿主修复协议 / repair contract”层
 - 新增《宿主验收纠偏导航：Prompt、治理与故障模型执行失真如何压回固定顺序、拒收升级路径与改写模板骨架》《如何把Prompt宿主验收执行失真压回compiled request truth：固定纠偏顺序、拒收升级路径与改写模板骨架》《如何把治理宿主验收执行失真压回统一定价控制面：固定纠偏顺序、拒收升级路径与改写模板骨架》《如何把结构宿主验收执行失真压回结构真相面：固定纠偏顺序、拒收升级路径与改写模板骨架》，并同步回写主索引、导航/使用专题 README 与开发文档，把蓝皮书从“宿主验收失真 / acceptance distortion casebook”继续推进到“宿主验收纠偏 / acceptance correction guide”层
 - 新增《宿主验收失真导航：Prompt、治理与故障模型执行卡如何重新退回表单化绿灯、假拒收与伪回退》《Prompt宿主验收执行反例：表单化绿灯、假拒收与伪回退》《治理宿主验收执行反例：mode绿灯、假窗口对齐与免费继续》《结构宿主验收执行反例：breadcrumb篡位、写回繁荣与anti-zombie口头化》，并同步回写主索引、导航/案例库/运营手册 README 与开发文档，把蓝皮书从“宿主验收执行 / acceptance execution”继续推进到“宿主验收失真 / acceptance distortion casebook”层
 - 新增《宿主验收执行导航：Prompt、治理与故障模型验收协议如何进入执行卡、拒收顺序与回退剧本》《Prompt宿主验收执行手册：compiled request truth验收卡、拒收顺序与回退剧本》《治理宿主验收执行手册：authority source、permission ledger、decision window、continuation gate与rollback剧本》《结构宿主验收执行手册：authority state、resume order、recovery boundary、writeback path与anti-zombie剧本》，并同步回写主索引、导航/运营手册 README 与开发文档，把蓝皮书从“宿主验收协议 / acceptance contract”继续推进到“宿主验收执行 / acceptance execution”层

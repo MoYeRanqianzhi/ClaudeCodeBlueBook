@@ -89,6 +89,9 @@
 - [54-Prompt宿主验收协议：compiled request truth、section registry、protocol transcript health与continue qualification](54-Prompt%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E5%8D%8F%E8%AE%AE%EF%BC%9Acompiled%20request%20truth%E3%80%81section%20registry%E3%80%81protocol%20transcript%20health%E4%B8%8Econtinue%20qualification.md)
 - [55-治理宿主验收协议：authority source、permission ledger、decision window、continuation gate与rollback object](55-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20source%E3%80%81permission%20ledger%E3%80%81decision%20window%E3%80%81continuation%20gate%E4%B8%8Erollback%20object.md)
 - [56-结构宿主验收协议：authority state、resume order、recovery boundary、writeback path与anti-zombie projection](56-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20state%E3%80%81resume%20order%E3%80%81recovery%20boundary%E3%80%81writeback%20path%E4%B8%8Eanti-zombie%20projection.md)
+- [57-Prompt宿主修复协议：repair object、reject escalation、rollback boundary与re-entry qualification](57-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E5%8D%8F%E8%AE%AE%EF%BC%9Arepair%20object%E3%80%81reject%20escalation%E3%80%81rollback%20boundary%E4%B8%8Ere-entry%20qualification.md)
+- [58-治理宿主修复协议：authority repair、ledger rebuild、decision window reset、continuation repricing与rollback object](58-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20repair%E3%80%81ledger%20rebuild%E3%80%81decision%20window%20reset%E3%80%81continuation%20repricing%E4%B8%8Erollback%20object.md)
+- [59-结构宿主修复协议：authority recovery、resume replay order、writeback restoration、anti-zombie verdict与boundary reset](59-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20recovery%E3%80%81resume%20replay%20order%E3%80%81writeback%20restoration%E3%80%81anti-zombie%20verdict%E4%B8%8Eboundary%20reset.md)
 
 ## 按接入任务阅读
 
@@ -108,6 +111,7 @@
 - 想让宿主直接围绕 authority source、decision window、pending action、rollback object 与 continuation gate 组织治理面板与交接：`50 -> 52 -> ../navigation/43`
 - 想让宿主直接围绕 authority state、generation evidence、recovery boundary 与 anti-zombie projection 组织恢复与回退，而不是继续看目录图和恢复成功率：`53 -> ../navigation/43`
 - 想把这些纠偏顺序继续压成宿主、SDK、CI 与交接都能共享的验收卡与拒收协议，而不是继续停在 builder 心里：`../navigation/50 -> 54 -> 55 -> 56 -> ../guides/57 -> ../guides/58 -> ../guides/59`
+- 想把这些执行纠偏继续压成宿主、SDK、CI、评审与交接都能共享的修复卡、reject 升级语义与重入规则，而不是继续停在 builder 心里：`../navigation/54 -> 57 -> 58 -> 59 -> ../guides/60 -> ../guides/61 -> ../guides/62`
 - 想把 validator / linter 继续压成 machine-readable rule ABI：`../navigation/30 -> 40 -> 41 -> 42 -> ../philosophy/71`
 - 想把这些 rule packet 继续压成最小规则样例、失败样例与 evaluator 接口：`../navigation/31 -> ../playbooks/20 -> ../playbooks/21 -> ../playbooks/22 -> ../philosophy/72`
 - 想把这些样例接口继续接成 replay harness、cross-consumer alignment 与 drift regression lab：`../navigation/32 -> ../playbooks/23 -> ../playbooks/24 -> ../playbooks/25 -> ../philosophy/73`
@@ -150,6 +154,7 @@
 - 再往下一层，应由 `../navigation/38 -> 49-50 -> ../architecture/79-80` 继续回答“怎样把 builder-facing 方法线重新压成可消费支持面与机制对象”。
 - 再往下一层，应由 `../navigation/43 -> 51-53` 继续回答“怎样把机制对象的实现顺序继续压成宿主、SDK、CI 与交接真正可消费的支持面，而不重新绑死内部实现”。
 - 再往下一层，应由 `../navigation/50 -> 54-56` 继续回答“怎样把迁移纠偏继续压成宿主可消费的验收卡、拒收语义与规则面”。
+- 再往下一层，应由 `../navigation/54 -> 57-59` 继续回答“怎样把执行纠偏继续压成宿主可消费的修复卡、reject escalation 与 rollback 重入规则面”。
 - 机制对象宿主消费面不等于内部实现面。
 - host-consumable projection 不等于 internal compiler / internal fault-model trace。
 

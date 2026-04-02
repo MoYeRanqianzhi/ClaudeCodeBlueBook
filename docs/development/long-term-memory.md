@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主验收纠偏 / acceptance correction guide”继续推进到“宿主修复协议 / repair contract”层。
+- 新增结论：
+  - Prompt 宿主验收执行如果要真正跨宿主、CI、评审与交接共享修复动作，必须继续围绕 repair object、reject escalation、rollback boundary 与 re-entry qualification，而不是继续围绕 reviewer 经验、补字段说明与旧文案回退。
+  - 治理宿主验收执行如果要真正跨消费者共享修复动作，必须继续围绕 authority repair、ledger rebuild、decision window reset、continuation repricing 与 rollback object，而不是继续围绕 mode 调参、审批补救与仪表盘修饰。
+  - 结构宿主验收执行如果要真正跨消费者共享修复动作，必须继续围绕 authority recovery、resume replay order、writeback restoration、anti-zombie verdict 与 boundary reset，而不是继续围绕 pointer 修补、重连碰运气与日志繁荣。
+- 新增目录责任：
+  - `navigation/54` 负责宿主修复协议入口。
+  - `api/57-59` 负责三类宿主验收执行纠偏的修复卡、reject 升级语义与重入规则面。
+- 当前新的写作约束：
+  - 不再只写“该怎么修”，还要写“哪些修复对象必须被宿主正式消费、哪些 escalation level 必须共享、哪些内部修补细节绝不能被绑成公共 ABI”。
+  - 每次继续深化都要回答“当前 repair contract 保护的是单一真相的修复边界，还是只是在把整改经验写成更细的说明书”。
 - 蓝皮书已经从“宿主验收失真 / acceptance distortion casebook”继续推进到“宿主验收纠偏 / acceptance correction guide”层。
 - 新增结论：
   - Prompt 宿主验收执行如果要真正纠偏，必须先把表单化绿灯降回存在性检查，再把 `compiled request truth`、`protocol transcript`、lawful forgetting object 与 `continue qualification` 重新拉回固定顺序，而不是继续围绕 CI 绿灯、summary handoff 与 last-message heuristic 修补。
