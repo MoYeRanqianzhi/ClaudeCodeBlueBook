@@ -383,6 +383,84 @@
 - `claude-code-source-code/src/services/api/sessionIngress.ts:60-120`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00o. Rollout 样例层之后，下一层应进入统一证据 ABI 层
+
+- 当 `navigation/18 + playbooks/09-11` 已经把制度压成完整 rollout 样例后，下一步最值钱的不是继续补更多故事，而是补统一 ABI 层：把对象卡、Diff 卡、阶段评审卡、灰度结果卡与回退记录卡固定成正式 evidence interface。
+- `playbooks/12` 应把三条线都共享的骨架先固定下来：记录头、对象、最小 diff、阶段门槛、观测结果、回退目标与证据附件必须共用同一语义，而不是每次迁移重新发明字段。
+- Prompt 线的专项字段应稳定为 `speaker_chain / section_slots_changed / stable_prefix_surface / dynamic_boundary_surface / shared_prefix_producer / lawful_forgetting_abi / cache_aware_assembly_factors / handoff_continuity_fields`；这样记录的才是 prompt 制度升级，而不是文案改动。
+- 治理线的专项字段应稳定为 `order_before / order_after / decision_owner_before / after / decision_gain_hypothesis / cutoff / stable_bytes_touched / lease_model / revoke_conditions / stop_logic / human_fallback_path / failure_semantics_matrix / continuation_policy / object_upgrade_rule`；这样记录的才是判断主权、停止条件与自动化回收，而不是成本感受。
+- 结构线的专项字段应稳定为 `authoritative_surface / projection_set / transport_shell / recovery_asset / anti_zombie_gate`；这样记录的才是真相迁移、恢复资产与反 zombie 保护，而不是目录表面变化。
+- `playbooks/13` 因而必须继续补最小填写示例：不是再写一组长 narrative，而是直接展示三条线如何按同一 ABI 落卡。
+- `navigation/19` 因而成为必要入口：`18` 负责知道“正确 rollout 长什么样”，`19` 负责知道“以后每次 rollout 都该按哪套 ABI 留证据”，避免蓝皮书停在样例层而不能复用。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-127`
+- `claude-code-source-code/src/query/stopHooks.ts:84-120`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-93`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:367-860`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+### A00p. 统一证据 ABI 层之后，下一层应进入证据真相面与宿主消费层
+
+- 当 `navigation/19 + playbooks/12-13` 已经把 rollout 证据压成统一 ABI 后，下一步最值钱的不是继续补更多卡片，而是把这套 ABI 明确接回 runtime：状态写回、可观测 diff、decision window 与 rollback object boundary 其实已经散落在源码里，只差被收口成同一条 evidence surface。
+- `architecture/76` 应把四块 runtime 机制统一起来：`sessionState/onChangeAppState/WorkerStateUploader` 负责当前真相写回，`promptCacheBreakDetection/toolResultStorage` 负责 diffable bytes，`tokenBudget/QueryGuard` 负责继续或停止的决策窗口，`sessionIngress/bridgePointer/task framework` 负责 rollback object boundary。
+- `api/35` 应明确三层边界：`worker_status / external_metadata / session_state_changed / Context Usage / control evidence` 是正式 host-consumable surfaces；对象卡、observed window、rollback target 应由宿主自建 envelope 统一承载；`promptCacheBreakDetection` 细项、bridge pointer 文件与 task 内部 patch 等仍应停留在 internal hint 层。
+- 这条线最重要的目录判断，是不能把“统一 ABI”误写成“又一层 playbook”。一旦这套 ABI 不进入 `architecture/` 与 `api/`，模板就会停在文档层，无法真正被宿主、评审者与后来者共享消费。
+- `navigation/20` 因而成为必要入口：`19` 负责知道“字段该怎么写”，`20` 负责知道“写好的字段怎样进入宿主消费、对象回退与复盘真相面”，否则目录会重新退回“模板存在，但没人真正消费”。
+
+证据:
+
+- `claude-code-source-code/src/utils/sessionState.ts:92-146`
+- `claude-code-source-code/src/state/onChangeAppState.ts:24-90`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:1-118`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-360`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-860`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-83`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-120`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+### A00q. 证据真相面之后，下一层应进入 shared evidence envelope 层
+
+- 当 `navigation/20 + architecture/76 + api/35` 已经把统一 ABI 接回状态写回、diff 解释、decision window 与 rollback object boundary 后，下一步最值钱的不是继续补更多字段，而是补 shared evidence envelope：让宿主、CI、评审与交接继续共享同一套升级真相，而不是各自再造一层解释。
+- `architecture/77` 应把 shared envelope 至少拆成五层：对象真相、状态真相、compiled request truth、decision-window truth、rollback-boundary truth。这样不同消费者虽然消费粒度不同，但仍围绕同一骨架判断。
+- `api/36` 应把这层 shared envelope 明确压成字段矩阵：`session_state_changed / worker_status / external_metadata / Context Usage / control evidence` 属于正式公共表面，`observed_window / rollback_object / retained_assets / judgement` 属于宿主自建 envelope，而 cache-break 细项、bridge pointer、task patch 等仍应停留在 internal hint。
+- 这条线的第一性原理不是“让所有人看同一份日志”，而是“让所有人围绕同一套对象、窗口、字节与回退边界继续判断”；换句话说，成熟证据真正强的地方不是解释过去，而是约束未来判断。
+- `navigation/21` 因而成为必要入口：`20` 负责知道“哪些证据应被消费”，`21` 负责知道“这些证据怎样被宿主、CI、评审与交接共同消费成同一套 envelope”，否则蓝皮书会重新退回“接口存在，但共享判断不存在”。
+
+证据:
+
+- `claude-code-source-code/src/utils/sessionState.ts:92-146`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-90`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1745`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-360`
+- `claude-code-source-code/src/utils/messages.ts:1989-2075`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+### A00r. shared evidence envelope 之后，下一层应进入 consumer distortion casebook 层
+
+- 当 `navigation/21 + architecture/77 + api/36` 已经把 shared evidence envelope 收口成对象、状态、compiled request truth、decision window 与 rollback boundary 五层骨架后，下一步最值钱的不是继续重复 envelope 原则，而是补 consumer distortion casebook：让团队真正看到这套骨架最常见会怎样被宿主、CI、评审与交接拆散消费。
+- `casebooks/13` 应把 Prompt 线的 envelope 失真写成四种坏读法：只看原文 prompt、只看 cache 指标、只看人工总结、只读 transcript 交接；这样才能暴露 Prompt 魔力为什么一旦失去 compiled request truth 就会退回文案崇拜。
+- `casebooks/14` 应把治理线的 envelope 失真写成四种坏读法：只看 token、只看审批次数、只看最终结果、只看当前状态；这样才能暴露统一定价秩序为什么一旦失去 decision window 与 rollback boundary 就会退回局部 KPI。
+- `casebooks/15` 应把结构线的 envelope 失真写成四种坏读法：只看文件 diff、只看目录图、只看恢复成功率、只靠作者记忆；这样才能暴露源码先进性为什么一旦失去 object boundary 与 retained assets 就会退回文件级回退与目录审美。
+- `navigation/22` 因而成为必要入口：`21` 负责知道“shared envelope 该怎样成立”，`22` 负责知道“它最常见会怎样被拆散并失真”，避免蓝皮书重新停在理想设计层而没有消费者失真样本。
+
+证据:
+
+- `claude-code-source-code/src/utils/sessionState.ts:92-146`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-360`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

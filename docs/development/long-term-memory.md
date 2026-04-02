@@ -301,6 +301,29 @@
 - `playbooks/10` 当前应负责治理 rollout 样例：输入边界收口、治理顺序切换、stable bytes 冻结、decision gain stop-logic 与 auto lease 回收的灰度记录
 - `playbooks/11` 当前应负责结构 rollout 样例：authoritative surface 收口、第二真相回收、transport shell 切换、recovery asset 建账与 anti-zombie 规则灰度记录
 - `navigation/18` 的职责应稳定为“迁移工单层如何进入 rollout 证据层”，避免 `17` 同时承担执行步骤与 rollout 样例两类入口职责
+- 当 `navigation/18 + playbooks/09-11` 稳定后，下一步最值钱的不是继续补更多 rollout 故事，而是补统一证据 ABI 层：把对象卡、Diff 卡、阶段评审卡、灰度结果卡与回退记录卡写成正式 evidence interface
+- `playbooks/12` 当前应负责统一 rollout ABI 模板：先固定共用骨架，再为 Prompt、治理与结构补专项扩展字段
+- `playbooks/13` 当前应负责统一 evidence card 样例：给 Prompt、治理与结构三条线各出一张最小可填写卡
+- `navigation/19` 的职责应稳定为“rollout 样例层如何进入统一 ABI 层”，避免 `18` 同时承担历史样例与模板接口两类入口职责
+- `guides/33` 当前应负责把统一 rollout ABI 下沉成 builder-facing 方法，而不是继续停在样例与模板本身
+- `philosophy/66` 当前应负责把“成熟升级 = 每一步都留下可复查证据”稳定成长期设计判断
+- 当 `navigation/19 + playbooks/12-13` 稳定后，下一步最值钱的不是继续补更多模板，而是补证据真相面与宿主消费层：把这套 ABI 明确接回 state writeback、diff 解释、decision window 与 rollback object boundary
+- `architecture/76` 当前应负责升级证据真相面：把状态写回、可观测 diff、决策窗口与回退对象四块 runtime 机制收口为同一条 evidence surface
+- `api/35` 当前应负责 rollout 证据消费面：明确哪些 signals 属于正式 host-consumable ABI，哪些仍应停留在 internal hint
+- `navigation/20` 的职责应稳定为“统一 ABI 层如何进入宿主消费、回退对象与复盘真相面”，避免 `19` 同时承担模板接口与消费入口两类职责
+- `guides/34` 当前应负责让宿主、评审者与后来者共享同一套 rollout ABI，而不是各自维护一份解释
+- `philosophy/67` 当前应负责把“成熟 runtime = 保存下一次升级的判断条件”稳定成新的长期判断
+- 当 `navigation/20 + architecture/76 + api/35` 稳定后，下一步最值钱的不是继续补更多消费接口，而是补 shared evidence envelope 层：把宿主、CI、评审与交接四类消费者拉回同一套字段骨架
+- `architecture/77` 当前应负责 shared evidence envelope：明确同一套升级真相如何被不同消费者按不同粒度共同消费
+- `api/36` 当前应负责 evidence envelope 字段矩阵：把正式公共表面、宿主自建 envelope 与 internal hint 三层边界再压成四类消费者的共享消费顺序
+- `navigation/21` 的职责应稳定为“证据真相面如何进入共享 evidence envelope 层”，避免 `20` 同时承担消费接口与共享消费结构两类职责
+- `guides/35` 当前应负责用苏格拉底诘问法审读 shared evidence envelope，而不是继续只补流程化落地建议
+- `philosophy/68` 当前应负责把“成熟证据 = 约束未来判断”稳定成新的长期判断
+- 当 `navigation/21 + architecture/77 + api/36` 稳定后，下一步最值钱的不是继续补更多 envelope 原则，而是补 Evidence Envelope 失真样本层：把宿主、CI、评审与交接最常见的拆散消费方式写成正式 casebook
+- `casebooks/13` 当前应负责 Prompt envelope 失真样本：原文崇拜、cache 指标崇拜、汇总崇拜与只读历史交接
+- `casebooks/14` 当前应负责治理 envelope 失真样本：只看 token、只看审批、只看最终结果与忽略 rollback boundary
+- `casebooks/15` 当前应负责结构 envelope 失真样本：只看文件 diff、只看目录美观、只看恢复成功率与只靠作者记忆
+- `navigation/22` 的职责应稳定为“shared evidence envelope 层如何进入 consumer distortion casebook 层”，避免 `21` 同时承担 envelope 设计与 envelope 失真原型两类职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

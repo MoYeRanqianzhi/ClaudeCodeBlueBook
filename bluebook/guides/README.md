@@ -36,6 +36,9 @@
 30. [30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘](30-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BBPrompt%E9%AD%94%E5%8A%9B%EF%BC%9A%E4%B8%BB%E8%AF%AD%E3%80%81%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E3%80%81%E8%BE%B9%E7%95%8C%E4%B8%8E%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98.md)
 31. [31-如何用苏格拉底诘问法审读安全与省Token：输入边界、决策增益与可撤销自动化](31-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BB%E5%AE%89%E5%85%A8%E4%B8%8E%E7%9C%81Token%EF%BC%9A%E8%BE%93%E5%85%A5%E8%BE%B9%E7%95%8C%E3%80%81%E5%86%B3%E7%AD%96%E5%A2%9E%E7%9B%8A%E4%B8%8E%E5%8F%AF%E6%92%A4%E9%94%80%E8%87%AA%E5%8A%A8%E5%8C%96.md)
 32. [32-如何用苏格拉底诘问法审读源码先进性：权威面、恢复资产与未来维护者消费者](32-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BB%E6%BA%90%E7%A0%81%E5%85%88%E8%BF%9B%E6%80%A7%EF%BC%9A%E6%9D%83%E5%A8%81%E9%9D%A2%E3%80%81%E6%81%A2%E5%A4%8D%E8%B5%84%E4%BA%A7%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85.md)
+33. [33-如何为Agent Runtime设计统一Rollout ABI：Diff卡、阶段评审卡、灰度结果与回退记录](33-%E5%A6%82%E4%BD%95%E4%B8%BAAgent%20Runtime%E8%AE%BE%E8%AE%A1%E7%BB%9F%E4%B8%80Rollout%20ABI%EF%BC%9ADiff%E5%8D%A1%E3%80%81%E9%98%B6%E6%AE%B5%E8%AF%84%E5%AE%A1%E5%8D%A1%E3%80%81%E7%81%B0%E5%BA%A6%E7%BB%93%E6%9E%9C%E4%B8%8E%E5%9B%9E%E9%80%80%E8%AE%B0%E5%BD%95.md)
+34. [34-如何让宿主、评审者与后来者共享同一Rollout ABI：对象、指标、回退与附件消费顺序](34-%E5%A6%82%E4%BD%95%E8%AE%A9%E5%AE%BF%E4%B8%BB%E3%80%81%E8%AF%84%E5%AE%A1%E8%80%85%E4%B8%8E%E5%90%8E%E6%9D%A5%E8%80%85%E5%85%B1%E4%BA%AB%E5%90%8C%E4%B8%80Rollout%20ABI%EF%BC%9A%E5%AF%B9%E8%B1%A1%E3%80%81%E6%8C%87%E6%A0%87%E3%80%81%E5%9B%9E%E9%80%80%E4%B8%8E%E9%99%84%E4%BB%B6%E6%B6%88%E8%B4%B9%E9%A1%BA%E5%BA%8F.md)
+35. [35-如何用苏格拉底诘问法审读Evidence Envelope：对象、窗口、字节与回退边界](35-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BBEvidence%20Envelope%EF%BC%9A%E5%AF%B9%E8%B1%A1%E3%80%81%E7%AA%97%E5%8F%A3%E3%80%81%E5%AD%97%E8%8A%82%E4%B8%8E%E5%9B%9E%E9%80%80%E8%BE%B9%E7%95%8C.md)
 
 ## 按使用目标阅读
 
@@ -77,6 +80,9 @@
 - 想把参考层继续压成现场可用的诊断入口，而不是先猜标签、阶段和资产：统一入口见 `../navigation/14`，对应文档是 `../casebooks/07-09`
 - 想在事故发生前先用第一性原理问题自校 Prompt 魔力、安全定价与源码先进性：统一入口见 `../navigation/15`，对应文档是 `30-32`
 - 想把这些自校问题继续压成“坏解法 / 为什么坏 / 正解 / 改写路径”的对照样例：统一入口见 `../navigation/16`，对应文档是 `../casebooks/10-12`
+- 想把 rollout 样例继续压成统一证据 ABI，而不是每次重新发明 Diff 卡、阶段评审卡与回退记录：`30 -> 31 -> 32 -> 33 -> ../navigation/19 -> ../playbooks/12 -> ../playbooks/13`
+- 想让宿主、评审者与后来者共享同一套 rollout 证据真相，而不是各自维护一份解释：`33 -> 34 -> ../navigation/20 -> ../architecture/76 -> ../api/35`
+- 想继续用第一性原理问题审读 shared evidence envelope 是否真的成立，而不是只看字段有没有填：`34 -> 35 -> ../navigation/21 -> ../architecture/77 -> ../api/36 -> ../philosophy/68`
 
 ## 与其他目录的边界
 
