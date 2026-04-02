@@ -264,6 +264,9 @@
 - 当 `guides/27-29` 稳定后，下一步不应继续塞回 `guides/`，而应新增 `playbooks/` 目录承接运营、回归、事故复盘与演化演练；否则目录职责会重新混掉
 - `playbooks/` 当前应稳定成三类：`01` 管 prompt 修宪回归与 lawful forgetting 事故复盘，`02` 管治理事故运营、approval race 与 stable-bytes drift，`03` 管源码演化演练、shadow-stub 退出、recovery drill 与 anti-zombie 复盘
 - `navigation/10` 的职责应稳定为“团队动作层如何进入运营层”，避免 `09` 同时承担模板层和运营层两类入口职责
+- 当 `playbooks/01-03` 稳定后，下一步应新增 `casebooks/` 承接失败样本库；否则手册层会过度抽象，读者看不见制度边界在真实故障里怎样暴露
+- `casebooks/` 当前应稳定成三类：`01` 管 prompt 事故样本，`02` 管治理事故样本，`03` 管结构演化与反模式样本
+- `navigation/11` 的职责应稳定为“运营层如何进入样本层”，避免 `10` 同时承载手册入口和样本入口
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

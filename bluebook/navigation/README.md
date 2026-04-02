@@ -20,6 +20,7 @@
 8. [高阶制度导航：Prompt Constitution、治理顺序与构建系统](08-%E9%AB%98%E9%98%B6%E5%88%B6%E5%BA%A6%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%20Constitution%E3%80%81%E6%B2%BB%E7%90%86%E9%A1%BA%E5%BA%8F%E4%B8%8E%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F.md)
 9. [团队落地包导航：修宪工作流、治理矩阵与源码塑形审读](09-%E5%9B%A2%E9%98%9F%E8%90%BD%E5%9C%B0%E5%8C%85%E5%AF%BC%E8%88%AA%EF%BC%9A%E4%BF%AE%E5%AE%AA%E5%B7%A5%E4%BD%9C%E6%B5%81%E3%80%81%E6%B2%BB%E7%90%86%E7%9F%A9%E9%98%B5%E4%B8%8E%E6%BA%90%E7%A0%81%E5%A1%91%E5%BD%A2%E5%AE%A1%E8%AF%BB.md)
 10. [运营与复盘导航：修宪回归、治理事故与演化演练](10-运营与复盘导航：修宪回归、治理事故与演化演练.md)
+11. [案例库导航：Prompt事故、治理事故与结构演化样本](11-%E6%A1%88%E4%BE%8B%E5%BA%93%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E4%BA%8B%E6%95%85%E3%80%81%E6%B2%BB%E7%90%86%E4%BA%8B%E6%95%85%E4%B8%8E%E7%BB%93%E6%9E%84%E6%BC%94%E5%8C%96%E6%A0%B7%E6%9C%AC.md)
 
 和其他目录的关系：
 
@@ -30,4 +31,5 @@
 - `philosophy/`：设计内涵、第一性原理与演化方法。
 - `guides/`：面向使用者和接入者的实践路径。
 - `playbooks/`：长期运营、事故复盘、回归与演化演练。
+- `casebooks/`：失败样本库、事故原型与结构反模式样本。
 - `risk/`：风控、治理、账号/设备/策略专题。

@@ -20,6 +20,7 @@
 - `bluebook/philosophy/`：设计内涵、第一性原理与演化方法。
 - `bluebook/guides/`：从源码反推的实战使用方法。
 - `bluebook/playbooks/`：回归、事故复盘、演化演练与团队运行手册。
+- `bluebook/casebooks/`：失败样本库、反模式样本与制度失效原型。
 - `bluebook/risk/`：账号治理、风控、远程控制与误伤处置。
 - `docs/`：持久化记忆与开发文档，不承载蓝皮书正文。
 
@@ -74,6 +75,7 @@
 - 想把这三条第二序制度继续下沉成 builder-facing 操作手册，再读 [guides/24-如何把Prompt写成可治理宪法：section registry、角色主权链、合法遗忘与可观测diff](guides/24-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%86%99%E6%88%90%E5%8F%AF%E6%B2%BB%E7%90%86%E5%AE%AA%E6%B3%95%EF%BC%9Asection%20registry%E3%80%81%E8%A7%92%E8%89%B2%E4%B8%BB%E6%9D%83%E9%93%BE%E3%80%81%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E4%B8%8E%E5%8F%AF%E8%A7%82%E6%B5%8Bdiff.md)
 - 想把这三条第二序制度继续落成团队级审计表、矩阵、ledger 与 runbook，再读 [navigation/09-团队落地包导航：修宪工作流、治理矩阵与源码塑形审读](navigation/09-%E5%9B%A2%E9%98%9F%E8%90%BD%E5%9C%B0%E5%8C%85%E5%AF%BC%E8%88%AA%EF%BC%9A%E4%BF%AE%E5%AE%AA%E5%B7%A5%E4%BD%9C%E6%B5%81%E3%80%81%E6%B2%BB%E7%90%86%E7%9F%A9%E9%98%B5%E4%B8%8E%E6%BA%90%E7%A0%81%E5%A1%91%E5%BD%A2%E5%AE%A1%E8%AF%BB.md)
 - 想把这些制度继续推进到运营、回归、事故复盘与演化演练层，再读 [navigation/10-运营与复盘导航：修宪回归、治理事故与演化演练](navigation/10-运营与复盘导航：修宪回归、治理事故与演化演练.md)
+- 想直接看这些制度在真实失败形态里如何暴露本质，再读 [navigation/11-案例库导航：Prompt事故、治理事故与结构演化样本](navigation/11-%E6%A1%88%E4%BE%8B%E5%BA%93%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E4%BA%8B%E6%95%85%E3%80%81%E6%B2%BB%E7%90%86%E4%BA%8B%E6%95%85%E4%B8%8E%E7%BB%93%E6%9E%84%E6%BC%94%E5%8C%96%E6%A0%B7%E6%9C%AC.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -220,6 +222,7 @@
 - 想继续看 prompt、安全、源码先进性的第二序制度层，再读 [navigation/08-高阶制度导航：Prompt Constitution、治理顺序与构建系统](navigation/08-%E9%AB%98%E9%98%B6%E5%88%B6%E5%BA%A6%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%20Constitution%E3%80%81%E6%B2%BB%E7%90%86%E9%A1%BA%E5%BA%8F%E4%B8%8E%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F.md)
 - 想直接看第二序制度怎样被压成团队工件层，再读 [navigation/09-团队落地包导航：修宪工作流、治理矩阵与源码塑形审读](navigation/09-%E5%9B%A2%E9%98%9F%E8%90%BD%E5%9C%B0%E5%8C%85%E5%AF%BC%E8%88%AA%EF%BC%9A%E4%BF%AE%E5%AE%AA%E5%B7%A5%E4%BD%9C%E6%B5%81%E3%80%81%E6%B2%BB%E7%90%86%E7%9F%A9%E9%98%B5%E4%B8%8E%E6%BA%90%E7%A0%81%E5%A1%91%E5%BD%A2%E5%AE%A1%E8%AF%BB.md)
 - 想直接看这些团队工件怎样进入回归、事故复盘与长期运营，再读 [navigation/10-运营与复盘导航：修宪回归、治理事故与演化演练](navigation/10-运营与复盘导航：修宪回归、治理事故与演化演练.md)
+- 想直接看真实失败样本如何暴露制度边界，再读 [navigation/11-案例库导航：Prompt事故、治理事故与结构演化样本](navigation/11-%E6%A1%88%E4%BE%8B%E5%BA%93%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E4%BA%8B%E6%95%85%E3%80%81%E6%B2%BB%E7%90%86%E4%BA%8B%E6%95%85%E4%B8%8E%E7%BB%93%E6%9E%84%E6%BC%94%E5%8C%96%E6%A0%B7%E6%9C%AC.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
@@ -277,6 +280,10 @@
 ### 为什么真正强的制度最终必须继续落成回归、事故复盘与演化演练
 
 - `navigation/10 -> playbooks/01 -> playbooks/02 -> playbooks/03 -> philosophy/47 -> philosophy/53 -> philosophy/62`
+
+### 为什么具体失败样本往往比抽象原则更能暴露系统设计的真义
+
+- `navigation/11 -> casebooks/01 -> casebooks/02 -> casebooks/03 -> philosophy/39 -> philosophy/47 -> philosophy/62`
 
 ### 为什么高行动力来自统一定价而不是统一放权
 

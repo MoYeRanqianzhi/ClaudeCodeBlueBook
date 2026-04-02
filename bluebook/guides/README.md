@@ -68,6 +68,7 @@
 - 想把治理顺序继续压成失败语义矩阵、自动化租约、审批竞速与稳定字节台账：`25 -> 28 -> ../navigation/09`
 - 想把源码塑形继续压成发布面矩阵、入口影子策略与反-zombie 审读清单：`26 -> 29 -> ../navigation/09`
 - 想把这些团队模板继续推进成运营、回归、事故复盘与演化演练：`27 -> ../playbooks/01`，`28 -> ../playbooks/02`，`29 -> ../playbooks/03`，统一入口见 `../navigation/10`
+- 想直接看这些制度在真实失败形态里长什么样，而不是只看模板与手册：统一入口见 `../navigation/11`，对应样本见 `../casebooks/01-03`
 
 ## 与其他目录的边界
 
@@ -75,6 +76,7 @@
 - 需要运行时机制时回到 [../architecture/README.md](../architecture/README.md)
 - 需要第一性原理解释时回到 [../philosophy/README.md](../philosophy/README.md)
 - 需要长期运营、事故复盘、回归与演化演练时切到 [../playbooks/README.md](../playbooks/README.md)
+- 需要具体失败样本、事故原型与反模式样本库时切到 [../casebooks/README.md](../casebooks/README.md)
 
 后续继续补：
 

@@ -27,9 +27,11 @@
 - 想把治理顺序从矩阵推进到审批事故、auto-mode 回收与 stable-bytes drift 运营：`../guides/28 -> 02`
 - 想把源码塑形从结构模板推进到迁移退出、recovery drill 与 anti-zombie 演练：`../guides/29 -> 03`
 - 想先看运营层入口，而不是直接挑单篇：`../navigation/10 -> README`
+- 想直接看真实失败样本和事故原型，而不是先读手册：`../navigation/11 -> ../casebooks/README`
 
 ## 与其他目录的边界
 
 - `guides/` 负责“怎么设计、怎么迁移、怎么做模板”。
 - `playbooks/` 负责“怎么运行、怎么回归、怎么复盘、怎么演练”。
+- `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。

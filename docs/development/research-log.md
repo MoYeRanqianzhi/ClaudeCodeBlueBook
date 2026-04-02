@@ -190,6 +190,34 @@
 - `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00g. 运营层之后，下一层应进入案例样本层
+
+- 当 `playbooks/01-03` 已经把制度推进到运营层后，下一步最值钱的不是继续新增更抽象的手册，而是新增 `casebooks/`：把 prompt、治理、源码演化分别压成具体失败样本库。
+- prompt 的样本层最值得收束成 `section drift / boundary drift / path parity split / lawful-forgetting failure / invalidation drift` 五类案例，因为这些事故最直接暴露“prompt 的魔力来自可治理宪法，而不是文案本身”。
+- 治理的样本层最值得收束成 `order violation / hard-guard bypass / approval-race degradation / stable-bytes drift / stop-logic failure` 五类案例，因为这些事故最直接暴露“安全和省 token 是有顺序的制度，而不是更严格的规则堆叠”。
+- 源码先进性的样本层最值得收束成 `shadow fossilization / transport leakage / recovery-asset corruption / zombification / registry obesity` 五类案例，因为这些失败形态最直接暴露“先进性在于可演化秩序，而不是静态目录美观”。
+- 这意味着蓝皮书目录继续从八层推进到九层：主线 -> 导航 -> 机制 -> API -> 哲学 -> guides -> playbooks -> casebooks -> risk；其中 `casebooks/` 不是开发记忆，而是蓝皮书正文里的样本层。
+- `navigation/11` 因而成为必要入口：`10` 负责运营手册，`11` 负责真实样本库，否则运营层与样本层会再次混写。
+
+证据:
+
+- `claude-code-source-code/src/memdir/memoryTypes.ts:228-240`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:437-520`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-62`
+- `claude-code-source-code/src/QueryEngine.ts:284-321`
+- `claude-code-source-code/src/utils/queryContext.ts:77-84`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/cli/structuredIO.ts:561-608`
+- `claude-code-source-code/src/hooks/toolPermission/handlers/interactiveHandler.ts:138-455`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-860`
+- `claude-code-source-code/scripts/prepare-src.mjs:3-64`
+- `claude-code-source-code/scripts/stub-modules.mjs:2-42`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:60-120`
+- `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

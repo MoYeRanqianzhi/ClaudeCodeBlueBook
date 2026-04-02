@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增 `bluebook/casebooks/` 目录及《案例库导航：Prompt事故、治理事故与结构演化样本》《Prompt事故案例集：修宪漂移、路径失配与合法遗忘失效》《治理事故案例集：错误顺序、审批退化与稳定字节漂移》《源码演化案例集：影子层化石化、传输泄漏与zombification》，并继续回写目录治理与入口文档，把蓝皮书从“运营手册层”再推进到“案例样本层”
 - 新增 `bluebook/playbooks/` 目录及《运营与复盘导航：修宪回归、治理事故与演化演练》《Prompt修宪回归手册：section-drift、boundary-drift与lawful-forgetting事故复盘》《治理事故运营手册：approval-race、auto-mode撤销、stable-bytes漂移与stop-logic回归》《源码演化演练手册：build-surface、shadow-stub退出、recovery-drill与anti-zombie复盘》，并同步回写目录治理文档，把蓝皮书目录从“主线/导航/机制/API/哲学/风险/指南”推进到包含运营层的八层结构
 - 新增《团队落地包导航：修宪工作流、治理矩阵与源码塑形审读》《Prompt Constitution审读模板：section card、修宪工作流、失效台账与triage runbook》《治理顺序审计模板：失败语义矩阵、自动化租约、审批竞速与稳定字节台账》《源码塑形审读模板：发布面矩阵、入口影子、transport shell与反zombification清单》，并回写主索引、使用专题、导航专题与开发文档，把 24-26 继续下沉成团队级模板层
 - 新增《如何把Prompt写成可治理宪法：section registry、角色主权链、合法遗忘与可观测diff》《如何设计有顺序的治理系统：检查顺序、失败语义分型、可撤销自动化与稳定字节资产》《如何用构建系统塑形Agent Runtime：入口影子、transport shell、薄registry与反zombification》，并回写主索引、使用专题与开发文档，把 73-75 继续下沉成 builder-facing 操作手册
