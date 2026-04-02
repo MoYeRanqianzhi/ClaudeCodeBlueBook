@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主验收失真 / acceptance distortion casebook”继续推进到“宿主验收纠偏 / acceptance correction guide”层。
+- 新增结论：
+  - Prompt 宿主验收执行如果要真正纠偏，必须先把表单化绿灯降回存在性检查，再把 `compiled request truth`、`protocol transcript`、lawful forgetting object 与 `continue qualification` 重新拉回固定顺序，而不是继续围绕 CI 绿灯、summary handoff 与 last-message heuristic 修补。
+  - 治理宿主验收执行如果要真正纠偏，必须先把 mode 绿灯降回 authority 投影，再把 authority source、permission ledger、decision window、continuation gate 与 rollback object 重新拉回固定顺序，而不是继续围绕 dashboard、审批完成感与默认继续修补。
+  - 结构宿主验收执行如果要真正纠偏，必须先把 breadcrumb、telemetry 与成功率降回辅助信号，再把 authority object、resume order、writeback path 与 anti-zombie projection 重新拉回固定顺序，而不是继续围绕 pointer、日志与监控绿灯修补。
+- 新增目录责任：
+  - `navigation/53` 负责宿主验收纠偏入口。
+  - `guides/60-62` 负责三类宿主验收执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些执行信号在说谎”，还要写“纠偏时先救哪个对象、reject 该怎样升级、模板骨架应如何改写”。
+  - 每次继续深化都要回答“当前纠偏顺序保护的是单一真相，还是只是在修补一个更制度化的替身”。
 - 蓝皮书已经从“宿主验收执行 / acceptance execution”继续推进到“宿主验收失真 / acceptance distortion casebook”层。
 - 新增结论：
   - Prompt 宿主验收执行如果要真正稳定，必须继续警惕表单化绿灯、假 reject、伪 rollback、CI 绿灯掩盖 protocol truth 与 summary handoff 伪装 lawful forgetting；否则 Prompt 的协议魔力会在执行层直接被表单工艺消解。

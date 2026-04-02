@@ -7,6 +7,45 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A023. 宿主验收失真之后，下一层应进入宿主验收纠偏层
+
+- `compiled request truth` 即使已经被写成执行失真反例，如果团队不能进一步把表单化绿灯、假 reject、伪 rollback、protocol truth 被 CI 绿灯掩盖与 lawful forgetting 被 summary handoff 替位这些坏模式压回固定纠偏顺序、拒收升级路径与模板骨架，Prompt 宿主验收就仍会围绕更制度化的替身工作；这说明 Prompt 线下一层最值钱的不是继续补坏样例，而是把 execution distortion 压成 correction guide。
+- 统一定价治理对象即使已经被写成执行失真反例，如果团队不能进一步把 mode 绿灯、假窗口对齐、免费继续、mode/file 回退与 later 补写 reject 压回固定纠偏顺序、拒收升级路径与模板骨架，治理宿主验收就仍会围绕更制度化的交互投影工作；这说明治理线下一层最值钱的不是继续补坏样例，而是把 execution distortion 压成 correction guide。
+- 结构真相面即使已经被写成执行失真反例，如果团队不能进一步把 breadcrumb 篡位、写回繁荣、anti-zombie 口头化、pointer 回退与目录美学崇拜压回固定纠偏顺序、拒收升级路径与模板骨架，结构宿主验收就仍会围绕更制度化的监控绿灯工作；这说明结构线下一层最值钱的不是继续补坏样例，而是把 execution distortion 压成 correction guide。
+- 这意味着蓝皮书在宿主验收失真之后需要继续长出“宿主验收纠偏层”：
+  - `navigation/53` 负责统一入口。
+  - `guides/60-62` 负责三类宿主验收执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 guide 叙述，而是考虑新的 `api/57+` 或 `playbooks/38+`，把这些执行纠偏继续压成宿主可消费规则面、共享升级卡或新的演练手册。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:343-347`
+- `claude-code-source-code/src/utils/api.ts:136-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1506-1531`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:84-645`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
 ### A022. 宿主验收执行之后，下一层应进入宿主验收失真反例层
 
 - `compiled request truth` 即使已经被写成共享执行卡、拒收顺序与回退剧本，如果团队不能进一步指出表单化绿灯、假 reject、伪 rollback、protocol truth 被 CI 绿灯掩盖与 lawful forgetting 被 summary handoff 替位这些执行失真，Prompt 宿主验收就仍会继续围绕更制度化的假真相工作；这说明 Prompt 线下一层最值钱的不是继续补 playbook，而是把 execution layer 压成 distortion casebook。
