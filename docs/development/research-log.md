@@ -1154,6 +1154,7 @@
 - 继续往前推进后，可以更明确地把 `31-安全真相仲裁` 单独写出来：`30` 已经说明真相必须分层，但还没有回答“冲突时谁说了算”。`print.ts` 明确要求 restore 与 hydrate 并行等待，避免 SSE catchup 落在 fresh default 上；`coreSchemas.ts` 与 `sdkEventQueue.ts` 又把 `session_state_changed(idle)` 直接命名为 authoritative turn-over signal；`WorkerStateUploader.ts` 与 `ccrClient.ts` 则说明复制层接受延迟一致，但不接受 stale crash residue；`onChangeAppState.ts` 进一步表明本地状态必须经统一 choke point 才能升级成外部真相。这使得 `31` 的核心结论很清楚：多层真相如果没有优先级，就只是多份意见，真正成熟的安全控制面必须明确恢复顺序、语义事件、复制清理、本地镜像和 UI 跟随之间的仲裁规则。 
 - 在 `31-安全真相仲裁` 之后，再补一个 `appendix/15-安全真相仲裁速查表` 就很自然了：长文已经把恢复优先级、语义优先级、复制清理、本地镜像和 UI 无仲裁权说清楚，但实现和评审时仍需要一张更短的冲突矩阵。把冲突场景、胜出真相、败方不能赢的原因和禁止误读压进一页后，安全专题就第一次拥有了可直接用于仲裁检查和冲突排障的真相优先级速查表。 
 - 继续往前推进后，可以更明确地把 `32-安全裂脑防御` 单独写出来：`31` 已经回答了真相冲突时谁优先，但还没有解释为什么源码里会反复出现单一 choke point、镜像、去重、清理和恢复串行化。`onChangeAppState.ts` 与 `sessionState.ts` 已经把 mode 和语义状态更新收口成单一出口；`StructuredIO.ts` 直接把 duplicate / orphan response 视为一等问题；`ccrClient.ts` 会在 init 时清 stale `pending_action` / `task_summary`；`remoteBridgeCore.ts` 又通过 `authRecoveryInFlight`、flushGate 和 stale transport 守卫避免双重 /bridge fetch、stale epoch 和 silent message loss。这使得 `32` 的核心结论很清楚：Claude Code 的深层安全性不只是边界收口，也是一套反裂脑工程，它真正持续在防的是同一安全事实在不同层或不同时刻长成两份互相打架的真相。 
+- 在 `32-安全裂脑防御` 之后，再补一个 `appendix/16-安全裂脑速查表` 就很自然了：长文已经把 mode 分叉、pending_action 分叉、duplicate response、crash residue 和并发恢复这些裂脑场景讲清楚，但实现和评审时仍然需要一张更短的裂脑矩阵。把分叉场景、收口闸门、镜像链、守卫策略和失效后果压进一页后，安全专题就第一次拥有了可直接用于反裂脑代码审计和改动评审的高风险场景表。 
 
 ## 下一步待办
 
