@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“机制实现 / builder-facing 手册”继续推进到“机制支持面 / host-consumable API”层。
+- 新增结论：
+  - 编译请求真相如果要被宿主稳定消费，必须被翻译成 Prompt 输入面、section breakdown、message breakdown、continue qualification 等正式投影，而不是内部编译 trace。
+  - 统一定价治理如果要被宿主稳定消费，必须被翻译成 authority source、decision window、pending action、continuation gate 与 rollback object 等正式投影，而不是 modal 与 token 条。
+  - 故障模型如果要被宿主稳定消费，必须被翻译成 authority state、generation evidence、recovery boundary 与 anti-zombie projection，而不是目录图、恢复成功率与作者说明。
+- 新增目录责任：
+  - `navigation/43` 负责机制支持面入口。
+  - `api/51-53` 负责三类机制对象的宿主消费支持面。
+- 当前新的写作约束：
+  - 不再只写“实现者该怎么做”，还要写“宿主该消费什么、绝不能绑定什么”。
+  - 每次继续深化都要回答“当前消费者看到的是对象级真相，还是内部细节偶然泄漏出来的替身”。
 - 蓝皮书已经从“机制哲学 / 第一性原理收束”继续推进到“机制实现 / builder-facing 手册”层。
 - 新增结论：
   - Prompt 魔力如果要迁移，必须继续被翻译成 section registry、stable boundary、protocol rewrite、lawful forgetting 与 continue qualification 的实现顺序。

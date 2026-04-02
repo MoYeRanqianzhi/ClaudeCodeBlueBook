@@ -145,6 +145,34 @@
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
 - `claude-code-source-code/src/utils/queryContext.ts:1-140`
 
+### A00p. 机制实现之后，下一层应进入机制支持面层
+
+- `compiled request truth` 即使已经被实现者正确搭出来，宿主若不能围绕 `systemPrompt` 输入面、`systemPromptSections`、`messageBreakdown`、`autoCompactThreshold`、`post_turn_summary` 等正式投影消费它，就会重新退回原文 prompt 与黑箱稳定性；这说明 Prompt 编译链迁移的下一步是宿主消费面，而不是继续暴露内部 compiler trace。
+- `governance control plane object` 即使已经被实现者正确搭出来，宿主若不能围绕 `authority source`、`session_state_changed`、`pending_action`、`get_context_usage`、`rewind_files` 等正式投影消费它，就会重新退回 modal、状态色与仪表盘；这说明统一定价治理迁移的下一步是宿主消费面，而不是继续暴露 classifier 细节。
+- `evolvable kernel object boundary` 即使已经被实现者正确搭出来，宿主若不能围绕 `authority state`、`rewind_files`、`seed_read_state`、recovery boundary、anti-zombie outcome 等正式投影消费它，就会重新退回目录图、恢复成功率与作者说明；这说明故障模型迁移的下一步是宿主消费面，而不是继续暴露 generation 内部字段。
+- 这意味着蓝皮书在“机制实现层”之后需要继续长出“机制支持面层”：
+  - `navigation/43` 负责统一入口。
+  - `api/51-53` 负责三类对象的 host-consumable support surface。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补字段表，而是考虑新的 `playbooks/29+` 或 `casebooks/25+`，把这些支持面最常见的误用与漂移写成新的运行反例层。
+
+证据:
+
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-72`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:205-306`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:308-360`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:475-519`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1548-1561`
+- `claude-code-source-code/src/utils/sessionState.ts:15-45`
+- `claude-code-source-code/src/utils/sessionState.ts:92-149`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/cli/structuredIO.ts:470-639`
+- `claude-code-source-code/src/cli/print.ts:2961-3028`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/utils/QueryGuard.ts:55-93`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:42-184`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-142`
+
 ### A00k. 方法层之后，最值钱的是把三条线重新回灌成机制层对象
 
 - Prompt 线下一步不应继续停在 Prompt Constitution 或上下文编译方法，而应继续把 `section law + stable prefix producer + protocol transcript + lawful forgetting + cache-break observability` 收口成同一个 `compiled request truth` 对象。
