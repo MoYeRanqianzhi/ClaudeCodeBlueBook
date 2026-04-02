@@ -477,6 +477,22 @@
 - `claude-code-source-code/src/utils/sessionState.ts:92-146`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00t. host implementation playbook 之后，下一层应进入 implementation distortion casebook 层
+
+- 当 `navigation/23 + playbooks/14-16` 已经把 Prompt、治理与结构三条线写成宿主、CI、评审与交接都能执行的真实检查点后，下一步最值钱的不是继续补更多门禁，而是补 implementation distortion casebook：让团队真正看到这些检查点在实施里最常会怎样退回存在性合规、流程合规与作者兜底。
+- `casebooks/16` 应把 Prompt 线的 implementation 失真写成四种坏读法：只看卡片存在、只看 CI 通过、只看评审顺序完成、只交接摘要包；这样才能暴露 Prompt 魔力为什么一旦失去 compiled request truth、stable bytes explanation 与 lawful forgetting ABI，就会重新退回文案崇拜。
+- `casebooks/17` 应把治理线的 implementation 失真写成四种坏读法：只看仪表盘转绿、只看审批结束、只看阈值安全、只看回退开关存在；这样才能暴露安全与省 token 为什么一旦失去 decision window、winner source、failure semantics 与 object-upgrade gate，就会重新退回局部 KPI 与事后解释。
+- `casebooks/18` 应把结构线的 implementation 失真写成四种坏读法：只看门禁存在、只看恢复通过、只看 anti-zombie 规则存在、只靠作者口头交接危险路径；这样才能暴露源码先进性为什么一旦失去 authoritative path truth、recovery asset ledger、stale writer 清退证据与 rollback object，就会重新退回目录审美与作者权威。
+- `navigation/24` 因而成为必要入口：`23` 负责知道“怎样把 envelope 落成检查点”，`24` 负责知道“这些检查点最常会怎样在真实执行里重新失真”，避免蓝皮书重新停在理想落地层而没有实施级反例层。
+
+证据:
+
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-360`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/utils/sessionState.ts:92-146`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

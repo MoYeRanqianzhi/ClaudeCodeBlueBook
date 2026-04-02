@@ -329,6 +329,11 @@
 - `playbooks/15` 当前应负责治理 host implementation：把 decision window、control arbitration、Context Usage、rollback object 与对象升级条件落成真实门禁
 - `playbooks/16` 当前应负责结构 host implementation：把 authoritative surface、recovery asset、anti-zombie gate、rollback boundary 与 retained assets 落成真实门禁
 - `navigation/23` 的职责应稳定为“consumer distortion casebook 层如何进入 host implementation playbook 层”，避免 `22` 同时承担反例层与落地检查点层两类职责
+- 当 `navigation/23 + playbooks/14-16` 稳定后，下一步最值钱的不是继续补更多 gate，而是补 host implementation distortion casebook：把这些 gate 最常怎样重新退回存在性合规、流程合规与作者兜底写成正式样本
+- `casebooks/16` 当前应负责 Prompt host implementation 失真：只看卡片存在、只看 CI 通过、只看顺序完成与只交接摘要包
+- `casebooks/17` 当前应负责治理 host implementation 失真：只看仪表盘转绿、只看审批结束、只看阈值安全与对象升级失语
+- `casebooks/18` 当前应负责结构 host implementation 失真：只看门禁存在、只看恢复通过、只看 anti-zombie 规则存在与危险路径口头化
+- `navigation/24` 的职责应稳定为“host implementation playbook 层如何进入 implementation distortion casebook 层”，避免 `23` 同时承担落地手册与实施级失真样本两类职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

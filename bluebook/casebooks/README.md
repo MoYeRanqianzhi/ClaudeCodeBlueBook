@@ -31,6 +31,9 @@
 13. [13-Prompt Evidence Envelope反例：原文崇拜、汇总崇拜与只读历史交接](13-Prompt%20Evidence%20Envelope%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%8E%9F%E6%96%87%E5%B4%87%E6%8B%9C%E3%80%81%E6%B1%87%E6%80%BB%E5%B4%87%E6%8B%9C%E4%B8%8E%E5%8F%AA%E8%AF%BB%E5%8E%86%E5%8F%B2%E4%BA%A4%E6%8E%A5.md)
 14. [14-治理 Evidence Envelope反例：只看Token、只看审批与只看结果](14-%E6%B2%BB%E7%90%86%20Evidence%20Envelope%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%8F%AA%E7%9C%8BToken%E3%80%81%E5%8F%AA%E7%9C%8B%E5%AE%A1%E6%89%B9%E4%B8%8E%E5%8F%AA%E7%9C%8B%E7%BB%93%E6%9E%9C.md)
 15. [15-结构 Evidence Envelope反例：只看文件Diff、目录美观与作者记忆](15-%E7%BB%93%E6%9E%84%20Evidence%20Envelope%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%8F%AA%E7%9C%8B%E6%96%87%E4%BB%B6Diff%E3%80%81%E7%9B%AE%E5%BD%95%E7%BE%8E%E8%A7%82%E4%B8%8E%E4%BD%9C%E8%80%85%E8%AE%B0%E5%BF%86.md)
+16. [16-Prompt Host Implementation反例：只看卡片存在、只看CI通过与只交接摘要包](16-Prompt%20Host%20Implementation%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%8F%AA%E7%9C%8B%E5%8D%A1%E7%89%87%E5%AD%98%E5%9C%A8%E3%80%81%E5%8F%AA%E7%9C%8BCI%E9%80%9A%E8%BF%87%E4%B8%8E%E5%8F%AA%E4%BA%A4%E6%8E%A5%E6%91%98%E8%A6%81%E5%8C%85.md)
+17. [17-治理 Host Implementation反例：只看仪表盘转绿、只看审批结束与对象升级失语](17-%E6%B2%BB%E7%90%86%20Host%20Implementation%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%8F%AA%E7%9C%8B%E4%BB%AA%E8%A1%A8%E7%9B%98%E8%BD%AC%E7%BB%BF%E3%80%81%E5%8F%AA%E7%9C%8B%E5%AE%A1%E6%89%B9%E7%BB%93%E6%9D%9F%E4%B8%8E%E5%AF%B9%E8%B1%A1%E5%8D%87%E7%BA%A7%E5%A4%B1%E8%AF%AD.md)
+18. [18-结构 Host Implementation反例：只看门禁存在、只看恢复通过与危险路径口头化](18-%E7%BB%93%E6%9E%84%20Host%20Implementation%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%8F%AA%E7%9C%8B%E9%97%A8%E7%A6%81%E5%AD%98%E5%9C%A8%E3%80%81%E5%8F%AA%E7%9C%8B%E6%81%A2%E5%A4%8D%E9%80%9A%E8%BF%87%E4%B8%8E%E5%8D%B1%E9%99%A9%E8%B7%AF%E5%BE%84%E5%8F%A3%E5%A4%B4%E5%8C%96.md)
 
 ## 按目标阅读
 
@@ -46,6 +49,7 @@
 - 想把这些自反问题继续落成“同题坏解 vs Claude Code 式正解”的迁移样例：`../navigation/15 -> 10 -> 11 -> 12 -> ../navigation/16`
 - 想看 shared evidence envelope 一旦被不同消费者拆散会怎样退回半真相：`../navigation/21 -> ../navigation/22 -> 13 -> 14 -> 15`
 - 想把这些失真样本继续压成宿主、CI、评审与交接的真实检查点：`../navigation/23 -> ../playbooks/14 -> ../playbooks/15 -> ../playbooks/16`
+- 想直接看这些真实检查点在实施里最常怎样重新退回形式主义：`../navigation/24 -> 16 -> 17 -> 18`
 
 ## 与其他目录的边界
 
@@ -54,4 +58,5 @@
 - `casebooks/` 负责“坏会怎样、为什么坏、坏在哪”。
 - `casebooks/13-15` 继续回答“shared evidence envelope 一旦被宿主、CI、评审与交接拆散消费，会怎样重新退回局部真相”。
 - 再往下一层，应由 `../navigation/23 -> ../playbooks/14-16` 继续回答“怎样把这些失真重新收口成统一检查点”。
+- `casebooks/16-18` 继续回答“这些统一检查点在真实执行里最常会怎样重新退回存在性合规、流程合规与作者兜底”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。

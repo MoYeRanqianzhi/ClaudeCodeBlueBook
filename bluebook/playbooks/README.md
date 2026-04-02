@@ -50,6 +50,7 @@
 - 想让这些证据继续被宿主、CI、评审与交接共享成同一套 envelope：`../navigation/21 -> ../architecture/77 -> ../api/36 -> ../guides/35`
 - 想直接看 shared envelope 一旦被不同消费者拆散会怎样坏掉，而不是只看理想做法：`../navigation/22 -> ../casebooks/13 -> ../casebooks/14 -> ../casebooks/15`
 - 想直接把这套 envelope 落成宿主、CI、评审与交接的统一检查点，而不是只停在原则与反例：`../navigation/23 -> 14 -> 15 -> 16`
+- 想直接看这套 implementation playbook 在真实执行里最常怎样重新失真：`../navigation/24 -> ../casebooks/16 -> ../casebooks/17 -> ../casebooks/18`
 
 ## 与其他目录的边界
 
@@ -62,5 +63,6 @@
 - 再往下一层，应由 `navigation/21 -> architecture/77 -> api/36` 继续回答“这些证据怎样被宿主、CI、评审与交接共享成同一套 envelope”。
 - 再往下一层，应由 `navigation/22 -> casebooks/13-15` 继续回答“这套 envelope 最常见会怎样被不同消费者拆散并失真”。
 - 再往下一层，应由 `navigation/23 -> playbooks/14-16` 继续回答“怎样把这套 envelope 真正落成宿主、CI、评审与交接的检查点”。
+- 再往下一层，应由 `navigation/24 -> casebooks/16-18` 继续回答“这些检查点在真实执行里最常会怎样重新退回形式主义”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。
