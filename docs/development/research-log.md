@@ -1162,6 +1162,7 @@
 - 继续往前推进后，可以更明确地把 `35-安全多账本原则` 单独写出来：`34` 已经回答了“哪一层算提交”，但还没有回答“为什么这些层不能共用同一本账”。`sessionState.ts` 先维护语义账本，再把状态镜像给 metadata 与 SDK event；`ccrClient.ts` 明确区分 `reportState/reportMetadata`、`writeEvent(...)` 与 `writeInternalEvent(...)`，分别服务复制账、可见账与恢复账；`print.ts` 在 going idle 前先 flush internal events；`sessionStorage.ts` 的 `hydrateFromCCRv2InternalEvents(...)` 又说明 resume 读取的是恢复账而不是普通前端事件。这使得 `35` 的核心结论很清楚：Claude Code 的深层安全性不只是多层提交边界，更是多账本结构，每一本账都服务不同读者、不同边界和不同误判成本。 
 - 在 `35-安全多账本原则` 之后，再补一个 `appendix/19-安全多账本速查表` 就很自然了：长文已经把语义账、复制账、可见账与恢复账的职责差别讲清楚，但实现和评审时仍然需要一张更短的账本矩阵。把每本账的主要读者、主要写入口、提交边界与误判成本压进一页后，安全专题就第一次拥有了可直接用于回答“这个读者到底该信哪一本账”的速查表。 
 - 继续往前推进后，可以更明确地把 `36-安全账本投影原则` 单独写出来：`35` 已经回答了“为什么有多本账”，但还没有回答“为什么不同宿主不可能都看到全部账”。`coreSchemas.ts` 与 `controlSchemas.ts` 先给出宽协议全集；`StructuredIO.ts` 则明确默认宿主没有恢复账与 internal-event flush；`RemoteIO.ts` 通过 `CCRClient`、internal event reader/writer、`reportState/reportMetadata` 和 `restoredWorkerState` 拿到更厚的投影；`DirectConnectManager.ts` 与 `RemoteSessionManager.ts` 又只正式支持 `can_use_tool` 这一类窄 control 子集；`remoteBridgeCore.ts` 虽然更宽，但在 recovery 窗口仍会主动 drop 一部分控制与结果。这使得 `36` 的核心结论很清楚：宿主不是完整安全控制台，而是多账本系统上的条件化投影，协议全集绝不等于宿主全集。 
+- 在 `36-安全账本投影原则` 之后，再补一个 `appendix/20-宿主账本投影速查表` 就很自然了：长文已经把默认 `StructuredIO`、`RemoteIO + CCR v2`、`DirectConnect`、`RemoteSessionManager` 与 `remoteBridgeCore` 这些宿主的账本子集差别讲清楚，但实现和评审时仍然需要一张更短的宿主矩阵。把“每类宿主能看到哪些账、能写哪些账、明显缺哪几本账、最危险的误读是什么”压进一页后，安全专题就第一次拥有了可直接用于宿主接入评审和解释责任分配的速查表。 
 
 ## 下一步待办
 
