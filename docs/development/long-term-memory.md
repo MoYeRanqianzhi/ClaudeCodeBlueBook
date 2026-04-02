@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复稳态纠偏 / repair steady-state correction guide”继续推进到“宿主修复稳态纠偏协议 / repair steady-state correction protocol”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏如果要真正可被宿主、CI、评审与交接共享消费，必须继续把 `truth continuity recovery`、`stable prefix recustody`、`baseline dormancy reseal`、`continuation requalification`、`handoff continuity repair` 与 `threshold reinstatement` 压成同一个 correction object，而不是继续停在 steady note、summary prose 与平静感；否则 Prompt 魔力会从编译链重新退回叙事链。
+  - 治理宿主修复稳态纠偏如果要真正统一安全设计与省 token 设计，必须继续把 `authority reassertion`、`ledger reseal`、`window refreeze`、`continuation repricing`、`capability recustody` 与 `threshold rebinding` 压成同一个治理 correction object，而不是继续围绕 mode 面板、usage dashboard 与保守建议工作；否则 authority、定价、能力与责任会重新分裂成多套投影。
+  - 结构宿主修复稳态纠偏如果要真正让作者退场后真相仍可存活，必须继续把 `authority rebind`、`resume lineage rebuild`、`writeback recustody`、`anti_zombie reproof`、`archive truth restitution` 与 `reservation rebinding` 压成同一个结构 correction object，而不是继续围绕 pointer、telemetry、archive prose 与作者说明工作；否则源码先进性会重新退回健康感与复盘叙事。
+- 新增目录责任：
+  - `navigation/74` 负责宿主修复稳态纠偏协议入口。
+  - `api/72-74` 负责三类宿主修复稳态执行失真的宿主可消费修正对象、拒收升级语义与长期 reopen 责任面。
+- 当前新的写作约束：
+  - 不再只写“steady-state correction 应按什么顺序修”，还要写“纠偏结果该被哪些消费者共享、哪些 reject / escalation 语义必须共用、哪些 threshold / reservation 字段必须被长期保留”。
+  - 每次继续深化都要回答“当前 steady-state correction protocol 保护的是无人继续盯防时可反对、可重开、可重建的正式条件，还是只是在制造一套更正式的纠偏售后说明”。
 - 蓝皮书已经从“宿主修复稳态失真 / repair steady-state distortion casebook”继续推进到“宿主修复稳态纠偏 / repair steady-state correction guide”层。
 - 新增结论：
   - Prompt 宿主修复稳态失真如果要真正纠偏，必须先冻结假稳态，再把 `truth_continuity`、`stable_prefix_custody`、`baseline_dormancy_seal`、`continuation_eligibility`、`handoff_continuity_warranty` 与 `reopen_threshold` 拉回同一个 `compiled request truth`，而不是继续围绕 summary、平静感与默认 continuation 修补；否则 Prompt 的编译链魔力会在 steady-state 层退回叙事链。
