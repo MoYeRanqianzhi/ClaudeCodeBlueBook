@@ -1198,3 +1198,4 @@
 - 显式失败路径目前已经能被解释为架构原则，但尚未对 `authRecoveryInFlight`、transport close code、prompt timeout 等失败语义做完全文级整理，后续仍要继续补。
 - request / response / follow-on message 的闭环主线已经建立，但仍未把所有 subtype 做成统一 casebook；后续若继续深化，应防止不同闭环粒度混写。
 - 运行时真相的双通道主线已经建立，但仍未把每个状态项都标清“时间线 / 快照 / 恢复 / consumer subset”四层；后续若继续深化，应防止再次退回单通道叙述。
+- 继续往前推进后，可以更明确地把 `37-安全解释权限` 单独写出来：`36` 已经回答了“宿主只能看到哪些账本子集”，但还没有回答“它凭什么替完整控制面下结论”。`controlSchemas.ts` 与 `coreSchemas.ts` 说明协议全集本身不能直接推出解释权全集；`StructuredIO.ts` 说明默认宿主没有恢复账与 internal-event 面；`RemoteIO.ts` 说明更厚宿主的解释权也依赖初始化与 transport 条件；`DirectConnectManager.ts` 与 `RemoteSessionManager.ts` 的窄 control 子集说明窄宿主最合理的是局部解释；`remoteBridgeCore.ts` 在 recovery 窗口主动 drop 一部分事实，则进一步说明解释权限还会随时序窗口动态收窄。这使得 `37` 的核心结论很清楚：解释权不是默认附赠能力，而是从当前可见账本边界反推出来的受限权限。 
