@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复稳态纠偏协议 / repair steady-state correction protocol”继续推进到“宿主修复稳态纠偏执行 / repair steady-state correction execution”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏协议如果要真正可执行，必须继续把 `steady_correction_object`、`truth_continuity_recovery`、`stable_prefix_recustody`、`continuation_requalification` 与 `threshold_reinstatement` 压成 correction card、固定 recovery verdict order 与 re-entry / reopen drill，而不是继续停在 steady note 与 protocol 字段层；否则 Prompt 魔力会重新退回“更正式的纠偏说明”。
+  - 治理宿主修复稳态纠偏协议如果要真正统一安全设计与省 token 设计，必须继续把 `authority_reassertion`、`ledger_reseal`、`window_refreeze`、`continuation_repricing`、`capability_recustody` 与 `threshold_rebinding` 压成 correction card、固定 verdict order 与 liability drill，而不是继续停在 mode 面板、usage dashboard 与 protocol 口号；否则 authority、定价、能力与责任会再次脱钩。
+  - 结构宿主修复稳态纠偏协议如果要真正让 later 维护者独立执行，必须继续把 `authority_rebind`、`resume_lineage_rebuild`、`writeback_recustody`、`anti_zombie_reproof`、`archive_truth_restitution` 与 `reservation_rebinding` 压成 correction card、固定执行顺序与 reopen responsibility drill，而不是继续停在 pointer、telemetry、archive prose 与作者说明；否则源码先进性会重新退回健康感与复盘叙事。
+- 新增目录责任：
+  - `navigation/75` 负责宿主修复稳态纠偏执行入口。
+  - `playbooks/53-55` 负责三类宿主修复稳态纠偏协议的 correction card、执行顺序与再入场责任演练。
+- 当前新的写作约束：
+  - 不再只写“steady-state correction protocol 该消费哪些对象”，还要写“现场先看哪张 correction card、先执行哪个对象、何时必须降级 verdict、谁有权宣布 restored、re-entry / reopen 到底回哪个边界”。
+  - 每次继续深化都要回答“当前 steady-state correction execution 保护的是无人继续盯防时的真相延续，还是只是在把 protocol 运行成一套更制度化的售后流程”。
 - 蓝皮书已经从“宿主修复稳态纠偏 / repair steady-state correction guide”继续推进到“宿主修复稳态纠偏协议 / repair steady-state correction protocol”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏如果要真正可被宿主、CI、评审与交接共享消费，必须继续把 `truth continuity recovery`、`stable prefix recustody`、`baseline dormancy reseal`、`continuation requalification`、`handoff continuity repair` 与 `threshold reinstatement` 压成同一个 correction object，而不是继续停在 steady note、summary prose 与平静感；否则 Prompt 魔力会从编译链重新退回叙事链。
