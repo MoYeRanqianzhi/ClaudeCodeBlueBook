@@ -2,10 +2,225 @@
 
 ## 当前基线
 
-- 日期: `2026-04-02`
+- 日期: `2026-04-03`
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+
+### A036. 宿主修复监护纠偏之后，下一层应进入宿主修复解除监护协议层
+
+- Prompt repair watch correction 即使已经被写成固定纠偏顺序、拒收升级路径与改写模板骨架，如果团队不能继续把这些纠偏结果压成 watch release object、stability witness、baseline drift ledger seal、continuation clearance、handoff release warranty 与 reopen residual gate，Prompt 世界就仍会继续围绕 watch note、无告警时长与交接文案宣布“观察结束”；这说明 Prompt 线下一层最值钱的不是继续补 guide 口号，而是把 repair watch correction 压成 repair watch release contract。
+- Governance repair watch correction 即使已经被写成固定纠偏顺序、拒收升级路径与改写模板骨架，如果团队不能继续把 authority、ledger、window、continuation 与 quarantine 的纠偏结果压成 authority release、ledger residue clearance、window exit、continuation settlement、quarantine release 与 reopen liability，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard、经验式保守建议与主观放心感工作；这说明治理线下一层最值钱的不是继续补 guide 口号，而是把 repair watch correction 压成 repair watch release contract。
+- Structure repair watch correction 即使已经被写成固定纠偏顺序、拒收升级路径与改写模板骨架，如果团队不能继续把 authority、resume order、writeback、anti-zombie 与 boundary 的纠偏结果压成 authority release、resume stability seal、writeback release、anti-zombie archive 与 boundary retirement，源码先进性就仍会继续围绕 pointer、监控转绿、telemetry 繁荣与作者说明宣布“已经稳定”；这说明结构线下一层最值钱的不是继续补 guide 口号，而是把 repair watch correction 压成 repair watch release contract。
+- 这意味着蓝皮书在宿主修复监护纠偏之后需要继续长出“宿主修复解除监护协议层”：
+  - `navigation/66` 负责统一入口。
+  - `api/66-68` 负责三类宿主修复监护纠偏的解除判定、稳定释压、解除隔离、归档保证与 residual reopen 责任面。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 contract 叙述，而是考虑新的 `playbooks/47+`，把这些 watch release contract 继续压成固定出监卡、release verdict order 与 reopen liability drill。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:343-347`
+- `claude-code-source-code/src/utils/api.ts:136-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1506-1531`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/cli/print.ts:1052-1075`
+- `claude-code-source-code/src/cli/print.ts:4568-4641`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:84-645`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/query.ts:1308-1518`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
+### A035. 宿主修复监护失真之后，下一层应进入宿主修复监护纠偏层
+
+- Prompt repair watch distortion 即使已经被写成假观察、假冻结与假 reopen 的反例，如果团队不能继续把这些失真压回固定纠偏顺序、拒收升级路径与改写模板骨架，Prompt closeout 之后的观察就仍会继续围绕 closeout note、summary handoff 与观察建议工作；这说明 Prompt 线下一层最值钱的不是继续补坏样例，而是把 repair watch distortion 压成 repair watch correction guide。
+- Governance repair watch distortion 即使已经被写成假观察、假隔离与免费重开的反例，如果团队不能继续把这些失真压回固定纠偏顺序、拒收升级路径与改写模板骨架，治理 closeout 之后的观察就仍会继续围绕 mode 面板、usage dashboard、告警噪音与保守建议工作；这说明治理线下一层最值钱的不是继续补坏样例，而是把 repair watch distortion 压成 repair watch correction guide。
+- Structure repair watch distortion 即使已经被写成假稳定、假冻结与假重开的反例，如果团队不能继续把这些失真压回固定纠偏顺序、拒收升级路径与改写模板骨架，结构 closeout 之后的观察就仍会继续围绕 pointer、监控转绿、telemetry 繁荣与作者说明工作；这说明结构线下一层最值钱的不是继续补坏样例，而是把 repair watch distortion 压成 repair watch correction guide。
+- 这意味着蓝皮书在宿主修复监护失真之后需要继续长出“宿主修复监护纠偏层”：
+  - `navigation/65` 负责统一入口。
+  - `guides/69-71` 负责三类宿主修复监护执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 guide 叙述，而是考虑新的 `api/66+` 或 `playbooks/47+`，把这些 watch correction 继续压成新的宿主可消费规则面或新的监护演练手册。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:343-347`
+- `claude-code-source-code/src/utils/api.ts:136-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1506-1531`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/cli/print.ts:1052-1075`
+- `claude-code-source-code/src/cli/print.ts:4568-4641`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:84-645`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/query.ts:1308-1518`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
+### A034. 宿主修复监护执行之后，下一层应进入宿主修复监护失真层
+
+- Prompt repair watch execution 即使已经被写成 watch card、drift verdict order、handoff freeze 与 reopen drill，如果团队不能继续把这些执行层最常怎样退回假观察、假冻结与假 reopen 写成新的反例层，Prompt post-closeout 监护就仍会继续围绕 closeout note、summary handoff、观察提醒与按钮式 reopen 工作；这说明 Prompt 线下一层最值钱的不是继续补 playbook，而是把 repair watch execution 压成 repair watch distortion casebook。
+- Governance repair watch execution 即使已经被写成 watch card、drift verdict order、quarantine order 与 reopen drill，如果团队不能继续把这些执行层最常怎样退回假观察、假隔离与免费重开写成新的反例层，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard、告警噪音与保守建议工作；这说明治理线下一层最值钱的不是继续补 playbook，而是把 repair watch execution 压成 repair watch distortion casebook。
+- Structure repair watch execution 即使已经被写成 watch card、drift verdict order、handoff freeze 与 reopen drill，如果团队不能继续把这些执行层最常怎样退回假稳定、假冻结与假重开写成新的反例层，源码先进性就仍会继续围绕 pointer、监控转绿、telemetry 繁荣与作者说明工作；这说明结构线下一层最值钱的不是继续补 playbook，而是把 repair watch execution 压成 repair watch distortion casebook。
+- 这意味着蓝皮书在宿主修复监护执行之后需要继续长出“宿主修复监护失真层”：
+  - `navigation/64` 负责统一入口。
+  - `casebooks/40-42` 负责三类宿主修复监护执行的假观察、假冻结与假重开反例。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补坏样例口号，而是考虑新的 `guides/69+`，把这些 watch execution 失真继续压回固定纠偏顺序、拒收升级路径与改写模板骨架。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:343-347`
+- `claude-code-source-code/src/utils/api.ts:136-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1506-1531`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/cli/print.ts:1052-1075`
+- `claude-code-source-code/src/cli/print.ts:4568-4641`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:84-645`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/query.ts:1308-1518`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
+### A033. 宿主修复监护协议之后，下一层应进入宿主修复监护执行层
+
+- Prompt repair watch contract 即使已经被写成 watch window、continuation watch、baseline drift ledger、handoff watch 与 reopen gate 的宿主可消费规则面，如果团队不能继续把它压成 watch card、drift verdict order、handoff freeze 与 reopen drill，Prompt closeout 之后的观察就仍会继续围绕 closeout note、summary handoff 与观察建议工作；这说明 Prompt 线下一层最值钱的不是继续补 api，而是把 repair watch contract 压成 repair watch execution。
+- Governance repair watch contract 即使已经被写成 authority watch、ledger residue、window watch、continuation repricing watch 与 rollback quarantine 的宿主可消费规则面，如果团队不能继续把它压成 watch card、drift verdict order、quarantine order 与 reopen drill，治理 closeout 之后的观察就仍会继续围绕 mode 面板、usage dashboard 与保守建议工作；这说明治理线下一层最值钱的不是继续补 api，而是把 repair watch contract 压成 repair watch execution。
+- Structure repair watch contract 即使已经被写成 authority watch、resume regression watch、writeback watch、anti-zombie watch 与 boundary quarantine 的宿主可消费规则面，如果团队不能继续把它压成 watch card、drift verdict order、handoff freeze 与 reopen drill，结构 closeout 之后的观察就仍会继续围绕 pointer、监控转绿与作者说明工作；这说明结构线下一层最值钱的不是继续补 api，而是把 repair watch contract 压成 repair watch execution。
+- 这意味着蓝皮书在宿主修复监护协议之后需要继续长出“宿主修复监护执行层”：
+  - `navigation/63` 负责统一入口。
+  - `playbooks/44-46` 负责三类宿主修复监护协议的 watch card、drift verdict order 与 reopen 演练手册。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 playbook 口号，而是考虑新的 `casebooks/40+`，把这些 watch execution 最常见的假观察、假冻结与假重开写成新的反例层。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:343-347`
+- `claude-code-source-code/src/utils/api.ts:136-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1506-1531`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/cli/print.ts:1052-1075`
+- `claude-code-source-code/src/cli/print.ts:4568-4641`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:84-645`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/query.ts:1308-1518`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
+### A032. 宿主修复收口纠偏之后，下一层应进入宿主修复监护协议层
+
+- Prompt repair closeout correction 即使已经把假完成、假交接与假 reopen 压回固定纠偏顺序，如果团队不能继续把 `monitor_only`、handoff watch、baseline drift ledger 与 reopen gate 压成新的宿主可消费规则面，Prompt closeout 之后的观察就仍会继续围绕 closeout note、summary handoff 与临场判断工作；这说明 Prompt 线下一层最值钱的不是继续补 guide，而是把 repair closeout correction 压成 repair watch contract。
+- Governance repair closeout correction 即使已经把假关账、假交接与免费重开压回固定纠偏顺序，如果团队不能继续把 authority watch、ledger residue、window watch、continuation repricing watch 与 rollback quarantine 压成新的宿主可消费规则面，治理 closeout 之后的观察就仍会继续围绕 mode 面板、usage dashboard 与保守建议工作；这说明治理线下一层最值钱的不是继续补 guide，而是把 repair closeout correction 压成 repair watch contract。
+- Structure repair closeout correction 即使已经把假 seal、假交接与假重开压回固定纠偏顺序，如果团队不能继续把 authority watch、resume regression watch、writeback watch、anti-zombie watch 与 boundary quarantine 压成新的宿主可消费规则面，结构 closeout 之后的观察就仍会继续围绕 pointer、监控转绿与作者说明工作；这说明结构线下一层最值钱的不是继续补 guide，而是把 repair closeout correction 压成 repair watch contract。
+- 这意味着蓝皮书在宿主修复收口纠偏之后需要继续长出“宿主修复监护协议层”：
+  - `navigation/62` 负责统一入口。
+  - `api/63-65` 负责三类宿主修复收口纠偏的监护窗口、漂移观察与重开闸门面。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 api 叙述，而是考虑新的 `playbooks/44+`，把这些 watch contract 继续压成固定监护卡、漂移观察顺序与 reopen 演练手册。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:343-347`
+- `claude-code-source-code/src/utils/api.ts:136-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1506-1531`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/cli/print.ts:1052-1075`
+- `claude-code-source-code/src/cli/print.ts:4568-4641`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:84-645`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/query.ts:1308-1518`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
 
 ### A031. 宿主修复收口失真之后，下一层应进入宿主修复收口纠偏层
 
