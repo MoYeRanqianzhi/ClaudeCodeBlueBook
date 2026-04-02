@@ -136,6 +136,7 @@
 - 想直接看为什么即便清理者正确也不能立刻删痕迹，以及控制面该等哪些 full rebuild、terminal 或 manual-confirmed 证据：看 `58`
 - 想直接看不同 trace 到底需要什么 minimum clearer、哪类证据才过门槛、何时允许 auto-clear：看 `appendix/42`
 - 想直接看为什么提示消失、卡片转绿与摘要收缩都不等于正式 trace 已被清除：看 `59`
+- 想直接看 surface hider、projection owner、trace writer 与 explanation closer 四层到底分别能做什么、不能做什么：看 `appendix/43`
 
 ## 和其他目录的关系
 
@@ -226,4 +227,5 @@
 - 想看为什么 owner 已经正确仍然不等于现在就能清，以及 why timeout/invalidates、full rebuild、retry budget、archive+deregister、fatal/stale 都是清理门槛的一部分：`57` -> `58`
 - 想把 `58` 的长文压成一张清理门槛矩阵，快速看出不同 trace 的 minimum clearer、threshold evidence 与 auto-clear 许可：`58` -> `appendix/42`
 - 想看为什么痕迹在界面上消失并不等于它已被正式删除，以及 why notification layer、BridgeDialog、`/status` 与 authoritative trace writer 是四个不同层次：`58` -> `59`
+- 想把 `59` 的长文压成一张分层矩阵，快速看出 surface hider、projection owner、trace writer 与 explanation closer 各自的权限边界：`59` -> `appendix/43`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
