@@ -101,6 +101,7 @@
 79. [78-安全状态编辑主权：为什么状态替换语法之后，还必须继续回答谁有资格编辑谁的状态](78-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E7%BC%96%E8%BE%91%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E7%8A%B6%E6%80%81%E6%9B%BF%E6%8D%A2%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%90%8E%EF%BC%8C%E8%BF%98%E5%BF%85%E9%A1%BB%E7%BB%A7%E7%BB%AD%E5%9B%9E%E7%AD%94%E8%B0%81%E6%9C%89%E8%B5%84%E6%A0%BC%E7%BC%96%E8%BE%91%E8%B0%81%E7%9A%84%E7%8A%B6%E6%80%81.md)
 80. [79-安全状态家族作用域：为什么全局key字符串不是长期安全边界，family scope才是状态编辑主权的真正载体](79-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E5%AE%B6%E6%97%8F%E4%BD%9C%E7%94%A8%E5%9F%9F%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%85%A8%E5%B1%80key%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8D%E6%98%AF%E9%95%BF%E6%9C%9F%E5%AE%89%E5%85%A8%E8%BE%B9%E7%95%8C%EF%BC%8Cfamily%20scope%E6%89%8D%E6%98%AF%E7%8A%B6%E6%80%81%E7%BC%96%E8%BE%91%E4%B8%BB%E6%9D%83%E7%9A%84%E7%9C%9F%E6%AD%A3%E8%BD%BD%E4%BD%93.md)
 81. [80-安全状态句柄化：为什么下一代控制面不该继续用裸key编辑状态，而应把family scope升级为opaque handle](80-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E5%8F%A5%E6%9F%84%E5%8C%96%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8B%E4%B8%80%E4%BB%A3%E6%8E%A7%E5%88%B6%E9%9D%A2%E4%B8%8D%E8%AF%A5%E7%BB%A7%E7%BB%AD%E7%94%A8%E8%A3%B8key%E7%BC%96%E8%BE%91%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E5%BA%94%E6%8A%8Afamily%20scope%E5%8D%87%E7%BA%A7%E4%B8%BAopaque%20handle.md)
+82. [81-安全能力闭包绑定：为什么句柄真正承载的不是方法集合，而是创建时上下文](81-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E9%97%AD%E5%8C%85%E7%BB%91%E5%AE%9A%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8F%A5%E6%9F%84%E7%9C%9F%E6%AD%A3%E6%89%BF%E8%BD%BD%E7%9A%84%E4%B8%8D%E6%98%AF%E6%96%B9%E6%B3%95%E9%9B%86%E5%90%88%EF%BC%8C%E8%80%8C%E6%98%AF%E5%88%9B%E5%BB%BA%E6%97%B6%E4%B8%8A%E4%B8%8B%E6%96%87.md)
 
 ## 附录目录
 
@@ -202,6 +203,8 @@
 - 想直接看不同 key pattern 当前隐含着什么 family、它现在靠什么维持作用域，以及最大的 scope risk 在哪：看 `appendix/63`
 - 想直接看为什么即使 family scope 已经被看见，也仍然不该继续停留在命名约定，而应升级成真正的句柄能力对象：看 `80`
 - 想直接看 notifications 当前 carrier 缺了哪些 scope、推荐的 handle 字段是什么，以及迁移后先解决哪类风险：看 `appendix/64`
+- 想直接看为什么即使已经做成 handle，也仍然不能把它理解成“有方法的对象”，而必须继续追问它绑定了哪些创建时上下文：看 `81`
+- 想直接看不同 handle 到底捕获了什么上下文、禁止调用方重建什么对象，以及闭包绑定带来的直接安全收益：看 `appendix/65`
 
 ## 和其他目录的关系
 
@@ -335,4 +338,6 @@
 - 想把 `79` 的长文压成一张作用域矩阵，快速看出不同 key pattern、implicit family、current guarantee 与 scope risk：`79` -> `appendix/63`
 - 想看为什么即使作用域已经看清，系统仍应继续从裸 key 迁移到句柄，以及 why bridge handle 提供了现成范式：`79` -> `80`
 - 想把 `80` 的长文压成一张句柄化矩阵，快速看出不同 subsystem 的 current carrier、missing scope、recommended handle fields 与 migration gain：`80` -> `appendix/64`
+- 想看为什么句柄真正值钱的不是“对象化”，而是 creator-bound closure，以及 why bridge 子系统已经给出上下文绑定范式：`80` -> `81`
+- 想把 `81` 的长文压成一张闭包矩阵，快速看出不同 handle、captured context、forbidden re-derivation 与 security gain：`81` -> `appendix/65`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
