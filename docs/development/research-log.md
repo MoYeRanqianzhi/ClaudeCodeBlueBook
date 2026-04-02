@@ -383,6 +383,28 @@
 - `claude-code-source-code/src/services/api/sessionIngress.ts:60-120`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00o. Rollout 样例层之后，下一层应进入统一证据 ABI 层
+
+- 当 `navigation/18 + playbooks/09-11` 已经把制度压成完整 rollout 样例后，下一步最值钱的不是继续补更多故事，而是补统一 ABI 层：把对象卡、Diff 卡、阶段评审卡、灰度结果卡与回退记录卡固定成正式 evidence interface。
+- `playbooks/12` 应把三条线都共享的骨架先固定下来：记录头、对象、最小 diff、阶段门槛、观测结果、回退目标与证据附件必须共用同一语义，而不是每次迁移重新发明字段。
+- Prompt 线的专项字段应稳定为 `speaker_chain / section_slots_changed / stable_prefix_surface / dynamic_boundary_surface / shared_prefix_producer / lawful_forgetting_abi / cache_aware_assembly_factors / handoff_continuity_fields`；这样记录的才是 prompt 制度升级，而不是文案改动。
+- 治理线的专项字段应稳定为 `order_before / order_after / decision_owner_before / after / decision_gain_hypothesis / cutoff / stable_bytes_touched / lease_model / revoke_conditions / stop_logic / human_fallback_path / failure_semantics_matrix / continuation_policy / object_upgrade_rule`；这样记录的才是判断主权、停止条件与自动化回收，而不是成本感受。
+- 结构线的专项字段应稳定为 `authoritative_surface / projection_set / transport_shell / recovery_asset / anti_zombie_gate`；这样记录的才是真相迁移、恢复资产与反 zombie 保护，而不是目录表面变化。
+- `playbooks/13` 因而必须继续补最小填写示例：不是再写一组长 narrative，而是直接展示三条线如何按同一 ABI 落卡。
+- `navigation/19` 因而成为必要入口：`18` 负责知道“正确 rollout 长什么样”，`19` 负责知道“以后每次 rollout 都该按哪套 ABI 留证据”，避免蓝皮书停在样例层而不能复用。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-127`
+- `claude-code-source-code/src/query/stopHooks.ts:84-120`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-93`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:367-860`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

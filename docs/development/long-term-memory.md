@@ -301,6 +301,12 @@
 - `playbooks/10` 当前应负责治理 rollout 样例：输入边界收口、治理顺序切换、stable bytes 冻结、decision gain stop-logic 与 auto lease 回收的灰度记录
 - `playbooks/11` 当前应负责结构 rollout 样例：authoritative surface 收口、第二真相回收、transport shell 切换、recovery asset 建账与 anti-zombie 规则灰度记录
 - `navigation/18` 的职责应稳定为“迁移工单层如何进入 rollout 证据层”，避免 `17` 同时承担执行步骤与 rollout 样例两类入口职责
+- 当 `navigation/18 + playbooks/09-11` 稳定后，下一步最值钱的不是继续补更多 rollout 故事，而是补统一证据 ABI 层：把对象卡、Diff 卡、阶段评审卡、灰度结果卡与回退记录卡写成正式 evidence interface
+- `playbooks/12` 当前应负责统一 rollout ABI 模板：先固定共用骨架，再为 Prompt、治理与结构补专项扩展字段
+- `playbooks/13` 当前应负责统一 evidence card 样例：给 Prompt、治理与结构三条线各出一张最小可填写卡
+- `navigation/19` 的职责应稳定为“rollout 样例层如何进入统一 ABI 层”，避免 `18` 同时承担历史样例与模板接口两类入口职责
+- `guides/33` 当前应负责把统一 rollout ABI 下沉成 builder-facing 方法，而不是继续停在样例与模板本身
+- `philosophy/66` 当前应负责把“成熟升级 = 每一步都留下可复查证据”稳定成长期设计判断
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释
