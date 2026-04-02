@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理》《Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链》《安全与省Token之所以同构，是因为治理控制面在统一定价一切扩张》《源码先进性之所以成立，是因为故障模型先于模块美学进入结构》，并同步回写主索引、导航/哲学 README 与开发文档，把蓝皮书从“机制失真 / 形式主义反例”继续推进到“机制哲学 / 第一性原理收束”层
 - 新增《机制失真导航：编译请求真相、治理控制面与内核边界为何会重新退回形式主义》《编译请求真相反例：多重真相生产者、协议真相泄漏与合法遗忘失忆》《治理控制面反例：mode崇拜、仪表盘崇拜与默认继续幻觉》《内核对象边界反例：多点权威、恢复资产篡位与anti-zombie口头化》，并同步回写主索引、导航/案例库 README 与开发文档，把蓝皮书从“机制验证 / 持续回归”继续推进到“机制失真 / 形式主义反例”层
 - 新增《机制验证导航：编译请求真相、治理控制面对象与内核边界如何进入持续回归》《编译请求真相验证手册：section continuity、stable bytes、protocol rewrite与lawful forgetting回归》《治理控制面对象验证手册：authority source、decision window、continuation gate与rollback object回归》《可演化内核对象验证手册：authority、transition、dependency、recovery asset与anti-zombie回归》，并同步回写主索引、导航/运营手册 README 与开发文档，把蓝皮书从“机制回灌 / 支持面收口”继续推进到“机制验证 / 持续回归”层
 - 新增《机制回灌导航：编译请求真相、治理控制面与可演化内核对象边界》《编译请求真相控制面：section law、stable prefix、protocol transcript与lawful forgetting如何统一成请求对象》《治理控制面：PolicySettings、typed decision、deferred visibility、Context Usage与continuation pricing》《可演化内核对象边界：authority surface、single-source、anti-cycle seam与anti-zombie》，并同步回写总索引、架构与导航 README、开发文档，把蓝皮书从“builder-facing 方法层”继续推进到“机制回灌层”
