@@ -276,6 +276,11 @@
 - `casebooks/06` 当前应负责 “tag -> sample -> playbook -> chapter -> source anchor” 的 crosswalk，避免知道标签却找不到正文与代码
 - `playbooks/05` 当前应负责三类完整填表示例，避免模板层在实际使用时仍然过空
 - `navigation/13` 的职责应稳定为“索引层如何进入参考层”，避免 `12` 同时承担结构索引和具体参考入口
+- 当 `casebooks/05-06 + playbooks/05` 稳定后，下一步最值钱的不是继续补更多定义，而是补多入口反查层：按症状、按阶段与按资产定位制度失效
+- `casebooks/07` 当前应负责 symptom-first 反查：先把 `cache break / cost spike / wrong allow / wrong deny / split truth / replay mismatch / stale state / zombie risk` 重新路由回 Prompt、治理与结构三条主线
+- `casebooks/08` 当前应负责 phase-first 反查：按 `design / assembly / runtime / recovery / evolution` 判断制度断裂最早诞生在哪一层，而不是把所有锅都丢给 runtime
+- `casebooks/09` 当前应负责 asset-first 反查：按 `section / boundary / stable bytes / shadow-stub / transport shell / recovery asset / object state` 这些正式资产定位失效，而不是只按文件名搜索
+- `navigation/14` 的职责应稳定为“参考层如何进入现场诊断层”，避免 `13` 同时承担字典/锚点与多入口反查两类职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

@@ -78,6 +78,7 @@
 - 想直接看这些制度在真实失败形态里如何暴露本质，再读 [navigation/11-案例库导航：Prompt事故、治理事故与结构演化样本](navigation/11-%E6%A1%88%E4%BE%8B%E5%BA%93%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E4%BA%8B%E6%95%85%E3%80%81%E6%B2%BB%E7%90%86%E4%BA%8B%E6%95%85%E4%B8%8E%E7%BB%93%E6%9E%84%E6%BC%94%E5%8C%96%E6%A0%B7%E6%9C%AC.md)
 - 想把手册层与样本层继续联成可检索的标签体系、交叉索引与记录模板，再读 [navigation/12-样本与演练导航：标签体系、交叉索引与记录模板](navigation/12-%E6%A0%B7%E6%9C%AC%E4%B8%8E%E6%BC%94%E7%BB%83%E5%AF%BC%E8%88%AA%EF%BC%9A%E6%A0%87%E7%AD%BE%E4%BD%93%E7%B3%BB%E3%80%81%E4%BA%A4%E5%8F%89%E7%B4%A2%E5%BC%95%E4%B8%8E%E8%AE%B0%E5%BD%95%E6%A8%A1%E6%9D%BF.md)
 - 想把索引层继续压成标签字典、案例反查与填表示例，再读 [navigation/13-字典与反查导航：标签字典、源码锚点与记录样例](navigation/13-%E5%AD%97%E5%85%B8%E4%B8%8E%E5%8F%8D%E6%9F%A5%E5%AF%BC%E8%88%AA%EF%BC%9A%E6%A0%87%E7%AD%BE%E5%AD%97%E5%85%B8%E3%80%81%E6%BA%90%E7%A0%81%E9%94%9A%E7%82%B9%E4%B8%8E%E8%AE%B0%E5%BD%95%E6%A0%B7%E4%BE%8B.md)
+- 想从现场症状、生命周期阶段或受损资产直接回到制度诊断，再读 [navigation/14-交叉反查导航：按症状、按阶段与按资产定位制度失效](navigation/14-%E4%BA%A4%E5%8F%89%E5%8F%8D%E6%9F%A5%E5%AF%BC%E8%88%AA%EF%BC%9A%E6%8C%89%E7%97%87%E7%8A%B6%E3%80%81%E6%8C%89%E9%98%B6%E6%AE%B5%E4%B8%8E%E6%8C%89%E8%B5%84%E4%BA%A7%E5%AE%9A%E4%BD%8D%E5%88%B6%E5%BA%A6%E5%A4%B1%E6%95%88.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -227,6 +228,7 @@
 - 想直接看真实失败样本如何暴露制度边界，再读 [navigation/11-案例库导航：Prompt事故、治理事故与结构演化样本](navigation/11-%E6%A1%88%E4%BE%8B%E5%BA%93%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E4%BA%8B%E6%95%85%E3%80%81%E6%B2%BB%E7%90%86%E4%BA%8B%E6%95%85%E4%B8%8E%E7%BB%93%E6%9E%84%E6%BC%94%E5%8C%96%E6%A0%B7%E6%9C%AC.md)
 - 想直接看这些样本怎样被编目、标记并回流到演练体系，再读 [navigation/12-样本与演练导航：标签体系、交叉索引与记录模板](navigation/12-%E6%A0%B7%E6%9C%AC%E4%B8%8E%E6%BC%94%E7%BB%83%E5%AF%BC%E8%88%AA%EF%BC%9A%E6%A0%87%E7%AD%BE%E4%BD%93%E7%B3%BB%E3%80%81%E4%BA%A4%E5%8F%89%E7%B4%A2%E5%BC%95%E4%B8%8E%E8%AE%B0%E5%BD%95%E6%A8%A1%E6%9D%BF.md)
 - 想直接看标签怎么定义、案例怎么反查、记录怎么填写，再读 [navigation/13-字典与反查导航：标签字典、源码锚点与记录样例](navigation/13-%E5%AD%97%E5%85%B8%E4%B8%8E%E5%8F%8D%E6%9F%A5%E5%AF%BC%E8%88%AA%EF%BC%9A%E6%A0%87%E7%AD%BE%E5%AD%97%E5%85%B8%E3%80%81%E6%BA%90%E7%A0%81%E9%94%9A%E7%82%B9%E4%B8%8E%E8%AE%B0%E5%BD%95%E6%A0%B7%E4%BE%8B.md)
+- 想从现场表象直接反查到哪条线先出问题、哪一阶段先埋雷、哪类资产先受损，再读 [navigation/14-交叉反查导航：按症状、按阶段与按资产定位制度失效](navigation/14-%E4%BA%A4%E5%8F%89%E5%8F%8D%E6%9F%A5%E5%AF%BC%E8%88%AA%EF%BC%9A%E6%8C%89%E7%97%87%E7%8A%B6%E3%80%81%E6%8C%89%E9%98%B6%E6%AE%B5%E4%B8%8E%E6%8C%89%E8%B5%84%E4%BA%A7%E5%AE%9A%E4%BD%8D%E5%88%B6%E5%BA%A6%E5%A4%B1%E6%95%88.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
@@ -296,6 +298,10 @@
 ### 为什么参考层最终必须继续压成字典、反查表与样例库
 
 - `navigation/13 -> casebooks/05 -> casebooks/06 -> playbooks/05 -> philosophy/24 -> philosophy/32 -> philosophy/44`
+
+### 为什么现场诊断最终必须继续压成按症状、按阶段与按资产的三路反查
+
+- `navigation/14 -> casebooks/07 -> casebooks/08 -> casebooks/09 -> philosophy/24 -> philosophy/47 -> philosophy/56`
 
 ### 为什么高行动力来自统一定价而不是统一放权
 

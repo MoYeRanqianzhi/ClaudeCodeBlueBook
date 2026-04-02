@@ -270,6 +270,29 @@
 - `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00j. 参考层之后，下一层应进入多入口反查层
+
+- 当 `navigation/13 + casebooks/05-06 + playbooks/05` 已经把制度压成参考层后，下一步最值钱的不是继续堆更多定义，而是补多入口反查层：按症状、按阶段与按资产定位制度失效。
+- `casebooks/07` 应把 `cache break / cost spike / wrong allow / wrong deny / split truth / replay mismatch / stale state / zombie risk` 这些现场症状重新路由回 Prompt、治理与结构三条主线；否则 oncall 仍然只能先猜标签。
+- `casebooks/08` 应把 `design / assembly / runtime / recovery / evolution` 做成阶段反查表；否则 design debt、assembly error、recovery defect 会继续被误丢给 runtime。
+- `casebooks/09` 应把 `section / boundary / stable bytes / shadow-stub / transport shell / recovery asset / object state` 做成资产反查表；否则团队仍会按文件名搜索，而不是按正式制度资产定位失效。
+- `navigation/14` 因而成为必要入口：`13` 负责直接查定义、锚点与样例，`14` 负责从现场观察进入制度诊断，避免参考层重新变成静态资料库。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:17-43`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-520`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-860`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:235-1283`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/hooks/toolPermission/handlers/interactiveHandler.ts:138-455`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:60-120`
+- `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
+- `claude-code-source-code/scripts/prepare-src.mjs:3-64`
+- `claude-code-source-code/scripts/stub-modules.mjs:2-42`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。
