@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复协议 / repair contract”继续推进到“宿主修复演练 / repair drill”层。
+- 新增结论：
+  - Prompt 宿主修复如果要真正可重放，必须继续把 repair object、reject escalation、rollback boundary 与 re-entry qualification 压成共享升级卡、rollback drill 与 re-entry drill，持续证明 repair、rollback 与 re-entry 仍围绕同一个 `compiled request truth` 发生，而不是继续围绕 reviewer 解释、旧摘要与按钮状态工作。
+  - 治理宿主修复如果要真正可重放，必须继续把 authority repair、ledger rebuild、decision window reset、continuation repricing 与 rollback object 压成共享升级卡、rollback drill 与 re-entry drill，持续证明安全设计与省 token 设计仍共用同一个治理对象，而不是继续围绕 mode、审批与 token 图表分头补救。
+  - 结构宿主修复如果要真正可重放，必须继续把 authority recovery、resume replay order、writeback restoration、anti-zombie verdict 与 boundary reset 压成共享升级卡、rollback drill 与 re-entry drill，持续证明 authority、writeback 与 anti-zombie 仍共用同一个结构真相面，而不是继续围绕 pointer、重连与日志繁荣补救。
+- 新增目录责任：
+  - `navigation/55` 负责宿主修复演练入口。
+  - `playbooks/38-40` 负责三类宿主修复协议的共享升级卡、rollback drill 与 re-entry drill。
+- 当前新的写作约束：
+  - 不再只写“该消费哪些 repair object”，还要写“哪张升级卡必须跨消费者共享、哪类 rollback drill 真能证明回到对象边界、哪类 re-entry drill 一旦失败必须直接拒收”。
+  - 每次继续深化都要回答“当前 repair drill 保护的是单一真相的可重放恢复能力，还是只是在把事故补救流程写得更制度化”。
 - 蓝皮书已经从“宿主验收纠偏 / acceptance correction guide”继续推进到“宿主修复协议 / repair contract”层。
 - 新增结论：
   - Prompt 宿主验收执行如果要真正跨宿主、CI、评审与交接共享修复动作，必须继续围绕 repair object、reject escalation、rollback boundary 与 re-entry qualification，而不是继续围绕 reviewer 经验、补字段说明与旧文案回退。
