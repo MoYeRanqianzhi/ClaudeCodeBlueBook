@@ -33,6 +33,9 @@
 14. [14-Prompt Evidence Envelope落地手册：宿主消费、CI门禁、评审顺序与交接包](14-Prompt%20Evidence%20Envelope%E8%90%BD%E5%9C%B0%E6%89%8B%E5%86%8C%EF%BC%9A%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E3%80%81CI%E9%97%A8%E7%A6%81%E3%80%81%E8%AF%84%E5%AE%A1%E9%A1%BA%E5%BA%8F%E4%B8%8E%E4%BA%A4%E6%8E%A5%E5%8C%85.md)
 15. [15-治理 Evidence Envelope落地手册：决策窗口、仲裁证据、对象升级与回退门禁](15-%E6%B2%BB%E7%90%86%20Evidence%20Envelope%E8%90%BD%E5%9C%B0%E6%89%8B%E5%86%8C%EF%BC%9A%E5%86%B3%E7%AD%96%E7%AA%97%E5%8F%A3%E3%80%81%E4%BB%B2%E8%A3%81%E8%AF%81%E6%8D%AE%E3%80%81%E5%AF%B9%E8%B1%A1%E5%8D%87%E7%BA%A7%E4%B8%8E%E5%9B%9E%E9%80%80%E9%97%A8%E7%A6%81.md)
 16. [16-结构 Evidence Envelope落地手册：权威面、恢复资产、反zombie 与交接闸门](16-%E7%BB%93%E6%9E%84%20Evidence%20Envelope%E8%90%BD%E5%9C%B0%E6%89%8B%E5%86%8C%EF%BC%9A%E6%9D%83%E5%A8%81%E9%9D%A2%E3%80%81%E6%81%A2%E5%A4%8D%E8%B5%84%E4%BA%A7%E3%80%81%E5%8F%8Dzombie%20%E4%B8%8E%E4%BA%A4%E6%8E%A5%E9%97%B8%E9%97%A8.md)
+17. [17-Prompt Artifact样例库：宿主卡、CI附件、评审卡与交接包最小填写示例](17-Prompt%20Artifact%E6%A0%B7%E4%BE%8B%E5%BA%93%EF%BC%9A%E5%AE%BF%E4%B8%BB%E5%8D%A1%E3%80%81CI%E9%99%84%E4%BB%B6%E3%80%81%E8%AF%84%E5%AE%A1%E5%8D%A1%E4%B8%8E%E4%BA%A4%E6%8E%A5%E5%8C%85%E6%9C%80%E5%B0%8F%E5%A1%AB%E5%86%99%E7%A4%BA%E4%BE%8B.md)
+18. [18-治理 Artifact样例库：窗口卡、仲裁附件、评审卡与交接包最小填写示例](18-%E6%B2%BB%E7%90%86%20Artifact%E6%A0%B7%E4%BE%8B%E5%BA%93%EF%BC%9A%E7%AA%97%E5%8F%A3%E5%8D%A1%E3%80%81%E4%BB%B2%E8%A3%81%E9%99%84%E4%BB%B6%E3%80%81%E8%AF%84%E5%AE%A1%E5%8D%A1%E4%B8%8E%E4%BA%A4%E6%8E%A5%E5%8C%85%E6%9C%80%E5%B0%8F%E5%A1%AB%E5%86%99%E7%A4%BA%E4%BE%8B.md)
+19. [19-结构 Artifact样例库：权威路径卡、恢复附件、评审卡与交接包最小填写示例](19-%E7%BB%93%E6%9E%84%20Artifact%E6%A0%B7%E4%BE%8B%E5%BA%93%EF%BC%9A%E6%9D%83%E5%A8%81%E8%B7%AF%E5%BE%84%E5%8D%A1%E3%80%81%E6%81%A2%E5%A4%8D%E9%99%84%E4%BB%B6%E3%80%81%E8%AF%84%E5%AE%A1%E5%8D%A1%E4%B8%8E%E4%BA%A4%E6%8E%A5%E5%8C%85%E6%9C%80%E5%B0%8F%E5%A1%AB%E5%86%99%E7%A4%BA%E4%BE%8B.md)
 
 ## 按目标阅读
 
@@ -51,6 +54,7 @@
 - 想直接看 shared envelope 一旦被不同消费者拆散会怎样坏掉，而不是只看理想做法：`../navigation/22 -> ../casebooks/13 -> ../casebooks/14 -> ../casebooks/15`
 - 想直接把这套 envelope 落成宿主、CI、评审与交接的统一检查点，而不是只停在原则与反例：`../navigation/23 -> 14 -> 15 -> 16`
 - 想直接看这套 implementation playbook 在真实执行里最常怎样重新失真：`../navigation/24 -> ../casebooks/16 -> ../casebooks/17 -> ../casebooks/18`
+- 想直接看宿主卡、CI附件、评审卡与交接包真正填出来是什么样，而不是只看 contract：`../navigation/27 -> 17 -> 18 -> 19`
 
 ## 与其他目录的边界
 
@@ -64,5 +68,6 @@
 - 再往下一层，应由 `navigation/22 -> casebooks/13-15` 继续回答“这套 envelope 最常见会怎样被不同消费者拆散并失真”。
 - 再往下一层，应由 `navigation/23 -> playbooks/14-16` 继续回答“怎样把这套 envelope 真正落成宿主、CI、评审与交接的检查点”。
 - 再往下一层，应由 `navigation/24 -> casebooks/16-18` 继续回答“这些检查点在真实执行里最常会怎样重新退回形式主义”。
+- 再往下一层，应由 `navigation/27 -> playbooks/17-19` 继续回答“这些共享工件协议真正填出来时长什么样”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。

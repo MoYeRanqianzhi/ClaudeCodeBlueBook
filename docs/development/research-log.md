@@ -528,6 +528,23 @@
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00w. host artifact contract 之后，下一层应进入 artifact samplebook 层
+
+- 当 `navigation/26 + api/37-39` 已经把 Prompt、治理与结构三条线的 shared header 压成正式共享工件协议后，下一步最值钱的不是继续补更多 schema，而是补 artifact samplebook：让宿主卡、CI附件、评审卡与 handoff package 的最小样例真正落地，避免团队继续从空白模板起步。
+- `playbooks/17` 应把 Prompt 线的 samplebook 写成四类最小工件样例：shared header 先锁 prompt_object、authority_source、assembly_path、compiled_request_diff、stable_bytes_ledger、lawful_forgetting_abi 与 next_step_guard，再分别展示宿主卡、CI附件、评审卡与交接包的最小投影；这样才能让 Prompt 魔力继续停留在 compiled request truth，而不是退回原文 prompt 与摘要包。
+- `playbooks/18` 应把治理线的 samplebook 写成四类最小工件样例：shared header 先锁 governance_object、decision_window、winner_source、failure_semantics、rollback_object 与 object_upgrade_rule，再分别展示对象卡、窗口卡、仲裁附件、评审卡与交接包的最小投影；这样才能让安全与省 token 继续停留在统一判断链，而不是退回仪表盘和阈值图。
+- `playbooks/19` 应把结构线的 samplebook 写成四类最小工件样例：shared header 先锁 structure_object、authoritative_path、current read/write path、recovery_asset_ledger、anti_zombie_evidence、retained_assets 与 rollback_object，再分别展示权威路径卡、恢复附件、评审卡与交接包的最小投影；这样才能让源码先进性继续停留在对象级结构真相，而不是退回结构图、恢复成功率与作者讲解。
+- `navigation/27` 因而成为必要入口：`26` 负责知道“怎样把统一审读落成共享工件协议”，`27` 负责知道“这些共享工件协议真正填出来时长什么样”，避免蓝皮书重新停在 contract 层而没有最小可复用样例层。
+
+证据:
+
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

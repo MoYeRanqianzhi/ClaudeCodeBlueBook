@@ -345,6 +345,11 @@
 - `api/39` 当前应负责结构 host artifact contract：把四类工件的 shared header 固定成 authoritative path、recovery asset ledger、anti-zombie evidence、retained assets 与 rollback object contract
 - `philosophy/69` 当前应负责把“成熟工件 = 四类角色共享同一判断对象”稳定成新的长期判断
 - `navigation/26` 的职责应稳定为“host implementation audit guide 层如何进入 host artifact contract 层”，避免 `25` 同时承担审读模板与工件协议两类职责
+- 当 `navigation/26 + api/37-39` 稳定后，下一步最值钱的不是继续补更多字段，而是补 artifact samplebook：给 Prompt、治理与结构三条线各出一套最小宿主卡、CI附件、评审卡与 handoff package 样例
+- `playbooks/17` 当前应负责 Prompt artifact 样例：让四类工件围绕同一 Prompt object contract 填出最小可用版本
+- `playbooks/18` 当前应负责治理 artifact 样例：让四类工件围绕同一 governance object contract 填出最小可用版本
+- `playbooks/19` 当前应负责结构 artifact 样例：让四类工件围绕同一 structure object contract 填出最小可用版本
+- `navigation/27` 的职责应稳定为“host artifact contract 层如何进入 artifact samplebook 层”，避免 `26` 同时承担字段协议与最小样例两类职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释
