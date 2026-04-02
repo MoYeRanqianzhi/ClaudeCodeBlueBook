@@ -7,7 +7,7 @@
 3. 哪些是稳定主路径，哪些只是 gate、consumer subset 或适配器子集。
 4. 宿主开发者到底该按什么顺序接入。
 
-## API 目录的六个平面
+## API 目录的七个平面
 
 ### 0. 能力全集与接入总图
 
@@ -79,6 +79,14 @@
 - [16-SDK消息与Control闭环对照表](16-SDK%E6%B6%88%E6%81%AF%E4%B8%8EControl%E9%97%AD%E7%8E%AF%E5%AF%B9%E7%85%A7%E8%A1%A8.md)
 - [22-插件、Marketplace、MCPB、LSP与Channels接入边界手册](22-%E6%8F%92%E4%BB%B6%E3%80%81Marketplace%E3%80%81MCPB%E3%80%81LSP%E4%B8%8EChannels%E6%8E%A5%E5%85%A5%E8%BE%B9%E7%95%8C%E6%89%8B%E5%86%8C.md)
 
+### 6. 机制对象宿主消费面
+
+- [49-Prompt编译与稳定性支持面手册：注入入口、协议转译、缓存断点与合法遗忘边界](49-Prompt%E7%BC%96%E8%AF%91%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%94%AF%E6%8C%81%E9%9D%A2%E6%89%8B%E5%86%8C%EF%BC%9A%E6%B3%A8%E5%85%A5%E5%85%A5%E5%8F%A3%E3%80%81%E5%8D%8F%E8%AE%AE%E8%BD%AC%E8%AF%91%E3%80%81%E7%BC%93%E5%AD%98%E6%96%AD%E7%82%B9%E4%B8%8E%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E8%BE%B9%E7%95%8C.md)
+- [50-治理控制面支持面手册：Settings、Permission、MCP、Context Usage、状态写回与继续门控](50-%E6%B2%BB%E7%90%86%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%94%AF%E6%8C%81%E9%9D%A2%E6%89%8B%E5%86%8C%EF%BC%9ASettings%E3%80%81Permission%E3%80%81MCP%E3%80%81Context%20Usage%E3%80%81%E7%8A%B6%E6%80%81%E5%86%99%E5%9B%9E%E4%B8%8E%E7%BB%A7%E7%BB%AD%E9%97%A8%E6%8E%A7.md)
+- [51-编译请求真相宿主消费面手册：systemPrompt输入、section breakdown、cache break reason与continue qualification](51-%E7%BC%96%E8%AF%91%E8%AF%B7%E6%B1%82%E7%9C%9F%E7%9B%B8%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E9%9D%A2%E6%89%8B%E5%86%8C%EF%BC%9AsystemPrompt%E8%BE%93%E5%85%A5%E3%80%81section%20breakdown%E3%80%81cache%20break%20reason%E4%B8%8Econtinue%20qualification.md)
+- [52-统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate](52-%E7%BB%9F%E4%B8%80%E5%AE%9A%E4%BB%B7%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E9%9D%A2%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20source%E3%80%81decision%20window%E3%80%81pending%20action%E3%80%81rollback%20object%E4%B8%8Econtinuation%20gate.md)
+- [53-故障模型宿主消费面手册：authority state、generation evidence、recovery boundary与anti-zombie projection](53-%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E9%9D%A2%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20state%E3%80%81generation%20evidence%E3%80%81recovery%20boundary%E4%B8%8Eanti-zombie%20projection.md)
+
 ## 按接入任务阅读
 
 ### 1. 想知道能不能接
@@ -93,6 +101,9 @@
 - 想把宿主卡、CI附件、评审卡与交接包继续压成统一工件协议：`35 -> 36 -> 37 -> 38 -> 39 -> ../navigation/26`
 - 想把 Prompt 构建层继续回灌成可消费的编译/稳定性支持面，而不是把内部编译细节误当公共 ABI：`18 -> 21 -> 49 -> ../architecture/79`
 - 想把 Settings、Permission、MCP、Context Usage 与状态写回继续收口成统一治理支持面，而不是只把它们当分散 control request：`28 -> 32 -> 35 -> 50 -> ../architecture/80`
+- 想让宿主直接围绕编译请求真相消费 section breakdown、message breakdown 与 continue qualification，而不是继续猜 prompt 黑箱：`49 -> 51 -> ../navigation/43`
+- 想让宿主直接围绕 authority source、decision window、pending action、rollback object 与 continuation gate 组织治理面板与交接：`50 -> 52 -> ../navigation/43`
+- 想让宿主直接围绕 authority state、generation evidence、recovery boundary 与 anti-zombie projection 组织恢复与回退，而不是继续看目录图和恢复成功率：`53 -> ../navigation/43`
 - 想把 validator / linter 继续压成 machine-readable rule ABI：`../navigation/30 -> 40 -> 41 -> 42 -> ../philosophy/71`
 - 想把这些 rule packet 继续压成最小规则样例、失败样例与 evaluator 接口：`../navigation/31 -> ../playbooks/20 -> ../playbooks/21 -> ../playbooks/22 -> ../philosophy/72`
 - 想把这些样例接口继续接成 replay harness、cross-consumer alignment 与 drift regression lab：`../navigation/32 -> ../playbooks/23 -> ../playbooks/24 -> ../playbooks/25 -> ../philosophy/73`
@@ -133,5 +144,8 @@
 - 再往下一层，应由 `../navigation/33 -> 43-45 -> ../architecture/78` 继续回答“怎样把 replay case、alignment assertion、drift ledger 与 rewrite adoption 接成持续执行协议与底盘”。
 - 再往下一层，应由 `../navigation/35 -> 46-48 -> ../philosophy/76` 继续回答“怎样把顶层目录地图继续拆成二级目录 atlas，并显式暴露权威入口、消费者子集与危险改动面”。
 - 再往下一层，应由 `../navigation/38 -> 49-50 -> ../architecture/79-80` 继续回答“怎样把 builder-facing 方法线重新压成可消费支持面与机制对象”。
+- 再往下一层，应由 `../navigation/43 -> 51-53` 继续回答“怎样把机制对象的实现顺序继续压成宿主、SDK、CI 与交接真正可消费的支持面，而不重新绑死内部实现”。
+- 机制对象宿主消费面不等于内部实现面。
+- host-consumable projection 不等于 internal compiler / internal fault-model trace。
 
 主线结论先看 [../05-功能全景与 API 支持](../05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)。

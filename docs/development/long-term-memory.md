@@ -9,6 +9,61 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“机制实现 / builder-facing 手册”继续推进到“机制支持面 / host-consumable API”层。
+- 新增结论：
+  - 编译请求真相如果要被宿主稳定消费，必须被翻译成 Prompt 输入面、section breakdown、message breakdown、continue qualification 等正式投影，而不是内部编译 trace。
+  - 统一定价治理如果要被宿主稳定消费，必须被翻译成 authority source、decision window、pending action、continuation gate 与 rollback object 等正式投影，而不是 modal 与 token 条。
+  - 故障模型如果要被宿主稳定消费，必须被翻译成 authority state、generation evidence、recovery boundary 与 anti-zombie projection，而不是目录图、恢复成功率与作者说明。
+- 新增目录责任：
+  - `navigation/43` 负责机制支持面入口。
+  - `api/51-53` 负责三类机制对象的宿主消费支持面。
+- 当前新的写作约束：
+  - 不再只写“实现者该怎么做”，还要写“宿主该消费什么、绝不能绑定什么”。
+  - 每次继续深化都要回答“当前消费者看到的是对象级真相，还是内部细节偶然泄漏出来的替身”。
+- 蓝皮书已经从“机制哲学 / 第一性原理收束”继续推进到“机制实现 / builder-facing 手册”层。
+- 新增结论：
+  - Prompt 魔力如果要迁移，必须继续被翻译成 section registry、stable boundary、protocol rewrite、lawful forgetting 与 continue qualification 的实现顺序。
+  - 统一定价治理如果要迁移，必须继续被翻译成 authority source、typed decision、decision window、continuation gate 与 rollback object 的实现顺序。
+  - 故障模型编码如果要迁移，必须继续被翻译成 authority surface、dependency seam、stale-safe merge、recovery boundary 与 anti-zombie evidence 的实现顺序。
+- 新增目录责任：
+  - `navigation/42` 负责机制实现入口。
+  - `guides/51-53` 负责三类机制对象的 builder-facing 实现翻译。
+- 当前新的写作约束：
+  - 不再只写“原则是什么”，还要写“实现顺序如何固定”。
+  - 每次继续深化都要回答“later drift 发生时该先回哪个对象、哪个边界、哪个状态面”。
+- 蓝皮书已经从“机制失真 / 形式主义反例”继续推进到“机制哲学 / 第一性原理收束”层。
+- 新增结论：
+  - Prompt 的魔力，本质上来自把提示词写成可缓存、可转写、可继续的编译链，而不是更会说服模型的文案。
+  - 安全与省 token 之所以同构，本质上来自治理控制面对 action、visibility、context 与 continuation 的统一定价。
+  - 源码先进性之所以成立，本质上来自把 authority drift、dependency drift、stale write 与 recovery 篡位等故障模型提前编码进结构。
+- 新增目录责任：
+  - `navigation/41` 负责机制哲学入口。
+  - `philosophy/81-83` 负责三类机制对象的第一性原理收束。
+- 当前新的写作约束：
+  - 不再只写“如何做”，还要写“为什么非这么做不可”。
+  - 每次继续深化都要回答“如果拿掉具体实现，这条原则还能否独立成立”。
+- 蓝皮书已经从“机制验证 / 持续回归”继续推进到“机制失真 / 形式主义反例”层。
+- 新增结论：
+  - `compiled request truth` 最危险的失败方式不是 prompt 变短，而是重新长出多重真相生产者、协议真相泄漏与 lawful forgetting 失忆。
+  - `governance control plane object` 最危险的失败方式不是没有治理，而是退回 mode 崇拜、token 仪表盘崇拜与默认继续幻觉。
+  - `evolvable kernel object boundary` 最危险的失败方式不是没有结构，而是退回多点权威、恢复资产篡位与 anti-zombie 口头化。
+- 新增目录责任：
+  - `navigation/40` 负责机制失真入口。
+  - `casebooks/22-24` 负责三类机制对象的形式主义反例与误读样本。
+- 当前新的写作约束：
+  - 不再只写“对象怎样成立”或“对象怎样验证”，还要写“它最常怎样被伪装成已经成立”。
+  - 每次继续深化都要回答“哪一种替身最像对的”“后来者怎样一眼拒绝这种替身”。
+- 蓝皮书已经从“机制回灌 / 支持面收口”继续推进到“机制验证 / 持续回归”层。
+- 新增结论：
+  - `compiled request truth` 如果不能被持续验证 continuity，就会重新退回原文 prompt 崇拜。
+  - `governance control plane object` 如果不能被持续验证 authority / decision window / continuation gate，就会重新退回局部 KPI 与审批流程。
+  - `evolvable kernel object boundary` 如果不能被持续验证 authority / transition / dependency / anti-zombie，就会重新退回目录审美与作者记忆。
+- 新增目录责任：
+  - `navigation/39` 负责机制验证入口。
+  - `playbooks/26-28` 负责三类机制对象的回归、拒收条件与复盘最小字段。
+- 当前新的写作约束：
+  - 不再把机制对象写成“已经成立就算完成”。
+  - 每次继续深化都要回答“怎样持续证明它还成立”“哪些情况应直接拒收”。
 - 蓝皮书已经从“builder-facing 方法层”继续推进到“机制回灌层”。
 - 新增结论：
   - Prompt 线下一层不应停在 Prompt Constitution，而应继续收口成 `compiled request truth`。

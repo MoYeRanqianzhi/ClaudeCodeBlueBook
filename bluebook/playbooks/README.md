@@ -42,6 +42,9 @@
 23. [23-Prompt Artifact Evaluator Harness：Continuation Replay、跨消费者对齐与 Drift 回归实验室](23-Prompt%20Artifact%20Evaluator%20Harness%EF%BC%9AContinuation%20Replay%E3%80%81%E8%B7%A8%E6%B6%88%E8%B4%B9%E8%80%85%E5%AF%B9%E9%BD%90%E4%B8%8E%20Drift%20%E5%9B%9E%E5%BD%92%E5%AE%9E%E9%AA%8C%E5%AE%A4.md)
 24. [24-治理 Artifact Evaluator Harness：Decision Gain Replay、跨消费者对齐与 Drift 回归实验室](24-%E6%B2%BB%E7%90%86%20Artifact%20Evaluator%20Harness%EF%BC%9ADecision%20Gain%20Replay%E3%80%81%E8%B7%A8%E6%B6%88%E8%B4%B9%E8%80%85%E5%AF%B9%E9%BD%90%E4%B8%8E%20Drift%20%E5%9B%9E%E5%BD%92%E5%AE%9E%E9%AA%8C%E5%AE%A4.md)
 25. [25-结构 Artifact Evaluator Harness：Split-Brain Replay、Anti-Zombie 对齐与 Drift 回归实验室](25-%E7%BB%93%E6%9E%84%20Artifact%20Evaluator%20Harness%EF%BC%9ASplit-Brain%20Replay%E3%80%81Anti-Zombie%20%E5%AF%B9%E9%BD%90%E4%B8%8E%20Drift%20%E5%9B%9E%E5%BD%92%E5%AE%9E%E9%AA%8C%E5%AE%A4.md)
+26. [26-编译请求真相验证手册：section continuity、stable bytes、protocol rewrite与lawful forgetting回归](26-%E7%BC%96%E8%AF%91%E8%AF%B7%E6%B1%82%E7%9C%9F%E7%9B%B8%E9%AA%8C%E8%AF%81%E6%89%8B%E5%86%8C%EF%BC%9Asection%20continuity%E3%80%81stable%20bytes%E3%80%81protocol%20rewrite%E4%B8%8Elawful%20forgetting%E5%9B%9E%E5%BD%92.md)
+27. [27-治理控制面对象验证手册：authority source、decision window、continuation gate与rollback object回归](27-%E6%B2%BB%E7%90%86%E6%8E%A7%E5%88%B6%E9%9D%A2%E5%AF%B9%E8%B1%A1%E9%AA%8C%E8%AF%81%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20source%E3%80%81decision%20window%E3%80%81continuation%20gate%E4%B8%8Erollback%20object%E5%9B%9E%E5%BD%92.md)
+28. [28-可演化内核对象验证手册：authority、transition、dependency、recovery asset与anti-zombie回归](28-%E5%8F%AF%E6%BC%94%E5%8C%96%E5%86%85%E6%A0%B8%E5%AF%B9%E8%B1%A1%E9%AA%8C%E8%AF%81%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%E3%80%81transition%E3%80%81dependency%E3%80%81recovery%20asset%E4%B8%8Eanti-zombie%E5%9B%9E%E5%BD%92.md)
 
 ## 按目标阅读
 
@@ -65,6 +68,7 @@
 - 想直接看这些 rule packet 在不同消费者里怎样被最小样例、失败样例与 rewrite 样例反复验证：`../navigation/31 -> 20 -> 21 -> 22`
 - 想直接看这些规则样例怎样继续被组织成可重放验证、跨消费者对齐与 drift 回归实验室：`../navigation/32 -> 23 -> 24 -> 25`
 - 想直接看这些实验室怎样继续进入 replay queue、alignment gate、drift ledger 与 rewrite adoption 的持续执行底盘：`../navigation/33 -> ../api/43 -> ../api/44 -> ../api/45 -> ../architecture/78 -> ../philosophy/74`
+- 想把刚回灌出来的机制对象继续变成长期运行里的真实回归门禁，而不是停在架构解释层：`../navigation/39 -> 26 -> 27 -> 28`
 
 ## 与其他目录的边界
 
@@ -84,5 +88,6 @@
 - 再往下一层，应由 `navigation/31 -> playbooks/20-22` 继续回答“怎样把这些 machine-readable 规则包压成可反复验证的最小样例、失败样例与 evaluator 接口”。
 - 再往下一层，应由 `navigation/32 -> playbooks/23-25` 继续回答“怎样把这些样例接口接成可重放验证、跨消费者对齐与 drift 回归实验室”。
 - 再往下一层，应由 `../navigation/33 -> ../api/43-45 -> ../architecture/78` 继续回答“怎样把这些实验室继续接成可持续执行的 runner / ledger 底盘”。
+- 再往下一层，应由 `../navigation/39 -> 26-28 -> ../architecture/79-81 -> ../api/49-50` 继续回答“怎样让 compiled request truth、governance object 与 evolvable kernel object boundary 进入持续回归与拒收门禁”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。
