@@ -113,6 +113,9 @@
 - [78-Prompt宿主修复稳态纠偏再纠偏改写协议：compiled request truth restitution、protocol transcript repair、stable prefix reseal、lawful forgetting reseal、continuation requalification与threshold liability reinstatement](78-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E5%8D%8F%E8%AE%AE%EF%BC%9Acompiled%20request%20truth%20restitution%E3%80%81protocol%20transcript%20repair%E3%80%81stable%20prefix%20reseal%E3%80%81lawful%20forgetting%20reseal%E3%80%81continuation%20requalification%E4%B8%8Ethreshold%20liability%20reinstatement.md)
 - [79-治理宿主修复稳态纠偏再纠偏改写协议：authority source restitution、ledger reseal、decision window refreeze、continuation pricing rebinding、capability liability recustody与threshold rebinding](79-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20source%20restitution%E3%80%81ledger%20reseal%E3%80%81decision%20window%20refreeze%E3%80%81continuation%20pricing%20rebinding%E3%80%81capability%20liability%20recustody%E4%B8%8Ethreshold%20rebinding.md)
 - [80-结构宿主修复稳态纠偏再纠偏改写协议：authority surface restitution、single-source writeback seam、lineage reproof、anti-zombie evidence restitution与reopen liability rebinding](80-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20surface%20restitution%E3%80%81single-source%20writeback%20seam%E3%80%81lineage%20reproof%E3%80%81anti-zombie%20evidence%20restitution%E4%B8%8Ereopen%20liability%20rebinding.md)
+- [81-Prompt宿主修复稳态纠偏再纠偏改写纠偏协议：compiled request truth、section registry与threshold liability](81-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E5%8D%8F%E8%AE%AE%EF%BC%9Acompiled%20request%20truth%E3%80%81section%20registry%E4%B8%8Ethreshold%20liability.md)
+- [82-治理宿主修复稳态纠偏再纠偏改写纠偏协议：authority、window、pricing与threshold](82-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%E3%80%81window%E3%80%81pricing%E4%B8%8Ethreshold.md)
+- [83-结构宿主修复稳态纠偏再纠偏改写纠偏协议：authority、lineage、transport与reopen liability](83-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%E3%80%81lineage%E3%80%81transport%E4%B8%8Ereopen%20liability.md)
 
 ## 按接入任务阅读
 
@@ -143,6 +146,7 @@
 - 想把这些稳态纠偏执行失真继续压成宿主、SDK、CI、评审与交接都能共享的再纠偏对象、拒收升级语义与长期 reopen 责任面，而不是继续把 correction prose、mode 平静感与 pointer 健康感误当恢复对象：`../navigation/78 -> 75 -> 76 -> 77 -> ../guides/78 -> ../guides/79 -> ../guides/80`
 - 想把这些再纠偏协议继续压成宿主、SDK、CI、评审与交接都能共享的 recorrection card、reject 顺序与 re-entry / reopen 责任演练，而不是继续停在 rule surface 字段层：`../navigation/79 -> ../playbooks/56 -> ../playbooks/57 -> ../playbooks/58`
 - 想继续看这些再纠偏执行为什么仍会重新退回假 recorrection card、假 reject 顺序与假 reopen 责任演练，而不是误把 recorrection card 当成正式恢复证明：`../navigation/80 -> ../casebooks/52 -> ../casebooks/53 -> ../casebooks/54`
+- 想把这些再纠偏改写纠偏继续压成宿主、SDK、CI、评审与交接都能共享的 rewrite correction 对象、拒收语义与长期 reopen 责任面，而不是继续把 rewrite prose、dashboard 平静感与 pointer 健康感误当终态协议：`../navigation/86 -> 81 -> 82 -> 83 -> ../guides/84 -> ../guides/85 -> ../guides/86`
 - 想把 validator / linter 继续压成 machine-readable rule ABI：`../navigation/30 -> 40 -> 41 -> 42 -> ../philosophy/71`
 - 想把这些 rule packet 继续压成最小规则样例、失败样例与 evaluator 接口：`../navigation/31 -> ../playbooks/20 -> ../playbooks/21 -> ../playbooks/22 -> ../philosophy/72`
 - 想把这些样例接口继续接成 replay harness、cross-consumer alignment 与 drift regression lab：`../navigation/32 -> ../playbooks/23 -> ../playbooks/24 -> ../playbooks/25 -> ../philosophy/73`
@@ -198,6 +202,8 @@
 - 再往下一层，应由 `../navigation/81 -> ../guides/81-83` 继续回答“怎样把这些再纠偏执行失真重新压回固定顺序、拒收升级路径与改写模板骨架”。
 - 再往下一层，应由 `../navigation/82 -> ../api/78-80` 继续回答“怎样把这些再纠偏改写继续压成宿主可消费的修正对象、拒收语义与长期 reopen 责任面”。
 - 再往下一层，应由 `../navigation/83 -> ../playbooks/59-61` 继续回答“怎样把这些再纠偏改写协议继续压成固定 rewrite card、reject 顺序与 re-entry / reopen 责任演练”。
+- 再往下一层，应由 `../navigation/86 -> 81-83` 继续回答“怎样把这些再纠偏改写纠偏继续压成宿主可消费的 rewrite correction 对象、拒收语义与长期 reopen 责任面”。
+- 再往下一层，应由 `../navigation/87 -> ../playbooks/62-64` 继续回答“怎样把这些 rewrite correction protocol 继续压成固定 rewrite correction card、reject 顺序与 re-entry / reopen 责任演练”。
 - 机制对象宿主消费面不等于内部实现面。
 - host-consumable projection 不等于 internal compiler / internal fault-model trace。
 
