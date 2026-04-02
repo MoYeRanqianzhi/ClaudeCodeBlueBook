@@ -7,6 +7,36 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A00j. Runtime 构建层之后，应继续下沉到上下文编译、治理控制面与可演化内核三联层
+
+- Prompt 魔力下一层最值钱的写法，不是继续讨论强 prompt，而是把它明确写成上下文准入编译器：section law、stable prefix producer、protocol transcript compiler、lawful forgetting ABI 与 stable bytes ledger 应被理解成同一条 Prompt control plane。
+- 安全与省 token 下一层最值钱的写法，不是继续讨论统一预算器，而是把它明确写成治理控制面：authority surface、typed decision、渐进暴露、Context Usage decision window、continuation pricing 应被理解成同一张治理面。
+- 源码先进性下一层最值钱的写法，不是继续讨论分层漂亮，而是把它明确写成可演化内核：authority surface、single-source、anti-cycle seam、anti-zombie 与 future maintainer as consumer 应被理解成同一条结构母线。
+- 这意味着蓝皮书目录在构建层之后需要继续保持“三联结构”：
+  - `navigation/37` 负责统一入口。
+  - `guides/48-50` 负责 builder-facing 方法层。
+  - `philosophy/78-80` 负责终局判断层。
+- 这也意味着下一步如果要继续深化，优先考虑的不是再开新平面，而是判断是否需要把 compiled request truth、governance control plane、evolvable kernel 再回灌到 `architecture/` 或 `api/`。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-104`
+- `claude-code-source-code/src/query/stopHooks.ts:84-120`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-225`
+- `claude-code-source-code/src/services/AgentSummary/agentSummary.ts:81-119`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-240`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:308-519`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/utils/task/framework.ts:160-269`
+- `claude-code-source-code/src/query/config.ts:1-45`
+- `claude-code-source-code/src/query/deps.ts:1-40`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-106`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+
 ## 已确认结论
 
 ### A00. 协作语法、资源定价与未来维护者消费者
