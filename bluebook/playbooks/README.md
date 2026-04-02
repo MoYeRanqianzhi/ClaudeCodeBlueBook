@@ -54,6 +54,9 @@
 35. [35-Prompt宿主验收执行手册：compiled request truth验收卡、拒收顺序与回退剧本](35-Prompt%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Acompiled%20request%20truth%E9%AA%8C%E6%94%B6%E5%8D%A1%E3%80%81%E6%8B%92%E6%94%B6%E9%A1%BA%E5%BA%8F%E4%B8%8E%E5%9B%9E%E9%80%80%E5%89%A7%E6%9C%AC.md)
 36. [36-治理宿主验收执行手册：authority source、permission ledger、decision window、continuation gate与rollback剧本](36-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20source%E3%80%81permission%20ledger%E3%80%81decision%20window%E3%80%81continuation%20gate%E4%B8%8Erollback%E5%89%A7%E6%9C%AC.md)
 37. [37-结构宿主验收执行手册：authority state、resume order、recovery boundary、writeback path与anti-zombie剧本](37-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20state%E3%80%81resume%20order%E3%80%81recovery%20boundary%E3%80%81writeback%20path%E4%B8%8Eanti-zombie%E5%89%A7%E6%9C%AC.md)
+38. [38-Prompt宿主修复演练手册：repair object共享升级卡、rollback drill与re-entry drill](38-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%BC%94%E7%BB%83%E6%89%8B%E5%86%8C%EF%BC%9Arepair%20object%E5%85%B1%E4%BA%AB%E5%8D%87%E7%BA%A7%E5%8D%A1%E3%80%81rollback%20drill%E4%B8%8Ere-entry%20drill.md)
+39. [39-治理宿主修复演练手册：authority repair共享升级卡、rollback drill与re-entry drill](39-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%BC%94%E7%BB%83%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20repair%E5%85%B1%E4%BA%AB%E5%8D%87%E7%BA%A7%E5%8D%A1%E3%80%81rollback%20drill%E4%B8%8Ere-entry%20drill.md)
+40. [40-结构宿主修复演练手册：authority recovery共享升级卡、rollback drill与re-entry drill](40-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%BC%94%E7%BB%83%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20recovery%E5%85%B1%E4%BA%AB%E5%8D%87%E7%BA%A7%E5%8D%A1%E3%80%81rollback%20drill%E4%B8%8Ere-entry%20drill.md)
 
 ## 按目标阅读
 
@@ -106,5 +109,6 @@
 - 再往下一层，应由 `../navigation/47 -> 32-34 -> ../guides/54-56` 继续回答“怎样把这些宿主迁移工单继续压成交接样例、灰度记录与回退演练”。
 - 再往下一层，应由 `../navigation/50 -> ../api/54-56 -> ../navigation/51 -> 35-37` 继续回答“怎样把这些宿主验收协议继续压成固定执行卡、拒收顺序与回退处理剧本”。
 - 再往下一层，应由 `../navigation/52 -> ../casebooks/31-33` 继续回答“为什么这些宿主验收执行明明已经存在，仍会重新退回假严格、假拒收与假回退”。
+- 再往下一层，应由 `../navigation/54 -> ../api/57-59 -> ../navigation/55 -> 38-40` 继续回答“怎样把这些宿主修复协议继续压成共享升级卡、rollback drill 与 re-entry drill”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。

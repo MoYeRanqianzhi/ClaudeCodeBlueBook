@@ -64,6 +64,7 @@
 52. [宿主验收失真导航：Prompt、治理与故障模型执行卡如何重新退回表单化绿灯、假拒收与伪回退](52-%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E5%A4%B1%E7%9C%9F%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E6%89%A7%E8%A1%8C%E5%8D%A1%E5%A6%82%E4%BD%95%E9%87%8D%E6%96%B0%E9%80%80%E5%9B%9E%E8%A1%A8%E5%8D%95%E5%8C%96%E7%BB%BF%E7%81%AF%E3%80%81%E5%81%87%E6%8B%92%E6%94%B6%E4%B8%8E%E4%BC%AA%E5%9B%9E%E9%80%80.md)
 53. [宿主验收纠偏导航：Prompt、治理与故障模型执行失真如何压回固定顺序、拒收升级路径与改写模板骨架](53-%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E7%BA%A0%E5%81%8F%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%E5%A6%82%E4%BD%95%E5%8E%8B%E5%9B%9E%E5%9B%BA%E5%AE%9A%E9%A1%BA%E5%BA%8F%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E4%B8%8E%E6%94%B9%E5%86%99%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
 54. [宿主修复协议导航：Prompt、治理与故障模型执行纠偏如何进入修复卡、拒收升级语义与重入规则面](54-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E5%8D%8F%E8%AE%AE%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E6%89%A7%E8%A1%8C%E7%BA%A0%E5%81%8F%E5%A6%82%E4%BD%95%E8%BF%9B%E5%85%A5%E4%BF%AE%E5%A4%8D%E5%8D%A1%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%AF%AD%E4%B9%89%E4%B8%8E%E9%87%8D%E5%85%A5%E8%A7%84%E5%88%99%E9%9D%A2.md)
+55. [宿主修复演练导航：Prompt、治理与故障模型修复协议如何进入共享升级卡、rollback drill与re-entry drill](55-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%BC%94%E7%BB%83%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E4%BF%AE%E5%A4%8D%E5%8D%8F%E8%AE%AE%E5%A6%82%E4%BD%95%E8%BF%9B%E5%85%A5%E5%85%B1%E4%BA%AB%E5%8D%87%E7%BA%A7%E5%8D%A1%E3%80%81rollback%20drill%E4%B8%8Ere-entry%20drill.md)
 
 和其他目录的关系：
 
@@ -94,3 +95,4 @@
 - 再往下一层，应由 `52 -> casebooks/31-33` 继续回答“为什么这些宿主验收执行即使已经更制度化，仍会重新退回表单化绿灯、假拒收与伪回退”。
 - 再往下一层，应由 `53 -> guides/60-62` 继续回答“怎样把这些宿主验收执行失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
 - 再往下一层，应由 `54 -> api/57-59` 继续回答“怎样把这些宿主验收执行纠偏继续压成宿主可消费的修复卡、拒收升级语义与重入规则面”。
+- 再往下一层，应由 `55 -> playbooks/38-40` 继续回答“怎样把这些宿主修复协议继续压成共享升级卡、rollback drill 与 re-entry drill”。
