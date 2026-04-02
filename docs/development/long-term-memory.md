@@ -9,6 +9,18 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏执行 / repair steady-state correction-of-correction execution”继续推进到“宿主修复稳态纠偏再纠偏失真 / repair steady-state correction-of-correction distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏执行最危险的失败，不是没有 `recorrection card`，而是 `recorrection card` 已存在却仍围绕可读 transcript、礼貌 summary、安静 cache 曲线与默认继续工作；这说明 Prompt 魔力最容易从编译链退回解释链。
+  - 治理宿主修复稳态纠偏再纠偏执行最危险的失败，不是没有 `window refreeze` 与 `threshold rebinding`，而是 `decision window`、`Context Usage`、`capability liability` 与 `threshold` 重新退回 mode 面板、usage dashboard 与默认继续；这说明安全设计与省 token 设计最容易在执行层重新脱钩。
+  - 结构宿主修复稳态纠偏再纠偏执行最危险的失败，不是没有 `single-source` 与 `anti-zombie evidence`，而是这些对象重新退回 pointer 健康感、目录审美、archive prose 与 reconnect 提示；这说明源码先进性最容易在执行层重新退回叙事层。
+- 新增目录责任：
+  - `navigation/80` 负责宿主修复稳态纠偏再纠偏失真入口。
+  - `casebooks/52-54` 负责三类宿主修复稳态纠偏再纠偏执行的高阶恢复幻觉样本。
+- 当前新的写作约束：
+  - 不能只写“再纠偏执行为什么会坏”，还要写“哪些更制度化的执行工件正在冒充恢复对象本身”。
+  - `74-80` 应被持续当成一条连续小循环来写，而不是七篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/81-83`，把这一层 distortion 继续压成固定顺序、拒收升级路径与改写模板骨架。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏协议 / repair steady-state correction-of-correction protocol”继续推进到“宿主修复稳态纠偏再纠偏执行 / repair steady-state correction-of-correction execution”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏执行如果要真正成立，不能只看 correction prose 与 UI 历史是否平静，必须把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary` 与 `continue qualification` 继续压成同一张 `recorrection card`；否则 Prompt 魔力仍会退回文案崇拜。
@@ -20,7 +32,7 @@
 - 当前新的写作约束：
   - `53-55` 只表示 first-order correction execution；`56-58` 必须显式写成 correction-of-correction protocol execution，不得再混用 `correction card`。
   - `74-79` 应被持续当成一条连续小循环来写，而不是六篇并列新增文章。
-- 下一步最值钱的候选应切到 `casebooks/52-54`，把这一层 execution 最常怎样退回假 `recorrection card`、假 `reject verdict` 与假 `reopen liability` 写成新的反例层。
+- 该层已由 `navigation/80`、`casebooks/52-54` 承接；下一步最值钱的候选应切到 `guides/81-83`，把这一层 distortion 继续压成固定顺序、拒收升级路径与改写模板骨架。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏 / repair steady-state correction-of-correction guide”继续推进到“宿主修复稳态纠偏再纠偏协议 / repair steady-state correction-of-correction protocol”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏如果要真正变成宿主可消费协议，不能只保留 `compiled request truth` 与 `stable prefix`，还必须把 `protocol transcript` 与 `lawful forgetting boundary` 正式收进 ABI；否则 Prompt 魔力仍会在 correction prose 与 UI 历史里再次失守。
