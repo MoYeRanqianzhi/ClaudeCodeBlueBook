@@ -55,6 +55,7 @@
 - 想直接把这套 envelope 落成宿主、CI、评审与交接的统一检查点，而不是只停在原则与反例：`../navigation/23 -> 14 -> 15 -> 16`
 - 想直接看这套 implementation playbook 在真实执行里最常怎样重新失真：`../navigation/24 -> ../casebooks/16 -> ../casebooks/17 -> ../casebooks/18`
 - 想直接看宿主卡、CI附件、评审卡与交接包真正填出来是什么样，而不是只看 contract：`../navigation/27 -> 17 -> 18 -> 19`
+- 想直接看这些最小共享工件在团队执行里最常怎样重新退回局部真相，而不是误把样例当落地完成：`../navigation/28 -> ../casebooks/19 -> ../casebooks/20 -> ../casebooks/21`
 
 ## 与其他目录的边界
 
@@ -69,5 +70,6 @@
 - 再往下一层，应由 `navigation/23 -> playbooks/14-16` 继续回答“怎样把这套 envelope 真正落成宿主、CI、评审与交接的检查点”。
 - 再往下一层，应由 `navigation/24 -> casebooks/16-18` 继续回答“这些检查点在真实执行里最常会怎样重新退回形式主义”。
 - 再往下一层，应由 `navigation/27 -> playbooks/17-19` 继续回答“这些共享工件协议真正填出来时长什么样”。
+- 再往下一层，应由 `navigation/28 -> casebooks/19-21` 继续回答“这些最小共享工件在真实执行里最常怎样重新退回局部真相”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。

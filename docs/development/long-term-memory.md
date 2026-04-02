@@ -350,6 +350,11 @@
 - `playbooks/18` 当前应负责治理 artifact 样例：让四类工件围绕同一 governance object contract 填出最小可用版本
 - `playbooks/19` 当前应负责结构 artifact 样例：让四类工件围绕同一 structure object contract 填出最小可用版本
 - `navigation/27` 的职责应稳定为“host artifact contract 层如何进入 artifact samplebook 层”，避免 `26` 同时承担字段协议与最小样例两类职责
+- 当 `navigation/27 + playbooks/17-19` 稳定后，下一步最值钱的不是继续补更多正例，而是补 artifact drift casebook：把四类共享工件最常怎样重新退回原文、状态色、计数、目录图与作者说明写成正式失真原型
+- `casebooks/19` 当前应负责 Prompt artifact 失真：宿主卡退回原文、CI 附件只剩绿灯、评审卡退回总结与交接包回到摘要
+- `casebooks/20` 当前应负责治理 artifact 失真：窗口卡退回状态色、仲裁附件退回计数、评审卡退回 verdict 与交接包失去回退对象
+- `casebooks/21` 当前应负责结构 artifact 失真：权威路径卡退回目录图、恢复附件只剩成功率、评审卡退回结构夸奖与交接包回到作者说明
+- `navigation/28` 的职责应稳定为“artifact samplebook 层如何进入 artifact drift casebook 层”，避免 `27` 同时承担最小样例与工件级失真两类职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

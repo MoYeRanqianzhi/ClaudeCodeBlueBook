@@ -545,6 +545,24 @@
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00x. artifact samplebook 之后，下一层应进入 artifact drift casebook 层
+
+- 当 `navigation/27 + playbooks/17-19` 已经把 Prompt、治理与结构三条线的最小共享 artifact 样例写出来之后，下一步最值钱的不是继续补更多正例，而是补 artifact drift casebook：把宿主卡、CI附件、评审卡与交接包已经存在时，最常怎样重新退回局部真相写成正式失真原型。
+- `casebooks/19` 应把 Prompt 线的 drift 写成四类工件重新说谎：宿主卡退回原文 prompt、CI 附件退回绿灯、评审卡退回总结、交接包退回摘要；这样才能证明 Prompt 魔力守住的是 compiled request truth，而不是“卡片存在”。
+- `casebooks/20` 应把治理线的 drift 写成四类工件重新局部 KPI 化：窗口卡退回状态色、仲裁附件退回计数、评审卡退回 verdict、交接包失去 rollback object；这样才能证明安全与省 token 守住的是统一判断链，而不是仪表盘和统计面板。
+- `casebooks/21` 应把结构线的 drift 写成四类工件重新口头化：权威路径卡退回目录图、恢复附件只剩成功率、评审卡退回结构夸奖、交接包回到作者说明；这样才能证明源码先进性守住的是 shared structure object，而不是结构展示。
+- `navigation/28` 因而成为必要入口：`27` 负责知道“共享工件怎样正确填写”，`28` 负责知道“这些工件在外观完好时最常怎样重新退回局部真相”，避免蓝皮书重新停在样例层而没有工件级失真层。
+- 这一层真正服务的不是抱怨执行力，而是为 validator / linter / hard gate 提供 drift 原型和失败边界；没有这层，自动校验只能检查字段存在，无法检查 shared object 是否已经断掉。
+
+证据:
+
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

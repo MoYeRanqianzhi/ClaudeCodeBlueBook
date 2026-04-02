@@ -92,6 +92,7 @@
 - 想把这些实施级失真继续反压成统一审读模板，再读 [navigation/25-Host Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计](navigation/25-Host%20Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计.md)
 - 想把这些统一审读模板继续压成宿主卡、CI附件、评审卡与交接包共享的正式工件协议，再读 [navigation/26-Host Artifact Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象](navigation/26-Host%20Artifact%20Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象.md)
 - 想直接看这些共享工件协议真正填出来时长什么样，再读 [navigation/27-Host Artifact样例导航：宿主卡、CI附件、评审卡与交接包的最小共享样例](navigation/27-Host%20Artifact样例导航：宿主卡、CI附件、评审卡与交接包的最小共享样例.md)
+- 想直接看这些最小共享工件在真实执行里最常怎样重新退回局部真相，再读 [navigation/28-Artifact Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相](navigation/28-Artifact%20Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -255,6 +256,7 @@
 - 想直接看这些实现层失真怎样继续被反压成统一审读模板，再读 [navigation/25-Host Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计](navigation/25-Host%20Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计.md)
 - 想直接看这些统一审读模板怎样继续落成共享工件协议，再读 [navigation/26-Host Artifact Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象](navigation/26-Host%20Artifact%20Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象.md)
 - 想直接看这些共享工件协议怎样真正被最小样例化，再读 [navigation/27-Host Artifact样例导航：宿主卡、CI附件、评审卡与交接包的最小共享样例](navigation/27-Host%20Artifact样例导航：宿主卡、CI附件、评审卡与交接包的最小共享样例.md)
+- 想直接看这些最小共享工件在真实执行里怎样重新漂移回局部真相，再读 [navigation/28-Artifact Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相](navigation/28-Artifact%20Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
@@ -381,6 +383,10 @@
 
 - `navigation/27 -> playbooks/17 -> playbooks/18 -> playbooks/19 -> philosophy/69`
 
+### 为什么 Host Artifact Samplebook 还必须经得起工件层重新退回局部真相
+
+- `navigation/28 -> casebooks/19 -> casebooks/20 -> casebooks/21 -> philosophy/69`
+
 ### 为什么高行动力来自统一定价而不是统一放权
 
 - `architecture/50 -> architecture/56 -> architecture/68 -> architecture/71 -> philosophy/58`
@@ -435,3 +441,4 @@
 - [风险与治理专题](risk/README.md)
 - [开发与持久化记忆](../docs/README.md)
 - 想直接看这些统一审读对象怎样继续被压成正式共享工件协议，再读 [navigation/26-Host Artifact Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象](navigation/26-Host%20Artifact%20Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象.md)
+- 想直接看这些最小共享工件怎样在 artifact 层重新退回局部真相，再读 [navigation/28-Artifact Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相](navigation/28-Artifact%20Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相.md)

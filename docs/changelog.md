@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《Artifact Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相》《Prompt Artifact反例：宿主卡退回原文、CI附件只剩绿灯与交接包回到摘要》《治理 Artifact反例：窗口卡退回状态色、仲裁附件退回计数与交接包失去回退对象》《结构 Artifact反例：权威路径卡退回目录图、恢复附件只剩成功率与交接包回到作者说明》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“Artifact Samplebook 层”继续推进到“Artifact Drift Casebook 层”
 - 新增《Host Artifact样例导航：宿主卡、CI附件、评审卡与交接包的最小共享样例》《Prompt Artifact样例库：宿主卡、CI附件、评审卡与交接包最小填写示例》《治理 Artifact样例库：窗口卡、仲裁附件、评审卡与交接包最小填写示例》《结构 Artifact样例库：权威路径卡、恢复附件、评审卡与交接包最小填写示例》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“Host Artifact Contract 层”继续推进到“Artifact Samplebook 层”
 - 新增《Host Artifact Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象》《Prompt Host Artifact Contract：宿主卡、CI附件、评审卡与交接包的共享字段骨架》《治理 Host Artifact Contract：对象、窗口、仲裁、失败语义与回退工件协议》《结构 Host Artifact Contract：权威路径、恢复资产、反zombie 与交接包字段骨架》《真正成熟的工件，不是四套表单，而是四类角色共享同一判断对象》，并同步回写主索引、使用指南、API README 与开发文档，把蓝皮书从“Host Implementation 审读模板层”继续推进到“Host Artifact Contract 层”
 - 新增《Host Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计》《Prompt Host Implementation审读模板：编译真相、稳定字节、合法遗忘与交接闸门》《治理 Host Implementation审读模板：决策窗口、仲裁证据、对象升级与回退边界》《结构 Host Implementation审读模板：权威路径、恢复资产、反zombie 与危险路径交接》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“Host Implementation 实施级失真层”继续推进到“Host Implementation 审读模板层”
