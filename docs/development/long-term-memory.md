@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复演练 / repair drill”继续推进到“宿主修复失真 / repair distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复演练即使已经有 repair card、rollback drill 与 re-entry drill，仍最容易死于 repair object 伪绑定、protocol truth 被修复说明掩盖、摘要回滚与默认继续；否则 Prompt 的编译链魔力会在修复层重新退回事故叙事与按钮状态。
+  - 治理宿主修复演练即使已经有 authority repair、window reset 与 repricing drill，仍最容易死于 authority 假恢复、stale ledger 漂白、仪表盘式窗口重置与免费重入；否则安全设计与省 token 设计会在修复层重新拆成两套互不相干的补救流程。
+  - 结构宿主修复演练即使已经有 authority recovery、writeback restoration 与 anti-zombie drill，仍最容易死于 breadcrumb 篡位、resume 顺序隐式化、旁路写回、anti-zombie 伪证明与 reconnect 冒充 rollback；否则源码先进性会在修复层重新退回目录美学、日志繁荣与恢复成功率崇拜。
+- 新增目录责任：
+  - `navigation/56` 负责宿主修复失真入口。
+  - `casebooks/34-36` 负责三类宿主修复演练的假修复、假回滚与假重入反例。
+- 当前新的写作约束：
+  - 不再只写“修复演练如何运行”，还要写“哪些看起来已经完成修复的工件其实正在重新制造第二真相、假连续性与假先进性”。
+  - 每次继续深化都要回答“当前 repair distortion 暴露的是单一真相正在失守，还是只是在被一套更制度化的修复叙事替位”。
 - 蓝皮书已经从“宿主修复协议 / repair contract”继续推进到“宿主修复演练 / repair drill”层。
 - 新增结论：
   - Prompt 宿主修复如果要真正可重放，必须继续把 repair object、reject escalation、rollback boundary 与 re-entry qualification 压成共享升级卡、rollback drill 与 re-entry drill，持续证明 repair、rollback 与 re-entry 仍围绕同一个 `compiled request truth` 发生，而不是继续围绕 reviewer 解释、旧摘要与按钮状态工作。
