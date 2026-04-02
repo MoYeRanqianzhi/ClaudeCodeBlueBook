@@ -398,6 +398,12 @@
 - `api/48` 当前应负责 commands atlas：把会话控制、模式治理、扩展装配、运营诊断与 internal-only 边界拉平
 - `navigation/35` 的职责应稳定为“顶层目录地图如何进入二级目录 atlas 层”，避免 `30` 同时承担顶层地图与二级目录 atlas 两类职责
 - `philosophy/76` 当前应负责把“成熟源码地图 = 更快暴露权威入口、消费者子集与危险改动面”稳定成新的长期判断
+- 当 `navigation/35 + api/46-48` 稳定后，下一步最值钱的不是继续补更多 atlas，而是补可迁移的 Agent Runtime 构建层：把对象、协作语法、资源定价、恢复闭环、宿主模板与统一蓝图压成一套 builder-facing 方法
+- `guides/45` 当前应负责 Runtime 构建指南：让正式对象、协作语法、资源定价、恢复闭环与消费者边界进入同一构建顺序
+- `guides/46` 当前应负责宿主落地模板：让 control、状态写回、Context Usage、恢复与 evidence envelope 进入同一宿主闭环模板
+- `guides/47` 当前应负责统一蓝图手册：让 Prompt 语法、资源定价与可演化内核进入同一张 Agent Runtime 蓝图
+- `navigation/36` 的职责应稳定为“源码 atlas 如何进入 Agent Runtime 构建层”，避免 `35` 同时承担目录 atlas 与构建方法两类职责
+- `philosophy/77` 当前应负责把“成熟构建 = 先固定对象、边界、预算与恢复闭环”稳定成新的长期判断
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

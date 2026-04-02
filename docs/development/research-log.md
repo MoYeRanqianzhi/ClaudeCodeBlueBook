@@ -698,6 +698,28 @@
 - `claude-code-source-code/src/tools/ToolSearchTool/ToolSearchTool.ts:21-120`
 - `claude-code-source-code/src/commands/mcp/mcp.tsx:63-85`
 
+### A015. 源码 atlas 层之后，下一层应进入 Agent Runtime 构建层
+
+- 当 `navigation/35 + api/46-48 + philosophy/76` 已经把顶层目录继续拆成二级 atlas 之后，下一步最值钱的不是继续补更多目录树，而是补可迁移的 Agent Runtime 构建层：把对象、协作语法、资源定价、恢复闭环、宿主模板与统一蓝图压成一套 builder-facing 方法。
+- `guides/45` 应把第一性原理构建顺序写清：先固定正式对象，再固定协作语法，再固定资源定价，再固定恢复闭环，最后才让命令、工具、宿主与集成长出来；这样才能把 prompt 魔力、安全设计与恢复设计重新收口到同一套构建方法，而不是停在功能列表。
+- `guides/46` 应把宿主落地模板写清：host 最小闭环必须同时消费 `control_request/control_response/control_cancel_request`、event stream、`worker_status/external_metadata`、`Context Usage` 与 recovery/snapshot；这样才能把安全与省 token 继续固定在正式 host control plane，而不是退回答案流。
+- `guides/47` 应把统一蓝图写清：Prompt 语法、资源定价与可演化内核不是三份并列专题，而是 request object、authority surface、consumer subset、recovery asset 与 dangerous change surface 这同一组设计单位的不同投影；这样才能把源码先进性继续固定在统一蓝图，而不是退回表面模仿。
+- `navigation/36` 因而成为必要入口：`35` 负责知道“二级目录该怎样读”，`36` 负责知道“读完这些目录后怎样真正把它们编译成自己的 Runtime”，避免蓝皮书重新停在 atlas 层。
+- `philosophy/77` 因而成为必要收束：真正成熟的构建，不是复刻功能，而是先固定对象、边界、预算与恢复闭环；没有这层收束，构建指南很快又会退回 feature checklist。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-104`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/services/compact/compact.ts:517-711`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-240`
+- `claude-code-source-code/src/cli/structuredIO.ts:149-657`
+- `claude-code-source-code/src/utils/sessionState.ts:92-133`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1158-1280`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1085-1215`
+
 证据:
 
 - `claude-code-source-code/src/constants/prompts.ts:491-557`
