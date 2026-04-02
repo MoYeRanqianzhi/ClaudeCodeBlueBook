@@ -581,6 +581,24 @@
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00z. artifact validator / linter 之后，下一层应进入 artifact rule ABI 层
+
+- 当 `navigation/29 + guides/39-41` 已经把 Prompt、治理与结构三条线的自动校验、reviewer gate 与 handoff reject 写出来之后，下一步最值钱的不是继续补更多规则说明，而是补 artifact rule ABI：把 hard fail、lint warn、reviewer gate、handoff reject 与 rewrite hint 压成不同消费者共享的 machine-readable rule packet。
+- `api/40` 应把 Prompt 线的 rule ABI 写成 shared object continuity 规则包：先锁 `prompt_object_id`、`compiled_request_diff_ref`、`stable_bytes_ledger_ref`、`lawful_forgetting_abi_ref` 与 `next_step_guard`，再把原文崇拜、绿灯崇拜、总结崇拜与摘要崇拜压成同一拒收语义；这样才能把 Prompt 魔力继续固定在 compiled request continuity，而不是退回文案。
+- `api/41` 应把治理线的 rule ABI 写成 decision gain 规则包：先锁 `governance_object_id`、`decision_window`、`winner_source`、`failure_semantics`、`rollback_object` 与 `next_action`，再把状态色、计数、verdict 与状态摘要压成同一拒收语义；这样才能把安全与省 token 继续固定在“没有决策增益就不该继续”的统一判断。
+- `api/42` 应把结构线的 rule ABI 写成 shared reject semantics 规则包：先锁 `structure_object_id`、`authoritative_path`、`recovery_asset_ledger`、`anti_zombie_evidence`、`danger_paths` 与 `rollback_object`，再把目录图、恢复成功率与作者说明压成同一拒收语义；这样才能把源码先进性继续固定在 authoritative surface 与 anti-zombie 约束，而不是退回结构审美。
+- `navigation/30` 因而成为必要入口：`29` 负责知道“系统该怎样拒绝 drift”，`30` 负责知道“这些拒绝条件怎样被不同消费者共享成同一规则包”，避免蓝皮书重新停在 validator 层而没有 machine-readable rule layer。
+- `philosophy/71` 因而成为必要收束：真正成熟的规则，不是更多检查，而是不同消费者共享同一拒收语义；没有这层收束，rule ABI 很快又会退回到不同团队各自维护的本地 gate。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

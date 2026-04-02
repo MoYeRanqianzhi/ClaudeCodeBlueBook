@@ -361,6 +361,12 @@
 - `guides/41` 当前应负责结构 artifact validator：把 structure object、authoritative path、recovery asset ledger、anti-zombie evidence、danger paths 与 rollback object 压成统一 hard fail 与 reject rule
 - `navigation/29` 的职责应稳定为“artifact drift casebook 层如何进入 artifact validator / linter 层”，避免 `28` 同时承担反例识别与自动校验两类职责
 - `philosophy/70` 当前应负责把“成熟校验 = 共享对象能拒绝漂移”稳定成新的长期判断
+- 当 `navigation/29 + guides/39-41` 稳定后，下一步最值钱的不是继续补更多 validator 叙述，而是补 artifact rule ABI：把 hard fail、lint warn、reviewer gate、handoff reject 与 rewrite hint 压成不同消费者共享的 machine-readable rule packet
+- `api/40` 当前应负责 Prompt artifact rule ABI：把 shared object continuity、stable bytes、lawful forgetting ABI 与 handoff reject 压成统一规则包
+- `api/41` 当前应负责治理 artifact rule ABI：把 decision gain、failure semantics、rollback object、next action 与 object upgrade 压成统一规则包
+- `api/42` 当前应负责结构 artifact rule ABI：把 authoritative path、recovery asset ledger、anti-zombie evidence、danger paths 与 rollback object 压成统一规则包
+- `navigation/30` 的职责应稳定为“artifact validator / linter 层如何进入 artifact rule ABI 层”，避免 `29` 同时承担自动校验与机器可读规则包两类职责
+- `philosophy/71` 当前应负责把“成熟规则 = 不同消费者共享同一拒收语义”稳定成新的长期判断
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

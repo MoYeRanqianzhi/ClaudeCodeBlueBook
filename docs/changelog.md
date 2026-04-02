@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《Artifact Rule ABI导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何共享同一规则包》《Prompt Artifact Rule ABI：Shared Object、Stable Bytes、Lawful Forgetting 与 Reject Semantics 的机器可读结构》《治理 Artifact Rule ABI：Decision Gain、Failure Semantics、Rollback Object 与 Reject 语义的机器可读结构》《结构 Artifact Rule ABI：Authoritative Path、Recovery Asset、Anti-Zombie 与 Reject 语义的机器可读结构》《真正成熟的规则，不是更多检查，而是不同消费者共享同一拒收语义》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“Artifact Validator / Linter 层”继续推进到“Artifact Rule ABI 层”
 - 新增《Artifact Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验》《Prompt Artifact Validator模板：共享对象、稳定字节、合法遗忘与交接拒收》《治理 Artifact Validator模板：决策窗口、仲裁证据、回退对象与行动语义拒收》《结构 Artifact Validator模板：权威路径、恢复资产、anti-zombie 与交接拒收》《真正成熟的校验，不是字段齐全，而是共享对象能拒绝漂移》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“Artifact Drift Casebook 层”继续推进到“Artifact Validator / Linter 层”
 - 新增《Artifact Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相》《Prompt Artifact反例：宿主卡退回原文、CI附件只剩绿灯与交接包回到摘要》《治理 Artifact反例：窗口卡退回状态色、仲裁附件退回计数与交接包失去回退对象》《结构 Artifact反例：权威路径卡退回目录图、恢复附件只剩成功率与交接包回到作者说明》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“Artifact Samplebook 层”继续推进到“Artifact Drift Casebook 层”
 - 新增《Host Artifact样例导航：宿主卡、CI附件、评审卡与交接包的最小共享样例》《Prompt Artifact样例库：宿主卡、CI附件、评审卡与交接包最小填写示例》《治理 Artifact样例库：窗口卡、仲裁附件、评审卡与交接包最小填写示例》《结构 Artifact样例库：权威路径卡、恢复附件、评审卡与交接包最小填写示例》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“Host Artifact Contract 层”继续推进到“Artifact Samplebook 层”
