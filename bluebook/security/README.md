@@ -437,4 +437,6 @@
 - 想把 `113` 的长文压成一张优先级矩阵，快速看出不同 area 的 historical signal、recommended test type 与 priority：`113` -> `appendix/97`
 - 想看为什么即使优先级已经排清，下一步仍不能停留在路线图，而必须直接收口成首批可执行测试套件与 rollout order：`113` -> `114`
 - 想把 `114` 的长文压成一张执行矩阵，快速看出不同 suite 的 first test、minimal assertion 与 rollout order：`114` -> `appendix/98`
+- 想看为什么即使最小验证蓝图已经存在，只要它还没进入 script、目录、tsconfig 与 CI 挂载点，就仍然不是工程制度：`114` -> `115`
+- 想把 `115` 的长文压成一张接口矩阵，快速看出不同 interface 的 current state、missing hook 与 recommended contract：`115` -> `appendix/99`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
