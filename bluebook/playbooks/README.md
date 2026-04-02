@@ -51,6 +51,9 @@
 32. [32-Prompt宿主迁移演练手册：compiled request truth交接包、灰度记录与回退演练](32-Prompt%E5%AE%BF%E4%B8%BB%E8%BF%81%E7%A7%BB%E6%BC%94%E7%BB%83%E6%89%8B%E5%86%8C%EF%BC%9Acompiled%20request%20truth%E4%BA%A4%E6%8E%A5%E5%8C%85%E3%80%81%E7%81%B0%E5%BA%A6%E8%AE%B0%E5%BD%95%E4%B8%8E%E5%9B%9E%E9%80%80%E6%BC%94%E7%BB%83.md)
 33. [33-治理宿主迁移演练手册：统一定价控制面交接包、灰度记录与回退演练](33-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E8%BF%81%E7%A7%BB%E6%BC%94%E7%BB%83%E6%89%8B%E5%86%8C%EF%BC%9A%E7%BB%9F%E4%B8%80%E5%AE%9A%E4%BB%B7%E6%8E%A7%E5%88%B6%E9%9D%A2%E4%BA%A4%E6%8E%A5%E5%8C%85%E3%80%81%E7%81%B0%E5%BA%A6%E8%AE%B0%E5%BD%95%E4%B8%8E%E5%9B%9E%E9%80%80%E6%BC%94%E7%BB%83.md)
 34. [34-故障模型宿主迁移演练手册：结构真相面交接包、灰度记录与回退演练](34-%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E5%AE%BF%E4%B8%BB%E8%BF%81%E7%A7%BB%E6%BC%94%E7%BB%83%E6%89%8B%E5%86%8C%EF%BC%9A%E7%BB%93%E6%9E%84%E7%9C%9F%E7%9B%B8%E9%9D%A2%E4%BA%A4%E6%8E%A5%E5%8C%85%E3%80%81%E7%81%B0%E5%BA%A6%E8%AE%B0%E5%BD%95%E4%B8%8E%E5%9B%9E%E9%80%80%E6%BC%94%E7%BB%83.md)
+35. [35-Prompt宿主验收执行手册：compiled request truth验收卡、拒收顺序与回退剧本](35-Prompt%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Acompiled%20request%20truth%E9%AA%8C%E6%94%B6%E5%8D%A1%E3%80%81%E6%8B%92%E6%94%B6%E9%A1%BA%E5%BA%8F%E4%B8%8E%E5%9B%9E%E9%80%80%E5%89%A7%E6%9C%AC.md)
+36. [36-治理宿主验收执行手册：authority source、permission ledger、decision window、continuation gate与rollback剧本](36-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20source%E3%80%81permission%20ledger%E3%80%81decision%20window%E3%80%81continuation%20gate%E4%B8%8Erollback%E5%89%A7%E6%9C%AC.md)
+37. [37-结构宿主验收执行手册：authority state、resume order、recovery boundary、writeback path与anti-zombie剧本](37-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20state%E3%80%81resume%20order%E3%80%81recovery%20boundary%E3%80%81writeback%20path%E4%B8%8Eanti-zombie%E5%89%A7%E6%9C%AC.md)
 
 ## 按目标阅读
 
@@ -77,6 +80,8 @@
 - 想把刚回灌出来的机制对象继续变成长期运行里的真实回归门禁，而不是停在架构解释层：`../navigation/39 -> 26 -> 27 -> 28`
 - 想把这些 support-surface misuse 继续压成宿主接入排查、演练与拒收顺序，而不是停在反例描述：`../navigation/45 -> 29 -> 30 -> 31`
 - 想把这些宿主迁移工单继续压成交接样例、灰度记录与回退演练，而不是停在实施顺序：`../navigation/47 -> 32 -> 33 -> 34`
+- 想把这些宿主验收协议继续压成值班、CI、评审与交接共享的执行卡、拒收顺序与回退剧本，而不是停在 contract 字段层：`../navigation/51 -> 35 -> 36 -> 37`
+- 想继续看这些宿主验收执行明明已经存在，为什么仍会重新退回表单化绿灯、假拒收与伪回退，而不是误把执行卡当完成证明：`../navigation/52 -> ../casebooks/31 -> ../casebooks/32 -> ../casebooks/33`
 
 ## 与其他目录的边界
 
@@ -99,5 +104,7 @@
 - 再往下一层，应由 `../navigation/39 -> 26-28 -> ../architecture/79-81 -> ../api/49-50` 继续回答“怎样让 compiled request truth、governance object 与 evolvable kernel object boundary 进入持续回归与拒收门禁”。
 - 再往下一层，应由 `../navigation/45 -> 29-31 -> ../api/51-53 -> ../casebooks/25-27` 继续回答“怎样把宿主消费面误用继续压成排查顺序、演练集、拒收条件与复盘动作”。
 - 再往下一层，应由 `../navigation/47 -> 32-34 -> ../guides/54-56` 继续回答“怎样把这些宿主迁移工单继续压成交接样例、灰度记录与回退演练”。
+- 再往下一层，应由 `../navigation/50 -> ../api/54-56 -> ../navigation/51 -> 35-37` 继续回答“怎样把这些宿主验收协议继续压成固定执行卡、拒收顺序与回退处理剧本”。
+- 再往下一层，应由 `../navigation/52 -> ../casebooks/31-33` 继续回答“为什么这些宿主验收执行明明已经存在，仍会重新退回假严格、假拒收与假回退”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。

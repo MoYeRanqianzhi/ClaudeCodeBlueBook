@@ -9,6 +9,61 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主验收纠偏 / acceptance correction guide”继续推进到“宿主修复协议 / repair contract”层。
+- 新增结论：
+  - Prompt 宿主验收执行如果要真正跨宿主、CI、评审与交接共享修复动作，必须继续围绕 repair object、reject escalation、rollback boundary 与 re-entry qualification，而不是继续围绕 reviewer 经验、补字段说明与旧文案回退。
+  - 治理宿主验收执行如果要真正跨消费者共享修复动作，必须继续围绕 authority repair、ledger rebuild、decision window reset、continuation repricing 与 rollback object，而不是继续围绕 mode 调参、审批补救与仪表盘修饰。
+  - 结构宿主验收执行如果要真正跨消费者共享修复动作，必须继续围绕 authority recovery、resume replay order、writeback restoration、anti-zombie verdict 与 boundary reset，而不是继续围绕 pointer 修补、重连碰运气与日志繁荣。
+- 新增目录责任：
+  - `navigation/54` 负责宿主修复协议入口。
+  - `api/57-59` 负责三类宿主验收执行纠偏的修复卡、reject 升级语义与重入规则面。
+- 当前新的写作约束：
+  - 不再只写“该怎么修”，还要写“哪些修复对象必须被宿主正式消费、哪些 escalation level 必须共享、哪些内部修补细节绝不能被绑成公共 ABI”。
+  - 每次继续深化都要回答“当前 repair contract 保护的是单一真相的修复边界，还是只是在把整改经验写成更细的说明书”。
+- 蓝皮书已经从“宿主验收失真 / acceptance distortion casebook”继续推进到“宿主验收纠偏 / acceptance correction guide”层。
+- 新增结论：
+  - Prompt 宿主验收执行如果要真正纠偏，必须先把表单化绿灯降回存在性检查，再把 `compiled request truth`、`protocol transcript`、lawful forgetting object 与 `continue qualification` 重新拉回固定顺序，而不是继续围绕 CI 绿灯、summary handoff 与 last-message heuristic 修补。
+  - 治理宿主验收执行如果要真正纠偏，必须先把 mode 绿灯降回 authority 投影，再把 authority source、permission ledger、decision window、continuation gate 与 rollback object 重新拉回固定顺序，而不是继续围绕 dashboard、审批完成感与默认继续修补。
+  - 结构宿主验收执行如果要真正纠偏，必须先把 breadcrumb、telemetry 与成功率降回辅助信号，再把 authority object、resume order、writeback path 与 anti-zombie projection 重新拉回固定顺序，而不是继续围绕 pointer、日志与监控绿灯修补。
+- 新增目录责任：
+  - `navigation/53` 负责宿主验收纠偏入口。
+  - `guides/60-62` 负责三类宿主验收执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些执行信号在说谎”，还要写“纠偏时先救哪个对象、reject 该怎样升级、模板骨架应如何改写”。
+  - 每次继续深化都要回答“当前纠偏顺序保护的是单一真相，还是只是在修补一个更制度化的替身”。
+- 蓝皮书已经从“宿主验收执行 / acceptance execution”继续推进到“宿主验收失真 / acceptance distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主验收执行如果要真正稳定，必须继续警惕表单化绿灯、假 reject、伪 rollback、CI 绿灯掩盖 protocol truth 与 summary handoff 伪装 lawful forgetting；否则 Prompt 的协议魔力会在执行层直接被表单工艺消解。
+  - 治理宿主验收执行如果要真正稳定，必须继续警惕 mode 绿灯、假窗口对齐、免费继续、mode/file 回退与 later 补写 reject；否则安全设计与省 token 设计会一起退回交互投影。
+  - 结构宿主验收执行如果要真正稳定，必须继续警惕 breadcrumb 篡位、写回繁荣、anti-zombie 口头化、pointer 回退与目录美学崇拜；否则源码先进性会在执行层直接退回监控绿灯与成功率崇拜。
+- 新增目录责任：
+  - `navigation/52` 负责宿主验收失真入口。
+  - `casebooks/31-33` 负责三类宿主验收执行的表单化绿灯、假拒收、伪回退与更高级执行幻觉反例。
+- 当前新的写作约束：
+  - 不再只写“执行卡怎么跑”，还要写“哪些看起来更制度化的绿灯、reject 与 rollback 其实正在重新制造第二真相”。
+  - 每次继续深化都要回答“当前执行失真暴露的是对象级真相正在丢失，还是只是表单、仪表盘、日志与作者说明在变得更丰富”。
+- 蓝皮书已经从“宿主验收协议 / acceptance contract”继续推进到“宿主验收执行 / acceptance execution”层。
+- 新增结论：
+  - Prompt 宿主验收如果要真正落地运行，必须继续围绕 `compiled request truth`、`section registry`、`protocol transcript health`、`lawful forgetting object` 与 `continue qualification` 执行固定验收顺序，而不是继续围绕 prompt 截图、摘要 handoff 与最后一条消息判断。
+  - 治理宿主验收如果要真正落地运行，必须继续围绕 authority source、permission ledger、decision window、continuation gate 与 rollback object 执行固定验收顺序，而不是继续围绕 mode、审批弹窗与 token 仪表盘判断。
+  - 结构宿主验收如果要真正落地运行，必须继续围绕 authority state、resume order、recovery boundary、writeback path 与 anti-zombie projection 执行固定验收顺序，而不是继续围绕 pointer、spinner、成功率与作者口述判断。
+- 新增目录责任：
+  - `navigation/51` 负责宿主验收执行入口。
+  - `playbooks/35-37` 负责三类宿主验收协议的执行卡、拒收顺序与回退剧本。
+- 当前新的写作约束：
+  - 不再只写“该消费哪些 contract 字段”，还要写“现场先看什么、何时直接拒收、回退到底回哪个对象边界”。
+  - 每次继续深化都要回答“当前执行层保护的是单一真相的运行顺序，还是只是在把 contract 重新翻译成更细的表单流程”。
+- 蓝皮书已经从“宿主迁移纠偏 / correction guide”继续推进到“宿主验收协议 / acceptance contract”层。
+- 新增结论：
+  - Prompt 宿主迁移如果要真正验收，必须继续围绕 `compiled request truth`、`section registry`、`protocol transcript health`、`lawful forgetting object` 与 `continue qualification` 的共享规则面，而不是继续围绕截图、摘要与 token 曲线。
+  - 治理宿主迁移如果要真正验收，必须继续围绕 authority source、typed decision、permission ledger、decision window、continuation gate 与 rollback object 的共享规则面，而不是继续围绕 mode、弹窗与仪表盘。
+  - 结构宿主迁移如果要真正验收，必须继续围绕 authority state、resume order、recovery boundary、writeback path 与 anti-zombie projection 的共享规则面，而不是继续围绕 pointer、成功率与恢复口述。
+- 新增目录责任：
+  - `navigation/50` 负责宿主验收协议入口。
+  - `api/54-56` 负责三类宿主迁移纠偏的验收卡、拒收语义与规则面。
+- 当前新的写作约束：
+  - 不再只写“该怎么纠偏”，还要写“宿主、SDK、CI 与交接系统到底该消费哪些对象、字段与 reject reason”。
+  - 每次继续深化都要回答“当前 contract 保护的是单一真相，还是只是在把经验判断改写成更详细的经验判断”。
 - 蓝皮书已经从“宿主迁移失真 / migration distortion casebook”继续推进到“宿主迁移纠偏 / correction guide”层。
 - 新增结论：
   - Prompt 宿主迁移如果要真正纠偏，必须先把截图交接、摘要 handoff、黑箱 cache 曲线与 `stop_reason` 幻觉压回 `compiled request truth`、protocol truth、cache explainability 与 continue qualification。
