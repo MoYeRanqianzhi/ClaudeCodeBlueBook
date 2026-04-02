@@ -1147,6 +1147,7 @@
 - 在 `27-安全对象协议` 之后，再补一个 `appendix/11-安全对象协议速查表` 就很自然了：长文已经把主体、主权、授权、包络、外部能力和交互证明六类对象说清楚，但实现和评审时仍需要一张更短的对象矩阵。把对象族、协议来源、宿主槽位、常见压扁点和最低降级规则压进一页后，安全专题就第一次拥有了可直接用于宿主接入评审和对象保真检查的对象级索引表。 
 - 继续往前推进后，可以更明确地把 `28-显式降级理论` 单独写出来：`27` 已经说明安全控制台必须先有对象协议，但还没有回答“窄宿主是否天然不合格”。`DirectConnectManager.ts` 与 `RemoteSessionManager.ts` 很关键，因为它们都只正式支持 `can_use_tool` 和 `interrupt` 这一类极窄控制面，但会对其他 subtype 显式返回 error；`bridgeMessaging.ts` 则代表更宽但仍非全集的子集宿主。与此相对，真正危险的不是这些显式子集，而是 `sdkMessageAdapter.ts` 这类把对象静默压扁或忽略的路径。因此 `28` 的核心结论是：多宿主、多宽度本身不是安全问题，隐性子集才是安全问题，下一步应把“显式降级”提升成正式宿主语义。 
 - 在 `28-显式降级理论` 之后，再补一个 `appendix/12-宿主降级速查表` 就很自然了：长文已经把 bridge、direct connect、remote session manager 和适配层的差异解释清楚，但实现和评审时仍然需要一张更短的宿主矩阵。把宿主类型、支持子集、显式失败方式和安全风险压进一页后，安全专题就第一次拥有了直接用于宿主分级和降级风险检查的宿主级速查表。 
+- 继续往前推进后，可以更明确地把 `29-宿主资格等级` 单独写出来：`28` 已经解释了为什么显式降级重要，但还没有回答“宿主到底有资格承担哪一层责任”。`StructuredIO.ts` 之所以关键，不在于它接了控制消息，而在于它处理 duplicate / orphan / cancel / resolved tool_use_id 这一整套一致性问题；`RemoteIO.ts` 则更进一步，承担了 restored worker state、internal event read/write、delivery / state / metadata 回写；`remoteBridgeCore.ts` 又把 401 恢复窗口中的动作丢弃和状态回写纪律做实。相比之下，`DirectConnectManager.ts` 与 `RemoteSessionManager.ts` 更像诚实的控制宿主，而 `sdkMessageAdapter.ts` 最多只是投影型观察宿主。因此 `29` 的核心结论是：统一安全控制台不该再只区分“完整/不完整宿主”，而应正式区分观察宿主、控制宿主与证明宿主。 
 
 ## 下一步待办
 
