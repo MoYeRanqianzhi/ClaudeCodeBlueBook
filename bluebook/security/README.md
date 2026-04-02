@@ -137,6 +137,7 @@
 - 想直接看不同 trace 到底需要什么 minimum clearer、哪类证据才过门槛、何时允许 auto-clear：看 `appendix/42`
 - 想直接看为什么提示消失、卡片转绿与摘要收缩都不等于正式 trace 已被清除：看 `59`
 - 想直接看 surface hider、projection owner、trace writer 与 explanation closer 四层到底分别能做什么、不能做什么：看 `appendix/43`
+- 想直接看为什么 hidden、suppressed、cleared 与 resolved 必须严格区分，不能继续共用一句“没事了”：看 `60`
 
 ## 和其他目录的关系
 
@@ -228,4 +229,5 @@
 - 想把 `58` 的长文压成一张清理门槛矩阵，快速看出不同 trace 的 minimum clearer、threshold evidence 与 auto-clear 许可：`58` -> `appendix/42`
 - 想看为什么痕迹在界面上消失并不等于它已被正式删除，以及 why notification layer、BridgeDialog、`/status` 与 authoritative trace writer 是四个不同层次：`58` -> `59`
 - 想把 `59` 的长文压成一张分层矩阵，快速看出 surface hider、projection owner、trace writer 与 explanation closer 各自的权限边界：`59` -> `appendix/43`
+- 想看为什么恢复控制面还必须继续把 hidden、suppressed、cleared、resolved 做成不同词法，而不能把不同责任层状态压成同一句“已恢复”：`59` -> `60`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
