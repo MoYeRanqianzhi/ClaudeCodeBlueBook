@@ -2144,6 +2144,25 @@
 - 已补风控专题 `59-资产保全与退出策略：账号风控窗口里真正该保护的不是面子而是工作连续性`，把用户利益保护进一步压缩成 transcript、日志、录屏和 worktree 资产保全逻辑
 - 已补风控专题 `60-结构化求助模板库：用户、管理员与平台支持的最短高质量文本`，把状态面和分流逻辑转化成可直接复制的高质量求助文本
 - 已补风控专题 `61-中国用户使用生态与认识论边界：官方路径、中转站与幕后叙事该如何判断`，把官方门槛、AnyRouter 这类中转站、以及 AnyRouter/智谱 关系的证据边界明确分层
+- Anthropic 官方 settings 文档进一步确认了用户、项目、本地、managed 四层设置作用域；其中 `.claude/settings.local.json` 是 gitignored 的个人项目覆盖层，而 `cleanupPeriodDays` 默认 30 天、设为 `0` 会禁用会话持久性并让 `/resume` 失效，这对退出策略和本地证据保全非常关键。
+- Anthropic 官方 data usage / monitoring 文档进一步确认：Statsig、Sentry、`/bug`、会话质量调查都存在显式开关；同时 OTel 可以导出 `session.id`、`organization.id`、`user.account_uuid` 和 `claude_code.cost.usage` 等指标，说明用户的隐私最小化与支持可解释性之间确实存在张力。
+- Anthropic 官方 costs 文档进一步确认了 `/cost`、团队成本管理与正式支持路径的重要性；从用户利益保护角度看，一个缺少标准化成本面和正式支持面的中转入口，应被视为更高的沉没成本风险源，而不是单纯“更便宜”。
+- 源码进一步确认 `ANTHROPIC_BASE_URL` 依赖不仅存在于 env，还会进入 settings / worktree 传播面；`worktree.ts` 会复制 `settings.local.json`，这意味着中转站依赖一旦写入 local settings，可能沿 worktree 扩散，退出时必须做本地配置清点，而不能只删一个 shell 变量。
+- 已补风控专题 `62-中国用户利益保护与中转站退出策略：把接入便利转化为可控退出权`，把本地资产主权、成本止损、worktree 配置扩散、组织监控证据和 staged exit 收束成单独一章
+- 截至 2026 年 4 月 2 日再次核对 Anthropic 官方 supported countries 与 setup / llm gateway 文档后可以更明确地写：对中国用户而言，Claude Code 的困难不是单一网络问题，而是地区边界、资格边界、在线运行时边界和支持边界的叠加；而 gateway / proxy 作为架构形态本身是被官方文档承认的，但这不等于对任何具体 relay 背书。
+- 截至 2026 年 4 月 2 日核对 AnyRouter 公开文档与 WHOIS 后可以更明确地写：AnyRouter 公开卖点确实集中在“国内直连、免费额度、无需信用卡、Claude Code 兼容”，说明它卖的是低摩擦接入权；但公开资料仍不足以把 AnyRouter 与智谱关系写成已证事实。
+- 截至 2026 年 4 月 2 日核对智谱官方 Claude Code 文档与更新页后可以更明确地写：智谱已经公开把 Claude Code 作为目标宿主来争夺，直接提供 `ANTHROPIC_BASE_URL` / `ANTHROPIC_AUTH_TOKEN` 配置、Claude 到 GLM 的模型映射与面向 Claude Code 的价格叙事；这说明国内厂商的战略重点已经从单纯“模型替代”前移到“工作流入口竞争”。
+- 源码进一步确认这种入口竞争在技术上确实可行但不等于官方等价：`providers.ts` 区分 first-party 与第三方 host，`toolSearch.ts` 明确提示很多 `ANTHROPIC_BASE_URL` 代理不支持 `tool_reference`，`auth.ts` 对第一方账号信息有单独语义，说明兼容入口更准确的产品定义是“部分等价的工作流接入层”而不是“完整官方替身”。
+- 已补风控专题 `63-中国用户为什么在买入口而不是买模型：Claude Code 的地区摩擦、兼容层补贴与工作流争夺`，把中国用户困难、AnyRouter 这类中转站、智谱公开 Claude-compatible 战略、以及补贴兼容入口背后的入口争夺哲学压成独立一章
+- 继续加深第 `63` 章后，可以更稳地把两个技术结论写实：AnyRouter FAQ 已经说明 relay 只能重写部分外部依赖，不能自动抹平 Google 连通性和网页 Fetch 等前置条件；`bridgeEnabled.ts` 又进一步证明 gateway deployment 与 claude.ai OAuth entitlement 不等价，因此“兼容入口”最准确的定义是“接入层与工作流层的部分替身”，不是完整第一方等价物。
+- 进一步把这一板块收尾后，可以更清楚地把“等价”拆成四层：传输层、认证层、资格层、治理层。源码已经足够支持这一点：`apiPreconnect.ts` / `filesApi.ts` / `providers.ts` 证明上游可配置是正式现实，但 `auth.ts`、`bridgeEnabled.ts`、`toolSearch.ts` 又证明第一方身份、高阶 entitlement 与 beta 能力并不会因为兼容入口存在而自动等价。
+- `worktree.ts` 对 `settings.local.json` 的复制进一步说明，入口选择不是一次性临时变量，而会沉淀成 worktree 扩散面与退出成本。因此“官方直连、官方云厂商路径、第三方 gateway、国内 Claude-compatible 入口”最合适的比较框架，不是谁更像，而是谁替代了哪一层语义、又把哪一层责任重新转嫁给用户。
+- 已补风控专题 `64-官方路径、云厂商路径与兼容入口的能力语义差清单：哪些只是能跑，哪些更接近等价`，作为 `61-64` 这一组“中国用户 / 中转生态 / 退出权 / 入口竞争”板块的细致收尾。
+- 开始新开 `bluebook/security/` 子目录后，可以更明确地把 Claude Code 的安全性与风控拆开：风控更关心资格、撤权与误伤，安全更关心 trust、permission mode、managed env、外部能力收口与远程 entitlement 的运行时边界。
+- 第一批安全专题已经落地 `security/00` 与 `security/01`：`managedEnv.ts` 说明 trust 前只允许受信来源的 env 先进入运行时，防止项目目录借 `ANTHROPIC_BASE_URL` 等变量污染宿主；`setup.ts` 说明 bypassPermissions 不是随手可开的快捷模式，而要求 sandbox / no-internet 等额外外部边界；`dangerousPatterns.ts` 与 `permissionSetup.ts` 则说明系统真正警惕的是“危险 allow rule 绕过仲裁层”，而不是能力本身存在。
+- 第二批安全专题继续压实后，可以更系统地写出四条工程判断：`pathValidation.ts` 把 safety check 放在 working-dir 自动允许之前，说明安全优先于目录便利；`auth.ts` 与 `managedEnv.ts` 共同说明认证来源与配置来源都被分层治理，真正危险的是运行时语义被污染；`WebFetchTool/preapproved.ts` 把预批准 GET 域名和 sandbox 网络权限刻意分离，说明读取语义与写入语义被分别治理；`hooksConfigSnapshot.ts` 则说明 hooks 的核心问题不是脚本本身，而是谁拥有插入执行点的主权。
+- `secureStorage/*` 还显示出另一条成熟设计：系统先争取 OS keychain 这类更安全介质，再在必要时降级到 plaintext，并显式告知风险；同时 `fallbackStorage.ts` 还处理了旧凭证遮蔽新凭证这一类真实运行时故障，说明它的安全设计不是抽象口号，而是具体到凭证新旧、缓存和回退顺序的工程治理。
+- 最后一轮收尾后，`security/06` 已经把这组专题重新压成六条最小公理：来源先于值、仲裁先于放行、外部世界不是默认可信上下文、高阶资格不等于传输层连通、高风险便利必须由更强边界补偿、安全设计必须可解释。这样一来，`bluebook/security/` 已经形成了从方法论、机制、哲学到第一性原理反思的完整独立板块。
 
 ### R. 能力全集必须和公开度 / 成熟度一起叙述
 
