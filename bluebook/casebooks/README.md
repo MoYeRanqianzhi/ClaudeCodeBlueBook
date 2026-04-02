@@ -112,5 +112,6 @@
 - 再往下一层，应由 `../navigation/61 -> ../guides/66-68` 继续回答“怎样把这些 closeout execution 失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
 - `casebooks/40-42` 继续回答“宿主修复监护执行明明已经存在，为什么仍会重新退回假观察、假冻结、免费重开、pointer 健康感、dashboard 崇拜与作者记忆等更高级监护幻觉”。
 - 再往下一层，应由 `../navigation/64 -> ../casebooks/40-42` 继续回答“这些 watch execution 最常怎样死于看起来已经在认真观察的假监护、假冻结与假重开”。
+- 再往下一层，应由 `../navigation/65 -> ../guides/69-71` 继续回答“怎样把这些 watch execution 失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
 - 再往下一层，应由 `../navigation/29 -> ../guides/39-41` 继续回答“怎样把这些 drift 原型编译成 validator / linter / reject rule”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。
