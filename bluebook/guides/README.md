@@ -12,6 +12,15 @@
 6. [06-第一性原理实践：目标、预算、对象、边界与回写](06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E5%AE%9E%E8%B7%B5%EF%BC%9A%E7%9B%AE%E6%A0%87%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E8%BE%B9%E7%95%8C%E4%B8%8E%E5%9B%9E%E5%86%99.md)
 7. [07-用Context Usage与状态回写调优Prompt和预算](07-%E7%94%A8Context%20Usage%E4%B8%8E%E7%8A%B6%E6%80%81%E5%9B%9E%E5%86%99%E8%B0%83%E4%BC%98Prompt%E5%92%8C%E9%A2%84%E7%AE%97.md)
 8. [08-如何根据预算、阻塞与风险选择session、task、worktree与compact](08-%E5%A6%82%E4%BD%95%E6%A0%B9%E6%8D%AE%E9%A2%84%E7%AE%97%E3%80%81%E9%98%BB%E5%A1%9E%E4%B8%8E%E9%A3%8E%E9%99%A9%E9%80%89%E6%8B%A9session%E3%80%81task%E3%80%81worktree%E4%B8%8Ecompact.md)
+9. [09-如何降低人类-模型协调成本：Sticky Prompt、Suggestion、Session Memory与接手连续性](09-%E5%A6%82%E4%BD%95%E9%99%8D%E4%BD%8E%E4%BA%BA%E7%B1%BB-%E6%A8%A1%E5%9E%8B%E5%8D%8F%E8%B0%83%E6%88%90%E6%9C%AC%EF%BC%9ASticky%20Prompt%E3%80%81Suggestion%E3%80%81Session%20Memory%E4%B8%8E%E6%8E%A5%E6%89%8B%E8%BF%9E%E7%BB%AD%E6%80%A7.md)
+10. [10-如何在约束中保持高行动力：permission mode、反馈式审批与渐进能力暴露](10-%E5%A6%82%E4%BD%95%E5%9C%A8%E7%BA%A6%E6%9D%9F%E4%B8%AD%E4%BF%9D%E6%8C%81%E9%AB%98%E8%A1%8C%E5%8A%A8%E5%8A%9B%EF%BC%9Apermission%20mode%E3%80%81%E5%8F%8D%E9%A6%88%E5%BC%8F%E5%AE%A1%E6%89%B9%E4%B8%8E%E6%B8%90%E8%BF%9B%E8%83%BD%E5%8A%9B%E6%9A%B4%E9%9C%B2.md)
+11. [11-给Agent平台构建者：如何把源码写成治理界面并保留重构余量](11-%E7%BB%99Agent%E5%B9%B3%E5%8F%B0%E6%9E%84%E5%BB%BA%E8%80%85%EF%BC%9A%E5%A6%82%E4%BD%95%E6%8A%8A%E6%BA%90%E7%A0%81%E5%86%99%E6%88%90%E6%B2%BB%E7%90%86%E7%95%8C%E9%9D%A2%E5%B9%B6%E4%BF%9D%E7%95%99%E9%87%8D%E6%9E%84%E4%BD%99%E9%87%8F.md)
+12. [12-如何把Prompt当成人机协作接口：固定主语、反馈纠偏与低成本接手](12-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%BD%93%E6%88%90%E4%BA%BA%E6%9C%BA%E5%8D%8F%E4%BD%9C%E6%8E%A5%E5%8F%A3%EF%BC%9A%E5%9B%BA%E5%AE%9A%E4%B8%BB%E8%AF%AD%E3%80%81%E5%8F%8D%E9%A6%88%E7%BA%A0%E5%81%8F%E4%B8%8E%E4%BD%8E%E6%88%90%E6%9C%AC%E6%8E%A5%E6%89%8B.md)
+13. [13-如何在秩序中释放有效自由：mode选择、审批协商与能力按需出现](13-%E5%A6%82%E4%BD%95%E5%9C%A8%E7%A7%A9%E5%BA%8F%E4%B8%AD%E9%87%8A%E6%94%BE%E6%9C%89%E6%95%88%E8%87%AA%E7%94%B1%EF%BC%9Amode%E9%80%89%E6%8B%A9%E3%80%81%E5%AE%A1%E6%89%B9%E5%8D%8F%E5%95%86%E4%B8%8E%E8%83%BD%E5%8A%9B%E6%8C%89%E9%9C%80%E5%87%BA%E7%8E%B0.md)
+14. [14-如何为未来维护者设计Agent Runtime：注释、命名、leaf module与重构余量](14-%E5%A6%82%E4%BD%95%E4%B8%BA%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9A%E6%B3%A8%E9%87%8A%E3%80%81%E5%91%BD%E5%90%8D%E3%80%81leaf%20module%E4%B8%8E%E9%87%8D%E6%9E%84%E4%BD%99%E9%87%8F.md)
+15. [15-如何把UI真相翻译成Protocol真相：transcript重写、边界补写与恢复不变量](15-%E5%A6%82%E4%BD%95%E6%8A%8AUI%E7%9C%9F%E7%9B%B8%E7%BF%BB%E8%AF%91%E6%88%90Protocol%E7%9C%9F%E7%9B%B8%EF%BC%9Atranscript%E9%87%8D%E5%86%99%E3%80%81%E8%BE%B9%E7%95%8C%E8%A1%A5%E5%86%99%E4%B8%8E%E6%81%A2%E5%A4%8D%E4%B8%8D%E5%8F%98%E9%87%8F.md)
+16. [16-如何用资源定价设计Agent Runtime：mode、visibility、externalization与continuation](16-%E5%A6%82%E4%BD%95%E7%94%A8%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BB%B7%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9Amode%E3%80%81visibility%E3%80%81externalization%E4%B8%8Econtinuation.md)
+17. [17-如何把未来维护者当正式消费者：风险命名、制度注释、seam与状态机](17-%E5%A6%82%E4%BD%95%E6%8A%8A%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E5%BD%93%E6%AD%A3%E5%BC%8F%E6%B6%88%E8%B4%B9%E8%80%85%EF%BC%9A%E9%A3%8E%E9%99%A9%E5%91%BD%E5%90%8D%E3%80%81%E5%88%B6%E5%BA%A6%E6%B3%A8%E9%87%8A%E3%80%81seam%E4%B8%8E%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 
 ## 按使用目标阅读
 
@@ -25,6 +34,15 @@
 - 想把复杂任务压缩成一套可执行方法：`01 -> 06 -> ../architecture/36 -> ../architecture/37`
 - 想真正调优 prompt 和预算，而不是凭感觉乱改：`06 -> 07 -> ../api/32 -> ../architecture/37`
 - 想知道什么时候该 compact、什么时候该升级成 task / session / worktree：`06 -> 07 -> 08 -> ../architecture/45`
+- 想降低长任务里的人类-模型协调成本，而不是只会继续聊：`06 -> 08 -> 09 -> ../architecture/67 -> ../philosophy/54`
+- 想在约束下保持高行动力，而不是靠放大权限硬冲：`06 -> 07 -> 10 -> ../architecture/68 -> ../philosophy/55`
+- 想从 Claude Code 反推自己的 Agent 平台实现方法：`06 -> 11 -> ../architecture/66 -> ../architecture/69 -> ../philosophy/56`
+- 想把 prompt 当成人机协作接口，而不是继续把它写成一次性长文案：`09 -> 12 -> ../architecture/64 -> ../architecture/67 -> ../philosophy/54`
+- 想在秩序里释放有效自由，而不是一路提权：`10 -> 13 -> ../architecture/62 -> ../architecture/68 -> ../philosophy/55`
+- 想给未来维护者留下可接手的 runtime，而不是只做当前功能：`11 -> 14 -> ../architecture/66 -> ../architecture/69 -> ../philosophy/56`
+- 想知道 UI 真相怎样被翻译成 protocol 真相，而不是继续把显示层误当执行层：`12 -> 15 -> ../architecture/54 -> ../philosophy/57`
+- 想把权限、可见性、结果外置和 continuation 写成一套统一定价秩序：`13 -> 16 -> ../architecture/56 -> ../architecture/65 -> ../philosophy/58`
+- 想把未来维护者也当正式消费者，而不是把工程制度留在团队口头记忆里：`14 -> 17 -> ../architecture/69 -> ../philosophy/59`
 
 ## 与其他目录的边界
 

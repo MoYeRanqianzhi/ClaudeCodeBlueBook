@@ -56,6 +56,15 @@
 - 想把复杂任务压缩成稳定方法，再读 [guides/06-第一性原理实践：目标、预算、对象、边界与回写](guides/06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E5%AE%9E%E8%B7%B5%EF%BC%9A%E7%9B%AE%E6%A0%87%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E8%BE%B9%E7%95%8C%E4%B8%8E%E5%9B%9E%E5%86%99.md)
 - 想先观测预算再调 prompt / tools / memory，再读 [guides/07-用Context Usage与状态回写调优Prompt和预算](guides/07-%E7%94%A8Context%20Usage%E4%B8%8E%E7%8A%B6%E6%80%81%E5%9B%9E%E5%86%99%E8%B0%83%E4%BC%98Prompt%E5%92%8C%E9%A2%84%E7%AE%97.md)
 - 想知道什么时候该继续当前 session、什么时候该升级成 task / worktree / compact，再读 [guides/08-如何根据预算、阻塞与风险选择session、task、worktree与compact](guides/08-%E5%A6%82%E4%BD%95%E6%A0%B9%E6%8D%AE%E9%A2%84%E7%AE%97%E3%80%81%E9%98%BB%E5%A1%9E%E4%B8%8E%E9%A3%8E%E9%99%A9%E9%80%89%E6%8B%A9session%E3%80%81task%E3%80%81worktree%E4%B8%8Ecompact.md)
+- 想降低长任务里的人类-模型协调成本，再读 [guides/09-如何降低人类-模型协调成本：Sticky Prompt、Suggestion、Session Memory与接手连续性](guides/09-%E5%A6%82%E4%BD%95%E9%99%8D%E4%BD%8E%E4%BA%BA%E7%B1%BB-%E6%A8%A1%E5%9E%8B%E5%8D%8F%E8%B0%83%E6%88%90%E6%9C%AC%EF%BC%9ASticky%20Prompt%E3%80%81Suggestion%E3%80%81Session%20Memory%E4%B8%8E%E6%8E%A5%E6%89%8B%E8%BF%9E%E7%BB%AD%E6%80%A7.md)
+- 想在约束里保持高行动力，而不是靠放大权限硬冲，再读 [guides/10-如何在约束中保持高行动力：permission mode、反馈式审批与渐进能力暴露](guides/10-%E5%A6%82%E4%BD%95%E5%9C%A8%E7%BA%A6%E6%9D%9F%E4%B8%AD%E4%BF%9D%E6%8C%81%E9%AB%98%E8%A1%8C%E5%8A%A8%E5%8A%9B%EF%BC%9Apermission%20mode%E3%80%81%E5%8F%8D%E9%A6%88%E5%BC%8F%E5%AE%A1%E6%89%B9%E4%B8%8E%E6%B8%90%E8%BF%9B%E8%83%BD%E5%8A%9B%E6%9A%B4%E9%9C%B2.md)
+- 想把 Claude Code 的源码方法迁移到自己的 Agent 平台，再读 [guides/11-给Agent平台构建者：如何把源码写成治理界面并保留重构余量](guides/11-%E7%BB%99Agent%E5%B9%B3%E5%8F%B0%E6%9E%84%E5%BB%BA%E8%80%85%EF%BC%9A%E5%A6%82%E4%BD%95%E6%8A%8A%E6%BA%90%E7%A0%81%E5%86%99%E6%88%90%E6%B2%BB%E7%90%86%E7%95%8C%E9%9D%A2%E5%B9%B6%E4%BF%9D%E7%95%99%E9%87%8D%E6%9E%84%E4%BD%99%E9%87%8F.md)
+- 想把 prompt 当成人机协作接口，而不是继续堆长文案，再读 [guides/12-如何把Prompt当成人机协作接口：固定主语、反馈纠偏与低成本接手](guides/12-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%BD%93%E6%88%90%E4%BA%BA%E6%9C%BA%E5%8D%8F%E4%BD%9C%E6%8E%A5%E5%8F%A3%EF%BC%9A%E5%9B%BA%E5%AE%9A%E4%B8%BB%E8%AF%AD%E3%80%81%E5%8F%8D%E9%A6%88%E7%BA%A0%E5%81%8F%E4%B8%8E%E4%BD%8E%E6%88%90%E6%9C%AC%E6%8E%A5%E6%89%8B.md)
+- 想在秩序里释放有效自由，而不是把提权当成唯一解，再读 [guides/13-如何在秩序中释放有效自由：mode选择、审批协商与能力按需出现](guides/13-%E5%A6%82%E4%BD%95%E5%9C%A8%E7%A7%A9%E5%BA%8F%E4%B8%AD%E9%87%8A%E6%94%BE%E6%9C%89%E6%95%88%E8%87%AA%E7%94%B1%EF%BC%9Amode%E9%80%89%E6%8B%A9%E3%80%81%E5%AE%A1%E6%89%B9%E5%8D%8F%E5%95%86%E4%B8%8E%E8%83%BD%E5%8A%9B%E6%8C%89%E9%9C%80%E5%87%BA%E7%8E%B0.md)
+- 想给未来维护者设计可治理的 runtime，而不是只把功能堆出来，再读 [guides/14-如何为未来维护者设计Agent Runtime：注释、命名、leaf module与重构余量](guides/14-%E5%A6%82%E4%BD%95%E4%B8%BA%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9A%E6%B3%A8%E9%87%8A%E3%80%81%E5%91%BD%E5%90%8D%E3%80%81leaf%20module%E4%B8%8E%E9%87%8D%E6%9E%84%E4%BD%99%E9%87%8F.md)
+- 想把 UI 真相翻译成 protocol 真相，而不是继续把显示层误当执行层，再读 [guides/15-如何把UI真相翻译成Protocol真相：transcript重写、边界补写与恢复不变量](guides/15-%E5%A6%82%E4%BD%95%E6%8A%8AUI%E7%9C%9F%E7%9B%B8%E7%BF%BB%E8%AF%91%E6%88%90Protocol%E7%9C%9F%E7%9B%B8%EF%BC%9Atranscript%E9%87%8D%E5%86%99%E3%80%81%E8%BE%B9%E7%95%8C%E8%A1%A5%E5%86%99%E4%B8%8E%E6%81%A2%E5%A4%8D%E4%B8%8D%E5%8F%98%E9%87%8F.md)
+- 想把安全、可见性和 continuation 写成统一资源定价秩序，再读 [guides/16-如何用资源定价设计Agent Runtime：mode、visibility、externalization与continuation](guides/16-%E5%A6%82%E4%BD%95%E7%94%A8%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BB%B7%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9Amode%E3%80%81visibility%E3%80%81externalization%E4%B8%8Econtinuation.md)
+- 想把未来维护者当成正式消费者，而不是把工程制度留在口头传承里，再读 [guides/17-如何把未来维护者当正式消费者：风险命名、制度注释、seam与状态机](guides/17-%E5%A6%82%E4%BD%95%E6%8A%8A%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E5%BD%93%E6%AD%A3%E5%BC%8F%E6%B6%88%E8%B4%B9%E8%80%85%EF%BC%9A%E9%A3%8E%E9%99%A9%E5%91%BD%E5%90%8D%E3%80%81%E5%88%B6%E5%BA%A6%E6%B3%A8%E9%87%8A%E3%80%81seam%E4%B8%8E%E7%8A%B6%E6%80%81%E6%9C%BA.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -69,19 +78,19 @@
 
 - 先读 `06 -> 07`
 - 再读 `api/18 -> api/21 -> architecture/18 -> architecture/28 -> architecture/29 -> architecture/31 -> architecture/36`
-- 哲学收束看 `philosophy/14 -> philosophy/18 -> philosophy/19 -> philosophy/21 -> philosophy/22`
+- 哲学收束看 `philosophy/14 -> philosophy/18 -> philosophy/19 -> philosophy/21 -> philosophy/22 -> philosophy/54 -> philosophy/57`
 
 ### 5. 想研究安全、风控与治理
 
 - 产品内安全先读 `architecture/05 -> architecture/11 -> architecture/19 -> architecture/32 -> architecture/37 -> architecture/50 -> architecture/51`
-- 哲学收束看 `philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/27 -> philosophy/31 -> philosophy/37 -> philosophy/38`
+- 哲学收束看 `philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/27 -> philosophy/31 -> philosophy/37 -> philosophy/38 -> philosophy/55 -> philosophy/58`
 - 平台风控与账号治理读 [risk/README](risk/README.md)
 
 ### 6. 想研究源码结构与工程先进性
 
 - 先读 `01 -> 03 -> 05`
 - 再读 `api/30 -> api/34 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38 -> architecture/40 -> architecture/41 -> architecture/44 -> architecture/47 -> architecture/52`
-- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/17 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29 -> philosophy/32 -> philosophy/34 -> philosophy/39`
+- 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/17 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29 -> philosophy/32 -> philosophy/34 -> philosophy/39 -> philosophy/56 -> philosophy/59`
 
 ## 按专题链速查
 
@@ -150,7 +159,7 @@
 
 ### 为什么 prompt 看起来有魔力
 
-- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> architecture/46 -> architecture/53 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30 -> philosophy/33 -> philosophy/38 -> philosophy/39 -> philosophy/40`
+- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> architecture/46 -> architecture/53 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30 -> philosophy/33 -> philosophy/38 -> philosophy/39 -> philosophy/40 -> philosophy/57`
 
 ### 为什么它不像普通 IDE 插件
 
@@ -166,7 +175,7 @@
 
 ### 为什么安全和 token 经济要一起看
 
-- `03 -> architecture/19 -> architecture/21 -> architecture/32 -> architecture/37 -> architecture/50 -> architecture/51 -> philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/37 -> philosophy/38`
+- `03 -> architecture/19 -> architecture/21 -> architecture/32 -> architecture/37 -> architecture/50 -> architecture/51 -> philosophy/03 -> philosophy/19 -> philosophy/22 -> philosophy/37 -> philosophy/38 -> philosophy/58`
 
 ### 为什么安全不是事后检查而是输入边界控制平面
 
@@ -187,6 +196,10 @@
 ### 为什么模型看到的 transcript 不等于界面上看到的 transcript
 
 - `architecture/53 -> architecture/54 -> philosophy/26 -> philosophy/30 -> philosophy/41`
+
+### 为什么 UI 历史必须在 API 边界前被重新编译
+
+- `architecture/54 -> architecture/70 -> philosophy/57`
 
 ### 为什么 Claude Code 偏爱渐进暴露，而不是全量声明
 
@@ -210,7 +223,7 @@
 
 ### 为什么高级工程不在功能数量，而在不变量治理
 
-- `01 -> api/30 -> architecture/20 -> architecture/40 -> architecture/41 -> architecture/47 -> architecture/52 -> philosophy/23 -> philosophy/29 -> philosophy/39`
+- `01 -> api/30 -> architecture/20 -> architecture/40 -> architecture/41 -> architecture/47 -> architecture/52 -> philosophy/23 -> philosophy/29 -> philosophy/39 -> philosophy/59`
 
 ### 为什么 `query.ts`、`REPL.tsx` 很大，却不等于架构失控
 
@@ -228,6 +241,7 @@
 
 - 先读 [navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理](navigation/03-%E6%B7%B1%E5%BA%A6%E4%B8%93%E9%A2%98%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E5%BA%95%E7%9B%98%E4%B8%8E%E6%B2%BB%E7%90%86.md)
 - 想直接看高阶设计母线，再读 [navigation/05-设计母线导航：工作语法、反扩张与可演化内核](navigation/05-%E8%AE%BE%E8%AE%A1%E6%AF%8D%E7%BA%BF%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%B7%A5%E4%BD%9C%E8%AF%AD%E6%B3%95%E3%80%81%E5%8F%8D%E6%89%A9%E5%BC%A0%E4%B8%8E%E5%8F%AF%E6%BC%94%E5%8C%96%E5%86%85%E6%A0%B8.md)
+- 想直接看最新终局判断，再读 [navigation/06-终局判断导航：协作语法、资源定价与未来维护者消费者](navigation/06-%E7%BB%88%E5%B1%80%E5%88%A4%E6%96%AD%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%8D%8F%E4%BD%9C%E8%AF%AD%E6%B3%95%E3%80%81%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BB%B7%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
@@ -246,6 +260,10 @@
 
 - `architecture/39 -> architecture/53 -> architecture/54 -> architecture/61 -> philosophy/39 -> philosophy/48`
 
+### 为什么 prompt 的魔力不在措辞，而在协作语法
+
+- `navigation/06 -> architecture/54 -> architecture/61 -> architecture/67 -> philosophy/54 -> philosophy/57`
+
 ### 为什么真正强的Prompt不是信息更多，而是行动语义更密
 
 - `architecture/61 -> architecture/64 -> philosophy/48 -> philosophy/51`
@@ -258,6 +276,14 @@
 
 - `architecture/62 -> architecture/65 -> philosophy/49 -> philosophy/52`
 
+### 为什么真正的安全不是拦截动作，而是资源定价
+
+- `navigation/06 -> architecture/50 -> architecture/56 -> architecture/65 -> philosophy/55 -> philosophy/58`
+
+### 为什么高行动力来自统一定价而不是统一放权
+
+- `architecture/50 -> architecture/56 -> architecture/68 -> architecture/71 -> philosophy/58`
+
 ### 为什么 Claude Code 值得学的是“可演化内核”
 
 - `architecture/41 -> architecture/52 -> architecture/58 -> architecture/63 -> philosophy/45 -> philosophy/50`
@@ -265,6 +291,22 @@
 ### 为什么好架构不是更会重构，而是始终保留重构可能性
 
 - `architecture/63 -> architecture/66 -> philosophy/50 -> philosophy/53`
+
+### 为什么好的Prompt同时组织模型与人类接手路径
+
+- `guides/09 -> guides/12 -> architecture/64 -> architecture/67 -> philosophy/51 -> philosophy/54 -> philosophy/57`
+
+### 为什么真正的自由不是少约束，而是约束不再破坏行动
+
+- `guides/10 -> guides/13 -> architecture/62 -> architecture/68 -> philosophy/52 -> philosophy/55 -> philosophy/58`
+
+### 为什么可读性不是修辞，而是系统治理能力
+
+- `guides/11 -> guides/14 -> architecture/66 -> architecture/69 -> philosophy/53 -> philosophy/56 -> philosophy/59`
+
+### 为什么未来维护者也是正式消费者
+
+- `navigation/06 -> architecture/41 -> architecture/66 -> architecture/69 -> philosophy/56 -> philosophy/59`
 
 ### 为什么调优上下文前必须先看预算结构
 

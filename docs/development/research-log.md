@@ -9,6 +9,72 @@
 
 ## 已确认结论
 
+### A00. 协作语法、资源定价与未来维护者消费者
+
+- Claude Code 的 prompt 魔力更准确地说来自“先规定协作语法，再让模型发言”：system prompt 先决定谁代表谁发言，stop hooks 又把 cache-safe 协作上下文存下供 suggestion、session memory 与旁路 fork 复用，说明 prompt 的真正形态是跨当前、下一步和接手后的协作状态，而不是一次性文案。
+- UI transcript 与 protocol transcript 必须分离：显示层需要 progress、虚拟消息和交互提示，执行层需要结构合法、可继续推理的协议消息；compact / resume 之后还要补回 tool_use/tool_result 与 thinking 不变量，说明模型消费的从来不是前台原样历史。
+- sticky prompt、suggestion、session memory 应被理解成同一协作接口在不同时间尺度上的投影：sticky 管当前主语，suggestion 管下一步输入，session memory 管压缩后的长期接手连续性。
+- Claude Code 的安全不是单点拦截器，而是资源定价秩序：mode 在给动作定价，tool visibility 在给能力定价，externalization 在给上下文席位定价，token continuation 在给时间定价。
+- `bypassPermissions` 不是无限自由，而是提高某些动作的通行级别；content-specific ask、`requiresUserInteraction` 与 safety check 等更高价格仍然存在，说明系统追求的是有效自由而不是最大裸露面。
+- 审批在实现上是多路协商协议而不是单个弹窗：本地 UI、SDK host、bridge、hook、channel relay、classifier 围绕同一请求并行竞速，谁先给出合法决定，谁就结束等待。
+- 源码先进性不在静态分层本身，而在未来维护者被当成正式消费者：`DANGEROUS`、`single choke point`、`IMPORTANT` 这类命名和注释都在提前暴露未来修改的代价与条件。
+- 命名、注释、leaf module、config / deps seam、snapshot、state machine 共同构成同一治理制度：用显式边界保护未来维护与未来重构，而不是只服务当前执行。
+
+补充目录判断：
+
+- 57-59 已经形成一组终局判断，继续仅靠 `philosophy/README` 与 `navigation/05` 暴露不够直接，应单独提供终局判断导航，避免读者知道结论存在，却不知道该从哪条短路径进入。
+
+补充实践下沉判断：
+
+- 在终局判断稳定后，下一步不应继续只加哲学收束，而应把 protocol transcript、资源定价、未来维护者消费者三条线分别下沉成高级 guide，让“为什么如此设计”转写成“怎样照此设计 / 使用 / 迁移”。
+
+补充底盘回灌判断：
+
+- 当高级 guide 稳定后，还应再回灌到 `architecture/`：把 `54/57` 与 `15` 收束成 protocol truth control plane，把 `56/58` 与 `16` 收束成 pricing runtime，把 `69/59` 与 `17` 收束成 future-maintainer consumer plane，避免“实践有了，但底盘抽象仍缺席”。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-127`
+- `claude-code-source-code/src/constants/prompts.ts:105-127`
+- `claude-code-source-code/src/query/stopHooks.ts:84-120`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:232-395`
+- `claude-code-source-code/src/components/VirtualMessageList.tsx:145-180`
+- `claude-code-source-code/src/components/VirtualMessageList.tsx:946-1035`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1795-1830`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:503-640`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1238-1280`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:27-38`
+- `claude-code-source-code/src/state/onChangeAppState.ts:50-91`
+- `claude-code-source-code/src/utils/fingerprint.ts:40-63`
+
+### A0. 协作接口、有效自由与治理界面
+
+- Sticky Prompt 只从真实用户主语与非 meta 的 `queued_command` 中提炼可见锚点，还会裁掉 system reminder 与无意义前缀，说明它在维护的是“当前到底在回应什么”的协作接口，而不是简单 UI 装饰。
+- Suggestion 只在输入为空且 assistant 未响应时出现，且生成目标被明确约束为“预测用户自然会输入什么”，说明它服务的是低成本接手，而不是替用户发明计划。
+- protocol transcript 与 UI transcript 不是同一物：部分 system message 会并入 user turn，不可用的 `tool_reference` 会被剥离，还会为 server 采样稳定性注入额外 sibling text，因此 prompt 纠偏应优先补新边界，而不是机械复述完整聊天历史。
+- Session Memory 通过隔离上下文和 forked agent 更新 memory 文件，说明它保存的是未来继续执行需要的最小语义体，而不是普通聊天纪要。
+- permission mode 的设计目标是“有效自由”而不是“最大自由”：deny rule、ask rule、content-specific ask 与 safety check 都能在高权限路径上继续生效，bypass 不是对边界的取消。
+- Permission Prompt 的 accept / reject 两侧都支持附带反馈，说明审批在作者心中是协商接口，而不是单纯停顿；远程 channel 审批也被设计成结构化事件 race，而不是文本聊天猜测。
+- deferred tools delta、tool result replacement state 与 token budget continuation 共同说明：Claude Code 更偏爱按需出现能力、外置大结果、在边际收益下降时主动停止，而不是用全量能力和超长回合换取假自由。
+- builder 侧的核心经验不是“目录像不像”，而是把单一真相文件、leaf module、config / deps seam、snapshot 语义和显式状态机写进代码边界，让维护者读代码时直接读到治理规则。
+
+证据:
+
+- `claude-code-source-code/src/components/VirtualMessageList.tsx:145-180`
+- `claude-code-source-code/src/components/VirtualMessageList.tsx:946-1035`
+- `claude-code-source-code/src/hooks/usePromptSuggestion.ts:15-176`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-270`
+- `claude-code-source-code/src/services/SessionMemory/sessionMemory.ts:303-345`
+- `claude-code-source-code/src/utils/messages.ts:2078-2148`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:1169-1280`
+- `claude-code-source-code/src/components/permissions/PermissionPrompt.tsx:30-212`
+- `claude-code-source-code/src/services/mcp/channelPermissions.ts:1-240`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-93`
+- `claude-code-source-code/src/query/config.ts:8-45`
+- `claude-code-source-code/src/query/deps.ts:8-39`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+
 ### A. 启动与入口
 
 - CLI 先走 fast path，再决定是否 import `main.js`。
@@ -2113,6 +2179,10 @@
 - prompt 深线当前还应继续上升到“语义压缩器”层：session memory、prompt suggestion、stop hooks、tool result fate freeze 共同保住的是可继续行动的语义，而不是更短原文。
 - 安全与省 token 深线当前还应继续上升到“资源宪法”层：runtime 在统一分配能力、时间、注意力与权威，模型不是资源主权拥有者。
 - 源码先进性当前还应继续上升到“演化制度设计”层：注释、leaf module、snapshot、narrow extraction 在保留下一次重构可能性，不只是体现作者经验。
+- prompt 深线当前还应继续上升到“协调成本控制面”层：prompt 不只组织模型，也在组织人类如何接手、确认、切换与纠偏。
+- 安全与省 token 深线当前还应继续上升到“有效自由”层：ask/deny/bypass/deferred/externalize 共同目标不是更保守，而是让约束不破坏高行动力。
+- 源码先进性当前还应继续上升到“源码即治理界面”层：命名、注释、显式边界和 dependency-free 小模块都在降低误改、误扩展与制度失忆成本。
+- 使用专题当前应继续承担“把高阶结论变成操作方法”的角色；否则蓝皮书会越来越会解释，但越来越难拿来用。
 
 ## 下一步待办
 
