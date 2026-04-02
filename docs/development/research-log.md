@@ -7,6 +7,38 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A018. 宿主迁移演练之后，下一层应进入宿主迁移失真反例层
+
+- `compiled request truth` 即使已经被写成交接包、灰度记录与回退演练，团队仍最容易把它重新退回 prompt 摘要、截图 handoff、黑箱 cache 指标与 `stop_reason` 继续判断；这说明 Prompt 线下一层最值钱的不是继续补 playbook，而是把这些“像成功”的信号压成 casebook。
+- `governance control plane object` 即使已经被写成交接包、灰度记录与回退演练，团队仍最容易把它重新退回 mode 面板、弹窗记忆、假窗口对齐、免费继续与文件级回退；这说明治理线下一层最值钱的不是继续补演练句子，而是把这些“像对齐”的信号压成 casebook。
+- 结构真相面即使已经被写成交接包、灰度记录与回退演练，团队仍最容易把它重新退回伪恢复采纳、指针健康幻觉、writeback 分叉与成功率崇拜；这说明结构线下一层最值钱的不是继续补恢复 drill，而是把这些“像恢复成功”的信号压成 casebook。
+- 这意味着蓝皮书在宿主迁移演练之后需要继续长出“宿主迁移失真反例层”：
+  - `navigation/48` 负责统一入口。
+  - `casebooks/28-30` 负责三类宿主迁移的伪交接、假灰度与回退幻觉。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补坏样例名录，而是考虑新的 `guides/57+` 或 `playbooks/35+`，把这些失真压成固定纠偏顺序、拒收规则或模板骨架。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:247-666`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/query/stopHooks.ts:257-331`
+- `claude-code-source-code/src/query.ts:1223-1340`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-260`
+- `claude-code-source-code/src/cli/structuredIO.ts:263-657`
+- `claude-code-source-code/src/cli/print.ts:4568-4641`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1020-1382`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:450-529`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
 ### A017. 宿主迁移工单之后，下一层应进入宿主迁移演练层
 
 - `compiled request truth` 即使已经被写成宿主迁移工单，如果团队仍不能把 section projection、protocol rewrite、cache explainability、compact boundary 与 continue qualification 压成交接包、灰度记录与回退演练，Prompt 迁移就仍会退回 prompt 截图、摘要 handoff 与黑箱继续；这说明 Prompt 线下一层最值钱的不是继续补工单，而是把迁移工单压成 playbook。

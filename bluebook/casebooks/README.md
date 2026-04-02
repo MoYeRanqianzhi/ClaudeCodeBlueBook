@@ -43,6 +43,9 @@
 25. [25-Prompt宿主消费反例：字符串崇拜、缓存黑箱与继续资格误判](25-Prompt%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B4%87%E6%8B%9C%E3%80%81%E7%BC%93%E5%AD%98%E9%BB%91%E7%AE%B1%E4%B8%8E%E7%BB%A7%E7%BB%AD%E8%B5%84%E6%A0%BC%E8%AF%AF%E5%88%A4.md)
 26. [26-治理宿主消费反例：mode投影崇拜、pending action降格与rollback object文件化](26-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E5%8F%8D%E4%BE%8B%EF%BC%9Amode%E6%8A%95%E5%BD%B1%E5%B4%87%E6%8B%9C%E3%80%81pending%20action%E9%99%8D%E6%A0%BC%E4%B8%8Erollback%20object%E6%96%87%E4%BB%B6%E5%8C%96.md)
 27. [27-故障模型宿主消费反例：权威状态猜测、恢复指针神化与成功率崇拜](27-%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E5%8F%8D%E4%BE%8B%EF%BC%9A%E6%9D%83%E5%A8%81%E7%8A%B6%E6%80%81%E7%8C%9C%E6%B5%8B%E3%80%81%E6%81%A2%E5%A4%8D%E6%8C%87%E9%92%88%E7%A5%9E%E5%8C%96%E4%B8%8E%E6%88%90%E5%8A%9F%E7%8E%87%E5%B4%87%E6%8B%9C.md)
+28. [28-Prompt宿主迁移反例：伪交接、黑箱灰度与继续资格回退幻觉](28-Prompt%E5%AE%BF%E4%B8%BB%E8%BF%81%E7%A7%BB%E5%8F%8D%E4%BE%8B%EF%BC%9A%E4%BC%AA%E4%BA%A4%E6%8E%A5%E3%80%81%E9%BB%91%E7%AE%B1%E7%81%B0%E5%BA%A6%E4%B8%8E%E7%BB%A7%E7%BB%AD%E8%B5%84%E6%A0%BC%E5%9B%9E%E9%80%80%E5%B9%BB%E8%A7%89.md)
+29. [29-治理宿主迁移反例：权限账本缺席、假窗口对齐与免费继续回退幻觉](29-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E8%BF%81%E7%A7%BB%E5%8F%8D%E4%BE%8B%EF%BC%9A%E6%9D%83%E9%99%90%E8%B4%A6%E6%9C%AC%E7%BC%BA%E5%B8%AD%E3%80%81%E5%81%87%E7%AA%97%E5%8F%A3%E5%AF%B9%E9%BD%90%E4%B8%8E%E5%85%8D%E8%B4%B9%E7%BB%A7%E7%BB%AD%E5%9B%9E%E9%80%80%E5%B9%BB%E8%A7%89.md)
+30. [30-结构宿主迁移反例：伪恢复采纳、指针健康幻觉与写回真相分叉](30-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E8%BF%81%E7%A7%BB%E5%8F%8D%E4%BE%8B%EF%BC%9A%E4%BC%AA%E6%81%A2%E5%A4%8D%E9%87%87%E7%BA%B3%E3%80%81%E6%8C%87%E9%92%88%E5%81%A5%E5%BA%B7%E5%B9%BB%E8%A7%89%E4%B8%8E%E5%86%99%E5%9B%9E%E7%9C%9F%E7%9B%B8%E5%88%86%E5%8F%89.md)
 
 ## 按目标阅读
 
@@ -63,6 +66,7 @@
 - 想直接看这些最小共享工件在真实执行里最常怎样重新退回局部真相：`../navigation/28 -> 19 -> 20 -> 21`
 - 想继续看机制对象明明已经进入验证层，为什么仍会重新退回 prompt 崇拜、仪表盘崇拜与目录审美：`../navigation/40 -> 22 -> 23 -> 24`
 - 想继续看这些宿主消费面明明已经存在，为什么仍会重新退回字符串、仪表盘、成功率与作者说明：`../navigation/44 -> 25 -> 26 -> 27`
+- 想继续看这些宿主迁移演练明明已经执行，为什么仍会重新退回伪交接、假灰度与回退幻觉：`../navigation/48 -> 28 -> 29 -> 30`
 
 ## 与其他目录的边界
 
@@ -79,5 +83,7 @@
 - 再往下一层，应由 `../navigation/40 -> ../casebooks/22-24` 继续回答“这些机制对象最常怎样死于看起来已经落地的假验证与假先进性”。
 - `casebooks/25-27` 继续回答“宿主消费面明明已经存在，为什么仍会重新退回 prompt 字符串、治理投影、恢复成功率与作者说明等假信号”。
 - 再往下一层，应由 `../navigation/44 -> ../casebooks/25-27` 继续回答“这些 host-consumable support surface 最常怎样死于 consumer misuse 与第二真相重建”。
+- `casebooks/28-30` 继续回答“宿主迁移演练明明已经执行，为什么仍会重新退回伪交接、假灰度与回退幻觉等更高级第二真相”。
+- 再往下一层，应由 `../navigation/48 -> ../casebooks/28-30` 继续回答“这些迁移演练最常怎样死于看起来已经跑过 drill 的假稳定”。
 - 再往下一层，应由 `../navigation/29 -> ../guides/39-41` 继续回答“怎样把这些 drift 原型编译成 validator / linter / reject rule”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。

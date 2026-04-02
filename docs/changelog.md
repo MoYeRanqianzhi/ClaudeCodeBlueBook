@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《宿主迁移失真导航：Prompt、治理与故障模型演练如何重新退回伪交接、假灰度与回退幻觉》《Prompt宿主迁移反例：伪交接、黑箱灰度与继续资格回退幻觉》《治理宿主迁移反例：权限账本缺席、假窗口对齐与免费继续回退幻觉》《结构宿主迁移反例：伪恢复采纳、指针健康幻觉与写回真相分叉》，并同步回写主索引、导航/案例库 README 与开发文档，把蓝皮书从“宿主迁移演练 / handoff-gray-rollback playbook”继续推进到“宿主迁移失真 / migration distortion casebook”层
 - 新增《宿主迁移演练导航：Prompt、治理与故障模型工单如何进入交接样例、灰度记录与回退演练》《Prompt宿主迁移演练手册：compiled request truth交接包、灰度记录与回退演练》《治理宿主迁移演练手册：统一定价控制面交接包、灰度记录与回退演练》《故障模型宿主迁移演练手册：结构真相面交接包、灰度记录与回退演练》，并同步回写主索引、导航/运营手册 README 与开发文档，把蓝皮书从“宿主迁移工单 / migration workorder”继续推进到“宿主迁移演练 / handoff-gray-rollback playbook”层
 - 新增《宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布》《如何把Prompt宿主接入迁移成编译请求真相：迁移工单、交接包与灰度发布顺序》《如何把治理宿主接入迁移成统一定价控制面：迁移工单、交接包与灰度发布顺序》《如何把故障模型宿主接入迁移成结构真相面：迁移工单、交接包与灰度发布顺序》，并同步回写主索引、导航/使用专题 README 与开发文档，把蓝皮书从“宿主接入审读 / runbook”继续推进到“宿主迁移工单 / migration workorder”层
 - 新增《宿主接入审读导航：Prompt、治理与故障模型支持面如何进入持续排查与复盘》《Prompt宿主接入审读手册：输入面、section breakdown、cache break可解释性与continue qualification排查》《治理宿主接入审读手册：authority source、decision window、pending action与rollback object排查》《故障模型宿主接入审读手册：authority state、recovery boundary与anti-zombie结果面排查》，并同步回写主索引、导航/运营手册 README 与开发文档，把蓝皮书从“支持面反例 / consumer misuse”继续推进到“宿主接入审读 / runbook”层

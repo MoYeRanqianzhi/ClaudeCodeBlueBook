@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主迁移演练 / handoff-gray-rollback playbook”继续推进到“宿主迁移失真 / migration distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主迁移即使已经有交接包、灰度记录与回退演练，仍最容易死于 prompt 摘要 handoff、cache explainability 黑箱化、protocol truth 缺席与 continue qualification 幻觉。
+  - 治理宿主迁移即使已经有交接包、灰度记录与回退演练，仍最容易死于权限账本缺席、假窗口对齐、默认继续与 rollback object 文件化。
+  - 结构宿主迁移即使已经有交接包、灰度记录与回退演练，仍最容易死于 resume 顺序被打乱、指针健康被神化、writeback 主路径分叉与 anti-zombie 结果面缺席。
+- 新增目录责任：
+  - `navigation/48` 负责宿主迁移失真入口。
+  - `casebooks/28-30` 负责三类宿主迁移的伪交接、假灰度与回退幻觉反例。
+- 当前新的写作约束：
+  - 不再只写“怎样执行交接、灰度与回退”，还要写“哪些看起来像成功的信号其实正在重新制造第二真相”。
+  - 每次继续深化都要回答“当前成功感来自机制对象成立，还是来自更高级的截图、仪表盘、成功率与作者说明幻觉”。
 - 蓝皮书已经从“宿主迁移工单 / migration workorder”继续推进到“宿主迁移演练 / handoff-gray-rollback playbook”层。
 - 新增结论：
   - Prompt 宿主迁移如果要真正稳定，必须继续围绕 `compiled request truth` 交接包、protocol rewrite 灰度记录、cache explainability 观测与 continue qualification 回退演练运行，而不是只停在迁移工单。
