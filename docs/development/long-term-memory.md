@@ -291,6 +291,11 @@
 - `casebooks/11` 当前应负责安全反例对照：免费扩张、假统一预算器、全量可见面、无决策增益检查、不可撤销自动化、错误失败语义与错误 continuation
 - `casebooks/12` 当前应负责源码反例对照：伪模块化、第二真相、transport 泄漏、registry 变业务中心、恢复资产缺席、zombie 温床与未来维护者被排除
 - `navigation/16` 的职责应稳定为“设计自校层如何进入同题对照层”，避免 `15` 同时承担抽象诘问与对照样例两类入口职责
+- 当 `navigation/16 + casebooks/10-12` 稳定后，下一步最值钱的不是继续补更多反例，而是补迁移工单层：把改写顺序、灰度阶段、停止条件与回退动作写成正式 playbook
+- `playbooks/06` 当前应负责 Prompt 迁移工单：从长文案到 section 宪法、主语链、共享前缀、合法遗忘与 handoff continuity 的渐进改写
+- `playbooks/07` 当前应负责治理迁移工单：从规则堆叠到资产清单、治理顺序、stable bytes、decision gain 与可撤销自动化的渐进改写
+- `playbooks/08` 当前应负责结构迁移工单：从第二真相与伪模块化到 authoritative surface、transport shell、recovery asset 与 anti-zombie 结构的渐进改写
+- `navigation/17` 的职责应稳定为“反例对照层如何进入迁移执行层”，避免 `16` 同时承担对照样例与执行工单两类入口职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

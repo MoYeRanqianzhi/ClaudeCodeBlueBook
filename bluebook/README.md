@@ -81,6 +81,7 @@
 - 想从现场症状、生命周期阶段或受损资产直接回到制度诊断，再读 [navigation/14-交叉反查导航：按症状、按阶段与按资产定位制度失效](navigation/14-%E4%BA%A4%E5%8F%89%E5%8F%8D%E6%9F%A5%E5%AF%BC%E8%88%AA%EF%BC%9A%E6%8C%89%E7%97%87%E7%8A%B6%E3%80%81%E6%8C%89%E9%98%B6%E6%AE%B5%E4%B8%8E%E6%8C%89%E8%B5%84%E4%BA%A7%E5%AE%9A%E4%BD%8D%E5%88%B6%E5%BA%A6%E5%A4%B1%E6%95%88.md)
 - 想在事故发生前先用第一性原理问题自校 Prompt 魔力、安全定价与源码先进性，再读 [navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准](navigation/15-%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%AE%A1%E8%AF%BB%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E9%AD%94%E5%8A%9B%E3%80%81%E5%AE%89%E5%85%A8%E5%AE%9A%E4%BB%B7%E4%B8%8E%E6%BA%90%E7%A0%81%E5%85%88%E8%BF%9B%E6%80%A7%E7%9A%84%E8%87%AA%E6%88%91%E6%A0%A1%E5%87%86.md)
 - 想把这些自校问题继续落成“同题坏解 vs Claude Code 式正解”的迁移对照，再读 [navigation/16-反例对照导航：坏解法、伪优化与改写路径](navigation/16-%E5%8F%8D%E4%BE%8B%E5%AF%B9%E7%85%A7%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%9D%8F%E8%A7%A3%E6%B3%95%E3%80%81%E4%BC%AA%E4%BC%98%E5%8C%96%E4%B8%8E%E6%94%B9%E5%86%99%E8%B7%AF%E5%BE%84.md)
+- 想把这些对照继续变成真正可执行的改写顺序、灰度与回退，再读 [navigation/17-迁移工单导航：从坏解法到制度改写的顺序、灰度与回退](navigation/17-%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%8D%95%E5%AF%BC%E8%88%AA%EF%BC%9A%E4%BB%8E%E5%9D%8F%E8%A7%A3%E6%B3%95%E5%88%B0%E5%88%B6%E5%BA%A6%E6%94%B9%E5%86%99%E7%9A%84%E9%A1%BA%E5%BA%8F%E3%80%81%E7%81%B0%E5%BA%A6%E4%B8%8E%E5%9B%9E%E9%80%80.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -233,6 +234,7 @@
 - 想从现场表象直接反查到哪条线先出问题、哪一阶段先埋雷、哪类资产先受损，再读 [navigation/14-交叉反查导航：按症状、按阶段与按资产定位制度失效](navigation/14-%E4%BA%A4%E5%8F%89%E5%8F%8D%E6%9F%A5%E5%AF%BC%E8%88%AA%EF%BC%9A%E6%8C%89%E7%97%87%E7%8A%B6%E3%80%81%E6%8C%89%E9%98%B6%E6%AE%B5%E4%B8%8E%E6%8C%89%E8%B5%84%E4%BA%A7%E5%AE%9A%E4%BD%8D%E5%88%B6%E5%BA%A6%E5%A4%B1%E6%95%88.md)
 - 想把这些高阶判断继续压成“设计前先反问自己”的自我校准层，再读 [navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准](navigation/15-%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%AE%A1%E8%AF%BB%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E9%AD%94%E5%8A%9B%E3%80%81%E5%AE%89%E5%85%A8%E5%AE%9A%E4%BB%B7%E4%B8%8E%E6%BA%90%E7%A0%81%E5%85%88%E8%BF%9B%E6%80%A7%E7%9A%84%E8%87%AA%E6%88%91%E6%A0%A1%E5%87%86.md)
 - 想直接看这些问题在同题坏解和改写路径里如何暴露，再读 [navigation/16-反例对照导航：坏解法、伪优化与改写路径](navigation/16-%E5%8F%8D%E4%BE%8B%E5%AF%B9%E7%85%A7%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%9D%8F%E8%A7%A3%E6%B3%95%E3%80%81%E4%BC%AA%E4%BC%98%E5%8C%96%E4%B8%8E%E6%94%B9%E5%86%99%E8%B7%AF%E5%BE%84.md)
+- 想直接看这些对照怎样落成真正可执行的迁移工单与回退顺序，再读 [navigation/17-迁移工单导航：从坏解法到制度改写的顺序、灰度与回退](navigation/17-%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%8D%95%E5%AF%BC%E8%88%AA%EF%BC%9A%E4%BB%8E%E5%9D%8F%E8%A7%A3%E6%B3%95%E5%88%B0%E5%88%B6%E5%BA%A6%E6%94%B9%E5%86%99%E7%9A%84%E9%A1%BA%E5%BA%8F%E3%80%81%E7%81%B0%E5%BA%A6%E4%B8%8E%E5%9B%9E%E9%80%80.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
@@ -314,6 +316,10 @@
 ### 为什么真正强的设计最终还必须能给出同题坏解与改写路径
 
 - `navigation/16 -> casebooks/10 -> casebooks/11 -> casebooks/12 -> philosophy/63 -> philosophy/64 -> philosophy/65`
+
+### 为什么真正强的设计最终必须继续进入迁移工单、灰度与回退层
+
+- `navigation/17 -> playbooks/06 -> playbooks/07 -> playbooks/08 -> philosophy/63 -> philosophy/64 -> philosophy/65`
 
 ### 为什么高行动力来自统一定价而不是统一放权
 
