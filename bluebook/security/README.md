@@ -171,6 +171,7 @@
 - 想直接看为什么 cleanup 不是默认合法动作，以及系统何时必须保留 pointer、retry 与 needsRefresh 这类恢复资产：看 `69`
 - 想直接看不同 recoverability asset 当前禁止什么 cleanup、为什么还受保护、以及何时才会重新放行：看 `appendix/53`
 - 想直接看为什么这套系统不是靠最后一个 permission dialog 才安全，而是靠环境门、信任门、内容门、决议门与发布门逐层缩减能力面：看 `70`
+- 想直接看不同 gate 各自保护哪段能力、放行条件是什么、最危险的 shortcut 是什么：看 `appendix/54`
 
 ## 和其他目录的关系
 
@@ -283,4 +284,5 @@
 - 想看为什么 wrong path 里最危险的是 destructive cleanup，以及 why pointer、retry、needsRefresh 这些对象在可恢复性耗尽前都不该被删：`68` -> `69`
 - 想把 `69` 的长文压成一张合法性矩阵，快速看出不同 recoverability asset 的 forbidden cleanup 与 release condition：`69` -> `appendix/53`
 - 想看为什么 bypass、workspace trust、bridge-safe commands、MCP 审批与 channel relay 不是互相替代，而是同一条能力发布链上的多重窄门：`02` -> `03` -> `04` -> `07` -> `70`
+- 想把 `70` 的长文压成一张能力借出矩阵，快速看出不同 gate 的 admission condition、protected capability 与 forbidden shortcut：`70` -> `appendix/54`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
