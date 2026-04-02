@@ -364,6 +364,25 @@
 - `claude-code-source-code/src/services/api/sessionIngress.ts:60-120`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00n. 迁移工单层之后，下一层应进入 rollout 样例层
+
+- 当 `navigation/17 + playbooks/06-08` 已经把制度压成迁移执行层后，下一步最值钱的不是继续补更多“该怎么改”，而是补 rollout 样例层：把改写前后 diff、阶段观测、灰度结果与回退记录做成正式样例，让团队知道一次正确迁移看起来究竟长什么样。
+- `playbooks/09` 应把 Prompt Constitution 迁移写成完整 rollout：旧长文案如何拆成 section，稳定前缀何时切，dynamic boundary 何时切，compact / resume / handoff 何时切，以及这些切换如何留下 diff 和回退记录。
+- `playbooks/10` 应把治理顺序迁移写成完整 rollout：输入边界何时收口、stable bytes 何时冻结、decision gain stop-logic 何时上线、auto lease 何时回收，以及这些变化如何通过成本、误判与 approval race 指标被证明。
+- `playbooks/11` 应把结构迁移写成完整 rollout：authoritative surface 何时双写、第二真相何时只读投影、transport shell 何时收口、recovery asset 何时列账、anti-zombie 何时上线，以及这些变化如何通过 split truth、resume、stale-state 指标被验证。
+- `navigation/18` 因而成为必要入口：`17` 负责知道“该按什么顺序改”，`18` 负责知道“改了之后应该看到什么证据”，避免蓝皮书仍停留在方法论而没有运行样例。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-127`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-520`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-93`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:367-860`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:60-120`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

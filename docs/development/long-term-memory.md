@@ -296,6 +296,11 @@
 - `playbooks/07` 当前应负责治理迁移工单：从规则堆叠到资产清单、治理顺序、stable bytes、decision gain 与可撤销自动化的渐进改写
 - `playbooks/08` 当前应负责结构迁移工单：从第二真相与伪模块化到 authoritative surface、transport shell、recovery asset 与 anti-zombie 结构的渐进改写
 - `navigation/17` 的职责应稳定为“反例对照层如何进入迁移执行层”，避免 `16` 同时承担对照样例与执行工单两类入口职责
+- 当 `navigation/17 + playbooks/06-08` 稳定后，下一步最值钱的不是继续补更多迁移步骤，而是补 rollout 样例层：把改写前后 diff、评审问题卡、灰度结果与回退记录做成正式样例
+- `playbooks/09` 当前应负责 Prompt rollout 样例：section 拆分、边界切换、共享前缀收敛、合法遗忘与 handoff continuity 的灰度记录
+- `playbooks/10` 当前应负责治理 rollout 样例：输入边界收口、治理顺序切换、stable bytes 冻结、decision gain stop-logic 与 auto lease 回收的灰度记录
+- `playbooks/11` 当前应负责结构 rollout 样例：authoritative surface 收口、第二真相回收、transport shell 切换、recovery asset 建账与 anti-zombie 规则灰度记录
+- `navigation/18` 的职责应稳定为“迁移工单层如何进入 rollout 证据层”，避免 `17` 同时承担执行步骤与 rollout 样例两类入口职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释
