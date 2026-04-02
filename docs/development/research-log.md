@@ -7,6 +7,38 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A016. 宿主接入审读之后，下一层应进入宿主迁移工单层
+
+- `compiled request truth` 即使已经进入宿主接入审读层，如果团队仍不能把输入面冻结、协议重写、cache explainability、lawful forgetting 与 continue qualification 压成固定实施顺序，Prompt 宿主接入就仍会退回字符串接入、raw transcript 与 summary handoff；这说明 Prompt 线下一层最值钱的不是继续补排查 checklist，而是把审读结果压成迁移工单、交接包与灰度发布顺序。
+- `governance control plane object` 即使已经进入宿主接入审读层，如果团队仍不能把 authority source、typed decision、decision window、continuation gate 与 rollback object 压成固定实施顺序，治理宿主接入就仍会退回 mode 面板、pending action 文案、token 仪表盘与文件级回退；这说明治理线下一层最值钱的不是继续补权限说明，而是把审读结果压成统一定价控制面的迁移工单。
+- 结构故障模型即使已经进入宿主接入审读层，如果团队仍不能把 authority state、transition legality、anti-zombie evidence、recovery boundary 与 writeback 主路径压成固定实施顺序，结构宿主接入就仍会退回 spinner、pointer、成功率与作者说明；这说明结构线下一层最值钱的不是继续补恢复演练，而是把审读结果压成结构真相面的迁移工单。
+- 这意味着蓝皮书在宿主接入审读之后需要继续长出“宿主迁移工单层”：
+  - `navigation/46` 负责统一入口。
+  - `guides/54-56` 负责三类宿主接入的迁移工单、交接包与灰度发布顺序。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补迁移口号，而是考虑新的 `playbooks/32+` 或 `casebooks/28+`，把这些迁移工单继续压成交接样例、灰度记录与回退演练。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/utils/api.ts:321-405`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:247-666`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/query/stopHooks.ts:257-331`
+- `claude-code-source-code/src/query.ts:1223-1340`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-260`
+- `claude-code-source-code/src/cli/structuredIO.ts:149-657`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/state/onChangeAppState.ts:50-92`
+- `claude-code-source-code/src/utils/sessionState.ts:92-149`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/remoteBridgeCore.ts:450-529`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+
 ### A00l. 机制对象成立之后，下一层应进入持续验证层
 
 - `compiled request truth` 下一层最值钱的不是继续补机制解释，而是把 section continuity、stable bytes、protocol rewrite 与 lawful forgetting 压成长期运行里的回归门禁；否则 Prompt 线很快会重新退回原文 prompt 崇拜与摘要崇拜。

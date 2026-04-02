@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主接入审读 / runbook”继续推进到“宿主迁移工单 / migration workorder”层。
+- 新增结论：
+  - Prompt 宿主接入如果要真正可迁移，必须继续围绕输入面冻结、协议重写、cache explainability、lawful forgetting 与 continue qualification 写成固定实施顺序，而不是继续停在排查 checklist。
+  - 治理宿主接入如果要真正可迁移，必须继续围绕 authority source、typed decision、decision window、continuation gate 与 rollback object 写成固定实施顺序，而不是继续停在 mode 面板与审批流。
+  - 故障模型宿主接入如果要真正可迁移，必须继续围绕 authority state、writeback 主路径、anti-zombie 结果面与 recovery boundary 写成固定实施顺序，而不是继续停在恢复演练与成功率复盘。
+- 新增目录责任：
+  - `navigation/46` 负责宿主迁移工单入口。
+  - `guides/54-56` 负责三类宿主接入的迁移工单、交接包与灰度发布顺序。
+- 当前新的写作约束：
+  - 不再只写“怎样审读和拒收”，还要写“旧宿主应先拆哪一层假设、交接至少留下哪些对象、灰度时先开放哪一种真相面”。
+  - 每次继续深化都要回答“当前迁移方案保护的是同一机制对象，还是又把对象打散成界面步骤与人工经验”。
 - 蓝皮书已经从“支持面反例 / consumer misuse”继续推进到“宿主接入审读 / runbook”层。
 - 新增结论：
   - Prompt 宿主接入如果要稳定，必须继续围绕输入面、section breakdown、cache break explainability 与 continue qualification 做定期审读，而不是等黑箱行为出现后再猜。

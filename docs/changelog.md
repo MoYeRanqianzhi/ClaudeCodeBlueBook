@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布》《如何把Prompt宿主接入迁移成编译请求真相：迁移工单、交接包与灰度发布顺序》《如何把治理宿主接入迁移成统一定价控制面：迁移工单、交接包与灰度发布顺序》《如何把故障模型宿主接入迁移成结构真相面：迁移工单、交接包与灰度发布顺序》，并同步回写主索引、导航/使用专题 README 与开发文档，把蓝皮书从“宿主接入审读 / runbook”继续推进到“宿主迁移工单 / migration workorder”层
 - 新增《宿主接入审读导航：Prompt、治理与故障模型支持面如何进入持续排查与复盘》《Prompt宿主接入审读手册：输入面、section breakdown、cache break可解释性与continue qualification排查》《治理宿主接入审读手册：authority source、decision window、pending action与rollback object排查》《故障模型宿主接入审读手册：authority state、recovery boundary与anti-zombie结果面排查》，并同步回写主索引、导航/运营手册 README 与开发文档，把蓝皮书从“支持面反例 / consumer misuse”继续推进到“宿主接入审读 / runbook”层
 - 新增《支持面反例导航：编译请求真相、治理控制面与故障模型证据如何重新退回宿主猜测》《Prompt宿主消费反例：字符串崇拜、缓存黑箱与继续资格误判》《治理宿主消费反例：mode投影崇拜、pending action降格与rollback object文件化》《故障模型宿主消费反例：权威状态猜测、恢复指针神化与成功率崇拜》，并同步回写主索引、导航/案例库 README 与开发文档，把蓝皮书从“机制支持面 / host-consumable API”继续推进到“支持面反例 / consumer misuse”层
 - 新增《机制支持面导航：编译请求真相、治理控制面与故障模型证据如何进入宿主消费》《编译请求真相宿主消费面手册：systemPrompt输入、section breakdown、cache break reason与continue qualification》《统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate》《故障模型宿主消费面手册：authority state、generation evidence、recovery boundary与anti-zombie projection》，并同步回写主索引、导航/API README 与开发文档，把蓝皮书从“机制实现 / builder-facing 手册”继续推进到“机制支持面 / host-consumable API”层
