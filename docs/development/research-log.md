@@ -20,6 +20,10 @@
 - 源码先进性不在静态分层本身，而在未来维护者被当成正式消费者：`DANGEROUS`、`single choke point`、`IMPORTANT` 这类命名和注释都在提前暴露未来修改的代价与条件。
 - 命名、注释、leaf module、config / deps seam、snapshot、state machine 共同构成同一治理制度：用显式边界保护未来维护与未来重构，而不是只服务当前执行。
 
+补充目录判断：
+
+- 57-59 已经形成一组终局判断，继续仅靠 `philosophy/README` 与 `navigation/05` 暴露不够直接，应单独提供终局判断导航，避免读者知道结论存在，却不知道该从哪条短路径进入。
+
 证据:
 
 - `claude-code-source-code/src/utils/systemPrompt.ts:28-127`

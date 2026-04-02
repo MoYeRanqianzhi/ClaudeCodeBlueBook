@@ -103,6 +103,7 @@
   - 失败语义、取消请求与孤儿修复API手册
   - Context Usage、Prompt预算与观测型宿主手册
   - 深度专题导航：Prompt、预算、对象、底盘与治理
+  - 终局判断导航：协作语法、资源定价与未来维护者消费者
   - workflow engine、LocalWorkflowTask 与可见边界
   - REPL transcript search、selection 与 scroll 协同
   - 五层合同、缓存断点与Prompt装配时序
@@ -208,6 +209,7 @@
 - 安全深线还应再上提一层：Claude Code 真正在统一定价的是动作、能力、上下文席位与时间，不应再退回“更严格拦截器”的叙述
 - builder 侧当前最值得下沉的方法不是目录模仿，而是 leaf module、single source、config / deps seam、snapshot 语义与显式状态机这几类可迁移制度
 - 源码先进性深线还应再上提一层：未来维护者和未来重构者都应被视为正式消费者，命名、注释与 seam 是在服务这一层治理
+- 当哲学层形成新的终局判断后，应优先补 `navigation/` 入口，而不是只补 README 引用；否则目录结构会重新退回“结论存在但检索不直达”
 - 公开源码中大量能力受 `feature()` 影响
 - 技能、工具、权限、压缩、远程、子代理都是 Claude Code 的核心能力层，不是边角模块
 - SDK 面不仅有 query，还有会话、session 管理、控制协议与 SDK-MCP server 面
