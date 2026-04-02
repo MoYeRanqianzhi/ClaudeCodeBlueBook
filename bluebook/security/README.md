@@ -425,4 +425,6 @@
 - 想把 `107` 的长文压成一张协议化矩阵，快速看出不同 subsystem 的 current carrier、hidden lifecycle rule 与 recommended protocol fields：`107` -> `appendix/91`
 - 想看为什么即使协议已经定义出来，统一控制台仍不能只保存当前快照，而必须保存字段为何升级、为何留场、为何退场的时间性依据：`107` -> `108`
 - 想把 `108` 的长文压成一张账本矩阵，快速看出不同 subsystem 的 current snapshot、missing temporal basis 与 recommended ledger record：`108` -> `appendix/92`
+- 想看为什么即使 lifecycle ledger 已经成立，系统仍不能继续让高风险字段通过裸 `setState` 变化，而必须补统一 transition dispatch / state machine：`108` -> `109`
+- 想把 `109` 的长文压成一张调度矩阵，快速看出不同 subsystem 的 current writer、implicit transition 与 recommended dispatch event：`109` -> `appendix/93`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
