@@ -96,6 +96,7 @@
 - 想继续看这些宿主验收执行明明已经存在，为什么仍会重新退回表单化绿灯、假拒收与伪回退，而不是误把执行卡当完成证明：`../navigation/52 -> ../casebooks/31 -> ../casebooks/32 -> ../casebooks/33`
 - 想继续把这些宿主修复监护协议压成真正值班可执行的 watch card、drift verdict order 与 reopen drill，而不是停在 watch contract 字段层：`../navigation/63 -> 44 -> 45 -> 46`
 - 想继续把这些宿主修复解除监护协议压成真正值班可执行的 release card、release verdict order 与 reopen 责任演练，而不是停在 release contract 字段层：`../navigation/67 -> 47 -> 48 -> 49`
+- 想继续看这些宿主修复解除监护执行明明已经存在，为什么仍会重新退回静默放行、免责式出监与假退休，而不是误把 released 当成正式证明：`../navigation/68 -> ../casebooks/43 -> ../casebooks/44 -> ../casebooks/45`
 
 ## 与其他目录的边界
 
@@ -125,5 +126,6 @@
 - 再往下一层，应由 `../navigation/58 -> ../api/60-62 -> ../navigation/59 -> 41-43` 继续回答“怎样把这些宿主修复收口协议继续压成固定收口卡、完成判定顺序与交接剧本”。
 - 再往下一层，应由 `../navigation/62 -> ../api/63-65 -> ../navigation/63 -> 44-46` 继续回答“怎样把这些宿主修复监护协议继续压成固定监护卡、漂移判定顺序与重开演练”。
 - 再往下一层，应由 `../navigation/66 -> ../api/66-68 -> ../navigation/67 -> 47-49` 继续回答“怎样把这些宿主修复解除监护协议继续压成固定 release card、release verdict 顺序、capability / handoff release 与 reopen 责任演练”。
+- 再往下一层，应由 `../navigation/68 -> ../casebooks/43-45` 继续回答“为什么这些宿主修复解除监护执行明明已经存在，仍会重新退回静默放行、免责式出监与假退休”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。
