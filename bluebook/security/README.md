@@ -107,6 +107,7 @@
 85. [84-安全失效边界复活禁令：为什么最危险的不是脏状态，而是已归档旧session被重新认证为当前边界](84-%E5%AE%89%E5%85%A8%E5%A4%B1%E6%95%88%E8%BE%B9%E7%95%8C%E5%A4%8D%E6%B4%BB%E7%A6%81%E4%BB%A4%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%80%E5%8D%B1%E9%99%A9%E7%9A%84%E4%B8%8D%E6%98%AF%E8%84%8F%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E6%98%AF%E5%B7%B2%E5%BD%92%E6%A1%A3%E6%97%A7session%E8%A2%AB%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%81%E4%B8%BA%E5%BD%93%E5%89%8D%E8%BE%B9%E7%95%8C.md)
 86. [85-安全边界换届协议：为什么连续性一旦断裂，系统必须显式archive旧边界、重绑新边界并重置所有会话级账本](85-%E5%AE%89%E5%85%A8%E8%BE%B9%E7%95%8C%E6%8D%A2%E5%B1%8A%E5%8D%8F%E8%AE%AE%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%80%E6%97%A6%E6%96%AD%E8%A3%82%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%BF%85%E9%A1%BB%E6%98%BE%E5%BC%8Farchive%E6%97%A7%E8%BE%B9%E7%95%8C%E3%80%81%E9%87%8D%E7%BB%91%E6%96%B0%E8%BE%B9%E7%95%8C%E5%B9%B6%E9%87%8D%E7%BD%AE%E6%89%80%E6%9C%89%E4%BC%9A%E8%AF%9D%E7%BA%A7%E8%B4%A6%E6%9C%AC.md)
 87. [86-安全恢复承诺诚实性：为什么--continue、pointer与resume提示不是帮助文案，而是对边界可恢复性的安全承诺](86-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E6%89%BF%E8%AF%BA%E8%AF%9A%E5%AE%9E%E6%80%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88--continue%E3%80%81pointer%E4%B8%8Eresume%E6%8F%90%E7%A4%BA%E4%B8%8D%E6%98%AF%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%88%EF%BC%8C%E8%80%8C%E6%98%AF%E5%AF%B9%E8%BE%B9%E7%95%8C%E5%8F%AF%E6%81%A2%E5%A4%8D%E6%80%A7%E7%9A%84%E5%AE%89%E5%85%A8%E6%89%BF%E8%AF%BA.md)
+88. [87-安全恢复资格签发权：为什么不是任何局部signal都配说仍可恢复，而必须由掌握边界真相的控制层签字](87-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%B5%84%E6%A0%BC%E7%AD%BE%E5%8F%91%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%80%E9%83%A8signal%E9%83%BD%E9%85%8D%E8%AF%B4%E4%BB%8D%E5%8F%AF%E6%81%A2%E5%A4%8D%EF%BC%8C%E8%80%8C%E5%BF%85%E9%A1%BB%E7%94%B1%E6%8E%8C%E6%8F%A1%E8%BE%B9%E7%95%8C%E7%9C%9F%E7%9B%B8%E7%9A%84%E6%8E%A7%E5%88%B6%E5%B1%82%E7%AD%BE%E5%AD%97.md)
 85. [84-安全失效边界复活禁令：为什么最危险的不是脏状态，而是已归档旧session被重新认证为当前边界](84-%E5%AE%89%E5%85%A8%E5%A4%B1%E6%95%88%E8%BE%B9%E7%95%8C%E5%A4%8D%E6%B4%BB%E7%A6%81%E4%BB%A4%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%80%E5%8D%B1%E9%99%A9%E7%9A%84%E4%B8%8D%E6%98%AF%E8%84%8F%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E6%98%AF%E5%B7%B2%E5%BD%92%E6%A1%A3%E6%97%A7session%E8%A2%AB%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%81%E4%B8%BA%E5%BD%93%E5%89%8D%E8%BE%B9%E7%95%8C.md)
 
 ## 附录目录
@@ -221,6 +222,8 @@
 - 想直接看不同 break trigger 到底如何处置旧边界、要重置哪些 session-scoped ledger，以及哪些 continuity 说法绝不能继续保留：看 `appendix/69`
 - 想直接看为什么即使换届制度已经明确仍然不够，以及系统何时才有资格向用户承诺“仍可恢复”：看 `86`
 - 想直接看不同恢复表面到底基于什么 promise basis 发声、何时必须撤回承诺，以及哪些 resume 话术绝不能说：看 `appendix/70`
+- 想直接看为什么即使 promise honesty 已经建立仍然不够，以及“仍可恢复”这句话到底由谁签发、谁撤回、谁只能转述：看 `87`
+- 想直接看不同恢复表面到底由谁签字、依赖哪些 truth inputs、最多配说到哪一步，以及哪些 overclaim 绝不能说：看 `appendix/71`
 
 ## 和其他目录的关系
 
@@ -366,4 +369,6 @@
 - 想把 `85` 的长文压成一张换届矩阵，快速看出不同 break trigger、old boundary disposition、required reset 与 forbidden fake continuity：`85` -> `appendix/69`
 - 想看为什么即使边界生命周期已经分清，resume command、pointer 与 try-again 提示仍必须继续遵守 promise honesty，而不能把“看起来还能恢复”说成“真的还能恢复”：`85` -> `86`
 - 想把 `86` 的长文压成一张恢复承诺矩阵，快速看出不同 surface 的 promise basis、allowed promise 与 forbidden lie：`86` -> `appendix/70`
+- 想看为什么即使恢复承诺已经要求诚实，局部 signal 仍然不能越权签发这种承诺，以及 why signer authority 也必须被治理：`86` -> `87`
+- 想把 `87` 的长文压成一张签发矩阵，快速看出不同 surface 的 signer、truth inputs 与 forbidden overclaim：`87` -> `appendix/71`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
