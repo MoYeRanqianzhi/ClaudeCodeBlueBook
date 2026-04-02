@@ -21,6 +21,9 @@
 15. [15-如何把UI真相翻译成Protocol真相：transcript重写、边界补写与恢复不变量](15-%E5%A6%82%E4%BD%95%E6%8A%8AUI%E7%9C%9F%E7%9B%B8%E7%BF%BB%E8%AF%91%E6%88%90Protocol%E7%9C%9F%E7%9B%B8%EF%BC%9Atranscript%E9%87%8D%E5%86%99%E3%80%81%E8%BE%B9%E7%95%8C%E8%A1%A5%E5%86%99%E4%B8%8E%E6%81%A2%E5%A4%8D%E4%B8%8D%E5%8F%98%E9%87%8F.md)
 16. [16-如何用资源定价设计Agent Runtime：mode、visibility、externalization与continuation](16-%E5%A6%82%E4%BD%95%E7%94%A8%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BB%B7%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9Amode%E3%80%81visibility%E3%80%81externalization%E4%B8%8Econtinuation.md)
 17. [17-如何把未来维护者当正式消费者：风险命名、制度注释、seam与状态机](17-%E5%A6%82%E4%BD%95%E6%8A%8A%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E5%BD%93%E6%AD%A3%E5%BC%8F%E6%B6%88%E8%B4%B9%E8%80%85%EF%BC%9A%E9%A3%8E%E9%99%A9%E5%91%BD%E5%90%8D%E3%80%81%E5%88%B6%E5%BA%A6%E6%B3%A8%E9%87%8A%E3%80%81seam%E4%B8%8E%E7%8A%B6%E6%80%81%E6%9C%BA.md)
+18. [18-如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀](18-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%BD%93%E6%88%90%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E8%B5%84%E4%BA%A7%E7%BD%91%E7%BB%9C%EF%BC%9A%E4%BE%A7%E9%97%AE%E9%A2%98%E3%80%81suggestion%E3%80%81memory%E4%B8%8Esummary%E5%85%B1%E7%94%A8%E4%B8%BB%E7%BA%BF%E7%A8%8B%E5%89%8D%E7%BC%80.md)
+19. [19-如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件](19-%E5%A6%82%E4%BD%95%E7%94%A8Contract-First%E6%96%B9%E6%B3%95%E9%98%85%E8%AF%BB%E5%92%8C%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9A%E5%85%88%E6%89%BE%E5%90%88%E5%90%8C%EF%BC%8C%E5%86%8D%E7%9C%8B%E7%83%AD%E7%82%B9%E6%96%87%E4%BB%B6.md)
+20. [20-如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file](20-%E5%A6%82%E4%BD%95%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9C%B0%E7%BB%B4%E6%8C%81%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%9A%E5%AE%9E%E6%80%A7%EF%BC%9Aleaf%20module%E3%80%81anti-cycle%20seam%E4%B8%8Esingle-source%20file.md)
 
 ## 按使用目标阅读
 
@@ -43,6 +46,9 @@
 - 想知道 UI 真相怎样被翻译成 protocol 真相，而不是继续把显示层误当执行层：`12 -> 15 -> ../architecture/54 -> ../philosophy/57`
 - 想把权限、可见性、结果外置和 continuation 写成一套统一定价秩序：`13 -> 16 -> ../architecture/56 -> ../architecture/65 -> ../philosophy/58`
 - 想把未来维护者也当正式消费者，而不是把工程制度留在团队口头记忆里：`14 -> 17 -> ../architecture/69 -> ../philosophy/59`
+- 想把 prompt 进一步理解成共享前缀资产网络，而不是很多相似小调用：`09 -> 12 -> 18 -> ../architecture/42 -> ../philosophy/30`
+- 想研究 Claude Code 源码时先找合同，再看热点文件：`11 -> 14 -> 19 -> ../architecture/38 -> ../api/34`
+- 想工程化维持依赖图诚实性，而不是把模块化做成抽象洁癖：`14 -> 17 -> 20 -> ../architecture/58 -> ../philosophy/45`
 
 ## 与其他目录的边界
 

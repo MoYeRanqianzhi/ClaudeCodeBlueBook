@@ -48,6 +48,43 @@
 - `claude-code-source-code/src/state/onChangeAppState.ts:50-91`
 - `claude-code-source-code/src/utils/fingerprint.ts:40-63`
 
+### A00a. 共享前缀网络、合同优先阅读与依赖图诚实性
+
+- 主线程不只是 query executor，还是 prefix producer：`stopHooks.ts` 只为 `repl_main_thread` 与 `sdk` 保存 `CacheSafeParams`，并明确说 `/btw` 与 `side_question` 会直接复用它；这说明 Claude Code 真正共享的不是聊天历史，而是 cache-safe 协作前缀。
+- 旁路循环应共享主线程前缀，而不是各自重建世界模型：`/btw` 首选 `getLastCacheSafeParams()`，SDK suggestion 在拿不到 snapshot 时宁可记录 `sdk_no_params` 并 suppress，`AgentSummary` 甚至为了保住 cache key 明确不设置 `maxOutputTokens`。
+- contract-first 的更稳顺序应细化为“先 schema/type union，再 registry，再 authoritative surface，再 adapter subset，最后热点 kernel”：`Task.ts` 定义任务合同，`tasks.ts` 暴露当前注册子集，`controlSchemas.ts` 给出控制协议全集，`checkEnabledPlugins()`、`QueryGuard`、`isTranscriptMessage()`、`kairosEnabled` 则分别标出局部权威真相入口。
+- “协议全集”不等于“适配器实装全集”：`runBridgeHeadless()` 直接注明自己是 `bridgeMain()` 的 linear subset，因此不能从 `SDKControlRequestInnerSchema` 反推所有宿主都支持所有 control action。
+- 依赖图诚实性是一种工程正确性：`pluginPolicy.ts`、`configConstants.ts`、`types/permissions.ts`、`pluginDirectories.ts` 用 leaf module 与 single-source file 收口共享真相，`queryContext.ts` 与 `teammateViewHelpers.ts` 则用 anti-cycle seam 与适度不 DRY 切断 runtime edge；`DANGEROUS_uncachedSystemPromptSection`、`fingerprint.ts` 进一步说明风险命名和制度注释本身也是依赖治理的一部分。
+
+证据:
+
+- `claude-code-source-code/src/query/stopHooks.ts:84-120`
+- `claude-code-source-code/src/commands/btw/btw.tsx:183-227`
+- `claude-code-source-code/src/cli/print.ts:2274-2315`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-225`
+- `claude-code-source-code/src/services/AgentSummary/agentSummary.ts:81-119`
+- `claude-code-source-code/src/services/extractMemories/extractMemories.ts:371-427`
+- `claude-code-source-code/src/services/autoDream/autoDream.ts:224-249`
+- `claude-code-source-code/src/Task.ts:6-124`
+- `claude-code-source-code/src/tasks.ts:1-39`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1-8`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:552-590`
+- `claude-code-source-code/src/utils/plugins/pluginStartupCheck.ts:30-90`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-106`
+- `claude-code-source-code/src/utils/sessionStorage.ts:128-162`
+- `claude-code-source-code/src/state/AppStateStore.ts:113-120`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:2799-2810`
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-20`
+- `claude-code-source-code/src/query/config.ts:1-45`
+- `claude-code-source-code/src/query/deps.ts:1-40`
+- `claude-code-source-code/src/utils/queryContext.ts:1-87`
+- `claude-code-source-code/src/types/permissions.ts:1-63`
+- `claude-code-source-code/src/utils/configConstants.ts:1-18`
+- `claude-code-source-code/src/utils/plugins/pluginDirectories.ts:1-79`
+- `claude-code-source-code/src/state/teammateViewHelpers.ts:1-24`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:27-38`
+- `claude-code-source-code/src/utils/fingerprint.ts:40-63`
+
 ### A0. 协作接口、有效自由与治理界面
 
 - Sticky Prompt 只从真实用户主语与非 meta 的 `queued_command` 中提炼可见锚点，还会裁掉 system reminder 与无意义前缀，说明它在维护的是“当前到底在回应什么”的协作接口，而不是简单 UI 装饰。

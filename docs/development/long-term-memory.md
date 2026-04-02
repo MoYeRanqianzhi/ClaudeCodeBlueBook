@@ -204,6 +204,9 @@
   - 如何把UI真相翻译成Protocol真相：transcript重写、边界补写与恢复不变量
   - 如何用资源定价设计Agent Runtime：mode、visibility、externalization与continuation
   - 如何把未来维护者当正式消费者：风险命名、制度注释、seam与状态机
+  - 如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀
+  - 如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件
+  - 如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file
 
 ## 已确认事实
 
@@ -252,9 +255,12 @@
 - prompt 魔力的更深层写法应稳定为“五层合同 + 缓存断点 + 状态晚绑定”，不要退回对单段 system prompt 的评论
 - prompt 深线还应继续升级为“可重放前缀 + 可观测预算 + section 编译器 + 模型真相/用户真相分层”
 - prompt 深线还应继续升级为“主线程生产 prefix asset，辅助循环共享同一前缀网络”
+- 共享前缀网络的实践判断应稳定为：宁可 suppress / 等待可信 snapshot，也不要让 suggestion、summary、memory 一类旁路循环各自重建世界模型
 - 统一预算器的更深层写法应稳定为“请求前裁能力、请求中保工作集、请求后做恢复与继续”，不要退回“省 token 技巧”叙述
 - 源码质量研究的更稳顺序应是“先找 contract，再找 runtime 底盘，再看热点与缺口”
+- contract-first 阅读法应继续细化为“先 schema/type union，再 registry，再 authoritative surface，再 adapter subset，最后热点 kernel”，避免把声明存在、当前注册和适配器子集混成一层真相
 - 源码质量深线还应继续升级为“显式失败 + 反竞争条件 + chokepoint + leaf module”，不要退回“大文件很多/代码很复杂”的空泛评价
+- 依赖图诚实性应继续稳定成：允许适度不 DRY，以保住 anti-cycle seam、single-source file、风险命名与 import 边界注释，而不是把模块化退回成“抽得更统一”
 - API atlas 还应继续补目录级能力地图，避免“字段齐了，但能力地形仍然不可检索”
 - 宿主 API 还应继续补失败语义、取消请求、orphan response 与 transcript repair，不要只写 happy path
 - 预算器深线还应继续补 context usage、systemPromptSections、attachmentsByType 与 pending_action 的联合调优方法

@@ -65,6 +65,9 @@
 - 想把 UI 真相翻译成 protocol 真相，而不是继续把显示层误当执行层，再读 [guides/15-如何把UI真相翻译成Protocol真相：transcript重写、边界补写与恢复不变量](guides/15-%E5%A6%82%E4%BD%95%E6%8A%8AUI%E7%9C%9F%E7%9B%B8%E7%BF%BB%E8%AF%91%E6%88%90Protocol%E7%9C%9F%E7%9B%B8%EF%BC%9Atranscript%E9%87%8D%E5%86%99%E3%80%81%E8%BE%B9%E7%95%8C%E8%A1%A5%E5%86%99%E4%B8%8E%E6%81%A2%E5%A4%8D%E4%B8%8D%E5%8F%98%E9%87%8F.md)
 - 想把安全、可见性和 continuation 写成统一资源定价秩序，再读 [guides/16-如何用资源定价设计Agent Runtime：mode、visibility、externalization与continuation](guides/16-%E5%A6%82%E4%BD%95%E7%94%A8%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BB%B7%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9Amode%E3%80%81visibility%E3%80%81externalization%E4%B8%8Econtinuation.md)
 - 想把未来维护者当成正式消费者，而不是把工程制度留在口头传承里，再读 [guides/17-如何把未来维护者当正式消费者：风险命名、制度注释、seam与状态机](guides/17-%E5%A6%82%E4%BD%95%E6%8A%8A%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E5%BD%93%E6%AD%A3%E5%BC%8F%E6%B6%88%E8%B4%B9%E8%80%85%EF%BC%9A%E9%A3%8E%E9%99%A9%E5%91%BD%E5%90%8D%E3%80%81%E5%88%B6%E5%BA%A6%E6%B3%A8%E9%87%8A%E3%80%81seam%E4%B8%8E%E7%8A%B6%E6%80%81%E6%9C%BA.md)
+- 想把 prompt 理解成主线程生产、旁路循环复用的共享前缀网络，再读 [guides/18-如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀](guides/18-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%BD%93%E6%88%90%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E8%B5%84%E4%BA%A7%E7%BD%91%E7%BB%9C%EF%BC%9A%E4%BE%A7%E9%97%AE%E9%A2%98%E3%80%81suggestion%E3%80%81memory%E4%B8%8Esummary%E5%85%B1%E7%94%A8%E4%B8%BB%E7%BA%BF%E7%A8%8B%E5%89%8D%E7%BC%80.md)
+- 想研究 Claude Code 源码时先锁定合同真相，再回到热点实现，再读 [guides/19-如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件](guides/19-%E5%A6%82%E4%BD%95%E7%94%A8Contract-First%E6%96%B9%E6%B3%95%E9%98%85%E8%AF%BB%E5%92%8C%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9A%E5%85%88%E6%89%BE%E5%90%88%E5%90%8C%EF%BC%8C%E5%86%8D%E7%9C%8B%E7%83%AD%E7%82%B9%E6%96%87%E4%BB%B6.md)
+- 想把依赖图诚实性写成长期维护制度，而不是抽象洁癖，再读 [guides/20-如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file](guides/20-%E5%A6%82%E4%BD%95%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9C%B0%E7%BB%B4%E6%8C%81%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%9A%E5%AE%9E%E6%80%A7%EF%BC%9Aleaf%20module%E3%80%81anti-cycle%20seam%E4%B8%8Esingle-source%20file.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -77,6 +80,7 @@
 ### 4. 想研究 prompt、知识、记忆与上下文经济
 
 - 先读 `06 -> 07`
+- 先用 [guides/18-如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀](guides/18-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%BD%93%E6%88%90%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E8%B5%84%E4%BA%A7%E7%BD%91%E7%BB%9C%EF%BC%9A%E4%BE%A7%E9%97%AE%E9%A2%98%E3%80%81suggestion%E3%80%81memory%E4%B8%8Esummary%E5%85%B1%E7%94%A8%E4%B8%BB%E7%BA%BF%E7%A8%8B%E5%89%8D%E7%BC%80.md) 把共享前缀网络先实践化
 - 再读 `api/18 -> api/21 -> architecture/18 -> architecture/28 -> architecture/29 -> architecture/31 -> architecture/36`
 - 哲学收束看 `philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/54 -> philosophy/57`
 
@@ -89,6 +93,8 @@
 ### 6. 想研究源码结构与工程先进性
 
 - 先读 `01 -> 03 -> 05`
+- 先用 [guides/19-如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件](guides/19-%E5%A6%82%E4%BD%95%E7%94%A8Contract-First%E6%96%B9%E6%B3%95%E9%98%85%E8%AF%BB%E5%92%8C%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9A%E5%85%88%E6%89%BE%E5%90%88%E5%90%8C%EF%BC%8C%E5%86%8D%E7%9C%8B%E7%83%AD%E7%82%B9%E6%96%87%E4%BB%B6.md) 校准阅读顺序
+- 再用 [guides/20-如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file](guides/20-%E5%A6%82%E4%BD%95%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9C%B0%E7%BB%B4%E6%8C%81%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%9A%E5%AE%9E%E6%80%A7%EF%BC%9Aleaf%20module%E3%80%81anti-cycle%20seam%E4%B8%8Esingle-source%20file.md) 理解维护制度
 - 再读 `api/30 -> api/34 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38 -> architecture/40 -> architecture/41 -> architecture/44 -> architecture/47 -> architecture/52`
 - 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29 -> philosophy/32 -> philosophy/34 -> philosophy/39 -> philosophy/56 -> philosophy/59`
 
@@ -109,7 +115,11 @@
 
 ### 为什么 prompt 看起来有魔力
 
-- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> architecture/46 -> architecture/53 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30 -> philosophy/33 -> philosophy/38 -> philosophy/39 -> philosophy/40 -> philosophy/57`
+- `06 -> 07 -> guides/18 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> architecture/46 -> architecture/53 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30 -> philosophy/33 -> philosophy/38 -> philosophy/39 -> philosophy/40 -> philosophy/57`
+
+### 为什么 prompt 的魔力能在侧问题、suggestion、memory、summary、dream 之间继承
+
+- `guides/18 -> architecture/42 -> architecture/53 -> philosophy/30 -> philosophy/39 -> philosophy/57`
 
 ### 为什么它不像普通 IDE 插件
 
@@ -185,7 +195,15 @@
 
 ### 为什么依赖图诚实性比抽象洁癖更重要
 
-- `architecture/41 -> architecture/58 -> philosophy/28 -> philosophy/45`
+- `guides/20 -> architecture/41 -> architecture/58 -> philosophy/28 -> philosophy/45`
+
+### 为什么研究 Claude Code 源码时必须先找合同，再看热点文件
+
+- `guides/19 -> api/34 -> architecture/38 -> philosophy/24 -> philosophy/59`
+
+### 为什么依赖图诚实性是一种工程正确性，而不是代码洁癖
+
+- `guides/20 -> architecture/58 -> philosophy/45 -> philosophy/56 -> philosophy/59`
 
 ### 想按深度专题而不是按目录来读
 
