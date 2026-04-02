@@ -198,6 +198,9 @@
   - 如何把Prompt当成人机协作接口：固定主语、反馈纠偏与低成本接手
   - 如何在秩序中释放有效自由：mode选择、审批协商与能力按需出现
   - 如何为未来维护者设计Agent Runtime：注释、命名、leaf module与重构余量
+  - 如何把UI真相翻译成Protocol真相：transcript重写、边界补写与恢复不变量
+  - 如何用资源定价设计Agent Runtime：mode、visibility、externalization与continuation
+  - 如何把未来维护者当正式消费者：风险命名、制度注释、seam与状态机
 
 ## 已确认事实
 
@@ -210,6 +213,7 @@
 - builder 侧当前最值得下沉的方法不是目录模仿，而是 leaf module、single source、config / deps seam、snapshot 语义与显式状态机这几类可迁移制度
 - 源码先进性深线还应再上提一层：未来维护者和未来重构者都应被视为正式消费者，命名、注释与 seam 是在服务这一层治理
 - 当哲学层形成新的终局判断后，应优先补 `navigation/` 入口，而不是只补 README 引用；否则目录结构会重新退回“结论存在但检索不直达”
+- 当终局判断与导航入口都已稳定后，应优先补对应高级 `guides/`，把“为什么如此设计”进一步下沉成“怎样照此实践 / 迁移”，而不是继续只增加抽象收束
 - 公开源码中大量能力受 `feature()` 影响
 - 技能、工具、权限、压缩、远程、子代理都是 Claude Code 的核心能力层，不是边角模块
 - SDK 面不仅有 query，还有会话、session 管理、控制协议与 SDK-MCP server 面

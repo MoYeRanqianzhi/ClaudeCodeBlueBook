@@ -24,6 +24,10 @@
 
 - 57-59 已经形成一组终局判断，继续仅靠 `philosophy/README` 与 `navigation/05` 暴露不够直接，应单独提供终局判断导航，避免读者知道结论存在，却不知道该从哪条短路径进入。
 
+补充实践下沉判断：
+
+- 在终局判断稳定后，下一步不应继续只加哲学收束，而应把 protocol transcript、资源定价、未来维护者消费者三条线分别下沉成高级 guide，让“为什么如此设计”转写成“怎样照此设计 / 使用 / 迁移”。
+
 证据:
 
 - `claude-code-source-code/src/utils/systemPrompt.ts:28-127`
