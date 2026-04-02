@@ -1093,6 +1093,11 @@
 - 已补风控专题 `59-资产保全与退出策略：账号风控窗口里真正该保护的不是面子而是工作连续性`，把用户利益保护进一步压缩成 transcript、日志、录屏和 worktree 资产保全逻辑
 - 已补风控专题 `60-结构化求助模板库：用户、管理员与平台支持的最短高质量文本`，把状态面和分流逻辑转化成可直接复制的高质量求助文本
 - 已补风控专题 `61-中国用户使用生态与认识论边界：官方路径、中转站与幕后叙事该如何判断`，把官方门槛、AnyRouter 这类中转站、以及 AnyRouter/智谱 关系的证据边界明确分层
+- Anthropic 官方 settings 文档进一步确认了用户、项目、本地、managed 四层设置作用域；其中 `.claude/settings.local.json` 是 gitignored 的个人项目覆盖层，而 `cleanupPeriodDays` 默认 30 天、设为 `0` 会禁用会话持久性并让 `/resume` 失效，这对退出策略和本地证据保全非常关键。
+- Anthropic 官方 data usage / monitoring 文档进一步确认：Statsig、Sentry、`/bug`、会话质量调查都存在显式开关；同时 OTel 可以导出 `session.id`、`organization.id`、`user.account_uuid` 和 `claude_code.cost.usage` 等指标，说明用户的隐私最小化与支持可解释性之间确实存在张力。
+- Anthropic 官方 costs 文档进一步确认了 `/cost`、团队成本管理与正式支持路径的重要性；从用户利益保护角度看，一个缺少标准化成本面和正式支持面的中转入口，应被视为更高的沉没成本风险源，而不是单纯“更便宜”。
+- 源码进一步确认 `ANTHROPIC_BASE_URL` 依赖不仅存在于 env，还会进入 settings / worktree 传播面；`worktree.ts` 会复制 `settings.local.json`，这意味着中转站依赖一旦写入 local settings，可能沿 worktree 扩散，退出时必须做本地配置清点，而不能只删一个 shell 变量。
+- 已补风控专题 `62-中国用户利益保护与中转站退出策略：把接入便利转化为可控退出权`，把本地资产主权、成本止损、worktree 配置扩散、组织监控证据和 staged exit 收束成单独一章
 
 ## 下一步待办
 
