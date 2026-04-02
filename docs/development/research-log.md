@@ -270,6 +270,119 @@
 - `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00j. 参考层之后，下一层应进入多入口反查层
+
+- 当 `navigation/13 + casebooks/05-06 + playbooks/05` 已经把制度压成参考层后，下一步最值钱的不是继续堆更多定义，而是补多入口反查层：按症状、按阶段与按资产定位制度失效。
+- `casebooks/07` 应把 `cache break / cost spike / wrong allow / wrong deny / split truth / replay mismatch / stale state / zombie risk` 这些现场症状重新路由回 Prompt、治理与结构三条主线；否则 oncall 仍然只能先猜标签。
+- `casebooks/08` 应把 `design / assembly / runtime / recovery / evolution` 做成阶段反查表；否则 design debt、assembly error、recovery defect 会继续被误丢给 runtime。
+- `casebooks/09` 应把 `section / boundary / stable bytes / shadow-stub / transport shell / recovery asset / object state` 做成资产反查表；否则团队仍会按文件名搜索，而不是按正式制度资产定位失效。
+- `navigation/14` 因而成为必要入口：`13` 负责直接查定义、锚点与样例，`14` 负责从现场观察进入制度诊断，避免参考层重新变成静态资料库。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:17-43`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-520`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-860`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:235-1283`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/hooks/toolPermission/handlers/interactiveHandler.ts:138-455`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:60-120`
+- `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
+- `claude-code-source-code/scripts/prepare-src.mjs:3-64`
+- `claude-code-source-code/scripts/stub-modules.mjs:2-42`
+
+### A00k. 多入口反查层之后，下一层应进入自反审读层
+
+- 当 `navigation/14 + casebooks/07-09` 已经把制度压成现场诊断层后，下一步最值钱的不是继续补更多反查表，而是补自反审读层：让 Prompt 魔力、安全定价与源码先进性都能在设计前被主动质疑，而不是等到事故后才被动诊断。
+- `guides/30` 应把 Prompt 魔力压成一组设计者可直接自问的问题：谁在说话、谁生产共享前缀、边界画在哪里、什么可以被合法遗忘、后来者如何低成本接手。
+- `guides/31` 应把安全与省 token 压成一组输入边界问题：哪些动作、能力、上下文与 continuation 还在免费扩张，哪些检查已经没有决策增益，哪些自动化必须可撤销。
+- `guides/32` 应把源码先进性压成一组结构审读问题：权威面是否单一、contract 是否先行、transport 是否被关进 shell、recovery asset 是否成立、未来维护者是否已被当成正式消费者。
+- `philosophy/63-65` 因而成为必要收束：`63` 负责说明 Prompt 魔力为什么首先是一种“继续约束”，`64` 负责说明安全成熟为什么首先拒绝免费扩张，`65` 负责说明源码先进性为什么首先要把批评路径编码进结构。
+- `navigation/15` 因而成为必要入口：`14` 负责从现场回到制度诊断，`15` 负责从制度诊断继续回到设计自校，避免蓝皮书只会解释 Claude Code 为什么强，却不会帮助团队在设计时少犯错。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-127`
+- `claude-code-source-code/src/query/stopHooks.ts:84-120`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-270`
+- `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-397`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:235-1283`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-93`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:367-860`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/query/config.ts:1-45`
+- `claude-code-source-code/src/query/deps.ts:1-40`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+### A00l. 自反审读层之后，下一层应进入反例对照层
+
+- 当 `navigation/15 + guides/30-32 + philosophy/63-65` 已经把制度压成设计自校层后，下一步最值钱的不是继续补更多诘问，而是补反例对照层：让同一个设计问题同时出现坏解法、坏的理由、Claude Code 式正解与改写路径。
+- `casebooks/10` 应把 Prompt 魔力最常见的伪优化写成对照样例：长文案崇拜、主语漂移、共享前缀分叉、边界错放、非法遗忘、接手断裂与 cache-aware assembly 失真。
+- `casebooks/11` 应把安全与省 token 最常见的伪成熟写成对照样例：免费扩张、假统一预算器、全量可见面、无决策增益检查、不可撤销自动化、错误失败语义与错误 continuation。
+- `casebooks/12` 应把源码先进性最常见的伪优化写成对照样例：伪模块化、第二真相、transport 差异泄漏、registry 变业务中心、恢复资产缺席、zombie 温床与未来维护者被排除。
+- `navigation/16` 因而成为必要入口：`15` 负责先问“该如何自校”，`16` 负责再看“同一个问题最容易怎样被做错”，避免蓝皮书只会给正确答案，却不会帮助团队识别自己已经采用了哪类坏答案。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:105-560`
+- `claude-code-source-code/src/query/stopHooks.ts:84-120`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-270`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:235-1283`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-93`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:367-860`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/query/config.ts:1-45`
+- `claude-code-source-code/src/query/deps.ts:1-40`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/utils/cleanupRegistry.ts:1-21`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+### A00m. 反例对照层之后，下一层应进入迁移工单层
+
+- 当 `navigation/16 + casebooks/10-12` 已经把制度压成同题坏解对照层后，下一步最值钱的不是继续补更多坏案例，而是补迁移工单层：让 Prompt、治理与结构三条线都拥有明确的改写顺序、灰度阶段、停止条件与回退动作。
+- `playbooks/06` 应把 Prompt 迁移写成渐进工单：先盘点主语与 section，再分 stable prefix / dynamic boundary，再收敛共享前缀生产权，最后再切 compact / resume / handoff 路径。
+- `playbooks/07` 应把治理迁移写成渐进工单：先盘点资产，再写治理顺序，再冻结 stable bytes，再用 decision gain 取代“检查越多越安全”，最后再重写 continuation 与自动化回收。
+- `playbooks/08` 应把结构迁移写成渐进工单：先找 authoritative surface，再收回第二真相，再切 leaf module 与 seam，再收 transport shell，再补 recovery asset 与 anti-zombie 保护。
+- `navigation/17` 因而成为必要入口：`16` 负责识别“最常见的错法”，`17` 负责说明“既然知道错在哪，下一步该按什么顺序改”，避免蓝皮书只会解释设计优劣，却不帮助团队安全地迁移。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-127`
+- `claude-code-source-code/src/query/stopHooks.ts:84-120`
+- `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-397`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:235-1283`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-93`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:367-860`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/query/config.ts:1-45`
+- `claude-code-source-code/src/query/deps.ts:1-40`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:60-120`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+### A00n. 迁移工单层之后，下一层应进入 rollout 样例层
+
+- 当 `navigation/17 + playbooks/06-08` 已经把制度压成迁移执行层后，下一步最值钱的不是继续补更多“该怎么改”，而是补 rollout 样例层：把改写前后 diff、阶段观测、灰度结果与回退记录做成正式样例，让团队知道一次正确迁移看起来究竟长什么样。
+- `playbooks/09` 应把 Prompt Constitution 迁移写成完整 rollout：旧长文案如何拆成 section，稳定前缀何时切，dynamic boundary 何时切，compact / resume / handoff 何时切，以及这些切换如何留下 diff 和回退记录。
+- `playbooks/10` 应把治理顺序迁移写成完整 rollout：输入边界何时收口、stable bytes 何时冻结、decision gain stop-logic 何时上线、auto lease 何时回收，以及这些变化如何通过成本、误判与 approval race 指标被证明。
+- `playbooks/11` 应把结构迁移写成完整 rollout：authoritative surface 何时双写、第二真相何时只读投影、transport shell 何时收口、recovery asset 何时列账、anti-zombie 何时上线，以及这些变化如何通过 split truth、resume、stale-state 指标被验证。
+- `navigation/18` 因而成为必要入口：`17` 负责知道“该按什么顺序改”，`18` 负责知道“改了之后应该看到什么证据”，避免蓝皮书仍停留在方法论而没有运行样例。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-127`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-520`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-93`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:367-860`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:60-120`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

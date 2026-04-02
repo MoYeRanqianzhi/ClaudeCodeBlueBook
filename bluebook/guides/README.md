@@ -33,6 +33,9 @@
 27. [27-Prompt Constitution审读模板：section card、修宪工作流、失效台账与triage runbook](27-Prompt%20Constitution%E5%AE%A1%E8%AF%BB%E6%A8%A1%E6%9D%BF%EF%BC%9Asection%20card%E3%80%81%E4%BF%AE%E5%AE%AA%E5%B7%A5%E4%BD%9C%E6%B5%81%E3%80%81%E5%A4%B1%E6%95%88%E5%8F%B0%E8%B4%A6%E4%B8%8Etriage%20runbook.md)
 28. [28-治理顺序审计模板：失败语义矩阵、自动化租约、审批竞速与稳定字节台账](28-%E6%B2%BB%E7%90%86%E9%A1%BA%E5%BA%8F%E5%AE%A1%E8%AE%A1%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E7%9F%A9%E9%98%B5%E3%80%81%E8%87%AA%E5%8A%A8%E5%8C%96%E7%A7%9F%E7%BA%A6%E3%80%81%E5%AE%A1%E6%89%B9%E7%AB%9E%E9%80%9F%E4%B8%8E%E7%A8%B3%E5%AE%9A%E5%AD%97%E8%8A%82%E5%8F%B0%E8%B4%A6.md)
 29. [29-源码塑形审读模板：发布面矩阵、入口影子、transport shell与反zombification清单](29-%E6%BA%90%E7%A0%81%E5%A1%91%E5%BD%A2%E5%AE%A1%E8%AF%BB%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%8F%91%E5%B8%83%E9%9D%A2%E7%9F%A9%E9%98%B5%E3%80%81%E5%85%A5%E5%8F%A3%E5%BD%B1%E5%AD%90%E3%80%81transport%20shell%E4%B8%8E%E5%8F%8Dzombification%E6%B8%85%E5%8D%95.md)
+30. [30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘](30-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BBPrompt%E9%AD%94%E5%8A%9B%EF%BC%9A%E4%B8%BB%E8%AF%AD%E3%80%81%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E3%80%81%E8%BE%B9%E7%95%8C%E4%B8%8E%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98.md)
+31. [31-如何用苏格拉底诘问法审读安全与省Token：输入边界、决策增益与可撤销自动化](31-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BB%E5%AE%89%E5%85%A8%E4%B8%8E%E7%9C%81Token%EF%BC%9A%E8%BE%93%E5%85%A5%E8%BE%B9%E7%95%8C%E3%80%81%E5%86%B3%E7%AD%96%E5%A2%9E%E7%9B%8A%E4%B8%8E%E5%8F%AF%E6%92%A4%E9%94%80%E8%87%AA%E5%8A%A8%E5%8C%96.md)
+32. [32-如何用苏格拉底诘问法审读源码先进性：权威面、恢复资产与未来维护者消费者](32-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BB%E6%BA%90%E7%A0%81%E5%85%88%E8%BF%9B%E6%80%A7%EF%BC%9A%E6%9D%83%E5%A8%81%E9%9D%A2%E3%80%81%E6%81%A2%E5%A4%8D%E8%B5%84%E4%BA%A7%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85.md)
 
 ## 按使用目标阅读
 
@@ -71,6 +74,9 @@
 - 想直接看这些制度在真实失败形态里长什么样，而不是只看模板与手册：统一入口见 `../navigation/11`，对应样本见 `../casebooks/01-03`
 - 想把手册层和样本层继续接成可复用的索引层：统一入口见 `../navigation/12`，对应文档是 `../casebooks/04` 与 `../playbooks/04`
 - 想把索引层继续压成可反查、可定义、可示例的参考层：统一入口见 `../navigation/13`，对应文档是 `../casebooks/05-06` 与 `../playbooks/05`
+- 想把参考层继续压成现场可用的诊断入口，而不是先猜标签、阶段和资产：统一入口见 `../navigation/14`，对应文档是 `../casebooks/07-09`
+- 想在事故发生前先用第一性原理问题自校 Prompt 魔力、安全定价与源码先进性：统一入口见 `../navigation/15`，对应文档是 `30-32`
+- 想把这些自校问题继续压成“坏解法 / 为什么坏 / 正解 / 改写路径”的对照样例：统一入口见 `../navigation/16`，对应文档是 `../casebooks/10-12`
 
 ## 与其他目录的边界
 

@@ -276,6 +276,31 @@
 - `casebooks/06` 当前应负责 “tag -> sample -> playbook -> chapter -> source anchor” 的 crosswalk，避免知道标签却找不到正文与代码
 - `playbooks/05` 当前应负责三类完整填表示例，避免模板层在实际使用时仍然过空
 - `navigation/13` 的职责应稳定为“索引层如何进入参考层”，避免 `12` 同时承担结构索引和具体参考入口
+- 当 `casebooks/05-06 + playbooks/05` 稳定后，下一步最值钱的不是继续补更多定义，而是补多入口反查层：按症状、按阶段与按资产定位制度失效
+- `casebooks/07` 当前应负责 symptom-first 反查：先把 `cache break / cost spike / wrong allow / wrong deny / split truth / replay mismatch / stale state / zombie risk` 重新路由回 Prompt、治理与结构三条主线
+- `casebooks/08` 当前应负责 phase-first 反查：按 `design / assembly / runtime / recovery / evolution` 判断制度断裂最早诞生在哪一层，而不是把所有锅都丢给 runtime
+- `casebooks/09` 当前应负责 asset-first 反查：按 `section / boundary / stable bytes / shadow-stub / transport shell / recovery asset / object state` 这些正式资产定位失效，而不是只按文件名搜索
+- `navigation/14` 的职责应稳定为“参考层如何进入现场诊断层”，避免 `13` 同时承担字典/锚点与多入口反查两类职责
+- 当 `navigation/14 + casebooks/07-09` 稳定后，下一步最值钱的不是继续补更多诊断表，而是补自反审读层：把 Prompt 魔力、安全定价与源码先进性压成设计前就能自问自校的问题梯子
+- `guides/30` 当前应负责 Prompt 魔力的苏格拉底审读：主语、共享前缀、section 宪法、边界、合法遗忘与接手连续性
+- `guides/31` 当前应负责安全与省 token 的苏格拉底审读：输入边界、失败语义、stable bytes、最小可见面、decision gain 与可撤销自动化
+- `guides/32` 当前应负责源码先进性的苏格拉底审读：authoritative surface、contract-first、leaf module、transport shell、recovery asset、anti-zombie 与未来维护者消费者
+- `navigation/15` 的职责应稳定为“现场诊断层如何进入设计自校层”，避免 `14` 同时承担事故排障与设计反思两类入口职责
+- 当 `navigation/15 + guides/30-32` 稳定后，下一步最值钱的不是继续补更多问题，而是补反例对照层：把同题坏解、伪优化与 Claude Code 式改写路径并排写清
+- `casebooks/10` 当前应负责 Prompt 反例对照：长文案崇拜、主语漂移、共享前缀分叉、边界错放、非法遗忘与接手断裂
+- `casebooks/11` 当前应负责安全反例对照：免费扩张、假统一预算器、全量可见面、无决策增益检查、不可撤销自动化、错误失败语义与错误 continuation
+- `casebooks/12` 当前应负责源码反例对照：伪模块化、第二真相、transport 泄漏、registry 变业务中心、恢复资产缺席、zombie 温床与未来维护者被排除
+- `navigation/16` 的职责应稳定为“设计自校层如何进入同题对照层”，避免 `15` 同时承担抽象诘问与对照样例两类入口职责
+- 当 `navigation/16 + casebooks/10-12` 稳定后，下一步最值钱的不是继续补更多反例，而是补迁移工单层：把改写顺序、灰度阶段、停止条件与回退动作写成正式 playbook
+- `playbooks/06` 当前应负责 Prompt 迁移工单：从长文案到 section 宪法、主语链、共享前缀、合法遗忘与 handoff continuity 的渐进改写
+- `playbooks/07` 当前应负责治理迁移工单：从规则堆叠到资产清单、治理顺序、stable bytes、decision gain 与可撤销自动化的渐进改写
+- `playbooks/08` 当前应负责结构迁移工单：从第二真相与伪模块化到 authoritative surface、transport shell、recovery asset 与 anti-zombie 结构的渐进改写
+- `navigation/17` 的职责应稳定为“反例对照层如何进入迁移执行层”，避免 `16` 同时承担对照样例与执行工单两类入口职责
+- 当 `navigation/17 + playbooks/06-08` 稳定后，下一步最值钱的不是继续补更多迁移步骤，而是补 rollout 样例层：把改写前后 diff、评审问题卡、灰度结果与回退记录做成正式样例
+- `playbooks/09` 当前应负责 Prompt rollout 样例：section 拆分、边界切换、共享前缀收敛、合法遗忘与 handoff continuity 的灰度记录
+- `playbooks/10` 当前应负责治理 rollout 样例：输入边界收口、治理顺序切换、stable bytes 冻结、decision gain stop-logic 与 auto lease 回收的灰度记录
+- `playbooks/11` 当前应负责结构 rollout 样例：authoritative surface 收口、第二真相回收、transport shell 切换、recovery asset 建账与 anti-zombie 规则灰度记录
+- `navigation/18` 的职责应稳定为“迁移工单层如何进入 rollout 证据层”，避免 `17` 同时承担执行步骤与 rollout 样例两类入口职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释
