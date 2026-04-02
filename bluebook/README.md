@@ -95,6 +95,7 @@
 - 想直接看这些最小共享工件在真实执行里最常怎样重新退回局部真相，再读 [navigation/28-Artifact Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相](navigation/28-Artifact%20Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相.md)
 - 想直接看系统应怎样正式拒绝这些 drift，而不是只停在识别，再读 [navigation/29-Artifact Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验](navigation/29-Artifact%20Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验.md)
 - 想直接看这些拒绝条件怎样继续被压成 machine-readable rule packet，再读 [navigation/30-Artifact Rule ABI导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何共享同一规则包](navigation/30-Artifact%20Rule%20ABI导航：Hard%20Fail、Lint%20Warn、Reviewer%20Gate、Handoff%20Reject%20与%20Rewrite%20Hint%20如何共享同一规则包.md)
+- 想直接看这些 rule packet 怎样被最小样例、失败样例与 evaluator 反复验证，再读 [navigation/31-Artifact Rule Sample Kit导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何被反复验证](navigation/31-Artifact%20Rule%20Sample%20Kit导航：Hard%20Fail、Lint%20Warn、Reviewer%20Gate、Handoff%20Reject%20与%20Rewrite%20Hint%20如何被反复验证.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -261,6 +262,7 @@
 - 想直接看这些最小共享工件在真实执行里怎样重新漂移回局部真相，再读 [navigation/28-Artifact Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相](navigation/28-Artifact%20Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相.md)
 - 想直接看这些 drift 应怎样被正式编译成 validator / linter / reject rule，再读 [navigation/29-Artifact Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验](navigation/29-Artifact%20Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验.md)
 - 想直接看这些 validator / linter 怎样继续统一成一份共享拒收语义的 rule ABI，再读 [navigation/30-Artifact Rule ABI导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何共享同一规则包](navigation/30-Artifact%20Rule%20ABI导航：Hard%20Fail、Lint%20Warn、Reviewer%20Gate、Handoff%20Reject%20与%20Rewrite%20Hint%20如何共享同一规则包.md)
+- 想直接看这些 rule ABI 怎样继续被最小规则样例、失败样例与 evaluator 接口反复证明，再读 [navigation/31-Artifact Rule Sample Kit导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何被反复验证](navigation/31-Artifact%20Rule%20Sample%20Kit导航：Hard%20Fail、Lint%20Warn、Reviewer%20Gate、Handoff%20Reject%20与%20Rewrite%20Hint%20如何被反复验证.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
@@ -399,6 +401,10 @@
 
 - `navigation/30 -> api/40 -> api/41 -> api/42 -> philosophy/71`
 
+### 为什么 Artifact Rule ABI 还必须继续进入 Sample Kit / Evaluator 层
+
+- `navigation/31 -> playbooks/20 -> playbooks/21 -> playbooks/22 -> philosophy/72`
+
 ### 为什么高行动力来自统一定价而不是统一放权
 
 - `architecture/50 -> architecture/56 -> architecture/68 -> architecture/71 -> philosophy/58`
@@ -456,3 +462,4 @@
 - 想直接看这些最小共享工件怎样在 artifact 层重新退回局部真相，再读 [navigation/28-Artifact Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相](navigation/28-Artifact%20Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相.md)
 - 想直接看这些 drift 怎样继续被编译成自动校验、reviewer gate 与 handoff reject，再读 [navigation/29-Artifact Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验](navigation/29-Artifact%20Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验.md)
 - 想直接看这些 reject 语义怎样继续被统一成 machine-readable rule packet，再读 [navigation/30-Artifact Rule ABI导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何共享同一规则包](navigation/30-Artifact%20Rule%20ABI导航：Hard%20Fail、Lint%20Warn、Reviewer%20Gate、Handoff%20Reject%20与%20Rewrite%20Hint%20如何共享同一规则包.md)
+- 想直接看这些 rule packet 怎样继续被最小样例、失败样例与 evaluator 反复证明，再读 [navigation/31-Artifact Rule Sample Kit导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何被反复验证](navigation/31-Artifact%20Rule%20Sample%20Kit导航：Hard%20Fail、Lint%20Warn、Reviewer%20Gate、Handoff%20Reject%20与%20Rewrite%20Hint%20如何被反复验证.md)
