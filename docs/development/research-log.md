@@ -164,6 +164,32 @@
 - `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00f. 团队落地包之后，下一层应进入运营与复盘层
+
+- 当 `guides/27-29` 已经把制度压成模板层后，下一步最值钱的不是继续往 `guides/` 里堆更多 checklist，而是把目录显式分成 `guides/` 与 `playbooks/`：前者负责设计与迁移方法，后者负责回归、事故复盘、运营与演化演练。
+- Prompt Constitution 的最终形态不只是 section card 和修宪流程，还必须有 `playbooks/01` 这一类运行手册：section drift、boundary drift、lawful forgetting 失败、prompt invalidation 漂移都要进入正式回归与复盘。
+- 治理顺序的最终形态不只是顺序表和矩阵，还必须有 `playbooks/02` 这一类运营手册：approval race、auto mode 回收、stable bytes drift、stop-logic 漏洞都要进入正式事故分类与演练。
+- 源码先进性的最终形态不只是 build surface / shadow / transport shell 模板，还必须有 `playbooks/03` 这一类演化手册：shadow-stub 退出、compat 壳层收缩、recovery drill 与 anti-zombie 故障模型都要进入正式结构运营。
+- 这意味着蓝皮书目录继续从七层推进到八层：主线结论 -> 导航入口 -> 机制底盘 -> API 支持 -> 哲学解释 -> 使用方法 -> 运营 playbooks -> 风险专题；`docs/` 仍只负责开发记忆而不进入正文。
+- `navigation/10` 因而成为必要入口：`09` 承接“模板层”，`10` 承接“运营层”，否则团队动作层与运营层会再次混写。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-62`
+- `claude-code-source-code/src/utils/analyzeContext.ts:937-1048`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/cli/structuredIO.ts:561-608`
+- `claude-code-source-code/src/hooks/toolPermission/handlers/interactiveHandler.ts:244-300`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-860`
+- `claude-code-source-code/scripts/prepare-src.mjs:3-64`
+- `claude-code-source-code/scripts/stub-modules.mjs:2-42`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:60-120`
+- `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。
