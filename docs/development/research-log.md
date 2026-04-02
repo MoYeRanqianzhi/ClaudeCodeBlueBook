@@ -7,6 +7,43 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A027. 宿主修复失真之后，下一层应进入宿主修复纠偏层
+
+- Prompt repair distortion 即使已经被写成 repair object 伪绑定、摘要回滚与假重入的反例，如果团队不能进一步把这些失真压回固定纠偏顺序、拒收升级路径与改写模板骨架，Prompt 修复就仍会围绕更制度化的事故叙事工作；这说明 Prompt 线下一层最值钱的不是继续补坏样例，而是把 repair distortion 压成 repair correction guide。
+- Governance repair distortion 即使已经被写成 authority 假恢复、假窗口重置与免费重入的反例，如果团队不能进一步把这些失真压回固定纠偏顺序、拒收升级路径与改写模板骨架，安全设计与省 token 设计就仍会围绕 mode、面板与默认继续各自修补；这说明治理线下一层最值钱的不是继续补坏样例，而是把 repair distortion 压成 repair correction guide。
+- Structure repair distortion 即使已经被写成 breadcrumb 篡位、旁路写回与 anti-zombie 伪证明的反例，如果团队不能进一步把这些失真压回固定纠偏顺序、拒收升级路径与改写模板骨架，源码先进性就仍会围绕目录美学、日志繁荣与恢复成功率工作；这说明结构线下一层最值钱的不是继续补坏样例，而是把 repair distortion 压成 repair correction guide。
+- 这意味着蓝皮书在宿主修复失真之后需要继续长出“宿主修复纠偏层”：
+  - `navigation/57` 负责统一入口。
+  - `guides/63-65` 负责三类宿主修复演练失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 guide 叙述，而是考虑新的 `api/60+` 或 `playbooks/41+`，把这些 repair correction 继续压成宿主可消费规则面或新的演练手册。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:343-347`
+- `claude-code-source-code/src/utils/api.ts:136-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:84-645`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
 ### A026. 宿主修复演练之后，下一层应进入宿主修复失真反例层
 
 - Prompt repair drill 即使已经被写成共享升级卡、rollback drill 与 re-entry drill，如果团队不能进一步指出 repair object 伪绑定、protocol truth 被修复说明掩盖、摘要回滚与假重入这些失真，Prompt 修复就仍会围绕更制度化的事故叙事工作；这说明 Prompt 线下一层最值钱的不是继续补 playbook，而是把 repair drill 压成 repair distortion casebook。

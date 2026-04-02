@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复失真 / repair distortion casebook”继续推进到“宿主修复纠偏 / repair correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复失真如果要真正纠偏，必须先把 repair object 从事故说明与摘要故事里降回对象绑定，再把 protocol truth、rollback boundary、lawful forgetting object 与 re-entry gate 重新拉回固定顺序，而不是继续围绕修复解释、旧 summary 与默认继续修补。
+  - 治理宿主修复失真如果要真正纠偏，必须先把 mode 恢复降回 authority 投影，再把 ledger、decision window、continuation repricing 与 rollback object 重新拉回固定顺序，而不是继续围绕面板刷新、审批完成感与免费继续修补。
+  - 结构宿主修复失真如果要真正纠偏，必须先把 breadcrumb、重连通过感与日志繁荣降回辅助信号，再把 authority object、resume order、writeback 主路径与 anti-zombie projection 重新拉回固定顺序，而不是继续围绕 pointer、成功率与目录美学修补。
+- 新增目录责任：
+  - `navigation/57` 负责宿主修复纠偏入口。
+  - `guides/63-65` 负责三类宿主修复演练失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些修复演练信号在说谎”，还要写“纠偏时先救哪个对象、哪些现象必须直接 hard reject、模板骨架该如何改写”。
+  - 每次继续深化都要回答“当前 repair correction 保护的是单一真相的恢复能力，还是只是在修补一个更制度化的修复叙事”。
 - 蓝皮书已经从“宿主修复演练 / repair drill”继续推进到“宿主修复失真 / repair distortion casebook”层。
 - 新增结论：
   - Prompt 宿主修复演练即使已经有 repair card、rollback drill 与 re-entry drill，仍最容易死于 repair object 伪绑定、protocol truth 被修复说明掩盖、摘要回滚与默认继续；否则 Prompt 的编译链魔力会在修复层重新退回事故叙事与按钮状态。

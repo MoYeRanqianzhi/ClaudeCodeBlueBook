@@ -98,5 +98,6 @@
 - 再往下一层，应由 `../navigation/53 -> ../guides/60-62` 继续回答“怎样把这些执行失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
 - `casebooks/34-36` 继续回答“宿主修复演练明明已经存在，为什么仍会重新退回 repair object 伪绑定、authority 假恢复、breadcrumb 篡位、摘要回滚、免费重入与 anti-zombie 伪证明等更高级修复幻觉”。
 - 再往下一层，应由 `../navigation/56 -> ../casebooks/34-36` 继续回答“这些修复演练最常怎样死于看起来已经更制度化的假修复、假回滚与假重入”。
+- 再往下一层，应由 `../navigation/57 -> ../guides/63-65` 继续回答“怎样把这些 repair drill 失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
 - 再往下一层，应由 `../navigation/29 -> ../guides/39-41` 继续回答“怎样把这些 drift 原型编译成 validator / linter / reject rule”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。
