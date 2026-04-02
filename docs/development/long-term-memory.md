@@ -9,6 +9,39 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复稳态纠偏协议 / repair steady-state correction protocol”继续推进到“宿主修复稳态纠偏执行 / repair steady-state correction execution”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏协议如果要真正可执行，必须继续把 `steady_correction_object`、`truth_continuity_recovery`、`stable_prefix_recustody`、`continuation_requalification` 与 `threshold_reinstatement` 压成 correction card、固定 recovery verdict order 与 re-entry / reopen drill，而不是继续停在 steady note 与 protocol 字段层；否则 Prompt 魔力会重新退回“更正式的纠偏说明”。
+  - 治理宿主修复稳态纠偏协议如果要真正统一安全设计与省 token 设计，必须继续把 `authority_reassertion`、`ledger_reseal`、`window_refreeze`、`continuation_repricing`、`capability_recustody` 与 `threshold_rebinding` 压成 correction card、固定 verdict order 与 liability drill，而不是继续停在 mode 面板、usage dashboard 与 protocol 口号；否则 authority、定价、能力与责任会再次脱钩。
+  - 结构宿主修复稳态纠偏协议如果要真正让 later 维护者独立执行，必须继续把 `authority_rebind`、`resume_lineage_rebuild`、`writeback_recustody`、`anti_zombie_reproof`、`archive_truth_restitution` 与 `reservation_rebinding` 压成 correction card、固定执行顺序与 reopen responsibility drill，而不是继续停在 pointer、telemetry、archive prose 与作者说明；否则源码先进性会重新退回健康感与复盘叙事。
+- 新增目录责任：
+  - `navigation/75` 负责宿主修复稳态纠偏执行入口。
+  - `playbooks/53-55` 负责三类宿主修复稳态纠偏协议的 correction card、执行顺序与再入场责任演练。
+- 当前新的写作约束：
+  - 不再只写“steady-state correction protocol 该消费哪些对象”，还要写“现场先看哪张 correction card、先执行哪个对象、何时必须降级 verdict、谁有权宣布 restored、re-entry / reopen 到底回哪个边界”。
+  - 每次继续深化都要回答“当前 steady-state correction execution 保护的是无人继续盯防时的真相延续，还是只是在把 protocol 运行成一套更制度化的售后流程”。
+- 蓝皮书已经从“宿主修复稳态纠偏 / repair steady-state correction guide”继续推进到“宿主修复稳态纠偏协议 / repair steady-state correction protocol”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏如果要真正可被宿主、CI、评审与交接共享消费，必须继续把 `truth continuity recovery`、`stable prefix recustody`、`baseline dormancy reseal`、`continuation requalification`、`handoff continuity repair` 与 `threshold reinstatement` 压成同一个 correction object，而不是继续停在 steady note、summary prose 与平静感；否则 Prompt 魔力会从编译链重新退回叙事链。
+  - 治理宿主修复稳态纠偏如果要真正统一安全设计与省 token 设计，必须继续把 `authority reassertion`、`ledger reseal`、`window refreeze`、`continuation repricing`、`capability recustody` 与 `threshold rebinding` 压成同一个治理 correction object，而不是继续围绕 mode 面板、usage dashboard 与保守建议工作；否则 authority、定价、能力与责任会重新分裂成多套投影。
+  - 结构宿主修复稳态纠偏如果要真正让作者退场后真相仍可存活，必须继续把 `authority rebind`、`resume lineage rebuild`、`writeback recustody`、`anti_zombie reproof`、`archive truth restitution` 与 `reservation rebinding` 压成同一个结构 correction object，而不是继续围绕 pointer、telemetry、archive prose 与作者说明工作；否则源码先进性会重新退回健康感与复盘叙事。
+- 新增目录责任：
+  - `navigation/74` 负责宿主修复稳态纠偏协议入口。
+  - `api/72-74` 负责三类宿主修复稳态执行失真的宿主可消费修正对象、拒收升级语义与长期 reopen 责任面。
+- 当前新的写作约束：
+  - 不再只写“steady-state correction 应按什么顺序修”，还要写“纠偏结果该被哪些消费者共享、哪些 reject / escalation 语义必须共用、哪些 threshold / reservation 字段必须被长期保留”。
+  - 每次继续深化都要回答“当前 steady-state correction protocol 保护的是无人继续盯防时可反对、可重开、可重建的正式条件，还是只是在制造一套更正式的纠偏售后说明”。
+- 蓝皮书已经从“宿主修复稳态失真 / repair steady-state distortion casebook”继续推进到“宿主修复稳态纠偏 / repair steady-state correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复稳态失真如果要真正纠偏，必须先冻结假稳态，再把 `truth_continuity`、`stable_prefix_custody`、`baseline_dormancy_seal`、`continuation_eligibility`、`handoff_continuity_warranty` 与 `reopen_threshold` 拉回同一个 `compiled request truth`，而不是继续围绕 summary、平静感与默认 continuation 修补；否则 Prompt 的编译链魔力会在 steady-state 层退回叙事链。
+  - 治理宿主修复稳态失真如果要真正纠偏，必须先拆掉 authority 投影，再把 `authority_continuity`、`ledger_dormancy_seal`、`window_dormancy`、`continuation_pricing_covenant`、`capability_custody` 与 `reopen_threshold` 拉回同一个统一定价治理对象，而不是继续围绕 mode 面板、usage dashboard 与经验式保守建议修补；否则安全设计与省 token 设计会在 steady-state 层重新脱钩。
+  - 结构宿主修复稳态失真如果要真正纠偏，必须先 demote pointer、side-write、监控转绿与 archive prose，再把 `authority_continuity`、`resume_continuity_seal`、`writeback_custody`、`anti_zombie_dormancy`、`archive_truth` 与 `reopen_reservation_boundary` 拉回同一个结构真相面，而不是继续围绕 pointer、telemetry 与作者说明修补；否则源码先进性会在 steady-state 层退回健康感、复盘文本与 reconnect 提示。
+- 新增目录责任：
+  - `navigation/73` 负责宿主修复稳态纠偏入口。
+  - `guides/75-77` 负责三类宿主修复稳态执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“steady-state distortion 在说谎”，还要写“纠偏时先冻结哪个假 steady 信号、再救哪个正式对象、哪些情况必须直接 hard reject、模板骨架该如何重写”。
+  - 每次继续深化都要回答“当前 steady-state correction 保护的是未来仍可反对当前 steady 的正式条件，还是只是在制造一份更制度化的平静叙事”。
 - 蓝皮书已经从“宿主修复稳态执行 / repair steady-state execution”继续推进到“宿主修复稳态失真 / repair steady-state distortion casebook”层。
 - 新增结论：
   - Prompt 宿主修复稳态执行即使已经有 steady-state card、continuity verdict order、re-entry threshold 与 residual reopen drill，仍最容易死于假稳态、前缀托管表演、handoff 口头化与无阈值继续；否则 Prompt 的编译链魔力会在稳态层重新退回 summary、平静感与继续幻觉。

@@ -7,6 +7,135 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A045. 宿主修复稳态纠偏协议之后，下一层应进入宿主修复稳态纠偏执行层
+
+- Prompt repair steady-state correction protocol 即使已经把 correction object、reject semantics 与 threshold retention 压成正式规则面，如果团队不能继续把这些对象压成 correction card、recovery verdict order、requalification drill 与 threshold reinstatement drill，Prompt 世界就仍会继续围绕 steady note、summary prose 与“最近没出事”工作；这说明 Prompt 线下一层最值钱的不是继续补 protocol，而是把 repair steady-state correction protocol 压成 repair steady-state correction execution。
+- Governance repair steady-state correction protocol 即使已经把 authority、ledger、window、pricing、custody 与 threshold 压成 shared rule surface，如果团队不能继续把这些对象压成 correction card、correction verdict order、capability recustody 与 liability drill，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与保守建议工作；这说明治理线下一层最值钱的不是继续补 protocol，而是把 repair steady-state correction protocol 压成 repair steady-state correction execution。
+- Structure repair steady-state correction protocol 即使已经把 authority、resume、writeback、anti-zombie、archive 与 reservation 压成 later 维护者也能消费的规则面，如果团队不能继续把这些对象压成 correction card、correction verdict order、archive restitution 与 reopen responsibility drill，源码先进性就仍会继续围绕 pointer、telemetry、archive prose 与作者说明工作；这说明结构线下一层最值钱的不是继续补 protocol，而是把 repair steady-state correction protocol 压成 repair steady-state correction execution。
+- 这意味着蓝皮书在宿主修复稳态纠偏协议之后需要继续长出“宿主修复稳态纠偏执行层”：
+  - `navigation/75` 负责统一入口。
+  - `playbooks/53-55` 负责三类宿主修复稳态纠偏协议的 correction card、执行顺序与再入场责任演练。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 execution 口号，而是考虑新的 `casebooks/49-51`，把这些 steady-state correction execution 最常见的假修正卡、假恢复顺序与假责任演练写成新的反例层。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:343-347`
+- `claude-code-source-code/src/utils/api.ts:136-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1533-1541`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/cli/print.ts:1052-1075`
+- `claude-code-source-code/src/cli/print.ts:4568-4641`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:84-645`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/query.ts:1308-1518`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
+### A044. 宿主修复稳态纠偏之后，下一层应进入宿主修复稳态纠偏协议层
+
+- Prompt repair steady-state correction 即使已经把假稳态、前缀托管表演与无阈值继续压回固定纠偏顺序、硬拒收与模板骨架，如果团队不能继续把这些纠偏结果压成宿主可消费 correction object、reject semantics 与 threshold retention rule surface，Prompt 世界就仍会继续围绕 steady note、summary prose 与“最近没出事”工作；这说明 Prompt 线下一层最值钱的不是继续补 guide，而是把 repair steady-state correction 压成 repair steady-state correction protocol。
+- Governance repair steady-state correction 即使已经把 authority、ledger、window、pricing、custody 与 threshold 压回固定纠偏顺序，如果团队不能继续把这些结果压成 shared correction object、liability semantics 与 reopen threshold rule surface，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与保守建议工作；这说明治理线下一层最值钱的不是继续补 guide，而是把 repair steady-state correction 压成 repair steady-state correction protocol。
+- Structure repair steady-state correction 即使已经把 authority、resume、writeback、anti-zombie、archive 与 reservation 压回固定纠偏顺序，如果团队不能继续把这些结果压成 later 维护者也能独立消费的 correction object、reject semantics 与 reservation boundary rule surface，源码先进性就仍会继续围绕 pointer、telemetry、archive prose 与作者说明工作；这说明结构线下一层最值钱的不是继续补 guide，而是把 repair steady-state correction 压成 repair steady-state correction protocol。
+- 这意味着蓝皮书在宿主修复稳态纠偏之后需要继续长出“宿主修复稳态纠偏协议层”：
+  - `navigation/74` 负责统一入口。
+  - `api/72-74` 负责三类宿主修复稳态执行失真的宿主可消费修正对象、拒收升级语义与长期 reopen 责任面。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 protocol 口号，而是考虑新的 `playbooks/53-55`，把这些 steady-state correction protocol 继续压成固定 correction card、reject 顺序与 re-entry / reopen 责任演练。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:343-347`
+- `claude-code-source-code/src/utils/api.ts:136-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1533-1541`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/cli/print.ts:1052-1075`
+- `claude-code-source-code/src/cli/print.ts:4568-4641`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:84-645`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/query.ts:1308-1518`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
+### A043. 宿主修复稳态失真之后，下一层应进入宿主修复稳态纠偏层
+
+- Prompt repair steady-state distortion 即使已经把假稳态、前缀托管表演与无阈值继续写成反例，如果团队不能继续把这些失真压回固定纠偏顺序、硬拒收与模板骨架，Prompt 世界就仍会继续围绕 summary、平静感与“先继续再说”工作；这说明 Prompt 线下一层最值钱的不是继续补坏样例，而是把 repair steady-state distortion 压成 repair steady-state correction guide。
+- Governance repair steady-state distortion 即使已经把假稳态、能力托管表演与免费继续复活写成反例，如果团队不能继续把这些失真压回 authority、ledger、window、pricing、custody 与 threshold 的固定纠偏顺序，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与经验式保守建议工作；这说明治理线下一层最值钱的不是继续补坏样例，而是把 repair steady-state distortion 压成 repair steady-state correction guide。
+- Structure repair steady-state distortion 即使已经把假稳态、归档托管表演与假边界保留写成反例，如果团队不能继续把这些失真压回 authority、resume、writeback、anti-zombie、archive 与 reservation 的固定纠偏顺序，源码先进性就仍会继续围绕 pointer、telemetry、archive prose 与作者说明工作；这说明结构线下一层最值钱的不是继续补坏样例，而是把 repair steady-state distortion 压成 repair steady-state correction guide。
+- 这意味着蓝皮书在宿主修复稳态失真之后需要继续长出“宿主修复稳态纠偏层”：
+  - `navigation/73` 负责统一入口。
+  - `guides/75-77` 负责三类宿主修复稳态执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补纠偏口号，而是考虑新的 `api/72-74`，把这些 steady-state correction 继续压成宿主可消费的纠偏规则面、拒收语义与长期 reopen 责任面。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:343-347`
+- `claude-code-source-code/src/utils/api.ts:136-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1533-1541`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/cli/print.ts:1052-1075`
+- `claude-code-source-code/src/cli/print.ts:4568-4641`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:84-645`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/query.ts:1308-1518`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
 ### A042. 宿主修复稳态执行之后，下一层应进入宿主修复稳态失真层
 
 - Prompt repair steady-state execution 即使已经被写成 steady-state card、continuity verdict order、re-entry threshold 与 residual reopen drill，如果团队不能继续把这些执行层最常怎样退回假稳态、前缀托管表演与无阈值继续写成新的反例层，Prompt 世界就仍会继续围绕 summary、平静感与“应该还能继续”工作；这说明 Prompt 线下一层最值钱的不是继续补 playbook，而是把 repair steady-state execution 压成 repair steady-state distortion casebook。

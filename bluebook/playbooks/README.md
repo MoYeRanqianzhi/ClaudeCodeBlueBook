@@ -69,6 +69,9 @@
 50. [50-Prompt宿主修复稳态执行手册：steady-state card、continuity verdict order、re-entry threshold与residual reopen drill](50-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Asteady-state%20card%E3%80%81continuity%20verdict%20order%E3%80%81re-entry%20threshold%E4%B8%8Eresidual%20reopen%20drill.md)
 51. [51-治理宿主修复稳态执行手册：steady-state card、pricing verdict order、capability custody与liability drill](51-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Asteady-state%20card%E3%80%81pricing%20verdict%20order%E3%80%81capability%20custody%E4%B8%8Eliability%20drill.md)
 52. [52-结构宿主修复稳态执行手册：steady-state card、steady verdict order、archive custody、re-entry threshold与reopen reservation drill](52-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Asteady-state%20card%E3%80%81steady%20verdict%20order%E3%80%81archive%20custody%E3%80%81re-entry%20threshold%E4%B8%8Ereopen%20reservation%20drill.md)
+53. [53-Prompt宿主修复稳态纠偏执行手册：correction card、recovery verdict order、requalification drill与threshold reinstatement drill](53-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Acorrection%20card%E3%80%81recovery%20verdict%20order%E3%80%81requalification%20drill%E4%B8%8Ethreshold%20reinstatement%20drill.md)
+54. [54-治理宿主修复稳态纠偏执行手册：correction card、correction verdict order、capability recustody与threshold rebinding drill](54-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Acorrection%20card%E3%80%81correction%20verdict%20order%E3%80%81capability%20recustody%E4%B8%8Ethreshold%20rebinding%20drill.md)
+55. [55-结构宿主修复稳态纠偏执行手册：correction card、correction verdict order、archive restitution、re-entry threshold与reopen responsibility drill](55-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Acorrection%20card%E3%80%81correction%20verdict%20order%E3%80%81archive%20restitution%E3%80%81re-entry%20threshold%E4%B8%8Ereopen%20responsibility%20drill.md)
 
 ## 按目标阅读
 
@@ -102,6 +105,7 @@
 - 想继续看这些宿主修复解除监护执行明明已经存在，为什么仍会重新退回静默放行、免责式出监与假退休，而不是误把 released 当成正式证明：`../navigation/68 -> ../casebooks/43 -> ../casebooks/44 -> ../casebooks/45`
 - 想继续把这些宿主修复稳态协议压成真正值班可执行的巡检卡、稳态判定顺序、再入场阈值与 residual reopen 责任演练，而不是停在 steady-state contract 字段层：`../navigation/71 -> 50 -> 51 -> 52`
 - 想继续看这些宿主修复稳态执行明明已经存在，为什么仍会重新退回假稳态、假托管与假阈值，而不是误把 steady-state card 当成正式证明：`../navigation/72 -> ../casebooks/46 -> ../casebooks/47 -> ../casebooks/48`
+- 想继续把这些宿主修复稳态纠偏协议压成真正值班可执行的 correction card、执行顺序与再入场责任演练，而不是停在 correction protocol 字段层：`../navigation/75 -> 53 -> 54 -> 55`
 
 ## 与其他目录的边界
 
@@ -135,5 +139,7 @@
 - 再往下一层，应由 `../navigation/70 -> ../api/69-71 -> ../navigation/71 -> 50-52` 继续回答“怎样把这些宿主修复稳态协议继续压成固定巡检卡、稳态判定顺序、再入场阈值与 residual reopen 责任演练”。
 - 再往下一层，应由 `../navigation/72 -> ../casebooks/46-48` 继续回答“为什么这些宿主修复稳态执行明明已经存在，仍会重新退回假稳态、假托管与假阈值”。
 - 再往下一层，应由 `../navigation/73 -> ../guides/75-77` 继续回答“怎样把这些稳态执行失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
+- 再往下一层，应由 `../navigation/74 -> ../api/72-74 -> ../navigation/75 -> 53-55` 继续回答“怎样把这些稳态纠偏协议继续压成固定 correction card、执行顺序与 re-entry / reopen 责任演练”。
+- 再往下一层，应由 `../navigation/76 -> ../casebooks/49-51` 继续回答“为什么这些宿主修复稳态纠偏执行明明已经存在，仍会重新退回假修正卡、假恢复顺序与假责任演练”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。
