@@ -93,6 +93,10 @@ Claude Code 更成熟的地方在于，它先问：
 
 - 谁的界面看起来更像主语，谁就暂时说了算
 
+也正因为如此，`permission_mode`、`session_state_changed` 与 host 可见状态链条的价值，不在于“宿主终于看见 mode 了”，而在于：
+
+- authority 已经被外化成单一真相链，而不再只是界面形态
+
 ## 4. 第二层：可见世界本身就是成本与风险
 
 如果系统允许模型先看见几乎全量世界，再谈要不要执行动作，那么：
@@ -136,6 +140,8 @@ Claude Code 更接近的真相是：
 3. 当前成本是由哪些扩张产生的。
 4. 当前继续资格还剩下什么正式条件。
 
+只有当 `context usage + deferred categories + reserved buffer + api usage` 被继续当成同一个 decision window 对象时，这些解释才成立；否则再细的图表也只是更复杂的统计幻觉。
+
 ## 6. 第四层：能力暴露与动作许可是同一类定价
 
 把权限系统只理解成“允不允许调用工具”，会严重低估治理控制面的范围。
@@ -173,6 +179,12 @@ Claude Code 更接近的真相是：
 
 这也是为什么 diminishing returns、headless deny、pending action 与 session metadata 会进入同一判断链。
 
+更进一步，低摩擦自动化并不是绕过安全，而是只为已定价、范围已足够窄的动作省 classifier 成本。换句话说，真正成熟的系统不会把 classifier 当作额外负担，而会继续追问：
+
+- classifier 自己值不值得这笔价格
+
+如果 classifier 开销反客为主，治理控制面就会在自我保护时自我膨胀。
+
 ## 8. 第六层：rollback object 让治理不退回运维补救
 
 如果治理失败后只剩：
@@ -208,6 +220,14 @@ Claude Code 更成熟的地方在于，它持续要求：
 Claude Code 更值得学的地方是：
 
 - 它不断把失败、继续、回退与重开写成同一套正式语义，而不是只保留产品侧的“还能不能点下一步”
+
+这也是为什么 `requires_action -> pending_action -> session_state_changed` 这条 writeback seam 如此关键。它同时决定：
+
+1. 当前为什么被拦。
+2. 当前还能不能继续。
+3. 当前什么时候算真正 turn-over。
+
+一旦这条 seam 丢失，安全与成本就会一起退回猜测状态。
 
 ## 10. 苏格拉底式追问
 

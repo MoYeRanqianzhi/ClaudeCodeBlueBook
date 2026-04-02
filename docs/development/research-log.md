@@ -136,6 +136,13 @@
 - 这也意味着 `74-84` 应被视为一条连续小循环，而不是十一篇并列文章：`纠偏协议 -> 纠偏执行 -> 纠偏执行失真 -> 再纠偏 -> 再纠偏协议 -> 再纠偏执行 -> 再纠偏执行失真 -> 再纠偏改写 -> 再纠偏改写协议 -> 再纠偏改写执行 -> 再纠偏改写执行失真`。
 - 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补坏样例名录，而是考虑新的 `guides/84-86`，把这些 steady-state correction-of-correction rewrite execution distortion 重新压回固定 rewrite 顺序、拒收升级路径与改写模板骨架。
 
+### A055. Prompt 魔力、治理控制面与源码先进性三条线还可以继续向下压缩到运行时法律地位
+
+- Prompt 线新增的高价值事实是：section registry 本身有 runtime 生命周期，`/compact` 之后会被清理、重建与续接；`agent_listing_delta`、`mcp_instructions_delta`、`skill_discovery` 这类 attachment 被故意晚绑定，因为它们本来就不该进入 stable prefix 正文。这意味着 Prompt 魔力的深层，不只在“怎样编译”，还在“哪些对象有资格长期进入宪法正文，哪些对象只能临场修正”。
+- 治理线新增的高价值事实是：authority 必须被外化成单一真相链；classifier 自己也必须被纳入 continuation pricing；`requires_action -> pending_action -> session_state_changed` 是安全与成本共用的 writeback seam。这意味着安全与省 token 的同构，不只在“统一定价扩张”，还在“谁有权宣布当前状态、谁有权继续、这些判断怎样写回宿主”。
+- 结构线新增的高价值事实是：authority surface 首先信外部可验证的头部状态，而不是对象自述；fresh merge 不是 `last write wins`，而是带删除语义与 stale finally 防线的协议；fail-closed worktree 与统一 transport boundary 都属于源码先进性的正式部分。这意味着源码先进性不只在“故障模型先于模块美学”，还在“外围恢复与传输协议也被纳入单一真相治理”。
+- 这组结论最适合继续加厚 `philosophy/81-83`，而不是另起一组平行章节，因为它们不是新主题，而是三条主线各自的运行时法律地位。
+
 ### A045. 宿主修复稳态纠偏协议之后，下一层应进入宿主修复稳态纠偏执行层
 
 - Prompt repair steady-state correction protocol 即使已经把 correction object、reject semantics 与 threshold retention 压成正式规则面，如果团队不能继续把这些对象压成 correction card、recovery verdict order、requalification drill 与 threshold reinstatement drill，Prompt 世界就仍会继续围绕 steady note、summary prose 与“最近没出事”工作；这说明 Prompt 线下一层最值钱的不是继续补 protocol，而是把 repair steady-state correction protocol 压成 repair steady-state correction execution。

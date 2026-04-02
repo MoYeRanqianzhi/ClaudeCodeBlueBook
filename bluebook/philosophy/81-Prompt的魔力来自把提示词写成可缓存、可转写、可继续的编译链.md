@@ -120,6 +120,12 @@ Claude Code 更成熟的地方在于，它先问：
 
 也正因为如此，`SYSTEM_PROMPT_DYNAMIC_BOUNDARY`、section registry 与 stable prefix 不只是性能技巧，而是 Prompt Constitution 的一部分。
 
+更进一步，section registry 也不是一份静态目录，而是会在 `/compact` 之后被重新整理、重置与续接的运行时对象。这意味着 Prompt Constitution 不是“永远附着在顶部的一段总纲”，而是有自己生命周期的正式制度资产。
+
+同理，`agent_listing_delta`、`mcp_instructions_delta`、`skill_discovery` 这类 attachment 故意被放在 stable prefix 之后，并在 compaction 后重注入，因为它们的法律地位本来就不是“进入长期正文”，而是：
+
+- 晚绑定临场修正
+
 ## 5. 第四层：工具 ABI 与写作法同属 Prompt 法律
 
 Claude Code 的 Prompt 高密度，不只因为 instruction 多，还因为：
@@ -189,6 +195,8 @@ Claude Code 更接近的真相是：
 而且还会：
 
 - 审查自己是否还配继续
+
+多 Agent 场景更能说明这一点。真正强的地方不是“会给 worker 写指令”，而是 coordinator 必须先理解 findings，再生成自包含、不可把理解外包给 worker 的 prompt。这里的 Prompt 魔力首先是一种组织设计，而不是更会写 worker 文案。
 
 ## 8. 第七层：可解释失稳优于神秘成功
 

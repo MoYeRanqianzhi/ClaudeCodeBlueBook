@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 已基于并行多 Agent 回读源码，继续加厚 `philosophy/81-83`：
+  - Prompt 线新增结论：section registry 具有 runtime 生命周期；late-bound attachment 不是 stable prefix 正文；多 Agent prompt 的强度首先来自 coordinator 持有 synthesis ownership。
+  - 治理线新增结论：authority 必须被外化成单一真相链；classifier 自身也必须被纳入 continuation pricing；`requires_action -> pending_action -> session_state_changed` 是安全与成本共用的 writeback seam。
+  - 结构线新增结论：authority surface 首先信外部可验证的头部状态；fresh merge 不是 last-write-wins；fail-closed worktree 与统一 transport boundary 都属于源码先进性的正式部分。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写执行 / repair steady-state correction-of-correction rewrite execution”继续推进到“宿主修复稳态纠偏再纠偏改写失真 / repair steady-state correction-of-correction rewrite distortion casebook”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏改写执行最危险的失败不是没跑 `rewrite card`，而是让 rewrite prose、summary 平静感与 UI 历史重新充当编译链真相；一旦如此，Prompt 的魔力就会从 `systemPrompt + userContext + systemContext + protocol transcript` 的编译链退回更会解释的文本。
