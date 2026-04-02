@@ -192,6 +192,9 @@
 - `../navigation/78 -> 75-77` 继续回答“怎样把这些稳态纠偏再纠偏继续压成宿主、SDK、CI、评审与交接共享的修正对象、拒收升级语义与长期 reopen 责任面”。
 - `../navigation/79 -> ../playbooks/56-58` 继续回答“怎样把这些再纠偏规则面继续压成固定 recorrection card、reject 顺序与 re-entry / reopen 责任演练”。
 - 再往下一层，应由 `../navigation/80 -> ../casebooks/52-54` 继续回答“为什么这些再纠偏执行明明已经存在，仍会重新退回假 recorrection card、假 reject 顺序与假 reopen 责任演练”。
+- 再往下一层，应由 `../navigation/81 -> ../guides/81-83` 继续回答“怎样把这些再纠偏执行失真重新压回固定顺序、拒收升级路径与改写模板骨架”。
+- 再往下一层，应由 `../navigation/81 -> ../guides/81-83` 继续回答“怎样把这些再纠偏执行失真重新压回固定顺序、拒收升级路径与改写模板骨架”。
+- 再往下一层，应由 `../navigation/82 -> ../api/78-80` 继续回答“怎样把这些再纠偏规则面继续压成宿主可消费的修正对象、拒收语义与长期 reopen 责任面”。
 - 机制对象宿主消费面不等于内部实现面。
 - host-consumable projection 不等于 internal compiler / internal fault-model trace。
 

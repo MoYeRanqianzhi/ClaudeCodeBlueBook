@@ -140,6 +140,7 @@
 - `../navigation/78 -> ../api/75-77` 继续回答“怎样把这些 steady-state correction-of-correction 继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面”。
 - `../navigation/79 -> ../playbooks/56-58` 继续回答“怎样把这些 steady-state correction-of-correction protocol 继续压成固定 recorrection card、reject 顺序与 re-entry / reopen 责任演练”。
 - `../navigation/80 -> ../casebooks/52-54` 继续回答“为什么这些 steady-state correction-of-correction execution 明明已经存在，仍会重新退回假 recorrection card、假 reject 顺序与假 reopen 责任演练”。
-- 再往下一层，应由 `../navigation/81 -> ../guides/81-83` 继续回答“怎样把这些 steady-state correction-of-correction execution distortion 重新压回固定顺序、拒收升级路径与改写模板骨架”。
+- `../navigation/81 -> ../guides/81-83` 继续回答“怎样把这些 steady-state correction-of-correction execution distortion 重新压回固定顺序、拒收升级路径与改写模板骨架”。
+- 再往下一层，应由 `../navigation/82 -> ../api/78-80` 继续回答“怎样把这些 steady-state correction-of-correction-of-correction 继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面”。
 - 再往下一层，应由 `../navigation/29 -> ../guides/39-41` 继续回答“怎样把这些 drift 原型编译成 validator / linter / reject rule”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。
