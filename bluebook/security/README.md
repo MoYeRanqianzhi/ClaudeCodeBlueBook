@@ -174,6 +174,7 @@
 - 想直接看为什么这套系统不是靠最后一个 permission dialog 才安全，而是靠环境门、信任门、内容门、决议门与发布门逐层缩减能力面：看 `70`
 - 想直接看不同 gate 各自保护哪段能力、放行条件是什么、最危险的 shortcut 是什么：看 `appendix/54`
 - 想直接看为什么“入口可见”本身也是一种安全承诺，以及为什么不是任何 adapter / 宿主都能把能力发布成前台入口：看 `71`
+- 想直接看不同 surface 到底由谁发布能力入口、最危险的 overclaim 是什么，以及哪些层只能转述不能自报：看 `appendix/55`
 
 ## 和其他目录的关系
 
@@ -288,4 +289,5 @@
 - 想看为什么 bypass、workspace trust、bridge-safe commands、MCP 审批与 channel relay 不是互相替代，而是同一条能力发布链上的多重窄门：`02` -> `03` -> `04` -> `07` -> `70`
 - 想把 `70` 的长文压成一张能力借出矩阵，快速看出不同 gate 的 admission condition、protected capability 与 forbidden shortcut：`70` -> `appendix/54`
 - 想看为什么能力一旦被显示成入口，就已经构成安全承诺，以及 why 只有 authoritative publish set 才有资格决定“现在可见”：`70` -> `71`
+- 想把 `71` 的长文压成一张发布主权矩阵，快速看出不同 surface 的 authoritative publisher、visible capability 与 forbidden overclaim：`71` -> `appendix/55`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
