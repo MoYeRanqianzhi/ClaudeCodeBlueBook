@@ -1151,6 +1151,7 @@
 - 在 `29-宿主资格等级` 之后，再补一个 `appendix/13-宿主资格速查表` 就很自然了：长文已经把观察、控制、证明三层责任说清楚，但实现评审时仍然需要一张更短的资格矩阵。把三层资格、最低责任、典型实现和“不能声称什么”压进一页后，安全专题就第一次拥有了可以直接拿来做宿主标注和资格审计的责任级速查表。 
 - 继续往前推进后，可以更明确地把 `30-安全真相源层级` 单独写出来：`29` 已经说明不同宿主承担的责任不同，但还没有回答“它们到底在依赖哪一层真相”。`sessionState.ts` 已经把 requires_action 真相拆成 typed details 和 `external_metadata.pending_action` 两条路径；`WorkerStateUploader.ts` 又明确告诉我们 `worker_status` 与 `external_metadata` 是一层 mergeable、可重试、可复制的 worker 真相，而不是原始事件本体；`ccrClient.ts` 则负责 init 时清 stale metadata、读回 worker state，并持续 reportState/reportMetadata；`onChangeAppState.ts` 和 `print.ts` 再把复制真相灌回本地交互真相。这使得 `30` 的核心结论很清楚：安全控制面真正要治理的，不只是对象和宿主，还是真相层级本身，任何单一表面都不能冒充全部安全真相。 
 - 在 `30-安全真相源层级` 之后，再补一个 `appendix/14-安全真相源速查表` 就很自然了：长文已经把实时真相、语义真相、复制真相、本地真相和 UI 投影五层关系说清楚，但实际实现和评审时仍然需要一张更短的真相矩阵。把五层真相、各自回答的问题、优势、局限和最常见误读压进一页后，安全专题就第一次拥有了可以直接用于真相源辨识和误读校正的层级速查表。 
+- 继续往前推进后，可以更明确地把 `31-安全真相仲裁` 单独写出来：`30` 已经说明真相必须分层，但还没有回答“冲突时谁说了算”。`print.ts` 明确要求 restore 与 hydrate 并行等待，避免 SSE catchup 落在 fresh default 上；`coreSchemas.ts` 与 `sdkEventQueue.ts` 又把 `session_state_changed(idle)` 直接命名为 authoritative turn-over signal；`WorkerStateUploader.ts` 与 `ccrClient.ts` 则说明复制层接受延迟一致，但不接受 stale crash residue；`onChangeAppState.ts` 进一步表明本地状态必须经统一 choke point 才能升级成外部真相。这使得 `31` 的核心结论很清楚：多层真相如果没有优先级，就只是多份意见，真正成熟的安全控制面必须明确恢复顺序、语义事件、复制清理、本地镜像和 UI 跟随之间的仲裁规则。 
 
 ## 下一步待办
 
