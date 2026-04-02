@@ -293,6 +293,30 @@
 - `claude-code-source-code/scripts/prepare-src.mjs:3-64`
 - `claude-code-source-code/scripts/stub-modules.mjs:2-42`
 
+### A00k. 多入口反查层之后，下一层应进入自反审读层
+
+- 当 `navigation/14 + casebooks/07-09` 已经把制度压成现场诊断层后，下一步最值钱的不是继续补更多反查表，而是补自反审读层：让 Prompt 魔力、安全定价与源码先进性都能在设计前被主动质疑，而不是等到事故后才被动诊断。
+- `guides/30` 应把 Prompt 魔力压成一组设计者可直接自问的问题：谁在说话、谁生产共享前缀、边界画在哪里、什么可以被合法遗忘、后来者如何低成本接手。
+- `guides/31` 应把安全与省 token 压成一组输入边界问题：哪些动作、能力、上下文与 continuation 还在免费扩张，哪些检查已经没有决策增益，哪些自动化必须可撤销。
+- `guides/32` 应把源码先进性压成一组结构审读问题：权威面是否单一、contract 是否先行、transport 是否被关进 shell、recovery asset 是否成立、未来维护者是否已被当成正式消费者。
+- `philosophy/63-65` 因而成为必要收束：`63` 负责说明 Prompt 魔力为什么首先是一种“继续约束”，`64` 负责说明安全成熟为什么首先拒绝免费扩张，`65` 负责说明源码先进性为什么首先要把批评路径编码进结构。
+- `navigation/15` 因而成为必要入口：`14` 负责从现场回到制度诊断，`15` 负责从制度诊断继续回到设计自校，避免蓝皮书只会解释 Claude Code 为什么强，却不会帮助团队在设计时少犯错。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-127`
+- `claude-code-source-code/src/query/stopHooks.ts:84-120`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-270`
+- `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-397`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:235-1283`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-93`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:367-860`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/query/config.ts:1-45`
+- `claude-code-source-code/src/query/deps.ts:1-40`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

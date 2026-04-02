@@ -281,6 +281,11 @@
 - `casebooks/08` 当前应负责 phase-first 反查：按 `design / assembly / runtime / recovery / evolution` 判断制度断裂最早诞生在哪一层，而不是把所有锅都丢给 runtime
 - `casebooks/09` 当前应负责 asset-first 反查：按 `section / boundary / stable bytes / shadow-stub / transport shell / recovery asset / object state` 这些正式资产定位失效，而不是只按文件名搜索
 - `navigation/14` 的职责应稳定为“参考层如何进入现场诊断层”，避免 `13` 同时承担字典/锚点与多入口反查两类职责
+- 当 `navigation/14 + casebooks/07-09` 稳定后，下一步最值钱的不是继续补更多诊断表，而是补自反审读层：把 Prompt 魔力、安全定价与源码先进性压成设计前就能自问自校的问题梯子
+- `guides/30` 当前应负责 Prompt 魔力的苏格拉底审读：主语、共享前缀、section 宪法、边界、合法遗忘与接手连续性
+- `guides/31` 当前应负责安全与省 token 的苏格拉底审读：输入边界、失败语义、stable bytes、最小可见面、decision gain 与可撤销自动化
+- `guides/32` 当前应负责源码先进性的苏格拉底审读：authoritative surface、contract-first、leaf module、transport shell、recovery asset、anti-zombie 与未来维护者消费者
+- `navigation/15` 的职责应稳定为“现场诊断层如何进入设计自校层”，避免 `14` 同时承担事故排障与设计反思两类入口职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释
