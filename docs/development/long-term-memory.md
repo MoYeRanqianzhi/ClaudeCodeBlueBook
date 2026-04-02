@@ -258,6 +258,9 @@
 - `navigation/` 负责读者检索，根目录主线负责判断标准，这两层不能重新混回一篇大总文
 - API 写作现在已有统一基线：先用总表型文档确定能力平面、公开度与 adapter 宽度，再进入具体专题
 - API atlas 现在已经分成两层：`23/24` 负责矩阵与谱系，`25-29` 负责能力对象、宿主接入、插件生命周期、治理型 API 与动态可见性
+- 当 `guides/24-26` 稳定后，下一步最值钱的不是继续补抽象判断，而是补团队落地包层：Prompt 修宪工作流、治理顺序审计矩阵、源码塑形审读模板
+- 高阶制度模板层当前应稳定成三类：`27` 管 section card / 修宪流程 / lawful forgetting 与失效台账，`28` 管 failure semantics / automation lease / approval race / stable bytes ledger，`29` 管 build surface / entry shadow / transport shell / anti-zombie checklist
+- `navigation/09` 的职责应稳定为“第二序制度如何进入团队动作层”，避免 `08` 同时承担制度解释与模板检索两类职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

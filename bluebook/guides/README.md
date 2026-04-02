@@ -30,6 +30,9 @@
 24. [24-如何把Prompt写成可治理宪法：section registry、角色主权链、合法遗忘与可观测diff](24-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%86%99%E6%88%90%E5%8F%AF%E6%B2%BB%E7%90%86%E5%AE%AA%E6%B3%95%EF%BC%9Asection%20registry%E3%80%81%E8%A7%92%E8%89%B2%E4%B8%BB%E6%9D%83%E9%93%BE%E3%80%81%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E4%B8%8E%E5%8F%AF%E8%A7%82%E6%B5%8Bdiff.md)
 25. [25-如何设计有顺序的治理系统：检查顺序、失败语义分型、可撤销自动化与稳定字节资产](25-%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E6%9C%89%E9%A1%BA%E5%BA%8F%E7%9A%84%E6%B2%BB%E7%90%86%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%A3%80%E6%9F%A5%E9%A1%BA%E5%BA%8F%E3%80%81%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E5%88%86%E5%9E%8B%E3%80%81%E5%8F%AF%E6%92%A4%E9%94%80%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%8E%E7%A8%B3%E5%AE%9A%E5%AD%97%E8%8A%82%E8%B5%84%E4%BA%A7.md)
 26. [26-如何用构建系统塑形Agent Runtime：入口影子、transport shell、薄registry与反zombification](26-%E5%A6%82%E4%BD%95%E7%94%A8%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%A1%91%E5%BD%A2Agent%20Runtime%EF%BC%9A%E5%85%A5%E5%8F%A3%E5%BD%B1%E5%AD%90%E3%80%81transport%20shell%E3%80%81%E8%96%84registry%E4%B8%8E%E5%8F%8Dzombification.md)
+27. [27-Prompt Constitution审读模板：section card、修宪工作流、失效台账与triage runbook](27-Prompt%20Constitution%E5%AE%A1%E8%AF%BB%E6%A8%A1%E6%9D%BF%EF%BC%9Asection%20card%E3%80%81%E4%BF%AE%E5%AE%AA%E5%B7%A5%E4%BD%9C%E6%B5%81%E3%80%81%E5%A4%B1%E6%95%88%E5%8F%B0%E8%B4%A6%E4%B8%8Etriage%20runbook.md)
+28. [28-治理顺序审计模板：失败语义矩阵、自动化租约、审批竞速与稳定字节台账](28-%E6%B2%BB%E7%90%86%E9%A1%BA%E5%BA%8F%E5%AE%A1%E8%AE%A1%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E7%9F%A9%E9%98%B5%E3%80%81%E8%87%AA%E5%8A%A8%E5%8C%96%E7%A7%9F%E7%BA%A6%E3%80%81%E5%AE%A1%E6%89%B9%E7%AB%9E%E9%80%9F%E4%B8%8E%E7%A8%B3%E5%AE%9A%E5%AD%97%E8%8A%82%E5%8F%B0%E8%B4%A6.md)
+29. [29-源码塑形审读模板：发布面矩阵、入口影子、transport shell与反zombification清单](29-%E6%BA%90%E7%A0%81%E5%A1%91%E5%BD%A2%E5%AE%A1%E8%AF%BB%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%8F%91%E5%B8%83%E9%9D%A2%E7%9F%A9%E9%98%B5%E3%80%81%E5%85%A5%E5%8F%A3%E5%BD%B1%E5%AD%90%E3%80%81transport%20shell%E4%B8%8E%E5%8F%8Dzombification%E6%B8%85%E5%8D%95.md)
 
 ## 按使用目标阅读
 
@@ -61,6 +64,9 @@
 - 想把 Prompt Constitution 写成 builder-facing 设计动作，而不是继续停在哲学层：`24 -> ../architecture/73 -> ../navigation/08`
 - 想把安全与省 token 写成有顺序的治理系统，而不是只会谈统一预算器：`25 -> ../architecture/74 -> ../navigation/08`
 - 想把构建、入口、transport 与恢复写成同一套工程动作，而不是只看目录漂亮：`26 -> ../architecture/75 -> ../navigation/08`
+- 想把 Prompt Constitution 继续压成团队修宪流程、失效台账与 triage runbook：`24 -> 27 -> ../navigation/09`
+- 想把治理顺序继续压成失败语义矩阵、自动化租约、审批竞速与稳定字节台账：`25 -> 28 -> ../navigation/09`
+- 想把源码塑形继续压成发布面矩阵、入口影子策略与反-zombie 审读清单：`26 -> 29 -> ../navigation/09`
 
 ## 与其他目录的边界
 

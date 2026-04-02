@@ -142,6 +142,28 @@
 
 - 当 73-75 稳定后，下一步最值钱的不是继续增加架构抽象，而是把它们各自转写成 builder-facing 操作手册：section registry policy、governance order matrix、source-order shaping checklist。否则底盘层虽然成立，但迁移动作仍然停在读者脑中。
 
+### A00e. 第二序制度层已继续下沉到团队落地包
+
+- `guides/27` 应把 Prompt Constitution 继续压成四类正式团队工件：section constitution card、prompt amendment workflow、lawful forgetting ABI checklist、prompt triage / invalidation runbook。Claude Code 的 prompt 魔力因此更接近“可编译宪法 + 可观测修宪流程”，而不是强文案。
+- `guides/28` 应把治理顺序继续压成治理顺序审计表、失败语义矩阵、自动化租约、approval race matrix、stable bytes ledger 与 stop-logic checklist。Claude Code 的省 token 因而更接近“压缩无效决策”，而不是压缩文字。
+- `guides/29` 应把源码先进性继续压成 build surface matrix、entry shadow card、transport shell confinement checklist、recovery asset ledger 与 anti-zombie protocol。Claude Code 的结构先进性因而更接近“主动塑形可演化边界”，而不是目录更整齐。
+- 当 `24-26` 已成立后，还需要单独的 `navigation/09` 作为团队动作层入口；否则 `08` 会重新同时承载制度解释和模板检索，目录职责会再次变混。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-104`
+- `claude-code-source-code/src/services/compact/compact.ts:330-340`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-62`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:235-1283`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/cli/structuredIO.ts:561-608`
+- `claude-code-source-code/src/hooks/toolPermission/handlers/interactiveHandler.ts:244-300`
+- `claude-code-source-code/scripts/prepare-src.mjs:3-64`
+- `claude-code-source-code/scripts/stub-modules.mjs:2-42`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。
