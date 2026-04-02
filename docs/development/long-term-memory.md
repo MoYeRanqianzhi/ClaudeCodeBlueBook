@@ -204,6 +204,23 @@
   - 如何把UI真相翻译成Protocol真相：transcript重写、边界补写与恢复不变量
   - 如何用资源定价设计Agent Runtime：mode、visibility、externalization与continuation
   - 如何把未来维护者当正式消费者：风险命名、制度注释、seam与状态机
+  - 如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀
+  - 如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件
+  - 如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file
+  - 深方法导航：共享前缀、合同优先与依赖图诚实性
+  - 共享前缀快照策略模板：何时保存、何时复用、何时suppress
+  - Contract-First审读清单：如何系统读懂Agent Runtime的合同、权威面与热点文件
+  - Dependency-Honesty Review Checklist：如何评审leaf module、anti-cycle seam与single-source file
+  - Prompt不是文案，而是受治理的Prompt Constitution
+  - 真正成熟的安全与省Token系统，不是统一预算器，而是治理顺序、失败语义与可撤销自动化
+  - 构建系统也是架构工具：发布面、入口影子与传输外壳共同塑造源码秩序
+  - 高阶制度导航：Prompt Constitution、治理顺序与构建系统
+  - Prompt Constitution控制面：section宪法、角色主权链、合法遗忘与可观测diff
+  - 治理顺序控制面：失败语义分型、可撤销自动化与稳定字节资产
+  - 构建系统塑形源码秩序：入口影子、传输外壳、薄Registry与Zombification治理
+  - 如何把Prompt写成可治理宪法：section registry、角色主权链、合法遗忘与可观测diff
+  - 如何设计有顺序的治理系统：检查顺序、失败语义分型、可撤销自动化与稳定字节资产
+  - 如何用构建系统塑形Agent Runtime：入口影子、transport shell、薄registry与反zombification
 
 ## 已确认事实
 
@@ -241,6 +258,24 @@
 - `navigation/` 负责读者检索，根目录主线负责判断标准，这两层不能重新混回一篇大总文
 - API 写作现在已有统一基线：先用总表型文档确定能力平面、公开度与 adapter 宽度，再进入具体专题
 - API atlas 现在已经分成两层：`23/24` 负责矩阵与谱系，`25-29` 负责能力对象、宿主接入、插件生命周期、治理型 API 与动态可见性
+- 当 `guides/24-26` 稳定后，下一步最值钱的不是继续补抽象判断，而是补团队落地包层：Prompt 修宪工作流、治理顺序审计矩阵、源码塑形审读模板
+- 高阶制度模板层当前应稳定成三类：`27` 管 section card / 修宪流程 / lawful forgetting 与失效台账，`28` 管 failure semantics / automation lease / approval race / stable bytes ledger，`29` 管 build surface / entry shadow / transport shell / anti-zombie checklist
+- `navigation/09` 的职责应稳定为“第二序制度如何进入团队动作层”，避免 `08` 同时承担制度解释与模板检索两类职责
+- 当 `guides/27-29` 稳定后，下一步不应继续塞回 `guides/`，而应新增 `playbooks/` 目录承接运营、回归、事故复盘与演化演练；否则目录职责会重新混掉
+- `playbooks/` 当前应稳定成三类：`01` 管 prompt 修宪回归与 lawful forgetting 事故复盘，`02` 管治理事故运营、approval race 与 stable-bytes drift，`03` 管源码演化演练、shadow-stub 退出、recovery drill 与 anti-zombie 复盘
+- `navigation/10` 的职责应稳定为“团队动作层如何进入运营层”，避免 `09` 同时承担模板层和运营层两类入口职责
+- 当 `playbooks/01-03` 稳定后，下一步应新增 `casebooks/` 承接失败样本库；否则手册层会过度抽象，读者看不见制度边界在真实故障里怎样暴露
+- `casebooks/` 当前应稳定成三类：`01` 管 prompt 事故样本，`02` 管治理事故样本，`03` 管结构演化与反模式样本
+- `navigation/11` 的职责应稳定为“运营层如何进入样本层”，避免 `10` 同时承载手册入口和样本入口
+- 当 `casebooks/01-03` 稳定后，下一步最值钱的不是继续补散案例，而是补索引层：统一标签体系、交叉索引与演练记录模板
+- `casebooks/04` 当前应作为样本层的总索引：按阶段、资产、症状、根因与恢复动作统一编目
+- `playbooks/04` 当前应作为运营层与样本层的统一记录模板：让演练和事故复盘能回填进案例库，而不是继续散落在文字里
+- `navigation/12` 的职责应稳定为“样本层如何进入索引层”，避免 `11` 同时承担样本入口和标签索引入口
+- 当 `casebooks/04 + playbooks/04` 稳定后，下一步最值钱的不是继续补说明，而是补参考层：标签字典、源码锚点反查与记录样例库
+- `casebooks/05` 当前应负责“标签定义、判定边界与误分类警戒”，避免团队只会贴标签，不会区分标签
+- `casebooks/06` 当前应负责 “tag -> sample -> playbook -> chapter -> source anchor” 的 crosswalk，避免知道标签却找不到正文与代码
+- `playbooks/05` 当前应负责三类完整填表示例，避免模板层在实际使用时仍然过空
+- `navigation/13` 的职责应稳定为“索引层如何进入参考层”，避免 `12` 同时承担结构索引和具体参考入口
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释
@@ -252,9 +287,20 @@
 - prompt 魔力的更深层写法应稳定为“五层合同 + 缓存断点 + 状态晚绑定”，不要退回对单段 system prompt 的评论
 - prompt 深线还应继续升级为“可重放前缀 + 可观测预算 + section 编译器 + 模型真相/用户真相分层”
 - prompt 深线还应继续升级为“主线程生产 prefix asset，辅助循环共享同一前缀网络”
+- 共享前缀网络的实践判断应稳定为：宁可 suppress / 等待可信 snapshot，也不要让 suggestion、summary、memory 一类旁路循环各自重建世界模型
 - 统一预算器的更深层写法应稳定为“请求前裁能力、请求中保工作集、请求后做恢复与继续”，不要退回“省 token 技巧”叙述
 - 源码质量研究的更稳顺序应是“先找 contract，再找 runtime 底盘，再看热点与缺口”
+- contract-first 阅读法应继续细化为“先 schema/type union，再 registry，再 authoritative surface，再 adapter subset，最后热点 kernel”，避免把声明存在、当前注册和适配器子集混成一层真相
 - 源码质量深线还应继续升级为“显式失败 + 反竞争条件 + chokepoint + leaf module”，不要退回“大文件很多/代码很复杂”的空泛评价
+- 依赖图诚实性应继续稳定成：允许适度不 DRY，以保住 anti-cycle seam、single-source file、风险命名与 import 边界注释，而不是把模块化退回成“抽得更统一”
+- 当 `guides/18-20` 稳定后，应及时补导航层和模板层，而不是继续只补抽象章节；否则深方法很快又会沉回“知道结论但不会迁移”
+- 深方法模板层当前应稳定成三类：共享前缀策略模板、contract-first 审读清单、dependency-honesty review checklist
+- prompt 深线下一层可继续稳定成 `Prompt Constitution`：system prompt 是一份受 section 宪法、危险 cache-break 声明、角色优先级链和合法遗忘策略共同治理的制度体，而不是单段文案
+- 安全与省 token 深线下一层可继续稳定成“治理顺序 + 失败语义分型 + 可撤销自动化 + 稳定字节资产”：系统真正优化的是把检查放在正确顺序、在无决策增益处停止花 token、并对不同资产采用不同 fail-open/fail-closed
+- 源码先进性下一层可继续稳定成“构建系统也是架构工具”：external stubs、portable shadow entry、transport shell、薄 registry 与 zombification 防治共同塑造发布面、入口安全与演化秩序
+- 高阶制度层当前应稳定成三条第二序母线：Prompt Constitution、治理顺序与失败语义、构建系统塑形源码秩序；它们比继续讨论“提示词技巧 / 统一预算器 / 目录漂亮”更接近 Claude Code 的深层制度设计
+- 当 60-62 稳定后，应优先补对应 architecture 底盘篇，再考虑继续扩哲学；否则制度层会重新悬空，缺少机制承托
+- 当 `architecture/73-75` 稳定后，应优先补对应 builder-facing guide，而不是继续只补 README 入口；否则机制层仍难迁移到团队实际设计动作
 - API atlas 还应继续补目录级能力地图，避免“字段齐了，但能力地形仍然不可检索”
 - 宿主 API 还应继续补失败语义、取消请求、orphan response 与 transcript repair，不要只写 happy path
 - 预算器深线还应继续补 context usage、systemPromptSections、attachmentsByType 与 pending_action 的联合调优方法

@@ -48,6 +48,234 @@
 - `claude-code-source-code/src/state/onChangeAppState.ts:50-91`
 - `claude-code-source-code/src/utils/fingerprint.ts:40-63`
 
+### A00a. 共享前缀网络、合同优先阅读与依赖图诚实性
+
+- 主线程不只是 query executor，还是 prefix producer：`stopHooks.ts` 只为 `repl_main_thread` 与 `sdk` 保存 `CacheSafeParams`，并明确说 `/btw` 与 `side_question` 会直接复用它；这说明 Claude Code 真正共享的不是聊天历史，而是 cache-safe 协作前缀。
+- 旁路循环应共享主线程前缀，而不是各自重建世界模型：`/btw` 首选 `getLastCacheSafeParams()`，SDK suggestion 在拿不到 snapshot 时宁可记录 `sdk_no_params` 并 suppress，`AgentSummary` 甚至为了保住 cache key 明确不设置 `maxOutputTokens`。
+- contract-first 的更稳顺序应细化为“先 schema/type union，再 registry，再 authoritative surface，再 adapter subset，最后热点 kernel”：`Task.ts` 定义任务合同，`tasks.ts` 暴露当前注册子集，`controlSchemas.ts` 给出控制协议全集，`checkEnabledPlugins()`、`QueryGuard`、`isTranscriptMessage()`、`kairosEnabled` 则分别标出局部权威真相入口。
+- “协议全集”不等于“适配器实装全集”：`runBridgeHeadless()` 直接注明自己是 `bridgeMain()` 的 linear subset，因此不能从 `SDKControlRequestInnerSchema` 反推所有宿主都支持所有 control action。
+- 依赖图诚实性是一种工程正确性：`pluginPolicy.ts`、`configConstants.ts`、`types/permissions.ts`、`pluginDirectories.ts` 用 leaf module 与 single-source file 收口共享真相，`queryContext.ts` 与 `teammateViewHelpers.ts` 则用 anti-cycle seam 与适度不 DRY 切断 runtime edge；`DANGEROUS_uncachedSystemPromptSection`、`fingerprint.ts` 进一步说明风险命名和制度注释本身也是依赖治理的一部分。
+
+证据:
+
+- `claude-code-source-code/src/query/stopHooks.ts:84-120`
+- `claude-code-source-code/src/commands/btw/btw.tsx:183-227`
+- `claude-code-source-code/src/cli/print.ts:2274-2315`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-225`
+- `claude-code-source-code/src/services/AgentSummary/agentSummary.ts:81-119`
+- `claude-code-source-code/src/services/extractMemories/extractMemories.ts:371-427`
+- `claude-code-source-code/src/services/autoDream/autoDream.ts:224-249`
+- `claude-code-source-code/src/Task.ts:6-124`
+- `claude-code-source-code/src/tasks.ts:1-39`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1-8`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:552-590`
+- `claude-code-source-code/src/utils/plugins/pluginStartupCheck.ts:30-90`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-106`
+- `claude-code-source-code/src/utils/sessionStorage.ts:128-162`
+- `claude-code-source-code/src/state/AppStateStore.ts:113-120`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:2799-2810`
+- `claude-code-source-code/src/utils/plugins/pluginPolicy.ts:1-20`
+- `claude-code-source-code/src/query/config.ts:1-45`
+- `claude-code-source-code/src/query/deps.ts:1-40`
+- `claude-code-source-code/src/utils/queryContext.ts:1-87`
+- `claude-code-source-code/src/types/permissions.ts:1-63`
+- `claude-code-source-code/src/utils/configConstants.ts:1-18`
+- `claude-code-source-code/src/utils/plugins/pluginDirectories.ts:1-79`
+- `claude-code-source-code/src/state/teammateViewHelpers.ts:1-24`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:27-38`
+- `claude-code-source-code/src/utils/fingerprint.ts:40-63`
+
+补充模板层判断：
+
+- 在 `guides/18-20` 已稳定后，下一步最值钱的不是继续加同层 guide，而是补 `navigation/07` 和三张模板：shared-prefix snapshot policy、contract-first 审读清单、dependency-honesty review checklist。否则读者虽然知道方法存在，但仍缺少“如何执行 / 如何评审 / 如何迁移”的中间层。
+- 这三张模板共同服务同一个第一性原理：Claude Code 的高级感不在某条单独机制，而在“先固定工作真相，再限制脑补，再限制结构撒谎”。
+
+### A00b. Prompt Constitution、治理顺序与构建系统高级关系
+
+- prompt 下一层应继续按 `Prompt Constitution` 理解：`systemPromptSections`、`SYSTEM_PROMPT_DYNAMIC_BOUNDARY`、`buildEffectiveSystemPrompt()` 共同说明 prompt 不是一段话，而是一份受 section 宪法、角色优先级链与危险 cache-break 声明治理的制度体。
+- prompt 的“合法遗忘”也应被视作正式设计：compact prompt、session memory compact、conversation recovery 都在回答“删掉什么后系统仍能继续工作”，说明 prompt 魔力同样来自删除策略和恢复补边，而不只是注入更多文本。
+- 安全与省 token 下一层应继续按“治理顺序 + 失败语义分型 + 可撤销自动化”理解：危险 allow rule 会在 classifier 前被剔除，不同资产采用不同 fail-open/fail-closed，auto mode 在 denial limit 或 transcript too long 时会退回人工或直接终止，说明系统真正优化的是有决策增益的检查，而不是检查越多越安全。
+- “稳定字节”应被视为安全和成本共享的制度资产：system prompt section 缓存、sticky beta、tool-result replacement replay、prompt cache break diff 共同说明治理字节本身必须可追踪、可解释、可重放。
+- 源码先进性下一层应继续按“构建系统也是架构工具”理解：external stubs、portable shadow entry、安全导入的 lightweight impl、transport shell 与薄 registry 都在主动塑形模块图和发布面，而不是把构建仅当作打包尾巴。
+- 高级工程还应继续按“zombification 治理”理解：against fresh state merge、stale epoch 丢弃、恢复路径先设计再简化平时写法，说明 Claude Code 在治理的不是单个 race，而是跨 await 对象命运。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:105-560`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:17-43`
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-104`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:226-297`
+- `claude-code-source-code/src/services/compact/prompt.ts:12-206`
+- `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-397`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:235-1033`
+- `claude-code-source-code/src/utils/permissions/filesystem.ts:1252-1302`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:433-458`
+- `claude-code-source-code/src/services/policyLimits/index.ts:504-520`
+- `claude-code-source-code/src/services/api/claude.ts:1405-1460`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-520`
+- `claude-code-source-code/src/moreright/useMoreRight.tsx:1-25`
+- `claude-code-source-code/src/state/AppState.tsx:12-23`
+- `claude-code-source-code/src/utils/listSessionsImpl.ts:1-27`
+- `claude-code-source-code/src/services/api/emptyUsage.ts:3-16`
+- `claude-code-source-code/src/utils/cleanupRegistry.ts:1-21`
+- `claude-code-source-code/src/utils/swarm/backends/registry.ts:81-114`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+补充目录判断：
+
+- 当 60-62 形成第二序制度层后，应单独提供 `navigation/08`，否则 05/06/07 会分别承担“高阶母线 / 终局判断 / 深方法模板”三层职责，却没有一个入口直达“更深一层的制度哲学”。
+
+补充底盘回灌判断：
+
+- 当三条第二序制度母线稳定后，最先该补的不是更多哲学短论，而是对应的 `architecture/73-75`。否则 Prompt Constitution、治理顺序与构建系统塑形会再次停留在高阶解释，无法回落到可迁移的机制层。
+
+### A00d. 第二序制度层已完成到底盘层的第一次闭环
+
+- `architecture/73` 已把 Prompt Constitution 从“高阶哲学”回灌成机制层：section registry、dynamic boundary、角色主权链、protocol truth law、lawful forgetting 与 prompt observability 现在形成同一条 prompt control plane。
+- `architecture/74` 已把安全/省 token 从“资源定价哲学”回灌成控制面：治理顺序、失败语义分型、可撤销自动化、decision-gain-aware token spending 与 stable-bytes assets 现在形成同一条 governance-order control plane。
+- `architecture/75` 已把“构建系统也是架构工具”从理念回灌成结构层：external stubs、portable shadow entry、transport shell、thin registry 与 zombification governance 现在形成同一条 source-order shaping control plane。
+- 这意味着蓝皮书当前首次形成了较完整的六层闭环：哲学判断 -> 高阶导航 -> 深方法导航 -> 模板层 -> 架构底盘 -> 主索引检索，而不是只在哲学和 guide 间来回摆动。
+
+补充下沉判断：
+
+- 当 73-75 稳定后，下一步最值钱的不是继续增加架构抽象，而是把它们各自转写成 builder-facing 操作手册：section registry policy、governance order matrix、source-order shaping checklist。否则底盘层虽然成立，但迁移动作仍然停在读者脑中。
+
+### A00e. 第二序制度层已继续下沉到团队落地包
+
+- `guides/27` 应把 Prompt Constitution 继续压成四类正式团队工件：section constitution card、prompt amendment workflow、lawful forgetting ABI checklist、prompt triage / invalidation runbook。Claude Code 的 prompt 魔力因此更接近“可编译宪法 + 可观测修宪流程”，而不是强文案。
+- `guides/28` 应把治理顺序继续压成治理顺序审计表、失败语义矩阵、自动化租约、approval race matrix、stable bytes ledger 与 stop-logic checklist。Claude Code 的省 token 因而更接近“压缩无效决策”，而不是压缩文字。
+- `guides/29` 应把源码先进性继续压成 build surface matrix、entry shadow card、transport shell confinement checklist、recovery asset ledger 与 anti-zombie protocol。Claude Code 的结构先进性因而更接近“主动塑形可演化边界”，而不是目录更整齐。
+- 当 `24-26` 已成立后，还需要单独的 `navigation/09` 作为团队动作层入口；否则 `08` 会重新同时承载制度解释和模板检索，目录职责会再次变混。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-104`
+- `claude-code-source-code/src/services/compact/compact.ts:330-340`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-62`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:235-1283`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/cli/structuredIO.ts:561-608`
+- `claude-code-source-code/src/hooks/toolPermission/handlers/interactiveHandler.ts:244-300`
+- `claude-code-source-code/scripts/prepare-src.mjs:3-64`
+- `claude-code-source-code/scripts/stub-modules.mjs:2-42`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+### A00f. 团队落地包之后，下一层应进入运营与复盘层
+
+- 当 `guides/27-29` 已经把制度压成模板层后，下一步最值钱的不是继续往 `guides/` 里堆更多 checklist，而是把目录显式分成 `guides/` 与 `playbooks/`：前者负责设计与迁移方法，后者负责回归、事故复盘、运营与演化演练。
+- Prompt Constitution 的最终形态不只是 section card 和修宪流程，还必须有 `playbooks/01` 这一类运行手册：section drift、boundary drift、lawful forgetting 失败、prompt invalidation 漂移都要进入正式回归与复盘。
+- 治理顺序的最终形态不只是顺序表和矩阵，还必须有 `playbooks/02` 这一类运营手册：approval race、auto mode 回收、stable bytes drift、stop-logic 漏洞都要进入正式事故分类与演练。
+- 源码先进性的最终形态不只是 build surface / shadow / transport shell 模板，还必须有 `playbooks/03` 这一类演化手册：shadow-stub 退出、compat 壳层收缩、recovery drill 与 anti-zombie 故障模型都要进入正式结构运营。
+- 这意味着蓝皮书目录继续从七层推进到八层：主线结论 -> 导航入口 -> 机制底盘 -> API 支持 -> 哲学解释 -> 使用方法 -> 运营 playbooks -> 风险专题；`docs/` 仍只负责开发记忆而不进入正文。
+- `navigation/10` 因而成为必要入口：`09` 承接“模板层”，`10` 承接“运营层”，否则团队动作层与运营层会再次混写。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-62`
+- `claude-code-source-code/src/utils/analyzeContext.ts:937-1048`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/cli/structuredIO.ts:561-608`
+- `claude-code-source-code/src/hooks/toolPermission/handlers/interactiveHandler.ts:244-300`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-860`
+- `claude-code-source-code/scripts/prepare-src.mjs:3-64`
+- `claude-code-source-code/scripts/stub-modules.mjs:2-42`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:60-120`
+- `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+### A00g. 运营层之后，下一层应进入案例样本层
+
+- 当 `playbooks/01-03` 已经把制度推进到运营层后，下一步最值钱的不是继续新增更抽象的手册，而是新增 `casebooks/`：把 prompt、治理、源码演化分别压成具体失败样本库。
+- prompt 的样本层最值得收束成 `section drift / boundary drift / path parity split / lawful-forgetting failure / invalidation drift` 五类案例，因为这些事故最直接暴露“prompt 的魔力来自可治理宪法，而不是文案本身”。
+- 治理的样本层最值得收束成 `order violation / hard-guard bypass / approval-race degradation / stable-bytes drift / stop-logic failure` 五类案例，因为这些事故最直接暴露“安全和省 token 是有顺序的制度，而不是更严格的规则堆叠”。
+- 源码先进性的样本层最值得收束成 `shadow fossilization / transport leakage / recovery-asset corruption / zombification / registry obesity` 五类案例，因为这些失败形态最直接暴露“先进性在于可演化秩序，而不是静态目录美观”。
+- 这意味着蓝皮书目录继续从八层推进到九层：主线 -> 导航 -> 机制 -> API -> 哲学 -> guides -> playbooks -> casebooks -> risk；其中 `casebooks/` 不是开发记忆，而是蓝皮书正文里的样本层。
+- `navigation/11` 因而成为必要入口：`10` 负责运营手册，`11` 负责真实样本库，否则运营层与样本层会再次混写。
+
+证据:
+
+- `claude-code-source-code/src/memdir/memoryTypes.ts:228-240`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:437-520`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-62`
+- `claude-code-source-code/src/QueryEngine.ts:284-321`
+- `claude-code-source-code/src/utils/queryContext.ts:77-84`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/cli/structuredIO.ts:561-608`
+- `claude-code-source-code/src/hooks/toolPermission/handlers/interactiveHandler.ts:138-455`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-860`
+- `claude-code-source-code/scripts/prepare-src.mjs:3-64`
+- `claude-code-source-code/scripts/stub-modules.mjs:2-42`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:60-120`
+- `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+### A00h. 样本层之后，下一层应进入索引层
+
+- 当 `casebooks/01-03` 已经把制度压成失败样本层后，下一步最值钱的不是继续补更多孤立案例，而是补 `casebooks/04 + playbooks/04 + navigation/12` 这一组索引层：统一标签体系、交叉索引与记录模板。
+- Prompt 样本的索引维度最值得固定为：`section / boundary / path / forgetting / invalidation`；这些维度比按“哪次事故”组织更接近 Prompt Constitution 的真实制度字节。
+- 治理样本的索引维度最值得固定为：`order / guard / race / stable bytes / stop logic`；这些维度比按“误放行 / 太慢 / 太贵”组织更接近治理系统的真实控制点。
+- 结构演化样本的索引维度最值得固定为：`build surface / shadow-stub / transport shell / recovery asset / zombie risk`；这些维度比按“哪个文件坏了”组织更接近源码先进性的真实边界。
+- `playbooks/04` 应作为运营层和样本层的统一 ABI：任何演练和复盘都先按同一记录模板写，之后再决定回填到哪类 casebook。
+- `navigation/12` 因而成为必要入口：`10` 负责手册层，`11` 负责样本层，`12` 负责“怎样给样本和演练建索引”，否则目录会重新退回“知道有案例，但找不到规律”。
+
+证据:
+
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:437-520`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-62`
+- `claude-code-source-code/src/QueryEngine.ts:284-321`
+- `claude-code-source-code/src/utils/queryContext.ts:77-84`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/cli/structuredIO.ts:561-608`
+- `claude-code-source-code/src/hooks/toolPermission/handlers/interactiveHandler.ts:138-455`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-860`
+- `claude-code-source-code/scripts/prepare-src.mjs:3-64`
+- `claude-code-source-code/scripts/stub-modules.mjs:2-42`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+### A00i. 索引层之后，下一层应进入参考层
+
+- 当 `navigation/12 + casebooks/04 + playbooks/04` 已经把制度压成索引层后，下一步最值钱的不是继续补抽象索引说明，而是补参考层：标签字典、源码锚点反查与完整填表示例。
+- `casebooks/05` 应把 `section / boundary / path parity / lawful forgetting / invalidation / order / hard guard / approval race / stable bytes / stop logic / build surface / shadow-stub / transport shell / recovery asset / zombie risk` 这些标签继续压成定义、边界与误分类警戒；否则团队只会给事故贴名词，不会稳定判定。
+- `casebooks/06` 应把 `tag -> sample -> playbook -> architecture/api/philosophy/source anchor` 做成反查表；否则知道标签的人，仍然找不到正文和实现入口。
+- `playbooks/05` 应提供 Prompt、治理、结构三类完整填表示例，把 `authority source / assembly path / decision gain / evidence schema` 这些字段真正示范出来；否则模板层仍停在空 ABI。
+- `navigation/13` 因而成为必要入口：`12` 负责索引结构，`13` 负责“怎样直接查定义、查锚点、查样例”，避免索引层继续抽象化。
+
+证据:
+
+- `claude-code-source-code/src/memdir/memoryTypes.ts:228-240`
+- `claude-code-source-code/src/QueryEngine.ts:284-321`
+- `claude-code-source-code/src/utils/queryContext.ts:77-84`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-62`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:437-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/cli/structuredIO.ts:561-608`
+- `claude-code-source-code/src/hooks/toolPermission/handlers/interactiveHandler.ts:138-455`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-860`
+- `claude-code-source-code/scripts/prepare-src.mjs:3-64`
+- `claude-code-source-code/scripts/stub-modules.mjs:2-42`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+### A00c. 第二序制度层已经稳定成三条母线
+
+- `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。
+- “治理顺序 + 失败语义 + 可撤销自动化”现在应被视为安全/省 token 深线的第二序终点：统一预算器只是第一步，更成熟的问题是哪些检查先发生、哪些失败分型、哪些自动化必须退回人工。
+- “构建系统也是架构工具”现在应被视为源码先进性深线的第二序终点：构建、入口影子、transport shell、薄 registry 与 zombification 治理共同塑造发布面、模块图与恢复约束。
+
 ### A0. 协作接口、有效自由与治理界面
 
 - Sticky Prompt 只从真实用户主语与非 meta 的 `queued_command` 中提炼可见锚点，还会裁掉 system reminder 与无意义前缀，说明它在维护的是“当前到底在回应什么”的协作接口，而不是简单 UI 装饰。

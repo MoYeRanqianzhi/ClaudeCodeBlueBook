@@ -2,6 +2,16 @@
 
 ## 2026-04-02
 
+- 新增《字典与反查导航：标签字典、源码锚点与记录样例》《样本标签字典：Prompt、治理与结构演化的定义、边界与误分类警戒》《案例与源码锚点反查表：标签、样本、手册、章节与实现入口》《演练记录样例库：Prompt、治理与结构演化三类完整样例》，并继续回写索引与开发文档，把蓝皮书从“索引层”继续推进到“参考层”
+- 新增《样本与演练导航：标签体系、交叉索引与记录模板》《事故标签体系与交叉索引：阶段、资产、症状、根因与恢复动作》《演练记录模板：前提、触发器、观测、判定、修复与防再发》，并回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“样本层”继续推进到“索引层”
+- 新增 `bluebook/casebooks/` 目录及《案例库导航：Prompt事故、治理事故与结构演化样本》《Prompt事故案例集：修宪漂移、路径失配与合法遗忘失效》《治理事故案例集：错误顺序、审批退化与稳定字节漂移》《源码演化案例集：影子层化石化、传输泄漏与zombification》，并继续回写目录治理与入口文档，把蓝皮书从“运营手册层”再推进到“案例样本层”
+- 新增 `bluebook/playbooks/` 目录及《运营与复盘导航：修宪回归、治理事故与演化演练》《Prompt修宪回归手册：section-drift、boundary-drift与lawful-forgetting事故复盘》《治理事故运营手册：approval-race、auto-mode撤销、stable-bytes漂移与stop-logic回归》《源码演化演练手册：build-surface、shadow-stub退出、recovery-drill与anti-zombie复盘》，并同步回写目录治理文档，把蓝皮书目录从“主线/导航/机制/API/哲学/风险/指南”推进到包含运营层的八层结构
+- 新增《团队落地包导航：修宪工作流、治理矩阵与源码塑形审读》《Prompt Constitution审读模板：section card、修宪工作流、失效台账与triage runbook》《治理顺序审计模板：失败语义矩阵、自动化租约、审批竞速与稳定字节台账》《源码塑形审读模板：发布面矩阵、入口影子、transport shell与反zombification清单》，并回写主索引、使用专题、导航专题与开发文档，把 24-26 继续下沉成团队级模板层
+- 新增《如何把Prompt写成可治理宪法：section registry、角色主权链、合法遗忘与可观测diff》《如何设计有顺序的治理系统：检查顺序、失败语义分型、可撤销自动化与稳定字节资产》《如何用构建系统塑形Agent Runtime：入口影子、transport shell、薄registry与反zombification》，并回写主索引、使用专题与开发文档，把 73-75 继续下沉成 builder-facing 操作手册
+- 新增《Prompt Constitution控制面：section宪法、角色主权链、合法遗忘与可观测diff》《治理顺序控制面：失败语义分型、可撤销自动化与稳定字节资产》《构建系统塑形源码秩序：入口影子、传输外壳、薄Registry与Zombification治理》，并回写架构专题 README、导航层与开发文档，把 60-62 分别回灌成对应底盘篇
+- 新增《Prompt不是文案，而是受治理的Prompt Constitution》《真正成熟的安全与省Token系统，不是统一预算器，而是治理顺序、失败语义与可撤销自动化》《构建系统也是架构工具：发布面、入口影子与传输外壳共同塑造源码秩序》《高阶制度导航：Prompt Constitution、治理顺序与构建系统》，并回写主索引、哲学专题 README、《设计哲学》《第一性原理与苏格拉底反思》与开发文档，把三条第二序制度母线提升为正式章节
+- 新增《深方法导航：共享前缀、合同优先与依赖图诚实性》《共享前缀快照策略模板：何时保存、何时复用、何时suppress》《Contract-First审读清单：如何系统读懂Agent Runtime的合同、权威面与热点文件》《Dependency-Honesty Review Checklist：如何评审leaf module、anti-cycle seam与single-source file》，并回写主索引、导航专题、使用专题与开发文档，把“共享前缀 / 合同优先 / 依赖图诚实性”进一步下沉成导航层与模板层
+- 新增《如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀》《如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件》《如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file》，并回写《使用指南》、使用专题 README、主索引与开发文档，把“共享前缀网络 / 合同优先阅读 / 依赖图诚实性”正式下沉成高级实践
 - 新增《Protocol真相控制面：为什么UI历史必须在API边界前被重新编译》《资源定价运行时：permission、visibility、externalization与continuation的一体化预算》《未来维护者消费者控制面：风险命名、制度注释、seam与状态机如何共同服务演化》，并回写架构专题 README 与主索引，把高级 guide 再推回到底盘层
 - 新增《如何把UI真相翻译成Protocol真相：transcript重写、边界补写与恢复不变量》《如何用资源定价设计Agent Runtime：mode、visibility、externalization与continuation》《如何把未来维护者当正式消费者：风险命名、制度注释、seam与状态机》，并回写《使用指南》、使用专题 README 与主索引，把“协作语法 / 资源定价 / 未来维护者消费者”进一步下沉成高级实践方法
 - 新增《终局判断导航：协作语法、资源定价与未来维护者消费者》，并回写导航专题 README 与主索引“按问题阅读”，把 57-59 从高阶哲学结论进一步收束成可直接进入的检索入口

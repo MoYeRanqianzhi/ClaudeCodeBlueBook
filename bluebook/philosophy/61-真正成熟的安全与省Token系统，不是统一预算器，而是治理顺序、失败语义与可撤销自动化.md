@@ -1,0 +1,237 @@
+# 真正成熟的安全与省Token系统，不是统一预算器，而是治理顺序、失败语义与可撤销自动化
+
+这一章回答五个问题：
+
+1. 为什么仅仅说“安全、成本与体验共用预算器”还不够。
+2. 为什么 Claude Code 真正成熟的地方，在于检查顺序、失败语义分型和自动化撤销路径。
+3. 为什么系统只该在“仍有决策增益”的地方继续花 token。
+4. 为什么“稳定字节”应被视作安全与成本共享的制度资产。
+5. 这对 agent runtime 设计者意味着什么。
+
+## 0. 代表性源码锚点
+
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:235-1033`
+- `claude-code-source-code/src/utils/permissions/filesystem.ts:1252-1302`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:433-458`
+- `claude-code-source-code/src/services/policyLimits/index.ts:504-520`
+- `claude-code-source-code/src/services/compact/autoCompact.ts:257-338`
+- `claude-code-source-code/src/services/api/claude.ts:1405-1460`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:224-520`
+
+这些锚点共同说明：
+
+- Claude Code 的安全与省 token 不只共享“预算器”这个抽象，更共享一套治理顺序、失败语义、自动化撤销和稳定字节资产的运行时制度。
+
+## 1. 先说结论
+
+更成熟的安全/省 token 系统，不是：
+
+- 有一个统一预算器就结束了
+
+而是：
+
+1. 检查必须按正确顺序发生。
+2. 不同资产必须有不同失败语义。
+3. 自动化必须随时可撤销，而不是单向升级。
+4. 只有仍有决策增益的检查才值得继续花 token。
+5. 真正影响治理与成本的字节必须被当成制度资产稳定下来。
+
+从第一性原理看，Claude Code 真正在回答的不是：
+
+- 如何更安全
+- 如何更便宜
+
+而是：
+
+- 在哪里该更早判断，在哪里该停止判断，在哪里该退回人工，在哪里必须把治理字节稳定下来
+
+## 2. 第一层：治理顺序优于检查数量
+
+很多系统谈安全时，只会说：
+
+- 多加一层检查
+
+Claude Code 更成熟的地方在于：
+
+- 它先决定谁必须先检查
+
+比如：
+
+1. 危险 allow rule 会在 auto mode classifier 之前被剔除，因为它们会绕过后续判断；
+2. `.claude/**` 这类窄豁免被允许在极窄边界上提前通过，但更一般的 allow rule 仍然要服从后续 safety check；
+3. 某些路径先做 source gating，再做 adapter enforcement，而不是把所有判断都塞给同一层。
+
+这说明安全与省 token 的共同问题其实是：
+
+- 不该把决策放错顺序
+
+因为顺序一旦错了，系统会同时出现两种坏事：
+
+1. 风险绕过；
+2. 无谓推理与无谓审批。
+
+所以真正成熟的安全设计，不是“检查更多”，而是：
+
+- 检查发生在最有治理价值的时点
+
+## 3. 第二层：失败语义分型优于一刀切 fail-open / fail-closed
+
+Claude Code 对失败并不追求一种统一美德。
+
+它会按资产类别分型：
+
+1. 有些远程托管设置在无缓存时 fail-open，避免把非核心治理流量升级成全局阻断；
+2. 某些 policy limit 又会在关键路径上 fail-closed；
+3. classifier 遇到 transcript too long 时，交互模式退回人工，headless 直接终止；
+4. autocompact 在连续失败后触发 circuit breaker，而不是永远重试。
+
+这说明系统真正追求的不是：
+
+- 永远更保守
+
+也不是：
+
+- 永远更流畅
+
+而是：
+
+- 针对不同资产，采用不同失败哲学
+
+从第一性原理看，这才是成熟治理系统的共同底盘：
+
+- 身份相关失败、组织边界失败、高危配置失败、低价值自动化失败，本来就不该拥有同一种回退语义。
+
+## 4. 第三层：可撤销自动化优于单向升级
+
+如果自动化只能越来越多、越来越强，那它迟早会从行动力变成失控源。
+
+Claude Code 明显在避免这一点：
+
+1. auto mode 不是永久授权，而是随时可能被 denial-limit fallback 打回人工；
+2. classifier 如果继续没有增益，会停止自动化路径；
+3. bypass、auto 这类高阶模式本身还受 gate 与 killswitch 约束。
+
+这说明 Claude Code 对自动化的理解不是：
+
+- 一旦交给系统，就别回头
+
+而是：
+
+- 自动化必须保留合法撤销路径
+
+真正成熟的自动化，不是覆盖人工，而是：
+
+- 在合适时机把判断权还给人工
+
+这同时是一条安全原则，也是一条省 token 原则，因为：
+
+- 当系统已经没有决策增益时，继续自动化只会更贵、更冒险。
+
+## 5. 第四层：只在仍有决策增益时花 token
+
+Claude Code 并不追求“检查越多越安全”。
+
+它更像在问：
+
+- 这次检查还能改变决策吗
+
+如果答案是否定的，系统就会停止继续烧 token。
+
+例如：
+
+1. 某些动作在安全 allowlist 下已足够确定，就不会再把成本继续丢给 classifier；
+2. 危险 allow rule 若会直接绕过 classifier，则先被剔除；
+3. transcript 已长到 classifier 再判也无增益时，直接转人工或终止；
+4. autocompact 连续失败后触发 circuit breaker，而不是继续徒劳压缩。
+
+所以 Claude Code 的省 token，并不是：
+
+- 少说话
+
+而是：
+
+- 不把 token 花在已无制度收益的判断上
+
+这也是为什么安全与成本在这里并不冲突，而是共享同一条判断：
+
+- 决策增益是否仍存在
+
+## 6. 第五层：稳定字节是制度资产，不是实现细节
+
+Claude Code 的很多高级设计都在强调：
+
+- 关键字节必须稳定
+
+例如：
+
+1. system prompt sections 的 cache 与显式危险标记；
+2. sticky beta / latched header；
+3. tool-result replacement replay；
+4. prompt cache break diff 与 root-cause 解释。
+
+这说明对 Claude Code 来说，真正要被保护的不是“缓存命中率”这个结果，而是：
+
+- 影响治理、成本与解释一致性的那些字节
+
+因为这些字节一旦不稳定，系统会同时损失：
+
+1. 安全边界的一致性；
+2. 成本结构的可预测性；
+3. 对 prompt 行为的解释能力。
+
+所以更成熟的说法不是：
+
+- cache 很重要
+
+而是：
+
+- 稳定字节本身就是制度资产
+
+## 7. 苏格拉底式追问
+
+### 7.1 为什么仅说“统一预算器”还不够
+
+因为统一预算器回答的是：
+
+- 这些约束在一套秩序里
+
+但还没回答：
+
+- 谁先判断
+- 什么时候停止判断
+- 出错后走哪种失败语义
+- 自动化何时退回人工
+
+### 7.2 为什么安全不该只写成拦截器
+
+因为真正有价值的不是“阻止更多动作”，而是：
+
+- 把检查放在最有治理价值的位置；
+- 把无决策增益的检查及时停掉。
+
+### 7.3 为什么省 token 不该只写成压缩技巧
+
+因为很多 token 浪费根本不发生在回答长度，而发生在：
+
+- 错误顺序的检查
+- 无意义的自动化重试
+- 已无收益的分类与审批
+
+## 8. 对 Agent 设计者的启发
+
+如果想学 Claude Code，最该抄的不是：
+
+- 更复杂的规则表
+
+而是：
+
+1. 先设计治理顺序，而不是先堆检查器。
+2. 给不同资产设计不同失败语义。
+3. 让自动化始终可撤销，而不是只可升级。
+4. 用“是否仍有决策增益”来决定是否继续花 token。
+5. 把稳定字节当成正式制度资产管理。
+
+## 9. 一句话总结
+
+Claude Code 的安全与省 token 之所以成熟，不只是因为它们共用预算器，更因为它把治理顺序、失败语义、可撤销自动化和稳定字节资产一起写成了同一套运行时制度。

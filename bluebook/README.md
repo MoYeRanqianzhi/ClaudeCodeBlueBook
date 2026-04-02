@@ -19,6 +19,8 @@
 - `bluebook/navigation/`：阅读地图与检索入口，不承载新的正文平面。
 - `bluebook/philosophy/`：设计内涵、第一性原理与演化方法。
 - `bluebook/guides/`：从源码反推的实战使用方法。
+- `bluebook/playbooks/`：回归、事故复盘、演化演练与团队运行手册。
+- `bluebook/casebooks/`：失败样本库、反模式样本与制度失效原型。
 - `bluebook/risk/`：账号治理、风控、远程控制与误伤处置。
 - `docs/`：持久化记忆与开发文档，不承载蓝皮书正文。
 
@@ -65,6 +67,17 @@
 - 想把 UI 真相翻译成 protocol 真相，而不是继续把显示层误当执行层，再读 [guides/15-如何把UI真相翻译成Protocol真相：transcript重写、边界补写与恢复不变量](guides/15-%E5%A6%82%E4%BD%95%E6%8A%8AUI%E7%9C%9F%E7%9B%B8%E7%BF%BB%E8%AF%91%E6%88%90Protocol%E7%9C%9F%E7%9B%B8%EF%BC%9Atranscript%E9%87%8D%E5%86%99%E3%80%81%E8%BE%B9%E7%95%8C%E8%A1%A5%E5%86%99%E4%B8%8E%E6%81%A2%E5%A4%8D%E4%B8%8D%E5%8F%98%E9%87%8F.md)
 - 想把安全、可见性和 continuation 写成统一资源定价秩序，再读 [guides/16-如何用资源定价设计Agent Runtime：mode、visibility、externalization与continuation](guides/16-%E5%A6%82%E4%BD%95%E7%94%A8%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BB%B7%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9Amode%E3%80%81visibility%E3%80%81externalization%E4%B8%8Econtinuation.md)
 - 想把未来维护者当成正式消费者，而不是把工程制度留在口头传承里，再读 [guides/17-如何把未来维护者当正式消费者：风险命名、制度注释、seam与状态机](guides/17-%E5%A6%82%E4%BD%95%E6%8A%8A%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E5%BD%93%E6%AD%A3%E5%BC%8F%E6%B6%88%E8%B4%B9%E8%80%85%EF%BC%9A%E9%A3%8E%E9%99%A9%E5%91%BD%E5%90%8D%E3%80%81%E5%88%B6%E5%BA%A6%E6%B3%A8%E9%87%8A%E3%80%81seam%E4%B8%8E%E7%8A%B6%E6%80%81%E6%9C%BA.md)
+- 想把 prompt 理解成主线程生产、旁路循环复用的共享前缀网络，再读 [guides/18-如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀](guides/18-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%BD%93%E6%88%90%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E8%B5%84%E4%BA%A7%E7%BD%91%E7%BB%9C%EF%BC%9A%E4%BE%A7%E9%97%AE%E9%A2%98%E3%80%81suggestion%E3%80%81memory%E4%B8%8Esummary%E5%85%B1%E7%94%A8%E4%B8%BB%E7%BA%BF%E7%A8%8B%E5%89%8D%E7%BC%80.md)
+- 想研究 Claude Code 源码时先锁定合同真相，再回到热点实现，再读 [guides/19-如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件](guides/19-%E5%A6%82%E4%BD%95%E7%94%A8Contract-First%E6%96%B9%E6%B3%95%E9%98%85%E8%AF%BB%E5%92%8C%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9A%E5%85%88%E6%89%BE%E5%90%88%E5%90%8C%EF%BC%8C%E5%86%8D%E7%9C%8B%E7%83%AD%E7%82%B9%E6%96%87%E4%BB%B6.md)
+- 想把依赖图诚实性写成长期维护制度，而不是抽象洁癖，再读 [guides/20-如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file](guides/20-%E5%A6%82%E4%BD%95%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9C%B0%E7%BB%B4%E6%8C%81%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%9A%E5%AE%9E%E6%80%A7%EF%BC%9Aleaf%20module%E3%80%81anti-cycle%20seam%E4%B8%8Esingle-source%20file.md)
+- 想把这三条深方法进一步落成团队模板和 review checklist，再读 [navigation/07-深方法导航：共享前缀、合同优先与依赖图诚实性](navigation/07-%E6%B7%B1%E6%96%B9%E6%B3%95%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E3%80%81%E5%90%88%E5%90%8C%E4%BC%98%E5%85%88%E4%B8%8E%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%9A%E5%AE%9E%E6%80%A7.md)
+- 想继续看 prompt、安全、源码先进性的第二序制度层，再读 [navigation/08-高阶制度导航：Prompt Constitution、治理顺序与构建系统](navigation/08-%E9%AB%98%E9%98%B6%E5%88%B6%E5%BA%A6%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%20Constitution%E3%80%81%E6%B2%BB%E7%90%86%E9%A1%BA%E5%BA%8F%E4%B8%8E%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F.md)
+- 想把这三条第二序制度继续下沉成 builder-facing 操作手册，再读 [guides/24-如何把Prompt写成可治理宪法：section registry、角色主权链、合法遗忘与可观测diff](guides/24-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%86%99%E6%88%90%E5%8F%AF%E6%B2%BB%E7%90%86%E5%AE%AA%E6%B3%95%EF%BC%9Asection%20registry%E3%80%81%E8%A7%92%E8%89%B2%E4%B8%BB%E6%9D%83%E9%93%BE%E3%80%81%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E4%B8%8E%E5%8F%AF%E8%A7%82%E6%B5%8Bdiff.md)
+- 想把这三条第二序制度继续落成团队级审计表、矩阵、ledger 与 runbook，再读 [navigation/09-团队落地包导航：修宪工作流、治理矩阵与源码塑形审读](navigation/09-%E5%9B%A2%E9%98%9F%E8%90%BD%E5%9C%B0%E5%8C%85%E5%AF%BC%E8%88%AA%EF%BC%9A%E4%BF%AE%E5%AE%AA%E5%B7%A5%E4%BD%9C%E6%B5%81%E3%80%81%E6%B2%BB%E7%90%86%E7%9F%A9%E9%98%B5%E4%B8%8E%E6%BA%90%E7%A0%81%E5%A1%91%E5%BD%A2%E5%AE%A1%E8%AF%BB.md)
+- 想把这些制度继续推进到运营、回归、事故复盘与演化演练层，再读 [navigation/10-运营与复盘导航：修宪回归、治理事故与演化演练](navigation/10-运营与复盘导航：修宪回归、治理事故与演化演练.md)
+- 想直接看这些制度在真实失败形态里如何暴露本质，再读 [navigation/11-案例库导航：Prompt事故、治理事故与结构演化样本](navigation/11-%E6%A1%88%E4%BE%8B%E5%BA%93%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E4%BA%8B%E6%95%85%E3%80%81%E6%B2%BB%E7%90%86%E4%BA%8B%E6%95%85%E4%B8%8E%E7%BB%93%E6%9E%84%E6%BC%94%E5%8C%96%E6%A0%B7%E6%9C%AC.md)
+- 想把手册层与样本层继续联成可检索的标签体系、交叉索引与记录模板，再读 [navigation/12-样本与演练导航：标签体系、交叉索引与记录模板](navigation/12-%E6%A0%B7%E6%9C%AC%E4%B8%8E%E6%BC%94%E7%BB%83%E5%AF%BC%E8%88%AA%EF%BC%9A%E6%A0%87%E7%AD%BE%E4%BD%93%E7%B3%BB%E3%80%81%E4%BA%A4%E5%8F%89%E7%B4%A2%E5%BC%95%E4%B8%8E%E8%AE%B0%E5%BD%95%E6%A8%A1%E6%9D%BF.md)
+- 想把索引层继续压成标签字典、案例反查与填表示例，再读 [navigation/13-字典与反查导航：标签字典、源码锚点与记录样例](navigation/13-%E5%AD%97%E5%85%B8%E4%B8%8E%E5%8F%8D%E6%9F%A5%E5%AF%BC%E8%88%AA%EF%BC%9A%E6%A0%87%E7%AD%BE%E5%AD%97%E5%85%B8%E3%80%81%E6%BA%90%E7%A0%81%E9%94%9A%E7%82%B9%E4%B8%8E%E8%AE%B0%E5%BD%95%E6%A0%B7%E4%BE%8B.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -77,6 +90,7 @@
 ### 4. 想研究 prompt、知识、记忆与上下文经济
 
 - 先读 `06 -> 07`
+- 先用 [guides/18-如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀](guides/18-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%BD%93%E6%88%90%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E8%B5%84%E4%BA%A7%E7%BD%91%E7%BB%9C%EF%BC%9A%E4%BE%A7%E9%97%AE%E9%A2%98%E3%80%81suggestion%E3%80%81memory%E4%B8%8Esummary%E5%85%B1%E7%94%A8%E4%B8%BB%E7%BA%BF%E7%A8%8B%E5%89%8D%E7%BC%80.md) 把共享前缀网络先实践化
 - 再读 `api/18 -> api/21 -> architecture/18 -> architecture/28 -> architecture/29 -> architecture/31 -> architecture/36`
 - 哲学收束看 `philosophy/14 -> philosophy/18 -> philosophy/19 -> philosophy/21 -> philosophy/22 -> philosophy/54 -> philosophy/57`
 
@@ -89,6 +103,8 @@
 ### 6. 想研究源码结构与工程先进性
 
 - 先读 `01 -> 03 -> 05`
+- 先用 [guides/19-如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件](guides/19-%E5%A6%82%E4%BD%95%E7%94%A8Contract-First%E6%96%B9%E6%B3%95%E9%98%85%E8%AF%BB%E5%92%8C%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9A%E5%85%88%E6%89%BE%E5%90%88%E5%90%8C%EF%BC%8C%E5%86%8D%E7%9C%8B%E7%83%AD%E7%82%B9%E6%96%87%E4%BB%B6.md) 校准阅读顺序
+- 再用 [guides/20-如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file](guides/20-%E5%A6%82%E4%BD%95%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9C%B0%E7%BB%B4%E6%8C%81%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%9A%E5%AE%9E%E6%80%A7%EF%BC%9Aleaf%20module%E3%80%81anti-cycle%20seam%E4%B8%8Esingle-source%20file.md) 理解维护制度
 - 再读 `api/30 -> api/34 -> architecture/20 -> architecture/21 -> architecture/22 -> architecture/24 -> architecture/25 -> architecture/33 -> architecture/38 -> architecture/40 -> architecture/41 -> architecture/44 -> architecture/47 -> architecture/52`
 - 哲学收束看 `philosophy/15 -> philosophy/16 -> philosophy/17 -> philosophy/23 -> philosophy/24 -> philosophy/28 -> philosophy/29 -> philosophy/32 -> philosophy/34 -> philosophy/39 -> philosophy/56 -> philosophy/59`
 
@@ -159,7 +175,11 @@
 
 ### 为什么 prompt 看起来有魔力
 
-- `06 -> 07 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> architecture/46 -> architecture/53 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30 -> philosophy/33 -> philosophy/38 -> philosophy/39 -> philosophy/40 -> philosophy/57`
+- `06 -> 07 -> guides/18 -> api/18 -> architecture/18 -> architecture/28 -> architecture/31 -> architecture/36 -> architecture/39 -> architecture/42 -> architecture/46 -> architecture/53 -> philosophy/14 -> philosophy/18 -> philosophy/21 -> philosophy/30 -> philosophy/33 -> philosophy/38 -> philosophy/39 -> philosophy/40 -> philosophy/57`
+
+### 为什么 prompt 的魔力能在侧问题、suggestion、memory、summary、dream 之间继承
+
+- `guides/18 -> architecture/42 -> architecture/53 -> philosophy/30 -> philosophy/39 -> philosophy/57`
 
 ### 为什么它不像普通 IDE 插件
 
@@ -235,13 +255,28 @@
 
 ### 为什么依赖图诚实性比抽象洁癖更重要
 
-- `architecture/41 -> architecture/58 -> philosophy/28 -> philosophy/45`
+- `guides/20 -> architecture/41 -> architecture/58 -> philosophy/28 -> philosophy/45`
+
+### 为什么研究 Claude Code 源码时必须先找合同，再看热点文件
+
+- `guides/19 -> api/34 -> architecture/38 -> philosophy/24 -> philosophy/59`
+
+### 为什么依赖图诚实性是一种工程正确性，而不是代码洁癖
+
+- `guides/20 -> architecture/58 -> philosophy/45 -> philosophy/56 -> philosophy/59`
 
 ### 想按深度专题而不是按目录来读
 
 - 先读 [navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理](navigation/03-%E6%B7%B1%E5%BA%A6%E4%B8%93%E9%A2%98%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E5%BA%95%E7%9B%98%E4%B8%8E%E6%B2%BB%E7%90%86.md)
 - 想直接看高阶设计母线，再读 [navigation/05-设计母线导航：工作语法、反扩张与可演化内核](navigation/05-%E8%AE%BE%E8%AE%A1%E6%AF%8D%E7%BA%BF%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%B7%A5%E4%BD%9C%E8%AF%AD%E6%B3%95%E3%80%81%E5%8F%8D%E6%89%A9%E5%BC%A0%E4%B8%8E%E5%8F%AF%E6%BC%94%E5%8C%96%E5%86%85%E6%A0%B8.md)
 - 想直接看最新终局判断，再读 [navigation/06-终局判断导航：协作语法、资源定价与未来维护者消费者](navigation/06-%E7%BB%88%E5%B1%80%E5%88%A4%E6%96%AD%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%8D%8F%E4%BD%9C%E8%AF%AD%E6%B3%95%E3%80%81%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BB%B7%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85.md)
+- 想直接看“共享前缀 / 合同优先 / 依赖图诚实性”怎样变成模板层，再读 [navigation/07-深方法导航：共享前缀、合同优先与依赖图诚实性](navigation/07-%E6%B7%B1%E6%96%B9%E6%B3%95%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E3%80%81%E5%90%88%E5%90%8C%E4%BC%98%E5%85%88%E4%B8%8E%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%9A%E5%AE%9E%E6%80%A7.md)
+- 想继续看 prompt、安全、源码先进性的第二序制度层，再读 [navigation/08-高阶制度导航：Prompt Constitution、治理顺序与构建系统](navigation/08-%E9%AB%98%E9%98%B6%E5%88%B6%E5%BA%A6%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%20Constitution%E3%80%81%E6%B2%BB%E7%90%86%E9%A1%BA%E5%BA%8F%E4%B8%8E%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F.md)
+- 想直接看第二序制度怎样被压成团队工件层，再读 [navigation/09-团队落地包导航：修宪工作流、治理矩阵与源码塑形审读](navigation/09-%E5%9B%A2%E9%98%9F%E8%90%BD%E5%9C%B0%E5%8C%85%E5%AF%BC%E8%88%AA%EF%BC%9A%E4%BF%AE%E5%AE%AA%E5%B7%A5%E4%BD%9C%E6%B5%81%E3%80%81%E6%B2%BB%E7%90%86%E7%9F%A9%E9%98%B5%E4%B8%8E%E6%BA%90%E7%A0%81%E5%A1%91%E5%BD%A2%E5%AE%A1%E8%AF%BB.md)
+- 想直接看这些团队工件怎样进入回归、事故复盘与长期运营，再读 [navigation/10-运营与复盘导航：修宪回归、治理事故与演化演练](navigation/10-运营与复盘导航：修宪回归、治理事故与演化演练.md)
+- 想直接看真实失败样本如何暴露制度边界，再读 [navigation/11-案例库导航：Prompt事故、治理事故与结构演化样本](navigation/11-%E6%A1%88%E4%BE%8B%E5%BA%93%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E4%BA%8B%E6%95%85%E3%80%81%E6%B2%BB%E7%90%86%E4%BA%8B%E6%95%85%E4%B8%8E%E7%BB%93%E6%9E%84%E6%BC%94%E5%8C%96%E6%A0%B7%E6%9C%AC.md)
+- 想直接看这些样本怎样被编目、标记并回流到演练体系，再读 [navigation/12-样本与演练导航：标签体系、交叉索引与记录模板](navigation/12-%E6%A0%B7%E6%9C%AC%E4%B8%8E%E6%BC%94%E7%BB%83%E5%AF%BC%E8%88%AA%EF%BC%9A%E6%A0%87%E7%AD%BE%E4%BD%93%E7%B3%BB%E3%80%81%E4%BA%A4%E5%8F%89%E7%B4%A2%E5%BC%95%E4%B8%8E%E8%AE%B0%E5%BD%95%E6%A8%A1%E6%9D%BF.md)
+- 想直接看标签怎么定义、案例怎么反查、记录怎么填写，再读 [navigation/13-字典与反查导航：标签字典、源码锚点与记录样例](navigation/13-%E5%AD%97%E5%85%B8%E4%B8%8E%E5%8F%8D%E6%9F%A5%E5%AF%BC%E8%88%AA%EF%BC%9A%E6%A0%87%E7%AD%BE%E5%AD%97%E5%85%B8%E3%80%81%E6%BA%90%E7%A0%81%E9%94%9A%E7%82%B9%E4%B8%8E%E8%AE%B0%E5%BD%95%E6%A0%B7%E4%BE%8B.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
@@ -279,6 +314,38 @@
 ### 为什么真正的安全不是拦截动作，而是资源定价
 
 - `navigation/06 -> architecture/50 -> architecture/56 -> architecture/65 -> philosophy/55 -> philosophy/58`
+
+### 为什么 prompt 的更深魔力不在文案，而在一部可治理的 Prompt Constitution
+
+- `navigation/08 -> architecture/36 -> architecture/39 -> architecture/46 -> philosophy/33 -> philosophy/60`
+
+### 为什么安全和省Token更深层上是治理顺序、失败语义与可撤销自动化
+
+- `navigation/08 -> architecture/23 -> architecture/40 -> architecture/50 -> architecture/62 -> philosophy/47 -> philosophy/61`
+
+### 为什么构建系统本身也是 Claude Code 源码先进性的一部分
+
+- `navigation/08 -> architecture/33 -> architecture/63 -> architecture/66 -> philosophy/50 -> philosophy/62`
+
+### 为什么第二序制度最后都必须落成审计表、矩阵与runbook
+
+- `navigation/09 -> guides/27 -> guides/28 -> guides/29 -> philosophy/60 -> philosophy/61 -> philosophy/62`
+
+### 为什么真正强的制度最终必须继续落成回归、事故复盘与演化演练
+
+- `navigation/10 -> playbooks/01 -> playbooks/02 -> playbooks/03 -> philosophy/47 -> philosophy/53 -> philosophy/62`
+
+### 为什么具体失败样本往往比抽象原则更能暴露系统设计的真义
+
+- `navigation/11 -> casebooks/01 -> casebooks/02 -> casebooks/03 -> philosophy/39 -> philosophy/47 -> philosophy/62`
+
+### 为什么样本层最后还必须继续长出标签体系、交叉索引与记录模板
+
+- `navigation/12 -> playbooks/04 -> casebooks/04 -> philosophy/24 -> philosophy/44 -> philosophy/56`
+
+### 为什么参考层最终必须继续压成字典、反查表与样例库
+
+- `navigation/13 -> casebooks/05 -> casebooks/06 -> playbooks/05 -> philosophy/24 -> philosophy/32 -> philosophy/44`
 
 ### 为什么高行动力来自统一定价而不是统一放权
 
