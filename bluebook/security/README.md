@@ -429,4 +429,6 @@
 - 想把 `109` 的长文压成一张调度矩阵，快速看出不同 subsystem 的 current writer、implicit transition 与 recommended dispatch event：`109` -> `appendix/93`
 - 想看为什么即使 dispatch 已经存在，状态机仍不能只会“调度”，而必须继续回答哪些 from_state -> to_state 根本不被允许：`109` -> `110`
 - 想把 `110` 的长文压成一张宪法矩阵，快速看出不同 subsystem 的 forbidden jump、allowed gate 与 reason：`110` -> `appendix/94`
+- 想看为什么即使 transition constitution 已经成立，如果这些禁令不能被机器持续验证，就仍然太依赖维护者记忆：`110` -> `111`
+- 想把 `111` 的长文压成一张机检矩阵，快速看出不同 subsystem 的 candidate invariant、current guard 与 recommended automated check：`111` -> `appendix/95`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
