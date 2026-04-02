@@ -81,6 +81,9 @@
 75. [75-如何把Prompt宿主修复稳态失真压回compiled request truth：固定纠偏顺序、拒收升级路径与改写模板骨架](75-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E5%A4%B1%E7%9C%9F%E5%8E%8B%E5%9B%9Ecompiled%20request%20truth%EF%BC%9A%E5%9B%BA%E5%AE%9A%E9%A1%BA%E5%BA%8F%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E4%B8%8E%E6%94%B9%E5%86%99%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
 76. [76-如何把治理宿主修复稳态失真压回统一定价控制面：固定纠偏顺序、拒收升级路径与改写模板骨架](76-%E5%A6%82%E4%BD%95%E6%8A%8A%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E5%A4%B1%E7%9C%9F%E5%8E%8B%E5%9B%9E%E7%BB%9F%E4%B8%80%E5%AE%9A%E4%BB%B7%E6%8E%A7%E5%88%B6%E9%9D%A2%EF%BC%9A%E5%9B%BA%E5%AE%9A%E9%A1%BA%E5%BA%8F%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E4%B8%8E%E6%94%B9%E5%86%99%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
 77. [77-如何把结构宿主修复稳态失真压回结构真相面：固定纠偏顺序、拒收升级路径与steady-state、archive与reservation改写模板骨架](77-%E5%A6%82%E4%BD%95%E6%8A%8A%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E5%A4%B1%E7%9C%9F%E5%8E%8B%E5%9B%9E%E7%BB%93%E6%9E%84%E7%9C%9F%E7%9B%B8%E9%9D%A2%EF%BC%9A%E5%9B%BA%E5%AE%9A%E9%A1%BA%E5%BA%8F%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E4%B8%8Esteady-state%E3%80%81archive%E4%B8%8Ereservation%E6%94%B9%E5%86%99%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
+78. [78-如何把Prompt宿主修复稳态纠偏执行失真压回compiled request truth：固定纠偏顺序、拒收升级路径与改写模板骨架](78-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%E5%8E%8B%E5%9B%9Ecompiled%20request%20truth%EF%BC%9A%E5%9B%BA%E5%AE%9A%E7%BA%A0%E5%81%8F%E9%A1%BA%E5%BA%8F%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E4%B8%8E%E6%94%B9%E5%86%99%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
+79. [79-如何把治理宿主修复稳态纠偏执行失真压回统一定价控制面：固定纠偏顺序、拒收升级路径与改写模板骨架](79-%E5%A6%82%E4%BD%95%E6%8A%8A%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%E5%8E%8B%E5%9B%9E%E7%BB%9F%E4%B8%80%E5%AE%9A%E4%BB%B7%E6%8E%A7%E5%88%B6%E9%9D%A2%EF%BC%9A%E5%9B%BA%E5%AE%9A%E7%BA%A0%E5%81%8F%E9%A1%BA%E5%BA%8F%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E4%B8%8E%E6%94%B9%E5%86%99%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
+80. [80-如何把结构宿主修复稳态纠偏执行失真压回结构真相面：固定纠偏顺序、拒收升级路径与correction、archive与responsibility改写模板骨架](80-%E5%A6%82%E4%BD%95%E6%8A%8A%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%E5%8E%8B%E5%9B%9E%E7%BB%93%E6%9E%84%E7%9C%9F%E7%9B%B8%E9%9D%A2%EF%BC%9A%E5%9B%BA%E5%AE%9A%E7%BA%A0%E5%81%8F%E9%A1%BA%E5%BA%8F%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E4%B8%8Ecorrection%E3%80%81archive%E4%B8%8Eresponsibility%E6%94%B9%E5%86%99%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
 
 ## 按使用目标阅读
 
@@ -143,6 +146,7 @@
 - 想把这些宿主修复收口失真继续压回固定纠偏顺序、拒收升级路径与改写模板骨架，而不是停在假完成、假交接与假重开的坏样例辨认：`../navigation/61 -> 66 -> 67 -> 68 -> ../casebooks/37 -> ../casebooks/38 -> ../casebooks/39`
 - 想把这些宿主修复监护失真继续压回固定纠偏顺序、拒收升级路径与改写模板骨架，而不是停在假观察、假冻结与假重开的坏样例辨认：`../navigation/65 -> 69 -> 70 -> 71 -> ../casebooks/40 -> ../casebooks/41 -> ../casebooks/42`
 - 想把这些宿主修复稳态失真继续压回固定纠偏顺序、拒收升级路径与改写模板骨架，而不是停在假稳态、假托管与假阈值的坏样例辨认：`../navigation/73 -> 75 -> 76 -> 77 -> ../casebooks/46 -> ../casebooks/47 -> ../casebooks/48`
+- 想把这些宿主修复稳态纠偏执行失真继续压回固定顺序、拒收升级路径与改写模板骨架，而不是停在假修正卡、假恢复顺序与假责任演练的坏样例辨认：`../navigation/77 -> 78 -> 79 -> 80 -> ../casebooks/49 -> ../casebooks/50 -> ../casebooks/51`
 
 ## 与其他目录的边界
 
@@ -172,8 +176,10 @@
 - 再往下一层，应由 `../navigation/61 -> 66-68` 继续回答“怎样把这些宿主修复收口失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
 - 再往下一层，应由 `../navigation/65 -> 69-71` 继续回答“怎样把这些宿主修复监护失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
 - 再往下一层，应由 `../navigation/69 -> 72-74` 继续回答“怎样把这些宿主修复解除监护失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
-- 再往下一层，应由 `../navigation/73 -> 75-77` 继续回答“怎样把这些宿主修复稳态失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
-- 再往下一层，应由 `../navigation/74 -> ../api/72-74` 继续回答“怎样把这些宿主修复稳态纠偏继续压成宿主可消费的纠偏规则面、拒收语义与长期 reopen 责任面”。
+- `../navigation/73 -> 75-77` 继续回答“怎样把这些宿主修复稳态失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架”。
+- `../navigation/77 -> 78-80` 继续回答“怎样把这些宿主修复稳态纠偏执行失真重新压回固定顺序、拒收升级路径与改写模板骨架”。
+- `../navigation/78 -> ../api/75-77` 继续回答“怎样把这些宿主修复稳态纠偏再纠偏继续压成宿主可消费的修正对象、拒收语义与长期 reopen 责任面”。
+- 再往下一层，应由 `../navigation/79 -> ../playbooks/56-58` 继续回答“怎样把这些宿主修复稳态纠偏再纠偏协议继续压成固定 correction card、reject 顺序与 re-entry / reopen 责任演练”。
 - 再往下一层，应由 `../navigation/58 -> ../api/60-62` 继续回答“怎样把这些宿主修复纠偏继续压成宿主可消费的收口卡、完成语义与交接保证面”。
 - `../philosophy/81-83` 负责回答“为什么这些实现顺序不是经验技巧，而是 Prompt 编译链、统一定价治理与故障模型编码的不可约判断”。
 
