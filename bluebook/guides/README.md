@@ -45,6 +45,9 @@
 39. [39-Prompt Artifact Validator模板：共享对象、稳定字节、合法遗忘与交接拒收](39-Prompt%20Artifact%20Validator%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%85%B1%E4%BA%AB%E5%AF%B9%E8%B1%A1%E3%80%81%E7%A8%B3%E5%AE%9A%E5%AD%97%E8%8A%82%E3%80%81%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E4%B8%8E%E4%BA%A4%E6%8E%A5%E6%8B%92%E6%94%B6.md)
 40. [40-治理 Artifact Validator模板：决策窗口、仲裁证据、回退对象与行动语义拒收](40-%E6%B2%BB%E7%90%86%20Artifact%20Validator%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%86%B3%E7%AD%96%E7%AA%97%E5%8F%A3%E3%80%81%E4%BB%B2%E8%A3%81%E8%AF%81%E6%8D%AE%E3%80%81%E5%9B%9E%E9%80%80%E5%AF%B9%E8%B1%A1%E4%B8%8E%E8%A1%8C%E5%8A%A8%E8%AF%AD%E4%B9%89%E6%8B%92%E6%94%B6.md)
 41. [41-结构 Artifact Validator模板：权威路径、恢复资产、anti-zombie 与交接拒收](41-%E7%BB%93%E6%9E%84%20Artifact%20Validator%E6%A8%A1%E6%9D%BF%EF%BC%9A%E6%9D%83%E5%A8%81%E8%B7%AF%E5%BE%84%E3%80%81%E6%81%A2%E5%A4%8D%E8%B5%84%E4%BA%A7%E3%80%81anti-zombie%20%E4%B8%8E%E4%BA%A4%E6%8E%A5%E6%8B%92%E6%94%B6.md)
+42. [42-Prompt Artifact Harness Runner落地手册：Replay Queue、Prefix Ledger、Continuation Gate 与 Rewrite Adoption](42-Prompt%20Artifact%20Harness%20Runner%E8%90%BD%E5%9C%B0%E6%89%8B%E5%86%8C%EF%BC%9AReplay%20Queue%E3%80%81Prefix%20Ledger%E3%80%81Continuation%20Gate%20%E4%B8%8E%20Rewrite%20Adoption.md)
+43. [43-治理 Artifact Harness Runner落地手册：Decision Window、Alignment Gate、Arbitration Ledger 与 Object Upgrade](43-%E6%B2%BB%E7%90%86%20Artifact%20Harness%20Runner%E8%90%BD%E5%9C%B0%E6%89%8B%E5%86%8C%EF%BC%9ADecision%20Window%E3%80%81Alignment%20Gate%E3%80%81Arbitration%20Ledger%20%E4%B8%8E%20Object%20Upgrade.md)
+44. [44-结构 Artifact Harness Runner落地手册：Authoritative Queue、Recovery Ledger、Anti-Zombie 审读与 Recovery Adoption](44-%E7%BB%93%E6%9E%84%20Artifact%20Harness%20Runner%E8%90%BD%E5%9C%B0%E6%89%8B%E5%86%8C%EF%BC%9AAuthoritative%20Queue%E3%80%81Recovery%20Ledger%E3%80%81Anti-Zombie%20%E5%AE%A1%E8%AF%BB%E4%B8%8E%20Recovery%20Adoption.md)
 
 ## 按使用目标阅读
 
@@ -94,6 +97,7 @@
 - 想把这些统一审读模板继续落成正式宿主卡、CI附件、评审卡与交接包协议，而不是继续靠团队本地约定：`../navigation/26 -> ../api/37 -> ../api/38 -> ../api/39`
 - 想把 artifact drift 继续编译成自动校验、reviewer gate 与 handoff reject，而不是停在反例识别：`../navigation/29 -> 39 -> 40 -> 41 -> ../philosophy/70`
 - 想把这些 validator / linter 继续压成 machine-readable rule ABI，而不是继续靠不同消费者手抄规则：`../navigation/30 -> ../api/40 -> ../api/41 -> ../api/42 -> ../philosophy/71`
+- 想把这些 runner / ledger 协议继续下沉成团队每天真的会执行的操作手册，而不是继续停在 API / 架构层：`../navigation/34 -> 42 -> 43 -> 44 -> ../philosophy/75`
 
 ## 与其他目录的边界
 
@@ -108,6 +112,8 @@
 - `../philosophy/70` 负责回答“为什么真正成熟的校验，不是字段齐全，而是共享对象能拒绝漂移”。
 - 再往下一层，应由 `../navigation/30 -> ../api/40-42` 继续回答“怎样把这些 validator / linter 正式压成 machine-readable rule packet”。
 - `../philosophy/71` 负责回答“为什么真正成熟的规则，不是更多检查，而是不同消费者共享同一拒收语义”。
+- 再往下一层，应由 `../navigation/34 -> 42-44` 继续回答“怎样把 replay queue、alignment gate、drift review 与 adoption runbook 压成 builder-facing 手册”。
+- `../philosophy/75` 负责回答“为什么真正成熟的继续，不是复用上一轮结论，而是重新消费上一轮留下的判断条件”。
 
 后续继续补：
 

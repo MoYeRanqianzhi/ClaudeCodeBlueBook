@@ -654,6 +654,28 @@
 - `claude-code-source-code/src/tasks/RemoteAgentTask/RemoteAgentTask.tsx:386-845`
 - `claude-code-source-code/src/bridge/bridgePointer.ts:21-184`
 
+### A013. artifact harness runner / drift ledger 之后，下一层应进入 builder-facing runner 手册层
+
+- 当 `navigation/33 + api/43-45 + architecture/78` 已经把 Prompt、治理与结构三条线的持续执行协议与底盘写出来之后，下一步最值钱的不是继续补更多 runner 名词，而是补 builder-facing runner 手册：把 replay queue policy、alignment gate、drift review 与 adoption runbook 压成团队每天真的会执行的顺序。
+- `guides/42` 应把 Prompt 线继续写成 runner 手册：先锁 `prompt_object_id`、accepted transcript checkpoint、compact boundary、`cache_safe_params`、`stable_bytes_ledger_ref`、`lawful_forgetting_abi_ref` 与 `next_step_guard`，再把 replay queue、prefix ledger、continuation gate 与 rewrite adoption 接成同一条 continuation 操作链；这样才能把 Prompt 魔力继续固定在 shared continuation，而不是退回原文、绿灯与摘要。
+- `guides/43` 应把治理线继续写成 runner 手册：先锁 `governance_object_id`、`decision_window`、`winner_source`、`control_arbitration_truth`、`rollback_object` 与 `object_upgrade_rule`，再把 decision queue、alignment gate、arbitration ledger 与 object upgrade 接成同一条治理操作链；这样才能把安全与省 token 继续固定在统一决策增益，而不是退回局部 KPI。
+- `guides/44` 应把结构线继续写成 runner 手册：先锁 `structure_object_id`、`authoritative_path`、`recovery_asset_ledger`、`dropped_stale_writers`、`bridge_pointer_ref` 与 `rollback_object`，再把 authoritative queue、recovery ledger、anti-zombie review 与 recovery adoption 接成同一条恢复操作链；这样才能把源码先进性继续固定在 authoritative surface 与 stale-writer 清退，而不是退回结构展示。
+- `navigation/34` 因而成为必要入口：`33` 负责知道“持续执行协议为什么成立”，`34` 负责知道“团队每天怎样照此执行”，避免蓝皮书重新停在 runner 抽象层而没有团队动作层。
+- `philosophy/75` 因而成为必要收束：真正成熟的继续，不是复用上一轮结论，而是重新消费上一轮留下的判断条件；没有这层收束，团队很快又会把 runner 写回默认延长会话。
+
+证据:
+
+- `claude-code-source-code/src/QueryEngine.ts:436-463`
+- `claude-code-source-code/src/QueryEngine.ts:687-717`
+- `claude-code-source-code/src/query/stopHooks.ts:84-98`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:224-666`
+- `claude-code-source-code/src/utils/QueryGuard.ts:29-93`
+- `claude-code-source-code/src/cli/structuredIO.ts:149-657`
+- `claude-code-source-code/src/utils/sessionState.ts:92-133`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1085-1215`
+- `claude-code-source-code/src/utils/task/framework.ts:160-269`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+
 证据:
 
 - `claude-code-source-code/src/constants/prompts.ts:491-557`
