@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复收口纠偏 / repair closeout correction guide”继续推进到“宿主修复监护协议 / repair watch contract”层。
+- 新增结论：
+  - Prompt 宿主修复收口纠偏如果要真正保持结束能力，必须继续把 `monitor_only`、handoff watch、baseline drift ledger 与 reopen gate 压成正式监护对象，而不是继续围绕 closeout note、summary handoff 与‘先观察一下’工作。
+  - 治理宿主修复收口纠偏如果要真正保持统一定价，必须继续把 authority watch、ledger residue、window watch、continuation repricing watch 与 rollback quarantine 压成正式监护对象，而不是继续围绕 mode 面板、usage dashboard 与保守建议工作。
+  - 结构宿主修复收口纠偏如果要真正保持结构真相面，必须继续把 authority watch、resume regression watch、writeback watch、anti-zombie watch 与 boundary quarantine 压成正式监护对象，而不是继续围绕 pointer 健康感、监控转绿与作者说明工作。
+- 新增目录责任：
+  - `navigation/62` 负责宿主修复监护协议入口。
+  - `api/63-65` 负责三类宿主修复收口纠偏的监护窗口、漂移观察与重开闸门面。
+- 当前新的写作约束：
+  - 不再只写“收口失真怎么纠偏”，还要写“纠偏之后系统到底该继续观察什么、哪些漂移必须被正式记账、reopen 何时变成正式闸门而不是建议”。
+  - 每次继续深化都要回答“当前 repair watch contract 保护的是单一真相的延续，还是只是在给完成叙事补售后”。
 - 蓝皮书已经从“宿主修复收口失真 / repair closeout distortion casebook”继续推进到“宿主修复收口纠偏 / repair closeout correction guide”层。
 - 新增结论：
   - Prompt 宿主修复收口失真如果要真正纠偏，必须先冻结假完成与 summary-only closeout，再把 restored request object、protocol truth witness、baseline reset、handoff warranty 与 reopen gate 拉回同一个 `compiled request truth`，而不是继续围绕 closeout 文案、compact 后的轻量感与按钮式 reopen 修补。
