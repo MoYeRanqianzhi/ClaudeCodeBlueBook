@@ -1,4 +1,4 @@
-# 可演化内核对象边界：Authority Surface、Single-Source、Anti-Cycle Seam与Anti-Zombie
+# 可演化内核对象边界：authority surface、single-source、anti-cycle seam与anti-zombie
 
 这一章回答五个问题：
 
@@ -175,4 +175,3 @@ anti-zombie 保护：
 ## 8. 一句话总结
 
 Claude Code 的可演化内核之所以成熟，不在于结构更整齐，而在于它把 authority surface、single-source、anti-cycle seam 与 anti-zombie 一起写成了对象边界，先替未来维护者保住了不变量。
-

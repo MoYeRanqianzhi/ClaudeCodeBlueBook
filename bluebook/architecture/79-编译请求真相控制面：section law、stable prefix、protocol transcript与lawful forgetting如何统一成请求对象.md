@@ -1,4 +1,4 @@
-# Compiled Request Truth控制面：section law、stable prefix、protocol transcript与lawful forgetting如何统一成请求对象
+# 编译请求真相控制面：section law、stable prefix、protocol transcript与lawful forgetting如何统一成请求对象
 
 这一章回答五个问题：
 
@@ -186,4 +186,3 @@ cache observability 回答：
 ## 9. 一句话总结
 
 Claude Code 的 Prompt 最终强在：它把 section law、stable prefix、protocol transcript、lawful forgetting 与 cache observability 合成了同一份 compiled request truth，而不只是写出了一段更强的 prompt。
-

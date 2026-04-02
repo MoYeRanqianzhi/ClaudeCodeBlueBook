@@ -1,4 +1,4 @@
-# 治理控制面：PolicySettings、Typed Decision、Visibility Pricing、Context Usage与Continuation Window
+# 治理控制面：PolicySettings、typed decision、deferred visibility、Context Usage与continuation pricing
 
 这一章回答五个问题：
 
@@ -207,4 +207,3 @@ continuation window 决定：
 ## 9. 一句话总结
 
 Claude Code 的治理成熟度，不在于它有多少规则，而在于它已经把 `PolicySettings`、typed decision、visibility pricing、Context Usage 与 continuation window 接成了同一张 governance control plane。
-
