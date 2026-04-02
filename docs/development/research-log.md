@@ -1107,6 +1107,8 @@
 - 进一步把这一板块收尾后，可以更清楚地把“等价”拆成四层：传输层、认证层、资格层、治理层。源码已经足够支持这一点：`apiPreconnect.ts` / `filesApi.ts` / `providers.ts` 证明上游可配置是正式现实，但 `auth.ts`、`bridgeEnabled.ts`、`toolSearch.ts` 又证明第一方身份、高阶 entitlement 与 beta 能力并不会因为兼容入口存在而自动等价。
 - `worktree.ts` 对 `settings.local.json` 的复制进一步说明，入口选择不是一次性临时变量，而会沉淀成 worktree 扩散面与退出成本。因此“官方直连、官方云厂商路径、第三方 gateway、国内 Claude-compatible 入口”最合适的比较框架，不是谁更像，而是谁替代了哪一层语义、又把哪一层责任重新转嫁给用户。
 - 已补风控专题 `64-官方路径、云厂商路径与兼容入口的能力语义差清单：哪些只是能跑，哪些更接近等价`，作为 `61-64` 这一组“中国用户 / 中转生态 / 退出权 / 入口竞争”板块的细致收尾。
+- 开始新开 `bluebook/security/` 子目录后，可以更明确地把 Claude Code 的安全性与风控拆开：风控更关心资格、撤权与误伤，安全更关心 trust、permission mode、managed env、外部能力收口与远程 entitlement 的运行时边界。
+- 第一批安全专题已经落地 `security/00` 与 `security/01`：`managedEnv.ts` 说明 trust 前只允许受信来源的 env 先进入运行时，防止项目目录借 `ANTHROPIC_BASE_URL` 等变量污染宿主；`setup.ts` 说明 bypassPermissions 不是随手可开的快捷模式，而要求 sandbox / no-internet 等额外外部边界；`dangerousPatterns.ts` 与 `permissionSetup.ts` 则说明系统真正警惕的是“危险 allow rule 绕过仲裁层”，而不是能力本身存在。
 
 ## 下一步待办
 
