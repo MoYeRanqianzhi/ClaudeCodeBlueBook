@@ -1158,6 +1158,7 @@
 - 继续往前推进后，可以更明确地把 `33-安全单写者原则` 单独写出来：`32` 已经解释了系统为什么持续防裂脑，但还没有把更底层的设计公理点破。`onChangeAppState.ts` 与 `sessionState.ts` 已经把关键语义更新收口成单一出口；`StructuredIO.ts` 直接声明 outbound drain loop 是 only writer；`WorkerStateUploader.ts` 又把 worker 真相写入约束成 1 in-flight + 1 pending、top-level last value wins；`AppStateStore.ts` 甚至在能力状态上直接写出 single source of truth。这使得 `33` 的核心结论很清楚：Claude Code 很多高质量安全实现，真正共同依赖的不是“再加同步”，而是先决定谁有资格成为关键安全事实的唯一作者，其余层只能镜像、恢复或投影。 
 - 在 `33-安全单写者原则` 之后，再补一个 `appendix/17-安全单写者速查表` 就很自然了：长文已经把 mode 外化、会话语义、outbound 顺序、worker 复制真相、资格布尔量和恢复路径这些“唯一作者”讲清楚，但实现和评审时仍然需要一张更短的作者权矩阵。把关键事实、正式作者、合法镜像层与越权后果压进一页后，安全专题就第一次拥有了可直接用于检查“某层是不是在偷偷变成第二作者”的改动审查表。 
 - 继续往前推进后，可以更明确地把 `34-安全提交语义` 单独写出来：`33` 已经回答了“谁有资格写”，但还没有回答“什么时候算真的写成”。`sessionState.ts` 已经把本地语义、metadata 镜像和 SDK 事件拆成不同层；`WorkerStateUploader.ts` 与 `ccrClient.ts` 又把 enqueue、PUT 成功、恢复读取和 init 注册分开；`print.ts` 进一步把 result 可见性、`heldBackResult`、`flushInternalEvents()` 与 `idle` turn-over 顺序明确排好；`sessionStorage.ts` 则表明 resume 依赖 internal events 账本而不是普通可见事件。这使得 `34` 的核心结论很清楚：Claude Code 的深层安全性不只治理写权限，还治理提交边界，它不允许“本地已改”“远端已见”“持久化已落”和“恢复可重建”被误写成同一个词。 
+- 在 `34-安全提交语义` 之后，再补一个 `appendix/18-安全提交边界速查表` 也很自然：长文已经把语义、复制、可见、持久和恢复五层提交讲清楚，但实现和评审时仍需要一张更短的边界矩阵。把“哪一层算提交、哪一层还不算、源码入口和最危险误读”压进一页后，安全专题就第一次拥有了可直接用于提交边界审查的五层检查表。 
 
 ## 下一步待办
 
