@@ -581,6 +581,88 @@
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00z. artifact validator / linter 之后，下一层应进入 artifact rule ABI 层
+
+- 当 `navigation/29 + guides/39-41` 已经把 Prompt、治理与结构三条线的自动校验、reviewer gate 与 handoff reject 写出来之后，下一步最值钱的不是继续补更多规则说明，而是补 artifact rule ABI：把 hard fail、lint warn、reviewer gate、handoff reject 与 rewrite hint 压成不同消费者共享的 machine-readable rule packet。
+- `api/40` 应把 Prompt 线的 rule ABI 写成 shared object continuity 规则包：先锁 `prompt_object_id`、`compiled_request_diff_ref`、`stable_bytes_ledger_ref`、`lawful_forgetting_abi_ref` 与 `next_step_guard`，再把原文崇拜、绿灯崇拜、总结崇拜与摘要崇拜压成同一拒收语义；这样才能把 Prompt 魔力继续固定在 compiled request continuity，而不是退回文案。
+- `api/41` 应把治理线的 rule ABI 写成 decision gain 规则包：先锁 `governance_object_id`、`decision_window`、`winner_source`、`failure_semantics`、`rollback_object` 与 `next_action`，再把状态色、计数、verdict 与状态摘要压成同一拒收语义；这样才能把安全与省 token 继续固定在“没有决策增益就不该继续”的统一判断。
+- `api/42` 应把结构线的 rule ABI 写成 shared reject semantics 规则包：先锁 `structure_object_id`、`authoritative_path`、`recovery_asset_ledger`、`anti_zombie_evidence`、`danger_paths` 与 `rollback_object`，再把目录图、恢复成功率与作者说明压成同一拒收语义；这样才能把源码先进性继续固定在 authoritative surface 与 anti-zombie 约束，而不是退回结构审美。
+- `navigation/30` 因而成为必要入口：`29` 负责知道“系统该怎样拒绝 drift”，`30` 负责知道“这些拒绝条件怎样被不同消费者共享成同一规则包”，避免蓝皮书重新停在 validator 层而没有 machine-readable rule layer。
+- `philosophy/71` 因而成为必要收束：真正成熟的规则，不是更多检查，而是不同消费者共享同一拒收语义；没有这层收束，rule ABI 很快又会退回到不同团队各自维护的本地 gate。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+### A010. artifact rule ABI 之后，下一层应进入 artifact rule sample kit / evaluator 层
+
+- 当 `navigation/30 + api/40-42` 已经把 Prompt、治理与结构三条线的 machine-readable rule packet 写出来之后，下一步最值钱的不是继续补更多规则定义，而是补 artifact rule sample kit / evaluator：把 hard fail、lint warn、reviewer gate、handoff reject 与 rewrite hint 写成最小规则样例、失败样例与 evaluator 接口。
+- `playbooks/20` 应把 Prompt 线的 sample kit 写成 continuation 验证样例：先锁 `prompt_object_id`、`compiled_request_diff_ref`、`stable_bytes_ledger_ref`、`lawful_forgetting_abi_ref` 与 `next_step_guard`，再让宿主、CI、评审与交接重复触发相同 reject reason；这样才能把 Prompt 魔力继续固定在 shared continuation，而不是退回原文、绿灯与摘要。
+- `playbooks/21` 应把治理线的 sample kit 写成 decision gain 验证样例：先锁 `governance_object_id`、`decision_window`、`failure_semantics`、`rollback_object` 与 `next_action`，再让状态色、计数、verdict 与状态摘要在不同消费者里触发相同 reject reason；这样才能把安全与省 token 继续固定在统一决策增益判断，而不是退回局部 KPI。
+- `playbooks/22` 应把结构线的 sample kit 写成 split-brain / anti-zombie 验证样例：先锁 `structure_object_id`、`authoritative_path`、`recovery_asset_ledger`、`anti_zombie_evidence`、`danger_paths` 与 `rollback_object`，再让目录图、恢复成功率与作者说明在不同消费者里触发相同 reject reason；这样才能把源码先进性继续固定在 authoritative surface 与 stale-writer 清退，而不是退回结构展示。
+- `navigation/31` 因而成为必要入口：`30` 负责知道“规则包怎样定义”，`31` 负责知道“这些规则包怎样被重复验证”，避免蓝皮书重新停在 rule ABI 层而没有验证样例层。
+- `philosophy/72` 因而成为必要收束：真正成熟的验证，不是规则会跑，而是共享拒收语义能被反复证明；没有这层收束，sample kit 很快又会退回零散 YAML 与一次性演示。
+
+### A011. artifact rule sample kit / evaluator 之后，下一层应进入 artifact evaluator harness / replay lab 层
+
+- 当 `navigation/31 + playbooks/20-22` 已经把 Prompt、治理与结构三条线的最小规则样例、失败样例与 evaluator 接口写出来之后，下一步最值钱的不是继续补更多 YAML，而是补 evaluator harness / replay lab：把 replay case、cross-consumer alignment、drift regression 与 rewrite replay 接成可重放验证实验室。
+- `playbooks/23` 应把 Prompt 线的 harness 写成 continuation replay 实验室：先锁 `prompt_object_id`、`compiled_request_diff_ref`、`lawful_forgetting_abi_ref` 与 `next_step_guard`，再让宿主、CI、评审与交接在同一 replay case 里重复触发相同 reject reason；这样才能把 Prompt 魔力继续固定在 shared continuation，而不是退回原文、绿灯与摘要。
+- `playbooks/24` 应把治理线的 harness 写成 decision gain replay 实验室：先锁 `governance_object_id`、`decision_window`、`failure_semantics`、`rollback_object` 与 `next_action`，再让状态色、计数、verdict 与状态摘要在同一 replay case 里重复触发相同 reject reason；这样才能把安全与省 token 继续固定在统一决策增益，而不是退回局部 KPI。
+- `playbooks/25` 应把结构线的 harness 写成 split-brain / anti-zombie replay 实验室：先锁 `structure_object_id`、`authoritative_path`、`recovery_asset_ledger`、`anti_zombie_evidence`、`danger_paths` 与 `rollback_object`，再让目录图、恢复成功率与作者说明在同一 replay case 里重复触发相同 reject reason；这样才能把源码先进性继续固定在 authoritative surface 与 stale-writer 清退，而不是退回结构展示。
+- `navigation/32` 因而成为必要入口：`31` 负责知道“这些样例怎样定义”，`32` 负责知道“这些样例怎样被重放、对齐与回归”，避免蓝皮书重新停在 sample kit 层而没有验证实验室层。
+- `philosophy/73` 因而成为必要收束：真正成熟的回放，不是脚本重跑，而是共享拒收语义能跨消费者重复成立；没有这层收束，replay lab 很快又会退回一次性 demo。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
+### A012. artifact evaluator harness / replay lab 之后，下一层应进入 artifact harness runner / drift ledger 层
+
+- 当 `navigation/32 + playbooks/23-25` 已经把 Prompt、治理与结构三条线的 replay case、cross-consumer alignment、drift regression 与 rewrite replay 写出来之后，下一步最值钱的不是继续补更多实验室 case，而是补 artifact harness runner / drift ledger：把 replay queue、alignment assertion、drift ledger 与 rewrite adoption 接成可持续执行底盘。
+- `api/43` 应把 Prompt 线继续写成 harness runner 协议：先锁 `prompt_object_id`、`compiled_request_diff_ref`、`stable_bytes_ledger_ref`、`lawful_forgetting_abi_ref` 与 `next_step_guard`，再把 replay verdict、drift ledger 与 rewrite adoption 接成同一条 continuation 对象链；这样才能把 Prompt 魔力继续固定在 shared continuation，而不是退回原文、绿灯与摘要。
+- `api/44` 应把治理线继续写成 harness runner 协议：先锁 `governance_object_id`、`decision_window`、`control_arbitration_truth`、`rollback_object` 与 `next_action`，再把 replay verdict、drift ledger 与 object upgrade 接成同一条 decision-gain 对象链；这样才能把安全与省 token 继续固定在统一决策增益，而不是退回局部 KPI。
+- `api/45` 应把结构线继续写成 harness runner 协议：先锁 `structure_object_id`、`authoritative_path`、`recovery_asset_ledger`、`anti_zombie_evidence`、`dropped_stale_writers` 与 `rollback_object`，再把 replay verdict、drift ledger 与 recovery adoption 接成同一条 authority 对象链；这样才能把源码先进性继续固定在 authoritative surface 与 stale-writer 清退，而不是退回结构展示。
+- `architecture/78` 因而成为必要底盘：真正成熟的验证运行时，不只会 replay，还会排队、对齐、留痕并把修复重新接回下一轮执行。
+- `navigation/33` 因而成为必要入口：`32` 负责知道“实验室怎样证明共享拒收语义”，`33` 负责知道“这些实验室怎样继续进入持续执行底盘”，避免蓝皮书重新停在 replay lab 层而没有 runner / ledger 层。
+- `philosophy/74` 因而成为必要收束：真正成熟的验证底盘，不是更多实验室，而是回放、改写与台账共享同一持续执行语义；没有这层收束，runner 很快又会退回定时跑脚本。
+
+证据:
+
+- `claude-code-source-code/src/QueryEngine.ts:436-463`
+- `claude-code-source-code/src/QueryEngine.ts:734-750`
+- `claude-code-source-code/src/QueryEngine.ts:875-933`
+- `claude-code-source-code/src/query.ts:365-375`
+- `claude-code-source-code/src/query.ts:699-705`
+- `claude-code-source-code/src/services/compact/compact.ts:766-899`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:224-666`
+- `claude-code-source-code/src/utils/QueryGuard.ts:29-93`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-908`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-91`
+- `claude-code-source-code/src/utils/sessionState.ts:92-133`
+- `claude-code-source-code/src/cli/structuredIO.ts:149-657`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1085-1215`
+- `claude-code-source-code/src/tasks/RemoteAgentTask/RemoteAgentTask.tsx:386-845`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:21-184`
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

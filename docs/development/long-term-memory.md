@@ -361,6 +361,31 @@
 - `guides/41` 当前应负责结构 artifact validator：把 structure object、authoritative path、recovery asset ledger、anti-zombie evidence、danger paths 与 rollback object 压成统一 hard fail 与 reject rule
 - `navigation/29` 的职责应稳定为“artifact drift casebook 层如何进入 artifact validator / linter 层”，避免 `28` 同时承担反例识别与自动校验两类职责
 - `philosophy/70` 当前应负责把“成熟校验 = 共享对象能拒绝漂移”稳定成新的长期判断
+- 当 `navigation/29 + guides/39-41` 稳定后，下一步最值钱的不是继续补更多 validator 叙述，而是补 artifact rule ABI：把 hard fail、lint warn、reviewer gate、handoff reject 与 rewrite hint 压成不同消费者共享的 machine-readable rule packet
+- `api/40` 当前应负责 Prompt artifact rule ABI：把 shared object continuity、stable bytes、lawful forgetting ABI 与 handoff reject 压成统一规则包
+- `api/41` 当前应负责治理 artifact rule ABI：把 decision gain、failure semantics、rollback object、next action 与 object upgrade 压成统一规则包
+- `api/42` 当前应负责结构 artifact rule ABI：把 authoritative path、recovery asset ledger、anti-zombie evidence、danger paths 与 rollback object 压成统一规则包
+- `navigation/30` 的职责应稳定为“artifact validator / linter 层如何进入 artifact rule ABI 层”，避免 `29` 同时承担自动校验与机器可读规则包两类职责
+- `philosophy/71` 当前应负责把“成熟规则 = 不同消费者共享同一拒收语义”稳定成新的长期判断
+- 当 `navigation/30 + api/40-42` 稳定后，下一步最值钱的不是继续补更多 rule schema，而是补 artifact rule sample kit / evaluator：把 hard fail、lint warn、reviewer gate、handoff reject 与 rewrite hint 写成最小规则样例、失败样例与 evaluator 接口
+- `playbooks/20` 当前应负责 Prompt rule sample kit：让 shared object continuity、stable bytes、lawful forgetting ABI 与 handoff reject 在宿主、CI、评审与交接里被重复验证
+- `playbooks/21` 当前应负责治理 rule sample kit：让 decision gain、failure semantics、rollback object 与 object upgrade 在不同消费者里被重复验证
+- `playbooks/22` 当前应负责结构 rule sample kit：让 authoritative path、recovery asset ledger、anti-zombie evidence 与 handoff reject 在不同消费者里被重复验证
+- `navigation/31` 的职责应稳定为“artifact rule ABI 层如何进入 artifact rule sample kit / evaluator 层”，避免 `30` 同时承担规则包定义与规则验证样例两类职责
+- `philosophy/72` 当前应负责把“成熟验证 = 共享拒收语义能被反复证明”稳定成新的长期判断
+- 当 `navigation/31 + playbooks/20-22` 稳定后，下一步最值钱的不是继续补更多规则样例，而是补 artifact evaluator harness / replay lab：把 replay case、cross-consumer alignment、drift regression 与 rewrite replay 接成可重放实验室
+- `playbooks/23` 当前应负责 Prompt evaluator harness：让 continuation replay、cross-consumer alignment 与 drift regression 反复证明 shared continuation
+- `playbooks/24` 当前应负责治理 evaluator harness：让 decision gain replay、rollback alignment 与 drift regression 反复证明统一拒收语义
+- `playbooks/25` 当前应负责结构 evaluator harness：让 split-brain replay、anti-zombie alignment 与 drift regression 反复证明 authoritative surface
+- `navigation/32` 的职责应稳定为“artifact rule sample kit / evaluator 层如何进入 evaluator harness / replay lab 层”，避免 `31` 同时承担样例接口与重放实验室两类职责
+- `philosophy/73` 当前应负责把“成熟回放 = 共享拒收语义能跨消费者重复成立”稳定成新的长期判断
+- 当 `navigation/32 + playbooks/23-25` 稳定后，下一步最值钱的不是继续补更多 replay case，而是补 artifact harness runner / drift ledger：把 replay queue、alignment assertion、drift ledger 与 rewrite adoption 接成可持续执行底盘
+- `api/43` 当前应负责 Prompt harness runner 协议：让 continuation replay、stable bytes ledger、lawful forgetting ABI 与 rewrite adoption 进入同一持续执行对象链
+- `api/44` 当前应负责治理 harness runner 协议：让 decision window、control arbitration truth、rollback object 与 object upgrade 进入同一持续执行对象链
+- `api/45` 当前应负责结构 harness runner 协议：让 authoritative path、recovery asset ledger、dropped stale writers 与 recovery adoption 进入同一持续执行对象链
+- `architecture/78` 当前应负责把 replay queue、alignment gate、drift ledger 与 rewrite adoption loop 收束成持续验证底盘
+- `navigation/33` 的职责应稳定为“artifact evaluator harness / replay lab 层如何进入 harness runner / drift ledger 层”，避免 `32` 同时承担实验室设计与持续执行底盘两类职责
+- `philosophy/74` 当前应负责把“成熟验证底盘 = 回放、改写与台账共享同一持续执行语义”稳定成新的长期判断
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

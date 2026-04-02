@@ -93,6 +93,7 @@
 - 想把这些统一审读模板继续压成正式共享工件协议，而不是继续靠不同角色各自导出材料：`../navigation/26 -> ../api/37 -> ../api/38 -> ../api/39`
 - 想把这些统一审读模板继续落成正式宿主卡、CI附件、评审卡与交接包协议，而不是继续靠团队本地约定：`../navigation/26 -> ../api/37 -> ../api/38 -> ../api/39`
 - 想把 artifact drift 继续编译成自动校验、reviewer gate 与 handoff reject，而不是停在反例识别：`../navigation/29 -> 39 -> 40 -> 41 -> ../philosophy/70`
+- 想把这些 validator / linter 继续压成 machine-readable rule ABI，而不是继续靠不同消费者手抄规则：`../navigation/30 -> ../api/40 -> ../api/41 -> ../api/42 -> ../philosophy/71`
 
 ## 与其他目录的边界
 
@@ -105,6 +106,8 @@
 - 再往下一层，应由 `../navigation/26 -> ../api/37-39` 继续回答“怎样把统一审读对象压成宿主卡、CI附件、评审卡与 handoff package 的正式共享工件协议”。
 - 再往下一层，应由 `../navigation/29 -> 39-41` 继续回答“怎样把 shared header、hard contract 与 drift 原型编译成 validator / linter / reject rule”。
 - `../philosophy/70` 负责回答“为什么真正成熟的校验，不是字段齐全，而是共享对象能拒绝漂移”。
+- 再往下一层，应由 `../navigation/30 -> ../api/40-42` 继续回答“怎样把这些 validator / linter 正式压成 machine-readable rule packet”。
+- `../philosophy/71` 负责回答“为什么真正成熟的规则，不是更多检查，而是不同消费者共享同一拒收语义”。
 
 后续继续补：
 

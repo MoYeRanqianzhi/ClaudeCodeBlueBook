@@ -46,9 +46,15 @@
 - [34-单一真相入口、权威状态面与Chokepoint手册](34-%E5%8D%95%E4%B8%80%E7%9C%9F%E7%9B%B8%E5%85%A5%E5%8F%A3%E3%80%81%E6%9D%83%E5%A8%81%E7%8A%B6%E6%80%81%E9%9D%A2%E4%B8%8EChokepoint%E6%89%8B%E5%86%8C.md)
 - [35-Rollout证据消费API手册：worker_status、external_metadata、Context Usage与回退对象边界](35-Rollout%E8%AF%81%E6%8D%AE%E6%B6%88%E8%B4%B9API%E6%89%8B%E5%86%8C%EF%BC%9Aworker_status%E3%80%81external_metadata%E3%80%81Context%20Usage%E4%B8%8E%E5%9B%9E%E9%80%80%E5%AF%B9%E8%B1%A1%E8%BE%B9%E7%95%8C.md)
 - [36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序](36-Evidence%20Envelope%E5%AD%97%E6%AE%B5%E7%9F%A9%E9%98%B5%EF%BC%9A%E5%AE%BF%E4%B8%BB%E3%80%81CI%E3%80%81%E8%AF%84%E5%AE%A1%E4%B8%8E%E4%BA%A4%E6%8E%A5%E5%9B%9B%E7%B1%BB%E6%B6%88%E8%B4%B9%E8%80%85%E7%9A%84%E5%85%B1%E4%BA%AB%E6%B6%88%E8%B4%B9%E9%A1%BA%E5%BA%8F.md)
-- [37-Prompt Host Artifact Contract：对象卡、CI附件、评审卡与handoff package共享字段协议](37-Prompt%20Host%20Artifact%20Contract%EF%BC%9A%E5%AF%B9%E8%B1%A1%E5%8D%A1%E3%80%81CI%E9%99%84%E4%BB%B6%E3%80%81%E8%AF%84%E5%AE%A1%E5%8D%A1%E4%B8%8Ehandoff%20package%E5%85%B1%E4%BA%AB%E5%AD%97%E6%AE%B5%E5%8D%8F%E8%AE%AE.md)
-- [38-治理 Host Artifact Contract：对象卡、仲裁附件、评审卡与handoff package共享字段协议](38-%E6%B2%BB%E7%90%86%20Host%20Artifact%20Contract%EF%BC%9A%E5%AF%B9%E8%B1%A1%E5%8D%A1%E3%80%81%E4%BB%B2%E8%A3%81%E9%99%84%E4%BB%B6%E3%80%81%E8%AF%84%E5%AE%A1%E5%8D%A1%E4%B8%8Ehandoff%20package%E5%85%B1%E4%BA%AB%E5%AD%97%E6%AE%B5%E5%8D%8F%E8%AE%AE.md)
-- [39-结构 Host Artifact Contract：对象卡、恢复附件、评审卡与handoff package共享字段协议](39-%E7%BB%93%E6%9E%84%20Host%20Artifact%20Contract%EF%BC%9A%E5%AF%B9%E8%B1%A1%E5%8D%A1%E3%80%81%E6%81%A2%E5%A4%8D%E9%99%84%E4%BB%B6%E3%80%81%E8%AF%84%E5%AE%A1%E5%8D%A1%E4%B8%8Ehandoff%20package%E5%85%B1%E4%BA%AB%E5%AD%97%E6%AE%B5%E5%8D%8F%E8%AE%AE.md)
+- [37-Prompt Host Artifact Contract：宿主卡、CI附件、评审卡与交接包的共享字段骨架](37-Prompt%20Host%20Artifact%20Contract%EF%BC%9A%E5%AE%BF%E4%B8%BB%E5%8D%A1%E3%80%81CI%E9%99%84%E4%BB%B6%E3%80%81%E8%AF%84%E5%AE%A1%E5%8D%A1%E4%B8%8E%E4%BA%A4%E6%8E%A5%E5%8C%85%E7%9A%84%E5%85%B1%E4%BA%AB%E5%AD%97%E6%AE%B5%E9%AA%A8%E6%9E%B6.md)
+- [38-治理 Host Artifact Contract：对象、窗口、仲裁、失败语义与回退工件协议](38-%E6%B2%BB%E7%90%86%20Host%20Artifact%20Contract%EF%BC%9A%E5%AF%B9%E8%B1%A1%E3%80%81%E7%AA%97%E5%8F%A3%E3%80%81%E4%BB%B2%E8%A3%81%E3%80%81%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E4%B8%8E%E5%9B%9E%E9%80%80%E5%B7%A5%E4%BB%B6%E5%8D%8F%E8%AE%AE.md)
+- [39-结构 Host Artifact Contract：权威路径、恢复资产、反zombie 与交接包字段骨架](39-%E7%BB%93%E6%9E%84%20Host%20Artifact%20Contract%EF%BC%9A%E6%9D%83%E5%A8%81%E8%B7%AF%E5%BE%84%E3%80%81%E6%81%A2%E5%A4%8D%E8%B5%84%E4%BA%A7%E3%80%81%E5%8F%8Dzombie%20%E4%B8%8E%E4%BA%A4%E6%8E%A5%E5%8C%85%E5%AD%97%E6%AE%B5%E9%AA%A8%E6%9E%B6.md)
+- [40-Prompt Artifact Rule ABI：Shared Object、Stable Bytes、Lawful Forgetting 与 Reject Semantics 的机器可读结构](40-Prompt%20Artifact%20Rule%20ABI%EF%BC%9AShared%20Object%E3%80%81Stable%20Bytes%E3%80%81Lawful%20Forgetting%20%E4%B8%8E%20Reject%20Semantics%20%E7%9A%84%E6%9C%BA%E5%99%A8%E5%8F%AF%E8%AF%BB%E7%BB%93%E6%9E%84.md)
+- [41-治理 Artifact Rule ABI：Decision Gain、Failure Semantics、Rollback Object 与 Reject 语义的机器可读结构](41-%E6%B2%BB%E7%90%86%20Artifact%20Rule%20ABI%EF%BC%9ADecision%20Gain%E3%80%81Failure%20Semantics%E3%80%81Rollback%20Object%20%E4%B8%8E%20Reject%20%E8%AF%AD%E4%B9%89%E7%9A%84%E6%9C%BA%E5%99%A8%E5%8F%AF%E8%AF%BB%E7%BB%93%E6%9E%84.md)
+- [42-结构 Artifact Rule ABI：Authoritative Path、Recovery Asset、Anti-Zombie 与 Reject 语义的机器可读结构](42-%E7%BB%93%E6%9E%84%20Artifact%20Rule%20ABI%EF%BC%9AAuthoritative%20Path%E3%80%81Recovery%20Asset%E3%80%81Anti-Zombie%20%E4%B8%8E%20Reject%20%E8%AF%AD%E4%B9%89%E7%9A%84%E6%9C%BA%E5%99%A8%E5%8F%AF%E8%AF%BB%E7%BB%93%E6%9E%84.md)
+- [43-Prompt Artifact Harness Runner API：Replay Queue、Alignment Assertion、Drift Ledger 与 Rewrite Adoption 的持续执行协议](43-Prompt%20Artifact%20Harness%20Runner%20API%EF%BC%9AReplay%20Queue%E3%80%81Alignment%20Assertion%E3%80%81Drift%20Ledger%20%E4%B8%8E%20Rewrite%20Adoption%20%E7%9A%84%E6%8C%81%E7%BB%AD%E6%89%A7%E8%A1%8C%E5%8D%8F%E8%AE%AE.md)
+- [44-治理 Artifact Harness Runner API：Decision Window Replay Queue、Arbitration Assertion、Drift Ledger 与 Upgrade Adoption 协议](44-%E6%B2%BB%E7%90%86%20Artifact%20Harness%20Runner%20API%EF%BC%9ADecision%20Window%20Replay%20Queue%E3%80%81Arbitration%20Assertion%E3%80%81Drift%20Ledger%20%E4%B8%8E%20Upgrade%20Adoption%20%E5%8D%8F%E8%AE%AE.md)
+- [45-结构 Artifact Harness Runner API：Authoritative Replay Queue、Anti-Zombie Assertion、Drift Ledger 与 Recovery Adoption 协议](45-%E7%BB%93%E6%9E%84%20Artifact%20Harness%20Runner%20API%EF%BC%9AAuthoritative%20Replay%20Queue%E3%80%81Anti-Zombie%20Assertion%E3%80%81Drift%20Ledger%20%E4%B8%8E%20Recovery%20Adoption%20%E5%8D%8F%E8%AE%AE.md)
 
 ### 4. Prompt、知识与上下文装配面
 
@@ -80,6 +86,10 @@
 - 先读 `24 -> 26 -> 02 -> 13 -> 15 -> 16 -> 20`
 - 补充 `11 -> 17 -> 19 -> 31 -> 32 -> 33 -> 34 -> 35 -> 36`
 - 想把宿主卡、CI附件、评审卡与交接包继续压成统一工件协议：`35 -> 36 -> 37 -> 38 -> 39 -> ../navigation/26`
+- 想把 validator / linter 继续压成 machine-readable rule ABI：`../navigation/30 -> 40 -> 41 -> 42 -> ../philosophy/71`
+- 想把这些 rule packet 继续压成最小规则样例、失败样例与 evaluator 接口：`../navigation/31 -> ../playbooks/20 -> ../playbooks/21 -> ../playbooks/22 -> ../philosophy/72`
+- 想把这些样例接口继续接成 replay harness、cross-consumer alignment 与 drift regression lab：`../navigation/32 -> ../playbooks/23 -> ../playbooks/24 -> ../playbooks/25 -> ../philosophy/73`
+- 想把这些实验室继续接成 replay queue、drift ledger 与 rewrite adoption 的持续执行协议：`../navigation/33 -> 43 -> 44 -> 45 -> ../architecture/78 -> ../philosophy/74`
 - 目标：把 request / response / follow-on event / snapshot / recovery 一起看成闭环
 
 ### 3. 想控制 prompt、知识和记忆
@@ -107,5 +117,9 @@
 - 有实现，不等于产品公开承诺稳定支持。
 - 关键状态应先找 authoritative surface，再找调用点散布。
 - 再往下一层，应由 `../navigation/26 -> 37-39` 继续回答“怎样把统一审读对象压成正式共享工件协议”。
+- 再往下一层，应由 `../navigation/30 -> 40-42` 继续回答“怎样把 hard fail、lint warn、reviewer gate、handoff reject 与 rewrite hint 压成 machine-readable rule packet”。
+- 再往下一层，应由 `../navigation/31 -> ../playbooks/20-22` 继续回答“怎样把 machine-readable rule packet 写成最小可验证样例与 evaluator 样例”。
+- 再往下一层，应由 `../navigation/32 -> ../playbooks/23-25` 继续回答“怎样把这些 evaluator 样例接成可重放验证与跨消费者对齐实验室”。
+- 再往下一层，应由 `../navigation/33 -> 43-45 -> ../architecture/78` 继续回答“怎样把 replay case、alignment assertion、drift ledger 与 rewrite adoption 接成持续执行协议与底盘”。
 
 主线结论先看 [../05-功能全景与 API 支持](../05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)。
