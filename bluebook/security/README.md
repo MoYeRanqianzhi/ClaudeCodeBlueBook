@@ -70,6 +70,7 @@
 - 想直接看 bridge、direct connect、remote session manager 和适配层这几类宿主分别属于什么子集、哪些地方最危险：看 `appendix/12`
 - 想直接看不同宿主到底属于观察、控制还是证明层，以及每一层最少承担什么责任：看 `appendix/13`
 - 想直接看 `worker_status`、`external_metadata`、本地状态和 UI 文案分别属于哪一层真相，以及最常见的误读是什么：看 `appendix/14`
+- 想直接看多层真相冲突时谁优先、谁不能赢，以及最危险的误读是什么：看 `appendix/15`
 
 ## 和其他目录的关系
 
