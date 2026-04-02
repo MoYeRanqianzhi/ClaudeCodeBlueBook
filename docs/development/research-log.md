@@ -127,6 +127,17 @@
 
 - 当 60-62 形成第二序制度层后，应单独提供 `navigation/08`，否则 05/06/07 会分别承担“高阶母线 / 终局判断 / 深方法模板”三层职责，却没有一个入口直达“更深一层的制度哲学”。
 
+补充底盘回灌判断：
+
+- 当三条第二序制度母线稳定后，最先该补的不是更多哲学短论，而是对应的 `architecture/73-75`。否则 Prompt Constitution、治理顺序与构建系统塑形会再次停留在高阶解释，无法回落到可迁移的机制层。
+
+### A00d. 第二序制度层已完成到底盘层的第一次闭环
+
+- `architecture/73` 已把 Prompt Constitution 从“高阶哲学”回灌成机制层：section registry、dynamic boundary、角色主权链、protocol truth law、lawful forgetting 与 prompt observability 现在形成同一条 prompt control plane。
+- `architecture/74` 已把安全/省 token 从“资源定价哲学”回灌成控制面：治理顺序、失败语义分型、可撤销自动化、decision-gain-aware token spending 与 stable-bytes assets 现在形成同一条 governance-order control plane。
+- `architecture/75` 已把“构建系统也是架构工具”从理念回灌成结构层：external stubs、portable shadow entry、transport shell、thin registry 与 zombification governance 现在形成同一条 source-order shaping control plane。
+- 这意味着蓝皮书当前首次形成了较完整的六层闭环：哲学判断 -> 高阶导航 -> 深方法导航 -> 模板层 -> 架构底盘 -> 主索引检索，而不是只在哲学和 guide 间来回摆动。
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

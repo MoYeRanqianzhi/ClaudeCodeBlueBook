@@ -23,9 +23,10 @@
 2. `architecture/39-Prompt可重放前缀、可观测预算与Section编译器.md`
 3. `architecture/46-Prompt稳定性解释层：cache-break detection的两阶段诊断器.md`
 4. `architecture/54-从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放.md`
-5. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
-6. `philosophy/39-治理必须落到字节级确定性：上下文准入优于功能堆叠.md`
-7. `philosophy/60-Prompt不是文案，而是受治理的Prompt Constitution.md`
+5. `architecture/73-Prompt Constitution控制面：section宪法、角色主权链、合法遗忘与可观测diff.md`
+6. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
+7. `philosophy/39-治理必须落到字节级确定性：上下文准入优于功能堆叠.md`
+8. `philosophy/60-Prompt不是文案，而是受治理的Prompt Constitution.md`
 
 这条线的核心结论是：
 
@@ -52,9 +53,10 @@
 3. `architecture/50-PolicySettings控制平面、Sandbox契约与三套预算器.md`
 4. `architecture/51-安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation.md`
 5. `architecture/62-Narrow、Later、Outside：安全设计与省Token设计的统一反扩张运行时.md`
-6. `philosophy/37-统一第一性原理不等于单一预算实现.md`
-7. `philosophy/47-当前真相必须可恢复，而不是事后可观测.md`
-8. `philosophy/61-真正成熟的安全与省Token系统，不是统一预算器，而是治理顺序、失败语义与可撤销自动化.md`
+6. `architecture/74-治理顺序控制面：失败语义分型、可撤销自动化与稳定字节资产.md`
+7. `philosophy/37-统一第一性原理不等于单一预算实现.md`
+8. `philosophy/47-当前真相必须可恢复，而不是事后可观测.md`
+9. `philosophy/61-真正成熟的安全与省Token系统，不是统一预算器，而是治理顺序、失败语义与可撤销自动化.md`
 
 这条线的核心结论是：
 
@@ -81,9 +83,10 @@
 3. `architecture/63-可演化内核：Claude Code如何在持续增长中维持不变量.md`
 4. `architecture/66-演化制度设计：Claude Code如何在增长中保留重构可能性.md`
 5. `architecture/69-源码即治理界面：注释、命名与显式边界如何降低误改成本.md`
-6. `philosophy/50-先进源码不是一开始就完美分层，而是增长时仍能守住不变量.md`
-7. `philosophy/53-好架构不是更会重构，而是始终保留重构可能性.md`
-8. `philosophy/62-构建系统也是架构工具：发布面、入口影子与传输外壳共同塑造源码秩序.md`
+6. `architecture/75-构建系统塑形源码秩序：入口影子、传输外壳、薄Registry与Zombification治理.md`
+7. `philosophy/50-先进源码不是一开始就完美分层，而是增长时仍能守住不变量.md`
+8. `philosophy/53-好架构不是更会重构，而是始终保留重构可能性.md`
+9. `philosophy/62-构建系统也是架构工具：发布面、入口影子与传输外壳共同塑造源码秩序.md`
 
 这条线的核心结论是：
 

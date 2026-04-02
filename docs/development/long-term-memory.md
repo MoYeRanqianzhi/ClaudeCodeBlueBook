@@ -215,6 +215,9 @@
   - 真正成熟的安全与省Token系统，不是统一预算器，而是治理顺序、失败语义与可撤销自动化
   - 构建系统也是架构工具：发布面、入口影子与传输外壳共同塑造源码秩序
   - 高阶制度导航：Prompt Constitution、治理顺序与构建系统
+  - Prompt Constitution控制面：section宪法、角色主权链、合法遗忘与可观测diff
+  - 治理顺序控制面：失败语义分型、可撤销自动化与稳定字节资产
+  - 构建系统塑形源码秩序：入口影子、传输外壳、薄Registry与Zombification治理
 
 ## 已确认事实
 
@@ -275,6 +278,7 @@
 - 安全与省 token 深线下一层可继续稳定成“治理顺序 + 失败语义分型 + 可撤销自动化 + 稳定字节资产”：系统真正优化的是把检查放在正确顺序、在无决策增益处停止花 token、并对不同资产采用不同 fail-open/fail-closed
 - 源码先进性下一层可继续稳定成“构建系统也是架构工具”：external stubs、portable shadow entry、transport shell、薄 registry 与 zombification 防治共同塑造发布面、入口安全与演化秩序
 - 高阶制度层当前应稳定成三条第二序母线：Prompt Constitution、治理顺序与失败语义、构建系统塑形源码秩序；它们比继续讨论“提示词技巧 / 统一预算器 / 目录漂亮”更接近 Claude Code 的深层制度设计
+- 当 60-62 稳定后，应优先补对应 architecture 底盘篇，再考虑继续扩哲学；否则制度层会重新悬空，缺少机制承托
 - API atlas 还应继续补目录级能力地图，避免“字段齐了，但能力地形仍然不可检索”
 - 宿主 API 还应继续补失败语义、取消请求、orphan response 与 transcript repair，不要只写 happy path
 - 预算器深线还应继续补 context usage、systemPromptSections、attachmentsByType 与 pending_action 的联合调优方法

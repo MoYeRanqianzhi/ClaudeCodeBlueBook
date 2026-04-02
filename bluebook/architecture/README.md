@@ -43,6 +43,7 @@
 - [64-语义压缩器：Claude Code如何把工作现场压成可继续行动的最小语义体](64-%E8%AF%AD%E4%B9%89%E5%8E%8B%E7%BC%A9%E5%99%A8%EF%BC%9AClaude%20Code%E5%A6%82%E4%BD%95%E6%8A%8A%E5%B7%A5%E4%BD%9C%E7%8E%B0%E5%9C%BA%E5%8E%8B%E6%88%90%E5%8F%AF%E7%BB%A7%E7%BB%AD%E8%A1%8C%E5%8A%A8%E7%9A%84%E6%9C%80%E5%B0%8F%E8%AF%AD%E4%B9%89%E4%BD%93.md)
 - [67-协调成本控制面：Prompt如何同时组织模型推理与人类接手](67-%E5%8D%8F%E8%B0%83%E6%88%90%E6%9C%AC%E6%8E%A7%E5%88%B6%E9%9D%A2%EF%BC%9APrompt%E5%A6%82%E4%BD%95%E5%90%8C%E6%97%B6%E7%BB%84%E7%BB%87%E6%A8%A1%E5%9E%8B%E6%8E%A8%E7%90%86%E4%B8%8E%E4%BA%BA%E7%B1%BB%E6%8E%A5%E6%89%8B.md)
 - [70-Protocol真相控制面：为什么UI历史必须在API边界前被重新编译](70-Protocol%E7%9C%9F%E7%9B%B8%E6%8E%A7%E5%88%B6%E9%9D%A2%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88UI%E5%8E%86%E5%8F%B2%E5%BF%85%E9%A1%BB%E5%9C%A8API%E8%BE%B9%E7%95%8C%E5%89%8D%E8%A2%AB%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91.md)
+- [73-Prompt Constitution控制面：section宪法、角色主权链、合法遗忘与可观测diff](73-Prompt%20Constitution%E6%8E%A7%E5%88%B6%E9%9D%A2%EF%BC%9Asection%E5%AE%AA%E6%B3%95%E3%80%81%E8%A7%92%E8%89%B2%E4%B8%BB%E6%9D%83%E9%93%BE%E3%80%81%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E4%B8%8E%E5%8F%AF%E8%A7%82%E6%B5%8Bdiff.md)
 
 ### 5. 协作与隔离平面
 
@@ -66,6 +67,7 @@
 - [65-资源宪法：Claude Code如何统一分配能力、时间、注意力与权威](65-%E8%B5%84%E6%BA%90%E5%AE%AA%E6%B3%95%EF%BC%9AClaude%20Code%E5%A6%82%E4%BD%95%E7%BB%9F%E4%B8%80%E5%88%86%E9%85%8D%E8%83%BD%E5%8A%9B%E3%80%81%E6%97%B6%E9%97%B4%E3%80%81%E6%B3%A8%E6%84%8F%E5%8A%9B%E4%B8%8E%E6%9D%83%E5%A8%81.md)
 - [68-有效自由控制面：为什么约束不是在削弱Claude Code的行动力](68-%E6%9C%89%E6%95%88%E8%87%AA%E7%94%B1%E6%8E%A7%E5%88%B6%E9%9D%A2%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BA%A6%E6%9D%9F%E4%B8%8D%E6%98%AF%E5%9C%A8%E5%89%8A%E5%BC%B1Claude%20Code%E7%9A%84%E8%A1%8C%E5%8A%A8%E5%8A%9B.md)
 - [71-资源定价运行时：permission、visibility、externalization与continuation的一体化预算](71-%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BB%B7%E8%BF%90%E8%A1%8C%E6%97%B6%EF%BC%9Apermission%E3%80%81visibility%E3%80%81externalization%E4%B8%8Econtinuation%E7%9A%84%E4%B8%80%E4%BD%93%E5%8C%96%E9%A2%84%E7%AE%97.md)
+- [74-治理顺序控制面：失败语义分型、可撤销自动化与稳定字节资产](74-%E6%B2%BB%E7%90%86%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6%E9%9D%A2%EF%BC%9A%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E5%88%86%E5%9E%8B%E3%80%81%E5%8F%AF%E6%92%A4%E9%94%80%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%8E%E7%A8%B3%E5%AE%9A%E5%AD%97%E8%8A%82%E8%B5%84%E4%BA%A7.md)
 
 ### 7. 工程与底盘平面
 
@@ -86,6 +88,7 @@
 - [66-演化制度设计：Claude Code如何在增长中保留重构可能性](66-%E6%BC%94%E5%8C%96%E5%88%B6%E5%BA%A6%E8%AE%BE%E8%AE%A1%EF%BC%9AClaude%20Code%E5%A6%82%E4%BD%95%E5%9C%A8%E5%A2%9E%E9%95%BF%E4%B8%AD%E4%BF%9D%E7%95%99%E9%87%8D%E6%9E%84%E5%8F%AF%E8%83%BD%E6%80%A7.md)
 - [69-源码即治理界面：注释、命名与显式边界如何降低误改成本](69-%E6%BA%90%E7%A0%81%E5%8D%B3%E6%B2%BB%E7%90%86%E7%95%8C%E9%9D%A2%EF%BC%9A%E6%B3%A8%E9%87%8A%E3%80%81%E5%91%BD%E5%90%8D%E4%B8%8E%E6%98%BE%E5%BC%8F%E8%BE%B9%E7%95%8C%E5%A6%82%E4%BD%95%E9%99%8D%E4%BD%8E%E8%AF%AF%E6%94%B9%E6%88%90%E6%9C%AC.md)
 - [72-未来维护者消费者控制面：风险命名、制度注释、seam与状态机如何共同服务演化](72-%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%8E%A7%E5%88%B6%E9%9D%A2%EF%BC%9A%E9%A3%8E%E9%99%A9%E5%91%BD%E5%90%8D%E3%80%81%E5%88%B6%E5%BA%A6%E6%B3%A8%E9%87%8A%E3%80%81seam%E4%B8%8E%E7%8A%B6%E6%80%81%E6%9C%BA%E5%A6%82%E4%BD%95%E5%85%B1%E5%90%8C%E6%9C%8D%E5%8A%A1%E6%BC%94%E5%8C%96.md)
+- [75-构建系统塑形源码秩序：入口影子、传输外壳、薄Registry与Zombification治理](75-%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%A1%91%E5%BD%A2%E6%BA%90%E7%A0%81%E7%A7%A9%E5%BA%8F%EF%BC%9A%E5%85%A5%E5%8F%A3%E5%BD%B1%E5%AD%90%E3%80%81%E4%BC%A0%E8%BE%93%E5%A4%96%E5%A3%B3%E3%80%81%E8%96%84Registry%E4%B8%8EZombification%E6%B2%BB%E7%90%86.md)
 
 ### 8. 宿主、前台与产品边界平面
 
@@ -115,6 +118,7 @@
 - 想看 prompt 为什么还能继续上升成“语义压缩器”：`53 -> 61 -> 64`
 - 想看 prompt 为什么还在继续压低人类-模型协调成本：`26 -> 35 -> 64 -> 67`
 - 想看 UI 历史为什么还要在 API 边界前被重新编译成 protocol 真相：`54 -> 70`
+- 想看 prompt 为什么还能进一步落成一部可治理的 Prompt Constitution：`36 -> 39 -> 46 -> 54 -> 73`
 - 想看“最小可见面”怎样把 deferred、delta 与 managed-only 输入写成统一控制平面：`51 -> 54 -> 56`
 - 想看多 Agent、workflow 与隔离：`10 -> 30 -> 34 -> 45`
 - 想看权限、安全、治理与 token 预算统一图：`05 -> 11 -> 19 -> 23 -> 32 -> 37 -> 50 -> 51`
@@ -123,6 +127,7 @@
 - 想看安全、省 token 与治理为什么还能再上升成“资源宪法”：`50 -> 51 -> 62 -> 65`
 - 想看为什么约束反而能换来更高行动力：`23 -> 62 -> 65 -> 68`
 - 想看 permission、visibility、externalization 与 continuation 怎样构成统一资源定价运行时：`50 -> 56 -> 65 -> 68 -> 71`
+- 想看统一预算器之下更深的治理顺序、失败语义与自动化撤销制度：`23 -> 40 -> 50 -> 62 -> 74`
 - 想看宿主控制平面：`13 -> 14 -> 15 -> 17 -> 59`
 - 想看为什么协议全集、权威主路径与 consumer subset 必须分三层：`13 -> 14 -> 17 -> 59`
 - 想看远程失败为什么也是分层语义而不是“断线重连”：`15 -> 16 -> 48`
@@ -134,6 +139,7 @@
 - 想看源码先进性为什么还能继续上升成“演化制度设计”：`63 -> 66`
 - 想看源码为什么还在同时服务机器执行和人类治理：`58 -> 66 -> 69`
 - 想看为什么未来维护者也应被当成正式消费者：`41 -> 66 -> 69 -> 72`
+- 想看构建、入口、transport 与恢复怎样一起塑造源码秩序：`33 -> 63 -> 66 -> 72 -> 75`
 - 想看预算观测、状态回写与 cache break 为什么应该合写成“可解释运行时”：`17 -> 43 -> 57`
 - 想看状态回写为什么属于 durability，而不是遥测附属层：`17 -> 25 -> 57 -> 60`
 - 想看 leaf module、anti-cycle seam 与 single-source file 为什么同属一套依赖图治理方法：`41 -> 58`
