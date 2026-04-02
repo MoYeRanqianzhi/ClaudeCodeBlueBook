@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复稳态协议 / repair steady-state contract”继续推进到“宿主修复稳态执行 / repair steady-state execution”层。
+- 新增结论：
+  - Prompt 宿主修复稳态如果要真正可运行，必须继续围绕 `truth continuity`、`stable prefix custody`、`baseline dormancy seal`、`continuation eligibility`、`handoff continuity` 与 `reopen threshold` 执行固定稳态判定顺序，而不是继续围绕 summary、watch note 与“最近一直很稳”宣布 steady。
+  - 治理宿主修复稳态如果要真正可运行，必须继续围绕 `authority continuity`、`ledger dormancy seal`、`window dormancy`、`continuation pricing covenant`、`capability custody` 与 `reopen threshold` 执行固定稳态判定顺序，而不是继续围绕 mode 面板、usage dashboard 与经验式保守建议宣布 capability 仍安全。
+  - 结构宿主修复稳态如果要真正可运行，必须继续围绕 `authority continuity`、`resume continuity seal`、`writeback custody`、`anti-zombie dormancy`、`archive truth` 与 `reopen reservation boundary` 执行固定稳态判定顺序，而不是继续围绕 pointer、telemetry 转绿与作者说明宣布系统仍健康。
+- 新增目录责任：
+  - `navigation/71` 负责宿主修复稳态执行入口。
+  - `playbooks/50-52` 负责三类宿主修复稳态协议的巡检卡、稳态判定顺序与再入场责任演练。
+- 当前新的写作约束：
+  - 不再只写“哪些 steady-state object 应被消费”，还要写“现场先看什么、谁有权宣布 stable / blocked / reentry_required、什么时候必须回到 reopen threshold”。
+  - 每次继续深化都要回答“当前 steady-state execution 保护的是无人盯防时的单一真相延续，还是只是在维护一套更制度化的 release 后秩序幻觉”。
 - 蓝皮书已经从“宿主修复解除监护纠偏 / repair watch release correction guide”继续推进到“宿主修复稳态协议 / repair steady-state contract”层。
 - 新增结论：
   - Prompt 宿主修复解除监护纠偏如果要真正进入稳态，必须继续把 `truth continuity`、`stable prefix custody`、`baseline dormancy seal`、`continuation eligibility`、`handoff continuity` 与 `reopen threshold` 拉回同一个 `compiled request truth`，而不是继续围绕 summary、watch note 与“最近一直很稳”维持 released 幻觉。

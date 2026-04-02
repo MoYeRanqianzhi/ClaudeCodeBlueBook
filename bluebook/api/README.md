@@ -128,6 +128,7 @@
 - 想把这些收口纠偏继续压成宿主、SDK、CI、评审与交接都能共享的监护窗口、漂移观察与重开闸门面，而不是继续停在 builder 心里：`../navigation/62 -> 63 -> 64 -> 65 -> ../guides/66 -> ../guides/67 -> ../guides/68`
 - 想把这些监护纠偏继续压成宿主、SDK、CI、评审与交接都能共享的解除判定、稳定释压、解除隔离、归档保证与 residual reopen 责任面，而不是继续停在 builder 心里：`../navigation/66 -> 66 -> 67 -> 68 -> ../guides/69 -> ../guides/70 -> ../guides/71`
 - 想把这些解除监护纠偏继续压成宿主、SDK、CI、评审与交接都能共享的稳态协议，而不是继续靠 summary、dashboard 与 pointer 维持 released 幻觉：`../navigation/70 -> 69 -> 70 -> 71 -> ../guides/72 -> ../guides/73 -> ../guides/74`
+- 想把这些稳态协议继续压成宿主、SDK、CI、评审与交接都能共享的巡检卡、稳态判定顺序、再入场阈值与 residual reopen 责任演练，而不是继续停在 contract 字段层：`../navigation/71 -> ../playbooks/50 -> ../playbooks/51 -> ../playbooks/52`
 - 想把 validator / linter 继续压成 machine-readable rule ABI：`../navigation/30 -> 40 -> 41 -> 42 -> ../philosophy/71`
 - 想把这些 rule packet 继续压成最小规则样例、失败样例与 evaluator 接口：`../navigation/31 -> ../playbooks/20 -> ../playbooks/21 -> ../playbooks/22 -> ../philosophy/72`
 - 想把这些样例接口继续接成 replay harness、cross-consumer alignment 与 drift regression lab：`../navigation/32 -> ../playbooks/23 -> ../playbooks/24 -> ../playbooks/25 -> ../philosophy/73`
@@ -174,6 +175,7 @@
 - 再往下一层，应由 `../navigation/62 -> 63-65` 继续回答“怎样把收口纠偏继续压成宿主可消费的监护窗口、漂移观察与重开闸门面”。
 - 再往下一层，应由 `../navigation/66 -> 66-68` 继续回答“怎样把监护纠偏继续压成宿主可消费的解除判定、稳定释压、解除隔离、归档保证与 residual reopen 责任面”。
 - 再往下一层，应由 `../navigation/70 -> 69-71` 继续回答“怎样把解除监护纠偏继续压成宿主可消费的无人盯防延续、继续定价、写回托管与 residual reopen threshold 面”。
+- 再往下一层，应由 `../navigation/71 -> ../playbooks/50-52` 继续回答“怎样把稳态协议继续压成宿主、CI、评审与交接共享的巡检卡、稳态判定顺序与再入场责任演练”。
 - 机制对象宿主消费面不等于内部实现面。
 - host-consumable projection 不等于 internal compiler / internal fault-model trace。
 
