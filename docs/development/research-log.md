@@ -1159,6 +1159,7 @@
 - 在 `33-安全单写者原则` 之后，再补一个 `appendix/17-安全单写者速查表` 就很自然了：长文已经把 mode 外化、会话语义、outbound 顺序、worker 复制真相、资格布尔量和恢复路径这些“唯一作者”讲清楚，但实现和评审时仍然需要一张更短的作者权矩阵。把关键事实、正式作者、合法镜像层与越权后果压进一页后，安全专题就第一次拥有了可直接用于检查“某层是不是在偷偷变成第二作者”的改动审查表。 
 - 继续往前推进后，可以更明确地把 `34-安全提交语义` 单独写出来：`33` 已经回答了“谁有资格写”，但还没有回答“什么时候算真的写成”。`sessionState.ts` 已经把本地语义、metadata 镜像和 SDK 事件拆成不同层；`WorkerStateUploader.ts` 与 `ccrClient.ts` 又把 enqueue、PUT 成功、恢复读取和 init 注册分开；`print.ts` 进一步把 result 可见性、`heldBackResult`、`flushInternalEvents()` 与 `idle` turn-over 顺序明确排好；`sessionStorage.ts` 则表明 resume 依赖 internal events 账本而不是普通可见事件。这使得 `34` 的核心结论很清楚：Claude Code 的深层安全性不只治理写权限，还治理提交边界，它不允许“本地已改”“远端已见”“持久化已落”和“恢复可重建”被误写成同一个词。 
 - 在 `34-安全提交语义` 之后，再补一个 `appendix/18-安全提交边界速查表` 也很自然：长文已经把语义、复制、可见、持久和恢复五层提交讲清楚，但实现和评审时仍需要一张更短的边界矩阵。把“哪一层算提交、哪一层还不算、源码入口和最危险误读”压进一页后，安全专题就第一次拥有了可直接用于提交边界审查的五层检查表。 
+- 继续往前推进后，可以更明确地把 `35-安全多账本原则` 单独写出来：`34` 已经回答了“哪一层算提交”，但还没有回答“为什么这些层不能共用同一本账”。`sessionState.ts` 先维护语义账本，再把状态镜像给 metadata 与 SDK event；`ccrClient.ts` 明确区分 `reportState/reportMetadata`、`writeEvent(...)` 与 `writeInternalEvent(...)`，分别服务复制账、可见账与恢复账；`print.ts` 在 going idle 前先 flush internal events；`sessionStorage.ts` 的 `hydrateFromCCRv2InternalEvents(...)` 又说明 resume 读取的是恢复账而不是普通前端事件。这使得 `35` 的核心结论很清楚：Claude Code 的深层安全性不只是多层提交边界，更是多账本结构，每一本账都服务不同读者、不同边界和不同误判成本。 
 
 ## 下一步待办
 
