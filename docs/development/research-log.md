@@ -1118,6 +1118,7 @@
 - 再往产品层推进后，可以更稳地得出一个判断：系统其实已经拥有不少“安全状态面零件”，例如 `permissionExplainer.ts`、`createPermissionRequestMessage()`、`status.tsx` 对 setting sources 的呈现、`ManagedSettingsSecurityDialog`、`getBridgeDisabledReason()` 与 auto-mode gate notification；问题不在于完全没有解释层，而在于这些解释仍然分散，尚未汇成一张统一安全仪表盘。因此 `security/10` 的重点不是再描述机制，而是指出“从结构化安全到可解释安全”之间还差哪一步产品化。 
 - 继续把安全专题收束到平台构建者层后，可以更稳定地提炼出一组可迁移法则：来源先于值、mode 即安全语义、真正危险的是绕过仲裁层、外部能力要按攻击面建模、兼容不等于 entitlement 等价、解释层必须产品化、以及 public build 边界必须与代码边界同时治理。这样 `security/11` 不再只是总结，而是把 Claude Code 的安全性压缩成可被其他 Agent 平台直接借鉴的一组设计原则。 
 - 再往平台产品路线图推进后，现有源码中的零件与缺口关系也更清楚了：`Settings/Status.tsx`、`SandboxConfigTab.tsx`、`PluginSettings.tsx`、`ManagedSettingsSecurityDialog`、`permissionExplainer.ts`、`getBridgeDisabledReason()` 已经分别暴露了 setting sources、sandbox 约束、managed-only 指引、危险设置审批、权限解释和 entitlement 失败原因，但它们仍然分散在局部节点中。于是 `security/12` 可以把下一代产品化重点明确压成统一安全状态面、来源血缘、规则优先级解释、风险标签、managed-only 标识和支持证据包这类高收益改进，而不是继续堆更多零散 gate。 
+- 安全专题扩到 `00-12` 后，再单独补一个 `13-安全专题二级索引` 就很有必要：安全目录现在已经同时覆盖方法论、机制、状态机、主权矩阵、攻击面矩阵、可解释性和平台路线图，如果没有问题导向入口，读者很容易重新退回线性顺读。这个二级索引把专题按问题、攻击面、主权冲突、平台改进四种入口重新组织，后续继续扩充章节时也更不容易破坏整体可读性。 
 
 ## 下一步待办
 
