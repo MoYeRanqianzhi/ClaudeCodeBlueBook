@@ -1114,6 +1114,7 @@
 - 最后一轮收尾后，`security/06` 已经把这组专题重新压成六条最小公理：来源先于值、仲裁先于放行、外部世界不是默认可信上下文、高阶资格不等于传输层连通、高风险便利必须由更强边界补偿、安全设计必须可解释。这样一来，`bluebook/security/` 已经形成了从方法论、机制、哲学到第一性原理反思的完整独立板块。
 - 继续往细粒度手册推进后，权限链的时序已经能更明确写成状态机：`transitionPermissionMode()` 负责 plan/auto 的上下文切换、危险规则剥离与恢复；`permissions.ts` 里的 `safetyCheck` 明确高于 bypass 与大部分 fast-path；auto mode classifier 也不是唯一裁判，而是排在 acceptEdits fast-path、safe-tool allowlist 与若干 bypass-immune 条件之后的中段仲裁器。这使得 `security/07` 可以把权限系统从概念层推进到时序层。
 - 再往下压后，配置与受管环境的主权结构也足够清晰：`SETTING_SOURCES` 定义了 later-overrides-earlier 的基础顺序，但 `managedEnv.ts` 又把 trust 前后 env 应用拆成两层；`managedEnvConstants.ts` 把 provider-routing 与 auth 主链变量单独列成 host-managed 风险面；`permissionsLoader.ts`、`hooksConfigSnapshot.ts` 与 `sandbox-adapter.ts` 则说明 managed-only 不只是只读，而是可以把 permission、hooks、sandbox 域与读路径这些整类安全策略重新收口。因此 `security/08` 可以把“谁能改配置”升级为“谁拥有运行时主权”。 
+- 把外部入口进一步压成风险矩阵后，可以更明确地区分：MCP 的主风险是上下文与工具面扩张，WebFetch 的主风险是读写语义混淆，hooks 的主风险是隐形执行点与主权冲突，gateway 的主风险则是身份/路由漂移与“兼容但不等价”的语义错觉。这样 `security/09` 不再只是重复“外部能力要收口”，而是把风险分成读取、写入、执行、身份与上下文污染五个正交维度。 
 
 ## 下一步待办
 
