@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《样本与演练导航：标签体系、交叉索引与记录模板》《事故标签体系与交叉索引：阶段、资产、症状、根因与恢复动作》《演练记录模板：前提、触发器、观测、判定、修复与防再发》，并回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“样本层”继续推进到“索引层”
 - 新增 `bluebook/casebooks/` 目录及《案例库导航：Prompt事故、治理事故与结构演化样本》《Prompt事故案例集：修宪漂移、路径失配与合法遗忘失效》《治理事故案例集：错误顺序、审批退化与稳定字节漂移》《源码演化案例集：影子层化石化、传输泄漏与zombification》，并继续回写目录治理与入口文档，把蓝皮书从“运营手册层”再推进到“案例样本层”
 - 新增 `bluebook/playbooks/` 目录及《运营与复盘导航：修宪回归、治理事故与演化演练》《Prompt修宪回归手册：section-drift、boundary-drift与lawful-forgetting事故复盘》《治理事故运营手册：approval-race、auto-mode撤销、stable-bytes漂移与stop-logic回归》《源码演化演练手册：build-surface、shadow-stub退出、recovery-drill与anti-zombie复盘》，并同步回写目录治理文档，把蓝皮书目录从“主线/导航/机制/API/哲学/风险/指南”推进到包含运营层的八层结构
 - 新增《团队落地包导航：修宪工作流、治理矩阵与源码塑形审读》《Prompt Constitution审读模板：section card、修宪工作流、失效台账与triage runbook》《治理顺序审计模板：失败语义矩阵、自动化租约、审批竞速与稳定字节台账》《源码塑形审读模板：发布面矩阵、入口影子、transport shell与反zombification清单》，并回写主索引、使用专题、导航专题与开发文档，把 24-26 继续下沉成团队级模板层

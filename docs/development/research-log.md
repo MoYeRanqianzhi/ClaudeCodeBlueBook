@@ -218,6 +218,32 @@
 - `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00h. 样本层之后，下一层应进入索引层
+
+- 当 `casebooks/01-03` 已经把制度压成失败样本层后，下一步最值钱的不是继续补更多孤立案例，而是补 `casebooks/04 + playbooks/04 + navigation/12` 这一组索引层：统一标签体系、交叉索引与记录模板。
+- Prompt 样本的索引维度最值得固定为：`section / boundary / path / forgetting / invalidation`；这些维度比按“哪次事故”组织更接近 Prompt Constitution 的真实制度字节。
+- 治理样本的索引维度最值得固定为：`order / guard / race / stable bytes / stop logic`；这些维度比按“误放行 / 太慢 / 太贵”组织更接近治理系统的真实控制点。
+- 结构演化样本的索引维度最值得固定为：`build surface / shadow-stub / transport shell / recovery asset / zombie risk`；这些维度比按“哪个文件坏了”组织更接近源码先进性的真实边界。
+- `playbooks/04` 应作为运营层和样本层的统一 ABI：任何演练和复盘都先按同一记录模板写，之后再决定回填到哪类 casebook。
+- `navigation/12` 因而成为必要入口：`10` 负责手册层，`11` 负责样本层，`12` 负责“怎样给样本和演练建索引”，否则目录会重新退回“知道有案例，但找不到规律”。
+
+证据:
+
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:437-520`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-62`
+- `claude-code-source-code/src/QueryEngine.ts:284-321`
+- `claude-code-source-code/src/utils/queryContext.ts:77-84`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/cli/structuredIO.ts:561-608`
+- `claude-code-source-code/src/hooks/toolPermission/handlers/interactiveHandler.ts:138-455`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-860`
+- `claude-code-source-code/scripts/prepare-src.mjs:3-64`
+- `claude-code-source-code/scripts/stub-modules.mjs:2-42`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

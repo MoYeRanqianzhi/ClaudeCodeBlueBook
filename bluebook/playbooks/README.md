@@ -20,6 +20,7 @@
 1. [01-Prompt修宪回归手册：section-drift、boundary-drift与lawful-forgetting事故复盘](01-Prompt修宪回归手册：section-drift、boundary-drift与lawful-forgetting事故复盘.md)
 2. [02-治理事故运营手册：approval-race、auto-mode撤销、stable-bytes漂移与stop-logic回归](02-治理事故运营手册：approval-race、auto-mode撤销、stable-bytes漂移与stop-logic回归.md)
 3. [03-源码演化演练手册：build-surface、shadow-stub退出、recovery-drill与anti-zombie复盘](03-源码演化演练手册：build-surface、shadow-stub退出、recovery-drill与anti-zombie复盘.md)
+4. [04-演练记录模板：前提、触发器、观测、判定、修复与防再发](04-演练记录模板：前提、触发器、观测、判定、修复与防再发.md)
 
 ## 按目标阅读
 
@@ -28,6 +29,7 @@
 - 想把源码塑形从结构模板推进到迁移退出、recovery drill 与 anti-zombie 演练：`../guides/29 -> 03`
 - 想先看运营层入口，而不是直接挑单篇：`../navigation/10 -> README`
 - 想直接看真实失败样本和事故原型，而不是先读手册：`../navigation/11 -> ../casebooks/README`
+- 想把手册层和样本层继续压成统一记录格式：`04 -> ../casebooks/04 -> ../navigation/12`
 
 ## 与其他目录的边界
 
