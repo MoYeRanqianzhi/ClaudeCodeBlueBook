@@ -1120,6 +1120,7 @@
 - 再往平台产品路线图推进后，现有源码中的零件与缺口关系也更清楚了：`Settings/Status.tsx`、`SandboxConfigTab.tsx`、`PluginSettings.tsx`、`ManagedSettingsSecurityDialog`、`permissionExplainer.ts`、`getBridgeDisabledReason()` 已经分别暴露了 setting sources、sandbox 约束、managed-only 指引、危险设置审批、权限解释和 entitlement 失败原因，但它们仍然分散在局部节点中。于是 `security/12` 可以把下一代产品化重点明确压成统一安全状态面、来源血缘、规则优先级解释、风险标签、managed-only 标识和支持证据包这类高收益改进，而不是继续堆更多零散 gate。 
 - 安全专题扩到 `00-12` 后，再单独补一个 `13-安全专题二级索引` 就很有必要：安全目录现在已经同时覆盖方法论、机制、状态机、主权矩阵、攻击面矩阵、可解释性和平台路线图，如果没有问题导向入口，读者很容易重新退回线性顺读。这个二级索引把专题按问题、攻击面、主权冲突、平台改进四种入口重新组织，后续继续扩充章节时也更不容易破坏整体可读性。 
 - 继续往“总图化”推进后，安全专题已经足够成熟，可以单独补一个 `14-安全控制面总图`：它把 trust、配置来源、permission mode、动作仲裁、环境隔离、外部入口、身份 entitlement 和解释层重新串成一条全链结构图谱。这样一来，`security/00-13` 不再只是散点深化，而能被重新压回同一张总图，作为后续继续新增章节时的参照坐标。 
+- 在这之后，再单独补一个 `15-来源主权总表` 就有了明确价值：`settings/settings.ts` 里的 policy first-source-wins、`managedEnv.ts` 的 host-managed provider env、`permissionsLoader.ts` / `hooksConfigSnapshot.ts` / `mcp/config.ts` / `pluginOnlyPolicy.ts` 的 managed-only 与 plugin-only 收口、以及 `managedPlugins.ts` / `marketplaceHelpers.ts` 对插件供应链主权的收束，已经足够支持一张“谁能定义、谁能覆盖、谁能最终收口”的总表。这让安全专题不只是在讲机制，而是在讲整套系统的主权编排。 
 
 ## 下一步待办
 
