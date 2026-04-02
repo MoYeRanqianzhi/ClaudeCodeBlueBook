@@ -138,6 +138,10 @@
 - `architecture/75` 已把“构建系统也是架构工具”从理念回灌成结构层：external stubs、portable shadow entry、transport shell、thin registry 与 zombification governance 现在形成同一条 source-order shaping control plane。
 - 这意味着蓝皮书当前首次形成了较完整的六层闭环：哲学判断 -> 高阶导航 -> 深方法导航 -> 模板层 -> 架构底盘 -> 主索引检索，而不是只在哲学和 guide 间来回摆动。
 
+补充下沉判断：
+
+- 当 73-75 稳定后，下一步最值钱的不是继续增加架构抽象，而是把它们各自转写成 builder-facing 操作手册：section registry policy、governance order matrix、source-order shaping checklist。否则底盘层虽然成立，但迁移动作仍然停在读者脑中。
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《如何把Prompt写成可治理宪法：section registry、角色主权链、合法遗忘与可观测diff》《如何设计有顺序的治理系统：检查顺序、失败语义分型、可撤销自动化与稳定字节资产》《如何用构建系统塑形Agent Runtime：入口影子、transport shell、薄registry与反zombification》，并回写主索引、使用专题与开发文档，把 73-75 继续下沉成 builder-facing 操作手册
 - 新增《Prompt Constitution控制面：section宪法、角色主权链、合法遗忘与可观测diff》《治理顺序控制面：失败语义分型、可撤销自动化与稳定字节资产》《构建系统塑形源码秩序：入口影子、传输外壳、薄Registry与Zombification治理》，并回写架构专题 README、导航层与开发文档，把 60-62 分别回灌成对应底盘篇
 - 新增《Prompt不是文案，而是受治理的Prompt Constitution》《真正成熟的安全与省Token系统，不是统一预算器，而是治理顺序、失败语义与可撤销自动化》《构建系统也是架构工具：发布面、入口影子与传输外壳共同塑造源码秩序》《高阶制度导航：Prompt Constitution、治理顺序与构建系统》，并回写主索引、哲学专题 README、《设计哲学》《第一性原理与苏格拉底反思》与开发文档，把三条第二序制度母线提升为正式章节
 - 新增《深方法导航：共享前缀、合同优先与依赖图诚实性》《共享前缀快照策略模板：何时保存、何时复用、何时suppress》《Contract-First审读清单：如何系统读懂Agent Runtime的合同、权威面与热点文件》《Dependency-Honesty Review Checklist：如何评审leaf module、anti-cycle seam与single-source file》，并回写主索引、导航专题、使用专题与开发文档，把“共享前缀 / 合同优先 / 依赖图诚实性”进一步下沉成导航层与模板层

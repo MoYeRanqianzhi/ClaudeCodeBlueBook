@@ -70,6 +70,7 @@
 - 想把依赖图诚实性写成长期维护制度，而不是抽象洁癖，再读 [guides/20-如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file](guides/20-%E5%A6%82%E4%BD%95%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9C%B0%E7%BB%B4%E6%8C%81%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%9A%E5%AE%9E%E6%80%A7%EF%BC%9Aleaf%20module%E3%80%81anti-cycle%20seam%E4%B8%8Esingle-source%20file.md)
 - 想把这三条深方法进一步落成团队模板和 review checklist，再读 [navigation/07-深方法导航：共享前缀、合同优先与依赖图诚实性](navigation/07-%E6%B7%B1%E6%96%B9%E6%B3%95%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E3%80%81%E5%90%88%E5%90%8C%E4%BC%98%E5%85%88%E4%B8%8E%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%9A%E5%AE%9E%E6%80%A7.md)
 - 想继续看 prompt、安全、源码先进性的第二序制度层，再读 [navigation/08-高阶制度导航：Prompt Constitution、治理顺序与构建系统](navigation/08-%E9%AB%98%E9%98%B6%E5%88%B6%E5%BA%A6%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%20Constitution%E3%80%81%E6%B2%BB%E7%90%86%E9%A1%BA%E5%BA%8F%E4%B8%8E%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F.md)
+- 想把这三条第二序制度继续下沉成 builder-facing 操作手册，再读 [guides/24-如何把Prompt写成可治理宪法：section registry、角色主权链、合法遗忘与可观测diff](guides/24-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%86%99%E6%88%90%E5%8F%AF%E6%B2%BB%E7%90%86%E5%AE%AA%E6%B3%95%EF%BC%9Asection%20registry%E3%80%81%E8%A7%92%E8%89%B2%E4%B8%BB%E6%9D%83%E9%93%BE%E3%80%81%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E4%B8%8E%E5%8F%AF%E8%A7%82%E6%B5%8Bdiff.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 

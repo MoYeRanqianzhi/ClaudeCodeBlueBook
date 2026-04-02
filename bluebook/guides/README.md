@@ -27,6 +27,9 @@
 21. [21-共享前缀快照策略模板：何时保存、何时复用、何时suppress](21-%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E5%BF%AB%E7%85%A7%E7%AD%96%E7%95%A5%E6%A8%A1%E6%9D%BF%EF%BC%9A%E4%BD%95%E6%97%B6%E4%BF%9D%E5%AD%98%E3%80%81%E4%BD%95%E6%97%B6%E5%A4%8D%E7%94%A8%E3%80%81%E4%BD%95%E6%97%B6suppress.md)
 22. [22-Contract-First审读清单：如何系统读懂Agent Runtime的合同、权威面与热点文件](22-Contract-First%E5%AE%A1%E8%AF%BB%E6%B8%85%E5%8D%95%EF%BC%9A%E5%A6%82%E4%BD%95%E7%B3%BB%E7%BB%9F%E8%AF%BB%E6%87%82Agent%20Runtime%E7%9A%84%E5%90%88%E5%90%8C%E3%80%81%E6%9D%83%E5%A8%81%E9%9D%A2%E4%B8%8E%E7%83%AD%E7%82%B9%E6%96%87%E4%BB%B6.md)
 23. [23-Dependency-Honesty Review Checklist：如何评审leaf module、anti-cycle seam与single-source file](23-Dependency-Honesty%20Review%20Checklist%EF%BC%9A%E5%A6%82%E4%BD%95%E8%AF%84%E5%AE%A1leaf%20module%E3%80%81anti-cycle%20seam%E4%B8%8Esingle-source%20file.md)
+24. [24-如何把Prompt写成可治理宪法：section registry、角色主权链、合法遗忘与可观测diff](24-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%86%99%E6%88%90%E5%8F%AF%E6%B2%BB%E7%90%86%E5%AE%AA%E6%B3%95%EF%BC%9Asection%20registry%E3%80%81%E8%A7%92%E8%89%B2%E4%B8%BB%E6%9D%83%E9%93%BE%E3%80%81%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E4%B8%8E%E5%8F%AF%E8%A7%82%E6%B5%8Bdiff.md)
+25. [25-如何设计有顺序的治理系统：检查顺序、失败语义分型、可撤销自动化与稳定字节资产](25-%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1%E6%9C%89%E9%A1%BA%E5%BA%8F%E7%9A%84%E6%B2%BB%E7%90%86%E7%B3%BB%E7%BB%9F%EF%BC%9A%E6%A3%80%E6%9F%A5%E9%A1%BA%E5%BA%8F%E3%80%81%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E5%88%86%E5%9E%8B%E3%80%81%E5%8F%AF%E6%92%A4%E9%94%80%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%8E%E7%A8%B3%E5%AE%9A%E5%AD%97%E8%8A%82%E8%B5%84%E4%BA%A7.md)
+26. [26-如何用构建系统塑形Agent Runtime：入口影子、transport shell、薄registry与反zombification](26-%E5%A6%82%E4%BD%95%E7%94%A8%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%A1%91%E5%BD%A2Agent%20Runtime%EF%BC%9A%E5%85%A5%E5%8F%A3%E5%BD%B1%E5%AD%90%E3%80%81transport%20shell%E3%80%81%E8%96%84registry%E4%B8%8E%E5%8F%8Dzombification.md)
 
 ## 按使用目标阅读
 
@@ -55,6 +58,9 @@
 - 想把共享前缀方法真正写成团队可复用模板，而不是只停在理解层：`18 -> 21 -> ../navigation/07`
 - 想把 contract-first 阅读法落成系统审读清单，而不是继续靠经验看大文件：`19 -> 22 -> ../navigation/07`
 - 想把依赖图诚实性落成结构评审清单，而不是继续停在抽象判断：`20 -> 23 -> ../navigation/07`
+- 想把 Prompt Constitution 写成 builder-facing 设计动作，而不是继续停在哲学层：`24 -> ../architecture/73 -> ../navigation/08`
+- 想把安全与省 token 写成有顺序的治理系统，而不是只会谈统一预算器：`25 -> ../architecture/74 -> ../navigation/08`
+- 想把构建、入口、transport 与恢复写成同一套工程动作，而不是只看目录漂亮：`26 -> ../architecture/75 -> ../navigation/08`
 
 ## 与其他目录的边界
 
