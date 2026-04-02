@@ -123,6 +123,16 @@
 - `claude-code-source-code/src/utils/swarm/backends/registry.ts:81-114`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+补充目录判断：
+
+- 当 60-62 形成第二序制度层后，应单独提供 `navigation/08`，否则 05/06/07 会分别承担“高阶母线 / 终局判断 / 深方法模板”三层职责，却没有一个入口直达“更深一层的制度哲学”。
+
+### A00c. 第二序制度层已经稳定成三条母线
+
+- `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。
+- “治理顺序 + 失败语义 + 可撤销自动化”现在应被视为安全/省 token 深线的第二序终点：统一预算器只是第一步，更成熟的问题是哪些检查先发生、哪些失败分型、哪些自动化必须退回人工。
+- “构建系统也是架构工具”现在应被视为源码先进性深线的第二序终点：构建、入口影子、transport shell、薄 registry 与 zombification 治理共同塑造发布面、模块图与恢复约束。
+
 ### A0. 协作接口、有效自由与治理界面
 
 - Sticky Prompt 只从真实用户主语与非 meta 的 `queued_command` 中提炼可见锚点，还会裁掉 system reminder 与无意义前缀，说明它在维护的是“当前到底在回应什么”的协作接口，而不是简单 UI 装饰。

@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《Prompt不是文案，而是受治理的Prompt Constitution》《真正成熟的安全与省Token系统，不是统一预算器，而是治理顺序、失败语义与可撤销自动化》《构建系统也是架构工具：发布面、入口影子与传输外壳共同塑造源码秩序》《高阶制度导航：Prompt Constitution、治理顺序与构建系统》，并回写主索引、哲学专题 README、《设计哲学》《第一性原理与苏格拉底反思》与开发文档，把三条第二序制度母线提升为正式章节
 - 新增《深方法导航：共享前缀、合同优先与依赖图诚实性》《共享前缀快照策略模板：何时保存、何时复用、何时suppress》《Contract-First审读清单：如何系统读懂Agent Runtime的合同、权威面与热点文件》《Dependency-Honesty Review Checklist：如何评审leaf module、anti-cycle seam与single-source file》，并回写主索引、导航专题、使用专题与开发文档，把“共享前缀 / 合同优先 / 依赖图诚实性”进一步下沉成导航层与模板层
 - 新增《如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀》《如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件》《如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file》，并回写《使用指南》、使用专题 README、主索引与开发文档，把“共享前缀网络 / 合同优先阅读 / 依赖图诚实性”正式下沉成高级实践
 - 新增《Protocol真相控制面：为什么UI历史必须在API边界前被重新编译》《资源定价运行时：permission、visibility、externalization与continuation的一体化预算》《未来维护者消费者控制面：风险命名、制度注释、seam与状态机如何共同服务演化》，并回写架构专题 README 与主索引，把高级 guide 再推回到底盘层

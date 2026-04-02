@@ -211,6 +211,10 @@
   - 共享前缀快照策略模板：何时保存、何时复用、何时suppress
   - Contract-First审读清单：如何系统读懂Agent Runtime的合同、权威面与热点文件
   - Dependency-Honesty Review Checklist：如何评审leaf module、anti-cycle seam与single-source file
+  - Prompt不是文案，而是受治理的Prompt Constitution
+  - 真正成熟的安全与省Token系统，不是统一预算器，而是治理顺序、失败语义与可撤销自动化
+  - 构建系统也是架构工具：发布面、入口影子与传输外壳共同塑造源码秩序
+  - 高阶制度导航：Prompt Constitution、治理顺序与构建系统
 
 ## 已确认事实
 
@@ -270,6 +274,7 @@
 - prompt 深线下一层可继续稳定成 `Prompt Constitution`：system prompt 是一份受 section 宪法、危险 cache-break 声明、角色优先级链和合法遗忘策略共同治理的制度体，而不是单段文案
 - 安全与省 token 深线下一层可继续稳定成“治理顺序 + 失败语义分型 + 可撤销自动化 + 稳定字节资产”：系统真正优化的是把检查放在正确顺序、在无决策增益处停止花 token、并对不同资产采用不同 fail-open/fail-closed
 - 源码先进性下一层可继续稳定成“构建系统也是架构工具”：external stubs、portable shadow entry、transport shell、薄 registry 与 zombification 防治共同塑造发布面、入口安全与演化秩序
+- 高阶制度层当前应稳定成三条第二序母线：Prompt Constitution、治理顺序与失败语义、构建系统塑形源码秩序；它们比继续讨论“提示词技巧 / 统一预算器 / 目录漂亮”更接近 Claude Code 的深层制度设计
 - API atlas 还应继续补目录级能力地图，避免“字段齐了，但能力地形仍然不可检索”
 - 宿主 API 还应继续补失败语义、取消请求、orphan response 与 transcript repair，不要只写 happy path
 - 预算器深线还应继续补 context usage、systemPromptSections、attachmentsByType 与 pending_action 的联合调优方法
