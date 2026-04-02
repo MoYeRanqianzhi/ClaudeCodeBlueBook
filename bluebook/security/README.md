@@ -419,4 +419,6 @@
 - 想把 `104` 的长文压成一张落位矩阵，快速看出不同 surface 的 must-show fields、optional fields 与 forbidden clutter：`104` -> `appendix/88`
 - 想看为什么即使字段已经落在正确 surface，上面出现的多个 signal 仍不能平权竞争，而应让强断点抢占弱信号：`104` -> `105`
 - 想把 `105` 的长文压成一张优先级矩阵，快速看出不同 signal 的 priority、preemption target 与 display policy：`105` -> `appendix/89`
+- 想看为什么即使优先级已经分出来，系统仍不能只靠“谁更强”治理字段，而必须继续回答它何时配升级、何时该留场、何时必须退场：`105` -> `106`
+- 想把 `106` 的长文压成一张生命周期矩阵，快速看出不同 signal 的 upgrade threshold、stay condition、retire trigger 与 premature exit risk：`106` -> `appendix/90`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
