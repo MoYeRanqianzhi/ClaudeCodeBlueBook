@@ -92,6 +92,9 @@
 - [57-Prompt宿主修复协议：repair object、reject escalation、rollback boundary与re-entry qualification](57-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E5%8D%8F%E8%AE%AE%EF%BC%9Arepair%20object%E3%80%81reject%20escalation%E3%80%81rollback%20boundary%E4%B8%8Ere-entry%20qualification.md)
 - [58-治理宿主修复协议：authority repair、ledger rebuild、decision window reset、continuation repricing与rollback object](58-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20repair%E3%80%81ledger%20rebuild%E3%80%81decision%20window%20reset%E3%80%81continuation%20repricing%E4%B8%8Erollback%20object.md)
 - [59-结构宿主修复协议：authority recovery、resume replay order、writeback restoration、anti-zombie verdict与boundary reset](59-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20recovery%E3%80%81resume%20replay%20order%E3%80%81writeback%20restoration%E3%80%81anti-zombie%20verdict%E4%B8%8Eboundary%20reset.md)
+- [60-Prompt宿主修复收口协议：restored request object、protocol truth witness、rollback witness与re-entry warranty](60-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%94%B6%E5%8F%A3%E5%8D%8F%E8%AE%AE%EF%BC%9Arestored%20request%20object%E3%80%81protocol%20truth%20witness%E3%80%81rollback%20witness%E4%B8%8Ere-entry%20warranty.md)
+- [61-治理宿主修复收口协议：authority settlement、ledger seal、window closure、continuation warranty与rollback clearance](61-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%94%B6%E5%8F%A3%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20settlement%E3%80%81ledger%20seal%E3%80%81window%20closure%E3%80%81continuation%20warranty%E4%B8%8Erollback%20clearance.md)
+- [62-结构宿主修复收口协议：authority seal、writeback seal、anti-zombie witness与boundary closure](62-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E6%94%B6%E5%8F%A3%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20seal%E3%80%81writeback%20seal%E3%80%81anti-zombie%20witness%E4%B8%8Eboundary%20closure.md)
 
 ## 按接入任务阅读
 
@@ -112,6 +115,7 @@
 - 想让宿主直接围绕 authority state、generation evidence、recovery boundary 与 anti-zombie projection 组织恢复与回退，而不是继续看目录图和恢复成功率：`53 -> ../navigation/43`
 - 想把这些纠偏顺序继续压成宿主、SDK、CI 与交接都能共享的验收卡与拒收协议，而不是继续停在 builder 心里：`../navigation/50 -> 54 -> 55 -> 56 -> ../guides/57 -> ../guides/58 -> ../guides/59`
 - 想把这些执行纠偏继续压成宿主、SDK、CI、评审与交接都能共享的修复卡、reject 升级语义与重入规则，而不是继续停在 builder 心里：`../navigation/54 -> 57 -> 58 -> 59 -> ../guides/60 -> ../guides/61 -> ../guides/62`
+- 想把这些修复纠偏继续压成宿主、SDK、CI、评审与交接都能共享的收口卡、完成语义与交接保证面，而不是继续停在 builder 心里：`../navigation/58 -> 60 -> 61 -> 62 -> ../guides/63 -> ../guides/64 -> ../guides/65`
 - 想把 validator / linter 继续压成 machine-readable rule ABI：`../navigation/30 -> 40 -> 41 -> 42 -> ../philosophy/71`
 - 想把这些 rule packet 继续压成最小规则样例、失败样例与 evaluator 接口：`../navigation/31 -> ../playbooks/20 -> ../playbooks/21 -> ../playbooks/22 -> ../philosophy/72`
 - 想把这些样例接口继续接成 replay harness、cross-consumer alignment 与 drift regression lab：`../navigation/32 -> ../playbooks/23 -> ../playbooks/24 -> ../playbooks/25 -> ../philosophy/73`

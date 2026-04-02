@@ -9,6 +9,72 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复收口失真 / repair closeout distortion casebook”继续推进到“宿主修复收口纠偏 / repair closeout correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复收口失真如果要真正纠偏，必须先冻结假完成与 summary-only closeout，再把 restored request object、protocol truth witness、baseline reset、handoff warranty 与 reopen gate 拉回同一个 `compiled request truth`，而不是继续围绕 closeout 文案、compact 后的轻量感与按钮式 reopen 修补。
+  - 治理宿主修复收口失真如果要真正纠偏，必须先拆掉 authority 假收口，再把 ledger seal、window closure、continuation repricing、rollback clearance 与 handoff warranty 拉回同一个统一定价治理对象，而不是继续围绕 mode 面板、审批完成感、usage dashboard 与经验式 handoff 修补。
+  - 结构宿主修复收口失真如果要真正纠偏，必须先 demote breadcrumb，再把 authority seal、resume closure order、writeback 主路径、anti-zombie witness 与 recovery boundary 拉回同一个结构真相面，而不是继续围绕 reconnect 成功感、telemetry 繁荣与作者说明修补。
+- 新增目录责任：
+  - `navigation/61` 负责宿主修复收口纠偏入口。
+  - `guides/66-68` 负责三类宿主修复收口执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些收口执行信号在说谎”，还要写“纠偏时先冻结哪个假完成信号、再救哪个正式对象、哪些情况必须直接 hard reject”。
+  - 每次继续深化都要回答“当前 closeout correction 保护的是单一真相的结束能力，还是只是在修补一个更制度化的完成叙事”。
+- 蓝皮书已经从“宿主修复收口执行 / repair closeout execution”继续推进到“宿主修复收口失真 / repair closeout distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复收口执行即使已经有 closeout card、completion verdict order、handoff warranty 与 reopen drill，仍最容易死于假完成、protocol witness 漂白、summary handoff、baseline reset 假证明与假 reopen；否则 Prompt 的编译链魔力会在收口层重新退回 closeout 文案、摘要交接与按钮式重开。
+  - 治理宿主修复收口执行即使已经有 closeout card、completion verdict order、handoff warranty 与 reopen drill，仍最容易死于 authority 假收口、ledger 未排空、window 假关闭、经验式 handoff 与免费重开；否则安全设计与省 token 设计会在收口层重新拆成 mode 面板、审批完成感与 token 图表三套投影。
+  - 结构宿主修复收口执行即使已经有 closeout card、completion verdict order、handoff warranty 与 reopen drill，仍最容易死于 breadcrumb 复辟、resume 跳步、writeback seal 伪装、anti-zombie 口头化与 reconnect 冒充 handoff / reopen；否则源码先进性会在收口层重新退回 pointer、重连通过感、日志繁荣与作者口述。
+- 新增目录责任：
+  - `navigation/60` 负责宿主修复收口失真入口。
+  - `casebooks/37-39` 负责三类宿主修复收口执行的假完成、假交接与假重开反例。
+- 当前新的写作约束：
+  - 不再只写“收口执行该怎样运行”，还要写“哪些看起来已经正式 closeout 的工件其实正在重新制造第二真相、假交接与免费重开”。
+  - 每次继续深化都要回答“当前 closeout distortion 暴露的是单一真相正在失守，还是只是在被一套更制度化的完成叙事替位”。
+- 蓝皮书已经从“宿主修复收口协议 / repair closeout contract”继续推进到“宿主修复收口执行 / repair closeout execution”层。
+- 新增结论：
+  - Prompt 宿主修复收口如果要真正落地运行，必须继续围绕 restored request object、protocol truth witness、rollback witness、handoff warranty 与 reopen trigger 执行固定完成判定顺序，而不是继续围绕事故总结、summary handoff 与默认继续判断。
+  - 治理宿主修复收口如果要真正落地运行，必须继续围绕 authority settlement、ledger seal、window closure、continuation warranty 与 rollback clearance 执行固定完成判定顺序，而不是继续围绕 mode、审批弹窗与 token 仪表盘判断。
+  - 结构宿主修复收口如果要真正落地运行，必须继续围绕 authority seal、resume closure order、writeback seal、anti-zombie witness 与 boundary closure 执行固定完成判定顺序，而不是继续围绕 pointer、重连成功率、日志繁荣与作者口述判断。
+- 新增目录责任：
+  - `navigation/59` 负责宿主修复收口执行入口。
+  - `playbooks/41-43` 负责三类宿主修复收口协议的执行卡、完成判定顺序与交接剧本。
+- 当前新的写作约束：
+  - 不再只写“该消费哪些 closeout contract 字段”，还要写“现场先看什么、何时阻断 handoff、何时必须 reopen、完成判定到底回哪个对象边界”。
+  - 每次继续深化都要回答“当前 closeout execution 保护的是单一真相的完成顺序，还是只是在把收口协议重新翻译成更细的完成表单”。
+- 蓝皮书已经从“宿主修复纠偏 / repair correction guide”继续推进到“宿主修复收口协议 / repair closeout contract”层。
+- 新增结论：
+  - Prompt 宿主修复纠偏如果要真正结束，必须继续围绕 restored request object、protocol truth witness、rollback witness、re-entry warranty 与 closeout verdict，而不是继续围绕事故说明、summary handoff 与默认继续。
+  - 治理宿主修复纠偏如果要真正结束，必须继续围绕 authority settlement、ledger seal、window closure、continuation warranty 与 rollback clearance，而不是继续围绕 mode 恢复、审批完成感与 token 图表转绿。
+  - 结构宿主修复纠偏如果要真正结束，必须继续围绕 authority seal、resume closure order、writeback seal、anti-zombie witness 与 boundary closure，而不是继续围绕 pointer、重连通过感、日志繁荣与恢复成功率。
+- 新增目录责任：
+  - `navigation/58` 负责宿主修复收口协议入口。
+  - `api/60-62` 负责三类宿主修复纠偏的收口卡、完成语义与交接保证面。
+- 当前新的写作约束：
+  - 不再只写“该怎样纠偏”，还要写“哪些收口对象必须被宿主正式消费、哪些完成 verdict 必须共享、哪些内部止血动作绝不能被绑成公共完成语义”。
+  - 每次继续深化都要回答“当前 repair closeout contract 保护的是单一真相的正式收口，还是只是在把修复完成感写成更细的说明书”。
+- 蓝皮书已经从“宿主修复失真 / repair distortion casebook”继续推进到“宿主修复纠偏 / repair correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复失真如果要真正纠偏，必须先把 repair object 从事故说明与摘要故事里降回对象绑定，再把 protocol truth、rollback boundary、lawful forgetting object 与 re-entry gate 重新拉回固定顺序，而不是继续围绕修复解释、旧 summary 与默认继续修补。
+  - 治理宿主修复失真如果要真正纠偏，必须先把 mode 恢复降回 authority 投影，再把 ledger、decision window、continuation repricing 与 rollback object 重新拉回固定顺序，而不是继续围绕面板刷新、审批完成感与免费继续修补。
+  - 结构宿主修复失真如果要真正纠偏，必须先把 breadcrumb、重连通过感与日志繁荣降回辅助信号，再把 authority object、resume order、writeback 主路径与 anti-zombie projection 重新拉回固定顺序，而不是继续围绕 pointer、成功率与目录美学修补。
+- 新增目录责任：
+  - `navigation/57` 负责宿主修复纠偏入口。
+  - `guides/63-65` 负责三类宿主修复演练失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些修复演练信号在说谎”，还要写“纠偏时先救哪个对象、哪些现象必须直接 hard reject、模板骨架该如何改写”。
+  - 每次继续深化都要回答“当前 repair correction 保护的是单一真相的恢复能力，还是只是在修补一个更制度化的修复叙事”。
+- 蓝皮书已经从“宿主修复演练 / repair drill”继续推进到“宿主修复失真 / repair distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复演练即使已经有 repair card、rollback drill 与 re-entry drill，仍最容易死于 repair object 伪绑定、protocol truth 被修复说明掩盖、摘要回滚与默认继续；否则 Prompt 的编译链魔力会在修复层重新退回事故叙事与按钮状态。
+  - 治理宿主修复演练即使已经有 authority repair、window reset 与 repricing drill，仍最容易死于 authority 假恢复、stale ledger 漂白、仪表盘式窗口重置与免费重入；否则安全设计与省 token 设计会在修复层重新拆成两套互不相干的补救流程。
+  - 结构宿主修复演练即使已经有 authority recovery、writeback restoration 与 anti-zombie drill，仍最容易死于 breadcrumb 篡位、resume 顺序隐式化、旁路写回、anti-zombie 伪证明与 reconnect 冒充 rollback；否则源码先进性会在修复层重新退回目录美学、日志繁荣与恢复成功率崇拜。
+- 新增目录责任：
+  - `navigation/56` 负责宿主修复失真入口。
+  - `casebooks/34-36` 负责三类宿主修复演练的假修复、假回滚与假重入反例。
+- 当前新的写作约束：
+  - 不再只写“修复演练如何运行”，还要写“哪些看起来已经完成修复的工件其实正在重新制造第二真相、假连续性与假先进性”。
+  - 每次继续深化都要回答“当前 repair distortion 暴露的是单一真相正在失守，还是只是在被一套更制度化的修复叙事替位”。
 - 蓝皮书已经从“宿主修复协议 / repair contract”继续推进到“宿主修复演练 / repair drill”层。
 - 新增结论：
   - Prompt 宿主修复如果要真正可重放，必须继续把 repair object、reject escalation、rollback boundary 与 re-entry qualification 压成共享升级卡、rollback drill 与 re-entry drill，持续证明 repair、rollback 与 re-entry 仍围绕同一个 `compiled request truth` 发生，而不是继续围绕 reviewer 解释、旧摘要与按钮状态工作。
