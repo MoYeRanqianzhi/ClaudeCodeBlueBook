@@ -307,6 +307,12 @@
 - `navigation/19` 的职责应稳定为“rollout 样例层如何进入统一 ABI 层”，避免 `18` 同时承担历史样例与模板接口两类入口职责
 - `guides/33` 当前应负责把统一 rollout ABI 下沉成 builder-facing 方法，而不是继续停在样例与模板本身
 - `philosophy/66` 当前应负责把“成熟升级 = 每一步都留下可复查证据”稳定成长期设计判断
+- 当 `navigation/19 + playbooks/12-13` 稳定后，下一步最值钱的不是继续补更多模板，而是补证据真相面与宿主消费层：把这套 ABI 明确接回 state writeback、diff 解释、decision window 与 rollback object boundary
+- `architecture/76` 当前应负责升级证据真相面：把状态写回、可观测 diff、决策窗口与回退对象四块 runtime 机制收口为同一条 evidence surface
+- `api/35` 当前应负责 rollout 证据消费面：明确哪些 signals 属于正式 host-consumable ABI，哪些仍应停留在 internal hint
+- `navigation/20` 的职责应稳定为“统一 ABI 层如何进入宿主消费、回退对象与复盘真相面”，避免 `19` 同时承担模板接口与消费入口两类职责
+- `guides/34` 当前应负责让宿主、评审者与后来者共享同一套 rollout ABI，而不是各自维护一份解释
+- `philosophy/67` 当前应负责把“成熟 runtime = 保存下一次升级的判断条件”稳定成新的长期判断
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

@@ -405,6 +405,27 @@
 - `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00p. 统一证据 ABI 层之后，下一层应进入证据真相面与宿主消费层
+
+- 当 `navigation/19 + playbooks/12-13` 已经把 rollout 证据压成统一 ABI 后，下一步最值钱的不是继续补更多卡片，而是把这套 ABI 明确接回 runtime：状态写回、可观测 diff、decision window 与 rollback object boundary 其实已经散落在源码里，只差被收口成同一条 evidence surface。
+- `architecture/76` 应把四块 runtime 机制统一起来：`sessionState/onChangeAppState/WorkerStateUploader` 负责当前真相写回，`promptCacheBreakDetection/toolResultStorage` 负责 diffable bytes，`tokenBudget/QueryGuard` 负责继续或停止的决策窗口，`sessionIngress/bridgePointer/task framework` 负责 rollback object boundary。
+- `api/35` 应明确三层边界：`worker_status / external_metadata / session_state_changed / Context Usage / control evidence` 是正式 host-consumable surfaces；对象卡、observed window、rollback target 应由宿主自建 envelope 统一承载；`promptCacheBreakDetection` 细项、bridge pointer 文件与 task 内部 patch 等仍应停留在 internal hint 层。
+- 这条线最重要的目录判断，是不能把“统一 ABI”误写成“又一层 playbook”。一旦这套 ABI 不进入 `architecture/` 与 `api/`，模板就会停在文档层，无法真正被宿主、评审者与后来者共享消费。
+- `navigation/20` 因而成为必要入口：`19` 负责知道“字段该怎么写”，`20` 负责知道“写好的字段怎样进入宿主消费、对象回退与复盘真相面”，否则目录会重新退回“模板存在，但没人真正消费”。
+
+证据:
+
+- `claude-code-source-code/src/utils/sessionState.ts:92-146`
+- `claude-code-source-code/src/state/onChangeAppState.ts:24-90`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:1-118`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-360`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-860`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-83`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-120`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。
