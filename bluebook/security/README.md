@@ -77,6 +77,7 @@
 55. [54-安全恢复验证闭环：为什么用户执行修复命令不等于状态已恢复，必须由对应回读与signer关环](54-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E9%AA%8C%E8%AF%81%E9%97%AD%E7%8E%AF%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8%E6%88%B7%E6%89%A7%E8%A1%8C%E4%BF%AE%E5%A4%8D%E5%91%BD%E4%BB%A4%E4%B8%8D%E7%AD%89%E4%BA%8E%E7%8A%B6%E6%80%81%E5%B7%B2%E6%81%A2%E5%A4%8D%EF%BC%8C%E5%BF%85%E9%A1%BB%E7%94%B1%E5%AF%B9%E5%BA%94%E5%9B%9E%E8%AF%BB%E4%B8%8Esigner%E5%85%B3%E7%8E%AF.md)
 56. [55-安全恢复自动验证门槛：哪些闭环可以自动撤警，哪些必须停留人工确认](55-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%87%AA%E5%8A%A8%E9%AA%8C%E8%AF%81%E9%97%A8%E6%A7%9B%EF%BC%9A%E5%93%AA%E4%BA%9B%E9%97%AD%E7%8E%AF%E5%8F%AF%E4%BB%A5%E8%87%AA%E5%8A%A8%E6%92%A4%E8%AD%A6%EF%BC%8C%E5%93%AA%E4%BA%9B%E5%BF%85%E9%A1%BB%E5%81%9C%E7%95%99%E4%BA%BA%E5%B7%A5%E7%A1%AE%E8%AE%A4.md)
 57. [56-安全恢复留痕纪律：为什么auto-close失败、transient failure与人工确认挂起都必须保留可重试痕迹](56-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E7%95%99%E7%97%95%E7%BA%AA%E5%BE%8B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88auto-close%E5%A4%B1%E8%B4%A5%E3%80%81transient%20failure%E4%B8%8E%E4%BA%BA%E5%B7%A5%E7%A1%AE%E8%AE%A4%E6%8C%82%E8%B5%B7%E9%83%BD%E5%BF%85%E9%A1%BB%E4%BF%9D%E7%95%99%E5%8F%AF%E9%87%8D%E8%AF%95%E7%97%95%E8%BF%B9.md)
+58. [57-安全恢复清理权限边界：为什么不是任何层都能删除恢复痕迹，必须由对应闭环所有者清理](57-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E6%B8%85%E7%90%86%E6%9D%83%E9%99%90%E8%BE%B9%E7%95%8C%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%82%E9%83%BD%E8%83%BD%E5%88%A0%E9%99%A4%E6%81%A2%E5%A4%8D%E7%97%95%E8%BF%B9%EF%BC%8C%E5%BF%85%E9%A1%BB%E7%94%B1%E5%AF%B9%E5%BA%94%E9%97%AD%E7%8E%AF%E6%89%80%E6%9C%89%E8%80%85%E6%B8%85%E7%90%86.md)
 
 ## 附录目录
 
@@ -129,6 +130,21 @@
 - 想直接看为什么有些闭环可以自动撤警而另一些必须停在人类确认态，以及这条门槛到底由什么决定：看 `55`
 - 想直接看不同 repair path 的 ownership 完整度，以及哪些路径允许 auto-close、哪些必须转人工确认：看 `appendix/39`
 - 想直接看为什么恢复没闭环时系统还必须留下可重试、可回访、可解释的痕迹，而不是把失败静默抹掉：看 `56`
+- 想直接看不同失败场景分别该保留什么痕迹、再从哪里重新进入，以及什么条件下才允许清除这些痕迹：看 `appendix/40`
+- 想直接看为什么这些痕迹不是谁都能删，以及哪些痕迹只能由对应闭环所有者或更高层 signer 清理：看 `57`
+- 想直接看不同 trace 对象到底由谁拥有、谁能清、谁绝不能清：看 `appendix/41`
+- 想直接看为什么即便清理者正确也不能立刻删痕迹，以及控制面该等哪些 full rebuild、terminal 或 manual-confirmed 证据：看 `58`
+- 想直接看不同 trace 到底需要什么 minimum clearer、哪类证据才过门槛、何时允许 auto-clear：看 `appendix/42`
+- 想直接看为什么提示消失、卡片转绿与摘要收缩都不等于正式 trace 已被清除：看 `59`
+- 想直接看 surface hider、projection owner、trace writer 与 explanation closer 四层到底分别能做什么、不能做什么：看 `appendix/43`
+- 想直接看为什么 hidden、suppressed、cleared 与 resolved 必须严格区分，不能继续共用一句“没事了”：看 `60`
+- 想直接看 hidden、suppressed、cleared、resolved 四个词到底各自代表什么、允许说什么、禁止说什么：看 `appendix/44`
+- 想直接看为什么通知、摘要、footer 与账本不能各自发明恢复语言，以及谁才有资格给恢复状态命名：看 `61`
+- 想直接看不同 surface 最多能说到哪一步、哪些更强词绝对不能说：看 `appendix/45`
+- 想直接看当通知、卡片、摘要和 footer 同时说话时，谁有资格代表当前真相：看 `62`
+- 想直接看不同 surface 在词法冲突里谁该赢、谁必须让位：看 `appendix/46`
+- 想直接看为什么高风险新证据出现时，旧的弱绿色词必须被显式 invalidated 而不是继续并存：看 `63`
+- 想直接看哪类更强新证据会使哪些旧词失效，以及这些失效会影响哪些 surface：看 `appendix/47`
 
 ## 和其他目录的关系
 
@@ -213,4 +229,19 @@
 - 想看为什么 verifier 和 signer 即使已经存在，也不代表系统就该自动撤警，以及 why 只有在 action/verifier/signer 三权都在系统手里时才配 auto-close：`54` -> `55`
 - 想把 `55` 的长文压成一张自动验证门槛矩阵，快速看出各类 repair path 的 ownership 完整度、是否允许 auto-close、何时必须转人工确认：`55` -> `appendix/39`
 - 想看为什么即使已经停在人工确认态或自动闭环失败，系统仍不能把问题静默忘掉，以及 why `needsRefresh`、`pending`、`failed`、pointer、retry count 这些对象必须继续保留：`55` -> `56`
+- 想把 `56` 的长文压成一张留痕矩阵，快速看出不同失败场景对应的留痕对象、再进入入口和清除条件：`56` -> `appendix/40`
+- 想看为什么留痕即使已经存在，也仍可能被错误层级越权清掉，以及 why `notification key`、`needsRefresh`、reconnect trace、pointer、高层解释痕迹必须分别由不同所有者清理：`56` -> `57`
+- 想把 `57` 的长文压成一张清理权限矩阵，快速看出不同 trace 的 owner、allowed clearer 和 forbidden clearer：`57` -> `appendix/41`
+- 想看为什么 owner 已经正确仍然不等于现在就能清，以及 why timeout/invalidates、full rebuild、retry budget、archive+deregister、fatal/stale 都是清理门槛的一部分：`57` -> `58`
+- 想把 `58` 的长文压成一张清理门槛矩阵，快速看出不同 trace 的 minimum clearer、threshold evidence 与 auto-clear 许可：`58` -> `appendix/42`
+- 想看为什么痕迹在界面上消失并不等于它已被正式删除，以及 why notification layer、BridgeDialog、`/status` 与 authoritative trace writer 是四个不同层次：`58` -> `59`
+- 想把 `59` 的长文压成一张分层矩阵，快速看出 surface hider、projection owner、trace writer 与 explanation closer 各自的权限边界：`59` -> `appendix/43`
+- 想看为什么恢复控制面还必须继续把 hidden、suppressed、cleared、resolved 做成不同词法，而不能把不同责任层状态压成同一句“已恢复”：`59` -> `60`
+- 想把 `60` 的长文压成一张词法矩阵，快速看出 hidden、suppressed、cleared、resolved 的定义、禁止误说与责任层：`60` -> `appendix/44`
+- 想看为什么有了词法还不够，以及 why 不同界面、通知、footer 和摘要仍必须服从同一套命名主权与表达 ceiling：`60` -> `61`
+- 想把 `61` 的长文压成一张命名仲裁矩阵，快速看出不同 surface 的 visible inputs、max allowed lexicon 与 forbidden stronger terms：`61` -> `appendix/45`
+- 想看为什么有了命名主权仍然不够，以及 why 多个 surface 同时存在时还必须继续仲裁谁能代表当前真相：`61` -> `62`
+- 想把 `62` 的长文压成一张跨面仲裁矩阵，快速看出不同 surface 的 lexical authority level 以及冲突时谁赢谁输：`62` -> `appendix/46`
+- 想看为什么词法冲突被仲裁后仍然不够，以及 why 更强新证据出现时旧词必须继续被显式 invalidated、remove 或降级：`62` -> `63`
+- 想把 `63` 的长文压成一张失效矩阵，快速看出 new stronger evidence 会使哪些 old lexicon 退场、影响哪些 surfaces：`63` -> `appendix/47`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
