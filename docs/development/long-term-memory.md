@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复稳态纠偏执行 / repair steady-state correction execution”继续推进到“宿主修复稳态纠偏失真 / repair steady-state correction distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏执行即使已经有 correction card、recovery verdict order、requalification drill 与 threshold reinstatement drill，仍最容易死于假修正卡、口头真相恢复、前缀复托管表演与阈值装饰化；否则 Prompt 的编译链魔力会在纠偏执行层重新退回 steady note、summary prose 与“最近没出事”。
+  - 治理宿主修复稳态纠偏执行即使已经有 correction card、correction verdict order、capability recustody 与 threshold rebinding drill，仍最容易死于假纠偏、假再托管、免费继续回魂与假阈值重绑；否则安全设计与省 token 设计会在纠偏执行层重新拆成 mode 面板、usage dashboard 与保守建议。
+  - 结构宿主修复稳态纠偏执行即使已经有 correction card、correction verdict order、archive restitution、re-entry threshold 与 reopen responsibility drill，仍最容易死于假修正、假恢复顺序、伪复证与假责任保留；否则源码先进性会在纠偏执行层重新退回 pointer、telemetry、archive prose 与作者说明。
+- 新增目录责任：
+  - `navigation/76` 负责宿主修复稳态纠偏失真入口。
+  - `casebooks/49-51` 负责三类宿主修复稳态纠偏执行的假修正卡、假恢复顺序与假责任演练反例。
+- 当前新的写作约束：
+  - 不再只写“steady-state correction execution 该怎样运行”，还要写“哪些看起来已经 restored 的工件其实正在重新制造第二真相、免费继续与假责任保留”。
+  - 每次继续深化都要回答“当前 steady-state correction distortion 暴露的是单一真相正在失守，还是只是在被一套更制度化的纠偏执行叙事替位”。
 - 蓝皮书已经从“宿主修复稳态纠偏协议 / repair steady-state correction protocol”继续推进到“宿主修复稳态纠偏执行 / repair steady-state correction execution”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏协议如果要真正可执行，必须继续把 `steady_correction_object`、`truth_continuity_recovery`、`stable_prefix_recustody`、`continuation_requalification` 与 `threshold_reinstatement` 压成 correction card、固定 recovery verdict order 与 re-entry / reopen drill，而不是继续停在 steady note 与 protocol 字段层；否则 Prompt 魔力会重新退回“更正式的纠偏说明”。
