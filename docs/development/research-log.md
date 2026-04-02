@@ -1116,6 +1116,7 @@
 - 再往下压后，配置与受管环境的主权结构也足够清晰：`SETTING_SOURCES` 定义了 later-overrides-earlier 的基础顺序，但 `managedEnv.ts` 又把 trust 前后 env 应用拆成两层；`managedEnvConstants.ts` 把 provider-routing 与 auth 主链变量单独列成 host-managed 风险面；`permissionsLoader.ts`、`hooksConfigSnapshot.ts` 与 `sandbox-adapter.ts` 则说明 managed-only 不只是只读，而是可以把 permission、hooks、sandbox 域与读路径这些整类安全策略重新收口。因此 `security/08` 可以把“谁能改配置”升级为“谁拥有运行时主权”。 
 - 把外部入口进一步压成风险矩阵后，可以更明确地区分：MCP 的主风险是上下文与工具面扩张，WebFetch 的主风险是读写语义混淆，hooks 的主风险是隐形执行点与主权冲突，gateway 的主风险则是身份/路由漂移与“兼容但不等价”的语义错觉。这样 `security/09` 不再只是重复“外部能力要收口”，而是把风险分成读取、写入、执行、身份与上下文污染五个正交维度。 
 - 再往产品层推进后，可以更稳地得出一个判断：系统其实已经拥有不少“安全状态面零件”，例如 `permissionExplainer.ts`、`createPermissionRequestMessage()`、`status.tsx` 对 setting sources 的呈现、`ManagedSettingsSecurityDialog`、`getBridgeDisabledReason()` 与 auto-mode gate notification；问题不在于完全没有解释层，而在于这些解释仍然分散，尚未汇成一张统一安全仪表盘。因此 `security/10` 的重点不是再描述机制，而是指出“从结构化安全到可解释安全”之间还差哪一步产品化。 
+- 继续把安全专题收束到平台构建者层后，可以更稳定地提炼出一组可迁移法则：来源先于值、mode 即安全语义、真正危险的是绕过仲裁层、外部能力要按攻击面建模、兼容不等于 entitlement 等价、解释层必须产品化、以及 public build 边界必须与代码边界同时治理。这样 `security/11` 不再只是总结，而是把 Claude Code 的安全性压缩成可被其他 Agent 平台直接借鉴的一组设计原则。 
 
 ## 下一步待办
 
