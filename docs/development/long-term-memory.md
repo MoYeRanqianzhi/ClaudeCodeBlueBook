@@ -207,6 +207,10 @@
   - 如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀
   - 如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件
   - 如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file
+  - 深方法导航：共享前缀、合同优先与依赖图诚实性
+  - 共享前缀快照策略模板：何时保存、何时复用、何时suppress
+  - Contract-First审读清单：如何系统读懂Agent Runtime的合同、权威面与热点文件
+  - Dependency-Honesty Review Checklist：如何评审leaf module、anti-cycle seam与single-source file
 
 ## 已确认事实
 
@@ -261,6 +265,11 @@
 - contract-first 阅读法应继续细化为“先 schema/type union，再 registry，再 authoritative surface，再 adapter subset，最后热点 kernel”，避免把声明存在、当前注册和适配器子集混成一层真相
 - 源码质量深线还应继续升级为“显式失败 + 反竞争条件 + chokepoint + leaf module”，不要退回“大文件很多/代码很复杂”的空泛评价
 - 依赖图诚实性应继续稳定成：允许适度不 DRY，以保住 anti-cycle seam、single-source file、风险命名与 import 边界注释，而不是把模块化退回成“抽得更统一”
+- 当 `guides/18-20` 稳定后，应及时补导航层和模板层，而不是继续只补抽象章节；否则深方法很快又会沉回“知道结论但不会迁移”
+- 深方法模板层当前应稳定成三类：共享前缀策略模板、contract-first 审读清单、dependency-honesty review checklist
+- prompt 深线下一层可继续稳定成 `Prompt Constitution`：system prompt 是一份受 section 宪法、危险 cache-break 声明、角色优先级链和合法遗忘策略共同治理的制度体，而不是单段文案
+- 安全与省 token 深线下一层可继续稳定成“治理顺序 + 失败语义分型 + 可撤销自动化 + 稳定字节资产”：系统真正优化的是把检查放在正确顺序、在无决策增益处停止花 token、并对不同资产采用不同 fail-open/fail-closed
+- 源码先进性下一层可继续稳定成“构建系统也是架构工具”：external stubs、portable shadow entry、transport shell、薄 registry 与 zombification 防治共同塑造发布面、入口安全与演化秩序
 - API atlas 还应继续补目录级能力地图，避免“字段齐了，但能力地形仍然不可检索”
 - 宿主 API 还应继续补失败语义、取消请求、orphan response 与 transcript repair，不要只写 happy path
 - 预算器深线还应继续补 context usage、systemPromptSections、attachmentsByType 与 pending_action 的联合调优方法

@@ -85,6 +85,44 @@
 - `claude-code-source-code/src/constants/systemPromptSections.ts:27-38`
 - `claude-code-source-code/src/utils/fingerprint.ts:40-63`
 
+补充模板层判断：
+
+- 在 `guides/18-20` 已稳定后，下一步最值钱的不是继续加同层 guide，而是补 `navigation/07` 和三张模板：shared-prefix snapshot policy、contract-first 审读清单、dependency-honesty review checklist。否则读者虽然知道方法存在，但仍缺少“如何执行 / 如何评审 / 如何迁移”的中间层。
+- 这三张模板共同服务同一个第一性原理：Claude Code 的高级感不在某条单独机制，而在“先固定工作真相，再限制脑补，再限制结构撒谎”。
+
+### A00b. Prompt Constitution、治理顺序与构建系统高级关系
+
+- prompt 下一层应继续按 `Prompt Constitution` 理解：`systemPromptSections`、`SYSTEM_PROMPT_DYNAMIC_BOUNDARY`、`buildEffectiveSystemPrompt()` 共同说明 prompt 不是一段话，而是一份受 section 宪法、角色优先级链与危险 cache-break 声明治理的制度体。
+- prompt 的“合法遗忘”也应被视作正式设计：compact prompt、session memory compact、conversation recovery 都在回答“删掉什么后系统仍能继续工作”，说明 prompt 魔力同样来自删除策略和恢复补边，而不只是注入更多文本。
+- 安全与省 token 下一层应继续按“治理顺序 + 失败语义分型 + 可撤销自动化”理解：危险 allow rule 会在 classifier 前被剔除，不同资产采用不同 fail-open/fail-closed，auto mode 在 denial limit 或 transcript too long 时会退回人工或直接终止，说明系统真正优化的是有决策增益的检查，而不是检查越多越安全。
+- “稳定字节”应被视为安全和成本共享的制度资产：system prompt section 缓存、sticky beta、tool-result replacement replay、prompt cache break diff 共同说明治理字节本身必须可追踪、可解释、可重放。
+- 源码先进性下一层应继续按“构建系统也是架构工具”理解：external stubs、portable shadow entry、安全导入的 lightweight impl、transport shell 与薄 registry 都在主动塑形模块图和发布面，而不是把构建仅当作打包尾巴。
+- 高级工程还应继续按“zombification 治理”理解：against fresh state merge、stale epoch 丢弃、恢复路径先设计再简化平时写法，说明 Claude Code 在治理的不是单个 race，而是跨 await 对象命运。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:105-560`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:17-43`
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-104`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:226-297`
+- `claude-code-source-code/src/services/compact/prompt.ts:12-206`
+- `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-397`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:235-1033`
+- `claude-code-source-code/src/utils/permissions/filesystem.ts:1252-1302`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:433-458`
+- `claude-code-source-code/src/services/policyLimits/index.ts:504-520`
+- `claude-code-source-code/src/services/api/claude.ts:1405-1460`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:28-520`
+- `claude-code-source-code/src/moreright/useMoreRight.tsx:1-25`
+- `claude-code-source-code/src/state/AppState.tsx:12-23`
+- `claude-code-source-code/src/utils/listSessionsImpl.ts:1-27`
+- `claude-code-source-code/src/services/api/emptyUsage.ts:3-16`
+- `claude-code-source-code/src/utils/cleanupRegistry.ts:1-21`
+- `claude-code-source-code/src/utils/swarm/backends/registry.ts:81-114`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A0. 协作接口、有效自由与治理界面
 
 - Sticky Prompt 只从真实用户主语与非 meta 的 `queued_command` 中提炼可见锚点，还会裁掉 system reminder 与无意义前缀，说明它在维护的是“当前到底在回应什么”的协作接口，而不是简单 UI 装饰。

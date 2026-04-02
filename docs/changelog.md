@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《深方法导航：共享前缀、合同优先与依赖图诚实性》《共享前缀快照策略模板：何时保存、何时复用、何时suppress》《Contract-First审读清单：如何系统读懂Agent Runtime的合同、权威面与热点文件》《Dependency-Honesty Review Checklist：如何评审leaf module、anti-cycle seam与single-source file》，并回写主索引、导航专题、使用专题与开发文档，把“共享前缀 / 合同优先 / 依赖图诚实性”进一步下沉成导航层与模板层
 - 新增《如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀》《如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件》《如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file》，并回写《使用指南》、使用专题 README、主索引与开发文档，把“共享前缀网络 / 合同优先阅读 / 依赖图诚实性”正式下沉成高级实践
 - 新增《Protocol真相控制面：为什么UI历史必须在API边界前被重新编译》《资源定价运行时：permission、visibility、externalization与continuation的一体化预算》《未来维护者消费者控制面：风险命名、制度注释、seam与状态机如何共同服务演化》，并回写架构专题 README 与主索引，把高级 guide 再推回到底盘层
 - 新增《如何把UI真相翻译成Protocol真相：transcript重写、边界补写与恢复不变量》《如何用资源定价设计Agent Runtime：mode、visibility、externalization与continuation》《如何把未来维护者当正式消费者：风险命名、制度注释、seam与状态机》，并回写《使用指南》、使用专题 README 与主索引，把“协作语法 / 资源定价 / 未来维护者消费者”进一步下沉成高级实践方法

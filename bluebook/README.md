@@ -68,6 +68,7 @@
 - 想把 prompt 理解成主线程生产、旁路循环复用的共享前缀网络，再读 [guides/18-如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀](guides/18-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%BD%93%E6%88%90%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E8%B5%84%E4%BA%A7%E7%BD%91%E7%BB%9C%EF%BC%9A%E4%BE%A7%E9%97%AE%E9%A2%98%E3%80%81suggestion%E3%80%81memory%E4%B8%8Esummary%E5%85%B1%E7%94%A8%E4%B8%BB%E7%BA%BF%E7%A8%8B%E5%89%8D%E7%BC%80.md)
 - 想研究 Claude Code 源码时先锁定合同真相，再回到热点实现，再读 [guides/19-如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件](guides/19-%E5%A6%82%E4%BD%95%E7%94%A8Contract-First%E6%96%B9%E6%B3%95%E9%98%85%E8%AF%BB%E5%92%8C%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9A%E5%85%88%E6%89%BE%E5%90%88%E5%90%8C%EF%BC%8C%E5%86%8D%E7%9C%8B%E7%83%AD%E7%82%B9%E6%96%87%E4%BB%B6.md)
 - 想把依赖图诚实性写成长期维护制度，而不是抽象洁癖，再读 [guides/20-如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file](guides/20-%E5%A6%82%E4%BD%95%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9C%B0%E7%BB%B4%E6%8C%81%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%9A%E5%AE%9E%E6%80%A7%EF%BC%9Aleaf%20module%E3%80%81anti-cycle%20seam%E4%B8%8Esingle-source%20file.md)
+- 想把这三条深方法进一步落成团队模板和 review checklist，再读 [navigation/07-深方法导航：共享前缀、合同优先与依赖图诚实性](navigation/07-%E6%B7%B1%E6%96%B9%E6%B3%95%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E3%80%81%E5%90%88%E5%90%8C%E4%BC%98%E5%85%88%E4%B8%8E%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%9A%E5%AE%9E%E6%80%A7.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -210,6 +211,7 @@
 - 先读 [navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理](navigation/03-%E6%B7%B1%E5%BA%A6%E4%B8%93%E9%A2%98%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E9%A2%84%E7%AE%97%E3%80%81%E5%AF%B9%E8%B1%A1%E3%80%81%E5%BA%95%E7%9B%98%E4%B8%8E%E6%B2%BB%E7%90%86.md)
 - 想直接看高阶设计母线，再读 [navigation/05-设计母线导航：工作语法、反扩张与可演化内核](navigation/05-%E8%AE%BE%E8%AE%A1%E6%AF%8D%E7%BA%BF%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%B7%A5%E4%BD%9C%E8%AF%AD%E6%B3%95%E3%80%81%E5%8F%8D%E6%89%A9%E5%BC%A0%E4%B8%8E%E5%8F%AF%E6%BC%94%E5%8C%96%E5%86%85%E6%A0%B8.md)
 - 想直接看最新终局判断，再读 [navigation/06-终局判断导航：协作语法、资源定价与未来维护者消费者](navigation/06-%E7%BB%88%E5%B1%80%E5%88%A4%E6%96%AD%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%8D%8F%E4%BD%9C%E8%AF%AD%E6%B3%95%E3%80%81%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BB%B7%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%BB%B4%E6%8A%A4%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85.md)
+- 想直接看“共享前缀 / 合同优先 / 依赖图诚实性”怎样变成模板层，再读 [navigation/07-深方法导航：共享前缀、合同优先与依赖图诚实性](navigation/07-%E6%B7%B1%E6%96%B9%E6%B3%95%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E3%80%81%E5%90%88%E5%90%8C%E4%BC%98%E5%85%88%E4%B8%8E%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%9A%E5%AE%9E%E6%80%A7.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写

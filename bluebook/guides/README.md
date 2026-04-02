@@ -24,6 +24,9 @@
 18. [18-如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀](18-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%BD%93%E6%88%90%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E8%B5%84%E4%BA%A7%E7%BD%91%E7%BB%9C%EF%BC%9A%E4%BE%A7%E9%97%AE%E9%A2%98%E3%80%81suggestion%E3%80%81memory%E4%B8%8Esummary%E5%85%B1%E7%94%A8%E4%B8%BB%E7%BA%BF%E7%A8%8B%E5%89%8D%E7%BC%80.md)
 19. [19-如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件](19-%E5%A6%82%E4%BD%95%E7%94%A8Contract-First%E6%96%B9%E6%B3%95%E9%98%85%E8%AF%BB%E5%92%8C%E8%AE%BE%E8%AE%A1Agent%20Runtime%EF%BC%9A%E5%85%88%E6%89%BE%E5%90%88%E5%90%8C%EF%BC%8C%E5%86%8D%E7%9C%8B%E7%83%AD%E7%82%B9%E6%96%87%E4%BB%B6.md)
 20. [20-如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file](20-%E5%A6%82%E4%BD%95%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9C%B0%E7%BB%B4%E6%8C%81%E4%BE%9D%E8%B5%96%E5%9B%BE%E8%AF%9A%E5%AE%9E%E6%80%A7%EF%BC%9Aleaf%20module%E3%80%81anti-cycle%20seam%E4%B8%8Esingle-source%20file.md)
+21. [21-共享前缀快照策略模板：何时保存、何时复用、何时suppress](21-%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E5%BF%AB%E7%85%A7%E7%AD%96%E7%95%A5%E6%A8%A1%E6%9D%BF%EF%BC%9A%E4%BD%95%E6%97%B6%E4%BF%9D%E5%AD%98%E3%80%81%E4%BD%95%E6%97%B6%E5%A4%8D%E7%94%A8%E3%80%81%E4%BD%95%E6%97%B6suppress.md)
+22. [22-Contract-First审读清单：如何系统读懂Agent Runtime的合同、权威面与热点文件](22-Contract-First%E5%AE%A1%E8%AF%BB%E6%B8%85%E5%8D%95%EF%BC%9A%E5%A6%82%E4%BD%95%E7%B3%BB%E7%BB%9F%E8%AF%BB%E6%87%82Agent%20Runtime%E7%9A%84%E5%90%88%E5%90%8C%E3%80%81%E6%9D%83%E5%A8%81%E9%9D%A2%E4%B8%8E%E7%83%AD%E7%82%B9%E6%96%87%E4%BB%B6.md)
+23. [23-Dependency-Honesty Review Checklist：如何评审leaf module、anti-cycle seam与single-source file](23-Dependency-Honesty%20Review%20Checklist%EF%BC%9A%E5%A6%82%E4%BD%95%E8%AF%84%E5%AE%A1leaf%20module%E3%80%81anti-cycle%20seam%E4%B8%8Esingle-source%20file.md)
 
 ## 按使用目标阅读
 
@@ -49,6 +52,9 @@
 - 想把 prompt 进一步理解成共享前缀资产网络，而不是很多相似小调用：`09 -> 12 -> 18 -> ../architecture/42 -> ../philosophy/30`
 - 想研究 Claude Code 源码时先找合同，再看热点文件：`11 -> 14 -> 19 -> ../architecture/38 -> ../api/34`
 - 想工程化维持依赖图诚实性，而不是把模块化做成抽象洁癖：`14 -> 17 -> 20 -> ../architecture/58 -> ../philosophy/45`
+- 想把共享前缀方法真正写成团队可复用模板，而不是只停在理解层：`18 -> 21 -> ../navigation/07`
+- 想把 contract-first 阅读法落成系统审读清单，而不是继续靠经验看大文件：`19 -> 22 -> ../navigation/07`
+- 想把依赖图诚实性落成结构评审清单，而不是继续停在抽象判断：`20 -> 23 -> ../navigation/07`
 
 ## 与其他目录的边界
 
