@@ -40,6 +40,9 @@
 22. [22-编译请求真相反例：多重真相生产者、协议真相泄漏与合法遗忘失忆](22-%E7%BC%96%E8%AF%91%E8%AF%B7%E6%B1%82%E7%9C%9F%E7%9B%B8%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%A4%9A%E9%87%8D%E7%9C%9F%E7%9B%B8%E7%94%9F%E4%BA%A7%E8%80%85%E3%80%81%E5%8D%8F%E8%AE%AE%E7%9C%9F%E7%9B%B8%E6%B3%84%E6%BC%8F%E4%B8%8E%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E5%A4%B1%E5%BF%86.md)
 23. [23-治理控制面反例：mode崇拜、仪表盘崇拜与默认继续幻觉](23-%E6%B2%BB%E7%90%86%E6%8E%A7%E5%88%B6%E9%9D%A2%E5%8F%8D%E4%BE%8B%EF%BC%9Amode%E5%B4%87%E6%8B%9C%E3%80%81%E4%BB%AA%E8%A1%A8%E7%9B%98%E5%B4%87%E6%8B%9C%E4%B8%8E%E9%BB%98%E8%AE%A4%E7%BB%A7%E7%BB%AD%E5%B9%BB%E8%A7%89.md)
 24. [24-内核对象边界反例：多点权威、恢复资产篡位与anti-zombie口头化](24-%E5%86%85%E6%A0%B8%E5%AF%B9%E8%B1%A1%E8%BE%B9%E7%95%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%A4%9A%E7%82%B9%E6%9D%83%E5%A8%81%E3%80%81%E6%81%A2%E5%A4%8D%E8%B5%84%E4%BA%A7%E7%AF%A1%E4%BD%8D%E4%B8%8Eanti-zombie%E5%8F%A3%E5%A4%B4%E5%8C%96.md)
+25. [25-Prompt宿主消费反例：字符串崇拜、缓存黑箱与继续资格误判](25-Prompt%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B4%87%E6%8B%9C%E3%80%81%E7%BC%93%E5%AD%98%E9%BB%91%E7%AE%B1%E4%B8%8E%E7%BB%A7%E7%BB%AD%E8%B5%84%E6%A0%BC%E8%AF%AF%E5%88%A4.md)
+26. [26-治理宿主消费反例：mode投影崇拜、pending action降格与rollback object文件化](26-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E5%8F%8D%E4%BE%8B%EF%BC%9Amode%E6%8A%95%E5%BD%B1%E5%B4%87%E6%8B%9C%E3%80%81pending%20action%E9%99%8D%E6%A0%BC%E4%B8%8Erollback%20object%E6%96%87%E4%BB%B6%E5%8C%96.md)
+27. [27-故障模型宿主消费反例：权威状态猜测、恢复指针神化与成功率崇拜](27-%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E5%8F%8D%E4%BE%8B%EF%BC%9A%E6%9D%83%E5%A8%81%E7%8A%B6%E6%80%81%E7%8C%9C%E6%B5%8B%E3%80%81%E6%81%A2%E5%A4%8D%E6%8C%87%E9%92%88%E7%A5%9E%E5%8C%96%E4%B8%8E%E6%88%90%E5%8A%9F%E7%8E%87%E5%B4%87%E6%8B%9C.md)
 
 ## 按目标阅读
 
@@ -59,6 +62,7 @@
 - 想把这些实施级失真继续反压成统一审读模板，而不是继续靠经验识别：`../navigation/25 -> ../guides/36 -> ../guides/37 -> ../guides/38`
 - 想直接看这些最小共享工件在真实执行里最常怎样重新退回局部真相：`../navigation/28 -> 19 -> 20 -> 21`
 - 想继续看机制对象明明已经进入验证层，为什么仍会重新退回 prompt 崇拜、仪表盘崇拜与目录审美：`../navigation/40 -> 22 -> 23 -> 24`
+- 想继续看这些宿主消费面明明已经存在，为什么仍会重新退回字符串、仪表盘、成功率与作者说明：`../navigation/44 -> 25 -> 26 -> 27`
 
 ## 与其他目录的边界
 
@@ -73,5 +77,7 @@
 - 再往下一层，应由 `../navigation/28 -> ../casebooks/19-21` 继续回答“shared artifact 明明已经存在时，四类角色最常怎样各自重新说谎”。
 - `casebooks/22-24` 继续回答“机制对象明明已经进入验证层，为什么仍会重新退回多重真相生产、mode/仪表盘崇拜、多点权威与 anti-zombie 口头化等形式主义替身”。
 - 再往下一层，应由 `../navigation/40 -> ../casebooks/22-24` 继续回答“这些机制对象最常怎样死于看起来已经落地的假验证与假先进性”。
+- `casebooks/25-27` 继续回答“宿主消费面明明已经存在，为什么仍会重新退回 prompt 字符串、治理投影、恢复成功率与作者说明等假信号”。
+- 再往下一层，应由 `../navigation/44 -> ../casebooks/25-27` 继续回答“这些 host-consumable support surface 最常怎样死于 consumer misuse 与第二真相重建”。
 - 再往下一层，应由 `../navigation/29 -> ../guides/39-41` 继续回答“怎样把这些 drift 原型编译成 validator / linter / reject rule”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。

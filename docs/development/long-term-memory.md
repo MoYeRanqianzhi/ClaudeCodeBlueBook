@@ -9,6 +9,50 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主迁移工单 / migration workorder”继续推进到“宿主迁移演练 / handoff-gray-rollback playbook”层。
+- 新增结论：
+  - Prompt 宿主迁移如果要真正稳定，必须继续围绕 `compiled request truth` 交接包、protocol rewrite 灰度记录、cache explainability 观测与 continue qualification 回退演练运行，而不是只停在迁移工单。
+  - 治理宿主迁移如果要真正稳定，必须继续围绕 authority source、typed decision、decision window、continuation gate 与 rollback object 的交接包、灰度记录与回退演练运行，而不是只停在控制面迁移顺序。
+  - 故障模型宿主迁移如果要真正稳定，必须继续围绕 authority state、transition legality、anti-zombie projection、recovery boundary 与 writeback 主路径的交接包、灰度记录与回退演练运行，而不是只停在恢复迁移顺序。
+- 新增目录责任：
+  - `navigation/47` 负责宿主迁移演练入口。
+  - `playbooks/32-34` 负责三类宿主迁移的交接包、灰度记录与回退演练。
+- 当前新的写作约束：
+  - 不再只写“应该怎样迁移”，还要写“交接至少留下什么、灰度阶段先看什么、何时必须立即回退”。
+  - 每次继续深化都要回答“当前演练记录保护的是同一机制对象，还是又退回截图、摘要、成功率与作者说明”。
+- 蓝皮书已经从“宿主接入审读 / runbook”继续推进到“宿主迁移工单 / migration workorder”层。
+- 新增结论：
+  - Prompt 宿主接入如果要真正可迁移，必须继续围绕输入面冻结、协议重写、cache explainability、lawful forgetting 与 continue qualification 写成固定实施顺序，而不是继续停在排查 checklist。
+  - 治理宿主接入如果要真正可迁移，必须继续围绕 authority source、typed decision、decision window、continuation gate 与 rollback object 写成固定实施顺序，而不是继续停在 mode 面板与审批流。
+  - 故障模型宿主接入如果要真正可迁移，必须继续围绕 authority state、writeback 主路径、anti-zombie 结果面与 recovery boundary 写成固定实施顺序，而不是继续停在恢复演练与成功率复盘。
+- 新增目录责任：
+  - `navigation/46` 负责宿主迁移工单入口。
+  - `guides/54-56` 负责三类宿主接入的迁移工单、交接包与灰度发布顺序。
+- 当前新的写作约束：
+  - 不再只写“怎样审读和拒收”，还要写“旧宿主应先拆哪一层假设、交接至少留下哪些对象、灰度时先开放哪一种真相面”。
+  - 每次继续深化都要回答“当前迁移方案保护的是同一机制对象，还是又把对象打散成界面步骤与人工经验”。
+- 蓝皮书已经从“支持面反例 / consumer misuse”继续推进到“宿主接入审读 / runbook”层。
+- 新增结论：
+  - Prompt 宿主接入如果要稳定，必须继续围绕输入面、section breakdown、cache break explainability 与 continue qualification 做定期审读，而不是等黑箱行为出现后再猜。
+  - 治理宿主接入如果要稳定，必须继续围绕 authority source、decision window、pending action、continuation gate 与 rollback object 做定期审读，而不是等 mode 漂移或 rollback 混乱后再修。
+  - 故障模型宿主接入如果要稳定，必须继续围绕 authority state、recovery boundary 与 anti-zombie 结果面做定期审读，而不是等恢复成功率异常后再补字段。
+- 新增目录责任：
+  - `navigation/45` 负责宿主接入审读入口。
+  - `playbooks/29-31` 负责三类 support-surface misuse 的排查、演练、拒收与防再发动作。
+- 当前新的写作约束：
+  - 不再只写“哪里接错了”，还要写“排查时先看什么、演练时怎么测、拒收时凭什么拒”。
+  - 每次继续深化都要回答“当前 runbook 是否仍围绕同一机制对象，而不是退回局部症状处置”。
+- 蓝皮书已经从“机制支持面 / host-consumable API”继续推进到“支持面反例 / consumer misuse”层。
+- 新增结论：
+  - Prompt 宿主消费最危险的失败方式不是没接 prompt，而是把编译请求真相重新消费成 `systemPrompt` 字符串、cache 黑箱与 last-message heuristic。
+  - 治理宿主消费最危险的失败方式不是没接控制请求，而是把统一定价治理重新消费成 mode 投影、pending action 文案与文件级回退。
+  - 故障模型宿主消费最危险的失败方式不是没接恢复接口，而是把 authority state、recovery boundary 与 anti-zombie 结果面重新消费成 spinner、pointer 与成功率。
+- 新增目录责任：
+  - `navigation/44` 负责支持面误用入口。
+  - `casebooks/25-27` 负责三类 host-consumable support surface 的 consumer misuse 反例。
+- 当前新的写作约束：
+  - 不再只写“宿主该消费什么”，还要写“宿主最常把什么假信号误当正式对象”。
+  - 每次继续深化都要回答“当前消费者是否又重新制造了一套第二真相”。
 - 蓝皮书已经从“机制实现 / builder-facing 手册”继续推进到“机制支持面 / host-consumable API”层。
 - 新增结论：
   - 编译请求真相如果要被宿主稳定消费，必须被翻译成 Prompt 输入面、section breakdown、message breakdown、continue qualification 等正式投影，而不是内部编译 trace。

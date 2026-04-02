@@ -1,0 +1,103 @@
+# 宿主接入审读导航：Prompt、治理与故障模型支持面如何进入持续排查与复盘
+
+这一篇不再回答“这些宿主消费面最常怎样被误用”，而是回答：
+
+- 当 `compiled request truth`、`governance control plane object` 与故障模型证据已经被写成 host-consumable support surfaces，团队该怎样把它们继续压成宿主接入审读手册、复盘动作与防再发顺序。
+
+它主要回答五个问题：
+
+1. 为什么支持面反例层之后，蓝皮书还必须继续长出一层“宿主接入审读层”。
+2. 为什么 Prompt 线如果不继续落成输入面、section breakdown、cache break explainability 与 continue qualification 的排查顺序，就会重新退回“看起来接上了”。
+3. 为什么治理线如果不继续落成 authority source、decision window、pending action、continuation gate 与 rollback object 的审读顺序，就会重新退回 mode 面板与弹窗流程。
+4. 为什么结构线如果不继续落成 authority state、generation evidence、recovery boundary 与 anti-zombie projection 的审读顺序，就会重新退回恢复成功率与作者说明。
+5. 怎样用苏格拉底式追问避免把这层写成“又一组运维 checklist”。
+
+## 1. Prompt 宿主接入审读线
+
+如果问题是：
+
+- 怎样判断宿主是否真的正确消费了 Prompt 编译链。
+- 怎样把字符串崇拜、缓存黑箱与 continue qualification 误判压成正式审读顺序。
+
+建议顺序：
+
+1. `../playbooks/29`
+2. `../casebooks/25`
+3. `../api/51`
+
+这条线的核心不是：
+
+- 再解释一次 Prompt 支持面
+
+而是：
+
+- 把 Prompt 宿主接入错误压成可执行的排查、演练与拒收顺序
+
+## 2. 治理宿主接入审读线
+
+如果问题是：
+
+- 怎样判断宿主是否真的围绕 authority source、decision window、pending action 与 rollback object 工作。
+- 怎样把 mode 崇拜、pending action 降格与文件级回退压成正式审读顺序。
+
+建议顺序：
+
+1. `../playbooks/30`
+2. `../casebooks/26`
+3. `../api/52`
+
+这条线的核心不是：
+
+- 再讲一遍统一定价治理
+
+而是：
+
+- 把治理宿主接入错误压成可执行的排查、演练与拒收顺序
+
+## 3. 故障模型宿主接入审读线
+
+如果问题是：
+
+- 怎样判断宿主是否真的消费了 authority state、recovery boundary 与 anti-zombie 结果面。
+- 怎样把权威状态猜测、pointer 神化与成功率崇拜压成正式审读顺序。
+
+建议顺序：
+
+1. `../playbooks/31`
+2. `../casebooks/27`
+3. `../api/53`
+
+这条线的核心不是：
+
+- 再讲一遍故障模型编码
+
+而是：
+
+- 把结构宿主接入错误压成可执行的排查、演练与拒收顺序
+
+## 4. 为什么这层更适合落在 playbooks
+
+因为这一层最关键的问题已经不是：
+
+- 字段该怎么设计
+- 反例为什么坏
+
+而是：
+
+1. 团队排查时先看哪一层、哪一个对象、哪一种投影。
+2. 哪些症状足以直接拒收宿主接入。
+3. 哪些演练最能暴露宿主还在消费假信号。
+4. drift 发生后怎样记录、修复与防再发。
+
+这些都更接近：
+
+- 运营层和宿主接入复盘层
+
+## 5. 苏格拉底式自检
+
+在你准备宣布“宿主接入已经稳定”前，先问自己：
+
+1. 我是否已经知道宿主接错时先查哪一个对象、哪一个窗口、哪一个边界。
+2. 我是否已经知道哪些坏接法应直接拒收，而不是继续修补。
+3. later 漂移发生时，CI、交接与宿主是否还能围绕同一审读顺序复盘。
+4. 我是在写一份运维清单，还是在保护同一机制对象的长期宿主消费。
