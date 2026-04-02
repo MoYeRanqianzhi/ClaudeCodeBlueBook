@@ -139,6 +139,7 @@
 - 想直接看 surface hider、projection owner、trace writer 与 explanation closer 四层到底分别能做什么、不能做什么：看 `appendix/43`
 - 想直接看为什么 hidden、suppressed、cleared 与 resolved 必须严格区分，不能继续共用一句“没事了”：看 `60`
 - 想直接看 hidden、suppressed、cleared、resolved 四个词到底各自代表什么、允许说什么、禁止说什么：看 `appendix/44`
+- 想直接看为什么通知、摘要、footer 与账本不能各自发明恢复语言，以及谁才有资格给恢复状态命名：看 `61`
 
 ## 和其他目录的关系
 
@@ -232,4 +233,5 @@
 - 想把 `59` 的长文压成一张分层矩阵，快速看出 surface hider、projection owner、trace writer 与 explanation closer 各自的权限边界：`59` -> `appendix/43`
 - 想看为什么恢复控制面还必须继续把 hidden、suppressed、cleared、resolved 做成不同词法，而不能把不同责任层状态压成同一句“已恢复”：`59` -> `60`
 - 想把 `60` 的长文压成一张词法矩阵，快速看出 hidden、suppressed、cleared、resolved 的定义、禁止误说与责任层：`60` -> `appendix/44`
+- 想看为什么有了词法还不够，以及 why 不同界面、通知、footer 和摘要仍必须服从同一套命名主权与表达 ceiling：`60` -> `61`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
