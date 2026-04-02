@@ -75,6 +75,7 @@
 53. [52-安全恢复文案禁令：为什么系统必须禁止过满绿色词，并为半恢复状态提供受约束语言](52-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E6%96%87%E6%A1%88%E7%A6%81%E4%BB%A4%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E7%B3%BB%E7%BB%9F%E5%BF%85%E9%A1%BB%E7%A6%81%E6%AD%A2%E8%BF%87%E6%BB%A1%E7%BB%BF%E8%89%B2%E8%AF%8D%EF%BC%8C%E5%B9%B6%E4%B8%BA%E5%8D%8A%E6%81%A2%E5%A4%8D%E7%8A%B6%E6%80%81%E6%8F%90%E4%BE%9B%E5%8F%97%E7%BA%A6%E6%9D%9F%E8%AF%AD%E8%A8%80.md)
 54. [53-安全恢复跳转纪律：为什么半恢复状态必须绑定唯一默认修复路径，而不能让用户在多个命令之间盲选](53-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%B7%B3%E8%BD%AC%E7%BA%AA%E5%BE%8B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8D%8A%E6%81%A2%E5%A4%8D%E7%8A%B6%E6%80%81%E5%BF%85%E9%A1%BB%E7%BB%91%E5%AE%9A%E5%94%AF%E4%B8%80%E9%BB%98%E8%AE%A4%E4%BF%AE%E5%A4%8D%E8%B7%AF%E5%BE%84%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E8%AE%A9%E7%94%A8%E6%88%B7%E5%9C%A8%E5%A4%9A%E4%B8%AA%E5%91%BD%E4%BB%A4%E4%B9%8B%E9%97%B4%E7%9B%B2%E9%80%89.md)
 55. [54-安全恢复验证闭环：为什么用户执行修复命令不等于状态已恢复，必须由对应回读与signer关环](54-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E9%AA%8C%E8%AF%81%E9%97%AD%E7%8E%AF%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8%E6%88%B7%E6%89%A7%E8%A1%8C%E4%BF%AE%E5%A4%8D%E5%91%BD%E4%BB%A4%E4%B8%8D%E7%AD%89%E4%BA%8E%E7%8A%B6%E6%80%81%E5%B7%B2%E6%81%A2%E5%A4%8D%EF%BC%8C%E5%BF%85%E9%A1%BB%E7%94%B1%E5%AF%B9%E5%BA%94%E5%9B%9E%E8%AF%BB%E4%B8%8Esigner%E5%85%B3%E7%8E%AF.md)
+56. [55-安全恢复自动验证门槛：哪些闭环可以自动撤警，哪些必须停留人工确认](55-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%87%AA%E5%8A%A8%E9%AA%8C%E8%AF%81%E9%97%A8%E6%A7%9B%EF%BC%9A%E5%93%AA%E4%BA%9B%E9%97%AD%E7%8E%AF%E5%8F%AF%E4%BB%A5%E8%87%AA%E5%8A%A8%E6%92%A4%E8%AD%A6%EF%BC%8C%E5%93%AA%E4%BA%9B%E5%BF%85%E9%A1%BB%E5%81%9C%E7%95%99%E4%BA%BA%E5%B7%A5%E7%A1%AE%E8%AE%A4.md)
 
 ## 附录目录
 
@@ -124,6 +125,7 @@
 - 想直接看每种半恢复状态默认该跳去哪、哪些入口只能作为次级路径、哪些并列会制造歧义：看 `appendix/37`
 - 想直接看为什么用户执行了修复命令仍不等于系统已经恢复，以及控制面该等哪类回读和 signer 来真正关环：看 `54`
 - 想直接看每条修复路径对应的 verifier、最终 signer 和可清除对象，快速判断有没有“假闭环”：看 `appendix/38`
+- 想直接看为什么有些闭环可以自动撤警而另一些必须停在人类确认态，以及这条门槛到底由什么决定：看 `55`
 
 ## 和其他目录的关系
 
@@ -205,4 +207,5 @@
 - 想把 `53` 的长文压成一张跳转路由矩阵，快速看出每种半恢复状态的 dominant repair path、次级路径和禁止歧义：`53` -> `appendix/37`
 - 想看为什么 dominant repair path 仍然不够，以及 why repair action 只能产生修复意图，真正恢复还必须继续经过 verifier readback、state signer、effect signer 关环：`53` -> `54`
 - 想把 `54` 的长文压成一张恢复闭环矩阵，快速看出不同 repair path 对应的 verifier、最终 signer 和可清除对象：`54` -> `appendix/38`
+- 想看为什么 verifier 和 signer 即使已经存在，也不代表系统就该自动撤警，以及 why 只有在 action/verifier/signer 三权都在系统手里时才配 auto-close：`54` -> `55`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
