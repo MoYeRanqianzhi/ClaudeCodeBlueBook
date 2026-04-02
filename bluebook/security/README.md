@@ -401,4 +401,6 @@
 - 想把 `95` 的长文压成一张重签发矩阵，快速看出不同 artifact 的 revocation trigger、regrant path 与 forbidden shortcut：`95` -> `appendix/79`
 - 想看为什么即使重签发协议已经成立，`needsRefresh`、`pending`、retryable 与 `fresh-session-fallback` 这些中间态仍不能压成同一句“正在恢复”：`95` -> `96`
 - 想把 `96` 的长文压成一张中间态矩阵，快速看出不同 state 的 meaning、allowed promise 与 next action：`96` -> `appendix/80`
+- 想看为什么即使中间态语法已经分清，每一种状态仍只能说到自己的承诺上限，不能把 `pending`、`reconnecting` 或 `needsRefresh` 说成 `active`：`96` -> `97`
+- 想把 `97` 的长文压成一张承诺矩阵，快速看出不同 state 的 lexical ceiling、forbidden stronger claim 与 default route：`97` -> `appendix/81`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
