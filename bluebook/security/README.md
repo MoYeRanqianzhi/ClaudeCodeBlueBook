@@ -111,6 +111,7 @@
 89. [88-安全恢复资格证据门槛：为什么即使signer正确，仍可恢复也必须建立在最小truth-bundle之上](88-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%B5%84%E6%A0%BC%E8%AF%81%E6%8D%AE%E9%97%A8%E6%A7%9B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8D%B3%E4%BD%BFsigner%E6%AD%A3%E7%A1%AE%EF%BC%8C%E4%BB%8D%E5%8F%AF%E6%81%A2%E5%A4%8D%E4%B9%9F%E5%BF%85%E9%A1%BB%E5%BB%BA%E7%AB%8B%E5%9C%A8%E6%9C%80%E5%B0%8Ftruth-bundle%E4%B9%8B%E4%B8%8A.md)
 90. [89-安全恢复资格降级语法：为什么no-candidate、invalid-id、dead-session、fresh-session-fallback与retryable不能压成同一句无法恢复](89-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%B5%84%E6%A0%BC%E9%99%8D%E7%BA%A7%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88no-candidate%E3%80%81invalid-id%E3%80%81dead-session%E3%80%81fresh-session-fallback%E4%B8%8Eretryable%E4%B8%8D%E8%83%BD%E5%8E%8B%E6%88%90%E5%90%8C%E4%B8%80%E5%8F%A5%E6%97%A0%E6%B3%95%E6%81%A2%E5%A4%8D.md)
 91. [90-安全恢复资格清理权限：为什么pointer清理权不是普通清扫动作，而是恢复资格的撤回权](90-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%B5%84%E6%A0%BC%E6%B8%85%E7%90%86%E6%9D%83%E9%99%90%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88pointer%E6%B8%85%E7%90%86%E6%9D%83%E4%B8%8D%E6%98%AF%E6%99%AE%E9%80%9A%E6%B8%85%E6%89%AB%E5%8A%A8%E4%BD%9C%EF%BC%8C%E8%80%8C%E6%98%AF%E6%81%A2%E5%A4%8D%E8%B5%84%E6%A0%BC%E7%9A%84%E6%92%A4%E5%9B%9E%E6%9D%83.md)
+92. [91-安全恢复资产保全义务：为什么pointer、retry-path与resumable-shutdown在资格未撤回前必须被制度性保留](91-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%B5%84%E4%BA%A7%E4%BF%9D%E5%85%A8%E4%B9%89%E5%8A%A1%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88pointer%E3%80%81retry-path%E4%B8%8Eresumable-shutdown%E5%9C%A8%E8%B5%84%E6%A0%BC%E6%9C%AA%E6%92%A4%E5%9B%9E%E5%89%8D%E5%BF%85%E9%A1%BB%E8%A2%AB%E5%88%B6%E5%BA%A6%E6%80%A7%E4%BF%9D%E7%95%99.md)
 85. [84-安全失效边界复活禁令：为什么最危险的不是脏状态，而是已归档旧session被重新认证为当前边界](84-%E5%AE%89%E5%85%A8%E5%A4%B1%E6%95%88%E8%BE%B9%E7%95%8C%E5%A4%8D%E6%B4%BB%E7%A6%81%E4%BB%A4%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%80%E5%8D%B1%E9%99%A9%E7%9A%84%E4%B8%8D%E6%98%AF%E8%84%8F%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E6%98%AF%E5%B7%B2%E5%BD%92%E6%A1%A3%E6%97%A7session%E8%A2%AB%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%81%E4%B8%BA%E5%BD%93%E5%89%8D%E8%BE%B9%E7%95%8C.md)
 
 ## 附录目录
@@ -233,6 +234,8 @@
 - 想直接看不同 resume result 到底代表什么、下一步该做什么、何时该清理什么，以及哪些压平说法绝不能再说：看 `appendix/73`
 - 想直接看为什么即使降级语法已经建立仍然不够，以及恢复 carrier 到底由谁清、何时禁止清、何时必须清：看 `90`
 - 想直接看不同恢复 carrier 到底由谁清理、clear trigger 是什么，以及哪些提前清理绝不能发生：看 `appendix/74`
+- 想直接看为什么即使清理权限已经分清仍然不够，以及在撤回条件未成立前哪些恢复资产反而必须被制度性保留：看 `91`
+- 想直接看不同恢复资产到底由谁保全、何时过期、哪些过早丢失绝不能发生：看 `appendix/75`
 
 ## 和其他目录的关系
 
@@ -386,4 +389,6 @@
 - 想把 `89` 的长文压成一张降级矩阵，快速看出不同 resume result、meaning、next action 与 forbidden flattening：`89` -> `appendix/73`
 - 想看为什么即使恢复结果已经分层，系统仍不能让任何局部层随手清掉 pointer，而必须继续治理 revocation cleanup authority：`89` -> `90`
 - 想把 `90` 的长文压成一张清理权限矩阵，快速看出不同 carrier、clearer、clear trigger 与 forbidden premature clear：`90` -> `appendix/74`
+- 想看为什么即使撤回权已经管住了，系统仍必须继续回答哪些恢复资产在资格未撤回前必须被主动保全：`90` -> `91`
+- 想把 `91` 的长文压成一张保全矩阵，快速看出不同 asset、preservation owner、expiry basis 与 forbidden early loss：`91` -> `appendix/75`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
