@@ -71,6 +71,7 @@
 49. [48-安全完成差异交互路由：为什么卡片、通知、动作可用性与清除条件必须同时联动](48-%E5%AE%89%E5%85%A8%E5%AE%8C%E6%88%90%E5%B7%AE%E5%BC%82%E4%BA%A4%E4%BA%92%E8%B7%AF%E7%94%B1%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8D%A1%E7%89%87%E3%80%81%E9%80%9A%E7%9F%A5%E3%80%81%E5%8A%A8%E4%BD%9C%E5%8F%AF%E7%94%A8%E6%80%A7%E4%B8%8E%E6%B8%85%E9%99%A4%E6%9D%A1%E4%BB%B6%E5%BF%85%E9%A1%BB%E5%90%8C%E6%97%B6%E8%81%94%E5%8A%A8.md)
 50. [49-安全完成差异清除纪律：为什么宿主盲区恢复时不能先删告警，必须等fresh回读撤销旧结论](49-%E5%AE%89%E5%85%A8%E5%AE%8C%E6%88%90%E5%B7%AE%E5%BC%82%E6%B8%85%E9%99%A4%E7%BA%AA%E5%BE%8B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AE%BF%E4%B8%BB%E7%9B%B2%E5%8C%BA%E6%81%A2%E5%A4%8D%E6%97%B6%E4%B8%8D%E8%83%BD%E5%85%88%E5%88%A0%E5%91%8A%E8%AD%A6%EF%BC%8C%E5%BF%85%E9%A1%BB%E7%AD%89fresh%E5%9B%9E%E8%AF%BB%E6%92%A4%E9%94%80%E6%97%A7%E7%BB%93%E8%AE%BA.md)
 51. [50-安全恢复签字层级：哪些证据只够清通知，哪些才够恢复动作、卡片与主结论](50-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E7%AD%BE%E5%AD%97%E5%B1%82%E7%BA%A7%EF%BC%9A%E5%93%AA%E4%BA%9B%E8%AF%81%E6%8D%AE%E5%8F%AA%E5%A4%9F%E6%B8%85%E9%80%9A%E7%9F%A5%EF%BC%8C%E5%93%AA%E4%BA%9B%E6%89%8D%E5%A4%9F%E6%81%A2%E5%A4%8D%E5%8A%A8%E4%BD%9C%E3%80%81%E5%8D%A1%E7%89%87%E4%B8%8E%E4%B8%BB%E7%BB%93%E8%AE%BA.md)
+52. [51-安全恢复中间态：为什么系统必须显式区分write-only、mirror-only、restored-but-not-fresh，而不是统一说已恢复](51-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E4%B8%AD%E9%97%B4%E6%80%81%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E7%B3%BB%E7%BB%9F%E5%BF%85%E9%A1%BB%E6%98%BE%E5%BC%8F%E5%8C%BA%E5%88%86write-only%E3%80%81mirror-only%E3%80%81restored-but-not-fresh%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF%E7%BB%9F%E4%B8%80%E8%AF%B4%E5%B7%B2%E6%81%A2%E5%A4%8D.md)
 
 ## 附录目录
 
@@ -112,6 +113,7 @@
 - 想直接看哪些旧结论能删、凭什么删、删之前哪些动作绝不能先恢复：看 `appendix/33`
 - 想直接看不同恢复证据的强弱层级，区分哪些 signal 只配清通知、哪些才配恢复动作和主结论：看 `50`
 - 想直接看 signer hierarchy 的压缩矩阵，快速判断某个恢复信号有没有越级替高层对象签字：看 `appendix/34`
+- 想直接看系统恢复到一半时该如何命名，避免把 write-only、mirror-only 或 restored-but-not-fresh 压成同一句“已恢复”：看 `51`
 
 ## 和其他目录的关系
 
@@ -185,4 +187,5 @@
 - 想把 `49` 的长文压成一张清除纪律矩阵，快速看出不同旧结论分别允许被什么 fresh 证据清除、又禁止先恢复什么动作：`49` -> `appendix/33`
 - 想看为什么 fresh 证据本身也必须继续分层，以及 why connected、state_restored、session_state_changed(idle)、files_persisted 与账本补齐分别只配恢复不同层级对象：`49` -> `50`
 - 想把 `50` 的长文压成一张 signer 矩阵，快速看出不同 signer 分别能恢复什么、不能恢复什么、最危险的越级误读是什么：`50` -> `appendix/34`
+- 想看为什么 signer hierarchy 仍然不够，以及 why 系统还必须给“半恢复”状态正式命名，否则用户仍会把它们读成 fully recovered：`50` -> `51`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
