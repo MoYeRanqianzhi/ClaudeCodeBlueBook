@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 新增更深一层的哲学收敛：
+  - Prompt 魔力的第一性原理不是文案修辞，而是把主权顺序、协议转写、稳定前缀、合法遗忘与继续资格写成同一条可缓存、可转写、可继续的编译链。
+  - 安全与省 token 的第一性原理不是“更严”和“更省”的平衡，而是治理控制面对动作、能力、上下文与 continuation 的统一定价。
+  - 源码先进性的第一性原理不是目录美学，而是把 authority、dependency seam、zombie 写回、恢复篡位与 worktree / transport 风险提前编码进结构，让未来维护者成为正式消费者。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写 / repair steady-state correction-of-correction rewrite guide”继续推进到“宿主修复稳态纠偏再纠偏改写协议 / repair steady-state correction-of-correction rewrite protocol”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏改写如果要真正被宿主、CI、评审与交接共同消费，不能只保留 rewrite 顺序，还要把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 继续压成共享规则面；否则 Prompt 魔力仍会从编译链退回解释链。
