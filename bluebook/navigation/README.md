@@ -46,6 +46,8 @@
 34. [Artifact Runner落地导航：Queue Policy、Alignment Gate、Drift Review 与 Adoption Runbook 如何进入团队手册](34-Artifact%20Runner%E8%90%BD%E5%9C%B0%E5%AF%BC%E8%88%AA%EF%BC%9AQueue%20Policy%E3%80%81Alignment%20Gate%E3%80%81Drift%20Review%20%E4%B8%8E%20Adoption%20Runbook%20%E5%A6%82%E4%BD%95%E8%BF%9B%E5%85%A5%E5%9B%A2%E9%98%9F%E6%89%8B%E5%86%8C.md)
 35. [源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界](35-%E6%BA%90%E7%A0%81%20Atlas%E5%AF%BC%E8%88%AA%EF%BC%9Aservices%E3%80%81tools%E3%80%81commands%20%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%E5%A6%82%E4%BD%95%E5%9B%9E%E5%88%B0%E6%9D%83%E5%A8%81%E5%85%A5%E5%8F%A3%E4%B8%8E%E6%B6%88%E8%B4%B9%E8%80%85%E8%BE%B9%E7%95%8C.md)
 36. [Agent Runtime构建导航：第一性原理、宿主模板与统一蓝图](36-Agent%20Runtime%E6%9E%84%E5%BB%BA%E5%AF%BC%E8%88%AA%EF%BC%9A%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E3%80%81%E5%AE%BF%E4%B8%BB%E6%A8%A1%E6%9D%BF%E4%B8%8E%E7%BB%9F%E4%B8%80%E8%93%9D%E5%9B%BE.md)
+37. [Agent Runtime深化导航：上下文编译、治理控制面与可演化内核](37-Agent%20Runtime%E6%B7%B1%E5%8C%96%E5%AF%BC%E8%88%AA%EF%BC%9A%E4%B8%8A%E4%B8%8B%E6%96%87%E7%BC%96%E8%AF%91%E3%80%81%E6%B2%BB%E7%90%86%E6%8E%A7%E5%88%B6%E9%9D%A2%E4%B8%8E%E5%8F%AF%E6%BC%94%E5%8C%96%E5%86%85%E6%A0%B8.md)
+38. [机制回灌导航：编译请求真相、治理控制面与可演化内核对象边界](38-%E6%9C%BA%E5%88%B6%E5%9B%9E%E7%81%8C%E5%AF%BC%E8%88%AA%EF%BC%9A%E7%BC%96%E8%AF%91%E8%AF%B7%E6%B1%82%E7%9C%9F%E7%9B%B8%E3%80%81%E6%B2%BB%E7%90%86%E6%8E%A7%E5%88%B6%E9%9D%A2%E4%B8%8E%E5%8F%AF%E6%BC%94%E5%8C%96%E5%86%85%E6%A0%B8%E5%AF%B9%E8%B1%A1%E8%BE%B9%E7%95%8C.md)
 
 和其他目录的关系：
 
@@ -58,3 +60,5 @@
 - `playbooks/`：长期运营、事故复盘、回归与演化演练。
 - `casebooks/`：失败样本库、事故原型与结构反模式样本。
 - `risk/`：风控、治理、账号/设备/策略专题。
+- 再往下一层，应由 `36 -> 37 -> guides/48-50` 继续回答“怎样把 Runtime 构建层继续压成上下文编译、治理控制面与可演化内核三条 builder-facing 方法线”。
+- 再往下一层，应由 `38 -> architecture/79-81 + api/49-50` 继续回答“怎样把这些方法线重新回灌成机制层对象与可消费支持面”。
