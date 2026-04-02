@@ -46,6 +46,9 @@
 - [34-单一真相入口、权威状态面与Chokepoint手册](34-%E5%8D%95%E4%B8%80%E7%9C%9F%E7%9B%B8%E5%85%A5%E5%8F%A3%E3%80%81%E6%9D%83%E5%A8%81%E7%8A%B6%E6%80%81%E9%9D%A2%E4%B8%8EChokepoint%E6%89%8B%E5%86%8C.md)
 - [35-Rollout证据消费API手册：worker_status、external_metadata、Context Usage与回退对象边界](35-Rollout%E8%AF%81%E6%8D%AE%E6%B6%88%E8%B4%B9API%E6%89%8B%E5%86%8C%EF%BC%9Aworker_status%E3%80%81external_metadata%E3%80%81Context%20Usage%E4%B8%8E%E5%9B%9E%E9%80%80%E5%AF%B9%E8%B1%A1%E8%BE%B9%E7%95%8C.md)
 - [36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序](36-Evidence%20Envelope%E5%AD%97%E6%AE%B5%E7%9F%A9%E9%98%B5%EF%BC%9A%E5%AE%BF%E4%B8%BB%E3%80%81CI%E3%80%81%E8%AF%84%E5%AE%A1%E4%B8%8E%E4%BA%A4%E6%8E%A5%E5%9B%9B%E7%B1%BB%E6%B6%88%E8%B4%B9%E8%80%85%E7%9A%84%E5%85%B1%E4%BA%AB%E6%B6%88%E8%B4%B9%E9%A1%BA%E5%BA%8F.md)
+- [37-Prompt Host Artifact Contract：对象卡、CI附件、评审卡与handoff package共享字段协议](37-Prompt%20Host%20Artifact%20Contract%EF%BC%9A%E5%AF%B9%E8%B1%A1%E5%8D%A1%E3%80%81CI%E9%99%84%E4%BB%B6%E3%80%81%E8%AF%84%E5%AE%A1%E5%8D%A1%E4%B8%8Ehandoff%20package%E5%85%B1%E4%BA%AB%E5%AD%97%E6%AE%B5%E5%8D%8F%E8%AE%AE.md)
+- [38-治理 Host Artifact Contract：对象卡、仲裁附件、评审卡与handoff package共享字段协议](38-%E6%B2%BB%E7%90%86%20Host%20Artifact%20Contract%EF%BC%9A%E5%AF%B9%E8%B1%A1%E5%8D%A1%E3%80%81%E4%BB%B2%E8%A3%81%E9%99%84%E4%BB%B6%E3%80%81%E8%AF%84%E5%AE%A1%E5%8D%A1%E4%B8%8Ehandoff%20package%E5%85%B1%E4%BA%AB%E5%AD%97%E6%AE%B5%E5%8D%8F%E8%AE%AE.md)
+- [39-结构 Host Artifact Contract：对象卡、恢复附件、评审卡与handoff package共享字段协议](39-%E7%BB%93%E6%9E%84%20Host%20Artifact%20Contract%EF%BC%9A%E5%AF%B9%E8%B1%A1%E5%8D%A1%E3%80%81%E6%81%A2%E5%A4%8D%E9%99%84%E4%BB%B6%E3%80%81%E8%AF%84%E5%AE%A1%E5%8D%A1%E4%B8%8Ehandoff%20package%E5%85%B1%E4%BA%AB%E5%AD%97%E6%AE%B5%E5%8D%8F%E8%AE%AE.md)
 
 ### 4. Prompt、知识与上下文装配面
 
@@ -76,6 +79,7 @@
 
 - 先读 `24 -> 26 -> 02 -> 13 -> 15 -> 16 -> 20`
 - 补充 `11 -> 17 -> 19 -> 31 -> 32 -> 33 -> 34 -> 35 -> 36`
+- 想把宿主卡、CI附件、评审卡与交接包继续压成统一工件协议：`35 -> 36 -> 37 -> 38 -> 39 -> ../navigation/26`
 - 目标：把 request / response / follow-on event / snapshot / recovery 一起看成闭环
 
 ### 3. 想控制 prompt、知识和记忆
@@ -102,5 +106,6 @@
 - 有类型声明，不等于当前提取树里已有完整实现。
 - 有实现，不等于产品公开承诺稳定支持。
 - 关键状态应先找 authoritative surface，再找调用点散布。
+- 再往下一层，应由 `../navigation/26 -> 37-39` 继续回答“怎样把统一审读对象压成正式共享工件协议”。
 
 主线结论先看 [../05-功能全景与 API 支持](../05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)。

@@ -89,6 +89,11 @@
 - 想直接看 shared Evidence Envelope 一旦被拆散消费会怎样退回半真相，再读 [navigation/22-Evidence Envelope反例导航：宿主猜状态、CI只看阈值、评审只看结论与交接只读历史](navigation/22-Evidence%20Envelope反例导航：宿主猜状态、CI只看阈值、评审只看结论与交接只读历史.md)
 - 想把这套 shared Evidence Envelope 继续真正落成宿主、CI、评审与交接检查点，再读 [navigation/23-Host Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点](navigation/23-Host%20Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点.md)
 - 想直接看这些检查点在实施里最常怎样重新退回形式主义，再读 [navigation/24-Host Implementation反例导航：宿主只看卡片、CI只看通过、评审只看顺序与交接只看导出包](navigation/24-Host%20Implementation反例导航：宿主只看卡片、CI只看通过、评审只看顺序与交接只看导出包.md)
+- 想把这些实施级失真继续反压成统一审读模板，再读 [navigation/25-Host Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计](navigation/25-Host%20Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计.md)
+- 想把这些统一审读模板继续压成宿主卡、CI附件、评审卡与交接包共享的正式工件协议，再读 [navigation/26-Host Artifact Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象](navigation/26-Host%20Artifact%20Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象.md)
+- 想直接看这些共享工件协议真正填出来时长什么样，再读 [navigation/27-Host Artifact样例导航：宿主卡、CI附件、评审卡与交接包的最小共享样例](navigation/27-Host%20Artifact样例导航：宿主卡、CI附件、评审卡与交接包的最小共享样例.md)
+- 想直接看这些最小共享工件在真实执行里最常怎样重新退回局部真相，再读 [navigation/28-Artifact Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相](navigation/28-Artifact%20Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相.md)
+- 想直接看系统应怎样正式拒绝这些 drift，而不是只停在识别，再读 [navigation/29-Artifact Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验](navigation/29-Artifact%20Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -299,6 +304,11 @@
 - 想直接看这套 envelope 被拆散消费时最常见的失真原型与修法，再读 [navigation/22-Evidence Envelope反例导航：宿主猜状态、CI只看阈值、评审只看结论与交接只读历史](navigation/22-Evidence%20Envelope反例导航：宿主猜状态、CI只看阈值、评审只看结论与交接只读历史.md)
 - 想直接看这套 envelope 怎样进一步进入宿主、CI、评审与交接的真实门禁，再读 [navigation/23-Host Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点](navigation/23-Host%20Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点.md)
 - 想直接看这些门禁在真实执行里最常怎样重新失真，再读 [navigation/24-Host Implementation反例导航：宿主只看卡片、CI只看通过、评审只看顺序与交接只看导出包](navigation/24-Host%20Implementation反例导航：宿主只看卡片、CI只看通过、评审只看顺序与交接只看导出包.md)
+- 想直接看这些实现层失真怎样继续被反压成统一审读模板，再读 [navigation/25-Host Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计](navigation/25-Host%20Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计.md)
+- 想直接看这些统一审读模板怎样继续落成共享工件协议，再读 [navigation/26-Host Artifact Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象](navigation/26-Host%20Artifact%20Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象.md)
+- 想直接看这些共享工件协议怎样真正被最小样例化，再读 [navigation/27-Host Artifact样例导航：宿主卡、CI附件、评审卡与交接包的最小共享样例](navigation/27-Host%20Artifact样例导航：宿主卡、CI附件、评审卡与交接包的最小共享样例.md)
+- 想直接看这些最小共享工件在真实执行里怎样重新漂移回局部真相，再读 [navigation/28-Artifact Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相](navigation/28-Artifact%20Drift反例导航：宿主卡、CI附件、评审卡与交接包如何重新退回局部真相.md)
+- 想直接看这些 drift 应怎样被正式编译成 validator / linter / reject rule，再读 [navigation/29-Artifact Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验](navigation/29-Artifact%20Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
@@ -412,6 +422,26 @@
 ### 为什么 Host Implementation 检查点还必须经得起真实执行里的再次失真
 
 - `navigation/24 -> casebooks/16 -> casebooks/17 -> casebooks/18 -> philosophy/68`
+
+### 为什么 Host Implementation 实施级失真还必须继续反压成统一审读模板
+
+- `navigation/25 -> guides/36 -> guides/37 -> guides/38 -> philosophy/68`
+
+### 为什么 Host Implementation 审读模板还必须继续落成共享工件协议
+
+- `navigation/26 -> api/37 -> api/38 -> api/39 -> philosophy/69`
+
+### 为什么 Host Artifact Contract 还必须继续落成最小共享样例
+
+- `navigation/27 -> playbooks/17 -> playbooks/18 -> playbooks/19 -> philosophy/69`
+
+### 为什么 Host Artifact Samplebook 还必须经得起工件层重新退回局部真相
+
+- `navigation/28 -> casebooks/19 -> casebooks/20 -> casebooks/21 -> philosophy/69`
+
+### 为什么 Artifact Drift 还必须继续进入 Validator / Linter 层
+
+- `navigation/29 -> guides/39 -> guides/40 -> guides/41 -> philosophy/70`
 
 ### 为什么高行动力来自统一定价而不是统一放权
 

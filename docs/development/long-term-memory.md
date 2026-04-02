@@ -334,6 +334,33 @@
 - `casebooks/17` 当前应负责治理 host implementation 失真：只看仪表盘转绿、只看审批结束、只看阈值安全与对象升级失语
 - `casebooks/18` 当前应负责结构 host implementation 失真：只看门禁存在、只看恢复通过、只看 anti-zombie 规则存在与危险路径口头化
 - `navigation/24` 的职责应稳定为“host implementation playbook 层如何进入 implementation distortion casebook 层”，避免 `23` 同时承担落地手册与实施级失真样本两类职责
+- 当 `navigation/24 + casebooks/16-18` 稳定后，下一步最值钱的不是继续补更多事故，而是补 host implementation audit guide：把对象、authority source、decision window、rollback boundary 与 retained assets 反压成统一审读模板
+- `guides/36` 当前应负责 Prompt host implementation 审读模板：把 compiled request truth、stable bytes、lawful forgetting ABI 与 handoff guard 压成统一审读 header
+- `guides/37` 当前应负责治理 host implementation 审读模板：把 decision window、control arbitration、Context Usage、object upgrade 与 rollback object 压成统一审读 header
+- `guides/38` 当前应负责结构 host implementation 审读模板：把 authoritative path、recovery asset ledger、anti-zombie evidence、retained assets 与 danger paths 压成统一审读 header
+- `navigation/25` 的职责应稳定为“implementation distortion casebook 层如何进入 host implementation audit guide 层”，避免 `24` 同时承担事故样本与统一审读模板两类职责
+- 当 `navigation/25 + guides/36-38` 稳定后，下一步最值钱的不是继续补更多心法，而是补 host artifact contract：把宿主卡、CI附件、评审卡与 handoff package 压成统一工件协议
+- `api/37` 当前应负责 Prompt host artifact contract：把宿主卡、CI附件、评审卡与 handoff package 的 shared header 固定成 compiled request truth contract
+- `api/38` 当前应负责治理 host artifact contract：把四类工件的 shared header 固定成 current object、decision window、winner source、failure semantics 与 rollback object contract
+- `api/39` 当前应负责结构 host artifact contract：把四类工件的 shared header 固定成 authoritative path、recovery asset ledger、anti-zombie evidence、retained assets 与 rollback object contract
+- `philosophy/69` 当前应负责把“成熟工件 = 四类角色共享同一判断对象”稳定成新的长期判断
+- `navigation/26` 的职责应稳定为“host implementation audit guide 层如何进入 host artifact contract 层”，避免 `25` 同时承担审读模板与工件协议两类职责
+- 当 `navigation/26 + api/37-39` 稳定后，下一步最值钱的不是继续补更多字段，而是补 artifact samplebook：给 Prompt、治理与结构三条线各出一套最小宿主卡、CI附件、评审卡与 handoff package 样例
+- `playbooks/17` 当前应负责 Prompt artifact 样例：让四类工件围绕同一 Prompt object contract 填出最小可用版本
+- `playbooks/18` 当前应负责治理 artifact 样例：让四类工件围绕同一 governance object contract 填出最小可用版本
+- `playbooks/19` 当前应负责结构 artifact 样例：让四类工件围绕同一 structure object contract 填出最小可用版本
+- `navigation/27` 的职责应稳定为“host artifact contract 层如何进入 artifact samplebook 层”，避免 `26` 同时承担字段协议与最小样例两类职责
+- 当 `navigation/27 + playbooks/17-19` 稳定后，下一步最值钱的不是继续补更多正例，而是补 artifact drift casebook：把四类共享工件最常怎样重新退回原文、状态色、计数、目录图与作者说明写成正式失真原型
+- `casebooks/19` 当前应负责 Prompt artifact 失真：宿主卡退回原文、CI 附件只剩绿灯、评审卡退回总结与交接包回到摘要
+- `casebooks/20` 当前应负责治理 artifact 失真：窗口卡退回状态色、仲裁附件退回计数、评审卡退回 verdict 与交接包失去回退对象
+- `casebooks/21` 当前应负责结构 artifact 失真：权威路径卡退回目录图、恢复附件只剩成功率、评审卡退回结构夸奖与交接包回到作者说明
+- `navigation/28` 的职责应稳定为“artifact samplebook 层如何进入 artifact drift casebook 层”，避免 `27` 同时承担最小样例与工件级失真两类职责
+- 当 `navigation/28 + casebooks/19-21` 稳定后，下一步最值钱的不是继续补更多漂移叙述，而是补 artifact validator / linter：把 shared header、hard contract 与 drift 原型编译成 reviewer gate、CI gate 与 handoff reject
+- `guides/39` 当前应负责 Prompt artifact validator：把 prompt_object、compiled_request_diff、stable bytes、lawful forgetting ABI 与 next-step guard 压成统一 hard fail 与 reject rule
+- `guides/40` 当前应负责治理 artifact validator：把 governance object、decision window、arbitration truth、failure semantics、rollback object 与 next action 压成统一 hard fail 与 reject rule
+- `guides/41` 当前应负责结构 artifact validator：把 structure object、authoritative path、recovery asset ledger、anti-zombie evidence、danger paths 与 rollback object 压成统一 hard fail 与 reject rule
+- `navigation/29` 的职责应稳定为“artifact drift casebook 层如何进入 artifact validator / linter 层”，避免 `28` 同时承担反例识别与自动校验两类职责
+- `philosophy/70` 当前应负责把“成熟校验 = 共享对象能拒绝漂移”稳定成新的长期判断
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

@@ -39,6 +39,12 @@
 33. [33-如何为Agent Runtime设计统一Rollout ABI：Diff卡、阶段评审卡、灰度结果与回退记录](33-%E5%A6%82%E4%BD%95%E4%B8%BAAgent%20Runtime%E8%AE%BE%E8%AE%A1%E7%BB%9F%E4%B8%80Rollout%20ABI%EF%BC%9ADiff%E5%8D%A1%E3%80%81%E9%98%B6%E6%AE%B5%E8%AF%84%E5%AE%A1%E5%8D%A1%E3%80%81%E7%81%B0%E5%BA%A6%E7%BB%93%E6%9E%9C%E4%B8%8E%E5%9B%9E%E9%80%80%E8%AE%B0%E5%BD%95.md)
 34. [34-如何让宿主、评审者与后来者共享同一Rollout ABI：对象、指标、回退与附件消费顺序](34-%E5%A6%82%E4%BD%95%E8%AE%A9%E5%AE%BF%E4%B8%BB%E3%80%81%E8%AF%84%E5%AE%A1%E8%80%85%E4%B8%8E%E5%90%8E%E6%9D%A5%E8%80%85%E5%85%B1%E4%BA%AB%E5%90%8C%E4%B8%80Rollout%20ABI%EF%BC%9A%E5%AF%B9%E8%B1%A1%E3%80%81%E6%8C%87%E6%A0%87%E3%80%81%E5%9B%9E%E9%80%80%E4%B8%8E%E9%99%84%E4%BB%B6%E6%B6%88%E8%B4%B9%E9%A1%BA%E5%BA%8F.md)
 35. [35-如何用苏格拉底诘问法审读Evidence Envelope：对象、窗口、字节与回退边界](35-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BBEvidence%20Envelope%EF%BC%9A%E5%AF%B9%E8%B1%A1%E3%80%81%E7%AA%97%E5%8F%A3%E3%80%81%E5%AD%97%E8%8A%82%E4%B8%8E%E5%9B%9E%E9%80%80%E8%BE%B9%E7%95%8C.md)
+36. [36-Prompt Host Implementation审读模板：编译真相、稳定字节、合法遗忘与交接闸门](36-Prompt%20Host%20Implementation%E5%AE%A1%E8%AF%BB%E6%A8%A1%E6%9D%BF%EF%BC%9A%E7%BC%96%E8%AF%91%E7%9C%9F%E7%9B%B8%E3%80%81%E7%A8%B3%E5%AE%9A%E5%AD%97%E8%8A%82%E3%80%81%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E4%B8%8E%E4%BA%A4%E6%8E%A5%E9%97%B8%E9%97%A8.md)
+37. [37-治理 Host Implementation审读模板：决策窗口、仲裁证据、对象升级与回退边界](37-%E6%B2%BB%E7%90%86%20Host%20Implementation%E5%AE%A1%E8%AF%BB%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%86%B3%E7%AD%96%E7%AA%97%E5%8F%A3%E3%80%81%E4%BB%B2%E8%A3%81%E8%AF%81%E6%8D%AE%E3%80%81%E5%AF%B9%E8%B1%A1%E5%8D%87%E7%BA%A7%E4%B8%8E%E5%9B%9E%E9%80%80%E8%BE%B9%E7%95%8C.md)
+38. [38-结构 Host Implementation审读模板：权威路径、恢复资产、反zombie 与危险路径交接](38-%E7%BB%93%E6%9E%84%20Host%20Implementation%E5%AE%A1%E8%AF%BB%E6%A8%A1%E6%9D%BF%EF%BC%9A%E6%9D%83%E5%A8%81%E8%B7%AF%E5%BE%84%E3%80%81%E6%81%A2%E5%A4%8D%E8%B5%84%E4%BA%A7%E3%80%81%E5%8F%8Dzombie%20%E4%B8%8E%E5%8D%B1%E9%99%A9%E8%B7%AF%E5%BE%84%E4%BA%A4%E6%8E%A5.md)
+39. [39-Prompt Artifact Validator模板：共享对象、稳定字节、合法遗忘与交接拒收](39-Prompt%20Artifact%20Validator%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%85%B1%E4%BA%AB%E5%AF%B9%E8%B1%A1%E3%80%81%E7%A8%B3%E5%AE%9A%E5%AD%97%E8%8A%82%E3%80%81%E5%90%88%E6%B3%95%E9%81%97%E5%BF%98%E4%B8%8E%E4%BA%A4%E6%8E%A5%E6%8B%92%E6%94%B6.md)
+40. [40-治理 Artifact Validator模板：决策窗口、仲裁证据、回退对象与行动语义拒收](40-%E6%B2%BB%E7%90%86%20Artifact%20Validator%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%86%B3%E7%AD%96%E7%AA%97%E5%8F%A3%E3%80%81%E4%BB%B2%E8%A3%81%E8%AF%81%E6%8D%AE%E3%80%81%E5%9B%9E%E9%80%80%E5%AF%B9%E8%B1%A1%E4%B8%8E%E8%A1%8C%E5%8A%A8%E8%AF%AD%E4%B9%89%E6%8B%92%E6%94%B6.md)
+41. [41-结构 Artifact Validator模板：权威路径、恢复资产、anti-zombie 与交接拒收](41-%E7%BB%93%E6%9E%84%20Artifact%20Validator%E6%A8%A1%E6%9D%BF%EF%BC%9A%E6%9D%83%E5%A8%81%E8%B7%AF%E5%BE%84%E3%80%81%E6%81%A2%E5%A4%8D%E8%B5%84%E4%BA%A7%E3%80%81anti-zombie%20%E4%B8%8E%E4%BA%A4%E6%8E%A5%E6%8B%92%E6%94%B6.md)
 
 ## 按使用目标阅读
 
@@ -83,6 +89,10 @@
 - 想把 rollout 样例继续压成统一证据 ABI，而不是每次重新发明 Diff 卡、阶段评审卡与回退记录：`30 -> 31 -> 32 -> 33 -> ../navigation/19 -> ../playbooks/12 -> ../playbooks/13`
 - 想让宿主、评审者与后来者共享同一套 rollout 证据真相，而不是各自维护一份解释：`33 -> 34 -> ../navigation/20 -> ../architecture/76 -> ../api/35`
 - 想继续用第一性原理问题审读 shared evidence envelope 是否真的成立，而不是只看字段有没有填：`34 -> 35 -> ../navigation/21 -> ../architecture/77 -> ../api/36 -> ../philosophy/68`
+- 想把 host implementation 的检查点和反例继续反压成统一审读模板，而不是继续靠资深 reviewer 心法：`35 -> ../navigation/25 -> 36 -> 37 -> 38`
+- 想把这些统一审读模板继续压成正式共享工件协议，而不是继续靠不同角色各自导出材料：`../navigation/26 -> ../api/37 -> ../api/38 -> ../api/39`
+- 想把这些统一审读模板继续落成正式宿主卡、CI附件、评审卡与交接包协议，而不是继续靠团队本地约定：`../navigation/26 -> ../api/37 -> ../api/38 -> ../api/39`
+- 想把 artifact drift 继续编译成自动校验、reviewer gate 与 handoff reject，而不是停在反例识别：`../navigation/29 -> 39 -> 40 -> 41 -> ../philosophy/70`
 
 ## 与其他目录的边界
 
@@ -91,6 +101,10 @@
 - 需要第一性原理解释时回到 [../philosophy/README.md](../philosophy/README.md)
 - 需要长期运营、事故复盘、回归与演化演练时切到 [../playbooks/README.md](../playbooks/README.md)
 - 需要具体失败样本、事故原型与反模式样本库时切到 [../casebooks/README.md](../casebooks/README.md)
+- 再往下一层，应由 `../navigation/25 -> 36-38` 继续回答“怎样把 host implementation 检查点与失真样本统一压成 builder-facing 审读模板”。
+- 再往下一层，应由 `../navigation/26 -> ../api/37-39` 继续回答“怎样把统一审读对象压成宿主卡、CI附件、评审卡与 handoff package 的正式共享工件协议”。
+- 再往下一层，应由 `../navigation/29 -> 39-41` 继续回答“怎样把 shared header、hard contract 与 drift 原型编译成 validator / linter / reject rule”。
+- `../philosophy/70` 负责回答“为什么真正成熟的校验，不是字段齐全，而是共享对象能拒绝漂移”。
 
 后续继续补：
 

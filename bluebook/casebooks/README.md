@@ -34,6 +34,9 @@
 16. [16-Prompt Host Implementation反例：只看卡片存在、只看CI通过与只交接摘要包](16-Prompt%20Host%20Implementation%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%8F%AA%E7%9C%8B%E5%8D%A1%E7%89%87%E5%AD%98%E5%9C%A8%E3%80%81%E5%8F%AA%E7%9C%8BCI%E9%80%9A%E8%BF%87%E4%B8%8E%E5%8F%AA%E4%BA%A4%E6%8E%A5%E6%91%98%E8%A6%81%E5%8C%85.md)
 17. [17-治理 Host Implementation反例：只看仪表盘转绿、只看审批结束与对象升级失语](17-%E6%B2%BB%E7%90%86%20Host%20Implementation%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%8F%AA%E7%9C%8B%E4%BB%AA%E8%A1%A8%E7%9B%98%E8%BD%AC%E7%BB%BF%E3%80%81%E5%8F%AA%E7%9C%8B%E5%AE%A1%E6%89%B9%E7%BB%93%E6%9D%9F%E4%B8%8E%E5%AF%B9%E8%B1%A1%E5%8D%87%E7%BA%A7%E5%A4%B1%E8%AF%AD.md)
 18. [18-结构 Host Implementation反例：只看门禁存在、只看恢复通过与危险路径口头化](18-%E7%BB%93%E6%9E%84%20Host%20Implementation%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%8F%AA%E7%9C%8B%E9%97%A8%E7%A6%81%E5%AD%98%E5%9C%A8%E3%80%81%E5%8F%AA%E7%9C%8B%E6%81%A2%E5%A4%8D%E9%80%9A%E8%BF%87%E4%B8%8E%E5%8D%B1%E9%99%A9%E8%B7%AF%E5%BE%84%E5%8F%A3%E5%A4%B4%E5%8C%96.md)
+19. [19-Prompt Artifact反例：宿主卡退回原文、CI附件只剩绿灯与交接包回到摘要](19-Prompt%20Artifact%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%AE%BF%E4%B8%BB%E5%8D%A1%E9%80%80%E5%9B%9E%E5%8E%9F%E6%96%87%E3%80%81CI%E9%99%84%E4%BB%B6%E5%8F%AA%E5%89%A9%E7%BB%BF%E7%81%AF%E4%B8%8E%E4%BA%A4%E6%8E%A5%E5%8C%85%E5%9B%9E%E5%88%B0%E6%91%98%E8%A6%81.md)
+20. [20-治理 Artifact反例：窗口卡退回状态色、仲裁附件退回计数与交接包失去回退对象](20-%E6%B2%BB%E7%90%86%20Artifact%E5%8F%8D%E4%BE%8B%EF%BC%9A%E7%AA%97%E5%8F%A3%E5%8D%A1%E9%80%80%E5%9B%9E%E7%8A%B6%E6%80%81%E8%89%B2%E3%80%81%E4%BB%B2%E8%A3%81%E9%99%84%E4%BB%B6%E9%80%80%E5%9B%9E%E8%AE%A1%E6%95%B0%E4%B8%8E%E4%BA%A4%E6%8E%A5%E5%8C%85%E5%A4%B1%E5%8E%BB%E5%9B%9E%E9%80%80%E5%AF%B9%E8%B1%A1.md)
+21. [21-结构 Artifact反例：权威路径卡退回目录图、恢复附件只剩成功率与交接包回到作者说明](21-%E7%BB%93%E6%9E%84%20Artifact%E5%8F%8D%E4%BE%8B%EF%BC%9A%E6%9D%83%E5%A8%81%E8%B7%AF%E5%BE%84%E5%8D%A1%E9%80%80%E5%9B%9E%E7%9B%AE%E5%BD%95%E5%9B%BE%E3%80%81%E6%81%A2%E5%A4%8D%E9%99%84%E4%BB%B6%E5%8F%AA%E5%89%A9%E6%88%90%E5%8A%9F%E7%8E%87%E4%B8%8E%E4%BA%A4%E6%8E%A5%E5%8C%85%E5%9B%9E%E5%88%B0%E4%BD%9C%E8%80%85%E8%AF%B4%E6%98%8E.md)
 
 ## 按目标阅读
 
@@ -50,6 +53,8 @@
 - 想看 shared evidence envelope 一旦被不同消费者拆散会怎样退回半真相：`../navigation/21 -> ../navigation/22 -> 13 -> 14 -> 15`
 - 想把这些失真样本继续压成宿主、CI、评审与交接的真实检查点：`../navigation/23 -> ../playbooks/14 -> ../playbooks/15 -> ../playbooks/16`
 - 想直接看这些真实检查点在实施里最常怎样重新退回形式主义：`../navigation/24 -> 16 -> 17 -> 18`
+- 想把这些实施级失真继续反压成统一审读模板，而不是继续靠经验识别：`../navigation/25 -> ../guides/36 -> ../guides/37 -> ../guides/38`
+- 想直接看这些最小共享工件在真实执行里最常怎样重新退回局部真相：`../navigation/28 -> 19 -> 20 -> 21`
 
 ## 与其他目录的边界
 
@@ -59,4 +64,8 @@
 - `casebooks/13-15` 继续回答“shared evidence envelope 一旦被宿主、CI、评审与交接拆散消费，会怎样重新退回局部真相”。
 - 再往下一层，应由 `../navigation/23 -> ../playbooks/14-16` 继续回答“怎样把这些失真重新收口成统一检查点”。
 - `casebooks/16-18` 继续回答“这些统一检查点在真实执行里最常会怎样重新退回存在性合规、流程合规与作者兜底”。
+- 再往下一层，应由 `../navigation/25 -> ../guides/36-38` 继续回答“怎样把这些实施级失真反压成统一审读模板”。
+- `casebooks/19-21` 继续回答“这些最小共享工件在 artifact 层最常会怎样重新退回原文、计数、状态色、目录图与作者说明等局部真相”。
+- 再往下一层，应由 `../navigation/28 -> ../casebooks/19-21` 继续回答“shared artifact 明明已经存在时，四类角色最常怎样各自重新说谎”。
+- 再往下一层，应由 `../navigation/29 -> ../guides/39-41` 继续回答“怎样把这些 drift 原型编译成 validator / linter / reject rule”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。
