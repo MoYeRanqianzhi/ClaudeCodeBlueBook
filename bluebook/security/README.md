@@ -98,6 +98,7 @@
 76. [75-安全能力声明仲裁：当status、notification、footer与hook同时说话时，谁有资格代表当前能力真相](75-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E5%A3%B0%E6%98%8E%E4%BB%B2%E8%A3%81%EF%BC%9A%E5%BD%93status%E3%80%81notification%E3%80%81footer%E4%B8%8Ehook%E5%90%8C%E6%97%B6%E8%AF%B4%E8%AF%9D%E6%97%B6%EF%BC%8C%E8%B0%81%E6%9C%89%E8%B5%84%E6%A0%BC%E4%BB%A3%E8%A1%A8%E5%BD%93%E5%89%8D%E8%83%BD%E5%8A%9B%E7%9C%9F%E7%9B%B8.md)
 77. [76-安全能力显式让位：为什么更高风险、更具体的新状态必须主动驱逐旧的弱状态，而不能等它自然过期](76-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E6%98%BE%E5%BC%8F%E8%AE%A9%E4%BD%8D%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9B%B4%E9%AB%98%E9%A3%8E%E9%99%A9%E3%80%81%E6%9B%B4%E5%85%B7%E4%BD%93%E7%9A%84%E6%96%B0%E7%8A%B6%E6%80%81%E5%BF%85%E9%A1%BB%E4%B8%BB%E5%8A%A8%E9%A9%B1%E9%80%90%E6%97%A7%E7%9A%84%E5%BC%B1%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E7%AD%89%E5%AE%83%E8%87%AA%E7%84%B6%E8%BF%87%E6%9C%9F.md)
 78. [77-安全状态替换语法：为什么新增、折叠、失效、移除与共存必须是不同的状态动作，而不能统一成再发一条通知](77-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E6%9B%BF%E6%8D%A2%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%96%B0%E5%A2%9E%E3%80%81%E6%8A%98%E5%8F%A0%E3%80%81%E5%A4%B1%E6%95%88%E3%80%81%E7%A7%BB%E9%99%A4%E4%B8%8E%E5%85%B1%E5%AD%98%E5%BF%85%E9%A1%BB%E6%98%AF%E4%B8%8D%E5%90%8C%E7%9A%84%E7%8A%B6%E6%80%81%E5%8A%A8%E4%BD%9C%EF%BC%8C%E8%80%8C%E4%B8%8D%E8%83%BD%E7%BB%9F%E4%B8%80%E6%88%90%E5%86%8D%E5%8F%91%E4%B8%80%E6%9D%A1%E9%80%9A%E7%9F%A5.md)
+79. [78-安全状态编辑主权：为什么状态替换语法之后，还必须继续回答谁有资格编辑谁的状态](78-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E7%BC%96%E8%BE%91%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E7%8A%B6%E6%80%81%E6%9B%BF%E6%8D%A2%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%90%8E%EF%BC%8C%E8%BF%98%E5%BF%85%E9%A1%BB%E7%BB%A7%E7%BB%AD%E5%9B%9E%E7%AD%94%E8%B0%81%E6%9C%89%E8%B5%84%E6%A0%BC%E7%BC%96%E8%BE%91%E8%B0%81%E7%9A%84%E7%8A%B6%E6%80%81.md)
 
 ## 附录目录
 
@@ -193,6 +194,8 @@
 - 想直接看不同 incoming state 到底应该驱逐哪条旧状态、驱逐靠什么机制、以及不驱逐会形成哪种 stale risk：看 `appendix/60`
 - 想直接看为什么“驱逐旧状态”仍然不够，以及为什么 Claude Code 还必须区分折叠、失效、移除与共存，而不是把所有变化都压成再发一条提示：看 `77`
 - 想直接看不同 change pattern 到底该用哪一种 operator、每种 operator 的安全效果是什么、以及最危险的 shortcut 是什么：看 `appendix/61`
+- 想直接看为什么 replacement grammar 仍然不够，以及为什么 fold、invalidate、remove 这些动词之后还必须继续追问“谁配说这句改口”：看 `78`
+- 想直接看不同 status family 到底允许谁编辑、允许用什么 operator、以及最危险的 outsider 是谁：看 `appendix/62`
 
 ## 和其他目录的关系
 
@@ -320,4 +323,6 @@
 - 想把 `76` 的长文压成一张驱逐矩阵，快速看出不同 incoming state、evicted state、eviction mechanism 与 stale risk：`76` -> `appendix/60`
 - 想看为什么即使已经知道该不该驱逐，也仍然不能把所有状态变化统一成一种更新方式，以及 why `fold`、`invalidate`、`remove` 与 `coexist` 必须分开：`76` -> `77`
 - 想把 `77` 的长文压成一张编辑矩阵，快速看出不同 change pattern、operator、safe effect 与 forbidden shortcut：`77` -> `appendix/61`
+- 想看为什么即使编辑动词已经分清，系统仍然可能因为“谁都能删谁”而失控，以及 why 下一代控制台必须把编辑主权也编码进接口：`77` -> `78`
+- 想把 `78` 的长文压成一张主权矩阵，快速看出不同 status family、allowed editor、allowed operator 与 forbidden outsider：`78` -> `appendix/62`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
