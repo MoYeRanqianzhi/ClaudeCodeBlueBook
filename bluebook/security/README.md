@@ -37,6 +37,7 @@
 15. [14-安全控制面总图：从 trust 到 entitlement 的全链结构图谱](14-%E5%AE%89%E5%85%A8%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%BB%8E%20trust%20%E5%88%B0%20entitlement%20%E7%9A%84%E5%85%A8%E9%93%BE%E7%BB%93%E6%9E%84%E5%9B%BE%E8%B0%B1.md)
 16. [15-来源主权总表：settings、permissions、hooks、MCP、plugins、sandbox、gateway 到底谁能覆盖谁](15-%E6%9D%A5%E6%BA%90%E4%B8%BB%E6%9D%83%E6%80%BB%E8%A1%A8%EF%BC%9Asettings%E3%80%81permissions%E3%80%81hooks%E3%80%81MCP%E3%80%81plugins%E3%80%81sandbox%E3%80%81gateway%20%E5%88%B0%E5%BA%95%E8%B0%81%E8%83%BD%E8%A6%86%E7%9B%96%E8%B0%81.md)
 17. [16-安全反模式与反公理：哪些看似方便的做法会掏空这套边界](16-%E5%AE%89%E5%85%A8%E5%8F%8D%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%8F%8D%E5%85%AC%E7%90%86%EF%BC%9A%E5%93%AA%E4%BA%9B%E7%9C%8B%E4%BC%BC%E6%96%B9%E4%BE%BF%E7%9A%84%E5%81%9A%E6%B3%95%E4%BC%9A%E6%8E%8F%E7%A9%BA%E8%BF%99%E5%A5%97%E8%BE%B9%E7%95%8C.md)
+18. [17-终局总指南：Claude Code 安全研究的最佳最全版](17-%E7%BB%88%E5%B1%80%E6%80%BB%E6%8C%87%E5%8D%97%EF%BC%9AClaude%20Code%20%E5%AE%89%E5%85%A8%E7%A0%94%E7%A9%B6%E7%9A%84%E6%9C%80%E4%BD%B3%E6%9C%80%E5%85%A8%E7%89%88.md)
 
 ## 和其他目录的关系
 
@@ -58,3 +59,4 @@
 - 想理解为什么这套安全机制仍然会被用户感知成黑箱，以及下一步该如何产品化：`05` -> `06` -> `10`
 - 想把 Claude Code 的安全设计提炼成别的 Agent 平台也能复用的设计法则：`05` -> `06` -> `11`
 - 想直接看平台方下一步最该把哪些安全零件做成产品：`10` -> `11` -> `12`
+- 想直接读压缩后的终局版本：`17`
