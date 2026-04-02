@@ -148,6 +148,7 @@
 - 想直接看为什么 `active`、`connected`、`ready` 这类绿色词都只能被视作可撤销租约，而不是稳定承诺：看 `64`
 - 想直接看每类绿色词的续租条件、撤租触发器和租期长短：看 `appendix/48`
 - 想直接看为什么这些绿色词还必须靠 heartbeat、poll、refresh 与 recheck 持续续租，而不是一次观察永久有效：看 `65`
+- 想直接看不同 lease failure 到底还剩下多少恢复能力、下一步该走哪条修复路径：看 `appendix/50`
 - 想直接看为什么 lease failure 不能一律压成“挂了”，而必须分别降到 hidden、pending、reconnecting、failed、stale 与 auth_failed：看 `66`
 - 想直接看不同绿色词分别靠什么续租、多久续租一次、续租失败后会掉到哪条分支：看 `appendix/49`
 
@@ -253,5 +254,6 @@
 - 想把 `64` 的长文压成一张租约矩阵，快速看出不同绿色词的 renewal condition、revocation trigger 与 lease length：`64` -> `appendix/48`
 - 想看为什么租约本身还不够，以及 why 绿色词必须继续靠 heartbeat、poll、refresh 与 recheck 续租、续租失败就要降级：`64` -> `65`
 - 想把 `65` 的长文压成一张续租矩阵，快速看出不同 lexicon 的 renewal signal、cadence 与 failure branch：`65` -> `appendix/49`
+- 想把 `66` 的长文压成一张失败梯子矩阵，快速看出不同 lease failure type 的 recovery capacity 与 next repair path：`66` -> `appendix/50`
 - 想看为什么续租失败后还不能只剩一个 failed，以及 why 不同 failure 必须继续分层表达剩余恢复能力：`65` -> `66`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
