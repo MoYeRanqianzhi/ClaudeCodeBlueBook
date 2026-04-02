@@ -103,6 +103,15 @@
 81. [80-安全状态句柄化：为什么下一代控制面不该继续用裸key编辑状态，而应把family scope升级为opaque handle](80-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E5%8F%A5%E6%9F%84%E5%8C%96%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8B%E4%B8%80%E4%BB%A3%E6%8E%A7%E5%88%B6%E9%9D%A2%E4%B8%8D%E8%AF%A5%E7%BB%A7%E7%BB%AD%E7%94%A8%E8%A3%B8key%E7%BC%96%E8%BE%91%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E5%BA%94%E6%8A%8Afamily%20scope%E5%8D%87%E7%BA%A7%E4%B8%BAopaque%20handle.md)
 82. [81-安全能力闭包绑定：为什么句柄真正承载的不是方法集合，而是创建时上下文](81-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E9%97%AD%E5%8C%85%E7%BB%91%E5%AE%9A%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8F%A5%E6%9F%84%E7%9C%9F%E6%AD%A3%E6%89%BF%E8%BD%BD%E7%9A%84%E4%B8%8D%E6%98%AF%E6%96%B9%E6%B3%95%E9%9B%86%E5%90%88%EF%BC%8C%E8%80%8C%E6%98%AF%E5%88%9B%E5%BB%BA%E6%97%B6%E4%B8%8A%E4%B8%8B%E6%96%87.md)
 83. [82-安全上下文重推导禁令：为什么session、token、transport与scope不能像标题那样交给调用方二次重算](82-%E5%AE%89%E5%85%A8%E4%B8%8A%E4%B8%8B%E6%96%87%E9%87%8D%E6%8E%A8%E5%AF%BC%E7%A6%81%E4%BB%A4%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88session%E3%80%81token%E3%80%81transport%E4%B8%8Escope%E4%B8%8D%E8%83%BD%E5%83%8F%E6%A0%87%E9%A2%98%E9%82%A3%E6%A0%B7%E4%BA%A4%E7%BB%99%E8%B0%83%E7%94%A8%E6%96%B9%E4%BA%8C%E6%AC%A1%E9%87%8D%E7%AE%97.md)
+84. [83-安全授权连续性：为什么session、token、transport与scope真正需要被保护的不是值，而是其背后的授权连续性](83-%E5%AE%89%E5%85%A8%E6%8E%88%E6%9D%83%E8%BF%9E%E7%BB%AD%E6%80%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88session%E3%80%81token%E3%80%81transport%E4%B8%8Escope%E7%9C%9F%E6%AD%A3%E9%9C%80%E8%A6%81%E8%A2%AB%E4%BF%9D%E6%8A%A4%E7%9A%84%E4%B8%8D%E6%98%AF%E5%80%BC%EF%BC%8C%E8%80%8C%E6%98%AF%E5%85%B6%E8%83%8C%E5%90%8E%E7%9A%84%E6%8E%88%E6%9D%83%E8%BF%9E%E7%BB%AD%E6%80%A7.md)
+85. [84-安全失效边界复活禁令：为什么最危险的不是脏状态，而是已归档旧session被重新认证为当前边界](84-%E5%AE%89%E5%85%A8%E5%A4%B1%E6%95%88%E8%BE%B9%E7%95%8C%E5%A4%8D%E6%B4%BB%E7%A6%81%E4%BB%A4%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%80%E5%8D%B1%E9%99%A9%E7%9A%84%E4%B8%8D%E6%98%AF%E8%84%8F%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E6%98%AF%E5%B7%B2%E5%BD%92%E6%A1%A3%E6%97%A7session%E8%A2%AB%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%81%E4%B8%BA%E5%BD%93%E5%89%8D%E8%BE%B9%E7%95%8C.md)
+86. [85-安全边界换届协议：为什么连续性一旦断裂，系统必须显式archive旧边界、重绑新边界并重置所有会话级账本](85-%E5%AE%89%E5%85%A8%E8%BE%B9%E7%95%8C%E6%8D%A2%E5%B1%8A%E5%8D%8F%E8%AE%AE%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%80%E6%97%A6%E6%96%AD%E8%A3%82%EF%BC%8C%E7%B3%BB%E7%BB%9F%E5%BF%85%E9%A1%BB%E6%98%BE%E5%BC%8Farchive%E6%97%A7%E8%BE%B9%E7%95%8C%E3%80%81%E9%87%8D%E7%BB%91%E6%96%B0%E8%BE%B9%E7%95%8C%E5%B9%B6%E9%87%8D%E7%BD%AE%E6%89%80%E6%9C%89%E4%BC%9A%E8%AF%9D%E7%BA%A7%E8%B4%A6%E6%9C%AC.md)
+87. [86-安全恢复承诺诚实性：为什么--continue、pointer与resume提示不是帮助文案，而是对边界可恢复性的安全承诺](86-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E6%89%BF%E8%AF%BA%E8%AF%9A%E5%AE%9E%E6%80%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88--continue%E3%80%81pointer%E4%B8%8Eresume%E6%8F%90%E7%A4%BA%E4%B8%8D%E6%98%AF%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%88%EF%BC%8C%E8%80%8C%E6%98%AF%E5%AF%B9%E8%BE%B9%E7%95%8C%E5%8F%AF%E6%81%A2%E5%A4%8D%E6%80%A7%E7%9A%84%E5%AE%89%E5%85%A8%E6%89%BF%E8%AF%BA.md)
+88. [87-安全恢复资格签发权：为什么不是任何局部signal都配说仍可恢复，而必须由掌握边界真相的控制层签字](87-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%B5%84%E6%A0%BC%E7%AD%BE%E5%8F%91%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%80%E9%83%A8signal%E9%83%BD%E9%85%8D%E8%AF%B4%E4%BB%8D%E5%8F%AF%E6%81%A2%E5%A4%8D%EF%BC%8C%E8%80%8C%E5%BF%85%E9%A1%BB%E7%94%B1%E6%8E%8C%E6%8F%A1%E8%BE%B9%E7%95%8C%E7%9C%9F%E7%9B%B8%E7%9A%84%E6%8E%A7%E5%88%B6%E5%B1%82%E7%AD%BE%E5%AD%97.md)
+89. [88-安全恢复资格证据门槛：为什么即使signer正确，仍可恢复也必须建立在最小truth-bundle之上](88-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%B5%84%E6%A0%BC%E8%AF%81%E6%8D%AE%E9%97%A8%E6%A7%9B%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8D%B3%E4%BD%BFsigner%E6%AD%A3%E7%A1%AE%EF%BC%8C%E4%BB%8D%E5%8F%AF%E6%81%A2%E5%A4%8D%E4%B9%9F%E5%BF%85%E9%A1%BB%E5%BB%BA%E7%AB%8B%E5%9C%A8%E6%9C%80%E5%B0%8Ftruth-bundle%E4%B9%8B%E4%B8%8A.md)
+90. [89-安全恢复资格降级语法：为什么no-candidate、invalid-id、dead-session、fresh-session-fallback与retryable不能压成同一句无法恢复](89-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%B5%84%E6%A0%BC%E9%99%8D%E7%BA%A7%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88no-candidate%E3%80%81invalid-id%E3%80%81dead-session%E3%80%81fresh-session-fallback%E4%B8%8Eretryable%E4%B8%8D%E8%83%BD%E5%8E%8B%E6%88%90%E5%90%8C%E4%B8%80%E5%8F%A5%E6%97%A0%E6%B3%95%E6%81%A2%E5%A4%8D.md)
+91. [90-安全恢复资格清理权限：为什么pointer清理权不是普通清扫动作，而是恢复资格的撤回权](90-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%B5%84%E6%A0%BC%E6%B8%85%E7%90%86%E6%9D%83%E9%99%90%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88pointer%E6%B8%85%E7%90%86%E6%9D%83%E4%B8%8D%E6%98%AF%E6%99%AE%E9%80%9A%E6%B8%85%E6%89%AB%E5%8A%A8%E4%BD%9C%EF%BC%8C%E8%80%8C%E6%98%AF%E6%81%A2%E5%A4%8D%E8%B5%84%E6%A0%BC%E7%9A%84%E6%92%A4%E5%9B%9E%E6%9D%83.md)
+85. [84-安全失效边界复活禁令：为什么最危险的不是脏状态，而是已归档旧session被重新认证为当前边界](84-%E5%AE%89%E5%85%A8%E5%A4%B1%E6%95%88%E8%BE%B9%E7%95%8C%E5%A4%8D%E6%B4%BB%E7%A6%81%E4%BB%A4%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%80%E5%8D%B1%E9%99%A9%E7%9A%84%E4%B8%8D%E6%98%AF%E8%84%8F%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E6%98%AF%E5%B7%B2%E5%BD%92%E6%A1%A3%E6%97%A7session%E8%A2%AB%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%81%E4%B8%BA%E5%BD%93%E5%89%8D%E8%BE%B9%E7%95%8C.md)
 
 ## 附录目录
 
@@ -208,6 +217,22 @@
 - 想直接看不同 handle 到底捕获了什么上下文、禁止调用方重建什么对象，以及闭包绑定带来的直接安全收益：看 `appendix/65`
 - 想直接看为什么“句柄里有上下文”仍然不够，以及为什么系统必须继续明确禁止对 authority-bearing context 二次重算，而不是把它们当普通派生值：看 `82`
 - 想直接看不同 surface 上哪些上下文可重推导、哪些绝不能重推导，以及误重算后的 failure mode 是什么：看 `appendix/66`
+- 想直接看为什么这些 authority-bearing context 真正需要被保护的不是值本身，而是它们共同维持的 authorization continuity：看 `83`
+- 想直接看不同 context 的 continuity owner、allowed substitution、explicit break signal 与 boundary failure：看 `appendix/67`
+- 想直接看为什么比 stale state 更危险的是已失效旧边界被重新认证为 current，以及 bridge 里哪些 race、pointer 与 resume path 正在专门防这种复活：看 `84`
+- 想直接看不同 stale object 到底会沿哪条 revival path 复活、当前 guard 是什么、漏掉后会造成哪种边界后果：看 `appendix/68`
+- 想直接看为什么即使禁止了旧边界复活仍然不够，以及 continuity 正式结束后系统必须如何完成合法换届：看 `85`
+- 想直接看不同 break trigger 到底如何处置旧边界、要重置哪些 session-scoped ledger，以及哪些 continuity 说法绝不能继续保留：看 `appendix/69`
+- 想直接看为什么即使换届制度已经明确仍然不够，以及系统何时才有资格向用户承诺“仍可恢复”：看 `86`
+- 想直接看不同恢复表面到底基于什么 promise basis 发声、何时必须撤回承诺，以及哪些 resume 话术绝不能说：看 `appendix/70`
+- 想直接看为什么即使 promise honesty 已经建立仍然不够，以及“仍可恢复”这句话到底由谁签发、谁撤回、谁只能转述：看 `87`
+- 想直接看不同恢复表面到底由谁签字、依赖哪些 truth inputs、最多配说到哪一步，以及哪些 overclaim 绝不能说：看 `appendix/71`
+- 想直接看为什么即使 signer 已经正确仍然不够，以及“仍可恢复”还必须满足哪些最小证据门槛：看 `88`
+- 想直接看不同 evidence piece 到底由谁提供、最低 threshold 是什么、缺失后该降级成什么：看 `appendix/72`
+- 想直接看为什么即使证据门槛已经建立仍然不够，以及不同恢复失败为什么还必须继续分层改口，而不能压成同一句“无法恢复”：看 `89`
+- 想直接看不同 resume result 到底代表什么、下一步该做什么、何时该清理什么，以及哪些压平说法绝不能再说：看 `appendix/73`
+- 想直接看为什么即使降级语法已经建立仍然不够，以及恢复 carrier 到底由谁清、何时禁止清、何时必须清：看 `90`
+- 想直接看不同恢复 carrier 到底由谁清理、clear trigger 是什么，以及哪些提前清理绝不能发生：看 `appendix/74`
 
 ## 和其他目录的关系
 
@@ -345,4 +370,20 @@
 - 想把 `81` 的长文压成一张闭包矩阵，快速看出不同 handle、captured context、forbidden re-derivation 与 security gain：`81` -> `appendix/65`
 - 想看为什么闭包绑定之后还必须继续提出“禁止重推导”的硬禁令，以及 why title 这种 cosmetic context 与 session/token 这种 authority context 必须分治：`81` -> `82`
 - 想把 `82` 的长文压成一张禁令矩阵，快速看出不同 surface、re-derivable context、forbidden authority context 与 failure mode：`82` -> `appendix/66`
+- 想看为什么“禁止重推导”继续往下压后，真正被保护的对象其实是 authorization continuity 本身，而不是单个字段值：`82` -> `83`
+- 想把 `83` 的长文压成一张连续性矩阵，快速看出不同 context 的 continuity owner、allowed substitution 与 boundary failure：`83` -> `appendix/67`
+- 想看为什么 continuity failure 里最危险的一种不是普通断裂，而是已失效边界被旧 timer、旧 transport、旧 pointer 或假 resume 重新写成 current：`83` -> `84`
+- 想把 `84` 的长文压成一张复活禁令矩阵，快速看出不同 stale object 的 revival path、current guard 与 boundary consequence：`84` -> `appendix/68`
+- 想看为什么即使已经防住复活，系统仍必须继续明确“续接、换届、挂起、退役”四种制度动作，而不是统一压成重新连一下：`84` -> `85`
+- 想把 `85` 的长文压成一张换届矩阵，快速看出不同 break trigger、old boundary disposition、required reset 与 forbidden fake continuity：`85` -> `appendix/69`
+- 想看为什么即使边界生命周期已经分清，resume command、pointer 与 try-again 提示仍必须继续遵守 promise honesty，而不能把“看起来还能恢复”说成“真的还能恢复”：`85` -> `86`
+- 想把 `86` 的长文压成一张恢复承诺矩阵，快速看出不同 surface 的 promise basis、allowed promise 与 forbidden lie：`86` -> `appendix/70`
+- 想看为什么即使恢复承诺已经要求诚实，局部 signal 仍然不能越权签发这种承诺，以及 why signer authority 也必须被治理：`86` -> `87`
+- 想把 `87` 的长文压成一张签发矩阵，快速看出不同 surface 的 signer、truth inputs 与 forbidden overclaim：`87` -> `appendix/71`
+- 想看为什么即使 signer 已经找对，单个 signal 仍然不够，以及 why resumability 必须建立在最小 truth bundle 上：`87` -> `88`
+- 想把 `88` 的长文压成一张证据矩阵，快速看出不同 evidence piece、owner、threshold 与 failure downgrade：`88` -> `appendix/72`
+- 想看为什么即使 truth bundle 已经齐全，系统仍不能把所有失败统一压成 generic failed，而必须继续区分 no-candidate、dead-session、fresh fallback 与 retryable：`88` -> `89`
+- 想把 `89` 的长文压成一张降级矩阵，快速看出不同 resume result、meaning、next action 与 forbidden flattening：`89` -> `appendix/73`
+- 想看为什么即使恢复结果已经分层，系统仍不能让任何局部层随手清掉 pointer，而必须继续治理 revocation cleanup authority：`89` -> `90`
+- 想把 `90` 的长文压成一张清理权限矩阵，快速看出不同 carrier、clearer、clear trigger 与 forbidden premature clear：`90` -> `appendix/74`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
