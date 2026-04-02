@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《机制验证导航：编译请求真相、治理控制面对象与内核边界如何进入持续回归》《编译请求真相验证手册：section continuity、stable bytes、protocol rewrite与lawful forgetting回归》《治理控制面对象验证手册：authority source、decision window、continuation gate与rollback object回归》《可演化内核对象验证手册：authority、transition、dependency、recovery asset与anti-zombie回归》，并同步回写主索引、导航/运营手册 README 与开发文档，把蓝皮书从“机制回灌 / 支持面收口”继续推进到“机制验证 / 持续回归”层
 - 新增《机制回灌导航：编译请求真相、治理控制面与可演化内核对象边界》《编译请求真相控制面：section law、stable prefix、protocol transcript与lawful forgetting如何统一成请求对象》《治理控制面：PolicySettings、typed decision、deferred visibility、Context Usage与continuation pricing》《可演化内核对象边界：authority surface、single-source、anti-cycle seam与anti-zombie》，并同步回写总索引、架构与导航 README、开发文档，把蓝皮书从“builder-facing 方法层”继续推进到“机制回灌层”
 - 新增《Agent Runtime深化导航：上下文编译、治理控制面与可演化内核》《如何把Prompt写成上下文准入编译器：section law、stable prefix、协议真相与合法遗忘》《如何把安全与省Token写成治理控制面：typed decision、渐进暴露、Context Usage与继续预算》《如何把源码先进性落成可演化内核：权威入口、单一来源、anti-cycle seam与未来维护者消费者》《Prompt的魔力不在说服模型，而在先规定世界如何进入模型》《真正的治理控制面，同时决定允许什么、看见什么、继续多久》《真正先进的源码，会先替未来维护者保留反对当前实现的能力》，并同步回写主索引、专题 README 与开发文档，把蓝皮书从“Agent Runtime 构建层”继续推进到“上下文编译 / 治理控制面 / 可演化内核”深化层
 - 新增《Agent Runtime构建导航：第一性原理、宿主模板与统一蓝图》《从第一性原理构建Agent Runtime：对象、协作语法、资源定价与恢复闭环》《Agent Runtime宿主落地模板：Control、状态写回、Context Usage、恢复与证据包络》《统一蓝图手册：把协作语法、资源定价与可演化内核编译成Agent Runtime》《真正成熟的构建，不是复刻功能，而是先固定对象、边界、预算与恢复闭环》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“源码 Atlas 层”继续推进到“Agent Runtime 构建层”

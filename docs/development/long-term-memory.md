@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“机制回灌 / 支持面收口”继续推进到“机制验证 / 持续回归”层。
+- 新增结论：
+  - `compiled request truth` 如果不能被持续验证 continuity，就会重新退回原文 prompt 崇拜。
+  - `governance control plane object` 如果不能被持续验证 authority / decision window / continuation gate，就会重新退回局部 KPI 与审批流程。
+  - `evolvable kernel object boundary` 如果不能被持续验证 authority / transition / dependency / anti-zombie，就会重新退回目录审美与作者记忆。
+- 新增目录责任：
+  - `navigation/39` 负责机制验证入口。
+  - `playbooks/26-28` 负责三类机制对象的回归、拒收条件与复盘最小字段。
+- 当前新的写作约束：
+  - 不再把机制对象写成“已经成立就算完成”。
+  - 每次继续深化都要回答“怎样持续证明它还成立”“哪些情况应直接拒收”。
 - 蓝皮书已经从“builder-facing 方法层”继续推进到“机制回灌层”。
 - 新增结论：
   - Prompt 线下一层不应停在 Prompt Constitution，而应继续收口成 `compiled request truth`。

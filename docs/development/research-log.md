@@ -7,6 +7,37 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A00l. 机制对象成立之后，下一层应进入持续验证层
+
+- `compiled request truth` 下一层最值钱的不是继续补机制解释，而是把 section continuity、stable bytes、protocol rewrite 与 lawful forgetting 压成长期运行里的回归门禁；否则 Prompt 线很快会重新退回原文 prompt 崇拜与摘要崇拜。
+- `governance control plane object` 下一层最值钱的不是继续补控制面说明，而是把 authority source、typed decision、decision window、continuation gate 与 rollback object 压成长期运行里的回归门禁；否则治理线很快会重新退回 modal、仪表盘与阈值崇拜。
+- `evolvable kernel object boundary` 下一层最值钱的不是继续补结构原则，而是把 authority、transition legality、dependency honesty、recovery asset 与 anti-zombie 压成长期演化里的回归门禁；否则结构线很快会重新退回目录审美、规则存在性与作者记忆。
+- 这意味着蓝皮书在机制回灌之后需要继续长出“机制验证层”：
+  - `navigation/39` 负责统一入口。
+  - `playbooks/26-28` 负责三类对象的持续回归、拒收条件与复盘最小字段。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是更多 runbook，而是考虑新增 `casebooks/22+`，把这些机制验证最常见的 drift 与形式主义失真写成新的反例层。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:1-51`
+- `claude-code-source-code/src/constants/prompts.ts:491-557`
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-104`
+- `claude-code-source-code/src/query/stopHooks.ts:84-120`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/services/compact/prompt.ts:1-260`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-520`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-240`
+- `claude-code-source-code/src/cli/structuredIO.ts:149-657`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/utils/sessionState.ts:92-146`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/query/config.ts:1-45`
+- `claude-code-source-code/src/query/deps.ts:1-40`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-108`
+- `claude-code-source-code/src/utils/task/framework.ts:160-269`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+
 ### A00k. 方法层之后，最值钱的是把三条线重新回灌成机制层对象
 
 - Prompt 线下一步不应继续停在 Prompt Constitution 或上下文编译方法，而应继续把 `section law + stable prefix producer + protocol transcript + lawful forgetting + cache-break observability` 收口成同一个 `compiled request truth` 对象。
