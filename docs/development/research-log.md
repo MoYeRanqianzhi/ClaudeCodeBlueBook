@@ -1111,6 +1111,7 @@
 - 第一批安全专题已经落地 `security/00` 与 `security/01`：`managedEnv.ts` 说明 trust 前只允许受信来源的 env 先进入运行时，防止项目目录借 `ANTHROPIC_BASE_URL` 等变量污染宿主；`setup.ts` 说明 bypassPermissions 不是随手可开的快捷模式，而要求 sandbox / no-internet 等额外外部边界；`dangerousPatterns.ts` 与 `permissionSetup.ts` 则说明系统真正警惕的是“危险 allow rule 绕过仲裁层”，而不是能力本身存在。
 - 第二批安全专题继续压实后，可以更系统地写出四条工程判断：`pathValidation.ts` 把 safety check 放在 working-dir 自动允许之前，说明安全优先于目录便利；`auth.ts` 与 `managedEnv.ts` 共同说明认证来源与配置来源都被分层治理，真正危险的是运行时语义被污染；`WebFetchTool/preapproved.ts` 把预批准 GET 域名和 sandbox 网络权限刻意分离，说明读取语义与写入语义被分别治理；`hooksConfigSnapshot.ts` 则说明 hooks 的核心问题不是脚本本身，而是谁拥有插入执行点的主权。
 - `secureStorage/*` 还显示出另一条成熟设计：系统先争取 OS keychain 这类更安全介质，再在必要时降级到 plaintext，并显式告知风险；同时 `fallbackStorage.ts` 还处理了旧凭证遮蔽新凭证这一类真实运行时故障，说明它的安全设计不是抽象口号，而是具体到凭证新旧、缓存和回退顺序的工程治理。
+- 最后一轮收尾后，`security/06` 已经把这组专题重新压成六条最小公理：来源先于值、仲裁先于放行、外部世界不是默认可信上下文、高阶资格不等于传输层连通、高风险便利必须由更强边界补偿、安全设计必须可解释。这样一来，`bluebook/security/` 已经形成了从方法论、机制、哲学到第一性原理反思的完整独立板块。
 
 ## 下一步待办
 
