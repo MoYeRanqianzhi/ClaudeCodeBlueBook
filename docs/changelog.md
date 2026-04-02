@@ -2,6 +2,8 @@
 
 ## 2026-04-02
 
+- 新增《Host Implementation反例导航：宿主只看卡片、CI只看通过、评审只看顺序与交接只看导出包》《Prompt Host Implementation反例：只看卡片存在、只看CI通过与只交接摘要包》《治理 Host Implementation反例：只看仪表盘转绿、只看审批结束与对象升级失语》《结构 Host Implementation反例：只看门禁存在、只看恢复通过与危险路径口头化》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“Host Implementation 检查点层”继续推进到“Host Implementation 实施级失真层”
+- 新增《Host Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点》《Prompt Evidence Envelope落地手册：宿主消费、CI门禁、评审顺序与交接包》《治理 Evidence Envelope落地手册：决策窗口、仲裁证据、对象升级与回退门禁》《结构 Evidence Envelope落地手册：权威面、恢复资产、反zombie 与交接闸门》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“Evidence Envelope 失真样本层”继续推进到“Host Implementation 检查点层”
 - 新增《Evidence Envelope反例导航：宿主猜状态、CI只看阈值、评审只看结论与交接只读历史》《Prompt Evidence Envelope反例：原文崇拜、汇总崇拜与只读历史交接》《治理 Evidence Envelope反例：只看Token、只看审批与只看结果》《结构 Evidence Envelope反例：只看文件Diff、目录美观与作者记忆》，并同步回写主索引、案例库 README 与开发文档，把蓝皮书从“共享 Evidence Envelope 层”继续推进到“Evidence Envelope 失真样本层”
 - 新增《Evidence Envelope导航：宿主、CI、评审与交接如何共享升级真相》《共享证据包络：宿主、CI、评审与接手如何共用同一升级真相》《Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序》《如何用苏格拉底诘问法审读Evidence Envelope：对象、窗口、字节与回退边界》《真正成熟的证据，不只解释过去，还要约束未来判断》，并同步回写主索引、专题 README 与开发文档，把蓝皮书从“证据真相面与宿主消费层”继续推进到“共享 Evidence Envelope 层”
 - 新增《证据接口导航：从Rollout ABI到宿主消费、回退对象与复盘真相面》《升级证据真相面：状态写回、可观测Diff、决策窗口与回退对象》《Rollout证据消费API手册：worker_status、external_metadata、Context Usage与回退对象边界》《如何让宿主、评审者与后来者共享同一Rollout ABI：对象、指标、回退与附件消费顺序》《真正成熟的Runtime，不只会运行当前任务，还会为下一次升级保存判断条件》，并同步回写主索引、专题 README 与开发文档，把蓝皮书从“统一证据 ABI 层”继续推进到“证据真相面与宿主消费层”
