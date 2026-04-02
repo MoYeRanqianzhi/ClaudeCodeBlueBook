@@ -1149,6 +1149,7 @@
 - 在 `28-显式降级理论` 之后，再补一个 `appendix/12-宿主降级速查表` 就很自然了：长文已经把 bridge、direct connect、remote session manager 和适配层的差异解释清楚，但实现和评审时仍然需要一张更短的宿主矩阵。把宿主类型、支持子集、显式失败方式和安全风险压进一页后，安全专题就第一次拥有了直接用于宿主分级和降级风险检查的宿主级速查表。 
 - 继续往前推进后，可以更明确地把 `29-宿主资格等级` 单独写出来：`28` 已经解释了为什么显式降级重要，但还没有回答“宿主到底有资格承担哪一层责任”。`StructuredIO.ts` 之所以关键，不在于它接了控制消息，而在于它处理 duplicate / orphan / cancel / resolved tool_use_id 这一整套一致性问题；`RemoteIO.ts` 则更进一步，承担了 restored worker state、internal event read/write、delivery / state / metadata 回写；`remoteBridgeCore.ts` 又把 401 恢复窗口中的动作丢弃和状态回写纪律做实。相比之下，`DirectConnectManager.ts` 与 `RemoteSessionManager.ts` 更像诚实的控制宿主，而 `sdkMessageAdapter.ts` 最多只是投影型观察宿主。因此 `29` 的核心结论是：统一安全控制台不该再只区分“完整/不完整宿主”，而应正式区分观察宿主、控制宿主与证明宿主。 
 - 在 `29-宿主资格等级` 之后，再补一个 `appendix/13-宿主资格速查表` 就很自然了：长文已经把观察、控制、证明三层责任说清楚，但实现评审时仍然需要一张更短的资格矩阵。把三层资格、最低责任、典型实现和“不能声称什么”压进一页后，安全专题就第一次拥有了可以直接拿来做宿主标注和资格审计的责任级速查表。 
+- 继续往前推进后，可以更明确地把 `30-安全真相源层级` 单独写出来：`29` 已经说明不同宿主承担的责任不同，但还没有回答“它们到底在依赖哪一层真相”。`sessionState.ts` 已经把 requires_action 真相拆成 typed details 和 `external_metadata.pending_action` 两条路径；`WorkerStateUploader.ts` 又明确告诉我们 `worker_status` 与 `external_metadata` 是一层 mergeable、可重试、可复制的 worker 真相，而不是原始事件本体；`ccrClient.ts` 则负责 init 时清 stale metadata、读回 worker state，并持续 reportState/reportMetadata；`onChangeAppState.ts` 和 `print.ts` 再把复制真相灌回本地交互真相。这使得 `30` 的核心结论很清楚：安全控制面真正要治理的，不只是对象和宿主，还是真相层级本身，任何单一表面都不能冒充全部安全真相。 
 
 ## 下一步待办
 
