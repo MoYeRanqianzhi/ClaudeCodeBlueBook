@@ -441,4 +441,6 @@
 - 想把 `115` 的长文压成一张接口矩阵，快速看出不同 interface 的 current state、missing hook 与 recommended contract：`115` -> `appendix/99`
 - 想看为什么即使验证制度化接口已经明确，这份研究版源码若要真正走向可持续安全工程，仍必须先固化边界并按阶段迁移，而不能假装可以一步到位重构：`115` -> `116`
 - 想把 `116` 的长文压成一张迁移矩阵，快速看出不同 phase 的 goal、repo touchpoint 与 exit criteria：`116` -> `appendix/100`
+- 想看为什么即使迁移路线图已经明确，仍不能把 phase 只写成顺序列表，而必须让每个阶段都拥有明确的 entry gate、exit criteria 与 forbidden shortcut：`116` -> `117`
+- 想把 `117` 的长文压成一张阶段门矩阵，快速看出不同 phase 的 entry gate、exit criteria 与 forbidden shortcut：`117` -> `appendix/101`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
