@@ -1,23 +1,23 @@
-# 宿主修复稳态纠偏再纠偏再纠偏导航：Prompt、治理与故障模型再纠偏执行失真如何压回固定顺序、拒收升级路径与改写模板骨架
+# 宿主修复稳态纠偏再纠偏改写导航：Prompt、治理与故障模型再纠偏执行失真如何压回固定顺序、拒收升级路径与改写模板骨架
 
 这一篇不再回答“宿主修复稳态纠偏再纠偏执行最常怎样失真”，而是回答：
 
-- 当 `recorrection card`、`reject verdict order` 与 `re-entry / reopen liability drill` 已经被证明仍会重新退回假 `recorrection card`、假 `reject` 顺序与假 `reopen` 责任演练之后，团队到底该怎样把这些再纠偏执行失真重新压回固定顺序、拒收升级路径与改写模板骨架，才能不让更制度化的恢复叙事再次接管对象真相。
+- 当 `recorrection card`、`reject verdict order` 与 `re-entry / reopen liability drill` 已被证明仍会退回假 `recorrection card`、假 `reject` 顺序与假 `reopen` 责任演练之后，团队到底该怎样把这些再纠偏执行失真重新压回固定顺序、拒收升级路径与改写模板骨架，才不让更制度化的恢复叙事再次接管对象真相。
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏失真反例层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏再纠偏层”。
+1. 为什么宿主修复稳态纠偏再纠偏失真反例层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写层”。
 2. 为什么 Prompt 线如果不继续把假 `recorrection card`、假 `protocol repair`、假 `lawful forgetting reseal`、前缀平静表演与假 `threshold liability` 压回同一个 `compiled request truth`，Prompt 魔力就会重新退回更会解释的 UI 历史、summary 与默认继续。
 3. 为什么治理线如果不继续把假 `authority source`、假 `decision window`、免费继续回魂、假责任托管与假 `threshold rebinding` 压回同一个统一定价治理对象，安全设计与省 token 设计就会重新拆回 mode 面板、usage dashboard 与经验保守建议。
 4. 为什么结构线如果不继续把假 `authority surface`、伪 `single-source`、假 `lineage reproof`、伪 `anti-zombie evidence` 与假 `reopen liability` 压回同一个结构真相面，源码先进性就会重新退回 pointer 健康感、telemetry 转绿、archive prose 与作者记忆。
 5. 怎样用第一性原理与苏格拉底式追问避免把这层写成“把 recorrection card 再做细一点”。
 
-## 1. Prompt 宿主修复稳态纠偏再纠偏再纠偏线
+## 1. Prompt 宿主修复稳态纠偏再纠偏改写线
 
 如果问题是：
 
 - 怎样把 Prompt steady-state correction-of-correction execution distortion 从假 `recorrection card`、假 `protocol repair`、假 `lawful forgetting reseal`、前缀平静表演与假 `threshold liability` 重新压回同一个 `compiled request truth`。
-- 哪些现象一旦出现，就说明 `recorrection_object`、`protocol transcript`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 已重新退回 prose、平静感与默认继续，必须直接升级拒收。
+- 哪些现象一旦出现，就说明 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 已重新退回 prose、平静感与默认继续，必须直接升级拒收。
 
 建议顺序：
 
@@ -32,9 +32,9 @@
 
 而是：
 
-- 把 Prompt recorrection execution distortion 重新压回同一个 request object、同一个 protocol truth、同一个 lawful forgetting boundary、同一个 continue qualification 与同一个 threshold liability
+- 把 Prompt recorrection execution distortion 重新压回同一个 request object、同一个 protocol truth、同一个 stable prefix、同一个 lawful forgetting boundary、同一个 continue qualification 与同一个 threshold liability
 
-## 2. 治理宿主修复稳态纠偏再纠偏再纠偏线
+## 2. 治理宿主修复稳态纠偏再纠偏改写线
 
 如果问题是：
 
@@ -56,12 +56,12 @@
 
 - 把治理 recorrection execution distortion 重新压回 authority、ledger、window、pricing、liability 与 threshold 共用的统一定价控制面
 
-## 3. 结构宿主修复稳态纠偏再纠偏再纠偏线
+## 3. 结构宿主修复稳态纠偏再纠偏改写线
 
 如果问题是：
 
 - 怎样把结构 steady-state correction-of-correction execution distortion 从假 `authority surface`、伪 `single-source`、假 `lineage reproof`、伪 `anti-zombie evidence` 与假 `reopen liability` 重新压回同一个结构真相面。
-- 哪些现象一旦出现，就说明 `authority surface`、`single-source`、`resume lineage`、`writeback custody`、`anti-zombie evidence` 与 `reopen liability` 已重新退回 pointer、telemetry、archive prose 与作者说明，必须直接升级拒收。
+- 哪些现象一旦出现，就说明 `authority object`、`authoritative path`、`writer chokepoint`、`lineage chain`、`anti-zombie evidence` 与 `reopen boundary` 已重新退回 pointer、telemetry、archive prose 与作者说明，必须直接升级拒收。
 
 建议顺序：
 
@@ -76,7 +76,7 @@
 
 而是：
 
-- 把结构 recorrection execution distortion 重新压回 authority、single-source、lineage、writeback、anti-zombie 与 reopen liability 共用的结构真相面
+- 把结构 recorrection execution distortion 重新压回 authority、single-source、writeback seam、lineage、anti-zombie 与 reopen liability 共用的结构真相面
 
 ## 4. 为什么这层更适合落在 guides
 
@@ -88,14 +88,14 @@
 
 而是：
 
-1. 纠偏时先冻结哪个假 recorrection 信号。
+1. 纠偏时先冻结哪个假恢复信号。
 2. 再救回哪个正式对象。
 3. 什么时候应直接 `hard reject`，而不是继续补 recorrection prose。
-4. `recorrection card`、`protocol repair block`、`window truth block`、`evidence restitution block` 与 `liability ticket` 该怎样重写，才能不再生成第二真相。
+4. `recorrection card`、`protocol repair block`、`window truth block`、`authority seam block` 与 `liability ticket` 该怎样重写，才能不再生成第二真相。
 
 这些都更接近：
 
-- correction guide、builder-facing 手册与制度化改写顺序
+- rewrite guide、builder-facing 手册与制度化改写顺序
 
 ## 5. 目录结构上的最小闭环
 
@@ -108,13 +108,13 @@
 5. `78` 是再纠偏协议
 6. `79` 是再纠偏执行
 7. `80` 是再纠偏执行失真
-8. `81` 是再纠偏再纠偏
+8. `81` 是再纠偏改写
 
 也就是说，`78-83` 这一段不该再被看成简单重复，而应被看成：
 
 - 协议对象如何进入执行
 - 执行如何重新说谎
-- 说谎后如何再次压回单一真相
+- 说谎后如何以固定顺序、硬拒收与改写模板再次压回单一真相
 
 ## 6. 第一性原理与苏格拉底式自检
 

@@ -151,6 +151,6 @@
 - `53-55` 负责 first-order correction execution；`56-58` 负责 correction-of-correction protocol execution。
 - `../navigation/80 -> ../casebooks/52-54` 继续回答“为什么这些稳态纠偏再纠偏执行明明已经存在，仍会重新退回假 recorrection card、假 reject 顺序与假 reopen 责任演练”。
 - `../navigation/81 -> ../guides/81-83` 继续回答“怎样把这些稳态纠偏再纠偏执行失真重新压回固定顺序、拒收升级路径与改写模板骨架”。
-- 再往下一层，应由 `../navigation/82 -> ../api/78-80` 继续回答“怎样把这些稳态纠偏再纠偏再纠偏继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面”。
+- 再往下一层，应由 `../navigation/82 -> ../api/78-80` 继续回答“怎样把这些稳态纠偏再纠偏改写继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。
