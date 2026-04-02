@@ -44,6 +44,7 @@
 - 想把迁移工单继续落成完整 rollout 证据样例，而不是只停在计划：`../navigation/18 -> 09 -> 10 -> 11`
 - 想把 rollout 样例继续压成统一 diff 卡、阶段评审卡、灰度结果卡与回退记录 ABI：`../navigation/19 -> 12 -> 13`
 - 想把统一 ABI 继续接回宿主消费、回退对象与复盘真相面：`../navigation/20 -> ../architecture/76 -> ../api/35 -> ../guides/34`
+- 想让这些证据继续被宿主、CI、评审与交接共享成同一套 envelope：`../navigation/21 -> ../architecture/77 -> ../api/36 -> ../guides/35`
 
 ## 与其他目录的边界
 
@@ -53,5 +54,6 @@
 - `playbooks/09-11` 继续回答“迁移后真实灰度发生了什么、看了哪些指标、如何回退”。
 - `playbooks/12-13` 继续回答“怎样把 rollout 证据压成统一 ABI，并给出最小填写样例”。
 - 再往下一层，应由 `navigation/20 -> architecture/76 -> api/35` 继续回答“这套 ABI 怎样进入宿主消费、回退对象与复盘真相面”。
+- 再往下一层，应由 `navigation/21 -> architecture/77 -> api/36` 继续回答“这些证据怎样被宿主、CI、评审与交接共享成同一套 envelope”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。

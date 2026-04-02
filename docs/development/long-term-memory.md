@@ -313,6 +313,12 @@
 - `navigation/20` 的职责应稳定为“统一 ABI 层如何进入宿主消费、回退对象与复盘真相面”，避免 `19` 同时承担模板接口与消费入口两类职责
 - `guides/34` 当前应负责让宿主、评审者与后来者共享同一套 rollout ABI，而不是各自维护一份解释
 - `philosophy/67` 当前应负责把“成熟 runtime = 保存下一次升级的判断条件”稳定成新的长期判断
+- 当 `navigation/20 + architecture/76 + api/35` 稳定后，下一步最值钱的不是继续补更多消费接口，而是补 shared evidence envelope 层：把宿主、CI、评审与交接四类消费者拉回同一套字段骨架
+- `architecture/77` 当前应负责 shared evidence envelope：明确同一套升级真相如何被不同消费者按不同粒度共同消费
+- `api/36` 当前应负责 evidence envelope 字段矩阵：把正式公共表面、宿主自建 envelope 与 internal hint 三层边界再压成四类消费者的共享消费顺序
+- `navigation/21` 的职责应稳定为“证据真相面如何进入共享 evidence envelope 层”，避免 `20` 同时承担消费接口与共享消费结构两类职责
+- `guides/35` 当前应负责用苏格拉底诘问法审读 shared evidence envelope，而不是继续只补流程化落地建议
+- `philosophy/68` 当前应负责把“成熟证据 = 约束未来判断”稳定成新的长期判断
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

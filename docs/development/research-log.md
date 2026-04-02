@@ -426,6 +426,25 @@
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-120`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00q. 证据真相面之后，下一层应进入 shared evidence envelope 层
+
+- 当 `navigation/20 + architecture/76 + api/35` 已经把统一 ABI 接回状态写回、diff 解释、decision window 与 rollback object boundary 后，下一步最值钱的不是继续补更多字段，而是补 shared evidence envelope：让宿主、CI、评审与交接继续共享同一套升级真相，而不是各自再造一层解释。
+- `architecture/77` 应把 shared envelope 至少拆成五层：对象真相、状态真相、compiled request truth、decision-window truth、rollback-boundary truth。这样不同消费者虽然消费粒度不同，但仍围绕同一骨架判断。
+- `api/36` 应把这层 shared envelope 明确压成字段矩阵：`session_state_changed / worker_status / external_metadata / Context Usage / control evidence` 属于正式公共表面，`observed_window / rollback_object / retained_assets / judgement` 属于宿主自建 envelope，而 cache-break 细项、bridge pointer、task patch 等仍应停留在 internal hint。
+- 这条线的第一性原理不是“让所有人看同一份日志”，而是“让所有人围绕同一套对象、窗口、字节与回退边界继续判断”；换句话说，成熟证据真正强的地方不是解释过去，而是约束未来判断。
+- `navigation/21` 因而成为必要入口：`20` 负责知道“哪些证据应被消费”，`21` 负责知道“这些证据怎样被宿主、CI、评审与交接共同消费成同一套 envelope”，否则蓝皮书会重新退回“接口存在，但共享判断不存在”。
+
+证据:
+
+- `claude-code-source-code/src/utils/sessionState.ts:92-146`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-90`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1745`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-360`
+- `claude-code-source-code/src/utils/messages.ts:1989-2075`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

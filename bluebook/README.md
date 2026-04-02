@@ -85,6 +85,7 @@
 - 想直接看这些迁移在灰度里留下了哪些 diff、指标和回退证据，再读 [navigation/18-Rollout样例导航：Diff、评审问题卡、灰度结果与回退记录](navigation/18-Rollout%E6%A0%B7%E4%BE%8B%E5%AF%BC%E8%88%AA%EF%BC%9ADiff%E3%80%81%E8%AF%84%E5%AE%A1%E9%97%AE%E9%A2%98%E5%8D%A1%E3%80%81%E7%81%B0%E5%BA%A6%E7%BB%93%E6%9E%9C%E4%B8%8E%E5%9B%9E%E9%80%80%E8%AE%B0%E5%BD%95.md)
 - 想把这些 rollout 证据继续压成统一 diff 卡、阶段评审卡、灰度结果卡与回退记录 ABI，再读 [navigation/19-Rollout模板导航：统一Diff卡、阶段评审卡、灰度结果卡与回退记录ABI](navigation/19-Rollout模板导航：统一Diff卡、阶段评审卡、灰度结果卡与回退记录ABI.md)
 - 想把这套统一 ABI 继续接回宿主消费、回退对象与复盘真相面，再读 [navigation/20-证据接口导航：从Rollout ABI到宿主消费、回退对象与复盘真相面](navigation/20-证据接口导航：从Rollout ABI到宿主消费、回退对象与复盘真相面.md)
+- 想把这套证据继续压成宿主、CI、评审与交接共享的 Evidence Envelope，再读 [navigation/21-Evidence Envelope导航：宿主、CI、评审与交接如何共享升级真相](navigation/21-Evidence Envelope导航：宿主、CI、评审与交接如何共享升级真相.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -241,6 +242,7 @@
 - 想直接看这些迁移在真实 rollout 里怎样被观测、怎样被证明、怎样被回退，再读 [navigation/18-Rollout样例导航：Diff、评审问题卡、灰度结果与回退记录](navigation/18-Rollout%E6%A0%B7%E4%BE%8B%E5%AF%BC%E8%88%AA%EF%BC%9ADiff%E3%80%81%E8%AF%84%E5%AE%A1%E9%97%AE%E9%A2%98%E5%8D%A1%E3%80%81%E7%81%B0%E5%BA%A6%E7%BB%93%E6%9E%9C%E4%B8%8E%E5%9B%9E%E9%80%80%E8%AE%B0%E5%BD%95.md)
 - 想直接看这些 rollout 证据怎样被收口成统一 ABI，而不是继续靠人手写故事，再读 [navigation/19-Rollout模板导航：统一Diff卡、阶段评审卡、灰度结果卡与回退记录ABI](navigation/19-Rollout模板导航：统一Diff卡、阶段评审卡、灰度结果卡与回退记录ABI.md)
 - 想直接看这些统一 ABI 怎样继续进入宿主、评审者与后来者的同一证据真相，再读 [navigation/20-证据接口导航：从Rollout ABI到宿主消费、回退对象与复盘真相面](navigation/20-证据接口导航：从Rollout ABI到宿主消费、回退对象与复盘真相面.md)
+- 想直接看这些证据怎样继续被宿主、CI、评审与交接共享成同一套 envelope，再读 [navigation/21-Evidence Envelope导航：宿主、CI、评审与交接如何共享升级真相](navigation/21-Evidence Envelope导航：宿主、CI、评审与交接如何共享升级真相.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
@@ -338,6 +340,10 @@
 ### 为什么统一证据 ABI 还必须继续进入宿主消费、回退对象与复盘真相面
 
 - `navigation/20 -> architecture/76 -> api/35 -> guides/34 -> philosophy/67`
+
+### 为什么证据真相面还必须继续收口成宿主、CI、评审与交接共享的 Evidence Envelope
+
+- `navigation/21 -> architecture/77 -> api/36 -> guides/35 -> philosophy/68`
 
 ### 为什么高行动力来自统一定价而不是统一放权
 
