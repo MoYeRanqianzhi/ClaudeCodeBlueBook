@@ -43,6 +43,8 @@
 31. [Artifact Rule Sample Kit导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何被反复验证](31-Artifact%20Rule%20Sample%20Kit%E5%AF%BC%E8%88%AA%EF%BC%9AHard%20Fail%E3%80%81Lint%20Warn%E3%80%81Reviewer%20Gate%E3%80%81Handoff%20Reject%20%E4%B8%8E%20Rewrite%20Hint%20%E5%A6%82%E4%BD%95%E8%A2%AB%E5%8F%8D%E5%A4%8D%E9%AA%8C%E8%AF%81.md)
 32. [Artifact Evaluator Harness导航：可重放验证、跨消费者对齐与 Drift 回归如何证明同一拒收语义](32-Artifact%20Evaluator%20Harness%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%8F%AF%E9%87%8D%E6%94%BE%E9%AA%8C%E8%AF%81%E3%80%81%E8%B7%A8%E6%B6%88%E8%B4%B9%E8%80%85%E5%AF%B9%E9%BD%90%E4%B8%8E%20Drift%20%E5%9B%9E%E5%BD%92%E5%A6%82%E4%BD%95%E8%AF%81%E6%98%8E%E5%90%8C%E4%B8%80%E6%8B%92%E6%94%B6%E8%AF%AD%E4%B9%89.md)
 33. [Artifact Harness Runner导航：Replay Queue、Alignment Gate、Drift Ledger 与 Rewrite Adoption 如何成为持续执行底盘](33-Artifact%20Harness%20Runner%E5%AF%BC%E8%88%AA%EF%BC%9AReplay%20Queue%E3%80%81Alignment%20Gate%E3%80%81Drift%20Ledger%20%E4%B8%8E%20Rewrite%20Adoption%20%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E6%8C%81%E7%BB%AD%E6%89%A7%E8%A1%8C%E5%BA%95%E7%9B%98.md)
+34. [Artifact Runner落地导航：Queue Policy、Alignment Gate、Drift Review 与 Adoption Runbook 如何进入团队手册](34-Artifact%20Runner%E8%90%BD%E5%9C%B0%E5%AF%BC%E8%88%AA%EF%BC%9AQueue%20Policy%E3%80%81Alignment%20Gate%E3%80%81Drift%20Review%20%E4%B8%8E%20Adoption%20Runbook%20%E5%A6%82%E4%BD%95%E8%BF%9B%E5%85%A5%E5%9B%A2%E9%98%9F%E6%89%8B%E5%86%8C.md)
+35. [源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界](35-%E6%BA%90%E7%A0%81%20Atlas%E5%AF%BC%E8%88%AA%EF%BC%9Aservices%E3%80%81tools%E3%80%81commands%20%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%E5%A6%82%E4%BD%95%E5%9B%9E%E5%88%B0%E6%9D%83%E5%A8%81%E5%85%A5%E5%8F%A3%E4%B8%8E%E6%B6%88%E8%B4%B9%E8%80%85%E8%BE%B9%E7%95%8C.md)
 
 和其他目录的关系：
 
