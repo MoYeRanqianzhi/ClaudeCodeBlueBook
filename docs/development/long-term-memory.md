@@ -339,6 +339,12 @@
 - `guides/37` 当前应负责治理 host implementation 审读模板：把 decision window、control arbitration、Context Usage、object upgrade 与 rollback object 压成统一审读 header
 - `guides/38` 当前应负责结构 host implementation 审读模板：把 authoritative path、recovery asset ledger、anti-zombie evidence、retained assets 与 danger paths 压成统一审读 header
 - `navigation/25` 的职责应稳定为“implementation distortion casebook 层如何进入 host implementation audit guide 层”，避免 `24` 同时承担事故样本与统一审读模板两类职责
+- 当 `navigation/25 + guides/36-38` 稳定后，下一步最值钱的不是继续补更多心法，而是补 host artifact contract：把宿主卡、CI附件、评审卡与 handoff package 压成统一工件协议
+- `api/37` 当前应负责 Prompt host artifact contract：把宿主卡、CI附件、评审卡与 handoff package 的 shared header 固定成 compiled request truth contract
+- `api/38` 当前应负责治理 host artifact contract：把四类工件的 shared header 固定成 current object、decision window、winner source、failure semantics 与 rollback object contract
+- `api/39` 当前应负责结构 host artifact contract：把四类工件的 shared header 固定成 authoritative path、recovery asset ledger、anti-zombie evidence、retained assets 与 rollback object contract
+- `philosophy/69` 当前应负责把“成熟工件 = 四类角色共享同一判断对象”稳定成新的长期判断
+- `navigation/26` 的职责应稳定为“host implementation audit guide 层如何进入 host artifact contract 层”，避免 `25` 同时承担审读模板与工件协议两类职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

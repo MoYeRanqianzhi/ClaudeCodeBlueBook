@@ -510,6 +510,24 @@
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
 - `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
 
+### A00v. host implementation audit guide 之后，下一层应进入 host artifact contract 层
+
+- 当 `navigation/25 + guides/36-38` 已经把 Prompt、治理与结构三条线的统一审读顺序写成 builder-facing 模板后，下一步最值钱的不是继续补更多审读心法，而是补 host artifact contract：把宿主卡、CI附件、评审卡与 handoff package 压成正式共享工件协议，让不同角色真正共享同一对象真相，而不是共享同一套格式。
+- `api/37` 应把 Prompt 线的 artifact contract 写成 shared header：先锁 prompt_object、authority source、assembly path、compiled request diff、stable bytes ledger、lawful forgetting ABI 与 next-step guard，再让宿主卡、CI附件、评审卡与 handoff package 只做不同投影；这样才能把 Prompt 魔力继续固定在 compiled request truth，而不是退回原文、卡片与摘要。
+- `api/38` 应把治理线的 artifact contract 写成 shared header：先锁 governance object、decision window、winner source、failure semantics、rollback object 与 object-upgrade rule，再让宿主卡、CI附件、评审卡与 handoff package 只做不同投影；这样才能把安全与省 token 继续固定在统一判断链，而不是退回绿色仪表盘与局部 KPI。
+- `api/39` 应把结构线的 artifact contract 写成 shared header：先锁 structure object、authoritative path、current read/write path、recovery asset ledger、anti-zombie evidence、retained assets 与 rollback object，再让宿主卡、CI附件、评审卡与 handoff package 只做不同投影；这样才能把源码先进性继续固定在对象级结构真相，而不是退回结构图、恢复结果与作者记忆。
+- `philosophy/69` 因而成为必要收束：成熟工件不是四套表单，而是四类角色共享同一判断对象；没有这层收束，artifact contract 很快又会退回存在性合规和表单繁殖。
+- `navigation/26` 因而成为必要入口：`25` 负责知道“怎样统一审读”，`26` 负责知道“怎样把统一审读真正压成共享工件协议”，避免蓝皮书重新停在审读层而没有 contract 层。
+
+证据:
+
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-520`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-82`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

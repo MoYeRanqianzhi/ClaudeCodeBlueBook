@@ -90,6 +90,7 @@
 - 想把这套 shared Evidence Envelope 继续真正落成宿主、CI、评审与交接检查点，再读 [navigation/23-Host Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点](navigation/23-Host%20Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点.md)
 - 想直接看这些检查点在实施里最常怎样重新退回形式主义，再读 [navigation/24-Host Implementation反例导航：宿主只看卡片、CI只看通过、评审只看顺序与交接只看导出包](navigation/24-Host%20Implementation反例导航：宿主只看卡片、CI只看通过、评审只看顺序与交接只看导出包.md)
 - 想把这些实施级失真继续反压成统一审读模板，再读 [navigation/25-Host Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计](navigation/25-Host%20Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计.md)
+- 想把这些统一审读模板继续落成宿主卡、CI附件、评审卡与交接包的正式协议，再读 [navigation/26-Host Artifact Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象](navigation/26-Host%20Artifact%20Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -251,6 +252,7 @@
 - 想直接看这套 envelope 怎样进一步进入宿主、CI、评审与交接的真实门禁，再读 [navigation/23-Host Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点](navigation/23-Host%20Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点.md)
 - 想直接看这些门禁在真实执行里最常怎样重新失真，再读 [navigation/24-Host Implementation反例导航：宿主只看卡片、CI只看通过、评审只看顺序与交接只看导出包](navigation/24-Host%20Implementation反例导航：宿主只看卡片、CI只看通过、评审只看顺序与交接只看导出包.md)
 - 想直接看这些实现层失真怎样继续被反压成统一审读模板，再读 [navigation/25-Host Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计](navigation/25-Host%20Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计.md)
+- 想直接看这些统一审读模板怎样继续落成共享工件协议，再读 [navigation/26-Host Artifact Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象](navigation/26-Host%20Artifact%20Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
@@ -368,6 +370,10 @@
 ### 为什么 Host Implementation 实施级失真还必须继续反压成统一审读模板
 
 - `navigation/25 -> guides/36 -> guides/37 -> guides/38 -> philosophy/68`
+
+### 为什么 Host Implementation 审读模板还必须继续落成共享工件协议
+
+- `navigation/26 -> api/37 -> api/38 -> api/39 -> philosophy/69`
 
 ### 为什么高行动力来自统一定价而不是统一放权
 

@@ -87,6 +87,8 @@
 - 想让宿主、评审者与后来者共享同一套 rollout 证据真相，而不是各自维护一份解释：`33 -> 34 -> ../navigation/20 -> ../architecture/76 -> ../api/35`
 - 想继续用第一性原理问题审读 shared evidence envelope 是否真的成立，而不是只看字段有没有填：`34 -> 35 -> ../navigation/21 -> ../architecture/77 -> ../api/36 -> ../philosophy/68`
 - 想把 host implementation 的检查点和反例继续反压成统一审读模板，而不是继续靠资深 reviewer 心法：`35 -> ../navigation/25 -> 36 -> 37 -> 38`
+- 想把这些统一审读模板继续压成正式共享工件协议，而不是继续靠不同角色各自导出材料：`../navigation/26 -> ../api/37 -> ../api/38 -> ../api/39`
+- 想把这些统一审读模板继续落成正式宿主卡、CI附件、评审卡与交接包协议，而不是继续靠团队本地约定：`../navigation/26 -> ../api/37 -> ../api/38 -> ../api/39`
 
 ## 与其他目录的边界
 
@@ -96,6 +98,8 @@
 - 需要长期运营、事故复盘、回归与演化演练时切到 [../playbooks/README.md](../playbooks/README.md)
 - 需要具体失败样本、事故原型与反模式样本库时切到 [../casebooks/README.md](../casebooks/README.md)
 - 再往下一层，应由 `../navigation/25 -> 36-38` 继续回答“怎样把 host implementation 检查点与失真样本统一压成 builder-facing 审读模板”。
+- 再往下一层，应由 `../navigation/26 -> ../api/37-39` 继续回答“怎样把统一审读对象压成宿主卡、CI附件、评审卡与 handoff package 的正式共享工件协议”。
+- 再往下一层，应由 `../navigation/26 -> ../api/37-39` 继续回答“怎样把这些统一审读模板真正压成共享工件协议”。
 
 后续继续补：
 

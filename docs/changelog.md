@@ -2,6 +2,7 @@
 
 ## 2026-04-02
 
+- 新增《Host Artifact Contract导航：宿主卡、CI附件、评审卡与交接包如何共享同一审读对象》《Prompt Host Artifact Contract：宿主卡、CI附件、评审卡与交接包的共享字段骨架》《治理 Host Artifact Contract：对象、窗口、仲裁、失败语义与回退工件协议》《结构 Host Artifact Contract：权威路径、恢复资产、反zombie 与交接包字段骨架》《真正成熟的工件，不是四套表单，而是四类角色共享同一判断对象》，并同步回写主索引、使用指南、API README 与开发文档，把蓝皮书从“Host Implementation 审读模板层”继续推进到“Host Artifact Contract 层”
 - 新增《Host Implementation审读导航：对象、权威源、窗口、回退边界与交接闸门如何统一审计》《Prompt Host Implementation审读模板：编译真相、稳定字节、合法遗忘与交接闸门》《治理 Host Implementation审读模板：决策窗口、仲裁证据、对象升级与回退边界》《结构 Host Implementation审读模板：权威路径、恢复资产、反zombie 与危险路径交接》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“Host Implementation 实施级失真层”继续推进到“Host Implementation 审读模板层”
 - 新增《Host Implementation反例导航：宿主只看卡片、CI只看通过、评审只看顺序与交接只看导出包》《Prompt Host Implementation反例：只看卡片存在、只看CI通过与只交接摘要包》《治理 Host Implementation反例：只看仪表盘转绿、只看审批结束与对象升级失语》《结构 Host Implementation反例：只看门禁存在、只看恢复通过与危险路径口头化》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“Host Implementation 检查点层”继续推进到“Host Implementation 实施级失真层”
 - 新增《Host Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点》《Prompt Evidence Envelope落地手册：宿主消费、CI门禁、评审顺序与交接包》《治理 Evidence Envelope落地手册：决策窗口、仲裁证据、对象升级与回退门禁》《结构 Evidence Envelope落地手册：权威面、恢复资产、反zombie 与交接闸门》，并同步回写主索引、使用指南、专题 README 与开发文档，把蓝皮书从“Evidence Envelope 失真样本层”继续推进到“Host Implementation 检查点层”
