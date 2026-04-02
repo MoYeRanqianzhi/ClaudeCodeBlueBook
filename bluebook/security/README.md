@@ -93,6 +93,7 @@
 71. [70-安全多重窄门：为什么Claude Code不是先给全量能力再补权限，而是逐层借出能力](70-%E5%AE%89%E5%85%A8%E5%A4%9A%E9%87%8D%E7%AA%84%E9%97%A8%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88Claude%20Code%E4%B8%8D%E6%98%AF%E5%85%88%E7%BB%99%E5%85%A8%E9%87%8F%E8%83%BD%E5%8A%9B%E5%86%8D%E8%A1%A5%E6%9D%83%E9%99%90%EF%BC%8C%E8%80%8C%E6%98%AF%E9%80%90%E5%B1%82%E5%80%9F%E5%87%BA%E8%83%BD%E5%8A%9B.md)
 72. [71-安全能力发布主权：为什么不是任何接入层都能把能力显示成可用入口](71-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E5%8F%91%E5%B8%83%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E6%8E%A5%E5%85%A5%E5%B1%82%E9%83%BD%E8%83%BD%E6%8A%8A%E8%83%BD%E5%8A%9B%E6%98%BE%E7%A4%BA%E6%88%90%E5%8F%AF%E7%94%A8%E5%85%A5%E5%8F%A3.md)
 73. [72-安全能力撤回主权：为什么不是任何层都能撤回已发布入口，必须由authoritative publisher改口](72-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E6%92%A4%E5%9B%9E%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%82%E9%83%BD%E8%83%BD%E6%92%A4%E5%9B%9E%E5%B7%B2%E5%8F%91%E5%B8%83%E5%85%A5%E5%8F%A3%EF%BC%8C%E5%BF%85%E9%A1%BB%E7%94%B1authoritative%20publisher%E6%94%B9%E5%8F%A3.md)
+74. [73-安全能力恢复主权：为什么不是任何层都能把已撤回入口重新恢复为可见可用](73-%E5%AE%89%E5%85%A8%E8%83%BD%E5%8A%9B%E6%81%A2%E5%A4%8D%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%82%E9%83%BD%E8%83%BD%E6%8A%8A%E5%B7%B2%E6%92%A4%E5%9B%9E%E5%85%A5%E5%8F%A3%E9%87%8D%E6%96%B0%E6%81%A2%E5%A4%8D%E4%B8%BA%E5%8F%AF%E8%A7%81%E5%8F%AF%E7%94%A8.md)
 
 ## 附录目录
 
@@ -178,6 +179,7 @@
 - 想直接看不同 surface 到底由谁发布能力入口、最危险的 overclaim 是什么，以及哪些层只能转述不能自报：看 `appendix/55`
 - 想直接看为什么不是任何镜像层都能把入口撤回，以及为什么撤回一项能力同样是一种主权改口：看 `72`
 - 想直接看不同 surface 到底由谁撤回入口、触发条件是什么，以及继续保留旧入口会形成哪种 stale promise：看 `appendix/56`
+- 想直接看为什么不是任何局部回暖信号都能把入口恢复回来，以及为什么能力恢复本质上是重新授权：看 `73`
 
 ## 和其他目录的关系
 
@@ -295,4 +297,5 @@
 - 想把 `71` 的长文压成一张发布主权矩阵，快速看出不同 surface 的 authoritative publisher、visible capability 与 forbidden overclaim：`71` -> `appendix/55`
 - 想看为什么能力撤回和能力发布一样都必须服从同一主权层，以及 why stale client、dead button 与局部隐藏都不足以代表正式撤回：`71` -> `72`
 - 想把 `72` 的长文压成一张撤回矩阵，快速看出不同 surface 的 revocation authority、retraction trigger 与 forbidden stale promise：`72` -> `appendix/56`
+- 想看为什么能力恢复不是简单回暖，而必须重新经过同一条主权链签字，以及 why `pending` 往往比“已可用”更诚实：`72` -> `73`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
