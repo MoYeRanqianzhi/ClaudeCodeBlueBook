@@ -1128,6 +1128,7 @@
 - 继续往源码内核层下钻后，可以更明确地把安全检测技术单独抽成一章：`dangerousPatterns.ts` / `permissionSetup.ts` / `permissions.ts` 说明系统先防“危险 allow rule 架空仲裁层”，`pathValidation.ts` 说明它防的不是路径复杂而是路径语义漂移，`WebFetchTool/preapproved.ts` / `mcpValidation.ts` / `services/mcp/config.ts` 说明外部入口被拆成读取、输出半径、连接定义权三类治理对象，`managedEnv.ts` / `settings.ts` / `validation.ts` / `pluginOnlyPolicy.ts` 则说明真正高风险的是低信任来源改写高风险运行时主链。因此补一个 `18-安全检测技术内核` 是有明确价值的，它把“安全控制面”进一步压成“检测链控制面”。 
 - 安全专题做到这里后，目录结构也应该从纯线性主目录升级成“主线 + 附录证据”：新增 `security/appendix/` 承载模块到结论的证据索引、图表和速查材料，能避免主目录继续无限拉长，也更符合后续继续做图谱化、表格化和证据化维护的方向。 
 - 在此基础上，再补一页 `appendix/02-安全检测速查表` 也很有价值：它把“风险对象 -> 检测模块 -> 第一硬拦截层 -> classifier 是否能替代 -> 最短结论”压成一张表，能明显降低后续继续扩写时对长文主线的反复跳转成本，也让 `security/18` 的高密度结论更适合被检索和引用。 
+- 当 `18-安全检测技术内核` 和 `19-安全不变量` 都成形后，再补一个 `20-边界失真理论` 就很自然了：这时安全专题已经不缺模块级证据，也不缺约束级总结，真正缺的是更高一层的统一解释。把规则失真、指称失真、主权失真、接口失真和解释失真压进同一套理论之后，`dangerousPatterns.ts`、`pathValidation.ts`、`managedEnv.ts`、`mcp/config.ts`、`permissionExplainer.ts` 这些原本分散的模块，就不再只是“不同文件里的不同检测”，而能被理解成同一条边界传递链上的不同修复点。这样 `security/20` 不重复技术细节，而是把整个安全专题推进到真正的本体论层。 
 
 ## 下一步待办
 
