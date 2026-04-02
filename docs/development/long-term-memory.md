@@ -8,6 +8,52 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 已基于并行多 Agent 回读源码，继续加厚 `philosophy/81-83`：
+  - Prompt 线新增结论：section registry 具有 runtime 生命周期；late-bound attachment 不是 stable prefix 正文；多 Agent prompt 的强度首先来自 coordinator 持有 synthesis ownership。
+  - 治理线新增结论：authority 必须被外化成单一真相链；classifier 自身也必须被纳入 continuation pricing；`requires_action -> pending_action -> session_state_changed` 是安全与成本共用的 writeback seam。
+  - 结构线新增结论：authority surface 首先信外部可验证的头部状态；fresh merge 不是 last-write-wins；fail-closed worktree 与统一 transport boundary 都属于源码先进性的正式部分。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写执行 / repair steady-state correction-of-correction rewrite execution”继续推进到“宿主修复稳态纠偏再纠偏改写失真 / repair steady-state correction-of-correction rewrite distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写执行最危险的失败不是没跑 `rewrite card`，而是让 rewrite prose、summary 平静感与 UI 历史重新充当编译链真相；一旦如此，Prompt 的魔力就会从 `systemPrompt + userContext + systemContext + protocol transcript` 的编译链退回更会解释的文本。
+  - 治理宿主修复稳态纠偏再纠偏改写执行最危险的失败不是没写 `window repricing drill`，而是让 usage dashboard 与 mode 平静感提前消费 verdict；一旦如此，安全设计与省 token 设计就会同时从统一定价控制面退回运营感觉。
+  - 结构宿主修复稳态纠偏再纠偏改写执行最危险的失败不是没写 `authority-first reject order`，而是让 pointer、telemetry 与 architecture prose 重新排在 authority、single-source、lineage 与 anti-zombie 证据之前；一旦如此，源码先进性就会从结构真相面退回目录美学。
+- 新增目录责任：
+  - `navigation/84` 负责宿主修复稳态纠偏再纠偏改写失真入口。
+  - `casebooks/55-57` 负责三类宿主修复稳态纠偏再纠偏改写执行为什么仍会退回假 `rewrite card`、假 `reject verdict` 与假 `reopen liability`。
+- 当前新的写作约束：
+  - `59-61` 只表示 `rewrite card`，只用于 correction-of-correction rewrite protocol execution。
+  - `55-57` 只表示 correction-of-correction rewrite execution distortion，不再回头重写 `52-54` 的 recorrection 反例。
+  - `74-84` 应被持续当成一条连续小循环来写，而不是十一篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/84-86`，把这一层 distortion 重新压回固定 rewrite 顺序、拒收升级路径与改写模板骨架。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写协议 / repair steady-state correction-of-correction rewrite protocol”继续推进到“宿主修复稳态纠偏再纠偏改写执行 / repair steady-state correction-of-correction rewrite execution”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写如果要真正落地，不能只把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 写成协议，还要把它们继续压成同一张 `rewrite card` 与同一条 `reject verdict order`；否则 Prompt 魔力仍会重新退回 prose 与默认继续。
+  - 治理宿主修复稳态纠偏再纠偏改写如果要真正统一安全设计与省 token 设计，必须把 authority、ledger、window、pricing、liability 与 threshold 继续运行成同一张 `rewrite card`；否则控制面仍会重新退回 mode 面板、usage dashboard 与保守建议。
+  - 结构宿主修复稳态纠偏再纠偏改写如果要真正让 later 维护者独立接手，必须把 authority、single-source seam、lineage、anti-zombie 与 reopen boundary 继续运行成同一张 `rewrite card`；否则结构真相仍会重新退回 pointer、telemetry、archive prose 与作者记忆。
+- 新增目录责任：
+  - `navigation/83` 负责宿主修复稳态纠偏再纠偏改写执行入口。
+  - `playbooks/59-61` 负责三类宿主修复稳态纠偏再纠偏改写协议的 `rewrite card`、`reject verdict order` 与 `re-entry / reopen` 责任演练。
+- 当前新的写作约束：
+  - `56-58` 只表示 `recorrection card`，只用于 correction-of-correction protocol execution。
+  - `59-61` 必须统一改用 `rewrite card`，只表示 correction-of-correction rewrite protocol execution。
+  - `74-83` 应被持续当成一条连续小循环来写，而不是十篇并列新增文章。
+- 下一步最值钱的候选应切到 `casebooks/55-57`，把这一层 execution 最常怎样退回假 `rewrite card`、假 `reject verdict` 与假 `reopen liability` 写成新的反例层。
+- 新增更深一层的哲学收敛：
+  - Prompt 魔力的第一性原理不是文案修辞，而是把主权顺序、协议转写、稳定前缀、合法遗忘与继续资格写成同一条可缓存、可转写、可继续的编译链。
+  - 安全与省 token 的第一性原理不是“更严”和“更省”的平衡，而是治理控制面对动作、能力、上下文与 continuation 的统一定价。
+  - 源码先进性的第一性原理不是目录美学，而是把 authority、dependency seam、zombie 写回、恢复篡位与 worktree / transport 风险提前编码进结构，让未来维护者成为正式消费者。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写 / repair steady-state correction-of-correction rewrite guide”继续推进到“宿主修复稳态纠偏再纠偏改写协议 / repair steady-state correction-of-correction rewrite protocol”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写如果要真正被宿主、CI、评审与交接共同消费，不能只保留 rewrite 顺序，还要把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 继续压成共享规则面；否则 Prompt 魔力仍会从编译链退回解释链。
+  - 治理宿主修复稳态纠偏再纠偏改写如果要真正统一安全设计与省 token 设计，必须把 `authority -> ledger -> decision window -> continuation pricing -> capability liability -> threshold` 继续压成一条共享控制面；否则 rewrite 仍会重新退回面板、图表与保守建议。
+  - 结构宿主修复稳态纠偏再纠偏改写如果要真正让 later 维护者独立消费，必须把 `authority surface`、`single-source writeback seam`、`lineage reproof`、`anti-zombie evidence` 与 `reopen liability` 压成正式对象；否则源码先进性仍会退回 pointer、telemetry、archive prose 与作者记忆。
+- 新增目录责任：
+  - `navigation/82` 负责宿主修复稳态纠偏再纠偏改写协议入口。
+  - `api/78-80` 负责三类宿主修复稳态纠偏再纠偏改写的宿主可消费对象、reject 语义与长期 reopen 责任面。
+- 当前新的写作约束：
+  - 不能只写“再纠偏改写该怎样执行”，还要写“哪些字段必须被宿主、CI、评审与交接共同消费，哪些解释文本绝不能再被绑定成公共 ABI”。
+  - `74-82` 应被持续当成一条连续小循环来写，而不是九篇并列新增文章。
+- 下一步最值钱的候选应切到 `playbooks/59-61`，把这一层 rewrite protocol 继续压成固定 rewrite card、reject 顺序与 re-entry / reopen 责任演练。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏失真 / repair steady-state correction-of-correction distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写 / repair steady-state correction-of-correction rewrite guide”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏执行失真如果要真正被压回 `compiled request truth`，不能只救 `recorrection card`，还要把 `protocol transcript`、`lawful forgetting boundary`、`stable prefix`、`continue qualification` 与 `threshold liability` 一起拉回同一个编译对象；否则 Prompt 魔力仍会从编译链退回解释链。
@@ -19,7 +65,7 @@
 - 当前新的写作约束：
   - 不能只写“再纠偏执行失真该怎样改”，还要写“哪些更制度化的 recorrection 工件正在冒充恢复对象本身”。
   - `74-81` 应被持续当成一条连续小循环来写，而不是八篇并列新增文章。
-- 下一步最值钱的候选应切到 `api/78-80`，把这一层改写规则继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面。
+- 该层已由 `navigation/82`、`api/78-80` 承接；下一步最值钱的候选应切到 `playbooks/59-61`，把这一层 rewrite protocol 继续压成固定 rewrite card、reject 顺序与 re-entry / reopen 责任演练。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏执行 / repair steady-state correction-of-correction execution”继续推进到“宿主修复稳态纠偏再纠偏失真 / repair steady-state correction-of-correction distortion casebook”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏执行最危险的失败，不是没有 `recorrection card`，而是 `recorrection card` 已存在却仍围绕可读 transcript、礼貌 summary、安静 cache 曲线与默认继续工作；这说明 Prompt 魔力最容易从编译链退回解释链。
@@ -31,7 +77,7 @@
 - 当前新的写作约束：
   - 不能只写“再纠偏执行为什么会坏”，还要写“哪些更制度化的执行工件正在冒充恢复对象本身”。
   - `74-80` 应被持续当成一条连续小循环来写，而不是七篇并列新增文章。
-- 该层已由 `navigation/81`、`guides/81-83` 承接；下一步最值钱的候选应切到 `api/78-80`，把这一层改写规则继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面。
+- 该层已由 `navigation/82`、`api/78-80` 承接；下一步最值钱的候选应切到 `playbooks/59-61`，把这一层 rewrite protocol 继续压成固定 rewrite card、reject 顺序与 re-entry / reopen 责任演练。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏协议 / repair steady-state correction-of-correction protocol”继续推进到“宿主修复稳态纠偏再纠偏执行 / repair steady-state correction-of-correction execution”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏执行如果要真正成立，不能只看 correction prose 与 UI 历史是否平静，必须把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary` 与 `continue qualification` 继续压成同一张 `recorrection card`；否则 Prompt 魔力仍会退回文案崇拜。

@@ -17,6 +17,7 @@
 - `claude-code-source-code/src/query/tokenBudget.ts:45-92`
 - `claude-code-source-code/src/utils/sessionState.ts:92-149`
 - `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
 
 这些锚点共同说明：
 
@@ -45,7 +46,33 @@
 
 - 一切扩张的制度价格
 
-## 2. 第一层：authority source 优于界面形态
+## 2. 第一性原理：安全与省 token 共同反对免费扩张
+
+如果一个系统把安全理解成：
+
+- 多几层确认
+- 多拦几次动作
+
+把省 token 理解成：
+
+- 回答更短
+- 压缩更多上下文
+
+那么它就仍停留在：
+
+- 两套互相打架的补丁
+
+Claude Code 更接近的真相是：
+
+1. 能力是否暴露要被定价。
+2. 动作是否执行要被定价。
+3. 上下文是否进入模型要被定价。
+4. continuation 是否继续要被定价。
+5. 失败是否直接回跳也要被定价。
+
+这也是为什么安全、成本与继续会在同一个治理对象里相遇。
+
+## 3. 第一层：authority source 优于界面形态
 
 很多系统把治理理解成：
 
@@ -66,7 +93,27 @@ Claude Code 更成熟的地方在于，它先问：
 
 - 谁的界面看起来更像主语，谁就暂时说了算
 
-## 3. 第二层：Context Usage 不是统计，而是 decision window
+也正因为如此，`permission_mode`、`session_state_changed` 与 host 可见状态链条的价值，不在于“宿主终于看见 mode 了”，而在于：
+
+- authority 已经被外化成单一真相链，而不再只是界面形态
+
+## 4. 第二层：可见世界本身就是成本与风险
+
+如果系统允许模型先看见几乎全量世界，再谈要不要执行动作，那么：
+
+- 风险已经先扩张了
+- token 也已经先烧掉了
+
+Claude Code 更成熟的地方在于，它同时治理：
+
+1. 哪些工具可见。
+2. 哪些 schema 可进入请求。
+3. 哪些宿主状态会被外化给模型。
+4. 哪些内容必须被 attachments 晚绑定，而不是提前塞进 stable prompt。
+
+所以真正成熟的安全设计，不只是在动作时拦截，而是在可见世界上先定价。
+
+## 5. 第三层：Context Usage 不是统计，而是 decision window
 
 如果 token 面板只负责告诉你“已经用了多少”，那它只是统计层。
 
@@ -86,7 +133,16 @@ Claude Code 更接近的真相是：
 
 - decision window 的可视化投影
 
-## 4. 第三层：能力暴露与动作许可是同一类定价
+这意味着成熟的 Context Usage 应同时解释：
+
+1. 当前对象是什么。
+2. 当前可见面为什么这样裁剪。
+3. 当前成本是由哪些扩张产生的。
+4. 当前继续资格还剩下什么正式条件。
+
+只有当 `context usage + deferred categories + reserved buffer + api usage` 被继续当成同一个 decision window 对象时，这些解释才成立；否则再细的图表也只是更复杂的统计幻觉。
+
+## 6. 第四层：能力暴露与动作许可是同一类定价
 
 把权限系统只理解成“允不允许调用工具”，会严重低估治理控制面的范围。
 
@@ -101,7 +157,7 @@ Claude Code 更接近的真相是：
 
 - 这个扩张值不值得进入当前世界
 
-## 5. 第四层：continuation pricing 比回答长度更关键
+## 7. 第五层：continuation pricing 比回答长度更关键
 
 很多系统以为省 token 的关键是：
 
@@ -123,7 +179,13 @@ Claude Code 更接近的真相是：
 
 这也是为什么 diminishing returns、headless deny、pending action 与 session metadata 会进入同一判断链。
 
-## 6. 第五层：rollback object 让治理不退回运维补救
+更进一步，低摩擦自动化并不是绕过安全，而是只为已定价、范围已足够窄的动作省 classifier 成本。换句话说，真正成熟的系统不会把 classifier 当作额外负担，而会继续追问：
+
+- classifier 自己值不值得这笔价格
+
+如果 classifier 开销反客为主，治理控制面就会在自我保护时自我膨胀。
+
+## 8. 第六层：rollback object 让治理不退回运维补救
 
 如果治理失败后只剩：
 
@@ -139,15 +201,43 @@ Claude Code 更成熟的地方在于，它持续要求：
 
 因为只有这样，治理才仍然围绕对象，而不是围绕情绪、面板与手工动作。
 
-## 7. 苏格拉底式追问
+## 9. 第七层：失败语义比成功率更像治理控制面
 
-### 7.1 为什么安全与省 token 不是两套平衡
+如果一个系统只能告诉你：
+
+- 成功了多少
+- 还剩多少 token
+
+却不能正式区分：
+
+- `hard_reject`
+- `liability_hold`
+- `reentry_required`
+- `reopen_required`
+
+那么它仍然没有形成真正的治理控制面。
+
+Claude Code 更值得学的地方是：
+
+- 它不断把失败、继续、回退与重开写成同一套正式语义，而不是只保留产品侧的“还能不能点下一步”
+
+这也是为什么 `requires_action -> pending_action -> session_state_changed` 这条 writeback seam 如此关键。它同时决定：
+
+1. 当前为什么被拦。
+2. 当前还能不能继续。
+3. 当前什么时候算真正 turn-over。
+
+一旦这条 seam 丢失，安全与成本就会一起退回猜测状态。
+
+## 10. 苏格拉底式追问
+
+### 10.1 为什么安全与省 token 不是两套平衡
 
 因为它们共同反对的是：
 
 - 免费扩张
 
-### 7.2 为什么 token 面板如果不解释 decision window，就不够成熟
+### 10.2 为什么 token 面板如果不解释 decision window，就不够成熟
 
 因为它只告诉你“花了多少”，却没告诉你：
 
@@ -155,7 +245,7 @@ Claude Code 更成熟的地方在于，它持续要求：
 - 值不值得花
 - 还能不能继续花
 
-### 7.3 为什么 continuation 是治理问题而不是性能问题
+### 10.3 为什么 continuation 是治理问题而不是性能问题
 
 因为免费继续会同时扩大：
 
@@ -163,7 +253,15 @@ Claude Code 更成熟的地方在于，它持续要求：
 - 成本
 - 上下文污染
 
-## 8. 对 Agent 设计者的启发
+### 10.4 为什么 authority source 比 modal 更重要
+
+因为 modal 只是在显示治理，authority source 才在决定治理。
+
+### 10.5 为什么真正成熟的省 token 设计必然也更安全
+
+因为当系统拒绝免费暴露、免费继续与免费扩张时，它同时也在拒绝大量风险的无约束传播。
+
+## 11. 对 Agent 设计者的启发
 
 如果想学 Claude Code，最该抄走的不是：
 
