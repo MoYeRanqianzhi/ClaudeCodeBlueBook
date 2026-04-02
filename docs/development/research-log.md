@@ -43,6 +43,16 @@
   - `navigation/77` 负责统一入口。
   - `guides/78-80` 负责三类宿主修复稳态纠偏执行失真的固定纠偏顺序、硬拒收项与模板骨架。
 - 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 guide 口号，而是考虑新的 `api/75-77`，把这些 steady-state correction-of-correction 继续压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面。
+
+### A048. 宿主修复稳态纠偏再纠偏之后，下一层应进入宿主修复稳态纠偏再纠偏协议层
+
+- Prompt repair steady-state correction-of-correction 即使已经被写成 guide，如果团队不能继续把 `compiled request truth` 归还、`protocol transcript` 修复、`lawful forgetting` 重封、`continuation qualification` 重绑与 `threshold liability` 恢复压成正式对象，Prompt 世界就仍会继续围绕 correction prose、UI 历史与默认继续工作；这说明 Prompt 线下一层最值钱的不是继续补 guide，而是把 repair steady-state correction-of-correction 压成 host-consumable protocol。
+- Governance repair steady-state correction-of-correction 即使已经被写成 guide，如果团队不能继续把 `authority source` 归还、`ledger` 重封、`decision window` 重冻、`continuation pricing` 重绑、`capability liability` 重托管与 `threshold` 重绑压成正式对象，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与保守建议工作；这说明治理线下一层最值钱的不是继续补 guide，而是把 repair steady-state correction-of-correction 压成 host-consumable protocol。
+- Structure repair steady-state correction-of-correction 即使已经被写成 guide，如果团队不能继续把 `authority surface` 归还、`single-source` 重封、`resume lineage` 复证、`writeback custody` 重绑、`anti-zombie evidence` 归还与 `reservation liability` 重绑压成正式对象，源码先进性就仍会继续围绕 pointer、telemetry、archive prose 与作者说明工作；这说明结构线下一层最值钱的不是继续补 guide，而是把 repair steady-state correction-of-correction 压成 host-consumable protocol。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏之后需要继续长出“宿主修复稳态纠偏再纠偏协议层”：
+  - `navigation/78` 负责统一入口。
+  - `api/75-77` 负责三类宿主修复稳态纠偏再纠偏的宿主可消费对象、reject 语义与长期 reopen 责任面。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 API 口号，而是考虑新的 `playbooks/56-58`，把这些 steady-state correction-of-correction protocol 继续压成固定 correction card、reject 顺序与 re-entry / reopen 责任演练。
 - `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
 - `claude-code-source-code/src/cli/structuredIO.ts:362-657`
 - `claude-code-source-code/src/cli/print.ts:1052-1075`
