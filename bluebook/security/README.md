@@ -391,4 +391,28 @@
 - 想把 `90` 的长文压成一张清理权限矩阵，快速看出不同 carrier、clearer、clear trigger 与 forbidden premature clear：`90` -> `appendix/74`
 - 想看为什么即使撤回权已经管住了，系统仍必须继续回答哪些恢复资产在资格未撤回前必须被主动保全：`90` -> `91`
 - 想把 `91` 的长文压成一张保全矩阵，快速看出不同 asset、preservation owner、expiry basis 与 forbidden early loss：`91` -> `appendix/75`
+- 想看为什么即使恢复资产已经被保住，系统仍必须继续为这些资产持续续保 freshness proof，而不是等它们静静变 stale：`91` -> `92`
+- 想把 `92` 的长文压成一张续保矩阵，快速看出不同 asset、freshness signal、refresh cadence 与 stale consequence：`92` -> `appendix/76`
+- 想看为什么即使恢复资产已经持续续保，系统仍不能让“当前目录里的那个 pointer”天然胜出，以及 why 多 worktree 并存时必须由最新活性证明而不是路径亲缘决定当前真相：`92` -> `93`
+- 想把 `93` 的长文压成一张仲裁矩阵，快速看出不同 candidate 的 admission gate、winner rule 与 loser handling：`93` -> `appendix/77`
+- 想看为什么即使仲裁规则已经正确，系统真正保护的仍不是 pointer、plugin 文件或 MCP client 这些工件，而是同一边界下的继续行动权：`93` -> `94`
+- 想把 `94` 的长文压成一张资格对象矩阵，快速看出不同 artifact 的 boundary binding、freshness proof、revocation gate 与 regrant path：`94` -> `appendix/78`
+- 想看为什么即使资格对象已经定义清楚，失效对象也不能靠残留工件直接回到 `current`，而必须先走 `pending`、`reload` 或 `fresh-session` 这类重签发路径：`94` -> `95`
+- 想把 `95` 的长文压成一张重签发矩阵，快速看出不同 artifact 的 revocation trigger、regrant path 与 forbidden shortcut：`95` -> `appendix/79`
+- 想看为什么即使重签发协议已经成立，`needsRefresh`、`pending`、retryable 与 `fresh-session-fallback` 这些中间态仍不能压成同一句“正在恢复”：`95` -> `96`
+- 想把 `96` 的长文压成一张中间态矩阵，快速看出不同 state 的 meaning、allowed promise 与 next action：`96` -> `appendix/80`
+- 想看为什么即使中间态语法已经分清，每一种状态仍只能说到自己的承诺上限，不能把 `pending`、`reconnecting` 或 `needsRefresh` 说成 `active`：`96` -> `97`
+- 想把 `97` 的长文压成一张承诺矩阵，快速看出不同 state 的 lexical ceiling、forbidden stronger claim 与 default route：`97` -> `appendix/81`
+- 想看为什么即使语言上限已经守住，每一种资格状态仍必须继续绑定唯一 dominant route，而不能把修复选择权外包给用户自己猜：`97` -> `98`
+- 想把 `98` 的长文压成一张动作路由矩阵，快速看出不同 state 的 dominant route、route owner 与 forbidden adjacent path：`98` -> `appendix/82`
+- 想看为什么即使正确默认动作已经存在，系统仍必须显式禁止那些看起来合理、却会破坏资格真相的近邻错路：`98` -> `99`
+- 想把 `99` 的长文压成一张禁令矩阵，快速看出不同 state 的 dominant route、forbidden adjacent path 与 block reason：`99` -> `appendix/83`
+- 想看为什么即使用户已经走上正确修复路径，系统仍不能立刻宣布资格已恢复，而必须等待对应 completion-signer 签字：`99` -> `100`
+- 想把 `100` 的长文压成一张完成矩阵，快速看出不同 action 的 completion-signer、completion signal 与 forbidden premature success：`100` -> `appendix/84`
+- 想看为什么即使 completion-signer 已经签字，不同 surface 仍只能看到完成真相的子集，而不应互相冒充完整控制台：`100` -> `101`
+- 想把 `101` 的长文压成一张完成投影矩阵，快速看出不同 surface 的 visible completion subset、hidden truth 与 overclaim risk：`101` -> `appendix/85`
+- 想看为什么即使完成投影已经分层，系统仍不应让用户自己猜某个 surface 漏看了什么，而应显式说明自己的投影盲区：`101` -> `102`
+- 想把 `102` 的长文压成一张差异显化矩阵，快速看出不同 surface 的 projection scope、missing truth 与 recommended disclosure：`102` -> `appendix/86`
+- 想看为什么即使差异显化理念已经成立，下一代控制台仍必须把 projection-scope、hidden-truth、handoff-route 做成结构化字段，而不是继续散落在注释里：`102` -> `103`
+- 想把 `103` 的长文压成一张字段矩阵，快速看出不同 projection protocol field 的 meaning、example source 与 UI gain：`103` -> `appendix/87`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
