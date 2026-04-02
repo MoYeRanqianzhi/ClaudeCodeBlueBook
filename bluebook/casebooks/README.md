@@ -25,6 +25,9 @@
 7. [07-按症状反查表：从表象回到Prompt、治理与结构根因](07-按症状反查表：从表象回到Prompt、治理与结构根因.md)
 8. [08-按阶段反查表：从design到evolution定位制度断裂点](08-按阶段反查表：从design到evolution定位制度断裂点.md)
 9. [09-按资产反查表：section、stable-bytes、shadow-stub与recovery-asset定位](09-按资产反查表：section、stable-bytes、shadow-stub与recovery-asset定位.md)
+10. [10-Prompt反例对照：长文案崇拜、主语漂移与共享前缀分叉](10-Prompt%E5%8F%8D%E4%BE%8B%E5%AF%B9%E7%85%A7%EF%BC%9A%E9%95%BF%E6%96%87%E6%A1%88%E5%B4%87%E6%8B%9C%E3%80%81%E4%B8%BB%E8%AF%AD%E6%BC%82%E7%A7%BB%E4%B8%8E%E5%85%B1%E4%BA%AB%E5%89%8D%E7%BC%80%E5%88%86%E5%8F%89.md)
+11. [11-安全反例对照：免费扩张、假预算器与不可撤销自动化](11-%E5%AE%89%E5%85%A8%E5%8F%8D%E4%BE%8B%E5%AF%B9%E7%85%A7%EF%BC%9A%E5%85%8D%E8%B4%B9%E6%89%A9%E5%BC%A0%E3%80%81%E5%81%87%E9%A2%84%E7%AE%97%E5%99%A8%E4%B8%8E%E4%B8%8D%E5%8F%AF%E6%92%A4%E9%94%80%E8%87%AA%E5%8A%A8%E5%8C%96.md)
+12. [12-源码反例对照：伪模块化、第二真相与zombie温床](12-%E6%BA%90%E7%A0%81%E5%8F%8D%E4%BE%8B%E5%AF%B9%E7%85%A7%EF%BC%9A%E4%BC%AA%E6%A8%A1%E5%9D%97%E5%8C%96%E3%80%81%E7%AC%AC%E4%BA%8C%E7%9C%9F%E7%9B%B8%E4%B8%8Ezombie%E6%B8%A9%E5%BA%8A.md)
 
 ## 按目标阅读
 
@@ -37,6 +40,7 @@
 - 想从现场症状直接反查，而不是先猜标签名：`07 -> ../navigation/14`
 - 想先按生命周期阶段判断问题诞生位置，而不是把所有锅都丢给 runtime：`08 -> ../navigation/14`
 - 想先按受损制度资产反查，而不是先按文件名搜索：`09 -> ../navigation/14`
+- 想把这些自反问题继续落成“同题坏解 vs Claude Code 式正解”的迁移样例：`../navigation/15 -> 10 -> 11 -> 12 -> ../navigation/16`
 
 ## 与其他目录的边界
 

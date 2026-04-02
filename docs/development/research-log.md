@@ -317,6 +317,29 @@
 - `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A00l. 自反审读层之后，下一层应进入反例对照层
+
+- 当 `navigation/15 + guides/30-32 + philosophy/63-65` 已经把制度压成设计自校层后，下一步最值钱的不是继续补更多诘问，而是补反例对照层：让同一个设计问题同时出现坏解法、坏的理由、Claude Code 式正解与改写路径。
+- `casebooks/10` 应把 Prompt 魔力最常见的伪优化写成对照样例：长文案崇拜、主语漂移、共享前缀分叉、边界错放、非法遗忘、接手断裂与 cache-aware assembly 失真。
+- `casebooks/11` 应把安全与省 token 最常见的伪成熟写成对照样例：免费扩张、假统一预算器、全量可见面、无决策增益检查、不可撤销自动化、错误失败语义与错误 continuation。
+- `casebooks/12` 应把源码先进性最常见的伪优化写成对照样例：伪模块化、第二真相、transport 差异泄漏、registry 变业务中心、恢复资产缺席、zombie 温床与未来维护者被排除。
+- `navigation/16` 因而成为必要入口：`15` 负责先问“该如何自校”，`16` 负责再看“同一个问题最容易怎样被做错”，避免蓝皮书只会给正确答案，却不会帮助团队识别自己已经采用了哪类坏答案。
+
+证据:
+
+- `claude-code-source-code/src/constants/prompts.ts:105-560`
+- `claude-code-source-code/src/query/stopHooks.ts:84-120`
+- `claude-code-source-code/src/services/PromptSuggestion/promptSuggestion.ts:184-270`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:235-1283`
+- `claude-code-source-code/src/query/tokenBudget.ts:1-93`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:367-860`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/query/config.ts:1-45`
+- `claude-code-source-code/src/query/deps.ts:1-40`
+- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
+- `claude-code-source-code/src/utils/cleanupRegistry.ts:1-21`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+
 ### A00c. 第二序制度层已经稳定成三条母线
 
 - `Prompt Constitution` 现在应被视为 prompt 深线的第二序终点：它不再讨论“哪段文案更强”，而讨论 prompt 的 section 宪法、角色优先级链、合法遗忘与可观测 diff。

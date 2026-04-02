@@ -286,6 +286,11 @@
 - `guides/31` 当前应负责安全与省 token 的苏格拉底审读：输入边界、失败语义、stable bytes、最小可见面、decision gain 与可撤销自动化
 - `guides/32` 当前应负责源码先进性的苏格拉底审读：authoritative surface、contract-first、leaf module、transport shell、recovery asset、anti-zombie 与未来维护者消费者
 - `navigation/15` 的职责应稳定为“现场诊断层如何进入设计自校层”，避免 `14` 同时承担事故排障与设计反思两类入口职责
+- 当 `navigation/15 + guides/30-32` 稳定后，下一步最值钱的不是继续补更多问题，而是补反例对照层：把同题坏解、伪优化与 Claude Code 式改写路径并排写清
+- `casebooks/10` 当前应负责 Prompt 反例对照：长文案崇拜、主语漂移、共享前缀分叉、边界错放、非法遗忘与接手断裂
+- `casebooks/11` 当前应负责安全反例对照：免费扩张、假统一预算器、全量可见面、无决策增益检查、不可撤销自动化、错误失败语义与错误 continuation
+- `casebooks/12` 当前应负责源码反例对照：伪模块化、第二真相、transport 泄漏、registry 变业务中心、恢复资产缺席、zombie 温床与未来维护者被排除
+- `navigation/16` 的职责应稳定为“设计自校层如何进入同题对照层”，避免 `15` 同时承担抽象诘问与对照样例两类入口职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释
