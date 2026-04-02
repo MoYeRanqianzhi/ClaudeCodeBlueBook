@@ -183,6 +183,7 @@
 - 想直接看为什么不是任何局部回暖信号都能把入口恢复回来，以及为什么能力恢复本质上是重新授权：看 `73`
 - 想直接看不同 surface 到底由谁重新授予入口、正式恢复链是什么，以及哪些“恢复”其实只是提前改口：看 `appendix/57`
 - 想直接看为什么不是任何表面都配把能力状态说成 `connected`、`active`、`installed` 或 `failed`，以及谁只能提醒、谁才配完整命名：看 `74`
+- 想直接看不同 surface 当前最多配说到哪一个能力词、哪些更满词绝对不能说，以及用户下一步该去哪确认：看 `appendix/58`
 
 ## 和其他目录的关系
 
@@ -303,4 +304,5 @@
 - 想看为什么能力恢复不是简单回暖，而必须重新经过同一条主权链签字，以及 why `pending` 往往比“已可用”更诚实：`72` -> `73`
 - 想把 `73` 的长文压成一张恢复矩阵，快速看出不同 surface 的 restoration authority、regrant path 与 forbidden premature return：`73` -> `appendix/57`
 - 想看为什么状态枚举和前台词法必须继续分层，以及 why `/status`、notification、footer 与 hook 不该说同样满的能力词：`71` -> `72` -> `73` -> `74`
+- 想把 `74` 的长文压成一张声明矩阵，快速看出不同 surface 的 visible inputs、max allowed lexicon 与 forbidden stronger claim：`74` -> `appendix/58`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
