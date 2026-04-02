@@ -1121,6 +1121,7 @@
 - 安全专题扩到 `00-12` 后，再单独补一个 `13-安全专题二级索引` 就很有必要：安全目录现在已经同时覆盖方法论、机制、状态机、主权矩阵、攻击面矩阵、可解释性和平台路线图，如果没有问题导向入口，读者很容易重新退回线性顺读。这个二级索引把专题按问题、攻击面、主权冲突、平台改进四种入口重新组织，后续继续扩充章节时也更不容易破坏整体可读性。 
 - 继续往“总图化”推进后，安全专题已经足够成熟，可以单独补一个 `14-安全控制面总图`：它把 trust、配置来源、permission mode、动作仲裁、环境隔离、外部入口、身份 entitlement 和解释层重新串成一条全链结构图谱。这样一来，`security/00-13` 不再只是散点深化，而能被重新压回同一张总图，作为后续继续新增章节时的参照坐标。 
 - 在这之后，再单独补一个 `15-来源主权总表` 就有了明确价值：`settings/settings.ts` 里的 policy first-source-wins、`managedEnv.ts` 的 host-managed provider env、`permissionsLoader.ts` / `hooksConfigSnapshot.ts` / `mcp/config.ts` / `pluginOnlyPolicy.ts` 的 managed-only 与 plugin-only 收口、以及 `managedPlugins.ts` / `marketplaceHelpers.ts` 对插件供应链主权的收束，已经足够支持一张“谁能定义、谁能覆盖、谁能最终收口”的总表。这让安全专题不只是在讲机制，而是在讲整套系统的主权编排。 
+- 有了总图和总表之后，再单独补一个 `16-安全反模式与反公理` 就很自然了：`shadowedRuleDetection.ts` 说明“规则写上去”不等于规则真正可达，`managedEnv.ts` 说明 project/local settings 不是随意改写主链的合法入口，`bridgeEnabled.ts` 说明兼容不等于 entitlement 等价，`validation.ts` 说明系统宁愿过滤坏规则也不让一个坏值毒化整份设置文件。把这些负面教材单独收束后，安全专题就不再只有“正面原则”，也有了一套“哪些做法会慢慢掏空边界”的反公理。 
 
 ## 下一步待办
 
