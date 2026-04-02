@@ -409,4 +409,6 @@
 - 想把 `99` 的长文压成一张禁令矩阵，快速看出不同 state 的 dominant route、forbidden adjacent path 与 block reason：`99` -> `appendix/83`
 - 想看为什么即使用户已经走上正确修复路径，系统仍不能立刻宣布资格已恢复，而必须等待对应 completion-signer 签字：`99` -> `100`
 - 想把 `100` 的长文压成一张完成矩阵，快速看出不同 action 的 completion-signer、completion signal 与 forbidden premature success：`100` -> `appendix/84`
+- 想看为什么即使 completion-signer 已经签字，不同 surface 仍只能看到完成真相的子集，而不应互相冒充完整控制台：`100` -> `101`
+- 想把 `101` 的长文压成一张完成投影矩阵，快速看出不同 surface 的 visible completion subset、hidden truth 与 overclaim risk：`101` -> `appendix/85`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
