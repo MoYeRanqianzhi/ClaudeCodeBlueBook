@@ -38,6 +38,40 @@
 - `claude-code-source-code/src/utils/task/framework.ts:160-269`
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
 
+### A00m. 机制验证之后，下一层应进入机制失真反例层
+
+- `compiled request truth` 即使已经进入验证层，仍最容易死于多重真相生产者、协议真相泄漏、side loop 自行重建世界、lawful forgetting 退回摘要崇拜与 cache break 玄学化；这说明 Prompt 魔力如果不能被持续解释成“唯一编译链 + 唯一协议链 + 唯一继续链”，就会重新退回 prompt 崇拜。
+- `governance control plane object` 即使已经进入验证层，仍最容易死于 mode 崇拜、审批事件被误当 typed decision、Context Usage 退回 token 仪表盘、continuation 退回默认继续幻觉与 rollback 退回文件级回退；这说明治理控制面如果不能持续作为统一判断对象存在，就会重新退回局部 KPI。
+- `evolvable kernel object boundary` 即使已经进入验证层，仍最容易死于多点权威、dependency seam 被打穿、陈旧快照回写 fresh state、recovery asset 篡位与 anti-zombie 口头化；这说明源码先进性如果不能持续编码故障模型，就会重新退回目录审美与作者记忆。
+- 这意味着蓝皮书在“机制验证层”之后需要继续长出“机制失真反例层”：
+  - `navigation/40` 负责统一入口。
+  - `casebooks/22-24` 负责三类对象最常见的形式主义替身与坏解法。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补坏解法列表，而是考虑新增 `philosophy/81+`，把 Prompt 编译链魔力、统一定价治理与故障模型编码重新压成更不可约的判断。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/utils/api.ts:321-405`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5460`
+- `claude-code-source-code/src/services/compact/prompt.ts:61-143`
+- `claude-code-source-code/src/services/compact/compact.ts:330-366`
+- `claude-code-source-code/src/query/stopHooks.ts:175-331`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-260`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:464-519`
+- `claude-code-source-code/src/cli/structuredIO.ts:149-657`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/utils/sessionState.ts:92-149`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/query/config.ts:1-45`
+- `claude-code-source-code/src/query/deps.ts:1-40`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/utils/queryContext.ts:1-140`
+
 ### A00k. 方法层之后，最值钱的是把三条线重新回灌成机制层对象
 
 - Prompt 线下一步不应继续停在 Prompt Constitution 或上下文编译方法，而应继续把 `section law + stable prefix producer + protocol transcript + lawful forgetting + cache-break observability` 收口成同一个 `compiled request truth` 对象。

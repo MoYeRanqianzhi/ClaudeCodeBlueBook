@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“机制验证 / 持续回归”继续推进到“机制失真 / 形式主义反例”层。
+- 新增结论：
+  - `compiled request truth` 最危险的失败方式不是 prompt 变短，而是重新长出多重真相生产者、协议真相泄漏与 lawful forgetting 失忆。
+  - `governance control plane object` 最危险的失败方式不是没有治理，而是退回 mode 崇拜、token 仪表盘崇拜与默认继续幻觉。
+  - `evolvable kernel object boundary` 最危险的失败方式不是没有结构，而是退回多点权威、恢复资产篡位与 anti-zombie 口头化。
+- 新增目录责任：
+  - `navigation/40` 负责机制失真入口。
+  - `casebooks/22-24` 负责三类机制对象的形式主义反例与误读样本。
+- 当前新的写作约束：
+  - 不再只写“对象怎样成立”或“对象怎样验证”，还要写“它最常怎样被伪装成已经成立”。
+  - 每次继续深化都要回答“哪一种替身最像对的”“后来者怎样一眼拒绝这种替身”。
 - 蓝皮书已经从“机制回灌 / 支持面收口”继续推进到“机制验证 / 持续回归”层。
 - 新增结论：
   - `compiled request truth` 如果不能被持续验证 continuity，就会重新退回原文 prompt 崇拜。
