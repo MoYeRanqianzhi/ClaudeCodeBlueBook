@@ -1163,6 +1163,7 @@
 - 在 `35-安全多账本原则` 之后，再补一个 `appendix/19-安全多账本速查表` 就很自然了：长文已经把语义账、复制账、可见账与恢复账的职责差别讲清楚，但实现和评审时仍然需要一张更短的账本矩阵。把每本账的主要读者、主要写入口、提交边界与误判成本压进一页后，安全专题就第一次拥有了可直接用于回答“这个读者到底该信哪一本账”的速查表。 
 - 继续往前推进后，可以更明确地把 `36-安全账本投影原则` 单独写出来：`35` 已经回答了“为什么有多本账”，但还没有回答“为什么不同宿主不可能都看到全部账”。`coreSchemas.ts` 与 `controlSchemas.ts` 先给出宽协议全集；`StructuredIO.ts` 则明确默认宿主没有恢复账与 internal-event flush；`RemoteIO.ts` 通过 `CCRClient`、internal event reader/writer、`reportState/reportMetadata` 和 `restoredWorkerState` 拿到更厚的投影；`DirectConnectManager.ts` 与 `RemoteSessionManager.ts` 又只正式支持 `can_use_tool` 这一类窄 control 子集；`remoteBridgeCore.ts` 虽然更宽，但在 recovery 窗口仍会主动 drop 一部分控制与结果。这使得 `36` 的核心结论很清楚：宿主不是完整安全控制台，而是多账本系统上的条件化投影，协议全集绝不等于宿主全集。 
 - 在 `36-安全账本投影原则` 之后，再补一个 `appendix/20-宿主账本投影速查表` 就很自然了：长文已经把默认 `StructuredIO`、`RemoteIO + CCR v2`、`DirectConnect`、`RemoteSessionManager` 与 `remoteBridgeCore` 这些宿主的账本子集差别讲清楚，但实现和评审时仍然需要一张更短的宿主矩阵。把“每类宿主能看到哪些账、能写哪些账、明显缺哪几本账、最危险的误读是什么”压进一页后，安全专题就第一次拥有了可直接用于宿主接入评审和解释责任分配的速查表。 
+- 在 `37-安全解释权限` 之后，再补一个 `appendix/21-安全解释权限速查表` 就很自然了：长文已经把不同宿主的解释边界讲清楚，但实现和评审时仍然需要一张更短的权限矩阵。把“每类宿主实际看到了什么、明显没看到什么、可以诚实说什么、绝不能替系统说什么”压进一页后，安全专题就第一次拥有了可直接用于解释责任分配和宿主 UI 文案审查的速查表。 
 
 ## 下一步待办
 
