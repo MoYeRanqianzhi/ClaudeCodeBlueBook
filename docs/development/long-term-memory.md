@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复监护协议 / repair watch contract”继续推进到“宿主修复监护执行 / repair watch execution”层。
+- 新增结论：
+  - Prompt 宿主修复监护如果要真正落地运行，必须继续围绕 watch window、continuation watch、baseline drift ledger、handoff watch 与 reopen gate 执行固定漂移判定顺序，而不是继续围绕 closeout note、summary handoff 与观察建议判断。
+  - 治理宿主修复监护如果要真正落地运行，必须继续围绕 authority watch、ledger residue、window watch、continuation repricing watch 与 rollback quarantine 执行固定漂移判定顺序，而不是继续围绕 mode 面板、usage 图表与保守建议判断。
+  - 结构宿主修复监护如果要真正落地运行，必须继续围绕 authority watch、resume regression watch、writeback watch、anti-zombie watch 与 boundary quarantine 执行固定漂移判定顺序，而不是继续围绕 pointer、监控成功率与作者口述判断。
+- 新增目录责任：
+  - `navigation/63` 负责宿主修复监护执行入口。
+  - `playbooks/44-46` 负责三类宿主修复监护协议的 watch card、drift verdict order 与 reopen 演练手册。
+- 当前新的写作约束：
+  - 不再只写“该消费哪些 watch contract 字段”，还要写“现场先看什么、何时冻结 handoff 或 capability expansion、何时必须 reopen、漂移判定到底回哪个对象边界”。
+  - 每次继续深化都要回答“当前 watch execution 保护的是单一真相的长期延续，还是只是在把监护协议重新翻译成更细的观察表单”。
 - 蓝皮书已经从“宿主修复收口纠偏 / repair closeout correction guide”继续推进到“宿主修复监护协议 / repair watch contract”层。
 - 新增结论：
   - Prompt 宿主修复收口纠偏如果要真正保持结束能力，必须继续把 `monitor_only`、handoff watch、baseline drift ledger 与 reopen gate 压成正式监护对象，而不是继续围绕 closeout note、summary handoff 与‘先观察一下’工作。
