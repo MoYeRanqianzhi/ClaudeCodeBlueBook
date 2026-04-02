@@ -626,6 +626,34 @@
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
 - `claude-code-source-code/src/utils/task/framework.ts:160-248`
 
+### A012. artifact evaluator harness / replay lab 之后，下一层应进入 artifact harness runner / drift ledger 层
+
+- 当 `navigation/32 + playbooks/23-25` 已经把 Prompt、治理与结构三条线的 replay case、cross-consumer alignment、drift regression 与 rewrite replay 写出来之后，下一步最值钱的不是继续补更多实验室 case，而是补 artifact harness runner / drift ledger：把 replay queue、alignment assertion、drift ledger 与 rewrite adoption 接成可持续执行底盘。
+- `api/43` 应把 Prompt 线继续写成 harness runner 协议：先锁 `prompt_object_id`、`compiled_request_diff_ref`、`stable_bytes_ledger_ref`、`lawful_forgetting_abi_ref` 与 `next_step_guard`，再把 replay verdict、drift ledger 与 rewrite adoption 接成同一条 continuation 对象链；这样才能把 Prompt 魔力继续固定在 shared continuation，而不是退回原文、绿灯与摘要。
+- `api/44` 应把治理线继续写成 harness runner 协议：先锁 `governance_object_id`、`decision_window`、`control_arbitration_truth`、`rollback_object` 与 `next_action`，再把 replay verdict、drift ledger 与 object upgrade 接成同一条 decision-gain 对象链；这样才能把安全与省 token 继续固定在统一决策增益，而不是退回局部 KPI。
+- `api/45` 应把结构线继续写成 harness runner 协议：先锁 `structure_object_id`、`authoritative_path`、`recovery_asset_ledger`、`anti_zombie_evidence`、`dropped_stale_writers` 与 `rollback_object`，再把 replay verdict、drift ledger 与 recovery adoption 接成同一条 authority 对象链；这样才能把源码先进性继续固定在 authoritative surface 与 stale-writer 清退，而不是退回结构展示。
+- `architecture/78` 因而成为必要底盘：真正成熟的验证运行时，不只会 replay，还会排队、对齐、留痕并把修复重新接回下一轮执行。
+- `navigation/33` 因而成为必要入口：`32` 负责知道“实验室怎样证明共享拒收语义”，`33` 负责知道“这些实验室怎样继续进入持续执行底盘”，避免蓝皮书重新停在 replay lab 层而没有 runner / ledger 层。
+- `philosophy/74` 因而成为必要收束：真正成熟的验证底盘，不是更多实验室，而是回放、改写与台账共享同一持续执行语义；没有这层收束，runner 很快又会退回定时跑脚本。
+
+证据:
+
+- `claude-code-source-code/src/QueryEngine.ts:436-463`
+- `claude-code-source-code/src/QueryEngine.ts:734-750`
+- `claude-code-source-code/src/QueryEngine.ts:875-933`
+- `claude-code-source-code/src/query.ts:365-375`
+- `claude-code-source-code/src/query.ts:699-705`
+- `claude-code-source-code/src/services/compact/compact.ts:766-899`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:224-666`
+- `claude-code-source-code/src/utils/QueryGuard.ts:29-93`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:739-908`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-91`
+- `claude-code-source-code/src/utils/sessionState.ts:92-133`
+- `claude-code-source-code/src/cli/structuredIO.ts:149-657`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1085-1215`
+- `claude-code-source-code/src/tasks/RemoteAgentTask/RemoteAgentTask.tsx:386-845`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:21-184`
+
 证据:
 
 - `claude-code-source-code/src/constants/prompts.ts:491-557`

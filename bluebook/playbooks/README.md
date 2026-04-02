@@ -64,6 +64,7 @@
 - 想直接看这些最小共享工件在团队执行里最常怎样重新退回局部真相，而不是误把样例当落地完成：`../navigation/28 -> ../casebooks/19 -> ../casebooks/20 -> ../casebooks/21`
 - 想直接看这些 rule packet 在不同消费者里怎样被最小样例、失败样例与 rewrite 样例反复验证：`../navigation/31 -> 20 -> 21 -> 22`
 - 想直接看这些规则样例怎样继续被组织成可重放验证、跨消费者对齐与 drift 回归实验室：`../navigation/32 -> 23 -> 24 -> 25`
+- 想直接看这些实验室怎样继续进入 replay queue、alignment gate、drift ledger 与 rewrite adoption 的持续执行底盘：`../navigation/33 -> ../api/43 -> ../api/44 -> ../api/45 -> ../architecture/78 -> ../philosophy/74`
 
 ## 与其他目录的边界
 
@@ -82,5 +83,6 @@
 - 再往下一层，应由 `navigation/29 -> guides/39-41` 继续回答“怎样把这些局部真相漂移正式编译成自动校验、reviewer gate 与 handoff reject”。
 - 再往下一层，应由 `navigation/31 -> playbooks/20-22` 继续回答“怎样把这些 machine-readable 规则包压成可反复验证的最小样例、失败样例与 evaluator 接口”。
 - 再往下一层，应由 `navigation/32 -> playbooks/23-25` 继续回答“怎样把这些样例接口接成可重放验证、跨消费者对齐与 drift 回归实验室”。
+- 再往下一层，应由 `../navigation/33 -> ../api/43-45 -> ../architecture/78` 继续回答“怎样把这些实验室继续接成可持续执行的 runner / ledger 底盘”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。

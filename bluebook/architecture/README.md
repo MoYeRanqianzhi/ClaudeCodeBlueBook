@@ -91,6 +91,7 @@
 - [75-构建系统塑形源码秩序：入口影子、传输外壳、薄Registry与Zombification治理](75-%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%A1%91%E5%BD%A2%E6%BA%90%E7%A0%81%E7%A7%A9%E5%BA%8F%EF%BC%9A%E5%85%A5%E5%8F%A3%E5%BD%B1%E5%AD%90%E3%80%81%E4%BC%A0%E8%BE%93%E5%A4%96%E5%A3%B3%E3%80%81%E8%96%84Registry%E4%B8%8EZombification%E6%B2%BB%E7%90%86.md)
 - [76-升级证据真相面：状态写回、可观测Diff、决策窗口与回退对象](76-%E5%8D%87%E7%BA%A7%E8%AF%81%E6%8D%AE%E7%9C%9F%E7%9B%B8%E9%9D%A2%EF%BC%9A%E7%8A%B6%E6%80%81%E5%86%99%E5%9B%9E%E3%80%81%E5%8F%AF%E8%A7%82%E6%B5%8BDiff%E3%80%81%E5%86%B3%E7%AD%96%E7%AA%97%E5%8F%A3%E4%B8%8E%E5%9B%9E%E9%80%80%E5%AF%B9%E8%B1%A1.md)
 - [77-共享证据包络：宿主、CI、评审与接手如何共用同一升级真相](77-%E5%85%B1%E4%BA%AB%E8%AF%81%E6%8D%AE%E5%8C%85%E7%BB%9C%EF%BC%9A%E5%AE%BF%E4%B8%BB%E3%80%81CI%E3%80%81%E8%AF%84%E5%AE%A1%E4%B8%8E%E6%8E%A5%E6%89%8B%E5%A6%82%E4%BD%95%E5%85%B1%E7%94%A8%E5%90%8C%E4%B8%80%E5%8D%87%E7%BA%A7%E7%9C%9F%E7%9B%B8.md)
+- [78-持续验证底盘：Artifact Runner、Alignment Gate、Drift Ledger 与 Rewrite Adoption Loop](78-%E6%8C%81%E7%BB%AD%E9%AA%8C%E8%AF%81%E5%BA%95%E7%9B%98%EF%BC%9AArtifact%20Runner%E3%80%81Alignment%20Gate%E3%80%81Drift%20Ledger%20%E4%B8%8E%20Rewrite%20Adoption%20Loop.md)
 
 ### 8. 宿主、前台与产品边界平面
 
@@ -144,6 +145,7 @@
 - 想看构建、入口、transport 与恢复怎样一起塑造源码秩序：`33 -> 63 -> 66 -> 72 -> 75`
 - 想看 runtime 为什么还必须为下一次升级保存判断条件，而不是只完成当前任务：`57 -> 60 -> 74 -> 76`
 - 想看为什么同一套升级真相还必须继续被宿主、CI、评审与接手共同消费：`76 -> 77`
+- 想看为什么 replay lab 还必须继续变成 queue、gate、ledger 与 adoption loop 的持续执行底盘：`76 -> 77 -> 78`
 - 想看预算观测、状态回写与 cache break 为什么应该合写成“可解释运行时”：`17 -> 43 -> 57`
 - 想看状态回写为什么属于 durability，而不是遥测附属层：`17 -> 25 -> 57 -> 60`
 - 想看 leaf module、anti-cycle seam 与 single-source file 为什么同属一套依赖图治理方法：`41 -> 58`

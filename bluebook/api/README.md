@@ -52,6 +52,9 @@
 - [40-Prompt Artifact Rule ABI：Shared Object、Stable Bytes、Lawful Forgetting 与 Reject Semantics 的机器可读结构](40-Prompt%20Artifact%20Rule%20ABI%EF%BC%9AShared%20Object%E3%80%81Stable%20Bytes%E3%80%81Lawful%20Forgetting%20%E4%B8%8E%20Reject%20Semantics%20%E7%9A%84%E6%9C%BA%E5%99%A8%E5%8F%AF%E8%AF%BB%E7%BB%93%E6%9E%84.md)
 - [41-治理 Artifact Rule ABI：Decision Gain、Failure Semantics、Rollback Object 与 Reject 语义的机器可读结构](41-%E6%B2%BB%E7%90%86%20Artifact%20Rule%20ABI%EF%BC%9ADecision%20Gain%E3%80%81Failure%20Semantics%E3%80%81Rollback%20Object%20%E4%B8%8E%20Reject%20%E8%AF%AD%E4%B9%89%E7%9A%84%E6%9C%BA%E5%99%A8%E5%8F%AF%E8%AF%BB%E7%BB%93%E6%9E%84.md)
 - [42-结构 Artifact Rule ABI：Authoritative Path、Recovery Asset、Anti-Zombie 与 Reject 语义的机器可读结构](42-%E7%BB%93%E6%9E%84%20Artifact%20Rule%20ABI%EF%BC%9AAuthoritative%20Path%E3%80%81Recovery%20Asset%E3%80%81Anti-Zombie%20%E4%B8%8E%20Reject%20%E8%AF%AD%E4%B9%89%E7%9A%84%E6%9C%BA%E5%99%A8%E5%8F%AF%E8%AF%BB%E7%BB%93%E6%9E%84.md)
+- [43-Prompt Artifact Harness Runner API：Replay Queue、Alignment Assertion、Drift Ledger 与 Rewrite Adoption 的持续执行协议](43-Prompt%20Artifact%20Harness%20Runner%20API%EF%BC%9AReplay%20Queue%E3%80%81Alignment%20Assertion%E3%80%81Drift%20Ledger%20%E4%B8%8E%20Rewrite%20Adoption%20%E7%9A%84%E6%8C%81%E7%BB%AD%E6%89%A7%E8%A1%8C%E5%8D%8F%E8%AE%AE.md)
+- [44-治理 Artifact Harness Runner API：Decision Window Replay Queue、Arbitration Assertion、Drift Ledger 与 Upgrade Adoption 协议](44-%E6%B2%BB%E7%90%86%20Artifact%20Harness%20Runner%20API%EF%BC%9ADecision%20Window%20Replay%20Queue%E3%80%81Arbitration%20Assertion%E3%80%81Drift%20Ledger%20%E4%B8%8E%20Upgrade%20Adoption%20%E5%8D%8F%E8%AE%AE.md)
+- [45-结构 Artifact Harness Runner API：Authoritative Replay Queue、Anti-Zombie Assertion、Drift Ledger 与 Recovery Adoption 协议](45-%E7%BB%93%E6%9E%84%20Artifact%20Harness%20Runner%20API%EF%BC%9AAuthoritative%20Replay%20Queue%E3%80%81Anti-Zombie%20Assertion%E3%80%81Drift%20Ledger%20%E4%B8%8E%20Recovery%20Adoption%20%E5%8D%8F%E8%AE%AE.md)
 
 ### 4. Prompt、知识与上下文装配面
 
@@ -86,6 +89,7 @@
 - 想把 validator / linter 继续压成 machine-readable rule ABI：`../navigation/30 -> 40 -> 41 -> 42 -> ../philosophy/71`
 - 想把这些 rule packet 继续压成最小规则样例、失败样例与 evaluator 接口：`../navigation/31 -> ../playbooks/20 -> ../playbooks/21 -> ../playbooks/22 -> ../philosophy/72`
 - 想把这些样例接口继续接成 replay harness、cross-consumer alignment 与 drift regression lab：`../navigation/32 -> ../playbooks/23 -> ../playbooks/24 -> ../playbooks/25 -> ../philosophy/73`
+- 想把这些实验室继续接成 replay queue、drift ledger 与 rewrite adoption 的持续执行协议：`../navigation/33 -> 43 -> 44 -> 45 -> ../architecture/78 -> ../philosophy/74`
 - 目标：把 request / response / follow-on event / snapshot / recovery 一起看成闭环
 
 ### 3. 想控制 prompt、知识和记忆
@@ -116,5 +120,6 @@
 - 再往下一层，应由 `../navigation/30 -> 40-42` 继续回答“怎样把 hard fail、lint warn、reviewer gate、handoff reject 与 rewrite hint 压成 machine-readable rule packet”。
 - 再往下一层，应由 `../navigation/31 -> ../playbooks/20-22` 继续回答“怎样把 machine-readable rule packet 写成最小可验证样例与 evaluator 样例”。
 - 再往下一层，应由 `../navigation/32 -> ../playbooks/23-25` 继续回答“怎样把这些 evaluator 样例接成可重放验证与跨消费者对齐实验室”。
+- 再往下一层，应由 `../navigation/33 -> 43-45 -> ../architecture/78` 继续回答“怎样把 replay case、alignment assertion、drift ledger 与 rewrite adoption 接成持续执行协议与底盘”。
 
 主线结论先看 [../05-功能全景与 API 支持](../05-%E5%8A%9F%E8%83%BD%E5%85%A8%E6%99%AF%E4%B8%8EAPI%E6%94%AF%E6%8C%81.md)。

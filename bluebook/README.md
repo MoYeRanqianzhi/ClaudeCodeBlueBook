@@ -96,6 +96,8 @@
 - 想直接看系统应怎样正式拒绝这些 drift，而不是只停在识别，再读 [navigation/29-Artifact Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验](navigation/29-Artifact%20Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验.md)
 - 想直接看这些拒绝条件怎样继续被压成 machine-readable rule packet，再读 [navigation/30-Artifact Rule ABI导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何共享同一规则包](navigation/30-Artifact%20Rule%20ABI导航：Hard%20Fail、Lint%20Warn、Reviewer%20Gate、Handoff%20Reject%20与%20Rewrite%20Hint%20如何共享同一规则包.md)
 - 想直接看这些 rule packet 怎样被最小样例、失败样例与 evaluator 反复验证，再读 [navigation/31-Artifact Rule Sample Kit导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何被反复验证](navigation/31-Artifact%20Rule%20Sample%20Kit导航：Hard%20Fail、Lint%20Warn、Reviewer%20Gate、Handoff%20Reject%20与%20Rewrite%20Hint%20如何被反复验证.md)
+- 想直接看这些样例怎样继续接成 replay harness、cross-consumer alignment 与 drift 回归实验室，再读 [navigation/32-Artifact Evaluator Harness导航：可重放验证、跨消费者对齐与 Drift 回归如何证明同一拒收语义](navigation/32-Artifact%20Evaluator%20Harness导航：可重放验证、跨消费者对齐与%20Drift%20回归如何证明同一拒收语义.md)
+- 想直接看这些实验室怎样继续变成 replay queue、alignment gate、drift ledger 与 rewrite adoption 的持续执行底盘，再读 [navigation/33-Artifact Harness Runner导航：Replay Queue、Alignment Gate、Drift Ledger 与 Rewrite Adoption 如何成为持续执行底盘](navigation/33-Artifact%20Harness%20Runner导航：Replay%20Queue、Alignment%20Gate、Drift%20Ledger%20与%20Rewrite%20Adoption%20如何成为持续执行底盘.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -263,6 +265,8 @@
 - 想直接看这些 drift 应怎样被正式编译成 validator / linter / reject rule，再读 [navigation/29-Artifact Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验](navigation/29-Artifact%20Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验.md)
 - 想直接看这些 validator / linter 怎样继续统一成一份共享拒收语义的 rule ABI，再读 [navigation/30-Artifact Rule ABI导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何共享同一规则包](navigation/30-Artifact%20Rule%20ABI导航：Hard%20Fail、Lint%20Warn、Reviewer%20Gate、Handoff%20Reject%20与%20Rewrite%20Hint%20如何共享同一规则包.md)
 - 想直接看这些 rule ABI 怎样继续被最小规则样例、失败样例与 evaluator 接口反复证明，再读 [navigation/31-Artifact Rule Sample Kit导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何被反复验证](navigation/31-Artifact%20Rule%20Sample%20Kit导航：Hard%20Fail、Lint%20Warn、Reviewer%20Gate、Handoff%20Reject%20与%20Rewrite%20Hint%20如何被反复验证.md)
+- 想直接看这些 evaluator 接口怎样继续进入 replay harness、cross-consumer alignment 与 drift 回归实验室，再读 [navigation/32-Artifact Evaluator Harness导航：可重放验证、跨消费者对齐与 Drift 回归如何证明同一拒收语义](navigation/32-Artifact%20Evaluator%20Harness导航：可重放验证、跨消费者对齐与%20Drift%20回归如何证明同一拒收语义.md)
+- 想直接看这些实验室怎样继续变成持续执行的 runner / ledger 协议与底盘，再读 [navigation/33-Artifact Harness Runner导航：Replay Queue、Alignment Gate、Drift Ledger 与 Rewrite Adoption 如何成为持续执行底盘](navigation/33-Artifact%20Harness%20Runner导航：Replay%20Queue、Alignment%20Gate、Drift%20Ledger%20与%20Rewrite%20Adoption%20如何成为持续执行底盘.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
@@ -409,6 +413,10 @@
 
 - `navigation/32 -> playbooks/23 -> playbooks/24 -> playbooks/25 -> philosophy/73`
 
+### 为什么 Artifact Evaluator Harness / Replay Lab 还必须继续进入 Harness Runner / Drift Ledger 层
+
+- `navigation/33 -> api/43 -> api/44 -> api/45 -> architecture/78 -> philosophy/74`
+
 ### 为什么高行动力来自统一定价而不是统一放权
 
 - `architecture/50 -> architecture/56 -> architecture/68 -> architecture/71 -> philosophy/58`
@@ -467,3 +475,5 @@
 - 想直接看这些 drift 怎样继续被编译成自动校验、reviewer gate 与 handoff reject，再读 [navigation/29-Artifact Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验](navigation/29-Artifact%20Validator导航：共享对象、硬合同与漂移原型如何编译成自动校验.md)
 - 想直接看这些 reject 语义怎样继续被统一成 machine-readable rule packet，再读 [navigation/30-Artifact Rule ABI导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何共享同一规则包](navigation/30-Artifact%20Rule%20ABI导航：Hard%20Fail、Lint%20Warn、Reviewer%20Gate、Handoff%20Reject%20与%20Rewrite%20Hint%20如何共享同一规则包.md)
 - 想直接看这些 rule packet 怎样继续被最小样例、失败样例与 evaluator 反复证明，再读 [navigation/31-Artifact Rule Sample Kit导航：Hard Fail、Lint Warn、Reviewer Gate、Handoff Reject 与 Rewrite Hint 如何被反复验证](navigation/31-Artifact%20Rule%20Sample%20Kit导航：Hard%20Fail、Lint%20Warn、Reviewer%20Gate、Handoff%20Reject%20与%20Rewrite%20Hint%20如何被反复验证.md)
+- 想直接看这些样例怎样继续接成 replay harness、cross-consumer alignment 与 drift 回归实验室，再读 [navigation/32-Artifact Evaluator Harness导航：可重放验证、跨消费者对齐与 Drift 回归如何证明同一拒收语义](navigation/32-Artifact%20Evaluator%20Harness导航：可重放验证、跨消费者对齐与%20Drift%20回归如何证明同一拒收语义.md)
+- 想直接看这些实验室怎样继续变成持续执行的 runner / ledger 底盘，再读 [navigation/33-Artifact Harness Runner导航：Replay Queue、Alignment Gate、Drift Ledger 与 Rewrite Adoption 如何成为持续执行底盘](navigation/33-Artifact%20Harness%20Runner导航：Replay%20Queue、Alignment%20Gate、Drift%20Ledger%20与%20Rewrite%20Adoption%20如何成为持续执行底盘.md)

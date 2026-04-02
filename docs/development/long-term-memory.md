@@ -379,6 +379,13 @@
 - `playbooks/25` 当前应负责结构 evaluator harness：让 split-brain replay、anti-zombie alignment 与 drift regression 反复证明 authoritative surface
 - `navigation/32` 的职责应稳定为“artifact rule sample kit / evaluator 层如何进入 evaluator harness / replay lab 层”，避免 `31` 同时承担样例接口与重放实验室两类职责
 - `philosophy/73` 当前应负责把“成熟回放 = 共享拒收语义能跨消费者重复成立”稳定成新的长期判断
+- 当 `navigation/32 + playbooks/23-25` 稳定后，下一步最值钱的不是继续补更多 replay case，而是补 artifact harness runner / drift ledger：把 replay queue、alignment assertion、drift ledger 与 rewrite adoption 接成可持续执行底盘
+- `api/43` 当前应负责 Prompt harness runner 协议：让 continuation replay、stable bytes ledger、lawful forgetting ABI 与 rewrite adoption 进入同一持续执行对象链
+- `api/44` 当前应负责治理 harness runner 协议：让 decision window、control arbitration truth、rollback object 与 object upgrade 进入同一持续执行对象链
+- `api/45` 当前应负责结构 harness runner 协议：让 authoritative path、recovery asset ledger、dropped stale writers 与 recovery adoption 进入同一持续执行对象链
+- `architecture/78` 当前应负责把 replay queue、alignment gate、drift ledger 与 rewrite adoption loop 收束成持续验证底盘
+- `navigation/33` 的职责应稳定为“artifact evaluator harness / replay lab 层如何进入 harness runner / drift ledger 层”，避免 `32` 同时承担实验室设计与持续执行底盘两类职责
+- `philosophy/74` 当前应负责把“成熟验证底盘 = 回放、改写与台账共享同一持续执行语义”稳定成新的长期判断
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释
