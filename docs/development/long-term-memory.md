@@ -324,6 +324,11 @@
 - `casebooks/14` 当前应负责治理 envelope 失真样本：只看 token、只看审批、只看最终结果与忽略 rollback boundary
 - `casebooks/15` 当前应负责结构 envelope 失真样本：只看文件 diff、只看目录美观、只看恢复成功率与只靠作者记忆
 - `navigation/22` 的职责应稳定为“shared evidence envelope 层如何进入 consumer distortion casebook 层”，避免 `21` 同时承担 envelope 设计与 envelope 失真原型两类职责
+- 当 `navigation/22 + casebooks/13-15` 稳定后，下一步最值钱的不是继续补更多失真叙述，而是补 host implementation playbook 层：把宿主、CI、评审与交接的真实检查点写成可执行门禁
+- `playbooks/14` 当前应负责 Prompt host implementation：把 compiled request truth、stable bytes、lawful forgetting 与 handoff package 落成宿主消费、CI门禁、评审顺序与交接包
+- `playbooks/15` 当前应负责治理 host implementation：把 decision window、control arbitration、Context Usage、rollback object 与对象升级条件落成真实门禁
+- `playbooks/16` 当前应负责结构 host implementation：把 authoritative surface、recovery asset、anti-zombie gate、rollback boundary 与 retained assets 落成真实门禁
+- `navigation/23` 的职责应稳定为“consumer distortion casebook 层如何进入 host implementation playbook 层”，避免 `22` 同时承担反例层与落地检查点层两类职责
 - 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
 - workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
 - REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释

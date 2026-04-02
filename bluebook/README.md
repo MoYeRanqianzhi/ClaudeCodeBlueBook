@@ -87,6 +87,7 @@
 - 想把这套统一 ABI 继续接回宿主消费、回退对象与复盘真相面，再读 [navigation/20-证据接口导航：从Rollout ABI到宿主消费、回退对象与复盘真相面](navigation/20-证据接口导航：从Rollout ABI到宿主消费、回退对象与复盘真相面.md)
 - 想把这套证据继续压成宿主、CI、评审与交接共享的 Evidence Envelope，再读 [navigation/21-Evidence Envelope导航：宿主、CI、评审与交接如何共享升级真相](navigation/21-Evidence Envelope导航：宿主、CI、评审与交接如何共享升级真相.md)
 - 想直接看 shared Evidence Envelope 一旦被拆散消费会怎样退回半真相，再读 [navigation/22-Evidence Envelope反例导航：宿主猜状态、CI只看阈值、评审只看结论与交接只读历史](navigation/22-Evidence%20Envelope反例导航：宿主猜状态、CI只看阈值、评审只看结论与交接只读历史.md)
+- 想把这套 shared Evidence Envelope 继续真正落成宿主、CI、评审与交接检查点，再读 [navigation/23-Host Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点](navigation/23-Host%20Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点.md)
 
 ### 3. 想接入宿主、SDK 或控制协议
 
@@ -245,6 +246,7 @@
 - 想直接看这些统一 ABI 怎样继续进入宿主、评审者与后来者的同一证据真相，再读 [navigation/20-证据接口导航：从Rollout ABI到宿主消费、回退对象与复盘真相面](navigation/20-证据接口导航：从Rollout ABI到宿主消费、回退对象与复盘真相面.md)
 - 想直接看这些证据怎样继续被宿主、CI、评审与交接共享成同一套 envelope，再读 [navigation/21-Evidence Envelope导航：宿主、CI、评审与交接如何共享升级真相](navigation/21-Evidence Envelope导航：宿主、CI、评审与交接如何共享升级真相.md)
 - 想直接看这套 envelope 被拆散消费时最常见的失真原型与修法，再读 [navigation/22-Evidence Envelope反例导航：宿主猜状态、CI只看阈值、评审只看结论与交接只读历史](navigation/22-Evidence%20Envelope反例导航：宿主猜状态、CI只看阈值、评审只看结论与交接只读历史.md)
+- 想直接看这套 envelope 怎样进一步进入宿主、CI、评审与交接的真实门禁，再读 [navigation/23-Host Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点](navigation/23-Host%20Implementation导航：Prompt、治理与结构证据如何落成宿主、CI、评审与交接检查点.md)
 - 需要先判断规范入口和兼容别名页时，读 [navigation/04-目录职责、规范入口与兼容别名页说明](navigation/04-%E7%9B%AE%E5%BD%95%E8%81%8C%E8%B4%A3%E3%80%81%E8%A7%84%E8%8C%83%E5%85%A5%E5%8F%A3%E4%B8%8E%E5%85%BC%E5%AE%B9%E5%88%AB%E5%90%8D%E9%A1%B5%E8%AF%B4%E6%98%8E.md)
 
 ### 为什么宿主不该猜，而系统必须显式失败与显式回写
@@ -350,6 +352,10 @@
 ### 为什么 shared Evidence Envelope 还必须经得起不同消费者的拆散消费
 
 - `navigation/22 -> casebooks/13 -> casebooks/14 -> casebooks/15 -> philosophy/68`
+
+### 为什么 shared Evidence Envelope 还必须继续落成宿主、CI、评审与交接检查点
+
+- `navigation/23 -> playbooks/14 -> playbooks/15 -> playbooks/16 -> philosophy/68`
 
 ### 为什么高行动力来自统一定价而不是统一放权
 

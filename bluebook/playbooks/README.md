@@ -30,6 +30,9 @@
 11. [11-结构 Rollout样例：从第二真相到权威面与反zombie结构的灰度记录](11-%E7%BB%93%E6%9E%84%20Rollout%E6%A0%B7%E4%BE%8B%EF%BC%9A%E4%BB%8E%E7%AC%AC%E4%BA%8C%E7%9C%9F%E7%9B%B8%E5%88%B0%E6%9D%83%E5%A8%81%E9%9D%A2%E4%B8%8E%E5%8F%8Dzombie%E7%BB%93%E6%9E%84%E7%9A%84%E7%81%B0%E5%BA%A6%E8%AE%B0%E5%BD%95.md)
 12. [12-统一Rollout ABI模板：对象、Diff、阶段、观测与回退记录](12-%E7%BB%9F%E4%B8%80Rollout%20ABI%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%AF%B9%E8%B1%A1%E3%80%81Diff%E3%80%81%E9%98%B6%E6%AE%B5%E3%80%81%E8%A7%82%E6%B5%8B%E4%B8%8E%E5%9B%9E%E9%80%80%E8%AE%B0%E5%BD%95.md)
 13. [13-Rollout证据卡样例库：Prompt、治理与结构三类最小填写示例](13-Rollout%E8%AF%81%E6%8D%AE%E5%8D%A1%E6%A0%B7%E4%BE%8B%E5%BA%93%EF%BC%9APrompt%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8E%E7%BB%93%E6%9E%84%E4%B8%89%E7%B1%BB%E6%9C%80%E5%B0%8F%E5%A1%AB%E5%86%99%E7%A4%BA%E4%BE%8B.md)
+14. [14-Prompt Evidence Envelope落地手册：宿主消费、CI门禁、评审顺序与交接包](14-Prompt%20Evidence%20Envelope%E8%90%BD%E5%9C%B0%E6%89%8B%E5%86%8C%EF%BC%9A%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E3%80%81CI%E9%97%A8%E7%A6%81%E3%80%81%E8%AF%84%E5%AE%A1%E9%A1%BA%E5%BA%8F%E4%B8%8E%E4%BA%A4%E6%8E%A5%E5%8C%85.md)
+15. [15-治理 Evidence Envelope落地手册：决策窗口、仲裁证据、对象升级与回退门禁](15-%E6%B2%BB%E7%90%86%20Evidence%20Envelope%E8%90%BD%E5%9C%B0%E6%89%8B%E5%86%8C%EF%BC%9A%E5%86%B3%E7%AD%96%E7%AA%97%E5%8F%A3%E3%80%81%E4%BB%B2%E8%A3%81%E8%AF%81%E6%8D%AE%E3%80%81%E5%AF%B9%E8%B1%A1%E5%8D%87%E7%BA%A7%E4%B8%8E%E5%9B%9E%E9%80%80%E9%97%A8%E7%A6%81.md)
+16. [16-结构 Evidence Envelope落地手册：权威面、恢复资产、反zombie 与交接闸门](16-%E7%BB%93%E6%9E%84%20Evidence%20Envelope%E8%90%BD%E5%9C%B0%E6%89%8B%E5%86%8C%EF%BC%9A%E6%9D%83%E5%A8%81%E9%9D%A2%E3%80%81%E6%81%A2%E5%A4%8D%E8%B5%84%E4%BA%A7%E3%80%81%E5%8F%8Dzombie%20%E4%B8%8E%E4%BA%A4%E6%8E%A5%E9%97%B8%E9%97%A8.md)
 
 ## 按目标阅读
 
@@ -46,6 +49,7 @@
 - 想把统一 ABI 继续接回宿主消费、回退对象与复盘真相面：`../navigation/20 -> ../architecture/76 -> ../api/35 -> ../guides/34`
 - 想让这些证据继续被宿主、CI、评审与交接共享成同一套 envelope：`../navigation/21 -> ../architecture/77 -> ../api/36 -> ../guides/35`
 - 想直接看 shared envelope 一旦被不同消费者拆散会怎样坏掉，而不是只看理想做法：`../navigation/22 -> ../casebooks/13 -> ../casebooks/14 -> ../casebooks/15`
+- 想直接把这套 envelope 落成宿主、CI、评审与交接的统一检查点，而不是只停在原则与反例：`../navigation/23 -> 14 -> 15 -> 16`
 
 ## 与其他目录的边界
 
@@ -57,5 +61,6 @@
 - 再往下一层，应由 `navigation/20 -> architecture/76 -> api/35` 继续回答“这套 ABI 怎样进入宿主消费、回退对象与复盘真相面”。
 - 再往下一层，应由 `navigation/21 -> architecture/77 -> api/36` 继续回答“这些证据怎样被宿主、CI、评审与交接共享成同一套 envelope”。
 - 再往下一层，应由 `navigation/22 -> casebooks/13-15` 继续回答“这套 envelope 最常见会怎样被不同消费者拆散并失真”。
+- 再往下一层，应由 `navigation/23 -> playbooks/14-16` 继续回答“怎样把这套 envelope 真正落成宿主、CI、评审与交接的检查点”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
 - `docs/` 仍只承载项目自己的持久化记忆和开发过程，不承载蓝皮书正文。

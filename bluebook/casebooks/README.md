@@ -45,6 +45,7 @@
 - 想先按受损制度资产反查，而不是先按文件名搜索：`09 -> ../navigation/14`
 - 想把这些自反问题继续落成“同题坏解 vs Claude Code 式正解”的迁移样例：`../navigation/15 -> 10 -> 11 -> 12 -> ../navigation/16`
 - 想看 shared evidence envelope 一旦被不同消费者拆散会怎样退回半真相：`../navigation/21 -> ../navigation/22 -> 13 -> 14 -> 15`
+- 想把这些失真样本继续压成宿主、CI、评审与交接的真实检查点：`../navigation/23 -> ../playbooks/14 -> ../playbooks/15 -> ../playbooks/16`
 
 ## 与其他目录的边界
 
@@ -52,4 +53,5 @@
 - `playbooks/` 负责“怎么运行、怎么复盘”。
 - `casebooks/` 负责“坏会怎样、为什么坏、坏在哪”。
 - `casebooks/13-15` 继续回答“shared evidence envelope 一旦被宿主、CI、评审与交接拆散消费，会怎样重新退回局部真相”。
+- 再往下一层，应由 `../navigation/23 -> ../playbooks/14-16` 继续回答“怎样把这些失真重新收口成统一检查点”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。
