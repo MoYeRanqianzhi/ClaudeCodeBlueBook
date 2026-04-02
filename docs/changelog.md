@@ -2,6 +2,7 @@
 
 ## 2026-04-03
 
+- 新增《宿主修复解除监护执行导航：Prompt、治理与故障模型解除监护协议如何进入release card、release verdict顺序与reopen责任演练》《Prompt宿主修复解除监护执行手册：release card、release verdict order、handoff release与residual reopen drill》《治理宿主修复解除监护执行手册：release card、release verdict order、capability release与reopen liability drill》《结构宿主修复解除监护执行手册：release card、release verdict order、archive drill、boundary retirement与reopen reservation drill》，并同步回写主索引、导航/运营手册 README 与开发文档，把蓝皮书从“宿主修复解除监护协议 / repair watch release contract”继续推进到“宿主修复解除监护执行 / repair watch release execution”层
 - 新增《宿主修复解除监护协议导航：Prompt、治理与故障模型监护纠偏如何进入解除判定、稳定释压与归档保证面》《Prompt宿主修复解除监护协议：watch release object、stability witness、baseline drift ledger seal、continuation clearance、handoff release warranty与reopen residual gate》《治理宿主修复解除监护协议：authority release、ledger residue clearance、window exit、continuation settlement、quarantine release与reopen liability》《结构宿主修复解除监护协议：authority release、resume stability seal、writeback release、anti-zombie archive与boundary retirement》，并同步回写主索引、导航/API README 与开发文档，把蓝皮书从“宿主修复监护纠偏 / repair watch correction guide”继续推进到“宿主修复解除监护协议 / repair watch release contract”层
 
 ## 2026-04-02

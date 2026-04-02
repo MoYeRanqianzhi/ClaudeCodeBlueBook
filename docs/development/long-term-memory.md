@@ -9,6 +9,17 @@
 
 ## 最新推进
 
+- 蓝皮书已经从“宿主修复解除监护协议 / repair watch release contract”继续推进到“宿主修复解除监护执行 / repair watch release execution”层。
+- 新增结论：
+  - Prompt 宿主修复解除监护如果要真正落地运行，必须继续围绕 watch release object、stability witness、baseline drift ledger seal、continuation clearance、handoff release warranty 与 reopen residual gate 执行固定 release verdict 顺序，而不是继续围绕 watch note、交接文案与“最近没出事”宣布 released。
+  - 治理宿主修复解除监护如果要真正落地运行，必须继续围绕 authority release、ledger clearance、window exit、continuation settlement、quarantine release 与 reopen liability 执行固定 release verdict 顺序，而不是继续围绕 mode 面板、usage dashboard、经验式保守建议与主观放心感宣布 capability released。
+  - 结构宿主修复解除监护如果要真正落地运行，必须继续围绕 authority release、resume stability seal、writeback release、anti-zombie archive、boundary retirement 与 reopen reservation 执行固定 release verdict 顺序，而不是继续围绕 pointer、监控转绿、telemetry 繁荣与作者说明宣布已经稳定。
+- 新增目录责任：
+  - `navigation/67` 负责宿主修复解除监护执行入口。
+  - `playbooks/47-49` 负责三类宿主修复解除监护协议的 release card、release verdict order 与 reopen 责任演练手册。
+- 当前新的写作约束：
+  - 不再只写“哪些 release object 应被消费”，还要写“现场先看什么、谁有权宣布 released / blocked / released_with_liability、什么时候必须回退到 monitor_extended 或 reopen_required”。
+  - 每次继续深化都要回答“当前 watch release execution 保护的是无人继续盯防时的单一真相延续，还是只是在给售后叙事补一个更制度化的结束流程”。
 - 蓝皮书已经从“宿主修复监护纠偏 / repair watch correction guide”继续推进到“宿主修复解除监护协议 / repair watch release contract”层。
 - 新增结论：
   - Prompt 宿主修复监护纠偏如果要真正结束额外盯防，必须继续把 watch release object、stability witness、baseline drift ledger seal、continuation clearance、handoff release warranty 与 residual reopen gate 拉回同一个 `compiled request truth`，而不是继续围绕 watch note、无告警时长与交接文案宣布“观察结束”。
