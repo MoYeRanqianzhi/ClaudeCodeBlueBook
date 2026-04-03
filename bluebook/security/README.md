@@ -461,4 +461,6 @@
 - 想把 `125` 的长文压成一张词法协议矩阵，快速看出不同 term 对应哪一层、表达什么含义，以及哪些更强近义词必须被禁用：`125` -> `appendix/109`
 - 想看为什么 Claude Code 的安全控制面在源码里一再体现“高风险放行要更强证明、阻断与降级可更早触发”的不对称哲学：`125` -> `126`
 - 想把 `126` 的长文压成一张不对称矩阵，快速看出不同 surface 的 positive proof threshold、negative trigger 与 failure semantic：`126` -> `appendix/110`
+- 想看为什么 Claude Code 不把所有失败都压成一种 deny，而是按风险对象分配 fail-open、fail-closed 与 step-up：`126` -> `127`
+- 想把 `127` 的长文压成一张失败语义矩阵，快速看出不同 risk object 的 preferred failure mode、reason 与 upgrade path：`127` -> `appendix/111`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
