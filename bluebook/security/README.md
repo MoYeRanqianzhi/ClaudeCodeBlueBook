@@ -485,4 +485,6 @@
 - 想把 `137` 的长文压成一张 cleanup 投影矩阵，快速看出不同 surface 的 allowed cleanup depth、must-show fields 与 forbidden overprojection：`137` -> `appendix/121`
 - 想看为什么即使 cleanup fields 已字段化并分层投影，只要它们还没进入 SDK 和 host contract，宿主就仍然只能靠文案和隐式状态猜测：`137` -> `138`
 - 想把 `138` 的长文压成一张宿主契约矩阵，快速看出不同 contract surface 的 current payload、missing cleanup semantics 与 upgrade target：`138` -> `appendix/122`
+- 想看为什么即使 cleanup 语义已经进入宿主契约，它仍必须继续被 schema、生成类型、handler 与 conformance 共同守住，否则还会退化回内部知识：`138` -> `139`
+- 想把 `139` 的长文压成一张 cleanup 契约机检矩阵，快速看出不同 layer 的 current anchor、cleanup gap 与 recommended guard：`139` -> `appendix/123`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
