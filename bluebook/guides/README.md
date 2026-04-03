@@ -196,6 +196,8 @@
 - 再往下一层，应由 `../navigation/86 -> ../api/81-83` 继续回答“怎样把这些宿主修复稳态纠偏再纠偏改写纠偏继续压成宿主可消费的 rewrite correction 对象、拒收语义与长期 reopen 责任面”。
 - `../navigation/89 -> 87-89` 继续回答“怎样把这些宿主修复稳态纠偏再纠偏改写纠偏执行失真重新压回固定 rewrite correction 顺序、拒收升级路径与改写模板骨架”。
 - 再往下一层，应由 `../navigation/90 -> ../api/84-86` 继续回答“怎样把这些 rewrite correction 固定顺序继续压成宿主可消费对象、hard reject 语义与长期 reopen 责任账本”。
+- `../navigation/93 -> 90-92` 继续回答“怎样把这些 refinement execution 失真重新压回固定 refinement 顺序、拒收升级路径与改写模板骨架”。
+- 再往下一层，应由 `../navigation/94 -> ../api/87-89` 继续回答“怎样把这些 refinement correction 继续压成宿主可消费的修正对象、拒收语义与长期 reopen 责任面”。
 - 再往下一层，应由 `../navigation/58 -> ../api/60-62` 继续回答“怎样把这些宿主修复纠偏继续压成宿主可消费的收口卡、完成语义与交接保证面”。
 - `../philosophy/81-83` 负责回答“为什么这些实现顺序不是经验技巧，而是 Prompt 编译链、统一定价治理与故障模型编码的不可约判断”。
 

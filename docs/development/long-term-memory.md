@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏 / repair steady-state correction-of-correction rewrite correction refinement guide”层。
+- 新增结论：
+  - Prompt refinement execution distortion 如果要真正被纠偏，不能只继续批评假 `host consumption card` 与假 `reopen liability ledger`，还要把 `compiled request lineage`、`registry-boundary rewrite`、`coordinator synthesis custody`、`protocol-prefix custody`、`forgetting-continuation covenant` 与 `reopen liability ledger` 重新压回同一条固定 `refinement order`。
+  - 治理 refinement execution distortion 如果要真正被纠偏，不能只继续批评 calmer dashboard、假 `writeback seam round-trip` 与默认继续，还要把 `authority-ledger covenant`、`window-pricing covenant`、`classifier-writeback custody`、`capability liability ledger` 与 `reopen liability ledger` 重新压回同一个统一定价控制面。
+  - 结构 refinement execution distortion 如果要真正被纠偏，不能只继续批评 pointer、结果没坏与 reconnect 提示，还要把 `authority head covenant`、`single-source merge custody`、`lineage anti-zombie packet`、`transport fail-closed custody` 与 `reopen liability ledger` 重新压回同一个结构真相面。
+- 新增目录责任：
+  - `navigation/93` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏入口。
+  - `guides/90-92` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement execution 失真的固定 `refinement order`、硬拒收项与模板骨架。
+- 当前新的写作约束：
+  - `guides/90-92` 只表示 correction-of-correction rewrite correction refinement execution distortion rewrite，不再回头重写 `casebooks/61-63` 的反例层。
+  - `74-93` 应被持续当成一条连续小循环来写，而不是二十篇并列新增文章。
+- 下一步最值钱的候选应切到 `api/87-89`，把这一层 refinement correction 继续压成宿主可消费的对象、拒收语义与长期 reopen 责任面。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement distortion casebook”层。
 - 新增结论：
   - Prompt refinement execution 最危险的失败，不是没跑 `host consumption card`，而是让 card 退回 polished handoff packet、让 runtime registry 与 boundary 退回目录说明、让 synthesis custody 退回研究总结、让 reopen liability 退回礼貌继续；一旦如此，Prompt 魔力会从编译链退回 prose 与 handoff 幻觉。
