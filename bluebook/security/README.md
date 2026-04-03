@@ -489,4 +489,6 @@
 - 想把 `139` 的长文压成一张 cleanup 契约机检矩阵，快速看出不同 layer 的 current anchor、cleanup gap 与 recommended guard：`139` -> `appendix/123`
 - 想看为什么即使 cleanup 契约机检骨架已经存在，也仍不能把新语义粗暴塞给所有宿主，而必须通过 optional fields、降级语法、假成功防护与兼容回退渐进发布：`139` -> `140`
 - 想把 `140` 的长文压成一张 cleanup 契约兼容迁移矩阵，快速看出不同 surface / path 的 current compatibility tactic、cleanup upgrade risk 与 recommended rollout：`140` -> `appendix/124`
+- 想看为什么即使兼容迁移路线已经成立，系统仍不能把“字段可见”偷换成“宿主有资格理解”，而必须继续通过 initialize、capability surface、minimal reply 与 min_version 正式协商资格边界：`140` -> `141`
+- 想把 `141` 的长文压成一张能力协商矩阵，快速看出不同 surface / path 的 declared capability-version artifact、current gate 与 cleanup migration implication：`141` -> `appendix/125`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
