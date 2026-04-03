@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏失真 / repair steady-state correction-of-correction rewrite correction distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏纠偏 / repair steady-state correction-of-correction rewrite correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写纠偏执行失真如果要真正被纠偏，不能只继续批评假 `rewrite correction card`，还要把 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continue qualification` 与 `threshold liability` 重新压回同一条固定 `rewrite correction order`。
+  - 治理宿主修复稳态纠偏再纠偏改写纠偏执行失真如果要真正被纠偏，不能只继续批评 mode / dashboard 幻觉，还要把 authority、ledger、window、pricing、classifier 开销、writeback seam、capability liability 与 threshold 重新压回同一个统一定价控制面。
+  - 结构宿主修复稳态纠偏再纠偏改写纠偏执行失真如果要真正被纠偏，不能只继续批评 pointer / telemetry / 结果没坏幻觉，还要把 authority surface、single-source seam、lineage、fresh merge、anti-zombie evidence、transport boundary、fail-closed worktree 与 reopen liability 重新压回同一个结构真相面。
+- 新增目录责任：
+  - `navigation/89` 负责宿主修复稳态纠偏再纠偏改写纠偏纠偏入口。
+  - `guides/87-89` 负责三类宿主修复稳态纠偏再纠偏改写纠偏执行失真的固定 `rewrite correction order`、硬拒收项与模板骨架。
+- 当前新的写作约束：
+  - `87-89` 只表示 correction-of-correction rewrite correction execution distortion rewrite，不再回头重写 `84-86` 的 rewrite execution 纠偏。
+  - `74-89` 应被持续当成一条连续小循环来写，而不是十六篇并列新增文章。
+- 下一步最值钱的候选应切到 `api/84-86`，把这一层 correction guide 继续压成宿主可消费的对象、拒收语义与长期 reopen 责任面。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏执行 / repair steady-state correction-of-correction rewrite correction execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏失真 / repair steady-state correction-of-correction rewrite correction distortion casebook”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏改写纠偏执行最危险的失败，不是没跑 `rewrite correction card`，而是让 runtime `section registry` 退回静态目录、让 `dynamic boundary` 退回 attachment 说明、让 `threshold liability` 退回礼貌备注；一旦如此，Prompt 魔力就会从编译链退回更体面的宪法说明文。

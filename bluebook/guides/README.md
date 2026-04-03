@@ -90,6 +90,9 @@
 84. [84-如何把Prompt宿主修复稳态纠偏再纠偏改写执行失真压回compiled request truth：固定rewrite顺序、拒收升级路径与rewrite、prefix、threshold改写模板骨架](84-%E5%A6%82%E4%BD%95%E6%8A%8APrompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%E5%8E%8B%E5%9B%9Ecompiled%20request%20truth%EF%BC%9A%E5%9B%BA%E5%AE%9Arewrite%E9%A1%BA%E5%BA%8F%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E4%B8%8Erewrite%E3%80%81prefix%E3%80%81threshold%E6%94%B9%E5%86%99%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
 85. [85-如何把治理宿主修复稳态纠偏再纠偏改写执行失真压回统一定价控制面：固定rewrite顺序、拒收升级路径与authority、window、pricing改写模板骨架](85-%E5%A6%82%E4%BD%95%E6%8A%8A%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%E5%8E%8B%E5%9B%9E%E7%BB%9F%E4%B8%80%E5%AE%9A%E4%BB%B7%E6%8E%A7%E5%88%B6%E9%9D%A2%EF%BC%9A%E5%9B%BA%E5%AE%9Arewrite%E9%A1%BA%E5%BA%8F%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E4%B8%8Eauthority%E3%80%81window%E3%80%81pricing%E6%94%B9%E5%86%99%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
 86. [86-如何把结构宿主修复稳态纠偏再纠偏改写执行失真压回结构真相面：固定rewrite顺序、拒收升级路径与authority、lineage、liability改写模板骨架](86-%E5%A6%82%E4%BD%95%E6%8A%8A%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%E5%8E%8B%E5%9B%9E%E7%BB%93%E6%9E%84%E7%9C%9F%E7%9B%B8%E9%9D%A2%EF%BC%9A%E5%9B%BA%E5%AE%9Arewrite%E9%A1%BA%E5%BA%8F%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E4%B8%8Eauthority%E3%80%81lineage%E3%80%81liability%E6%94%B9%E5%86%99%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
+87. [87-如何把Prompt宿主修复稳态纠偏再纠偏改写纠偏执行失真压回compiled request truth：固定rewrite correction顺序、section registry、dynamic boundary与threshold改写模板骨架](87-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%EF%BC%9Aregistry%E3%80%81boundary%E4%B8%8Ethreshold%E6%A8%A1%E6%9D%BF.md)
+88. [88-如何把治理宿主修复稳态纠偏再纠偏改写纠偏执行失真压回统一定价控制面：固定rewrite correction顺序、classifier、writeback seam与threshold改写模板骨架](88-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%EF%BC%9Aclassifier%E3%80%81writeback%20seam%E4%B8%8Ethreshold%E6%A8%A1%E6%9D%BF.md)
+89. [89-如何把结构宿主修复稳态纠偏再纠偏改写纠偏执行失真压回结构真相面：固定rewrite correction顺序、fresh merge、transport与liability改写模板骨架](89-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%EF%BC%9Afresh%20merge%E3%80%81transport%E4%B8%8Eliability%E6%A8%A1%E6%9D%BF.md)
 
 ## 按使用目标阅读
 
@@ -153,6 +156,7 @@
 - 想把这些宿主修复监护失真继续压回固定纠偏顺序、拒收升级路径与改写模板骨架，而不是停在假观察、假冻结与假重开的坏样例辨认：`../navigation/65 -> 69 -> 70 -> 71 -> ../casebooks/40 -> ../casebooks/41 -> ../casebooks/42`
 - 想把这些宿主修复稳态失真继续压回固定纠偏顺序、拒收升级路径与改写模板骨架，而不是停在假稳态、假托管与假阈值的坏样例辨认：`../navigation/73 -> 75 -> 76 -> 77 -> ../casebooks/46 -> ../casebooks/47 -> ../casebooks/48`
 - 想把这些宿主修复稳态纠偏执行失真继续压回固定顺序、拒收升级路径与改写模板骨架，而不是停在假修正卡、假恢复顺序与假责任演练的坏样例辨认：`../navigation/77 -> 78 -> 79 -> 80 -> ../casebooks/49 -> ../casebooks/50 -> ../casebooks/51`
+- 想把这些宿主修复稳态纠偏再纠偏改写纠偏执行失真继续压回固定 `rewrite correction` 顺序、拒收升级路径与改写模板骨架，而不是停在假 rewrite correction card、假 classifier pricing、假 fresh merge 与假 reopen liability 的坏样例辨认：`../navigation/89 -> 87 -> 88 -> 89 -> ../casebooks/58 -> ../casebooks/59 -> ../casebooks/60`
 
 ## 与其他目录的边界
 
@@ -190,6 +194,8 @@
 - `../navigation/81 -> 81-83` 继续回答“怎样把这些宿主修复稳态纠偏再纠偏执行失真重新压回固定顺序、拒收升级路径与改写模板骨架”。
 - `../navigation/85 -> 84-86` 继续回答“怎样把这些宿主修复稳态纠偏再纠偏改写执行失真重新压回固定 rewrite 顺序、拒收升级路径与改写模板骨架”。
 - 再往下一层，应由 `../navigation/86 -> ../api/81-83` 继续回答“怎样把这些宿主修复稳态纠偏再纠偏改写纠偏继续压成宿主可消费的 rewrite correction 对象、拒收语义与长期 reopen 责任面”。
+- `../navigation/89 -> 87-89` 继续回答“怎样把这些宿主修复稳态纠偏再纠偏改写纠偏执行失真重新压回固定 rewrite correction 顺序、拒收升级路径与改写模板骨架”。
+- 再往下一层，应由 `../navigation/90 -> ../api/84-86` 继续回答“怎样把这些 rewrite correction 再次压成宿主可消费的对象、拒收语义与长期 reopen 责任面”。
 - 再往下一层，应由 `../navigation/58 -> ../api/60-62` 继续回答“怎样把这些宿主修复纠偏继续压成宿主可消费的收口卡、完成语义与交接保证面”。
 - `../philosophy/81-83` 负责回答“为什么这些实现顺序不是经验技巧，而是 Prompt 编译链、统一定价治理与故障模型编码的不可约判断”。
 
