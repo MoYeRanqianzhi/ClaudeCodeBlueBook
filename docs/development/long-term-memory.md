@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行 / repair steady-state correction-of-correction rewrite correction refinement correction execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真 / repair steady-state correction-of-correction rewrite correction refinement correction distortion casebook”层。
+- 新增结论：
+  - Prompt refinement correction execution 如果要真正稳定，不能只看 `repair card` 已存在，还要防止它退回假 `protocol truth`、假 `synthesis custody` 与假 `reopen liability`。
+  - 治理 refinement correction execution 如果要真正稳定，不能只看 `repair card` 已存在，还要防止它退回假 `pricing causality`、假 `writeback seam round-trip` 与假 `reopen liability`。
+  - 结构 refinement correction execution 如果要真正稳定，不能只看 `repair card` 已存在，还要防止它退回假 `fresh merge`、假 `fail-closed` 与假 `reopen liability`。
+- 新增目录责任：
+  - `navigation/96` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真入口。
+  - `casebooks/64-66` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction execution 的假 `repair card`、假 `reject order` 与假 `reopen liability` 反例。
+- 当前新的写作约束：
+  - `casebooks/64-66` 只表示 correction-of-correction rewrite correction refinement correction execution distortion，不再回头重写 `playbooks/68-70` 的执行层。
+  - `74-96` 应被持续当成一条连续小循环来写，而不是二十三篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/93-95`，把这一层 refinement correction execution 失真继续压成新的固定顺序、拒收升级路径与改写模板骨架。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏协议 / repair steady-state correction-of-correction rewrite correction refinement correction protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行 / repair steady-state correction-of-correction rewrite correction refinement correction execution”层。
 - 新增结论：
   - Prompt refinement correction protocol 如果要真正被长期执行，不能只保留 authority/lineage/registry-boundary/synthesis 等对象名，还要把它们继续运行成固定 `repair card`、固定 `reject order` 与正式 `re-entry / reopen drill`。
