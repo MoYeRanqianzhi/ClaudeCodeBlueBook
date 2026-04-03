@@ -447,4 +447,6 @@
 - 想把 `118` 的长文压成一张门类型矩阵，快速看出不同 gate 的 question、repo touchpoint、pass signal 与 forbidden overclaim：`118` -> `appendix/102`
 - 想看为什么即使 gate 类型已经分清，仍必须继续给不同源码触点设定严格的结论上限，避免 README、check、bundle 与 smoke 被一起压成“已验证”：`118` -> `119`
 - 想把 `119` 的长文压成一张结论上限矩阵，快速看出不同 evidence 的 claim ceiling、claim owner 与 forbidden stronger claim：`119` -> `appendix/103`
+- 想看为什么即使单项证据的结论上限已经明确，更强结论仍不能自然升级，而必须满足多类证据联立签发与 gap veto 约束：`119` -> `120`
+- 想把 `120` 的长文压成一张联合签字矩阵，快速看出不同 claim 的 required evidence set、minimum signer quorum 与 veto signal：`120` -> `appendix/104`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
