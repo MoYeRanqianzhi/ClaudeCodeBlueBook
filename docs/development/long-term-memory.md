@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真 / repair steady-state correction-of-correction rewrite correction refinement correction distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏 / repair steady-state correction-of-correction rewrite correction refinement correction guide”层。
+- 新增结论：
+  - Prompt refinement correction execution distortion 如果要真正被纠偏，不能只继续批评假 `repair card` 与假 `reopen liability`，还要把 `authority chain`、`compiled request lineage`、`registry-boundary custody`、`synthesis custody`、`protocol-prefix custody`、`forgetting-continuation covenant` 与 `long-horizon reopen liability` 重新压回同一个 Prompt 编译对象。
+  - 治理 refinement correction execution distortion 如果要真正被纠偏，不能只继续批评假 `pricing causality` 与默认继续，还要把 `authority chain`、`ledger truth surface`、`window truth surface`、`pricing causality surface`、`classifier pricing attestation`、`writeback seam contract`、`ingress_restore_lineage_contract` 与 `long-horizon reopen liability` 重新压回同一个统一定价控制面。
+  - 结构 refinement correction execution distortion 如果要真正被纠偏，不能只继续批评假 `fresh merge` 与 reconnect 提示，还要把 `authority surface`、`single-source writeback`、`lineage resume contract`、`fresh merge contract`、`anti-zombie restitution packet`、`transport boundary contract`、`fail-closed worktree contract` 与 `long-horizon reopen liability` 重新压回同一个结构真相面。
+- 新增目录责任：
+  - `navigation/97` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏入口。
+  - `guides/93-95` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction execution 失真的固定 `refinement correction order`、硬拒收项与模板骨架。
+- 当前新的写作约束：
+  - `guides/93-95` 只表示 correction-of-correction rewrite correction refinement correction execution distortion rewrite，不再回头重写 `casebooks/64-66` 的反例层。
+  - `74-97` 应被持续当成一条连续小循环来写，而不是二十四篇并列新增文章。
+- 下一步最值钱的候选应切到 `api/90-92`，把这一层 refinement correction fixed order 继续压成宿主可消费的修正对象、共同 reject 语义与长期 reopen 责任面。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行 / repair steady-state correction-of-correction rewrite correction refinement correction execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真 / repair steady-state correction-of-correction rewrite correction refinement correction distortion casebook”层。
 - 新增结论：
   - Prompt refinement correction execution 如果要真正稳定，不能只看 `repair card` 已存在，还要防止它退回假 `protocol truth`、假 `synthesis custody` 与假 `reopen liability`。

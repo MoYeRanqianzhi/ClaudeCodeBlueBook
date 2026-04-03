@@ -7,6 +7,46 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A069. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏层
+
+- Prompt refinement correction execution 即使已经被 `casebooks/64` 写成假 `repair card`、假 `protocol truth` 与假 `reopen liability` 的反例层，如果团队不能继续把这些失真压回固定 `refinement correction order`、硬拒收项与模板骨架，Prompt 魔力就仍会继续围绕 repair prose、UI transcript 与未综合的子 Agent 研究 prose 工作；这说明 Prompt 线下一层最值钱的不是继续补反例标签，而是把 refinement correction execution distortion 压成新的 guide layer。
+- Governance refinement correction execution 即使已经被 `casebooks/65` 写成假 `repair card`、假 `pricing causality` 与假 `reopen liability` 的反例层，如果团队不能继续把这些失真压回固定 `refinement correction order`、硬拒收项与模板骨架，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与运营感觉工作；这说明治理线下一层最值钱的不是继续补坏样例，而是把 refinement correction execution distortion 压成新的 guide layer。
+- Structure refinement correction execution 即使已经被 `casebooks/66` 写成假 `repair card`、假 `fresh merge` 与假 `reopen liability` 的反例层，如果团队不能继续把这些失真压回固定 `refinement correction order`、硬拒收项与模板骨架，源码先进性就仍会继续围绕 pointer、telemetry、archive prose 与作者说明工作；这说明结构线下一层最值钱的不是继续补事故话术，而是把 refinement correction execution distortion 压成新的 guide layer。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏 refinement correction execution distortion 之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏层”：
+  - `navigation/97` 负责统一入口。
+  - `guides/93-95` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction execution distortion 的固定 `refinement correction order`、硬拒收项与模板骨架。
+- 这也意味着 `94-97` 应被视为一条连续小循环，而不是四篇并列文章。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 guide 口号，而是考虑新的 `api/90-92`，把这些 refinement correction fixed order 继续压成宿主可消费的修正对象、共同 reject 语义与长期 reopen 责任面。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:491-576`
+- `claude-code-source-code/src/utils/api.ts:321-405`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/coordinator/coordinatorMode.ts:207-257`
+- `claude-code-source-code/src/tools/AgentTool/prompt.ts:101-112`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:483-698`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:526-1318`
+- `claude-code-source-code/src/utils/permissions/yoloClassifier.ts:1250-1312`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/utils/sessionState.ts:92-149`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:186-230`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:375-400`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+
 ### A068. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真层
 
 - Prompt refinement correction execution 即使已经被写成 `playbooks/68` 的固定 `repair card`、固定 `reject order` 与 `reopen drill`，如果团队不能继续把它最常怎样退回假 `repair card`、假 `protocol truth` 与假 `reopen liability` 写成新的反例层，Prompt 魔力就仍会继续围绕 rewrite prose、summary handoff 与值班者记忆工作；这说明 Prompt 线下一层最值钱的不是继续补 playbook 口号，而是把 refinement correction execution 压成新的 casebook。
