@@ -469,4 +469,6 @@
 - 想把 `129` 的长文压成一张动作算子矩阵，快速看出不同 operator 的 trigger、effect 与代表性源码锚点：`129` -> `appendix/113`
 - 想看为什么 Claude Code 把很多安全状态都当成会过期、需续签、可失效的租约，而不是永久事实：`129` -> `130`
 - 想把 `130` 的长文压成一张时态语义矩阵，快速看出不同 artifact 的 freshness basis、expiry model 与 refresh path：`130` -> `appendix/114`
+- 想看为什么即使动作算子与时态租约都已经成立，Claude Code 仍不应被理解成散点规则，而必须被理解成可进入、可续签、可降级、可恢复、可终止的安全状态机：`130` -> `131`
+- 想把 `131` 的长文压成一张状态机矩阵，快速看出不同 state family 的 entry condition、stay condition、exit operator 与 authoritative signer：`131` -> `appendix/115`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
