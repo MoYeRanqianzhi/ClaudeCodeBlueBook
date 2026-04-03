@@ -437,4 +437,20 @@
 - 想把 `113` 的长文压成一张优先级矩阵，快速看出不同 area 的 historical signal、recommended test type 与 priority：`113` -> `appendix/97`
 - 想看为什么即使优先级已经排清，下一步仍不能停留在路线图，而必须直接收口成首批可执行测试套件与 rollout order：`113` -> `114`
 - 想把 `114` 的长文压成一张执行矩阵，快速看出不同 suite 的 first test、minimal assertion 与 rollout order：`114` -> `appendix/98`
+- 想看为什么即使最小验证蓝图已经存在，只要它还没进入 script、目录、tsconfig 与 CI 挂载点，就仍然不是工程制度：`114` -> `115`
+- 想把 `115` 的长文压成一张接口矩阵，快速看出不同 interface 的 current state、missing hook 与 recommended contract：`115` -> `appendix/99`
+- 想看为什么即使验证制度化接口已经明确，这份研究版源码若要真正走向可持续安全工程，仍必须先固化边界并按阶段迁移，而不能假装可以一步到位重构：`115` -> `116`
+- 想把 `116` 的长文压成一张迁移矩阵，快速看出不同 phase 的 goal、repo touchpoint 与 exit criteria：`116` -> `appendix/100`
+- 想看为什么即使迁移路线图已经明确，仍不能把 phase 只写成顺序列表，而必须让每个阶段都拥有明确的 entry gate、exit criteria 与 forbidden shortcut：`116` -> `117`
+- 想把 `117` 的长文压成一张阶段门矩阵，快速看出不同 phase 的 entry gate、exit criteria 与 forbidden shortcut：`117` -> `appendix/101`
+- 想看为什么即使阶段门已经成立，仍必须继续区分不同 gate 的签字权限，避免低级 gate 越权冒充高级结论：`117` -> `118`
+- 想把 `118` 的长文压成一张门类型矩阵，快速看出不同 gate 的 question、repo touchpoint、pass signal 与 forbidden overclaim：`118` -> `appendix/102`
+- 想看为什么即使 gate 类型已经分清，仍必须继续给不同源码触点设定严格的结论上限，避免 README、check、bundle 与 smoke 被一起压成“已验证”：`118` -> `119`
+- 想把 `119` 的长文压成一张结论上限矩阵，快速看出不同 evidence 的 claim ceiling、claim owner 与 forbidden stronger claim：`119` -> `appendix/103`
+- 想看为什么即使单项证据的结论上限已经明确，更强结论仍不能自然升级，而必须满足多类证据联立签发与 gap veto 约束：`119` -> `120`
+- 想把 `120` 的长文压成一张联合签字矩阵，快速看出不同 claim 的 required evidence set、minimum signer quorum 与 veto signal：`120` -> `appendix/104`
+- 想看为什么即使联合签字协议已经成立，缺口信号、未证事实与能力上限仍必须拥有比正向信号更高的优先级：`120` -> `121`
+- 想把 `121` 的长文压成一张否决信号矩阵，快速看出不同 veto signal 会阻断什么 claim、依据什么优先级，并要求结论降到哪一级：`121` -> `appendix/105`
+- 想看为什么即使 README 里出现了 verify 之类的命名，也绝不能把文本命名、文件存在、脚本入口与自动化宿主混成同一种“存在”：`121` -> `122`
+- 想把 `122` 的长文压成一张缺席语义矩阵，快速看出不同对象当前停留在哪一层存在、缺哪一层签字，以及哪些 existence jump 被禁止：`122` -> `appendix/106`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
