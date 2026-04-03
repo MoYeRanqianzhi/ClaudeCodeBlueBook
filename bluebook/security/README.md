@@ -473,4 +473,6 @@
 - 想把 `131` 的长文压成一张状态机矩阵，快速看出不同 state family 的 entry condition、stay condition、exit operator 与 authoritative signer：`131` -> `appendix/115`
 - 想看为什么即使状态机已经成立，Claude Code 仍必须继续封死非法跃迁、旧写者回魂与假恢复，避免旧世界把新真相改回去：`131` -> `132`
 - 想把 `132` 的长文压成一张宪法矩阵，快速看出不同 state family 的 forbidden shortcut、blocking mechanism 与被阻止的失真：`132` -> `appendix/116`
+- 想看为什么即使非法跃迁禁令已经存在，系统仍必须继续主动撤销旧 snapshot、旧 timer、旧 closure、旧 credential 与旧 promise 的写权：`132` -> `133`
+- 想把 `133` 的长文压成一张撤权矩阵，快速看出不同 stale writer 的 revocation trigger、mechanism 与被阻止的风险：`133` -> `appendix/117`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
