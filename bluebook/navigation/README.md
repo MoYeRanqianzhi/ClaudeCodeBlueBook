@@ -103,6 +103,11 @@
 91. [宿主修复稳态纠偏再纠偏改写纠偏精修执行导航：host consumption card与hard reject顺序](91-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E5%AF%BC%E8%88%AA%EF%BC%9Ahost%20consumption%20card%E4%B8%8Ehard%20reject%E9%A1%BA%E5%BA%8F.md)
 92. [宿主修复稳态纠偏再纠偏改写纠偏精修失真导航：假host consumption card、假hard reject与假reopen.md](92-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E5%A4%B1%E7%9C%9F%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%81%87host%20consumption%20card%E3%80%81%E5%81%87hard%20reject%E4%B8%8E%E5%81%87reopen.md)
 93. [宿主修复稳态纠偏再纠偏改写纠偏精修导航：refinement顺序与模板骨架](93-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E5%AF%BC%E8%88%AA%EF%BC%9Arefinement%E9%A1%BA%E5%BA%8F%E4%B8%8E%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
+94. [宿主修复稳态纠偏再纠偏改写纠偏精修纠偏导航：修正对象、reject语义与长期reopen责任面](94-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E5%AF%BC%E8%88%AA%EF%BC%9A%E4%BF%AE%E6%AD%A3%E5%AF%B9%E8%B1%A1%E3%80%81reject%E8%AF%AD%E4%B9%89%E4%B8%8E%E9%95%BF%E6%9C%9Freopen%E8%B4%A3%E4%BB%BB%E9%9D%A2.md)
+95. [宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行导航：repair card与reject顺序](95-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%AF%BC%E8%88%AA%EF%BC%9Arepair%20card%E4%B8%8Ereject%E9%A1%BA%E5%BA%8F.md)
+96. [宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真导航：假repair card、假reject与假reopen](96-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E5%A4%B1%E7%9C%9F%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%81%87repair%20card%E3%80%81%E5%81%87reject%E4%B8%8E%E5%81%87reopen.md)
+97. [宿主修复稳态纠偏再纠偏改写纠偏精修纠偏导航：refinement correction顺序与模板骨架](97-宿主修复稳态纠偏再纠偏改写纠偏精修纠偏导航：refinement%20correction顺序与模板骨架.md)
+98. [宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修导航：repair对象、共同reject语义与长期reopen责任面](98-宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修导航：repair对象、共同reject语义与长期reopen责任面.md)
 
 和其他目录的关系：
 
@@ -176,4 +181,5 @@
 - `95 -> ../playbooks/68-70` 继续回答“怎样把这些 refinement correction protocol 继续压成固定 repair card、reject 顺序与 reopen 责任演练”。
 - `96 -> ../casebooks/64-66` 继续回答“为什么这些 refinement correction execution 明明已经存在，仍会重新退回假 repair card、假 reject 顺序与假 reopen 责任演练”。
 - `97 -> ../guides/93-95` 继续回答“怎样把这些 refinement correction execution 失真重新压回固定 refinement correction 顺序、拒收升级路径与改写模板骨架”。
-- 再往下一层，应由 `98 -> ../api/90-92` 继续回答“怎样把这些 refinement correction 固定顺序继续压成宿主可消费的修正对象、共同 reject 语义与长期 reopen 责任面”。
+- `98 -> ../api/90-92` 继续回答“怎样把这些 refinement correction fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
+- 再往下一层，应由 `99 -> ../playbooks/71-73` 继续回答“怎样把这些 refinement correction repair protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练”。

@@ -122,6 +122,9 @@
 - [87-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏协议：authority chain、registry-boundary、synthesis custody与long-term reopen liability](87-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20chain%E3%80%81registry-boundary%E3%80%81synthesis%20custody%E4%B8%8Elong-term%20reopen%20liability.md)
 - [88-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏协议：authority chain、window truth、classifier pricing与long-term reopen liability](88-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20chain%E3%80%81window%20truth%E3%80%81classifier%20pricing%E4%B8%8Elong-term%20reopen%20liability.md)
 - [89-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏协议：authority surface、fresh merge、anti-zombie与long-term reopen liability](89-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E5%8D%8F%E8%AE%AE%EF%BC%9Aauthority%20surface%E3%80%81fresh%20merge%E3%80%81anti-zombie%E4%B8%8Elong-term%20reopen%20liability.md)
+- [90-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority chain、protocol truth、repair attestation与long-term reopen liability](90-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority%20chain、protocol%20truth、repair%20attestation与long-term%20reopen%20liability.md)
+- [91-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority chain、pricing causality、writeback seam与long-term reopen liability](91-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority%20chain、pricing%20causality、writeback%20seam与long-term%20reopen%20liability.md)
+- [92-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority surface、fresh merge、fail-closed与long-term reopen liability](92-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority%20surface、fresh%20merge、fail-closed与long-term%20reopen%20liability.md)
 
 ## 按接入任务阅读
 
@@ -218,7 +221,11 @@
 - `../navigation/92 -> ../casebooks/61-63` 继续回答“为什么这些 refinement execution 明明已经存在，仍会重新退回假 host consumption card、假 hard reject 顺序与假 reopen 责任演练”。
 - `../navigation/93 -> ../guides/90-92` 继续回答“怎样把这些 refinement execution 失真重新压回固定 refinement 顺序、拒收升级路径与改写模板骨架”。
 - `../navigation/94 -> ../api/87-89` 继续回答“怎样把这些 refinement correction 继续压成宿主可消费的修正对象、拒收语义与长期 reopen 责任面”。
-- 再往下一层，应由 `../navigation/95 -> ../playbooks/68-70` 继续回答“怎样把这些 refinement correction protocol 继续压成固定 repair card、reject 顺序与 reopen 责任演练”。
+- `../navigation/95 -> ../playbooks/68-70` 继续回答“怎样把这些 refinement correction protocol 继续压成固定 repair card、reject 顺序与 reopen 责任演练”。
+- `../navigation/96 -> ../casebooks/64-66` 继续回答“为什么这些 refinement correction execution 明明已经存在，仍会重新退回假 repair card、假 reject 顺序与假 reopen 责任演练”。
+- `../navigation/97 -> ../guides/93-95` 继续回答“怎样把这些 refinement correction execution 失真重新压回固定 refinement correction 顺序、拒收升级路径与改写模板骨架”。
+- `../navigation/98 -> 90-92` 继续回答“怎样把这些 refinement correction fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
+- 再往下一层，应由 `../navigation/99 -> ../playbooks/71-73` 继续回答“怎样把这些 refinement correction repair protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练”。
 - 机制对象宿主消费面不等于内部实现面。
 - host-consumable projection 不等于 internal compiler / internal fault-model trace。
 

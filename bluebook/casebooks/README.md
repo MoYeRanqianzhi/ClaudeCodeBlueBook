@@ -166,6 +166,7 @@
 - `casebooks/61-63` 继续回答“为什么这些 refinement execution 明明已经存在，仍会重新退回假 host consumption card、假 hard reject 顺序与假 reopen 责任演练”。
 - `casebooks/64-66` 继续回答“为什么这些 refinement correction execution 明明已经存在，仍会重新退回假 repair card、假 reject 顺序与假 reopen 责任演练”。
 - `../navigation/97 -> ../guides/93-95` 继续回答“怎样把这些 refinement correction execution 失真重新压回固定 refinement correction 顺序、拒收升级路径与改写模板骨架”。
-- 再往下一层，应由 `../navigation/98 -> ../api/90-92` 继续回答“怎样把这些 refinement correction 固定顺序继续压成宿主可消费的修正对象、共同 reject 语义与长期 reopen 责任面”。
+- `../navigation/98 -> ../api/90-92` 继续回答“怎样把这些 refinement correction fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
+- 再往下一层，应由 `../navigation/99 -> ../playbooks/71-73` 继续回答“怎样把这些 refinement correction repair protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练”。
 - 再往下一层，应由 `../navigation/29 -> ../guides/39-41` 继续回答“怎样把这些 drift 原型编译成 validator / linter / reject rule”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。

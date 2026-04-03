@@ -207,7 +207,8 @@
 - `../navigation/95 -> 68-70` 继续回答“怎样把这些 refinement correction protocol 继续压成固定 repair card、reject 顺序与 reopen 责任演练”。
 - `../navigation/96 -> ../casebooks/64-66` 继续回答“为什么这些 refinement correction execution 明明已经存在，仍会重新退回假 repair card、假 reject 顺序与假 reopen 责任演练”。
 - `../navigation/97 -> 93-95` 继续回答“怎样把这些 refinement correction execution 失真重新压回固定 refinement correction 顺序、拒收升级路径与改写模板骨架”。
-- 再往下一层，应由 `../navigation/98 -> ../api/90-92` 继续回答“怎样把这些 refinement correction 固定顺序继续压成宿主可消费的修正对象、共同 reject 语义与长期 reopen 责任面”。
+- `../navigation/98 -> ../api/90-92` 继续回答“怎样把这些 refinement correction fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
+- 再往下一层，应由 `../navigation/99 -> ../playbooks/71-73` 继续回答“怎样把这些 refinement correction repair protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练”。
 - 再往下一层，应由 `../navigation/58 -> ../api/60-62` 继续回答“怎样把这些宿主修复纠偏继续压成宿主可消费的收口卡、完成语义与交接保证面”。
 - `../philosophy/81-83` 负责回答“为什么这些实现顺序不是经验技巧，而是 Prompt 编译链、统一定价治理与故障模型编码的不可约判断”。
 
