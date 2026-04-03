@@ -475,4 +475,6 @@
 - 想把 `132` 的长文压成一张宪法矩阵，快速看出不同 state family 的 forbidden shortcut、blocking mechanism 与被阻止的失真：`132` -> `appendix/116`
 - 想看为什么即使非法跃迁禁令已经存在，系统仍必须继续主动撤销旧 snapshot、旧 timer、旧 closure、旧 credential 与旧 promise 的写权：`132` -> `133`
 - 想把 `133` 的长文压成一张撤权矩阵，快速看出不同 stale writer 的 revocation trigger、mechanism 与被阻止的风险：`133` -> `appendix/117`
+- 想看为什么即使旧写者已经被撤权，系统仍不允许任何局部成功信号随便抹掉失败痕迹，只有消费完整闭环的 owner 才配清除：`133` -> `134`
+- 想把 `134` 的长文压成一张清理权限矩阵，快速看出不同 artifact 的 cleanup owner、cleanup gate 与 forbidden premature clear：`134` -> `appendix/118`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
