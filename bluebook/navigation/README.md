@@ -99,6 +99,7 @@
 87. [宿主修复稳态纠偏再纠偏改写纠偏执行导航：rewrite correction card与reject顺序](87-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%AF%BC%E8%88%AA%EF%BC%9Arewrite%20correction%20card%E4%B8%8Ereject%E9%A1%BA%E5%BA%8F.md)
 88. [宿主修复稳态纠偏再纠偏改写纠偏失真导航：假rewrite correction card、假reject与假reopen.md](88-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E5%A4%B1%E7%9C%9F%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%81%87rewrite%20correction%20card%E3%80%81%E5%81%87reject%E4%B8%8E%E5%81%87reopen.md)
 89. [宿主修复稳态纠偏再纠偏改写纠偏导航：rewrite correction顺序与模板骨架](89-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E5%AF%BC%E8%88%AA%EF%BC%9Arewrite%20correction%E9%A1%BA%E5%BA%8F%E4%B8%8E%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
+90. [宿主修复稳态纠偏再纠偏改写纠偏精修导航：宿主消费对象、reject语义与reopen责任账本](90-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%AE%BF%E4%B8%BB%E6%B6%88%E8%B4%B9%E5%AF%B9%E8%B1%A1%E3%80%81reject%E8%AF%AD%E4%B9%89%E4%B8%8Ereopen%E8%B4%A3%E4%BB%BB%E8%B4%A6%E6%9C%AC.md)
 
 和其他目录的关系：
 
@@ -164,4 +165,5 @@
 - `87 -> playbooks/62-64` 继续回答“怎样把这些 rewrite correction protocol 继续压成固定 rewrite correction card、reject 顺序与 re-entry / reopen 责任演练”。
 - `88 -> casebooks/58-60` 继续回答“为什么这些 rewrite correction execution 明明已经存在，仍会重新退回假 rewrite correction card、假 reject 顺序与假 reopen 责任演练”。
 - `89 -> guides/87-89` 继续回答“怎样把这些 rewrite correction execution 失真重新压回固定 rewrite correction 顺序、拒收升级路径与改写模板骨架”。
-- 再往下一层，应由 `90 -> api/84-86` 继续回答“怎样把这些 rewrite correction 再次压成宿主可消费的对象、拒收语义与长期 reopen 责任面”。
+- `90 -> api/84-86` 继续回答“怎样把这些 rewrite correction 固定顺序继续压成宿主可消费对象、hard reject 语义与长期 reopen 责任账本”。
+- 再往下一层，应由 `91 -> ../playbooks/65-67` 继续回答“怎样把这些 rewrite correction 精修协议继续压成固定宿主消费卡、hard reject 顺序与 reopen 责任演练”。
