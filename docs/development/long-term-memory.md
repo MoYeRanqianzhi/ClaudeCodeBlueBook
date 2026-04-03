@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement execution”层。
+- 新增结论：
+  - Prompt refinement protocol 如果要真正被宿主、CI、评审与交接长期执行，不能只继续共享 `compiled request lineage`、`registry-boundary covenant` 与 `reopen liability ledger`，还要把它们继续压成固定 `host consumption card`、固定 `hard reject order` 与正式 `reentry / reopen drill`；否则 Prompt 魔力仍会退回 rewrite prose、summary handoff 与值班者记忆。
+  - 治理 refinement protocol 如果要真正统一安全设计与省 token 设计，不能只继续共享 authority、ledger、window、pricing、classifier、writeback 与 liability 对象，还要把它们继续压成固定 `host consumption card`、固定 `hard reject order` 与正式 `reopen liability drill`；否则治理真相仍会退回 mode 面板、usage dashboard 与运营感觉。
+  - 结构 refinement protocol 如果要真正让 later 维护者独立接手，不能只继续共享 authority、single-source、lineage、fresh merge、anti-zombie、transport 与 fail-closed 对象，还要把它们继续压成固定 `host consumption card`、固定 `hard reject order` 与正式 `reopen drill`；否则源码先进性仍会退回 pointer、telemetry、archive prose 与作者说明。
+- 新增目录责任：
+  - `navigation/91` 负责宿主修复稳态纠偏再纠偏改写纠偏精修执行入口。
+  - `playbooks/65-67` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement protocol 的宿主消费卡、固定 `hard reject` 顺序与 `reopen` 演练。
+- 当前新的写作约束：
+  - `playbooks/65-67` 只表示 correction-of-correction rewrite correction refinement protocol execution，不再回头重写 `api/84-86` 的共享对象面。
+  - `74-91` 应被持续当成一条连续小循环来写，而不是十八篇并列新增文章。
+- 下一步最值钱的候选应切到 `casebooks/61-63`，把这一层 refinement execution 继续压成新的反例层。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏纠偏 / repair steady-state correction-of-correction rewrite correction guide”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement protocol”层。
 - 新增结论：
   - Prompt rewrite correction 如果要真正被宿主、CI、评审与交接共同消费，不能只继续固定 `rewrite correction order`，还要把同一条 `compiled request truth -> section registry -> dynamic boundary -> protocol transcript -> stable prefix -> lawful forgetting -> continuation qualification -> threshold liability` 编译链继续压成共享消费对象、共同 reject 语义与长期 reopen 责任账本；否则 Prompt 魔力仍会退回 rewrite prose、summary handoff 与未综合的子 Agent prose。
