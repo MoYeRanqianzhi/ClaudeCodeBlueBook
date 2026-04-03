@@ -477,4 +477,6 @@
 - 想把 `133` 的长文压成一张撤权矩阵，快速看出不同 stale writer 的 revocation trigger、mechanism 与被阻止的风险：`133` -> `appendix/117`
 - 想看为什么即使旧写者已经被撤权，系统仍不允许任何局部成功信号随便抹掉失败痕迹，只有消费完整闭环的 owner 才配清除：`133` -> `134`
 - 想把 `134` 的长文压成一张清理权限矩阵，快速看出不同 artifact 的 cleanup owner、cleanup gate 与 forbidden premature clear：`134` -> `appendix/118`
+- 想看为什么即使清理者与清理门槛都正确，系统仍不应让清理变成无痕动作，而必须保留谁清了、为何清、清后如何回查的审计线索：`134` -> `135`
+- 想把 `135` 的长文压成一张遗忘审计矩阵，快速看出不同 artifact 的 cleanup action、current audit trail 与当前 audit gap：`135` -> `appendix/119`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
