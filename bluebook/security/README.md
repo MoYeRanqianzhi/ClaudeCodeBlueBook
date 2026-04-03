@@ -487,4 +487,6 @@
 - 想把 `138` 的长文压成一张宿主契约矩阵，快速看出不同 contract surface 的 current payload、missing cleanup semantics 与 upgrade target：`138` -> `appendix/122`
 - 想看为什么即使 cleanup 语义已经进入宿主契约，它仍必须继续被 schema、生成类型、handler 与 conformance 共同守住，否则还会退化回内部知识：`138` -> `139`
 - 想把 `139` 的长文压成一张 cleanup 契约机检矩阵，快速看出不同 layer 的 current anchor、cleanup gap 与 recommended guard：`139` -> `appendix/123`
+- 想看为什么即使 cleanup 契约机检骨架已经存在，也仍不能把新语义粗暴塞给所有宿主，而必须通过 optional fields、降级语法、假成功防护与兼容回退渐进发布：`139` -> `140`
+- 想把 `140` 的长文压成一张 cleanup 契约兼容迁移矩阵，快速看出不同 surface / path 的 current compatibility tactic、cleanup upgrade risk 与 recommended rollout：`140` -> `appendix/124`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
