@@ -471,4 +471,6 @@
 - 想把 `130` 的长文压成一张时态语义矩阵，快速看出不同 artifact 的 freshness basis、expiry model 与 refresh path：`130` -> `appendix/114`
 - 想看为什么即使动作算子与时态租约都已经成立，Claude Code 仍不应被理解成散点规则，而必须被理解成可进入、可续签、可降级、可恢复、可终止的安全状态机：`130` -> `131`
 - 想把 `131` 的长文压成一张状态机矩阵，快速看出不同 state family 的 entry condition、stay condition、exit operator 与 authoritative signer：`131` -> `appendix/115`
+- 想看为什么即使状态机已经成立，Claude Code 仍必须继续封死非法跃迁、旧写者回魂与假恢复，避免旧世界把新真相改回去：`131` -> `132`
+- 想把 `132` 的长文压成一张宪法矩阵，快速看出不同 state family 的 forbidden shortcut、blocking mechanism 与被阻止的失真：`132` -> `appendix/116`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
