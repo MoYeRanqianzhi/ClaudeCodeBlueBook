@@ -445,4 +445,6 @@
 - 想把 `117` 的长文压成一张阶段门矩阵，快速看出不同 phase 的 entry gate、exit criteria 与 forbidden shortcut：`117` -> `appendix/101`
 - 想看为什么即使阶段门已经成立，仍必须继续区分不同 gate 的签字权限，避免低级 gate 越权冒充高级结论：`117` -> `118`
 - 想把 `118` 的长文压成一张门类型矩阵，快速看出不同 gate 的 question、repo touchpoint、pass signal 与 forbidden overclaim：`118` -> `appendix/102`
+- 想看为什么即使 gate 类型已经分清，仍必须继续给不同源码触点设定严格的结论上限，避免 README、check、bundle 与 smoke 被一起压成“已验证”：`118` -> `119`
+- 想把 `119` 的长文压成一张结论上限矩阵，快速看出不同 evidence 的 claim ceiling、claim owner 与 forbidden stronger claim：`119` -> `appendix/103`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
