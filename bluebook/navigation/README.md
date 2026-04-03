@@ -97,6 +97,7 @@
 85. [宿主修复稳态纠偏再纠偏改写纠偏导航：Prompt、治理与故障模型再纠偏改写执行失真如何压回固定rewrite顺序、拒收升级路径与改写模板骨架](85-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%E5%A6%82%E4%BD%95%E5%8E%8B%E5%9B%9E%E5%9B%BA%E5%AE%9Arewrite%E9%A1%BA%E5%BA%8F%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%B7%AF%E5%BE%84%E4%B8%8E%E6%94%B9%E5%86%99%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
 86. [宿主修复稳态纠偏再纠偏改写纠偏协议导航：Prompt、治理与故障模型再纠偏改写纠偏如何进入宿主可消费的rewrite correction对象、拒收升级语义与长期reopen责任面](86-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E5%8D%8F%E8%AE%AE%E5%AF%BC%E8%88%AA%EF%BC%9APrompt%E3%80%81%E6%B2%BB%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E5%A6%82%E4%BD%95%E8%BF%9B%E5%85%A5%E5%AE%BF%E4%B8%BB%E5%8F%AF%E6%B6%88%E8%B4%B9%E7%9A%84rewrite%20correction%E5%AF%B9%E8%B1%A1%E3%80%81%E6%8B%92%E6%94%B6%E5%8D%87%E7%BA%A7%E8%AF%AD%E4%B9%89%E4%B8%8E%E9%95%BF%E6%9C%9Freopen%E8%B4%A3%E4%BB%BB%E9%9D%A2.md)
 87. [宿主修复稳态纠偏再纠偏改写纠偏执行导航：rewrite correction card与reject顺序](87-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%AF%BC%E8%88%AA%EF%BC%9Arewrite%20correction%20card%E4%B8%8Ereject%E9%A1%BA%E5%BA%8F.md)
+88. [宿主修复稳态纠偏再纠偏改写纠偏失真导航：假rewrite correction card、假reject与假reopen.md](88-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E5%A4%B1%E7%9C%9F%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%81%87rewrite%20correction%20card%E3%80%81%E5%81%87reject%E4%B8%8E%E5%81%87reopen.md)
 
 和其他目录的关系：
 
@@ -160,4 +161,5 @@
 - `85 -> guides/84-86` 继续回答“怎样把这些宿主修复稳态纠偏再纠偏改写执行失真重新压回固定 rewrite 顺序、拒收升级路径与改写模板骨架”。
 - `86 -> api/81-83` 继续回答“怎样把这些宿主修复稳态纠偏再纠偏改写纠偏继续压成宿主可消费的 rewrite correction 对象、拒收语义与长期 reopen 责任面”。
 - `87 -> playbooks/62-64` 继续回答“怎样把这些 rewrite correction protocol 继续压成固定 rewrite correction card、reject 顺序与 re-entry / reopen 责任演练”。
-- 再往下一层，应由 `88 -> casebooks/58-60` 继续回答“为什么这些 rewrite correction execution 明明已经存在，仍会重新退回假 rewrite correction card、假 reject 顺序与假 reopen 责任演练”。
+- `88 -> casebooks/58-60` 继续回答“为什么这些 rewrite correction execution 明明已经存在，仍会重新退回假 rewrite correction card、假 reject 顺序与假 reopen 责任演练”。
+- 再往下一层，应由 `89 -> guides/87-89` 继续回答“怎样把这些 rewrite correction execution 失真重新压回固定 rewrite correction 顺序、拒收升级路径与改写模板骨架”。

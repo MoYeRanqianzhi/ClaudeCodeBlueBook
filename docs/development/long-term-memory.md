@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏执行 / repair steady-state correction-of-correction rewrite correction execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏失真 / repair steady-state correction-of-correction rewrite correction distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写纠偏执行最危险的失败，不是没跑 `rewrite correction card`，而是让 runtime `section registry` 退回静态目录、让 `dynamic boundary` 退回 attachment 说明、让 `threshold liability` 退回礼貌备注；一旦如此，Prompt 魔力就会从编译链退回更体面的宪法说明文。
+  - 治理宿主修复稳态纠偏再纠偏改写纠偏执行最危险的失败，不是没跑 classifier pricing 与 writeback seam，而是让 classifier 成本重新掉出 pricing object、让 `requires_action -> pending_action -> session_state_changed` 重新退回 UI 状态、让 threshold 退回默认继续；一旦如此，安全设计与省 token 设计就会同时退回运营感觉。
+  - 结构宿主修复稳态纠偏再纠偏改写纠偏执行最危险的失败，不是没写 fresh merge contract 与 transport boundary，而是让结果没坏重新取代 merge 契约、让 transport 静默重新取代边界证明、让 fail-closed worktree 重新退回“应该没事”的感觉；一旦如此，源码先进性就会从结构真相面退回恢复成功率与目录美学。
+- 新增目录责任：
+  - `navigation/88` 负责宿主修复稳态纠偏再纠偏改写纠偏失真入口。
+  - `casebooks/58-60` 负责三类宿主修复稳态纠偏再纠偏改写纠偏执行为什么仍会退回假 `rewrite correction card`、假 `reject verdict` 与假 `reopen liability`。
+- 当前新的写作约束：
+  - `58-60` 只表示 correction-of-correction rewrite correction protocol execution distortion，不再回头重写 `55-57` 的 rewrite execution 反例。
+  - `74-88` 应被持续当成一条连续小循环来写，而不是十五篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/87-89`，把这一层 distortion 重新压回固定 `rewrite correction` 顺序、拒收升级路径与改写模板骨架。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏协议 / repair steady-state correction-of-correction rewrite correction protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏执行 / repair steady-state correction-of-correction rewrite correction execution”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏改写纠偏协议如果要真正运行起来，不能只保留 `compiled request truth`、`section registry` 与 `dynamic boundary` 规则面，还要继续把它们压成同一张 `rewrite correction card`、同一条 `reject verdict order` 与同一套 `re-entry / reopen` drill；否则 Prompt 魔力仍会退回 rewrite prose、summary handoff 与未综合的子 Agent prose。
