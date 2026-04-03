@@ -479,4 +479,6 @@
 - 想把 `134` 的长文压成一张清理权限矩阵，快速看出不同 artifact 的 cleanup owner、cleanup gate 与 forbidden premature clear：`134` -> `appendix/118`
 - 想看为什么即使清理者与清理门槛都正确，系统仍不应让清理变成无痕动作，而必须保留谁清了、为何清、清后如何回查的审计线索：`134` -> `135`
 - 想把 `135` 的长文压成一张遗忘审计矩阵，快速看出不同 artifact 的 cleanup action、current audit trail 与当前 audit gap：`135` -> `appendix/119`
+- 想看为什么即使 cleanup audit 已经开始形成，下一代控制台仍必须把 cleanup_owner、cleanup_reason、cleanup_gate、cleanup_replaced_by 与 cleanup_audit_id 升级成结构化字段：`135` -> `136`
+- 想把 `136` 的长文压成一张 cleanup protocol 字段矩阵，快速看出不同 field 的 meaning、best current carrier 与 migration gain：`136` -> `appendix/120`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
