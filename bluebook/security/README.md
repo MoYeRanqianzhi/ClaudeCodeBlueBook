@@ -467,4 +467,20 @@
 - 想把 `128` 的长文压成一张缩域矩阵，快速看出不同 surface 被裁掉了什么、保留了什么、以及由哪条边界签字：`128` -> `appendix/112`
 - 想看为什么 Claude Code 的安全控制面本质上不是在查一张静态权限表，而是在执行 allow、deny、degrade、step-up、de-scope、suppress、restore 这些动作算子：`128` -> `129`
 - 想把 `129` 的长文压成一张动作算子矩阵，快速看出不同 operator 的 trigger、effect 与代表性源码锚点：`129` -> `appendix/113`
+- 想看为什么 Claude Code 把很多安全状态都当成会过期、需续签、可失效的租约，而不是永久事实：`129` -> `130`
+- 想把 `130` 的长文压成一张时态语义矩阵，快速看出不同 artifact 的 freshness basis、expiry model 与 refresh path：`130` -> `appendix/114`
+- 想看为什么即使动作算子与时态租约都已经成立，Claude Code 仍不应被理解成散点规则，而必须被理解成可进入、可续签、可降级、可恢复、可终止的安全状态机：`130` -> `131`
+- 想把 `131` 的长文压成一张状态机矩阵，快速看出不同 state family 的 entry condition、stay condition、exit operator 与 authoritative signer：`131` -> `appendix/115`
+- 想看为什么即使状态机已经成立，Claude Code 仍必须继续封死非法跃迁、旧写者回魂与假恢复，避免旧世界把新真相改回去：`131` -> `132`
+- 想把 `132` 的长文压成一张宪法矩阵，快速看出不同 state family 的 forbidden shortcut、blocking mechanism 与被阻止的失真：`132` -> `appendix/116`
+- 想看为什么即使非法跃迁禁令已经存在，系统仍必须继续主动撤销旧 snapshot、旧 timer、旧 closure、旧 credential 与旧 promise 的写权：`132` -> `133`
+- 想把 `133` 的长文压成一张撤权矩阵，快速看出不同 stale writer 的 revocation trigger、mechanism 与被阻止的风险：`133` -> `appendix/117`
+- 想看为什么即使旧写者已经被撤权，系统仍不允许任何局部成功信号随便抹掉失败痕迹，只有消费完整闭环的 owner 才配清除：`133` -> `134`
+- 想把 `134` 的长文压成一张清理权限矩阵，快速看出不同 artifact 的 cleanup owner、cleanup gate 与 forbidden premature clear：`134` -> `appendix/118`
+- 想看为什么即使清理者与清理门槛都正确，系统仍不应让清理变成无痕动作，而必须保留谁清了、为何清、清后如何回查的审计线索：`134` -> `135`
+- 想把 `135` 的长文压成一张遗忘审计矩阵，快速看出不同 artifact 的 cleanup action、current audit trail 与当前 audit gap：`135` -> `appendix/119`
+- 想看为什么即使 cleanup audit 已经开始形成，下一代控制台仍必须把 cleanup_owner、cleanup_reason、cleanup_gate、cleanup_replaced_by 与 cleanup_audit_id 升级成结构化字段：`135` -> `136`
+- 想把 `136` 的长文压成一张 cleanup protocol 字段矩阵，快速看出不同 field 的 meaning、best current carrier 与 migration gain：`136` -> `appendix/120`
+- 想看为什么即使 cleanup fields 已经被定义出来，它们也不应平均撒到 notification、footer、`/status`、dialog 与 SDK host，而必须按责任和带宽分层投影：`136` -> `137`
+- 想把 `137` 的长文压成一张 cleanup 投影矩阵，快速看出不同 surface 的 allowed cleanup depth、must-show fields 与 forbidden overprojection：`137` -> `appendix/121`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
