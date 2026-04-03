@@ -465,4 +465,6 @@
 - 想把 `127` 的长文压成一张失败语义矩阵，快速看出不同 risk object 的 preferred failure mode、reason 与 upgrade path：`127` -> `appendix/111`
 - 想看为什么 Claude Code 并不总是只会 allow/deny/step-up，而是经常主动裁剪能力面，把系统压回更窄但更安全的子集：`127` -> `128`
 - 想把 `128` 的长文压成一张缩域矩阵，快速看出不同 surface 被裁掉了什么、保留了什么、以及由哪条边界签字：`128` -> `appendix/112`
+- 想看为什么 Claude Code 的安全控制面本质上不是在查一张静态权限表，而是在执行 allow、deny、degrade、step-up、de-scope、suppress、restore 这些动作算子：`128` -> `129`
+- 想把 `129` 的长文压成一张动作算子矩阵，快速看出不同 operator 的 trigger、effect 与代表性源码锚点：`129` -> `appendix/113`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
