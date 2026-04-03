@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏 / repair steady-state correction-of-correction rewrite correction refinement guide”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏协议 / repair steady-state correction-of-correction rewrite correction refinement correction protocol”层。
+- 新增结论：
+  - Prompt refinement correction 如果要真正成立，不能只停在 fixed `refinement order`，还要把 `authority chain`、`compiled request lineage`、`registry-boundary custody`、`synthesis custody`、`protocol-prefix custody`、`forgetting-continuation covenant` 与 `long-horizon reopen liability` 继续压成共享对象。
+  - 治理 refinement correction 如果要真正成立，不能只停在 fixed `refinement order`，还要把 `authority chain`、`ledger truth surface`、`window truth surface`、`pricing causality surface`、`classifier pricing attestation`、`writeback seam contract` 与 `long-horizon reopen liability` 继续压成统一定价对象。
+  - 结构 refinement correction 如果要真正成立，不能只停在 fixed `refinement order`，还要把 `authority surface`、`single-source writeback`、`lineage resume contract`、`fresh merge contract`、`anti-zombie restitution packet`、`transport boundary contract`、`fail-closed worktree contract` 与 `long-horizon reopen liability` 继续压成结构真相对象。
+- 新增目录责任：
+  - `navigation/94` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏协议入口。
+  - `api/87-89` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction 的宿主可消费修正对象、共同 reject 语义与长期 reopen 责任面。
+- 当前新的写作约束：
+  - `api/87-89` 只表示 correction-of-correction rewrite correction refinement correction protocol，不再回头重写 `guides/90-92` 的 fixed order 与模板骨架。
+  - `74-94` 应被持续当成一条连续小循环来写，而不是二十一篇并列新增文章。
+- 下一步最值钱的候选应切到 `playbooks/68-70`，把这一层 refinement correction protocol 继续压成固定 `repair card`、`reject order` 与 `reopen drill`。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏 / repair steady-state correction-of-correction rewrite correction refinement guide”层。
 - 新增结论：
   - Prompt refinement execution distortion 如果要真正被纠偏，不能只继续批评假 `host consumption card` 与假 `reopen liability ledger`，还要把 `compiled request lineage`、`registry-boundary rewrite`、`coordinator synthesis custody`、`protocol-prefix custody`、`forgetting-continuation covenant` 与 `reopen liability ledger` 重新压回同一条固定 `refinement order`。
