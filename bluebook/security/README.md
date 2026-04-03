@@ -463,4 +463,6 @@
 - 想把 `126` 的长文压成一张不对称矩阵，快速看出不同 surface 的 positive proof threshold、negative trigger 与 failure semantic：`126` -> `appendix/110`
 - 想看为什么 Claude Code 不把所有失败都压成一种 deny，而是按风险对象分配 fail-open、fail-closed 与 step-up：`126` -> `127`
 - 想把 `127` 的长文压成一张失败语义矩阵，快速看出不同 risk object 的 preferred failure mode、reason 与 upgrade path：`127` -> `appendix/111`
+- 想看为什么 Claude Code 并不总是只会 allow/deny/step-up，而是经常主动裁剪能力面，把系统压回更窄但更安全的子集：`127` -> `128`
+- 想把 `128` 的长文压成一张缩域矩阵，快速看出不同 surface 被裁掉了什么、保留了什么、以及由哪条边界签字：`128` -> `appendix/112`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
