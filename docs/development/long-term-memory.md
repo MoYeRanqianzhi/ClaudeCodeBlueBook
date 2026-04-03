@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏协议 / repair steady-state correction-of-correction rewrite correction protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏执行 / repair steady-state correction-of-correction rewrite correction execution”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写纠偏协议如果要真正运行起来，不能只保留 `compiled request truth`、`section registry` 与 `dynamic boundary` 规则面，还要继续把它们压成同一张 `rewrite correction card`、同一条 `reject verdict order` 与同一套 `re-entry / reopen` drill；否则 Prompt 魔力仍会退回 rewrite prose、summary handoff 与未综合的子 Agent prose。
+  - 治理宿主修复稳态纠偏再纠偏改写纠偏协议如果要真正统一安全设计与省 token 设计，必须继续把 authority、ledger、window、pricing、classifier 成本、writeback seam、capability liability 与 threshold 压成同一张 `rewrite correction card`；否则治理真相仍会退回 mode 面板、usage dashboard 与运营感觉。
+  - 结构宿主修复稳态纠偏再纠偏改写纠偏协议如果要真正让 later 维护者独立接手，必须继续把 authority surface、single-source seam、lineage、fresh merge、anti-zombie evidence、transport boundary、fail-closed worktree 与 reopen liability 压成同一张 `rewrite correction card`；否则源码先进性仍会退回 pointer、telemetry、archive prose 与作者说明。
+- 新增目录责任：
+  - `navigation/87` 负责宿主修复稳态纠偏再纠偏改写纠偏执行入口。
+  - `playbooks/62-64` 负责三类宿主修复稳态纠偏再纠偏改写纠偏协议的 `rewrite correction card`、`reject order` 与 `re-entry / reopen` 责任演练。
+- 当前新的写作约束：
+  - `62-64` 只表示 correction-of-correction rewrite correction protocol execution，不再回头重写 `59-61` 的 rewrite protocol execution。
+  - `74-87` 应被持续当成一条连续小循环来写，而不是十四篇并列新增文章。
+- 下一步最值钱的候选应切到 `casebooks/58-60`，把这一层 rewrite correction execution 继续压成新的反例层。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏 / repair steady-state correction-of-correction rewrite correction guide”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏协议 / repair steady-state correction-of-correction rewrite correction protocol”层。
 - 新增结论：
   - Prompt 宿主修复稳态纠偏再纠偏改写纠偏如果要真正被宿主、CI、评审与交接共同消费，不能只继续固定 `rewrite order`，还要把 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continue qualification` 与 `threshold liability` 压成同一个 Prompt rewrite correction 对象；否则 Prompt 魔力仍会从编译链退回 rewrite prose。
