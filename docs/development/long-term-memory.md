@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement distortion casebook”层。
+- 新增结论：
+  - Prompt refinement execution 最危险的失败，不是没跑 `host consumption card`，而是让 card 退回 polished handoff packet、让 runtime registry 与 boundary 退回目录说明、让 synthesis custody 退回研究总结、让 reopen liability 退回礼貌继续；一旦如此，Prompt 魔力会从编译链退回 prose 与 handoff 幻觉。
+  - 治理 refinement execution 最危险的失败，不是没跑 `hard reject order`，而是让宿主消费卡退回 calmer dashboard、让 writeback seam round-trip 退回 UI calmness 与本地成功提示、让 reopen liability 退回默认继续；一旦如此，安全设计与省 token 设计会同时退回 mode 面板、usage dashboard 与运营感觉。
+  - 结构 refinement execution 最危险的失败，不是没跑 `reopen drill`，而是让宿主消费卡退回 pointer 与 archive prose、让 fresh merge / fail-closed 退回结果没坏与工作树侥幸、让 reopen liability 退回 reconnect 提示与作者记忆；一旦如此，源码先进性会从结构真相面退回目录美学与恢复成功率崇拜。
+- 新增目录责任：
+  - `navigation/92` 负责宿主修复稳态纠偏再纠偏改写纠偏精修失真入口。
+  - `casebooks/61-63` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement execution 为什么仍会退回假 `host consumption card`、假 `hard reject` 顺序与假 `reopen liability`。
+- 当前新的写作约束：
+  - `casebooks/61-63` 只表示 correction-of-correction rewrite correction refinement protocol execution distortion，不再回头重写 `playbooks/65-67` 的 execution 手册。
+  - `74-92` 应被持续当成一条连续小循环来写，而不是十九篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/90-92`，把这一层 refinement execution distortion 继续压成新的固定顺序、拒收升级路径与改写模板骨架。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement execution”层。
 - 新增结论：
   - Prompt refinement protocol 如果要真正被宿主、CI、评审与交接长期执行，不能只继续共享 `compiled request lineage`、`registry-boundary covenant` 与 `reopen liability ledger`，还要把它们继续压成固定 `host consumption card`、固定 `hard reject order` 与正式 `reentry / reopen drill`；否则 Prompt 魔力仍会退回 rewrite prose、summary handoff 与值班者记忆。

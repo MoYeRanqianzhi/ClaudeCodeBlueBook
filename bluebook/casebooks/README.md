@@ -76,6 +76,9 @@
 58. [58-Prompt宿主修复稳态纠偏再纠偏改写纠偏执行反例：假rewrite correction card、假section registry与假threshold liability](58-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87rewrite%20correction%20card%E3%80%81%E5%81%87section%20registry%E4%B8%8E%E5%81%87threshold%20liability.md)
 59. [59-治理宿主修复稳态纠偏再纠偏改写纠偏执行反例：假authority chain、假writeback seam与假threshold rebinding](59-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87authority%20chain%E3%80%81%E5%81%87writeback%20seam%E4%B8%8E%E5%81%87threshold%20rebinding.md)
 60. [60-结构宿主修复稳态纠偏再纠偏改写纠偏执行反例：假fresh merge、假transport与假reopen liability](60-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87fresh%20merge%E3%80%81%E5%81%87transport%E4%B8%8E%E5%81%87reopen%20liability.md)
+61. [61-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修执行反例：假host consumption card、假synthesis custody与假reopen liability](61-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87host%20consumption%20card%E3%80%81%E5%81%87synthesis%20custody%E4%B8%8E%E5%81%87reopen%20liability.md)
+62. [62-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行反例：假host consumption card、假writeback round-trip与假reopen liability](62-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87host%20consumption%20card%E3%80%81%E5%81%87writeback%20round-trip%E4%B8%8E%E5%81%87reopen%20liability.md)
+63. [63-结构宿主修复稳态纠偏再纠偏改写纠偏精修执行反例：假host consumption card、假fail-closed与假reopen liability](63-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87host%20consumption%20card%E3%80%81%E5%81%87fail-closed%E4%B8%8E%E5%81%87reopen%20liability.md)
 
 ## 按目标阅读
 
@@ -107,6 +110,7 @@
 - 想继续看这些宿主修复稳态纠偏再纠偏执行明明已经存在，为什么仍会重新退回假 recorrection card、假 reject 顺序与假 reopen 责任演练：`../navigation/80 -> 52 -> 53 -> 54`
 - 想继续看这些宿主修复稳态纠偏再纠偏改写执行明明已经存在，为什么仍会重新退回假 rewrite card、假 reject 顺序与假 reopen 责任演练：`../navigation/84 -> 55 -> 56 -> 57`
 - 想继续看这些宿主修复稳态纠偏再纠偏改写纠偏执行明明已经存在，为什么仍会重新退回假 rewrite correction card、假 reject 顺序与假 reopen 责任演练：`../navigation/88 -> 58 -> 59 -> 60`
+- 想继续看这些宿主修复稳态纠偏再纠偏改写纠偏精修执行明明已经存在，为什么仍会重新退回假 host consumption card、假 hard reject 顺序与假 reopen 责任演练：`../navigation/92 -> 61 -> 62 -> 63`
 
 ## 与其他目录的边界
 

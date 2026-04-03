@@ -167,7 +167,8 @@
 - `62-64` 负责 correction-of-correction rewrite correction protocol execution。
 - `../navigation/91 -> 65-67` 继续回答“怎样把这些稳态纠偏再纠偏改写纠偏精修协议继续压成固定 host consumption card、hard reject 顺序与 reopen 责任演练”。
 - `65-67` 负责 correction-of-correction rewrite correction refinement protocol execution。
-- 再往下一层，应由 `../navigation/92 -> ../casebooks/61-63` 继续回答“为什么这些 refinement execution 明明已经存在，仍会重新退回假 host consumption card、假 hard reject 顺序与假 reopen 责任演练”。
+- `../navigation/92 -> ../casebooks/61-63` 继续回答“为什么这些 refinement execution 明明已经存在，仍会重新退回假 host consumption card、假 hard reject 顺序与假 reopen 责任演练”。
+- 再往下一层，应由 `../navigation/93 -> ../guides/90-92` 继续回答“怎样把这些 refinement execution 失真重新压回固定 refinement 顺序、拒收升级路径与改写模板骨架”。
 - 再往下一层，应由 `../navigation/84 -> ../casebooks/55-57` 继续回答“为什么这些稳态纠偏再纠偏改写执行明明已经存在，仍会重新退回假 rewrite card、假 reject 顺序与假 reopen 责任演练”。
 - 再往下一层，应由 `../navigation/88 -> ../casebooks/58-60` 继续回答“为什么这些稳态纠偏再纠偏改写纠偏执行明明已经存在，仍会重新退回假 rewrite correction card、假 reject 顺序与假 reopen 责任演练”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。

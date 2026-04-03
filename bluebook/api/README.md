@@ -212,7 +212,8 @@
 - 再往下一层，应由 `../navigation/89 -> ../guides/87-89` 继续回答“怎样把这些 rewrite correction execution 失真重新压回固定 rewrite correction 顺序、拒收升级路径与改写模板骨架”。
 - 再往下一层，应由 `../navigation/90 -> 84-86` 继续回答“怎样把这些 rewrite correction 固定顺序继续压成宿主可消费对象、hard reject 语义与长期 reopen 责任账本”。
 - `../navigation/91 -> ../playbooks/65-67` 继续回答“怎样把这些 rewrite correction 精修协议继续压成固定宿主消费卡、hard reject 顺序与 reopen 责任演练”。
-- 再往下一层，应由 `../navigation/92 -> ../casebooks/61-63` 继续回答“为什么这些 refinement execution 明明已经存在，仍会重新退回假 host consumption card、假 hard reject 顺序与假 reopen 责任演练”。
+- `../navigation/92 -> ../casebooks/61-63` 继续回答“为什么这些 refinement execution 明明已经存在，仍会重新退回假 host consumption card、假 hard reject 顺序与假 reopen 责任演练”。
+- 再往下一层，应由 `../navigation/93 -> ../guides/90-92` 继续回答“怎样把这些 refinement execution 失真重新压回固定 refinement 顺序、拒收升级路径与改写模板骨架”。
 - 机制对象宿主消费面不等于内部实现面。
 - host-consumable projection 不等于 internal compiler / internal fault-model trace。
 
