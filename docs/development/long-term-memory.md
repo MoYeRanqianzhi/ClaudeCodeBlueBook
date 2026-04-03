@@ -8,6 +8,58 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏执行 / repair steady-state correction-of-correction rewrite correction execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏失真 / repair steady-state correction-of-correction rewrite correction distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写纠偏执行最危险的失败，不是没跑 `rewrite correction card`，而是让 runtime `section registry` 退回静态目录、让 `dynamic boundary` 退回 attachment 说明、让 `threshold liability` 退回礼貌备注；一旦如此，Prompt 魔力就会从编译链退回更体面的宪法说明文。
+  - 治理宿主修复稳态纠偏再纠偏改写纠偏执行最危险的失败，不是没跑 classifier pricing 与 writeback seam，而是让 classifier 成本重新掉出 pricing object、让 `requires_action -> pending_action -> session_state_changed` 重新退回 UI 状态、让 threshold 退回默认继续；一旦如此，安全设计与省 token 设计就会同时退回运营感觉。
+  - 结构宿主修复稳态纠偏再纠偏改写纠偏执行最危险的失败，不是没写 fresh merge contract 与 transport boundary，而是让结果没坏重新取代 merge 契约、让 transport 静默重新取代边界证明、让 fail-closed worktree 重新退回“应该没事”的感觉；一旦如此，源码先进性就会从结构真相面退回恢复成功率与目录美学。
+- 新增目录责任：
+  - `navigation/88` 负责宿主修复稳态纠偏再纠偏改写纠偏失真入口。
+  - `casebooks/58-60` 负责三类宿主修复稳态纠偏再纠偏改写纠偏执行为什么仍会退回假 `rewrite correction card`、假 `reject verdict` 与假 `reopen liability`。
+- 当前新的写作约束：
+  - `58-60` 只表示 correction-of-correction rewrite correction protocol execution distortion，不再回头重写 `55-57` 的 rewrite execution 反例。
+  - `74-88` 应被持续当成一条连续小循环来写，而不是十五篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/87-89`，把这一层 distortion 重新压回固定 `rewrite correction` 顺序、拒收升级路径与改写模板骨架。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏协议 / repair steady-state correction-of-correction rewrite correction protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏执行 / repair steady-state correction-of-correction rewrite correction execution”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写纠偏协议如果要真正运行起来，不能只保留 `compiled request truth`、`section registry` 与 `dynamic boundary` 规则面，还要继续把它们压成同一张 `rewrite correction card`、同一条 `reject verdict order` 与同一套 `re-entry / reopen` drill；否则 Prompt 魔力仍会退回 rewrite prose、summary handoff 与未综合的子 Agent prose。
+  - 治理宿主修复稳态纠偏再纠偏改写纠偏协议如果要真正统一安全设计与省 token 设计，必须继续把 authority、ledger、window、pricing、classifier 成本、writeback seam、capability liability 与 threshold 压成同一张 `rewrite correction card`；否则治理真相仍会退回 mode 面板、usage dashboard 与运营感觉。
+  - 结构宿主修复稳态纠偏再纠偏改写纠偏协议如果要真正让 later 维护者独立接手，必须继续把 authority surface、single-source seam、lineage、fresh merge、anti-zombie evidence、transport boundary、fail-closed worktree 与 reopen liability 压成同一张 `rewrite correction card`；否则源码先进性仍会退回 pointer、telemetry、archive prose 与作者说明。
+- 新增目录责任：
+  - `navigation/87` 负责宿主修复稳态纠偏再纠偏改写纠偏执行入口。
+  - `playbooks/62-64` 负责三类宿主修复稳态纠偏再纠偏改写纠偏协议的 `rewrite correction card`、`reject order` 与 `re-entry / reopen` 责任演练。
+- 当前新的写作约束：
+  - `62-64` 只表示 correction-of-correction rewrite correction protocol execution，不再回头重写 `59-61` 的 rewrite protocol execution。
+  - `74-87` 应被持续当成一条连续小循环来写，而不是十四篇并列新增文章。
+- 下一步最值钱的候选应切到 `casebooks/58-60`，把这一层 rewrite correction execution 继续压成新的反例层。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏 / repair steady-state correction-of-correction rewrite correction guide”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏协议 / repair steady-state correction-of-correction rewrite correction protocol”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写纠偏如果要真正被宿主、CI、评审与交接共同消费，不能只继续固定 `rewrite order`，还要把 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continue qualification` 与 `threshold liability` 压成同一个 Prompt rewrite correction 对象；否则 Prompt 魔力仍会从编译链退回 rewrite prose。
+  - 治理宿主修复稳态纠偏再纠偏改写纠偏如果要真正统一安全设计与省 token 设计，必须把 authority、ledger、window、pricing、classifier 成本、writeback seam、capability liability 与 threshold 压成同一个统一定价控制面对象；否则治理真相仍会退回 mode 面板、usage dashboard 与运营感觉。
+  - 结构宿主修复稳态纠偏再纠偏改写纠偏如果要真正让 later 维护者独立接手，必须把 authority surface、single-source seam、lineage、fresh merge、anti-zombie evidence、transport boundary 与 reopen liability 压成同一个结构真相面对象；否则源码先进性仍会退回 pointer、telemetry、archive prose 与作者说明。
+- 新增目录责任：
+  - `navigation/86` 负责宿主修复稳态纠偏再纠偏改写纠偏协议入口。
+  - `api/81-83` 负责三类宿主修复稳态纠偏再纠偏改写纠偏的宿主可消费 `rewrite correction object`、reject 语义与长期 reopen 责任面。
+- 当前新的写作约束：
+  - `81-83` 只表示 correction-of-correction rewrite correction protocol，不再回头重写 `78-80` 的 rewrite protocol。
+  - `74-86` 应被持续当成一条连续小循环来写，而不是十三篇并列新增文章。
+- 下一步最值钱的候选应切到 `playbooks/62-64`，把这一层 rewrite correction protocol 继续压成固定 `rewrite correction card`、reject 顺序与 `re-entry / reopen` 责任演练。
+- 新增硬法则：
+  - `correction` 只用于 first-order correction；`recorrection` 只用于 correction-of-correction protocol execution；`rewrite` 只用于“已证明 recorrection execution 本身仍会稳定制造假对象，必须改写执行语法”的层。
+  - 一旦进入 `rewrite` 母线，主工件名必须统一切换为 `rewrite card / rewrite protocol / rewrite execution / rewrite distortion / rewrite correction`，不得继续让 `recorrection card` 充当主工件名。
+  - 只有“执行工件本身会说谎”时，才能从 `playbook` 进入 `casebook`；只有“问题不再是执行漏项，而是执行语法稳定制造假对象”时，才能从 `casebook` 进入 `guide`。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写失真 / repair steady-state correction-of-correction rewrite distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏 / repair steady-state correction-of-correction rewrite correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写执行失真如果要真正被纠偏，不能只继续批评假 `rewrite card`，还要把 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continue qualification` 与 `threshold liability` 重新压回同一条固定 `rewrite order`。
+  - 治理宿主修复稳态纠偏再纠偏改写执行失真如果要真正被纠偏，不能只继续批评 mode / dashboard 幻觉，还要把 authority、ledger、window、pricing、classifier 开销、writeback seam、capability liability 与 threshold 重新压回同一个统一定价控制面。
+  - 结构宿主修复稳态纠偏再纠偏改写执行失真如果要真正被纠偏，不能只继续批评 pointer / telemetry 幻觉，还要把 authority surface、single-source seam、lineage、fresh merge、anti-zombie evidence、transport boundary 与 reopen liability 重新压回同一个结构真相面。
+- 新增目录责任：
+  - `navigation/85` 负责宿主修复稳态纠偏再纠偏改写纠偏入口。
+  - `guides/84-86` 负责三类宿主修复稳态纠偏再纠偏改写执行失真的固定 `rewrite order`、硬拒收项与模板骨架。
+- 当前新的写作约束：
+  - `84-86` 只表示 correction-of-correction rewrite execution distortion rewrite，不再回头重写 `81-83` 的 recorrection 改写。
+  - `74-85` 应被持续当成一条连续小循环来写，而不是十二篇并列新增文章。
+- 下一步最值钱的候选应切到 `api/81-83`，把这一层 correction guide 继续压成宿主可消费的 rewrite correction 对象、拒收语义与长期 reopen 责任面。
 - 已基于并行多 Agent 回读源码，继续加厚 `philosophy/81-83`：
   - Prompt 线新增结论：section registry 具有 runtime 生命周期；late-bound attachment 不是 stable prefix 正文；多 Agent prompt 的强度首先来自 coordinator 持有 synthesis ownership。
   - 治理线新增结论：authority 必须被外化成单一真相链；classifier 自身也必须被纳入 continuation pricing；`requires_action -> pending_action -> session_state_changed` 是安全与成本共用的 writeback seam。

@@ -7,6 +7,158 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A060. 宿主修复稳态纠偏再纠偏改写纠偏执行之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏失真层
+
+- Prompt repair steady-state correction-of-correction rewrite correction execution 即使已经把 `rewrite correction card`、`section registry reseal`、`dynamic boundary rebinding` 与 `threshold liability drill` 写成正式手册，如果团队仍把 rewrite correction prose、静态目录、attachment 说明、summary handoff 与“现在应该还能继续”当成编译链真相，Prompt 世界就会从可缓存、可转写、可继续的编译链退回更会解释的文本；这说明 Prompt 线下一层最值钱的不是继续补 execution，而是把 repair steady-state correction-of-correction rewrite correction execution 的假 `rewrite correction card`、假 `section registry`、假 `dynamic boundary` 与假 `threshold liability` 写成新的失真层。
+- Governance repair steady-state correction-of-correction rewrite correction execution 即使已经把 authority、ledger、window、pricing、classifier 成本、writeback seam、capability liability 与 threshold 写成同一张 `rewrite correction card`，如果团队仍让 mode 面板、usage dashboard、classifier 静默感与 pending action 消失感提前消费 verdict，安全设计与省 token 设计就会一起从统一定价控制面退回运营感觉；这说明治理线下一层最值钱的不是继续补 execution，而是把 repair steady-state correction-of-correction rewrite correction execution 的假 authority chain、假 classifier pricing、假 writeback seam、免费继续回魂与假 `threshold rebinding` 写成新的失真层。
+- Structure repair steady-state correction-of-correction rewrite correction execution 即使已经把 authority、single-source seam、lineage、fresh merge、anti-zombie、transport boundary、fail-closed worktree 与 reopen boundary 写成同一张 `rewrite correction card`，如果团队仍让 pointer、telemetry、结果没坏、transport 静默与作者说明排在 authority-first reject order 前面，源码先进性就会从结构真相面退回目录美学与恢复成功率；这说明结构线下一层最值钱的不是继续补 execution，而是把 repair steady-state correction-of-correction rewrite correction execution 的假 authority surface、假 fresh merge、假 transport boundary、假 fail-closed worktree 与假 `reopen liability` 写成新的失真层。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏执行之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏失真层”：
+  - `navigation/88` 负责统一入口。
+  - `casebooks/58-60` 负责三类宿主修复稳态纠偏再纠偏改写纠偏执行的反例层。
+- 这也意味着 `74-88` 应被视为一条连续小循环，而不是十五篇并列文章：`纠偏协议 -> 纠偏执行 -> 纠偏执行失真 -> 再纠偏 -> 再纠偏协议 -> 再纠偏执行 -> 再纠偏执行失真 -> 再纠偏改写 -> 再纠偏改写协议 -> 再纠偏改写执行 -> 再纠偏改写执行失真 -> 再纠偏改写纠偏 -> 再纠偏改写纠偏协议 -> 再纠偏改写纠偏执行 -> 再纠偏改写纠偏执行失真`。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补坏样例名录，而是考虑新的 `guides/87-89`，把这些 steady-state correction-of-correction rewrite correction execution distortion 重新压回固定 `rewrite correction` 顺序、拒收升级路径与改写模板骨架。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-93`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:491-560`
+- `claude-code-source-code/src/utils/queryContext.ts:30-58`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/coordinator/coordinatorMode.ts:251-257`
+- `claude-code-source-code/src/tools/AgentTool/prompt.ts:101-112`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1533-1541`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:526-725`
+- `claude-code-source-code/src/utils/permissions/yoloClassifier.ts:1250-1312`
+- `claude-code-source-code/src/utils/sessionState.ts:92-149`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/query.ts:1308-1518`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/handlePromptSubmit.ts:430-517`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:186-230`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:375-400`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:749-838`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+- `claude-code-source-code/src/cli/transports/SSETransport.ts:156-160`
+- `claude-code-source-code/src/cli/transports/SSETransport.ts:448-457`
+- `claude-code-source-code/src/cli/ndjsonSafeStringify.ts:24-31`
+
+### A059. 宿主修复稳态纠偏再纠偏改写纠偏协议之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏执行层
+
+- Prompt repair steady-state correction-of-correction rewrite correction protocol 即使已经把 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continue qualification` 与 `threshold liability` 压成共享规则面，如果团队不能继续把这些对象压成同一张 `rewrite correction card`、同一条 `reject verdict order` 与同一套 `re-entry / reopen` drill，Prompt 世界就仍会继续围绕 rewrite prose、summary handoff 与未综合的子 Agent prose 工作；这说明 Prompt 线下一层最值钱的不是继续补 protocol，而是把 repair steady-state correction-of-correction rewrite correction protocol 压成 repair steady-state correction-of-correction rewrite correction execution。
+- Governance repair steady-state correction-of-correction rewrite correction protocol 即使已经把 authority、ledger、window、pricing、classifier 成本、writeback seam、capability liability 与 threshold 压成共享规则面，如果团队不能继续把这些对象压成同一张 `rewrite correction card` 与固定 `reject verdict order`，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与运营感觉工作；这说明治理线下一层最值钱的不是继续补 protocol，而是把 repair steady-state correction-of-correction rewrite correction protocol 压成 repair steady-state correction-of-correction rewrite correction execution。
+- Structure repair steady-state correction-of-correction rewrite correction protocol 即使已经把 authority surface、single-source seam、lineage、fresh merge、anti-zombie evidence、transport boundary、fail-closed worktree 与 reopen liability 压成共享规则面，如果团队不能继续把这些对象压成同一张 `rewrite correction card` 与固定 `authority-first reject order`，源码先进性就仍会继续围绕 pointer、telemetry、archive prose 与作者记忆工作；这说明结构线下一层最值钱的不是继续补 protocol，而是把 repair steady-state correction-of-correction rewrite correction protocol 压成 repair steady-state correction-of-correction rewrite correction execution。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏协议之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏执行层”：
+  - `navigation/87` 负责统一入口。
+  - `playbooks/62-64` 负责三类宿主修复稳态纠偏再纠偏改写纠偏协议的 `rewrite correction card`、`reject verdict order` 与 `re-entry / reopen` 责任演练。
+- 这也意味着 `74-87` 应被视为一条连续小循环，而不是十四篇并列文章：`纠偏协议 -> 纠偏执行 -> 纠偏执行失真 -> 再纠偏 -> 再纠偏协议 -> 再纠偏执行 -> 再纠偏执行失真 -> 再纠偏改写 -> 再纠偏改写协议 -> 再纠偏改写执行 -> 再纠偏改写执行失真 -> 再纠偏改写纠偏 -> 再纠偏改写纠偏协议 -> 再纠偏改写纠偏执行`。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 execution 口号，而是考虑新的 `casebooks/58-60`，把这些 steady-state correction-of-correction rewrite correction execution 最常怎样退回假 `rewrite correction card`、假 `reject verdict` 与假 `reopen liability` 写成新的反例层。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-93`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:491-560`
+- `claude-code-source-code/src/utils/queryContext.ts:30-58`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/coordinator/coordinatorMode.ts:251-257`
+- `claude-code-source-code/src/tools/AgentTool/prompt.ts:101-112`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1533-1541`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:526-725`
+- `claude-code-source-code/src/utils/permissions/yoloClassifier.ts:1250-1312`
+- `claude-code-source-code/src/utils/sessionState.ts:92-149`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/query.ts:1308-1518`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/handlePromptSubmit.ts:430-517`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:186-230`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:375-400`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:749-838`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+- `claude-code-source-code/src/cli/transports/SSETransport.ts:156-160`
+- `claude-code-source-code/src/cli/transports/SSETransport.ts:448-457`
+- `claude-code-source-code/src/cli/ndjsonSafeStringify.ts:24-31`
+
+### A058. 宿主修复稳态纠偏再纠偏改写纠偏之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏协议层
+
+- Prompt repair steady-state correction-of-correction rewrite correction 即使已经把假 `rewrite card`、假 `protocol rewrite`、假 `reject order` 与假 `threshold liability` 压回固定 `rewrite order`，如果团队不能继续把这些 builder-facing 顺序压成宿主、CI、评审与交接共同消费的 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continue qualification` 与 `threshold liability` 规则面，Prompt 世界就仍会继续围绕 rewrite prose、summary handoff 与默认继续工作；这说明 Prompt 线下一层最值钱的不是继续补 guide，而是把 repair steady-state correction-of-correction rewrite correction 压成 repair steady-state correction-of-correction rewrite correction protocol。
+- Governance repair steady-state correction-of-correction rewrite correction 即使已经把 mode 幻觉、dashboard 幻觉、classifier 开销膨胀、pending action residue 与假 `threshold rebinding` 压回统一定价控制面的固定顺序，如果团队不能继续把 authority、ledger、window、pricing、classifier 成本、writeback seam、capability liability 与 threshold 压成宿主可消费的正式对象，安全设计与省 token 设计就仍会继续围绕运营感觉工作；这说明治理线下一层最值钱的不是继续补 guide，而是把 repair steady-state correction-of-correction rewrite correction 压成 repair steady-state correction-of-correction rewrite correction protocol。
+- Structure repair steady-state correction-of-correction rewrite correction 即使已经把 pointer 健康感、telemetry 转绿、fresh merge 幻觉、transport 幻觉与假 `reopen liability` 压回 authority、single-source、lineage、anti-zombie 与 reopen 边界的固定顺序，如果团队不能继续把 authority surface、single-source seam、lineage、fresh merge、anti-zombie evidence、transport boundary 与 reopen liability 压成 later 维护者也能独立消费的正式对象，源码先进性就仍会继续围绕 archive prose 与作者说明工作；这说明结构线下一层最值钱的不是继续补 guide，而是把 repair steady-state correction-of-correction rewrite correction 压成 repair steady-state correction-of-correction rewrite correction protocol。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏协议层”：
+  - `navigation/86` 负责统一入口。
+  - `api/81-83` 负责三类宿主修复稳态纠偏再纠偏改写纠偏的 `rewrite correction object`、reject 语义与长期 `reopen` 责任面。
+- 这也意味着 `74-86` 应被视为一条连续小循环，而不是十三篇并列文章：`纠偏协议 -> 纠偏执行 -> 纠偏执行失真 -> 再纠偏 -> 再纠偏协议 -> 再纠偏执行 -> 再纠偏执行失真 -> 再纠偏改写 -> 再纠偏改写协议 -> 再纠偏改写执行 -> 再纠偏改写执行失真 -> 再纠偏改写纠偏 -> 再纠偏改写纠偏协议`。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 protocol 口号，而是考虑新的 `playbooks/62-64`，把这些 steady-state correction-of-correction rewrite correction protocol 继续压成固定 `rewrite correction card`、reject 顺序与 `re-entry / reopen` 责任演练。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:105-115`
+- `claude-code-source-code/src/constants/prompts.ts:343-347`
+- `claude-code-source-code/src/utils/api.ts:136-405`
+- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
+- `claude-code-source-code/src/services/compact/compact.ts:330-711`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1533-1541`
+- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
+- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
+- `claude-code-source-code/src/cli/print.ts:1052-1075`
+- `claude-code-source-code/src/cli/print.ts:4568-4641`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:84-645`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:929-1318`
+- `claude-code-source-code/src/utils/sessionState.ts:92-149`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
+- `claude-code-source-code/src/query.ts:1308-1518`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/task/framework.ts:77-248`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+
 ### A046. 宿主修复稳态纠偏执行之后，下一层应进入宿主修复稳态纠偏失真层
 
 - Prompt repair steady-state correction execution 即使已经被写成 correction card、recovery verdict order、requalification drill 与 threshold reinstatement drill，如果团队不能继续把这些执行层最常怎样退回假修正卡、口头真相恢复与阈值装饰化写成新的反例层，Prompt 世界就仍会继续围绕 steady note、summary prose 与“最近没出事”工作；这说明 Prompt 线下一层最值钱的不是继续补 playbook，而是把 repair steady-state correction execution 压成 repair steady-state correction distortion casebook。
@@ -142,6 +294,24 @@
 - 治理线新增的高价值事实是：authority 必须被外化成单一真相链；classifier 自己也必须被纳入 continuation pricing；`requires_action -> pending_action -> session_state_changed` 是安全与成本共用的 writeback seam。这意味着安全与省 token 的同构，不只在“统一定价扩张”，还在“谁有权宣布当前状态、谁有权继续、这些判断怎样写回宿主”。
 - 结构线新增的高价值事实是：authority surface 首先信外部可验证的头部状态，而不是对象自述；fresh merge 不是 `last write wins`，而是带删除语义与 stale finally 防线的协议；fail-closed worktree 与统一 transport boundary 都属于源码先进性的正式部分。这意味着源码先进性不只在“故障模型先于模块美学”，还在“外围恢复与传输协议也被纳入单一真相治理”。
 - 这组结论最适合继续加厚 `philosophy/81-83`，而不是另起一组平行章节，因为它们不是新主题，而是三条主线各自的运行时法律地位。
+
+### A056. 宿主修复稳态纠偏再纠偏改写执行失真之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏层
+
+- Prompt repair steady-state correction-of-correction rewrite execution distortion 即使已经被写成 `casebooks/55` 的反例层，如果团队不能继续把假 `rewrite card`、假 `protocol rewrite`、假 `reject verdict order` 与假 `threshold liability` 压回同一个 `compiled request truth + section registry + dynamic boundary + protocol transcript + stable prefix + lawful forgetting boundary`，Prompt 世界就仍会继续围绕 rewrite prose、summary handoff 与默认继续工作；这说明 Prompt 线下一层最值钱的不是继续补坏样例名录，而是把这层 distortion 压成 builder-facing rewrite correction guide。
+- Governance repair steady-state correction-of-correction rewrite execution distortion 即使已经被写成 `casebooks/56` 的反例层，如果团队不能继续把 mode 投影、dashboard 幻觉、classifier 开销膨胀、pending action residue 与假 `threshold rebinding` 压回同一个 `authority -> ledger -> decision window -> continuation pricing -> capability liability -> threshold`，安全设计与省 token 设计就仍会继续围绕运营感觉工作；这说明治理线下一层最值钱的不是继续补反例，而是把这层 distortion 压成统一定价控制面的 rewrite correction guide。
+- Structure repair steady-state correction-of-correction rewrite execution distortion 即使已经被写成 `casebooks/57` 的反例层，如果团队不能继续把 pointer 健康感、telemetry 转绿、fresh merge 幻觉、suppressor 幻觉与假 `reopen liability` 压回同一个 authority surface、single-source seam、lineage、anti-zombie evidence 与 reopen boundary，源码先进性就仍会继续围绕 architecture prose 与作者说明工作；这说明结构线下一层最值钱的不是继续补反例，而是把这层 distortion 压成结构真相面的 rewrite correction guide。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写执行失真之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏层”：
+  - `navigation/85` 负责统一入口。
+  - `guides/84-86` 负责三类宿主修复稳态纠偏再纠偏改写执行失真的固定 `rewrite order`、硬拒收项与模板骨架。
+- 这也意味着 `74-85` 应被视为一条连续小循环，而不是十二篇并列文章：`纠偏协议 -> 纠偏执行 -> 纠偏执行失真 -> 再纠偏 -> 再纠偏协议 -> 再纠偏执行 -> 再纠偏执行失真 -> 再纠偏改写 -> 再纠偏改写协议 -> 再纠偏改写执行 -> 再纠偏改写执行失真 -> 再纠偏改写纠偏`。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 guide 口号，而是考虑新的 `api/81-83`，把这些 steady-state correction-of-correction rewrite correction 继续压成宿主可消费的 rewrite correction 对象、拒收语义与长期 reopen 责任面。
+
+### A057. `correction / recorrection / rewrite` 需要被提升成目录法则，而不是写作习惯
+
+- `correction` 只表示 first-order correction，`recorrection` 只表示 correction-of-correction protocol execution，`rewrite` 只表示“已证明 recorrection execution 本身仍会稳定制造假对象，必须改写执行语法”的层。只有这样，`74-85` 这条小循环才不会在命名上重新塌缩成“同一件事换不同修辞”。
+- 一旦进入 `rewrite` 母线，主工件名必须全部切换为 `rewrite card / rewrite protocol / rewrite execution / rewrite distortion / rewrite correction`，不能再让 `recorrection card` 继续充当主工件名；否则读者会把 `81-85` 误读成“再来一轮更复杂的 recorrection”。
+- 从层级准入看：只有“共享对象必须被运行起来”时，才能从 `api` 进入 `playbook`；只有“执行工件本身会说谎”时，才能从 `playbook` 进入 `casebook`；只有“问题不再是执行漏项，而是执行语法稳定制造假对象”时，才能从 `casebook` 进入 `guide`。这组准入条件比“按节奏补下一层”更重要。
+- 这组法则最适合放在开发文档和长期记忆里，而不应塞回蓝皮书正文，因为它们管理的是目录生成语法，而不是 Claude Code 本体的对象语法。
 
 ### A045. 宿主修复稳态纠偏协议之后，下一层应进入宿主修复稳态纠偏执行层
 
