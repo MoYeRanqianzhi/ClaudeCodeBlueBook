@@ -104,6 +104,30 @@ Claude Code 的公开面至少分四层：
 
 ## 四、如何保护稳定功能与灰度功能
 
+在 userbook 写作上，至少要继续区分六种判断来源：
+
+- `availability`：决定“谁能看见”。
+- `isEnabled()`：决定“现在能不能用”。
+- `feature()`：决定“这条能力是否被构建/门控保留”。
+- `USER_TYPE === 'ant'`：决定“是不是内部面”。
+- DCE / 缺失实现：决定“能不能从事实写成功能”。
+- 远程策略 / managed settings：决定“本地公开面会不会被远程改写”。
+
+### `availability`
+
+- 更像静态资格筛选。
+- 典型写法应是“面向特定账户类型”。
+
+### `isEnabled()`
+
+- 更像动态运行时资格。
+- 典型写法应是“在当前环境/设置下可用”。
+
+### 远程策略与 managed settings
+
+- bridge/remote-control 还会受 entitlement、最小版本、组织策略、远程设置影响。
+- 某些远程设置对用户并非纯建议，而会要求接受或导致退出。
+
 ### 稳定功能的保护原则
 
 - 只把默认可见、默认可推断、没有明显 feature gate 的能力写进“推荐主线”。
@@ -133,5 +157,8 @@ Claude Code 的公开面至少分四层：
 - `src/commands.ts`
 - `src/tools.ts`
 - `src/skills/bundled/index.ts`
+- `src/bridge/bridgeEnabled.ts`
+- `src/services/remoteManagedSettings/index.ts`
+- `src/services/policyLimits/index.ts`
 - `docs/en/02-hidden-features-and-codenames.md`
 - `docs/en/05-future-roadmap.md`
