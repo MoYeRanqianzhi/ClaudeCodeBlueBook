@@ -23,8 +23,35 @@
 - 本轮术语收口动作: 已继续更新 `02`、`03`、`06`、`09`，让三条母线的正式表述统一以 `09` 为准，其余主线页只负责解释与应用。
 - 本轮专题入口收口动作: 已继续更新 `guides/README`、`navigation/README`、`philosophy/README`，明确 `guides/99-102`、`philosophy/84-87`、导航分流层都服从 `09` 的权威短语，而不是继续并列定义。
 - 本轮专题路由瘦身动作: 已继续把三个专题 README 里的过长跨目录细链压回 `navigation/README`，并在推荐入口层直接前置 `09`，减少“目录自己解释、自己分流、自己模板化”的角色混写。
+- 本轮根索引收口动作: 已继续更新 `bluebook/README`，把根层职责收回为稳定一级入口，明确 `docs/` 与 `bluebook/` 并列协同，把更深的跨目录细链统一交还 `navigation/README`，并把安全/风控入口先收回 `09` 的第二张控制面与 `philosophy/85`。
 - 本轮深专题收束动作: 已继续更新 `navigation/03` 与 `07`，把旧深线接回新的主线/方法/验证/反例链，并把五个平面继续压回三句判断。
-- 主分支同步检查: `2026-04-06` 在仓库根执行 `git fetch origin && git pull --ff-only`，结果为 `Already up to date.`；当前本地 `main` 领先 `origin/main` 6 个提交，因此本轮不改主分支，只在 `mainloop` 内推进。
+- 主分支同步检查: `2026-04-06` 先尝试在仓库根执行 `checkout main && pull --ff-only`，但因共享主工作区存在未解决索引而停止；随后改用只读检查 `fetch origin + rev-parse/rev-list`，确认 `origin/main` 无新增提交，当前本地 `main` 领先 `origin/main` 29 个提交，因此本轮不改主分支，只在 `mainloop` 内推进。
+
+### A093. 当根索引已经明确自己只是入口层时，真正要防的是它再次长成“更厚的导航 README”
+
+- 根 README 一旦继续维护 Prompt / 治理 / 源码质量的长编号链，它就会和 `navigation/README` 重新竞争“谁来负责跨目录分流”，也会和专题 README 重新竞争“谁来负责专题解释”。
+- 所以本轮更值钱的收口不是再删几个链接，而是把角色边界进一步写硬：根索引只暴露稳定入口、权威回链与目录职责；更深路由回到 `navigation/README`，过程问题回到 `docs/`。
+- 这也进一步说明“目录越厚越成熟”是错觉。真正成熟的是入口层知道何时停止解释、停止分流，并把读者交回专职层。
+
+证据:
+
+- `bluebook/README.md`
+- `bluebook/navigation/README.md`
+- `docs/README.md`
+
+### A092. 安全与风险入口如果绕过 `09/85`，读者就会重新把治理读成专题并列项，而不是主线宪法的第二张控制面
+
+- 安全、风控、误伤恢复当然有自己的目录与深文，但它们的稳定入口不应从根索引直接平铺成“另一个并列主题”，否则读者会跳过“扩张如何被定价”这条主线判断。
+- 所以根层更稳的做法是先把读者送回 `09` 的第二张控制面与 `philosophy/85`，先建立“安全=扩张定价”的判断，再进入 `security/README`、`risk/README` 与 `casebooks/README` 读具体对象与反例。
+- 这也意味着目录结构的成熟不只是减少链接数量，而是确保专题入口不会绕开更高阶的判断前提。
+
+证据:
+
+- `bluebook/README.md`
+- `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+- `bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md`
+- `bluebook/security/README.md`
+- `bluebook/risk/README.md`
 
 ### A091. 当目录开始成熟后，最值钱的不是再写更长的推荐链，而是把跨目录细节重新收回专职导航层
 

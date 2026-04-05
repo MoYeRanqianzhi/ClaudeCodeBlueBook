@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新《蓝皮书总索引》与开发文档，把根 README 收回为稳定一级入口层：明确 `bluebook/README + 00-09` 负责主线与最短路径、`docs/` 与 `bluebook/` 并列协同而非嵌套关系、更深跨目录细链统一回交 `navigation/README`，同时把安全/风控阅读链先收回 `09` 的第二张控制面与 `philosophy/85`
 - 继续更新 `guides/README`、`navigation/README`、`philosophy/README`，把推荐入口层显式前置到 `09`，并把过长的跨目录细链统一压回 `navigation/README`，同时同步更新开发文档
 - 更新 `guides/README`、`navigation/README`、`philosophy/README`，继续把 `guides/99-102`、`philosophy/84-87` 与导航分流层都收口到 `09` 的主线宪法上，并同步更新开发文档
 - 更新《使用指南》《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，继续把三条母线的正式表述收口到 `09`，其余主线页只负责解释与应用，并同步更新开发文档
