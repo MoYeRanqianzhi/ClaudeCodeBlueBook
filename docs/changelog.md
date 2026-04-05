@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 新增主线章节《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》与哲学专题《真正有魔力的Prompt，会先规定世界如何合法进入模型》《真正成熟的治理，不是更会拦截，而是更会为扩张定价》《真正先进的内核，不是更会分层，而是更会阻止过去写坏现在》，并同步更新导读、总索引、目录职责说明、苏格拉底导航与哲学专题 README，把 `architecture/82-84` 继续前置回主线入口与第一性原理层
 - 新增《请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks》《反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing》《权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping》，并同步更新主线章节《运行时契约、知识层与生态边界》、架构专题 README 与总索引，把 Claude Code 的 Prompt 魔力、安全/省 Token 统一设计、源码先进性三条母线继续压成三张更硬的 runtime 控制面图
 - 清理第二批正文记忆污染：批量移除 `casebooks/` 60 篇文档中的 `改写路径` 整改块，统一把案例正文收回为纯反例样本；同时批量把 `navigation/` 里的入口语言改写为稳定阅读提示，弱化“层级推进 / 下一步候选”式开发记忆口吻，并补强目录职责文档、根索引与案例库 README 的正文/专题/记忆分界
 - 清理最近 `navigation/79-104` 主链正文中的“连续小循环进度表 / 下一步候选 / 前向入口”式记忆化段落，并在《目录职责、规范入口与兼容别名页说明》中补充“正文 / README / docs”分界规则，把轮次推进与开发记忆统一收回 `docs/`

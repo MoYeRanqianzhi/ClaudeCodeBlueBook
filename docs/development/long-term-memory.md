@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 三张控制面图已前置回更靠前的主线与哲学层：
+  - `bluebook/09` 负责把“世界进入模型 / 扩张定价 / 防过去写坏现在”作为新的主线收束章前置给读者。
+  - `philosophy/84-86` 负责把 Prompt 魔力、治理成熟度、源码先进性三条线分别压成更高阶的第一性原理与苏格拉底审读问题。
+- 目录结构进一步优化：
+  - 规范主线已从 `README + 00-08` 扩展为 `README + 00-09`。
+  - `navigation/15` 现在会把苏格拉底审读直接引到新的高阶哲学章节，而不只停在旧一层收束。
 - 新增三篇更深的架构专题：
   - `architecture/82` 把 Prompt 魔力继续压成请求装配流水线，补足 `authority chain / section registry / protocol transcript / lawful forgetting / cache-safe forks` 的统一视角。
   - `architecture/83` 把安全设计与省 Token 设计继续压成反扩张治理流水线，补足 `trusted inputs / distributed ask arbitration / deferred visibility / continuation pricing` 的统一视角。
@@ -16,7 +22,7 @@
   - `casebooks/` 中 60 篇仍带 `改写路径` 的案例正文已整体迁出整改待办，案例页只保留失败样本。
   - `navigation/` 中 93 篇仍带“如果问题是 / 建议顺序 / 继续长出某层”模板话术的入口页已统一改写为稳定阅读提示。
 - 当前目录分界进一步明确：
-  - `bluebook/README + 00-08` 负责规范主线。
+  - `bluebook/README + 00-09` 负责规范主线。
   - 各专题目录 `README` 负责稳定入口与编号段职责。
   - `docs/` 负责轮次推进、正文清理记录与持久化记忆。
 - `security/`、`risk/`、`docs/` 已补回目录职责协议，避免安全控制面与风险治理继续被挤进泛化目录说明。
@@ -1258,7 +1264,7 @@
 - `getSessionStartDate`、memoized context、section cache、sticky headers 共同表明 Claude Code 接受“轻微陈旧”来换取系统级确定性，这应被视为刻意设计，而不是偶然副作用
 - prompt runtime 还应继续明确区分 UI transcript truth 与 protocol transcript truth，不要把前台看到的消息顺序直接当成模型请求的协议顺序
 - 能力设计深线还应继续固定为“渐进暴露优于全量声明”：deferred tools、delta attachments、managed-only source gating 应被视为同一设计动作
-- 根目录旧命名页当前仅应作为兼容别名保留；规范入口是 `README + 00-08`，`docs/` 是开发与记忆层而非正文层，这一点必须持续明确
+- 根目录旧命名页当前仅应作为兼容别名保留；规范入口是 `README + 00-09`，`docs/` 是开发与记忆层而非正文层，这一点必须持续明确
 - 源码先进性深线还应继续明确：成熟架构不是消灭所有大文件，而是让合法复杂度只停留在少数 kernel / shell / chokepoint，周围继续用 leaf modules 与 single source of truth 兜底
 - “模型此刻看见什么”现在应被视为正式设计平面，而不是 prompt 细节；最小可见面、deferred、delta 与 source gating 是同一 visibility control plane 的不同投影
 - observability 深线当前应稳定成三层：输入真相、状态真相、稳定性真相；它不是 debug 层，而是 explainability contract

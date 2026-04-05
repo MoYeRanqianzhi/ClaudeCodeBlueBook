@@ -4,7 +4,7 @@
 
 `bluebook/` 分成三层：
 
-- `README + 00-08` 负责规范主线与最短阅读路径
+- `README + 00-09` 负责规范主线与最短阅读路径
 - 各子目录 `README` 负责专题入口、编号段职责与稳定跳转
 - `docs/` 负责开发记忆、研究过程与清理批次，不承载正文
 
@@ -21,6 +21,7 @@
 7. [06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)
 8. [07-运行时契约、知识层与生态边界](07-运行时契约、知识层与生态边界.md)
 9. [08-能力全集、公开度与成熟度矩阵](08-能力全集、公开度与成熟度矩阵.md)
+10. [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
 
 - 兼容别名页：`00-总览.md`、`00-蓝皮书总览.md`、`01-源码总地图.md`
 
@@ -30,7 +31,7 @@
 - [architecture/README.md](architecture/README.md): 84 篇，运行时结构、状态机、请求装配、治理控制面与演化边界
 - [api/README.md](api/README.md): 95 篇，命令、工具、状态、宿主与扩展协议
 - [guides/README.md](guides/README.md): 98 篇，使用方法、模板、审读清单与构建手册
-- [philosophy/README.md](philosophy/README.md): 83 篇，第一性原理、治理观和源码先进性解释
+- [philosophy/README.md](philosophy/README.md): 86 篇，第一性原理、治理观、控制面收束与源码先进性解释
 - [casebooks/README.md](casebooks/README.md): 72 篇，失败样本、反例与失真原型
 - [playbooks/README.md](playbooks/README.md): 76 篇，回归、演练、rollout 与运行手册
 - [risk/README.md](risk/README.md): 65 篇，风控、账号治理、恢复与中国用户入口问题
@@ -39,9 +40,11 @@
 
 ## 推荐阅读
 
-- 建立整体判断：`00 -> 01 -> 03 -> 07 -> 08`
+- 建立整体判断：`00 -> 01 -> 03 -> 07 -> 09`
+- 想直接抓三张控制面总图：`06 -> 07 -> 09 -> architecture/82-84`
 - 想从使用方法进入：`02 -> guides/README -> navigation/README`
 - 想看宿主接入与协议边界：`05 -> api/README -> architecture/README`
+- 想看源码质量 / 可演化结构：`03 -> 06 -> philosophy/83 -> 86 -> architecture/84`
 - 想看安全、风控与误伤恢复：`security/README -> risk/README -> casebooks/README`
 - 想看失败样本、演练与 rollout：`casebooks/README -> playbooks/README -> navigation/README`
 
