@@ -1,4 +1,4 @@
-# IDE、终端、Vim、语音、桌面与远程控制
+# IDE、终端、Vim、语音、桌面与浏览器接入
 
 ## Claude Code 不把终端当唯一前端
 
@@ -14,6 +14,17 @@
 - `/remote-env`
 
 这代表 Claude Code 实际上是在做一个“多前端共享同一工作对象”的系统。
+
+但这里先讲“前端与接入面”本身。
+
+如果你要分辨：
+
+- `/session`
+- `/remote-control`
+- `--remote`
+- bridge host
+
+请转到下一页，那一页专门写宿主生命周期。
 
 ## IDE 集成的价值
 
@@ -44,20 +55,15 @@ IDE 集成不是只为打开文件，而是让 Claude Code 能拿到：
 
 这类能力不一定对所有用户稳定开放，但它们也不是概念验证，而是条件公开的正式产品方向。
 
-## 远程控制是条件公开的另一条产品线
+## `desktop`、`voice`、`chrome` 都是邻接入口，但不是同一宿主生命周期
 
-`bridge`/`remote-control` 入口、`src/bridge/*`、远程环境设置都表明 Claude Code 不是只在本地执行。
+这一页只保留一个边界提醒：
 
-用户应把远程控制理解为：
+- `/desktop` 更像当前会话的深链接管。
+- `/voice` 是本地语音输入开关。
+- `/chrome` 是浏览器扩展与 native host 接入。
 
-- 本地终端可变成一个远程执行宿主。
-- 会话可在不同终端/设备间迁移。
-- 某些执行动作可绑定到远程环境，而非当前机。
-
-但更稳的写法应始终保留条件说明：
-
-- `/session` 是稳定的接续入口。
-- `/remote-control` 是条件公开的远程控制面。
+它们和 `/remote-control` 都属于“多前端”语义，但不共享一条宿主状态机。
 
 ## 用户实践
 
@@ -71,7 +77,7 @@ IDE 集成不是只为打开文件，而是让 Claude Code 能拿到：
 
 ### 跨设备继续工作
 
-利用桌面、移动端、session/remote-control 等入口，不要把单个终端视作唯一会话容器。
+利用桌面、移动端与浏览器接入能力，不要把单个终端视作唯一会话容器。
 
 ## 源码锚点
 
@@ -85,6 +91,3 @@ IDE 集成不是只为打开文件，而是让 Claude Code 能拿到：
 - `src/commands/keybindings/index.ts`
 - `src/commands/vim/index.ts`
 - `src/vim/*`
-- `src/commands/bridge/index.ts`
-- `src/commands/remote-env/index.ts`
-- `src/bridge/*`
