@@ -9,6 +9,7 @@
 - `154` 已经稳定写出一条新边界：`read-path filtering`、`semantic removal`、`local rewrite`、`workspace rewind delete` 与 `retention cleanup` 不是同一种删除，`audit close` 也因此不能越级冒充 `irreversible erasure`。
 - `155` 已经稳定写出另一条治理边界：`cleanupPeriodDays` 的声明、settings merge、intent honesty guard、housekeeping scheduler 与 destructive executor 不是同一层，`irreversible erasure` 也因此不能越级冒充 `retention governance`。
 - `156` 已经稳定写出执行诚实性边界：retention declaration、future-write suppression、runtime scheduling、cleanup execution 与 post-hoc side-effect explanation 不是同一层，`retention governance` 也因此不能越级冒充 `retention enforcement honesty`。
+- `157` 已经稳定写出清理隔离边界：task-output isolation repair、project-dir cleanup sweep、shared temp readability 与 live-session ledger 不是同一层，`retention enforcement honesty` 也因此不能越级冒充 `cleanup isolation`。
 
 ## 本轮已净化的正文段
 
@@ -26,14 +27,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-156`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty` signer/governor/honesty ladder
+- `147-157`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation` signer/governor/honesty/isolation ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `157`
-  方向：`retention-enforcement-honesty signer` 仍不等于 `cleanup-isolation signer`
-  原因：`156` 已经证明系统缺少 declaration 与 execution 之间的正式回执；而 `TaskOutput.ts:313-325` 又暴露出另一个更尖锐的问题，cleanup 副作用可能跨进程影响同项目中的其他运行对象。下一层最自然的问题因此变成：谁配宣布这次 cleanup 不只是执行了，而且没有错误地伤及仍在运行的同项目对象
-  证据起点：`src/utils/task/TaskOutput.ts` 关于 “another Claude Code process ... deleted it during startup cleanup” 的诊断字符串，`src/utils/cleanup.ts` 的项目目录级遍历逻辑，以及任何与同项目并发 session / output 文件生命周期相关的实现
+- 候选 `158`
+  方向：`cleanup-isolation signer` 仍不等于 `artifact-family cleanup constitution signer`
+  原因：`157` 已经证明 task outputs、tool-results、transcripts 与 live-session ledger 目前并不处在同一套隔离宪法里。下一层最自然的问题因此变成：为什么 task output family 已经被提升到 session-scoped isolation，而 persisted tool-results/transcripts 仍主要服从项目目录 sweep；也就是谁配为不同 artifact family 制定不同 cleanup preflight gate，而不是假定一种删除规则适用于所有载体
+  证据起点：`src/utils/task/diskOutput.ts` 对 task output family 的专门修补，`src/utils/toolResultStorage.ts` 与 `src/utils/cleanup.ts` 对 tool-results/session files 的路径与 sweep 逻辑，以及任何与 artifact-family-specific cleanup gating 相关的源码
 
 ## 持续约束
 

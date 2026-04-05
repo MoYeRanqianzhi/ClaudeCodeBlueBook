@@ -7,6 +7,14 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A079. 执行诚实性之后仍要继续分出清理隔离：Claude Code 已在 task output family 上修过跨 session 误删，但其他 artifact family 仍未展示出同等级的 live-peer noninterference proof
+
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 的最新内容已经被当前研究分支吸收，因此无需额外 merge，可直接在当前 worktree 上继续推进安全主线。
+- 本轮新增 `157-安全执行诚实性与清理隔离分层`，核心判断是：`156` 已经证明 cleanup execution honesty 还缺正式 signer，但继续看 `TaskOutput.ts + diskOutput.ts + toolResultStorage.ts + cleanup.ts + concurrentSessions.ts + permissions/filesystem.ts` 会发现，哪怕某次 cleanup 已被诚实宣布发生，也仍然不能自动推出“它没有误伤 live peers”。也就是说，`retention-enforcement-honesty signer` 仍不等于 `cleanup-isolation signer`。
+- 本轮最硬的源码证据有四组。第一组是历史 side effect 与局部修补：`TaskOutput.ts:313-325` 明确把某次 output file `ENOENT` 的历史成因解释为“another Claude Code process in the same project deleted it during startup cleanup”；而 `diskOutput.ts:33-55` 又说明 task output family 后来被迁到 `getProjectTempDir()/sessionId/tasks`，并把 “concurrent sessions in the same project don't clobber each other's output files” 写进注释，这说明 task outputs 已经得到 artifact-family-specific 的 cleanup isolation repair。第二组是共享 temp space 与隔离护栏并存：`permissions/filesystem.ts:1688-1700` 明确允许同项目所有 session 读取 project temp dir，因此 temp space 不是天然隔离世界，反而更要求显式的 session-scoped delete boundary。第三组是仍未升级的持久化 artifact family：`toolResultStorage.ts:94-118` 说明 persisted tool-results 仍落在 `projectDir/sessionId/tool-results`，而 `cleanup.ts:196-250` 会按项目目录 sweep 进入每个 sessionDir 的 `tool-results`，依 mtime 删除文件；这与 task outputs 的 session-scoped temp dir 修补形成清晰对照。第四组是缺失的 live-peer gate：`concurrentSessions.ts:49-109,163-204` 明明已经有 `~/.claude/sessions/<pid>.json` 这套活跃会话账本，`main.tsx:2526-2542` 也会注册并统计 concurrent sessions，但 `cleanup.ts:155-257` 的项目目录级 cleanup 路径里没有可见的 active-session consultation。这说明缺的不是基础设施，而是把 live-session ledger 正式接入 cleanup constitution 的那一层 signer。
+- 本轮因此同步补入 `appendix/141-安全执行诚实性与清理隔离分层速查表` 与 `source-notes/08-diskOutput、cleanup与concurrentSessions的清理隔离边界`。这样 `157` 不是泛泛说“cleanup 可能有 cross-session risk”，而是把 task-output isolation repair、persisted tool-results sweep、shared temp readability 与 live-session ledger 之间的结构错位单独钉死。
+- 这也把下一候选自然推进到 `158`：既然 `157` 已经证明不同 artifact family 目前没有统一的 cleanup constitution，那么下一层最值得继续追问的就不再只是 “有没有 isolation signer”，而是 “谁配为不同 artifact family 制定不同 preflight gate”。也就是：`cleanup-isolation signer` 仍不等于 `artifact-family cleanup constitution signer`。
+
 ### A078. 保留期治理之后仍要继续分出执行诚实性：Claude Code 已经有 retention policy 与 cleanup executor，但还缺一位正式说明“这次到底执行了没有”的 signer
 
 - 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 的最新内容已经被当前研究分支吸收，因此无需额外 merge，即可继续在当前 worktree 上推进安全主线。
