@@ -14,7 +14,15 @@
 - 本轮反例化动作: 已继续把三张控制面图的长期验证失真压成 `casebooks/73-75`，并通过 `navigation/40` 把“基础失真”与“验证失真”重新分层。
 - 本轮方法论动作: 已新增 `guides/102`，并同步升级 `navigation/07`、`navigation/15`、`navigation/41` 与 `guides/30`，把“公开镜像源码质量研究协议”补成稳定入口。
 - 本轮哲学收束动作: 已新增 `philosophy/87`，把源码质量线从“结构为什么先进”继续收束到“怎样判断先进才算稳”。
-- 主分支同步检查: `2026-04-06` 在仓库根执行 `git fetch origin && git pull --ff-only`，结果为 `Already up to date.`；当前本地 `main` 领先 `origin/main` 6 个提交，因此本轮不改主分支，只在 `mainloop` 内推进。
+- 主分支同步检查: `2026-04-06` 在当前研究 worktree 内再次执行 `git fetch origin main`；结果确认 `LOCAL_MAIN=801fe80`、`ORIGIN_MAIN=801fe80`，本轮开始前主分支无新增提交需要吸收，因此继续只在 `.worktrees/claude-code-risk-analysis` 内推进。
+
+### A088. 迁移治理之后仍要继续分出退役治理：Claude Code 当前即便知道旧 cleanup 世界该怎样过渡，也还没有谁被正式授权宣布兼容期何时结束
+
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 仍为 `801fe80`，当前 research 分支在该基线上继续推进，因此无需额外 merge，可直接在当前 worktree 上继续深化。
+- 本轮新增 `165-安全载体家族迁移治理与退役治理分层`，核心判断是：`164` 已经证明 cleanup 线未来即便长出 migration governor，也只是在回答“旧世界怎样过渡”；但继续看 `deprecation.ts` 的 provider-specific retirement dates、`useDeprecationWarningNotification.tsx` 与 `main.tsx:2872-2892` 的 deprecation surface、`useModelMigrationNotifications.tsx` 的 one-time migration notifications、`migrateLegacyOpusToCurrent.ts` 与 `model.ts:isLegacyModelRemapEnabled()` 的兼容 remap 开关，以及 `cacheUtils.ts + orphanedPluginFilter.ts + main.tsx:2546-2568` 的 plugin orphan grace window 与 visibility cutoff，会发现更深层的问题已经不再只是 “谁决定新旧世界怎么并存”，而是 “谁决定兼容期什么时候正式结束”。也就是说，`artifact-family cleanup migration-governor signer` 仍不等于 `artifact-family cleanup sunset-governor signer`。
+- 本轮最硬的源码证据有四组。第一组是 model sunset 正例：`deprecation.ts:29-100` 不只记录 deprecated models，还明确维护 provider-specific retirement dates，说明 repo 已把 “何时正式退役” 当成正式治理对象；`useDeprecationWarningNotification.tsx:6-31` 与 `main.tsx:2872-2892` 则把这份退役真相投影到长期 warning surface。第二组是 migration-vs-sunset 双时钟正例：`useModelMigrationNotifications.tsx:7-33` 只在 migration timestamp 刚写入时做一次性通知，而 `deprecation.ts` / deprecation warning 负责持续表达旧模型何时 retired；这说明 “刚迁完” 与 “即将退役” 本来就不是一件事。第三组是 compatibility-not-yet-ended 正例：`migrateLegacyOpusToCurrent.ts:12-53` 即便已把 `userSettings` 改到 `opus` 并记录 `legacyOpusMigrationTimestamp`，`model.ts:552-554` 仍保留 `CLAUDE_CODE_DISABLE_LEGACY_MODEL_REMAP` 这样的 remap 开关，说明 migration 已发生但 sunset 仍未 hard-close。第四组是 plugin sunset 正例：`cacheUtils.ts:23-24,74-171` 通过 `.orphaned_at` 与 `CLEANUP_AGE_MS = 7 days` 明确给出 storage sunset；`orphanedPluginFilter.ts:1-79` 与 `main.tsx:2546-2568` 又通过 orphan exclusion cache 给出 visibility sunset。它们共同说明 repo 并不把 “旧版本已进入过渡世界” 直接偷写成 “旧版本何时不再算当前世界”。
+- 本轮因此同步补入 `appendix/149-安全载体家族迁移治理与退役治理分层速查表` 与 `source-notes/16-model deprecation、migration notifications与plugin orphan grace window的退役治理边界`。这样 `165` 不再停留在 “migration != sunset” 的抽象口号，而是第一次把 `migration decision / sunset decision / positive control / cleanup retirement gap / governor question` 压成回查矩阵，并把 model/plugin 两条退役治理正例与 cleanup 线未来的 compatibility-ending 问题放进同一篇源码剖面里。
+- 这也把下一候选自然推进到 `166`：既然 `165` 已经证明 sunset 主权不等于 migration 主权，那么下一层最值得继续追问的就不再只是 “谁来宣布兼容期结束”，而是 “结束之后还留下什么最小历史标记来约束未来读者”。也就是：`artifact-family cleanup sunset-governor signer` 仍不等于 `artifact-family cleanup tombstone-governor signer`，需要继续研究 `.orphaned_at`、retirement date、migration timestamp 这类 tombstone / marker grammar 如何与 cleanup 线未来的旧 path、旧 promise 与旧 receipt 世界对接。
 
 ### A081. 源码质量线继续深化后，最值钱的补层不是再赞美结构，而是把“判断标准”本身升级为第一性原理
 

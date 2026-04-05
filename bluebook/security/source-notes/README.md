@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 15 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 16 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -34,6 +34,7 @@
 13. [13-microCompact、verifyAutoModeGateAccess与cleanup的反漂移验证边界](13-microCompact%E3%80%81verifyAutoModeGateAccess%E4%B8%8Ecleanup%E7%9A%84%E5%8F%8D%E6%BC%82%E7%A7%BB%E9%AA%8C%E8%AF%81%E8%BE%B9%E7%95%8C.md)
 14. [14-verifyAndDemote、auto-mode gate与cleanup的修复治理边界](14-verifyAndDemote%E3%80%81auto-mode%20gate%E4%B8%8Ecleanup%E7%9A%84%E4%BF%AE%E5%A4%8D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 15. [15-model migrations、plugin orphan cleanup与plans continuity的迁移治理边界](15-model%20migrations%E3%80%81plugin%20orphan%20cleanup%E4%B8%8Eplans%20continuity%E7%9A%84%E8%BF%81%E7%A7%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+16. [16-model deprecation、migration notifications与plugin orphan grace window的退役治理边界](16-model%20deprecation%E3%80%81migration%20notifications%E4%B8%8Eplugin%20orphan%20grace%20window%E7%9A%84%E9%80%80%E5%BD%B9%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
