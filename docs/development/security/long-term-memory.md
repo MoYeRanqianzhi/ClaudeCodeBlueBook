@@ -10,6 +10,7 @@
 - `155` 已经稳定写出另一条治理边界：`cleanupPeriodDays` 的声明、settings merge、intent honesty guard、housekeeping scheduler 与 destructive executor 不是同一层，`irreversible erasure` 也因此不能越级冒充 `retention governance`。
 - `156` 已经稳定写出执行诚实性边界：retention declaration、future-write suppression、runtime scheduling、cleanup execution 与 post-hoc side-effect explanation 不是同一层，`retention governance` 也因此不能越级冒充 `retention enforcement honesty`。
 - `157` 已经稳定写出清理隔离边界：task-output isolation repair、project-dir cleanup sweep、shared temp readability 与 live-session ledger 不是同一层，`retention enforcement honesty` 也因此不能越级冒充 `cleanup isolation`。
+- `158` 已经稳定写出家族宪法边界：task outputs、scratchpad、tool-results、transcripts、plans、file-history 与 session-env 当前处在多种 cleanup constitution 并存的世界里，`cleanup isolation` 也因此不能越级冒充 `artifact-family cleanup constitution`。
 
 ## 本轮已净化的正文段
 
@@ -27,14 +28,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-157`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation` signer/governor/honesty/isolation ladder
+- `147-158`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution` signer/governor/honesty/isolation/constitution ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `158`
-  方向：`cleanup-isolation signer` 仍不等于 `artifact-family cleanup constitution signer`
-  原因：`157` 已经证明 task outputs、tool-results、transcripts 与 live-session ledger 目前并不处在同一套隔离宪法里。下一层最自然的问题因此变成：为什么 task output family 已经被提升到 session-scoped isolation，而 persisted tool-results/transcripts 仍主要服从项目目录 sweep；也就是谁配为不同 artifact family 制定不同 cleanup preflight gate，而不是假定一种删除规则适用于所有载体
-  证据起点：`src/utils/task/diskOutput.ts` 对 task output family 的专门修补，`src/utils/toolResultStorage.ts` 与 `src/utils/cleanup.ts` 对 tool-results/session files 的路径与 sweep 逻辑，以及任何与 artifact-family-specific cleanup gating 相关的源码
+- 候选 `159`
+  方向：`artifact-family cleanup constitution signer` 仍不等于 `artifact-family cleanup rationale signer`
+  原因：`158` 已经证明当前 repo 是多宪法并存，而非统一删除法。但下一层更值钱的问题不再只是“它们不同”，而是“为什么这些 family 必须不同”。也就是：谁配解释 task outputs/scratchpad 走 temp-dir session constitution，而 plans、file-history、session-env、tool-results、transcripts 分别落在别的 constitution 上；这需要从风险对象、恢复职责、读者范围与宿主可见性重新抽象每个 family 的制度理由
+  证据起点：`src/utils/task/diskOutput.ts`、`src/utils/permissions/filesystem.ts`、`src/utils/toolResultStorage.ts`、`src/utils/sessionStorage.ts`、`src/utils/plans.ts` 与 `src/utils/cleanup.ts` 中不同 family 的存储作用域、权限注释与 cleanup root 设计
 
 ## 持续约束
 

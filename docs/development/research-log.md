@@ -7,6 +7,14 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A080. 清理隔离之后仍要继续分出载体家族宪法：Claude Code 当前不是一条统一 cleanup law，而是多种 artifact-family constitution 并存
+
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 的最新内容已经被当前研究分支吸收，因此无需额外 merge，即可继续在当前 worktree 上推进安全主线。
+- 本轮新增 `158-安全清理隔离与载体家族宪法分层`，核心判断是：`157` 已经证明 cleanup execution 不等于 cleanup isolation，但继续看 `diskOutput.ts + permissions/filesystem.ts + toolResultStorage.ts + sessionStorage.ts + plans.ts + cleanup.ts` 会发现，更深层的问题其实不是 “同项目会不会误删”，而是不同 artifact family 当前根本就活在不同的 cleanup constitution 里。也就是说，`cleanup-isolation signer` 仍不等于 `artifact-family cleanup constitution signer`。
+- 本轮最重要的源码证据有四组。第一组是 session-scoped temp constitution：`diskOutput.ts:33-55` 把 task outputs 固定到 `getProjectTempDir()/sessionId/tasks`，明确以避免同项目并发 session clobber 为目标；`permissions/filesystem.ts:381-423,1499-1506,1676-1684` 又把 scratchpad 固定到 `getProjectTempDir()/sessionId/scratchpad`，并把当前 session 的读写权限都绑定到这一路径。第二组是 project-session sweep constitution：`toolResultStorage.ts:94-118` 说明 tool-results 落在 `projectDir/sessionId/tool-results`，`sessionStorage.ts:198-215` 说明 transcripts/casts 落在 `projectDir/<session>.jsonl/.cast`，而 `cleanup.ts:155-257` 会以 `~/.claude/projects/<project>` 为 sweep 根，先清顶层 transcript/cast，再下钻各 sessionDir 的 tool-results。第三组是 home-root single-dir constitution：`plans.ts:79-110` 说明 plans 默认落在 `~/.claude/plans`，只有显式 `plansDirectory` 时才可能进项目根；`cleanup.ts:300-303` 对 plans 只做 `cleanupSingleDirectory('.md')`。第四组是 home-root per-session-dir constitution：`fileHistory.ts:951-957` 把 backups 放到 `~/.claude/file-history/<sessionId>/`，`cleanup.ts:305-347` 以 session dir mtime 递归删除；`cleanup.ts:350-387` 对 `~/.claude/session-env/<session>/` 也采用相同模式。这样一来，至少已经能清楚区分出 session-scoped temp constitution、project-session sweep constitution、home-root single-dir constitution 与 home-root per-session-dir constitution 四种 cleanup law。
+- 本轮因此同步补入 `appendix/142-安全清理隔离与载体家族宪法分层速查表` 与 `source-notes/09-task outputs、tool-results、transcripts与plans的清理家族宪法`。这样 `158` 不再停留在 “cleanup family 差异存在” 的概念层，而是第一次把不同 artifact family 的 storage scope、cleanup root、current gate 与仍待解释的 constitution question 压成可直接对照的制度地图。
+- 这也把下一候选自然推进到 `159`：既然 `158` 已经证明当前 repo 是多宪法并存，而不是一条统一删除法，那么下一层最值得继续追问的就不再只是 “它们不同”，而是 “为什么它们必须不同”。也就是：`artifact-family cleanup constitution signer` 仍不等于 `artifact-family cleanup rationale signer`，需要进一步从风险对象、恢复职责、读者范围与宿主可见性解释每个 family 的制度理由。
+
 ### A079. 执行诚实性之后仍要继续分出清理隔离：Claude Code 已在 task output family 上修过跨 session 误删，但其他 artifact family 仍未展示出同等级的 live-peer noninterference proof
 
 - 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 的最新内容已经被当前研究分支吸收，因此无需额外 merge，可直接在当前 worktree 上继续推进安全主线。

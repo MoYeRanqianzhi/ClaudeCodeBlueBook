@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 8 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 9 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -27,6 +27,7 @@
 6. [06-cleanup、backgroundHousekeeping与settings的保留期治理边界](06-cleanup%E3%80%81backgroundHousekeeping%E4%B8%8Esettings%E7%9A%84%E4%BF%9D%E7%95%99%E6%9C%9F%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 7. [07-cleanup执行诚实性、TaskOutput与保留期回执缺口](07-cleanup%E6%89%A7%E8%A1%8C%E8%AF%9A%E5%AE%9E%E6%80%A7%E3%80%81TaskOutput%E4%B8%8E%E4%BF%9D%E7%95%99%E6%9C%9F%E5%9B%9E%E6%89%A7%E7%BC%BA%E5%8F%A3.md)
 8. [08-diskOutput、cleanup与concurrentSessions的清理隔离边界](08-diskOutput%E3%80%81cleanup%E4%B8%8EconcurrentSessions%E7%9A%84%E6%B8%85%E7%90%86%E9%9A%94%E7%A6%BB%E8%BE%B9%E7%95%8C.md)
+9. [09-task outputs、tool-results、transcripts与plans的清理家族宪法](09-task%20outputs%E3%80%81tool-results%E3%80%81transcripts%E4%B8%8Eplans%E7%9A%84%E6%B8%85%E7%90%86%E5%AE%B6%E6%97%8F%E5%AE%AA%E6%B3%95.md)
 
 ## 和其他目录的分工
 
