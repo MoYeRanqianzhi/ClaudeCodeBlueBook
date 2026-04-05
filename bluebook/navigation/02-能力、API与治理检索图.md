@@ -43,11 +43,13 @@
 | 宿主如何拿到恢复与状态真相 | `api/16`、`api/17`、`api/19`、`api/20` | `architecture/16`、`architecture/17`、`architecture/25` |
 | prompt、知识、记忆从哪里注入 | `api/18`、`api/21` | `architecture/18`、`architecture/28`、`architecture/29` |
 | prompt 为什么强到不像单段 system prompt | `architecture/31`、`architecture/36` | `philosophy/21`、`navigation/03` |
+| 如果想先抓三条最高阶判断，而不是先读功能表 | `09`、`philosophy/84-87` | `guides/99-102`、`playbooks/77-79` |
 | plugin / MCP / MCPB / channels / LSP 到底边界在哪 | `api/22` | `architecture/27`、`philosophy/20` |
 | 安全、治理、远程高安全链路如何理解 | `risk/README.md` | `architecture/19`、`risk/05`、`risk/11` |
 | 目录结构为什么本身就在暴露能力拓扑 | `api/30` | `architecture/24`、`architecture/38` |
 | 为什么安全、治理与省 token 应该共读 | `architecture/32`、`architecture/37` | `api/28`、`api/29`、`philosophy/22` |
 | 为什么公开镜像仍然值得学 | `architecture/33`、`architecture/38` | `philosophy/23`、`navigation/03` |
+| 如果想在公开镜像条件下稳当地判断源码质量 | `guides/102`、`philosophy/87` | `architecture/38`、`architecture/63`、`architecture/84` |
 
 ## 4. 功能全集和公开承诺不是一回事
 
@@ -76,5 +78,5 @@
 
 1. 源码目录级索引继续下沉到二级目录与代表性叶子模块。
 2. SDK/control/session/remote 的统一接入矩阵继续补 subtype / recovery casebook。
-3. prompt 魔力、安全分层、token 经济三者的同构关系继续回灌到主线与指南。
-4. 源码先进性与热点大文件债务如何同时成立，继续补 chokepoint / leaf module casebook。
+3. 顶层入口仍需持续防止读者先退回功能清单与目录体感，而没有先带着三条高阶判断进入主线。
+4. 公开镜像研究纪律仍需继续前置到更多入口，避免“声明存在 / 当前注册 / 宿主子集 / 热点实现”重新被混写。
