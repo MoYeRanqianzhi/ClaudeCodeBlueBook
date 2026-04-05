@@ -1,69 +1,56 @@
 # 安全专题索引
 
-`security/` 当前包含 149 篇主线章节、132 篇附录速查，以及 1 篇 `source-notes/` 源码剖面。
-
-这一目录研究的不是泛泛的“Claude Code 很安全”，  
-而是：
-
-- 安全边界如何被做成分层控制面
-- 安全真相如何被状态机、账本、恢复协议和宿主投影共同治理
-- 这套设计在工程上先进在哪里，又有哪些可继续制度化的缺口
+`security/` 当前有 151 篇正文，范围 `00-150`；`appendix/` 当前有 134 篇速查文档；`source-notes/` 当前有 2 篇源码剖面。本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及终局与遗忘边界的工程化验证。
 
 ## 核心判断
 
-- Claude Code 的安全性不是单点沙箱，也不是单点分类器。
-- 它更像一套分层安全控制面，覆盖启动信任、权限模式、来源主权、外部能力收口、恢复资格、宿主投影与工程验证。
-- 真正的设计重点不是“尽量禁用能力”，而是“能力只能沿着正确边界流动”。
+- Claude Code 的安全性不是单点沙箱，也不是单点分类器，而是一套分层 signer、ledger 与 lifecycle control plane。
+- 真正重要的不是把能力尽量做小，而是让能力、声明、恢复权和清理权只能沿着正确边界流动。
+- `147-150` 这一段 signer ladder 已经说明：`receipt -> completion -> finality -> forgetting` 是四层不同强度的安全声明，任何弱层都不能越级冒充强层。
 
 ## 目录分层
 
-- `00-12`
-  研究方法、总论、权限/沙箱、密钥/受管环境、外部能力收口与产品化改进。
-  入口：[00-研究方法与可信边界](00-%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95%E4%B8%8E%E5%8F%AF%E4%BF%A1%E8%BE%B9%E7%95%8C.md)、[01-安全总论：Claude Code 不是单点沙箱，而是分层安全控制面](01-%E5%AE%89%E5%85%A8%E6%80%BB%E8%AE%BA%EF%BC%9AClaude%20Code%20%E4%B8%8D%E6%98%AF%E5%8D%95%E7%82%B9%E6%B2%99%E7%AE%B1%EF%BC%8C%E8%80%8C%E6%98%AF%E5%88%86%E5%B1%82%E5%AE%89%E5%85%A8%E6%8E%A7%E5%88%B6%E9%9D%A2.md)、[02-权限、沙箱与最小授权：真正危险的不是工具强，而是工具绕过仲裁](02-%E6%9D%83%E9%99%90%E3%80%81%E6%B2%99%E7%AE%B1%E4%B8%8E%E6%9C%80%E5%B0%8F%E6%8E%88%E6%9D%83%EF%BC%9A%E7%9C%9F%E6%AD%A3%E5%8D%B1%E9%99%A9%E7%9A%84%E4%B8%8D%E6%98%AF%E5%B7%A5%E5%85%B7%E5%BC%BA%EF%BC%8C%E8%80%8C%E6%98%AF%E5%B7%A5%E5%85%B7%E7%BB%95%E8%BF%87%E4%BB%B2%E8%A3%81.md)、[03-认证、密钥与受管环境：安全边界首先要防的是运行时被配置污染](03-%E8%AE%A4%E8%AF%81%E3%80%81%E5%AF%86%E9%92%A5%E4%B8%8E%E5%8F%97%E7%AE%A1%E7%8E%AF%E5%A2%83%EF%BC%9A%E5%AE%89%E5%85%A8%E8%BE%B9%E7%95%8C%E9%A6%96%E5%85%88%E8%A6%81%E9%98%B2%E7%9A%84%E6%98%AF%E8%BF%90%E8%A1%8C%E6%97%B6%E8%A2%AB%E9%85%8D%E7%BD%AE%E6%B1%A1%E6%9F%93.md)、[04-MCP、WebFetch、hooks 与外部能力收口：外部世界不是默认可信上下文](04-MCP%E3%80%81WebFetch%E3%80%81hooks%20%E4%B8%8E%E5%A4%96%E9%83%A8%E8%83%BD%E5%8A%9B%E6%94%B6%E5%8F%A3%EF%BC%9A%E5%A4%96%E9%83%A8%E4%B8%96%E7%95%8C%E4%B8%8D%E6%98%AF%E9%BB%98%E8%AE%A4%E5%8F%AF%E4%BF%A1%E4%B8%8A%E4%B8%8B%E6%96%87.md)。
-- `13-29`
-  控制台总图、来源主权、宿主资格、统一安全控制台与显式降级。
-  入口：[13-安全专题二级索引：按问题、攻击面、主权冲突与产品改进快速阅读](13-%E5%AE%89%E5%85%A8%E4%B8%93%E9%A2%98%E4%BA%8C%E7%BA%A7%E7%B4%A2%E5%BC%95%EF%BC%9A%E6%8C%89%E9%97%AE%E9%A2%98%E3%80%81%E6%94%BB%E5%87%BB%E9%9D%A2%E3%80%81%E4%B8%BB%E6%9D%83%E5%86%B2%E7%AA%81%E4%B8%8E%E4%BA%A7%E5%93%81%E6%94%B9%E8%BF%9B%E5%BF%AB%E9%80%9F%E9%98%85%E8%AF%BB.md)、[14-安全控制面总图：从 trust 到 entitlement 的全链结构图谱](14-%E5%AE%89%E5%85%A8%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%BB%8E%20trust%20%E5%88%B0%20entitlement%20%E7%9A%84%E5%85%A8%E9%93%BE%E7%BB%93%E6%9E%84%E5%9B%BE%E8%B0%B1.md)、[23-统一安全控制台字段设计：源码里已经有哪些状态字段，还缺哪些跨面字段](23-%E7%BB%9F%E4%B8%80%E5%AE%89%E5%85%A8%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%AD%97%E6%AE%B5%E8%AE%BE%E8%AE%A1%EF%BC%9A%E6%BA%90%E7%A0%81%E9%87%8C%E5%B7%B2%E7%BB%8F%E6%9C%89%E5%93%AA%E4%BA%9B%E7%8A%B6%E6%80%81%E5%AD%97%E6%AE%B5%EF%BC%8C%E8%BF%98%E7%BC%BA%E5%93%AA%E4%BA%9B%E8%B7%A8%E9%9D%A2%E5%AD%97%E6%AE%B5.md)、[24-统一安全控制台卡片设计：如何把字段、证明链与最短动作做成真正可用的界面](24-%E7%BB%9F%E4%B8%80%E5%AE%89%E5%85%A8%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%8D%A1%E7%89%87%E8%AE%BE%E8%AE%A1%EF%BC%9A%E5%A6%82%E4%BD%95%E6%8A%8A%E5%AD%97%E6%AE%B5%E3%80%81%E8%AF%81%E6%98%8E%E9%93%BE%E4%B8%8E%E6%9C%80%E7%9F%AD%E5%8A%A8%E4%BD%9C%E5%81%9A%E6%88%90%E7%9C%9F%E6%AD%A3%E5%8F%AF%E7%94%A8%E7%9A%84%E7%95%8C%E9%9D%A2.md)、[29-宿主资格等级：观察宿主、控制宿主、证明宿主为何必须分层定义](29-%E5%AE%BF%E4%B8%BB%E8%B5%84%E6%A0%BC%E7%AD%89%E7%BA%A7%EF%BC%9A%E8%A7%82%E5%AF%9F%E5%AE%BF%E4%B8%BB%E3%80%81%E6%8E%A7%E5%88%B6%E5%AE%BF%E4%B8%BB%E3%80%81%E8%AF%81%E6%98%8E%E5%AE%BF%E4%B8%BB%E4%B8%BA%E4%BD%95%E5%BF%85%E9%A1%BB%E5%88%86%E5%B1%82%E5%AE%9A%E4%B9%89.md)。
-- `30-60`
-  真相源、账本、动作语法、完成差异、恢复签字、中间态与清理权限。
-  入口：[30-安全真相源层级：为什么 worker_status、external_metadata、AppState 与界面文案不能互相替代](30-%E5%AE%89%E5%85%A8%E7%9C%9F%E7%9B%B8%E6%BA%90%E5%B1%82%E7%BA%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20worker_status%E3%80%81external_metadata%E3%80%81AppState%20%E4%B8%8E%E7%95%8C%E9%9D%A2%E6%96%87%E6%A1%88%E4%B8%8D%E8%83%BD%E4%BA%92%E7%9B%B8%E6%9B%BF%E4%BB%A3.md)、[39-安全声明等级：为什么控制面不该只输出 yes-no，而要把状态、理由与证据强度分层编码](39-%E5%AE%89%E5%85%A8%E5%A3%B0%E6%98%8E%E7%AD%89%E7%BA%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8E%A7%E5%88%B6%E9%9D%A2%E4%B8%8D%E8%AF%A5%E5%8F%AA%E8%BE%93%E5%87%BA%20yes-no%EF%BC%8C%E8%80%8C%E8%A6%81%E6%8A%8A%E7%8A%B6%E6%80%81%E3%80%81%E7%90%86%E7%94%B1%E4%B8%8E%E8%AF%81%E6%8D%AE%E5%BC%BA%E5%BA%A6%E5%88%86%E5%B1%82%E7%BC%96%E7%A0%81.md)、[42-安全动作完成权：为什么动作执行不等于动作完成，必须由authoritative回读签字](42-%E5%AE%89%E5%85%A8%E5%8A%A8%E4%BD%9C%E5%AE%8C%E6%88%90%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%8A%A8%E4%BD%9C%E6%89%A7%E8%A1%8C%E4%B8%8D%E7%AD%89%E4%BA%8E%E5%8A%A8%E4%BD%9C%E5%AE%8C%E6%88%90%EF%BC%8C%E5%BF%85%E9%A1%BB%E7%94%B1authoritative%E5%9B%9E%E8%AF%BB%E7%AD%BE%E5%AD%97.md)、[50-安全恢复签字层级：哪些证据只够清通知，哪些才够恢复动作、卡片与主结论](50-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E7%AD%BE%E5%AD%97%E5%B1%82%E7%BA%A7%EF%BC%9A%E5%93%AA%E4%BA%9B%E8%AF%81%E6%8D%AE%E5%8F%AA%E5%A4%9F%E6%B8%85%E9%80%9A%E7%9F%A5%EF%BC%8C%E5%93%AA%E4%BA%9B%E6%89%8D%E5%A4%9F%E6%81%A2%E5%A4%8D%E5%8A%A8%E4%BD%9C%E3%80%81%E5%8D%A1%E7%89%87%E4%B8%8E%E4%B8%BB%E7%BB%93%E8%AE%BA.md)、[57-安全恢复清理权限边界：为什么不是任何层都能删除恢复痕迹，必须由对应闭环所有者清理](57-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E6%B8%85%E7%90%86%E6%9D%83%E9%99%90%E8%BE%B9%E7%95%8C%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E4%BB%BB%E4%BD%95%E5%B1%82%E9%83%BD%E8%83%BD%E5%88%A0%E9%99%A4%E6%81%A2%E5%A4%8D%E7%97%95%E8%BF%B9%EF%BC%8C%E5%BF%85%E9%A1%BB%E7%94%B1%E5%AF%B9%E5%BA%94%E9%97%AD%E7%8E%AF%E6%89%80%E6%9C%89%E8%80%85%E6%B8%85%E7%90%86.md)、[60-安全恢复显式语义：为什么hidden、suppressed、cleared与resolved必须严格区分，不能被同一句“没事了”压平](60-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E6%98%BE%E5%BC%8F%E8%AF%AD%E4%B9%89%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88hidden%E3%80%81suppressed%E3%80%81cleared%E4%B8%8Eresolved%E5%BF%85%E9%A1%BB%E4%B8%A5%E6%A0%BC%E5%8C%BA%E5%88%86%EF%BC%8C%E4%B8%8D%E8%83%BD%E8%A2%AB%E5%90%8C%E4%B8%80%E5%8F%A5%E2%80%9C%E6%B2%A1%E4%BA%8B%E4%BA%86%E2%80%9D%E5%8E%8B%E5%B9%B3.md)。
-- `61-95`
-  词法主权、状态编辑权、上下文连续性、恢复资格、恢复资产与重签发协议。
-  入口：[61-安全恢复词法主权：为什么通知、摘要、footer与账本不能各自发明恢复语言，必须服从同一套命名仲裁](61-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E8%AF%8D%E6%B3%95%E4%B8%BB%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%9A%E7%9F%A5%E3%80%81%E6%91%98%E8%A6%81%E3%80%81footer%E4%B8%8E%E8%B4%A6%E6%9C%AC%E4%B8%8D%E8%83%BD%E5%90%84%E8%87%AA%E5%8F%91%E6%98%8E%E6%81%A2%E5%A4%8D%E8%AF%AD%E8%A8%80%EF%BC%8C%E5%BF%85%E9%A1%BB%E6%9C%8D%E4%BB%8E%E5%90%8C%E4%B8%80%E5%A5%97%E5%91%BD%E5%90%8D%E4%BB%B2%E8%A3%81.md)、[70-安全多重窄门：为什么Claude Code不是先给全量能力再补权限，而是逐层借出能力](70-%E5%AE%89%E5%85%A8%E5%A4%9A%E9%87%8D%E7%AA%84%E9%97%A8%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88Claude%20Code%E4%B8%8D%E6%98%AF%E5%85%88%E7%BB%99%E5%85%A8%E9%87%8F%E8%83%BD%E5%8A%9B%E5%86%8D%E8%A1%A5%E6%9D%83%E9%99%90%EF%BC%8C%E8%80%8C%E6%98%AF%E9%80%90%E5%B1%82%E5%80%9F%E5%87%BA%E8%83%BD%E5%8A%9B.md)、[80-安全状态句柄化：为什么下一代控制面不该继续用裸key编辑状态，而应把family scope升级为opaque handle](80-%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E5%8F%A5%E6%9F%84%E5%8C%96%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8B%E4%B8%80%E4%BB%A3%E6%8E%A7%E5%88%B6%E9%9D%A2%E4%B8%8D%E8%AF%A5%E7%BB%A7%E7%BB%AD%E7%94%A8%E8%A3%B8key%E7%BC%96%E8%BE%91%E7%8A%B6%E6%80%81%EF%BC%8C%E8%80%8C%E5%BA%94%E6%8A%8Afamily%20scope%E5%8D%87%E7%BA%A7%E4%B8%BAopaque%20handle.md)、[86-安全恢复承诺诚实性：为什么--continue、pointer与resume提示不是帮助文案，而是对边界可恢复性的安全承诺](86-%E5%AE%89%E5%85%A8%E6%81%A2%E5%A4%8D%E6%89%BF%E8%AF%BA%E8%AF%9A%E5%AE%9E%E6%80%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88--continue%E3%80%81pointer%E4%B8%8Eresume%E6%8F%90%E7%A4%BA%E4%B8%8D%E6%98%AF%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%88%EF%BC%8C%E8%80%8C%E6%98%AF%E5%AF%B9%E8%BE%B9%E7%95%8C%E5%8F%AF%E6%81%A2%E5%A4%8D%E6%80%A7%E7%9A%84%E5%AE%89%E5%85%A8%E6%89%BF%E8%AF%BA.md)、[95-安全资格重签发协议：为什么失效对象不能靠残留工件直接回到current，而必须先回到pending、reload或fresh-session路径](95-%E5%AE%89%E5%85%A8%E8%B5%84%E6%A0%BC%E9%87%8D%E7%AD%BE%E5%8F%91%E5%8D%8F%E8%AE%AE%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%B1%E6%95%88%E5%AF%B9%E8%B1%A1%E4%B8%8D%E8%83%BD%E9%9D%A0%E6%AE%8B%E7%95%99%E5%B7%A5%E4%BB%B6%E7%9B%B4%E6%8E%A5%E5%9B%9E%E5%88%B0current%EF%BC%8C%E8%80%8C%E5%BF%85%E9%A1%BB%E5%85%88%E5%9B%9E%E5%88%B0pending%E3%80%81reload%E6%88%96fresh-session%E8%B7%AF%E5%BE%84.md)。
-- `96-115`
-  资格中间态、投影协议、字段生命周期、状态机宪法与验证蓝图。
-  入口：[96-安全资格中间态语法：为什么needsRefresh、pending、retryable与fresh-session-fallback不能压成同一句正在恢复](96-%E5%AE%89%E5%85%A8%E8%B5%84%E6%A0%BC%E4%B8%AD%E9%97%B4%E6%80%81%E8%AF%AD%E6%B3%95%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88needsRefresh%E3%80%81pending%E3%80%81retryable%E4%B8%8Efresh-session-fallback%E4%B8%8D%E8%83%BD%E5%8E%8B%E6%88%90%E5%90%8C%E4%B8%80%E5%8F%A5%E6%AD%A3%E5%9C%A8%E6%81%A2%E5%A4%8D.md)、[103-安全资格显式投影协议字段：为什么下一代控制台应把projection-scope与hidden-truth做成结构化字段](103-%E5%AE%89%E5%85%A8%E8%B5%84%E6%A0%BC%E6%98%BE%E5%BC%8F%E6%8A%95%E5%BD%B1%E5%8D%8F%E8%AE%AE%E5%AD%97%E6%AE%B5%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8B%E4%B8%80%E4%BB%A3%E6%8E%A7%E5%88%B6%E5%8F%B0%E5%BA%94%E6%8A%8Aprojection-scope%E4%B8%8Ehidden-truth%E5%81%9A%E6%88%90%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%97%E6%AE%B5.md)、[109-安全资格生命周期调度与状态机：为什么有了ledger仍不够，还必须把裸setState升级为typed transition dispatch](109-%E5%AE%89%E5%85%A8%E8%B5%84%E6%A0%BC%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E8%B0%83%E5%BA%A6%E4%B8%8E%E7%8A%B6%E6%80%81%E6%9C%BA%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E4%BA%86ledger%E4%BB%8D%E4%B8%8D%E5%A4%9F%EF%BC%8C%E8%BF%98%E5%BF%85%E9%A1%BB%E6%8A%8A%E8%A3%B8setState%E5%8D%87%E7%BA%A7%E4%B8%BAtyped%20transition%20dispatch.md)、[112-安全资格分层验证架构：为什么真正成熟的安全系统必须把schema、guard、transition、ledger与tests做成验证金字塔](112-%E5%AE%89%E5%85%A8%E8%B5%84%E6%A0%BC%E5%88%86%E5%B1%82%E9%AA%8C%E8%AF%81%E6%9E%B6%E6%9E%84%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E5%AE%89%E5%85%A8%E7%B3%BB%E7%BB%9F%E5%BF%85%E9%A1%BB%E6%8A%8Aschema%E3%80%81guard%E3%80%81transition%E3%80%81ledger%E4%B8%8Etests%E5%81%9A%E6%88%90%E9%AA%8C%E8%AF%81%E9%87%91%E5%AD%97%E5%A1%94.md)、[114-安全最小可执行验证蓝图：为什么下一步不是泛泛补测试，而是先建一套能持续守住最贵失真的首批验证套件](114-%E5%AE%89%E5%85%A8%E6%9C%80%E5%B0%8F%E5%8F%AF%E6%89%A7%E8%A1%8C%E9%AA%8C%E8%AF%81%E8%93%9D%E5%9B%BE%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8B%E4%B8%80%E6%AD%A5%E4%B8%8D%E6%98%AF%E6%B3%9B%E6%B3%9B%E8%A1%A5%E6%B5%8B%E8%AF%95%EF%BC%8C%E8%80%8C%E6%98%AF%E5%85%88%E5%BB%BA%E4%B8%80%E5%A5%97%E8%83%BD%E6%8C%81%E7%BB%AD%E5%AE%88%E4%BD%8F%E6%9C%80%E8%B4%B5%E5%A4%B1%E7%9C%9F%E7%9A%84%E9%A6%96%E6%89%B9%E9%AA%8C%E8%AF%81%E5%A5%97%E4%BB%B6.md)。
-- `116-138`
-  工程迁移、阶段门、词法宪法、失败语义、缩域、状态机与遗忘契约。
-  入口：[116-安全工程迁移路线图：为什么这份研究版源码若要走向可持续验证系统，必须先固化边界，再分阶段迁移而不能一次性重构](116-%E5%AE%89%E5%85%A8%E5%B7%A5%E7%A8%8B%E8%BF%81%E7%A7%BB%E8%B7%AF%E7%BA%BF%E5%9B%BE%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E4%BB%BD%E7%A0%94%E7%A9%B6%E7%89%88%E6%BA%90%E7%A0%81%E8%8B%A5%E8%A6%81%E8%B5%B0%E5%90%91%E5%8F%AF%E6%8C%81%E7%BB%AD%E9%AA%8C%E8%AF%81%E7%B3%BB%E7%BB%9F%EF%BC%8C%E5%BF%85%E9%A1%BB%E5%85%88%E5%9B%BA%E5%8C%96%E8%BE%B9%E7%95%8C%EF%BC%8C%E5%86%8D%E5%88%86%E9%98%B6%E6%AE%B5%E8%BF%81%E7%A7%BB%E8%80%8C%E4%B8%8D%E8%83%BD%E4%B8%80%E6%AC%A1%E6%80%A7%E9%87%8D%E6%9E%84.md)、[125-安全工程词法宪法：为什么observed、wired、hosted、verified、equivalent这些词必须固定含义而不能互相偷换](125-%E5%AE%89%E5%85%A8%E5%B7%A5%E7%A8%8B%E8%AF%8D%E6%B3%95%E5%AE%AA%E6%B3%95%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88observed%E3%80%81wired%E3%80%81hosted%E3%80%81verified%E3%80%81equivalent%E8%BF%99%E4%BA%9B%E8%AF%8D%E5%BF%85%E9%A1%BB%E5%9B%BA%E5%AE%9A%E5%90%AB%E4%B9%89%E8%80%8C%E4%B8%8D%E8%83%BD%E4%BA%92%E7%9B%B8%E5%81%B7%E6%8D%A2.md)、[131-安全真相状态机：为什么Claude Code不是在维护一堆散点规则，而是在维护可进入、可续签、可降级、可恢复、可终止的安全状态机](131-%E5%AE%89%E5%85%A8%E7%9C%9F%E7%9B%B8%E7%8A%B6%E6%80%81%E6%9C%BA%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88Claude%20Code%E4%B8%8D%E6%98%AF%E5%9C%A8%E7%BB%B4%E6%8A%A4%E4%B8%80%E5%A0%86%E6%95%A3%E7%82%B9%E8%A7%84%E5%88%99%EF%BC%8C%E8%80%8C%E6%98%AF%E5%9C%A8%E7%BB%B4%E6%8A%A4%E5%8F%AF%E8%BF%9B%E5%85%A5%E3%80%81%E5%8F%AF%E7%BB%AD%E7%AD%BE%E3%80%81%E5%8F%AF%E9%99%8D%E7%BA%A7%E3%80%81%E5%8F%AF%E6%81%A2%E5%A4%8D%E3%80%81%E5%8F%AF%E7%BB%88%E6%AD%A2%E7%9A%84%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81%E6%9C%BA.md)、[138-安全遗忘宿主契约：为什么cleanup语义若不进入SDK和host contract，宿主永远只能靠文案与隐式状态猜测](138-%E5%AE%89%E5%85%A8%E9%81%97%E5%BF%98%E5%AE%BF%E4%B8%BB%E5%A5%91%E7%BA%A6%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88cleanup%E8%AF%AD%E4%B9%89%E8%8B%A5%E4%B8%8D%E8%BF%9B%E5%85%A5SDK%E5%92%8Chost%20contract%EF%BC%8C%E5%AE%BF%E4%B8%BB%E6%B0%B8%E8%BF%9C%E5%8F%AA%E8%83%BD%E9%9D%A0%E6%96%87%E6%A1%88%E4%B8%8E%E9%9A%90%E5%BC%8F%E7%8A%B6%E6%80%81%E7%8C%9C%E6%B5%8B.md)。
-- `139-148`
-  cleanup 契约、兼容迁移、版本偏斜、handoff、receipt signer 与 completion layering。
-  入口：[139-安全遗忘契约机检：为什么cleanup语义一旦进入宿主契约，就必须被schema、生成类型、handler与conformance共同守住](139-%E5%AE%89%E5%85%A8%E9%81%97%E5%BF%98%E5%A5%91%E7%BA%A6%E6%9C%BA%E6%A3%80%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88cleanup%E8%AF%AD%E4%B9%89%E4%B8%80%E6%97%A6%E8%BF%9B%E5%85%A5%E5%AE%BF%E4%B8%BB%E5%A5%91%E7%BA%A6%EF%BC%8C%E5%B0%B1%E5%BF%85%E9%A1%BB%E8%A2%ABschema%E3%80%81%E7%94%9F%E6%88%90%E7%B1%BB%E5%9E%8B%E3%80%81handler%E4%B8%8Econformance%E5%85%B1%E5%90%8C%E5%AE%88%E4%BD%8F.md)、[142-安全版本偏斜治理：为什么Claude Code不把CLI过旧、App过旧、session tag错位、secret grammar错版与transport代际竞争混成同一种版本问题](142-%E5%AE%89%E5%85%A8%E7%89%88%E6%9C%AC%E5%81%8F%E6%96%9C%E6%B2%BB%E7%90%86%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88Claude%20Code%E4%B8%8D%E6%8A%8ACLI%E8%BF%87%E6%97%A7%E3%80%81App%E8%BF%87%E6%97%A7%E3%80%81session%20tag%E9%94%99%E4%BD%8D%E3%80%81secret%20grammar%E9%94%99%E7%89%88%E4%B8%8Etransport%E4%BB%A3%E9%99%85%E7%AB%9E%E4%BA%89%E6%B7%B7%E6%88%90%E5%90%8C%E4%B8%80%E7%A7%8D%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98.md)、[145-安全偏斜处置移交协议：为什么弱层发现问题后不应越级执行，而应把算子权交给更强的signer层](145-%E5%AE%89%E5%85%A8%E5%81%8F%E6%96%9C%E5%A4%84%E7%BD%AE%E7%A7%BB%E4%BA%A4%E5%8D%8F%E8%AE%AE%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BC%B1%E5%B1%82%E5%8F%91%E7%8E%B0%E9%97%AE%E9%A2%98%E5%90%8E%E4%B8%8D%E5%BA%94%E8%B6%8A%E7%BA%A7%E6%89%A7%E8%A1%8C%EF%BC%8C%E8%80%8C%E5%BA%94%E6%8A%8A%E7%AE%97%E5%AD%90%E6%9D%83%E4%BA%A4%E7%BB%99%E6%9B%B4%E5%BC%BA%E7%9A%84signer%E5%B1%82.md)、[147-安全回执签字权：为什么receipt只能由持有pending ledger、schema context与lifecycle closure的signer签发](147-%E5%AE%89%E5%85%A8%E5%9B%9E%E6%89%A7%E7%AD%BE%E5%AD%97%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88receipt%E5%8F%AA%E8%83%BD%E7%94%B1%E6%8C%81%E6%9C%89pending%20ledger%E3%80%81schema%20context%E4%B8%8Elifecycle%20closure%E7%9A%84signer%E7%AD%BE%E5%8F%91.md)、[148-安全回执与完成分层：为什么receipt signer不能越级冒充completion signer](148-%E5%AE%89%E5%85%A8%E5%9B%9E%E6%89%A7%E4%B8%8E%E5%AE%8C%E6%88%90%E5%88%86%E5%B1%82%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88receipt%20signer%E4%B8%8D%E8%83%BD%E8%B6%8A%E7%BA%A7%E5%86%92%E5%85%85completion%20signer.md)。
+- `00-17`: 研究方法、总论、权限/沙箱、配置与受管环境、统一安全控制台导读。
+- `18-29`: 检测内核、控制台字段与卡片、宿主资格、对象协议与显式降级。
+- `30-69`: 真相源、账本、恢复闭环、清理纪律、词法、租约与 failure path。
+- `70-99`: 能力发布、状态编辑、恢复资格、默认路由与 reject semantics。
+- `100-138`: 完成权、字段生命周期、工程迁移、验证架构与制度化接口。
+- `139-150`: cleanup 契约、兼容迁移、版本偏斜、handoff、receipt/completion/finality/forgetting 分层。
 
-## 建议阅读路径
+## 推荐入口
 
-- 想先建立整体安全模型：`00 -> 01 -> 02 -> 03 -> 04 -> 07`
-- 想看统一安全控制台与宿主差异：`10 -> 13 -> 14 -> 23 -> 24 -> 29`
-- 想看恢复、续租与资格状态机：`50 -> 54 -> 65 -> 86 -> 96`
-- 想看工程验证与迁移制度：`112 -> 114 -> 116 -> 117 -> 125`
-- 想直接看 cleanup、skew、handoff 与 receipt/completion 分层：`139 -> 142 -> 145 -> 146 -> 147 -> 148`
+- [00-研究方法与可信边界](00-研究方法与可信边界.md)
+- [01-安全总论：Claude Code 不是单点沙箱，而是分层安全控制面](01-安全总论：Claude%20Code%20不是单点沙箱，而是分层安全控制面.md)
+- [14-安全控制面总图：从 trust 到 entitlement 的全链结构图谱](14-安全控制面总图：从%20trust%20到%20entitlement%20的全链结构图谱.md)
+- [18-安全检测技术内核：从危险模式识别到来源主权收口](18-安全检测技术内核：从危险模式识别到来源主权收口.md)
+- [54-安全恢复验证闭环：为什么用户执行修复命令不等于状态已恢复，必须由对应回读与signer关环](54-安全恢复验证闭环：为什么用户执行修复命令不等于状态已恢复，必须由对应回读与signer关环.md)
+- [70-安全多重窄门：为什么Claude Code不是先给全量能力再补权限，而是逐层借出能力](70-安全多重窄门：为什么Claude%20Code不是先给全量能力再补权限，而是逐层借出能力.md)
+- [116-安全工程迁移路线图：为什么这份研究版源码若要走向可持续验证系统，必须先固化边界，再分阶段迁移而不能一次性重构](116-安全工程迁移路线图：为什么这份研究版源码若要走向可持续验证系统，必须先固化边界，再分阶段迁移而不能一次性重构.md)
+- [147-安全回执签字权：为什么receipt只能由持有pending ledger、schema context与lifecycle closure的signer签发](147-安全回执签字权：为什么receipt只能由持有pending%20ledger、schema%20context与lifecycle%20closure的signer签发.md)
+- [148-安全回执与完成分层：为什么receipt signer不能越级冒充completion signer](148-安全回执与完成分层：为什么receipt%20signer不能越级冒充completion%20signer.md)
+- [149-安全完成与终局分层：为什么completion signer不能越级冒充finality signer](149-安全完成与终局分层：为什么completion%20signer不能越级冒充finality%20signer.md)
+- [150-安全终局与遗忘分层：为什么finality signer不能越级冒充forgetting signer](150-安全终局与遗忘分层：为什么finality%20signer不能越级冒充forgetting%20signer.md)
+- [安全专题附录索引](appendix/README.md)
+- [安全源码剖面索引](source-notes/README.md)
 
-## 快速入口
+## 什么时候先读正文，什么时候先读附录/源码剖面
 
-- 想直接看为什么看到 `response` 不等于配签收，以及谁才是真正的 receipt signer：`146 -> 147 -> appendix/131 -> source-notes/01`
-- 想直接看为什么 `receipt` 仍不等于 `completion`，以及不同 signer 到底最多能说到哪一层完成：`147 -> 148 -> appendix/132`
-- 想直接看为什么 even after `completion` 仍不等于 `finality`，以及哪些信号只签 turn-over、哪些才接近 future-readable truth：`148 -> 149 -> appendix/133 -> source-notes/02`
-- 想直接看为什么 even after `finality` 仍不等于 `forgetting`，以及哪些旧痕迹、重试资产和弱表面仍必须被保留：`149 -> 150 -> appendix/134`
-- 想直接看更贴近源码的回执账本剖面：`source-notes/01`
-- 想直接看更贴近源码的终局签字剖面：`source-notes/02`
+- 想理解安全控制面如何组织：先读 `00-29`
+- 想定位“当前真相从哪里来、为什么恢复不等于完成”：先读 `30-69`
+- 想看能力发布、状态编辑与恢复资格：先读 `70-99`
+- 想看验证、迁移与工程化落地：先读 `100-138`
+- 想直看 signer ladder、终局边界与遗忘边界：先读 `147 -> 148 -> 149 -> 150 -> appendix/131-134 -> source-notes/01-02`
+- 想快速查字段、词法、路由、签字权和速查表：直接去 [appendix/README.md](appendix/README.md)
+- 想追具体源码证据簇：直接去 [source-notes/README.md](source-notes/README.md)
 
-## 附录与源码剖面
+## 维护约定
 
-- [appendix/README.md](appendix/README.md)
-  只放速查索引、字段矩阵、状态语义和迁移检查表。
-- [source-notes/README.md](source-notes/README.md)
-  专门放单机制、单协议、单文件群的源码剖面。
+- README 只保留编号段和代表性入口，不再镜像全部 151 篇标题。
+- 深层速查和证据字典统一维护在 [appendix/README.md](appendix/README.md)。
+- 单机制、单协议、单文件群的源码剖面统一维护在 [source-notes/README.md](source-notes/README.md)。
+- 需要失败样本和恢复演练时，分别回到 [../casebooks/README.md](../casebooks/README.md) 与 [../playbooks/README.md](../playbooks/README.md)。
 
-## 和其他目录的关系
+## 相关目录
 
 - [../architecture/README.md](../architecture/README.md)
   更关心安全机制如何接线、如何进入状态机与恢复链。
