@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 更新《深度专题导航：Prompt、预算、对象、底盘与治理》《运行时契约、知识层与生态边界》，并同步更新开发文档，把旧深线接回 `84-87 / 82-84 / 99-102 / 77-79 / 73-75` 新主链，同时把“五个平面”继续压回三句高阶判断
 - 新增《真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路》，并同步更新 `philosophy/README`、`navigation/41`、总索引与开发文档，把源码先进性线从“为什么先进”继续收束到“怎样判断先进才算稳”
 - 新增《如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline》，并同步更新 `guides/30`、`guides/README`、`navigation/07`、`navigation/15`、`navigation/41`、总索引与开发文档，把“公开镜像如何稳当地判断源码质量”补成正式方法层，同时把旧 Prompt 审读页收回为桥接入口
 - 新增《请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object》《当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续》《one writable present验证失真反例：健康投影篡位、恢复资产越权与anti-zombie伪证》，并同步更新 `casebooks/README`、`navigation/39`、`navigation/40`、总索引与开发文档，把三张控制面图从“长期验证手册”继续下沉为“长期验证失真反例层”，同时保持正文与持久化记忆分层

@@ -5,7 +5,7 @@
 它主要回答五个问题：
 
 1. 想研究 prompt 魔力，应该从哪几章进入。
-2. 想理解安全、治理与省 token 的统一预算器，应该怎样读。
+2. 想理解当前世界准入主权、统一定价治理与省 token 设计，应该怎样读。
 3. 想把 workflow、task、worktree 当正式对象理解，应该怎样读。
 4. 想判断公开镜像为什么仍然先进，应该先看哪些 contract 和 chokepoint。
 5. 想真正把 Claude Code 用对，第一性原理实践应放在什么位置。
@@ -17,6 +17,17 @@
 - 为什么 Claude Code 的 prompt 看起来像“有魔力”。
 - 为什么它不是抄一段 system prompt 就能复刻。
 - 为什么工具 ABI、mailbox、channel 输入、cache break 都和 prompt 强度有关。
+
+先抓新主线：
+
+1. `09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+2. `philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`
+3. `architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md`
+4. `guides/99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object.md`
+5. `playbooks/77-请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归.md`
+6. `casebooks/73-请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object.md`
+
+再补旧细拆：
 
 稳定阅读顺序：
 
@@ -43,7 +54,7 @@
 
 这条线的核心结论是：
 
-- prompt 魔力来自装配顺序、工具 ABI、缓存边界、状态晚绑定、协作语法、辅助循环共享同一前缀资产，以及系统敢于用“稳定前缀 + 动态尾部 + 旁路 fork”保护整体确定性
+- Prompt 魔力来自请求装配控制面：主权链、历史链与继续链必须继续对同一个世界保持诚实；装配顺序、工具 ABI、缓存边界、状态晚绑定与旁路 fork 只是这条对象链的具体实现面
 
 如果问题进一步升级成：
 
@@ -55,7 +66,7 @@
 1. `architecture/54-从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放.md`
 2. `philosophy/41-渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明.md`
 
-## 2. 反扩张与预算实现深线
+## 2. 当前世界准入主权深线
 
 适合在这些问题下阅读：
 
@@ -63,6 +74,17 @@
 - 为什么治理设置、能力裁剪、budget continuation 与 prompt 稳定性应该放到同一张图里。
 - 为什么“省 token”首先在控制什么进入上下文，而不是在压缩句子。
 - 为什么运行时里需要多套预算机制，却仍共享同一第一性原理。
+
+先抓新主线：
+
+1. `09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+2. `philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md`
+3. `architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`
+4. `guides/100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md`
+5. `playbooks/78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md`
+6. `casebooks/74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续.md`
+
+再补旧细拆：
 
 稳定阅读顺序：
 
@@ -87,7 +109,7 @@
 
 这条线的核心结论是：
 
-- Claude Code 真正持续压制的是模型可达世界的无序扩张；预算器只是它在动作空间、权威空间、上下文空间与时间空间上的若干具体控制器
+- Claude Code 真正持续压制的是当前世界的免费扩张；预算器、权限、可见性与 continuation 只是它在动作空间、权威空间、上下文空间与时间空间上的具体定价器
 
 ## 3. 权威真相深线
 
@@ -188,7 +210,20 @@
 
 - 为什么热点大文件和成熟架构可以同时成立。
 - 为什么研究公开镜像时应该先找 contract，再看热点文件。
-- 公开镜像缺口到底该怎样被严谨叙述。
+- 为什么源码质量判断最终必须落到合法复杂度中心、边界可证与下一次重构仍有路。
+
+先抓新主线：
+
+1. `09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+2. `philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`
+3. `guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md`
+4. `philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`
+5. `philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`
+6. `architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md`
+7. `playbooks/79-one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归.md`
+8. `casebooks/75-one writable present验证失真反例：健康投影篡位、恢复资产越权与anti-zombie伪证.md`
+
+再补旧细拆：
 
 稳定阅读顺序：
 
@@ -211,7 +246,7 @@
 
 这条线的核心结论是：
 
-- Claude Code 值得学的不是“零技术债”，而是 contract-first、race-aware、runtime-first，以及把不变量收口进 chokepoint、authoritative surface 与 typed transition 的工程方向
+- Claude Code 值得学的不是“零技术债”，而是合法复杂度中心、contract-first、race-aware、runtime-first，以及把不变量收口进可证明边界，同时不给下一次重构关门
 
 ## 8. 可解释运行时深线
 
