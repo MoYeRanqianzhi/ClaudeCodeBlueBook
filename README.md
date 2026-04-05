@@ -2,39 +2,24 @@
 
 面向 `claude-code-source-code/` 的 Claude Code 蓝皮书工程。
 
-当前基于 `@anthropic-ai/claude-code` `v2.1.88` 的反编译源码进行结构分析，目标是把源码拆成可阅读、可验证、可持续迭代的文档体系，而不是只写一篇一次性的长文。
+仓库把源码研究拆成主线章节、专题目录和开发文档，避免把所有内容继续堆成一篇持续膨胀的长文。
 
-## 导航
+## 仓库结构
 
-- [bluebook/README.md](bluebook/README.md): 蓝皮书总索引
-- [bluebook/00-导读.md](bluebook/00-导读.md): 研究范围、方法、阅读路径
-- [bluebook/01-源码结构地图.md](bluebook/01-源码结构地图.md): 启动链路、核心模块、运行时结构
-- [bluebook/02-使用指南.md](bluebook/02-使用指南.md): 基于源码反推出的高价值使用方法
-- [bluebook/03-设计哲学.md](bluebook/03-设计哲学.md): 为什么 Claude Code 强，以及它依赖的设计选择
-- [bluebook/04-公开能力与隐藏能力.md](bluebook/04-公开能力与隐藏能力.md): public / gated / internal 能力边界
-- [bluebook/05-功能全景与API支持.md](bluebook/05-功能全景与API支持.md): 功能矩阵、命令面、SDK 面、MCP 面、远程面
-- [bluebook/06-第一性原理与苏格拉底反思.md](bluebook/06-第一性原理与苏格拉底反思.md): 从第一性原理回看 Claude Code 与蓝皮书自身
-- [bluebook/api/README.md](bluebook/api/README.md): 接口与协议索引
-- [bluebook/architecture/README.md](bluebook/architecture/README.md): 架构深挖索引
-- [bluebook/guides/README.md](bluebook/guides/README.md): 使用专题索引
-- [bluebook/philosophy/README.md](bluebook/philosophy/README.md): 哲学专题索引
-- [docs/README.md](docs/README.md): 持久化记忆与开发文档索引
-- [docs/development/research-log.md](docs/development/research-log.md): 研究日志、证据锚点、后续待办
-- [docs/development/03-反思与迭代准则.md](docs/development/03-反思与迭代准则.md): 写作约束与下一轮迭代方法
-- [docs/changelog.md](docs/changelog.md): 文档版本记录
+- [bluebook/README.md](<bluebook/README.md>): 蓝皮书总索引。包含 `00-08` 主线、兼容别名页，以及 `api`、`architecture`、`casebooks`、`guides`、`navigation`、`philosophy`、`playbooks`、`risk`、`security` 九个专题目录。
+- [docs/README.md](<docs/README.md>): 研究方法、证据索引、长期记忆、研究日志和变更记录。
+- `claude-code-source-code/`: 本地源码镜像，仅作对照分析，不承担本仓库正文。
+- [Agents.md](<Agents.md>): 协作约束与 agent 工作说明。
+- [LICENSE](<LICENSE>): 项目许可证。
 
-## 当前范围
+## 从哪里开始读
 
-- 入口与启动: `entrypoints/cli.tsx`、`main.tsx`、`entrypoints/init.ts`
-- 核心 agent loop: `QueryEngine.ts`、`query.ts`
-- 工具与权限: `Tool.ts`、`tools.ts`、`utils/permissions/*`
-- 技能与命令: `skills/*`、`commands.ts`、`tools/SkillTool/*`
-- 扩展生态: `services/mcp/*`、`plugins/*`
-- 多 Agent 与远程: `tools/AgentTool/*`、`remote/*`、`bridge/*`、`coordinator/*`
+- 想先建立整体判断：从 [bluebook/00-导读.md](<bluebook/00-导读.md>) 开始，再读 [bluebook/01-源码结构地图.md](<bluebook/01-源码结构地图.md>)、[bluebook/03-设计哲学.md](<bluebook/03-设计哲学.md>)、[bluebook/07-运行时契约、知识层与生态边界.md](<bluebook/07-运行时契约、知识层与生态边界.md>)。
+- 想按专题深入：直接进入 [bluebook/README.md](<bluebook/README.md>)，再选择 `api`、`architecture`、`guides`、`security` 或 `risk`。
+- 想核对研究依据和写作过程：看 [docs/development/02-证据索引.md](<docs/development/02-证据索引.md>)、[docs/development/research-log.md](<docs/development/research-log.md>)。
 
-## 工作原则
+## 当前约定
 
-- 所有关键结论都尽量指向具体源码文件与行号。
-- 蓝皮书正文写入 `bluebook/`，持久化记忆与开发文档写入 `docs/`。
-- `claude-code-source-code/` 保持在 `.gitignore` 中，不直接纳入本仓库版本管理。
-- 正式读者主线以 `bluebook/` 为准，`docs/` 只保留开发与记忆相关内容。
+- 正式蓝皮书正文只写入 `bluebook/`。
+- `docs/` 只保留研究方法、开发文档和记忆材料。
+- `claude-code-source-code/` 作为对照镜像使用，不在正文里重复抄录。
