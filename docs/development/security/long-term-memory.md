@@ -7,6 +7,7 @@
 - `bluebook/security/source-notes/` 只承载单机制源码剖面，不承载研究推进日志。
 - 安全专题后续候选、目录编排判断与编辑规则统一沉淀到 `docs/development/security/`。
 - `154` 已经稳定写出一条新边界：`read-path filtering`、`semantic removal`、`local rewrite`、`workspace rewind delete` 与 `retention cleanup` 不是同一种删除，`audit close` 也因此不能越级冒充 `irreversible erasure`。
+- `155` 已经稳定写出另一条治理边界：`cleanupPeriodDays` 的声明、settings merge、intent honesty guard、housekeeping scheduler 与 destructive executor 不是同一层，`irreversible erasure` 也因此不能越级冒充 `retention governance`。
 
 ## 本轮已净化的正文段
 
@@ -24,14 +25,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-154`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure` signer ladder
+- `147-155`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance` signer/governor ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `155`
-  方向：`irreversible erasure` 仍不等于 `retention-policy sovereignty / destruction governance`
-  原因：`154` 已经证明“退出 audit world”不等于“载体被 destroy”；而 `cleanup.ts`、`backgroundHousekeeping.ts` 与 settings schema 又说明真正 delete/rm 的时机其实受 `cleanupPeriodDays + background housekeeping` 控制。下一层最自然的问题因此变成：谁配定义保留期，谁只配执行删除，谁又只是在读路径里做过滤却不配宣称自己掌握 destruction policy
-  证据起点：`src/utils/cleanup.ts` 的 `getCutoffDate/cleanupOldSessionFiles/cleanupOldFileHistoryBackups`，`src/utils/backgroundHousekeeping.ts` 的后台调度，以及 `src/utils/settings/types.ts` 对 `cleanupPeriodDays` 的语义定义
+- 候选 `156`
+  方向：`retention governor` 仍不等于 `retention-enforcement-honesty signer`
+  原因：`155` 已经证明保留期治理被拆成 declaration、precedence、guard、scheduler 与 executor，但当前可见源码里 schema/tip 对 `cleanupPeriodDays = 0` 的“startup delete”文案，与 `main.tsx / REPL.tsx / backgroundHousekeeping.ts` 所展示的延迟且带 entrypoint gating 的执行链之间仍存在值得继续形式化的诚实性张力。下一层最自然的问题因此变成：谁配宣布 retention policy 在当前 session mode 下已经真正被执行，而不是仅仅被声明
+  证据起点：`src/utils/settings/types.ts`、`src/utils/settings/validationTips.ts`、`src/main.tsx`、`src/screens/REPL.tsx` 与 `src/utils/backgroundHousekeeping.ts`
 
 ## 持续约束
 

@@ -7,6 +7,14 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A077. 不可逆销毁之后仍要继续分出保留期治理：Claude Code 已把 retention declaration、merge、guard、scheduler 与 executor 拆成多层主权
+
+- 本轮开始前再次按要求检查主分支更新：执行 `git fetch origin main` 后确认 `origin/main` 的最新内容已经被当前研究分支吸收，因此无需额外 merge，即可继续在当前 worktree 深挖安全主线。
+- 本轮新增 `155-安全不可逆销毁与保留期主权分层`，核心判断是：`154` 已经证明“destroy 不等于 policy”，而继续看 `settings/types.ts + settings/settings.ts + backgroundHousekeeping.ts + cleanup.ts + main.tsx + REPL.tsx` 会发现，Claude Code 其实已把 retention governance 拆成 declaration、precedence、honesty guard、scheduler 与 executor 五层。也就是说，会 `unlink/rm` 的代码并不天然拥有“定义保留期、决定何时执行、决定 validation 出错时是否还能删”的主权。
+- 本轮最关键的源码证据有四组。第一组是 declaration/merge：`settings/types.ts:325-332` 把 `cleanupPeriodDays` 的默认值、零值语义与“startup delete”文案先写进 schema；`settings/settings.ts:798-820` 又说明 effective settings 走 `user -> project -> local -> policy` 的通用 merge 顺序，这意味着 retention governance 当前首先服从 general settings sovereignty，而不是被单独拔高成 trusted-only 的 destructive-policy lane。第二组是 trust-level 对照：同一个 `settings.ts` 对危险权限确认、auto-mode opt-in 等敏感设置明确排除 `projectSettings`，但 `cleanupPeriodDays` 当前可见实现并没有这种排除，这说明 retention governance 的加固等级仍低于 permission governance。第三组是 honesty guard：`settings.ts:871-875,984-1015` 与 `cleanup.ts:575-584` 表明一旦用户显式设置了 `cleanupPeriodDays` 且当前 settings validation 失败，系统会直接跳过 cleanup，而不是让默认 30 天偷偷接管。第四组是 scheduler/executor：`main.tsx:2811-2818`、`REPL.tsx:3903-3906` 与 `backgroundHousekeeping.ts:25-29,43-60` 说明 housekeeping 的启动受 entrypoint、first submit、delay 与 recent activity gating 影响；`cleanup.ts:155-257,305-347,575-595` 则只在这些门全部放行后，才真正对 old session files、file-history backups 等做 `unlink/rm`。
+- 本轮同时单开 `source-notes/06-cleanup、backgroundHousekeeping与settings的保留期治理边界`，把 retention declaration、merge precedence、intent honesty、scheduler 与 executor 单独钉成一组源码剖面；并配套 `appendix/139-安全不可逆销毁与保留期主权分层速查表`，把不同 layer 的 current authority、execution gate、forbidden overclaim 与 design implication 压成速查矩阵。这样 `155` 不是停在抽象口号，而是把“删文件的函数”“说保留期的 schema”“决定何时启动 cleanup 的 scheduler”严格分开。
+- 本轮还暴露出下一层非常值得继续深化的张力：`settings/types.ts` 与 `validationTips.ts` 都把 `cleanupPeriodDays = 0` 描述成“existing transcripts are deleted at startup”，但当前可见执行链却是 `main.tsx / REPL.tsx -> backgroundHousekeeping -> delayed cleanup`。这不必立刻下结论说是 bug，但足以说明 declaration truth 与 runtime enforcement truth 仍然没有被压平成同一 signer 层。所以下一候选自然推进到 `156`：继续追问谁配宣布“retention policy 已在当前 session mode 下真实执行”，而不是仅仅被声明。
+
 ### A076. 审计关闭之后仍要继续分出不可逆销毁：Claude Code 已把读取侧过滤、局部改写、工作区回滚删除与保留期销毁拆成不同控制面
 
 - 本轮开始前再次执行了主分支同步检查：在当前 worktree 中运行 `git fetch origin main` 后确认 `origin/main` 没有比当前研究分支更新的内容，而当前分支已经包含本地 `main`，因此本轮可直接在既有安全研究基线上继续推进。

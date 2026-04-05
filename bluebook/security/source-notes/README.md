@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 5 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 6 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -24,6 +24,7 @@
 3. [03-bridgePointer、sessionRestore与conversationRecovery的续作责任边界](03-bridgePointer%E3%80%81sessionRestore%E4%B8%8EconversationRecovery%E7%9A%84%E7%BB%AD%E4%BD%9C%E8%B4%A3%E4%BB%BB%E8%BE%B9%E7%95%8C.md)
 4. [04-sessionStorage、sessionRestore与fileHistory的审计关闭边界](04-sessionStorage%E3%80%81sessionRestore%E4%B8%8EfileHistory%E7%9A%84%E5%AE%A1%E8%AE%A1%E5%85%B3%E9%97%AD%E8%BE%B9%E7%95%8C.md)
 5. [05-sessionStoragePortable、sessionStorage、fileHistory与cleanup的不可逆销毁边界](05-sessionStoragePortable%E3%80%81sessionStorage%E3%80%81fileHistory%E4%B8%8Ecleanup%E7%9A%84%E4%B8%8D%E5%8F%AF%E9%80%86%E9%94%80%E6%AF%81%E8%BE%B9%E7%95%8C.md)
+6. [06-cleanup、backgroundHousekeeping与settings的保留期治理边界](06-cleanup%E3%80%81backgroundHousekeeping%E4%B8%8Esettings%E7%9A%84%E4%BF%9D%E7%95%99%E6%9C%9F%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
