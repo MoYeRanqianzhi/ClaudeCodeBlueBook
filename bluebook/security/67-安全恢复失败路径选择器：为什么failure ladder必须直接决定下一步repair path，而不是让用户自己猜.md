@@ -291,16 +291,6 @@ failure taxonomy 在这里已经直接决定了动作语义：
 
 `系统已经知道 failure 根因不同，却仍让用户自己在多个 repair path 里盲猜。`
 
-### 8.4 这一章之后还缺什么
-
-还缺一张更短的路径选择器矩阵：
-
-`failure tier -> dominant repair path -> forbidden wrong path`
-
-也就是说，  
-下一步最自然的延伸就是：
-
-`appendix/51-安全恢复失败路径选择器速查表`
 
 ## 9. 结语
 

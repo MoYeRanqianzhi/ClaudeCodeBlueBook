@@ -257,16 +257,6 @@ auth_failed 还会主动触发 `reconnectSession()`，
 
 `系统在没有持续续租成功的情况下，继续保留旧的绿色词。`
 
-### 8.4 这一章之后还缺什么
-
-还缺一张更短的续租矩阵：
-
-`lexicon -> renewal signal -> cadence -> failure branch`
-
-也就是说，  
-下一步最自然的延伸就是：
-
-`appendix/49-安全恢复续租信号速查表`
 
 ## 9. 结语
 

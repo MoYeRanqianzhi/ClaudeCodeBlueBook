@@ -1,6 +1,6 @@
 # 开发与记忆文档
 
-`docs/` 只放研究过程、长期记忆和版本记录，不承载蓝皮书正文。正文去记忆化批次、目录治理调整、待办候选与研究推进摘要也统一留在这里。当前目录由根目录 2 篇文档和 `development/` 下 6 篇开发材料组成。
+`docs/` 只放研究过程、长期记忆和版本记录，不承载蓝皮书正文。正文去记忆化批次、目录治理调整、待办候选与研究推进摘要也统一留在这里。当前目录由根目录 2 篇文档、`development/` 下 6 篇开发材料，以及 `development/security/` 下 3 篇安全专题隔离记忆文档组成。
 
 ## 当前内容
 
@@ -11,6 +11,9 @@
 - [development/03-反思与迭代准则.md](development/03-反思与迭代准则.md): 写作约束与迭代方法
 - [development/long-term-memory.md](development/long-term-memory.md): 长期记忆与持续研究约束
 - [development/research-log.md](development/research-log.md): 研究日志、证据回写与待办
+- [development/security/README.md](development/security/README.md): 安全专题隔离记忆入口
+- [development/security/editorial-boundary.md](development/security/editorial-boundary.md): 安全专题正文与记忆边界
+- [development/security/long-term-memory.md](development/security/long-term-memory.md): 安全专题长期记忆与后续候选
 
 ## 何时看这里
 
@@ -23,4 +26,5 @@
 
 - 正式章节一律写入 `bluebook/`
 - 研究过程、长期记忆、证据索引与变更记录一律写入 `docs/`
+- 专题级推进记忆优先写入对应 `docs/development/<topic>/`
 - `README` 只保留稳定入口，不重复正文目录
