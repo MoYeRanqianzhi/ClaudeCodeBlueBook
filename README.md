@@ -1,40 +1,50 @@
 # Claude Code Blue Book
 
-面向 `claude-code-source-code/` 的 Claude Code 蓝皮书工程。
+面向 `claude-code-source-code/` 的 Claude Code 蓝皮书工程。这个仓库把源码研究拆成主线章节、专题索引、失败样本、运行手册和开发记忆，而不是维护一篇持续膨胀的长文。
 
-当前基于 `@anthropic-ai/claude-code` `v2.1.88` 的反编译源码进行结构分析，目标是把源码拆成可阅读、可验证、可持续迭代的文档体系，而不是只写一篇一次性的长文。
+## 仓库结构
 
-## 导航
+- [bluebook/README.md](bluebook/README.md): 蓝皮书总索引。根目录含 `00-08` 主线 9 篇和 3 个兼容别名页；专题目录包括 `api/` 92 篇、`architecture/` 81 篇、`navigation/` 99 篇、`guides/` 95 篇、`philosophy/` 83 篇、`casebooks/` 66 篇、`playbooks/` 73 篇、`risk/` 65 篇、`security/` 139 篇正文与 `security/appendix/` 122 篇速查表。
+- [docs/README.md](docs/README.md): 开发与记忆文档。`docs/` 根目录 2 篇，`development/` 下 6 篇研究方法、证据索引与研究日志。
+- `claude-code-source-code/`: 反编译/镜像源码参考，不是蓝皮书正文。
+- 根目录辅助文档：`Agents.md`、`cgit.md`、`cmainloop.md`、`crisk.md`、`cuserbook.md` 是协作或专题备忘，不替代主线索引。
 
-- [bluebook/README.md](bluebook/README.md): 蓝皮书总索引
-- [bluebook/00-导读.md](bluebook/00-导读.md): 研究范围、方法、阅读路径
-- [bluebook/01-源码结构地图.md](bluebook/01-源码结构地图.md): 启动链路、核心模块、运行时结构
-- [bluebook/02-使用指南.md](bluebook/02-使用指南.md): 基于源码反推出的高价值使用方法
-- [bluebook/03-设计哲学.md](bluebook/03-设计哲学.md): 为什么 Claude Code 强，以及它依赖的设计选择
-- [bluebook/04-公开能力与隐藏能力.md](bluebook/04-公开能力与隐藏能力.md): public / gated / internal 能力边界
-- [bluebook/05-功能全景与API支持.md](bluebook/05-功能全景与API支持.md): 功能矩阵、命令面、SDK 面、MCP 面、远程面
-- [bluebook/06-第一性原理与苏格拉底反思.md](bluebook/06-第一性原理与苏格拉底反思.md): 从第一性原理回看 Claude Code 与蓝皮书自身
-- [bluebook/api/README.md](bluebook/api/README.md): 接口与协议索引
-- [bluebook/architecture/README.md](bluebook/architecture/README.md): 架构深挖索引
-- [bluebook/guides/README.md](bluebook/guides/README.md): 使用专题索引
-- [bluebook/philosophy/README.md](bluebook/philosophy/README.md): 哲学专题索引
-- [docs/README.md](docs/README.md): 持久化记忆与开发文档索引
-- [docs/development/research-log.md](docs/development/research-log.md): 研究日志、证据锚点、后续待办
-- [docs/development/03-反思与迭代准则.md](docs/development/03-反思与迭代准则.md): 写作约束与下一轮迭代方法
-- [docs/changelog.md](docs/changelog.md): 文档版本记录
+## 主线入口
 
-## 当前范围
+- [bluebook/README.md](bluebook/README.md)
+- [bluebook/00-导读.md](bluebook/00-导读.md)
+- [bluebook/01-源码结构地图.md](bluebook/01-源码结构地图.md)
+- [bluebook/02-使用指南.md](bluebook/02-使用指南.md)
+- [bluebook/03-设计哲学.md](bluebook/03-设计哲学.md)
+- [bluebook/04-公开能力与隐藏能力.md](bluebook/04-公开能力与隐藏能力.md)
+- [bluebook/05-功能全景与API支持.md](bluebook/05-功能全景与API支持.md)
+- [bluebook/06-第一性原理与苏格拉底反思.md](bluebook/06-第一性原理与苏格拉底反思.md)
+- [bluebook/07-运行时契约、知识层与生态边界.md](bluebook/07-运行时契约、知识层与生态边界.md)
+- [bluebook/08-能力全集、公开度与成熟度矩阵.md](bluebook/08-能力全集、公开度与成熟度矩阵.md)
 
-- 入口与启动: `entrypoints/cli.tsx`、`main.tsx`、`entrypoints/init.ts`
-- 核心 agent loop: `QueryEngine.ts`、`query.ts`
-- 工具与权限: `Tool.ts`、`tools.ts`、`utils/permissions/*`
-- 技能与命令: `skills/*`、`commands.ts`、`tools/SkillTool/*`
-- 扩展生态: `services/mcp/*`、`plugins/*`
-- 多 Agent 与远程: `tools/AgentTool/*`、`remote/*`、`bridge/*`、`coordinator/*`
+## 专题入口
+
+- [bluebook/navigation/README.md](bluebook/navigation/README.md): 阅读地图、交叉反查与机制回灌导航
+- [bluebook/architecture/README.md](bluebook/architecture/README.md): 运行时结构、状态机与控制面
+- [bluebook/api/README.md](bluebook/api/README.md): 命令、工具、状态、宿主与扩展协议
+- [bluebook/guides/README.md](bluebook/guides/README.md): 使用方法、模板、审读清单与构建手册
+- [bluebook/philosophy/README.md](bluebook/philosophy/README.md): 第一性原理与源码先进性解释
+- [bluebook/casebooks/README.md](bluebook/casebooks/README.md): 失败样本、反例与失真原型
+- [bluebook/playbooks/README.md](bluebook/playbooks/README.md): 回归、演练、rollout 与运行手册
+- [bluebook/risk/README.md](bluebook/risk/README.md): 风控、账号治理、恢复与入口语义差
+- [bluebook/security/README.md](bluebook/security/README.md): 安全控制面正文
+- [bluebook/security/appendix/README.md](bluebook/security/appendix/README.md): 安全速查表与证据附录
+
+## 推荐阅读
+
+- 初次进入：`README -> bluebook/README -> 00 -> 01 -> 03 -> 08`
+- 想高效使用 Claude Code：`02 -> guides/README`
+- 想接宿主或控制协议：`05 -> api/README -> architecture/README`
+- 想看安全与风控：`security/README -> risk/README`
+- 想看失败样本和演练：`casebooks/README -> playbooks/README`
 
 ## 工作原则
 
-- 所有关键结论都尽量指向具体源码文件与行号。
-- 蓝皮书正文写入 `bluebook/`，持久化记忆与开发文档写入 `docs/`。
-- `claude-code-source-code/` 保持在 `.gitignore` 中，不直接纳入本仓库版本管理。
-- 正式读者主线以 `bluebook/` 为准，`docs/` 只保留开发与记忆相关内容。
+- 结论尽量回到具体源码文件、运行时对象和可复查证据。
+- `bluebook/` 负责正式主线与专题结论，`docs/` 只负责开发与记忆。
+- 总 README 只保留一级路由；深层交叉索引下沉到各目录 README 和 `bluebook/navigation/`。
