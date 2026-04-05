@@ -7,6 +7,30 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A072. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真层
+
+- Prompt refinement correction refinement execution 即使已经被 `playbooks/71` 压成共同 `repair card`、共同 `reject order` 与正式 `reopen drill`，如果团队不能继续解释这些执行最常怎样重新退回 smooth transcript、summary handoff、worker prose 与 wording 崇拜，Prompt 魔力就仍会继续围绕更像真相的解释材料工作；这说明 Prompt 线下一层最值钱的不是继续补执行口号，而是把精修执行写成新的 casebook/distortion layer。
+- `buildEffectiveSystemPrompt()`、`normalizeMessagesForAPI()`、`ensureToolResultPairing()`、`promptCacheBreakDetection` 与 `checkTokenBudget()` 共同说明，Prompt 真相先是 authority、protocol truth、合法 forgetting 与继续资格对象，而不是 smooth transcript；这也说明下一层最值钱的不是继续夸 Prompt 魔力，而是解释它最常怎样被伪造。
+- Governance refinement correction refinement execution 即使已经被 `playbooks/72` 压成共同 `repair card`、共同 `reject order` 与正式 `reopen drill`，如果团队不能继续解释这些执行最常怎样重新退回 calmer mode、usage dashboard、approval calmness、default continue 与 blurred liability owner，安全设计与省 token 设计就仍会继续围绕运营感觉工作；这说明治理线下一层最值钱的不是继续补执行口号，而是把精修执行写成新的 casebook/distortion layer。
+- `controlSchemas`、`pending_action`、`get_context_usage`、classifier telemetry、`sessionIngress` 与 `checkTokenBudget()` 共同说明，安全与省 token 设计真正共享的是“拒绝未定价扩张”的对象链，而不是更保守的语气；这也说明下一层最值钱的是解释这种同构最常怎样被拆散。
+- Structure refinement correction refinement execution 即使已经被 `playbooks/73` 压成共同 `repair card`、共同 `reject order` 与正式 `reopen drill`，如果团队不能继续解释这些执行最常怎样重新退回 pointer、telemetry、目录整洁度、reconnect 成功率与作者说明，源码先进性就仍会继续围绕更像先进系统的外观工作；这说明结构线下一层最值钱的不是继续补执行口号，而是把精修执行写成新的 casebook/distortion layer。
+- `sessionRestore`、`cleanupStaleAgentWorktrees()`、`hasWorktreeChanges()`、`bridgePointer` 与 transport 边界共同说明，结构先进性真正成立于 authority、lineage、merge、writeback、anti-zombie 与 fail-closed 的对象诚实，而不是 reconnect 成功率与 pointer 健康感；这也说明下一层最值钱的是解释这些对象最常怎样被伪像取代。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution 之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真层”：
+  - `navigation/100` 负责统一入口。
+  - `casebooks/67-69` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution 的假 `repair card`、假共同 `reject` 语义与假 `reopen liability` 反例。
+- 这也意味着 `98-100` 应被视为一条连续小循环，而不是三篇并列文章。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补反例标签，而是考虑新的 `guides/96-98`，把这些失真重新压回固定顺序、共同 reject 升级路径与改写模板骨架。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+
 ### A071. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行层
 
 - Prompt refinement correction repair protocol 即使已经被 `api/90` 压成 authority chain、protocol truth、repair attestation 与 long-horizon reopen liability 的共享协议层，如果团队不能继续把这些对象运行成同一张 cross-consumer `repair card`、同一条共同 `reject order` 与正式 `reopen drill`，Prompt 魔力就仍会继续围绕 UI transcript、repair prose、handoff packet 与未综合的 worker prose 工作；这说明 Prompt 线下一层最值钱的不是继续补协议字段，而是把 repair protocol 压成新的 playbook execution layer。

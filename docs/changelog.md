@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 新增《宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真导航：Prompt、治理与结构 refinement correction refinement execution 如何重新退回假 repair card、假共同 reject 与假 reopen 责任演练》《Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假repair card、假共同reject语义与假reopen liability》《治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假repair card、假共同reject语义与假reopen liability》《结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假repair card、假共同reject语义与假reopen liability》，并同步回写主索引、导航/API/使用专题/运营/案例库 README 与开发文档，把蓝皮书从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement correction refinement distortion casebook”层
 - 新增《宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行导航：Prompt、治理与结构 refinement correction repair protocol 如何进入 repair card、共同 reject 顺序与 reopen 演练》《Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：repair card、共同 reject order 与 reopen drill》《治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：repair card、共同 reject order 与 reopen drill》《结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：repair card、共同 reject order 与 reopen drill》，并同步回写主索引、导航/API/使用专题/运营/案例库 README 与开发文档，把蓝皮书从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”层
 
 ## 2026-04-03

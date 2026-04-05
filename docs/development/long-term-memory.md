@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement correction refinement distortion casebook”层。
+- 新增结论：
+  - Prompt refinement correction refinement execution 如果要真正成立，不能只让 cross-consumer `repair card` 存在，还要防止它退回 smooth transcript、summary handoff、worker prose 与 wording 崇拜；共同 `reject order` 一旦不再围绕同一个编译对象，Prompt 魔力就会退回为更像真相的解释材料。
+  - 治理 refinement correction refinement execution 如果要真正成立，不能只让 cross-consumer `repair card` 存在，还要防止它退回 calmer mode、usage dashboard、approval calmness 与默认继续惯性；共同 `reject order` 一旦不再围绕同一个统一定价对象，安全设计与省 token 设计就会重新分裂成两套感觉。
+  - 结构 refinement correction refinement execution 如果要真正成立，不能只让 cross-consumer `repair card` 存在，还要防止它退回 pointer、telemetry、目录整洁度、reconnect 成功率与作者说明；共同 `reject order` 一旦不再围绕同一个 authority/merge/fail-closed 对象链，源码先进性就会退回更像先进系统的外观。
+- 新增目录责任：
+  - `navigation/100` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真入口。
+  - `casebooks/67-69` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution 的假 `repair card`、假共同 `reject` 语义与假 `reopen liability` 反例。
+- 当前新的写作约束：
+  - `casebooks/67-69` 只表示 correction-of-correction rewrite correction refinement correction refinement execution distortion，不再回头重写 `playbooks/71-73` 的执行顺序。
+  - `74-100` 应被持续当成一条连续小循环来写，而不是二十七篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/96-98`，把这一层失真重新压回固定顺序、共同 reject 升级路径与改写模板骨架。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”层。
 - 新增结论：
   - Prompt refinement correction repair protocol 如果要真正被长期共同执行，不能只保留 authority chain、protocol truth 与 repair attestation 的对象名，还要把它们继续运行成同一张 cross-consumer `repair card`、同一条共同 `reject order` 与正式 `reopen drill`；否则 Prompt 魔力仍会从编译对象退回 UI transcript、repair prose 与 handoff packet。

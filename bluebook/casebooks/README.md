@@ -82,6 +82,9 @@
 64. [64-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行反例：假repair card、假protocol truth与假reopen liability](64-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87repair%20card%E3%80%81%E5%81%87protocol%20truth%E4%B8%8E%E5%81%87reopen%20liability.md)
 65. [65-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行反例：假repair card、假pricing causality与假reopen liability](65-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87repair%20card%E3%80%81%E5%81%87pricing%20causality%E4%B8%8E%E5%81%87reopen%20liability.md)
 66. [66-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行反例：假repair card、假fresh merge与假reopen liability](66-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87repair%20card%E3%80%81%E5%81%87fresh%20merge%E4%B8%8E%E5%81%87reopen%20liability.md)
+67. [67-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假repair card、假共同reject语义与假reopen liability](67-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87repair%20card%E3%80%81%E5%81%87%E5%85%B1%E5%90%8Creject%E8%AF%AD%E4%B9%89%E4%B8%8E%E5%81%87reopen%20liability.md)
+68. [68-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假repair card、假共同reject语义与假reopen liability](68-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87repair%20card%E3%80%81%E5%81%87%E5%85%B1%E5%90%8Creject%E8%AF%AD%E4%B9%89%E4%B8%8E%E5%81%87reopen%20liability.md)
+69. [69-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假repair card、假共同reject语义与假reopen liability](69-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87repair%20card%E3%80%81%E5%81%87%E5%85%B1%E5%90%8Creject%E8%AF%AD%E4%B9%89%E4%B8%8E%E5%81%87reopen%20liability.md)
 
 ## 按目标阅读
 
@@ -169,6 +172,7 @@
 - `../navigation/97 -> ../guides/93-95` 继续回答“怎样把这些 refinement correction execution 失真重新压回固定 refinement correction 顺序、拒收升级路径与改写模板骨架”。
 - `../navigation/98 -> ../api/90-92` 继续回答“怎样把这些 refinement correction fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
 - `../navigation/99 -> ../playbooks/71-73` 继续回答“怎样把这些 refinement correction repair protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练”。
-- 再往下一层，应由 `../navigation/100 -> ../casebooks/67-69` 继续回答“为什么这些 refinement correction refinement execution 明明已经存在，仍会重新退回假 repair card、假共同 reject 顺序与假 reopen 责任演练”。
+- `../navigation/100 -> 67-69` 继续回答“为什么这些 refinement correction refinement execution 明明已经存在，仍会重新退回假 repair card、假共同 reject 顺序与假 reopen 责任演练”。
+- 再往下一层，应由 `../navigation/101 -> ../guides/96-98` 继续回答“怎样把这些 refinement correction refinement execution 失真重新压回固定顺序、共同 reject 升级路径与改写模板骨架”。
 - 再往下一层，应由 `../navigation/29 -> ../guides/39-41` 继续回答“怎样把这些 drift 原型编译成 validator / linter / reject rule”。
 - `docs/` 仍只承载项目自己的开发记忆，不承载蓝皮书正文。
