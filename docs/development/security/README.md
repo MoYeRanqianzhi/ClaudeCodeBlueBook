@@ -12,6 +12,7 @@
 
 - [editorial-boundary.md](editorial-boundary.md): 正文、附录、源码剖面与记忆层的边界规则
 - [long-term-memory.md](long-term-memory.md): 安全专题的长期记忆与当前候选
+- [../research-log.md](../research-log.md): 跨轮研究流水账与每轮新增证据摘要
 
 ## 和 `bluebook/security/` 的分工
 

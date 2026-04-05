@@ -7,6 +7,14 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A081. 载体家族宪法之后仍要继续分出制度理由：Claude Code 当前不只活在多宪法世界，还活在多理由世界；其中 plans family 已开始暴露 rationale drift
+
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 的最新内容已经被当前研究分支吸收，因此无需额外 merge，可直接在当前 worktree 上继续推进安全主线。
+- 本轮新增 `159-安全载体家族宪法与制度理由分层`，核心判断是：`158` 已经证明不同 artifact family 当前服从不同 cleanup constitution，但继续看 `diskOutput.ts + filesystem.ts + toolResultStorage.ts + sessionStorage.ts + plans.ts + sessionEnvironment.ts + fileHistory.ts + cleanup.ts` 会发现，更深层的问题其实不是“它们现在落在哪种 cleanup law”，而是“这些 law 为什么成立，以及当前实现是否仍然忠于这些理由”。也就是说，`artifact-family cleanup constitution signer` 仍不等于 `artifact-family cleanup rationale signer`。
+- 本轮最硬的源码证据有四组。第一组是 live-interference rationale：`diskOutput.ts:33-55` 不只把 task outputs 定到 `getProjectTempDir()/sessionId/tasks`，还把防止 concurrent sessions clobber 写进注释；`filesystem.ts:381-423,1499-1506,1645-1652,1676-1684` 又把 scratchpad 锁到 current-session path，并分别给 current-session read/write 绿灯。第二组是 continuity / inspection rationale：`toolResultStorage.ts:94-118` 把 tool-results 放在 `projectDir/sessionId/tool-results`，`sessionStorage.ts:198-215` 把 transcripts/casts 放到 `projectDir/<session>.jsonl/.cast`，`cleanup.ts:155-257` 以 project tree sweep 它们，说明这两类 family 的第一职责更像 persisted inspection 与 session continuity，而不是纯 temp-dir locality。第三组是 rationale drift 的关键证据：`plans.ts:79-110` 允许 `plansDirectory` 相对项目根自定义，`filesystem.ts:245-254,1645-1652` 又只把 current-session plan file 视为显式可读对象，`plans.ts:164-233` 还会在 resume 时主动恢复 plan file；但 `cleanup.ts:300-303` 的 `cleanupOldPlanFiles()` 仍然只扫 `~/.claude/plans`。这说明 plans family 的 storage rationale 已经允许 project-root world，而 cleanup rationale 仍停留在 default home-root world。第四组是 restore / replay rationale：`fileHistory.ts:951-957` 把 backups 放到 `~/.claude/file-history/<sessionId>/`，`sessionEnvironment.ts:15-30,60-134` 把 hook env scripts 放到 `~/.claude/session-env/<sessionId>/` 并在运行时重组加载，`cleanup.ts:305-387` 又分别按 session dir mtime 清理两者，说明这两个 family 更像 home-root per-session restore / replay kits。
+- 本轮因此同步补入 `appendix/143-安全载体家族宪法与制度理由分层速查表` 与 `source-notes/10-plans、sessionEnvironment与fileHistory的清理制度理由与漂移边界`。这样 `159` 不再停留在 “different constitutions exist” 的层面，而是第一次把 primary risk object、reader scope、recovery duty、host visibility 与 rationale drift 压成可直接回查的制度矩阵，并把 plans family 的理由漂移单独钉成一篇可复用的源码剖面。
+- 这也把下一候选自然推进到 `160`：既然 `159` 已经证明 Claude Code 进入了多理由世界，而且这些理由现在仍散落在 path、permission、resume、comment 与 cleanup helper 的组合里，那么下一层最值得继续追问的就不再只是 “为什么这些 family 应该不同”，而是 “谁来把这些理由正式对象化”。也就是：`artifact-family cleanup rationale signer` 仍不等于 `artifact-family cleanup metadata signer`，需要继续研究 family duty、reader scope、recovery duty、cleanup root 与 drift check 是否应该升级成显式 metadata 或 policy object。
+
 ### A080. 清理隔离之后仍要继续分出载体家族宪法：Claude Code 当前不是一条统一 cleanup law，而是多种 artifact-family constitution 并存
 
 - 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 的最新内容已经被当前研究分支吸收，因此无需额外 merge，即可继续在当前 worktree 上推进安全主线。

@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 142 篇速查文档。
+`appendix/` 当前包含 143 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -69,6 +69,9 @@
 - `142`
   清理隔离与载体家族宪法分层。
   入口：[142-安全清理隔离与载体家族宪法分层速查表：artifact family、storage scope、cleanup root、current gate与constitution question](142-%E5%AE%89%E5%85%A8%E6%B8%85%E7%90%86%E9%9A%94%E7%A6%BB%E4%B8%8E%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%AE%AA%E6%B3%95%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Aartifact%20family%E3%80%81storage%20scope%E3%80%81cleanup%20root%E3%80%81current%20gate%E4%B8%8Econstitution%20question.md)。
+- `143`
+  载体家族宪法与制度理由分层。
+  入口：[143-安全载体家族宪法与制度理由分层速查表：artifact family、primary risk object、reader scope、recovery duty、host visibility与rationale drift](143-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%AE%AA%E6%B3%95%E4%B8%8E%E5%88%B6%E5%BA%A6%E7%90%86%E7%94%B1%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Aartifact%20family%E3%80%81primary%20risk%20object%E3%80%81reader%20scope%E3%80%81recovery%20duty%E3%80%81host%20visibility%E4%B8%8Erationale%20drift.md)。
 
 ## 怎么配合主线读
 
