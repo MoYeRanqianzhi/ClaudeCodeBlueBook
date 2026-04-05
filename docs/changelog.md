@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 新增《真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路》，并同步更新 `philosophy/README`、`navigation/41`、总索引与开发文档，把源码先进性线从“为什么先进”继续收束到“怎样判断先进才算稳”
 - 新增《如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline》，并同步更新 `guides/30`、`guides/README`、`navigation/07`、`navigation/15`、`navigation/41`、总索引与开发文档，把“公开镜像如何稳当地判断源码质量”补成正式方法层，同时把旧 Prompt 审读页收回为桥接入口
 - 新增《请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object》《当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续》《one writable present验证失真反例：健康投影篡位、恢复资产越权与anti-zombie伪证》，并同步更新 `casebooks/README`、`navigation/39`、`navigation/40`、总索引与开发文档，把三张控制面图从“长期验证手册”继续下沉为“长期验证失真反例层”，同时保持正文与持久化记忆分层
 - 新增《请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归》《当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归》《one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归》，并同步更新 `playbooks/README`、`navigation/39` 与总索引，把三张控制面图从高阶审读模板继续下沉成长期验证手册

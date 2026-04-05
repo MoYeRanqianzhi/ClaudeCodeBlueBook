@@ -69,8 +69,9 @@
 1. `../philosophy/76`
 2. `../guides/102`
 3. `../philosophy/86`
-4. `../architecture/84`
-5. `../playbooks/79`
+4. `../philosophy/87`
+5. `../architecture/84`
+6. `../playbooks/79`
 
 这条线的核心不是：
 

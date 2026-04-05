@@ -13,7 +13,49 @@
 - 本轮运行手册化动作: 已继续把三张控制面图下沉为 `playbooks/77-79` 三篇长期验证手册，并通过 `navigation/39` 回收到持续回归路由。
 - 本轮反例化动作: 已继续把三张控制面图的长期验证失真压成 `casebooks/73-75`，并通过 `navigation/40` 把“基础失真”与“验证失真”重新分层。
 - 本轮方法论动作: 已新增 `guides/102`，并同步升级 `navigation/07`、`navigation/15`、`navigation/41` 与 `guides/30`，把“公开镜像源码质量研究协议”补成稳定入口。
+- 本轮哲学收束动作: 已新增 `philosophy/87`，把源码质量线从“结构为什么先进”继续收束到“怎样判断先进才算稳”。
 - 主分支同步检查: `2026-04-06` 在仓库根执行 `git fetch origin && git pull --ff-only`，结果为 `Already up to date.`；当前本地 `main` 领先 `origin/main` 6 个提交，因此本轮不改主分支，只在 `mainloop` 内推进。
+
+### A081. 源码质量线继续深化后，最值钱的补层不是再赞美结构，而是把“判断标准”本身升级为第一性原理
+
+- `philosophy/80`、`83`、`86` 已经分别解释了 future maintainer 为什么是正式消费者、故障模型为什么先于模块美学进入结构、以及为什么真正先进的内核更会阻止过去写坏现在；但这三层仍主要在回答“为什么先进”，还没有正式回答“怎样判断先进才算稳”。
+- 公开镜像条件下，最容易失真的不是结论不够多，而是判断标准本身退回目录体感与文件大小体感。于是“热点文件是否很大”“目录是否够碎”“README 是否解释得通”这些低阶信号，会冒充源码质量判断本身。
+- 这意味着源码质量线必须再长出一层更高阶收束：真正成熟的判断，不是文件更小，而是复杂度有合法席位、边界可证、future maintainer 可独立 reject、系统每次增长后仍保留下一次重构自己的可能性。也就是说，先进性不只是一种结构状态，更是一种可继续演化的判断协议。
+- `README`、`Task.ts`、`tasks.ts`、`controlSchemas.ts`、`query/config.ts`、`query/deps.ts`、`QueryGuard`、`sessionIngress` 与前面已经固化的 `guides/102` 共同说明：源码质量判断必须同时看 `contract / registry / authoritative surface / adapter subset / hotspot kernel / gap discipline` 与 `dependency honesty / temporal honesty`。如果不同时看这两条轴，系统就会在静态结构和时间结构上分别撒谎。
+- 这也解释了为什么 `philosophy/87` 比继续补一篇“源码很强”的扩写更值钱：它把合法复杂度中心和下一次重构仍有路，正式提升为判断标准本身，而不只是附带观察。
+
+证据:
+
+- `claude-code-source-code/README.md:250-290`
+- `claude-code-source-code/src/Task.ts:6-124`
+- `claude-code-source-code/src/tasks.ts:1-39`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-240`
+- `claude-code-source-code/src/query/config.ts:1-43`
+- `claude-code-source-code/src/query/deps.ts:1-37`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+
+### A082. 三条母线继续上升一层后，可以被压成三句彼此对称的高阶判断
+
+- Prompt 线的更高阶收束不是“更会写指令”，而是“更会让主权链、历史链与继续链都对同一个世界保持诚实”。这解释了为什么 authority chain、protocol transcript、lawful forgetting、fork reuse 与 cache break explainability 必须被同时看作 Prompt 真相的一部分，而不是外围实现细节。
+- 治理线的更高阶收束不是“更会拦截”，而是“更会规定一切扩张怎样按同一价格秩序合法进入当前世界”。这让 `trusted inputs`、`typed ask`、`deferred visibility`、`externalization`、`continuation pricing` 与失败语义重新回到同一 admission order，而不是权限系统与压缩系统两套支线。
+- 源码质量线的更高阶收束不是“更会赞美先进结构”，而是“更会判断复杂度有没有合法席位、边界能否被正式证明、系统是否仍保留下一次重构自己的可能性”。这让 `legal complexity center`、`contract/registry/authoritative surface` 梯度、`dependency honesty / temporal honesty` 与 `future maintainer rejectability` 被正式提升为判断标准本身。
+- 这三句一起看，会把 Claude Code 的设计哲学重新压回一组对称约束：
+  - Prompt 线处理“什么配进入模型”。
+  - 治理线处理“什么配进入当前世界”。
+  - 源码质量线处理“过去与复杂度怎样不得偷走当前世界的真相与未来重构能力”。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
+- `claude-code-source-code/src/utils/managedEnv.ts:93-220`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:472-716`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/README.md:250-290`
+- `claude-code-source-code/src/query/config.ts:1-43`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
 
 ### A080. 公开镜像条件下的源码质量判断，最值钱的不是再夸先进性，而是先把证据分级协议写清楚
 
