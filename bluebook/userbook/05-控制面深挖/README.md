@@ -17,5 +17,6 @@
 - [07-Add-dir：工作面扩张、权限上下文与 Sandbox 刷新.md](./07-Add-dir%EF%BC%9A%E5%B7%A5%E4%BD%9C%E9%9D%A2%E6%89%A9%E5%BC%A0%E3%80%81%E6%9D%83%E9%99%90%E4%B8%8A%E4%B8%8B%E6%96%87%E4%B8%8E%20Sandbox%20%E5%88%B7%E6%96%B0.md)
 - [08-Rename、Export：会话对象化与对外交付.md](./08-Rename%E3%80%81Export%EF%BC%9A%E4%BC%9A%E8%AF%9D%E5%AF%B9%E8%B1%A1%E5%8C%96%E4%B8%8E%E5%AF%B9%E5%A4%96%E4%BA%A4%E4%BB%98.md)
 - [09-Release-notes、Feedback：版本证据与产品反馈回路.md](./09-Release-notes%E3%80%81Feedback%EF%BC%9A%E7%89%88%E6%9C%AC%E8%AF%81%E6%8D%AE%E4%B8%8E%E4%BA%A7%E5%93%81%E5%8F%8D%E9%A6%88%E5%9B%9E%E8%B7%AF.md)
+- [10-设置面板、诊断屏与运营命令：会内控制面的三层分工.md](./10-%E8%AE%BE%E7%BD%AE%E9%9D%A2%E6%9D%BF%E3%80%81%E8%AF%8A%E6%96%AD%E5%B1%8F%E4%B8%8E%E8%BF%90%E8%90%A5%E5%91%BD%E4%BB%A4%EF%BC%9A%E4%BC%9A%E5%86%85%E6%8E%A7%E5%88%B6%E9%9D%A2%E7%9A%84%E4%B8%89%E5%B1%82%E5%88%86%E5%B7%A5.md)
 
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

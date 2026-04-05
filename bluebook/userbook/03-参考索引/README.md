@@ -10,6 +10,7 @@
 6. 面对真实任务时，应该先走哪个入口。
 7. 高价值入口背后到底有哪些运行时合同。
 8. 名字相近的 root command 和 slash command 到底是不是一回事。
+9. Settings tab、独立 screen、调参命令和预算分流到底分别属于什么对象。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
