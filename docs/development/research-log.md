@@ -14,7 +14,15 @@
 - 本轮反例化动作: 已继续把三张控制面图的长期验证失真压成 `casebooks/73-75`，并通过 `navigation/40` 把“基础失真”与“验证失真”重新分层。
 - 本轮方法论动作: 已新增 `guides/102`，并同步升级 `navigation/07`、`navigation/15`、`navigation/41` 与 `guides/30`，把“公开镜像源码质量研究协议”补成稳定入口。
 - 本轮哲学收束动作: 已新增 `philosophy/87`，把源码质量线从“结构为什么先进”继续收束到“怎样判断先进才算稳”。
-- 主分支同步检查: `2026-04-06` 在当前研究 worktree 内再次执行 `git fetch origin main`；结果确认 `LOCAL_MAIN=801fe80`、`ORIGIN_MAIN=801fe80`，本轮开始前主分支无新增提交需要吸收，因此继续只在 `.worktrees/claude-code-risk-analysis` 内推进。
+- 主分支同步检查: `2026-04-06` 在当前研究 worktree 内再次执行 `git fetch origin main`；结果确认 `LOCAL_MAIN=801fe80`、`ORIGIN_MAIN=801fe80`，本轮开始前主分支仍无新增提交需要吸收，因此继续只在 `.worktrees/claude-code-risk-analysis` 内推进。
+
+### A089. 退役治理之后仍要继续分出墓碑治理：Claude Code 当前即便知道旧 cleanup 世界何时结束，也还没有谁被正式授权决定结束后还留下什么最小历史标记
+
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 仍为 `801fe80`，当前 research 分支在该基线上继续推进，因此无需额外 merge，可直接在当前 worktree 上继续深化。
+- 本轮新增 `166-安全载体家族退役治理与墓碑治理分层`，核心判断是：`165` 已经证明 cleanup 线未来即便长出 sunset governor，也只是在回答“旧世界什么时候结束”；但继续看 `query.ts` 里的 `tombstone` control signal、`utils/messages.ts + REPL.tsx + sessionStorage.ts` 的 tombstone 消费链、`cacheUtils.ts` 的 `.orphaned_at` marker、`orphanedPluginFilter.ts + main.tsx:2546-2568` 的 marker-driven exclusion grammar，以及 `config.ts` 中的 migration timestamps 与 `useModelMigrationNotifications.tsx` 的 timestamp-driven notices，会发现更深层的问题已经不再只是 “谁决定兼容期什么时候结束”，而是 “谁决定结束之后还留下什么最小残留标记”。也就是说，`artifact-family cleanup sunset-governor signer` 仍不等于 `artifact-family cleanup tombstone-governor signer`。
+- 本轮最硬的源码证据有三组。第一组是 message tombstone 正例：`query.ts:713-719` 在 orphaned assistant messages 场景里显式 `yield { type: 'tombstone' }`，`utils/messages.ts:2954-2957` 把它当作控制信号而不是正文内容处理，`REPL.tsx:2646-2648` 与 `sessionStorage.ts:1466-1473,923-944` 再把它落到 UI/transcript 删除链上，`QueryEngine.ts:756-759` 更直接写出 tombstone 是 `control signals for removing messages`。第二组是 plugin marker 正例：`cacheUtils.ts:56-72,145-171` 说明 `.orphaned_at` 不是 sunset deadline 本身，而是对象进入退役世界后留下的最小 marker；`pluginOperations.ts:526-547` 明确在最后一个 scope 卸载时打上这个 marker；`orphanedPluginFilter.ts:1-79` 与 `main.tsx:2546-2568` 又说明 marker 还会被转译成 grep/glob exclusion patterns，继续约束未来读取世界。第三组是 model transition trace 正例：`config.ts:428-438` 中的 `opusProMigrationTimestamp`、`legacyOpusMigrationTimestamp` 与 `sonnet45To46MigrationTimestamp` 不是迁移动作本身，却作为最小历史注脚留在 `GlobalConfig`；`useModelMigrationNotifications.tsx:1-33` 正是靠这些字段解释“为什么当前世界刚刚变化”。这些正例共同说明 repo 并不把 “对象已退役” 直接偷写成 “后面不需要任何受治理的残留标记”。
+- 本轮因此同步补入 `appendix/150-安全载体家族退役治理与墓碑治理分层速查表` 与 `source-notes/17-tombstone messages、.orphaned_at与migration timestamps的墓碑治理边界`。这样 `166` 不再停留在 “sunset != tombstone” 的抽象口号，而是第一次把 `sunset decision / tombstone decision / positive control / cleanup post-retirement gap / governor question` 压成回查矩阵，并把 message/plugin/model 三条墓碑治理正例与 cleanup 线未来的 post-retirement marker 问题放进同一篇源码剖面里。
+- 这也把下一候选自然推进到 `167`：既然 `166` 已经证明 tombstone 主权不等于 sunset 主权，那么下一层最值得继续追问的就不再只是 “谁来留下墓碑”，而是 “谁来决定哪些墓碑可以被撤销、哪些已退役对象可以被重新带回当前世界”。也就是：`artifact-family cleanup tombstone-governor signer` 仍不等于 `artifact-family cleanup resurrection-governor signer`，需要继续研究 `.orphaned_at` 清除、plan recovery 与 transcript tombstone removal 这类路径如何与 cleanup 线未来的旧 path、旧 promise 与旧 receipt 世界对接。
 
 ### A088. 迁移治理之后仍要继续分出退役治理：Claude Code 当前即便知道旧 cleanup 世界该怎样过渡，也还没有谁被正式授权宣布兼容期何时结束
 

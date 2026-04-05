@@ -18,6 +18,7 @@
 - `163` 已经稳定写出修复治理边界：repo 在 auto-mode 与 plugin 线已明确展示 verification 与 governance consequence 的分层，但 cleanup 线当前仍未正式分配 drift 报警后的 repair authority；因此 `artifact-family cleanup anti-drift verification` 仍不能越级冒充 `artifact-family cleanup repair-governance`。
 - `164` 已经稳定写出迁移治理边界：repo 在模型、配置键、插件缓存与 plan continuity 上已明确展示 migration governance 的存在，说明决定“怎么修”与决定“旧世界怎样退场”仍然是两层主权；因此 `artifact-family cleanup repair-governance` 仍不能越级冒充 `artifact-family cleanup migration-governance`。
 - `165` 已经稳定写出退役治理边界：repo 在模型退役日期、迁移通知、legacy runtime remap、plugin orphan grace window 与 search visibility cutoff 上已明确展示 sunset governance 的存在，说明决定“旧世界怎样过渡”与决定“兼容期何时正式结束”仍然是两层主权；因此 `artifact-family cleanup migration-governance` 仍不能越级冒充 `artifact-family cleanup sunset-governance`。
+- `166` 已经稳定写出墓碑治理边界：repo 在 `tombstone` messages、`.orphaned_at` markers、marker-driven exclusion grammar 与 migration timestamps 上已明确展示 tombstone governance 的存在，说明决定“旧世界何时结束”与决定“结束后还留下什么最小残留标记”仍然是两层主权；因此 `artifact-family cleanup sunset-governance` 仍不能越级冒充 `artifact-family cleanup tombstone-governance`。
 
 ## 本轮已净化的正文段
 
@@ -35,14 +36,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-165`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset ladder
+- `147-166`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `166`
-  方向：`artifact-family cleanup sunset-governor signer` 仍不等于 `artifact-family cleanup tombstone-governor signer`
-  原因：`165` 已经证明兼容期结束需要正式 sunset authority；但宣布旧世界不再有效，并不自动回答“退役后还留下什么最小历史标记来阻止误读、恢复错误引用或解释旧世界为何消失”。也就是：谁配决定旧 path、旧 promise、旧 receipt 在退役后留下什么 tombstone、warning、marker 或 migration note，这仍是另一层 tombstone governance 问题
-  证据起点：`src/utils/plugins/cacheUtils.ts` 的 `.orphaned_at` marker、`src/utils/plugins/orphanedPluginFilter.ts` 的 exclusion grammar、`src/utils/model/deprecation.ts` 的 retirement date、`useModelMigrationNotifications.tsx` 的 timestamp 通知与 cleanup 线潜在的旧 plan path / old receipt 世界形成对照：repo 已展示退役时点治理，但 cleanup 线尚未回答退役后要留下怎样的最小历史标记来约束未来读者
+- 候选 `167`
+  方向：`artifact-family cleanup tombstone-governor signer` 仍不等于 `artifact-family cleanup resurrection-governor signer`
+  原因：`166` 已经证明对象退役后需要最小残留标记；但谁配留下墓碑，并不自动回答谁配清除墓碑、恢复对象、或把历史对象重新带回当前世界。也就是：谁配决定旧 path、旧 promise、旧 receipt 的 tombstone 何时可被撤销、何时可被恢复为当前 truth，这仍是另一层 resurrection governance 问题
+  证据起点：`src/utils/plugins/cacheUtils.ts` 的 `removeOrphanedAtMarker()`、`src/utils/plans.ts` 的 `copyPlanForResume()` 与 `recoverPlanFromMessages()`、`src/utils/sessionStorage.ts` 的 tombstone removal path 与 cleanup 线潜在的旧 plan path / old receipt 世界形成对照：repo 已展示墓碑存在与部分恢复路径，但 cleanup 线尚未回答谁配让已退役世界重新回到 current world
 
 ## 持续约束
 
