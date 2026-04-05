@@ -36,6 +36,25 @@
 - `claude-code-source-code/src/bridge/bridgeMain.ts:2384-2398`
 - `claude-code-source-code/src/bridge/bridgeMain.ts:2524-2540`
 
+### A075. 归档关闭之后仍要继续分出审计关闭：Claude Code 会把对象从活跃表面移走，但继续保留 transcript、metadata、history 与 collapse 证据世界
+
+- 在 `152` 里，安全主线已经把 `liability release` 与 `archive close` 分开；但继续看 `sessionStorage + sessionRestore + conversationRecovery + fileHistory` 会发现，源码并没有把“对象退出活跃表面”继续压成“相关审计材料也一起关闭”。它仍然在主动保全 transcript、元信息、history 与 snapshot。
+- `sessionStorage.ts:721-839` 说明退出时会把 `last-prompt`、`custom-title`、`tag`、agent 信息、mode、worktree、PR link 重新 append 到 transcript EOF；这意味着系统在会话退出后首先做的不是“薄化历史”，而是继续让关键 audit context 保持易读、易恢复、易 compaction 后回收。
+- `sessionStorage.ts:1509-1534` 与 `sessionRestore.ts:435-503` 说明 resume 并不新开一份空白历史，而是直接 adopt 已存在 transcript file，恢复 cost state、mode、worktree 与 context-collapse；`conversationRecovery.ts:540-590` 进一步把 `fullPath`、`fileHistorySnapshots`、`contentReplacements`、`contextCollapseSnapshot` 一起带回恢复世界。这说明 archive close 后证据世界仍被正式消费。
+- `sessionStorage.ts:2300-2352,2955-3050` 又把 transcript 继续重建成 enriched `LogOption`：其中不仅有消息链，还有 customTitle、agentSetting、PR、fileHistorySnapshots、contentReplacements 与 contextCollapseSnapshot。只要系统还在这样 loadFullLog，它就没有给出 audit close。
+- `fileHistory.ts:922-1045` 最后再把边界收得更清楚：resume 时会把 previous session 的 backup chain hard-link/copy 到 current session，并重新 record snapshot。也就是说，file history backups 的地位不是 archive 后的废墟，而是下一次恢复仍会继续引用的审计与恢复资产。
+- 这意味着安全主线在 `152` 之后最自然应继续长出 `153-安全归档关闭与审计关闭分层`，并配套 `appendix/137` 与 `source-notes/04`。该层回答的不是“对象是否仍在线”，而是“历史、证据与恢复材料是否仍活在 audit world”。如果未来还要继续往下推，更强的下一层应是 `154` 去回答 `audit close` 是否仍不等于 `irreversible erasure`。
+
+证据:
+
+- `claude-code-source-code/src/utils/sessionStorage.ts:721-839`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1509-1534`
+- `claude-code-source-code/src/utils/sessionStorage.ts:2300-2352`
+- `claude-code-source-code/src/utils/sessionStorage.ts:2955-3050`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-503`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:540-590`
+- `claude-code-source-code/src/utils/fileHistory.ts:922-1045`
+
 ### A072. 安全遗忘与免责释放必须继续分层：Claude Code 会允许局部 forgetting，但仍坚持 same-session continuity、resume honesty 与 reopen liability
 
 - `security/150` 已经把 `finality` 与 `forgetting` 拆开，但如果继续往下追问，还会撞到更硬的一层：某些 trace 即使已经允许 forget，也不等于系统已经正式放弃同一责任线程的 resume、retry、reopen 与 future audit。Claude Code 在 `bridgePointer + bridgeMain + sessionRestore + conversationRecovery` 这组代码里已经把这条边界写出来了。

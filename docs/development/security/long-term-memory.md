@@ -27,10 +27,10 @@
 
 ## 当前最值得继续深化的候选
 
-- 候选 `153`
-  方向：`archive close` 仍不等于 `audit-close`
-  原因：`152` 已经证明“责任可释不等于表面可封”，下一层最自然的问题就是“即使对象退出 active operational surface，是否已经等于审计关闭、历史义务关闭与不可再追索”
-  证据起点：`src/bridge/bridgeMain.ts` 中 `archiveSession` 的 idempotent/archive hygiene 语义、`deregisterEnvironment` 的 offline projection 语义，以及 `session not found` 把 archived / expired / login lapsed 并列输出的分流逻辑
+- 候选 `154`
+  方向：`audit close` 仍不等于 `irreversible erasure / evidence destruction`
+  原因：`153` 已经证明“表面可封不等于证据可封”，下一层最自然的问题就是“即使 transcript、metadata、history 不再参与恢复或审计，它们是否已经等于被不可逆销毁”
+  证据起点：`src/utils/sessionStorage.ts` 的 transcript file / tail metadata / loadFullLog 路径、file-history backup 目录，以及任何显式删除、覆盖、GC、compaction 保留边界相关实现
 
 ## 持续约束
 
