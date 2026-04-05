@@ -16,6 +16,7 @@
 - `161` 已经稳定写出运行时符合性边界：即便 metadata signal 存在，runtime 仍可能展示 temporal gap、propagation gap 与 receipt gap；`cleanupPeriodDays=0` 的“startup delete”文案、`shouldSkipPersistence()` 的即时抑写、`backgroundHousekeeping` 的延迟调度、validation skip 与 `CleanupResult` 的未汇总共同说明 `artifact-family cleanup metadata` 仍不能越级冒充 `artifact-family cleanup runtime-conformance`。
 - `162` 已经稳定写出反漂移验证边界：一次 runtime conform 仍不等于系统已经具备长期 anti-drift verification；`microCompact.ts` 的 source-of-truth test、`switchSession()` 的原子防漂移与 `verifyAutoModeGateAccess()` 的 live re-verification 共同构成 repo 的正对照，而 cleanup 线当前仍缺同等级 verifier，因此 `artifact-family cleanup runtime-conformance` 仍不能越级冒充 `artifact-family cleanup anti-drift verification`。
 - `163` 已经稳定写出修复治理边界：repo 在 auto-mode 与 plugin 线已明确展示 verification 与 governance consequence 的分层，但 cleanup 线当前仍未正式分配 drift 报警后的 repair authority；因此 `artifact-family cleanup anti-drift verification` 仍不能越级冒充 `artifact-family cleanup repair-governance`。
+- `164` 已经稳定写出迁移治理边界：repo 在模型、配置键、插件缓存与 plan continuity 上已明确展示 migration governance 的存在，说明决定“怎么修”与决定“旧世界怎样退场”仍然是两层主权；因此 `artifact-family cleanup repair-governance` 仍不能越级冒充 `artifact-family cleanup migration-governance`。
 
 ## 本轮已净化的正文段
 
@@ -33,14 +34,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-163`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair ladder
+- `147-164`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `164`
-  方向：`artifact-family cleanup repair-governor signer` 仍不等于 `artifact-family cleanup migration-governor signer`
-  原因：`163` 已经证明 drift 报警后的修复主权需要单独分层；但修复主权即便存在，也还不自动拥有“如何把旧世界平滑迁到新世界”的主权。也就是：谁配决定兼容期多长、旧 plan path / transcript promise 如何过渡、旧 receipt 如何作废或重签，这仍是另一层 migration governance 问题
-  证据起点：`src/utils/plugins/dependencyResolver.ts`、`src/utils/plugins/pluginLoader.ts`、`src/utils/permissions/permissionSetup.ts` 与 cleanup 线现有的 promise/executor gap 形成的对照：repo 已展示 repair consequence，但 cleanup 线尚未回答 migration strategy 由谁主权化
+- 候选 `165`
+  方向：`artifact-family cleanup migration-governor signer` 仍不等于 `artifact-family cleanup sunset-governor signer`
+  原因：`164` 已经证明迁移治理要决定旧世界怎样平滑退场；但迁移主权即便存在，也还不自动拥有“何时宣布兼容期正式结束”的主权。也就是：谁配决定旧 path、旧 promise、旧 receipt 彻底失效，何时从 dual-read / grace-window 切换到 hard close，这仍是另一层 sunset governance 问题
+  证据起点：`src/utils/plugins/cacheUtils.ts` 的 7 天 orphan 窗口、各类 migration completion flags、model migration timestamp 通知与 cleanup 线潜在的旧 plan path / old receipt 世界形成的对照：repo 已展示 transition 过程治理，但 cleanup 线尚未回答谁配宣布旧世界正式退役
 
 ## 持续约束
 

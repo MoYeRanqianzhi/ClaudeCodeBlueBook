@@ -35,6 +35,14 @@
 - `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
 - `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
 
+### A087. 修复治理之后仍要继续分出迁移治理：Claude Code 当前即便知道怎么修 cleanup drift，也还没有谁被正式授权决定旧世界如何平滑退场
+
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 仍为 `801fe80`，当前 research 分支只领先于安全研究提交，因此无需额外 merge，可直接在当前 worktree 上继续推进。
+- 本轮新增 `164-安全载体家族修复治理与迁移治理分层`，核心判断是：`163` 已经证明 drift 报警后的修复主权需要单独分层，但继续看 `main.tsx` 的 migration registry、`migrations/*` 下的具体迁移函数、`installedPluginsManager.ts` 的单文件迁移、`cacheUtils.ts` 的 orphan grace period，以及 `plans.ts` 的 resume / fork continuity，会发现更深层的问题已经不再只是 “谁决定怎么修”，而是 “谁决定旧世界怎样平滑退场”。也就是说，`artifact-family cleanup repair-governor signer` 仍不等于 `artifact-family cleanup migration-governor signer`。
+- 本轮最硬的源码证据有四组。第一组是 startup migration registry：`main.tsx:323-341` 明确维护 `migrateSonnet1mToSonnet45()`、`migrateLegacyOpusToCurrent()`、`migrateReplBridgeEnabledToRemoteControlAtStartup()` 等迁移函数，说明 repo 已将“旧世界如何退场”视为正式 startup governance。第二组是 model/config migration 正例：`migrateSonnet1mToSonnet45.ts`、`migrateLegacyOpusToCurrent.ts` 与 `migrateSonnet45ToSonnet46.ts` 会决定只改 `userSettings`、哪些 source 继续保留原样但 runtime remap、是否记录 timestamp 或 completion flag 供 one-time notification；`migrateBypassPermissionsAcceptedToSettings.ts` 与 `migrateReplBridgeEnabledToRemoteControlAtStartup.ts` 也会决定何时复制旧 key、何时删除旧 key、如何保持幂等。第三组是 plugin 迁移治理正例：`installedPluginsManager.ts:96-213` 的 `migrateToSinglePluginFile()` 负责 v2 文件重命名、v1→v2 in-place conversion 与 legacy cache cleanup；`cacheUtils.ts:20-99` 则通过 `.orphaned_at` 与 `CLEANUP_AGE_MS = 7 days` 明确给出 orphan grace window。第四组是 plan continuity 正例：`plans.ts:150-248` 的 `copyPlanForResume()` / `copyPlanForFork()` 决定旧 plan 如何复用 slug、何时复制出新 slug、缺失文件如何从 snapshot / history 恢复。这些正例共同说明 repo 并不把“修复已决定”直接偷写成“旧世界自然会退场”。反观 cleanup 线当前即便未来补出 repair governor，系统仍未回答：旧 home-root plans 保留多久、旧 startup delete 承诺何时作废、旧 cleanup receipt 是否需要重签或废弃、旧 dual-world artifact 何时从 grace window 切到 hard close。
+- 本轮因此同步补入 `appendix/148-安全载体家族修复治理与迁移治理分层速查表` 与 `source-notes/15-model migrations、plugin orphan cleanup与plans continuity的迁移治理边界`。这样 `164` 不再停留在 “repair != migration” 的抽象口号，而是第一次把 `repair decision / migration decision / positive control / cleanup transition gap / governor question` 压成回查矩阵，并把 model/config/plugin/plan 四条迁移治理正例与 cleanup 线未来的 transition 问题放进同一篇源码剖面里。
+- 这也把下一候选自然推进到 `165`：既然 `164` 已经证明迁移主权不等于修复主权，那么下一层最值得继续追问的就不再只是 “谁来过渡”，而是 “谁来宣布过渡正式结束”。也就是：`artifact-family cleanup migration-governor signer` 仍不等于 `artifact-family cleanup sunset-governor signer`，需要继续研究 dual-read / grace-window 何时切到 hard close、旧 promise 何时正式作废、旧 receipt 何时不可再被引用由哪一层主权化。
+
 ### A086. 反漂移验证之后仍要继续分出修复治理：Claude Code 当前即便未来能把 cleanup drift 抓出来，也还没有谁被正式授权决定怎么修
 
 - 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 仍为 `801fe80`，当前 research 分支只领先于安全研究提交，因此无需额外 merge，可直接在当前 worktree 上继续推进。
