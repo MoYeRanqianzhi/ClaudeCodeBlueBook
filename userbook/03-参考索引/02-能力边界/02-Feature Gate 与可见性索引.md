@@ -19,12 +19,14 @@ Claude Code 的公开面至少分四层：
 
 | 命令 | 门控 |
 | --- | --- |
+| `chrome` | `availability: ['claude-ai']` + Beta / 平台条件 |
 | `proactive` | `PROACTIVE` / `KAIROS` |
 | `brief` | `KAIROS` / `KAIROS_BRIEF` |
 | `assistant` | `KAIROS` |
 | `bridge` / `remote-control` | `BRIDGE_MODE` |
 | `remoteControlServer` | `DAEMON` + `BRIDGE_MODE` |
 | `voice` | `VOICE_MODE` |
+| `feedback` | provider / privacy / policy / `USER_TYPE` 条件 |
 | `force-snip` | `HISTORY_SNIP` |
 | `workflows` | `WORKFLOW_SCRIPTS` |
 | `web-setup` | `CCR_REMOTE_SETUP` |
@@ -51,6 +53,8 @@ Claude Code 的公开面至少分四层：
 - `backfill-sessions`
 - `mock-limits`
 
+此外，`/tag` 虽然不在 `INTERNAL_ONLY_COMMANDS` 常量里，但 `src/commands/tag/index.ts` 直接以 `process.env.USER_TYPE === 'ant'` 控制可见性，也应按内部命令处理。
+
 ## 二、工具层的显式门控
 
 `src/tools.ts` 里门控更重，因为很多工具是运行时能力边界。
@@ -72,6 +76,7 @@ Claude Code 的公开面至少分四层：
 | `WebBrowserTool` | `WEB_BROWSER_TOOL` |
 | `ListPeersTool` | `UDS_INBOX` |
 | `WorkflowTool` | `WORKFLOW_SCRIPTS` |
+| `Team*` | `isAgentSwarmsEnabled()`，仍受实验开关与 killswitch 约束 |
 
 ### ant-only / 内部工具
 
@@ -88,6 +93,7 @@ Claude Code 的公开面至少分四层：
 - `LSPTool` 受环境/能力条件控制。
 - `EnterWorktree` / `ExitWorktree` 当前已进入公开主路径；真正限制更多在 Git/worktree 上下文，而不是 rollout gate。
 - `Task*` 工具还取决于 Todo v2 相关条件。
+- `RemoteTriggerTool` 不是只有 build gate；还会继续受远程资格、OAuth 与策略条件影响。
 
 ## 三、bundled skills 的显式门控
 
