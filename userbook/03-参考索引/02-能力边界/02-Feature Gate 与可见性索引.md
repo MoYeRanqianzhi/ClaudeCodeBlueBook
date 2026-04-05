@@ -86,7 +86,7 @@ Claude Code 的公开面至少分四层：
 
 - `VerifyPlanExecutionTool` 受环境变量控制。
 - `LSPTool` 受环境/能力条件控制。
-- `EnterWorktree` / `ExitWorktree` 只有启用 worktree mode 时才出现。
+- `EnterWorktree` / `ExitWorktree` 当前已进入公开主路径；真正限制更多在 Git/worktree 上下文，而不是 rollout gate。
 - `Task*` 工具还取决于 Todo v2 相关条件。
 
 ## 三、bundled skills 的显式门控
