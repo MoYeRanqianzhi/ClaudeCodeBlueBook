@@ -35,6 +35,14 @@
 - `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
 - `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
 
+### A086. 反漂移验证之后仍要继续分出修复治理：Claude Code 当前即便未来能把 cleanup drift 抓出来，也还没有谁被正式授权决定怎么修
+
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 仍为 `801fe80`，当前 research 分支只领先于安全研究提交，因此无需额外 merge，可直接在当前 worktree 上继续推进。
+- 本轮新增 `163-安全载体家族反漂移验证与修复治理分层`，核心判断是：`162` 已经证明 cleanup 线真正缺的是 anti-drift verifier，但继续看 `permissionSetup.ts + bypassPermissionsKillswitch.ts + getNextPermissionMode.ts + dependencyResolver.ts + pluginLoader.ts` 再对照 `cleanup.ts + plans.ts + backgroundHousekeeping.ts` 会发现，更深层的问题已经不再只是 “谁来发现 drift”，而是 “发现以后谁来决定修哪一层”。也就是说，`artifact-family cleanup anti-drift verifier signer` 仍不等于 `artifact-family cleanup repair-governor signer`。
+- 本轮最硬的源码证据有三组。第一组是 auto-mode 正例：`verifyAutoModeGateAccess()` 负责发现 stale-vs-live divergence，返回 `updateContext` 与 `notification`；真正把结果施加到 app state、发出高优先级通知并执行 kick-out 逻辑的是 `checkAndDisableAutoModeIfNeeded()`。第二组是 local precheck 正例：`getNextPermissionMode.ts:7-17` 明确承认 cached 与 live gate `can diverge`，但它也只负责在 mode cycle 前拒绝继续说谎，不拥有更高阶治理主权。第三组是 plugin 正例：`dependencyResolver.ts:177-233` 的命名直接写出 `verifyAndDemote`，而 `pluginLoader.ts:3192-3194` 真正把 demoted 结果转成 `p.enabled = false` 的 capability consequence。这些正例共同说明 repo 并不把 verification 与 governance consequence 混成一层。反观 cleanup 线，当前 temporal gap、propagation gap 与 receipt gap 已经被 `161-162` 说明，但系统仍没有明确回答：应修 metadata、修 scheduler、修 executor、修 permission plane，还是改文案降级承诺；也没有哪一层对这些 repair consequences 正式拥有裁决权。
+- 本轮因此同步补入 `appendix/147-安全载体家族反漂移验证与修复治理分层速查表` 与 `source-notes/14-verifyAndDemote、auto-mode gate与cleanup的修复治理边界`。这样 `163` 不再停留在 “verifier != governor” 的抽象口号，而是第一次把 `detector / governance consequence / positive control / cleanup repair gap / next control question` 压成回查矩阵，并把 auto-mode 与 plugin 线的正例同 cleanup 线的治理缺口放进同一篇源码剖面里。
+- 这也把下一候选自然推进到 `164`：既然 `163` 已经证明 verifier 发现问题后仍需要 repair governor，而 repair governor 也还不自动拥有兼容迁移主权，那么下一层最值得继续追问的就不再只是 “谁决定怎么修”，而是 “谁决定怎样从旧世界迁到新世界”。也就是：`artifact-family cleanup repair-governor signer` 仍不等于 `artifact-family cleanup migration-governor signer`，需要继续研究兼容期长度、旧承诺废弃方式、旧 path / old receipt 的平滑过渡由哪一层正式主权化。
+
 ### A085. 运行时符合性之后仍要继续分出反漂移验证：Claude Code 当前即便某次 cleanup 运行看起来符合，也还没有谁能正式保证未来漂移会被系统自己抓住
 
 - 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 仍为 `801fe80`，当前 research 分支只领先于安全研究提交，因此无需额外 merge，可直接在当前 worktree 上继续推进。
