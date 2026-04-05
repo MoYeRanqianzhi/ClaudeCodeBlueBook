@@ -288,16 +288,6 @@
 
 `系统把剩余恢复能力完全不同的 failure 状态压成同一个词。`
 
-### 8.4 这一章之后还缺什么
-
-还缺一张更短的失败梯子矩阵：
-
-`lease failure type -> recovery capacity -> next repair path`
-
-也就是说，  
-下一步最自然的延伸就是：
-
-`appendix/50-安全恢复续租失败分级速查表`
 
 ## 9. 结语
 

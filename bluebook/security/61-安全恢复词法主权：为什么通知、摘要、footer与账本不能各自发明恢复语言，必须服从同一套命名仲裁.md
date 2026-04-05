@@ -318,16 +318,6 @@ BridgeDialog、`/status`、footer、notification 都可以：
 
 `低层组件用更强词汇越级定义了高层恢复现实。`
 
-### 8.4 这一章之后还缺什么
-
-还缺一张更短的仲裁矩阵：
-
-`surface -> visible inputs -> max allowed lexicon -> forbidden stronger terms`
-
-也就是说，  
-下一步最自然的延伸就是：
-
-`appendix/45-安全恢复词法主权速查表`
 
 ## 9. 结语
 

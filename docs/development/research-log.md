@@ -7,6 +7,19 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A073. 安全专题正文与隔离记忆开始正式分层：章节推进计划不再混写进 `bluebook/security/` 正文
+
+- 本轮首先重新检查并同步了 `main`：`git fetch origin main` 后确认当前 worktree `HEAD` 已经不落后于本地 `main`，因此没有新的主分支提交需要并入，安全专题工作可以直接在当前基线上继续推进。
+- 这一轮不继续往正文里塞“下一章该写什么”，而是先处理一个更基础的结构问题：`bluebook/security/` 多个章节尾段混入了“这一章之后还缺什么”“对目录结构与后续研究的启发”“下一步最自然的延伸就是”这类内容。它们回答的是蓝皮书如何继续写，而不是 Claude Code 安全机制本身是什么。
+- 因此本轮开始正式执行安全专题正文净化：把 `41-67` 与 `95-105` 中统一模式的推进尾段从正文移除，只保留问题、证据、机制、哲学判断、技术启示与结语；同时新建 `docs/development/security/` 作为安全专题的隔离记忆层，专门承接后续候选、目录编排判断与编辑规则。
+- 这一步不是纯粹文案整理，而是安全研究结构本身的优化。因为当正文混入“应新增哪章”“应视为一条连续小循环”“最值钱候选是什么”时，控制面本体、源码证据与写作推进会被压成同一层，久而久之会让读者把蓝皮书写作轨迹误读成 Claude Code 机制的一部分。
+- 安全专题当前新的结构边界已经明确：
+  - `bluebook/security/` 只保留主线论证。
+  - `bluebook/security/appendix/` 只保留速查矩阵。
+  - `bluebook/security/source-notes/` 只保留源码剖面。
+  - `docs/development/security/` 只保留安全专题隔离记忆。
+- 这也意味着后续继续深化 `security/152+` 时，任何“下一步最自然的候选”“该补哪张表”“哪条链应继续怎样推进”的句子都应优先写到 `docs/development/security/long-term-memory.md`，而不是重新污染正文。
+
 ### A072. 安全遗忘与免责释放必须继续分层：Claude Code 会允许局部 forgetting，但仍坚持 same-session continuity、resume honesty 与 reopen liability
 
 - `security/150` 已经把 `finality` 与 `forgetting` 拆开，但如果继续往下追问，还会撞到更硬的一层：某些 trace 即使已经允许 forget，也不等于系统已经正式放弃同一责任线程的 resume、retry、reopen 与 future audit。Claude Code 在 `bridgePointer + bridgeMain + sessionRestore + conversationRecovery` 这组代码里已经把这条边界写出来了。

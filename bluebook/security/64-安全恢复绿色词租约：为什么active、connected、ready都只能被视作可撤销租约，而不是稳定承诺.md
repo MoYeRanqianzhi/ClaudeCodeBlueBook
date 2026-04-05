@@ -283,16 +283,6 @@ Claude Code 当前源码里最值得肯定的一点，
 
 `系统把可撤销租约说成了永久产权。`
 
-### 8.4 这一章之后还缺什么
-
-还缺一张更短的租约矩阵：
-
-`positive lexicon -> renewal condition -> revocation trigger -> lease length`
-
-也就是说，  
-下一步最自然的延伸就是：
-
-`appendix/48-安全恢复绿色词租约速查表`
 
 ## 9. 结语
 

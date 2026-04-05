@@ -402,16 +402,6 @@ Claude Code 源码里那些 refresh、reconnect、restore、hydrate、state sign
 2. 我还在等什么读回
 3. 哪个 signer 到位后才会清掉告警
 
-### 9.3 这一章之后还缺什么
-
-还缺一张更短的闭环矩阵：
-
-`repair path -> verifier -> signer -> 清除对象`
-
-也就是说，  
-下一步最自然的延伸就是：
-
-`appendix/38-安全恢复验证闭环速查表`
 
 ## 10. 结语
 
