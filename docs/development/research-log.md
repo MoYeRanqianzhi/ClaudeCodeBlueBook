@@ -20,6 +20,22 @@
   - `docs/development/security/` 只保留安全专题隔离记忆。
 - 这也意味着后续继续深化 `security/152+` 时，任何“下一步最自然的候选”“该补哪张表”“哪条链应继续怎样推进”的句子都应优先写到 `docs/development/security/long-term-memory.md`，而不是重新污染正文。
 
+### A074. 免责释放之后仍要继续分出归档关闭：Claude Code 把 active-surface close、resume honesty 与 environment offline 继续拆层治理
+
+- 在 `151` 里，安全主线已经把 `forgetting` 与 `liability release` 分开；但继续看 `bridgeMain` 会发现，源码并没有把“责任线程释放”继续压成“现在就可 archive close”。它还保留了更细的 active-surface close 语义。
+- `bridgeMain.ts:553-568` 说明 multi-session mode 中，completed session 会立刻 `archiveSession()`，目的只是避免它继续在 web UI 里 linger 成 stale。这证明 archive 在这里首先治理的是 active operational surface，而不是更深层的 semantic closure。
+- `bridgeMain.ts:1418-1577` 说明 graceful shutdown 默认会 `archiveSession + deregisterEnvironment`，目标是让 web UI 投影为 offline 并清理 Redis stream；而 `bridgeMain.ts:1515-1537` 又明确给出反例：single-session、known session、non-fatal exit 时必须跳过 `archive + deregister`，否则 printed resume command 会变成 lie。也就是说，哪怕本轮进程退出，也不代表对象现在可以安全退出活跃表面。
+- `bridgeMain.ts:2384-2398` 把 `archived / expired / login lapsed` 并列输出；`bridgeMain.ts:2524-2540` 则明确禁止在 transient reconnect failure 上做 `deregister`。这说明 archive close 的 gate 依赖的不是单一 archive bit，而是更细的 operational truth：是否仍能 resume、是否仍应 retry、是否应退出 active UI、是否已经进入真正死状态。
+- 这意味着安全主线在 `151` 之后最自然应继续长出 `152-安全免责释放与归档关闭分层`，并配套 `appendix/136`。该层回答的不是“还有没有责任”，而是“对象是否应退出活跃操作表面”。如果未来还要继续往下推，更强的下一层应是 `153` 去回答 `archive close` 是否等于 `audit-close`。
+
+证据:
+
+- `claude-code-source-code/src/bridge/bridgeMain.ts:553-568`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:1418-1577`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:1515-1537`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:2384-2398`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:2524-2540`
+
 ### A072. 安全遗忘与免责释放必须继续分层：Claude Code 会允许局部 forgetting，但仍坚持 same-session continuity、resume honesty 与 reopen liability
 
 - `security/150` 已经把 `finality` 与 `forgetting` 拆开，但如果继续往下追问，还会撞到更硬的一层：某些 trace 即使已经允许 forget，也不等于系统已经正式放弃同一责任线程的 resume、retry、reopen 与 future audit。Claude Code 在 `bridgePointer + bridgeMain + sessionRestore + conversationRecovery` 这组代码里已经把这条边界写出来了。

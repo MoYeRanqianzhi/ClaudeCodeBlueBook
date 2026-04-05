@@ -27,10 +27,10 @@
 
 ## 当前最值得继续深化的候选
 
-- 候选 `152`
-  方向：`liability release` 仍不等于 `audit-close / archive-close`
-  原因：`151` 已经证明“痕迹可忘不等于责任可释”，下一层最自然的问题就是“即使责任线程被释放，是否已经等于审计关闭、归档关闭与不可再追索”
-  证据起点：`src/bridge/bridgeMain.ts` 中 `archiveSession`、`deregisterEnvironment`、resume honesty 与 session gone/fatal reconnect 分流语义
+- 候选 `153`
+  方向：`archive close` 仍不等于 `audit-close`
+  原因：`152` 已经证明“责任可释不等于表面可封”，下一层最自然的问题就是“即使对象退出 active operational surface，是否已经等于审计关闭、历史义务关闭与不可再追索”
+  证据起点：`src/bridge/bridgeMain.ts` 中 `archiveSession` 的 idempotent/archive hygiene 语义、`deregisterEnvironment` 的 offline projection 语义，以及 `session not found` 把 archived / expired / login lapsed 并列输出的分流逻辑
 
 ## 持续约束
 
