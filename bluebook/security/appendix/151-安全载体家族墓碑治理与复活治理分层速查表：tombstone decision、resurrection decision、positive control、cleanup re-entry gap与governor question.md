@@ -1,0 +1,53 @@
+# 安全载体家族墓碑治理与复活治理分层速查表：tombstone decision、resurrection decision、positive control、cleanup re-entry gap与governor question
+
+## 1. 这一页服务于什么
+
+这一页服务于 [167-安全载体家族墓碑治理与复活治理分层：为什么artifact-family cleanup tombstone-governor signer不能越级冒充artifact-family cleanup resurrection-governor signer](../167-安全载体家族墓碑治理与复活治理分层：为什么artifact-family%20cleanup%20tombstone-governor%20signer不能越级冒充artifact-family%20cleanup%20resurrection-governor%20signer.md)。
+
+如果 `167` 的长文解释的是：
+
+`为什么决定对象退役后留下什么最小残留标记，与决定对象后来怎样重新回到 current world，仍然是两层治理主权，`
+
+那么这一页只做一件事：
+
+`把 repo 里现成的 tombstone decision / resurrection decision 正例，与 cleanup 线当前仍缺的 re-entry grammar，压成一张矩阵。`
+
+## 2. 墓碑治理与复活治理分层矩阵
+
+| line | tombstone decision | resurrection decision | positive control | cleanup re-entry gap | governor question | 关键证据 |
+| --- | --- | --- | --- | --- | --- | --- |
+| orphaned plugin versions | stamp `.orphaned_at` so retired version remains machine-visible | clear marker only for authoritative installed versions, then explicitly refresh active components | `removeOrphanedAtMarker()` + `refreshActivePlugins()` + `/reload-plugins` | cleanup line has no explicit rule for when retired cleanup artifacts may re-enter current world | who decides when a retired cleanup object is merely un-tombstoned versus truly current again | `cacheUtils.ts:69-92,122-171`; `refresh.ts:1-85`; `reload-plugins.ts:1-42`; `PluginInstallationManager.ts:47-113,149-176`; `useManagePlugins.ts:288-303` |
+| plan files | missing/retired plan may still leave slug/history/snapshot evidence | resume recovers only with lineage + evidence; fork restores content under a new slug | `copyPlanForResume()` / `copyPlanForFork()` / `recoverPlanFromMessages()` | cleanup line has no explicit rule for when old plan worlds may be restored and whether identity is reused | who decides when old cleanup path/promise/receipt returns with original identity vs new identity | `plans.ts:164-279`; `conversationRecovery.ts:540-555` |
+| transcript tombstones | emit/remove control signal for invalid orphaned messages | no generic resurrection path is implied by tombstone itself | tombstone removal path stays deletion-only | cleanup line could wrongly confuse marker removal with authorized recovery | what separate authority governs re-entry after tombstone consumption | `query.ts:713-719`; `utils/messages.ts:2954-2957`; `sessionStorage.ts:1466-1473` |
+| cleanup line overall | may eventually decide what post-retirement marker to leave | no explicit re-entry authority for retired cleanup artifacts is visible yet | resurrection governance exists elsewhere in repo | retired cleanup worlds still lack a formal comeback grammar | who governs if and how old cleanup objects rejoin current truth | cleanup source cluster + positive controls above |
+
+## 3. 三个最重要的判断问题
+
+判断一句“cleanup tombstone 已经完整”有没有越级，先问三句：
+
+1. 这只是 tombstone decision，还是已经明确对象后来如何重新回到 current world
+2. marker 被清掉之后，对象只是回到 disk/materialized world，还是已经重新被 active/runtime world 接纳
+3. 如果对象确实能回来，那么 evidence、identity 与可见层级由谁决定
+
+## 4. 最常见的五类误读
+
+| 误读 | 实际问题 |
+| --- | --- |
+| “墓碑能清掉，所以对象当然已经复活” | marker clearing != resurrection authority |
+| “只要对象重新在磁盘上出现，就已经恢复” | disk return != active/runtime re-entry |
+| “恢复旧内容就等于恢复旧身份” | content recovery != identity restoration |
+| “既然 tombstone grammar 存在，resurrection grammar 自然也有” | tombstone != resurrection governance |
+| “任何历史对象都能凭旧痕迹重新回来” | re-entry requires separate authority and evidence |
+
+## 5. 一条硬结论
+
+真正成熟的 comeback grammar 不是：
+
+`leave tombstone -> clear tombstone -> object is back`
+
+而是：
+
+`leave tombstone -> assign resurrection authority -> verify evidence/lineage -> choose identity/surface of return -> re-admit object to current world`
+
+只有中间三层被补上，  
+cleanup tombstone governance 才不会继续停留在“知道对象退场后留什么痕迹，却没人负责决定它是否还能回来、以及回来时算谁”的半治理状态。

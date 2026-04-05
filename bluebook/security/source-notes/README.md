@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 9 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 17 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -28,6 +28,14 @@
 7. [07-cleanup执行诚实性、TaskOutput与保留期回执缺口](07-cleanup%E6%89%A7%E8%A1%8C%E8%AF%9A%E5%AE%9E%E6%80%A7%E3%80%81TaskOutput%E4%B8%8E%E4%BF%9D%E7%95%99%E6%9C%9F%E5%9B%9E%E6%89%A7%E7%BC%BA%E5%8F%A3.md)
 8. [08-diskOutput、cleanup与concurrentSessions的清理隔离边界](08-diskOutput%E3%80%81cleanup%E4%B8%8EconcurrentSessions%E7%9A%84%E6%B8%85%E7%90%86%E9%9A%94%E7%A6%BB%E8%BE%B9%E7%95%8C.md)
 9. [09-task outputs、tool-results、transcripts与plans的清理家族宪法](09-task%20outputs%E3%80%81tool-results%E3%80%81transcripts%E4%B8%8Eplans%E7%9A%84%E6%B8%85%E7%90%86%E5%AE%B6%E6%97%8F%E5%AE%AA%E6%B3%95.md)
+10. [10-plans、sessionEnvironment与fileHistory的清理制度理由与漂移边界](10-plans%E3%80%81sessionEnvironment%E4%B8%8EfileHistory%E7%9A%84%E6%B8%85%E7%90%86%E5%88%B6%E5%BA%A6%E7%90%86%E7%94%B1%E4%B8%8E%E6%BC%82%E7%A7%BB%E8%BE%B9%E7%95%8C.md)
+11. [11-cleanup、settings与path helpers的载体家族元数据缺口](11-cleanup%E3%80%81settings%E4%B8%8Epath%20helpers%E7%9A%84%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%85%83%E6%95%B0%E6%8D%AE%E7%BC%BA%E5%8F%A3.md)
+12. [12-cleanupPeriodDays、backgroundHousekeeping与CleanupResult的运行时符合性缺口](12-cleanupPeriodDays%E3%80%81backgroundHousekeeping%E4%B8%8ECleanupResult%E7%9A%84%E8%BF%90%E8%A1%8C%E6%97%B6%E7%AC%A6%E5%90%88%E6%80%A7%E7%BC%BA%E5%8F%A3.md)
+13. [13-microCompact、verifyAutoModeGateAccess与cleanup的反漂移验证边界](13-microCompact%E3%80%81verifyAutoModeGateAccess%E4%B8%8Ecleanup%E7%9A%84%E5%8F%8D%E6%BC%82%E7%A7%BB%E9%AA%8C%E8%AF%81%E8%BE%B9%E7%95%8C.md)
+14. [14-verifyAndDemote、auto-mode gate与cleanup的修复治理边界](14-verifyAndDemote%E3%80%81auto-mode%20gate%E4%B8%8Ecleanup%E7%9A%84%E4%BF%AE%E5%A4%8D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+15. [15-model migrations、plugin orphan cleanup与plans continuity的迁移治理边界](15-model%20migrations%E3%80%81plugin%20orphan%20cleanup%E4%B8%8Eplans%20continuity%E7%9A%84%E8%BF%81%E7%A7%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+16. [16-model deprecation、migration notifications与plugin orphan grace window的退役治理边界](16-model%20deprecation%E3%80%81migration%20notifications%E4%B8%8Eplugin%20orphan%20grace%20window%E7%9A%84%E9%80%80%E5%BD%B9%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+17. [17-tombstone messages、.orphaned_at与migration timestamps的墓碑治理边界](17-tombstone%20messages%E3%80%81.orphaned_at%E4%B8%8Emigration%20timestamps%E7%9A%84%E5%A2%93%E7%A2%91%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 

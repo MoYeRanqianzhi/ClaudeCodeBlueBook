@@ -11,6 +11,14 @@
 - `156` 已经稳定写出执行诚实性边界：retention declaration、future-write suppression、runtime scheduling、cleanup execution 与 post-hoc side-effect explanation 不是同一层，`retention governance` 也因此不能越级冒充 `retention enforcement honesty`。
 - `157` 已经稳定写出清理隔离边界：task-output isolation repair、project-dir cleanup sweep、shared temp readability 与 live-session ledger 不是同一层，`retention enforcement honesty` 也因此不能越级冒充 `cleanup isolation`。
 - `158` 已经稳定写出家族宪法边界：task outputs、scratchpad、tool-results、transcripts、plans、file-history 与 session-env 当前处在多种 cleanup constitution 并存的世界里，`cleanup isolation` 也因此不能越级冒充 `artifact-family cleanup constitution`。
+- `159` 已经稳定写出制度理由边界：不同 artifact family 不只是活在不同 cleanup constitution 里，还活在不同 risk object、reader scope、recovery duty 与 host visibility 下；尤其 `plansDirectory` 与 `cleanupOldPlanFiles()` 的不对称已经暴露出 storage rationale 与 cleanup rationale 可能漂移，`artifact-family cleanup constitution` 也因此不能越级冒充 `artifact-family cleanup rationale`。
+- `160` 已经稳定写出制度元数据边界：不同 artifact family 的制度理由虽然已经存在，但仍主要散落在 path helper、permission helper、resume helper、settings schema、注释与 cleanup dispatcher 之间；`cleanupOldMessageFilesInBackground()` 的硬编码调度与 `plansDirectory` 的传播失灵已经说明 `artifact-family cleanup rationale` 仍不能越级冒充 `artifact-family cleanup metadata`。
+- `161` 已经稳定写出运行时符合性边界：即便 metadata signal 存在，runtime 仍可能展示 temporal gap、propagation gap 与 receipt gap；`cleanupPeriodDays=0` 的“startup delete”文案、`shouldSkipPersistence()` 的即时抑写、`backgroundHousekeeping` 的延迟调度、validation skip 与 `CleanupResult` 的未汇总共同说明 `artifact-family cleanup metadata` 仍不能越级冒充 `artifact-family cleanup runtime-conformance`。
+- `162` 已经稳定写出反漂移验证边界：一次 runtime conform 仍不等于系统已经具备长期 anti-drift verification；`microCompact.ts` 的 source-of-truth test、`switchSession()` 的原子防漂移与 `verifyAutoModeGateAccess()` 的 live re-verification 共同构成 repo 的正对照，而 cleanup 线当前仍缺同等级 verifier，因此 `artifact-family cleanup runtime-conformance` 仍不能越级冒充 `artifact-family cleanup anti-drift verification`。
+- `163` 已经稳定写出修复治理边界：repo 在 auto-mode 与 plugin 线已明确展示 verification 与 governance consequence 的分层，但 cleanup 线当前仍未正式分配 drift 报警后的 repair authority；因此 `artifact-family cleanup anti-drift verification` 仍不能越级冒充 `artifact-family cleanup repair-governance`。
+- `164` 已经稳定写出迁移治理边界：repo 在模型、配置键、插件缓存与 plan continuity 上已明确展示 migration governance 的存在，说明决定“怎么修”与决定“旧世界怎样退场”仍然是两层主权；因此 `artifact-family cleanup repair-governance` 仍不能越级冒充 `artifact-family cleanup migration-governance`。
+- `165` 已经稳定写出退役治理边界：repo 在模型退役日期、迁移通知、legacy runtime remap、plugin orphan grace window 与 search visibility cutoff 上已明确展示 sunset governance 的存在，说明决定“旧世界怎样过渡”与决定“兼容期何时正式结束”仍然是两层主权；因此 `artifact-family cleanup migration-governance` 仍不能越级冒充 `artifact-family cleanup sunset-governance`。
+- `166` 已经稳定写出墓碑治理边界：repo 在 `tombstone` messages、`.orphaned_at` markers、marker-driven exclusion grammar 与 migration timestamps 上已明确展示 tombstone governance 的存在，说明决定“旧世界何时结束”与决定“结束后还留下什么最小残留标记”仍然是两层主权；因此 `artifact-family cleanup sunset-governance` 仍不能越级冒充 `artifact-family cleanup tombstone-governance`。
 
 ## 本轮已净化的正文段
 
@@ -28,14 +36,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-158`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution` signer/governor/honesty/isolation/constitution ladder
+- `147-166`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `159`
-  方向：`artifact-family cleanup constitution signer` 仍不等于 `artifact-family cleanup rationale signer`
-  原因：`158` 已经证明当前 repo 是多宪法并存，而非统一删除法。但下一层更值钱的问题不再只是“它们不同”，而是“为什么这些 family 必须不同”。也就是：谁配解释 task outputs/scratchpad 走 temp-dir session constitution，而 plans、file-history、session-env、tool-results、transcripts 分别落在别的 constitution 上；这需要从风险对象、恢复职责、读者范围与宿主可见性重新抽象每个 family 的制度理由
-  证据起点：`src/utils/task/diskOutput.ts`、`src/utils/permissions/filesystem.ts`、`src/utils/toolResultStorage.ts`、`src/utils/sessionStorage.ts`、`src/utils/plans.ts` 与 `src/utils/cleanup.ts` 中不同 family 的存储作用域、权限注释与 cleanup root 设计
+- 候选 `167`
+  方向：`artifact-family cleanup tombstone-governor signer` 仍不等于 `artifact-family cleanup resurrection-governor signer`
+  原因：`166` 已经证明对象退役后需要最小残留标记；但谁配留下墓碑，并不自动回答谁配清除墓碑、恢复对象、或把历史对象重新带回当前世界。也就是：谁配决定旧 path、旧 promise、旧 receipt 的 tombstone 何时可被撤销、何时可被恢复为当前 truth，这仍是另一层 resurrection governance 问题
+  证据起点：`src/utils/plugins/cacheUtils.ts` 的 `removeOrphanedAtMarker()`、`src/utils/plans.ts` 的 `copyPlanForResume()` 与 `recoverPlanFromMessages()`、`src/utils/sessionStorage.ts` 的 tombstone removal path 与 cleanup 线潜在的旧 plan path / old receipt 世界形成对照：repo 已展示墓碑存在与部分恢复路径，但 cleanup 线尚未回答谁配让已退役世界重新回到 current world
 
 ## 持续约束
 
