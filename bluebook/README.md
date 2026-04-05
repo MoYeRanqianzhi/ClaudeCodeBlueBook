@@ -27,7 +27,7 @@
 ## 专题目录
 
 - [navigation/README.md](navigation/README.md): 104 篇，阅读地图、问题反查与机制回灌
-- [architecture/README.md](architecture/README.md): 81 篇，运行时结构、状态机和控制面
+- [architecture/README.md](architecture/README.md): 84 篇，运行时结构、状态机、请求装配、治理控制面与演化边界
 - [api/README.md](api/README.md): 95 篇，命令、工具、状态、宿主与扩展协议
 - [guides/README.md](guides/README.md): 98 篇，使用方法、模板、审读清单与构建手册
 - [philosophy/README.md](philosophy/README.md): 83 篇，第一性原理、治理观和源码先进性解释

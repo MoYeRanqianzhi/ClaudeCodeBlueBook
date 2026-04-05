@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 新增三篇更深的架构专题：
+  - `architecture/82` 把 Prompt 魔力继续压成请求装配流水线，补足 `authority chain / section registry / protocol transcript / lawful forgetting / cache-safe forks` 的统一视角。
+  - `architecture/83` 把安全设计与省 Token 设计继续压成反扩张治理流水线，补足 `trusted inputs / distributed ask arbitration / deferred visibility / continuation pricing` 的统一视角。
+  - `architecture/84` 把源码先进性继续压成权威面与反僵尸图谱，补足 `single-writer surfaces / 409 adoption / pointer freshness / release shaping` 的统一视角。
 - 第二批正文去记忆化已经完成：
   - `casebooks/` 中 60 篇仍带 `改写路径` 的案例正文已整体迁出整改待办，案例页只保留失败样本。
   - `navigation/` 中 93 篇仍带“如果问题是 / 建议顺序 / 继续长出某层”模板话术的入口页已统一改写为稳定阅读提示。
