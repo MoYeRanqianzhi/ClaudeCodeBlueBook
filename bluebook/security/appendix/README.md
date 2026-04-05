@@ -42,6 +42,9 @@
 - `133`
   完成与终局分层。
   入口：[133-安全完成与终局分层速查表：surface、finality scope、what it still cannot sign、stronger future readback与future cleanup implication](133-%E5%AE%89%E5%85%A8%E5%AE%8C%E6%88%90%E4%B8%8E%E7%BB%88%E5%B1%80%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Asurface%E3%80%81finality%20scope%E3%80%81what%20it%20still%20cannot%20sign%E3%80%81stronger%20future%20readback%E4%B8%8Efuture%20cleanup%20implication.md)。
+- `134`
+  终局与遗忘分层。
+  入口：[134-安全终局与遗忘分层速查表：artifact、forgetting owner、forgetting gate、why finality is still not enough与future cleanup implication](134-%E5%AE%89%E5%85%A8%E7%BB%88%E5%B1%80%E4%B8%8E%E9%81%97%E5%BF%98%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Aartifact%E3%80%81forgetting%20owner%E3%80%81forgetting%20gate%E3%80%81why%20finality%20is%20still%20not%20enough%E4%B8%8Efuture%20cleanup%20implication.md)。
 
 ## 怎么配合主线读
 
