@@ -6,6 +6,7 @@
 - `bluebook/security/appendix/` 只承载速查矩阵，不承载章节推进提示。
 - `bluebook/security/source-notes/` 只承载单机制源码剖面，不承载研究推进日志。
 - 安全专题后续候选、目录编排判断与编辑规则统一沉淀到 `docs/development/security/`。
+- `154` 已经稳定写出一条新边界：`read-path filtering`、`semantic removal`、`local rewrite`、`workspace rewind delete` 与 `retention cleanup` 不是同一种删除，`audit close` 也因此不能越级冒充 `irreversible erasure`。
 
 ## 本轮已净化的正文段
 
@@ -23,14 +24,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-151`: `receipt -> completion -> finality -> forgetting -> liability release` signer ladder
+- `147-154`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure` signer ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `154`
-  方向：`audit close` 仍不等于 `irreversible erasure / evidence destruction`
-  原因：`153` 已经证明“表面可封不等于证据可封”，下一层最自然的问题就是“即使 transcript、metadata、history 不再参与恢复或审计，它们是否已经等于被不可逆销毁”
-  证据起点：`src/utils/sessionStorage.ts` 的 transcript file / tail metadata / loadFullLog 路径、file-history backup 目录，以及任何显式删除、覆盖、GC、compaction 保留边界相关实现
+- 候选 `155`
+  方向：`irreversible erasure` 仍不等于 `retention-policy sovereignty / destruction governance`
+  原因：`154` 已经证明“退出 audit world”不等于“载体被 destroy”；而 `cleanup.ts`、`backgroundHousekeeping.ts` 与 settings schema 又说明真正 delete/rm 的时机其实受 `cleanupPeriodDays + background housekeeping` 控制。下一层最自然的问题因此变成：谁配定义保留期，谁只配执行删除，谁又只是在读路径里做过滤却不配宣称自己掌握 destruction policy
+  证据起点：`src/utils/cleanup.ts` 的 `getCutoffDate/cleanupOldSessionFiles/cleanupOldFileHistoryBackups`，`src/utils/backgroundHousekeeping.ts` 的后台调度，以及 `src/utils/settings/types.ts` 对 `cleanupPeriodDays` 的语义定义
 
 ## 持续约束
 

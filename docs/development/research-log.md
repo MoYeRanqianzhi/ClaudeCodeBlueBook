@@ -7,6 +7,14 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A076. 审计关闭之后仍要继续分出不可逆销毁：Claude Code 已把读取侧过滤、局部改写、工作区回滚删除与保留期销毁拆成不同控制面
+
+- 本轮开始前再次执行了主分支同步检查：在当前 worktree 中运行 `git fetch origin main` 后确认 `origin/main` 没有比当前研究分支更新的内容，而当前分支已经包含本地 `main`，因此本轮可直接在既有安全研究基线上继续推进。
+- 本轮新增 `154-安全审计关闭与不可逆销毁分层`，核心判断是：`153` 已经证明“表面可封不等于证据可封”，但继续看 `sessionStoragePortable + sessionStorage + fileHistory + cleanup` 会发现，“不再参与 audit / resume world”仍不等于“载体已经被 destroy”。源码把至少五种常被混写的动作拆开了：read-path filtering、semantic removal replay、local transcript rewrite、workspace rewind delete、retention-based cleanup。
+- 其中最硬的分界点有三组。第一组是读取侧过滤：`sessionStoragePortable.ts:613-645,717-792` 的 `readTranscriptForLoad()` 与 `sessionStorage.ts:3227-3465` 的 `walkChainBeforeParse()` 都是在收缩 loader 输入，而不是回写原文件；`sessionStorage.ts:1959-1977` 更直接写出 `The JSONL is append-only, so removed messages stay on disk`，明确说明有些 removed 只是 replay semantics，不是 carrier destruction。第二组是局部 destructive write：`sessionStorage.ts:863-949` 的 `removeMessageByUuid()` 会 `truncate/writeFile`，但它只覆盖某个本地 transcript 的 orphan repair；`sessionStorage.ts:1595-1608,1654-1660` 的 hydration rewrite 也只是本地镜像替换，不等于系统级 destroy sovereignty。第三组是真正更接近 retention delete 的控制面：`cleanup.ts:25-31,155-257,305-347` 会按 `cleanupPeriodDays` 对旧 `.jsonl`、`.cast`、tool-results 与 file-history session dirs 做 `unlink/rm`，而 `backgroundHousekeeping.ts:31-93` 则把这种 cleanup 放进后台 housekeeping 调度。
+- 与主线长文一起，本轮同步补入 `appendix/138-安全审计关闭与不可逆销毁分层速查表` 与 `source-notes/05-sessionStoragePortable、sessionStorage、fileHistory与cleanup的不可逆销毁边界`。这样安全目录在 `153` 之后没有直接跳去更抽象的治理口号，而是先把“看不见”“不再消费”“局部重写”“工作区删除”“保留期销毁”五种语义压出清晰层级，避免正文再次把读路径优化误说成 destroy verdict。
+- 这也使安全主线的 signer ladder 正式延长为 `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure`。如果下一轮还要继续深化，最自然的候选不再是继续补“还能不能删”，而是进入 `155` 去回答：既然真正的 delete/rm 已经显示为 retention housekeeping，那么谁配定义 `cleanupPeriodDays`、谁只配执行、谁又只是读取侧过滤器而不配自称 destruction governor。
+
 ### A073. 安全专题正文与隔离记忆开始正式分层：章节推进计划不再混写进 `bluebook/security/` 正文
 
 - 本轮首先重新检查并同步了 `main`：`git fetch origin main` 后确认当前 worktree `HEAD` 已经不落后于本地 `main`，因此没有新的主分支提交需要并入，安全专题工作可以直接在当前基线上继续推进。
