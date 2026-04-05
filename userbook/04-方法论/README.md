@@ -1,0 +1,6 @@
+# 方法论
+
+用户手册不该只告诉你“有哪些按钮”，还要告诉你怎样继续深挖。
+
+- [01-第一性原理：Claude Code 到底是什么.md](./01-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%EF%BC%9AClaude%20Code%20%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88.md)
+- [02-苏格拉底反诘：这本 Userbook 还缺什么.md](./02-%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E8%AF%98%EF%BC%9A%E8%BF%99%E6%9C%AC%20Userbook%20%E8%BF%98%E7%BC%BA%E4%BB%80%E4%B9%88.md)
