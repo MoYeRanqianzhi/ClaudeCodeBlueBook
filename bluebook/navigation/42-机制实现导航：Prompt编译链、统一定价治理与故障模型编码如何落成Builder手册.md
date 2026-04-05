@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么机制哲学层之后，蓝皮书还必须继续长出一层“机制实现层”。
+1. 为什么机制哲学层之后，蓝皮书仍需要单独讨论“机制实现层”。
 2. 为什么 Prompt 线如果不继续落成 section registry、stable boundary、protocol rewrite 与 continue qualification 的实现顺序，就会重新退回抽象哲学。
 3. 为什么治理线如果不继续落成 authority source、decision window、Context Usage 与 rollback object 的实现顺序，就会重新退回概念治理。
 4. 为什么结构线如果不继续落成 authority surface、dependency seam、stale-safe merge 与 recovery boundary 的实现顺序，就会重新退回结构美学。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 编译链实现线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把 Prompt 魔力真正写成一条可实现、可调试、可继续的编译链。
 - 怎样避免 section registry、stable prefix、protocol rewrite 与 lawful forgetting 只留在理念层。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/51`
 2. `../philosophy/81`
@@ -35,12 +35,12 @@
 
 ## 2. 统一定价治理实现线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把“拒绝免费扩张”的治理哲学真正落成控制面实现。
 - 怎样避免 authority source、decision window、continuation gate 与 rollback object 只剩概念名词。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/52`
 2. `../philosophy/82`
@@ -57,12 +57,12 @@
 
 ## 3. 故障模型编码实现线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把“故障模型先于模块美学”的判断真正落成源码结构。
 - 怎样避免 authority、seam、stale-safe merge、recovery asset 与 anti-zombie 只停在结构原则。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/53`
 2. `../philosophy/83`

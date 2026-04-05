@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复协议层之后，蓝皮书还必须继续长出一层“宿主修复演练层”。
+1. 为什么宿主修复协议层之后，蓝皮书仍需要单独讨论“宿主修复演练层”。
 2. 为什么 Prompt 线如果不继续压成共享升级卡、rollback drill 与 re-entry drill，就会重新退回 reviewer 解释、旧摘要回退与 continue 侥幸。
 3. 为什么治理线如果不继续压成共享升级卡、rollback drill 与 re-entry drill，就会重新退回 mode 切换、审批补救与 token 面板调参。
 4. 为什么结构线如果不继续压成共享升级卡、rollback drill 与 re-entry drill，就会重新退回 pointer 修补、重连碰碰运气与日志繁荣。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复演练线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该怎样围绕同一个 `compiled request truth` 演练 repair object，而不是只看修复解释是否充分。
 - 哪些 rollback drill 与 re-entry drill 一旦失败，就说明 Prompt 世界已经重新长出第二真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/57`
 2. `../playbooks/38`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复演练线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 团队到底该怎样围绕同一个治理对象演练 authority repair，而不是继续围绕 mode、审批与 token 图表补救。
 - 哪些 rollback drill 与 re-entry drill 一旦失败，就说明安全设计与省 token 设计已经重新脱钩。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/58`
 2. `../playbooks/39`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复演练线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 团队到底该怎样围绕同一个 authority object 演练 authority recovery，而不是继续围绕 pointer、成功率与重连结果补救。
 - 哪些 rollback drill 与 re-entry drill 一旦失败，就说明结构真相面已经重新退回 breadcrumb 篡位、写回分叉与 anti-zombie 口头化。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/59`
 2. `../playbooks/40`

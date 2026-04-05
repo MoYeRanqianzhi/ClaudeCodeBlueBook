@@ -76,11 +76,6 @@ Prompt 宿主修复稳态纠偏再纠偏改写执行最危险的，不是：
 
 - `reject verdict` 应先绑定同一个 `restored_request_object_id + compiled_request_hash + section_registry_snapshot`，并先完成 `demoted_recorrection_refs` 的降级，再宣布 `steady_state_restituted`。
 
-### 改写路径
-
-1. 把“rewrite 写得更完整”降为次级信号。
-2. 把 `rewrite_session_id + restored_request_object_id + compiled_request_hash + section_registry_snapshot` 提升为前提。
-3. 任何先看 prose、后看对象的 Prompt rewrite execution 都判为 drift。
 
 ## 3. 假protocol rewrite 与假reject顺序：reject by readability before truth
 
@@ -101,11 +96,6 @@ Prompt 宿主修复稳态纠偏再纠偏改写执行最危险的，不是：
 
 - `reject verdict order` 必须先证明 truth、transcript、prefix 与 forgetting 仍围绕同一个编译对象，再决定 `steady_state_restituted`、`truth_recompile_required`、`protocol_repair_required`、`reentry_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 把 UI transcript、summary prose 与 handoff 说明降为评审材料。
-2. 把 `compiled_request_hash + protocol_transcript_health + tool_pairing_health + stable_prefix_boundary + lawful_forgetting_boundary + summary_override_blocked` 提升为正式对象。
-3. 任何“读起来更顺即视为 rewrite 已完成”的 Prompt rewrite execution 都判为 drift。
 
 ## 4. 假threshold liability：liability by polite note
 
@@ -127,11 +117,6 @@ Prompt 宿主修复稳态纠偏再纠偏改写执行最危险的，不是：
 
 - continuation 与 threshold liability 必须同时成立；没有 threshold，就只能 `hard_reject`、`truth_recompile_required`、`protocol_repair_required`、`reentry_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 禁止“还没报错”充当 continuation 资格。
-2. 把 `continue_qualification + token_budget_ready + threshold_liability_reinstatement + truth_break_trigger + reopen_required_when` 提升为硬条件。
-3. 任何阈值已失忆却仍继续放行的 Prompt rewrite execution 都判为 drift。
 
 ## 5. 为什么这会直接杀死 Prompt 的魔力
 

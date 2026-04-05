@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏失真反例层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏层”。
+1. 为什么宿主修复稳态纠偏失真反例层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏层”。
 2. 为什么 Prompt 线如果不继续把假修正卡、口头真相恢复、前缀复托管表演与阈值装饰化压回同一个 `compiled request truth`，就会重新把 Prompt 魔力退回更会解释的 correction prose。
 3. 为什么治理线如果不继续把假纠偏、假再托管、默认继续回魂与假阈值重绑压回同一个统一定价治理对象，就会重新把安全设计与省 token 设计拆回 mode 面板、usage dashboard 与经验保守建议。
 4. 为什么结构线如果不继续把假修正、伪复证、旁路写回与假责任保留压回同一个结构真相面，就会重新把源码先进性退回 pointer 健康感、telemetry 转绿、archive prose 与作者记忆。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把 Prompt steady-state correction execution distortion 从假修正卡、口头真相恢复、前缀复托管表演与阈值装饰化重新压回同一个 `compiled request truth`。
 - 哪些现象一旦出现，就说明 `steady_correction_object`、`truth_continuity_recovery`、`stable_prefix_recustody`、`continuation_requalification` 与 `threshold_reinstatement` 已重新退回 prose、平静感与默认继续，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/78`
 2. `../casebooks/49`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把治理 steady-state correction execution distortion 从假纠偏、假再托管、默认继续回魂与假阈值重绑重新压回同一个统一定价治理对象。
 - 哪些现象一旦出现，就说明 `authority_reassertion`、`ledger_reseal`、`window_refreeze`、`continuation_repricing`、`capability_recustody` 与 `threshold_rebinding` 已重新退回 mode 投影、dashboard 投影与默认继续，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/79`
 2. `../casebooks/50`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把结构 steady-state correction execution distortion 从假修正、伪复证、旁路写回与假责任保留重新压回同一个结构真相面。
 - 哪些现象一旦出现，就说明 `authority_rebind`、`resume_lineage_rebuild`、`writeback_recustody`、`anti_zombie_reproof`、`archive_truth_restitution` 与 `reservation_rebinding` 已重新退回 pointer、telemetry、archive prose 与作者说明，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/80`
 2. `../casebooks/51`

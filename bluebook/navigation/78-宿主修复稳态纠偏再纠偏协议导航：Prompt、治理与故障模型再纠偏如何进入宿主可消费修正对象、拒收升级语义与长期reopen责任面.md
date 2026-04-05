@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏协议层”。
+1. 为什么宿主修复稳态纠偏再纠偏层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏协议层”。
 2. 为什么 Prompt 线如果不继续把 `compiled request truth` 归还、`protocol transcript` 修复、`lawful forgetting` 重封、`continuation qualification` 重绑与 `threshold liability` 恢复压成正式对象，就会重新把 Prompt 魔力退回 correction prose、UI 历史与默认继续。
 3. 为什么治理线如果不继续把 `authority source` 归还、`ledger` 重封、`decision window` 重冻、`continuation pricing` 重绑、`capability liability` 重托管与 `threshold` 重绑压成正式对象，就会重新把安全设计与省 token 设计拆回 mode 面板、usage dashboard 与经验保守建议。
 4. 为什么结构线如果不继续把 `authority surface` 归还、`single-source` 重封、`resume lineage` 复证、`writeback custody` 重绑、`anti-zombie evidence` 归还与 `reservation liability` 重绑压成正式对象，就会重新把源码先进性退回 pointer 健康感、telemetry 转绿、archive prose 与作者说明。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该消费哪些正式对象，才能证明 Prompt 世界已经把 correction execution distortion 重新压回同一个 `compiled request truth`。
 - 哪些 recorrection verdict 一旦出现，就说明当前不是“再纠偏已完成”，而是应 `hard reject`、`truth recompile required`、`protocol repair required`、`reentry required` 或 `reopen required`。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/75`
 2. `../guides/78`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该消费哪些正式对象，才能证明治理控制面已经把 correction execution distortion 重新压回同一个统一定价治理对象。
 - 哪些 recorrection verdict 一旦出现，就说明 authority、ledger、window、pricing、capability liability 与 threshold 仍在 mode 投影、dashboard 投影与默认继续里漂移，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/76`
 2. `../guides/79`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该消费哪些正式对象，才能证明结构真相面已经把 correction execution distortion 重新压回 authority、lineage、writeback、anti-zombie、archive 与 reservation 共用的同一边界。
 - 哪些 recorrection verdict 一旦出现，就说明当前只是更制度化的健康叙事，而不是 later 维护者可独立消费的结构真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/77`
 2. `../guides/80`

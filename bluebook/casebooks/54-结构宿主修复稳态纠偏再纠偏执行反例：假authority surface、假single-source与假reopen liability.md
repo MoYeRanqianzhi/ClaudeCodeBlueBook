@@ -74,11 +74,6 @@
 
 - `reject verdict` 应先证明 authority object 仍唯一、仍被重新绑定，再宣布 `steady_state_restituted`。
 
-### 改写路径
-
-1. 把 pointer 与稳定感说明降为投影信号。
-2. 把 `authority_surface_restitution + authority_object_id + authoritative_path + writer_chokepoint` 提升为前提。
-3. 任何只看入口就宣布 restored 的结构 recorrection 都判为 drift。
 
 ## 3. 假single-source 与假lineage reproof：truth by directory aesthetics
 
@@ -99,11 +94,6 @@
 
 - single-source 与 lineage 必须围绕引用边界、dependency seam 与恢复顺序对象，而不是围绕目录印象与 reconnect 结果。
 
-### 改写路径
-
-1. 把目录整洁度与 reconnect 成功感降为观察信号。
-2. 把 `single_source_refs + dependency_seam_status + resume_lineage_ref + return_lineage + generation_regression_detected` 提升为正式对象。
-3. 任何“结构更像单点、结果也没坏就算复证”的结构 recorrection 都判为 drift。
 
 ## 4. 假anti-zombie evidence：reproof by archive prose
 
@@ -123,11 +113,6 @@
 
 - anti-zombie evidence restitution 与 archive truth 应首先是可审计证据，其次才是复盘说明。
 
-### 改写路径
-
-1. 把复盘文字与日志截图降为解释材料。
-2. 把 `anti_zombie_evidence_ref + stale_writer_evidence + orphan_session_resolved + archive_truth_ref` 提升为正式对象。
-3. 任何只听解释、不验证据的结构 recorrection 都判为 drift。
 
 ## 5. 假reopen liability：liability by reconnect hint
 
@@ -148,11 +133,6 @@
 
 - reopen liability 应围绕 authority、writeback 与 boundary，而不是围绕 reconnect 与旧入口。
 
-### 改写路径
-
-1. 把 reconnect 提示降为动作说明，不再当 liability 对象。
-2. 把 `reopen_reservation_boundary + reservation_owner + threshold_retained_until + return_writeback_path` 提升为正式对象。
-3. 任何只让 later 团队“以后再试一次恢复”的结构 recorrection 都判为 drift。
 
 ## 6. 苏格拉底式追问
 

@@ -74,11 +74,6 @@ Prompt 宿主修复监护执行最危险的，不是：
 
 - watch verdict 应先绑定同一个 request object，再宣布 stable under watch。
 
-### 改写路径
-
-1. 把值班备注降为注释。
-2. 把 `watch_window_id + restored_request_object_id + compiled_request_hash` 提升为监护前提。
-3. 任何先看 note、后看对象的 Prompt watch 都判为 drift。
 
 ## 3. drift ledger 故事化：baseline drift 退回解释文本
 
@@ -98,11 +93,6 @@ Prompt 宿主修复监护执行最危险的，不是：
 
 - watch 应持续围绕 protocol witness 与 lawful forgetting witness 记账，而不是让观察说明替代它。
 
-### 改写路径
-
-1. 把观察说明降为评审材料。
-2. 把 `protocol_truth_witness + lawful_forgetting_witness + baseline_reset_witness + drift_events` 提升为正式对象。
-3. 任何“解释成立即视为 baseline 稳定”的 Prompt watch 都判为 drift。
 
 ## 4. 假冻结：handoff freeze 退回提醒 later 小心
 
@@ -123,11 +113,6 @@ Prompt 宿主修复监护执行最危险的，不是：
 
 - handoff freeze 应阻断 continuation object 的消费资格，而不是只提醒 later 团队小心。
 
-### 改写路径
-
-1. 把风险提示降为 handoff 注释。
-2. 把 `handoff_watch_status + continuation_object_attested + consumer_readiness_handoff` 提升为冻结硬条件。
-3. 任何只写提示、不阻断对象消费的 Prompt watch 都判为 drift。
 
 ## 5. 假重开：reopen gate 退回按钮状态与旧消息
 
@@ -148,11 +133,6 @@ Prompt 宿主修复监护执行最危险的，不是：
 
 - reopen 应围绕对象边界、precondition 与 continuation object，而不是围绕“现在没被阻止”。
 
-### 改写路径
-
-1. 禁止按钮可点充当 reopen 资格。
-2. 把 `reopen_trigger + rollback_boundary + re_entry_warranty + pending_action_ref` 提升为正式对象。
-3. 任何默认从旧消息与旧 summary 重开的 Prompt watch 都判为 drift。
 
 ## 6. watch 过期装饰化：deadline 变成日历提醒
 
@@ -173,11 +153,6 @@ Prompt 宿主修复监护执行最危险的，不是：
 
 - watch deadline 应是 verdict 升级器，而不是日历装饰。
 
-### 改写路径
-
-1. 把日历提醒降为辅助信号。
-2. 把 `watch_deadline + watch_verdict + reopen_gate` 提升为正式时态对象。
-3. 任何过期后仍只提醒不升级的 Prompt watch 都判为 drift。
 
 ## 7. 苏格拉底式追问
 

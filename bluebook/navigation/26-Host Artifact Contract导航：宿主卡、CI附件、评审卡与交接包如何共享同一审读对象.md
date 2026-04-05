@@ -6,19 +6,19 @@
 
 它主要回答四个问题：
 
-1. 为什么 Host Implementation 审读模板层之后还必须继续长出 host artifact contract 层。
+1. 为什么 Host Implementation 审读模板层之后仍需要单独讨论 host artifact contract 层。
 2. 为什么 Prompt、治理与结构三条线都需要把 shared header 继续翻译成正式工件协议。
 3. 怎样让宿主卡、CI 附件、评审卡与 handoff package 共享同一审读对象，只保留不同展开深度。
 4. 怎样用苏格拉底式追问避免把这层写成“更多字段”和“更多表单”。
 
 ## 1. Prompt Host Artifact Contract
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样让 Prompt 线的宿主卡、CI 附件、评审卡与 handoff package 都围绕 compiled request truth、stable bytes、lawful forgetting ABI 与 next-step guard 生成。
 - 怎样避免 Prompt 工件再次退回原文 prompt、宿主卡片、CI 绿灯与摘要包四套局部真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `25`
 2. `../api/37`
@@ -33,12 +33,12 @@
 
 ## 2. 治理 Host Artifact Contract
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样让治理线的宿主卡、CI 附件、评审卡与 handoff package 都围绕 current object、decision window、winner source、failure semantics 与 rollback object 生成。
 - 怎样避免治理工件再次退回仪表盘、阈值图、审批记录与口头交接四套局部 KPI。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `25`
 2. `../api/38`
@@ -53,12 +53,12 @@
 
 ## 3. 结构 Host Artifact Contract
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样让结构线的宿主卡、CI 附件、评审卡与 handoff package 都围绕 authoritative path、recovery asset ledger、anti-zombie evidence、retained assets 与 rollback object 生成。
 - 怎样避免结构工件再次退回目录图、恢复成功率、规则说明与作者讲解四套局部真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `25`
 2. `../api/39`

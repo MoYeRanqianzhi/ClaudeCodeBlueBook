@@ -75,11 +75,6 @@ Prompt 宿主验收执行最危险的，不是：
 
 - 执行卡应该验证对象是否还活着，而不是验证字段是否都出现过。
 
-### 改写路径
-
-1. 把“字段是否存在”降为最外层 lint。
-2. 把 `compiled request truth`、`protocol transcript health` 与 `lawful forgetting object` 提升为通过前提。
-3. 任何只因表单齐全就转绿的 Prompt 宿主验收都判为 drift。
 
 ## 3. 假拒收：有 reject reason 名字，却没有 reject 顺序
 
@@ -101,11 +96,6 @@ Prompt 宿主验收执行最危险的，不是：
 
 - reject 应先保护对象边界，后保护体验后果；任何倒序 reject 都是在纵容第二真相。
 
-### 改写路径
-
-1. 把 `raw_sysprompt_authority / missing_section_registry / transcript_repair_required / summary_only_handoff / continue_state_inconsistent` 固定成正式顺序。
-2. 禁止 later 补写 reject reason 取代现场判定。
-3. 任何“有 reject 词表、没 reject 顺序”的 Prompt 宿主验收都判为 drift。
 
 ## 4. 伪回退：回退到旧 prompt 文案、旧摘要与最后一条消息
 
@@ -127,11 +117,6 @@ Prompt 宿主验收执行最危险的，不是：
 
 - rollback 应围绕 `request_object`、boundary 与 preserved segment，而不是围绕“看起来像上一版”。
 
-### 改写路径
-
-1. 把 prompt 文案与 summary 降为辅助材料。
-2. 把 `rollback_object` 明确绑定到 `compiled request truth` 的上一个合法对象边界。
-3. 任何只回退文案、截图与最后一条消息的 Prompt rollback 都判为 drift。
 
 ## 5. protocol truth 被 CI 绿灯掩盖
 
@@ -151,11 +136,6 @@ Prompt 宿主验收执行最危险的，不是：
 
 - CI 绿灯只能证明表面完整，不能替代 `protocol_transcript_health`。
 
-### 改写路径
-
-1. 把 protocol transcript health 提升为独立门禁。
-2. 把 raw transcript 降为调试材料。
-3. 任何“CI 绿灯即 Prompt 世界正确”的执行验收都判为 drift。
 
 ## 6. compact handoff 被交接通过感掩盖
 
@@ -172,11 +152,6 @@ Prompt 宿主验收执行最危险的，不是：
 
 - 交接通过应围绕 lawful forgetting object，而不是围绕 summary 可读性。
 
-### 改写路径
-
-1. 把 summary 降为交接说明，不再当通过依据。
-2. 把 `compact_boundary / preserved_segment / next_step` 提升为交接硬条件。
-3. 任何只看摘要通过感的 Prompt handoff 都判为 drift。
 
 ## 7. 苏格拉底式追问
 

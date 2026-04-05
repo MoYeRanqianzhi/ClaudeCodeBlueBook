@@ -74,11 +74,6 @@ Prompt 宿主修复解除监护执行最危险的，不是：
 
 - released verdict 应先绑定同一个 request object 与同一个稳定 witness，再宣布 release。
 
-### 改写路径
-
-1. 把“无告警时长”降为次级信号。
-2. 把 `watch_release_object + restored_request_object_id + compiled_request_hash + stability_witness` 提升为 release 前提。
-3. 任何先看平静、后看对象的 Prompt release 都判为 drift。
 
 ## 3. 叙事放行：narrative release
 
@@ -99,11 +94,6 @@ Prompt 宿主修复解除监护执行最危险的，不是：
 
 - release 应围绕 sealed ledger、clearance 与 continuation object，而不是让交接叙事替代它们。
 
-### 改写路径
-
-1. 把 release 文案与 handoff prose 降为评审材料。
-2. 把 `baseline_drift_ledger_seal + continuation_clearance + handoff_release_warranty` 提升为正式对象。
-3. 任何“解释成立即视为可以 released”的 Prompt release 都判为 drift。
 
 ## 4. 无责任 release：release without residual gate
 
@@ -124,11 +114,6 @@ Prompt 宿主修复解除监护执行最危险的，不是：
 
 - handoff release 与 residual reopen 必须同时成立；没有 residual gate，就只能 `monitor_extended` 或 `reopen_required`。
 
-### 改写路径
-
-1. 禁止“后面再说”充当 residual reopen 策略。
-2. 把 `reopen_residual_gate + rollback_boundary + reopen_liability_record + gate_retained_until` 提升为 release 硬条件。
-3. 任何 handoff 已放行但 residual gate 已失忆的 Prompt release 都判为 drift。
 
 ## 5. gate 装饰化：residual reopen 退回日历提醒
 
@@ -149,11 +134,6 @@ Prompt 宿主修复解除监护执行最危险的，不是：
 
 - residual reopen gate 应是 verdict 升级器，而不是日历装饰。
 
-### 改写路径
-
-1. 把检查提醒降为辅助信号。
-2. 把 `gate_retained_until + release_verdict + reopen_required` 提升为正式时态对象。
-3. 任何过期后仍只提醒不升级的 Prompt release 都判为 drift。
 
 ## 6. 苏格拉底式追问
 

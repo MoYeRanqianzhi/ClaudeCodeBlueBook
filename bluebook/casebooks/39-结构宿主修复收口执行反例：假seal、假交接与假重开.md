@@ -74,11 +74,6 @@
 
 - authority seal 应先证明 live truth 仍只有一个 authority object，再保留 breadcrumb 作为入口。
 
-### 改写路径
-
-1. 把 pointer、sidecar 降为边界信号。
-2. 把 `authority_object_after + authority_state_surface + seal_generation` 提升为通过前提。
-3. 任何把 breadcrumb 当 seal 证据的结构 closeout 都判为 drift。
 
 ## 3. resume 跳步：reconnect 成功感冒充顺序关闭
 
@@ -98,11 +93,6 @@
 
 - resume closeout 应先关闭顺序，再接受通过感。
 
-### 改写路径
-
-1. 把 reconnect 成功降为结果信号。
-2. 把 `resume_closure_order` 提升为正式收口对象。
-3. 任何只看重连结果不看顺序的结构 closeout 都判为 drift。
 
 ## 4. writeback seal 伪装：telemetry 繁荣冒充唯一主写点
 
@@ -123,11 +113,6 @@
 
 - writeback seal 应围绕唯一 writer、merge 语义与最终 authority state 对齐，而不是围绕请求数量与日志丰富度。
 
-### 改写路径
-
-1. 把写回次数与日志量降为次级信号。
-2. 把 `writeback_path + worker_status + external_metadata + merge_semantics` 提升为正式对象。
-3. 任何只看 telemetry 成功感的结构 closeout 都判为 drift。
 
 ## 5. anti-zombie 口头化：作者说明冒充 witness
 
@@ -148,11 +133,6 @@
 
 - 源码先进性应首先被验证为 anti-zombie 结果面仍然存在，而不是目录美学仍然成立。
 
-### 改写路径
-
-1. 把目录清晰度、日志量与成功率降为摘要指标。
-2. 把 `anti_zombie_projection + stale_writer_evidence + duplicate_or_orphan_control_state_resolved` 提升为正式通过条件。
-3. 任何只夸源码更漂亮、不验 anti-zombie 的结构 closeout 都判为 drift。
 
 ## 6. 假交接与假重开：reconnect 冒充 handoff 与 reopen
 
@@ -173,11 +153,6 @@
 
 - handoff 应交付 authority object 与 boundary；reopen 应回到对象边界，而不是回到旧路径。
 
-### 改写路径
-
-1. 把 reconnect 降为动作，不再当交接对象与重开对象。
-2. 把 `handoff_warranty + recovery_boundary + re_entry_condition` 提升为正式对象。
-3. 任何只让 later 团队“再试一次恢复”的结构 closeout 都判为 drift。
 
 ## 7. 苏格拉底式追问
 

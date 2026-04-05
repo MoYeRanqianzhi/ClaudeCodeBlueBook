@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态执行层之后，蓝皮书还必须继续长出一层“宿主修复稳态失真反例层”。
+1. 为什么宿主修复稳态执行层之后，蓝皮书仍需要单独讨论“宿主修复稳态失真反例层”。
 2. 为什么 Prompt 线如果不继续指出假稳态、前缀托管表演与无阈值继续，就会重新把 Prompt 魔力退回 summary、平静感与继续幻觉。
 3. 为什么治理线如果不继续指出假稳态、能力托管表演与免费继续复活，就会重新把安全设计与省 token 设计拆回 mode 面板、usage dashboard 与经验式保守建议。
 4. 为什么结构线如果不继续指出假稳态、归档托管表演与假边界保留，就会重新把源码先进性退回 pointer 健康感、telemetry 转绿与作者说明。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt 宿主修复稳态执行明明已经有 steady-state card、continuity verdict order、re-entry threshold 与 residual reopen drill，团队仍会重新把它消费成 summary 平静感、前缀好运气与继续默认化。
 - 哪些“看起来只是已经 steady 了”的信号，其实正在重新制造 Prompt 第二真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/46`
 2. `../playbooks/50`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理宿主修复稳态执行明明已经有 steady-state card、pricing verdict order、capability custody 与 liability drill，团队仍会重新把它消费成 dashboard 稳态、假托管与免费继续复活。
 - 哪些“看起来只是继续保持安全”的信号，其实正在重新免费化扩张。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/47`
 2. `../playbooks/51`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构宿主修复稳态执行明明已经有 steady-state card、steady verdict order、archive custody 与 reopen reservation drill，团队仍会重新把它消费成 pointer 稳态、归档表演与假边界保留。
 - 哪些“看起来只是系统还在健康运行”的信号，其实正在重新制造 split-brain、zombie 回魂与作者兜底。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/48`
 2. `../playbooks/52`

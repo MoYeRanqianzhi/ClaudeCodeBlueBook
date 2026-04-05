@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复收口执行层之后，蓝皮书还必须继续长出一层“宿主修复收口失真反例层”。
+1. 为什么宿主修复收口执行层之后，蓝皮书仍需要单独讨论“宿主修复收口失真反例层”。
 2. 为什么 Prompt 线如果不继续指出假完成、假交接与假 reopen，就会重新把 Prompt 魔力退回事故总结、summary handoff 与默认继续。
 3. 为什么治理线如果不继续指出假关账、假交接与免费重开，就会重新把安全设计与省 token 设计拆回 mode 面板、审批完成感与 token 图表。
 4. 为什么结构线如果不继续指出假 seal、假交接与假重开，就会重新把源码先进性退回 pointer、重连通过感、日志繁荣与作者口述。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复收口失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt 宿主修复收口执行明明已经有 closeout card、completion verdict order、handoff warranty 与 reopen drill，团队仍会重新把它消费成修复说明、摘要交接与按钮式重开。
 - 哪些“看起来已经正式收口”的信号，其实正在重新制造 Prompt 第二真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/37`
 2. `../playbooks/41`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复收口失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理宿主修复收口执行明明已经有 closeout card、completion verdict order、handoff warranty 与 reopen drill，团队仍会重新把它消费成 mode 恢复、审批结束与“再跑一轮试试看”。
 - 哪些“看起来已经完成关账”的信号，其实正在重新免费化扩张。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/38`
 2. `../playbooks/42`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复收口失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构宿主修复收口执行明明已经有 closeout card、completion verdict order、handoff warranty 与 reopen drill，团队仍会重新把它消费成 breadcrumb、重连通过感与日志繁荣。
 - 哪些“看起来已经证明源码先进性”的信号，其实正在重新制造 split-brain、假连续性与 zombie outcome。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/39`
 2. `../playbooks/43`

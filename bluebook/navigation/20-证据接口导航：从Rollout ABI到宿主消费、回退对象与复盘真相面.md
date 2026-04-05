@@ -6,19 +6,19 @@
 
 它主要回答四个问题：
 
-1. 为什么 rollout ABI 层之后还必须继续长出“证据接口层”。
+1. 为什么 rollout ABI 层之后仍需要单独讨论“证据接口层”。
 2. 为什么同一套证据必须同时被宿主、评审者、自动化与后来接手者消费。
 3. 为什么回退必须按对象边界，而不是按文件回退。
 4. 怎样用苏格拉底式追问避免把证据接口层写成“更多表单字段”。
 
 ## 1. Prompt 证据接口
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样让 Prompt Constitution 的 rollout 证据不只停在卡片里，而是变成宿主能消费、评审者能复核、后来者能接手的正式真相面。
 - 怎样把 `speaker_chain`、`section_slots_changed`、`stable_prefix_surface`、`dynamic_boundary_surface`、`lawful_forgetting_abi` 这些字段接回 runtime 机制。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `19`
 2. `../playbooks/12`
@@ -35,12 +35,12 @@
 
 ## 2. 治理与省 token 证据接口
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样让 `worker_status`、`external_metadata`、`Context Usage`、`continuation decision`、`rollback target` 这些信号共同构成治理 rollout 的正式消费面。
 - 怎样把“为什么这轮更贵/更稳/该停止/该回退”从故事解释，推进成结构化证据。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `19`
 2. `../playbooks/12`
@@ -58,12 +58,12 @@
 
 ## 3. 结构演化与回退对象边界
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样让 authoritative surface、recovery asset、anti-zombie gate 不只停在源码结构判断，而是进入 rollout 证据和回退对象边界。
 - 怎样避免把结构升级写成“改了哪些文件”，却说不清“回退到底应该回退哪一个对象”。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `19`
 2. `../playbooks/12`

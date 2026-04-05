@@ -75,11 +75,6 @@ Prompt 宿主修复收口执行最危险的，不是：
 
 - 完成 verdict 应先证明同一个 request object 仍成立，再宣布 closeout。
 
-### 改写路径
-
-1. 把 `closed` 降为结果信号。
-2. 把 `restored_request_object_id + compiled_request_hash + section_registry_snapshot` 提升为完成前提。
-3. 任何先看 verdict、后看对象的 Prompt closeout 都判为 drift。
 
 ## 3. protocol witness 漂白：解释文本冒充协议真相
 
@@ -99,11 +94,6 @@ Prompt 宿主修复收口执行最危险的，不是：
 
 - closeout 应持续验证 protocol truth，而不是让修复说明替代它。
 
-### 改写路径
-
-1. 把 closeout 解释降为评审材料。
-2. 把 `protocol_transcript_witness + tool_pairing_health + truth_boundary_attested` 提升为正式对象。
-3. 任何“解释成立即视为 protocol 收口完成”的 Prompt closeout 都判为 drift。
 
 ## 4. 假交接：handoff warranty 退回 summary handoff
 
@@ -124,11 +114,6 @@ Prompt 宿主修复收口执行最危险的，不是：
 
 - handoff warranty 应围绕 continuation object，而不是围绕事故故事的可读性。
 
-### 改写路径
-
-1. 把 summary 降为 handoff 注释。
-2. 把 `lawful_forgetting_witness + required_preconditions + consumer_readiness.handoff` 提升为交接硬条件。
-3. 任何只看摘要可读性的 Prompt handoff 都判为 drift。
 
 ## 5. baseline reset 假证明：compact 看起来干净，却没有边界证明
 
@@ -148,11 +133,6 @@ Prompt 宿主修复收口执行最危险的，不是：
 
 - baseline reset 应先验证 boundary，再接受 compact 后的简洁感。
 
-### 改写路径
-
-1. 把 compact 后的清爽感降为次级信号。
-2. 把 `baseline_reset_witness + lawful_forgetting_witness + preserved_segment` 提升为正式对象。
-3. 任何只看 compact 结果不看边界证明的 Prompt closeout 都判为 drift。
 
 ## 6. 假 reopen：re-entry 被按钮状态与旧消息篡位
 
@@ -173,11 +153,6 @@ Prompt 宿主修复收口执行最危险的，不是：
 
 - reopen 应围绕对象边界、precondition 与 continuation object，而不是围绕“现在没被阻止”。
 
-### 改写路径
-
-1. 禁止按钮可点充当 reopen 资格。
-2. 把 `reopen_trigger + re_entry_warranty + pending_action_ref + required_preconditions` 提升为正式对象。
-3. 任何默认从旧消息与旧 summary 重开的 Prompt closeout 都判为 drift。
 
 ## 7. 苏格拉底式追问
 

@@ -53,11 +53,6 @@
 - 宿主卡必须先锁 `governance_object_id`、`decision_window`、`rollback_object` 与 `next_action`。
 - 颜色只能是 projection，不能替代窗口。
 
-### 改写路径
-
-1. 把颜色降为辅助字段。
-2. 把 `decision_window` 提到宿主卡第一段。
-3. 强制宿主卡回答“当前还能改变什么判断”。
 
 ## 2. CI 附件退回阈值与计数 vs arbitration / failure semantics
 
@@ -76,11 +71,6 @@
 - CI 附件必须同时给出 `winner_source`、`control_arbitration_truth`、`failure_semantics` 与 `object_upgrade_rule`。
 - 统计只能帮助解释，不能替代判断链。
 
-### 改写路径
-
-1. 把 `winner_source` 固定为 CI 附件前段字段。
-2. 把 failure semantics 从日志中提升为正式列。
-3. 任何只有计数没有仲裁链的附件都判为 drift。
 
 ## 3. 评审卡退回 verdict 说明 vs governance object
 
@@ -99,11 +89,6 @@
 - 评审卡必须先回答 object、window、winner、failure semantics，再给出 verdict。
 - verdict 只能是 shared header 的投影。
 
-### 改写路径
-
-1. 把 `governance_object_id` 与 `decision_window` 固定为评审卡第一段。
-2. 要求 verdict 必须引用 shared header。
-3. 把“建议”降到 object judgement 之后。
 
 ## 4. 交接包失去回退对象 vs next action
 
@@ -122,11 +107,6 @@
 - 交接包必须先交 `governance_object_id`、`decision_window`、`rollback_object`、`next_action`。
 - retained assets 只能补充，不得替代这些对象字段。
 
-### 改写路径
-
-1. 把 `rollback_object` 移到交接包第一段。
-2. 把 `next_action` 写成正式字段而不是备注。
-3. 任何缺 `re_entry_conditions` 的交接包都判为 drift。
 
 ## 5. 四件套同时存在却仍然失真
 
@@ -145,11 +125,6 @@
 - 四件套必须先共享同一个 `artifact_line_id + governance_object_id + decision_window + rollback_object`。
 - 差异只允许出现在 projection，不允许出现在 shared header。
 
-### 改写路径
-
-1. 把 shared header 单独抽出来比对。
-2. 检查四件套是否围绕同一个 decision window。
-3. 任何 rollback object 不一致的工件组都判为 drift。
 
 ## 6. 苏格拉底式追问
 

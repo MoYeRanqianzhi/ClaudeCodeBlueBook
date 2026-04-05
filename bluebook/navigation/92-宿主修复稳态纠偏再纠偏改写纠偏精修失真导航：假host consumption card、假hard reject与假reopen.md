@@ -11,7 +11,7 @@
 
 它主要回答五个问题：
 
-1. 为什么 `playbooks/65-67` 之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写纠偏精修执行失真层”。
+1. 为什么 `playbooks/65-67` 之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写纠偏精修执行失真层”。
 2. 为什么 Prompt 线最危险的失败不是“没有 host consumption card”，而是卡已经存在，却仍围绕 rewrite prose、summary handoff、UI transcript 与未综合的子 Agent prose 工作。
 3. 为什么治理线最危险的失败不是“没有 hard reject order”，而是顺序已经存在，却仍围绕 mode 投影、usage dashboard、`pending_action` 幻觉与免费继续工作。
 4. 为什么结构线最危险的失败不是“没有 reopen drill”，而是 drill 已经存在，却仍围绕 pointer、telemetry、archive prose、脏 worktree 侥幸与 reconnect 提示工作。
@@ -19,11 +19,11 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写纠偏精修失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt refinement execution 明明已经有 `host consumption card`、固定 `hard reject order` 与 `reopen drill`，仍会重新退回假 `host consumption card`、假 `compiled request lineage`、假 `coordinator synthesis custody` 与假 `reopen liability ledger`。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/65`
 2. `../casebooks/61`
@@ -38,11 +38,11 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写纠偏精修失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理 refinement execution 明明已经有 `host consumption card`、固定 `hard reject order` 与 `reopen liability drill`，仍会重新退回假 `host consumption card`、假 `authority-ledger covenant`、假 `writeback seam round-trip` 与假 `reopen liability ledger`。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/66`
 2. `../casebooks/62`
@@ -57,11 +57,11 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写纠偏精修失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构 refinement execution 明明已经有 `host consumption card`、固定 `hard reject order` 与 `reopen drill`，仍会重新退回假 `host consumption card`、假 `fresh merge`、假 `fail-closed` 与假 `reopen liability ledger`。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/67`
 2. `../casebooks/63`

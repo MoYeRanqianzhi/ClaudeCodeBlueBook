@@ -6,19 +6,19 @@
 
 它主要回答四个问题：
 
-1. 为什么 Artifact Rule Sample Kit / Evaluator 层之后还必须继续长出 evaluator harness / replay lab 层。
+1. 为什么 Artifact Rule Sample Kit / Evaluator 层之后仍需要单独讨论 evaluator harness / replay lab 层。
 2. 为什么真正成熟的重放，不是把脚本再跑一遍，而是让同一 reject reason 在宿主、CI、评审与交接里重复成立。
 3. 怎样把 Prompt、安全/省 token 与结构演化三条线分别压成可重放验证实验室。
 4. 怎样用苏格拉底式追问避免把这层写成“又一套测试脚本”。
 
 ## 1. Prompt Artifact Evaluator Harness
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt 线不能停在最小规则样例，而必须继续证明 `compiled request continuity` 能跨宿主、CI、评审与交接被反复重放。
 - 为什么 Claude Code 的 Prompt 魔力进入验证层之后，必须靠 replay harness 才能证明共享的不是文案，而是 continuation 语义。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `31`
 2. `../playbooks/23`
@@ -34,12 +34,12 @@
 
 ## 2. 治理 Artifact Evaluator Harness
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理线不能停在最小规则样例，而必须继续证明 `decision gain`、`failure semantics` 与 `rollback object` 能跨宿主、CI、评审与交接被反复重放。
 - 为什么安全与省 token 设计进入验证层之后，必须靠 replay harness 才能证明共享的是同一“没有决策增益就不该继续”的语义。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `31`
 2. `../playbooks/24`
@@ -55,12 +55,12 @@
 
 ## 3. 结构 Artifact Evaluator Harness
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构线不能停在最小规则样例，而必须继续证明 `authoritative path`、`recovery asset`、`anti-zombie evidence` 与 `rollback object` 能跨宿主、CI、评审与交接被反复重放。
 - 为什么源码先进性进入验证层之后，必须靠 replay harness 才能证明共享的是同一 split-brain / anti-zombie 拒收语义。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `31`
 2. `../playbooks/25`

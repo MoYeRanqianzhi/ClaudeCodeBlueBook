@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态协议层之后，蓝皮书还必须继续长出一层“宿主修复稳态执行层”。
+1. 为什么宿主修复稳态协议层之后，蓝皮书仍需要单独讨论“宿主修复稳态执行层”。
 2. 为什么 Prompt 线如果不继续压成 steady-state card、continuity verdict order、re-entry threshold 与 residual reopen drill，就会重新把 Prompt 魔力退回 summary 平静感与“应该还能继续”。
 3. 为什么治理线如果不继续压成 steady-state card、pricing verdict order、capability custody 与 liability drill，就会重新把安全设计与省 token 设计退回 mode 面板、usage dashboard 与经验式保守建议。
 4. 为什么结构线如果不继续压成 steady-state card、steady verdict order、archive custody 与 reopen reservation drill，就会重新把源码先进性退回 pointer 健康感、telemetry 转绿与作者记忆。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么顺序证明 Prompt 世界在停止额外监护之后，仍继续围绕同一个 `compiled request truth` 成立。
 - 哪些 steady verdict 一旦出现就说明当前必须暂停 continuation、重新编译、重新交接或正式 reopen。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/69`
 2. `../playbooks/50`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 团队到底该按什么顺序证明治理控制面在停止额外盯防之后，仍继续围绕同一个 authority、同一个定价顺序与同一个责任阈值工作。
 - 哪些 steady verdict 一旦出现就说明 capability custody 不能继续放行，必须回到 liability hold、re-entry 或 reopen。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/70`
 2. `../playbooks/51`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 团队到底该按什么顺序证明结构真相面在停止额外盯防之后，authority、resume、writeback、archive 与 anti-zombie 仍继续成立。
 - 哪些 steady verdict 一旦出现就说明当前只是系统还在响应，不是真正的结构稳态，必须触发 re-entry 或 reopen reservation。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/71`
 2. `../playbooks/52`

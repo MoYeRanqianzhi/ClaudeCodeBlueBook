@@ -14,12 +14,12 @@
 
 ## 1. Prompt 编译链哲学线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Claude Code 的 Prompt 会有如此的魔力。
 - 为什么魔力一旦离开 section registry、stable prefix、protocol rewrite 与 lawful forgetting，就会立刻褪色。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../philosophy/81`
 2. `../casebooks/22`
@@ -35,12 +35,12 @@
 
 ## 2. 统一定价治理哲学线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么安全设计与省 token 设计看似不同，却总是落到同一治理控制面。
 - 为什么 action、visibility、context 与 continuation 必须被统一定价。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../philosophy/82`
 2. `../casebooks/23`
@@ -57,12 +57,12 @@
 
 ## 3. 故障模型编码哲学线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Claude Code 的源码先进性不像目录美学，而像一套提前写好的反对意见。
 - 为什么 authority、seam、transition legality、recovery asset 与 anti-zombie 会共同决定结构先进性。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../philosophy/83`
 2. `../casebooks/24`

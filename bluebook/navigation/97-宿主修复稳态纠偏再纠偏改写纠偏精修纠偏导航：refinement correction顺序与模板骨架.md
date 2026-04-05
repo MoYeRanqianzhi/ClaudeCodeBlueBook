@@ -11,7 +11,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏层”。
+1. 为什么宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏层”。
 2. 为什么 Prompt 线如果不把假 `repair card`、假 `protocol truth` 与假 `reopen liability` 压回固定 `refinement correction order`，Prompt 魔力就会重新退回 rewrite prose、UI transcript 与未综合的子 Agent 研究 prose。
 3. 为什么治理线如果不把假 `repair card`、假 `pricing causality` 与假 `reopen liability` 压回固定 `refinement correction order`，安全设计与省 token 设计就会重新退回 mode 面板、usage dashboard 与运营感觉。
 4. 为什么结构线如果不把假 `repair card`、假 `fresh merge` 与假 `reopen liability` 压回固定 `refinement correction order`，源码先进性就会重新退回 pointer 健康感、telemetry 转绿与作者说明。
@@ -19,12 +19,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把 Prompt refinement correction execution distortion 重新压回 `authority chain`、`compiled request lineage`、`registry-boundary custody`、`synthesis custody`、`protocol-prefix custody`、`forgetting-continuation covenant` 与 `long-horizon reopen liability` 共用的 Prompt 编译对象。
 - 哪些现象一旦出现就应被直接升级为硬拒收，而不是继续补 repair prose、handoff packet 与 protocol 解释稿。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/64`
 2. `../guides/93`
@@ -39,12 +39,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把治理 refinement correction execution distortion 重新压回 `authority chain`、`ledger truth surface`、`window truth surface`、`pricing causality surface`、`classifier pricing attestation`、`writeback seam contract`、`ingress_restore_lineage_contract` 与 `long-horizon reopen liability` 共用的统一定价控制面。
 - 哪些现象一旦出现就应被直接升级为硬拒收，而不是继续补 dashboard 注释、pending-action 平静感与保守建议。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/65`
 2. `../guides/94`
@@ -59,12 +59,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把结构 refinement correction execution distortion 重新压回 `authority surface`、`single-source writeback`、`lineage resume contract`、`fresh merge contract`、`anti-zombie restitution packet`、`transport boundary contract`、`fail-closed worktree contract` 与 `long-horizon reopen liability` 共用的结构真相面。
 - 哪些现象一旦出现就应被直接升级为硬拒收，而不是继续补 pointer 说明、恢复成功率与作者口述。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/66`
 2. `../guides/95`

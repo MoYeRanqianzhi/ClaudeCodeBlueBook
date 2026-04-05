@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏改写纠偏失真层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写纠偏纠偏层”。
+1. 为什么宿主修复稳态纠偏再纠偏改写纠偏失真层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写纠偏纠偏层”。
 2. 为什么 Prompt 线如果不把假 `rewrite correction card`、假 `section registry`、假 `dynamic boundary` 与假 `threshold liability` 压回固定 `rewrite correction order`，Prompt 魔力就会重新退回 rewrite prose、summary handoff 与未综合的子 Agent prose。
 3. 为什么治理线如果不把假 authority chain、假 classifier pricing、假 writeback seam、免费继续回魂与假 `threshold rebinding` 压回固定 `rewrite correction order`，安全设计与省 token 设计就会重新退回 mode 面板、usage dashboard 与运营感觉。
 4. 为什么结构线如果不把假 authority surface、假 fresh merge、假 transport boundary、假 fail-closed worktree 与假 `reopen liability` 压回固定 `rewrite correction order`，源码先进性就会重新退回 pointer 健康感、telemetry 转绿与架构说明书。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写纠偏纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把 Prompt steady-state correction-of-correction rewrite correction execution distortion 重新压回 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continue qualification` 与 `threshold liability` 共用的 Prompt 编译对象。
 - 哪些现象一旦出现就应被直接升级为硬拒收，而不是继续补 rewrite correction prose、目录说明与 handoff note。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/87`
 2. `../casebooks/58`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写纠偏纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把治理 steady-state correction-of-correction rewrite correction execution distortion 重新压回 authority、ledger、window、pricing、classifier、writeback seam、capability liability 与 threshold 共用的统一定价控制面。
 - 哪些现象一旦出现就应被直接升级为硬拒收，而不是继续补 dashboard 注释、运维备注与保守建议。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/88`
 2. `../casebooks/59`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写纠偏纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把结构 steady-state correction-of-correction rewrite correction execution distortion 重新压回 authority surface、single-source writeback seam、lineage、fresh merge、anti-zombie evidence、transport boundary、fail-closed worktree 与 reopen liability 共用的结构真相面。
 - 哪些现象一旦出现就应被直接升级为硬拒收，而不是继续补 pointer 说明、telemetry 绿灯与架构 prose。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/89`
 2. `../casebooks/60`

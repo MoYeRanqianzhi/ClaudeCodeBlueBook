@@ -75,11 +75,6 @@ Prompt refinement correction refinement execution 最危险的，不是：
 
 - `reject verdict` 应先绑定同一个 `authority_chain_ref + restored_request_object_id + compiled_request_hash + section_registry_generation + repair_attestation_id`，再宣布 `steady_state_chain_resealed`。
 
-### 改写路径
-
-1. 把 transcript 顺滑度、handoff 完整度与 worker 研究量降为观察材料。
-2. 把 authority、lineage、registry 与 attestation 提升为前提对象。
-3. 任何先看解释稿、后看编译对象的 Prompt refinement correction refinement execution 都判为 drift。
 
 ## 3. 假共同reject语义：reject by consumer divergence
 
@@ -111,11 +106,6 @@ Prompt refinement correction refinement execution 最危险的，不是：
 
 - 共同 `reject order` 必须先证明 `authority_chain_ref + compiled_request_hash + section_registry_generation + protocol_transcript_health + tool_pairing_health + lawful_forgetting_boundary + continue_qualification` 仍围绕同一个 Prompt 对象，再决定 `steady_state_chain_resealed`、`protocol_truth_reseal_required`、`repair_attestation_rebuild_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 把宿主顺滑感、CI 静默、评审认同与交接可读性降为分角色观察。
-2. 把共同 `reject` 明确绑定到同一编译对象。
-3. 任何四类消费者共享同一 verdict 名字、却不共享同一 Prompt 对象的执行都判为 drift。
 
 ## 4. 假reopen liability：liability by author memory and compact optimism
 
@@ -138,11 +128,6 @@ Prompt refinement correction refinement execution 最危险的，不是：
 
 - `reopen liability` 必须显式绑定 `lawful_forgetting_boundary + continue_qualification + cache_break_reason + threshold_retained_until + reopen_required_when`，并把 later 团队可回到的 Prompt 对象写清楚。
 
-### 改写路径
-
-1. 把“作者知道怎么接回来”降为非正式帮助。
-2. 把 forgetting、qualification、cache break 与 threshold 提升为 reopen 前提。
-3. 任何依赖 compact 乐观主义而不是正式 threshold 的 Prompt refinement correction refinement execution 都判为 drift。
 
 ## 5. 从更多角度看它为什么迷惑
 

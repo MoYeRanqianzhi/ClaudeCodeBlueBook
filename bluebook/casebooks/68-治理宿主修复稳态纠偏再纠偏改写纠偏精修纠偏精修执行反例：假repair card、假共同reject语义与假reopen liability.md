@@ -73,11 +73,6 @@
 
 - `reject verdict` 应先绑定同一个 `governance_object_id + authority_source_after + permission_ledger_state + decision_window + settled_price + repair_attestation_id`，再宣布 `steady_state_chain_resealed`。
 
-### 改写路径
-
-1. 把 mode 平静感、usage 下降与 approval 消失降为观察信号。
-2. 把 authority、ledger/window、pricing 与 attestation 提升为前提对象。
-3. 任何先看 dashboard、后看治理对象链的 refinement correction refinement execution 都判为 drift。
 
 ## 3. 假共同reject语义：reject by price blindness and role split
 
@@ -109,11 +104,6 @@
 
 - 共同 `reject order` 必须先证明 `authority_source_after + permission_ledger_state + decision_window + settled_price + classifier_cost_priced + writeback_seam_attested + session_ingress_head + adopted_server_uuid` 仍围绕同一个治理对象，再决定 `steady_state_chain_resealed`、`pricing_reseal_required`、`writeback_reseal_required`、`reentry_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 把 blocker 是否消失、预算是否未爆、classifier 是否跑过与 ingress 是否成功降为分角色观察。
-2. 把共同 `reject` 明确绑定到同一个统一定价控制对象。
-3. 任何四类消费者共享同一 verdict 名字、却不共享同一 pricing causality 的执行都判为 drift。
 
 ## 4. 假reopen liability：liability by default continue and blurred ownership
 
@@ -136,11 +126,6 @@
 
 - `reopen liability` 必须显式绑定 `classifier_cost_priced + writeback_seam_attested + session_ingress_head + liability_owner + threshold_retained_until + reopen_required_when`，并把 later 团队应返回的治理对象写清楚。
 
-### 改写路径
-
-1. 把“现在先继续，出问题再看”降为非正式惯性。
-2. 把 classifier/writeback/ingress/liability/threshold 提升为 reopen 前提。
-3. 任何依赖默认继续而不是正式责任绑定的治理 refinement correction refinement execution 都判为 drift。
 
 ## 5. 从更多角度看它为什么迷惑
 

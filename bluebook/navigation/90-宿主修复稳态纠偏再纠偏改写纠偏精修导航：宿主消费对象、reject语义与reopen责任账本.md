@@ -11,7 +11,7 @@
 
 它主要回答五个问题：
 
-1. 为什么 `guides/87-89` 之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写纠偏精修协议层”。
+1. 为什么 `guides/87-89` 之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写纠偏精修协议层”。
 2. 为什么 Prompt 线如果不把 fixed `rewrite correction order` 继续压成同一条 `compiled request truth -> section registry -> dynamic boundary -> protocol transcript -> stable prefix -> lawful forgetting -> continuation qualification -> threshold liability` 的共享消费面，Prompt 魔力仍会重新退回 rewrite prose、summary handoff 与未综合的子 Agent prose。
 3. 为什么治理线如果不把 fixed `rewrite correction order` 继续压成同一条 `authority -> ledger -> window -> pricing -> classifier -> writeback seam -> liability -> threshold` 的共享消费面，安全设计与省 token 设计仍会重新退回 mode 面板、usage dashboard 与运营感觉。
 4. 为什么结构线如果不把 fixed `rewrite correction order` 继续压成同一条 `authority surface -> single-source writeback -> lineage -> fresh merge -> anti-zombie -> transport boundary -> dirty git fail-closed -> reopen liability` 的共享消费面，源码先进性仍会重新退回 pointer、telemetry 与 architecture prose。
@@ -19,12 +19,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写纠偏精修线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把 Prompt fixed `rewrite correction order` 继续压成宿主、CI、评审与交接都能共同消费的对象面、共同拒收的语义与长期 `reopen` 责任账本。
 - 哪些字段属于同一条 Prompt 编译链的共享消费对象，哪些属于 `hard_reject / reentry / reopen` 语义，哪些仍不应被绑定成公共 ABI。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/87`
 2. `../api/84`
@@ -39,12 +39,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写纠偏精修线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把治理 fixed `rewrite correction order` 继续压成宿主、CI、评审与交接都能共同消费的统一定价控制对象、共同拒收语义与长期 `reopen` 责任账本。
 - 为什么安全设计与省 token 设计在这一层必须继续用同一套 reject / escalation 语义说话。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/88`
 2. `../api/85`
@@ -59,12 +59,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写纠偏精修线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把结构 fixed `rewrite correction order` 继续压成宿主、CI、评审与交接都能共同消费的结构真相面、共同拒收语义与长期 `reopen` 责任账本。
 - 为什么源码先进性在这一层不再是“目录整洁度”，而是 authority、merge、transport 与 fail-closed 能否继续被 later 团队独立验证。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/89`
 2. `../api/86`

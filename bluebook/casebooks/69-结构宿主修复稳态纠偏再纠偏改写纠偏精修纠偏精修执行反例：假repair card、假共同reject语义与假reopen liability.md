@@ -73,11 +73,6 @@
 
 - `reject verdict` 应先绑定同一个 `authority_object_id + authoritative_path + externally_verifiable_head + single_source_ref + resume_lineage_ref + repair_attestation_id`，再宣布 `steady_state_chain_resealed`。
 
-### 改写路径
-
-1. 把 pointer 健康感、目录整洁度与结构 prose 降为观察材料。
-2. 把 authority、head、single-source、lineage 与 attestation 提升为前提对象。
-3. 任何先看解释、后看结构对象的 refinement correction refinement execution 都判为 drift。
 
 ## 3. 假共同reject语义：reject by health projection split
 
@@ -109,11 +104,6 @@
 
 - 共同 `reject order` 必须先证明 `authority_object_id + externally_verifiable_head + resume_lineage_ref + fresh_merge_contract_attested + single_source_ref + anti_zombie_evidence_ref + dirty_git_fail_closed_attested` 仍围绕同一个结构对象，再决定 `steady_state_chain_resealed`、`merge_reproof_required`、`fail_closed_reseal_required`、`reentry_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 把 pointer、telemetry、目录整洁度与 reconnect 成功率降为分角色观察。
-2. 把共同 `reject` 明确绑定到同一个结构真相面。
-3. 任何四类消费者共享同一 verdict 名字、却不共享同一 authority/merge/fail-closed 对象的执行都判为 drift。
 
 ## 4. 假reopen liability：liability by reconnect hint and author memory
 
@@ -135,11 +125,6 @@
 
 - `reopen liability` 必须显式绑定 `worktree_change_guard + unpushed_commit_guard + dirty_git_fail_closed_attested + reopen_boundary + return_authority_object + return_writeback_path + threshold_retained_until`，并把 later 团队应返回的结构对象写清楚。
 
-### 改写路径
-
-1. 把“原作者知道怎么接回来”降为非正式帮助。
-2. 把 fail-closed、boundary 与 threshold 提升为 reopen 前提。
-3. 任何依赖 reconnect 乐观主义而不是正式 boundary/guard 的结构 refinement correction refinement execution 都判为 drift。
 
 ## 5. 从更多角度看它为什么迷惑
 

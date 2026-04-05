@@ -53,11 +53,6 @@ Prompt artifact 层最危险的，不是：
 - 宿主卡必须先锁 `current_object`、`authority_source`、`compiled_request_summary` 与 `next_step_guard`。
 - prompt 原文最多作为附件，不得替代当前对象。
 
-### 改写路径
-
-1. 把原文 prompt 从主卡降为引用附件。
-2. 把 `current_object` 放到宿主卡第一行。
-3. 强制宿主卡回链 `compiled_request_diff_ref`。
 
 ## 2. CI 附件只剩绿灯 vs stable bytes ledger
 
@@ -76,11 +71,6 @@ Prompt artifact 层最危险的，不是：
 - CI 附件必须同时给出 `compiled_request_diff_ref`、`stable_bytes_ledger_ref`、`lawful_forgetting_abi_ref` 与 drift 解释。
 - 绿灯只是工件结论，不是工件本体。
 
-### 改写路径
-
-1. 强制 CI 附件在结论前展示 diff 与 ledger 引用。
-2. 把 cache break 原因写成正式字段而不是日志散文。
-3. 任何只有结果没有原因的附件都判为 drift。
 
 ## 3. 评审卡退回总结 vs authority / assembly judgement
 
@@ -99,11 +89,6 @@ Prompt artifact 层最危险的，不是：
 - 评审卡必须先回答 authority、assembly、boundary 与 diff judgement，再允许写解释。
 - 解释只能是 judgement 的投影，不能替代 judgement 本身。
 
-### 改写路径
-
-1. 把 `authority_source` 与 `assembly_path` 固定为评审卡开头。
-2. 让 `review_judgement` 必须引用 `compiled_request_diff_ref`。
-3. 把自由评论移到 judgement 之后。
 
 ## 4. 交接包退回摘要 vs lawful forgetting ABI
 
@@ -122,11 +107,6 @@ Prompt artifact 层最危险的，不是：
 - 交接包必须先交 `current_object`、`next_step_guard`、`lawful_forgetting_abi_ref` 与 `rollback_hint`。
 - 背景说明只能作为后附材料，不得替代 ABI。
 
-### 改写路径
-
-1. 把 `current_object` 和 `next_step_guard` 提到交接包第一段。
-2. 明确 transcript 只是引用，不是当前真相。
-3. 任何缺 `lawful_forgetting_abi_ref` 的交接包都判为 drift。
 
 ## 5. 四件套同时存在却仍然失真
 
@@ -145,11 +125,6 @@ Prompt artifact 层最危险的，不是：
 - 四件套必须先共享同一个 `artifact_line_id + prompt_object_id + authority_source`。
 - 差异只允许出现在角色展开字段，不允许出现在 shared header。
 
-### 改写路径
-
-1. 把 shared header 单独抽出做对照。
-2. 检查四件套是否引用同一 object id。
-3. 任何 header 不一致的工件组都判为 drift。
 
 ## 6. 苏格拉底式追问
 

@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏改写层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写协议层”。
+1. 为什么宿主修复稳态纠偏再纠偏改写层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写协议层”。
 2. 为什么 Prompt 线如果不继续把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 压成共享对象，就会重新把 Prompt 魔力退回更会解释的 summary、handoff prose 与默认继续。
 3. 为什么治理线如果不继续把 `authority`、`ledger`、`decision window`、`continuation pricing`、`capability liability` 与 `threshold` 压成同一条共享控制面，就会重新把安全设计与省 token 设计拆回 mode 面板、usage dashboard 与保守建议。
 4. 为什么结构线如果不继续把 `authority object`、`authoritative path`、`writer chokepoint`、`lineage chain`、`anti-zombie evidence` 与 `reopen boundary` 压成共享协议，就会重新把源码先进性退回 pointer 健康感、telemetry 转绿、archive prose 与作者记忆。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该消费哪些正式对象，才能证明 Prompt 世界已经把 recorrection execution distortion 重新压回同一个 `compiled request truth`。
 - 哪些 reject / escalation 语义一旦出现，就说明当前不是“改写已经完成”，而是应 `hard_reject`、`truth_recompile_required`、`protocol_repair_required`、`reentry_required` 或 `reopen_required`。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/78`
 2. `../guides/81`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该消费哪些正式对象，才能证明治理控制面已经把 recorrection execution distortion 重新压回同一个统一定价治理对象。
 - 哪些 reject / escalation 语义一旦出现，就说明 `authority`、`ledger`、`window`、`pricing`、`capability liability` 与 `threshold` 仍在 mode 投影、dashboard 投影与默认继续里漂移，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/79`
 2. `../guides/82`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该消费哪些正式对象，才能证明结构真相面已经把 recorrection execution distortion 重新压回 authority、writeback、lineage、anti-zombie 与 reopen 共用的同一边界。
 - 哪些 reject / escalation 语义一旦出现，就说明当前只是更制度化的健康叙事，而不是 later 维护者可独立消费的结构真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/80`
 2. `../guides/83`

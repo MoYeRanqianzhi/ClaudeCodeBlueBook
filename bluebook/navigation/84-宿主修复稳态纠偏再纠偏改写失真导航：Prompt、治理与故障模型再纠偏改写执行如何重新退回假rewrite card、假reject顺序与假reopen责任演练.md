@@ -6,7 +6,7 @@
 
 它主要回答六个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏改写执行层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写失真反例层”。
+1. 为什么宿主修复稳态纠偏再纠偏改写执行层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写失真反例层”。
 2. 为什么 Prompt 线如果不继续指出假 `rewrite card`、假 `protocol rewrite`、假 `reject verdict order` 与假 `threshold liability`，就会把 Prompt 魔力重新退回 rewrite prose、summary 平静感与默认继续。
 3. 为什么治理线如果不继续指出假 `rewrite card`、假 `window repricing`、免费继续回魂与假 `threshold rebinding`，就会把安全设计与省 token 设计重新拆回 mode 面板、usage dashboard 与保守建议。
 4. 为什么结构线如果不继续指出假 `rewrite card`、假 `authority-first reject`、伪 `anti-zombie evidence` 与假 `reopen liability`，就会把源码先进性重新退回 pointer 健康感、telemetry 转绿与架构说明书。
@@ -15,12 +15,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt steady-state correction-of-correction rewrite execution 明明已经有 `rewrite card`、`reject verdict order`、`protocol rewrite drill` 与 `threshold liability drill`，仍会重新退回假 `rewrite card`、假 `protocol rewrite`、假 `reject` 顺序与假 `threshold liability`。
 - 哪些“看起来只是 rewrite 写得更完整了”的信号，其实正在把 `compiled request truth` 重新退回 rewrite prose、UI 历史、summary handoff 与默认继续。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/55`
 2. `../playbooks/59`
@@ -37,12 +37,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理 steady-state correction-of-correction rewrite execution 明明已经有 `rewrite card`、`reject verdict order`、`window repricing drill`、`capability liability` 与 `threshold rebinding drill`，仍会重新退回假 `rewrite card`、假 `window repricing`、免费继续回魂与假 `threshold rebinding`。
 - 哪些“看起来只是治理 rewrite 更严格了”的信号，其实正在让 authority、ledger、window、pricing、liability 与 threshold 重新退回 mode 投影、usage dashboard 与默认继续。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/56`
 2. `../playbooks/60`
@@ -59,12 +59,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构 steady-state correction-of-correction rewrite execution 明明已经有 `rewrite card`、`authority-first reject order`、`single-source seam audit`、`anti-zombie evidence rebinding` 与 `reopen liability drill`，仍会重新退回假 `rewrite card`、假 `authority-first reject`、伪 `anti-zombie evidence` 与假 `reopen liability`。
 - 哪些“看起来只是架构 rewrite 更整洁了”的信号，其实正在让 authority、single-source、lineage、anti-zombie 与 reopen boundary 重新退回 pointer、telemetry、archive prose 与作者说明。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/57`
 2. `../playbooks/61`

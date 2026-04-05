@@ -6,6 +6,7 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮目录治理重点: 继续把 `bluebook/` 正文中的开发记忆迁回 `docs/`，当前已完成 `casebooks/` 的 `改写路径` 整体迁出与 `navigation/` 入口语言稳态化。
 
 ### A074. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议层
 

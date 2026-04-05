@@ -75,11 +75,6 @@ Prompt refinement correction execution 最危险的，不是：
 
 - `reject verdict` 应先绑定同一个 `restored_request_object_id + compiled_request_hash + truth_lineage_ref + section_registry_generation`，并先完成 `rewrite_prose_demoted`、`ui_transcript_not_truth` 与 `summary_override_blocked` 的降级，再宣布 `steady_state_chain_resealed`。
 
-### 改写路径
-
-1. 把“交接看起来更完整”降为次级信号。
-2. 把 `restored_request_object_id + compiled_request_hash + truth_lineage_ref + section_registry_generation` 提升为前提。
-3. 任何先看 packet、后看对象链的 Prompt refinement correction execution 都判为 drift。
 
 ## 3. 假protocol truth：truth by UI and prose
 
@@ -104,11 +99,6 @@ Prompt refinement correction execution 最危险的，不是：
 
 - `reject order` 必须先证明 `section_registry_generation + system_prompt_dynamic_boundary + late_bound_attachment_set + coordinator_synthesis_owner + protocol_transcript_health + tool_pairing_health + stable_prefix_boundary` 仍围绕同一个 Prompt 编译对象，再决定 `steady_state_chain_resealed`、`boundary_rebind_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 把 UI 顺滑度、目录清晰度、attachment 说明与研究总结降为评审材料。
-2. 把 `registry/boundary/synthesis/protocol/prefix` 提升为正式对象。
-3. 任何“研究已经做完即视为主线 truth 已恢复”的 Prompt refinement correction execution 都判为 drift。
 
 ## 4. 假reopen liability：liability by polite continue note
 
@@ -130,11 +120,6 @@ Prompt refinement correction execution 最危险的，不是：
 
 - continuation 与 reopen liability 必须同时成立；没有 threshold，就只能 `hard_reject`、`truth_recompile_required`、`registry_reseal_required`、`boundary_rebind_required`、`reentry_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 禁止“还没报错”充当 continuation 资格。
-2. 把 `continue_qualification + token_budget_ready + truth_break_trigger + threshold_retained_until + reopen_required_when` 提升为硬条件。
-3. 任何阈值已失忆却仍继续放行的 Prompt refinement correction execution 都判为 drift。
 
 ## 5. 为什么这会直接杀死 Prompt 的魔力
 

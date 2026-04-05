@@ -6,19 +6,19 @@
 
 它主要回答四个问题：
 
-1. 为什么 shared evidence envelope 层之后还必须继续长出 consumer distortion casebook 层。
+1. 为什么 shared evidence envelope 层之后仍需要单独讨论 consumer distortion casebook 层。
 2. 为什么宿主、CI、评审与交接最常见的坏解法，往往不是“完全没做”，而是“各自做了一点”。
 3. 怎样把 Prompt、安全/省 token 与结构演化三条线分别压成 shared envelope 的反例样本。
 4. 怎样用苏格拉底式追问避免把这层写成“吐槽不同角色不会看材料”。
 
 ## 1. Prompt 线的 envelope 反例
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么宿主只看原文 prompt、CI 只看 cache break 指标、评审只看总结、交接只读 transcript，会把 Prompt 魔力重新退回文案崇拜。
 - 为什么 prompt 明明已经有 compiled request truth，团队却还在按“这段提示词改得好不好”判断。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `21`
 2. `../casebooks/13`
@@ -33,12 +33,12 @@
 
 ## 2. 治理与省 token 线的 envelope 反例
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么宿主只看状态、CI 只看 token、评审只看审批次数、交接只看最终结果，会把治理成熟度重新退回单点指标。
 - 为什么系统明明已经记录了 decision window、control arbitration 与 rollback boundary，团队却仍只会问“这轮是不是更贵了”“这次是不是更严了”。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `21`
 2. `../casebooks/14`
@@ -53,12 +53,12 @@
 
 ## 3. 结构演化线的 envelope 反例
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么宿主只看文件 diff、CI 只看目录整洁、评审只看结构图、交接只靠作者记忆，会把源码先进性重新退回目录美观和文件级回退。
 - 为什么明明已经有 authoritative surface、recovery asset 与 rollback object boundary，团队却仍在按“哪些文件改了”理解结构升级。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `21`
 2. `../casebooks/15`

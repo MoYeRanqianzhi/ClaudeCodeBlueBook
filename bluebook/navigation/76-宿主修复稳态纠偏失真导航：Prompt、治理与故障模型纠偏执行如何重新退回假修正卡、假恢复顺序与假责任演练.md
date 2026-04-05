@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏执行层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏失真反例层”。
+1. 为什么宿主修复稳态纠偏执行层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏失真反例层”。
 2. 为什么 Prompt 线如果不继续指出假修正卡、口头真相恢复、前缀复托管表演与阈值装饰化，就会重新把 Prompt 魔力退回 steady note、summary 与“最近没出事”。
 3. 为什么治理线如果不继续指出假纠偏、假再托管与假阈值重绑，就会重新把安全设计与省 token 设计拆回 mode 面板、usage dashboard 与保守建议。
 4. 为什么结构线如果不继续指出假修正、伪复证与假责任保留，就会重新把源码先进性退回 pointer 健康感、telemetry 转绿、archive prose 与作者说明。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt steady-state correction execution 明明已经有 correction card、recovery verdict order、requalification drill 与 threshold reinstatement drill，仍会重新退回假修正卡、口头真相恢复与阈值装饰化。
 - 哪些“看起来只是已经按手册跑过一遍”的信号，其实正在把 Prompt 纠偏重新退回 prose、平静感与默认继续。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/49`
 2. `../playbooks/53`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理 steady-state correction execution 明明已经有 correction card、correction verdict order、capability recustody 与 threshold rebinding drill，仍会重新退回假纠偏、假再托管与假阈值重绑。
 - 哪些“看起来只是更谨慎地执行手册”的信号，其实正在让 authority、ledger、window、pricing、custody 与 threshold 重新退回 mode 投影与默认继续。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/50`
 2. `../playbooks/54`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构 steady-state correction execution 明明已经有 correction card、correction verdict order、archive restitution、re-entry threshold 与 reopen responsibility drill，仍会重新退回假修正、伪复证与假责任保留。
 - 哪些“看起来只是系统重新恢复秩序”的信号，其实正在让 authority、resume、writeback、anti-zombie、archive 与 reservation 重新退回 pointer、telemetry 与作者说明。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/51`
 2. `../playbooks/55`

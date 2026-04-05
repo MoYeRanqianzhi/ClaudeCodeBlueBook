@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏改写失真反例层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写纠偏层”。
+1. 为什么宿主修复稳态纠偏再纠偏改写失真反例层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写纠偏层”。
 2. 为什么 Prompt 线如果不继续把假 `rewrite card`、假 `protocol rewrite`、假 `reject verdict order` 与假 `threshold liability` 压回同一个 `compiled request truth`，Prompt 魔力就会重新退回 rewrite prose、summary 平静感与默认继续。
 3. 为什么治理线如果不继续把假 `rewrite card`、假 `window repricing`、免费继续回魂与假 `threshold rebinding` 压回同一个统一定价治理对象，安全设计与省 token 设计就会重新拆回 mode 面板、usage dashboard 与运营感觉。
 4. 为什么结构线如果不继续把假 `rewrite card`、假 `authority-first reject`、伪 `anti-zombie evidence` 与假 `reopen liability` 压回同一个结构真相面，源码先进性就会重新退回 pointer 健康感、telemetry 转绿、architecture prose 与作者记忆。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把 Prompt steady-state correction-of-correction rewrite execution distortion 从假 `rewrite card`、假 `protocol rewrite`、假 `reject verdict order` 与假 `threshold liability` 重新压回同一个 `compiled request truth`。
 - 哪些现象一旦出现，就说明 `compiled request truth`、`section registry`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary` 与 `continue qualification` 已重新退回 rewrite prose、UI 历史与默认继续，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/84`
 2. `../casebooks/55`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把治理 steady-state correction-of-correction rewrite execution distortion 从假 `rewrite card`、假 `window repricing`、免费继续回魂与假 `threshold rebinding` 重新压回同一个统一定价治理对象。
 - 哪些现象一旦出现，就说明 `authority source`、`permission ledger`、`decision window`、`continuation pricing`、`capability liability` 与 `threshold rebinding` 已重新退回 mode 投影、dashboard 投影与默认继续，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/85`
 2. `../casebooks/56`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把结构 steady-state correction-of-correction rewrite execution distortion 从假 `rewrite card`、假 `authority-first reject`、伪 `anti-zombie evidence` 与假 `reopen liability` 重新压回同一个结构真相面。
 - 哪些现象一旦出现，就说明 `authority object`、`authoritative path`、`writeback seam`、`lineage chain`、`anti-zombie evidence` 与 `reopen boundary` 已重新退回 pointer、telemetry、architecture prose 与作者说明，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/86`
 2. `../casebooks/57`

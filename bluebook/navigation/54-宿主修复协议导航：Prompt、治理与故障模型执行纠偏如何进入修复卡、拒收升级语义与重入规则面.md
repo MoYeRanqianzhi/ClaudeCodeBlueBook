@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主验收纠偏层之后，蓝皮书还必须继续长出一层“宿主修复协议层”。
+1. 为什么宿主验收纠偏层之后，蓝皮书仍需要单独讨论“宿主修复协议层”。
 2. 为什么 Prompt 线如果不继续压成 repair object、reject escalation、rollback boundary 与 re-entry qualification 的正式修复协议，就会重新退回表单补丁与 reviewer 心法。
 3. 为什么治理线如果不继续压成 authority repair、ledger rebuild、decision window reset、continuation repricing 与 rollback object 的正式修复协议，就会重新退回 mode 调参与审批补救。
 4. 为什么结构线如果不继续压成 authority recovery、resume replay order、writeback restoration、anti-zombie verdict 与 boundary reset 的正式修复协议，就会重新退回 pointer 修修补补与重连碰运气。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、SDK、CI、评审与交接系统到底该围绕哪些正式对象消费 Prompt 执行纠偏，而不是继续围绕补过的表单与 reviewer 结论判断。
 - 哪些 reject escalation 与 rollback boundary 一旦出现就说明 Prompt 世界已经重新长出第二真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/57`
 2. `../guides/60`
@@ -35,12 +35,12 @@
 
 ## 2. 治理宿主修复协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、SDK、CI、评审与交接系统到底该围绕哪些正式对象消费治理执行纠偏，而不是继续围绕 mode、审批与仪表盘补救判断。
 - 哪些 reject escalation 与 rollback object 一旦出现就说明统一定价控制面已经重新退回交互补丁。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/58`
 2. `../guides/61`
@@ -56,12 +56,12 @@
 
 ## 3. 结构宿主修复协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、SDK、CI、评审与交接系统到底该围绕哪些正式对象消费结构执行纠偏，而不是继续围绕 pointer、重连、日志与作者说明判断。
 - 哪些 reject escalation 与 recovery boundary 一旦出现就说明结构真相面已经重新退回恢复幻觉。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/59`
 2. `../guides/62`

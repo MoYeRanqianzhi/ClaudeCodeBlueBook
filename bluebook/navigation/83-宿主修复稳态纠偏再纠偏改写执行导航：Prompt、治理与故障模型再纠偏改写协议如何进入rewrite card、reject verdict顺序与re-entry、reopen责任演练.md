@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏改写协议层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写执行层”。
+1. 为什么宿主修复稳态纠偏再纠偏改写协议层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写执行层”。
 2. 为什么 Prompt 线如果不把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 运行成固定 `rewrite card`，Prompt 魔力就会重新退回 prose、summary 与默认继续。
 3. 为什么治理线如果不把 `authority`、`ledger`、`decision window`、`continuation pricing`、`capability liability` 与 `threshold` 运行成固定 `rewrite card`，安全设计与省 token 设计就会重新退回 mode 面板、usage dashboard 与保守建议。
 4. 为什么结构线如果不把 `authority surface`、`single-source writeback seam`、`lineage reproof`、`anti-zombie evidence` 与 `reopen liability` 运行成固定 `rewrite card`，源码先进性就会重新退回 pointer 健康感、telemetry 转绿、archive prose 与作者记忆。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么固定顺序执行 `compiled request truth restitution`、`protocol transcript repair`、`stable prefix reseal`、`lawful forgetting reseal`、`continuation requalification` 与 `threshold liability reinstatement`。
 - 哪些 `reject verdict` 一旦出现，就说明当前不是“rewrite 已完成”，而是应直接冻结 continuation、阻断 handoff 并进入 `re-entry / reopen`。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/59`
 2. `../api/78`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么固定顺序执行 `authority source restitution`、`ledger reseal`、`decision window refreeze`、`continuation pricing rebinding`、`capability liability recustody` 与 `threshold rebinding`。
 - 哪些 `reject verdict` 一旦出现，就说明当前只是 mode 与 dashboard 重新看起来很平静，而不是治理控制面真的重新统一定价一切扩张。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/60`
 2. `../api/79`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么固定顺序执行 `authority surface restitution`、`single-source writeback seam`、`lineage reproof`、`anti-zombie evidence restitution` 与 `reopen liability rebinding`。
 - 哪些 `reject verdict` 一旦出现，就说明当前只是更制度化的健康叙事，而不是 later 维护者可独立消费的结构真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/61`
 2. `../api/80`
