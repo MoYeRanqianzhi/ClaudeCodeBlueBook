@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 新增《请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object》《当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续》《one writable present验证失真反例：健康投影篡位、恢复资产越权与anti-zombie伪证》，并同步更新 `casebooks/README`、`navigation/39`、`navigation/40`、总索引与开发文档，把三张控制面图从“长期验证手册”继续下沉为“长期验证失真反例层”，同时保持正文与持久化记忆分层
 - 新增《请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归》《当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归》《one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归》，并同步更新 `playbooks/README`、`navigation/39` 与总索引，把三张控制面图从高阶审读模板继续下沉成长期验证手册
 - 新增《如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object》《如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing》《如何用苏格拉底诘问法审读one writable present：single-writer、recovery asset与anti-zombie》，并同步更新 `guides/README`、`navigation/15`、`navigation/42` 与总索引，把三张控制面图继续下沉成 builder-facing 高阶审读模板
 - 新增主线章节《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》与哲学专题《真正有魔力的Prompt，会先规定世界如何合法进入模型》《真正成熟的治理，不是更会拦截，而是更会为扩张定价》《真正先进的内核，不是更会分层，而是更会阻止过去写坏现在》，并同步更新导读、总索引、目录职责说明、苏格拉底导航与哲学专题 README，把 `architecture/82-84` 继续前置回主线入口与第一性原理层

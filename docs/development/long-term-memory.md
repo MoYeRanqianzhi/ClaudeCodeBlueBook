@@ -8,6 +8,20 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 三张控制面图的长期验证已补齐对应的验证失真层：
+  - `casebooks/73` 负责请求装配控制面如何退回假 `authority chain`、假 `protocol transcript` 与假 `continuation object`。
+  - `casebooks/74` 负责当前世界准入主权如何退回低信任扩权、假最小可见面与免费继续。
+  - `casebooks/75` 负责 one writable present 如何退回健康投影篡位、恢复资产越权与 `anti-zombie` 伪证。
+- 目录结构进一步优化：
+  - `casebooks/` 已从 `01-72` 扩展为 `01-75`。
+  - `navigation/40` 现在把 `22-24` 作为基础失真层，把 `73-75` 作为长期验证失真层，避免不同层级的坏解法重新混写。
+- 新的长期结论：
+  - 请求装配控制面最常死于“验真绿灯还在，但同一个 request object 已经丢失”。
+  - 当前世界准入主权最常死于“门禁还在，但未定价扩张已被 calm dashboard 伪装成保守治理”。
+  - one writable present 最常死于“结构健康投影仍亮着，但 current truth 已经被恢复资产、旧写入者或作者记忆接管”。
+  - Prompt 魔力的稳定排查顺序应固定为 `authority -> registry -> boundary -> protocol transcript -> lawful forgetting -> fork reuse`，不要先退回 wording / style 解释。
+  - 安全设计与省 token 设计的稳定判断应固定为“同一张治理控制面在给 action、visibility、context seat 与 continuation time 统一定价”，不要再把它拆成权限系统与压缩系统两套故事。
+  - 源码先进性的稳定判断应固定为“合法复杂度中心 + 依赖图/时间图诚实 + future maintainer 可独立 reject”，不要再用目录整洁度与文件大小替代。
 - 三张控制面图已继续下沉成长期验证手册：
   - `playbooks/77` 负责请求装配控制面的持续回归。
   - `playbooks/78` 负责当前世界准入主权的持续回归。

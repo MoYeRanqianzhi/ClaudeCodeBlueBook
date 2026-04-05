@@ -11,6 +11,60 @@
 - 本轮主线回收动作: 已继续把 `architecture/82-84` 上提为 `bluebook/09` 与 `philosophy/84-86`，避免高阶结论只停留在深层专题。
 - 本轮模板化动作: 已继续把三张控制面图下沉为 `guides/99-101` 三篇高阶苏格拉底审读模板，并通过 `navigation/15` 与 `navigation/42` 回收到稳定路由。
 - 本轮运行手册化动作: 已继续把三张控制面图下沉为 `playbooks/77-79` 三篇长期验证手册，并通过 `navigation/39` 回收到持续回归路由。
+- 本轮反例化动作: 已继续把三张控制面图的长期验证失真压成 `casebooks/73-75`，并通过 `navigation/40` 把“基础失真”与“验证失真”重新分层。
+- 主分支同步检查: `2026-04-06` 在仓库根执行 `git fetch origin && git pull --ff-only`，结果为 `Already up to date.`；当前本地 `main` 领先 `origin/main` 6 个提交，因此本轮不改主分支，只在 `mainloop` 内推进。
+
+### A078. 三张控制面图的长期验证之后，最值钱的补层是“验证失真层”，而不是继续把伪验证写回正文
+
+- 请求装配控制面一旦进入长期验证，最危险的失败方式就不再只是 `casebooks/22` 那种“多重 request truth”，而是 `playbooks/77` 明明已经存在，团队却仍把 authority chain 壁纸、display transcript、summary prose 与相似结果误当成同一个 request object 仍成立；这说明 Prompt 魔力真正需要补齐的不是更多正向解释，而是新的验证失真反例层 `casebooks/73`。
+- `buildEffectiveSystemPrompt()`、`normalizeMessagesForAPI()`、`ensureToolResultPairing()`、`sessionMemoryCompact`、`forkedAgent` 与 `promptCacheBreakDetection` 共同说明，请求装配控制面真正保护的是 authority、protocol、continuation 与 cache-safe fork 的同一对象链，而不是更顺的 Prompt 材料；这也说明 `navigation/40` 应该把 `22` 视为基础失真，把 `73` 视为验证失真，而不是继续把两类坏解法混成一层。
+- 当前世界准入主权一旦进入长期验证，最危险的失败方式就不再只是 `casebooks/23` 那种 mode / dashboard 崇拜，而是 `playbooks/78` 明明已经存在，团队却仍把 low-trust expansion、modalized ask、free visibility、cosmetic externalization 与 free continuation 误当成“更成熟的治理”；这说明安全设计与省 token 设计真正需要补齐的不是更多审批措辞，而是新的验证失真反例层 `casebooks/74`。
+- `managedEnv`、`settings` merge、`permissionSetup`、`interactiveHandler`、`toolSearch`、`toolResultStorage` 与 `checkTokenBudget()` 共同说明，治理真正保护的是 trusted inputs、typed ask、visibility pricing、externalization 与 continuation gate 的同一统一定价对象，而不是更平静的 dashboard；这也说明 `navigation/40` 应该把 `23` 视为基础失真，把 `74` 视为验证失真。
+- one writable present 一旦进入长期验证，最危险的失败方式就不再只是 `casebooks/24` 那种多点权威与 recovery asset 篡位，而是 `playbooks/79` 明明已经存在，团队却仍把 health projection、reconnect 成功、恢复成功率、目录整洁度与作者记忆误当成 current truth 还只有一个写入面；这说明源码先进性真正需要补齐的不是更多结构赞美，而是新的验证失真反例层 `casebooks/75`。
+- `QueryGuard`、`sessionIngress`、`bridgePointer`、`task/framework`、`WorkerStateUploader` 与 `worktree` guards 共同说明，结构先进性真正保护的是 single-writer authority、recovery asset 非主权、anti-zombie 证据、release surface 分层与 later maintainer rejectability，而不是更像健康系统的投影；这也说明 `navigation/40` 应该把 `24` 视为基础失真，把 `75` 视为验证失真。
+- 这也意味着正文和记忆层必须继续分开：`navigation/39` / `navigation/40` 只保留稳定阅读顺序与对象级分层，当前轮次、主分支同步结果、批次推进与后续候选统一回写 `docs/development/*`，不再重新塞回正文。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
+- `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:483-698`
+- `claude-code-source-code/src/utils/managedEnv.ts:93-220`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:472-716`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+
+### A079. 并行 Agent 复核后，Prompt 魔力、安全/省 token、源码先进性三条母线可继续固化成三条稳定判断规则
+
+- Prompt 魔力可以继续被压成一条稳定对象链：`authority chain -> section registry -> dynamic boundary -> protocol transcript -> lawful forgetting -> cache-safe forks`；它保护的不是更强的 system prompt，而是“同一个世界如何合法进入模型并继续成立”。这意味着以后只要讨论“Prompt 怎么突然不灵了”，优先回到对象链排查，而不是先回到 wording、tone 与 summary 解释。
+- `systemPromptSections`、`SYSTEM_PROMPT_DYNAMIC_BOUNDARY`、`normalizeMessagesForAPI()`、`ensureToolResultPairing()`、`sessionMemoryCompact`、`forkedAgent` 与 `promptCacheBreakDetection` 共同说明，Prompt 真相包含 section constitution、protocol legality、continuation identity 与 cache invalidation law；cache / invalidation 不是性能 trivia，而是 Prompt 宪法的一部分。
+- 安全设计与省 token 设计可以继续被压成一张统一定价控制面：trusted inputs、typed ask、deferred visibility、externalization 与 continuation pricing 不是五个并列技巧，而是同一个 admission sovereignty object 的五个可验证切面。这意味着以后不要再把“权限系统”和“压缩系统”当成两条相互权衡的支线。
+- `managedEnv`、`settings` merge、`permissionSetup`、`interactiveHandler`、`toolSearch`、`toolResultStorage`、`analyzeContext` 与 `checkTokenBudget()` 共同说明，Claude Code 真正在定价的是 action、visibility、context seat 与 continuation time 四类扩张，而不是只在“更谨慎”和“更省 token”之间做气质取舍。
+- 源码先进性的最强信号不是文件更小，而是合法复杂度中心、依赖图诚实、时间诚实与 future maintainer rejectability。即使热点文件存在，只要它们是 contract-first、runtime-first、invariant-first 的合法复杂度中心，且周围 seam 仍然诚实，这种复杂度就是被治理过的复杂度，不是失控复杂度。
+- 这也意味着后续如果还要继续写正文，最值钱的候选不是再补“源码质量很高”的赞美，而是把“合法复杂度中心”“源码证据梯度”“future-maintainer control plane”压成更正式的 architecture / guides / philosophy 新层；而本轮持久化记忆只需先固定这三条稳定判断规则，不把新的候选前向入口写回正文。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:16-65`
+- `claude-code-source-code/src/constants/prompts.ts:114-176`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
+- `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
+- `claude-code-source-code/src/utils/managedEnv.ts:93-220`
+- `claude-code-source-code/src/utils/settings/settings.ts:319-520`
+- `claude-code-source-code/src/utils/toolSearch.ts:385-704`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:740-860`
+- `claude-code-source-code/src/utils/analyzeContext.ts:918-1382`
+- `bluebook/architecture/38-Contract优先、运行时底盘与公开镜像缺口.md`
+- `bluebook/architecture/63-可演化内核：Claude Code如何在持续增长中维持不变量.md`
+- `bluebook/architecture/69-源码即治理界面：注释、命名与显式边界如何降低误改成本.md`
+- `bluebook/architecture/72-未来维护者消费者控制面：风险命名、制度注释、seam与状态机如何共同服务演化.md`
+- `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`
 
 ### A074. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议层
 
