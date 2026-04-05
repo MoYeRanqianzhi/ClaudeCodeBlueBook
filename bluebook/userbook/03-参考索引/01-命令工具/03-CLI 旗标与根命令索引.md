@@ -203,8 +203,28 @@
   可见性：`隐藏/灰度`
   用途：创建 remote session
 - `--remote-control [name]` / `--rc [name]`
-  可见性：`隐藏/灰度`
+  可见性：`条件/高级`
   用途：启动 bridge host
+  关键约束：不仅隐藏，还受 `BRIDGE_MODE`、OAuth、版本和组织策略限制
+
+### 条件公开但默认不应承诺的一组
+
+- `--advisor <model>`
+  可见性：`条件/高级`
+  用途：启用 server-side advisor tool
+- `--enable-auto-mode`
+  可见性：`条件/高级`
+  用途：显式 opt in auto mode
+- `--assistant`
+  可见性：`内部/托管`
+  用途：强制 assistant mode
+  关键约束：help 文案已写明更偏 Agent SDK daemon use
+- `--channels <servers...>`
+  可见性：`条件/高级`
+  用途：注册 MCP channel notifications
+- `--dangerously-load-development-channels <servers...>`
+  可见性：`条件/高级`
+  用途：加载非 allowlist 的 development channels
 
 ### 隐藏但仍能说明运行时合同的一组
 
@@ -236,12 +256,18 @@
 - `--rewind-files <user-message-id>`
   可见性：`隐藏/灰度`
   用途：按某个 user message 回退文件并退出
+- `--init`
+  可见性：`隐藏/灰度`
+  用途：以 init trigger 运行 Setup hooks 后继续
+- `--init-only`
+  可见性：`隐藏/灰度`
+  用途：只运行 Setup 和 SessionStart:startup hooks 后退出
+- `--maintenance`
+  可见性：`隐藏/灰度`
+  用途：以 maintenance trigger 运行 Setup hooks
 
 ### 更偏内部协作、深链或运行支撑
 
-- `--init`
-- `--init-only`
-- `--maintenance`
 - `--prefill`
 - `--deep-link-origin`
 - `--deep-link-repo`

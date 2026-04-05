@@ -196,7 +196,7 @@ Claude Code 的入口至少分成两层：
 - `--sdk-url`：隐藏且更偏宿主 plumbing 的协议流入口，会自动把会话推到 print + `stream-json` + verbose
 - `--teleport [session]`：隐藏远程/teleport 会话恢复面
 - `--remote [description]`：隐藏 remote session 创建面
-- `--remote-control [name]` / `--rc [name]`：隐藏 bridge host 启动面
+- `--remote-control [name]` / `--rc [name]`：条件公开的 bridge host 启动面，隐藏只是外观，真正边界是 entitlement、版本和组织策略
 
 更稳的写法不是把它们删掉不谈，而是承认三件事：
 
