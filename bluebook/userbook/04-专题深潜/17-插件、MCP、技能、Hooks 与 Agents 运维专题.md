@@ -31,6 +31,8 @@
 - 看当前暴露出的能力
 - 还是让本会话吃到刚刚安装的变更
 
+如果你还想分清 `claude plugin ...`、`claude mcp ...`、`claude agents` 这些会外 root commands 与 `/plugin`、`/mcp`、`/agents` 这些会内面板的层级差异，应继续看 `19-会外控制台与会内面板专题.md`。
+
 ## 正确入口
 
 ### `/skills`
