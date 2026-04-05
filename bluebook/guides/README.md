@@ -93,6 +93,12 @@
 87. [87-如何把Prompt宿主修复稳态纠偏再纠偏改写纠偏执行失真压回compiled request truth：固定rewrite correction顺序、section registry、dynamic boundary与threshold改写模板骨架](87-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%EF%BC%9Aregistry%E3%80%81boundary%E4%B8%8Ethreshold%E6%A8%A1%E6%9D%BF.md)
 88. [88-如何把治理宿主修复稳态纠偏再纠偏改写纠偏执行失真压回统一定价控制面：固定rewrite correction顺序、classifier、writeback seam与threshold改写模板骨架](88-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%EF%BC%9Aclassifier%E3%80%81writeback%20seam%E4%B8%8Ethreshold%E6%A8%A1%E6%9D%BF.md)
 89. [89-如何把结构宿主修复稳态纠偏再纠偏改写纠偏执行失真压回结构真相面：固定rewrite correction顺序、fresh merge、transport与liability改写模板骨架](89-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E5%A4%B1%E7%9C%9F%EF%BC%9Afresh%20merge%E3%80%81transport%E4%B8%8Eliability%E6%A8%A1%E6%9D%BF.md)
+90. [90-如何把Prompt宿主修复稳态纠偏再纠偏改写纠偏精修执行失真压回编译对象：固定refinement顺序、lineage、synthesis与liability改写模板骨架](90-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修执行失真：lineage、synthesis与liability模板.md)
+91. [91-如何把治理宿主修复稳态纠偏再纠偏改写纠偏精修执行失真压回统一定价控制面：固定refinement顺序、writeback、pricing与liability改写模板骨架](91-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行失真：writeback、pricing与liability模板.md)
+92. [92-如何把结构宿主修复稳态纠偏再纠偏改写纠偏精修执行失真压回结构真相面：固定refinement顺序、merge、fail-closed与liability改写模板骨架](92-结构宿主修复稳态纠偏再纠偏改写纠偏精修执行失真：merge、fail-closed与liability模板.md)
+93. [93-如何把Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行失真压回编译对象：固定refinement correction顺序、authority chain、protocol truth与liability改写模板骨架](93-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行失真：authority chain、protocol truth与liability模板.md)
+94. [94-如何把治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行失真压回统一定价控制面：固定refinement correction顺序、window truth、pricing causality与liability改写模板骨架](94-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行失真：window truth、pricing causality与liability模板.md)
+95. [95-如何把结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行失真压回结构真相面：固定refinement correction顺序、authority surface、fresh merge与liability改写模板骨架](95-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行失真：authority surface、fresh merge与liability模板.md)
 
 ## 按使用目标阅读
 
@@ -198,7 +204,12 @@
 - 再往下一层，应由 `../navigation/90 -> ../api/84-86` 继续回答“怎样把这些 rewrite correction 固定顺序继续压成宿主可消费对象、hard reject 语义与长期 reopen 责任账本”。
 - `../navigation/93 -> 90-92` 继续回答“怎样把这些 refinement execution 失真重新压回固定 refinement 顺序、拒收升级路径与改写模板骨架”。
 - `../navigation/94 -> ../api/87-89` 继续回答“怎样把这些 refinement correction 继续压成宿主可消费的修正对象、拒收语义与长期 reopen 责任面”。
-- 再往下一层，应由 `../navigation/95 -> ../playbooks/68-70` 继续回答“怎样把这些 refinement correction protocol 继续压成固定 repair card、reject 顺序与 reopen 责任演练”。
+- `../navigation/95 -> 68-70` 继续回答“怎样把这些 refinement correction protocol 继续压成固定 repair card、reject 顺序与 reopen 责任演练”。
+- `../navigation/96 -> ../casebooks/64-66` 继续回答“为什么这些 refinement correction execution 明明已经存在，仍会重新退回假 repair card、假 reject 顺序与假 reopen 责任演练”。
+- `../navigation/97 -> 93-95` 继续回答“怎样把这些 refinement correction execution 失真重新压回固定 refinement correction 顺序、拒收升级路径与改写模板骨架”。
+- `../navigation/98 -> ../api/90-92` 继续回答“怎样把这些 refinement correction fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
+- `../navigation/99 -> ../playbooks/71-73` 继续回答“怎样把这些 refinement correction repair protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练”。
+- 再往下一层，应由 `../navigation/100 -> ../casebooks/67-69` 继续回答“为什么这些 refinement correction refinement execution 明明已经存在，仍会重新退回假 repair card、假共同 reject 顺序与假 reopen 责任演练”。
 - 再往下一层，应由 `../navigation/58 -> ../api/60-62` 继续回答“怎样把这些宿主修复纠偏继续压成宿主可消费的收口卡、完成语义与交接保证面”。
 - `../philosophy/81-83` 负责回答“为什么这些实现顺序不是经验技巧，而是 Prompt 编译链、统一定价治理与故障模型编码的不可约判断”。
 

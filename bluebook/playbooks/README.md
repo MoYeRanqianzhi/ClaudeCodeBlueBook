@@ -87,6 +87,9 @@
 68. [68-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行手册：repair card、reject order与reopen drill](68-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arepair%20card%E3%80%81reject%20order%E4%B8%8Ereopen%20drill.md)
 69. [69-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行手册：repair card、reject order与reopen drill](69-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arepair%20card%E3%80%81reject%20order%E4%B8%8Ereopen%20drill.md)
 70. [70-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行手册：repair card、reject order与reopen drill](70-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arepair%20card%E3%80%81reject%20order%E4%B8%8Ereopen%20drill.md)
+71. [71-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：repair card、共同reject order与reopen drill](71-Prompt%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arepair%20card%E3%80%81%E5%85%B1%E5%90%8Creject%20order%E4%B8%8Ereopen%20drill.md)
+72. [72-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：repair card、共同reject order与reopen drill](72-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arepair%20card%E3%80%81%E5%85%B1%E5%90%8Creject%20order%E4%B8%8Ereopen%20drill.md)
+73. [73-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：repair card、共同reject order与reopen drill](73-%E7%BB%93%E6%9E%84%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arepair%20card%E3%80%81%E5%85%B1%E5%90%8Creject%20order%E4%B8%8Ereopen%20drill.md)
 
 ## 按目标阅读
 
@@ -122,6 +125,7 @@
 - 想继续看这些宿主修复稳态执行明明已经存在，为什么仍会重新退回假稳态、假托管与假阈值，而不是误把 steady-state card 当成正式证明：`../navigation/72 -> ../casebooks/46 -> ../casebooks/47 -> ../casebooks/48`
 - 想继续把这些宿主修复稳态纠偏协议压成真正值班可执行的 correction card、执行顺序与再入场责任演练，而不是停在 correction protocol 字段层：`../navigation/75 -> 53 -> 54 -> 55`
 - 想继续看这些宿主修复稳态纠偏执行明明已经存在，为什么仍会重新退回假修正卡、假恢复顺序与假责任演练，而不是误把 correction card 当成正式恢复证明：`../navigation/76 -> ../casebooks/49 -> ../casebooks/50 -> ../casebooks/51`
+- 想继续把这些宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议压成真正值班可执行的 `repair card`、共同 `reject order` 与 `reopen drill`，而不是停在 repair protocol 字段层：`../navigation/99 -> 71 -> 72 -> 73`
 
 ## 与其他目录的边界
 
@@ -174,7 +178,11 @@
 - `../navigation/93 -> ../guides/90-92` 继续回答“怎样把这些 refinement execution 失真重新压回固定 refinement 顺序、拒收升级路径与改写模板骨架”。
 - `../navigation/94 -> ../api/87-89` 继续回答“怎样把这些 refinement correction 继续压成宿主可消费的修正对象、拒收语义与长期 reopen 责任面”。
 - `../navigation/95 -> 68-70` 继续回答“怎样把这些 refinement correction protocol 继续压成固定 repair card、reject 顺序与 reopen 责任演练”。
-- 再往下一层，应由 `../navigation/96 -> ../casebooks/64-66` 继续回答“为什么这些 refinement correction execution 明明已经存在，仍会重新退回假 repair card、假 reject 顺序与假 reopen 责任演练”。
+- `../navigation/96 -> ../casebooks/64-66` 继续回答“为什么这些 refinement correction execution 明明已经存在，仍会重新退回假 repair card、假 reject 顺序与假 reopen 责任演练”。
+- `../navigation/97 -> ../guides/93-95` 继续回答“怎样把这些 refinement correction execution 失真重新压回固定 refinement correction 顺序、拒收升级路径与改写模板骨架”。
+- `../navigation/98 -> ../api/90-92` 继续回答“怎样把这些 refinement correction fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
+- `../navigation/99 -> 71-73` 继续回答“怎样把这些 refinement correction repair protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练”。
+- 再往下一层，应由 `../navigation/100 -> ../casebooks/67-69` 继续回答“为什么这些 refinement correction refinement execution 明明已经存在，仍会重新退回假 repair card、假共同 reject 顺序与假 reopen 责任演练”。
 - 再往下一层，应由 `../navigation/84 -> ../casebooks/55-57` 继续回答“为什么这些稳态纠偏再纠偏改写执行明明已经存在，仍会重新退回假 rewrite card、假 reject 顺序与假 reopen 责任演练”。
 - 再往下一层，应由 `../navigation/88 -> ../casebooks/58-60` 继续回答“为什么这些稳态纠偏再纠偏改写纠偏执行明明已经存在，仍会重新退回假 rewrite correction card、假 reject 顺序与假 reopen 责任演练”。
 - `casebooks/` 负责“坏会怎样、为什么坏、具体坏在哪”。
