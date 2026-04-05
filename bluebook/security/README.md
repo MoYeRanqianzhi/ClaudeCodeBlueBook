@@ -51,7 +51,9 @@
 
 - 想直接看为什么看到 `response` 不等于配签收，以及谁才是真正的 receipt signer：`146 -> 147 -> appendix/131 -> source-notes/01`
 - 想直接看为什么 `receipt` 仍不等于 `completion`，以及不同 signer 到底最多能说到哪一层完成：`147 -> 148 -> appendix/132`
+- 想直接看为什么 even after `completion` 仍不等于 `finality`，以及哪些信号只签 turn-over、哪些才接近 future-readable truth：`148 -> 149 -> appendix/133 -> source-notes/02`
 - 想直接看更贴近源码的回执账本剖面：`source-notes/01`
+- 想直接看更贴近源码的终局签字剖面：`source-notes/02`
 
 ## 附录与源码剖面
 

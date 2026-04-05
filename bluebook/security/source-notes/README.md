@@ -18,6 +18,7 @@
 ## 当前内容
 
 1. [01-StructuredIO回执账本与签收边界](01-StructuredIO%E5%9B%9E%E6%89%A7%E8%B4%A6%E6%9C%AC%E4%B8%8E%E7%AD%BE%E6%94%B6%E8%BE%B9%E7%95%8C.md)
+2. [02-print与CCRClient的终局签字边界](02-print%E4%B8%8ECCRClient%E7%9A%84%E7%BB%88%E5%B1%80%E7%AD%BE%E5%AD%97%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
