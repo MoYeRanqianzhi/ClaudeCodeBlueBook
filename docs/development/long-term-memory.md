@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”层。
+- 新增结论：
+  - Prompt refinement correction repair protocol 如果要真正被长期共同执行，不能只保留 authority chain、protocol truth 与 repair attestation 的对象名，还要把它们继续运行成同一张 cross-consumer `repair card`、同一条共同 `reject order` 与正式 `reopen drill`；否则 Prompt 魔力仍会从编译对象退回 UI transcript、repair prose 与 handoff packet。
+  - 治理 refinement correction repair protocol 如果要真正被长期共同执行，不能只保留 authority、window、pricing、classifier、writeback 与 threshold 的对象名，还要把 `permission request + pending_action + context usage + classifier telemetry + ingress lineage` 继续运行成同一张 cross-consumer `repair card`；否则安全设计与省 token 设计仍会退回 mode 面板、usage dashboard 与运营感觉。
+  - 结构 refinement correction repair protocol 如果要真正被长期共同执行，不能只保留 authority、single-source、lineage、fresh merge、anti-zombie、transport 与 fail-closed 的对象名，还要把它们继续运行成同一张 cross-consumer `repair card`、同一条共同 `reject order` 与正式 `reopen drill`；否则源码先进性仍会退回 pointer、telemetry、archive prose 与作者记忆。
+- 新增目录责任：
+  - `navigation/99` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行入口。
+  - `playbooks/71-73` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction repair protocol 的固定 `repair card`、共同 `reject order` 与正式 `reopen drill`。
+- 当前新的写作约束：
+  - `playbooks/71-73` 只表示 correction-of-correction rewrite correction refinement correction refinement execution，不再回头重写 `api/90-92` 的 repair 对象协议面。
+  - `74-99` 应被持续当成一条连续小循环来写，而不是二十六篇并列新增文章。
+- 下一步最值钱的候选应切到 `casebooks/67-69`，把这一层 refinement correction refinement execution 最常怎样退回假 `repair card`、假共同 `reject order` 与假 `reopen liability` 写成新的反例层。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏 / repair steady-state correction-of-correction rewrite correction refinement correction guide”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”层。
 - 新增结论：
   - Prompt refinement correction fixed order 如果要真正被宿主、CI、评审与交接共同消费，不能只停在 fixed order 与硬拒收，还要把 authority chain、compiled request lineage、protocol truth、cross-consumer repair attestation 与 long-horizon reopen liability 压成 compact-safe、continuation-safe 的 repair 对象协议。

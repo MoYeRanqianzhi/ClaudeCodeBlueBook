@@ -2,10 +2,48 @@
 
 ## 当前基线
 
-- 日期: `2026-04-03`
+- 日期: `2026-04-06`
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+
+### A071. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行层
+
+- Prompt refinement correction repair protocol 即使已经被 `api/90` 压成 authority chain、protocol truth、repair attestation 与 long-horizon reopen liability 的共享协议层，如果团队不能继续把这些对象运行成同一张 cross-consumer `repair card`、同一条共同 `reject order` 与正式 `reopen drill`，Prompt 魔力就仍会继续围绕 UI transcript、repair prose、handoff packet 与未综合的 worker prose 工作；这说明 Prompt 线下一层最值钱的不是继续补协议字段，而是把 repair protocol 压成新的 playbook execution layer。
+- Governance refinement correction repair protocol 即使已经被 `api/91` 压成 authority chain、pricing causality、writeback seam 与 long-horizon reopen liability 的共享协议层，如果团队不能继续把 `permission request + pending_action + context usage + classifier telemetry + ingress lineage` 运行成同一张 cross-consumer `repair card`、同一条共同 `reject order` 与正式 `reopen liability drill`，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与运营感觉工作；这说明治理线下一层最值钱的不是继续补协议对象，而是把 repair protocol 压成新的 playbook execution layer。
+- Structure refinement correction repair protocol 即使已经被 `api/92` 压成 authority surface、single-source writeback、lineage/fresh merge、anti-zombie、transport、fail-closed 与 long-horizon reopen liability 的共享协议层，如果团队不能继续把这些对象运行成同一张 cross-consumer `repair card`、同一条共同 `reject order` 与正式 `reopen drill`，源码先进性就仍会继续围绕 pointer、telemetry、archive prose 与作者说明工作；这说明结构线下一层最值钱的不是继续补协议对象，而是把 repair protocol 压成新的 playbook execution layer。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏 refinement correction repair protocol 之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行层”：
+  - `navigation/99` 负责统一入口。
+  - `playbooks/71-73` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction repair protocol 的固定 `repair card`、共同 `reject order` 与正式 `reopen drill`。
+- 这也意味着 `94-99` 应被视为一条连续小循环，而不是六篇并列文章。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 playbook 话术，而是考虑新的 `casebooks/67-69`，把这些 refinement correction refinement execution 最常怎样重新退回假 `repair card`、假共同 `reject order` 与假 `reopen liability` 写成新的反例层。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/constants/prompts.ts:491-576`
+- `claude-code-source-code/src/utils/api.ts:321-405`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/coordinator/coordinatorMode.ts:207-257`
+- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:483-698`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:526-1318`
+- `claude-code-source-code/src/utils/permissions/yoloClassifier.ts:1250-1312`
+- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
+- `claude-code-source-code/src/utils/sessionState.ts:92-149`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:186-400`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+- `claude-code-source-code/src/cli/transports/SSETransport.ts:149-457`
 
 ### A070. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议层
 
