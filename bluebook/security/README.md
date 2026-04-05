@@ -236,6 +236,14 @@
 - 想直接看不同恢复 carrier 到底由谁清理、clear trigger 是什么，以及哪些提前清理绝不能发生：看 `appendix/74`
 - 想直接看为什么即使清理权限已经分清仍然不够，以及在撤回条件未成立前哪些恢复资产反而必须被制度性保留：看 `91`
 - 想直接看不同恢复资产到底由谁保全、何时过期、哪些过早丢失绝不能发生：看 `appendix/75`
+- 想直接看为什么看到 `response` 不等于配签收，以及谁才是真正的 receipt signer：`146` -> `147` -> `appendix/131` -> `source-notes/01`
+
+## 源码剖面目录
+
+- [安全源码剖面索引](source-notes/README.md)
+- `source-notes/` 专门放单机制、单协议、单文件群的源码剖面。
+- 它比 `appendix/` 更长，但比主线章节更贴近证据，适合承接“这条高阶判断到底是踩着哪组具体代码长出来”的问题。
+- 第一篇建议从 `source-notes/01` 开始，看 `StructuredIO` 回执账本、duplicate/orphan 吸收与 stale prompt teardown 到底如何共同定义 receipt signer。
 
 ## 和其他目录的关系
 

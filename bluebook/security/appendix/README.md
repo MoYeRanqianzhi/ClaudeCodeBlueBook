@@ -13,6 +13,13 @@
 而是避免 `security/` 主目录继续线性膨胀，  
 让主线更像论证链，附录更像检索层。
 
+同时也继续和 `../source-notes/` 分工：
+
+- `appendix/` 负责短表、矩阵、索引
+- `source-notes/` 负责较长的源码剖面
+
+这样可以避免“速查表越写越长，最后退化成半篇主线长文”。
+
 ## 当前内容
 
 1. [01-安全检测证据索引：从模块到结论的映射](01-%E5%AE%89%E5%85%A8%E6%A3%80%E6%B5%8B%E8%AF%81%E6%8D%AE%E7%B4%A2%E5%BC%95%EF%BC%9A%E4%BB%8E%E6%A8%A1%E5%9D%97%E5%88%B0%E7%BB%93%E8%AE%BA%E7%9A%84%E6%98%A0%E5%B0%84.md)
@@ -145,3 +152,4 @@
 128. [128-安全偏斜算子主权速查表：layer、allowed operators、forbidden overreach、truth basis与cleanup signer implication](128-%E5%AE%89%E5%85%A8%E5%81%8F%E6%96%9C%E7%AE%97%E5%AD%90%E4%B8%BB%E6%9D%83%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Alayer%E3%80%81allowed%20operators%E3%80%81forbidden%20overreach%E3%80%81truth%20basis%E4%B8%8Ecleanup%20signer%20implication.md)
 129. [129-安全偏斜处置移交速查表：weak observer、allowed local action、handoff target、forbidden overreach与cleanup handoff implication](129-%E5%AE%89%E5%85%A8%E5%81%8F%E6%96%9C%E5%A4%84%E7%BD%AE%E7%A7%BB%E4%BA%A4%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Aweak%20observer%E3%80%81allowed%20local%20action%E3%80%81handoff%20target%E3%80%81forbidden%20overreach%E4%B8%8Ecleanup%20handoff%20implication.md)
 130. [130-安全偏斜处置回执速查表：receipt surface、matching key、completion signal、orphan handling与cleanup receipt implication](130-%E5%AE%89%E5%85%A8%E5%81%8F%E6%96%9C%E5%A4%84%E7%BD%AE%E5%9B%9E%E6%89%A7%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Areceipt%20surface%E3%80%81matching%20key%E3%80%81completion%20signal%E3%80%81orphan%20handling%E4%B8%8Ecleanup%20receipt%20implication.md)
+131. [131-安全回执签字权速查表：surface、receipt authority、required truth input、forbidden weak receipt与future cleanup implication](131-%E5%AE%89%E5%85%A8%E5%9B%9E%E6%89%A7%E7%AD%BE%E5%AD%97%E6%9D%83%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Asurface%E3%80%81receipt%20authority%E3%80%81required%20truth%20input%E3%80%81forbidden%20weak%20receipt%E4%B8%8Efuture%20cleanup%20implication.md)
