@@ -497,4 +497,6 @@
 - 想把 `143` 的长文压成一张偏斜处置算子矩阵，快速看出不同 skew object 的 preferred operator、why not adjacent operator、current source 与 cleanup extrapolation：`143` -> `appendix/127`
 - 想看为什么即使 remediation operator 已经齐全，Claude Code 仍不允许任意层随便挑动词，而是把 nudge、retag、block、reject 与 fence 分配给不同 signer 边界：`143` -> `144`
 - 想把 `144` 的长文压成一张算子主权矩阵，快速看出不同 layer 的 allowed operators、forbidden overreach、truth basis 与 cleanup signer implication：`144` -> `appendix/128`
+- 想看为什么即使 operator sovereignty 已经分清，弱层先看到 skew 时仍不应越级执行，而应按 abstain、forward、rerun-full-gate 与 adapter-internalize 把权交给更强 signer：`144` -> `145`
+- 想把 `145` 的长文压成一张处置移交矩阵，快速看出不同 weak observer 的 allowed local action、handoff target、forbidden overreach 与 cleanup handoff implication：`145` -> `appendix/129`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
