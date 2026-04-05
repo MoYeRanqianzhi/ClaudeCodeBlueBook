@@ -499,4 +499,6 @@
 - 想把 `144` 的长文压成一张算子主权矩阵，快速看出不同 layer 的 allowed operators、forbidden overreach、truth basis 与 cleanup signer implication：`144` -> `appendix/128`
 - 想看为什么即使 operator sovereignty 已经分清，弱层先看到 skew 时仍不应越级执行，而应按 abstain、forward、rerun-full-gate 与 adapter-internalize 把权交给更强 signer：`144` -> `145`
 - 想把 `145` 的长文压成一张处置移交矩阵，快速看出不同 weak observer 的 allowed local action、handoff target、forbidden overreach 与 cleanup handoff implication：`145` -> `appendix/129`
+- 想看为什么即使 handoff protocol 已成立，移交本身仍不等于闭环，而必须继续靠 request_id、completion notification 与 orphan reconciliation 正式签收：`145` -> `146`
+- 想把 `146` 的长文压成一张回执矩阵，快速看出不同 receipt surface 的 matching key、completion signal、orphan handling 与 cleanup receipt implication：`146` -> `appendix/130`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
