@@ -20,6 +20,7 @@
 - `165` 已经稳定写出退役治理边界：repo 在模型退役日期、迁移通知、legacy runtime remap、plugin orphan grace window 与 search visibility cutoff 上已明确展示 sunset governance 的存在，说明决定“旧世界怎样过渡”与决定“兼容期何时正式结束”仍然是两层主权；因此 `artifact-family cleanup migration-governance` 仍不能越级冒充 `artifact-family cleanup sunset-governance`。
 - `166` 已经稳定写出墓碑治理边界：repo 在 `tombstone` messages、`.orphaned_at` markers、marker-driven exclusion grammar 与 migration timestamps 上已明确展示 tombstone governance 的存在，说明决定“旧世界何时结束”与决定“结束后还留下什么最小残留标记”仍然是两层主权；因此 `artifact-family cleanup sunset-governance` 仍不能越级冒充 `artifact-family cleanup tombstone-governance`。
 - `167` 已经稳定写出复活治理边界：repo 在 authoritative marker clearing、Layer-3 plugin refresh、`needsRefresh` / `/reload-plugins`、plan recovery 与 forked new-slug policy 上已明确展示 resurrection governance 的存在，说明决定“结束后留什么墓碑”与决定“旧对象怎样重新回到 current world”仍然是两层主权；因此 `artifact-family cleanup tombstone-governance` 仍不能越级冒充 `artifact-family cleanup resurrection-governance`。
+- `168` 已经稳定写出再赋权治理边界：repo 在 `deletePluginOptions()`、`setPluginEnabledOp()`、policy blocking、settings divergence guard 与 `copyPlanForFork()` 的 new-slug policy 上已明确展示 re-entitlement governance 的存在，说明决定“旧对象怎样回来”与决定“回来后恢复哪些旧资格”仍然是两层主权；因此 `artifact-family cleanup resurrection-governance` 仍不能越级冒充 `artifact-family cleanup re-entitlement-governance`。
 
 ## 本轮已净化的正文段
 
@@ -37,14 +38,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-167`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance -> artifact-family cleanup resurrection-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone/resurrection ladder
+- `147-168`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance -> artifact-family cleanup resurrection-governance -> artifact-family cleanup re-entitlement-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone/resurrection/re-entitlement ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `168`
-  方向：`artifact-family cleanup resurrection-governor signer` 仍不等于 `artifact-family cleanup re-entitlement-governor signer`
-  原因：`167` 已经证明旧对象回来需要单独的 resurrection authority；但对象回来，并不自动回答它是否恢复旧 identity、旧配置、旧 secrets、旧 scope 与旧可用资格。也就是：谁配决定 resurrected path、promise、receipt 是否重新获得旧 entitlement，这仍是另一层 re-entitlement governance 问题
-  证据起点：`src/utils/plugins/pluginOptionsStorage.ts` 的 `deletePluginOptions()`、`src/services/plugins/pluginOperations.ts` 的 `setPluginEnabledOp()`、`src/utils/plans.ts` 的 `copyPlanForFork()` 与 cleanup 线潜在的旧 path / old receipt 世界形成对照：repo 已展示对象可回来，但“回来后算不算原来的那个可用对象”仍是另一层主权
+- 候选 `169`
+  方向：`artifact-family cleanup re-entitlement-governor signer` 仍不等于 `artifact-family cleanup reconfiguration-governor signer`
+  原因：`168` 已经证明对象回来后是否恢复旧资格需要单独主权；但恢复 enabled state、identity 或 scope，并不自动回答旧配置、旧参数、旧 secrets、旧 payload 应怎样被重新填写、迁回或重新声明。也就是：谁配决定 resurrected path、promise、receipt 在重新具备资格后如何重新配置，这仍是另一层 reconfiguration governance 问题
+  证据起点：`src/utils/plugins/pluginOptionsStorage.ts` 的 option/secret save-delete grammar、`src/utils/plugins/mcpbHandler.ts` 的 per-server config split、`src/services/plugins/pluginOperations.ts` 的 enable/disable 与 cleanup 线潜在的旧 path / old receipt 世界形成对照：repo 已展示资格能否恢复，但“恢复后以什么配置重新工作”仍是另一层主权
 
 ## 持续约束
 

@@ -14,7 +14,15 @@
 - 本轮反例化动作: 已继续把三张控制面图的长期验证失真压成 `casebooks/73-75`，并通过 `navigation/40` 把“基础失真”与“验证失真”重新分层。
 - 本轮方法论动作: 已新增 `guides/102`，并同步升级 `navigation/07`、`navigation/15`、`navigation/41` 与 `guides/30`，把“公开镜像源码质量研究协议”补成稳定入口。
 - 本轮哲学收束动作: 已新增 `philosophy/87`，把源码质量线从“结构为什么先进”继续收束到“怎样判断先进才算稳”。
-- 主分支同步检查: `2026-04-06` 在当前研究 worktree 内再次执行 `git fetch origin main`；结果确认 `LOCAL_MAIN=801fe80`、`ORIGIN_MAIN=801fe80`，本轮开始前主分支依然无新增提交需要吸收，因此继续只在 `.worktrees/claude-code-risk-analysis` 内推进。
+- 主分支同步检查: `2026-04-06` 在当前研究 worktree 内再次执行 `git fetch origin main`；结果确认 `ORIGIN_MAIN=801fe80`，而本地 `main` 当前在 `389c4aa`，已领先 `origin/main` 37 个提交；同时 `origin/main` 已被当前研究分支包含，因此本轮无需改动主分支，也无需额外把远端主分支并入当前 worktree。
+
+### A091. 复活治理之后仍要继续分出再赋权治理：Claude Code 当前即便知道旧 cleanup 对象怎样回来，也还没有谁被正式授权决定它回来后恢复哪些旧资格
+
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 仍为 `801fe80`；本地 `main` 当前是 `389c4aa`，已超前远端 37 个提交，但这些变化不需要在当前 research worktree 里额外吸收。当前 research 分支已包含 `origin/main`，因此继续只在 `.worktrees/claude-code-risk-analysis` 内推进。
+- 本轮新增 `168-安全载体家族复活治理与再赋权治理分层`，核心判断是：`167` 已经证明 cleanup 线未来即便长出 resurrection governor，也只是在回答“旧对象怎样重新回到 current world”；但继续看 `pluginOptionsStorage.ts` 里 `deletePluginOptions()` 对 `pluginConfigs` 与 `pluginSecrets` 的删除、`pluginOperations.ts:setPluginEnabledOp()` 对 enabled state 的单独写入、`pluginPolicy.ts` 的 policy veto、`installedPluginsManager.ts` 的 settings divergence guard，以及 `plans.ts:copyPlanForFork()` 的 new-slug policy，会发现更深层的问题已经不再只是 “谁来让对象回来”，而是 “谁来决定它回来后恢复哪些旧资格”。也就是说，`artifact-family cleanup resurrection-governor signer` 仍不等于 `artifact-family cleanup re-entitlement-governor signer`。
+- 本轮最硬的源码证据有三组。第一组是 plugin re-entitlement 正例：`deletePluginOptions():210-267` 会在 last-scope uninstall 时清 `settings.pluginConfigs[pluginId]` 与 `secureStorage.pluginSecrets[pluginId]`，说明对象回来不等于旧配置和旧 secrets 自动回来；`setPluginEnabledOp():573-734` 又把 enabled state 恢复做成单独 settings write，说明 object return 与 enabled entitlement 也是两层主权。第二组是 stronger authority 正例：`pluginPolicy.ts:1-18` 明确把 `policySettings.enabledPlugins[pluginId] === false` 视为 block，`setPluginEnabledOp()` 在 enable 前直接挡住它；`installedPluginsManager.ts:820-861` 还写明只要 `settings.enabledPlugins` 与 `installed_plugins.json` diverge，就把对象视作 not-installed so the user can re-enable，说明 disk/materialized existence 仍不能偷签 effective entitlement。第三组是 identity entitlement 正例：`copyPlanForFork():234-258` 明确让内容回来时使用 new slug，而不是恢复 original slug，说明 resurrection 成立并不自动回答 old identity entitlement 是否恢复。这些正例共同说明 repo 并不把 “对象已经回来” 直接偷写成 “它还是原来那个被授权、被配置、被信任的对象”。
+- 本轮因此同步补入 `appendix/152-安全载体家族复活治理与再赋权治理分层速查表` 与 `source-notes/19-deletePluginOptions、setPluginEnabledOp与copyPlanForFork的再赋权治理边界`。这样 `168` 不再停留在 “resurrection != re-entitlement” 的抽象口号，而是第一次把 `resurrection decision / re-entitlement decision / positive control / cleanup requalification gap / governor question` 压成回查矩阵，并把 plugin / plan 两条正例与 cleanup 线未来的再资格赋予问题放进同一篇源码剖面里。
+- 这也把下一候选自然推进到 `169`：既然 `168` 已经证明对象回来后恢复资格需要单独主权，那么下一层最值得继续追问的就不再只是 “它回来后还算不算原来那个对象”，而是 “它回来后以什么配置、什么 secrets、什么 payload 重新工作”。也就是：`artifact-family cleanup re-entitlement-governor signer` 仍不等于 `artifact-family cleanup reconfiguration-governor signer`，需要继续研究 option/secret save-delete grammar 与 cleanup 线未来的旧 path、旧 promise、旧 receipt 世界怎样对接。
 
 ### A090. 墓碑治理之后仍要继续分出复活治理：Claude Code 当前即便知道旧 cleanup 世界退役后留下什么标记，也还没有谁被正式授权决定哪些旧对象还能回来
 
