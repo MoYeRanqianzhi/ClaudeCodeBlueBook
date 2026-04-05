@@ -1,6 +1,6 @@
 # 案例库
 
-`casebooks/` 当前有 69 篇编号文档，范围 `01-69`。本目录不重讲正确答案，而是收纳 Prompt、治理、结构和宿主落地里的失败样本、反例对照与失真原型。
+`casebooks/` 当前有 72 篇编号文档，范围 `01-72`。本目录不重讲正确答案，而是收纳 Prompt、治理、结构和宿主落地里的失败样本、反例对照与失真原型。
 
 ## 目录分层
 
@@ -9,7 +9,7 @@
 - `25-33`: 宿主消费、故障模型、迁移与验收执行反例。
 - `34-45`: 修复、收口、监护、解除监护与稳态反例。
 - `46-57`: 稳态纠偏、再纠偏与改写执行反例。
-- `58-69`: 改写纠偏、精修与 repair card / reopen liability 反例。
+- `58-72`: 改写纠偏、精修与 card / reopen liability 反例。
 
 ## 推荐入口
 
@@ -21,6 +21,7 @@
 - [46-Prompt宿主修复稳态执行反例：假稳态、前缀托管表演与无阈值继续](46-Prompt宿主修复稳态执行反例：假稳态、前缀托管表演与无阈值继续.md)
 - [64-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行反例：假repair card、假protocol truth与假reopen liability](<64-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行反例：假repair card、假protocol truth与假reopen liability.md>)
 - [67-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假repair card、假共同reject语义与假reopen liability](67-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假repair card、假共同reject语义与假reopen liability.md)
+- [70-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假compiled request card、假shared reject语义与假reopen liability](70-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假compiled request card、假shared reject语义与假reopen liability.md)
 
 ## 怎么配合其他目录使用
 
@@ -28,9 +29,9 @@
 - 想看运行手册和演练动作：回到 [../playbooks/README.md](../playbooks/README.md)
 - 想做跨样本反查：回到 [../navigation/README.md](../navigation/README.md)
 - 想看结构和协议的正向定义：回到 [../architecture/README.md](../architecture/README.md) 与 [../api/README.md](../api/README.md)
-- 想看最新共同 `reject` 与 `reopen` 失真样本：从 `67-69`
+- 想看最新共同 `reject` 与 `reopen` 失真样本：从 `70-72`
 
 ## 维护约定
 
-- README 只保留阶段入口和代表性反例，不再镜像全部 69 篇标题。
+- README 只保留阶段入口和代表性反例，不再镜像全部 72 篇标题。
 - 新样本应按编号段放回对应阶段，保持与 `playbooks/` 和 `navigation/` 的互补关系。

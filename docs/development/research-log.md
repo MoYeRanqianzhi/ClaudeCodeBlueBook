@@ -52,6 +52,35 @@
 - `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
 - `claude-code-source-code/src/utils/worktree.ts:1046-1172`
 
+### A076. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真层
+
+- Prompt refinement correction refinement execution 即使已经被 `playbooks/74` 压成 `compiled request card`、shared `reject order` 与正式 `reopen drill`，如果团队不能继续解释这些执行最常怎样重新退回 smooth transcript、handoff prose、worker prose、dynamic boundary 误读与 compact 乐观主义，Prompt 魔力就仍会继续围绕更像真相的解释材料工作；这说明 Prompt 线下一层最值钱的不是继续补执行口号，而是把 compiled request execution 写成新的 casebook/distortion layer。
+- `buildEffectiveSystemPrompt()`、`SystemPromptSection`、`toolToAPISchema()`、`normalizeMessagesForAPI()`、`ensureToolResultPairing()`、`checkTokenBudget()` 与 `promptCacheBreakDetection` 共同说明，Prompt 真相先是 authority、registry、tool contract、compiled request truth、protocol truth、lawful forgetting、continue qualification 与 cache break truth，而不是 smooth transcript；这也说明下一层最值钱的是解释这些对象最常怎样被伪造。
+- Governance refinement correction refinement execution 即使已经被 `playbooks/75` 压成 `pricing card`、shared `reject order` 与正式 `reopen drill`，如果团队不能继续解释这些执行最常怎样重新退回 calmer mode、usage dashboard、classifier 已跑过、pending action 消失与默认继续惯性，安全设计与省 token 设计就仍会继续围绕运营感觉工作；这说明治理线下一层最值钱的不是继续补执行口号，而是把 pricing execution 写成新的 casebook/distortion layer。
+- `control_request.can_use_tool`、`get_context_usage`、`checkTokenBudget()`、classifier pricing、`WorkerStateUploader` 与 `sessionIngress` 共同说明，安全与省 token 设计真正共享的是 authority、action、window、continuation、classifier 成本、writeback 与 ingress 的同一统一定价对象，而不是更保守的语气；这也说明下一层最值钱的是解释这种同构最常怎样被拆散。
+- Structure refinement correction refinement execution 即使已经被 `playbooks/76` 压成 `authority stream card`、shared `reject order` 与正式 `reopen drill`，如果团队不能继续解释这些执行最常怎样重新退回 pointer、telemetry、reconnect 成功率、目录整洁度与作者说明，源码先进性就仍会继续围绕更像先进系统的外观工作；这说明结构线下一层最值钱的不是继续补执行口号，而是把 authority stream execution 写成新的 casebook/distortion layer。
+- `QueryGuard`、`sessionIngress`、`sessionRestore`、`BridgePointerSchema`、`SSETransport`、`WorkerStateUploader` 与 `worktree` guards 共同说明，结构先进性真正成立于 authority、lineage、single-source、anti-zombie、transport boundary 与 fail-closed 的对象诚实，而不是 pointer 健康感与 reconnect 好运气；这也说明下一层最值钱的是解释这些对象最常怎样被更可读的健康投影取代。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution 之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真层”：
+  - `navigation/104` 负责统一入口。
+  - `casebooks/70-72` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution 的假 `compiled request card / pricing card / authority stream card`、假 shared `reject` 语义与假 `reopen liability` 反例。
+- 这也意味着 `98-104` 应被视为一条连续小循环，而不是七篇并列文章。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补反例标签，而是考虑新的 `guides/99-101`，把这些 execution distortion 重新压回固定 card 顺序、shared reject 升级路径与改写模板骨架。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/utils/api.ts:119-405`
+- `claude-code-source-code/src/utils/messages.ts:1481-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-1318`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+
 ### A073. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏层
 
 - Prompt refinement correction refinement execution distortion 即使已经被 `casebooks/67` 写成假 `repair card`、假共同 `reject` 语义与假 `reopen liability` 的反例层，如果团队不能继续把这些失真压回固定 `refinement correction refinement order`、共同硬拒收项与 builder-facing 模板骨架，Prompt 魔力就仍会继续围绕 polished transcript、summary handoff、worker prose 与 wording 崇拜工作；这说明 Prompt 线下一层最值钱的不是继续补反例标签，而是把这些失真压成新的 guide layer。

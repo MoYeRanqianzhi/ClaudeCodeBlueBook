@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement correction refinement distortion casebook”层。
+- 新增结论：
+  - Prompt refinement correction refinement execution 即使已经被 `compiled request card` 固定下来，仍会重新退回 smooth transcript、handoff prose、worker prose、dynamic boundary 误读与 compact 乐观主义；这说明 Prompt 魔力真正保护的是 authority、registry、tool contract、request truth、protocol truth、continue qualification 与 cache break truth 的同一对象链。
+  - Governance refinement correction refinement execution 即使已经被 `pricing card` 固定下来，仍会重新退回 calmer mode、usage dashboard、classifier 已跑过与默认继续惯性；这说明安全设计与省 token 设计真正保护的是 authority、action、window、continuation、classifier 成本、writeback 与 ingress 的同一统一定价对象。
+  - Structure refinement correction refinement execution 即使已经被 `authority stream card` 固定下来，仍会重新退回 pointer、telemetry、reconnect 成功率、目录整洁度与作者说明；这说明源码先进性真正保护的是 authority、lineage、single-source、anti-zombie、transport 与 fail-closed 的同一结构真相面。
+- 新增目录责任：
+  - `navigation/104` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真入口。
+  - `casebooks/70-72` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution 的假 card、假 shared reject 与假 reopen liability 反例。
+- 当前新的写作约束：
+  - `casebooks/70-72` 只表示 correction-of-correction rewrite correction refinement correction refinement distortion，不再回头重写 `playbooks/74-76` 的执行顺序。
+  - `98-104` 应被持续当成一条连续小循环来写，而不是七篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/99-101`，把这一层 execution distortion 重新压回固定 card 顺序、shared reject 升级路径与改写模板骨架。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”层。
 - 新增结论：
   - Prompt refinement correction refinement protocol 如果要真正被宿主、CI、评审与交接共同执行，不能只停在 formal object，还要把 authority、section registry、tool contract、compiled request truth、protocol truth、synthesis ownership、continuation gate 与 cache break truth 压成同一张 `compiled request card`。
