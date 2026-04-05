@@ -115,20 +115,6 @@ Task 与 TaskOutput 存在的意义就是让你稍后回来审计结果。
 - 某些 remote trigger、push notification、PR subscription 能力
 - auto-background 和 KAIROS 系列自治路径
 
-## 苏格拉底反诘
-
-### 问：为什么不直接让主代理顺序做完
-
-答：因为某些任务天然存在等待、并行或长耗时过程，顺序主线程会让整个交互冻结。
-
-### 问：为什么还需要 Task，不直接看 agent 输出
-
-答：没有 Task，对并行执行体就没有稳定可见面，也无法统一轮询、停止和恢复。
-
-### 问：为什么 Cron 要区分 durable
-
-答：因为跨会话存活不是默认安全语义，尤其在 teammate 或临时上下文里会造成孤儿任务。
-
 ## 源码锚点
 
 - `src/tools/AgentTool/AgentTool.tsx`
