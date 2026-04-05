@@ -52,11 +52,6 @@ Prompt implementation 层最危险的，不是：
 - 先证明卡片来自当前 authority source 与 assembly path，再讨论卡片内容。
 - 卡片是 envelope 的宿主投影，不是新的真相来源。
 
-### 改写路径
-
-1. 所有 Prompt implementation 卡片都强制附 authority source。
-2. 宿主默认展示 assembly path，而不是只展示卡片正文。
-3. 评审先验卡片 provenance，再看是否易读。
 
 ## 2. 只看 CI 通过 vs stable bytes drift explanation
 
@@ -75,11 +70,6 @@ Prompt implementation 层最危险的，不是：
 - 让 CI 同时消费 pass/fail 与 drift explanation。
 - 绿灯必须绑定 compiled request diff、stable bytes ledger 与 break summary。
 
-### 改写路径
-
-1. Prompt CI 报告固定包含 drift summary。
-2. cache break 结论必须连回 stable bytes 资产。
-3. 任何“通过但说不清为什么漂移”的情况，都视为 implementation 失真。
 
 ## 3. 只看评审顺序 vs compiled request truth
 
@@ -98,11 +88,6 @@ Prompt implementation 层最危险的，不是：
 - 评审顺序必须服务 compiled request truth，而不是替代它。
 - 顺序的意义在于先锁 authority，再锁 boundary，再锁 diff，而不是完成流程动作。
 
-### 改写路径
-
-1. 每个评审步骤都绑定对应权威字段。
-2. 任何无法回到 compiled request diff 的 checklist 项都要删掉或降级。
-3. 评审结论必须回答“当前真相是什么”，不只回答“我按顺序看过了”。
 
 ## 4. 只交接摘要包 vs lawful forgetting ABI / next-step guard
 
@@ -121,11 +106,6 @@ Prompt implementation 层最危险的，不是：
 - 交接先验 ABI 是否完整，再看摘要是否清晰。
 - handoff package 的价值在于保存可继续行动的最小语义体，而不是导出一段“背景介绍”。
 
-### 改写路径
-
-1. Handoff package 固定列出 current object、pending action、next-step guard。
-2. lawful forgetting 之后保留下来的最小 ABI 单独成栏。
-3. 任何“摘要写得很好，但接手仍要通读历史”的情况，都视为 implementation 失败。
 
 ## 5. 分角色各自达标 vs shared Prompt implementation object
 
@@ -149,11 +129,6 @@ Prompt implementation 层最危险的，不是：
   - lawful forgetting ABI
   - handoff guard
 
-### 改写路径
-
-1. 为 Prompt implementation 固定 shared header。
-2. 宿主、CI、评审、交接都先从同一 header 起手。
-3. 任何 role-specific 视图都不得替代 shared header。
 
 ## 6. 苏格拉底式追问
 

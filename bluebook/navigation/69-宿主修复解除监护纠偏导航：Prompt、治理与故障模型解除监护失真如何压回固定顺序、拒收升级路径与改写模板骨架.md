@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复解除监护失真反例层之后，蓝皮书还必须继续长出一层“宿主修复解除监护纠偏层”。
+1. 为什么宿主修复解除监护失真反例层之后，蓝皮书仍需要单独讨论“宿主修复解除监护纠偏层”。
 2. 为什么 Prompt 线如果不继续把静默放行、叙事放行与无责任 release 压回固定顺序，就会重新把 Prompt 魔力退回 watch note、handoff 故事与“最近没出事”。
 3. 为什么治理线如果不继续把免责式出监、假清账与免费继续压回固定顺序，就会重新把安全设计与省 token 设计拆成 mode 面板、usage dashboard 与经验式保守建议三套投影。
 4. 为什么结构线如果不继续把假退休、归档表演与假保留重开压回固定顺序，就会重新把源码先进性退回 pointer、监控转绿与作者说明。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复解除监护纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把 Prompt release execution 从静默放行、叙事放行与无责任 release 重新压回同一个 `compiled request truth` 与 continuation object。
 - 哪些现象一旦出现就必须直接 hard reject，而不是继续补 release 文案。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/72`
 2. `../casebooks/43`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复解除监护纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把治理 release execution 从免责式出监、假清账与免费继续重新压回同一个统一定价治理对象。
 - 哪些现象一旦出现就说明 authority、ledger、window、continuation、quarantine 与 liability 已重新失配，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/73`
 2. `../casebooks/44`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复解除监护纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把结构 release execution 从假退休、归档表演与假保留重开重新压回同一个结构真相面。
 - 哪些现象一旦出现就说明 authority、resume、writeback、archive、boundary 与 reservation 已重新退回假连续性，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/74`
 2. `../casebooks/45`

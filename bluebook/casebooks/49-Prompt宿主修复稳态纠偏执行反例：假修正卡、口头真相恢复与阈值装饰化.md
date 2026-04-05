@@ -74,11 +74,6 @@ Prompt 宿主修复稳态纠偏执行最危险的，不是：
 
 - correction verdict 应先绑定同一个 correction object 与同一个 truth lineage，再宣布 restored。
 
-### 改写路径
-
-1. 把“卡已存在”降为次级信号。
-2. 把 `steady_correction_object_id + restored_request_object_id + compiled_request_hash` 提升为恢复前提。
-3. 任何先看票据、后看对象的 Prompt correction 都判为 drift。
 
 ## 3. 口头真相恢复：truth recovery by prose
 
@@ -98,11 +93,6 @@ Prompt 宿主修复稳态纠偏执行最危险的，不是：
 
 - truth recovery 必须围绕 truth lineage 与 protocol witness，而不是围绕 prose handoff 与作者语气。
 
-### 改写路径
-
-1. 把 steady note 与 summary prose 降为评审材料。
-2. 把 `truth_continuity_recovery + truth_lineage_ref + protocol_truth_witness` 提升为正式对象。
-3. 任何“解释成立即视为 truth 已恢复”的 Prompt correction 都判为 drift。
 
 ## 4. 前缀复托管表演：recustody by lucky readability
 
@@ -123,11 +113,6 @@ Prompt 宿主修复稳态纠偏执行最危险的，不是：
 
 - correction 应围绕 stable prefix boundary、compaction lineage 与 dormancy reseal object，而不是让 readability 冒充托管。
 
-### 改写路径
-
-1. 把 compact 可读性与平静感降为观察材料。
-2. 把 `stable_prefix_recustody + baseline_dormancy_reseal + compaction_lineage` 提升为正式对象。
-3. 任何“还能读就算复托管”的 Prompt correction 都判为 drift。
 
 ## 5. 阈值装饰化：threshold by polite reminder
 
@@ -149,11 +134,6 @@ Prompt 宿主修复稳态纠偏执行最危险的，不是：
 
 - continuation 与 threshold 必须同时成立；没有 threshold，就只能 `hard_reject`、`reentry_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 禁止“还没报错”充当 continuation 资格。
-2. 把 `continuation_requalification + threshold_reinstatement + truth_break_trigger + rollback_boundary` 提升为硬条件。
-3. 任何 threshold 已失忆却仍继续放行的 Prompt correction 都判为 drift。
 
 ## 6. 苏格拉底式追问
 

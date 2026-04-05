@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏执行层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏失真反例层”。
+1. 为什么宿主修复稳态纠偏再纠偏执行层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏失真反例层”。
 2. 为什么 Prompt 线如果不继续指出假 `recorrection card`、假 `protocol repair`、假 `lawful forgetting reseal` 与假 `threshold liability`，就会重新把 Prompt 魔力退回 prompt 文案、UI 历史与默认继续。
 3. 为什么治理线如果不继续指出假 `authority source`、假 `decision window`、免费继续回魂、假 `capability liability` 与假 `threshold rebinding`，就会重新把安全设计与省 token 设计拆回 mode 面板、usage dashboard 与保守建议。
 4. 为什么结构线如果不继续指出假 `authority surface`、伪 `single-source`、假 `lineage reproof`、伪 `anti-zombie evidence` 与假 `reopen liability`，就会重新把源码先进性退回 pointer 健康感、telemetry 转绿与作者说明。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt steady-state correction-of-correction execution 明明已经有 `recorrection card`、`reject verdict order`、`protocol repair drill` 与 `threshold liability drill`，仍会重新退回假 `recorrection card`、假 `protocol repair`、假 `lawful forgetting reseal` 与假 `threshold liability`。
 - 哪些“看起来只是已经按 recorrection 手册跑过一遍”的信号，其实正在把 Prompt 再纠偏重新退回 prose、平静感与默认继续。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/52`
 2. `../playbooks/56`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理 steady-state correction-of-correction execution 明明已经有 `recorrection card`、`reject verdict order`、`window refreeze drill`、`capability liability` 与 `threshold rebinding drill`，仍会重新退回假 `authority source`、假 `decision window`、免费继续回魂、假 `capability liability` 与假 `threshold rebinding`。
 - 哪些“看起来只是更谨慎地执行 recorrection 手册”的信号，其实正在让 authority、ledger、window、pricing、liability 与 threshold 重新退回 mode 投影与默认继续。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/53`
 2. `../playbooks/57`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构 steady-state correction-of-correction execution 明明已经有 `recorrection card`、`authority-first reject order`、`single-source seam audit`、`anti-zombie evidence rebinding` 与 `reopen liability drill`，仍会重新退回假 `authority surface`、伪 `single-source`、假 `lineage reproof`、伪 `anti-zombie evidence` 与假 `reopen liability`。
 - 哪些“看起来只是系统重新恢复秩序”的信号，其实正在让 authority、resume、writeback、anti-zombie、archive 与 liability 重新退回 pointer、telemetry 与作者说明。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/54`
 2. `../playbooks/58`

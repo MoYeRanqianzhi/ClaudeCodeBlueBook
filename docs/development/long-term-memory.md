@@ -8,6 +8,134 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 源码质量线已继续补齐更高阶的哲学判断：
+  - `philosophy/87` 负责把“合法复杂度中心、边界可证、future maintainer rejectability、下一次重构仍有路”压成新的高阶收束。
+  - `philosophy/README` 与 `navigation/41` 已把源码先进性阅读线从“结构先进”继续前推到“结构判断标准先进”。
+- 新的长期结论：
+  - 源码质量判断不应先围绕文件大小与目录整洁度，而应先围绕复杂度是否有合法席位、边界是否可证、later maintainer 是否可独立 reject。
+  - 公开镜像条件下的源码质量判断，最值钱的不是再夸先进性，而是先把“证据分级 + 合法复杂度中心 + temporal honesty”写成正式判断协议。
+  - 三条母线的更高阶对称关系应固定为：
+    - Prompt 线保护的是“主权链、历史链与继续链对同一个世界保持诚实”。
+    - 治理线保护的是“一切扩张怎样按同一价格秩序合法进入当前世界”。
+    - 源码质量线保护的是“复杂度中心合法、边界可证、下一次重构仍有路”。
+- 公开镜像条件下的源码质量研究方法已继续收束成稳定方法文：
+  - `guides/102` 负责把 `contract -> registry -> authoritative surface -> adapter subset -> hotspot kernel -> mirror gap discipline` 压成正式证据分级协议。
+  - `navigation/07` 已补出“公开镜像证据分级方法线”，避免继续把源码质量讨论混成目录体感与大文件体感。
+  - `navigation/41` 已把 Prompt / 治理 / 源码先进性三条哲学线接回 `84/85/86`、`82/83/84`、`99-101`、`77-79` 的新主线，不再沿用旧的 `79-83` 路由。
+- 新的长期结论：
+  - 公开镜像里的源码质量判断必须先做证据分级，不能把声明存在、当前注册、宿主子集、热点实现与缺口脑补写成同一层真相。
+  - 源码质量必须同时看 `dependency honesty` 与 `temporal honesty`，否则会高估静态分层，低估 stale writer、recovery asset 与 current truth 漂移。
+  - `guides/30` 现在只应被当作旧 Prompt 术语到新请求装配控制面对象链的桥接页，不应继续和 `guides/99` 平行竞争主入口。
+- 三张控制面图的长期验证已补齐对应的验证失真层：
+  - `casebooks/73` 负责请求装配控制面如何退回假 `authority chain`、假 `protocol transcript` 与假 `continuation object`。
+  - `casebooks/74` 负责当前世界准入主权如何退回低信任扩权、假最小可见面与免费继续。
+  - `casebooks/75` 负责 one writable present 如何退回健康投影篡位、恢复资产越权与 `anti-zombie` 伪证。
+- 目录结构进一步优化：
+  - `casebooks/` 已从 `01-72` 扩展为 `01-75`。
+  - `navigation/40` 现在把 `22-24` 作为基础失真层，把 `73-75` 作为长期验证失真层，避免不同层级的坏解法重新混写。
+- 新的长期结论：
+  - 请求装配控制面最常死于“验真绿灯还在，但同一个 request object 已经丢失”。
+  - 当前世界准入主权最常死于“门禁还在，但未定价扩张已被 calm dashboard 伪装成保守治理”。
+  - one writable present 最常死于“结构健康投影仍亮着，但 current truth 已经被恢复资产、旧写入者或作者记忆接管”。
+  - Prompt 魔力的稳定排查顺序应固定为 `authority -> registry -> boundary -> protocol transcript -> lawful forgetting -> fork reuse`，不要先退回 wording / style 解释。
+  - 安全设计与省 token 设计的稳定判断应固定为“同一张治理控制面在给 action、visibility、context seat 与 continuation time 统一定价”，不要再把它拆成权限系统与压缩系统两套故事。
+  - 源码先进性的稳定判断应固定为“合法复杂度中心 + 依赖图/时间图诚实 + future maintainer 可独立 reject”，不要再用目录整洁度与文件大小替代。
+- 三张控制面图已继续下沉成长期验证手册：
+  - `playbooks/77` 负责请求装配控制面的持续回归。
+  - `playbooks/78` 负责当前世界准入主权的持续回归。
+  - `playbooks/79` 负责 one writable present / anti-zombie 结构的持续回归。
+- 目录结构进一步优化：
+  - `playbooks/` 已从 `01-76` 扩展为 `01-79`。
+  - `navigation/39` 现在会把 `architecture/82-84 -> guides/99-101 -> playbooks/77-79` 串成完整的持续验证路由。
+- 三张控制面图已继续下沉成 builder-facing 高阶审读模板：
+  - `guides/99` 负责请求装配控制面的苏格拉底审读。
+  - `guides/100` 负责当前世界准入主权的苏格拉底审读。
+  - `guides/101` 负责 one writable present / anti-zombie 结构的苏格拉底审读。
+- 目录结构进一步优化：
+  - `guides/` 已从 `01-98` 扩展为 `01-101`。
+  - `navigation/15` 负责高阶审读路由，`navigation/42` 负责 builder-facing 实现与审读模板路由，两者分工更清楚。
+- 三张控制面图已前置回更靠前的主线与哲学层：
+  - `bluebook/09` 负责把“世界进入模型 / 扩张定价 / 防过去写坏现在”作为新的主线收束章前置给读者。
+  - `philosophy/84-86` 负责把 Prompt 魔力、治理成熟度、源码先进性三条线分别压成更高阶的第一性原理与苏格拉底审读问题。
+- 目录结构进一步优化：
+  - 规范主线已从 `README + 00-08` 扩展为 `README + 00-09`。
+  - `navigation/15` 现在会把苏格拉底审读直接引到新的高阶哲学章节，而不只停在旧一层收束。
+- 新增三篇更深的架构专题：
+  - `architecture/82` 把 Prompt 魔力继续压成请求装配流水线，补足 `authority chain / section registry / protocol transcript / lawful forgetting / cache-safe forks` 的统一视角。
+  - `architecture/83` 把安全设计与省 Token 设计继续压成反扩张治理流水线，补足 `trusted inputs / distributed ask arbitration / deferred visibility / continuation pricing` 的统一视角。
+  - `architecture/84` 把源码先进性继续压成权威面与反僵尸图谱，补足 `single-writer surfaces / 409 adoption / pointer freshness / release shaping` 的统一视角。
+- 第二批正文去记忆化已经完成：
+  - `casebooks/` 中 60 篇仍带 `改写路径` 的案例正文已整体迁出整改待办，案例页只保留失败样本。
+  - `navigation/` 中 93 篇仍带“如果问题是 / 建议顺序 / 继续长出某层”模板话术的入口页已统一改写为稳定阅读提示。
+- 当前目录分界进一步明确：
+  - `bluebook/README + 00-09` 负责规范主线。
+  - 各专题目录 `README` 负责稳定入口与编号段职责。
+  - `docs/` 负责轮次推进、正文清理记录与持久化记忆。
+- `security/`、`risk/`、`docs/` 已补回目录职责协议，避免安全控制面与风险治理继续被挤进泛化目录说明。
+- 正文与记忆分层规则已收紧：
+  - `bluebook/` 正文只保留问题边界、对象链、第一性原理、稳定阅读顺序与苏格拉底自检。
+  - 轮次推进、当前层级、下一步候选、工作目录、提交与开发过程一律回写 `docs/`。
+- 已对最近污染最重的 `navigation/79-104` 批量清理“连续小循环进度表 / 前向入口”式正文。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement correction refinement distortion casebook”层。
+- 新增结论：
+  - Prompt refinement correction refinement execution 即使已经被 `compiled request card` 固定下来，仍会重新退回 smooth transcript、handoff prose、worker prose、dynamic boundary 误读与 compact 乐观主义；这说明 Prompt 魔力真正保护的是 authority、registry、tool contract、request truth、protocol truth、continue qualification 与 cache break truth 的同一对象链。
+  - Governance refinement correction refinement execution 即使已经被 `pricing card` 固定下来，仍会重新退回 calmer mode、usage dashboard、classifier 已跑过与默认继续惯性；这说明安全设计与省 token 设计真正保护的是 authority、action、window、continuation、classifier 成本、writeback 与 ingress 的同一统一定价对象。
+  - Structure refinement correction refinement execution 即使已经被 `authority stream card` 固定下来，仍会重新退回 pointer、telemetry、reconnect 成功率、目录整洁度与作者说明；这说明源码先进性真正保护的是 authority、lineage、single-source、anti-zombie、transport 与 fail-closed 的同一结构真相面。
+- 新增目录责任：
+  - `navigation/104` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真入口。
+  - `casebooks/70-72` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution 的假 card、假 shared reject 与假 reopen liability 反例。
+- 当前新的写作约束：
+  - `casebooks/70-72` 只表示 correction-of-correction rewrite correction refinement correction refinement distortion，不再回头重写 `playbooks/74-76` 的执行顺序。
+  - `98-104` 应被持续当成一条连续小循环来写，而不是七篇并列新增文章。
+- 原先指向 `guides/99-101` 的候选已完成；这一层 execution distortion 现已被重新压成高阶苏格拉底审读模板，并已接回 `navigation/15` 与 `navigation/42` 的稳定路由。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”层。
+- 新增结论：
+  - Prompt refinement correction refinement protocol 如果要真正被宿主、CI、评审与交接共同执行，不能只停在 formal object，还要把 authority、section registry、tool contract、compiled request truth、protocol truth、synthesis ownership、continuation gate 与 cache break truth 压成同一张 `compiled request card`。
+  - 治理 refinement correction refinement protocol 如果要真正被共同执行，不能只停在统一定价 object，还要把 `authority -> action -> window -> continuation -> classifier -> reject -> writeback -> ingress` 压成同一张 `pricing card`，让安全设计与省 token 设计继续共用同一条拒绝未定价扩张的执行链。
+  - 结构 refinement correction refinement protocol 如果要真正被共同执行，不能只停在 authority stream surface，还要把 truth、time consistency、future maintainer 与 fail-closed 压成同一张 `authority stream card`，而不是让 pointer、telemetry 与 reconnect 好运气重新篡位。
+- 新增目录责任：
+  - `navigation/103` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行入口。
+  - `playbooks/74-76` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement protocol 的 card、shared reject order 与 reopen drill。
+- 当前新的写作约束：
+  - `playbooks/74-76` 只表示 correction-of-correction rewrite correction refinement correction refinement execution，不再回头重写 `api/93-95` 的对象定义。
+  - `98-103` 应被持续当成一条连续小循环来写，而不是六篇并列新增文章。
+- 下一步最值钱的候选应切到 `casebooks/70-72`，把这一层 protocol execution 最常怎样重新退回假 card、假 shared reject 与假 reopen liability 写成新的失真层。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏 / repair steady-state correction-of-correction rewrite correction refinement correction refinement guide”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”层。
+- 新增结论：
+  - Prompt refinement correction refinement fixed order 如果要真正被宿主、CI、评审与交接共同消费，不能只停在 guide 模板，还要把 `compiled request truth + registry/protocol truth + shared reject semantics + lawful forgetting / continuation qualification + long-horizon reopen liability` 压成 host-consumable Prompt protocol object。
+  - 治理 refinement correction refinement fixed order 如果要真正被共同消费，不能只停在 guide 模板，还要把 `ledger/window truth + pricing object + classifier/writeback/ingress + shared reject semantics + long-horizon reopen liability` 收束成单一统一定价 protocol object，并让安全设计与省 token 设计继续共用同一条 reject 语义链。
+  - 结构 refinement correction refinement fixed order 如果要真正被共同消费，不能只停在 guide 模板，还要把 `authority stream + lineage/fresh merge + single-source writeback + anti-zombie/transport/fail-closed + shared reject semantics + long-horizon reopen liability` 压成 ordered structure protocol stream，而不是让 pointer、telemetry 与 reconnect 好运气重新篡位。
+- 新增目录责任：
+  - `navigation/102` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议入口。
+  - `api/93-95` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement fixed order 的 protocol object、共同 reject 语义与长期 reopen 责任面。
+- 当前新的写作约束：
+  - `api/93-95` 只表示 correction-of-correction rewrite correction refinement correction refinement protocol，不再回头重写 `guides/96-98` 的 fixed order 与模板骨架。
+  - `74-102` 应被持续当成一条连续小循环来写，而不是二十九篇并列新增文章。
+- 下一步最值钱的候选应切到 `playbooks/74-76`，把这一层 refinement correction refinement protocol 继续压成固定 repair card、共同 reject 顺序与 reopen drill。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement correction refinement distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏 / repair steady-state correction-of-correction rewrite correction refinement correction refinement guide”层。
+- 新增结论：
+  - Prompt refinement correction refinement execution distortion 如果要真正被纠偏，不能只继续批评假 `repair card` 与假共同 `reject`，还要把 authority、compiled request truth、registry / protocol truth、shared reject semantics、lawful forgetting、continuation qualification 与 threshold 重新压回同一个 Prompt 编译对象。
+  - 治理 refinement correction refinement execution distortion 如果要真正被纠偏，不能只继续批评 calm dashboard 与默认继续，还要把 authority、ledger/window、pricing、classifier、writeback、ingress lineage、shared reject semantics 与 threshold 重新压回同一个统一定价控制面。
+  - 结构 refinement correction refinement execution distortion 如果要真正被纠偏，不能只继续批评 pointer、telemetry 与 reconnect 好运气，还要把 authority、lineage / fresh merge、single-source writeback、anti-zombie、transport、dirty git fail-closed、shared reject semantics 与 threshold 重新压回同一个结构真相面。
+- 新增目录责任：
+  - `navigation/101` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏入口。
+  - `guides/96-98` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution distortion 的固定顺序、共同 reject 升级路径与 builder-facing 模板骨架。
+- 当前新的写作约束：
+  - `guides/96-98` 只表示 correction-of-correction rewrite correction refinement correction refinement guide，不再回头重写 `casebooks/67-69` 的反例层。
+  - `74-101` 应被持续当成一条连续小循环来写，而不是二十八篇并列新增文章。
+- 下一步最值钱的候选应切到 `api/93-95`，把这一层固定 `refinement correction refinement order` 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement correction refinement distortion casebook”层。
+- 新增结论：
+  - Prompt refinement correction refinement execution 如果要真正成立，不能只让 cross-consumer `repair card` 存在，还要防止它退回 smooth transcript、summary handoff、worker prose 与 wording 崇拜；共同 `reject order` 一旦不再围绕同一个编译对象，Prompt 魔力就会退回为更像真相的解释材料。
+  - 治理 refinement correction refinement execution 如果要真正成立，不能只让 cross-consumer `repair card` 存在，还要防止它退回 calmer mode、usage dashboard、approval calmness 与默认继续惯性；共同 `reject order` 一旦不再围绕同一个统一定价对象，安全设计与省 token 设计就会重新分裂成两套感觉。
+  - 结构 refinement correction refinement execution 如果要真正成立，不能只让 cross-consumer `repair card` 存在，还要防止它退回 pointer、telemetry、目录整洁度、reconnect 成功率与作者说明；共同 `reject order` 一旦不再围绕同一个 authority/merge/fail-closed 对象链，源码先进性就会退回更像先进系统的外观。
+- 新增目录责任：
+  - `navigation/100` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真入口。
+  - `casebooks/67-69` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution 的假 `repair card`、假共同 `reject` 语义与假 `reopen liability` 反例。
+- 当前新的写作约束：
+  - `casebooks/67-69` 只表示 correction-of-correction rewrite correction refinement correction refinement execution distortion，不再回头重写 `playbooks/71-73` 的执行顺序。
+  - `74-100` 应被持续当成一条连续小循环来写，而不是二十七篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/96-98`，把这一层失真重新压回固定顺序、共同 reject 升级路径与改写模板骨架。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”层。
 - 新增结论：
   - Prompt refinement correction repair protocol 如果要真正被长期共同执行，不能只保留 authority chain、protocol truth 与 repair attestation 的对象名，还要把它们继续运行成同一张 cross-consumer `repair card`、同一条共同 `reject order` 与正式 `reopen drill`；否则 Prompt 魔力仍会从编译对象退回 UI transcript、repair prose 与 handoff packet。
@@ -1182,7 +1310,7 @@
 - `getSessionStartDate`、memoized context、section cache、sticky headers 共同表明 Claude Code 接受“轻微陈旧”来换取系统级确定性，这应被视为刻意设计，而不是偶然副作用
 - prompt runtime 还应继续明确区分 UI transcript truth 与 protocol transcript truth，不要把前台看到的消息顺序直接当成模型请求的协议顺序
 - 能力设计深线还应继续固定为“渐进暴露优于全量声明”：deferred tools、delta attachments、managed-only source gating 应被视为同一设计动作
-- 根目录旧命名页当前仅应作为兼容别名保留；规范入口是 `README + 00-08`，`docs/` 是开发与记忆层而非正文层，这一点必须持续明确
+- 根目录旧命名页当前仅应作为兼容别名保留；规范入口是 `README + 00-09`，`docs/` 是开发与记忆层而非正文层，这一点必须持续明确
 - 源码先进性深线还应继续明确：成熟架构不是消灭所有大文件，而是让合法复杂度只停留在少数 kernel / shell / chokepoint，周围继续用 leaf modules 与 single source of truth 兜底
 - “模型此刻看见什么”现在应被视为正式设计平面，而不是 prompt 细节；最小可见面、deferred、delta 与 source gating 是同一 visibility control plane 的不同投影
 - observability 深线当前应稳定成三层：输入真相、状态真相、稳定性真相；它不是 debug 层，而是 explainability contract

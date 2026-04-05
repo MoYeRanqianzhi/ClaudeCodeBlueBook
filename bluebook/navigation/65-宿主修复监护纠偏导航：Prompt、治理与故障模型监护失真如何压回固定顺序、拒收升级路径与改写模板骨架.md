@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复监护失真反例层之后，蓝皮书还必须继续长出一层“宿主修复监护纠偏层”。
+1. 为什么宿主修复监护失真反例层之后，蓝皮书仍需要单独讨论“宿主修复监护纠偏层”。
 2. 为什么 Prompt 线如果不继续把假观察、假冻结与假 reopen 压回固定顺序，就会重新把 Prompt 魔力退回 closeout note、handoff 故事与观察建议。
 3. 为什么治理线如果不继续把假观察、假隔离与免费重开压回固定顺序，就会重新把安全设计与省 token 设计拆成 mode 面板、usage dashboard 与保守建议三套投影。
 4. 为什么结构线如果不继续把假稳定、假冻结与假重开压回固定顺序，就会重新把源码先进性退回 pointer、监控转绿与作者说明。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复监护纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把 Prompt watch execution 从假观察、假冻结与假 reopen 重新压回同一个 `compiled request truth` 与 continuation object。
 - 哪些现象一旦出现就必须直接 hard reject，而不是继续观察。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/69`
 2. `../casebooks/40`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复监护纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把治理 watch execution 从假观察、假隔离与免费重开重新压回同一个统一定价治理对象。
 - 哪些现象一旦出现就说明 authority、ledger、window、continuation 与 quarantine 已重新失配，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/70`
 2. `../casebooks/41`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复监护纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把结构 watch execution 从假稳定、假冻结与假重开重新压回同一个结构真相面。
 - 哪些现象一旦出现就说明 authority、writeback、anti-zombie 与 boundary quarantine 已重新退回假连续性，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/71`
 2. `../casebooks/42`

@@ -6,19 +6,19 @@
 
 它主要回答四个问题：
 
-1. 为什么 Host Implementation 实施级失真层之后还必须继续长出 audit guide 层。
+1. 为什么 Host Implementation 实施级失真层之后仍需要单独讨论 audit guide 层。
 2. 为什么 Prompt、治理与结构三条线都需要把“检查点 + 失真样本”继续翻译成统一审读骨架。
 3. 怎样让对象、权威源、窗口、回退边界与交接闸门先于 role-specific 视图被审读。
 4. 怎样用苏格拉底式追问避免把这层写成“更多 checklist”和“更多流程表格”。
 
 ## 1. Prompt Host Implementation 审读模板
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样审读 Prompt host implementation 是否真的围绕 compiled request truth、stable bytes、lawful forgetting ABI 与 handoff guard 成立。
 - 怎样避免宿主卡片、CI 绿灯、评审顺序与摘要包再次把 Prompt 魔力退回文案崇拜。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `24`
 2. `../guides/36`
@@ -33,12 +33,12 @@
 
 ## 2. 治理 Host Implementation 审读模板
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样审读治理 host implementation 是否真的围绕 decision window、control arbitration、Context Usage、rollback object 与 object-upgrade gate 成立。
 - 怎样避免仪表盘转绿、审批结束、阈值安全与回退开关存在重新把治理退回局部 KPI。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `24`
 2. `../guides/37`
@@ -53,12 +53,12 @@
 
 ## 3. 结构 Host Implementation 审读模板
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样审读结构 host implementation 是否真的围绕 authoritative path、recovery asset ledger、anti-zombie evidence、retained assets 与 rollback object 成立。
 - 怎样避免门禁存在、恢复通过与危险路径口头化重新把源码先进性退回作者记忆。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `24`
 2. `../guides/38`

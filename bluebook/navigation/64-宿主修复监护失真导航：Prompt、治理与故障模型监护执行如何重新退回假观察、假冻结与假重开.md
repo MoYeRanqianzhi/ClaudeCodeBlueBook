@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复监护执行层之后，蓝皮书还必须继续长出一层“宿主修复监护失真反例层”。
+1. 为什么宿主修复监护执行层之后，蓝皮书仍需要单独讨论“宿主修复监护失真反例层”。
 2. 为什么 Prompt 线如果不继续指出假观察、假冻结与假 reopen，就会重新把 Prompt 魔力退回 closeout note、handoff 故事与临场判断。
 3. 为什么治理线如果不继续指出假观察、假隔离与免费重开，就会重新把安全设计与省 token 设计拆回 mode 面板、usage dashboard 与保守建议。
 4. 为什么结构线如果不继续指出假稳定、假冻结与假重开，就会重新把源码先进性退回 pointer 健康感、监控转绿与作者口述。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复监护失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt 宿主修复监护执行明明已经有 watch card、drift verdict order、handoff freeze 与 reopen drill，团队仍会重新把它消费成 closeout 备注、summary 观察与按钮式重开。
 - 哪些“看起来只是继续 watch” 的信号，其实正在重新制造 Prompt 第二真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/40`
 2. `../playbooks/44`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复监护失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理宿主修复监护执行明明已经有 watch card、drift verdict order、quarantine order 与 reopen drill，团队仍会重新把它消费成 mode 观察、dashboard 看板与“先保守一点再说”。
 - 哪些“看起来只是继续 watch” 的信号，其实正在重新免费化扩张。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/41`
 2. `../playbooks/45`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复监护失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构宿主修复监护执行明明已经有 watch card、drift verdict order、handoff freeze 与 reopen drill，团队仍会重新把它消费成 pointer 健康感、监控转绿与作者保证。
 - 哪些“看起来已经 stable under watch” 的信号，其实正在重新制造 split-brain、假连续性与 zombie outcome。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/42`
 2. `../playbooks/46`

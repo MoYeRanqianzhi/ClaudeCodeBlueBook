@@ -14,16 +14,17 @@
 
 ## 1. Prompt 编译链哲学线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Claude Code 的 Prompt 会有如此的魔力。
-- 为什么魔力一旦离开 section registry、stable prefix、protocol rewrite 与 lawful forgetting，就会立刻褪色。
+- 为什么魔力一旦离开 authority chain、section registry、protocol transcript、lawful forgetting 与 cache-safe forks，就会立刻褪色。
 
-建议顺序：
+稳定阅读顺序：
 
-1. `../philosophy/81`
-2. `../casebooks/22`
-3. `../architecture/79`
+1. `../philosophy/84`
+2. `../architecture/82`
+3. `../guides/99`
+4. `../playbooks/77`
 
 这条线的核心不是：
 
@@ -32,20 +33,21 @@
 而是：
 
 - 把 Prompt 魔力压回“世界进入模型前先被编译”的第一性原理
+- 若要看旧术语如何过渡到新对象链，回 `../guides/30`
 
 ## 2. 统一定价治理哲学线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么安全设计与省 token 设计看似不同，却总是落到同一治理控制面。
 - 为什么 action、visibility、context 与 continuation 必须被统一定价。
 
-建议顺序：
+稳定阅读顺序：
 
-1. `../philosophy/82`
-2. `../casebooks/23`
-3. `../architecture/80`
-4. `../api/50`
+1. `../philosophy/85`
+2. `../architecture/83`
+3. `../guides/100`
+4. `../playbooks/78`
 
 这条线的核心不是：
 
@@ -55,18 +57,21 @@
 
 - 把治理控制面压回“拒绝一切免费扩张”的第一性原理
 
-## 3. 故障模型编码哲学线
+## 3. 源码质量与可演化内核哲学线
 
-如果问题是：
+适合在这些问题下阅读：
 
-- 为什么 Claude Code 的源码先进性不像目录美学，而像一套提前写好的反对意见。
-- 为什么 authority、seam、transition legality、recovery asset 与 anti-zombie 会共同决定结构先进性。
+- 为什么 Claude Code 的源码先进性不像目录美学，而像一套可证、可批评、可继续重构的复杂度治理协议。
+- 为什么公开镜像下真正稳的判断顺序，不是先夸热点文件，而是先分证据层级，再讨论合法复杂度中心。
 
-建议顺序：
+稳定阅读顺序：
 
-1. `../philosophy/83`
-2. `../casebooks/24`
-3. `../architecture/81`
+1. `../philosophy/76`
+2. `../guides/102`
+3. `../philosophy/86`
+4. `../philosophy/87`
+5. `../architecture/84`
+6. `../playbooks/79`
 
 这条线的核心不是：
 
@@ -74,7 +79,7 @@
 
 而是：
 
-- 把源码先进性压回“先把故障模型写进结构，再谈模块美学”的第一性原理
+- 把源码先进性压回“先把证据梯度、时间保护与未来重构路径写进结构，再谈模块美学”的第一性原理
 
 ## 4. 为什么这层更适合落在 philosophy
 
@@ -101,5 +106,5 @@
 
 1. 我是否已经回答 Prompt 魔力为什么不是文案技巧。
 2. 我是否已经回答安全与省 token 为什么不是两套分开的优化。
-3. 我是否已经回答源码先进性为什么不是结构洁癖。
+3. 我是否已经回答源码先进性为什么不是结构洁癖，也不是公开镜像体感。
 4. 我是在描述 Claude Code 的做法，还是已经提炼出可迁移的第一性原理。

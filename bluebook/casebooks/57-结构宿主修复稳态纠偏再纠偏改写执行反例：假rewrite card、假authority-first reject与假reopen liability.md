@@ -75,11 +75,6 @@
 
 - `reject verdict` 应先绑定同一个 `authority_object_id + authoritative_path + single_source_ref + lineage_reproof_ref`，再宣布 `steady_state_restituted`。
 
-### 改写路径
-
-1. 把目录整洁度与架构 prose 降为次级信号。
-2. 把 `authority_object_id + authoritative_path + single_source_ref + lineage_reproof_ref` 提升为前提。
-3. 任何先看解释、后看结构对象的 rewrite execution 都判为 drift。
 
 ## 3. 假authority-first reject：reject by pointer and telemetry before truth
 
@@ -101,11 +96,6 @@
 
 - `reject verdict order` 必须先证明 authority、seam、lineage 与 anti-zombie 证据仍围绕同一个结构真相面，再决定 `steady_state_restituted`、`hard_reject`、`reentry_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 把 pointer、telemetry 与 archive prose 降为观察信号。
-2. 把 `authority_object_id + writer_chokepoint + writeback_primary_path + append_chain_ref + lineage_reproof_ref + anti_zombie_evidence_ref` 提升为正式对象。
-3. 任何“入口还在、结果没坏就算 rewrite 完成”的结构 rewrite execution 都判为 drift。
 
 ## 4. 假reopen liability：liability by reconnect hint
 
@@ -127,11 +117,6 @@
 
 - reopen liability 应围绕 authority、writeback 与 boundary，而不是围绕 reconnect 与旧入口。
 
-### 改写路径
-
-1. 把 reconnect 提示降为动作说明，不再当 liability 对象。
-2. 把 `reopen_boundary + reservation_owner + threshold_retained_until + return_writeback_path` 提升为正式对象。
-3. 任何只让 later 团队“以后再试一次恢复”的结构 rewrite execution 都判为 drift。
 
 ## 5. 为什么这会让源码先进性退回目录美学
 

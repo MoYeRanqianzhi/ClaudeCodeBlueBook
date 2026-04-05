@@ -45,11 +45,6 @@
 - 把真正高复用、低依赖的判断压成 leaf module。
 - 把高风险编排留在少数 choke point。
 
-### 改写路径
-
-1. 先找哪些逻辑必须多处共用但不该拖重依赖。
-2. 把它们抽成 leaf。
-3. 其余编排逻辑继续留在原控制面，不做形式主义拆分。
 
 ## 2. 第二真相 vs Authoritative Surface
 
@@ -67,11 +62,6 @@
 - 把 mode、session state、external metadata、SDK status 各自收口进 authoritative surface。
 - 再用镜像或投影分发。
 
-### 改写路径
-
-1. 先找哪份状态最接近权威当前态。
-2. 让其他面从它派生。
-3. 禁止多个调用点各自“顺手同步”。
 
 ## 3. Transport 差异泄漏 vs Shell Confinement
 
@@ -88,11 +78,6 @@
 
 - 把差异收进 transport shell / compat shell，让高层只看到稳定语义面。
 
-### 改写路径
-
-1. 先定义统一 transport surface。
-2. 把认证、注册、delivery、state writeback 等差异压进 construction site。
-3. 业务层只认壳层语义。
 
 ## 4. Registry 变业务中心 vs 薄 Registry
 
@@ -110,11 +95,6 @@
 - registry 保持薄，只做 slot / create / self-register。
 - 业务判断留在外层控制面。
 
-### 改写路径
-
-1. 先把 registry 里的条件分支按“装配”与“业务”分离。
-2. 保留自注册，但把业务决策拉回显式控制面。
-3. 为 registry 单独维护安全导入和切环规则。
 
 ## 5. 恢复资产缺席 vs Recovery Asset Ledger
 
@@ -131,11 +111,6 @@
 
 - 把 bridge pointer、file snapshot、content replacements、context-collapse metadata、worktree state 都做成正式 recovery asset。
 
-### 改写路径
-
-1. 先列出“崩溃后还必须成立的真相”。
-2. 为每项指定持久句柄。
-3. 不要先写 resume 按钮，再补资产。
 
 ## 6. Zombie 温床 vs Fresh-State Merge
 
@@ -154,11 +129,6 @@
 - fresh-state merge 防 pre-await snapshot clobber。
 - replacement fate freeze 防跨轮反悔。
 
-### 改写路径
-
-1. 把“全量对象回写”改成 patch merge。
-2. 为长链 async 引入 generation / freshness gate。
-3. 明确哪些命运一旦决定就冻结。
 
 ## 7. 未来维护者被排除 vs 批评路径进结构
 
@@ -175,11 +145,6 @@
 
 - 风险命名、制度注释、迁移垫片、退出条件、checklist、导航层一起存在，让未来维护者成为正式消费者。
 
-### 改写路径
-
-1. 先把最容易误改的边界写成命名和注释。
-2. 再补台账、演练模板与反查入口。
-3. 不要等结构稳定后才补“文档”。
 
 ## 8. 苏格拉底式追问
 

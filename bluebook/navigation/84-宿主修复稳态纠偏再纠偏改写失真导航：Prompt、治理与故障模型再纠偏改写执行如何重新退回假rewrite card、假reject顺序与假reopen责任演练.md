@@ -6,7 +6,7 @@
 
 它主要回答六个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏改写执行层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写失真反例层”。
+1. 为什么宿主修复稳态纠偏再纠偏改写执行层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写失真反例层”。
 2. 为什么 Prompt 线如果不继续指出假 `rewrite card`、假 `protocol rewrite`、假 `reject verdict order` 与假 `threshold liability`，就会把 Prompt 魔力重新退回 rewrite prose、summary 平静感与默认继续。
 3. 为什么治理线如果不继续指出假 `rewrite card`、假 `window repricing`、免费继续回魂与假 `threshold rebinding`，就会把安全设计与省 token 设计重新拆回 mode 面板、usage dashboard 与保守建议。
 4. 为什么结构线如果不继续指出假 `rewrite card`、假 `authority-first reject`、伪 `anti-zombie evidence` 与假 `reopen liability`，就会把源码先进性重新退回 pointer 健康感、telemetry 转绿与架构说明书。
@@ -15,12 +15,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt steady-state correction-of-correction rewrite execution 明明已经有 `rewrite card`、`reject verdict order`、`protocol rewrite drill` 与 `threshold liability drill`，仍会重新退回假 `rewrite card`、假 `protocol rewrite`、假 `reject` 顺序与假 `threshold liability`。
 - 哪些“看起来只是 rewrite 写得更完整了”的信号，其实正在把 `compiled request truth` 重新退回 rewrite prose、UI 历史、summary handoff 与默认继续。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/55`
 2. `../playbooks/59`
@@ -37,12 +37,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理 steady-state correction-of-correction rewrite execution 明明已经有 `rewrite card`、`reject verdict order`、`window repricing drill`、`capability liability` 与 `threshold rebinding drill`，仍会重新退回假 `rewrite card`、假 `window repricing`、免费继续回魂与假 `threshold rebinding`。
 - 哪些“看起来只是治理 rewrite 更严格了”的信号，其实正在让 authority、ledger、window、pricing、liability 与 threshold 重新退回 mode 投影、usage dashboard 与默认继续。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/56`
 2. `../playbooks/60`
@@ -59,12 +59,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构 steady-state correction-of-correction rewrite execution 明明已经有 `rewrite card`、`authority-first reject order`、`single-source seam audit`、`anti-zombie evidence rebinding` 与 `reopen liability drill`，仍会重新退回假 `rewrite card`、假 `authority-first reject`、伪 `anti-zombie evidence` 与假 `reopen liability`。
 - 哪些“看起来只是架构 rewrite 更整洁了”的信号，其实正在让 authority、single-source、lineage、anti-zombie 与 reopen boundary 重新退回 pointer、telemetry、archive prose 与作者说明。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/57`
 2. `../playbooks/61`
@@ -110,39 +110,7 @@
 
 - beautified repair by disciplined rewrite
 
-## 5. 目录结构上的最小闭环
-
-从 `80` 到 `84`，这一段不该被看成五篇并列文章，而应被看成一条连续子循环：
-
-1. `80` 是再纠偏执行失真
-2. `81` 是再纠偏改写
-3. `82` 是再纠偏改写协议
-4. `83` 是再纠偏改写执行
-5. `84` 是再纠偏改写执行失真
-
-也就是说，`80-84` 这一段真正回答的是：
-
-- 失真如何被发现
-- 发现后的 rewrite 怎样被固定顺序化
-- 固定顺序怎样进入共享协议
-- 共享协议怎样落成正式执行
-- 正式执行又怎样重新退回更体面的失真
-
-从更长的主线看，`74-84` 现在应被视为一条连续小循环，而不是十一篇并列文章：
-
-1. `74` 是纠偏协议
-2. `75` 是纠偏执行
-3. `76` 是纠偏执行失真
-4. `77` 是再纠偏
-5. `78` 是再纠偏协议
-6. `79` 是再纠偏执行
-7. `80` 是再纠偏执行失真
-8. `81` 是再纠偏改写
-9. `82` 是再纠偏改写协议
-10. `83` 是再纠偏改写执行
-11. `84` 是再纠偏改写执行失真
-
-## 6. 第一性原理与苏格拉底式自检
+## 5. 第一性原理与苏格拉底式自检
 
 在你准备宣布“宿主修复稳态纠偏再纠偏改写执行已经稳定”前，先问自己：
 

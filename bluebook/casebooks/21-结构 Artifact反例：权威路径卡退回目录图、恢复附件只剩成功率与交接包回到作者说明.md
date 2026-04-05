@@ -53,11 +53,6 @@
 - 宿主卡必须先锁 `structure_object_id`、`authoritative_path`、`rollback_object` 与 `danger_paths`。
 - 结构图最多作为 projection，不得替代对象真相。
 
-### 改写路径
-
-1. 把目录图降为辅助视图。
-2. 把 `authoritative_path` 提到宿主卡第一行。
-3. 强制宿主卡回答“坏了回退哪个对象”。
 
 ## 2. 恢复附件只剩成功率 vs recovery asset ledger
 
@@ -76,11 +71,6 @@
 - CI 附件必须同时给出 `recovery_asset_ledger`、`anti_zombie_evidence`、`retained_assets` 与 `dropped_stale_writers`。
 - 恢复结果只是结论，不是工件本体。
 
-### 改写路径
-
-1. 把 `recovery_asset_ledger` 固定为 CI 附件前段字段。
-2. 把 `anti_zombie_evidence` 从日志里提升为正式列。
-3. 任何只有成功率没有资产账本的附件都判为 drift。
 
 ## 3. 评审卡退回结构评语 vs read/write path
 
@@ -99,11 +89,6 @@
 - 评审卡必须先回答 `authoritative_path`、`current_read_path`、`current_write_path` 与 `projection_set`。
 - 评语只能是这些字段的投影。
 
-### 改写路径
-
-1. 把 `current_read_path` 和 `current_write_path` 固定为评审卡第一段。
-2. 让 judgement 必须引用 `projection_set`。
-3. 把“结构更好看”降到对象 judgement 之后。
 
 ## 4. 交接包回到作者说明 vs retained assets / rollback object
 
@@ -122,11 +107,6 @@
 - 交接包必须先交 `structure_object_id`、`retained_assets`、`rollback_object`、`dropped_stale_writers`。
 - 作者说明只能补充，不得替代这些对象字段。
 
-### 改写路径
-
-1. 把 `retained_assets` 提到交接包第一段。
-2. 把 `rollback_object` 写成正式字段而不是备注。
-3. 任何缺 `dropped_stale_writers` 的交接包都判为 drift。
 
 ## 5. 四件套同时存在却仍然失真
 
@@ -145,11 +125,6 @@
 - 四件套必须先共享同一个 `artifact_line_id + structure_object_id + authoritative_path + rollback_object`。
 - 差异只允许出现在 projection，不允许出现在 shared header。
 
-### 改写路径
-
-1. 把 shared header 单独抽出来比对。
-2. 检查四件套是否围绕同一个 authoritative path。
-3. 任何 rollback object 不一致的工件组都判为 drift。
 
 ## 6. 苏格拉底式追问
 

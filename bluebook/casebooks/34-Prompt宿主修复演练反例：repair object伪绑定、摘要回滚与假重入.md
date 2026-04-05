@@ -75,11 +75,6 @@ Prompt 宿主修复演练最危险的，不是：
 
 - repair card 应首先证明它绑定的是同一个 request object，而不是一份更像正式文件的事故说明。
 
-### 改写路径
-
-1. 把事故说明降为附属材料。
-2. 把 `repair_object_id + source_request_object_id + target_request_object_id + compiled_request_hash` 提升为通过前提。
-3. 任何只绑定摘要、不绑定请求对象的 Prompt repair drill 都判为 drift。
 
 ## 3. protocol truth 被修复说明掩盖
 
@@ -99,11 +94,6 @@ Prompt 宿主修复演练最危险的，不是：
 
 - repair drill 应持续验证 protocol truth，而不是让解释文本替代它。
 
-### 改写路径
-
-1. 把修复解释降为评审材料。
-2. 把 `protocol transcript boundary` 提升为 rollback 前提。
-3. 任何“解释成立即视为 protocol 修复完成”的 Prompt repair drill 都判为 drift。
 
 ## 4. 摘要回滚：rollback drill 回到旧 summary 与最后一条消息
 
@@ -125,11 +115,6 @@ Prompt 宿主修复演练最危险的，不是：
 
 - rollback 应先回对象边界，再回辅助叙事。
 
-### 改写路径
-
-1. 把 summary 与最后一条消息降为调试材料。
-2. 把 `rollback_object + rollback_boundary + lawful_forgetting_object` 提升为回滚主对象。
-3. 任何只回到 summary、消息与 cache 通过感的 Prompt rollback 都判为 drift。
 
 ## 5. 假重入：re-entry 被按钮状态与默认继续篡位
 
@@ -150,11 +135,6 @@ Prompt 宿主修复演练最危险的，不是：
 
 - re-entry 应围绕 `continue qualification`、`session_state_changed`、`pending_action_ref` 与 `required_preconditions`，而不是围绕“目前没被阻止”。
 
-### 改写路径
-
-1. 禁止按钮可点充当重入资格。
-2. 把 `re_entry_qualification + required_preconditions` 提升为正式进入门。
-3. 任何默认继续的 Prompt re-entry drill 都判为 drift。
 
 ## 6. lawful forgetting 被事故故事取代
 
@@ -174,11 +154,6 @@ Prompt 宿主修复演练最危险的，不是：
 
 - 交接通过应围绕 continuation object，而不是围绕事故叙事的可读性。
 
-### 改写路径
-
-1. 把事故故事降为 handoff 注释。
-2. 把 `lawful_forgetting_object + preserved_segment + required_preconditions` 提升为交接硬条件。
-3. 任何只看故事可读性的 Prompt repair handoff 都判为 drift。
 
 ## 7. 苏格拉底式追问
 

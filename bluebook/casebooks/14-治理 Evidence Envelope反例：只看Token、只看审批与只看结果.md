@@ -51,11 +51,6 @@
 - 把 token 花费和 decision window 一起消费。
 - 成本判断必须同时回答：当前继续是否还有增益、是否该升级对象、是否该停止。
 
-### 改写路径
-
-1. 预算报告里固定加入 decision-window 栏。
-2. 任何 token 结论都必须绑定 observed window 与 judgement。
-3. 禁止仅凭成本高低评价治理质量。
 
 ## 2. 只看审批次数 vs control arbitration truth
 
@@ -77,11 +72,6 @@
   - 谁后判断
   - 为什么最终结束等待
 
-### 改写路径
-
-1. 任何审批复盘都强制带上 request / response / cancel 链。
-2. 把 winner source 和 waiting time 变成固定列。
-3. 禁止只用 ask 次数评价治理成熟度。
 
 ## 3. 只看最终结果 vs authority source / failure semantics
 
@@ -100,11 +90,6 @@
 - 最终结果只是 envelope 的尾部，不是治理真相的全部。
 - 先看 authority source、decision window、failure semantics，再看结果。
 
-### 改写路径
-
-1. 在结果列前面固定加入 authority source 与 failure semantics。
-2. 任何 allow / deny 结论都必须说明来自哪条路径。
-3. 禁止用“结果没出错”替代治理正确性判断。
 
 ## 4. 只看状态面 vs rollback object boundary
 
@@ -123,11 +108,6 @@
 - 当前状态必须和 rollback object boundary 一起消费。
 - 只有同时知道当前状态和回退边界，治理证据才足以支撑下一步判断。
 
-### 改写路径
-
-1. 在治理 envelope 里固定加入 rollback object。
-2. 交接材料里禁止只留状态，不留回退边界。
-3. 任何“坏了再说”的治理方案都视为 envelope 未建立。
 
 ## 5. 分面消费 vs shared governance envelope
 
@@ -150,11 +130,6 @@
   - control evidence
   - rollback boundary
 
-### 改写路径
-
-1. 为治理线固定 shared envelope header。
-2. 所有消费者都先消费同一 header，再延展各自细节。
-3. 任何 consumer-specific 图表，都不能替代 envelope 本体。
 
 ## 6. 苏格拉底式追问
 

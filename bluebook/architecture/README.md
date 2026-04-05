@@ -1,6 +1,6 @@
 # 架构专题
 
-`architecture/` 当前有 81 篇编号文档，范围 `01-81`。本目录负责把 Claude Code 拆成可验证的运行时对象、状态机、控制面和演化边界。
+`architecture/` 当前有 84 篇编号文档，范围 `01-84`。本目录负责把 Claude Code 拆成可验证的运行时对象、状态机、控制面和演化边界。
 
 ## 八个平面
 
@@ -11,7 +11,7 @@
 - `39-52`: 缓存稳定性、失败语义、依赖图诚实性、观察性、插件双真相、PolicySettings 与安全边界编译。
 - `53-63`: Cache-aware Prompt Assembly、Protocol Transcript、能力可见性、可解释运行时、恢复优先状态面与可演化内核。
 - `64-72`: 语义压缩、资源宪法、协调成本、有效自由、源码即治理界面与未来维护者消费者。
-- `73-81`: Prompt Constitution、治理顺序、构建系统、升级证据、持续验证与内核对象边界。
+- `73-84`: Prompt Constitution、治理顺序、构建系统、升级证据、持续验证、请求装配、反扩张治理与内核对象边界。
 
 ## 推荐入口
 
@@ -22,6 +22,9 @@
 - [38-Contract优先、运行时底盘与公开镜像缺口](38-Contract优先、运行时底盘与公开镜像缺口.md)
 - [60-恢复优先的双通道状态面：writeback、resume与reconnect一体化](60-恢复优先的双通道状态面：writeback、resume与reconnect一体化.md)
 - [63-可演化内核：Claude Code如何在持续增长中维持不变量](63-可演化内核：Claude Code如何在持续增长中维持不变量.md)
+- [82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks](82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md)
+- [83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing](83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md)
+- [84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping](84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)
 
 ## 阅读路径
 
@@ -29,7 +32,7 @@
 - 想先看 Prompt / 上下文 / 缓存：`18 -> 28 -> 31 -> 39`
 - 想先看多 Agent 与对象升级：`30 -> 45`
 - 想先看安全、权限与治理：`19 -> 23 -> 32 -> 50-52`
-- 想先看长期演化与验证：`63 -> 73-81`
+- 想先看长期演化与验证：`63 -> 73-84`
 
 ## 维护约定
 

@@ -6,19 +6,19 @@
 
 它主要回答四个问题：
 
-1. 为什么 Artifact Validator / Linter 层之后还必须继续长出 Artifact Rule ABI 层。
+1. 为什么 Artifact Validator / Linter 层之后仍需要单独讨论 Artifact Rule ABI 层。
 2. 为什么真正成熟的规则，不是多几条 checklist，而是让不同消费者共享同一拒收语义。
 3. 怎样把 Prompt、安全/省 token 与结构演化三条线分别压成可执行的 `hard fail / lint warn / reviewer gate / handoff reject / rewrite hint` 规则包。
 4. 怎样用苏格拉底式追问避免把这一层写成“机器帮人填表”。
 
 ## 1. Prompt Artifact Rule ABI
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt 线不能停在“知道哪些工件会漂移”，而必须继续把 `compiled request object continuity` 压成统一 `rule packet`。
 - 为什么 Claude Code 的 Prompt 魔力进入协议层之后，必须让宿主、CI、评审与交接共享同一拒收语义。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `29`
 2. `../api/40`
@@ -34,12 +34,12 @@
 
 ## 2. 治理 Artifact Rule ABI
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理线不能停在“知道状态色、计数、verdict 会说谎”，而必须继续把 `decision gain`、`failure semantics` 与 `rollback object` 压成统一规则包。
 - 为什么安全设计与省 token 设计到了规则层，必须共享同一 `reject semantics`。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `29`
 2. `../api/41`
@@ -55,12 +55,12 @@
 
 ## 3. 结构 Artifact Rule ABI
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构线不能停在“知道目录图、恢复成功率、作者说明会漂移”，而必须继续把 `authoritative path`、`recovery asset`、`anti-zombie evidence` 压成统一规则包。
 - 为什么源码先进性进入协议层之后，仍要让不同消费者共享同一 `split-brain reject semantics`。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `29`
 2. `../api/42`

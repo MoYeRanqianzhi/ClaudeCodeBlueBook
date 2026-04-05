@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么支持面反例层之后，蓝皮书还必须继续长出一层“宿主接入审读层”。
+1. 为什么支持面反例层之后，蓝皮书仍需要单独讨论“宿主接入审读层”。
 2. 为什么 Prompt 线如果不继续落成输入面、section breakdown、cache break explainability 与 continue qualification 的排查顺序，就会重新退回“看起来接上了”。
 3. 为什么治理线如果不继续落成 authority source、decision window、pending action、continuation gate 与 rollback object 的审读顺序，就会重新退回 mode 面板与弹窗流程。
 4. 为什么结构线如果不继续落成 authority state、generation evidence、recovery boundary 与 anti-zombie projection 的审读顺序，就会重新退回恢复成功率与作者说明。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主接入审读线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样判断宿主是否真的正确消费了 Prompt 编译链。
 - 怎样把字符串崇拜、缓存黑箱与 continue qualification 误判压成正式审读顺序。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/29`
 2. `../casebooks/25`
@@ -35,12 +35,12 @@
 
 ## 2. 治理宿主接入审读线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样判断宿主是否真的围绕 authority source、decision window、pending action 与 rollback object 工作。
 - 怎样把 mode 崇拜、pending action 降格与文件级回退压成正式审读顺序。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/30`
 2. `../casebooks/26`
@@ -56,12 +56,12 @@
 
 ## 3. 故障模型宿主接入审读线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样判断宿主是否真的消费了 authority state、recovery boundary 与 anti-zombie 结果面。
 - 怎样把权威状态猜测、pointer 神化与成功率崇拜压成正式审读顺序。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/31`
 2. `../casebooks/27`

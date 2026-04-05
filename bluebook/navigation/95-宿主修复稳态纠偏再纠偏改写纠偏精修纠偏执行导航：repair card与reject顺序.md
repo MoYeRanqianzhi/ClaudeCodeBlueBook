@@ -11,7 +11,7 @@
 
 它主要回答五个问题：
 
-1. 为什么 `api/87-89` 之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行层”。
+1. 为什么 `api/87-89` 之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行层”。
 2. 为什么 Prompt 线如果不把 refinement correction protocol 继续压成统一 `repair card`、固定 `reject order` 与 `re-entry / reopen drill`，Prompt 魔力仍会重新退回 rewrite prose、summary handoff 与未综合的子 Agent prose。
 3. 为什么治理线如果不把 refinement correction protocol 继续压成统一 `repair card`、固定 `reject order` 与 `reopen liability drill`，安全设计与省 token 设计仍会重新退回 mode 面板、usage dashboard 与运营感觉。
 4. 为什么结构线如果不把 refinement correction protocol 继续压成统一 `repair card`、固定 `reject order` 与 `fail-closed reopen drill`，源码先进性仍会重新退回 pointer、telemetry、archive prose 与作者说明。
@@ -19,12 +19,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把 Prompt refinement correction protocol 运行成宿主、CI、评审与交接都能共同消费的 `repair card`、固定 `reject order` 与 `reopen drill`。
 - 哪些步骤不能交换顺序，否则 authority chain、compiled request lineage、registry-boundary custody 与 synthesis custody 会重新退回 prose 与 handoff 幻觉。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/87`
 2. `../playbooks/68`
@@ -39,12 +39,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把治理 refinement correction protocol 运行成宿主、CI、评审与交接都能共同消费的 `repair card`、固定 `reject order` 与 `reopen liability drill`。
 - 为什么 authority、ledger、window、pricing、classifier、writeback seam、liability 与 threshold 在这一层必须继续按同一条拒绝免费扩张的链条运行。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/88`
 2. `../playbooks/69`
@@ -59,12 +59,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把结构 refinement correction protocol 运行成宿主、CI、评审与交接都能共同消费的 `repair card`、固定 `reject order` 与 `reopen drill`。
 - 为什么 authority、single-source、lineage、fresh merge、anti-zombie、transport 与 fail-closed 在这一层必须继续被现场执行，而不是只留在结构说明里。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/89`
 2. `../playbooks/70`
@@ -98,43 +98,7 @@
 - verdict order
 - reentry / reopen drill
 
-## 5. 目录结构上的最小闭环
-
-`90-95` 不该被看成六篇并列文章，而应被看成一条连续子循环：
-
-1. `90` 是 refinement execution 失真模板层
-2. `91` 是 refinement protocol 执行层
-3. `92` 是 refinement execution 反例层
-4. `93` 是 refinement execution 纠偏层
-5. `94` 是 refinement correction 对象层
-6. `95` 是 refinement correction 执行层
-
-从更长的主线看，`74-95` 现在应被视为一条连续小循环：
-
-1. `纠偏协议`
-2. `纠偏执行`
-3. `纠偏执行失真`
-4. `再纠偏`
-5. `再纠偏协议`
-6. `再纠偏执行`
-7. `再纠偏执行失真`
-8. `再纠偏改写`
-9. `再纠偏改写协议`
-10. `再纠偏改写执行`
-11. `再纠偏改写执行失真`
-12. `再纠偏改写纠偏`
-13. `再纠偏改写纠偏协议`
-14. `再纠偏改写纠偏执行`
-15. `再纠偏改写纠偏执行失真`
-16. `再纠偏改写纠偏纠偏`
-17. `再纠偏改写纠偏精修协议`
-18. `再纠偏改写纠偏精修执行`
-19. `再纠偏改写纠偏精修执行失真`
-20. `再纠偏改写纠偏精修纠偏`
-21. `再纠偏改写纠偏精修纠偏协议`
-22. `再纠偏改写纠偏精修纠偏执行`
-
-## 6. 第一性原理与苏格拉底式自检
+## 5. 第一性原理与苏格拉底式自检
 
 在你准备宣布“refinement correction protocol 已经真正运行起来”前，先问自己：
 

@@ -11,7 +11,7 @@
 
 它主要回答五个问题：
 
-1. 为什么 `playbooks/68-70` 之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真层”。
+1. 为什么 `playbooks/68-70` 之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真层”。
 2. 为什么 Prompt 线即使已经有 `repair card`，仍会重新退回假 protocol truth、假 synthesis custody 与假 reopen liability。
 3. 为什么治理线即使已经有 `repair card`，仍会重新退回假 pricing causality、假 writeback round-trip 与假 reopen liability。
 4. 为什么结构线即使已经有 `repair card`，仍会重新退回假 fresh merge、假 fail-closed 与假 reopen liability。
@@ -19,12 +19,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt refinement correction execution 明明已经存在，仍会重新退回假 `repair card`、假 `protocol truth` 与假 `reopen liability`。
 - 哪些迹象表明当前执行已经从 authority/lineage/registry-boundary/synthesis 退回 prose、summary handoff 与 UI transcript。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/68`
 2. `../casebooks/64`
@@ -39,12 +39,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理 refinement correction execution 明明已经存在，仍会重新退回假 `repair card`、假 `pricing causality` 与假 `reopen liability`。
 - 哪些迹象表明当前执行已经从 authority/ledger/window/pricing/writeback 退回 mode 面板、usage dashboard 与运营感觉。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/69`
 2. `../casebooks/65`
@@ -59,12 +59,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构 refinement correction execution 明明已经存在，仍会重新退回假 `repair card`、假 `fresh merge` 与假 `reopen liability`。
 - 哪些迹象表明当前执行已经从 authority/single-source/lineage/fail-closed 退回 pointer、telemetry 与 archive prose。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/70`
 2. `../casebooks/66`
@@ -97,41 +97,7 @@
 - accident prototype
 - execution anti-pattern
 
-## 5. 目录结构上的最小闭环
-
-`94-96` 不该被看成三篇并列文章，而应被看成一条连续子循环：
-
-1. `94` 是 refinement correction 对象层
-2. `95` 是 refinement correction 执行层
-3. `96` 是 refinement correction 执行失真层
-
-从更长的主线看，`74-96` 现在应被视为一条连续小循环：
-
-1. `纠偏协议`
-2. `纠偏执行`
-3. `纠偏执行失真`
-4. `再纠偏`
-5. `再纠偏协议`
-6. `再纠偏执行`
-7. `再纠偏执行失真`
-8. `再纠偏改写`
-9. `再纠偏改写协议`
-10. `再纠偏改写执行`
-11. `再纠偏改写执行失真`
-12. `再纠偏改写纠偏`
-13. `再纠偏改写纠偏协议`
-14. `再纠偏改写纠偏执行`
-15. `再纠偏改写纠偏执行失真`
-16. `再纠偏改写纠偏纠偏`
-17. `再纠偏改写纠偏精修协议`
-18. `再纠偏改写纠偏精修执行`
-19. `再纠偏改写纠偏精修执行失真`
-20. `再纠偏改写纠偏精修纠偏`
-21. `再纠偏改写纠偏精修纠偏协议`
-22. `再纠偏改写纠偏精修纠偏执行`
-23. `再纠偏改写纠偏精修纠偏执行失真`
-
-## 6. 第一性原理与苏格拉底式自检
+## 5. 第一性原理与苏格拉底式自检
 
 在你准备宣布“refinement correction execution 已经稳定”前，先问自己：
 

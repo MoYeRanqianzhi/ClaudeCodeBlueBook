@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复监护纠偏层之后，蓝皮书还必须继续长出一层“宿主修复解除监护协议层”。
+1. 为什么宿主修复监护纠偏层之后，蓝皮书仍需要单独讨论“宿主修复解除监护协议层”。
 2. 为什么 Prompt 线如果不继续把 watch release object、stability witness、handoff release warranty 与 residual reopen gate 压成正式对象，就会重新把 Prompt 魔力退回“最近没出事”、watch note 与交接叙事。
 3. 为什么治理线如果不继续把 authority release、ledger residue clearance、window exit、continuation settlement、quarantine release 与 reopen liability 压成正式对象，就会重新把安全设计与省 token 设计退回 mode 面板、usage dashboard 与保守建议。
 4. 为什么结构线如果不继续把 authority release、resume stability seal、writeback release、anti-zombie archive 与 boundary retirement 压成正式对象，就会重新把源码先进性退回 pointer 健康感、监控转绿与作者记忆。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复解除监护协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该消费哪些正式对象，才能证明 Prompt 世界现在可以停止额外监护，但 later 团队仍继续围绕同一个 `compiled request truth` 行动。
 - 哪些 release verdict 一旦出现，就说明当前不能解除监护，只能延长 watch 或正式 reopen。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/66`
 2. `../guides/69`
@@ -37,12 +37,12 @@
 
 ## 2. 治理宿主修复解除监护协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 团队到底该消费哪些正式对象，才能证明治理控制面现在可以解除观察、解除隔离与解除额外 repricing 监护，同时又不把 residual reopen liability 一起忘掉。
 - 哪些 release verdict 一旦出现，就说明 authority、ledger、window、continuation 与 quarantine 还没有真正回到同一个统一定价对象。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/67`
 2. `../guides/70`
@@ -60,12 +60,12 @@
 
 ## 3. 结构宿主修复解除监护协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 团队到底该消费哪些正式对象，才能证明结构真相面现在可以解除额外盯防，但 live truth、writeback 主路径与 anti-zombie 能力仍然不依赖原作者记忆继续成立。
 - 哪些 release verdict 一旦出现，就说明 authority、resume 顺序、writeback、archive 与 boundary retirement 还没有真正成立。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/68`
 2. `../guides/71`

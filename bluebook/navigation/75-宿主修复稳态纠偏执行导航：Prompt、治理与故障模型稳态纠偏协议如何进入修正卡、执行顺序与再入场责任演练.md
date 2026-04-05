@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏协议层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏执行层”。
+1. 为什么宿主修复稳态纠偏协议层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏执行层”。
 2. 为什么 Prompt 线如果不继续把 correction object 压成 correction card、recovery verdict order、requalification drill 与 threshold reinstatement drill，就会重新把 Prompt 魔力退回 steady note、summary 与“最近没出事”。
 3. 为什么治理线如果不继续把 correction object 压成 correction card、correction verdict order、capability recustody 与 threshold rebinding drill，就会重新把安全设计与省 token 设计退回 mode 面板、usage dashboard 与保守建议。
 4. 为什么结构线如果不继续把 correction object 压成 correction card、correction verdict order、archive restitution 与 reopen responsibility drill，就会重新把源码先进性退回 pointer 健康感、telemetry 转绿、archive prose 与作者说明。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么顺序证明 Prompt 世界已经把假稳态纠偏回同一个 `compiled request truth`。
 - 哪些 correction verdict 一旦出现就说明当前必须冻结 continuation、阻断 handoff 并进入 re-entry / reopen drill。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/53`
 2. `../api/72`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 团队到底该按什么顺序证明治理控制面已经把假稳态纠偏回同一个 authority、ledger、window、pricing、custody 与 threshold 对象。
 - 哪些 correction verdict 一旦出现就说明 capability expansion 不能继续放行，必须进入 liability hold、re-entry 或 reopen drill。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/54`
 2. `../api/73`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 团队到底该按什么顺序证明结构真相面已经把假稳态纠偏回 authority、resume、writeback、anti-zombie、archive 与 reservation 共用的同一边界。
 - 哪些 correction verdict 一旦出现就说明当前只是更制度化的健康叙事，必须进入 re-entry threshold 或 reopen responsibility drill。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/55`
 2. `../api/74`

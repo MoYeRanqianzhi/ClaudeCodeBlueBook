@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主接入审读层之后，蓝皮书还必须继续长出一层“宿主迁移工单层”。
+1. 为什么宿主接入审读层之后，蓝皮书仍需要单独讨论“宿主迁移工单层”。
 2. 为什么 Prompt 线如果不继续压成输入面冻结、协议重写、合法遗忘与继续资格的实施顺序，就会重新退回字符串接入。
 3. 为什么治理线如果不继续压成 authority source、typed decision、decision window、continuation gate 与 rollback object 的实施顺序，就会重新退回 mode 面板与审批弹窗。
 4. 为什么结构线如果不继续压成 authority state、anti-zombie 结果面、recovery boundary 与 writeback 主路径的实施顺序，就会重新退回恢复成功率与作者说明。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主迁移工单线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把宿主从 `systemPrompt` 字符串、raw transcript 与 summary 崇拜，迁到 `compiled request truth` 的正式消费。
 - 怎样把 Prompt 审读结论继续压成迁移顺序、交接包与灰度发布门禁。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/54`
 2. `../playbooks/29`
@@ -35,12 +35,12 @@
 
 ## 2. 治理宿主迁移工单线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把宿主从 mode、仪表盘与提示文案，迁到 authority source、decision window、pending action 与 rollback object 的正式消费。
 - 怎样把治理审读结论继续压成迁移顺序、交接包与灰度发布门禁。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/55`
 2. `../playbooks/30`
@@ -56,12 +56,12 @@
 
 ## 3. 故障模型宿主迁移工单线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把宿主从状态猜测、pointer 神化与恢复成功率，迁到 authority state、recovery boundary 与 anti-zombie 结果面的正式消费。
 - 怎样把结构审读结论继续压成迁移顺序、交接包与灰度发布门禁。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/56`
 2. `../playbooks/31`

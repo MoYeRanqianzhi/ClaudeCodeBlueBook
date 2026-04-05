@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么 Artifact Harness Runner / Drift Ledger 层之后还必须继续长出操作手册层。
+1. 为什么 Artifact Harness Runner / Drift Ledger 层之后仍需要单独讨论操作手册层。
 2. 为什么真正成熟的 runner 落地，不是把实验室定时跑起来，而是把 queue policy、alignment gate、drift review 与 adoption runbook 写成团队顺序。
 3. 怎样把 Prompt、安全/省 token 与结构演化三条线分别压成可执行手册。
 4. 为什么这层更适合落在 `guides/`，而不是继续写进 `api/` 或 `architecture/`。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt Artifact Runner落地手册
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt 线不能停在 `compiled request continuity` 的 runner 协议，而必须继续回答“团队每天该怎么排 replay queue、审 stable bytes ledger、决定 rewrite adoption”。
 - 为什么 Claude Code 的 Prompt 魔力要继续从对象链下沉成操作顺序，才能真正防止原文崇拜、绿灯崇拜与摘要崇拜回潮。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `33`
 2. `../guides/42`
@@ -35,12 +35,12 @@
 
 ## 2. 治理 Artifact Runner落地手册
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理线不能停在 `decision_window` 与 `rollback_object` 的 runner 协议，而必须继续回答“什么时候继续、什么时候升级对象、什么时候把仲裁冲突记进 ledger”。
 - 为什么安全与省 token 设计要继续从统一语义下沉成团队动作，才能真正防止状态色、计数与 verdict 重新夺权。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `33`
 2. `../guides/43`
@@ -56,12 +56,12 @@
 
 ## 3. 结构 Artifact Runner落地手册
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构线不能停在 `authoritative_path` 与 `recovery_asset_ledger` 的 runner 协议，而必须继续回答“谁进入当前 queue、谁已被 stale writer 清退、恢复后怎样重新接回主路径”。
 - 为什么源码先进性要继续从 authority / anti-zombie 语义下沉成团队手册，才能真正防止目录图、成功率与作者说明重新夺权。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `33`
 2. `../guides/44`

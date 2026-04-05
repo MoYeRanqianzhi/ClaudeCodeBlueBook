@@ -48,11 +48,6 @@ Prompt 线最危险的，不是：
 - 把 Prompt 升级证据建立在 compiled request truth 上，而不是只建立在原文文本上。
 - 原文 prompt 可以作为输入材料，但不能替代 assembly 之后的真实请求证据。
 
-### 改写路径
-
-1. 先记录 system / tools / model / normalized messages 的 compiled summary。
-2. 再把原文 prompt diff 作为附属输入，而不是主证据。
-3. 评审时先看 compiled diff，再看原文改写。
 
 ## 2. Cache 指标崇拜 vs stable bytes diff
 
@@ -71,11 +66,6 @@ Prompt 线最危险的，不是：
 - 把 cache 指标和 stable bytes diff 一起消费。
 - 让 `PromptStateSnapshot`、assembly 变化、tool schema 变化、betas / effort 变化进入同一 evidence envelope。
 
-### 改写路径
-
-1. CI 不只归档 cache break 数量，还归档 break summary 与 diff 附件。
-2. 把 `system / tools / model / extras` 的变化做成固定报告栏。
-3. 评审时禁止仅凭 token 曲线给出 Prompt 判断。
 
 ## 3. 汇总崇拜 vs authority source / assembly path
 
@@ -94,11 +84,6 @@ Prompt 线最危险的，不是：
 - 让总结服从证据字段，而不是让证据字段服从总结。
 - 评审先看 authority source、assembly path、stable/dynamic boundary，再看解释。
 
-### 改写路径
-
-1. 强制每份 Prompt 评审单先写 authority source 与 assembly path。
-2. 总结只能解释字段，不能替代字段。
-3. 如果字段缺失，评审应判定 evidence envelope 尚未成立。
 
 ## 4. 只读历史交接 vs lawful forgetting + externalized state
 
@@ -117,11 +102,6 @@ Prompt 线最危险的，不是：
 - 交接首先消费 externalized state 与 lawful forgetting ABI，再去读历史。
 - transcript 是辅证，不是当前真相。
 
-### 改写路径
-
-1. 交接模板先写当前 object、pending action、task summary、next-step guard。
-2. transcript 只作为必要背景，不作为唯一事实来源。
-3. 任何“交接必须通读全文”的情况，都应被视为 Prompt envelope 失效。
 
 ## 5. 分路消费 vs shared prefix producer
 
@@ -140,11 +120,6 @@ Prompt 线最危险的，不是：
 - 所有消费者先共享同一份 compiled request truth 骨架，再按角色取不同粒度。
 - 差异应体现在消费深度，而不是体现在真相来源。
 
-### 改写路径
-
-1. 为 Prompt 证据固定一份 shared envelope header。
-2. 宿主、CI、评审、交接都从这一 header 开始消费。
-3. 禁止不同角色各自从不同材料起手。
 
 ## 6. 苏格拉底式追问
 

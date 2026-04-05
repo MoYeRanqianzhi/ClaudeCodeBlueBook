@@ -6,19 +6,19 @@
 
 它主要回答四个问题：
 
-1. 为什么 Evidence Envelope 反例层之后还必须继续长出 host implementation playbook 层。
+1. 为什么 Evidence Envelope 反例层之后仍需要单独讨论 host implementation playbook 层。
 2. 为什么 Prompt、治理与结构三条线都需要把“共享证据骨架”继续翻译成角色化检查点。
 3. 怎样让宿主、CI、评审与交接围绕同一对象，但各自知道该检查什么。
 4. 怎样用苏格拉底式追问避免把这层写成“更多 checklist”和“更多流程负担”。
 
 ## 1. Prompt host implementation playbook
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样让宿主、CI、评审与交接在 Prompt 线共同消费 compiled request truth、stable bytes、lawful forgetting ABI 与 handoff state。
 - 怎样避免 Prompt 继续退回成“原文 prompt + 人工总结 + token 曲线”的拼贴。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `22`
 2. `../playbooks/14`
@@ -33,12 +33,12 @@
 
 ## 2. 治理 host implementation playbook
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样让宿主、CI、评审与交接在治理线共同消费 decision window、control arbitration、Context Usage 与 rollback boundary。
 - 怎样避免治理继续退回成“只看 token”“只看审批次数”或“只看最终 allow/deny”。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `22`
 2. `../playbooks/15`
@@ -53,12 +53,12 @@
 
 ## 3. 结构 host implementation playbook
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样让宿主、CI、评审与交接在结构线共同消费 authority surface、recovery asset、anti-zombie gate 与 rollback object。
 - 怎样避免结构升级继续退回文件级 diff、目录图和作者记忆。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `22`
 2. `../playbooks/16`

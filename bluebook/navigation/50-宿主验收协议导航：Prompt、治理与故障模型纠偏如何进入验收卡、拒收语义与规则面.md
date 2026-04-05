@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主迁移纠偏层之后，蓝皮书还必须继续长出一层“宿主验收协议层”。
+1. 为什么宿主迁移纠偏层之后，蓝皮书仍需要单独讨论“宿主验收协议层”。
 2. 为什么 Prompt 线如果不继续压成 `compiled request truth`、`section registry`、`protocol transcript health` 与 `continue qualification` 的正式验收协议，就会重新退回截图交接与黑箱灰度。
 3. 为什么治理线如果不继续压成 authority source、permission ledger、decision window、continuation gate 与 rollback object 的正式验收协议，就会重新退回 mode 面板与仪表盘。
 4. 为什么结构线如果不继续压成 authority state、resume order、recovery boundary、writeback path 与 anti-zombie projection 的正式验收协议，就会重新退回 pointer、成功率与作者口述。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主验收协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、SDK、CI 与交接系统到底该围绕哪些正式对象验收 Prompt 接入，而不是继续围绕截图、摘要与 token 曲线判断。
 - 哪些 reject reason 一旦出现就说明 Prompt 世界已经重新长出第二真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/54`
 2. `../guides/57`
@@ -35,12 +35,12 @@
 
 ## 2. 治理宿主验收协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、SDK、CI 与交接系统到底该围绕哪些正式对象验收统一定价控制面，而不是继续围绕 mode、弹窗与 token 图表判断。
 - 哪些 reject reason 一旦出现就说明治理对象已经退回界面投影。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/55`
 2. `../guides/58`
@@ -56,12 +56,12 @@
 
 ## 3. 故障模型宿主验收协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、SDK、CI 与交接系统到底该围绕哪些正式对象验收结构真相面，而不是继续围绕 pointer、成功率与作者说明判断。
 - 哪些 reject reason 一旦出现就说明恢复资产已经篡位、writeback 已经分叉或 anti-zombie 结果面已经缺席。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/56`
 2. `../guides/59`
