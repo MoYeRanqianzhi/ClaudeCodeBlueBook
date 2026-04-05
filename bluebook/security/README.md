@@ -495,4 +495,6 @@
 - 想把 `142` 的长文压成一张版本偏斜治理矩阵，快速看出不同 skew object 的 mismatch symptom、current handling strategy、blocking level 与 cleanup migration implication：`142` -> `appendix/126`
 - 想看为什么即使 skew taxonomy 已经成立，Claude Code 仍不把所有版本问题都交给“提示升级”，而是按 nudge、retag、split-key、no-op、kill-switch、block、reject 与 fence 这些固定算子治理：`142` -> `143`
 - 想把 `143` 的长文压成一张偏斜处置算子矩阵，快速看出不同 skew object 的 preferred operator、why not adjacent operator、current source 与 cleanup extrapolation：`143` -> `appendix/127`
+- 想看为什么即使 remediation operator 已经齐全，Claude Code 仍不允许任意层随便挑动词，而是把 nudge、retag、block、reject 与 fence 分配给不同 signer 边界：`143` -> `144`
+- 想把 `144` 的长文压成一张算子主权矩阵，快速看出不同 layer 的 allowed operators、forbidden overreach、truth basis 与 cleanup signer implication：`144` -> `appendix/128`
 - 想看更技术化的检测链拆解，以及规则、路径、外部入口和来源主权如何串成一套内核：`07` -> `08` -> `09` -> `18`
