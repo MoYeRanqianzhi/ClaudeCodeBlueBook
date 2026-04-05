@@ -7,6 +7,27 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A074. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议层
+
+- Prompt refinement correction refinement execution distortion 即使已经被 `guides/96` 压成 authority、compiled request truth、registry/protocol truth、shared reject semantics、lawful forgetting / continuation qualification 与 liability 的固定纠偏顺序，如果团队不能继续把这些顺序压成宿主可消费的 protocol object，Prompt 魔力就仍会继续围绕 transcript、handoff 与 worker prose 工作；这说明 Prompt 线下一层最值钱的不是继续补 guide 口号，而是把 refinement correction refinement fixed order 压成新的 API/protocol layer。
+- Governance refinement correction refinement execution distortion 即使已经被 `guides/97` 压成 authority、ledger/window、pricing object、classifier/writeback/ingress、shared reject semantics 与 liability 的固定纠偏顺序，如果团队不能继续把这些顺序压成宿主可消费的统一定价 protocol object，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与审批 calmness 工作；这说明治理线下一层最值钱的不是继续补模板，而是把 refinement correction refinement fixed order 压成新的 API/protocol layer。
+- Structure refinement correction refinement execution distortion 即使已经被 `guides/98` 压成 authority stream、lineage/fresh merge、single-source writeback、anti-zombie/transport/fail-closed、shared reject semantics 与 liability 的固定纠偏顺序，如果团队不能继续把这些顺序压成宿主可消费的 structure protocol object，源码先进性就仍会继续围绕 pointer、telemetry、reconnect 成功率与作者说明工作；这说明结构线下一层最值钱的不是继续补模板，而是把 refinement correction refinement fixed order 压成新的 API/protocol layer。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement fixed order 之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议层”：
+  - `navigation/102` 负责统一入口。
+  - `api/93-95` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement fixed order 的 protocol object、共同 reject 语义与长期 reopen 责任面。
+- 这也意味着 `98-102` 应被视为一条连续小循环，而不是五篇并列文章。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 API 名词，而是考虑新的 `playbooks/74-76`，把这些 refinement correction refinement protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+
 ### A073. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏层
 
 - Prompt refinement correction refinement execution distortion 即使已经被 `casebooks/67` 写成假 `repair card`、假共同 `reject` 语义与假 `reopen liability` 的反例层，如果团队不能继续把这些失真压回固定 `refinement correction refinement order`、共同硬拒收项与 builder-facing 模板骨架，Prompt 魔力就仍会继续围绕 polished transcript、summary handoff、worker prose 与 wording 崇拜工作；这说明 Prompt 线下一层最值钱的不是继续补反例标签，而是把这些失真压成新的 guide layer。

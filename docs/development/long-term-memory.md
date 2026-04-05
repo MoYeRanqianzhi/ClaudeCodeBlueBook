@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏 / repair steady-state correction-of-correction rewrite correction refinement correction refinement guide”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”层。
+- 新增结论：
+  - Prompt refinement correction refinement fixed order 如果要真正被宿主、CI、评审与交接共同消费，不能只停在 guide 模板，还要把 `compiled request truth + registry/protocol truth + shared reject semantics + lawful forgetting / continuation qualification + long-horizon reopen liability` 压成 host-consumable Prompt protocol object。
+  - 治理 refinement correction refinement fixed order 如果要真正被共同消费，不能只停在 guide 模板，还要把 `ledger/window truth + pricing object + classifier/writeback/ingress + shared reject semantics + long-horizon reopen liability` 收束成单一统一定价 protocol object，并让安全设计与省 token 设计继续共用同一条 reject 语义链。
+  - 结构 refinement correction refinement fixed order 如果要真正被共同消费，不能只停在 guide 模板，还要把 `authority stream + lineage/fresh merge + single-source writeback + anti-zombie/transport/fail-closed + shared reject semantics + long-horizon reopen liability` 压成 ordered structure protocol stream，而不是让 pointer、telemetry 与 reconnect 好运气重新篡位。
+- 新增目录责任：
+  - `navigation/102` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议入口。
+  - `api/93-95` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement fixed order 的 protocol object、共同 reject 语义与长期 reopen 责任面。
+- 当前新的写作约束：
+  - `api/93-95` 只表示 correction-of-correction rewrite correction refinement correction refinement protocol，不再回头重写 `guides/96-98` 的 fixed order 与模板骨架。
+  - `74-102` 应被持续当成一条连续小循环来写，而不是二十九篇并列新增文章。
+- 下一步最值钱的候选应切到 `playbooks/74-76`，把这一层 refinement correction refinement protocol 继续压成固定 repair card、共同 reject 顺序与 reopen drill。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement correction refinement distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏 / repair steady-state correction-of-correction rewrite correction refinement correction refinement guide”层。
 - 新增结论：
   - Prompt refinement correction refinement execution distortion 如果要真正被纠偏，不能只继续批评假 `repair card` 与假共同 `reject`，还要把 authority、compiled request truth、registry / protocol truth、shared reject semantics、lawful forgetting、continuation qualification 与 threshold 重新压回同一个 Prompt 编译对象。

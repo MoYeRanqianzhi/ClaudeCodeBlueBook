@@ -125,6 +125,9 @@
 - [90-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority chain、protocol truth、repair attestation与long-term reopen liability](90-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority%20chain、protocol%20truth、repair%20attestation与long-term%20reopen%20liability.md)
 - [91-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority chain、pricing causality、writeback seam与long-term reopen liability](91-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority%20chain、pricing%20causality、writeback%20seam与long-term%20reopen%20liability.md)
 - [92-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority surface、fresh merge、fail-closed与long-term reopen liability](92-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority%20surface、fresh%20merge、fail-closed与long-term%20reopen%20liability.md)
+- [93-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：compiled request truth、shared reject semantics与long-term reopen liability](93-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：compiled%20request%20truth%E3%80%81shared%20reject%20semantics%E4%B8%8Elong-term%20reopen%20liability.md)
+- [94-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：pricing object、shared reject semantics与long-term reopen liability](94-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：pricing%20object%E3%80%81shared%20reject%20semantics%E4%B8%8Elong-term%20reopen%20liability.md)
+- [95-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority stream、shared reject semantics与long-term reopen liability](95-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority%20stream%E3%80%81shared%20reject%20semantics%E4%B8%8Elong-term%20reopen%20liability.md)
 
 ## 按接入任务阅读
 
@@ -228,7 +231,8 @@
 - `../navigation/99 -> ../playbooks/71-73` 继续回答“怎样把这些 refinement correction repair protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练”。
 - `../navigation/100 -> ../casebooks/67-69` 继续回答“为什么这些 refinement correction refinement execution 明明已经存在，仍会重新退回假 repair card、假共同 reject 顺序与假 reopen 责任演练”。
 - `../navigation/101 -> ../guides/96-98` 继续回答“怎样把这些 refinement correction refinement execution 失真重新压回固定顺序、共同 reject 升级路径与改写模板骨架”。
-- 再往下一层，应由 `../navigation/102 -> ../api/93-95` 继续回答“怎样把这些 refinement correction refinement fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
+- `../navigation/102 -> 93-95` 继续回答“怎样把这些 refinement correction refinement fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
+- 再往下一层，应由 `../navigation/103 -> ../playbooks/74-76` 继续回答“怎样把这些 refinement correction refinement protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练”。
 - 机制对象宿主消费面不等于内部实现面。
 - host-consumable projection 不等于 internal compiler / internal fault-model trace。
 
