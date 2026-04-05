@@ -35,6 +35,14 @@
 - `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
 - `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
 
+### A085. 运行时符合性之后仍要继续分出反漂移验证：Claude Code 当前即便某次 cleanup 运行看起来符合，也还没有谁能正式保证未来漂移会被系统自己抓住
+
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 仍为 `801fe80`，当前 research 分支只领先于安全研究提交，因此无需额外 merge，可直接在当前 worktree 上继续推进。
+- 本轮新增 `162-安全载体家族运行时符合性与反漂移验证分层`，核心判断是：`161` 已经证明 cleanup 线里 metadata signal 与 runtime reality 仍会分叉，但继续看 `microCompact.ts + bootstrap/state.ts + permissionSetup.ts + getNextPermissionMode.ts` 再对照 `cleanup.ts + backgroundHousekeeping.ts + sessionStorage.ts + plans.ts` 会发现，更深层的问题已经不再只是 “这次执行有没有 conform”，而是 “如果明天再 drift，谁会第一时间把它抓出来”。也就是说，`artifact-family cleanup runtime-conformance signer` 仍不等于 `artifact-family cleanup anti-drift verifier signer`。
+- 本轮最硬的源码证据有四组。第一组是 source-of-truth test 正例：`microCompact.ts:31-36` 直接写出 `Drift is caught by a test asserting equality with the source-of-truth.`，说明 repo 明确承认某些 derived truth 必须有 anti-drift test。第二组是结构性防漂移正例：`bootstrap/state.ts:456-466` 把 `sessionId` 与 `sessionProjectDir` 的关系压成原子 `switchSession()`，并明确写出它们 `cannot drift out of sync`。第三组是 live re-verification 正例：`getNextPermissionMode.ts:7-17` 明确承认 cached auto-mode availability 与 live gate state `can diverge`，于是 `permissionSetup.ts:1078-1150` 真正给出 `verifyAutoModeGateAccess()` 去读 fresh config、修正 stale truth。第四组则是 cleanup 线的反对照：`cleanupPeriodDays=0` 的 temporal gap、`plansDirectory` 的 propagation gap、`CleanupResult` 的 receipt gap 与 `backgroundHousekeeping` 的延迟调度都已经被 `161` 钉死，但当前可见 cleanup 线仍没有对等的 source-of-truth test、结构性 anti-drift constraint 或 live re-verifier 把这些 gap 挂到显式 verifier plane 上。
+- 本轮因此同步补入 `appendix/146-安全载体家族运行时符合性与反漂移验证分层速查表` 与 `source-notes/13-microCompact、verifyAutoModeGateAccess与cleanup的反漂移验证边界`。这样 `162` 不再停留在 “conformance is not enough” 的抽象层，而是第一次把 `current proof / anti-drift pattern / positive control / cleanup gap / design implication` 压成回查矩阵，并把 repo 现成 verifier 正例与 cleanup 线缺口放进同一篇源码对照剖面里。
+- 这也把下一候选自然推进到 `163`：既然 `162` 已经证明 cleanup 线需要 verifier，而 verifier 只负责发现 drift、不让系统沉默，那么下一层最值得继续追问的就不再只是 “谁来验证”，而是 “谁来决定怎么修”。也就是：`artifact-family cleanup anti-drift verifier signer` 仍不等于 `artifact-family cleanup repair-governor signer`，需要继续研究当 verifier 报警时，谁配决定调整 metadata、scheduler、executor、permission plane 或文案承诺，避免 verifier 与 repair authority 被偷写成同一个角色。
+
 ### A084. 制度元数据之后仍要继续分出运行时符合性：Claude Code 当前即便写下了 cleanup policy，也还没有谁能正式证明 runtime 已经在此刻服从它
 
 - 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 仍为 `801fe80`，当前 research 分支仅领先于安全研究提交，因此无需额外 merge，可直接在当前 worktree 上继续推进。

@@ -1,12 +1,12 @@
 # 安全专题索引
 
-`security/` 当前有 162 篇正文，范围 `00-161`；`appendix/` 当前有 145 篇速查文档；`source-notes/` 当前有 12 篇源码剖面。本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及终局、遗忘、免责释放、归档关闭、审计关闭、不可逆销毁、保留期治理、执行诚实性、清理隔离、载体家族宪法边界、制度理由边界、制度元数据边界与运行时符合性边界的工程化验证。
+`security/` 当前有 163 篇正文，范围 `00-162`；`appendix/` 当前有 146 篇速查文档；`source-notes/` 当前有 13 篇源码剖面。本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及终局、遗忘、免责释放、归档关闭、审计关闭、不可逆销毁、保留期治理、执行诚实性、清理隔离、载体家族宪法边界、制度理由边界、制度元数据边界、运行时符合性边界与反漂移验证边界的工程化验证。
 
 ## 核心判断
 
 - Claude Code 的安全性不是单点沙箱，也不是单点分类器，而是一套分层 signer、ledger 与 lifecycle control plane。
 - 真正重要的不是把能力尽量做小，而是让能力、声明、恢复权和清理权只能沿着正确边界流动。
-- `147-161` 这一段 signer/governor/honesty/constitution/rationale/metadata/conformance ladder 已经说明：`receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance` 是逐层增强的安全声明、治理主权、执行诚实性、非干扰边界、家族级宪法主权、制度理由主权、制度元数据主权与运行时符合性主权，任何弱层都不能越级冒充强层。
+- `147-162` 这一段 signer/governor/honesty/constitution/rationale/metadata/conformance/verifier ladder 已经说明：`receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification` 是逐层增强的安全声明、治理主权、执行诚实性、非干扰边界、家族级宪法主权、制度理由主权、制度元数据主权、运行时符合性主权与反漂移验证主权，任何弱层都不能越级冒充强层。
 
 ## 目录分层
 
@@ -15,7 +15,7 @@
 - `30-69`: 真相源、账本、恢复闭环、清理纪律、词法、租约与 failure path。
 - `70-99`: 能力发布、状态编辑、恢复资格、默认路由与 reject semantics。
 - `100-138`: 完成权、字段生命周期、工程迁移、验证架构与制度化接口。
-- `139-161`: cleanup 契约、兼容迁移、版本偏斜、handoff、receipt/completion/finality/forgetting/liability-release/archive-close/audit-close/irreversible-erasure/retention-governance/retention-enforcement-honesty/cleanup-isolation/artifact-family-cleanup-constitution/artifact-family-cleanup-rationale/artifact-family-cleanup-metadata/artifact-family-cleanup-runtime-conformance 分层。
+- `139-162`: cleanup 契约、兼容迁移、版本偏斜、handoff、receipt/completion/finality/forgetting/liability-release/archive-close/audit-close/irreversible-erasure/retention-governance/retention-enforcement-honesty/cleanup-isolation/artifact-family-cleanup-constitution/artifact-family-cleanup-rationale/artifact-family-cleanup-metadata/artifact-family-cleanup-runtime-conformance/artifact-family-cleanup-anti-drift-verification 分层。
 
 ## 推荐入口
 
@@ -41,6 +41,7 @@
 - [159-安全载体家族宪法与制度理由分层：为什么artifact-family cleanup constitution signer不能越级冒充artifact-family cleanup rationale signer](159-安全载体家族宪法与制度理由分层：为什么artifact-family%20cleanup%20constitution%20signer不能越级冒充artifact-family%20cleanup%20rationale%20signer.md)
 - [160-安全载体家族制度理由与元数据分层：为什么artifact-family cleanup rationale signer不能越级冒充artifact-family cleanup metadata signer](160-安全载体家族制度理由与元数据分层：为什么artifact-family%20cleanup%20rationale%20signer不能越级冒充artifact-family%20cleanup%20metadata%20signer.md)
 - [161-安全载体家族元数据与运行时符合性分层：为什么artifact-family cleanup metadata signer不能越级冒充artifact-family cleanup runtime-conformance signer](161-安全载体家族元数据与运行时符合性分层：为什么artifact-family%20cleanup%20metadata%20signer不能越级冒充artifact-family%20cleanup%20runtime-conformance%20signer.md)
+- [162-安全载体家族运行时符合性与反漂移验证分层：为什么artifact-family cleanup runtime-conformance signer不能越级冒充artifact-family cleanup anti-drift verifier signer](162-安全载体家族运行时符合性与反漂移验证分层：为什么artifact-family%20cleanup%20runtime-conformance%20signer不能越级冒充artifact-family%20cleanup%20anti-drift%20verifier%20signer.md)
 - [安全专题附录索引](appendix/README.md)
 - [安全源码剖面索引](source-notes/README.md)
 
@@ -50,13 +51,13 @@
 - 想定位“当前真相从哪里来、为什么恢复不等于完成”：先读 `30-69`
 - 想看能力发布、状态编辑与恢复资格：先读 `70-99`
 - 想看验证、迁移与工程化落地：先读 `100-138`
-- 想直看 signer ladder、终局边界、遗忘边界、免责释放边界、归档关闭边界、审计关闭边界、不可逆销毁边界、保留期治理边界、执行诚实性边界、清理隔离边界、载体家族宪法边界、制度理由边界、制度元数据边界与运行时符合性边界：先读 `147 -> 148 -> 149 -> 150 -> 151 -> 152 -> 153 -> 154 -> 155 -> 156 -> 157 -> 158 -> 159 -> 160 -> 161 -> appendix/131-145 -> source-notes/01-12`
+- 想直看 signer ladder、终局边界、遗忘边界、免责释放边界、归档关闭边界、审计关闭边界、不可逆销毁边界、保留期治理边界、执行诚实性边界、清理隔离边界、载体家族宪法边界、制度理由边界、制度元数据边界、运行时符合性边界与反漂移验证边界：先读 `147 -> 148 -> 149 -> 150 -> 151 -> 152 -> 153 -> 154 -> 155 -> 156 -> 157 -> 158 -> 159 -> 160 -> 161 -> 162 -> appendix/131-146 -> source-notes/01-13`
 - 想快速查字段、词法、路由、签字权和速查表：直接去 [appendix/README.md](appendix/README.md)
 - 想追具体源码证据簇：直接去 [source-notes/README.md](source-notes/README.md)
 
 ## 维护约定
 
-- README 只保留编号段和代表性入口，不再镜像全部 162 篇标题。
+- README 只保留编号段和代表性入口，不再镜像全部 163 篇标题。
 - 深层速查和证据字典统一维护在 [appendix/README.md](appendix/README.md)。
 - 单机制、单协议、单文件群的源码剖面统一维护在 [source-notes/README.md](source-notes/README.md)。
 - 章节推进记忆、未来候选和目录编排提示统一写入 [../../docs/development/security/README.md](../../docs/development/security/README.md)，不再回写到正文尾段。

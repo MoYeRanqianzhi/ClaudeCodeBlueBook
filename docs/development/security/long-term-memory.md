@@ -14,6 +14,7 @@
 - `159` 已经稳定写出制度理由边界：不同 artifact family 不只是活在不同 cleanup constitution 里，还活在不同 risk object、reader scope、recovery duty 与 host visibility 下；尤其 `plansDirectory` 与 `cleanupOldPlanFiles()` 的不对称已经暴露出 storage rationale 与 cleanup rationale 可能漂移，`artifact-family cleanup constitution` 也因此不能越级冒充 `artifact-family cleanup rationale`。
 - `160` 已经稳定写出制度元数据边界：不同 artifact family 的制度理由虽然已经存在，但仍主要散落在 path helper、permission helper、resume helper、settings schema、注释与 cleanup dispatcher 之间；`cleanupOldMessageFilesInBackground()` 的硬编码调度与 `plansDirectory` 的传播失灵已经说明 `artifact-family cleanup rationale` 仍不能越级冒充 `artifact-family cleanup metadata`。
 - `161` 已经稳定写出运行时符合性边界：即便 metadata signal 存在，runtime 仍可能展示 temporal gap、propagation gap 与 receipt gap；`cleanupPeriodDays=0` 的“startup delete”文案、`shouldSkipPersistence()` 的即时抑写、`backgroundHousekeeping` 的延迟调度、validation skip 与 `CleanupResult` 的未汇总共同说明 `artifact-family cleanup metadata` 仍不能越级冒充 `artifact-family cleanup runtime-conformance`。
+- `162` 已经稳定写出反漂移验证边界：一次 runtime conform 仍不等于系统已经具备长期 anti-drift verification；`microCompact.ts` 的 source-of-truth test、`switchSession()` 的原子防漂移与 `verifyAutoModeGateAccess()` 的 live re-verification 共同构成 repo 的正对照，而 cleanup 线当前仍缺同等级 verifier，因此 `artifact-family cleanup runtime-conformance` 仍不能越级冒充 `artifact-family cleanup anti-drift verification`。
 
 ## 本轮已净化的正文段
 
@@ -31,14 +32,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-161`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance ladder
+- `147-162`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `162`
-  方向：`artifact-family cleanup runtime-conformance signer` 仍不等于 `artifact-family cleanup anti-drift verifier signer`
-  原因：`161` 已经证明即便 runtime 可能执行，也还缺正式的 family-by-family conformance receipt，更缺一层去持续校验 scheduler、executor、permission、resume 与 metadata 没有再次分叉。也就是：谁配长期验证 temporal gap、propagation gap 与 receipt gap 是否被真正修复，而不是只在某次运行中暂时看起来符合
-  证据起点：`src/utils/cleanup.ts`、`src/utils/backgroundHousekeeping.ts`、`src/utils/sessionStorage.ts`、`src/utils/plans.ts`、`src/utils/permissions/filesystem.ts`、`src/utils/settings/types.ts` 当前展示的延迟、跳过、传播与回执缺口
+- 候选 `163`
+  方向：`artifact-family cleanup anti-drift verifier signer` 仍不等于 `artifact-family cleanup repair-governor signer`
+  原因：`162` 已经证明 cleanup 线真正缺的是显式 verifier grammar；但 verifier 即便补出，也只配发现 drift、拒绝沉默与签发报警，并不自动拥有修复主权。也就是：谁配决定应修 metadata、修 scheduler、修 executor、修 permission plane，还是改文案降级承诺，仍是另一层 governance 问题
+  证据起点：`src/services/compact/microCompact.ts`、`src/bootstrap/state.ts`、`src/utils/permissions/permissionSetup.ts` 与 cleanup 线当前的 gap 形成的正反对照：当前可见代码证明 verifier 与 repair 在 repo 其他子系统也不是同一动作
 
 ## 持续约束
 
