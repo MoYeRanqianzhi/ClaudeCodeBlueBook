@@ -6,6 +6,7 @@
 
 - `README + 00-09` 负责规范主线与最短阅读路径
 - 各子目录 `README` 负责专题入口、编号段职责与稳定跳转
+- `userbook/` 负责面向使用者的系统说明书
 - `docs/` 负责开发记忆、研究过程与清理批次，不承载正文
 
 总索引只保留一级路由和稳定阅读路径；深层反查与交叉跳转统一下沉到各子目录 README，尤其是 `navigation/README.md`。如果问题已经变成“上一轮推进到哪、下一批准备清什么、哪些内容被迁出正文”，就不要继续留在 `bluebook/`，直接去 `docs/README.md`。
@@ -32,6 +33,7 @@
 
 ## 专题目录
 
+- [userbook/README.md](userbook/README.md): Claude Code Userbook，按用户目标、入口与运行时边界组织
 - [navigation/README.md](navigation/README.md): 104 篇，阅读地图、问题反查与机制回灌
 - [architecture/README.md](architecture/README.md): 84 篇，运行时结构、状态机、请求装配、治理控制面与演化边界
 - [api/README.md](api/README.md): 95 篇，命令、工具、状态、宿主与扩展协议
@@ -48,6 +50,7 @@
 第一次进入：
 
 - 建立整体判断：先读 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)，再回到 [00-导读](00-导读.md)、[01-源码结构地图](01-源码结构地图.md)、[03-设计哲学](03-设计哲学.md)、[06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)
+- 如果想按线性主线顺序完整走一遍：依次读 [00-导读](00-导读.md)、[01-源码结构地图](01-源码结构地图.md)、[03-设计哲学](03-设计哲学.md)、[07-运行时契约、知识层与生态边界](07-运行时契约、知识层与生态边界.md)、[09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
 - 如果只想先抓最高阶判断：依次读 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)、[03-设计哲学](03-设计哲学.md)、[06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)、[philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型](philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md)、[philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价](philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md)、[philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在](philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md)、[philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路](philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md)
 
 从能力与公开度进入：
@@ -65,6 +68,7 @@
 从方法与质量进入：
 
 - 想从使用方法进入：先读 [02-使用指南](02-使用指南.md)，再去 [guides/README.md](guides/README.md) 与 [navigation/README.md](navigation/README.md)
+- 想直接按用户目标进入：先读 [userbook/README.md](userbook/README.md)，再去 [userbook/00-阅读路径](userbook/00-阅读路径.md)
 - 想在公开镜像条件下稳当地判断源码质量：依次读 [07-运行时契约、知识层与生态边界](07-运行时契约、知识层与生态边界.md)、[guides/19-如何在公开镜像条件下阅读大型Agent源码：入口、合同与边界优先](guides/19-如何在公开镜像条件下阅读大型Agent源码：入口、合同与边界优先.md)、[guides/20-如何在公开镜像条件下判断实现深度：代码热点、缺口与保守推断](guides/20-如何在公开镜像条件下判断实现深度：代码热点、缺口与保守推断.md)、[guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline](guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md)、[philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面](philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md)、[philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在](philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md)、[philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路](philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md)、[architecture/38-Contract优先、运行时底盘与公开镜像缺口](architecture/38-Contract优先、运行时底盘与公开镜像缺口.md)、[architecture/63-构建系统塑形源码秩序：入口影子、传输外壳、薄Registry与Zombification治理](architecture/63-构建系统塑形源码秩序：入口影子、传输外壳、薄Registry与Zombification治理.md)、[architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping](architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)
 - 想看源码质量 / 可演化结构：依次读 [03-设计哲学](03-设计哲学.md)、[06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)、[philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面](philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md)、[philosophy/80-真正先进的源码，会先替未来维护者保留反对当前实现的能力](philosophy/80-真正先进的源码，会先替未来维护者保留反对当前实现的能力.md)、[philosophy/83-故障模型先于模块美学：Claude Code为什么先把“过去别写坏现在”写进结构](philosophy/83-故障模型先于模块美学：Claude Code为什么先把“过去别写坏现在”写进结构.md)、[philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在](philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md)、[philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路](philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md)、[architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping](architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)
 - 想看安全、风控与误伤恢复：依次读 [security/README.md](security/README.md)、[risk/README.md](risk/README.md)、[casebooks/README.md](casebooks/README.md)
@@ -74,5 +78,6 @@
 
 - 总索引负责一级路由、目录职责和稳定阅读路径。
 - 子目录 README 负责编号段说明、专题入口和跨目录跳转。
+- `userbook/README.md` 负责面向使用者的稳定入口，不替代蓝皮书主线总索引。
 - `navigation/README.md` 负责跨主题、跨阶段、跨工件的深层反查。
 - [../docs/README.md](../docs/README.md) 只处理开发过程与长期记忆，不承载正文。
