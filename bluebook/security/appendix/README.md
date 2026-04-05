@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 150 篇速查文档。
+`appendix/` 当前包含 151 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -93,6 +93,9 @@
 - `150`
   载体家族退役治理与墓碑治理分层。
   入口：[150-安全载体家族退役治理与墓碑治理分层速查表：sunset decision、tombstone decision、positive control、cleanup post-retirement gap与governor question](150-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E9%80%80%E5%BD%B9%E6%B2%BB%E7%90%86%E4%B8%8E%E5%A2%93%E7%A2%91%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Asunset%20decision%E3%80%81tombstone%20decision%E3%80%81positive%20control%E3%80%81cleanup%20post-retirement%20gap%E4%B8%8Egovernor%20question.md)。
+- `151`
+  载体家族墓碑治理与复活治理分层。
+  入口：[151-安全载体家族墓碑治理与复活治理分层速查表：tombstone decision、resurrection decision、positive control、cleanup re-entry gap与governor question](151-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%A2%93%E7%A2%91%E6%B2%BB%E7%90%86%E4%B8%8E%E5%A4%8D%E6%B4%BB%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Atombstone%20decision%E3%80%81resurrection%20decision%E3%80%81positive%20control%E3%80%81cleanup%20re-entry%20gap%E4%B8%8Egovernor%20question.md)。
 
 ## 怎么配合主线读
 
