@@ -2,6 +2,10 @@
 
 `guides/` 当前有 102 篇编号文档，范围 `01-102`。本目录把源码研究翻成可执行的方法、模板、审读清单和构建手册，不重复产品说明文案。
 
+还要先记一句：
+
+- `guides/99-102` 负责把 `09` 的三条控制面判断落成 builder-facing 审读与证据方法，不再重新定义三条母线本身
+
 ## 目录分层
 
 - `01-10`: 基础使用、多 Agent、记忆注入、预算与权限协作。
@@ -14,6 +18,7 @@
 
 ## 推荐入口
 
+- [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md): 三条控制面判断的主线宪法
 - [01-使用指南](01-使用指南.md)
 - [02-多Agent编排与Prompt模板](02-多Agent编排与Prompt模板.md)
 - [06-第一性原理实践：目标、预算、对象、边界与回写](06-第一性原理实践：目标、预算、对象、边界与回写.md)
@@ -31,9 +36,9 @@
 - 想把阅读源码变成稳定方法：从 `19-23`
 - 想把方法沉到模板、卡片和 rollout 工件：从 `24-47`
 - 想处理宿主迁移、验收、修复和后续纠偏：从 `48-101`
-- 想把控制面总图变成 Builder 审读顺序：`30/31/32 -> 99/100/101 -> 51/52/53`
-- 想看三张控制面图的高阶审读模板：从 `99-101`
-- 想在公开镜像条件下稳当地判断源码质量：`19/20 -> 102 -> 76/86 -> 84`
+- 想把控制面总图变成 Builder 审读顺序：先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)，再按目录内的 `30-32` 与 `99-102` 进入；更细的跨目录顺序统一回 [../navigation/README.md](../navigation/README.md)
+- 想看三张控制面图的高阶审读模板：从 [99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object](99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object.md)、[100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing](100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md)、[101-如何用苏格拉底诘问法审读one writable present：single-writer、recovery asset与anti-zombie](101-如何用苏格拉底诘问法审读one writable present：single-writer、recovery asset与anti-zombie.md)
+- 想在公开镜像条件下稳当地判断源码质量：先读 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)，再以 [102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline](102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md) 为方法锚点；更细的跨目录回链统一去 [../navigation/README.md](../navigation/README.md)
 - 想看最新共同 `reject` 升级模板骨架：从 `93-98`
 - 想做跨目录跳转：回到 [../navigation/README.md](../navigation/README.md)
 
