@@ -1,12 +1,12 @@
 # 安全专题索引
 
-`security/` 当前有 156 篇正文，范围 `00-155`；`appendix/` 当前有 139 篇速查文档；`source-notes/` 当前有 6 篇源码剖面。本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及终局、遗忘、免责释放、归档关闭、审计关闭、不可逆销毁与保留期治理边界的工程化验证。
+`security/` 当前有 157 篇正文，范围 `00-156`；`appendix/` 当前有 140 篇速查文档；`source-notes/` 当前有 7 篇源码剖面。本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及终局、遗忘、免责释放、归档关闭、审计关闭、不可逆销毁、保留期治理与执行诚实性边界的工程化验证。
 
 ## 核心判断
 
 - Claude Code 的安全性不是单点沙箱，也不是单点分类器，而是一套分层 signer、ledger 与 lifecycle control plane。
 - 真正重要的不是把能力尽量做小，而是让能力、声明、恢复权和清理权只能沿着正确边界流动。
-- `147-155` 这一段 signer/governor ladder 已经说明：`receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance` 是逐层增强的安全声明与治理主权，任何弱层都不能越级冒充强层。
+- `147-156` 这一段 signer/governor/honesty ladder 已经说明：`receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty` 是逐层增强的安全声明、治理主权与执行诚实性，任何弱层都不能越级冒充强层。
 
 ## 目录分层
 
@@ -15,7 +15,7 @@
 - `30-69`: 真相源、账本、恢复闭环、清理纪律、词法、租约与 failure path。
 - `70-99`: 能力发布、状态编辑、恢复资格、默认路由与 reject semantics。
 - `100-138`: 完成权、字段生命周期、工程迁移、验证架构与制度化接口。
-- `139-155`: cleanup 契约、兼容迁移、版本偏斜、handoff、receipt/completion/finality/forgetting/liability-release/archive-close/audit-close/irreversible-erasure/retention-governance 分层。
+- `139-156`: cleanup 契约、兼容迁移、版本偏斜、handoff、receipt/completion/finality/forgetting/liability-release/archive-close/audit-close/irreversible-erasure/retention-governance/retention-enforcement-honesty 分层。
 
 ## 推荐入口
 
@@ -35,6 +35,7 @@
 - [153-安全归档关闭与审计关闭分层：为什么archive-close signer不能越级冒充audit-close signer](153-安全归档关闭与审计关闭分层：为什么archive-close%20signer不能越级冒充audit-close%20signer.md)
 - [154-安全审计关闭与不可逆销毁分层：为什么audit-close signer不能越级冒充irreversible-erasure signer](154-安全审计关闭与不可逆销毁分层：为什么audit-close%20signer不能越级冒充irreversible-erasure%20signer.md)
 - [155-安全不可逆销毁与保留期主权分层：为什么irreversible-erasure signer不能越级冒充retention-governor signer](155-安全不可逆销毁与保留期主权分层：为什么irreversible-erasure%20signer不能越级冒充retention-governor%20signer.md)
+- [156-安全保留期治理与执行诚实性分层：为什么retention-governor signer不能越级冒充retention-enforcement-honesty signer](156-安全保留期治理与执行诚实性分层：为什么retention-governor%20signer不能越级冒充retention-enforcement-honesty%20signer.md)
 - [安全专题附录索引](appendix/README.md)
 - [安全源码剖面索引](source-notes/README.md)
 
@@ -44,13 +45,13 @@
 - 想定位“当前真相从哪里来、为什么恢复不等于完成”：先读 `30-69`
 - 想看能力发布、状态编辑与恢复资格：先读 `70-99`
 - 想看验证、迁移与工程化落地：先读 `100-138`
-- 想直看 signer ladder、终局边界、遗忘边界、免责释放边界、归档关闭边界、审计关闭边界、不可逆销毁边界与保留期治理边界：先读 `147 -> 148 -> 149 -> 150 -> 151 -> 152 -> 153 -> 154 -> 155 -> appendix/131-139 -> source-notes/01-06`
+- 想直看 signer ladder、终局边界、遗忘边界、免责释放边界、归档关闭边界、审计关闭边界、不可逆销毁边界、保留期治理边界与执行诚实性边界：先读 `147 -> 148 -> 149 -> 150 -> 151 -> 152 -> 153 -> 154 -> 155 -> 156 -> appendix/131-140 -> source-notes/01-07`
 - 想快速查字段、词法、路由、签字权和速查表：直接去 [appendix/README.md](appendix/README.md)
 - 想追具体源码证据簇：直接去 [source-notes/README.md](source-notes/README.md)
 
 ## 维护约定
 
-- README 只保留编号段和代表性入口，不再镜像全部 156 篇标题。
+- README 只保留编号段和代表性入口，不再镜像全部 157 篇标题。
 - 深层速查和证据字典统一维护在 [appendix/README.md](appendix/README.md)。
 - 单机制、单协议、单文件群的源码剖面统一维护在 [source-notes/README.md](source-notes/README.md)。
 - 章节推进记忆、未来候选和目录编排提示统一写入 [../../docs/development/security/README.md](../../docs/development/security/README.md)，不再回写到正文尾段。

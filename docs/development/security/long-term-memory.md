@@ -8,6 +8,7 @@
 - 安全专题后续候选、目录编排判断与编辑规则统一沉淀到 `docs/development/security/`。
 - `154` 已经稳定写出一条新边界：`read-path filtering`、`semantic removal`、`local rewrite`、`workspace rewind delete` 与 `retention cleanup` 不是同一种删除，`audit close` 也因此不能越级冒充 `irreversible erasure`。
 - `155` 已经稳定写出另一条治理边界：`cleanupPeriodDays` 的声明、settings merge、intent honesty guard、housekeeping scheduler 与 destructive executor 不是同一层，`irreversible erasure` 也因此不能越级冒充 `retention governance`。
+- `156` 已经稳定写出执行诚实性边界：retention declaration、future-write suppression、runtime scheduling、cleanup execution 与 post-hoc side-effect explanation 不是同一层，`retention governance` 也因此不能越级冒充 `retention enforcement honesty`。
 
 ## 本轮已净化的正文段
 
@@ -25,14 +26,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-155`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance` signer/governor ladder
+- `147-156`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty` signer/governor/honesty ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `156`
-  方向：`retention governor` 仍不等于 `retention-enforcement-honesty signer`
-  原因：`155` 已经证明保留期治理被拆成 declaration、precedence、guard、scheduler 与 executor，但当前可见源码里 schema/tip 对 `cleanupPeriodDays = 0` 的“startup delete”文案，与 `main.tsx / REPL.tsx / backgroundHousekeeping.ts` 所展示的延迟且带 entrypoint gating 的执行链之间仍存在值得继续形式化的诚实性张力。下一层最自然的问题因此变成：谁配宣布 retention policy 在当前 session mode 下已经真正被执行，而不是仅仅被声明
-  证据起点：`src/utils/settings/types.ts`、`src/utils/settings/validationTips.ts`、`src/main.tsx`、`src/screens/REPL.tsx` 与 `src/utils/backgroundHousekeeping.ts`
+- 候选 `157`
+  方向：`retention-enforcement-honesty signer` 仍不等于 `cleanup-isolation signer`
+  原因：`156` 已经证明系统缺少 declaration 与 execution 之间的正式回执；而 `TaskOutput.ts:313-325` 又暴露出另一个更尖锐的问题，cleanup 副作用可能跨进程影响同项目中的其他运行对象。下一层最自然的问题因此变成：谁配宣布这次 cleanup 不只是执行了，而且没有错误地伤及仍在运行的同项目对象
+  证据起点：`src/utils/task/TaskOutput.ts` 关于 “another Claude Code process ... deleted it during startup cleanup” 的诊断字符串，`src/utils/cleanup.ts` 的项目目录级遍历逻辑，以及任何与同项目并发 session / output 文件生命周期相关的实现
 
 ## 持续约束
 

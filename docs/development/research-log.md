@@ -7,6 +7,14 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 
+### A078. 保留期治理之后仍要继续分出执行诚实性：Claude Code 已经有 retention policy 与 cleanup executor，但还缺一位正式说明“这次到底执行了没有”的 signer
+
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 的最新内容已经被当前研究分支吸收，因此无需额外 merge，即可继续在当前 worktree 上推进安全主线。
+- 本轮新增 `156-安全保留期治理与执行诚实性分层`，核心判断是：`155` 已经证明保留期治理被拆成 declaration、precedence、guard、scheduler 与 executor，但继续看 `settings/types.ts + validationTips.ts + sessionStorage.ts + main.tsx + REPL.tsx + backgroundHousekeeping.ts + cleanup.ts + TaskOutput.ts` 会发现，这条治理链还没有自动长出一位能诚实宣布“当前 retention policy 在此 session mode 下究竟已执行、被推迟、被跳过，还是只停留在 declaration 层”的 signer。也就是说，`retention governor` 仍不等于 `retention-enforcement-honesty signer`。
+- 本轮最重要的源码证据有四组。第一组是 declaration 与 immediate runtime guarantee 的分裂：`settings/types.ts:325-332` 与 `validationTips.ts:48-54` 把 `cleanupPeriodDays = 0` 说成“existing transcripts are deleted at startup”，但 `sessionStorage.ts:953-969` 的 `shouldSkipPersistence()` 真正直接保证的是 future transcript writes 被立刻抑制，旧 transcript 的 cleanup 仍要走后续 runtime 路径。第二组是 scheduler/executor 的时态性：`main.tsx:2811-2818` 的 headless 非 bare 路径用 `void import(...).then(...)` fire-and-forget 启动 housekeeping，`REPL.tsx:3903-3906` 则直到 `submitCount === 1` 才启动；`backgroundHousekeeping.ts:25-29,43-60` 继续叠加 10 分钟延迟、recent activity 再推迟，以及 “scripted calls don't need bookkeeping — the next interactive session reconciles” 这条注释，说明 declaration 里的 `startup` 到 enforcement 层已经变成一个会滑动的词。第三组是 execution receipt 的缺位：`cleanup.ts:33-45` 明明定义了 `CleanupResult = { messages, errors }`，各 cleanup 函数也都返回它，但 `cleanupOldMessageFilesInBackground()` 在 `575-595` 里直接吞掉这些结果，返回 `Promise<void>`，调用方也不等待一条 “executed / skipped / deferred” 的结构化结论；同时 transcript/session/file-history cleanup 没有与 `tengu_npm_cache_cleanup`、`tengu_worktree_cleanup` 对等的 event。第四组是 side-effect 的事后暴露：`TaskOutput.ts:313-325` 明确把某个输出文件 `ENOENT` 解释为“another Claude Code process in the same project deleted it during startup cleanup”，这证明 cleanup 的副作用可能跨进程外溢，但系统主要靠 diagnostic string 事后补偿说明，而不是先有正式回执再渲染文案。
+- 本轮因此同步补入 `appendix/140-安全保留期治理与执行诚实性分层速查表` 与 `source-notes/07-cleanup执行诚实性、TaskOutput与保留期回执缺口`。这样 `156` 不只是说“文案和执行可能不一致”，而是把 declaration、future-write suppression、runtime scheduling、cleanup execution 与 post-hoc explanation 五层正式拆开，并把缺口精确命名成 `retention-enforcement-honesty signer` 的缺位。
+- 这也把下一候选自然推进到 `157`：既然 `TaskOutput` 已经暴露出 “another Claude Code process ... deleted it during startup cleanup” 这种同项目跨进程副作用，那么下一层最值得继续追问的就不再只是“有没有执行回执”，而是“谁配宣布这次 cleanup 在执行时没有误伤同项目其他仍在运行的对象”。也就是：`retention-enforcement-honesty signer` 仍不等于 `cleanup-isolation signer`。
+
 ### A077. 不可逆销毁之后仍要继续分出保留期治理：Claude Code 已把 retention declaration、merge、guard、scheduler 与 executor 拆成多层主权
 
 - 本轮开始前再次按要求检查主分支更新：执行 `git fetch origin main` 后确认 `origin/main` 的最新内容已经被当前研究分支吸收，因此无需额外 merge，即可继续在当前 worktree 深挖安全主线。
