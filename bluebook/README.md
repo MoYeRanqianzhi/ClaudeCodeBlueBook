@@ -30,7 +30,7 @@
 - [navigation/README.md](navigation/README.md): 104 篇，阅读地图、问题反查与机制回灌
 - [architecture/README.md](architecture/README.md): 84 篇，运行时结构、状态机、请求装配、治理控制面与演化边界
 - [api/README.md](api/README.md): 95 篇，命令、工具、状态、宿主与扩展协议
-- [guides/README.md](guides/README.md): 98 篇，使用方法、模板、审读清单与构建手册
+- [guides/README.md](guides/README.md): 101 篇，使用方法、模板、审读清单与构建手册
 - [philosophy/README.md](philosophy/README.md): 86 篇，第一性原理、治理观、控制面收束与源码先进性解释
 - [casebooks/README.md](casebooks/README.md): 72 篇，失败样本、反例与失真原型
 - [playbooks/README.md](playbooks/README.md): 76 篇，回归、演练、rollout 与运行手册
@@ -42,6 +42,7 @@
 
 - 建立整体判断：`00 -> 01 -> 03 -> 07 -> 09`
 - 想直接抓三张控制面总图：`06 -> 07 -> 09 -> architecture/82-84`
+- 想把三张控制面图落成 Builder 审读模板：`15 -> guides/99-101`
 - 想从使用方法进入：`02 -> guides/README -> navigation/README`
 - 想看宿主接入与协议边界：`05 -> api/README -> architecture/README`
 - 想看源码质量 / 可演化结构：`03 -> 06 -> philosophy/83 -> 86 -> architecture/84`

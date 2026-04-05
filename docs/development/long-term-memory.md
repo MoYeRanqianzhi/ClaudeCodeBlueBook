@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 三张控制面图已继续下沉成 builder-facing 高阶审读模板：
+  - `guides/99` 负责请求装配控制面的苏格拉底审读。
+  - `guides/100` 负责当前世界准入主权的苏格拉底审读。
+  - `guides/101` 负责 one writable present / anti-zombie 结构的苏格拉底审读。
+- 目录结构进一步优化：
+  - `guides/` 已从 `01-98` 扩展为 `01-101`。
+  - `navigation/15` 负责高阶审读路由，`navigation/42` 负责 builder-facing 实现与审读模板路由，两者分工更清楚。
 - 三张控制面图已前置回更靠前的主线与哲学层：
   - `bluebook/09` 负责把“世界进入模型 / 扩张定价 / 防过去写坏现在”作为新的主线收束章前置给读者。
   - `philosophy/84-86` 负责把 Prompt 魔力、治理成熟度、源码先进性三条线分别压成更高阶的第一性原理与苏格拉底审读问题。
@@ -41,7 +48,7 @@
 - 当前新的写作约束：
   - `casebooks/70-72` 只表示 correction-of-correction rewrite correction refinement correction refinement distortion，不再回头重写 `playbooks/74-76` 的执行顺序。
   - `98-104` 应被持续当成一条连续小循环来写，而不是七篇并列新增文章。
-- 下一步最值钱的候选应切到 `guides/99-101`，把这一层 execution distortion 重新压回固定 card 顺序、shared reject 升级路径与改写模板骨架。
+- 原先指向 `guides/99-101` 的候选已完成；这一层 execution distortion 现已被重新压成高阶苏格拉底审读模板，并已接回 `navigation/15` 与 `navigation/42` 的稳定路由。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”层。
 - 新增结论：
   - Prompt refinement correction refinement protocol 如果要真正被宿主、CI、评审与交接共同执行，不能只停在 formal object，还要把 authority、section registry、tool contract、compiled request truth、protocol truth、synthesis ownership、continuation gate 与 cache break truth 压成同一张 `compiled request card`。

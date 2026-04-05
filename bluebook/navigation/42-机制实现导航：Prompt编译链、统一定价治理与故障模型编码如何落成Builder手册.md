@@ -21,9 +21,10 @@
 
 稳定阅读顺序：
 
-1. `../guides/51`
-2. `../philosophy/81`
-3. `../architecture/79`
+1. `../philosophy/84`
+2. `../architecture/82`
+3. `../guides/99`
+4. `../guides/51`
 
 这条线的核心不是：
 
@@ -42,10 +43,11 @@
 
 稳定阅读顺序：
 
-1. `../guides/52`
-2. `../philosophy/82`
-3. `../architecture/80`
-4. `../api/50`
+1. `../philosophy/85`
+2. `../architecture/83`
+3. `../guides/100`
+4. `../guides/49`
+5. `../guides/52`
 
 这条线的核心不是：
 
@@ -64,9 +66,10 @@
 
 稳定阅读顺序：
 
-1. `../guides/53`
-2. `../philosophy/83`
-3. `../architecture/81`
+1. `../philosophy/86`
+2. `../architecture/84`
+3. `../guides/101`
+4. `../guides/53`
 
 这条线的核心不是：
 
@@ -93,6 +96,7 @@
 这些都更接近：
 
 - builder-facing 的实现手册层
+- 以及实现者在真正动手前必须先跑过的高阶审读模板层
 
 ## 5. 苏格拉底式自检
 

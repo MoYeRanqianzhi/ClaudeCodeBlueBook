@@ -22,8 +22,9 @@
 稳定阅读顺序：
 
 1. `../philosophy/84`
-2. `../philosophy/63`
-3. `../guides/30`
+2. `../architecture/82`
+3. `../guides/99`
+4. `../guides/30`
 
 这条线的核心不是：
 
@@ -44,8 +45,9 @@
 稳定阅读顺序：
 
 1. `../philosophy/85`
-2. `../philosophy/64`
-3. `../guides/31`
+2. `../architecture/83`
+3. `../guides/100`
+4. `../guides/31`
 
 这条线的核心不是：
 
@@ -66,8 +68,9 @@
 稳定阅读顺序：
 
 1. `../philosophy/86`
-2. `../philosophy/65`
-3. `../guides/32`
+2. `../architecture/84`
+3. `../guides/101`
+4. `../guides/32`
 
 这条线的核心不是：
 
