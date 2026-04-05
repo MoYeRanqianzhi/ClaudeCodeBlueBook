@@ -20,13 +20,13 @@
 
 ## 专题目录
 
-- [navigation/README.md](navigation/README.md): 102 篇，阅读地图、问题反查与机制回灌
+- [navigation/README.md](navigation/README.md): 103 篇，阅读地图、问题反查与机制回灌
 - [architecture/README.md](architecture/README.md): 81 篇，运行时结构、状态机和控制面
 - [api/README.md](api/README.md): 95 篇，命令、工具、状态、宿主与扩展协议
 - [guides/README.md](guides/README.md): 98 篇，使用方法、模板、审读清单与构建手册
 - [philosophy/README.md](philosophy/README.md): 83 篇，第一性原理、治理观和源码先进性解释
 - [casebooks/README.md](casebooks/README.md): 69 篇，失败样本、反例与失真原型
-- [playbooks/README.md](playbooks/README.md): 73 篇，回归、演练、rollout 与运行手册
+- [playbooks/README.md](playbooks/README.md): 76 篇，回归、演练、rollout 与运行手册
 - [risk/README.md](risk/README.md): 65 篇，风控、账号治理、恢复与中国用户入口问题
 - [security/README.md](security/README.md): 139 篇正文，安全控制面、恢复语义与工程化验证
 - [security/appendix/README.md](security/appendix/README.md): 122 篇速查表，安全证据、词法、路由与验证附录

@@ -1,6 +1,6 @@
 # 运行手册
 
-`playbooks/` 当前有 73 篇编号文档，范围 `01-73`。本目录负责把研究结论变成回归、演练、rollout、验收、修复和长期运行手册。
+`playbooks/` 当前有 76 篇编号文档，范围 `01-76`。本目录负责把研究结论变成回归、演练、rollout、验收、修复和长期运行手册。
 
 ## 目录分层
 
@@ -10,7 +10,7 @@
 - `29-37`: 宿主接入审读与迁移演练、验收执行手册。
 - `38-49`: 修复、收口、监护与解除监护执行手册。
 - `50-61`: 稳态、稳态纠偏、再纠偏与改写执行手册。
-- `62-73`: rewrite correction、refinement 与 repair card 执行手册。
+- `62-76`: rewrite correction、refinement 与 repair card / protocol card 执行手册。
 
 ## 推荐入口
 
@@ -20,6 +20,7 @@
 - [29-Prompt宿主接入审读手册：输入面、section breakdown、cache break可解释性与continue qualification排查](<29-Prompt宿主接入审读手册：输入面、section breakdown、cache break可解释性与continue qualification排查.md>)
 - [56-Prompt宿主修复稳态纠偏再纠偏执行手册：recorrection card、reject verdict order、protocol repair drill与threshold liability drill](<56-Prompt宿主修复稳态纠偏再纠偏执行手册：recorrection card、reject verdict order、protocol repair drill与threshold liability drill.md>)
 - [71-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：repair card、共同reject order与reopen drill](<71-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：repair card、共同reject order与reopen drill.md>)
+- [74-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：compiled request card、shared reject order与reopen drill](74-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：compiled request card、shared reject order与reopen drill.md)
 
 ## 与其他目录配合
 
@@ -30,5 +31,5 @@
 ## 维护约定
 
 - `playbooks/` 负责“怎么演练、怎么回归、怎么值班”，不复制方法论正文。
-- README 只保留阶段入口和代表性手册，不再逐条镜像全部 73 篇。
-- 下一步深层执行链将从 `../navigation/103` 进入 `74-76`。
+- README 只保留阶段入口和代表性手册，不再逐条镜像全部 76 篇。
+- 当前深层执行链已推进到 `../navigation/103 -> 74-76`，下一步前向入口是 `../navigation/104 -> ../casebooks/70-72`。

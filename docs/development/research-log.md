@@ -28,6 +28,30 @@
 - `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
 - `claude-code-source-code/src/utils/worktree.ts:1046-1172`
 
+### A075. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行层
+
+- Prompt refinement correction refinement protocol 即使已经被 `api/93` 压成 `compiled request truth`、`protocol truth`、`shared reject semantics` 与 `long-horizon reopen liability` 的正式协议层，如果团队不能继续把这些对象运行成同一张 `compiled request card`、同一条 `shared reject order` 与正式 `reopen drill`，Prompt 魔力就仍会继续围绕 transcript、handoff 与 worker prose 工作；这说明 Prompt 线下一层最值钱的不是继续补 protocol 名词，而是把 compiled request ABI 压成新的 playbook execution layer。
+- Governance refinement correction refinement protocol 即使已经被 `api/94` 压成 `pricing object`、`classifier/writeback/ingress`、`shared reject semantics` 与 `long-horizon reopen liability` 的正式协议层，如果团队不能继续把 `authority -> action -> window -> continuation -> classifier -> reject -> writeback -> ingress` 运行成同一张 `pricing card`、同一条 `shared reject order` 与正式 `reopen drill`，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与审批 calmness 工作；这说明治理线下一层最值钱的不是继续补对象定义，而是把统一定价对象压成新的 playbook execution layer。
+- Structure refinement correction refinement protocol 即使已经被 `api/95` 压成 `authority stream`、`lineage/fresh merge`、`single-source writeback`、`anti-zombie/transport/fail-closed`、`shared reject semantics` 与 `long-horizon reopen liability` 的正式协议层，如果团队不能继续把这些对象运行成同一张 `authority stream card`、同一条 `shared reject order` 与正式 `reopen drill`，源码先进性就仍会继续围绕 pointer、telemetry、reconnect 成功率与作者说明工作；这说明结构线下一层最值钱的不是继续补协议对象，而是把结构真相面压成新的 playbook execution layer。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement protocol 之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行层”：
+  - `navigation/103` 负责统一入口。
+  - `playbooks/74-76` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement protocol 的 `compiled request card / pricing card / authority stream card`、共同 `reject` 顺序与正式 `reopen drill`。
+- 这也意味着 `98-103` 应被视为一条连续小循环，而不是六篇并列文章。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 execution 口号，而是考虑新的 `casebooks/70-72`，把这些 protocol execution 最常怎样重新退回假 card、假 shared reject 与假 reopen liability 写成新的失真层。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/utils/messages.ts:1481-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-1318`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+
 ### A073. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏层
 
 - Prompt refinement correction refinement execution distortion 即使已经被 `casebooks/67` 写成假 `repair card`、假共同 `reject` 语义与假 `reopen liability` 的反例层，如果团队不能继续把这些失真压回固定 `refinement correction refinement order`、共同硬拒收项与 builder-facing 模板骨架，Prompt 魔力就仍会继续围绕 polished transcript、summary handoff、worker prose 与 wording 崇拜工作；这说明 Prompt 线下一层最值钱的不是继续补反例标签，而是把这些失真压成新的 guide layer。

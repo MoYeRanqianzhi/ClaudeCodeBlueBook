@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”层。
+- 新增结论：
+  - Prompt refinement correction refinement protocol 如果要真正被宿主、CI、评审与交接共同执行，不能只停在 formal object，还要把 authority、section registry、tool contract、compiled request truth、protocol truth、synthesis ownership、continuation gate 与 cache break truth 压成同一张 `compiled request card`。
+  - 治理 refinement correction refinement protocol 如果要真正被共同执行，不能只停在统一定价 object，还要把 `authority -> action -> window -> continuation -> classifier -> reject -> writeback -> ingress` 压成同一张 `pricing card`，让安全设计与省 token 设计继续共用同一条拒绝未定价扩张的执行链。
+  - 结构 refinement correction refinement protocol 如果要真正被共同执行，不能只停在 authority stream surface，还要把 truth、time consistency、future maintainer 与 fail-closed 压成同一张 `authority stream card`，而不是让 pointer、telemetry 与 reconnect 好运气重新篡位。
+- 新增目录责任：
+  - `navigation/103` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行入口。
+  - `playbooks/74-76` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement protocol 的 card、shared reject order 与 reopen drill。
+- 当前新的写作约束：
+  - `playbooks/74-76` 只表示 correction-of-correction rewrite correction refinement correction refinement execution，不再回头重写 `api/93-95` 的对象定义。
+  - `98-103` 应被持续当成一条连续小循环来写，而不是六篇并列新增文章。
+- 下一步最值钱的候选应切到 `casebooks/70-72`，把这一层 protocol execution 最常怎样重新退回假 card、假 shared reject 与假 reopen liability 写成新的失真层。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏 / repair steady-state correction-of-correction rewrite correction refinement correction refinement guide”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”层。
 - 新增结论：
   - Prompt refinement correction refinement fixed order 如果要真正被宿主、CI、评审与交接共同消费，不能只停在 guide 模板，还要把 `compiled request truth + registry/protocol truth + shared reject semantics + lawful forgetting / continuation qualification + long-horizon reopen liability` 压成 host-consumable Prompt protocol object。
