@@ -72,11 +72,6 @@ Prompt 宿主消费最危险的，不是：
 - 宿主最多把 `systemPrompt` 当输入面，而不把它当编译真相本体。
 - 真正应该消费的是输入面 + section breakdown + 继续资格投影，而不是只消费一段字符串。
 
-### 改写路径
-
-1. 把 `systemPrompt` 从“唯一真相”降成输入面。
-2. 把 `systemPromptSections` 与相关 compiled truth 投影提到主视图。
-3. 任何宿主只围绕 prompt 字符串判断稳定性的设计都判为 drift。
 
 ## 3. 把 section breakdown 当文案目录 vs runtime registry
 
@@ -95,11 +90,6 @@ Prompt 宿主消费最危险的，不是：
 - 宿主应把 section breakdown 理解成 stable prefix 的正式投影，而不是普通 outline。
 - 重点消费的是 section 身份、占席位情况与稳定边界，而不是章节排版。
 
-### 改写路径
-
-1. 把 section breakdown 与 cache/stability 语义并排展示。
-2. 明确区分 stable / dynamic / uncached section。
-3. 任何把 section registry 退回纯文案目录的设计都判为 drift。
 
 ## 4. cache break 退回黑箱指标 vs explainability
 
@@ -118,11 +108,6 @@ Prompt 宿主消费最危险的，不是：
 - 宿主应围绕 cache break reason 的正式分类与 drift ledger 消费稳定性。
 - token 变化只能是结果投影，不能替代 break explanation。
 
-### 改写路径
-
-1. 强制把 break reason 和稳定性成本并排展示。
-2. 把“为什么 miss”提升为正式字段，而不是日志注释。
-3. 任何只看 token drop、不看 break reason 的宿主都判为 drift。
 
 ## 5. 把 raw transcript 当 protocol truth vs protocol rewrite
 
@@ -141,11 +126,6 @@ Prompt 宿主消费最危险的，不是：
 - 宿主应把 raw transcript 与 protocol truth 分层消费。
 - 任何“模型看到什么”的判断都应围绕合法协议面投影，而不是前台原样历史。
 
-### 改写路径
-
-1. 显式区分 display transcript 与 protocol transcript。
-2. 让 pairing 修复与 normalization 成为正式审读对象。
-3. 任何把 raw history 直接当模型世界的宿主都判为 drift。
 
 ## 6. 继续资格误判 vs continue qualification
 
@@ -164,11 +144,6 @@ Prompt 宿主消费最危险的，不是：
 - 宿主应围绕 continue qualification 的正式投影判断状态，而不是围绕最后一条消息启发式。
 - `state + summary + Context Usage + pending action` 才是当前继续资格的正式消费面。
 
-### 改写路径
-
-1. 禁止 last-message heuristic 充当主状态机。
-2. 把 `post_turn_summary / task_summary / state` 提升为主判断对象。
-3. 任何只看 `stop_reason` 就推断当前资格的宿主都判为 drift。
 
 ## 7. 苏格拉底式追问
 

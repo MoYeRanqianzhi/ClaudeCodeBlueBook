@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏改写协议层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写执行层”。
+1. 为什么宿主修复稳态纠偏再纠偏改写协议层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写执行层”。
 2. 为什么 Prompt 线如果不把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 运行成固定 `rewrite card`，Prompt 魔力就会重新退回 prose、summary 与默认继续。
 3. 为什么治理线如果不把 `authority`、`ledger`、`decision window`、`continuation pricing`、`capability liability` 与 `threshold` 运行成固定 `rewrite card`，安全设计与省 token 设计就会重新退回 mode 面板、usage dashboard 与保守建议。
 4. 为什么结构线如果不把 `authority surface`、`single-source writeback seam`、`lineage reproof`、`anti-zombie evidence` 与 `reopen liability` 运行成固定 `rewrite card`，源码先进性就会重新退回 pointer 健康感、telemetry 转绿、archive prose 与作者记忆。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么固定顺序执行 `compiled request truth restitution`、`protocol transcript repair`、`stable prefix reseal`、`lawful forgetting reseal`、`continuation requalification` 与 `threshold liability reinstatement`。
 - 哪些 `reject verdict` 一旦出现，就说明当前不是“rewrite 已完成”，而是应直接冻结 continuation、阻断 handoff 并进入 `re-entry / reopen`。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/59`
 2. `../api/78`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么固定顺序执行 `authority source restitution`、`ledger reseal`、`decision window refreeze`、`continuation pricing rebinding`、`capability liability recustody` 与 `threshold rebinding`。
 - 哪些 `reject verdict` 一旦出现，就说明当前只是 mode 与 dashboard 重新看起来很平静，而不是治理控制面真的重新统一定价一切扩张。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/60`
 2. `../api/79`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么固定顺序执行 `authority surface restitution`、`single-source writeback seam`、`lineage reproof`、`anti-zombie evidence restitution` 与 `reopen liability rebinding`。
 - 哪些 `reject verdict` 一旦出现，就说明当前只是更制度化的健康叙事，而不是 later 维护者可独立消费的结构真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/61`
 2. `../api/80`
@@ -97,26 +97,7 @@
 
 - rewrite execution playbook、reject order、drill set 与 re-entry / reopen drill
 
-## 5. 目录结构上的最小闭环
-
-从 `78` 到 `83`，这一段不该被看成六篇并列文章，而应被看成一条连续小循环：
-
-1. `78` 是再纠偏协议
-2. `79` 是再纠偏执行
-3. `80` 是再纠偏执行失真
-4. `81` 是再纠偏改写
-5. `82` 是再纠偏改写协议
-6. `83` 是再纠偏改写执行
-
-也就是说，`78-83` 这一段不该再被看成简单重复，而应被看成：
-
-- 协议对象如何进入执行
-- 执行如何重新说谎
-- 说谎后如何被固定顺序改写
-- 改写后如何压成共享协议
-- 共享协议如何继续落成可执行 `rewrite card`
-
-## 6. 第一性原理与苏格拉底式自检
+## 5. 第一性原理与苏格拉底式自检
 
 在你准备宣布“宿主修复稳态纠偏再纠偏改写执行已经完整”前，先问自己：
 

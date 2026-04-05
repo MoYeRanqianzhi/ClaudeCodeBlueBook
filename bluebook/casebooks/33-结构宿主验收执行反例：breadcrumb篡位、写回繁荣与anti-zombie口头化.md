@@ -74,11 +74,6 @@
 
 - breadcrumb 只能证明“还有入口”，不能证明“当前对象仍成立”。
 
-### 改写路径
-
-1. 把 pointer、sidecar 降为边界信号。
-2. 把 authority object 与 generation 提升为通过前提。
-3. 任何把 breadcrumb 当 authority 的结构宿主验收都判为 drift。
 
 ## 3. 写回繁荣：telemetry 成功感冒充 writeback path
 
@@ -99,11 +94,6 @@
 
 - writeback path 应围绕唯一 writer、merge 语义与最终 authority state 对齐，而不是围绕请求数量与日志丰富度。
 
-### 改写路径
-
-1. 把写回次数与日志量降为次级信号。
-2. 把 `writeback_path + worker_status + external_metadata` 提升为正式对象。
-3. 任何只看 telemetry 成功感的结构宿主验收都判为 drift。
 
 ## 4. anti-zombie 口头化：源码先进性退回成功率与目录美学
 
@@ -124,11 +114,6 @@
 
 - 源码先进性应首先被验证为 anti-zombie 结果面仍然存在，而不是目录美学仍然成立。
 
-### 改写路径
-
-1. 把目录清晰度与成功率降为摘要指标。
-2. 把 `anti_zombie_projection` 提升为正式通过条件。
-3. 任何只夸源码更漂亮、不验 anti-zombie 的结构宿主验收都判为 drift。
 
 ## 5. 假 reject：reject reason 存在却不保护恢复边界
 
@@ -149,11 +134,6 @@
 
 - reject 应先拒收 authority 漂移、resume 顺序缺席、writeback 旁路与 anti-zombie 缺席，再谈症状观感。
 
-### 改写路径
-
-1. 把 `ui_heuristic_authority / resume_order_missing / pointer_usurps_truth / writeback_telemetry_only / anti_zombie_missing` 固定成正式顺序。
-2. 禁止 later 复盘补写说明取代现场拒收。
-3. 任何“有 reject 字段、没对象级拒收顺序”的结构宿主验收都判为 drift。
 
 ## 6. 伪回退：回退到旧路径、旧 pointer 与监控绿灯
 
@@ -170,11 +150,6 @@
 
 - rollback 应先绑定 authority object、recovery boundary 与 writeback path，再允许操作 pointer、reconnect 与 UI。
 
-### 改写路径
-
-1. 把 pointer 与 reconnect 降为回退动作，不再当回退对象。
-2. 把 `recovery_boundary + authority_object + writeback_path` 提升为 rollback 主对象。
-3. 任何只回退到旧路径与绿灯的结构 rollback 都判为 drift。
 
 ## 7. 苏格拉底式追问
 

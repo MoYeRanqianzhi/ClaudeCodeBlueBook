@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏协议层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏执行层”。
+1. 为什么宿主修复稳态纠偏再纠偏协议层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏执行层”。
 2. 为什么 Prompt 线如果不把再纠偏协议继续压成 `recorrection card`、`reject verdict order`、`protocol repair drill` 与 `threshold liability drill`，Prompt 魔力就会重新退回文案崇拜、UI 历史与默认继续。
 3. 为什么治理线如果不把再纠偏协议继续压成 `recorrection card`、`reject verdict order`、`window refreeze drill`、`capability liability / threshold rebinding drill`，安全设计与省 token 设计就会重新拆回 mode 面板、usage dashboard 与保守建议。
 4. 为什么结构线如果不把再纠偏协议继续压成 `recorrection card`、`authority-first reject order`、`single-source seam audit`、`anti-zombie evidence rebinding` 与 `reopen liability drill`，源码先进性就会重新退回 pointer 健康感、telemetry 转绿与作者说明。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么顺序证明 Prompt 世界已经把 correction-of-correction protocol 真正运行回同一个 `compiled request truth`。
 - 哪些 `reject verdict` 一旦出现，就说明当前不是“再纠偏协议已被执行”，而是必须立刻降级为 `truth_recompile_required`、`protocol_repair_required`、`reentry_required` 或 `reopen_required`。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/56`
 2. `../api/75`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么顺序证明治理控制面已经把 correction-of-correction protocol 重新运行回同一个 authority、ledger、window、pricing、capability liability 与 threshold 对象。
 - 哪些 `reject verdict` 一旦出现，就说明当前仍在免费继续、免费扩窗、免费放权，必须立刻进入 `liability_hold`、`reentry_required` 或 `reopen_required`。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/57`
 2. `../api/76`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么顺序证明结构真相面已经把 correction-of-correction protocol 重新运行回 authority、single-source、resume lineage、writeback、anti-zombie 与 reservation 共用的同一边界。
 - 哪些 `reject verdict` 一旦出现，就说明当前只是更制度化的健康叙事，必须立刻回到 authority object、停止 side write 并进入 `re-entry / reopen` 责任演练。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/58`
 2. `../api/77`
@@ -98,25 +98,7 @@
 
 - runtime recorrection execution layer、固定 reject 顺序与 `re-entry / reopen` 运行语义
 
-## 5. 目录结构上的最小闭环
-
-从 `74` 到 `79`，这六层不该被看成六篇并列文章，而应被看成一条连续小循环：
-
-1. `74` 是纠偏协议
-2. `75` 是纠偏执行
-3. `76` 是纠偏执行失真
-4. `77` 是再纠偏
-5. `78` 是再纠偏协议
-6. `79` 是再纠偏执行
-
-也就是说，`53-55` 与 `56-58` 不该混名：
-
-- `53-55` 负责 first-order correction execution
-- `56-58` 负责 correction-of-correction protocol execution
-
-这样目录节奏才不会重新塌回“又一套更复杂的 correction 手册”。
-
-## 6. 第一性原理与苏格拉底式自检
+## 5. 第一性原理与苏格拉底式自检
 
 在你准备宣布“宿主修复稳态纠偏再纠偏执行层已经完整”前，先问自己：
 

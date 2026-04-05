@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么 Artifact Evaluator Harness / Replay Lab 层之后还必须继续长出 harness runner / drift ledger 层。
+1. 为什么 Artifact Evaluator Harness / Replay Lab 层之后仍需要单独讨论 harness runner / drift ledger 层。
 2. 为什么真正成熟的持续验证，不是 replay case 更多，而是 replay queue、alignment gate、drift ledger 与 rewrite adoption 共用同一 shared object。
 3. 怎样把 Prompt、安全/省 token 与结构演化三条线分别压成可持续执行协议，而不是继续停在 playbook。
 4. 为什么这一层应该同时落在 `api/` 与 `architecture/`，而不是重新放回 `playbooks/`。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt Artifact Harness Runner
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt 线不能停在 continuation replay 实验室，而必须继续证明 `compiled request continuity` 怎样被持续排队执行、持续记录 drift、持续采纳 rewrite。
 - 为什么 Claude Code 的 Prompt 魔力进入运行层之后，必须靠 runner / ledger 才能证明共享的不是一次 replay，而是可持续复用的 continuation 真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `32`
 2. `../api/43`
@@ -36,12 +36,12 @@
 
 ## 2. 治理 Artifact Harness Runner
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理线不能停在 decision gain replay 实验室，而必须继续证明 `decision_window`、`control_arbitration_truth`、`rollback_object` 与 `next_action` 怎样被持续执行和持续追责。
 - 为什么安全与省 token 设计进入运行层之后，必须靠 runner / ledger 才能证明共享的不是一次 upgrade verdict，而是持续执行的“没有决策增益就不继续”。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `32`
 2. `../api/44`
@@ -58,12 +58,12 @@
 
 ## 3. 结构 Artifact Harness Runner
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构线不能停在 split-brain / anti-zombie replay 实验室，而必须继续证明 `authoritative_path`、`recovery_asset_ledger`、`dropped_stale_writers` 与 `rollback_object` 怎样被持续执行和持续交接。
 - 为什么源码先进性进入运行层之后，必须靠 runner / ledger 才能证明共享的不是一次结构拒收，而是持续防止 split-brain 与 stale writer 的执行秩序。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `32`
 2. `../api/45`

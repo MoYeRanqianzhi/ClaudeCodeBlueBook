@@ -65,11 +65,6 @@
 - mode 变更必须继续经过单一 choke point，对外先 externalize，再向不同消费者同步。
 - authority source 应始终包含 settings、policy、host 与当前状态，不得退回单一 mode 字段。
 
-### 改写路径
-
-1. 把 authority source 与 mode projection 分开写。
-2. 所有 mode 变化都回链单一状态扼流点。
-3. 任何“只看 mode 就下结论”的治理都视为 drift。
 
 ## 3. 审批出现过就算治理完成 vs typed decision
 
@@ -88,11 +83,6 @@
 - 治理对象必须继续围绕正式 decision type、decision reason 与 winner source 成立。
 - “审批发生过”只能是证据的一部分，不能替代决策对象。
 
-### 改写路径
-
-1. 把 typed decision 写成首要字段，而不是 UI 结果。
-2. 要求每次 allow / deny / ask 都能解释 winner source。
-3. 任何“有人批准过就算没问题”的判断都直接拒收。
 
 ## 4. Context Usage 退回仪表盘崇拜 vs decision window
 
@@ -111,11 +101,6 @@
 - decision window 必须同时解释当前对象、当前成本、当前可见面与当前继续边界。
 - token 百分比只能是 projection，不能替代 window。
 
-### 改写路径
-
-1. 把 `decision_window` 明确写成对象字段。
-2. 强制并排展示 Context Usage 分类与当前状态。
-3. 任何只给 token 条、不解释窗口的界面都判为 drift。
 
 ## 5. 默认继续幻觉 vs continuation gate
 
@@ -134,11 +119,6 @@
 - continuation 必须继续由正式 gate 决定，而不是由“暂时还能跑”决定。
 - gate 应同时考虑 agent/headless 语义、decision gain 与时间预算，而不只是剩余 token。
 
-### 改写路径
-
-1. 把 continuation gate 从“可继续”提升为“应继续”。
-2. 把 diminishing returns 视为正式停止语义。
-3. 任何默认继续、没有对象升级条件的设计都判为 drift。
 
 ## 6. 回退退回文件或 commit vs rollback object
 
@@ -157,11 +137,6 @@
 - rollback 必须继续指向当前 governance object 的失败边界，而不是文件级手工撤回。
 - 所有恢复动作都应服务对象回退，而不是替代对象回退。
 
-### 改写路径
-
-1. 每次失败都先写清 rollback object。
-2. 把文件/commit 回退降级为执行实现，不得上升为治理语义。
-3. 任何缺 rollback object 的失败处理都判为 drift。
 
 ## 7. 苏格拉底式追问
 

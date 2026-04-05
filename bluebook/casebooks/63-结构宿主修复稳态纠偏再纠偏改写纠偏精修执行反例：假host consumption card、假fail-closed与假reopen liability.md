@@ -76,11 +76,6 @@
 
 - `reject verdict` 应先绑定同一个 `authority_object_id + authoritative_path + externally_verifiable_head + single_source_ref`，再宣布 `steady_state_chain_resealed`。
 
-### 改写路径
-
-1. 把目录整洁度、架构 prose 与 pointer 健康感降为次级信号。
-2. 把 `authority_object_id + authoritative_path + externally_verifiable_head + single_source_ref` 提升为前提。
-3. 任何先看解释、后看结构对象的 refinement execution 都判为 drift。
 
 ## 3. 假fresh merge 与假fail-closed：merge by result, fail-closed by luck
 
@@ -102,11 +97,6 @@
 
 - `hard reject order` 必须先证明 `lineage_reproof_ref + fresh_merge_contract + append_chain_ref + stale_finally_suppressed + worktree_change_guard + unpushed_commit_guard + dirty_git_fail_closed_attested` 仍围绕同一个结构真相面，再决定 `steady_state_chain_resealed`、`merge_reproof_required`、`fail_closed_reseal_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 把结果没坏、telemetry 转绿与“git 当前没炸”降为观察信号。
-2. 把 `fresh_merge_contract + worktree_change_guard + unpushed_commit_guard + dirty_git_fail_closed_attested` 提升为正式对象。
-3. 任何“结果还行就算 refinement 完成”的结构 execution 都判为 drift。
 
 ## 4. 假reopen liability：liability by reconnect hint and author memory
 
@@ -129,11 +119,6 @@
 
 - reopen liability 应围绕 authority、writeback、fail-closed 与 return boundary，而不是围绕 reconnect 提示与旧入口。
 
-### 改写路径
-
-1. 把 reconnect 提示与作者口述降为动作说明，不再当 liability 对象。
-2. 把 `reopen_boundary + return_authority_object + return_writeback_path + threshold_retained_until + dirty_git_fail_closed_attested` 提升为正式对象。
-3. 任何只让 later 团队“以后再试一次恢复”的结构 refinement execution 都判为 drift。
 
 ## 5. 为什么这会让源码先进性退回目录美学
 

@@ -72,11 +72,6 @@ Prompt 宿主迁移最危险的，不是：
 
 - 交接包应围绕 `compiled request truth` 的正式对象，而不是围绕 prompt 展示效果。
 
-### 改写路径
-
-1. 把 system prompt 截图降为辅助材料。
-2. 把 `section_registry_snapshot / stable_boundary_snapshot / cache_strategy_snapshot / continue_qualification` 提升为正式交接字段。
-3. 任何只剩摘要与截图的 Prompt 交接都判为 drift。
 
 ## 3. 假灰度：命中率、通过率与成本曲线冒充 explainability
 
@@ -94,11 +89,6 @@ Prompt 宿主迁移最危险的，不是：
 
 - 灰度记录必须围绕 break reason、protocol gap、boundary drift 与 continuation signal 记录，而不是只围绕结果指标。
 
-### 改写路径
-
-1. 把 `cache_break_reason` 提升成灰度记录主对象。
-2. 把 `protocol transcript health` 作为独立观测项。
-3. 任何只看命中率与成本曲线的 Prompt 灰度都判为 drift。
 
 ## 4. 回退幻觉：`stop_reason`、最后一条消息与“还能继续”
 
@@ -116,11 +106,6 @@ Prompt 宿主迁移最危险的，不是：
 
 - 回退判断必须围绕 `continue_qualification + session_state_changed + pending_action + result envelope`。
 
-### 改写路径
-
-1. 禁止 `stop_reason` 单独充当回退门。
-2. 把 `continue_qualification` 提升为正式 gate。
-3. 任何只看最后一条消息判断回退的宿主都判为 drift。
 
 ## 5. 把 compact 交接重新退回摘要 handoff
 
@@ -137,11 +122,6 @@ Prompt 宿主迁移最危险的，不是：
 
 - compact handoff 应围绕 boundary、preserved segment、next step 与 preserved assets。
 
-### 改写路径
-
-1. 把 summary 降为交接说明，不再当交接真相。
-2. 把 `compact_boundary / preserved_segment / next_step` 提升为正式对象。
-3. 任何只剩 summary 的 compact handoff 都判为 drift。
 
 ## 6. protocol rewrite 健康度缺席
 
@@ -158,11 +138,6 @@ Prompt 宿主迁移最危险的，不是：
 
 - prompt 交接、灰度与回退都应明确区分 raw transcript 与 protocol truth。
 
-### 改写路径
-
-1. 把 protocol rewrite version 与 pairing health 写进交接和灰度。
-2. 把 raw transcript 降为调试材料，而不是主真相。
-3. 任何默认 raw transcript 就是模型世界的设计都判为 drift。
 
 ## 7. 苏格拉底式追问
 

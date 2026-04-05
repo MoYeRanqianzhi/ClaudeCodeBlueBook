@@ -6,19 +6,19 @@
 
 它主要回答四个问题：
 
-1. 为什么迁移工单层之后还必须继续长出 rollout 样例层。
+1. 为什么迁移工单层之后仍需要单独讨论 rollout 样例层。
 2. 为什么改写前后 diff、评审问题卡、灰度结果与回退记录必须一起出现。
 3. 怎样把 Prompt、治理与源码先进性分别压成一套完整 rollout 证据样例。
 4. 怎样用苏格拉底式追问避免把 rollout 样例写成“事后美化的成功故事”。
 
 ## 1. Prompt rollout 样例
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样证明一套旧式长文案系统正在被渐进迁到 Prompt Constitution。
 - 怎样记录 section 拆分、边界切换、共享前缀收敛与 handoff 改善的真实过程。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/06`
 2. `../playbooks/09`
@@ -33,12 +33,12 @@
 
 ## 2. 治理与省 token rollout 样例
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样证明系统不是只加了规则，而是真的把免费扩张收回到了统一定价秩序里。
 - 怎样记录顺序调整、stable bytes 冻结、decision gain stop-logic 与自动化回收的灰度结果。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/07`
 2. `../playbooks/10`
@@ -53,12 +53,12 @@
 
 ## 3. 结构 rollout 样例
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样证明第二真相、transport 泄漏与 zombie 温床真的被渐进收口，而不是只是目录变漂亮。
 - 怎样记录 authoritative surface、recovery asset 与 anti-zombie 规则的切换证据。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/08`
 2. `../playbooks/11`

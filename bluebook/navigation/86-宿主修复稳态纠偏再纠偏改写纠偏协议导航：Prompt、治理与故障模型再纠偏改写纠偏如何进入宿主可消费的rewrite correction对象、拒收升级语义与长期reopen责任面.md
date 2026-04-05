@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏改写纠偏层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写纠偏协议层”。
+1. 为什么宿主修复稳态纠偏再纠偏改写纠偏层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写纠偏协议层”。
 2. 为什么 Prompt 线如果不把 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continuation qualification` 与 `threshold liability` 压成同一个宿主可消费对象，Prompt 魔力就会重新退回 rewrite prose、summary handoff 与默认继续。
 3. 为什么治理线如果不把 authority、ledger、window、pricing、classifier 成本、writeback seam、capability liability 与 threshold 压成同一个统一定价控制面对象，安全设计与省 token 设计就会重新退回 mode 面板、usage dashboard 与运营感觉。
 4. 为什么结构线如果不把 authority surface、single-source seam、lineage、fresh merge、anti-zombie、transport boundary 与 reopen liability 压成同一个结构真相面对象，源码先进性就会重新退回 pointer、telemetry、architecture prose 与作者说明。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写纠偏协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接到底该消费哪些正式对象，才能共享同一个 Prompt rewrite correction protocol，而不是各自围绕 rewrite prose、summary 与 UI transcript 自行解释。
 - 哪些字段属于正式对象，哪些属于 verdict 语义，哪些仍然不应被绑定成公共 ABI。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/81`
 2. `../guides/84`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写纠偏协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接到底该消费哪些正式对象，才能共享同一个治理 rewrite correction protocol，而不是各自围绕 mode、dashboard 与运营备注判断“现在应该还能继续”。
 - 哪些字段属于 authority / ledger / window / pricing / liability / threshold 的正式对象，哪些仍不应被绑定成公共 ABI。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/82`
 2. `../guides/85`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写纠偏协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接到底该消费哪些正式对象，才能共享同一个结构 rewrite correction protocol，而不是各自围绕 pointer、telemetry、archive prose 与作者说明判断“结构现在应该没问题了”。
 - 哪些字段属于 authority surface、single-source seam、lineage、fresh merge、anti-zombie、transport boundary 与 reopen liability 的正式对象，哪些仍不应被绑定成公共 ABI。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/83`
 2. `../guides/86`
@@ -97,41 +97,7 @@
 
 - host-consumable protocol、shared object surface、shared reject semantics 与 reopen liability surface
 
-## 5. 目录结构上的最小闭环
-
-从 `82` 到 `86`，这一段不该被看成五篇并列文章，而应被看成一条连续子循环：
-
-1. `82` 是再纠偏改写协议
-2. `83` 是再纠偏改写执行
-3. `84` 是再纠偏改写执行失真
-4. `85` 是再纠偏改写纠偏
-5. `86` 是再纠偏改写纠偏协议
-
-也就是说，`82-86` 这一段真正回答的是：
-
-- 共享对象如何定义
-- 共享对象如何进入执行
-- 执行如何重新说谎
-- 说谎后如何被固定 `rewrite order` 压回
-- 压回后的对象如何再被压成共享 protocol
-
-从更长的主线看，`74-86` 现在应被视为一条连续小循环，而不是十三篇并列文章：
-
-1. `74` 是纠偏协议
-2. `75` 是纠偏执行
-3. `76` 是纠偏执行失真
-4. `77` 是再纠偏
-5. `78` 是再纠偏协议
-6. `79` 是再纠偏执行
-7. `80` 是再纠偏执行失真
-8. `81` 是再纠偏改写
-9. `82` 是再纠偏改写协议
-10. `83` 是再纠偏改写执行
-11. `84` 是再纠偏改写执行失真
-12. `85` 是再纠偏改写纠偏
-13. `86` 是再纠偏改写纠偏协议
-
-## 6. 第一性原理与苏格拉底式自检
+## 5. 第一性原理与苏格拉底式自检
 
 在你准备宣布“宿主修复稳态纠偏再纠偏改写纠偏协议已经完整”前，先问自己：
 

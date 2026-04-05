@@ -65,11 +65,6 @@
 - 关键状态变化必须继续经过单一 choke point，对外做正式 externalize，对内保持唯一 authority surface。
 - 任何辅助状态都只能是 projection，不得重新宣布主权。
 
-### 改写路径
-
-1. 显式命名唯一 authority surface。
-2. 把所有对外同步都改成对同一权威面的投影。
-3. 任何新增状态副本都先回答“它是不是第二真相”。
 
 ## 3. seam 被打穿 vs dependency honesty
 
@@ -88,11 +83,6 @@
 - seam 文件只保留最小 contract、最小 production deps 与最小 fallback 逻辑。
 - 高复杂度对象必须被挡在 seam 外，让依赖图继续诚实暴露危险改动面。
 
-### 改写路径
-
-1. 先问新增 import 是否打穿既有 seam。
-2. 让 config/deps 文件继续只承载 plain data 或最小依赖注入。
-3. 任何“为了方便”把重模块拉进轻 seam 的改动都判为 drift。
 
 ## 4. 陈旧快照回写 fresh state vs transition legality
 
@@ -111,11 +101,6 @@
 - 关键 transition 必须继续用 generation、fresh merge、delta patch 与 stale drop 守住。
 - 任何跨 await 写回应优先补丁化，而不是快照化。
 
-### 改写路径
-
-1. 把 generation / stale-safe merge 当成正式结构要求。
-2. 拒绝整对象覆盖 fresh state 的写法。
-3. 任何“最终还是对的”但不可证明 stale-safe 的改动都判为 drift。
 
 ## 5. 恢复资产篡位 vs recovery asset
 
@@ -134,11 +119,6 @@
 - recovery asset 必须继续只是恢复资产，不得越权成为 authority surface。
 - 任何恢复入口都应先回到正式对象，再决定后续读写路径。
 
-### 改写路径
-
-1. 把恢复资产与主权对象严格分层。
-2. 明确恢复成功只说明“找回入口”，不说明“资产本身就是入口”。
-3. 任何恢复文件、resume pointer 直接被当成主真相的设计都判为 drift。
 
 ## 6. anti-zombie 退回注释口头化 vs formal evidence
 
@@ -157,11 +137,6 @@
 - anti-zombie 必须继续体现为 generation guard、fresh-state merge、terminal re-check、stale writer drop 等正式机制。
 - 风险命名应同时有注释与可执行证据，不得只剩一种。
 
-### 改写路径
-
-1. 先给 anti-zombie 写正式证据点。
-2. 把注释降为解释层，而不是唯一保护层。
-3. 任何只有注释没有机制的 anti-zombie 设计都判为 drift。
 
 ## 7. 苏格拉底式追问
 

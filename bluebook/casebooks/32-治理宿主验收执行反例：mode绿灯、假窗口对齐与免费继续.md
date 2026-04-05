@@ -75,11 +75,6 @@
 
 - authority source 应先于 mode 投影被消费；mode 只是结果表达，不是判断本体。
 
-### 改写路径
-
-1. 把 mode 转绿降为投影级信号。
-2. 把 source / effective / applied 对齐提升为通过前提。
-3. 任何只看 mode 绿灯的治理宿主验收都判为 drift。
 
 ## 3. 假窗口对齐：Context Usage 仪表盘冒充 decision window
 
@@ -100,11 +95,6 @@
 
 - decision window 应同时解释 authority、pending action、context usage 与 continuation，而不是只展示 usage 数字。
 
-### 改写路径
-
-1. 把 usage 百分比降为窗口投影。
-2. 把 `decision_window + pending_action + context_usage_snapshot` 提升为正式对象。
-3. 任何只看仪表盘的治理对齐都判为 drift。
 
 ## 4. 免费继续：continuation gate 被默认行为替代
 
@@ -125,11 +115,6 @@
 
 - continuation 应围绕 typed decision、decision window 与 token budget result，而不是围绕“目前没被阻止”。
 
-### 改写路径
-
-1. 禁止“还没报错”充当继续资格。
-2. 把 `continuation_gate` 提升为正式执行门。
-3. 任何默认继续的治理宿主验收都判为 drift。
 
 ## 5. 伪回退：rollback object 重新退回 mode 与文件动作
 
@@ -146,11 +131,6 @@
 
 - rollback 应先绑定对象边界，再落到 mode、文件与流程动作。
 
-### 改写路径
-
-1. 把 file rewind 与 mode toggle 降为次级动作。
-2. 把 `rollback_object` 提升为回退主对象。
-3. 任何只剩 mode / 文件回退的治理 rollback 都判为 drift。
 
 ## 6. 假 reject：reject reason 存在却不保护扩张边界
 
@@ -171,11 +151,6 @@
 
 - reject 应先拒收 authority 漂移、窗口失效与对象级回退缺席，再谈 modal、体验与成本观感。
 
-### 改写路径
-
-1. 把 `mode_only_authority / missing_permission_ledger / decision_window_unbound / continuation_threshold_only / rollback_not_object` 固定成正式顺序。
-2. 禁止 later 复盘补写 reject 取代现场判定。
-3. 任何“有 reject 词表、没对象级拒收顺序”的治理宿主验收都判为 drift。
 
 ## 7. 苏格拉底式追问
 

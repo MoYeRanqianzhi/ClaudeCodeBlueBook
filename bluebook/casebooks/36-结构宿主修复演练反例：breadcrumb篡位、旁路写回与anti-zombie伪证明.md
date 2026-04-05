@@ -74,11 +74,6 @@
 
 - breadcrumb 只能证明“还有入口”，不能证明“当前对象仍成立”。
 
-### 改写路径
-
-1. 把 pointer、sidecar 降为边界信号。
-2. 把 `authority_object_id + authority_state_surface + generation` 提升为通过前提。
-3. 任何把 breadcrumb 当 authority 的结构 repair drill 都判为 drift。
 
 ## 3. resume 顺序隐式化：recovery 看起来成功，却没有重放对象顺序
 
@@ -98,11 +93,6 @@
 
 - recovery 应先恢复顺序，再恢复通过感。
 
-### 改写路径
-
-1. 把重连成功降为结果信号。
-2. 把 `resume_order` 提升为正式恢复对象。
-3. 任何“结果成功即可忽略顺序”的结构 repair drill 都判为 drift。
 
 ## 4. 旁路写回：telemetry 成功感冒充 writeback restoration
 
@@ -123,11 +113,6 @@
 
 - writeback restoration 应围绕唯一 writer、merge 语义与最终 authority state 对齐，而不是围绕请求数量与日志丰富度。
 
-### 改写路径
-
-1. 把写回次数与日志量降为次级信号。
-2. 把 `writeback_path + worker_status + external_metadata` 提升为正式对象。
-3. 任何只看 telemetry 成功感的结构 repair drill 都判为 drift。
 
 ## 5. anti-zombie 伪证明：源码先进性退回目录美学与成功率崇拜
 
@@ -148,11 +133,6 @@
 
 - 源码先进性应首先被验证为 anti-zombie 结果面仍然存在，而不是目录美学仍然成立。
 
-### 改写路径
-
-1. 把目录清晰度、日志量与成功率降为摘要指标。
-2. 把 `anti_zombie_projection` 提升为正式通过条件。
-3. 任何只夸源码更漂亮、不验 anti-zombie 的结构 repair drill 都判为 drift。
 
 ## 6. reconnect 冒充 rollback 与假重入
 
@@ -170,11 +150,6 @@
 
 - rollback 应先绑定 authority object、recovery boundary 与 writeback path，再允许操作 pointer、reconnect 与 UI；re-entry 应先证明旧 writer 不会复活。
 
-### 改写路径
-
-1. 把 pointer 与 reconnect 降为回退动作，不再当回退对象。
-2. 把 `rollback_object + recovery_boundary + re_entry_condition` 提升为正式主对象。
-3. 任何只回退到旧路径并默认重入的结构 repair drill 都判为 drift。
 
 ## 7. 苏格拉底式追问
 

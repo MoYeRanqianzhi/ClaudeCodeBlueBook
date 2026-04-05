@@ -6,19 +6,19 @@
 
 它主要回答四个问题：
 
-1. 为什么 Host Implementation 检查点层之后还必须继续长出 implementation distortion casebook 层。
+1. 为什么 Host Implementation 检查点层之后仍需要单独讨论 implementation distortion casebook 层。
 2. 为什么宿主只看卡片、CI 只看通过、评审只看顺序、交接只看导出包，会让同一套检查点重新退回形式主义。
 3. 怎样把 Prompt、治理与结构三条线分别压成 host implementation 的实施级反例样本。
 4. 怎样用苏格拉底式追问避免把这层写成“抱怨团队执行力不够”。
 
 ## 1. Prompt host implementation 反例
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt 线明明已经有 authority source、assembly path、compiled request diff、stable bytes 与 handoff package，团队却仍会退回“卡片存在就算成立”“CI 通过就算稳定”“摘要包导出就算能交接”。
 - 为什么 Prompt 魔力已经进入 host implementation 层后，仍会再次退回 prompt 原文崇拜和总结崇拜。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `23`
 2. `../casebooks/16`
@@ -33,12 +33,12 @@
 
 ## 2. 治理 host implementation 反例
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理线明明已经有 decision window、control arbitration、Context Usage、rollback object 与 object-upgrade gate，团队却仍会退回“仪表盘转绿”“审批结束”“对象先继续再说”。
 - 为什么安全与省 token 的落地，最容易在实施层退回局部 KPI 与流程通过。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `23`
 2. `../casebooks/17`
@@ -53,12 +53,12 @@
 
 ## 3. 结构 host implementation 反例
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构线明明已经有 authoritative surface、recovery asset、anti-zombie gate、rollback boundary 与 retained assets，团队却仍会退回“门禁存在”“恢复通过”“危险路径口头交接”。
 - 为什么源码先进性一旦进入实施层，最容易退回“规则存在即可”“作者知道就行”。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `23`
 2. `../casebooks/18`

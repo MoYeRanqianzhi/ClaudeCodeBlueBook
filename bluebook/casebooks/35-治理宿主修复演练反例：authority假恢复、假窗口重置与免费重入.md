@@ -75,11 +75,6 @@
 
 - authority repair 应先恢复治理主权，再恢复 mode 投影。
 
-### 改写路径
-
-1. 把 mode 恢复降为投影级信号。
-2. 把 `authority_source_before/after + effective settings + writer chokepoint` 提升为通过前提。
-3. 任何只看 mode 恢复的治理 repair drill 都判为 drift。
 
 ## 3. stale ledger 漂白：ledger rebuild 退回审批历史
 
@@ -99,11 +94,6 @@
 
 - ledger rebuild 应恢复 formal reason，而不是恢复交互完成感。
 
-### 改写路径
-
-1. 把审批记录降为辅助材料。
-2. 把 `typed_decision + permission_ledger + pending request state` 提升为恢复主对象。
-3. 任何只恢复审批历史、不恢复 ledger 主权的治理 repair drill 都判为 drift。
 
 ## 4. 假窗口重置：decision window reset 退回仪表盘刷新
 
@@ -124,11 +114,6 @@
 
 - decision window reset 应先恢复同一窗口对象，再谈仪表盘变化。
 
-### 改写路径
-
-1. 把 usage 百分比与 compact 次数降为窗口投影。
-2. 把 `decision_window + pending_action + context_usage_snapshot` 提升为正式对象。
-3. 任何只看面板刷新的治理 window reset 都判为 drift。
 
 ## 5. 免费重入：continuation repricing 被默认继续篡位
 
@@ -149,11 +134,6 @@
 
 - re-entry 应围绕 repricing 结果，而不是围绕“目前没被阻止”。
 
-### 改写路径
-
-1. 禁止“还没报错”充当重入资格。
-2. 把 `continuation_gate + token_budget_result + re_entry_condition` 提升为正式进入门。
-3. 任何默认重入的治理 repair drill 都判为 drift。
 
 ## 6. 伪回滚：rollback object 退回 mode/file 动作
 
@@ -170,11 +150,6 @@
 
 - rollback 应先绑定对象边界，再落到 mode、文件与流程动作。
 
-### 改写路径
-
-1. 把 mode toggle、file rewind 与 compact 触发降为次级动作。
-2. 把 `rollback_object + baseline_reset_required + re_entry_condition` 提升为回滚主对象。
-3. 任何只剩 mode / 文件回滚的治理 rollback 都判为 drift。
 
 ## 7. 苏格拉底式追问
 

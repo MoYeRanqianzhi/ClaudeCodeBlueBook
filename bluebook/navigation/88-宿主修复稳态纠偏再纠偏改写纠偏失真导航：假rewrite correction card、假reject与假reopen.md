@@ -6,7 +6,7 @@
 
 它主要回答六个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏改写纠偏执行层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写纠偏失真反例层”。
+1. 为什么宿主修复稳态纠偏再纠偏改写纠偏执行层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写纠偏失真反例层”。
 2. 为什么 Prompt 线如果不继续指出假 `rewrite correction card`、假 `section registry`、假 `dynamic boundary` 与假 `threshold liability`，就会把 Prompt 魔力重新退回 rewrite prose、summary handoff 与未综合的子 Agent prose。
 3. 为什么治理线如果不继续指出假 authority chain、假 classifier pricing、假 writeback seam、免费继续回魂与假 `threshold rebinding`，就会把安全设计与省 token 设计重新拆回 mode 面板、usage dashboard 与运营感觉。
 4. 为什么结构线如果不继续指出假 authority surface、假 fresh merge、假 transport boundary、假 fail-closed worktree 与假 `reopen liability`，就会把源码先进性重新退回 pointer 健康感、telemetry 转绿与架构说明书。
@@ -15,12 +15,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写纠偏失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt steady-state correction-of-correction rewrite correction execution 明明已经有 `rewrite correction card`、`section registry reseal`、`dynamic boundary rebinding` 与 `threshold liability drill`，仍会重新退回假 `rewrite correction card`、假 `section registry`、假 `dynamic boundary` 与假 `threshold liability`。
 - 哪些“看起来只是 rewrite correction 写得更完整了”的信号，其实正在把 `compiled request truth` 重新退回 rewrite prose、summary handoff、UI 历史与默认继续。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/58`
 2. `../playbooks/62`
@@ -37,12 +37,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写纠偏失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理 steady-state correction-of-correction rewrite correction execution 明明已经有 `rewrite correction card`、classifier pricing、writeback seam 与 `threshold rebinding drill`，仍会重新退回假 authority chain、假 classifier pricing、假 writeback seam、免费继续回魂与假 `threshold rebinding`。
 - 哪些“看起来只是治理 rewrite correction 更严格了”的信号，其实正在让 authority、ledger、window、pricing、classifier 成本、writeback seam、liability 与 threshold 重新退回 mode 投影、usage dashboard 与默认继续。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/59`
 2. `../playbooks/63`
@@ -59,12 +59,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写纠偏失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构 steady-state correction-of-correction rewrite correction execution 明明已经有 `rewrite correction card`、fresh merge contract、transport boundary 与 `reopen liability drill`，仍会重新退回假 authority surface、假 fresh merge、假 transport boundary、假 fail-closed worktree 与假 `reopen liability`。
 - 哪些“看起来只是架构 rewrite correction 更整洁了”的信号，其实正在让 authority、single-source、lineage、fresh merge、anti-zombie、transport 与 reopen boundary 重新退回 pointer、telemetry、archive prose 与作者说明。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/60`
 2. `../playbooks/64`
@@ -110,27 +110,7 @@
 
 - beautified repair of the repair by disciplined rewrite correction
 
-## 5. 目录结构上的最小闭环
-
-从 `84` 到 `88`，这一段不该被看成五篇并列文章，而应被看成一条连续子循环：
-
-1. `84` 是再纠偏改写执行失真
-2. `85` 是再纠偏改写纠偏
-3. `86` 是再纠偏改写纠偏协议
-4. `87` 是再纠偏改写纠偏执行
-5. `88` 是再纠偏改写纠偏执行失真
-
-也就是说，`84-88` 这一段真正回答的是：
-
-- 执行如何重新说谎
-- 说谎后如何被固定顺序纠偏
-- 纠偏后如何压成共享 protocol
-- 共享 protocol 如何继续落成可执行 `rewrite correction card`
-- 可执行 `rewrite correction card` 又怎样重新退回更体面的失真
-
-从更长的主线看，`74-88` 现在应被视为一条连续小循环，而不是十五篇并列文章。
-
-## 6. 第一性原理与苏格拉底式自检
+## 5. 第一性原理与苏格拉底式自检
 
 在你准备宣布“宿主修复稳态纠偏再纠偏改写纠偏执行已经稳定”前，先问自己：
 

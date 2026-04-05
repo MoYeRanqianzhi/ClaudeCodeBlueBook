@@ -1,6 +1,6 @@
 # 开发与记忆文档
 
-`docs/` 只放研究过程、长期记忆和版本记录，不承载蓝皮书正文。当前目录由根目录 2 篇文档、`development/` 下 6 篇开发材料，以及 `development/security/` 下 3 篇安全专题隔离记忆文档组成。
+`docs/` 只放研究过程、长期记忆和版本记录，不承载蓝皮书正文。正文去记忆化批次、目录治理调整、待办候选与研究推进摘要也统一留在这里。当前目录由根目录 2 篇文档、`development/` 下 6 篇开发材料，以及 `development/security/` 下 3 篇安全专题隔离记忆文档组成。
 
 ## 当前内容
 
@@ -20,6 +20,7 @@
 - 想看正式蓝皮书正文：去 [../bluebook/README.md](../bluebook/README.md)
 - 想确认研究方法、证据边界、写作约束或演进记录：留在 `docs/`
 - 想知道当前还缺什么证据或后续该补什么：看 `development/research-log.md`
+- 想确认哪些内容刚被从正文迁出、为什么迁出：先看 `changelog.md` 与 `development/long-term-memory.md`
 
 ## 维护约定
 

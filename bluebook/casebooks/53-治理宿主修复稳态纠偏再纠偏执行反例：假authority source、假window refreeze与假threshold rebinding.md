@@ -77,11 +77,6 @@
 
 - `reject verdict` 应先绑定 authority source 与 writer chokepoint，再宣布 `steady_state_restituted`。
 
-### 改写路径
-
-1. 把 mode 与 dashboard 绿灯降为投影信号。
-2. 把 `authority_source_restitution + authority_source_after + writer_chokepoint` 提升为前提。
-3. 任何没有 formal authority object 仍宣布 restored 的治理 recorrection 都判为 drift。
 
 ## 3. 假window refreeze：window truth by dashboard
 
@@ -101,11 +96,6 @@
 
 - `Context Usage` 必须被继续当作 `decision window` 的正式投影，而不是 verdict 本身。
 
-### 改写路径
-
-1. 把 usage 百分比降为观察信号。
-2. 把 `decision_window + context_usage_snapshot + reserved_buffer` 提升为正式对象。
-3. 任何“图表回落即视为 window 已 refreeze”的治理 recorrection 都判为 drift。
 
 ## 4. 假责任托管：liability by ops note
 
@@ -126,11 +116,6 @@
 
 - capability liability 应继续被当作正式对象，而不是背景告警与值班注释。
 
-### 改写路径
-
-1. 把托管说明降为操作层信号。
-2. 把 `capability_release_scope + rollback_object + custody_owner + liability_owner` 提升为正式对象。
-3. 任何把 recustody 当备注处理的治理 recorrection 都判为 drift。
 
 ## 5. 免费继续回魂与假threshold rebinding：repricing by inertia
 
@@ -152,11 +137,6 @@
 
 - continuation 与 threshold 必须同时重新生效；没有 threshold，就只能 `hard_reject`、`liability_hold`、`reentry_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 禁止“还没报错”充当继续资格。
-2. 把 `continuation_pricing_rebinding + settled_price + authority_drift_trigger + threshold_retained_until` 提升为正式对象。
-3. 任何默认继续、却不再正式保留 threshold 的治理 recorrection 都判为 drift。
 
 ## 6. 苏格拉底式追问
 

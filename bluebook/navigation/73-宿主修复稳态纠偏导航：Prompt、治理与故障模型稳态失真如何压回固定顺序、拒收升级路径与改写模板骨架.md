@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态失真反例层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏层”。
+1. 为什么宿主修复稳态失真反例层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏层”。
 2. 为什么 Prompt 线如果不继续把假稳态、前缀托管表演与无阈值继续压回固定顺序，就会重新把 Prompt 魔力退回 summary、平静感与 continuation 幻觉。
 3. 为什么治理线如果不继续把假稳态、能力托管表演与免费继续复活压回固定顺序，就会重新把安全设计与省 token 设计拆成 mode 面板、usage dashboard 与经验式保守建议三套投影。
 4. 为什么结构线如果不继续把假稳态、归档托管表演与假边界保留压回固定顺序，就会重新把源码先进性退回 pointer、telemetry 转绿、archive prose 与作者说明。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把 Prompt steady-state execution 从假稳态、前缀托管表演与无阈值继续重新压回同一个 `compiled request truth`。
 - 哪些现象一旦出现，就说明 `truth continuity`、`stable prefix custody`、`continuation eligibility` 与 `reopen threshold` 已重新失配，必须直接 hard reject。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/75`
 2. `../casebooks/46`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把治理 steady-state execution 从假稳态、能力托管表演与免费继续复活重新压回同一个统一定价治理对象。
 - 哪些现象一旦出现，就说明 authority、ledger、window、pricing、custody 与 threshold 已重新退回 mode 投影、dashboard 投影与默认继续，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/76`
 2. `../casebooks/47`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把结构 steady-state execution 从假稳态、归档托管表演与假边界保留重新压回同一个结构真相面。
 - 哪些现象一旦出现，就说明 authority、resume、writeback、anti-zombie、archive 与 reopen reservation 已重新退回 pointer 健康感、side-write 健康感与作者兜底，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/77`
 2. `../casebooks/48`

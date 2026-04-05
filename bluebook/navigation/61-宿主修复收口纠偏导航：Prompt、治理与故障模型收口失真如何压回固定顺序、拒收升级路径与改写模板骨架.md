@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复收口失真反例层之后，蓝皮书还必须继续长出一层“宿主修复收口纠偏层”。
+1. 为什么宿主修复收口失真反例层之后，蓝皮书仍需要单独讨论“宿主修复收口纠偏层”。
 2. 为什么 Prompt 线如果不继续把假完成、假交接与假 reopen 压回固定顺序，就会重新把 Prompt 魔力退回 closeout 文案、summary handoff 与按钮式重开。
 3. 为什么治理线如果不继续把假关账、假交接与免费重开压回固定顺序，就会重新把安全设计与省 token 设计拆成 mode 面板、审批完成感与 token 图表三套投影。
 4. 为什么结构线如果不继续把假 seal、假交接与假重开压回固定顺序，就会重新把源码先进性退回 pointer、重连通过感、日志繁荣与作者说明。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复收口纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把 Prompt closeout execution 从假完成、假交接与假 reopen 重新压回同一个 `compiled request truth` 与 continuation object。
 - 哪些现象一旦出现就必须直接 hard reject，而不是继续观察。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/66`
 2. `../casebooks/37`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复收口纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把治理 closeout execution 从假关账、假交接与免费重开重新压回同一个统一定价治理对象。
 - 哪些现象一旦出现就说明 authority、ledger、window、continuation 与 rollback 已重新失配，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/67`
 2. `../casebooks/38`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复收口纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把结构 closeout execution 从假 seal、假交接与假重开重新压回同一个结构真相面。
 - 哪些现象一旦出现就说明 authority、writeback、anti-zombie 与 boundary closure 已重新退回假连续性，必须直接升级拒收。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/68`
 2. `../casebooks/39`

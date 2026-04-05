@@ -6,19 +6,19 @@
 
 它主要回答四个问题：
 
-1. 为什么 Artifact Drift casebook 层之后还必须继续长出 artifact validator / linter 层。
+1. 为什么 Artifact Drift casebook 层之后仍需要单独讨论 artifact validator / linter 层。
 2. 为什么真正成熟的校验，不是检查字段有没有填，而是检查 shared object 是否仍然连续。
 3. 怎样把 Prompt、安全/省 token 与结构演化三条线分别压成可执行闸门。
 4. 怎样用苏格拉底式追问避免把这层写成“又多了一套 checklist”。
 
 ## 1. Prompt Artifact Validator
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt 线不能停在“有样例、有反例”，而必须继续把 compiled request truth、stable bytes 与 lawful forgetting ABI 编译成硬拒收规则。
 - 为什么 Claude Code 的 Prompt 魔力进入工件层之后，仍要靠 validator 才能守住 shared object continuity。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `28`
 2. `../guides/39`
@@ -34,12 +34,12 @@
 
 ## 2. 治理 Artifact Validator
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理线不能停在“知道会退回状态色、计数与 verdict”，而必须继续把 decision window、arbitration truth、rollback object 与 next action 编译成 hard gate。
 - 为什么安全设计与省 token 设计到了工件层，必须共用同一套 validator 才不退回局部 KPI。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `28`
 2. `../guides/40`
@@ -55,12 +55,12 @@
 
 ## 3. 结构 Artifact Validator
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构线不能停在“知道会退回目录图、恢复成功率与作者说明”，而必须继续把 authoritative path、recovery asset ledger、anti-zombie evidence 与 handoff reject 编译成统一闸门。
 - 为什么源码先进性进入 artifact 层之后，仍要靠 validator 才能守住 shared structure object。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `28`
 2. `../guides/41`

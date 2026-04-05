@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复解除监护执行层之后，蓝皮书还必须继续长出一层“宿主修复解除监护失真反例层”。
+1. 为什么宿主修复解除监护执行层之后，蓝皮书仍需要单独讨论“宿主修复解除监护失真反例层”。
 2. 为什么 Prompt 线如果不继续指出静默放行、叙事放行与无责任 release，就会重新把 Prompt 魔力退回 watch note、handoff 故事与“最近没出事”。
 3. 为什么治理线如果不继续指出免责式出监、假清账与免费继续，就会重新把安全设计与省 token 设计拆回 mode 面板、usage dashboard 与经验式保守建议。
 4. 为什么结构线如果不继续指出假退休、归档表演与假保留重开，就会重新把源码先进性退回 pointer 健康感、监控转绿与作者记忆。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复解除监护失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Prompt 宿主修复解除监护执行明明已经有 release card、release verdict order、handoff release 与 residual reopen drill，团队仍会重新把它消费成 watch note、summary 交接与静默放行。
 - 哪些“看起来只是终于可以 released 了”的信号，其实正在重新制造 Prompt 第二真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/43`
 2. `../playbooks/47`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复解除监护失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么治理宿主修复解除监护执行明明已经有 release card、release verdict order、capability release 与 reopen liability drill，团队仍会重新把它消费成免责式出监、假清账与免费继续。
 - 哪些“看起来只是终于可以 capability released 了”的信号，其实正在重新免费化扩张。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/44`
 2. `../playbooks/48`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复解除监护失真线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么结构宿主修复解除监护执行明明已经有 release card、release verdict order、archive drill、boundary retirement 与 reopen reservation drill，团队仍会重新把它消费成假退休、归档表演与假保留重开。
 - 哪些“看起来只是终于可以停止值守”的信号，其实正在重新制造 split-brain、zombie 回魂与入口崇拜。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../casebooks/45`
 2. `../playbooks/49`

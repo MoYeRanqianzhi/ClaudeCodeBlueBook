@@ -67,11 +67,6 @@
 - 宿主应围绕 `get_settings.sources / effective / applied + permission_mode` 一起消费 authority source。
 - mode 是投影，authority source 才是对象。
 
-### 改写路径
-
-1. 把 `permission_mode` 降为 authority source 的外化字段。
-2. 把 settings 源与 applied runtime 结果提到主视图。
-3. 任何只围绕 mode 做治理判断的宿主都判为 drift。
 
 ## 3. pending action 降格成文案 vs decision window
 
@@ -90,11 +85,6 @@
 - 宿主应围绕 `pending_action` 的对象字段消费当前 decision window，而不是只展示一句提示。
 - 这也是为什么 `pending_action` 要进入 external metadata，而不是只留在 UI。
 
-### 改写路径
-
-1. 把 `pending_action` 的结构字段显式显示或传递。
-2. 让交接包和 CI 都引用同一个 pending action 对象。
-3. 任何把 pending action 消费成文案提示的宿主都判为 drift。
 
 ## 4. Context Usage 仪表盘化 vs decision window
 
@@ -113,11 +103,6 @@
 - Context Usage 必须继续与 state、pending action 一起消费成 decision window。
 - token 条只是结果投影，不是治理对象本身。
 
-### 改写路径
-
-1. 把 `Context Usage + pending_action + state` 固定成同一视图。
-2. 把 `percentage` 从主判断对象降为辅助指标。
-3. 任何只看 token 条的治理宿主都判为 drift。
 
 ## 5. continuation gate 默认化 vs时间定价
 
@@ -136,11 +121,6 @@
 - 宿主应围绕 continuation gate 的投影判断，而不是围绕“暂时还能跑”。
 - `Context Usage + state + pending action + stop/continue outcome` 才是当前时间边界的正式消费面。
 
-### 改写路径
-
-1. 禁止默认继续成为宿主策略。
-2. 把 continuation gate 显式写进交接和 CI。
-3. 任何不区分“可继续”和“应继续”的宿主都判为 drift。
 
 ## 6. rollback object 文件化 vs对象回退
 
@@ -159,11 +139,6 @@
 - 宿主应把 `rewind_files` 放在 rollback object 语义下消费，而不是当成文件工具。
 - rollback object 是治理对象，文件回退只是其实现路径之一。
 
-### 改写路径
-
-1. 在宿主里显式标出 rollback object。
-2. 把 file rewind 结果链接回当前 governance object。
-3. 任何把 rollback 退回文件列表的宿主都判为 drift。
 
 ## 7. 苏格拉底式追问
 

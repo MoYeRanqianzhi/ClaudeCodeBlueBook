@@ -78,11 +78,6 @@
 
 - `reject verdict` 应先绑定同一个 `governance_object_id + authority_source_after + permission_ledger_state`，再宣布 `steady_state_restituted`。
 
-### 改写路径
-
-1. 把 mode 与 dashboard 的平静感降为投影信号。
-2. 把 `governance_object_id + authority_source_after + typed_decision_digest + permission_ledger_state` 提升为前提。
-3. 任何只看“现在比较平静”就宣布 restored 的治理 rewrite execution 都判为 drift。
 
 ## 3. 假window repricing 与假reject顺序：verdict by usage calmness before price truth
 
@@ -103,11 +98,6 @@
 
 - `reject verdict order` 必须先证明 authority、window、pricing 与 liability 仍围绕同一个治理对象，再决定 `steady_state_restituted`、`hard_reject`、`liability_hold`、`reentry_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 把 usage 百分比与 dashboard 回落降为观察信号。
-2. 把 `decision_window + context_usage_snapshot + reserved_buffer + continuation_gate + settled_price + budget_policy_generation` 提升为正式对象。
-3. 任何“图表平了就算 repricing 完成”的治理 rewrite execution 都判为 drift。
 
 ## 4. 免费继续回魂与假threshold rebinding：repricing by inertia
 
@@ -130,11 +120,6 @@
 
 - continuation 与 threshold 必须同时重新生效；没有 threshold，就只能 `hard_reject`、`liability_hold`、`reentry_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 禁止“还没报错”充当继续资格。
-2. 把 `continuation_pricing_rebinding + settled_price + capability_release_scope + liability_owner + authority_drift_trigger + threshold_retained_until` 提升为正式对象。
-3. 任何默认继续、却不再正式保留 threshold 的治理 rewrite execution 都判为 drift。
 
 ## 5. 为什么这会同时毁掉安全设计与省 token 设计
 

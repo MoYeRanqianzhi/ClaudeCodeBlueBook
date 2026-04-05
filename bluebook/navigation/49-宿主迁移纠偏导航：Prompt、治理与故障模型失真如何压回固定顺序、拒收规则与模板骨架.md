@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主迁移失真层之后，蓝皮书还必须继续长出一层“宿主迁移纠偏层”。
+1. 为什么宿主迁移失真层之后，蓝皮书仍需要单独讨论“宿主迁移纠偏层”。
 2. 为什么 Prompt 线如果不继续压回 compiled request truth ledger、protocol truth、cache explainability 与 continue qualification，就会反复退回截图与摘要。
 3. 为什么治理线如果不继续压回 authority source、permission ledger、decision window、continuation gate 与 rollback object，就会反复退回 mode 面板与仪表盘。
 4. 为什么结构线如果不继续压回 authority state、resume 顺序、bridge pointer 边界、writeback 主路径与 anti-zombie 结果面，就会反复退回 pointer 崇拜与成功率崇拜。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主迁移纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把 Prompt 宿主迁移从伪交接、黑箱灰度与继续资格幻觉拉回同一个 `compiled request truth`。
 - 怎样把 Prompt 失真继续压成固定纠偏顺序、拒收规则与模板骨架。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/57`
 2. `../casebooks/28`
@@ -35,12 +35,12 @@
 
 ## 2. 治理宿主迁移纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把治理宿主迁移从权限账本缺席、假窗口对齐与免费继续幻觉拉回同一个统一定价控制面。
 - 怎样把治理失真继续压成固定纠偏顺序、拒收规则与模板骨架。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/58`
 2. `../casebooks/29`
@@ -56,12 +56,12 @@
 
 ## 3. 故障模型宿主迁移纠偏线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样把结构宿主迁移从伪恢复采纳、指针健康幻觉与写回真相分叉拉回同一个结构真相面。
 - 怎样把结构失真继续压成固定纠偏顺序、拒收规则与模板骨架。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../guides/59`
 2. `../casebooks/30`

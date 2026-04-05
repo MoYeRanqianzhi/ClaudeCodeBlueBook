@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复解除监护协议层之后，蓝皮书还必须继续长出一层“宿主修复解除监护执行层”。
+1. 为什么宿主修复解除监护协议层之后，蓝皮书仍需要单独讨论“宿主修复解除监护执行层”。
 2. 为什么 Prompt 线如果不继续压成 release card、release verdict order、handoff release 与 residual reopen drill，就会重新退回 watch note、交接叙事与静默放行。
 3. 为什么治理线如果不继续压成 release card、release verdict order、capability release 与 reopen liability drill，就会重新退回 mode 面板、usage dashboard 与经验式保守建议。
 4. 为什么结构线如果不继续压成 release card、release verdict order、archive drill、boundary retirement 与 reopen reservation drill，就会重新退回 pointer 健康感、监控转绿与作者记忆。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复解除监护执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么顺序宣布 Prompt 世界可以停止额外监护，而不是只看一段时间没有出事。
 - 哪些 release verdict 一旦出现就必须阻断 handoff、延长 watch 或进入 residual reopen drill。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/66`
 2. `../playbooks/47`
@@ -37,12 +37,12 @@
 
 ## 2. 治理宿主修复解除监护执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 团队到底该按什么顺序宣布治理控制面可以结束额外托管，而不是继续围绕面板颜色、token 图表与主观放心感判断。
 - 哪些 release verdict 一旦出现就说明 capability expansion 仍不能被放开，必须保留 reopen liability 或直接重开治理对象。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/67`
 2. `../playbooks/48`
@@ -60,12 +60,12 @@
 
 ## 3. 结构宿主修复解除监护执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 团队到底该按什么顺序宣布结构真相面可以结束额外盯防，而不是继续围绕 pointer、监控与作者口述判断。
 - 哪些 release verdict 一旦出现就说明 authority、writeback、archive 与 boundary 还没有真正稳定，必须阻断 handoff 或保留 reopen reservation。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/68`
 2. `../playbooks/49`

@@ -52,11 +52,6 @@
 - 先验证当前 authoritative path 是否真的唯一，再讨论规则是否存在。
 - authority surface 是活的运行时事实，不是静态命名标签。
 
-### 改写路径
-
-1. 所有结构卡片都强制附 current write path / read path。
-2. 评审先验 split-brain 是否消失，再看 authority 命名。
-3. 任何“surface 已点名但旧路径仍可写”的情况，都视为 implementation 失真。
 
 ## 2. 只看恢复通过 vs recovery asset ledger
 
@@ -75,11 +70,6 @@
 - 让恢复结果和 recovery asset ledger 一起消费。
 - 恢复判断必须同时回答：靠什么恢复、保留了什么、丢弃了什么。
 
-### 改写路径
-
-1. 恢复报告固定附 recovery asset ledger。
-2. retained assets、replacement log、dropped stale writers 成为固定列。
-3. 任何“恢复成功但说不清靠什么恢复”的情况，都视为 implementation 失真。
 
 ## 3. 只看 anti-zombie gate 存在 vs stale writer 已被清退
 
@@ -98,11 +88,6 @@
 - 让 anti-zombie gate 和 stale writer 清退证据一起消费。
 - 结构门禁必须回答哪些旧路径已死、哪些仍在观察、哪些触发立即回退。
 
-### 改写路径
-
-1. anti-zombie gate 固定附 dropped stale writers 列表。
-2. 再进入条件与 danger paths 同时写入 handoff。
-3. 任何“gate 存在但说不清旧路径是否还活着”的情况，都视为 implementation 失真。
 
 ## 4. 只交接危险路径口头说明 vs rollback object / retained assets
 
@@ -121,11 +106,6 @@
 - 先交付 rollback object、retained assets、projection set，再补作者解释。
 - danger paths 的价值在于约束未来回退，不在于展示作者经验。
 
-### 改写路径
-
-1. 交接模板固定列出 rollback object、retained assets、projection set。
-2. danger paths 必须挂在对象和资产之后。
-3. 任何“听懂了危险，但拿不到结构化包”的情况，都视为 implementation 失败。
 
 ## 5. 分角色各自通过 vs shared structure implementation object
 
@@ -149,11 +129,6 @@
   - retained assets
   - rollback object
 
-### 改写路径
-
-1. 为结构 implementation 固定 shared header。
-2. 宿主、CI、评审、交接都先消费这一 header。
-3. 任何 role-specific 视图都不得替代 shared header。
 
 ## 6. 苏格拉底式追问
 

@@ -6,19 +6,19 @@
 
 它主要回答四个问题：
 
-1. 为什么证据接口层之后还必须继续长出 shared evidence envelope 层。
+1. 为什么证据接口层之后仍需要单独讨论 shared evidence envelope 层。
 2. 为什么宿主、CI、评审与交接四类消费者不该各看各的报表。
 3. 为什么 Evidence Envelope 的核心不是“记录更多”，而是“共享同一套对象、窗口、字节与回退边界”。
 4. 怎样用苏格拉底式追问避免把这层写成更多 dashboard 或更多流程。
 
 ## 1. Prompt 线的 shared evidence envelope
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样让 Prompt Constitution 的升级真相同时被宿主、CI、评审与接手者消费，而不是分别看原文 prompt、cache break 报警和手工说明。
 - 怎样把 protocol truth、assembly diff、stable prefix、dynamic boundary 与 lawful forgetting 统一进同一 evidence envelope。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `20`
 2. `../architecture/77`
@@ -35,12 +35,12 @@
 
 ## 2. 治理与省 token 线的 shared evidence envelope
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样让宿主看到当前状态，CI 看到门禁结果，评审看到决策窗口，接手者看到回退边界，而四者仍共享同一套证据。
 - 怎样避免成本治理分别落成 token 图、审批日志、人工复盘三套彼此不对齐的材料。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `20`
 2. `../architecture/77`
@@ -57,12 +57,12 @@
 
 ## 3. 结构演化与交接线的 shared evidence envelope
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 怎样让 authoritative surface、recovery asset、anti-zombie gate 与 rollback object boundary 不只在源码里成立，还能被交接者和未来维护者沿同一顺序消费。
 - 怎样避免“作者知道哪里危险，后来者只看到提交记录”的断层。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `20`
 2. `../architecture/77`

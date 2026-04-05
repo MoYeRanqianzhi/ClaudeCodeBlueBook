@@ -6,6 +6,259 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/claude-code-risk-analysis`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮目录治理重点: 继续把 `bluebook/` 正文中的开发记忆迁回 `docs/`，当前已完成 `casebooks/` 的 `改写路径` 整体迁出与 `navigation/` 入口语言稳态化。
+- 本轮新增研究收束: 已把并行 Agent 的三条独立研究线压成 `architecture/82-84` 三张控制面图，分别覆盖请求装配、反扩张治理与权威面/反僵尸结构。
+- 本轮主线回收动作: 已继续把 `architecture/82-84` 上提为 `bluebook/09` 与 `philosophy/84-86`，避免高阶结论只停留在深层专题。
+- 本轮模板化动作: 已继续把三张控制面图下沉为 `guides/99-101` 三篇高阶苏格拉底审读模板，并通过 `navigation/15` 与 `navigation/42` 回收到稳定路由。
+- 本轮运行手册化动作: 已继续把三张控制面图下沉为 `playbooks/77-79` 三篇长期验证手册，并通过 `navigation/39` 回收到持续回归路由。
+- 本轮反例化动作: 已继续把三张控制面图的长期验证失真压成 `casebooks/73-75`，并通过 `navigation/40` 把“基础失真”与“验证失真”重新分层。
+- 本轮方法论动作: 已新增 `guides/102`，并同步升级 `navigation/07`、`navigation/15`、`navigation/41` 与 `guides/30`，把“公开镜像源码质量研究协议”补成稳定入口。
+- 本轮哲学收束动作: 已新增 `philosophy/87`，把源码质量线从“结构为什么先进”继续收束到“怎样判断先进才算稳”。
+- 主分支同步检查: `2026-04-06` 在仓库根执行 `git fetch origin && git pull --ff-only`，结果为 `Already up to date.`；当前本地 `main` 领先 `origin/main` 6 个提交，因此本轮不改主分支，只在 `mainloop` 内推进。
+
+### A081. 源码质量线继续深化后，最值钱的补层不是再赞美结构，而是把“判断标准”本身升级为第一性原理
+
+- `philosophy/80`、`83`、`86` 已经分别解释了 future maintainer 为什么是正式消费者、故障模型为什么先于模块美学进入结构、以及为什么真正先进的内核更会阻止过去写坏现在；但这三层仍主要在回答“为什么先进”，还没有正式回答“怎样判断先进才算稳”。
+- 公开镜像条件下，最容易失真的不是结论不够多，而是判断标准本身退回目录体感与文件大小体感。于是“热点文件是否很大”“目录是否够碎”“README 是否解释得通”这些低阶信号，会冒充源码质量判断本身。
+- 这意味着源码质量线必须再长出一层更高阶收束：真正成熟的判断，不是文件更小，而是复杂度有合法席位、边界可证、future maintainer 可独立 reject、系统每次增长后仍保留下一次重构自己的可能性。也就是说，先进性不只是一种结构状态，更是一种可继续演化的判断协议。
+- `README`、`Task.ts`、`tasks.ts`、`controlSchemas.ts`、`query/config.ts`、`query/deps.ts`、`QueryGuard`、`sessionIngress` 与前面已经固化的 `guides/102` 共同说明：源码质量判断必须同时看 `contract / registry / authoritative surface / adapter subset / hotspot kernel / gap discipline` 与 `dependency honesty / temporal honesty`。如果不同时看这两条轴，系统就会在静态结构和时间结构上分别撒谎。
+- 这也解释了为什么 `philosophy/87` 比继续补一篇“源码很强”的扩写更值钱：它把合法复杂度中心和下一次重构仍有路，正式提升为判断标准本身，而不只是附带观察。
+
+证据:
+
+- `claude-code-source-code/README.md:250-290`
+- `claude-code-source-code/src/Task.ts:6-124`
+- `claude-code-source-code/src/tasks.ts:1-39`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-240`
+- `claude-code-source-code/src/query/config.ts:1-43`
+- `claude-code-source-code/src/query/deps.ts:1-37`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+
+### A082. 三条母线继续上升一层后，可以被压成三句彼此对称的高阶判断
+
+- Prompt 线的更高阶收束不是“更会写指令”，而是“更会让主权链、历史链与继续链都对同一个世界保持诚实”。这解释了为什么 authority chain、protocol transcript、lawful forgetting、fork reuse 与 cache break explainability 必须被同时看作 Prompt 真相的一部分，而不是外围实现细节。
+- 治理线的更高阶收束不是“更会拦截”，而是“更会规定一切扩张怎样按同一价格秩序合法进入当前世界”。这让 `trusted inputs`、`typed ask`、`deferred visibility`、`externalization`、`continuation pricing` 与失败语义重新回到同一 admission order，而不是权限系统与压缩系统两套支线。
+- 源码质量线的更高阶收束不是“更会赞美先进结构”，而是“更会判断复杂度有没有合法席位、边界能否被正式证明、系统是否仍保留下一次重构自己的可能性”。这让 `legal complexity center`、`contract/registry/authoritative surface` 梯度、`dependency honesty / temporal honesty` 与 `future maintainer rejectability` 被正式提升为判断标准本身。
+- 这三句一起看，会把 Claude Code 的设计哲学重新压回一组对称约束：
+  - Prompt 线处理“什么配进入模型”。
+  - 治理线处理“什么配进入当前世界”。
+  - 源码质量线处理“过去与复杂度怎样不得偷走当前世界的真相与未来重构能力”。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
+- `claude-code-source-code/src/utils/managedEnv.ts:93-220`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:472-716`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/README.md:250-290`
+- `claude-code-source-code/src/query/config.ts:1-43`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+
+### A080. 公开镜像条件下的源码质量判断，最值钱的不是再夸先进性，而是先把证据分级协议写清楚
+
+- 公开镜像研究最危险的失败方式，不是证据太少，而是把 `contract truth`、`registry truth`、`authoritative surface truth`、`adapter subset truth`、`hotspot kernel truth` 与 `mirror gap` 脑补成同一层；这会让“类型里声明存在”“当前 build 已注册”“某宿主实装了子集”“某热点文件正在维护 invariant”与“README 明说没公开的东西”互相偷换。
+- `Task.ts`、`tasks.ts`、`controlSchemas.ts`、`bridgeMain` linear subset 注释、`query/config.ts`、`query/deps.ts`、`QueryGuard` 与 `sessionIngress` 共同说明，更稳的阅读顺序必须固定为 `contract -> registry -> authoritative surface -> adapter subset -> hotspot kernel -> mirror gap discipline`，而不是先冲进 `query.ts` / `main.tsx` 再从实现猜全貌。
+- 这也意味着“大文件判坏”本身是不稳的：`query.ts`、`main.tsx`、`attachments.ts` 这类热点文件必须区分为“合法复杂度中心”和“散落式复杂性”；前者是在集中维护 runtime invariant，后者才是结构退化。
+- 公开镜像里的源码质量不能只看 `dependency honesty`，还必须同时看 `temporal honesty`。如果只看 import 图、seam、single-source，很容易高估静态分层；如果不看 stale snapshot、stale writer、recovery asset non-sovereignty 与 present-state protection，就会低估时间维度里的第二真相生产。
+- 这解释了为什么 `guides/102` 比继续补一篇新的源码赞美哲学文更值钱：现有 `philosophy/76`、`86` 已经给出高阶判断，但还缺一篇方法文把“如何稳当地得到这些判断”写成正式协议。
+- 这也解释了为什么目录结构要继续优化：`navigation/07` 应负责方法线收束，`navigation/15` 应负责自我校准问题链，`navigation/41` 应负责第一性原理回读；旧 Prompt 审读页 `guides/30` 则应退回桥接位，不再和 `guides/99` 争主入口。
+
+证据:
+
+- `claude-code-source-code/README.md:250-290`
+- `claude-code-source-code/src/Task.ts:6-124`
+- `claude-code-source-code/src/tasks.ts:1-39`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-240`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:2799-2810`
+- `claude-code-source-code/src/query/config.ts:1-43`
+- `claude-code-source-code/src/query/deps.ts:1-37`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+
+### A078. 三张控制面图的长期验证之后，最值钱的补层是“验证失真层”，而不是继续把伪验证写回正文
+
+- 请求装配控制面一旦进入长期验证，最危险的失败方式就不再只是 `casebooks/22` 那种“多重 request truth”，而是 `playbooks/77` 明明已经存在，团队却仍把 authority chain 壁纸、display transcript、summary prose 与相似结果误当成同一个 request object 仍成立；这说明 Prompt 魔力真正需要补齐的不是更多正向解释，而是新的验证失真反例层 `casebooks/73`。
+- `buildEffectiveSystemPrompt()`、`normalizeMessagesForAPI()`、`ensureToolResultPairing()`、`sessionMemoryCompact`、`forkedAgent` 与 `promptCacheBreakDetection` 共同说明，请求装配控制面真正保护的是 authority、protocol、continuation 与 cache-safe fork 的同一对象链，而不是更顺的 Prompt 材料；这也说明 `navigation/40` 应该把 `22` 视为基础失真，把 `73` 视为验证失真，而不是继续把两类坏解法混成一层。
+- 当前世界准入主权一旦进入长期验证，最危险的失败方式就不再只是 `casebooks/23` 那种 mode / dashboard 崇拜，而是 `playbooks/78` 明明已经存在，团队却仍把 low-trust expansion、modalized ask、free visibility、cosmetic externalization 与 free continuation 误当成“更成熟的治理”；这说明安全设计与省 token 设计真正需要补齐的不是更多审批措辞，而是新的验证失真反例层 `casebooks/74`。
+- `managedEnv`、`settings` merge、`permissionSetup`、`interactiveHandler`、`toolSearch`、`toolResultStorage` 与 `checkTokenBudget()` 共同说明，治理真正保护的是 trusted inputs、typed ask、visibility pricing、externalization 与 continuation gate 的同一统一定价对象，而不是更平静的 dashboard；这也说明 `navigation/40` 应该把 `23` 视为基础失真，把 `74` 视为验证失真。
+- one writable present 一旦进入长期验证，最危险的失败方式就不再只是 `casebooks/24` 那种多点权威与 recovery asset 篡位，而是 `playbooks/79` 明明已经存在，团队却仍把 health projection、reconnect 成功、恢复成功率、目录整洁度与作者记忆误当成 current truth 还只有一个写入面；这说明源码先进性真正需要补齐的不是更多结构赞美，而是新的验证失真反例层 `casebooks/75`。
+- `QueryGuard`、`sessionIngress`、`bridgePointer`、`task/framework`、`WorkerStateUploader` 与 `worktree` guards 共同说明，结构先进性真正保护的是 single-writer authority、recovery asset 非主权、anti-zombie 证据、release surface 分层与 later maintainer rejectability，而不是更像健康系统的投影；这也说明 `navigation/40` 应该把 `24` 视为基础失真，把 `75` 视为验证失真。
+- 这也意味着正文和记忆层必须继续分开：`navigation/39` / `navigation/40` 只保留稳定阅读顺序与对象级分层，当前轮次、主分支同步结果、批次推进与后续候选统一回写 `docs/development/*`，不再重新塞回正文。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
+- `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:483-698`
+- `claude-code-source-code/src/utils/managedEnv.ts:93-220`
+- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:472-716`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+
+### A079. 并行 Agent 复核后，Prompt 魔力、安全/省 token、源码先进性三条母线可继续固化成三条稳定判断规则
+
+- Prompt 魔力可以继续被压成一条稳定对象链：`authority chain -> section registry -> dynamic boundary -> protocol transcript -> lawful forgetting -> cache-safe forks`；它保护的不是更强的 system prompt，而是“同一个世界如何合法进入模型并继续成立”。这意味着以后只要讨论“Prompt 怎么突然不灵了”，优先回到对象链排查，而不是先回到 wording、tone 与 summary 解释。
+- `systemPromptSections`、`SYSTEM_PROMPT_DYNAMIC_BOUNDARY`、`normalizeMessagesForAPI()`、`ensureToolResultPairing()`、`sessionMemoryCompact`、`forkedAgent` 与 `promptCacheBreakDetection` 共同说明，Prompt 真相包含 section constitution、protocol legality、continuation identity 与 cache invalidation law；cache / invalidation 不是性能 trivia，而是 Prompt 宪法的一部分。
+- 安全设计与省 token 设计可以继续被压成一张统一定价控制面：trusted inputs、typed ask、deferred visibility、externalization 与 continuation pricing 不是五个并列技巧，而是同一个 admission sovereignty object 的五个可验证切面。这意味着以后不要再把“权限系统”和“压缩系统”当成两条相互权衡的支线。
+- `managedEnv`、`settings` merge、`permissionSetup`、`interactiveHandler`、`toolSearch`、`toolResultStorage`、`analyzeContext` 与 `checkTokenBudget()` 共同说明，Claude Code 真正在定价的是 action、visibility、context seat 与 continuation time 四类扩张，而不是只在“更谨慎”和“更省 token”之间做气质取舍。
+- 源码先进性的最强信号不是文件更小，而是合法复杂度中心、依赖图诚实、时间诚实与 future maintainer rejectability。即使热点文件存在，只要它们是 contract-first、runtime-first、invariant-first 的合法复杂度中心，且周围 seam 仍然诚实，这种复杂度就是被治理过的复杂度，不是失控复杂度。
+- 这也意味着后续如果还要继续写正文，最值钱的候选不是再补“源码质量很高”的赞美，而是把“合法复杂度中心”“源码证据梯度”“future-maintainer control plane”压成更正式的 architecture / guides / philosophy 新层；而本轮持久化记忆只需先固定这三条稳定判断规则，不把新的候选前向入口写回正文。
+
+证据:
+
+- `claude-code-source-code/src/constants/systemPromptSections.ts:16-65`
+- `claude-code-source-code/src/constants/prompts.ts:114-176`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
+- `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
+- `claude-code-source-code/src/utils/managedEnv.ts:93-220`
+- `claude-code-source-code/src/utils/settings/settings.ts:319-520`
+- `claude-code-source-code/src/utils/toolSearch.ts:385-704`
+- `claude-code-source-code/src/utils/toolResultStorage.ts:740-860`
+- `claude-code-source-code/src/utils/analyzeContext.ts:918-1382`
+- `bluebook/architecture/38-Contract优先、运行时底盘与公开镜像缺口.md`
+- `bluebook/architecture/63-可演化内核：Claude Code如何在持续增长中维持不变量.md`
+- `bluebook/architecture/69-源码即治理界面：注释、命名与显式边界如何降低误改成本.md`
+- `bluebook/architecture/72-未来维护者消费者控制面：风险命名、制度注释、seam与状态机如何共同服务演化.md`
+- `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`
+
+### A074. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议层
+
+- Prompt refinement correction refinement execution distortion 即使已经被 `guides/96` 压成 authority、compiled request truth、registry/protocol truth、shared reject semantics、lawful forgetting / continuation qualification 与 liability 的固定纠偏顺序，如果团队不能继续把这些顺序压成宿主可消费的 protocol object，Prompt 魔力就仍会继续围绕 transcript、handoff 与 worker prose 工作；这说明 Prompt 线下一层最值钱的不是继续补 guide 口号，而是把 refinement correction refinement fixed order 压成新的 API/protocol layer。
+- Governance refinement correction refinement execution distortion 即使已经被 `guides/97` 压成 authority、ledger/window、pricing object、classifier/writeback/ingress、shared reject semantics 与 liability 的固定纠偏顺序，如果团队不能继续把这些顺序压成宿主可消费的统一定价 protocol object，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与审批 calmness 工作；这说明治理线下一层最值钱的不是继续补模板，而是把 refinement correction refinement fixed order 压成新的 API/protocol layer。
+- Structure refinement correction refinement execution distortion 即使已经被 `guides/98` 压成 authority stream、lineage/fresh merge、single-source writeback、anti-zombie/transport/fail-closed、shared reject semantics 与 liability 的固定纠偏顺序，如果团队不能继续把这些顺序压成宿主可消费的 structure protocol object，源码先进性就仍会继续围绕 pointer、telemetry、reconnect 成功率与作者说明工作；这说明结构线下一层最值钱的不是继续补模板，而是把 refinement correction refinement fixed order 压成新的 API/protocol layer。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement fixed order 之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议层”：
+  - `navigation/102` 负责统一入口。
+  - `api/93-95` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement fixed order 的 protocol object、共同 reject 语义与长期 reopen 责任面。
+- 这也意味着 `98-102` 应被视为一条连续小循环，而不是五篇并列文章。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 API 名词，而是考虑新的 `playbooks/74-76`，把这些 refinement correction refinement protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+
+### A075. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行层
+
+- Prompt refinement correction refinement protocol 即使已经被 `api/93` 压成 `compiled request truth`、`protocol truth`、`shared reject semantics` 与 `long-horizon reopen liability` 的正式协议层，如果团队不能继续把这些对象运行成同一张 `compiled request card`、同一条 `shared reject order` 与正式 `reopen drill`，Prompt 魔力就仍会继续围绕 transcript、handoff 与 worker prose 工作；这说明 Prompt 线下一层最值钱的不是继续补 protocol 名词，而是把 compiled request ABI 压成新的 playbook execution layer。
+- Governance refinement correction refinement protocol 即使已经被 `api/94` 压成 `pricing object`、`classifier/writeback/ingress`、`shared reject semantics` 与 `long-horizon reopen liability` 的正式协议层，如果团队不能继续把 `authority -> action -> window -> continuation -> classifier -> reject -> writeback -> ingress` 运行成同一张 `pricing card`、同一条 `shared reject order` 与正式 `reopen drill`，安全设计与省 token 设计就仍会继续围绕 mode 面板、usage dashboard 与审批 calmness 工作；这说明治理线下一层最值钱的不是继续补对象定义，而是把统一定价对象压成新的 playbook execution layer。
+- Structure refinement correction refinement protocol 即使已经被 `api/95` 压成 `authority stream`、`lineage/fresh merge`、`single-source writeback`、`anti-zombie/transport/fail-closed`、`shared reject semantics` 与 `long-horizon reopen liability` 的正式协议层，如果团队不能继续把这些对象运行成同一张 `authority stream card`、同一条 `shared reject order` 与正式 `reopen drill`，源码先进性就仍会继续围绕 pointer、telemetry、reconnect 成功率与作者说明工作；这说明结构线下一层最值钱的不是继续补协议对象，而是把结构真相面压成新的 playbook execution layer。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement protocol 之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行层”：
+  - `navigation/103` 负责统一入口。
+  - `playbooks/74-76` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement protocol 的 `compiled request card / pricing card / authority stream card`、共同 `reject` 顺序与正式 `reopen drill`。
+- 这也意味着 `98-103` 应被视为一条连续小循环，而不是六篇并列文章。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 execution 口号，而是考虑新的 `casebooks/70-72`，把这些 protocol execution 最常怎样重新退回假 card、假 shared reject 与假 reopen liability 写成新的失真层。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/utils/messages.ts:1481-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-1318`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+
+### A076. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真层
+
+- Prompt refinement correction refinement execution 即使已经被 `playbooks/74` 压成 `compiled request card`、shared `reject order` 与正式 `reopen drill`，如果团队不能继续解释这些执行最常怎样重新退回 smooth transcript、handoff prose、worker prose、dynamic boundary 误读与 compact 乐观主义，Prompt 魔力就仍会继续围绕更像真相的解释材料工作；这说明 Prompt 线下一层最值钱的不是继续补执行口号，而是把 compiled request execution 写成新的 casebook/distortion layer。
+- `buildEffectiveSystemPrompt()`、`SystemPromptSection`、`toolToAPISchema()`、`normalizeMessagesForAPI()`、`ensureToolResultPairing()`、`checkTokenBudget()` 与 `promptCacheBreakDetection` 共同说明，Prompt 真相先是 authority、registry、tool contract、compiled request truth、protocol truth、lawful forgetting、continue qualification 与 cache break truth，而不是 smooth transcript；这也说明下一层最值钱的是解释这些对象最常怎样被伪造。
+- Governance refinement correction refinement execution 即使已经被 `playbooks/75` 压成 `pricing card`、shared `reject order` 与正式 `reopen drill`，如果团队不能继续解释这些执行最常怎样重新退回 calmer mode、usage dashboard、classifier 已跑过、pending action 消失与默认继续惯性，安全设计与省 token 设计就仍会继续围绕运营感觉工作；这说明治理线下一层最值钱的不是继续补执行口号，而是把 pricing execution 写成新的 casebook/distortion layer。
+- `control_request.can_use_tool`、`get_context_usage`、`checkTokenBudget()`、classifier pricing、`WorkerStateUploader` 与 `sessionIngress` 共同说明，安全与省 token 设计真正共享的是 authority、action、window、continuation、classifier 成本、writeback 与 ingress 的同一统一定价对象，而不是更保守的语气；这也说明下一层最值钱的是解释这种同构最常怎样被拆散。
+- Structure refinement correction refinement execution 即使已经被 `playbooks/76` 压成 `authority stream card`、shared `reject order` 与正式 `reopen drill`，如果团队不能继续解释这些执行最常怎样重新退回 pointer、telemetry、reconnect 成功率、目录整洁度与作者说明，源码先进性就仍会继续围绕更像先进系统的外观工作；这说明结构线下一层最值钱的不是继续补执行口号，而是把 authority stream execution 写成新的 casebook/distortion layer。
+- `QueryGuard`、`sessionIngress`、`sessionRestore`、`BridgePointerSchema`、`SSETransport`、`WorkerStateUploader` 与 `worktree` guards 共同说明，结构先进性真正成立于 authority、lineage、single-source、anti-zombie、transport boundary 与 fail-closed 的对象诚实，而不是 pointer 健康感与 reconnect 好运气；这也说明下一层最值钱的是解释这些对象最常怎样被更可读的健康投影取代。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution 之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真层”：
+  - `navigation/104` 负责统一入口。
+  - `casebooks/70-72` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution 的假 `compiled request card / pricing card / authority stream card`、假 shared `reject` 语义与假 `reopen liability` 反例。
+- 这也意味着 `98-104` 应被视为一条连续小循环，而不是七篇并列文章。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补反例标签，而是考虑新的 `guides/99-101`，把这些 execution distortion 重新压回固定 card 顺序、shared reject 升级路径与改写模板骨架。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
+- `claude-code-source-code/src/utils/api.ts:119-405`
+- `claude-code-source-code/src/utils/messages.ts:1481-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-619`
+- `claude-code-source-code/src/utils/permissions/permissions.ts:593-1318`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+
+### A077. 蓝皮书正文不应继续混入开发记忆层
+
+- 最近污染最重的不是主线 `00-08`，而是 `navigation/79-104` 这类递归子循环导航；这些文件经常把“当前已推进到哪”“下一步候选是什么”“这一段应被视为多少篇连续小循环”写进正文，结果把检索层写成了轮次记忆层。
+- 这类段落的问题不在于它们完全错误，而在于它们回答的是“作者这轮做到哪”，不是“读者此刻该理解什么”；所以它们应进入 `docs/development/*`，不应继续占据正文位置。
+- 正文真正稳定的部分应只保留四类内容：本篇回答/不回答什么、对象链与消费者顺序、第一性原理解释、苏格拉底式自检。
+- README 可以保留稳定索引、编号段和代表性入口，但不应继续携带“当前深层协议链推进到哪”“下一步前向入口是什么”这类开发记忆句式。
+- `navigation/04` 应成为这条规则的权威入口：`docs/` 承载进度、候选、版本、提交与开发过程；`bluebook/` 承载稳定结论、对象与方法。
+
+### A073. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏层
+
+- Prompt refinement correction refinement execution distortion 即使已经被 `casebooks/67` 写成假 `repair card`、假共同 `reject` 语义与假 `reopen liability` 的反例层，如果团队不能继续把这些失真压回固定 `refinement correction refinement order`、共同硬拒收项与 builder-facing 模板骨架，Prompt 魔力就仍会继续围绕 polished transcript、summary handoff、worker prose 与 wording 崇拜工作；这说明 Prompt 线下一层最值钱的不是继续补反例标签，而是把这些失真压成新的 guide layer。
+- `buildEffectiveSystemPrompt()`、`normalizeMessagesForAPI()`、`ensureToolResultPairing()`、`promptCacheBreakDetection` 与 `checkTokenBudget()` 共同说明，Prompt 真相先是 authority、compiled request truth、protocol truth、合法 forgetting 与继续资格对象，而不是 smooth transcript；这也说明下一层最值钱的是把这些对象重新压回固定修复顺序与共同 reject 升级路径。
+- Governance refinement correction refinement execution distortion 即使已经被 `casebooks/68` 写成假 `repair card`、假共同 `reject` 语义与假 `reopen liability` 的反例层，如果团队不能继续把这些失真压回固定 `refinement correction refinement order`、共同硬拒收项与 builder-facing 模板骨架，安全设计与省 token 设计就仍会继续围绕 calmer mode、usage dashboard、approval calmness 与默认继续惯性工作；这说明治理线下一层最值钱的不是继续补反例标签，而是把这些失真压成新的 guide layer。
+- `controlSchemas`、`pending_action`、`get_context_usage`、classifier telemetry、`sessionIngress` 与 `checkTokenBudget()` 共同说明，安全与省 token 设计真正共享的是同一个统一定价控制对象，而不是更保守的语气；这也说明下一层最值钱的是把被拆散的定价对象重新压回固定修复顺序。
+- Structure refinement correction refinement execution distortion 即使已经被 `casebooks/69` 写成假 `repair card`、假共同 `reject` 语义与假 `reopen liability` 的反例层，如果团队不能继续把这些失真压回固定 `refinement correction refinement order`、共同硬拒收项与 builder-facing 模板骨架，源码先进性就仍会继续围绕 pointer、telemetry、目录整洁度、reconnect 成功率与作者说明工作；这说明结构线下一层最值钱的不是继续补反例标签，而是把这些失真压成新的 guide layer。
+- `sessionRestore`、`cleanupStaleAgentWorktrees()`、`hasWorktreeChanges()`、`bridgePointer` 与 transport 边界共同说明，结构先进性真正成立于 authority、lineage、merge、single-source writeback、anti-zombie 与 fail-closed 的对象诚实，而不是 reconnect 好运气与 pointer 健康感；这也说明下一层最值钱的是把这些对象重新压回固定修复顺序。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution distortion 之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏层”：
+  - `navigation/101` 负责统一入口。
+  - `guides/96-98` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution distortion 的固定顺序、共同 reject 升级路径与 builder-facing 模板骨架。
+- 这也意味着 `98-101` 应被视为一条连续小循环，而不是四篇并列文章。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补 guide 口号，而是考虑新的 `api/93-95`，把这些固定 `refinement correction refinement order` 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
+
+### A072. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真层
+
+- Prompt refinement correction refinement execution 即使已经被 `playbooks/71` 压成共同 `repair card`、共同 `reject order` 与正式 `reopen drill`，如果团队不能继续解释这些执行最常怎样重新退回 smooth transcript、summary handoff、worker prose 与 wording 崇拜，Prompt 魔力就仍会继续围绕更像真相的解释材料工作；这说明 Prompt 线下一层最值钱的不是继续补执行口号，而是把精修执行写成新的 casebook/distortion layer。
+- `buildEffectiveSystemPrompt()`、`normalizeMessagesForAPI()`、`ensureToolResultPairing()`、`promptCacheBreakDetection` 与 `checkTokenBudget()` 共同说明，Prompt 真相先是 authority、protocol truth、合法 forgetting 与继续资格对象，而不是 smooth transcript；这也说明下一层最值钱的不是继续夸 Prompt 魔力，而是解释它最常怎样被伪造。
+- Governance refinement correction refinement execution 即使已经被 `playbooks/72` 压成共同 `repair card`、共同 `reject order` 与正式 `reopen drill`，如果团队不能继续解释这些执行最常怎样重新退回 calmer mode、usage dashboard、approval calmness、default continue 与 blurred liability owner，安全设计与省 token 设计就仍会继续围绕运营感觉工作；这说明治理线下一层最值钱的不是继续补执行口号，而是把精修执行写成新的 casebook/distortion layer。
+- `controlSchemas`、`pending_action`、`get_context_usage`、classifier telemetry、`sessionIngress` 与 `checkTokenBudget()` 共同说明，安全与省 token 设计真正共享的是“拒绝未定价扩张”的对象链，而不是更保守的语气；这也说明下一层最值钱的是解释这种同构最常怎样被拆散。
+- Structure refinement correction refinement execution 即使已经被 `playbooks/73` 压成共同 `repair card`、共同 `reject order` 与正式 `reopen drill`，如果团队不能继续解释这些执行最常怎样重新退回 pointer、telemetry、目录整洁度、reconnect 成功率与作者说明，源码先进性就仍会继续围绕更像先进系统的外观工作；这说明结构线下一层最值钱的不是继续补执行口号，而是把精修执行写成新的 casebook/distortion layer。
+- `sessionRestore`、`cleanupStaleAgentWorktrees()`、`hasWorktreeChanges()`、`bridgePointer` 与 transport 边界共同说明，结构先进性真正成立于 authority、lineage、merge、writeback、anti-zombie 与 fail-closed 的对象诚实，而不是 reconnect 成功率与 pointer 健康感；这也说明下一层最值钱的是解释这些对象最常怎样被伪像取代。
+- 这意味着蓝皮书在宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution 之后需要继续长出“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真层”：
+  - `navigation/100` 负责统一入口。
+  - `casebooks/67-69` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution 的假 `repair card`、假共同 `reject` 语义与假 `reopen liability` 反例。
+- 这也意味着 `98-100` 应被视为一条连续小循环，而不是三篇并列文章。
+- 这也意味着下一步如果还要继续深化，最值钱的候选不是继续补反例标签，而是考虑新的 `guides/96-98`，把这些失真重新压回固定顺序、共同 reject 升级路径与改写模板骨架。
+
+证据:
+
+- `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
+- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
+- `claude-code-source-code/src/utils/worktree.ts:1046-1172`
 
 ### A081. 载体家族宪法之后仍要继续分出制度理由：Claude Code 当前不只活在多宪法世界，还活在多理由世界；其中 plans family 已开始暴露 rationale drift
 

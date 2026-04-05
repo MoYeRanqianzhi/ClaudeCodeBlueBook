@@ -51,11 +51,6 @@
 - 先写 rollback object boundary，再看文件 diff。
 - 文件变更只作为执行痕迹，不能替代对象真相。
 
-### 改写路径
-
-1. 在结构 envelope 里固定 object type / object id / authority surface。
-2. 文件 diff 只能挂在对象之后，不得反过来定义对象。
-3. 评审与交接时禁止“只讲改了哪些文件，不讲回退哪个对象”。
 
 ## 2. 只看目录美观 vs authoritative surface
 
@@ -74,11 +69,6 @@
 - 先问 authority，再看目录。
 - 目录只是说明方式，authority surface 才是结构真相。
 
-### 改写路径
-
-1. 任何结构评审单都先列 authoritative surface。
-2. 目录图只能解释 authority，不得替代 authority。
-3. 不再用“拆得更细”直接推断“结构更先进”。
 
 ## 3. 只看恢复成功率 vs recovery asset ledger
 
@@ -96,11 +86,6 @@
 - 恢复指标必须和 recovery asset ledger 一起消费。
 - 只有既知道恢复结果，也知道靠哪些资产恢复，结构判断才成立。
 
-### 改写路径
-
-1. 在结构 envelope 里固定 recovery assets 栏。
-2. 成功率后面必须挂 retained assets / dropped stale writers。
-3. 任何“恢复成功但说不清靠什么恢复”的情况，都视为 envelope 失真。
 
 ## 4. 只靠作者记忆 vs retained assets / danger paths
 
@@ -119,11 +104,6 @@
 - 让 retained assets、danger paths、seam、rollback object 写进 envelope，而不是写在作者脑中。
 - 作者说明只能补充，不得替代结构证据。
 
-### 改写路径
-
-1. 把最危险的路径写进 risk naming 与 retained assets。
-2. 交接材料强制包含 rollback object 与 danger paths。
-3. 禁止只靠“问作者”完成结构接手。
 
 ## 5. 分裂消费 vs shared structure envelope
 
@@ -146,11 +126,6 @@
   - anti-zombie gate
   - rollback object boundary
 
-### 改写路径
-
-1. 为结构线固定 shared envelope header。
-2. 宿主、CI、评审、交接都先消费这一 header。
-3. 任何 consumer-specific 视图都不得替代 header 本体。
 
 ## 6. 苏格拉底式追问
 

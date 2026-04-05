@@ -74,11 +74,6 @@ Prompt 宿主修复稳态纠偏再纠偏执行最危险的，不是：
 
 - `reject verdict` 应先绑定同一个 recorrection object 与同一个 truth lineage，再宣布 `steady_state_restituted`。
 
-### 改写路径
-
-1. 把“卡已存在”降为次级信号。
-2. 把 `recorrection_object_id + restored_request_object_id + compiled_request_hash` 提升为恢复前提。
-3. 任何先看票据、后看对象的 Prompt recorrection 都判为 drift。
 
 ## 3. 假 protocol repair：repair by readable transcript
 
@@ -98,11 +93,6 @@ Prompt 宿主修复稳态纠偏再纠偏执行最危险的，不是：
 
 - protocol repair 必须围绕 protocol transcript、tool pairing 与 boundary 证明，而不是围绕 UI transcript 与 prose handoff。
 
-### 改写路径
-
-1. 把 UI transcript 与交接 prose 降为评审材料。
-2. 把 `protocol_transcript_health + tool_pairing_health + transcript_boundary_attested` 提升为正式对象。
-3. 任何“读起来更顺即视为 protocol 已修好”的 Prompt recorrection 都判为 drift。
 
 ## 4. 假 lawful forgetting reseal：forgetting by summary override
 
@@ -123,11 +113,6 @@ Prompt 宿主修复稳态纠偏再纠偏执行最危险的，不是：
 
 - lawful forgetting 必须围绕 boundary、preserved segment 与 override block，而不是围绕 summary readability。
 
-### 改写路径
-
-1. 把 compact 可读性降为观察材料。
-2. 把 `lawful_forgetting_boundary + preserved_segment_ref + summary_override_blocked` 提升为正式对象。
-3. 任何“摘要还能读就算遗忘合法”的 Prompt recorrection 都判为 drift。
 
 ## 5. 假 threshold liability：liability by polite note
 
@@ -149,11 +134,6 @@ Prompt 宿主修复稳态纠偏再纠偏执行最危险的，不是：
 
 - continuation 与 threshold liability 必须同时成立；没有 threshold，就只能 `hard_reject`、`truth_recompile_required`、`protocol_repair_required`、`reentry_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 禁止“还没报错”充当 continuation 资格。
-2. 把 `continue_qualification + threshold_liability_reinstatement + truth_break_trigger + rollback_boundary` 提升为硬条件。
-3. 任何阈值已失忆却仍继续放行的 Prompt recorrection 都判为 drift。
 
 ## 6. 苏格拉底式追问
 

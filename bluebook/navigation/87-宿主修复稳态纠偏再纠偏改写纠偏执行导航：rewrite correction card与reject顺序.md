@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复稳态纠偏再纠偏改写纠偏协议层之后，蓝皮书还必须继续长出一层“宿主修复稳态纠偏再纠偏改写纠偏执行层”。
+1. 为什么宿主修复稳态纠偏再纠偏改写纠偏协议层之后，蓝皮书仍需要单独讨论“宿主修复稳态纠偏再纠偏改写纠偏执行层”。
 2. 为什么 Prompt 线如果不把 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 运行成固定 `rewrite correction card`，Prompt 魔力就会重新退回 rewrite prose、summary handoff 与默认继续。
 3. 为什么治理线如果不把 authority、ledger、window、pricing、classifier 成本、writeback seam、capability liability 与 threshold 运行成固定 `rewrite correction card`，安全设计与省 token 设计就会重新退回 mode 面板、usage dashboard 与运营感觉。
 4. 为什么结构线如果不把 authority surface、single-source writeback seam、lineage、fresh merge、anti-zombie evidence、transport boundary、fail-closed worktree 与 reopen liability 运行成固定 `rewrite correction card`，源码先进性就会重新退回 pointer 健康感、telemetry 转绿、archive prose 与作者记忆。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写纠偏执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么固定顺序执行 `compiled request truth restitution`、`section registry reseal`、`dynamic boundary rebinding`、`protocol transcript repair`、`stable prefix reseal`、`lawful forgetting reseal`、`continuation requalification` 与 `threshold liability reinstatement`。
 - 哪些 `reject verdict` 一旦出现，就说明当前不是“rewrite correction 已完成”，而是应直接冻结 continuation、阻断 handoff 并进入 `re-entry / reopen`。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/62`
 2. `../api/81`
@@ -36,12 +36,12 @@
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写纠偏执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么固定顺序执行 authority chain、ledger、decision window、continuation pricing、classifier pricing、writeback seam、capability liability 与 threshold。
 - 哪些 `reject verdict` 一旦出现，就说明当前只是 mode 与 dashboard 再次看起来很平静，而不是治理控制面真的重新统一定价一切扩张。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/63`
 2. `../api/82`
@@ -58,12 +58,12 @@
 
 ## 3. 结构宿主修复稳态纠偏再纠偏改写纠偏执行线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、CI、评审与交接系统到底该按什么固定顺序执行 authority surface、single-source writeback seam、lineage、fresh merge、anti-zombie evidence、transport boundary、dirty-git fail-closed 与 reopen liability。
 - 哪些 `reject verdict` 一旦出现，就说明当前只是更制度化的健康叙事，而不是 later 维护者可独立消费的结构真相。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../playbooks/64`
 2. `../api/83`
@@ -97,26 +97,7 @@
 
 - rewrite correction execution playbook、reject order、drill set 与 `re-entry / reopen` drill
 
-## 5. 目录结构上的最小闭环
-
-从 `82` 到 `87`，这一段不该被看成六篇并列文章，而应被看成一条连续小循环：
-
-1. `82` 是再纠偏改写协议
-2. `83` 是再纠偏改写执行
-3. `84` 是再纠偏改写执行失真
-4. `85` 是再纠偏改写纠偏
-5. `86` 是再纠偏改写纠偏协议
-6. `87` 是再纠偏改写纠偏执行
-
-也就是说，`82-87` 这一段不该再被看成简单重复，而应被看成：
-
-- rewrite 对象如何进入执行
-- 执行如何重新说谎
-- 说谎后如何被固定顺序纠偏
-- 纠偏后如何压成共享 protocol
-- 共享 protocol 如何继续落成可执行 `rewrite correction card`
-
-## 6. 第一性原理与苏格拉底式自检
+## 5. 第一性原理与苏格拉底式自检
 
 在你准备宣布“宿主修复稳态纠偏再纠偏改写纠偏执行已经完整”前，先问自己：
 

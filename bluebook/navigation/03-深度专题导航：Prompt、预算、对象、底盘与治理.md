@@ -12,13 +12,13 @@
 
 ## 1. Prompt 深线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Claude Code 的 prompt 看起来像“有魔力”。
 - 为什么它不是抄一段 system prompt 就能复刻。
 - 为什么工具 ABI、mailbox、channel 输入、cache break 都和 prompt 强度有关。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `07-运行时契约、知识层与生态边界.md`
 2. `api/18-系统提示词、Frontmatter与上下文注入手册.md`
@@ -57,14 +57,14 @@
 
 ## 2. 反扩张与预算实现深线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么安全和省 token 不是两套系统。
 - 为什么治理设置、能力裁剪、budget continuation 与 prompt 稳定性应该放到同一张图里。
 - 为什么“省 token”首先在控制什么进入上下文，而不是在压缩句子。
 - 为什么运行时里需要多套预算机制，却仍共享同一第一性原理。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `architecture/19-安全分层、策略收口与沙箱边界.md`
 2. `architecture/21-消息塑形、输出外置与Token经济.md`
@@ -91,13 +91,13 @@
 
 ## 3. 权威真相深线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Claude Code 反复强调 single source of truth。
 - 为什么 mode、tool pool、schema、transcript path 这些地方不能让多个 feature 各自维护。
 - 为什么“宿主不该猜”最终会继续走向 authoritative surface。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `api/17-状态消息、外部元数据与宿主消费矩阵.md`
 2. `api/34-单一真相入口、权威状态面与Chokepoint手册.md`
@@ -117,13 +117,13 @@
 
 ## 4. 对象化深线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 workflow 不是脚本。
 - 为什么多 Agent 不是“多开几个线程”。
 - 为什么 worktree、task、session、mailbox 是正式对象，而不是临时手段。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `architecture/10-AgentTool与隔离编排.md`
 2. `architecture/25-会话持久化、TaskOutput与Sidechain恢复图.md`
@@ -141,13 +141,13 @@
 
 ## 5. 前台真相与治理输入深线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么前台不是 UI 皮肤，而是认知控制面。
 - 为什么治理开关不是部署尾巴，而是输入边界。
 - 为什么 channel 审批、外部消息 origin 和前台搜索真相应该共读。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `architecture/26-REPL前台状态机、Sticky Prompt与消息动作.md`
 2. `architecture/35-REPL transcript search、selection与scroll协同.md`
@@ -164,13 +164,13 @@
 
 ## 6. 远程恢复与失败语义深线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Claude Code 的远程恢复不能被压成“断线重连”。
 - 为什么 `401`、close code、epoch、timeout budget 与 env reconnect 必须一起看。
 - 为什么恢复期间主动 drop 消息，反而比“尽量不丢”更成熟。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `api/33-远程恢复、401与Close Code语义手册.md`
 2. `architecture/16-远程恢复与重连状态机.md`
@@ -184,13 +184,13 @@
 
 ## 7. 源码先进性深线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么热点大文件和成熟架构可以同时成立。
 - 为什么研究公开镜像时应该先找 contract，再看热点文件。
 - 公开镜像缺口到底该怎样被严谨叙述。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md`
 2. `architecture/20-源码质量、分层与工程先进性.md`
@@ -215,13 +215,13 @@
 
 ## 8. 可解释运行时深线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Claude Code 的 observability 不是调试附属层。
 - 为什么 `context usage`、`worker_status/external_metadata`、`cache break detection` 应该放在同一张图里。
 - 为什么一个成熟 runtime 必须能解释“模型看到了什么”“系统现在处于什么状态”“为什么前缀稳定或失稳”。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `api/32-Context Usage、Prompt预算与观测型宿主手册.md`
 2. `architecture/17-双通道状态同步与外部元数据回写.md`
@@ -240,13 +240,13 @@
 
 ## 9. 依赖图诚实性深线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 为什么 Claude Code 会刻意做 leaf module、anti-cycle seam、single-source file。
 - 为什么依赖图治理不是代码洁癖，而是 runtime 正确性工程。
 - 为什么有时宁可少一点 DRY，也要让 import 边说真话。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `architecture/41-叶子模块、扼流点与循环依赖切断法.md`
 2. `architecture/52-Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法.md`

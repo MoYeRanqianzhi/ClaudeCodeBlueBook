@@ -74,11 +74,6 @@ Prompt 宿主修复稳态执行最危险的，不是：
 
 - steady verdict 应先绑定同一个 request object 与同一个 truth lineage，再宣布 steady。
 
-### 改写路径
-
-1. 把“最近很稳”降为次级信号。
-2. 把 `truth_continuity + restored_request_object_id + compiled_request_hash + baseline_dormancy_seal` 提升为 steady 前提。
-3. 任何先看平静、后看对象的 Prompt steady 都判为 drift。
 
 ## 3. 前缀托管表演：custody by lucky summary
 
@@ -99,11 +94,6 @@ Prompt 宿主修复稳态执行最危险的，不是：
 
 - steady 应围绕 stable prefix boundary、compaction lineage 与 handoff continuity object，而不是让 summary prose 替代它们。
 
-### 改写路径
-
-1. 把 summary 文案与 handoff prose 降为评审材料。
-2. 把 `stable_prefix_custody + compaction_lineage + handoff_continuity_warranty` 提升为正式对象。
-3. 任何“解释成立即视为前缀仍被托管”的 Prompt steady 都判为 drift。
 
 ## 4. 无阈值继续：continuation without threshold
 
@@ -124,11 +114,6 @@ Prompt 宿主修复稳态执行最危险的，不是：
 
 - continuation 与 reopen threshold 必须同时成立；没有 threshold，就只能 `steady_state_blocked`、`reentry_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 禁止“还没报错”充当 continuation 资格。
-2. 把 `continuation_eligibility + reopen_threshold + rollback_boundary + truth_break_trigger` 提升为硬条件。
-3. 任何 threshold 已失忆却仍继续放行的 Prompt steady 都判为 drift。
 
 ## 5. handoff 连续性口头化：continuity 退回作者语气
 
@@ -148,11 +133,6 @@ Prompt 宿主修复稳态执行最危险的，不是：
 
 - handoff continuity 必须围绕 resume lineage 与 carry-forward object，而不是围绕作者语气与说明文字。
 
-### 改写路径
-
-1. 把作者说明降为上下文提示。
-2. 把 `handoff_continuity_warranty + resume_lineage_attested + author_memory_not_required` 提升为正式对象。
-3. 任何“作者已经解释过所以可以 steady”都判为 drift。
 
 ## 6. 苏格拉底式追问
 

@@ -53,11 +53,6 @@
 - 先证明当前 decision window，再解释仪表盘状态。
 - 仪表盘只是治理 implementation 的投影，不是判断的起点。
 
-### 改写路径
-
-1. 宿主状态卡固定显示 observed window 与 continuation policy。
-2. 任何“绿了”结论都必须回答当前还能改变什么判断。
-3. 缺 decision window 的 dashboard 一律视为局部真相。
 
 ## 2. 只看审批结束 vs control arbitration truth
 
@@ -76,11 +71,6 @@
 - 先验证 arbitration truth，再讨论审批体验。
 - ask / accept / reject 是事件表面，winner source 与 cancel path 才是制度真相。
 
-### 改写路径
-
-1. 审批记录固定附 arbitration trace。
-2. winner source、loser cancel、waiting time 变成固定列。
-3. 任何“审批结束但说不清谁赢了”的情况，都视为 implementation 失真。
 
 ## 3. 只看阈值安全 vs Context Usage / blocked state
 
@@ -99,11 +89,6 @@
 - 让 CI 同时消费成本阈值与 blocked state。
 - Context Usage 必须回答当前资源状态、阻塞状态与继续价值。
 
-### 改写路径
-
-1. CI 报告固定并排显示 percentage、breakdown、blocked state、pending action。
-2. near-capacity 与 diminishing returns 建议成为固定判读项。
-3. 任何“阈值安全但解释不了为什么还在卡住”的情况，都视为 implementation 失真。
 
 ## 4. 只看回退开关存在 vs rollback object / object-upgrade gate
 
@@ -122,11 +107,6 @@
 - 先定义 rollback object 与 object-upgrade 条件，再决定继续还是回退。
 - 回退开关是执行动作，不是制度真相本身。
 
-### 改写路径
-
-1. 所有治理交接都强制写 rollback object。
-2. object_upgrade_rule 触发后未执行视为硬失真。
-3. 任何“先继续再说”的默认策略都要被显式标红。
 
 ## 5. 分角色各自打勾 vs shared governance implementation object
 
@@ -151,11 +131,6 @@
   - rollback object
   - object-upgrade rule
 
-### 改写路径
-
-1. 为治理 implementation 固定 shared header。
-2. 宿主、CI、评审、交接都先消费这一 header。
-3. 任何 role-specific dashboard 都不得替代 shared header。
 
 ## 6. 苏格拉底式追问
 

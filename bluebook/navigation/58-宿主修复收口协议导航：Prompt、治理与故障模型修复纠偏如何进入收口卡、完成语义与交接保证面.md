@@ -6,7 +6,7 @@
 
 它主要回答五个问题：
 
-1. 为什么宿主修复纠偏层之后，蓝皮书还必须继续长出一层“宿主修复收口协议层”。
+1. 为什么宿主修复纠偏层之后，蓝皮书仍需要单独讨论“宿主修复收口协议层”。
 2. 为什么 Prompt 线如果不继续压成 restored request object、protocol truth witness、rollback witness 与 re-entry warranty 的正式收口协议，就会重新退回事故叙事、摘要 handoff 与默认继续。
 3. 为什么治理线如果不继续压成 authority settlement、ledger seal、window closure、continuation warranty 与 rollback clearance 的正式收口协议，就会重新退回 mode 恢复、面板刷新与默认继续。
 4. 为什么结构线如果不继续压成 authority seal、writeback seal、anti-zombie witness 与 boundary closure 的正式收口协议，就会重新退回 breadcrumb、重连通过感与日志繁荣。
@@ -14,12 +14,12 @@
 
 ## 1. Prompt 宿主修复收口协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、SDK、CI、评审与交接系统到底该围绕哪些正式对象宣布 Prompt 修复已经真正收口，而不是继续围绕修复说明与摘要故事判断。
 - 哪些 closeout verdict 一旦出现就说明 Prompt 世界还没有真正回到单一 `compiled request truth`。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/60`
 2. `../guides/63`
@@ -35,12 +35,12 @@
 
 ## 2. 治理宿主修复收口协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、SDK、CI、评审与交接系统到底该围绕哪些正式对象宣布治理修复已经真正收口，而不是继续围绕 mode、审批完成感与 token 图表补救判断。
 - 哪些 closeout verdict 一旦出现就说明统一定价控制面还没有真正回到同一个治理对象。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/61`
 2. `../guides/64`
@@ -56,12 +56,12 @@
 
 ## 3. 结构宿主修复收口协议线
 
-如果问题是：
+适合在这些问题下阅读：
 
 - 宿主、SDK、CI、评审与交接系统到底该围绕哪些正式对象宣布结构修复已经真正收口，而不是继续围绕 pointer、成功率、重连与作者说明判断。
 - 哪些 closeout verdict 一旦出现就说明结构真相面还没有真正回到同一个 authority object。
 
-建议顺序：
+稳定阅读顺序：
 
 1. `../api/62`
 2. `../guides/65`
