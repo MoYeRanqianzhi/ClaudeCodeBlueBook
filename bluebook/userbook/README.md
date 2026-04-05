@@ -38,6 +38,8 @@
   [04-专题深潜/16-IDE、Desktop、Mobile 与会话接续专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/16-IDE%E3%80%81Desktop%E3%80%81Mobile%20%E4%B8%8E%E4%BC%9A%E8%AF%9D%E6%8E%A5%E7%BB%AD%E4%B8%93%E9%A2%98.md)
 - 管理插件、MCP、skills、hooks 与 agents：
   [04-专题深潜/17-插件、MCP、技能、Hooks 与 Agents 运维专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/17-%E6%8F%92%E4%BB%B6%E3%80%81MCP%E3%80%81%E6%8A%80%E8%83%BD%E3%80%81Hooks%20%E4%B8%8E%20Agents%20%E8%BF%90%E7%BB%B4%E4%B8%93%E9%A2%98.md)
+- 分清 `claude ...` 本身的根入口、旗标与启动模式：
+  [04-专题深潜/18-CLI 根入口、旗标与启动模式专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/18-CLI%20%E6%A0%B9%E5%85%A5%E5%8F%A3%E3%80%81%E6%97%97%E6%A0%87%E4%B8%8E%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F%E4%B8%93%E9%A2%98.md)
 - 判断稳定面、灰度面和内部面：
   [03-参考索引/02-能力边界/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
 - 建立系统总图：
@@ -100,6 +102,7 @@
 - 账户、隐私、资格与升级
 - IDE、Desktop、Mobile 与会话接续
 - 插件、MCP、技能、Hooks 与 Agents 运维
+- CLI 根入口、旗标与启动模式
 
 适合已经知道自己要完成什么工作，并准备读长文专题的读者。
 
