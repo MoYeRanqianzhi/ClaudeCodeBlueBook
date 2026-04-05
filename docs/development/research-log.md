@@ -3,9 +3,34 @@
 ## 当前基线
 
 - 日期: `2026-04-06`
-- 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
+- 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/claude-code-risk-analysis`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+
+### A072. 安全遗忘与免责释放必须继续分层：Claude Code 会允许局部 forgetting，但仍坚持 same-session continuity、resume honesty 与 reopen liability
+
+- `security/150` 已经把 `finality` 与 `forgetting` 拆开，但如果继续往下追问，还会撞到更硬的一层：某些 trace 即使已经允许 forget，也不等于系统已经正式放弃同一责任线程的 resume、retry、reopen 与 future audit。Claude Code 在 `bridgePointer + bridgeMain + sessionRestore + conversationRecovery` 这组代码里已经把这条边界写出来了。
+- `bridgePointer` 不是普通缓存，而是 crash-recovery artifact：它在 session 创建后立即写入、会按 mtime 滚动刷新、stale / invalid 才清、`--continue` 甚至会跨 worktree 找 freshest pointer。这说明系统保留的不是“目录里一个文件”，而是“同一责任线程未来仍可被重新接回”的 continuity evidence。
+- `bridgeMain` 在 single-session、known session、non-fatal exit 时会主动跳过 `archive + deregister`，因为否则打印出来的 resume 命令会变成 lie；而在 reconnect failure 路径里，只有 fatal 才 clear pointer，transient 反而要保留 pointer，让下次再试继续成立。这说明源码作者并不把“这次结束了”或“这次失败了”自然解释成 release，而是要求更强的 dead truth。
+- `sessionRestore` 默认复用原 session ID、原 transcript、原 worktree、原 cost state；`conversationRecovery` 则把 interrupted turn 补成 `Continue from where you left off.`。这说明 Claude Code 默认把 resume 理解成 same-lineage continuation，而不是“旧责任自然蒸发后的新开局”。因此如果未来 cleanup protocol 继续升级，至少还要再长出一层比 forgetting 更强的 `liability release` grammar。
+- 这也意味着本轮最值钱的新文档不该只写一篇抽象长文，而应该同时长出：
+  - `security/151` 负责把 `forgetting != liability release` 讲成完整论证链。
+  - `security/appendix/135` 负责把 forgetting、resume-retained、liability-open、release-granted 压成速查矩阵。
+  - `security/source-notes/03` 负责把 `bridgePointer + sessionRestore + conversationRecovery` 这一簇源码边界单独留下，避免主线章节被证据堆死。
+- 这也意味着 `147-151` 应被视为一条连续 signer ladder，而不是五篇并列文章；它们共同回答的不是单一“完成”问题，而是 `receipt -> completion -> finality -> forgetting -> liability release` 这条逐层增强的安全声明链。
+
+证据:
+
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-34`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:56-113`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:115-180`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:1516-1535`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:2162-2174`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:2384-2407`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:2524-2540`
+- `claude-code-source-code/src/utils/sessionRestore.ts:318-365`
+- `claude-code-source-code/src/utils/sessionRestore.ts:403-487`
+- `claude-code-source-code/src/utils/conversationRecovery.ts:204-245`
 
 ### A071. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行层
 
