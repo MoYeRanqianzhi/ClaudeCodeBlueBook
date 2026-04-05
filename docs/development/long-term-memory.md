@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 公开镜像条件下的源码质量研究方法已继续收束成稳定方法文：
+  - `guides/102` 负责把 `contract -> registry -> authoritative surface -> adapter subset -> hotspot kernel -> mirror gap discipline` 压成正式证据分级协议。
+  - `navigation/07` 已补出“公开镜像证据分级方法线”，避免继续把源码质量讨论混成目录体感与大文件体感。
+  - `navigation/41` 已把 Prompt / 治理 / 源码先进性三条哲学线接回 `84/85/86`、`82/83/84`、`99-101`、`77-79` 的新主线，不再沿用旧的 `79-83` 路由。
+- 新的长期结论：
+  - 公开镜像里的源码质量判断必须先做证据分级，不能把声明存在、当前注册、宿主子集、热点实现与缺口脑补写成同一层真相。
+  - 源码质量必须同时看 `dependency honesty` 与 `temporal honesty`，否则会高估静态分层，低估 stale writer、recovery asset 与 current truth 漂移。
+  - `guides/30` 现在只应被当作旧 Prompt 术语到新请求装配控制面对象链的桥接页，不应继续和 `guides/99` 平行竞争主入口。
 - 三张控制面图的长期验证已补齐对应的验证失真层：
   - `casebooks/73` 负责请求装配控制面如何退回假 `authority chain`、假 `protocol transcript` 与假 `continuation object`。
   - `casebooks/74` 负责当前世界准入主权如何退回低信任扩权、假最小可见面与免费继续。

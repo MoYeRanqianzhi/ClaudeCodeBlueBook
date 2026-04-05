@@ -1,6 +1,6 @@
 # 使用专题
 
-`guides/` 当前有 101 篇编号文档，范围 `01-101`。本目录把源码研究翻成可执行的方法、模板、审读清单和构建手册，不重复产品说明文案。
+`guides/` 当前有 102 篇编号文档，范围 `01-102`。本目录把源码研究翻成可执行的方法、模板、审读清单和构建手册，不重复产品说明文案。
 
 ## 目录分层
 
@@ -10,7 +10,7 @@
 - `33-47`: Rollout ABI、Evidence Envelope、Host Implementation、Validator 与 Builder 蓝图。
 - `48-56`: Builder-facing 手册、统一蓝图与宿主迁移工单。
 - `57-80`: 宿主迁移失真、验收执行、修复、收口、监护、解除监护与稳态纠偏执行。
-- `81-101`: 再纠偏、改写纠偏、精修与三张控制面图对应的高阶审读模板。
+- `81-102`: 再纠偏、改写纠偏、精修、三张控制面图对应的高阶审读模板与公开镜像证据分级方法。
 
 ## 推荐入口
 
@@ -23,6 +23,7 @@
 - [99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object](99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object.md)
 - [100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing](100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md)
 - [101-如何用苏格拉底诘问法审读one writable present：single-writer、recovery asset与anti-zombie](101-如何用苏格拉底诘问法审读one writable present：single-writer、recovery asset与anti-zombie.md)
+- [102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline](102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md)
 
 ## 使用方式
 
@@ -32,6 +33,7 @@
 - 想处理宿主迁移、验收、修复和后续纠偏：从 `48-101`
 - 想把控制面总图变成 Builder 审读顺序：`30/31/32 -> 99/100/101 -> 51/52/53`
 - 想看三张控制面图的高阶审读模板：从 `99-101`
+- 想在公开镜像条件下稳当地判断源码质量：`19/20 -> 102 -> 76/86 -> 84`
 - 想看最新共同 `reject` 升级模板骨架：从 `93-98`
 - 想做跨目录跳转：回到 [../navigation/README.md](../navigation/README.md)
 

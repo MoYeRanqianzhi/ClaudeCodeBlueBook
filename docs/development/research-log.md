@@ -12,7 +12,29 @@
 - 本轮模板化动作: 已继续把三张控制面图下沉为 `guides/99-101` 三篇高阶苏格拉底审读模板，并通过 `navigation/15` 与 `navigation/42` 回收到稳定路由。
 - 本轮运行手册化动作: 已继续把三张控制面图下沉为 `playbooks/77-79` 三篇长期验证手册，并通过 `navigation/39` 回收到持续回归路由。
 - 本轮反例化动作: 已继续把三张控制面图的长期验证失真压成 `casebooks/73-75`，并通过 `navigation/40` 把“基础失真”与“验证失真”重新分层。
+- 本轮方法论动作: 已新增 `guides/102`，并同步升级 `navigation/07`、`navigation/15`、`navigation/41` 与 `guides/30`，把“公开镜像源码质量研究协议”补成稳定入口。
 - 主分支同步检查: `2026-04-06` 在仓库根执行 `git fetch origin && git pull --ff-only`，结果为 `Already up to date.`；当前本地 `main` 领先 `origin/main` 6 个提交，因此本轮不改主分支，只在 `mainloop` 内推进。
+
+### A080. 公开镜像条件下的源码质量判断，最值钱的不是再夸先进性，而是先把证据分级协议写清楚
+
+- 公开镜像研究最危险的失败方式，不是证据太少，而是把 `contract truth`、`registry truth`、`authoritative surface truth`、`adapter subset truth`、`hotspot kernel truth` 与 `mirror gap` 脑补成同一层；这会让“类型里声明存在”“当前 build 已注册”“某宿主实装了子集”“某热点文件正在维护 invariant”与“README 明说没公开的东西”互相偷换。
+- `Task.ts`、`tasks.ts`、`controlSchemas.ts`、`bridgeMain` linear subset 注释、`query/config.ts`、`query/deps.ts`、`QueryGuard` 与 `sessionIngress` 共同说明，更稳的阅读顺序必须固定为 `contract -> registry -> authoritative surface -> adapter subset -> hotspot kernel -> mirror gap discipline`，而不是先冲进 `query.ts` / `main.tsx` 再从实现猜全貌。
+- 这也意味着“大文件判坏”本身是不稳的：`query.ts`、`main.tsx`、`attachments.ts` 这类热点文件必须区分为“合法复杂度中心”和“散落式复杂性”；前者是在集中维护 runtime invariant，后者才是结构退化。
+- 公开镜像里的源码质量不能只看 `dependency honesty`，还必须同时看 `temporal honesty`。如果只看 import 图、seam、single-source，很容易高估静态分层；如果不看 stale snapshot、stale writer、recovery asset non-sovereignty 与 present-state protection，就会低估时间维度里的第二真相生产。
+- 这解释了为什么 `guides/102` 比继续补一篇新的源码赞美哲学文更值钱：现有 `philosophy/76`、`86` 已经给出高阶判断，但还缺一篇方法文把“如何稳当地得到这些判断”写成正式协议。
+- 这也解释了为什么目录结构要继续优化：`navigation/07` 应负责方法线收束，`navigation/15` 应负责自我校准问题链，`navigation/41` 应负责第一性原理回读；旧 Prompt 审读页 `guides/30` 则应退回桥接位，不再和 `guides/99` 争主入口。
+
+证据:
+
+- `claude-code-source-code/README.md:250-290`
+- `claude-code-source-code/src/Task.ts:6-124`
+- `claude-code-source-code/src/tasks.ts:1-39`
+- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:57-240`
+- `claude-code-source-code/src/bridge/bridgeMain.ts:2799-2810`
+- `claude-code-source-code/src/query/config.ts:1-43`
+- `claude-code-source-code/src/query/deps.ts:1-37`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:57-211`
 
 ### A078. 三张控制面图的长期验证之后，最值钱的补层是“验证失真层”，而不是继续把伪验证写回正文
 
