@@ -110,7 +110,7 @@
 98. [宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修导航：repair对象、共同reject语义与长期reopen责任面](98-宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修导航：repair对象、共同reject语义与长期reopen责任面.md)
 99. [宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行导航：repair card、共同reject顺序与reopen演练](99-宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行导航：repair%20card、共同reject顺序与reopen演练.md)
 100. [宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真导航：假repair card、假共同reject与假reopen](100-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E5%A4%B1%E7%9C%9F%E5%AF%BC%E8%88%AA%EF%BC%9A%E5%81%87repair%20card%E3%80%81%E5%81%87%E5%85%B1%E5%90%8Creject%E4%B8%8E%E5%81%87reopen.md)
-100. [宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真导航：假repair card、假共同reject与假reopen](100-宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真导航：假repair%20card、假共同reject与假reopen.md)
+101. [宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修导航：refinement correction refinement顺序与模板骨架](101-%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E5%AF%BC%E8%88%AA%EF%BC%9Arefinement%20correction%20refinement%E9%A1%BA%E5%BA%8F%E4%B8%8E%E6%A8%A1%E6%9D%BF%E9%AA%A8%E6%9E%B6.md)
 
 和其他目录的关系：
 
@@ -187,6 +187,6 @@
 - `98 -> ../api/90-92` 继续回答“怎样把这些 refinement correction fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
 - `99 -> ../playbooks/71-73` 继续回答“怎样把这些 refinement correction repair protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练”。
 - `100 -> ../casebooks/67-69` 继续回答“为什么这些 refinement correction refinement execution 明明已经存在，仍会重新退回假 repair card、假共同 reject 顺序与假 reopen 责任演练”。
-- 再往下一层，应由 `101 -> ../guides/96-98` 继续回答“怎样把这些 refinement correction refinement execution 失真重新压回固定共同 reject 顺序、拒收升级路径与改写模板骨架”。
-- `100 -> ../casebooks/67-69` 继续回答“为什么这些 refinement correction refinement execution 明明已经存在，仍会重新退回假 repair card、假共同 reject 顺序与假 reopen 责任演练”。
+- `101 -> ../guides/96-98` 继续回答“怎样把这些 refinement correction refinement execution 失真重新压回固定顺序、共同 reject 升级路径与改写模板骨架”。
+- 再往下一层，应由 `102 -> ../api/93-95` 继续回答“怎样把这些 refinement correction refinement fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
 - 再往下一层，应由 `101 -> ../guides/96-98` 继续回答“怎样把这些 refinement correction refinement execution 失真重新压回固定顺序、共同 reject 升级路径与改写模板骨架”。

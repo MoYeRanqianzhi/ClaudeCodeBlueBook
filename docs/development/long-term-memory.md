@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement correction refinement distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏 / repair steady-state correction-of-correction rewrite correction refinement correction refinement guide”层。
+- 新增结论：
+  - Prompt refinement correction refinement execution distortion 如果要真正被纠偏，不能只继续批评假 `repair card` 与假共同 `reject`，还要把 authority、compiled request truth、registry / protocol truth、shared reject semantics、lawful forgetting、continuation qualification 与 threshold 重新压回同一个 Prompt 编译对象。
+  - 治理 refinement correction refinement execution distortion 如果要真正被纠偏，不能只继续批评 calm dashboard 与默认继续，还要把 authority、ledger/window、pricing、classifier、writeback、ingress lineage、shared reject semantics 与 threshold 重新压回同一个统一定价控制面。
+  - 结构 refinement correction refinement execution distortion 如果要真正被纠偏，不能只继续批评 pointer、telemetry 与 reconnect 好运气，还要把 authority、lineage / fresh merge、single-source writeback、anti-zombie、transport、dirty git fail-closed、shared reject semantics 与 threshold 重新压回同一个结构真相面。
+- 新增目录责任：
+  - `navigation/101` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏入口。
+  - `guides/96-98` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction refinement execution distortion 的固定顺序、共同 reject 升级路径与 builder-facing 模板骨架。
+- 当前新的写作约束：
+  - `guides/96-98` 只表示 correction-of-correction rewrite correction refinement correction refinement guide，不再回头重写 `casebooks/67-69` 的反例层。
+  - `74-101` 应被持续当成一条连续小循环来写，而不是二十八篇并列新增文章。
+- 下一步最值钱的候选应切到 `api/93-95`，把这一层固定 `refinement correction refinement order` 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement correction refinement distortion casebook”层。
 - 新增结论：
   - Prompt refinement correction refinement execution 如果要真正成立，不能只让 cross-consumer `repair card` 存在，还要防止它退回 smooth transcript、summary handoff、worker prose 与 wording 崇拜；共同 `reject order` 一旦不再围绕同一个编译对象，Prompt 魔力就会退回为更像真相的解释材料。

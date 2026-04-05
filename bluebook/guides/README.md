@@ -99,6 +99,9 @@
 93. [93-如何把Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行失真压回编译对象：固定refinement correction顺序、authority chain、protocol truth与liability改写模板骨架](93-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行失真：authority chain、protocol truth与liability模板.md)
 94. [94-如何把治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行失真压回统一定价控制面：固定refinement correction顺序、window truth、pricing causality与liability改写模板骨架](94-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行失真：window truth、pricing causality与liability模板.md)
 95. [95-如何把结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行失真压回结构真相面：固定refinement correction顺序、authority surface、fresh merge与liability改写模板骨架](95-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行失真：authority surface、fresh merge与liability模板.md)
+96. [96-如何把Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行失真压回编译对象：固定refinement correction refinement顺序、compiled request truth、共同reject与liability改写模板骨架](96-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行失真：compiled%20request%20truth、共同reject与liability模板.md)
+97. [97-如何把治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行失真压回统一定价控制面：固定refinement correction refinement顺序、统一定价对象、共同reject与liability改写模板骨架](97-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行失真：统一定价对象、共同reject与liability模板.md)
+98. [98-如何把结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行失真压回结构真相面：固定refinement correction refinement顺序、authority stream、共同reject与liability改写模板骨架](98-结构宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行失真：authority%20stream、共同reject与liability模板.md)
 
 ## 按使用目标阅读
 
@@ -210,7 +213,8 @@
 - `../navigation/98 -> ../api/90-92` 继续回答“怎样把这些 refinement correction fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
 - `../navigation/99 -> ../playbooks/71-73` 继续回答“怎样把这些 refinement correction repair protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练”。
 - `../navigation/100 -> ../casebooks/67-69` 继续回答“为什么这些 refinement correction refinement execution 明明已经存在，仍会重新退回假 repair card、假共同 reject 顺序与假 reopen 责任演练”。
-- 再往下一层，应由 `../navigation/101 -> ../guides/96-98` 继续回答“怎样把这些 refinement correction refinement execution 失真重新压回固定顺序、共同 reject 升级路径与改写模板骨架”。
+- `../navigation/101 -> 96-98` 继续回答“怎样把这些 refinement correction refinement execution 失真重新压回固定顺序、共同 reject 升级路径与改写模板骨架”。
+- 再往下一层，应由 `../navigation/102 -> ../api/93-95` 继续回答“怎样把这些 refinement correction refinement fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
 - 再往下一层，应由 `../navigation/58 -> ../api/60-62` 继续回答“怎样把这些宿主修复纠偏继续压成宿主可消费的收口卡、完成语义与交接保证面”。
 - `../philosophy/81-83` 负责回答“为什么这些实现顺序不是经验技巧，而是 Prompt 编译链、统一定价治理与故障模型编码的不可约判断”。
 

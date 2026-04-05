@@ -227,7 +227,8 @@
 - `../navigation/98 -> 90-92` 继续回答“怎样把这些 refinement correction fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
 - `../navigation/99 -> ../playbooks/71-73` 继续回答“怎样把这些 refinement correction repair protocol 继续压成固定 repair card、共同 reject 顺序与 reopen 责任演练”。
 - `../navigation/100 -> ../casebooks/67-69` 继续回答“为什么这些 refinement correction refinement execution 明明已经存在，仍会重新退回假 repair card、假共同 reject 顺序与假 reopen 责任演练”。
-- 再往下一层，应由 `../navigation/101 -> ../guides/96-98` 继续回答“怎样把这些 refinement correction refinement execution 失真重新压回固定顺序、共同 reject 升级路径与改写模板骨架”。
+- `../navigation/101 -> ../guides/96-98` 继续回答“怎样把这些 refinement correction refinement execution 失真重新压回固定顺序、共同 reject 升级路径与改写模板骨架”。
+- 再往下一层，应由 `../navigation/102 -> ../api/93-95` 继续回答“怎样把这些 refinement correction refinement fixed order 继续压成宿主可消费的 repair 对象、共同 reject 语义与长期 reopen 责任面”。
 - 机制对象宿主消费面不等于内部实现面。
 - host-consumable projection 不等于 internal compiler / internal fault-model trace。
 
