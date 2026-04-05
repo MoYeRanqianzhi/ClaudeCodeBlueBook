@@ -7,6 +7,740 @@
 - 提炼 Agent 设计原则与设计哲学
 - 所有结论保持可追溯、可验证、可解释
 
+## 最新推进
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”层。
+- 新增结论：
+  - Prompt refinement correction repair protocol 如果要真正被长期共同执行，不能只保留 authority chain、protocol truth 与 repair attestation 的对象名，还要把它们继续运行成同一张 cross-consumer `repair card`、同一条共同 `reject order` 与正式 `reopen drill`；否则 Prompt 魔力仍会从编译对象退回 UI transcript、repair prose 与 handoff packet。
+  - 治理 refinement correction repair protocol 如果要真正被长期共同执行，不能只保留 authority、window、pricing、classifier、writeback 与 threshold 的对象名，还要把 `permission request + pending_action + context usage + classifier telemetry + ingress lineage` 继续运行成同一张 cross-consumer `repair card`；否则安全设计与省 token 设计仍会退回 mode 面板、usage dashboard 与运营感觉。
+  - 结构 refinement correction repair protocol 如果要真正被长期共同执行，不能只保留 authority、single-source、lineage、fresh merge、anti-zombie、transport 与 fail-closed 的对象名，还要把它们继续运行成同一张 cross-consumer `repair card`、同一条共同 `reject order` 与正式 `reopen drill`；否则源码先进性仍会退回 pointer、telemetry、archive prose 与作者记忆。
+- 新增目录责任：
+  - `navigation/99` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行入口。
+  - `playbooks/71-73` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction repair protocol 的固定 `repair card`、共同 `reject order` 与正式 `reopen drill`。
+- 当前新的写作约束：
+  - `playbooks/71-73` 只表示 correction-of-correction rewrite correction refinement correction refinement execution，不再回头重写 `api/90-92` 的 repair 对象协议面。
+  - `74-99` 应被持续当成一条连续小循环来写，而不是二十六篇并列新增文章。
+- 下一步最值钱的候选应切到 `casebooks/67-69`，把这一层 refinement correction refinement execution 最常怎样退回假 `repair card`、假共同 `reject order` 与假 `reopen liability` 写成新的反例层。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏 / repair steady-state correction-of-correction rewrite correction refinement correction guide”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement correction refinement protocol”层。
+- 新增结论：
+  - Prompt refinement correction fixed order 如果要真正被宿主、CI、评审与交接共同消费，不能只停在 fixed order 与硬拒收，还要把 authority chain、compiled request lineage、protocol truth、cross-consumer repair attestation 与 long-horizon reopen liability 压成 compact-safe、continuation-safe 的 repair 对象协议。
+  - 治理 refinement correction fixed order 如果要真正被共同消费，不能只停在 fixed order 与拒收模板，还要把 `permission request + pending_action + context pull + analytics + ingress lineage` 收束成单一 repair object，并让安全设计与省 token 设计继续共用同一条 reject 语义链。
+  - 结构 refinement correction fixed order 如果要真正被共同消费，不能只停在 fixed order 与拒收模板，还要把 authority、single-source writeback、lineage/fresh merge、anti-zombie、transport、dirty git fail-closed 与 reopen boundary 压成 ordered repair stream，而不是让 pointer、telemetry 与 archive prose 重新篡位。
+- 新增目录责任：
+  - `navigation/98` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议入口。
+  - `api/90-92` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction fixed order 的 repair 对象协议、共同 reject 语义与长期 reopen 责任面。
+- 当前新的写作约束：
+  - `api/90-92` 只表示 correction-of-correction rewrite correction refinement correction refinement protocol，不再回头重写 `guides/93-95` 的 fixed order 与模板骨架。
+  - `74-98` 应被持续当成一条连续小循环来写，而不是二十五篇并列新增文章。
+- 下一步最值钱的候选应切到 `playbooks/71-73`，把这一层 refinement correction repair protocol 继续压成固定 `repair card`、共同 `reject order` 与 `reopen drill`。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真 / repair steady-state correction-of-correction rewrite correction refinement correction distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏 / repair steady-state correction-of-correction rewrite correction refinement correction guide”层。
+- 新增结论：
+  - Prompt refinement correction execution distortion 如果要真正被纠偏，不能只继续批评假 `repair card` 与假 `reopen liability`，还要把 `authority chain`、`compiled request lineage`、`registry-boundary custody`、`synthesis custody`、`protocol-prefix custody`、`forgetting-continuation covenant` 与 `long-horizon reopen liability` 重新压回同一个 Prompt 编译对象。
+  - 治理 refinement correction execution distortion 如果要真正被纠偏，不能只继续批评假 `pricing causality` 与默认继续，还要把 `authority chain`、`ledger truth surface`、`window truth surface`、`pricing causality surface`、`classifier pricing attestation`、`writeback seam contract`、`ingress_restore_lineage_contract` 与 `long-horizon reopen liability` 重新压回同一个统一定价控制面。
+  - 结构 refinement correction execution distortion 如果要真正被纠偏，不能只继续批评假 `fresh merge` 与 reconnect 提示，还要把 `authority surface`、`single-source writeback`、`lineage resume contract`、`fresh merge contract`、`anti-zombie restitution packet`、`transport boundary contract`、`fail-closed worktree contract` 与 `long-horizon reopen liability` 重新压回同一个结构真相面。
+- 新增目录责任：
+  - `navigation/97` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏纠偏入口。
+  - `guides/93-95` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction execution 失真的固定 `refinement correction order`、硬拒收项与模板骨架。
+- 当前新的写作约束：
+  - `guides/93-95` 只表示 correction-of-correction rewrite correction refinement correction execution distortion rewrite，不再回头重写 `casebooks/64-66` 的反例层。
+  - `74-97` 应被持续当成一条连续小循环来写，而不是二十四篇并列新增文章。
+- 下一步最值钱的候选应切到 `api/90-92`，把这一层 refinement correction fixed order 继续压成宿主可消费的修正对象、共同 reject 语义与长期 reopen 责任面。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行 / repair steady-state correction-of-correction rewrite correction refinement correction execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真 / repair steady-state correction-of-correction rewrite correction refinement correction distortion casebook”层。
+- 新增结论：
+  - Prompt refinement correction execution 如果要真正稳定，不能只看 `repair card` 已存在，还要防止它退回假 `protocol truth`、假 `synthesis custody` 与假 `reopen liability`。
+  - 治理 refinement correction execution 如果要真正稳定，不能只看 `repair card` 已存在，还要防止它退回假 `pricing causality`、假 `writeback seam round-trip` 与假 `reopen liability`。
+  - 结构 refinement correction execution 如果要真正稳定，不能只看 `repair card` 已存在，还要防止它退回假 `fresh merge`、假 `fail-closed` 与假 `reopen liability`。
+- 新增目录责任：
+  - `navigation/96` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏失真入口。
+  - `casebooks/64-66` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction execution 的假 `repair card`、假 `reject order` 与假 `reopen liability` 反例。
+- 当前新的写作约束：
+  - `casebooks/64-66` 只表示 correction-of-correction rewrite correction refinement correction execution distortion，不再回头重写 `playbooks/68-70` 的执行层。
+  - `74-96` 应被持续当成一条连续小循环来写，而不是二十三篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/93-95`，把这一层 refinement correction execution 失真继续压成新的固定顺序、拒收升级路径与改写模板骨架。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏协议 / repair steady-state correction-of-correction rewrite correction refinement correction protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行 / repair steady-state correction-of-correction rewrite correction refinement correction execution”层。
+- 新增结论：
+  - Prompt refinement correction protocol 如果要真正被长期执行，不能只保留 authority/lineage/registry-boundary/synthesis 等对象名，还要把它们继续运行成固定 `repair card`、固定 `reject order` 与正式 `re-entry / reopen drill`。
+  - 治理 refinement correction protocol 如果要真正被长期执行，不能只保留 authority/ledger/window/pricing/writeback 等对象名，还要把它们继续运行成固定 `repair card`、固定 `reject order` 与正式 `reopen liability drill`。
+  - 结构 refinement correction protocol 如果要真正被长期执行，不能只保留 authority/single-source/lineage/fresh merge/anti-zombie/fail-closed 等对象名，还要把它们继续运行成固定 `repair card`、固定 `reject order` 与正式 `re-entry / reopen drill`。
+- 新增目录责任：
+  - `navigation/95` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行入口。
+  - `playbooks/68-70` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction protocol 的固定 `repair card`、固定 `reject order` 与正式 `reopen drill`。
+- 当前新的写作约束：
+  - `playbooks/68-70` 只表示 correction-of-correction rewrite correction refinement correction protocol execution，不再回头重写 `api/87-89` 的共享对象面。
+  - `74-95` 应被持续当成一条连续小循环来写，而不是二十二篇并列新增文章。
+- 下一步最值钱的候选应切到 `casebooks/64-66`，把这一层 refinement correction execution 最常怎样重新退回假 `repair card`、假 `reject order` 与假 `reopen` 责任演练写成新的反例层。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏 / repair steady-state correction-of-correction rewrite correction refinement guide”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏协议 / repair steady-state correction-of-correction rewrite correction refinement correction protocol”层。
+- 新增结论：
+  - Prompt refinement correction 如果要真正成立，不能只停在 fixed `refinement order`，还要把 `authority chain`、`compiled request lineage`、`registry-boundary custody`、`synthesis custody`、`protocol-prefix custody`、`forgetting-continuation covenant` 与 `long-horizon reopen liability` 继续压成共享对象。
+  - 治理 refinement correction 如果要真正成立，不能只停在 fixed `refinement order`，还要把 `authority chain`、`ledger truth surface`、`window truth surface`、`pricing causality surface`、`classifier pricing attestation`、`writeback seam contract` 与 `long-horizon reopen liability` 继续压成统一定价对象。
+  - 结构 refinement correction 如果要真正成立，不能只停在 fixed `refinement order`，还要把 `authority surface`、`single-source writeback`、`lineage resume contract`、`fresh merge contract`、`anti-zombie restitution packet`、`transport boundary contract`、`fail-closed worktree contract` 与 `long-horizon reopen liability` 继续压成结构真相对象。
+- 新增目录责任：
+  - `navigation/94` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏协议入口。
+  - `api/87-89` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement correction 的宿主可消费修正对象、共同 reject 语义与长期 reopen 责任面。
+- 当前新的写作约束：
+  - `api/87-89` 只表示 correction-of-correction rewrite correction refinement correction protocol，不再回头重写 `guides/90-92` 的 fixed order 与模板骨架。
+  - `74-94` 应被持续当成一条连续小循环来写，而不是二十一篇并列新增文章。
+- 下一步最值钱的候选应切到 `playbooks/68-70`，把这一层 refinement correction protocol 继续压成固定 `repair card`、`reject order` 与 `reopen drill`。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏 / repair steady-state correction-of-correction rewrite correction refinement guide”层。
+- 新增结论：
+  - Prompt refinement execution distortion 如果要真正被纠偏，不能只继续批评假 `host consumption card` 与假 `reopen liability ledger`，还要把 `compiled request lineage`、`registry-boundary rewrite`、`coordinator synthesis custody`、`protocol-prefix custody`、`forgetting-continuation covenant` 与 `reopen liability ledger` 重新压回同一条固定 `refinement order`。
+  - 治理 refinement execution distortion 如果要真正被纠偏，不能只继续批评 calmer dashboard、假 `writeback seam round-trip` 与默认继续，还要把 `authority-ledger covenant`、`window-pricing covenant`、`classifier-writeback custody`、`capability liability ledger` 与 `reopen liability ledger` 重新压回同一个统一定价控制面。
+  - 结构 refinement execution distortion 如果要真正被纠偏，不能只继续批评 pointer、结果没坏与 reconnect 提示，还要把 `authority head covenant`、`single-source merge custody`、`lineage anti-zombie packet`、`transport fail-closed custody` 与 `reopen liability ledger` 重新压回同一个结构真相面。
+- 新增目录责任：
+  - `navigation/93` 负责宿主修复稳态纠偏再纠偏改写纠偏精修纠偏入口。
+  - `guides/90-92` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement execution 失真的固定 `refinement order`、硬拒收项与模板骨架。
+- 当前新的写作约束：
+  - `guides/90-92` 只表示 correction-of-correction rewrite correction refinement execution distortion rewrite，不再回头重写 `casebooks/61-63` 的反例层。
+  - `74-93` 应被持续当成一条连续小循环来写，而不是二十篇并列新增文章。
+- 下一步最值钱的候选应切到 `api/87-89`，把这一层 refinement correction 继续压成宿主可消费的对象、拒收语义与长期 reopen 责任面。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement distortion casebook”层。
+- 新增结论：
+  - Prompt refinement execution 最危险的失败，不是没跑 `host consumption card`，而是让 card 退回 polished handoff packet、让 runtime registry 与 boundary 退回目录说明、让 synthesis custody 退回研究总结、让 reopen liability 退回礼貌继续；一旦如此，Prompt 魔力会从编译链退回 prose 与 handoff 幻觉。
+  - 治理 refinement execution 最危险的失败，不是没跑 `hard reject order`，而是让宿主消费卡退回 calmer dashboard、让 writeback seam round-trip 退回 UI calmness 与本地成功提示、让 reopen liability 退回默认继续；一旦如此，安全设计与省 token 设计会同时退回 mode 面板、usage dashboard 与运营感觉。
+  - 结构 refinement execution 最危险的失败，不是没跑 `reopen drill`，而是让宿主消费卡退回 pointer 与 archive prose、让 fresh merge / fail-closed 退回结果没坏与工作树侥幸、让 reopen liability 退回 reconnect 提示与作者记忆；一旦如此，源码先进性会从结构真相面退回目录美学与恢复成功率崇拜。
+- 新增目录责任：
+  - `navigation/92` 负责宿主修复稳态纠偏再纠偏改写纠偏精修失真入口。
+  - `casebooks/61-63` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement execution 为什么仍会退回假 `host consumption card`、假 `hard reject` 顺序与假 `reopen liability`。
+- 当前新的写作约束：
+  - `casebooks/61-63` 只表示 correction-of-correction rewrite correction refinement protocol execution distortion，不再回头重写 `playbooks/65-67` 的 execution 手册。
+  - `74-92` 应被持续当成一条连续小循环来写，而不是十九篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/90-92`，把这一层 refinement execution distortion 继续压成新的固定顺序、拒收升级路径与改写模板骨架。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement execution”层。
+- 新增结论：
+  - Prompt refinement protocol 如果要真正被宿主、CI、评审与交接长期执行，不能只继续共享 `compiled request lineage`、`registry-boundary covenant` 与 `reopen liability ledger`，还要把它们继续压成固定 `host consumption card`、固定 `hard reject order` 与正式 `reentry / reopen drill`；否则 Prompt 魔力仍会退回 rewrite prose、summary handoff 与值班者记忆。
+  - 治理 refinement protocol 如果要真正统一安全设计与省 token 设计，不能只继续共享 authority、ledger、window、pricing、classifier、writeback 与 liability 对象，还要把它们继续压成固定 `host consumption card`、固定 `hard reject order` 与正式 `reopen liability drill`；否则治理真相仍会退回 mode 面板、usage dashboard 与运营感觉。
+  - 结构 refinement protocol 如果要真正让 later 维护者独立接手，不能只继续共享 authority、single-source、lineage、fresh merge、anti-zombie、transport 与 fail-closed 对象，还要把它们继续压成固定 `host consumption card`、固定 `hard reject order` 与正式 `reopen drill`；否则源码先进性仍会退回 pointer、telemetry、archive prose 与作者说明。
+- 新增目录责任：
+  - `navigation/91` 负责宿主修复稳态纠偏再纠偏改写纠偏精修执行入口。
+  - `playbooks/65-67` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 refinement protocol 的宿主消费卡、固定 `hard reject` 顺序与 `reopen` 演练。
+- 当前新的写作约束：
+  - `playbooks/65-67` 只表示 correction-of-correction rewrite correction refinement protocol execution，不再回头重写 `api/84-86` 的共享对象面。
+  - `74-91` 应被持续当成一条连续小循环来写，而不是十八篇并列新增文章。
+- 下一步最值钱的候选应切到 `casebooks/61-63`，把这一层 refinement execution 继续压成新的反例层。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏纠偏 / repair steady-state correction-of-correction rewrite correction guide”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修协议 / repair steady-state correction-of-correction rewrite correction refinement protocol”层。
+- 新增结论：
+  - Prompt rewrite correction 如果要真正被宿主、CI、评审与交接共同消费，不能只继续固定 `rewrite correction order`，还要把同一条 `compiled request truth -> section registry -> dynamic boundary -> protocol transcript -> stable prefix -> lawful forgetting -> continuation qualification -> threshold liability` 编译链继续压成共享消费对象、共同 reject 语义与长期 reopen 责任账本；否则 Prompt 魔力仍会退回 rewrite prose、summary handoff 与未综合的子 Agent prose。
+  - 治理 rewrite correction 如果要真正统一安全设计与省 token 设计，不能只继续固定 authority、pricing 与 threshold 的 builder 顺序，还要把同一条 `authority -> ledger -> window -> pricing -> classifier -> writeback seam -> liability -> threshold` 链继续压成跨消费者共享的统一定价控制对象；否则治理真相仍会退回 mode 面板、usage dashboard 与运营感觉。
+  - 结构 rewrite correction 如果要真正让 later 维护者独立接手，不能只继续固定 authority、merge、transport 与 liability 的纠偏顺序，还要把 authority surface、single-source writeback、lineage、fresh merge、anti-zombie、transport boundary、dirty git fail-closed 与 reopen liability 继续压成跨消费者共享的结构真相面；否则源码先进性仍会退回 pointer、telemetry、architecture prose 与作者说明。
+- 新增目录责任：
+  - `navigation/90` 负责宿主修复稳态纠偏再纠偏改写纠偏精修入口。
+  - `api/84-86` 负责三类宿主修复稳态纠偏再纠偏改写纠偏 fixed order 的宿主可消费对象、共同 reject 语义与长期 reopen 责任账本。
+- 当前新的写作约束：
+  - `api/84-86` 只表示 correction-of-correction rewrite correction refinement protocol，不再回头重写 `guides/87-89` 的 fixed order 与模板骨架。
+  - `74-90` 应被持续当成一条连续小循环来写，而不是十七篇并列新增文章。
+- 下一步最值钱的候选应切到 `playbooks/65-67`，把这一层 refinement protocol 继续压成固定宿主消费卡、hard reject 顺序与 reopen 责任演练。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏失真 / repair steady-state correction-of-correction rewrite correction distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏纠偏 / repair steady-state correction-of-correction rewrite correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写纠偏执行失真如果要真正被纠偏，不能只继续批评假 `rewrite correction card`，还要把 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continue qualification` 与 `threshold liability` 重新压回同一条固定 `rewrite correction order`。
+  - 治理宿主修复稳态纠偏再纠偏改写纠偏执行失真如果要真正被纠偏，不能只继续批评 mode / dashboard 幻觉，还要把 authority、ledger、window、pricing、classifier 开销、writeback seam、capability liability 与 threshold 重新压回同一个统一定价控制面。
+  - 结构宿主修复稳态纠偏再纠偏改写纠偏执行失真如果要真正被纠偏，不能只继续批评 pointer / telemetry / 结果没坏幻觉，还要把 authority surface、single-source seam、lineage、fresh merge、anti-zombie evidence、transport boundary、fail-closed worktree 与 reopen liability 重新压回同一个结构真相面。
+- 新增目录责任：
+  - `navigation/89` 负责宿主修复稳态纠偏再纠偏改写纠偏纠偏入口。
+  - `guides/87-89` 负责三类宿主修复稳态纠偏再纠偏改写纠偏执行失真的固定 `rewrite correction order`、硬拒收项与模板骨架。
+- 当前新的写作约束：
+  - `87-89` 只表示 correction-of-correction rewrite correction execution distortion rewrite，不再回头重写 `84-86` 的 rewrite execution 纠偏。
+  - `74-89` 应被持续当成一条连续小循环来写，而不是十六篇并列新增文章。
+- 下一步最值钱的候选应切到 `api/84-86`，把这一层 correction guide 继续压成宿主可消费的对象、拒收语义与长期 reopen 责任面。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏执行 / repair steady-state correction-of-correction rewrite correction execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏失真 / repair steady-state correction-of-correction rewrite correction distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写纠偏执行最危险的失败，不是没跑 `rewrite correction card`，而是让 runtime `section registry` 退回静态目录、让 `dynamic boundary` 退回 attachment 说明、让 `threshold liability` 退回礼貌备注；一旦如此，Prompt 魔力就会从编译链退回更体面的宪法说明文。
+  - 治理宿主修复稳态纠偏再纠偏改写纠偏执行最危险的失败，不是没跑 classifier pricing 与 writeback seam，而是让 classifier 成本重新掉出 pricing object、让 `requires_action -> pending_action -> session_state_changed` 重新退回 UI 状态、让 threshold 退回默认继续；一旦如此，安全设计与省 token 设计就会同时退回运营感觉。
+  - 结构宿主修复稳态纠偏再纠偏改写纠偏执行最危险的失败，不是没写 fresh merge contract 与 transport boundary，而是让结果没坏重新取代 merge 契约、让 transport 静默重新取代边界证明、让 fail-closed worktree 重新退回“应该没事”的感觉；一旦如此，源码先进性就会从结构真相面退回恢复成功率与目录美学。
+- 新增目录责任：
+  - `navigation/88` 负责宿主修复稳态纠偏再纠偏改写纠偏失真入口。
+  - `casebooks/58-60` 负责三类宿主修复稳态纠偏再纠偏改写纠偏执行为什么仍会退回假 `rewrite correction card`、假 `reject verdict` 与假 `reopen liability`。
+- 当前新的写作约束：
+  - `58-60` 只表示 correction-of-correction rewrite correction protocol execution distortion，不再回头重写 `55-57` 的 rewrite execution 反例。
+  - `74-88` 应被持续当成一条连续小循环来写，而不是十五篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/87-89`，把这一层 distortion 重新压回固定 `rewrite correction` 顺序、拒收升级路径与改写模板骨架。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏协议 / repair steady-state correction-of-correction rewrite correction protocol”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏执行 / repair steady-state correction-of-correction rewrite correction execution”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写纠偏协议如果要真正运行起来，不能只保留 `compiled request truth`、`section registry` 与 `dynamic boundary` 规则面，还要继续把它们压成同一张 `rewrite correction card`、同一条 `reject verdict order` 与同一套 `re-entry / reopen` drill；否则 Prompt 魔力仍会退回 rewrite prose、summary handoff 与未综合的子 Agent prose。
+  - 治理宿主修复稳态纠偏再纠偏改写纠偏协议如果要真正统一安全设计与省 token 设计，必须继续把 authority、ledger、window、pricing、classifier 成本、writeback seam、capability liability 与 threshold 压成同一张 `rewrite correction card`；否则治理真相仍会退回 mode 面板、usage dashboard 与运营感觉。
+  - 结构宿主修复稳态纠偏再纠偏改写纠偏协议如果要真正让 later 维护者独立接手，必须继续把 authority surface、single-source seam、lineage、fresh merge、anti-zombie evidence、transport boundary、fail-closed worktree 与 reopen liability 压成同一张 `rewrite correction card`；否则源码先进性仍会退回 pointer、telemetry、archive prose 与作者说明。
+- 新增目录责任：
+  - `navigation/87` 负责宿主修复稳态纠偏再纠偏改写纠偏执行入口。
+  - `playbooks/62-64` 负责三类宿主修复稳态纠偏再纠偏改写纠偏协议的 `rewrite correction card`、`reject order` 与 `re-entry / reopen` 责任演练。
+- 当前新的写作约束：
+  - `62-64` 只表示 correction-of-correction rewrite correction protocol execution，不再回头重写 `59-61` 的 rewrite protocol execution。
+  - `74-87` 应被持续当成一条连续小循环来写，而不是十四篇并列新增文章。
+- 下一步最值钱的候选应切到 `casebooks/58-60`，把这一层 rewrite correction execution 继续压成新的反例层。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏 / repair steady-state correction-of-correction rewrite correction guide”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏协议 / repair steady-state correction-of-correction rewrite correction protocol”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写纠偏如果要真正被宿主、CI、评审与交接共同消费，不能只继续固定 `rewrite order`，还要把 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continue qualification` 与 `threshold liability` 压成同一个 Prompt rewrite correction 对象；否则 Prompt 魔力仍会从编译链退回 rewrite prose。
+  - 治理宿主修复稳态纠偏再纠偏改写纠偏如果要真正统一安全设计与省 token 设计，必须把 authority、ledger、window、pricing、classifier 成本、writeback seam、capability liability 与 threshold 压成同一个统一定价控制面对象；否则治理真相仍会退回 mode 面板、usage dashboard 与运营感觉。
+  - 结构宿主修复稳态纠偏再纠偏改写纠偏如果要真正让 later 维护者独立接手，必须把 authority surface、single-source seam、lineage、fresh merge、anti-zombie evidence、transport boundary 与 reopen liability 压成同一个结构真相面对象；否则源码先进性仍会退回 pointer、telemetry、archive prose 与作者说明。
+- 新增目录责任：
+  - `navigation/86` 负责宿主修复稳态纠偏再纠偏改写纠偏协议入口。
+  - `api/81-83` 负责三类宿主修复稳态纠偏再纠偏改写纠偏的宿主可消费 `rewrite correction object`、reject 语义与长期 reopen 责任面。
+- 当前新的写作约束：
+  - `81-83` 只表示 correction-of-correction rewrite correction protocol，不再回头重写 `78-80` 的 rewrite protocol。
+  - `74-86` 应被持续当成一条连续小循环来写，而不是十三篇并列新增文章。
+- 下一步最值钱的候选应切到 `playbooks/62-64`，把这一层 rewrite correction protocol 继续压成固定 `rewrite correction card`、reject 顺序与 `re-entry / reopen` 责任演练。
+- 新增硬法则：
+  - `correction` 只用于 first-order correction；`recorrection` 只用于 correction-of-correction protocol execution；`rewrite` 只用于“已证明 recorrection execution 本身仍会稳定制造假对象，必须改写执行语法”的层。
+  - 一旦进入 `rewrite` 母线，主工件名必须统一切换为 `rewrite card / rewrite protocol / rewrite execution / rewrite distortion / rewrite correction`，不得继续让 `recorrection card` 充当主工件名。
+  - 只有“执行工件本身会说谎”时，才能从 `playbook` 进入 `casebook`；只有“问题不再是执行漏项，而是执行语法稳定制造假对象”时，才能从 `casebook` 进入 `guide`。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写失真 / repair steady-state correction-of-correction rewrite distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏 / repair steady-state correction-of-correction rewrite correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写执行失真如果要真正被纠偏，不能只继续批评假 `rewrite card`，还要把 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continue qualification` 与 `threshold liability` 重新压回同一条固定 `rewrite order`。
+  - 治理宿主修复稳态纠偏再纠偏改写执行失真如果要真正被纠偏，不能只继续批评 mode / dashboard 幻觉，还要把 authority、ledger、window、pricing、classifier 开销、writeback seam、capability liability 与 threshold 重新压回同一个统一定价控制面。
+  - 结构宿主修复稳态纠偏再纠偏改写执行失真如果要真正被纠偏，不能只继续批评 pointer / telemetry 幻觉，还要把 authority surface、single-source seam、lineage、fresh merge、anti-zombie evidence、transport boundary 与 reopen liability 重新压回同一个结构真相面。
+- 新增目录责任：
+  - `navigation/85` 负责宿主修复稳态纠偏再纠偏改写纠偏入口。
+  - `guides/84-86` 负责三类宿主修复稳态纠偏再纠偏改写执行失真的固定 `rewrite order`、硬拒收项与模板骨架。
+- 当前新的写作约束：
+  - `84-86` 只表示 correction-of-correction rewrite execution distortion rewrite，不再回头重写 `81-83` 的 recorrection 改写。
+  - `74-85` 应被持续当成一条连续小循环来写，而不是十二篇并列新增文章。
+- 下一步最值钱的候选应切到 `api/81-83`，把这一层 correction guide 继续压成宿主可消费的 rewrite correction 对象、拒收语义与长期 reopen 责任面。
+- 已基于并行多 Agent 回读源码，继续加厚 `philosophy/81-83`：
+  - Prompt 线新增结论：section registry 具有 runtime 生命周期；late-bound attachment 不是 stable prefix 正文；多 Agent prompt 的强度首先来自 coordinator 持有 synthesis ownership。
+  - 治理线新增结论：authority 必须被外化成单一真相链；classifier 自身也必须被纳入 continuation pricing；`requires_action -> pending_action -> session_state_changed` 是安全与成本共用的 writeback seam。
+  - 结构线新增结论：authority surface 首先信外部可验证的头部状态；fresh merge 不是 last-write-wins；fail-closed worktree 与统一 transport boundary 都属于源码先进性的正式部分。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写执行 / repair steady-state correction-of-correction rewrite execution”继续推进到“宿主修复稳态纠偏再纠偏改写失真 / repair steady-state correction-of-correction rewrite distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写执行最危险的失败不是没跑 `rewrite card`，而是让 rewrite prose、summary 平静感与 UI 历史重新充当编译链真相；一旦如此，Prompt 的魔力就会从 `systemPrompt + userContext + systemContext + protocol transcript` 的编译链退回更会解释的文本。
+  - 治理宿主修复稳态纠偏再纠偏改写执行最危险的失败不是没写 `window repricing drill`，而是让 usage dashboard 与 mode 平静感提前消费 verdict；一旦如此，安全设计与省 token 设计就会同时从统一定价控制面退回运营感觉。
+  - 结构宿主修复稳态纠偏再纠偏改写执行最危险的失败不是没写 `authority-first reject order`，而是让 pointer、telemetry 与 architecture prose 重新排在 authority、single-source、lineage 与 anti-zombie 证据之前；一旦如此，源码先进性就会从结构真相面退回目录美学。
+- 新增目录责任：
+  - `navigation/84` 负责宿主修复稳态纠偏再纠偏改写失真入口。
+  - `casebooks/55-57` 负责三类宿主修复稳态纠偏再纠偏改写执行为什么仍会退回假 `rewrite card`、假 `reject verdict` 与假 `reopen liability`。
+- 当前新的写作约束：
+  - `59-61` 只表示 `rewrite card`，只用于 correction-of-correction rewrite protocol execution。
+  - `55-57` 只表示 correction-of-correction rewrite execution distortion，不再回头重写 `52-54` 的 recorrection 反例。
+  - `74-84` 应被持续当成一条连续小循环来写，而不是十一篇并列新增文章。
+- 下一步最值钱的候选应切到 `guides/84-86`，把这一层 distortion 重新压回固定 rewrite 顺序、拒收升级路径与改写模板骨架。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写协议 / repair steady-state correction-of-correction rewrite protocol”继续推进到“宿主修复稳态纠偏再纠偏改写执行 / repair steady-state correction-of-correction rewrite execution”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写如果要真正落地，不能只把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 写成协议，还要把它们继续压成同一张 `rewrite card` 与同一条 `reject verdict order`；否则 Prompt 魔力仍会重新退回 prose 与默认继续。
+  - 治理宿主修复稳态纠偏再纠偏改写如果要真正统一安全设计与省 token 设计，必须把 authority、ledger、window、pricing、liability 与 threshold 继续运行成同一张 `rewrite card`；否则控制面仍会重新退回 mode 面板、usage dashboard 与保守建议。
+  - 结构宿主修复稳态纠偏再纠偏改写如果要真正让 later 维护者独立接手，必须把 authority、single-source seam、lineage、anti-zombie 与 reopen boundary 继续运行成同一张 `rewrite card`；否则结构真相仍会重新退回 pointer、telemetry、archive prose 与作者记忆。
+- 新增目录责任：
+  - `navigation/83` 负责宿主修复稳态纠偏再纠偏改写执行入口。
+  - `playbooks/59-61` 负责三类宿主修复稳态纠偏再纠偏改写协议的 `rewrite card`、`reject verdict order` 与 `re-entry / reopen` 责任演练。
+- 当前新的写作约束：
+  - `56-58` 只表示 `recorrection card`，只用于 correction-of-correction protocol execution。
+  - `59-61` 必须统一改用 `rewrite card`，只表示 correction-of-correction rewrite protocol execution。
+  - `74-83` 应被持续当成一条连续小循环来写，而不是十篇并列新增文章。
+- 下一步最值钱的候选应切到 `casebooks/55-57`，把这一层 execution 最常怎样退回假 `rewrite card`、假 `reject verdict` 与假 `reopen liability` 写成新的反例层。
+- 新增更深一层的哲学收敛：
+  - Prompt 魔力的第一性原理不是文案修辞，而是把主权顺序、协议转写、稳定前缀、合法遗忘与继续资格写成同一条可缓存、可转写、可继续的编译链。
+  - 安全与省 token 的第一性原理不是“更严”和“更省”的平衡，而是治理控制面对动作、能力、上下文与 continuation 的统一定价。
+  - 源码先进性的第一性原理不是目录美学，而是把 authority、dependency seam、zombie 写回、恢复篡位与 worktree / transport 风险提前编码进结构，让未来维护者成为正式消费者。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写 / repair steady-state correction-of-correction rewrite guide”继续推进到“宿主修复稳态纠偏再纠偏改写协议 / repair steady-state correction-of-correction rewrite protocol”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏改写如果要真正被宿主、CI、评审与交接共同消费，不能只保留 rewrite 顺序，还要把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continue qualification` 与 `threshold liability` 继续压成共享规则面；否则 Prompt 魔力仍会从编译链退回解释链。
+  - 治理宿主修复稳态纠偏再纠偏改写如果要真正统一安全设计与省 token 设计，必须把 `authority -> ledger -> decision window -> continuation pricing -> capability liability -> threshold` 继续压成一条共享控制面；否则 rewrite 仍会重新退回面板、图表与保守建议。
+  - 结构宿主修复稳态纠偏再纠偏改写如果要真正让 later 维护者独立消费，必须把 `authority surface`、`single-source writeback seam`、`lineage reproof`、`anti-zombie evidence` 与 `reopen liability` 压成正式对象；否则源码先进性仍会退回 pointer、telemetry、archive prose 与作者记忆。
+- 新增目录责任：
+  - `navigation/82` 负责宿主修复稳态纠偏再纠偏改写协议入口。
+  - `api/78-80` 负责三类宿主修复稳态纠偏再纠偏改写的宿主可消费对象、reject 语义与长期 reopen 责任面。
+- 当前新的写作约束：
+  - 不能只写“再纠偏改写该怎样执行”，还要写“哪些字段必须被宿主、CI、评审与交接共同消费，哪些解释文本绝不能再被绑定成公共 ABI”。
+  - `74-82` 应被持续当成一条连续小循环来写，而不是九篇并列新增文章。
+- 下一步最值钱的候选应切到 `playbooks/59-61`，把这一层 rewrite protocol 继续压成固定 rewrite card、reject 顺序与 re-entry / reopen 责任演练。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏失真 / repair steady-state correction-of-correction distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏改写 / repair steady-state correction-of-correction rewrite guide”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏执行失真如果要真正被压回 `compiled request truth`，不能只救 `recorrection card`，还要把 `protocol transcript`、`lawful forgetting boundary`、`stable prefix`、`continue qualification` 与 `threshold liability` 一起拉回同一个编译对象；否则 Prompt 魔力仍会从编译链退回解释链。
+  - 治理宿主修复稳态纠偏再纠偏执行失真如果要真正被压回统一定价控制面，必须把 `authority`、`decision window`、`continuation pricing`、`capability liability` 与 `threshold` 继续视作同一条拒绝免费扩张的控制面；否则安全设计与省 token 设计仍会在 guide 层重新脱钩。
+  - 结构宿主修复稳态纠偏再纠偏执行失真如果要真正被压回结构真相面，必须把 `authority surface`、`single-source`、`lineage reproof`、`anti-zombie evidence` 与 `reopen liability` 放在目录整洁度、健康感与 archive prose 之前；否则源码先进性仍会在 guide 层退回叙事层。
+- 新增目录责任：
+  - `navigation/81` 负责宿主修复稳态纠偏再纠偏执行失真改写入口。
+  - `guides/81-83` 负责三类宿主修复稳态纠偏再纠偏执行失真的固定纠偏顺序、硬拒收项与模板骨架。
+- 当前新的写作约束：
+  - 不能只写“再纠偏执行失真该怎样改”，还要写“哪些更制度化的 recorrection 工件正在冒充恢复对象本身”。
+  - `74-81` 应被持续当成一条连续小循环来写，而不是八篇并列新增文章。
+- 该层已由 `navigation/82`、`api/78-80` 承接；下一步最值钱的候选应切到 `playbooks/59-61`，把这一层 rewrite protocol 继续压成固定 rewrite card、reject 顺序与 re-entry / reopen 责任演练。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏执行 / repair steady-state correction-of-correction execution”继续推进到“宿主修复稳态纠偏再纠偏失真 / repair steady-state correction-of-correction distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏执行最危险的失败，不是没有 `recorrection card`，而是 `recorrection card` 已存在却仍围绕可读 transcript、礼貌 summary、安静 cache 曲线与默认继续工作；这说明 Prompt 魔力最容易从编译链退回解释链。
+  - 治理宿主修复稳态纠偏再纠偏执行最危险的失败，不是没有 `window refreeze` 与 `threshold rebinding`，而是 `decision window`、`Context Usage`、`capability liability` 与 `threshold` 重新退回 mode 面板、usage dashboard 与默认继续；这说明安全设计与省 token 设计最容易在执行层重新脱钩。
+  - 结构宿主修复稳态纠偏再纠偏执行最危险的失败，不是没有 `single-source` 与 `anti-zombie evidence`，而是这些对象重新退回 pointer 健康感、目录审美、archive prose 与 reconnect 提示；这说明源码先进性最容易在执行层重新退回叙事层。
+- 新增目录责任：
+  - `navigation/80` 负责宿主修复稳态纠偏再纠偏失真入口。
+  - `casebooks/52-54` 负责三类宿主修复稳态纠偏再纠偏执行的高阶恢复幻觉样本。
+- 当前新的写作约束：
+  - 不能只写“再纠偏执行为什么会坏”，还要写“哪些更制度化的执行工件正在冒充恢复对象本身”。
+  - `74-80` 应被持续当成一条连续小循环来写，而不是七篇并列新增文章。
+- 该层已由 `navigation/82`、`api/78-80` 承接；下一步最值钱的候选应切到 `playbooks/59-61`，把这一层 rewrite protocol 继续压成固定 rewrite card、reject 顺序与 re-entry / reopen 责任演练。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏协议 / repair steady-state correction-of-correction protocol”继续推进到“宿主修复稳态纠偏再纠偏执行 / repair steady-state correction-of-correction execution”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏执行如果要真正成立，不能只看 correction prose 与 UI 历史是否平静，必须把 `compiled request truth`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary` 与 `continue qualification` 继续压成同一张 `recorrection card`；否则 Prompt 魔力仍会退回文案崇拜。
+  - 治理宿主修复稳态纠偏再纠偏执行如果要真正成立，必须把 `authority -> ledger -> decision window -> continuation pricing -> capability liability -> threshold` 当成同一条拒绝免费扩张的控制面；否则安全设计与省 token 设计仍会重新拆开。
+  - 结构宿主修复稳态纠偏再纠偏执行如果要真正成立，必须把 `authority surface`、`single-source`、`resume lineage`、`writeback custody`、`anti-zombie evidence` 与 `reopen liability` 放回同一张 `recorrection card`；否则 later 团队仍会退回 pointer、telemetry 与作者说明。
+- 新增目录责任：
+  - `navigation/79` 负责宿主修复稳态纠偏再纠偏执行入口。
+  - `playbooks/56-58` 负责三类宿主修复稳态纠偏再纠偏协议的 `recorrection card`、`reject verdict order` 与 `re-entry / reopen` 责任演练。
+- 当前新的写作约束：
+  - `53-55` 只表示 first-order correction execution；`56-58` 必须显式写成 correction-of-correction protocol execution，不得再混用 `correction card`。
+  - `74-79` 应被持续当成一条连续小循环来写，而不是六篇并列新增文章。
+- 该层已由 `navigation/80`、`casebooks/52-54` 承接；下一步最值钱的候选应切到 `guides/81-83`，把这一层 distortion 继续压成固定顺序、拒收升级路径与改写模板骨架。
+- 蓝皮书已经从“宿主修复稳态纠偏再纠偏 / repair steady-state correction-of-correction guide”继续推进到“宿主修复稳态纠偏再纠偏协议 / repair steady-state correction-of-correction protocol”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏再纠偏如果要真正变成宿主可消费协议，不能只保留 `compiled request truth` 与 `stable prefix`，还必须把 `protocol transcript` 与 `lawful forgetting boundary` 正式收进 ABI；否则 Prompt 魔力仍会在 correction prose 与 UI 历史里再次失守。
+  - 治理宿主修复稳态纠偏再纠偏如果要真正变成宿主可消费协议，必须把 `Context Usage` 明确写回 `decision window`，并把 `capability liability` 与 `continuation pricing` 继续放在同一对象里；否则安全设计与省 token 设计仍会重新拆开。
+  - 结构宿主修复稳态纠偏再纠偏如果要真正变成宿主可消费协议，必须把 `authority surface`、`single-source`、`writeback custody`、`anti-zombie evidence` 与 `reservation liability` 同时写进规则面；否则 later 团队仍会退回 pointer、telemetry 与作者说明。
+- 新增目录责任：
+  - `navigation/78` 负责宿主修复稳态纠偏再纠偏协议入口。
+  - `api/75-77` 负责三类宿主修复稳态纠偏再纠偏的宿主可消费对象、reject 语义与长期 reopen 责任面。
+- 当前新的写作约束：
+  - 不再只写“再纠偏该怎样运行”，还要写“哪些字段必须被宿主、CI、评审与交接共同消费，哪些解释文本绝不能再被绑定成公共 ABI”。
+  - 每次继续深化都要回答“当前 recorrection protocol 暴露的是对象边界更稳定了，还是只是在把再纠偏 guide 翻译成更像协议的 prose”。
+- 该层已由 `navigation/79`、`playbooks/56-58` 承接；下一步最值钱的候选应切到 `casebooks/52-54`，把这一层 execution 最常怎样退回假 `recorrection card`、假 `reject verdict` 与假 `reopen liability` 写成新的反例层。
+- 蓝皮书已经从“宿主修复稳态纠偏失真 / repair steady-state correction distortion casebook”继续推进到“宿主修复稳态纠偏再纠偏 / repair steady-state correction-of-correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏执行失真如果要真正被压回 `compiled request truth`，不能只救 correction card，还要把 `protocol transcript` 与 `lawful forgetting boundary` 明确收回正式对象；否则 Prompt 魔力会在“更会解释的 correction prose”里再次失守。
+  - 治理宿主修复稳态纠偏执行失真如果要真正被压回统一定价控制面，必须把 `Context Usage` 明确还原成 `decision window` 的一部分，而不是留在 usage dashboard；否则安全设计与省 token 设计会重新拆开。
+  - 结构宿主修复稳态纠偏执行失真如果要真正被压回结构真相面，必须把 `authority surface`、`single-source`、`anti-cycle seam` 与 `anti-zombie evidence` 放在目录美学之前；否则源码先进性会在“更整洁的修正流程”里再次退回 pointer、telemetry 与作者记忆。
+- 新增目录责任：
+  - `navigation/77` 负责宿主修复稳态纠偏再纠偏入口。
+  - `guides/78-80` 负责三类宿主修复稳态纠偏执行失真的固定纠偏顺序、硬拒收项与模板骨架。
+- 当前新的写作约束：
+  - 不再只写“steady-state correction execution distortion 该怎样纠偏”，还要写“哪些看起来已经 restored 的 correction prose、mode 平静感、pointer 健康感与作者解释，其实正在重新抢走正式对象”。
+  - 每次继续深化都要回答“当前 correction-of-correction 暴露的是单一真相正在被重新救回，还是只是在制造一套更会安抚人的制度化修正叙事”。
+- 下一步最值钱的候选应切到 `api/75-77`，把这一层 guide 明确压成宿主可消费的修正对象、拒收升级语义与长期 reopen 责任面。
+- 蓝皮书已经从“宿主修复稳态纠偏执行 / repair steady-state correction execution”继续推进到“宿主修复稳态纠偏失真 / repair steady-state correction distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏执行即使已经有 correction card、recovery verdict order、requalification drill 与 threshold reinstatement drill，仍最容易死于假修正卡、口头真相恢复、前缀复托管表演与阈值装饰化；否则 Prompt 的编译链魔力会在纠偏执行层重新退回 steady note、summary prose 与“最近没出事”。
+  - 治理宿主修复稳态纠偏执行即使已经有 correction card、correction verdict order、capability recustody 与 threshold rebinding drill，仍最容易死于假纠偏、假再托管、免费继续回魂与假阈值重绑；否则安全设计与省 token 设计会在纠偏执行层重新拆成 mode 面板、usage dashboard 与保守建议。
+  - 结构宿主修复稳态纠偏执行即使已经有 correction card、correction verdict order、archive restitution、re-entry threshold 与 reopen responsibility drill，仍最容易死于假修正、假恢复顺序、伪复证与假责任保留；否则源码先进性会在纠偏执行层重新退回 pointer、telemetry、archive prose 与作者说明。
+- 新增目录责任：
+  - `navigation/76` 负责宿主修复稳态纠偏失真入口。
+  - `casebooks/49-51` 负责三类宿主修复稳态纠偏执行的假修正卡、假恢复顺序与假责任演练反例。
+- 当前新的写作约束：
+  - 不再只写“steady-state correction execution 该怎样运行”，还要写“哪些看起来已经 restored 的工件其实正在重新制造第二真相、免费继续与假责任保留”。
+  - 每次继续深化都要回答“当前 steady-state correction distortion 暴露的是单一真相正在失守，还是只是在被一套更制度化的纠偏执行叙事替位”。
+- 蓝皮书已经从“宿主修复稳态纠偏协议 / repair steady-state correction protocol”继续推进到“宿主修复稳态纠偏执行 / repair steady-state correction execution”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏协议如果要真正可执行，必须继续把 `steady_correction_object`、`truth_continuity_recovery`、`stable_prefix_recustody`、`continuation_requalification` 与 `threshold_reinstatement` 压成 correction card、固定 recovery verdict order 与 re-entry / reopen drill，而不是继续停在 steady note 与 protocol 字段层；否则 Prompt 魔力会重新退回“更正式的纠偏说明”。
+  - 治理宿主修复稳态纠偏协议如果要真正统一安全设计与省 token 设计，必须继续把 `authority_reassertion`、`ledger_reseal`、`window_refreeze`、`continuation_repricing`、`capability_recustody` 与 `threshold_rebinding` 压成 correction card、固定 verdict order 与 liability drill，而不是继续停在 mode 面板、usage dashboard 与 protocol 口号；否则 authority、定价、能力与责任会再次脱钩。
+  - 结构宿主修复稳态纠偏协议如果要真正让 later 维护者独立执行，必须继续把 `authority_rebind`、`resume_lineage_rebuild`、`writeback_recustody`、`anti_zombie_reproof`、`archive_truth_restitution` 与 `reservation_rebinding` 压成 correction card、固定执行顺序与 reopen responsibility drill，而不是继续停在 pointer、telemetry、archive prose 与作者说明；否则源码先进性会重新退回健康感与复盘叙事。
+- 新增目录责任：
+  - `navigation/75` 负责宿主修复稳态纠偏执行入口。
+  - `playbooks/53-55` 负责三类宿主修复稳态纠偏协议的 correction card、执行顺序与再入场责任演练。
+- 当前新的写作约束：
+  - 不再只写“steady-state correction protocol 该消费哪些对象”，还要写“现场先看哪张 correction card、先执行哪个对象、何时必须降级 verdict、谁有权宣布 restored、re-entry / reopen 到底回哪个边界”。
+  - 每次继续深化都要回答“当前 steady-state correction execution 保护的是无人继续盯防时的真相延续，还是只是在把 protocol 运行成一套更制度化的售后流程”。
+- 蓝皮书已经从“宿主修复稳态纠偏 / repair steady-state correction guide”继续推进到“宿主修复稳态纠偏协议 / repair steady-state correction protocol”层。
+- 新增结论：
+  - Prompt 宿主修复稳态纠偏如果要真正可被宿主、CI、评审与交接共享消费，必须继续把 `truth continuity recovery`、`stable prefix recustody`、`baseline dormancy reseal`、`continuation requalification`、`handoff continuity repair` 与 `threshold reinstatement` 压成同一个 correction object，而不是继续停在 steady note、summary prose 与平静感；否则 Prompt 魔力会从编译链重新退回叙事链。
+  - 治理宿主修复稳态纠偏如果要真正统一安全设计与省 token 设计，必须继续把 `authority reassertion`、`ledger reseal`、`window refreeze`、`continuation repricing`、`capability recustody` 与 `threshold rebinding` 压成同一个治理 correction object，而不是继续围绕 mode 面板、usage dashboard 与保守建议工作；否则 authority、定价、能力与责任会重新分裂成多套投影。
+  - 结构宿主修复稳态纠偏如果要真正让作者退场后真相仍可存活，必须继续把 `authority rebind`、`resume lineage rebuild`、`writeback recustody`、`anti_zombie reproof`、`archive truth restitution` 与 `reservation rebinding` 压成同一个结构 correction object，而不是继续围绕 pointer、telemetry、archive prose 与作者说明工作；否则源码先进性会重新退回健康感与复盘叙事。
+- 新增目录责任：
+  - `navigation/74` 负责宿主修复稳态纠偏协议入口。
+  - `api/72-74` 负责三类宿主修复稳态执行失真的宿主可消费修正对象、拒收升级语义与长期 reopen 责任面。
+- 当前新的写作约束：
+  - 不再只写“steady-state correction 应按什么顺序修”，还要写“纠偏结果该被哪些消费者共享、哪些 reject / escalation 语义必须共用、哪些 threshold / reservation 字段必须被长期保留”。
+  - 每次继续深化都要回答“当前 steady-state correction protocol 保护的是无人继续盯防时可反对、可重开、可重建的正式条件，还是只是在制造一套更正式的纠偏售后说明”。
+- 蓝皮书已经从“宿主修复稳态失真 / repair steady-state distortion casebook”继续推进到“宿主修复稳态纠偏 / repair steady-state correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复稳态失真如果要真正纠偏，必须先冻结假稳态，再把 `truth_continuity`、`stable_prefix_custody`、`baseline_dormancy_seal`、`continuation_eligibility`、`handoff_continuity_warranty` 与 `reopen_threshold` 拉回同一个 `compiled request truth`，而不是继续围绕 summary、平静感与默认 continuation 修补；否则 Prompt 的编译链魔力会在 steady-state 层退回叙事链。
+  - 治理宿主修复稳态失真如果要真正纠偏，必须先拆掉 authority 投影，再把 `authority_continuity`、`ledger_dormancy_seal`、`window_dormancy`、`continuation_pricing_covenant`、`capability_custody` 与 `reopen_threshold` 拉回同一个统一定价治理对象，而不是继续围绕 mode 面板、usage dashboard 与经验式保守建议修补；否则安全设计与省 token 设计会在 steady-state 层重新脱钩。
+  - 结构宿主修复稳态失真如果要真正纠偏，必须先 demote pointer、side-write、监控转绿与 archive prose，再把 `authority_continuity`、`resume_continuity_seal`、`writeback_custody`、`anti_zombie_dormancy`、`archive_truth` 与 `reopen_reservation_boundary` 拉回同一个结构真相面，而不是继续围绕 pointer、telemetry 与作者说明修补；否则源码先进性会在 steady-state 层退回健康感、复盘文本与 reconnect 提示。
+- 新增目录责任：
+  - `navigation/73` 负责宿主修复稳态纠偏入口。
+  - `guides/75-77` 负责三类宿主修复稳态执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“steady-state distortion 在说谎”，还要写“纠偏时先冻结哪个假 steady 信号、再救哪个正式对象、哪些情况必须直接 hard reject、模板骨架该如何重写”。
+  - 每次继续深化都要回答“当前 steady-state correction 保护的是未来仍可反对当前 steady 的正式条件，还是只是在制造一份更制度化的平静叙事”。
+- 蓝皮书已经从“宿主修复稳态执行 / repair steady-state execution”继续推进到“宿主修复稳态失真 / repair steady-state distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复稳态执行即使已经有 steady-state card、continuity verdict order、re-entry threshold 与 residual reopen drill，仍最容易死于假稳态、前缀托管表演、handoff 口头化与无阈值继续；否则 Prompt 的编译链魔力会在稳态层重新退回 summary、平静感与继续幻觉。
+  - 治理宿主修复稳态执行即使已经有 steady-state card、pricing verdict order、capability custody 与 liability drill，仍最容易死于假稳态、能力托管表演、dashboard 崇拜与免费继续复活；否则安全设计与省 token 设计会在稳态层重新拆成 mode 面板、usage dashboard 与经验式保守建议。
+  - 结构宿主修复稳态执行即使已经有 steady-state card、steady verdict order、archive custody 与 reopen reservation drill，仍最容易死于假稳态、归档托管表演、pointer 健康感、side-write 健康幻觉与假边界保留；否则源码先进性会在稳态层重新退回 pointer、telemetry 与作者记忆。
+- 新增目录责任：
+  - `navigation/72` 负责宿主修复稳态失真入口。
+  - `casebooks/46-48` 负责三类宿主修复稳态执行的假稳态、假托管与假阈值反例。
+- 当前新的写作约束：
+  - 不再只写“steady-state execution 该怎样运行”，还要写“哪些看起来已经 steady 的工件其实正在重新制造第二真相、免费继续与 pointer 式稳定”。
+  - 每次继续深化都要回答“当前 steady-state distortion 暴露的是单一真相正在失守，还是只是在被一套更制度化的稳态叙事替位”。
+- 蓝皮书已经从“宿主修复稳态协议 / repair steady-state contract”继续推进到“宿主修复稳态执行 / repair steady-state execution”层。
+- 新增结论：
+  - Prompt 宿主修复稳态如果要真正可运行，必须继续围绕 `truth continuity`、`stable prefix custody`、`baseline dormancy seal`、`continuation eligibility`、`handoff continuity` 与 `reopen threshold` 执行固定稳态判定顺序，而不是继续围绕 summary、watch note 与“最近一直很稳”宣布 steady。
+  - 治理宿主修复稳态如果要真正可运行，必须继续围绕 `authority continuity`、`ledger dormancy seal`、`window dormancy`、`continuation pricing covenant`、`capability custody` 与 `reopen threshold` 执行固定稳态判定顺序，而不是继续围绕 mode 面板、usage dashboard 与经验式保守建议宣布 capability 仍安全。
+  - 结构宿主修复稳态如果要真正可运行，必须继续围绕 `authority continuity`、`resume continuity seal`、`writeback custody`、`anti-zombie dormancy`、`archive truth` 与 `reopen reservation boundary` 执行固定稳态判定顺序，而不是继续围绕 pointer、telemetry 转绿与作者说明宣布系统仍健康。
+- 新增目录责任：
+  - `navigation/71` 负责宿主修复稳态执行入口。
+  - `playbooks/50-52` 负责三类宿主修复稳态协议的巡检卡、稳态判定顺序与再入场责任演练。
+- 当前新的写作约束：
+  - 不再只写“哪些 steady-state object 应被消费”，还要写“现场先看什么、谁有权宣布 stable / blocked / reentry_required、什么时候必须回到 reopen threshold”。
+  - 每次继续深化都要回答“当前 steady-state execution 保护的是无人盯防时的单一真相延续，还是只是在维护一套更制度化的 release 后秩序幻觉”。
+- 蓝皮书已经从“宿主修复解除监护纠偏 / repair watch release correction guide”继续推进到“宿主修复稳态协议 / repair steady-state contract”层。
+- 新增结论：
+  - Prompt 宿主修复解除监护纠偏如果要真正进入稳态，必须继续把 `truth continuity`、`stable prefix custody`、`baseline dormancy seal`、`continuation eligibility`、`handoff continuity` 与 `reopen threshold` 拉回同一个 `compiled request truth`，而不是继续围绕 summary、watch note 与“最近一直很稳”维持 released 幻觉。
+  - 治理宿主修复解除监护纠偏如果要真正进入稳态，必须继续把 `authority continuity`、`ledger dormancy seal`、`window dormancy`、`continuation pricing covenant`、`capability custody` 与 `reopen threshold` 拉回同一个统一定价治理对象，而不是继续围绕 mode 面板、usage dashboard 与经验式保守建议维持 capability released 幻觉。
+  - 结构宿主修复解除监护纠偏如果要真正进入稳态，必须继续把 `authority continuity`、`resume continuity seal`、`writeback custody`、`anti-zombie dormancy`、`archive truth` 与 `reopen reservation boundary` 拉回同一个结构真相面，而不是继续围绕 pointer、telemetry 转绿与作者说明维持系统仍然健康的幻觉。
+- 新增目录责任：
+  - `navigation/70` 负责宿主修复稳态协议入口。
+  - `api/69-71` 负责三类宿主修复解除监护纠偏的无人盯防延续、继续定价、写回托管与 residual reopen threshold 规则面。
+- 当前新的写作约束：
+  - 不再只写“release correction 该怎样拒收假放行”，还要写“停止额外监护之后，哪些正式对象继续维持真相成立，哪些 reopen threshold 仍必须被宿主保留”。
+  - 每次继续深化都要回答“当前 steady-state contract 保护的是无人盯防时的单一真相延续，还是只是在修补一份更稳定的 release 后叙事”。
+- 蓝皮书已经从“宿主修复解除监护失真 / repair watch release distortion casebook”继续推进到“宿主修复解除监护纠偏 / repair watch release correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复解除监护失真如果要真正纠偏，必须先冻结假 released 与静默放行，再把 watch release object、stability witness、baseline drift ledger seal、continuation clearance、handoff release warranty 与 residual reopen gate 拉回同一个 `compiled request truth`，而不是继续围绕 watch note、summary handoff 与“最近没出事”修补。
+  - 治理宿主修复解除监护失真如果要真正纠偏，必须先拆掉免责式出监，再把 authority release、ledger clearance、window exit、continuation settlement、quarantine release 与 reopen liability 拉回同一个统一定价治理对象，而不是继续围绕 mode 面板、usage dashboard、经验式保守建议与主观放心感修补。
+  - 结构宿主修复解除监护失真如果要真正纠偏，必须先 demote 假退休信号，再把 authority release、resume stability seal、writeback release、anti-zombie archive、boundary retirement 与 reopen reservation 拉回同一个结构真相面，而不是继续围绕 pointer、监控转绿、telemetry 繁荣与作者说明修补。
+- 新增目录责任：
+  - `navigation/69` 负责宿主修复解除监护纠偏入口。
+  - `guides/72-74` 负责三类宿主修复解除监护执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些 release execution 信号在说谎”，还要写“纠偏时先冻结哪个假放行信号、再救哪个正式对象、哪些情况必须直接 hard reject”。
+  - 每次继续深化都要回答“当前 watch release correction 保护的是无人继续盯防时的单一真相延续，还是只是在修补一个更制度化的结案叙事”。
+- 蓝皮书已经从“宿主修复解除监护执行 / repair watch release execution”继续推进到“宿主修复解除监护失真 / repair watch release distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复解除监护执行即使已经有 release card、release verdict order、handoff release 与 residual reopen drill，仍最容易死于静默放行、叙事放行、gate 装饰化与无责任 release；否则 Prompt 的编译链魔力会在 release 层重新退回 watch note、summary handoff 与“最近没出事”。
+  - 治理宿主修复解除监护执行即使已经有 release card、release verdict order、capability release 与 reopen liability drill，仍最容易死于免责式出监、假清账、quarantine 建议化与免费继续；否则安全设计与省 token 设计会在 release 层重新拆成 mode 面板、usage dashboard 与经验式保守建议。
+  - 结构宿主修复解除监护执行即使已经有 release card、release verdict order、archive drill、boundary retirement 与 reopen reservation drill，仍最容易死于假退休、归档表演、pointer 式稳定与假保留重开；否则源码先进性会在 release 层重新退回 pointer、监控与作者记忆。
+- 新增目录责任：
+  - `navigation/68` 负责宿主修复解除监护失真入口。
+  - `casebooks/43-45` 负责三类宿主修复解除监护执行的静默放行、免责式出监与假退休反例。
+- 当前新的写作约束：
+  - 不再只写“release execution 该怎样运行”，还要写“哪些看起来已经正式 released 的工件其实正在重新制造第二真相、免责式放行与假退休”。
+  - 每次继续深化都要回答“当前 watch release distortion 暴露的是单一真相正在失守，还是只是在被一套更制度化的结案叙事替位”。
+- 蓝皮书已经从“宿主修复解除监护协议 / repair watch release contract”继续推进到“宿主修复解除监护执行 / repair watch release execution”层。
+- 新增结论：
+  - Prompt 宿主修复解除监护如果要真正落地运行，必须继续围绕 watch release object、stability witness、baseline drift ledger seal、continuation clearance、handoff release warranty 与 reopen residual gate 执行固定 release verdict 顺序，而不是继续围绕 watch note、交接文案与“最近没出事”宣布 released。
+  - 治理宿主修复解除监护如果要真正落地运行，必须继续围绕 authority release、ledger clearance、window exit、continuation settlement、quarantine release 与 reopen liability 执行固定 release verdict 顺序，而不是继续围绕 mode 面板、usage dashboard、经验式保守建议与主观放心感宣布 capability released。
+  - 结构宿主修复解除监护如果要真正落地运行，必须继续围绕 authority release、resume stability seal、writeback release、anti-zombie archive、boundary retirement 与 reopen reservation 执行固定 release verdict 顺序，而不是继续围绕 pointer、监控转绿、telemetry 繁荣与作者说明宣布已经稳定。
+- 新增目录责任：
+  - `navigation/67` 负责宿主修复解除监护执行入口。
+  - `playbooks/47-49` 负责三类宿主修复解除监护协议的 release card、release verdict order 与 reopen 责任演练手册。
+- 当前新的写作约束：
+  - 不再只写“哪些 release object 应被消费”，还要写“现场先看什么、谁有权宣布 released / blocked / released_with_liability、什么时候必须回退到 monitor_extended 或 reopen_required”。
+  - 每次继续深化都要回答“当前 watch release execution 保护的是无人继续盯防时的单一真相延续，还是只是在给售后叙事补一个更制度化的结束流程”。
+- 蓝皮书已经从“宿主修复监护纠偏 / repair watch correction guide”继续推进到“宿主修复解除监护协议 / repair watch release contract”层。
+- 新增结论：
+  - Prompt 宿主修复监护纠偏如果要真正结束额外盯防，必须继续把 watch release object、stability witness、baseline drift ledger seal、continuation clearance、handoff release warranty 与 residual reopen gate 拉回同一个 `compiled request truth`，而不是继续围绕 watch note、无告警时长与交接文案宣布“观察结束”。
+  - 治理宿主修复监护纠偏如果要真正结束额外治理盯防，必须继续把 authority release、ledger residue clearance、window exit、continuation settlement、quarantine release 与 reopen liability 拉回同一个统一定价治理对象，而不是继续围绕 mode 面板、usage dashboard、经验式保守建议与主观放心感宣布“解除观察”。
+  - 结构宿主修复监护纠偏如果要真正结束额外结构盯防，必须继续把 authority release、resume stability seal、writeback release、anti-zombie archive 与 boundary retirement 拉回同一个结构真相面，而不是继续围绕 pointer、监控转绿、telemetry 繁荣与作者说明宣布“已经稳定”。
+- 新增目录责任：
+  - `navigation/66` 负责宿主修复解除监护协议入口。
+  - `api/66-68` 负责三类宿主修复监护纠偏的解除判定、稳定释压、解除隔离、归档保证与 residual reopen 责任面。
+- 当前新的写作约束：
+  - 不再只写“纠偏后该继续看什么”，还要写“系统凭什么可以停止额外盯防、哪些 release object 必须共享消费、哪些 reopen liability 必须继续保留”。
+  - 每次继续深化都要回答“当前 watch release 保护的是无人继续盯防时的单一真相延续，还是只是在给售后叙事补一个结束按钮”。
+- 蓝皮书已经从“宿主修复监护失真 / repair watch distortion casebook”继续推进到“宿主修复监护纠偏 / repair watch correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复监护失真如果要真正纠偏，必须先冻结假观察与 narrative monitoring，再把 watch window、baseline drift ledger、handoff freeze 与 reopen gate 拉回同一个 `compiled request truth`，而不是继续围绕 closeout note、观察说明与按钮式 reopen 修补。
+  - 治理宿主修复监护失真如果要真正纠偏，必须先拆掉 authority 假观察，再把 ledger residue、window watch、continuation repricing、quarantine order 与 reopen gate 拉回同一个统一定价治理对象，而不是继续围绕 mode 面板、usage dashboard、告警噪音与保守建议修补。
+  - 结构宿主修复监护失真如果要真正纠偏，必须先 demote 假稳定，再把 authority watch、resume regression watch、writeback 主路径、anti-zombie watch 与 boundary quarantine 拉回同一个结构真相面，而不是继续围绕 pointer、监控转绿、telemetry 繁荣与作者说明修补。
+- 新增目录责任：
+  - `navigation/65` 负责宿主修复监护纠偏入口。
+  - `guides/69-71` 负责三类宿主修复监护执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些监护执行信号在说谎”，还要写“纠偏时先冻结哪个假观察信号、再救哪个正式对象、哪些情况必须直接 hard reject”。
+  - 每次继续深化都要回答“当前 watch correction 保护的是单一真相的长期延续，还是只是在修补一个更制度化的售后叙事”。
+- 蓝皮书已经从“宿主修复监护执行 / repair watch execution”继续推进到“宿主修复监护失真 / repair watch distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复监护执行即使已经有 watch card、drift verdict order、handoff freeze 与 reopen drill，仍最容易死于 monitor_only 叙事化、baseline drift ledger 故事化、freeze 软化、deadline 装饰化与假 reopen；否则 Prompt 的编译链魔力会在售后监护层重新退回备注、提醒与按钮判断。
+  - 治理宿主修复监护执行即使已经有 watch card、drift verdict order、quarantine order 与 reopen drill，仍最容易死于 authority watch 退回 mode 看板、ledger residue 噪声化、window watch 面板化、quarantine 备注化与免费重开；否则安全设计与省 token 设计会在监护层重新拆成 mode 面板、usage 图表与保守建议三套投影。
+  - 结构宿主修复监护执行即使已经有 watch card、drift verdict order、handoff freeze 与 reopen drill，仍最容易死于 breadcrumb 复活、telemetry 冒充 writeback watch、anti-zombie 口头化、freeze 退回备注与 reconnect 冒充 reopen；否则源码先进性会在监护层重新退回 pointer、监控与作者记忆。
+- 新增目录责任：
+  - `navigation/64` 负责宿主修复监护失真入口。
+  - `casebooks/40-42` 负责三类宿主修复监护执行的假观察、假冻结与假重开反例。
+- 当前新的写作约束：
+  - 不再只写“监护执行该怎样运行”，还要写“哪些看起来已经在认真观察的工件其实正在重新制造第二真相、假冻结与免费重开”。
+  - 每次继续深化都要回答“当前 watch distortion 暴露的是单一真相正在失守，还是只是在被一套更制度化的售后叙事替位”。
+- 蓝皮书已经从“宿主修复监护协议 / repair watch contract”继续推进到“宿主修复监护执行 / repair watch execution”层。
+- 新增结论：
+  - Prompt 宿主修复监护如果要真正落地运行，必须继续围绕 watch window、continuation watch、baseline drift ledger、handoff watch 与 reopen gate 执行固定漂移判定顺序，而不是继续围绕 closeout note、summary handoff 与观察建议判断。
+  - 治理宿主修复监护如果要真正落地运行，必须继续围绕 authority watch、ledger residue、window watch、continuation repricing watch 与 rollback quarantine 执行固定漂移判定顺序，而不是继续围绕 mode 面板、usage 图表与保守建议判断。
+  - 结构宿主修复监护如果要真正落地运行，必须继续围绕 authority watch、resume regression watch、writeback watch、anti-zombie watch 与 boundary quarantine 执行固定漂移判定顺序，而不是继续围绕 pointer、监控成功率与作者口述判断。
+- 新增目录责任：
+  - `navigation/63` 负责宿主修复监护执行入口。
+  - `playbooks/44-46` 负责三类宿主修复监护协议的 watch card、drift verdict order 与 reopen 演练手册。
+- 当前新的写作约束：
+  - 不再只写“该消费哪些 watch contract 字段”，还要写“现场先看什么、何时冻结 handoff 或 capability expansion、何时必须 reopen、漂移判定到底回哪个对象边界”。
+  - 每次继续深化都要回答“当前 watch execution 保护的是单一真相的长期延续，还是只是在把监护协议重新翻译成更细的观察表单”。
+- 蓝皮书已经从“宿主修复收口纠偏 / repair closeout correction guide”继续推进到“宿主修复监护协议 / repair watch contract”层。
+- 新增结论：
+  - Prompt 宿主修复收口纠偏如果要真正保持结束能力，必须继续把 `monitor_only`、handoff watch、baseline drift ledger 与 reopen gate 压成正式监护对象，而不是继续围绕 closeout note、summary handoff 与‘先观察一下’工作。
+  - 治理宿主修复收口纠偏如果要真正保持统一定价，必须继续把 authority watch、ledger residue、window watch、continuation repricing watch 与 rollback quarantine 压成正式监护对象，而不是继续围绕 mode 面板、usage dashboard 与保守建议工作。
+  - 结构宿主修复收口纠偏如果要真正保持结构真相面，必须继续把 authority watch、resume regression watch、writeback watch、anti-zombie watch 与 boundary quarantine 压成正式监护对象，而不是继续围绕 pointer 健康感、监控转绿与作者说明工作。
+- 新增目录责任：
+  - `navigation/62` 负责宿主修复监护协议入口。
+  - `api/63-65` 负责三类宿主修复收口纠偏的监护窗口、漂移观察与重开闸门面。
+- 当前新的写作约束：
+  - 不再只写“收口失真怎么纠偏”，还要写“纠偏之后系统到底该继续观察什么、哪些漂移必须被正式记账、reopen 何时变成正式闸门而不是建议”。
+  - 每次继续深化都要回答“当前 repair watch contract 保护的是单一真相的延续，还是只是在给完成叙事补售后”。
+- 蓝皮书已经从“宿主修复收口失真 / repair closeout distortion casebook”继续推进到“宿主修复收口纠偏 / repair closeout correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复收口失真如果要真正纠偏，必须先冻结假完成与 summary-only closeout，再把 restored request object、protocol truth witness、baseline reset、handoff warranty 与 reopen gate 拉回同一个 `compiled request truth`，而不是继续围绕 closeout 文案、compact 后的轻量感与按钮式 reopen 修补。
+  - 治理宿主修复收口失真如果要真正纠偏，必须先拆掉 authority 假收口，再把 ledger seal、window closure、continuation repricing、rollback clearance 与 handoff warranty 拉回同一个统一定价治理对象，而不是继续围绕 mode 面板、审批完成感、usage dashboard 与经验式 handoff 修补。
+  - 结构宿主修复收口失真如果要真正纠偏，必须先 demote breadcrumb，再把 authority seal、resume closure order、writeback 主路径、anti-zombie witness 与 recovery boundary 拉回同一个结构真相面，而不是继续围绕 reconnect 成功感、telemetry 繁荣与作者说明修补。
+- 新增目录责任：
+  - `navigation/61` 负责宿主修复收口纠偏入口。
+  - `guides/66-68` 负责三类宿主修复收口执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些收口执行信号在说谎”，还要写“纠偏时先冻结哪个假完成信号、再救哪个正式对象、哪些情况必须直接 hard reject”。
+  - 每次继续深化都要回答“当前 closeout correction 保护的是单一真相的结束能力，还是只是在修补一个更制度化的完成叙事”。
+- 蓝皮书已经从“宿主修复收口执行 / repair closeout execution”继续推进到“宿主修复收口失真 / repair closeout distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复收口执行即使已经有 closeout card、completion verdict order、handoff warranty 与 reopen drill，仍最容易死于假完成、protocol witness 漂白、summary handoff、baseline reset 假证明与假 reopen；否则 Prompt 的编译链魔力会在收口层重新退回 closeout 文案、摘要交接与按钮式重开。
+  - 治理宿主修复收口执行即使已经有 closeout card、completion verdict order、handoff warranty 与 reopen drill，仍最容易死于 authority 假收口、ledger 未排空、window 假关闭、经验式 handoff 与免费重开；否则安全设计与省 token 设计会在收口层重新拆成 mode 面板、审批完成感与 token 图表三套投影。
+  - 结构宿主修复收口执行即使已经有 closeout card、completion verdict order、handoff warranty 与 reopen drill，仍最容易死于 breadcrumb 复辟、resume 跳步、writeback seal 伪装、anti-zombie 口头化与 reconnect 冒充 handoff / reopen；否则源码先进性会在收口层重新退回 pointer、重连通过感、日志繁荣与作者口述。
+- 新增目录责任：
+  - `navigation/60` 负责宿主修复收口失真入口。
+  - `casebooks/37-39` 负责三类宿主修复收口执行的假完成、假交接与假重开反例。
+- 当前新的写作约束：
+  - 不再只写“收口执行该怎样运行”，还要写“哪些看起来已经正式 closeout 的工件其实正在重新制造第二真相、假交接与免费重开”。
+  - 每次继续深化都要回答“当前 closeout distortion 暴露的是单一真相正在失守，还是只是在被一套更制度化的完成叙事替位”。
+- 蓝皮书已经从“宿主修复收口协议 / repair closeout contract”继续推进到“宿主修复收口执行 / repair closeout execution”层。
+- 新增结论：
+  - Prompt 宿主修复收口如果要真正落地运行，必须继续围绕 restored request object、protocol truth witness、rollback witness、handoff warranty 与 reopen trigger 执行固定完成判定顺序，而不是继续围绕事故总结、summary handoff 与默认继续判断。
+  - 治理宿主修复收口如果要真正落地运行，必须继续围绕 authority settlement、ledger seal、window closure、continuation warranty 与 rollback clearance 执行固定完成判定顺序，而不是继续围绕 mode、审批弹窗与 token 仪表盘判断。
+  - 结构宿主修复收口如果要真正落地运行，必须继续围绕 authority seal、resume closure order、writeback seal、anti-zombie witness 与 boundary closure 执行固定完成判定顺序，而不是继续围绕 pointer、重连成功率、日志繁荣与作者口述判断。
+- 新增目录责任：
+  - `navigation/59` 负责宿主修复收口执行入口。
+  - `playbooks/41-43` 负责三类宿主修复收口协议的执行卡、完成判定顺序与交接剧本。
+- 当前新的写作约束：
+  - 不再只写“该消费哪些 closeout contract 字段”，还要写“现场先看什么、何时阻断 handoff、何时必须 reopen、完成判定到底回哪个对象边界”。
+  - 每次继续深化都要回答“当前 closeout execution 保护的是单一真相的完成顺序，还是只是在把收口协议重新翻译成更细的完成表单”。
+- 蓝皮书已经从“宿主修复纠偏 / repair correction guide”继续推进到“宿主修复收口协议 / repair closeout contract”层。
+- 新增结论：
+  - Prompt 宿主修复纠偏如果要真正结束，必须继续围绕 restored request object、protocol truth witness、rollback witness、re-entry warranty 与 closeout verdict，而不是继续围绕事故说明、summary handoff 与默认继续。
+  - 治理宿主修复纠偏如果要真正结束，必须继续围绕 authority settlement、ledger seal、window closure、continuation warranty 与 rollback clearance，而不是继续围绕 mode 恢复、审批完成感与 token 图表转绿。
+  - 结构宿主修复纠偏如果要真正结束，必须继续围绕 authority seal、resume closure order、writeback seal、anti-zombie witness 与 boundary closure，而不是继续围绕 pointer、重连通过感、日志繁荣与恢复成功率。
+- 新增目录责任：
+  - `navigation/58` 负责宿主修复收口协议入口。
+  - `api/60-62` 负责三类宿主修复纠偏的收口卡、完成语义与交接保证面。
+- 当前新的写作约束：
+  - 不再只写“该怎样纠偏”，还要写“哪些收口对象必须被宿主正式消费、哪些完成 verdict 必须共享、哪些内部止血动作绝不能被绑成公共完成语义”。
+  - 每次继续深化都要回答“当前 repair closeout contract 保护的是单一真相的正式收口，还是只是在把修复完成感写成更细的说明书”。
+- 蓝皮书已经从“宿主修复失真 / repair distortion casebook”继续推进到“宿主修复纠偏 / repair correction guide”层。
+- 新增结论：
+  - Prompt 宿主修复失真如果要真正纠偏，必须先把 repair object 从事故说明与摘要故事里降回对象绑定，再把 protocol truth、rollback boundary、lawful forgetting object 与 re-entry gate 重新拉回固定顺序，而不是继续围绕修复解释、旧 summary 与默认继续修补。
+  - 治理宿主修复失真如果要真正纠偏，必须先把 mode 恢复降回 authority 投影，再把 ledger、decision window、continuation repricing 与 rollback object 重新拉回固定顺序，而不是继续围绕面板刷新、审批完成感与免费继续修补。
+  - 结构宿主修复失真如果要真正纠偏，必须先把 breadcrumb、重连通过感与日志繁荣降回辅助信号，再把 authority object、resume order、writeback 主路径与 anti-zombie projection 重新拉回固定顺序，而不是继续围绕 pointer、成功率与目录美学修补。
+- 新增目录责任：
+  - `navigation/57` 负责宿主修复纠偏入口。
+  - `guides/63-65` 负责三类宿主修复演练失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些修复演练信号在说谎”，还要写“纠偏时先救哪个对象、哪些现象必须直接 hard reject、模板骨架该如何改写”。
+  - 每次继续深化都要回答“当前 repair correction 保护的是单一真相的恢复能力，还是只是在修补一个更制度化的修复叙事”。
+- 蓝皮书已经从“宿主修复演练 / repair drill”继续推进到“宿主修复失真 / repair distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主修复演练即使已经有 repair card、rollback drill 与 re-entry drill，仍最容易死于 repair object 伪绑定、protocol truth 被修复说明掩盖、摘要回滚与默认继续；否则 Prompt 的编译链魔力会在修复层重新退回事故叙事与按钮状态。
+  - 治理宿主修复演练即使已经有 authority repair、window reset 与 repricing drill，仍最容易死于 authority 假恢复、stale ledger 漂白、仪表盘式窗口重置与免费重入；否则安全设计与省 token 设计会在修复层重新拆成两套互不相干的补救流程。
+  - 结构宿主修复演练即使已经有 authority recovery、writeback restoration 与 anti-zombie drill，仍最容易死于 breadcrumb 篡位、resume 顺序隐式化、旁路写回、anti-zombie 伪证明与 reconnect 冒充 rollback；否则源码先进性会在修复层重新退回目录美学、日志繁荣与恢复成功率崇拜。
+- 新增目录责任：
+  - `navigation/56` 负责宿主修复失真入口。
+  - `casebooks/34-36` 负责三类宿主修复演练的假修复、假回滚与假重入反例。
+- 当前新的写作约束：
+  - 不再只写“修复演练如何运行”，还要写“哪些看起来已经完成修复的工件其实正在重新制造第二真相、假连续性与假先进性”。
+  - 每次继续深化都要回答“当前 repair distortion 暴露的是单一真相正在失守，还是只是在被一套更制度化的修复叙事替位”。
+- 蓝皮书已经从“宿主修复协议 / repair contract”继续推进到“宿主修复演练 / repair drill”层。
+- 新增结论：
+  - Prompt 宿主修复如果要真正可重放，必须继续把 repair object、reject escalation、rollback boundary 与 re-entry qualification 压成共享升级卡、rollback drill 与 re-entry drill，持续证明 repair、rollback 与 re-entry 仍围绕同一个 `compiled request truth` 发生，而不是继续围绕 reviewer 解释、旧摘要与按钮状态工作。
+  - 治理宿主修复如果要真正可重放，必须继续把 authority repair、ledger rebuild、decision window reset、continuation repricing 与 rollback object 压成共享升级卡、rollback drill 与 re-entry drill，持续证明安全设计与省 token 设计仍共用同一个治理对象，而不是继续围绕 mode、审批与 token 图表分头补救。
+  - 结构宿主修复如果要真正可重放，必须继续把 authority recovery、resume replay order、writeback restoration、anti-zombie verdict 与 boundary reset 压成共享升级卡、rollback drill 与 re-entry drill，持续证明 authority、writeback 与 anti-zombie 仍共用同一个结构真相面，而不是继续围绕 pointer、重连与日志繁荣补救。
+- 新增目录责任：
+  - `navigation/55` 负责宿主修复演练入口。
+  - `playbooks/38-40` 负责三类宿主修复协议的共享升级卡、rollback drill 与 re-entry drill。
+- 当前新的写作约束：
+  - 不再只写“该消费哪些 repair object”，还要写“哪张升级卡必须跨消费者共享、哪类 rollback drill 真能证明回到对象边界、哪类 re-entry drill 一旦失败必须直接拒收”。
+  - 每次继续深化都要回答“当前 repair drill 保护的是单一真相的可重放恢复能力，还是只是在把事故补救流程写得更制度化”。
+- 蓝皮书已经从“宿主验收纠偏 / acceptance correction guide”继续推进到“宿主修复协议 / repair contract”层。
+- 新增结论：
+  - Prompt 宿主验收执行如果要真正跨宿主、CI、评审与交接共享修复动作，必须继续围绕 repair object、reject escalation、rollback boundary 与 re-entry qualification，而不是继续围绕 reviewer 经验、补字段说明与旧文案回退。
+  - 治理宿主验收执行如果要真正跨消费者共享修复动作，必须继续围绕 authority repair、ledger rebuild、decision window reset、continuation repricing 与 rollback object，而不是继续围绕 mode 调参、审批补救与仪表盘修饰。
+  - 结构宿主验收执行如果要真正跨消费者共享修复动作，必须继续围绕 authority recovery、resume replay order、writeback restoration、anti-zombie verdict 与 boundary reset，而不是继续围绕 pointer 修补、重连碰运气与日志繁荣。
+- 新增目录责任：
+  - `navigation/54` 负责宿主修复协议入口。
+  - `api/57-59` 负责三类宿主验收执行纠偏的修复卡、reject 升级语义与重入规则面。
+- 当前新的写作约束：
+  - 不再只写“该怎么修”，还要写“哪些修复对象必须被宿主正式消费、哪些 escalation level 必须共享、哪些内部修补细节绝不能被绑成公共 ABI”。
+  - 每次继续深化都要回答“当前 repair contract 保护的是单一真相的修复边界，还是只是在把整改经验写成更细的说明书”。
+- 蓝皮书已经从“宿主验收失真 / acceptance distortion casebook”继续推进到“宿主验收纠偏 / acceptance correction guide”层。
+- 新增结论：
+  - Prompt 宿主验收执行如果要真正纠偏，必须先把表单化绿灯降回存在性检查，再把 `compiled request truth`、`protocol transcript`、lawful forgetting object 与 `continue qualification` 重新拉回固定顺序，而不是继续围绕 CI 绿灯、summary handoff 与 last-message heuristic 修补。
+  - 治理宿主验收执行如果要真正纠偏，必须先把 mode 绿灯降回 authority 投影，再把 authority source、permission ledger、decision window、continuation gate 与 rollback object 重新拉回固定顺序，而不是继续围绕 dashboard、审批完成感与默认继续修补。
+  - 结构宿主验收执行如果要真正纠偏，必须先把 breadcrumb、telemetry 与成功率降回辅助信号，再把 authority object、resume order、writeback path 与 anti-zombie projection 重新拉回固定顺序，而不是继续围绕 pointer、日志与监控绿灯修补。
+- 新增目录责任：
+  - `navigation/53` 负责宿主验收纠偏入口。
+  - `guides/60-62` 负责三类宿主验收执行失真的固定纠偏顺序、拒收升级路径与改写模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些执行信号在说谎”，还要写“纠偏时先救哪个对象、reject 该怎样升级、模板骨架应如何改写”。
+  - 每次继续深化都要回答“当前纠偏顺序保护的是单一真相，还是只是在修补一个更制度化的替身”。
+- 蓝皮书已经从“宿主验收执行 / acceptance execution”继续推进到“宿主验收失真 / acceptance distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主验收执行如果要真正稳定，必须继续警惕表单化绿灯、假 reject、伪 rollback、CI 绿灯掩盖 protocol truth 与 summary handoff 伪装 lawful forgetting；否则 Prompt 的协议魔力会在执行层直接被表单工艺消解。
+  - 治理宿主验收执行如果要真正稳定，必须继续警惕 mode 绿灯、假窗口对齐、免费继续、mode/file 回退与 later 补写 reject；否则安全设计与省 token 设计会一起退回交互投影。
+  - 结构宿主验收执行如果要真正稳定，必须继续警惕 breadcrumb 篡位、写回繁荣、anti-zombie 口头化、pointer 回退与目录美学崇拜；否则源码先进性会在执行层直接退回监控绿灯与成功率崇拜。
+- 新增目录责任：
+  - `navigation/52` 负责宿主验收失真入口。
+  - `casebooks/31-33` 负责三类宿主验收执行的表单化绿灯、假拒收、伪回退与更高级执行幻觉反例。
+- 当前新的写作约束：
+  - 不再只写“执行卡怎么跑”，还要写“哪些看起来更制度化的绿灯、reject 与 rollback 其实正在重新制造第二真相”。
+  - 每次继续深化都要回答“当前执行失真暴露的是对象级真相正在丢失，还是只是表单、仪表盘、日志与作者说明在变得更丰富”。
+- 蓝皮书已经从“宿主验收协议 / acceptance contract”继续推进到“宿主验收执行 / acceptance execution”层。
+- 新增结论：
+  - Prompt 宿主验收如果要真正落地运行，必须继续围绕 `compiled request truth`、`section registry`、`protocol transcript health`、`lawful forgetting object` 与 `continue qualification` 执行固定验收顺序，而不是继续围绕 prompt 截图、摘要 handoff 与最后一条消息判断。
+  - 治理宿主验收如果要真正落地运行，必须继续围绕 authority source、permission ledger、decision window、continuation gate 与 rollback object 执行固定验收顺序，而不是继续围绕 mode、审批弹窗与 token 仪表盘判断。
+  - 结构宿主验收如果要真正落地运行，必须继续围绕 authority state、resume order、recovery boundary、writeback path 与 anti-zombie projection 执行固定验收顺序，而不是继续围绕 pointer、spinner、成功率与作者口述判断。
+- 新增目录责任：
+  - `navigation/51` 负责宿主验收执行入口。
+  - `playbooks/35-37` 负责三类宿主验收协议的执行卡、拒收顺序与回退剧本。
+- 当前新的写作约束：
+  - 不再只写“该消费哪些 contract 字段”，还要写“现场先看什么、何时直接拒收、回退到底回哪个对象边界”。
+  - 每次继续深化都要回答“当前执行层保护的是单一真相的运行顺序，还是只是在把 contract 重新翻译成更细的表单流程”。
+- 蓝皮书已经从“宿主迁移纠偏 / correction guide”继续推进到“宿主验收协议 / acceptance contract”层。
+- 新增结论：
+  - Prompt 宿主迁移如果要真正验收，必须继续围绕 `compiled request truth`、`section registry`、`protocol transcript health`、`lawful forgetting object` 与 `continue qualification` 的共享规则面，而不是继续围绕截图、摘要与 token 曲线。
+  - 治理宿主迁移如果要真正验收，必须继续围绕 authority source、typed decision、permission ledger、decision window、continuation gate 与 rollback object 的共享规则面，而不是继续围绕 mode、弹窗与仪表盘。
+  - 结构宿主迁移如果要真正验收，必须继续围绕 authority state、resume order、recovery boundary、writeback path 与 anti-zombie projection 的共享规则面，而不是继续围绕 pointer、成功率与恢复口述。
+- 新增目录责任：
+  - `navigation/50` 负责宿主验收协议入口。
+  - `api/54-56` 负责三类宿主迁移纠偏的验收卡、拒收语义与规则面。
+- 当前新的写作约束：
+  - 不再只写“该怎么纠偏”，还要写“宿主、SDK、CI 与交接系统到底该消费哪些对象、字段与 reject reason”。
+  - 每次继续深化都要回答“当前 contract 保护的是单一真相，还是只是在把经验判断改写成更详细的经验判断”。
+- 蓝皮书已经从“宿主迁移失真 / migration distortion casebook”继续推进到“宿主迁移纠偏 / correction guide”层。
+- 新增结论：
+  - Prompt 宿主迁移如果要真正纠偏，必须先把截图交接、摘要 handoff、黑箱 cache 曲线与 `stop_reason` 幻觉压回 `compiled request truth`、protocol truth、cache explainability 与 continue qualification。
+  - 治理宿主迁移如果要真正纠偏，必须先把 mode 崇拜、权限账本缺席、假窗口对齐与默认继续压回 authority source、pending permission ledger、decision window、continuation gate 与 rollback object。
+  - 结构宿主迁移如果要真正纠偏，必须先把伪恢复采纳、指针健康幻觉、写回分叉与成功率崇拜压回 authority state、resume 顺序、recovery boundary、writeback 主路径与 anti-zombie 结果面。
+- 新增目录责任：
+  - `navigation/49` 负责宿主迁移纠偏入口。
+  - `guides/57-59` 负责三类宿主迁移失真的固定纠偏顺序、拒收规则与模板骨架。
+- 当前新的写作约束：
+  - 不再只写“哪些信号在说谎”，还要写“纠偏时先救哪个对象、哪些现象必须立即拒收、模板最小骨架应是什么”。
+  - 每次继续深化都要回答“当前纠偏顺序保护的是单一真相，还是只是在修补一个更高级的替身”。
+- 蓝皮书已经从“宿主迁移演练 / handoff-gray-rollback playbook”继续推进到“宿主迁移失真 / migration distortion casebook”层。
+- 新增结论：
+  - Prompt 宿主迁移即使已经有交接包、灰度记录与回退演练，仍最容易死于 prompt 摘要 handoff、cache explainability 黑箱化、protocol truth 缺席与 continue qualification 幻觉。
+  - 治理宿主迁移即使已经有交接包、灰度记录与回退演练，仍最容易死于权限账本缺席、假窗口对齐、默认继续与 rollback object 文件化。
+  - 结构宿主迁移即使已经有交接包、灰度记录与回退演练，仍最容易死于 resume 顺序被打乱、指针健康被神化、writeback 主路径分叉与 anti-zombie 结果面缺席。
+- 新增目录责任：
+  - `navigation/48` 负责宿主迁移失真入口。
+  - `casebooks/28-30` 负责三类宿主迁移的伪交接、假灰度与回退幻觉反例。
+- 当前新的写作约束：
+  - 不再只写“怎样执行交接、灰度与回退”，还要写“哪些看起来像成功的信号其实正在重新制造第二真相”。
+  - 每次继续深化都要回答“当前成功感来自机制对象成立，还是来自更高级的截图、仪表盘、成功率与作者说明幻觉”。
+- 蓝皮书已经从“宿主迁移工单 / migration workorder”继续推进到“宿主迁移演练 / handoff-gray-rollback playbook”层。
+- 新增结论：
+  - Prompt 宿主迁移如果要真正稳定，必须继续围绕 `compiled request truth` 交接包、protocol rewrite 灰度记录、cache explainability 观测与 continue qualification 回退演练运行，而不是只停在迁移工单。
+  - 治理宿主迁移如果要真正稳定，必须继续围绕 authority source、typed decision、decision window、continuation gate 与 rollback object 的交接包、灰度记录与回退演练运行，而不是只停在控制面迁移顺序。
+  - 故障模型宿主迁移如果要真正稳定，必须继续围绕 authority state、transition legality、anti-zombie projection、recovery boundary 与 writeback 主路径的交接包、灰度记录与回退演练运行，而不是只停在恢复迁移顺序。
+- 新增目录责任：
+  - `navigation/47` 负责宿主迁移演练入口。
+  - `playbooks/32-34` 负责三类宿主迁移的交接包、灰度记录与回退演练。
+- 当前新的写作约束：
+  - 不再只写“应该怎样迁移”，还要写“交接至少留下什么、灰度阶段先看什么、何时必须立即回退”。
+  - 每次继续深化都要回答“当前演练记录保护的是同一机制对象，还是又退回截图、摘要、成功率与作者说明”。
+- 蓝皮书已经从“宿主接入审读 / runbook”继续推进到“宿主迁移工单 / migration workorder”层。
+- 新增结论：
+  - Prompt 宿主接入如果要真正可迁移，必须继续围绕输入面冻结、协议重写、cache explainability、lawful forgetting 与 continue qualification 写成固定实施顺序，而不是继续停在排查 checklist。
+  - 治理宿主接入如果要真正可迁移，必须继续围绕 authority source、typed decision、decision window、continuation gate 与 rollback object 写成固定实施顺序，而不是继续停在 mode 面板与审批流。
+  - 故障模型宿主接入如果要真正可迁移，必须继续围绕 authority state、writeback 主路径、anti-zombie 结果面与 recovery boundary 写成固定实施顺序，而不是继续停在恢复演练与成功率复盘。
+- 新增目录责任：
+  - `navigation/46` 负责宿主迁移工单入口。
+  - `guides/54-56` 负责三类宿主接入的迁移工单、交接包与灰度发布顺序。
+- 当前新的写作约束：
+  - 不再只写“怎样审读和拒收”，还要写“旧宿主应先拆哪一层假设、交接至少留下哪些对象、灰度时先开放哪一种真相面”。
+  - 每次继续深化都要回答“当前迁移方案保护的是同一机制对象，还是又把对象打散成界面步骤与人工经验”。
+- 蓝皮书已经从“支持面反例 / consumer misuse”继续推进到“宿主接入审读 / runbook”层。
+- 新增结论：
+  - Prompt 宿主接入如果要稳定，必须继续围绕输入面、section breakdown、cache break explainability 与 continue qualification 做定期审读，而不是等黑箱行为出现后再猜。
+  - 治理宿主接入如果要稳定，必须继续围绕 authority source、decision window、pending action、continuation gate 与 rollback object 做定期审读，而不是等 mode 漂移或 rollback 混乱后再修。
+  - 故障模型宿主接入如果要稳定，必须继续围绕 authority state、recovery boundary 与 anti-zombie 结果面做定期审读，而不是等恢复成功率异常后再补字段。
+- 新增目录责任：
+  - `navigation/45` 负责宿主接入审读入口。
+  - `playbooks/29-31` 负责三类 support-surface misuse 的排查、演练、拒收与防再发动作。
+- 当前新的写作约束：
+  - 不再只写“哪里接错了”，还要写“排查时先看什么、演练时怎么测、拒收时凭什么拒”。
+  - 每次继续深化都要回答“当前 runbook 是否仍围绕同一机制对象，而不是退回局部症状处置”。
+- 蓝皮书已经从“机制支持面 / host-consumable API”继续推进到“支持面反例 / consumer misuse”层。
+- 新增结论：
+  - Prompt 宿主消费最危险的失败方式不是没接 prompt，而是把编译请求真相重新消费成 `systemPrompt` 字符串、cache 黑箱与 last-message heuristic。
+  - 治理宿主消费最危险的失败方式不是没接控制请求，而是把统一定价治理重新消费成 mode 投影、pending action 文案与文件级回退。
+  - 故障模型宿主消费最危险的失败方式不是没接恢复接口，而是把 authority state、recovery boundary 与 anti-zombie 结果面重新消费成 spinner、pointer 与成功率。
+- 新增目录责任：
+  - `navigation/44` 负责支持面误用入口。
+  - `casebooks/25-27` 负责三类 host-consumable support surface 的 consumer misuse 反例。
+- 当前新的写作约束：
+  - 不再只写“宿主该消费什么”，还要写“宿主最常把什么假信号误当正式对象”。
+  - 每次继续深化都要回答“当前消费者是否又重新制造了一套第二真相”。
+- 蓝皮书已经从“机制实现 / builder-facing 手册”继续推进到“机制支持面 / host-consumable API”层。
+- 新增结论：
+  - 编译请求真相如果要被宿主稳定消费，必须被翻译成 Prompt 输入面、section breakdown、message breakdown、continue qualification 等正式投影，而不是内部编译 trace。
+  - 统一定价治理如果要被宿主稳定消费，必须被翻译成 authority source、decision window、pending action、continuation gate 与 rollback object 等正式投影，而不是 modal 与 token 条。
+  - 故障模型如果要被宿主稳定消费，必须被翻译成 authority state、generation evidence、recovery boundary 与 anti-zombie projection，而不是目录图、恢复成功率与作者说明。
+- 新增目录责任：
+  - `navigation/43` 负责机制支持面入口。
+  - `api/51-53` 负责三类机制对象的宿主消费支持面。
+- 当前新的写作约束：
+  - 不再只写“实现者该怎么做”，还要写“宿主该消费什么、绝不能绑定什么”。
+  - 每次继续深化都要回答“当前消费者看到的是对象级真相，还是内部细节偶然泄漏出来的替身”。
+- 蓝皮书已经从“机制哲学 / 第一性原理收束”继续推进到“机制实现 / builder-facing 手册”层。
+- 新增结论：
+  - Prompt 魔力如果要迁移，必须继续被翻译成 section registry、stable boundary、protocol rewrite、lawful forgetting 与 continue qualification 的实现顺序。
+  - 统一定价治理如果要迁移，必须继续被翻译成 authority source、typed decision、decision window、continuation gate 与 rollback object 的实现顺序。
+  - 故障模型编码如果要迁移，必须继续被翻译成 authority surface、dependency seam、stale-safe merge、recovery boundary 与 anti-zombie evidence 的实现顺序。
+- 新增目录责任：
+  - `navigation/42` 负责机制实现入口。
+  - `guides/51-53` 负责三类机制对象的 builder-facing 实现翻译。
+- 当前新的写作约束：
+  - 不再只写“原则是什么”，还要写“实现顺序如何固定”。
+  - 每次继续深化都要回答“later drift 发生时该先回哪个对象、哪个边界、哪个状态面”。
+- 蓝皮书已经从“机制失真 / 形式主义反例”继续推进到“机制哲学 / 第一性原理收束”层。
+- 新增结论：
+  - Prompt 的魔力，本质上来自把提示词写成可缓存、可转写、可继续的编译链，而不是更会说服模型的文案。
+  - 安全与省 token 之所以同构，本质上来自治理控制面对 action、visibility、context 与 continuation 的统一定价。
+  - 源码先进性之所以成立，本质上来自把 authority drift、dependency drift、stale write 与 recovery 篡位等故障模型提前编码进结构。
+- 新增目录责任：
+  - `navigation/41` 负责机制哲学入口。
+  - `philosophy/81-83` 负责三类机制对象的第一性原理收束。
+- 当前新的写作约束：
+  - 不再只写“如何做”，还要写“为什么非这么做不可”。
+  - 每次继续深化都要回答“如果拿掉具体实现，这条原则还能否独立成立”。
+- 蓝皮书已经从“机制验证 / 持续回归”继续推进到“机制失真 / 形式主义反例”层。
+- 新增结论：
+  - `compiled request truth` 最危险的失败方式不是 prompt 变短，而是重新长出多重真相生产者、协议真相泄漏与 lawful forgetting 失忆。
+  - `governance control plane object` 最危险的失败方式不是没有治理，而是退回 mode 崇拜、token 仪表盘崇拜与默认继续幻觉。
+  - `evolvable kernel object boundary` 最危险的失败方式不是没有结构，而是退回多点权威、恢复资产篡位与 anti-zombie 口头化。
+- 新增目录责任：
+  - `navigation/40` 负责机制失真入口。
+  - `casebooks/22-24` 负责三类机制对象的形式主义反例与误读样本。
+- 当前新的写作约束：
+  - 不再只写“对象怎样成立”或“对象怎样验证”，还要写“它最常怎样被伪装成已经成立”。
+  - 每次继续深化都要回答“哪一种替身最像对的”“后来者怎样一眼拒绝这种替身”。
+- 蓝皮书已经从“机制回灌 / 支持面收口”继续推进到“机制验证 / 持续回归”层。
+- 新增结论：
+  - `compiled request truth` 如果不能被持续验证 continuity，就会重新退回原文 prompt 崇拜。
+  - `governance control plane object` 如果不能被持续验证 authority / decision window / continuation gate，就会重新退回局部 KPI 与审批流程。
+  - `evolvable kernel object boundary` 如果不能被持续验证 authority / transition / dependency / anti-zombie，就会重新退回目录审美与作者记忆。
+- 新增目录责任：
+  - `navigation/39` 负责机制验证入口。
+  - `playbooks/26-28` 负责三类机制对象的回归、拒收条件与复盘最小字段。
+- 当前新的写作约束：
+  - 不再把机制对象写成“已经成立就算完成”。
+  - 每次继续深化都要回答“怎样持续证明它还成立”“哪些情况应直接拒收”。
+- 蓝皮书已经从“builder-facing 方法层”继续推进到“机制回灌层”。
+- 新增结论：
+  - Prompt 线下一层不应停在 Prompt Constitution，而应继续收口成 `compiled request truth`。
+  - 治理线下一层不应停在统一预算或治理顺序，而应继续收口成 `governance control plane`。
+  - 结构线下一层不应停在可演化内核原则，而应继续收口成 `evolvable kernel object boundary`。
+- 新增目录责任：
+  - `navigation/38` 负责机制回灌入口。
+  - `architecture/79-81` 负责三条方法线的机制层对象化。
+  - `api/49-50` 负责 Prompt 编译/稳定性与治理控制面的支持面收口。
+- 当前新的写作约束：
+  - 不再只回答“应该怎样设计”，而要继续回答“这些设计在源码里到底以什么对象成立”。
+  - 每次回灌都要尽量把方法层语言压成对象、边界、窗口、字节与恢复资产语言。
+- 蓝皮书已经从“Agent Runtime 构建层”继续推进到“上下文编译 / 治理控制面 / 可演化内核”深化层。
+- 新增结论：
+  - Prompt 的魔力应继续按“世界如何进入模型”而不是“怎样说服模型”来理解。
+  - 安全与省 token 应继续按“治理控制面同时决定允许什么、看见什么、继续多久”来理解。
+  - 源码先进性应继续按“先替未来维护者保留反对当前实现的能力”来理解。
+- 新增目录责任：
+  - `navigation/37` 负责统一入口。
+  - `guides/48-50` 负责 builder-facing 方法化。
+  - `philosophy/78-80` 负责终局判断化。
+- 当前新的写作约束：
+  - 不再把 Prompt、安全、结构先进性分别写成独立专题。
+  - 每次深化都要回答它们如何重新围绕对象、边界、预算、恢复与未来维护者消费者汇合。
+
 ## 当前已完成
 
 - 建立文档目录骨架
@@ -20,6 +754,11 @@
   - 公开能力与隐藏能力
   - 功能全景与 API 支持
   - 第一性原理与苏格拉底反思
+  - 运行时契约、知识层与生态边界
+  - 能力全集、公开度与成熟度矩阵
+  - 导航专题
+  - 第一性原理阅读地图
+  - 能力、API与治理检索图
   - 命令与功能矩阵
   - Agent SDK 与控制协议
   - MCP 与远程传输
@@ -63,11 +802,173 @@
   - 状态消息、外部元数据与宿主消费矩阵
   - 双通道状态同步与外部元数据回写
   - 外化状态优于推断状态
+  - 系统提示词、Frontmatter 与上下文注入手册
+  - 提示词装配链与上下文成形
+  - 安全分层、策略收口与沙箱边界
+  - 源码质量、分层与工程先进性
+  - 消息塑形、输出外置与Token经济
+  - 提示词魔力来自运行时而非咒语
+  - 工程化质量优于聪明技巧
+  - query turn 状态机、继续语义与恢复链
+  - 统一权限决策流水线与多路仲裁
+  - services 层全景与 utils-heavy 设计
+  - SDKMessage、worker_status 与 external_metadata 字段级对照手册
+  - 多 Agent 编排与 Prompt 模板
+  - 会话持久化、TaskOutput 与 Sidechain 恢复图
+  - REPL 前台状态机、Sticky Prompt 与消息动作
+  - 能力迁移、Consumer Subset 与产品边界
+  - 提示词契约分层、知识注入与缓存稳定性
+  - 知识层栈：CLAUDE.md、Session Memory、Auto-memory与Attachments
+  - 多Agent任务对象、Mailbox与后台协作运行时
+  - 提示词合同、缓存稳定性与多Agent语法
+  - 安全、权限、治理与Token预算统一图
+  - 公开源码镜像的先进性、热点与技术债
+  - 宿主实现最小闭环与恢复案例手册
+  - 提示词控制、知识注入与记忆 API 手册
+  - 插件、Marketplace、MCPB、LSP与Channels接入边界手册
+  - 能力平面、公开度与宿主支持矩阵
+  - 命令、工具、会话、宿主与协作API全谱系
+  - 命令、工具、任务与团队能力全集手册
+  - SDK、Control、Session与Remote接入全景矩阵
+  - 插件协议全生命周期：Manifest、Marketplace、Options、MCPB与Reload
+  - 治理型API：Channels、Context Usage与Settings三重真相
+  - 动态能力暴露、裁剪链与运行时可见性
+  - 源码目录级能力地图：commands、tools、services、状态与宿主平面
+  - 失败语义、取消请求与孤儿修复API手册
+  - Context Usage、Prompt预算与观测型宿主手册
+  - 深度专题导航：Prompt、预算、对象、底盘与治理
+  - 终局判断导航：协作语法、资源定价与未来维护者消费者
+  - workflow engine、LocalWorkflowTask 与可见边界
+  - REPL transcript search、selection 与 scroll 协同
+  - 五层合同、缓存断点与Prompt装配时序
+  - 统一预算器：能力裁剪、Token延续与状态外化
+  - Contract优先、运行时底盘与公开镜像缺口
+  - Prompt可重放前缀、可观测预算与Section编译器
+  - 辅助循环、侧问题与后回合Fork共享前缀
+  - 显式失败语义、重复响应与反竞争条件设计
+  - 叶子模块、扼流点与循环依赖切断法
+  - 预算观测、Context Suggestions与调优闭环
+  - 真正的设计单位不是功能，而是运行时平面
+  - 前台交互不是 UI 皮肤，而是认知控制面
+  - Prompt 不是文本技巧而是契约分层
+  - 安全与 Token 经济不是权衡而是同一优化
+  - 生态成熟度必须与协议支持分开叙述
+  - Prompt魔力来自约束叠加与状态反馈
+  - 安全、成本与体验必须共用预算器
+  - 源码质量不是卫生而是产品能力
+  - 可见边界优于脑补全貌
+  - Workflow不是脚本而是编排对象
+  - 用户可见真相优于底层原始文本
+  - 治理开关不是部署尾巴而是输入边界
+  - 复杂性应该收敛到扼流点而不是散落到产品层
+  - 反竞争条件意识优于局部功能正确
+  - Prompt不是一次请求而是可复用前缀资产
+  - 可观测预算优于经验调优
+  - 单一真相入口、权威状态面与Chokepoint手册
+  - 单一真相入口：mode、tool pool、state与metadata的权威面
+  - 单一真相入口优于多处半真相实现
+  - 如何根据预算、阻塞与风险选择session、task、worktree与compact
+  - 对象升级而非继续对话：session、task、worktree与compact的选择机理
+  - Prompt稳定性解释层：cache-break detection的两阶段诊断器
+  - 可解释稳定性比神秘措辞更接近Prompt魔力
+  - QueryGuard：本地查询生命周期的authoritative state machine
+  - 控制平面先于加载表现
+  - 远程恢复、401与Close Code语义手册
+  - 远程失败不是断线重连：401、Close Code与环境恢复的分层语义
+  - 显式远程失败优于模糊在线状态
+  - 插件双真相：enabled、editable scope与policy block不能混写
+  - 安装状态、启用状态与策略状态必须分层叙述
+  - PolicySettings控制平面、Sandbox契约与三套预算器
+  - 统一第一性原理不等于单一预算实现
+  - 安全即输入边界控制平面：Managed Authority、Trusted Sources与Runtime Boundary Compilation
+  - 安全、治理、Token与Prompt稳定性本质上是同一收口问题
+  - Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法
+  - 治理必须落到字节级确定性：上下文准入优于功能堆叠
+  - 稳定前缀、动态尾部与旁路Fork：Claude Code的Cache-Aware Prompt Assembly
+  - 允许轻微陈旧，换取系统级确定性
+  - 从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放
+  - 渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明
+  - 热点文件不是坏味道：Kernel、Shell与Chokepoint的分工
+  - 成熟架构不是没有大文件，而是不把复杂性撒满全仓
+  - 能力可见性控制平面：Deferred、Delta与最小可见面
+  - 最小可见面优于全量能力表
+  - 可解释运行时：输入真相、状态真相与稳定性真相
+  - Observability不是Debug层，而是正式运行时合同
+  - 让依赖图说真话：Leaf Module、Anti-Cycle Seam与Single-Source File
+  - 先让依赖关系诚实，再让抽象显得优雅
+  - 协议全集、控制平面主路径与Consumer Subset：Claude Code的宿主三层治理
+  - 恢复优先的双通道状态面：writeback、resume与reconnect一体化
+  - 单一权威优于单一全景：多消费者系统必须分层暴露真相
+  - 当前真相必须可恢复，而不是事后可观测
+  - 工作语法机：Claude Code如何把软件工程世界编译成模型可行动的Protocol Surface
+  - Narrow、Later、Outside：安全设计与省Token设计的统一反扩张运行时
+  - 可演化内核：Claude Code如何在持续增长中维持不变量
+  - 先把世界压缩成可治理语法，再让模型变聪明
+  - 真正的省Token不是压缩文本，而是改变世界暴露给模型的方式
+  - 先进源码不是一开始就完美分层，而是增长时仍能守住不变量
+  - 语义压缩器：Claude Code如何把工作现场压成可继续行动的最小语义体
+  - 资源宪法：Claude Code如何统一分配能力、时间、注意力与权威
+  - 演化制度设计：Claude Code如何在增长中保留重构可能性
+  - 真正强的Prompt不是信息更多，而是行动语义更密
+  - 模型不是资源的主人，Runtime才是
+  - 好架构不是更会重构，而是始终保留重构可能性
+  - 协调成本控制面：Prompt如何同时组织模型推理与人类接手
+  - 有效自由控制面：为什么约束不是在削弱Claude Code的行动力
+  - 源码即治理界面：注释、命名与显式边界如何降低误改成本
+  - Protocol真相控制面：为什么UI历史必须在API边界前被重新编译
+  - 资源定价运行时：permission、visibility、externalization与continuation的一体化预算
+  - 未来维护者消费者控制面：风险命名、制度注释、seam与状态机如何共同服务演化
+  - 好的Prompt同时组织模型与人类接手路径
+  - 真正的自由不是少约束，而是约束不再破坏行动
+  - 可读性不是修辞，而是防误改、防误扩展、防失忆的系统能力
+  - Prompt的魔力不在措辞，而在把意图编译成协作语法
+  - 真正的安全不是拦截动作，而是给行动、能力与时间统一定价
+  - 源码先进性不在静态分层，而在未来维护者也是正式消费者
+  - CLAUDE.md、记忆层与上下文注入实践
+  - Channels、托管策略与组织级治理实践
+  - 企业托管设置实战：channelsEnabled、allowedChannelPlugins与危险配置审批
+  - 第一性原理实践：目标、预算、对象、边界与回写
+  - 用Context Usage与状态回写调优Prompt和预算
+  - 如何降低人类-模型协调成本：Sticky Prompt、Suggestion、Session Memory与接手连续性
+  - 如何在约束中保持高行动力：permission mode、反馈式审批与渐进能力暴露
+  - 给Agent平台构建者：如何把源码写成治理界面并保留重构余量
+  - 如何把Prompt当成人机协作接口：固定主语、反馈纠偏与低成本接手
+  - 如何在秩序中释放有效自由：mode选择、审批协商与能力按需出现
+  - 如何为未来维护者设计Agent Runtime：注释、命名、leaf module与重构余量
+  - 如何把UI真相翻译成Protocol真相：transcript重写、边界补写与恢复不变量
+  - 如何用资源定价设计Agent Runtime：mode、visibility、externalization与continuation
+  - 如何把未来维护者当正式消费者：风险命名、制度注释、seam与状态机
+  - 如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀
+  - 如何用Contract-First方法阅读和设计Agent Runtime：先找合同，再看热点文件
+  - 如何工程化地维持依赖图诚实性：leaf module、anti-cycle seam与single-source file
+  - 深方法导航：共享前缀、合同优先与依赖图诚实性
+  - 共享前缀快照策略模板：何时保存、何时复用、何时suppress
+  - Contract-First审读清单：如何系统读懂Agent Runtime的合同、权威面与热点文件
+  - Dependency-Honesty Review Checklist：如何评审leaf module、anti-cycle seam与single-source file
+  - Prompt不是文案，而是受治理的Prompt Constitution
+  - 真正成熟的安全与省Token系统，不是统一预算器，而是治理顺序、失败语义与可撤销自动化
+  - 构建系统也是架构工具：发布面、入口影子与传输外壳共同塑造源码秩序
+  - 高阶制度导航：Prompt Constitution、治理顺序与构建系统
+  - Prompt Constitution控制面：section宪法、角色主权链、合法遗忘与可观测diff
+  - 治理顺序控制面：失败语义分型、可撤销自动化与稳定字节资产
+  - 构建系统塑形源码秩序：入口影子、传输外壳、薄Registry与Zombification治理
+  - 如何把Prompt写成可治理宪法：section registry、角色主权链、合法遗忘与可观测diff
+  - 如何设计有顺序的治理系统：检查顺序、失败语义分型、可撤销自动化与稳定字节资产
+  - 如何用构建系统塑形Agent Runtime：入口影子、transport shell、薄registry与反zombification
 
 ## 已确认事实
 
 - 研究对象版本：`2.1.88`
 - 上游源码目录：`./claude-code-source-code`
+- prompt 深线不能只写成“模型提示词设计”，还应稳定写成“固定主语 + 压短下一步 + 低成本接手 + protocol transcript 编译”的协作接口
+- prompt 深线还应再上提一层：Claude Code 的 prompt 魔力更像把意图编译成跨当前、下一步与接手后的协作语法，而不只是更强的提示词措辞
+- “有效自由”当前应被视为安全、审批、能力可见性、长输出外置与时间预算共同编排后的结果，而不是“权限给得越大越自由”
+- 安全深线还应再上提一层：Claude Code 真正在统一定价的是动作、能力、上下文席位与时间，不应再退回“更严格拦截器”的叙述
+- builder 侧当前最值得下沉的方法不是目录模仿，而是 leaf module、single source、config / deps seam、snapshot 语义与显式状态机这几类可迁移制度
+- 源码先进性深线还应再上提一层：未来维护者和未来重构者都应被视为正式消费者，命名、注释与 seam 是在服务这一层治理
+- 当哲学层形成新的终局判断后，应优先补 `navigation/` 入口，而不是只补 README 引用；否则目录结构会重新退回“结论存在但检索不直达”
+- 当终局判断与导航入口都已稳定后，应优先补对应高级 `guides/`，把“为什么如此设计”进一步下沉成“怎样照此实践 / 迁移”，而不是继续只增加抽象收束
+- 当高级 `guides/` 也稳定后，应再回灌到 `architecture/`，形成“哲学判断 -> 导航入口 -> 高级实践 -> 底盘机制”四层闭环，而不是停在单向下沉
 - 公开源码中大量能力受 `feature()` 影响
 - 技能、工具、权限、压缩、远程、子代理都是 Claude Code 的核心能力层，不是边角模块
 - SDK 面不仅有 query，还有会话、session 管理、控制协议与 SDK-MCP server 面
@@ -87,6 +988,227 @@
 - Claude Code SDK 的输出面更适合概括成“runtime event stream”，而不是“助手答案流”
 - `query.ts` + `services/api/claude.ts` 维护的是可恢复执行轨迹，不是单纯流式文本输出
 - MCP 更适合按“配置面 + transport 面 + 连接状态面 + 控制面”理解，而不是“外接工具协议”
+- “功能支持”后续必须持续按两层写：先写能力平面，再写公开度与成熟度矩阵
+- `navigation/` 负责读者检索，根目录主线负责判断标准，这两层不能重新混回一篇大总文
+- API 写作现在已有统一基线：先用总表型文档确定能力平面、公开度与 adapter 宽度，再进入具体专题
+- API atlas 现在已经分成两层：`23/24` 负责矩阵与谱系，`25-29` 负责能力对象、宿主接入、插件生命周期、治理型 API 与动态可见性
+- 当 `guides/24-26` 稳定后，下一步最值钱的不是继续补抽象判断，而是补团队落地包层：Prompt 修宪工作流、治理顺序审计矩阵、源码塑形审读模板
+- 高阶制度模板层当前应稳定成三类：`27` 管 section card / 修宪流程 / lawful forgetting 与失效台账，`28` 管 failure semantics / automation lease / approval race / stable bytes ledger，`29` 管 build surface / entry shadow / transport shell / anti-zombie checklist
+- `navigation/09` 的职责应稳定为“第二序制度如何进入团队动作层”，避免 `08` 同时承担制度解释与模板检索两类职责
+- 当 `guides/27-29` 稳定后，下一步不应继续塞回 `guides/`，而应新增 `playbooks/` 目录承接运营、回归、事故复盘与演化演练；否则目录职责会重新混掉
+- `playbooks/` 当前应稳定成三类：`01` 管 prompt 修宪回归与 lawful forgetting 事故复盘，`02` 管治理事故运营、approval race 与 stable-bytes drift，`03` 管源码演化演练、shadow-stub 退出、recovery drill 与 anti-zombie 复盘
+- `navigation/10` 的职责应稳定为“团队动作层如何进入运营层”，避免 `09` 同时承担模板层和运营层两类入口职责
+- 当 `playbooks/01-03` 稳定后，下一步应新增 `casebooks/` 承接失败样本库；否则手册层会过度抽象，读者看不见制度边界在真实故障里怎样暴露
+- `casebooks/` 当前应稳定成三类：`01` 管 prompt 事故样本，`02` 管治理事故样本，`03` 管结构演化与反模式样本
+- `navigation/11` 的职责应稳定为“运营层如何进入样本层”，避免 `10` 同时承载手册入口和样本入口
+- 当 `casebooks/01-03` 稳定后，下一步最值钱的不是继续补散案例，而是补索引层：统一标签体系、交叉索引与演练记录模板
+- `casebooks/04` 当前应作为样本层的总索引：按阶段、资产、症状、根因与恢复动作统一编目
+- `playbooks/04` 当前应作为运营层与样本层的统一记录模板：让演练和事故复盘能回填进案例库，而不是继续散落在文字里
+- `navigation/12` 的职责应稳定为“样本层如何进入索引层”，避免 `11` 同时承担样本入口和标签索引入口
+- 当 `casebooks/04 + playbooks/04` 稳定后，下一步最值钱的不是继续补说明，而是补参考层：标签字典、源码锚点反查与记录样例库
+- `casebooks/05` 当前应负责“标签定义、判定边界与误分类警戒”，避免团队只会贴标签，不会区分标签
+- `casebooks/06` 当前应负责 “tag -> sample -> playbook -> chapter -> source anchor” 的 crosswalk，避免知道标签却找不到正文与代码
+- `playbooks/05` 当前应负责三类完整填表示例，避免模板层在实际使用时仍然过空
+- `navigation/13` 的职责应稳定为“索引层如何进入参考层”，避免 `12` 同时承担结构索引和具体参考入口
+- 当 `casebooks/05-06 + playbooks/05` 稳定后，下一步最值钱的不是继续补更多定义，而是补多入口反查层：按症状、按阶段与按资产定位制度失效
+- `casebooks/07` 当前应负责 symptom-first 反查：先把 `cache break / cost spike / wrong allow / wrong deny / split truth / replay mismatch / stale state / zombie risk` 重新路由回 Prompt、治理与结构三条主线
+- `casebooks/08` 当前应负责 phase-first 反查：按 `design / assembly / runtime / recovery / evolution` 判断制度断裂最早诞生在哪一层，而不是把所有锅都丢给 runtime
+- `casebooks/09` 当前应负责 asset-first 反查：按 `section / boundary / stable bytes / shadow-stub / transport shell / recovery asset / object state` 这些正式资产定位失效，而不是只按文件名搜索
+- `navigation/14` 的职责应稳定为“参考层如何进入现场诊断层”，避免 `13` 同时承担字典/锚点与多入口反查两类职责
+- 当 `navigation/14 + casebooks/07-09` 稳定后，下一步最值钱的不是继续补更多诊断表，而是补自反审读层：把 Prompt 魔力、安全定价与源码先进性压成设计前就能自问自校的问题梯子
+- `guides/30` 当前应负责 Prompt 魔力的苏格拉底审读：主语、共享前缀、section 宪法、边界、合法遗忘与接手连续性
+- `guides/31` 当前应负责安全与省 token 的苏格拉底审读：输入边界、失败语义、stable bytes、最小可见面、decision gain 与可撤销自动化
+- `guides/32` 当前应负责源码先进性的苏格拉底审读：authoritative surface、contract-first、leaf module、transport shell、recovery asset、anti-zombie 与未来维护者消费者
+- `navigation/15` 的职责应稳定为“现场诊断层如何进入设计自校层”，避免 `14` 同时承担事故排障与设计反思两类入口职责
+- 当 `navigation/15 + guides/30-32` 稳定后，下一步最值钱的不是继续补更多问题，而是补反例对照层：把同题坏解、伪优化与 Claude Code 式改写路径并排写清
+- `casebooks/10` 当前应负责 Prompt 反例对照：长文案崇拜、主语漂移、共享前缀分叉、边界错放、非法遗忘与接手断裂
+- `casebooks/11` 当前应负责安全反例对照：免费扩张、假统一预算器、全量可见面、无决策增益检查、不可撤销自动化、错误失败语义与错误 continuation
+- `casebooks/12` 当前应负责源码反例对照：伪模块化、第二真相、transport 泄漏、registry 变业务中心、恢复资产缺席、zombie 温床与未来维护者被排除
+- `navigation/16` 的职责应稳定为“设计自校层如何进入同题对照层”，避免 `15` 同时承担抽象诘问与对照样例两类入口职责
+- 当 `navigation/16 + casebooks/10-12` 稳定后，下一步最值钱的不是继续补更多反例，而是补迁移工单层：把改写顺序、灰度阶段、停止条件与回退动作写成正式 playbook
+- `playbooks/06` 当前应负责 Prompt 迁移工单：从长文案到 section 宪法、主语链、共享前缀、合法遗忘与 handoff continuity 的渐进改写
+- `playbooks/07` 当前应负责治理迁移工单：从规则堆叠到资产清单、治理顺序、stable bytes、decision gain 与可撤销自动化的渐进改写
+- `playbooks/08` 当前应负责结构迁移工单：从第二真相与伪模块化到 authoritative surface、transport shell、recovery asset 与 anti-zombie 结构的渐进改写
+- `navigation/17` 的职责应稳定为“反例对照层如何进入迁移执行层”，避免 `16` 同时承担对照样例与执行工单两类入口职责
+- 当 `navigation/17 + playbooks/06-08` 稳定后，下一步最值钱的不是继续补更多迁移步骤，而是补 rollout 样例层：把改写前后 diff、评审问题卡、灰度结果与回退记录做成正式样例
+- `playbooks/09` 当前应负责 Prompt rollout 样例：section 拆分、边界切换、共享前缀收敛、合法遗忘与 handoff continuity 的灰度记录
+- `playbooks/10` 当前应负责治理 rollout 样例：输入边界收口、治理顺序切换、stable bytes 冻结、decision gain stop-logic 与 auto lease 回收的灰度记录
+- `playbooks/11` 当前应负责结构 rollout 样例：authoritative surface 收口、第二真相回收、transport shell 切换、recovery asset 建账与 anti-zombie 规则灰度记录
+- `navigation/18` 的职责应稳定为“迁移工单层如何进入 rollout 证据层”，避免 `17` 同时承担执行步骤与 rollout 样例两类入口职责
+- 当 `navigation/18 + playbooks/09-11` 稳定后，下一步最值钱的不是继续补更多 rollout 故事，而是补统一证据 ABI 层：把对象卡、Diff 卡、阶段评审卡、灰度结果卡与回退记录卡写成正式 evidence interface
+- `playbooks/12` 当前应负责统一 rollout ABI 模板：先固定共用骨架，再为 Prompt、治理与结构补专项扩展字段
+- `playbooks/13` 当前应负责统一 evidence card 样例：给 Prompt、治理与结构三条线各出一张最小可填写卡
+- `navigation/19` 的职责应稳定为“rollout 样例层如何进入统一 ABI 层”，避免 `18` 同时承担历史样例与模板接口两类入口职责
+- `guides/33` 当前应负责把统一 rollout ABI 下沉成 builder-facing 方法，而不是继续停在样例与模板本身
+- `philosophy/66` 当前应负责把“成熟升级 = 每一步都留下可复查证据”稳定成长期设计判断
+- 当 `navigation/19 + playbooks/12-13` 稳定后，下一步最值钱的不是继续补更多模板，而是补证据真相面与宿主消费层：把这套 ABI 明确接回 state writeback、diff 解释、decision window 与 rollback object boundary
+- `architecture/76` 当前应负责升级证据真相面：把状态写回、可观测 diff、决策窗口与回退对象四块 runtime 机制收口为同一条 evidence surface
+- `api/35` 当前应负责 rollout 证据消费面：明确哪些 signals 属于正式 host-consumable ABI，哪些仍应停留在 internal hint
+- `navigation/20` 的职责应稳定为“统一 ABI 层如何进入宿主消费、回退对象与复盘真相面”，避免 `19` 同时承担模板接口与消费入口两类职责
+- `guides/34` 当前应负责让宿主、评审者与后来者共享同一套 rollout ABI，而不是各自维护一份解释
+- `philosophy/67` 当前应负责把“成熟 runtime = 保存下一次升级的判断条件”稳定成新的长期判断
+- 当 `navigation/20 + architecture/76 + api/35` 稳定后，下一步最值钱的不是继续补更多消费接口，而是补 shared evidence envelope 层：把宿主、CI、评审与交接四类消费者拉回同一套字段骨架
+- `architecture/77` 当前应负责 shared evidence envelope：明确同一套升级真相如何被不同消费者按不同粒度共同消费
+- `api/36` 当前应负责 evidence envelope 字段矩阵：把正式公共表面、宿主自建 envelope 与 internal hint 三层边界再压成四类消费者的共享消费顺序
+- `navigation/21` 的职责应稳定为“证据真相面如何进入共享 evidence envelope 层”，避免 `20` 同时承担消费接口与共享消费结构两类职责
+- `guides/35` 当前应负责用苏格拉底诘问法审读 shared evidence envelope，而不是继续只补流程化落地建议
+- `philosophy/68` 当前应负责把“成熟证据 = 约束未来判断”稳定成新的长期判断
+- 当 `navigation/21 + architecture/77 + api/36` 稳定后，下一步最值钱的不是继续补更多 envelope 原则，而是补 Evidence Envelope 失真样本层：把宿主、CI、评审与交接最常见的拆散消费方式写成正式 casebook
+- `casebooks/13` 当前应负责 Prompt envelope 失真样本：原文崇拜、cache 指标崇拜、汇总崇拜与只读历史交接
+- `casebooks/14` 当前应负责治理 envelope 失真样本：只看 token、只看审批、只看最终结果与忽略 rollback boundary
+- `casebooks/15` 当前应负责结构 envelope 失真样本：只看文件 diff、只看目录美观、只看恢复成功率与只靠作者记忆
+- `navigation/22` 的职责应稳定为“shared evidence envelope 层如何进入 consumer distortion casebook 层”，避免 `21` 同时承担 envelope 设计与 envelope 失真原型两类职责
+- 当 `navigation/22 + casebooks/13-15` 稳定后，下一步最值钱的不是继续补更多失真叙述，而是补 host implementation playbook 层：把宿主、CI、评审与交接的真实检查点写成可执行门禁
+- `playbooks/14` 当前应负责 Prompt host implementation：把 compiled request truth、stable bytes、lawful forgetting 与 handoff package 落成宿主消费、CI门禁、评审顺序与交接包
+- `playbooks/15` 当前应负责治理 host implementation：把 decision window、control arbitration、Context Usage、rollback object 与对象升级条件落成真实门禁
+- `playbooks/16` 当前应负责结构 host implementation：把 authoritative surface、recovery asset、anti-zombie gate、rollback boundary 与 retained assets 落成真实门禁
+- `navigation/23` 的职责应稳定为“consumer distortion casebook 层如何进入 host implementation playbook 层”，避免 `22` 同时承担反例层与落地检查点层两类职责
+- 当 `navigation/23 + playbooks/14-16` 稳定后，下一步最值钱的不是继续补更多 gate，而是补 host implementation distortion casebook：把这些 gate 最常怎样重新退回存在性合规、流程合规与作者兜底写成正式样本
+- `casebooks/16` 当前应负责 Prompt host implementation 失真：只看卡片存在、只看 CI 通过、只看顺序完成与只交接摘要包
+- `casebooks/17` 当前应负责治理 host implementation 失真：只看仪表盘转绿、只看审批结束、只看阈值安全与对象升级失语
+- `casebooks/18` 当前应负责结构 host implementation 失真：只看门禁存在、只看恢复通过、只看 anti-zombie 规则存在与危险路径口头化
+- `navigation/24` 的职责应稳定为“host implementation playbook 层如何进入 implementation distortion casebook 层”，避免 `23` 同时承担落地手册与实施级失真样本两类职责
+- 当 `navigation/24 + casebooks/16-18` 稳定后，下一步最值钱的不是继续补更多事故，而是补 host implementation audit guide：把对象、authority source、decision window、rollback boundary 与 retained assets 反压成统一审读模板
+- `guides/36` 当前应负责 Prompt host implementation 审读模板：把 compiled request truth、stable bytes、lawful forgetting ABI 与 handoff guard 压成统一审读 header
+- `guides/37` 当前应负责治理 host implementation 审读模板：把 decision window、control arbitration、Context Usage、object upgrade 与 rollback object 压成统一审读 header
+- `guides/38` 当前应负责结构 host implementation 审读模板：把 authoritative path、recovery asset ledger、anti-zombie evidence、retained assets 与 danger paths 压成统一审读 header
+- `navigation/25` 的职责应稳定为“implementation distortion casebook 层如何进入 host implementation audit guide 层”，避免 `24` 同时承担事故样本与统一审读模板两类职责
+- 当 `navigation/25 + guides/36-38` 稳定后，下一步最值钱的不是继续补更多心法，而是补 host artifact contract：把宿主卡、CI附件、评审卡与 handoff package 压成统一工件协议
+- `api/37` 当前应负责 Prompt host artifact contract：把宿主卡、CI附件、评审卡与 handoff package 的 shared header 固定成 compiled request truth contract
+- `api/38` 当前应负责治理 host artifact contract：把四类工件的 shared header 固定成 current object、decision window、winner source、failure semantics 与 rollback object contract
+- `api/39` 当前应负责结构 host artifact contract：把四类工件的 shared header 固定成 authoritative path、recovery asset ledger、anti-zombie evidence、retained assets 与 rollback object contract
+- `philosophy/69` 当前应负责把“成熟工件 = 四类角色共享同一判断对象”稳定成新的长期判断
+- `navigation/26` 的职责应稳定为“host implementation audit guide 层如何进入 host artifact contract 层”，避免 `25` 同时承担审读模板与工件协议两类职责
+- 当 `navigation/26 + api/37-39` 稳定后，下一步最值钱的不是继续补更多字段，而是补 artifact samplebook：给 Prompt、治理与结构三条线各出一套最小宿主卡、CI附件、评审卡与 handoff package 样例
+- `playbooks/17` 当前应负责 Prompt artifact 样例：让四类工件围绕同一 Prompt object contract 填出最小可用版本
+- `playbooks/18` 当前应负责治理 artifact 样例：让四类工件围绕同一 governance object contract 填出最小可用版本
+- `playbooks/19` 当前应负责结构 artifact 样例：让四类工件围绕同一 structure object contract 填出最小可用版本
+- `navigation/27` 的职责应稳定为“host artifact contract 层如何进入 artifact samplebook 层”，避免 `26` 同时承担字段协议与最小样例两类职责
+- 当 `navigation/27 + playbooks/17-19` 稳定后，下一步最值钱的不是继续补更多正例，而是补 artifact drift casebook：把四类共享工件最常怎样重新退回原文、状态色、计数、目录图与作者说明写成正式失真原型
+- `casebooks/19` 当前应负责 Prompt artifact 失真：宿主卡退回原文、CI 附件只剩绿灯、评审卡退回总结与交接包回到摘要
+- `casebooks/20` 当前应负责治理 artifact 失真：窗口卡退回状态色、仲裁附件退回计数、评审卡退回 verdict 与交接包失去回退对象
+- `casebooks/21` 当前应负责结构 artifact 失真：权威路径卡退回目录图、恢复附件只剩成功率、评审卡退回结构夸奖与交接包回到作者说明
+- `navigation/28` 的职责应稳定为“artifact samplebook 层如何进入 artifact drift casebook 层”，避免 `27` 同时承担最小样例与工件级失真两类职责
+- 当 `navigation/28 + casebooks/19-21` 稳定后，下一步最值钱的不是继续补更多漂移叙述，而是补 artifact validator / linter：把 shared header、hard contract 与 drift 原型编译成 reviewer gate、CI gate 与 handoff reject
+- `guides/39` 当前应负责 Prompt artifact validator：把 prompt_object、compiled_request_diff、stable bytes、lawful forgetting ABI 与 next-step guard 压成统一 hard fail 与 reject rule
+- `guides/40` 当前应负责治理 artifact validator：把 governance object、decision window、arbitration truth、failure semantics、rollback object 与 next action 压成统一 hard fail 与 reject rule
+- `guides/41` 当前应负责结构 artifact validator：把 structure object、authoritative path、recovery asset ledger、anti-zombie evidence、danger paths 与 rollback object 压成统一 hard fail 与 reject rule
+- `navigation/29` 的职责应稳定为“artifact drift casebook 层如何进入 artifact validator / linter 层”，避免 `28` 同时承担反例识别与自动校验两类职责
+- `philosophy/70` 当前应负责把“成熟校验 = 共享对象能拒绝漂移”稳定成新的长期判断
+- 当 `navigation/29 + guides/39-41` 稳定后，下一步最值钱的不是继续补更多 validator 叙述，而是补 artifact rule ABI：把 hard fail、lint warn、reviewer gate、handoff reject 与 rewrite hint 压成不同消费者共享的 machine-readable rule packet
+- `api/40` 当前应负责 Prompt artifact rule ABI：把 shared object continuity、stable bytes、lawful forgetting ABI 与 handoff reject 压成统一规则包
+- `api/41` 当前应负责治理 artifact rule ABI：把 decision gain、failure semantics、rollback object、next action 与 object upgrade 压成统一规则包
+- `api/42` 当前应负责结构 artifact rule ABI：把 authoritative path、recovery asset ledger、anti-zombie evidence、danger paths 与 rollback object 压成统一规则包
+- `navigation/30` 的职责应稳定为“artifact validator / linter 层如何进入 artifact rule ABI 层”，避免 `29` 同时承担自动校验与机器可读规则包两类职责
+- `philosophy/71` 当前应负责把“成熟规则 = 不同消费者共享同一拒收语义”稳定成新的长期判断
+- 当 `navigation/30 + api/40-42` 稳定后，下一步最值钱的不是继续补更多 rule schema，而是补 artifact rule sample kit / evaluator：把 hard fail、lint warn、reviewer gate、handoff reject 与 rewrite hint 写成最小规则样例、失败样例与 evaluator 接口
+- `playbooks/20` 当前应负责 Prompt rule sample kit：让 shared object continuity、stable bytes、lawful forgetting ABI 与 handoff reject 在宿主、CI、评审与交接里被重复验证
+- `playbooks/21` 当前应负责治理 rule sample kit：让 decision gain、failure semantics、rollback object 与 object upgrade 在不同消费者里被重复验证
+- `playbooks/22` 当前应负责结构 rule sample kit：让 authoritative path、recovery asset ledger、anti-zombie evidence 与 handoff reject 在不同消费者里被重复验证
+- `navigation/31` 的职责应稳定为“artifact rule ABI 层如何进入 artifact rule sample kit / evaluator 层”，避免 `30` 同时承担规则包定义与规则验证样例两类职责
+- `philosophy/72` 当前应负责把“成熟验证 = 共享拒收语义能被反复证明”稳定成新的长期判断
+- 当 `navigation/31 + playbooks/20-22` 稳定后，下一步最值钱的不是继续补更多规则样例，而是补 artifact evaluator harness / replay lab：把 replay case、cross-consumer alignment、drift regression 与 rewrite replay 接成可重放实验室
+- `playbooks/23` 当前应负责 Prompt evaluator harness：让 continuation replay、cross-consumer alignment 与 drift regression 反复证明 shared continuation
+- `playbooks/24` 当前应负责治理 evaluator harness：让 decision gain replay、rollback alignment 与 drift regression 反复证明统一拒收语义
+- `playbooks/25` 当前应负责结构 evaluator harness：让 split-brain replay、anti-zombie alignment 与 drift regression 反复证明 authoritative surface
+- `navigation/32` 的职责应稳定为“artifact rule sample kit / evaluator 层如何进入 evaluator harness / replay lab 层”，避免 `31` 同时承担样例接口与重放实验室两类职责
+- `philosophy/73` 当前应负责把“成熟回放 = 共享拒收语义能跨消费者重复成立”稳定成新的长期判断
+- 当 `navigation/32 + playbooks/23-25` 稳定后，下一步最值钱的不是继续补更多 replay case，而是补 artifact harness runner / drift ledger：把 replay queue、alignment assertion、drift ledger 与 rewrite adoption 接成可持续执行底盘
+- `api/43` 当前应负责 Prompt harness runner 协议：让 continuation replay、stable bytes ledger、lawful forgetting ABI 与 rewrite adoption 进入同一持续执行对象链
+- `api/44` 当前应负责治理 harness runner 协议：让 decision window、control arbitration truth、rollback object 与 object upgrade 进入同一持续执行对象链
+- `api/45` 当前应负责结构 harness runner 协议：让 authoritative path、recovery asset ledger、dropped stale writers 与 recovery adoption 进入同一持续执行对象链
+- `architecture/78` 当前应负责把 replay queue、alignment gate、drift ledger 与 rewrite adoption loop 收束成持续验证底盘
+- `navigation/33` 的职责应稳定为“artifact evaluator harness / replay lab 层如何进入 harness runner / drift ledger 层”，避免 `32` 同时承担实验室设计与持续执行底盘两类职责
+- `philosophy/74` 当前应负责把“成熟验证底盘 = 回放、改写与台账共享同一持续执行语义”稳定成新的长期判断
+- 当 `navigation/33 + api/43-45 + architecture/78` 稳定后，下一步最值钱的不是继续补更多 runner 抽象，而是补 builder-facing runner 手册：把 replay queue policy、alignment gate、drift review 与 adoption runbook 压成团队操作顺序
+- `guides/42` 当前应负责 Prompt runner 手册：让 accepted transcript、compact boundary、cache-safe prefix、stable bytes ledger 与 rewrite adoption 进入同一操作顺序
+- `guides/43` 当前应负责治理 runner 手册：让 decision window、winner source、arbitration ledger、rollback object 与 object upgrade 进入同一操作顺序
+- `guides/44` 当前应负责结构 runner 手册：让 authoritative queue、recovery asset ledger、dropped stale writers 与 recovery adoption 进入同一操作顺序
+- `navigation/34` 的职责应稳定为“artifact harness runner / drift ledger 层如何进入 builder-facing 操作手册层”，避免 `33` 同时承担持续执行协议与团队手册两类职责
+- `philosophy/75` 当前应负责把“成熟继续 = 每次继续前重新消费上一轮留下的判断条件”稳定成新的长期判断
+- 当 `navigation/34 + guides/42-44` 稳定后，下一步最值钱的不是继续补更多 runner checklist，而是回到源码目录级 atlas：把 `services/`、`tools/`、`commands/` 细分到二级目录并重新校准控制平面、消费者子集与权威入口
+- `api/46` 当前应负责 services atlas：把 `api/compact/memory/mcp/lsp/analytics/services/tools` 子系统的权威入口、主要消费者与危险改动面拉平
+- `api/47` 当前应负责 tools atlas：把执行原语、控制工具、任务编排、扩展桥接、deferred visibility 与 consumer subset 边界拉平
+- `api/48` 当前应负责 commands atlas：把会话控制、模式治理、扩展装配、运营诊断与 internal-only 边界拉平
+- `navigation/35` 的职责应稳定为“顶层目录地图如何进入二级目录 atlas 层”，避免 `30` 同时承担顶层地图与二级目录 atlas 两类职责
+- `philosophy/76` 当前应负责把“成熟源码地图 = 更快暴露权威入口、消费者子集与危险改动面”稳定成新的长期判断
+- 当 `navigation/35 + api/46-48` 稳定后，下一步最值钱的不是继续补更多 atlas，而是补可迁移的 Agent Runtime 构建层：把对象、协作语法、资源定价、恢复闭环、宿主模板与统一蓝图压成一套 builder-facing 方法
+- `guides/45` 当前应负责 Runtime 构建指南：让正式对象、协作语法、资源定价、恢复闭环与消费者边界进入同一构建顺序
+- `guides/46` 当前应负责宿主落地模板：让 control、状态写回、Context Usage、恢复与 evidence envelope 进入同一宿主闭环模板
+- `guides/47` 当前应负责统一蓝图手册：让 Prompt 语法、资源定价与可演化内核进入同一张 Agent Runtime 蓝图
+- `navigation/36` 的职责应稳定为“源码 atlas 如何进入 Agent Runtime 构建层”，避免 `35` 同时承担目录 atlas 与构建方法两类职责
+- `philosophy/77` 当前应负责把“成熟构建 = 先固定对象、边界、预算与恢复闭环”稳定成新的长期判断
+- 宿主接入分析必须继续把 `query()`、control protocol、state writeback、remote adapter、consumer subset 一起写，不能回退成单层 SDK 介绍
+- workflow engine 当前最稳的写法应是“对象模型已可见、执行内核仍缺席”，不能因为缺文件就写成空白，也不能反过来脑补完整 engine
+- REPL 的前台优势更适合按 search / selection / sticky / teammate routing 的协同来解释，而不是按单个 UI 组件解释
+- channels 与托管设置应从“组织级治理实践”角度单独写，不再只散落在 API 与 risk 章节里
+- 公开镜像相关写作纪律应升级为“可见边界优于脑补全貌”
+- workflow 的下一层哲学表述应稳定为“正式编排对象”，不要退回“脚本系统”叙述
+- 前台研究的下一层哲学表述应稳定为“用户可见真相”，不要退回“显示层优化”叙述
+- 治理层研究的下一层哲学表述应稳定为“输入边界”，不要退回“企业配置项”叙述
+- prompt 魔力的更深层写法应稳定为“五层合同 + 缓存断点 + 状态晚绑定”，不要退回对单段 system prompt 的评论
+- prompt 深线还应继续升级为“可重放前缀 + 可观测预算 + section 编译器 + 模型真相/用户真相分层”
+- prompt 深线还应继续升级为“主线程生产 prefix asset，辅助循环共享同一前缀网络”
+- 共享前缀网络的实践判断应稳定为：宁可 suppress / 等待可信 snapshot，也不要让 suggestion、summary、memory 一类旁路循环各自重建世界模型
+- 统一预算器的更深层写法应稳定为“请求前裁能力、请求中保工作集、请求后做恢复与继续”，不要退回“省 token 技巧”叙述
+- 源码质量研究的更稳顺序应是“先找 contract，再找 runtime 底盘，再看热点与缺口”
+- contract-first 阅读法应继续细化为“先 schema/type union，再 registry，再 authoritative surface，再 adapter subset，最后热点 kernel”，避免把声明存在、当前注册和适配器子集混成一层真相
+- 源码质量深线还应继续升级为“显式失败 + 反竞争条件 + chokepoint + leaf module”，不要退回“大文件很多/代码很复杂”的空泛评价
+- 依赖图诚实性应继续稳定成：允许适度不 DRY，以保住 anti-cycle seam、single-source file、风险命名与 import 边界注释，而不是把模块化退回成“抽得更统一”
+- 当 `guides/18-20` 稳定后，应及时补导航层和模板层，而不是继续只补抽象章节；否则深方法很快又会沉回“知道结论但不会迁移”
+- 深方法模板层当前应稳定成三类：共享前缀策略模板、contract-first 审读清单、dependency-honesty review checklist
+- prompt 深线下一层可继续稳定成 `Prompt Constitution`：system prompt 是一份受 section 宪法、危险 cache-break 声明、角色优先级链和合法遗忘策略共同治理的制度体，而不是单段文案
+- 安全与省 token 深线下一层可继续稳定成“治理顺序 + 失败语义分型 + 可撤销自动化 + 稳定字节资产”：系统真正优化的是把检查放在正确顺序、在无决策增益处停止花 token、并对不同资产采用不同 fail-open/fail-closed
+- 源码先进性下一层可继续稳定成“构建系统也是架构工具”：external stubs、portable shadow entry、transport shell、薄 registry 与 zombification 防治共同塑造发布面、入口安全与演化秩序
+- 高阶制度层当前应稳定成三条第二序母线：Prompt Constitution、治理顺序与失败语义、构建系统塑形源码秩序；它们比继续讨论“提示词技巧 / 统一预算器 / 目录漂亮”更接近 Claude Code 的深层制度设计
+- 当 60-62 稳定后，应优先补对应 architecture 底盘篇，再考虑继续扩哲学；否则制度层会重新悬空，缺少机制承托
+- 当 `architecture/73-75` 稳定后，应优先补对应 builder-facing guide，而不是继续只补 README 入口；否则机制层仍难迁移到团队实际设计动作
+- API atlas 还应继续补目录级能力地图，避免“字段齐了，但能力地形仍然不可检索”
+- 宿主 API 还应继续补失败语义、取消请求、orphan response 与 transcript repair，不要只写 happy path
+- 预算器深线还应继续补 context usage、systemPromptSections、attachmentsByType 与 pending_action 的联合调优方法
+- 预算深线还应继续从“统一预算器”推进到“观测面 + 建议层 + 调优动作”的闭环写法
+- 源码质量与宿主真相深线还应继续补 authoritative surface、single source of truth、session/worktree split-brain 防治与 schema 共源设计
+- 使用与对象深线还应继续补“上下文压力 / 阻塞压力 / 协作压力 / 隔离压力”对应的对象升级法，不要退回“继续聊或换 prompt”二分法
+- prompt 深线还应继续补“可解释稳定性系统”：cache break 归因、TTL / server-side 分流、tool ABI 稳定性与 shared prefix 经济应该合写
+- 源码质量深线还应继续补本地查询 authority、dispatching 空窗、generation 熔断与 UI 派生状态分离，不要只停留在远程 race 和 duplicate/orphan 上
+- 远程恢复深线还应继续补 close code 分层、401 transport rebuild、timeout budget、preflight fail-closed 与“恢复期间主动丢消息”的哲学，不要退回“断线重连”叙述
+- 插件深线还应继续补 authoritative enabled truth、editable scope truth、installation truth 与 policy truth 的分层，不要退回“enabled 开关”叙述
+- 安全/省 token 深线还应继续补 `policySettings` 作为控制平面、sandbox contract 到 adapter enforcement、以及“对象级替换 / headroom / continuation”三套预算器的分工
+- 安全深线还应继续补“扩权输入只认高信任来源、收权允许本地自限、adapter 还要反向保护控制平面本身”这条输入边界控制平面主线
+- 更高一层的第一性原理已升级为“Claude Code 真正在压制的是模型可达世界的无序扩张”，安全、治理、token 与 prompt 稳定性应按动作空间 / 权威空间 / 上下文空间 / 时间空间四面统一叙述
+- 源码质量深线应继续固定为“五种不变量治理模式”：chokepoint、typed transition、authoritative surface、race-aware runtime、contract-first，不要退回“文件大 / 模块多 / 功能多”的空泛评价
+- prompt 深线应继续固定为“上下文准入编译器”叙述：来源优先级、system prompt block 编译、schema 字节稳定、分类器共享上下文与意图连续性压缩必须合写
+- prompt 组装深线应继续固定为“稳定前缀 + 动态尾部 + delta attachments + side-loop fork + protocol transcript”一条 cache-aware assembly pipeline，不要退回对单段 prompt 文案的讨论
+- `getSessionStartDate`、memoized context、section cache、sticky headers 共同表明 Claude Code 接受“轻微陈旧”来换取系统级确定性，这应被视为刻意设计，而不是偶然副作用
+- prompt runtime 还应继续明确区分 UI transcript truth 与 protocol transcript truth，不要把前台看到的消息顺序直接当成模型请求的协议顺序
+- 能力设计深线还应继续固定为“渐进暴露优于全量声明”：deferred tools、delta attachments、managed-only source gating 应被视为同一设计动作
+- 根目录旧命名页当前仅应作为兼容别名保留；规范入口是 `README + 00-08`，`docs/` 是开发与记忆层而非正文层，这一点必须持续明确
+- 源码先进性深线还应继续明确：成熟架构不是消灭所有大文件，而是让合法复杂度只停留在少数 kernel / shell / chokepoint，周围继续用 leaf modules 与 single source of truth 兜底
+- “模型此刻看见什么”现在应被视为正式设计平面，而不是 prompt 细节；最小可见面、deferred、delta 与 source gating 是同一 visibility control plane 的不同投影
+- observability 深线当前应稳定成三层：输入真相、状态真相、稳定性真相；它不是 debug 层，而是 explainability contract
+- 依赖图治理深线当前应稳定成三件事：高扇入入口必须薄、共享真相必须小、不可避免脏边必须显式隔离；这比单纯追求 DRY 或文件更碎更重要
+- 宿主分析当前必须稳定成三层写法：协议全集、控制平面主路径、consumer subset；不能再把 schema、执行面与消费面混成同一层
+- `worker_status / external_metadata` 当前必须按 durability surface 叙述，而不是 telemetry；resume、reconnect 与 stale-write rejection 都依赖它
+- “单一权威”当前必须继续与“单一全景表示”分开叙述；多消费者系统共享的是权威合同，不是同一种展示或请求表示
+- 当前真相优先级高于表面连续性；初始化清旧 metadata、恢复期间丢弃 stale control/result 都应被视为成熟设计
+- prompt 魔力当前应继续稳定成“工作语法机”叙述：世界先被编成可治理语法，再被翻译成模型可行动的 protocol surface
+- 安全与省 token 当前应继续稳定成 `Narrow / Later / Outside` 三种统一动作，不要退回“成本优化”和“安全防护”两套分裂叙述
+- 源码先进性当前应继续稳定成“可演化内核 / 熵治理”叙述：新增 feature 时 authority、transition、boundary、dependency 必须仍然可控
+- 目录优化当前应继续沿“问题入口先于目录入口”的方向推进；导航层应承载高阶设计母线，而不只是文件索引
+- prompt 深线当前还应继续稳定成“语义压缩器”叙述：目标不是更短文本，而是更高密度的行动语义
+- 安全与省 token 当前还应继续稳定成“资源宪法 / 资源主权”叙述：runtime 统一分配能力、时间、注意力与权威
+- 源码先进性当前还应继续稳定成“演化制度设计”叙述：系统的高级感来自始终保留下一次重构可能性
+- prompt 深线当前还应继续稳定成“协调成本控制面”叙述：好的 prompt 既组织模型，也组织人类怎样低成本接手
+- 安全与省 token 当前还应继续稳定成“有效自由”叙述：成熟约束的目标不是更少行动，而是更少失控和更高行动力
+- 源码先进性当前还应继续稳定成“源码即治理界面”叙述：可读性不是审美附属，而是治理边界的可见外壳
+- 使用专题当前应继续承接这些高阶主线，把它们翻译成面向操作者与平台构建者的可执行方法
+- 使用专题还应继续沉淀“目标 / 预算 / 对象 / 边界 / 回写”的第一性原理方法，而不是只给命令清单
+- 主入口、navigation 与专题 README 必须和正文同步更新，否则蓝皮书会先在检索层失真
+- prompt 魔力更适合按“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叙述，而不是按 prompt 文案评论叙述
+- Prompt 魔力更精确的第一性原理表述应升级为“角色合同 + 工具边界 + 缓存结构 + 状态反馈 + 协作语法”
+- 安全、token 经济与体验本质上共用一个预算器，分别约束动作空间、上下文空间与认知噪音
+- 治理型 API 不是附属 introspection，而是输入治理、成本治理与配置治理三条正式控制面
+- 当前公开源码镜像的工程先进性与局限必须一起写：既要写 contract-first / runtime-first，也要写热点大文件与公开树不完整
 - `message_delta` 对已 yield assistant message 的原地写回，是 transcript 引用一致性的重要实现细节
 - plugin MCP 的动态 scope 与环境变量分层解析，说明连接治理是扩展模型的一部分，不是附加逻辑
 - Claude Code 更适合被理解成 host-integrated runtime，而不是 terminal shell
@@ -101,22 +1223,39 @@
 - 远程恢复更适合按 `SessionsWebSocket`、`remoteBridgeCore`、`RemoteIO` 三层状态机理解，而不是一句“自动重连”
 - Claude Code 的宿主状态真相更适合按“双通道”理解：`SDKMessage` 负责时间线，`worker_status` / `external_metadata` 负责当前快照与恢复后真相
 - consumer subset 与 compatibility shim 是 API 现实的一部分：schema 全集并不等于每个 adapter / UI 都完整消费
+- Claude Code 的 prompt 魔力更适合按“装配链 + 角色合同 + cache 稳定性 + attachment 注入”理解，而不是按单段 system prompt 理解
+- Claude Code 的安全更适合按 trust / policy / typed permission / sandbox / hook / MCP auth 分层理解，而不是按 permission modal 理解
+- Claude Code 的源码先进性更适合按 query turn state、Tool ABI、schema/cache/retry 基础设施理解，而不是按“文件整洁度”理解
+- Claude Code 的省 token 更适合按“稳定前缀 + 按需目录 + 大块输出外置 + 尾部回收”四层经济系统理解，而不是按“是否会 compact”理解
+- `query.ts` 更适合被理解成 turn runtime kernel，而不是“模型请求循环”
+- Claude Code 的 continue 语义更适合按 tool follow-up、recovery self-loop、policy continuation 三类理解
+- Claude Code 的权限链更适合按 typed decision engine + relay/renderer + hard boundary 理解，而不是按 permission modal 理解
+- Claude Code 的宿主真相更适合按 event stream、snapshot、recovery 三层理解，而不是只按 SDK message 理解
+- `services` 更适合被理解成长生命周期 subsystem planes，`utils` 更适合被理解为 invariant kernels
+- 多 Agent prompt 的效果更适合按 runtime contract、ownership、mailbox/task bus 与隔离语义理解，而不是按措辞技巧理解
+- Claude Code 的恢复更适合按主 transcript、sidechain transcript、task output、state restore 四层理解，而不是按“会话日志”单层理解
+- Claude Code 的前台更适合被理解成认知控制面，而不是终端聊天 UI
+- Claude Code 的产品现实更适合按 build gate、runtime gate、compat shim、consumer subset 四层理解
+- Claude Code 的更高层设计单位更适合概括成 runtime planes，而不是功能清单
+- Claude Code 的 prompt 更适合按“静态法 + 动态 section + 角色覆盖层 + attachment 晚绑定”理解，而不是按单段文案理解
+- Claude Code 的知识更适合按“规则层 + typed memory + session memory + relevant memories”四层栈理解，而不是按单层记忆理解
+- Claude Code 的多 Agent 更适合按“coordinator law + task object + mailbox/team context + inherited runtime”理解，而不是按并发数量理解
+- Claude Code 的安全与 token 经济本质上都在做“限制无序扩张”的同一优化，只是分别作用于动作空间和上下文空间
+- Claude Code 的生态写作必须持续区分 protocol support、runtime path 与 product maturity，不能因为代码里有入口就上升为稳定公共承诺
+- 蓝皮书目录现在必须显式分成“主线正文”“导航层”“机制层”“接口层”“哲学层”“风险层”“实践层”，否则章节增多后会失去检索性
+- Claude Code 的第一性原理不应再只写成六问，而应扩展为观察、决策、行动、记忆、协作、恢复、治理、经济八问
 
 ## 后续章节建议
 
-1. 深挖 `REPL.tsx` 的交互状态机
-2. 深挖 Team、Coordinator、Workflow 的更高层编排范式
-3. 深挖 `REPL.tsx` 的 transcript search / sticky prompt / message actions
-4. 深挖权限系统与 auto mode 的风险控制
-5. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
-6. 给 bridge / direct-connect / remote-session 三类宿主路径做更细时序图
-7. 把 `SDKMessageSchema` 与 control subtype 做成更细的 message-response crosswalk casebook
-8. 把 `SDKMessage`、`worker_status`、`external_metadata`、consumer subset 做成更细字段级 crosswalk
-9. 给 MCP 状态、命令 availability、控制请求做时序化视图
-10. 深挖 `Messages.tsx`、`PromptInput`、`messageActions` 的前台交互层
-11. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
-12. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、演化面都做成清晰阅读路径
-13. 把 plugin manifest / marketplace / MCPB / LSP / channels 的产品边界继续写实
+1. 深挖 memory / CLAUDE.md / scratchpad / durable knowledge
+2. 给 bridge / direct-connect / remote-session 三类宿主路径做更细时序图
+3. 把 `SDKMessage`、control、snapshot、recovery 做成更细宿主实现 casebook
+4. 给 MCP 状态、命令 availability、控制请求做时序化视图
+5. 深挖 REPL 的 transcript mode、message actions、footer / quick search 协同
+6. 继续把蓝皮书主线压缩成一跳结论，把细节持续下沉为可检索专题
+7. 把工具面、宿主面、适配器面、时序面、闭环面、事件面、连接面、状态面、真相面、控制面、提示词面、工程面、协作面、前台面、演化面都做成清晰阅读路径
+8. 把命令全集、工具全集、任务/团队/remote 能力全集从零散章节提升为统一可检索手册
+9. 把治理型 API、插件 lifecycle、动态可见性继续做成宿主实践 casebook
 
 ## 编写约定
 
@@ -135,3 +1274,6 @@
 - 写时序相关结论时，必须同时标出成功路径、失败路径，以及删除失败路径后会出现的假成功错觉
 - 写闭环相关结论时，必须同时标出 request、response、follow-on SDKMessage，以及哪个信号才算真正闭环完成
 - 写状态相关结论时，必须同时标出事件时间线、当前快照、恢复路径，以及 consumer subset
+- 写 prompt 相关结论时，必须同时标出装配链、角色合同、attachment 注入与 cache 约束
+- 写源码质量相关结论时，必须同时标出 invariant、边界、cache/retry 结构与真实工程债务
+- 写目录结构相关结论时，必须先问清自己是在补“正文主线”还是在补“导航/检索入口”
