@@ -79,12 +79,6 @@ Prompt refinement correction refinement execution 最危险的，不是：
 
 - `shared_reject_verdict` 应先绑定同一个 `effective_authority_chain_hash + section_registry_generation + tools_hash + normalized_request_hash + repair_attestation_id`，再宣布 `steady_state_chain_resealed`。
 
-### 改写路径
-
-1. 把 transcript 顺滑度、handoff 完整度与 worker 研究量降为观察材料。
-2. 把 authority、registry、tool contract、request truth 与 attestation 提升为前提对象。
-3. 任何先看解释稿、后看编译对象的 Prompt refinement correction refinement execution 都判为 drift。
-
 ## 3. 假shared reject语义：reject by consumer divergence
 
 ### 坏解法
@@ -115,12 +109,6 @@ Prompt refinement correction refinement execution 最危险的，不是：
 
 - shared `reject order` 必须先证明 `effective_authority_chain_hash + section_registry_generation + tools_hash + normalized_request_hash + tool_pairing_health + continue_qualification + cache_break_reason` 仍围绕同一个 Prompt 对象，再决定 `steady_state_chain_resealed`、`truth_reseal_required`、`cache_break_reprice_required`、`reentry_required` 或 `reopen_required`。
 
-### 改写路径
-
-1. 把宿主顺滑感、CI 静默、评审认同与交接可读性降为分角色观察。
-2. 把 shared `reject` 明确绑定到同一个 compiled request object。
-3. 任何四类消费者共享同一 verdict 名字、却不共享同一 Prompt 对象的执行都判为 drift。
-
 ## 4. 假reopen liability：liability by author memory and compact optimism
 
 ### 坏解法
@@ -141,12 +129,6 @@ Prompt refinement correction refinement execution 最危险的，不是：
 ### Claude Code 式正解
 
 - `reopen liability` 必须显式绑定 `lawful_forgetting_boundary + continue_qualification + cache_break_reason + threshold_retained_until + reopen_required_when`，并把 later 团队可回到的 Prompt 对象写清楚。
-
-### 改写路径
-
-1. 把“作者知道怎么接回来”降为非正式帮助。
-2. 把 forgetting、qualification、cache break 与 threshold 提升为 reopen 前提。
-3. 任何依赖 compact 乐观主义而不是正式 threshold 的 Prompt refinement correction refinement execution 都判为 drift。
 
 ## 5. 从更多角度看它为什么迷惑
 

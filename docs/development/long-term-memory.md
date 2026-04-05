@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 正文与记忆分层规则已收紧：
+  - `bluebook/` 正文只保留问题边界、对象链、第一性原理、稳定阅读顺序与苏格拉底自检。
+  - 轮次推进、当前层级、下一步候选、工作目录、提交与开发过程一律回写 `docs/`。
+- 已对最近污染最重的 `navigation/79-104` 批量清理“连续小循环进度表 / 前向入口”式正文。
 - 蓝皮书已经从“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行 / repair steady-state correction-of-correction rewrite correction refinement correction refinement execution”继续推进到“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真 / repair steady-state correction-of-correction rewrite correction refinement correction refinement distortion casebook”层。
 - 新增结论：
   - Prompt refinement correction refinement execution 即使已经被 `compiled request card` 固定下来，仍会重新退回 smooth transcript、handoff prose、worker prose、dynamic boundary 误读与 compact 乐观主义；这说明 Prompt 魔力真正保护的是 authority、registry、tool contract、request truth、protocol truth、continue qualification 与 cache break truth 的同一对象链。

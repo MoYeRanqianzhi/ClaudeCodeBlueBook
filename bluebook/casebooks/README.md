@@ -29,9 +29,10 @@
 - 想看运行手册和演练动作：回到 [../playbooks/README.md](../playbooks/README.md)
 - 想做跨样本反查：回到 [../navigation/README.md](../navigation/README.md)
 - 想看结构和协议的正向定义：回到 [../architecture/README.md](../architecture/README.md) 与 [../api/README.md](../api/README.md)
-- 想看最新共同 `reject` 与 `reopen` 失真样本：从 `70-72`
+- 想看共同 `reject` 与 `reopen` 的 card 失真样本：从 `70-72`
 
 ## 维护约定
 
 - README 只保留阶段入口和代表性反例，不再镜像全部 72 篇标题。
 - 新样本应按编号段放回对应阶段，保持与 `playbooks/` 和 `navigation/` 的互补关系。
+- 轮次推进与开发记忆统一回写到 `docs/`，不写进案例正文。

@@ -81,6 +81,14 @@
 - `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
 - `claude-code-source-code/src/utils/worktree.ts:1046-1172`
 
+### A077. 蓝皮书正文不应继续混入开发记忆层
+
+- 最近污染最重的不是主线 `00-08`，而是 `navigation/79-104` 这类递归子循环导航；这些文件经常把“当前已推进到哪”“下一步候选是什么”“这一段应被视为多少篇连续小循环”写进正文，结果把检索层写成了轮次记忆层。
+- 这类段落的问题不在于它们完全错误，而在于它们回答的是“作者这轮做到哪”，不是“读者此刻该理解什么”；所以它们应进入 `docs/development/*`，不应继续占据正文位置。
+- 正文真正稳定的部分应只保留四类内容：本篇回答/不回答什么、对象链与消费者顺序、第一性原理解释、苏格拉底式自检。
+- README 可以保留稳定索引、编号段和代表性入口，但不应继续携带“当前深层协议链推进到哪”“下一步前向入口是什么”这类开发记忆句式。
+- `navigation/04` 应成为这条规则的权威入口：`docs/` 承载进度、候选、版本、提交与开发过程；`bluebook/` 承载稳定结论、对象与方法。
+
 ### A073. 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真之后，下一层应进入宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修纠偏层
 
 - Prompt refinement correction refinement execution distortion 即使已经被 `casebooks/67` 写成假 `repair card`、假共同 `reject` 语义与假 `reopen liability` 的反例层，如果团队不能继续把这些失真压回固定 `refinement correction refinement order`、共同硬拒收项与 builder-facing 模板骨架，Prompt 魔力就仍会继续围绕 polished transcript、summary handoff、worker prose 与 wording 崇拜工作；这说明 Prompt 线下一层最值钱的不是继续补反例标签，而是把这些失真压成新的 guide layer。
