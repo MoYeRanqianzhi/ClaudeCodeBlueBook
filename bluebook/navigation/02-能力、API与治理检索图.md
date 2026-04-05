@@ -2,6 +2,19 @@
 
 这一篇把“Claude Code 到底有多少能力表面”从单一功能表改成检索地图。
 
+## 0. 先带着三条判断使用这张检索图
+
+这张图虽然在回答“从哪里找”，但更稳的用法仍然要先带着三条判断：
+
+1. Prompt 线提醒你：
+   - 先分清你要找的是“能力存在的痕迹”，还是“什么已经合法进入模型当前可见世界”。
+2. 治理线提醒你：
+   - 先分清你要找的是“有哪些接口”，还是“哪些扩张当前被价格秩序允许进入当前世界”。
+3. 源码质量线提醒你：
+   - 先分清你要找的是“正式权威面”，还是“宿主子集、声明先行与公开镜像缺口”。
+
+否则，这张图很容易重新退回一张更大的功能清单。
+
 ## 1. 能力全集不是一个平面
 
 按当前源码快照，可见的能力至少分为七层：
@@ -42,12 +55,12 @@
 | 宿主如何接控制协议 | `api/13`、`api/14`、`api/15` | `architecture/13`、`architecture/15` |
 | 宿主如何拿到恢复与状态真相 | `api/16`、`api/17`、`api/19`、`api/20` | `architecture/16`、`architecture/17`、`architecture/25` |
 | prompt、知识、记忆从哪里注入 | `api/18`、`api/21` | `architecture/18`、`architecture/28`、`architecture/29` |
-| prompt 为什么强到不像单段 system prompt | `architecture/31`、`architecture/36` | `philosophy/21`、`navigation/03` |
+| prompt 为什么强到不像单段 system prompt | `09`、`philosophy/84` | `architecture/82`、`guides/99`、`playbooks/77`、`casebooks/73` |
 | 如果想先抓三条最高阶判断，而不是先读功能表 | `09`、`philosophy/84-87` | `guides/99-102`、`playbooks/77-79` |
 | plugin / MCP / MCPB / channels / LSP 到底边界在哪 | `api/22` | `architecture/27`、`philosophy/20` |
 | 安全、治理、远程高安全链路如何理解 | `risk/README.md` | `architecture/19`、`risk/05`、`risk/11` |
 | 目录结构为什么本身就在暴露能力拓扑 | `api/30` | `architecture/24`、`architecture/38` |
-| 为什么安全、治理与省 token 应该共读 | `architecture/32`、`architecture/37` | `api/28`、`api/29`、`philosophy/22` |
+| 为什么安全、治理与省 token 应该共读 | `09`、`philosophy/85` | `architecture/83`、`guides/100`、`playbooks/78`、`casebooks/74` |
 | 为什么公开镜像仍然值得学 | `architecture/33`、`architecture/38` | `philosophy/23`、`navigation/03` |
 | 如果想在公开镜像条件下稳当地判断源码质量 | `guides/102`、`philosophy/87` | `architecture/38`、`architecture/63`、`architecture/84` |
 
@@ -63,7 +76,7 @@
 
 ## 5. 推荐目录协议
 
-为了避免后续继续把主线写厚，这一轮采用如下目录协议：
+为了避免把主线、检索、深文和开发记忆重新混在一起，本书当前采用如下目录分工：
 
 - `bluebook/` 根目录：只保留主线判断和兼容入口。
 - `bluebook/navigation/`：负责让读者定位问题，不承载细碎实现。
@@ -72,11 +85,26 @@
 - `bluebook/philosophy/`：负责回答“为什么要这样设计，而不是别样设计”。
 - `bluebook/risk/`：负责回答“治理与风控如何约束这套系统”。
 
-## 6. 这张图暴露出的当前空白
+## 6. 如何稳地使用这张图
 
-从检索视角看，当前最值得继续补强的是：
+如果你想用这张图避免误读，先固定四次自问：
 
-1. 源码目录级索引继续下沉到二级目录与代表性叶子模块。
-2. SDK/control/session/remote 的统一接入矩阵继续补 subtype / recovery casebook。
-3. 顶层入口仍需持续防止读者先退回功能清单与目录体感，而没有先带着三条高阶判断进入主线。
-4. 公开镜像研究纪律仍需继续前置到更多入口，避免“声明存在 / 当前注册 / 宿主子集 / 热点实现”重新被混写。
+1. 我现在要回答的是能力存在、当前可见、当前被允许，还是产品承诺？
+2. 我现在更需要进入能力平面，还是先回到三条高阶判断？
+3. 我现在需要的是字段级接口、运行时闭环，还是设计哲学解释？
+4. 我现在看到的是公共主路径、宿主子集，还是公开镜像里的声明与缺口？
+
+如果问题仍偏“Claude Code 支不支持 X”，先回：
+
+- `04-公开能力与隐藏能力.md`
+- `05-功能全景与API支持.md`
+- `08-能力全集、公开度与成熟度矩阵.md`
+
+如果问题已偏“为什么要这样设计”，先回：
+
+- `09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+- `philosophy/84-87`
+
+如果问题已偏“公开镜像里怎样稳地下判断”，先回：
+
+- `guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md`
