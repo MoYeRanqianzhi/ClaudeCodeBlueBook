@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 三张控制面图已继续下沉成长期验证手册：
+  - `playbooks/77` 负责请求装配控制面的持续回归。
+  - `playbooks/78` 负责当前世界准入主权的持续回归。
+  - `playbooks/79` 负责 one writable present / anti-zombie 结构的持续回归。
+- 目录结构进一步优化：
+  - `playbooks/` 已从 `01-76` 扩展为 `01-79`。
+  - `navigation/39` 现在会把 `architecture/82-84 -> guides/99-101 -> playbooks/77-79` 串成完整的持续验证路由。
 - 三张控制面图已继续下沉成 builder-facing 高阶审读模板：
   - `guides/99` 负责请求装配控制面的苏格拉底审读。
   - `guides/100` 负责当前世界准入主权的苏格拉底审读。

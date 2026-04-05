@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 新增《请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归》《当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归》《one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归》，并同步更新 `playbooks/README`、`navigation/39` 与总索引，把三张控制面图从高阶审读模板继续下沉成长期验证手册
 - 新增《如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object》《如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing》《如何用苏格拉底诘问法审读one writable present：single-writer、recovery asset与anti-zombie》，并同步更新 `guides/README`、`navigation/15`、`navigation/42` 与总索引，把三张控制面图继续下沉成 builder-facing 高阶审读模板
 - 新增主线章节《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》与哲学专题《真正有魔力的Prompt，会先规定世界如何合法进入模型》《真正成熟的治理，不是更会拦截，而是更会为扩张定价》《真正先进的内核，不是更会分层，而是更会阻止过去写坏现在》，并同步更新导读、总索引、目录职责说明、苏格拉底导航与哲学专题 README，把 `architecture/82-84` 继续前置回主线入口与第一性原理层
 - 新增《请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks》《反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing》《权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping》，并同步更新主线章节《运行时契约、知识层与生态边界》、架构专题 README 与总索引，把 Claude Code 的 Prompt 魔力、安全/省 Token 统一设计、源码先进性三条母线继续压成三张更硬的 runtime 控制面图

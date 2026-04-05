@@ -1,0 +1,117 @@
+# one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归
+
+这一章不再解释源码先进性为什么成立，而是把 `architecture/84`、`philosophy/86` 与 `guides/101` 继续压成一张长期运行里的验证手册。
+
+它主要回答五个问题：
+
+1. 团队怎样知道当前仍在围绕同一个 one writable present 工作。
+2. 哪些症状最能暴露结构已经退回多写入面、恢复篡位或 stale write 复活。
+3. 哪些检查点最适合作为持续回归门禁。
+4. 哪些 drift 必须直接拒收，而不是继续靠目录整理或作者记忆兜底。
+5. 怎样用苏格拉底式追问避免把这层写成“结构卫生检查表”。
+
+## 0. 代表性源码锚点
+
+- `claude-code-source-code/src/entrypoints/cli.tsx:16-33`
+- `claude-code-source-code/src/query/config.ts:8-45`
+- `claude-code-source-code/src/query/deps.ts:8-40`
+- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
+- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
+- `claude-code-source-code/src/services/api/sessionIngress.ts:60-211`
+- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
+- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
+- `claude-code-source-code/src/utils/task/framework.ts:158-269`
+
+## 1. 第一性原理
+
+对 one writable present 来说，真正重要的不是：
+
+- 目录看起来更整齐
+
+而是：
+
+- 现在时态的写入权仍没有被过去对象、错误恢复资产与错误边界重新夺走
+
+所以这层验证最先要看的不是分层截图，而是：
+
+1. single-writer authority continuity
+2. recovery asset non-sovereignty continuity
+3. anti-zombie continuity
+4. release-surface shaping continuity
+5. later-maintainer rejectability continuity
+
+## 2. 回归症状
+
+看到下面信号时，应提高警惕：
+
+1. 多个 host、adapter 或 projection 开始并行宣布当前真相。
+2. pointer、ledger、resume file 开始被当成主真相使用。
+3. stale finally、旧 snapshot、旧 pointer 开始回写 fresh state。
+4. compile-time / runtime / artifact gate 混成一层。
+5. later maintainer 只能靠作者记忆才能判断哪里最危险。
+
+## 3. 每轮检查点
+
+每次变更后，至少逐项检查：
+
+1. `single-writer authority continuity`
+   - 当前真相是否仍只有一个正式写入面。
+2. `recovery asset non-sovereignty continuity`
+   - 恢复资产是否仍只帮助找回 authority，而不宣布 authority。
+3. `anti-zombie continuity`
+   - stale finally、stale snapshot、stale pointer 是否仍被正式拒绝。
+4. `release shaping continuity`
+   - compile-time、runtime 与 artifact 三层边界是否仍然分层。
+5. `later-maintainer rejectability continuity`
+   - later maintainer 是否仍能直接看出危险改动面与 reject 条件。
+
+## 4. 直接拒收条件
+
+出现下面情况时，应直接拒收：
+
+1. `multi_writer_truth_detected`
+2. `recovery_asset_usurped_authority`
+3. `stale_writer_reached_present`
+4. `single_source_boundary_broken`
+5. `compile_runtime_artifact_conflated`
+6. `transport_or_worktree_manufactured_second_truth`
+7. `later_maintainer_needs_author_memory`
+
+## 5. 复盘记录最少字段
+
+每次 drift 至少记录：
+
+1. `present_state_object_id`
+2. `single_writer_surface`
+3. `recovery_asset_ledger`
+4. `anti_zombie_evidence`
+5. `release_surface_matrix`
+6. `symptom`
+7. `reject_reason`
+8. `rollback_object`
+9. `later_maintainer_risk_note`
+
+## 6. 防再发动作
+
+更稳的防再发顺序是：
+
+1. 先补 single-writer authority surface。
+2. 先补 recovery asset 非主权边界。
+3. 先补 generation / fresh-merge / stale-drop 约束。
+4. 先补 compile/runtime/artifact 三层边界。
+5. 最后才谈目录整理或抽象美学。
+
+## 7. 苏格拉底式检查清单
+
+在你准备宣布“内核结构仍然健康”前，先问自己：
+
+1. 当前到底谁配写当前真相。
+2. recovery asset 是在帮助恢复，还是已经偷偷篡位。
+3. 过去的对象是不是仍无法写坏现在。
+4. compile-time、runtime 与 artifact 三层边界有没有被混写。
+5. later maintainer 能不能不问作者就看出哪里最危险。
+6. 如果删掉漂亮目录图，这套结构先进性还剩下什么。
+
+## 8. 一句话总结
+
+真正成熟的源码验证，不是看结构还整不整齐，而是持续证明 one writable present 仍然成立：只有一个正式写入面，恢复资产不篡位，过去对象不能写坏现在。
