@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 17 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 18 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -36,6 +36,7 @@
 15. [15-model migrations、plugin orphan cleanup与plans continuity的迁移治理边界](15-model%20migrations%E3%80%81plugin%20orphan%20cleanup%E4%B8%8Eplans%20continuity%E7%9A%84%E8%BF%81%E7%A7%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 16. [16-model deprecation、migration notifications与plugin orphan grace window的退役治理边界](16-model%20deprecation%E3%80%81migration%20notifications%E4%B8%8Eplugin%20orphan%20grace%20window%E7%9A%84%E9%80%80%E5%BD%B9%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 17. [17-tombstone messages、.orphaned_at与migration timestamps的墓碑治理边界](17-tombstone%20messages%E3%80%81.orphaned_at%E4%B8%8Emigration%20timestamps%E7%9A%84%E5%A2%93%E7%A2%91%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+18. [18-removeOrphanedAtMarker、refreshActivePlugins与copyPlanForResume的复活治理边界](18-removeOrphanedAtMarker%E3%80%81refreshActivePlugins%E4%B8%8EcopyPlanForResume%E7%9A%84%E5%A4%8D%E6%B4%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
