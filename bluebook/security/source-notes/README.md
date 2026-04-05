@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 11 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 12 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -30,6 +30,7 @@
 9. [09-task outputs、tool-results、transcripts与plans的清理家族宪法](09-task%20outputs%E3%80%81tool-results%E3%80%81transcripts%E4%B8%8Eplans%E7%9A%84%E6%B8%85%E7%90%86%E5%AE%B6%E6%97%8F%E5%AE%AA%E6%B3%95.md)
 10. [10-plans、sessionEnvironment与fileHistory的清理制度理由与漂移边界](10-plans%E3%80%81sessionEnvironment%E4%B8%8EfileHistory%E7%9A%84%E6%B8%85%E7%90%86%E5%88%B6%E5%BA%A6%E7%90%86%E7%94%B1%E4%B8%8E%E6%BC%82%E7%A7%BB%E8%BE%B9%E7%95%8C.md)
 11. [11-cleanup、settings与path helpers的载体家族元数据缺口](11-cleanup%E3%80%81settings%E4%B8%8Epath%20helpers%E7%9A%84%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%85%83%E6%95%B0%E6%8D%AE%E7%BC%BA%E5%8F%A3.md)
+12. [12-cleanupPeriodDays、backgroundHousekeeping与CleanupResult的运行时符合性缺口](12-cleanupPeriodDays%E3%80%81backgroundHousekeeping%E4%B8%8ECleanupResult%E7%9A%84%E8%BF%90%E8%A1%8C%E6%97%B6%E7%AC%A6%E5%90%88%E6%80%A7%E7%BC%BA%E5%8F%A3.md)
 
 ## 和其他目录的分工
 

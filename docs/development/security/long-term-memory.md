@@ -13,6 +13,7 @@
 - `158` 已经稳定写出家族宪法边界：task outputs、scratchpad、tool-results、transcripts、plans、file-history 与 session-env 当前处在多种 cleanup constitution 并存的世界里，`cleanup isolation` 也因此不能越级冒充 `artifact-family cleanup constitution`。
 - `159` 已经稳定写出制度理由边界：不同 artifact family 不只是活在不同 cleanup constitution 里，还活在不同 risk object、reader scope、recovery duty 与 host visibility 下；尤其 `plansDirectory` 与 `cleanupOldPlanFiles()` 的不对称已经暴露出 storage rationale 与 cleanup rationale 可能漂移，`artifact-family cleanup constitution` 也因此不能越级冒充 `artifact-family cleanup rationale`。
 - `160` 已经稳定写出制度元数据边界：不同 artifact family 的制度理由虽然已经存在，但仍主要散落在 path helper、permission helper、resume helper、settings schema、注释与 cleanup dispatcher 之间；`cleanupOldMessageFilesInBackground()` 的硬编码调度与 `plansDirectory` 的传播失灵已经说明 `artifact-family cleanup rationale` 仍不能越级冒充 `artifact-family cleanup metadata`。
+- `161` 已经稳定写出运行时符合性边界：即便 metadata signal 存在，runtime 仍可能展示 temporal gap、propagation gap 与 receipt gap；`cleanupPeriodDays=0` 的“startup delete”文案、`shouldSkipPersistence()` 的即时抑写、`backgroundHousekeeping` 的延迟调度、validation skip 与 `CleanupResult` 的未汇总共同说明 `artifact-family cleanup metadata` 仍不能越级冒充 `artifact-family cleanup runtime-conformance`。
 
 ## 本轮已净化的正文段
 
@@ -30,14 +31,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-160`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata` signer/governor/honesty/isolation/constitution/rationale/metadata ladder
+- `147-161`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `161`
-  方向：`artifact-family cleanup metadata signer` 仍不等于 `artifact-family cleanup runtime-conformance signer`
-  原因：`160` 已经证明 family truth 仍未被完整升级成显式 metadata plane；但即便后续补出 metadata，也还需要另一层去回答 runtime reality 是否真的持续服从这份 metadata。也就是：谁配证明 settings、path helper、permission rule、resume logic 与 cleanup executor 没有再次分叉，而不是仅仅存在一份看起来很完整的 descriptor
-  证据起点：`src/utils/cleanup.ts`、`src/utils/plans.ts`、`src/utils/permissions/filesystem.ts`、`src/utils/sessionStorage.ts`、`src/utils/toolResultStorage.ts` 与 `src/utils/settings/types.ts` 当前已经暴露的传播不一致点，尤其 `plansDirectory` 与 `cleanupOldPlanFiles()` 的非对齐
+- 候选 `162`
+  方向：`artifact-family cleanup runtime-conformance signer` 仍不等于 `artifact-family cleanup anti-drift verifier signer`
+  原因：`161` 已经证明即便 runtime 可能执行，也还缺正式的 family-by-family conformance receipt，更缺一层去持续校验 scheduler、executor、permission、resume 与 metadata 没有再次分叉。也就是：谁配长期验证 temporal gap、propagation gap 与 receipt gap 是否被真正修复，而不是只在某次运行中暂时看起来符合
+  证据起点：`src/utils/cleanup.ts`、`src/utils/backgroundHousekeeping.ts`、`src/utils/sessionStorage.ts`、`src/utils/plans.ts`、`src/utils/permissions/filesystem.ts`、`src/utils/settings/types.ts` 当前展示的延迟、跳过、传播与回执缺口
 
 ## 持续约束
 
