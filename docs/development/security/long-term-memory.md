@@ -12,6 +12,7 @@
 - `157` 已经稳定写出清理隔离边界：task-output isolation repair、project-dir cleanup sweep、shared temp readability 与 live-session ledger 不是同一层，`retention enforcement honesty` 也因此不能越级冒充 `cleanup isolation`。
 - `158` 已经稳定写出家族宪法边界：task outputs、scratchpad、tool-results、transcripts、plans、file-history 与 session-env 当前处在多种 cleanup constitution 并存的世界里，`cleanup isolation` 也因此不能越级冒充 `artifact-family cleanup constitution`。
 - `159` 已经稳定写出制度理由边界：不同 artifact family 不只是活在不同 cleanup constitution 里，还活在不同 risk object、reader scope、recovery duty 与 host visibility 下；尤其 `plansDirectory` 与 `cleanupOldPlanFiles()` 的不对称已经暴露出 storage rationale 与 cleanup rationale 可能漂移，`artifact-family cleanup constitution` 也因此不能越级冒充 `artifact-family cleanup rationale`。
+- `160` 已经稳定写出制度元数据边界：不同 artifact family 的制度理由虽然已经存在，但仍主要散落在 path helper、permission helper、resume helper、settings schema、注释与 cleanup dispatcher 之间；`cleanupOldMessageFilesInBackground()` 的硬编码调度与 `plansDirectory` 的传播失灵已经说明 `artifact-family cleanup rationale` 仍不能越级冒充 `artifact-family cleanup metadata`。
 
 ## 本轮已净化的正文段
 
@@ -29,14 +30,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-159`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale` signer/governor/honesty/isolation/constitution/rationale ladder
+- `147-160`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata` signer/governor/honesty/isolation/constitution/rationale/metadata ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `160`
-  方向：`artifact-family cleanup rationale signer` 仍不等于 `artifact-family cleanup metadata signer`
-  原因：`159` 已经证明不同 family 的制度理由目前散落在 path、permission、resume、comment 与 cleanup helper 的组合里，且 `plansDirectory` 与 `cleanupOldPlanFiles()` 已经暴露理由漂移。所以下一层更值钱的问题不再只是“为什么这些 family 应该不同”，而是“谁来把 family duty、reader scope、recovery duty、cleanup root 与 drift check 正式对象化”，否则制度理由仍会继续作为隐式 folklore 存活
-  证据起点：`src/utils/plans.ts`、`src/utils/cleanup.ts`、`src/utils/permissions/filesystem.ts`、`src/utils/sessionEnvironment.ts`、`src/utils/fileHistory.ts` 与 `src/utils/settings/types.ts` 之间目前分散承载 rationale 的位置
+- 候选 `161`
+  方向：`artifact-family cleanup metadata signer` 仍不等于 `artifact-family cleanup runtime-conformance signer`
+  原因：`160` 已经证明 family truth 仍未被完整升级成显式 metadata plane；但即便后续补出 metadata，也还需要另一层去回答 runtime reality 是否真的持续服从这份 metadata。也就是：谁配证明 settings、path helper、permission rule、resume logic 与 cleanup executor 没有再次分叉，而不是仅仅存在一份看起来很完整的 descriptor
+  证据起点：`src/utils/cleanup.ts`、`src/utils/plans.ts`、`src/utils/permissions/filesystem.ts`、`src/utils/sessionStorage.ts`、`src/utils/toolResultStorage.ts` 与 `src/utils/settings/types.ts` 当前已经暴露的传播不一致点，尤其 `plansDirectory` 与 `cleanupOldPlanFiles()` 的非对齐
 
 ## 持续约束
 
