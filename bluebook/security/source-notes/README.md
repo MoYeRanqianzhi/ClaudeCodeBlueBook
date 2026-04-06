@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 44 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 50 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -63,6 +63,12 @@
 42. [42-diskOutput、toolResultStorage、plans、debug与diagLogs的强请求清理制度理由与漂移边界](42-diskOutput、toolResultStorage、plans、debug与diagLogs的强请求清理制度理由与漂移边界.md)
 43. [43-cleanup、settings、diskOutput、plans、debug与diagLogs的强请求清理元数据缺口](43-cleanup、settings、diskOutput、plans、debug与diagLogs的强请求清理元数据缺口.md)
 44. [44-cleanupPeriodDays、housekeeping、plansDirectory与CleanupResult的强请求运行时符合性缺口](44-cleanupPeriodDays、housekeeping、plansDirectory与CleanupResult的强请求运行时符合性缺口.md)
+45. [45-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口](45-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口.md)
+46. [46-verifyAutoModeGateAccess、verifyAndDemote与强请求清理修复治理缺口](46-verifyAutoModeGateAccess、verifyAndDemote与强请求清理修复治理缺口.md)
+47. [47-main迁移链、orphan宽限期与plans continuity的强请求清理迁移治理边界](47-main迁移链、orphan宽限期与plans continuity的强请求清理迁移治理边界.md)
+48. [48-deprecation clock、orphan visibility cutoff与强请求清理退役治理边界](48-deprecation%20clock%E3%80%81orphan%20visibility%20cutoff%E4%B8%8E%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%80%80%E5%BD%B9%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+49. [49-tombstone messages、.orphaned_at与migration timestamps的强请求清理墓碑治理边界](49-tombstone%20messages%E3%80%81.orphaned_at%E4%B8%8Emigration%20timestamps%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%A2%93%E7%A2%91%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+50. [50-removeOrphanedAtMarker、refreshActivePlugins与copyPlanForResume的强请求清理复活治理边界](50-removeOrphanedAtMarker%E3%80%81refreshActivePlugins%E4%B8%8EcopyPlanForResume%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%A4%8D%E6%B4%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
