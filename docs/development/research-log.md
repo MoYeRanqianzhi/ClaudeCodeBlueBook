@@ -6,6 +6,11 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash。仓库本地 `git pull --ff-only` 继续因 upstream 配置返回 `Cannot fast-forward to multiple branches`，但当前没有待拉取更新，因此本轮只记录基线，不对根仓库做任何修改。
+- 本轮高阶总论页收口动作: 已继续更新 `03`、`09`、`navigation/03` 与 `navigation/04`，把高阶总论页继续压成更短的动作链与职责链：Prompt 线前置 `compile -> protocolize -> preserve -> continue -> explain`，治理线前置 `price -> externalize -> arbitrate -> continue-or-stop -> cleanup`，当前真相线前置 `surface -> writeback -> freshness -> evict`，并把 `05 / 15 / 41` 与三张控制面之间的职责缝隙继续写硬。
+- 本轮 Prompt 侧线回灌动作: 已把并行 Agent 的一条有效结论继续吸收到高阶总论页：Prompt 魔力真正值钱的不是“更强 prompt”，而是 `compile -> protocolize -> preserve -> continue -> explain` 这条五动作链。
+- 本轮治理侧线回灌动作: 已把并行 Agent 的一条有效结论继续吸收到 `09` 与目录协议页：省 token 的本体不是 compact，而是 stable bytes；治理页继续把 `Context Usage` 固定成 `decision window` 的诚实投影。
+- 本轮源码质量侧线回灌动作: 已把并行 Agent 的一条有效结论继续吸收到 `03` 与 `navigation/04`：合法复杂度中心是资产，不是债务；同一对象继续下钻时，应显式拆成 runtime orchestration、contract truth/host-facing truth、以及 signer/用户侧结算面三层责任。
 - 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash。仓库本地 `git pull --ff-only` 因 upstream 配置返回 `Cannot fast-forward to multiple branches`，但当前并无待拉取更新，因此本轮只记录基线，不对根仓库做任何修改。
 - 本轮运行时/契约/安全/风控首页对齐动作: 已继续更新 `architecture/README`、`api/README`、`security/README` 与 `risk/README`，把运行时对象前门、host-facing truth 前门、治理 signer/ledger 前门与用户侧结算面前门继续统一到 `09 / 05 / 15 / 41` 的高阶分工，并让四个首页更明确声明自己不和高阶 judgment map 抢职责。
 - 本轮治理术语回灌动作: 已继续把 `Context Usage` 的高阶读法收回为 `decision window` 的诚实投影，而不是成本面板；这一结论现已进入 `architecture/api/security/risk` 邻接目录的目录判断语境，不再只停在深页里。

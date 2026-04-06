@@ -2,6 +2,13 @@
 
 这篇负责把最容易走偏的深度专题重新压回三条母线：世界如何进入模型、扩张如何被定价、过去如何不写坏现在。
 
+它也不替 `05 / 15 / 41` 重新发明高阶 judgment map：
+
+- `05` 先校正模仿对象。
+- `15` 先暴露第一条反证信号。
+- `41` 先完成第一性原理收束。
+- `03` 只负责把仍会走偏的深专题重新压回同一条证据梯度。
+
 ## 0. 误判校正入口
 
 这篇不是把所有深文并列陈列，而是先区分读者最常站错的证明层级。
@@ -58,6 +65,7 @@
 - `world entry / request assembly / six-stage assembly chain` 必须持续对同一个世界保持诚实；装配顺序、工具 ABI、缓存边界、状态晚绑定与旁路 fork 只是这套控制面的实现面
 - 这条线的前门不再让旧别名占主语位；`09` 负责定义，`84 / 82` 负责展开，`99` 负责审读
 - 最短记法：不是更强 prompt，而是同一世界的持续诚实
+- 如果继续压成最短动作链，就是 `compile -> protocolize -> preserve -> continue -> explain`
 
 继续追问时：
 
@@ -100,6 +108,7 @@
 
 - Claude Code 真正持续压制的是当前世界的免费扩张；这条治理链真正要回答的是：谁能改边界、宿主承认哪条真相、哪些扩张必须 ask、这个 window 是否仍有效、继续与恢复是否还值得付费
 - 如果要继续落到可执行层，优先去 `guides/28 -> guides/100 -> playbooks/78` 看 source slot、ask arbitration、window 失效与 cleanup gate，而不是把治理继续停在抽象口号层
+- 如果继续压成最短动作链，就是 `price -> externalize -> arbitrate -> continue-or-stop -> cleanup`
 
 ## 3. 权威真相深线
 
@@ -210,6 +219,7 @@
 
 - Claude Code 值得学的不是“零技术债”，而是把复杂度合法地收口到少数 current-truth surface、contract-first chokepoint 与 race-aware runtime，让边界可证、错误可拒、下一次重构仍有路
 - 如果要继续往实现治理推进，优先补危险改动面与拒收协议，而不是再补目录观感评论
+- 如果继续压成最短动作链，就是 `surface -> writeback -> freshness -> evict`
 
 ## 8. 可解释运行时深线
 

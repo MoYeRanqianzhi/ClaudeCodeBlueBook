@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `03 / 09 / navigation/03 / navigation/04` 现已继续把高阶总论页压成更短的动作链与职责链：
+  - `03` 现在更明确说明自己不替 `05 / 15 / 41` 重做高阶 judgment map，并补出“合法复杂度中心是资产，不是债务”。
+  - `09` 现在更明确把三张控制面继续压成三条最短动作链，并补出“省 token 的本体是 stable bytes，而不只是 compact”。
+  - `navigation/03` 现在更明确把三条深线分别收口成最短动作链，而不是只停在对象链总结。
+  - `navigation/04` 现在更明确把高阶入口协议固定为 `09 / 05 / 15 / 41`，并补出同一对象在 `architecture / api / security-risk` 之间的三层分工。
+- 新的长期结论：
+  - 高阶总论页真正成熟时，不能只会说“三张控制面是什么”，还要继续把它们压成最短动作链；只有这样，later maintainer 才能判断一个总结是否仍停在对象层。
+  - 省 token 设计继续往下压时，最稳的高阶主语不是 compact，而是 stable bytes；只要 replacement bytes 在 turn / fork / resume 后不再稳定，系统省掉的就不是 token，而是诚实性。
+  - 源码质量继续往下压时，最稳的高阶主语不是“目录别太碎”，而是“合法复杂度中心应被保留成正式席位”；这会直接改变 later maintainer 看待大文件、chokepoint 与 kernel/shell 分工的方式。
+  - 目录职责继续细化时，必须长期守住同一对象的三层分工：`architecture` 解释 orchestration，`api` 承认 truth/contract，`security / risk` 分别解释 signer 机制前门与用户侧结算面；否则高阶目录结构会再次混层。
 - `architecture/README / api/README / security/README / risk/README` 现已继续把运行时/契约/治理/风控四组前门对齐到高阶目录分工：
   - `architecture/README` 现在更明确要求读者先经过 `09 / 05 / 15 / 41`，再进入对象、状态机与 choke point 的运行时拆解。
   - `api/README` 现在更明确把 `api/` 写成 `contract truth / host-facing truth / consumer subset / danger surface` 的前门，而不是接口库存。
