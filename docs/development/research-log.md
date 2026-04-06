@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮深导航 judgment-map 动作: 已继续更新 `navigation/03 / 07 / 41 / 46`，把 `进入顺序 / 推荐阅读链 / 规范锚点 / 证明页 / 共同次序` 这类路线卡句法收回到 `误判校正入口 / 先问 / 成立证据 / 补充证据 / 方法判据 / 迁移门槛`，并把结构线 visible root 继续从 `authority object` 收回到 `current-truth surface`。
+- 本轮导航层判断加固: 当前最值钱的导航优化不在继续补链，而在把链接从“阅读序列”降为“成立证据”；更成熟的前门不是告诉读者按什么顺序点开，而是先说明哪种误判需要哪组证据来纠正。
 - 本轮 judgment-map 收口动作: 已继续更新 `navigation/01 / 15 / 41`，把 `最短反查链 / 稳定阅读顺序 / 三种入口问题 / Prompt魔力` 这类偏路线卡的前门语法收回到 `规范锚点 / 证明页 / 三类审题 / 请求装配控制面 / 当前真相保护`，让三页更像失稳前判题页，而不是阅读路线卡。
 - 本轮导航页判断加固: 当前最值钱的导航优化不再是补更多链路，而是减少“先告诉读者怎么读，再告诉他怎么判断”这类倒序；更稳的导航页应先交出不可约判断、first reject path 与证明页，再给起点。
 - 本轮目录前门收口动作: 已继续更新 `README`、`bluebook/README`、`philosophy/README`、`guides/README`、`playbooks/README`、`casebooks/README`、`navigation/README` 与 `navigation/04`，把目录首页的计数/编号库存、`source-first pricing / authority object / 最小可见面 / single-writer authority / builder / 开发记忆` 这类旧 visible root 与过程口吻收回到 `稳定入口 / governance pricing chain / current-truth surface / decision window / 高阶审读 / 研究过程、证据与变更记录`。

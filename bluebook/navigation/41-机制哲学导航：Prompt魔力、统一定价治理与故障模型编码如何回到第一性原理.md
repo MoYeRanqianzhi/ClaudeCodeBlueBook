@@ -4,7 +4,7 @@
 
 - 如果把 Prompt 魔力、安全/省 token、源码先进性一路压回不可约判断，Claude Code 到底在坚持什么第一性原理。
 
-更稳的读法不是先记住 `compiled request truth`、`governance control plane object`、`evolvable kernel object boundary` 这些旧深层对象名词，而是先记住三句：
+更稳的校正方式不是停在 `compiled request truth`、`governance control plane object`、`evolvable kernel object boundary` 这些旧深层对象名词，而是先抓住三句：
 
 1. 世界怎样进入模型
 2. 扩张怎样进入当前世界
@@ -17,17 +17,17 @@
 1. 为什么 Claude Code 的 Prompt 会有魔力，答案不在文案，而在可缓存、可转写、可继续的编译链。
 2. 为什么安全与省 token 并不是两套权衡，而是治理控制面对一切扩张的统一定价。
 3. 为什么源码先进性并不是风格或洁癖，而是把故障模型提前编码进结构。
-4. 为什么看完反例层后，还必须再补一层哲学收束，而不是停在“知道哪些坏解法”。
+4. 为什么不能停在反例层，而必须继续把坏解法压回第一性原理收束。
 5. 怎样用苏格拉底式追问避免把这一层写成新的口号集。
 
 ## 1. Prompt 编译链哲学线
 
-适合在这些问题下阅读：
+先问：
 
 - 为什么 Claude Code 的 Prompt 会有如此的魔力。
 - 为什么魔力一旦离开 `message lineage`、`projection consumer`、`protocol transcript`、`continuation qualification` 与 `cache-safe forks`，就会立刻褪色。
 
-证明页：
+成立证据：
 
 1. `../philosophy/84`
 2. `../architecture/82`
@@ -41,16 +41,16 @@
 而是：
 
 - 把 Prompt 魔力压回“世界进入模型前先被编译”的第一性原理
-- 若要看旧术语如何过渡到新对象链，回 `../guides/30`
+- 若仍停留在旧对象名和桥接词层，使用 `../guides/30` 校正可见主语
 
 ## 2. 统一定价治理哲学线
 
-适合在这些问题下阅读：
+先问：
 
 - 为什么安全设计与省 token 设计看似不同，却总是落到同一治理控制面。
 - 为什么 `governance key`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup` 必须被统一定价。
 
-证明页：
+成立证据：
 
 1. `../philosophy/85`
 2. `../architecture/83`
@@ -67,12 +67,12 @@
 
 ## 3. 源码质量与可演化内核哲学线
 
-适合在这些问题下阅读：
+先问：
 
 - 为什么 Claude Code 的源码先进性不像目录美学，而像一套可证、可批评、可继续重构的复杂度治理协议。
 - 为什么公开镜像下真正稳的判断顺序，不是先夸热点文件，而是先分证据层级，再讨论合法复杂度中心。
 
-证明页：
+成立证据：
 
 1. `../philosophy/76`
 2. `../guides/102`

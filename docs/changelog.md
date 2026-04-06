@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `navigation/03`、`navigation/07`、`navigation/41` 与 `navigation/46`，把 `进入顺序 / 推荐阅读链 / 规范锚点 / 证明页 / 共同次序` 这类 route-map 语法继续收回到 `误判校正入口 / 先问 / 成立证据 / 补充证据 / 方法判据 / 迁移门槛`，并把结构线 visible root 继续从 `authority object` 收回到 `current-truth surface`
 - 继续更新 `navigation/01`、`navigation/15` 与 `navigation/41` 的前门语法，把 `最短反查链 / 稳定阅读顺序 / 三种入口问题 / Prompt魔力` 这类路线卡或旧前门词收回到 `规范锚点 / 证明页 / 三类审题 / 请求装配控制面 / 当前真相保护`，继续把导航页压成 judgment map 而不是 route map
 - 继续更新 `README`、`bluebook/README`、`philosophy/README`、`guides/README`、`playbooks/README`、`casebooks/README`、`navigation/README` 与 `navigation/04` 的目录前门，把计数/编号库存、`source-first pricing / authority object / 最小可见面 / single-writer authority / builder / 开发记忆` 这类旧 visible root、角色口吻与过程词收回到 `稳定入口 / governance pricing chain / current-truth surface / decision window / 高阶审读 / 研究过程、证据与变更记录`，并同步移除 `guides/100 / 101` 开头的兼容路径正文提示
 - 继续更新 `06-第一性原理与苏格拉底反思` 的 `6.36-6.63`、`guides/100 / 101` 与 `navigation/03`，把后半段“我们是否仍 / 蓝皮书会...”式自指标题与句型收回到制度失真命名、失败模式与八张判据卡，并把治理 / 结构审读页的可见主语统一到 `governance key / decision window / continuation pricing` 与 `current-truth surface / freshness gate / ghost capability`，同时保留旧文件名作为兼容入口

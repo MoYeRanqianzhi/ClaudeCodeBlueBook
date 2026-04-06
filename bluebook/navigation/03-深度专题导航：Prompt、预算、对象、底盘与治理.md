@@ -2,40 +2,41 @@
 
 这篇负责把最容易走偏的深度专题重新压回三条母线：世界如何进入模型、扩张如何被定价、过去如何不写坏现在。
 
-## 0. 进入顺序
+## 0. 误判校正入口
 
-这篇不是把所有深文并列陈列，而是规定进入顺序。
+这篇不是把所有深文并列陈列，而是先区分读者最常站错的证明层级。
 
-更稳的进入顺序是：
-
-1. 先走新主线：`09 -> philosophy/84-87`
-2. 再走控制面深文：`architecture/82-84`
-3. 再走审读/验证/反例：`guides/99-102 -> playbooks/77-79 -> casebooks/73-75`
-4. 最后才补旧细拆，以免重新掉回旧词汇和旧世界观
-
-如果把这个顺序倒过来，读者最容易重新把：
+如果你当前的误判是：
 
 - Prompt 读成更强的话术
 - 治理读成更严的拦截
 - 源码质量读成更漂亮的目录与分层
 
-它主要回答五个问题：
+就先回：
 
-1. 想研究 prompt 魔力，应该从哪几章进入。
-2. 想理解当前世界准入主权、统一定价治理与省 token 设计，应该怎样读。
-3. 想理解 workflow、task、worktree 这些承载体如何服务协作、恢复与升级，应该怎样读。
-4. 想判断公开镜像为什么仍然先进，应该先看哪些 authority object、consumer subset 与 chokepoint。
-5. 想真正把 Claude Code 用对，第一性原理实践与苏格拉底自检应放在什么位置。
+1. `09 -> philosophy/84-87`
+2. `architecture/82-84`
+3. `guides/99-102 -> playbooks/77-79 -> casebooks/73-75`
+
+只有当这三层仍不能校正误判时，才继续补旧细拆页。
+
+它主要防五种误读：
+
+1. 把 Prompt 读成更强文案，而不是世界进入模型前的编译秩序。
+2. 把治理读成更严拦截，而不是拒绝免费扩张的统一定价。
+3. 把协作承载体读成工具堆叠，而不是对象升级与恢复闭环。
+4. 把源码先进性读成目录美学，而不是 current-truth surface、consumer subset 与 chokepoint 的共同保护。
+5. 把第一性原理实践与苏格拉底自检放到正文尾部，而不是把它们当作前置判题器。
 
 ## 1. 请求装配控制面深线
 
-适合在这些问题下阅读：
+先问：
 
 - 为什么 Claude Code 的 prompt 看起来像“有魔力”。
 - 为什么它不是抄一段 system prompt 就能复刻。
 - 为什么工具 ABI、mailbox、channel 输入、cache break 都和 prompt 强度有关。
 
-核心入口：
+成立证据：
 
 1. [三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
 2. [真正有魔力的 Prompt，会先规定世界如何合法进入模型](../philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md)
@@ -44,9 +45,7 @@
 5. [验证手册：消息血缘、协议转录、继续对象与 cache-safe fork](../playbooks/77-请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归.md)
 6. [反例：假消息血缘、假协议转录与假继续对象](../casebooks/73-请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object.md)
 
-补充入口：
-
-补充顺序：
+补充证据：
 
 1. `07-运行时契约、知识层与生态边界.md`
 2. `api/18-系统提示词、Frontmatter与上下文注入手册.md`
@@ -74,26 +73,26 @@
 - Prompt 魔力来自请求装配控制面：消息血缘、投影消费面、协议转录与继续对象必须持续对同一个世界保持诚实；装配顺序、工具 ABI、缓存边界、状态晚绑定与旁路 fork 只是这套控制面的实现面
 - 最短记法：不是更强 prompt，而是同一世界的持续诚实
 
-如果问题进一步升级成：
+继续追问时：
 
 - 为什么模型看到的 transcript 不能直接等于 UI transcript。
 - 为什么 Claude Code 偏爱渐进暴露，而不是一开始全量声明。
 
-补充阅读：
+补充证据：
 
 1. `architecture/54-从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放.md`
 2. `philosophy/41-渐进暴露优于全量声明：先限制模型可见世界，再要求模型聪明.md`
 
 ## 2. 当前世界准入主权深线
 
-适合在这些问题下阅读：
+先问：
 
 - 为什么安全和省 token 不是两套系统。
 - 为什么治理设置、能力裁剪、budget continuation 与 prompt 稳定性应该放到同一张图里。
 - 为什么“省 token”首先在控制什么进入上下文，而不是在压缩句子。
 - 为什么运行时里需要多套预算机制，却仍共享同一第一性原理。
 
-核心入口：
+成立证据：
 
 1. [三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
 2. [真正成熟的治理，不是更会拦截，而是更会为扩张定价](../philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md)
@@ -102,9 +101,7 @@
 5. [验证手册：治理键、typed ask、decision window 与 continuation pricing 回归](../playbooks/78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md)
 6. [反例：低信任扩权、假 decision window 与免费继续](../casebooks/74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续.md)
 
-补充入口：
-
-补充顺序：
+补充证据：
 
 1. `architecture/19-安全分层、策略收口与沙箱边界.md`
 2. `architecture/21-消息塑形、输出外置与Token经济.md`
@@ -131,13 +128,13 @@
 
 ## 3. 权威真相深线
 
-适合在这些问题下阅读：
+先问：
 
 - 为什么 Claude Code 反复强调 single source of truth。
 - 为什么 mode、tool pool、schema、transcript path 这些地方不能让多个 feature 各自维护。
 - 为什么“宿主不该猜”最终会继续走向 authoritative surface。
 
-补充顺序：
+补充证据：
 
 1. `api/17-状态消息、外部元数据与宿主消费矩阵.md`
 2. `api/34-单一真相入口、权威状态面与Chokepoint手册.md`
@@ -157,13 +154,13 @@
 
 ## 4. 协作承载与升级深线
 
-适合在这些问题下阅读：
+先问：
 
 - 为什么 workflow 不是脚本。
 - 为什么多 Agent 不是“多开几个线程”。
 - 为什么 worktree、task、session、mailbox 是正式对象，而不是临时手段。
 
-补充顺序：
+补充证据：
 
 1. `architecture/10-AgentTool与隔离编排.md`
 2. `architecture/25-会话持久化、TaskOutput与Sidechain恢复图.md`
@@ -181,13 +178,13 @@
 
 ## 5. 前台真相与治理输入深线
 
-适合在这些问题下阅读：
+先问：
 
 - 为什么前台不是 UI 皮肤，而是认知控制面。
 - 为什么治理开关不是部署尾巴，而是输入边界。
 - 为什么 channel 审批、外部消息 origin 和前台搜索真相应该共读。
 
-补充顺序：
+补充证据：
 
 1. `architecture/26-REPL前台状态机、Sticky Prompt与消息动作.md`
 2. `architecture/35-REPL transcript search、selection与scroll协同.md`
@@ -204,13 +201,13 @@
 
 ## 6. 远程恢复与失败语义深线
 
-适合在这些问题下阅读：
+先问：
 
 - 为什么 Claude Code 的远程恢复不能被压成“断线重连”。
 - 为什么 `401`、close code、epoch、timeout budget 与 env reconnect 必须一起看。
 - 为什么恢复期间主动 drop 消息，反而比“尽量不丢”更成熟。
 
-补充顺序：
+补充证据：
 
 1. `api/33-远程恢复、401与Close Code语义手册.md`
 2. `architecture/16-远程恢复与重连状态机.md`
@@ -224,26 +221,24 @@
 
 ## 7. 源码先进性深线
 
-适合在这些问题下阅读：
+先问：
 
 - 为什么当前真相保护、合法复杂度中心与成熟架构可以同时成立。
-- 为什么源码先进性首先要看 authority object、danger surface 与 consumer subset，而不是目录观感。
+- 为什么源码先进性首先要看 current-truth surface、danger surface 与 consumer subset，而不是目录观感。
 - 为什么源码质量判断最终必须落到合法复杂度中心、边界可证与下一次重构仍有路。
 
-核心入口：
+成立证据：
 
 1. [三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
 2. [真正先进的内核，不是更会分层，而是更会阻止过去写坏现在](../philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md)
 3. [真正成熟的源码质量判断：复杂度中心合法、边界可证、下一次重构仍有路](../philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md)
 4. [真正成熟的源码地图：更快暴露权威入口、消费者子集与危险改动面](../philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md)
-5. [权威面与反僵尸图谱：authority object、freshness gate 与 ghost capability](../architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)
-6. [验证手册：authority object、recovery asset 与 anti-zombie 回归](../playbooks/79-one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归.md)
+5. [权威面与反僵尸图谱：current-truth surface、freshness gate 与 ghost capability](../architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)
+6. [验证手册：current-truth surface、recovery asset 与 ghost capability 回归](../playbooks/79-one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归.md)
 7. [反例：健康投影篡位、恢复资产越权与 anti-zombie 伪证](../casebooks/75-one writable present验证失真反例：健康投影篡位、恢复资产越权与anti-zombie伪证.md)
 8. [源码质量证据分级：contract、registry、authoritative surface 与 adapter subset](../guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md)
 
-补充入口：
-
-补充顺序：
+补充证据：
 
 1. `api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md`
 2. `architecture/20-源码质量、分层与工程先进性.md`
@@ -264,17 +259,17 @@
 
 这条线的核心结论是：
 
-- Claude Code 值得学的不是“零技术债”，而是把复杂度合法地收口到少数 authority object、contract-first chokepoint 与 race-aware runtime，让边界可证、错误可拒、下一次重构仍有路
+- Claude Code 值得学的不是“零技术债”，而是把复杂度合法地收口到少数 current-truth surface、contract-first chokepoint 与 race-aware runtime，让边界可证、错误可拒、下一次重构仍有路
 
 ## 8. 可解释运行时深线
 
-适合在这些问题下阅读：
+先问：
 
 - 为什么 Claude Code 的 observability 不是调试附属层。
 - 为什么 `context usage`、`worker_status/external_metadata`、`cache break detection` 应该放在同一张图里。
 - 为什么一个成熟 runtime 必须能解释“模型看到了什么”“系统现在处于什么状态”“为什么前缀稳定或失稳”。
 
-补充顺序：
+补充证据：
 
 1. `api/32-Context Usage、Prompt预算与观测型宿主手册.md`
 2. `architecture/17-双通道状态同步与外部元数据回写.md`
@@ -293,13 +288,13 @@
 
 ## 9. 依赖图诚实性深线
 
-适合在这些问题下阅读：
+先问：
 
 - 为什么 Claude Code 会刻意做 leaf module、anti-cycle seam、single-source file。
 - 为什么依赖图治理不是代码洁癖，而是 runtime 正确性工程。
 - 为什么有时宁可少一点 DRY，也要让 import 边说真话。
 
-补充顺序：
+补充证据：
 
 1. `architecture/41-叶子模块、扼流点与循环依赖切断法.md`
 2. `architecture/52-Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法.md`
