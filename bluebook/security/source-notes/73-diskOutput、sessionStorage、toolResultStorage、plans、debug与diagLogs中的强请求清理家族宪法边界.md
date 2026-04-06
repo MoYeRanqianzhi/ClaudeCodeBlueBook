@@ -117,7 +117,7 @@
 
 1. file-history 落在 `~/.claude/file-history/<sessionId>/`
 2. session-env 落在 `~/.claude/session-env/<sessionId>/`
-3. cleanup 对它们按 session dir mtime 做 recursive rm  
+3. cleanup 对它们按 session dir mtime 做 recursive rm
    `cleanup.ts:305-387`
 
 `debug.ts:229-249` 与 `cleanup.ts:391-428` 又说明：
