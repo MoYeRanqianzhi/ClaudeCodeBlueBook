@@ -45,5 +45,6 @@
 - [35-Workspace Trust、login、restart remote-control、fresh session fallback 与 retry：为什么 bridge 的补救动作不是同一种恢复建议.md](./35-Workspace%20Trust、login、restart%20remote-control、fresh%20session%20fallback%20与%20retry：为什么%20bridge%20的补救动作不是同一种恢复建议.md)
 - [36-Remote Control build 不可用、资格不可用、组织拒绝与权限噪音：为什么 bridge 的 not enabled、policy disabled、not available 与 Access denied 不是同一种“不能用”.md](./36-Remote%20Control%20build%20不可用、资格不可用、组织拒绝与权限噪音：为什么%20bridge%20的%20not%20enabled、policy%20disabled、not%20available%20与%20Access%20denied%20不是同一种“不能用”.md)
 - [37-single-session、same-dir、worktree、capacity、create-session-in-dir 与 w：为什么 standalone remote-control 的 spawn topology、并发上限与前台 cwd 会话不是同一种调度.md](./37-single-session、same-dir、worktree、capacity、create-session-in-dir%20与%20w：为什么%20standalone%20remote-control%20的%20spawn%20topology、并发上限与前台%20cwd%20会话不是同一种调度.md)
+- [38-Bridge Banner、QR、footer、session count 与 session list：为什么 standalone remote-control 的 banner、状态行与会话列表不是同一种显示面.md](./38-Bridge%20Banner、QR、footer、session%20count%20与%20session%20list：为什么%20standalone%20remote-control%20的%20banner、状态行与会话列表不是同一种显示面.md)
 
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

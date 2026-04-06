@@ -26,3 +26,4 @@
 - [24-Remote Control 补救动作与恢复建议索引.md](./24-Remote%20Control%20%E8%A1%A5%E6%95%91%E5%8A%A8%E4%BD%9C%E4%B8%8E%E6%81%A2%E5%A4%8D%E5%BB%BA%E8%AE%AE%E7%B4%A2%E5%BC%95.md)
 - [25-Remote Control build 不可用、资格不可用、组织拒绝与权限噪音索引.md](./25-Remote%20Control%20build%20%E4%B8%8D%E5%8F%AF%E7%94%A8%E3%80%81%E8%B5%84%E6%A0%BC%E4%B8%8D%E5%8F%AF%E7%94%A8%E3%80%81%E7%BB%84%E7%BB%87%E6%8B%92%E7%BB%9D%E4%B8%8E%E6%9D%83%E9%99%90%E5%99%AA%E9%9F%B3%E7%B4%A2%E5%BC%95.md)
 - [26-Remote Control spawn topology、capacity 与目录分配索引.md](./26-Remote%20Control%20spawn%20topology、capacity%20与目录分配索引.md)
+- [27-Remote Control banner、QR、footer 与 session list 索引.md](./27-Remote%20Control%20banner、QR、footer%20与%20session%20list%20索引.md)

@@ -39,6 +39,7 @@
 - [35-2026-04-06-bridge 补救动作与恢复建议拆分记忆.md](./35-2026-04-06-bridge%20%E8%A1%A5%E6%95%91%E5%8A%A8%E4%BD%9C%E4%B8%8E%E6%81%A2%E5%A4%8D%E5%BB%BA%E8%AE%AE%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 - [36-2026-04-06-bridge build 不可用、资格不可用与权限噪音拆分记忆.md](./36-2026-04-06-bridge%20build%20%E4%B8%8D%E5%8F%AF%E7%94%A8%E3%80%81%E8%B5%84%E6%A0%BC%E4%B8%8D%E5%8F%AF%E7%94%A8%E4%B8%8E%E6%9D%83%E9%99%90%E5%99%AA%E9%9F%B3%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 - [37-2026-04-06-standalone remote-control spawn topology、capacity 与目录分配拆分记忆.md](./37-2026-04-06-standalone%20remote-control%20spawn%20topology、capacity%20与目录分配拆分记忆.md)
+- [38-2026-04-06-standalone remote-control 显示面拆分记忆.md](./38-2026-04-06-standalone%20remote-control%20显示面拆分记忆.md)
 
 用途：
 
