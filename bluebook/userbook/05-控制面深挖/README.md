@@ -52,5 +52,6 @@
 - [42-register、poll、ack、heartbeat、stop、archive 与 deregister：为什么 standalone remote-control 的环境、work 与 session 生命周期不是同一种收口.md](./42-register、poll、ack、heartbeat、stop、archive%20与%20deregister：为什么%20standalone%20remote-control%20的环境、work%20与%20session%20生命周期不是同一种收口.md)
 - [43-session tag、compat shim 与 reconnect tag：为什么 bridge 的 compat session ID、infra session ID 与 sameSessionId 不是同一种标识.md](./43-session%20tag、compat%20shim%20与%20reconnect%20tag：为什么%20bridge%20的%20compat%20session%20ID、infra%20session%20ID%20与%20sameSessionId%20不是同一种标识.md)
 - [44-session token refresh、child sync 与 bridge reconnect：为什么 standalone remote-control 的 child 刷新、heartbeat 续租与 v2 重派发不是同一种 token refresh.md](./44-session%20token%20refresh、child%20sync%20与%20bridge%20reconnect：为什么%20standalone%20remote-control%20的%20child%20刷新、heartbeat%20续租与%20v2%20重派发不是同一种%20token%20refresh.md)
+- [45-work secret、ack timing、existing session refresh 与 unknown work：为什么 standalone remote-control 的 work intake 不是同一种领取.md](./45-work%20secret、ack%20timing、existing%20session%20refresh%20与%20unknown%20work：为什么%20standalone%20remote-control%20的%20work%20intake%20不是同一种领取.md)
 
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

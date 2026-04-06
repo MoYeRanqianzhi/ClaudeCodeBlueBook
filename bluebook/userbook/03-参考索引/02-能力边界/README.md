@@ -33,3 +33,4 @@
 - [31-Remote Control register、poll、ack、heartbeat、stop、archive 与 deregister 索引.md](./31-Remote%20Control%20register、poll、ack、heartbeat、stop、archive%20与%20deregister%20索引.md)
 - [32-Remote Control session tag、compat shim 与 reconnect tag 索引.md](./32-Remote%20Control%20session%20tag、compat%20shim%20与%20reconnect%20tag%20索引.md)
 - [33-Remote Control token refresh、child sync 与 heartbeat 认证索引.md](./33-Remote%20Control%20token%20refresh、child%20sync%20与%20heartbeat%20认证索引.md)
+- [34-Remote Control work secret、ack timing、existing session refresh 与 unknown work 索引.md](./34-Remote%20Control%20work%20secret、ack%20timing、existing%20session%20refresh%20与%20unknown%20work%20索引.md)

@@ -45,6 +45,7 @@
 41. 为什么 standalone remote-control 的 environment 注册、work 租约、session 归档与环境销毁不是同一种生命周期操作。
 42. 为什么 bridge 的 compat session ID、infra session ID 与 retag / compare helper 不是同一种标识。
 43. 为什么 standalone remote-control 的 child refresh、heartbeat 认证与 v2 reconnect 不是同一种 token refresh。
+44. 为什么 standalone remote-control 的 work secret、ack 时机、existing session refresh 与 unknown work 不是同一种领取。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
