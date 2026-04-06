@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `guides/30`、`guides/31`、`philosophy/84`、`architecture/60`、`architecture/63` 与 `guides/README`，把旧桥接页继续吸收到 `message lineage / projection consumer / governance key / externalized truth / event stream vs state writeback / stale worldview / ghost capability eviction`，并把正文中的桥接/记忆性说明收回目录入口与持久化记忆
 - 继续更新 `architecture/80`、`guides/52`、`philosophy/86`、`architecture/README`，把相邻深专题继续吸收 `source lattice / managed-only switches / durable assets vs transient authority / freshness gate / ghost-capability eviction`，并把 `82-84` 三篇的最新重点前置回架构专题入口
 - 继续更新 `architecture/83`、`philosophy/85`、`guides/100`，把治理线继续压到 `source` 是治理主键、`policySettings` 是 sovereign tier、resume 只该恢复 durable assets 而不该免费续租 transient authority
 - 继续更新 `architecture/82`、`architecture/84`、`guides/99`、`guides/101`、`guides/102` 与相关哲学页，把 Prompt 深线从 `request object` 再压到 `message lineage`，并把 anti-stale 继续扩到文件写入 freshness gate、PowerShell stale-cwd、WebFetch per-host、remote managed settings 与 MCP ghost capability 清理

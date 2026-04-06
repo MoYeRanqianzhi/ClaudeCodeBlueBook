@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `guides/30 / guides/31 / philosophy/84 / architecture/60 / architecture/63 / guides/README` 已继续吸收这一批相邻深专题遗漏的对象链，并顺手清理正文中的桥接/记忆性说明：
+  - `30` 现已把 Prompt 审读从 `主语 / 接手连续性` 压到 `message lineage / projection consumer / continuation qualification`，记录卡也改成可点名 lineage 与 continuation object 的版本。
+  - `31` 现已把治理审读从抽象“主权链”压到 `sources -> effective -> applied -> externalized` 这条 governance key，并显式拆开 durable assets 与 transient authority。
+  - `84` 现已更明确把 Prompt 魔力的 durable core 写成 `message lineage`，不再只把 display / protocol / handoff truth 写成三份并列文本。
+  - `60` 现已更明确把 `event stream` 和 `state writeback` 分成“时间线 / 恢复游标”与“当前态主权面”，并把 `freshness gate` 提到 reconnect 之前。
+  - `63` 现已更明确把可演化内核继续压到 `stale worldview`、per-host authority width 与 `ghost capability eviction`，不再只停留在 stale finally 和拆模块美学。
+  - `guides/README` 现已显式接管 `30-31` 的桥接定位，避免正文继续夹带“这页只是旧模板/桥接页”的作者说明。
+- 新的长期结论：
+  - 旧桥接页真正成熟时，桥接定位应交给目录入口；正文只保留可复用的对象对照和审读问题，不再保留“这页最适合当什么”的作者判断。
+  - Prompt 主线继续压到底时，不只要讲 authority、prefix、boundary，还要把 `message lineage / projection consumer / continuation qualification` 写进正式审读卡。
+  - 治理主线继续压到底时，不只要讲“谁有权改边界”，还要显式写出 `sources -> effective -> applied -> externalized` 这条 governance key，并强制区分 durable assets 与 transient authority。
+  - anti-stale 主线继续压到底时，不只防 stale writer 和 stale snapshot，还要防 stale validator worldview 与 stale capability token。
 - `architecture/80 / guides/52 / philosophy/86 / architecture/README` 已继续吸收上一批相邻专题遗漏的对象链：
   - `80` 现已更明确把治理实现写成 `source lattice -> managed-only switches -> typed decision -> visibility pricing -> decision window -> continuation requalification`。
   - `52` 现已更明确把 builder 手册写成 `source` 是治理主键、resume 只恢复 durable assets、不续租 transient authority 的实现顺序。

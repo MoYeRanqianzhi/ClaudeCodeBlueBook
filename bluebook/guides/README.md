@@ -5,12 +5,13 @@
 还要先记一句：
 
 - `guides/99-102` 负责把 `09` 的三条控制面判断落成 builder-facing 审读与证据方法；它们现在分别更明确覆盖 `message lineage`、`source-first pricing`、`one writable present` 与公开镜像证据分级，不再重新定义三条母线本身
+- `guides/30-31` 保留旧一层 Prompt / 治理审读词汇，但现在应被当作通向 `99-101` 的桥接入口；正文不再承担“这页属于旧版模板”的作者说明，桥接职责统一由 README 描述
 
 ## 目录分层
 
 - `01-10`: 基础使用、多 Agent、记忆注入、预算与权限协作。
 - `11-23`: Runtime 设计、Contract-First、依赖图诚实性与审读清单。
-- `24-32`: Prompt Constitution、治理顺序、源码塑形与苏格拉底式审读。
+- `24-32`: Prompt Constitution、治理顺序、源码塑形与苏格拉底式审读，以及旧词汇到新控制面对象的桥接页。
 - `33-47`: Rollout ABI、Evidence Envelope、Host Implementation、Validator 与 Builder 蓝图。
 - `48-56`: Builder-facing 手册、统一蓝图与宿主迁移工单。
 - `57-80`: 宿主迁移失真、验收执行、修复、收口、监护、解除监护与稳态纠偏执行。
