@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `README / navigation/README / 03 / 09` 现已继续把前门合同收口：
+  - `README / navigation/README` 现已进一步降成路由页，不再各自半篇解释三条母线。
+  - `03` 现已明确只解释 `09` 的三条固定短语，不再近义重写。
+  - `09` 现已把第一张控制面图里的 Prompt 根对象继续收回到 `message lineage / projection consumer / protocol transcript / continuation qualification / cache-safe forks`。
+- 新的长期结论：
+  - 目录结构真正成熟时，最上层入口不应各自再造一版主线定义；应只有一个主线宪法文案源，其余入口只做路由或解释。
+  - Prompt 线真正成熟时，主线宪法页也不应再保留 `authority chain / request object` 这类过渡词；最短对象链应直接前置 `message lineage / projection consumer / protocol transcript / continuation qualification`。
 - `casebooks/13 / 35 / 46` 与 `navigation/43` 现已继续把 Prompt / 治理前门语言收口：
   - `13 / 46` 现已把 Prompt 反例前门从 `Evidence Envelope / 前缀托管 / reopen threshold` 收回到 `message lineage / protocol truth / stable prefix boundary / threshold liability`。
   - `35 / 43` 现已把治理反例与支持面入口从 `假窗口重置 / 免费重入 / rollback object` 收回到 `decision window / transient authority cleanup / durable-vs-transient cleanup`。

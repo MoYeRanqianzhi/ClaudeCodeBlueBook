@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮前门合同收口动作: 已继续更新 `README / navigation/README / 03 / 09`，把 `09` 固定成唯一主线宪法文案源，把根 README 与导航 README 进一步降成路由页，并把 `09` 第一张控制面图里的 Prompt 根对象从 `authority chain / request object` 收回到 `message lineage / projection consumer / protocol transcript / continuation qualification`。
+- 本轮目录结构判断加固: 目录优化在当前阶段最值钱的，不是再加更多推荐链，而是让根 README、导航 README 与主线页不再各自近义改写三条母线；只保留一个权威短语源，其余前门只负责分流或解释。
 - 本轮 Prompt / 治理前门收口动作: 已继续更新 `casebooks/13 / 35 / 46` 与 `navigation/43`，把 Prompt / 治理反例与支持面入口的可见主语从 `Evidence Envelope / 假窗口重置 / 免费重入 / 前缀托管 / rollback object` 收回到 `message lineage / protocol transcript / stable prefix boundary / continuation qualification / threshold liability` 与 `governance key / decision window / durable-vs-transient cleanup`。
 - 本轮前门判断加固: 对 Prompt / 治理线来说，最危险的旧词常常不是深层协议术语，而是反例页和导航页 front words；只要前门还先发 `Evidence Envelope / rollback object / 免费重入` 这类旧词，读者就会在进入正文前先被拉回旧对象世界。
 - 本轮结构 visible root 推进动作: 已继续更新 `api/53 / playbooks/28 / casebooks/15 / 42`，把结构宿主消费面、可演化内核验证与结构失真反例的可见主语从 `authority state / transition / dependency / Evidence Envelope / authority watch` 收回到 `authority object / per-host authority width / freshness gate / anti-zombie evidence / current truth`。
