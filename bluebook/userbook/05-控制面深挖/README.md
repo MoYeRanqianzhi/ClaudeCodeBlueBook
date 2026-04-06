@@ -76,7 +76,7 @@
 - [66-stream_event、task_started、status、remote pill 与 BriefIdleStatus：为什么同一 remote session 事件不会以同样厚度出现在每个消费者里.md](./66-stream_event、task_started、status、remote%20pill%20与%20BriefIdleStatus：为什么同一%20remote%20session%20事件不会以同样厚度出现在每个消费者里.md)
 - [67-slash_commands、stream_event、task_started 与 status_compacting：为什么 remote session 的命令集、流式正文、后台计数与 timeout 策略不是同一种消费者.md](./67-slash_commands、stream_event、task_started%20与%20status_compacting：为什么%20remote%20session%20的命令集、流式正文、后台计数与%20timeout%20策略不是同一种消费者.md)
 
-68-86 建议连续阅读：
+68-87 建议连续阅读：
 
 - 68-71 先拆 remote session 的命令面、候选面、入口面与本地变薄逻辑。
 - 72-75 再拆 tool plane、approval shell、authority return path 与 bridge relay 的拓扑差异。
@@ -91,6 +91,7 @@
 - 84 再往宿主层推进，比较 `useInboxPoller`、`attachments.ts` 与 `print.ts` 为什么共享 shutdown cleanup contract，却不共享同一条收口宿主路径。
 - 85 最后把视角移到 in-process teammate 自己，拆 `status`、`shutdownRequested`、`awaitingPlanApproval`、`isIdle` 与 activity flags 为什么不会被各个消费者压成同一个状态面。
 - 86 再回到 `print.ts` 内部，拆 `inputClosed -> waitForTeammatesToBecomeIdle -> hasActiveSwarm -> SHUTDOWN_TEAM_PROMPT` 为什么是一条专门的 headless team drain 协议。
+- 87 再往 loop 细节推进，拆 `readUnreadMessages -> markMessagesAsRead -> enqueue -> run` 为什么是一条 active swarm ingestion loop，而不是被动 inbox reader。
 
 - [68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx fallthrough 与 remote send：为什么 remote session 的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md](./68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx%20fallthrough%20与%20remote%20send：为什么%20remote%20session%20的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md)
 - [69-hasCommand、isHidden、isCommandEnabled、local-jsx 与 remote send：为什么 remote mode 里的 slash 高亮、候选补全、启用态与实际执行去向不是同一个判定器.md](./69-hasCommand、isHidden、isCommandEnabled、local-jsx%20与%20remote%20send：为什么%20remote%20mode%20里的%20slash%20高亮、候选补全、启用态与实际执行去向不是同一个判定器.md)
@@ -111,4 +112,5 @@
 - [84-useInboxPoller、attachments、print、shutdown_approved、teammate_terminated 与 pending-processing：为什么 interactive、attachment bridge 与 headless print 不共享同一条 shutdown 收口宿主路径.md](./84-useInboxPoller、attachments、print、shutdown_approved、teammate_terminated%20与%20pending-processing：为什么%20interactive%E3%80%81attachment%20bridge%20与%20headless%20print%20不共享同一条%20shutdown%20收口宿主路径.md)
 - [85-status、shutdownRequested、awaitingPlanApproval、isIdle、recentActivities 与 [stopping]：为什么 in-process teammate 的状态投影不是同一层状态.md](./85-status、shutdownRequested、awaitingPlanApproval、isIdle、recentActivities%20与%20%5Bstopping%5D：为什么%20in-process%20teammate%20的状态投影不是同一层状态.md)
 - [86-SHUTDOWN_TEAM_PROMPT、inputClosed、hasWorkingInProcessTeammates、waitForTeammatesToBecomeIdle 与 hasActiveInProcessTeammates：为什么 headless print 的 team drain 不是 interactive REPL 的直接缩小版.md](./86-SHUTDOWN_TEAM_PROMPT、inputClosed、hasWorkingInProcessTeammates、waitForTeammatesToBecomeIdle%20与%20hasActiveInProcessTeammates：为什么%20headless%20print%20的%20team%20drain%20不是%20interactive%20REPL%20的直接缩小版.md)
+- [87-readUnreadMessages、markMessagesAsRead、enqueue、run、hasActiveInProcessTeammates 与 POLL_INTERVAL_MS：为什么 headless print 的 active teammate polling 不是被动 inbox reader.md](./87-readUnreadMessages、markMessagesAsRead、enqueue、run、hasActiveInProcessTeammates%20与%20POLL_INTERVAL_MS：为什么%20headless%20print%20的%20active%20teammate%20polling%20不是被动%20inbox%20reader.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

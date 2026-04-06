@@ -75,3 +75,4 @@
 - [73-Shutdown host-path convergence and divergence 索引.md](./73-Shutdown%20host-path%20convergence%20and%20divergence%20索引.md)
 - [74-In-process teammate state projection 索引.md](./74-In-process%20teammate%20state%20projection%20索引.md)
 - [75-Headless print shutdown prompt and team drain 索引.md](./75-Headless%20print%20shutdown%20prompt%20and%20team%20drain%20索引.md)
+- [76-Headless print active teammate polling and unread mailbox loop 索引.md](./76-Headless%20print%20active%20teammate%20polling%20and%20unread%20mailbox%20loop%20索引.md)

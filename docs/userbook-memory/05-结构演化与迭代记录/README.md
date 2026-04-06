@@ -88,6 +88,7 @@
 - [84-2026-04-06-shutdown host paths split 拆分记忆.md](./84-2026-04-06-shutdown%20host%20paths%20split%20拆分记忆.md)
 - [85-2026-04-06-in-process teammate state projection 拆分记忆.md](./85-2026-04-06-in-process%20teammate%20state%20projection%20拆分记忆.md)
 - [86-2026-04-06-headless print team drain 拆分记忆.md](./86-2026-04-06-headless%20print%20team%20drain%20拆分记忆.md)
+- [87-2026-04-06-headless print mailbox polling 拆分记忆.md](./87-2026-04-06-headless%20print%20mailbox%20polling%20拆分记忆.md)
 
 用途：
 
