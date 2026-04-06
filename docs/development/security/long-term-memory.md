@@ -21,15 +21,18 @@
 - `166` 已经稳定写出墓碑治理边界：repo 在 `tombstone` messages、`.orphaned_at` markers、marker-driven exclusion grammar 与 migration timestamps 上已明确展示 tombstone governance 的存在，说明决定“旧世界何时结束”与决定“结束后还留下什么最小残留标记”仍然是两层主权；因此 `artifact-family cleanup sunset-governance` 仍不能越级冒充 `artifact-family cleanup tombstone-governance`。
 - `167` 已经稳定写出复活治理边界：repo 在 authoritative marker clearing、Layer-3 plugin refresh、`needsRefresh` / `/reload-plugins`、plan recovery 与 forked new-slug policy 上已明确展示 resurrection governance 的存在，说明决定“结束后留什么墓碑”与决定“旧对象怎样重新回到 current world”仍然是两层主权；因此 `artifact-family cleanup tombstone-governance` 仍不能越级冒充 `artifact-family cleanup resurrection-governance`。
 - `168` 已经稳定写出再赋权治理边界：repo 在 `deletePluginOptions()`、`setPluginEnabledOp()`、policy blocking、settings divergence guard 与 `copyPlanForFork()` 的 new-slug policy 上已明确展示 re-entitlement governance 的存在，说明决定“旧对象怎样回来”与决定“回来后恢复哪些旧资格”仍然是两层主权；因此 `artifact-family cleanup resurrection-governance` 仍不能越级冒充 `artifact-family cleanup re-entitlement-governance`。
+- `169` 已经稳定写出重配置治理边界：repo 在 `savePluginOptions()`、`getUnconfiguredOptions()`、`saveMcpServerUserConfig()`、`getUnconfiguredChannels()`、`needs-config` 与 `PluginOptionsFlow` / `ManagePlugins` 的 `configured / skipped / take effect` grammar 上已明确展示 reconfiguration governance 的存在，说明决定“对象回来后是否重新具备资格”与决定“它拿回资格后按哪组 current config 重新工作”仍然是两层主权；因此 `artifact-family cleanup re-entitlement-governance` 仍不能越级冒充 `artifact-family cleanup reconfiguration-governance`。
 
 ## 本轮已净化的正文段
 
-本轮已经从 `bluebook/security/` 中移除统一模式的尾段元信息，覆盖两段主线：
+本轮已经从 `bluebook/security/` 中移除统一模式的尾段元信息，覆盖三段主线：
 
 1. `41-67`
    完成差异、恢复 signer、留痕、清理、词法与续租链
 2. `95-105`
    资格重签发、中间态、承诺上限、默认动作路由、错误路径禁令与投影协议链
+3. `154-168`
+   cleanup signer ladder 的尾段作者推进记忆已改写成源码锚定的苏格拉底自我约束，不再把下一候选、下一层目录计划或 future control-plane roadmap 混进正文
 
 这些章节现在只保留主论证、技术启示和结语，不再自带未来章节编排提示。
 
@@ -38,14 +41,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-168`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance -> artifact-family cleanup resurrection-governance -> artifact-family cleanup re-entitlement-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone/resurrection/re-entitlement ladder
+- `147-169`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance -> artifact-family cleanup resurrection-governance -> artifact-family cleanup re-entitlement-governance -> artifact-family cleanup reconfiguration-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone/resurrection/re-entitlement/reconfiguration ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `169`
-  方向：`artifact-family cleanup re-entitlement-governor signer` 仍不等于 `artifact-family cleanup reconfiguration-governor signer`
-  原因：`168` 已经证明对象回来后是否恢复旧资格需要单独主权；但恢复 enabled state、identity 或 scope，并不自动回答旧配置、旧参数、旧 secrets、旧 payload 应怎样被重新填写、迁回或重新声明。也就是：谁配决定 resurrected path、promise、receipt 在重新具备资格后如何重新配置，这仍是另一层 reconfiguration governance 问题
-  证据起点：`src/utils/plugins/pluginOptionsStorage.ts` 的 option/secret save-delete grammar、`src/utils/plugins/mcpbHandler.ts` 的 per-server config split、`src/services/plugins/pluginOperations.ts` 的 enable/disable 与 cleanup 线潜在的旧 path / old receipt 世界形成对照：repo 已展示资格能否恢复，但“恢复后以什么配置重新工作”仍是另一层主权
+- 候选 `170`
+  方向：`artifact-family cleanup reconfiguration-governor signer` 仍不等于 `artifact-family cleanup reactivation-governor signer`
+  原因：`169` 已经证明对象拿回 seat 后仍要单独回答 current config truth；但 `Configuration saved. Run /reload-plugins for changes to take effect.` 又明确说明配置写入 store 并不自动等于 running session 已按这组 truth 重新工作。也就是：谁配决定 restored path、promise、receipt 的 current config 何时真正进入 active world，这仍是另一层 reactivation governance 问题
+  证据起点：`src/commands/plugin/ManagePlugins.tsx` 的 save-vs-take-effect grammar、`src/utils/plugins/refresh.ts` 与 `src/commands/reload-plugins/reload-plugins.ts` 的 active refresh grammar、`PluginInstallationManager.ts` / `useManagePlugins.ts` 的 `needsRefresh` 对照共同说明：repo 已展示配置如何重写，但“何时重新激活到当前运行世界”仍是另一层主权
 
 ## 持续约束
 

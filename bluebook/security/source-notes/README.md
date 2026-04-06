@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 19 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 20 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -38,6 +38,7 @@
 17. [17-tombstone messages、.orphaned_at与migration timestamps的墓碑治理边界](17-tombstone%20messages%E3%80%81.orphaned_at%E4%B8%8Emigration%20timestamps%E7%9A%84%E5%A2%93%E7%A2%91%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 18. [18-removeOrphanedAtMarker、refreshActivePlugins与copyPlanForResume的复活治理边界](18-removeOrphanedAtMarker%E3%80%81refreshActivePlugins%E4%B8%8EcopyPlanForResume%E7%9A%84%E5%A4%8D%E6%B4%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 19. [19-deletePluginOptions、setPluginEnabledOp与copyPlanForFork的再赋权治理边界](19-deletePluginOptions%E3%80%81setPluginEnabledOp%E4%B8%8EcopyPlanForFork%E7%9A%84%E5%86%8D%E8%B5%8B%E6%9D%83%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+20. [20-savePluginOptions、saveMcpServerUserConfig与PluginOptionsFlow的重配置治理边界](20-savePluginOptions%E3%80%81saveMcpServerUserConfig%E4%B8%8EPluginOptionsFlow%E7%9A%84%E9%87%8D%E9%85%8D%E7%BD%AE%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
