@@ -116,7 +116,7 @@
 3. 再检查 `messages.ts`、`sessionMemoryCompact.ts`、`stopHooks.ts` 与 `forkedAgent.ts` 对应的对象边界是否被某条旁路绕开。
 4. 最后才决定要不要重写文案；多数情况下，应该先修世界准入，而不是先修语气。
 
-## 5. 审读记录卡
+## 5. 最小判据
 
 ```text
 审读对象:
@@ -134,7 +134,7 @@ display / protocol / handoff 是否仍沿同一条 message lineage 投影:
 - 主权链 / section / boundary / transcript compiler / compact object / fork reuse
 ```
 
-## 6. 苏格拉底式检查清单
+## 6. 否证问句
 
 准备改 Prompt 时，先问：
 

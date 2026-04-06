@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 doctrine 小标题收口动作: 已继续更新 `06` 的 `2.13 / 6.61-6.63` 与 `guides/99 / 100 / 101` 的后半段小标题，把 `审读记录卡 / 检查清单 / 渐进改写顺序 / 同题坏解` 这类仍偏 worksheet 或路线提示的标题收回到 `对称判断 / 最小判据 / 否证问句 / 失真命名` 这类更硬的 doctrine 语言。
+- 本轮 Prompt / 治理 / 结构深化结论: Prompt 线更明确回到了“对称判断”和 `message lineage` 的持续诚实；治理线更明确把 host 消费面写成 `governance truth/status`；结构线更明确把 one writable present 的审读页小标题收回到 present-truth doctrine，而不是 worksheet 栏目。
+- 本轮后续目标澄清: `06` 的第 `6` 节从 `6.36` 往后仍有大量“蓝皮书会继续低估 / 会误写成”自指句型；当前适合继续按主题分段清理，而不是一次性整章重写。
 - 本轮审读页语气收口动作: 已继续更新 `guides/99 / 100 / 101`，把开头中的 `builder-facing`、收尾中的“在你准备继续改 / 加规则 / 整理结构前”以及中段的“更好的迭代顺序”统一收回到更一般化的“失稳前审读问题 / 失稳时的回修顺序 / 检查清单”语气。
 - 本轮局部对象链加固: 已继续把 `guides/100` 中可见正文里的 `authority source` 收回到 `governance key`，并把 `guides/101` 的 H1 从 `authority object` 收回到 `current-truth surface`，避免审读页 visible root 继续落后于当前对象链。
 - 本轮 `06` 局部自指化清理: 已继续更新 `6.22-6.35`，把“我们是否仍...”这一串自指标题开始收回为更一般化的高频失真命名，并顺手把安全治理段里的旧 `authority object / deny-ask-bypass` 叙述收回到 `governance pricing chain` 与投影替身语言。

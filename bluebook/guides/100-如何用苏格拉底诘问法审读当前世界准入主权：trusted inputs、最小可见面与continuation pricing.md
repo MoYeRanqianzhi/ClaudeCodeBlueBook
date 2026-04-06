@@ -134,7 +134,7 @@
 3. 再检查 `managedEnv`、`permissionSetup`、`interactiveHandler`、`toolSearch`、`toolResultStorage` 与 `tokenBudget` 的真实边界。
 4. 最后才决定是否要补规则；多数时候，先修收费逻辑比先修 UI 更重要。
 
-## 5. 审读记录卡
+## 5. 最小判据
 
 ```text
 审读对象:
@@ -154,7 +154,7 @@ resume 是否只恢复 durable assets:
 durable_assets_after:
 transient_authority_cleared:
 失败语义是否按资产类型分型:
-host 是否只消费 runtime 外化的 authority/status:
+host 是否只消费 runtime 外化的 governance truth/status:
 当前最像哪类失真:
 - authority leak / free visibility / free context / free continuation / flattened failure semantics
 优先回修对象:
@@ -165,7 +165,7 @@ host 是否只消费 runtime 外化的 authority/status:
 
 - `not same control plane`
 
-## 6. 苏格拉底式检查清单
+## 6. 否证问句
 
 准备继续给系统加治理规则前，先问：
 

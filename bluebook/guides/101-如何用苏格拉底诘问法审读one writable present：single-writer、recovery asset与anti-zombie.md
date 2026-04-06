@@ -107,7 +107,7 @@
 3. 再检查 `QueryGuard`、`sessionIngress`、`WorkerStateUploader`、`bridgePointer`、`FileEdit / FileWrite` freshness gate、PowerShell validator 与 MCP stale-capability 清理条件。
 4. 最后才决定是否重构目录；多数时候，先修写入权与时态保护，比先修分层外观更重要。
 
-## 5. 审读记录卡
+## 5. 最小判据
 
 ```text
 审读对象:
@@ -132,7 +132,7 @@ fail_closed_branch:
 
 上面六个新增槽位都应填写具体源码路径；任一槽位只能写“感觉这里有”时，就还不配宣布 `one writable present` 已成立。
 
-## 6. 苏格拉底式检查清单
+## 6. 否证问句
 
 准备继续“整理结构”前，先问：
 
