@@ -32,6 +32,8 @@
 - 如果继续往下排查，最稳的 witness 顺序也只认：`message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
 - 如何确认 `message lineage`、`section registry / dynamic boundary`、`protocol transcript`、`continuation qualification` 与接手连续性都还成立
 - 第一条反证信号常常不是回答变差，而是 `systemPrompt` 截图、最后一条消息或 UI transcript 又开始篡位成 Prompt 主语
+- 如果 `compact / handoff / steady` 之后留下来的只是故事，不再是 `continuation qualification`，那它就不是 Prompt 稳态，而只是 Prompt 风格延续
+- `release card / steady verdict / handoff prose` 只配做 Explainability 末端投影；一旦这些壳开始定义世界，Prompt 就已经从 constitution 退回 narration
 
 ## 2. 统一治理定价的苏格拉底审读
 
@@ -56,6 +58,8 @@
 
 - 如何确认 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-vs-transient cleanup` 仍是一条未失真的收费链
 - 第一条反证信号常常不是 token 升高，而是 mode 面板、审批弹窗、usage 条、default continue 或 compact 技巧又开始被当成治理真相
+- 更硬的前置追问还应是：系统有没有先裁 `visible world`，还是先让过宽工具、schema 与上下文免费进入，再用动作审批补票
+- 如果 classifier、审批或默认重试自己没有被定价，它们就在把治理控制面重新膨胀成新的免费扩张源
 
 这一刀区分也要先钉死：
 
@@ -64,6 +68,8 @@
 - `usage 条 != decision window`
 - `default continue != continuation pricing`
 - `compact 技巧 != Outside`
+- `token 面板 != cost truth`
+- `工具目录可见度 != action permission`
 
 如果继续往下排查，最稳的治理 failure order 也应先认：
 
@@ -100,6 +106,9 @@
 
 - 结构里是否已经提前编码了 `current-truth surface / recovery asset non-sovereignty / freshness gate / ghost capability` 这条 present-truth 纪律，以及证据梯度、批评路径、修改路径与退出路径
 - 第一条反证信号常常不是 bug 变多，而是 replay、pointer、snapshot 或作者说明又开始篡位成 `current-truth surface`
+- 如果 `remote / session / transport` 仍被讲成功能域而不是主权域，later maintainer 就还看不见 ownership、reconnect、permission 与 exit contract 实际在保护什么
+- 如果 `event truth / current truth / display truth` 重新混写，宿主与 UI 就会再次靠 transcript replay 猜现在，而不是消费正式 writeback surface
+- `later maintainer rejectability` 的最低标准也不是“看懂作者设计”，而是拿不到作者时仍能只凭结构指出哪条 `event / snapshot / transport` 越权成了 authority，并立刻说出第一退回层
 
 如果继续往下排查，最稳的 later-maintainer reject 顺序也只认：
 

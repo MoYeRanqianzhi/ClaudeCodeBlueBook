@@ -3,6 +3,10 @@
 ## 2026-04-07
 
 - 本轮根仓库同步再次确认：`main=origin/main=20a0f55113c7e1c69bf4eca1f1041caeca8e79bb`、`rev-list --left-right --count main...origin/main = 0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
+- 继续更新 `philosophy/61`、`84`、`87` 与 `navigation/15`，把这轮专题深化补成闭环：`84` 现在更明确把合法遗忘写成 `reject / continue verdict` 在 compact 前后不改判，并再次钉死 `Explainability` 不得改写世界准入判决；`61` 现在更明确把 classifier 写回“只有还能改变 verdict 才值得调用的定价节点”；`87` 现在则把 `snapshot / pointer / recovery asset` 在 fresh-read 前只能充当 `evidence / projection` 以及 `event truth / current truth / display truth` 的三分纪律写硬
+- 继续更新 `philosophy/63`、`82`、`86` 与 `navigation/15`，把上一轮前门 doctrine 推进到专题哲学页与失稳前审读页：Prompt 线现在更明确把 `compact / fork / handoff` 钉成 Prompt Constitution 的验真场，把 `Explainability` 压回末端命名权；治理线现在更明确把 `visible world`、`Context Usage`、`classifier` 与 `continuation pricing` 写成同一条价格链；结构线现在更明确把 `remote / session / transport` 写成主权域，把 `event / current / display truth` 分层写成 current-truth 纪律
+- 本轮专题页深化不再继续给根入口补同义句，而是把更多价值沉到“失稳前怎样反问自己”：`navigation/15` 现在更明确补出 Prompt 的 story-only 失真、治理的 visible-world 先定价、自我膨胀 classifier 与结构的 truth-plane collapse，这使目录结构继续朝“前门定题，专题页给问题梯子”而不是“所有页都写总结句”的方向收敛
+- 本轮根仓库同步再次确认：`main=origin/main=20a0f55113c7e1c69bf4eca1f1041caeca8e79bb`、`rev-list --left-right --count main...origin/main = 0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
 - 继续更新 `bluebook/README`、`03-设计哲学`、`06-第一性原理与苏格拉底反思`、`01-源码结构地图` 与 `navigation/41`，把“设计内涵”进一步压成三句制度判断：Prompt 回到 `same-world compiler`，治理回到统一扩张定价，源码组织回到 `谁定义现在 / 谁只消费现在 / 谁只能帮助恢复现在`
 - 本轮目录结构优化不再只做 route 收缩，而是显式写出三层分工：`09 / 05 / 15 / 41` 负责第一次定义权，Prompt `66 -> 69 -> 72 -> 78 -> 47 -> 50` 与结构 `guides/83 / 92 -> playbooks/61 / 67 -> casebooks/54 / 63` 只负责专题侧门，`philosophy / architecture / api / guides / playbooks / casebooks / docs` 继续承担证据层
 - 本轮新增“去魅测试”作为前门自校协议：删掉措辞魔力、mode/token 面板语与目录树观感后，结论若仍能分别压回 `same-world compiler / governance pricing chain / current-truth protection`，才算真的进入设计内核

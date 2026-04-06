@@ -55,6 +55,10 @@ Prompt 的魔力，首先来自：
 
 而 `compact / resume` 则决定这些 surface 在遗忘、重链与继续后还能否保持同一条 continuation contract。
 
+更硬一点说，合法遗忘真正保护的也不是记忆密度，而是：
+
+- `reject / continue verdict` 在 compact 前后不改判
+
 这也是为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到魔力：他们抄到了说明文本，却没有抄到世界准入、投影分层与继续资格的制度体。真正稀缺的不是文风，而是不同 consumer 不必重新协商同一现场。
 
 如果把这章继续压成最短公式，只剩两行：
@@ -73,6 +77,10 @@ Prompt 的魔力，首先来自：
 3. `continuation_story_only`
 
 如果一套 Prompt 解释还没压到这两行，它就还停在机制总结，不算最硬的第一性原理。
+
+这里还要再多记一句：
+
+- `Explainability` 不能越位成新的 Prompt 主语；它只能解释 `winner / boundary / qualification` 在哪里断，不能反向改写世界准入判决。
 
 ## 2. 第一性原理：Prompt 首先是一道世界准入法律
 

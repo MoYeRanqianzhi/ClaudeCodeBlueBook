@@ -8,6 +8,21 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `philosophy/61`、`84` 与 `87` 现已把这轮专题深化补成更完整的长期 doctrine：
+  - Prompt 线现在应长期记住：合法遗忘保护的不是摘要密度，而是 `reject / continue verdict` 在 compact 前后不改判；`Explainability` 只能解释 `winner / boundary / qualification` 断在何处，不能反向改写 world-entry 判决。
+  - 治理线现在应长期记住：`classifier` 不是治理控制面外的免费裁判，而是只有在还能改变 `verdict` 时才值得调用的定价节点；后续凡是写 classifier，都要先问它是否真的还在产生决策增益。
+  - 结构线现在应长期记住：旧 `snapshot / pointer / recovery asset` 在 fresh-read / adopt / relink 之前只能作为 `evidence / projection` 存在，不能直接跨时写回 `present`；`event truth / current truth / display truth` 也必须严格分层，任何一层代写另一层都视为 `truth-plane collapse`。
+- `philosophy/63`、`82`、`86` 与 `navigation/15` 现已继续把专题哲学页和失稳前审读页压回更硬的第一性原理：
+  - Prompt 线现在更明确把 `compact / fork / handoff` 视为 Prompt Constitution 的验真场；若压缩后只剩 story/prose、不剩 `continuation qualification`，系统就已经从 constitution 退回 narration。
+  - `Explainability` 现在也更明确只配做末端命名权；`release card / steady verdict / handoff prose` 只能解释 qualification，不能重新定义 qualification。后续凡是继续写 Prompt tail，都应先问：这里是在保住 `residual reopen gate / threshold liability`，还是又在把解释壳抬成主语。
+  - 治理线现在更明确把 `visible world` 前置到动作许可之前；`Context Usage` 继续只配做 `decision window` 的证据面，而 `classifier / approval / retry` 若无决策增益，也必须被当成免费扩张拒收。
+  - 结构线现在更明确把 `remote / session / transport` 视为主权域，而不是功能域；`event truth / current truth / display truth` 的分层也被正式提升成 current-truth 纪律的一部分。后续凡是分析 remote/session，都应先问它在保护 ownership、reconnect、permission 还是 exit contract，而不是先按功能表分组。
+- 新的长期失真词：
+  - Prompt 线新增 `story-only continuation`：压缩或 handoff 后只剩可读故事，不剩 `continuation qualification`。
+  - 治理线新增 `self-priced-control relapse`：classifier、approval、retry 自己没有进入定价链，反而膨胀成新的免费扩张源。
+  - 结构线新增 `truth-plane collapse`：`event truth / current truth / display truth` 被重新混写，宿主或 UI 又开始靠 replay transcript 猜现在。
+- 新的长期目录纪律：
+  - 根入口继续只负责高阶 doctrine；专题哲学页负责把 doctrine 压成更硬的 first-principles prose；`navigation/15` 负责把这些 prose 改写成失稳前问题梯子。后续若新增结论先想落在根 README，先问它是否其实更该沉到专题页或审读页。
 - `bluebook/README`、`03`、`06`、`01` 与 `navigation/41` 现已继续把高阶前门往“去魅后的制度判断”压稳：
   - Prompt 前门现在更明确不再是 instruction 美学，而是不同 consumer 不必重新协商同一世界；`continuation qualification`、合法遗忘与 residual reopen 资格比 summary prose 更接近 Prompt 本体。
   - 治理前门现在更明确不再是 budget 面板，而是动作、可见性、上下文、时间与 classifier 自身都被同一价格秩序批准；`Context Usage` 现在更明确只配做 `decision window` 的证据面，不再被写成 token dashboard。

@@ -43,6 +43,10 @@
 
 - 让系统更会继续
 
+更硬一点说，真正值钱的也不是“这次总结得多顺”，而是：
+
+- `compact / fork / handoff` 之后留下来的，仍是不是同一条 `continuation qualification`
+
 ## 2. 第一层：主语稳定优于文案强势
 
 一个长任务真正最容易失去的，不是某段 instruction，而是：
@@ -99,6 +103,8 @@ Claude Code 更成熟的地方在于，它同样认真设计：
 - 怎样忘
 - 忘完后怎样继续
 
+如果 compact、handoff 或 steady 之后留下来的只是一段更好读的 prose，而不再是仍可执行的 qualification object，系统就已经从 constitution 退回 narration。
+
 ## 5. 第四层：接手连续性优于单轮表现
 
 Prompt 若只让模型此刻更顺，却让人类和后续系统更难接手，那种“强”没有长期价值。
@@ -141,6 +147,12 @@ Claude Code 值得学的地方正在于：
 
 - 可解释继续
 
+这里还要再多记一句：
+
+- `Explainability` 只配在 `Authority / Boundary / Transcript / Lineage / Continuation` 已经跑通之后出来命名稳定或失稳；`card / verdict / summary / handoff prose` 只能解释 qualification，不能重新定义 qualification。
+
+Prompt 尾段协议真正值钱的地方，也因此不是“release 后又多了几张卡”，而是 `residual reopen gate / threshold liability` 仍留在场上，继续保住 later maintainer 反对当前 steady 的能力。
+
 ## 7. 苏格拉底式追问
 
 ### 7.1 如果 Prompt 真正强只是因为文案更好，为什么它还要规定谁有权继续说下去
@@ -163,6 +175,14 @@ Claude Code 值得学的地方正在于：
 - 未来接手
 - 恢复后的继续
 
+### 7.4 如果 compact 之后留下来的只是故事，为什么这不算 Prompt 仍然成立
+
+因为被保住的若只是可读叙事，而不是可执行的 `continuation qualification`，系统已经失去同一世界，只剩同一语气。
+
+### 7.5 如果 release card、steady verdict 或 handoff prose 写得很完整，为什么它们仍不能当 Prompt 真相
+
+因为它们只是末端解释壳；一旦这些 Explainability 投影开始越位成主语，真正定义世界的就不再是 `Authority / Boundary / Transcript / Lineage / Continuation`。
+
 ## 8. 对 Agent 设计者的启发
 
 如果想学 Claude Code，最该抄走的不是：
@@ -176,3 +196,5 @@ Claude Code 值得学的地方正在于：
 3. 先设计合法遗忘，而不是只设计注入。
 4. 先设计接手连续性，而不是只设计单轮表现。
 5. 先让 Prompt 的失效可解释，而不是让它继续神秘地“看起来很强”。
+6. 先保住 `continuation qualification`，而不是先保住更顺滑的 summary prose。
+7. 先限制 Explainability 的越位范围，而不是让 card / verdict / handoff 文案反过来定义世界。
