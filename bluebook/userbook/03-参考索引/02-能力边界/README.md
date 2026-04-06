@@ -97,3 +97,4 @@
 - [95-stream-json verbose raw wire 索引.md](./95-stream-json%20verbose%20raw%20wire%20索引.md)
 - [96-model separate override restore 索引.md](./96-model%20separate%20override%20restore%20索引.md)
 - [97-Direct connect post_turn_summary callback consumer-path narrowing 索引.md](./97-Direct%20connect%20post_turn_summary%20callback%20consumer-path%20narrowing%20索引.md)
+- [98-streamlined pre-wire rewrite ordering 索引.md](./98-streamlined%20pre-wire%20rewrite%20ordering%20索引.md)

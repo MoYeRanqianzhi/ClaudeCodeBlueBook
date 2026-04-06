@@ -61,6 +61,7 @@
 - 为什么 `stream-json --verbose` 的 raw wire 输出不是普通 core SDK message surface。
 - 为什么 metadata 里的 `model` 在恢复时要走 separate override sink，而不是普通 `AppState` mapper。
 - 为什么 direct connect 对 `post_turn_summary` 的过滤不是消息不存在，而是 callback consumer-path narrowing。
+- 为什么 headless print 的 streamlined output 不是 terminal semantics 后处理，而是 pre-wire rewrite。
 51. 为什么 `permission_mode`、`is_ultraplan_mode` 与 `model` 不是同一种远端可恢复会话参数。
 52. 为什么 `task_started`、`task_progress`、`task_notification` 与 `session_state_changed` 不是同一种远端事件流。
 53. 为什么 CCR v2 remote bridge 的 `transport rebuild`、initial flush、`flush gate` 与 `sequence resume` 不是同一步。
