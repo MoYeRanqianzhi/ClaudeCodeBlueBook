@@ -183,6 +183,7 @@
 - [112-shouldIncludeInStreamlined、assistant-result 双入口、streamlined_* 与 null：为什么 streamlined path 的纳入 gate、替换入口与抑制返回不是同一种消息简化.md](./112-shouldIncludeInStreamlined、assistant-result%20双入口、streamlined_%2A%20与%20null：为什么%20streamlined%20path%20的纳入%20gate、替换入口与抑制返回不是同一种消息简化.md)
 - [113-result、structured_output、permission_denials、lastMessage 与 gracefulShutdownSync：为什么 streamlined path 的 passthrough 不是 terminal semantic 主位保留.md](./113-result、structured_output、permission_denials、lastMessage%20与%20gracefulShutdownSync：为什么%20streamlined%20path%20的%20passthrough%20不是%20terminal%20semantic%20主位保留.md)
 - [114-convertSDKMessage、useDirectConnect、stream_event 与 ignored：为什么 UI consumer 的三分法不是 callback surface 的镜像映射.md](./114-convertSDKMessage、useDirectConnect、stream_event%20与%20ignored：为什么%20UI%20consumer%20的三分法不是%20callback%20surface%20的镜像映射.md)
+- [115-convertToolResults、convertUserTextMessages、useAssistantHistory、viewerOnly 与 success result ignored：为什么 tool_result 本地补画、user text 历史回放与成功结果静默不是同一种 UI consumer policy.md](./115-convertToolResults、convertUserTextMessages、useAssistantHistory、viewerOnly%20与%20success%20result%20ignored：为什么%20tool_result%20本地补画、user%20text%20历史回放与成功结果静默不是同一种%20UI%20consumer%20policy.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。
 
 更稳一点说，这一层真正值钱的目录优化也不是继续补页，而是让每个控制面首页都先回答：
