@@ -1,0 +1,336 @@
+# 安全载体家族强请求完成治理与强请求终局治理分层：为什么artifact-family cleanup stronger-request completion-governor signer不能越级冒充artifact-family cleanup stronger-request finality-governor signer
+
+## 1. 为什么在 `180` 之后还必须继续写 `181`
+
+`180-安全载体家族强请求续打治理与强请求完成治理分层` 已经回答了：
+
+`旧 stronger request 现在仍配继续`
+
+不等于
+
+`这条 stronger request 现在已经完成。`
+
+但如果继续往下追问，
+还会碰到另一层同样容易被偷写的错觉：
+
+`只要 resumed stronger request 已经返回 completion-grade result、当前消息流里已经出现 tool_result / completed progress，它就已经拥有了 future-readable finality。`
+
+Claude Code 当前源码同样不能支持这种更强说法。
+
+因为继续看：
+
+1. `src/services/tools/toolExecution.ts:1403-1475` 的 `addToolResult()`
+2. `src/cli/print.ts:2238-2275` 的 `files_persisted`
+3. `src/cli/print.ts:2455-2468` 的 `flushInternalEvents()` 与 `notifySessionStateChanged('idle')`
+4. `src/entrypoints/sdk/coreSchemas.ts:1671-1689,1739-1748` 的 `files_persisted` 与 `session_state_changed(idle)` schema
+5. `src/cli/transports/ccrClient.ts:514-523,826-838` 的 `state_restored` 与 `flush()` disclaimer
+
+会发现 repo 已经清楚展示出：
+
+1. `stronger-request completion governance` 负责决定 resumed stronger request 是否已经在当前 run 里返回 completion-grade result
+2. `stronger-request finality governance` 负责决定这份 completion 是否已经跨过 transcript/effect persistence、authoritative turn-over 与 future-readable readback 这些更强门槛
+
+也就是说：
+
+`artifact-family cleanup stronger-request completion-governor signer`
+
+和
+
+`artifact-family cleanup stronger-request finality-governor signer`
+
+仍然不是一回事。
+
+前者最多能说：
+
+`这条 resumed stronger request 现在已经在当前消息流里产出 completion-grade output。`
+
+后者才配说：
+
+`这条 resumed stronger request 的结果已经跨过更强的持久化/turn-over/readback 门槛，未来读者回来时仍配把它当成 authoritative settled truth。`
+
+所以 `180` 之后必须继续补的一层就是：
+
+`安全载体家族强请求完成治理与强请求终局治理分层`
+
+也就是：
+
+`stronger-request completion governor 决定 resumed stronger request 是否已经完成当前请求；stronger-request finality governor 才决定这份完成是否已经未来仍真。`
+
+## 2. 先做三条谨慎声明
+
+第一条：
+
+`Claude Code 当前源码里并没有一个字面存在的类型叫 artifact-family cleanup stronger-request finality-governor signer。`
+
+这里的 `artifact-family cleanup stronger-request finality-governor signer` 仍是研究命名。
+它不是在声称 cleanup 线已经有一个未公开的 post-completion finality manager，
+而是在说：
+
+1. repo 已经公开把 current completion 与 stronger finality 写成不同 ceiling
+2. repo 已经把 `tool_result`、`files_persisted`、`idle`、`state_restored` 分成不同层
+3. cleanup 线未来若只补 resumed-request completion，而不补 stronger finality grammar，仍会留下“未来回来还能不能把这份完成当真”的缺口
+
+第二条：
+
+这里的 `stronger-request finality`
+
+不是在声称每一个 tool result 都必须走文件持久化。
+
+真正要说的是：
+
+`repo 当前明确拒绝把 current completion signal 自动压平成 future-readable finality signal。`
+
+也就是说，
+即便某条请求最终不以文件形式持久化，
+它是否跨过 authoritative turn-over、transport delivery illusion、future readback evidence，
+仍然是另一层问题。
+
+第三条：
+
+这里也不是在贬低 `completion-grade result`。
+
+`completion`
+
+已经是很强的一层。
+
+但这层仍不等于：
+
+`未来回来时还能被更强读者重新读回的 settled truth`
+
+这正是终局治理要继续拆开的地方。
+
+## 3. 最短结论
+
+Claude Code 当前源码至少给出了五类“stronger-request completion-governor signer 仍不等于 stronger-request finality-governor signer”证据：
+
+1. `addToolResult()` 只是把 resumed request 的 `tool_result` push 进当前 `resultingMessages` / `createUserMessage`，说明它主要签 current completion
+2. `print.ts` 会在 turn 结束后单独发 `files_persisted`，说明 effect persistence 不被压进 generic completed result
+3. `print.ts` 在 finally 中先 `flushInternalEvents()` 再 `notifySessionStateChanged('idle')`，说明 authoritative turn-over 也晚于当前 completion
+4. `ccrClient.flush()` 的注释明确说它只保证 delivery confirmation，server truth 要 separately check；说明 transport drain 不等于 finality
+5. `state_restored` 的记录发生在更强的 future readback 之后，说明 future-readable restoration 比 current completion 更强
+
+因此这一章的最短结论是：
+
+`stronger-request completion governor 最多能说 resumed stronger request 现在已经在当前 run 里完成；stronger-request finality governor 才能说这份完成是否已经跨过持久化、turn-over 与 future-readable readback 的更强门槛。`
+
+再压成一句：
+
+`completed now，不等于 settled for future readers。`
+
+## 4. 第一性原理：completion 回答“这次请求现在有没有完成”，finality 回答“这份完成以后回来还能不能继续当真”
+
+从第一性原理看，
+强请求完成治理与强请求终局治理处理的是两个不同主权问题。
+
+stronger-request completion governor 回答的是：
+
+1. 当前 resumed stronger request 是否已经返回 result
+2. 当前消息流里是否已经有 completion-grade output
+3. 当前 progress 是否可以转成 `completed`
+4. 当前请求是否仍是 error / could-not-complete / aborted
+5. 当前 run 里这条 stronger request 是否已经结束
+
+stronger-request finality governor 回答的则是：
+
+1. 当前 completion 是否已跨过 transcript persistence gate
+2. effect persistence 是否已被单独签字
+3. authoritative turn-over 是否已成立
+4. transport drain 是否只是 delivery illusion
+5. future reader 以后回来时能否把同一 truth 重新读回
+
+如果把这两层压成一句“已经完成了”，
+系统就会制造五类危险幻觉：
+
+1. tool-result-means-final illusion
+   只要当前消息里出现 tool_result，就误以为 future-readable finality 已成立
+2. completed-progress-means-settled illusion
+   只要当前 progress 变成 completed，就误以为 persistence / turn-over 也都成立
+3. queue-drained-means-world-final illusion
+   只要 flush 了队列，就误以为 server truth 已经正式落定
+4. current-run-done-means-future-readable illusion
+   只要这轮 run 结束，就误以为以后回来还能读回同一真相
+5. completion-once-means-finality-forever illusion
+   只要这次完成了，就误以为已经获得未来仍真的地位
+
+所以从第一性原理看：
+
+`stronger-request completion governance` 管的是 current result closure；
+`stronger-request finality governance` 管的是 future-readable settled truth。
+
+再用苏格拉底式反问压一次：
+
+1. 如果当前 `tool_result` 已经等于终局，为什么 `print.ts` 还要单独发 `files_persisted`？
+   因为 current result 不等于 effect persistence。
+2. 如果 resumed stronger request 的 current completion 已经等于 authoritative turn-over，为什么 going idle 前还要先 `flushInternalEvents()`？
+   因为当前完成还没自动跨过 transcript persistence gate。
+3. 如果 `flush()` 已经等于 finality，为什么注释还要明确说 server truth 要 separately check？
+   因为 delivery confirmation 不等于 settled state truth。
+4. 如果这次 stronger request 的结果已经 future-final，为什么还要等 `state_restored` 这种 future readback evidence？
+   因为“现在说自己完成”不如“未来回来还能读回”更强。
+
+## 5. `addToolResult()` 先证明：resumed stronger request 的 current completion 只是在当前消息流里成立
+
+`toolExecution.ts:1403-1475` 很值钱。
+
+`addToolResult()` 做的事情非常干净：
+
+1. 把 tool output 映射成 `toolResultBlock`
+2. 组装 `contentBlocks`
+3. 调 `createUserMessage(...)`
+4. push 进 `resultingMessages`
+
+这条路径非常重要。
+
+因为它清楚说明：
+
+`当前 completion`
+
+首先只是：
+
+`当前消息流里已经出现 completion-grade result`
+
+但这里还没有回答：
+
+1. transcript 是否已经持久化
+2. effect 是否已经被单独签字
+3. 这轮 turn 是否已经 authoritative 地 over
+4. 未来回来时还能不能把它读回
+
+所以 `addToolResult()` 的 ceiling 很明确：
+
+`message-level completion`
+
+不是
+
+`future-readable finality`
+
+## 6. `files_persisted` 与 `idle` 再证明：print 会在 completion 之后继续追问更强的持久化与 turn-over
+
+`print.ts:2238-2275` 很硬。
+
+turn 结束后，
+系统会单独调用 `executeFilePersistence(...)`，
+并 enqueue 一个：
+
+`system/files_persisted`
+
+这说明源码作者明确拒绝把：
+
+`当前请求已经完成`
+
+偷写成：
+
+`相关 effect 已经正式落地`
+
+`print.ts:2455-2468` 更硬。
+
+在 finally 里，
+系统顺序是：
+
+1. `await structuredIO.flushInternalEvents()`
+2. `notifySessionStateChanged('idle')`
+3. `drainSdkEvents()`
+
+而 `coreSchemas.ts:1739-1748` 又明确把 `idle` 描述为：
+
+`authoritative turn-over signal`
+
+这条顺序非常值钱。
+
+因为它公开说明：
+
+`当前 completion`
+
+仍然在：
+
+`authoritative turn-over`
+
+之前。
+
+也就是说，
+resumed stronger request 即便已经 completion-grade，
+仍还没自动跨过更强的 turn-over ceiling。
+
+## 7. `flush()` 与 `state_restored` 再证明：future-readable finality 比 current completion 和 transport drain 都更强
+
+`ccrClient.ts:826-838` 的注释几乎就是一条反伪终局宪法。
+
+它明确说：
+
+1. `flush()` 只在 caller 需要 delivery confirmation 时有意义
+2. individual POST 是否成功，不能仅靠它断言
+3. 如果关心 server state，必须 separately check
+
+这条证据非常硬。
+
+因为它明确打碎了一个常见幻觉：
+
+`queue drained == finality`
+
+源码作者显然不接受这个等号。
+
+`ccrClient.ts:514-523` 的 `state_restored` 更值钱。
+
+它把更强证据放在：
+
+`PUT succeeded` 之后再去 `GET`，
+并只在读回完成后才记录 `state_restored`
+
+这说明 repo 对更强终局的哲学不是：
+
+`现在看起来已经送出去了`
+
+而是：
+
+`以后回来时真的还能读回`
+
+所以从技术启示看，
+真正的 stronger-request finality 不是：
+
+`current completion + local confidence`
+
+而是：
+
+`completion + stronger persistence/turn-over/readback evidence`
+
+## 8. 为什么这层不等于 `149` 的一般 finality 讨论
+
+这里必须单独讲清楚，
+否则容易把 `181` 误读成对 `149` 的重复。
+
+`149` 问的是：
+
+`generic completion signer 能不能越级冒充 generic finality signer。`
+
+`181` 问的是：
+
+`在 resumed stronger request 语境里，stronger-request completion signer 能不能越级冒充 stronger-request finality signer。`
+
+所以：
+
+1. `149` 的典型形态是 generic completion、effect persistence、turn-over、future readback 的分层
+2. `181` 的典型形态是 `tool_result` / resumed completion、`files_persisted`、`idle`、`flush()` disclaimer、`state_restored`
+
+前者是普遍终局宪法，
+后者是把这套终局宪法继续压到 interrupted stronger request 世界里。
+
+这不是重复，
+而是继续要求：
+
+`更危险的 resumed stronger request`
+
+也必须服从同样严格的 finality discipline。
+
+## 9. 一条硬结论
+
+这组源码真正说明的不是：
+
+`只要 resumed stronger request 已经有了 current completion result，cleanup 线就已经拥有了足够强的终局语义。`
+
+而是：
+
+`repo 已经在 addToolResult() 的 current message completion、print.ts 的 files_persisted 与 idle choreography、coreSchemas.ts 对 authoritative turn-over 的单独 schema、ccrClient.flush() 对 delivery-only ceiling 的免责声明，以及 state_restored 的 future-readback evidence 上，清楚展示了 stronger-request finality governance 的独立存在；因此 artifact-family cleanup stronger-request completion-governor signer 仍不能越级冒充 artifact-family cleanup stronger-request finality-governor signer。`
+
+因此：
+
+`cleanup 线真正缺的，不只是“谁来宣布 resumed stronger request 当前已经完成”，还包括“谁来宣布这份完成以后回来时仍然成立”。`

@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 24 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 37 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -43,6 +43,19 @@
 22. [22-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的就绪治理边界](22-pluginReconnectKey%E3%80%81MCPServerConnection%E4%B8%8EReadMcpResourceTool%E7%9A%84%E5%B0%B1%E7%BB%AA%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 23. [23-useManageMCPConnections、toolExecution与print的连续性治理边界](23-useManageMCPConnections%E3%80%81toolExecution%E4%B8%8Eprint%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 24. [24-handleRemoteAuthFailure、reconnectMcpServerImpl与performMCPOAuthFlow的恢复治理边界](24-handleRemoteAuthFailure%E3%80%81reconnectMcpServerImpl%E4%B8%8EperformMCPOAuthFlow%E7%9A%84%E6%81%A2%E5%A4%8D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+25. [25-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的重新并入治理边界](25-onConnectionAttempt%E3%80%81dynamicMcpState%E4%B8%8EreregisterChannelHandlerAfterReconnect%E7%9A%84%E9%87%8D%E6%96%B0%E5%B9%B6%E5%85%A5%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+26. [26-buildMcpServerStatuses、useMcpConnectivityStatus与MCPReconnect的重新投影治理边界](26-buildMcpServerStatuses%E3%80%81useMcpConnectivityStatus%E4%B8%8EMCPReconnect%E7%9A%84%E9%87%8D%E6%96%B0%E6%8A%95%E5%BD%B1%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+27. [27-McpAuthTool、MCPRemoteServerMenu与MCPReconnect的重新担保治理边界](27-McpAuthTool%E3%80%81MCPRemoteServerMenu%E4%B8%8EMCPReconnect%E7%9A%84%E9%87%8D%E6%96%B0%E6%8B%85%E4%BF%9D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+28. [28-ensureConnectedClient、ReadMcpResourceTool与toolExecution的用时重验证治理边界](28-ensureConnectedClient%E3%80%81ReadMcpResourceTool%E4%B8%8EtoolExecution%E7%9A%84%E7%94%A8%E6%97%B6%E9%87%8D%E9%AA%8C%E8%AF%81%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+29. [29-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的step-up重授权治理边界](29-wrapFetchWithStepUpDetection%E3%80%81ClaudeAuthProvider%E4%B8%8EperformMCPOAuthFlow%E7%9A%84step-up%E9%87%8D%E6%8E%88%E6%9D%83%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+30. [30-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求续打治理边界](30-callMCPToolWithUrlElicitationRetry%E3%80%81toolExecution%E4%B8%8EMCP%E8%AE%A4%E8%AF%81%E8%B7%AF%E5%BE%84%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E7%BB%AD%E6%89%93%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+31. [31-callMCPToolWithUrlElicitationRetry、callMCPTool与tool_result映射的强请求完成治理边界](31-callMCPToolWithUrlElicitationRetry%E3%80%81callMCPTool%E4%B8%8Etool_result%E6%98%A0%E5%B0%84%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%AE%8C%E6%88%90%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+32. [32-addToolResult、print与CCRClient的强请求终局治理边界](32-addToolResult%E3%80%81print%E4%B8%8ECCRClient%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E7%BB%88%E5%B1%80%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+33. [33-StructuredIO与orphaned permission处理链的强请求遗忘治理边界](33-StructuredIO%E4%B8%8Eorphaned%20permission%E5%A4%84%E7%90%86%E9%93%BE%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E9%81%97%E5%BF%98%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+34. [34-duplicate与orphan response分流中的强请求免责释放治理边界](34-duplicate%E4%B8%8Eorphan%20response%E5%88%86%E6%B5%81%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%85%8D%E8%B4%A3%E9%87%8A%E6%94%BE%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+35. [35-commandLifecycle与orphaned-permission队列的强请求归档关闭治理边界](35-commandLifecycle%E4%B8%8Eorphaned-permission%E9%98%9F%E5%88%97%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%BD%92%E6%A1%A3%E5%85%B3%E9%97%AD%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+36. [36-control_response回放与日志面的强请求审计关闭治理边界](36-control_response%E5%9B%9E%E6%94%BE%E4%B8%8E%E6%97%A5%E5%BF%97%E9%9D%A2%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%AE%A1%E8%AE%A1%E5%85%B3%E9%97%AD%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+37. [37-debug.ts、diagLogs、cleanup、sessionStorage与fileHistory的强请求不可逆擦除治理边界](37-debug.ts、diagLogs、cleanup、sessionStorage与fileHistory的强请求不可逆擦除治理边界.md)
 
 ## 和其他目录的分工
 

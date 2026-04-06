@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 157 篇速查文档。
+`appendix/` 当前包含 170 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -114,6 +114,45 @@
 - `157`
   载体家族连续性治理与恢复治理分层。
   入口：[157-安全载体家族连续性治理与恢复治理分层速查表：continuity decision、recovery decision、positive control、cleanup recovery gap与governor question](157-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%B2%BB%E7%90%86%E4%B8%8E%E6%81%A2%E5%A4%8D%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Acontinuity%20decision%E3%80%81recovery%20decision%E3%80%81positive%20control%E3%80%81cleanup%20recovery%20gap%E4%B8%8Egovernor%20question.md)。
+- `158`
+  载体家族恢复治理与重新并入治理分层。
+  入口：[158-安全载体家族恢复治理与重新并入治理分层速查表：recovery decision、reintegration decision、positive control、cleanup reintegration gap与governor question](158-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E6%81%A2%E5%A4%8D%E6%B2%BB%E7%90%86%E4%B8%8E%E9%87%8D%E6%96%B0%E5%B9%B6%E5%85%A5%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Arecovery%20decision%E3%80%81reintegration%20decision%E3%80%81positive%20control%E3%80%81cleanup%20reintegration%20gap%E4%B8%8Egovernor%20question.md)。
+- `159`
+  载体家族重新并入治理与重新投影治理分层。
+  入口：[159-安全载体家族重新并入治理与重新投影治理分层速查表：reintegration decision、reprojection decision、positive control、cleanup reprojection gap与governor question](159-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E9%87%8D%E6%96%B0%E5%B9%B6%E5%85%A5%E6%B2%BB%E7%90%86%E4%B8%8E%E9%87%8D%E6%96%B0%E6%8A%95%E5%BD%B1%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Areintegration%20decision%E3%80%81reprojection%20decision%E3%80%81positive%20control%E3%80%81cleanup%20reprojection%20gap%E4%B8%8Egovernor%20question.md)。
+- `160`
+  载体家族重新投影治理与重新担保治理分层。
+  入口：[160-安全载体家族重新投影治理与重新担保治理分层速查表：reprojection decision、reassurance decision、positive control、cleanup reassurance gap与governor question](160-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E9%87%8D%E6%96%B0%E6%8A%95%E5%BD%B1%E6%B2%BB%E7%90%86%E4%B8%8E%E9%87%8D%E6%96%B0%E6%8B%85%E4%BF%9D%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Areprojection%20decision%E3%80%81reassurance%20decision%E3%80%81positive%20control%E3%80%81cleanup%20reassurance%20gap%E4%B8%8Egovernor%20question.md)。
+- `161`
+  载体家族重新担保治理与用时重验证治理分层。
+  入口：[161-安全载体家族重新担保治理与用时重验证治理分层速查表：reassurance decision、use-time revalidation decision、positive control、cleanup revalidation gap与governor question](161-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E9%87%8D%E6%96%B0%E6%8B%85%E4%BF%9D%E6%B2%BB%E7%90%86%E4%B8%8E%E7%94%A8%E6%97%B6%E9%87%8D%E9%AA%8C%E8%AF%81%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Areassurance%20decision%E3%80%81use-time%20revalidation%20decision%E3%80%81positive%20control%E3%80%81cleanup%20revalidation%20gap%E4%B8%8Egovernor%20question.md)。
+- `162`
+  载体家族用时重验证治理与 step-up 重授权治理分层。
+  入口：[162-安全载体家族用时重验证治理与step-up重授权治理分层速查表：use-time revalidation decision、step-up reauthorization decision、positive control、cleanup step-up gap与governor question](162-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E7%94%A8%E6%97%B6%E9%87%8D%E9%AA%8C%E8%AF%81%E6%B2%BB%E7%90%86%E4%B8%8Estep-up%E9%87%8D%E6%8E%88%E6%9D%83%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Ause-time%20revalidation%20decision%E3%80%81step-up%20reauthorization%20decision%E3%80%81positive%20control%E3%80%81cleanup%20step-up%20gap%E4%B8%8Egovernor%20question.md)。
+- `163`
+  载体家族 step-up 重授权治理与强请求续打治理分层。
+  入口：[163-安全载体家族step-up重授权治理与强请求续打治理分层速查表：step-up reauthorization decision、stronger-request continuation decision、positive control、cleanup continuation gap与governor question](163-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8Fstep-up%E9%87%8D%E6%8E%88%E6%9D%83%E6%B2%BB%E7%90%86%E4%B8%8E%E5%BC%BA%E8%AF%B7%E6%B1%82%E7%BB%AD%E6%89%93%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Astep-up%20reauthorization%20decision%E3%80%81stronger-request%20continuation%20decision%E3%80%81positive%20control%E3%80%81cleanup%20continuation%20gap%E4%B8%8Egovernor%20question.md)。
+- `164`
+  载体家族强请求续打治理与强请求完成治理分层。
+  入口：[164-安全载体家族强请求续打治理与强请求完成治理分层速查表：stronger-request continuation decision、stronger-request completion decision、positive control、cleanup completion gap与governor question](164-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%BC%BA%E8%AF%B7%E6%B1%82%E7%BB%AD%E6%89%93%E6%B2%BB%E7%90%86%E4%B8%8E%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%AE%8C%E6%88%90%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Astronger-request%20continuation%20decision%E3%80%81stronger-request%20completion%20decision%E3%80%81positive%20control%E3%80%81cleanup%20completion%20gap%E4%B8%8Egovernor%20question.md)。
+- `165`
+  载体家族强请求完成治理与强请求终局治理分层。
+  入口：[165-安全载体家族强请求完成治理与强请求终局治理分层速查表：stronger-request completion scope、stronger-request finality scope、positive control、cleanup finality gap与governor question](165-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%AE%8C%E6%88%90%E6%B2%BB%E7%90%86%E4%B8%8E%E5%BC%BA%E8%AF%B7%E6%B1%82%E7%BB%88%E5%B1%80%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Astronger-request%20completion%20scope%E3%80%81stronger-request%20finality%20scope%E3%80%81positive%20control%E3%80%81cleanup%20finality%20gap%E4%B8%8Egovernor%20question.md)。
+- `166`
+  载体家族强请求终局治理与强请求遗忘治理分层。
+  入口：[166-安全载体家族强请求终局治理与强请求遗忘治理分层速查表：stronger-request finality scope、stronger-request forgetting gate、positive control、cleanup forgetting gap与governor question](166-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%BC%BA%E8%AF%B7%E6%B1%82%E7%BB%88%E5%B1%80%E6%B2%BB%E7%90%86%E4%B8%8E%E5%BC%BA%E8%AF%B7%E6%B1%82%E9%81%97%E5%BF%98%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Astronger-request%20finality%20scope%E3%80%81stronger-request%20forgetting%20gate%E3%80%81positive%20control%E3%80%81cleanup%20forgetting%20gap%E4%B8%8Egovernor%20question.md)。
+- `167`
+  载体家族强请求遗忘治理与强请求免责释放治理分层。
+  入口：[167-安全载体家族强请求遗忘治理与强请求免责释放治理分层速查表：stronger-request forgetting gate、stronger-request liability-release decision、positive control、cleanup release gap与governor question](167-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%BC%BA%E8%AF%B7%E6%B1%82%E9%81%97%E5%BF%98%E6%B2%BB%E7%90%86%E4%B8%8E%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%85%8D%E8%B4%A3%E9%87%8A%E6%94%BE%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Astronger-request%20forgetting%20gate%E3%80%81stronger-request%20liability-release%20decision%E3%80%81positive%20control%E3%80%81cleanup%20release%20gap%E4%B8%8Egovernor%20question.md)。
+- `168`
+  载体家族强请求免责释放治理与强请求归档关闭治理分层。
+  入口：[168-安全载体家族强请求免责释放治理与强请求归档关闭治理分层速查表：stronger-request liability-release decision、stronger-request archive-close surface、positive control、cleanup archive gap与governor question](168-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%85%8D%E8%B4%A3%E9%87%8A%E6%94%BE%E6%B2%BB%E7%90%86%E4%B8%8E%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%BD%92%E6%A1%A3%E5%85%B3%E9%97%AD%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8.md)。
+- `169`
+  载体家族强请求归档关闭治理与强请求审计关闭治理分层。
+  入口：[169-安全载体家族强请求归档关闭治理与强请求审计关闭治理分层速查表：stronger-request archive-close surface、stronger-request audit-close surface、positive control、cleanup audit gap与governor question](169-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%BD%92%E6%A1%A3%E5%85%B3%E9%97%AD%E6%B2%BB%E7%90%86%E4%B8%8E%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%AE%A1%E8%AE%A1%E5%85%B3%E9%97%AD%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8.md)。
+- `170`
+  载体家族强请求审计关闭治理与强请求不可逆擦除治理分层。
+  入口：[170-安全载体家族强请求审计关闭治理与强请求不可逆擦除治理分层速查表：stronger-request audit-close surface、stronger-request irreversible-erasure surface、positive control、cleanup erasure gap与governor question](170-安全载体家族强请求审计关闭治理与强请求不可逆擦除治理分层速查表.md)。
 
 ## 怎么配合主线读
 
