@@ -24,6 +24,9 @@
 - 本轮专题入口收口动作: 已继续更新 `guides/README`、`navigation/README`、`philosophy/README`，明确 `guides/99-102`、`philosophy/84-87`、导航分流层都服从 `09` 的权威短语，而不是继续并列定义。
 - 本轮专题路由瘦身动作: 已继续把三个专题 README 里的过长跨目录细链压回 `navigation/README`，并在推荐入口层直接前置 `09`，减少“目录自己解释、自己分流、自己模板化”的角色混写。
 - 本轮深专题收束动作: 已继续更新 `navigation/03` 与 `07`，把旧深线接回新的主线/方法/验证/反例链，并把五个平面继续压回三句判断。
+- 主分支同步检查: `2026-04-06` 在当前研究 worktree 内再次执行 `git fetch origin main`；结果确认 `LOCAL_MAIN=b640900a7285694200785c888e9c443d94b2f964`、`ORIGIN_MAIN=b640900a7285694200785c888e9c443d94b2f964`，当前 `main...origin/main` 为 `0 0`；因此本轮继续只在 `.worktrees/claude-code-risk-analysis` 内推进，无需额外拉取或合并。
+- 本轮继续向下推进: 已新增 `176-安全载体家族重新投影治理与重新担保治理分层`、`appendix/160` 与 `source-notes/27`，把安全链从 reprojection governance 继续推进到 reassurance governance。
+- 本轮继续同步目录与记忆: 已同步更新 `security/README.md`、`appendix/README.md`、`source-notes/README.md`、`docs/development/security/long-term-memory.md` 与本日志，明确 `176` 已稳定写出 reassurance 边界，并把下一候选保持为 docs-layer 未固化问题，避免猜想重新回流正文。
 - 主分支同步检查: `2026-04-06` 在当前研究 worktree 内再次执行 `git fetch origin main`；结果确认 `LOCAL_MAIN=328c29c`、`ORIGIN_MAIN=328c29c`，当前 `main...origin/main` 为 `0 0`；同时最新 `main` 已合入当前 research worktree，因此本轮继续只在 `.worktrees/claude-code-risk-analysis` 内推进。
 - 本轮安全专题推进: 已新增 `169-安全载体家族再赋权治理与重配置治理分层`、`appendix/153` 与 `source-notes/20`，并同步把 `154-168` 链尾正文中的作者推进记忆改写为源码锚定的苏格拉底式自我约束。
 - 本轮目录治理修正: 已继续强化 `security/README.md`、`appendix/README.md`、`source-notes/README.md` 与 `docs/development/security/README.md` 的四层分工，避免正文、附录、源码剖面与持久化记忆重新混写。
@@ -37,6 +40,14 @@
 - 本轮再次同步目录与记忆: 已同步更新 `security/README.md`、`appendix/README.md`、`source-notes/README.md`、`docs/development/security/long-term-memory.md` 与本日志，明确 `174` 已稳定写出 reintegration 边界，并把 `175` 仅作为尚未固化的暂定候选留在 `docs/` 层。
 - 本轮继续向下推进: 已新增 `175-安全载体家族重新并入治理与重新投影治理分层`、`appendix/159` 与 `source-notes/26`，把安全链从 reintegration governance 继续推进到 reprojection governance。
 - 本轮继续同步目录与记忆: 已同步更新 `security/README.md`、`appendix/README.md`、`source-notes/README.md`、`docs/development/security/long-term-memory.md` 与本日志，明确 `175` 已稳定写出 reprojection 边界，并把 `176` 只保留为 docs-layer 暂定问题。
+
+### A099. 重新投影治理之后仍要继续分出重新担保治理：Claude Code 当前即便知道 current truth 怎样被不同 surface 重新讲述，也还没有谁被正式授权决定哪些讲述现在配承载更强的继续依赖担保
+
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `LOCAL_MAIN=b640900a7285694200785c888e9c443d94b2f964`、`ORIGIN_MAIN=b640900a7285694200785c888e9c443d94b2f964`，`main...origin/main` 为 `0 0`；当前 research worktree 继续只在 `.worktrees/claude-code-risk-analysis` 内推进，未影响主分支与其他 worktree。
+- 本轮新增 `176-安全载体家族重新投影治理与重新担保治理分层`，核心判断是：`175` 已经证明 reintegrated truth 即便已经被不同 surface 重新讲述，也只是在回答“current truth 该怎样被 retell”；但继续看 `McpAuthTool` 的 `will become available automatically` / `should now be available`、`MCPRemoteServerMenu` 的 `Authentication successful` branching 与 `manual restart` caveat、`MCPReconnect` 的 `Successfully reconnected`、`handlers/mcp.tsx` 的 `✓ Connected`，以及 `useMcpConnectivityStatus()` 只发布 failed/needs-auth notification 的选择性沉默，会发现更深层的问题已经不再只是 “这份当前真相该怎样被讲”，而是 “这些讲述里哪些现在配承载多强的继续依赖担保”。也就是说，`artifact-family cleanup reprojection-governor signer` 仍不等于 `artifact-family cleanup reassurance-governor signer`。
+- 本轮最硬的源码证据有三组。第一组是 graded-positive-lexicon 正例：`McpAuthTool.ts:55-60,182-196` 同时给出 `will become available automatically` 与 `should now be available`，说明即便围绕同一 auth/reconnect 主题，repo 也会按路径不确定性分配不同 reassurance ceiling。第二组是 auth-success-not-all-clear 正例：`MCPRemoteServerMenu.tsx:95-111,277-289` 明确把 `Authentication successful` 继续分成 `Connected`、`still requires authentication` 与 `reconnection failed`，并保留 `manual restart` caveat，说明上游 success prefix 不自动拥有 strongest reassurance authority。第三组是 scope/publishing 正例：`MCPReconnect.tsx:40-63` 只给 operation-local success copy，`handlers/mcp.tsx:26-35` 只给 narrow health glyph reassurance，而 `useMcpConnectivityStatus.tsx:25-63` 甚至拒绝发对称 success toast。这共同说明 reassurance 不只分强弱，还分 reader scope、operation scope 与 publication duty。
+- 本轮因此同步补入 `appendix/160-安全载体家族重新投影治理与重新担保治理分层速查表` 与 `source-notes/27-McpAuthTool、MCPRemoteServerMenu与MCPReconnect的重新担保治理边界`。这样 `176` 不再停留在 “reprojection != reassurance” 的抽象口号，而是第一次把 `reprojection decision / reassurance decision / positive control / cleanup reassurance gap / governor question` 压成回查矩阵，并把 auth guidance、auth-complete branching、local reconnect success、health glyph 与 notification silence 压成一篇贴近源码的 reassurance 剖面。
+- 下一候选本轮故意不固化标题：现有证据已经足以证明 reassurance grammar 存在，但是否还应继续上提到更强的 `reattestation / durable reliance authorization` 层，当前证据密度仍不足以像 `176` 这样正式固化。因此目前只把它保留为 docs-layer 观察问题，不回写正文标题。
 
 ### A098. 重新并入治理之后仍要继续分出重新投影治理：Claude Code 当前即便知道旧 cleanup 对象已经重新成为当前世界的一部分，也还没有谁被正式授权决定不同读者现在该看到什么版本的当前真相
 

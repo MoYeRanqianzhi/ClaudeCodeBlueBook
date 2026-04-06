@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 26 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 27 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -45,6 +45,7 @@
 24. [24-handleRemoteAuthFailure、reconnectMcpServerImpl与performMCPOAuthFlow的恢复治理边界](24-handleRemoteAuthFailure%E3%80%81reconnectMcpServerImpl%E4%B8%8EperformMCPOAuthFlow%E7%9A%84%E6%81%A2%E5%A4%8D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 25. [25-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的重新并入治理边界](25-onConnectionAttempt%E3%80%81dynamicMcpState%E4%B8%8EreregisterChannelHandlerAfterReconnect%E7%9A%84%E9%87%8D%E6%96%B0%E5%B9%B6%E5%85%A5%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 26. [26-buildMcpServerStatuses、useMcpConnectivityStatus与MCPReconnect的重新投影治理边界](26-buildMcpServerStatuses%E3%80%81useMcpConnectivityStatus%E4%B8%8EMCPReconnect%E7%9A%84%E9%87%8D%E6%96%B0%E6%8A%95%E5%BD%B1%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+27. [27-McpAuthTool、MCPRemoteServerMenu与MCPReconnect的重新担保治理边界](27-McpAuthTool%E3%80%81MCPRemoteServerMenu%E4%B8%8EMCPReconnect%E7%9A%84%E9%87%8D%E6%96%B0%E6%8B%85%E4%BF%9D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
