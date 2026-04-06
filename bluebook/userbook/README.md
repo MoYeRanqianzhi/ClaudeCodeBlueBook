@@ -259,5 +259,6 @@
 - bridge 的 session runtime timeout、shutdown grace 与 failed remap 边界
 - direct-connect 的 session factory、transport URL、workspace 回填与断线退出边界
 - direct-connect 的控制子集、权限投影与退出传播边界
+- direct-connect 的消息过滤、`init` 去重与 transcript surface 边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。

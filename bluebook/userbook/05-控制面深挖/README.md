@@ -68,4 +68,5 @@
 - [58-viewerOnly、hasInitialPrompt、useAssistantHistory 与 updateSessionTitle：为什么 attached assistant REPL 的首问加载、历史翻页与会话标题不是同一种主权.md](./58-viewerOnly、hasInitialPrompt、useAssistantHistory%20与%20updateSessionTitle：为什么%20attached%20assistant%20REPL%20的首问加载、历史翻页与会话标题不是同一种主权.md)
 - [59-cc__、open、createDirectConnectSession、ws_url 与 fail-fast disconnect：为什么 direct connect 的建会话、直连 socket 与断线退出不是同一种远端附着.md](./59-cc__、open、createDirectConnectSession、ws_url%20与%20fail-fast%20disconnect：为什么%20direct%20connect%20的建会话、直连%20socket%20与断线退出不是同一种远端附着.md)
 - [60-can_use_tool、interrupt、result、disconnect 与 stderr shutdown：为什么 direct connect 的控制子集、回合结束与连接失败不是同一种收口.md](./60-can_use_tool、interrupt、result、disconnect%20与%20stderr%20shutdown：为什么%20direct%20connect%20的控制子集、回合结束与连接失败不是同一种收口.md)
+- [61-init、status、tool_result、tool_progress 与 ignored families：为什么 direct connect 的远端消息流不是原样落进 REPL transcript.md](./61-init、status、tool_result、tool_progress%20与%20ignored%20families：为什么%20direct%20connect%20的远端消息流不是原样落进%20REPL%20transcript.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

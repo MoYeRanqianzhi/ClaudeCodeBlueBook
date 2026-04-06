@@ -62,6 +62,7 @@
 - [58-2026-04-06-attached viewer transcript ownership 拆分记忆.md](./58-2026-04-06-attached%20viewer%20transcript%20ownership%20拆分记忆.md)
 - [59-2026-04-06-direct connect session contract 拆分记忆.md](./59-2026-04-06-direct%20connect%20session%20contract%20拆分记忆.md)
 - [60-2026-04-06-direct connect control subset and shutdown 拆分记忆.md](./60-2026-04-06-direct%20connect%20control%20subset%20and%20shutdown%20拆分记忆.md)
+- [61-2026-04-06-direct connect transcript surface 拆分记忆.md](./61-2026-04-06-direct%20connect%20transcript%20surface%20拆分记忆.md)
 
 用途：
 
