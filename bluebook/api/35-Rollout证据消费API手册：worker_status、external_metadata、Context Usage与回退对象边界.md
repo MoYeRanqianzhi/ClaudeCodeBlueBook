@@ -52,6 +52,17 @@ API 对象。
 
 这三层必须分开写。
 
+如果把 rollout 证据消费前门继续压成最短公式，也只剩四句：
+
+1. `same-world test`
+   - 宿主先确认自己消费的还是同一个工作对象与继续对象。
+2. `decision window`
+   - `Context Usage`、continuation 和 stop judgement 回答的是当前是否还配继续，不是最终花了多少。
+3. `worker_status + external_metadata + session_state_changed`
+   - 当前真相先消费这三组正式外化面，再谈 envelope。
+4. `rollback object boundary`
+   - 回退先按对象写，不先按文件和 commit 写。
+
 否则宿主很容易把：
 
 - 内部实现细节
@@ -135,6 +146,11 @@ API 对象。
 
 - 成本决策
 
+更稳一点说：
+
+- `Context Usage` 首先是 `decision window` 的诚实投影，不是成本面板。
+- token 总量只是结果证据，observed window 才是继续/停止的判断证据。
+
 ## 4. 第三层：控制请求与审批路径也属于证据面
 
 Claude Code 的审批不是一句：
@@ -192,6 +208,12 @@ Claude Code 的审批不是一句：
 而不是：
 
 - 对外声明成稳定 schema
+
+宿主在这一层最容易踩到的 first reject signal 也只有三条：
+
+1. 把 `Context Usage` 当成账单页
+2. 把 event replay 当成当前真相
+3. 把文件回退当成对象回退
 
 ## 6. 回退对象边界：宿主应该怎么写
 

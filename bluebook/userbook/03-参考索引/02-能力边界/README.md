@@ -1,5 +1,20 @@
 # 能力边界
 
+这组索引最容易被误读成“把边界相关页列出来”。
+
+更稳的前门不是继续扫目录，而是先记四句：
+
+1. `same-world test`
+   - 代码里出现了一个能力，不等于它已经合法进入模型当前世界。
+2. `decision window`
+   - 可见能力、允许能力和当前愿意继续付费的能力不是一回事。
+3. `existence -> current visibility -> current admission -> product promise`
+   - 边界判断先走这四层，再贴任何“支持/不支持”标签。
+4. `truth ladder + danger surface`
+   - 先看你在拿哪一层证据说这句话，再看最容易误判的危险改动面。
+
+如果这组索引页没有先把问题压回这四句，读者就会重新把能力边界页读成功能目录。
+
 - [01-能力状态矩阵.md](./01-%E8%83%BD%E5%8A%9B%E7%8A%B6%E6%80%81%E7%9F%A9%E9%98%B5.md)
 - [02-Feature Gate 与可见性索引.md](./02-Feature%20Gate%20%E4%B8%8E%E5%8F%AF%E8%A7%81%E6%80%A7%E7%B4%A2%E5%BC%95.md)
 - [03-来源信任、插件锁定与 Hook 门控索引.md](./03-%E6%9D%A5%E6%BA%90%E4%BF%A1%E4%BB%BB%E3%80%81%E6%8F%92%E4%BB%B6%E9%94%81%E5%AE%9A%E4%B8%8E%20Hook%20%E9%97%A8%E6%8E%A7%E7%B4%A2%E5%BC%95.md)

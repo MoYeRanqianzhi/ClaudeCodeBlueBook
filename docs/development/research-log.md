@@ -6,6 +6,11 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮参考索引/宿主消费收口动作: 已继续更新 `userbook/03-参考索引/02`、`userbook/03-参考索引/04`、`api/23`、`api/35` 与 `guides/102`，把 reference 页、宿主支持矩阵页、rollout 证据消费页和源码质量证据分级页继续统一到同一组 visible nouns 与前门公式。
+- 本轮 Prompt 侧线补索引动作: `userbook/03-参考索引/02` 与 `04` 现在更明确先问 `same-world test`，再看边界与分层，避免索引页重新退回功能目录或对象库存。
+- 本轮治理侧线补宿主动作: `api/23` 与 `api/35` 现在更明确先问 `decision window / current admission / product promise`，并把 `Context Usage` 固定成 rollout evidence 的制度窗口投影，而不是宿主账单页。
+- 本轮源码质量侧线补术语动作: `guides/102` 现在更明确把剩余正文里的 `authoritative surface candidate / adapter subset` visible noun 收回 `current-truth surface candidate / consumer subset`，让证据分级方法和 atlas/map/index/frontdoor 的 noun discipline 继续合流。
+- 本轮目录结构深化结论: 当根导读、地图页、矩阵页、API/安全/风控首页和 userbook 主线页都已完成公式换代后，下一层最值钱的工作是 reference 页和 host-consumption 页的 noun discipline；这些页一旦继续用旧 visible nouns，就会从“速查”和“接入”入口重新把 later maintainer 带回旧世界观。
 - 本轮主分支同步检查: 根仓库当前 `main=origin/main=ec7519566b3abf2659fb3d65899dc7d2bad983da`；`git fetch origin main` 成功，`git rev-list --left-right --count main...origin/main` 返回 `0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`。本轮因此只记录基线，不对根仓库做任何修改。
 - 本轮矩阵/API/安全/风控前推动作: 已继续更新 `bluebook/08`、`api/README`、`security/README`、`risk/README` 与 `userbook/04-10`，把 canonical formula 从地图页、功能页与使用页继续前推到能力矩阵、宿主真相消费前门、安全 signer/ledger 前门、用户侧风险结算面和状态预算运营页。
 - 本轮 Prompt 侧线前推动作: `08` 与 `api/README` 现在更明确要求能力矩阵和宿主 API 前门先问 `same-world test`，再谈“这组能力/API 到底算不算支持”。

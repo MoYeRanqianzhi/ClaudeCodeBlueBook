@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `userbook/03-参考索引/02 / 04`、`api/23`、`api/35` 与 `guides/102` 现已继续把参考页、宿主消费页和证据分级页统一到同一组公式和 visible nouns：
+  - `userbook/03-参考索引/02 / 04` 现在更明确先问 `same-world test / decision window / truth ladder + danger surface / failure semantics`，不再先把索引页写成功能目录或层级表。
+  - `api/23` 现在更明确把宿主支持矩阵前门写成 `same-world test / decision window / existence -> implementation visibility -> current admission -> product promise / truth ladder + consumer subset`。
+  - `api/35` 现在更明确把 rollout 证据消费页写成 `same-world test / decision window / worker_status + external_metadata + session_state_changed / rollback object boundary`。
+  - `guides/102` 现在更明确把正文剩余旧词收回 `current-truth surface candidate / consumer subset`，只把旧词保留在文件名兼容层。
+- 新的长期结论：
+  - 参考索引页和宿主消费页，是能力矩阵和使用指南之后下一批最容易让 doctrine 回流旧 visible nouns 的入口；只要这些页还在用旧词或只列目录，later maintainer 就会在“速查 / 集成 / rollout”这三类高频工作面重新学回旧世界观。
+  - `same-world test / decision window / truth ladder + consumer subset / rollback object boundary` 现在已经形成一组可同时覆盖 reference、host-consumption 和 rollout-evidence 的 canonical formula。后续最值钱的动作，不是再造新公式，而是继续扫剩余索引页、手册页和矩阵页，看哪些还没显式承认这组公式。
 - `bluebook/08 / api/README / security/README / risk/README / userbook/04-10` 现已继续把 canonical formulas 前推到能力矩阵、宿主真相消费前门、安全 signer/ledger 前门、用户侧风险结算面与状态预算运营页：
   - `08` 现在更明确把矩阵前门写成 `same-world test / decision window / existence -> implementation visibility -> current admission -> product promise`。
   - `api/README` 现在更明确把宿主 API 前门写成 `same-world test / decision window / truth ladder + failure semantics`。
