@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》《提示词魔力来自运行时而非咒语》，把 prompt 魔力继续从“更强文案”压成 `request object / role contract / cache boundary / handoff truth`
 - 继续更新《源码结构地图》《源码目录级能力地图：commands、tools、services、状态与宿主平面》，把源码地图继续从导览/图鉴压成判断协议，明确 `authority / subset / second truth / danger surface / reject path`
 - 继续更新《功能全景与API支持》《能力全集、公开度与成熟度矩阵》《能力平面、公开度与宿主支持矩阵》，把长清单与对象表继续降成补证层，正文前门固定为 `existence / implementation visibility / current admission / product promise` 四层矩阵，标签只保留为结果写法
 - 继续更新《公开能力与隐藏能力》《功能全景与API支持》《能力全集、公开度与成熟度矩阵》《能力平面、公开度与宿主支持矩阵》，把能力前门继续从“压缩标签”拉回 `existence / implementation visibility / current admission / product promise` 四层判断

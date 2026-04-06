@@ -22,6 +22,7 @@
 - 本轮能力标签解压动作: 已继续更新 `04`、`05`、`08` 与 `api/23`，把 `public runtime / gate / 产品受限` 这些压缩标签继续降成结果桶，要求读者先沿 `existence / implementation visibility / current admission / product promise` 四层去判断。
 - 本轮能力矩阵换骨动作: 已继续更新 `05`、`08` 与 `api/23`，把长清单、对象表与矩阵压缩判断继续降成补证层；正文前门只保留四层判断，标签只保留为结果写法。
 - 本轮地图协议化动作: 已继续更新 `01` 与 `api/30`，把源码地图继续从运行链路导览、目录级能力大全与体量图鉴压成 `authority / subset / second truth / danger surface / reject path` 的判断协议。
+- 本轮 Prompt 宪法收束动作: 已继续更新 `03`、`06`、`09` 与 `philosophy/14`，把 prompt 魔力继续从“system prompt 更强”压成 `request object / role contract / cache boundary / handoff truth` 四个正式对象。
 - 本轮旧框架降级动作: 已继续更新 `00`、`01`、`05` 与 `api/30`，把“五层拆解法 / 运行链路导览 / 目录级能力大全 / 快速统计”都明确降成辅助检索与热点定位材料，不再让它们先于三条高阶判断出场。
 - 本轮主线制度化动作: 已继续更新 `03`、`06`、`09`，把“设计哲学 / 第一性原理 / 三张控制面图”从高级观察继续收束为主线宪法、自我约束与读者固定判断顺序。
 - 本轮目录硬化动作: 已继续更新 `README`、`00-导读`、`00-总览`、`00-蓝皮书总览`、`navigation/03` 与 `09`，把 `09` 真正前置到一级阅读路径、去掉推荐链裸编号短写，并把兼容页进一步收回为跳转页。
@@ -86,6 +87,19 @@
 - `bluebook/01-源码结构地图.md`
 - `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md`
 - `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`
+
+### A106. Prompt 魔力真正成熟的标志，不是措辞更像专家，而是交接后仍只有一个主语
+
+- 只要 `display truth / protocol truth / handoff truth` 仍被压在同一个 `request object` 里，当前回合、继续回合与人类接手回合就不会各自重造一个平行世界。
+- 这也解释了为什么 coordinator prompt、AgentTool prompt、compact prompt、memory、summary 与 suggestion 不能被分开理解：它们共同在维护 `role contract`、`cache boundary` 与 `handoff truth`，而不是各自贡献一点“更聪明的话术”。
+- 所以蓝皮书继续写 prompt 设计哲学时，最应该拒绝的旧写法不是“少讲了几个 prompt 细节”，而是把这整条装配链重新写回 system prompt 评论。
+
+证据:
+
+- `bluebook/philosophy/14-提示词魔力来自运行时而非咒语.md`
+- `bluebook/03-设计哲学.md`
+- `bluebook/06-第一性原理与苏格拉底反思.md`
+- `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
 
 ### A100. 设计内涵继续深化后，最值钱的不再是更多高阶短句，而是把高阶短句压成可排查的对象
 

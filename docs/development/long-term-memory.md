@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `03 / 06 / 09 / philosophy/14` 已继续把 prompt 魔力从“文案更强”压成正式对象：
+  - `philosophy/14` 现已更明确把 prompt 合同写成 `request object / role contract / cache boundary / handoff truth`，减少“神 prompt 评论”口吻。
+  - `03 / 06 / 09` 现已更明确把 Prompt 线的最短判断统一压到这四个对象上，避免主线页与哲学页各自漂回抽象赞美。
+- 新的长期结论：
+  - prompt 哲学真正难抄走的，不是 system prompt 句子，而是 display truth、protocol truth、handoff truth 是否仍活在同一个 request object 上。
+  - 多 Agent prompt、compact prompt 与 memory/summary/handoff 并不是若干独立技巧，而是在共同维护角色合同、缓存边界与继续资格。
 - `01 / api/30` 已继续把源码地图从 atlas 压成判断协议：
   - `01` 现已更明确把主链路、能力发布、多 Agent 与远程边界都写成“谁在宣布真相、谁在裁切可见集、谁最容易写出第二真相”。
   - `api/30` 现已更明确把目录级平面写成 authority / subset / danger surface 地图，而不是命令大全、工具大全与服务大全。
