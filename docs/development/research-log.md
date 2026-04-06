@@ -6,6 +6,7 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮治理主键再压缩动作: 已继续更新 `architecture/83 / philosophy/85 / guides/100`，把治理线从“authority source 先收费”进一步压到“source 是治理主键，action/visibility/continuation 都是 source-tagged 消费结果”，并把 `policySettings` 与 resume/durable-assets 问题前置到深专题。
 - 本轮 anti-stale 再下钻动作: 已继续更新 `architecture/84 / guides/101 / guides/102`，把 anti-stale 从状态机与恢复层继续压到文件写入 freshness gate、PowerShell stale-cwd validator 降级、WebFetch per-host 重取真相、remote managed settings 危险增量确认与 MCP ghost capability 清理。
 - 本轮 Prompt lineage 再压缩动作: 已继续更新 `architecture/82 / philosophy/14 / guides/99`，把 Prompt 深线从单次 `request object` 进一步压到 `message lineage`，并把其内核明确写成 `parentUuid / message.id / tool_use_id` 三键协同。
 - 本轮深专题吸收动作: 已继续更新 `philosophy/14 / 85 / 87` 与 `guides/99-101`，把 Prompt 深线继续压到 `message lineage`，把治理深线继续压到 `authority source` 优先顺序，把源码质量深线继续压到 `event stream + state writeback` 的 present-truth 分工。

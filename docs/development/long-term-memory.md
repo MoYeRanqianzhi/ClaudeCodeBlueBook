@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `architecture/83 / philosophy/85 / guides/100` 已继续把治理线从“source-first pricing”压到“source 作为治理主键”：
+  - `83` 现已更明确把 `authority source` 写成实现主键，而不是 provenance 标签；action、visibility、externalization 与 continuation 都被写成 source-tagged rules 的后续消费。
+  - `85` 现已更明确把 `policySettings` 写成带 `first-source-wins + admin-trusted` 语义的 sovereign tier，而不是普通 merge layer。
+  - `100` 现已更明确把 `resume` 问题改写成“只恢复 durable assets，重新审查 transient authority”的 builder-facing 检查点。
+- 新的长期结论：
+  - 治理线继续压到底时，不该只说“authority source 先收费”，还应直接说“source 是治理主键；后面的 action/context/time 只是它派生出来的消费结果”。
+  - resume / continuation 真正成熟时，不会把旧 grant、旧 mode、旧可见集整包续租，而只恢复当前 authority chain 仍承认的 durable assets。
 - `architecture/82 / architecture/84 / guides/99 / guides/101 / guides/102 / philosophy/14` 已继续吸收并行 Agent 的硬证据：
   - `82 / 14 / 99` 现已更明确把 Prompt 线的一号对象从单次 `request object` 再压到可显示、可协议化、可交接的 `message lineage`，并把 lineage kernel 写成 `parentUuid / message.id / tool_use_id` 三键协同。
   - `84 / 101 / 102` 现已更明确把 anti-stale 从抽象原则压到具体机制：文件写入 freshness gate、PowerShell stale-cwd validator 降级、WebFetch per-host 重新取真、remote managed settings 危险增量确认、MCP ghost capability 清理。
