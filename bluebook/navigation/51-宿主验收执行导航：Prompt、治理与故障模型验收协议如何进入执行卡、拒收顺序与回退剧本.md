@@ -1,10 +1,10 @@
-# 宿主验收执行导航：message lineage、governance key 与 authority object 如何进入执行卡
+# 宿主验收执行导航：message lineage、governance key 与 current-truth writeback 如何进入执行卡
 
 宿主验收执行层真正要固定的，不是更细的表单，而是三条 shared execution chain：
 
 - Prompt: `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification -> reject / rollback`
 - Governance: `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> cleanup / rollback`
-- Structure: `authority object -> writeback path -> freshness gate -> stale worldview / ghost capability -> anti-zombie evidence -> reopen`
+- Structure: `current-truth surface -> current-truth writeback -> freshness gate -> stale worldview / ghost capability -> anti-zombie evidence -> reopen boundary`
 
 ## 1. Prompt 宿主验收执行线
 
@@ -47,8 +47,8 @@
 
 优先执行这些顺序：
 
-1. 先验 `authority object`
-2. 再验 `writeback path`
+1. 先验 `current-truth surface`
+2. 再验 `current-truth writeback`
 3. 再验 `freshness gate`
 4. 再验 stale worldview / ghost capability
 5. 最后验 `anti-zombie evidence / reopen boundary`
