@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 56 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 57 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -75,6 +75,7 @@
 54. [54-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的强请求清理就绪治理边界](54-pluginReconnectKey%E3%80%81MCPServerConnection%E4%B8%8EReadMcpResourceTool%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%B0%B1%E7%BB%AA%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 55. [55-useManageMCPConnections、toolExecution与print的强请求清理连续性治理边界](55-useManageMCPConnections%E3%80%81toolExecution%E4%B8%8Eprint%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 56. [56-handleRemoteAuthFailure、reconnectMcpServerImpl与McpAuthTool的强请求清理恢复治理边界](56-handleRemoteAuthFailure%E3%80%81reconnectMcpServerImpl%E4%B8%8EMcpAuthTool%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E6%81%A2%E5%A4%8D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+57. [57-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的强请求清理重新并入治理边界](57-onConnectionAttempt%E3%80%81dynamicMcpState%E4%B8%8EreregisterChannelHandlerAfterReconnect%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E6%96%B0%E5%B9%B6%E5%85%A5%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
