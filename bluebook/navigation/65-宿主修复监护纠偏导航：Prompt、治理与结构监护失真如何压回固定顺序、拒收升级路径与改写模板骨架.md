@@ -1,0 +1,108 @@
+# 宿主修复监护纠偏导航：Prompt、治理与结构监护失真如何压回固定顺序、拒收升级路径与改写模板骨架
+
+这一篇不再回答“宿主修复监护执行最常怎样失真”，而是回答：
+
+- 当 watch execution 已经被证明会重新退回假观察、假冻结与假重开之后，团队到底该怎样把这些失真重新压回固定纠偏顺序、拒收升级路径与改写模板骨架，才能不让更制度化的售后叙事继续接管监护流程。
+
+它主要回答五个问题：
+
+1. 为什么宿主修复监护失真反例层之后，蓝皮书仍需要单独讨论“宿主修复监护纠偏层”。
+2. 为什么 Prompt 线如果不继续把假观察、假冻结与假 reopen 压回同一条 `message lineage`、projection consumer 与 `continuation object`，就会重新把 Prompt 魔力退回 closeout note、handoff 故事与观察建议。
+3. 为什么治理线如果不继续把假观察、假隔离与免费重开压回 `governance key`、`externalized truth chain` 与 continuation pricing，就会重新把安全设计与省 token 设计拆成 mode 面板、usage dashboard 与保守建议三套投影。
+4. 为什么结构线如果不继续把假稳定、假冻结与假重开压回 `event-stream-vs-state-writeback`、`freshness gate` 与 `stale worldview / ghost capability`，就会重新把源码先进性退回 pointer、监控转绿与临时说明。
+5. 怎样用第一性原理与苏格拉底式追问避免把这层写成“把 watch card 流程再做细一点”。
+
+## 1. Prompt 宿主修复监护纠偏线
+
+适合在这些问题下阅读：
+
+- 怎样把 Prompt watch execution 从假观察、假冻结与假 reopen 重新压回同一条 `message lineage` 与 `continuation object`。
+- 哪些现象一旦出现就必须直接 hard reject，而不是继续观察。
+
+稳定阅读顺序：
+
+1. `../guides/69`
+2. `../casebooks/40`
+3. `../playbooks/44`
+4. `../api/63`
+
+这条线的核心不是：
+
+- 再讲一次 Prompt 宿主修复监护执行怎么跑
+
+而是：
+
+- 把 Prompt watch distortion 重新压回固定纠偏顺序、拒收升级路径与模板骨架
+
+## 2. 治理宿主修复监护纠偏线
+
+适合在这些问题下阅读：
+
+- 怎样把治理 watch execution 从假观察、假隔离与免费重开重新压回同一个 `governance key` 与 `externalized truth chain`。
+- 哪些现象一旦出现就说明 window、continuation pricing 与 cleanup 已重新失配，必须直接升级拒收。
+
+稳定阅读顺序：
+
+1. `../guides/70`
+2. `../casebooks/41`
+3. `../playbooks/45`
+4. `../api/64`
+
+这条线的核心不是：
+
+- 再讲一次治理宿主修复监护执行怎么跑
+
+而是：
+
+- 把治理 watch distortion 重新压回固定纠偏顺序、拒收升级路径与模板骨架
+
+## 3. 结构宿主修复监护纠偏线
+
+适合在这些问题下阅读：
+
+- 怎样把结构 watch execution 从假稳定、假冻结与假重开重新压回同一个结构真相面。
+- 哪些现象一旦出现就说明 `event stream`、`state writeback`、`freshness gate` 与 `stale worldview / ghost capability` 已重新退回假连续性，必须直接升级拒收。
+
+稳定阅读顺序：
+
+1. `../guides/71`
+2. `../casebooks/42`
+3. `../playbooks/46`
+4. `../api/65`
+
+这条线的核心不是：
+
+- 再讲一次结构宿主修复监护执行怎么跑
+
+而是：
+
+- 把结构 watch distortion 重新压回固定纠偏顺序、拒收升级路径与模板骨架
+
+## 4. 为什么这层更适合落在 guides
+
+因为这一层最关键的问题已经不是：
+
+- 哪些坏样例在说谎
+- 哪些监护卡与 reopen drill 已经存在
+- 哪些字段还可以继续补
+
+而是：
+
+1. 纠偏时先冻结哪个假观察信号。
+2. 再救回哪个正式对象。
+3. 什么时候应直接 hard reject，而不是继续试错。
+4. handoff freeze、quarantine order 与 reopen ticket 该怎样重写，才能不再生产第二真相。
+
+这些都更接近：
+
+- correction guide、builder-facing 手册与制度化改写顺序
+
+## 5. 第一性原理与苏格拉底式自检
+
+在你准备宣布“宿主修复监护失真已经纠偏完成”前，先问自己：
+
+1. 我救回的是单一真相，还是一套更严格的 watch 流程。
+2. 我现在拒收的是对象边界漂移，还是只是在拒收观感不好。
+3. 我现在回退的是正式对象边界，还是回到更熟悉的备注、mode 或 pointer。
+4. 我现在重开的是同一真相，还是只是系统又恢复响应。
+5. 当前纠偏保护的是长期延续能力本身，还是只是在重写一份更制度化的售后叙事。
