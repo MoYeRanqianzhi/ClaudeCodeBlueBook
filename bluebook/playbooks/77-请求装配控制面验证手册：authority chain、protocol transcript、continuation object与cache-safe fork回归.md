@@ -1,6 +1,6 @@
 # 请求装配控制面验证手册：message lineage、projection consumer、continuation object与cache-safe fork回归
 
-这一章不再解释 Prompt 魔力为什么成立，而是把 `architecture/82`、`philosophy/84` 与 `guides/99` 继续压成一张长期运行里的验证手册。
+这一章不再解释 Prompt 魔力为什么成立，而是把 `architecture/82`、`philosophy/81` 与 `guides/30` 继续压成一张长期运行里的验证手册。
 
 它主要回答五个问题：
 
@@ -17,6 +17,8 @@
 - `claude-code-source-code/src/utils/api.ts:321-405`
 - `claude-code-source-code/src/utils/messages.ts:1989-2148`
 - `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1025-1034`
+- `claude-code-source-code/src/utils/sessionStorage.ts:2069-2128`
 - `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
 - `claude-code-source-code/src/query/stopHooks.ts:84-214`
 - `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
@@ -29,16 +31,16 @@
 
 而是：
 
-- message lineage、projection consumer、section、history、forgetting 与 continue 仍围绕同一个请求对象成立
+- `message lineage`、projection consumer、section、history、forgetting 与 `continuation object` 仍围绕同一个请求对象成立
 
 所以这层验证最先要看的不是文案，而是：
 
-1. message lineage continuity
-2. projection consumer continuity
-3. section registry continuity
-4. protocol transcript continuity
-5. continuation object continuity
-6. cache-safe fork continuity
+1. `lineage kernel continuity`
+2. `projection consumer continuity`
+3. `section registry continuity`
+4. `protocol transcript continuity`
+5. `continuation object continuity`
+6. `cache-safe fork continuity`
 
 ## 2. 回归症状
 
@@ -48,17 +50,17 @@
 2. display transcript 被直接当成模型真相。
 3. compact 之后只剩摘要，没有继续对象。
 4. side loop、worker、suggestion 各自重建“差不多的世界”。
-5. display truth / protocol truth / handoff truth 不再围绕同一条 lineage。
+5. display truth / protocol truth / SDK-control truth / handoff truth 不再围绕同一条 lineage。
 6. cache break 只能被说成“模型突然变笨”，无法归因到 section、boundary 或 history。
 
 ## 3. 每轮检查点
 
 每次变更后，至少逐项检查：
 
-1. `message lineage continuity`
-   - 当前请求对象、projection consumer 与 continuation qualification 是否仍挂在同一条 lineage 上。
+1. `lineage kernel continuity`
+   - `parentUuid / logicalParentUuid`、`message.id`、`tool_use_id / sourceToolAssistantUUID` 是否仍挂在同一条 lineage 上。
 2. `projection consumer continuity`
-   - display / protocol / handoff 是否仍只是同一条 lineage 的不同消费者。
+   - display / protocol / SDK-control / handoff 是否仍只是同一条 lineage 的不同消费者。
 3. `section registry continuity`
    - constitutional section、stable prefix 与动态边界是否仍清楚。
 4. `protocol transcript continuity`
@@ -72,22 +74,22 @@
 
 出现下面情况时，应直接拒收：
 
-1. `message_lineage_ref_missing`
+1. `lineage_kernel_shadowed`
 2. `projection_consumer_split_detected`
 3. `section_registry_drifted`
 4. `dynamic_boundary_leaked`
 5. `protocol_transcript_conflated_with_display`
 6. `tool_pairing_unattested`
-7. `continuation_object_missing`
+7. `continuation_story_only`
 8. `parallel_world_fork_detected`
-9. `cache_break_unpriced`
+9. `cache_break_unexplainable`
 
 ## 5. 复盘记录最少字段
 
 每次 drift 至少记录：
 
-1. `request_object_id`
-2. `message_lineage_ref`
+1. `message_lineage_ref`
+2. `lineage_kernel_integrity`
 3. `projection_consumer_alignment`
 4. `section_registry_generation`
 5. `protocol_transcript_health`
@@ -101,10 +103,10 @@
 
 更稳的防再发顺序是：
 
-1. 先补 message lineage 与 projection consumer 的单一入口。
+1. 先补 lineage kernel 与 projection consumer 的单一入口。
 2. 先补 section / boundary 的法律地位。
 3. 先补 protocol transcript 与 tool pairing 拒收。
-4. 先补 continuation object 的 identity 与 qualification 保全。
+4. 先补 continuation object 的 identity 与 `continuation qualification` 保全。
 5. 最后才补文案润色或摘要说明。
 
 ## 7. 苏格拉底式检查清单
@@ -113,9 +115,9 @@
 
 1. 当前世界到底由哪条 `message lineage` 在承载。
 2. 模型此刻消费的是哪条 protocol transcript，哪个 consumer 只配看投影。
-3. compact 之后我保住的是 continuation object 与继续资格，还是叙事。
+3. compact 之后我保住的是 continuation object 与 `continuation qualification`，还是叙事。
 4. 旁路循环是在复用 stable prefix，还是在制造第二世界。
-5. 这次 drift 我能否点名是 lineage、consumer、section、history、forgetting 还是 continue 先失守。
+5. 这次 drift 我能否点名是 lineage、consumer、section、history、forgetting 还是 qualification 先失守。
 
 ## 8. 一句话总结
 

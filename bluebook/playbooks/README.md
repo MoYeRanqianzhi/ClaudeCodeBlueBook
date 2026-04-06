@@ -22,7 +22,7 @@
 - [01-Prompt修宪回归手册：section-drift、boundary-drift与lawful-forgetting事故复盘](<01-Prompt修宪回归手册：section-drift、boundary-drift与lawful-forgetting事故复盘.md>)
 - [04-演练记录模板：前提、触发器、观测、判定、修复与防再发](04-演练记录模板：前提、触发器、观测、判定、修复与防再发.md)
 - [12-统一Rollout ABI模板：对象、Diff、阶段、观测与回退记录](<12-统一Rollout ABI模板：对象、Diff、阶段、观测与回退记录.md>)
-- [29-Prompt宿主接入审读手册：输入面、section breakdown、cache break可解释性与continue qualification排查](<29-Prompt宿主接入审读手册：输入面、section breakdown、cache break可解释性与continue qualification排查.md>)
+- [29-Prompt宿主接入审读手册：message lineage、projection consumer、protocol transcript与continuation qualification排查](<29-Prompt宿主接入审读手册：输入面、section breakdown、cache break可解释性与continue qualification排查.md>)
 - [30-治理宿主接入审读手册：authority source、decision window、pending action与rollback object排查](30-治理宿主接入审读手册：authority source、decision window、pending action与rollback object排查.md)
 - [31-故障模型宿主接入审读手册：authority state、recovery boundary与anti-zombie结果面排查](31-故障模型宿主接入审读手册：authority state、recovery boundary与anti-zombie结果面排查.md)
 - [35-Prompt宿主验收执行手册：message lineage、projection consumer、continuation qualification验收卡、拒收顺序与回退剧本](35-Prompt宿主验收执行手册：compiled request truth验收卡、拒收顺序与回退剧本.md)
@@ -41,7 +41,7 @@
 - 需要失败样本：回到 [../casebooks/README.md](../casebooks/README.md)
 - 需要跨阶段导航：回到 [../navigation/README.md](../navigation/README.md)
 - 想沿三条母线进入执行链：
-- Prompt：`29 -> 35 -> 65 -> 77`
+- Prompt：`14 -> 29 -> 35 -> 77`
 - 治理：`30 -> 36 -> 66 -> 78`
 - 结构：`31 -> 37 -> 67 -> 79`
 - 想沿后段修复链继续下钻：
@@ -52,7 +52,7 @@
 - 结构：`67 -> 70 -> 73 -> 76`
   对象主线：`event-stream-vs-state-writeback -> freshness gate -> per-host authority width -> stale worldview / ghost capability`
 - 想直接做当前长期验证，而不是先做宿主接入排查：默认从 `77-79` 起步
-- 想把高阶审读模板落成长期回归：从 `77-79`
+- 想把高阶审读模板落成长期回归：Prompt 默认从 `77` 起步，再按需要回 `35`
 
 ## 维护约定
 

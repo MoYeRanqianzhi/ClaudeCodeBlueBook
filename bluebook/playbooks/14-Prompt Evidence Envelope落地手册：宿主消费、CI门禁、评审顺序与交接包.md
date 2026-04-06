@@ -1,4 +1,4 @@
-# Prompt Evidence Envelope落地手册：宿主消费、CI门禁、评审顺序与交接包
+# Prompt Evidence Envelope落地手册：message lineage、protocol transcript、lawful forgetting与handoff包
 
 这一章不再解释 Prompt evidence envelope 应该长什么样，而是把它压成宿主、CI、评审与交接都能直接执行的一套落地手册。
 
@@ -7,7 +7,7 @@
 1. Prompt 线真正的 host implementation playbook 到底该检查什么。
 2. 宿主、CI、评审与交接分别必须消费哪些信号，哪些属于硬门禁，哪些属于软检查点。
 3. 怎样避免 Prompt 再次退回成“原文 prompt + token 指标 + 作者总结”的拼贴。
-4. 怎样把 compiled request truth、stable bytes、lawful forgetting 与 handoff state 接成同一流程。
+4. 怎样把 `message lineage`、`protocol transcript`、`lawful forgetting boundary` 与 `continuation object` 接成同一流程。
 5. 怎样用苏格拉底式追问避免把这章写成纯 checklist。
 
 ## 0. 改写前状态
@@ -28,11 +28,11 @@
 
 而是：
 
-1. 宿主消费当前 Prompt 对象与 handoff state。
-2. CI 消费 compiled request truth 与 stable bytes 门禁。
-3. 评审先看 authority / assembly / diff，再看解释。
-4. 交接先看 lawful forgetting ABI 与 next-step guard，再看历史。
-5. 四类角色围绕同一 Prompt envelope 骨架判断。
+1. 宿主消费同一条 `message lineage` 的 host-facing projection。
+2. CI 消费 `protocol transcript`、stable prefix 与 cache break explainability。
+3. 评审先看 lineage kernel、projection consumer 与 boundary，再看解释。
+4. 交接先看 `lawful forgetting boundary` 与 `continuation object`，再看历史。
+5. 四类角色围绕同一套 Prompt envelope 骨架判断。
 
 ## 2. 最小落地 diff
 
@@ -56,16 +56,16 @@ CI:
 
 ```text
 宿主:
-- 展示 current object / pending action / task summary / current mode
+- 展示 message lineage / pending action / current work / next-step guard
 
 CI:
-- 检查 compiled request diff / stable bytes / cache-break summary
+- 检查 protocol transcript / stable prefix boundary / cache-break reason
 
 评审:
-- 先看 authority source / assembly path / stable-dynamic boundary
+- 先看 lineage kernel / projection consumer / dynamic boundary
 
 交接:
-- 先看 lawful forgetting ABI / current object / next-step guard
+- 先看 lawful forgetting boundary / continuation object / rollback boundary
 ```
 
 ### 这段 diff 的意义
@@ -84,11 +84,12 @@ CI:
 
 宿主至少必须消费：
 
-1. 当前 Prompt 对象。
-2. 当前 `pending_action`。
-3. 当前 `task_summary`。
-4. 当前 `permission_mode` / `model`。
-5. handoff 需要的 next-step guard。
+1. `message_lineage_ref`
+2. 当前 `pending_action`
+3. `current_work`
+4. `next_step_guard`
+5. `continuation_qualification`
+6. `rollback_boundary`
 
 硬要求：
 
@@ -98,95 +99,101 @@ CI:
 
 CI 至少必须检查：
 
-1. compiled request diff 是否越界。
-2. stable bytes 是否发生不可解释漂移。
-3. cache-break summary 是否能归因。
-4. assembly path 是否保持单一主路径。
-5. lawful forgetting ABI 是否仍被保留。
+1. `protocol_transcript_health`
+2. `stable_prefix_boundary`
+3. `cache_break_reason`
+4. `tool_pairing_health`
+5. `lawful_forgetting_boundary`
 
 硬门禁：
 
-- compiled request truth 缺失
-- stable bytes 无法归因
-- lawful forgetting ABI 关键位点缺失
+1. `message_lineage_ref_missing`
+2. `protocol_transcript_conflated_with_display`
+3. `stable_prefix_boundary_missing`
+4. `cache_break_unexplainable`
+5. `lawful_forgetting_boundary_missing`
 
 ### 3.3 评审最小检查点
 
 评审至少必须先看：
 
-1. `authority source`
-2. `assembly path`
-3. `stable_prefix_surface`
-4. `dynamic_boundary_surface`
-5. `lawful_forgetting_abi`
+1. `lineage_kernel_integrity`
+2. `projection_consumer_alignment`
+3. `section_registry_snapshot`
+4. `dynamic_boundary`
+5. `lawful_forgetting_boundary`
 
 软检查点：
 
 - 总结是否准确解释这些字段
-- 原文 prompt 改动是否与 compiled diff 一致
+- 原文 prompt 改动是否与 `protocol transcript` 漂移一致
 
 禁止事项：
 
-- 只读作者总结就做 Prompt 结论
+- 只读作者总结就做 Prompt 结论。
 
 ### 3.4 交接最小检查点
 
 交接至少必须交付：
 
-1. current object
-2. current mode
-3. pending action
-4. task summary
-5. next-step guard
-6. lawful forgetting 之后仍保留的最小 ABI
+1. `current_work`
+2. `pending_action`
+3. `next_step_guard`
+4. `required_assets`
+5. `rollback_boundary`
+6. `continuation_qualification`
+7. `lawful_forgetting_boundary`
 
 硬要求：
 
-- 交接不能只给 transcript 链接
+- 交接不能只给 transcript 链接或 summary prose。
 
 ## 4. 统一检查顺序
 
 Prompt 线四类角色更稳的统一顺序是：
 
-1. 当前对象
-2. authority source
-3. assembly path
-4. compiled request diff
-5. stable bytes / cache-break summary
-6. lawful forgetting ABI
-7. handoff state
+1. `message lineage`
+2. `projection consumer`
+3. `protocol transcript`
+4. `stable prefix boundary`
+5. `cache break explainability`
+6. `lawful forgetting boundary`
+7. `continuation object`
 
 ## 5. Prompt 线硬门禁
 
 下面这些最适合写成硬门禁：
 
-1. `authority source` 缺失。
-2. `assembly path` 缺失。
-3. compiled request diff 缺失。
-4. stable bytes 漂移但无法解释。
-5. lawful forgetting ABI 关键字段缺失。
-6. handoff state 只剩 transcript，没有结构化 next-step guard。
+1. `lineage_kernel_shadowed`
+2. `projection_consumer_split_detected`
+3. `protocol_transcript_conflated_with_display`
+4. `tool_pairing_unattested`
+5. `cache_break_unexplainable`
+6. `continuation_story_only`
+7. `continuation_qualification_missing`
 
 ## 6. 回退与交接包
 
 当 Prompt 线需要回退时，至少保留：
 
-1. 上一版 compiled request summary。
-2. stable bytes ledger。
-3. cache-break summary。
-4. current object / pending action / next-step guard。
+1. `message_lineage_ref`
+2. `protocol_transcript_health`
+3. `stable_prefix_boundary`
+4. `cache_break_reason`
+5. `continuation_object_ref`
+6. `rollback_boundary`
 
 回退优先级：
 
-1. 先回退 assembly path / boundary。
-2. 再回退 section constitution。
+1. 先回退 lineage / consumer / boundary。
+2. 再回退 protocol transcript 与 tool pairing。
 3. 最后才考虑整份原文 prompt。
 
 ## 7. 苏格拉底式追问
 
 在你准备宣布 Prompt host implementation 已落地前，先问自己：
 
-1. 宿主、CI、评审与交接是不是都先围绕 compiled request truth 判断。
-2. 我保住的是 stable bytes 与 lawful forgetting，还是只保住了 prompt 原文。
+1. 宿主、CI、评审与交接是不是都先围绕同一条 `message lineage` 判断。
+2. 我保住的是 `protocol transcript` 与 `lawful forgetting boundary`，还是只保住了 prompt 原文。
 3. 任何一个角色现在还能不能只靠原文 prompt 就继续下结论。
 4. 如果今天交接，这套包能否在不读全文的前提下继续工作。

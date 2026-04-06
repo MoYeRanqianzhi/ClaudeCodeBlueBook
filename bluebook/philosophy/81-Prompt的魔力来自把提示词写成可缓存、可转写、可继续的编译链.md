@@ -1,10 +1,10 @@
-# Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链
+# Prompt的魔力来自把 message lineage 编译成可缓存、可转写、可继续的工作对象
 
 这一章回答五个问题：
 
 1. 为什么 Claude Code 的 Prompt 看起来有魔力，但答案并不在文案修辞。
 2. 为什么主权顺序、section registry、dynamic boundary 与 stable prefix 会决定 Prompt 的真实上限。
-3. 为什么 protocol rewrite、tool pairing 与可见 transcript 分层不是消息层细节，而是 Prompt 魔力的一部分。
+3. 为什么 `message lineage` 的三键内核与 projection consumer 分层不是消息层细节，而是 Prompt 魔力的一部分。
 4. 为什么 lawful forgetting、compact、continue 与 threshold liability 属于同一条 Prompt 编译链。
 5. 这对 agent runtime 设计者意味着什么。
 
@@ -18,6 +18,8 @@
 - `claude-code-source-code/src/utils/api.ts:321-405`
 - `claude-code-source-code/src/utils/messages.ts:1989-2148`
 - `claude-code-source-code/src/utils/messages.ts:5133-5460`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1025-1034`
+- `claude-code-source-code/src/utils/sessionStorage.ts:2069-2128`
 - `claude-code-source-code/src/services/compact/prompt.ts:61-143`
 - `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:247-430`
 - `claude-code-source-code/src/query.ts:1065-1340`
@@ -36,10 +38,11 @@ Prompt 真正的魔力，不是：
 
 1. 先把 system prompt 写成可分段、可缓存、可审计的 section registry。
 2. 先把主权顺序压成同一条 request truth，而不是让多份并列文本互相争主语。
-3. 先把 transcript 重写成合法协议对象，再让模型消费。
-4. 先把动态变化赶到 stable boundary 之后，保住共享前缀资产。
-5. 先规定删掉什么后系统还能继续，而不是一味保留更多历史。
-6. 先让 cache break、continue 资格与失稳原因都能被正式解释。
+3. 先把 `message lineage` 写成可恢复的三键内核，而不是顺手拼出的聊天历史。
+4. 先把 transcript 重写成合法协议对象，再让模型消费。
+5. 先把动态变化赶到 stable boundary 之后，保住共享前缀资产。
+6. 先规定删掉什么后系统还能继续，而不是一味保留更多历史。
+7. 先让 cache break、continue 资格与失稳原因都能被正式解释。
 
 从第一性原理看，Claude Code 的 Prompt 魔力真正像的是：
 
@@ -74,7 +77,28 @@ Claude Code 的 Prompt 有一个常被忽略的前提：
 
 - 谁能定义当前世界、谁只能提供补充上下文，这条秩序先被钉死
 
-## 3. 第二层：协议转写优于显示历史
+## 3. 第二层：lineage kernel 优于“历史还在”
+
+很多系统默认“只要历史没丢，继续就还能成立”。
+
+Claude Code 更接近的真相是：
+
+- 真正该被保住的不是一条更长的 transcript，而是 `message lineage` 的三键内核
+
+也就是：
+
+1. `parentUuid / logicalParentUuid`
+   - 接回当前历史骨架
+2. `message.id`
+   - 让 assistant 片段仍被认成同一条消息
+3. `tool_use_id / sourceToolAssistantUUID`
+   - 让 tool use / tool result 与 findings 回到同一个行动主语
+
+这意味着 Prompt 魔力不只是“记得说过什么”，而是：
+
+- 还知道现在这句话属于哪个世界、哪个动作、哪个继续主语
+
+## 4. 第三层：协议转写优于显示历史
 
 很多系统以为 Prompt 负责 instruction，messages 只是上下文容器。
 
@@ -97,7 +121,30 @@ Claude Code 更接近的真相是：
 
 - 世界进入模型前的协议纯度
 
-## 4. 第三层：可缓存前缀优于更长文案
+## 5. 第四层：projection consumer 分层优于“所有历史都一样”
+
+真正难的不是“有几份 transcript”，而是不同消费者是否仍在消费同一条 lineage。
+
+Claude Code 至少稳定区分了四类 projection consumer：
+
+1. display consumer
+   - 关心人类可读历史
+2. model API consumer
+   - 关心 `protocol transcript` 与合法消息 ABI
+3. SDK / control consumer
+   - 关心宿主协议、tool progress 与状态投影
+4. handoff / compact / resume consumer
+   - 关心 `continuation object` 是否仍可行动
+
+所以它真正保护的不是：
+
+- 让所有观察面看起来都差不多
+
+而是：
+
+- 让不同 consumer 的差异只停留在读法，不升级成真相分叉
+
+## 6. 第五层：可缓存前缀优于更长文案
 
 如果 Prompt 只是长文案，那么每一次变化都会重新把世界整体打散。
 
@@ -122,11 +169,7 @@ Claude Code 更成熟的地方在于，它先问：
 
 更进一步，section registry 也不是一份静态目录，而是会在 `/compact` 之后被重新整理、重置与续接的运行时对象。这意味着 Prompt Constitution 不是“永远附着在顶部的一段总纲”，而是有自己生命周期的正式制度资产。
 
-同理，`agent_listing_delta`、`mcp_instructions_delta`、`skill_discovery` 这类 attachment 故意被放在 stable prefix 之后，并在 compaction 后重注入，因为它们的法律地位本来就不是“进入长期正文”，而是：
-
-- 晚绑定临场修正
-
-## 5. 第四层：工具 ABI 与写作法同属 Prompt 法律
+## 7. 第六层：工具 ABI 与写作法同属 Prompt 法律
 
 Claude Code 的 Prompt 高密度，不只因为 instruction 多，还因为：
 
@@ -147,7 +190,7 @@ Claude Code 的 Prompt 高密度，不只因为 instruction 多，还因为：
 
 - 模型能发挥的空间本身已经被编排成高行动语义密度的受治理世界
 
-## 6. 第五层：合法遗忘优于无限记忆
+## 8. 第七层：合法遗忘优于无限记忆
 
 如果一个 Prompt 只能靠“尽量别忘”维持强度，它就永远只是短任务技巧。
 
@@ -171,7 +214,18 @@ Claude Code 更高级的地方在于，它同样认真规定：
 
 - `lawful forgetting boundary` 是否仍然成立
 
-## 7. 第六层：继续资格也是 Prompt 设计的一部分
+更准确地说，compact 之后系统至少还得保住一份最小 `continuation object`：
+
+1. `current work`
+2. `next-step guard`
+3. `required assets`
+4. `rollback boundary`
+5. `continue qualification`
+6. `threshold liability`
+
+如果 compact 之后只剩“更短的故事”，Prompt 就只剩叙事压缩，不再是合法继续。
+
+## 9. 第八层：继续资格也是 Prompt 设计的一部分
 
 很多系统把 continue 视为运行时补丁。
 
@@ -198,7 +252,7 @@ Claude Code 更接近的真相是：
 
 多 Agent 场景更能说明这一点。真正强的地方不是“会给 worker 写指令”，而是 coordinator 必须先理解 findings，再生成自包含、不可把理解外包给 worker 的 prompt。这里的 Prompt 魔力首先是一种组织设计，而不是更会写 worker 文案。
 
-## 8. 第七层：可解释失稳优于神秘成功
+## 10. 第九层：可解释失稳优于神秘成功
 
 如果一个 Prompt 只能成功、不能解释自己为什么成功，它仍然只是幸运。
 
@@ -214,29 +268,29 @@ Claude Code 值得学的地方正在于：
 
 - 它失灵时团队能正式解释为什么
 
-## 9. 苏格拉底式追问
+## 11. 苏格拉底式追问
 
-### 9.1 为什么 Prompt 魔力不是文案技巧
+### 11.1 为什么 Prompt 魔力不是文案技巧
 
 因为真正稀缺的不是好句子，而是：
 
 - 世界进入模型前的编译秩序
 
-### 9.2 为什么合法遗忘也属于 Prompt 设计
+### 11.2 为什么 `message lineage` 不是单纯聊天历史
+
+因为真正该被保住的不是顺序文本，而是三键内核是否仍能接住当前世界。
+
+### 11.3 为什么 projection consumer 分层也属于 Prompt 设计
+
+因为如果 display、protocol、SDK/control 与 handoff 继续被混写，再强的 prompt 也会在消费者边界处重新说谎。
+
+### 11.4 为什么合法遗忘也属于 Prompt 设计
 
 因为真正强的 Prompt 不只规定现在怎么看世界，还规定：
 
 - 删掉什么以后系统仍知道怎样继续
 
-### 9.3 为什么协议转写不是另一个系统的问题
-
-因为如果 transcript ABI 不合法，再强的 prompt 也只是在污染历史上工作。
-
-### 9.4 为什么“developer 风格层”不是独立角色反而更稳
-
-因为当风格、边界、流程与工具法律被吸收到 system 主链里时，模型面对的不是多主语文本，而是一条单一主权链。
-
-### 9.5 为什么 Prompt 魔力最终仍是工程能力
+### 11.5 为什么 Prompt 魔力最终仍是工程能力
 
 因为它保护的不是“这一轮说得好”，而是：
 
@@ -245,7 +299,7 @@ Claude Code 值得学的地方正在于：
 - 可继续
 - 可解释失稳
 
-## 10. 对 Agent 设计者的启发
+## 12. 对 Agent 设计者的启发
 
 如果想学 Claude Code，最该抄走的不是：
 
@@ -254,7 +308,8 @@ Claude Code 值得学的地方正在于：
 而是：
 
 1. 把 Prompt 写成 section registry，而不是长文本。
-2. 把动态变化赶到 stable boundary 后面。
-3. 让模型永远消费协议真相，而不是显示层历史。
-4. 把 lawful forgetting 设计成 continuation object 重建。
-5. 让 prompt 失稳原因可以被正式解释，而不是继续神秘化。
+2. 把 `message lineage` 写成可恢复的三键内核，而不是一条更长的聊天链。
+3. 把不同 projection consumer 的职责分开，而不是让 UI 历史兼任模型历史。
+4. 把动态变化赶到 stable boundary 后面。
+5. 把 lawful forgetting 设计成 continuation object 重建。
+6. 让 prompt 失稳原因可以被正式解释，而不是继续神秘化。

@@ -8,6 +8,105 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/55 / playbooks/36 / playbooks/78 / navigation/49` 现已把治理验收链与迁移纠偏统一到当前对象链：
+  - `55` 现已把 `authority source / permission ledger / continuation gate / rollback object` 明确降为 `governance key` source slot、`typed ask` 证据面、`continuation pricing` verdict 与 cleanup carrier。
+  - `36` 现已把治理宿主验收执行固定到 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
+  - `78` 现已把长期验证从 `最小可见面 / continuation gate` 的旧写法收回到 `decision window / continuation pricing / durable-transient cleanup`。
+  - `49` 现已把宿主迁移纠偏导航的三条母线统一改成 `message lineage / governance key / authority object` 对象链入口。
+- 新的长期结论：
+  - 治理验收真正成熟时，不应再把 `permission ledger` 与 `continuation gate` 写成一级 contract；前者只该作为 `typed ask` 的事务证据面，后者只该作为 `continuation pricing` 的 verdict 字段。
+  - 治理迁移纠偏真正成熟时，不应再把 mode 面板、权限账本截图与文件回退当作主修复对象；真正需要被先救回的是 `governance key`、`externalized truth chain`、`typed ask`、`decision window` 与 cleanup 语义。
+  - 并行 Agent 已收敛出 Prompt 下一批最值钱的边界：`guides/81 + guides/90` 仍在反向输送 `compiled request truth / request object / continue qualification` 这些旧执行主语，下一步应优先处理。
+- `playbooks/37 / navigation/50 / 51` 现已把结构宿主验收协议与执行第一跳统一到当前对象链：
+  - `37` 现已把 `resume order` 明确降为 re-entry proof，把结构验收执行固定到 `authority object -> writeback path -> freshness gate -> stale worldview / ghost capability -> anti-zombie evidence -> reopen boundary`。
+  - `50 / 51` 现已把宿主验收协议线与执行线统一改成对象链入口，不再让 `authority state / authority source / compiled request truth` 这些旧 contract 名词继续占据导航主轴。
+- 新的长期结论：
+  - 结构宿主验收真正成熟时，不应再把 `resume order`、`authority state` 与 `recovery boundary` 并列成一级 contract；更稳的写法是先点名 `authority object` 与正式 `writeback path`，再让 `freshness gate`、anti-zombie 与 reopen boundary 决定拒收和回退。
+  - 宿主验收导航真正成熟时，不应再用“协议层 / 执行层”这类栏目词承载主语；读者首先应该看到的是三条对象链各自的 contract root、reject verdict 与 rollback / reopen 目标。
+- `playbooks/31 / navigation/45` 现已把结构宿主接入第一跳统一到当前对象链：
+  - `31` 现已把 `recovery boundary` 从一级主语降回 recovery asset non-sovereignty，接入卡固定为 `authority object -> per-host authority width -> authoritative path -> freshness gate -> stale worldview / ghost capability -> anti-zombie evidence`。
+  - `45` 现已把三条宿主接入导航母线统一改成对象链入口，不再让“支持面复盘流程”压过对象主语。
+- 新的长期结论：
+  - 结构宿主接入真正成熟时，不应再把 `bridgePointer`、append-chain、resume file 或恢复成功率写成主对象；它们只能帮助回到当前真相，不能宣布当前真相。
+  - 结构线第一跳真正成熟时，later maintainer 必须能先点名 `authority object`、合法 `per-host authority width`、正式 `authoritative path` 与 `freshness gate`，再谈恢复演练与 anti-zombie 结果；顺序反过来就会重新跌回假信号。
+- `architecture/79 / navigation/39 / 42 / guides/52 / api/52` 现已把 taxonomy-core 收到当前对象链：
+  - `79` 现已把 `compiled request truth` 降为旧总称，Prompt 根对象固定为 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`。
+  - `39 / 42` 现已把 Prompt / 治理 / 结构三条导航母线统一改写为 root chain 入口，不再让 `compiled request truth / authority source / recovery asset` 这些旧根词继续占据导航主轴。
+  - `52 / api/52` 现已把治理根对象固定为 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`，并把 `authority source / Context Usage / continuation gate / rollback object` 降为 source slot、window evidence、pricing verdict 与 cleanup carrier。
+- 新的长期结论：
+  - Prompt taxonomy 真正成熟时，`compiled request truth` 只能保留为 legacy alias 或证据标签，不能再被写成一级主语；真正需要被 later maintainer 先点名的是 `message lineage`、consumer 分层、`protocol transcript` 与 `continuation object`。
+  - 治理 taxonomy 真正成熟时，`authority source`、`pending action`、`Context Usage`、`continuation gate` 与 `rollback object` 都不该各自单飞；它们必须分别回钉到 `governance key`、`externalized truth chain`、`decision window`、`continuation pricing` 与 cleanup 语义。
+  - taxonomy 页真正去记忆化时，正文应该从对象链、reject path 与 evidence surface 开始，而不是从“这一章不再回答什么”或施工式导语开始；过程、批次与迁移建议继续留在 `docs/`。
+  - 当前结构线最值钱的下一批不是继续补长期验证，而是先把宿主接入与验收第一跳的旧根词清掉：优先 `playbooks/31 + navigation/45`，然后 `playbooks/37 + navigation/50`。
+- `playbooks/29 / 30 / 31` 现已把三条宿主接入审读手册统一到当前对象链：
+  - `29` 现已把 Prompt 宿主接入从 `compiled request truth / section breakdown / continue qualification` 收紧到 `message lineage / projection consumer / continuation qualification`。
+  - `30` 现已把治理宿主接入从 `authority source / pending action / continuation gate` 收紧到 `governance key / externalized truth chain / typed ask / continuation pricing`。
+  - `31` 现已把结构宿主接入从 `authority state / recovery boundary / anti-zombie result` 收紧到 `authority object / per-host authority width / event-stream-vs-state-writeback / anti-zombie`。
+- 新的长期结论：
+  - 目录路由真正成熟时，不应只让 README 换代；与 README 对应的第一层执行手册也必须共用同一套对象名，否则读者会在“入口正确、正文过时”之间反复来回跳。
+  - 宿主接入手册真正成熟时，不再把“能显示 mode / token / spinner / summary”误写成“接入已完成”；更稳的写法是三条母线各自都先点名宿主正在消费哪个正式对象。
+- `playbooks/14 / 35 / 77` 与 `navigation/45` 现已把 Prompt 执行链统一到当前对象链：
+  - `14` 现已把 Prompt Evidence Envelope 从 `compiled request truth / stable bytes / handoff state` 的旧前门词，压到 `message lineage / protocol transcript / lawful forgetting boundary / continuation object` 的角色化消费顺序。
+  - `35` 现已把 Prompt 宿主验收从“compiled request truth 验收卡”继续压到 `message lineage / projection consumer / protocol transcript / lawful forgetting boundary / continuation qualification`。
+  - `77` 现已把长期验证从“authority chain / protocol transcript / continuation object”继续压到 `lineage kernel / projection consumer / continuation qualification / cache-safe fork` 的验证口径。
+  - `45` 现已把宿主接入审读导航从 `compiled request truth / governance control plane object / authority state` 的旧支持面叙事，改成三条母线各自当前对象链。
+- `playbooks/README / guides/README` 现已把 Prompt 路由继续收口：
+  - Prompt 执行链默认入口现已前移到 `14 -> 29 -> 35 -> 77`。
+  - Prompt builder 审读入口现已写成 `30 -> 99`，不再只让读者在新旧模板之间自行跳转。
+- 新的长期结论：
+  - Prompt 目录结构真正成熟时，不应只在哲学页和架构页换代；Evidence Envelope、宿主验收、长期验证和宿主接入路由也必须共用同一套对象名，否则读者会在执行层重新跌回旧词。
+  - Prompt 验证真正成熟时，不应再把 `compiled request truth` 当成单一顶层对象反复出现；更稳的执行链写法是 `message lineage -> projection consumer -> protocol transcript -> lawful forgetting boundary -> continuation object -> continuation qualification`。
+  - README 真正成熟时，不只告诉读者“从哪个编号进”，还要把 Prompt 的 `why / review / acceptance / validation` 四层明确压成一条稳定路由。
+- `architecture/84 / philosophy/87 / guides/101` 现已把结构先进性继续压到更硬的验证对象：
+  - `84` 现已补出 `authority atlas`，把 `permission_mode`、`pending_action`、`worker_status` 与 `bridge pointer vs session head` 写成 authority object / sole writer / per-host width / forbidden substitute writer / freshness guard 的固定对照。
+  - `87` 现已把 `temporal honesty` 继续压成通道矩阵，明确 `writeEvent`、`writeInternalEvent`、`reportState/reportMetadata` 与 `flush before idle` 分别在保护什么真相。
+  - `101` 现已把 one writable present 审读卡升级成强制证据卡，要求 later 维护者能直接点名 authoritative writeback path、freshness gate、ghost capability eviction 与 fail-closed branch。
+- `casebooks/15 / 42` 现已把结构失真替身写得更硬：
+  - `15` 现已明确文件 diff、目录美观、恢复成功率与作者记忆分别在偷换哪一个正式对象。
+  - `42` 现已明确 pointer、监控平静感、telemetry 繁荣、作者说明与 reconnect 成功分别在偷换 authority、width、writeback、anti-zombie 证据与 reopen boundary。
+- 新的长期结论：
+  - 结构先进性真正成熟时，不应只说“有 authority object、freshness gate、ghost capability eviction”，还要能列出 `authority atlas`；否则 later 维护者仍会知道有主权，却不知道是谁在写、谁只能读。
+  - temporal honesty 真正成熟时，不能只说“event stream 与 state writeback 要分开”；还要能写出哪条通道负责 timeline、哪条负责 resume-only history、哪条负责 present truth、哪一步负责在 idle 前结清历史。
+  - one writable present 真正成熟时，不能只靠苏格拉底追问；还必须要求关键结构纪律能被回钉到具体源码路径，否则它仍会退回结构哲学而不是结构证据。
+- `architecture/83 / navigation/43` 现已把治理控制面继续压成单一对象链：
+  - `83` 现已明确 `governance key` 才是整张控制面的实现主键，`authority source` 只是最前面的 source slot。
+  - `43` 现已把治理支持面直接写成 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable/transient cleanup`，并明确宿主可写、宿主可读与 internal-only 的分层。
+- `guides/100 / playbooks/51` 现已把治理审读卡与稳态卡继续硬化：
+  - `100` 现已把 `governance_key_ref`、`externalized_truth_chain_ref`、`typed_ask_ref`、`decision_window_ref`、`continuation_pricing_ref`、`durable_assets_after` 与 `transient_authority_cleared` 写成强制字段。
+  - `51` 现已明确任一 `*_ref` 无法点名时，不是“信息不全”，而是应直接降为 `steady_state_blocked`。
+- `casebooks/23 / 35` 现已把治理失真继续压成同一条对象链被替身化后的多种症状：
+  - `mode` 只是 `governance key` 的替身。
+  - 审批历史只是 `typed ask + externalized truth chain` 的替身。
+  - `token` 条只是 `decision window` 的替身。
+  - 默认继续只是 `continuation pricing` 的替身。
+  - 文件 / compact 动作只是 `durable assets vs transient authority cleanup` 的替身。
+- 新的长期结论：
+  - 安全设计与省 token 设计真正成熟时，不应再被写成“同一组预算器 UI”或“两套目标偶然同向”；更稳的写法是它们共享同一个 `governance key`，并沿同一条 `externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable/transient cleanup` 继续外化。
+  - typed ask 真正成熟时，不应再被写成 modal 或审批事件；它必须继续被写成 typed transaction，因为只有这样，安全理由、winner source、duplicate suppression 与 stale ask teardown 才还属于同一个治理对象。
+  - 稳态治理真正成熟时，不应只看 steady verdict 是否存在，而要看 `governance_key_ref`、`externalized_truth_chain_ref`、`typed_ask_ref`、`decision_window_ref` 与 `continuation_pricing_ref` 能否被 later 团队逐一点名；否则所谓稳态只是投影稳态。
+- `architecture/82 / philosophy/81` 现已把 Prompt 魔力从“请求编译”继续压到更硬的对象层：
+  - `82` 现已显式写出 `message lineage` 的三键内核：`parentUuid / logicalParentUuid`、`message.id`、`tool_use_id / sourceToolAssistantUUID`。
+  - `82 / 81` 现已把 Prompt consumer 固定成 display、model API、SDK/control 与 handoff/compact/resume 四类正式读法，不再把 transcript 只写成 UI / 模型二分。
+  - `82 / 81` 现已把 `continuation object` 从抽象继续资格压成最小对象清单：`current work / next-step guard / required assets / rollback boundary / continuation qualification / threshold liability`。
+- `guides/30 / casebooks/73` 现已把 Prompt 自校与 Prompt 失真反证收紧到同一条对象链：
+  - `30` 现已先追问 lineage kernel 是否完整，再追问 consumer matrix、lawful forgetting 与 continuation qualification。
+  - `73` 现已把验证失真从“假 authority chain”进一步压成“假 lineage kernel / 假 protocol transcript / 假 continuation object”，减少把 Prompt drift 重新退回 prose 与 summary 表演。
+- `navigation/README / architecture/README` 现已把 Prompt 深读入口收成 `09 -> 81 -> 82 -> 30 -> 73 -> 77`；目录优化的重点不再是“再补一个入口”，而是让“为什么 / 架构 / 审读 / 反证 / 验证”这五层各有单一 owner。
+- 新的长期结论：
+  - Prompt 魔力真正成熟时，不应只被写成 `authority chain + protocol transcript + lawful forgetting` 这组三元说明；更稳的写法必须继续前推到 `message lineage` 三键内核，因为那才是 display、tool pairing、resume 与 handoff 共同吃的骨架。
+  - projection consumer 真正成熟时，不应继续停留在“display / protocol / handoff”三分法；宿主与控制面消费的 SDK/control projection 也必须被显式点名，否则 host truth 仍容易被漏回实现细节。
+  - `continuation object` 真正成熟时，不应只被说成“还能继续工作的对象”；必须继续列出 `current work / next-step guard / required assets / rollback boundary / continuation qualification / threshold liability`，否则 lawful forgetting 很容易重新退回“更短的故事”。
+  - Prompt 目录结构真正成熟时，不再让读者靠旧桥接词和编号感自己拼链；更稳的目录秩序是：高层判断回主线与哲学，结构解释回架构，失真反证回案例库，审读框架回 guides，长期验证回 playbooks。
+- `casebooks/13 / 46` 现已把 Prompt Evidence Envelope 与稳态执行从 `compiled request truth / steady calmness` 的旧入口词，继续压到 `message lineage / projection consumer / protocol transcript / stable prefix boundary / continuation object / continuation qualification`。
+- `casebooks/15 / 42` 现已把结构 Evidence Envelope 与监护执行从 `authoritative surface / 恢复成功率 / 监控平静感` 的旧入口词，继续压到 `authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
+- `casebooks/35 / navigation/43` 现已把治理修复演练与机制支持面从 `authority source / 编译请求真相 / authority state` 的旧入口词，继续压到 `governance key / externalized truth chain / decision window / continuation pricing / authority object / per-host authority width` 三条母线的现代表达。
+- Prompt 并行 Agent 已补出一个更硬的长期判断：Prompt 魔力最稳的源码解释不是“Prompt 写得强”，而是 `message lineage -> protocol transcript -> lawful forgetting -> continuation qualification -> cache-safe fork reuse` 这条编译链；其中 `message lineage` 更像 `parentUuid / logicalParentUuid + message.id + tool_use_id / sourceToolAssistantUUID` 的三键内核，而 `continuation object` 在源码里行为很强、命名很弱。
+- `casebooks/README` 现已为 `13 / 15 / 35 / 42 / 46` 补上对象链入口，并明确“编号段负责时间顺序，对象链负责阅读顺序”；案例库结构优化的成熟标准不再是 README 链接更多，而是入口能先暴露对象主语。
+- 新的长期结论：
+  - Prompt 魔力真正成熟时，不应再被写成“原文 prompt + cache 指标 + summary + transcript”的材料拼图，而应被写成同一条 `message lineage` 如何同时约束 projection consumer、`protocol transcript`、`stable prefix boundary` 与 `continuation object`。
+  - 安全设计与省 token 设计真正成熟时，不应再被拆成审批历史与成本面板，而应被写成同一个 `governance key -> externalized truth chain -> decision window -> continuation pricing` 对象链。
+  - 源码质量真正成熟时，不应再被写成目录整洁度、恢复成功率与作者把握，而应被写成 `authority object`、合法 `per-host authority width`、`event stream` 不得篡位 `state writeback`、`freshness gate` 先于 continuity、`stale worldview / ghost capability` 被正式驱逐。
+  - 目录结构真正成熟时，不再让 README 只按编号段做二次导航；更稳的入口是“先暴露对象链，再暴露编号段”，让 later 维护者先知道自己在守什么对象，再决定往后读哪几页。
 - `playbooks/51 / 55`、`casebooks/43` 与 `navigation/65 / 79` 已继续把“中段执行叙事”收回当前对象链：
   - `51` 现已把治理稳态执行从 `authority continuity / ledger dormancy / capability custody` 的旧中段词，压到 `governance key / externalized truth chain / continuation pricing / durable-vs-transient`。
   - `55` 现已把结构稳态纠偏从 `authority / resume / writeback / anti-zombie / archive` 压到 `authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。

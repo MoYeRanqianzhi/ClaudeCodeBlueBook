@@ -1,14 +1,20 @@
-# 如何把统一定价治理落成控制面实现：authority source、decision window、Context Usage与rollback object
+# 如何把统一定价治理落成控制面实现：governance key、externalized truth chain、typed ask 与 continuation pricing
 
-这一章不再解释安全与省 token 为什么同构，而是把 Claude Code 式统一定价治理压成一张可实现的控制面手册。
+统一定价治理真正收费的，不是按钮、弹窗或 token 条，而是模型可达世界的扩张。更稳的实现顺序是：
 
-它主要回答五个问题：
+1. `governance key`
+2. `externalized truth chain`
+3. `typed ask`
+4. `decision window`
+5. `continuation pricing`
+6. `rollback / durable-transient cleanup`
 
-1. 为什么真正成熟的治理系统不是几层审批，而是 authority source、decision window、Context Usage、continuation gate 与 rollback object 的同一判断链。
-2. 怎样把动作、能力、上下文与时间统一写成同一治理控制面。
-3. 为什么 host、SDK、session metadata 与 headless 路径必须围绕同一对象同步，而不能各自猜状态。
-4. 怎样用苏格拉底式追问避免把治理实现重新退回 modal、仪表盘与“再来一轮看看”。
-5. 怎样把 Claude Code 的统一定价方法迁移到自己的 Agent Runtime，而不误抄某条局部规则。
+其中：
+
+- `authority source` 是 `governance key` 的 source slot。
+- `Context Usage` 与 `pending action` 是 `decision window` 的证据面。
+- `continuation gate` 是 `continuation pricing` 的 verdict。
+- `rollback object` 是 cleanup / handoff 的 carrier。
 
 ## 0. 代表性源码锚点
 
@@ -20,172 +26,179 @@
 - `claude-code-source-code/src/utils/sessionState.ts:92-149`
 - `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
 
-这些锚点共同说明：
-
-- Claude Code 的治理控制面，并不是“权限 + token 条”的并列实现，而是对边界、窗口、继续资格与回退对象的统一编排。
-
-## 1. 第一性原理
+## 1. 第一性原理：先给扩张定价，再谈拦截与节流
 
 更成熟的治理实现，不是：
 
-- 先把东西都暴露给模型，再补审批和 stop 逻辑
+- 先把世界暴露给模型，再补几层审批与 stop 逻辑。
 
 而是：
 
-1. 先决定谁有权改边界。
-2. 先决定当前判断围绕哪一个 governance object 成立。
-3. 先决定动作、能力、上下文与时间各自怎样被定价。
-4. 先决定当前继续是否仍有决策增益。
-5. 先决定失败时回退到哪个对象。
+1. 先决定谁配改变边界。
+2. 先决定哪些当前真相必须被外化。
+3. 先决定 ask / allow / deny 围绕哪个正式对象交易。
+4. 先决定当前窗口里哪些席位和成本正在被占用。
+5. 先决定继续还有没有决策增益。
+6. 先决定失败后哪些资产保留，哪些权威必须清除。
 
-所以更准确的说法不是：
+所以更准确的说法不是“安全系统 + 省 token 系统”，而是“围绕同一个 `governance key` 的扩张定价控制面”。
 
-- 安全系统 + 省 token 系统
+## 2. 第一步：先固定 `governance key`
 
-而是：
+Claude Code 真正先固定的不是 modal，而是 mode、settings、policy、host sync 与 session metadata 怎样汇合成同一个治理主键。
 
-- 治理控制面
+更稳的 builder 顺序是：
 
-## 2. 第一步：先固定 authority source
+1. 先区分 provenance 与真正生效的治理主键。
+2. 先给所有 mode / policy 变更定义唯一 choke point。
+3. 先决定宿主、SDK 与 headless 路径只消费哪些正式权威状态。
+4. 先明确哪些 source 只能自我收缩，不能自我扩权。
 
-Claude Code 真正先固定的不是弹窗，而是 mode、settings、policy、host sync 与 session metadata 的权威入口。
+这一步里最重要的判断是：
 
-更硬一点说，这一步不只是在固定入口，而是在固定 `source lattice`：
-
-1. 哪些 source 只是 provenance
-2. 哪些 source 真正拥有 higher-order authority
-3. 哪些 source 只能自我收缩，不能自我扩权
-
-构建动作：
-
-1. 先区分 internal mode 与 external mode。
-2. 先给所有 mode 变更定义唯一 choke point。
-3. 先决定宿主与 SDK 只消费哪些正式权威状态。
-4. 先决定哪些 rules、hooks、sandbox、plugin / MCP 能力只能由更高 authority source 覆写。
+- `authority source` 不再独立成根对象；它只是 `governance key` 的 source slot。
 
 不要做的事：
 
 1. 不要让 host、CLI、bridge 各自宣布 mode。
-2. 不要把磁盘 settings 直接当成 effective settings。
-3. 不要让 pending action 只活在某一个前台通道里。
-4. 不要把 `source` 只当作事后 provenance，而不让它决定后续治理对象。
+2. 不要把磁盘 settings 直接当成 effective governance truth。
+3. 不要让 pending action 只活在某个展示通道里。
+4. 不要把 source 只当 provenance 标签，而不让它决定谁配改边界。
 
-## 3. 第二步：把动作审批写成 typed decision
+## 3. 第二步：把外化真相写成 `externalized truth chain`
 
-Claude Code 真正保护的不是审批弹窗，而是正式 decision type 与 reason。
+更成熟的治理控制面，不会让 host 自己从 UI、mode 名字、token 条和日志片段拼当前世界。它会先外化同一条真相链：
 
-更稳的顺序是：
+1. winner source 与 effective settings
+2. visible capability set
+3. pending action 与 worker state
+4. context usage 与继续阈值
+5. cleanup / rewind 所需的最小回退线索
 
-1. 先做硬拒收与 fast-path。
-2. 再决定 ask / allow / deny。
-3. 再把结果投影到 UI 或 SDK。
-4. 同时处理 duplicate control_response、orphan response 与 cancel path。
+实现动作：
 
-构建动作：
-
-1. 先定义 decision type 和 decision reason。
-2. 先用 `request_id + tool_use_id` 固定幂等关系。
-3. 先定义 headless / background 模式的明确拒收语义。
+1. 先让 `settings.sources / effective / applied`、`permission_mode`、`pending_action`、`worker_status` 与 usage 投影进入同一条外化链。
+2. 先区分 authority truth、window truth 与 execution truth，不让它们在宿主侧重新混写。
+3. 先把可见集写成主键的下游结果，而不是独立开关。
+4. 先规定哪些 truth 面必须能跨 UI、SDK 与 headless 一致消费。
 
 不要做的事：
 
-1. 不要把“弹窗出现过”当治理完成。
-2. 不要把 classifier 当兜底万能安全阀。
-3. 不要在没有 typed decision 的情况下直接做 UI 呈现。
+1. 不要让 mode 名称代替治理主键。
+2. 不要让 token 面板代替当前真相链。
+3. 不要让 pending action 只被当成 UI 附件。
+4. 不要让 host 靠本地推断补完当前世界。
 
-## 4. 第三步：把 Context Usage 写成 decision window
+## 4. 第三步：把动作审批写成 `typed ask`
 
-真正成熟的 Context Usage，不是只展示 token 百分比，而是解释：
+Claude Code 真正保护的不是审批弹窗，而是正式 ask transaction：
 
-1. 当前哪些 section 在占席位。
-2. 当前哪些 tools / memory / agents 在占席位。
-3. 当前哪些对象仍未加载。
-4. 当前 pending action 与继续边界如何成立。
+1. 谁发起 ask。
+2. ask 围绕哪个对象。
+3. ask 由谁裁定。
+4. ask 如何去重、撤销、过期与拒收。
 
-构建动作：
+更稳的实现顺序是：
 
-1. 先把 Context Usage 与当前状态并排消费。
-2. 先定义哪些类别变化会触发治理动作。
-3. 先把“为什么贵”解释到 section / tool / memory / continuation。
-4. 先把 visible set 写成 authority source 的下游，而不是独立开关。
+1. 先定义 `request_id + tool_use_id` 这类事务关联键。
+2. 先定义 `allow / ask / deny` 与 reason。
+3. 先处理 duplicate response、orphan response 与 cancel path。
+4. 再把结果投影给 UI、SDK 与 host。
+
+不要做的事：
+
+1. 不要把“弹窗出现过”当 ask 已成立。
+2. 不要让 classifier 成为兜底万能阀。
+3. 不要在没有 typed ask 的情况下直接拼展示文案。
+
+## 5. 第四步：把 `decision window` 写成解释窗口
+
+真正成熟的 `decision window` 不只解释还剩多少 token，而是解释：
+
+1. 当前哪些 section、tools、memory、agents 在占席位。
+2. 当前哪些对象尚未加载。
+3. 当前 pending action 与 visible set 为什么成立。
+4. 当前继续是否仍有决策增益。
+
+因此：
+
+- `Context Usage` 是窗口证据。
+- `pending action` 是窗口证据。
+- `worker_status` 与 state snapshot 也是窗口证据。
+
+实现动作：
+
+1. 先把 Context Usage、pending action、worker state 与 visible set 并排消费。
+2. 先定义哪些变化会触发治理动作。
+3. 先把“为什么贵”解释到 section、tool、memory、continuation。
+4. 先确保任何 compact / continue 都能回钉到同一个 decision window。
 
 不要做的事：
 
 1. 不要把 Context Usage 做成独立仪表盘。
-2. 不要把 token 条误当 decision window。
+2. 不要把 token 百分比误当 decision window 本身。
 3. 不要在没有窗口解释的情况下直接 compact 或继续。
 
-## 5. 第四步：把 continuation 写成时间定价
+## 6. 第五步：把继续资格写成 `continuation pricing`
 
 Claude Code 把 continuation 理解成正式时间资产，而不是默认免费延长。
 
-更稳的实现是：
+更稳的实现顺序是：
 
-1. 先定义 continuation counter 与 delta。
-2. 先定义 diminishing returns 条件。
-3. 先定义何时 stop、何时 continue、何时升级对象。
-4. 先把 pending action、headless deny 与 object upgrade 纳入同一判断链。
+1. 先定义 continuation counter、delta 与 diminishing returns 条件。
+2. 先定义 stop、continue、upgrade object 这三类 verdict。
+3. 先把 pending action、headless deny 与 object upgrade 纳入同一判断链。
+4. 先区分 durable assets 与 transient authority，避免 resume 免费续租旧权威。
 
-构建动作：
+因此：
 
-1. 先把 continue 写成正式 gate，而不是默认行为。
-2. 先定义“继续资格”而不是“还能继续”。
-3. 先定义什么时候必须从当前对象退出。
-4. 先把 durable assets 与 transient authority 分开。
+- `continuation gate` 不是根对象，它只是 `continuation pricing` 的一个 verdict。
 
 不要做的事：
 
 1. 不要把 continue 理解成“再来一轮看看”。
 2. 不要只看 token 剩余量，不看决策增益。
 3. 不要让 headless 路径在无审批条件下继续免费运行。
-4. 不要把旧 mode、旧 grant、旧可见集整包续租进 resume。
+4. 不要把旧 mode、旧 grant、旧 visible set 整包续租进 resume。
 
-## 6. 第五步：把 rollback object 写回治理对象
+## 7. 第六步：把失败回退写成 `rollback / durable-transient cleanup`
 
-治理成熟与否，关键看失败时是不是还能围绕对象回退。
+治理成熟与否，关键看失败时是不是还能围绕同一个对象回退。
 
-构建动作：
+实现动作：
 
-1. 先为每条 governance path 定义 rollback object。
-2. 先把 rollback object 和 next action 写进 session metadata 或 handoff 对象。
-3. 先把文件/commit 回退降级为执行动作，而不是治理语义。
-4. 先明确 rollback object 里哪些是 durable assets，哪些只是一次性 authority 痕迹。
+1. 先为每条治理路径定义 rollback carrier。
+2. 先把需要保留的 durable assets 与必须清掉的 transient authority 分开。
+3. 先把 next action、rewind 与 handoff ref 写回正式对象。
+4. 先把文件回退、重试次数与 UI 提示降为执行投影，不让它们冒充治理语义。
 
 不要做的事：
 
 1. 不要失败后只谈回退文件或重试次数。
 2. 不要把 rewind、cancel、resume 当成治理对象本身。
-3. 不要让交接包只剩状态摘要，不剩 rollback object。
+3. 不要让交接包只剩状态摘要，不剩 cleanup 语义。
 
-## 7. 六步最小实现顺序
+## 8. 六步最小实现顺序
 
-如果要把上面的原则压成一张控制面 builder 卡，顺序可以固定成：
+如果要把上面的原则压成一张 builder 卡，顺序应固定成：
 
-1. `authority source`
-   - 谁能改边界，谁只消费投影；source 是治理主键
-2. `typed decision`
-   - deny / ask / allow / reason
-3. `decision window`
-   - Context Usage + state + pending action
-4. `visibility pricing`
-   - 哪些能力先隐藏、后出现、按需出现
-5. `continuation gate`
-   - 继续是否仍有决策增益；resume 只恢复 durable assets
-6. `rollback object`
-   - 失败时回退到哪个治理对象
+1. `governance key`
+2. `externalized truth chain`
+3. `typed ask`
+4. `decision window`
+5. `continuation pricing`
+6. `rollback / durable-transient cleanup`
 
-## 8. 苏格拉底式检查清单
+## 9. 苏格拉底式检查清单
 
 在你准备继续补一层安全或压缩机制前，先问自己：
 
-1. 我治理的是 authority source，还是只治理了界面形式。
-2. 当前审批是否已经是 typed decision，而不是交互事件。
-3. Context Usage 是否真的在解释 decision window。
-4. continuation 是正式 gate，还是默认继续。
-5. 失败时我能否立刻指出 rollback object。
-6. source 是不是治理主键，还是只是 provenance 标签。
-7. resume 恢复的是 durable assets，还是 transient authority 也被一起续租。
+1. 我固定的是 `governance key`，还是只固定了界面形式。
+2. 当前 ask 是否已经是 typed transaction，而不是交互事件。
+3. `Context Usage` 与 `pending action` 是否真的在解释 `decision window`。
+4. continuation 是正式 pricing verdict，还是默认继续。
+5. 失败时我能否立刻说出哪些资产保留、哪些权威清掉。
 
-## 9. 一句话总结
+## 10. 一句话总结
 
-真正成熟的统一定价治理，实现上不是多几条规则，而是把 authority source、decision window、Context Usage、continuation gate 与 rollback object 写成同一条控制面判断链。
+真正成熟的统一定价治理，实现上不是多几条规则，而是把 `governance key`、`externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `rollback / durable-transient cleanup` 写成同一条控制面判断链。

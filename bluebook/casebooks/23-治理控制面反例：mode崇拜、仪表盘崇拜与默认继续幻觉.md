@@ -48,6 +48,19 @@
 
 - 同一个 `governance key + externalized truth chain`
 
+最容易被偷换成五种替身的是同一条对象链：
+
+1. `mode`
+   - 只是假 `governance key`
+2. 审批历史
+   - 只是假 `typed ask + externalized truth chain`
+3. token 条
+   - 只是假 `decision window`
+4. 默认继续
+   - 只是假 `continuation pricing`
+5. 文件 / commit 回退
+   - 只是假 `durable assets vs transient authority cleanup`
+
 ## 2. mode 崇拜 vs governance key
 
 ### 坏解法
@@ -64,6 +77,21 @@
 
 - mode 变更必须继续经过单一 choke point，对外先 externalize，再向不同消费者同步。
 - `governance key` 应始终包含 source、policy、host 与当前状态，不得退回单一 mode 字段。
+
+## 2.1 投影替身对照表
+
+遇到下面这些说法时，应直接追问同一条治理对象链还在不在：
+
+1. “mode 对了”
+   - 追问：`governance key` 是否仍唯一
+2. “审批做完了”
+   - 追问：`typed ask` 与 `externalized truth chain` 是否仍同源
+3. “token 降下来了”
+   - 追问：`decision window` 是否仍自洽
+4. “还没被拦，所以能继续”
+   - 追问：`continuation pricing` 是否仍在正式计价
+5. “回滚文件就行”
+   - 追问：`durable assets` 与 `transient authority` 是否已分清
 
 ## 3. 审批出现过就算治理完成 vs typed ask
 
