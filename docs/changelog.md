@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新 `architecture/79`、`navigation/39 / 42`、`guides/52` 与 `api/52`，把 taxonomy-core 从 `compiled request truth / authority source / continuation gate` 这些旧根词收回到两条单一对象链：Prompt 收回 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`，治理收回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`
+- 继续更新 `navigation/39 / 42` 的结构段落，把导航页里的旧根词从 `single-writer authority / recovery asset / authority surface` 收回到 `authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`，并把 taxonomy 正文进一步去施工口吻
 - 继续更新 `playbooks/29 / 30 / 31`，把三条宿主接入审读手册统一到当前对象链：Prompt 收回 `message lineage / projection consumer / continuation qualification`，治理收回 `governance key / externalized truth / typed ask / continuation pricing`，结构收回 `authority object / per-host authority width / event-stream-vs-state-writeback / anti-zombie`
 - 继续更新 `playbooks/14 / 35 / 77`、`navigation/45`、`playbooks/README` 与 `guides/README`，把 Prompt 的 Evidence Envelope、宿主验收、长期验证与接入审读路由统一到 `message lineage / projection consumer / protocol transcript / lawful forgetting boundary / continuation object / continuation qualification / cache-safe fork`
 - 继续更新 `architecture/84`、`philosophy/87`、`guides/101`、`casebooks/15 / 42`，把结构先进性继续压成 `authority atlas`、`temporal honesty` 通道矩阵、one writable present 强制证据卡，以及 pointer / telemetry / 作者说明等结构替身对照

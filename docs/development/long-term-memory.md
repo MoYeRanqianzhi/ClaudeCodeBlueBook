@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `architecture/79 / navigation/39 / 42 / guides/52 / api/52` 现已把 taxonomy-core 收到当前对象链：
+  - `79` 现已把 `compiled request truth` 降为旧总称，Prompt 根对象固定为 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`。
+  - `39 / 42` 现已把 Prompt / 治理 / 结构三条导航母线统一改写为 root chain 入口，不再让 `compiled request truth / authority source / recovery asset` 这些旧根词继续占据导航主轴。
+  - `52 / api/52` 现已把治理根对象固定为 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`，并把 `authority source / Context Usage / continuation gate / rollback object` 降为 source slot、window evidence、pricing verdict 与 cleanup carrier。
+- 新的长期结论：
+  - Prompt taxonomy 真正成熟时，`compiled request truth` 只能保留为 legacy alias 或证据标签，不能再被写成一级主语；真正需要被 later maintainer 先点名的是 `message lineage`、consumer 分层、`protocol transcript` 与 `continuation object`。
+  - 治理 taxonomy 真正成熟时，`authority source`、`pending action`、`Context Usage`、`continuation gate` 与 `rollback object` 都不该各自单飞；它们必须分别回钉到 `governance key`、`externalized truth chain`、`decision window`、`continuation pricing` 与 cleanup 语义。
+  - taxonomy 页真正去记忆化时，正文应该从对象链、reject path 与 evidence surface 开始，而不是从“这一章不再回答什么”或施工式导语开始；过程、批次与迁移建议继续留在 `docs/`。
+  - 当前结构线最值钱的下一批不是继续补长期验证，而是先把宿主接入与验收第一跳的旧根词清掉：优先 `playbooks/31 + navigation/45`，然后 `playbooks/37 + navigation/50`。
 - `playbooks/29 / 30 / 31` 现已把三条宿主接入审读手册统一到当前对象链：
   - `29` 现已把 Prompt 宿主接入从 `compiled request truth / section breakdown / continue qualification` 收紧到 `message lineage / projection consumer / continuation qualification`。
   - `30` 现已把治理宿主接入从 `authority source / pending action / continuation gate` 收紧到 `governance key / externalized truth chain / typed ask / continuation pricing`。

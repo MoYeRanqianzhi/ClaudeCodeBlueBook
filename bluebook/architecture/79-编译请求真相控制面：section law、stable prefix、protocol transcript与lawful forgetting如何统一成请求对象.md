@@ -1,12 +1,15 @@
-# 编译请求真相控制面：section law、stable prefix、protocol transcript与lawful forgetting如何统一成请求对象
+# 请求对象控制面：message lineage、projection consumer、protocol transcript 与 lawful forgetting 如何统一成 continuation object
 
-这一章回答五个问题：
+Claude Code 的 Prompt 真相，不是一个名叫 `compiled request truth` 的单层大对象，而是一条能被重建、转写、继续与交接的 `message lineage`。更稳的对象链是：
 
-1. 为什么 Claude Code 的 Prompt 魔力最终必须回到一个正式的 `compiled request truth` 对象，而不是停在 Prompt Constitution 的方法论。
-2. 为什么 section law、stable prefix、protocol transcript 与 lawful forgetting 本质上在描述同一个请求对象。
-3. 为什么 suggestion、summary、resume、host evidence 与 cache observability 最终都应围绕这同一个对象工作。
-4. 为什么没有这层对象，Prompt 线就会重新退回原文 prompt 崇拜和摘要崇拜。
-5. 这对 Agent Runtime 设计者意味着什么。
+1. `message lineage`
+2. `projection consumer`
+3. `protocol transcript`
+4. `stable prefix boundary`
+5. `continuation object`
+6. `continuation qualification`
+
+`compiled request truth` 最多只适合作为这条链的旧总称，不再适合作为一级主语。
 
 ## 0. 代表性源码锚点
 
@@ -15,174 +18,144 @@
 - `claude-code-source-code/src/utils/systemPrompt.ts:28-104`
 - `claude-code-source-code/src/query/stopHooks.ts:84-120`
 - `claude-code-source-code/src/utils/messages.ts:1989-2148`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1025-1034`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1408-1467`
+- `claude-code-source-code/src/utils/sessionStorage.ts:2069-2128`
 - `claude-code-source-code/src/services/compact/prompt.ts:1-260`
 - `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:243-520`
 
-## 1. 先说结论
+## 1. 第一性原理：先固定谁能写 lineage，再决定谁来消费它
 
-Claude Code 真正保护的 Prompt 真相，不是：
+`systemPromptSections.ts`、`prompts.ts` 与 `systemPrompt.ts` 说明，Claude Code 先解决的不是“Prompt 怎样写得更强”，而是：
 
-1. 某段 system prompt 原文
-2. 某份 UI transcript 原样历史
-3. 某个 compact 摘要文本
+1. 哪些制度字节有资格进入当前世界。
+2. 哪些字节属于稳定前缀，哪些必须晚绑定。
+3. 谁配生产这条共享前缀。
 
-而是：
+这意味着 `section law` 与 `stable prefix boundary` 都不是 root object；它们只是 `message lineage` 的准入律。
 
-- 一份已经被编译完成、可被继续复用、可被遗忘约束、可被比较漂移的请求对象
+更准确地说：
 
-这份对象至少由四层共同组成：
+1. `override -> coordinator -> agent -> custom -> default -> append` 这条顺序，先固定谁能定义当前世界。
+2. section registry 先固定哪些制度字节属于正式 Prompt 宪法。
+3. dynamic boundary 再把易漂移状态赶到稳定前缀之后。
+4. `stopHooks.ts` 再把共享前缀生产权收在主线程，而不是交给 suggestion、summary 或 resume 旁路去各自重造世界。
 
-1. section law
-2. stable prefix
-3. protocol transcript
-4. lawful forgetting boundary
+所以 Prompt 线真正先保护的不是“一份完整请求对象”，而是“同一条 lineage 的写入资格与稳定字节边界”。
 
-也就是说，Prompt 魔力最后并不只是一种写法，而是一种：
+## 2. `message lineage` 才是一号对象
 
-- compiled request truth control plane
+`message lineage` 之所以比 `compiled request truth` 更稳，是因为它能直接回钉到持续工作的三键内核：
 
-## 2. section law：先固定谁有资格进入请求对象
+1. `parentUuid / logicalParentUuid`
+   - 保护当前历史骨架。
+2. `message.id`
+   - 保护 assistant 片段归并。
+3. `tool_use_id / sourceToolAssistantUUID`
+   - 保护 tool use / tool result pairing 与行动主语回链。
 
-`systemPromptSections.ts` 说明：
+这条三键内核先回答：
 
-1. section 是正式对象
-2. section 有稳定缓存与 cache-break 两种命运
-3. `/clear` 与 `/compact` 会清 section 状态
+- 现在这句话属于哪条世界线。
+- 这个 tool result 应该回到哪个行动主语。
+- compact、resume、handoff 之后系统还在不在同一条继续链上。
 
-`prompts.ts` 与 `systemPrompt.ts` 进一步说明：
+一旦把 root object 写成抽象的 `compiled request truth`，这些最硬的连续性约束就会重新被藏回“请求看起来还是同一个”这种宽泛说法里。
 
-1. default prompt 不是一整段字符串，而是一组有命名的 sections
-2. dynamic sections 与 dangerous uncached sections 被显式分层
-3. override / coordinator / agent / custom / default / append 拥有正式主权顺序
+## 3. `projection consumer` 决定谁能以哪种读法消费同一条 lineage
 
-这意味着 compiled request truth 的第一层不是：
+Claude Code 的另一个关键设计，不是只维护“一份 transcript”，而是明确维护同一条 lineage 在不同 consumer 前的不同合法读法：
 
-- 内容写了什么
+1. `display consumer`
+   - 人类可读历史、搜索、复制与导航用的投影。
+2. `model API consumer`
+   - 模型真正消费的 `protocol transcript`。
+3. `SDK / control consumer`
+   - 宿主、控制面、tool progress 与状态回写消费的协议投影。
+4. `handoff / compact / resume consumer`
+   - 交接、压缩与恢复时消费的 `continuation object`。
 
-而是：
+这四类 consumer 可以共用同一条 lineage，但不能混写成同一种真相：
 
-- 谁有资格进入请求对象，以及进入后是否会改变 cache-stable truth
+- display transcript 不能直接越权成模型输入。
+- SDK/control projection 不能被误当成 handoff object。
+- compact 后保住的不是“更短的显示历史”，而是仍可行动的 continuation object。
 
-## 3. stable prefix：先固定谁生产共享 truth
+所以 Prompt 魔力不是“历史更完整”，而是“同一条 lineage 在不同 consumer 前各自合法，而且始终不分叉”。
 
-`stopHooks.ts` 说明：
+## 4. `protocol transcript` 是 model-facing projection，不是 UI 历史副本
 
-1. 只有 `repl_main_thread` 与 `sdk` 会保存 cache-safe params
-2. subagent 不允许覆盖这份共享前缀
-3. suggestion、`/btw`、side question 等旁路循环都依赖这份主线程快照
+`messages.ts` 说明，模型真正消费的不是 UI 原样历史，而是经过 normalization 之后的 `protocol transcript`。其中至少包含：
 
-这意味着 compiled request truth 的第二层不是：
+1. `tool_use / tool_result` 配对修复。
+2. attachment 迁移与补边。
+3. 消息合并、合法化与协议补齐。
 
-- 谁都可以从当前消息大概拼一份世界
+因此 Prompt 线真正该验证的是：
 
-而是：
+- 哪条 projection 才配进入模型。
 
-- 主线程拥有唯一 stable prefix producer
+而不是：
 
-一旦没有这一层，旁路循环就会重新长出：
+- 眼前聊天记录看起来是不是还完整。
 
-1. summary 自己的世界
-2. suggestion 自己的世界
-3. resume 自己的世界
+这也解释了为什么 `protocol transcript` 应该位于 root chain 的第三环：
 
-也就是第二套 Prompt 真相。
+1. 先有 `message lineage`，保证世界线和行动主语不丢。
+2. 再有 `projection consumer`，保证不同消费面不互相越权。
+3. 最后才在 model-facing consumer 上产出 `protocol transcript`。
 
-## 4. protocol transcript：先固定模型真正消费的请求体
+一旦顺序反过来，系统就会重新退回“谁都能从当前聊天记录大概拼一份请求”的平行世界写法。
 
-`messages.ts` 说明：
+## 5. `lawful forgetting` 产出 `continuation object`，并绑定 `continuation qualification`
 
-1. UI transcript 不会被直接送给模型
-2. 模型真正消费的是经过 normalization 后的 protocol transcript
-3. tool_use / tool_result pairing、attachment 迁移、消息合并与补边都发生在这里
+`services/compact/prompt.ts` 说明，compact 不是任意摘要，而是在规定删掉什么之后，系统仍能围绕同一条 lineage 合法继续。
 
-所以 compiled request truth 的第三层不是：
+因此 `lawful forgetting` 的产物不是“更短的故事”，而是最小 `continuation object`。更稳的最小清单至少包括：
 
-- “当前聊天记录长什么样”
+1. `current work`
+2. `next-step guard`
+3. `required assets`
+4. `rollback boundary`
+5. `continuation qualification`
+6. `threshold liability`
 
-而是：
+这里的关键区分是：
 
-- “当前哪些协议消息有资格成为请求对象的一部分”
+- `continuation object`
+  - 交接后仍要带着走的最小行动语义体。
+- `continuation qualification`
+  - 当前对象在当前阈值、当前边界、当前成本前提下是否仍配继续。
 
-这也是为什么 discovered tools、tool result replacement、resume 之后的继续条件都会受它影响。
+所以 `lawful forgetting` 也不该再被写成与 lineage 并列的第四层 root term；它只是同一条 lineage 在 compact / resume / handoff 消费面上的保全规则。
 
-## 5. lawful forgetting：先固定删掉什么以后仍然是同一个对象
+## 6. `cache-safe fork reuse` 与可解释 drift 都是这条链的下游证据面
 
-`services/compact/prompt.ts` 说明：
+`stopHooks.ts` 与 `promptCacheBreakDetection.ts` 共同说明：
 
-1. compact 不是任意摘要
-2. compact 在规定总结结构、禁止工具调用、要求保留继续条件
-3. compact prompt 本身已经在定义“什么是合法遗忘”
+1. 旁路循环默认应复用父前缀，而不是各自重造一份差不多知道现场的世界。
+2. drift 也不该被写成黑箱现象，而应该能回到 system、tools、cache control、betas、effort 与 extra body 的变化上被解释。
 
-也就是说，compiled request truth 的第四层不是：
+这意味着：
 
-- 这轮还能剩多少文字
+- `cache-safe fork reuse` 保护的是同一条 lineage 在并行旁路中的复用纪律。
+- cache observability 保护的是同一条 lineage 为什么发生 drift 的解释能力。
 
-而是：
+它们都重要，但都不该反过来占据 taxonomy root。更稳的写法是：
 
-- 删掉哪些历史以后，请求对象仍然保持同一身份、同一继续语义、同一恢复边界
+1. root chain 先固定 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`
+2. `cache-safe fork reuse` 作为并行复用纪律
+3. cache observability 作为 drift 证据面
 
-所以 lawful forgetting 不是 Prompt 之外的修补层，而是请求对象本身的合法命运定义。
+## 7. 为什么这比“编译请求真相”更精确
 
-## 6. cache observability：先固定这个对象怎样被比较与解释
+当 root object 改回 `message lineage` 之后，很多现象会得到更硬的解释：
 
-`promptCacheBreakDetection.ts` 说明：
+1. Prompt 魔力不再来自措辞，而来自 lineage 的写入秩序、消费者分层与继续资格。
+2. suggestion、summary、resume、host evidence 不再是并列的世界生成器，而是不同 projection consumer 或证据面。
+3. compact、handoff、resume 不再是摘要技巧，而是 continuation object 的对象保全。
+4. cache break 不再只是性能问题，而是 lineage drift 的可解释变化。
 
-1. system、tools、cache control、betas、effort、extra body 都会被记录进同一份追踪状态
-2. pre-call 阶段先记录 pending changes
-3. post-call 阶段再用 cache read drop 判断这次 drift 是否真的发生
+## 8. 一句话总结
 
-这意味着 compiled request truth 不是黑箱对象，它还是：
-
-- 可被解释的请求对象
-
-它能够回答：
-
-1. 是 system 变了
-2. 还是 tool schema 变了
-3. 还是 cache-control 边界变了
-4. 还是模型 / effort / global strategy 变了
-
-如果没有这一层，Prompt 线就无法回答：
-
-- 为什么这次行为变了
-- 为什么这次更贵
-- 为什么这次应该回退
-
-## 7. 为什么这四层本质上是同一个对象
-
-section law 回答：
-
-- 什么有资格进入请求对象
-
-stable prefix 回答：
-
-- 谁生产这份请求对象
-
-protocol transcript 回答：
-
-- 模型实际消费的是这份对象的哪种协议形态
-
-lawful forgetting 回答：
-
-- 这份对象删减后如何保持同一身份
-
-cache observability 回答：
-
-- 这份对象怎样被比较、解释与调试
-
-所以它们并不是五个平行机制，而是在共同定义同一件事：
-
-- compiled request truth
-
-## 8. 为什么这会改变 Prompt 的理解方式
-
-一旦把 Prompt 理解成 compiled request truth，对 Claude Code 的很多现象就会更容易解释：
-
-1. Prompt 魔力不再来自措辞，而来自世界被编译得更稳定。
-2. suggestion / summary / memory 不再是零散辅助功能，而是请求对象的不同消费路径。
-3. compact / resume 不再是摘要功能，而是对象身份延续机制。
-4. cache break 不再只是性能问题，而是请求对象 drift 问题。
-
-## 9. 一句话总结
-
-Claude Code 的 Prompt 最终强在：它把 section law、stable prefix、protocol transcript、lawful forgetting 与 cache observability 合成了同一份 compiled request truth，而不只是写出了一段更强的 prompt。
+Claude Code 的 Prompt 真正强在：它先把 `message lineage` 压成可重建的三键内核，再把 display、model API、SDK/control 与 handoff/resume 分成不同 `projection consumer`，然后用 `protocol transcript`、`lawful forgetting`、`continuation object` 与 `continuation qualification` 保住同一条继续链。

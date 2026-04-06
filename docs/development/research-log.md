@@ -6,6 +6,12 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 主分支同步检查: `2026-04-06` 再次执行 `git -C /home/mo/m/projects/cc/analysis pull --ff-only`，结果 `Already up to date.`；`mainloop` 在本批开工前保持干净。
+- 本轮 taxonomy-core 对齐动作: 已继续更新 `architecture/79`、`navigation/39 / 42`、`guides/52` 与 `api/52`，把 Prompt / 治理两条核心 taxonomy 从旧根词并列法收回到 root chain 写法，并把 `navigation/39 / 42` 中的结构线旧根词一起替换，避免导航页继续反向输送旧词。
+- 本轮 Prompt 根对象更正动作: `79 / 39 / 42` 现已把 `compiled request truth` 降为 legacy alias，不再充当一级主语；Prompt 线当前固定为 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`，其中 `section law / stable prefix boundary / lawful forgetting` 全部降为 lineage 的准入律、投影律与继续律。
+- 本轮治理根对象更正动作: `52 / api/52 / 42` 现已把 `authority source / Context Usage / pending action / continuation gate / rollback object` 全部降为 `governance key` 下游的 source slot、window evidence、pricing verdict 与 cleanup carrier；治理线当前固定为 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
+- 本轮正文去记忆化动作: `79 / 39 / 42 / 52 / api/52` 已继续把正文主轴从“章节施工说明 + 旧桥接叙事”改成“对象链 + reject path + evidence surface”，减少把 taxonomy 页面重新写成轮次说明或阅读姿态提示。
+- 并行 Agent 下一批结构建议: taxonomy-core 提交后，结构线最值钱的下一批应先做 `playbooks/31 + navigation/45`，再做 `playbooks/37 + navigation/50`；当前最强残留旧根不在长期验证层，而在宿主接入第一跳与验收 contract 第一跳。
 - 本轮宿主接入手册同代化动作: 已继续更新 `playbooks/29 / 30 / 31`，把三条宿主接入审读手册与当前目录路由统一到同代对象链，避免 README 已换代而正文仍围绕旧词工作。
 - 本轮 Prompt 执行链统一动作: 已继续更新 `playbooks/14 / 35 / 77` 与 `navigation/45`，把 Prompt 的 Evidence Envelope、宿主验收、长期验证与宿主接入审读统一到 `message lineage / projection consumer / protocol transcript / lawful forgetting boundary / continuation object / continuation qualification / cache-safe fork`。
 - 本轮 Prompt 目录路由收口动作: 已继续更新 `playbooks/README` 与 `guides/README`，把 Prompt 的执行链入口收成 `14 -> 29 -> 35 -> 77`，把 builder 审读入口收成 `30 -> 99`，减少读者继续靠旧文件名与旧对象词自行拼链。
