@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/71 / 72 / 73 / 74` 与 `playbooks/README` 已继续把三条“共享修复后段链”拉到更稳定的共同对象：
+  - `71` 现已把 Prompt 共享修复从 `compiled request lineage / repair attestation` 压到 `message lineage / projection consumer / continuation object / cache-safe fork reuse`。
+  - `72` 现已把治理共享修复从 `authority chain / 五条 truth channel / ingress lineage` 压到 `governance key / externalized truth chain / durable assets vs transient authority`。
+  - `73` 现已把结构共享修复从 `authority surface / fresh merge / anti-zombie` 压到 `per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
+  - `74` 现已把 Prompt 最深一层从 `compiled request card / tool contract / cache break truth` 压到 `continuation object / continuation qualification / cache-safe fork reuse`。
+  - `playbooks/README` 现已把 `65 -> 68 -> 71 -> 74`、`66 -> 69 -> 72 -> 75`、`67 -> 70 -> 73 -> 76` 三条后段修复链显式收回目录路由。
+- 新的长期结论：
+  - Prompt 线进入共享修复深段后，真正该被共同消费的不是 `repair attestation`，而是同一条 `message lineage`、同一组 projection consumer 边界与同一个 continuation object；attestation、tool hash 与 cache break 只应保留为证据面。
+  - 治理线进入共享修复深段后，不应再把 `control_request / pending_action / Context Usage / classifier / ingress` 写成五条平权通道；它们只是同一个 `governance key` 的外化证据链。
+  - 结构线进入共享修复深段后，四类消费者共享的不是同一份结构说明，而是同一个 `authority object`；每个 host 只消费自己的 `per-host authority width`，谁都不额外宣布 present truth。
+  - 目录结构真正成熟时，README 不应只指向起点和终点，还要显式暴露后段修复链；否则读者会知道该从哪里进，却不知道后面几级怎样稳定下钻。
 - `playbooks/67 / 68 / 69 / 70` 已继续把三条“修复后段执行链”拉到和长期验证页同代：
   - `67` 现已把结构精修执行从 `single-source / fresh merge / anti-zombie / transport` 压到 `per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
   - `68` 现已把 Prompt 精修纠偏执行从 `compiled request lineage / registry-boundary custody` 压到 `message lineage / projection consumer / continuation object / continuation qualification`。
