@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/30` 已继续把 atlas 页的三大中层平面压成固定协议：
+  - `commands` 现已更明确区分 authority object、dynamic subset、danger surface 与 reject path，不再主要按命令分组来读。
+  - `tools` 现已更明确区分动作 ABI、visible subset、fail-closed 风险与回退入口，不再主要按工具类别来读。
+  - `services` 现已更明确区分 authority file、continuation/host 投影、danger surface 与回退入口，不再主要按后台目录组来读。
+- 新的长期结论：
+  - atlas 页真正开始成熟时，目录分组只配保留最少代表项；真正值钱的是每个平面都能直接交出 authority、subset、danger 与 reject path。
+  - `api/30` 这类页越往后写，越不该像“目录里有什么”，而应更像“如果这一层开始撒谎，第一步应回哪个入口拒收”。
 - `03 / 06` 已继续把主线模板化再压一层：
   - `03` 现已更明确给 prompt、治理、构建、源码质量这些高阶原则补出坏解法、权威对象、拒收入口与渐进改写顺序。
   - `06` 现已把 41 条零散准则收成事实卡、入口卡、对象卡、Prompt 卡、治理卡、地图卡、反例卡、迁移卡 8 张长期自校卡。

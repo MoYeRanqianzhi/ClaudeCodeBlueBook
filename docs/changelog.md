@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新《源码目录级能力地图：commands、tools、services、状态与宿主平面》，把 `commands / tools / services` 三段继续从分组导览压成 authority、subset、danger surface 与 reject path 协议
 - 继续更新《设计哲学》《第一性原理与苏格拉底反思》，把后半高阶原则从结论列表继续压成 `authority object / bad solution / reject path / migration order` 模板，并把 41 条零散自校准则收成 8 张长期自校卡
 - 继续更新《设计哲学》《第一性原理与苏格拉底反思》，把后半高阶原则继续压成 `authority object / bad solution / reject path / migration order` 模板，并把“下一轮怎么做得更好”改成长期有效的持续自校协议
 - 继续更新《源码结构地图》《源码目录级能力地图：commands、tools、services、状态与宿主平面》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，把 atlas 页继续压成 `authority / subset / danger / reject path` 协议，并补上 Prompt `request object` 的更短装配顺序
