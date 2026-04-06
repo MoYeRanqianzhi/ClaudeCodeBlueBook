@@ -76,12 +76,13 @@
 - [66-stream_event、task_started、status、remote pill 与 BriefIdleStatus：为什么同一 remote session 事件不会以同样厚度出现在每个消费者里.md](./66-stream_event、task_started、status、remote%20pill%20与%20BriefIdleStatus：为什么同一%20remote%20session%20事件不会以同样厚度出现在每个消费者里.md)
 - [67-slash_commands、stream_event、task_started 与 status_compacting：为什么 remote session 的命令集、流式正文、后台计数与 timeout 策略不是同一种消费者.md](./67-slash_commands、stream_event、task_started%20与%20status_compacting：为什么%20remote%20session%20的命令集、流式正文、后台计数与%20timeout%20策略不是同一种消费者.md)
 
-68-77 建议连续阅读：
+68-78 建议连续阅读：
 
 - 68-71 先拆 remote session 的命令面、候选面、入口面与本地变薄逻辑。
 - 72-75 再拆 tool plane、approval shell、authority return path 与 bridge relay 的拓扑差异。
 - 76 最后回到本地 REPL 宿主本身，拆 prompt/approval 容器族的来源、渲染槽位与治理闭环。
 - 77 再把这套本地审批壳推进到 swarm 多进程场景，拆 worker 起点、leader 壳与 worker 回流。
+- 78 继续并列拆 worker sandbox mailbox ask，说明 host approval 也存在 worker 起点、leader 队列与 worker 回流。
 
 - [68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx fallthrough 与 remote send：为什么 remote session 的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md](./68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx%20fallthrough%20与%20remote%20send：为什么%20remote%20session%20的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md)
 - [69-hasCommand、isHidden、isCommandEnabled、local-jsx 与 remote send：为什么 remote mode 里的 slash 高亮、候选补全、启用态与实际执行去向不是同一个判定器.md](./69-hasCommand、isHidden、isCommandEnabled、local-jsx%20与%20remote%20send：为什么%20remote%20mode%20里的%20slash%20高亮、候选补全、启用态与实际执行去向不是同一个判定器.md)
@@ -93,4 +94,5 @@
 - [75-useRemoteSession、useDirectConnect、useSSHSession、handleInteractivePermission 与 bridgeCallbacks：为什么 remote session、direct connect、ssh session 都会借本地审批壳，而 bridge 只是把本地 permission prompt 外发竞速.md](./75-useRemoteSession、useDirectConnect、useSSHSession、handleInteractivePermission%20与%20bridgeCallbacks：为什么%20remote%20session%E3%80%81direct%20connect%E3%80%81ssh%20session%20都会借本地审批壳，而%20bridge%20只是把本地%20permission%20prompt%20外发竞速.md)
 - [76-toolUseConfirmQueue、promptQueue、sandbox、worker、elicitation 与 focusedInputDialog：为什么 REPL 的本地阻塞容器不共享同一治理闭环.md](./76-toolUseConfirmQueue、promptQueue、sandbox、worker、elicitation%20与%20focusedInputDialog：为什么%20REPL%20的本地阻塞容器不共享同一治理闭环.md)
 - [77-swarmWorkerHandler、useInboxPoller、permissionSync、useSwarmPermissionPoller 与 workerBadge：为什么 tmux worker 的 mailbox ask 会在 leader 侧重包成 ToolUseConfirm，却不等于 leader 自己的本地审批.md](./77-swarmWorkerHandler、useInboxPoller、permissionSync、useSwarmPermissionPoller%20与%20workerBadge：为什么%20tmux%20worker%20的%20mailbox%20ask%20会在%20leader%20侧重包成%20ToolUseConfirm，却不等于%20leader%20自己的本地审批.md)
+- [78-sendSandboxPermissionRequestViaMailbox、workerSandboxPermissions、pendingSandboxRequest 与 sandbox callback：为什么 worker sandbox ask 不等于 leader 本地 network prompt.md](./78-sendSandboxPermissionRequestViaMailbox、workerSandboxPermissions、pendingSandboxRequest%20与%20sandbox%20callback：为什么%20worker%20sandbox%20ask%20不等于%20leader%20本地%20network%20prompt.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

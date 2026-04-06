@@ -66,3 +66,4 @@
 - [64-Remote approval shell topology：remote session、direct connect、ssh session 与 bridge relay 索引.md](./64-Remote%20approval%20shell%20topology：remote%20session、direct%20connect、ssh%20session%20与%20bridge%20relay%20索引.md)
 - [65-Local modal shell family、toolUseConfirmQueue、promptQueue 与 worker、sandbox、elicitation 容器索引.md](./65-Local%20modal%20shell%20family、toolUseConfirmQueue、promptQueue%20与%20worker、sandbox、elicitation%20容器索引.md)
 - [66-Worker mailbox ask、leader ToolUseConfirm rewrap 与 pendingWorkerRequest 索引.md](./66-Worker%20mailbox%20ask、leader%20ToolUseConfirm%20rewrap%20与%20pendingWorkerRequest%20索引.md)
+- [67-Worker sandbox mailbox ask、workerSandboxPermissions.queue 与 pendingSandboxRequest 索引.md](./67-Worker%20sandbox%20mailbox%20ask、workerSandboxPermissions.queue%20与%20pendingSandboxRequest%20索引.md)
