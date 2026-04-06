@@ -42,3 +42,4 @@
 - [40-Remote Control worker_status、pending_action、task_summary 与 session_state_changed 索引.md](./40-Remote%20Control%20worker_status、pending_action、task_summary%20与%20session_state_changed%20索引.md)
 - [41-Remote Control permission_mode、is_ultraplan_mode 与 model restore 索引.md](./41-Remote%20Control%20permission_mode、is_ultraplan_mode%20与%20model%20restore%20索引.md)
 - [42-Remote Control task_started、task_progress、task_notification 与 session_state_changed 索引.md](./42-Remote%20Control%20task_started、task_progress、task_notification%20与%20session_state_changed%20索引.md)
+- [43-Remote Control transport rebuild、initial flush、flush gate 与 sequence resume 索引.md](./43-Remote%20Control%20transport%20rebuild、initial%20flush、flush%20gate%20与%20sequence%20resume%20索引.md)
