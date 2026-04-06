@@ -17,6 +17,9 @@
   - 当 Prompt witness order、治理 failure order、当前真相 reject order 被翻译成专题正文第一页的用户动作时，说明这些概念已经从“高阶 doctrine”成熟为“可执行工作习惯”。
   - Prompt 魔力在用户层最稳的短公式不是“提示词更会写”，而是 `target -> fact carriers -> working set -> handoff`；安全与省 token 在用户层最稳的短公式不是“两套主题”，而是同一个 `decision window` 下对扩张与继续的定价纪律。
   - Prompt 魔力继续往深处压时，最稳的解释不是 `systemPrompt` 多强，而是 `witness chain + shared prefix asset + continuation qualification` 在 `compact / resume / fork / handoff` 后仍然成立；一旦只能靠最后一条回复或长摘要继续，保住的就只是故事，不是 continuation。
+  - 安全设计与省 token 设计在用户层真正合流时，最稳的短公式不是“更安全也更省”，而是 `governance key -> decision window -> continuation pricing -> durable-transient cleanup`；Claude Code 省掉的不是字数，而是未经定价的免费扩张。
+  - 源码结构先进性的高阶判据不只是一条 `current-truth surface`，还包括 `per-host authority width` 是否显式成文、`event stream != present truth` 是否被当成硬规则、later maintainer 是否拥有独立 reject 权与退层协议；否则 single truth 会在宿主接入层重新裂成半真相。
+  - `migration order is architecture quality` 应长期成立：能否按 `shadow -> stable prefix -> dynamic boundary -> compact/handoff` 分层迁移并局部回退，本身就是 Prompt Constitution、治理收费链和当前真相面是否真正模块化的证据。
 - `userbook/04-专题深潜/README` 与 `userbook/05-控制面深挖/README` 现已继续把最近几批稳定下来的三组最小顺序推进到专题入口层：
   - `04` 现在更明确把专题层写成“工作对象入口 + 最小排查顺序 + 何时退回控制面/主线重新定题”。
   - `05` 现在更明确把控制面层写成“控制面入口 + 哪组顺序在起作用 + 哪些相邻入口是替身 + 何时应退回上一层”。
