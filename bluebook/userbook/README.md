@@ -72,6 +72,36 @@
   [05-控制面深挖/40-can_use_tool、SandboxNetworkAccess、hook-classifier 与 control_cancel_request：为什么 remote-control 的工具审批、网络放行、自动批准与提示撤销不是同一种批准.md](./05-控制面深挖/40-can_use_tool、SandboxNetworkAccess、hook-classifier%20与%20control_cancel_request：为什么%20remote-control%20的工具审批、网络放行、自动批准与提示撤销不是同一种批准.md)
 - 分清 standalone remote-control 的 `sdkUrl`、ingress base、environment secret、session token 与 worker epoch 为什么不是同一种连接凭证：
   [05-控制面深挖/41-sdk-url、sessionIngressUrl、environmentSecret、session access token 与 workerEpoch：为什么 standalone remote-control 的 URL、密钥、令牌与传输纪元不是同一种连接凭证.md](./05-控制面深挖/41-sdk-url、sessionIngressUrl、environmentSecret、session%20access%20token%20与%20workerEpoch：为什么%20standalone%20remote-control%20的%20URL、密钥、令牌与传输纪元不是同一种连接凭证.md)
+- 分清 standalone remote-control 的 environment、work 与 session 生命周期动词为什么不是同一种操作：
+  [05-控制面深挖/42-register、poll、ack、heartbeat、stop、archive 与 deregister：为什么 standalone remote-control 的环境、work 与 session 生命周期不是同一种收口.md](./05-控制面深挖/42-register、poll、ack、heartbeat、stop、archive%20与%20deregister：为什么%20standalone%20remote-control%20的环境、work%20与%20session%20生命周期不是同一种收口.md)
+- 分清 bridge 的 compat session ID、infra session ID 与 retag / compare helper 为什么不是同一种标识：
+  [05-控制面深挖/43-session tag、compat shim 与 reconnect tag：为什么 bridge 的 compat session ID、infra session ID 与 sameSessionId 不是同一种标识.md](./05-控制面深挖/43-session%20tag、compat%20shim%20与%20reconnect%20tag：为什么%20bridge%20的%20compat%20session%20ID、infra%20session%20ID%20与%20sameSessionId%20不是同一种标识.md)
+- 分清 standalone remote-control 的 child refresh、heartbeat 认证与 v2 reconnect 为什么不是同一种 token refresh：
+  [05-控制面深挖/44-session token refresh、child sync 与 bridge reconnect：为什么 standalone remote-control 的 child 刷新、heartbeat 续租与 v2 重派发不是同一种 token refresh.md](./05-控制面深挖/44-session%20token%20refresh、child%20sync%20与%20bridge%20reconnect：为什么%20standalone%20remote-control%20的%20child%20刷新、heartbeat%20续租与%20v2%20重派发不是同一种%20token%20refresh.md)
+- 分清 standalone remote-control 的 work secret、ack 时机、existing session refresh 与 unknown work 为什么不是同一种领取：
+  [05-控制面深挖/45-work secret、ack timing、existing session refresh 与 unknown work：为什么 standalone remote-control 的 work intake 不是同一种领取.md](./05-控制面深挖/45-work%20secret、ack%20timing、existing%20session%20refresh%20与%20unknown%20work：为什么%20standalone%20remote-control%20的%20work%20intake%20不是同一种领取.md)
+- 分清 bridge 的 session timeout、watchdog、SIGTERM、SIGKILL 与 failed remap 为什么不是同一种 timeout：
+  [05-控制面深挖/46-session timeout、watchdog、SIGTERM、SIGKILL 与 failed remap：为什么 bridge 的会话超时、收尾中断与请求 timeout 不是同一种 timeout.md](./05-控制面深挖/46-session%20timeout、watchdog、SIGTERM、SIGKILL%20与%20failed%20remap：为什么%20bridge%20的会话超时、收尾中断与请求%20timeout%20不是同一种%20timeout.md)
+- 分清 bridge 的 poll、heartbeat、reconnecting、give up 与 sleep reset 为什么不是同一种重试：
+  [05-控制面深挖/47-poll、heartbeat、reconnecting、give up 与 sleep reset：为什么 bridge 的保活、回连预算与放弃条件不是同一种重试.md](./05-控制面深挖/47-poll、heartbeat、reconnecting、give%20up%20与%20sleep%20reset：为什么%20bridge%20的保活、回连预算与放弃条件不是同一种重试.md)
+- 分清 headless remote-control 的 trust、token、HTTP base URL、worktree substrate 与 registration failure 为什么不是同一种开桥失败：
+  [05-控制面深挖/48-Workspace not trusted、login token、HTTP base URL、worktree availability 与 registration failure：为什么 headless remote-control 的 permanent error 与 transient retry 不是同一种开桥失败.md](./05-控制面深挖/48-Workspace%20not%20trusted、login%20token、HTTP%20base%20URL、worktree%20availability%20与%20registration%20failure：为什么%20headless%20remote-control%20的%20permanent%20error%20与%20transient%20retry%20不是同一种开桥失败.md)
+- 分清 standalone remote-control 的一次性说明、账号资格、项目偏好与当前 effective mode 为什么不是同一个默认：
+  [05-控制面深挖/49-remoteDialogSeen、multi-session gate、ProjectConfig.remoteControlSpawnMode 与 effective spawnMode：为什么 standalone remote-control 的一次性说明、账号资格、项目偏好与当前模式不是同一个默认.md](./05-控制面深挖/49-remoteDialogSeen、multi-session%20gate、ProjectConfig.remoteControlSpawnMode%20与%20effective%20spawnMode：为什么%20standalone%20remote-control%20的一次性说明、账号资格、项目偏好与当前模式不是同一个默认.md)
+- 分清 CCR v2 worker 的初始化、状态恢复、保活与代际退场为什么不是同一种存活合同：
+  [05-控制面深挖/50-worker epoch、state restore、worker heartbeat、keep_alive 与 self-exit：为什么 CCR v2 worker 的初始化、保活与代际退场不是同一种存活合同.md](./05-控制面深挖/50-worker%20epoch、state%20restore、worker%20heartbeat、keep_alive%20与%20self-exit：为什么%20CCR%20v2%20worker%20的初始化、保活与代际退场不是同一种存活合同.md)
+- 分清远端看到的 `worker_status`、`pending_action`、`task_summary` 与 `session_state_changed` 为什么不是同一张运行态面：
+  [05-控制面深挖/51-worker_status、requires_action_details、pending_action、task_summary、post_turn_summary 与 session_state_changed：为什么远端看到的运行态不是同一张面.md](./05-控制面深挖/51-worker_status、requires_action_details、pending_action、task_summary、post_turn_summary%20与%20session_state_changed：为什么%20远端看到的运行态不是同一张面.md)
+- 分清 `permission_mode`、`is_ultraplan_mode` 与 `model` 为什么不是同一种远端可恢复会话参数：
+  [05-控制面深挖/52-permission_mode、is_ultraplan_mode 与 model：为什么远端恢复回填、当前本地状态与 session control request 不是同一种会话参数.md](./05-控制面深挖/52-permission_mode、is_ultraplan_mode%20与%20model：为什么%20远端恢复回填、当前本地状态与%20session%20control%20request%20不是同一种会话参数.md)
+- 分清 `task_started`、`task_progress`、`task_notification` 与 `session_state_changed` 为什么不是同一种远端事件流：
+  [05-控制面深挖/53-task_started、task_progress、task_notification 与 session_state_changed：为什么远端消费方收到的不是同一种事件流.md](./05-控制面深挖/53-task_started、task_progress、task_notification%20与%20session_state_changed：为什么%20远端消费方收到的不是同一种事件流.md)
+- 分清 CCR v2 remote bridge 的 `transport rebuild`、initial flush、`flush gate` 与 `sequence resume` 为什么不是同一步：
+  [05-控制面深挖/54-transport rebuild、initial flush、flush gate 与 sequence resume：为什么 CCR v2 remote bridge 的重建 transport、历史续接与 connected 不是同一步.md](./05-控制面深挖/54-transport%20rebuild、initial%20flush、flush%20gate%20与%20sequence%20resume：为什么%20CCR%20v2%20remote%20bridge%20的重建%20transport、历史续接与%20connected%20不是同一步.md)
+- 分清 `received`、`processed`、write cursor、echo dedup 与 replay dedup 为什么不是同一种去重：
+  [05-控制面深挖/55-received、processing、processed、lastWrittenIndexRef、recentPostedUUIDs、recentInboundUUIDs 与 sentUUIDsRef：为什么 remote bridge 的送达回执、增量转发、echo 过滤与重放防重不是同一种去重.md](./05-控制面深挖/55-received、processing、processed、lastWrittenIndexRef、recentPostedUUIDs、recentInboundUUIDs%20与%20sentUUIDsRef：为什么%20remote%20bridge%20的送达回执、增量转发、echo%20过滤与重放防重不是同一种去重.md)
+- 分清 `initialize`、`can_use_tool`、`control_response`、`control_cancel_request` 与 `result` 为什么不是同一种状态交接：
+  [05-控制面深挖/56-initialize、can_use_tool、control_response、control_cancel_request 与 result：为什么 remote bridge 的握手、提问、作答、撤销与回合收口不是同一种状态交接.md](./05-控制面深挖/56-initialize、can_use_tool、control_response、control_cancel_request%20与%20result：为什么%20remote%20bridge%20的握手、提问、作答、撤销与回合收口不是同一种状态交接.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：
@@ -218,5 +248,10 @@
 - standalone remote-control 的 host flags、session 默认策略与 title 回填边界
 - remote-control 的工具审批、网络放行、自动批准与提示收口边界
 - standalone remote-control 的 transport URL、secret、token 与 epoch 边界
+- standalone remote-control 的 environment、work 与 session 生命周期边界
+- bridge 的 compat session tag、infra session tag 与 retag helper 边界
+- standalone remote-control 的 token freshness timing、child sync 与 heartbeat auth 边界
+- standalone remote-control 的 work intake validity、claim 与 routing 边界
+- bridge 的 session runtime timeout、shutdown grace 与 failed remap 边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。

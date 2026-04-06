@@ -43,6 +43,21 @@
 - [39-2026-04-06-standalone remote-control flags 与 title 继承拆分记忆.md](./39-2026-04-06-standalone%20remote-control%20flags%20与%20title%20继承拆分记忆.md)
 - [40-2026-04-06-remote-control 批准对象与提示收口拆分记忆.md](./40-2026-04-06-remote-control%20批准对象与提示收口拆分记忆.md)
 - [41-2026-04-06-standalone remote-control 传输凭证与纪元拆分记忆.md](./41-2026-04-06-standalone%20remote-control%20传输凭证与纪元拆分记忆.md)
+- [42-2026-04-06-standalone remote-control 生命周期动词拆分记忆.md](./42-2026-04-06-standalone%20remote-control%20生命周期动词拆分记忆.md)
+- [43-2026-04-06-bridge session tag 与 compat shim 拆分记忆.md](./43-2026-04-06-bridge%20session%20tag%20与%20compat%20shim%20拆分记忆.md)
+- [44-2026-04-06-standalone remote-control token refresh 与 child 同步拆分记忆.md](./44-2026-04-06-standalone%20remote-control%20token%20refresh%20与%20child%20同步拆分记忆.md)
+- [45-2026-04-06-standalone remote-control work intake 拆分记忆.md](./45-2026-04-06-standalone%20remote-control%20work%20intake%20拆分记忆.md)
+- [46-2026-04-06-standalone remote-control session timeout 拆分记忆.md](./46-2026-04-06-standalone%20remote-control%20session%20timeout%20拆分记忆.md)
+- [47-2026-04-06-standalone remote-control 保活、回连预算与放弃条件拆分记忆.md](./47-2026-04-06-standalone%20remote-control%20保活、回连预算与放弃条件拆分记忆.md)
+- [48-2026-04-06-headless remote-control startup verdict 拆分记忆.md](./48-2026-04-06-headless%20remote-control%20startup%20verdict%20拆分记忆.md)
+- [49-2026-04-06-standalone remote-control consent、gate 与 effective mode 拆分记忆.md](./49-2026-04-06-standalone%20remote-control%20consent、gate%20与%20effective%20mode%20拆分记忆.md)
+- [50-2026-04-06-CCR v2 worker lifecycle 拆分记忆.md](./50-2026-04-06-CCR%20v2%20worker%20lifecycle%20拆分记忆.md)
+- [51-2026-04-06-remote runtime state projection 拆分记忆.md](./51-2026-04-06-remote%20runtime%20state%20projection%20拆分记忆.md)
+- [52-2026-04-06-remote metadata restore and writeback 拆分记忆.md](./52-2026-04-06-remote%20metadata%20restore%20and%20writeback%20拆分记忆.md)
+- [53-2026-04-06-remote sdk task event stream 拆分记忆.md](./53-2026-04-06-remote%20sdk%20task%20event%20stream%20拆分记忆.md)
+- [54-2026-04-06-CCR v2 remote bridge transport continuity 拆分记忆.md](./54-2026-04-06-CCR%20v2%20remote%20bridge%20transport%20continuity%20拆分记忆.md)
+- [55-2026-04-06-remote bridge anti-dup semantics 拆分记忆.md](./55-2026-04-06-remote%20bridge%20anti-dup%20semantics%20拆分记忆.md)
+- [56-2026-04-06-remote bridge control handoff semantics 拆分记忆.md](./56-2026-04-06-remote%20bridge%20control%20handoff%20semantics%20拆分记忆.md)
 
 用途：
 

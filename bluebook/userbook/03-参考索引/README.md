@@ -42,6 +42,21 @@
 38. 为什么 standalone remote-control 的 `--name`、`--permission-mode`、`--sandbox` 与 title 回填不是同一种继承。
 39. 为什么 remote-control 的工具审批、网络放行、自动批准与提示撤销不是同一种批准。
 40. 为什么 standalone remote-control 的 `sdk-url`、ingress、secret、token 与 worker epoch 不是同一种连接凭证。
+41. 为什么 standalone remote-control 的 environment 注册、work 租约、session 归档与环境销毁不是同一种生命周期操作。
+42. 为什么 bridge 的 compat session ID、infra session ID 与 retag / compare helper 不是同一种标识。
+43. 为什么 standalone remote-control 的 child refresh、heartbeat 认证与 v2 reconnect 不是同一种 token refresh。
+44. 为什么 standalone remote-control 的 work secret、ack 时机、existing session refresh 与 unknown work 不是同一种领取。
+45. 为什么 bridge 的 session timeout、watchdog、kill 与 failed remap 不是同一种 timeout。
+46. 为什么 bridge 的 seek-work poll、at-capacity heartbeat、reconnecting 预算、sleep reset 与 give up 不是同一种重试。
+47. 为什么 headless remote-control 的 startup preflight、permanent error 与 transient retry 不是同一种开桥失败。
+48. 为什么 standalone remote-control 的一次性说明、账号资格、项目偏好与当前 effective mode 不是同一个默认。
+49. 为什么 CCR v2 worker 的初始化、状态恢复、保活与代际退场不是同一种存活合同。
+50. 为什么远端看到的 `worker_status`、`pending_action`、`task_summary` 与 `session_state_changed` 不是同一张运行态面。
+51. 为什么 `permission_mode`、`is_ultraplan_mode` 与 `model` 不是同一种远端可恢复会话参数。
+52. 为什么 `task_started`、`task_progress`、`task_notification` 与 `session_state_changed` 不是同一种远端事件流。
+53. 为什么 CCR v2 remote bridge 的 `transport rebuild`、initial flush、`flush gate` 与 `sequence resume` 不是同一步。
+54. 为什么 remote bridge 的 `received`、`processed`、write cursor、echo dedup 与 replay dedup 不是同一种去重。
+55. 为什么 remote bridge 的 `can_use_tool`、`control_response`、`control_cancel_request` 与 `result` 不是同一种状态交接。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
