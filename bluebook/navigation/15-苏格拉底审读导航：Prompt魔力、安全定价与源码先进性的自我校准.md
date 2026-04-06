@@ -10,14 +10,14 @@
 
 - 为什么这套 prompt 在当前、下一步、接手后都像活在同一个现场里。
 - 为什么一段 prompt 看起来更长，却未必更强。
-- 为什么一个 Prompt Constitution 如果不能被失稳前审读，最终会退回神秘文案。
+- 为什么请求装配控制面如果不能被失稳前审读，最终会退回神秘文案。
 
 规范锚点：
 
 1. `../philosophy/84`
 2. `../architecture/82`
 3. `../guides/99`
-4. `../guides/30`
+4. `../playbooks/77`
 
 这条线的核心不是：
 
@@ -48,7 +48,7 @@
 
 而是：
 
-- 如何确认 `governance key`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup` 都没有在免费扩张
+- 如何确认 `governance key`、`externalized truth chain`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup` 都没有在免费扩张
 
 ## 3. 当前真相保护的苏格拉底审读
 

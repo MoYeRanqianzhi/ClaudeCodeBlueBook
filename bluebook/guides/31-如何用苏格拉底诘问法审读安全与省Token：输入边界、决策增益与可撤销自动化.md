@@ -1,11 +1,11 @@
-# 如何用苏格拉底诘问法审读安全与省Token：governance key、durable assets与continuation qualification
+# 如何用苏格拉底诘问法审读安全与省Token：governance key、decision window、continuation pricing与durable-transient cleanup
 
-这一章不再解释安全与省 token 为什么要一起看，而是把“怎么审它是否真的成立”压成一套 builder-facing 框架。
+这一章不再解释安全与省 token 为什么要一起看，而是把“怎么审它是否真的成立”压成一组失稳前问题。
 
 它主要回答五个问题：
 
 1. 怎样避免把安全写回“更多拦截器”，把省 token 写回“更短文本”。
-2. 怎样用递进式问题审读治理主键、失败语义、durable assets、最小可见面与 continuation qualification。
+2. 怎样用递进式问题审读治理主键、外化真相链、失败语义、continuation pricing 与 durable-transient cleanup。
 3. 怎样判断一套治理系统是否仍在免费扩张。
 4. 怎样在设计、回归和事故复盘中使用同一组问题自我校准。
 5. 怎样用苏格拉底式追问避免把安全审读模板退回空洞口号。
@@ -147,7 +147,7 @@ governance key:
 sovereign writer / choke point:
 effective / applied / externalized 是否对齐:
 失败语义是否分型:
-durable assets 是否可点名:
+durable assets / transient authority 是否可点名:
 transient authority 是否有清空规则:
 当前可见 capability surface 是否单源:
 decision gain 是否仍存在:
@@ -168,4 +168,4 @@ continuation 是否受条件约束:
 2. 我保住的是治理主键和 externalized truth，还是只是暂时拦住了某个动作。
 3. 我是在提高决策质量，还是在无增益地继续烧 token。
 4. 自动化是租约，还是已经偷偷变成永久主权。
-5. 这套东西出事故时，团队能否沿着治理主键、durable assets 与 writeback seam，而不是个人经验复盘。
+5. 这套东西出事故时，团队能否沿着治理主键、外化真相链、durable assets 与 writeback seam，而不是个人经验复盘。

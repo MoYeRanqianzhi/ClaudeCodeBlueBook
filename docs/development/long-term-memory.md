@@ -2121,6 +2121,8 @@
 - 目录页只负责暴露证据梯度与拒收链，不负责承担阅读编排；凡是规范入口、切换协议、推荐顺序与当前批次收口说明，一律留在 `docs/` 和记忆层，不回正文
 - 仓库入口当前应固定成单向职责链：`README` 只做仓库级四分路由，`bluebook/README` 只做主线宪法与证据梯度，`navigation/README` 只做跨目录 judgment map，专题 README 只做各自前门；不要让多层入口同时重写同一条主线
 - `security/README` 当前应只保留高阶判断、编号段范围与 `appendix / source-notes / docs` 分流，不再镜像巨型 inventory、逐篇标题链或作者侧推进记忆；安全首页先回答价格秩序，再把读者送去具体 ladder
+- 治理线 canonical visible root 当前应固定成 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；`trusted inputs / distributed ask arbitration / durable assets` 可以继续作为内层对象或旧文件名兼容词，但不再占治理前门主位
+- `architecture/83` 应继续作为治理线的 canonical owner，`guides/31` 负责失稳前审读，`navigation/15 / 41 / 46` 负责问题梯子、第一性原理回压与迁移顺序；这些高阶节点必须沿 `83` 的 visible root 发问，不能各自再造一版 source-first 或 UI-first 世界观
 
 ## 后续章节建议
 

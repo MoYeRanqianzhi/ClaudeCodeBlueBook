@@ -6692,3 +6692,6 @@
 - 本轮继续收口四个前门页的职责链：根 `README` 现在只分 `bluebook / userbook / docs / source mirror` 四类入口，不再重复主线和专题库存；`bluebook/README` 现在只做主线宪法、按问题分流与证据梯度；`navigation/README` 现在只保留稳定节点与三条跨目录链；`security/README` 现在只保留高阶前门、编号段范围与 `appendix / source-notes / docs` 分流。
 - 同步确认安全目录前门不能再镜像巨型 inventory、逐篇标题链或 signer/governor 长阶梯；更稳的安全首页是先回答“同一治理秩序在动作、上下文、时间上的收费对象是什么”，再把读者分流到 `00-29 / 30-138 / 147-166 / 167-196 / 197-224` 这几段，而不是在首页重放整个编号宇宙。
 - 同步确认 merge 后最危险的目录回潮不是正文失真，而是入口页重新长回 route map / inventory page：一旦根 README、`bluebook/README`、`navigation/README` 或 `security/README` 同时承担路由、库存、执行链与作者记忆，future maintainer 就会更难快速看见 authority surface、consumer subset 与 reject path。
+- 本轮继续收口治理线 canonical owner：`architecture/83` 现在更明确把治理前门收回到 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，不再让 `trusted inputs / distributed ask arbitration` 这类旧 source-first 词汇继续占 H1 和前几段主位；`guides/31` 与 `navigation/15 / 41 / 46` 也同步改成围绕这条对象链发问、解释与迁移。
+- 同步确认治理线高阶节点不该再把“统一定价治理”写成字段或面板总称；更稳的写法是先问“谁给扩张定价、哪些 truth 已被外化、哪些 continuation 仍值得支付”，再下钻到 typed ask、visibility、cleanup、宿主消费与迁移门槛。
+- 并行 Agent 本轮再次有两路被 `429` 限流打断；当前策略仍应保持“侧线补强、不阻塞提交”。就本批而言，本地审读已经足以锁定治理线最值钱的可见收口点，不必等待并行结果回填后才落提交。
