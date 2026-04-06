@@ -6,6 +6,11 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`，`git fetch origin main` 成功，`git pull --ff-only` 返回 `Already up to date.`；本轮因此只是记录基线，不对根仓库做任何修改。
+- 本轮子目录首页对齐动作: 已继续更新 `philosophy/README`、`guides/README`、`playbooks/README`、`casebooks/README` 与 `navigation/README`，把子目录首页进一步统一到 `09 / 05 / 15 / 41` 的高阶分工：`09` 负责宪法总图，`05` 负责模仿对象校正，`15` 负责失稳前追问，`41` 负责第一性原理收束；同时让各目录 README 更明确声明自己不和高阶 judgment map 抢职责。
+- 本轮目录缺陷修复动作: 已修掉 `guides/README` 中重复的治理入口条目，避免目录首页自己制造一次“同题双入口”噪音。
+- 本轮治理侧线回灌动作: 已吸收一条并行 Agent 的有效结论，把 `Context Usage` 继续收回 `decision window` 的诚实投影，而不是成本面板；这一结论已回写到 `philosophy/README` 与 `guides/README` 的治理失败信号里。
+- 本轮并行 Agent 策略: 已继续复用现有子代理并行派发 Prompt / 治理 / 源码质量三条只读侧线；治理侧线返回了可吸收目录层的结论，源码质量侧线本批次窗口内仍未给出可直接回灌正文的有效内容，主线继续坚持“不让侧线阻塞当前批次提交”。
 - 本轮主分支预检阻塞: 根仓库 `main=8bf0c2f534f8c6a96ea81439488048d251e836cc`，`origin/main=526ff66fc5de711f346599f2075c96b19347c808`；`git fetch origin main` 正常，但 `git pull --ff-only origin main` 继续被根仓库未解决冲突拦住，本轮可见 unmerged 文件为 `bluebook/security/README.md`。按隔离要求，本轮不处理根仓库冲突，只在 `.worktrees/mainloop` 内形成闭环。
 - 本轮高阶目录/第一性原理收口动作: 已继续更新 `bluebook/README`、`06`、`navigation/05`、`navigation/15` 与 `navigation/41`，把目录结构进一步写成 `09 / 05 / 15 / 41` 四段高阶分工：`09` 负责宪法总图，`05` 负责校正模仿对象，`15` 负责失稳前追问，`41` 负责第一性原理收束；同时把各目录 README 重新钉回证据梯度分流，而不是继续摊平成 route map。
 - 本轮 Prompt 侧线回灌动作: 已吸收一条并行 Agent 的有效结论，把 Prompt 魔力进一步压成 `compile -> protocolize -> preserve -> continue -> explain` 五动作链：世界先被编译，协议真相先被转写，稳定前缀与合法遗忘先被保住，继续资格才被承认，最后失稳原因仍可被解释；这一结论已回写到 `navigation/05` 与 `navigation/41`。

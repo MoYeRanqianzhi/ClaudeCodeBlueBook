@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `philosophy/README / guides/README / playbooks/README / casebooks/README / navigation/README` 现已继续把子目录首页统一到高阶前门分工：
+  - `philosophy/README` 现在更明确要求读者先经过 `09 / 05 / 15 / 41`，再进入“为什么必须如此设计”的判断层。
+  - `guides/README` 现在更明确把模板页写成 `09 / 05 / 15 / 41` 之后的落地层，并修掉了重复的治理入口条目。
+  - `playbooks/README` 现在更明确声明这里只接受已经被承认的正式对象，不再替代模仿对象校正与失稳前追问。
+  - `casebooks/README` 现在更明确声明案例页只负责命名失真，不再和模板、执行与记忆混层。
+  - `navigation/README` 现在更明确把 `09 / 05 / 15 / 41` 写成一组稳定的高阶前门分工，而不是继续把它们并列成几个 route 节点。
+- 新的长期结论：
+  - 当根 README 与高阶导航已经换代后，下一层最值钱的目录优化就是让各子目录 README 明确承认自己和 `09 / 05 / 15 / 41` 的分工关系；否则 later maintainer 仍会在子目录首页把“哲学 / 模板 / 执行 / 反例 / 跨目录”重新混成一页。
+  - `guides/README` 这类目录首页的重复入口不是小排版问题，而是目录层会重新制造第二真相的信号；目录结构真正成熟时，首页本身也必须保持“同题只给一条主入口”的纪律。
+  - 治理线继续深化时，`Context Usage` 最稳的高阶写法不是成本面板，而是 `decision window` 的诚实投影；凡是目录首页仍把它写成 usage dashboard，都会把统一定价治理重新写浅。
 - `bluebook/README / 06 / navigation/05 / navigation/15 / navigation/41` 现已继续把高阶目录结构与第一性原理分工写硬：
   - `bluebook/README` 现在更明确把 `navigation/05 / 15 / 41` 固定成高阶 judgment map 的三种职责，并补出 Prompt / 治理 / 当前真相三条深剖稳定入口。
   - `06` 现在更明确把目录结构优化写成 `compile / price / externalize / evict` 四个跨平面函数在不同证据层上的责任分工，并把“目录前门是否仍说对主语”前置成顶层自校问题。
