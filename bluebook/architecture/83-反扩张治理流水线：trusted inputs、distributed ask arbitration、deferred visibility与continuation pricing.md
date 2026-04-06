@@ -52,7 +52,7 @@ Claude Code 更深的治理律，不是：
 
 这里还要再压硬一句：
 
-- `authority source` 不是解释框架，而是实现主键；后面的动作授权、工具可见性、上下文占位和 continuation 都只是 source-tagged rules 的消费结果
+- `governance key` 才是整张控制面的实现主键；`authority source` 只是最前面的 source slot，后面的动作授权、工具可见性、上下文占位和 continuation 都只是这张主键向下游派生出的受价结果
 
 ## 2. 第一性原理：trusted inputs 先于 trust UI
 
@@ -97,7 +97,7 @@ Claude Code 的一个高级点，是它先问：
 
 而是：
 
-- 先定 source slot，再由它派生 ask、visibility、externalization 与 continuation 的收费
+- 先定 `governance key` 的 source slot，再由它派生 `externalized truth chain`、typed ask、visibility、externalization 与 continuation 的收费
 
 ## 3. Permission 是 distributed transaction，不是 modal
 

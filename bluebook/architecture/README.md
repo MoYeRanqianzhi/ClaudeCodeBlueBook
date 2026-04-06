@@ -22,7 +22,7 @@
 - [38-Contract优先、运行时底盘与公开镜像缺口](38-Contract优先、运行时底盘与公开镜像缺口.md)
 - [60-恢复优先的双通道状态面：writeback、resume与reconnect一体化](60-恢复优先的双通道状态面：writeback、resume与reconnect一体化.md)
 - [63-可演化内核：Claude Code如何在持续增长中维持不变量](63-可演化内核：Claude Code如何在持续增长中维持不变量.md)
-- [82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks](82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md): 看 `message lineage` 如何被投影成 display / protocol / handoff truth
+- [82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks](82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md): 看 `message lineage` 如何被压成三键内核，并被 display / protocol / SDK / handoff 四类 consumer 共同消费
 - [83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing](83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md): 看 `source lattice` 如何派生动作、可见性与 continuation 定价
 - [84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping](84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md): 看 anti-stale 如何落到 freshness gate、validator、per-host 与 capability surface
 

@@ -1,12 +1,11 @@
-# 统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate
+# 统一定价治理宿主消费面手册：governance key、externalized truth chain、typed ask、decision window 与 continuation pricing
 
-这一章回答五个问题：
+Claude Code 当前没有公开一份名为 `governance_key` 的单独公共对象，但宿主已经能通过分层支持面消费同一条治理链：
 
-1. Claude Code 当前到底通过哪些正式支持面让宿主消费统一定价治理。
-2. 哪些属于宿主可写 control request，哪些属于宿主可读状态面，哪些仍然是 internal-only 决策逻辑。
-3. 为什么 authority source、decision window、pending action、continuation gate 与 rollback object 必须被一起消费。
-4. 为什么宿主不该把治理理解成若干弹窗、若干 mode 名字与若干 token 条。
-5. 宿主开发者该按什么顺序接入这套治理支持面。
+1. 宿主可写的 key inputs
+2. 宿主可读的 `externalized truth chain`
+3. 宿主可见的 `typed ask / decision window / continuation pricing` 投影
+4. 宿主不应直接绑定的 internal decision machinery
 
 ## 0. 关键源码锚点
 
@@ -20,134 +19,132 @@
 - `claude-code-source-code/src/query/tokenBudget.ts:45-92`
 - `claude-code-source-code/src/cli/print.ts:2961-3010`
 
-## 1. 先说结论
+## 1. 宿主可写：围绕 `governance key` 的输入面
 
-Claude Code 当前并没有公开一份名为：
-
-- `governance_control_plane`
-
-的单独公共对象。
-
-但统一定价治理已经通过三层支持面被宿主稳定消费：
-
-1. `control requests`
-   - 宿主能写哪些治理输入。
-2. `state / metadata / usage projections`
-   - 宿主能看到哪些当前治理真相。
-3. `internal decision machinery`
-   - 真正做仲裁、时间定价与继续判断的内部机制。
-
-更成熟的接入方式不是：
-
-- 只接 `can_use_tool`
-
-而是：
-
-- 明确知道自己当前是在写治理边界、读治理状态，还是只消费内部决策的外化效果
-
-## 2. control requests：宿主可写治理输入
-
-当前最关键的治理写入口包括：
+当前最关键的宿主写入口包括：
 
 1. `can_use_tool`
 2. `set_permission_mode`
-3. `get_context_usage`
-4. `get_settings`
-5. `apply_flag_settings`
-6. `rewind_files`
+3. `apply_flag_settings`
+4. `rewind_files`
 
-这说明宿主在 Claude Code 里不是：
+这些写入口真正作用的不是零散操作，而是：
 
-- 被动接收答案的界面
+- 改变 `governance key`
+- 请求一次 `typed ask`
+- 触发 cleanup / rewind
 
-而是：
+因此宿主在 Claude Code 里不是被动接收答案的前端，而是正式参与治理主键与回退主键的控制面消费者。
 
-- 正式参与治理边界与回退边界的控制面消费者
+## 2. 宿主可读：`externalized truth chain`
 
-## 3. authority source：宿主可读权威源
-
-宿主当前最该消费的 authority source 主要有：
+宿主当前最该一起消费的外化真相链主要有：
 
 1. `get_settings.sources`
 2. `get_settings.effective`
 3. `get_settings.applied`
 4. `external_metadata.permission_mode`
+5. `session_state_changed.state`
+6. `worker_status`
+7. `external_metadata.pending_action`
+8. `get_context_usage`
 
 这些面共同回答：
 
 1. 谁改了边界。
-2. 现在真正生效的边界是什么。
-3. 对外应该看到哪一个 mode 投影。
+2. 当前真正生效的边界是什么。
+3. 当前卡在哪。
+4. 当前为什么变贵。
+5. 当前需要谁行动。
 
-正确理解不是：
+更准确的读法不是：
 
 - 只看 mode 名字
+- 只看 token 百分比
+- 只看 pending_action 文案
 
 而是：
 
-- 围绕 settings / policy / applied runtime 结果消费当前权威源
+- 把它们当作同一条 `externalized truth chain` 的不同节点。
 
-## 4. decision window：宿主可读当前判断窗口
+## 3. `typed ask`：宿主可消费的事务投影
 
-当前最该被一起消费的 decision window 投影主要有：
+宿主不该把 ask 理解成“弹窗出现过”，而应把它理解成一场带关联键的治理事务。当前最重要的外化信号是：
 
-1. `session_state_changed.state`
-2. `worker_status`
-3. `external_metadata.pending_action`
-4. `get_context_usage`
+1. `can_use_tool` request / response
+2. 与 `request_id`、`tool_use_id` 相连的幂等关系
+3. `pending_action`
+4. `worker_status`
 
-这些面共同回答：
+这些信号共同说明：
 
-1. 当前卡在哪。
-2. 当前需要谁行动。
-3. 当前为什么变贵。
-4. 当前是否还值得继续。
+1. ask 围绕哪个行动对象成立。
+2. ask 现在处于等待、拒收还是已消费状态。
+3. 哪条 response 仍然有效，哪条已经 stale。
+
+对宿主开发者来说，正确做法不是自己猜 ask 生命周期，而是消费这组已外化的事务投影。
+
+## 4. `decision window`：宿主可读的解释窗口
+
+当前最该被一起消费的 `decision window` 证据面包括：
+
+1. `get_context_usage`
+2. `external_metadata.pending_action`
+3. `session_state_changed.state`
+4. `worker_status`
+
+这些面共同解释：
+
+1. 当前上下文被什么占席位。
+2. 当前还有哪些对象未加载。
+3. 当前为什么不该继续，或者为什么还配继续。
+4. 当前需要用户、宿主还是 worker 来采取动作。
 
 要特别避免的误读是：
 
-- 把 `pending_action` 当 UI 附件
-- 把 `get_context_usage.percentage` 当 decision window 本身
+- 把 `pending_action` 当 UI 附件。
+- 把 `get_context_usage.percentage` 当 decision window 本身。
 
-## 5. continuation gate 与 rollback object 的支持面
+## 5. `continuation pricing` 与 cleanup 的宿主投影
 
-`continuation gate` 与 `rollback object` 当前没有单独公共对象，但已经通过多个支持面被正式外化：
+`continuation pricing` 与 `rollback / durable-transient cleanup` 当前没有单独公共对象，但已经通过多个支持面被正式外化：
 
 1. `get_context_usage.autoCompactThreshold`
 2. `get_context_usage.apiUsage`
-3. `tokenBudget` 外化出来的 stop / continue 结果投影
-4. `rewind_files`
-5. `pending_action`
-6. 当前 state / worker status
+3. `pending_action`
+4. `worker_status`
+5. `rewind_files`
+6. 当前 state snapshot
 
-这说明 continuation 与 rollback 不该被理解成：
+这说明宿主不该把 continuation 与 rollback 理解成内部补丁逻辑，而应理解成：
 
-- 内部补丁逻辑
+- 时间是否继续收费的正式投影
+- 哪些资产仍能带走、哪些权威必须清掉的正式投影
 
-而该被理解成：
+因此：
 
-- 通过多个 state / control / usage surfaces 共同暴露的时间边界与回退边界
+- `continuation gate` 只是 `continuation pricing` 的 verdict。
+- `rollback object` 只是 cleanup / handoff 的 carrier。
 
 ## 6. internal decision machinery：不应直接当公共 ABI 依赖
 
 真正做治理判断的关键机制仍在内部：
 
-1. classifier 内部分支
+1. classifier 细分支
 2. fast-path / fail-open / fail-closed 细节
-3. continuation 内部 tracker 字段
-4. StructuredIO 的内部竞速去重逻辑
+3. continuation tracker 内部字段
+4. StructuredIO 的竞速去重逻辑
 5. append-chain 自愈与 adopt 细节
 
-对宿主开发者来说，正确做法不是：
+对宿主开发者来说，正确做法不是绑定这些内部细节，而是消费已经外化出来的：
 
-- 绑定这些内部细节
+1. `governance key` 相关输入面
+2. `externalized truth chain`
+3. `typed ask` 投影
+4. `decision window`
+5. `continuation pricing` 与 cleanup 投影
 
-而是：
-
-- 消费已经外化出来的 authority / window / rollback / state surfaces
-
-## 7. 三层支持矩阵
-
-更稳的治理接入矩阵可以写成：
+## 7. 支持矩阵
 
 ### 7.1 宿主可写
 
@@ -177,18 +174,18 @@ Claude Code 当前并没有公开一份名为：
 
 更稳的顺序是：
 
-1. 先接 `control requests`。
-2. 再接 `session_state_changed / worker_status / pending_action`。
-3. 再接 `get_settings` 与 `get_context_usage` 解释 authority source 与 decision window。
+1. 先接 `control requests`，保证宿主能写正式治理输入。
+2. 再接 `session_state_changed / worker_status / pending_action`，保证宿主能读当前窗口。
+3. 再接 `get_settings` 与 `get_context_usage`，保证宿主能解释 `externalized truth chain` 与 `decision window`。
 4. 最后才组织自己的治理面板、CI 门禁与交接包。
 
 不要做的事：
 
 1. 不要只接 `can_use_tool` 就宣布治理接入完成。
 2. 不要只接 token 面板就宣布成本面成立。
-3. 不要让宿主自己从 UI 状态猜 rollback object。
-4. 不要把 internal mode 或内部 classifier 分支当公共契约。
+3. 不要让宿主自己从 UI 状态猜 rollback / cleanup 语义。
+4. 不要把 internal mode 或 classifier 分支当公共契约。
 
 ## 9. 一句话总结
 
-Claude Code 的统一定价治理支持面，不是若干零散 control API，而是“control requests + authority source + decision window + continuation / rollback 投影”共同组成的分层宿主消费面。
+Claude Code 的统一定价治理支持面，不是若干零散 control API，而是“宿主可写 key inputs + 宿主可读 truth chain + typed ask / decision window / continuation pricing 投影 + internal-only machinery”共同组成的分层宿主消费面。

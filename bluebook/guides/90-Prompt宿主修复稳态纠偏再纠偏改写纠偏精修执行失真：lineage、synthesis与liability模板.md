@@ -1,14 +1,17 @@
-# 如何把Prompt宿主修复稳态纠偏再纠偏改写纠偏精修执行失真压回编译对象：固定refinement顺序、lineage、synthesis与liability改写模板骨架
+# 如何把 Prompt 宿主修复稳态纠偏再纠偏改写纠偏精修执行失真压回 message lineage：固定 refinement 顺序、lineage、synthesis 与 liability 模板骨架
 
-这一章不再解释 Prompt 宿主修复稳态纠偏再纠偏改写纠偏精修执行最常怎样失真，而是把 Claude Code 式 Prompt refinement execution distortion 压成一张可执行的 builder-facing 手册。
+Prompt refinement execution distortion 真正要救回的，不是更完整的 `host consumption card`，而是同一条 `message lineage` 在 refinement 之后仍围绕同一套编译约束成立：
 
-它主要回答五个问题：
+1. `message lineage`
+2. `projection consumer`
+3. `section registry + dynamic boundary`
+4. `coordinator synthesis custody`
+5. `protocol-prefix custody`
+6. `continuation object`
+7. `continuation qualification`
+8. `reopen liability`
 
-1. 为什么 Prompt refinement execution distortion 真正要救回的不是一张更漂亮的 `host consumption card`，而是同一条 `compiled request truth` 编译链。
-2. 怎样把假 `host consumption card`、假 `compiled request lineage`、假 `registry-boundary rewrite`、假 `coordinator synthesis custody` 与假 `reopen liability ledger` 压回固定 `refinement order`。
-3. 哪些现象应被直接升级为硬拒收，而不是继续补 handoff packet、研究摘要与说明 prose。
-4. 怎样把 `host consumption card`、`lineage-boundary rewrite block` 与 `reopen liability ticket` 重新压回对象级骨架。
-5. 怎样用苏格拉底式追问避免把改写写成“把 Prompt 宿主消费卡再写得更正式”。
+`compiled request truth`、`host consumption card` 与 `reopen liability ledger` 都只能保留为旧总称或修复工件，不能继续当一级主语。
 
 ## 0. 代表性源码锚点
 
@@ -29,28 +32,24 @@
 
 ## 1. 第一性原理
 
-Prompt refinement execution distortion 真正要救回的不是：
+Prompt refinement execution distortion 真正要拒绝的，不是研究材料不够多，而是主线程综合责任被研究 prose 与展示工件替身化：
 
-- 一张更完整的 `host consumption card`
-- 一份更像制度的 handoff packet
-- 一组更全面的子 Agent 研究摘要
+- `host consumption card` 冒充主对象
+- packet / handoff / UI transcript 冒充 `message lineage`
+- 静态目录或 attachment prose 冒充 `section registry + dynamic boundary`
+- 子 Agent 研究结论冒充 `coordinator synthesis custody`
+- 顺滑交接感冒充 `protocol-prefix custody`
+- 礼貌继续冒充 `continuation qualification`
+- 口头 reopen 提醒冒充 liability
 
-而是：
+所以更稳的纠偏目标不是把 refinement execution 叙事说圆，而是：
 
-- 同一个 `compiled request truth` 在 refinement execution 已经说过一次谎之后，仍能被模型继续消费、被 later 团队继续接手、被系统继续合法重开，而不重新退回 packet、handoff、UI transcript 与研究 prose
-
-所以更稳的纠偏目标不是：
-
-- 先把 refinement execution 叙事说圆
-
-而是：
-
-1. 先把假 `host consumption card` 降回结果信号，而不是让它充当主对象。
-2. 先把 `compiled request lineage` 从 packet、UI transcript 与 summary handoff 里救出来。
-3. 先把 `section registry + dynamic boundary` 从静态目录、正文幻觉与 attachment prose 里救出来。
-4. 先把 `coordinator synthesis custody` 从研究总结与子 Agent prose 里救出来。
-5. 先把 `protocol-prefix custody` 与 `forgetting-continuation covenant` 从“看起来还能继续”的氛围里救出来。
-6. 最后才把 `reopen liability ledger` 从礼貌说明里救出来。
+1. 先把假 `host consumption card` 降回结果信号。
+2. 先把 `message lineage` 从 packet、UI transcript 与 summary handoff 里救出来。
+3. 先把运行时 `section registry + dynamic boundary` 从静态目录与 attachment prose 里救出来。
+4. 先把 `coordinator synthesis custody` 从研究 prose 里救出来。
+5. 先把 `protocol-prefix custody` 与 `continuation object` 从“看起来还能继续”的氛围里救出来。
+6. 最后才把 reopen liability 从礼貌说明里救出来。
 
 ## 2. 固定 refinement 顺序
 
@@ -67,21 +66,20 @@ Prompt refinement execution distortion 真正要救回的不是：
 
 1. `host_consumption_card_id`
 2. `refinement_session_id`
-3. `restored_request_object_id`
-4. `compiled_request_hash`
-5. `truth_lineage_ref`
-6. `section_registry_generation`
-7. `reject_verdict`
-8. `verdict_reason`
+3. `truth_lineage_ref`
+4. `section_registry_generation`
+5. `compiled_request_hash_legacy`
+6. `reject_verdict`
+7. `verdict_reason`
 
-### 2.2 再恢复 `compiled request lineage`
+### 2.2 再恢复 `message lineage`
 
 第二步要救回：
 
-1. `restored_request_object_id`
-2. `compiled_request_hash`
-3. `truth_lineage_ref`
-4. `compiled_request_family`
+1. `truth_lineage_ref`
+2. `lineage_kernel_integrity`
+3. `restored_request_object_id`
+4. `compiled_request_family_legacy`
 5. `shared_consumer_surface`
 6. `request_truth_restituted_at`
 
@@ -91,7 +89,7 @@ Prompt refinement execution distortion 真正要救回的不是：
 2. 不要先看 later 团队是否主观觉得“现在我懂了”。
 3. 不要先看 token 似乎还够用。
 
-### 2.3 再恢复 `registry-boundary rewrite`
+### 2.3 再恢复 `section registry + dynamic boundary`
 
 第三步要把 Prompt Constitution 的运行时法律地位救回：
 
@@ -120,29 +118,31 @@ Prompt refinement execution distortion 真正要救回的不是：
 
 第五步要把协议真相与共享前缀从显示层里救回：
 
-1. `protocol_transcript_health`
-2. `tool_pairing_health`
-3. `transcript_boundary_attested`
-4. `stable_prefix_boundary`
-5. `cache_break_budget`
-6. `cache_break_threshold`
+1. `projection_consumer_alignment`
+2. `protocol_transcript_health`
+3. `tool_pairing_health`
+4. `transcript_boundary_attested`
+5. `stable_prefix_boundary`
+6. `cache_break_budget`
+7. `cache_break_threshold`
 
 只要这一步没修好，refinement execution 仍然只是“交接看起来更顺滑”。
 
-### 2.6 再恢复 `forgetting-continuation covenant`
+### 2.6 再恢复 `continuation object` 与 `qualification`
 
 第六步要把继续资格从礼貌继续里救回：
 
 1. `lawful_forgetting_boundary`
 2. `preserved_segment_ref`
 3. `compaction_lineage`
-4. `continue_qualification`
-5. `token_budget_ready`
-6. `rollback_boundary`
+4. `continuation_object_ref`
+5. `continuation_qualification`
+6. `token_budget_ready`
+7. `rollback_boundary`
 
 没有这一步，continuation 仍只是“先继续再说”。
 
-### 2.7 最后恢复 `reopen liability ledger`
+### 2.7 最后恢复 `reopen liability`
 
 最后才修未来反对当前 refinement execution 的能力：
 
@@ -157,60 +157,62 @@ Prompt refinement execution distortion 真正要救回的不是：
 
 1. 不要先补 reopen 提醒，再修 lineage object。
 2. 不要先让 handoff 更顺滑，再修 boundary / synthesis。
-3. 不要先让 `host consumption card` 更正式，再修 liability ledger。
+3. 不要先让 `host consumption card` 更正式，再修 liability。
 
 ## 3. 硬拒收规则
 
 出现下面情况时，应直接升级为硬拒收：
 
 1. `refinement_session_missing`
-2. `compiled_request_truth_unrestituted`
-3. `truth_lineage_ref_missing`
+2. `truth_lineage_ref_missing`
+3. `lineage_kernel_integrity_failed`
 4. `section_registry_staticized`
 5. `dynamic_boundary_unattested`
 6. `late_bound_attachment_promoted`
 7. `coordinator_synthesis_owner_missing`
 8. `research_prose_as_truth`
-9. `protocol_transcript_health_failed`
-10. `stable_prefix_boundary_missing`
-11. `lawful_forgetting_boundary_missing`
-12. `continue_qualification_unbound`
-13. `threshold_liability_missing`
-14. `reopen_required_but_card_still_green`
+9. `projection_consumer_split_detected`
+10. `protocol_transcript_health_failed`
+11. `stable_prefix_boundary_missing`
+12. `lawful_forgetting_boundary_missing`
+13. `continuation_qualification_unbound`
+14. `threshold_liability_missing`
+15. `reopen_required_but_card_still_green`
 
 ## 4. 模板骨架
 
-### 4.1 host consumption card 骨架
+### 4.1 `host consumption card` 骨架
 
 1. `host_consumption_card_id`
 2. `refinement_session_id`
-3. `restored_request_object_id`
-4. `compiled_request_hash`
-5. `truth_lineage_ref`
-6. `section_registry_generation`
-7. `system_prompt_dynamic_boundary`
-8. `coordinator_synthesis_owner`
+3. `truth_lineage_ref`
+4. `lineage_kernel_integrity`
+5. `section_registry_generation`
+6. `system_prompt_dynamic_boundary`
+7. `coordinator_synthesis_owner`
+8. `projection_consumer_alignment`
 9. `protocol_transcript_health`
 10. `stable_prefix_boundary`
 11. `lawful_forgetting_boundary`
-12. `continue_qualification`
-13. `threshold_retained_until`
-14. `reject_verdict`
-15. `verdict_reason`
+12. `continuation_object_ref`
+13. `continuation_qualification`
+14. `threshold_retained_until`
+15. `reject_verdict`
 
-### 4.2 lineage boundary rewrite block 骨架
+### 4.2 `lineage boundary rewrite block` 骨架
 
 1. `lineage_boundary_rewrite_block_id`
 2. `lineage_gap`
 3. `registry_gap`
 4. `boundary_gap`
 5. `synthesis_gap`
-6. `protocol_gap`
-7. `prefix_gap`
-8. `forgetting_gap`
-9. `fallback_verdict`
+6. `projection_gap`
+7. `protocol_gap`
+8. `prefix_gap`
+9. `forgetting_gap`
+10. `fallback_verdict`
 
-### 4.3 reopen liability ticket 骨架
+### 4.3 `reopen liability ticket` 骨架
 
 1. `reopen_liability_id`
 2. `truth_break_trigger`
@@ -221,34 +223,16 @@ Prompt refinement execution distortion 真正要救回的不是：
 7. `liability_scope`
 8. `liability_owner`
 
-## 5. 与 `casebooks/61` 的边界
-
-`casebooks/61` 回答的是：
-
-- 为什么 Prompt refinement execution 明明已经存在，仍会重新退回假 `host consumption card`、假 `synthesis custody` 与假 `reopen liability`
-
-这一章回答的是：
-
-- 当这些假对象已经被辨认出来之后，具体该按什么固定 `refinement order` 把它们压回同一个 Prompt 编译对象
-
-也就是说，`casebooks/61` 负责：
-
-- 识别 Prompt refinement execution 怎样被更体面的 packet、handoff 与研究 prose 取代
-
-而这一章负责：
-
-- 把这些替代信号按 lineage、boundary、synthesis、protocol、continuation 与 liability 的对象顺序拆掉
-
-## 6. 苏格拉底式检查清单
+## 5. 苏格拉底式检查清单
 
 在你准备宣布“Prompt refinement execution distortion 已纠偏完成”前，先问自己：
 
-1. 我救回的是同一个 `compiled request truth`，还是一份更正式的 handoff packet。
+1. 我救回的是同一条 `message lineage`，还是一份更正式的 handoff packet。
 2. 我重封的是 runtime `section registry`，还是一张更好看的目录表。
 3. 我现在保护的是 `coordinator_synthesis_owner`，还是一份更完整的研究结论。
-4. 我现在恢复的是 `continue qualification`，还是一种“先继续再说”的默认冲动。
+4. 我现在恢复的是 `continuation qualification`，还是一种“先继续再说”的默认冲动。
 5. 我现在保留的是 future reopen 的正式条件，还是一句“以后有问题再看”。
 
-## 7. 一句话总结
+## 6. 一句话总结
 
-真正成熟的 Prompt refinement execution 纠偏，不是把宿主消费卡写得更完整，而是把 `compiled request lineage + registry-boundary rewrite + coordinator synthesis custody + protocol-prefix custody + forgetting-continuation covenant + reopen liability ledger` 继续拉回同一个 Prompt 编译对象。
+真正成熟的 Prompt refinement execution 纠偏，不是把宿主消费卡写得更完整，而是把 `message lineage + registry-boundary rewrite + coordinator synthesis custody + protocol-prefix custody + continuation object + reopen liability` 继续拉回同一个 Prompt 编译对象。
