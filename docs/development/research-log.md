@@ -28,8 +28,21 @@
 - 本轮多 Agent 结果回灌动作: 已把并行 Agent 关于 `prompt 魔力`、`安全/省 token`、`源码先进性` 的三条硬判断回灌到 `09`、`security/README`、`risk/README` 与 `api/46-services`，把“世界准入法律 / 四种扩张定价 / 证据梯度 + 时间诚实”前置给第一次进入这些入口的读者。
 - 本轮入口去机制清单化动作: 已继续更新 `00-导读`、`api/README`、`api/46-services`、`security/14`、`risk/01` 与 `risk/11`，把入口页和总图页从“平面划分 / 机制枚举 / 流程闭环”继续压成“先判断什么、哪些对象在收费、哪些时间风险最危险”的前门语言。
 - 本轮入口结构换挡动作: 已继续更新 `06`、`07`、`navigation/01` 与 `navigation/41`，把三条硬判断正式提升成这些前门页的默认入口，原本的八问题、五平面与深层对象名词全部降为二级展开，不再并列竞争主线解释权。
+- 本轮主论证深化动作: 已继续更新 `03`、`security/01` 与 `philosophy/76`，把 Prompt 魔力、安全控制面、源码地图三条论证各自继续压到 `request object / 四种扩张定价 / 证据梯度+时间诚实+future maintainer` 这一层，而不只停在入口摘要。
 - 本轮深专题收束动作: 已继续更新 `navigation/03` 与 `07`，把旧深线接回新的主线/方法/验证/反例链，并把五个平面继续压回三句判断。
 - 主分支同步检查: `2026-04-06` 先尝试在仓库根执行 `checkout main && pull --ff-only`，但因共享主工作区存在未解决索引而停止；随后改用只读检查 `fetch origin + rev-parse/rev-list`，确认 `origin/main` 无新增提交，当前本地 `main` 领先 `origin/main` 29 个提交，因此本轮不改主分支，只在 `mainloop` 内推进。
+
+### A100. 设计内涵继续深化后，最值钱的不再是更多高阶短句，而是把高阶短句压成可排查的对象
+
+- Prompt 线如果只停在“世界进入模型前先被编译”，仍可能被重新误读成更强 prompt 工艺；只有继续压到 `display truth / protocol truth / handoff truth` 同属一个 request object，以及 prefix asset 能否继续共享，读者才会真正离开“文案更强”的旧解释。
+- 治理线如果只停在“统一定价”，仍可能被重新误读成更精细的风控故事；只有继续压到权威、动作、上下文、连续性四类扩张分别在被收费，安全与省 token 的同构性才会变得可检验。
+- 源码质量线如果只停在“权威入口 / consumer subset / danger surface”，仍会残留目录美学读法；必须继续把证据梯度、时间诚实与 future maintainer reject path 一起写进源码地图，才能真正把 later 维护者纳入设计对象。
+
+证据:
+
+- `bluebook/03-设计哲学.md`
+- `bluebook/security/01-安全总论：Claude Code 不是单点沙箱，而是分层安全控制面.md`
+- `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`
 
 ### A099. 当主线已经有了更高阶判断，真正难的不是写出它，而是让旧框架退到二级
 
