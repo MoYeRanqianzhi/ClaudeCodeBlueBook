@@ -6,6 +6,11 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=4ad3d88510e09ca4ada4ae9852241b7a15e79b33`；`git fetch origin` 成功，`rev-list --left-right --count main...origin/main` 返回 `0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本轮继续只在 `.worktrees/mainloop` 内推进。
+- 本轮 mainloop 基线: `HEAD=10a449f4ce8a7ea6a4b28ad479a94554a3e8377a`，编辑前 `git status --short --branch` 返回干净工作树；本批次所有正文、记忆与提交都只落在当前 worktree。
+- 本轮 root/session 前门补口动作: 已继续更新 `userbook/04-专题深潜/19`、`03-参考索引/01-命令工具/03 / 04 / 05` 与 `06`，把这一组前门统一压成双段对象链：`compile same world -> bootstrap plane -> session materialization -> authority/context assembly -> runtime handoff` 与 `state truth -> trustworthiness -> decision window -> continuation path -> session tuning / display`。
+- 本轮并行 Agent 合流结论: Prompt 线继续确认“先装世界、再消费当前世界”是 user-facing 最短判断；治理线继续确认安全与省 token 是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链；源码质量线继续确认最佳前门不是文件体感，而是 `evidence gradient + authority surface + temporal honesty + future maintainer rejectability`。
+- 本轮目录结构深化结论: `userbook` 这一层现在更明确只负责 plane/object/frontdoor，不再承担深层 verdict；`06` 则继续承担三条母线的苏格拉底可自校判据。只有这两层不互相越位，later maintainer 才不会在前门层重新退回配对表、状态页或目录美学。
 - 本轮主分支同步检查: 根仓库当前 `main=origin/main=2c50f2af703fdbe3a25c40bd8512258a75b0b5f7`，`git fetch origin --prune` 成功，`rev-list --left-right --count main...origin/main` 返回 `0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本轮只记录基线，不对根仓做其他写操作。
 - 本轮 mainloop 基线: `HEAD=59c8133a24b1ff2255dd40bf708bca55c0e31d34`，`main=origin/main=2c50f2af703fdbe3a25c40bd8512258a75b0b5f7`，`git rev-list --left-right --count HEAD...origin/main` 返回 `1 140`，说明当前 worktree 继续作为独立研究支线推进，而不是尝试贴着主线快进。
 - 本轮命令入口前推动作: 已继续更新 `userbook/05-控制面深挖/05`、`11` 与 `03-参考索引/01-命令工具/README`、`06`，把命令入口层从“按钮/命令名决策树”继续压回两条前门公式：`task object -> capability projection -> runtime gate -> execution surface` 与 `command object -> execution semantics -> visibility/caller gate -> host mode`。

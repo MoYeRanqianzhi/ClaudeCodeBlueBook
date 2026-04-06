@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `userbook/04-专题深潜/19-会外控制台与会内面板专题`、`03-参考索引/01-命令工具/03-CLI 旗标与根命令索引`、`04-根命令与斜杠命令对照索引`、`05-设置、状态、预算与调参入口索引` 与 `06-第一性原理与苏格拉底反思` 现已继续把 root/session/control-surface 这一组前门压成同一条双段对象链：
+  - root plane 现在更明确固定为 `compile same world -> bootstrap plane -> session materialization -> authority/context assembly -> runtime handoff`；它负责装世界，而不是展示 current world。
+  - session plane 现在更明确固定为 `state truth -> trustworthiness -> decision window -> continuation path -> session tuning / display`；它只在 root plane 已把工作世界装好后才成立。
+  - `04` 现在更明确把“同名入口先分 plane，再谈是否配对”写成短句，并要求遇到缺失对偶项时直接承认 root-only / session-only。
+- 新的长期结论：
+  - 命令入口组继续成熟时，最稳的用户侧短句不是“root 和 slash 哪些成对”，而是“会外控制台先装世界，会内控制面再消费当前世界”；这条分界本身就是 Prompt magic 在 user-facing 层的投影。
+  - 安全与省 token 在线控件层真正合流时，最稳的前门不是 token bar 或成本页，而是 `decision window -> continuation path`；只要 `/usage` 被重新写成账单条、`/extra-usage` 被写回查询页，治理线就会退回 UI 投影。
+  - 源码先进性在命令系统这组页里的可见证据，不是命令覆盖更全，而是 later maintainer 能独立指出 `plane -> object -> semantics -> gate` 与 `bootstrap truth != present truth` 两条拒错链，而不依赖作者口头补语义。
+  - `06` 现在更明确把三条母线各自收回最短拒错顺序：Prompt 线回 `same-world test -> witness chain -> continuation qualification`，治理线回 `governance key -> decision window -> continuation pricing -> durable-transient cleanup`，源码质量线回 `authority surface -> writeback split -> freshness gate -> later-maintainer rejectability`。
+  - 目录结构继续优化时，`userbook` 应长期守住 plane/object/frontdoor，`philosophy` 守住不可约判断，`architecture` 守住 choke point，`guides` 守住问题梯子，`playbooks` 守住 verdict，`casebooks` 守住 distortion，`docs` 守住 memory；只要前门失去 object chain，later maintainer 就会重新回到作者记忆。
 - `userbook/04-专题深潜/03-治理与安全专题`、`07-会话运营、分叉与回退专题` 与 `08-上下文接入、附件与提示编译专题` 现已继续把入口层稳定下来的三组最小顺序前推到专题正文第一页：
   - `03` 现在更明确先按 `governance key -> decision window -> failure verdict -> command entrance` 进入，而不是先按按钮名进入。
   - `07` 现在更明确先按“同一个工作对象 -> stable bytes vs working set -> 时间线选择 -> 命令选择”进入，而不是先按聊天记录或命令表进入。

@@ -21,6 +21,16 @@
 
 所以这页不是“更多旗标说明书”，而是“进程启动怎样把一个工作世界装起来”的索引页。
 
+如果再往 Prompt/runtime 这一层压，这页其实只在回答一件事：
+
+- `compile same world -> bootstrap plane -> session materialization -> authority/context assembly -> runtime handoff`
+
+也就是：
+
+- root plane 的职责不是展示当前世界，而是把一个可继续的工作世界装出来
+- print、REPL、background、bridge 只是这个 handoff 的不同落点
+- 最容易写错的不是漏掉某个旗标，而是把 root bootstrap truth 写成 session present truth
+
 如果把这页再压成更短的角色句，只剩一句：
 
 - 这是 root plane 的投影页，先分 `flag / root command / fast-path`，再分它们各自承载的 lifecycle semantics 与 visibility。
@@ -33,6 +43,7 @@
 - 这条入口为什么在 bridge / headless / remote 下表现不同。
 - 这条状态、预算或调参入口到底属于哪个会内控制面对象。
 - 这条 root 入口和 slash 入口只是名字像，还是其实同层。
+- 你现在真正要看的已经是当前 `AppState`、permission context、tool pool 或 session refresh。
 
 这些都应继续回：
 

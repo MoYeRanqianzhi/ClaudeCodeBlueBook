@@ -2,6 +2,9 @@
 
 ## 2026-04-06
 
+- 继续更新 `userbook/04-专题深潜/19-会外控制台与会内面板专题`、`03-参考索引/01-命令工具/03-CLI 旗标与根命令索引`、`04-根命令与斜杠命令对照索引` 与 `05-设置、状态、预算与调参入口索引`，把 root/session/control-surface 这一组前门统一压成双段对象链：`compile same world -> bootstrap plane -> session materialization -> authority/context assembly -> runtime handoff` 与 `state truth -> trustworthiness -> decision window -> continuation path -> session tuning / display`，并明确 root-only/session-only 不应被硬凑成同名配对
+- 继续更新 `06-第一性原理与苏格拉底反思`，把三条母线的最短拒错顺序写硬为 `same-world test -> witness chain -> continuation qualification`、`governance key -> decision window -> continuation pricing -> durable-transient cleanup` 与 `authority surface -> writeback split -> freshness gate -> later-maintainer rejectability`，同时把目录职责进一步收口为 `userbook=plane/object/frontdoor`
+- 本轮根仓库 `main` 同步检查更新为：`main=origin/main=4ad3d88510e09ca4ada4ae9852241b7a15e79b33`、`main...origin/main = 0 0`，`merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
 - 继续补强 `userbook/03-参考索引/01-命令工具/03-CLI 旗标与根命令索引` 与 `README`，把 `03` 更明确固定为 root plane 投影页，并把 `03 / 04 / 05 / 06` 的页职责写清
 - 继续补强 `userbook/03-参考索引/01-命令工具/05-设置、状态、预算与调参入口索引` 与 `05-控制面深挖/10-设置面板、诊断屏与运营命令：会内控制面的三层分工`，把这组入口的最短对象链进一步压成 `state truth -> trustworthiness -> decision window -> continuation path -> session tuning / display`，并明确 `/extra-usage`、`/rate-limit-options` 属于 continuation path 而不是观测层
 - 继续补强 `userbook/03-参考索引/01-命令工具/README` 与 `06-命令类型、执行语义与可见性索引`，把命令工具这一组再压成一条更短总公式：`plane -> object -> semantics -> gate`
