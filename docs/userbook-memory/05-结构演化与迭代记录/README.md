@@ -74,6 +74,7 @@
 - [70-2026-04-06-disableSlashCommands does not kill remote slash ingress 拆分记忆.md](./70-2026-04-06-disableSlashCommands%20does%20not%20kill%20remote%20slash%20ingress%20拆分记忆.md)
 - [71-2026-04-06-remote local command plane selective thinning 拆分记忆.md](./71-2026-04-06-remote%20local%20command%20plane%20selective%20thinning%20拆分记忆.md)
 - [72-2026-04-06-remote tool plane stays live 拆分记忆.md](./72-2026-04-06-remote%20tool%20plane%20stays%20live%20拆分记忆.md)
+- [73-2026-04-06-remote tool plane local authority 拆分记忆.md](./73-2026-04-06-remote%20tool%20plane%20local%20authority%20拆分记忆.md)
 
 用途：
 

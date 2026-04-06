@@ -61,3 +61,4 @@
 - [59-Remote disableSlashCommands、commands=[] 与 slash raw-send 索引.md](./59-Remote%20disableSlashCommands、commands%3D%5B%5D%20与%20slash%20raw-send%20索引.md)
 - [60-Remote local command plane selective thinning、plugin disable 与 MCP porosity 索引.md](./60-Remote%20local%20command%20plane%20selective%20thinning、plugin%20disable%20与%20MCP%20porosity%20索引.md)
 - [61-Remote tool plane vs command plane thinning 索引.md](./61-Remote%20tool%20plane%20vs%20command%20plane%20thinning%20索引.md)
+- [62-Remote toolPermissionContext、permissionMode restore 与 local tool-plane authority 索引.md](./62-Remote%20toolPermissionContext、permissionMode%20restore%20与%20local%20tool-plane%20authority%20索引.md)
