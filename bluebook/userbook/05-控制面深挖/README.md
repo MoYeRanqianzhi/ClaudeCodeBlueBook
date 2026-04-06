@@ -76,7 +76,7 @@
 - [66-stream_event、task_started、status、remote pill 与 BriefIdleStatus：为什么同一 remote session 事件不会以同样厚度出现在每个消费者里.md](./66-stream_event、task_started、status、remote%20pill%20与%20BriefIdleStatus：为什么同一%20remote%20session%20事件不会以同样厚度出现在每个消费者里.md)
 - [67-slash_commands、stream_event、task_started 与 status_compacting：为什么 remote session 的命令集、流式正文、后台计数与 timeout 策略不是同一种消费者.md](./67-slash_commands、stream_event、task_started%20与%20status_compacting：为什么%20remote%20session%20的命令集、流式正文、后台计数与%20timeout%20策略不是同一种消费者.md)
 
-68-80 建议连续阅读：
+68-81 建议连续阅读：
 
 - 68-71 先拆 remote session 的命令面、候选面、入口面与本地变薄逻辑。
 - 72-75 再拆 tool plane、approval shell、authority return path 与 bridge relay 的拓扑差异。
@@ -85,6 +85,7 @@
 - 78 继续并列拆 worker sandbox mailbox ask，说明 host approval 也存在 worker 起点、leader 队列与 worker 回流。
 - 79 最后把 74-78 压成同一张 atlas，用 `ask origin / queue owner / return path / recheck meaning` 统一比较。
 - 80 再往下一层压到 mailbox 协议本身，拆 `permission_request`、`sandbox_permission_request` 与 `plan_approval_request` 的消息族差异。
+- 81 再把 shutdown 单独拆出 approval family，说明 `terminate`、`shutdown_*` 与 `kill` 落在 termination lifecycle，而不是 continuation protocol。
 
 - [68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx fallthrough 与 remote send：为什么 remote session 的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md](./68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx%20fallthrough%20与%20remote%20send：为什么%20remote%20session%20的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md)
 - [69-hasCommand、isHidden、isCommandEnabled、local-jsx 与 remote send：为什么 remote mode 里的 slash 高亮、候选补全、启用态与实际执行去向不是同一个判定器.md](./69-hasCommand、isHidden、isCommandEnabled、local-jsx%20与%20remote%20send：为什么%20remote%20mode%20里的%20slash%20高亮、候选补全、启用态与实际执行去向不是同一个判定器.md)
@@ -99,4 +100,5 @@
 - [78-sendSandboxPermissionRequestViaMailbox、workerSandboxPermissions、pendingSandboxRequest 与 sandbox callback：为什么 worker sandbox ask 不等于 leader 本地 network prompt.md](./78-sendSandboxPermissionRequestViaMailbox、workerSandboxPermissions、pendingSandboxRequest%20与%20sandbox%20callback：为什么%20worker%20sandbox%20ask%20不等于%20leader%20本地%20network%20prompt.md)
 - [79-approval shell atlas、ask origin、queue owner、return path 与 recheck meaning：为什么同一 REPL 审批外观背后其实是五张不同的主权图.md](./79-approval%20shell%20atlas、ask%20origin、queue%20owner、return%20path%20与%20recheck%20meaning：为什么同一%20REPL%20审批外观背后其实是五张不同的主权图.md)
 - [80-teammateMailbox、permission_request、sandbox_permission_request 与 plan_approval_request：为什么 swarms 的结构化邮箱消息不是同一种协议族.md](./80-teammateMailbox、permission_request、sandbox_permission_request%20与%20plan_approval_request：为什么%20swarms%20的结构化邮箱消息不是同一种协议族.md)
+- [81-shutdown_request、shutdown_approved、shutdown_rejected、terminate 与 kill：为什么 swarms 的 shutdown mailbox 消息属于 lifecycle termination family.md](./81-shutdown_request、shutdown_approved、shutdown_rejected、terminate%20与%20kill：为什么%20swarms%20的%20shutdown%20mailbox%20消息属于%20lifecycle%20termination%20family.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。
