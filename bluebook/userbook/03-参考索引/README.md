@@ -52,6 +52,7 @@
 48. 为什么 standalone remote-control 的一次性说明、账号资格、项目偏好与当前 effective mode 不是同一个默认。
 49. 为什么 CCR v2 worker 的初始化、状态恢复、保活与代际退场不是同一种存活合同。
 50. 为什么远端看到的 `worker_status`、`pending_action`、`task_summary` 与 `session_state_changed` 不是同一张运行态面。
+- 为什么 `task_summary` 与 `post_turn_summary` 的 carrier、clear、union visibility 与 forwarding suppression 不是同一条 summary contract。
 51. 为什么 `permission_mode`、`is_ultraplan_mode` 与 `model` 不是同一种远端可恢复会话参数。
 52. 为什么 `task_started`、`task_progress`、`task_notification` 与 `session_state_changed` 不是同一种远端事件流。
 53. 为什么 CCR v2 remote bridge 的 `transport rebuild`、initial flush、`flush gate` 与 `sequence resume` 不是同一步。
@@ -80,6 +81,16 @@
 76. 为什么 headless `print` 在 teammates 仍 active 时会持续 poll unread mailbox，并把 teammate 输出折返进主 run loop，而不是像被动 inbox reader 那样工作。
 77. 为什么 headless `print` 的主线程队列更像 single-consumer pump，而不是一个普通事件订阅器。
 78. 为什么 headless `print` 的 prompt batching 不是普通批量出队，而是 workload/meta/uuid 受约束的单 turn 合批。
+79. 为什么 headless `print` 的 `task-notification` 不是普通进度提示，而是 SDK consumer 和模型双重消费的结果 envelope。
+80. 为什么 headless `print` 的 terminal XML、statusless ping 与 direct SDK emit 不是同一种关单信号。
+81. 为什么 headless `print` 的任务结果会同时落在 task bookend、command lifecycle 与 attachment 内容三套账本上。
+82. 为什么 headless `print` 的 `task_started/task_progress/task_notification` 三段式 SDK 事件不是 queue lifecycle 那一层。
+83. 为什么 headless `print` 的 `task_progress/workflow_progress` 进展流属于宿主投影，而不是模型图层。
+84. 为什么 headless `print` 的 task result 会在 XML re-entry 路和 direct SDK close 路之间分叉，而不是统一回流。
+85. 为什么 headless `print` 的 `drainSdkEvents()` 不是一次普通 drain，而是一组时序护栏。
+86. 为什么 headless `print` 的 `idle` 不是 finally 里的普通状态回写，而是 authoritative turn-over signal。
+87. 为什么 headless `print` 的 suggestion 不是生成即交付，而是要等真实交付后才进入 acceptance tracking。
+87. 为什么 headless `print` 的 late system tail 不能抢走 result 的 semantic last-message 主位。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
