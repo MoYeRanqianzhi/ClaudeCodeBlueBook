@@ -136,20 +136,20 @@ stronger-request cleanup step-up reauthorization governor 回答的则是：
 如果把这两层压成一句“既然这次已经 fresh 了”，
 系统就会制造五类危险幻觉：
 
-1. fresh-means-sufficient illusion  
+1. fresh-means-sufficient illusion
    只要当前连接 fresh，就误以为当前 authority level 也足够
-2. connected-means-upscoped illusion  
+2. connected-means-upscoped illusion
    只要当前仍然 connected，就误以为可以执行任何更强请求
-3. refresh-means-elevation illusion  
+3. refresh-means-elevation illusion
    只要能 refresh token，就误以为可以顺便提升 scope
-4. authorized-once-means-authorized-higher illusion  
+4. authorized-once-means-authorized-higher illusion
    只要当前 proof 对某个基础请求成立，就误以为对更强请求也成立
-5. live-use-means-no-step-up illusion  
+5. live-use-means-no-step-up illusion
    只要 real use path 没断，就误以为不需要更高等级的 reauthorization
 
 所以从第一性原理看：
 
-`use-time revalidation governance` 管的是 freshness of current use；  
+`use-time revalidation governance` 管的是 freshness of current use；
 `step-up reauthorization governance` 管的是 sufficiency of current authority level。
 
 再用苏格拉底式反问压一次：
@@ -292,13 +292,13 @@ repo 已经公开承认：
 Claude Code 在这里最先进的地方，不是它“能做 step-up”，
 而是它把多重安全技术收束成两套彼此制约的 live gate：
 
-1. `freshness gate`  
+1. `freshness gate`
    先确认 current-use proof 仍然 fresh enough
-2. `authority gate`  
+2. `authority gate`
    再确认 current-use proof 的 scope 是否足够强
-3. `refresh suppression as safety control`  
+3. `refresh suppression as safety control`
    直接禁止错误路径拿 refresh 冒充 scope elevation
-4. `higher-scope continuation state`  
+4. `higher-scope continuation state`
    把更高授权请求本身做成可延续、可恢复、可跨流程保留的正式状态
 
 这套设计的哲学本质是：
