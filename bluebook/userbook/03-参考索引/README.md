@@ -60,6 +60,7 @@
 56. 为什么 `useRemoteSession`、`useDirectConnect` 与 `useSSHSession` 不是同一种远端会话合同。
 57. 为什么 attached assistant REPL 的 `hasInitialPrompt`、history paging 与 title ownership 不是同一种主权。
 58. 为什么 `cc://`、`open`、`createDirectConnectSession`、`ws_url` 与 fail-fast disconnect 不是同一种 direct connect 合同。
+59. 为什么 direct connect 的 `can_use_tool`、`interrupt`、`result`、disconnect 与 stderr shutdown 不是同一种收口。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

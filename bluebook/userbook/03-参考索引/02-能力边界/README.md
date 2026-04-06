@@ -48,3 +48,4 @@
 - [46-Remote useRemoteSession、useDirectConnect 与 useSSHSession 索引.md](./46-Remote%20useRemoteSession、useDirectConnect%20与%20useSSHSession%20索引.md)
 - [47-Remote attached history、loading 与 title ownership 索引.md](./47-Remote%20attached%20history、loading%20与%20title%20ownership%20索引.md)
 - [48-Direct connect create session、ws_url 与 fail-fast disconnect 索引.md](./48-Direct%20connect%20create%20session、ws_url%20与%20fail-fast%20disconnect%20索引.md)
+- [49-Direct connect control subset、interrupt、result 与 stderr shutdown 索引.md](./49-Direct%20connect%20control%20subset、interrupt、result%20与%20stderr%20shutdown%20索引.md)
