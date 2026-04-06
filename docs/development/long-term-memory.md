@@ -8,6 +8,23 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/15`、`27` 与 `api/35` 现已继续把治理承载壳页、控制面验证页与 rollout 证据消费页统一压回 canonical governance chain：
+  - `Evidence Envelope` 现在更明确只配做记录壳，不再做治理前门。
+  - `worker_status / external_metadata / session_state_changed` 现在更明确只配做 `externalized truth chain` 的证据面，不再被写成独立治理对象。
+  - `pending_action` 现在更明确只配和 `request_id / tool_use_id / decision_reason / winner_source` 一起作为 `typed ask` 的 witness，不再被写成“现在卡住了”。
+  - `Context Usage` 现在更明确只配和 `current_state + pending_action` 一起构成 `decision window`，不再被写成成本面板或单独 API 前门。
+  - `rollback boundary / rollback object` 现在更明确只配做 `durable-transient cleanup` 的 carrier，文件、patch、commit 继续被降回附件。
+- `api/30`、`39`、`42` 与 `api/README` 现已继续把结构地图、artifact contract、rule ABI 与目录入口统一压回源码真相梯度：
+  - `api/30` 现在更明确要求 later maintainer 先按 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 读目录，而不是先看目录树或数量感。
+  - `api/39` 现在更明确把 structure host artifact contract 写成共享源码真相链的 header；`authoritative path / recovery asset / anti-zombie` 继续被压回局部见证或 evidence carrier。
+  - `api/42` 现在更明确把 machine-readable rule packet 写回 shared reject semantics，而不是让 packet 自己长成新的结构对象词表。
+  - `api/README` 现在更明确把 `30 / 39 / 42 / 46-50` 固定成结构 advanced line 的稳定入口，目录优化不再只是编号罗列，而是先给 later maintainer 一条正确的读法。
+- 新的长期结论：
+  - 蓝皮书继续深入后，最容易重新制造第二前门的，不再只是 mode、modal、rollback object 这类旧显性词，还包括 `envelope / API / bridge / packet / summary / handoff prose` 这类承载壳词。只要它们先站到页首，读者就会先学壳，再学对象链。
+  - 治理线当前更稳的纪律应长期固定为：`permission_mode` 只是 projection，`worker_status / external_metadata / session_state_changed` 只是 `externalized truth chain`，`Context Usage` 只能是 `decision window` 的同窗投影，`continue` 必须被写成 `continuation pricing`，`rollback` 必须被写成 `durable-transient cleanup`。
+  - 结构线当前更稳的纪律应长期固定为：`one writable present` 必须先于恢复资产被命名，合法复杂度中心必须先于目录审美被承认，later maintainer rejectability 必须先于作者讲解被保证。`layout-first drift / recovery-sovereignty leak / surface-gap blur` 现在已成为这条线最稳定的 reject trio。
+  - Prompt 并行 Agent 已指出下一轮最值钱的残留页是 `playbooks/50`、`casebooks/46`、`casebooks/49`、`api/69` 与 `api/78`；它们的问题不是缺观点，而是 `card / verdict / summary / handoff prose` 仍在偷偷越位成 Prompt 主语。后续若继续深化 Prompt 线，应优先把这些稳态/纠偏协议页压回 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`。
+  - Structure 并行 Agent 已指出下一轮最值钱的结构残留页是 `api/83` 与 `api/92`；`30 / 39 / 42` 已更接近源码真相梯度，但 `83 / 92` 仍让流程壳、field bag、`authority surface` 与高阶 repair object 越位成主语。后续若继续深化结构线，应优先把这组后段协议页继承回 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`，并把 `one writable present / fail-closed / later maintainer rejectability` 写得比流程名更靠前。
 - `api/38`、`api/55`、`playbooks/36`、`casebooks/26` 与 `casebooks/32` 现已继续把治理协议层、执行手册层与反例层的第一页主语统一压回 canonical governance chain：
   - `api/38` 现在更明确要求 artifact contract 的 shared header、role projection 与 hard contract 都从 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 起笔，不再让 `winner source / rollback object / authority source` 充当前门名词。
   - `api/55` 现在更明确把 acceptance protocol 写成统一定价规则面，并把 `authority source / permission ledger / continuation gate / rollback object` 固定为 source slot、transaction evidence、pricing verdict 与 cleanup carrier。

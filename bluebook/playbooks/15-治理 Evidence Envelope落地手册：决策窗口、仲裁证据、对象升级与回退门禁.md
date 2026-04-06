@@ -1,40 +1,161 @@
 # 治理 Evidence Envelope落地手册：决策窗口、仲裁证据、对象升级与回退门禁
 
-这一章不再解释治理 evidence envelope 应该长什么样，而是把它压成宿主、CI、评审与交接都能直接执行的一套落地手册。
+这一章不再把 `Evidence Envelope` 当成治理主语，而是把它压回一层承载壳：
+
+- envelope 只是把治理判断链装订给宿主、CI、评审与交接系统的记录外壳
+- 真正应被共同消费的，始终是同一条 canonical governance chain
+
+1. `governance key`
+2. `externalized truth chain`
+3. `typed ask`
+4. `decision window`
+5. `continuation pricing`
+6. `durable-transient cleanup`
 
 它主要回答五个问题：
 
-1. 治理线真正的 host implementation playbook 到底该检查什么。
-2. decision window、control arbitration、Context Usage 与 rollback boundary 该怎样被不同角色共同消费。
-3. 哪些检查最适合写成硬门禁，哪些只该保留为评审或交接提示。
-4. 怎样避免治理再次退回只看 token、只看审批与只看结果。
-5. 怎样用苏格拉底式追问避免把这章写成纯治理流程表。
+1. 为什么治理 evidence envelope 不能再从 envelope 本身起笔。
+2. 宿主、CI、评审与交接到底该共享哪些治理字段。
+3. 哪些字段属于 hard gate，哪些只属于角色投影。
+4. 怎样避免 envelope 重新退回 token、审批与结果摘要。
+5. 怎样用苏格拉底式追问避免把这章写成“治理记录模板大全”。
 
-## 0. 改写前状态
+## 0. 第一性原理
 
-没有治理 host implementation playbook 的团队，最常见状态是：
+没有治理 envelope 的团队，最常见失败不是：
 
-1. 宿主只显示当前状态，不显示当前判断窗口。
-2. CI 只看 token 与延迟阈值。
-3. 评审只看 ask 次数和最终 allow / deny。
-4. 交接只知道“现在被卡住了”，不知道为什么、卡在哪里、坏了回退哪个对象。
-5. 治理成熟度退回局部 KPI。
-
-## 1. 目标状态
-
-迁移后的目标不是：
-
-- 多一张审批看板
+- 少一张表
+- 少几个字段
 
 而是：
 
-1. 宿主消费状态、当前判断窗口与当前回退边界。
-2. CI 校验 decision window、control evidence 与 object-upgrade gate。
-3. 评审先看 authority source、failure semantics、winner source，再看结果。
-4. 交接拿到当前对象、当前窗口、当前 rollback object。
-5. 四类角色围绕同一治理 envelope 骨架判断。
+- 宿主、CI、评审与交接各自看各自的 mode、token、审批与回退印象
 
-## 2. 最小落地 diff
+所以 `Evidence Envelope` 真正要解决的，不是“记录更全”，而是：
+
+- 让四类角色围绕同一治理判断链做决定
+
+只要 envelope 抢走了主语，团队就会重新围绕：
+
+1. mode 名字
+2. token 条颜色
+3. 弹窗是否出现
+4. 文件回退是否执行
+
+来理解治理，而不再围绕边界、事务、窗口、继续定价与 cleanup 边界来理解治理。
+
+## 1. Envelope 只是一层承载壳
+
+更稳的写法不是：
+
+- “治理 envelope 应该长什么样”
+
+而是：
+
+- “同一条治理链怎样被稳定装订为一份跨角色记录”
+
+因此旧桥接词必须固定降级：
+
+1. `authority source`
+   - 只是 `governance key` 的 source slot。
+2. `control arbitration truth`
+   - 只是 `typed ask` 的 witness。
+3. `Context Usage`
+   - 只是 `decision window` 的诚实投影。
+4. `continuation gate`
+   - 只是 `continuation pricing` 的 verdict。
+5. `rollback object`
+   - 只是 `durable-transient cleanup` 的 carrier。
+
+## 2. 最小 shared envelope header
+
+更稳的 envelope header 至少应共享：
+
+```text
+envelope_header:
+- governance_object_id
+- governance_key_ref
+- truth_chain_ref
+- typed_ask_ref
+- permission_ledger_ref
+- decision_window_ref
+- continuation_pricing_ref
+- cleanup_carrier_ref
+- durable_assets_after
+- transient_authority_cleared
+- reject_verdict
+- verdict_reason
+- next_action
+- re_entry_condition
+```
+
+这份 header 的作用不是：
+
+- 取代治理对象本身
+
+而是：
+
+- 让所有角色都先从同一治理链起手
+
+## 3. 四类角色如何消费同一条链
+
+### 3.1 宿主
+
+宿主最少应消费：
+
+1. `worker_status`
+2. `session_state_changed`
+3. `pending_action`
+4. `decision_window_ref`
+5. `continuation_pricing_ref`
+6. `cleanup_carrier_ref`
+
+宿主最容易犯的错，不是少显示一个字段，而是把这些字段重新压成 allow / deny / requires_action。
+
+### 3.2 CI
+
+CI 最少应校验：
+
+1. `governance_key_ref`
+2. `truth_chain_ref`
+3. `typed_ask_ref`
+4. `decision_window_ref`
+5. `continuation_pricing_ref`
+6. `cleanup_carrier_ref`
+7. `reject_verdict`
+
+CI 最容易犯的错，是重新退回 token / latency 阈值和“这轮过没过”。
+
+### 3.3 评审
+
+评审最少应先看：
+
+1. `governance_key_ref`
+2. `truth_chain_ref`
+3. `typed_ask_ref`
+4. `winner_source`
+5. `reject_verdict`
+6. `cleanup_carrier_ref`
+
+禁止事项：
+
+- 只凭 ask 次数、最终 allow / deny 或一句“看起来风险不大”做治理判断
+
+### 3.4 交接
+
+交接最少应交付：
+
+1. `governance_object_id`
+2. `decision_window_ref`
+3. `continuation_pricing_ref`
+4. `cleanup_carrier_ref`
+5. `durable_assets_after`
+6. `transient_authority_cleared`
+7. `re_entry_condition`
+
+交接最容易犯的错，是只说“现在比较贵/比较严/正在等审批”，却不说明当前对象、当前窗口和下一步如何重入。
+
+## 4. 最小落地 diff
 
 ### 改写前
 
@@ -49,146 +170,77 @@ CI:
 - 看 ask 次数 / 最终结果
 
 交接:
-- 知道当前卡住了
+- 只知道当前卡住了
 ```
 
 ### 改写后
 
 ```text
 宿主:
-- 展示当前 object / worker_status / pending_action / rollback boundary
+- 先看 worker_status / session_state_changed / pending_action
 
 CI:
-- 检查 decision window / continuation gate / object-upgrade gate
+- 先看 governance_key_ref / typed_ask_ref / decision_window_ref
 
 评审:
-- 先看 authority source / failure semantics / control arbitration truth
+- 先看 truth_chain_ref / winner_source / reject_verdict
 
 交接:
-- 先看 current object / current window / rollback object / retained assets
+- 先看 cleanup_carrier_ref / durable_assets_after / re_entry_condition
 ```
 
 ### 这段 diff 的意义
 
 真正的变化不是：
 
-- 增加几项指标
+- 增加几项记录字段
 
 而是：
 
-- 把治理从“结果面”收回到“判断面”
+- 把治理从“结果摘要”收回到“统一定价判断链”
 
-## 3. 角色检查点
+## 5. Hard Gate 与 Reject Trio
 
-### 3.1 宿主最小检查点
+治理 envelope 里最适合写成 hard gate 的字段：
 
-宿主至少必须消费：
+1. `governance_key_ref`
+2. `truth_chain_ref`
+3. `typed_ask_ref`
+4. `decision_window_ref`
+5. `continuation_pricing_ref`
+6. `cleanup_carrier_ref`
+7. `reject_verdict`
 
-1. `worker_status`
-2. `pending_action`
-3. 当前 object
-4. 当前 decision window 状态
-5. 当前 rollback object
+更稳的 reject trio 是：
 
-硬要求：
+1. `projection_usurpation`
+2. `decision_window_collapse`
+3. `free_expansion_relapse`
 
-- 宿主不能只显示 allow / deny 或 ask / idle。
+如果 envelope 不能直接指出这三类 drift 的哪一类在发生，它就仍然只是表单壳，不是治理记录壳。
 
-### 3.2 CI 最小检查点
+## 6. 对象升级与 cleanup 顺序
 
-CI 至少必须检查：
+治理线真正稳的顺序是：
 
-1. `observed_window` 是否明确。
-2. `decision_gain` 是否仍存在。
-3. `continuation_policy` 是否满足停止条件。
-4. `object_upgrade_rule` 是否被触发却未执行。
-5. `rollback_boundary` 是否已明确。
+1. 先判断当前对象是否还值得继续。
+2. 不值得时先 `upgrade object`，而不是继续烧 token。
+3. 需要停止时先关掉当前 `decision window`。
+4. 再进入 `durable-transient cleanup`，清掉不该继续继承的 authority。
+5. 最后才给 later maintainer 一个可重入的 `re_entry_condition`。
 
-硬门禁：
-
-- decision window 缺失
-- authority source 缺失
-- object upgrade 该发生却未发生
-- rollback object 缺失
-
-### 3.3 评审最小检查点
-
-评审至少必须先看：
-
-1. authority source
-2. failure semantics
-3. control arbitration truth
-4. decision window
-5. final judgement
-
-软检查点：
-
-- token / latency 是否与 decision window 一致
-- ask 次数是否真的解释了治理变化
-
-禁止事项：
-
-- 只凭 ask 次数或最终结果做治理判断
-
-### 3.4 交接最小检查点
-
-交接至少必须交付：
-
-1. current object
-2. current `pending_action`
-3. current decision window
-4. current rollback object
-5. retained assets
-6. next action
-
-硬要求：
-
-- 交接不能只说“现在比较贵/比较严/正在等审批”。
-
-## 4. 统一检查顺序
-
-治理线四类角色更稳的统一顺序是：
-
-1. 当前对象
-2. 当前状态
-3. authority source
-4. control arbitration truth
-5. decision window
-6. failure semantics
-7. rollback boundary
-
-## 5. 治理线硬门禁
-
-下面这些最适合写成硬门禁：
-
-1. `authority source` 缺失。
-2. `decision window` 缺失。
-3. `winner source` / arbitration trace 缺失。
-4. `failure semantics` 缺失。
-5. `rollback object` 缺失。
-6. `object_upgrade_rule` 触发但未执行。
-
-## 6. 回退与对象升级
-
-治理线回退时，至少保留：
-
-1. 当前 object。
-2. 当前 decision window。
-3. control evidence。
-4. retained assets。
-5. rollback object boundary。
-
-对象升级优先级：
-
-1. 先问当前对象还值不值得继续。
-2. 若不值得，优先升级 object，而不是继续烧 token。
-3. 回退时优先回退 object-boundary，不要先回退结果。
+这正是 envelope 需要装订的关键顺序，而不是“记录下发生过什么”。
 
 ## 7. 苏格拉底式追问
 
-在你准备宣布治理 host implementation 已落地前，先问自己：
+在你准备宣布治理 envelope 已经落地前，先问自己：
 
-1. 宿主、CI、评审与交接是不是都先围绕 decision window 判断。
-2. 我保住的是治理判断链，还是只保住了 token / ask / result 三个表面结果。
-3. 任何一个角色现在还能不能只凭局部 KPI 给出治理结论。
-4. 如果今天要回退，我知道该退回哪个对象了吗。
+1. 我共享的是同一条治理判断链，还是四份角色各自的摘要。
+2. `Context Usage` 在这里是 `decision window` 的诚实投影，还是账单页。
+3. `permission ledger` 在这里是 ask 事务证据，还是审批完成感。
+4. cleanup 恢复的是对象边界，还是文件动作。
+5. 如果把 modal、仪表盘和回退按钮都藏起来，四类角色是否仍知道该如何继续判断。
+
+## 8. 一句话总结
+
+`Evidence Envelope` 真正该承载的，不是更多治理字段，而是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 在四类角色之间的稳定复述。

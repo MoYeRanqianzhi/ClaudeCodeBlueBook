@@ -2,6 +2,12 @@
 
 ## 2026-04-07
 
+- 本轮根仓库同步再次确认：`main=origin/main=df9cf23d0886fe389102d12675c4bc0c2d05d1c3`、`rev-list --left-right --count main...origin/main = 0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
+- 继续更新 `playbooks/15`、`27` 与 `api/35`，把治理承载壳页与 rollout 证据消费页统一压回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`：`Evidence Envelope`、`Rollout API`、`worker_status / external_metadata / Context Usage / rollback boundary` 现在更明确只配充当 carrier、truth-chain evidence、window witness 与 cleanup carrier，不再越位成治理前门
+- 继续更新 `api/30`、`39`、`42` 与 `api/README`，把目录级能力地图、结构 artifact contract、rule ABI 与 `api/` 目录入口统一压回 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`；`authoritative path / recovery asset / anti-zombie / rule packet` 现在更明确只配作为局部见证、reject semantics 或 rewrite hint，不再在首屏冒充结构主语
+- 本轮目录结构优化不再只做“推荐阅读链”，而是把 `api/` 入口更明确分成三种高价值前门：宿主 truth consumption、治理外化真相链、结构 artifact/rule packet 与目录地图；这让 `30 / 39 / 42 / 46-50` 成为结构 advanced line 的稳定入口，而不再散落在深层编号中
+- 并行 Prompt Agent 已回灌下一批高价值残留：`playbooks/50`、`casebooks/46`、`casebooks/49`、`api/69` 与 `api/78` 仍在让 `card / verdict / summary / handoff prose` 越位成 Prompt 主语；下一轮应继续把这些稳态/纠偏协议页压回 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
+- 并行结构 Agent 已回灌一条更硬的源码质量判断：Claude Code 源码真正先进的地方，不是目录整齐，而是把 stale write、split-brain、duplicate response、fail-closed 收进少数合法复杂度中心；下一轮结构线最值钱的残留因此不再是 `30 / 39 / 42`，而是 `83 / 92` 这组仍让流程壳、field bag 与 `authority surface` 术语膨胀快于证据沉淀的后段协议页
 - 本轮根仓库同步再次确认：`main=origin/main=22def830fd8754ad65b7c3873fc0bdea5520e563`、`rev-list --left-right --count main...origin/main = 0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
 - 继续更新 `api/38`、`api/55`、`playbooks/36`、`casebooks/26` 与 `casebooks/32`，把治理协议层、执行手册层与反例层统一压回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`：`authority source` 现在更明确只配做 `governance key` 的 source slot，`permission ledger` 现在更明确只配做 `typed ask` 的 transaction evidence，`continuation gate` 现在更明确只配做 `continuation pricing` 的 verdict，`rollback object` 现在更明确只配做 cleanup carrier
 - 本轮第一性原理深化重点不是再解释“治理有什么字段”，而是把安全设计与省 token 设计写回同一条收费链：`decision window` 与 `continuation pricing` 现在更明确被写成同一对象在给边界、时间与继续资格定价；一切默认继续、mode 绿灯、usage 仪表盘与文件级回退，都被收束为 `projection usurpation / decision-window collapse / free-expansion relapse` 这组三联拒收信号
