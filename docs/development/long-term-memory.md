@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `architecture/80 / guides/52 / philosophy/86 / architecture/README` 已继续吸收上一批相邻专题遗漏的对象链：
+  - `80` 现已更明确把治理实现写成 `source lattice -> managed-only switches -> typed decision -> visibility pricing -> decision window -> continuation requalification`。
+  - `52` 现已更明确把 builder 手册写成 `source` 是治理主键、resume 只恢复 durable assets、不续租 transient authority 的实现顺序。
+  - `86` 现已更明确把 anti-stale 的高阶判断继续落到 freshness gate、stale validator worldview、per-host authority 与 ghost capability / ghost auth 驱逐。
+  - `architecture/README` 现已把 `82-84` 的最新重心前置成稳定入口：`message lineage`、`source lattice`、`anti-stale specifics`。
+- 新的长期结论：
+  - 相邻深专题真正成熟时，不只要和主线同义，还要吸收主线最近新增的最硬对象链；否则会形成“主线已更新、深专题还停在旧一层”的漂移。
+  - 架构入口页最值钱的更新，不是再列更多编号，而是及时把最新的控制面对象写进 `README` 的一句话职责和推荐入口注释里。
 - `architecture/83 / philosophy/85 / guides/100` 已继续把治理线从“source-first pricing”压到“source 作为治理主键”：
   - `83` 现已更明确把 `authority source` 写成实现主键，而不是 provenance 标签；action、visibility、externalization 与 continuation 都被写成 source-tagged rules 的后续消费。
   - `85` 现已更明确把 `policySettings` 写成带 `first-source-wins + admin-trusted` 语义的 sovereign tier，而不是普通 merge layer。

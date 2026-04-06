@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `architecture/80`、`guides/52`、`philosophy/86`、`architecture/README`，把相邻深专题继续吸收 `source lattice / managed-only switches / durable assets vs transient authority / freshness gate / ghost-capability eviction`，并把 `82-84` 三篇的最新重点前置回架构专题入口
 - 继续更新 `architecture/83`、`philosophy/85`、`guides/100`，把治理线继续压到 `source` 是治理主键、`policySettings` 是 sovereign tier、resume 只该恢复 durable assets 而不该免费续租 transient authority
 - 继续更新 `architecture/82`、`architecture/84`、`guides/99`、`guides/101`、`guides/102` 与相关哲学页，把 Prompt 深线从 `request object` 再压到 `message lineage`，并把 anti-stale 继续扩到文件写入 freshness gate、PowerShell stale-cwd、WebFetch per-host、remote managed settings 与 MCP ghost capability 清理
 - 继续更新《提示词魔力来自运行时而非咒语》《真正成熟的治理，不是更会拦截，而是更会为扩张定价》《真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路》以及 `guides/99-101`、`philosophy/README`、`guides/README`，把深专题继续压到 `message lineage / source-first pricing / event stream + state writeback / later maintainer rejectability`

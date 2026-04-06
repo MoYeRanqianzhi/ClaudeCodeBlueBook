@@ -11,7 +11,7 @@
 - `39-52`: 缓存稳定性、失败语义、依赖图诚实性、观察性、插件双真相、PolicySettings 与安全边界编译。
 - `53-63`: Cache-aware Prompt Assembly、Protocol Transcript、能力可见性、可解释运行时、恢复优先状态面与可演化内核。
 - `64-72`: 语义压缩、资源宪法、协调成本、有效自由、源码即治理界面与未来维护者消费者。
-- `73-84`: Prompt Constitution、治理顺序、构建系统、升级证据、持续验证、请求装配、反扩张治理与内核对象边界。
+- `73-84`: Prompt Constitution、治理顺序、构建系统、升级证据、持续验证、message lineage 请求装配、source-lattice 反扩张治理与 anti-stale 内核对象边界。
 
 ## 推荐入口
 
@@ -22,9 +22,9 @@
 - [38-Contract优先、运行时底盘与公开镜像缺口](38-Contract优先、运行时底盘与公开镜像缺口.md)
 - [60-恢复优先的双通道状态面：writeback、resume与reconnect一体化](60-恢复优先的双通道状态面：writeback、resume与reconnect一体化.md)
 - [63-可演化内核：Claude Code如何在持续增长中维持不变量](63-可演化内核：Claude Code如何在持续增长中维持不变量.md)
-- [82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks](82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md)
-- [83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing](83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md)
-- [84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping](84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)
+- [82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks](82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md): 看 `message lineage` 如何被投影成 display / protocol / handoff truth
+- [83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing](83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md): 看 `source lattice` 如何派生动作、可见性与 continuation 定价
+- [84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping](84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md): 看 anti-stale 如何落到 freshness gate、validator、per-host 与 capability surface
 
 ## 阅读路径
 
@@ -33,6 +33,7 @@
 - 想先看多 Agent 与对象升级：`30 -> 45`
 - 想先看安全、权限与治理：`19 -> 23 -> 32 -> 50-52`
 - 想先看长期演化与验证：`63 -> 73-84`
+- 想先抓最新三张深控制面：`82 -> 83 -> 84`
 
 ## 维护约定
 
