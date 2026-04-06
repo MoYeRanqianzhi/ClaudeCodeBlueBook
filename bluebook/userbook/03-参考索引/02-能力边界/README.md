@@ -86,3 +86,4 @@
 - [84-Task result return-path split 索引.md](./84-Task%20result%20return-path%20split%20索引.md)
 - [85-Headless print SDK event flush ordering 索引.md](./85-Headless%20print%20SDK%20event%20flush%20ordering%20索引.md)
 - [86-Headless print authoritative idle signal 索引.md](./86-Headless%20print%20authoritative%20idle%20signal%20索引.md)
+- [87-Semantic last result vs late system tail 索引.md](./87-Semantic%20last%20result%20vs%20late%20system%20tail%20索引.md)
