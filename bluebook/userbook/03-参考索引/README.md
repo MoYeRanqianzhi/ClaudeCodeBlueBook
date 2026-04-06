@@ -14,6 +14,7 @@
 10. 同样都是 slash command，为什么它们在对象类型、执行语义和可见性边界上并不是同一类按钮。
 11. 技能为什么不是一张表，为什么 `/skills`、SkillTool、dynamic skills 看到的是不同投影。
 12. Claude 与 remote client 到底通过哪些链看到可用能力，为什么 UI 菜单、system/init、skill 提醒不是同一张表。
+13. 为什么同样是扩展来源，workspace trust、plugin-only policy、hooks 总闸和 admin-trusted source 不是同一层限制。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
