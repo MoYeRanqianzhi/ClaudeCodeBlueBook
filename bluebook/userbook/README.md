@@ -50,6 +50,8 @@
   [05-控制面深挖/29-Bridge%20Permission%20Callbacks%E3%80%81Control%20Request%20%E4%B8%8E%20Bridge-safe%20Commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E7%9A%84%E6%9D%83%E9%99%90%E6%8F%90%E7%A4%BA%E3%80%81%E4%BC%9A%E8%AF%9D%E6%8E%A7%E5%88%B6%E4%B8%8E%E5%91%BD%E4%BB%A4%E7%99%BD%E5%90%8D%E5%8D%95%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%8E%A7%E5%88%B6%E5%90%88%E5%90%8C.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/29-Bridge%20Permission%20Callbacks%E3%80%81Control%20Request%20%E4%B8%8E%20Bridge-safe%20Commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E7%9A%84%E6%9D%83%E9%99%90%E6%8F%90%E7%A4%BA%E3%80%81%E4%BC%9A%E8%AF%9D%E6%8E%A7%E5%88%B6%E4%B8%8E%E5%91%BD%E4%BB%A4%E7%99%BD%E5%90%8D%E5%8D%95%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%8E%A7%E5%88%B6%E5%90%88%E5%90%8C.md)
 - 分清远端会话的连接告警、后台任务、viewer ownership 与 bridge 重连为什么不是同一张运行态面：
   [05-控制面深挖/30-remoteConnectionStatus%E3%80%81remoteBackgroundTaskCount%E3%80%81BriefIdleStatus%20%E4%B8%8E%20viewerOnly%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E4%BC%9A%E8%AF%9D%E7%9A%84%E8%BF%9E%E6%8E%A5%E5%91%8A%E8%AD%A6%E3%80%81%E5%90%8E%E5%8F%B0%E4%BB%BB%E5%8A%A1%E4%B8%8E%20bridge%20%E9%87%8D%E8%BF%9E%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E5%BC%A0%E8%BF%90%E8%A1%8C%E6%80%81%E9%9D%A2.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/30-remoteConnectionStatus%E3%80%81remoteBackgroundTaskCount%E3%80%81BriefIdleStatus%20%E4%B8%8E%20viewerOnly%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E4%BC%9A%E8%AF%9D%E7%9A%84%E8%BF%9E%E6%8E%A5%E5%91%8A%E8%AD%A6%E3%80%81%E5%90%8E%E5%8F%B0%E4%BB%BB%E5%8A%A1%E4%B8%8E%20bridge%20%E9%87%8D%E8%BF%9E%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E5%BC%A0%E8%BF%90%E8%A1%8C%E6%80%81%E9%9D%A2.md)
+- 分清 bridge 的状态词、恢复厚度与动作上限为什么不是同一个“已恢复”：
+  [05-控制面深挖/31-Remote%20Control%20active%E3%80%81reconnecting%E3%80%81Connect%20URL%E3%80%81Session%20URL%20%E4%B8%8E%20outbound-only%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E7%8A%B6%E6%80%81%E8%AF%8D%E3%80%81%E6%81%A2%E5%A4%8D%E5%8E%9A%E5%BA%A6%E4%B8%8E%E5%8A%A8%E4%BD%9C%E4%B8%8A%E9%99%90%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E4%B8%AA%E2%80%9C%E5%B7%B2%E6%81%A2%E5%A4%8D%E2%80%9D.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/31-Remote%20Control%20active%E3%80%81reconnecting%E3%80%81Connect%20URL%E3%80%81Session%20URL%20%E4%B8%8E%20outbound-only%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E7%8A%B6%E6%80%81%E8%AF%8D%E3%80%81%E6%81%A2%E5%A4%8D%E5%8E%9A%E5%BA%A6%E4%B8%8E%E5%8A%A8%E4%BD%9C%E4%B8%8A%E9%99%90%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E4%B8%AA%E2%80%9C%E5%B7%B2%E6%81%A2%E5%A4%8D%E2%80%9D.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：
@@ -185,5 +187,6 @@
 - remote session client、viewer 与 bridge host 的边界
 - remote 的权限响应、会话控制与命令合同边界
 - remote session 的运行态、后台任务与 viewer ownership 边界
+- bridge 的状态词、恢复厚度与动作上限边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。

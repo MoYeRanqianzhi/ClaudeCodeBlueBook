@@ -32,6 +32,7 @@
 - [28-2026-04-06-remote session client 与 viewer 边界拆分记忆.md](./28-2026-04-06-remote%20session%20client%20%E4%B8%8E%20viewer%20%E8%BE%B9%E7%95%8C%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 - [29-2026-04-06-remote 控制合同拆分记忆.md](./29-2026-04-06-remote%20%E6%8E%A7%E5%88%B6%E5%90%88%E5%90%8C%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 - [30-2026-04-06-remote 运行态面与 ownership 拆分记忆.md](./30-2026-04-06-remote%20%E8%BF%90%E8%A1%8C%E6%80%81%E9%9D%A2%E4%B8%8E%20ownership%20%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
+- [31-2026-04-06-bridge 状态词、恢复厚度与动作上限拆分记忆.md](./31-2026-04-06-bridge%20%E7%8A%B6%E6%80%81%E8%AF%8D%E3%80%81%E6%81%A2%E5%A4%8D%E5%8E%9A%E5%BA%A6%E4%B8%8E%E5%8A%A8%E4%BD%9C%E4%B8%8A%E9%99%90%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 
 用途：
 
