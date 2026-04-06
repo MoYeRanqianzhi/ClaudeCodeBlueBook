@@ -2,7 +2,7 @@
 
 这页只做速查，不替代长文专题。长文解释请结合：
 
-- `05-控制面深挖/16-Hooks 的加载、注册、执行与 UI：为什么 /hooks 看到的不是实际会跑的 hooks.md`
+- `05-控制面深挖/16-Hooks 的加载、注册、执行与 UI：为什么 ／hooks 看到的不是实际会跑的 hooks.md`
 - `05-控制面深挖/14-来源信任、Trust Dialog 与 Plugin-only Policy：扩展面为何分级信任.md`
 
 ## 1. hooks 的四层不同问题

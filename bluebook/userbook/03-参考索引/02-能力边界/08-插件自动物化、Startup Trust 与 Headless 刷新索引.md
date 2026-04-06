@@ -2,8 +2,8 @@
 
 这页只做速查，不替代长文专题。长文解释请结合：
 
-- `05-控制面深挖/19-插件自动物化、Startup Trust 与 Headless 刷新：为什么插件有时会自己出现、有时只提示 /reload-plugins.md`
-- `05-控制面深挖/18-插件安装、待刷新与当前会话激活：为什么 /reload-plugins 不是安装器.md`
+- `05-控制面深挖/19-插件自动物化、Startup Trust 与 Headless 刷新：为什么插件有时会自己出现、有时只提示 ／reload-plugins.md`
+- `05-控制面深挖/18-插件安装、待刷新与当前会话激活：为什么 ／reload-plugins 不是安装器.md`
 
 ## 1. 自动链的四层对象
 
