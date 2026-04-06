@@ -77,4 +77,5 @@
 - [67-slash_commands、stream_event、task_started 与 status_compacting：为什么 remote session 的命令集、流式正文、后台计数与 timeout 策略不是同一种消费者.md](./67-slash_commands、stream_event、task_started%20与%20status_compacting：为什么%20remote%20session%20的命令集、流式正文、后台计数与%20timeout%20策略不是同一种消费者.md)
 - [68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx fallthrough 与 remote send：为什么 remote session 的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md](./68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx%20fallthrough%20与%20remote%20send：为什么%20remote%20session%20的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md)
 - [69-hasCommand、isHidden、isCommandEnabled、local-jsx 与 remote send：为什么 remote mode 里的 slash 高亮、候选补全、启用态与实际执行去向不是同一个判定器.md](./69-hasCommand、isHidden、isCommandEnabled、local-jsx%20与%20remote%20send：为什么%20remote%20mode%20里的%20slash%20高亮、候选补全、启用态与实际执行去向不是同一个判定器.md)
+- [70-disableSlashCommands、commands=[]、hasCommand 与 remote send：为什么关掉本地 slash 命令层，不等于 remote mode 失去 slash 文本入口.md](./70-disableSlashCommands、commands%3D%5B%5D、hasCommand%20与%20remote%20send：为什么关掉本地%20slash%20命令层，不等于%20remote%20mode%20失去%20slash%20文本入口.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。
