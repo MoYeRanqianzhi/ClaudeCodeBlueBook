@@ -35,6 +35,28 @@ Claude Code 治理的不是“能力本身”，而是“能力来自谁”。
 
 - “它卡在工作区信任边界、来源信任边界，还是执行期门控边界？”
 
+如果把这页压成用户侧最小顺序，只该先做四步：
+
+1. 先认 workspace trust
+   - 当前工作区是否已被承认为可承载仓内扩展。
+2. 再认 source trust
+   - 这条扩展来自 user/project、plugin/managed，还是 built-in/bundled。
+3. 再认 surface lock
+   - 当前锁住的是 skills、hooks、MCP、agents 的哪一层 surface。
+4. 最后才认 runtime gate
+   - 真正被挡住的是注册、显示、还是执行。
+
+这组顺序的核心，是把“安全限制”收回 `workspace trust -> source trust -> surface lock -> runtime gate`，而不是把 Trust Dialog、policy 和 hooks 总闸压成一个开关。
+
+## 进入本页前的 first reject signal
+
+看到下面迹象时，应先回到信任对象链，而不是继续把限制写成一锅：
+
+- 你把 Trust Dialog 当一般功能开关，而不是工作区信任边界。
+- 你把 plugin-only policy 写成“只能用插件”，却没说它锁的是 source/surface。
+- 你把 `allowManagedHooksOnly` 和 `strictPluginOnlyCustomization['hooks']` 写成同一层规则。
+- 你把“对象还在”直接等同于“它附带的 hooks / MCP servers 也还会生效”。
+
 只要不先分清这三层，就会把 Trust Dialog、policy 与运行期 gating 写成一个平面。
 
 ## 第一层：Trust Dialog 是工作区信任边界，不是一般开关
@@ -64,6 +86,12 @@ Claude Code 治理的不是“能力本身”，而是“能力来自谁”。
 所以 userbook 里更稳的写法应是：
 
 - Trust Dialog 重点防的是“仓内扩展借 prompt 工作流触发本地执行”
+
+更短的判断是：
+
+- Trust Dialog 在判工作区主权。
+- plugin-only policy 在判来源主权。
+- hooks 总闸在判执行主权。
 
 而不是：
 

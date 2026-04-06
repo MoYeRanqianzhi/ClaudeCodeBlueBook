@@ -24,6 +24,8 @@
   - `relevant skills` 的最佳用户层定义不是“推荐技能列表”，而是“当前任务最值得先看的能力曝光子集”；一旦把它写成技能宇宙总表，目录结构就会在控制面正文第一页重新退回库存思维。
   - 技能发现线在用户层最稳的极短公式应固定为“库存 / 相关性 / 准入加载”三分法：`skill_listing` 是 broad inventory，`relevant skills` 是 relevant subset，`remote skills` 是 discover 后才进入 session state 的准入与按需加载面。
   - 能力曝光链再往上收一层时，最稳的根词不是“技能表”，而是 `runtime skill truth -> projection consumer / consumer subset -> capability projection -> runtime gate`；同一份运行时技能真相先按 consumer 分投影，再由 SkillTool 落成可调用集合。
+  - 技能来源与触发真正成熟时，最稳的正文前门不该再从 `/skills` 菜单开始，而应从 `source -> projection -> runtime gate -> activation` 开始；只要先问“为什么菜单里没有它”，目录结构就会再次退回 UI 库存视角。
+  - 扩展面信任真正成熟时，最稳的安全前门不该再叫“安全限制”，而应叫 `workspace trust -> source trust -> surface lock -> runtime gate`；Trust Dialog、plugin-only policy、managed-only hooks 和 frontmatter hooks/MCP servers 必须长期被写成不同层的主权判断，而不是一个总开关。
 - `userbook/04-专题深潜/README` 与 `userbook/05-控制面深挖/README` 现已继续把最近几批稳定下来的三组最小顺序推进到专题入口层：
   - `04` 现在更明确把专题层写成“工作对象入口 + 最小排查顺序 + 何时退回控制面/主线重新定题”。
   - `05` 现在更明确把控制面层写成“控制面入口 + 哪组顺序在起作用 + 哪些相邻入口是替身 + 何时应退回上一层”。

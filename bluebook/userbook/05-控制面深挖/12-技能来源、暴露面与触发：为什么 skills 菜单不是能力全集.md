@@ -39,6 +39,27 @@ Claude Code 里的“技能”不是一个列表，而是多层投影：
 - “它们是给用户直接 `/skill` 用的，还是给 Claude 自己调的？”
 - “它们是常驻暴露，还是文件触发后才激活？”
 
+如果把这页压成用户侧最小顺序，只该先做四步：
+
+1. 先认来源
+   - 这条技能来自 file-based、bundled、plugin、MCP，还是 legacy commands-as-skills。
+2. 再认投影
+   - 它现在落在用户菜单、模型可调用集合，还是潜伏待激活集合。
+3. 再认 runtime gate
+   - 当前卡住的是 `userInvocable`、`disableModelInvocation`、policy，还是根本没被装进命令链。
+4. 最后才判断“为什么 `/skills` 里没有它”。
+
+这组顺序的核心，是把“技能很多”收回成 `source -> projection -> runtime gate -> activation`，而不是先拿 `/skills` 当总表。
+
+## 进入本页前的 first reject signal
+
+看到下面迹象时，应先回到来源/投影判断，而不是继续翻菜单：
+
+- 你把 `/skills` 当能力全集，而不是用户菜单投影。
+- 你把“用户不能直打”误写成“系统没有这条技能”。
+- 你把 bundled / built-in plugin skills 当成必然应出现在 `/skills` 里的对象。
+- 你把动态出现的 skills 当成安装动作，而不是路径命中后的激活结果。
+
 只要不先分这四层，`/skills` 就会被误写成能力全集。
 
 ## 第一层：技能从哪里进入运行时
@@ -59,6 +80,12 @@ Claude Code 里的“技能”不是一个列表，而是多层投影：
 - 以文件或目录形式存在
 - 主要由 frontmatter 定义描述、工具白名单、模型、`userInvocable`、`disableModelInvocation`、`paths:` 等元数据
 - 最终会变成 `type: 'prompt'` 的正式命令对象
+
+更短的判断是：
+
+- 来源先决定这条技能如何进入运行时。
+- 投影再决定它对谁可见。
+- gate 最后决定它现在能否被人或模型使用。
 
 ### 2. legacy commands-as-skills
 

@@ -5,6 +5,14 @@
 - `05-控制面深挖/15-技能发现、静态 listing 与 remote skills：为什么“relevant skills”不是技能总表.md`
 - `05-控制面深挖/13-system-init、技能提醒与 SkillTool：Claude 如何看见可用能力.md`
 
+先记这一页的最短三分法：
+
+- `skill_listing` 是库存。
+- `relevant skills` 是相关性子集。
+- `remote skills` 是 discover 之后才进入准入/加载链的能力。
+
+只要这三层没先分开，`relevant skills` 就会被误写成技能总表。
+
 ## 1. 四类最容易混淆的技能线索
 
 | 对象 | 面向谁 | 作用 | 最容易误判 |
