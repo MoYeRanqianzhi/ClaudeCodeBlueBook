@@ -41,6 +41,39 @@ Claude Code 不是把“全部能力”一次性平铺给 Claude。
 - “它暴露的是广义库存、当前菜单，还是和当前任务相关的子集？”
 - “它是稳定主线，还是实验搜索链的一部分？”
 
+如果把这页压成用户侧最小顺序，只该先做五步：
+
+1. 先认受众
+   - 这条能力曝光链是给用户、remote UI、模型，还是给 SkillTool 自己看的。
+2. 再认层级
+   - 它暴露的是菜单、broad inventory，还是 relevant subset。
+3. 再认主线还是实验面
+   - 当前看到的是稳定入口，还是条件公开 / 搜索链。
+4. 再认 runtime gate
+   - 最终是否真的能调，还要过 SkillTool 的可调用校验。
+5. 最后才讨论“Claude 到底看见了多少技能”。
+
+这组顺序真正值钱的地方在于：它把“能力很多”收回成一条能力曝光链，而不是一张总表。
+
+更短的根公式是：
+
+- `runtime skill truth -> projection consumer / consumer subset -> capability projection -> runtime gate`
+
+落到用户侧，就是：
+
+- `relevant skills` 是模型侧当前任务相关子集提醒。
+- `system/init.skills` 是 remote/SDK 客户端的能力发布元数据。
+- SkillTool 是最终决定“这条技能现在能不能真调”的运行时硬门。
+
+## 进入本页前的 first reject signal
+
+看到下面迹象时，应先回到能力曝光链，而不是继续比对菜单截图：
+
+- 你在问“Claude 到底看见了哪些技能”，却还没先问这条链是给谁看的。
+- 你把 `/skills`、`system/init.skills`、`skill_listing`、`skill_discovery` 当成同一张表。
+- 你把 relevant skills 当技能总表，而不是当前任务相关子集。
+- 你把“提醒里出现了”直接等同于“SkillTool 一定能调用”。
+
 ## 第一条链：`/skills` 是给用户看的菜单面
 
 这一层上一批已经拆过，但这里要再明确它在整张曝光图里的位置。
@@ -380,6 +413,7 @@ Claude 起步时更像被给了多层能力线索：
 - `/skills`、system/init、skill listing、skill discovery、SkillTool runtime 各自承担不同角色
 - UI 可见面和模型可见面不同
 - `disableModelInvocation` 是模型调用硬门
+- `relevant skills` 不是技能总表，而是当前任务的能力曝光子集
 
 ### 应降级为条件公开或实现细节的
 
