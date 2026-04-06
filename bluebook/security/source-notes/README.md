@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 50 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 62 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -69,6 +69,18 @@
 48. [48-deprecation clock、orphan visibility cutoff与强请求清理退役治理边界](48-deprecation%20clock%E3%80%81orphan%20visibility%20cutoff%E4%B8%8E%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%80%80%E5%BD%B9%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 49. [49-tombstone messages、.orphaned_at与migration timestamps的强请求清理墓碑治理边界](49-tombstone%20messages%E3%80%81.orphaned_at%E4%B8%8Emigration%20timestamps%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%A2%93%E7%A2%91%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 50. [50-removeOrphanedAtMarker、refreshActivePlugins与copyPlanForResume的强请求清理复活治理边界](50-removeOrphanedAtMarker%E3%80%81refreshActivePlugins%E4%B8%8EcopyPlanForResume%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%A4%8D%E6%B4%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+51. [51-deletePluginOptions、setPluginEnabledOp与copyPlanForFork的强请求清理再赋权治理边界](51-deletePluginOptions%E3%80%81setPluginEnabledOp%E4%B8%8EcopyPlanForFork%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%86%8D%E8%B5%8B%E6%9D%83%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+52. [52-savePluginOptions、saveMcpServerUserConfig与PluginOptionsFlow的强请求清理重配置治理边界](52-savePluginOptions%E3%80%81saveMcpServerUserConfig%E4%B8%8EPluginOptionsFlow%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E9%85%8D%E7%BD%AE%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+53. [53-refreshActivePlugins、reload-plugins与refreshPluginState的强请求清理重新激活治理边界](53-refreshActivePlugins%E3%80%81reload-plugins%E4%B8%8ErefreshPluginState%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+54. [54-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的强请求清理就绪治理边界](54-pluginReconnectKey%E3%80%81MCPServerConnection%E4%B8%8EReadMcpResourceTool%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%B0%B1%E7%BB%AA%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+55. [55-useManageMCPConnections、toolExecution与print的强请求清理连续性治理边界](55-useManageMCPConnections%E3%80%81toolExecution%E4%B8%8Eprint%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+56. [56-handleRemoteAuthFailure、reconnectMcpServerImpl与McpAuthTool的强请求清理恢复治理边界](56-handleRemoteAuthFailure%E3%80%81reconnectMcpServerImpl%E4%B8%8EMcpAuthTool%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E6%81%A2%E5%A4%8D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+57. [57-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的强请求清理重新并入治理边界](57-onConnectionAttempt%E3%80%81dynamicMcpState%E4%B8%8EreregisterChannelHandlerAfterReconnect%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E6%96%B0%E5%B9%B6%E5%85%A5%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+58. [58-buildMcpServerStatuses、useMcpConnectivityStatus与MCPReconnect的强请求清理重新投影治理边界](58-buildMcpServerStatuses%E3%80%81useMcpConnectivityStatus%E4%B8%8EMCPReconnect%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E6%96%B0%E6%8A%95%E5%BD%B1%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+59. [59-McpAuthTool、MCPRemoteServerMenu与MCPReconnect的强请求清理重新担保治理边界](59-McpAuthTool%E3%80%81MCPRemoteServerMenu%E4%B8%8EMCPReconnect%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E6%96%B0%E6%8B%85%E4%BF%9D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+60. [60-ensureConnectedClient、ReadMcpResourceTool与toolExecution的强请求清理用时重验证治理边界](60-ensureConnectedClient%E3%80%81ReadMcpResourceTool%E4%B8%8EtoolExecution%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E7%94%A8%E6%97%B6%E9%87%8D%E9%AA%8C%E8%AF%81%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+61. [61-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的强请求清理step-up重授权治理边界](61-wrapFetchWithStepUpDetection%E3%80%81ClaudeAuthProvider%E4%B8%8EperformMCPOAuthFlow%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86step-up%E9%87%8D%E6%8E%88%E6%9D%83%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+62. [62-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界](62-callMCPToolWithUrlElicitationRetry%E3%80%81toolExecution%E4%B8%8EMCP%E8%AE%A4%E8%AF%81%E8%B7%AF%E5%BE%84%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E7%BB%AD%E6%89%93%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 

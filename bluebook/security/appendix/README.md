@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 183 篇速查文档。
+`appendix/` 当前包含 195 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -192,6 +192,42 @@
 - `183`
   载体家族强请求清理墓碑治理与强请求清理复活治理分层。
   入口：[183-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层速查表：authoritative clearing、re-entry gate、identity policy、active layer与governor question](183-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层速查表：authoritative clearing、re-entry gate、identity policy、active layer与governor question.md)。
+- `184`
+  载体家族强请求清理复活治理与强请求清理再赋权治理分层。
+  入口：[184-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层速查表：return state、old entitlement、policy veto、identity fallback与governor question](184-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层速查表：return state、old entitlement、policy veto、identity fallback与governor question.md)。
+- `185`
+  载体家族强请求清理再赋权治理与强请求清理重配置治理分层。
+  入口：[185-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层速查表：seat truth、config truth、apply truth、needs-config与governor question](185-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层速查表：seat truth、config truth、apply truth、needs-config与governor question.md)。
+- `186`
+  载体家族强请求清理重配置治理与强请求清理重新激活治理分层。
+  入口：[186-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层速查表：persisted truth、active truth、mode policy、stale signal与governor question](186-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层速查表：persisted truth、active truth、mode policy、stale signal与governor question.md)。
+- `187`
+  载体家族强请求清理重新激活治理与强请求清理就绪治理分层。
+  入口：[187-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层速查表：state machine、consumer gate、runtime revocation与governor question](187-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层速查表：state machine、consumer gate、runtime revocation与governor question.md)。
+- `188`
+  载体家族强请求清理就绪治理与强请求清理连续性治理分层。
+  入口：[188-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层速查表：continuity budget、stale retry line、pool repair与governor question](188-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层速查表：continuity budget、stale retry line、pool repair与governor question.md)。
+- `189`
+  载体家族强请求清理连续性治理与强请求清理恢复治理分层。
+  入口：[189-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层速查表：fresh proof、reconnect verdict、consumer discipline与governor question](189-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层速查表：fresh proof、reconnect verdict、consumer discipline与governor question.md)。
+- `190`
+  载体家族强请求清理恢复治理与强请求清理重新并入治理分层。
+  入口：[190-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question](190-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question.md)。
+- `191`
+  载体家族强请求清理重新并入治理与强请求清理重新投影治理分层。
+  入口：[191-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question](191-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question.md)。
+- `192`
+  载体家族强请求清理重新投影治理与强请求清理重新担保治理分层。
+  入口：[192-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层速查表：assurance ceiling、success silence、caveat budget与governor question](192-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层速查表：assurance ceiling、success silence、caveat budget与governor question.md)。
+- `193`
+  载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层。
+  入口：[193-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层速查表：fresh gate、runtime revocation、consumer proof与governor question](193-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层速查表：fresh gate、runtime revocation、consumer proof与governor question.md)。
+- `194`
+  载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层。
+  入口：[194-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gate、refresh suppression、step-up state与governor question](194-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gate、refresh suppression、step-up state与governor question.md)。
+- `195`
+  载体家族强请求清理step-up重授权治理与强请求清理续打治理分层。
+  入口：[195-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：step-up reauthorization decision、same-request continuation decision、auth success ceiling与governor question](195-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：step-up reauthorization decision、same-request continuation decision、auth success ceiling与governor question.md)。
 
 ## 怎么配合主线读
 
