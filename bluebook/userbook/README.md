@@ -42,6 +42,8 @@
   [05-控制面深挖/25-Settings%E3%80%81remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81Footer%20%E7%8A%B6%E6%80%81%20pill%20%E4%B8%8E%20Bridge%20Dialog%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E3%80%81%E5%BD%93%E5%89%8D%E5%BC%80%E5%85%B3%E4%B8%8E%E8%BF%9E%E6%8E%A5%E5%B1%95%E7%A4%BA%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E4%B8%AA%E6%8C%89%E9%92%AE.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/25-Settings%E3%80%81remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81Footer%20%E7%8A%B6%E6%80%81%20pill%20%E4%B8%8E%20Bridge%20Dialog%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E3%80%81%E5%BD%93%E5%89%8D%E5%BC%80%E5%85%B3%E4%B8%8E%E8%BF%9E%E6%8E%A5%E5%B1%95%E7%A4%BA%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E4%B8%AA%E6%8C%89%E9%92%AE.md)
 - 分清 remote-control 的链接、二维码与 ID 为什么不是同一种定位符：
   [05-控制面深挖/26-Connect%20URL、Session%20URL、Environment%20ID、Session%20ID%20与%20remoteSessionUrl%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E9%93%BE%E6%8E%A5%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E4%B8%8E%20ID%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%AE%9A%E4%BD%8D%E7%AC%A6.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/26-Connect%20URL%E3%80%81Session%20URL%E3%80%81Environment%20ID%E3%80%81Session%20ID%20%E4%B8%8E%20remoteSessionUrl%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E9%93%BE%E6%8E%A5%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E4%B8%8E%20ID%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%AE%9A%E4%BD%8D%E7%AC%A6.md)
+- 分清 remote-control 的会内开桥、启动带桥与 standalone host 为什么不是同一种入口：
+  [05-控制面深挖/27-remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81--remote-control%E3%80%81claude%20remote-control%20%E4%B8%8E%20Remote%20Callout%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E4%BC%9A%E5%86%85%E5%BC%80%E6%A1%A5%E3%80%81%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%A1%A5%E4%B8%8E%20standalone%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%85%A5%E5%8F%A3.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/27-remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81--remote-control%E3%80%81claude%20remote-control%20%E4%B8%8E%20Remote%20Callout%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E4%BC%9A%E5%86%85%E5%BC%80%E6%A1%A5%E3%80%81%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%A1%A5%E4%B8%8E%20standalone%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%85%A5%E5%8F%A3.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：
@@ -173,5 +175,6 @@
 - bridge 的 auto-connect、mirror、perpetual 与 continue 模式边界
 - bridge 的设置默认、显式开关与状态展示边界
 - bridge 的链接、二维码与定位符边界
+- remote-control 的入口矩阵边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。

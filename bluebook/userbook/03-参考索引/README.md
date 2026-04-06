@@ -27,6 +27,7 @@
 23. 为什么 remote-control 的 auto-connect、mirror、perpetual continuity 与 `--continue` 不是同一种 bridge 重连。
 24. 为什么 remote-control 的设置默认、显式开关、状态展示与当前断开语义不是同一个按钮。
 25. 为什么 remote-control 的链接、二维码与 ID 不是同一种定位符。
+26. 为什么 remote-control 的会内开桥、启动带桥与 standalone host 不是同一种入口。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
