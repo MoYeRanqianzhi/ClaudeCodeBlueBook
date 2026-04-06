@@ -45,6 +45,7 @@
 - [41-2026-04-06-standalone remote-control 传输凭证与纪元拆分记忆.md](./41-2026-04-06-standalone%20remote-control%20传输凭证与纪元拆分记忆.md)
 - [42-2026-04-06-standalone remote-control 生命周期动词拆分记忆.md](./42-2026-04-06-standalone%20remote-control%20生命周期动词拆分记忆.md)
 - [43-2026-04-06-bridge session tag 与 compat shim 拆分记忆.md](./43-2026-04-06-bridge%20session%20tag%20与%20compat%20shim%20拆分记忆.md)
+- [44-2026-04-06-standalone remote-control token refresh 与 child 同步拆分记忆.md](./44-2026-04-06-standalone%20remote-control%20token%20refresh%20与%20child%20同步拆分记忆.md)
 
 用途：
 
