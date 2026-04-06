@@ -1,4 +1,4 @@
-# 请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object
+# 请求装配控制面验证失真反例：假lineage kernel、假protocol transcript与假continuation object
 
 这一章不再回答“请求装配控制面该怎样持续验证”，而是回答：
 
@@ -7,7 +7,7 @@
 它主要回答五个问题：
 
 1. 为什么请求装配控制面最危险的失败方式不是“没有验证”，而是“验证还在，但验真的对象已经被偷换”。
-2. 为什么假 `authority chain` 最容易让 handoff、summary 与 section 壁纸悄悄接管主权。
+2. 为什么假 `lineage kernel` 最容易让 handoff、summary 与 section 壁纸悄悄接管主权。
 3. 为什么假 `protocol transcript` 最容易把 display transcript 偷换成模型真相。
 4. 为什么假 `continuation object` 最容易把 lawful forgetting 重新退回“更短的故事”。
 5. 怎样用苏格拉底式追问避免把这些反例读成“再补几条 Prompt 测试”。
@@ -17,13 +17,17 @@
 - `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
 - `claude-code-source-code/src/utils/messages.ts:1989-2148`
 - `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1025-1034`
+- `claude-code-source-code/src/utils/sessionStorage.ts:2069-2128`
 - `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
+- `claude-code-source-code/src/query/tokenBudget.ts:45-92`
+- `claude-code-source-code/src/tools/AgentTool/resumeAgent.ts:70-130`
 - `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
 - `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:483-698`
 
 这些锚点共同说明：
 
-- 请求装配控制面真正要保护的，不是“我们还记得这些字段”，而是 authority、protocol、continuation 与 fork reuse 是否仍围绕同一个 `compiled request truth` 被共同消费。
+- 请求装配控制面真正要保护的，不是“我们还记得这些字段”，而是 `message lineage`、`protocol transcript`、`continuation object` 与 fork reuse 是否仍围绕同一个 request world 被共同消费。
 
 ## 1. 第一性原理
 
@@ -45,24 +49,24 @@
 
 而不再围绕：
 
-- 同一个 `authority_chain + protocol_transcript + continuation_object + cache_safe_fork`
+- 同一个 `lineage_kernel + protocol_transcript + continuation_object + cache_safe_fork`
 
-## 2. 假authority chain vs 同一请求对象
+## 2. 假lineage kernel vs 同一请求对象
 
 ### 坏解法
 
-- `section registry`、边界字段、handoff 文本与评审结论都还在，于是团队默认 authority chain 还在。
+- `section registry`、边界字段、handoff 文本与评审结论都还在，于是团队默认 lineage 还在。
 
 ### 为什么坏
 
-- `authority_chain_shadowed` 最常见的形式，不是 authority 消失，而是 handoff prose 悄悄替代 authority。
+- `lineage_kernel_shadowed` 最常见的形式，不是历史消失，而是 `parentUuid / logicalParentUuid`、`message.id` 与 `tool_use_id / sourceToolAssistantUUID` 这组三键已经断开，却仍被 prose 冒充成“同一条线”。
 - 一旦 registry 退回壁纸，团队就会把“看起来像同一套 Prompt 法典”误读成“仍是同一个请求对象”。
-- 后来者将无法指出：这一轮到底是谁有权继续定义当前世界。
+- 后来者将无法指出：这一轮到底是哪三个锚点还在接住同一个现场。
 
 ### Claude Code 式正解
 
-- 验真 verdict 必须继续绑定同一个 authority chain，而不是绑定“解释材料仍然完整”的感觉。
-- `section registry` 只能证明法律地位还在，不能替代 authority chain 本身。
+- 验真 verdict 必须继续绑定同一个 `lineage kernel`，而不是绑定“解释材料仍然完整”的感觉。
+- `section registry` 只能证明法律地位还在，不能替代 `lineage kernel` 本身。
 
 ## 3. 假protocol transcript vs display 真相篡位
 
@@ -90,12 +94,12 @@
 ### 为什么坏
 
 - `continuation_story_only` 意味着 lawful forgetting 已经退回叙事压缩，而不是对象保全。
-- 系统忘掉的会不再只是噪音，而是 next step、required assets、rollback boundary 与 continue qualification。
+- 系统忘掉的会不再只是噪音，而是 current work、next-step guard、required assets、rollback boundary、continue qualification 与 threshold liability。
 - later resume 看起来像恢复成功，实际上只是拿着故事重新猜世界。
 
 ### Claude Code 式正解
 
-- continuation object 必须继续显式保住当前工作、下一步、保留边界与必需资产。
+- continuation object 必须继续显式保住当前工作、下一步、保留边界、必需资产与继续资格。
 - summary 只是 continuation object 的投影，不能冒充 continuation object 本身。
 
 ## 5. 平行世界续写 vs cache-safe fork continuity
@@ -129,8 +133,8 @@
 
 在你准备宣布“请求装配控制面验证仍然健康”前，先问自己：
 
-1. 我现在绑定的是同一个 authority chain，还是一组相互解释的 prose。
+1. 我现在绑定的是同一个 `lineage kernel`，还是一组相互解释的 prose。
 2. 模型现在消费的是 protocol transcript，还是 display transcript 的替身。
 3. compact 之后我保住的是 continuation object，还是一段更顺的 summary。
 4. worker 与 side loop 是在复用同一个世界，还是在制造平行世界。
-5. 这次绿灯如果被 later 团队复查，是否还能指出它到底保护了哪个 request object。
+5. 这次绿灯如果被 later 团队复查，是否还能指出它到底保护了哪个 lineage kernel、哪个 protocol transcript 与哪个 continuation object。

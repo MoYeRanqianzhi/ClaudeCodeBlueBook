@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 Prompt 编译链再压实动作: 已继续更新 `architecture/82`、`guides/30`、`casebooks/73` 与 `philosophy/81`，把 Prompt 魔力从“请求编译链”进一步压到 `message lineage` 三键内核、四类 `projection consumer`、`continuation object` 最小对象清单与 `cache-safe fork reuse`。
+- 本轮 Prompt 路由收口动作: 已继续更新 `navigation/README` 与 `architecture/README`，把 Prompt 深读入口收成 `09 -> 81 -> 82 -> 30 -> 73 -> 77`，减少只靠旧桥接词和编号感自己拼链。
+- 本轮苏格拉底自校加固动作: `guides/30` 现已把 Prompt 审读问题从“边界与合法遗忘”进一步压到 `lineage kernel`、consumer matrix 与 continuation object 级别，减少把 Prompt 魔力继续读成长文案与摘要质量。
 - 本轮 Evidence Envelope 与机制支持面换代动作: 已继续更新 `casebooks/13 / 15 / 35 / 42 / 46` 与 `navigation/43`，把 Prompt 证据壳层、治理修复演练、结构监护、Prompt 稳态与宿主支持面入口继续补齐到 `message lineage / projection consumer / protocol transcript / stable prefix boundary / continuation object / governance key / externalized truth chain / decision window / continuation pricing / authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
 - 本轮 Prompt 编译链补强动作: 并行 Agent 已补出三条硬证据，说明 Prompt 魔力最稳的解释不是“system prompt 更强”，而是 `message lineage -> protocol transcript -> lawful forgetting -> continuation qualification -> cache-safe fork reuse` 这条编译链；其中 `message lineage` 还应明确写成 `parentUuid / logicalParentUuid + message.id + tool_use_id / sourceToolAssistantUUID` 三键内核。
 - 本轮案例库目录收口动作: 已继续更新 `casebooks/README`，把 `13 / 15 / 35 / 42 / 46` 所在簇的阅读入口从纯编号段收紧为对象链入口，并明确“编号段负责时间顺序，对象链负责阅读顺序”。

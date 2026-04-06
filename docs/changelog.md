@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `architecture/82`、`guides/30`、`casebooks/73`、`philosophy/81`、`navigation/README` 与 `architecture/README`，把 Prompt 编译链继续压到 `message lineage` 三键内核、四类 `projection consumer`、`continuation object` 最小对象清单与 `cache-safe fork reuse`，并把 Prompt 深读入口改成 `09 -> 81 -> 82 -> 30 -> 73 -> 77`
 - 继续更新 `casebooks/13 / 15 / 35 / 42 / 46`、`navigation/43` 与 `casebooks/README`，把 Evidence Envelope、治理修复演练、结构监护、Prompt 稳态与机制支持面入口继续压到 `message lineage / projection consumer / protocol transcript / stable prefix boundary / continuation object / governance key / externalized truth chain / decision window / continuation pricing / authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`，并把案例库目录入口从编号感继续收紧为对象链入口
 - 继续更新 `playbooks/51 / 55`、`casebooks/43`、`navigation/65 / 79`，把治理稳态、结构稳态纠偏、Prompt 解除监护反例与监护/再纠偏导航继续压到 `governance key / externalized truth chain / continuation pricing / durable-vs-transient / message lineage / continuation object / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`，并把中段执行叙事从旧流程词收回当前对象链
 - 继续更新 `guides/69`、`casebooks/23 / 36 / 37`、`navigation/83 / 103`，把 Prompt 监护 / 收口反例、治理控制面反例、结构修复演练反例与上游执行导航继续压到 `message lineage / continuation object / governance key / externalized truth chain / decision window / continuation pricing / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`，并把上游叙事从旧流程词收回当前对象链

@@ -8,6 +8,19 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `architecture/82 / philosophy/81` 现已把 Prompt 魔力从“请求编译”继续压到更硬的对象层：
+  - `82` 现已显式写出 `message lineage` 的三键内核：`parentUuid / logicalParentUuid`、`message.id`、`tool_use_id / sourceToolAssistantUUID`。
+  - `82 / 81` 现已把 Prompt consumer 固定成 display、model API、SDK/control 与 handoff/compact/resume 四类正式读法，不再把 transcript 只写成 UI / 模型二分。
+  - `82 / 81` 现已把 `continuation object` 从抽象继续资格压成最小对象清单：`current work / next-step guard / required assets / rollback boundary / continuation qualification / threshold liability`。
+- `guides/30 / casebooks/73` 现已把 Prompt 自校与 Prompt 失真反证收紧到同一条对象链：
+  - `30` 现已先追问 lineage kernel 是否完整，再追问 consumer matrix、lawful forgetting 与 continuation qualification。
+  - `73` 现已把验证失真从“假 authority chain”进一步压成“假 lineage kernel / 假 protocol transcript / 假 continuation object”，减少把 Prompt drift 重新退回 prose 与 summary 表演。
+- `navigation/README / architecture/README` 现已把 Prompt 深读入口收成 `09 -> 81 -> 82 -> 30 -> 73 -> 77`；目录优化的重点不再是“再补一个入口”，而是让“为什么 / 架构 / 审读 / 反证 / 验证”这五层各有单一 owner。
+- 新的长期结论：
+  - Prompt 魔力真正成熟时，不应只被写成 `authority chain + protocol transcript + lawful forgetting` 这组三元说明；更稳的写法必须继续前推到 `message lineage` 三键内核，因为那才是 display、tool pairing、resume 与 handoff 共同吃的骨架。
+  - projection consumer 真正成熟时，不应继续停留在“display / protocol / handoff”三分法；宿主与控制面消费的 SDK/control projection 也必须被显式点名，否则 host truth 仍容易被漏回实现细节。
+  - `continuation object` 真正成熟时，不应只被说成“还能继续工作的对象”；必须继续列出 `current work / next-step guard / required assets / rollback boundary / continuation qualification / threshold liability`，否则 lawful forgetting 很容易重新退回“更短的故事”。
+  - Prompt 目录结构真正成熟时，不再让读者靠旧桥接词和编号感自己拼链；更稳的目录秩序是：高层判断回主线与哲学，结构解释回架构，失真反证回案例库，审读框架回 guides，长期验证回 playbooks。
 - `casebooks/13 / 46` 现已把 Prompt Evidence Envelope 与稳态执行从 `compiled request truth / steady calmness` 的旧入口词，继续压到 `message lineage / projection consumer / protocol transcript / stable prefix boundary / continuation object / continuation qualification`。
 - `casebooks/15 / 42` 现已把结构 Evidence Envelope 与监护执行从 `authoritative surface / 恢复成功率 / 监控平静感` 的旧入口词，继续压到 `authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
 - `casebooks/35 / navigation/43` 现已把治理修复演练与机制支持面从 `authority source / 编译请求真相 / authority state` 的旧入口词，继续压到 `governance key / externalized truth chain / decision window / continuation pricing / authority object / per-host authority width` 三条母线的现代表达。
