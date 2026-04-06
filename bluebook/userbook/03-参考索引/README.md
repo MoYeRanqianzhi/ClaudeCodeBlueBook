@@ -20,6 +20,16 @@
 16. 为什么 `/mcp` 菜单、全局配置总览、按名解析与 Agent `mcpServers` 不是同一类 server。
 17. 为什么插件“装好了、改好了、提示待刷新了、当前会话已吃到”不是同一状态。
 18. 为什么插件有时会自己出现、有时只提示 `/reload-plugins`，而 startup trust、background install、headless refresh 又不是同一条自动链。
+19. 为什么 `print` 不是没有 UI 的 REPL，为什么 headless 的首问就绪、StructuredIO 与 `--sdk-url` 又不是同一层对象。
+20. 为什么 `server`、`remote-control`、`assistant`、`doctor` 与 `mcp list|get` 虽然都在会外层，却不是同一类 host、viewer 或 health-check 对象。
+21. 为什么 `skip trust dialog`、项目级 `.mcp.json` 批准、`doctor` 与 `mcp list|get` 不属于同一层安全或运行时状态。
+22. 为什么 remote-control 的 workspace trust、bridge eligibility、trusted-device、policy 与 OAuth 前提不是同一把钥匙。
+23. 为什么 remote-control 的 auto-connect、mirror、perpetual continuity 与 `--continue` 不是同一种 bridge 重连。
+24. 为什么 remote-control 的设置默认、显式开关、状态展示与当前断开语义不是同一个按钮。
+25. 为什么 remote-control 的链接、二维码与 ID 不是同一种定位符。
+26. 为什么 remote-control 的会内开桥、启动带桥与 standalone host 不是同一种入口。
+27. 为什么 remote session client、viewer 与 bridge host 不是同一种远程工作流。
+28. 为什么远端的权限提示、会话控制与命令白名单不是同一种控制合同。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

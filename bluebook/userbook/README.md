@@ -30,6 +30,24 @@
   [04-专题深潜/12-会话发现、历史检索与恢复选择专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/12-%E4%BC%9A%E8%AF%9D%E5%8F%91%E7%8E%B0%E3%80%81%E5%8E%86%E5%8F%B2%E6%A3%80%E7%B4%A2%E4%B8%8E%E6%81%A2%E5%A4%8D%E9%80%89%E6%8B%A9%E4%B8%93%E9%A2%98.md)
 - 把 Claude Code 接进脚本、后台任务或协议流：
   [04-专题深潜/13-非交互、后台会话与自动化专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/13-%E9%9D%9E%E4%BA%A4%E4%BA%92%E3%80%81%E5%90%8E%E5%8F%B0%E4%BC%9A%E8%AF%9D%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%93%E9%A2%98.md)
+- 分清 host、viewer 与 health-check 的会外入口边界：
+  [05-控制面深挖/21-Host、Viewer 与 Health Check：为什么 server、remote-control、assistant、doctor 不能写成同一类会外入口.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/21-Host%E3%80%81Viewer%20%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20server%E3%80%81remote-control%E3%80%81assistant%E3%80%81doctor%20%E4%B8%8D%E8%83%BD%E5%86%99%E6%88%90%E5%90%8C%E4%B8%80%E7%B1%BB%E4%BC%9A%E5%A4%96%E5%85%A5%E5%8F%A3.md)
+- 分清 `skip trust dialog`、项目级 `.mcp.json` 批准与 health-check 为什么不是一层：
+  [05-控制面深挖/22-Trust Dialog、项目级 .mcp.json 批准与 Health Check：为什么 skip trust dialog 不等于 project MCP 已被批准.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/22-Trust%20Dialog%E3%80%81%E9%A1%B9%E7%9B%AE%E7%BA%A7%20.mcp.json%20%E6%89%B9%E5%87%86%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20skip%20trust%20dialog%20%E4%B8%8D%E7%AD%89%E4%BA%8E%20project%20MCP%20%E5%B7%B2%E8%A2%AB%E6%89%B9%E5%87%86.md)
+- 分清 remote-control 的 workspace trust、bridge eligibility 与 trusted-device 为什么不是同一把钥匙：
+  [05-控制面深挖/23-Workspace Trust、Bridge Eligibility 与 Trusted Device：为什么 remote-control 的 trust、auth、policy 不是同一把钥匙.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/23-Workspace%20Trust%E3%80%81Bridge%20Eligibility%20%E4%B8%8E%20Trusted%20Device%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%20trust%E3%80%81auth%E3%80%81policy%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E6%8A%8A%E9%92%A5%E5%8C%99.md)
+- 分清 remote-control 的启动默认、mirror、perpetual 与 continue 为什么不是同一种“重连”：
+  [05-控制面深挖/24-remoteControlAtStartup、CCR Mirror、Perpetual Session 与 --continue：为什么 bridge 的 auto、mirror、resume 不是同一种重连.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/24-remoteControlAtStartup%E3%80%81CCR%20Mirror%E3%80%81Perpetual%20Session%20%E4%B8%8E%20--continue%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%20auto%E3%80%81mirror%E3%80%81resume%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E9%87%8D%E8%BF%9E.md)
+- 分清 remote-control 的设置默认、显式开关与状态展示为什么不是同一个按钮：
+  [05-控制面深挖/25-Settings%E3%80%81remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81Footer%20%E7%8A%B6%E6%80%81%20pill%20%E4%B8%8E%20Bridge%20Dialog%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E3%80%81%E5%BD%93%E5%89%8D%E5%BC%80%E5%85%B3%E4%B8%8E%E8%BF%9E%E6%8E%A5%E5%B1%95%E7%A4%BA%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E4%B8%AA%E6%8C%89%E9%92%AE.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/25-Settings%E3%80%81remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81Footer%20%E7%8A%B6%E6%80%81%20pill%20%E4%B8%8E%20Bridge%20Dialog%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E3%80%81%E5%BD%93%E5%89%8D%E5%BC%80%E5%85%B3%E4%B8%8E%E8%BF%9E%E6%8E%A5%E5%B1%95%E7%A4%BA%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E4%B8%AA%E6%8C%89%E9%92%AE.md)
+- 分清 remote-control 的链接、二维码与 ID 为什么不是同一种定位符：
+  [05-控制面深挖/26-Connect%20URL、Session%20URL、Environment%20ID、Session%20ID%20与%20remoteSessionUrl%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E9%93%BE%E6%8E%A5%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E4%B8%8E%20ID%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%AE%9A%E4%BD%8D%E7%AC%A6.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/26-Connect%20URL%E3%80%81Session%20URL%E3%80%81Environment%20ID%E3%80%81Session%20ID%20%E4%B8%8E%20remoteSessionUrl%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E9%93%BE%E6%8E%A5%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E4%B8%8E%20ID%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%AE%9A%E4%BD%8D%E7%AC%A6.md)
+- 分清 remote-control 的会内开桥、启动带桥与 standalone host 为什么不是同一种入口：
+  [05-控制面深挖/27-remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81--remote-control%E3%80%81claude%20remote-control%20%E4%B8%8E%20Remote%20Callout%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E4%BC%9A%E5%86%85%E5%BC%80%E6%A1%A5%E3%80%81%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%A1%A5%E4%B8%8E%20standalone%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%85%A5%E5%8F%A3.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/27-remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81--remote-control%E3%80%81claude%20remote-control%20%E4%B8%8E%20Remote%20Callout%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E4%BC%9A%E5%86%85%E5%BC%80%E6%A1%A5%E3%80%81%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%A1%A5%E4%B8%8E%20standalone%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%85%A5%E5%8F%A3.md)
+- 分清 remote session client、viewer 与 bridge host 为什么不是同一种远程工作流：
+  [05-控制面深挖/28-remote%20%E4%BC%9A%E8%AF%9D%E3%80%81session%20%E5%91%BD%E4%BB%A4%E3%80%81assistant%20viewer%20%E4%B8%8E%20remote-safe%20commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E4%BC%9A%E8%AF%9D%20client%E3%80%81viewer%20%E4%B8%8E%20bridge%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C%E6%B5%81.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/28-remote%20%E4%BC%9A%E8%AF%9D%E3%80%81session%20%E5%91%BD%E4%BB%A4%E3%80%81assistant%20viewer%20%E4%B8%8E%20remote-safe%20commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E4%BC%9A%E8%AF%9D%20client%E3%80%81viewer%20%E4%B8%8E%20bridge%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C%E6%B5%81.md)
+- 分清远端的权限提示、会话控制与命令白名单为什么不是同一种控制合同：
+  [05-控制面深挖/29-Bridge%20Permission%20Callbacks%E3%80%81Control%20Request%20%E4%B8%8E%20Bridge-safe%20Commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E7%9A%84%E6%9D%83%E9%99%90%E6%8F%90%E7%A4%BA%E3%80%81%E4%BC%9A%E8%AF%9D%E6%8E%A7%E5%88%B6%E4%B8%8E%E5%91%BD%E4%BB%A4%E7%99%BD%E5%90%8D%E5%8D%95%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%8E%A7%E5%88%B6%E5%90%88%E5%90%8C.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/29-Bridge%20Permission%20Callbacks%E3%80%81Control%20Request%20%E4%B8%8E%20Bridge-safe%20Commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E7%9A%84%E6%9D%83%E9%99%90%E6%8F%90%E7%A4%BA%E3%80%81%E4%BC%9A%E8%AF%9D%E6%8E%A7%E5%88%B6%E4%B8%8E%E5%91%BD%E4%BB%A4%E7%99%BD%E5%90%8D%E5%8D%95%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%8E%A7%E5%88%B6%E5%90%88%E5%90%8C.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：
@@ -62,6 +80,8 @@
   [05-控制面深挖/18-插件安装、待刷新与当前会话激活：为什么 `/reload-plugins` 不是安装器.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/18-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E3%80%81%E5%BE%85%E5%88%B7%E6%96%B0%E4%B8%8E%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E6%BF%80%E6%B4%BB%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20%60%2Freload-plugins%60%20%E4%B8%8D%E6%98%AF%E5%AE%89%E8%A3%85%E5%99%A8.md)
 - 分清插件为什么有时自动出现、有时只停在待刷新：
   [05-控制面深挖/19-插件自动物化、Startup Trust 与 Headless 刷新：为什么插件有时会自己出现、有时只提示 `/reload-plugins`.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/19-%E6%8F%92%E4%BB%B6%E8%87%AA%E5%8A%A8%E7%89%A9%E5%8C%96%E3%80%81Startup%20Trust%20%E4%B8%8E%20Headless%20%E5%88%B7%E6%96%B0%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8F%92%E4%BB%B6%E6%9C%89%E6%97%B6%E4%BC%9A%E8%87%AA%E5%B7%B1%E5%87%BA%E7%8E%B0%E3%80%81%E6%9C%89%E6%97%B6%E5%8F%AA%E6%8F%90%E7%A4%BA%20%60%2Freload-plugins%60.md)
+- 分清 headless 的启动链、首问就绪与结构化宿主对象：
+  [05-控制面深挖/20-Headless 启动链、首问就绪与 StructuredIO：为什么 print 不是没有 UI 的 REPL.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/20-Headless%20%E5%90%AF%E5%8A%A8%E9%93%BE%E3%80%81%E9%A6%96%E9%97%AE%E5%B0%B1%E7%BB%AA%E4%B8%8E%20StructuredIO%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20print%20%E4%B8%8D%E6%98%AF%E6%B2%A1%E6%9C%89%20UI%20%E7%9A%84%20REPL.md)
 - 判断稳定面、灰度面和内部面：
   [03-参考索引/02-能力边界/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
 - 建立系统总图：
@@ -126,16 +146,6 @@
 - 插件、MCP、技能、Hooks 与 Agents 运维
 - CLI 根入口、旗标与启动模式
 - 会外控制台与会内面板
-- 设置面板、诊断屏与运营命令
-- 命令对象、执行语义与可见性
-- 技能来源、可见性与触发
-- system-init、技能提醒与 SkillTool
-- 来源信任、Trust Dialog 与 plugin-only policy
-- 技能发现、static listing 与 remote skills
-- hooks 的加载、注册、执行与 UI
-- MCP 配置、按名解析与 Agent 引用
-- 插件安装、待刷新与当前会话激活
-- 插件自动物化、Startup Trust 与 Headless 刷新
 
 适合已经知道自己要完成什么工作，并准备读长文专题的读者。
 
@@ -148,6 +158,11 @@
 - compact / resume / memory 的控制面
 - agent / task / team / cron 的控制面
 - 入口决策树
+- status / doctor / usage 的运行时自检面
+- add-dir 的工作面扩张与 sandbox 刷新
+- rename / export 的会话对象化与交付
+- release-notes / feedback 的版本证据与反馈回路
+- 设置面板、诊断屏与运营命令的三层分工
 - slash command 的对象、执行与可见性边界
 - skills 的来源、暴露面与触发边界
 - Claude 如何看见可用能力
@@ -157,5 +172,15 @@
 - `/mcp` 总览、按名解析与 Agent 引用的错位
 - `/reload-plugins` 与插件当前会话激活面的错位
 - 插件自动物化链与当前会话激活链的错位
+- headless 启动链、首问就绪与结构化宿主合同
+- host / viewer / health-check 的会外入口边界
+- `skip trust dialog`、project `.mcp.json` 批准与 health-check 的边界
+- bridge 的 workspace trust、bridge eligibility 与 trusted-device 边界
+- bridge 的 auto-connect、mirror、perpetual 与 continue 模式边界
+- bridge 的设置默认、显式开关与状态展示边界
+- bridge 的链接、二维码与定位符边界
+- remote-control 的入口矩阵边界
+- remote session client、viewer 与 bridge host 的边界
+- remote 的权限响应、会话控制与命令合同边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
