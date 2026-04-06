@@ -49,6 +49,7 @@
 - [45-2026-04-06-standalone remote-control work intake 拆分记忆.md](./45-2026-04-06-standalone%20remote-control%20work%20intake%20拆分记忆.md)
 - [46-2026-04-06-standalone remote-control session timeout 拆分记忆.md](./46-2026-04-06-standalone%20remote-control%20session%20timeout%20拆分记忆.md)
 - [47-2026-04-06-standalone remote-control 保活、回连预算与放弃条件拆分记忆.md](./47-2026-04-06-standalone%20remote-control%20保活、回连预算与放弃条件拆分记忆.md)
+- [48-2026-04-06-headless remote-control startup verdict 拆分记忆.md](./48-2026-04-06-headless%20remote-control%20startup%20verdict%20拆分记忆.md)
 
 用途：
 

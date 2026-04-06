@@ -48,6 +48,7 @@
 44. 为什么 standalone remote-control 的 work secret、ack 时机、existing session refresh 与 unknown work 不是同一种领取。
 45. 为什么 bridge 的 session timeout、watchdog、kill 与 failed remap 不是同一种 timeout。
 46. 为什么 bridge 的 seek-work poll、at-capacity heartbeat、reconnecting 预算、sleep reset 与 give up 不是同一种重试。
+47. 为什么 headless remote-control 的 startup preflight、permanent error 与 transient retry 不是同一种开桥失败。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

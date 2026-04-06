@@ -36,3 +36,4 @@
 - [34-Remote Control work secret、ack timing、existing session refresh 与 unknown work 索引.md](./34-Remote%20Control%20work%20secret、ack%20timing、existing%20session%20refresh%20与%20unknown%20work%20索引.md)
 - [35-Remote Control session timeout、watchdog、kill 与 failed remap 索引.md](./35-Remote%20Control%20session%20timeout、watchdog、kill%20与%20failed%20remap%20索引.md)
 - [36-Remote Control poll、heartbeat、reconnecting、give up 与 sleep reset 索引.md](./36-Remote%20Control%20poll、heartbeat、reconnecting、give%20up%20与%20sleep%20reset%20索引.md)
+- [37-Remote Control headless startup permanent error 与 transient retry 索引.md](./37-Remote%20Control%20headless%20startup%20permanent%20error%20与%20transient%20retry%20索引.md)
