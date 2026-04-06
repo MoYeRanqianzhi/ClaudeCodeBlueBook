@@ -6,6 +6,37 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/claude-code-risk-analysis`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 README judgment-first 动作: 已继续更新 `guides/README`、`philosophy/README`、`playbooks/README` 与 `casebooks/README`，把 `目录分层 / 推荐入口 / 使用方式 / 适合什么时候读 / 从 X 到 Y` 这类库存页与路径表语气收回到 `什么时候进来 / 如果你只先判断一件事 / 如果失真发生在 / 这里不回答什么`。
+- 本轮目录层判断加固: 当前最值钱的目录优化已继续从“去掉旧 visible root”推进到“去掉路径表语法”；更成熟的 README 不该再像调度台，而应先说明读者正在判断什么、最常怎样误判、以及这里不负责回答什么。
+- 本轮并行 Agent 经验: Prompt / 治理 / 结构三条侧线继续提供了有效的 front-door debt 信号，但仍有一条侧线因 `429` 限流中断；后续并行多 Agent 仍值得保留，只是要继续把任务压窄到单一入口页或单一目录 README。
+- 本轮深导航 judgment-map 动作: 已继续更新 `navigation/03 / 07 / 41 / 46`，把 `进入顺序 / 推荐阅读链 / 规范锚点 / 证明页 / 共同次序` 这类路线卡句法收回到 `误判校正入口 / 先问 / 成立证据 / 补充证据 / 方法判据 / 迁移门槛`，并把结构线 visible root 继续从 `authority object` 收回到 `current-truth surface`。
+- 本轮导航层判断加固: 当前最值钱的导航优化不在继续补链，而在把链接从“阅读序列”降为“成立证据”；更成熟的前门不是告诉读者按什么顺序点开，而是先说明哪种误判需要哪组证据来纠正。
+- 本轮 judgment-map 收口动作: 已继续更新 `navigation/01 / 15 / 41`，把 `最短反查链 / 稳定阅读顺序 / 三种入口问题 / Prompt魔力` 这类偏路线卡的前门语法收回到 `规范锚点 / 证明页 / 三类审题 / 请求装配控制面 / 当前真相保护`，让三页更像失稳前判题页，而不是阅读路线卡。
+- 本轮导航页判断加固: 当前最值钱的导航优化不再是补更多链路，而是减少“先告诉读者怎么读，再告诉他怎么判断”这类倒序；更稳的导航页应先交出不可约判断、first reject path 与证明页，再给起点。
+- 本轮目录前门收口动作: 已继续更新 `README`、`bluebook/README`、`philosophy/README`、`guides/README`、`playbooks/README`、`casebooks/README`、`navigation/README` 与 `navigation/04`，把目录首页的计数/编号库存、`source-first pricing / authority object / 最小可见面 / single-writer authority / builder / 开发记忆` 这类旧 visible root 与过程口吻收回到 `稳定入口 / governance pricing chain / current-truth surface / decision window / 高阶审读 / 研究过程、证据与变更记录`。
+- 本轮目录结构判断加固: 当前最值钱的目录优化已不再是补更多跳转链，而是让 README 首页先回答“从哪进入、该用什么对象链判断”，而不是继续报篇数、阶段状态或角色口吻；兼容路径保留给文件名，规范 visible root 应由 H1、导语、入口标签与目录摘要承担。
+- 本轮侧线结论吸收: 并行 Agent 已进一步确认剩余高价值债主要集中在目录前门而非深正文，尤其是根 README、`bluebook/README`、`navigation/README`、`guides/README` 与 `navigation/04`；因此本批继续优先清 visible-root copy，而不再扩正文深段。
+- 本轮 `06` 后半段去自指化动作: 已继续更新 `6.36-6.63`，把“我们是否仍 / 蓝皮书会...”这组后半段自指标题与句型收回到制度失真命名、失败模式与八张判据卡；其中 `6.45-6.60` 现已更明确把 Prompt 魔力、安全定价与源码先进性分别压到“工作语法工程 / 反扩张运行时 / present-state protection”，不再退回文案、压缩技巧与结构截图叙事。
+- 本轮 visible root 收口动作: `guides/100 / 101` 现已显式声明“文件名只做兼容路径”，可见主语分别固定为 `governance key / decision window / continuation pricing` 与 `current-truth surface / freshness gate / ghost capability`；`navigation/03` 的治理入口标签也已同步换到当前对象链。
+- 本轮并行 Agent 经验: Prompt / 治理 / 源码质量三条 sidecar 已再次并行发起，但侧线受 `429` 限流影响较大；后续并行多 Agent 仍应继续使用，但任务粒度要更小，且不能把主线提交阻塞在侧线回传上。
+- 本轮主分支同步检查: 根仓库当前干净，`main` 与 `origin/main` 同在 `d4ea1ea22471794d0a80ae314b2fc67455433c86`；`git pull --ff-only` 已正常返回 `Already up to date.`。
+- 本轮审读页 doctrine 化动作: 已继续更新 `guides/99 / 100 / 101` 的开头、`失稳时的回修顺序` 与后半段栏目名，把 `builder-facing / 审读记录卡 / 检查清单` 收回到更硬的 `失稳前审读问题 / 最小判据 / 否证问句` 语气。
+- 本轮局部对象链加固: 已继续把 `guides/100` 正文中的 `authority source` 收回到 `governance key`，把 host 消费面写成 `governance truth/status`，并把 `guides/101` 的 H1 收回到 `current-truth surface`，避免审读页 visible root 继续落后于当前对象链。
+- 本轮 `06` 后半段推进动作: 已继续更新 `6.22-6.35`，把“我们是否仍...”这组自指标题改写成更一般化的高频失真命名，同时把其中的治理段从旧 `authority object / deny-ask-bypass` 语言收回到 `governance pricing chain` 与投影替身语言。
+- 本轮分批策略判断: `06` 的第 `6` 节从 `6.36` 往后仍残留大量“蓝皮书会继续低估 / 会误写成”的自指句型；适合继续按主题分段清理，而不是一次性整章重写。
+- 本轮 doctrine 小标题收口动作: 已继续更新 `06` 的 `2.13 / 6.61-6.63` 与 `guides/99 / 100 / 101` 的后半段小标题，把 `审读记录卡 / 检查清单 / 渐进改写顺序 / 同题坏解` 这类仍偏 worksheet 或路线提示的标题收回到 `对称判断 / 最小判据 / 否证问句 / 失真命名` 这类更硬的 doctrine 语言。
+- 本轮 Prompt / 治理 / 结构深化结论: Prompt 线更明确回到了“对称判断”和 `message lineage` 的持续诚实；治理线更明确把 host 消费面写成 `governance truth/status`；结构线更明确把 one writable present 的审读页小标题收回到 present-truth doctrine，而不是 worksheet 栏目。
+- 本轮后续目标澄清: `06` 的第 `6` 节从 `6.36` 往后仍有大量“蓝皮书会继续低估 / 会误写成”自指句型；当前适合继续按主题分段清理，而不是一次性整章重写。
+- 本轮审读页语气收口动作: 已继续更新 `guides/99 / 100 / 101`，把开头中的 `builder-facing`、收尾中的“在你准备继续改 / 加规则 / 整理结构前”以及中段的“更好的迭代顺序”统一收回到更一般化的“失稳前审读问题 / 失稳时的回修顺序 / 检查清单”语气。
+- 本轮局部对象链加固: 已继续把 `guides/100` 中可见正文里的 `authority source` 收回到 `governance key`，并把 `guides/101` 的 H1 从 `authority object` 收回到 `current-truth surface`，避免审读页 visible root 继续落后于当前对象链。
+- 本轮 `06` 局部自指化清理: 已继续更新 `6.22-6.35`，把“我们是否仍...”这一串自指标题开始收回为更一般化的高频失真命名，并顺手把安全治理段里的旧 `authority object / deny-ask-bypass` 叙述收回到 `governance pricing chain` 与投影替身语言。
+- 本轮分批策略判断: `06` 的第 `6` 节后半段仍有大量“蓝皮书会不会误写 / 会不会低估”的自指句型；本批只处理 `6.22-6.35` 这一段，后续仍建议按主题分批继续清，而不一次性把整章全部重写。
+- 本轮主分支同步检查: 根仓库现已恢复干净，`main` 与 `origin/main` 当前同在 `d4ea1ea22471794d0a80ae314b2fc67455433c86`；`git pull --ff-only` 已正常返回 `Already up to date.`。
+- 本轮前门导览感收口动作: 已继续更新 `navigation/01`、`navigation/15` 与 `09` 的开头与局部导航标题，把“阅读地图 / 自我校准 / 这一章回答什么 / 读后总结”这类导览感继续降级，收回到更硬的“审任一 runtime / 失稳前审读 / 三条设计母线 / 设计宪法”语气。
+- 本轮目录结构判断加固: 当前导航页最值钱的优化，不再是再给更多路线，而是让进入姿态从“我要怎么读”切回“我要怎么判断”；因此本轮只改前门语气，不扩中段正文。
+- 本轮自指施工话术收口动作: 已继续更新 `06-第一性原理与苏格拉底反思` 的开头与第 `6 / 7` 节，把“蓝皮书自己做错了什么 / 第一版如何 / 继续写这本蓝皮书”这类更像作者施工现场的句子，收回到“这类制度分析最常会在哪里失真 / 更稳的载体纪律 / 持续审读协议”这类更一般化的 doctrine 语言。
+- 本轮载体纪律判断加固: 当一页已经承担第一性原理与苏格拉底反思功能时，最容易继续滑回施工现场的不是对象链，而是“我们这本书现在如何 / 第一版怎样 / 继续写时怎样”这类自指话术；这类内容应优先改写成可迁移的失真类型与载体纪律，而不是继续保留作者视角。
+- 本轮后续目标澄清: `06` 的后半段仍有大量“蓝皮书会不会误写 / 会不会低估”的自指句型；这批只收前门与第 `6 / 7` 节，后半段适合单独作为下一批的正文去自指化任务。
 - 本轮路由页去自助化动作: 已继续更新 `navigation/01`、`navigation/15` 与 `09`，把“阅读地图 / 自我校准 / 主线导览”继续收回到“审任一 runtime 的地图 / 失稳前苏格拉底审读 / 三条设计母线”的正文语气。
 - 本轮目录结构判断加固: 当前目录优化最值钱的已不只是改目录关系，而是让 `navigation/` 页本身不再像读书路线卡或自助校准卡；更稳的路由页应先交出最短判断、最短入口链与 first reject path，再交出阅读顺序。
 - 本轮 Prompt / 治理 / 源码前门结论: `navigation/01` 现已更明确地服务“审任一 runtime”；`navigation/15` 现已把“自我校准”收回到“失稳前审读”；`09` 现已更明确地作为宪法页宣布三条母线，而不是先以“这一章回答五个问题”的导览方式开场。

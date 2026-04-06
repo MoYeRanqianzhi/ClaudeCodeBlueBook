@@ -1,6 +1,6 @@
-# 导航专题
+# 跨目录入口
 
-`navigation/` 当前有 104 篇编号文档，范围 `01-104`。本目录只负责跨目录路由，不重新定义三条母线；需要权威短语与最短主线时先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)；只有当问题已经变成跨目录反查时再留在这里。
+`navigation/` 只负责跨目录路由，不重新定义三条母线；需要权威短语与最短主线时先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)；只有当问题已经变成跨目录反查时再留在这里。
 
 ## 目录分层
 
@@ -19,17 +19,17 @@
 - [02-能力、API与治理检索图](02-能力、API与治理检索图.md): 按问题反查能力、接口与治理入口
 - [04-目录职责、规范入口与兼容别名页说明](04-目录职责、规范入口与兼容别名页说明.md): 需要判断某个入口页究竟归谁负责时
 - [07-深方法导航：共享前缀、合同优先与依赖图诚实性](07-深方法导航：共享前缀、合同优先与依赖图诚实性.md): 需要方法线与证据分级时
-- [15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准](15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md): 需要自校问题梯子时
+- [15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性](15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md): 需要失稳前问题梯子时
 - [41-机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理](41-机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理.md): 需要把深专题回压成第一性原理时
 - [46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布](46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布.md): 需要进入宿主实现与迁移链时
 
 如果问题要沿 Prompt 对象链往下压，不要自己拼入口：
 
 - 高层判断：`09 -> 81 -> 82`
-- 旧词汇桥接只在需要时补 `30`
+- 历史命名对照只在需要时补 `30`
 - 失真反证入口：`73`
-- 当前 builder 审读主入口：`99`
-- 当前长期验证主入口：`77`
+- 默认高阶审读入口：`99`
+- 默认长期验证入口：`77`
 
 如果问题已经进入运行手册层，不要再自己拼链：
 
@@ -39,8 +39,8 @@
 - 结构修复 / refinement：`67 -> 70 -> 73 -> 76`
 - 结构长期验证：`79`
 - Prompt 深段对象：`message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification -> cache-safe fork`
-- 治理深段对象：`governance key -> externalized truth -> durable-vs-transient -> continuation pricing`
-- 结构深段对象：`authority object -> per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`
+- 治理深段对象：`governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-vs-transient cleanup`
+- 结构深段对象：`current-truth surface -> per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`
 - 公开镜像证据分级与进一步 reject path：在三条链各自稳定后，再回 `102`
 
 ## 什么时候用它
@@ -50,7 +50,7 @@
 - 需要把 `guides/`、`casebooks/`、`playbooks/`、`api/`、`architecture/` 串成同一条阅读链时
 - 需要确认某个深层编号段应该归谁解释时
 - 需要确认 Prompt / 治理 / 结构三条执行链各自应该走哪组接入、验收、修复与验证手册时
-- 需要区分结构线里的旧 intake / acceptance 页和当前 repair / validation 主入口时
+- 需要区分结构线里的早期接入页与现行修复 / 长期验证入口时
 - 需要确认 Prompt 对象链在“为什么 / 审读 / 验证”三层分别该落到哪些页时
 - 需要确认 Prompt 编译链的“为什么 / 架构 / 反证 / 验证”该怎样稳定下钻时
 
@@ -58,7 +58,7 @@
 
 - `navigation/` 负责跨目录路由，不重复定义各目录正文。
 - 深层编号段的详情应回到对应目录 README 或对应编号文档。
-- 总索引层面只应链接到稳定导航节点，而不是直接堆叠全部深链。
+- 顶层入口层面只应链接到稳定导航节点，而不是直接堆叠全部深链。
 - `navigation/README` 负责列出稳定节点，不负责把每条深链都摊平成首页。
-- 文中可以保留稳定阅读顺序，但不再使用“层级继续生长 / 当前推进位置 / 下一步候选”式开发记忆话术。
-- 轮次推进与开发记忆统一回写到 `docs/`，不写进导航正文。
+- 文中可以保留稳定阅读顺序，但不再使用过程状态、阶段推进与候选优先级这类记忆口吻。
+- 过程记录与变更记录统一回写到 `docs/`，不写进导航正文。

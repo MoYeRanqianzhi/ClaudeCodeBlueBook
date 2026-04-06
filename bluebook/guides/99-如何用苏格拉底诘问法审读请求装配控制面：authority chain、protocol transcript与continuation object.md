@@ -1,14 +1,6 @@
 # 如何用苏格拉底诘问法审读请求装配控制面：message lineage、protocol transcript与continuation object
 
-这一章不再解释 Prompt 为什么强，而是把 `architecture/82` 与 `philosophy/84` 沉成一套 builder-facing 审读问题序列。
-
-它主要回答五个问题：
-
-1. 怎样避免把 Prompt 魔力重新写回 system prompt 咒语。
-2. 怎样按固定顺序审读 `message lineage`、`projection consumer`、`section registry / dynamic boundary`、`protocol transcript`、`continuation object` 与 `continuation qualification`。
-3. 怎样判断一个 runtime 是否真的先把世界编译进模型，而不是先把世界描述给模型。
-4. 怎样识别那些看起来更聪明、实际更脆的坏改写。
-5. 怎样用苏格拉底式追问避免把这些问题重新压扁成一份更长的 Prompt 规范。
+这篇把 `architecture/82` 与 `philosophy/84` 压成一组失稳前审读问题。
 
 ## 0. 代表性源码锚点
 
@@ -115,7 +107,7 @@
 4. 以为 side loop 只是性能分支，不会制造第二真相。
 5. 以为 cache、stable bytes 与 continue qualification 只是性能或产品体验问题。
 
-## 4. 更好的迭代顺序
+## 4. 失稳时的回修顺序
 
 当这组问题里有任何一个答不清时，优先做下面四步：
 
@@ -124,7 +116,7 @@
 3. 再检查 `messages.ts`、`sessionMemoryCompact.ts`、`stopHooks.ts` 与 `forkedAgent.ts` 对应的对象边界是否被某条旁路绕开。
 4. 最后才决定要不要重写文案；多数情况下，应该先修世界准入，而不是先修语气。
 
-## 5. 审读记录卡
+## 5. 最小判据
 
 ```text
 审读对象:
@@ -142,9 +134,9 @@ display / protocol / handoff 是否仍沿同一条 message lineage 投影:
 - 主权链 / section / boundary / transcript compiler / compact object / fork reuse
 ```
 
-## 6. 苏格拉底式检查清单
+## 6. 否证问句
 
-在你准备继续改 Prompt 前，先问自己：
+准备改 Prompt 时，先问：
 
 1. 我现在优化的是文案，还是世界准入方式。
 2. 如果多份文本冲突，谁真正说了算。

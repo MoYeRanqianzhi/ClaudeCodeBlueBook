@@ -1,57 +1,29 @@
-# 案例库
+# 失败样本
 
-`casebooks/` 当前有 75 篇编号文档，范围 `01-75`。本目录不重讲正确答案，而是收纳 Prompt、治理、结构和宿主落地里的失败样本、反例对照与失真原型。它只保留失败正文，不再夹带轮次级整改待办或“改写路径”。
+`casebooks/` 只收失败样本、反例对照与失真机制，不重讲正确答案。正向修复路径统一回 `guides/`、`playbooks/` 与对应协议页。
 
-## 目录分层
+## 什么时候进来
 
-- `01-09`: 基础事故集、标签体系、源码锚点与三路反查。
-- `10-24`: Prompt / 安全 / 结构反例，以及 Evidence Envelope、Host Implementation、Artifact 反例。
-- `25-33`: 宿主消费、故障模型、迁移与验收执行反例。
-- `34-45`: 修复、收口、监护、解除监护与稳态反例。
-- `46-57`: 稳态纠偏、再纠偏与改写执行反例。
-- `58-72`: 改写纠偏、精修与 card / reopen liability 反例。
-- `73-75`: 三张控制面图长期验证失真反例。
+- 当你已经知道正向对象链，但想看它最常怎样失真、伪装与篡位。
+- 当你需要 failure mode，而不是新的方法模板或执行手册。
 
-## 按对象链进入
+## 如果失真发生在
 
-- Prompt 证据壳层与继续对象：`13 -> 37 -> 46 -> 64 / 70`
-  - 核心对象：`message lineage / projection consumer / protocol transcript / continuation object`
-- 治理主键与统一定价修复链：`23 -> 35 -> 47 -> 71 / 74`
-  - 核心对象：`governance key / externalized truth chain / decision window / continuation pricing / durable-vs-transient`
-- 结构权威面与 present-truth 修复链：`15 -> 36 -> 42 -> 75`
-  - 核心对象：`authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`
-- 想看“宿主到底该消费哪些正式对象”，先去 `../navigation/43`，再回这些反例页看失真样本。
+- 请求装配控制面：从 [73-请求装配控制面验证失真反例：假lineage kernel、假protocol transcript与假continuation object](73-%E8%AF%B7%E6%B1%82%E8%A3%85%E9%85%8D%E6%8E%A7%E5%88%B6%E9%9D%A2%E9%AA%8C%E8%AF%81%E5%A4%B1%E7%9C%9F%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87authority%20chain%E3%80%81%E5%81%87protocol%20transcript%E4%B8%8E%E5%81%87continuation%20object.md) 进入。
+  - 失败信号：消息血缘、协议转录与继续资格被字符串感、摘要感或 UI 体感替代。
+- 当前世界准入主权：从 [74-当前世界准入主权验证失真反例：低信任扩权、假decision window与免费继续](74-%E5%BD%93%E5%89%8D%E4%B8%96%E7%95%8C%E5%87%86%E5%85%A5%E4%B8%BB%E6%9D%83%E9%AA%8C%E8%AF%81%E5%A4%B1%E7%9C%9F%E5%8F%8D%E4%BE%8B%EF%BC%9A%E4%BD%8E%E4%BF%A1%E4%BB%BB%E6%89%A9%E6%9D%83%E3%80%81%E5%81%87%E6%9C%80%E5%B0%8F%E5%8F%AF%E8%A7%81%E9%9D%A2%E4%B8%8E%E5%85%8D%E8%B4%B9%E7%BB%A7%E7%BB%AD.md) 进入。
+  - 失败信号：治理主键、decision window 与 continuation pricing 被面板、模式或默认继续体感替代。
+- 当前真相保护：从 [75-one writable present验证失真反例：健康投影篡位、恢复资产越权与ghost capability伪证](75-one%20writable%20present%E9%AA%8C%E8%AF%81%E5%A4%B1%E7%9C%9F%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%A5%E5%BA%B7%E6%8A%95%E5%BD%B1%E7%AF%A1%E4%BD%8D%E3%80%81%E6%81%A2%E5%A4%8D%E8%B5%84%E4%BA%A7%E8%B6%8A%E6%9D%83%E4%B8%8Eanti-zombie%E4%BC%AA%E8%AF%81.md) 进入。
+  - 失败信号：current-truth surface、freshness gate 与 ghost capability 被 pointer、恢复成功率或健康投影取代。
 
-## 推荐入口
+## 这里不回答什么
 
-- [01-Prompt事故案例集：修宪漂移、路径失配与合法遗忘失效](01-Prompt事故案例集：修宪漂移、路径失配与合法遗忘失效.md)
-- [04-事故标签体系与交叉索引：阶段、资产、症状、根因与恢复动作](04-事故标签体系与交叉索引：阶段、资产、症状、根因与恢复动作.md)
-- [10-Prompt反例对照：长文案崇拜、主语漂移与共享前缀分叉](10-Prompt反例对照：长文案崇拜、主语漂移与共享前缀分叉.md)
-- [25-Prompt宿主消费反例：字符串崇拜、缓存黑箱与继续资格误判](25-Prompt宿主消费反例：字符串崇拜、缓存黑箱与继续资格误判.md)
-- [34-Prompt宿主修复演练反例：repair object伪绑定、摘要回滚与假重入](34-Prompt宿主修复演练反例：repair object伪绑定、摘要回滚与假重入.md)
-- [46-Prompt宿主修复稳态执行反例：message lineage 假稳态、stable prefix 托管表演与无阈值继续](46-Prompt宿主修复稳态执行反例：假稳态、前缀托管表演与无阈值继续.md)
-- [64-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行反例：假repair card、假protocol truth与假reopen liability](64-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏执行反例：假repair card、假protocol truth与假reopen liability.md)
-- [67-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假repair card、假共同reject语义与假reopen liability](67-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假repair card、假共同reject语义与假reopen liability.md)
-- [70-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假message lineage card、假shared reject语义与假reopen liability](70-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假compiled request card、假shared reject语义与假reopen liability.md)
-- [73-请求装配控制面验证失真反例：假lineage kernel、假protocol transcript与假continuation object](73-请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object.md)
-- [74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续](74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续.md)
-- [75-one writable present验证失真反例：健康投影篡位、恢复资产越权与anti-zombie伪证](75-one writable present验证失真反例：健康投影篡位、恢复资产越权与anti-zombie伪证.md)
-
-## 怎么配合其他目录使用
-
-- 想看正向方法：回到 [../guides/README.md](../guides/README.md)
-- 想看运行手册和演练动作：回到 [../playbooks/README.md](../playbooks/README.md)
-- 想做跨样本反查：回到 [../navigation/README.md](../navigation/README.md)
-- 想看结构和协议的正向定义：回到 [../architecture/README.md](../architecture/README.md) 与 [../api/README.md](../api/README.md)
-- 想看正向纠偏路径：优先回到 `guides/`、`playbooks/`、`api/`，不要继续停留在案例正文里找待办
-- 想看共同 `reject` 与 `reopen` 的 card 失真样本：从 `70-72`
-- 想看三张控制面图的长期验证为什么会被伪验证偷走：从 `73-75` 或 `../navigation/40`
-- 想看 Evidence Envelope 为什么总会退回原文、目录与作者说明：优先从 `13 / 15` 配合 `../navigation/43` 进入
+- 本目录不负责提供正向方法、执行顺序与修复工单。
+- 本目录也不负责完整跨样本索引；需要跨目录分流时统一回 [../navigation/README.md](../navigation/README.md)。
 
 ## 维护约定
 
-- README 只保留阶段入口和代表性反例，不再镜像全部 75 篇标题。
+- README 只保留失真入口和稳定起点，不再展开长链路由。
 - 新样本应按编号段放回对应阶段，保持与 `playbooks/` 和 `navigation/` 的互补关系。
 - 正向改写、修复顺序与协议对象统一写回 `guides/`、`playbooks/`、`api/`，不重新塞回案例正文。
-- 轮次推进与开发记忆统一回写到 `docs/`，不写进案例正文。
-- 编号段负责时间顺序，对象链入口负责阅读顺序；不要再让编号感压过对象主语。
+- 过程记录与变更记录统一回写到 `docs/`，不写进案例正文。

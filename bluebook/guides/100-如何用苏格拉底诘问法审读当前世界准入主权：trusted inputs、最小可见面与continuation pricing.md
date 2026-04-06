@@ -1,14 +1,6 @@
 # 如何用苏格拉底诘问法审读当前世界准入主权：governance key、decision window与continuation pricing
 
-这一章不再解释安全与省 Token 为什么同构，而是把 `architecture/83` 与 `philosophy/85` 沉成一套 builder-facing 审读问题序列。
-
-它主要回答五个问题：
-
-1. 怎样避免把治理重新写回“更严的拦截器”。
-2. 怎样按固定顺序审读 `governance key`、`externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup`。
-3. 怎样判断一个 runtime 是否真的把“当前世界的准入主权”保留在 runtime，而不是外包给模型或低信任输入。
-4. 怎样识别那些看起来更保守、实际更脆的坏改写。
-5. 怎样用苏格拉底式追问避免把这些问题重新写成一张设置页导览。
+这篇把 `architecture/83` 与 `philosophy/85` 压成一组失稳前审读问题。
 
 ## 0. 代表性源码锚点
 
@@ -27,7 +19,7 @@
 这些锚点共同说明：
 
 - 安全设计与省 Token 设计真正共享的是“当前世界的准入主权”，而不是同一组 UI 或同一个预算器名字。
-- 更硬一点说，`governance key` 才是这张控制面的实现主键；`authority source` 是其最前面的 source slot，而 ask、visibility、externalization 与 continuation 都只是这张主键向下游派生出的受价结果。
+- 更硬一点说，`governance key` 才是这张控制面的实现主键；source slot 只是它的最前沿证据位，而 ask、visibility、externalization 与 continuation 都只是这张主键向下游派生出的受价结果。
 
 ## 1. 第一性原理
 
@@ -57,7 +49,7 @@
 
 - 如果 project/local inputs 也能像 managed authority 一样扩边界，那当前世界的准入主权已经被外包。
 
-### 2.1.1 authority source 有没有被放到动作之前
+### 2.1.1 governance key 有没有先于动作被确认
 
 判断标准：
 
@@ -133,7 +125,7 @@
 4. 以为看见更多工具就等于系统更强。
 5. 以为 fail-closed 一定比资产分型更成熟。
 
-## 4. 更好的迭代顺序
+## 4. 失稳时的回修顺序
 
 当这组问题里有任何一个答不清时，优先做下面四步：
 
@@ -142,14 +134,15 @@
 3. 再检查 `managedEnv`、`permissionSetup`、`interactiveHandler`、`toolSearch`、`toolResultStorage` 与 `tokenBudget` 的真实边界。
 4. 最后才决定是否要补规则；多数时候，先修收费逻辑比先修 UI 更重要。
 
-## 5. 审读记录卡
+## 5. 最小判据
 
 ```text
 审读对象:
-当前 trusted input 链:
+当前 governance key 证据链:
 governance_key_ref:
+governance_evidence_slot:
 externalized_truth_chain_ref:
-authority source 是否先于动作、可见性和 continuation:
+governance key 是否先于动作、可见性和 continuation:
 source slot 是否真是规则主键:
 typed_ask_ref:
 typed ask arbitration 是否成立:
@@ -162,20 +155,20 @@ resume 是否只恢复 durable assets:
 durable_assets_after:
 transient_authority_cleared:
 失败语义是否按资产类型分型:
-host 是否只消费 runtime 外化的 authority/status:
+host 是否只消费 runtime 外化的 governance truth/status:
 当前最像哪类失真:
 - authority leak / free visibility / free context / free continuation / flattened failure semantics
 优先回修对象:
-- trusted input / ask arbitration / visibility / externalization / continuation / failure typing
+- governance key / typed ask / visibility / externalization / continuation / failure typing
 ```
 
 任一 `*_ref` 无法点名时，都应直接判定：
 
 - `not same control plane`
 
-## 6. 苏格拉底式检查清单
+## 6. 否证问句
 
-在你准备继续给系统加治理规则前，先问自己：
+准备继续给系统加治理规则前，先问：
 
 1. 我在收回免费扩张，还是只在增加表层摩擦。
 2. 当前世界的准入主权是不是仍在 runtime 手里。

@@ -2,6 +2,16 @@
 
 ## 2026-04-06
 
+- 继续更新 `guides/README`、`philosophy/README`、`playbooks/README` 与 `casebooks/README`，把 `目录分层 / 推荐入口 / 使用方式 / 适合什么时候读 / 从 X 到 Y` 这类库存页与路径表语气收回到 `什么时候进来 / 如果你只先判断一件事 / 如果失真发生在 / 这里不回答什么`，继续把目录 README 压成 judgment-first 入口页
+- 继续更新 `navigation/03`、`navigation/07`、`navigation/41` 与 `navigation/46`，把 `进入顺序 / 推荐阅读链 / 规范锚点 / 证明页 / 共同次序` 这类 route-map 语法继续收回到 `误判校正入口 / 先问 / 成立证据 / 补充证据 / 方法判据 / 迁移门槛`，并把结构线 visible root 继续从 `authority object` 收回到 `current-truth surface`
+- 继续更新 `navigation/01`、`navigation/15` 与 `navigation/41` 的前门语法，把 `最短反查链 / 稳定阅读顺序 / 三种入口问题 / Prompt魔力` 这类路线卡或旧前门词收回到 `规范锚点 / 证明页 / 三类审题 / 请求装配控制面 / 当前真相保护`，继续把导航页压成 judgment map 而不是 route map
+- 继续更新 `README`、`bluebook/README`、`philosophy/README`、`guides/README`、`playbooks/README`、`casebooks/README`、`navigation/README` 与 `navigation/04` 的目录前门，把计数/编号库存、`source-first pricing / authority object / 最小可见面 / single-writer authority / builder / 开发记忆` 这类旧 visible root、角色口吻与过程词收回到 `稳定入口 / governance pricing chain / current-truth surface / decision window / 高阶审读 / 研究过程、证据与变更记录`，并同步移除 `guides/100 / 101` 开头的兼容路径正文提示
+- 继续更新 `06-第一性原理与苏格拉底反思` 的 `6.36-6.63`、`guides/100 / 101` 与 `navigation/03`，把后半段“我们是否仍 / 蓝皮书会...”式自指标题与句型收回到制度失真命名、失败模式与八张判据卡，并把治理 / 结构审读页的可见主语统一到 `governance key / decision window / continuation pricing` 与 `current-truth surface / freshness gate / ghost capability`，同时保留旧文件名作为兼容入口
+- 继续更新 `06-第一性原理与苏格拉底反思` 的 `6.22-6.35` 与 `guides/99 / 100 / 101` 的开头、回修顺序和栏目名，把 `我们是否仍... / builder-facing / 审读记录卡 / 检查清单` 这类自指或 worksheet 语气收回到 `为什么常被误写 / 失稳前审读问题 / 失稳时的回修顺序 / 最小判据 / 否证问句` 这类更硬的 doctrine 语言，并同步把局部治理链条从旧 `authority source / authority object` 收回到 `governance key / governance truth` 与 `current-truth surface`
+- 继续更新 `06-第一性原理与苏格拉底反思` 的 `2.13`、`6.61-6.63` 与 `guides/99 / 100 / 101` 的后半段小标题，把“本书应统一复用 / 审读记录卡 / 检查清单 / 同题坏解 / 渐进改写顺序”这类较强的 workshop 与路线提示语气收回到“对称判断 / 最小判据 / 否证问句 / 失真命名”这类更硬的 doctrine 语言
+- 继续更新 `guides/99 / 100 / 101` 与 `06-第一性原理与苏格拉底反思` 的局部正文，把 `builder-facing`、`继续改 Prompt 前`、`更好的迭代顺序` 与 `我们是否仍...` 这类 workshop / 自指施工语气收回到更一般化的“失稳前审读问题 / 失稳时回修顺序 / 高频失真命名 / 治理定价链”表达
+- 继续更新 `navigation/01`、`navigation/15` 与 `09` 的开头导语和导航小标题，把“阅读路线 / 自我校准 / 这一章回答什么”这类前门导览感继续降级，收回到“审任一 runtime 的地图 / 失稳前苏格拉底审读 / 三条设计母线”的更硬前门语气
+- 继续更新 `06-第一性原理与苏格拉底反思` 的开头与第 `6 / 7` 节，把“蓝皮书自己做错了什么 / 第一版如何 / 继续写这本蓝皮书”这类自指施工话术收回到更一般化的 doctrine 失真、载体纪律与持续审读协议
 - 继续更新 `navigation/01`、`navigation/15` 与 `09` 的路由前门语气，把“阅读地图 / 自我校准 / 主线导览”进一步收回到“审任一 runtime 的地图 / 失稳前苏格拉底审读 / 三条设计母线”的 doctrine prose，并同步收紧 `09` 里剩余的读者视角与书写导览话术
 - 继续更新 `03-设计哲学` 的后半段正文语气，把 `继续深挖 / 更稳的模板 / 渐进改写 / 值得继续往` 这类 workshop 和作者工位话术收回到更稳定的 doctrine prose，并把 Prompt 魔力、安全定价、构建秩序与制度自审这些段落改写成直接陈述的原则判断
 - 继续更新 `navigation/01`、`09` 与 `03-设计哲学` 的第一性原理前门，把 `request object / authority object / 正式对象` 这些旧本体词收回到 `请求世界 / governance pricing chain / current-truth surface / 权威入口`，并把 Prompt 魔力明确收紧到 `message lineage -> projection consumer -> protocol transcript -> continuation qualification`
