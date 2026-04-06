@@ -16,6 +16,17 @@
 3. `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
    - 宿主到底在消费哪一层 truth、哪一层热点、哪一层镜像缺口
 
+更硬一点说，`api/` 在目录里的发言权也只该剩三条：
+
+1. `承认权`
+   - 哪些 contract / schema / host-facing truth 被正式承认。
+2. `消费边界`
+   - 哪些 host / adapter / consumer 只配消费哪一层 truth。
+3. `危险面暴露`
+   - 哪些 seam、rollback object、reopen boundary 与 hotspot 必须被显式对外。
+
+如果一页开始替 `philosophy/` 重判必要性，替 `architecture/` 重新发明对象链，或替 `playbooks/` 直接下 verdict，它就已经越权。
+
 如果一个 API 判断还压不回这三条，它就还停在接口库存层。
 
 ## 什么时候进来
@@ -78,6 +89,8 @@
 - 本目录不负责解释第一性原理，也不负责展开运行手册、拒收顺序与案例反例。
 - 本目录只回答“哪些真相被正式暴露、哪些 consumer 应怎样消费、哪里最危险”。
 - 如果你还在问“为什么必须如此设计”或“第一条反证信号是什么”，先回 `../navigation/15` 与 `../navigation/41`。
+
+更准确地说，`api/` 有正式承认权与消费边界说明权，但没有第一性原理改判权，也没有现场 verdict 签发权。
 
 ## 维护约定
 

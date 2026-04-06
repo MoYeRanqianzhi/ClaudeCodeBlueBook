@@ -23,6 +23,15 @@
 3. `durable-transient cleanup`
    - 谁配宣布已经没事了，哪些 signer / ledger / cleanup 结果词只配当投影
 
+如果继续把 `security/` 的目录发言权也压成最短公式，也只该剩三句：
+
+1. `signer / ledger / cleanup authority`
+   - 谁配签字、谁只配记账、谁只配结算。
+2. `governance mechanism speaking right`
+   - 哪条 signer / verdict / liability 机制在安全侧被看清。
+3. `no user-side settlement right`
+   - 用户侧误伤、恢复与入口语义差不在这里第一次裁决。
+
 如果一个安全判断还压不回这三条，它就还停在规则堆或工具堆层。
 
 ## 高阶前门
@@ -85,6 +94,7 @@
 
 - `security/README` 只保留前门判断、编号段职责与分流。
 - `security/README` 只负责治理 signer / ledger / cleanup 前门，不和 `risk/` 抢用户侧结算面，也不和 `playbooks/` 抢执行链。
+- `security/README` 有 signer/ledger 机制解释权，但没有用户侧恢复签发权，也没有现场执行 verdict 的代签权。
 - 巨型目录库存、逐篇标题镜像和作者侧记忆不再回灌首页。
 - 深层速查表统一回 `appendix/README.md`，源码剖面统一回 `source-notes/README.md`。
 - 需要宿主接入、验收、修复与长期回归时，回 [../playbooks/README.md](../playbooks/README.md) 与 [../risk/README.md](../risk/README.md)，不要继续停在安全首页摘要。

@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/README`、`security/README`、`risk/README`、`userbook/README` 与 `docs/README` 现已继续把“发言权限 / 申诉链” doctrine 扩展到剩余高流量入口：
+  - `api/README` 现在应长期记住：它有 contract/host-facing truth 的承认权，但没有第一性原理改判权，也没有现场 verdict 签发权。
+  - `security/README` 现在应长期记住：它解释 signer / ledger / cleanup 机制，但没有用户侧恢复签发权，也没有执行链 verdict 的代签权。
+  - `risk/README` 现在应长期记住：它负责用户侧结算与 reopen 资格显形，但没有治理机制改判权。
+  - `userbook/README` 现在应长期记住：它只有使用判断翻译权，没有第一性原理改判权，也没有 host-facing truth 的签发权；后续凡是 userbook 开始替 `philosophy/` 或 `api/` 重讲 canonical truth，都应视为长出第二蓝皮书。
+  - `docs/README` 现在应长期记住：`docs/` 只有记忆权，没有正文的改判权、对象承认权或 verdict 签发权。
 - `architecture/README`、`guides/README`、`playbooks/README` 与 `casebooks/README` 现已继续把“发言权限 / 申诉链” doctrine 下沉到各专题入口：
   - `architecture/README` 现在应长期记住：它不只是对象库存入口，而是 later maintainer 局部可反对性的结构入口；后续若架构专题入口还不能直接暴露 `authority surface / truth planes / writeback seam / retreat layer`，则视为入口写浅。
   - `guides/README` 现在应长期记住：它只把反对权压成问题梯子与模板，不替正文判必要性，也不替 `playbooks/` 发 verdict。

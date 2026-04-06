@@ -2,6 +2,11 @@
 
 `docs/` 只放研究过程、长期记忆和版本记录，不承载蓝皮书正文。正文去记忆化批次、目录治理调整、待办候选与研究推进摘要也统一留在这里。当前目录由根目录文档、`development/` 下研究材料、`development/security/` 下安全专题隔离记忆文档，以及 `userbook-memory/` 下 userbook 作者记忆组成。
 
+更硬一点说，`docs/` 在整套目录里的发言权是零：
+
+- 它保存为什么改、改了什么、下一轮该警惕什么。
+- 它不负责重新宣布什么是真的，也不负责替正文补做裁决。
+
 ## 当前内容
 
 - [changelog.md](changelog.md): 文档演进记录
@@ -31,3 +36,4 @@
 - userbook 的作者记忆统一写入 `docs/userbook-memory/`
 - 专题级推进记忆优先写入对应 `docs/development/<topic>/`
 - `README` 只保留稳定入口，不重复正文目录
+- `docs/` 只保留记忆与演进说明，不拥有正文的改判权、对象承认权或 verdict 签发权

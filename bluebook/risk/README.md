@@ -22,6 +22,15 @@
 3. `signer + evidence + reopen`
    - 恢复不是讲故事，而是凭证据重建执行连续性
 
+更硬一点说，`risk/` 在目录里的发言权也只该剩三条：
+
+1. `用户侧结算权`
+   - 误伤、恢复、入口差异与连续性成本怎样对用户显形。
+2. `reopen qualification`
+   - 哪些 signer、evidence 与 reopen 责任在用户侧重新绑定执行连续性。
+3. `no mechanism override`
+   - `risk/` 不重判治理主键、宿主状态机或 signer ladder 机制本身。
+
 如果一个风控判断还压不回这三条，它就还停在“更多封禁 / 更多限制”的结果词层。
 
 这里也要先记一句顺序：
@@ -89,5 +98,6 @@
 - `risk/` 解释的是统一定价控制面怎样在误伤、恢复、支持链路与地区入口上显形，不把风控退回“更多规则/更多封禁”叙事。
 - `risk/` 前门优先解释 signer、证据、恢复资格与 `governance key`，不自己重做权限或宿主状态机总图。
 - `risk/README` 只负责用户侧结算面前门，不和 `security/` 抢 signer/ledger 机制前门，不和 `playbooks/` 抢恢复执行链。
+- `risk/README` 有用户侧结算解释权，但没有治理机制改判权；一旦它开始自己重讲 signer ladder 或 host truth，对用户的结算面就会再次退回第二套故事。
 - 需要源码级安全控制面时，回到 [../security/README.md](../security/README.md)。
 - 需要失败样本和操作手册时，分别回到 [../casebooks/README.md](../casebooks/README.md) 与 [../playbooks/README.md](../playbooks/README.md)。
