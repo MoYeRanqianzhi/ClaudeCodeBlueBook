@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `guides/69`、`casebooks/23 / 36 / 37` 与 `navigation/83 / 103` 已继续把“上游叙事层旧词”收回当前对象链：
+  - `guides/69` 现已把 Prompt 监护纠偏从 `compiled request truth / watch note / reopen gate` 收紧到 `message lineage / projection consumer / continuation object / reopen gate`。
+  - `casebooks/23` 现已把治理反例从 `authority source / mode / token panel` 收紧到 `governance key / externalized truth chain / continuation pricing / durable-vs-transient cleanup`。
+  - `casebooks/36` 现已把结构修复演练反例从 `anti-zombie` 总括词收紧到 `event-stream-vs-state-writeback / freshness gate / stale worldview / ghost capability`。
+  - `casebooks/37` 现已把 Prompt 收口反例从 `request object / compiled request truth` 收紧到 `message lineage / protocol transcript / continuation object / lawful forgetting boundary`。
+  - `navigation/83 / 103` 现已把上游执行导航从 `rewrite card / compiled request card / authority stream card` 收紧到对象链执行卡，不再让旧流程词充当前门主语。
+- 新的长期结论：
+  - 当深段页已经换代后，最容易反向输送旧词的不是执行手册本身，而是监护模板、反例页和导航页；如果不继续收口这些页，读者仍会被旧入口词拖回 `compiled request truth / authority source / authority stream` 的上一代语言。
+  - Prompt 线上游叙事真正成熟时，不再把 `watch / closeout / handoff / reopen` 当主语，而是始终回到 `message lineage`、projection consumer 与 `continuation object`。
+  - 治理线上游叙事真正成熟时，反例与导航都应先问 `governance key`、`externalized truth chain` 和 `durable-vs-transient`，再谈 mode、弹窗、usage 与恢复动作。
+  - 结构线上游叙事真正成熟时，`anti-zombie` 只适合作为总括词；真正该被前置暴露的是 `event-stream-vs-state-writeback`、`freshness gate`、`stale worldview` 与 `ghost capability`。
 - `playbooks/75 / 76 / 77 / 79`、`playbooks/README`、`guides/README` 与 `navigation/README` 已继续把深段执行页与长期验证入口收紧到更硬的对象链：
   - `75` 现已把治理最深执行页从 `authority mode / *_surface / permission_mode` 收紧到 `governance key / externalized truth chain / typed ask / visible capability / continuation pricing / durable assets vs transient authority`。
   - `76` 现已把结构最深执行页从 `authority stream` 收紧到 `per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。

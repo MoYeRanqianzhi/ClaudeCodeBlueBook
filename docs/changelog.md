@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `guides/69`、`casebooks/23 / 36 / 37`、`navigation/83 / 103`，把 Prompt 监护 / 收口反例、治理控制面反例、结构修复演练反例与上游执行导航继续压到 `message lineage / continuation object / governance key / externalized truth chain / decision window / continuation pricing / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`，并把上游叙事从旧流程词收回当前对象链
 - 继续更新 `playbooks/75 / 76 / 77 / 79`、`playbooks/README`、`guides/README` 与 `navigation/README`，把治理 / 结构深段执行页与 Prompt / 结构长期验证页继续压到 `externalized truth / typed ask / continuation pricing / per-host authority width / event-stream-vs-state-writeback / freshness gate / projection consumer / cache-safe fork`，并把目录入口显式改成对象链而不再只给编号链
 - 继续更新 `playbooks/71 / 72 / 73 / 74` 与 `playbooks/README`，把 Prompt / 治理 / 结构三条更后段共享修复链继续压到 `projection consumer / continuation object / cache-safe fork / externalized truth / durable-vs-transient / per-host authority width / event-stream-vs-state-writeback / freshness gate`，并把 `65-76` 的后段链路显式收回目录 README
 - 继续更新 `playbooks/67 / 68 / 69 / 70`，把结构 / Prompt / 治理三条修复后段执行手册继续压到 `event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability / message lineage / projection consumer / continuation object / governance key / externalized truth chain / durable-vs-transient`，并把正文里的作者记忆式说明继续降回正式对象、reject 语义与 reopen 责任

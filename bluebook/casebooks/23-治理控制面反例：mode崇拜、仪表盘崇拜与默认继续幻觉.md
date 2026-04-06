@@ -1,13 +1,13 @@
-# 治理控制面反例：mode崇拜、仪表盘崇拜与默认继续幻觉
+# 治理控制面反例：mode崇拜、仪表盘崇拜与免费续租幻觉
 
-这一章不再回答“怎样验证 `governance control plane object` 仍然成立”，而是回答：
+这一章不再回答“怎样验证治理控制面仍然成立”，而是回答：
 
-- 为什么治理控制面明明已经被写成 `authority source + typed decision + decision window + continuation gate + rollback object`，团队却仍会重新退回 mode、弹窗、token 面板与默认继续。
+- 为什么治理控制面明明已经被写成 `governance key + externalized truth chain + decision window + continuation pricing + durable-vs-transient cleanup`，团队却仍会重新退回 mode、弹窗、token 面板与默认继续。
 
 它主要回答五个问题：
 
 1. 为什么治理机制最危险的失败方式不是“没有门禁”，而是“门禁还在，但对象判断已经碎掉”。
-2. 为什么 mode 崇拜最容易把 authority source 退回局部状态。
+2. 为什么 mode 崇拜最容易把 `governance key` 退回局部状态。
 3. 为什么审批出现过、阈值显示过、颜色亮起来，都不等于治理对象真的成立。
 4. 为什么 continuation 最容易在“先继续看看”里变回免费时间。
 5. 怎样用苏格拉底式追问避免把这些反例读成“治理流程没走完”。
@@ -24,7 +24,7 @@
 
 这些锚点共同说明：
 
-- 治理控制面真正脆弱的地方，不在于有没有审批，而在于 authority、window、continue 与 rollback 是否仍由同一个对象统一解释。
+- 治理控制面真正脆弱的地方，不在于有没有审批，而在于 `governance key`、`externalized truth chain`、window、continuation 与 cleanup 是否仍由同一个对象统一解释。
 
 ## 1. 第一性原理
 
@@ -35,7 +35,7 @@
 
 而是：
 
-- mode、审批、统计与继续各自成立，却不再围绕同一个 governance object 工作
+- mode、审批、统计与继续各自成立，却不再围绕同一个治理对象工作
 
 一旦如此，团队就会重新回到：
 
@@ -46,9 +46,9 @@
 
 而不再围绕：
 
-- 同一个 authority source 与 decision window
+- 同一个 `governance key + externalized truth chain`
 
-## 2. mode 崇拜 vs authority source
+## 2. mode 崇拜 vs governance key
 
 ### 坏解法
 
@@ -56,17 +56,16 @@
 
 ### 为什么坏
 
-- mode 只是外化投影，不是完整 authority source。
-- 一旦 authority source 被 mode 替代，后来者就会失去 settings merge、policy winner 与 host sync 的判断链。
+- mode 只是外化投影，不是完整 `governance key`。
+- 一旦 `governance key` 被 mode 替代，后来者就会失去 settings merge、policy winner 与 host sync 的判断链。
 - 系统会重新退回“哪个面板显示了什么模式”的局部真相竞争。
 
 ### Claude Code 式正解
 
 - mode 变更必须继续经过单一 choke point，对外先 externalize，再向不同消费者同步。
-- authority source 应始终包含 settings、policy、host 与当前状态，不得退回单一 mode 字段。
+- `governance key` 应始终包含 source、policy、host 与当前状态，不得退回单一 mode 字段。
 
-
-## 3. 审批出现过就算治理完成 vs typed decision
+## 3. 审批出现过就算治理完成 vs typed ask
 
 ### 坏解法
 
@@ -74,21 +73,20 @@
 
 ### 为什么坏
 
-- 审批事件只是交互现象，不是 typed decision 本身。
+- 审批事件只是交互现象，不是 typed ask 本身。
 - 一旦 deny / ask / allow / reason 不再被当成正式对象，治理就会退回“有没有人看过”的流程幻觉。
 - later fail-open、fail-closed、headless hook 等差异都会被抹平。
 
 ### Claude Code 式正解
 
-- 治理对象必须继续围绕正式 decision type、decision reason 与 winner source 成立。
+- 治理对象必须继续围绕正式 typed ask、decision reason 与 winner source 成立。
 - “审批发生过”只能是证据的一部分，不能替代决策对象。
-
 
 ## 4. Context Usage 退回仪表盘崇拜 vs decision window
 
 ### 坏解法
 
-- Context Usage 只剩 token 百分比、颜色与曲线，不再解释 deferred sections、memory、tools、agents 与当前继续条件。
+- Context Usage 只剩 token 百分比、颜色与曲线，不再解释 deferred visibility、tools、agents、memory 与当前继续条件。
 
 ### 为什么坏
 
@@ -101,8 +99,7 @@
 - decision window 必须同时解释当前对象、当前成本、当前可见面与当前继续边界。
 - token 百分比只能是 projection，不能替代 window。
 
-
-## 5. 默认继续幻觉 vs continuation gate
+## 5. 默认继续幻觉 vs continuation pricing
 
 ### 坏解法
 
@@ -116,34 +113,32 @@
 
 ### Claude Code 式正解
 
-- continuation 必须继续由正式 gate 决定，而不是由“暂时还能跑”决定。
+- continuation 必须继续由正式 pricing gate 决定，而不是由“暂时还能跑”决定。
 - gate 应同时考虑 agent/headless 语义、decision gain 与时间预算，而不只是剩余 token。
 
-
-## 6. 回退退回文件或 commit vs rollback object
+## 6. 恢复动作冒充治理恢复 vs durable-vs-transient cleanup
 
 ### 坏解法
 
-- 治理失败时，只谈回退哪些文件、回退哪个 commit、重试多少次，不再点名 rollback object。
+- 治理失败时，只谈回退哪些文件、回退哪个 commit、重试多少次，不再点名 `durable assets` 与 `transient authority`。
 
 ### 为什么坏
 
 - 这会把治理退回运维动作，而不是对象级恢复。
-- 后来者会知道“要回滚”，却不知道该回滚哪一个判断对象。
+- 后来者会知道“要回滚”，却不知道应该保留哪些资产、清退哪些旧主权。
 - rewind、cancel、resume 等动作会被误当成治理本体。
 
 ### Claude Code 式正解
 
-- rollback 必须继续指向当前 governance object 的失败边界，而不是文件级手工撤回。
+- 恢复必须继续指向当前治理对象的失败边界，并显式区分 `durable assets after` 与 `transient authority cleared`。
 - 所有恢复动作都应服务对象回退，而不是替代对象回退。
-
 
 ## 7. 苏格拉底式追问
 
 在你读完这些反例后，先问自己：
 
-1. 我现在消费的是 authority source，还是 mode 的替身。
-2. 我看到的是 typed decision，还是“有人点过批准”的流程幻觉。
+1. 我现在消费的是 `governance key`，还是 mode 的替身。
+2. 我看到的是 typed ask，还是“有人点过批准”的流程幻觉。
 3. Context Usage 在解释 decision window，还是只在展示 token 条。
-4. continuation 是正式 gate，还是默认继续。
-5. 失败时我能否立刻指出 rollback object，而不是先想到文件和 commit。
+4. continuation 是正式 pricing gate，还是默认继续。
+5. 失败时我能否立刻指出 `durable assets` 与 `transient authority` 的边界，而不是先想到文件和 commit。
