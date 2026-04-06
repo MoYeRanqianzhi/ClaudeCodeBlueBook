@@ -257,5 +257,6 @@
 - standalone remote-control 的 token freshness timing、child sync 与 heartbeat auth 边界
 - standalone remote-control 的 work intake validity、claim 与 routing 边界
 - bridge 的 session runtime timeout、shutdown grace 与 failed remap 边界
+- direct-connect 的 session factory、transport URL、workspace 回填与断线退出边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。

@@ -60,6 +60,7 @@
 - [56-2026-04-06-remote bridge control handoff semantics 拆分记忆.md](./56-2026-04-06-remote%20bridge%20control%20handoff%20semantics%20拆分记忆.md)
 - [57-2026-04-06-remote session hook contract 拆分记忆.md](./57-2026-04-06-remote%20session%20hook%20contract%20拆分记忆.md)
 - [58-2026-04-06-attached viewer transcript ownership 拆分记忆.md](./58-2026-04-06-attached%20viewer%20transcript%20ownership%20拆分记忆.md)
+- [59-2026-04-06-direct connect session contract 拆分记忆.md](./59-2026-04-06-direct%20connect%20session%20contract%20拆分记忆.md)
 
 用途：
 
