@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `01 / api/30 / 09` 已继续把 atlas 页从判断方向压到判断协议：
+  - `09` 现已更明确把 Prompt `request object` 写成 `authority chain / section registry -> dynamic boundary / attachment delta -> protocol transcript normalization -> lawful forgetting / compaction -> cache-safe forks / handoff continuation`。
+  - `01` 现已更明确把 MCP / remote 边界继续写成 authority、merge/dedup/policy/auth 与 stale auth 风险问题，而不是 transport 枚举。
+  - `api/30` 现已更明确给 `commands / tools / services / utils / components` 都补了 authority、subset、danger surface 与 reject path 的固定问法。
+- 新的长期结论：
+  - atlas 页真正成熟的标志，不是目录讲得更全，而是每一层都能直接交出 authority object、危险改动面和第一条 reject path。
+  - Prompt 魔力一旦被写成装配顺序，主线页、哲学页和地图页就能共享同一条 request object 语言，而不是各自再造一个 Prompt 故事。
 - `README / 00 / philosophy/README / guides/README / navigation/README` 已继续把目录结构收回稳定分工：
   - 根索引现已更明确只保留一级路由与最短阅读路径，不再兼任二级导航器。
   - `00` 现已继续收回正文判断，弱化 dated scan 与长阅读脚本。

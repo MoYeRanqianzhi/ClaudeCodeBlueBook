@@ -25,6 +25,7 @@
 - 本轮 Prompt 宪法收束动作: 已继续更新 `03`、`06`、`09` 与 `philosophy/14`，把 prompt 魔力继续从“system prompt 更强”压成 `request object / role contract / cache boundary / handoff truth` 四个正式对象。
 - 本轮入口与路由瘦身动作: 已继续更新 `README`、`00`、`philosophy/README`、`guides/README` 与 `navigation/README`，把根索引继续收回一级路由，把专题 README 继续收回簇级入口，把跨目录深链继续收回 `navigation/README`。
 - 本轮统一定价入口前移动作: 已继续更新 `security/README`、`risk/README`、`07` 与 `api/46-services`，把“安全 / 风控 / 省 token / services 平面”继续压回同一条扩张定价对象链。
+- 本轮 atlas lint 硬化动作: 已继续更新 `01`、`api/30` 与 `09`，把源码地图和控制面图继续压成 `authority object / consumer subset / danger surface / reject path` 协议，并补出 Prompt `request object` 的更短装配顺序。
 - 本轮旧框架降级动作: 已继续更新 `00`、`01`、`05` 与 `api/30`，把“五层拆解法 / 运行链路导览 / 目录级能力大全 / 快速统计”都明确降成辅助检索与热点定位材料，不再让它们先于三条高阶判断出场。
 - 本轮主线制度化动作: 已继续更新 `03`、`06`、`09`，把“设计哲学 / 第一性原理 / 三张控制面图”从高级观察继续收束为主线宪法、自我约束与读者固定判断顺序。
 - 本轮目录硬化动作: 已继续更新 `README`、`00-导读`、`00-总览`、`00-蓝皮书总览`、`navigation/03` 与 `09`，把 `09` 真正前置到一级阅读路径、去掉推荐链裸编号短写，并把兼容页进一步收回为跳转页。
@@ -129,6 +130,18 @@
 - `bluebook/risk/README.md`
 - `bluebook/07-运行时契约、知识层与生态边界.md`
 - `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`
+
+### A109. atlas 页真正成熟时，不再给你更多目录感，而是更快逼你给出 reject path
+
+- `01`、`api/30` 这类地图页一旦只剩分组说明、transport 列表、工具清单与使用启发，读者虽然知道对象更多了，却仍不知道哪里在宣布真相、哪里只是投影、哪里最危险、哪里先拒收。
+- 更稳的 atlas 协议必须强制每个平面至少回答：authority object 是谁、哪些 consumer 只拿子集、哪些 stale write / second truth 最危险、第一条 reject path 应回到哪个入口文件。
+- 这也说明 atlas 页和主线页的真正协作方式：`09` 给出最短装配顺序，`01` 给出主权链与危险改动面，`api/30` 给出每个平面的 authority / subset / reject protocol；三者合在一起，目录美学才不再冒充结构判断。
+
+证据:
+
+- `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+- `bluebook/01-源码结构地图.md`
+- `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md`
 
 ### A100. 设计内涵继续深化后，最值钱的不再是更多高阶短句，而是把高阶短句压成可排查的对象
 

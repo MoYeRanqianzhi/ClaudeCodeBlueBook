@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新《源码结构地图》《源码目录级能力地图：commands、tools、services、状态与宿主平面》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，把 atlas 页继续压成 `authority / subset / danger / reject path` 协议，并补上 Prompt `request object` 的更短装配顺序
 - 继续更新《蓝皮书总索引》《导读》《哲学专题》《使用专题》《导航专题》《安全专题索引》《风控专题》《运行时契约、知识层与生态边界》《Services 二级目录 Atlas》，把跨目录推荐链继续收回分层入口，并把“安全与省 token = 同一扩张定价秩序”前置到入口页
 - 继续更新《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》《提示词魔力来自运行时而非咒语》，把 prompt 魔力继续从“更强文案”压成 `request object / role contract / cache boundary / handoff truth`
 - 继续更新《源码结构地图》《源码目录级能力地图：commands、tools、services、状态与宿主平面》，把源码地图继续从导览/图鉴压成判断协议，明确 `authority / subset / second truth / danger surface / reject path`
