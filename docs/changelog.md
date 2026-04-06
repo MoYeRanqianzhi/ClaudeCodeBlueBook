@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `architecture/84`、`philosophy/86`、`guides/101`、`navigation/15 / 41 / 46` 与 `security/README`，把结构线前门固定为 `current-truth surface -> recovery asset non-sovereignty -> freshness gate -> ghost capability`，修复 `guides/101` 指回 `84` 的失效旧链接，并把 Prompt / 治理前门的第一句主语分别收回到 `world entry / request assembly / six-stage assembly chain` 与统一治理收费链
 - 继续更新 `architecture/83`、`guides/31`、`navigation/15`、`navigation/41` 与 `navigation/46`，把治理线 canonical visible root 收回到 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，并把高阶导航页里残留的旧 Prompt / source-first 词汇继续降成现象词或内层对象，不再让它们反向主导治理前门
 - 继续更新 `README`、`bluebook/README`、`navigation/README` 与 `security/README`，把 merge 后重新变重的前门收回到更硬的职责链：根 README 只做仓库级四分路由，`bluebook/README` 只做主线宪法与证据梯度，`navigation/README` 只做跨目录 judgment map，`security/README` 只做安全前门与范围分层，不再镜像巨型 inventory、逐篇标题链和作者侧推进记忆
 - 继续更新 `09`、`architecture/82`、`philosophy/84` 与 `guides/99`，把 Prompt 主链收回到 `section registry / dynamic boundary -> message lineage -> projection consumer -> protocol transcript -> continuation object / qualification -> cache-safe forks` 这一条可判定装配链，修复 `84 / 99` 指向 `82` 的旧路径，移除 `再回 30` 式旧回修依赖，并把目录结构进一步收口为“只暴露证据梯度与拒收链，不承担阅读编排”的长期约束

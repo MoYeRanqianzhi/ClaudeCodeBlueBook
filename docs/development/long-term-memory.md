@@ -2123,6 +2123,10 @@
 - `security/README` 当前应只保留高阶判断、编号段范围与 `appendix / source-notes / docs` 分流，不再镜像巨型 inventory、逐篇标题链或作者侧推进记忆；安全首页先回答价格秩序，再把读者送去具体 ladder
 - 治理线 canonical visible root 当前应固定成 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；`trusted inputs / distributed ask arbitration / durable assets` 可以继续作为内层对象或旧文件名兼容词，但不再占治理前门主位
 - `architecture/83` 应继续作为治理线的 canonical owner，`guides/31` 负责失稳前审读，`navigation/15 / 41 / 46` 负责问题梯子、第一性原理回压与迁移顺序；这些高阶节点必须沿 `83` 的 visible root 发问，不能各自再造一版 source-first 或 UI-first 世界观
+- 当前真相保护线的 canonical visible root 应固定成 `current-truth surface -> recovery asset non-sovereignty -> freshness gate -> ghost capability`；`architecture/84` 负责定义这条线，`philosophy/86` 负责回答为什么它比模块美学更先，`guides/101` 负责把它压成失稳前审读动作，`navigation/15 / 41 / 46` 负责把同一条根词翻成问题梯子、第一性原理与迁移顺序。
+- 结构线最值钱的判断不只是“有 single writer”，而是恢复、投影、日志、发布和后来维护者都被迫围绕同一个 present 说话；谁想冒充 current world，谁就先失去主权。`authority object / authority state / single-writer authority` 这类词只宜保留为下层证据槽位、旧文件名或兼容别名，不再充当前门主语。
+- 当前真相线的下一跳残留集中在 `guides/56 / playbooks/31 / api/53 / guides/32 / playbooks/79`；源码质量高阶分析还应继续补强 `per-host authority width`、`event stream vs state writeback`、mirror gap discipline、host/domain/credential truth 与 `migration order as architecture quality` 这些轴，不要让 visible root 再退回“恢复成功率 / authority state / 单写者”旧叙事。
+- Prompt 高阶前门的稳定主语应继续收口到 `world entry / request assembly / six-stage assembly chain`；凡导航首页、判断页或目录入口的首问仍以“这套 prompt”或旧对象名起手，都属于 residual visible root。
 
 ## 后续章节建议
 

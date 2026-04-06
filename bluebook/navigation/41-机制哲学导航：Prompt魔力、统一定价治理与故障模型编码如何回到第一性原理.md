@@ -4,7 +4,7 @@
 
 - 如果把请求装配、安全/省 token、源码先进性一路压回不可约判断，Claude Code 到底在坚持什么第一性原理。
 
-更稳的校正方式不是停在 `compiled request truth`、`governance control plane object`、`evolvable kernel object boundary` 这些旧深层对象名词，而是先抓住三句：
+更稳的校正方式不是停在旧对象名词，而是先抓住规范主语：`world entry / request assembly / six-stage assembly chain`、统一定价治理、当前真相保护。
 
 1. 世界怎样进入模型
 2. 扩张怎样进入当前世界
@@ -20,7 +20,7 @@
 4. 为什么不能停在反例层，而必须继续把坏解法压回第一性原理收束。
 5. 怎样用苏格拉底式追问避免把这一层写成新的口号集。
 
-## 1. Prompt 编译链哲学线
+## 1. world entry / request assembly / six-stage assembly chain 哲学线
 
 先问：
 
@@ -87,7 +87,7 @@
 
 而是：
 
-- 把源码先进性压回“先把证据梯度、时间保护与未来重构路径写进结构，再谈模块美学”的第一性原理
+- 把源码先进性压回 `current-truth surface / recovery asset non-sovereignty / freshness gate / ghost capability` 与 `证据梯度 / 时间诚实 / future maintainer 可独立 reject` 这组第一性原理，再谈模块美学
 
 ## 4. 为什么这层更适合落在 philosophy
 

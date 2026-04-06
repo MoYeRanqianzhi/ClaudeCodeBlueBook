@@ -51,7 +51,7 @@
 
 先问：
 
-- 怎样把宿主从状态猜测、pointer 神化与恢复成功率，迁到 current-truth surface、freshness gate、recovery boundary 与 ghost capability 结果面的正式消费。
+- 怎样把宿主从状态猜测、pointer 神化与恢复成功率，迁到 current-truth surface、freshness gate、recovery asset non-sovereignty 与 ghost capability 结果面的正式消费。
 - 怎样把结构审读结论继续压成迁移顺序、交接包与灰度发布门禁。
 
 成立证据：
@@ -66,7 +66,7 @@
 
 而是：
 
-- 把当前真相保护宿主接入重新写成 current-truth surface、writeback 主路径、恢复资产边界、freshness gate 与 ghost capability 结果面的正式迁移工单
+- 把当前真相保护宿主接入重新写成 current-truth surface、writeback 主路径、recovery asset non-sovereignty、freshness gate 与 ghost capability 结果面的正式迁移工单
 
 ## 4. 迁移工单必须守住的门槛
 
