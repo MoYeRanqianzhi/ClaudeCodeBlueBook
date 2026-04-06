@@ -7,6 +7,10 @@
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
 - 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash，`git merge --ff-only origin/main` 返回 `Already up to date.`。本轮因此只记录基线，不对根仓库做任何修改。
+- 本轮高阶总公式收口动作: 已继续更新 `06`、`07`、`navigation/41` 与 `navigation/README`，把三条母线继续压成三条最短动作链，并让高阶前门不只给职责分工，还给出最短可迁移公式。
+- 本轮治理侧线回灌动作: 已吸收并行 Agent 的一句高价值结论，并前置到高阶页：治理先外化当前真相，再批准当前扩张；连治理检查自己都必须被定价，没有决策增益的检查，本身就是免费扩张。
+- 本轮 Context Usage 收口动作: 已继续把 `Context Usage` 在高阶页里的读法固定成 `decision window` 的诚实投影，不再允许它在总论或导航前门里退回 usage dashboard / 成本面板。
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash，`git merge --ff-only origin/main` 返回 `Already up to date.`。本轮因此只记录基线，不对根仓库做任何修改。
 - 本轮根页前门收口动作: 已继续更新 `00`、`02`、`04` 与 `05`，把导读、使用指南、公开能力判断与功能/API 总览继续对齐到三张控制面和 `09 / 05 / 15 / 41` 的高阶协议，让读者在第一次进入根目录正文时不再退回“Prompt 很强 / 安全很严 / 能力很多”这些结果词。
 - 本轮 Prompt 侧线回灌动作: 已把并行 Agent 的有效结论继续吸收到 `00` 与 `02`，让根页也显式承认 `compile -> protocolize -> preserve -> continue -> explain` 这条 Prompt 最短动作链。
 - 本轮治理侧线回灌动作: 已把治理侧线的有效结论继续吸收到 `00 / 02 / 04 / 05`：`Context Usage` 不能被当成成本面板或功能前门答案，而应先经过 `decision window / current admission / product promise` 的分层判断。

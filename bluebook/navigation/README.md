@@ -36,6 +36,10 @@
   失稳前追问，先暴露第一条反证信号与 first reject path。
 - `41`
   第一性原理收束，先判断高阶总结是否已经压回不可约约束。
+- 如果你在判断“高阶结论是否已经被压到最短动作链”，也只认三行：
+  `compile -> protocolize -> preserve -> continue -> explain`
+  `price -> externalize -> arbitrate -> continue-or-stop -> cleanup`
+  `surface -> writeback -> freshness -> evict`
 - [46-宿主迁移工单导航：request compiler、governance key 与 current-truth writeback 如何进入实施顺序、交接包与灰度发布](46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布.md)
   进入宿主实现、迁移、验收与收口链。
 

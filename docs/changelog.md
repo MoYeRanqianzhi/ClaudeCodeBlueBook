@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新 `06`、`07`、`navigation/41` 与 `navigation/README`，把三条母线继续压成三条最短动作链，并把治理线进一步收回“治理先外化当前真相，再批准当前扩张；连治理检查自己都必须被定价，没有决策增益的检查，本身就是免费扩张”这句第一性原理，同时把 `Context Usage` 在高阶页里继续固定成 `decision window` 的诚实投影
+- 本轮根仓库 `main` 同步检查继续通过 `fetch + rev-parse + merge --ff-only origin/main` 确认无待拉取更新，`main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；因此本批次继续只在 `.worktrees/mainloop` 内推进
 - 继续更新 `00`、`02`、`04` 与 `05`，把导读、使用指南、公开能力判断与功能/API 总览继续对齐到三张控制面和 `09 / 05 / 15 / 41` 的高阶协议：根页不再停在结果词，而是补出三条最短动作链、明确什么时候该回高阶 judgment map，并把 `Context Usage` 继续收回 `decision window` / current admission / product promise 的分层判断
 - 本轮根仓库 `main` 同步检查继续通过 `fetch + rev-parse + merge --ff-only origin/main` 确认无待拉取更新，`main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；因此本批次继续只在 `.worktrees/mainloop` 内推进
 - 继续更新 `01`、`08`、`navigation/01` 与 `navigation/02`，把源码结构地图、能力矩阵、第一性原理审读地图与能力检索图继续对齐到三张控制面和 `09 / 05 / 15 / 41` 的高阶协议：补出三条最短动作链、让能力矩阵明确不和高阶前门混层，并把 `Context Usage` 继续收回 `decision window` / current admission / product promise 的分层判断
