@@ -30,6 +30,8 @@
   - 扩展层选择真正成熟时，最稳的前门不该从“技能 / 插件 / MCP / Hooks 四选一”开始，而应从 `source sovereignty -> capability projection -> runtime gate -> execution layer` 开始；只有先认对象、来源、投影和 gate，扩展层选择才不会退回名词分类。
   - MCP 线真正成熟时，最稳的前门不该从“有哪些 server”开始，而应从 `config set -> name resolution -> client connection -> agent attach -> runtime gate` 开始；`/mcp` 菜单、全局配置总览、按名可引用集合、当前 client 和 agent frontmatter 本来就是不同层的 MCP 真相。
   - workspace trust、project `.mcp.json` approval 与 health-check runtime 必须长期被写成三层对象链：`workspace trust -> project approval -> health-check runtime -> fallback`；只要把 `skip trust dialog`、`mcp list|get` 探活、`reset-project-choices` 其中任意一条误写成另一条，trust 线就会重新退回“是否已经被批准”的单平面错觉。
+  - 命令入口层真正成熟时，最稳的前门不该从按钮名或 slash 名起笔，而应从 `task object -> capability projection -> runtime gate -> execution surface` 与 `command object -> execution semantics -> visibility/caller gate -> host mode` 两条公式起笔；只要先按命令名分类，命令页就会重新退回按钮说明书。
+  - 当扩展层真相链与命令对象链开始共用“先认对象、再认投影、再认 gate”的前门语言时，说明蓝皮书目录结构已经从专题同序化继续推进到入口合同同语化；这是目录优化比补新页更值钱的阶段。
 - `userbook/04-专题深潜/README` 与 `userbook/05-控制面深挖/README` 现已继续把最近几批稳定下来的三组最小顺序推进到专题入口层：
   - `04` 现在更明确把专题层写成“工作对象入口 + 最小排查顺序 + 何时退回控制面/主线重新定题”。
   - `05` 现在更明确把控制面层写成“控制面入口 + 哪组顺序在起作用 + 哪些相邻入口是替身 + 何时应退回上一层”。

@@ -28,6 +28,29 @@ Claude Code 真正在问的是三道制度问题：
 
 `CommandBase` 里的字段很多，但它们不属于同一层。把它们混成“命令标签”，会直接损坏 userbook 的解释力。
 
+如果把这页压成用户侧最小顺序，只该先做四步：
+
+1. 先认对象类型
+   - 当前是 `prompt`、`local`，还是 `local-jsx`。
+2. 再认执行语义
+   - 它是立即本地执行、排队执行，还是把内容重新送进模型。
+3. 再认可见性与调用者
+   - 当前是用户可见、模型可调，还是宿主只是保留了一个隐藏入口。
+4. 最后才判断“这条 slash 命令到底像不像一个按钮”。
+
+更短的前门公式就是：
+
+- `command object -> execution semantics -> visibility/caller gate -> host mode`
+
+## 进入本页前的 first reject signal
+
+看到下面迹象时，应先回到命令对象链，而不是继续按命令名分类：
+
+- 你把所有 `/xxx` 都当成同一种按钮。
+- 你把 `prompt` 命令和本地控制面命令混写成“只是形式不同”。
+- 你把 `availability`、`isEnabled()`、`isHidden`、`userInvocable`、`disableModelInvocation` 当成同一层开关。
+- 你把 headless、remote、bridge 当成同一种“远程/非交互模式”。
+
 ## 第一张坐标：命令对象到底是什么
 
 ### `prompt`：受控 prompt 工作流，不是普通聊天
@@ -451,6 +474,10 @@ Claude Code 真正在问的是三道制度问题：
 - 想让 Claude 执行一套协议化工作流，先判断它是不是 `prompt` 命令，而不是把 slash 都当快捷按钮。
 - 想接到脚本、后台或 bridge/mobile，先看 headless / remote / bridge 三套过滤，不要只看命令是否存在。
 - 想判断一条命令是不是稳定主线，先依次检查 `availability`、`isEnabled()`、`isHidden`、`feature()`、`USER_TYPE === 'ant'`。
+
+更短的一句提醒是：
+
+- slash 只是入口记号，不是运行时对象类型。
 
 ## 源码锚点
 

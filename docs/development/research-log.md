@@ -6,6 +6,10 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=2c50f2af703fdbe3a25c40bd8512258a75b0b5f7`，`git fetch origin --prune` 成功，`rev-list --left-right --count main...origin/main` 返回 `0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本轮只记录基线，不对根仓做其他写操作。
+- 本轮 mainloop 基线: `HEAD=59c8133a24b1ff2255dd40bf708bca55c0e31d34`，`main=origin/main=2c50f2af703fdbe3a25c40bd8512258a75b0b5f7`，`git rev-list --left-right --count HEAD...origin/main` 返回 `1 140`，说明当前 worktree 继续作为独立研究支线推进，而不是尝试贴着主线快进。
+- 本轮命令入口前推动作: 已继续更新 `userbook/05-控制面深挖/05`、`11` 与 `03-参考索引/01-命令工具/README`、`06`，把命令入口层从“按钮/命令名决策树”继续压回两条前门公式：`task object -> capability projection -> runtime gate -> execution surface` 与 `command object -> execution semantics -> visibility/caller gate -> host mode`。
+- 本轮目录结构深化结论: 命令工具索引页如果不能先交付命令对象链，而只继续罗列命令名和字段表，就会把上一轮已经在控制面长文里稳定下来的真相链重新打回按钮说明书；因此这批优先修前门句法，而不是继续补更多命令库存。
 - 本轮主分支同步检查: 根仓库当前 `main=efca1092e8bb3ab5da4f65fdc7d615cf502d3493`、`origin/main=ec7519566b3abf2659fb3d65899dc7d2bad983da`；`git fetch origin --prune` 成功，但根仓库 `main` 比 `origin/main` 超前 `14` 个提交且存在未解决 index，`git checkout main && git merge --ff-only origin/main` 被根仓库自身冲突状态阻塞，因此本轮不触碰根仓库，只在 `.worktrees/mainloop` 内推进。
 - 本轮 mainloop 基线: `HEAD=640e4371ca056b39591c44580a80341247479a0d`，`main=efca1092e8bb3ab5da4f65fdc7d615cf502d3493`，`origin/main=ec7519566b3abf2659fb3d65899dc7d2bad983da`；`git rev-list --left-right --count HEAD...origin/main` 返回 `12 87`，说明本 worktree 继续按独立研究支线推进，而非试图改写根仓主线。
 - 本轮专题正文同序化动作: 已继续更新 `userbook/04-专题深潜/03`、`07` 与 `08`，把上一批已经稳定在专题入口层的三组最小顺序前推到正文第一页。

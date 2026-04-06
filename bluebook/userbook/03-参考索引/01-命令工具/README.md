@@ -1,8 +1,19 @@
 # 命令工具
 
+这一层不是命令表，而是“命令怎样进入世界、怎样执行、怎样被过滤”的索引层。
+
+如果把这一层压成最短前门，只剩两条：
+
+1. 先认 `command object -> execution semantics -> visibility/caller gate -> host mode`
+2. 先认 `task object -> capability projection -> runtime gate -> execution surface`
+
+所以这里不是按钮目录，而是命令对象、执行语义与入口选择的速查层。
+
 - [01-命令索引.md](./01-%E5%91%BD%E4%BB%A4%E7%B4%A2%E5%BC%95.md)
 - [02-工具索引.md](./02-%E5%B7%A5%E5%85%B7%E7%B4%A2%E5%BC%95.md)
 - [03-CLI 旗标与根命令索引.md](./03-CLI%20%E6%97%97%E6%A0%87%E4%B8%8E%E6%A0%B9%E5%91%BD%E4%BB%A4%E7%B4%A2%E5%BC%95.md)
 - [04-根命令与斜杠命令对照索引.md](./04-%E6%A0%B9%E5%91%BD%E4%BB%A4%E4%B8%8E%E6%96%9C%E6%9D%A0%E5%91%BD%E4%BB%A4%E5%AF%B9%E7%85%A7%E7%B4%A2%E5%BC%95.md)
 - [05-设置、状态、预算与调参入口索引.md](./05-%E8%AE%BE%E7%BD%AE%E3%80%81%E7%8A%B6%E6%80%81%E3%80%81%E9%A2%84%E7%AE%97%E4%B8%8E%E8%B0%83%E5%8F%82%E5%85%A5%E5%8F%A3%E7%B4%A2%E5%BC%95.md)
 - [06-命令类型、执行语义与可见性索引.md](./06-%E5%91%BD%E4%BB%A4%E7%B1%BB%E5%9E%8B%E3%80%81%E6%89%A7%E8%A1%8C%E8%AF%AD%E4%B9%89%E4%B8%8E%E5%8F%AF%E8%A7%81%E6%80%A7%E7%B4%A2%E5%BC%95.md)
+
+如果你只看一页，先看 `06`；如果你想先按任务挑入口，再回到 `05-控制面深挖/05`。
