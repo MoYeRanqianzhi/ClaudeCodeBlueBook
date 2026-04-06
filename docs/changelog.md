@@ -2,6 +2,15 @@
 
 ## 2026-04-06
 
+- 继续更新 `playbooks/62`、`playbooks/63` 与 `playbooks/64`，把 Prompt / 治理 / 结构三条改写纠偏执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`
+- 继续更新 `playbooks/59`、`playbooks/60` 与 `playbooks/61`，把 Prompt / 治理 / 结构三条改写执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`
+- 继续更新 `playbooks/65`、`playbooks/75` 与 `playbooks/76`，把 Prompt / 治理 / 结构三条精修执行页补齐到 `message lineage / projection consumer / governance key / externalized truth / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`
+- 继续更新 `playbooks/56`、`playbooks/57` 与 `playbooks/58`，把 Prompt / 治理 / 结构三条再纠偏执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`
+- 继续更新 `playbooks/35`、`playbooks/37`、`playbooks/78` 与 `playbooks/79`，把 Prompt / 治理 / 结构三条执行链的验收与长期验证页补齐到 `message lineage / projection consumer / governance key / durable-vs-transient / event-stream-vs-state-writeback / stale-worldview / ghost-capability`
+- 继续更新 `guides/30`、`guides/31`、`guides/99`、`playbooks/30`、`playbooks/36` 与 `playbooks/77` 的页面标题，使可见入口词与最新对象链对齐到 `message lineage / governance key / continuation qualification`
+- 继续更新 `bluebook/README`、`guides/README`、`playbooks/README`、`navigation/README`、`security/README`、`risk/README` 与 `philosophy/README`，把 Prompt / 治理 / 结构三条执行链与“为什么 -> 如何验证”的跨目录入口写成稳定路由
+- 继续更新 `playbooks/30`、`playbooks/36`、`playbooks/66` 与 `playbooks/77`，把 `governance key / externalized truth chain / durable assets vs transient authority / message lineage / projection consumer / continuation qualification` 压进宿主接入、验收、修复与 Prompt 回归手册
+- 继续更新 `guides/30`、`guides/31`、`philosophy/84`、`architecture/60`、`architecture/63` 与 `guides/README`，把旧桥接页继续吸收到 `message lineage / projection consumer / governance key / externalized truth / event stream vs state writeback / stale worldview / ghost capability eviction`，并把正文中的桥接/记忆性说明收回目录入口与持久化记忆
 - 继续更新 `architecture/80`、`guides/52`、`philosophy/86`、`architecture/README`，把相邻深专题继续吸收 `source lattice / managed-only switches / durable assets vs transient authority / freshness gate / ghost-capability eviction`，并把 `82-84` 三篇的最新重点前置回架构专题入口
 - 继续更新 `architecture/83`、`philosophy/85`、`guides/100`，把治理线继续压到 `source` 是治理主键、`policySettings` 是 sovereign tier、resume 只该恢复 durable assets 而不该免费续租 transient authority
 - 继续更新 `architecture/82`、`architecture/84`、`guides/99`、`guides/101`、`guides/102` 与相关哲学页，把 Prompt 深线从 `request object` 再压到 `message lineage`，并把 anti-stale 继续扩到文件写入 freshness gate、PowerShell stale-cwd、WebFetch per-host、remote managed settings 与 MCP ghost capability 清理

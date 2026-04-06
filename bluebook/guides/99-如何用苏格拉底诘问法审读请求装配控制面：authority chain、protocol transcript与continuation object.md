@@ -1,4 +1,4 @@
-# 如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object
+# 如何用苏格拉底诘问法审读请求装配控制面：message lineage、protocol transcript与continuation object
 
 这一章不再解释 Prompt 为什么强，而是把 `architecture/82` 与 `philosophy/84` 继续压成一套 builder-facing 审读模板。
 

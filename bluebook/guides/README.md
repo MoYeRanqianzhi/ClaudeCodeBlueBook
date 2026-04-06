@@ -5,12 +5,13 @@
 还要先记一句：
 
 - `guides/99-102` 负责把 `09` 的三条控制面判断落成 builder-facing 审读与证据方法；它们现在分别更明确覆盖 `message lineage`、`source-first pricing`、`one writable present` 与公开镜像证据分级，不再重新定义三条母线本身
+- `guides/30-31` 保留旧一层 Prompt / 治理审读词汇，但现在应被当作通向 `99-101` 的桥接入口；正文不再承担“这页属于旧版模板”的作者说明，桥接职责统一由 README 描述
 
 ## 目录分层
 
 - `01-10`: 基础使用、多 Agent、记忆注入、预算与权限协作。
 - `11-23`: Runtime 设计、Contract-First、依赖图诚实性与审读清单。
-- `24-32`: Prompt Constitution、治理顺序、源码塑形与苏格拉底式审读。
+- `24-32`: Prompt Constitution、治理顺序、源码塑形与苏格拉底式审读，以及旧词汇到新控制面对象的桥接页。
 - `33-47`: Rollout ABI、Evidence Envelope、Host Implementation、Validator 与 Builder 蓝图。
 - `48-56`: Builder-facing 手册、统一蓝图与宿主迁移工单。
 - `57-80`: 宿主迁移失真、验收执行、修复、收口、监护、解除监护与稳态纠偏执行。
@@ -36,7 +37,7 @@
 - 想把阅读源码变成稳定方法：从 `19-23`
 - 想把方法沉到模板、卡片和 rollout 工件：从 `24-47`
 - 想处理宿主迁移、验收、修复和后续纠偏：从 `48-101`
-- 想把控制面总图变成 Builder 审读顺序：先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)，再按目录内的 `30-32` 与 `99-102` 进入；更细的跨目录顺序统一回 [../navigation/README.md](../navigation/README.md)
+- 想把控制面总图变成 Builder 审读顺序：先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)，Prompt 线默认从 `99` 起步、治理线默认从 `100` 起步、结构线默认从 `101` 起步；只有需要旧词汇桥接时再补 `30-31`
 - 想看公开镜像下的源码质量方法：先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)，再从 `102` 进入；更细的跨目录回链统一去 [../navigation/README.md](../navigation/README.md)
 - 想看最新共同 `reject` 升级模板骨架：从 `93-98`
 - 想做跨目录跳转：回到 [../navigation/README.md](../navigation/README.md)

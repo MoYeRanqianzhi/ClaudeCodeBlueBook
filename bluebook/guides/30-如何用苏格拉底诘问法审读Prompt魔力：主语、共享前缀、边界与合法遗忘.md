@@ -1,11 +1,11 @@
-# 如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘
+# 如何用苏格拉底诘问法审读Prompt魔力：message lineage、projection boundary与lawful forgetting
 
 这一章不再解释 Prompt 为什么强，而是把“怎么审它是否真的强”压成一套 builder-facing 审读框架。
 
 它主要回答五个问题：
 
 1. 怎样避免把 Prompt 魔力重新写回措辞崇拜。
-2. 怎样用递进式问题审读主语、共享前缀、section 宪法、边界与合法遗忘。
+2. 怎样用递进式问题审读 `message lineage`、共享前缀、section 宪法、projection boundary 与 lawful forgetting。
 3. 怎样判断一个 Prompt Constitution 是制度体，还是长文案。
 4. 怎样在设计、排障与迁移时用同一组问题自我校准。
 5. 怎样用苏格拉底式追问避免把审读模板写成另一份长 prompt。
@@ -23,32 +23,28 @@
 
 这些锚点共同说明：
 
-- Claude Code 的 Prompt 魔力不是某段文案写得更凶，而是主语、共享前缀、边界、合法遗忘与接手连续性被共同治理。
+- Claude Code 的 Prompt 魔力不是某段文案写得更凶，而是 `message lineage`、共享前缀、边界、合法遗忘与 continuation qualification 被共同治理。
 
-## 1. 旧词汇如何对齐新对象链
+## 1. 对象对照：旧词汇与当前审读对象
 
-这篇沿用的是早一层术语。
-
-如果你已经在读 `philosophy/84 -> architecture/82 -> guides/99 -> playbooks/77` 这条新主线，可以先做下面这组对照：
+这篇沿用的是较早一层词汇，但它审的仍是同一批正式对象。
 
 1. `主语`
-   - 现在更接近 `authority chain`
+   - 现在更接近 `authority chain + message lineage owner`
 2. `共享前缀`
    - 现在更接近 `section registry + stable prefix + cache-safe fork reuse`
 3. `边界`
-   - 现在更接近 `dynamic boundary + protocol transcript legality`
+   - 现在更接近 `dynamic boundary + protocol transcript legality + projection boundary`
 4. `合法遗忘`
    - 现在更接近 `lawful forgetting + continuation object continuity`
 5. `接手连续性`
-   - 现在更接近 `continuation object + reopen / fork continuity`
+   - 现在更接近 `projection consumer + continuation qualification`
 
-所以这篇最适合被当作：
+所以真正要审的不是一组旧词，而是：
 
-- 旧一层 Prompt 审读语言，到新一层请求装配控制面语言的桥接页
-
-而不是：
-
-- 与 `99` 平行重复的一篇 Prompt 模板
+- 当前 compiled request truth 挂在哪条 authority chain / message lineage 上
+- 哪些 consumer 只是在消费投影
+- 哪些 forgetting / handoff 之后仍保有合法 continuation
 
 ## 2. 第一性原理
 
@@ -58,7 +54,7 @@
 
 而是：
 
-- 让当前、下一步、接手后仍服从同一套工作主语与制度边界
+- 让当前、下一步、接手后仍消费同一条 `message lineage` 与同一份 compiled request truth
 
 所以审读 Prompt 魔力时，最该反问的不是：
 
@@ -66,21 +62,21 @@
 
 而是：
 
-- 这套 prompt 是否已经能稳定组织继续工作的条件
+- 这套 prompt 是否已经把 continuation qualification、projection boundary 与 lawful forgetting 组织成同一条制度链
 
 ## 3. 苏格拉底诘问链
 
-### 3.1 这份 prompt 到底是谁在说话
+### 3.1 当前 compiled request truth 挂在哪条 authority chain / message lineage 上
 
 判断标准：
 
-- 如果说不清每一段的主语是系统、用户、宿主、任务对象还是子代理，这就不是制度，只是文案堆叠。
+- 如果说不清谁在续写这条 truth、谁只是在消费它、谁只是在显示它，这就不是制度，只是文案堆叠。
 
-### 3.2 这个主语在不同入口、不同宿主、不同回合里还是同一个主语吗
+### 3.2 不同入口、不同宿主、不同回合消费的还是同一条 truth 吗
 
 判断标准：
 
-- 如果同一规则在 REPL、SDK、bridge、resume 路径下换了说话人或口径，后面所有“魔力”都会退化成路径偶然性。
+- 如果 REPL、SDK、bridge、resume 各自消费的是不同 projection，而不是同一条 compiled truth 的不同视图，后面所有“魔力”都会退化成路径偶然性。
 
 ### 3.3 哪些内容是共享前缀资产，谁是唯一合法生产者
 
@@ -94,11 +90,11 @@
 
 - 如果每个 section 没有明确职责、边界、优先级和变更理由，它就不是 constitutional slot，只是方便阅读的排版。
 
-### 3.5 稳定前缀和动态边界到底画在了哪里
+### 3.5 稳定前缀、动态边界与 projection boundary 到底画在了哪里
 
 判断标准：
 
-- 如果临时事实、局部状态、一次性观测漂进稳定前缀，或关键法条要靠动态尾部才能成立，边界就是错的。
+- 如果临时事实、局部状态、一次性观测漂进稳定前缀，或 display truth / protocol truth / handoff truth 的边界互相侵入，边界就是错的。
 
 ### 3.6 同一现场经过不同 assembly path，会被编译成同一份 prompt 真相吗
 
@@ -112,23 +108,23 @@
 
 - 如果失效条件靠“感觉这次改得挺大”，而不是由 section、边界、模型、工具面与状态事件显式触发，缓存稳定性只是运气。
 
-### 3.8 哪些内容允许被忘掉，忘掉以后哪些 ABI 仍必须保留
+### 3.8 哪些内容允许被忘掉，忘掉以后仍保住的是摘要还是 continuation object
 
 判断标准：
 
-- 如果 compact、summary、resume 之后只能留下“发生过什么”，却保不住“下一步怎么继续”，那就是不合法的遗忘。
+- 如果 compact、summary、resume 之后只能留下“发生过什么”，却保不住 `continuation object`、`lineage ref` 或继续资格，那就是不合法的遗忘。
 
-### 3.9 一个后来接手的人或系统，能否不重读全量 transcript 就知道当前真相
+### 3.9 接手方不重读全量 transcript，也能判断这是 continuation、reopen 还是 new task 吗
 
 判断标准：
 
-- 如果接手仍必须扫描长历史才能知道当前 mode、pending action、任务摘要和下一步约束，prompt 没有形成接手连续性。
+- 如果接手仍必须扫描长历史才能知道当前约束、继续资格与下一步动作，这条 prompt 就没有形成可点名的 continuation qualification。
 
 ### 3.10 旁路查询、摘要、外置输出、恢复链会不会偷偷生成第二套 prompt 真相
 
 判断标准：
 
-- 如果 side query、summary、tool externalization、resume 结果不能回到主线程的同一权威面，它们就在制造分叉制度，而不是辅助主线。
+- 如果 side query、summary、tool externalization、resume 结果不是在向不同 consumer 投影同一份 protocol truth，它们就在制造第二现场，而不是辅助主线。
 
 ### 3.11 当再增加上下文已不可能改变结论时，系统会停止扩张 prompt 吗
 
@@ -150,7 +146,8 @@
 2. 把共享前缀网络退回成每个旁路各自补背景。
 3. 把 compact 理解成少留一点历史，而不是保住合法继续的 ABI。
 4. 把 handoff 理解成“再写一段总结”，而不是延续同一工作主语。
-5. 把 cache break 理解成性能问题，而不是制度边界问题。
+5. 把 projection consumer 的分工写坏后，还以为只是展示差异，而不是制度分叉。
+6. 把 cache break 理解成性能问题，而不是制度边界问题。
 
 ## 5. 更好的迭代顺序
 
@@ -165,17 +162,20 @@
 
 ```text
 审读对象:
+compiled request truth:
+message lineage ref:
 当前主语:
+projection consumers 是否对齐:
 共享前缀生产者:
 section 宪法是否明确:
 dynamic boundary 是否稳定:
 invalidation 触发器是否明确:
+continuation qualification 是否可点名:
 lawful forgetting ABI 是否成立:
-handoff continuity 是否成立:
 当前最像哪类失效:
-- section drift / boundary drift / path parity split / lawful-forgetting failure / invalidation drift
+- section drift / boundary drift / projection-consumer split / transcript conflation / continuation-unqualified / lawful-forgetting failure / invalidation drift
 下一步该重写的是:
-- 主语 / 前缀 / 边界 / 恢复 / 观测
+- 主语 / lineage / 前缀 / 边界 / consumer / continuation / 恢复
 ```
 
 ## 7. 苏格拉底式检查清单
@@ -184,6 +184,6 @@ handoff continuity 是否成立:
 
 1. 我是在增强制度，还是在堆更长的文本。
 2. 我改的是当前回合效果，还是跨回合继续工作的条件。
-3. 我保住的是共享前缀，还是只是保住了一段看起来熟悉的话。
-4. 我是在减少 handoff 成本，还是在把接手代价推给未来的人。
-5. 我能否解释这次强或弱是由哪类制度字节决定的。
+3. 我保住的是共享前缀和同一条 `message lineage`，还是只是保住了一段看起来熟悉的话。
+4. 我是在减少 projection consumer 的分叉，还是在把接手代价推给未来的人。
+5. 我能否解释这次强或弱是由哪类制度字节、哪条 continuation qualification 决定的。

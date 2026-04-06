@@ -57,8 +57,10 @@
 
 - 能力与公开度：先读 [04-公开能力与隐藏能力](04-公开能力与隐藏能力.md)、[05-功能全景与API支持](05-功能全景与API支持.md)、[08-能力全集、公开度与成熟度矩阵](08-能力全集、公开度与成熟度矩阵.md)
 - 设计内涵：先读 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)、[03-设计哲学](03-设计哲学.md)、[06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)
+- Prompt 设计哲学与验证：先走 `09 -> philosophy/84 -> guides/30`（只在需要旧词汇桥接时）`-> guides/99 -> playbooks/77`
 - 方法与构建：先读 [02-使用指南](02-使用指南.md)，再去 [guides/README.md](guides/README.md)
-- 安全、风控与恢复：先回 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md) 的第二张图，再去 [security/README.md](security/README.md) 与 [risk/README.md](risk/README.md)
+- 安全、风控与恢复：先回 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md) 的第二张图，再去 [security/README.md](security/README.md)、[risk/README.md](risk/README.md) 与 [playbooks/README.md](playbooks/README.md)
+- 需要值班、验收、修复与长期回归：先去 [playbooks/README.md](playbooks/README.md)，更深的跨目录执行链统一回 [navigation/README.md](navigation/README.md)
 
 从设计内涵进入：
 

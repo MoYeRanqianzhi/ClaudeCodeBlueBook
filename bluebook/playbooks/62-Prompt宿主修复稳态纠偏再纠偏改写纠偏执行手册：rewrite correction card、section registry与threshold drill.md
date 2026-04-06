@@ -4,7 +4,7 @@
 
 它主要回答五个问题：
 
-1. 为什么 Prompt 的魔力在再纠偏改写纠偏执行里运行的不是“rewrite correction prose 更完整”，而是同一个 `compiled request truth`、同一个 `section registry` 与同一个 `dynamic boundary` 被再次证明仍可继续、可交接、可重开。
+1. 为什么 Prompt 的魔力在再纠偏改写纠偏执行里运行的不是“rewrite correction prose 更完整”，而是同一条 `message lineage` 上的 `compiled request truth`、同一个 `section registry` 与同一个 `dynamic boundary` 被再次证明仍可继续、可交接、可重开。
 2. 宿主、CI、评审与交接怎样共享同一张 Prompt `rewrite correction card`，而不是各自围绕 rewrite prose、UI 历史、summary handoff 与子 Agent prose 工作。
 3. 应该按什么固定顺序执行 `compiled request truth restitution`、`section registry reseal`、`dynamic boundary rebinding`、`protocol transcript repair`、`stable prefix reseal`、`lawful forgetting reseal`、`continuation requalification` 与 `threshold liability reinstatement`，才能不让假 rewrite correction 重新复活。
 4. 哪些 `reject verdict` 一旦出现就必须冻结 continuation、阻断 handoff 并进入 `re-entry / reopen` drill。
@@ -39,7 +39,7 @@ Prompt 宿主修复稳态纠偏再纠偏改写纠偏真正要执行的不是：
 
 而是：
 
-- 同一个 `compiled request truth`、同一个 `section registry`、同一个 `dynamic boundary`、同一个 `protocol transcript`、同一个 `stable prefix`、同一个 `lawful forgetting boundary` 与同一个 `continue qualification` 仍被再次证明可继续、可交接、可反对
+- 同一条 `message lineage` 上的 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting boundary`、`continuation object` 与 `continue qualification` 仍被再次证明可继续、可交接、可反对
 
 所以这层 playbook 最先要看的不是：
 
@@ -47,11 +47,12 @@ Prompt 宿主修复稳态纠偏再纠偏改写纠偏真正要执行的不是：
 
 而是：
 
-1. 当前 rewrite correction object 是否仍围绕同一个 `restored_request_object_id + compiled_request_hash`。
+1. 当前 rewrite correction object 是否仍围绕同一个 `restored_request_object_id + compiled_request_hash + truth_lineage_ref`。
 2. 当前 `section registry reseal` 是否真的把 Prompt 真相从静态目录说明里救回来。
 3. 当前 `dynamic boundary rebinding` 是否真的把 stable prefix 正文与 late-bound attachment 重新分层。
-4. 当前 `coordinator_synthesis_owner` 是否仍阻止未综合的子 Agent prose 篡位成主线真相。
-5. 当前 `threshold liability reinstatement` 是否仍保留 future reopen 的正式能力。
+4. 当前 projection consumer 是否仍围绕同一条 lineage 消费 truth，而不是各自消费不同投影。
+5. 当前 `coordinator_synthesis_owner` 是否仍阻止未综合的子 Agent prose 篡位成主线真相。
+6. 当前 `threshold liability reinstatement` 是否仍保留 future reopen 的正式能力。
 
 ## 2. 共享 rewrite correction card 最小字段
 
@@ -61,25 +62,28 @@ Prompt 宿主修复稳态纠偏再纠偏改写纠偏真正要执行的不是：
 2. `rewrite_correction_session_id`
 3. `restored_request_object_id`
 4. `compiled_request_hash`
-5. `section_registry_snapshot`
-6. `section_registry_generation`
-7. `dynamic_boundary_attested`
-8. `late_bound_attachment_set`
-9. `coordinator_synthesis_owner`
-10. `protocol_transcript_health`
-11. `stable_prefix_boundary`
-12. `lawful_forgetting_boundary`
-13. `continue_qualification`
-14. `threshold_liability_reinstatement`
-15. `reject_verdict`
-16. `verdict_reason`
+5. `truth_lineage_ref`
+6. `projection_consumer_alignment`
+7. `section_registry_snapshot`
+8. `section_registry_generation`
+9. `dynamic_boundary_attested`
+10. `late_bound_attachment_set`
+11. `coordinator_synthesis_owner`
+12. `protocol_transcript_health`
+13. `stable_prefix_boundary`
+14. `lawful_forgetting_boundary`
+15. `continuation_object_ref`
+16. `continue_qualification`
+17. `threshold_liability_reinstatement`
+18. `reject_verdict`
+19. `verdict_reason`
 
 四类消费者的分工应固定为：
 
-1. 宿主看 rewrite correction object 是否仍围绕同一个 `compiled request truth`。
+1. 宿主看 rewrite correction object 是否仍围绕同一条 `message lineage` 上的 `compiled request truth`。
 2. CI 看 registry、boundary、transcript、prefix、forgetting、qualification 与 threshold 顺序是否完整。
 3. 评审看 `reject_verdict` 与对象边界是否仍自洽。
-4. 交接看 later 团队能否在不继承作者记忆的前提下继续消费同一 rewrite correction object。
+4. 交接看 later 团队能否在不继承作者记忆的前提下继续消费同一 rewrite correction object 与 `continuation object`。
 
 ## 3. 固定 reject verdict 顺序
 
@@ -97,7 +101,7 @@ Prompt 宿主修复稳态纠偏再纠偏改写纠偏真正要执行的不是：
 
 ### 3.3 再验 `compiled request truth restitution`
 
-再看当前 truth 是否真的回到同一个 `restored_request_object_id + compiled_request_hash`，而不是只证明“当前解释讲得更顺了”。
+再看当前 truth 是否真的回到同一个 `restored_request_object_id + compiled_request_hash + truth_lineage_ref`，而不是只证明“当前解释讲得更顺了”。
 
 ### 3.4 再验 `section registry reseal`
 
@@ -106,6 +110,7 @@ Prompt 宿主修复稳态纠偏再纠偏改写纠偏真正要执行的不是：
 1. `section_registry_snapshot` 与 `section_registry_generation` 是否仍自洽。
 2. `registry_drift_cleared` 是否仍阻止旧 registry 漂移复活。
 3. `coordinator_synthesis_owner` 是否仍保证主线程综合责任没有被外包。
+4. `projection_consumer_alignment` 是否仍保证 display / protocol / handoff 消费的是同一条 lineage。
 
 ### 3.5 再验 `dynamic boundary rebinding`
 
@@ -129,7 +134,8 @@ Prompt 宿主修复稳态纠偏再纠偏改写纠偏真正要执行的不是：
 
 1. `stable_prefix_boundary` 是否仍成立。
 2. `lawful_forgetting_boundary` 与 `preserved_segment_ref` 是否仍让 compact 后的继续链合法。
-3. 当前 rewrite correction 是否仍围绕同一份可复用的 prefix asset，而不是围绕一次幸运 cache hit。
+3. `continuation_object_ref` 是否仍让 compact / handoff 后的继续对象挂回同一条 lineage。
+4. 当前 rewrite correction 是否仍围绕同一份可复用的 prefix asset，而不是围绕一次幸运 cache hit。
 
 ### 3.8 最后验 `continuation requalification`、`threshold liability reinstatement` 与 `reject_verdict`
 
@@ -138,7 +144,8 @@ Prompt 宿主修复稳态纠偏再纠偏改写纠偏真正要执行的不是：
 1. `continue_qualification` 是否仍然成立。
 2. `token_budget_ready` 是否仍支持继续。
 3. `truth_break_trigger`、`reentry_required_when` 与 `reopen_required_when` 是否仍正式保留。
-4. `reject_verdict` 是否与前七步对象完全一致。
+4. projection consumer 是否仍不会把 display truth 误当继续资格。
+5. `reject_verdict` 是否与前七步对象完全一致。
 
 更稳的最终 verdict 只应落在：
 
@@ -163,9 +170,11 @@ Prompt 宿主修复稳态纠偏再纠偏改写纠偏真正要执行的不是：
 7. `protocol_transcript_health_failed`
 8. `stable_prefix_boundary_missing`
 9. `lawful_forgetting_boundary_missing`
-10. `continue_qualification_unbound`
-11. `threshold_liability_missing`
-12. `reopen_required`
+10. `projection_consumer_split_detected`
+11. `continuation_object_missing`
+12. `continue_qualification_unbound`
+13. `threshold_liability_missing`
+14. `reopen_required`
 
 ## 5. re-entry 与 reopen 处理顺序
 
@@ -197,27 +206,31 @@ Prompt 宿主修复稳态纠偏再纠偏改写纠偏真正要执行的不是：
 2. `rewrite_correction_session_id`
 3. `restored_request_object_id`
 4. `compiled_request_hash`
-5. `section_registry_snapshot`
-6. `dynamic_boundary_attested`
-7. `coordinator_synthesis_owner`
-8. `protocol_transcript_health`
-9. `stable_prefix_boundary`
-10. `lawful_forgetting_boundary`
-11. `continue_qualification`
-12. `threshold_liability_reinstatement`
-13. `reject_verdict`
-14. `verdict_reason`
+5. `truth_lineage_ref`
+6. `section_registry_snapshot`
+7. `dynamic_boundary_attested`
+8. `projection_consumer_alignment`
+9. `coordinator_synthesis_owner`
+10. `protocol_transcript_health`
+11. `stable_prefix_boundary`
+12. `lawful_forgetting_boundary`
+13. `continuation_object_ref`
+14. `continue_qualification`
+15. `threshold_liability_reinstatement`
+16. `reject_verdict`
+17. `verdict_reason`
 
 ## 8. 苏格拉底式检查清单
 
 在你准备宣布“Prompt 已完成稳态纠偏再纠偏改写纠偏执行”前，先问自己：
 
-1. 我救回的是同一个 `compiled request truth`，还是一份更正式的 rewrite correction 说明。
+1. 我救回的是同一条 `message lineage` 上的 `compiled request truth`，还是一份更正式的 rewrite correction 说明。
 2. 我重封的是 runtime `section registry`，还是一张更好看的目录表。
 3. 我重新绑定的是 `dynamic boundary`，还是在偷把 late-bound attachment 塞回 stable prefix 正文。
-4. 我现在保护的是 `protocol transcript`，还是一段更顺滑的 UI 历史。
-5. 我现在保留的是未来继续与未来反对当前状态的正式条件，还是一种“先继续再说”的体面包装。
+4. 我现在让 display / protocol / handoff 消费的是同一条 lineage，还是三套互相漂移的投影。
+5. 我现在保护的是 `protocol transcript`，还是一段更顺滑的 UI 历史。
+6. 我现在保留的是未来继续与未来反对当前状态的正式条件，还是一种“先继续再说”的体面包装。
 
 ## 9. 一句话总结
 
-真正成熟的 Prompt 宿主修复稳态纠偏再纠偏改写纠偏执行，不是把 rewrite correction prose 运行得更熟练，而是持续证明同一个 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting` 与 `continue qualification` 仍被同一张 `rewrite correction card` 正式约束。
+真正成熟的 Prompt 宿主修复稳态纠偏再纠偏改写纠偏执行，不是把 rewrite correction prose 运行得更熟练，而是持续证明同一条 `message lineage` 上的 `compiled request truth`、`section registry`、`dynamic boundary`、`protocol transcript`、`stable prefix`、`lawful forgetting`、`continuation object` 与 `continue qualification` 仍被同一张 `rewrite correction card` 正式约束。

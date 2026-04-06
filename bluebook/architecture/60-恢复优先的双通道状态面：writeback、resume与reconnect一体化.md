@@ -126,6 +126,15 @@ Claude Code 的状态回写，真正维护的是：
 
 - 最新、可恢复、可覆写的权威快照
 
+这也把两条通道的分工说得更硬：
+
+1. `event stream`
+   - 负责 append-only timeline、resume cursor 与发生过什么
+2. `state writeback`
+   - 负责 authoritative current-state surface、当前阻塞点与当前外化 metadata
+
+前者不能在恢复时临时重建后者。
+
 ## 4. `WorkerStateUploader` 彻底暴露了 durability 取向
 
 `WorkerStateUploader` 的设计几乎已经把“这不是遥测”写在脸上。
@@ -189,6 +198,13 @@ Claude Code 的状态回写，真正维护的是：
 - `requires_action`
 - `idle`
 
+更关键的是，它在 transport rebuild 前先开 `flushGate`，先让旧 epoch writer 失权，再谈 continuity。
+
+这意味着：
+
+- `freshness gate` 先于 continuity
+- 旧 writer 宁可被丢弃，也不能带着过期 authority 假装自己仍然活着
+
 源码注释甚至直接说明：
 
 - v2 不再依赖服务端从事件流反推 `worker_status`
@@ -211,11 +227,12 @@ Claude Code 在这里押注的是：
 1. observability 关心你能不能解释过去发生了什么。
 2. durability 关心系统重来一次时，还能不能继续站在正确的当前状态上。
 
-因此它必须坚持三件事：
+因此它必须坚持四件事：
 
 1. 当前状态要有权威快照。
-2. 旧真相要能被显式清除。
-3. 恢复窗口宁可丢弃 stale 写入，也不能制造假在线状态。
+2. `worker_status`、`pending_action`、`permission_mode` 这类对象必须属于 single-writer snapshot，而不是历史流推导值。
+3. 旧真相要能被显式清除。
+4. 恢复窗口宁可丢弃 stale 写入，也不能制造假在线状态。
 
 ## 7. 一句话总结
 

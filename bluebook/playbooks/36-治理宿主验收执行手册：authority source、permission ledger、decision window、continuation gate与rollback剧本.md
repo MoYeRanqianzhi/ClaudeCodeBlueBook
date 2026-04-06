@@ -1,4 +1,4 @@
-# 治理宿主验收执行手册：authority source、permission ledger、decision window、continuation gate与rollback剧本
+# 治理宿主验收执行手册：governance key、permission ledger、decision window、continuation gate与rollback剧本
 
 这一章不再解释治理宿主验收协议该消费哪些字段，而是把 Claude Code 式治理验收压成一张可持续执行的验收手册。
 
@@ -37,11 +37,11 @@
 
 而是：
 
-- 当前 authority source、permission ledger、decision window、continuation gate 与 rollback object 仍在围绕同一个治理对象成立
+- 当前 governance key、permission ledger、decision window、continuation gate 与 rollback object 仍在围绕同一个治理对象成立
 
 所以这层 playbook 最先要看的不是表象，而是：
 
-1. 当前判断主体是否仍围绕正式 authority source 工作。
+1. 当前判断主体是否仍围绕正式 governance key 工作。
 2. 当前权限扩张是否仍留下 typed decision 与 permission ledger。
 3. 当前决定是否仍落在同一个 decision window，而不是过期决定继续生效。
 4. 当前 continuation 是否仍由统一 gate 裁定，而不是由阈值幻觉裁定。
@@ -52,32 +52,36 @@
 每次治理宿主验收，宿主、CI、评审与交接系统至少应共享：
 
 1. `request_id`
-2. `authority_source`
-3. `typed_decision`
-4. `permission_ledger`
-5. `pending_permission_requests`
-6. `decision_window`
-7. `context_usage_snapshot`
-8. `continuation_gate`
-9. `rollback_object`
-10. `idempotency_key`
-11. `reject_reason`
-12. `consumer_verdict`
+2. `governance_key`
+3. `settings_sources`
+4. `effective_settings`
+5. `applied_settings`
+6. `externalized_truth_chain`
+7. `typed_decision`
+8. `permission_ledger`
+9. `pending_permission_requests`
+10. `decision_window`
+11. `context_usage_snapshot`
+12. `continuation_gate`
+13. `rollback_object`
+14. `idempotency_key`
+15. `reject_reason`
+16. `consumer_verdict`
 
 四类消费者的分工应固定为：
 
 1. 宿主看当前治理对象是否仍有唯一写点。
 2. CI 看协议字段、去重语义与 baseline reset 是否完整。
 3. 评审看 typed decision、拒收理由与回退对象是否自洽。
-4. 交接看 later 接手者能否围绕同一 authority source 继续判断。
+4. 交接看 later 接手者能否围绕同一 governance key 与 externalized truth chain 继续判断。
 
 ## 3. 固定执行顺序
 
-### 3.1 先验 authority source
+### 3.1 先验 governance key
 
 先看：
 
-1. 当前 mode、policy、settings 与状态写回是否仍指向同一个 authority source
+1. 当前 mode、policy、settings 与状态写回是否仍指向同一个 `sources -> effective -> applied -> externalized` 对象链
 2. 是否仍有唯一 writer / choke point
 3. 是否仍能明确指出谁有权宣布 allow、deny、ask 或 stop
 
@@ -96,13 +100,14 @@
 1. 当前 `request_id`、generation、pending action 与取消语义是否仍属于同一窗口
 2. duplicate / orphan response 是否仍被正式处理
 3. late response 是否仍不会复活过期决定
+4. 宿主是否仍从 externalized object 读取当前阻塞点，而不是靠事件流猜
 
 ### 3.4 再验 continuation gate
 
 再看：
 
 1. 当前 `Context Usage`、token budget 与 pending action 是否仍被并排解释
-2. continuation 是否仍由 typed decision 与 gain 判断驱动
+2. continuation 是否仍由 typed decision、gain 判断与同一 externalized truth chain 驱动
 3. compact / cache deletion 后 baseline 是否仍会重置
 
 ### 3.5 最后验 rollback object
@@ -111,7 +116,8 @@
 
 1. 回退是否仍恢复对象，而不是只恢复 mode
 2. permission、cache、context 三条基线是否仍一起回到合法状态
-3. 交接系统能否明确指出 rollback 后的 re-entry condition
+3. durable assets 与 transient authority 是否仍被明确区分
+4. 交接系统能否明确指出 rollback 后的 re-entry condition
 
 ## 4. 直接拒收条件
 
@@ -125,6 +131,7 @@
 6. `rollback_not_object`
 7. `duplicate_orphan_silent`
 8. `baseline_reset_missing`
+9. `externalized_truth_chain_missing`
 
 ## 5. 拒收升级与回退顺序
 
@@ -133,7 +140,7 @@
 1. 先冻结新的 capability expansion，不再允许继续提权或自动化扩张。
 2. 先关闭当前 decision window，取消或隔离所有 outstanding request。
 3. 先把 automation 降回人工或更窄模式，再恢复 rollback object。
-4. 先重建 authority source、permission ledger 与 baseline，再允许重开 continuation。
+4. 先重建 governance key、permission ledger 与 baseline，再允许重开 continuation。
 5. 如果根因是治理制度本身漂移，就回跳 `../guides/58` 做制度纠偏。
 
 ## 6. 回退演练集
@@ -152,7 +159,7 @@
 每次治理宿主验收失败或回退，至少记录：
 
 1. `governance_object_id`
-2. `authority_source`
+2. `governance_key`
 3. `typed_decision`
 4. `decision_window`
 5. `pending_action`
@@ -167,7 +174,7 @@
 在你准备宣布“治理宿主验收已经稳定运行”前，先问自己：
 
 1. 我暴露的是状态投影，还是权威对象本身。
-2. 当前所有决定是否仍围绕同一个 authority source。
+2. 当前所有决定是否仍围绕同一个 governance key。
 3. 当前 permission ledger 记录的是“用户点了允许”，还是“系统为何允许/拒绝”。
 4. continuation 是正式 gate，还是默认继续。
 5. baseline 下降时，我能否区分合法压缩与异常碎裂。
@@ -177,4 +184,4 @@
 
 ## 9. 一句话总结
 
-真正成熟的治理宿主验收执行，不是把 mode、弹窗与 token 曲线拼成更复杂的审批页，而是持续证明 authority source、permission ledger、decision window、continuation gate 与 rollback object 仍是同一个治理判断链。
+真正成熟的治理宿主验收执行，不是把 mode、弹窗与 token 曲线拼成更复杂的审批页，而是持续证明 governance key、permission ledger、decision window、continuation gate 与 rollback object 仍是同一个治理判断链。

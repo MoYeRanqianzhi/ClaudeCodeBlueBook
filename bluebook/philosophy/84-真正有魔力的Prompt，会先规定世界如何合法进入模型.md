@@ -3,7 +3,7 @@
 这一章回答五个问题：
 
 1. 为什么 Claude Code 的 Prompt 魔力首先不是文案强，而是世界编译强。
-2. 为什么 `authority chain`、`section registry`、`protocol transcript` 与 `lawful forgetting` 共同决定 Prompt 上限。
+2. 为什么 `authority chain`、`message lineage`、`section registry`、`protocol transcript` 与 `lawful forgetting` 共同决定 Prompt 上限。
 3. 为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到魔力。
 4. 怎样用苏格拉底式追问审一个新 runtime 是否真的拥有这种 Prompt 能力。
 5. 这对 Agent runtime 设计者意味着什么。
@@ -35,11 +35,13 @@
 这里的“世界”不是抽象比喻，而是：
 
 1. 谁能宣布当前真相
-2. 哪些 section 构成正式 Prompt 宪法
-3. 哪条 transcript 配进入模型
-4. 哪些动态事实必须晚绑定
-5. 忘掉什么之后系统仍然合法继续
-6. 旁路循环如何复用同一个世界，而不是重造平行世界
+2. 哪条 `message lineage` 挂住当前 compiled request truth
+3. 哪些 section 构成正式 Prompt 宪法
+4. 哪条 transcript 配进入模型
+5. 哪些 consumer 只消费投影，不能改写 protocol truth
+6. 哪些动态事实必须晚绑定
+7. 忘掉什么之后系统仍然合法继续
+8. 旁路循环如何复用同一个世界，而不是重造平行世界
 
 Prompt 的魔力，首先来自：
 
@@ -67,7 +69,7 @@ Claude Code 更深的一层是：
 
 也就是说，Prompt 真正的魔力首先不是“表达能力”，而是：
 
-- 世界准入能力
+- 世界准入能力，以及让不同 projection consumer 继续围绕同一条 `message lineage` 工作的能力
 
 ## 3. 最容易被误写成什么
 
@@ -95,9 +97,9 @@ Claude Code 更深的一层是：
 1. 主语漂移
    - 多份文本争主权
 2. 历史漂移
-   - display truth 与 protocol truth 混写
+   - display truth / protocol truth / handoff truth 不再围绕同一条 lineage
 3. 连续性漂移
-   - compact 之后留下的是叙事，不是仍可继续行动的对象
+   - compact 之后留下的是叙事，不是仍可继续行动的 continuation object
 
 所以 Prompt 魔力真正保护的不是：
 
@@ -111,23 +113,24 @@ Claude Code 更深的一层是：
 
 如果要审一个新 runtime 是否真的拥有这种 Prompt 能力，先问：
 
-1. 现在是谁在定义世界；如果多份文本冲突，谁赢。
+1. 现在是谁在定义世界；如果多份文本冲突，哪条 authority chain / message lineage 赢。
 2. Prompt 是 blob，还是有正式 section 宪法。
-3. 模型看到的 transcript 与人类看到的 transcript 是不是同一回事。
-4. compact 后保住的是行动语义，还是只是更好读的摘要。
-5. side loop、suggestion、memory extraction 与 worker summary 是否围绕同一 stable prefix 复用。
+3. display transcript、protocol transcript 与 continuation object 是不是围绕同一条 lineage 投影出来的。
+4. compact 后保住的是行动语义与 continuation qualification，还是只是更好读的摘要。
+5. side loop、suggestion、memory extraction 与 worker summary 是否只是同一 protocol truth 的不同 consumer。
 6. 工具 ABI、continue 资格与 cache break 原因，是否已进入 Prompt 真相本体。
-7. 如果去掉“写得像专家”的文案风格，这套系统还能不能继续活在同一个现场。
+7. 如果去掉“写得像专家”的文案风格，这套系统还能不能让不同 consumer 继续活在同一个现场。
 
 ## 6. 对 Agent Runtime 设计者的直接启发
 
 如果你想复制 Claude Code 的 Prompt 强度，先复制：
 
 1. 单一主权链
-2. section registry
-3. protocol transcript 编译
-4. lawful forgetting
-5. cache-safe fork reuse
+2. `message lineage` 内核
+3. section registry
+4. protocol transcript 编译
+5. lawful forgetting 与 continuation qualification
+6. cache-safe fork reuse
 
 而不是先复制：
 

@@ -1,11 +1,11 @@
-# 如何用苏格拉底诘问法审读安全与省Token：输入边界、决策增益与可撤销自动化
+# 如何用苏格拉底诘问法审读安全与省Token：governance key、durable assets与continuation qualification
 
 这一章不再解释安全与省 token 为什么要一起看，而是把“怎么审它是否真的成立”压成一套 builder-facing 框架。
 
 它主要回答五个问题：
 
 1. 怎样避免把安全写回“更多拦截器”，把省 token 写回“更短文本”。
-2. 怎样用递进式问题审读输入边界、失败语义、稳定字节、最小可见面与 continuation。
+2. 怎样用递进式问题审读治理主键、失败语义、durable assets、最小可见面与 continuation qualification。
 3. 怎样判断一套治理系统是否仍在免费扩张。
 4. 怎样在设计、回归和事故复盘中使用同一组问题自我校准。
 5. 怎样用苏格拉底式追问避免把安全审读模板退回空洞口号。
@@ -41,7 +41,7 @@
 
 而是：
 
-- 哪些免费扩张仍然被系统默许
+- 哪些免费扩张仍然被系统默许，以及哪些 `source -> effective -> applied -> externalized` 对象链还没有被正式写成治理主键
 
 ## 2. 苏格拉底诘问链
 
@@ -57,11 +57,11 @@
 
 - 高波动信息不应污染稳定前缀；放错位置会同时伤害安全、缓存和成本。
 
-### 2.3 谁有权改写当前运行时边界
+### 2.3 当前运行时边界的治理主键到底是什么
 
 判断标准：
 
-- 必须有单一、可解释的主权链；不能让 feature、transport、子代理各自偷偷改 prompt 真相。
+- 如果答不出 `sources -> effective -> applied -> externalized` 这条对象链，或把 `permission_mode` 这种投影字段误当主键，治理仍停在抽象口号层。
 
 ### 2.4 当系统失败时，它应该显式失败、回退人工，还是继续假装还能判断
 
@@ -75,23 +75,23 @@
 
 - 如果检查、分类、重试已不再带来新的决策增益，就应立即停止，而不是“为了更稳再算一遍”。
 
-### 2.6 哪些字节属于 stable bytes，它们一旦漂移会不会同时影响安全、成本和解释力
+### 2.6 哪些是 durable assets，哪些只是 transient authority
 
 判断标准：
 
-- 系统必须能明确点名哪些字节是制度资产，并对它们做 diff、归因和回归，而不是只看“感觉变贵了”。
+- 系统必须能明确点名哪些对象可重放、可恢复、可继续引用，哪些 authority 痕迹在 `idle / init / resume` 时必须被清空；否则它还在把资产和租约混写。
 
-### 2.7 模型当前看到的世界，是最小可见面吗
+### 2.7 模型当前看到的世界，是由单一 capability surface 定义的最小可见面吗
 
 判断标准：
 
-- 先缩小可见面，再要求模型聪明；“先全量暴露，后面再靠提示约束”通常同时更贵也更不安全。
+- 先缩小可见面，再要求模型聪明；如果 capability truth 不是由单一工具池 / deny rules / deferred visibility 统一给出，而是靠 prompt 文案感觉拼接，通常同时更贵也更不安全。
 
 ### 2.8 continuation 是默认权利，还是受条件约束的临时租约
 
 判断标准：
 
-- 继续执行必须有明确的停止条件、对象升级条件和回退条件，而不是靠无限 `continue` 维持。
+- 继续执行必须有明确的停止条件、对象升级条件和回退条件；如果它脱离当前 decision window、settled state 与 externalized truth chain 仍能继续，就不是租约，而是偷渡主权。
 
 ### 2.9 自动化是可撤销的吗，人类和 runtime 何时能把它收回
 
@@ -99,17 +99,17 @@
 
 - 成熟自动化必须带撤销路径；不能只有“自动化开启”，没有“自动化合法退场”。
 
-### 2.10 当历史被压缩、恢复、重放之后，协议不变量还在吗
+### 2.10 当历史被压缩、恢复、重放之后，restore order 与 writeback seam 还守住了吗
 
 判断标准：
 
-- 如果 compact、resume、fork 之后不能保证边界、配对、顺序和连续性，系统省下来的不是 token，而是正确性。
+- 如果 compact、resume、fork 之后不能保证治理主键、当前状态写回面、配对和顺序，系统省下来的不是 token，而是正确性。
 
-### 2.11 当前症状能直接反查到制度层吗
+### 2.11 当前症状能直接反查到制度层吗，还是宿主还在猜当前真相
 
 判断标准：
 
-- 团队应能从 `cache break / wrong allow / split truth / stale state` 这类症状直接定位到 Prompt、治理或结构主线，而不是靠个人经验猜。
+- 团队应能从 `cache break / wrong allow / split truth / stale state` 这类症状直接定位到治理主键、外化状态或 capability surface；如果宿主仍靠 `lastMessage`、spinner 或事件流猜当前真相，制度尚未闭环。
 
 ### 2.12 你写下的是设计建议，还是可观测、可回归、可复盘的制度
 
@@ -123,9 +123,11 @@
 
 1. 以为多一层检查就等于更安全。
 2. 以为少一点输出就等于更省 token。
-3. 以为自动化一旦开启就应该尽量别退回人工。
-4. 以为 visibility 只是产品体验问题，而不是治理问题。
-5. 以为只要结果没出错，输入边界如何扩张都无所谓。
+3. 以为 `permission_mode` 这样的投影字段就等于治理主键。
+4. 以为宿主可以靠事件流、modal heuristic 或 spinner 自己猜当前真相。
+5. 以为自动化一旦开启就应该尽量别退回人工。
+6. 以为 visibility 只是产品体验问题，而不是治理问题。
+7. 以为只要结果没出错，输入边界如何扩张都无所谓。
 
 ## 4. 更好的迭代顺序
 
@@ -141,17 +143,21 @@
 ```text
 审读对象:
 受保护的边界:
-当前权威主权链:
+governance key:
+sovereign writer / choke point:
+effective / applied / externalized 是否对齐:
 失败语义是否分型:
-stable bytes 是否可点名:
-当前可见面是否最小:
+durable assets 是否可点名:
+transient authority 是否有清空规则:
+当前可见 capability surface 是否单源:
 decision gain 是否仍存在:
+host 是否只消费 externalized truth:
 continuation 是否受条件约束:
 自动化是否可撤销:
 当前最像哪类扩张:
 - 动作 / 能力 / 上下文 / 时间
 下一步该重写的是:
-- 输入边界 / 顺序 / 失败语义 / visibility / continuation / externalization
+- 治理主键 / 输入边界 / 写回顺序 / 失败语义 / visibility / continuation / externalization
 ```
 
 ## 6. 苏格拉底式检查清单
@@ -159,7 +165,7 @@ continuation 是否受条件约束:
 在你准备继续给系统加规则前，先问自己：
 
 1. 我是在减少免费扩张，还是只是在增加表层摩擦。
-2. 我保住的是制度边界，还是只是暂时拦住了某个动作。
+2. 我保住的是治理主键和 externalized truth，还是只是暂时拦住了某个动作。
 3. 我是在提高决策质量，还是在无增益地继续烧 token。
 4. 自动化是租约，还是已经偷偷变成永久主权。
-5. 这套东西出事故时，团队能否沿着制度词汇而不是个人经验复盘。
+5. 这套东西出事故时，团队能否沿着治理主键、durable assets 与 writeback seam，而不是个人经验复盘。

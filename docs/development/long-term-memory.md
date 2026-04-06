@@ -8,6 +8,85 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/62 / 63 / 64` 已继续把三条“改写纠偏链”拉到和更后段页面同代：
+  - `62` 现已把 Prompt rewrite-correction 从旧的 `compiled request truth / section registry` 语法压到 `message lineage / projection consumer / continuation object`。
+  - `63` 现已把治理 rewrite-correction 从 `authority chain / authority source` 压到 `governance key / externalized truth chain / durable-vs-transient`。
+  - `64` 现已把结构 rewrite-correction 从 `fresh merge / transport / anti-zombie` 语法压到 `event stream / state writeback / freshness gate / stale worldview / ghost capability`。
+- 新的长期结论：
+  - 三条执行链真正成熟时，不只早段 rewrite 页要换代，中段 rewrite-correction 页也必须同步换代；否则链条中心会长期停在旧对象词汇。
+  - Prompt 线真正成熟时，`section registry / dynamic boundary` 不应脱离 `message lineage` 单独出现。
+  - 治理线真正成熟时，`single truth chain` 这类过渡词最终也应回收进 `governance key + externalized truth chain`。
+  - 结构线真正成熟时，`fresh merge` 与 `transport boundary` 不应脱离 `event stream / state writeback / freshness gate / stale worldview` 单独解释。
+- `playbooks/59 / 60 / 61` 已继续把三条“改写执行链”拉到和后段页面同代：
+  - `59` 现已把 Prompt rewrite 从单纯 `compiled request truth` 压到 `message lineage / projection consumer / continuation object`。
+  - `60` 现已把治理 rewrite 从抽象 `authority source restitution` 压到 `governance key / externalized truth chain / durable-vs-transient`。
+  - `61` 现已把结构 rewrite 从旧的 writeback seam 语法压到 `event stream / state writeback / freshness gate / stale worldview / ghost capability`。
+- 新的长期结论：
+  - 三条执行链的上游改写页必须先换代，后面的 repair/refinement 页才不会持续复写旧对象语法。
+  - Prompt 线真正成熟时，`message lineage` 不只是验收/验证对象，也必须成为 rewrite / repair 页的主对象。
+  - 治理线真正成熟时，`governance key` 与 `externalized truth chain` 必须从 rewrite 开始就压过 `permission_mode`。
+  - 结构线真正成熟时，`event stream / state writeback` 的分工与 `freshness gate` 应从 rewrite 开始就成为正式 seam，而不是到验收/验证页才出现。
+- `playbooks/65 / 75 / 76` 已继续把三条“精修链”补到和前面验收、验证、再纠偏页同代：
+  - `65` 现已把 Prompt 精修从 `compiled request truth` 链继续压到 `message lineage / projection consumer / continuation object`。
+  - `75` 现已把治理精修从 `authority mode` / `mode panel` 语法继续压到 `governance key / externalized truth / durable-vs-transient`。
+  - `76` 现已把结构精修从 `authority stream / transport / anti-zombie` 继续压到 `event stream / state writeback / freshness gate / stale worldview / ghost capability`。
+- 新的长期结论：
+  - 三条执行链真正完整时，修复链、再纠偏链与精修链都必须使用同代对象；否则链条越往后越容易重新漂回旧词。
+  - Prompt 精修真正成熟时，不应再把 `message lineage` 藏在字段里，而应把它抬到精修 card 的主对象位。
+  - 治理精修真正成熟时，不应再让 `permission_mode` 充当前门主语，而应始终退回 `governance key` 和 externalized truth。
+  - 结构精修真正成熟时，不只要 fail-closed，还要显式防 stale worldview 与 ghost capability，否则“防过去写坏现在”仍不够硬。
+- `playbooks/56 / 57 / 58` 已继续把“再纠偏执行”这一层补到和验收页、长期验证页同代的对象语言：
+  - `56` 现已把 Prompt recorrection 从单纯 `compiled request truth` 压到 `message lineage / projection consumer / continuation object`。
+  - `57` 现已把治理 recorrection 从抽象 `authority source` 压到 `governance key / externalized truth chain / durable-vs-transient`。
+  - `58` 现已把结构 recorrection 从旧的 authority / anti-zombie 语法压到 `event stream / state writeback / freshness gate / stale worldview / ghost capability`。
+- 新的长期结论：
+  - 三条执行链真正成熟时，不只要在验收页和验证页使用新对象，还要让中间的 recorrection / repair 页使用同代语言；否则链条中段会重新把读者拉回旧框架。
+  - 结构线真正成熟时，`resume / writeback / anti-zombie` 这组旧对象必须继续下压成 `event stream vs state writeback / freshness gate / stale worldview / ghost capability`，否则 anti-stale 仍停在旧一层。
+- `playbooks/35 / 37 / 78 / 79` 已继续把三条执行链内部补到更对称的状态：
+  - `35` 现已把 Prompt 宿主验收从单纯 `compiled request truth` 压到 `message lineage + projection consumer + continue qualification`。
+  - `37` 现已把结构宿主验收补进 `event stream / state writeback` 分层、`stale worldview` 与 `ghost capability` 驱逐，不再只停在恢复顺序与 anti-zombie 的旧一层。
+  - `78` 现已把治理验证从 `trusted inputs` 抬到 `governance key + externalized truth chain + durable vs transient`。
+  - `79` 现已把 one writable present 验证补到 `event-stream-vs-state-writeback / stale-worldview / ghost-capability`，与 `37 / 84 / 101` 对齐。
+- 新的长期结论：
+  - 三条执行链真正成熟时，不只要在入口层对称，还要在验收页和长期验证页里对称地携带各自最硬的新对象；否则会出现“链条对称、语言不同代”的伪整齐。
+  - Prompt 线真正成熟时，`compiled request truth` 不应脱离 `message lineage` 单独出现；治理线真正成熟时，`trusted inputs` 不应脱离 `governance key` 单独出现；结构线真正成熟时，`single-writer authority` 不应脱离 `event stream / state writeback` 与 `stale worldview` 单独出现。
+- `guides/30 / guides/31 / guides/99 / playbooks/30 / playbooks/36 / playbooks/77` 已继续把页面可见标题与正文对象链对齐：
+  - Prompt 线标题现在显式前置 `message lineage`、`projection boundary` 与 `lawful forgetting`。
+  - 治理线标题现在显式前置 `governance key`、`durable assets` 与 `continuation qualification`。
+  - 验证与执行页标题不再停在旧的 `authority source` 或泛化 Prompt 词汇。
+- 新的长期结论：
+  - 当正文对象链已经换代后，如果页面标题仍停在旧词，目录层就会继续制造“入口比正文落后一代”的错觉；标题对齐本身也是目录治理的一部分。
+- `bluebook/README / playbooks/README / navigation/README / security/README / risk/README / philosophy/README` 已继续把目录入口与跨目录路由拉平到最新对象链：
+  - `playbooks/README` 现已把 Prompt / 治理 / 结构三条执行链写成稳定入口，不再主要靠旧的单线 Prompt 代表页带路。
+  - `navigation/README` 现已把 `46 -> 29/30/31 -> 35/36/37 -> 65/66/67 -> 77/78/79` 固定成三条执行深链，减少读者自己拼手册顺序。
+  - `guides/README` 现已把 `30-31` 收回成旧词汇桥接，把 `99-101` 固定为当前 builder 审读主入口，不再把新旧入口并列。
+  - `security/README` 与 `risk/README` 现已把治理执行链显式接到 `30 / 36 / 66`，把“治理对象链”与“恢复/责任执行链”前置到专题入口。
+  - `philosophy/README` 现已把 `84-87` 与 `77-79` 之间的“为什么 -> 如何验证”关系显式写进推荐入口。
+  - `bluebook/README` 现已更明确把安全、风控、恢复与值班链统一接到 `playbooks/README` 与 `navigation/README`。
+- 新的长期结论：
+  - 目录结构真正成熟时，不只要把正文对象链写对，还要把“哪条执行链对应哪组手册”固定成 README 级稳定路由；否则读者仍会在执行层重新迷路。
+  - `playbooks/README` 的成熟度不在列更多代表页，而在能否直接交出 Prompt / 治理 / 结构三条稳定执行链。
+  - `navigation/README` 真正值钱的不是继续扩编号，而是替读者消灭“自己拼 29/35/65/77 这类链条”的负担。
+- `playbooks/30 / 36 / 66 / 77` 已继续把上一批高层对象链压进执行层、验收层与修复层：
+  - `30 / 36` 现已把治理宿主手册从抽象 `authority source` 压到 `sources -> effective -> applied -> externalized`，并把“宿主只能消费 externalized truth、不能回放事件流猜当前真相”写进门禁与拒收条件。
+  - `36 / 66` 现已把 durable assets 与 transient authority 的分界正式写进 rollback / liability / reopen 字段，不再只把恢复写成 mode、页面或说明文的恢复。
+  - `77` 现已把 Prompt 验证手册从 `authority / section / history / continue` 扩到 `message lineage / projection consumer / continuation qualification`，与 `30 / 84 / 99` 对齐。
+- 新的长期结论：
+  - 高层页一旦更新到新对象链，执行手册如果不跟进，团队实际跑流程时还是会回到旧词汇和旧判断；所以桥接对象必须继续下沉到 playbook，而不只停在 philosophy / guides。
+  - 宿主类 playbook 真正成熟时，`governance key` 与 `externalized truth chain` 必须先于 mode、弹窗、图表出现；否则验收与修复仍会被投影层劫持。
+  - Prompt 类 playbook 真正成熟时，不只验证 `authority chain` 和 `protocol transcript`，还必须验证 `message lineage`、projection consumer 分工与 continuation qualification。
+- `guides/30 / guides/31 / philosophy/84 / architecture/60 / architecture/63 / guides/README` 已继续吸收这一批相邻深专题遗漏的对象链，并顺手清理正文中的桥接/记忆性说明：
+  - `30` 现已把 Prompt 审读从 `主语 / 接手连续性` 压到 `message lineage / projection consumer / continuation qualification`，记录卡也改成可点名 lineage 与 continuation object 的版本。
+  - `31` 现已把治理审读从抽象“主权链”压到 `sources -> effective -> applied -> externalized` 这条 governance key，并显式拆开 durable assets 与 transient authority。
+  - `84` 现已更明确把 Prompt 魔力的 durable core 写成 `message lineage`，不再只把 display / protocol / handoff truth 写成三份并列文本。
+  - `60` 现已更明确把 `event stream` 和 `state writeback` 分成“时间线 / 恢复游标”与“当前态主权面”，并把 `freshness gate` 提到 reconnect 之前。
+  - `63` 现已更明确把可演化内核继续压到 `stale worldview`、per-host authority width 与 `ghost capability eviction`，不再只停留在 stale finally 和拆模块美学。
+  - `guides/README` 现已显式接管 `30-31` 的桥接定位，避免正文继续夹带“这页只是旧模板/桥接页”的作者说明。
+- 新的长期结论：
+  - 旧桥接页真正成熟时，桥接定位应交给目录入口；正文只保留可复用的对象对照和审读问题，不再保留“这页最适合当什么”的作者判断。
+  - Prompt 主线继续压到底时，不只要讲 authority、prefix、boundary，还要把 `message lineage / projection consumer / continuation qualification` 写进正式审读卡。
+  - 治理主线继续压到底时，不只要讲“谁有权改边界”，还要显式写出 `sources -> effective -> applied -> externalized` 这条 governance key，并强制区分 durable assets 与 transient authority。
+  - anti-stale 主线继续压到底时，不只防 stale writer 和 stale snapshot，还要防 stale validator worldview 与 stale capability token。
 - `architecture/80 / guides/52 / philosophy/86 / architecture/README` 已继续吸收上一批相邻专题遗漏的对象链：
   - `80` 现已更明确把治理实现写成 `source lattice -> managed-only switches -> typed decision -> visibility pricing -> decision window -> continuation requalification`。
   - `52` 现已更明确把 builder 手册写成 `source` 是治理主键、resume 只恢复 durable assets、不续租 transient authority 的实现顺序。

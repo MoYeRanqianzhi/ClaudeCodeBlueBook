@@ -6,6 +6,15 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/claude-code-risk-analysis`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮改写纠偏链对齐动作: 已继续更新 `playbooks/62 / 63 / 64`，把 Prompt / 治理 / 结构三条 rewrite-correction 执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
+- 本轮改写链对齐动作: 已继续更新 `playbooks/59 / 60 / 61`，把 Prompt / 治理 / 结构三条 rewrite 执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
+- 本轮精修链对齐动作: 已继续更新 `playbooks/65 / 75 / 76`，把 Prompt / 治理 / 结构三条 refinement 执行页补齐到 `message lineage / projection consumer / governance key / externalized truth / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
+- 本轮再纠偏链对齐动作: 已继续更新 `playbooks/56 / 57 / 58`，把 Prompt / 治理 / 结构三条 recorrection 执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
+- 本轮执行链对称化动作: 已继续更新 `playbooks/35 / 37 / 78 / 79`，把 Prompt / 治理 / 结构三条执行链的验收与长期验证页继续补齐到 `message lineage / projection consumer / governance key / durable-vs-transient / event-stream-vs-state-writeback / stale-worldview / ghost-capability`。
+- 本轮标题语义对齐动作: 已继续更新 `guides/30 / 31 / 99` 与 `playbooks/30 / 36 / 77` 的可见标题，使入口词与正文对象链统一到 `message lineage / governance key / continuation qualification`。
+- 本轮目录与路由收口动作: 已继续更新 `bluebook/README / playbooks/README / navigation/README / security/README / risk/README / philosophy/README`，把三条执行链、治理执行链与“为什么 -> 如何验证”的跨目录入口写成稳定 README 路由。
+- 本轮执行手册对齐动作: 已继续更新 `playbooks/30 / 36 / 66 / 77`，把上一批高层对象链继续压到宿主接入、验收、修复与 Prompt 回归手册，重点补入 `governance key / externalized truth chain / durable assets vs transient authority / message lineage / projection consumer / continuation qualification`。
+- 本轮桥接页与相邻深专题对齐动作: 已继续更新 `guides/30 / guides/31 / philosophy/84 / architecture/60 / architecture/63 / guides/README`，把旧桥接页继续吸收到 `message lineage / projection consumer / governance key / externalized truth / event stream vs state writeback / stale worldview / ghost capability eviction`，并把“桥接页定位”从正文收回目录 README。
 - 本轮相邻深专题补强动作: 已继续更新 `architecture/80 / guides/52 / philosophy/86 / architecture/README`，把 `source lattice / managed-only switches / durable assets vs transient authority / freshness gate / ghost-capability eviction` 补回相邻主题页，并把 `82-84` 的最新对象链前置回架构专题入口。
 - 本轮治理主键再压缩动作: 已继续更新 `architecture/83 / philosophy/85 / guides/100`，把治理线从“authority source 先收费”进一步压到“source 是治理主键，action/visibility/continuation 都是 source-tagged 消费结果”，并把 `policySettings` 与 resume/durable-assets 问题前置到深专题。
 - 本轮 anti-stale 再下钻动作: 已继续更新 `architecture/84 / guides/101 / guides/102`，把 anti-stale 从状态机与恢复层继续压到文件写入 freshness gate、PowerShell stale-cwd validator 降级、WebFetch per-host 重取真相、remote managed settings 危险增量确认与 MCP ghost capability 清理。

@@ -56,10 +56,10 @@
 而是：
 
 1. 当前 refinement session 是否仍围绕同一个 `governance_object_id + authority_source_after + single_truth_chain_ref`。
-2. 当前 `authority-ledger covenant` 是否真的把 authority 从 mode 与 dashboard 投影里救出来。
+2. 当前 `authority-ledger covenant` 是否真的把 authority 从 mode 与 dashboard 投影里救出来，并恢复 `sources -> effective -> applied -> externalized` 这条治理主键。
 3. 当前 `window-pricing covenant` 是否真的把 `Context Usage`、`reserved buffer` 与 `settled price` 放回同一窗口对象。
 4. 当前 `classifier-writeback custody` 是否真的让安全系统也接受被定价、被写回。
-5. 当前 `reopen liability ledger` 是否仍保留 future reopen 的正式能力。
+5. 当前 `reopen liability ledger` 是否仍保留 future reopen 的正式能力，并区分 durable assets 与 transient authority。
 
 ## 2. 共享 host consumption card 最小字段
 
@@ -71,25 +71,28 @@
 4. `governance_object_id`
 5. `authority_source_after`
 6. `single_truth_chain_ref`
-7. `permission_mode_external`
-8. `permission_ledger_state`
-9. `pending_permission_requests`
-10. `decision_window`
-11. `context_usage_snapshot`
-12. `reserved_buffer`
-13. `settled_price`
-14. `classifier_cost_priced`
-15. `writeback_seam_attested`
-16. `capability_release_scope`
-17. `liability_owner`
-18. `threshold_retained_until`
-19. `shared_consumer_surface`
-20. `reject_verdict`
-21. `verdict_reason`
+7. `externalized_truth_chain_ref`
+8. `permission_mode_external`
+9. `permission_ledger_state`
+10. `pending_permission_requests`
+11. `decision_window`
+12. `context_usage_snapshot`
+13. `reserved_buffer`
+14. `settled_price`
+15. `classifier_cost_priced`
+16. `writeback_seam_attested`
+17. `durable_assets_after`
+18. `transient_authority_cleared`
+19. `capability_release_scope`
+20. `liability_owner`
+21. `threshold_retained_until`
+22. `shared_consumer_surface`
+23. `reject_verdict`
+24. `verdict_reason`
 
 四类消费者的分工应固定为：
 
-1. 宿主看 authority source、writer chokepoint 与 capability scope 是否仍唯一。
+1. 宿主看 governance key、writer chokepoint 与 capability scope 是否仍唯一，并且只消费 externalized truth。
 2. CI 看 ledger、window、pricing、classifier、writeback、liability 与 threshold 顺序是否完整。
 3. 评审看 `reject_verdict` 是否仍围绕同一个治理对象，而不是围绕 mode 与图表投影。
 4. 交接看 later 团队能否只凭 `host consumption card` 重建同一判定与责任边界。
@@ -115,6 +118,7 @@
 1. `authority_source_after` 与 `single_truth_chain_ref` 是否仍唯一。
 2. `typed_decision_digest` 与 `permission_ledger_state` 是否仍明确重绑。
 3. capability custody 是否仍由唯一 writer chokepoint 发放，而不是由面板恢复感发放。
+4. `externalized_truth_chain_ref` 是否仍是宿主、CI、评审与交接共同消费的当前真相。
 
 ### 3.4 再验 `window_pricing_covenant`
 
@@ -139,6 +143,7 @@
 1. `capability_release_scope`、`custody_owner` 与 `liability_owner` 是否仍明确。
 2. capability 是否按 scope 被分层托管，而不是一次性全放开。
 3. `rollback_object` 是否仍让 later 团队可以正式回跳。
+4. `durable_assets_after / transient_authority_cleared` 是否仍明确区分“可恢复资产”和“必须失效的旧主权”。
 
 ### 3.7 再验 `hard_reject_semantics_abi` 与 `cross_consumer_attestation_packet`
 
@@ -190,7 +195,7 @@
 1. 先冻结新的 capability expansion，直到 `host consumption card` 补全。
 2. 先把 verdict 降为 `hard_reject`、`liability_hold`、`writeback_reseal_required`、`reentry_required` 或 `reopen_required`。
 3. 先把 mode、usage dashboard 与“当前还挺省”的感觉降回投影，不再让它们充当治理真相。
-4. 先按固定顺序重验 authority、ledger、window、pricing、classifier、writeback 与 liability，不允许跳过 `window-pricing covenant`。
+4. 先按固定顺序重验 authority、ledger、window、pricing、classifier、writeback 与 liability，不允许跳过 `window-pricing covenant`，也不允许宿主改从事件流猜当前真相。
 5. 只按 `capability_release_scope` 分层恢复 capability，不做一次性全放开。
 6. 交接前必须把 `liability_owner` 与 `reopen liability ledger` 写成 later 团队可消费的对象，而不是一句“有问题再 reopen”。
 
@@ -222,13 +227,15 @@
 9. `settled_price`
 10. `classifier_cost_priced`
 11. `writeback_seam_attested`
-12. `capability_release_scope`
-13. `liability_owner`
-14. `threshold_retained_until`
-15. `pending_permission_requests`
-16. `shared_consumer_surface`
-17. `reject_verdict`
-18. `verdict_reason`
+12. `durable_assets_after`
+13. `transient_authority_cleared`
+14. `capability_release_scope`
+15. `liability_owner`
+16. `threshold_retained_until`
+17. `pending_permission_requests`
+18. `shared_consumer_surface`
+19. `reject_verdict`
+20. `verdict_reason`
 
 ## 8. 苏格拉底式检查清单
 

@@ -1,10 +1,10 @@
-# 结构宿主修复稳态纠偏再纠偏执行手册：recorrection card、authority-first reject order、single-source seam audit、anti-zombie evidence rebinding与reopen liability drill
+# 结构宿主修复稳态纠偏再纠偏执行手册：recorrection card、freshness gate、stale worldview与reopen liability drill
 
 这一章不再解释结构宿主修复稳态纠偏再纠偏协议该消费哪些字段，而是把 Claude Code 式结构 steady-state correction-of-correction protocol 压成一张可持续执行的 `recorrection card`。
 
 它主要回答五个问题：
 
-1. 为什么结构宿主修复稳态纠偏再纠偏真正执行的不是“系统又转绿了”，而是 authority、single-source、resume、writeback、anti-zombie 与 reopen liability 的正式 recorrection 顺序。
+1. 为什么结构宿主修复稳态纠偏再纠偏真正执行的不是“系统又转绿了”，而是 authority、single-source、resume、event stream / state writeback、stale worldview、anti-zombie 与 reopen liability 的正式 recorrection 顺序。
 2. 宿主、CI、评审与交接怎样共享同一张结构 `recorrection card`，而不是各自围绕 pointer、监控、archive prose 与作者说明工作。
 3. 应该按什么固定顺序执行 `authority surface restitution`、`single-source reseal`、`resume lineage reproof`、`writeback custody rebinding`、`anti-zombie evidence restitution` 与 `reservation liability rebinding`，才能不让 split-brain、side write 与 zombie 风险重新复辟。
 4. 哪些 `reject verdict` 一旦出现就必须阻断 handoff、拒绝 restored 并进入 `re-entry / reopen liability` drill。
@@ -36,7 +36,7 @@
 
 而是：
 
-- authority、single-source、resume lineage、writeback、anti-zombie 与 reservation 仍围绕同一个结构真相面正式宣布：现在可以无人继续盯防，同时仍保留合法 `re-entry / reopen` 责任边界
+- authority、single-source、resume lineage、event stream / state writeback、stale worldview、ghost capability、anti-zombie 与 reservation 仍围绕同一个结构真相面正式宣布：现在可以无人继续盯防，同时仍保留合法 `re-entry / reopen` 责任边界
 
 所以这层 playbook 最先要看的不是：
 
@@ -47,8 +47,10 @@
 1. 当前 recorrection object 是否真的仍被唯一 authority object 支撑。
 2. 当前 `single-source reseal` 是否真的 seal，而不是只剩更整洁的目录叙事。
 3. 当前 `resume lineage reproof` 与 `writeback custody rebinding` 是否仍经过唯一主路径，而不是 telemetry 与 sidecar 旁路。
-4. 当前 `anti-zombie evidence restitution` 是否真的让 later 团队无需作者口述即可消费同一结构真相。
-5. 当前 `reservation liability rebinding` 是否仍围绕同一个 recovery boundary，而不是围绕“以后再试一次”。
+4. 当前 `event stream / state writeback` 是否仍严格分层，freshness gate 是否先于 continuity 生效。
+5. 当前 `anti-zombie evidence restitution` 是否真的让 later 团队无需作者口述即可消费同一结构真相。
+6. 当前 `stale worldview` 与 `ghost capability` 是否仍被正式驱逐。
+7. 当前 `reservation liability rebinding` 是否仍围绕同一个 recovery boundary，而不是围绕“以后再试一次”。
 
 ## 2. 共享 recorrection card 最小字段
 
@@ -61,17 +63,21 @@
 5. `dependency_seam_status`
 6. `resume_lineage_ref`
 7. `writeback_primary_path`
-8. `anti_zombie_evidence_ref`
-9. `archive_truth_ref`
-10. `reopen_reservation_boundary`
-11. `reservation_owner`
-12. `reject_verdict`
-13. `verdict_reason`
+8. `event_stream_writeback_split`
+9. `freshness_gate_attested`
+10. `stale_worldview_evidence`
+11. `ghost_capability_eviction_state`
+12. `anti_zombie_evidence_ref`
+13. `archive_truth_ref`
+14. `reopen_reservation_boundary`
+15. `reservation_owner`
+16. `reject_verdict`
+17. `verdict_reason`
 
 四类消费者的分工应固定为：
 
 1. 宿主看 authority object 与 writeback 主路径是否仍唯一。
-2. CI 看 single-source、resume 顺序、generation 与 anti-zombie 证据是否完整。
+2. CI 看 single-source、resume 顺序、generation、event-stream-vs-state-writeback、freshness gate 与 anti-zombie 证据是否完整。
 3. 评审看 pointer、recovery asset 与 live truth 是否仍被清楚分层。
 4. 交接看 later 团队能否围绕同一 authority state 安全接手与 reopen。
 
@@ -88,6 +94,7 @@
 1. 当前 query、task、session 或 remote worker 是否仍只有唯一 authority object。
 2. breadcrumb、pointer 与 UI heuristic 是否仍没有充当真相面。
 3. generation / status transition 是否仍能阻止 stale path 回写。
+4. 不同 host / consumer 是否仍只持有不同宽度的 authority projection，而不是各自宣布 present truth。
 
 ### 3.3 再验 `single-source reseal`
 
@@ -104,6 +111,7 @@
 1. restore、hydrate、adopt 与 clear stale 是否仍按正式顺序被复证。
 2. `late_resume_detected`、`generation_regression_detected` 与 stale adoption 是否仍被禁止。
 3. terminal object 是否仍不会被 stale snapshot 或 late response 复活。
+4. `freshness_gate_attested` 是否仍先于 continuity 生效。
 
 ### 3.5 再验 `writeback custody rebinding`
 
@@ -111,7 +119,9 @@
 
 1. `writeback_primary_path` 是否仍是唯一主 chokepoint。
 2. `worker_status`、`external_metadata` 与 merge / delete 语义是否仍受控。
-3. 是否仍不存在绕过主写点的 side write。
+3. `event_stream_writeback_split` 是否仍严格成立。
+4. 是否仍不存在绕过主写点的 side write。
+5. `stale_worldview_evidence` 是否仍证明 validator、adapter 与 host consumer 没有站在 stale worldview 上继续签发允许。
 
 ### 3.6 再验 `anti-zombie evidence restitution`
 
@@ -119,7 +129,8 @@
 
 1. `anti_zombie_evidence_ref` 是否仍有正式复证。
 2. stale writer、duplicate control response 与 orphan state 是否仍被显式清退。
-3. 当前 reproof 是否仍能阻止旧 generation 复活。
+3. `ghost_capability_eviction_state` 是否仍证明 dead capability token 已经被 clear / evict / unpin。
+4. 当前 reproof 是否仍能阻止旧 generation 复活。
 
 ### 3.7 最后验 `reservation liability rebinding` 与 `reject_verdict`
 
@@ -147,7 +158,9 @@
 5. `writeback_custody_missing`
 6. `anti_zombie_evidence_missing`
 7. `reservation_liability_unbound`
-8. `reopen_required`
+8. `stale_worldview_unchecked`
+9. `ghost_capability_not_evicted`
+10. `reopen_required`
 
 ## 5. re-entry 与 reopen liability 处理顺序
 
@@ -156,7 +169,7 @@
 1. 先停止新的 reconnect、adopt 与 remote resume，不再让旧资产继续写回。
 2. 先把 verdict 降级为 `hard_reject`、`reentry_required` 或 `reopen_required`。
 3. 先把 pointer、sidecar 与 UI 投影降回 breadcrumb，不再让它们充当 authority。
-4. 先回到上一个仍可验证的 authority object 与 writeback path，补完 seam audit、lineage reproof 与 anti-zombie evidence。
+4. 先回到上一个仍可验证的 authority object、writeback path 与 fresh worldview，补完 seam audit、lineage reproof 与 anti-zombie evidence。
 5. 如果根因落在 recorrection protocol 本身，就回跳 `../api/77` 做对象级修正。
 
 ## 6. 最小 drill 集
@@ -169,6 +182,8 @@
 4. `writeback_custody_rebind_replay`
 5. `anti_zombie_evidence_restitution_replay`
 6. `reopen_liability_boundary_replay`
+7. `stale_worldview_replay`
+8. `ghost_capability_eviction_replay`
 
 ## 7. 复盘记录最少字段
 
@@ -180,11 +195,14 @@
 4. `single_source_refs`
 5. `resume_lineage_ref`
 6. `writeback_primary_path`
-7. `anti_zombie_evidence_ref`
-8. `archive_truth_ref`
-9. `reopen_reservation_boundary`
-10. `reject_verdict`
-11. `verdict_reason`
+7. `event_stream_writeback_split`
+8. `stale_worldview_evidence`
+9. `ghost_capability_eviction_state`
+10. `anti_zombie_evidence_ref`
+11. `archive_truth_ref`
+12. `reopen_reservation_boundary`
+13. `reject_verdict`
+14. `verdict_reason`
 
 ## 8. 苏格拉底式检查清单
 
@@ -193,9 +211,11 @@
 1. 我现在修回的是唯一 authority object，还是只是把入口感重新包装了一遍。
 2. 我现在保住的是 `single-source + seam audit`，还是更漂亮的目录讲法。
 3. 我现在保住的是 `resume lineage` 与 `writeback custody`，还是几次幸运 reconnect 的结果。
-4. 我现在归还的是 anti-zombie 证据，还是一段更会解释的 archive prose。
-5. later 团队明天如果必须 reopen，依赖的是正式 boundary，还是一句“以后再试一次”。
+4. `event stream` 与 `state writeback` 有没有被重新混写。
+5. validator、adapter 与 host consumer 现在看到的是 fresh worldview，还是 stale worldview。
+6. 我现在归还的是 anti-zombie 证据，还是一段更会解释的 archive prose。
+7. later 团队明天如果必须 reopen，依赖的是正式 boundary，还是一句“以后再试一次”。
 
 ## 9. 一句话总结
 
-真正成熟的结构宿主修复稳态纠偏再纠偏执行，不是把健康感运行得更像制度，而是持续证明 authority、single-source、resume、writeback、anti-zombie 与 reopen liability 仍围绕同一个结构真相面说真话。
+真正成熟的结构宿主修复稳态纠偏再纠偏执行，不是把健康感运行得更像制度，而是持续证明 authority、single-source、resume、event stream / state writeback、stale worldview、ghost capability、anti-zombie 与 reopen liability 仍围绕同一个结构真相面说真话。
