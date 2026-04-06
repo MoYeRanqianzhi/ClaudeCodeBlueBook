@@ -26,7 +26,7 @@
 - `claude-code-source-code/src/tools/PowerShellTool/pathValidation.ts:1515-1614`
 - `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:15-69`
 - `claude-code-source-code/src/services/mcp/utils.ts:171-200`
-- `../architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md`
+- `../architecture/84-权威面与反僵尸图谱：authority object、freshness gate、ghost capability与release shaping.md`
 - `../philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`
 
 这些锚点共同说明：

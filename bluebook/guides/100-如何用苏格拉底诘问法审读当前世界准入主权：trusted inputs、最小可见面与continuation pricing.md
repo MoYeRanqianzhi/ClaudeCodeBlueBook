@@ -21,7 +21,7 @@
 - `claude-code-source-code/src/utils/toolResultStorage.ts:740-860`
 - `claude-code-source-code/src/query/tokenBudget.ts:45-92`
 - `claude-code-source-code/src/services/remoteManagedSettings/index.ts:413-610`
-- `../architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`
+- `../architecture/83-反扩张治理流水线：governance key、typed ask、decision window与continuation pricing.md`
 - `../philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md`
 
 这些锚点共同说明：

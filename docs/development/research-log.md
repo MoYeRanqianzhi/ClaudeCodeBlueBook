@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮旧链接标签清理动作: 已继续更新 `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41`，把仍沿 `architecture/82-84` 旧文件名暴露出来的 `authority chain / trusted inputs / single-writer surfaces` 收回到 `message lineage / projection consumer / continuation qualification`、`governance key / decision window / continuation pricing` 与 `authority object / freshness gate / ghost capability`。
+- 本轮链接标签判断加固: 当正文和前门都已经换代后，最容易继续反向输送旧术语的就是引用标签与目录名残留；这批是在清这种“链接还在讲旧世界，正文已在讲新世界”的噪音。
 - 本轮审读模板去姿态词动作: 已继续更新 `guides/99 / 100 / 101`，把开头里残留的“继续压成一套模板 / 更长 Prompt 规范 / 设置页说明书 / 结构洁癖清单”这类写作姿态词，收回成更稳定的“审读问题序列 / 设置页导览 / 结构外观清单”表达。
 - 本轮模板判断加固: 当对象链已经对齐后，最会反向制造作者工作台气味的往往不是对象名，而是“我在继续压模板”“别把它写成说明书”这类写作姿态词；这批就是在清这种残留。
 - 本轮目录路由标签推进动作: 已继续更新 `casebooks/README`、`security/README` 与 `risk/README`，把目录层仍沿旧文件名暴露出来的 Prompt / 治理可见标签收回到当前对象链，避免读者在进入正文前又被旧 front words 拉回上一代语言。

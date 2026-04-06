@@ -32,7 +32,7 @@
 
 而是：
 
-- 如何确认 `message lineage`、`stable prefix boundary`、`protocol transcript`、`continuation qualification` 与接手连续性都还成立
+- 如何确认 `message lineage`、`section registry / dynamic boundary`、`protocol transcript`、`continuation qualification` 与接手连续性都还成立
 
 ## 2. 安全与省 token 的自我校准
 

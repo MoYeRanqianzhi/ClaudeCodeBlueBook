@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41` 现已继续把旧链接标签收口：
+  - Prompt 线当前连到 `architecture/82` 时，已不再先暴露 `authority chain`，而是优先暴露 `message lineage / projection consumer / protocol transcript / continuation qualification`。
+  - 治理线当前连到 `architecture/83` 时，已不再先暴露 `trusted inputs`，而是优先暴露 `governance key / typed ask / decision window / continuation pricing`。
+  - 结构线当前连到 `architecture/84` 时，已不再先暴露 `single-writer surfaces`，而是优先暴露 `authority object / freshness gate / ghost capability`。
+- 新的长期结论：
+  - 文档真正换代后，链接标签本身也要换代；否则读者会在点击前先被旧对象词重新定向。
+  - 目录结构和对象链优化走到后期，最值钱的工作经常不是再补正文，而是清掉这些仍在低声复述旧世界观的标签层噪音。
 - `guides/99 / 100 / 101` 现已继续把开头元话语去姿态化：
   - Prompt / 治理 / 结构三张苏格拉底模板当前都更明确被写成“审读问题序列”，而不是“继续压成的一套模板”。
   - `Prompt 规范 / 设置页说明书 / 结构洁癖清单` 这类写作姿态词已继续降级为更稳定的阅读对象表达。

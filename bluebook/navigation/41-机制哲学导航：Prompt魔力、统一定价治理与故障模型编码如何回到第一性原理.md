@@ -48,7 +48,7 @@
 适合在这些问题下阅读：
 
 - 为什么安全设计与省 token 设计看似不同，却总是落到同一治理控制面。
-- 为什么 `typed ask`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup` 必须被统一定价。
+- 为什么 `governance key`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup` 必须被统一定价。
 
 稳定阅读顺序：
 

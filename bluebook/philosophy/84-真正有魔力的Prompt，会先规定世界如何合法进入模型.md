@@ -18,7 +18,7 @@
 - `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
 - `claude-code-source-code/src/query/stopHooks.ts:84-214`
 - `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
-- `bluebook/architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md`
+- `bluebook/architecture/82-请求装配流水线：message lineage、projection consumer、protocol transcript、continuation qualification与cache-safe forks.md`
 
 ## 1. 先说结论
 
