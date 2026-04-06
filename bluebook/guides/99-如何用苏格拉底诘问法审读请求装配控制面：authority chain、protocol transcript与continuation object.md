@@ -1,6 +1,6 @@
 # 如何用苏格拉底诘问法审读请求装配控制面：message lineage、protocol transcript与continuation object
 
-这一章不再解释 Prompt 为什么强，而是把 `architecture/82` 与 `philosophy/84` 继续压成一套 builder-facing 审读模板。
+这一章不再解释 Prompt 为什么强，而是把 `architecture/82` 与 `philosophy/84` 沉成一套 builder-facing 审读问题序列。
 
 它主要回答五个问题：
 
@@ -8,7 +8,7 @@
 2. 怎样按固定顺序审读 `message lineage`、`projection consumer`、`section registry / dynamic boundary`、`protocol transcript`、`continuation object` 与 `continuation qualification`。
 3. 怎样判断一个 runtime 是否真的先把世界编译进模型，而不是先把世界描述给模型。
 4. 怎样识别那些看起来更聪明、实际更脆的坏改写。
-5. 怎样用苏格拉底式追问避免把这份模板重新写成一份更长的 Prompt 规范。
+5. 怎样用苏格拉底式追问避免把这些问题重新压扁成一份更长的 Prompt 规范。
 
 ## 0. 代表性源码锚点
 

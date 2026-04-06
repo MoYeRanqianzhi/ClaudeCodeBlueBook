@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `guides/99 / 100 / 101` 现已继续把开头元话语去姿态化：
+  - Prompt / 治理 / 结构三张苏格拉底模板当前都更明确被写成“审读问题序列”，而不是“继续压成的一套模板”。
+  - `Prompt 规范 / 设置页说明书 / 结构洁癖清单` 这类写作姿态词已继续降级为更稳定的阅读对象表达。
+- 新的长期结论：
+  - 当模板页的对象链已经换代后，最容易残留旧作者工作台气味的常常是开头元话语；这类词不会直接改错对象，却会持续把读者带回“作者正在加工模板”的阅读姿态。
+  - 深化设计内涵时，连“怎样介绍这套问题”也应稳定对象化，否则第一性原理会被模板加工口吻重新稀释。
 - `casebooks/README`、`security/README` 与 `risk/README` 现已继续把路由层可见标签收口：
   - `casebooks/README` 现已把 Prompt 长期验证反例入口从 `authority chain / compiled request card` 这类旧标签收回到 `lineage kernel / message lineage card / protocol truth`。
   - `security/README` 与 `risk/README` 现已把治理接入 / 验收 / 修复链入口从 `authority source / permission ledger / continuation gate / rollback object` 的旧标签收回到 `governance key / typed ask / decision window / continuation pricing / cleanup`。

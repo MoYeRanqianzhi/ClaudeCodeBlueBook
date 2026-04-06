@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `guides/99 / 100 / 101` 的开头元话语，把“继续压成一套模板 / 更长的 Prompt 规范 / 设置页说明书 / 结构洁癖清单”这类写作姿态词收回到更稳定的“审读问题序列 / 设置页导览 / 结构外观清单”表达
 - 继续更新 `casebooks/README`、`security/README` 与 `risk/README` 的路由层可见标签，把仍在暴露旧文件名术语的入口链收回到当前对象链，尤其是 Prompt 的 `message lineage / protocol truth / stable prefix` 与治理的 `governance key / typed ask / decision window / continuation pricing / cleanup`
 - 继续更新 `bluebook/README`、`guides/README` 与 `playbooks/README` 的目录职责前门，把根 README 固定为宪法前门，把目录 README 收窄成各自的稳定起点页，不再在目录首页展开桥接记忆与完整多跳链
 - 继续更新 `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41` 的苏格拉底审读前门，把 `authority chain / trusted inputs / single-writer / compiled request truth` 这组旧 front words 收回到 `message lineage / projection consumer / continuation qualification`、`governance key / decision window / durable-vs-transient cleanup` 与 `authority object / freshness gate / ghost capability`

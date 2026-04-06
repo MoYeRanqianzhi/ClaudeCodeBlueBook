@@ -1,6 +1,6 @@
 # 如何用苏格拉底诘问法审读当前世界准入主权：governance key、decision window与continuation pricing
 
-这一章不再解释安全与省 Token 为什么同构，而是把 `architecture/83` 与 `philosophy/85` 继续压成一套 builder-facing 审读模板。
+这一章不再解释安全与省 Token 为什么同构，而是把 `architecture/83` 与 `philosophy/85` 沉成一套 builder-facing 审读问题序列。
 
 它主要回答五个问题：
 
@@ -8,7 +8,7 @@
 2. 怎样按固定顺序审读 `governance key`、`externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup`。
 3. 怎样判断一个 runtime 是否真的把“当前世界的准入主权”保留在 runtime，而不是外包给模型或低信任输入。
 4. 怎样识别那些看起来更保守、实际更脆的坏改写。
-5. 怎样用苏格拉底式追问避免把这份模板重新写成设置页说明书。
+5. 怎样用苏格拉底式追问避免把这些问题重新写成一张设置页导览。
 
 ## 0. 代表性源码锚点
 
