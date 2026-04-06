@@ -1,10 +1,10 @@
-# Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：compiled request truth、shared reject semantics 与 long-term reopen liability
+# Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：message lineage、shared reject semantics、continuation qualification与long-term reopen liability
 
 这一章回答五个问题：
 
-1. Claude Code 当前到底通过哪些正式对象，让宿主、CI、评审与交接在 Prompt refinement correction refinement fixed order 已被钉死之后，继续消费同一个 Prompt repair truth，而不是退回更顺的 transcript、handoff prose 与 worker 研究总结。
+1. Claude Code 当前到底通过哪些正式对象，让宿主、CI、评审与交接在 Prompt refinement correction refinement fixed order 已被钉死之后，继续消费同一个 `message lineage -> protocol transcript -> shared reject semantics -> continuation qualification` repair truth，而不是退回更顺的 transcript、handoff prose 与 worker 研究总结。
 2. 哪些字段属于必须共享的 protocol object，哪些属于共同 `hard_reject / reentry / reopen` 语义，哪些仍不应被绑定成公共 ABI。
-3. 为什么 Claude Code 的 Prompt 魔力本质上来自同一条 `authority chain -> compiled request truth -> registry/protocol truth -> shared reject semantics -> lawful forgetting / continuation qualification -> long-horizon reopen liability` 协议，而不是更会写的 repair prose。
+3. 为什么 Claude Code 的 Prompt 魔力本质上来自同一条 `message lineage -> role-contract custody -> protocol transcript -> shared reject semantics -> lawful forgetting / continuation qualification -> long-horizon reopen liability` 协议，而不是更会写的 repair prose。
 4. 宿主开发者该按什么顺序消费这套 Prompt refinement correction refinement 精修协议。
 5. 哪些现象一旦出现，应被直接升级为 `hard_reject`、`protocol_truth_reseal_required`、`shared_reject_rebind_required`、`reentry_required` 或 `reopen_required`，而不是继续宣称 Prompt 魔力仍然成立。
 
@@ -33,9 +33,9 @@ Claude Code 当前并没有公开一份名为：
 但 Prompt refinement correction refinement fixed order 已经能围绕八类正式对象稳定成立：
 
 1. `repair_session_object`
-2. `repair_authority_chain`
-3. `compiled_request_truth_surface`
-4. `registry_protocol_truth_surface`
+2. `role_contract_custody`
+3. `message_lineage_surface`
+4. `protocol_transcript_surface`
 5. `shared_reject_semantics_packet`
 6. `forgetting_continuation_covenant`
 7. `cross_consumer_repair_attestation`
@@ -49,22 +49,22 @@ Claude Code 当前并没有公开一份名为：
 
 而是：
 
-- 围绕这八类对象继续消费同一个 authority、同一个 compiled request truth、同一个 registry/protocol truth、同一条 shared reject semantics、同一个 lawful forgetting / continuation covenant、同一份 repair attestation 与同一个 threshold liability
+- 围绕这八类对象继续消费同一份 role contract、同一条 message lineage、同一条 protocol transcript、同一条 shared reject semantics、同一个 lawful forgetting / continuation covenant、同一份 repair attestation 与同一个 threshold liability
 
 ## 2. 第一性原理
 
 Prompt 世界真正成熟，不是把“解释更完整”写得更体面，而是：
 
-1. `authority` 决定谁有资格定义模型世界。
-2. `compiled request truth` 决定 later 团队继承的是不是同一个 request 对象。
-3. `registry/protocol truth` 决定模型实际消费的是不是同一条运行时真相链，而不是显示层历史。
+1. `role contract` 决定谁有资格定义模型世界。
+2. `message lineage` 决定 later 团队继承的是不是同一个 request 对象。
+3. `protocol transcript` 决定模型实际消费的是不是同一条运行时真相链，而不是显示层历史。
 4. `shared reject semantics` 决定宿主、CI、评审与交接是否真的在围绕同一个编译对象说同一种拒收语言。
 5. `lawful forgetting / continuation qualification` 决定 compact 与 continue 是不是仍然合法，而不是只是看起来还能继续。
 6. `liability + threshold` 决定未来何时必须重入或 reopen。
 
 所以 Prompt 魔力不是两三个“写得好的提示词技巧”，而是同一条协议对象链在跨消费者、跨 compact、跨 handoff 之后仍然成立。
 
-## 3. repair session object 与 authority chain
+## 3. repair session object 与 role-contract custody
 
 Prompt 宿主应至少围绕下面对象消费 refinement correction refinement 真相：
 
@@ -78,7 +78,7 @@ Prompt 宿主应至少围绕下面对象消费 refinement correction refinement 
 6. `shared_consumer_surface`
 7. `repair_started_at`
 
-### 3.2 repair authority chain
+### 3.2 role-contract custody
 
 1. `override_system_prompt_present`
 2. `coordinator_mode_active`

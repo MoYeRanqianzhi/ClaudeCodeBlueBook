@@ -1,10 +1,10 @@
-# 治理宿主修复稳态纠偏再纠偏改写协议：authority source restitution、ledger reseal、decision window refreeze、continuation pricing rebinding、capability liability recustody与threshold rebinding
+# 治理宿主修复稳态纠偏再纠偏改写协议：governance key restitution、typed ask ledger reseal、decision window refreeze、continuation pricing rebinding、durable-transient cleanup recustody与threshold rebinding
 
 这一章回答五个问题：
 
-1. Claude Code 当前到底通过哪些正式对象让宿主、SDK、CI、评审与交接系统在治理 steady-state recorrection rewrite 之后消费同一个修正对象、拒收升级语义与长期 reopen 责任。
-2. 哪些字段属于必须消费的治理 steady-state recorrection rewrite object，哪些属于 verdict 语义，哪些仍然不应被绑定成公共 ABI。
-3. 为什么治理稳态再纠偏改写协议不应退回 mode 面板、usage dashboard、保守建议与默认继续。
+1. Claude Code 当前到底通过哪些正式对象让宿主、SDK、CI、评审与交接系统在治理 steady-state recorrection rewrite 之后继续消费同一个 `governance key`、同一条 `typed ask ledger -> decision window -> continuation pricing -> durable-transient cleanup` 更正对象、拒收升级语义与长期 reopen 责任。
+2. 哪些字段属于必须消费的治理 steady-state recorrection rewrite object，哪些字段分别属于 `typed ask ledger`、`decision window`、`continuation pricing` 与 `durable-transient cleanup` verdict，哪些仍然不应被绑定成公共 ABI。
+3. 为什么治理稳态再纠偏改写协议不应退回 authority 投影、mode 面板、usage dashboard、保守建议与默认继续。
 4. 宿主开发者该按什么顺序消费这套治理 steady-state recorrection rewrite 规则面。
 5. 哪些现象一旦出现应被直接升级为 `hard_reject`、`liability_hold`、`reentry_required` 或 `reopen_required`，而不是继续宣布 capability 仍然安全。
 
@@ -37,12 +37,12 @@ Claude Code 当前并没有公开一份名为：
 但治理宿主修复稳态再纠偏改写实际上已经能围绕九类正式对象稳定成立：
 
 1. `rewrite_session_object`
-2. `false_authority_demotion_set`
-3. `authority_source_restitution`
-4. `ledger_reseal`
+2. `false_governance_projection_demotion_set`
+3. `governance_key_restitution`
+4. `typed_ask_ledger_reseal`
 5. `decision_window_refreeze`
 6. `continuation_pricing_rebinding`
-7. `capability_liability_recustody`
+7. `durable_transient_cleanup_recustody`
 8. `threshold_rebinding`
 9. `rewrite_verdict`
 
@@ -54,11 +54,11 @@ Claude Code 当前并没有公开一份名为：
 
 而是：
 
-- 围绕这九类对象消费统一定价控制面怎样把 recorrection execution distortion 重新拉回同一个 authority、同一个 ledger、同一个 decision window、同一个 continuation pricing covenant、同一个 capability liability 与同一个 reopen threshold
+- 围绕这九类对象消费统一定价控制面怎样把 recorrection execution distortion 重新拉回同一个 governance key、同一份 typed ask ledger、同一个 decision window、同一个 continuation pricing covenant、同一份 durable/transient cleanup 责任与同一个 reopen threshold
 
 这层真正统一的不是两套不同能力，而是同一条：
 
-- `authority -> ledger -> window -> pricing -> capability liability -> threshold`
+- `governance key -> typed ask ledger -> decision window -> continuation pricing -> durable/transient cleanup -> threshold`
 
 安全设计回答：
 
@@ -74,16 +74,16 @@ Claude Code 当前并没有公开一份名为：
 
 治理世界真正成熟，不是把“保守一点”写得更体面，而是：
 
-1. `authority` 决定谁有资格定义扩张。
-2. `ledger` 决定哪些决策已被正式记账。
-3. `window` 决定当前还能承受什么上下文与动作。
-4. `pricing` 决定继续的代价是否已被显式结算。
-5. `capability liability` 决定继续放开的责任归谁。
+1. `governance key` 决定谁有资格定义扩张。
+2. `typed ask ledger` 决定哪些决策已被正式记账。
+3. `decision window` 决定当前还能承受什么上下文与动作。
+4. `continuation pricing` 决定继续的代价是否已被显式结算。
+5. `durable-transient cleanup` 决定继续放开的责任归谁、旧主权何时必须被清退。
 6. `threshold` 决定未来何时必须回跳、重入或 reopen。
 
 所以安全设计与省 token 设计不是两套平行主题，而是同一条拒绝免费扩张的控制链。
 
-## 3. rewrite session object 与 false authority demotion set
+## 3. rewrite session object 与 false governance projection demotion set
 
 宿主应至少围绕下面对象消费治理 rewrite 真相：
 

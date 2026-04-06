@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/79 / 90 / 91 / 93` 现已把更深一层 rewrite / refinement protocol 页继续收口：
+  - `79 / 91` 现已把治理深协议可见主语从 `authority source / authority chain` 收回到 `governance key / typed ask ledger / decision window / continuation pricing`。
+  - `90 / 93` 现已把 Prompt 深协议可见主语从 `authority chain / compiled request truth` 收回到 `message lineage / role-contract custody / protocol transcript / continuation qualification`。
+- 新的长期结论：
+  - 深协议页真正危险的地方，不只在 H1，还在前五问、首段对象清单与第一性原理第一跳；只要这些开头对象还在发旧主语，later maintainer 就会在正文之前先被拉回上一代协议语言。
+  - Prompt 深协议更稳的 visible root 不再是 `compiled request truth` 或 `authority chain`，而是 `message lineage / role-contract custody / protocol transcript / continuation qualification`。
+  - 治理深协议更稳的 visible root 不再是 `authority source` 或抽象 `authority`，而是 `governance key / typed ask ledger / decision window / continuation pricing / durable-transient cleanup`。
 - `api/81 / 82 / 87 / 88` 现已把更深一层协议标题债继续收口：
   - `81 / 87` 现已把 Prompt 深协议可见主语从 `compiled request truth / authority chain` 收回到 `message lineage`。
   - `82 / 88` 现已把治理深协议可见主语从 `authority source restitution / authority chain` 收回到 `governance key / typed ask ledger`。
