@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新《功能全景与API支持》《能力全集、公开度与成熟度矩阵》《能力平面、公开度与宿主支持矩阵》，把长清单与对象表继续降成补证层，正文前门固定为 `existence / implementation visibility / current admission / product promise` 四层矩阵，标签只保留为结果写法
 - 继续更新《公开能力与隐藏能力》《功能全景与API支持》《能力全集、公开度与成熟度矩阵》《能力平面、公开度与宿主支持矩阵》，把能力前门继续从“压缩标签”拉回 `existence / implementation visibility / current admission / product promise` 四层判断
 - 继续更新《导读》《源码结构地图》《功能全景与API支持》《源码目录级能力地图：commands、tools、services、状态与宿主平面》，把“五层拆解法 / 运行链路导览 / 目录级能力大全”继续降成辅助检索与热点定位材料，不再让它们抢走三条高阶判断的主入口地位
 - 继续更新《源码结构地图》《公开能力与隐藏能力》《功能全景与API支持》《能力全集、公开度与成熟度矩阵》《能力平面、公开度与宿主支持矩阵》《能力、API与治理检索图》，把“能力前门 + 结构地图”进一步从功能表/目录树读法压成 `truth layer / existence / admission / promise / temporal risk` 的判断协议
