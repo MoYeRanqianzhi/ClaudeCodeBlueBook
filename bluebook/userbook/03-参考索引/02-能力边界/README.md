@@ -64,3 +64,4 @@
 - [62-Remote toolPermissionContext、permissionMode restore 与 local tool-plane authority 索引.md](./62-Remote%20toolPermissionContext、permissionMode%20restore%20与%20local%20tool-plane%20authority%20索引.md)
 - [63-Remote can_use_tool、toolUseConfirmQueue 与 local approval shell 索引.md](./63-Remote%20can_use_tool、toolUseConfirmQueue%20与%20local%20approval%20shell%20索引.md)
 - [64-Remote approval shell topology：remote session、direct connect、ssh session 与 bridge relay 索引.md](./64-Remote%20approval%20shell%20topology：remote%20session、direct%20connect、ssh%20session%20与%20bridge%20relay%20索引.md)
+- [65-Local modal shell family、toolUseConfirmQueue、promptQueue 与 worker、sandbox、elicitation 容器索引.md](./65-Local%20modal%20shell%20family、toolUseConfirmQueue、promptQueue%20与%20worker、sandbox、elicitation%20容器索引.md)
