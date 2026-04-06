@@ -2,7 +2,7 @@
 
 ## 1. 这一页服务于什么
 
-这一页服务于 [179-安全载体家族step-up重授权治理与强请求续打治理分层：为什么artifact-family cleanup step-up reauthorization-governor signer不能越级冒充artifact-family cleanup stronger-request continuation-governor signer](../179-安全载体家族step-up重授权治理与强请求续打治理分层：为什么artifact-family%20cleanup%20step-up%20reauthorization-governor%20signer不能越级冒充artifact-family%20cleanup%20stronger-request%20continuation-governor%20signer.md)。
+这一页服务于 [179-安全载体家族step-up重授权治理与强请求续打治理分层：为什么artifact-family cleanup step-up reauthorization-governor signer不能越级冒充artifact-family cleanup stronger-request continuation-governor signer](../179-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8Fstep-up%E9%87%8D%E6%8E%88%E6%9D%83%E6%B2%BB%E7%90%86%E4%B8%8E%E5%BC%BA%E8%AF%B7%E6%B1%82%E7%BB%AD%E6%89%93%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88artifact-family%20cleanup%20step-up%20reauthorization-governor%20signer%E4%B8%8D%E8%83%BD%E8%B6%8A%E7%BA%A7%E5%86%92%E5%85%85artifact-family%20cleanup%20stronger-request%20continuation-governor%20signer.md)。
 
 如果 `179` 的长文解释的是：
 

@@ -197,9 +197,9 @@
 
 如果你要在团队中真正推行统一 rollout ABI，建议按下面顺序做：
 
-1. 先用 [../playbooks/12](../playbooks/12-统一Rollout%20ABI模板：对象、Diff、阶段、观测与回退记录.md) 固定共用骨架。
+1. 先用 [../playbooks/12](../playbooks/12-%E7%BB%9F%E4%B8%80Rollout%20ABI%E6%A8%A1%E6%9D%BF%EF%BC%9A%E5%AF%B9%E8%B1%A1%E3%80%81Diff%E3%80%81%E9%98%B6%E6%AE%B5%E3%80%81%E8%A7%82%E6%B5%8B%E4%B8%8E%E5%9B%9E%E9%80%80%E8%AE%B0%E5%BD%95.md) 固定共用骨架。
 2. 再用 [../playbooks/13](../playbooks/13-Rollout证据卡样例库：Prompt、治理与结构三类最小填写示例.md) 跑一次最小卡片。
-3. 再把宿主字段映射到 [../api/35](../api/35-Rollout证据消费API手册：worker_status、external_metadata、Context%20Usage与回退对象边界.md) 的正式消费面。
+3. 再把宿主字段映射到 [../api/35](../api/35-Rollout%E8%AF%81%E6%8D%AE%E6%B6%88%E8%B4%B9API%E6%89%8B%E5%86%8C%EF%BC%9Aworker_status%E3%80%81external_metadata%E3%80%81Context%20Usage%E4%B8%8E%E5%9B%9E%E9%80%80%E5%AF%B9%E8%B1%A1%E8%BE%B9%E7%95%8C.md) 的正式消费面。
 4. 最后再用 [../architecture/76](../architecture/76-升级证据真相面：状态写回、可观测Diff、决策窗口与回退对象.md) 校准对象边界、决策窗口与回退边界。
 
 ## 8. 统一消费记录卡

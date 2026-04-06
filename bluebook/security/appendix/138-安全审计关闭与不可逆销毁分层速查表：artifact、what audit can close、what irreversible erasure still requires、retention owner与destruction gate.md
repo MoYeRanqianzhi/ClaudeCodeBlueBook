@@ -2,7 +2,7 @@
 
 ## 1. 这一页服务于什么
 
-这一页服务于 [154-安全审计关闭与不可逆销毁分层：为什么audit-close signer不能越级冒充irreversible-erasure signer](../154-安全审计关闭与不可逆销毁分层：为什么audit-close%20signer不能越级冒充irreversible-erasure%20signer.md)。
+这一页服务于 [154-安全审计关闭与不可逆销毁分层：为什么audit-close signer不能越级冒充irreversible-erasure signer](../154-%E5%AE%89%E5%85%A8%E5%AE%A1%E8%AE%A1%E5%85%B3%E9%97%AD%E4%B8%8E%E4%B8%8D%E5%8F%AF%E9%80%86%E9%94%80%E6%AF%81%E5%88%86%E5%B1%82%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88audit-close%20signer%E4%B8%8D%E8%83%BD%E8%B6%8A%E7%BA%A7%E5%86%92%E5%85%85irreversible-erasure%20signer.md)。
 
 如果 `154` 的长文解释的是：
 

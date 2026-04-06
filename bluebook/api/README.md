@@ -39,7 +39,7 @@
 - [21-提示词控制、知识注入与记忆API手册](21-提示词控制、知识注入与记忆API手册.md)
 - [23-能力平面、公开度与宿主支持矩阵](23-能力平面、公开度与宿主支持矩阵.md)
 - [31-失败语义、取消请求与孤儿修复API手册](31-失败语义、取消请求与孤儿修复API手册.md)
-- [46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口](<46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md>)
+- [46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口](46-services%20%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%20Atlas%EF%BC%9AAPI%E3%80%81Compact%E3%80%81Memory%E3%80%81MCP%E3%80%81LSP%20%E4%B8%8E%20Observability%20%E5%AD%90%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%9D%83%E5%A8%81%E5%85%A5%E5%8F%A3.md)
 
 ## 适合谁先读
 

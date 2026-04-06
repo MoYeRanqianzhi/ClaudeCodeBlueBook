@@ -2,7 +2,7 @@
 
 ## 1. 这一页服务于什么
 
-这一页服务于 [176-安全载体家族重新投影治理与重新担保治理分层：为什么artifact-family cleanup reprojection-governor signer不能越级冒充artifact-family cleanup reassurance-governor signer](../176-安全载体家族重新投影治理与重新担保治理分层：为什么artifact-family%20cleanup%20reprojection-governor%20signer不能越级冒充artifact-family%20cleanup%20reassurance-governor%20signer.md)。
+这一页服务于 [176-安全载体家族重新投影治理与重新担保治理分层：为什么artifact-family cleanup reprojection-governor signer不能越级冒充artifact-family cleanup reassurance-governor signer](../176-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E9%87%8D%E6%96%B0%E6%8A%95%E5%BD%B1%E6%B2%BB%E7%90%86%E4%B8%8E%E9%87%8D%E6%96%B0%E6%8B%85%E4%BF%9D%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88artifact-family%20cleanup%20reprojection-governor%20signer%E4%B8%8D%E8%83%BD%E8%B6%8A%E7%BA%A7%E5%86%92%E5%85%85artifact-family%20cleanup%20reassurance-governor%20signer.md)。
 
 如果 `176` 的长文解释的是：
 

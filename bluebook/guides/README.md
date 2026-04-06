@@ -19,7 +19,7 @@
   - 失败信号：只会复述功能，却答不出目标、预算、承载体、边界与回写。
 - 如果你只先判断“怎样把协作与承载体用对”，从 [08-如何根据预算、阻塞与风险选择session、task、worktree与compact](08-如何根据预算、阻塞与风险选择session、task、worktree与compact.md) 进入。
   - 失败信号：把 session、task、worktree 当成可互换容器，而不是风险和恢复条件不同的正式对象。
-- 如果你只先判断“请求装配控制面怎样落成模板”，从 [99-如何用苏格拉底诘问法审读请求装配控制面：world entry / request assembly / six-stage assembly chain](99-如何用苏格拉底诘问法审读请求装配控制面：authority%20chain%E3%80%81protocol%20transcript%E4%B8%8Econtinuation%20object.md) 进入。
+- 如果你只先判断“请求装配控制面怎样落成模板”，从 [99-如何用苏格拉底诘问法审读请求装配控制面：world entry / request assembly / six-stage assembly chain](99-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BB%E8%AF%B7%E6%B1%82%E8%A3%85%E9%85%8D%E6%8E%A7%E5%88%B6%E9%9D%A2%EF%BC%9Aauthority%20chain%E3%80%81protocol%20transcript%E4%B8%8Econtinuation%20object.md) 进入。
   - 失败信号：还在用更强 prompt 这种结果词替代 `world entry / request assembly / six-stage assembly chain` 的对象链判断。
 - 如果你只先判断“当前世界准入主权怎样落成模板”，从 [100-如何用苏格拉底诘问法审读当前世界准入主权：governance key、externalized truth chain、typed ask、decision window 与 continuation pricing](100-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BB%E5%BD%93%E5%89%8D%E4%B8%96%E7%95%8C%E5%87%86%E5%85%A5%E4%B8%BB%E6%9D%83%EF%BC%9Atrusted%20inputs%E3%80%81%E6%9C%80%E5%B0%8F%E5%8F%AF%E8%A7%81%E9%9D%A2%E4%B8%8Econtinuation%20pricing.md) 进入。
   - 失败信号：还在用更严权限、更多模式、token 百分比或 `Context Usage` 成本面板代替治理主键与 decision window 判断。

@@ -2,7 +2,7 @@
 
 ## 1. 这一页服务于什么
 
-这一页服务于 [143-安全偏斜处置算子：为什么Claude Code不把所有版本问题都交给升级，而是按nudge、retag、split-key、no-op、kill-switch、block、reject与fence分层治理](../143-安全偏斜处置算子：为什么Claude%20Code不把所有版本问题都交给升级，而是按nudge、retag、split-key、no-op、kill-switch、block、reject与fence分层治理.md)。
+这一页服务于 [143-安全偏斜处置算子：为什么Claude Code不把所有版本问题都交给升级，而是按nudge、retag、split-key、no-op、kill-switch、block、reject与fence分层治理](../143-%E5%AE%89%E5%85%A8%E5%81%8F%E6%96%9C%E5%A4%84%E7%BD%AE%E7%AE%97%E5%AD%90%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88Claude%20Code%E4%B8%8D%E6%8A%8A%E6%89%80%E6%9C%89%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98%E9%83%BD%E4%BA%A4%E7%BB%99%E5%8D%87%E7%BA%A7%EF%BC%8C%E8%80%8C%E6%98%AF%E6%8C%89nudge%E3%80%81retag%E3%80%81split-key%E3%80%81no-op%E3%80%81kill-switch%E3%80%81block%E3%80%81reject%E4%B8%8Efence%E5%88%86%E5%B1%82%E6%B2%BB%E7%90%86.md)。
 
 如果 `143` 的长文解释的是：
 

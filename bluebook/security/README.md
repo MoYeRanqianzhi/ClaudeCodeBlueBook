@@ -64,10 +64,10 @@
 ## 推荐入口
 
 - [00-研究方法与可信边界](00-研究方法与可信边界.md)
-- [01-安全总论：Claude Code 不是单点沙箱，而是分层安全控制面](01-安全总论：Claude%20Code%20不是单点沙箱，而是分层安全控制面.md)
-- [14-安全控制面总图：从 trust 到 entitlement 的全链结构图谱](14-安全控制面总图：从%20trust%20到%20entitlement%20的全链结构图谱.md)
+- [01-安全总论：Claude Code 不是单点沙箱，而是分层安全控制面](01-%E5%AE%89%E5%85%A8%E6%80%BB%E8%AE%BA%EF%BC%9AClaude%20Code%20%E4%B8%8D%E6%98%AF%E5%8D%95%E7%82%B9%E6%B2%99%E7%AE%B1%EF%BC%8C%E8%80%8C%E6%98%AF%E5%88%86%E5%B1%82%E5%AE%89%E5%85%A8%E6%8E%A7%E5%88%B6%E9%9D%A2.md)
+- [14-安全控制面总图：从 trust 到 entitlement 的全链结构图谱](14-%E5%AE%89%E5%85%A8%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%BB%8E%20trust%20%E5%88%B0%20entitlement%20%E7%9A%84%E5%85%A8%E9%93%BE%E7%BB%93%E6%9E%84%E5%9B%BE%E8%B0%B1.md)
 - [116-安全工程迁移路线图：为什么这份研究版源码若要走向可持续验证系统，必须先固化边界，再分阶段迁移而不能一次性重构](116-安全工程迁移路线图：为什么这份研究版源码若要走向可持续验证系统，必须先固化边界，再分阶段迁移而不能一次性重构.md)
-- [147-安全回执签字权：为什么receipt只能由持有pending ledger、schema context与lifecycle closure的signer签发](147-安全回执签字权：为什么receipt只能由持有pending%20ledger、schema%20context与lifecycle%20closure的signer签发.md)
+- [147-安全回执签字权：为什么receipt只能由持有pending ledger、schema context与lifecycle closure的signer签发](147-%E5%AE%89%E5%85%A8%E5%9B%9E%E6%89%A7%E7%AD%BE%E5%AD%97%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88receipt%E5%8F%AA%E8%83%BD%E7%94%B1%E6%8C%81%E6%9C%89pending%20ledger%E3%80%81schema%20context%E4%B8%8Elifecycle%20closure%E7%9A%84signer%E7%AD%BE%E5%8F%91.md)
 - [229-安全载体家族强请求清理迁移治理与强请求清理退役治理分层：为什么artifact-family cleanup stronger-request cleanup-migration-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-sunset-governor signer](229-安全载体家族强请求清理迁移治理与强请求清理退役治理分层.md)
 - [230-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层：为什么artifact-family cleanup stronger-request cleanup-sunset-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-tombstone-governor signer](230-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层.md)
 - [231-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层：为什么artifact-family cleanup stronger-request cleanup-tombstone-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-resurrection-governor signer](231-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层.md)

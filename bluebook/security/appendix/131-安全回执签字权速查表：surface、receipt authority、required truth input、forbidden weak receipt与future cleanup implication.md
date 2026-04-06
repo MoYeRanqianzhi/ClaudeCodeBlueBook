@@ -2,7 +2,7 @@
 
 ## 1. 这一页服务于什么
 
-这一页服务于 [147-安全回执签字权：为什么receipt只能由持有pending ledger、schema context与lifecycle closure的signer签发](../147-安全回执签字权：为什么receipt只能由持有pending%20ledger、schema%20context与lifecycle%20closure的signer签发.md)。
+这一页服务于 [147-安全回执签字权：为什么receipt只能由持有pending ledger、schema context与lifecycle closure的signer签发](../147-%E5%AE%89%E5%85%A8%E5%9B%9E%E6%89%A7%E7%AD%BE%E5%AD%97%E6%9D%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88receipt%E5%8F%AA%E8%83%BD%E7%94%B1%E6%8C%81%E6%9C%89pending%20ledger%E3%80%81schema%20context%E4%B8%8Elifecycle%20closure%E7%9A%84signer%E7%AD%BE%E5%8F%91.md)。
 
 如果 `147` 的长文解释的是：
 

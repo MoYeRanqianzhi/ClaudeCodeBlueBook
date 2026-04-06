@@ -2,7 +2,7 @@
 
 ## 1. 这一页服务于什么
 
-这一页服务于 [148-安全回执与完成分层：为什么receipt signer不能越级冒充completion signer](../148-安全回执与完成分层：为什么receipt%20signer不能越级冒充completion%20signer.md)。
+这一页服务于 [148-安全回执与完成分层：为什么receipt signer不能越级冒充completion signer](../148-%E5%AE%89%E5%85%A8%E5%9B%9E%E6%89%A7%E4%B8%8E%E5%AE%8C%E6%88%90%E5%88%86%E5%B1%82%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88receipt%20signer%E4%B8%8D%E8%83%BD%E8%B6%8A%E7%BA%A7%E5%86%92%E5%85%85completion%20signer.md)。
 
 如果 `148` 的长文解释的是：
 
