@@ -6,6 +6,11 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮第一性原理前门推进动作: 已继续更新 `navigation/01`、`09` 与 `03-设计哲学`，把 `request object / authority object / 正式对象` 这些旧本体词从三张关键理论前门里收回到 `请求世界 / governance pricing chain / current-truth surface / 权威入口`，避免读者再把“对象”误读成蓝皮书的总解释轴。
+- 本轮 Prompt 母线加固: 已继续把 Prompt 魔力收紧为 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification` 这条链，不再把 `request object` 当根对象；`display / protocol / handoff truth` 现被更明确地写成同一条 lineage 的不同消费者视图。
+- 本轮治理母线加固: 已继续把安全与省 token 统一收紧到 `governance pricing chain`，并把治理链条更明确写成 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；mode、modal、dashboard 与 default-continue 被进一步降级为投影替身而非根对象。
+- 本轮源码先进性前门加固: 已继续把 `09` 的第三张控制面与 `navigation/01` 的源码质量线前移到“当前真相是否被正式保护，不让过去与失控复杂度写坏现在”，把“复杂度中心合法 / 边界可证 / 下一次重构仍有路”收回为这一主判断的检验证据。
+- 本轮正文去编排化动作: 已删除 `09` 中“下一步该去哪里读”这类更适合导航页的路由段，并把 `navigation/01` 末尾的“对蓝皮书自己的约束”改写成更一般化的设计主张自检问题。
 - 本轮主分支同步检查: 根仓库 `main` 与 `origin/main` 当前同在 `3fa04b85f916980f264879d0632586c89f9aacc1`；`pull --ff-only` 仍因根工作区未解决冲突而失败，因此本轮继续只在 `.worktrees/mainloop` 内推进，不触碰主工作区冲突。
 - 本轮导航前门换代动作: 已继续更新 `navigation/03 / 40 / 44 / 46`，把深度专题总前门收回到“世界进入模型 / 扩张定价 / 当前真相”，并把 `40 / 44 / 46` 从层级沿革、文类安放与编排说明改写成直接面向 `message lineage / governance key / authority object` 的正文判断。
 - 本轮正文去记忆化动作: 已把 `40 / 44 / 46` 中“这一篇不再回答……”“为什么这层更适合落在……”这类更像编排记忆与作者工位说明的元话语移出正文中心，改成直接回答“哪种替身在夺权”“哪种误绑在制造第二真相”“哪种迁移顺序在写坏当前真相”。

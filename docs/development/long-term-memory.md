@@ -8,6 +8,19 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `navigation/01`、`09` 与 `03-设计哲学` 现已继续把理论前门里的旧本体词收口：
+  - `request object` 现已从 Prompt 前门退下，改由 `请求世界` 与 `message lineage -> projection consumer -> protocol transcript -> continuation qualification` 这条链承担 Prompt 魔力解释。
+  - `authority object` 在治理与源码先进性前门里现已继续分解为 `governance pricing chain`、`current-truth surface` 与 `权威入口`，不再把过强抽象词混充三条母线的共同主语。
+  - `正式对象` 现已从 `09` 与 `03-设计哲学` 的宪法页退下，改由“关键编译环节 / 必须守住的链 / 必须守住的约束”这类更接近第一性原理的表述接管。
+- 新的长期结论：
+  - Prompt 魔力最稳的解释不是“同一个 request object”，而是“同一条 message lineage 在 projection consumer、protocol transcript、lawful forgetting、continuation qualification 与 cache-safe forks 中持续不丢失同一个世界”。
+  - 安全设计与省 token 设计最稳的入口不是权限门数或预算 UI，而是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 这条统一定价链。
+  - 源码先进性最值钱的前门，不是“复杂度中心合法”这类证据句本身，而是“当前真相必须被正式保护，不让过去与失控复杂度写坏现在”；前者应作为后者的可检验证据。
+- `09` 与 `navigation/01` 现已继续把正文里的编排话术收口：
+  - `09` 现已去掉“下一步该去哪里读”这类路由段，让宪法页更像宪法页。
+  - `navigation/01` 末尾现已不再写“对蓝皮书自己的约束”，而是改成更一般化的设计主张自检问题，可直接拿去审读任意新 runtime 或新章节。
+- 新的长期结论：
+  - 后期优化里，除了“作者记忆”外，最该从正文里持续驱逐的另一类噪音，是“路由说明 / 文类分工 / 写作工位规则”这类编排话术；它们应优先沉到 `docs/` 和记忆层，而不是继续占据 bluebook 理论页中心。
 - `navigation/03 / 40 / 44 / 46` 现已继续把前门主语收口：
   - 深度专题总前门已从 `Prompt / 预算 / 对象 / 底盘 / 治理` 收回到“世界进入模型 / 扩张定价 / 当前真相”三张控制面，不再把“对象”本身当一级解释轴。
   - `40 / 44 / 46` 现已不再把“这一层放在哪类文档更合适”当正文主语，而是直接围绕 `message lineage / governance key / authority object` 写失真、宿主误绑与迁移次序。
