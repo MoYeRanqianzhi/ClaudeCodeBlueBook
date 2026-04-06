@@ -14,6 +14,7 @@
   - 当前真相线现在更明确把 README 层的高阶压缩写成 `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability`，不再只用 `truth ladder` 或 `current-truth surface` 一条结果词顶替整条判断。
 - 新的长期结论：
   - Prompt 线真正进入目录前门后，最稳的写法不是重复 `same-world test`，而是让 later maintainer 先学会 `Authority / Boundary / Transcript / Lineage / Continuation / Explainability` 这 6 个 nouns，再用 `same-world test` 当 gate。
+  - Prompt 母线真正稳定时，深页也必须共用这 6 个 nouns：`14` 解释运行时合同，`81` 解释编译链，`84` 解释世界准入，`82` 解释对象映射，`99` 解释苏格拉底追问；如果其中任何一页重新长回另一套前门，later maintainer 就会在深页再次学到第二语言。
   - 目录结构优化真正值钱的下一步不是把更多深链搬上根 README，而是让 `bluebook/README` 只负责第一问题和最短顺序，把深链稳定回收到 `navigation/README`；只要根 README 继续复制深链，first-answer duplication 就还在。
   - `09` 必须和各类 README 保持同一套 canonical formula；否则前门层会先统一，宪法层却仍停留在旧 noun set，later maintainer 会在第一跳就学到两版 Prompt / 治理 / 源码质量前门。
   - 治理线真正进入 frontdoor 后，最稳的一句话不是“治理先外化当前真相，再批准当前扩张”的口号版，而是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 这条收费链；`Narrow / Later / Outside` 只该保留为助记。

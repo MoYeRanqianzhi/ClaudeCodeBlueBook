@@ -51,6 +51,27 @@
 - 哪些 transcript / continuation object 决定什么配继续
 - surface 冲突时谁真正说了算
 
+如果只先做一轮最短的苏格拉底追问，也只按这 6 个 nouns 问：
+
+1. `Authority`
+   - 现在到底谁在定义世界。
+2. `Boundary`
+   - 哪些制度字节属于 stable prefix，哪些事实只能晚绑定。
+3. `Transcript`
+   - 模型实际消费的到底是哪条合法历史。
+4. `Lineage`
+   - `display / protocol / continuation` 还是不是同一身份的不同投影。
+5. `Continuation`
+   - compact / fork / resume 后谁仍配继续。
+6. `Explainability`
+   - 失稳时团队能否先点名坏掉的是哪一层，而不是只说“Prompt 不够神”。
+
+这组问题最短的 reject trio 也只认：
+
+- `authority_blur`
+- `transcript_conflation`
+- `continuation_story_only`
+
 ## 2. 苏格拉底诘问链
 
 ### 2.1 现在到底是谁在定义世界

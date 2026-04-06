@@ -34,6 +34,21 @@
 
 - Claude Code 的 Prompt 魔力，本质上来自一条正式的请求装配流水线。系统先编译“当前世界应该如何进入模型”，再让模型开始发言。
 
+如果把这条流水线再压成目录前门已经稳定的 nouns，它们只该对应成：
+
+1. `Authority`
+   - `world-defining winner`
+2. `Boundary`
+   - `section registry + dynamic boundary`
+3. `Transcript`
+   - `protocol transcript`
+4. `Lineage`
+   - `message lineage`
+5. `Continuation`
+   - lawful forgetting、continuation qualification 与 cache-safe forks
+6. `Explainability`
+   - cache-break reason 与 continue 失效的对象级解释
+
 ## 1. 先说结论
 
 Claude Code 真正保护的不是：
