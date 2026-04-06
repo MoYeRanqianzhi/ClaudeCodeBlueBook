@@ -116,6 +116,7 @@
 - [112-2026-04-06-streamlined dual-entry gate and null suppression 拆分记忆.md](./112-2026-04-06-streamlined%20dual-entry%20gate%20and%20null%20suppression%20拆分记忆.md)
 - [113-2026-04-06-result passthrough vs terminal primacy 拆分记忆.md](./113-2026-04-06-result%20passthrough%20vs%20terminal%20primacy%20拆分记忆.md)
 - [114-2026-04-06-callback to UI triad split 拆分记忆.md](./114-2026-04-06-callback%20to%20UI%20triad%20split%20拆分记忆.md)
+- [115-2026-04-06-adapter consumer policies split 拆分记忆.md](./115-2026-04-06-adapter%20consumer%20policies%20split%20拆分记忆.md)
 
 用途：
 

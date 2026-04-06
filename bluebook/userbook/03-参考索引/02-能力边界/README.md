@@ -103,3 +103,4 @@
 - [101-streamlined dual-entry gate、passthrough 与 null suppression 索引.md](./101-streamlined%20dual-entry%20gate%E3%80%81passthrough%20%E4%B8%8E%20null%20suppression%20索引.md)
 - [102-result payload passthrough vs terminal primacy 索引.md](./102-result%20payload%20passthrough%20vs%20terminal%20primacy%20索引.md)
 - [103-callback visible vs adapter triad vs hook sink 索引.md](./103-callback%20visible%20vs%20adapter%20triad%20vs%20hook%20sink%20索引.md)
+- [104-tool_result 本地补画、history user replay 与 success result 静默索引.md](./104-tool_result%20本地补画%E3%80%81history%20user%20replay%20与%20success%20result%20静默索引.md)
