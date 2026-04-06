@@ -2,6 +2,11 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮入口页/地图页收口动作: 已继续更新 `bluebook/README`、`01-源码结构地图`、`05-功能全景与API支持`、`07-运行时契约、知识层与生态边界`、`03-设计哲学`、`architecture/31`、`guides/18`、`navigation/05`、`api/README`、`api/52` 与 `security/README`。这一批不再扩新正文，而是专门清理 still-high-frequency 入口页中残留的 `truth ladder / danger surface / runtime contract / same-world test / 协作语法 / rollback object` 这类 bridge/result word 越位。
+- 本轮 Prompt 入口深化动作: `07` 现在先给 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`，再把“三句判断 / 六平面”降为这条链的投影；`architecture/31` 现在把“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”回译进六段链；`guides/18` 现在把“共享前缀资产网络”降成 `Lineage -> Continuation` 机制说明；`navigation/05` 现在把“工作语法”降成 Prompt 编译链投影，而不再自立成另一层前门。
+- 本轮治理入口深化动作: `api/52` 现在更明确只让宿主沿 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 消费治理支持面，`pending_action` 被降为 ask / window 的证据字段，`rollback object` 被降为 cleanup carrier；`security/README` 现在也把 `signer + ledger + cleanup` 挂回 canonical chain，而不是与主链并列成另一套前门。
+- 本轮源码质量入口深化动作: `bluebook/README`、`01`、`05` 与 `api/README` 现已继续统一到 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`。其中 `01` 现在更明确把 `cli.tsx / main.tsx / QueryEngine / query.ts` 读成合法复杂度中心与热点内核，而不是 `orchestration shell`；`api/README` 现在更明确把宿主消费前门写成 contract / registry / current-truth surface / consumer subset / hotspot kernel / mirror gap，而不再沿旧 API truth-ladder 起笔。
+- 本轮新的第一性原理结论: 当蓝皮书已经有稳定 deep page 后，下一轮真正值钱的工作往往不是再加新页，而是继续减少 later maintainer 第一次进门时会撞上的“第二前门语言”；目录优化到这一层，核心任务已经从“给读者更多入口”变成“让所有高频入口先交付同一套问题顺序和拒收动作”。
 - 本轮主分支同步检查再次确认：根仓库 `main=origin/main=4ad3d88510e09ca4ada4ae9852241b7a15e79b33`；`git fetch origin` 成功，`rev-list --left-right --count main...origin/main` 返回 `0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本轮继续只在 `.worktrees/mainloop` 内推进。
 - 本轮 mainloop 基线: `HEAD=72fc9a7f5c0f5c034e5b9b933f8d46c1c22b7376`，编辑前 `git status --short --branch` 返回干净工作树；本批次所有正文、记忆与提交都只落在当前 worktree。
 - 本轮并行 Agent 合流结论: Prompt 残页的真实问题不是缺材料，而是仍残留“七层叠加 / prefix asset / 可解释稳定性 / 行动语义更密 / 协作语法”这些第二前门话语；治理残页的真实问题不是缺对象，而是 `22/64/49` 仍有总论重复、投影篡位和 builder 起点不一致；源码质量残页的真实问题不是缺案例，而是 `86` 仍太像半个总论，`architecture/README` 与 `guides/README` 仍在 README 层混哲学、方法和分流。

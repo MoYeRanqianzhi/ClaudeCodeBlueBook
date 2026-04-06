@@ -20,12 +20,12 @@
 
 如果把安全前门继续压成最短公式，也只剩三条：
 
-1. `decision window`
-   当前扩张还配不配继续
-2. `signer + ledger + cleanup`
-   谁配宣布已经没事了
-3. `failure semantics`
-   哪种失败该 deny、哪种该 rollback、哪种该 cleanup、哪种必须 escalate
+1. `governance key -> externalized truth chain -> typed ask`
+   - 谁配改边界、谁配宣布当前治理真相、哪些扩张必须先协商
+2. `decision window -> continuation pricing`
+   - 当前扩张还配不配继续，继续是否仍值得付费
+3. `durable-transient cleanup`
+   - 谁配宣布已经没事了，哪些 signer / ledger / cleanup 结果词只配当投影
 
 如果一个安全判断还压不回这三条，它就还停在规则堆或工具堆层。
 
@@ -70,10 +70,11 @@
 - `100-138`：完成权、字段生命周期、工程迁移、验证架构与制度化接口。
 - `139-259`：cleanup 契约与 signer/governor ladder，含 stronger-request cleanup 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone、resurrection、re-entitlement、reconfiguration、reactivation、readiness、continuity、recovery、reintegration、reprojection、reassurance、use-time revalidation、step-up reauthorization、continuation、completion、finality、forgetting、liability-release、archive-close、audit-close、irreversible-erasure、retention-governance、retention-enforcement-honesty、cleanup-isolation、cleanup-constitution、cleanup-rationale、cleanup-metadata、cleanup-runtime-conformance、cleanup-anti-drift-verification、cleanup-repair 等高阶治理分层。
 
-更稳的 first reject signal 还应先记两条：
+更稳的 first reject signal 还应先记三条：
 
 1. `Context Usage`、mode 条和 token UI 开始冒充治理真相
 2. cleanup 结果词开始越级替 signer 和 verdict 说话
+3. `Later / Outside`、default continuation 或全量可见重新让免费扩张复活
 
 ## 按问题进入
 

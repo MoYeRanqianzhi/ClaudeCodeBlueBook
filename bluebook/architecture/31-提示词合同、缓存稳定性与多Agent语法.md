@@ -5,7 +5,7 @@
 1. Claude Code 的 prompt 为什么看起来“有魔力”。
 2. 这种魔力为什么不是文案技巧，而是合同装配。
 3. cache 稳定性为什么会反过来塑造 prompt 结构。
-4. 多 Agent prompt 为什么本质上是协作语法，而不是几句命令模板。
+4. 多 Agent prompt 为什么本质上是 `Transcript / Lineage / Continuation`，而不是几句命令模板。
 5. 从源码看，Claude Code 真正不可复制的 prompt 部分是什么。
 
 ## 0. 代表性源码锚点
@@ -25,18 +25,24 @@
 
 ## 1. 先说结论
 
-Claude Code 的 prompt 魔力来自四层叠加：
+Claude Code 的 prompt 魔力，最稳的前门不再是“四层叠加”，而是：
 
-1. 角色合同：
-   - coordinator、主线程 agent、proactive、forked worker 各有不同 prompt 形态。
-2. 缓存结构：
-   - 静态前缀、动态边界、尾部 attachment 被精心分层。
-3. 状态反馈：
-   - mailbox、date change、memory surfacing、tool/result delta 会把运行时状态晚绑定进 prompt。
-4. 协作语法：
-   - 多 Agent prompt 不是口号，而是 ownership、汇报方式、禁止事项和任务对象的正式语法。
+- `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
 
-也就是说，Claude Code 的 prompt 强，不是因为某几句话更会写，而是因为这些句子被嵌进了一台持续运行的 runtime。
+如果把旧的四层叠加回译回这条链，大致就是：
+
+1. 角色合同
+   - `Authority`
+2. 缓存结构
+   - `Boundary`
+3. 状态反馈
+   - `Transcript -> Lineage`
+4. `Transcript -> Lineage -> Continuation`
+   - `Transcript -> Lineage -> Continuation`
+5. cache break naming
+   - `Explainability`
+
+也就是说，Claude Code 的 prompt 强，不是因为某几句话更会写，而是因为这些句子被嵌进了同一世界编译链。
 
 ## 2. Prompt 首先是装配顺序，不是最终文案
 
@@ -141,7 +147,7 @@ Claude Code 很少把动态状态直接塞进静态 prompt。
 
 换句话说，Claude Code 甚至把“prompt 魔力失效”的条件也写成了可检测对象。
 
-## 5. 多 Agent prompt 的本体是协作语法
+## 5. 多 Agent prompt 的本体是 Transcript / Lineage / Continuation
 
 `coordinatorMode.ts` 的关键价值不在于措辞，而在于它规定了多 Agent 协作的语法：
 
@@ -216,9 +222,9 @@ Claude Code 很少把动态状态直接塞进静态 prompt。
 如果权限响应、shutdown 协议、结构化 mailbox 消息都混进普通上下文：
 
 - 模型看到的“当前现场”就不再可靠
-- 协作语法和系统语法会相互污染
+- `Transcript / Lineage / Continuation` 语法和系统语法会相互污染
 - 搜索、复制、前台来源判断也会一起失真
 
 ## 7. 一句话总结
 
-Claude Code 的 prompt 魔力不是“神秘咒语”，而是“角色合同 + 缓存结构 + 状态晚绑定 + 协作语法”四层叠加出来的 runtime 效果。
+Claude Code 的 prompt 魔力不是“神秘咒语”，而是把“角色合同、缓存结构、状态晚绑定与多 Agent 协作”都正式压回 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`。

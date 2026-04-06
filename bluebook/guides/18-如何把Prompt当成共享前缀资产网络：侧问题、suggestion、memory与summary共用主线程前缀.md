@@ -1,4 +1,4 @@
-# 如何把Prompt当成共享前缀资产网络：侧问题、suggestion、memory与summary共用主线程前缀
+# 如何把主线程 Lineage 写成可复用 Continuation 前缀网络
 
 这一章回答五个问题：
 
@@ -25,6 +25,10 @@
 
 - Claude Code 的主线程每回合结束后都会把 cache-safe 协作上下文保存下来，供侧问题、建议词、记忆提炼、总结与整理循环复用。
 
+这一页现在不再把“共享前缀资产网络”当成 Prompt 的第二前门，而只解释：
+
+- `Lineage -> Continuation`
+
 ## 1. 先说结论
 
 更稳的 prompt 设计法，不是：
@@ -41,7 +45,7 @@
 
 从第一性原理看，Claude Code 真正在保护的不是一段好文案，而是：
 
-- 一份可被多个循环共同继承的工作现场
+- 主线程作为 authoritative lineage source，被多个 continuation consumer 继续继承
 
 这也是 prompt 魔力之所以能跨回合、跨循环持续显现的原因。
 
@@ -212,7 +216,7 @@
 
 而是：
 
-- 一张由主线程持续供电、由旁路循环共享消费的前缀资产网络
+- 一条由主线程持续提供 lineage、由旁路循环共享消费 continuation 的 prefix contract
 
 这就是为什么它的 prompt 魔力不只是“当前回合说得好”，而是“下一步建议、记忆提炼、总结整理都像活在同一个现场里”。
 

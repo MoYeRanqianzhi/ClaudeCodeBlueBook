@@ -12,11 +12,11 @@
 这一章虽然在列能力面，但更稳的读法不是把它当“功能总清单”，而是先带着三句判断来读：
 
 1. Prompt 线
-   - 这些接口最终在帮助什么通过 `same-world test` 合法进入模型
+   - 这些接口最终在帮助 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 的哪一段合法进入模型
 2. 治理线
    - 这些接口最终在决定什么扩张配进入当前世界；`Context Usage` 不是功能前门答案，而是 `decision window` 投影
 3. 源码质量线
-   - 这些接口是主路径能力、宿主子集、声明先行，还是仍需按 `truth ladder` 与 `failure semantics` 克制表述
+   - 这些接口是主路径能力、consumer subset、hotspot kernel 入口，还是仍只配停在 mirror gap discipline 层
 
 如果不先带着这三句判断，本章就很容易重新退回：
 
@@ -35,9 +35,9 @@
 
 如果把功能表前门继续压成最短公式，也只剩三句：
 
-1. `same-world test` 决定这组接口是不是在帮助同一个世界进入模型。
+1. `same-world compiler` 决定这组接口是不是在帮助同一个世界进入模型。
 2. `decision window` 决定这组接口是不是还配继续进入当前世界。
-3. `truth ladder + failure semantics` 决定你现在到底配把它写成主路径能力、宿主子集，还是只配写成声明痕迹。
+3. `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 决定你现在到底配把它写成主路径能力、宿主子集、热点入口，还是只配写成声明痕迹。
 
 如果这四问还回答不清，就不要继续停在功能总览页：
 

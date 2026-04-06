@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`01-源码结构地图`、`05-功能全景与API支持`、`07-运行时契约、知识层与生态边界`、`03-设计哲学`、`architecture/31`、`guides/18`、`navigation/05`、`api/README`、`api/52` 与 `security/README` 现已继续把高频入口页里的旧结果词与旧证据梯度收回三条 canonical chain：
+  - Prompt 线现在更明确要求入口页先交付 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`，再允许 `runtime contract / 协作语法 / 共享前缀资产网络 / 工作语法` 这些词作为 bridge 或 result word 出现。
+  - 治理线现在更明确要求宿主消费页和安全入口页先交付 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，再允许 `pending_action / rollback object / signer + ledger + cleanup` 这些词作为投影或 carrier 出现。
+  - 源码质量线现在更明确要求根 README、源码地图、功能/API 页和 `api/README` 先交付 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`，不再让 `orchestration shell / danger surface / future-maintainer` 这些旧尾词继续停在前门句法里。
+- 新的长期结论：
+  - 当 deep page 已稳定后，下一批最值钱的深化往往不是再产出新深页，而是继续把总论页、地图页、API 页、导航页和目录 README 里的旧桥接词降格；later maintainer 最先接触的不是深页，而是这些高频入口。
+  - Prompt 线以后应长期守住一条纪律：`same-world test / runtime contract / 协作语法 / 前缀资产` 都只能作为桥接词或结果词存在，不能再越位成为新的根定义。
+  - 治理线以后应长期守住一条纪律：宿主消费页不许再从 `mode / usage / pending_action / rollback object` 这类投影或 carrier 起笔；前门必须先给 canonical chain，再给字段投影。
+  - 源码质量线以后应长期守住一条纪律：`orchestration shell / danger surface` 这类旧词即使保留，也只能留在源码证据解释层，不能继续停在根 README、地图页或 API README 的首屏公式里。
 - `philosophy/21`、`30`、`33`、`51` 与 `57` 现已继续把 Prompt 残余深页全部收回 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`：
   - `21` 现在只把“七层叠加”当 runtime 现象回译回六个 nouns，不再把 feature list 当第一前门。
   - `30` 现在只解释 `Boundary -> Continuation` 的 prefix asset，不再把 shared prefix 误写成独立 Prompt 哲学。

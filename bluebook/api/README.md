@@ -5,16 +5,16 @@
 
 还要先记一句：
 
-- `api/` 不是接口清单层，而是真相暴露层；更稳的读法不是先按编号扫平面，而是先问 `contract truth -> registry truth -> orchestration shell -> current-truth surface / host-facing truth -> consumer subset -> danger surface`，再看具体接口和宿主消费路径。
+- `api/` 不是接口清单层，而是真相暴露层；更稳的读法不是先按编号扫平面，而是先问哪些 contract 被外化、哪些 registry 在列出对象、哪个 `current-truth surface` 在宣布现在、宿主自己只是哪个 `consumer subset`，以及哪些热点只能在 `hotspot kernel / mirror gap discipline` 的约束下被消费。
 
 如果把 API 前门继续压成最短公式，也只剩三条：
 
-1. `same-world test`
-   - 宿主到底承认了哪一条请求与继续对象
-2. `decision window`
+1. `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
+   - 宿主到底承认了哪一段请求编译链
+2. `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
    - 宿主到底承认了哪一条治理外化真相
-3. `truth ladder + failure semantics`
-   - 宿主到底在消费哪一层 truth、哪一层 failure object
+3. `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+   - 宿主到底在消费哪一层 truth、哪一层热点、哪一层镜像缺口
 
 如果一个 API 判断还压不回这三条，它就还停在接口库存层。
 

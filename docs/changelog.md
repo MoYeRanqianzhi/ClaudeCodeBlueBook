@@ -2,6 +2,8 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/README`、`01-源码结构地图`、`05-功能全景与API支持`、`07-运行时契约、知识层与生态边界`、`03-设计哲学`、`architecture/31`、`guides/18`、`navigation/05`、`api/README`、`api/52` 与 `security/README`，把仍残留在地图页、目录页、运行时总论页与宿主消费页里的 `truth ladder / danger surface / runtime contract / same-world test / 协作语法 / 回退对象` 这类旧结果词进一步降级成 bridge/result word，并把高频入口统一压回三条 canonical chain
+- 本轮目录结构深化重点不再是补深页，而是把高频入口页继续从“同词化”推进到“同序化”：根 README、地图页、功能/API 页、导航页和宿主消费页现在更明确共享同一套 Prompt witness order、governance failure order 与 current-truth reject order，不再让 later maintainer 在不同入口先学到不同版本的第一问题
 - 本轮根仓库 `main` 同步检查再次确认：`main=origin/main=4ad3d88510e09ca4ada4ae9852241b7a15e79b33`、`main...origin/main = 0 0`，`merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
 - 继续更新 `philosophy/21`、`30`、`33`、`51` 与 `57`，把 Prompt 残余深页全部收回 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`：`21` 现在只把“七层叠加”当 runtime 现象回译回六个 nouns，`30` 现在只解释 `Boundary -> Continuation` 的 prefix asset，`33` 现在明确只解释 `Explainability`，`51` 现在把“行动语义更密”降格为 `Continuation` 跑通后的结果词，`57` 现在只解释 `Transcript -> Lineage -> Continuation` 的协作语法
 - 继续更新 `philosophy/22`、`64` 与 `guides/49`，把治理残余深页全部收回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`：`22` 现在只解释安全/成本/体验为何只是同一收费链的外显，`64` 现在把免费扩张逐段挂回 canonical chain，`49` 现在把治理 builder 固定成六步执行卡，并把 `Narrow / Later / Outside` 继续降成助记

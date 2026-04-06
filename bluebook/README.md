@@ -10,7 +10,7 @@
    - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
    - `Narrow / Later / Outside` 只是这条收费链的用户侧助记，不是第二套主题
 3. 当前真相保护
-   - `contract -> registry -> current-truth surface -> consumer subset -> danger surface -> future-maintainer rejectability`
+   - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
 如果 later maintainer 第一次进蓝皮书时还看不见这三条，目录结构就还在迫使他先学对象层总结，再自己回压成第一性原理。
 
