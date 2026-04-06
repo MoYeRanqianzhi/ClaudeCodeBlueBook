@@ -1,7 +1,6 @@
 # 安全专题索引
 
 `security/` 当前有 245 篇正文，范围 `00-244`；`appendix/` 当前有 228 篇速查文档；`source-notes/` 当前有 95 篇源码剖面。
-
 `security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，不要急着把安全页读成另一套规则堆。
 
@@ -54,7 +53,6 @@
 - `70-99`：能力发布、状态编辑、恢复资格、默认路由与 reject semantics。
 - `100-138`：完成权、字段生命周期、工程迁移、验证架构与制度化接口。
 - `139-244`：cleanup 契约与 signer/governor ladder，含 stronger-request cleanup 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone、resurrection、re-entitlement、reconfiguration、reactivation、readiness、continuity、recovery、reintegration、reprojection、reassurance、use-time revalidation、step-up reauthorization、continuation、completion 等高阶治理分层。
-
 ## 按问题进入
 
 - 想看来源主权、权限模式、能力边界与显式降级：从 `00-29` 进入。
