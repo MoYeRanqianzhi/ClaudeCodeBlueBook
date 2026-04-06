@@ -8,6 +8,34 @@
 
 不重复 slash commands；斜杠命令请看 `01-命令索引.md`。
 
+如果把这页压成最短前门，只剩一条对象链：
+
+- `bootstrap plane -> session materialization -> authority/context assembly -> runtime handoff`
+
+也就是：
+
+- 先决定这是不是 print / bare / daemon / remote-control 这类启动平面。
+- 再决定这次会话要不要继续、恢复、分叉、显式命名或根本不落盘。
+- 再决定权限模式、工具白名单、MCP 配置、settings、目录和 agent 注入怎样装进本次会话。
+- 最后才把控制权交给 print 流、交互 REPL、后台会话或 bridge/runner。
+
+所以这页不是“更多旗标说明书”，而是“进程启动怎样把一个工作世界装起来”的索引页。
+
+## 进入本页前的 first reject signal
+
+如果你现在问的是下面这些问题，就不该先看这页：
+
+- 这条 slash 命令当前是什么对象、怎样执行。
+- 这条入口为什么在 bridge / headless / remote 下表现不同。
+- 这条状态、预算或调参入口到底属于哪个会内控制面对象。
+- 这条 root 入口和 slash 入口只是名字像，还是其实同层。
+
+这些都应继续回：
+
+- `04-根命令与斜杠命令对照索引.md`
+- `05-设置、状态、预算与调参入口索引.md`
+- `06-命令类型、执行语义与可见性索引.md`
+
 ## 标记方法
 
 - `稳定公开`：默认帮助文本可见，适合写进普通用户主线

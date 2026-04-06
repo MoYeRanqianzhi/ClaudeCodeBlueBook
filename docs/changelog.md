@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续补强 `userbook/03-参考索引/01-命令工具/05-设置、状态、预算与调参入口索引` 与 `05-控制面深挖/10-设置面板、诊断屏与运营命令：会内控制面的三层分工`，把这组入口的最短对象链进一步压成 `state truth -> trustworthiness -> decision window -> continuation path -> session tuning / display`，并明确 `/extra-usage`、`/rate-limit-options` 属于 continuation path 而不是观测层
 - 继续补强 `userbook/03-参考索引/01-命令工具/README` 与 `06-命令类型、执行语义与可见性索引`，把命令工具这一组再压成一条更短总公式：`plane -> object -> semantics -> gate`
 - 继续更新 `userbook/03-参考索引/01-命令工具/01-命令索引`、`04-根命令与斜杠命令对照索引` 与 `05-设置、状态、预算与调参入口索引`，把命令工具索引进一步收口成“库存页 / plane 对照页 / 运行时对象页”的职责分工：`01` 现在更明确只回答命令名 inventory，`04` 现在更明确先分会外 lifecycle plane 与会内 session plane，`05` 现在更明确先分 `state truth -> trustworthiness -> decision window -> session tuning / display`
 - 继续更新 `userbook/05-控制面深挖/05-命令、提示词、技能、工具：入口选择决策树`、`11-命令对象、执行语义与可见性：为什么 slash command 不是同一种按钮`、`03-参考索引/01-命令工具/README` 与 `06-命令类型、执行语义与可见性索引`，把命令入口层进一步压成两条前门公式：`task object -> capability projection -> runtime gate -> execution surface` 与 `command object -> execution semantics -> visibility/caller gate -> host mode`，避免命令页和索引页重新退回按钮说明书
