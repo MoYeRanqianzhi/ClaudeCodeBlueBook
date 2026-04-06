@@ -6,6 +6,17 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮目录前推动作: 已继续更新 `bluebook/README`、`00`、`09`、`userbook/README`、`userbook/00` 与 `userbook/01-02`，把 canonical formulas 从哲学前门继续前推到蓝皮书和使用手册第一跳；用户在第一次进入时就能先学会 `same-world test / decision window / stable bytes vs working set / truth ladder`，而不是先学 mode 条、token 百分比、长摘要或目录观感。
+- 本轮 Prompt 侧线补前门动作: 已把 Prompt 前门从哲学页继续前推到 `bluebook/README`、`00` 与 `userbook` 第一跳，让 later maintainer 和首次使用者都先经过 `same-world test`，再谈 Prompt 魔力或“怎么提问”。
+- 本轮治理侧线补前门动作: 已把治理前门从哲学页继续前推到 `09`、`userbook/README` 与 `userbook/01-02`，明确 `Context Usage = decision window`，并把 `Narrow / Later / Outside + stable bytes + working set` 提升为使用层就应掌握的 token 经济公式。
+- 本轮源码质量侧线补前门动作: 已把 `truth ladder` 与 `failure semantics` 前推到 `bluebook/README`、`00` 与 `09`，让 later maintainer 在根入口就先用“边界可证 / 时间诚实 / 失败诚实”审题，而不是先用目录美学审题。
+- 本轮目录结构深化结论: 根 `README` 继续保持 route-only 是对的；真正该前推 canonical formula 的，是 `bluebook/README`、`00`、`09` 和 `userbook` 第一跳。目录结构优化的关键，不是把 doctrine 灌到所有入口，而是把它灌到“读者第一次真正开始判断”的那一层。
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash，`git merge --ff-only origin/main` 返回 `Already up to date.`。本轮因此只记录基线，不对根仓库做任何修改。
+- 本轮哲学前门收口动作: 已继续更新 `philosophy/README`、`philosophy/84`、`philosophy/85`、`philosophy/87` 与 `navigation/41`，把哲学目录首页和第一性原理导航继续压成更短的 frontdoor formula，而不是继续让 later maintainer 先读对象层总结、再自己压回第一性原理。
+- 本轮 Prompt 侧线回灌动作: 已把 Prompt 前门继续压成 `same-world test = world-defining winner -> message lineage -> protocol transcript -> stable bytes -> continuation qualification`，并把 first reject signal 前置为“回答变差前，先看 same-world test 哪一环已经断了”。
+- 本轮治理侧线回灌动作: 已把治理前门继续压成 `治理先外化当前真相，再批准当前扩张` 与 `Narrow / Later / Outside + stable bytes + working set`，并把“没有决策增益的检查，本身就是免费扩张”继续写成目录前门级判断，不再只停在深页或手册页。
+- 本轮源码质量侧线回灌动作: 已把源码质量前门继续压成 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface` 与 `dependency honesty + temporal honesty + failure honesty`，并把 `failure semantics` 明确上提为 architecture doctrine，而不是尾部异常说明。
+- 本轮目录结构深化结论: 当三张控制面与中层哲学页已经稳定后，下一层最容易把 doctrine 写回旧世界观的，不是深页，而是 `philosophy/README` 与 `navigation/41` 这种前门页；因此目录结构优化的高价值动作，是优先让前门直接暴露 canonical formulas 与 first reject signal。
 - 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash，`git merge --ff-only origin/main` 返回 `Already up to date.`。本轮因此只记录基线，不对根仓库做任何修改。
 - 本轮哲学中层对齐动作: 已继续更新 `philosophy/69-73`，把 artifact / validator / rule ABI / evaluator / replay 这一组中层哲学页从旧 `compiled request object / governance decision object / structure recovery object` 语汇，统一收回到当前三条母线主语，并让这五页都显式补出更短公式与第一条 `reject signal` 的苏格拉底自检。
 - 本轮 Prompt 侧线回灌动作: 已吸收并行 Agent 的增量结论，把 Prompt 魔力继续压成 `same-world test`：真正要反复证明的不是 prompt 文案，而是 `request compiler -> message lineage -> stable bytes -> continuation qualification` 这条链在 compact / handoff / replay 后是否仍保持同一世界。

@@ -6,6 +6,12 @@
 2. 这些能力分别通过什么入口暴露。
 3. 什么时候该用普通提示词、斜杠命令、技能、工具、计划模式、子代理、worktree、MCP 或插件。
 
+如果你只想先记住三条使用判断，也只先记这三条：
+
+1. 好 Prompt 不是更像专家，而是先过 `same-world test`：当前、下一步和 handoff 仍共享同一条 `message lineage`。
+2. `Context Usage` 不是成本面板，而是 `decision window` 的诚实投影；没有决策增益的检查也是免费扩张。
+3. 真正省 token 不是把话压短，而是 `Narrow / Later / Outside`：冻结 stable bytes，只把当前 working set 留在场内。
+
 ## 按目标进入
 
 如果你不是来“按目录从头读”，而是想先解决眼前问题，建议直接按目标进入：
@@ -163,6 +169,7 @@
 - 本手册优先写“用户能做什么”和“为什么这样设计”。
 - 所有关键结论尽量挂到源码注册点，而不是只挂到 UI 现象。
 - 功能按“稳定公开能力、灰度能力、内部能力”分层，不混写。
+- 入口页优先提醒你不要把 UI transcript、mode 条、token 百分比、长摘要或 slash 面板误当系统真相。
 - 源码锚点默认相对源码根 `../../claude-code-source-code/` 描述。该目录被主仓库 `.gitignore` 排除，不会跟随 worktree 一起复制。
 
 ## 结构导航

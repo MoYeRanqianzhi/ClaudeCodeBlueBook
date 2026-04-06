@@ -8,6 +8,24 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README / 00 / 09 / userbook/README / userbook/00 / userbook/01-02` 现已继续把 canonical formulas 从哲学前门前推到蓝皮书和使用手册第一跳：
+  - `bluebook/README / 00 / 09` 现在更明确要求 later maintainer 在入口层先用 `same-world test / decision window / truth ladder` 审题。
+  - `userbook/README / 00 / 01-02` 现在更明确要求首次使用者在入口层先分清 `same-world test`、`Context Usage = decision window`、以及 `stable bytes vs working set`，不再把 token 百分比、长摘要或 slash 面板误当系统真相。
+- 新的长期结论：
+  - 目录结构真正成熟时，不能只让哲学页会说 canonical formula；蓝皮书与使用手册的第一跳也必须会说。否则 later maintainer 和首次使用者会在入口层先学会错误的 UI 主语，再到深页里纠偏。
+  - 根 `README` 保持 route-only 是正确约束；最该承载 doctrine 的不是最外层仓库首页，而是 `bluebook/README / 00 / 09` 和 `userbook` 第一跳这组“真正开始判断”的前门。
+  - `same-world test`、`Context Usage = decision window`、`Narrow / Later / Outside + stable bytes + working set`、`truth ladder + failure honesty` 现在已经形成一组可在目录层复用的 canonical formula；下一轮目录优化应优先检查还有哪些第一跳入口没有前置这组公式。
+- `philosophy/README / philosophy/84 / philosophy/85 / philosophy/87 / navigation/41` 现已继续把哲学前门收口成更短的 canonical formulas：
+  - Prompt 前门现在更明确要求先做 `same-world test`，再谈 Prompt 魔力。
+  - 治理前门现在更明确要求先用 `治理先外化当前真相，再批准当前扩张` 与 `Narrow / Later / Outside + stable bytes + working set` 审题。
+  - 源码质量前门现在更明确要求先过 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface` 与 `dependency honesty + temporal honesty + failure honesty`。
+  - `navigation/41` 现在更明确把这些 canonical formulas 前推到目录层，并要求 later maintainer 在目录前门就先看到它们。
+- 新的长期结论：
+  - 当深页与中层哲学页已经完成词汇换代后，下一层最值钱的优化通常不是再补对象，而是继续收紧前门；因为 later maintainer 最容易在 `README / navigation` 这种入口页重新学回旧世界观。
+  - 哲学前门真正成熟时，不只要给出高阶主语，还要给出 canonical formula 和 first reject signal；否则 later maintainer 仍会先学会“怎么夸”，再去深页里补“怎么判”。
+  - Prompt 前门如果不直接暴露 `same-world test`，读者很容易再次把 Prompt 魔力写回文案能力。
+  - 治理前门如果不直接暴露 `Narrow / Later / Outside + stable bytes + working set`，读者很容易再次把省 token 写回 compact 技巧、把治理写回 dashboard literacy。
+  - 源码质量前门如果不直接暴露 truth ladder 与 `failure honesty`，读者很容易再次把结构先进性写回“API vs implementation”或“模块看起来很清楚”的体感判断。
 - `philosophy/69-73` 现已继续把 artifact / validator / rule ABI / evaluator / replay 这一组中层哲学页对齐到当前高阶主语：
   - Prompt 线现在统一固定为 `request compiler -> message lineage -> stable bytes -> continuation qualification`。
   - 治理线现在统一固定为 `externalized truth chain -> decision window -> continuation pricing`。

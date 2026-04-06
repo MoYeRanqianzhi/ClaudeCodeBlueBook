@@ -57,6 +57,13 @@ Prompt 的魔力，首先来自：
 
 这也是为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到魔力：他们抄到了说明文本，却没有抄到世界准入、投影分层与继续资格的制度体。真正稀缺的不是文风，而是不同 consumer 不必重新协商同一现场。
 
+如果把这章继续压成最短公式，只剩两行：
+
+1. `same-world test = world-defining winner -> message lineage -> protocol transcript -> stable bytes -> continuation qualification`
+2. `compile -> protocolize -> preserve -> continue -> explain`
+
+如果一套 Prompt 解释还没压到这两行，它就还停在机制总结，不算最硬的第一性原理。
+
 ## 2. 第一性原理：Prompt 首先是一道世界准入法律
 
 如果 Prompt 只负责：
@@ -149,6 +156,16 @@ Claude Code 更深的一层是：
 3. 没有 continuation qualification
    - 结果不是 compact 更省，而是留下来的只是一段可读摘要，不再是仍可行动的继续对象。
 
+### first reject signal 比成功表述更值钱
+
+Prompt 魔力最先失稳时，第一条信号通常不是回答质量下降，而是 `same-world test` 已经先失败：
+
+1. `world-defining winner` 不清，多个 prompt surface 开始争主语。
+2. `display transcript` 试图冒充 `protocol transcript`。
+3. compact 后留下的是故事，不是 `continuation qualification`。
+4. side loop / worker prompt 开始自己重造现场，而不是消费同一条 lineage。
+5. cache break 已经发生，但团队说不清 break 的对象级原因。
+
 ## 5. 苏格拉底式追问
 
 如果要审一个新 runtime 是否真的拥有这种 Prompt 能力，先问：
@@ -159,7 +176,8 @@ Claude Code 更深的一层是：
 4. compact 后保住的是行动语义与 continuation qualification，还是只是更好读的摘要。
 5. side loop、suggestion、memory extraction 与 worker summary 是否只是同一 `protocol transcript` 的不同 consumer。
 6. 工具 ABI、continue 资格与 cache break 原因，是否已进入 Prompt 真相本体。
-7. 如果去掉“写得像专家”的文案风格，这套系统还能不能让不同 consumer 继续活在同一个现场。
+7. 第一条 reject signal 会在什么地方出现；团队能不能在回答变差之前，就先指出 same-world test 哪一环已经断了。
+8. 如果去掉“写得像专家”的文案风格，这套系统还能不能让不同 consumer 继续活在同一个现场。
 
 ## 6. 对 Agent Runtime 设计者的直接启发
 

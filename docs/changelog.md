@@ -2,6 +2,9 @@
 
 ## 2026-04-06
 
+- 继续更新 `bluebook/README`、`00`、`09`、`userbook/README`、`userbook/00` 与 `userbook/01-02`，把 canonical formula 从哲学前门继续前推到蓝皮书与使用手册第一跳：Prompt 线现在在入口层就显式暴露 `same-world test`，治理线现在在入口层就显式暴露 `Context Usage = decision window` 与 `Narrow / Later / Outside + stable bytes + working set`，源码质量线现在在入口层就显式暴露 `truth ladder` 与 `failure semantics`；同时保持根 `README` 继续只做 route-only 前门
+- 继续更新 `philosophy/README`、`philosophy/84`、`philosophy/85`、`philosophy/87` 与 `navigation/41`，把哲学前门与第一性原理导航继续压成更短的 frontdoor formula：Prompt 线前置 `same-world test`，治理线前置 `治理先外化当前真相，再批准当前扩张` 与 `Narrow / Later / Outside + stable bytes + working set`，源码质量线前置 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface` 与 `failure honesty`；同时把 first reject signal 正式写进前门自检
+- 本轮根仓库 `main` 同步检查继续通过 `fetch + rev-parse + merge --ff-only origin/main` 确认无待拉取更新，`main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；因此本批次继续只在 `.worktrees/mainloop` 内推进
 - 继续更新 `philosophy/69-73`，把工件/校验/规则/验证/回放这一组从旧的共享对象词汇彻底收回到当前三条母线主语：Prompt 线固定为 `request compiler -> message lineage -> stable bytes -> continuation qualification`，治理线固定为 `externalized truth chain -> decision window -> continuation pricing`，当前真相线固定为 `current-truth surface -> current-truth writeback -> freshness gate -> rollback object`；同时给每页补出更短公式与第一条 `reject signal` 的苏格拉底自检
 - 本轮并行 Agent 的新增高价值结论已回灌到持久化记忆：Prompt 魔力最稳的审题可继续压成 `same-world test`，治理与省 token 最稳的短公式可继续压成 `Narrow / Later / Outside + stable bytes + working set`，源码质量最稳的 truth ladder 可继续压成 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface`
 - 本轮根仓库 `main` 同步检查继续通过 `fetch + rev-parse + merge --ff-only origin/main` 确认无待拉取更新，`main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；因此本批次继续只在 `.worktrees/mainloop` 内推进

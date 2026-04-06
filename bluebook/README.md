@@ -2,6 +2,18 @@
 
 蓝皮书正文现在只先回答三件事：世界如何进入模型，扩张如何被定价，当前如何不被过去写坏。第一次进入先读 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)，再回 [03-设计哲学](03-设计哲学.md) 与 [06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)。
 
+如果把蓝皮书入口再压成最短公式，只剩三条：
+
+1. Prompt
+   - `same-world test = world-defining winner -> message lineage -> protocol transcript -> stable bytes -> continuation qualification`
+2. 治理
+   - `治理先外化当前真相，再批准当前扩张`
+   - `Narrow / Later / Outside + stable bytes + working set`
+3. 当前真相保护
+   - `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface`
+
+如果 later maintainer 第一次进蓝皮书时还看不见这三条，目录结构就还在迫使他先学对象层总结，再自己回压成第一性原理。
+
 根 README 的职责只有三层：先定题，再定证据层，最后才决定要不要跨目录跳转；它不再负责把整套深链重新摊平。
 
 ## 目录职责
@@ -31,11 +43,11 @@
 ## 三条深剖稳定入口
 
 - 想继续剖 Prompt 为什么会显得有魔力
-  先走 `09 -> navigation/05 -> navigation/15 -> philosophy/84 -> architecture/82 -> guides/99 -> playbooks/77`，先校正模仿对象，再追第一条反证信号，最后才去看长期验证与回归。
+  先走 `09 -> navigation/05 -> navigation/15 -> philosophy/84 -> architecture/82 -> guides/99 -> playbooks/77`，先校正模仿对象，再追第一条反证信号，最后才去看长期验证与回归；前门先问的是 `same-world test`，不是 Prompt 文案强不强。
 - 想继续剖安全设计与省 token 为什么其实是同一条治理链
-  先走 `09 -> navigation/05 -> navigation/15 -> philosophy/85 -> architecture/83 -> guides/100 -> playbooks/78`，先确认 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 没有在入口层被写浅。
+  先走 `09 -> navigation/05 -> navigation/15 -> philosophy/85 -> architecture/83 -> guides/100 -> playbooks/78`，先确认 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 没有在入口层被写浅；最短 token 经济公式先记 `Narrow / Later / Outside + stable bytes + working set`。
 - 想继续剖源码先进性为什么不是目录更漂亮
-  先走 `09 -> navigation/05 -> navigation/15 -> philosophy/76 / 86 / 87 -> architecture/84 -> guides/101 / 102 -> playbooks/79`，先把“当前真相保护”守住，再去谈热点文件、依赖图与 mirror gap。
+  先走 `09 -> navigation/05 -> navigation/15 -> philosophy/76 / 86 / 87 -> architecture/84 -> guides/101 / 102 -> playbooks/79`，先把“当前真相保护”守住，再去谈热点文件、依赖图与 mirror gap；前门先认 `truth ladder`，再谈结构体感。
 
 ## 按问题进入
 
