@@ -25,6 +25,7 @@
 21. 为什么 `skip trust dialog`、项目级 `.mcp.json` 批准、`doctor` 与 `mcp list|get` 不属于同一层安全或运行时状态。
 22. 为什么 remote-control 的 workspace trust、bridge eligibility、trusted-device、policy 与 OAuth 前提不是同一把钥匙。
 23. 为什么 remote-control 的 auto-connect、mirror、perpetual continuity 与 `--continue` 不是同一种 bridge 重连。
+24. 为什么 remote-control 的设置默认、显式开关、状态展示与当前断开语义不是同一个按钮。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

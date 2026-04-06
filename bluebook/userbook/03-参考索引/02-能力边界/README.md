@@ -13,3 +13,4 @@
 - [11-Trust Dialog、项目级 .mcp.json 批准与 Health Check 索引.md](./11-Trust%20Dialog%E3%80%81%E9%A1%B9%E7%9B%AE%E7%BA%A7%20.mcp.json%20%E6%89%B9%E5%87%86%E4%B8%8E%20Health%20Check%20%E7%B4%A2%E5%BC%95.md)
 - [12-Workspace Trust、Bridge Eligibility 与 Trusted Device 索引.md](./12-Workspace%20Trust%E3%80%81Bridge%20Eligibility%20%E4%B8%8E%20Trusted%20Device%20%E7%B4%A2%E5%BC%95.md)
 - [13-Remote Control 启动默认、Mirror、Perpetual 与 Continue 索引.md](./13-Remote%20Control%20%E5%90%AF%E5%8A%A8%E9%BB%98%E8%AE%A4%E3%80%81Mirror%E3%80%81Perpetual%20%E4%B8%8E%20Continue%20%E7%B4%A2%E5%BC%95.md)
+- [14-Remote Control 设置默认、显式开关与状态展示索引.md](./14-Remote%20Control%20%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E3%80%81%E6%98%BE%E5%BC%8F%E5%BC%80%E5%85%B3%E4%B8%8E%E7%8A%B6%E6%80%81%E5%B1%95%E7%A4%BA%E7%B4%A2%E5%BC%95.md)
