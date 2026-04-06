@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `philosophy/README` 与 `navigation/04` 现已把 future-maintainer 线继续推进到目录入口层：
+  - `philosophy/README` 现在应长期记住：源码质量线不只从 `86 / 87` 进入，也应显式开放 `80 -> 59 -> 53 -> 87` 这条 future-maintainer / local opposability / refactor capital 专题链。后续若目录入口还只会把源码先进性导向 current-truth / temporal honesty，而不暴露 later maintainer 的局部可反对性，也应视为入口写浅。
+  - `navigation/04` 现在应长期记住：目录职责最好继续按“发言权限与申诉链”来判，而不只按主题分层来判。`philosophy` 判必要性，`architecture` 证对象链，`api` 定承认面，`guides / playbooks` 分别出问题梯子与 verdict，`navigation` 只路由，`docs` 只存记忆；任何目录一旦越权代言，仓库就会长出第二叙述者。
+- `philosophy/README` 与 `navigation/05` 现已再把这条入口 doctrine 压强一层：
+  - `future maintainer = formal consumer` 现在应长期保留在哲学专题前门，而不只保留在正文深页；后续若源码质量前门还没有显式暴露这一句，就仍算入口写浅。
+  - `navigation/05` 现在应长期记住：源码质量线的入口版总括不只该是 current-truth / temporal honesty，还应直接包含 `local opposability + refactor capital`；发言权限表也不只是排版纪律，而是 later maintainer 的正式反对位阶。
 - `philosophy/80`、`59` 与 `53` 现已继续把 future-maintainer 线压成更稳定的长期 doctrine：
   - `future maintainer is a formal consumer` 现在应长期记住：它的最低标准不是 later maintainer 最终能看懂，而是 later maintainer 拥有 `局部可反对性`。后续凡是再写“维护者很重要”，都要先问有没有把这句话压成“不追全仓也能指出越权写回、truth-plane 越位与第一退回层”的可执行门槛。
   - `好架构始终保留重构可能性` 现在应长期记住：这里保留的不只是 seam，而是下一次重构的资本池，包括单一权威面、state machine 的时间边界、小而硬的共享真相文件、制度记忆注释，以及 later maintainer 的局部反对权。
