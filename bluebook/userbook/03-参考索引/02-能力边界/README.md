@@ -51,3 +51,4 @@
 - [49-Direct connect control subset、interrupt、result 与 stderr shutdown 索引.md](./49-Direct%20connect%20control%20subset、interrupt、result%20与%20stderr%20shutdown%20索引.md)
 - [50-Direct connect message filtering、init dedupe 与 transcript surface 索引.md](./50-Direct%20connect%20message%20filtering、init%20dedupe%20与%20transcript%20surface%20索引.md)
 - [51-Direct connect visible status surface 索引.md](./51-Direct%20connect%20visible%20status%20surface%20索引.md)
+- [52-Direct connect transcript mode、verbose 与 raw SDK stream 索引.md](./52-Direct%20connect%20transcript%20mode、verbose%20与%20raw%20SDK%20stream%20索引.md)

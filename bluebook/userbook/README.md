@@ -261,5 +261,6 @@
 - direct-connect 的控制子集、权限投影与退出传播边界
 - direct-connect 的消息过滤、`init` 去重与 transcript surface 边界
 - direct-connect 的本地提示、transcript 状态、tab status、overlay 与 fatal stderr 边界
+- direct-connect 的 prompt 面、transcript 模式与 raw SDK stream 差异边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
