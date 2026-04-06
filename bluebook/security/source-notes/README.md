@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 62 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 63 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -81,6 +81,7 @@
 60. [60-ensureConnectedClient、ReadMcpResourceTool与toolExecution的强请求清理用时重验证治理边界](60-ensureConnectedClient%E3%80%81ReadMcpResourceTool%E4%B8%8EtoolExecution%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E7%94%A8%E6%97%B6%E9%87%8D%E9%AA%8C%E8%AF%81%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 61. [61-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的强请求清理step-up重授权治理边界](61-wrapFetchWithStepUpDetection%E3%80%81ClaudeAuthProvider%E4%B8%8EperformMCPOAuthFlow%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86step-up%E9%87%8D%E6%8E%88%E6%9D%83%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 62. [62-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界](62-callMCPToolWithUrlElicitationRetry%E3%80%81toolExecution%E4%B8%8EMCP%E8%AE%A4%E8%AF%81%E8%B7%AF%E5%BE%84%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E7%BB%AD%E6%89%93%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+63. [63-callMCPToolWithUrlElicitationRetry、callMCPTool与tool_result映射的强请求清理完成治理边界](63-callMCPToolWithUrlElicitationRetry%E3%80%81callMCPTool%E4%B8%8Etool_result%E6%98%A0%E5%B0%84%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%AE%8C%E6%88%90%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
