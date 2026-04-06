@@ -82,6 +82,8 @@
   [05-控制面深挖/45-work secret、ack timing、existing session refresh 与 unknown work：为什么 standalone remote-control 的 work intake 不是同一种领取.md](./05-控制面深挖/45-work%20secret、ack%20timing、existing%20session%20refresh%20与%20unknown%20work：为什么%20standalone%20remote-control%20的%20work%20intake%20不是同一种领取.md)
 - 分清 bridge 的 session timeout、watchdog、SIGTERM、SIGKILL 与 failed remap 为什么不是同一种 timeout：
   [05-控制面深挖/46-session timeout、watchdog、SIGTERM、SIGKILL 与 failed remap：为什么 bridge 的会话超时、收尾中断与请求 timeout 不是同一种 timeout.md](./05-控制面深挖/46-session%20timeout、watchdog、SIGTERM、SIGKILL%20与%20failed%20remap：为什么%20bridge%20的会话超时、收尾中断与请求%20timeout%20不是同一种%20timeout.md)
+- 分清 bridge 的 poll、heartbeat、reconnecting、give up 与 sleep reset 为什么不是同一种重试：
+  [05-控制面深挖/47-poll、heartbeat、reconnecting、give up 与 sleep reset：为什么 bridge 的保活、回连预算与放弃条件不是同一种重试.md](./05-控制面深挖/47-poll、heartbeat、reconnecting、give%20up%20与%20sleep%20reset：为什么%20bridge%20的保活、回连预算与放弃条件不是同一种重试.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：

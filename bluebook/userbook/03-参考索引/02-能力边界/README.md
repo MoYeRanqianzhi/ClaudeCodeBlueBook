@@ -35,3 +35,4 @@
 - [33-Remote Control token refresh、child sync 与 heartbeat 认证索引.md](./33-Remote%20Control%20token%20refresh、child%20sync%20与%20heartbeat%20认证索引.md)
 - [34-Remote Control work secret、ack timing、existing session refresh 与 unknown work 索引.md](./34-Remote%20Control%20work%20secret、ack%20timing、existing%20session%20refresh%20与%20unknown%20work%20索引.md)
 - [35-Remote Control session timeout、watchdog、kill 与 failed remap 索引.md](./35-Remote%20Control%20session%20timeout、watchdog、kill%20与%20failed%20remap%20索引.md)
+- [36-Remote Control poll、heartbeat、reconnecting、give up 与 sleep reset 索引.md](./36-Remote%20Control%20poll、heartbeat、reconnecting、give%20up%20与%20sleep%20reset%20索引.md)
