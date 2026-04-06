@@ -28,6 +28,15 @@
 - 本轮安全专题推进: 已新增 `169-安全载体家族再赋权治理与重配置治理分层`、`appendix/153` 与 `source-notes/20`，并同步把 `154-168` 链尾正文中的作者推进记忆改写为源码锚定的苏格拉底式自我约束。
 - 本轮目录治理修正: 已继续强化 `security/README.md`、`appendix/README.md`、`source-notes/README.md` 与 `docs/development/security/README.md` 的四层分工，避免正文、附录、源码剖面与持久化记忆重新混写。
 - 本轮继续深入推进: 已新增 `170-安全载体家族重配置治理与重新激活治理分层`、`appendix/154` 与 `source-notes/21`，把安全链从 persisted config truth 继续推进到 active-world takeover。
+- 本轮再次深入推进: 已新增 `171-安全载体家族重新激活治理与就绪治理分层`、`appendix/155` 与 `source-notes/22`，把安全链从 active-world takeover 继续推进到 usable-truth adjudication。
+
+### A094. 重新激活治理之后仍要继续分出就绪治理：Claude Code 当前即便知道旧 cleanup 对象何时真正接管 active world，也还没有谁被正式授权决定它现在是否真的 ready for use
+
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin --prune` 后确认 `LOCAL_MAIN=328c29cdb5655f367caff73f5e64480106b59365`、`ORIGIN_MAIN=328c29cdb5655f367caff73f5e64480106b59365`，`main...origin/main` 为 `0 0`；当前 research worktree 继续只在 `.worktrees/claude-code-risk-analysis` 内推进，未影响主分支与其他 worktree。
+- 本轮新增 `171-安全载体家族重新激活治理与就绪治理分层`，核心判断是：`170` 已经证明 cleanup 线未来即便长出 reactivation governor，也只是在回答“新的 truth 何时真正接管 active world”；但继续看 `services/mcp/types.ts` 的 `connected / pending / needs-auth / failed / disabled` 联合状态机、`useManageMCPConnections.ts` 的 `pluginReconnectKey` 触发 pending 初始化、`useMcpConnectivityStatus.tsx` 与 `/mcp` health 的失败/鉴权 surface、`ReadMcpResourceTool.ts` 的 connected hard gate，以及 `toolExecution.ts` 的 `connected -> needs-auth` 运行时降级，会发现更深层的问题已经不再只是 “谁来让当前世界接管”，而是 “谁来决定这个当前世界现在到底能不能用”。也就是说，`artifact-family cleanup reactivation-governor signer` 仍不等于 `artifact-family cleanup readiness-governor signer`。
+- 本轮最硬的源码证据有三组。第一组是状态机正例：`MCPServerConnection` 明确把 client truth 拆成 `connected / pending / needs-auth / failed / disabled`；`useManageMCPConnections.ts:765-853` 又在 `/reload-plugins` 后把新 client 先置成 `pending`，说明 reactivation 只是在重开 readiness lifecycle，而不是直接签发 ready truth。第二组是 surface 正例：`useMcpConnectivityStatus.tsx:25-63` 持续对 `failed` 与 `needs-auth` 发通知；`ManagePlugins.tsx:512-519` 和 `cli/handlers/mcp.tsx:26-35` 又把 `connected / pending / needs-auth / failed` 分成不同可见状态，说明 repo 不把 active truth 偷写成 usable truth。第三组是消费与撤销正例：`ReadMcpResourceTool.ts:78-95` 只接受 `client.type === 'connected'`；`toolExecution.ts:1599-1628` 则会在 `McpAuthError` 时把一个原本 connected 的 client 降成 `needs-auth`，说明 readiness 不只独立于 reactivation，而且会被运行时证据持续撤销。
+- 本轮因此同步补入 `appendix/155-安全载体家族重新激活治理与就绪治理分层速查表` 与 `source-notes/22-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的就绪治理边界`。这样 `171` 不再停留在 “reactivation != readiness” 的抽象口号，而是第一次把 `reactivation decision / readiness decision / positive control / cleanup readiness gap / governor question` 压成回查矩阵，并把联合状态机、surface grammar、tool hard gate 与 runtime downgrade 四条正例放进同一篇源码剖面里。
+- 这也把下一候选自然推进到 `172`：既然 `171` 已经证明 active world 当前可用性仍要单独签字，那么下一层最值得继续追问的就不再只是 “它现在能不能用”，而是 “它能否持续保持可用”。也就是：`artifact-family cleanup readiness-governor signer` 仍不等于 `artifact-family cleanup continuity-governor signer`，需要继续研究 auto-reconnect backoff、onclose recovery、auth revocation 与 repeated downgrade path 如何把 current readiness 和 cross-time continuity 继续拆开。
 
 ### A093. 重配置治理之后仍要继续分出重新激活治理：Claude Code 当前即便知道旧 cleanup 对象应按哪组 current config 重新工作，也还没有谁被正式授权决定这组 truth 何时真正接管当前世界
 
