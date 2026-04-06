@@ -1,9 +1,14 @@
-# 技能发现、静态 listing 与 remote skills 索引
+# 附：技能发现、静态 listing 与 remote skills 索引
 
 这页只做速查，不替代长文专题。长文解释请结合：
 
 - `05-控制面深挖/15-技能发现、静态 listing 与 remote skills：为什么“relevant skills”不是技能总表.md`
 - `05-控制面深挖/13-system-init、技能提醒与 SkillTool：Claude 如何看见可用能力.md`
+
+它不是这组索引的主判断前门，而是补充 `03` 的附页：
+
+- `03` 先回答“给谁看哪层、谁最后拍板”。
+- 这页再补“线程/回合路径、remote skills 与反馈面有哪些额外边界”。
 
 先记这一页的最短三分法：
 

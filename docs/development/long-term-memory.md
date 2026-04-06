@@ -26,6 +26,7 @@
   - 能力曝光链再往上收一层时，最稳的根词不是“技能表”，而是 `runtime skill truth -> projection consumer / consumer subset -> capability projection -> runtime gate`；同一份运行时技能真相先按 consumer 分投影，再由 SkillTool 落成可调用集合。
   - 技能来源与触发真正成熟时，最稳的正文前门不该再从 `/skills` 菜单开始，而应从 `source -> projection -> runtime gate -> activation` 开始；只要先问“为什么菜单里没有它”，目录结构就会再次退回 UI 库存视角。
   - 扩展面信任真正成熟时，最稳的安全前门不该再叫“安全限制”，而应叫 `workspace trust -> source trust -> surface lock -> runtime gate`；Trust Dialog、plugin-only policy、managed-only hooks 和 frontmatter hooks/MCP servers 必须长期被写成不同层的主权判断，而不是一个总开关。
+  - 在扩展面里，“可见入口”应长期被写成发布承诺，而不是运行时事实；能看见不等于能注册，能注册也不等于能执行。这个判断是 Trust Dialog、plugin-only policy、managed-only hooks 与 SkillTool/runtime gate 能共用同一套治理语言的关键。
 - `userbook/04-专题深潜/README` 与 `userbook/05-控制面深挖/README` 现已继续把最近几批稳定下来的三组最小顺序推进到专题入口层：
   - `04` 现在更明确把专题层写成“工作对象入口 + 最小排查顺序 + 何时退回控制面/主线重新定题”。
   - `05` 现在更明确把控制面层写成“控制面入口 + 哪组顺序在起作用 + 哪些相邻入口是替身 + 何时应退回上一层”。

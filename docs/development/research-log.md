@@ -23,6 +23,7 @@
 - 本轮能力曝光链结论: 已把并行 Agent 的结论前推到 userbook 主文里，明确 `/skills`、`system/init`、`skill_listing`、`skill_discovery` 与 SkillTool runtime 各自属于不同对象链；`relevant skills` 不是技能总表，而是当前任务最值得先看的能力曝光子集，真正能不能调仍要过 runtime gate。
 - 本轮能力曝光链深化结论: 已继续吸收并行 Agent 的 `13` 侧线结论，把这条控制面根式再压一层为 `runtime skill truth -> projection consumer / consumer subset -> capability projection -> runtime gate`：能力看见方式本身就是发布承诺，因此 userbook 只能写发布链、提醒链、调用链，不能把这些投影重新压扁成一张 inventory。
 - 本轮技能来源/信任前门深化动作: 已继续更新 `userbook/05-控制面深挖/12`、`14`、`03-参考索引/03-技能与扩展/README`、`03-能力曝光、技能提醒与发现机制索引` 与 `04-技能发现、静态 listing 与 remote skills 索引`，把技能来源、扩展信任与索引页统一到两条前门公式：`source -> projection -> runtime gate -> activation` 与 `workspace trust -> source trust -> surface lock -> runtime gate`。
+- 本轮 trust 侧线补口结论: 已吸收并行 Agent 的 `14` 侧线结论，把扩展面信任再压一层为“可见入口是发布承诺，不是运行时事实”；同时明确 `plugin-only policy` 是 source/surface gate，`managed-only hooks` 是 hooks runtime gate，二者不能继续被压成同一层“安全限制”。
 - 本轮目录结构深化结论: 技能与扩展这组目录当前最值钱的优化，不再是补更多来源表或搜索细节，而是防止正文和索引页重新从 `/skills`、Trust Dialog、`relevant skills` 这些 UI 投影起笔；一旦从投影起笔，读者会重新学回“菜单/限制清单”而不是运行时对象链。
 - 本轮根仓同步检查更新: 截至 `2026-04-06` 当前检查时，根仓库 `main=389cd49369e3207954e8c6b5ceca7788013c4e38`、`origin/main=ec7519566b3abf2659fb3d65899dc7d2bad983da`，`rev-list --left-right --count main...origin/main` 返回 `49 0`；根仓仍存在未解决冲突，因此本轮继续只记录基线，不对根仓执行任何 merge/pull 写操作。
 - 本轮节奏运营补口动作: 已继续更新 `userbook/04-专题深潜/10`，把 `/usage`、`Context Usage`、`/cost` 与 `/stats` 的边界再压一层，明确 `/usage` 看 admitted budget window、`Context Usage` 看当前 working set 是否值得继续占住窗口、百分比只是信号而不是 verdict；同时把“把这几张表混成一张，节奏判断就会失真”补成专题页的最短警句。

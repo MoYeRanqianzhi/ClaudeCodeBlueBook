@@ -48,6 +48,11 @@ Claude Code 治理的不是“能力本身”，而是“能力来自谁”。
 
 这组顺序的核心，是把“安全限制”收回 `workspace trust -> source trust -> surface lock -> runtime gate`，而不是把 Trust Dialog、policy 和 hooks 总闸压成一个开关。
 
+更短的判断是：
+
+- 可见入口是发布承诺，不是运行时事实。
+- 看见了，不等于已注册；已注册，也不等于会执行。
+
 ## 进入本页前的 first reject signal
 
 看到下面迹象时，应先回到信任对象链，而不是继续把限制写成一锅：
@@ -215,6 +220,11 @@ hooks 这层最复杂，因为它有两个不同治理维度。
 - plugin-only policy 和 allowManagedHooksOnly 不是一回事
 - 一个在来源层锁 surface
 - 一个在 hooks 执行层收窄到 managed-only
+
+更直接地说：
+
+- plugin-only policy 决定“谁能把声明带进来”。
+- managed-only hooks 决定“带进来后谁还能活着执行”。
 
 ### hooks UI
 
