@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/29 / 30 / 31` 现已把三条宿主接入审读手册统一到当前对象链：
+  - `29` 现已把 Prompt 宿主接入从 `compiled request truth / section breakdown / continue qualification` 收紧到 `message lineage / projection consumer / continuation qualification`。
+  - `30` 现已把治理宿主接入从 `authority source / pending action / continuation gate` 收紧到 `governance key / externalized truth chain / typed ask / continuation pricing`。
+  - `31` 现已把结构宿主接入从 `authority state / recovery boundary / anti-zombie result` 收紧到 `authority object / per-host authority width / event-stream-vs-state-writeback / anti-zombie`。
+- 新的长期结论：
+  - 目录路由真正成熟时，不应只让 README 换代；与 README 对应的第一层执行手册也必须共用同一套对象名，否则读者会在“入口正确、正文过时”之间反复来回跳。
+  - 宿主接入手册真正成熟时，不再把“能显示 mode / token / spinner / summary”误写成“接入已完成”；更稳的写法是三条母线各自都先点名宿主正在消费哪个正式对象。
 - `playbooks/14 / 35 / 77` 与 `navigation/45` 现已把 Prompt 执行链统一到当前对象链：
   - `14` 现已把 Prompt Evidence Envelope 从 `compiled request truth / stable bytes / handoff state` 的旧前门词，压到 `message lineage / protocol transcript / lawful forgetting boundary / continuation object` 的角色化消费顺序。
   - `35` 现已把 Prompt 宿主验收从“compiled request truth 验收卡”继续压到 `message lineage / projection consumer / protocol transcript / lawful forgetting boundary / continuation qualification`。
