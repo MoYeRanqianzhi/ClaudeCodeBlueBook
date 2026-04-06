@@ -12,6 +12,7 @@
 - 本轮命令索引职责收口动作: 已继续更新 `03-参考索引/01-命令工具/01`、`04`、`05`，把它们分别收回“库存页 / plane 对照页 / 运行时对象页”的职责：`01` 现在更明确只回答命令名 inventory；`04` 现在更明确先分会外 lifecycle plane 与会内 session plane；`05` 现在更明确先分 `state truth -> trustworthiness -> decision window -> session tuning / display` 这条对象链。
 - 本轮目录结构深化结论: 命令工具索引页如果不能先交付命令对象链，而只继续罗列命令名和字段表，就会把上一轮已经在控制面长文里稳定下来的真相链重新打回按钮说明书；因此这批优先修前门句法，而不是继续补更多命令库存。
 - 本轮命令索引总公式补口动作: 已继续吸收并行 Agent 的源码结构侧线结论，把命令工具这一组再压成一条更短的总公式 `plane -> object -> semantics -> gate`，并回写到 `03-参考索引/01-命令工具/README` 与 `06`。这条公式把 `04` 固定成 plane reject 页、`06` 固定成主判断页、`01` 固定成 inventory，进一步减少索引层重新长回按钮说明书的风险。
+- 本轮命令索引角色补口动作: 已继续吸收并行 Agent 的源码结构侧线结论，把 `03-CLI 旗标与根命令索引` 固定成 root plane 投影页，并在 `命令工具/README` 里把 `03 / 04 / 05 / 06` 的各自职责写清，避免这组页继续以“都在讲命令”相互覆盖。
 - 本轮设置/预算链补口动作: 已继续吸收并行 Agent 的治理侧线结论，把 `03-参考索引/01-命令工具/05` 与 `05-控制面深挖/10` 的最短对象链进一步压成 `state truth -> trustworthiness -> decision window -> continuation path -> session tuning / display`，并明确 `/extra-usage`、`/rate-limit-options` 属于 continuation path，而不是观测层。
 - 本轮目录结构深化结论: 命令工具这组目录当前最值钱的优化，不再是再补更多命令名，而是避免 `01 / 04 / 05 / 06` 四页重新互相替代。只有当库存、plane 对照、运行时对象与执行语义各自守住自己的职责，later maintainer 才不会在索引层重新学回“名字相近就是同一类”的旧心智。
 - 本轮主分支同步检查: 根仓库当前 `main=efca1092e8bb3ab5da4f65fdc7d615cf502d3493`、`origin/main=ec7519566b3abf2659fb3d65899dc7d2bad983da`；`git fetch origin --prune` 成功，但根仓库 `main` 比 `origin/main` 超前 `14` 个提交且存在未解决 index，`git checkout main && git merge --ff-only origin/main` 被根仓库自身冲突状态阻塞，因此本轮不触碰根仓库，只在 `.worktrees/mainloop` 内推进。

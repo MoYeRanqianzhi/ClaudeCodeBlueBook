@@ -21,6 +21,10 @@
 
 所以这页不是“更多旗标说明书”，而是“进程启动怎样把一个工作世界装起来”的索引页。
 
+如果把这页再压成更短的角色句，只剩一句：
+
+- 这是 root plane 的投影页，先分 `flag / root command / fast-path`，再分它们各自承载的 lifecycle semantics 与 visibility。
+
 ## 进入本页前的 first reject signal
 
 如果你现在问的是下面这些问题，就不该先看这页：
