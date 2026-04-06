@@ -6,6 +6,10 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮控制面/架构同词化动作: 已继续更新 `bluebook/07`、`09`、`architecture/83` 与 `architecture/84`，把上一轮已进入 builder/frontdoor/template 的三组最小顺序回灌到运行时契约、总图和架构主图。
+- 本轮 Prompt/runtime contract 动作: `07` 与 `09` 现在更明确把 Prompt 线的最小排查顺序固定成 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`，并把它写成 later maintainer 应先回的最小 witness order，而不是继续回 `systemPrompt` 截图或 summary prose。
+- 本轮治理架构动作: `architecture/83` 现在新增治理最小 failure order：`reject / degrade / halt / cleanup-before-resume / human-fallback`，并要求 later maintainer 能在不提 mode、modal、usage、compact 的情况下仍然点名当前 failure verdict 落在哪一格。
+- 本轮当前真相架构动作: `architecture/84` 现在新增 later maintainer 的最小 reject order：`shim exit condition -> recovery asset non-sovereignty -> stale authority / ghost capability eviction -> retreat layer`，并把“失真时先退哪一层”明确进当前真相线的追问。
 - 本轮 builder/frontdoor 同词化动作: 已继续更新 `guides/49` 与 `navigation/15`，把上一批补到 `62 / 30 / 32` 的治理位置学、Prompt witness 与 later-maintainer reject 继续对齐到治理 builder 和高阶前门。
 - 本轮治理 builder 动作: `guides/49` 现在更明确把六步治理顺序压成 `Narrow / Later / Outside` crosswalk，并把 `reject / degrade / halt / cleanup-before-resume / human-fallback` 明确写成 runtime failure verdict，而不是 UX 文案。
 - 本轮高阶前门动作: `navigation/15` 现在更明确把 Prompt witness 顺序、治理 failure order 与当前真相线的 later-maintainer reject 顺序写进失稳前追问入口，避免前门继续停在“更强 / 更严 / 更先进”的结果词。

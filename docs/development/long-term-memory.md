@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/07`、`09`、`architecture/83` 与 `architecture/84` 现已继续把最近几批写进前门、builder 和审读模板的 object order 回灌到控制面宪法和架构主图：
+  - `07` 现在更明确把 `Prompt witness order / governance failure order / current-truth reject order` 写成 runtime contract 的 shared order，而不再只存在于模板页。
+  - `09` 现在更明确要求三张控制面图各自导出 later maintainer 可直接拿来排查的最小顺序，不再只导出 canonical formula。
+  - `architecture/83` 现在更明确给出治理最小 failure order：`reject / degrade / halt / cleanup-before-resume / human-fallback`。
+  - `architecture/84` 现在更明确给出 later maintainer 的最小 reject order：`shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer`。
+- 新的长期结论：
+  - 只有当运行时契约页、控制面总图、架构页、builder 和审读模板同时导出同一组最小顺序时，蓝皮书才真正从“同词化”进入“同序化”；否则 later maintainer 仍会在不同层拿到不同的排查顺序。
+  - Prompt 线真正成熟时，不只要有 canonical chain 和 witness object，还要有 later maintainer 的最小 witness order；治理线真正成熟时，不只要有 pricing chain，还要有最小 failure order；当前真相线真正成熟时，不只要有 current-truth surface，还要有最小 reject order 与 retreat layer。
 - `guides/49` 与 `navigation/15` 现已继续把审读模板回灌到 builder/frontdoor：
   - `guides/49` 现在更明确把治理 builder 六步与 `Narrow / Later / Outside` 对齐，并补出 `reject / degrade / halt / cleanup-before-resume / human-fallback` 五类 failure verdict。
   - `navigation/15` 现在更明确把 Prompt 线 witness 顺序、治理线 failure order 与当前真相线 later-maintainer reject 顺序前推成高阶前门问题。
