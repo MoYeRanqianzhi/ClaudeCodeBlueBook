@@ -74,4 +74,5 @@
 - [64-remoteSessionUrl、remoteConnectionStatus、remoteBackgroundTaskCount 与 busy_waiting_idle：为什么 remote session 的持续状态面和 direct connect 的当前交互面不是同一种状态来源.md](./64-remoteSessionUrl、remoteConnectionStatus、remoteBackgroundTaskCount%20与%20busy_waiting_idle：为什么%20remote%20session%20的持续状态面和%20direct%20connect%20的当前交互面不是同一种状态来源.md)
 - [65-stream_event、task_started、task_notification 与 transcript_overlay_stderr：为什么 remote session 是持续事件流消费者，而 direct connect 只是离散交互投影.md](./65-stream_event、task_started、task_notification%20与%20transcript_overlay_stderr：为什么%20remote%20session%20是持续事件流消费者，而%20direct%20connect%20只是离散交互投影.md)
 - [66-stream_event、task_started、status、remote pill 与 BriefIdleStatus：为什么同一 remote session 事件不会以同样厚度出现在每个消费者里.md](./66-stream_event、task_started、status、remote%20pill%20与%20BriefIdleStatus：为什么同一%20remote%20session%20事件不会以同样厚度出现在每个消费者里.md)
+- [67-slash_commands、stream_event、task_started 与 status_compacting：为什么 remote session 的命令集、流式正文、后台计数与 timeout 策略不是同一种消费者.md](./67-slash_commands、stream_event、task_started%20与%20status_compacting：为什么%20remote%20session%20的命令集、流式正文、后台计数与%20timeout%20策略不是同一种消费者.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。
