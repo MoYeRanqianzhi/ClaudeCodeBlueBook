@@ -8,6 +8,107 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `userbook/04-专题深潜/README` 与 `userbook/05-控制面深挖/README` 现已继续把最近几批稳定下来的三组最小顺序推进到专题入口层：
+  - `04` 现在更明确把专题层写成“工作对象入口 + 最小排查顺序 + 何时退回控制面/主线重新定题”。
+  - `05` 现在更明确把控制面层写成“控制面入口 + 哪组顺序在起作用 + 哪些相邻入口是替身 + 何时应退回上一层”。
+- 新的长期结论：
+  - 当 `userbook` 的主线使用、专题深潜、控制面深挖三层都开始共用同一组顺序时，目录结构优化才真正从“给用户目录”进化成“给用户工作动作”。
+  - 专题入口真正成熟时，不能只列长文标题；它必须先帮助用户回答“我现在推进的是哪个工作对象、先按哪组顺序排、哪些相邻入口必须先拒收”。控制面入口也同理。
+- `userbook/README`、`00`、`01-主线使用/README`、`01`、`02`、`04` 与 `05` 现已继续把蓝皮书主线里稳定下来的顺序前推到使用者第一跳：
+  - `userbook/README` 现在更明确把第一跳从三条使用判断扩成三组最小排查顺序。
+  - `00` 现在更明确把“先过 same-world / decision window / stable bytes vs working set”继续压成用户能直接执行的三步动作。
+  - `01-主线使用/README` 现在更明确把主线使用五页和三条母线/三组顺序对应起来。
+  - `01`、`02`、`04`、`05` 现在更明确把入口、输入编译、恢复链和开工前自检都写成用户侧最小顺序，而不是只给概念说明。
+- 新的长期结论：
+  - 只有当 `userbook` 第一跳也开始交付最小排查顺序，而不只交付目录和概念时，蓝皮书体系才真正把“同序化”从 later maintainer 推进到普通使用者。
+  - Prompt witness order、治理 failure order、当前真相 reject order 一旦能被翻译成用户侧动作顺序，说明这一轮概念已经足够稳定；如果还只能在架构页里成立，就说明它仍未成熟到可用层。
+- `bluebook/README`、`navigation/README`、`06` 与 `navigation/05` 现已继续把最近几批稳定下来的顺序前推到入口层：
+  - `bluebook/README` 现在更明确把入口从 canonical formula 扩成 canonical formula + 三组最小排查顺序。
+  - `navigation/README` 现在更明确把跨目录入口扩成“公式 + 顺序 + 证据层”的三段式。
+  - `06` 现在更明确把目录结构优化的下一步定义成从“同词化”升级到“同序化”。
+  - `navigation/05` 现在更明确把并行多 Agent 深挖后的成熟合流标准写成“主语和顺序同时合流”。
+- 新的长期结论：
+  - 入口页如果只能给 canonical formula、却给不出最小排查顺序，就仍停在 route map 层；真正成熟的入口页必须同时交付问题、顺序和证据层。
+  - 目录结构优化真正值钱的下一阶段，不再是再补入口，而是把 `README / navigation / high-level philosophy` 全部推到“同序化”；否则同一问题在不同入口仍会有不同的第一步动作。
+- `bluebook/07`、`09`、`architecture/83` 与 `architecture/84` 现已继续把最近几批写进前门、builder 和审读模板的 object order 回灌到控制面宪法和架构主图：
+  - `07` 现在更明确把 `Prompt witness order / governance failure order / current-truth reject order` 写成 runtime contract 的 shared order，而不再只存在于模板页。
+  - `09` 现在更明确要求三张控制面图各自导出 later maintainer 可直接拿来排查的最小顺序，不再只导出 canonical formula。
+  - `architecture/83` 现在更明确给出治理最小 failure order：`reject / degrade / halt / cleanup-before-resume / human-fallback`。
+  - `architecture/84` 现在更明确给出 later maintainer 的最小 reject order：`shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer`。
+- 新的长期结论：
+  - 只有当运行时契约页、控制面总图、架构页、builder 和审读模板同时导出同一组最小顺序时，蓝皮书才真正从“同词化”进入“同序化”；否则 later maintainer 仍会在不同层拿到不同的排查顺序。
+  - Prompt 线真正成熟时，不只要有 canonical chain 和 witness object，还要有 later maintainer 的最小 witness order；治理线真正成熟时，不只要有 pricing chain，还要有最小 failure order；当前真相线真正成熟时，不只要有 current-truth surface，还要有最小 reject order 与 retreat layer。
+- `guides/49` 与 `navigation/15` 现已继续把审读模板回灌到 builder/frontdoor：
+  - `guides/49` 现在更明确把治理 builder 六步与 `Narrow / Later / Outside` 对齐，并补出 `reject / degrade / halt / cleanup-before-resume / human-fallback` 五类 failure verdict。
+  - `navigation/15` 现在更明确把 Prompt 线 witness 顺序、治理线 failure order 与当前真相线 later-maintainer reject 顺序前推成高阶前门问题。
+- 新的长期结论：
+  - 只有当前门、builder 和审读模板同时使用同一组 object chain / failure order / reject order 时，蓝皮书才真正进入“同词化”阶段；否则 later maintainer 仍会在不同层学到不同版本的制度语言。
+  - `mode / modal / usage / compact / default continue` 这类 projection 替身必须在前门和 builder 两层同时被持续拒收；只在一层写硬，另一层迟早会把它们重新扶正成治理真相。
+- `architecture/62`、`guides/30` 与 `guides/32` 现已继续把前门 canonical formula 压进审读模板：
+  - `architecture/62` 现在更明确把 `Narrow / Later / Outside` 写成治理位置学：宽度治理对应 `governance key / typed ask / capability surface`，时间治理对应 `decision window / continuation pricing / decision gain`，位置治理对应 `externalized truth / replacement carrier / durable-transient cleanup`，并补出 `reject / degrade / halt / cleanup-before-resume / human-fallback` 五类失败判词。
+  - `guides/30` 现在更明确把 Prompt 线 canonical object chain、`same-world witness` 六元组、route shorthand 边界与前门禁词写进苏格拉底问题链与记录卡。
+  - `guides/32` 现在更明确把源码先进性的 `failure object`、later maintainer 最小 reject 规则和“坏掉时先退哪一层”写成显式审读项。
+- 新的长期结论：
+  - `same-world test` 只有同时进入控制面深页和审读模板才算真正稳定；否则 later maintainer 还是会在排障时退回 `systemPrompt` 截图、最后一条消息或 summary prose。
+  - `Narrow / Later / Outside` 只有和 `governance key / decision window / continuation pricing / cleanup` 这组治理对象一一回绑时，才不是三句口号；一旦离开这些对象，modal、usage 条、compact、default continue 就会重新篡位成治理真相。
+  - 源码先进性只有在 later maintainer 拿到独立 reject 权、failure object 命名和退层协议之后，才算从 happy-path 工程法升级成制度；否则“可演化”仍只是作者视角的好感觉。
+- `bluebook/07`、`09`、`architecture/52`、`architecture/63`、`guides/31` 与 `navigation/README` 现已继续把前门 canonical formula 往深页对象和失效判据推进：
+  - `07` 与 `09` 现在更明确把 Prompt 线写成 multi-surface world-entry object，并补出 `same-world` 的最小 witness 链：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`。
+  - `09` 现在更明确把治理线 failure semantics 写成 `deny / ask / rollback / cleanup / halt / step-up`，并把 later maintainer 的最小 reject 规则继续推到当前真相线前门。
+  - `architecture/52` 现在更明确要求五法各自回答自己在防哪类 `failure object`；`architecture/63` 现在更明确补出 `config / deps / leaf / recovery asset` 何时失去可演化资格，以及 later maintainer 的最小 reject 规则与回退协议。
+  - `guides/31` 现在更明确把 projection 篡位、verdict signer、durable/transient 清空、`minimum legal degraded shape` 与“删掉 dashboard/compact 术语后论证是否仍成立”补进治理苏格拉底问题链。
+  - `navigation/README` 现在更明确把并行多 Agent 深挖固定成按 question domain 拆题，并把 README 混层直接标成结构失真。
+- 新的长期结论：
+  - Prompt 线真正成熟时，不能只说“same-world test”，还要给出最小 witness object；没有 witness，later maintainer 仍会退回 `systemPrompt`、最后一条消息或 summary prose 当主语。
+  - 治理线真正成熟时，不能只说“统一定价”，还要写清 failure verdict、谁在签发这些 verdict，以及删掉 dashboard/compact/modal 语言后论证是否仍成立。
+  - 源码先进性真正成熟时，不能只说“五法”或“可演化内核”，还要补 later maintainer 可执行的失效判据、最小 reject 规则与回退协议；否则仍会退回 happy-path 工程法或目录体感。
+- `bluebook/03`、`06`、`README`、`navigation/05`、`navigation/15`、`guides/49` 与 `guides/51` 现已继续把“继续深入”本身写成可复用制度：
+  - `03` 现在更明确把设计内涵压成 `world-defining right / pricing right / stale-writer veto right` 三种主权安排，并补出 Prompt 线“语义压缩强于信息堆叠”的坏解链，以及源码质量怎样通过 invariant / failure / user distortion 三格直接变成产品能力。
+  - `06` 现在更明确把并行多 Agent 深挖写成 question-domain 拆题纪律，并新增 `7.10 并行判据`，防止主线页在合并时重新长回 route words。
+  - `bluebook/README`、`navigation/05` 与 `navigation/15` 现在更明确把目录优化写成“第一问题单源化 + 证据层分工 + `09 / 05 / 15 / 41` merge frontdoor”，而不是继续增殖 route map。
+  - `guides/51` 现在更明确给出 `same-world test` 的最小 witness object：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`。
+  - `guides/49` 现在更明确把治理控制面 builder 顺序改成 `authority -> typed decision -> visibility pricing -> decision window -> continuation pricing -> outside pricing`，并把 mode、审批弹窗、usage 条、default continue、compact 技巧统一降为不得篡位治理真相的 projection 替身。
+- 新的长期结论：
+  - 设计内涵真正成熟时，不能再停在“Prompt 更强 / 安全更严 / 源码更先进”这组三句赞美；更稳的写法必须回答谁定义世界、谁批准扩张、谁否决陈旧写入。
+  - 目录结构优化真正成熟时，核心不是入口更多，而是同一类第一问题只能在一个稳定前门第一次被回答；并行多 Agent 也应按 question domain 拆，而不是按文件库存拆。
+  - Prompt 线真正成熟时，`same-world test` 需要一个最小 witness object；治理线真正成熟时，`decision window -> continuation pricing -> outside pricing` 的先后因果必须写硬，不能再被 dashboard、compact 技巧或 default continue 抢走前门。
+- `userbook/03-参考索引/06`、`api/24`、`api/35`、`api/52`、`guides/46` 与 `guides/52` 现已继续把 reference 页、宿主消费页、rollout evidence 页和 builder 页统一到同一组 canonical formula：
+  - `userbook/03-06` 现在更明确把高价值入口速查写成 `same-world test / decision window / truth ladder + consumer subset / rollback object boundary`。
+  - `api/24` 现在更明确把 API 全谱系页写成 `same-world test / decision window / truth ladder + consumer subset / failure semantics + rollback object`。
+  - `api/35` 现在更明确把 rollout evidence 页写成 `same-world test / decision window / current truth bundle / rollback object boundary`，并把 first reject signal 补成账单页误读、event replay 误读和文件回退误读。
+  - `api/52` 与 `guides/52` 现在更明确把治理宿主消费面写成 `externalized truth chain / decision window / continuation pricing + rollback object`。
+  - `guides/46` 现在更明确把宿主落地模板写成 `same-world test / decision window / current truth bundle / rollback object boundary`。
+- 新的长期结论：
+  - 参考索引页、宿主消费页和 builder 页真正成熟时，不能只会列接口、命令或接入顺序；它们也必须先回答 `same-world test / decision window / rollback object boundary`。否则 later maintainer 会在“怎么接 / 怎么看 / 怎么运营”这三类高频工作面重新学回 UI 投影视角。
+  - `Context Usage` 只要离开 `decision window` 语言，就会在宿主消费页和 rollout evidence 页立刻退回账单页或仪表盘；这是当前最该持续守住的 noun discipline 之一。
+  - 宿主消费链现在已经有了一组更稳定的 current truth bundle：`worker_status + external_metadata + session_state_changed`。后续任何 rollout / host / control / evidence 文档都应优先复用这组主语，而不是再各自发明一版状态对象名。
+- `userbook/03-参考索引/02 / 04`、`api/23`、`api/35` 与 `guides/102` 现已继续把参考页、宿主消费页和证据分级页统一到同一组公式和 visible nouns：
+  - `userbook/03-参考索引/02 / 04` 现在更明确先问 `same-world test / decision window / truth ladder + danger surface / failure semantics`，不再先把索引页写成功能目录或层级表。
+  - `api/23` 现在更明确把宿主支持矩阵前门写成 `same-world test / decision window / existence -> implementation visibility -> current admission -> product promise / truth ladder + consumer subset`。
+  - `api/35` 现在更明确把 rollout 证据消费页写成 `same-world test / decision window / worker_status + external_metadata + session_state_changed / rollback object boundary`。
+  - `guides/102` 现在更明确把正文剩余旧词收回 `current-truth surface candidate / consumer subset`，只把旧词保留在文件名兼容层。
+- 新的长期结论：
+  - 参考索引页和宿主消费页，是能力矩阵和使用指南之后下一批最容易让 doctrine 回流旧 visible nouns 的入口；只要这些页还在用旧词或只列目录，later maintainer 就会在“速查 / 集成 / rollout”这三类高频工作面重新学回旧世界观。
+  - `same-world test / decision window / truth ladder + consumer subset / rollback object boundary` 现在已经形成一组可同时覆盖 reference、host-consumption 和 rollout-evidence 的 canonical formula。后续最值钱的动作，不是再造新公式，而是继续扫剩余索引页、手册页和矩阵页，看哪些还没显式承认这组公式。
+- `bluebook/08 / api/README / security/README / risk/README / userbook/04-10` 现已继续把 canonical formulas 前推到能力矩阵、宿主真相消费前门、安全 signer/ledger 前门、用户侧风险结算面与状态预算运营页：
+  - `08` 现在更明确把矩阵前门写成 `same-world test / decision window / existence -> implementation visibility -> current admission -> product promise`。
+  - `api/README` 现在更明确把宿主 API 前门写成 `same-world test / decision window / truth ladder + failure semantics`。
+  - `security/README` 现在更明确把安全前门写成 `decision window / signer + ledger + cleanup / failure semantics`。
+  - `risk/README` 现在更明确把风控前门写成 `governance key / decision window + product promise / signer + evidence + reopen`。
+  - `userbook/04-10` 现在更明确把状态预算页写成 `same-world test / decision window / stable bytes + working set`。
+- 新的长期结论：
+  - 目录结构的高价值工作，已经从“加更多入口”转成“让不同入口对同一个 noun discipline 负责”。能力矩阵、API README、安全首页、风控首页和状态预算页，分别承载的是 capability judgment、host truth consumption、signer/ledger、user-side settlement 和 rhythm operation；只要它们再次混词，later maintainer 就会重新学回表象。
+  - `same-world test / decision window / truth ladder + failure semantics / signer + evidence + reopen` 现在已经形成一组可跨目录复用的 canonical formula。下一轮最值钱的动作，不是发明新公式，而是继续扫剩余入口页，看哪些页还没有显式承认这组公式。
+  - capability matrix 真正成熟时，不只是四层矩阵做得清楚，还要先承认 Prompt 与治理两条高阶判断；否则矩阵页仍会退回“列功能、标支持度”的浅层工作。
+- `bluebook/01 / 04 / 05 / navigation/README` 现已继续把 canonical formulas 前推到地图页、能力边界页、功能页与跨目录页：
+  - `01` 现在更明确把源码地图前门写成 `truth ladder + failure semantics`，而不是目录树展开图。
+  - `04` 现在更明确把公开度判断压成 `existence -> current visibility -> current admission -> product promise` 与治理侧的 `externalized truth chain -> decision window -> current admission -> product promise`。
+  - `05` 现在更明确把功能/API 总览写成 `same-world test / decision window / truth ladder + failure semantics`，不再让功能表答案抢前门。
+  - `navigation/README` 现在更明确把跨目录问题先压回四条 canonical formula，再决定去哪一层找证据。
+- 新的长期结论：
+  - 地图页、能力边界页、功能页和跨目录页，是导读页之后第二批最容易把 doctrine 写回旧 visible nouns 的入口；只要它们还在用目录体感、功能表、mode 条或 usage dashboard 当首句，later maintainer 就会在这里重新学错对象。
+  - canonical formula 真正成熟时，不只要回答“怎么用”和“为什么”，还要回答“这页第一句该先用什么 noun”；也就是说，目录结构优化的深层工作，其实是持续做 visible noun discipline。
+  - `truth ladder + failure semantics` 现在已经从哲学页推进到源码地图、功能表与跨目录页；下一轮最值钱的动作是继续把它推进到能力矩阵、API README 与 remaining userbook 状态/预算页，彻底清掉旧的 `authoritative surface / adapter subset` 可见词。
 - `bluebook/02 / 03 / philosophy/76 / userbook/01-05` 现已继续把 canonical formulas 变成使用动作和 atlas 语言：
   - `02` 现在更明确要求使用层先过 `same-world test / decision window / stable bytes vs working set`，再谈技巧。
   - `03` 现在更明确把 `truth ladder + failure semantics` 写成制度设计前门，而不是只在源码质量深页出现。

@@ -14,6 +14,17 @@
 
 如果 later maintainer 第一次进蓝皮书时还看不见这三条，目录结构就还在迫使他先学对象层总结，再自己回压成第一性原理。
 
+如果继续把入口压成 later maintainer 能直接拿来排查的最小顺序，它还应再暴露三行：
+
+1. Prompt witness order
+   - `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+2. governance failure order
+   - `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
+3. current-truth reject order
+   - `shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer`
+
+前门如果只给公式，不给这三组顺序，later maintainer 仍要下潜到深页后才拿得到真正的排查起点；这说明入口层还没有完成从“同词化”到“同序化”的升级。
+
 根 README 的职责只有三层：先定题，再定证据层，最后才决定要不要跨目录跳转；它不再负责把整套深链重新摊平。
 
 ## 目录职责
@@ -40,7 +51,29 @@
 - 第三步最后才决定要不要跨目录。
   只有当问题已经变成“下一层证据去哪里找”时，才进入 `navigation/`。
 
-## 三条深剖稳定入口
+## 四种继续深入法
+
+- 单线深剖
+  先定自己是在追 Prompt 世界准入、治理定价，还是当前真相保护；不要先按页名跳。
+- 第一性原理回压
+  先回 `06 -> 41`，确认高阶总结已经压回不可约判断，再决定要不要继续扩对象层。
+- 目录优化
+  先回 `README -> navigation/README -> 05 -> 15`，确认优化的是第一问题单源化与证据层分工，而不是新增 route map。
+- 并行多 Agent 深挖
+  先按 question domain 拆成 Prompt 魔力、安全/省 token、源码先进性、目录前门自校四题；最后统一回 `09 / 05 / 15 / 41` 合并，避免并行产生第二套入口词。
+
+## 三组最小排查顺序
+
+- Prompt
+  先按 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict` 排，不先看 `systemPrompt` 截图、最后一条消息或 summary prose。
+- 治理
+  先按 `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback` 排，不先看 mode、modal、usage、compact 或 default continue 这些投影替身。
+- 当前真相
+  先按 `shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer` 排，不先看目录体感、作者说明或“看起来还算能跑”的经验判断。
+
+如果入口层不给这三组顺序，目录结构优化就仍然主要在帮读者“找到页”，还没有开始帮 later maintainer “先拿到同一套排查动作”。
+
+## 四条深剖稳定入口
 
 - 想继续剖 Prompt 为什么会显得有魔力
   先走 `09 -> navigation/05 -> navigation/15 -> philosophy/84 -> architecture/82 -> guides/99 -> playbooks/77`，先校正模仿对象，再追第一条反证信号，最后才去看长期验证与回归；前门先问的是 `same-world test`，不是 Prompt 文案强不强。
@@ -48,6 +81,8 @@
   先走 `09 -> navigation/05 -> navigation/15 -> philosophy/85 -> architecture/83 -> guides/100 -> playbooks/78`，先确认 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 没有在入口层被写浅；最短 token 经济公式先记 `Narrow / Later / Outside + stable bytes + working set`。
 - 想继续剖源码先进性为什么不是目录更漂亮
   先走 `09 -> navigation/05 -> navigation/15 -> philosophy/76 / 86 / 87 -> architecture/84 -> guides/101 / 102 -> playbooks/79`，先把“当前真相保护”守住，再去谈热点文件、依赖图与 mirror gap；前门先认 `truth ladder`，再谈结构体感。
+- 想继续优化蓝皮书目录结构与写作迭代
+  先走 `06 -> navigation/README -> navigation/05 -> navigation/15 -> navigation/41 -> 各目录 README`，先确认同一类问题只在一个前门第一次被回答；目录优化不是再补 README，而是防止 later maintainer 在入口层重新学错对象。
 
 ## 按问题进入
 

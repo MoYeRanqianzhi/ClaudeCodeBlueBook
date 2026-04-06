@@ -12,6 +12,15 @@
 2. `Context Usage` 不是成本面板，而是 `decision window` 的诚实投影；没有决策增益的检查也是免费扩张。
 3. 真正省 token 不是把话压短，而是 `Narrow / Later / Outside`：冻结 stable bytes，只把当前 working set 留在场内。
 
+如果你还只想先记住三组最小排查顺序，也只先记这三组：
+
+1. Prompt
+   - 先看目标、附件/文件、当前 working set、下一步与 handoff 是否还指向同一个工作对象；不要先回 `systemPrompt` 截图、最后一条消息或 summary prose。
+2. 治理
+   - 先问这次该 `拒收 / 降级 / 停止 / 清理后恢复 / 升级给人` 的哪一格；不要先盯 mode、modal、usage 条、compact 或 default continue 这些投影替身。
+3. 当前真相
+   - 先看是不是旧 shim、旧恢复资产、旧 capability token 或旧 authority width 还在冒充当前世界；不要先看目录体感或作者说明。
+
 ## 按目标进入
 
 如果你不是来“按目录从头读”，而是想先解决眼前问题，建议直接按目标进入：
@@ -226,6 +235,7 @@
 - 所有关键结论尽量挂到源码注册点，而不是只挂到 UI 现象。
 - 功能按“稳定公开能力、灰度能力、内部能力”分层，不混写。
 - 入口页优先提醒你不要把 UI transcript、mode 条、token 百分比、长摘要或 slash 面板误当系统真相。
+- 入口页不只负责告诉你“去哪读”，也负责先给你最小排查顺序；如果一个入口只能给目录和概念，却给不出“先看哪一格”，它就还没成熟。
 - 源码锚点默认相对源码根 `../../claude-code-source-code/` 描述。该目录被主仓库 `.gitignore` 排除，不会跟随 worktree 一起复制。
 
 ## 结构导航

@@ -52,6 +52,18 @@
 - 哪些 consumer 只是在消费投影
 - 哪些 forgetting / handoff 之后仍保有合法 continuation
 
+这也意味着，这篇允许保留旧助记词，但 Prompt 线真正唯一 canonical object chain 仍只认：
+
+1. `message lineage`
+2. `section registry / stable boundary`
+3. `protocol transcript`
+4. `continuation object`
+5. `continuation qualification`
+
+`compile -> protocolize -> preserve -> continue -> explain` 只是动作链；
+`world entry / request assembly / six-stage assembly chain` 与 `request-surface constitution / cognitive contract / byte boundary / continuation truth` 只是 route shorthand。
+它们首次出现时，都必须回绑到上面这条 canonical object chain。
+
 ## 2. 第一性原理
 
 更强的 prompt 不是：
@@ -89,6 +101,12 @@
 判断标准：
 
 - 如果 REPL、SDK、bridge、resume 各自消费的是不同 projection，而不是同一条 compiled truth 的不同视图，后面所有“魔力”都会退化成路径偶然性。
+
+### 3.3.1 `same-world witness` 还可点名吗
+
+判断标准：
+
+- 如果已经点不出 `message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict` 这六个最小 witness，对“同一个世界”的判断就只剩修辞，不剩证明对象。
 
 ### 3.4 projection consumers 的矩阵是否明确
 
@@ -144,6 +162,12 @@
 
 - 如果 side query、summary、tool externalization、resume 结果不是在向不同 consumer 投影同一份 protocol truth，它们就在制造第二现场，而不是辅助主线。
 
+### 3.12.1 谁配重绑 witness，而不是静默重造世界
+
+判断标准：
+
+- 如果 `compact / resume / fork / handoff` 可以在不显式重绑 witness 的情况下继续行动，它们就在把“差不多的世界”冒充成同一个世界。
+
 ### 3.13 当再增加上下文已不可能改变结论时，系统会停止扩张 prompt 吗
 
 判断标准：
@@ -167,6 +191,7 @@
 5. 把 handoff 理解成“再写一段总结”，而不是延续同一工作主语。
 6. 把 projection consumer 的分工写坏后，还以为只是展示差异，而不是制度分叉。
 7. 把 cache break 理解成性能问题，而不是制度边界问题。
+8. 把 `systemPrompt` 截图、最后一条 assistant 消息或 summary prose 当成 Prompt 魔力主语。
 
 ## 5. 更好的迭代顺序
 
@@ -187,6 +212,7 @@ message lineage ref:
 lineage kernel 是否完整:
 当前主语:
 projection consumer matrix 是否对齐:
+same-world witness 是否完整:
 共享前缀生产者:
 section 宪法是否明确:
 dynamic boundary 是否稳定:
@@ -209,3 +235,4 @@ lawful forgetting ABI 是否成立:
 3. 我保住的是共享前缀和同一条 `message lineage`，还是只是保住了一段看起来熟悉的话。
 4. 我是在减少 projection consumer 的分叉，还是在把接手代价推给未来的人。
 5. 我能否解释这次强或弱是由哪类制度字节、哪条 continuation qualification 决定的。
+6. 我删掉 `systemPrompt` 截图、最后一条回复和 summary prose 后，这条 Prompt 论证还成立吗。

@@ -25,6 +25,17 @@
 
 - Claude Code 的宿主不是答案接收器，而是双向控制面、状态面、预算观测面与恢复面。
 
+如果把宿主落地模板前门继续压成最短公式，也只剩四句：
+
+1. `same-world test`
+   - 宿主先确认自己还在消费同一个工作对象。
+2. `decision window`
+   - `Context Usage` 是窗口解释，不是 token 余额。
+3. `current truth bundle`
+   - `worker_status + external_metadata + session_state_changed`
+4. `rollback object boundary`
+   - 恢复与回退先按对象写，不按文件写。
+
 ## 1. 第一性原理
 
 更成熟的宿主接入，不是：
@@ -42,6 +53,8 @@
 而是：
 
 - 宿主到底持有哪些正式真相，哪些真相只能消费，哪些真相绝不能自己猜
+
+如果一个宿主模板还在从 answer stream 开始，它就还停在包装层，没有进入运行时合同层。
 
 ## 2. 宿主最小闭环
 

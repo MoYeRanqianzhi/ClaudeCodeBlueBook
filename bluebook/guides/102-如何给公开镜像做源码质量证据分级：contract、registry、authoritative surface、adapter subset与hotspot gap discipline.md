@@ -62,7 +62,7 @@
    - 当前 build / 当前 runtime 真的注册了哪些对象。
 3. `current-truth surface`
    - 真正有资格宣布 present truth 的 sole writer / choke point / writeback seam。
-4. `authoritative surface candidate`
+4. `current-truth surface candidate`
    - 在公开镜像里你已经看到 sole writer 或 choke point 候选，但证据还不足以把它写死成完整 `current-truth surface`。
 5. `consumer subset`
    - 同一份权威真相对不同 host / adapter / projection 只暴露各自职责宽度。
@@ -74,7 +74,7 @@
 更稳的顺序是：
 
 - 能证明 `current-truth surface` 就直接写 `current-truth surface`
-- 还不能证明时，就降格写 `authoritative surface candidate`
+- 还不能证明时，就降格写 `current-truth surface candidate`
 - 不要反过来把所有权威入口都写成已经被完整证明的 present truth
 
 ## 2. 第一级：先找 contract truth
@@ -134,7 +134,7 @@ contract 和 registry 都还不够。
 
 - 当前谁有权宣布 present truth
 
-这里的 `authoritative surface`，更准确地说是 `current-truth surface`：不是谁更重要，而是当前哪条 surface 被允许写当前真相。若 sole writer、writeback path 与 freshness guard 还没锁定，就不能宣布这层真相已经成立；在公开镜像里，这时最多只能先把它记成 `authoritative surface candidate`。
+这里的 `current-truth surface` 不是谁更重要，而是当前哪条 surface 被允许写当前真相。若 sole writer、writeback path 与 freshness guard 还没锁定，就不能宣布这层真相已经成立；在公开镜像里，这时最多只能先把它记成 `current-truth surface candidate`。
 
 典型信号包括：
 
@@ -162,7 +162,7 @@ contract 和 registry 都还不够。
 
 - protocol full set vs consumer subset
 
-因为协议全集里声明存在的能力，不等于每个 adapter、每个 host、每个入口都真的实现了它。`adapter subset` 只是 `consumer subset` 的一种具体形态；`worker_status / external_metadata`、resume path 与 search layer 也都在消费同一 runtime truth 的诚实子集。
+因为协议全集里声明存在的能力，不等于每个 adapter、每个 host、每个入口都真的实现了它。`adapter subset` 只是 `consumer subset` 的一种旧写法；`worker_status / external_metadata`、resume path 与 search layer 也都在消费同一 runtime truth 的诚实子集。
 
 `bridgeMain` 明写 linear subset，remote / headless / REPL 又各有不同支持面。
 
@@ -273,7 +273,7 @@ gap discipline 的价值不是“保守一点”，而是：
 
 1. 先列 contract，不先列目录树。
 2. 再列 registry，不先夸能力全集。
-3. 再锁定 `current-truth surface` 或至少 `authoritative surface candidate`，不从 UI 投影反推真相。
+3. 再锁定 `current-truth surface` 或至少 `current-truth surface candidate`，不从 UI 投影反推真相。
 4. 再区分 `consumer subset`，不把协议全集和宿主子集混写。
 5. 最后才审 hotspot kernel 是否是合法复杂度中心。
 6. 每一步都保留 gap note，不让缺失部分被脑补补齐。
@@ -288,7 +288,7 @@ gap discipline 的价值不是“保守一点”，而是：
 
 ## 10. 危险改动面 Atlas 模板
 
-当你已经完成 `contract -> registry -> authoritative surface -> adapter subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一张可交接的 atlas。
+当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一张可交接的 atlas。
 
 但 `guides/` 在这里负责的是：
 

@@ -16,6 +16,17 @@
 - `continuation gate` 是 `continuation pricing` 的 verdict。
 - `rollback object` 是 cleanup / handoff 的 carrier。
 
+如果把治理控制面 builder 前门继续压成最短公式，也只剩四句：
+
+1. `same-world test`
+   - 当前治理对象是否仍是一条单一控制面判断链
+2. `externalized truth chain`
+   - host 不自己反推，先消费正式外化节点
+3. `decision window`
+   - `Context Usage + pending action + worker state`
+4. `continuation pricing + rollback object`
+   - 继续资格和回退边界都按正式对象结算
+
 ## 0. 代表性源码锚点
 
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-260`
@@ -42,6 +53,12 @@
 6. 先决定失败后哪些资产保留，哪些权威必须清除。
 
 所以更准确的说法不是“安全系统 + 省 token 系统”，而是“围绕同一个 `governance key` 的扩张定价控制面”。
+
+这页的 first reject signal 也只该先剩三条：
+
+1. `Context Usage` 被独立做成仪表盘
+2. `pending action` 只剩 UI 附件
+3. `rollback object` 被退回文件回滚或重试次数
 
 ## 2. 第一步：先固定 `governance key`
 

@@ -117,6 +117,36 @@
 
 - 每条规则都应能回答四件事：如何观测、如何失效、如何回归、如何回滚；否则它还只是意见，不是 runtime 制度。
 
+### 2.13 当前哪个 projection 在冒充治理真相
+
+判断标准：
+
+- 如果 `mode`、弹窗、usage 条、summary 或 compact 结果已经开始替代 `governance key / externalized truth chain / decision window`，这条治理链就已经在前门失真。
+
+### 2.14 这次 `stop / continue / upgrade / fallback / rollback` 到底由谁签发
+
+判断标准：
+
+- 如果说不清 runtime、host 与 human 分别在签发什么 verdict，continuation pricing 就仍停在“继续聊不聊”的口语层。
+
+### 2.15 `compact / resume / fork` 之后，哪些 durable assets 被保留，哪些 transient authority 必须先清空
+
+判断标准：
+
+- 如果恢复之后还能继续拿旧 authority、旧 mode 或旧 capability width 说“这还是当前世界”，恢复链就在偷渡主权。
+
+### 2.16 当前 drift 的 `minimum legal degraded shape` 是什么
+
+判断标准：
+
+- 如果只会说“先降级”，却说不清最小合法退化形态是 `deny / ask / cleanup-before-resume / human-fallback` 中哪一种，失败语义仍不够硬。
+
+### 2.17 删掉 dashboard 和摘要后，这条安全/省 token 论证是否仍可成立
+
+判断标准：
+
+- 如果删除预算图、usage 条与 compact 术语后，论证就只剩“更安全 / 更省”，说明它还没有回到拒绝未定价扩张的制度本体。
+
 ## 3. 常见自欺
 
 看到下面信号时，应提高警惕：
@@ -128,6 +158,8 @@
 5. 以为自动化一旦开启就应该尽量别退回人工。
 6. 以为 visibility 只是产品体验问题，而不是治理问题。
 7. 以为只要结果没出错，输入边界如何扩张都无所谓。
+8. 以为 compact 技巧本身就是统一治理，而不是后续执行策略。
+9. 以为 default continue 只是体验细节，而不是 continuation pricing 是否失真的红线。
 
 ## 4. 更好的迭代顺序
 
@@ -154,6 +186,9 @@ decision gain 是否仍存在:
 host 是否只消费 externalized truth:
 continuation 是否受条件约束:
 自动化是否可撤销:
+当前哪个 projection 在冒充治理真相:
+谁在签发 stop/continue/upgrade/fallback/rollback:
+minimum legal degraded shape:
 当前最像哪类扩张:
 - 动作 / 能力 / 上下文 / 时间
 下一步该重写的是:
@@ -169,3 +204,4 @@ continuation 是否受条件约束:
 3. 我是在提高决策质量，还是在无增益地继续烧 token。
 4. 自动化是租约，还是已经偷偷变成永久主权。
 5. 这套东西出事故时，团队能否沿着治理主键、外化真相链、durable assets 与 writeback seam，而不是个人经验复盘。
+6. 我删掉 dashboard、摘要和 compact 术语后，这条治理论证还成立吗。

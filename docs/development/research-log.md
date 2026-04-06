@@ -6,6 +6,57 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 userbook 专题入口同序化动作: 已继续更新 `userbook/04-专题深潜/README` 与 `userbook/05-控制面深挖/README`，把 `userbook` 入口层继续从“给目录”推进成“给工作对象/控制面入口 + 最小顺序 + first reject signal”。
+- 本轮专题层结论: `04` 现在更明确要求先按工作对象而不是按功能名进入，并把三组最小顺序翻译成真实工作动作；`05` 现在更明确要求先按控制面而不是相邻按钮进入，并把三组最小顺序直接写成控制面入口判断。
+- 本轮目录结构深化结论: 当 `userbook` 的主线使用、专题深潜、控制面深挖三层都开始共用同一组最小顺序时，用户侧目录结构才真正开始脱离“分栏目录”，进入“问题/顺序/边界一体化入口”阶段。
+- 本轮 userbook 第一跳同序化动作: 已继续更新 `userbook/README`、`00`、`01-主线使用/README`、`01`、`02`、`04` 与 `05`，把最近几批已经稳定下来的最小排查顺序前推到用户侧第一跳。
+- 本轮 user-facing Prompt 动作: `02` 现在更明确把“同一个工作对象”的用户侧最小顺序写成 `目标 -> 附件/文件 -> working set -> next action / handoff`，不再让用户只记住 `same-world test` 这句高阶判断。
+- 本轮 user-facing 治理动作: `05` 现在更明确把 `/status / /doctor / /usage / /add-dir` 失败后的五格处理方式写成 `拒收 / 降级 / 停止 / 清理后恢复 / 升级给人`，把治理 failure order 直接翻译成用户动作。
+- 本轮 user-facing 恢复动作: `04` 现在更明确把恢复链写成“先确认同一工作对象，再确认 stable bytes/working set，再判断继续格，再决定 `/resume / /compact / /memory`”，避免用户继续把恢复误读成找聊天记录。
+- 本轮入口层同序化动作: 已继续更新 `bluebook/README`、`navigation/README`、`06` 与 `navigation/05`，把最近几批稳定下来的 `Prompt witness order / governance failure order / current-truth reject order` 前推到目录入口与第一性原理页。
+- 本轮目录结构深化结论: 当入口层开始同时暴露 canonical formula 和最小排查顺序时，目录优化才真正从“同词化”进入“同序化”；否则 later maintainer 还是得先下潜到 `architecture / guides / playbooks` 之后，才拿得到真正可执行的排查动作。
+- 本轮入口层写作纪律动作: `navigation/README` 现在更明确把跨目录入口写成“公式 + 顺序 + 证据层”三段式，`06` 现在更明确要求目录优化不只共用主语，还要共用最小排查顺序，`navigation/05` 则把并行深挖后的合流标准进一步写成“主语和顺序同时合流”。
+- 本轮控制面/架构同词化动作: 已继续更新 `bluebook/07`、`09`、`architecture/83` 与 `architecture/84`，把上一轮已进入 builder/frontdoor/template 的三组最小顺序回灌到运行时契约、总图和架构主图。
+- 本轮 Prompt/runtime contract 动作: `07` 与 `09` 现在更明确把 Prompt 线的最小排查顺序固定成 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`，并把它写成 later maintainer 应先回的最小 witness order，而不是继续回 `systemPrompt` 截图或 summary prose。
+- 本轮治理架构动作: `architecture/83` 现在新增治理最小 failure order：`reject / degrade / halt / cleanup-before-resume / human-fallback`，并要求 later maintainer 能在不提 mode、modal、usage、compact 的情况下仍然点名当前 failure verdict 落在哪一格。
+- 本轮当前真相架构动作: `architecture/84` 现在新增 later maintainer 的最小 reject order：`shim exit condition -> recovery asset non-sovereignty -> stale authority / ghost capability eviction -> retreat layer`，并把“失真时先退哪一层”明确进当前真相线的追问。
+- 本轮 builder/frontdoor 同词化动作: 已继续更新 `guides/49` 与 `navigation/15`，把上一批补到 `62 / 30 / 32` 的治理位置学、Prompt witness 与 later-maintainer reject 继续对齐到治理 builder 和高阶前门。
+- 本轮治理 builder 动作: `guides/49` 现在更明确把六步治理顺序压成 `Narrow / Later / Outside` crosswalk，并把 `reject / degrade / halt / cleanup-before-resume / human-fallback` 明确写成 runtime failure verdict，而不是 UX 文案。
+- 本轮高阶前门动作: `navigation/15` 现在更明确把 Prompt witness 顺序、治理 failure order 与当前真相线的 later-maintainer reject 顺序写进失稳前追问入口，避免前门继续停在“更强 / 更严 / 更先进”的结果词。
+- 本轮审读模板深化动作: 已继续更新 `architecture/62`、`guides/30` 与 `guides/32`，把上一轮补到前门和深页里的 canonical formula 继续压进 builder-facing 审读卡。
+- 本轮 Prompt 审读模板动作: `guides/30` 现在更明确把 Prompt 线唯一 canonical chain 固定为 `message lineage -> section registry / stable boundary -> protocol transcript -> continuation object -> continuation qualification`，并把 `same-world witness` 六元组、route shorthand 边界和 `systemPrompt/summary prose` 禁词补进问题链与记录卡。
+- 本轮治理位置学动作: `architecture/62` 现在更明确把 `Narrow / Later / Outside` 对齐成 `governance key / typed ask / capability surface`、`decision window / continuation pricing / decision gain`、`externalized truth / replacement carrier / durable-transient cleanup` 三组治理对象，并补出 `reject / degrade / halt / cleanup-before-resume / human-fallback` 失败判词。
+- 本轮源码先进性审读模板动作: `guides/32` 现在更明确要求每段结构都能点名自己在防哪类 `failure object`，later maintainer 的最小 reject 规则是否已写清，以及结构坏掉时应先退 `authority / contract / seam / shell / recovery / eviction` 哪一层。
+- 本轮 Prompt 深页补口动作: 已继续更新 `bluebook/07` 与 `09`，把 Prompt 线从“装配链存在”继续压成 multi-surface world-entry object，并补出 `same-world` 的最小 witness：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`；同时明确 `compact / resume / fork / handoff` 若不能回指这六个引用，就已从同一世界退回叙事成功。
+- 本轮治理 failure-semantics 动作: 已继续更新 `bluebook/09` 与 `guides/31`，把治理线从“统一定价”继续压成 `deny / ask / rollback / cleanup / halt / step-up` 等 verdict 对象，并新增 projection 篡位、verdict signer、durable/transient authority 清空、`minimum legal degraded shape` 和“删掉 dashboard/compact 术语后论证是否仍成立”的苏格拉底追问。
+- 本轮源码先进性深页动作: 已继续更新 `architecture/52` 与 `63`，把源码先进性从五法与演化方向进一步压成 failure-object 与失效判据语言：每一法都必须回答自己在防哪类 `failure object`，`config / deps / leaf module / recovery asset` 何时失去可演化资格，以及 later maintainer 应按什么最小 reject 规则撤回结构升级。
+- 本轮目录结构深化动作: 已继续更新 `navigation/README`，把并行多 Agent 深挖固定成按 question domain 拆题，并明确一旦某个 `README` 同时承担 canonical formula、route map、深页解释与研究记忆，它就已经混层，应退回各自证据层。
+- 本轮设计内涵深化动作: 已继续更新 `bluebook/03` 与 `06`，把设计内涵从“Prompt 更强 / 安全更严 / 源码更先进”收口回 `world-defining right / pricing right / stale-writer veto right` 三种主权安排；同时把“语义压缩强于信息堆叠”的坏解链、源码质量如何直接减少用户可见失真，以及并行多 Agent 深挖时的 question-domain 拆题纪律补到主线页。
+- 本轮目录结构优化动作: 已继续更新 `bluebook/README`、`navigation/05` 与 `navigation/15`，把目录优化固定成“第一问题单源化 + 证据层分工 + `09 / 05 / 15 / 41` merge frontdoor”，并把并行深挖前的先验反证、frontdoor 禁词与 canonical object chain 明确前置到入口层。
+- 本轮 Prompt 侧线技术补口动作: 已继续更新 `guides/51`，新增 `same-world test` 的最小 witness object：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`，并要求 `compact / resume / fork / side query / handoff` 只能继承或显式重绑这些引用，不能静默重造“差不多的世界”。
+- 本轮治理侧线技术补口动作: 已继续更新 `guides/49`，把治理 builder 顺序写硬为 `authority -> typed decision -> visibility pricing -> decision window -> continuation pricing -> outside pricing`，并把 `mode 面板 != governance key`、`审批弹窗 != typed ask`、`usage 条 != decision window`、`default continue != continuation pricing`、`compact 技巧 != Outside` 固定为入口层红线。
+- 本轮宿主消费链/rollout evidence 前推动作: 已继续更新 `userbook/03-参考索引/06`、`api/24`、`api/35`、`api/52`、`guides/46` 与 `guides/52`，把高价值入口速查、API 全谱系、rollout 证据消费、治理宿主消费、宿主落地模板与治理控制面 builder 页继续压成同一组前门公式，而不是让它们分别退回命令速查、SDK inventory、日志消费或 builder checklist 语言。
+- 本轮 Prompt 侧线补宿主动作: `userbook/03-06` 与 `api/24` 现在更明确先问 `same-world test`，再谈高价值入口、API 全谱系和宿主控制；宿主接入不再从 answer stream 或命令列表起手。
+- 本轮治理侧线补宿主动作: `api/52` 与 `guides/52` 现在更明确先问 `externalized truth chain / decision window / continuation pricing + rollback object`，而 `api/35` 也继续把 `Context Usage` 固定成 `decision window` 的诚实投影，不再允许它退回账单页语言。
+- 本轮源码质量侧线补宿主动作: `guides/46` 与 `api/24` 现在更明确把 `worker_status + external_metadata + session_state_changed` 收回 current truth bundle，把 host-consumption 页继续写成 truth ladder / rollback object boundary 语言，而不是 SDK 包装层。
+- 本轮目录结构深化结论: 当矩阵页、参考页、宿主消费页和 rollout evidence 页都开始共用同一组公式后，目录结构的高价值工作已经从“补齐路径”转成“让不同宿主入口共用同一条 noun discipline”；只要其中某页重新退回命令清单、token 百分比、模式条或文件回退视角，later maintainer 就会在接入层重新学错对象。
+- 本轮参考索引/宿主消费收口动作: 已继续更新 `userbook/03-参考索引/02`、`userbook/03-参考索引/04`、`api/23`、`api/35` 与 `guides/102`，把 reference 页、宿主支持矩阵页、rollout 证据消费页和源码质量证据分级页继续统一到同一组 visible nouns 与前门公式。
+- 本轮 Prompt 侧线补索引动作: `userbook/03-参考索引/02` 与 `04` 现在更明确先问 `same-world test`，再看边界与分层，避免索引页重新退回功能目录或对象库存。
+- 本轮治理侧线补宿主动作: `api/23` 与 `api/35` 现在更明确先问 `decision window / current admission / product promise`，并把 `Context Usage` 固定成 rollout evidence 的制度窗口投影，而不是宿主账单页。
+- 本轮源码质量侧线补术语动作: `guides/102` 现在更明确把剩余正文里的 `authoritative surface candidate / adapter subset` visible noun 收回 `current-truth surface candidate / consumer subset`，让证据分级方法和 atlas/map/index/frontdoor 的 noun discipline 继续合流。
+- 本轮目录结构深化结论: 当根导读、地图页、矩阵页、API/安全/风控首页和 userbook 主线页都已完成公式换代后，下一层最值钱的工作是 reference 页和 host-consumption 页的 noun discipline；这些页一旦继续用旧 visible nouns，就会从“速查”和“接入”入口重新把 later maintainer 带回旧世界观。
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=ec7519566b3abf2659fb3d65899dc7d2bad983da`；`git fetch origin main` 成功，`git rev-list --left-right --count main...origin/main` 返回 `0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`。本轮因此只记录基线，不对根仓库做任何修改。
+- 本轮矩阵/API/安全/风控前推动作: 已继续更新 `bluebook/08`、`api/README`、`security/README`、`risk/README` 与 `userbook/04-10`，把 canonical formula 从地图页、功能页与使用页继续前推到能力矩阵、宿主真相消费前门、安全 signer/ledger 前门、用户侧风险结算面和状态预算运营页。
+- 本轮 Prompt 侧线前推动作: `08` 与 `api/README` 现在更明确要求能力矩阵和宿主 API 前门先问 `same-world test`，再谈“这组能力/API 到底算不算支持”。
+- 本轮治理侧线前推动作: `08`、`security/README`、`risk/README` 与 `userbook/04-10` 现在更明确把 `Context Usage` 收回到 `decision window`，并把 admitted capability、risk settlement 和 budget operation 统一收回当前定价窗口，而不是继续停在仪表盘与结果词。
+- 本轮源码质量侧线前推动作: `api/README` 现在更明确把 `truth ladder + failure semantics` 写成宿主消费前门；`08` 也更明确把能力矩阵的公开度判断约束在 `implementation visibility / current admission / product promise`，不让 capability matrix 抢写产品承诺。
+- 本轮目录结构深化结论: 当地图页、功能页、能力边界页、状态预算页都已完成公式换代后，下一层最值钱的优化不再是继续补更多专题，而是继续做“矩阵页 / 宿主真相页 / 安全/风控首页 / 状态预算页”之间的 noun discipline，避免 later maintainer 在“怎么消费真相 / 怎么判断支持度 / 怎么判断当前还能不能继续”这三类问题上重新学回 UI 投影视角。
+- 本轮主分支同步检查: 根仓库当前 `main=93bfa2889cb4c848c1db368ce83bef6c05e15876`、`origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-list --left-right --count main...origin/main` 返回 `32 0`，`origin/main` 是祖先，当前没有待拉取远端更新。根仓库本地存在未解决合并状态，`git merge --ff-only origin/main` 会被根仓库自身状态阻塞，因此本轮只记录基线，不触碰根仓库，只在 `.worktrees/mainloop` 内推进。
+- 本轮地图/能力边界前推动作: 已继续更新 `bluebook/01`、`04`、`05` 与 `navigation/README`，把 canonical formulas 从哲学页、导读页与使用页继续前推到“看地图 / 看能力边界 / 看功能表 / 跨目录反查”这四类最容易重新长回旧 visible nouns 的入口页。
+- 本轮 Prompt 侧线前推动作: `05` 与 `navigation/README` 现在更明确要求先问 `same-world test`，再谈功能和跨目录跳转；公开能力页 `04` 也已明确“源码里出现了”不等于已经合法进入模型当前可见世界。
+- 本轮治理侧线前推动作: `04` 与 `05` 现在更明确把公开度与功能判断收回到 `decision window / current admission / product promise`，并明确 mode 条、usage dashboard 与 token 百分比不是前门答案；`navigation/README` 也把 `Narrow / Later / Outside + stable bytes + working set` 收回到跨目录前门公式。
+- 本轮源码质量侧线前推动作: `01`、`04`、`05` 与 `navigation/README` 现在更明确把 `truth ladder + failure semantics` 写成入口层语言，不再让地图页、功能页和公开度页继续用结果词或旧可见主语先发明一版世界观。
+- 本轮目录结构深化结论: 当导读页、哲学页和使用页都已完成公式换代后，下一层最值钱的优化是“地图页 / 能力边界页 / 功能页 / 跨目录页”的 visible noun discipline；这些页最容易把 later maintainer 再带回目录体感、功能表和 UI 投影视角。
 - 本轮使用层/atlas 收口动作: 已继续更新 `bluebook/02`、`bluebook/03`、`philosophy/76` 与 `userbook/01-05`，把 canonical formula 继续翻译成“使用动作”和“源码 atlas visible noun discipline”，避免 later maintainer 和首次使用者在这两层重新学回结果词与旧目录词。
 - 本轮 Prompt 侧线下沉动作: `02` 现在更明确要求先让任务通过 `same-world test`，再谈使用技巧；`userbook/01-05` 现在更明确把 `/status` 读成“先确认当前会话仍在同一个宿主现场”，不再只是状态页。
 - 本轮治理侧线下沉动作: `02` 与 `userbook/01-05` 现在更明确把 `Context Usage` 读成 `decision window`，并把 `stable bytes vs working set` 和 `Narrow / Later / Outside` 前推成使用层动作，而不是只停在高阶哲学页。

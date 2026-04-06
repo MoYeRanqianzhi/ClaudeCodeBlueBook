@@ -13,6 +13,17 @@
 - 完成、终局、遗忘、清理与家族级 cleanup 都各有 signer；任何弱层都不配替强层宣布“已经没事了”。
 - 宿主不该自己从事件流回放拼当前真相；更稳的做法是消费 runtime 已外化的 authority / status / verdict。
 
+如果把安全前门继续压成最短公式，也只剩三条：
+
+1. `decision window`
+   - 当前扩张还配不配继续
+2. `signer + ledger + cleanup`
+   - 谁配宣布已经没事了
+3. `failure semantics`
+   - 哪种失败该 deny、哪种该 rollback、哪种该 cleanup、哪种必须 escalate
+
+如果一个安全判断还压不回这三条，它就还停在规则堆或工具堆层。
+
 ## 高阶前门
 
 想先抓第一性原理，不要从安全目录库存开始：
@@ -53,6 +64,11 @@
 - `70-99`：能力发布、状态编辑、恢复资格、默认路由与 reject semantics。
 - `100-138`：完成权、字段生命周期、工程迁移、验证架构与制度化接口。
 - `139-244`：cleanup 契约与 signer/governor ladder，含 stronger-request cleanup 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone、resurrection、re-entitlement、reconfiguration、reactivation、readiness、continuity、recovery、reintegration、reprojection、reassurance、use-time revalidation、step-up reauthorization、continuation、completion 等高阶治理分层。
+
+更稳的 first reject signal 还应先记两条：
+
+1. `Context Usage`、mode 条和 token UI 开始冒充治理真相
+2. cleanup 结果词开始越级替 signer 和 verdict 说话
 ## 按问题进入
 
 - 想看来源主权、权限模式、能力边界与显式降级：从 `00-29` 进入。

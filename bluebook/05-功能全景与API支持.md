@@ -12,11 +12,11 @@
 这一章虽然在列能力面，但更稳的读法不是把它当“功能总清单”，而是先带着三句判断来读：
 
 1. Prompt 线
-   - 这些接口最终在帮助什么合法进入模型
+   - 这些接口最终在帮助什么通过 `same-world test` 合法进入模型
 2. 治理线
-   - 这些接口最终在决定什么扩张配进入当前世界
+   - 这些接口最终在决定什么扩张配进入当前世界；`Context Usage` 不是功能前门答案，而是 `decision window` 投影
 3. 源码质量线
-   - 这些接口是主路径能力、宿主子集、声明先行，还是仍需按证据梯度克制表述
+   - 这些接口是主路径能力、宿主子集、声明先行，还是仍需按 `truth ladder` 与 `failure semantics` 克制表述
 
 如果不先带着这三句判断，本章就很容易重新退回：
 
@@ -32,6 +32,12 @@
 2. 当前公开实现是否闭合
 3. 当前是否进入主路径或至少进入稳定子集
 4. 当前是否已被允许，并且已形成可对外承诺的产品面
+
+如果把功能表前门继续压成最短公式，也只剩三句：
+
+1. `same-world test` 决定这组接口是不是在帮助同一个世界进入模型。
+2. `decision window` 决定这组接口是不是还配继续进入当前世界。
+3. `truth ladder + failure semantics` 决定你现在到底配把它写成主路径能力、宿主子集，还是只配写成声明痕迹。
 
 如果这四问还回答不清，就不要继续停在功能总览页：
 
@@ -73,6 +79,12 @@
 - `Context Usage`、mode 条、token 百分比与 dashboard 投影都不是功能前门答案；它们只能在 `decision window / current admission / product promise` 已经分清后，作为宿主消费投影继续出现
 
 因此下面的长表只负责给出代表入口与对象 truth，不再抢答“是否支持到哪一层”。更细的矩阵与对象总表，统一回到 `08`、`api/23`、`api/24` 与 `api/30`。
+
+更稳的 first reject signal 也该先写在这里：
+
+- mode 条、usage dashboard 与 UI 面板不是能力前门答案
+- build-time 痕迹不是产品承诺
+- transport shell 不是 current admission
 
 ## 2. 代表性能力面与对象 truth 索引
 

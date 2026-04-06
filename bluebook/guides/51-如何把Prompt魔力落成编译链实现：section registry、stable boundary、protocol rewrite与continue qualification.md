@@ -182,6 +182,31 @@ Claude Code 更接近的真相是：
 6. `continue qualification`
    - 哪些路径配继续，哪些路径应拒收
 
+## 7.1 `same-world test` 的最小 witness object
+
+如果继续追问“这六步为什么还算活在同一个世界里”，最小证明对象至少要写成：
+
+1. `message_lineage_ref`
+2. `section_registry_ref`
+3. `stable_prefix_ref`
+4. `protocol_transcript_ref`
+5. `continuation_object_ref`
+6. `continue_qualification_verdict`
+
+更稳的实现纪律是：
+
+1. `compact / resume / fork / side query / handoff`
+   - 只能继承或显式重绑这 6 个引用，不能静默重造一份“差不多的世界”。
+2. 接手方不重读全量 `UI transcript`
+   - 仍应能点名当前主语、当前约束、下一步动作、为何还能继续。
+3. `systemPrompt` 截图、最后一条消息、summary prose
+   - 一旦开始替代 witness 链，就先判定 same-world 失败。
+
+伪成功信号也要提前写明：
+
+- 回答口气还像，但不同 consumer 已经拿到不同 producer。
+- witness 链已经无法回指，只剩一段更顺的故事。
+
 ## 8. 苏格拉底式检查清单
 
 在你准备继续优化 Prompt 之前，先问自己：
@@ -191,6 +216,7 @@ Claude Code 更接近的真相是：
 3. 模型消费的是 protocol truth，还是 UI transcript 替身。
 4. compact 后留下的是 continuation object，还是一段更短的故事。
 5. 我是否知道当前这轮为什么还能继续。
+6. `same-world witness` 是否仍可点名，而不是被某个 projection 替身篡位。
 
 ## 9. 一句话总结
 
