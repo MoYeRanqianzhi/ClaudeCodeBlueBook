@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新 `01`、`08`、`navigation/01` 与 `navigation/02`，把源码结构地图、能力矩阵、第一性原理审读地图与能力检索图继续对齐到三张控制面和 `09 / 05 / 15 / 41` 的高阶协议：补出三条最短动作链、让能力矩阵明确不和高阶前门混层，并把 `Context Usage` 继续收回 `decision window` / current admission / product promise 的分层判断
+- 本轮根仓库 `main` 同步检查继续通过 `fetch + rev-parse + merge --ff-only origin/main` 确认无待拉取更新，`main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；因此本批次继续只在 `.worktrees/mainloop` 内推进
 - 继续更新 `03`、`09`、`navigation/03` 与 `navigation/04`，把高阶总论页继续压成更短的动作链与职责链：请求装配线收口为 `compile -> protocolize -> preserve -> continue -> explain`，治理线补出“省 token 的本体是 stable bytes 而不只是 compact”，源码质量线补出“合法复杂度中心是资产而不是债务”，目录职责页补出同一对象在 `architecture / api / security-risk` 之间的三层分工
 - 本轮根仓库 `main` 同步检查继续通过 `fetch + rev-parse` 确认 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；仓库本地 `pull --ff-only` 仍因 upstream 配置返回 `Cannot fast-forward to multiple branches`，但当前无待拉取更新，因此本批次继续只在 `.worktrees/mainloop` 内推进
 - 继续更新 `architecture/README`、`api/README`、`security/README` 与 `risk/README`，把运行时对象前门、host-facing truth 前门、治理 signer/ledger 前门与用户侧结算面前门继续对齐到 `09 / 05 / 15 / 41` 的高阶分工，并把治理线里 `Context Usage` 的高阶读法继续收回 `decision window` 的诚实投影，不再让目录首页把它写回成本面板

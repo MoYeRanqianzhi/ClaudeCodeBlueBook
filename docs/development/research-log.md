@@ -6,6 +6,11 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash，`git merge --ff-only origin/main` 返回 `Already up to date.`。仓库本地 `git pull --ff-only` 仍受 upstream 配置影响返回 `Cannot fast-forward to multiple branches`，但本轮已通过 fetch + hash + ff-merge 证实没有待拉取更新，因此不对根仓库做任何修改。
+- 本轮地图/矩阵页收口动作: 已继续更新 `01`、`08`、`navigation/01` 与 `navigation/02`，把源码结构地图、能力矩阵、第一性原理审读地图与能力/API/治理检索图继续对齐到三张控制面和 `09 / 05 / 15 / 41` 的高阶协议。
+- 本轮 Prompt 侧线回灌动作: 已把并行 Agent 的有效结论继续吸收到 `navigation/01` 与 `08`，让三张控制面在地图层也显式落成三条最短动作链，而不是只停在对象层标签。
+- 本轮治理侧线回灌动作: 已把治理侧线的有效结论继续吸收到 `08` 与 `navigation/02`：能力检索与能力矩阵都不得再把 `Context Usage`、mode 条或 token 百分比直接当成治理真相，而必须先经过 `decision window / current admission / product promise` 的分层判断。
+- 本轮源码质量侧线回灌动作: 已把源码质量侧线的有效结论继续吸收到 `01`，把“合法复杂度中心是资产，不是债务”前置为源码地图的总判断，不再让结构地图先被目录体感主导。
 - 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash。仓库本地 `git pull --ff-only` 继续因 upstream 配置返回 `Cannot fast-forward to multiple branches`，但当前没有待拉取更新，因此本轮只记录基线，不对根仓库做任何修改。
 - 本轮高阶总论页收口动作: 已继续更新 `03`、`09`、`navigation/03` 与 `navigation/04`，把高阶总论页继续压成更短的动作链与职责链：Prompt 线前置 `compile -> protocolize -> preserve -> continue -> explain`，治理线前置 `price -> externalize -> arbitrate -> continue-or-stop -> cleanup`，当前真相线前置 `surface -> writeback -> freshness -> evict`，并把 `05 / 15 / 41` 与三张控制面之间的职责缝隙继续写硬。
 - 本轮 Prompt 侧线回灌动作: 已把并行 Agent 的一条有效结论继续吸收到高阶总论页：Prompt 魔力真正值钱的不是“更强 prompt”，而是 `compile -> protocolize -> preserve -> continue -> explain` 这条五动作链。
