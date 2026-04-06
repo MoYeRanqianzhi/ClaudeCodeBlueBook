@@ -8,6 +8,68 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `navigation/07 / navigation/46 / navigation/README / api/README` 现已继续把方法/迁移/API 前门的 route words 收口：
+  - `07` 现在更明确把合同优先方法线收回到 `current-truth surface / host-facing truth / consumer subset`，把公开镜像方法线收回到 `current-truth surface / consumer subset / hotspot kernel / mirror gap`。
+  - `46` 现在更明确把宿主迁移工单三线分别前置为 `request compiler`、`governance key + externalized truth chain` 与 `current-truth writeback`，不再让 `systemPrompt`、mode 面板或恢复成功率占前门。
+  - `navigation/README` 现在更明确把稳定节点 `46` 的标签同步到 `request compiler / governance key / current-truth writeback`。
+  - `api/README` 现在更明确把 API 前门里的 host truth 写成 `host-facing truth`，并把 Prompt / 治理宿主消费入口更清楚地分流到 `49 -> 54` 与 `28 -> 32 -> 52`。
+- 新的长期结论：
+  - 当 host-facing 深页已经换代后，下一层最值钱的目录优化常常不是再补一个 README，而是把“方法前门 / 迁移前门 / API 前门”三类入口继续同步到同一组主语；否则 later maintainer 会在真正进入深页前先被旧 route words 带偏。
+  - 迁移导航真正成熟时，不应再把 `systemPrompt`、mode 面板或恢复成功率当第一跳主语；更稳的迁移主语应是 `request compiler`、`externalized truth chain` 与 `current-truth writeback`。
+- `bluebook/README / guides/README / api/README / playbooks/README / navigation/03` 现已继续把目录层 visible label 跟上 recent doctrine：
+  - `bluebook/README` 现在更明确把治理线链接标签收回到“同一治理收费链的三种外观”，把源码质量方法标签收回到 `current-truth surface / consumer subset / mirror gap discipline`。
+  - `guides/README` 现在更明确把 `100` 标签补齐 `externalized truth chain`，把 `102` 标签补齐 `consumer subset / mirror gap discipline`。
+  - `api/README` 现在更明确把 `authoritative surface -> adapter subset` 收回到 `current-truth surface / host truth -> consumer subset`。
+  - `playbooks/README` 现在更明确把 `78` 标签补齐 `externalized truth chain`。
+  - `navigation/03` 现在更明确把治理验证线和源码质量方法线的 visible label 同步到当前 H1，并把“宿主不该猜”更准确地收回到 `current-truth surface + consumer subset`。
+- 新的长期结论：
+  - 当深页 H1 已经换代后，下一层最值钱的目录优化不是新增入口，而是把目录层 visible label 同步过去；否则 later maintainer 还没点进去，就已经先被旧 route words 重新定向。
+  - 目录结构真正成熟时，README 与导航页不只要分工正确，还要在点击前就说对主语；这层标签治理做不好，深页 doctrine 会被入口层持续稀释。
+- `api/49 / api/54 / playbooks/29 / guides/100 / playbooks/78` 现已继续把 host-facing contract 线往下收：
+  - `49` 现在更明确把 Prompt 支持面写成 `request compiler input surface + observable surface + internal compiler surface` 三层，而不再让 `compiled_request_truth` 与 `systemPrompt` 继续占主语位。
+  - `54` 现在更明确补出 Prompt host contract 最短对照，把 `message lineage / projection consumer / stable prefix boundary / protocol transcript / continuation object+qualification` 直接钉到 host 应消费的 contract 面。
+  - `29` 现在更明确要求宿主不仅要守住 `message lineage`，还要守住 `request compiler continuity`，不允许把 request compiler 退回输入拼图。
+  - `100` 现在更明确把 `externalized truth chain` 提升进标题与诘问链，并把 `Context Usage` 固定成 `decision window` 证据面。
+  - `78` 现在更明确把 `externalized truth chain continuity` 与 `host_reconstructed_truth_from_projection` 写进回归验证与 drift verdict。
+- 新的长期结论：
+  - Prompt host-facing 文档真正成熟时，不能只会说“不要把 systemPrompt 当真相”；它还必须显式区分输入面、观测投影和 internal compiler surface，否则 later maintainer 仍会把 request compiler 退回几段输入拼图。
+  - 治理 host-facing 文档真正成熟时，`externalized truth chain` 必须先于 `typed ask / decision window / continuation pricing` 一起出现；否则 host 端最常见的退化就是重新从 mode 条、token 条和 `pending_action` 文案拼当前真相。
+- `07 / 01 / navigation/03 / navigation/41` 现已继续把高阶综合层往上压一层：
+  - `07` 现在更明确把 Prompt、治理、当前真相与演化继续收成六个运行时平面与四个跨平面函数：`compile / price / externalize / evict`。
+  - `01` 现在更明确把 `QueryEngine + transcript` 写成事件线真相，把 `state writeback / worker_status / external_metadata` 写成 host-facing current truth。
+  - `navigation/03` 现在更明确把 Prompt 深线收回 request compiler、把治理深线收回 `Context Usage` 作为 `decision window` 证据面、把结构深线收回“哪些投影不配冒充 current truth”。
+  - `navigation/41` 现在更明确要求第一性原理收束最终落到四个跨平面函数，而不只停在对象层总结。
+- 新的长期结论：
+  - 当三条母线已经稳定后，下一层最值钱的深化不再只是继续清 visible root，而是把多页共同成立的对象继续压成更少的运行时函数；这样 later maintainer 才能看见“系统为什么难抄”，而不只是“系统对象很多”。
+  - 综合页真正成熟时，必须显式拆开事件线真相和当前真相面；否则 request compiler、governance externalization 与 current-truth writeback 仍会在读者脑中重新混成一个大而模糊的“系统真相”。
+- `03-设计哲学 / guides/102 / architecture/84 / architecture/59` 现已继续把 current-truth doctrine 的残留压平修掉：
+  - `03` 现在更明确把 `transcript` 写成事件线真相，把 `state writeback` 写成宿主当前真相面，不再让两者共挤一个“系统真相”标题。
+  - `102` 现在更明确把 `authoritative surface candidate` 视为公开镜像里的中间判断层，并补出 sole writer、writeback path、freshness gate 与 eviction rule 作为必须保留的 unknown。
+  - `84` 现在更明确把 `current-truth writeback` 提升进标题层。
+  - `59` 现在更明确说明 `worker_status / external_metadata` 是 current-truth writeback 面向不同消费者的诚实子集，而不是第二套当前真相。
+- 新的长期结论：
+  - current-truth 线真正成熟时，必须把“事件线真相”和“当前真相面”拆开写；否则 later maintainer 很容易重新让 transcript replay 冒充 present truth。
+  - 公开镜像研究真正成熟时，`authoritative surface candidate` 这种中间层是必要的；它让研究者可以诚实地写“我看到 sole writer 候选了，但还没资格宣布 current-truth surface 已被完整证明”。
+- `03-设计哲学 / architecture/83 / api/52 / guides/102` 现已继续把治理线和源码质量线的中层词压回更硬对象：
+  - `03` 现在更明确把“安全、成本与体验”写成 canonical governance chain 的三种外观，而不再让“预算器”继续占主语位。
+  - `83` 现在更明确补出治理链 runtime 对照表，把 canonical node、runtime seam、host-facing read 与常见误读钉在同一张表里。
+  - `52` 现在更明确要求 host 只消费 `externalized truth chain`，并给出最短 runtime 对照，禁止从 mode 条、token 条、spinner 与 `pending_action` 文案反推治理真相。
+  - `102` 现在更明确区分 `current-truth surface` 与 `authoritative surface candidate`，并把 `adapter subset` 降成 `consumer subset` 的具体形态。
+- 新的长期结论：
+  - 治理线真正成熟后，最值钱的补强不再只是重复 canonical chain，而是把每个 node 明确钉到 runtime seam、宿主读法和常见误读；否则 later maintainer 还是会把 mode、usage dashboard 与 rollback carrier 重新扶正成主语。
+  - 公开镜像源码质量方法真正成熟后，`authoritative surface` 不应再被无条件当成已证明的 `current-truth surface`；更稳的写法是允许 `authoritative surface candidate` 这个中间状态存在，并把 `consumer subset` 与 `mirror gap discipline` 同时前置。
+- `bluebook/README / navigation/README / navigation/05 / 06` 现已继续把“继续写得更好”的问题正式前置：
+  - `bluebook/README` 现在更明确把蓝皮书入口压成“先定题 -> 再定证据层 -> 最后跨目录”的三步进入法，并把“继续写、改或审蓝皮书”固定回 `06 -> 09 -> navigation/05`。
+  - `navigation/README` 现在更明确要求先判自己在找主线宪法、证据层还是跨目录下一跳，并把 `navigation/05` 升成稳定节点。
+  - `navigation/05` 现在更明确先纠正“抄错对象”的三种常见误读，并把三条母线的互证关系与统一自校问题写明。
+  - `06` 现在更明确把对象链、同题坏解、第一条反证信号与 `shadow -> qualify -> cutover -> rollback` 的渐进改写顺序，提升成第一性原理页自己的持续审读协议。
+- 新的长期结论：
+  - 目录结构真正成熟时，最值钱的优化不是再补一条阅读链，而是把入口稳定成“先定题、再选证据层、最后才跨目录”；否则根 README、目录 README 和导航页会再次一起承担路由编排。
+  - 第一性原理章节真正成熟时，不能只会解释正解；它还必须固定点名同题坏解、第一条反证信号与渐进改写顺序，否则苏格拉底追问会重新退回高阶感想。
+  - 设计母线导航真正成熟时，最该先纠正的不是读者下一步点哪一页，而是读者打算模仿什么对象；只纠阅读顺序、不纠模仿对象，三条母线很快就会重新退回文案、拦截器和目录美学。
+  - 治理线真正成熟时，`typed ask` 不能再被写成 modal，`Context Usage` 也不能再被写成成本仪表；前者更稳的对象是分布式仲裁事务，后者更稳的对象是 `decision window` 的证据面。
+  - Prompt 线真正成熟时，`systemPrompt` 不能再冒充唯一主角；更稳的主语应是 request compiler、`message lineage` 的多消费者投影，以及 `continuation qualification / cache-safe fork reuse` 共同维持的同一世界。
+  - 源码质量线真正成熟时，最值钱的证据不只是 `current-truth surface` 这个名词，还包括显式 current-truth writeback、持续拒绝 stale writer 的 temporal honesty，以及 leaf modules 作为依赖治理工具的自觉。
 - `guides/102 / playbooks/79 / navigation/04` 现已继续把 atlas、template 与 verdict 的分工写死：
   - `102` 现在更明确只负责 atlas skeleton、gap note 与 handoff rule，不再继续自己承接 repo-specific atlas 正文。
   - `79` 现在更明确把 `danger_surface_atlas_ref / gap_note_ref / authority_surface_ref` 写成输入工件，而不是默认在本页临时生产 atlas。
@@ -2116,6 +2178,27 @@
 - Claude Code 的生态写作必须持续区分 protocol support、runtime path 与 product maturity，不能因为代码里有入口就上升为稳定公共承诺
 - 蓝皮书目录现在必须显式分成“主线正文”“导航层”“机制层”“接口层”“哲学层”“风险层”“实践层”，否则章节增多后会失去检索性
 - Claude Code 的第一性原理不应再只写成六问，而应扩展为观察、决策、行动、记忆、协作、恢复、治理、经济八问
+- Prompt 主链前门当前应固定成 `section registry / dynamic boundary -> message lineage -> projection consumer -> protocol transcript -> continuation object / qualification -> cache-safe forks`，不要再让 `Request Surface Constitution` 或其他检索别名占可见主语位
+- Prompt 线必须继续写成第二张图的 request-surface 投影：`lawful forgetting`、stable prefix boundary、cache-safe fork reuse 与 continuation qualification 都在消费 `governance key -> externalized truth chain -> decision window -> continuation pricing` 的同一治理秩序，不能再把“安全”和“省 token”拆成两套话题
+- 目录页只负责暴露证据梯度与拒收链，不负责承担阅读编排；凡是规范入口、切换协议、推荐顺序与当前批次收口说明，一律留在 `docs/` 和记忆层，不回正文
+- 仓库入口当前应固定成单向职责链：`README` 只做仓库级四分路由，`bluebook/README` 只做主线宪法与证据梯度，`navigation/README` 只做跨目录 judgment map，专题 README 只做各自前门；不要让多层入口同时重写同一条主线
+- `security/README` 当前应只保留高阶判断、编号段范围与 `appendix / source-notes / docs` 分流，不再镜像巨型 inventory、逐篇标题链或作者侧推进记忆；安全首页先回答价格秩序，再把读者送去具体 ladder
+- 治理线 canonical visible root 当前应固定成 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；`trusted inputs / distributed ask arbitration / durable assets` 可以继续作为内层对象或旧文件名兼容词，但不再占治理前门主位
+- `architecture/83` 应继续作为治理线的 canonical owner，`guides/31` 负责失稳前审读，`navigation/15 / 41 / 46` 负责问题梯子、第一性原理回压与迁移顺序；这些高阶节点必须沿 `83` 的 visible root 发问，不能各自再造一版 source-first 或 UI-first 世界观
+- 当前真相保护线的 canonical visible root 应固定成 `current-truth surface -> recovery asset non-sovereignty -> freshness gate -> ghost capability`；`architecture/84` 负责定义这条线，`philosophy/86` 负责回答为什么它比模块美学更先，`guides/101` 负责把它压成失稳前审读动作，`navigation/15 / 41 / 46` 负责把同一条根词翻成问题梯子、第一性原理与迁移顺序。
+- 结构线最值钱的判断不只是“有 single writer”，而是恢复、投影、日志、发布和后来维护者都被迫围绕同一个 present 说话；谁想冒充 current world，谁就先失去主权。`authority object / authority state / single-writer authority` 这类词只宜保留为下层证据槽位、旧文件名或兼容别名，不再充当前门主语。
+- 当前真相线的下一跳残留集中在 `guides/56 / playbooks/31 / api/53 / guides/32 / playbooks/79`；源码质量高阶分析还应继续补强 `per-host authority width`、`event stream vs state writeback`、mirror gap discipline、host/domain/credential truth 与 `migration order as architecture quality` 这些轴，不要让 visible root 再退回“恢复成功率 / authority state / 单写者”旧叙事。
+- Prompt 高阶前门的稳定主语应继续收口到 `world entry / request assembly / six-stage assembly chain`；凡导航首页、判断页或目录入口的首问仍以“这套 prompt”或旧对象名起手，都属于 residual visible root。
+- `guides/56 / playbooks/31 / api/53 / guides/32 / playbooks/79` 这一组宿主接入/验证第一页，当前也应遵守同一纪律：前门先说 `current-truth surface`，再下钻到 `per-host authority width / writeback path / recovery asset non-sovereignty / freshness gate / anti-zombie evidence` 这些宿主展开对象；不要再让 `authority state / authority object / recovery boundary` 抢回主语位。
+- 目录前门如果必须引用兼容文件名，优先改可见链接标签而不是改路径；旧文件名可以继续活在路径里，但首页、导航页和稳定 judgment map 不应再让旧文件名术语直接占读者的第一眼。
+- Prompt 线的下一跳残留已收束到 `09 / philosophy/README / architecture/README / guides/README`；治理线的下一跳残留已收束到 `architecture/83 / philosophy/22 / architecture/README / navigation/03 / navigation/05`。更稳的节奏是分别按“第一句主语 / canonical chain / 路由标签”三层清理，不要把 prompt 和治理的高阶前门再混成同一批大扫除。
+- Prompt 高阶前门现在应进一步固定两层写法：主入口、专题 README、导航页和总图页都先说 `world entry / request assembly / six-stage assembly chain`；`Prompt 魔力` 只保留为结果性现象词，`Request Surface Constitution` 只保留为已退位检索别名，不再占 H1、首句或稳定入口标签。
+- 治理高阶前门现在也应进一步固定两层写法：主入口、专题 README、导航页和治理 owner 页都先说 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；`预算器 / source lattice / 统一定价 / 可见性` 这些词只保留为解释层对象或内层机制，不再替代 canonical chain 自己站在前门。
+- 入口级 residual 当前已明显下降；接下来若继续精修，应优先区分“兼容文件名路径仍含旧词”和“可见标签仍含旧词”这两类债。前者可以继续容忍并靠标签覆盖，后者则会直接把读者带进旧世界，必须优先清理。
+- 在治理线里，`预算器` 当前只宜保留为历史比喻或内层解释对象，不宜再当高阶主语。更稳的写法是：动作空间、上下文空间、时间空间和体验结果，都是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链的不同外观。
+- 当前更细的 residual 已进一步缩小到“解释层是否还借旧抽象词说话”和“兼容路径是否仍暴露旧 noun”两类。前门已经基本对齐后，不要再大范围重写入口；后续精修应优先只动真正会重新误导读者第一判断的那几句。
+- 导航层的稳定标签必须和目标页当前 H1 同步；如果正文已改宗而导航仍用旧名词，读者会先被标签带进旧世界。`bluebook/README`、`navigation/README`、`guides/README` 这类路由页现在应优先暴露 `当前世界准入主权 / 当前真相保护 / message lineage、governance key 与 current-truth surface` 这类当前标签，而不是沿用旧文件名或旧主题词。
+- 治理深页的下一跳 residual 现在不再是前门主语，而是更深一层的解释句是否还会偷换成“预算器 / visibility / 四个空间 / source lattice”。后续若继续精修，优先打这些会重新抽空 canonical chain 的句子，而不要再大面积修改已经稳定的入口页。
 
 ## 后续章节建议
 

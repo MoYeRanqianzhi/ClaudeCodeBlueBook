@@ -17,7 +17,7 @@
 - `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
 - `claude-code-source-code/src/query/stopHooks.ts:84-214`
 - `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
-- `../architecture/82-请求装配流水线：message lineage、projection consumer、protocol transcript、continuation qualification与cache-safe forks.md`
+- `../architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md`
 - `../philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`
 
 这些锚点共同说明：
@@ -43,14 +43,12 @@
 
 开始。
 
-更短一点说，你真正该审的不是一段 prompt，而是一部：
+更短一点说，你真正该审的不是一段 prompt，而是一条请求装配控制面。
 
-- `Request Surface Constitution`
+过去有人把它笼统叫作 `Request Surface Constitution`，但更稳的做法是直接点名：
 
-也就是：
-
-- 哪些 request-facing surfaces 共同组成模型可见世界
-- 哪些只配当 projection / delta
+- 哪些 section / dynamic boundary 决定什么能进入 stable prefix
+- 哪些 transcript / continuation object 决定什么配继续
 - surface 冲突时谁真正说了算
 
 ## 2. 苏格拉底诘问链
@@ -77,7 +75,7 @@
 
 判断标准：
 
-- 如果 system sections、tool descriptions、agent prompts、attachment deltas 仍被看成彼此无关的实现细节，而不是同一部 request-surface constitution 的不同槽位，那“Prompt 魔力”仍然会被误写成 system prompt 文案。
+- 如果 system sections、tool descriptions、agent prompts、attachment deltas 仍被看成彼此无关的实现细节，而不是同一条请求装配控制面的不同槽位，那“Prompt 魔力”仍然会被误写成 system prompt 文案。
 
 ### 2.4 display transcript、protocol transcript 与 continuation object 是否已被明确分层
 
@@ -129,8 +127,8 @@
 
 当这组问题里有任何一个答不清时，优先做下面四步：
 
-1. 先回 `../philosophy/84` 与 `../architecture/82`，判断自己改坏的是主权链、section 宪法、历史分层还是继续对象。
-2. 再回 `30`，用旧一层的 Prompt 审读模板确认是主语、共享前缀、边界还是合法遗忘先失真。
+1. 先回 `../philosophy/84` 与 `../architecture/82`，判断自己改坏的是 world-defining winner、section 宪法、历史分层还是继续对象。
+2. 再回 `../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`，确认先失真的是 stable prefix、transcript 编译、继续资格还是 fork reuse。
 3. 再检查 `messages.ts`、`sessionMemoryCompact.ts`、`stopHooks.ts` 与 `forkedAgent.ts` 对应的对象边界是否被某条旁路绕开。
 4. 最后才决定要不要重写文案；多数情况下，应该先修世界准入，而不是先修语气。
 
@@ -138,7 +136,7 @@
 
 ```text
 审读对象:
-当前 authority chain:
+当前 world-defining winner:
 constitution surfaces:
 projection / delta surfaces:
 surface conflict winner:
@@ -147,12 +145,12 @@ stable prefix / dynamic boundary 是否清楚:
 display transcript 与 protocol transcript 是否分层:
 continuation object 是否成立:
 lineage kernel 是否清楚区分 `parentUuid / message.id / tool_use_id`:
-display / protocol / handoff 是否仍沿同一条 message lineage 投影:
+display / protocol / continuation 是否仍沿同一条 message lineage 投影:
 旁路循环是否复用同一世界:
 当前最像哪类失真:
-- authority drift / section drift / boundary leak / transcript conflation / unlawful forgetting / parallel-world fork
+- world-definition drift / section drift / boundary leak / transcript conflation / unlawful forgetting / parallel-world fork
 优先回修对象:
-- 主权链 / section / boundary / transcript compiler / compact object / fork reuse
+- world-defining winner / section / boundary / transcript compiler / compact object / fork reuse
 ```
 
 ## 6. 否证问句
@@ -165,9 +163,9 @@ display / protocol / handoff 是否仍沿同一条 message lineage 投影:
 4. worker、summary、memory、suggestion 是否仍复用同一编译世界。
 5. 模型此刻消费的到底是哪条 transcript。
 6. `parentUuid / message.id / tool_use_id` 这三类 lineage key 各自保什么不变量。
-7. display / protocol / handoff 三种 truth 还是不是同一条 message lineage 的不同投影。
+7. `display transcript / protocol transcript / continuation object` 还是不是同一条 `message lineage` 的不同投影。
 8. 继续资格是谁签发的，在哪失效。
-9. system sections、tool descriptions、agent prompts 与 attachment deltas 是否仍在同一部 request-surface constitution 里各守其位。
+9. system sections、tool descriptions、agent prompts 与 attachment deltas 是否仍在同一条请求装配控制面里各守其位。
 10. 如果把著名措辞全部删掉，这套世界编译机制还会不会成立。
 
 ## 7. 一句话总结

@@ -1,16 +1,19 @@
-# 结构宿主接入审读手册：authority object、per-host authority width、freshness gate 与 anti-zombie 证据排查
+# 结构宿主接入审读手册：current-truth surface、per-host authority width、freshness gate 与 anti-zombie 证据排查
 
 结构宿主接入真正要守住的，不是“恢复最后成没成功”，而是下面这条宿主消费链没有被替身化：
 
-1. `authority object`
+1. `current-truth surface`
 2. `per-host authority width`
-3. `authoritative path`
-4. `event-stream-vs-state-writeback`
-5. `freshness gate`
-6. `stale worldview / ghost capability`
-7. `anti-zombie evidence`
+3. `writeback path`
+4. `recovery asset non-sovereignty`
+5. `event-stream-vs-state-writeback`
+6. `freshness gate`
+7. `stale worldview / ghost capability`
+8. `anti-zombie evidence`
 
 `bridgePointer`、append-chain、resume file 与其他 recovery asset 只能帮助你回到当前真相，不能自己宣布当前真相。
+
+这条宿主消费链不是另一条母线，而是 canonical `current-truth surface -> recovery asset non-sovereignty -> freshness gate -> ghost capability` 在 host 侧的展开。
 
 ## 0. 代表性源码锚点
 
@@ -38,9 +41,9 @@
 
 所以这层审读最先要问的不是“恢复是不是顺”，而是：
 
-1. 宿主当前围绕哪个 `authority object` 在工作。
+1. 宿主当前围绕哪个 `current-truth surface` 在工作。
 2. 宿主拿到的是不是合法 `per-host authority width`。
-3. 当前 present truth 是沿哪条 `authoritative path` 被外化。
+3. 当前 present truth 是沿哪条 `writeback path` 被外化。
 4. `freshness gate` 有没有先剥夺 stale writer 的写回资格。
 5. stale worldview / ghost capability 是否真的会在过期后失效。
 
@@ -59,18 +62,18 @@
 
 每次宿主接入变更后，至少逐项检查：
 
-1. `authority object continuity`
+1. `current-truth surface continuity`
    - 宿主是否仍围绕正式状态面消费当前真相，而不是自己猜测当前状态。
 2. `per-host authority width continuity`
    - 宿主是否仍只消费自己那一份合法 width，而不是拿 event stream 自己拼 current truth。
-3. `authoritative path continuity`
+3. `writeback path continuity`
    - 当前 present truth 是否仍沿正式 writeback path 外化，而不是被日志、timeline 或 pointer 越权篡位。
 4. `event-stream-vs-state-writeback continuity`
    - 宿主是否仍区分 timeline、internal history 与 current truth。
 5. `freshness gate continuity`
    - stale finally、stale snapshot、stale pointer 与 stale task patch 是否仍会在写回前被正式撤权。
 6. `recovery asset non-sovereignty`
-   - pointer、ledger、append-chain、resume file 是否仍只被当成恢复资产，而不是 authority object。
+   - pointer、ledger、append-chain、resume file 是否仍只被当成恢复资产，而不是 current-truth surface。
 7. `stale worldview / ghost capability eviction`
    - 过期 worldview、旧 capability、旧 head 假设是否仍会被主动降级或驱逐。
 8. `anti-zombie evidence`
@@ -80,7 +83,7 @@
 
 出现下面情况时，应直接拒收：
 
-1. 宿主自己猜 `authority object`，不消费正式状态面。
+1. 宿主自己猜 `current-truth surface`，不消费正式状态面。
 2. 宿主把 width、generation 或去重内部细节绑成公共契约。
 3. 宿主把 `bridgePointer`、append-chain 或 resume file 神化成当前真相。
 4. 宿主让 event stream 直接宣布 current truth。
@@ -96,7 +99,7 @@
 2. stale finally / stale task patch 被拒绝
    - 确认宿主能看到 anti-zombie 的结果面。
 3. `bridgePointer` 过期 / session head adoption
-   - 确认宿主把 pointer 当资产，不当 authority object。
+   - 确认宿主把 pointer 当资产，不当 current-truth surface。
 4. append-chain adopt / retry
    - 确认宿主能区分“正在收敛”与“已经恢复完成”。
 5. `rewind_files + seed_read_state`
@@ -108,9 +111,9 @@
 
 每次结构宿主 drift 至少记录：
 
-1. `authority_object_ref`
+1. `current_truth_surface_ref`
 2. `per_host_authority_width`
-3. `authoritative_path_ref`
+3. `writeback_path_ref`
 4. `event_stream_non_sovereignty`
 5. `freshness_gate_ref`
 6. `recovery_asset_non_sovereignty`
@@ -125,8 +128,8 @@
 
 更稳的防再发顺序是：
 
-1. 先把 `authority object` 从宿主猜测里救出来。
-2. 先把 `authoritative path` 与 `event-stream-vs-state-writeback` 分工补回宿主。
+1. 先把 `current-truth surface` 从宿主猜测里救出来。
+2. 先把 `writeback path` 与 `event-stream-vs-state-writeback` 分工补回宿主。
 3. 先把 pointer 与其他恢复资产从“恢复真相”降回“恢复资产”。
 4. 先把 `freshness gate` 与 stale writer 撤权证据补回宿主。
 5. 先把 stale worldview / ghost capability 的降级与驱逐补回宿主。
@@ -136,13 +139,13 @@
 
 在你准备宣布“结构宿主接入已经稳定”前，先问自己：
 
-1. 宿主消费的是 `authority object`，还是自己猜出来的状态。
+1. 宿主消费的是 `current-truth surface`，还是自己猜出来的状态。
 2. 宿主绑定的是合法 width，还是内部 generation 细节。
-3. 当前 present truth 是否仍沿正式 `authoritative path` 外化。
+3. 当前 present truth 是否仍沿正式 `writeback path` 外化。
 4. recovery asset 在我的系统里还是资产，还是已经被神化成真相。
 5. stale writer 是否已在 `freshness gate` 前被正式撤权。
 6. 宿主能否直接看见 stale worldview / ghost capability 的拒收证据。
 
 ## 9. 一句话总结
 
-真正成熟的结构宿主接入审读，不是看恢复最后成没成功，而是持续证明宿主仍围绕 `authority object`、合法 `per-host authority width`、正式 `authoritative path`、`freshness gate` 与 `anti-zombie evidence` 消费当前真相。
+真正成熟的结构宿主接入审读，不是看恢复最后成没成功，而是持续证明宿主仍围绕 `current-truth surface`、合法 `per-host authority width`、正式 `writeback path`、`recovery asset non-sovereignty`、`freshness gate` 与 `anti-zombie evidence` 消费当前真相。

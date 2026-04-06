@@ -1,10 +1,10 @@
-# 机制哲学导航：世界进入模型、扩张定价与当前真相保护如何回到第一性原理
+# 机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理
 
 这一篇不再回答“这些机制对象怎样成立、怎样验证、怎样失真”，而是回答：
 
-- 如果把 Prompt 魔力、安全/省 token、源码先进性一路压回不可约判断，Claude Code 到底在坚持什么第一性原理。
+- 如果把请求装配、安全/省 token、源码先进性一路压回不可约判断，Claude Code 到底在坚持什么第一性原理。
 
-更稳的校正方式不是停在 `compiled request truth`、`governance control plane object`、`evolvable kernel object boundary` 这些旧深层对象名词，而是先抓住三句：
+更稳的校正方式不是停在旧对象名词，而是先抓住规范主语：`world entry / request assembly / six-stage assembly chain`、统一定价治理、当前真相保护。
 
 1. 世界怎样进入模型
 2. 扩张怎样进入当前世界
@@ -14,18 +14,31 @@
 
 它主要压成五个不可约判断：
 
-1. 为什么 Claude Code 的 Prompt 会有魔力，答案不在文案，而在可缓存、可转写、可继续的编译链。
+1. 为什么 Claude Code 的请求装配会显得有“魔力”，答案不在文案，而在可缓存、可转写、可继续的编译链。
 2. 为什么安全与省 token 并不是两套权衡，而是治理控制面对一切扩张的统一定价。
 3. 为什么源码先进性并不是风格或洁癖，而是把故障模型提前编码进结构。
 4. 为什么不能停在反例层，而必须继续把坏解法压回第一性原理收束。
 5. 怎样用苏格拉底式追问避免把这一层写成新的口号集。
 
-## 1. Prompt 编译链哲学线
+如果再往下压一层，这五个判断最终都要回到四个跨平面函数：
+
+1. `compile`
+   - 世界如何先被编进模型
+2. `price`
+   - 扩张如何先被定价
+3. `externalize`
+   - 当前真相如何先被 runtime 外化给 host
+4. `evict`
+   - stale writer、ghost capability 与旧 authority 如何被正式驱逐
+
+如果一个解释还没有压到这四个函数，就还只是对象层总结，不算最硬的第一性原理收束。
+
+## 1. world entry / request assembly / six-stage assembly chain 哲学线
 
 先问：
 
-- 为什么 Claude Code 的 Prompt 会有如此的魔力。
-- 为什么魔力一旦离开 `message lineage`、`projection consumer`、`protocol transcript`、`continuation qualification` 与 `cache-safe forks`，就会立刻褪色。
+- 为什么 Claude Code 的请求装配会显得 unusually coherent。
+- 为什么这种 coherence 一旦离开 `message lineage`、`projection consumer`、`protocol transcript`、`continuation qualification` 与 `cache-safe forks`，就会立刻褪色。
 
 成立证据：
 
@@ -40,15 +53,15 @@
 
 而是：
 
-- 把 Prompt 魔力压回“世界进入模型前先被编译”的第一性原理
-- 若仍停留在旧对象名和桥接词层，使用 `../guides/30` 校正可见主语
+- 把请求装配的 coherent effect 压回“世界进入模型前先被编译”的第一性原理
+- 若仍停留在旧对象名和桥接词层，回 `../09` 与 `../architecture/82` 校正可见主语
 
 ## 2. 统一定价治理哲学线
 
 先问：
 
 - 为什么安全设计与省 token 设计看似不同，却总是落到同一治理控制面。
-- 为什么 `governance key`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup` 必须被统一定价。
+- 为什么 `governance key`、`externalized truth chain`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup` 必须被统一定价。
 
 成立证据：
 
@@ -87,7 +100,7 @@
 
 而是：
 
-- 把源码先进性压回“先把证据梯度、时间保护与未来重构路径写进结构，再谈模块美学”的第一性原理
+- 把源码先进性压回 `current-truth surface / recovery asset non-sovereignty / freshness gate / ghost capability` 与 `证据梯度 / 时间诚实 / future maintainer 可独立 reject` 这组第一性原理，再谈模块美学
 
 ## 4. 为什么这层更适合落在 philosophy
 
@@ -132,7 +145,7 @@
 
 在你准备宣布“一套制度解释已经足够深”前，先问自己：
 
-1. 我是否已经回答 Prompt 魔力为什么不是文案技巧。
+1. 我是否已经回答请求装配的 coherent effect 为什么不是文案技巧。
 2. 我是否已经回答安全与省 token 为什么不是两套分开的优化。
 3. 我是否已经回答源码先进性为什么不是结构洁癖，也不是公开镜像体感。
 4. 我是在描述 Claude Code 的做法，还是已经提炼出可迁移的第一性原理。

@@ -1,16 +1,16 @@
 # 哲学专题
 
-`philosophy/` 解释 Claude Code 为什么要这样设计，而不是仅仅罗列功能：为什么 Prompt 要被做成协作语法，为什么治理要被写成统一定价，为什么源码质量首先服务当前真相保护。
+`philosophy/` 解释 Claude Code 为什么要这样设计，而不是仅仅罗列功能：为什么 `world entry / request assembly / six-stage assembly chain` 必须先成立，为什么治理要被写成统一定价，为什么源码质量首先服务当前真相保护。
 
 ## 什么时候进来
 
 - 当你已经知道功能和机制存在，但还没回答“为什么必须这样设计”。
-- 当你想把 Prompt 魔力、安全/省 token、源码先进性，从做法解释压回不可约判断。
+- 当你想把 `world entry / request assembly / six-stage assembly chain`、安全/省 token、源码先进性，从做法解释压回不可约判断。
 - 当你需要区分什么是实现、什么是约束、什么是迁移到别的 runtime 后仍成立的原则。
 
 ## 如果你只先判断一件事
 
-- 如果你只先判断“为什么 Prompt 魔力不是文案技巧”，从 [84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md](84-%E7%9C%9F%E6%AD%A3%E6%9C%89%E9%AD%94%E5%8A%9B%E7%9A%84Prompt%EF%BC%8C%E4%BC%9A%E5%85%88%E8%A7%84%E5%AE%9A%E4%B8%96%E7%95%8C%E5%A6%82%E4%BD%95%E5%90%88%E6%B3%95%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B.md) 进入。
+- 如果你只先判断“为什么 `world entry / request assembly / six-stage assembly chain` 不是文案技巧”，从 [84-世界如何合法进入模型：request assembly 与 six-stage assembly chain](84-%E7%9C%9F%E6%AD%A3%E6%9C%89%E9%AD%94%E5%8A%9B%E7%9A%84Prompt%EF%BC%8C%E4%BC%9A%E5%85%88%E8%A7%84%E5%AE%9A%E4%B8%96%E7%95%8C%E5%A6%82%E4%BD%95%E5%90%88%E6%B3%95%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B.md) 进入。
   - 失败信号：还在把 Prompt 强度解释成更长 instruction 或更强措辞。
 - 如果你只先判断“为什么安全与省 token 是同一条治理定价链”，从 [85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md](85-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E6%B2%BB%E7%90%86%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%9B%B4%E4%BC%9A%E6%8B%A6%E6%88%AA%EF%BC%8C%E8%80%8C%E6%98%AF%E6%9B%B4%E4%BC%9A%E4%B8%BA%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7.md) 进入。
   - 失败信号：还在把治理理解成权限门数、模式面板或 token 百分比。

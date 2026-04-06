@@ -8,16 +8,16 @@
 
 关键追问：
 
-- 为什么这套 prompt 在当前、下一步、接手后都像活在同一个现场里。
+- 为什么这条 `world entry / request assembly / six-stage assembly chain` 在当前、下一步、接手后都像活在同一个现场里。
 - 为什么一段 prompt 看起来更长，却未必更强。
-- 为什么一个 Prompt Constitution 如果不能被失稳前审读，最终会退回神秘文案。
+- 为什么请求装配控制面如果不能被失稳前审读，最终会退回神秘文案。
 
 规范锚点：
 
 1. `../philosophy/84`
 2. `../architecture/82`
 3. `../guides/99`
-4. `../guides/30`
+4. `../playbooks/77`
 
 这条线的核心不是：
 
@@ -27,7 +27,7 @@
 
 - 如何确认 `message lineage`、`section registry / dynamic boundary`、`protocol transcript`、`continuation qualification` 与接手连续性都还成立
 
-## 2. 安全与省 token 的苏格拉底审读
+## 2. 统一治理定价的苏格拉底审读
 
 关键追问：
 
@@ -48,14 +48,14 @@
 
 而是：
 
-- 如何确认 `governance key`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup` 都没有在免费扩张
+- 如何确认 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-vs-transient cleanup` 仍是一条未失真的收费链
 
 ## 3. 当前真相保护的苏格拉底审读
 
 关键追问：
 
 - 为什么有些仓库看起来更整齐，却更不适合长期演化。
-- 为什么“源码先进性”最终一定要落实到权威面、合同、恢复资产与反 zombie 协议。
+- 为什么“源码先进性”最终一定要落实到 current-truth surface、recovery asset non-sovereignty、freshness gate 与 ghost capability。
 - 为什么未来维护者如果没有被当成正式消费者，先进性只会停留在作者视角。
 
 规范锚点：
@@ -73,13 +73,13 @@
 
 而是：
 
-- 结构里是否已经提前编码了 `current-truth surface / freshness gate / stale worldview / ghost capability` 这条 present-truth 纪律，以及证据梯度、批评路径、修改路径与退出路径
+- 结构里是否已经提前编码了 `current-truth surface / recovery asset non-sovereignty / freshness gate / ghost capability` 这条 present-truth 纪律，以及证据梯度、批评路径、修改路径与退出路径
 
 ## 4. 三条线共同的先验反证
 
 在你继续扩写“更深解释”之前，先反问三件事：
 
-1. 如果删掉漂亮措辞，这套 Prompt 还剩哪条合法世界准入链。
+1. 如果删掉漂亮措辞，这条 `world entry / request assembly / six-stage assembly chain` 还剩哪条合法世界准入链。
 2. 如果删掉面板与预算图，这套治理还剩哪条拒绝免费扩张的价格链。
 3. 如果删掉目录美学，这套结构还剩哪条当前真相保护链。
 

@@ -36,6 +36,7 @@
 而是：
 
 - 宿主当前仍在围绕同一条 `message lineage` 的正式 projection 消费 Prompt 世界
+- 宿主仍把 request compiler 的输入面、外化投影和内部编译面分开理解
 
 所以这层审读最先要看的不是：
 
@@ -58,6 +59,7 @@
 3. cache miss 发生后，只剩“最近变贵了”的说法。
 4. 状态判断开始依赖最后一条消息或裸 `stop_reason`。
 5. compact 之后交接只剩 summary，看不到继续资格与 boundary。
+6. 宿主把 request compiler 重新读成几段输入拼图，而不是一条正式 rule surface。
 
 ## 3. 每轮检查点
 
@@ -73,6 +75,8 @@
    - cache break 是否仍能解释到具体 system / tool / model / beta / extraBody 变化。
 5. `continuation qualification continuity`
    - 宿主是否仍围绕 `result + session_state_changed + summaries + Context Usage` 判断继续资格。
+6. `request compiler continuity`
+   - 宿主是否仍把 `systemPrompt / appendSystemPrompt / agents / promptSuggestions` 视为输入面，而把 `message lineage / projection consumer / protocol transcript / continuation qualification` 视为正式 contract 面。
 
 ## 4. 直接拒收条件
 
@@ -84,6 +88,7 @@
 4. cache break 只剩 token 变化，没有正式 break reason。
 5. 宿主用最后一条消息或 `stop_reason` 充当主状态机。
 6. compact / handoff 后只剩 summary，不剩继续资格与 boundary 投影。
+7. 宿主把 request compiler 退回输入拼图，不再验证正式 contract 面。
 
 ## 5. 最小演练集
 
@@ -134,7 +139,8 @@
 3. cache miss 是被正式解释了，还是仍然停在黑箱成本。
 4. 当前继续资格是被正式判断了，还是被最后一条消息猜出来的。
 5. 如果内部 compiler 重构，宿主是否仍能继续工作。
+6. 我现在验收的是 request compiler 交出的 rule surface，还是几段 Prompt 输入的拼图。
 
 ## 9. 一句话总结
 
-真正成熟的 Prompt 宿主接入审读，不是看页面显示了多少 prompt 信息，而是持续证明宿主仍在消费同一条 `message lineage` 的正式 projection。
+真正成熟的 Prompt 宿主接入审读，不是看页面显示了多少 prompt 信息，而是持续证明宿主仍在消费同一条 `message lineage` 的正式 projection，并且没有把 request compiler 退回输入拼图。

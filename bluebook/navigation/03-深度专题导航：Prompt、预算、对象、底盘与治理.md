@@ -23,7 +23,7 @@
 它主要防五种误读：
 
 1. 把 Prompt 读成更强文案，而不是世界进入模型前的编译秩序。
-2. 把治理读成更严拦截，而不是拒绝免费扩张的统一定价。
+2. 把治理读成更严拦截，而不是围绕 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 拒绝免费扩张。
 3. 把协作承载体读成工具堆叠，而不是对象升级与恢复闭环。
 4. 把源码先进性读成目录美学，而不是 current-truth surface、consumer subset 与 chokepoint 的共同保护。
 5. 把第一性原理实践与苏格拉底自检放到正文尾部，而不是把它们当作前置判题器。
@@ -34,16 +34,16 @@
 
 - 为什么 Claude Code 的 prompt 看起来像“有魔力”。
 - 为什么它不是抄一段 system prompt 就能复刻。
-- 为什么工具 ABI、mailbox、channel 输入、cache break 都和 prompt 强度有关。
+- 为什么工具 ABI、mailbox、channel 输入、cache break 都和 request compiler 有关，而不只是和 prompt 强度有关。
 
 成立证据：
 
 1. [三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
-2. [真正有魔力的 Prompt，会先规定世界如何合法进入模型](../philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md)
-3. [请求装配流水线：消息血缘、投影消费面、协议转录与合法遗忘](../architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md)
-4. [苏格拉底审读：消息血缘、协议转录与继续对象](../guides/99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object.md)
-5. [验证手册：消息血缘、协议转录、继续对象与 cache-safe fork](../playbooks/77-请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归.md)
-6. [反例：假消息血缘、假协议转录与假继续对象](../casebooks/73-请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object.md)
+2. [世界如何合法进入模型：request assembly 与 six-stage assembly chain](../philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md)
+3. [请求装配流水线：world entry / request assembly / six-stage assembly chain](../architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md)
+4. [苏格拉底审读：world entry / request assembly / six-stage assembly chain](../guides/99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object.md)
+5. [验证手册：request assembly、protocol transcript、continuation qualification 与 cache-safe fork](../playbooks/77-请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归.md)
+6. [反例：假 world entry、假 protocol transcript 与假 continuation qualification](../casebooks/73-请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object.md)
 
 需要补证时再下钻：
 
@@ -55,8 +55,8 @@
 
 这条线的核心结论是：
 
-- Prompt 魔力来自请求装配控制面：消息血缘、投影消费面、协议转录与继续对象必须持续对同一个世界保持诚实；装配顺序、工具 ABI、缓存边界、状态晚绑定与旁路 fork 只是这套控制面的实现面
-- 这条线的更短检索名可以直接记成 `Request Surface Constitution`：`09` 负责定义，`84 / 82` 负责展开，`99` 负责审读
+- `world entry / request assembly / six-stage assembly chain` 必须持续对同一个世界保持诚实；装配顺序、工具 ABI、缓存边界、状态晚绑定与旁路 fork 只是这套控制面的实现面
+- 这条线的前门不再让旧别名占主语位；`09` 负责定义，`84 / 82` 负责展开，`99` 负责审读
 - 最短记法：不是更强 prompt，而是同一世界的持续诚实
 
 继续追问时：
@@ -74,17 +74,18 @@
 先问：
 
 - 为什么安全和省 token 不是两套系统。
-- 为什么治理设置、能力裁剪、budget continuation 与 prompt 稳定性应该放到同一张图里。
+- 为什么 `governance key`、`typed ask / decision window`、`continuation pricing` 与 prompt 稳定性应该放到同一张图里。
 - 为什么“省 token”首先在控制什么进入上下文，而不是在压缩句子。
-- 为什么运行时里需要多套预算机制，却仍共享同一第一性原理。
+- 为什么 ask、续费、清理可以分层实现，却仍共享同一条治理收费链。
+- 为什么 `Context Usage` 在这里首先是 `decision window` 证据面，而不是成本仪表。
 
 成立证据：
 
 1. [三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
 2. [真正成熟的治理，不是更会拦截，而是更会为扩张定价](../philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md)
-3. [反扩张治理流水线：治理键、typed ask、decision window 与 continuation pricing](../architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md)
-4. [苏格拉底审读：治理键、decision window 与 continuation pricing](../guides/100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md)
-5. [验证手册：治理键、typed ask、decision window 与 continuation pricing 回归](../playbooks/78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md)
+3. [反扩张治理流水线：governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup](../architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md)
+4. [苏格拉底审读：governance key、typed ask、decision window 与 continuation pricing](../guides/100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md)
+5. [验证手册：governance key、externalized truth chain、typed ask、decision window 与 continuation pricing 回归](../playbooks/78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md)
 6. [反例：低信任扩权、假 decision window 与免费继续](../casebooks/74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续.md)
 
 需要补证时再下钻：
@@ -97,8 +98,8 @@
 
 这条线的核心结论是：
 
-- Claude Code 真正持续压制的是当前世界的免费扩张；预算器、权限、可见性与 continuation pricing 只是它在动作空间、权威空间、上下文空间与时间空间上的具体定价器
-- 如果要继续落到可执行层，优先去 `guides/28 -> guides/100 -> playbooks/78` 看失败语义与升级阈值矩阵，而不是把“统一定价”继续停在抽象解释层
+- Claude Code 真正持续压制的是当前世界的免费扩张；这条治理链真正要回答的是：谁能改边界、宿主承认哪条真相、哪些扩张必须 ask、这个 window 是否仍有效、继续与恢复是否还值得付费
+- 如果要继续落到可执行层，优先去 `guides/28 -> guides/100 -> playbooks/78` 看 source slot、ask arbitration、window 失效与 cleanup gate，而不是把治理继续停在抽象口号层
 
 ## 3. 权威真相深线
 
@@ -106,7 +107,7 @@
 
 - 为什么 Claude Code 反复强调 single source of truth。
 - 为什么 mode、tool pool、schema、transcript path 这些地方不能让多个 feature 各自维护。
-- 为什么“宿主不该猜”最终会继续走向 authoritative surface。
+- 为什么“宿主不该猜”最终会继续走向 current-truth surface 与 consumer subset。
 
 需要补证时再下钻：
 
@@ -180,13 +181,14 @@
 
 - Claude Code 的远程可用性不是靠“断了再试”，而是靠分层失败语义、防假连续性和恢复边界管理
 
-## 7. 源码先进性深线
+## 7. 当前真相保护深线
 
 先问：
 
 - 为什么当前真相保护、合法复杂度中心与成熟架构可以同时成立。
 - 为什么源码先进性首先要看 current-truth surface、danger surface 与 consumer subset，而不是目录观感。
 - 为什么源码质量判断最终必须落到合法复杂度中心、边界可证与下一次重构仍有路。
+- 为什么 transcript replay、UI snapshot 与 adapter cache 都不配冒充 current truth。
 
 成立证据：
 
@@ -194,7 +196,7 @@
 2. [真正先进的内核，不是更会分层，而是更会阻止过去写坏现在](../philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md)
 3. [真正成熟的源码质量判断：复杂度中心合法、边界可证、下一次重构仍有路](../philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md)
 4. [权威面与反僵尸图谱：current-truth surface、freshness gate 与 ghost capability](../architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)
-5. [源码质量证据分级：contract、registry、authoritative surface 与 adapter subset](../guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md)
+5. [源码质量证据分级：contract、registry、current-truth surface 与 consumer subset](../guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md)
 
 需要补证时再下钻：
 

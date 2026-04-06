@@ -1,9 +1,9 @@
-# 如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline
+# 如何给公开镜像做源码质量证据分级：contract、registry、current-truth surface、consumer subset与mirror gap discipline
 
 这一章回答五个问题：
 
 1. 为什么研究 Claude Code 这类公开镜像时，第一步不该直接夸“源码质量很高”或抱怨“缺太多源码”。
-2. 怎样把公开镜像里的证据压成稳定的六级阶梯，而不是把 README、schema、注册表、热点文件和缺口脑补成同一层真相。
+2. 怎样把公开镜像里的证据压成稳定的六级阶梯，而不是把 README、schema、注册表、当前真相候选、消费者子集、热点文件和缺口脑补成同一层真相。
 3. 为什么“大文件”必须区分为合法复杂度中心和散落式复杂性，而不是一律判坏。
 4. 为什么源码质量必须同时审读 `dependency honesty` 与 `temporal honesty`。
 5. 怎样把这套证据分级方法迁移到别的 agent runtime 研究和代码评审中。
@@ -35,8 +35,8 @@
 
 1. `contract truth`
 2. `registry truth`
-3. `authoritative surface truth`
-4. `adapter subset truth`
+3. `current-truth surface truth`
+4. `consumer subset truth`
 5. `hotspot kernel truth`
 6. `mirror gap discipline`
 
@@ -51,6 +51,31 @@
 - 以及 README 已明说“不包含”的能力
 
 误写成同一层真相。
+
+## 1.1 术语对照
+
+在公开镜像研究里，下面这些词最容易互相挤占，必须先拆开：
+
+1. `contract truth`
+   - 系统正式承认哪些对象、状态和动作可以存在。
+2. `registry truth`
+   - 当前 build / 当前 runtime 真的注册了哪些对象。
+3. `current-truth surface`
+   - 真正有资格宣布 present truth 的 sole writer / choke point / writeback seam。
+4. `authoritative surface candidate`
+   - 在公开镜像里你已经看到 sole writer 或 choke point 候选，但证据还不足以把它写死成完整 `current-truth surface`。
+5. `consumer subset`
+   - 同一份权威真相对不同 host / adapter / projection 只暴露各自职责宽度。
+6. `hotspot kernel`
+   - 集中维护统一 invariant 的合法复杂度中心。
+7. `mirror gap discipline`
+   - 明写未知边界，拒绝把缺口脑补成已知真相。
+
+更稳的顺序是：
+
+- 能证明 `current-truth surface` 就直接写 `current-truth surface`
+- 还不能证明时，就降格写 `authoritative surface candidate`
+- 不要反过来把所有权威入口都写成已经被完整证明的 present truth
 
 ## 2. 第一级：先找 contract truth
 
@@ -101,15 +126,15 @@ registry truth 才回答：
 
 不能让两者互相替代。
 
-## 4. 第三级：锁定 authoritative surface
+## 4. 第三级：锁定 current-truth surface 候选
 
 contract 和 registry 都还不够。
 
 真正会决定源码质量判断稳定性的，是：
 
-- 当前谁有权宣布真相
+- 当前谁有权宣布 present truth
 
-这就是 `authoritative surface`。
+这里的 `authoritative surface`，更准确地说是 `current-truth surface`：不是谁更重要，而是当前哪条 surface 被允许写当前真相。若 sole writer、writeback path 与 freshness guard 还没锁定，就不能宣布这层真相已经成立；在公开镜像里，这时最多只能先把它记成 `authoritative surface candidate`。
 
 典型信号包括：
 
@@ -131,13 +156,13 @@ contract 和 registry 都还不够。
 
 - 它会主动把权威入口暴露出来
 
-## 5. 第四级：把 adapter subset 从协议全集里剥出来
+## 5. 第四级：把 consumer subset 从协议全集里剥出来
 
 公开镜像最容易被误读的一层，是：
 
-- protocol full set vs adapter subset
+- protocol full set vs consumer subset
 
-因为协议全集里声明存在的能力，不等于每个 adapter、每个 host、每个入口都真的实现了它。
+因为协议全集里声明存在的能力，不等于每个 adapter、每个 host、每个入口都真的实现了它。`adapter subset` 只是 `consumer subset` 的一种具体形态；`worker_status / external_metadata`、resume path 与 search layer 也都在消费同一 runtime truth 的诚实子集。
 
 `bridgeMain` 明写 linear subset，remote / headless / REPL 又各有不同支持面。
 
@@ -193,7 +218,7 @@ contract 和 registry 都还不够。
 你可以稳定判断：
 
 1. 当前可见 contract 的成熟度
-2. 当前 registry / authoritative surface 的清晰度
+2. 当前 registry / current-truth surface 候选的清晰度
 3. 当前 hotspot kernel 的职责是否可辩护
 4. 当前 seam、命名、注释、state machine 是否足够诚实
 
@@ -202,6 +227,8 @@ contract 和 registry 都还不够。
 1. 缺失模块里一定还藏着什么“更完整实现”
 2. 测试体系一定如何组织
 3. feature-gated 能力在内部是否都和公开树同构
+
+公开镜像最该保留的 unknown，不是“内部也许还有更多实现”，而是 sole writer、writeback path、freshness gate 与 eviction rule 是否可见；这些证据不可见时，只能写 unknown，不能从 replay asset、UI snapshot 或 adapter cache 反推 current truth。
 
 gap discipline 的价值不是“保守一点”，而是：
 
@@ -246,8 +273,8 @@ gap discipline 的价值不是“保守一点”，而是：
 
 1. 先列 contract，不先列目录树。
 2. 再列 registry，不先夸能力全集。
-3. 再锁定 authoritative surface，不从 UI 投影反推真相。
-4. 再区分 adapter subset，不把协议全集和宿主子集混写。
+3. 再锁定 `current-truth surface` 或至少 `authoritative surface candidate`，不从 UI 投影反推真相。
+4. 再区分 `consumer subset`，不把协议全集和宿主子集混写。
 5. 最后才审 hotspot kernel 是否是合法复杂度中心。
 6. 每一步都保留 gap note，不让缺失部分被脑补补齐。
 
@@ -294,7 +321,7 @@ gap discipline 的价值不是“保守一点”，而是：
 
 在你准备写下“这个仓库源码质量很高”前，先问自己：
 
-1. 我现在看到的是 contract、registry、authoritative surface、adapter subset 还是 hotspot。
+1. 我现在看到的是 contract、registry、current-truth surface 候选、consumer subset 还是 hotspot。
 2. 我是否把“声明存在”“当前注册”“宿主实装”混成了一层。
 3. 这个大文件是在维护统一 invariant，还是在四处补丁式接线。
 4. 我是否同时审了 dependency honesty 与 temporal honesty。
@@ -303,4 +330,4 @@ gap discipline 的价值不是“保守一点”，而是：
 
 ## 12. 一句话总结
 
-公开镜像里的源码质量，不该靠目录树和大文件体感判断；更稳的顺序是 `contract -> registry -> authoritative surface -> adapter subset -> hotspot kernel -> mirror gap discipline`，并且同时审 `dependency honesty` 与 `temporal honesty`。
+公开镜像里的源码质量，不该靠目录树和大文件体感判断；更稳的顺序是 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`，并且同时审 `dependency honesty` 与 `temporal honesty`。

@@ -18,7 +18,7 @@
 - `claude-code-source-code/src/tools/PowerShellTool/pathValidation.ts:1515-1614`
 - `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:15-69`
 - `claude-code-source-code/src/services/mcp/utils.ts:171-200`
-- `../architecture/84-权威面与反僵尸图谱：authority object、freshness gate、ghost capability与release shaping.md`
+- `../architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md`
 - `../philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`
 
 这些锚点共同说明：
@@ -127,7 +127,7 @@ fail_closed_branch:
 当前最像哪类失真:
 - multi-writer truth / recovery usurpation / stale overwrite / boundary conflation / release-surface leak
 优先回修对象:
-- current-truth surface / recovery asset contract / freshness gate / boundary split / release shaping
+- current-truth surface / recovery asset non-sovereignty / freshness gate / boundary split / release shaping
 ```
 
 上面六个新增槽位都应填写具体源码路径；任一槽位只能写“感觉这里有”时，就还不配宣布 `current-truth surface` 已成立。

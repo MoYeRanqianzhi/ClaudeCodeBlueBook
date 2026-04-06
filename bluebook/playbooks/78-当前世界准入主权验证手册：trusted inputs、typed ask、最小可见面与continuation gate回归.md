@@ -1,4 +1,4 @@
-# 当前世界准入主权验证手册：governance key、typed ask、decision window 与 continuation pricing 回归
+# 当前世界准入主权验证手册：governance key、externalized truth chain、typed ask、decision window、continuation pricing与durable/transient cleanup回归
 
 当前世界准入主权验证真正要验证的，不是 deny 还在不在、token 还显不显示，而是：
 
@@ -36,21 +36,23 @@
 所以这层验证最先要看的不是面板，而是：
 
 1. `governance key continuity`
-2. `typed ask continuity`
-3. `decision window continuity`
-4. `continuation pricing continuity`
-5. `durable/transient cleanup continuity`
+2. `externalized truth chain continuity`
+3. `typed ask continuity`
+4. `decision window continuity`
+5. `continuation pricing continuity`
+6. `durable/transient cleanup continuity`
 
 ## 2. 回归症状
 
 看到下面信号时，应提高警惕：
 
 1. 低信任输入开始偷偷自我扩权。
-2. ask 退回单一路径弹窗，不再是 typed transaction。
-3. token 图表开始替代 decision window。
-4. 高体积对象重新霸占主 prompt，却没有外化解释链。
-5. 恢复时把 transient authority 一并续租。
-6. continuation 重新退回“先继续再说”。
+2. host 开始靠 mode 条、token 条或 `pending_action` 文案自己拼当前真相。
+3. ask 退回单一路径弹窗，不再是 typed transaction。
+4. token 图表开始替代 decision window。
+5. 高体积对象重新霸占主 prompt，却没有外化解释链。
+6. 恢复时把 transient authority 一并续租。
+7. continuation 重新退回“先继续再说”。
 
 ## 3. 每轮检查点
 
@@ -58,13 +60,15 @@
 
 1. `governance key continuity`
    - 当前世界边界是否仍由 `sources -> effective -> applied -> externalized` 这条对象链宣布。
-2. `typed ask continuity`
+2. `externalized truth chain continuity`
+   - host 是否仍直接消费 `sources / effective / applied / session_state_changed / worker_status / get_context_usage`，而不是回退到 mode 条、token 条与状态文案。
+3. `typed ask continuity`
    - ask 是否仍是同一请求对象上的正式仲裁事务。
-3. `decision window continuity`
+4. `decision window continuity`
    - 当前 pending action、Context Usage、generation 与取消语义是否仍属于同一窗口。
-4. `continuation pricing continuity`
+5. `continuation pricing continuity`
    - 继续执行是否仍由 decision gain、对象升级条件与同一 `externalized truth chain` 约束。
-5. `durable/transient cleanup continuity`
+6. `durable/transient cleanup continuity`
    - resume 是否只恢复 durable assets，而不会把旧 mode、旧 grant、旧可见集整包续租。
 
 ## 3.1 回归 / 拒收矩阵
@@ -74,6 +78,7 @@
 | drift | verdict | threshold trigger | 最小证据 | escalation target | surface divergence | minimum legal degraded shape | rollback action | re-entry condition | 是否冻结 capability expansion | 是否必须重建 `decision window / cleanup` |
 |---|---|---|---|---|---|---|---|---|---|---|
 | `low_trust_source_expanded_authority` | `reject` | 低信任输入改边界 | source chain / applied config | human / managed authority | host/headless 都直接拒收 | 只保 trusted source chain | rollback to trusted source | trusted source chain restored | 是 | 是 |
+| `host_reconstructed_truth_from_projection` | `degrade` | host 主要靠 mode/token/pending_action prose 拼当前真相 | truth chain projection mismatch | runtime truth owner | host 可看投影；不得自己补主权真相 | minimum externalized truth chain | rebuild host truth consumption | externalized truth chain rebound | 否 | 是 |
 | `typed_ask_collapsed_to_modal` | `degrade` 或 `reject` | ask 不再是 typed transaction | request object / winner evidence | human reviewer / host | interactive 可 ask；headless / async 退 deny/abort | request identity + winner evidence | rebuild ask path | typed ask restored | 是 | 视情况而定 |
 | `context_usage_detached_from_window` | `degrade` | token 图表脱离当前窗口 | window ref / pending action | runtime window owner | host 可看 projection；headless 不得自行补窗口 | minimum window projection | rebuild window projection | decision window rebound | 否 | 是 |
 | `continuation_pricing_defaulted` | `halt` | 继续失去 stop condition | continuation ref / decision gain | human handoff / object upgrade | interactive 可升级；headless 更早停机 | compact summary + next-step object | stop and re-qualify | new decision window issued | 是 | 是 |
@@ -94,14 +99,15 @@
 出现下面情况时，应直接拒收：
 
 1. `low_trust_source_expanded_authority`
-2. `typed_ask_collapsed_to_modal`
-3. `decision_window_unbound`
-4. `context_usage_detached_from_window`
-5. `continuation_pricing_defaulted`
-6. `transient_authority_resumed`
-7. `rollback_not_object`
-8. `failure_semantics_flattened`
-9. `automation_no_longer_revocable`
+2. `host_reconstructed_truth_from_projection`
+3. `typed_ask_collapsed_to_modal`
+4. `decision_window_unbound`
+5. `context_usage_detached_from_window`
+6. `continuation_pricing_defaulted`
+7. `transient_authority_resumed`
+8. `rollback_not_object`
+9. `failure_semantics_flattened`
+10. `automation_no_longer_revocable`
 
 ## 5. 复盘记录最少字段
 
