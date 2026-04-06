@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `navigation/01 / 15 / 41` 现已继续从 route map 收口成 judgment map：
+  - `最短反查链 / 稳定阅读顺序 / 三种入口问题` 现已继续收回到 `规范锚点 / 证明页 / 三类审题`。
+  - `Prompt魔力` 这类容易把读者带进结果崇拜的前门词，现已在关键导航页进一步收回到 `请求装配控制面` 与 `当前真相保护` 这类更可判题的主语。
+- 新的长期结论：
+  - 当目录前门已经大致稳定后，导航页下一层最值钱的优化不是再补路径，而是把“怎么读”压后，把“先判哪条母线、先看哪组证明页、first reject path 在哪”压前。
+  - 导航页成熟的标志不是链更长，而是更少使用时间性与阅读性动词；`规范锚点 / 证明页 / 三类审题` 比 `最短反查链 / 稳定阅读顺序 / 三种入口问题` 更适合长期承载 doctrine。
 - 目录前门现已继续收口到当前对象链与稳定入口语言：
   - `README` 与 `bluebook/README` 现已从“仓储索引 / 篇数库存 / 这套目录怎么读”收回到“如何进入蓝皮书 / 蓝皮书入口 / 入口分工”。
   - `philosophy/README / guides/README / playbooks/README / casebooks/README / navigation/README / navigation/04` 现已把 `source-first pricing / authority object / 最小可见面 / single-writer authority / builder / 开发记忆` 这类旧 visible root、角色词与过程词，收回到 `governance pricing chain / current-truth surface / decision window / 高阶审读 / 研究过程、证据与变更记录`。

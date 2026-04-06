@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 judgment-map 收口动作: 已继续更新 `navigation/01 / 15 / 41`，把 `最短反查链 / 稳定阅读顺序 / 三种入口问题 / Prompt魔力` 这类偏路线卡的前门语法收回到 `规范锚点 / 证明页 / 三类审题 / 请求装配控制面 / 当前真相保护`，让三页更像失稳前判题页，而不是阅读路线卡。
+- 本轮导航页判断加固: 当前最值钱的导航优化不再是补更多链路，而是减少“先告诉读者怎么读，再告诉他怎么判断”这类倒序；更稳的导航页应先交出不可约判断、first reject path 与证明页，再给起点。
 - 本轮目录前门收口动作: 已继续更新 `README`、`bluebook/README`、`philosophy/README`、`guides/README`、`playbooks/README`、`casebooks/README`、`navigation/README` 与 `navigation/04`，把目录首页的计数/编号库存、`source-first pricing / authority object / 最小可见面 / single-writer authority / builder / 开发记忆` 这类旧 visible root 与过程口吻收回到 `稳定入口 / governance pricing chain / current-truth surface / decision window / 高阶审读 / 研究过程、证据与变更记录`。
 - 本轮目录结构判断加固: 当前最值钱的目录优化已不再是补更多跳转链，而是让 README 首页先回答“从哪进入、该用什么对象链判断”，而不是继续报篇数、阶段状态或角色口吻；兼容路径保留给文件名，规范 visible root 应由 H1、导语、入口标签与目录摘要承担。
 - 本轮侧线结论吸收: 并行 Agent 已进一步确认剩余高价值债主要集中在目录前门而非深正文，尤其是根 README、`bluebook/README`、`navigation/README`、`guides/README` 与 `navigation/04`；因此本批继续优先清 visible-root copy，而不再扩正文深段。
