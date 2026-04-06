@@ -510,3 +510,6 @@
 - 新增“提示词魔力来自运行时而非咒语”和“工程化质量优于聪明技巧”两篇哲学专题
 - 更新蓝皮书主索引、API/架构/哲学 README，新增 Prompt 链、安全链、工程链、上下文链
 - 同步更新章节规划、证据索引、研究日志、长期记忆与反思准则，固化 prompt / safety / source quality / token economics 这一轮结论
+- 统一高流量前门的最小顺序：`bluebook/README`、`09`、`navigation/README`、`philosophy/README` 现在更明确共享 `Prompt witness order / governance failure order / current-truth reject order`，并把 `Explainability` 压回 diagnostic naming 边界
+- 深化第一性原理与反思层：`06-第一性原理与苏格拉底反思`、`03-设计哲学`、`docs/development/03-反思与迭代准则` 现在更明确把目录优化写成“减少第一回答点 + 固定 speaking rights / appeal chain”，并把 `Boundary` / stable prefix 写成字节政治经济学
+- 收束目录与 later maintainer doctrine：`navigation/04` 现在更明确成为 `speaking rights / appeal chain` 的 charter，`philosophy/README` 固化 future maintainer 最小见证集，`01-源码结构地图` 明确 canonical ladder 与投影变体的关系，`userbook/05` 对齐治理 failure order 与 API verdict family

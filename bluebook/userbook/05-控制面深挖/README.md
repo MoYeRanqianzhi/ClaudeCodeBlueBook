@@ -46,9 +46,10 @@
 1. Prompt witness order
    - `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
 2. governance failure order
-   - `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
+   - `asset / rollback object -> reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
+   - 用户侧更稳的对照读法也应记成：`hard_reject / liability_hold / writeback_reseal_required / reentry_required / reopen_required`；`05` 只负责翻译这组 verdict family，不负责替 `api/` 签发它们。
 3. current-truth reject order
-   - `shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer`
+   - `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`
 
 如果某篇控制面长文没有明确告诉你自己主要承接的是哪一组顺序，它就还停在“对象解释页”，还没有真正承担控制面入口职责。
 

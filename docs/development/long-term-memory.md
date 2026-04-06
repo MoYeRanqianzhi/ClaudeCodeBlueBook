@@ -2689,3 +2689,16 @@
 - 写 prompt 相关结论时，必须同时标出装配链、角色合同、attachment 注入与 cache 约束
 - 写源码质量相关结论时，必须同时标出 invariant、边界、cache/retry 结构与真实工程债务
 - 写目录结构相关结论时，必须先问清自己是在补“正文主线”还是在补“导航/检索入口”
+- 高流量前门现在应继续共享同一套最小顺序，而不只是共享同一套 nouns：
+  - Prompt 线入口级顺序写成 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`；前五项才是 `world-entry / continue verdict` 的 witness set，`Explainability` 只配做 diagnostic naming。
+  - governance 线入口级顺序写成 `asset / rollback object -> reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`；用户侧五步与 API verdict family `hard_reject / liability_hold / writeback_reseal_required / reentry_required / reopen_required` 可以互相映射，但 userbook 不签发 verdict。
+  - current-truth 线入口级顺序写成 `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`。
+- `witness order` 更稳的长期定义是“证据可采顺序”，不是阅读顺序；`summary / card / handoff prose` 只能做 Explainability 末端投影，不能倒灌成 Prompt 主语。
+- `lawful forgetting` 的长期稳定定义应继续记成：删去叙事密度但不改写 verdict；能忘的是 prose 密度，不能忘的是 `intent / constraints / next action / rollback boundary / threshold liability` 这组最小 continuation witness。
+- `Boundary` / stable prefix 的长期稳定定义，不只是 cache 或性能技巧，而是字节政治经济学：它在决定哪些 bytes 能成为可继承的宪法资本，哪些只能做晚绑定 liabilities。
+- `continuation discipline` 的长期稳定定义，不是继承上一轮结论，而是每轮继续前重新消费上一轮留下的条件；Prompt 真正交付的产品也不是“上一轮一个好答案”，而是“下一轮开始前仍能被重新消费的一组 continuation 条件”。
+- 目录优化的长期稳定定义，不是新增 route map，而是减少“第一次回答同题”的入口数，并把 `speaking rights / appeal chain` 固定住；更稳的目录优化成功标准不是更快找到页，而是更少页拥有第一次解释权。
+- `navigation/04` 现在应被视为目录 `speaking rights / appeal chain` 的唯一 charter；如果异议是必要性回 `philosophy/`，对象链回 `architecture/`，承认面回 `api/`，模板动作回 `guides/`，verdict 回 `playbooks/`，伪证样本回 `casebooks/`，路由/入口债回 `navigation/`，记忆/变更台账回仓库根 `docs/`。
+- `docs/` 在目录梯度里始终指仓库根 `docs/`，不是 `bluebook/` 内部子目录；它是记忆层，不是正文层。
+- `future maintainer = formal consumer` 现在更应被压成最小见证集：`authority surface -> truth planes -> writeback seam -> danger surface -> first retreat layer`；later maintainer 若无法局部点名这五项，源码先进性就仍停在作者视角。
+- 源码质量线 canonical ladder 继续固定为 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`；若正文出现 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface`，应读成 orchestration 热点展开的投影变体，而不是第二条 canonical ladder。

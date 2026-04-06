@@ -31,15 +31,17 @@
 如果继续把入口压成 later maintainer 能直接拿来排查的最小顺序，它还应再暴露三行：
 
 1. Prompt witness order
-   - `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+   - `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
+   - 前五项组成 `world-entry / continue verdict` 的最小 witness set；`Explainability` 只负责 diagnostic naming，不负责改判。具体 witness object 回 `09 / guides/51`。
 2. governance failure order
-   - `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
+   - `asset / rollback object -> reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
 3. current-truth reject order
-   - `shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer`
+   - `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`
 
 前门如果只给公式，不给这三组顺序，later maintainer 仍要下潜到深页后才拿得到真正的排查起点；这说明入口层还没有完成从“同词化”到“同序化”的升级。
 
 根 README 的职责只有三层：先定题，再定证据层，最后才决定要不要跨目录跳转；它不再负责把整套深链重新摊平。
+更硬一点说，目录优化也不是再补一个更长入口，而是先减少“第一次回答同一问题”的入口数，再把 `speaking rights / appeal chain` 固定住。
 
 ## 目录职责
 
@@ -92,11 +94,11 @@
 ## 三组最小排查顺序
 
 - Prompt
-  先按 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict` 排，不先看 `systemPrompt` 截图、最后一条消息或 summary prose。
+  先按 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 排；前五项才是 witness set，不先看 `systemPrompt` 截图、最后一条消息、summary prose 或 handoff card。
 - 治理
-  先按 `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback` 排，不先看 mode、modal、usage、compact 或 default continue 这些投影替身。
+  先按 `asset / rollback object -> reject -> degrade -> halt -> cleanup-before-resume -> human-fallback` 排，不先看 mode、modal、usage、compact 或 default continue 这些投影替身。
 - 当前真相
-  先按 `shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer` 排，不先看目录体感、作者说明或“看起来还算能跑”的经验判断。
+  先按 `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion` 排，不先看目录体感、作者说明或“看起来还算能跑”的经验判断。
 
 如果入口层不给这三组顺序，目录结构优化就仍然主要在帮读者“找到页”，还没有开始帮 later maintainer “先拿到同一套排查动作”。
 
@@ -172,3 +174,4 @@ Prompt 线还应再暴露三条 first reject signal：
 
 如果一页同时在做判断、矩阵、verdict、样本和记忆，目录结构就会重新退回临时拼盘。
 更值钱的目录优化也不是新增更多快捷入口，而是让 `09 / 05 / 15 / 41` 与各目录 `README` 长期保持分工：主线宪法、模仿对象校正、失稳前审读、第一性原理收束、证据层分流。
+目录是否成熟，也不只看分类是否工整，而要看 `speaking rights / appeal chain` 是否仍然单源；否则 later maintainer 学到的首先不是同一个世界，而是两套入口政治。

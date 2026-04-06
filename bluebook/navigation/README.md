@@ -22,6 +22,7 @@
 
 1. Prompt witness order
    - `authority winner -> boundary bundle -> protocol transcript -> lineage refs -> continuation qualification -> explainability card`
+   - 前五项才是可复核的 verdict witness set；`explainability card` 只是判后 diagnostic shell，不是新的 adjudicative evidence。
 2. governance failure order
    - 先判 `asset / rollback object`，再进 `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
 3. current-truth reject order
@@ -36,6 +37,7 @@
 冲突复核顺序固定为 `display -> current -> event`；若顺序颠倒，later maintainer 看到的就不再是 current truth，而是第二叙述者。
 
 如果一个跨目录问题还回答不出自己缺的是公式、顺序还是证据层，它就还没有真正进入 `navigation/` 的工作对象。
+如果 `navigation/` 开始替目录改判 speaking rights，它也就不再是在路由，而是在制造第二套入口主语；later maintainer 的局部可反对性会先被 route words 吃掉。
 
 ## 先判三件事
 

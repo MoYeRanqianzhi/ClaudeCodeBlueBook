@@ -21,6 +21,7 @@
 更硬一点说，`future maintainer = formal consumer` 的最低门槛也应直接记成：
 
 - 拿不到作者时，later maintainer 仍能只凭局部命名、注释、state machine、truth surface 指出越权写回、truth-plane 越位与第一退回层。
+- 如果只把 future maintainer 的最小见证集再压成一条入口句，也只认：`authority surface -> truth planes -> writeback seam -> danger surface -> first retreat layer`。
 
 如果继续把 `refactor capital` 压成更短的资本表，也只该剩：
 
@@ -34,6 +35,7 @@
 如果只先记 Prompt 前门的一句话，也只记这句：
 
 - Prompt 的魔力不在措辞，而在它先用 Authority 定义世界、用 Boundary 固定合法字节、用 Transcript 规定模型实际消费、用 Lineage 保住同一身份、用 Continuation 裁定还能否继续，并用 Explainability 把失稳点提前点名。
+- 前五项才是 `world-entry / continue verdict` 的 witness set；`Explainability` 只拥有失稳命名权，没有改判权。
 
 如果只先记治理前门的一句话，也只记这句：
 
@@ -45,7 +47,8 @@
 
 想继续沿 Prompt 母线下钻时，哲学层最短跳转只认：
 
-- `84 -> 82 -> 99`
+- `84 -> 63 -> 33`
+- 先看世界如何合法进入，再看怎样继续，最后才看 Explainability 如何命名失稳；否则很容易把解释壳倒读成第二宪法。
 
 想继续沿治理母线下钻时，哲学层最短跳转只认：
 

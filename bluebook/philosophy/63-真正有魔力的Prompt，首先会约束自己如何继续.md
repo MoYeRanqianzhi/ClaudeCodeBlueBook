@@ -104,6 +104,7 @@ Claude Code 更成熟的地方在于，它同样认真设计：
 - 忘完后怎样继续
 
 如果 compact、handoff 或 steady 之后留下来的只是一段更好读的 prose，而不再是仍可执行的 qualification object，系统就已经从 constitution 退回 narration。
+合法遗忘真正保留的也不是 prose 完整度，而是 `intent / constraints / next action / rollback boundary / threshold liability` 这组最小 witness set；能忘的是叙事密度，不能忘的是裁决依据。
 
 ## 5. 第四层：接手连续性优于单轮表现
 

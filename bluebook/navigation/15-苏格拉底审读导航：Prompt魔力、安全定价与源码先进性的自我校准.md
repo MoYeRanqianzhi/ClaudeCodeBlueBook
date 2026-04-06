@@ -30,6 +30,7 @@
 - `compile -> protocolize -> preserve -> continue -> explain` 只是动作链，不替代这条 object chain
 - `world entry / request assembly / six-stage assembly chain` 与 `request-surface constitution / cognitive contract / byte boundary / continuation truth` 都只是 route shorthand，首次出现必须回绑到 canonical node
 - 如果继续往下排查，最稳的 witness 顺序也只认：`message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+- 这条 witness order 首先是证据可采顺序，不是阅读顺序；`summary / card / handoff prose` 只配做 Explainability 末端投影，不得倒灌成 Prompt 主语
 - 如何确认 `message lineage`、`section registry / dynamic boundary`、`protocol transcript`、`continuation qualification` 与接手连续性都还成立
 - 第一条反证信号常常不是回答变差，而是 `systemPrompt` 截图、最后一条消息或 UI transcript 又开始篡位成 Prompt 主语
 - 如果 `compact / handoff / steady` 之后留下来的只是故事，不再是 `continuation qualification`，那它就不是 Prompt 稳态，而只是 Prompt 风格延续
@@ -73,11 +74,12 @@
 
 如果继续往下排查，最稳的治理 failure order 也应先认：
 
-1. `reject`
-2. `degrade`
-3. `halt`
-4. `cleanup-before-resume`
-5. `human-fallback`
+1. `asset / rollback object`
+2. `reject`
+3. `degrade`
+4. `halt`
+5. `cleanup-before-resume`
+6. `human-fallback`
 
 删掉这组 failure verdict，只剩 mode、modal、usage、compact 这些投影替身时，第二条线就已经从治理 runtime 退回 UX 叙事。
 
