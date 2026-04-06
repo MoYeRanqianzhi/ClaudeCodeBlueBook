@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `philosophy/14 / philosophy/85 / philosophy/87 / guides/99-101 / philosophy/README / guides/README` 已继续把深专题与 builder 模板吸收进最新对象链：
+  - `14` 现已更明确把 Prompt 魔力继续压到 `message lineage`，不再把 `display / protocol / handoff` 只写成三份文本的并列关系。
+  - `85` 现已更明确把治理写成 `authority source -> action/context/time` 的收费顺序，并把 host replay 认定为新的坏解法。
+  - `87` 现已更明确把源码质量里的 `authoritative surface` 扩到 `event stream / state writeback` 分工，不再只停留在 schema / registry / file seams。
+  - `99-101` 现已把 message lineage、authority source、host truth 与 `event stream / state writeback` 固定进 builder-facing 苏格拉底审读卡。
+  - `philosophy/README` 与 `guides/README` 现已更明确把 `84-87`、`99-102` 的职责写成稳定入口，不再只按编号段粗分。
+- 新的长期结论：
+  - Prompt 深专题真正成熟时，不只讲 `request object / role contract / cache boundary / handoff truth`，还必须显式讲 `message lineage` 与 projection consumer。
+  - 治理深专题真正成熟时，不只讲四类扩张收费，还必须显式讲 authority source 先于动作、可见性与 continuation。
+  - 源码质量深专题真正成熟时，不只讲 anti-stale 和 later maintainer，还必须显式区分 `event stream` 与 `state writeback`，否则 host 很容易长成第二真相面。
 - `07 / security/README / risk/README / navigation/README` 已继续把目录前门和治理前门收薄并压硬：
   - `07` 现已把 `authority source` 抬进运行时契约前门，并把 `request truth / continuation asset / authority source / capability governance / liability evidence` 固定成五类权威入口。
   - `07` 现已更明确把 host 写成 runtime authority/status 的消费者，而不是 mode、tool pool、pending action 或 context truth 的第二推断器。

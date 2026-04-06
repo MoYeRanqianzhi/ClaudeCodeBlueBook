@@ -5,7 +5,7 @@
 它主要回答五个问题：
 
 1. 怎样避免把 Prompt 魔力重新写回 system prompt 咒语。
-2. 怎样按固定顺序审读 `authority chain`、`section registry`、`dynamic boundary`、`protocol transcript` 与 `continuation object`。
+2. 怎样按固定顺序审读 `authority chain`、`section registry`、`dynamic boundary`、`protocol transcript`、`message lineage` 与 `continuation object`。
 3. 怎样判断一个 runtime 是否真的先把世界编译进模型，而不是先把世界描述给模型。
 4. 怎样识别那些看起来更聪明、实际更脆的坏改写。
 5. 怎样用苏格拉底式追问避免把这份模板重新写成一份更长的 Prompt 规范。
@@ -71,7 +71,7 @@
 
 判断标准：
 
-- 如果人类看见的历史、模型消费的历史、compact 后仍能继续工作的对象被写成一层，系统迟早会出现 path drift。
+- 如果人类看见的历史、模型消费的历史、compact 后仍能继续工作的对象被写成一层，或者三者已经脱离同一条 message lineage，系统迟早会出现 path drift。
 
 ### 2.5 compact 保住的是任务身份，还是只保住了更好读的摘要
 
@@ -83,7 +83,7 @@
 
 判断标准：
 
-- 如果 `/btw`、summary、memory extraction、worker findings、prompt suggestion 各自重述现场，而不是围绕同一 stable prefix fork，就还在制造平行世界。
+- 如果 `/btw`、summary、memory extraction、worker findings、prompt suggestion 各自重述现场，而不是围绕同一 stable prefix fork，并沿同一条 message lineage 回流，就还在制造平行世界。
 
 ### 2.7 工具 ABI、cache break 与 continue qualification 有没有进入 Prompt 真相本体
 
@@ -125,10 +125,11 @@ section registry 是否成立:
 stable prefix / dynamic boundary 是否清楚:
 display transcript 与 protocol transcript 是否分层:
 continuation object 是否成立:
+display / protocol / handoff 是否仍沿同一条 message lineage 投影:
 旁路循环是否复用同一世界:
 当前最像哪类失真:
 - authority drift / section drift / boundary leak / transcript conflation / unlawful forgetting / parallel-world fork
-下一步该修的是:
+优先回修对象:
 - 主权链 / section / boundary / transcript compiler / compact object / fork reuse
 ```
 
@@ -141,8 +142,9 @@ continuation object 是否成立:
 3. compact 后留下的是对象身份，还是只有叙事残影。
 4. worker、summary、memory、suggestion 是否仍复用同一编译世界。
 5. 模型此刻消费的到底是哪条 transcript。
-6. 继续资格是谁签发的，在哪失效。
-7. 如果把著名措辞全部删掉，这套世界编译机制还会不会成立。
+6. display / protocol / handoff 三种 truth 还是不是同一条 message lineage 的不同投影。
+7. 继续资格是谁签发的，在哪失效。
+8. 如果把著名措辞全部删掉，这套世界编译机制还会不会成立。
 
 ## 7. 一句话总结
 

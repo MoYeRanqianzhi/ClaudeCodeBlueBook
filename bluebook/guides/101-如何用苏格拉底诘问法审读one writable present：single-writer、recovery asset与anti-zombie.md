@@ -83,7 +83,7 @@
 
 判断标准：
 
-- 如果外围层也能偷偷声明状态、改写身份或重放过时头部，结构先进性就已经被外围协议偷走。
+- 如果外围层也能偷偷声明状态、改写身份、重放过时头部，或者把 event stream 误当 present truth，结构先进性就已经被外围协议偷走。
 
 ### 2.7 新 feature 进来时，是哪个不变量在吸收增长
 
@@ -119,9 +119,10 @@ recovery asset 是否非主权:
 anti-zombie invariant 是否成立:
 compile/runtime/artifact 三层边界是否分层:
 later maintainer 是否能直接识别危险改动面:
+event stream / state writeback 是否分层:
 当前最像哪类失真:
 - multi-writer truth / recovery usurpation / stale overwrite / boundary conflation / release-surface leak
-下一步该修的是:
+优先回修对象:
 - authority surface / recovery asset contract / anti-zombie guard / boundary split / release shaping
 ```
 
@@ -133,8 +134,9 @@ later maintainer 是否能直接识别危险改动面:
 2. 如果系统开始说谎，我能否点名哪条 authority surface 出了问题。
 3. 哪些恢复资产被允许找真相，但不被允许宣布真相。
 4. 旧对象是不是已经被正式剥夺写回现在的能力。
-5. later maintainer 能不能不问作者就看出哪里最危险。
-6. 如果删掉漂亮目录图，这套结构先进性还剩下什么。
+5. 我现在读到的是时间线，还是当前真相；两者有没有被错误混成一层。
+6. later maintainer 能不能不问作者就看出哪里最危险。
+7. 如果删掉漂亮目录图，这套结构先进性还剩下什么。
 
 ## 7. 一句话总结
 

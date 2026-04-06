@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮深专题吸收动作: 已继续更新 `philosophy/14 / 85 / 87` 与 `guides/99-101`，把 Prompt 深线继续压到 `message lineage`，把治理深线继续压到 `authority source` 优先顺序，把源码质量深线继续压到 `event stream + state writeback` 的 present-truth 分工。
+- 本轮专题入口收口动作: 已继续更新 `philosophy/README` 与 `guides/README`，把 `84-87`、`99-102` 的职责写得更硬，减少只按编号段粗分造成的入口含混。
 - 本轮治理前门收薄动作: 已继续更新 `07 / security/README / risk/README`，把统一定价前门继续压到“authority source 先收费，再谈动作 / 上下文 / 时间”，并明确 host 只消费 runtime 外化的 authority/status。
 - 本轮导航收口动作: 已继续更新 `navigation/README`，把深层修复与 reopen 责任深链统一收口到 `46 -> 77 -> 102`，不再把每一级都摊平成根入口。
 - 本轮治理再压缩动作: 已继续更新 `03 / 06 / 09`，把统一定价从“四类扩张收费”进一步压到“authority source 先收费，再谈动作 / 上下文 / 时间”，并明确 host 只能消费 runtime 外化的 authority/status，不能自己回放拼 mode、tool pool 与 pending action。

@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新《提示词魔力来自运行时而非咒语》《真正成熟的治理，不是更会拦截，而是更会为扩张定价》《真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路》以及 `guides/99-101`、`philosophy/README`、`guides/README`，把深专题继续压到 `message lineage / source-first pricing / event stream + state writeback / later maintainer rejectability`
+- 继续更新 `guides/99-101` 与专题 README，把 builder-facing 审读模板从“对象链说明”继续压成更短的 fixed questions：Prompt 线追问 message lineage，治理线追问 authority source 与 host truth，源码质量线追问 event stream 与 state writeback 的分工
 - 继续更新《运行时契约、知识层与生态边界》《安全专题索引》《风控专题》《导航专题》，把治理前门继续压到“authority source 先收费，再谈动作 / 上下文 / 时间”，并明确 host 只消费 runtime 外化的 authority/status，不自己回放拼当前真相
 - 继续更新《运行时契约、知识层与生态边界》《导航专题》，把入口与导航进一步收薄：`07` 从轮次话术改回稳定前门，`navigation/README` 把深链统一收成 `46 -> 77 -> 102`，不再把每一级都摊平成根入口
 - 继续更新《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，把治理模板继续压实到“authority source 先收费，再谈动作 / 上下文 / 时间”，并明确 host 只能消费 runtime 外化的 authority/status，不能自己回放拼 mode、tool pool 与 pending action
