@@ -68,6 +68,11 @@
 64. 为什么 remote session 的 `stream_event` / `task_started` / `task_notification` 与 direct connect 的 `transcript/overlay/stderr` 不是同一种消费合同。
 65. 为什么同一 remote session 事件不会以同样厚度出现在 transcript、streaming、footer 和 brief idle 里。
 66. 为什么 remote session 的 `slash_commands`、`stream_event`、`task_*` 与 `status=compacting` 不是同一种消费者。
+67. 为什么 remote session 的远端发布命令面、本地保留命令面、输入框候选面与实际执行路由不是同一张命令表。
+68. 为什么同一 REPL 审批外观背后其实是五张不同的主权图，而不是同一种本地 approval shell。
+69. 为什么 `permission_request`、`sandbox_permission_request` 与 `plan_approval_request` 虽然都走 teammate mailbox，却不是同一种协议族。
+70. 为什么 `shutdown_request`、`shutdown_approved` 与 `shutdown_rejected` 也走 teammate mailbox，却属于 termination lifecycle，而不是 approval protocol。
+71. 为什么 `shutdown_request`、`shutdown_rejected`、`shutdown_approved`、`teammate_terminated` 与 `stopping` 不会完整落在同一可见消息面。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

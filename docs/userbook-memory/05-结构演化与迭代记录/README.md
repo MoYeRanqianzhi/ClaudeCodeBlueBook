@@ -83,6 +83,7 @@
 - [79-2026-04-06-approval shell atlas 拆分记忆.md](./79-2026-04-06-approval%20shell%20atlas%20拆分记忆.md)
 - [80-2026-04-06-mailbox protocol family 拆分记忆.md](./80-2026-04-06-mailbox%20protocol%20family%20拆分记忆.md)
 - [81-2026-04-06-shutdown mailbox lifecycle family 拆分记忆.md](./81-2026-04-06-shutdown%20mailbox%20lifecycle%20family%20拆分记忆.md)
+- [82-2026-04-06-shutdown visible surfaces split 拆分记忆.md](./82-2026-04-06-shutdown%20visible%20surfaces%20split%20拆分记忆.md)
 
 用途：
 
