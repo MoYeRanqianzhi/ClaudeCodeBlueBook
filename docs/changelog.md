@@ -2,6 +2,12 @@
 
 ## 2026-04-07
 
+- 本轮根仓库同步再次确认：`main=origin/main=20a0f55113c7e1c69bf4eca1f1041caeca8e79bb`、`rev-list --left-right --count main...origin/main = 0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
+- 继续更新 `api/66` 与 `playbooks/47`，把 Prompt post-watch / post-monitor 责任线压成同一条 same-world compiler 的侧门：`watch release object / release card / watch note / handoff prose` 现在更明确只配做 carrier 或 Explainability 末端投影，`Authority / Boundary / Transcript / Lineage / Continuation + residual reopen gate` 重新回到第一页主语
+- 继续更新 `guides/83 / 92`、`playbooks/61 / 67` 与 `casebooks/54 / 63`，把结构 builder-facing 模板线统一压成 `current-truth surface -> writer chokepoint -> freshness gate -> shared reject semantics -> later reject path`：`rewrite card / host consumption card / liability ticket / host consumption prose` 现在更明确只配做 template carrier、packet field 或 mirror-gap note，不再越位成结构主语
+- 本轮设计内涵深化重点不再是再造新理论，而是把“主链成立之后的侧门责任”也写成同一条母线的延伸：Prompt 侧门回答的是“停止额外监护后仍如何保留反证能力”，结构侧门回答的是“作者退场后 builder 如何继续沿 shared reject semantics 说真话”
+- 本轮并行 Agent 结论已回灌：目录层应长期把 Prompt residual reopen 线与结构 builder-facing 模板线视为专题侧门，而不是再并列成新的高阶前门；下一轮若继续深化，优先看这两条侧门是否还残留 `card / packet / ticket / prose` 越位主语
+- 并行目录 Agent 进一步确认了侧门分工边界：`navigation/README` 负责“何时开侧门、下一层去哪”，`api/README` 只负责 Prompt residual reopen 的 host-facing truth 后续入口，结构 builder-facing 模板线则必须继续降到 `guides/83 / 92`，不应在 `api/README` 被抬成新的并列前门
 - 本轮根仓库同步再次确认：`main=origin/main=df9cf23d0886fe389102d12675c4bc0c2d05d1c3`、`rev-list --left-right --count main...origin/main = 0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
 - 继续更新 `api/78`、`69`、`playbooks/50`、`casebooks/49` 与 `46`，把 Prompt 稳态/纠偏协议页统一压回 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`：`steady-state card / correction card / verdict / summary / handoff prose` 现在更明确只配做 Explainability 末端投影，`authority winner / protocol transcript / lawful forgetting / continuation qualification / threshold liability` 重新回到第一页主语
 - 继续更新 `api/83` 与 `92`，把结构后段协议页重新继承 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`，并把 `repair stream / cross-consumer attestation / field bag / long-horizon reopen liability` 压回 packet field、mirror gap note 与 shared reject semantics；这一批进一步把 `one writable present / fail-closed / later maintainer rejectability` 写得比流程壳更靠前

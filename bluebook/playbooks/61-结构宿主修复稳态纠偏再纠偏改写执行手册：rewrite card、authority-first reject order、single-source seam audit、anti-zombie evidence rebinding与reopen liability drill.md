@@ -1,31 +1,16 @@
-# 结构宿主修复稳态纠偏再纠偏改写执行手册：rewrite card、freshness gate、stale worldview与reopen liability drill
+# 结构宿主修复稳态纠偏再纠偏改写执行手册：current-truth surface、writer chokepoint、freshness gate 与 reopen drill
 
-这一章不再解释结构宿主修复稳态纠偏再纠偏改写协议该消费哪些字段，而是把 Claude Code 式结构 steady-state correction-of-correction rewrite protocol 压成一张可持续执行的 `rewrite card`。
+这一章不再把 `rewrite card` 当成结构再纠偏改写执行的主语，而是把 Claude Code 式结构执行压成一张 builder-facing playbook。
 
 它主要回答五个问题：
 
-1. 为什么结构宿主修复稳态纠偏再纠偏改写真正执行的不是“系统又转绿了”，而是 authority、single-source、lineage、event stream / state writeback、freshness gate、stale worldview、anti-zombie 与 reopen liability 的正式 rewrite 顺序。
-2. 宿主、CI、评审与交接怎样共享同一张结构 `rewrite card`，而不是各自围绕 pointer、监控、archive prose 与作者说明工作。
-3. 应该按什么固定顺序执行 `authority surface restitution`、`single-source writeback seam`、`lineage reproof`、`anti-zombie evidence restitution` 与 `reopen liability rebinding`，才能不让 split-brain、side write 与 zombie 风险重新复辟。
-4. 哪些 `reject verdict` 一旦出现就必须阻断 handoff、拒绝 restored 并进入 `re-entry / reopen liability` drill。
-5. 怎样用第一性原理与苏格拉底式追问避免把这层写成“更细的系统健康页”。
+1. 为什么真正执行的不是“系统又转绿了”，而是同一个结构真相面仍被唯一写回点与 freshness gate 保护。
+2. 宿主、CI、评审与交接怎样共享同一条结构执行判断链，而不是各自围绕 pointer、监控、archive prose 与作者说明工作。
+3. 应该按什么固定顺序执行 `current-truth surface -> writer chokepoint -> freshness gate -> shared reject semantics -> reopen drill`。
+4. 哪些 `reject verdict` 一旦出现就必须阻断 handoff、拒绝 restored 并进入 `re-entry / reopen`。
+5. 怎样用苏格拉底式追问避免把这层写成“更细的系统健康页”。
 
-## 0. 代表性源码锚点
-
-- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
-- `claude-code-source-code/src/utils/handlePromptSubmit.ts:430-517`
-- `claude-code-source-code/src/utils/task/framework.ts:77-248`
-- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
-- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
-- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
-- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
-- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
-- `claude-code-source-code/src/utils/sessionState.ts:1-149`
-- `claude-code-source-code/src/state/onChangeAppState.ts:50-92`
-- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
-- `claude-code-source-code/src/cli/print.ts:5048-5072`
-
-## 1. 第一性原理
+## 0. 第一性原理
 
 结构宿主修复稳态纠偏再纠偏改写真正要执行的不是：
 
@@ -36,180 +21,99 @@
 
 而是：
 
-- authority、single-source writeback seam、lineage、event stream / state writeback、freshness gate、stale worldview、ghost capability、anti-zombie 与 reopen boundary 仍围绕同一个结构真相面正式宣布：现在可以无人继续盯防，同时仍保留合法 `re-entry / reopen` 责任边界
+- current-truth surface、writer chokepoint、freshness gate、anti-zombie 证据与 later reject path 仍围绕同一个结构真相面成立
 
-所以这层 playbook 最先要看的不是：
+## 1. 固定执行顺序
 
-- `rewrite card` 已经填完了
+### 1.1 先验 `current-truth surface`
 
-而是：
+先看当前 rewrite object 是否仍被同一个 `authority_object_id + authoritative_path + current_write_path` 支撑。
 
-1. 当前 rewrite object 是否真的仍被唯一 authority object 支撑。
-2. 当前 `single-source writeback seam` 是否真的 seal，而不是只剩更整洁的目录叙事。
-3. 当前 `lineage reproof` 是否仍经过唯一主路径，而不是 telemetry 与 sidecar 旁路。
-4. 当前 `event stream / state writeback` 是否仍严格分层，freshness gate 是否先于 continuity 生效。
-5. 当前 `anti-zombie evidence restitution` 是否真的让 later 团队无需作者口述即可消费同一结构真相。
-6. 当前 `stale worldview` 与 `ghost capability` 是否仍被正式驱逐。
-7. 当前 `reopen liability rebinding` 是否仍围绕同一个 recovery boundary，而不是围绕“以后再试一次”。
-
-## 2. 共享 rewrite card 最小字段
-
-每次结构宿主修复稳态纠偏再纠偏改写巡检，宿主、CI、评审与交接系统至少应共享：
-
-1. `rewrite_card_id`
-2. `rewrite_session_id`
-3. `authority_object_id`
-4. `authoritative_path`
-5. `writer_chokepoint`
-6. `single_source_ref`
-7. `writeback_primary_path`
-8. `event_stream_writeback_split`
-9. `freshness_gate_attested`
-10. `lineage_reproof_ref`
-11. `stale_worldview_evidence`
-12. `ghost_capability_eviction_state`
-13. `anti_zombie_evidence_ref`
-14. `reopen_boundary`
-15. `reservation_owner`
-16. `reject_verdict`
-17. `verdict_reason`
-
-四类消费者的分工应固定为：
-
-1. 宿主看 authority object 与 writeback 主路径是否仍唯一。
-2. CI 看 single-source、lineage、event-stream-vs-state-writeback、freshness gate、stale worldview、generation 与 anti-zombie 证据是否完整。
-3. 评审看 pointer、recovery asset 与 live truth 是否仍被清楚分层。
-4. 交接看 later 团队能否围绕同一 authority state 安全接手与 reopen。
-
-## 3. 固定 reject verdict 顺序
-
-### 3.1 先冻结假健康信号
-
-先把 pointer 健康感、telemetry 转绿、archive prose 与作者说明一律降回投影，不允许这些信号先行充当 restored 证明。
-
-### 3.2 再验 `authority surface restitution`
+### 1.2 再验 `writer chokepoint`
 
 再看：
 
-1. 当前 query、task、session 或 remote worker 是否仍只有唯一 authority object。
-2. breadcrumb、pointer 与 UI heuristic 是否仍没有充当真相面。
-3. generation / status transition 是否仍能阻止 stale path 回写。
-4. 每个 host / consumer 是否仍只消费自己的 authority width，而不是各自宣布 present truth。
+1. `single_source_ref`
+2. `writeback_primary_path`
+3. `append_chain_ref`
+4. `side_write_quarantined`
+5. `metadata_bypass_blocked`
 
-### 3.3 再验 `single-source writeback seam`
-
-再看：
-
-1. `single_source_ref` 是否仍指向唯一真相入口。
-2. `writeback_primary_path` 与 `append_chain_ref` 是否仍锁在同一主写点。
-3. `event_stream_writeback_split` 是否仍严格成立。
-4. `side_write_quarantined` 与 `metadata_bypass_blocked` 是否仍成立。
-
-### 3.4 再验 `lineage reproof`
+### 1.3 再验 `freshness gate`
 
 再看：
 
-1. restore、hydrate、adopt 与 clear stale 是否仍按正式顺序被复证。
-2. `lineage_break_detected`、`generation_regression_detected` 与 stale adoption 是否仍被禁止。
-3. terminal object 是否仍不会被 stale snapshot 或 late response 复活。
-4. `freshness_gate_attested` 是否仍先于 continuity 生效。
+1. `lineage_reproof_ref`
+2. `generation_guard_attested`
+3. `fresh_merge_contract`
+4. `stale_finally_suppressed`
+5. `anti_zombie_evidence_ref`
 
-### 3.5 再验 `anti-zombie evidence restitution`
+### 1.4 再验 `shared reject semantics`
 
 再看：
 
-1. `anti_zombie_evidence_ref` 是否仍有正式复证。
-2. stale writer、duplicate response 与 orphan state 是否仍被显式清退。
-3. `stale_worldview_evidence` 是否仍证明 validator、adapter 与 host consumer 没有站在 stale worldview 上继续判断。
-4. `ghost_capability_eviction_state` 是否仍证明 dead capability token 已被 clear / evict / unpin。
-5. 当前 rewrite 是否仍能阻止旧 generation 复活。
+1. `authority_conflict`
+2. `writeback_target_ambiguous`
+3. `lineage_mismatch`
+4. `duplicate_or_zombie`
+5. `workspace_not_clean`
 
-### 3.6 最后验 `reopen liability rebinding` 与 `reject_verdict`
+### 1.5 最后验 `reopen drill`
 
 最后才看：
 
-1. `reopen_boundary`、`reservation_owner` 与 `threshold_retained_until` 是否仍合法存在。
-2. `reject_verdict` 是否与前五步对象一致。
-3. 交接是否足以让 later 团队在无需补猜的前提下接手与降级。
+1. `mirror_gap_ref`
+2. `reopen_boundary`
+3. `return_authority_object`
+4. `return_writeback_path`
+5. `reopen_required_when`
 
-更稳的最终 verdict 只应落在：
-
-1. `steady_state_restituted`
-2. `hard_reject`
-3. `reentry_required`
-4. `reopen_required`
-
-## 4. 直接阻断条件
+## 2. 直接阻断条件
 
 出现下面情况时，应直接阻断当前结构 rewrite execution：
 
-1. `rewrite_session_object_missing`
-2. `pointer_is_authority`
-3. `authority_surface_multi_home`
-4. `single_source_read_only`
-5. `resume_without_lineage`
-6. `green_telemetry_as_evidence`
-7. `stale_generation_can_write`
-8. `append_chain_unresolved`
-9. `event_stream_usurped_present`
-10. `stale_worldview_unchecked`
-11. `ghost_capability_not_evicted`
-12. `reopen_liability_missing`
-13. `reopen_required_but_continue`
+1. `pointer_is_authority`
+2. `authority_surface_multi_home`
+3. `single_source_missing`
+4. `resume_without_lineage`
+5. `green_telemetry_as_evidence`
+6. `stale_generation_can_write`
+7. `append_chain_unresolved`
+8. `reopen_liability_missing`
+9. `reopen_required_but_continue`
 
-## 5. re-entry 与 reopen liability 处理顺序
+## 3. re-entry 与 reopen 处理顺序
 
 看到阻断 reason 之后，更稳的处理顺序是：
 
-1. 先停止新的 reconnect、adopt 与 remote resume，不再让旧资产继续写回。
+1. 先停止新的 reconnect、adopt 与 remote resume。
 2. 先把 verdict 降级为 `hard_reject`、`reentry_required` 或 `reopen_required`。
-3. 先把 pointer、sidecar 与 UI 投影降回 breadcrumb，不再让它们充当 authority。
-4. 先回到上一个仍可验证的 authority object、writeback path 与 fresh worldview，补完 seam audit、lineage reproof 与 anti-zombie evidence。
-5. 如果根因落在 rewrite protocol 本身，就回跳 `../api/80` 做对象级修正。
+3. 先把 pointer、telemetry、archive prose 与 UI 投影降回 breadcrumb。
+4. 先回到上一个仍可验证的 current-truth surface 与 writeback path。
+5. 补完 freshness gate 与 anti-zombie 证据后，才允许重新 handoff。
 
-## 6. 最小 drill 集
+## 4. 最小 drill 集
 
-每轮至少跑下面六个结构宿主稳态纠偏再纠偏改写执行演练：
+每轮至少跑下面六个结构执行演练：
 
 1. `authority_first_reject_replay`
-2. `single_source_writeback_seam_audit_replay`
+2. `single_source_seam_audit_replay`
 3. `lineage_reproof_replay`
 4. `append_chain_resolution_replay`
-5. `anti_zombie_evidence_restitution_replay`
-6. `reopen_liability_boundary_replay`
+5. `anti_zombie_replay`
+6. `reopen_liability_replay`
 
-## 7. 复盘记录最少字段
+## 5. 苏格拉底式检查清单
 
-每次结构宿主稳态纠偏再纠偏失败、再入场或 reopen，至少记录：
+在你准备宣布“结构已完成再纠偏改写执行”前，先问自己：
 
-1. `rewrite_card_id`
-2. `rewrite_session_id`
-3. `authority_object_id`
-4. `authoritative_path`
-5. `single_source_ref`
-6. `writeback_primary_path`
-7. `event_stream_writeback_split`
-8. `freshness_gate_attested`
-9. `lineage_reproof_ref`
-10. `stale_worldview_evidence`
-11. `ghost_capability_eviction_state`
-12. `anti_zombie_evidence_ref`
-13. `reopen_boundary`
-14. `reject_verdict`
-15. `verdict_reason`
-
-## 8. 苏格拉底式检查清单
-
-在你准备宣布“结构已完成稳态纠偏再纠偏改写执行”前，先问自己：
-
-1. 我现在修回的是唯一 authority object，还是只是把入口感重新包装了一遍。
+1. 我现在修回的是唯一 current-truth surface，还是只是把入口感重新包装了一遍。
 2. 我现在保住的是 `single-source + writeback seam`，还是更漂亮的目录讲法。
 3. 我现在保住的是 `lineage reproof`，还是几次幸运 reconnect 的结果。
-4. `event stream` 与 `state writeback` 有没有被重新混写。
-5. validator、adapter 与 host consumer 看到的是 fresh worldview，还是 stale worldview。
-6. 我现在归还的是 anti-zombie 证据，还是一段更会解释的 archive prose。
-7. later 团队明天如果必须 reopen，依赖的是正式 boundary，还是一句“以后再试一次”。
+4. 我现在归还的是 anti-zombie 证据，还是一段更会解释的 archive prose。
+5. later 团队明天如果必须 reopen，依赖的是正式 boundary，还是一句“以后再试一次”。
 
-## 9. 一句话总结
+## 6. 一句话总结
 
-真正成熟的结构宿主修复稳态纠偏再纠偏改写执行，不是把健康感运行得更像制度，而是持续证明 authority、single-source writeback seam、lineage、event stream / state writeback、freshness gate、stale worldview、ghost capability、anti-zombie 与 reopen liability 仍围绕同一个结构真相面说真话。
+真正成熟的结构宿主修复稳态纠偏再纠偏改写执行，不是把健康感运行得更像制度，而是持续证明 `current-truth surface -> writer chokepoint -> freshness gate -> shared reject semantics -> reopen drill` 仍围绕同一个结构真相面说真话。

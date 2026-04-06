@@ -8,6 +8,19 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/66` 与 `playbooks/47` 现已继续把 Prompt post-watch / post-monitor side-door 压回 same-world compiler：
+  - `Authority / Boundary / Transcript / Lineage / Continuation` 继续是页面第一页主语，不再让 `watch release object / release card / watch note / handoff prose` 越位成第二套 Prompt 世界。
+  - `residual reopen gate` 现在更明确只配作为 post-watch / post-release 责任对象存在，回答“停止额外监护后哪些反证能力仍必须保留”，不再和 Prompt 主链并列充当前门。
+- `guides/83 / 92`、`playbooks/61 / 67` 与 `casebooks/54 / 63` 现已继续把结构 builder-facing 模板线压回源码真相梯度：
+  - builder-facing guide 现在更明确只提供 `current-truth surface / writer chokepoint / freshness gate / shared reject semantics / later reject path` 这条模板顺序，不再让 `authority seam block / liability ticket / host consumption card` 这些模板壳越位成主语。
+  - playbook 现在更明确只消费 writer chokepoint、fail-closed、anti-zombie 与 reopen drill，不再把 “卡片已填完 / telemetry 已转绿 / 当前没报错” 读成结构恢复本身。
+  - casebook 现在更明确把 pointer 主语、假 single-source、假 fail-closed 与 reconnect 责任幻觉写成对 `one writable present` 和 shared reject semantics 的具体偷换。
+- 新的长期结论：
+  - Prompt 线后续继续深化时，post-watch / post-steady 侧门的最大风险不再是“缺字段”，而是 `release card / watch note / handoff prose / warranty` 重新越位成主语。后续凡是写这条线，都应先问：这里是在定义世界，还是只是在解释为什么现在可以停止额外监护。
+  - 结构线后续继续深化时，builder-facing 模板线的最大风险不再是“模板不够细”，而是 `card / packet / ticket / liability` 重新越位成主语。后续凡是写这条线，都应先问：later maintainer 是否已经能只凭 `one writable present + shared reject semantics + later reject path` 拒收当前状态。
+  - 目录结构优化当前更稳定的长期纪律是：`09 / 05 / 15 / 41` 负责第一次定义三条母线；Prompt residual reopen 线与结构 builder-facing 模板线只负责承接主链成立后的责任与模板，不再并列成新的高阶前门。
+  - 当前下一批最值钱的继续点，不再是这两条侧门本身的第一页主语，而是看它们的相邻编号和 README/导航是否还残留 `card / packet / ticket / prose` 越位；如果有，应继续只在专题侧门层消化，不把这些词再抬回主线宪法层。
+  - `navigation/README` 与 `api/README` 的分工也已进一步稳定：前者只负责“何时开侧门、下一层去哪”的 route map，后者只负责 Prompt residual reopen 的 host-facing truth 后续入口；结构 builder-facing 模板线则长期停留在 `guides/83 / 92` 这层，不在 `api/README` 被抬成新的并列前门。
 - `api/78`、`69`、`playbooks/50`、`casebooks/49` 与 `46` 现已继续把 Prompt 稳态/纠偏协议页的第一页主语统一压回 Prompt canonical chain：
   - `Authority` 现在更明确重新承担 world-defining winner / restored request object / compiled request truth 的定义职责。
   - `Boundary` 现在更明确重新承担 stable prefix / lawful forgetting / cache-safe reuse 的定义职责。
