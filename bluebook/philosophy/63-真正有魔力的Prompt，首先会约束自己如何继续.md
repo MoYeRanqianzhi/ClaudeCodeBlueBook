@@ -124,6 +124,22 @@ Claude Code 的高阶之处在于：
 
 - 让接下来的继续成本更低
 
+## 5.1 handoff 的合法反对权
+
+真正成熟的 handoff 不是把东西送出去就算完成，而是必须区分：
+
+1. `deliver`
+2. `admit`
+3. `accept / oppose`
+
+也就是说，later maintainer 不只配接收 handoff，还配合法反对它。更稳的 reject 理由至少包括：
+
+1. `summary_only_handoff`
+2. `witness_missing`
+3. `liability_hidden`
+
+如果交接包只能被“读懂”，却不能被“合法反对”，那它保住的仍然只是 prose continuity，而不是真正的 continuation contract。
+
 ## 6. 第五层：可解释失效优于神秘成功
 
 如果一个 Prompt 只能产生效果，却不能解释：

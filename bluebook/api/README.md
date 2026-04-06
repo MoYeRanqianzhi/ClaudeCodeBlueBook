@@ -25,6 +25,16 @@
 3. `危险面暴露`
    - 哪些 seam、rollback object、reopen boundary 与 hotspot 必须被显式对外。
 
+如果继续把 `consumer subset` 再压成 later maintainer 可直接复查的一张最小矩阵，也只先问五格：
+
+1. `code present`
+2. `registry listed`
+3. `host-facing truth signed`
+4. `consumer subset admitted`
+5. `promise boundary declared`
+
+代码里有，不等于 registry 承认；registry 承认，不等于 host-facing truth 已签发；truth 已签发，也不等于所有 consumer 都能合法消费。
+
 如果一页开始替 `philosophy/` 重判必要性，替 `architecture/` 重新发明对象链，或替 `playbooks/` 直接下 verdict，它就已经越权。
 
 如果一个 API 判断还压不回这三条，它就还停在接口库存层。
@@ -50,9 +60,9 @@
 
 - `01-07`: 命令与控制面，回答功能入口、命令字段和响应矩阵。
 - `08-20`: 工具、事件、状态与恢复面，回答 ToolUseContext、SDK 消息、外部元数据和最小闭环。
-- `21-30`: 提示词、记忆、能力地图与公开度，回答知识注入、上下文控制，以及目录级能力怎样回到 `contract -> registry -> current-truth surface`。
+- `21-30`: 提示词、记忆、能力地图与公开度，回答知识注入、上下文控制，以及目录级能力怎样回到 `contract -> registry -> current-truth surface -> consumer subset`。
 - `31-45`: 失败语义、Evidence Envelope、Artifact Contract 与 Harness Runner，回答共享工件怎样挂回治理链与源码真相梯度，而不是长出第二套壳层主语。
-- `46-50`: `services/`、`tools/`、`commands/` Atlas 与支持面，回答源码二级目录如何回到权威入口。
+- `46-50`: `services/`、`tools/`、`commands/` Atlas 与支持面，回答 repo-specific 的 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline` 如何落到二级目录阅读动作。
 - `51-71`: 宿主消费、验收、修复、监护与稳态协议，回答接入后怎样持续消费编译请求、治理控制面和故障模型。
 - `72-95`: 稳态纠偏、改写纠偏与长期 reopen 责任，回答深层修正对象如何继续协议化。
 

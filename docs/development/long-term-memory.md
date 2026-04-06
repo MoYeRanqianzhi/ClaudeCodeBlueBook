@@ -2702,3 +2702,18 @@
 - `docs/` 在目录梯度里始终指仓库根 `docs/`，不是 `bluebook/` 内部子目录；它是记忆层，不是正文层。
 - `future maintainer = formal consumer` 现在更应被压成最小见证集：`authority surface -> truth planes -> writeback seam -> danger surface -> first retreat layer`；later maintainer 若无法局部点名这五项，源码先进性就仍停在作者视角。
 - 源码质量线 canonical ladder 继续固定为 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`；若正文出现 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface`，应读成 orchestration 热点展开的投影变体，而不是第二条 canonical ladder。
+- `truth pluralism = one lineage, many projections; adjudication remains single-source` 现在应被视为 Prompt 前门的稳定补充句：多 projection 合法，不等于多主权合法。
+- Prompt 线现在应继续把 `Explainability` 之前再压出一条 admissibility 纪律：`belonging -> admissibility -> adjudicative scope -> closure effect`。截图、summary、handoff prose 通常最多只能证明 belonging；没有通过同一条 admissibility gate 的证据，不得进入改判层。
+- `handoff` 现在应被明确视为 later maintainer 的正式反对权场景，而不只是交付场景。更稳的最小区分是 `deliver -> admit -> accept/oppose`；`summary_only_handoff / witness_missing / liability_hidden` 是稳定的 reject reason。
+- `continuation discipline` 现在还应再固定一句：继续前的关键不是“再看一遍条件”，而是当前 consumer 能否 parse 上一轮 witness ABI，并复现同一 continue/reject verdict。可读但不可判的 handoff 包，不具 continuation validity。
+- `architecture/79` 的五层 truth ladder 现在应被记成稳定 crosswalk：`protocol truth` 决定模型消费、`continuation truth` 决定删到哪里仍算同一条继续链、`current truth` 决定现在正式算什么、`event truth` 只补证、`display truth` 只触发怀疑。
+- `continuation truth` 的最小 ABI 现在可稳定复用为：`current work / next-step guard / required assets / rollback boundary / continuation qualification / threshold liability`。
+- 治理控制面里的 `asset / rollback object ABI` 现在可稳定复用为：`rollback_object / rollback_boundary / required_assets / quarantine_recall_handle / threshold_retained_until / reentry_required_when / reopen_required_when`；它统一 compaction、handoff、rollback、reopen 四种看似不同的对象语言。
+- 安全词法主权现在可稳定复用 `ceiling / lease / revocation` ledger：`connected` 归 transport/session signer，`active` 归 current boundary owner，`ready` 归 current-truth/writeback seam，`resolved` 归 ledger/verdict signer。display 层只能在各自 ceiling 内说话。
+- 安全边界换届现在可稳定复用四格 boundary lifecycle：`continuation / succession / suspension / retirement`；并应默认在 succession 时重绑 `window_floor_generation / pricing_floor_generation / liability_owner / reopen_required_when`。
+- `guides/102` 文件名里的旧词现在只应被读成兼容检索别名，不再拥有首答权，也不是新的 canonical rung。
+- `consumer subset` 现在可继续压成 later maintainer 的最小矩阵：`code present / registry listed / host-facing truth signed / consumer subset admitted / promise boundary declared`。代码存在不等于 registry 承认，registry 承认不等于 host-facing truth 签发，truth 签发也不等于所有 consumer 都能合法消费。
+- future maintainer 线的首答路由现在应固定为：必要性先回 `philosophy/README / 59`，证据 ladder 先回 `01 + guides/102`，repo atlas 与 reject path 先回 `api/46-50`，目录 speaking-rights 争议才回 `navigation/04`。
+- `projection truth ladder` 现在可继续稳定复用为 `protocol -> continuation -> current -> event -> display` 五层；其中弱投影若要升格，必须补齐 `promotion_requires`，否则应直接落入 `forbidden_upcast_set`。
+- `governance key` 现在还应继续被读成 `pricing-right signer / pricing-right lease`：谁能定价、谁能见证价格、谁在 lease 失效后仍敢继续收费，这三件事属于同一主权对象链。
+- `userbook/05` 现在已经开始稳定翻译两组新增最小顺序：`consumer-truth ladder = protocol -> current -> event -> display` 与 `boundary lifecycle = continuation -> succession -> suspension -> retirement`；后续控制面首页若不能先说清自己承接的是哪一组，就仍停在对象解释页。

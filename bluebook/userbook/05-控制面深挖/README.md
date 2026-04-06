@@ -50,6 +50,10 @@
    - 用户侧更稳的对照读法也应记成：`hard_reject / liability_hold / writeback_reseal_required / reentry_required / reopen_required`；`05` 只负责翻译这组 verdict family，不负责替 `api/` 签发它们。
 3. current-truth reject order
    - `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`
+4. consumer-truth ladder
+   - `protocol -> current -> event -> display`
+5. boundary lifecycle
+   - `continuation -> succession -> suspension -> retirement`
 
 如果某篇控制面长文没有明确告诉你自己主要承接的是哪一组顺序，它就还停在“对象解释页”，还没有真正承担控制面入口职责。
 

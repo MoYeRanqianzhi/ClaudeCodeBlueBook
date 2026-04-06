@@ -29,6 +29,10 @@
 
 - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
+这里还应先多记一句：
+
+- 文件名里的 `authoritative surface / adapter subset / hotspot gap discipline` 只保留为兼容检索别名，不再拥有首答权，也不是新的 canonical rung。
+
 这条线最短的 reject trio 也只认：
 
 1. `layout-first drift`

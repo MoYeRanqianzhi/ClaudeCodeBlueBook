@@ -513,3 +513,7 @@
 - 统一高流量前门的最小顺序：`bluebook/README`、`09`、`navigation/README`、`philosophy/README` 现在更明确共享 `Prompt witness order / governance failure order / current-truth reject order`，并把 `Explainability` 压回 diagnostic naming 边界
 - 深化第一性原理与反思层：`06-第一性原理与苏格拉底反思`、`03-设计哲学`、`docs/development/03-反思与迭代准则` 现在更明确把目录优化写成“减少第一回答点 + 固定 speaking rights / appeal chain”，并把 `Boundary` / stable prefix 写成字节政治经济学
 - 收束目录与 later maintainer doctrine：`navigation/04` 现在更明确成为 `speaking rights / appeal chain` 的 charter，`philosophy/README` 固化 future maintainer 最小见证集，`01-源码结构地图` 明确 canonical ladder 与投影变体的关系，`userbook/05` 对齐治理 failure order 与 API verdict family
+- 继续把控制面与协议层压实：`architecture/79` 现在补出 `protocol / continuation / current / event / display truth` 的 truth ladder，`api/85` 补出 `asset / rollback object ABI`，`security/61` 补出 lexical `ceiling / lease / revocation`，`security/85` 补出 boundary lifecycle
+- 继续把 Prompt 哲学压回 admissibility 与 opposability：`03-设计哲学` 补出 `truth pluralism = one lineage, many projections; adjudication remains single-source`，`philosophy/33` 补出 Prompt 证据可采四问，`philosophy/63` 补出 `handoff` 的合法反对权，`philosophy/75` 把 continuation 推进到 `witness ABI` 可被 parse 并复现同一 verdict
+- 继续优化 later maintainer 首答路由：`guides/102` 显式降格旧别名为兼容检索词，`navigation/06` 补出 future maintainer 线的首答收口，`api/README` 补出 `consumer subset` 最小矩阵与 `21-30 / 46-50` 的完整 handoff 说明
+- 再往下一层压实治理对象：`philosophy/85` 现在把 `governance key` 进一步压成 `pricing-right signer / pricing-right lease`，`architecture/79` 继续补出 `forbidden_upcast_set / promotion_requires` 语义，`userbook/05` 新增 `consumer-truth ladder` 与 `boundary lifecycle` 的用户侧翻译

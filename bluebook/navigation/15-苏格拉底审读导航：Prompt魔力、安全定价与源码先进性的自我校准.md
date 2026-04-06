@@ -35,6 +35,7 @@
 - 第一条反证信号常常不是回答变差，而是 `systemPrompt` 截图、最后一条消息或 UI transcript 又开始篡位成 Prompt 主语
 - 如果 `compact / handoff / steady` 之后留下来的只是故事，不再是 `continuation qualification`，那它就不是 Prompt 稳态，而只是 Prompt 风格延续
 - `release card / steady verdict / handoff prose` 只配做 Explainability 末端投影；一旦这些壳开始定义世界，Prompt 就已经从 constitution 退回 narration
+- handoff consumer 有没有合法反对权，还是系统把 `delivery` 偷换成了 `acceptance`
 
 ## 2. 统一治理定价的苏格拉底审读
 
