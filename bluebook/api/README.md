@@ -5,7 +5,18 @@
 
 还要先记一句：
 
-- `api/` 不是接口清单层，而是真相暴露层；更稳的读法不是先按编号扫平面，而是先问 `contract truth -> registry truth -> current-truth surface / host-facing truth -> consumer subset -> danger surface`，再看具体接口和宿主消费路径。
+- `api/` 不是接口清单层，而是真相暴露层；更稳的读法不是先按编号扫平面，而是先问 `contract truth -> registry truth -> orchestration shell -> current-truth surface / host-facing truth -> consumer subset -> danger surface`，再看具体接口和宿主消费路径。
+
+如果把 API 前门继续压成最短公式，也只剩三条：
+
+1. `same-world test`
+   - 宿主到底承认了哪一条请求与继续对象
+2. `decision window`
+   - 宿主到底承认了哪一条治理外化真相
+3. `truth ladder + failure semantics`
+   - 宿主到底在消费哪一层 truth、哪一层 failure object
+
+如果一个 API 判断还压不回这三条，它就还停在接口库存层。
 
 ## 什么时候进来
 
@@ -18,7 +29,7 @@
 - 如果你只先判断“谁在宣布当前真相、谁只是在消费它”，从 `23 -> 31 -> 46-50 -> 52-56` 进入。
   - 失败信号：还在让宿主从事件流、面板状态或作者说明自己回放拼真相。
 - 如果你只先判断“Prompt contract 究竟怎样暴露给宿主”，从 `18 -> 21 -> 49 -> 54` 进入。
-  - 失败信号：还在把 `systemPrompt`、UI transcript 或最后一条消息当成宿主应消费的主语。
+  - 失败信号：还在把 `systemPrompt`、UI transcript、最后一条消息或 display summary 当成宿主应消费的主语。
 - 如果你只先判断“治理真相怎样外化给宿主”，从 `28 -> 32 -> 52 -> 55` 进入。
   - 失败信号：还在把 `Context Usage` 当成本面板，把 mode 条、弹窗和 token 条当治理真相。
 

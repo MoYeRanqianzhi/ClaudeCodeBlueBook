@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/08 / api/README / security/README / risk/README / userbook/04-10` 现已继续把 canonical formulas 前推到能力矩阵、宿主真相消费前门、安全 signer/ledger 前门、用户侧风险结算面与状态预算运营页：
+  - `08` 现在更明确把矩阵前门写成 `same-world test / decision window / existence -> implementation visibility -> current admission -> product promise`。
+  - `api/README` 现在更明确把宿主 API 前门写成 `same-world test / decision window / truth ladder + failure semantics`。
+  - `security/README` 现在更明确把安全前门写成 `decision window / signer + ledger + cleanup / failure semantics`。
+  - `risk/README` 现在更明确把风控前门写成 `governance key / decision window + product promise / signer + evidence + reopen`。
+  - `userbook/04-10` 现在更明确把状态预算页写成 `same-world test / decision window / stable bytes + working set`。
+- 新的长期结论：
+  - 目录结构的高价值工作，已经从“加更多入口”转成“让不同入口对同一个 noun discipline 负责”。能力矩阵、API README、安全首页、风控首页和状态预算页，分别承载的是 capability judgment、host truth consumption、signer/ledger、user-side settlement 和 rhythm operation；只要它们再次混词，later maintainer 就会重新学回表象。
+  - `same-world test / decision window / truth ladder + failure semantics / signer + evidence + reopen` 现在已经形成一组可跨目录复用的 canonical formula。下一轮最值钱的动作，不是发明新公式，而是继续扫剩余入口页，看哪些页还没有显式承认这组公式。
+  - capability matrix 真正成熟时，不只是四层矩阵做得清楚，还要先承认 Prompt 与治理两条高阶判断；否则矩阵页仍会退回“列功能、标支持度”的浅层工作。
 - `bluebook/01 / 04 / 05 / navigation/README` 现已继续把 canonical formulas 前推到地图页、能力边界页、功能页与跨目录页：
   - `01` 现在更明确把源码地图前门写成 `truth ladder + failure semantics`，而不是目录树展开图。
   - `04` 现在更明确把公开度判断压成 `existence -> current visibility -> current admission -> product promise` 与治理侧的 `externalized truth chain -> decision window -> current admission -> product promise`。

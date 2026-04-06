@@ -6,6 +6,12 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=ec7519566b3abf2659fb3d65899dc7d2bad983da`；`git fetch origin main` 成功，`git rev-list --left-right --count main...origin/main` 返回 `0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`。本轮因此只记录基线，不对根仓库做任何修改。
+- 本轮矩阵/API/安全/风控前推动作: 已继续更新 `bluebook/08`、`api/README`、`security/README`、`risk/README` 与 `userbook/04-10`，把 canonical formula 从地图页、功能页与使用页继续前推到能力矩阵、宿主真相消费前门、安全 signer/ledger 前门、用户侧风险结算面和状态预算运营页。
+- 本轮 Prompt 侧线前推动作: `08` 与 `api/README` 现在更明确要求能力矩阵和宿主 API 前门先问 `same-world test`，再谈“这组能力/API 到底算不算支持”。
+- 本轮治理侧线前推动作: `08`、`security/README`、`risk/README` 与 `userbook/04-10` 现在更明确把 `Context Usage` 收回到 `decision window`，并把 admitted capability、risk settlement 和 budget operation 统一收回当前定价窗口，而不是继续停在仪表盘与结果词。
+- 本轮源码质量侧线前推动作: `api/README` 现在更明确把 `truth ladder + failure semantics` 写成宿主消费前门；`08` 也更明确把能力矩阵的公开度判断约束在 `implementation visibility / current admission / product promise`，不让 capability matrix 抢写产品承诺。
+- 本轮目录结构深化结论: 当地图页、功能页、能力边界页、状态预算页都已完成公式换代后，下一层最值钱的优化不再是继续补更多专题，而是继续做“矩阵页 / 宿主真相页 / 安全/风控首页 / 状态预算页”之间的 noun discipline，避免 later maintainer 在“怎么消费真相 / 怎么判断支持度 / 怎么判断当前还能不能继续”这三类问题上重新学回 UI 投影视角。
 - 本轮主分支同步检查: 根仓库当前 `main=93bfa2889cb4c848c1db368ce83bef6c05e15876`、`origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-list --left-right --count main...origin/main` 返回 `32 0`，`origin/main` 是祖先，当前没有待拉取远端更新。根仓库本地存在未解决合并状态，`git merge --ff-only origin/main` 会被根仓库自身状态阻塞，因此本轮只记录基线，不触碰根仓库，只在 `.worktrees/mainloop` 内推进。
 - 本轮地图/能力边界前推动作: 已继续更新 `bluebook/01`、`04`、`05` 与 `navigation/README`，把 canonical formulas 从哲学页、导读页与使用页继续前推到“看地图 / 看能力边界 / 看功能表 / 跨目录反查”这四类最容易重新长回旧 visible nouns 的入口页。
 - 本轮 Prompt 侧线前推动作: `05` 与 `navigation/README` 现在更明确要求先问 `same-world test`，再谈功能和跨目录跳转；公开能力页 `04` 也已明确“源码里出现了”不等于已经合法进入模型当前可见世界。
