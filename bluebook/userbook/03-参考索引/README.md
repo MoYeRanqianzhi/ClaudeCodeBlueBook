@@ -17,6 +17,7 @@
 13. 为什么同样是扩展来源，workspace trust、plugin-only policy、hooks 总闸和 admin-trusted source 不是同一层限制。
 14. 为什么 `relevant skills`、static listing、remote skills 与 `shortId` 反馈回路不是同一条公开主线。
 15. 为什么 `/hooks` 菜单、已配置 hooks、已注册 hooks 和实际会执行的 hooks 不是同一对象。
+16. 为什么 `/mcp` 菜单、全局配置总览、按名解析与 Agent `mcpServers` 不是同一类 server。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

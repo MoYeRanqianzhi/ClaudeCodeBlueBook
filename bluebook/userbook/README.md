@@ -56,6 +56,8 @@
   [05-控制面深挖/15-技能发现、静态 listing 与 remote skills：为什么“relevant skills”不是技能总表.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/15-%E6%8A%80%E8%83%BD%E5%8F%91%E7%8E%B0%E3%80%81%E9%9D%99%E6%80%81%20listing%20%E4%B8%8E%20remote%20skills%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9Crelevant%20skills%E2%80%9D%E4%B8%8D%E6%98%AF%E6%8A%80%E8%83%BD%E6%80%BB%E8%A1%A8.md)
 - 分清 `/hooks` 可见面、注册面与执行面的错位：
   [05-控制面深挖/16-Hooks 的加载、注册、执行与 UI：为什么 `/hooks` 看到的不是实际会跑的 hooks.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/16-Hooks%20%E7%9A%84%E5%8A%A0%E8%BD%BD%E3%80%81%E6%B3%A8%E5%86%8C%E3%80%81%E6%89%A7%E8%A1%8C%E4%B8%8E%20UI%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20%60%2Fhooks%60%20%E7%9C%8B%E5%88%B0%E7%9A%84%E4%B8%8D%E6%98%AF%E5%AE%9E%E9%99%85%E4%BC%9A%E8%B7%91%E7%9A%84%20hooks.md)
+- 分清 `/mcp` 菜单、按名解析与 Agent `mcpServers` 的错位：
+  [05-控制面深挖/17-MCP 配置、按名解析与 Agent 引用：为什么你看到的 server 不是 Agent 真能挂上的 server.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/17-MCP%20%E9%85%8D%E7%BD%AE%E3%80%81%E6%8C%89%E5%90%8D%E8%A7%A3%E6%9E%90%E4%B8%8E%20Agent%20%E5%BC%95%E7%94%A8%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9C%8B%E5%88%B0%E7%9A%84%20server%20%E4%B8%8D%E6%98%AF%20Agent%20%E7%9C%9F%E8%83%BD%E6%8C%82%E4%B8%8A%E7%9A%84%20server.md)
 - 判断稳定面、灰度面和内部面：
   [03-参考索引/02-能力边界/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
 - 建立系统总图：
@@ -127,6 +129,7 @@
 - 来源信任、Trust Dialog 与 plugin-only policy
 - 技能发现、static listing 与 remote skills
 - hooks 的加载、注册、执行与 UI
+- MCP 配置、按名解析与 Agent 引用
 
 适合已经知道自己要完成什么工作，并准备读长文专题的读者。
 
@@ -145,5 +148,6 @@
 - 扩展来源为何被分级信任
 - `relevant skills`、static listing 与 remote skills 的公开边界
 - `/hooks` 可见面、注册面与执行面的错位
+- `/mcp` 总览、按名解析与 Agent 引用的错位
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
