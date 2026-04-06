@@ -6,6 +6,11 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮宿主消费链/rollout evidence 前推动作: 已继续更新 `userbook/03-参考索引/06`、`api/24`、`api/35`、`api/52`、`guides/46` 与 `guides/52`，把高价值入口速查、API 全谱系、rollout 证据消费、治理宿主消费、宿主落地模板与治理控制面 builder 页继续压成同一组前门公式，而不是让它们分别退回命令速查、SDK inventory、日志消费或 builder checklist 语言。
+- 本轮 Prompt 侧线补宿主动作: `userbook/03-06` 与 `api/24` 现在更明确先问 `same-world test`，再谈高价值入口、API 全谱系和宿主控制；宿主接入不再从 answer stream 或命令列表起手。
+- 本轮治理侧线补宿主动作: `api/52` 与 `guides/52` 现在更明确先问 `externalized truth chain / decision window / continuation pricing + rollback object`，而 `api/35` 也继续把 `Context Usage` 固定成 `decision window` 的诚实投影，不再允许它退回账单页语言。
+- 本轮源码质量侧线补宿主动作: `guides/46` 与 `api/24` 现在更明确把 `worker_status + external_metadata + session_state_changed` 收回 current truth bundle，把 host-consumption 页继续写成 truth ladder / rollback object boundary 语言，而不是 SDK 包装层。
+- 本轮目录结构深化结论: 当矩阵页、参考页、宿主消费页和 rollout evidence 页都开始共用同一组公式后，目录结构的高价值工作已经从“补齐路径”转成“让不同宿主入口共用同一条 noun discipline”；只要其中某页重新退回命令清单、token 百分比、模式条或文件回退视角，later maintainer 就会在接入层重新学错对象。
 - 本轮参考索引/宿主消费收口动作: 已继续更新 `userbook/03-参考索引/02`、`userbook/03-参考索引/04`、`api/23`、`api/35` 与 `guides/102`，把 reference 页、宿主支持矩阵页、rollout 证据消费页和源码质量证据分级页继续统一到同一组 visible nouns 与前门公式。
 - 本轮 Prompt 侧线补索引动作: `userbook/03-参考索引/02` 与 `04` 现在更明确先问 `same-world test`，再看边界与分层，避免索引页重新退回功能目录或对象库存。
 - 本轮治理侧线补宿主动作: `api/23` 与 `api/35` 现在更明确先问 `decision window / current admission / product promise`，并把 `Context Usage` 固定成 rollout evidence 的制度窗口投影，而不是宿主账单页。

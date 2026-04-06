@@ -45,6 +45,17 @@ Claude Code 的 API 全谱系至少有七条：
 - 有明确状态写回
 - 有明确失败与恢复语义
 
+如果把 API 全谱系前门继续压成最短公式，也只剩四句：
+
+1. `same-world test`
+   - 哪些 API 在帮助同一个请求对象、继续对象和 handoff 对象成立。
+2. `decision window`
+   - 哪些 API 在帮助宿主解释当前继续是否仍有制度收益。
+3. `truth ladder + consumer subset`
+   - 哪些 API 在宣布 truth，哪些只暴露宿主子集与适配器子集。
+4. `failure semantics + rollback object`
+   - 哪些 API 在宣布失败语义和回退边界，而不是只提供日志或文本结果。
+
 ## 2. 命令谱系
 
 命令并不是“用户手动触发的一些别名”，而是一套带元数据的正式 API 对象。
@@ -133,6 +144,12 @@ Claude Code 的 API 全谱系至少有七条：
 4. 恢复后重建
 
 所以宿主接入的不是简单 answer stream，而是 control-loop runtime。
+
+如果宿主控制页还只被读成“SDK 能发什么消息”，就还没抓住这里真正值钱的东西：
+
+- 这套谱系首先在保护 `same-world test`
+- 然后在外化 `decision window`
+- 最后才在交付 UI 可见结果
 
 其中 `initialize` 特别关键，因为它会同时装配：
 

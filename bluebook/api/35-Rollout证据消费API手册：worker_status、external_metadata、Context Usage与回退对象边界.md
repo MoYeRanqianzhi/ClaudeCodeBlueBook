@@ -151,6 +151,12 @@ API 对象。
 - `Context Usage` 首先是 `decision window` 的诚实投影，不是成本面板。
 - token 总量只是结果证据，observed window 才是继续/停止的判断证据。
 
+这页的 first reject signal 也只该先剩三条：
+
+1. 把 `Context Usage` 当成账单页。
+2. 把 event replay 当成当前真相。
+3. 把文件回退当成对象回退。
+
 ## 4. 第三层：控制请求与审批路径也属于证据面
 
 Claude Code 的审批不是一句：

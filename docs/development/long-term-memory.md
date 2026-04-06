@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `userbook/03-参考索引/06`、`api/24`、`api/35`、`api/52`、`guides/46` 与 `guides/52` 现已继续把 reference 页、宿主消费页、rollout evidence 页和 builder 页统一到同一组 canonical formula：
+  - `userbook/03-06` 现在更明确把高价值入口速查写成 `same-world test / decision window / truth ladder + consumer subset / rollback object boundary`。
+  - `api/24` 现在更明确把 API 全谱系页写成 `same-world test / decision window / truth ladder + consumer subset / failure semantics + rollback object`。
+  - `api/35` 现在更明确把 rollout evidence 页写成 `same-world test / decision window / current truth bundle / rollback object boundary`，并把 first reject signal 补成账单页误读、event replay 误读和文件回退误读。
+  - `api/52` 与 `guides/52` 现在更明确把治理宿主消费面写成 `externalized truth chain / decision window / continuation pricing + rollback object`。
+  - `guides/46` 现在更明确把宿主落地模板写成 `same-world test / decision window / current truth bundle / rollback object boundary`。
+- 新的长期结论：
+  - 参考索引页、宿主消费页和 builder 页真正成熟时，不能只会列接口、命令或接入顺序；它们也必须先回答 `same-world test / decision window / rollback object boundary`。否则 later maintainer 会在“怎么接 / 怎么看 / 怎么运营”这三类高频工作面重新学回 UI 投影视角。
+  - `Context Usage` 只要离开 `decision window` 语言，就会在宿主消费页和 rollout evidence 页立刻退回账单页或仪表盘；这是当前最该持续守住的 noun discipline 之一。
+  - 宿主消费链现在已经有了一组更稳定的 current truth bundle：`worker_status + external_metadata + session_state_changed`。后续任何 rollout / host / control / evidence 文档都应优先复用这组主语，而不是再各自发明一版状态对象名。
 - `userbook/03-参考索引/02 / 04`、`api/23`、`api/35` 与 `guides/102` 现已继续把参考页、宿主消费页和证据分级页统一到同一组公式和 visible nouns：
   - `userbook/03-参考索引/02 / 04` 现在更明确先问 `same-world test / decision window / truth ladder + danger surface / failure semantics`，不再先把索引页写成功能目录或层级表。
   - `api/23` 现在更明确把宿主支持矩阵前门写成 `same-world test / decision window / existence -> implementation visibility -> current admission -> product promise / truth ladder + consumer subset`。
