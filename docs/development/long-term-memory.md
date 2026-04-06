@@ -8,6 +8,50 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `philosophy/21`、`30`、`33`、`51` 与 `57` 现已继续把 Prompt 残余深页全部收回 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`：
+  - `21` 现在只把“七层叠加”当 runtime 现象回译回六个 nouns，不再把 feature list 当第一前门。
+  - `30` 现在只解释 `Boundary -> Continuation` 的 prefix asset，不再把 shared prefix 误写成独立 Prompt 哲学。
+  - `33` 现在只解释最后一级 `Explainability`，并把 cache-break naming 固定成前五层成立后的命名权。
+  - `51` 现在把“行动语义更密”降格为 `Continuation` 跑通后的结果词，明确真正该保住的是 `current work / next-step guard / required assets / continuation qualification`。
+  - `57` 现在只解释 `Transcript -> Lineage -> Continuation` 的协作语法，并把 sticky / suggestion / session memory 固定成同一 continuation interface 的不同时间尺度投影。
+- `philosophy/22`、`64` 与 `guides/49` 现已继续把治理残余深页全部收回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`：
+  - `22` 现在只解释安全/成本/体验为何只是同一收费链的外显，而不是三个并列主题。
+  - `64` 现在把免费扩张逐段挂回 canonical chain，不再停在总论式治理宣言。
+  - `49` 现在把治理 builder 固定成六步执行卡，并把 `Narrow / Later / Outside` 继续降成助记；真正的验收关口固定为 `projection usurpation / decision-window collapse / free-expansion relapse`。
+- `philosophy/86`、`architecture/README` 与 `guides/README` 现已继续把源码质量残余页面收回“合法复杂度中心 + one writable present + later maintainer rejectability”与 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`：
+  - `86` 现在只回答“合法复杂度中心怎样保护 one writable present”，不再把大文件体感、目录美学和时态保护写成半个总论拼盘。
+  - `architecture/README` 现在更明确只负责把这条证据梯度落成对象、状态机、writeback seam 与 choke point，不再同时兼任哲学前门与方法前门。
+  - `guides/README` 现在更明确分开 `101=审读 one writable present` 与 `102=公开镜像证据梯度`，README 自己只做模板分流。
+- 新的长期结论：
+  - 残余深页真正成熟时，不能再用“旧结果词 + 新 canonical chain”的双轨写法；深页如果还需要先靠“七层叠加 / 行动语义更密 / 协作语法 / 免费扩张 / 结构先进性”这些结果词自立，再把 canonical chain 补在后面，later maintainer 仍会先学到第二语言。
+  - Prompt 线的深页以后必须长期遵守一个约束：feature list 只配做 six nouns 的回译层，不配再做前门层。只要某页重新把 prefix asset、explainability、collaboration syntax 抬成根词，Prompt 母线就会再次分叉。
+  - 治理线的深页以后必须长期遵守一个约束：投影词只配做 canonical chain 的外显，不配再做对象链的替身。mode 条、弹窗、usage 条、compact、体验流畅感都只能作为投影存在。
+  - 源码质量线的深页以后必须长期遵守一个约束：README 只负责路由和模板分工，不负责重新发明源码质量总论；真正的主语始终是“合法复杂度中心 + one writable present + later maintainer rejectability”。
+- `bluebook/README`、`00-导读`、`03-设计哲学`、`06-第一性原理与苏格拉底反思`、`09-三张控制面总图`、`philosophy/README` 与 `navigation/README` 现已继续把三条母线的 frontdoor nouns 收紧成更少但更硬的一组：
+  - Prompt 前门现在更明确固定为 `same-world compiler = Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`，并在入口层补上 `authority_blur / transcript_conflation / continuation_story_only` 三条 first reject signal。
+  - 治理前门现在更明确把 canonical chain 顶到 README 层：`governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；`Narrow / Later / Outside` 被进一步降成助记，而不是第二套对象链。
+  - 当前真相线现在更明确把 README 层的高阶压缩写成 `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability`，不再只用 `truth ladder` 或 `current-truth surface` 一条结果词顶替整条判断。
+- 新的长期结论：
+  - Prompt 线真正进入目录前门后，最稳的写法不是重复 `same-world test`，而是让 later maintainer 先学会 `Authority / Boundary / Transcript / Lineage / Continuation / Explainability` 这 6 个 nouns，再用 `same-world test` 当 gate。
+  - Prompt 母线真正稳定时，深页也必须共用这 6 个 nouns：`14` 解释运行时合同，`81` 解释编译链，`84` 解释世界准入，`82` 解释对象映射，`99` 解释苏格拉底追问；如果其中任何一页重新长回另一套前门，later maintainer 就会在深页再次学到第二语言。
+  - 目录结构优化真正值钱的下一步不是把更多深链搬上根 README，而是让 `bluebook/README` 只负责第一问题和最短顺序，把深链稳定回收到 `navigation/README`；只要根 README 继续复制深链，first-answer duplication 就还在。
+  - `09` 必须和各类 README 保持同一套 canonical formula；否则前门层会先统一，宪法层却仍停留在旧 noun set，later maintainer 会在第一跳就学到两版 Prompt / 治理 / 源码质量前门。
+  - 治理线真正进入 frontdoor 后，最稳的一句话不是“治理先外化当前真相，再批准当前扩张”的口号版，而是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 这条收费链；`Narrow / Later / Outside` 只该保留为助记。
+  - 治理母线真正稳定时，深页也必须回到同一条 canonical chain：`85` 解释定价哲学，`83` 解释流水线对象，`100` 解释苏格拉底追问；如果深页重新退回 modal、token UI 或安全结果词，later maintainer 会在深页再次失去收费主语。
+  - 安全页与风控页在目录结构上必须继续分工：`security/README` 负责同一收费链在 signer/ledger/cleanup 侧的结算面，`risk/README` 负责同一收费链在用户侧 product promise / signer + evidence + reopen 侧的结算面；两者都不应再退回第二套规则堆。
+  - 源码质量前门真正成熟时，README 层不该再只写 `truth ladder`，而应同时给出“合法复杂度中心 + one writable present + later maintainer rejectability”这一句，和 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 这一顺序。
+  - 源码质量母线真正稳定时，深页也必须共用 `layout-first drift / recovery-sovereignty leak / surface-gap blur` 这组三拒收信号：`87` 解释合法复杂度中心，`84` 解释 one writable present，`101/102` 解释审读与证据分级；只要哪一页重新退回目录体感或单点权威词，later maintainer 就会再次学到第二套源码质量前门。
+- `userbook/04-专题深潜/19-会外控制台与会内面板专题`、`03-参考索引/01-命令工具/03-CLI 旗标与根命令索引`、`04-根命令与斜杠命令对照索引`、`05-设置、状态、预算与调参入口索引` 与 `06-第一性原理与苏格拉底反思` 现已继续把 root/session/control-surface 这一组前门压成同一条双段对象链：
+  - root plane 现在更明确固定为 `compile same world -> bootstrap plane -> session materialization -> authority/context assembly -> runtime handoff`；它负责装世界，而不是展示 current world。
+  - session plane 现在更明确固定为 `state truth -> trustworthiness -> decision window -> continuation path -> session tuning / display`；它只在 root plane 已把工作世界装好后才成立。
+  - `04` 现在更明确把“同名入口先分 plane，再谈是否配对”写成短句，并要求遇到缺失对偶项时直接承认 root-only / session-only。
+- 新的长期结论：
+  - 命令入口组继续成熟时，最稳的用户侧短句不是“root 和 slash 哪些成对”，而是“会外控制台先装世界，会内控制面再消费当前世界”；这条分界本身就是 Prompt magic 在 user-facing 层的投影。
+  - Prompt 魔力再往前门收一层时，最稳的 nouns 不该只停在 `same-world test`，而应展开成 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`；只要前门重新退回 “system prompt wording” 或最后一条回复，Prompt 线就会失去对象链。
+  - 安全与省 token 在线控件层真正合流时，最稳的前门不是 token bar 或成本页，而是 `decision window -> continuation path`；只要 `/usage` 被重新写成账单条、`/extra-usage` 被写回查询页，治理线就会退回 UI 投影。
+  - 源码先进性在命令系统这组页里的可见证据，不是命令覆盖更全，而是 later maintainer 能独立指出 `plane -> object -> semantics -> gate` 与 `bootstrap truth != present truth` 两条拒错链，而不依赖作者口头补语义。
+  - `06` 现在更明确把三条母线各自收回最短拒错顺序：Prompt 线回 `same-world test -> witness chain -> continuation qualification`，治理线回 `governance key -> decision window -> continuation pricing -> durable-transient cleanup`，源码质量线回 `authority surface -> writeback split -> freshness gate -> later-maintainer rejectability`。
+  - 目录结构继续优化时，`userbook` 应长期守住 plane/object/frontdoor，`philosophy` 守住不可约判断，`architecture` 守住 choke point，`guides` 守住问题梯子，`playbooks` 守住 verdict，`casebooks` 守住 distortion，`docs` 守住 memory；只要前门失去 object chain，later maintainer 就会重新回到作者记忆。
 - `userbook/04-专题深潜/03-治理与安全专题`、`07-会话运营、分叉与回退专题` 与 `08-上下文接入、附件与提示编译专题` 现已继续把入口层稳定下来的三组最小顺序前推到专题正文第一页：
   - `03` 现在更明确先按 `governance key -> decision window -> failure verdict -> command entrance` 进入，而不是先按按钮名进入。
   - `07` 现在更明确先按“同一个工作对象 -> stable bytes vs working set -> 时间线选择 -> 命令选择”进入，而不是先按聊天记录或命令表进入。
@@ -27,6 +71,16 @@
   - 技能来源与触发真正成熟时，最稳的正文前门不该再从 `/skills` 菜单开始，而应从 `source -> projection -> runtime gate -> activation` 开始；只要先问“为什么菜单里没有它”，目录结构就会再次退回 UI 库存视角。
   - 扩展面信任真正成熟时，最稳的安全前门不该再叫“安全限制”，而应叫 `workspace trust -> source trust -> surface lock -> runtime gate`；Trust Dialog、plugin-only policy、managed-only hooks 和 frontmatter hooks/MCP servers 必须长期被写成不同层的主权判断，而不是一个总开关。
   - 在扩展面里，“可见入口”应长期被写成发布承诺，而不是运行时事实；能看见不等于能注册，能注册也不等于能执行。这个判断是 Trust Dialog、plugin-only policy、managed-only hooks 与 SkillTool/runtime gate 能共用同一套治理语言的关键。
+  - 扩展层选择真正成熟时，最稳的前门不该从“技能 / 插件 / MCP / Hooks 四选一”开始，而应从 `source sovereignty -> capability projection -> runtime gate -> execution layer` 开始；只有先认对象、来源、投影和 gate，扩展层选择才不会退回名词分类。
+  - MCP 线真正成熟时，最稳的前门不该从“有哪些 server”开始，而应从 `config set -> name resolution -> client connection -> agent attach -> runtime gate` 开始；`/mcp` 菜单、全局配置总览、按名可引用集合、当前 client 和 agent frontmatter 本来就是不同层的 MCP 真相。
+  - workspace trust、project `.mcp.json` approval 与 health-check runtime 必须长期被写成三层对象链：`workspace trust -> project approval -> health-check runtime -> fallback`；只要把 `skip trust dialog`、`mcp list|get` 探活、`reset-project-choices` 其中任意一条误写成另一条，trust 线就会重新退回“是否已经被批准”的单平面错觉。
+  - 命令入口层真正成熟时，最稳的前门不该从按钮名或 slash 名起笔，而应从 `task object -> capability projection -> runtime gate -> execution surface` 与 `command object -> execution semantics -> visibility/caller gate -> host mode` 两条公式起笔；只要先按命令名分类，命令页就会重新退回按钮说明书。
+  - 命令工具这组页进一步收口时，最稳的总公式可以继续压成 `plane -> object -> semantics -> gate`：先分 root/session plane，再分命令对象，再分执行语义，最后分 gate。这个总公式比单页字段表更适合当 later maintainer 的前门记忆。
+  - 命令工具索引再往下细分时，`03` 最稳的职责应固定为 root plane 投影页：先分 `flag / root command / fast-path`，再分它们各自承载的 lifecycle semantics 与 visibility；这样 `03/04/06` 才会形成同一条 `plane -> object -> semantics -> gate` 的三层投影。
+  - 设置/状态/预算这组入口继续深化后，最稳的对象链应写成 `state truth -> trustworthiness -> decision window -> continuation path -> session tuning / display`；只有把 `/extra-usage`、`/rate-limit-options` 收回 continuation path，而不是观测页，控制面目录才不会重新把预算动作写成状态查询。
+  - 命令工具索引继续深入后，最稳的三级分工应固定为：`01` 做库存页、`04` 做 plane 对照页、`05` 做状态/预算对象页；如果这三页重新互相代替，命令目录就会再次退回“名字相近表”和“费用入口表”的拼盘。
+  - root/slash/settings 这组页的最佳前门语言不是“有哪些命令”，而是 `inventory / plane / runtime object` 三分法；命令索引只有先承认自己不负责对象真相，目录结构才不会在索引层重新长回按钮思维。
+  - 当扩展层真相链与命令对象链开始共用“先认对象、再认投影、再认 gate”的前门语言时，说明蓝皮书目录结构已经从专题同序化继续推进到入口合同同语化；这是目录优化比补新页更值钱的阶段。
 - `userbook/04-专题深潜/README` 与 `userbook/05-控制面深挖/README` 现已继续把最近几批稳定下来的三组最小顺序推进到专题入口层：
   - `04` 现在更明确把专题层写成“工作对象入口 + 最小排查顺序 + 何时退回控制面/主线重新定题”。
   - `05` 现在更明确把控制面层写成“控制面入口 + 哪组顺序在起作用 + 哪些相邻入口是替身 + 何时应退回上一层”。

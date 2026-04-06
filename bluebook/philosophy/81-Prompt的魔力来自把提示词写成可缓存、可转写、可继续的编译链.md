@@ -28,6 +28,21 @@
 
 - Prompt 的魔力不在“更会写”，而在“更会把世界编译成可缓存、可转写、可继续的工作对象”。
 
+如果把这条编译链再压成目录前门已经固定下来的 nouns，也只该剩六个：
+
+1. `Authority`
+   - 主权顺序先固定谁能定义世界。
+2. `Boundary`
+   - `section registry + dynamic boundary` 先固定哪些字节配进入 stable prefix。
+3. `Transcript`
+   - 模型真正消费的是哪条合法协议历史。
+4. `Lineage`
+   - `parentUuid / message.id / tool_use_id` 三键怎样持续保住同一身份。
+5. `Continuation`
+   - lawful forgetting、continue qualification 与 cache-safe fork reuse 怎样让世界继续。
+6. `Explainability`
+   - cache break、继续失效与世界断裂的原因能否被对象级点名。
+
 ## 1. 先说结论
 
 Prompt 真正的魔力，不是：

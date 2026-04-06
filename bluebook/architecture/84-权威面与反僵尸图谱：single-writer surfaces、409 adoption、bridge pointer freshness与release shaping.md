@@ -29,6 +29,10 @@
 
 - Claude Code 的源码先进性，不在于仓库“看起来更像教科书”，而在于系统先把 current-truth surface、陈旧写回拒绝、recovery asset non-sovereignty 与发布面边界都写进了结构。
 
+如果把这一章再压成前门顺序，也只该剩：
+
+- `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+
 ## 1. 先说结论
 
 Claude Code 更深的一层工程成熟度，可以压成四张图：
@@ -45,6 +49,12 @@ Claude Code 更深的一层工程成熟度，可以压成四张图：
 更前门地说，这四张图其实在共同保护：
 
 - `current-truth surface -> recovery asset non-sovereignty -> freshness gate -> ghost capability`
+
+这条线最短的 reject trio 也只认：
+
+1. `layout-first drift`
+2. `recovery-sovereignty leak`
+3. `surface-gap blur`
 
 ## 2. 第一性原理：先问哪里会说谎，再谈哪里分层更好看
 

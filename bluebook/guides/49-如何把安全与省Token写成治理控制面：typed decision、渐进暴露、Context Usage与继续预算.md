@@ -23,65 +23,63 @@
 
 - Claude Code 的安全与省 token，不是两套分离的优化，而是同一张治理控制面在动作、能力、上下文与时间四个方向上的统一定价。
 
-## 1. 第一性原理
+## 1. 先固定 builder 的唯一顺序
 
-更成熟的治理系统，不是：
+这张治理 builder 卡现在不再从 “authority surface / typed decision / visibility pricing / outside pricing” 这些近义步骤起笔，而固定从 canonical chain 起笔：
 
-- 先把东西都暴露给模型，再补审批、压缩和 stop 逻辑
+1. `governance key`
+2. `externalized truth chain`
+3. `typed ask`
+4. `decision window`
+5. `continuation pricing`
+6. `durable-transient cleanup`
 
-而是：
+`Narrow / Later / Outside` 现在只保留为助记，不再充当第二套对象链。
 
-1. 先定义谁能改边界。
-2. 先定义哪些动作必须协商。
-3. 先定义哪些能力必须延后出现。
-4. 先定义哪些结果必须外置。
-5. 先定义什么时候不该继续当前对象。
+## 2. 第一步：先固定 governance key
 
-所以更准确的说法不是：
+治理最先要固定的，不是规则条目，而是：
 
-- 安全 + 省 token
-
-而是：
-
-- 治理控制面
-
-## 2. 第一步：先固定 authority surface
-
-治理最先要固定的，不是规则条目，而是权威入口：
-
-1. settings / policy
-2. permission mode
-3. tool pool / visibility
-4. MCP scope / status
-5. Context Usage / decision window
+- 谁配改边界
 
 构建动作：
 
-1. 先定义哪些输入能改边界。
-2. 先定义 host 只消费哪些权威状态，而不能自己猜。
-3. 先定义 external mode、internal mode、consumer subset 的关系。
+1. 先定义 settings、policy、workspace trust、managed settings 谁拥有主键。
+2. 先定义 host 只能消费哪些权威状态，而不能自己猜。
+3. 先定义哪些边界变更需要先经过主键，再进入后续治理链。
 
 不要做的事：
 
 1. 不要把磁盘 settings 直接当 effective settings。
-2. 不要让宿主自己拼 mode、tool pool 或 pending_action。
+2. 不要让宿主自己拼 mode、tool pool 或 pending action。
 3. 不要让 MCP、settings、permissions 各自产生一套真相。
 
-## 3. 第二步：把动作审批写成 typed decision
+## 3. 第二步：把 externalized truth chain 写硬
 
-Claude Code 真正保护的不是弹窗，而是正式动作语义：
+Claude Code 真正保护的不是一个 mode 字段，而是：
+
+- 当前哪些真相被正式外化给宿主消费
+
+构建动作：
+
+1. 先定义 mode、tool visibility、pending action、usage 与 state writeback 的同一 truth chain。
+2. 先定义哪些对象只配做 projection，哪些对象配成为 host-facing truth。
+3. 先定义外化链如何在 trust、remote、resume、compact 后仍保持一致。
+
+不要做的事：
+
+1. 不要把 token 条或 mode 条当治理真相本体。
+2. 不要让 UI 投影反向宣布“系统当前是什么”。
+3. 不要把 settings 页面和当前运行时真相混成一层。
+
+## 4. 第三步：把动作审批写成 typed ask
+
+Claude Code 真正保护的不是弹窗，而是正式 ask 语义：
 
 1. `deny`
 2. `ask`
 3. `allow`
 4. classifier / mode / async-agent 等拒收理由
-
-更稳的顺序是：
-
-1. 先做最硬拒收。
-2. 再做需要协商的 ask。
-3. 再做 mode 与 fast-path。
-4. 最后才交给用户界面呈现。
 
 构建动作：
 
@@ -96,50 +94,21 @@ Claude Code 真正保护的不是弹窗，而是正式动作语义：
 2. 不要把 headless / background 模式写成“没有弹窗就默认允许”。
 3. 不要把 classifier 当成最后一跳万能安全阀。
 
-## 4. 第三步：把能力暴露写成渐进可见性
-
-Claude Code 不是先把所有能力都给模型，再要求模型克制；它先限制模型能看见的世界。
-
-更稳的做法是：
-
-1. 先给稳定的 builtin surface。
-2. 再给 deferred visibility。
-3. 再给 ToolSearch / discovered set。
-4. 再给 MCP delta / late attachment。
-
-构建动作：
-
-1. 先定义默认可见工具子集。
-2. 先定义哪些能力通过搜索出现，而不是预先声明。
-3. 先定义哪些高波动说明要走 delta，不进 stable prefix。
-
-不要做的事：
-
-1. 不要把“系统能做”直接写成“模型立刻可见”。
-2. 不要把 MCP 连上就立即重写整段 system prompt。
-3. 不要把可见性控制误写成产品灰度开关。
-
 ## 5. 第四步：把 Context Usage 写成 decision window
 
-真正成熟的预算观测，不是只给一个 token 百分比。
+真正成熟的预算观测，不是只给一个 token 百分比，而是回答：
 
-Claude Code 更接近在做：
-
-1. 当前哪些 section 占了席位
-2. 当前哪些 tools 占了席位
-3. 当前哪些 attachments 占了席位
-4. 当前哪些能力还没加载
-5. 当前继续是否还有决策增益
+- 当前继续还有没有决策增益
 
 构建动作：
 
-1. 先把 Context Usage 与 pending_action 并排消费。
-2. 先把观测结果翻译成下一步治理动作。
-3. 先把“为什么贵”解释到 prompt / tool / attachment / continuation。
+1. 先把 `Context Usage` 与 pending action、current object 并排消费。
+2. 先把观测结果翻译成下一步治理动作，而不是留在观测层。
+3. 先把“为什么贵”解释到 prompt / tools / attachments / continuation。
 
 不要做的事：
 
-1. 不要把 Context Usage 写成仪表盘装饰。
+1. 不要把 `Context Usage` 写成仪表盘装饰。
 2. 不要把 token 条形图当预算真相。
 3. 不要在没有 decision window 的情况下直接做 compact 或继续。
 
@@ -147,80 +116,77 @@ Claude Code 更接近在做：
 
 Claude Code 把 continuation 理解成正式的 continuation pricing，而不是默认免费延长。
 
-更稳的顺序是：
+构建动作：
 
 1. 先判断 `decision window` 是否仍成立。
 2. 先判断当前对象是否还值得继续。
 3. 先判断继续是否已进入 diminishing returns。
-4. 先判断是 `stop / continue / object upgrade / human-fallback / cleanup-before-resume` 哪一种 verdict，而不是继续聊天。
-
-构建动作：
-
-1. 先定义 continuation counter / delta / diminishing rule。
-2. 先定义 stop / continue / object upgrade / human-fallback / cleanup-before-resume 的分叉条件。
-3. 先定义何时必须切换到 task / worktree / compact。
-4. 先把 `rollback object` 与 durable/transient split 写成继续资格之前的前置对象，而不是收尾描述。
+4. 先判断是 `stop / continue / object upgrade / human-fallback / cleanup-before-resume` 哪一种 verdict。
 
 不要做的事：
 
 1. 不要把 continuation 理解成“再来一轮”。
 2. 不要把 stop 写成“模型自己收尾”。
 3. 不要在对象早该升级时继续消耗时间预算。
-4. 不要把 compact 当成 continuation pricing 的别名；compact 只是下游执行策略，不是前门 verdict。
+4. 不要把 compact 当成 continuation pricing 的别名。
 
-## 7. 六步最小治理顺序
+## 7. 第六步：把 durable-transient cleanup 写成结算面
 
-如果要把上面的原则压成一张治理 builder 卡，顺序可以固定成：
+这一步不再叫“outside pricing”或“收尾技巧”，而是明确叫：
 
-1. `authority`
-   - settings / policy / mode / subset
-2. `typed decision`
-   - deny / ask / allow / reason
-3. `visibility pricing`
-   - deferred / subset / delta
-4. `decision window`
-   - Context Usage + pending_action + current state
-5. `continuation pricing`
-   - stop / continue / object upgrade / human-fallback / cleanup-before-resume
-6. `outside pricing`
-   - externalization / preview / replacement + rollback object + durable-transient cleanup
+- `durable-transient cleanup`
 
-如果继续把这六步和 `Narrow / Later / Outside` 对齐成一张 crosswalk，更稳的 builder 读法应补成：
+构建动作：
+
+1. 先定义哪些结果必须外置，哪些对象必须退场。
+2. 先定义 compact、resume、replacement、preview、rollback object 如何回钉到当前链路。
+3. 先定义 durable 与 transient 的分界，避免 stop 后旧对象偷偷复活。
+
+不要做的事：
+
+1. 不要把 cleanup 当成附录。
+2. 不要让 stop / resume 留下第二真相。
+3. 不要让外置对象重新篡位成当前工作主语。
+
+## 8. `Narrow / Later / Outside` 现在只保留为助记
+
+如果要把六步 builder 和旧助记 crosswalk 对齐，更稳的读法应是：
 
 1. `Narrow`
-   - `authority + typed decision + visibility pricing`
+   - `governance key -> externalized truth chain -> typed ask`
    - 先治理宽度，不让未定价能力先进入世界。
 2. `Later`
-   - `decision window + continuation pricing`
-   - 先治理时间，只在仍有 `decision gain` 时允许延后暴露或延后继续。
+   - `decision window -> continuation pricing`
+   - 先治理时间，只在仍有 `decision gain` 时允许继续。
 3. `Outside`
-   - `outside pricing`
+   - `durable-transient cleanup`
    - 先治理位置，把高波动对象迁成可回钉、可拒收、可清算的外部载体。
 
-如果这张 crosswalk 说不清，治理 builder 就还只是“步骤表”，还不是统一治理位置学。
+如果这张 crosswalk 说不清，builder 就还只是“步骤表”，还不是统一治理位置学。
 
-更硬一点看，这里最终交出的 failure verdict 也至少要能点名：
+## 9. 用 reject trio 做 builder 验收
 
-1. `reject`
-2. `degrade`
-3. `halt`
-4. `cleanup-before-resume`
-5. `human-fallback`
+这张卡的验收关口现在固定为：
 
-它们不是 UX 文案，而是 runtime 在动作、能力、上下文与时间四类扩张上的正式判词。
+1. `projection usurpation`
+   - mode 条、审批弹窗、token 条、usage 仪表盘开始冒充治理真相。
+2. `decision-window collapse`
+   - `Context Usage` 只剩成本显示，不再决定下一步治理动作。
+3. `free-expansion relapse`
+   - 全量可见、默认继续、残留复活或无增益自动化重新获得免费资格。
 
-## 8. 苏格拉底式检查清单
+## 10. 苏格拉底式检查清单
 
 在你准备继续补一层安全或压缩机制前，先问自己：
 
 1. 我治理的是边界，还是只治理了交互形式。
-2. 动作审批是否已经是 typed decision，而不是 modal。
-3. 模型看见的是当前最小必要世界，还是几乎全量世界。
-4. Context Usage 是否真的进入了下一步决策，而不是留在观测层。
+2. host 当前消费的是 externalized truth，还是某种 projection。
+3. 动作审批是否已经是 typed ask，而不是 modal。
+4. `Context Usage` 是否真的进入了下一步决策，而不是留在观测层。
 5. continuation 是正式 continuation pricing，还是默认免费扩张。
-6. mode 面板、审批弹窗、usage 条、compact 技巧里，当前是哪一个 projection 在冒充治理真相。
+6. cleanup 是否真的结算了 durable / transient，而不是只换了一个显示面。
 7. 当前 failure verdict 是否已经退回 `reject / degrade / halt / cleanup-before-resume / human-fallback`，还是还停在投影替身的口语层。
 
-## 9. 一句话总结
+## 11. 一句话总结
 
-真正成熟的安全与省 token 设计，不是多几条限制或多一层压缩，而是把动作、能力、上下文与时间统一写成同一张治理控制面。
+真正成熟的安全与省 token 设计，不是多几条限制或多一层压缩，而是把动作、能力、上下文与时间统一写成 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 这一张治理控制面。

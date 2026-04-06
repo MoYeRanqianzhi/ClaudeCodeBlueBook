@@ -25,6 +25,16 @@
 
 - 源码先进性真正保护的不是“更好看的结构”，而是现在时态的写入权不被陈旧对象、错误恢复资产和错误边界重新夺走。
 
+如果只先做一轮最短的源码质量审读，也只按这条顺序问：
+
+- `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+
+这组问题最短的 reject trio 也只认：
+
+1. `layout-first drift`
+2. `recovery-sovereignty leak`
+3. `surface-gap blur`
+
 ## 1. 第一性原理
 
 成熟内核首先处理的不是：

@@ -62,6 +62,16 @@ Prompt 的魔力，首先来自：
 1. `same-world test = world-defining winner -> message lineage -> protocol transcript -> stable bytes -> continuation qualification`
 2. `compile -> protocolize -> preserve -> continue -> explain`
 
+如果把第一行再压成目录前门复用的一组 nouns，也只该剩：
+
+- `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
+
+更稳的 Prompt reject trio 也只认三条：
+
+1. `authority_blur`
+2. `transcript_conflation`
+3. `continuation_story_only`
+
 如果一套 Prompt 解释还没压到这两行，它就还停在机制总结，不算最硬的第一性原理。
 
 ## 2. 第一性原理：Prompt 首先是一道世界准入法律

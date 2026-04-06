@@ -2,14 +2,21 @@
 
 `navigation/` 只负责跨目录反查，不重新定义三条母线。需要权威短语与最短主线时先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)；只有当问题已经变成“我要跨目录找哪一层证据”时再留在这里。
 
-如果只先记跨目录前门的四条公式，也只记这四条：
+如果只先记跨目录前门的三条公式，也只记这三条：
 
-1. `same-world test`
-2. `治理先外化当前真相，再批准当前扩张`
-3. `Narrow / Later / Outside + stable bytes + working set`
-4. `truth ladder = contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface`
+1. Prompt
+   - `same-world compiler = Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
+2. 治理
+   - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
+   - `Narrow / Later / Outside` 只是助记，不是第二套对象链
+3. 当前真相
+   - `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability`
 
-如果一个跨目录问题还压不回这四条，它就还停在对象层或结果词层。
+如果一个跨目录问题还压不回这三条，它就还停在对象层或结果词层。
+
+治理 / 安全 / Token 问题若已确认缺的是对象链而不是路线，也只先弹回：
+
+- `85 -> 83 -> 100 -> security -> risk`
 
 如果继续往下压，跨目录入口也只该再暴露三组最小顺序：
 
@@ -65,7 +72,7 @@
   `price -> externalize -> arbitrate -> continue-or-stop -> cleanup`
   `surface -> writeback -> freshness -> evict`
 - 如果你在判断“下一层该去哪个目录”，也先问：
-  这是 `same-world test`、`decision window`、`truth ladder`，还是 `failure semantics` 的问题。
+  这是 same-world compiler、governance pricing chain，还是 authority surface / temporal honesty 的问题。
 - 如果你在判断“并行深挖后该回哪一个前门合并”，也先问：
   这个结论第一次该回 `09`、`05`、`15` 还是 `41`，而不是继续在 `README / navigation / guide` 三层同时第一次被回答。
 - 如果你在判断“排查顺序该先从哪一格开始”，也先问：
@@ -97,4 +104,5 @@
 - 目录细节与编号段说明回各目录 `README` 或编号页。
 - 过程记录与变更记忆统一回 `docs/`。
 - 一旦某个 `README` 同时承担 canonical formula、route map、深页解释与研究记忆，它就已经混层，应退回各自证据层。
+- 一旦 `bluebook/README` 开始复制深链，或某个目录 README 开始第一次解释别的目录的 canonical formula，也视为混层。
 - 一旦入口页只能给公式、却给不出最小顺序，它就仍停在 route map 层，还没有完成 later maintainer 可执行化。

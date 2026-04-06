@@ -30,6 +30,10 @@
 
 - Claude Code 的治理控制面不是分别在做安全、成本、继续与观测，而是在统一反对模型可达世界的无序扩张。
 
+如果把这条治理流水线再压成目录前门已经固定的 canonical chain，也只该剩：
+
+- `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
+
 ## 1. 先说结论
 
 Claude Code 更深的治理律，不是：
@@ -53,6 +57,12 @@ Claude Code 更深的治理律，不是：
 这里还要再压硬一句：
 
 - `governance key` 才是整条治理链的起点；source slot 只回答谁配改边界，随后才依次派生 `externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `durable-transient cleanup`
+
+这条线最短的 reject trio 也只认：
+
+1. `decision-window collapse`
+2. `projection usurpation`
+3. `free-expansion relapse`
 
 ## 2. 第一性原理：governance key 先于 trust UI
 
