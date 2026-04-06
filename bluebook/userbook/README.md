@@ -70,6 +70,8 @@
   [05-控制面深挖/39-name、permission-mode、sandbox 与 session title：为什么 standalone remote-control 的 host flags、session 默认策略与标题回填不是同一种继承.md](./05-控制面深挖/39-name、permission-mode、sandbox%20与%20session%20title：为什么%20standalone%20remote-control%20的%20host%20flags、session%20默认策略与标题回填不是同一种继承.md)
 - 分清 remote-control 的工具审批、网络放行、自动批准与提示撤销为什么不是同一种批准：
   [05-控制面深挖/40-can_use_tool、SandboxNetworkAccess、hook-classifier 与 control_cancel_request：为什么 remote-control 的工具审批、网络放行、自动批准与提示撤销不是同一种批准.md](./05-控制面深挖/40-can_use_tool、SandboxNetworkAccess、hook-classifier%20与%20control_cancel_request：为什么%20remote-control%20的工具审批、网络放行、自动批准与提示撤销不是同一种批准.md)
+- 分清 standalone remote-control 的 `sdkUrl`、ingress base、environment secret、session token 与 worker epoch 为什么不是同一种连接凭证：
+  [05-控制面深挖/41-sdk-url、sessionIngressUrl、environmentSecret、session access token 与 workerEpoch：为什么 standalone remote-control 的 URL、密钥、令牌与传输纪元不是同一种连接凭证.md](./05-控制面深挖/41-sdk-url、sessionIngressUrl、environmentSecret、session%20access%20token%20与%20workerEpoch：为什么%20standalone%20remote-control%20的%20URL、密钥、令牌与传输纪元不是同一种连接凭证.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：
@@ -215,5 +217,6 @@
 - standalone remote-control 的 banner、状态行、QR 与会话列表边界
 - standalone remote-control 的 host flags、session 默认策略与 title 回填边界
 - remote-control 的工具审批、网络放行、自动批准与提示收口边界
+- standalone remote-control 的 transport URL、secret、token 与 epoch 边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。

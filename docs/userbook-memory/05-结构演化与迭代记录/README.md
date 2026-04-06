@@ -42,6 +42,7 @@
 - [38-2026-04-06-standalone remote-control 显示面拆分记忆.md](./38-2026-04-06-standalone%20remote-control%20显示面拆分记忆.md)
 - [39-2026-04-06-standalone remote-control flags 与 title 继承拆分记忆.md](./39-2026-04-06-standalone%20remote-control%20flags%20与%20title%20继承拆分记忆.md)
 - [40-2026-04-06-remote-control 批准对象与提示收口拆分记忆.md](./40-2026-04-06-remote-control%20批准对象与提示收口拆分记忆.md)
+- [41-2026-04-06-standalone remote-control 传输凭证与纪元拆分记忆.md](./41-2026-04-06-standalone%20remote-control%20传输凭证与纪元拆分记忆.md)
 
 用途：
 
