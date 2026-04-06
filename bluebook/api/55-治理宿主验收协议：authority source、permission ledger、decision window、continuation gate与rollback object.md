@@ -1,4 +1,4 @@
-# 治理宿主验收协议：governance key、externalized truth chain、typed ask、decision window 与 continuation pricing
+# 治理宿主验收协议：governance key、externalized truth chain、typed ask、decision window、continuation pricing 与 durable-transient cleanup
 
 Claude Code 当前没有公开一份单独名为 `GovernanceAcceptanceContract` 的对象，但宿主、SDK、CI 与交接系统已经可以围绕一条更稳的 contract chain 验收统一定价控制面：
 
@@ -7,18 +7,18 @@ Claude Code 当前没有公开一份单独名为 `GovernanceAcceptanceContract` 
 3. `typed ask`
 4. `decision window`
 5. `continuation pricing`
-6. `rollback / durable-transient cleanup`
+6. `durable-transient cleanup`
 
-旧词在这条链中的位置应固定为：
+旧桥接词在这条链中的位置应固定为：
 
-- `authority source`
-  - `governance key` 的 source slot
-- `permission ledger`
-  - `typed ask` 的事务证据面
-- `continuation gate`
-  - `continuation pricing` 的 verdict 字段
-- `rollback object`
-  - cleanup / handoff 的 carrier
+- source slot
+  - 属于 `governance key`
+- transaction evidence
+  - 属于 `typed ask`
+- pricing verdict
+  - 属于 `continuation pricing`
+- cleanup / handoff carrier
+  - 属于 `durable-transient cleanup`
 
 ## 0. 关键源码锚点
 
@@ -120,11 +120,11 @@ Claude Code 当前没有公开一份单独名为 `GovernanceAcceptanceContract` 
 
 - `continuation gate` 不再独立成根对象；它只是 `continuation pricing` 的一个 verdict。
 
-### 1.6 `rollback / durable-transient cleanup`
+### 1.6 `durable-transient cleanup`
 
 最后还必须消费：
 
-1. `rollback_object`
+1. `cleanup_carrier`
 2. `rewind_files`
 3. `re_entry_condition`
 4. `rollback_reason`
@@ -133,8 +133,8 @@ Claude Code 当前没有公开一份单独名为 `GovernanceAcceptanceContract` 
 
 这回答的不是“文件有没有回退”，而是：
 
-- 当前回退是否仍围绕同一个治理对象
-- 回退之后哪些资产还在，哪些权威必须清掉
+- 当前 cleanup 是否仍围绕同一个治理对象
+- cleanup 之后哪些资产还在，哪些权威必须清掉
 
 ## 2. 必须共享的 reject verdict
 
@@ -148,7 +148,7 @@ Claude Code 当前没有公开一份单独名为 `GovernanceAcceptanceContract` 
 6. `context_usage_isolated`
 7. `continuation_pricing_defaulted`
 8. `transient_authority_resumed`
-9. `rollback_not_object`
+9. `cleanup_not_object`
 10. `baseline_reset_missing`
 
 这些 reject verdict 的价值在于：
@@ -178,7 +178,7 @@ Claude Code 当前没有公开一份单独名为 `GovernanceAcceptanceContract` 
 3. 再验 `typed ask`
 4. 再验 `decision window`
 5. 再验 `continuation pricing`
-6. 最后验 `rollback / durable-transient cleanup`
+6. 最后验 `durable-transient cleanup`
 
 不要反过来做：
 
@@ -188,4 +188,4 @@ Claude Code 当前没有公开一份单独名为 `GovernanceAcceptanceContract` 
 
 ## 5. 一句话总结
 
-Claude Code 的治理宿主验收协议，不是 mode 与弹窗 API，而是 `governance key + externalized truth chain + typed ask + decision window + continuation pricing + rollback / durable-transient cleanup` 共同组成的规则面。
+Claude Code 的治理宿主验收协议，不是 mode 与弹窗 API，而是 `governance key + externalized truth chain + typed ask + decision window + continuation pricing + durable-transient cleanup` 共同组成的规则面。

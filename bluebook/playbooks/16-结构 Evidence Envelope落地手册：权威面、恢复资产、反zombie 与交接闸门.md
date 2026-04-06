@@ -1,11 +1,11 @@
-# 结构 Evidence Envelope落地手册：权威面、恢复资产、反zombie 与交接闸门
+# 结构 Evidence Envelope落地手册：current-truth surface、recovery asset、hotspot kernel 与 mirror gap discipline
 
 这一章不再解释结构 evidence envelope 应该长什么样，而是把它压成宿主、CI、评审与交接都能直接执行的一套落地手册。
 
 它主要回答五个问题：
 
 1. 结构线真正的 host implementation playbook 到底该检查什么。
-2. authority surface、recovery asset、anti-zombie gate 与 rollback object 该怎样被不同角色共同消费。
+2. `current-truth surface`、recovery asset、anti-zombie gate 与 handoff carrier 该怎样被不同角色共同消费。
 3. 哪些检查最适合写成 handoff gate，哪些最适合写成 CI gate。
 4. 怎样避免结构升级再次退回文件级回退、目录美观与作者记忆。
 5. 怎样用苏格拉底式追问避免把这章写成结构洁癖清单。
@@ -28,10 +28,10 @@
 
 而是：
 
-1. 宿主消费当前 object、authority surface 与 current truth。
-2. CI 校验 recovery asset、anti-zombie gate 与 rollback boundary。
-3. 评审先看 authority / recovery / rollback，再看目录与文件。
-4. 交接拿到 retained assets、danger paths 与 rollback object。
+1. 宿主消费当前 object、`current-truth surface` 与 current truth。
+2. CI 校验 recovery asset、anti-zombie gate 与 `hotspot kernel`。
+3. 评审先看 `contract / registry / current-truth surface`，再看目录与文件。
+4. 交接拿到 retained assets、danger paths 与 handoff carrier。
 5. 四类角色围绕同一结构 envelope 骨架判断。
 
 ## 2. 最小落地 diff
@@ -56,16 +56,16 @@ CI:
 
 ```text
 宿主:
-- 展示 current object / authority surface / projection set
+- 展示 current object / current-truth surface / projection set
 
 CI:
-- 检查 recovery asset / anti-zombie gate / rollback object
+- 检查 recovery asset / anti-zombie gate / handoff carrier
 
 评审:
-- 先看 authority / recovery / rollback，再看文件与目录
+- 先看 current truth / recovery / handoff，再看文件与目录
 
 交接:
-- 先看 retained assets / danger paths / rollback object
+- 先看 retained assets / danger paths / handoff carrier
 ```
 
 ### 这段 diff 的意义
@@ -85,10 +85,10 @@ CI:
 宿主至少必须消费：
 
 1. current object
-2. authority surface
+2. current-truth surface
 3. projection set
 4. current recovery state
-5. rollback object
+5. handoff carrier
 
 硬要求：
 
@@ -98,28 +98,28 @@ CI:
 
 CI 至少必须检查：
 
-1. authority surface 是否已点名。
+1. current-truth surface 是否已点名。
 2. recovery asset ledger 是否完整。
 3. anti-zombie gate 是否存在。
-4. rollback object boundary 是否明确。
+4. handoff carrier boundary 是否明确。
 5. retained assets 是否已定义。
 
 硬门禁：
 
-- authority surface 缺失
+- current-truth surface 缺失
 - recovery asset 缺失
 - anti-zombie gate 缺失
-- rollback object 缺失
+- handoff carrier 缺失
 
 ### 3.3 评审最小检查点
 
 评审至少必须先看：
 
-1. authority surface
+1. current-truth surface
 2. projection set
 3. recovery asset
 4. anti-zombie gate
-5. rollback object boundary
+5. handoff carrier boundary
 
 软检查点：
 
@@ -135,10 +135,10 @@ CI 至少必须检查：
 交接至少必须交付：
 
 1. current object
-2. authority surface
+2. current-truth surface
 3. retained assets
 4. danger paths
-5. rollback object
+5. handoff carrier
 6. dropped stale writers
 
 硬要求：
@@ -149,18 +149,18 @@ CI 至少必须检查：
 
 结构线四类角色更稳的统一顺序是：
 
-1. 当前对象
-2. authority surface
-3. projection set
-4. recovery assets
-5. anti-zombie gate
-6. rollback boundary
+1. `contract`
+2. `registry`
+3. `current-truth surface`
+4. `consumer subset`
+5. `hotspot kernel`
+6. `mirror gap discipline`
 
 ## 5. 结构线硬门禁
 
 下面这些最适合写成硬门禁：
 
-1. `authority surface` 缺失。
+1. `current-truth surface` 缺失。
 2. `recovery_asset` 缺失。
 3. `anti_zombie_gate` 缺失。
 4. `rollback_object_boundary` 缺失。
@@ -173,7 +173,7 @@ CI 至少必须检查：
 1. danger paths 是否点名。
 2. retained assets 是否点名。
 3. dropped stale writers 是否点名。
-4. rollback object 是否点名。
+4. handoff carrier 是否点名。
 
 如果这四项缺任何一项，交接应视为：
 
@@ -183,7 +183,7 @@ CI 至少必须检查：
 
 在你准备宣布结构 host implementation 已落地前，先问自己：
 
-1. 宿主、CI、评审与交接是不是都先围绕 authority / recovery / rollback 判断。
+1. 宿主、CI、评审与交接是不是都先围绕 current truth / recovery / handoff 判断。
 2. 我保住的是对象真相，还是只保住了文件与目录表面。
 3. 任何一个角色现在还能不能只凭结构图或作者解释给出结论。
 4. 如果今天发生回退，我知道该退回哪个对象，而不是只知道该回退哪些文件吗。

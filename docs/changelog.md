@@ -2,6 +2,8 @@
 
 ## 2026-04-07
 
+- 本轮根仓库同步检查恢复成功：`main=origin/main=08f421bf8a35e19d32672c604101c3a4d96986c8`、`main...origin/main = 0 0`，`merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
+- 继续更新 `api/23`、`api/24`、`api/38`、`api/55`、`playbooks/16` 与 `casebooks/18`，把协议/矩阵/手册页里的旧桥接词继续压回三条 canonical chain：Prompt 线不再从 `same-world test / runtime contract` 起笔，治理线不再把 `authority source / rollback object / continuation gate` 当根对象，结构线则把首屏主语收回 `current-truth surface / recovery asset / hotspot kernel / mirror gap discipline`
 - 本轮继续更新 `api/41`、`50`、`46`、`47`、`48`、`playbooks/30` 与 `userbook/01-主线使用/01 / 02 / 05`，把 support surface、atlas 与 user-facing bridge 这三类高频页面继续从 carrier / projection / evidence field 越位中收回来：治理线里 `authority source / rollback object / continuation gate` 现在更明确只配当 `governance key / durable-transient cleanup / continuation pricing verdict` 之下的 evidence field 或 carrier，API atlas 现在统一收口到 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`，userbook 主线页则继续把 `same-world test / decision window / stable bytes` 收回更口语化的使用动作
 - 本轮根仓库同步检查再次失败：`main=cc3c4b08ad1ce10d77f71fc81bd29f5d05f0ee5d`、`origin/main=4ad3d88510e09ca4ada4ae9852241b7a15e79b33`、`main...origin/main = 22 0`；`merge --ff-only origin/main` 因根工作区存在未解决冲突而失败，因此本批次继续只在 `.worktrees/mainloop` 内推进，不触碰主工作区
 - 继续更新 `api/41`、`api/50` 与 `playbooks/30`，把治理宿主消费/Artifact 这一组里仍越位的 `authority source / rollback object / continuation gate` 收回 canonical chain：这些词现在被更明确地降回 `governance key`、`typed ask`、`decision window`、`continuation pricing` 与 `durable-transient cleanup` 之下的 carrier 或 evidence field，不再在首屏句法里冒充根对象

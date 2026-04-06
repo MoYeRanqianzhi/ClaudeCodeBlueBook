@@ -4,7 +4,7 @@
 
 1. Claude Code 的 API 全谱系到底覆盖哪些对象。
 2. 命令、工具、会话、宿主控制、远程与协作之间怎样串成一条完整链。
-3. 为什么这些 API 不是平行孤岛，而是共享同一 runtime contract。
+3. 为什么这些 API 不是平行孤岛，而是共同消费同一套请求编译、治理定价与当前真相保护链。
 4. 不同角色最小该掌握哪几条谱系。
 
 ## 0. 代表性源码锚点
@@ -38,23 +38,20 @@ Claude Code 的 API 全谱系至少有七条：
 6. Prompt / 知识 / 记忆谱系
 7. 协作与生态谱系
 
-它们共享的不是同一组函数名，而是同一套 runtime contract：
+它们共享的不是同一组函数名，而是三条正式对象链：
 
-- 有明确角色
-- 有明确能力边界
-- 有明确状态写回
-- 有明确失败与恢复语义
+1. `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
+2. `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
+3. `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
-如果把 API 全谱系前门继续压成最短公式，也只剩四句：
+如果把 API 全谱系前门继续压成最短公式，也只剩三句：
 
-1. `same-world test`
+1. Prompt 编译链
    - 哪些 API 在帮助同一个请求对象、继续对象和 handoff 对象成立。
-2. `decision window`
+2. 治理定价链
    - 哪些 API 在帮助宿主解释当前继续是否仍有制度收益。
-3. `truth ladder + consumer subset`
-   - 哪些 API 在宣布 truth，哪些只暴露宿主子集与适配器子集。
-4. `failure semantics + rollback object`
-   - 哪些 API 在宣布失败语义和回退边界，而不是只提供日志或文本结果。
+3. 当前真相证据梯度
+   - 哪些 API 在宣布 truth，哪些只暴露 consumer subset、热点内核与镜像缺口。
 
 ## 2. 命令谱系
 
@@ -147,8 +144,8 @@ Claude Code 的 API 全谱系至少有七条：
 
 如果宿主控制页还只被读成“SDK 能发什么消息”，就还没抓住这里真正值钱的东西：
 
-- 这套谱系首先在保护 `same-world test`
-- 然后在外化 `decision window`
+- 这套谱系首先在保护同一请求编译链
+- 然后在外化治理窗口与继续资格
 - 最后才在交付 UI 可见结果
 
 其中 `initialize` 特别关键，因为它会同时装配：
