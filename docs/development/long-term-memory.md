@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/01 / 04 / 05 / navigation/README` 现已继续把 canonical formulas 前推到地图页、能力边界页、功能页与跨目录页：
+  - `01` 现在更明确把源码地图前门写成 `truth ladder + failure semantics`，而不是目录树展开图。
+  - `04` 现在更明确把公开度判断压成 `existence -> current visibility -> current admission -> product promise` 与治理侧的 `externalized truth chain -> decision window -> current admission -> product promise`。
+  - `05` 现在更明确把功能/API 总览写成 `same-world test / decision window / truth ladder + failure semantics`，不再让功能表答案抢前门。
+  - `navigation/README` 现在更明确把跨目录问题先压回四条 canonical formula，再决定去哪一层找证据。
+- 新的长期结论：
+  - 地图页、能力边界页、功能页和跨目录页，是导读页之后第二批最容易把 doctrine 写回旧 visible nouns 的入口；只要它们还在用目录体感、功能表、mode 条或 usage dashboard 当首句，later maintainer 就会在这里重新学错对象。
+  - canonical formula 真正成熟时，不只要回答“怎么用”和“为什么”，还要回答“这页第一句该先用什么 noun”；也就是说，目录结构优化的深层工作，其实是持续做 visible noun discipline。
+  - `truth ladder + failure semantics` 现在已经从哲学页推进到源码地图、功能表与跨目录页；下一轮最值钱的动作是继续把它推进到能力矩阵、API README 与 remaining userbook 状态/预算页，彻底清掉旧的 `authoritative surface / adapter subset` 可见词。
 - `bluebook/02 / 03 / philosophy/76 / userbook/01-05` 现已继续把 canonical formulas 变成使用动作和 atlas 语言：
   - `02` 现在更明确要求使用层先过 `same-world test / decision window / stable bytes vs working set`，再谈技巧。
   - `03` 现在更明确把 `truth ladder + failure semantics` 写成制度设计前门，而不是只在源码质量深页出现。

@@ -2,6 +2,15 @@
 
 `navigation/` 只负责跨目录反查，不重新定义三条母线。需要权威短语与最短主线时先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)；只有当问题已经变成“我要跨目录找哪一层证据”时再留在这里。
 
+如果只先记跨目录前门的四条公式，也只记这四条：
+
+1. `same-world test`
+2. `治理先外化当前真相，再批准当前扩张`
+3. `Narrow / Later / Outside + stable bytes + working set`
+4. `truth ladder = contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface`
+
+如果一个跨目录问题还压不回这四条，它就还停在对象层或结果词层。
+
 ## 先判三件事
 
 - 先判你是在找主线宪法、证据层，还是跨目录下一跳。
@@ -40,6 +49,8 @@
   `compile -> protocolize -> preserve -> continue -> explain`
   `price -> externalize -> arbitrate -> continue-or-stop -> cleanup`
   `surface -> writeback -> freshness -> evict`
+- 如果你在判断“下一层该去哪个目录”，也先问：
+  这是 `same-world test`、`decision window`、`truth ladder`，还是 `failure semantics` 的问题。
 - [46-宿主迁移工单导航：request compiler、governance key 与 current-truth writeback 如何进入实施顺序、交接包与灰度发布](46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布.md)
   进入宿主实现、迁移、验收与收口链。
 

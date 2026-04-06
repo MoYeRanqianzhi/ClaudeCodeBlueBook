@@ -6,6 +6,12 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮主分支同步检查: 根仓库当前 `main=93bfa2889cb4c848c1db368ce83bef6c05e15876`、`origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-list --left-right --count main...origin/main` 返回 `32 0`，`origin/main` 是祖先，当前没有待拉取远端更新。根仓库本地存在未解决合并状态，`git merge --ff-only origin/main` 会被根仓库自身状态阻塞，因此本轮只记录基线，不触碰根仓库，只在 `.worktrees/mainloop` 内推进。
+- 本轮地图/能力边界前推动作: 已继续更新 `bluebook/01`、`04`、`05` 与 `navigation/README`，把 canonical formulas 从哲学页、导读页与使用页继续前推到“看地图 / 看能力边界 / 看功能表 / 跨目录反查”这四类最容易重新长回旧 visible nouns 的入口页。
+- 本轮 Prompt 侧线前推动作: `05` 与 `navigation/README` 现在更明确要求先问 `same-world test`，再谈功能和跨目录跳转；公开能力页 `04` 也已明确“源码里出现了”不等于已经合法进入模型当前可见世界。
+- 本轮治理侧线前推动作: `04` 与 `05` 现在更明确把公开度与功能判断收回到 `decision window / current admission / product promise`，并明确 mode 条、usage dashboard 与 token 百分比不是前门答案；`navigation/README` 也把 `Narrow / Later / Outside + stable bytes + working set` 收回到跨目录前门公式。
+- 本轮源码质量侧线前推动作: `01`、`04`、`05` 与 `navigation/README` 现在更明确把 `truth ladder + failure semantics` 写成入口层语言，不再让地图页、功能页和公开度页继续用结果词或旧可见主语先发明一版世界观。
+- 本轮目录结构深化结论: 当导读页、哲学页和使用页都已完成公式换代后，下一层最值钱的优化是“地图页 / 能力边界页 / 功能页 / 跨目录页”的 visible noun discipline；这些页最容易把 later maintainer 再带回目录体感、功能表和 UI 投影视角。
 - 本轮使用层/atlas 收口动作: 已继续更新 `bluebook/02`、`bluebook/03`、`philosophy/76` 与 `userbook/01-05`，把 canonical formula 继续翻译成“使用动作”和“源码 atlas visible noun discipline”，避免 later maintainer 和首次使用者在这两层重新学回结果词与旧目录词。
 - 本轮 Prompt 侧线下沉动作: `02` 现在更明确要求先让任务通过 `same-world test`，再谈使用技巧；`userbook/01-05` 现在更明确把 `/status` 读成“先确认当前会话仍在同一个宿主现场”，不再只是状态页。
 - 本轮治理侧线下沉动作: `02` 与 `userbook/01-05` 现在更明确把 `Context Usage` 读成 `decision window`，并把 `stable bytes vs working set` 和 `Narrow / Later / Outside` 前推成使用层动作，而不是只停在高阶哲学页。
