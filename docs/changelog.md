@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新 `userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断`、`13-system-init、技能提醒与 SkillTool：Claude 如何看见可用能力` 与 `15-技能发现、静态 listing 与 remote skills：为什么“relevant skills”不是技能总表`，把控制面正文第一页进一步压成最小顺序与 first reject signal：`06` 现在更明确要求先过 `same-world test -> host trust -> decision window` 再调模型和节奏；`13` 现在更明确把能力面收回 `audience -> exposure layer -> stable vs experimental -> runtime gate`；`15` 现在更明确把 `relevant skills` 收回 broad inventory / relevant subset / discover / runtime load 这条发现链
+- 本轮根仓库 `main` 同步检查再次更新为：`main=8366e20ddefd05f371cbdb2ffdfed584c175e37f`、`origin/main=ec7519566b3abf2659fb3d65899dc7d2bad983da`、`main...origin/main = 38 0`；根仓仍有未解决冲突，因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
 - 继续更新 `userbook/04-专题深潜/03-治理与安全专题`、`07-会话运营、分叉与回退专题` 与 `08-上下文接入、附件与提示编译专题`，把专题入口层已经稳定下来的三组最小顺序继续前推到正文第一页：`03` 现在更明确按 `governance key -> decision window -> failure verdict -> entrance choice` 进入；`07` 现在更明确按“同一个工作对象 -> stable bytes vs working set -> 时间线选择 -> 命令选择”进入；`08` 现在更明确按 `target -> fact carriers -> working set -> handoff` 进入，并把 Prompt 魔力直接收回到“围绕同一个工作对象持续编译稳定输入”
 - 本轮继续把目录结构优化从“专题入口同序化”推进到“专题正文第一页同序化”：用户不只在目录与入口页拿到最小顺序，也开始在高频长文的第一屏拿到 first reject signal，避免一进正文就退回功能表、聊天记录误读或长 prompt 误读
 - 本轮根仓库 `main` 同步检查结果更新为：`main=efca1092e8bb3ab5da4f65fdc7d615cf502d3493`、`origin/main=ec7519566b3abf2659fb3d65899dc7d2bad983da`；`fetch` 成功，但根仓库 `main` 比远端超前 `14` 个提交且存在未解决 index，无法安全执行 `merge --ff-only origin/main`，因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
