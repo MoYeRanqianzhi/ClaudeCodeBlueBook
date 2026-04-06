@@ -17,3 +17,4 @@
 - [15-Remote Control 链接、二维码与 ID 索引.md](./15-Remote%20Control%20%E9%93%BE%E6%8E%A5%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E4%B8%8E%20ID%20%E7%B4%A2%E5%BC%95.md)
 - [16-Remote Control 入口矩阵索引.md](./16-Remote%20Control%20%E5%85%A5%E5%8F%A3%E7%9F%A9%E9%98%B5%E7%B4%A2%E5%BC%95.md)
 - [17-Remote Session Client、Viewer 与 Bridge Host 索引.md](./17-Remote%20Session%20Client%E3%80%81Viewer%20%E4%B8%8E%20Bridge%20Host%20%E7%B4%A2%E5%BC%95.md)
+- [18-Remote 权限响应、控制请求与命令白名单索引.md](./18-Remote%20%E6%9D%83%E9%99%90%E5%93%8D%E5%BA%94%E3%80%81%E6%8E%A7%E5%88%B6%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%91%BD%E4%BB%A4%E7%99%BD%E5%90%8D%E5%8D%95%E7%B4%A2%E5%BC%95.md)

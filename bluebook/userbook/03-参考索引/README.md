@@ -29,6 +29,7 @@
 25. 为什么 remote-control 的链接、二维码与 ID 不是同一种定位符。
 26. 为什么 remote-control 的会内开桥、启动带桥与 standalone host 不是同一种入口。
 27. 为什么 remote session client、viewer 与 bridge host 不是同一种远程工作流。
+28. 为什么远端的权限提示、会话控制与命令白名单不是同一种控制合同。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

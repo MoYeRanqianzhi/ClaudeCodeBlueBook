@@ -46,6 +46,8 @@
   [05-控制面深挖/27-remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81--remote-control%E3%80%81claude%20remote-control%20%E4%B8%8E%20Remote%20Callout%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E4%BC%9A%E5%86%85%E5%BC%80%E6%A1%A5%E3%80%81%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%A1%A5%E4%B8%8E%20standalone%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%85%A5%E5%8F%A3.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/27-remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81--remote-control%E3%80%81claude%20remote-control%20%E4%B8%8E%20Remote%20Callout%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E4%BC%9A%E5%86%85%E5%BC%80%E6%A1%A5%E3%80%81%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%A1%A5%E4%B8%8E%20standalone%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%85%A5%E5%8F%A3.md)
 - 分清 remote session client、viewer 与 bridge host 为什么不是同一种远程工作流：
   [05-控制面深挖/28-remote%20%E4%BC%9A%E8%AF%9D%E3%80%81session%20%E5%91%BD%E4%BB%A4%E3%80%81assistant%20viewer%20%E4%B8%8E%20remote-safe%20commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E4%BC%9A%E8%AF%9D%20client%E3%80%81viewer%20%E4%B8%8E%20bridge%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C%E6%B5%81.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/28-remote%20%E4%BC%9A%E8%AF%9D%E3%80%81session%20%E5%91%BD%E4%BB%A4%E3%80%81assistant%20viewer%20%E4%B8%8E%20remote-safe%20commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E4%BC%9A%E8%AF%9D%20client%E3%80%81viewer%20%E4%B8%8E%20bridge%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C%E6%B5%81.md)
+- 分清远端的权限提示、会话控制与命令白名单为什么不是同一种控制合同：
+  [05-控制面深挖/29-Bridge%20Permission%20Callbacks%E3%80%81Control%20Request%20%E4%B8%8E%20Bridge-safe%20Commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E7%9A%84%E6%9D%83%E9%99%90%E6%8F%90%E7%A4%BA%E3%80%81%E4%BC%9A%E8%AF%9D%E6%8E%A7%E5%88%B6%E4%B8%8E%E5%91%BD%E4%BB%A4%E7%99%BD%E5%90%8D%E5%8D%95%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%8E%A7%E5%88%B6%E5%90%88%E5%90%8C.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/29-Bridge%20Permission%20Callbacks%E3%80%81Control%20Request%20%E4%B8%8E%20Bridge-safe%20Commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E7%9A%84%E6%9D%83%E9%99%90%E6%8F%90%E7%A4%BA%E3%80%81%E4%BC%9A%E8%AF%9D%E6%8E%A7%E5%88%B6%E4%B8%8E%E5%91%BD%E4%BB%A4%E7%99%BD%E5%90%8D%E5%8D%95%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%8E%A7%E5%88%B6%E5%90%88%E5%90%8C.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：
@@ -179,5 +181,6 @@
 - bridge 的链接、二维码与定位符边界
 - remote-control 的入口矩阵边界
 - remote session client、viewer 与 bridge host 的边界
+- remote 的权限响应、会话控制与命令合同边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
