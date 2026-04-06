@@ -132,17 +132,6 @@
 - 插件、MCP、技能、Hooks 与 Agents 运维
 - CLI 根入口、旗标与启动模式
 - 会外控制台与会内面板
-- 连接入口、桥接会话与宿主健康检查
-- 设置面板、诊断屏与运营命令
-- 命令对象、执行语义与可见性
-- 技能来源、可见性与触发
-- system-init、技能提醒与 SkillTool
-- 来源信任、Trust Dialog 与 plugin-only policy
-- 技能发现、static listing 与 remote skills
-- hooks 的加载、注册、执行与 UI
-- MCP 配置、按名解析与 Agent 引用
-- 插件安装、待刷新与当前会话激活
-- 插件自动物化、Startup Trust 与 Headless 刷新
 
 适合已经知道自己要完成什么工作，并准备读长文专题的读者。
 
@@ -155,6 +144,11 @@
 - compact / resume / memory 的控制面
 - agent / task / team / cron 的控制面
 - 入口决策树
+- status / doctor / usage 的运行时自检面
+- add-dir 的工作面扩张与 sandbox 刷新
+- rename / export 的会话对象化与交付
+- release-notes / feedback 的版本证据与反馈回路
+- 设置面板、诊断屏与运营命令的三层分工
 - slash command 的对象、执行与可见性边界
 - skills 的来源、暴露面与触发边界
 - Claude 如何看见可用能力
