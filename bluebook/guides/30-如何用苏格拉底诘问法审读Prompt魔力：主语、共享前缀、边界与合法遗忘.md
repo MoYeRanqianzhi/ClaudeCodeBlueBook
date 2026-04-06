@@ -1,4 +1,4 @@
-# 如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘
+# 如何用苏格拉底诘问法审读Prompt魔力：message lineage、projection boundary与lawful forgetting
 
 这一章不再解释 Prompt 为什么强，而是把“怎么审它是否真的强”压成一套 builder-facing 审读框架。
 

@@ -1,4 +1,4 @@
-# 如何用苏格拉底诘问法审读安全与省Token：输入边界、决策增益与可撤销自动化
+# 如何用苏格拉底诘问法审读安全与省Token：governance key、durable assets与continuation qualification
 
 这一章不再解释安全与省 token 为什么要一起看，而是把“怎么审它是否真的成立”压成一套 builder-facing 框架。
 

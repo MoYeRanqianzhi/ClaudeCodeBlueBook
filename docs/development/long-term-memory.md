@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `guides/30 / guides/31 / guides/99 / playbooks/30 / playbooks/36 / playbooks/77` 已继续把页面可见标题与正文对象链对齐：
+  - Prompt 线标题现在显式前置 `message lineage`、`projection boundary` 与 `lawful forgetting`。
+  - 治理线标题现在显式前置 `governance key`、`durable assets` 与 `continuation qualification`。
+  - 验证与执行页标题不再停在旧的 `authority source` 或泛化 Prompt 词汇。
+- 新的长期结论：
+  - 当正文对象链已经换代后，如果页面标题仍停在旧词，目录层就会继续制造“入口比正文落后一代”的错觉；标题对齐本身也是目录治理的一部分。
 - `bluebook/README / playbooks/README / navigation/README / security/README / risk/README / philosophy/README` 已继续把目录入口与跨目录路由拉平到最新对象链：
   - `playbooks/README` 现已把 Prompt / 治理 / 结构三条执行链写成稳定入口，不再主要靠旧的单线 Prompt 代表页带路。
   - `navigation/README` 现已把 `46 -> 29/30/31 -> 35/36/37 -> 65/66/67 -> 77/78/79` 固定成三条执行深链，减少读者自己拼手册顺序。

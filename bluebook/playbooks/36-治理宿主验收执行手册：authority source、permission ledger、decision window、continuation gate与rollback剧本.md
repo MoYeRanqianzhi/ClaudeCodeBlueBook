@@ -1,4 +1,4 @@
-# 治理宿主验收执行手册：authority source、permission ledger、decision window、continuation gate与rollback剧本
+# 治理宿主验收执行手册：governance key、permission ledger、decision window、continuation gate与rollback剧本
 
 这一章不再解释治理宿主验收协议该消费哪些字段，而是把 Claude Code 式治理验收压成一张可持续执行的验收手册。
 

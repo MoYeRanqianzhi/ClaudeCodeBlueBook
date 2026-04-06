@@ -1,4 +1,4 @@
-# 治理宿主接入审读手册：authority source、decision window、pending action与rollback object排查
+# 治理宿主接入审读手册：governance key、decision window、pending action与rollback object排查
 
 这一章不再解释统一定价治理为什么重要，而是把它压成一张可持续执行的宿主接入审读手册。
 

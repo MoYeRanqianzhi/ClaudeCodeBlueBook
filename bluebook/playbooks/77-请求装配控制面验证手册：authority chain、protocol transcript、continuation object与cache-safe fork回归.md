@@ -1,4 +1,4 @@
-# 请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归
+# 请求装配控制面验证手册：message lineage、protocol transcript、continuation object与cache-safe fork回归
 
 这一章不再解释 Prompt 魔力为什么成立，而是把 `architecture/82`、`philosophy/84` 与 `guides/99` 继续压成一张长期运行里的验证手册。
 
