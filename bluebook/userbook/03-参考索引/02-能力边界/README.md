@@ -44,3 +44,4 @@
 - [42-Remote Control task_started、task_progress、task_notification 与 session_state_changed 索引.md](./42-Remote%20Control%20task_started、task_progress、task_notification%20与%20session_state_changed%20索引.md)
 - [43-Remote Control transport rebuild、initial flush、flush gate 与 sequence resume 索引.md](./43-Remote%20Control%20transport%20rebuild、initial%20flush、flush%20gate%20与%20sequence%20resume%20索引.md)
 - [44-Remote Control received、processed、write cursor、echo dedup 与 replay dedup 索引.md](./44-Remote%20Control%20received、processed、write%20cursor、echo%20dedup%20与%20replay%20dedup%20索引.md)
+- [45-Remote Control can_use_tool、control_response、control_cancel_request、result 与 state handoff 索引.md](./45-Remote%20Control%20can_use_tool、control_response、control_cancel_request、result%20与%20state%20handoff%20索引.md)
