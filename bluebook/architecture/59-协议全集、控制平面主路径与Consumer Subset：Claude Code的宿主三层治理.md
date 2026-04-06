@@ -197,6 +197,8 @@ bridge 会先在 `handleIngressMessage(...)` 里把：
 
 各自消费 runtime 真相的方式里。
 
+`worker_status / external_metadata` 也不是第二套当前真相，而是 current-truth writeback 面向不同消费者的诚实子集。
+
 ## 5. 为什么这不是缩水，而是治理分层
 
 如果没有这三层，系统只会落进两种坏结果：

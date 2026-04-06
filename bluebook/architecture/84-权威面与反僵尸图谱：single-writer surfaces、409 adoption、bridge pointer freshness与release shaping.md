@@ -1,4 +1,4 @@
-# 权威面与反僵尸图谱：current-truth surface、recovery asset non-sovereignty、freshness gate与ghost capability
+# 权威面与反僵尸图谱：current-truth surface、current-truth writeback、recovery asset non-sovereignty、freshness gate与ghost capability
 
 这一章回答五个问题：
 

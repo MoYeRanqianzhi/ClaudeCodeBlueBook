@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `03-设计哲学 / guides/102 / architecture/84 / architecture/59` 现已继续把 current-truth doctrine 的残留压平修掉：
+  - `03` 现在更明确把 `transcript` 写成事件线真相，把 `state writeback` 写成宿主当前真相面，不再让两者共挤一个“系统真相”标题。
+  - `102` 现在更明确把 `authoritative surface candidate` 视为公开镜像里的中间判断层，并补出 sole writer、writeback path、freshness gate 与 eviction rule 作为必须保留的 unknown。
+  - `84` 现在更明确把 `current-truth writeback` 提升进标题层。
+  - `59` 现在更明确说明 `worker_status / external_metadata` 是 current-truth writeback 面向不同消费者的诚实子集，而不是第二套当前真相。
+- 新的长期结论：
+  - current-truth 线真正成熟时，必须把“事件线真相”和“当前真相面”拆开写；否则 later maintainer 很容易重新让 transcript replay 冒充 present truth。
+  - 公开镜像研究真正成熟时，`authoritative surface candidate` 这种中间层是必要的；它让研究者可以诚实地写“我看到 sole writer 候选了，但还没资格宣布 current-truth surface 已被完整证明”。
 - `03-设计哲学 / architecture/83 / api/52 / guides/102` 现已继续把治理线和源码质量线的中层词压回更硬对象：
   - `03` 现在更明确把“安全、成本与体验”写成 canonical governance chain 的三种外观，而不再让“预算器”继续占主语位。
   - `83` 现在更明确补出治理链 runtime 对照表，把 canonical node、runtime seam、host-facing read 与常见误读钉在同一张表里。

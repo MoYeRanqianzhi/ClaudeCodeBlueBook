@@ -134,7 +134,7 @@ contract 和 registry 都还不够。
 
 - 当前谁有权宣布 present truth
 
-在证据足够时，这就是 `current-truth surface`；在公开镜像证据还不够时，至少也要先把它写成 `authoritative surface candidate`，而不是让 UI 投影、恢复路径或适配层缓存冒充主权真相。
+这里的 `authoritative surface`，更准确地说是 `current-truth surface`：不是谁更重要，而是当前哪条 surface 被允许写当前真相。若 sole writer、writeback path 与 freshness guard 还没锁定，就不能宣布这层真相已经成立；在公开镜像里，这时最多只能先把它记成 `authoritative surface candidate`。
 
 典型信号包括：
 
@@ -162,7 +162,7 @@ contract 和 registry 都还不够。
 
 - protocol full set vs consumer subset
 
-因为协议全集里声明存在的能力，不等于每个 adapter、每个 host、每个入口都真的实现了它。`adapter subset` 只是 `consumer subset` 的一种具体形态。
+因为协议全集里声明存在的能力，不等于每个 adapter、每个 host、每个入口都真的实现了它。`adapter subset` 只是 `consumer subset` 的一种具体形态；`worker_status / external_metadata`、resume path 与 search layer 也都在消费同一 runtime truth 的诚实子集。
 
 `bridgeMain` 明写 linear subset，remote / headless / REPL 又各有不同支持面。
 
@@ -227,6 +227,8 @@ contract 和 registry 都还不够。
 1. 缺失模块里一定还藏着什么“更完整实现”
 2. 测试体系一定如何组织
 3. feature-gated 能力在内部是否都和公开树同构
+
+公开镜像最该保留的 unknown，不是“内部也许还有更多实现”，而是 sole writer、writeback path、freshness gate 与 eviction rule 是否可见；这些证据不可见时，只能写 unknown，不能从 replay asset、UI snapshot 或 adapter cache 反推 current truth。
 
 gap discipline 的价值不是“保守一点”，而是：
 
