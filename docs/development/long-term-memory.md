@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `philosophy/69-73` 现已继续把 artifact / validator / rule ABI / evaluator / replay 这一组中层哲学页对齐到当前高阶主语：
+  - Prompt 线现在统一固定为 `request compiler -> message lineage -> stable bytes -> continuation qualification`。
+  - 治理线现在统一固定为 `externalized truth chain -> decision window -> continuation pricing`。
+  - 当前真相线现在统一固定为 `current-truth surface -> current-truth writeback -> freshness gate -> rollback object`。
+  - 五页都已补出更短公式与第一条 `reject signal` 的苏格拉底自检，避免旧中层对象词在哲学页重新回流。
+- 新的长期结论：
+  - 当 `09 / 05 / 15 / 41` 与目录首页已经稳定后，下一层最容易让 doctrine 回退的往往不是总论页，而是 artifact / rule / replay 这类中层哲学页；它们如果不直接共用当前三条母线主语，later maintainer 就会在“共享对象/拒收语义/回放”这层重新学回旧世界观。
+  - Prompt 魔力继续往下压时，最稳的审题不是“prompt 强不强”，而是 `same-world test`：`request compiler` 是否让世界在 compact / handoff / replay 后仍保持同一 `message lineage`、`stable bytes` 与 `continuation qualification`。
+  - 安全与省 token 继续往下压时，最稳的短公式不是 compact 技巧，而是 `Narrow / Later / Outside + stable bytes + working set`；只要一项检查已经不能再带来 decision gain，它本身就是免费扩张。
+  - 源码质量继续往下压时，最稳的 truth ladder 可继续固定成 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface`；这比“API vs 实现”更适合长期约束 later maintainer 的阅读顺序。
 - `06 / 07 / navigation/41 / navigation/README` 现已继续把高阶前门和总论页压到更短的总公式：
   - `06` 现在更明确把三条母线继续压成三条最短动作链，而不只停在四个跨平面函数。
   - `07` 现在更明确把治理线写成“先外化当前真相，再批准当前扩张”，并补出“没有决策增益的检查，本身就是免费扩张”。
