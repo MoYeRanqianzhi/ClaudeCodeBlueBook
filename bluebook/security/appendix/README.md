@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 195 篇速查文档。
+`appendix/` 当前包含 201 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -228,6 +228,24 @@
 - `195`
   载体家族强请求清理step-up重授权治理与强请求清理续打治理分层。
   入口：[195-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：step-up reauthorization decision、same-request continuation decision、auth success ceiling与governor question](195-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：step-up reauthorization decision、same-request continuation decision、auth success ceiling与governor question.md)。
+- `196`
+  载体家族强请求清理续打治理与强请求清理完成治理分层。
+  入口：[196-安全载体家族强请求清理续打治理与强请求清理完成治理分层速查表：continuation decision、completion decision、result settlement与governor question](196-安全载体家族强请求清理续打治理与强请求清理完成治理分层速查表：continuation decision、completion decision、result settlement与governor question.md)。
+- `197`
+  载体家族强请求清理完成治理与强请求清理终局治理分层。
+  入口：[197-安全载体家族强请求清理完成治理与强请求清理终局治理分层速查表：completion scope、finality scope、readback evidence与governor question](197-安全载体家族强请求清理完成治理与强请求清理终局治理分层速查表：completion scope、finality scope、readback evidence与governor question.md)。
+- `198`
+  载体家族强请求清理终局治理与强请求清理遗忘治理分层。
+  入口：[198-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层速查表：finality scope、forgetting gate、retained memory与governor question](198-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层速查表：finality scope、forgetting gate、retained memory与governor question.md)。
+- `199`
+  载体家族强请求清理遗忘治理与强请求清理免责释放治理分层。
+  入口：[199-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层速查表：forgetting gate、liability-release gate、compensate-or-refuse与governor question](199-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层速查表：forgetting gate、liability-release gate、compensate-or-refuse与governor question.md)。
+- `200`
+  载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层。
+  入口：[200-安全载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层速查表：liability-release decision、archive-close surface、positive control、cleanup archive gap与governor question](200-安全载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层速查表：liability-release decision、archive-close surface、positive control、cleanup archive gap与governor question.md)。
+- `201`
+  载体家族强请求清理归档关闭治理与强请求清理审计关闭治理分层。
+  入口：[201-安全载体家族强请求清理归档关闭治理与强请求清理审计关闭治理分层速查表：archive-close surface、audit-close surface、replay-debug-diag与governor question](201-安全载体家族强请求清理归档关闭治理与强请求清理审计关闭治理分层速查表：archive-close surface、audit-close surface、replay-debug-diag与governor question.md)。
 
 ## 怎么配合主线读
 
