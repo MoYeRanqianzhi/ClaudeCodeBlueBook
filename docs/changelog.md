@@ -3,6 +3,7 @@
 ## 2026-04-07
 
 - 本轮根仓库同步再次确认：`main=origin/main=20a0f55113c7e1c69bf4eca1f1041caeca8e79bb`、`rev-list --left-right --count main...origin/main = 0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
+- 继续更新 `architecture/README`、`guides/README`、`playbooks/README` 与 `casebooks/README`，把这轮“发言权限 / 申诉链” doctrine 继续下沉到各专题目录入口：`architecture` 现在更明确暴露对象链、truth planes、writeback seam 与 retreat layer 这些 later maintainer 可据以反对的结构面；`guides` 现在更明确只把反对权压成问题梯子和模板；`playbooks` 现在更明确只对已承认对象链出 verdict；`casebooks` 现在更明确只保存最像成功、最会夺走 later maintainer 局部反对权的伪证样本
 - 继续更新 `philosophy/README` 与 `navigation/04`，把这一轮 future-maintainer doctrine 正式回写到目录入口层：`philosophy/README` 现在更明确新增 `80 -> 59 -> 53 -> 87` 这条 “future maintainer / local opposability / refactor capital” 专题入口；`navigation/04` 则把目录职责进一步压成“发言权限与申诉链”，明确 `philosophy / architecture / api / guides / playbooks / casebooks / navigation / docs` 各自只负责哪一种发言权，避免目录继续长出第二叙述者
 - 继续更新 `philosophy/README` 与 `navigation/05`，把目录入口层再压强一层：`future maintainer = formal consumer` 现在已被直接写进哲学专题前门；`navigation/05` 现在则更明确把源码质量线收口成 `local opposability + refactor capital`，并补出“发言权限表不是排版纪律，而是 later maintainer 的正式反对位阶”
 - 继续更新 `philosophy/80`、`59` 与 `53`，把“未来维护者是正式消费者”“始终保留重构可能性”继续压成更硬的验收条件：later maintainer 现在更明确被写成必须拥有 `局部可反对性`，即不追完整仓实现也能指出越权写回、truth-plane 越位与第一退回层；重构可能性也被更明确写成一组可积累资本，而不再只是结构愿景

@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `architecture/README`、`guides/README`、`playbooks/README` 与 `casebooks/README` 现已继续把“发言权限 / 申诉链” doctrine 下沉到各专题入口：
+  - `architecture/README` 现在应长期记住：它不只是对象库存入口，而是 later maintainer 局部可反对性的结构入口；后续若架构专题入口还不能直接暴露 `authority surface / truth planes / writeback seam / retreat layer`，则视为入口写浅。
+  - `guides/README` 现在应长期记住：它只把反对权压成问题梯子与模板，不替正文判必要性，也不替 `playbooks/` 发 verdict。
+  - `playbooks/README` 现在应长期记住：它的职责是对已承认对象链出 verdict，而不是回头解释为什么这样设计。
+  - `casebooks/README` 现在应长期记住：它保存的是最会骗走 later maintainer 局部反对权的伪证样本，而不是“更吓人的故事”。
 - `philosophy/README` 与 `navigation/04` 现已把 future-maintainer 线继续推进到目录入口层：
   - `philosophy/README` 现在应长期记住：源码质量线不只从 `86 / 87` 进入，也应显式开放 `80 -> 59 -> 53 -> 87` 这条 future-maintainer / local opposability / refactor capital 专题链。后续若目录入口还只会把源码先进性导向 current-truth / temporal honesty，而不暴露 later maintainer 的局部可反对性，也应视为入口写浅。
   - `navigation/04` 现在应长期记住：目录职责最好继续按“发言权限与申诉链”来判，而不只按主题分层来判。`philosophy` 判必要性，`architecture` 证对象链，`api` 定承认面，`guides / playbooks` 分别出问题梯子与 verdict，`navigation` 只路由，`docs` 只存记忆；任何目录一旦越权代言，仓库就会长出第二叙述者。

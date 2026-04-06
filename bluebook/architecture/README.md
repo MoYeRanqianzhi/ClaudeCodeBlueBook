@@ -7,11 +7,16 @@
 
 - 源码先进性不是文件更小，而是把复杂度收进合法复杂度中心，把 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 落成正式对象、状态机与 choke point，并用它们保护 `one writable present`。
 
+这里还要再多记一句：
+
+- `architecture/` 真正值钱的，不只是把对象链列出来，而是把 later maintainer 的局部可反对性落成可见的 `authority surface / truth planes / current-truth writeback / retreat layer`。
+
 ## 什么时候进来
 
 - 当你已经知道某条高阶判断成立，但还没回答“它到底落成了哪些正式对象、状态机与 choke point”。
 - 当你需要把 Prompt、治理或当前真相保护继续压到运行时结构，而不是停在哲学判断或模板层。
 - 当你准备审读源码结构先进性，却不想把它误读成目录观感。
+- 当你需要知道“谁在声明现在、谁只在讲时间线、第一退回层先落哪”，而不想把这些问题混成 UI 体感或作者说明。
 
 ## 如果你只先判断一件事
 
@@ -24,6 +29,9 @@
 - 如果你只先判断“源码先进性到底该怎样判”，从 `44 -> 55 -> 63 -> 84` 进入。
   - 最短顺序：`contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
   - 失败信号：还在先谈“目录更整齐 / 文件更小 / 热点文件更大或更小”，而没先点名合法复杂度中心、`one writable present` 与第一条 reject path。
+- 如果你只先判断“future maintainer 在结构层到底拿什么正式反对当前实现”，从 `60 -> 63 -> 69 -> 72 -> 84` 进入。
+  - 最短顺序：`authority surface -> truth planes -> writeback seam -> danger surface -> retreat layer`
+  - 失败信号：later maintainer 还必须追全仓、追作者或靠日志回放猜 authority。
 
 ## 八个平面
 
@@ -65,9 +73,12 @@
 - 本目录也不负责值班、验收、回退与长期 reopen 执行链。
 - 如果你还在问“为什么必须这样设计”或“第一条反证信号是什么”，先回 `../navigation/15` 与 `../navigation/41`。
 
+更准确地说，`architecture/` 负责把对象链、chokepoint 与 current-truth writeback 说清，但不负责替 `playbooks/` 直接发 verdict，也不替 `philosophy/` 重判为什么必须如此。
+
 ## 维护约定
 
 - README 只描述运行时平面和推荐起点，未单列文档仍属于对应平面的延伸。
 - README 只负责对象与结构前门，不和 `05 / 15 / 41` 抢高阶 judgment map，也不和 `api/` 抢 contract truth。
+- README 应优先暴露 later maintainer 能直接据此提出反对的对象与 seams，而不是先暴露目录体感或功能库存。
 - 需要字段、接口与宿主契约时，回到 [../api/README.md](../api/README.md)。
 - 需要跨专题反查时，回到 [../navigation/README.md](../navigation/README.md)。

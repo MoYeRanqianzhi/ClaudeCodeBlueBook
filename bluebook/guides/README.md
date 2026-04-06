@@ -6,6 +6,10 @@
 本 README 只保留 `guides/` 的稳定入口与任务分流；跨目录执行链统一由 [../navigation/README.md](../navigation/README.md) 承担。
 其中源码质量线现在固定分成两种模板：`101` 只审 `one writable present`，`102` 只做公开镜像证据梯度。
 
+这里还要再多记一句：
+
+- `guides/` 不替正文宣布真相，它只把 later maintainer 的反对权压成问题梯子、模板与检查表。
+
 ## 什么时候进来
 
 - 当你想先学会用 Claude Code，而不是先背对象链。
@@ -13,6 +17,7 @@
 - 当你准备把 `world entry / request assembly / six-stage assembly chain`、治理或当前真相保护判断落成宿主实现、迁移和验证前的手册。
 - 当你需要在公开镜像条件下，把源码质量判断压成可执行方法而不是目录体感。
 - 当你已经接受 `09 / 05 / 15 / 41` 这组高阶主语，准备把它们压成真正能执行的 checklist 与 matrix。
+- 当你需要把“局部可反对性 / refactor capital / truth-plane discipline”翻成能执行的审读动作，而不想只停在价值判断。
 
 ## 如果你只先判断一件事
 
@@ -28,6 +33,8 @@
   - 失败信号：还在用更强 prompt、更严权限、更漂亮目录这种结果词替代 `one writable present` 与 later maintainer reject order。
 - 如果你只先判断“怎样给公开镜像做源码质量证据分级”，从 [102-如何给公开镜像做源码质量证据分级：contract、registry、current-truth surface、consumer subset 与 mirror gap discipline](102-%E5%A6%82%E4%BD%95%E7%BB%99%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E5%81%9A%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7%EF%BC%9Acontract%E3%80%81registry%E3%80%81authoritative%20surface%E3%80%81adapter%20subset%E4%B8%8Ehotspot%20gap%20discipline.md) 进入。
   - 失败信号：还在靠热点文件体感、目录整齐度和作者光环做判断，还没按 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 点名证据断口。
+- 如果你只先判断“怎样把 future maintainer 的局部可反对性压成模板”，先从 `101 -> 102` 进入，再回 `../philosophy/80 / 59 / 53` 校正主语。
+  - 失败信号：模板还在帮读者理解作者，而不是帮 later maintainer 正式指出 authority、truth plane、danger surface 与第一退回层。
 
 ## 这里不回答什么
 
@@ -40,5 +47,6 @@
 
 - README 只保留判断式入口与稳定起点，不再展开长链路由。
 - README 只负责把判断压成模板，不和 `05 / 15 / 41` 抢高阶前门职责。
+- README 只提供问题梯子与模板，不代替 `playbooks/` 发 verdict，不代替 `philosophy/` 重判必要性。
 - 需要失败样本时，回到 [../casebooks/README.md](../casebooks/README.md)。
 - 需要运行手册和演练脚本时，回到 [../playbooks/README.md](../playbooks/README.md)。

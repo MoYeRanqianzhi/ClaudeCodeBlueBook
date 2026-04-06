@@ -3,6 +3,8 @@
 ## 2026-04-07 本轮增量
 
 - 本轮根仓库同步再次确认: 根仓库当前 `main=origin/main=20a0f55113c7e1c69bf4eca1f1041caeca8e79bb`，`rev-list --left-right --count main...origin/main` 返回 `0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本轮继续严格维持“先检查、再只写 worktree”的节奏。
+- 本轮专题目录 README 深化动作: 已继续更新 `architecture/README`、`guides/README`、`playbooks/README` 与 `casebooks/README`。这一批目录入口不再只是“这个目录收什么”，而开始明确自己给 later maintainer 分配哪种权力：`architecture` 负责暴露 authority surface、truth planes、writeback seam 与 retreat layer；`guides` 负责把局部可反对性压成问题梯子与模板；`playbooks` 负责对已承认对象链发正式 verdict；`casebooks` 负责保存最像成功、最会骗走 later maintainer 局部反对权的伪证样本。
+- 本轮新的目录结构结论: 目录成熟度现在进一步从“发言权限表”推进到“申诉链闭环”。也就是说，later maintainer 现在不只知道谁在说话，还更容易知道：该去哪里取对象证据、该去哪里拿问题梯子、该去哪里拿 verdict、该去哪里识别伪证。目录优化因此不再只是阅读体验问题，而是在替未来反对权预铺正式路径。
 - 本轮目录入口深化动作: 已继续更新 `philosophy/README` 与 `navigation/04`。这批修改不再让 future-maintainer doctrine 只停在专题正文里，而是把它推进到目录层：`philosophy/README` 现在更明确新增“为什么 future maintainer 不只是读者，而是正式消费者”的专题入口链 `80 -> 59 -> 53 -> 87`；`navigation/04` 现在则把目录职责从“证据梯度分工”进一步压成“发言权限与申诉链”，明确哪一层判必要性、哪一层证对象链、哪一层定承认面、哪一层出 verdict、哪一层只路由、哪一层只存记忆。
 - 本轮新的目录结构结论: 目录真正成熟时，不只是每层职责不同，而是每层拥有不同的发言权限。只要某一层开始替另一层越权代言，仓库就会立刻长出第二叙述者，later maintainer 也就失去正式申诉入口。这让目录优化继续从“分层正确”推进到“发言权正确”。
 - 本轮目录入口再收口动作: 已继续更新 `philosophy/README` 与 `navigation/05`。这一批把 future-maintainer 线直接抬进专题前门：`future maintainer = formal consumer` 现在不再只埋在 `80 / 59 / 53` 正文里，而是成为哲学专题对源码质量线的入口总括；源码质量线在 `05` 里也更明确被压成 `local opposability + refactor capital`，并把“发言权限表 = later maintainer 的反对位阶”写成目录层的一句硬判断。
