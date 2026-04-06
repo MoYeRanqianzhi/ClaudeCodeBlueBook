@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮正文去记忆化动作: 已继续更新 `00 / 01 / 06 / README / guides/06`，把主线前门、结构前门与第一性原理实践里直接点名 `docs/` 分工、轮次推进、changelog / 研究日志 / 长期记忆 的元叙事，收回成“独立附录载体”“证据归档”与“继续资格”这类稳定正文表达。
+- 本轮正文边界判断加固: 真正需要从正文移走的，不是一切提到 memory 的句子，而是那些把读者直接带到作者工作台、提交节奏与记忆仓库分工的句子；反过来说，作为 runtime 对象存在的 memory / continuation / evidence 仍应留在正文。
 - 本轮更深协议标题债推进动作: 已继续更新 `api/79 / 90 / 91 / 93`，把治理 / Prompt 更深一层 rewrite 与 refinement protocol 页的可见主语和开头对象链从 `authority source / authority chain / compiled request truth` 收回到 `governance key / typed ask ledger / decision window / continuation pricing` 与 `message lineage / role-contract custody / protocol transcript / continuation qualification`。
 - 本轮更深协议判断加固: 进入这一层之后，最危险的不再是正文偶尔仍带旧词，而是 H1、前五问与“先说结论”对象名继续把 later maintainer 先带回旧协议世界；因此这批仍以 visible root 与 opening object chain 为先，不扩正文中段。
 - 本轮深协议标题债推进动作: 已继续更新 `api/81 / 82 / 87 / 88`，把 Prompt / 治理 rewrite / refinement 协议页的可见主语从 `compiled request truth / authority chain / authority source restitution` 收回到 `message lineage / governance key / typed ask ledger`。

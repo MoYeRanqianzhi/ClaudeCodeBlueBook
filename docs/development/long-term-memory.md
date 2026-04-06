@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `00 / 01 / 06 / README / guides/06` 现已继续把正文里的元叙事和记忆仓库分工收口：
+  - `00 / README` 现已不再把 `docs/` 直接写成“上一轮推进到哪”的工作台入口，而改写成方法附录、证据归档与目录治理记录。
+  - `01` 现已把 `query` 主循环的表述从“直到本轮无需继续”收回到 `continuation qualification` 语义。
+  - `06 / guides/06` 现已把 `docs/`、changelog、研究日志与长期记忆 这些载体名，改写成独立附录、共享 artifact、长期规则载体与推进记录等稳定类别。
+- 新的长期结论：
+  - 正文去记忆化真正该清理的，不是所有提到 memory / continue / evidence 的句子，而是那些把读者拉到作者工作台、提交节奏与记忆仓库分工的元叙事句子。
+  - 同一句话里只要同时出现“本轮/下一批/研究日志/changelog/长期记忆”这类推进载体与正文主判断，就很容易让主线退化成工作台；更稳的写法应把它们压回“继续资格”“证据归档”“独立附录”这类可复用对象。
 - `api/79 / 90 / 91 / 93` 现已把更深一层 rewrite / refinement protocol 页继续收口：
   - `79 / 91` 现已把治理深协议可见主语从 `authority source / authority chain` 收回到 `governance key / typed ask ledger / decision window / continuation pricing`。
   - `90 / 93` 现已把 Prompt 深协议可见主语从 `authority chain / compiled request truth` 收回到 `message lineage / role-contract custody / protocol transcript / continuation qualification`。

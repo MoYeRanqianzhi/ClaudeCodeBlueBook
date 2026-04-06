@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `00 / 01 / 06 / README / guides/06` 的正文边界，把直接写入正文的 `docs/` 分工、轮次推进、changelog / 研究日志 / 长期记忆 等元叙事收回成“独立附录载体”“证据归档”与“继续资格”这类稳定对象表达
 - 继续更新 `api/79 / 90 / 91 / 93` 的深协议可见主语与开头对象链，把治理 / Prompt 更深一层 rewrite 与 refinement protocol 页从 `authority source / authority chain / compiled request truth` 的旧协议词收回到 `governance key / typed ask ledger / decision window / continuation pricing` 与 `message lineage / role-contract custody / protocol transcript / continuation qualification`
 - 继续更新 `api/81 / 82 / 87 / 88` 的深协议可见标题与开头主语，把 Prompt / 治理的 rewrite / refinement 协议页从 `compiled request truth / authority chain / authority source restitution` 的旧协议主语收回到 `message lineage / governance key / typed ask ledger` 的当前对象链
 - 继续更新 `api/75 / 76` 与 `playbooks/27 / 28` 的第二层可见标题债，把 Prompt / 治理深协议和治理 / 结构验证页的可见主语分别收回到 `message lineage restitution / continuation qualification`、`governance key restitution / typed ask ledger`、`governance key / continuation pricing / rollback cleanup` 与 `authority object / recovery asset non-sovereignty`
