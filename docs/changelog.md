@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `bluebook/02`、`bluebook/03`、`philosophy/76` 与 `userbook/01-05`，把 canonical formula 进一步翻译成“使用层动作”和“源码 atlas visible noun discipline”：`02` 现在更明确要求先过 `same-world test / decision window / stable bytes vs working set` 再谈使用技巧，`03` 现在更明确把 `truth ladder + failure semantics` 写成制度设计前门，`76` 现在更明确用 `contract -> registry -> orchestration shell -> current-truth surface -> consumer subset -> danger surface` 取代旧 `authoritative surface / adapter subset`，`userbook/01-05` 现在更明确把 `/status / /usage / /add-dir` 分别收回到 same-world / decision-window / boundary-expansion 判断
 - 继续更新 `bluebook/README`、`00`、`09`、`userbook/README`、`userbook/00` 与 `userbook/01-02`，把 canonical formula 从哲学前门继续前推到蓝皮书与使用手册第一跳：Prompt 线现在在入口层就显式暴露 `same-world test`，治理线现在在入口层就显式暴露 `Context Usage = decision window` 与 `Narrow / Later / Outside + stable bytes + working set`，源码质量线现在在入口层就显式暴露 `truth ladder` 与 `failure semantics`；同时保持根 `README` 继续只做 route-only 前门
 - 继续更新 `philosophy/README`、`philosophy/84`、`philosophy/85`、`philosophy/87` 与 `navigation/41`，把哲学前门与第一性原理导航继续压成更短的 frontdoor formula：Prompt 线前置 `same-world test`，治理线前置 `治理先外化当前真相，再批准当前扩张` 与 `Narrow / Later / Outside + stable bytes + working set`，源码质量线前置 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface` 与 `failure honesty`；同时把 first reject signal 正式写进前门自检
 - 本轮根仓库 `main` 同步检查继续通过 `fetch + rev-parse + merge --ff-only origin/main` 确认无待拉取更新，`main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；因此本批次继续只在 `.worktrees/mainloop` 内推进
