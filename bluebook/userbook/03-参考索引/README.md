@@ -33,6 +33,7 @@
 29. 为什么远端会话的连接告警、后台任务、viewer ownership 与 bridge reconnect 不是同一张运行态面。
 30. 为什么 bridge 的状态词、恢复厚度与动作上限不是同一个“已恢复”。
 31. 为什么 bridge 的故障提示、当前会话停机与默认回退不是同一种关闭。
+32. 为什么 bridge 的断开、退出与恢复轨迹不是同一种收口。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
