@@ -3,6 +3,8 @@
 ## 2026-04-07 本轮增量
 
 - 本轮根仓库同步再次确认: 根仓库当前 `main=origin/main=20a0f55113c7e1c69bf4eca1f1041caeca8e79bb`，`rev-list --left-right --count main...origin/main` 返回 `0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本轮继续严格维持“先检查、再只写 worktree”的节奏。
+- 本轮 future-maintainer 线深化动作: 已继续更新 `philosophy/80`、`59` 与 `53`。这一批不再满足于“未来维护者也是正式消费者”或“好架构保留重构可能性”这类高阶总结，而是把它们压成更可执行的制度：later maintainer 现在更明确被要求拥有 `局部可反对性`，即不追完整仓实现、不等作者口头补充，仍能只凭局部 authority surface、truth planes、danger surface 与 retreat layer 直接指出哪条写回/恢复/扩张在越权，以及第一退回层该落到哪里。
+- 本轮新的结构第一性原理结论: “始终保留重构可能性”现在更明确不只是 seam 还在不在，而是今天是否已经替下一次重构留下可见 seam、可见 danger surface、可见 reject path 与制度记忆。换句话说，重构资本不再只是技术余量，而是 authority、state boundary、leaf module、注释/命名与局部可反对性共同组成的资金池。
 - 本轮专题再收口动作: 已继续更新 `navigation/05`、`philosophy/33`、`84`、`85` 与 `87`。这一批把“继续深入”从追加总结句，推进成更固定的 verdict discipline：Prompt 线现在更明确把 lawful forgetting 写成“只保留足以复现同一 `world-entry / reject-continue verdict` 的最小 witness set”，并把 `first reject signal` 继续压成固定四步顺序：`world-defining winner -> stable boundary -> transcript conflation -> continuation_story_only`；`philosophy/33` 也显式补出 `Explainability is diagnostic, not adjudicative`，防止解释层再次越位成新的 Prompt 主语。
 - 本轮治理线继续加硬: `philosophy/85` 现在更明确补出两句更接近第一性原理的话：治理价格链最早落地的地方常常不是动作执行，而是 `visible world admission`；`classifier` 也不是治理控制面之外的免费裁判，而是只有在还能改变 `verdict` 时才值得调用的定价节点。这让治理线从“谁收费”进一步推进到“哪些裁决动作自身也要被收费”。
 - 本轮结构线继续加硬: `philosophy/87` 现在更明确把 `future maintainer rejectability` 的最低标准写成“拿不到作者时，仍能只凭结构指出哪条 `event / snapshot / transport` 越权成了 authority，并立刻说出第一退回层”。这让 later maintainer 不再只是高阶修辞，而变成可执行质量门槛。

@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `philosophy/80`、`59` 与 `53` 现已继续把 future-maintainer 线压成更稳定的长期 doctrine：
+  - `future maintainer is a formal consumer` 现在应长期记住：它的最低标准不是 later maintainer 最终能看懂，而是 later maintainer 拥有 `局部可反对性`。后续凡是再写“维护者很重要”，都要先问有没有把这句话压成“不追全仓也能指出越权写回、truth-plane 越位与第一退回层”的可执行门槛。
+  - `好架构始终保留重构可能性` 现在应长期记住：这里保留的不只是 seam，而是下一次重构的资本池，包括单一权威面、state machine 的时间边界、小而硬的共享真相文件、制度记忆注释，以及 later maintainer 的局部反对权。
+  - 这也意味着，后续若某页继续把源码先进性写成目录树观感、某次重构做得漂亮、或者作者看起来很有全景，就可直接按“没有把局部可反对性写成验收条件”拒收。
 - `navigation/05`、`philosophy/33`、`84`、`85` 与 `87` 现已把这轮专题深化进一步压成更稳定的长期 doctrine：
   - Prompt 线现在应长期记住：`lawful forgetting` 保护的不是摘要密度，而是 compact 前后 `world-entry / reject-continue verdict` 不改判；它真正保留的是最小 `verdict witness set`。后续凡是把 lawful forgetting 写成“总结得更好”，都可直接按写浅 reject。
   - Prompt 线的 `first reject path` 现在更明确固定为：`world-defining winner` 不清 -> stable boundary 污染 -> `transcript conflation` -> `continuation_story_only`。后续若在 Prompt 审读页继续发明别的前置顺序，应优先先问是不是把对象层信号写成了展示层症状。

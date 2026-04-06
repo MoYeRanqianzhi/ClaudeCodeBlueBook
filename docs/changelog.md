@@ -3,6 +3,7 @@
 ## 2026-04-07
 
 - 本轮根仓库同步再次确认：`main=origin/main=20a0f55113c7e1c69bf4eca1f1041caeca8e79bb`、`rev-list --left-right --count main...origin/main = 0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
+- 继续更新 `philosophy/80`、`59` 与 `53`，把“未来维护者是正式消费者”“始终保留重构可能性”继续压成更硬的验收条件：later maintainer 现在更明确被写成必须拥有 `局部可反对性`，即不追完整仓实现也能指出越权写回、truth-plane 越位与第一退回层；重构可能性也被更明确写成一组可积累资本，而不再只是结构愿景
 - 继续更新 `navigation/05`、`philosophy/33`、`84`、`85` 与 `87`，把这轮专题深化进一步压成固定 reject path 与 verdict discipline：Prompt 线现在更明确把 `lawful forgetting` 写成“保住 `world-entry / reject-continue verdict` 的最小 witness set”，`Explainability` 则被写死为只有命名权、没有改判权；治理线现在更明确把 `visible world admission` 与 `classifier pricing` 前置到治理价格链；结构线现在更明确把 future maintainer 的最低标准写成“能直接指出哪条 `event / snapshot / transport` 越权成了 authority”
 - 继续更新 `philosophy/61`、`85`、`87` 与 `navigation/05`，把这轮专题深化进一步写成“发言权限表 / 改判权表”：治理线现在更明确补出 `governance key` 是下游收费权的主权对象、`verdict seams` 让 `typed ask` 从 modal 升级为治理事务、classifier 只有在还能改变 verdict 时才值得付费调用；结构线现在更明确补出“合法复杂度中心”的多轴准入门槛，以及 `display -> current -> event` 的 truth-plane 冲突复核顺序；目录线则把 `philosophy / architecture / api / guides-playbooks / navigation / docs` 压成更明确的发言权限表
 - 继续更新 `philosophy/61`、`84`、`87` 与 `navigation/15`，把这轮专题深化补成闭环：`84` 现在更明确把合法遗忘写成 `reject / continue verdict` 在 compact 前后不改判，并再次钉死 `Explainability` 不得改写世界准入判决；`61` 现在更明确把 classifier 写回“只有还能改变 verdict 才值得调用的定价节点”；`87` 现在则把 `snapshot / pointer / recovery asset` 在 fresh-read 前只能充当 `evidence / projection` 以及 `event truth / current truth / display truth` 的三分纪律写硬
