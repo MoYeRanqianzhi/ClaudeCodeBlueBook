@@ -120,17 +120,25 @@
 ```text
 审读对象:
 single-writer surface:
+authoritative_writeback_path:
 recovery asset 是否非主权:
 anti-zombie invariant 是否成立:
 compile/runtime/artifact 三层边界是否分层:
 later maintainer 是否能直接识别危险改动面:
 event stream / state writeback 是否分层:
+event_stream_non_sovereignty:
 fresh-read write gate 是否成立:
+freshness_gate_location:
+stale_worldview_downgrade:
+ghost_capability_eviction_trigger:
+fail_closed_branch:
 当前最像哪类失真:
 - multi-writer truth / recovery usurpation / stale overwrite / boundary conflation / release-surface leak
 优先回修对象:
 - authority surface / recovery asset contract / anti-zombie guard / boundary split / release shaping
 ```
+
+上面六个新增槽位都应填写具体源码路径；任一槽位只能写“感觉这里有”时，就还不配宣布 `one writable present` 已成立。
 
 ## 6. 苏格拉底式检查清单
 

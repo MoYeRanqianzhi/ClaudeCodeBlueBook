@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `architecture/84`、`philosophy/87`、`guides/101`、`casebooks/15 / 42`，把结构先进性继续压成 `authority atlas`、`temporal honesty` 通道矩阵、one writable present 强制证据卡，以及 pointer / telemetry / 作者说明等结构替身对照
 - 继续更新 `architecture/83`、`guides/100`、`casebooks/23 / 35`、`playbooks/51` 与 `navigation/43`，把“安全设计 = 省 token 设计”继续压成 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable/transient cleanup` 单一对象链，并补上 mode / 审批历史 / token 条 / 默认继续 / 文件回退 的投影替身对照
 - 继续更新 `architecture/82`、`guides/30`、`casebooks/73`、`philosophy/81`、`navigation/README` 与 `architecture/README`，把 Prompt 编译链继续压到 `message lineage` 三键内核、四类 `projection consumer`、`continuation object` 最小对象清单与 `cache-safe fork reuse`，并把 Prompt 深读入口改成 `09 -> 81 -> 82 -> 30 -> 73 -> 77`
 - 继续更新 `casebooks/13 / 15 / 35 / 42 / 46`、`navigation/43` 与 `casebooks/README`，把 Evidence Envelope、治理修复演练、结构监护、Prompt 稳态与机制支持面入口继续压到 `message lineage / projection consumer / protocol transcript / stable prefix boundary / continuation object / governance key / externalized truth chain / decision window / continuation pricing / authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`，并把案例库目录入口从编号感继续收紧为对象链入口

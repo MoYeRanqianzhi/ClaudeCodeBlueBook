@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `architecture/84 / philosophy/87 / guides/101` 现已把结构先进性继续压到更硬的验证对象：
+  - `84` 现已补出 `authority atlas`，把 `permission_mode`、`pending_action`、`worker_status` 与 `bridge pointer vs session head` 写成 authority object / sole writer / per-host width / forbidden substitute writer / freshness guard 的固定对照。
+  - `87` 现已把 `temporal honesty` 继续压成通道矩阵，明确 `writeEvent`、`writeInternalEvent`、`reportState/reportMetadata` 与 `flush before idle` 分别在保护什么真相。
+  - `101` 现已把 one writable present 审读卡升级成强制证据卡，要求 later 维护者能直接点名 authoritative writeback path、freshness gate、ghost capability eviction 与 fail-closed branch。
+- `casebooks/15 / 42` 现已把结构失真替身写得更硬：
+  - `15` 现已明确文件 diff、目录美观、恢复成功率与作者记忆分别在偷换哪一个正式对象。
+  - `42` 现已明确 pointer、监控平静感、telemetry 繁荣、作者说明与 reconnect 成功分别在偷换 authority、width、writeback、anti-zombie 证据与 reopen boundary。
+- 新的长期结论：
+  - 结构先进性真正成熟时，不应只说“有 authority object、freshness gate、ghost capability eviction”，还要能列出 `authority atlas`；否则 later 维护者仍会知道有主权，却不知道是谁在写、谁只能读。
+  - temporal honesty 真正成熟时，不能只说“event stream 与 state writeback 要分开”；还要能写出哪条通道负责 timeline、哪条负责 resume-only history、哪条负责 present truth、哪一步负责在 idle 前结清历史。
+  - one writable present 真正成熟时，不能只靠苏格拉底追问；还必须要求关键结构纪律能被回钉到具体源码路径，否则它仍会退回结构哲学而不是结构证据。
 - `architecture/83 / navigation/43` 现已把治理控制面继续压成单一对象链：
   - `83` 现已明确 `governance key` 才是整张控制面的实现主键，`authority source` 只是最前面的 source slot。
   - `43` 现已把治理支持面直接写成 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable/transient cleanup`，并明确宿主可写、宿主可读与 internal-only 的分层。

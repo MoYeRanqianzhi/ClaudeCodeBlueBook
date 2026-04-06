@@ -53,6 +53,17 @@
 - 目录是不是更清爽
 - 作者说哪里危险
 
+最容易篡位的一组结构替身是：
+
+1. 文件 diff
+   - 冒充 `authority object`
+2. 目录美观
+   - 冒充 `per-host authority width`
+3. 恢复成功率
+   - 冒充 `event-stream-vs-state-writeback + freshness gate`
+4. 作者记忆
+   - 冒充 `stale worldview / ghost capability` 驱逐证据
+
 ## 2. 只看文件 Diff vs authority object
 
 ### 坏解法

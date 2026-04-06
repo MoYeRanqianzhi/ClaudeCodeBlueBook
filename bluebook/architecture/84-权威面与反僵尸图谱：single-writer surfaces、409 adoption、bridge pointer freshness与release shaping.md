@@ -108,6 +108,15 @@ Claude Code 的高级点，在于它不断把单一写入面做显式化。
 
 - 后来者知道谁能写、谁只能读
 
+更稳的 authority atlas 至少该能被压成下面这张表：
+
+| authority object | sole writer | per-host width | forbidden substitute writer | freshness / eviction guard |
+|---|---|---|---|---|
+| `permission_mode` | `onChangeAppState` | CLI / SDK / external metadata projection | 任意 UI 本地猜测 mode | runtime externalization only |
+| `pending_action` | `sessionState + external_metadata` | host-facing status width | transcript replay / tool log prose | stale field cleanup before reuse |
+| `worker_status` | `reportState/reportMetadata` | CCR / SDK status width | event timeline / print log | coalesced uploader + flush discipline |
+| `bridge pointer vs session head` | server/session head | bridge freshness pointer | pointer 直接宣布 current truth | TTL + head adoption |
+
 ## 5. Anti-Zombie Pattern Catalog：过去不能把自己写回现在
 
 Claude Code 的 `anti-zombie` 不是一句注释，而是一套跨系统复现的写法纪律。
