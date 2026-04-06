@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新 `guides/49` 与 `navigation/15`，把上一批补进 `62 / 30 / 32` 的治理位置学、Prompt witness 与 later-maintainer reject 继续回灌到治理 builder 与高阶前门：`49` 现在更明确把六步治理 builder 对齐成 `Narrow / Later / Outside` crosswalk，并补出 `reject / degrade / halt / cleanup-before-resume / human-fallback` 五类 failure verdict；`15` 现在更明确把 Prompt witness 顺序、治理 failure order 与当前真相线的 later-maintainer reject 顺序前推成失稳前追问入口
+- 本轮继续把“删掉投影替身后还剩什么”写硬到前门层：`49` 继续拒收 mode / modal / usage / compact 这些 projection 抢占治理真相，`15` 继续要求 Prompt 线、治理线、当前真相线分别回到 witness、failure verdict 与 reject order，而不是退回结果词
 - 继续更新 `architecture/62`、`guides/30` 与 `guides/32`，把上一轮已经写进前门和深页的 witness / failure semantics / later-maintainer reject 继续压成审读模板：`62` 现在更明确给出 `Narrow / Later / Outside` 对应的治理 crosswalk、`decision gain` 条件、位置治理对象与 `reject / degrade / halt / cleanup-before-resume / human-fallback` 失败判词；`30` 现在更明确把 Prompt 线唯一 canonical object chain、`same-world witness` 六元组与 route shorthand 边界写进苏格拉底问题链；`32` 现在更明确把 `failure object`、later maintainer 最小 reject 规则和“坏掉时先退哪一层”补成源码先进性审读项
 - 本轮继续把“继续深入”这件事从高阶结论压到可执行审读卡：`62` 继续拒收 modal / usage 条 / compact / default continue 这些治理投影替身，`30` 继续拒收 `systemPrompt` 截图、最后一条 assistant 消息与 summary prose 冒充 Prompt 魔力主语，`32` 继续拒收目录美学、工程习惯和空泛优雅感冒充源码先进性
 - 继续更新 `bluebook/07`、`09`、`architecture/52`、`architecture/63`、`guides/31` 与 `navigation/README`，把上一批前门深化进一步压到深页对象与失效判据：`07` 与 `09` 现在更明确把 Prompt 线写成 multi-surface world-entry object，并补出 `same-world` 的最小 witness 链；`09` 同时更明确把治理线的 `deny / ask / rollback / cleanup / halt / step-up` failure verdict 和当前真相线的 later-maintainer reject 规则写进三张控制面总图

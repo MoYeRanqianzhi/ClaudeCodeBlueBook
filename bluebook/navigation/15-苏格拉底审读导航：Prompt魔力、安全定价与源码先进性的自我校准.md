@@ -29,6 +29,7 @@
 - Prompt 线唯一 canonical object chain 是 `message lineage -> section registry / stable boundary -> protocol transcript -> continuation object -> continuation qualification`
 - `compile -> protocolize -> preserve -> continue -> explain` 只是动作链，不替代这条 object chain
 - `world entry / request assembly / six-stage assembly chain` 与 `request-surface constitution / cognitive contract / byte boundary / continuation truth` 都只是 route shorthand，首次出现必须回绑到 canonical node
+- 如果继续往下排查，最稳的 witness 顺序也只认：`message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
 - 如何确认 `message lineage`、`section registry / dynamic boundary`、`protocol transcript`、`continuation qualification` 与接手连续性都还成立
 - 第一条反证信号常常不是回答变差，而是 `systemPrompt` 截图、最后一条消息或 UI transcript 又开始篡位成 Prompt 主语
 
@@ -64,6 +65,16 @@
 - `default continue != continuation pricing`
 - `compact 技巧 != Outside`
 
+如果继续往下排查，最稳的治理 failure order 也应先认：
+
+1. `reject`
+2. `degrade`
+3. `halt`
+4. `cleanup-before-resume`
+5. `human-fallback`
+
+删掉这组 failure verdict，只剩 mode、modal、usage、compact 这些投影替身时，第二条线就已经从治理 runtime 退回 UX 叙事。
+
 ## 3. 当前真相保护的苏格拉底审读
 
 关键追问：
@@ -89,6 +100,15 @@
 
 - 结构里是否已经提前编码了 `current-truth surface / recovery asset non-sovereignty / freshness gate / ghost capability` 这条 present-truth 纪律，以及证据梯度、批评路径、修改路径与退出路径
 - 第一条反证信号常常不是 bug 变多，而是 replay、pointer、snapshot 或作者说明又开始篡位成 `current-truth surface`
+
+如果继续往下排查，最稳的 later-maintainer reject 顺序也只认：
+
+1. shim 无退出条件
+2. snapshot / pointer / recovery asset 能直接回写主状态
+3. 旧 capability token、旧 authority width、旧 pin 仍能继续放权
+4. 结构坏掉时却说不清应先退 `authority / contract / seam / shell / recovery / eviction` 哪一层
+
+删掉这组 reject 权后，“源码先进性”就会重新退回作者视角，而不是 future maintainer 的制度能力。
 
 ## 4. 三条线共同的先验反证
 

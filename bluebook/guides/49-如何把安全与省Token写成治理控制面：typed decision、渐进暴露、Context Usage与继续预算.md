@@ -185,6 +185,30 @@ Claude Code 把 continuation 理解成正式的 continuation pricing，而不是
 6. `outside pricing`
    - externalization / preview / replacement + rollback object + durable-transient cleanup
 
+如果继续把这六步和 `Narrow / Later / Outside` 对齐成一张 crosswalk，更稳的 builder 读法应补成：
+
+1. `Narrow`
+   - `authority + typed decision + visibility pricing`
+   - 先治理宽度，不让未定价能力先进入世界。
+2. `Later`
+   - `decision window + continuation pricing`
+   - 先治理时间，只在仍有 `decision gain` 时允许延后暴露或延后继续。
+3. `Outside`
+   - `outside pricing`
+   - 先治理位置，把高波动对象迁成可回钉、可拒收、可清算的外部载体。
+
+如果这张 crosswalk 说不清，治理 builder 就还只是“步骤表”，还不是统一治理位置学。
+
+更硬一点看，这里最终交出的 failure verdict 也至少要能点名：
+
+1. `reject`
+2. `degrade`
+3. `halt`
+4. `cleanup-before-resume`
+5. `human-fallback`
+
+它们不是 UX 文案，而是 runtime 在动作、能力、上下文与时间四类扩张上的正式判词。
+
 ## 8. 苏格拉底式检查清单
 
 在你准备继续补一层安全或压缩机制前，先问自己：
@@ -195,6 +219,7 @@ Claude Code 把 continuation 理解成正式的 continuation pricing，而不是
 4. Context Usage 是否真的进入了下一步决策，而不是留在观测层。
 5. continuation 是正式 continuation pricing，还是默认免费扩张。
 6. mode 面板、审批弹窗、usage 条、compact 技巧里，当前是哪一个 projection 在冒充治理真相。
+7. 当前 failure verdict 是否已经退回 `reject / degrade / halt / cleanup-before-resume / human-fallback`，还是还停在投影替身的口语层。
 
 ## 9. 一句话总结
 

@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 builder/frontdoor 同词化动作: 已继续更新 `guides/49` 与 `navigation/15`，把上一批补到 `62 / 30 / 32` 的治理位置学、Prompt witness 与 later-maintainer reject 继续对齐到治理 builder 和高阶前门。
+- 本轮治理 builder 动作: `guides/49` 现在更明确把六步治理顺序压成 `Narrow / Later / Outside` crosswalk，并把 `reject / degrade / halt / cleanup-before-resume / human-fallback` 明确写成 runtime failure verdict，而不是 UX 文案。
+- 本轮高阶前门动作: `navigation/15` 现在更明确把 Prompt witness 顺序、治理 failure order 与当前真相线的 later-maintainer reject 顺序写进失稳前追问入口，避免前门继续停在“更强 / 更严 / 更先进”的结果词。
 - 本轮审读模板深化动作: 已继续更新 `architecture/62`、`guides/30` 与 `guides/32`，把上一轮补到前门和深页里的 canonical formula 继续压进 builder-facing 审读卡。
 - 本轮 Prompt 审读模板动作: `guides/30` 现在更明确把 Prompt 线唯一 canonical chain 固定为 `message lineage -> section registry / stable boundary -> protocol transcript -> continuation object -> continuation qualification`，并把 `same-world witness` 六元组、route shorthand 边界和 `systemPrompt/summary prose` 禁词补进问题链与记录卡。
 - 本轮治理位置学动作: `architecture/62` 现在更明确把 `Narrow / Later / Outside` 对齐成 `governance key / typed ask / capability surface`、`decision window / continuation pricing / decision gain`、`externalized truth / replacement carrier / durable-transient cleanup` 三组治理对象，并补出 `reject / degrade / halt / cleanup-before-resume / human-fallback` 失败判词。

@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `guides/49` 与 `navigation/15` 现已继续把审读模板回灌到 builder/frontdoor：
+  - `guides/49` 现在更明确把治理 builder 六步与 `Narrow / Later / Outside` 对齐，并补出 `reject / degrade / halt / cleanup-before-resume / human-fallback` 五类 failure verdict。
+  - `navigation/15` 现在更明确把 Prompt 线 witness 顺序、治理线 failure order 与当前真相线 later-maintainer reject 顺序前推成高阶前门问题。
+- 新的长期结论：
+  - 只有当前门、builder 和审读模板同时使用同一组 object chain / failure order / reject order 时，蓝皮书才真正进入“同词化”阶段；否则 later maintainer 仍会在不同层学到不同版本的制度语言。
+  - `mode / modal / usage / compact / default continue` 这类 projection 替身必须在前门和 builder 两层同时被持续拒收；只在一层写硬，另一层迟早会把它们重新扶正成治理真相。
 - `architecture/62`、`guides/30` 与 `guides/32` 现已继续把前门 canonical formula 压进审读模板：
   - `architecture/62` 现在更明确把 `Narrow / Later / Outside` 写成治理位置学：宽度治理对应 `governance key / typed ask / capability surface`，时间治理对应 `decision window / continuation pricing / decision gain`，位置治理对应 `externalized truth / replacement carrier / durable-transient cleanup`，并补出 `reject / degrade / halt / cleanup-before-resume / human-fallback` 五类失败判词。
   - `guides/30` 现在更明确把 Prompt 线 canonical object chain、`same-world witness` 六元组、route shorthand 边界与前门禁词写进苏格拉底问题链与记录卡。
