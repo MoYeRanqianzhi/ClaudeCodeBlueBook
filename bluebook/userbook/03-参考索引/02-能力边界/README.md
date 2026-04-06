@@ -25,3 +25,4 @@
 - [23-Remote Control stale pointer、过期环境与重试语义索引.md](./23-Remote%20Control%20stale%20pointer%E3%80%81%E8%BF%87%E6%9C%9F%E7%8E%AF%E5%A2%83%E4%B8%8E%E9%87%8D%E8%AF%95%E8%AF%AD%E4%B9%89%E7%B4%A2%E5%BC%95.md)
 - [24-Remote Control 补救动作与恢复建议索引.md](./24-Remote%20Control%20%E8%A1%A5%E6%95%91%E5%8A%A8%E4%BD%9C%E4%B8%8E%E6%81%A2%E5%A4%8D%E5%BB%BA%E8%AE%AE%E7%B4%A2%E5%BC%95.md)
 - [25-Remote Control build 不可用、资格不可用、组织拒绝与权限噪音索引.md](./25-Remote%20Control%20build%20%E4%B8%8D%E5%8F%AF%E7%94%A8%E3%80%81%E8%B5%84%E6%A0%BC%E4%B8%8D%E5%8F%AF%E7%94%A8%E3%80%81%E7%BB%84%E7%BB%87%E6%8B%92%E7%BB%9D%E4%B8%8E%E6%9D%83%E9%99%90%E5%99%AA%E9%9F%B3%E7%B4%A2%E5%BC%95.md)
+- [26-Remote Control spawn topology、capacity 与目录分配索引.md](./26-Remote%20Control%20spawn%20topology、capacity%20与目录分配索引.md)

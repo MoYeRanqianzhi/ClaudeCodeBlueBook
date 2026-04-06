@@ -37,6 +37,7 @@
 33. 为什么 bridge 的 stale pointer、过期环境与瞬态重试不是同一种恢复失败。
 34. 为什么 bridge 的 trust、`/login`、restart、fresh fallback 与 retry 不是同一种补救动作。
 35. 为什么 remote-control 的 build 不可用、资格不可用、组织拒绝与权限噪音不是同一种“不能用”。
+36. 为什么 standalone remote-control 的 spawn topology、并发上限与 cwd 初始会话不是同一种调度。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
