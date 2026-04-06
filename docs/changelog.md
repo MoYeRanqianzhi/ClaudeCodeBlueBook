@@ -2,6 +2,9 @@
 
 ## 2026-04-06
 
+- 继续更新 `bluebook/07`、`09`、`architecture/52`、`architecture/63`、`guides/31` 与 `navigation/README`，把上一批前门深化进一步压到深页对象与失效判据：`07` 与 `09` 现在更明确把 Prompt 线写成 multi-surface world-entry object，并补出 `same-world` 的最小 witness 链；`09` 同时更明确把治理线的 `deny / ask / rollback / cleanup / halt / step-up` failure verdict 和当前真相线的 later-maintainer reject 规则写进三张控制面总图
+- `architecture/52` 与 `architecture/63` 现在更明确把源码先进性写成 failure-object 与失效判据语言，而不是 happy-path 工程法或目录体感：`52` 现在要求 chokepoint / typed decision / authoritative surface / race-aware runtime / contract-first 都交代自己在防哪类 `failure object`，`63` 现在补出 `config/deps/leaf/recovery asset` 何时失去可演化资格，以及 later maintainer 的最小 reject 规则与回退协议
+- `guides/31` 与 `navigation/README` 现在更明确把治理红线与目录红线写硬：`guides/31` 新增 projection 篡位、verdict signer、durable/transient 清空、`minimum legal degraded shape` 与“删掉 dashboard/compact 术语后论证是否仍成立”的追问；`navigation/README` 现在更明确要求并行多 Agent 深挖按 question domain 拆题，并把 README 混层直接视为应退回证据层的结构失真
 - 继续更新 `bluebook/03`、`06`、`README`、`navigation/05`、`navigation/15`、`guides/49` 与 `guides/51`，把“继续深入”这件事从散写深页收口回一组更硬的前门与 witness：`03` 现在更明确把设计内涵压成 `world-defining right / pricing right / stale-writer veto right` 三种主权安排，并补出“语义压缩强于信息堆叠”的坏解链与“源码质量如何直接减少用户遭遇的失真”；`06` 现在更明确把并行多 Agent 深挖写成 question-domain 拆题纪律与 `7.10 并行判据`
 - `bluebook/README`、`navigation/05` 与 `navigation/15` 现在更明确把目录优化写成“第一问题单源化 + 证据层分工 + `09 / 05 / 15 / 41` merge frontdoor”，不再把优化目录理解成继续增殖 route map；`navigation/15` 同时把 Prompt 线 canonical object chain、治理线投影替身禁词与并行深挖前的先验反证写硬
 - `guides/51` 现在新增 `same-world test` 的最小 witness object：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`；`guides/49` 现在更明确把治理 builder 顺序改写成 `authority -> typed decision -> visibility pricing -> decision window -> continuation pricing -> outside pricing`，并把 `mode 面板 / 审批弹窗 / usage 条 / compact 技巧` 进一步固定成不得篡位治理真相的前门红线

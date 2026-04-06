@@ -339,6 +339,18 @@ Claude Code 显然把后者当成本体问题在写。
 4. `race-aware runtime` 治理异步真实世界。
 5. `contract-first` 治理跨层一致性。
 
+如果继续把这五法写成真正的 architecture doctrine，而不是 happy-path 工程法，还必须再补一层：
+
+1. 每一法都必须回答自己在防哪类 `failure object`，而不只是在提供抽象便利。
+2. `typed decision / transition`
+   - 不只应覆盖继续与迁移，也应覆盖 `deny / ask / rollback / cleanup / halt / step-up` 这类失败判词。
+3. `authoritative surface`
+   - 不只是谁能发布 happy-path truth，也是谁能撤销、清理、宣布不可恢复。
+4. `race-aware runtime`
+   - 完成条件不是“少出 race”，而是 stale actor 失败时只能降级或 cleanup，不能复活旧 authority。
+5. `contract-first tooling`
+   - 必须交代 failure semantics 如何跨 model / UI / search / host 保持同题不同投影，而不是各层各说各话。
+
 如果没有这些结构，功能越多，只会让系统：
 
 - 更难解释
@@ -349,6 +361,8 @@ Claude Code 显然把后者当成本体问题在写。
 所以 Claude Code 的先进性，不在“功能数很多”，而在：
 
 - 新功能仍被迫经过少数几种高级工程模式
+
+少掉 failure semantics，这五法就仍可能被误读成“结构技巧”；补上 failure semantics 之后，它们才真正变成“失真时仍守住秩序的制度”。
 
 ## 8. 一句话总结
 

@@ -19,6 +19,8 @@
   `philosophy / architecture / api / guides / playbooks / casebooks` 各守一种职责，不在 `navigation/` 里重新混写。
 - 先判你是在阅读、迁移，还是继续改写蓝皮书。
   阅读优先 `01 / 02`，失稳前自校优先 `15`，迁移优先 `46`，继续改写三条母线优先 `05 / 15 / 41`。
+- 先判你是在单线深挖，还是准备并行多 Agent 同时研究。
+  并行时优先按 question domain 拆成 Prompt 世界准入、治理定价、当前真相保护、目录前门纪律，不按文件库存拆。
 
 ## 稳定节点
 
@@ -51,6 +53,8 @@
   `surface -> writeback -> freshness -> evict`
 - 如果你在判断“下一层该去哪个目录”，也先问：
   这是 `same-world test`、`decision window`、`truth ladder`，还是 `failure semantics` 的问题。
+- 如果你在判断“并行深挖后该回哪一个前门合并”，也先问：
+  这个结论第一次该回 `09`、`05`、`15` 还是 `41`，而不是继续在 `README / navigation / guide` 三层同时第一次被回答。
 - [46-宿主迁移工单导航：request compiler、governance key 与 current-truth writeback 如何进入实施顺序、交接包与灰度发布](46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布.md)
   进入宿主实现、迁移、验收与收口链。
 
@@ -77,3 +81,4 @@
 - `navigation/` 只给稳定节点，不把每条深链摊平成首页。
 - 目录细节与编号段说明回各目录 `README` 或编号页。
 - 过程记录与变更记忆统一回 `docs/`。
+- 一旦某个 `README` 同时承担 canonical formula、route map、深页解释与研究记忆，它就已经混层，应退回各自证据层。

@@ -6,6 +6,10 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 Prompt 深页补口动作: 已继续更新 `bluebook/07` 与 `09`，把 Prompt 线从“装配链存在”继续压成 multi-surface world-entry object，并补出 `same-world` 的最小 witness：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`；同时明确 `compact / resume / fork / handoff` 若不能回指这六个引用，就已从同一世界退回叙事成功。
+- 本轮治理 failure-semantics 动作: 已继续更新 `bluebook/09` 与 `guides/31`，把治理线从“统一定价”继续压成 `deny / ask / rollback / cleanup / halt / step-up` 等 verdict 对象，并新增 projection 篡位、verdict signer、durable/transient authority 清空、`minimum legal degraded shape` 和“删掉 dashboard/compact 术语后论证是否仍成立”的苏格拉底追问。
+- 本轮源码先进性深页动作: 已继续更新 `architecture/52` 与 `63`，把源码先进性从五法与演化方向进一步压成 failure-object 与失效判据语言：每一法都必须回答自己在防哪类 `failure object`，`config / deps / leaf module / recovery asset` 何时失去可演化资格，以及 later maintainer 应按什么最小 reject 规则撤回结构升级。
+- 本轮目录结构深化动作: 已继续更新 `navigation/README`，把并行多 Agent 深挖固定成按 question domain 拆题，并明确一旦某个 `README` 同时承担 canonical formula、route map、深页解释与研究记忆，它就已经混层，应退回各自证据层。
 - 本轮设计内涵深化动作: 已继续更新 `bluebook/03` 与 `06`，把设计内涵从“Prompt 更强 / 安全更严 / 源码更先进”收口回 `world-defining right / pricing right / stale-writer veto right` 三种主权安排；同时把“语义压缩强于信息堆叠”的坏解链、源码质量如何直接减少用户可见失真，以及并行多 Agent 深挖时的 question-domain 拆题纪律补到主线页。
 - 本轮目录结构优化动作: 已继续更新 `bluebook/README`、`navigation/05` 与 `navigation/15`，把目录优化固定成“第一问题单源化 + 证据层分工 + `09 / 05 / 15 / 41` merge frontdoor”，并把并行深挖前的先验反证、frontdoor 禁词与 canonical object chain 明确前置到入口层。
 - 本轮 Prompt 侧线技术补口动作: 已继续更新 `guides/51`，新增 `same-world test` 的最小 witness object：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`，并要求 `compact / resume / fork / side query / handoff` 只能继承或显式重绑这些引用，不能静默重造“差不多的世界”。

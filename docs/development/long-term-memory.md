@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/07`、`09`、`architecture/52`、`architecture/63`、`guides/31` 与 `navigation/README` 现已继续把前门 canonical formula 往深页对象和失效判据推进：
+  - `07` 与 `09` 现在更明确把 Prompt 线写成 multi-surface world-entry object，并补出 `same-world` 的最小 witness 链：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`。
+  - `09` 现在更明确把治理线 failure semantics 写成 `deny / ask / rollback / cleanup / halt / step-up`，并把 later maintainer 的最小 reject 规则继续推到当前真相线前门。
+  - `architecture/52` 现在更明确要求五法各自回答自己在防哪类 `failure object`；`architecture/63` 现在更明确补出 `config / deps / leaf / recovery asset` 何时失去可演化资格，以及 later maintainer 的最小 reject 规则与回退协议。
+  - `guides/31` 现在更明确把 projection 篡位、verdict signer、durable/transient 清空、`minimum legal degraded shape` 与“删掉 dashboard/compact 术语后论证是否仍成立”补进治理苏格拉底问题链。
+  - `navigation/README` 现在更明确把并行多 Agent 深挖固定成按 question domain 拆题，并把 README 混层直接标成结构失真。
+- 新的长期结论：
+  - Prompt 线真正成熟时，不能只说“same-world test”，还要给出最小 witness object；没有 witness，later maintainer 仍会退回 `systemPrompt`、最后一条消息或 summary prose 当主语。
+  - 治理线真正成熟时，不能只说“统一定价”，还要写清 failure verdict、谁在签发这些 verdict，以及删掉 dashboard/compact/modal 语言后论证是否仍成立。
+  - 源码先进性真正成熟时，不能只说“五法”或“可演化内核”，还要补 later maintainer 可执行的失效判据、最小 reject 规则与回退协议；否则仍会退回 happy-path 工程法或目录体感。
 - `bluebook/03`、`06`、`README`、`navigation/05`、`navigation/15`、`guides/49` 与 `guides/51` 现已继续把“继续深入”本身写成可复用制度：
   - `03` 现在更明确把设计内涵压成 `world-defining right / pricing right / stale-writer veto right` 三种主权安排，并补出 Prompt 线“语义压缩强于信息堆叠”的坏解链，以及源码质量怎样通过 invariant / failure / user distortion 三格直接变成产品能力。
   - `06` 现在更明确把并行多 Agent 深挖写成 question-domain 拆题纪律，并新增 `7.10 并行判据`，防止主线页在合并时重新长回 route words。
