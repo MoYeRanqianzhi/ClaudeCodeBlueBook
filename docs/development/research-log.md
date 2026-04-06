@@ -6,6 +6,10 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮审读模板深化动作: 已继续更新 `architecture/62`、`guides/30` 与 `guides/32`，把上一轮补到前门和深页里的 canonical formula 继续压进 builder-facing 审读卡。
+- 本轮 Prompt 审读模板动作: `guides/30` 现在更明确把 Prompt 线唯一 canonical chain 固定为 `message lineage -> section registry / stable boundary -> protocol transcript -> continuation object -> continuation qualification`，并把 `same-world witness` 六元组、route shorthand 边界和 `systemPrompt/summary prose` 禁词补进问题链与记录卡。
+- 本轮治理位置学动作: `architecture/62` 现在更明确把 `Narrow / Later / Outside` 对齐成 `governance key / typed ask / capability surface`、`decision window / continuation pricing / decision gain`、`externalized truth / replacement carrier / durable-transient cleanup` 三组治理对象，并补出 `reject / degrade / halt / cleanup-before-resume / human-fallback` 失败判词。
+- 本轮源码先进性审读模板动作: `guides/32` 现在更明确要求每段结构都能点名自己在防哪类 `failure object`，later maintainer 的最小 reject 规则是否已写清，以及结构坏掉时应先退 `authority / contract / seam / shell / recovery / eviction` 哪一层。
 - 本轮 Prompt 深页补口动作: 已继续更新 `bluebook/07` 与 `09`，把 Prompt 线从“装配链存在”继续压成 multi-surface world-entry object，并补出 `same-world` 的最小 witness：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`；同时明确 `compact / resume / fork / handoff` 若不能回指这六个引用，就已从同一世界退回叙事成功。
 - 本轮治理 failure-semantics 动作: 已继续更新 `bluebook/09` 与 `guides/31`，把治理线从“统一定价”继续压成 `deny / ask / rollback / cleanup / halt / step-up` 等 verdict 对象，并新增 projection 篡位、verdict signer、durable/transient authority 清空、`minimum legal degraded shape` 和“删掉 dashboard/compact 术语后论证是否仍成立”的苏格拉底追问。
 - 本轮源码先进性深页动作: 已继续更新 `architecture/52` 与 `63`，把源码先进性从五法与演化方向进一步压成 failure-object 与失效判据语言：每一法都必须回答自己在防哪类 `failure object`，`config / deps / leaf module / recovery asset` 何时失去可演化资格，以及 later maintainer 应按什么最小 reject 规则撤回结构升级。

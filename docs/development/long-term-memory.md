@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `architecture/62`、`guides/30` 与 `guides/32` 现已继续把前门 canonical formula 压进审读模板：
+  - `architecture/62` 现在更明确把 `Narrow / Later / Outside` 写成治理位置学：宽度治理对应 `governance key / typed ask / capability surface`，时间治理对应 `decision window / continuation pricing / decision gain`，位置治理对应 `externalized truth / replacement carrier / durable-transient cleanup`，并补出 `reject / degrade / halt / cleanup-before-resume / human-fallback` 五类失败判词。
+  - `guides/30` 现在更明确把 Prompt 线 canonical object chain、`same-world witness` 六元组、route shorthand 边界与前门禁词写进苏格拉底问题链与记录卡。
+  - `guides/32` 现在更明确把源码先进性的 `failure object`、later maintainer 最小 reject 规则和“坏掉时先退哪一层”写成显式审读项。
+- 新的长期结论：
+  - `same-world test` 只有同时进入控制面深页和审读模板才算真正稳定；否则 later maintainer 还是会在排障时退回 `systemPrompt` 截图、最后一条消息或 summary prose。
+  - `Narrow / Later / Outside` 只有和 `governance key / decision window / continuation pricing / cleanup` 这组治理对象一一回绑时，才不是三句口号；一旦离开这些对象，modal、usage 条、compact、default continue 就会重新篡位成治理真相。
+  - 源码先进性只有在 later maintainer 拿到独立 reject 权、failure object 命名和退层协议之后，才算从 happy-path 工程法升级成制度；否则“可演化”仍只是作者视角的好感觉。
 - `bluebook/07`、`09`、`architecture/52`、`architecture/63`、`guides/31` 与 `navigation/README` 现已继续把前门 canonical formula 往深页对象和失效判据推进：
   - `07` 与 `09` 现在更明确把 Prompt 线写成 multi-surface world-entry object，并补出 `same-world` 的最小 witness 链：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`。
   - `09` 现在更明确把治理线 failure semantics 写成 `deny / ask / rollback / cleanup / halt / step-up`，并把 later maintainer 的最小 reject 规则继续推到当前真相线前门。

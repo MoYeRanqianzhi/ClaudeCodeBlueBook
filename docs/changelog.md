@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新 `architecture/62`、`guides/30` 与 `guides/32`，把上一轮已经写进前门和深页的 witness / failure semantics / later-maintainer reject 继续压成审读模板：`62` 现在更明确给出 `Narrow / Later / Outside` 对应的治理 crosswalk、`decision gain` 条件、位置治理对象与 `reject / degrade / halt / cleanup-before-resume / human-fallback` 失败判词；`30` 现在更明确把 Prompt 线唯一 canonical object chain、`same-world witness` 六元组与 route shorthand 边界写进苏格拉底问题链；`32` 现在更明确把 `failure object`、later maintainer 最小 reject 规则和“坏掉时先退哪一层”补成源码先进性审读项
+- 本轮继续把“继续深入”这件事从高阶结论压到可执行审读卡：`62` 继续拒收 modal / usage 条 / compact / default continue 这些治理投影替身，`30` 继续拒收 `systemPrompt` 截图、最后一条 assistant 消息与 summary prose 冒充 Prompt 魔力主语，`32` 继续拒收目录美学、工程习惯和空泛优雅感冒充源码先进性
 - 继续更新 `bluebook/07`、`09`、`architecture/52`、`architecture/63`、`guides/31` 与 `navigation/README`，把上一批前门深化进一步压到深页对象与失效判据：`07` 与 `09` 现在更明确把 Prompt 线写成 multi-surface world-entry object，并补出 `same-world` 的最小 witness 链；`09` 同时更明确把治理线的 `deny / ask / rollback / cleanup / halt / step-up` failure verdict 和当前真相线的 later-maintainer reject 规则写进三张控制面总图
 - `architecture/52` 与 `architecture/63` 现在更明确把源码先进性写成 failure-object 与失效判据语言，而不是 happy-path 工程法或目录体感：`52` 现在要求 chokepoint / typed decision / authoritative surface / race-aware runtime / contract-first 都交代自己在防哪类 `failure object`，`63` 现在补出 `config/deps/leaf/recovery asset` 何时失去可演化资格，以及 later maintainer 的最小 reject 规则与回退协议
 - `guides/31` 与 `navigation/README` 现在更明确把治理红线与目录红线写硬：`guides/31` 新增 projection 篡位、verdict signer、durable/transient 清空、`minimum legal degraded shape` 与“删掉 dashboard/compact 术语后论证是否仍成立”的追问；`navigation/README` 现在更明确要求并行多 Agent 深挖按 question domain 拆题，并把 README 混层直接视为应退回证据层的结构失真
