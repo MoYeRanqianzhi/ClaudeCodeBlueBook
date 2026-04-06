@@ -2,6 +2,16 @@
 
 ## 2026-04-06
 
+- 继续更新 `03-设计哲学` 的后半段正文语气，把 `继续深挖 / 更稳的模板 / 渐进改写 / 值得继续往` 这类 workshop 和作者工位话术收回到更稳定的 doctrine prose，并把 Prompt 魔力、安全定价、构建秩序与制度自审这些段落改写成直接陈述的原则判断
+- 继续更新 `navigation/01`、`09` 与 `03-设计哲学` 的第一性原理前门，把 `request object / authority object / 正式对象` 这些旧本体词收回到 `请求世界 / governance pricing chain / current-truth surface / 权威入口`，并把 Prompt 魔力明确收紧到 `message lineage -> projection consumer -> protocol transcript -> continuation qualification`
+- 继续更新 `09` 的宪法页与 `navigation/01` 的阅读地图，把“下一步去哪读 / 对蓝皮书自己的约束”这类路由和编排话术移出正文中心，改成更适合正文的控制面判断、设计自检与当前真相保护表述
+- 继续更新 `navigation/03 / 40 / 44 / 46` 的前门语言，把深度专题前门收回到“世界进入模型 / 扩张定价 / 当前真相”三张控制面，并把 `40 / 44 / 46` 从“这一层放在哪一类文档更合适”的编排叙事改写成直接面向 `message lineage / governance key / authority object` 的失真、误绑与迁移次序正文
+- 继续更新 `navigation/03` 的源码先进性入口顺序与 Prompt 魔力结论，把“公开镜像 / 热点文件 / 对象化”这类次级阅读姿态降级，把“当前真相保护 / 合法复杂度中心 / 可证明边界 / 协作承载与升级”提升为更靠前的第一性原理入口
+- 继续更新 `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41` 的旧链接标签，把 `architecture/82-84` 仍沿旧文件名暴露出来的 `authority chain / trusted inputs / single-writer surfaces` 收回到当前对象链，并同步收紧少数 Prompt / 治理前门短语
+- 继续更新 `guides/99 / 100 / 101` 的开头元话语，把“继续压成一套模板 / 更长的 Prompt 规范 / 设置页说明书 / 结构洁癖清单”这类写作姿态词收回到更稳定的“审读问题序列 / 设置页导览 / 结构外观清单”表达
+- 继续更新 `casebooks/README`、`security/README` 与 `risk/README` 的路由层可见标签，把仍在暴露旧文件名术语的入口链收回到当前对象链，尤其是 Prompt 的 `message lineage / protocol truth / stable prefix` 与治理的 `governance key / typed ask / decision window / continuation pricing / cleanup`
+- 继续更新 `bluebook/README`、`guides/README` 与 `playbooks/README` 的目录职责前门，把根 README 固定为宪法前门，把目录 README 收窄成各自的稳定起点页，不再在目录首页展开桥接记忆与完整多跳链
+- 继续更新 `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41` 的苏格拉底审读前门，把 `authority chain / trusted inputs / single-writer / compiled request truth` 这组旧 front words 收回到 `message lineage / projection consumer / continuation qualification`、`governance key / decision window / durable-vs-transient cleanup` 与 `authority object / freshness gate / ghost capability`
 - 继续更新 `README / navigation/README / 03 / 09` 的前门合同，把 `09` 固定成唯一主线宪法文案源，并把根 README、导航 README 与设计哲学前言进一步降成路由页 / 解释页，同时把 `09` 第一张控制面图里的 Prompt 根对象继续收紧到 `message lineage / projection consumer / protocol transcript / continuation qualification`
 - 继续更新 `casebooks/13 / 35 / 46` 与 `navigation/43` 的 Prompt / 治理前门语言，把 `Evidence Envelope / 假窗口重置 / 免费重入 / 前缀托管 / rollback object` 这些旧 front words 收回到 `message lineage / protocol truth / stable prefix boundary / threshold liability` 与 `governance key / decision window / durable-vs-transient cleanup`
 - 继续更新 `api/53 / playbooks/28 / casebooks/15 / 42` 的结构 visible root，把故障模型宿主消费面、可演化内核验证与结构失真反例从 `authority state / transition / dependency / Evidence Envelope / authority watch` 这些旧 front words 收回到 `authority object / per-host authority width / freshness gate / anti-zombie evidence / current truth`

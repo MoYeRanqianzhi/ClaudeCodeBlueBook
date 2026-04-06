@@ -1,17 +1,17 @@
-# 深度专题导航：Prompt、预算、对象、底盘与治理
+# 深度专题导航：世界进入模型、扩张定价与当前真相
 
-这一篇不新增新的机制判断，只负责把几个最容易走偏的问题压成稳定路由。
+这篇负责把最容易走偏的深度专题重新压回三条母线：世界如何进入模型、扩张如何被定价、过去如何不写坏现在。
 
-## 0. 先记住这篇的使用协议
+## 0. 进入顺序
 
-这篇不是让你把所有深文当并列清单来逛。
+这篇不是把所有深文并列陈列，而是规定进入顺序。
 
-更稳的顺序应固定为：
+更稳的进入顺序是：
 
 1. 先走新主线：`09 -> philosophy/84-87`
 2. 再走控制面深文：`architecture/82-84`
 3. 再走审读/验证/反例：`guides/99-102 -> playbooks/77-79 -> casebooks/73-75`
-4. 最后才补旧细拆，防止自己重新掉回旧词汇和旧世界观
+4. 最后才补旧细拆，以免重新掉回旧词汇和旧世界观
 
 如果把这个顺序倒过来，读者最容易重新把：
 
@@ -23,11 +23,11 @@
 
 1. 想研究 prompt 魔力，应该从哪几章进入。
 2. 想理解当前世界准入主权、统一定价治理与省 token 设计，应该怎样读。
-3. 想把 workflow、task、worktree 当正式对象理解，应该怎样读。
-4. 想判断公开镜像为什么仍然先进，应该先看哪些 contract 和 chokepoint。
-5. 想真正把 Claude Code 用对，第一性原理实践应放在什么位置。
+3. 想理解 workflow、task、worktree 这些承载体如何服务协作、恢复与升级，应该怎样读。
+4. 想判断公开镜像为什么仍然先进，应该先看哪些 authority object、consumer subset 与 chokepoint。
+5. 想真正把 Claude Code 用对，第一性原理实践与苏格拉底自检应放在什么位置。
 
-## 1. Prompt 深线
+## 1. 请求装配控制面深线
 
 适合在这些问题下阅读：
 
@@ -37,12 +37,12 @@
 
 核心入口：
 
-1. `09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
-2. `philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`
-3. `architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md`
-4. `guides/99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object.md`
-5. `playbooks/77-请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归.md`
-6. `casebooks/73-请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object.md`
+1. [三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
+2. [真正有魔力的 Prompt，会先规定世界如何合法进入模型](../philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md)
+3. [请求装配流水线：消息血缘、投影消费面、协议转录与合法遗忘](../architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md)
+4. [苏格拉底审读：消息血缘、协议转录与继续对象](../guides/99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object.md)
+5. [验证手册：消息血缘、协议转录、继续对象与 cache-safe fork](../playbooks/77-请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归.md)
+6. [反例：假消息血缘、假协议转录与假继续对象](../casebooks/73-请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object.md)
 
 补充入口：
 
@@ -71,8 +71,8 @@
 
 这条线的核心结论是：
 
-- Prompt 魔力来自请求装配控制面：主权链、历史链与继续链必须继续对同一个世界保持诚实；装配顺序、工具 ABI、缓存边界、状态晚绑定与旁路 fork 只是这条对象链的具体实现面
-- 最短记法：不是更强 prompt，而是同一世界对象的持续诚实
+- Prompt 魔力来自请求装配控制面：消息血缘、投影消费面、协议转录与继续对象必须持续对同一个世界保持诚实；装配顺序、工具 ABI、缓存边界、状态晚绑定与旁路 fork 只是这套控制面的实现面
+- 最短记法：不是更强 prompt，而是同一世界的持续诚实
 
 如果问题进一步升级成：
 
@@ -95,12 +95,12 @@
 
 核心入口：
 
-1. `09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
-2. `philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md`
-3. `architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`
-4. `guides/100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md`
-5. `playbooks/78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md`
-6. `casebooks/74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续.md`
+1. [三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
+2. [真正成熟的治理，不是更会拦截，而是更会为扩张定价](../philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md)
+3. [反扩张治理流水线：治理键、typed ask、最小可见面与 continuation pricing](../architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md)
+4. [苏格拉底审读：治理键、最小可见面与 continuation pricing](../guides/100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md)
+5. [验证手册：治理键、typed ask、最小可见面与 continuation pricing 回归](../playbooks/78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md)
+6. [反例：低信任扩权、假最小可见面与免费继续](../casebooks/74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续.md)
 
 补充入口：
 
@@ -127,7 +127,7 @@
 
 这条线的核心结论是：
 
-- Claude Code 真正持续压制的是当前世界的免费扩张；预算器、权限、可见性与 continuation 只是它在动作空间、权威空间、上下文空间与时间空间上的具体定价器
+- Claude Code 真正持续压制的是当前世界的免费扩张；预算器、权限、可见性与 continuation pricing 只是它在动作空间、权威空间、上下文空间与时间空间上的具体定价器
 
 ## 3. 权威真相深线
 
@@ -155,7 +155,7 @@
 
 - Claude Code 的稳定性不只来自更多状态外化，还来自关键状态必须只有一个真正可信的入口，并且同一权威真相必须允许面向不同消费者的诚实投影
 
-## 4. 对象化深线
+## 4. 协作承载与升级深线
 
 适合在这些问题下阅读：
 
@@ -226,20 +226,20 @@
 
 适合在这些问题下阅读：
 
-- 为什么热点大文件和成熟架构可以同时成立。
-- 为什么研究公开镜像时应该先找 contract，再看热点文件。
+- 为什么当前真相保护、合法复杂度中心与成熟架构可以同时成立。
+- 为什么源码先进性首先要看 authority object、danger surface 与 consumer subset，而不是目录观感。
 - 为什么源码质量判断最终必须落到合法复杂度中心、边界可证与下一次重构仍有路。
 
 核心入口：
 
-1. `09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
-2. `philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`
-3. `guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md`
-4. `philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`
-5. `philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`
-6. `architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md`
-7. `playbooks/79-one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归.md`
-8. `casebooks/75-one writable present验证失真反例：健康投影篡位、恢复资产越权与anti-zombie伪证.md`
+1. [三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
+2. [真正先进的内核，不是更会分层，而是更会阻止过去写坏现在](../philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md)
+3. [真正成熟的源码质量判断：复杂度中心合法、边界可证、下一次重构仍有路](../philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md)
+4. [真正成熟的源码地图：更快暴露权威入口、消费者子集与危险改动面](../philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md)
+5. [权威面与反僵尸图谱：authority object、freshness gate 与 ghost capability](../architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)
+6. [验证手册：authority object、recovery asset 与 anti-zombie 回归](../playbooks/79-one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归.md)
+7. [反例：健康投影篡位、恢复资产越权与 anti-zombie 伪证](../casebooks/75-one writable present验证失真反例：健康投影篡位、恢复资产越权与anti-zombie伪证.md)
+8. [源码质量证据分级：contract、registry、authoritative surface 与 adapter subset](../guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md)
 
 补充入口：
 
@@ -264,7 +264,7 @@
 
 这条线的核心结论是：
 
-- Claude Code 值得学的不是“零技术债”，而是合法复杂度中心、contract-first、race-aware、runtime-first，以及把不变量收口进可证明边界，同时不给下一次重构关门
+- Claude Code 值得学的不是“零技术债”，而是把复杂度合法地收口到少数 authority object、contract-first chokepoint 与 race-aware runtime，让边界可证、错误可拒、下一次重构仍有路
 
 ## 8. 可解释运行时深线
 
@@ -312,9 +312,9 @@
 
 - Claude Code 的模块化不是拆分数量竞赛，而是持续让高扇入入口更薄、共享真相更小、脏边更可见
 
-## 10. 真正的使用路线
+## 10. 实践入口
 
-如果你的目标不是研究，而是把 Claude Code 真正用顺：
+如果你的目标是实践，而不是继续拆解源码：
 
 1. `02-使用指南.md`
 2. `guides/01-使用指南.md`

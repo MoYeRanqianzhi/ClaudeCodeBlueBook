@@ -32,7 +32,7 @@
 
 而是：
 
-- 如何确认主语、共享前缀、section 宪法、合法遗忘与接手连续性都还成立
+- 如何确认 `message lineage`、`section registry / dynamic boundary`、`protocol transcript`、`continuation qualification` 与接手连续性都还成立
 
 ## 2. 安全与省 token 的自我校准
 
@@ -55,7 +55,7 @@
 
 而是：
 
-- 如何确认动作、能力、上下文和时间都没有在免费扩张
+- 如何确认 `governance key`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup` 都没有在免费扩张
 
 ## 3. 源码先进性的自我校准
 
@@ -80,7 +80,7 @@
 
 而是：
 
-- 结构里是否已经提前编码了证据梯度、批评路径、修改路径与退出路径
+- 结构里是否已经提前编码了 `authority object / freshness gate / stale worldview / ghost capability` 这条 present-truth 纪律，以及证据梯度、批评路径、修改路径与退出路径
 
 ## 4. 一句话用法
 

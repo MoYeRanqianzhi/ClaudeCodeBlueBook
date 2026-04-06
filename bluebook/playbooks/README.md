@@ -2,11 +2,7 @@
 
 `playbooks/` 当前有 79 篇编号文档，范围 `01-79`。本目录负责把研究结论变成回归、演练、rollout、验收、修复和长期运行手册。
 
-还要先记一句：
-
-- `77-79` 负责把 `09` 的三张控制面图落成长期验证手册；它们现在分别更明确覆盖 `message lineage`、`governance key` 与 `one writable present`，不再只是三篇并列回归文档
-- `29-31` 是三条执行链的宿主接入排查入口，`77-79` 才是三条控制面的长期验证主入口；不要把两组页读成并列替代关系
-- 结构线现在应显式分三档：`31-37` 负责 legacy host intake / acceptance，`67-76` 负责 current repair / refinement，`79` 才是 current validation 主入口
+本 README 只保留运行手册的三个稳定阶段入口：`29-37` 为接入与验收，`65-67` 为当前修复主入口，`77-79` 为当前长期验证主入口；旧 intake 与 current repair 的跨目录解释统一交给 [../navigation/README.md](../navigation/README.md)。
 
 ## 目录分层
 
@@ -41,19 +37,7 @@
 - 需要方法模板：回到 [../guides/README.md](../guides/README.md)
 - 需要失败样本：回到 [../casebooks/README.md](../casebooks/README.md)
 - 需要跨阶段导航：回到 [../navigation/README.md](../navigation/README.md)
-- 想沿三条母线进入执行链：
-- Prompt：`14 -> 29 -> 35 -> 77`
-- 治理：`30 -> 36 -> 66 -> 78`
-- 结构 intake / acceptance：`31 -> 37`
-- 结构 repair / refinement：`67 -> 70 -> 73 -> 76`
-- 结构 validation：`79`
-- 想沿后段修复链继续下钻：
-- Prompt：`65 -> 68 -> 71 -> 74`
-  对象主线：`message lineage -> projection consumer -> continuation object -> cache-safe fork`
-- 治理：`66 -> 69 -> 72 -> 75`
-  对象主线：`governance key -> externalized truth -> durable-vs-transient -> continuation pricing`
-- 结构：`67 -> 70 -> 73 -> 76`
-  对象主线：`authority object -> per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`
+- 想沿三条母线进入执行链：本目录只给执行阶段起点，不在前门展开完整多跳链；Prompt 从 `29 / 65 / 77`，治理从 `30 / 66 / 78`，结构从 `31 / 67 / 79`，具体串联顺序统一回 [../navigation/README.md](../navigation/README.md)
 - 想直接做当前长期验证，而不是先做宿主接入排查：默认从 `77-79` 起步
 - 想把高阶审读模板落成长期回归：Prompt 默认从 `77` 起步，再按需要回 `35`
 

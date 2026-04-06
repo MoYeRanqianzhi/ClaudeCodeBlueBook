@@ -1,14 +1,14 @@
 # 如何用苏格拉底诘问法审读请求装配控制面：message lineage、protocol transcript与continuation object
 
-这一章不再解释 Prompt 为什么强，而是把 `architecture/82` 与 `philosophy/84` 继续压成一套 builder-facing 审读模板。
+这一章不再解释 Prompt 为什么强，而是把 `architecture/82` 与 `philosophy/84` 沉成一套 builder-facing 审读问题序列。
 
 它主要回答五个问题：
 
 1. 怎样避免把 Prompt 魔力重新写回 system prompt 咒语。
-2. 怎样按固定顺序审读 `authority chain`、`section registry`、`dynamic boundary`、`protocol transcript`、`message lineage` 与 `continuation object`。
+2. 怎样按固定顺序审读 `message lineage`、`projection consumer`、`section registry / dynamic boundary`、`protocol transcript`、`continuation object` 与 `continuation qualification`。
 3. 怎样判断一个 runtime 是否真的先把世界编译进模型，而不是先把世界描述给模型。
 4. 怎样识别那些看起来更聪明、实际更脆的坏改写。
-5. 怎样用苏格拉底式追问避免把这份模板重新写成一份更长的 Prompt 规范。
+5. 怎样用苏格拉底式追问避免把这些问题重新压扁成一份更长的 Prompt 规范。
 
 ## 0. 代表性源码锚点
 
@@ -23,7 +23,7 @@
 - `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
 - `claude-code-source-code/src/query/stopHooks.ts:84-214`
 - `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
-- `../architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md`
+- `../architecture/82-请求装配流水线：message lineage、projection consumer、protocol transcript、continuation qualification与cache-safe forks.md`
 - `../philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`
 
 这些锚点共同说明：
@@ -99,11 +99,11 @@
 
 - 如果 `parentUuid / message.id / tool_use_id` 的职责没有分开，后续一旦进入 compact、tool pairing 或 replay，系统就会开始错配是谁在继续同一个世界。
 
-### 2.8 当 behavior drift 发生时，团队能否点名断的是哪一层边界
+### 2.8 当 behavior drift 发生时，团队能否点名断的是哪一层对象边界
 
 判断标准：
 
-- 如果最后只能说“模型这次变笨了”，而不能说是 `authority chain / section registry / protocol transcript / lawful forgetting / continuation object` 哪一层失守，就还没有形成可解释 Prompt runtime。
+- 如果最后只能说“模型这次变笨了”，而不能说是 `message lineage / projection consumer / protocol transcript / lawful forgetting / continuation object / continuation qualification` 哪一层失守，就还没有形成可解释 Prompt runtime。
 
 ## 3. 常见自欺
 

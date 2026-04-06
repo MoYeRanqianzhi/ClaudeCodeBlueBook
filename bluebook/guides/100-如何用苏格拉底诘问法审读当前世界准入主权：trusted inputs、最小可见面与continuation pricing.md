@@ -1,14 +1,14 @@
-# 如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing
+# 如何用苏格拉底诘问法审读当前世界准入主权：governance key、decision window与continuation pricing
 
-这一章不再解释安全与省 Token 为什么同构，而是把 `architecture/83` 与 `philosophy/85` 继续压成一套 builder-facing 审读模板。
+这一章不再解释安全与省 Token 为什么同构，而是把 `architecture/83` 与 `philosophy/85` 沉成一套 builder-facing 审读问题序列。
 
 它主要回答五个问题：
 
 1. 怎样避免把治理重新写回“更严的拦截器”。
-2. 怎样按固定顺序审读 `governance key`、`externalized truth chain`、`typed ask arbitration`、`deferred visibility`、`externalization` 与 `continuation pricing`。
+2. 怎样按固定顺序审读 `governance key`、`externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup`。
 3. 怎样判断一个 runtime 是否真的把“当前世界的准入主权”保留在 runtime，而不是外包给模型或低信任输入。
 4. 怎样识别那些看起来更保守、实际更脆的坏改写。
-5. 怎样用苏格拉底式追问避免把这份模板重新写成设置页说明书。
+5. 怎样用苏格拉底式追问避免把这些问题重新写成一张设置页导览。
 
 ## 0. 代表性源码锚点
 
@@ -21,7 +21,7 @@
 - `claude-code-source-code/src/utils/toolResultStorage.ts:740-860`
 - `claude-code-source-code/src/query/tokenBudget.ts:45-92`
 - `claude-code-source-code/src/services/remoteManagedSettings/index.ts:413-610`
-- `../architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`
+- `../architecture/83-反扩张治理流水线：governance key、typed ask、decision window与continuation pricing.md`
 - `../philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md`
 
 这些锚点共同说明：

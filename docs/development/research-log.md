@@ -6,6 +6,28 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/claude-code-risk-analysis`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 doctrine 语气收口动作: 已继续更新 `03-设计哲学` 后半段，把 `继续深挖 / 更稳的模板 / 渐进改写 / 值得继续往` 这类更像研究日志、写作工位与 workshop 提示的句型收回到更稳定的原则陈述。
+- 本轮语气层判断加固: 当前最值钱的“深入”已不只是继续换对象词，而是把理论页本身写成成熟制度判断；否则即便对象链正确，正文仍会让读者感觉作者还在加工理论，而不是在交付理论。
+- 本轮 Prompt / 治理 / 结构深化结论: `03-设计哲学` 后半段现已更直接地把 Prompt 写成协作语法与受治理宪法，把安全写成资源定价秩序，把构建系统写成结构秩序工具，把制度自审、坏解对照与保序迁移写成成熟制度的内生能力。
+- 本轮第一性原理前门推进动作: 已继续更新 `navigation/01`、`09` 与 `03-设计哲学`，把 `request object / authority object / 正式对象` 这些旧本体词从三张关键理论前门里收回到 `请求世界 / governance pricing chain / current-truth surface / 权威入口`，避免读者再把“对象”误读成蓝皮书的总解释轴。
+- 本轮 Prompt 母线加固: 已继续把 Prompt 魔力收紧为 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification` 这条链，不再把 `request object` 当根对象；`display / protocol / handoff truth` 现被更明确地写成同一条 lineage 的不同消费者视图。
+- 本轮治理母线加固: 已继续把安全与省 token 统一收紧到 `governance pricing chain`，并把治理链条更明确写成 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；mode、modal、dashboard 与 default-continue 被进一步降级为投影替身而非根对象。
+- 本轮源码先进性前门加固: 已继续把 `09` 的第三张控制面与 `navigation/01` 的源码质量线前移到“当前真相是否被正式保护，不让过去与失控复杂度写坏现在”，把“复杂度中心合法 / 边界可证 / 下一次重构仍有路”收回为这一主判断的检验证据。
+- 本轮正文去编排化动作: 已删除 `09` 中“下一步该去哪里读”这类更适合导航页的路由段，并把 `navigation/01` 末尾的“对蓝皮书自己的约束”改写成更一般化的设计主张自检问题。
+- 本轮主分支同步检查: 根仓库 `main` 与 `origin/main` 当前同在 `3fa04b85f916980f264879d0632586c89f9aacc1`；`pull --ff-only` 仍因根工作区未解决冲突而失败，因此本轮继续只在 `.worktrees/mainloop` 内推进，不触碰主工作区冲突。
+- 本轮导航前门换代动作: 已继续更新 `navigation/03 / 40 / 44 / 46`，把深度专题总前门收回到“世界进入模型 / 扩张定价 / 当前真相”，并把 `40 / 44 / 46` 从层级沿革、文类安放与编排说明改写成直接面向 `message lineage / governance key / authority object` 的正文判断。
+- 本轮正文去记忆化动作: 已把 `40 / 44 / 46` 中“这一篇不再回答……”“为什么这层更适合落在……”这类更像编排记忆与作者工位说明的元话语移出正文中心，改成直接回答“哪种替身在夺权”“哪种误绑在制造第二真相”“哪种迁移顺序在写坏当前真相”。
+- 本轮第一性原理加固: 已继续把 `navigation/03` 的源码先进性入口从“公开镜像 / 热点文件 / 对象化”前移到“当前真相保护 / 合法复杂度中心 / 可证明边界 / 协作承载与升级”；并继续把 Prompt 魔力收紧为“同一世界的持续诚实”，把安全与省 token 收紧为同一条 `governance key / externalized truth chain / decision window / continuation pricing` 定价链。
+- 本轮旧链接标签清理动作: 已继续更新 `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41`，把仍沿 `architecture/82-84` 旧文件名暴露出来的 `authority chain / trusted inputs / single-writer surfaces` 收回到 `message lineage / projection consumer / continuation qualification`、`governance key / decision window / continuation pricing` 与 `authority object / freshness gate / ghost capability`。
+- 本轮链接标签判断加固: 当正文和前门都已经换代后，最容易继续反向输送旧术语的就是引用标签与目录名残留；这批是在清这种“链接还在讲旧世界，正文已在讲新世界”的噪音。
+- 本轮审读模板去姿态词动作: 已继续更新 `guides/99 / 100 / 101`，把开头里残留的“继续压成一套模板 / 更长 Prompt 规范 / 设置页说明书 / 结构洁癖清单”这类写作姿态词，收回成更稳定的“审读问题序列 / 设置页导览 / 结构外观清单”表达。
+- 本轮模板判断加固: 当对象链已经对齐后，最会反向制造作者工作台气味的往往不是对象名，而是“我在继续压模板”“别把它写成说明书”这类写作姿态词；这批就是在清这种残留。
+- 本轮目录路由标签推进动作: 已继续更新 `casebooks/README`、`security/README` 与 `risk/README`，把目录层仍沿旧文件名暴露出来的 Prompt / 治理可见标签收回到当前对象链，避免读者在进入正文前又被旧 front words 拉回上一代语言。
+- 本轮目录层判断加固: 目录优化到了这一层，最值钱的往往不是再改结构，而是先把 README 可见标签和推荐链路里的旧对象词收掉；否则路由层会持续反向污染已经换代的正文。
+- 本轮目录职责收口动作: 已继续更新 `bluebook/README`、`guides/README` 与 `playbooks/README`，把根 README 固定为宪法前门，把 `guides/` 与 `playbooks/` 目录首页收窄成各自的稳定起点页，不再在前门展开桥接记忆与完整多跳链。
+- 本轮目录结构判断加固: 目录优化在这一层最值钱的，不再是补更多推荐链，而是减少“每个目录首页都在半解释、半路由、半桥接”这种角色混写；宪法前门、目录起点和跨目录深链应分别由 `README`、子目录 README 和 `navigation/README` 独占。
+- 本轮苏格拉底审读前门推进动作: 已继续更新 `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41`，把 Prompt / 治理 / 结构自校模板的可见主语从 `authority chain / trusted inputs / single-writer / compiled request truth` 收回到 `message lineage / projection consumer / continuation qualification`、`governance key / decision window / durable-vs-transient cleanup` 与 `authority object / freshness gate / ghost capability`。
+- 本轮自校层判断加固: 当前最值钱的“深入”不再只是补更多结论，而是让自校问题本身先问当前对象链；否则读者即使记住结论，也会沿旧 front words 去反问自己。
 - 本轮前门合同收口动作: 已继续更新 `README / navigation/README / 03 / 09`，把 `09` 固定成唯一主线宪法文案源，把根 README 与导航 README 进一步降成路由页，并把 `09` 第一张控制面图里的 Prompt 根对象从 `authority chain / request object` 收回到 `message lineage / projection consumer / protocol transcript / continuation qualification`。
 - 本轮目录结构判断加固: 目录优化在当前阶段最值钱的，不是再加更多推荐链，而是让根 README、导航 README 与主线页不再各自近义改写三条母线；只保留一个权威短语源，其余前门只负责分流或解释。
 - 本轮 Prompt / 治理前门收口动作: 已继续更新 `casebooks/13 / 35 / 46` 与 `navigation/43`，把 Prompt / 治理反例与支持面入口的可见主语从 `Evidence Envelope / 假窗口重置 / 免费重入 / 前缀托管 / rollback object` 收回到 `message lineage / protocol transcript / stable prefix boundary / continuation qualification / threshold liability` 与 `governance key / decision window / durable-vs-transient cleanup`。

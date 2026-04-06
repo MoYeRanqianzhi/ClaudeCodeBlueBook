@@ -1,14 +1,14 @@
-# 如何用苏格拉底诘问法审读one writable present：single-writer、recovery asset与anti-zombie
+# 如何用苏格拉底诘问法审读one writable present：authority object、freshness gate与ghost capability
 
-这一章不再解释源码先进性为什么成立，而是把 `architecture/84` 与 `philosophy/86` 继续压成一套 builder-facing 审读模板。
+这一章不再解释源码先进性为什么成立，而是把 `architecture/84` 与 `philosophy/86` 沉成一套 builder-facing 审读问题序列。
 
 它主要回答五个问题：
 
 1. 怎样避免把源码先进性重新写回目录美学与小文件焦虑。
-2. 怎样按固定顺序审读 `single-writer surface`、`recovery asset non-sovereignty`、`anti-zombie invariant` 与 `release shaping`。
+2. 怎样按固定顺序审读 `authority object / per-host authority width`、`event-stream-vs-state-writeback`、`freshness gate`、`recovery asset non-sovereignty` 与 `ghost capability eviction`。
 3. 怎样判断一个 runtime 是否真的保住了 one writable present。
 4. 怎样识别那些看起来更整齐、实际更会制造第二真相的坏改写。
-5. 怎样用苏格拉底式追问避免把这份模板重新写成结构洁癖清单。
+5. 怎样用苏格拉底式追问避免把这些问题重新写成结构外观清单。
 
 ## 0. 代表性源码锚点
 
@@ -26,7 +26,7 @@
 - `claude-code-source-code/src/tools/PowerShellTool/pathValidation.ts:1515-1614`
 - `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:15-69`
 - `claude-code-source-code/src/services/mcp/utils.ts:171-200`
-- `../architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md`
+- `../architecture/84-权威面与反僵尸图谱：authority object、freshness gate、ghost capability与release shaping.md`
 - `../philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`
 
 这些锚点共同说明：

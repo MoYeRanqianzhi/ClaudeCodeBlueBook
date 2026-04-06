@@ -8,6 +8,70 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `03-设计哲学` 后半段现已继续把 workshop 语气收口：
+  - Prompt、治理、构建、自审、坏解对照与迁移这些段落，现已更少使用“继续深挖 / 更稳的模板 / 渐进改写”这类作者工位话术，更多直接写成原则判断、保序原则与拒收入口。
+  - 这使 `03-设计哲学` 整页更像已经落定的制度解释，而不再像正在加工中的研究稿。
+- 新的长期结论：
+  - 当对象链已经对齐后，下一层最值钱的文档优化往往不是继续换名词，而是继续驱逐 workshop 语气；因为这类语气会让成熟制度看起来像作者正在摸索的临时结论。
+  - 真正成熟的理论页，应该直接陈述“原则是什么、坏解法是什么、第一拒收入口在哪、保序原则是什么”，而不是持续提醒读者作者还在“继续深挖”。
+- `navigation/01`、`09` 与 `03-设计哲学` 现已继续把理论前门里的旧本体词收口：
+  - `request object` 现已从 Prompt 前门退下，改由 `请求世界` 与 `message lineage -> projection consumer -> protocol transcript -> continuation qualification` 这条链承担 Prompt 魔力解释。
+  - `authority object` 在治理与源码先进性前门里现已继续分解为 `governance pricing chain`、`current-truth surface` 与 `权威入口`，不再把过强抽象词混充三条母线的共同主语。
+  - `正式对象` 现已从 `09` 与 `03-设计哲学` 的宪法页退下，改由“关键编译环节 / 必须守住的链 / 必须守住的约束”这类更接近第一性原理的表述接管。
+- 新的长期结论：
+  - Prompt 魔力最稳的解释不是“同一个 request object”，而是“同一条 message lineage 在 projection consumer、protocol transcript、lawful forgetting、continuation qualification 与 cache-safe forks 中持续不丢失同一个世界”。
+  - 安全设计与省 token 设计最稳的入口不是权限门数或预算 UI，而是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 这条统一定价链。
+  - 源码先进性最值钱的前门，不是“复杂度中心合法”这类证据句本身，而是“当前真相必须被正式保护，不让过去与失控复杂度写坏现在”；前者应作为后者的可检验证据。
+- `09` 与 `navigation/01` 现已继续把正文里的编排话术收口：
+  - `09` 现已去掉“下一步该去哪里读”这类路由段，让宪法页更像宪法页。
+  - `navigation/01` 末尾现已不再写“对蓝皮书自己的约束”，而是改成更一般化的设计主张自检问题，可直接拿去审读任意新 runtime 或新章节。
+- 新的长期结论：
+  - 后期优化里，除了“作者记忆”外，最该从正文里持续驱逐的另一类噪音，是“路由说明 / 文类分工 / 写作工位规则”这类编排话术；它们应优先沉到 `docs/` 和记忆层，而不是继续占据 bluebook 理论页中心。
+- `navigation/03 / 40 / 44 / 46` 现已继续把前门主语收口：
+  - 深度专题总前门已从 `Prompt / 预算 / 对象 / 底盘 / 治理` 收回到“世界进入模型 / 扩张定价 / 当前真相”三张控制面，不再把“对象”本身当一级解释轴。
+  - `40 / 44 / 46` 现已不再把“这一层放在哪类文档更合适”当正文主语，而是直接围绕 `message lineage / governance key / authority object` 写失真、宿主误绑与迁移次序。
+- 新的长期结论：
+  - 当蓝皮书进入后期优化，最容易混进正文的已不只是作者记忆，也包括“文类沿革 / 目录安放 / 阅读编排”这类元叙事；这类内容应优先回写到 `docs/`，不应继续占据 bluebook 正文中心。
+  - 导航页真正成熟时，不再先解释“这篇属于哪一层”，而是先指出“哪种替身在夺权、哪种 drift 在制造第二真相、哪种顺序会把当前真相写坏”。
+- `navigation/03` 现已继续把 Prompt 魔力、源码先进性与协作承载线往第一性原理收紧：
+  - Prompt 魔力前门现已进一步收紧为“同一世界的持续诚实”，不再把“对象链”本身当主要口号。
+  - 源码先进性入口现已更靠前地暴露“当前真相保护 / 合法复杂度中心 / 可证明边界”，把“公开镜像证据分级 / 热点文件研究法”降为方法性补充。
+  - `对象化深线` 现已收回为 `协作承载与升级深线`，以免前门把承载体误读成新的总本体。
+- 新的长期结论：
+  - “安全设计”和“省 token 设计”真正共用的不是一组设置页，而是同一条世界准入定价链；后续凡是治理前门，都应优先暴露 `governance key / externalized truth chain / decision window / continuation pricing`，而不是 mode、面板或 token 条。
+- `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41` 现已继续把旧链接标签收口：
+  - Prompt 线当前连到 `architecture/82` 时，已不再先暴露 `authority chain`，而是优先暴露 `message lineage / projection consumer / protocol transcript / continuation qualification`。
+  - 治理线当前连到 `architecture/83` 时，已不再先暴露 `trusted inputs`，而是优先暴露 `governance key / typed ask / decision window / continuation pricing`。
+  - 结构线当前连到 `architecture/84` 时，已不再先暴露 `single-writer surfaces`，而是优先暴露 `authority object / freshness gate / ghost capability`。
+- 新的长期结论：
+  - 文档真正换代后，链接标签本身也要换代；否则读者会在点击前先被旧对象词重新定向。
+  - 目录结构和对象链优化走到后期，最值钱的工作经常不是再补正文，而是清掉这些仍在低声复述旧世界观的标签层噪音。
+- `guides/99 / 100 / 101` 现已继续把开头元话语去姿态化：
+  - Prompt / 治理 / 结构三张苏格拉底模板当前都更明确被写成“审读问题序列”，而不是“继续压成的一套模板”。
+  - `Prompt 规范 / 设置页说明书 / 结构洁癖清单` 这类写作姿态词已继续降级为更稳定的阅读对象表达。
+- 新的长期结论：
+  - 当模板页的对象链已经换代后，最容易残留旧作者工作台气味的常常是开头元话语；这类词不会直接改错对象，却会持续把读者带回“作者正在加工模板”的阅读姿态。
+  - 深化设计内涵时，连“怎样介绍这套问题”也应稳定对象化，否则第一性原理会被模板加工口吻重新稀释。
+- `casebooks/README`、`security/README` 与 `risk/README` 现已继续把路由层可见标签收口：
+  - `casebooks/README` 现已把 Prompt 长期验证反例入口从 `authority chain / compiled request card` 这类旧标签收回到 `lineage kernel / message lineage card / protocol truth`。
+  - `security/README` 与 `risk/README` 现已把治理接入 / 验收 / 修复链入口从 `authority source / permission ledger / continuation gate / rollback object` 的旧标签收回到 `governance key / typed ask / decision window / continuation pricing / cleanup`。
+- 新的长期结论：
+  - 目录层真正成熟时，链接文本本身也必须服从当前对象链；否则就算正文已经换代，README 仍会继续把读者送回旧术语世界。
+  - Prompt / 治理线的目录优化不只是在调路由层级，也是在清理“旧文件名词汇继续冒充当前入口标签”的长期噪音。
+- `bluebook/README`、`guides/README` 与 `playbooks/README` 现已继续把目录职责收口：
+  - 根 README 现已更明确只承担宪法前门和一级路由，不再自己展开 Prompt 执行多跳链。
+  - `guides/README` 现已更明确只给本目录起点，旧词汇桥接与跨目录映射统一回 `navigation/README`。
+  - `playbooks/README` 现已更明确只给执行阶段起点，不再在前门铺开完整多跳链。
+- 新的长期结论：
+  - 文档系统真正成熟时，宪法前门、目录起点和跨目录深链必须分治；一旦子目录 README 同时承担桥接、解释和深链，目录结构就会重新长回第二主线。
+  - 目录优化到了这一层，最值钱的不是“入口更多”，而是“每一层入口只承担一种导航粒度”。
+- `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41` 现已继续把苏格拉底审读前门收口：
+  - Prompt 自校前门现已优先点名 `message lineage / projection consumer / protocol transcript / continuation qualification`，不再先从 `authority chain / compiled request truth` 起步。
+  - 治理自校前门现已优先点名 `governance key / decision window / continuation pricing / durable-vs-transient cleanup`，不再先从 `trusted inputs / 最小可见面` 起步。
+  - 结构自校前门现已优先点名 `authority object / freshness gate / ghost capability`，不再先从 `single-writer / recovery asset / anti-zombie` 起步。
+- 新的长期结论：
+  - 自校模板真正成熟时，不应只把新对象写在正文中段；提问顺序本身就必须先沿当前对象链展开，否则苏格拉底问题也会继续沿旧世界观发问。
+  - 深化设计内涵时，最值钱的工作常常不是补新理论，而是把“如何追问”先对齐当前对象链；这样结论、验证和自反才会共用同一语言。
 - `README / navigation/README / 03 / 09` 现已继续把前门合同收口：
   - `README / navigation/README` 现已进一步降成路由页，不再各自半篇解释三条母线。
   - `03` 现已明确只解释 `09` 的三条固定短语，不再近义重写。
