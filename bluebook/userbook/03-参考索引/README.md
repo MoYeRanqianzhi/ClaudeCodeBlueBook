@@ -86,6 +86,7 @@
 82. 为什么 headless `print` 的 `task_started/task_progress/task_notification` 三段式 SDK 事件不是 queue lifecycle 那一层。
 83. 为什么 headless `print` 的 `task_progress/workflow_progress` 进展流属于宿主投影，而不是模型图层。
 84. 为什么 headless `print` 的 task result 会在 XML re-entry 路和 direct SDK close 路之间分叉，而不是统一回流。
+85. 为什么 headless `print` 的 `drainSdkEvents()` 不是一次普通 drain，而是一组时序护栏。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

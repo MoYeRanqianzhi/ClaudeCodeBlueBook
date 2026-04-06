@@ -84,3 +84,4 @@
 - [82-SDK task triad vs queue lifecycle 索引.md](./82-SDK%20task%20triad%20vs%20queue%20lifecycle%20索引.md)
 - [83-Task progress host projection vs model layer 索引.md](./83-Task%20progress%20host%20projection%20vs%20model%20layer%20索引.md)
 - [84-Task result return-path split 索引.md](./84-Task%20result%20return-path%20split%20索引.md)
+- [85-Headless print SDK event flush ordering 索引.md](./85-Headless%20print%20SDK%20event%20flush%20ordering%20索引.md)
