@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续补强 `userbook/03-参考索引/01-命令工具/README` 与 `06-命令类型、执行语义与可见性索引`，把命令工具这一组再压成一条更短总公式：`plane -> object -> semantics -> gate`
 - 继续更新 `userbook/03-参考索引/01-命令工具/01-命令索引`、`04-根命令与斜杠命令对照索引` 与 `05-设置、状态、预算与调参入口索引`，把命令工具索引进一步收口成“库存页 / plane 对照页 / 运行时对象页”的职责分工：`01` 现在更明确只回答命令名 inventory，`04` 现在更明确先分会外 lifecycle plane 与会内 session plane，`05` 现在更明确先分 `state truth -> trustworthiness -> decision window -> session tuning / display`
 - 继续更新 `userbook/05-控制面深挖/05-命令、提示词、技能、工具：入口选择决策树`、`11-命令对象、执行语义与可见性：为什么 slash command 不是同一种按钮`、`03-参考索引/01-命令工具/README` 与 `06-命令类型、执行语义与可见性索引`，把命令入口层进一步压成两条前门公式：`task object -> capability projection -> runtime gate -> execution surface` 与 `command object -> execution semantics -> visibility/caller gate -> host mode`，避免命令页和索引页重新退回按钮说明书
 - 本轮根仓库 `main` 同步检查更新为：`main=origin/main=2c50f2af703fdbe3a25c40bd8512258a75b0b5f7`、`main...origin/main = 0 0`，`merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
