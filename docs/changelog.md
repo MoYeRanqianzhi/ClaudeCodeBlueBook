@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `api/55`、`playbooks/36`、`playbooks/78` 与 `navigation/49`，把治理验收协议、执行、长期验证与迁移纠偏从 `authority source / permission ledger / continuation gate` 的旧并列 contract 收回到 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable/transient cleanup`
 - 继续更新 `playbooks/37`、`navigation/50 / 51`，把结构宿主验收协议与执行第一跳从 `authority state / resume order / recovery boundary` 的旧 contract 收回到 `authority object / writeback path / freshness gate / anti-zombie evidence / reopen boundary`
 - 继续更新 `playbooks/31` 与 `navigation/45`，把结构宿主接入第一跳从 `authority state / recovery boundary / 恢复成功率` 的旧根词收回到 `authority object / per-host authority width / authoritative path / freshness gate / stale-worldview / ghost-capability / anti-zombie evidence`
 - 继续更新 `architecture/79`、`navigation/39 / 42`、`guides/52` 与 `api/52`，把 taxonomy-core 从 `compiled request truth / authority source / continuation gate` 这些旧根词收回到两条单一对象链：Prompt 收回 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`，治理收回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`

@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮治理验收链纠偏动作: 已继续更新 `api/55`、`playbooks/36`、`playbooks/78` 与 `navigation/49`，把治理宿主验收协议、执行、长期验证与迁移纠偏从 `authority source / permission ledger / continuation gate / rollback object` 的旧并列写法收回到 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
+- 本轮治理验收字段再压缩动作: `api/55` 现已把 `authority source` 降为 `governance key` 的 source slot，把 `permission ledger` 降为 `typed ask` 证据面，把 `continuation gate` 降为 `continuation pricing` verdict；`playbooks/36` 与 `playbooks/78` 则把执行/验证链统一改写成 `governance key / externalized truth chain / typed ask / decision window / continuation pricing / durable-transient cleanup`。
+- 并行 Agent Prompt 下一批建议: Prompt 线最值钱的下一提交已收敛到 `guides/81 + guides/90`；这两页仍把 `compiled request truth / request object / continue qualification / recorrection card` 当执行 root，下一步应统一改写为 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`。
 - 本轮结构验收协议第一跳纠偏动作: 已继续更新 `playbooks/37`、`navigation/50 / 51`，把结构宿主验收从 `authority state / resume order / recovery boundary / writeback path / anti-zombie projection` 的旧 contract 收回到 `authority object -> writeback path -> freshness gate -> stale worldview / ghost capability -> anti-zombie evidence -> reopen boundary`。
 - 本轮结构验收字段再压缩动作: `playbooks/37` 现已把 `resume order` 明确降为 re-entry proof，只保留在 `freshness gate` 之后的子证据位；共享验收卡当前固定为 `authority_object`、`authoritative_path_ref`、`writeback_primary_path`、`freshness_gate_attested`、`stale_worldview_evidence`、`ghost_capability_eviction_state`、`anti_zombie_evidence_ref` 与 `reopen_boundary`。
 - 本轮宿主验收导航换骨动作: `navigation/50 / 51` 现已把 Prompt / 治理 / 结构三条验收协议线和执行线统一改成对象链入口，不再让 `compiled request truth / authority source / authority state` 这些旧 contract 名词继续占据导航根部。

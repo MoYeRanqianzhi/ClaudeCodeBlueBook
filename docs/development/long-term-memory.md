@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/55 / playbooks/36 / playbooks/78 / navigation/49` 现已把治理验收链与迁移纠偏统一到当前对象链：
+  - `55` 现已把 `authority source / permission ledger / continuation gate / rollback object` 明确降为 `governance key` source slot、`typed ask` 证据面、`continuation pricing` verdict 与 cleanup carrier。
+  - `36` 现已把治理宿主验收执行固定到 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
+  - `78` 现已把长期验证从 `最小可见面 / continuation gate` 的旧写法收回到 `decision window / continuation pricing / durable-transient cleanup`。
+  - `49` 现已把宿主迁移纠偏导航的三条母线统一改成 `message lineage / governance key / authority object` 对象链入口。
+- 新的长期结论：
+  - 治理验收真正成熟时，不应再把 `permission ledger` 与 `continuation gate` 写成一级 contract；前者只该作为 `typed ask` 的事务证据面，后者只该作为 `continuation pricing` 的 verdict 字段。
+  - 治理迁移纠偏真正成熟时，不应再把 mode 面板、权限账本截图与文件回退当作主修复对象；真正需要被先救回的是 `governance key`、`externalized truth chain`、`typed ask`、`decision window` 与 cleanup 语义。
+  - 并行 Agent 已收敛出 Prompt 下一批最值钱的边界：`guides/81 + guides/90` 仍在反向输送 `compiled request truth / request object / continue qualification` 这些旧执行主语，下一步应优先处理。
 - `playbooks/37 / navigation/50 / 51` 现已把结构宿主验收协议与执行第一跳统一到当前对象链：
   - `37` 现已把 `resume order` 明确降为 re-entry proof，把结构验收执行固定到 `authority object -> writeback path -> freshness gate -> stale worldview / ghost capability -> anti-zombie evidence -> reopen boundary`。
   - `50 / 51` 现已把宿主验收协议线与执行线统一改成对象链入口，不再让 `authority state / authority source / compiled request truth` 这些旧 contract 名词继续占据导航主轴。

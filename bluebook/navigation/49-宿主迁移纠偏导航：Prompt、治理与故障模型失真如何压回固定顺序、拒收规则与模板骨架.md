@@ -1,97 +1,74 @@
-# 宿主迁移纠偏导航：Prompt、治理与故障模型失真如何压回固定顺序、拒收规则与模板骨架
+# 宿主迁移纠偏导航：message lineage、governance key 与 authority object 如何压回固定顺序
 
-这一篇不再回答“宿主迁移最常怎样重新说谎”，而是回答：
+宿主迁移纠偏真正要救回的，不是更漂亮的迁移界面，而是三条对象链重新回到固定顺序：
 
-- 当 `compiled request truth`、`governance control plane object` 与结构真相面已经在宿主迁移中长出伪交接、假灰度与回退幻觉时，团队该怎样把这些失真继续压回固定纠偏顺序、拒收规则与模板骨架。
-
-它主要回答五个问题：
-
-1. 为什么宿主迁移失真层之后，蓝皮书仍需要单独讨论“宿主迁移纠偏层”。
-2. 为什么 Prompt 线如果不继续压回 compiled request truth ledger、protocol truth、cache explainability 与 continue qualification，就会反复退回截图与摘要。
-3. 为什么治理线如果不继续压回 authority source、permission ledger、decision window、continuation gate 与 rollback object，就会反复退回 mode 面板与仪表盘。
-4. 为什么结构线如果不继续压回 authority state、resume 顺序、bridge pointer 边界、writeback 主路径与 anti-zombie 结果面，就会反复退回 pointer 崇拜与成功率崇拜。
-5. 怎样用苏格拉底式追问避免把这层写成“更细的整改 checklist”。
+- Prompt: `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`
+- Governance: `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable/transient cleanup`
+- Structure: `authority object -> per-host authority width -> writeback path -> freshness gate -> anti-zombie evidence -> reopen boundary`
 
 ## 1. Prompt 宿主迁移纠偏线
 
-适合在这些问题下阅读：
+优先救回这些对象：
 
-- 怎样把 Prompt 宿主迁移从伪交接、黑箱灰度与继续资格幻觉拉回同一个 `compiled request truth`。
-- 怎样把 Prompt 失真继续压成固定纠偏顺序、拒收规则与模板骨架。
+1. `message lineage`
+2. `projection consumer`
+3. `protocol transcript`
+4. `continuation object`
+5. `continuation qualification`
 
-稳定阅读顺序：
+阅读顺序：
 
 1. `../guides/57`
 2. `../casebooks/28`
 3. `../playbooks/32`
 
-这条线的核心不是：
-
-- 再做一次 Prompt 迁移
-
-而是：
-
-- 把 Prompt 迁移最常见的第二真相重新压回 compiled request truth 的正式纠偏顺序
+如果纠偏开始退回截图、摘要与 last-message heuristic，说明 Prompt 迁移正在围绕展示替身补洞。
 
 ## 2. 治理宿主迁移纠偏线
 
-适合在这些问题下阅读：
+优先救回这些对象：
 
-- 怎样把治理宿主迁移从权限账本缺席、假窗口对齐与免费继续幻觉拉回同一个统一定价控制面。
-- 怎样把治理失真继续压成固定纠偏顺序、拒收规则与模板骨架。
+1. `governance key`
+2. `externalized truth chain`
+3. `typed ask`
+4. `decision window`
+5. `continuation pricing`
+6. `durable/transient cleanup`
 
-稳定阅读顺序：
+阅读顺序：
 
 1. `../guides/58`
 2. `../casebooks/29`
 3. `../playbooks/33`
 
-这条线的核心不是：
+如果纠偏开始退回 mode 面板、权限账本截图与文件级回退，说明治理迁移还没回到单一控制面。
 
-- 再讲一次控制面设计
+## 3. 结构宿主迁移纠偏线
 
-而是：
+优先救回这些对象：
 
-- 把治理迁移最常见的第二真相重新压回 authority source、decision window 与 rollback object 的正式纠偏顺序
+1. `authority object`
+2. `writeback path`
+3. `freshness gate`
+4. `anti-zombie evidence`
+5. `reopen boundary`
 
-## 3. 故障模型宿主迁移纠偏线
-
-适合在这些问题下阅读：
-
-- 怎样把结构宿主迁移从伪恢复采纳、指针健康幻觉与写回真相分叉拉回同一个结构真相面。
-- 怎样把结构失真继续压成固定纠偏顺序、拒收规则与模板骨架。
-
-稳定阅读顺序：
+阅读顺序：
 
 1. `../guides/59`
 2. `../casebooks/30`
 3. `../playbooks/34`
 
-这条线的核心不是：
-
-- 再做一次恢复 drill
-
-而是：
-
-- 把结构迁移最常见的第二真相重新压回 authority state、writeback 主路径与 anti-zombie 结果面的正式纠偏顺序
+如果纠偏开始退回 pointer 崇拜、成功率崇拜与作者补叙，说明结构迁移仍在消费假信号。
 
 ## 4. 为什么这层更适合落在 guides
 
-因为这一层最关键的问题已经不是：
+因为这里真正要固定的不是“最常坏在哪里”，而是：
 
-- 失败最常长什么样
-- 演练最常怎样被伪装成成功
-
-而是：
-
-1. 纠偏时第一步该先救回哪个对象。
-2. 哪些假信号应被立即拒收，而不是继续观察。
+1. 第一时间先救回哪个对象。
+2. 哪些假信号应被立即拒收。
 3. 哪些字段必须回到模板骨架，才算真正回到单一真相。
 4. later 团队应按什么顺序修，而不是按情绪救火。
-
-这些都更接近：
-
-- builder-facing 的纠偏手册层
 
 ## 5. 苏格拉底式自检
 
