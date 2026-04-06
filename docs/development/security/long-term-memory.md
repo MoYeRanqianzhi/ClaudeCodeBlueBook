@@ -22,6 +22,7 @@
 - `167` 已经稳定写出复活治理边界：repo 在 authoritative marker clearing、Layer-3 plugin refresh、`needsRefresh` / `/reload-plugins`、plan recovery 与 forked new-slug policy 上已明确展示 resurrection governance 的存在，说明决定“结束后留什么墓碑”与决定“旧对象怎样重新回到 current world”仍然是两层主权；因此 `artifact-family cleanup tombstone-governance` 仍不能越级冒充 `artifact-family cleanup resurrection-governance`。
 - `168` 已经稳定写出再赋权治理边界：repo 在 `deletePluginOptions()`、`setPluginEnabledOp()`、policy blocking、settings divergence guard 与 `copyPlanForFork()` 的 new-slug policy 上已明确展示 re-entitlement governance 的存在，说明决定“旧对象怎样回来”与决定“回来后恢复哪些旧资格”仍然是两层主权；因此 `artifact-family cleanup resurrection-governance` 仍不能越级冒充 `artifact-family cleanup re-entitlement-governance`。
 - `169` 已经稳定写出重配置治理边界：repo 在 `savePluginOptions()`、`getUnconfiguredOptions()`、`saveMcpServerUserConfig()`、`getUnconfiguredChannels()`、`needs-config` 与 `PluginOptionsFlow` / `ManagePlugins` 的 `configured / skipped / take effect` grammar 上已明确展示 reconfiguration governance 的存在，说明决定“对象回来后是否重新具备资格”与决定“它拿回资格后按哪组 current config 重新工作”仍然是两层主权；因此 `artifact-family cleanup re-entitlement-governance` 仍不能越级冒充 `artifact-family cleanup reconfiguration-governance`。
+- `170` 已经稳定写出重新激活治理边界：repo 在 `refreshActivePlugins()` 的 Layer-3 refresh primitive、`/reload-plugins` 的 take-effect contract、`useManagePlugins()` 的 `needsRefresh` discipline、`PluginInstallationManager` 的 mode-sensitive auto-refresh policy 与 `print.ts` 的 headless auto-consume path 上已明确展示 reactivation governance 的存在，说明决定“当前 config truth 是什么”与决定“这组 truth 何时真正接管 running session”仍然是两层主权；因此 `artifact-family cleanup reconfiguration-governance` 仍不能越级冒充 `artifact-family cleanup reactivation-governance`。
 
 ## 本轮已净化的正文段
 
@@ -41,14 +42,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-169`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance -> artifact-family cleanup resurrection-governance -> artifact-family cleanup re-entitlement-governance -> artifact-family cleanup reconfiguration-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone/resurrection/re-entitlement/reconfiguration ladder
+- `147-170`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance -> artifact-family cleanup resurrection-governance -> artifact-family cleanup re-entitlement-governance -> artifact-family cleanup reconfiguration-governance -> artifact-family cleanup reactivation-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone/resurrection/re-entitlement/reconfiguration/reactivation ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `170`
-  方向：`artifact-family cleanup reconfiguration-governor signer` 仍不等于 `artifact-family cleanup reactivation-governor signer`
-  原因：`169` 已经证明对象拿回 seat 后仍要单独回答 current config truth；但 `Configuration saved. Run /reload-plugins for changes to take effect.` 又明确说明配置写入 store 并不自动等于 running session 已按这组 truth 重新工作。也就是：谁配决定 restored path、promise、receipt 的 current config 何时真正进入 active world，这仍是另一层 reactivation governance 问题
-  证据起点：`src/commands/plugin/ManagePlugins.tsx` 的 save-vs-take-effect grammar、`src/utils/plugins/refresh.ts` 与 `src/commands/reload-plugins/reload-plugins.ts` 的 active refresh grammar、`PluginInstallationManager.ts` / `useManagePlugins.ts` 的 `needsRefresh` 对照共同说明：repo 已展示配置如何重写，但“何时重新激活到当前运行世界”仍是另一层主权
+- 候选 `171`
+  方向：`artifact-family cleanup reactivation-governor signer` 仍不等于 `artifact-family cleanup readiness-governor signer`
+  原因：`170` 已经证明 Layer-3 reactivation 只是在回答 current truth 何时接管 active world；但 `pluginReconnectKey`、MCP reconnect、auth / pending / failed 等后续状态仍说明 “active component 已换入” 并不自动回答 “它现在是否真的 ready for use”。也就是：谁配决定 restored path、promise、receipt 在重新激活后何时真正恢复可用性，这仍是另一层 readiness governance 问题
+  证据起点：`src/utils/plugins/refresh.ts` 只负责 bump `pluginReconnectKey` 与接管 AppState；`useManageMCPConnections`、MCP status surface 与后续 connect/auth grammar 则继续决定 connected / pending / needs-auth / failed truth。repo 已展示谁来激活，但“激活后何时真正 ready”仍是另一层主权
 
 ## 持续约束
 
