@@ -47,26 +47,17 @@
 
 第一次进入：
 
-- 建立整体判断：先读 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)，再回到 [00-导读](00-导读.md)、[01-源码结构地图](01-源码结构地图.md)、[03-设计哲学](03-设计哲学.md)、[06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)
-- 如果只想先抓最高阶判断：依次读 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)、[03-设计哲学](03-设计哲学.md)、[06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)、[philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型](philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md)、[philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价](philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md)、[philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在](philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md)、[philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路](philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md)
+- 先建立主线宪法：读 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)，再回到 [00-导读](00-导读.md)、[01-源码结构地图](01-源码结构地图.md)、[03-设计哲学](03-设计哲学.md)、[06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)
+- 只想先抓最高阶判断：读 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)、[03-设计哲学](03-设计哲学.md)、[06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)，再回各专题 README
 
-从能力与公开度进入：
+按主题进入：
 
-- 看 Claude Code 到底支持什么、承诺到哪：依次读 [04-公开能力与隐藏能力](04-公开能力与隐藏能力.md)、[05-功能全景与API支持](05-功能全景与API支持.md)、[08-能力全集、公开度与成熟度矩阵](08-能力全集、公开度与成熟度矩阵.md)、[navigation/02-能力、API与治理检索图](navigation/02-能力、API与治理检索图.md)、[api/README.md](api/README.md)
-- 看宿主接入与协议边界：先读 [05-功能全景与API支持](05-功能全景与API支持.md)，再去 [api/README.md](api/README.md) 与 [architecture/README.md](architecture/README.md)
+- 能力与公开度：先读 [04-公开能力与隐藏能力](04-公开能力与隐藏能力.md)、[05-功能全景与API支持](05-功能全景与API支持.md)、[08-能力全集、公开度与成熟度矩阵](08-能力全集、公开度与成熟度矩阵.md)
+- 设计内涵：先读 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)、[03-设计哲学](03-设计哲学.md)、[06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)
+- 方法与构建：先读 [02-使用指南](02-使用指南.md)，再去 [guides/README.md](guides/README.md)
+- 安全、风控与恢复：先回 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md) 的第二张图，再去 [security/README.md](security/README.md) 与 [risk/README.md](risk/README.md)
 
-从设计内涵进入：
-
-- 想直接抓三张控制面总图：先读 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)、[03-设计哲学](03-设计哲学.md)、[06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)，再去 [navigation/README.md](navigation/README.md) 选择深线路由
-- 想把三张控制面图落成 Builder 审读模板、长期验证手册或长期验证失真反例：统一先去 [navigation/README.md](navigation/README.md)
-
-从方法与质量进入：
-
-- 想从使用方法进入：先读 [02-使用指南](02-使用指南.md)，再去 [guides/README.md](guides/README.md) 与 [navigation/README.md](navigation/README.md)
-- 想在公开镜像条件下稳当地判断源码质量：先读 [07-运行时契约、知识层与生态边界](07-运行时契约、知识层与生态边界.md)，再去 [guides/README.md](guides/README.md)、[philosophy/README.md](philosophy/README.md) 与 [navigation/README.md](navigation/README.md)
-- 想看源码质量 / 可演化结构：先读 [03-设计哲学](03-设计哲学.md)、[06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)，再去 [philosophy/README.md](philosophy/README.md) 与 [navigation/README.md](navigation/README.md)
-- 想看安全、风控与误伤恢复：先回 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md) 的第二张图，再去 [philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价](philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md)、[security/README.md](security/README.md)、[risk/README.md](risk/README.md)、[casebooks/README.md](casebooks/README.md)
-- 想看失败样本、演练与 rollout：依次读 [casebooks/README.md](casebooks/README.md)、[playbooks/README.md](playbooks/README.md)、[navigation/README.md](navigation/README.md)
+更细的跨目录、跨阶段、跨工件阅读链，统一回 [navigation/README.md](navigation/README.md)。
 
 ## 索引分层
 

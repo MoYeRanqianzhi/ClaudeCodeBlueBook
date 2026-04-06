@@ -23,6 +23,8 @@
 - 本轮能力矩阵换骨动作: 已继续更新 `05`、`08` 与 `api/23`，把长清单、对象表与矩阵压缩判断继续降成补证层；正文前门只保留四层判断，标签只保留为结果写法。
 - 本轮地图协议化动作: 已继续更新 `01` 与 `api/30`，把源码地图继续从运行链路导览、目录级能力大全与体量图鉴压成 `authority / subset / second truth / danger surface / reject path` 的判断协议。
 - 本轮 Prompt 宪法收束动作: 已继续更新 `03`、`06`、`09` 与 `philosophy/14`，把 prompt 魔力继续从“system prompt 更强”压成 `request object / role contract / cache boundary / handoff truth` 四个正式对象。
+- 本轮入口与路由瘦身动作: 已继续更新 `README`、`00`、`philosophy/README`、`guides/README` 与 `navigation/README`，把根索引继续收回一级路由，把专题 README 继续收回簇级入口，把跨目录深链继续收回 `navigation/README`。
+- 本轮统一定价入口前移动作: 已继续更新 `security/README`、`risk/README`、`07` 与 `api/46-services`，把“安全 / 风控 / 省 token / services 平面”继续压回同一条扩张定价对象链。
 - 本轮旧框架降级动作: 已继续更新 `00`、`01`、`05` 与 `api/30`，把“五层拆解法 / 运行链路导览 / 目录级能力大全 / 快速统计”都明确降成辅助检索与热点定位材料，不再让它们先于三条高阶判断出场。
 - 本轮主线制度化动作: 已继续更新 `03`、`06`、`09`，把“设计哲学 / 第一性原理 / 三张控制面图”从高级观察继续收束为主线宪法、自我约束与读者固定判断顺序。
 - 本轮目录硬化动作: 已继续更新 `README`、`00-导读`、`00-总览`、`00-蓝皮书总览`、`navigation/03` 与 `09`，把 `09` 真正前置到一级阅读路径、去掉推荐链裸编号短写，并把兼容页进一步收回为跳转页。
@@ -100,6 +102,33 @@
 - `bluebook/03-设计哲学.md`
 - `bluebook/06-第一性原理与苏格拉底反思.md`
 - `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+
+### A107. 跨目录推荐链必须只有一个所有者
+
+- 根索引、`00` 和专题 README 一旦同时开始发放跨目录阅读链，读者实际收到的不是“更多帮助”，而是多套竞争中的入口协议。
+- 更稳的目录分工应继续写硬：根索引只保留一级路由与最短主线，专题 README 只保留本目录簇级入口，`navigation/README` 独占跨目录、跨阶段、跨工件的深链路。
+- 这也解释了为什么 README 的成熟度不在“链接更多”，而在“知道哪些链该交出去”。
+
+证据:
+
+- `bluebook/README.md`
+- `bluebook/00-导读.md`
+- `bluebook/philosophy/README.md`
+- `bluebook/guides/README.md`
+- `bluebook/navigation/README.md`
+
+### A108. 安全、风控、省 token 与 services 平面真正成熟时，会重新收回同一条定价对象链
+
+- `security` 写动作、权威、上下文与时间四种扩张如何被收费，`risk` 写这张账怎样在身份、组织、入口与恢复上显形，`services` 写这张账落成哪些权威入口对象；三者如果分开写，读者就会重新回到规则堆、封禁叙事和后台杂项目录。
+- 所以入口页最值钱的不是再加一个“统一预算器”口号，而是把 `request truth / continuation asset / capability governance` 继续对应到 `api / compact / memory / mcp` 这些对象。
+- 这也说明“省 token”真正该写进安全前门，而不是被留作成本附题；因为它收费的是上下文与时间扩张，本来就是治理控制面的一部分。
+
+证据:
+
+- `bluebook/security/README.md`
+- `bluebook/risk/README.md`
+- `bluebook/07-运行时契约、知识层与生态边界.md`
+- `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`
 
 ### A100. 设计内涵继续深化后，最值钱的不再是更多高阶短句，而是把高阶短句压成可排查的对象
 

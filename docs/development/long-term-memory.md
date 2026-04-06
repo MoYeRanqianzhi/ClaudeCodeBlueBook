@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `README / 00 / philosophy/README / guides/README / navigation/README` 已继续把目录结构收回稳定分工：
+  - 根索引现已更明确只保留一级路由与最短阅读路径，不再兼任二级导航器。
+  - `00` 现已继续收回正文判断，弱化 dated scan 与长阅读脚本。
+  - `philosophy/README`、`guides/README`、`navigation/README` 现已更明确把跨目录细链收回到更少的稳定节点。
+- `security/README / risk/README / 07 / api/46-services` 已继续把统一定价秩序前置到入口：
+  - `security/README` 现已更明确把省 token 写成安全控制面的上下文与时间维度。
+  - `risk/README` 现已更明确把风控写成统一价格秩序在身份、组织、入口与恢复上的用户侧显形。
+  - `07` 与 `api/46-services` 现已更明确把 `request truth / continuation asset / capability governance` 对应到 `api / compact / memory / mcp` 这些权威入口。
+- 新的长期结论：
+  - 跨目录推荐链必须有单一所有者；更稳的目录秩序是根索引管一级路由，专题 README 管本目录入口，`navigation/README` 独占跨目录链。
+  - 安全、风控、省 token 与服务平面不该被写成四个专题，而应被持续压回同一张扩张定价控制面。
 - `03 / 06 / 09 / philosophy/14` 已继续把 prompt 魔力从“文案更强”压成正式对象：
   - `philosophy/14` 现已更明确把 prompt 合同写成 `request object / role contract / cache boundary / handoff truth`，减少“神 prompt 评论”口吻。
   - `03 / 06 / 09` 现已更明确把 Prompt 线的最短判断统一压到这四个对象上，避免主线页与哲学页各自漂回抽象赞美。

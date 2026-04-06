@@ -73,6 +73,15 @@
 4. 哪些 stale write / recovery object / projection 最容易在时间上撒谎
 5. future maintainer 如果不同意当前实现，应先沿哪条入口链拒收它
 
+再往上收一层，`services/` 也不是模块清单，而是统一定价秩序落成对象层的地方：
+
+- `api` 守请求真相
+- `compact` 与 budget 子系统守上下文与时间边界
+- `SessionMemory` 与 `PromptSuggestion` 守 continuation 资产
+- `mcp` 与 `remoteManagedSettings` 守外部能力边界
+
+如果不先看到这条主线，读者就会重新把 `services/` 误读成后台杂项集合。
+
 ## 2. API / Transport 子系统
 
 核心目录与文件：
