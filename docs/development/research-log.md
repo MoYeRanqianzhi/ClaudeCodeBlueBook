@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮第二层标题债收口动作: 已继续更新 `api/75 / 76` 与 `playbooks/27 / 28`，把深协议页与验证页的可见主语从 `compiled request truth restitution / authority source restitution / authority source / recovery asset` 继续收回到 `message lineage restitution / governance key restitution / governance key / authority object / recovery asset non-sovereignty`。
+- 本轮标题债分层结论: 当前最值钱的标题债已经明显分成两层，一层是宿主验收与入口合同页，一层是深协议与验证页；这一批补的是第二层。再往下继续，优先级最高的是 prompt/governance 的更深 API 标题和少数 casebooks 可见标题，而不是继续扩写 README。
 - 本轮可见标题债收口动作: 已继续更新 `api/75 / 76` 与 `playbooks/27 / 28`，把深协议页与验证页的 H1 主语从 `compiled request truth restitution / authority source restitution / authority source / recovery asset` 这些旧可见根词收回到 `message lineage restitution / governance key restitution / governance key / authority object / recovery asset non-sovereignty`。
 - 本轮“标题先于正文”判断加固: 当前最危险的不是正文没改，而是可见标题继续给读者和 later maintainer 发旧主语；这一批就是在补这种“正文已换代、标题仍旧时代”的二次失真。
 - 本轮 API 合同页纠偏动作: 已继续更新 `api/54 / 56`，把 Prompt / 结构宿主验收协议从 `compiled request truth / authority state / resume order / recovery boundary` 的旧 contract 主语收回到 `message lineage / projection consumer / protocol transcript / continuation object / continuation qualification` 与 `authority object / per-host authority width / writeback path / freshness gate / anti-zombie evidence / reopen boundary`。
