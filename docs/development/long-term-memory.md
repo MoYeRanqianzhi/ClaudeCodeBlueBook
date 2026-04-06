@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`00-导读`、`03-设计哲学`、`06-第一性原理与苏格拉底反思`、`09-三张控制面总图`、`philosophy/README` 与 `navigation/README` 现已继续把三条母线的 frontdoor nouns 收紧成更少但更硬的一组：
+  - Prompt 前门现在更明确固定为 `same-world compiler = Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`，并在入口层补上 `authority_blur / transcript_conflation / continuation_story_only` 三条 first reject signal。
+  - 治理前门现在更明确把 canonical chain 顶到 README 层：`governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；`Narrow / Later / Outside` 被进一步降成助记，而不是第二套对象链。
+  - 当前真相线现在更明确把 README 层的高阶压缩写成 `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability`，不再只用 `truth ladder` 或 `current-truth surface` 一条结果词顶替整条判断。
+- 新的长期结论：
+  - Prompt 线真正进入目录前门后，最稳的写法不是重复 `same-world test`，而是让 later maintainer 先学会 `Authority / Boundary / Transcript / Lineage / Continuation / Explainability` 这 6 个 nouns，再用 `same-world test` 当 gate。
+  - 目录结构优化真正值钱的下一步不是把更多深链搬上根 README，而是让 `bluebook/README` 只负责第一问题和最短顺序，把深链稳定回收到 `navigation/README`；只要根 README 继续复制深链，first-answer duplication 就还在。
+  - `09` 必须和各类 README 保持同一套 canonical formula；否则前门层会先统一，宪法层却仍停留在旧 noun set，later maintainer 会在第一跳就学到两版 Prompt / 治理 / 源码质量前门。
+  - 治理线真正进入 frontdoor 后，最稳的一句话不是“治理先外化当前真相，再批准当前扩张”的口号版，而是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 这条收费链；`Narrow / Later / Outside` 只该保留为助记。
+  - 安全页与风控页在目录结构上必须继续分工：`security/README` 负责同一收费链在 signer/ledger/cleanup 侧的结算面，`risk/README` 负责同一收费链在用户侧 product promise / signer + evidence + reopen 侧的结算面；两者都不应再退回第二套规则堆。
+  - 源码质量前门真正成熟时，README 层不该再只写 `truth ladder`，而应同时给出“合法复杂度中心 + one writable present + later maintainer rejectability”这一句，和 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 这一顺序。
 - `userbook/04-专题深潜/19-会外控制台与会内面板专题`、`03-参考索引/01-命令工具/03-CLI 旗标与根命令索引`、`04-根命令与斜杠命令对照索引`、`05-设置、状态、预算与调参入口索引` 与 `06-第一性原理与苏格拉底反思` 现已继续把 root/session/control-surface 这一组前门压成同一条双段对象链：
   - root plane 现在更明确固定为 `compile same world -> bootstrap plane -> session materialization -> authority/context assembly -> runtime handoff`；它负责装世界，而不是展示 current world。
   - session plane 现在更明确固定为 `state truth -> trustworthiness -> decision window -> continuation path -> session tuning / display`；它只在 root plane 已把工作世界装好后才成立。

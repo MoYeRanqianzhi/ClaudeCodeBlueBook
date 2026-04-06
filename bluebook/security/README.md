@@ -3,6 +3,10 @@
 `security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，不要急着把安全页读成另一套规则堆。
 
+如果只先记安全前门的一句话，也只记这句：
+
+- 这不是第二套安全故事，而是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链在安全侧的结算面。
+
 ## 先记四句
 
 - 安全不是单点沙箱，也不是单点分类器，而是一套 signer、ledger 与 lifecycle control plane。
@@ -49,10 +53,11 @@
 - 如果你只先判断“cleanup 与 forgetting 为什么不能混成一个结果词”，从 `147-224` 进入。
   - 失败信号：还在把完成、终局、遗忘、清理写成一个“已经没事了”的总结果。
 
-更稳的 first reject signal 还应先记两条：
+更稳的 first reject signal 还应先记三条：
 
 1. `Context Usage`、mode 条和 token UI 开始冒充治理真相
 2. cleanup 结果词开始越级替 signer 和 verdict 说话
+3. `Later / Outside`、default continuation 或全量可见重新让免费扩张复活
 
 ## 按问题进入
 

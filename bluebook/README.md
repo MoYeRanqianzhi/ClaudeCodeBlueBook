@@ -5,14 +5,22 @@
 如果把蓝皮书入口再压成最短公式，只剩三条：
 
 1. Prompt
-   - `same-world test = world-defining winner -> message lineage -> protocol transcript -> stable bytes -> continuation qualification`
+   - `same-world compiler = Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
 2. 治理
-   - `治理先外化当前真相，再批准当前扩张`
-   - `Narrow / Later / Outside + stable bytes + working set`
+   - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
+   - `Narrow / Later / Outside` 只是这条收费链的用户侧助记，不是第二套主题
 3. 当前真相保护
-   - `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface`
+   - `contract -> registry -> current-truth surface -> consumer subset -> danger surface -> future-maintainer rejectability`
 
 如果 later maintainer 第一次进蓝皮书时还看不见这三条，目录结构就还在迫使他先学对象层总结，再自己回压成第一性原理。
+
+如果只先记 Prompt 前门的一句话，也只记这句：
+
+- Prompt 的魔力不在措辞，而在它先用 Authority 定义世界、用 Boundary 固定合法字节、用 Transcript 规定模型实际消费、用 Lineage 保住同一身份、用 Continuation 裁定还能否继续，并用 Explainability 把失稳点提前点名。
+
+如果只先记治理前门的一句话，也只记这句：
+
+- 治理不是更会拦截，而是先由 governance key 外化当前真相，再给动作、可见性、上下文与 continuation 的一切扩张定价；安全、省 Token 与恢复都只是这条收费链的外观。
 
 如果继续把入口压成 later maintainer 能直接拿来排查的最小顺序，它还应再暴露三行：
 
@@ -73,16 +81,34 @@
 
 如果入口层不给这三组顺序，目录结构优化就仍然主要在帮读者“找到页”，还没有开始帮 later maintainer “先拿到同一套排查动作”。
 
-## 四条深剖稳定入口
+Prompt 线还应再暴露三条 first reject signal：
 
-- 想继续剖 Prompt 为什么会显得有魔力
-  先走 `09 -> navigation/05 -> navigation/15 -> philosophy/84 -> architecture/82 -> guides/99 -> playbooks/77`，先校正模仿对象，再追第一条反证信号，最后才去看长期验证与回归；前门先问的是 `same-world test`，不是 Prompt 文案强不强。
-- 想继续剖安全设计与省 token 为什么其实是同一条治理链
-  先走 `09 -> navigation/05 -> navigation/15 -> philosophy/85 -> architecture/83 -> guides/100 -> playbooks/78`，先确认 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 没有在入口层被写浅；最短 token 经济公式先记 `Narrow / Later / Outside + stable bytes + working set`。
-- 想继续剖源码先进性为什么不是目录更漂亮
-  先走 `09 -> navigation/05 -> navigation/15 -> philosophy/76 / 86 / 87 -> architecture/84 -> guides/101 / 102 -> playbooks/79`，先把“当前真相保护”守住，再去谈热点文件、依赖图与 mirror gap；前门先认 `truth ladder`，再谈结构体感。
-- 想继续优化蓝皮书目录结构与写作迭代
-  先走 `06 -> navigation/README -> navigation/05 -> navigation/15 -> navigation/41 -> 各目录 README`，先确认同一类问题只在一个前门第一次被回答；目录优化不是再补 README，而是防止 later maintainer 在入口层重新学错对象。
+- `authority_blur`
+  `world-defining winner` 不清，多个 prompt surface 开始争主语。
+- `transcript_conflation`
+  `display transcript` 试图冒充 `protocol transcript`。
+- `continuation_story_only`
+  compact / handoff 后只剩故事，不剩 `continuation qualification`。
+
+治理线还应再暴露三条 first reject signal：
+
+- `decision-window collapse`
+  `Context Usage` 被直接读成成本面板，而不是 `decision window`。
+- `projection usurpation`
+  mode 条、token UI、cleanup 结果词或事件回放开始冒充 `authority / status / verdict`。
+- `free-expansion relapse`
+  全量可见、重结果仍占主 prompt、默认 continuation 或无决策增益的检查重新免费复活。
+
+## 四条深剖问题
+
+- 想继续剖 Prompt 魔力
+  先回 `09 -> 05 -> 15`，确认自己问的是 same-world compiler、first reject signal，还是具体证据层；具体深链统一交给 [navigation/README.md](navigation/README.md)。
+- 想继续剖安全与省 token
+  先回 `09 -> 05 -> 15`，确认自己问的是收费链、failure order，还是 host-facing 外化真相；具体深链统一交给 [navigation/README.md](navigation/README.md)。
+- 想继续剖源码先进性
+  先回 `09 -> 05 -> 15`，确认自己问的是 evidence gradient、authority surface，还是 later maintainer reject path；具体深链统一交给 [navigation/README.md](navigation/README.md)。
+- 想继续优化目录结构
+  先回 `06 -> navigation/README -> 各目录 README`，确认你在收口第一问题、顺序还是证据层；目录优化不是再补 route map，而是减少第一次回答同题的入口数。
 
 ## 按问题进入
 
@@ -91,9 +117,9 @@
 - 想看 `world entry / request assembly / six-stage assembly chain`
   先回 `09`，再去 [philosophy/README.md](philosophy/README.md)、[architecture/README.md](architecture/README.md)、[guides/README.md](guides/README.md)。
 - 想看扩张定价与当前世界准入主权
-  先回 `09` 的第二张图，再去 [philosophy/19-安全与Token经济不是权衡而是同一优化](philosophy/19-安全与Token经济不是权衡而是同一优化.md)、[philosophy/22-安全、成本与体验只是同一治理收费链的三种外观](philosophy/22-安全、成本与体验必须共用预算器.md)、[security/README.md](security/README.md)、[risk/README.md](risk/README.md)；这一组共同回答的治理前门是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`。
+  先回 `09` 的第二张图，再去 [philosophy/19-安全与Token经济不是权衡而是同一优化](philosophy/19-安全与Token经济不是权衡而是同一优化.md)、[philosophy/22-安全、成本与体验只是同一治理收费链的三种外观](philosophy/22-安全、成本与体验必须共用预算器.md)、[security/README.md](security/README.md)、[risk/README.md](risk/README.md)。
 - 想看防过去写坏现在的当前真相保护
-  先回 `09` 的第三张图，再去 [architecture/84：current-truth surface、current-truth writeback 与反僵尸图谱](architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)、[philosophy/76：源码地图为什么先暴露权威入口、消费者子集与危险改动面](philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md)、[philosophy/86：为什么先进内核先防过去写坏现在](philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md)、[philosophy/87：为什么源码质量首先是复杂度中心合法](philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md)、[guides/101：如何审读 current-truth surface](guides/101-如何用苏格拉底诘问法审读one writable present：single-writer、recovery asset与anti-zombie.md)、[guides/102：如何做源码质量证据分级：contract、registry、current-truth surface、consumer subset 与 mirror gap discipline](guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md) 与 [playbooks/79：one writable present 回归手册](playbooks/79-one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归.md)。
+  先回 `09` 的第三张图，再去 [architecture/84：current-truth surface、current-truth writeback 与反僵尸图谱](architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)、[philosophy/76：源码地图为什么先暴露权威入口、消费者子集与危险改动面](philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md)、[philosophy/86：为什么先进内核先防过去写坏现在](philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md)、[philosophy/87：为什么源码质量首先是复杂度中心合法](philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md)、[guides/101：如何审读 current-truth surface](guides/101-如何用苏格拉底诘问法审读one writable present：single-writer、recovery asset与anti-zombie.md)、[guides/102：如何做源码质量证据分级：contract、registry、current-truth surface、consumer subset 与 mirror gap discipline](guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md)。
 - 想看使用者世界
   直接去 [userbook/README.md](userbook/README.md)。
 - 想跨目录反查
