@@ -78,3 +78,4 @@
 - [76-Headless print active teammate polling and unread mailbox loop 索引.md](./76-Headless%20print%20active%20teammate%20polling%20and%20unread%20mailbox%20loop%20索引.md)
 - [77-Headless print queue re-entry and single-consumer pump 索引.md](./77-Headless%20print%20queue%20re-entry%20and%20single-consumer%20pump%20索引.md)
 - [78-Headless print prompt batching and per-uuid replay 索引.md](./78-Headless%20print%20prompt%20batching%20and%20per-uuid%20replay%20索引.md)
+- [79-Headless print task-notification dual-consumer semantics 索引.md](./79-Headless%20print%20task-notification%20dual-consumer%20semantics%20索引.md)

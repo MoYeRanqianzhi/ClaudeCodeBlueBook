@@ -80,6 +80,7 @@
 76. 为什么 headless `print` 在 teammates 仍 active 时会持续 poll unread mailbox，并把 teammate 输出折返进主 run loop，而不是像被动 inbox reader 那样工作。
 77. 为什么 headless `print` 的主线程队列更像 single-consumer pump，而不是一个普通事件订阅器。
 78. 为什么 headless `print` 的 prompt batching 不是普通批量出队，而是 workload/meta/uuid 受约束的单 turn 合批。
+79. 为什么 headless `print` 的 `task-notification` 不是普通进度提示，而是 SDK consumer 和模型双重消费的结果 envelope。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
