@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 157 篇速查文档。
+`appendix/` 当前包含 158 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -114,6 +114,9 @@
 - `157`
   载体家族连续性治理与恢复治理分层。
   入口：[157-安全载体家族连续性治理与恢复治理分层速查表：continuity decision、recovery decision、positive control、cleanup recovery gap与governor question](157-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%B2%BB%E7%90%86%E4%B8%8E%E6%81%A2%E5%A4%8D%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Acontinuity%20decision%E3%80%81recovery%20decision%E3%80%81positive%20control%E3%80%81cleanup%20recovery%20gap%E4%B8%8Egovernor%20question.md)。
+- `158`
+  载体家族恢复治理与重新并入治理分层。
+  入口：[158-安全载体家族恢复治理与重新并入治理分层速查表：recovery decision、reintegration decision、positive control、cleanup reintegration gap与governor question](158-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E6%81%A2%E5%A4%8D%E6%B2%BB%E7%90%86%E4%B8%8E%E9%87%8D%E6%96%B0%E5%B9%B6%E5%85%A5%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Arecovery%20decision%E3%80%81reintegration%20decision%E3%80%81positive%20control%E3%80%81cleanup%20reintegration%20gap%E4%B8%8Egovernor%20question.md)。
 
 ## 怎么配合主线读
 
