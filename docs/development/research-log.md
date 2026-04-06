@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 userbook 专题入口同序化动作: 已继续更新 `userbook/04-专题深潜/README` 与 `userbook/05-控制面深挖/README`，把 `userbook` 入口层继续从“给目录”推进成“给工作对象/控制面入口 + 最小顺序 + first reject signal”。
+- 本轮专题层结论: `04` 现在更明确要求先按工作对象而不是按功能名进入，并把三组最小顺序翻译成真实工作动作；`05` 现在更明确要求先按控制面而不是相邻按钮进入，并把三组最小顺序直接写成控制面入口判断。
+- 本轮目录结构深化结论: 当 `userbook` 的主线使用、专题深潜、控制面深挖三层都开始共用同一组最小顺序时，用户侧目录结构才真正开始脱离“分栏目录”，进入“问题/顺序/边界一体化入口”阶段。
 - 本轮 userbook 第一跳同序化动作: 已继续更新 `userbook/README`、`00`、`01-主线使用/README`、`01`、`02`、`04` 与 `05`，把最近几批已经稳定下来的最小排查顺序前推到用户侧第一跳。
 - 本轮 user-facing Prompt 动作: `02` 现在更明确把“同一个工作对象”的用户侧最小顺序写成 `目标 -> 附件/文件 -> working set -> next action / handoff`，不再让用户只记住 `same-world test` 这句高阶判断。
 - 本轮 user-facing 治理动作: `05` 现在更明确把 `/status / /doctor / /usage / /add-dir` 失败后的五格处理方式写成 `拒收 / 降级 / 停止 / 清理后恢复 / 升级给人`，把治理 failure order 直接翻译成用户动作。

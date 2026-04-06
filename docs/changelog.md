@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新 `userbook/04-专题深潜/README` 与 `userbook/05-控制面深挖/README`，把 `userbook` 入口层从“给专题目录”继续推进成“给工作对象入口 / 控制面入口 + 最小排查顺序 + first reject signal” 的形式：`04` 现在更明确按工作对象而不是功能名进入，并把三组最小顺序翻译成专题层真实工作动作；`05` 现在更明确按控制面而不是相邻按钮进入，并把 `Prompt witness order / governance failure order / current-truth reject order` 直接写进控制面入口
+- 本轮继续把 `userbook` 目录结构优化从“第一跳同序化”推进到“专题入口同序化”：用户现在不只在主线使用里拿到最小动作顺序，也开始在专题层和控制面层拿到“先问什么、先拒收什么、什么时候退回上一层重新定题”的顺序
 - 继续更新 `userbook/README`、`userbook/00`、`userbook/01-主线使用/README`、`01`、`02`、`04` 与 `05`，把最近几批在蓝皮书主线里稳定下来的 `witness / failure / reject` 顺序前推到使用者第一跳：`userbook/README` 现在更明确给出三组最小排查顺序，`00` 现在更明确把三条使用判断再压成用户侧最小动作顺序，`01-主线使用/README` 现在更明确说明这一组主线页分别在承接 Prompt 连续性、治理判断与工作现场边界
 - `01-进入系统`、`02-提问、补上下文与让模型继续工作`、`04-会话、恢复、压缩与记忆` 与 `05-开工前自检` 现在更明确把入口、同一工作对象、working set、恢复链和自检失败后的 `拒收 / 降级 / 停止 / 清理后恢复 / 升级给人` 五格处理方式写成用户侧最小顺序，避免使用者必须下潜到深页后才学会同一套排查动作
 - 继续更新 `bluebook/README`、`navigation/README`、`06` 与 `navigation/05`，把最近几批已经稳定下来的 `Prompt witness order / governance failure order / current-truth reject order` 继续前推到入口层：`bluebook/README` 现在更明确把三组最小排查顺序写进入口与继续深入法，`navigation/README` 现在更明确把跨目录入口从“公式 + route map”推进到“公式 + 顺序 + 证据层”三段式，`06` 现在更明确把目录优化目标从“同词化”升级成“同序化”，`navigation/05` 现在更明确把并行深挖后的真正合流定义成主语和顺序同时合流

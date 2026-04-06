@@ -8,6 +8,48 @@
 - 这里按控制面组织，专门回答“为什么同一目标不能随便走相邻入口”。
 - 这里不承担命令速查；速查页统一留在 `03-参考索引/`。
 
+如果把这一层继续压成最短作用，也只剩一句：
+
+- `05` 先回答“哪条控制面现在在说真话”，再决定你该继续、切换、降级还是退出。
+
+所以这层不是“更难的目录”，而是：
+
+1. 先给控制面判断
+2. 再给相邻入口为什么不能混用
+3. 最后才给更细的长文拆解
+
+## 先按控制面，不按相邻按钮
+
+进入这一层前，先问自己：
+
+1. 我当前缺的是 Prompt witness、治理 verdict，还是当前真相边界。
+2. 我看到的是控制面对象，还是它们的 UI 投影。
+3. 如果删掉 slash 面板、status 页、usage 条和目录体感，我还能不能说清是哪条控制面失真。
+
+如果还说不清，就先回 `09 / 15 / userbook/01-主线使用`，不要在这一层继续背更长的入口列表。
+
+## 三组最小顺序怎样进入控制面层
+
+这一层真正承接的，就是最近几轮已经稳定下来的三组最小顺序：
+
+1. Prompt witness order
+   - `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+2. governance failure order
+   - `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
+3. current-truth reject order
+   - `shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer`
+
+如果某篇控制面长文没有明确告诉你自己主要承接的是哪一组顺序，它就还停在“对象解释页”，还没有真正承担控制面入口职责。
+
+## 进入控制面前的 first reject signal
+
+看到下面迹象时，应先停下来重审，而不是继续在相邻入口间来回切：
+
+1. 你在用 mode、modal、usage、compact 或 default continue 这些投影替身直接判断治理真相。
+2. 你在用 `systemPrompt` 截图、最后一条消息或 summary prose 直接判断 Prompt 是否仍在同一个世界里。
+3. 你在用目录体感、作者说明或“看起来能跑”直接判断当前真相边界。
+4. 你还没选定是该继续、降级、停止、清理后恢复还是升级给人，就已经在换入口。
+
 - [01-权限、计划模式与 Worktree：如何安全放大行动范围.md](./01-%E6%9D%83%E9%99%90%E3%80%81%E8%AE%A1%E5%88%92%E6%A8%A1%E5%BC%8F%E4%B8%8E%20Worktree%EF%BC%9A%E5%A6%82%E4%BD%95%E5%AE%89%E5%85%A8%E6%94%BE%E5%A4%A7%E8%A1%8C%E5%8A%A8%E8%8C%83%E5%9B%B4.md)
 - [02-MCP、插件、技能与 Hooks：如何选择正确扩展层.md](./02-MCP%E3%80%81%E6%8F%92%E4%BB%B6%E3%80%81%E6%8A%80%E8%83%BD%E4%B8%8E%20Hooks%EF%BC%9A%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E6%AD%A3%E7%A1%AE%E6%89%A9%E5%B1%95%E5%B1%82.md)
 - [03-Compact、Resume、Memory：长任务连续性手册.md](./03-Compact%E3%80%81Resume%E3%80%81Memory%EF%BC%9A%E9%95%BF%E4%BB%BB%E5%8A%A1%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%89%8B%E5%86%8C.md)
@@ -82,3 +124,9 @@
 - [72-getTools、useMergedTools、mcp.tools 与 toolPermissionContext：为什么 remote session 的 tool plane 不会像 command plane 一样一起变薄.md](./72-getTools、useMergedTools、mcp.tools%20与%20toolPermissionContext：为什么%20remote%20session%20的%20tool%20plane%20不会像%20command%20plane%20一样一起变薄.md)
 - [73-toolPermissionContext、initialMsg.mode、message.permissionMode、applyPermissionUpdate 与 computeTools：为什么 remote session 的本地 tool plane 主权不等于远端命令面主权.md](./73-toolPermissionContext、initialMsg.mode、message.permissionMode、applyPermissionUpdate%20与%20computeTools：为什么%20remote%20session%20的本地%20tool%20plane%20主权不等于远端命令面主权.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。
+
+更稳一点说，这一层真正值钱的目录优化也不是继续补页，而是让每个控制面首页都先回答：
+
+1. 我在承接哪条最小顺序。
+2. 哪些相邻入口是常见替身，必须直接拒收。
+3. 什么时候应把问题退回专题层、主线使用层或蓝皮书主线重新定题。
