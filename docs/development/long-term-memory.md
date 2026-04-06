@@ -8,6 +8,25 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `philosophy/21`、`30`、`33`、`51` 与 `57` 现已继续把 Prompt 残余深页全部收回 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`：
+  - `21` 现在只把“七层叠加”当 runtime 现象回译回六个 nouns，不再把 feature list 当第一前门。
+  - `30` 现在只解释 `Boundary -> Continuation` 的 prefix asset，不再把 shared prefix 误写成独立 Prompt 哲学。
+  - `33` 现在只解释最后一级 `Explainability`，并把 cache-break naming 固定成前五层成立后的命名权。
+  - `51` 现在把“行动语义更密”降格为 `Continuation` 跑通后的结果词，明确真正该保住的是 `current work / next-step guard / required assets / continuation qualification`。
+  - `57` 现在只解释 `Transcript -> Lineage -> Continuation` 的协作语法，并把 sticky / suggestion / session memory 固定成同一 continuation interface 的不同时间尺度投影。
+- `philosophy/22`、`64` 与 `guides/49` 现已继续把治理残余深页全部收回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`：
+  - `22` 现在只解释安全/成本/体验为何只是同一收费链的外显，而不是三个并列主题。
+  - `64` 现在把免费扩张逐段挂回 canonical chain，不再停在总论式治理宣言。
+  - `49` 现在把治理 builder 固定成六步执行卡，并把 `Narrow / Later / Outside` 继续降成助记；真正的验收关口固定为 `projection usurpation / decision-window collapse / free-expansion relapse`。
+- `philosophy/86`、`architecture/README` 与 `guides/README` 现已继续把源码质量残余页面收回“合法复杂度中心 + one writable present + later maintainer rejectability”与 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`：
+  - `86` 现在只回答“合法复杂度中心怎样保护 one writable present”，不再把大文件体感、目录美学和时态保护写成半个总论拼盘。
+  - `architecture/README` 现在更明确只负责把这条证据梯度落成对象、状态机、writeback seam 与 choke point，不再同时兼任哲学前门与方法前门。
+  - `guides/README` 现在更明确分开 `101=审读 one writable present` 与 `102=公开镜像证据梯度`，README 自己只做模板分流。
+- 新的长期结论：
+  - 残余深页真正成熟时，不能再用“旧结果词 + 新 canonical chain”的双轨写法；深页如果还需要先靠“七层叠加 / 行动语义更密 / 协作语法 / 免费扩张 / 结构先进性”这些结果词自立，再把 canonical chain 补在后面，later maintainer 仍会先学到第二语言。
+  - Prompt 线的深页以后必须长期遵守一个约束：feature list 只配做 six nouns 的回译层，不配再做前门层。只要某页重新把 prefix asset、explainability、collaboration syntax 抬成根词，Prompt 母线就会再次分叉。
+  - 治理线的深页以后必须长期遵守一个约束：投影词只配做 canonical chain 的外显，不配再做对象链的替身。mode 条、弹窗、usage 条、compact、体验流畅感都只能作为投影存在。
+  - 源码质量线的深页以后必须长期遵守一个约束：README 只负责路由和模板分工，不负责重新发明源码质量总论；真正的主语始终是“合法复杂度中心 + one writable present + later maintainer rejectability”。
 - `bluebook/README`、`00-导读`、`03-设计哲学`、`06-第一性原理与苏格拉底反思`、`09-三张控制面总图`、`philosophy/README` 与 `navigation/README` 现已继续把三条母线的 frontdoor nouns 收紧成更少但更硬的一组：
   - Prompt 前门现在更明确固定为 `same-world compiler = Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`，并在入口层补上 `authority_blur / transcript_conflation / continuation_story_only` 三条 first reject signal。
   - 治理前门现在更明确把 canonical chain 顶到 README 层：`governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；`Narrow / Later / Outside` 被进一步降成助记，而不是第二套对象链。

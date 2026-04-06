@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-04-07
+
+- 本轮根仓库 `main` 同步检查再次确认：`main=origin/main=4ad3d88510e09ca4ada4ae9852241b7a15e79b33`、`main...origin/main = 0 0`，`merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
+- 继续更新 `philosophy/21`、`30`、`33`、`51` 与 `57`，把 Prompt 残余深页全部收回 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`：`21` 现在只把“七层叠加”当 runtime 现象回译回六个 nouns，`30` 现在只解释 `Boundary -> Continuation` 的 prefix asset，`33` 现在明确只解释 `Explainability`，`51` 现在把“行动语义更密”降格为 `Continuation` 跑通后的结果词，`57` 现在只解释 `Transcript -> Lineage -> Continuation` 的协作语法
+- 继续更新 `philosophy/22`、`64` 与 `guides/49`，把治理残余深页全部收回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`：`22` 现在只解释安全/成本/体验为何只是同一收费链的外显，`64` 现在把免费扩张逐段挂回 canonical chain，`49` 现在把治理 builder 固定成六步执行卡，并把 `Narrow / Later / Outside` 继续降成助记
+- 继续更新 `philosophy/86`、`architecture/README` 与 `guides/README`，把源码质量残余页面全部收回“合法复杂度中心 + one writable present + later maintainer rejectability”与 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`；同时把 `guides/101` 与 `102` 的职责彻底分开：前者只审 `one writable present`，后者只做公开镜像证据梯度
+
 ## 2026-04-06
 
 - 继续更新 `philosophy/85`、`architecture/83`、`guides/100`、`philosophy/87`、`architecture/84`、`guides/101` 与 `guides/102`，把治理线与源码质量线的深页统一回 canonical chain、短顺序与 reject trio，不再让深页各自长回第二套前门

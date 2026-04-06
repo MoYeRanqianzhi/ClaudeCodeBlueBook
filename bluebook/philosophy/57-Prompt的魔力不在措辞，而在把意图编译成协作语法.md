@@ -9,13 +9,17 @@
 
 ## 1. 先说结论
 
+“协作语法”现在不再作为 Prompt 的总解释，而只解释六个 nouns 里的三段：
+
+- `Transcript -> Lineage -> Continuation`
+
 Claude Code 的 prompt 真正强，不在于：
 
 - 它更会措辞
 
 而在于：
 
-- 它先把人类意图编译成一套可持续协作的语法
+- 它把人类意图编译成一套可持续协作的 transcript、lineage 与 continuation 语法
 
 也就是说，它优先组织的是：
 
@@ -28,34 +32,24 @@ Claude Code 的 prompt 真正强，不在于：
 
 如果 prompt 只是更好的文案，那么更强模型理应自动复制这套魔力。
 
-但 Claude Code 的源码反复说明，prompt 的真正形态其实包括：
+但 Claude Code 的源码反复说明，真正起作用的不是几句 instruction，而是：
 
-- system prompt 权威顺序
 - protocol transcript 改写
+- task / mailbox / notification 对象
 - stop hook 后保存的 cache-safe 协作上下文
 - sticky prompt 对当前主语的维持
 - suggestion 对下一步输入的外化
-- session memory 对压缩后接手连续性的维持
+- session memory 对压缩后 handoff continuity 的维持
 
-所以 prompt 在这里更像：
+所以这页真正想说的不是“Prompt 其实像协作文法书”，而是：
 
-- 跨时间、跨主体的人机协作语法
+- `Transcript` 把当前轮编成合法执行对象
+- `Lineage` 让当前工作主语持续可追踪
+- `Continuation` 让 sticky / suggestion / memory 在不同时间尺度上继续消费同一工作对象
 
-## 3. 苏格拉底式追问
+## 3. 为什么 UI transcript 不能直接冒充 protocol transcript
 
-### 3.1 prompt 只要组织模型思考就够了吗
-
-不够。
-
-因为长期任务里真正稀缺的，不只是模型推理质量，还有：
-
-- 人类能否继续接手
-- 当前主语能否持续稳定
-- 压缩与恢复后是否仍能继续工作
-
-### 3.2 为什么 UI transcript 不能直接喂给模型
-
-因为人类可见真相和模型可执行真相不是同一种对象。
+人类可见真相和模型可执行真相不是同一种对象。
 
 前台需要：
 
@@ -69,11 +63,15 @@ Claude Code 的 prompt 真正强，不在于：
 - 可继续推理
 - 协议不变量仍成立的 transcript
 
-如果两者不分，显示层噪声就会污染执行层语义。
+如果两者不分，显示层噪声就会直接污染执行层语义。
 
-### 3.3 sticky、suggestion、session memory 为什么应一起理解
+所以这页的第一条硬判断不是“Prompt 该怎么写”，而是：
 
-因为它们都在回答同一个问题：
+- `display truth != protocol transcript`
+
+## 4. 为什么 sticky、suggestion、session memory 应一起理解
+
+这三者都在回答同一个 continuation 问题：
 
 - 人类和模型接下来怎样继续同一项工作
 
@@ -83,25 +81,54 @@ Claude Code 的 prompt 真正强，不在于：
 2. suggestion 维护“下一步最可能怎么接”。
 3. session memory 维护“压缩或恢复后还能从哪里继续”。
 
-### 3.4 真正强的 prompt 更像什么
+把这三者放在一起看，真正稳定的写法就不是“协作语法很强”，而是：
 
-更像：
+- 它们都是同一 continuation interface 的投影
 
-- 把当前、下一步、接手后统一进同一套协作语法
+## 5. 多 Agent 真正强在哪里
 
-## 4. 对 Agent 设计者的启发
+多 Agent prompt 最容易被误写成：
 
-如果想学 Claude Code，最该学的不是：
+- 给 worker 的几句 instruction
 
-- 再写一段更聪明的 system prompt
+但 `coordinatorMode.ts` 和 `AgentTool/prompt.ts` 说明，真正起作用的是：
 
-而是：
+1. coordinator 先综合，再下发。
+2. worker prompt 必须自包含，不能把理解责任继续甩给下游。
+3. mailbox / task / notification 把 lineage object 接进运行时。
+4. handoff 结果必须能回写到主线程 continuation。
 
-1. 把 prompt 看成正式协作接口，而不是一次请求。
-2. 明确区分用户可见真相和模型可执行真相。
-3. 让当前主语、下一步输入、长期接手连续性共享同一套语法。
-4. 让 prompt 在压缩、恢复、fork 与多主体切换后仍保持可继续。
+所以所谓“协作语法很强”，真正的本体不是句式，而是：
 
-## 5. 一句话总结
+- transcript grammar
+- lineage object
+- continuation contract
 
-Claude Code 的 prompt 之所以有魔力，不是因为它更会说，而是因为它先把意图写成协作语法，再让模型沿着这套语法继续行动。
+## 6. 苏格拉底式追问
+
+### 6.1 prompt 只要组织模型思考就够了吗
+
+不够。
+
+长期任务里真正稀缺的，不只是模型推理质量，还有：
+
+- 人类能否继续接手
+- 当前主语能否持续稳定
+- 压缩与恢复后是否仍能继续工作
+
+### 6.2 如果把 sticky、suggestion、memory 分别写成三个“体验功能”，会怎样
+
+它们就会失去同一 continuation object，只剩下三个互相近似的投影功能。
+
+### 6.3 这一页最该防的失真是什么
+
+最该防的仍然是：
+
+1. `transcript_conflation`
+2. `continuation_story_only`
+
+因为只要 transcript 和 continuation 混掉，所谓“协作语法”立刻又会退回模糊的人机对话体感。
+
+## 7. 一句话总结
+
+Claude Code 的 prompt 之所以有魔力，不是因为它更会说，而是因为它把意图写成了 `Transcript -> Lineage -> Continuation` 可持续协作语法，再让模型沿着这套语法继续行动。

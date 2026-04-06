@@ -1,5 +1,15 @@
 # 研究日志
 
+## 2026-04-07 本轮增量
+
+- 本轮主分支同步检查再次确认：根仓库 `main=origin/main=4ad3d88510e09ca4ada4ae9852241b7a15e79b33`；`git fetch origin` 成功，`rev-list --left-right --count main...origin/main` 返回 `0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本轮继续只在 `.worktrees/mainloop` 内推进。
+- 本轮 mainloop 基线: `HEAD=72fc9a7f5c0f5c034e5b9b933f8d46c1c22b7376`，编辑前 `git status --short --branch` 返回干净工作树；本批次所有正文、记忆与提交都只落在当前 worktree。
+- 本轮并行 Agent 合流结论: Prompt 残页的真实问题不是缺材料，而是仍残留“七层叠加 / prefix asset / 可解释稳定性 / 行动语义更密 / 协作语法”这些第二前门话语；治理残页的真实问题不是缺对象，而是 `22/64/49` 仍有总论重复、投影篡位和 builder 起点不一致；源码质量残页的真实问题不是缺案例，而是 `86` 仍太像半个总论，`architecture/README` 与 `guides/README` 仍在 README 层混哲学、方法和分流。
+- 本轮 Prompt 残页收口动作: 已继续更新 `philosophy/21`、`30`、`33`、`51` 与 `57`。`21` 现在只把“七层叠加”回译成 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`；`30` 现在只解释 `Boundary -> Continuation` 的 prefix asset；`33` 现在明确把“可解释稳定性”压回最后一级 `Explainability`；`51` 现在把“行动语义更密”收回 `Continuation` 跑通后的结果词；`57` 现在只解释 `Transcript -> Lineage -> Continuation` 如何把 sticky / suggestion / memory 写成同一 continuation interface。
+- 本轮治理残页收口动作: 已继续更新 `philosophy/22`、`64` 与 `guides/49`。`22` 现在只解释安全/成本/体验为何只是 canonical chain 的外显，并把主 reject 固定为 `projection usurpation`；`64` 现在把免费扩张逐段挂回 `governance key / externalized truth chain / typed ask / decision window / continuation pricing / durable-transient cleanup`，并把主 reject 固定为 `free-expansion relapse`；`49` 现在把治理 builder 固定成六步执行卡，并把 `projection usurpation / decision-window collapse / free-expansion relapse` 写成 builder 验收关口。
+- 本轮源码质量残页收口动作: 已继续更新 `philosophy/86`、`architecture/README` 与 `guides/README`。`86` 现在只回答“合法复杂度中心如何保护 one writable present”，不再长成半个总论；`architecture/README` 现在更明确只负责把 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 落成对象、状态机与 choke point；`guides/README` 现在把 `101=审读 one writable present` 与 `102=公开镜像证据梯度` 的职责彻底分开。
+- 本轮新的第一性原理结论: 残余深页最危险的失真不再是“解释不够多”，而是“又长出一套第二前门语言”；Prompt 线要拒收结果词篡位，治理线要拒收投影篡位，源码质量线要拒收目录体感篡位。只要 later maintainer 在残页里先学到的是另一套根词，而不是既有 canonical chain，这一批深页就还没真正收口。
+
 ## 当前基线
 
 - 日期: `2026-04-06`

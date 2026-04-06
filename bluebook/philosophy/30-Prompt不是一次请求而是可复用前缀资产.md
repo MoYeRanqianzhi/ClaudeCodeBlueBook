@@ -21,72 +21,94 @@
 
 ## 1. 先说结论
 
-Claude Code 的 prompt 最值得迁移的，不是一段特别会写的 system prompt，而是：
+这一页现在不再把“可复用前缀资产”写成 Prompt 的第二前门，而只解释六个 nouns 里的两段：
 
-- 它把 prompt 做成了可复用前缀资产
+- `Boundary -> Continuation`
 
-这意味着 prompt 的真正本体不是：
+Claude Code 最值得迁移的，不是一段特别会写的 system prompt，而是：
+
+- 它把同一世界的 boundary 沉淀成可复用 prefix asset
+
+这意味着 prompt 的本体不是：
 
 - 当前请求里那段文字
 
 而是：
 
-- 哪些字节级前缀可以被后续辅助循环复用
-- 哪些状态允许附加，哪些状态必须保持一致
-- 哪些 fork 可以继续吃主线程 cache，哪些 fork 不该打碎它
+- 哪些前缀字节必须保持稳定
+- 哪些状态只能晚绑定进入当前 transcript
+- 哪些 fork 还能继续吃主线程 cache
+- 哪些 side loops 必须沿同一 continuation object 前进
 
-## 2. 为什么“前缀资产”比“单轮文本”更本质
+## 2. 为什么 prefix asset 首先属于 Boundary
 
-如果 prompt 只是单轮文本，那么：
+如果 prompt 只是单轮文本，那么 `/btw`、prompt suggestion、memory extraction、summary、dream 都会像独立的小系统。
 
-- `/btw` 是新问题
-- prompt suggestion 是旁路生成
-- memory extraction 是另一个后台任务
-- summary 是额外后处理
-
-这些路径之间不会共享什么真正重要的东西。
-
-但 Claude Code 明显不是这样写的。
+Claude Code 显然不是这样写的。
 
 它更接近：
 
-- 主线程不断生产 cache-safe prefix
-- 辅助循环在这份 prefix 上分叉
+1. 主线程先生产 cache-safe boundary。
+2. 旁路循环再在这份 boundary 上分叉。
+3. 动态现场继续通过 attachments、memory、summary 等对象晚绑定。
 
-这说明 prompt 在这里不是一次性话术，而是一种 runtime asset。
+所以“前缀资产”首先说明的不是“Prompt 会复用”，而是：
 
-## 3. 为什么这条原则这么强
+- 同一世界先被 boundary 固定住了
 
-因为它同时解决了三类长期问题：
+也因此，真正该守的不是“多一个共享前缀优化”，而是：
 
-1. 成本：
-   - 不必为每个辅助循环从零重建世界模型。
-2. 一致性：
-   - suggestion / memory / summary 与主线程共享同一合同，不易漂移。
-3. 演化：
-   - 只要主线程 prefix 结构稳定，旁路能力可以持续叠加，而不必各自发明 prompt 体系。
+- stable prefix 不被高波动状态打碎
+- tool ABI 不把 built-in 与 late MCP 混写进同一段前缀
+- forked agent 只在 cache-safe contract 上继续，而不是临时重讲一遍世界
 
-所以 Claude Code 的 prompt 魔力，很大一部分其实来自：
+## 3. 为什么 side loops 首先属于 Continuation
 
-- 它允许魔力在不同循环之间继承
+`/btw`、suggestion、memory、summary、dream 之所以能共用前缀，不是因为它们“都像 Prompt 工具”，而是因为它们都在回答同一个 continuation 问题：
+
+- 当前工作对象接下来怎样继续同一世界
+
+这些路径之间共享的真正资产不是文案，而是：
+
+1. 当前工作主语仍是谁。
+2. 哪些 guard 仍然有效。
+3. 哪些资产必须继续保留。
+4. 哪些对象必须在新的 continuation 里重新确认。
+
+所以这页真正想说明的是：
+
+- prefix asset 不是独立哲学，而是 continuation object 的物质条件
+
+如果 shared prefix 被写成单独神技，later maintainer 很容易又把 `/btw`、summary、memory 写成几条“像主线程”的旁路故事。
 
 ## 4. 苏格拉底式追问
 
-### 问：如果主线程已经很强，为什么还要在意旁路循环
+### 4.1 如果主线程已经很强，为什么还要在意旁路循环
 
-答：因为现代 agent 系统真正有价值的能力，越来越多发生在主线程之外：
+因为现代 agent 系统真正值钱的能力，越来越多发生在主线程之外：
 
 - 建议下一步
 - 提炼 memory
 - 总结 transcript
 - 做长期 consolidation
 
-如果这些循环不能共享主线程前缀，它们迟早会和主线程分裂成多个世界模型。
+如果这些循环不能共享同一 prefix contract，它们迟早会和主线程长成多个世界模型。
 
-### 问：为什么这比“prompt 写得更好”更值得学
+### 4.2 为什么这比“prompt 写得更好”更值得学
 
-答：因为更好的文案只能提升单次效果；可复用前缀资产则能提升整台 runtime 的长期一致性与成本结构。
+因为更好的文案只能提升单次效果；可复用 prefix asset 能提升整台 runtime 的长期一致性、成本结构与 continuation 质量。
+
+### 4.3 这一页最容易重新失真成什么
+
+最容易退回两种坏写法：
+
+1. 把 prefix asset 写成新的 Prompt frontdoor。
+2. 把 shared prefix 写成“接着聊”的故事感，而不是 continuation object。
+
+对应的 first reject signal 仍然是：
+
+- `continuation_story_only`
 
 ## 5. 一句话总结
 
-Claude Code 的 prompt 之所以强，不只是因为它会装配合同，而是因为它把这些合同沉淀成了可被 `/btw`、suggestion、memory、summary、dream 共用的前缀资产。
+Claude Code 的 prompt 之所以强，不只是因为它会装配合同，而是因为它把 `Boundary -> Continuation` 这两段写成了可被 `/btw`、suggestion、memory、summary、dream 共用的 prefix asset。

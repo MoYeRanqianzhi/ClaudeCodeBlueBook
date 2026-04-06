@@ -1,11 +1,11 @@
 # 架构专题
 
-`architecture/` 当前有 84 篇编号文档，范围 `01-84`。本目录负责把 Claude Code 拆成可验证的运行时对象、状态机、控制面和演化边界。
+`architecture/` 当前有 84 篇编号文档，范围 `01-84`。本目录负责把 Claude Code 拆成可验证的运行时对象、状态机、控制面、writeback seam 和演化边界。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，不要急着把这里读成“更细的目录库存”。
 
 如果只先记源码先进性在架构层的一句话，也只记这句：
 
-- 源码先进性不是文件更小，而是把复杂度收进合法复杂度中心，用 `truth ladder + failure semantics` 正式保护 `one writable present`，让 later maintainer 仍能独立 `reject` 错误实现并保留下一次重构之路。
+- 源码先进性不是文件更小，而是把复杂度收进合法复杂度中心，把 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 落成正式对象、状态机与 choke point，并用它们保护 `one writable present`。
 
 ## 什么时候进来
 
@@ -23,7 +23,7 @@
   - 失败信号：还在用 replay、pointer、恢复资产或目录体感代替 `current-truth surface / current-truth writeback / freshness gate`。
 - 如果你只先判断“源码先进性到底该怎样判”，从 `44 -> 55 -> 63 -> 84` 进入。
   - 最短顺序：`contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
-  - 失败信号：还在先谈“目录更整齐 / 文件更小 / 热点文件更大或更小”，而没先点名合法复杂度中心与第一条 reject path。
+  - 失败信号：还在先谈“目录更整齐 / 文件更小 / 热点文件更大或更小”，而没先点名合法复杂度中心、`one writable present` 与第一条 reject path。
 
 ## 八个平面
 
@@ -61,6 +61,7 @@
 ## 这里不回答什么
 
 - 本目录不负责直接给出 host-facing contract、字段 schema 与 consumer subset 判决。
+- 本目录也不负责公开镜像证据分级；如果你需要把源码质量压成证据梯度，去 `../guides/102`。
 - 本目录也不负责值班、验收、回退与长期 reopen 执行链。
 - 如果你还在问“为什么必须这样设计”或“第一条反证信号是什么”，先回 `../navigation/15` 与 `../navigation/41`。
 

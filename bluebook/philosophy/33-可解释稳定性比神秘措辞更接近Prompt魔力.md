@@ -20,28 +20,26 @@
 
 ## 1. 先说结论
 
-Claude Code 的 prompt 魔力，如果继续往第一性原理收束，更准确的说法不是：
+“可解释稳定性”现在不再是 Prompt 的平行哲学，而是六个 nouns 里的最后一级：
+
+- `Explainability`
+
+更准确地说，Claude Code 的 prompt 魔力不是：
 
 - 它有一段特别厉害的 system prompt
 
 而是：
 
-- 它把 prompt 做成了一套可解释稳定性系统
+- 在 `Authority -> Boundary -> Transcript -> Lineage -> Continuation` 已经成立之后，它还能继续解释自己为什么稳定，为什么突然不稳定
 
-这套系统至少同时包含四件事：
+所以真正难抄走的，不是某句提示词，而是系统能否回答：
 
-1. 前缀尽量稳定
-2. 预算尽量可观测
-3. 失稳尽量可归因
-4. 辅助循环尽量共享同一前缀资产
+1. 这次为什么还能复用同一 prefix。
+2. 这次为什么 cache 断了。
+3. 断在 system、tools、betas、effort、extra body 还是 server-side。
+4. 当前预算为什么长成现在这样。
 
-所以真正难抄走的，并不是一句话该怎么写，而是：
-
-- 系统为什么知道自己什么时候稳定
-- 什么时候不稳定
-- 不稳定到底是哪里变了
-
-## 2. 为什么“稳定”本身比“文案”更本质
+## 2. 为什么 Explainability 不是可有可无的附属层
 
 如果 prompt 魔力主要来自措辞，那么最重要的问题应该是：
 
@@ -49,37 +47,37 @@ Claude Code 的 prompt 魔力，如果继续往第一性原理收束，更准确
 
 Claude Code 的源码却不断把真正问题改写成：
 
-- 这段前缀能不能被共享
-- 工具 ABI 会不会打碎 cache
-- 哪些状态应该晚绑定
-- 当前 break 是 system、tools、betas 还是 server-side
+- 当前 authority 有没有变
+- tool ABI 有没有打碎 boundary
+- transcript 有没有混进高波动对象
+- lineage / continuation 有没有继续沿同一 prefix
+- 当前 break 是哪一类 break
 
 这说明作者真正关心的不是“说得像不像”，而是：
 
-- runtime 条件能不能让同一套合同持续成立
+- runtime 条件能不能让同一套合同持续成立，并在失败时继续被点名
 
 从第一性原理看，这比文案本身更本质，因为 agent 系统最稀缺的资源之一不是“会不会说”，而是：
 
-- 能不能长期一致地说
+- 能不能长期一致地继续说
 
-## 3. 为什么可解释性会反过来增强 prompt 能力
+## 3. 为什么 cache break naming 是 Explainability 的硬证据
 
 很多人会把解释层看成附属品，仿佛先有一个强 prompt，再额外加点可观测性。
 
 Claude Code 更接近另一种逻辑：
 
-- 正因为 prompt 可以被解释，所以它才更敢被当成长期资产
-
-原因很简单。
+- 正因为 prompt 可以被解释，所以它才配被当成长期资产
 
 如果一个系统只能在成功时有效，失败时却不知道为什么失败，那么这套 prompt 很难被真正扩展、维护、复用。
 
 反过来，如果系统能解释：
 
-- 是 system prompt 变了
-- 是 tool schema 变了
-- 是 betas 变了
-- 是 effort / extra body 变了
+- 是 `systemPromptChanged`
+- 是 `toolSchemasChanged`
+- 是 `betasChanged`
+- 是 `cachedMCChanged`
+- 是 effort / extra body 变化
 - 是 TTL 到了
 - 还是 server-side eviction
 
@@ -89,62 +87,51 @@ Claude Code 更接近另一种逻辑：
 
 升级成：
 
-- 工程资产
+- 可维护的工程资产
 
-## 4. 为什么这和 shared prefix、预算观测、tool ABI 是同一哲学
+## 4. 为什么 shared prefix、预算观测、tool ABI 都在为 Explainability 服务
 
-这三件事表面不同，底层却一致。
+这三件事表面不同，底层其实在回答同一件事：
 
-### 4.1 shared prefix 说明 prompt 是资产
+- 这条 same-world compiler 现在到底稳定在哪里，断裂又发生在哪里
+
+### 4.1 shared prefix 说明可解释对象不是单轮文本
 
 `CacheSafeParams` 与 `/btw`、memory、summary 等路径说明：
 
-- prompt 不该按单轮文本理解，而该按可复用资产理解
+- 解释对象首先是 shared prefix，而不是“这一轮最后发出去的 prompt”
 
 ### 4.2 预算观测说明 prompt 不是黑箱
 
 `get_context_usage` 与 `ContextVisualization` 说明：
 
-- prompt 的结构、开销、膨胀点应该被看到
+- prompt 的结构、开销、膨胀点必须被看到，才能解释 decision gain 还在不在
 
-### 4.3 tool ABI 稳定性说明 prompt 也包含行动空间
+### 4.3 tool ABI 稳定性说明解释对象也包含行动空间
 
 tool pool 顺序与过滤逻辑稳定，意味着：
 
-- prompt 稳定性不只是系统文本稳定
-- 还是模型看到的行动空间稳定
+- explainability 不只解释系统文本，还解释模型当前到底看见了什么行动世界
 
-### 4.4 cache break 归因说明 prompt 还是一个可诊断对象
+所以这一页真正想收住的是：
 
-`promptCacheBreakDetection` 把失稳的原因继续外化出来。
+- Explainability 不是第二前门，而是前五层成立后的命名权
 
-这四者合在一起，才真正构成 Claude Code 的 prompt 哲学：
+## 5. 这页真正要防的失真
 
-- prompt 是资产
-- prompt 可观测
-- prompt 可诊断
-- prompt 的本体包括前缀、工具、策略与请求面
+这一页最容易重新长回两种错法：
 
-## 5. 苏格拉底式追问
+1. 把“可解释稳定性”写成第二套 Prompt Constitution。
+2. 只谈可观测性，不把它绑定到 `Authority -> Boundary -> Transcript -> Lineage -> Continuation`。
 
-### 5.1 如果 prompt 魔力主要来自措辞，为什么系统要花这么多力气维护稳定性与归因
+对应的 reject trio 仍然是：
 
-因为真正难的是复用和演化，不是写出一版漂亮文案。
+- `authority_blur`
+- `transcript_conflation`
+- `continuation_story_only`
 
-### 5.2 如果一段 prompt 无法解释自己为什么失效，它还能被称为成熟系统吗
-
-很难。
-那更像一次幸运命中。
-
-### 5.3 如果工具顺序变化、beta header 变化、extra body 变化都会改变效果，prompt 还只是“文本”吗
-
-不是。
-它已经是整条 request surface 的一部分。
-
-### 5.4 为什么 Claude Code 的 prompt 感觉更“稳”
-
-因为它努力让稳定性本身成为被设计、被观测、被解释的对象。
+因为只要前五层失真，Explainability 也会立刻退回“解释一个已经混掉的东西”。
 
 ## 6. 一句话总结
 
-Claude Code 的 prompt 魔力，更接近一套可解释稳定性系统，而不是一段难以言传的神秘措辞。
+Claude Code 的 prompt 魔力，更接近 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 里最后一级真正成立，而不是多了一段难以言传的神秘措辞。
