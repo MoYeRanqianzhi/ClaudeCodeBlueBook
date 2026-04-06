@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 162 篇速查文档。
+`appendix/` 当前包含 163 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -129,6 +129,9 @@
 - `162`
   载体家族用时重验证治理与 step-up 重授权治理分层。
   入口：[162-安全载体家族用时重验证治理与step-up重授权治理分层速查表：use-time revalidation decision、step-up reauthorization decision、positive control、cleanup step-up gap与governor question](162-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E7%94%A8%E6%97%B6%E9%87%8D%E9%AA%8C%E8%AF%81%E6%B2%BB%E7%90%86%E4%B8%8Estep-up%E9%87%8D%E6%8E%88%E6%9D%83%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Ause-time%20revalidation%20decision%E3%80%81step-up%20reauthorization%20decision%E3%80%81positive%20control%E3%80%81cleanup%20step-up%20gap%E4%B8%8Egovernor%20question.md)。
+- `163`
+  载体家族 step-up 重授权治理与强请求续打治理分层。
+  入口：[163-安全载体家族step-up重授权治理与强请求续打治理分层速查表：step-up reauthorization decision、stronger-request continuation decision、positive control、cleanup continuation gap与governor question](163-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8Fstep-up%E9%87%8D%E6%8E%88%E6%9D%83%E6%B2%BB%E7%90%86%E4%B8%8E%E5%BC%BA%E8%AF%B7%E6%B1%82%E7%BB%AD%E6%89%93%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Astep-up%20reauthorization%20decision%E3%80%81stronger-request%20continuation%20decision%E3%80%81positive%20control%E3%80%81cleanup%20continuation%20gap%E4%B8%8Egovernor%20question.md)。
 
 ## 怎么配合主线读
 
