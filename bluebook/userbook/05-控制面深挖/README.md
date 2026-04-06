@@ -79,4 +79,5 @@
 - [69-hasCommand、isHidden、isCommandEnabled、local-jsx 与 remote send：为什么 remote mode 里的 slash 高亮、候选补全、启用态与实际执行去向不是同一个判定器.md](./69-hasCommand、isHidden、isCommandEnabled、local-jsx%20与%20remote%20send：为什么%20remote%20mode%20里的%20slash%20高亮、候选补全、启用态与实际执行去向不是同一个判定器.md)
 - [70-disableSlashCommands、commands=[]、hasCommand 与 remote send：为什么关掉本地 slash 命令层，不等于 remote mode 失去 slash 文本入口.md](./70-disableSlashCommands、commands%3D%5B%5D、hasCommand%20与%20remote%20send：为什么关掉本地%20slash%20命令层，不等于%20remote%20mode%20失去%20slash%20文本入口.md)
 - [71-useSkillsChange、useManagePlugins、MCPConnectionManager 与 useMergedCommands：为什么 remote session 的本地命令面不是持续增厚的本地 REPL，也不是完全冻结的远端镜像.md](./71-useSkillsChange、useManagePlugins、MCPConnectionManager%20与%20useMergedCommands：为什么%20remote%20session%20的本地命令面不是持续增厚的本地%20REPL，也不是完全冻结的远端镜像.md)
+- [72-getTools、useMergedTools、mcp.tools 与 toolPermissionContext：为什么 remote session 的 tool plane 不会像 command plane 一样一起变薄.md](./72-getTools、useMergedTools、mcp.tools%20与%20toolPermissionContext：为什么%20remote%20session%20的%20tool%20plane%20不会像%20command%20plane%20一样一起变薄.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。
