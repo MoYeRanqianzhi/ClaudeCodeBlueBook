@@ -103,6 +103,16 @@
 - [99-2026-04-06-delayed suggestion delivery 拆分记忆.md](./99-2026-04-06-delayed%20suggestion%20delivery%20%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 - [100-2026-04-06-task_summary vs post_turn_summary transport split 拆分记忆.md](./100-2026-04-06-task_summary%20vs%20post_turn_summary%20transport%20split%20%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 - [101-2026-04-06-result terminal semantics vs stream tail 拆分记忆.md](./101-2026-04-06-result%20terminal%20semantics%20vs%20stream%20tail%20%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
+- [102-2026-04-06-suggestion cleanup telemetry gap 拆分记忆.md](./102-2026-04-06-suggestion%20cleanup%20telemetry%20gap%20拆分记忆.md)
+- [103-2026-04-06-observer metadata stale scrub vs restore 拆分记忆.md](./103-2026-04-06-observer%20metadata%20stale%20scrub%20vs%20restore%20拆分记忆.md)
+- [104-2026-04-06-pendingLastEmittedEntry inert stale staging 拆分记忆.md](./104-2026-04-06-pendingLastEmittedEntry%20inert%20stale%20staging%20拆分记忆.md)
+- [105-2026-04-06-post_turn_summary wider wire visibility 拆分记忆.md](./105-2026-04-06-post_turn_summary%20wider%20wire%20visibility%20拆分记忆.md)
+- [106-2026-04-06-stream-json verbose raw wire 拆分记忆.md](./106-2026-04-06-stream-json%20verbose%20raw%20wire%20拆分记忆.md)
+- [107-2026-04-06-model separate override restore 拆分记忆.md](./107-2026-04-06-model%20separate%20override%20restore%20拆分记忆.md)
+- [108-2026-04-06-direct connect post_turn_summary callback consumer-path narrowing 拆分记忆.md](./108-2026-04-06-direct%20connect%20post_turn_summary%20callback%20consumer-path%20narrowing%20拆分记忆.md)
+- [109-2026-04-06-streamlined pre-wire rewrite ordering 拆分记忆.md](./109-2026-04-06-streamlined%20pre-wire%20rewrite%20ordering%20拆分记忆.md)
+- [110-2026-04-06-direct connect suppress-reason split for streamlined and post_turn_summary 拆分记忆.md](./110-2026-04-06-direct%20connect%20suppress-reason%20split%20for%20streamlined%20and%20post_turn_summary%20拆分记忆.md)
+- [111-2026-04-06-visibility tables from builder transport to UI consumer 拆分记忆.md](./111-2026-04-06-visibility%20tables%20from%20builder%20transport%20to%20UI%20consumer%20拆分记忆.md)
 
 用途：
 

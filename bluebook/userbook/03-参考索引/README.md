@@ -54,6 +54,16 @@
 50. 为什么远端看到的 `worker_status`、`pending_action`、`task_summary` 与 `session_state_changed` 不是同一张运行态面。
 - 为什么 `task_summary` 与 `post_turn_summary` 的 carrier、clear、union visibility 与 forwarding suppression 不是同一条 summary contract。
 - 为什么 `lastMessage`、最终输出语义与 raw stream tail 不是同一个“最后一个消息”。
+- 为什么已交付 suggestion 在 `interrupt`、`end_session` 与 output close 之后不一定留下 accepted / ignored telemetry。
+- 为什么 `pending_action`、`task_summary` 在 CCR startup 会被 scrub stale，却不会被本地恢复回填。
+- 为什么 deferred suggestion cleanup 里残留的 `pendingLastEmittedEntry` 更像 inert stale slot，而不是外部协议 bug。
+- 为什么 `post_turn_summary` 不是 core SDK-visible，却不等于完全不可见。
+- 为什么 `stream-json --verbose` 的 raw wire 输出不是普通 core SDK message surface。
+- 为什么 metadata 里的 `model` 在恢复时要走 separate override sink，而不是普通 `AppState` mapper。
+- 为什么 direct connect 对 `post_turn_summary` 的过滤不是消息不存在，而是 callback consumer-path narrowing。
+- 为什么 headless print 的 streamlined output 不是 terminal semantics 后处理，而是 pre-wire rewrite。
+- 为什么 `streamlined_*` 与 `post_turn_summary` 虽然同样在 direct connect 的过滤名单里，却不是同一种 suppress reason。
+- 为什么 builder/control transport、public SDK、direct-connect callback 与 UI consumer 不是同一张可见性表。
 51. 为什么 `permission_mode`、`is_ultraplan_mode` 与 `model` 不是同一种远端可恢复会话参数。
 52. 为什么 `task_started`、`task_progress`、`task_notification` 与 `session_state_changed` 不是同一种远端事件流。
 53. 为什么 CCR v2 remote bridge 的 `transport rebuild`、initial flush、`flush gate` 与 `sequence resume` 不是同一步。
