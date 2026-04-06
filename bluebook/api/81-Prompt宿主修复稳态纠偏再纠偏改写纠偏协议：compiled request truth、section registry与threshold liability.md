@@ -1,4 +1,4 @@
-# Prompt宿主修复稳态纠偏再纠偏改写纠偏协议：compiled request truth restitution、section registry reseal、dynamic boundary rebinding、protocol transcript repair、stable prefix reseal、lawful forgetting reseal、continuation requalification与threshold liability reinstatement
+# Prompt宿主修复稳态纠偏再纠偏改写纠偏协议：message lineage restitution、section registry reseal、dynamic boundary rebinding、protocol transcript repair、stable prefix reseal、lawful forgetting reseal、continuation qualification与threshold liability reinstatement
 
 这一章回答五个问题：
 
@@ -36,13 +36,13 @@ Claude Code 当前并没有公开一份名为：
 
 1. `rewrite_correction_session_object`
 2. `false_rewrite_correction_demotion_set`
-3. `compiled_request_truth_restitution`
+3. `message_lineage_restitution`
 4. `section_registry_reseal`
 5. `dynamic_boundary_rebinding`
 6. `protocol_transcript_repair`
 7. `stable_prefix_reseal`
 8. `lawful_forgetting_reseal`
-9. `continuation_requalification`
+9. `continuation_qualification`
 10. `threshold_liability_reinstatement`
 11. `rewrite_correction_verdict`
 
@@ -55,7 +55,7 @@ Claude Code 当前并没有公开一份名为：
 
 而是：
 
-- 围绕这十一类对象消费 Prompt 世界怎样把 rewrite correction 继续拉回同一个 `compiled request truth`、同一个 `section registry`、同一个 `dynamic boundary`、同一个 `protocol transcript`、同一个 `stable prefix`、同一个 `lawful forgetting boundary`、同一个 `continuation qualification` 与同一个 `threshold liability`
+- 围绕这十一类对象消费 Prompt 世界怎样把 rewrite correction 继续拉回同一条 `message lineage`、同一个 `section registry`、同一个 `dynamic boundary`、同一个 `protocol transcript`、同一个 `stable prefix`、同一个 `lawful forgetting boundary`、同一个 `continuation qualification` 与同一个 `threshold liability`
 
 这层真正解释的 Prompt 魔力不是：
 

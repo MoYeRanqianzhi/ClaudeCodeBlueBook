@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮深协议标题债推进动作: 已继续更新 `api/81 / 82 / 87 / 88`，把 Prompt / 治理 rewrite / refinement 协议页的可见主语从 `compiled request truth / authority chain / authority source restitution` 收回到 `message lineage / governance key / typed ask ledger`。
+- 本轮深协议标题债判断加固: 进入这层之后，最值钱的不再是补更多解释，而是防止深协议 H1 继续把 later maintainer 带回旧协议主语；因此这批只改标题和开头主语，不扩写正文中段。
 - 本轮第二层标题债收口动作: 已继续更新 `api/75 / 76` 与 `playbooks/27 / 28`，把深协议页与验证页的可见主语从 `compiled request truth restitution / authority source restitution / authority source / recovery asset` 继续收回到 `message lineage restitution / governance key restitution / governance key / authority object / recovery asset non-sovereignty`。
 - 本轮标题债分层结论: 当前最值钱的标题债已经明显分成两层，一层是宿主验收与入口合同页，一层是深协议与验证页；这一批补的是第二层。再往下继续，优先级最高的是 prompt/governance 的更深 API 标题和少数 casebooks 可见标题，而不是继续扩写 README。
 - 本轮可见标题债收口动作: 已继续更新 `api/75 / 76` 与 `playbooks/27 / 28`，把深协议页与验证页的 H1 主语从 `compiled request truth restitution / authority source restitution / authority source / recovery asset` 这些旧可见根词收回到 `message lineage restitution / governance key restitution / governance key / authority object / recovery asset non-sovereignty`。

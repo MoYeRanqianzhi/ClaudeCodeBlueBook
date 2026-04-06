@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/81 / 82 / 87 / 88` 现已把更深一层协议标题债继续收口：
+  - `81 / 87` 现已把 Prompt 深协议可见主语从 `compiled request truth / authority chain` 收回到 `message lineage`。
+  - `82 / 88` 现已把治理深协议可见主语从 `authority source restitution / authority chain` 收回到 `governance key / typed ask ledger`。
+- 新的长期结论：
+  - 深协议标题层如果继续保留旧主语，会比浅层标题更危险，因为它们看起来更正式、更像最终 contract，later maintainer 更容易直接拿来当权威入口。
 - `api/75 / 76 / playbooks/27 / 28` 现已把一批高价值可见标题债统一收口：
   - `75` 现已把 Prompt 深协议可见主语从 `compiled request truth restitution` 收回到 `message lineage restitution`。
   - `76` 现已把治理深协议可见主语从 `authority source restitution` 收回到 `governance key restitution`。

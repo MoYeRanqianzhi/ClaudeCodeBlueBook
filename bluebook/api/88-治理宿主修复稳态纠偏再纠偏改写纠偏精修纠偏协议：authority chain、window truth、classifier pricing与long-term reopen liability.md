@@ -1,10 +1,10 @@
-# 治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏协议：authority chain、window truth、classifier pricing、writeback seam 与 long-term reopen liability
+# 治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏协议：governance key、window truth、classifier pricing、writeback seam 与 long-term reopen liability
 
 这一章回答五个问题：
 
 1. Claude Code 当前到底通过哪些正式对象，让宿主、CI、评审与交接在治理 refinement correction 已被固定之后，继续消费同一个统一定价控制面，而不是退回更保守的值班说明。
 2. 哪些字段属于必须共享的修正对象，哪些属于 `hard_reject / reentry / reopen` 语义，哪些仍不应被绑定成公共 ABI。
-3. 为什么 Claude Code 的安全设计与省 token 设计本质上是同一条 `authority -> ledger -> window -> pricing -> classifier -> writeback seam -> liability -> threshold` 控制链，而不是两套并行主题。
+3. 为什么 Claude Code 的安全设计与省 token 设计本质上是同一条 `governance key -> typed ask ledger -> window -> pricing -> classifier -> writeback seam -> liability -> threshold` 控制链，而不是两套并行主题。
 4. 宿主开发者该按什么顺序消费这套治理 refinement correction 协议。
 5. 哪些现象一旦出现，应被直接升级为 `hard_reject`、`ledger_reseal_required`、`writeback_reseal_required`、`reentry_required` 或 `reopen_required`，而不是继续宣称 capability 仍然安全。
 
@@ -30,7 +30,7 @@ Claude Code 当前并没有公开一份名为：
 但治理 refinement correction 已经能围绕十类正式对象稳定成立：
 
 1. `reprotocol_session_object`
-2. `authority_chain_attestation`
+2. `governance_key_attestation`
 3. `ledger_truth_surface`
 4. `window_truth_surface`
 5. `pricing_causality_surface`
@@ -48,7 +48,7 @@ Claude Code 当前并没有公开一份名为：
 
 而是：
 
-- 围绕这十类对象继续消费同一个 authority、同一个 ledger、同一个 window truth、同一条 pricing causality、同一个 classifier 成本、同一条 writeback seam、同一个 ingress/restore lineage 与同一个 threshold liability
+- 围绕这十类对象继续消费同一个 `governance key`、同一条 typed ask ledger、同一个 window truth、同一条 pricing causality、同一个 classifier 成本、同一条 writeback seam、同一个 ingress/restore lineage 与同一个 threshold liability
 
 ## 2. 第一性原理
 
