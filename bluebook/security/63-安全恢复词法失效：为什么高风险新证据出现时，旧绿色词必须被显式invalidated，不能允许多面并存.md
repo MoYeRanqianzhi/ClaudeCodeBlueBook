@@ -268,16 +268,6 @@ footer、badge、summary 这类弱叙述面，
 
 `旧的弱承诺在更强风险出现后仍被保留，继续污染当前真相。`
 
-### 8.4 这一章之后还缺什么
-
-还缺一张更短的失效矩阵：
-
-`new stronger evidence -> invalidated old lexicon -> affected surfaces`
-
-也就是说，  
-下一步最自然的延伸就是：
-
-`appendix/47-安全恢复词法失效速查表`
 
 ## 9. 结语
 

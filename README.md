@@ -12,13 +12,17 @@
 ## 目录入口
 
 - [bluebook/README.md](bluebook/README.md): 蓝皮书入口与主线前门
+- [bluebook/userbook/README.md](bluebook/userbook/README.md): 面向使用者的 Claude Code Userbook
 - [docs/README.md](docs/README.md): 研究过程、证据与变更记录
+- `docs/development/`: 研究材料、长期记忆与研究日志
+- `docs/userbook-memory/`: userbook 作者侧记忆
 - `claude-code-source-code/`: 反编译/镜像源码参考，不是蓝皮书正文
 - 根目录辅助文档：`Agents.md`、`cgit.md`、`cmainloop.md`、`crisk.md`、`cuserbook.md` 是协作或专题备忘，不替代主线索引
 
 ## 主线入口
 
 - [bluebook/README.md](bluebook/README.md)
+- [bluebook/userbook/README.md](bluebook/userbook/README.md)
 - [bluebook/00-导读.md](bluebook/00-导读.md)
 - [bluebook/01-源码结构地图.md](bluebook/01-源码结构地图.md)
 - [bluebook/02-使用指南.md](bluebook/02-使用指南.md)
@@ -53,5 +57,6 @@
 ## 工作原则
 
 - 结论尽量回到具体源码文件、运行时对象和可复查证据。
-- `bluebook/` 负责正式主线与专题结论，`docs/` 只负责开发与记忆。
+- `bluebook/` 负责正式主线与专题结论；其中面向使用者的手册位于 `bluebook/userbook/`。
+- `docs/` 只负责开发与记忆；`docs/userbook-memory/` 承接 userbook 的作者侧记忆。
 - 总 README 只保留一级路由；深层交叉索引下沉到各目录 README 和 `bluebook/navigation/`。

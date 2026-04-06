@@ -1,0 +1,103 @@
+# 安全源码剖面索引
+
+`source-notes/` 当前包含 75 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+
+## 这一子目录放什么
+
+`security/` 主目录继续保留“主线论证链”。  
+`security/appendix/` 继续保留“压缩速查层”。  
+这里的 `source-notes/` 专门放：
+
+- 单机制源码剖面
+- 单协议边界拆解
+- 单文件群技术启示
+
+它比 `appendix/` 更长，  
+但比主线章节更贴近源码证据，  
+目的不是重复结论，  
+而是把“这条结论到底踩着哪些代码长出来”单独留下。
+
+## 当前内容
+
+1. [01-StructuredIO回执账本与签收边界](01-StructuredIO%E5%9B%9E%E6%89%A7%E8%B4%A6%E6%9C%AC%E4%B8%8E%E7%AD%BE%E6%94%B6%E8%BE%B9%E7%95%8C.md)
+2. [02-print与CCRClient的终局签字边界](02-print%E4%B8%8ECCRClient%E7%9A%84%E7%BB%88%E5%B1%80%E7%AD%BE%E5%AD%97%E8%BE%B9%E7%95%8C.md)
+3. [03-bridgePointer、sessionRestore与conversationRecovery的续作责任边界](03-bridgePointer%E3%80%81sessionRestore%E4%B8%8EconversationRecovery%E7%9A%84%E7%BB%AD%E4%BD%9C%E8%B4%A3%E4%BB%BB%E8%BE%B9%E7%95%8C.md)
+4. [04-sessionStorage、sessionRestore与fileHistory的审计关闭边界](04-sessionStorage%E3%80%81sessionRestore%E4%B8%8EfileHistory%E7%9A%84%E5%AE%A1%E8%AE%A1%E5%85%B3%E9%97%AD%E8%BE%B9%E7%95%8C.md)
+5. [05-sessionStoragePortable、sessionStorage、fileHistory与cleanup的不可逆销毁边界](05-sessionStoragePortable%E3%80%81sessionStorage%E3%80%81fileHistory%E4%B8%8Ecleanup%E7%9A%84%E4%B8%8D%E5%8F%AF%E9%80%86%E9%94%80%E6%AF%81%E8%BE%B9%E7%95%8C.md)
+6. [06-cleanup、backgroundHousekeeping与settings的保留期治理边界](06-cleanup%E3%80%81backgroundHousekeeping%E4%B8%8Esettings%E7%9A%84%E4%BF%9D%E7%95%99%E6%9C%9F%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+7. [07-cleanup执行诚实性、TaskOutput与保留期回执缺口](07-cleanup%E6%89%A7%E8%A1%8C%E8%AF%9A%E5%AE%9E%E6%80%A7%E3%80%81TaskOutput%E4%B8%8E%E4%BF%9D%E7%95%99%E6%9C%9F%E5%9B%9E%E6%89%A7%E7%BC%BA%E5%8F%A3.md)
+8. [08-diskOutput、cleanup与concurrentSessions的清理隔离边界](08-diskOutput%E3%80%81cleanup%E4%B8%8EconcurrentSessions%E7%9A%84%E6%B8%85%E7%90%86%E9%9A%94%E7%A6%BB%E8%BE%B9%E7%95%8C.md)
+9. [09-task outputs、tool-results、transcripts与plans的清理家族宪法](09-task%20outputs%E3%80%81tool-results%E3%80%81transcripts%E4%B8%8Eplans%E7%9A%84%E6%B8%85%E7%90%86%E5%AE%B6%E6%97%8F%E5%AE%AA%E6%B3%95.md)
+10. [10-plans、sessionEnvironment与fileHistory的清理制度理由与漂移边界](10-plans%E3%80%81sessionEnvironment%E4%B8%8EfileHistory%E7%9A%84%E6%B8%85%E7%90%86%E5%88%B6%E5%BA%A6%E7%90%86%E7%94%B1%E4%B8%8E%E6%BC%82%E7%A7%BB%E8%BE%B9%E7%95%8C.md)
+11. [11-cleanup、settings与path helpers的载体家族元数据缺口](11-cleanup%E3%80%81settings%E4%B8%8Epath%20helpers%E7%9A%84%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%85%83%E6%95%B0%E6%8D%AE%E7%BC%BA%E5%8F%A3.md)
+12. [12-cleanupPeriodDays、backgroundHousekeeping与CleanupResult的运行时符合性缺口](12-cleanupPeriodDays%E3%80%81backgroundHousekeeping%E4%B8%8ECleanupResult%E7%9A%84%E8%BF%90%E8%A1%8C%E6%97%B6%E7%AC%A6%E5%90%88%E6%80%A7%E7%BC%BA%E5%8F%A3.md)
+13. [13-microCompact、verifyAutoModeGateAccess与cleanup的反漂移验证边界](13-microCompact%E3%80%81verifyAutoModeGateAccess%E4%B8%8Ecleanup%E7%9A%84%E5%8F%8D%E6%BC%82%E7%A7%BB%E9%AA%8C%E8%AF%81%E8%BE%B9%E7%95%8C.md)
+14. [14-verifyAndDemote、auto-mode gate与cleanup的修复治理边界](14-verifyAndDemote%E3%80%81auto-mode%20gate%E4%B8%8Ecleanup%E7%9A%84%E4%BF%AE%E5%A4%8D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+15. [15-model migrations、plugin orphan cleanup与plans continuity的迁移治理边界](15-model%20migrations%E3%80%81plugin%20orphan%20cleanup%E4%B8%8Eplans%20continuity%E7%9A%84%E8%BF%81%E7%A7%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+16. [16-model deprecation、migration notifications与plugin orphan grace window的退役治理边界](16-model%20deprecation%E3%80%81migration%20notifications%E4%B8%8Eplugin%20orphan%20grace%20window%E7%9A%84%E9%80%80%E5%BD%B9%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+17. [17-tombstone messages、.orphaned_at与migration timestamps的墓碑治理边界](17-tombstone%20messages%E3%80%81.orphaned_at%E4%B8%8Emigration%20timestamps%E7%9A%84%E5%A2%93%E7%A2%91%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+18. [18-removeOrphanedAtMarker、refreshActivePlugins与copyPlanForResume的复活治理边界](18-removeOrphanedAtMarker%E3%80%81refreshActivePlugins%E4%B8%8EcopyPlanForResume%E7%9A%84%E5%A4%8D%E6%B4%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+19. [19-deletePluginOptions、setPluginEnabledOp与copyPlanForFork的再赋权治理边界](19-deletePluginOptions%E3%80%81setPluginEnabledOp%E4%B8%8EcopyPlanForFork%E7%9A%84%E5%86%8D%E8%B5%8B%E6%9D%83%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+20. [20-savePluginOptions、saveMcpServerUserConfig与PluginOptionsFlow的重配置治理边界](20-savePluginOptions%E3%80%81saveMcpServerUserConfig%E4%B8%8EPluginOptionsFlow%E7%9A%84%E9%87%8D%E9%85%8D%E7%BD%AE%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+21. [21-refreshActivePlugins、reload-plugins与refreshPluginState的重新激活治理边界](21-refreshActivePlugins%E3%80%81reload-plugins%E4%B8%8ErefreshPluginState%E7%9A%84%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+22. [22-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的就绪治理边界](22-pluginReconnectKey%E3%80%81MCPServerConnection%E4%B8%8EReadMcpResourceTool%E7%9A%84%E5%B0%B1%E7%BB%AA%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+23. [23-useManageMCPConnections、toolExecution与print的连续性治理边界](23-useManageMCPConnections%E3%80%81toolExecution%E4%B8%8Eprint%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+24. [24-handleRemoteAuthFailure、reconnectMcpServerImpl与performMCPOAuthFlow的恢复治理边界](24-handleRemoteAuthFailure%E3%80%81reconnectMcpServerImpl%E4%B8%8EperformMCPOAuthFlow%E7%9A%84%E6%81%A2%E5%A4%8D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+25. [25-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的重新并入治理边界](25-onConnectionAttempt%E3%80%81dynamicMcpState%E4%B8%8EreregisterChannelHandlerAfterReconnect%E7%9A%84%E9%87%8D%E6%96%B0%E5%B9%B6%E5%85%A5%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+26. [26-buildMcpServerStatuses、useMcpConnectivityStatus与MCPReconnect的重新投影治理边界](26-buildMcpServerStatuses%E3%80%81useMcpConnectivityStatus%E4%B8%8EMCPReconnect%E7%9A%84%E9%87%8D%E6%96%B0%E6%8A%95%E5%BD%B1%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+27. [27-McpAuthTool、MCPRemoteServerMenu与MCPReconnect的重新担保治理边界](27-McpAuthTool%E3%80%81MCPRemoteServerMenu%E4%B8%8EMCPReconnect%E7%9A%84%E9%87%8D%E6%96%B0%E6%8B%85%E4%BF%9D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+28. [28-ensureConnectedClient、ReadMcpResourceTool与toolExecution的用时重验证治理边界](28-ensureConnectedClient%E3%80%81ReadMcpResourceTool%E4%B8%8EtoolExecution%E7%9A%84%E7%94%A8%E6%97%B6%E9%87%8D%E9%AA%8C%E8%AF%81%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+29. [29-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的step-up重授权治理边界](29-wrapFetchWithStepUpDetection%E3%80%81ClaudeAuthProvider%E4%B8%8EperformMCPOAuthFlow%E7%9A%84step-up%E9%87%8D%E6%8E%88%E6%9D%83%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+30. [30-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求续打治理边界](30-callMCPToolWithUrlElicitationRetry%E3%80%81toolExecution%E4%B8%8EMCP%E8%AE%A4%E8%AF%81%E8%B7%AF%E5%BE%84%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E7%BB%AD%E6%89%93%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+31. [31-callMCPToolWithUrlElicitationRetry、callMCPTool与tool_result映射的强请求完成治理边界](31-callMCPToolWithUrlElicitationRetry%E3%80%81callMCPTool%E4%B8%8Etool_result%E6%98%A0%E5%B0%84%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%AE%8C%E6%88%90%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+32. [32-addToolResult、print与CCRClient的强请求终局治理边界](32-addToolResult%E3%80%81print%E4%B8%8ECCRClient%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E7%BB%88%E5%B1%80%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+33. [33-StructuredIO与orphaned permission处理链的强请求遗忘治理边界](33-StructuredIO%E4%B8%8Eorphaned%20permission%E5%A4%84%E7%90%86%E9%93%BE%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E9%81%97%E5%BF%98%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+34. [34-duplicate与orphan response分流中的强请求免责释放治理边界](34-duplicate%E4%B8%8Eorphan%20response%E5%88%86%E6%B5%81%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%85%8D%E8%B4%A3%E9%87%8A%E6%94%BE%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+35. [35-commandLifecycle与orphaned-permission队列的强请求归档关闭治理边界](35-commandLifecycle%E4%B8%8Eorphaned-permission%E9%98%9F%E5%88%97%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%BD%92%E6%A1%A3%E5%85%B3%E9%97%AD%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+36. [36-control_response回放与日志面的强请求审计关闭治理边界](36-control_response%E5%9B%9E%E6%94%BE%E4%B8%8E%E6%97%A5%E5%BF%97%E9%9D%A2%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%AE%A1%E8%AE%A1%E5%85%B3%E9%97%AD%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+37. [37-debug.ts、diagLogs、cleanup、sessionStorage与fileHistory的强请求不可逆擦除治理边界](37-debug.ts、diagLogs、cleanup、sessionStorage与fileHistory的强请求不可逆擦除治理边界.md)
+38. [38-cleanup、backgroundHousekeeping、settings与diagLogs-env选路的强请求保留期治理边界](38-cleanup、backgroundHousekeeping、settings与diagLogs-env选路的强请求保留期治理边界.md)
+39. [39-settings文案、sessionStorage、backgroundHousekeeping、cleanup与diagLogs的强请求保留期执行诚实性边界](39-settings文案、sessionStorage、backgroundHousekeeping、cleanup与diagLogs的强请求保留期执行诚实性边界.md)
+40. [40-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock的强请求清理隔离治理边界](40-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock的强请求清理隔离治理边界.md)
+41. [41-diskOutput、sessionStorage、toolResultStorage、cleanup、debug与diagLogs的强请求清理家族宪法边界](41-diskOutput、sessionStorage、toolResultStorage、cleanup、debug与diagLogs的强请求清理家族宪法边界.md)
+42. [42-diskOutput、toolResultStorage、plans、debug与diagLogs的强请求清理制度理由与漂移边界](42-diskOutput、toolResultStorage、plans、debug与diagLogs的强请求清理制度理由与漂移边界.md)
+43. [43-cleanup、settings、diskOutput、plans、debug与diagLogs的强请求清理元数据缺口](43-cleanup、settings、diskOutput、plans、debug与diagLogs的强请求清理元数据缺口.md)
+44. [44-cleanupPeriodDays、housekeeping、plansDirectory与CleanupResult的强请求运行时符合性缺口](44-cleanupPeriodDays、housekeeping、plansDirectory与CleanupResult的强请求运行时符合性缺口.md)
+45. [45-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口](45-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口.md)
+46. [46-verifyAutoModeGateAccess、verifyAndDemote与强请求清理修复治理缺口](46-verifyAutoModeGateAccess、verifyAndDemote与强请求清理修复治理缺口.md)
+47. [47-main迁移链、orphan宽限期与plans continuity的强请求清理迁移治理边界](47-main迁移链、orphan宽限期与plans continuity的强请求清理迁移治理边界.md)
+48. [48-deprecation clock、orphan visibility cutoff与强请求清理退役治理边界](48-deprecation%20clock%E3%80%81orphan%20visibility%20cutoff%E4%B8%8E%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%80%80%E5%BD%B9%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+49. [49-tombstone messages、.orphaned_at与migration timestamps的强请求清理墓碑治理边界](49-tombstone%20messages%E3%80%81.orphaned_at%E4%B8%8Emigration%20timestamps%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%A2%93%E7%A2%91%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+50. [50-removeOrphanedAtMarker、refreshActivePlugins与copyPlanForResume的强请求清理复活治理边界](50-removeOrphanedAtMarker%E3%80%81refreshActivePlugins%E4%B8%8EcopyPlanForResume%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%A4%8D%E6%B4%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+51. [51-deletePluginOptions、setPluginEnabledOp与copyPlanForFork的强请求清理再赋权治理边界](51-deletePluginOptions%E3%80%81setPluginEnabledOp%E4%B8%8EcopyPlanForFork%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%86%8D%E8%B5%8B%E6%9D%83%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+52. [52-savePluginOptions、saveMcpServerUserConfig与PluginOptionsFlow的强请求清理重配置治理边界](52-savePluginOptions%E3%80%81saveMcpServerUserConfig%E4%B8%8EPluginOptionsFlow%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E9%85%8D%E7%BD%AE%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+53. [53-refreshActivePlugins、reload-plugins与refreshPluginState的强请求清理重新激活治理边界](53-refreshActivePlugins%E3%80%81reload-plugins%E4%B8%8ErefreshPluginState%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+54. [54-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的强请求清理就绪治理边界](54-pluginReconnectKey%E3%80%81MCPServerConnection%E4%B8%8EReadMcpResourceTool%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%B0%B1%E7%BB%AA%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+55. [55-useManageMCPConnections、toolExecution与print的强请求清理连续性治理边界](55-useManageMCPConnections%E3%80%81toolExecution%E4%B8%8Eprint%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+56. [56-handleRemoteAuthFailure、reconnectMcpServerImpl与McpAuthTool的强请求清理恢复治理边界](56-handleRemoteAuthFailure%E3%80%81reconnectMcpServerImpl%E4%B8%8EMcpAuthTool%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E6%81%A2%E5%A4%8D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+57. [57-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的强请求清理重新并入治理边界](57-onConnectionAttempt%E3%80%81dynamicMcpState%E4%B8%8EreregisterChannelHandlerAfterReconnect%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E6%96%B0%E5%B9%B6%E5%85%A5%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+58. [58-buildMcpServerStatuses、useMcpConnectivityStatus与MCPReconnect的强请求清理重新投影治理边界](58-buildMcpServerStatuses%E3%80%81useMcpConnectivityStatus%E4%B8%8EMCPReconnect%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E6%96%B0%E6%8A%95%E5%BD%B1%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+59. [59-McpAuthTool、MCPRemoteServerMenu与MCPReconnect的强请求清理重新担保治理边界](59-McpAuthTool%E3%80%81MCPRemoteServerMenu%E4%B8%8EMCPReconnect%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E6%96%B0%E6%8B%85%E4%BF%9D%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+60. [60-ensureConnectedClient、ReadMcpResourceTool与toolExecution的强请求清理用时重验证治理边界](60-ensureConnectedClient%E3%80%81ReadMcpResourceTool%E4%B8%8EtoolExecution%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E7%94%A8%E6%97%B6%E9%87%8D%E9%AA%8C%E8%AF%81%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+61. [61-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的强请求清理step-up重授权治理边界](61-wrapFetchWithStepUpDetection%E3%80%81ClaudeAuthProvider%E4%B8%8EperformMCPOAuthFlow%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86step-up%E9%87%8D%E6%8E%88%E6%9D%83%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+62. [62-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界](62-callMCPToolWithUrlElicitationRetry%E3%80%81toolExecution%E4%B8%8EMCP%E8%AE%A4%E8%AF%81%E8%B7%AF%E5%BE%84%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E7%BB%AD%E6%89%93%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+63. [63-callMCPToolWithUrlElicitationRetry、callMCPTool与tool_result映射的强请求清理完成治理边界](63-callMCPToolWithUrlElicitationRetry%E3%80%81callMCPTool%E4%B8%8Etool_result%E6%98%A0%E5%B0%84%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%AE%8C%E6%88%90%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+64. [64-addToolResult、print与CCRClient的强请求清理终局治理边界](64-addToolResult%E3%80%81print%E4%B8%8ECCRClient%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E7%BB%88%E5%B1%80%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+65. [65-StructuredIO与orphaned permission处理链的强请求清理遗忘治理边界](65-StructuredIO%E4%B8%8Eorphaned%20permission%E5%A4%84%E7%90%86%E9%93%BE%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%81%97%E5%BF%98%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+66. [66-duplicate与orphan response分流中的强请求清理免责释放治理边界](66-duplicate%E4%B8%8Eorphan%20response%E5%88%86%E6%B5%81%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%85%8D%E8%B4%A3%E9%87%8A%E6%94%BE%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+67. [67-commandLifecycle与orphaned-permission队列的强请求清理归档关闭治理边界](67-commandLifecycle%E4%B8%8Eorphaned-permission%E9%98%9F%E5%88%97%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%BD%92%E6%A1%A3%E5%85%B3%E9%97%AD%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+68. [68-control_response回放与日志面的强请求清理审计关闭治理边界](68-control_response%E5%9B%9E%E6%94%BE%E4%B8%8E%E6%97%A5%E5%BF%97%E9%9D%A2%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%AE%A1%E8%AE%A1%E5%85%B3%E9%97%AD%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+69. [69-debug与diagnostics载体物化中的强请求清理不可逆擦除治理边界](69-debug%E4%B8%8Ediagnostics%E8%BD%BD%E4%BD%93%E7%89%A9%E5%8C%96%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E4%B8%8D%E5%8F%AF%E9%80%86%E6%93%A6%E9%99%A4%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+70. [70-cleanupPeriodDays与housekeeping调度中的强请求清理保留期治理边界](70-cleanupPeriodDays%E4%B8%8Ehousekeeping%E8%B0%83%E5%BA%A6%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E4%BF%9D%E7%95%99%E6%9C%9F%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+71. [71-settings文案与cleanup覆盖范围中的强请求清理保留期执行诚实性边界](71-settings%E6%96%87%E6%A1%88%E4%B8%8Ecleanup%E8%A6%86%E7%9B%96%E8%8C%83%E5%9B%B4%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E4%BF%9D%E7%95%99%E6%9C%9F%E6%89%A7%E8%A1%8C%E8%AF%9A%E5%AE%9E%E6%80%A7%E8%BE%B9%E7%95%8C.md)
+72. [72-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界](72-TaskOutput%E3%80%81diskOutput%E3%80%81toolResultStorage%E3%80%81concurrentSessions%E4%B8%8EcronTasksLock%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%9A%94%E7%A6%BB%E8%BE%B9%E7%95%8C.md)
+73. [73-diskOutput、sessionStorage、toolResultStorage、plans、debug与diagLogs中的强请求清理家族宪法边界](73-diskOutput%E3%80%81sessionStorage%E3%80%81toolResultStorage%E3%80%81plans%E3%80%81debug%E4%B8%8EdiagLogs%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%AE%B6%E6%97%8F%E5%AE%AA%E6%B3%95%E8%BE%B9%E7%95%8C.md)
+74. [74-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug与diagLogs中的强请求清理制度理由边界](74-diskOutput%E3%80%81sessionStorage%E3%80%81toolResultStorage%E3%80%81plans%E3%80%81fileHistory%E3%80%81sessionEnvironment%E3%80%81debug%E4%B8%8EdiagLogs%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%88%B6%E5%BA%A6%E7%90%86%E7%94%B1%E8%BE%B9%E7%95%8C.md)
+75. [75-cleanup、settings、path helpers、permissions与env contract中的强请求清理制度元数据边界](75-cleanup%E3%80%81settings%E3%80%81path%20helpers%E3%80%81permissions%E4%B8%8Eenv%20contract%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%88%B6%E5%BA%A6%E5%85%83%E6%95%B0%E6%8D%AE%E8%BE%B9%E7%95%8C.md)
+
+## 和其他目录的分工
+
+- 与 `security/` 主目录的关系：`source-notes/` 负责贴近源码拆机制，主目录负责把这些机制压成更高阶判断。
+- 与 `appendix/` 的关系：`appendix/` 负责短表、矩阵和索引；`source-notes/` 负责长一点的证据剖面，不把速查卡撑成半篇长文。
+- 与 `docs/development/research-log.md` 的关系：research log 负责记录研究推进；`source-notes/` 负责留下可以长期复用的源码剖面资产。
+- 与 [../../docs/development/security/README.md](../../docs/development/security/README.md) 的关系：安全专题的后续候选、章节推进和写作边界放到隔离记忆层，不再混回 `source-notes/`。

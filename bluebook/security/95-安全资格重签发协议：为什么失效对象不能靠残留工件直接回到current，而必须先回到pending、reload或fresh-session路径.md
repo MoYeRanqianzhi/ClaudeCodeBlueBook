@@ -361,20 +361,6 @@ fresh session、`/reload-plugins`、MCP `pending -> connect` 属于后者。
 Claude Code 的源码已经有很成熟的制度意识，  
 但产品化表达还可以再进一步统一。
 
-## 9. 对目录结构与后续研究的启发
-
-写到这里，恢复安全链又可以再清楚地分成两大块：
-
-1. `资格本体`
-   什么是真正被保护的对象
-2. `资格生命周期`
-   失效后如何退出、如何重签发、如何重返 current
-
-因此后续最自然的下一层会是：
-
-`安全资格中间态语法`
-
-也就是把 `needsRefresh`、`pending`、`fresh-session-fallback`、`retryable reconnect` 这些对象统一放进一套更抽象的重签发阶段模型里。
 
 ## 10. 给系统设计者的技术启示
 

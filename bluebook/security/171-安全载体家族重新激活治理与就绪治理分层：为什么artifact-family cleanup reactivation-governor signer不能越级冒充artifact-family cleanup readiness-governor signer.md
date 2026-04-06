@@ -1,0 +1,372 @@
+# 安全载体家族重新激活治理与就绪治理分层：为什么artifact-family cleanup reactivation-governor signer不能越级冒充artifact-family cleanup readiness-governor signer
+
+## 1. 为什么在 `170` 之后还必须继续写 `171`
+
+`170-安全载体家族重配置治理与重新激活治理分层` 已经回答了：
+
+`cleanup 线即便以后长出 reactivation governor，也还需要一层正式主权去决定当前 truth 何时真正接管 active world。`
+
+但如果继续往下追问，
+还会碰到另一层很容易被误写成“active world 已切换就说明现在已经能用了”的错觉：
+
+`只要 reactivation governor 已经把新的 truth 接进 current session，它就自动拥有了决定对象现在是否真的 connected、authenticated、capable、ready-for-use 的主权。`
+
+Claude Code 当前源码同样不能支持这种更强说法。
+
+因为继续看：
+
+1. `src/services/mcp/types.ts:162-203` 的 `MCPServerConnection` 联合类型
+2. `src/services/mcp/useManageMCPConnections.ts:143-153,765-853,1026-1123` 的 `pluginReconnectKey`、`pending` 初始化与 reconnect path
+3. `src/hooks/notifs/useMcpConnectivityStatus.tsx:25-63` 的 `failed / needs-auth` notification grammar
+4. `src/commands/plugin/ManagePlugins.tsx:512-519` 的 `getMcpStatus()`
+5. `src/cli/handlers/mcp.tsx:26-35` 的 health result grammar
+6. `src/tools/ReadMcpResourceTool/ReadMcpResourceTool.ts:78-95` 的 `connected` hard gate
+7. `src/services/tools/toolExecution.ts:1599-1628` 的 `connected -> needs-auth` downgrade
+
+会发现 repo 已经清楚展示出：
+
+1. `reactivation governance` 负责让新的 truth 进入 current active world
+2. `readiness governance` 负责决定这套 active truth 当前到底能不能被当成可用 truth 消费
+
+也就是说：
+
+`artifact-family cleanup reactivation-governor signer`
+
+和
+
+`artifact-family cleanup readiness-governor signer`
+
+仍然不是一回事。
+
+前者最多能说：
+
+`新的 truth 已经被接进当前世界。`
+
+后者才配说：
+
+`这个当前世界现在真的 ready，可以被后续 reader、tool 与 user-facing surface 当成可用事实继续消费。`
+
+所以 `170` 之后必须继续补的一层就是：
+
+`安全载体家族重新激活治理与就绪治理分层`
+
+也就是：
+
+`reactivation governor 负责把 truth 接进 active world；readiness governor 才负责决定这个 active world 现在是否真的可用。`
+
+## 2. 先做一条谨慎声明：`artifact-family cleanup readiness-governor signer` 仍是研究命名，不是源码现成类型
+
+这里同样要先讲清楚：
+
+`Claude Code 当前源码里并没有一个字面存在的类型叫 artifact-family cleanup readiness-governor signer。`
+
+这里的 `artifact-family cleanup readiness-governor signer` 仍是研究命名。
+它不是在声称 cleanup 线已经有一个未公开的 readiness manager，
+而是在说：
+
+1. repo 已经明确把 MCP 连接状态拆成 `connected / pending / needs-auth / failed / disabled`
+2. repo 已经把 `activate`、`connected`、`needs auth`、`failed` 写成不同 surface
+3. repo 已经让工具调用只接受 `connected`，而不是“刚重载过就算 ready”
+
+因此 `171` 不是在虚构已有实现，
+而是在给更深的一层缺口命名：
+
+`会重新激活，不等于会真正就绪。`
+
+## 3. 最短结论
+
+Claude Code 当前源码至少给出了五类“reactivation-governor signer 仍不等于 readiness-governor signer”证据：
+
+1. `MCPServerConnection` 联合类型直接把 client state 拆成 `connected / pending / needs-auth / failed / disabled`；这说明 active world 已有对象，不等于对象已 ready
+2. `useManageMCPConnections()` 在 `pluginReconnectKey` 触发后，会先把新 client 置为 `pending`，再尝试连接；这说明 reactivation 之后还存在单独的 readiness 过渡层
+3. `useMcpConnectivityStatus()` 与 `getMcpStatus()` 都把 `failed`、`needs-auth`、`pending` 单独显化；这说明 repo 不把 active truth 偷写成 ready truth
+4. `ReadMcpResourceTool` 明确要求 `client.type === 'connected'`，否则直接报 `Server "...\" is not connected`；这说明可用性消费面只接受 readiness truth
+5. `toolExecution.ts` 在 `McpAuthError` 时会把一个原本 `connected` 的 client 降成 `needs-auth`；这说明 readiness 甚至不是一次性 verdict，而是可被运行时持续撤销的主权
+
+因此这一章的最短结论是：
+
+`reactivation governor 最多能说新的 truth 已经进入当前世界；readiness governor 才能说这个当前世界现在到底能不能被继续使用。`
+
+再压成一句：
+
+`重新激活，不等于已经就绪。`
+
+## 4. 第一性原理：reactivation governance 回答“这组 truth 是否已接入当前世界”，readiness governance 回答“这个当前世界现在能不能被继续消费”
+
+从第一性原理看，
+重新激活治理与就绪治理处理的是两个不同主权问题。
+
+reactivation governor 回答的是：
+
+1. stale world 是否已被 current world 替换
+2. 哪个时刻完成 Layer-3 swap
+3. 哪些 active components 已经换入
+4. 当前 session 是否已经接到新的 config truth
+5. 不同 mode 下谁来触发 active takeover
+
+readiness governor 回答的则是：
+
+1. 当前 client 是否已 `connected`
+2. 是否仍在 `pending`
+3. 是否进入 `needs-auth`
+4. 是否已经 `failed`
+5. 下游工具、资源读取和 health check 是否可以继续消费它
+
+如果把这两层压成一句“反正已经 reload 了”，
+系统就会制造五类危险幻觉：
+
+1. active-means-ready illusion
+   只要 active world 已换入，就误以为当前能力一定可用
+2. pending-means-soon-enough illusion
+   只要对象处于 pending，就误以为它已经可以被后续 reader 当成可用 truth
+3. auth-gap-is-incidental illusion
+   误以为 `needs-auth` 只是 UI 小问题，而不是 readiness 未闭合
+4. connected-once-means-ready-now illusion
+   误以为之前连通过一次，就说明当前仍 ready
+5. activation-summary-means-capability-proof illusion
+   误以为一次 reload summary 就等于后续工具面可以安全消费
+
+所以从第一性原理看：
+
+`reactivation governor` 决定新的 truth 有没有接进当前世界；
+`readiness governor` 决定这个当前世界能不能被继续消费。
+
+## 5. `MCPServerConnection` 与 `useManageMCPConnections()` 先证明：active world 里也允许正式存在非 ready 对象
+
+`types.ts:162-203` 很硬。
+
+这里没有把 MCP client 简化成：
+
+`present / absent`
+
+而是显式拆成：
+
+1. `connected`
+2. `pending`
+3. `needs-auth`
+4. `failed`
+5. `disabled`
+
+只要这种联合类型存在，
+系统就已经公开承认：
+
+`active world has object`
+
+并不自动等于：
+
+`object is ready`
+
+`useManageMCPConnections.ts:765-853` 进一步把这种分层做成运行时制度。
+文件注释明确写出：
+
+`Re-runs on session change (/clear) and on /reload-plugins (pluginReconnectKey).`
+
+而在 effect 内，
+新 client 会先被加成：
+
+`type: 'pending'`
+
+再继续进入连接流程。
+
+这说明 `pluginReconnectKey` 的意义不是：
+
+`ready`
+
+而是：
+
+`readiness evaluation should begin again`
+
+也就是说，reactivation 只是在重新开启 readiness 管道，
+不是直接签发 readiness 本身。
+
+## 6. `pending / needs-auth / failed` 的 surface grammar 再证明：repo 明确拒绝把激活后的当前世界冒充成可用世界
+
+`useMcpConnectivityStatus.tsx:25-63` 很值钱。
+
+这里只在两类状态上发通知：
+
+1. `failed`
+2. `needs-auth`
+
+这说明系统继续追问的，不是：
+
+`对象有没有被接进 current world`
+
+而是：
+
+`这个 current world 现在有没有真正 ready`
+
+`ManagePlugins.tsx:512-519` 也直接把 status 做成：
+
+`connected / disabled / pending / needs-auth / failed`
+
+而 `cli/handlers/mcp.tsx:26-35` 的 health check 更进一步把结果句法写成：
+
+1. `✓ Connected`
+2. `! Needs authentication`
+3. `✗ Failed to connect`
+
+一旦 repo 在 notification、管理界面、CLI health surface 上都同时保留这组句法，
+它就在公开承认：
+
+`reactivation`
+
+之后仍然有一整层：
+
+`readiness adjudication`
+
+没有被省略掉。
+
+## 7. `ReadMcpResourceTool` 给出最强消费侧正例：可用性消费面只接受 readiness truth，不接受 mere reactivation
+
+`ReadMcpResourceTool.ts:78-95` 很硬。
+
+它先找 server，
+再直接检查：
+
+`if (client.type !== 'connected') throw new Error("Server ... is not connected")`
+
+这等于直接证明下游 tool consumer 的制度不是：
+
+`只要这个对象已经在 current world 里`
+
+而是：
+
+`只有当 readiness verdict 为 connected 时，我才消费它`
+
+从技术角度看，这非常先进。
+它把：
+
+1. object present in active world
+2. object ready for use
+
+拆成了两个独立关口，
+从而防止下游工具在 `pending`、`needs-auth` 或 `failed` 时误把弱事实当强事实。
+
+这对 cleanup 线极其重要。
+因为将来旧 path、旧 promise、旧 receipt 即便已经被重新激活，
+也仍不自动说明：
+
+`它们现在已经 ready，足够被后续 consumer 当成稳定 truth 继续消费。`
+
+## 8. `toolExecution.ts` 再证明：readiness 不是一次性 verdict，而是可被运行时持续撤销的主权
+
+`toolExecution.ts:1599-1628` 特别值钱。
+
+这里在 `McpAuthError` 时，
+会把一个原本 `connected` 的 client 更新成：
+
+`type: 'needs-auth'`
+
+而且注释明确写出：
+
+`This updates the /mcp display to show the server needs re-authorization`
+
+这说明 repo 对 readiness 的理解不是：
+
+`只要曾经被激活并连通过一次，以后就一直 ready`
+
+相反，
+它承认 readiness 是一种会被运行时证据持续改写的 current truth。
+
+这条证据非常关键。
+它说明 readiness governor 的本体不是一次性盖章，
+而是：
+
+`当前还能不能继续被安全消费`
+
+的持续裁决。
+
+## 9. 技术先进性与哲学本质：Claude Code 真正先进的地方，是它拒绝让 active truth 自动篡位成 usable truth
+
+从技术角度看，Claude Code 在这条线上的先进性，
+不只是有 `connected / pending / failed` 这些状态名。
+
+更值钱的是它已经在多个点上承认：
+
+1. reactivated client 可以先是 pending
+2. active world 里仍可以合法存在 not-ready object
+3. `needs-auth` 不是连接细节，而是 readiness fail state
+4. 下游工具只消费 connected truth
+5. connected truth 还可能被运行时 auth failure 撤销
+
+这背后的哲学本质是：
+
+`真正成熟的系统，不会让“现在在场”自动冒充“现在能用”。`
+
+因此对 cleanup 线最关键的技术启示不是：
+
+`给它补 reactivation grammar 就够了。`
+
+而是：
+
+`必须同时补 reactivation grammar 与 readiness grammar。`
+
+否则系统会停在另一种危险的半治理状态：
+
+`大家都知道新的 truth 已经接进当前世界了，但没人正式回答：现在到底能不能继续依赖它。`
+
+## 10. 苏格拉底式自诘：我的判断有没有再次越级
+
+为了避免把“源码里有 pending/failed 状态”直接写成“cleanup 线只差照抄 MCP 状态机”，
+这里必须主动追问自己四个问题。
+
+### 第一问
+
+`我是不是把 connected 当成了 readiness 的全部？`
+
+不能这样写。
+connected 只是一个 readiness positive control，
+它背后还连着 auth、capability、tool-level acceptance 等消费条件。
+
+### 第二问
+
+`reactivation governor 和 readiness governor 一定要做成两个模块吗？`
+
+也不能这么绝对。
+它们可以由同一实现承载，
+但回答的问题不同：
+一个回答“当前世界是否已切换”，
+一个回答“切换后的当前世界是否真的可用”。
+
+### 第三问
+
+`如果 active world 已经切换，为何还不能直接说系统 ready？`
+
+因为源码已经给出反例：
+
+1. 切换后 client 仍可处于 `pending`
+2. 切换后仍可能落到 `needs-auth`
+3. 下游读取工具仍会拒绝非 `connected`
+
+所以 active takeover 只是 readiness 的前提，不是 readiness 本身。
+
+### 第四问
+
+`我是不是把 notification surface、health surface 与 tool-consumption surface 混成同一个 verdict？`
+
+不能这样写。
+它们只是不同 consumer 对同一 readiness plane 的投影。
+
+所以这一章最该继续约束自己的，
+就是始终把：
+
+`reactivated`
+`connected`
+`usable`
+
+当成三个不同强度的事实。
+
+## 11. 一条硬结论
+
+这组源码真正说明的不是：
+
+`Claude Code 只要决定了 cleanup 旧对象何时真正接管 current active world，就已经自动拥有了治理它何时真正 ready for use 的主权。`
+
+而是：
+
+`repo 在 MCPServerConnection 的联合状态机、pluginReconnectKey 触发的 pending 初始化、failed/needs-auth 的 notification 与 health grammar、ReadMcpResourceTool 的 connected hard gate，以及 toolExecution 对 connected client 的运行时降级路径上已经明确展示了 readiness governance 的存在；因此 artifact-family cleanup reactivation-governor signer 仍不能越级冒充 artifact-family cleanup readiness-governor signer。`
+
+再压成最后一句：
+
+`重新激活负责把 truth 接进当前世界；就绪，才负责决定这个当前世界现在到底能不能被使用。`
