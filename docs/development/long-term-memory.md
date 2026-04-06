@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `guides/102 / playbooks/79 / navigation/04` 现已继续把 atlas、template 与 verdict 的分工写死：
+  - `102` 现在更明确只负责 atlas skeleton、gap note 与 handoff rule，不再继续自己承接 repo-specific atlas 正文。
+  - `79` 现在更明确把 `danger_surface_atlas_ref / gap_note_ref / authority_surface_ref` 写成输入工件，而不是默认在本页临时生产 atlas。
+  - `navigation/04` 现在更明确规定 atlas 模板归 `guides/`、atlas 正文默认归 `api/46-50`、verdict 绑定归 `playbooks/`、`navigation/35` 负责 atlas 路由。
+- 新的长期结论：
+  - atlas 不是第九层证据梯度，而是前五层证据压出来的编译地图；如果 atlas 模板、atlas 正文和 verdict 绑定不分开，目录很快就会重新混层。
+  - 目录结构真正成熟时，不只要知道“哪层负责什么”，还要知道“哪层只生产 ref、哪层只消费 ref、哪层负责路由 ref”；否则 deep page 仍会偷偷长回第二主线。
 - `guides/28 / 100 / playbooks/78` 现已继续把治理线收成更完整的 schema：
   - `28` 现在更明确把失败语义矩阵母版从 `headless divergence` 扩成 `surface divergence`，并把 `minimum legal degraded shape` 与 `re-entry / rollback requirement` 固定下来。
   - `100` 现在更明确把 `interactive / host / headless / async` 的执行面分叉，以及 `rollback_action / re_entry_condition / escalation_target`，一起压进解释型矩阵和最小判据。

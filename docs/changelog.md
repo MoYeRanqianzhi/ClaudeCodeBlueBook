@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `guides/102`、`playbooks/79` 与 `navigation/04`，把结构线里 atlas / template / verdict 的承载错位收回到更硬的目录法：`102` 只保留 atlas skeleton、gap note 与 handoff rule，`79` 明确只消费 `danger_surface_atlas_ref / gap_note_ref / authority_surface_ref` 绑定 verdict，`navigation/04` 明确把 atlas 正文默认归到 `api/46-50`
 - 继续更新 `guides/28`、`guides/100` 与 `playbooks/78`，把治理矩阵进一步补齐到 `surface divergence / minimum legal degraded shape / escalation target / rollback action / re-entry condition` 这组字段，让 `interactive / host / headless / async` 的执行面分叉和 `rollback -> re-entry` 的恢复条件进入统一 schema
 - 继续更新 `06`、`09`、`guides/README`、`playbooks/README` 与 `navigation/README`，把 Prompt / 治理 / 结构三线里残留的过泛 contract 名和过渡句式继续收回到 `execution contract / authority contract / byte boundary / continuation truth` 这类更硬对象，并把 `102` 的 atlas 与 `79` 的 verdict 更明确提升成目录层稳定入口
 - 继续更新 `06`、`guides/102` 与 `playbooks/79`，把 `request object / role contract / cache boundary / handoff truth` 这组过渡词继续收回到更硬的 doctrine 对象，把公开镜像研究继续落成 `危险改动面 atlas`，并把结构线 drift 继续落成 `reject / cleanup-before-resume / degrade / halt / human-fallback` 的回归矩阵

@@ -6,6 +6,7 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 atlas 承载纠偏动作: 已继续更新 `guides/102 / playbooks/79 / navigation/04`，把结构线里 atlas / template / verdict 的承载错位收回到更明确的目录法：`102` 现在只负责 atlas skeleton、gap note 与 handoff rule，`79` 现在只消费 `danger_surface_atlas_ref / gap_note_ref / authority_surface_ref` 这类输入工件绑定 verdict，`navigation/04` 现在把 atlas 正文默认归到 `api/46-50`，并把 `navigation/35` 固定为 atlas 路由入口。
 - 本轮治理 schema 补齐动作: 已继续更新 `guides/28 / 100` 与 `playbooks/78`，把治理矩阵进一步补齐为 `surface divergence / minimum legal degraded shape / escalation target / rollback action / re-entry condition` 这组字段；现在 `interactive / host / headless / async` 的执行面分叉，以及 `rollback -> re-entry` 的恢复条件，都已进入同一条治理对象链。
 - 本轮命名收口动作: 已继续更新 `09` 与 `06`，把三条控制面里残留的过泛 contract 名与过渡句式继续收回到更硬对象；治理线当前更明确使用 `execution contract`，结构线当前更明确使用 `authority contract`，Prompt 线当前更明确使用 `byte boundary / continuation truth`。
 - 本轮目录入口加固: 已继续更新 `guides/README`、`playbooks/README` 与 `navigation/README`，把 `102` 的 atlas 与 `79` 的 verdict 更明确提升成目录层稳定入口，而不是继续让它们只停在深页里被动等待读者下钻。
