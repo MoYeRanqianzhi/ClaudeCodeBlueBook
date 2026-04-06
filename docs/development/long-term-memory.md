@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `03 / 06` 已继续把主线高阶判断压成稳定模板：
+  - `03` 现已更明确把后半高阶原则补成 `authority object / bad solution / reject path / migration order` 的固定落笔顺序。
+  - `06` 现已把“下一轮怎么做得更好”改写成长期有效的持续自校协议，减少作者轮次口吻继续混入正文。
+- 新的长期结论：
+  - 设计内涵真正成熟的标志，不是高阶判断更多，而是高阶判断开始自带坏解法、拒收入口和渐进改写顺序。
+  - 苏格拉底自反真正稳定时，不再依赖“下一轮怎么写”这种时间口吻，而是直接变成任何一轮都能复用的自校问题梯子。
 - `01 / api/30 / 09` 已继续把 atlas 页从判断方向压到判断协议：
   - `09` 现已更明确把 Prompt `request object` 写成 `authority chain / section registry -> dynamic boundary / attachment delta -> protocol transcript normalization -> lawful forgetting / compaction -> cache-safe forks / handoff continuation`。
   - `01` 现已更明确把 MCP / remote 边界继续写成 authority、merge/dedup/policy/auth 与 stale auth 风险问题，而不是 transport 枚举。
