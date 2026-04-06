@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/claude-code-risk-analysis`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 Prompt 深层执行纠偏动作: 已继续更新 `guides/81 / 90`，把 Prompt 再纠偏与 refinement execution 从 `compiled request truth / request object / continue qualification / host consumption card` 的旧执行主语收回到 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`。
+- 本轮 Prompt 执行工件降级动作: `81 / 90` 现已把 `recorrection card`、`protocol repair block`、`host consumption card`、`reopen liability ticket` 明确降为修复工件，而不再让它们冒充 root object；`compiled request truth` 只保留为 legacy alias。
+- 并行 Agent Prompt 下一批建议更新: 在 `guides/81 / 90` 之后，Prompt 线最值钱的下一批应收口到 `playbooks/35 + playbooks/77`；当前残留问题主要不是对象链缺失，而是旧 slug / 旧 execution root 与导航/流程句式仍有尾巴。
 - 本轮治理验收链纠偏动作: 已继续更新 `api/55`、`playbooks/36`、`playbooks/78` 与 `navigation/49`，把治理宿主验收协议、执行、长期验证与迁移纠偏从 `authority source / permission ledger / continuation gate / rollback object` 的旧并列写法收回到 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
 - 本轮治理验收字段再压缩动作: `api/55` 现已把 `authority source` 降为 `governance key` 的 source slot，把 `permission ledger` 降为 `typed ask` 证据面，把 `continuation gate` 降为 `continuation pricing` verdict；`playbooks/36` 与 `playbooks/78` 则把执行/验证链统一改写成 `governance key / externalized truth chain / typed ask / decision window / continuation pricing / durable-transient cleanup`。
 - 并行 Agent Prompt 下一批建议: Prompt 线最值钱的下一提交已收敛到 `guides/81 + guides/90`；这两页仍把 `compiled request truth / request object / continue qualification / recorrection card` 当执行 root，下一步应统一改写为 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`。

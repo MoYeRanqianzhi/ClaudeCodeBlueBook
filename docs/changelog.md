@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `guides/81 / 90`，把 Prompt 深层再纠偏与 refinement 执行页从 `compiled request truth / request object / continue qualification / host consumption card` 的旧执行主语收回到 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification -> threshold / reopen liability`
 - 继续更新 `api/55`、`playbooks/36`、`playbooks/78` 与 `navigation/49`，把治理验收协议、执行、长期验证与迁移纠偏从 `authority source / permission ledger / continuation gate` 的旧并列 contract 收回到 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable/transient cleanup`
 - 继续更新 `playbooks/37`、`navigation/50 / 51`，把结构宿主验收协议与执行第一跳从 `authority state / resume order / recovery boundary` 的旧 contract 收回到 `authority object / writeback path / freshness gate / anti-zombie evidence / reopen boundary`
 - 继续更新 `playbooks/31` 与 `navigation/45`，把结构宿主接入第一跳从 `authority state / recovery boundary / 恢复成功率` 的旧根词收回到 `authority object / per-host authority width / authoritative path / freshness gate / stale-worldview / ghost-capability / anti-zombie evidence`

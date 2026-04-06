@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `guides/81 / 90` 现已把 Prompt 深层再纠偏与 refinement 执行统一到当前对象链：
+  - `81` 现已把 Prompt 再纠偏执行固定到 `message lineage -> projection consumer -> protocol transcript -> stable prefix boundary -> continuation object -> continuation qualification -> threshold liability`。
+  - `90` 现已把 Prompt refinement execution 固定到 `message lineage -> projection consumer -> section registry + dynamic boundary -> coordinator synthesis custody -> protocol-prefix custody -> continuation object -> reopen liability`。
+- 新的长期结论：
+  - Prompt 深层执行真正成熟时，不应再把 `recorrection card`、`protocol repair block`、`host consumption card`、`reopen liability ticket` 写成一级主语；它们只能是修复工件，不能继续冒充 root object。
+  - Prompt 深层执行真正成熟时，`compiled request truth` 最多只能保留为 legacy alias；真正需要 later maintainer 先点名的是 `message lineage`、consumer 分层、`protocol transcript`、`continuation object` 与 liability 条件。
+  - 当前 Prompt 下一批最值钱的继续点，已收敛到 `playbooks/35 + playbooks/77`：这两页正文大体已迁到新体系，但旧 slug、旧 execution root 与流程化句式仍会轻微反向输送旧词。
 - `api/55 / playbooks/36 / playbooks/78 / navigation/49` 现已把治理验收链与迁移纠偏统一到当前对象链：
   - `55` 现已把 `authority source / permission ledger / continuation gate / rollback object` 明确降为 `governance key` source slot、`typed ask` 证据面、`continuation pricing` verdict 与 cleanup carrier。
   - `36` 现已把治理宿主验收执行固定到 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
