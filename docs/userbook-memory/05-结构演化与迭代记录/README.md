@@ -25,6 +25,7 @@
 - [21-2026-04-06-trust dialog 与项目级 .mcp.json 批准边界拆分记忆.md](./21-2026-04-06-trust%20dialog%20%E4%B8%8E%E9%A1%B9%E7%9B%AE%E7%BA%A7%20.mcp.json%20%E6%89%B9%E5%87%86%E8%BE%B9%E7%95%8C%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 - [22-2026-04-06-连接入口与桥接会话结构纠偏记忆.md](./22-2026-04-06-%E8%BF%9E%E6%8E%A5%E5%85%A5%E5%8F%A3%E4%B8%8E%E6%A1%A5%E6%8E%A5%E4%BC%9A%E8%AF%9D%E7%BB%93%E6%9E%84%E7%BA%A0%E5%81%8F%E8%AE%B0%E5%BF%86.md)
 - [23-2026-04-06-bridge trust、eligibility 与 trusted-device 边界拆分记忆.md](./23-2026-04-06-bridge%20trust%E3%80%81eligibility%20%E4%B8%8E%20trusted-device%20%E8%BE%B9%E7%95%8C%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
+- [24-2026-04-06-bridge 生命周期模式专题拆分记忆.md](./24-2026-04-06-bridge%20%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%A8%A1%E5%BC%8F%E4%B8%93%E9%A2%98%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 
 用途：
 
