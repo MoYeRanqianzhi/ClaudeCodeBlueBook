@@ -65,6 +65,14 @@
 
 也就是说，读 `services/` 的顺序首先是证据更硬不更硬，而不是目录拆得更细不更细。
 
+如果再把入口判断压得更硬一点，`services/` 的每个子系统都至少要回答五个问题：
+
+1. 谁在这里宣布真相
+2. 哪些 consumer 只拿到子集
+3. 哪个改动面最危险
+4. 哪些 stale write / recovery object / projection 最容易在时间上撒谎
+5. future maintainer 如果不同意当前实现，应先沿哪条入口链拒收它
+
 ## 2. API / Transport 子系统
 
 核心目录与文件：

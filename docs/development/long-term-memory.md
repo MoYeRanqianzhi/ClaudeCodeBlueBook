@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 入口页与总图页已继续去“平面/机制清单化”：
+  - `00-导读` 现已更明确把三条硬判断各自往下压半层，避免第一次进入时仍把 Prompt 魔力读成文案、把治理读成拦截器、把源码质量读成目录体感。
+  - `api/README` 与 `api/46-services` 现已更明确把 `contract truth -> registry truth -> authoritative surface -> adapter subset -> danger surface` 前置成接口入口判断，并补出 temporal risk 与 future maintainer reject path。
+  - `security/14`、`risk/01`、`risk/11` 现已更明确把层链和闭环继续压回统一定价控制面，避免安全/风控入口重新退回规则堆与流程图叙事。
+- 新的长期结论：
+  - 当高阶判断已经被前置到专题 README 后，下一步最值钱的不是继续堆更多“入口推荐链”，而是继续把总图页和 atlas 页从“模块分层说明”压成“判断顺序说明”。
+  - 安全与风控入口一旦只剩机制分类，读者就会重新把它们读成黑箱规则；必须持续把它们压回“哪些扩张在被收费、哪些连续性在被续租”的语言。
 - 多 Agent 深挖结果已继续落回主线与专题前门：
   - `bluebook/09` 现已更明确写出 Prompt 魔力真正保护的是当前 / 下一步 / compact 后 / handoff 后仍活在同一个世界里，而不是某段 system prompt 更会说。
   - `security/README` 与 `risk/README` 现已更明确把安全、风控、误伤恢复前置回“扩张如何被定价”的第二张控制面，不再把安全专题读成规则堆、把风控专题读成另一套封禁叙事。

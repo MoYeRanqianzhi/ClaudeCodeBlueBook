@@ -2,6 +2,10 @@
 
 `api/` 当前有 95 篇编号文档，范围 `01-95`。本目录回答 Claude Code 的能力通过哪些命令、工具、状态消息、宿主协议和扩展接口暴露，以及这些暴露面在宿主侧应如何消费。
 
+还要先记一句：
+
+- `api/` 不是接口清单层，而是真相暴露层；更稳的读法不是先按编号扫平面，而是先问 `contract truth -> registry truth -> authoritative surface -> adapter subset -> danger surface`，再看具体接口和宿主消费路径。
+
 ## 七个平面
 
 - `01-07`: 命令与控制面，回答功能入口、命令字段和响应矩阵。
@@ -19,9 +23,11 @@
 - [21-提示词控制、知识注入与记忆API手册](21-提示词控制、知识注入与记忆API手册.md)
 - [23-能力平面、公开度与宿主支持矩阵](23-能力平面、公开度与宿主支持矩阵.md)
 - [31-失败语义、取消请求与孤儿修复API手册](31-失败语义、取消请求与孤儿修复API手册.md)
+- [46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口](<46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md>)
 
 ## 适合谁先读
 
+- 想先抓“谁在宣布真相、谁只是在消费真相”：从 `23 -> 31 -> 46`
 - 想看命令和控制协议：从 `01 -> 05 -> 15`
 - 想看状态消息与宿主消费：从 `09 -> 17 -> 19 -> 31`
 - 想看 Prompt / 记忆 / 知识注入：从 `18 -> 21 -> 49`
@@ -32,5 +38,6 @@
 ## 维护约定
 
 - README 只保留平面级入口与起点文档，不追求覆盖全部 95 篇。
+- `api/` 的前门判断优先级，应始终是“谁在说真话、谁有子集、哪里最危险”，而不是“目录怎么分得更细”。
 - 需要跨目录理解运行时机制时，回到 [../architecture/README.md](../architecture/README.md)。
 - 需要跨主题反查时，回到 [../navigation/README.md](../navigation/README.md)。
