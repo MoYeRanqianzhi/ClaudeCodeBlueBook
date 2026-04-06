@@ -98,6 +98,7 @@
 - [94-2026-04-06-task progress host projection 拆分记忆.md](./94-2026-04-06-task%20progress%20host%20projection%20拆分记忆.md)
 - [95-2026-04-06-task result return path split 拆分记忆.md](./95-2026-04-06-task%20result%20return%20path%20split%20拆分记忆.md)
 - [96-2026-04-06-sdk event flush ordering 拆分记忆.md](./96-2026-04-06-sdk%20event%20flush%20ordering%20拆分记忆.md)
+- [97-2026-04-06-authoritative idle signal 拆分记忆.md](./97-2026-04-06-authoritative%20idle%20signal%20拆分记忆.md)
 
 用途：
 

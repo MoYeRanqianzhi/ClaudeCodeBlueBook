@@ -85,3 +85,4 @@
 - [83-Task progress host projection vs model layer 索引.md](./83-Task%20progress%20host%20projection%20vs%20model%20layer%20索引.md)
 - [84-Task result return-path split 索引.md](./84-Task%20result%20return-path%20split%20索引.md)
 - [85-Headless print SDK event flush ordering 索引.md](./85-Headless%20print%20SDK%20event%20flush%20ordering%20索引.md)
+- [86-Headless print authoritative idle signal 索引.md](./86-Headless%20print%20authoritative%20idle%20signal%20索引.md)
