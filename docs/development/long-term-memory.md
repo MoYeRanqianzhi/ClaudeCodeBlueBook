@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `architecture/README / api/README / security/README / risk/README` 现已继续把运行时/契约/治理/风控四组前门对齐到高阶目录分工：
+  - `architecture/README` 现在更明确要求读者先经过 `09 / 05 / 15 / 41`，再进入对象、状态机与 choke point 的运行时拆解。
+  - `api/README` 现在更明确把 `api/` 写成 `contract truth / host-facing truth / consumer subset / danger surface` 的前门，而不是接口库存。
+  - `security/README` 现在更明确把安全首页限定为 signer / ledger / cleanup 前门，不再让它冒充另一套规则堆。
+  - `risk/README` 现在更明确把风控首页限定为统一定价治理在用户侧的结算面，不再和安全机制前门混层。
+- 新的长期结论：
+  - 当 `philosophy / guides / playbooks / casebooks / navigation` 五个目录首页已经承认 `09 / 05 / 15 / 41` 的分工后，下一层最值钱的目录优化就是让 `architecture / api / security / risk` 这些“运行时对象前门”也显式承认同一套高阶主语；否则 later maintainer 会在运行时层重新长回另一套世界观。
+  - `architecture / api / security / risk` 四类目录首页对应的不是四种写作风格，而是四种前门责任：对象、contract、signer/ledger、用户侧结算面。只要首页混掉这四种责任，目录结构就会重新退回“看起来都在解释系统”的松散拼盘。
+  - 治理线真正深入到目录首页后，`Context Usage` 这种词必须长期被写成 `decision window` 的诚实投影；一旦它在前门层重新退回 usage dashboard，安全与省 token 就会再次被拆成两套主题。
 - `philosophy/README / guides/README / playbooks/README / casebooks/README / navigation/README` 现已继续把子目录首页统一到高阶前门分工：
   - `philosophy/README` 现在更明确要求读者先经过 `09 / 05 / 15 / 41`，再进入“为什么必须如此设计”的判断层。
   - `guides/README` 现在更明确把模板页写成 `09 / 05 / 15 / 41` 之后的落地层，并修掉了重复的治理入口条目。

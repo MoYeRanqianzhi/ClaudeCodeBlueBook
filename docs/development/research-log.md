@@ -6,6 +6,10 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash。仓库本地 `git pull --ff-only` 因 upstream 配置返回 `Cannot fast-forward to multiple branches`，但当前并无待拉取更新，因此本轮只记录基线，不对根仓库做任何修改。
+- 本轮运行时/契约/安全/风控首页对齐动作: 已继续更新 `architecture/README`、`api/README`、`security/README` 与 `risk/README`，把运行时对象前门、host-facing truth 前门、治理 signer/ledger 前门与用户侧结算面前门继续统一到 `09 / 05 / 15 / 41` 的高阶分工，并让四个首页更明确声明自己不和高阶 judgment map 抢职责。
+- 本轮治理术语回灌动作: 已继续把 `Context Usage` 的高阶读法收回为 `decision window` 的诚实投影，而不是成本面板；这一结论现已进入 `architecture/api/security/risk` 邻接目录的目录判断语境，不再只停在深页里。
+- 本轮目录结构深化结论: 高阶目录结构继续稳定后，下一层最值钱的优化不再只是修子目录 README 的内部语气，而是让“对象前门 / contract 前门 / signer 前门 / 用户侧结算面前门”都明确承认自己相对于 `09 / 05 / 15 / 41` 的职责边界。
 - 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`，`git fetch origin main` 成功，`git pull --ff-only` 返回 `Already up to date.`；本轮因此只是记录基线，不对根仓库做任何修改。
 - 本轮子目录首页对齐动作: 已继续更新 `philosophy/README`、`guides/README`、`playbooks/README`、`casebooks/README` 与 `navigation/README`，把子目录首页进一步统一到 `09 / 05 / 15 / 41` 的高阶分工：`09` 负责宪法总图，`05` 负责模仿对象校正，`15` 负责失稳前追问，`41` 负责第一性原理收束；同时让各目录 README 更明确声明自己不和高阶 judgment map 抢职责。
 - 本轮目录缺陷修复动作: 已修掉 `guides/README` 中重复的治理入口条目，避免目录首页自己制造一次“同题双入口”噪音。
