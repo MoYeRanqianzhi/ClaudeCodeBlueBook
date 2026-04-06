@@ -78,6 +78,7 @@
 - [74-2026-04-06-remote approval shell vs authority 拆分记忆.md](./74-2026-04-06-remote%20approval%20shell%20vs%20authority%20拆分记忆.md)
 - [75-2026-04-06-remote approval topology 拆分记忆.md](./75-2026-04-06-remote%20approval%20topology%20拆分记忆.md)
 - [76-2026-04-06-local modal shell family 拆分记忆.md](./76-2026-04-06-local%20modal%20shell%20family%20拆分记忆.md)
+- [77-2026-04-06-worker mailbox ToolUseConfirm rewrap 拆分记忆.md](./77-2026-04-06-worker%20mailbox%20ToolUseConfirm%20rewrap%20拆分记忆.md)
 
 用途：
 
