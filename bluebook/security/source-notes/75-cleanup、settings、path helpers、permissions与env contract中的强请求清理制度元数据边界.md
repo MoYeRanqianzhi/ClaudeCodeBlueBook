@@ -183,12 +183,12 @@ family truth 的演化路径通常会经历三步：
 
 1. 系统知道 family 有别
 2. 系统也知道这些 family 背后的理由不同
-3. 但这些理由目前仍主要以  
-   helper  
-   comment  
-   schema field  
-   permission projection  
-   hand-written dispatch  
+3. 但这些理由目前仍主要以
+   helper
+   comment
+   schema field
+   permission projection
+   hand-written dispatch
    的形式存在
 
 这说明当前显露出来的是：
