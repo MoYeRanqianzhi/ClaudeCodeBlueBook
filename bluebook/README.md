@@ -12,6 +12,12 @@
 3. 当前真相保护
    - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
+如果继续把“设计内涵”也压成 later maintainer 第一次就该抓住的三句制度判断，也只该剩：
+
+1. Prompt 不是 instruction 美学，而是不同 consumer 不必重新协商当前世界。
+2. 治理不是 budget 面板，而是动作、可见性、上下文、时间，乃至 classifier 自身都先被同一价格秩序批准。
+3. 源码组织不是功能分层，而是先把 `谁定义现在 / 谁只消费现在 / 谁只能帮助恢复现在` 写进结构。
+
 如果 later maintainer 第一次进蓝皮书时还看不见这三条，目录结构就还在迫使他先学对象层总结，再自己回压成第一性原理。
 
 如果只先记 Prompt 前门的一句话，也只记这句：
@@ -50,6 +56,17 @@
 - [../docs/README.md](../docs/README.md)
   研究过程、长期记忆与变更记录，不承载正文。
 
+## 入口分层
+
+- 高阶前门
+  `09 / 05 / 15 / 41` 负责第一次定义三条母线：定题、校正模仿对象、暴露 first reject signal、压回第一性原理。
+- 专题侧门
+  Prompt `66 -> 69 -> 72 -> 78 -> 47 -> 50` 只承接 same-world compiler 的继续资格、residual reopen 与 threshold liability；结构 `guides/83 / 92 -> playbooks/61 / 67 -> casebooks/54 / 63` 只承接 builder-facing template 与 later reject path。
+- 证据层
+  `philosophy / architecture / api / guides / playbooks / casebooks / docs` 只继续下沉判断、对象、contract、模板、verdict、反例与记忆，不再争第一次定义权。
+
+如果一个新结论第一次同时想落在 `README / navigation / guide` 三层，通常不是因为它太重要，而是因为还没判清它究竟是在定义主语、打开侧门，还是下沉证据层。
+
 ## 三步进入法
 
 - 第一步先定题，不先找页。
@@ -59,7 +76,7 @@
 - 第三步最后才决定要不要跨目录。
   只有当问题已经变成“下一层证据去哪里找”时，才进入 `navigation/`。
 
-## 四种继续深入法
+## 五种继续深入法
 
 - 单线深剖
   先定自己是在追 Prompt 世界准入、治理定价，还是当前真相保护；不要先按页名跳。
@@ -69,6 +86,8 @@
   先回 `README -> navigation/README -> 05 -> 15`，确认优化的是第一问题单源化与证据层分工，而不是新增 route map。
 - 并行多 Agent 深挖
   先按 question domain 拆成 Prompt 魔力、安全/省 token、源码先进性、目录前门自校四题；最后统一回 `09 / 05 / 15 / 41` 合并，避免并行产生第二套入口词。
+- 去魅检验
+  删除措辞魔力、mode/token 面板语与目录树观感后，结论若仍能分别压回 `same-world compiler / governance pricing chain / current-truth protection`，才算真的进入设计内核。
 
 ## 三组最小排查顺序
 

@@ -45,6 +45,16 @@
 
 如果 later maintainer 第一次点进哲学前门时还看不见这三条，目录结构就还在迫使他先走对象层总结，再自己回压成第一性原理。
 
+如果继续把目录结构优化也压成第一性原理层的一句判断，它最该先守住的不是“route 更短”，而是“第一次定义权唯一”：
+
+- `09` 第一次定题
+- `05` 第一次校正模仿对象
+- `15` 第一次暴露 first reject signal
+- `41` 第一次压回不可约判断
+- 其余页只承接，不第一次发明三条母线的新主语
+
+Prompt `66 -> 69 -> 72 -> 78 -> 47 -> 50` 与结构 `guides/83 / 92 -> playbooks/61 / 67 -> casebooks/54 / 63` 因而都只配做专题侧门：前者承接 same-world compiler 的继续资格、residual reopen 与 threshold liability，后者承接 builder-facing template 与 later reject path；它们都不负责第一次定义 Prompt 魔力、安全定价或源码先进性。
+
 ## 1. world entry / request assembly / six-stage assembly chain 哲学线
 
 先问：
@@ -91,6 +101,7 @@
 而是：
 
 - 把治理控制面压回“拒绝一切免费扩张”的第一性原理
+- 把“先裁 visible world，再谈动作许可”写成治理前门，而不是让 mode、modal、token 面板抢先代表治理
 - 更短的最小判断句是：治理先外化当前真相，再批准当前扩张；连治理检查自己都必须被定价，没有决策增益的检查，本身就是免费扩张
 - 如果再继续压到 token 经济前门，最稳的短公式是：`Narrow / Later / Outside + stable bytes + working set`
 
@@ -158,12 +169,13 @@
 - 谁负责保存失真
 - 谁负责保存记忆
 
-如果继续写得更好，还要再问两件事：
+如果继续写得更好，还要再问五件事：
 
 1. `09 / 05 / 15 / 41` 是否仍保持“宪法总图 / 模仿对象校正 / 失稳前追问 / 第一性原理收束”的稳定分工，而没有重新变成四份不同角度的 route map。
 2. later maintainer 只看目录前门、不点深页时，是否已经能先用对 `request assembly / governance pricing / current-truth protection` 这三组主语。
 3. `philosophy/README` 是否已经先暴露 `same-world compiler`、治理短公式与结构真相梯度，而不是把 later maintainer 再送回更深一层自己总结。
 4. 后续目录入口只应再暴露两类侧门：一类是 Prompt 的 post-watch / post-steady reopen 责任线，一类是结构的 builder-facing 模板线；它们负责承接，不负责第一次定义三条母线。
+5. 目录前门是否已经把“先裁 visible world、再谈动作许可”写成治理第一句，而不是让 mode、modal 与 token 面板抢先替治理发言。
 
 ## 6. 苏格拉底式自检
 
@@ -174,3 +186,6 @@
 3. 我是否已经回答源码先进性为什么不是结构洁癖，也不是公开镜像体感。
 4. 我是在描述 Claude Code 的做法，还是已经提炼出可迁移的第一性原理。
 5. 我是否已经解释目录结构为什么不是排版问题，而是第一性原理在不同证据层上的继续展开。
+6. 如果删掉“Prompt 很有魔力”的措辞，我是否仍能只靠 `same-world compiler` 与 `continuation qualification` 讲清楚 Prompt 强度。
+7. 如果删掉 mode、token 面板与审批界面，我是否仍能只靠 `decision window` 与 `continuation pricing` 讲清楚安全与省 token 的同构。
+8. 如果删掉目录树观感与作者说明，我是否仍能只靠 `current-truth surface`、`freshness gate` 与 `later reject path` 讲清楚源码先进性。

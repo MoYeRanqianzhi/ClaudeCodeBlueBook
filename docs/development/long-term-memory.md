@@ -8,6 +8,20 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`03`、`06`、`01` 与 `navigation/41` 现已继续把高阶前门往“去魅后的制度判断”压稳：
+  - Prompt 前门现在更明确不再是 instruction 美学，而是不同 consumer 不必重新协商同一世界；`continuation qualification`、合法遗忘与 residual reopen 资格比 summary prose 更接近 Prompt 本体。
+  - 治理前门现在更明确不再是 budget 面板，而是动作、可见性、上下文、时间与 classifier 自身都被同一价格秩序批准；`Context Usage` 现在更明确只配做 `decision window` 的证据面，不再被写成 token dashboard。
+  - 源码前门现在更明确不再是功能分层或目录体感，而是把 `谁定义现在 / 谁只消费现在 / 谁只能帮助恢复现在` 先分开落进源码；`protocol transcript / UI transcript / state writeback` 也被更明确钉回三类不同真相层。
+- 新的长期目录纪律：
+  - 高阶前门继续固定为 `09 / 05 / 15 / 41`；Prompt `66 -> 69 -> 72 -> 78 -> 47 -> 50` 与结构 `guides/83 / 92 -> playbooks/61 / 67 -> casebooks/54 / 63` 继续只做专题侧门；`philosophy / architecture / api / guides / playbooks / casebooks / docs` 继续只做证据层。
+  - 一个新结论若第一次同时想落在 `README / navigation / guide` 三层，通常意味着它还没判清自己是在定义主语、打开侧门，还是下沉证据层；后续批次可直接用这条规则拒收混层。
+- 新的长期自校协议：
+  - 继续写前门页时，固定做三次去魅测试：删掉措辞魔力后 Prompt 解释是否仍能站回 `Authority / Boundary / Transcript / Lineage / Continuation / Explainability`；删掉 mode、token 面板与审批界面后治理解释是否仍能站回 `authority source / typed ask / decision window / continuation pricing / cleanup`；删掉目录树观感与作者说明后源码解释是否仍能站回 `current-truth surface / recovery non-sovereignty / freshness gate / later reject path`。
+  - 并行多 Agent 合并时，所有支线也必须先通过同样的去魅测试；删掉漂亮措辞、UI 投影与目录体感后站不住的句子，不再允许回写到高阶前门。
+- 新的长期源码桥接句：
+  - `remote / session / transport` 在 Claude Code 源码里首先是主权域，不是功能域；源码地图若不能暴露这点，就仍停在目录树展开图。
+  - `event truth / current truth / display truth` 必须分层，宿主与 UI 都不能靠 replay transcript 猜现在；这条句子后续可直接复用到所有结构 advanced line、host-facing truth 与 remote/session 分析。
+  - `command plane` 可以变薄，但 `tool plane` 不能跟着一起失去装配主权；以后凡是分析 remote/session 主权分配，都应优先复用这条桥接句，而不是重新解释“命令表为什么不一样”。
 - `api/66` 与 `playbooks/47` 现已继续把 Prompt post-watch / post-monitor side-door 压回 same-world compiler：
   - `Authority / Boundary / Transcript / Lineage / Continuation` 继续是页面第一页主语，不再让 `watch release object / release card / watch note / handoff prose` 越位成第二套 Prompt 世界。
   - `residual reopen gate` 现在更明确只配作为 post-watch / post-release 责任对象存在，回答“停止额外监护后哪些反证能力仍必须保留”，不再和 Prompt 主链并列充当前门。
