@@ -180,6 +180,8 @@
 - [109-createStreamlinedTransformer、structuredIO.write、lastMessage 与 streamlined_*：为什么 headless print 的 streamlined output 不是 terminal semantics 后处理，而是 pre-wire rewrite.md](./109-createStreamlinedTransformer、structuredIO.write、lastMessage%20与%20streamlined_%2A：为什么%20headless%20print%20的%20streamlined%20output%20不是%20terminal%20semantics%20后处理，而是%20pre-wire%20rewrite.md)
 - [110-streamlined_*、post_turn_summary、createStreamlinedTransformer 与 directConnectManager：为什么同样在过滤名单里，却不是同一种 suppress reason.md](./110-streamlined_%2A、post_turn_summary、createStreamlinedTransformer%20与%20directConnectManager：为什么同样在过滤名单里，却不是同一种%20suppress%20reason.md)
 - [111-controlSchemas、agentSdkTypes、directConnectManager、useDirectConnect 与 sdkMessageAdapter：为什么 builder transport、callback surface 与 UI consumer 不是同一张可见性表.md](./111-controlSchemas、agentSdkTypes、directConnectManager、useDirectConnect%20与%20sdkMessageAdapter：为什么%20builder%20transport、callback%20surface%20与%20UI%20consumer%20不是同一张可见性表.md)
+- [112-shouldIncludeInStreamlined、assistant-result 双入口、streamlined_* 与 null：为什么 streamlined path 的纳入 gate、替换入口与抑制返回不是同一种消息简化.md](./112-shouldIncludeInStreamlined、assistant-result%20双入口、streamlined_%2A%20与%20null：为什么%20streamlined%20path%20的纳入%20gate、替换入口与抑制返回不是同一种消息简化.md)
+- [113-result、structured_output、permission_denials、lastMessage 与 gracefulShutdownSync：为什么 streamlined path 的 passthrough 不是 terminal semantic 主位保留.md](./113-result、structured_output、permission_denials、lastMessage%20与%20gracefulShutdownSync：为什么%20streamlined%20path%20的%20passthrough%20不是%20terminal%20semantic%20主位保留.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。
 
 更稳一点说，这一层真正值钱的目录优化也不是继续补页，而是让每个控制面首页都先回答：

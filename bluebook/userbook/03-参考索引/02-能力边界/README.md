@@ -115,3 +115,5 @@
 - [98-streamlined pre-wire rewrite ordering 索引.md](./98-streamlined%20pre-wire%20rewrite%20ordering%20索引.md)
 - [99-direct connect suppress-reason split: streamlined_* vs post_turn_summary 索引.md](./99-direct%20connect%20suppress-reason%20split%3A%20streamlined_%2A%20vs%20post_turn_summary%20索引.md)
 - [100-builder transport、public SDK、direct-connect callback 与 UI consumer 可见性分层 索引.md](./100-builder%20transport%E3%80%81public%20SDK%E3%80%81direct-connect%20callback%20%E4%B8%8E%20UI%20consumer%20%E5%8F%AF%E8%A7%81%E6%80%A7%E5%88%86%E5%B1%82%20索引.md)
+- [101-streamlined dual-entry gate、passthrough 与 null suppression 索引.md](./101-streamlined%20dual-entry%20gate%E3%80%81passthrough%20%E4%B8%8E%20null%20suppression%20索引.md)
+- [102-result payload passthrough vs terminal primacy 索引.md](./102-result%20payload%20passthrough%20vs%20terminal%20primacy%20索引.md)
