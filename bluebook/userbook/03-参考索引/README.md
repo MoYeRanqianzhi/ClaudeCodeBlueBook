@@ -64,6 +64,7 @@
 60. 为什么 direct connect 的 `init`、`status`、`tool_result`、`tool_progress` 与 ignored families 不是同一种 transcript surface。
 61. 为什么 direct connect 的 `Connected to server`、`Remote session initialized`、`busy/waiting/idle`、`PermissionRequest` 与 stderr disconnect 不是同一张状态板。
 62. 为什么 direct connect 的 `Ctrl+O transcript`、`verbose`、`showAllInTranscript` 与 `tool_result` 不是同一种可见性层。
+63. 为什么 remote session 的 `remoteConnectionStatus` / `remoteBackgroundTaskCount` 与 direct connect 的 `busy/waiting/idle` 不是同一种状态来源。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

@@ -52,3 +52,4 @@
 - [50-Direct connect message filtering、init dedupe 与 transcript surface 索引.md](./50-Direct%20connect%20message%20filtering、init%20dedupe%20与%20transcript%20surface%20索引.md)
 - [51-Direct connect visible status surface 索引.md](./51-Direct%20connect%20visible%20status%20surface%20索引.md)
 - [52-Direct connect transcript mode、verbose 与 raw SDK stream 索引.md](./52-Direct%20connect%20transcript%20mode、verbose%20与%20raw%20SDK%20stream%20索引.md)
+- [53-Remote durable status vs direct connect local interaction 索引.md](./53-Remote%20durable%20status%20vs%20direct%20connect%20local%20interaction%20索引.md)

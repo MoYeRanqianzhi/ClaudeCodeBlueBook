@@ -65,6 +65,7 @@
 - [61-2026-04-06-direct connect transcript surface 拆分记忆.md](./61-2026-04-06-direct%20connect%20transcript%20surface%20拆分记忆.md)
 - [62-2026-04-06-direct connect visible status surfaces 拆分记忆.md](./62-2026-04-06-direct%20connect%20visible%20status%20surfaces%20拆分记忆.md)
 - [63-2026-04-06-direct connect transcript mode vs raw stream 拆分记忆.md](./63-2026-04-06-direct%20connect%20transcript%20mode%20vs%20raw%20stream%20拆分记忆.md)
+- [64-2026-04-06-remote durable status vs direct connect interaction 拆分记忆.md](./64-2026-04-06-remote%20durable%20status%20vs%20direct%20connect%20interaction%20拆分记忆.md)
 
 用途：
 
