@@ -8,6 +8,22 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/78`、`69`、`playbooks/50`、`casebooks/49` 与 `46` 现已继续把 Prompt 稳态/纠偏协议页的第一页主语统一压回 Prompt canonical chain：
+  - `Authority` 现在更明确重新承担 world-defining winner / restored request object / compiled request truth 的定义职责。
+  - `Boundary` 现在更明确重新承担 stable prefix / lawful forgetting / cache-safe reuse 的定义职责。
+  - `Transcript` 现在更明确重新承担模型真实消费历史的定义职责，不再让 display transcript、summary prose 与 handoff prose 越位。
+  - `Lineage` 现在更明确重新承担 truth lineage / compaction lineage / resume lineage 的身份连续性职责。
+  - `Continuation` 现在更明确重新承担 current work / required assets / rollback boundary / threshold liability 的继续资格职责。
+  - `Explainability` 现在更明确只配保留 `card / verdict / note / prose` 这类末端投影，不再反向定义世界。
+- `api/83`、`92` 与 `navigation/README / 41 / api/README` 现已继续把结构后段协议页和目录入口一起压稳：
+  - `83` 现在更明确只是 `39 / 42` 的后段派生页，不再自立一条对象链。
+  - `92` 现在更明确只做 packet field、shared reject semantics、fail-closed 与 later reject path 的精修层，不再让 field bag 越位成新世界。
+  - `navigation/README / 41 / api/README` 现在更明确把 Prompt residual reopen 线与结构 builder-facing 模板线都降成专题侧门，而不再与 `09 / 05 / 15 / 41` 并列充当前门。
+- 新的长期结论：
+  - Prompt 线在中后段页最容易重新制造第二前门的，不再只是 `same-world test / runtime contract` 这类旧桥接词，还包括 `card / verdict / summary / handoff prose / rewrite note` 这类 Explainability 壳；只要它们先站到页首，读者就会重新先学会叙事，再学会 compiler。
+  - 结构线在后段页最容易重新制造第二前门的，不再只是 `authority surface / danger path` 这类旧词，还包括 `repair stream / attestation / field bag / long-horizon reopen liability` 这类流程壳；只要它们先站到页首，读者就会重新先学流程，再学 current-truth surface。
+  - 目录结构优化当前真正值钱的动作，已经不是继续压缩 route map，而是显式区分“第一次定义三条母线的高阶前门”和“主链成立后才允许进入的专题侧门”。这让 later maintainer 第一次进入时更容易先学对主语，再决定是否下钻到 residual reopen 或 builder-facing template。
+  - Prompt 线当前下一批最值钱的继续点不再是稳态/纠偏协议页本身，而是 `66 -> 67 -> 71` 这条 post-watch / post-steady residual reopen 责任线；结构线当前下一批最值钱的继续点不再是 `83 / 92` 的对象页本身，而是 `guides/83 / 92` 与后续 playbook / casebook 模板如何把 shared reject semantics 与 builder-facing 模板继续压稳。
 - `playbooks/15`、`27` 与 `api/35` 现已继续把治理承载壳页、控制面验证页与 rollout 证据消费页统一压回 canonical governance chain：
   - `Evidence Envelope` 现在更明确只配做记录壳，不再做治理前门。
   - `worker_status / external_metadata / session_state_changed` 现在更明确只配做 `externalized truth chain` 的证据面，不再被写成独立治理对象。

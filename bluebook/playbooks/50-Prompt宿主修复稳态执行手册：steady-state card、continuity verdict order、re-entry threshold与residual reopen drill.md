@@ -1,32 +1,23 @@
-# Prompt宿主修复稳态执行手册：steady-state card、continuity verdict order、re-entry threshold与residual reopen drill
+# Prompt宿主修复稳态执行手册：Authority、Boundary、Transcript、Lineage、Continuation 与 Explainability 稳态回归
 
-这一章不再解释 Prompt 宿主修复稳态协议该消费哪些字段，而是把 Claude Code 式 Prompt steady state 压成一张可持续执行的稳态手册。
+这一章不再把 `steady-state card` 当成 Prompt 稳态的主语，而是把 Claude Code 式 Prompt steady state 压回一条 same-world compiler 母线：
+
+1. `Authority`
+2. `Boundary`
+3. `Transcript`
+4. `Lineage`
+5. `Continuation`
+6. `Explainability`
 
 它主要回答五个问题：
 
-1. 为什么 Prompt 的魔力在稳态里执行的不是“最近一直很稳”，而是同一个 `compiled request truth` 在无人继续盯防时仍配继续。
-2. 宿主、CI、评审与交接怎样共享同一张 Prompt steady-state card，而不是各自围绕 summary、watch note 与 handoff prose 工作。
-3. 应该按什么固定顺序执行 `truth continuity`、`stable prefix custody`、`baseline dormancy seal`、`continuation eligibility`、`handoff continuity` 与 `reopen threshold`，才能不让 released 重新退回安静叙事。
-4. 哪些 steady verdict 一旦出现就必须冻结 continuation、阻断 handoff 并进入 re-entry / residual reopen drill。
+1. 为什么 Prompt 的魔力在稳态里执行的不是“最近一直很稳”，而是同一个世界仍被同一条编译链持续见证。
+2. 宿主、CI、评审与交接怎样共享同一条 Prompt 稳态判断链，而不是各自围绕 `card / summary / handoff prose` 工作。
+3. 应该按什么固定顺序执行 Authority、Boundary、Transcript、Lineage、Continuation 与 Explainability。
+4. 哪些信号一旦出现就必须冻结 continuation、阻断 handoff，并进入 re-entry 或 residual reopen。
 5. 怎样用第一性原理与苏格拉底式追问避免把这层写成“更细的 release 后观察表”。
 
-## 0. 代表性源码锚点
-
-- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
-- `claude-code-source-code/src/constants/prompts.ts:105-115`
-- `claude-code-source-code/src/constants/prompts.ts:343-347`
-- `claude-code-source-code/src/utils/api.ts:136-405`
-- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
-- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
-- `claude-code-source-code/src/utils/messages.ts:1989-2148`
-- `claude-code-source-code/src/utils/messages.ts:5133-5458`
-- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
-- `claude-code-source-code/src/services/compact/compact.ts:330-711`
-- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
-- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
-- `claude-code-source-code/src/query.ts:1308-1518`
-
-## 1. 第一性原理
+## 0. 第一性原理
 
 Prompt 宿主修复稳态真正要执行的不是：
 
@@ -36,150 +27,161 @@ Prompt 宿主修复稳态真正要执行的不是：
 
 而是：
 
-- 宿主、CI、评审与交接仍围绕同一个 `compiled request truth` 持续证明现在还配继续、还配交接、还配保留 residual reopen threshold
+- 同一个 `authority winner -> boundary bundle -> protocol transcript -> lineage chain -> continuation qualification` 仍在共同定义同一个世界
 
-所以这层 playbook 最先要看的不是：
+因此这层 playbook 最先要看的不是：
 
 - steady-state card 已经填完了
 
 而是：
 
-1. 当前 truth continuity 是否仍围绕同一个 `restored_request_object`。
-2. 当前 stable prefix 是否仍被 custody，而不是只靠一段未失效的摘要前缀侥幸维持。
-3. 当前 baseline dormancy 是否真的 seal，而不是 drift 暂时没人再提。
-4. 当前 continuation eligibility 是否真的证明“仍配继续”，而不是“先继续也行”。
-5. 当前 handoff continuity 与 reopen threshold 是否仍保留 later 团队反对当前状态的能力。
+1. 当前谁还是定义这次 Prompt 世界的唯一 `authority winner`。
+2. 当前哪些字节仍配作为同一世界的合法前缀与合法遗忘边界。
+3. 当前 `protocol transcript` 是否仍是模型实际消费的历史，而不是 display transcript 的安静版本。
+4. 当前 `truth lineage / compaction lineage / resume lineage` 是否仍在共同见证同一身份链。
+5. 当前 `continuation qualification` 是否仍在保护同一个 current work、required assets 与 rollback boundary。
+6. 所有 `card / verdict / note / prose` 是否都仍被降在 Explainability 末端。
 
-## 2. 共享 steady-state card 最小字段
+## 1. 共享稳态记录只该服务这条链
 
-每次 Prompt 宿主修复稳态巡检，宿主、CI、评审与交接系统至少应共享：
+更稳的共享记录，不是先列 `steady-state card` 字段，而是先按同一条母线归档：
+
+### 1.1 Authority
+
+1. `authority_winner_ref`
+2. `restored_request_object_id`
+3. `compiled_request_hash`
+4. `authority_attested_at`
+
+### 1.2 Boundary
+
+1. `section_registry_snapshot`
+2. `stable_prefix_boundary`
+3. `lawful_forgetting_boundary`
+4. `cache_break_budget`
+5. `boundary_attested_at`
+
+### 1.3 Transcript
+
+1. `protocol_transcript_ref`
+2. `tool_pairing_health`
+3. `transcript_boundary_attested`
+4. `display_projection_demoted`
+
+### 1.4 Lineage
+
+1. `truth_lineage_ref`
+2. `compaction_lineage_ref`
+3. `resume_lineage_attested`
+4. `lineage_attested_at`
+
+### 1.5 Continuation
+
+1. `current_work_ref`
+2. `required_assets`
+3. `rollback_boundary`
+4. `continue_qualification`
+5. `token_budget_ready`
+6. `reopen_threshold`
+
+### 1.6 Explainability
 
 1. `steady_state_card_id`
-2. `steady_state_object_id`
-3. `restored_request_object_id`
-4. `compiled_request_hash`
-5. `truth_continuity`
-6. `stable_prefix_custody`
-7. `baseline_dormancy_seal`
-8. `continuation_eligibility`
-9. `handoff_continuity_warranty`
-10. `reopen_threshold`
-11. `steady_verdict`
-12. `verdict_reason`
+2. `steady_verdict`
+3. `verdict_reason`
+4. `handoff_prose_ref`
 
-四类消费者的分工应固定为：
+最后这一组只负责解释，不负责定义世界。
 
-1. 宿主看是否仍围绕同一个 `compiled request truth`。
-2. CI 看 continuity、custody、eligibility 与 threshold 顺序是否完整。
-3. 评审看 `steady_verdict` 与对象边界是否仍自洽。
-4. 交接看 later 团队能否在不继承作者记忆的前提下继续消费同一 truth object。
+## 2. 固定稳态顺序
 
-## 3. 固定 steady verdict 顺序
+### 2.1 先验 `Authority`
 
-### 3.1 先验 `truth continuity`
+先看当前准备宣布 steady 的，到底是不是同一个 `authority winner` 与同一个 `restored_request_object`。
 
-先看当前准备宣布 steady 的，到底是不是同一个 `restored_request_object`，而不是某份 summary、handoff prose 或最近一次无异常记录。
+只要 authority 不清楚，就不能进入 steady state。
 
-只要 truth 不清楚，就不能进入 steady state。
+### 2.2 再验 `Boundary`
 
-### 3.2 再验 `stable prefix custody`
+再看 `section registry`、`stable prefix boundary`、`lawful forgetting boundary` 与 `cache break budget` 是否仍共同成立。
 
-再看 `stable_prefix_boundary`、`cache_break_budget` 与 `compaction_lineage` 是否仍证明 Prompt 世界可缓存、可转写，而不是只证明“最近没有触发明显断裂”。
+Prompt 的魔力保护的不是平静感，而是前缀资产与合法遗忘边界仍然成立。
 
-Prompt 的魔力保护的不是平静感，而是前缀资产仍在。
+### 2.3 再验 `Transcript`
 
-### 3.3 再验 `baseline dormancy seal`
+再看当前 steady 所依赖的，究竟是不是同一个 `protocol transcript`。
 
-再看 `baseline_drift_ledger` 是否真的已进入 dormancy seal，而不是 drift 只是暂时沉默。
+只要 display transcript、summary prose、handoff prose 还能夺权，steady 就还没有成立。
 
-这一步不成立，说明 released 之后的平静仍可能只是叙事静音。
+### 2.4 再验 `Lineage`
 
-### 3.4 再验 `continuation eligibility`
+再看 `truth lineage`、`compaction lineage` 与 `resume lineage` 是否仍共同见证同一身份链。
+
+lineage 不成立，later 团队就会重新退回作者记忆与临场解释。
+
+### 2.5 再验 `Continuation`
 
 再看：
 
 1. `continue_qualification` 是否仍然成立。
-2. `token_budget_ready` 是否仍支持继续。
-3. `session_resume_ready` 是否仍让 later 团队可恢复接手。
+2. `current_work_ref`、`required_assets` 与 `rollback_boundary` 是否仍围绕同一 continuation object。
+3. `reopen_threshold` 是否仍保留未来反对当前状态的正式能力。
 
-这一步不成立，steady 只是“先继续看看”。
+没有 threshold 的继续，不叫 steady，只叫默认冲动。
 
-### 3.5 再验 `handoff continuity warranty`
-
-再看 handoff 是否仍围绕同一个 continuity object，而不是围绕一段更好读的 summary。
-
-如果 handoff 仍需要作者临场解释，steady 就还没有成立。
-
-### 3.6 最后验 `reopen threshold` 与 `steady_verdict`
+### 2.6 最后才给 `Explainability`
 
 最后才看：
 
-1. `truth_break_trigger` 与 `cache_break_threshold` 是否仍正式保留。
-2. `rollback_boundary` 是否仍明确。
-3. `steady_verdict` 是否与前五步对象完全一致。
+1. `steady-state card`
+2. `steady_verdict`
+3. `verdict_reason`
+4. `handoff prose`
 
-如果 threshold 消失，steady 就只是把未来反对当前状态的能力一起删除。
+这四类内容都只能作为 Explainability 末端投影发放，不能反向定义 Authority、Boundary、Transcript、Lineage 或 Continuation。
 
-## 4. 直接阻断条件
+## 3. 直接阻断条件
 
 出现下面情况时，应直接阻断当前 Prompt steady state：
 
-1. `truth_continuity_missing`
-2. `prefix_custody_missing`
-3. `baseline_dormancy_unsealed`
-4. `continuation_expired`
-5. `handoff_continuity_blocked`
+1. `authority_blur`
+2. `boundary_unsealed`
+3. `transcript_conflation`
+4. `lineage_unproven`
+5. `continuation_story_only`
 6. `reopen_threshold_missing`
-7. `truth_recompile_required`
-8. `reopen_required`
 
-## 5. continuation patrol 与 re-entry 顺序
+## 4. continuation patrol 与 re-entry 顺序
 
 看到阻断 reason 之后，更稳的处理顺序是：
 
 1. 先冻结新的 continuation 与 handoff，不再让 later 团队消费当前 steady-state 工件。
-2. 先把 verdict 降级为 `steady_state_blocked` 或 `reentry_required`，不允许继续冒充 steady。
-3. 先回到上一个仍可验证的 `restored_request_object` 或 stable prefix boundary。
-4. 先补新的 custody、dormancy seal 与 eligibility，再允许重新发放 handoff continuity warranty。
+2. 先把 verdict 降级为 `steady_state_blocked` 或 `reentry_required`。
+3. 先回到上一个仍可验证的 authority winner、boundary bundle 与 protocol transcript。
+4. 先补新的 lineage、qualification 与 threshold，再允许重新发放 steady verdict。
 5. 如果根因落在 release correction 制度本身，就回跳 `../guides/72` 做对象级纠偏。
 
-## 6. 最小 residual reopen 演练集
+## 5. 最小 residual reopen 演练集
 
-每轮至少跑下面七个 Prompt 宿主稳态执行演练：
+每轮至少跑下面六个 Prompt 宿主稳态演练：
 
-1. `truth_continuity_recheck`
-2. `stable_prefix_custody_replay`
-3. `baseline_dormancy_reseal`
-4. `continuation_eligibility_recheck`
-5. `handoff_continuity_reconsume`
+1. `authority_winner_recheck`
+2. `boundary_bundle_reseal`
+3. `protocol_transcript_reconsume`
+4. `lineage_resume_reproof`
+5. `continuation_qualification_recheck`
 6. `reopen_threshold_replay`
-7. `truth_recompile_fallback`
 
-## 7. 复盘记录最少字段
-
-每次 Prompt 宿主稳态失败、再入场或 reopen，至少记录：
-
-1. `steady_state_card_id`
-2. `steady_state_object_id`
-3. `truth_continuity`
-4. `stable_prefix_custody`
-5. `baseline_dormancy_seal`
-6. `continuation_eligibility`
-7. `handoff_continuity_warranty`
-8. `reopen_threshold`
-9. `steady_verdict`
-10. `verdict_reason`
-
-## 8. 苏格拉底式检查清单
+## 6. 苏格拉底式检查清单
 
 在你准备宣布“Prompt 已经 steady”前，先问自己：
 
-1. 我现在保护的是 `compiled request truth`，还是一份更耐读的 summary。
-2. `stable prefix custody` 保住的是前缀资产，还是一次暂时没触发 cache break 的好运气。
-3. `continuation eligibility` 证明的是继续资格，还是只是大家愿意先继续。
-4. handoff continuity 释放的是对象，还是故事。
-5. `reopen threshold` 还在不在，如果不在，我是在进入稳态，还是在删掉未来反对当前状态的能力。
+1. 我现在保护的是 authority winner，还是一份更像样的稳态卡。
+2. 我现在保护的是 stable prefix 与 lawful forgetting，还是一次暂时没出 cache break 的好运气。
+3. 我现在保护的是 protocol transcript，还是一段更顺滑的 handoff prose。
+4. 我现在保留的是 continuation qualification 与 reopen threshold，还是一句“后面继续就行”。
+5. 如果把 card、verdict、note 与 prose 全部藏起来，later 团队是否仍能围绕同一世界继续判断。
 
-## 9. 一句话总结
+## 7. 一句话总结
 
-真正成熟的 Prompt 宿主修复稳态执行，不是宣布“released 之后一直很稳”，而是持续证明同一个 `compiled request truth` 仍配继续、仍配交接，并在必要时仍能沿正式 threshold 重新进入 re-entry 或 reopen。
+真正成熟的 Prompt 宿主修复稳态执行，不是宣布“released 之后一直很稳”，而是持续证明同一个 `Authority -> Boundary -> Transcript -> Lineage -> Continuation` 仍在共同定义世界，而 `Explainability` 只在末端诚实解释。
