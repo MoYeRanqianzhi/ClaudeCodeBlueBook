@@ -23,6 +23,10 @@
 - 拿不到作者时，later maintainer 仍能只凭局部命名、注释、state machine、truth surface 指出越权写回、truth-plane 越位与第一退回层。
 - 如果只把 future maintainer 的最小见证集再压成一条入口句，也只认：`authority surface -> truth planes -> writeback seam -> danger surface -> first retreat layer`。
 
+这里还应再补一条 crosswalk：
+
+- `authority surface ~= current-truth surface`；`truth planes` 是对 `contract / registry / consumer subset` 的维护者投影；`danger surface -> first retreat layer` 则是对 `hotspot kernel / mirror gap discipline + appeal chain` 的执行化表达，不另起第二条 canonical ladder。
+
 如果继续把 `refactor capital` 压成更短的资本表，也只该剩：
 
 - 单一 authority 未裂开

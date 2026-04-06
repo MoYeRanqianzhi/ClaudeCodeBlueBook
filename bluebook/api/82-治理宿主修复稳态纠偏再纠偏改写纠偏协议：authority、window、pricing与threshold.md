@@ -164,10 +164,20 @@ Claude Code 当前并没有公开一份名为：
 4. `free_continuation_blocked`
 5. `repricing_expires_at`
 
+### 5.3 pricing right restitution
+
+1. `pricing_authority_ref`
+2. `pricing_scope`
+3. `pricing_generation`
+4. `repricing_delegate_ref`
+5. `charged_expansion_classes`
+6. `pricing_right_restituted_at`
+
 这里最重要的是：
 
 - `decision window` 回答的是“当前还能承受什么”
 - `continuation pricing` 回答的是“这次继续到底要付什么”
+- `pricing right restitution` 回答的是“谁有资格把这笔价格签下来”
 
 它们共同定义了同一条扩张准入链，而不是两份互不相干的运营说明。
 

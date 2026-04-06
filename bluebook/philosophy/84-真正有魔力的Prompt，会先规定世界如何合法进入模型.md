@@ -53,6 +53,21 @@ Prompt 的魔力，首先来自：
 3. `agent prompts`
 4. `attachment deltas`
 
+### 合法复数不是平行世界
+
+这四类 surface 可以并存，但它们之所以仍算同一个 Prompt 世界，不是因为最后会被拼成一段更长文本，而是因为它们同时满足四个条件：
+
+1. `same lineage`
+   - 都在同一条 `message lineage` 上取位。
+2. `named consumer`
+   - 每一层都只对自己的 projection consumer 负责，不偷渡给相邻 consumer 改判。
+3. `question-scoped winner`
+   - 每个问题都仍能指出唯一 `world-defining winner`，而不是四层并列争主语。
+4. `mandatory downgrade path`
+   - 任一 surface 若丢失 admissibility，就必须降格成 display / evidence / hint，不能硬升格成 protocol 或 continuation truth。
+
+更硬一点说，Prompt 的合法复数是 `projection pluralism`，不是 `adjudication pluralism`；复数成立，裁决权仍然单源。
+
 而 `compact / resume` 则决定这些 surface 在遗忘、重链与继续后还能否保持同一条 continuation contract。
 
 更硬一点说，合法遗忘真正保护的也不是记忆密度，而是：

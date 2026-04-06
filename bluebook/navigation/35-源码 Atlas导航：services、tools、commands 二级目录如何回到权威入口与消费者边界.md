@@ -12,6 +12,10 @@
 4. 为什么这一层更适合继续落在 `api/`，而不是重新改写成架构篇。
 5. 怎样用苏格拉底式追问避免把 atlas 写成“更长的目录树”。
 
+这里还应先多记一句：
+
+- `35` 不新建 ladder，只把 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 投影到二级目录阅读动作里；它是 atlas projection page，不是第二条源码质量前门。
+
 ## 1. Services 二级目录 Atlas
 
 这一条线最该先交四件事：
