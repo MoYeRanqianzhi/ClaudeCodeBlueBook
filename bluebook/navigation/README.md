@@ -10,7 +10,7 @@
    - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
    - `Narrow / Later / Outside` 只是助记，不是第二套对象链
 3. 当前真相
-   - `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability`
+   - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
 如果一个跨目录问题还压不回这三条，它就还停在对象层或结果词层。
 
@@ -21,11 +21,11 @@
 如果继续往下压，跨目录入口也只该再暴露三组最小顺序：
 
 1. Prompt witness order
-   - `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+   - `authority winner -> boundary bundle -> protocol transcript -> lineage refs -> continuation qualification -> explainability card`
 2. governance failure order
    - `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
 3. current-truth reject order
-   - `shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer`
+   - `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`
 
 如果一个跨目录问题还回答不出自己缺的是公式、顺序还是证据层，它就还没有真正进入 `navigation/` 的工作对象。
 
@@ -67,6 +67,10 @@
   失稳前追问，先暴露第一条反证信号与 first reject path。
 - `41`
   第一性原理收束，先判断高阶总结是否已经压回不可约约束。
+- 专题侧门只在主线已判清后开放：Prompt 残留线回答“出监或稳态后哪些 reopen 条件仍必须保留”，结构 `83 / 92` 回答“固定纠偏模板与精修模板”，都不代替 `09 / 05 / 15 / 41`。
+- 如果你已经确认 Prompt 主链成立，只剩“released / steady 之后怎样保留 residual reopen gate / threshold”，从 `66 -> 67 -> 71` 进入。
+- 如果你已经确认结构真相面的问题不在前门公式，而在“怎样把假 authority / merge / fail-closed / liability 压回固定顺序”，从 `41 -> 102 -> guides/83 -> playbooks/61 -> casebooks/54` 进入。
+- 如果你已经进入 refinement execution，且缺的是结构精修模板而不是第一性原理，从 `41 -> 102 -> guides/92 -> playbooks/67 -> casebooks/63` 进入。
 - 如果你在判断“高阶结论是否已经被压到最短动作链”，也只认三行：
   `compile -> protocolize -> preserve -> continue -> explain`
   `price -> externalize -> arbitrate -> continue-or-stop -> cleanup`
@@ -83,11 +87,11 @@
 ## 三条跨目录链
 
 - 请求装配线
-  `09 -> architecture/82 -> philosophy/84 -> guides/99 -> playbooks/77 -> casebooks/73`
+  `09 -> architecture/82 -> philosophy/84 -> api/69 -> api/78 -> playbooks/50 -> casebooks/46 / 49`
 - 扩张定价线
   `09 -> architecture/83 -> philosophy/19 / philosophy/22 -> guides/100 -> playbooks/78 -> casebooks/74`；核心治理线是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
 - 当前真相线
-  `09 -> architecture/84 -> philosophy/76 / philosophy/86 / philosophy/87 -> guides/101 / guides/102 -> playbooks/79 -> casebooks/75`
+  `09 -> architecture/84 -> philosophy/76 / philosophy/86 / philosophy/87 -> api/30 / api/39 / api/42 -> api/83 / api/92 -> guides/101 / guides/102 -> playbooks/79 -> casebooks/75`
 
 如果问题已经进入运行手册层，不要在这里重新拼全链；直接去对应的 `playbooks/README.md`、`guides/README.md` 或 `security/README.md`。
 

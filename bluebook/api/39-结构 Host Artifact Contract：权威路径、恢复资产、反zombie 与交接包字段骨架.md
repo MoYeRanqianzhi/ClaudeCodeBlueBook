@@ -2,239 +2,200 @@
 
 这一章回答五个问题：
 
-1. 结构线的宿主卡、CI 附件、评审卡与交接包，到底应该共享哪些正式字段。
-2. 哪些字段是 shared contract，哪些只是 role-specific projection，哪些仍应停留在 internal hint。
-3. 为什么结构工件必须继续围绕 authoritative path、recovery asset ledger、anti-zombie evidence、retained assets 与 rollback object，而不是围绕结构图、恢复成功率与作者说明。
+1. 结构线的宿主卡、CI 附件、评审卡与交接包，到底该共享哪条正式对象链。
+2. 哪些字段是 hard contract，哪些只是 role-specific projection，哪些仍只能停留在 internal hint。
+3. 为什么结构工件必须先围绕 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`，而不是围绕结构图、恢复成功率与作者说明。
 4. 哪些字段最适合写成 hard contract，缺失时必须直接判定工件不合法。
 5. 宿主开发者与平台设计者该按什么顺序接入这套结构 artifact contract。
 
-## 0. 关键源码锚点
+## 0. 第一性原理
 
-- `claude-code-source-code/scripts/prepare-src.mjs:3-64`
-- `claude-code-source-code/scripts/stub-modules.mjs:2-42`
-- `claude-code-source-code/src/bridge/replBridgeTransport.ts:13-116`
-- `claude-code-source-code/src/bridge/bridgePointer.ts:22-167`
-- `claude-code-source-code/src/services/api/sessionIngress.ts:60-120`
-- `claude-code-source-code/src/utils/cleanupRegistry.ts:1-21`
-- `claude-code-source-code/src/utils/QueryGuard.ts:69-106`
-- `claude-code-source-code/src/utils/task/framework.ts:160-248`
+结构线真正成熟的 artifact contract，不是四类角色各自维护结构图、恢复日志和交接说明，而是四类工件共享同一条源码真相链：
 
-## 1. 先说结论
+1. `contract`
+2. `registry`
+3. `current-truth surface`
+4. `consumer subset`
+5. `hotspot kernel`
+6. `mirror gap discipline`
 
-结构线真正成熟的 artifact contract，不是四类角色各自维护结构图、恢复日志和交接说明，而是四类工件共享同一份 Structure object contract：
+旧结构名词只能降回这条链上的局部见证：
 
-1. 宿主卡回答“当前结构对象、当前权威路径与当前回退对象是什么”。
-2. CI 附件回答“恢复资产、反 zombie 证据与 retained assets 是否仍成立”。
-3. 评审卡回答“这次结构演化是否仍围绕同一 authoritative path”。
-4. handoff package 回答“后来者是否不问作者也能继续恢复、回退与交接判断”。
+1. `authoritative path`
+   - 只是 `current-truth surface` 的 read/write witness。
+2. `recovery asset`
+   - 只是 current-truth 恢复与 mirror gap 的 evidence carrier。
+3. `anti-zombie evidence`
+   - 只是 `hotspot kernel` 的 freshness witness。
+4. `danger paths`
+   - 只是 `mirror gap discipline` 的风险注记。
+5. `rollback object`
+   - 只是结构恢复时的 cleanup carrier。
 
-四类工件的差异只应该体现在展开深度，而不应该体现在：
+## 1. Shared Header
 
-- 结构真相来源
-
-## 2. Structure Artifact Contract 的三层字段
-
-### 2.1 Shared Contract
-
-这些字段必须被四类工件共享：
-
-1. `artifact_line_id`
-2. `structure_object_type`
-3. `structure_object_id`
-4. `authoritative_path`
-5. `current_read_path`
-6. `current_write_path`
-7. `projection_set`
-8. `recovery_asset_ledger`
-9. `anti_zombie_evidence`
-10. `retained_assets`
-11. `danger_paths`
-12. `rollback_object`
-13. `dropped_stale_writers`
-
-### 2.2 Role-Specific Projection
-
-这些字段只在特定工件里展开：
-
-1. 宿主卡：
-   - `current_recovery_state`
-   - `next_action`
-2. CI 附件：
-   - `recovery_result`
-   - `hard_fail_result`
-   - `stale_writer_watchpoints`
-3. 评审卡：
-   - `authority_judgement`
-   - `projection_judgement`
-   - `rollback_judgement`
-4. Handoff package：
-   - `handoff_steps`
-   - `background_refs`
-   - `re_entry_conditions`
-
-### 2.3 Internal Hint
-
-这些信息可以引用，但不应直接升格成稳定公共字段：
-
-1. 临时桥接内部指针细项
-2. 局部调试日志
-3. 非公共的中间 merge 痕迹
-4. 临时实验用的内部路径标志
-
-## 3. Shared Header
-
-更稳的结构 artifact header 可以固定为：
+更稳的结构 artifact header 至少应共享：
 
 ```text
 artifact_header:
 - artifact_line_id
 - structure_object_type
 - structure_object_id
-- authoritative_path
-- current_read_path
-- current_write_path
-- projection_set
-- recovery_asset_ledger
-- anti_zombie_evidence
+- contract_ref
+- registry_ref
+- current_truth_surface_ref
+- consumer_subset_ref
+- hotspot_kernel_ref
+- mirror_gap_ref
+- one_writable_present_witness
 - retained_assets
-- danger_paths
-- rollback_object
 - dropped_stale_writers
+- reject_verdict
+- next_action
 ```
 
-它的作用不是：
+这份 header 的作用不是：
 
-- 取代结构图和恢复日志
+- 取代结构图、恢复日志和交接说明
 
 而是：
 
-- 让四类工件都从同一结构对象起手
+- 让四类工件都从同一条源码真相链起手
 
-## 4. 四类工件的最小 contract
+## 2. 四类工件的最小投影
 
-### 4.1 宿主卡
+### 2.1 宿主卡
 
 最少字段：
 
 1. `structure_object_id`
-2. `authoritative_path`
-3. `current_recovery_state`
-4. `rollback_object`
-5. `danger_paths`
+2. `current_truth_surface_ref`
+3. `consumer_subset_ref`
+4. `one_writable_present_witness`
+5. `next_action`
 
 禁止退化为：
 
 - 只有目录图
 - 只有文件 diff
 
-### 4.2 CI 附件
+### 2.2 CI 附件
 
 最少字段：
 
-1. `recovery_asset_ledger`
-2. `anti_zombie_evidence`
-3. `retained_assets`
-4. `dropped_stale_writers`
-5. `hard_fail_result`
+1. `registry_ref`
+2. `current_truth_surface_ref`
+3. `hotspot_kernel_ref`
+4. `retained_assets`
+5. `dropped_stale_writers`
+6. `reject_verdict`
 
 禁止退化为：
 
 - 只有恢复成功率
-- 只有 gate 存在性判断
+- 只有“看起来 fail-closed”
 
-### 4.3 评审卡
+### 2.3 评审卡
 
 最少字段：
 
-1. `authoritative_path`
-2. `current_read_path`
-3. `current_write_path`
-4. `projection_set`
-5. `rollback_object`
+1. `contract_ref`
+2. `registry_ref`
+3. `current_truth_surface_ref`
+4. `consumer_subset_ref`
+5. `one_writable_present_witness`
 6. `review_judgement`
 
 禁止退化为：
 
-- 先看结构图，再看对象路径
+- 先看结构图，再补 live path
+- 先看作者说明，再补 reject path
 
-### 4.4 Handoff Package
+### 2.4 Handoff Package
 
 最少字段：
 
 1. `structure_object_id`
-2. `retained_assets`
-3. `danger_paths`
-4. `rollback_object`
+2. `current_truth_surface_ref`
+3. `mirror_gap_ref`
+4. `retained_assets`
 5. `dropped_stale_writers`
+6. `later_reject_path`
 
 禁止退化为：
 
 - 只有作者讲解
 - 只有危险路径口头说明
 
-## 5. 为什么这些工件必须继续围绕 authoritative path
-
-因为结构真正要回答的不是：
-
-- 看起来是不是更整洁
-
-而是：
-
-- 当前哪条路径才是唯一权威路径
-
-如果工件围绕的不是 authoritative path：
-
-1. 宿主卡会重新退回结构图。
-2. CI 附件会重新退回结果面。
-3. 评审卡会重新退回目录审美。
-4. handoff package 会重新退回作者权威。
-
-## 6. 为什么 recovery asset ledger、anti-zombie evidence 与 retained assets 也必须进入 contract
-
-因为源码先进性不只来自：
-
-- 当前看起来能跑
-
-还来自：
-
-1. 你知道恢复靠哪些资产成立。
-2. 你知道哪些 stale writer 已经被清退。
-3. 你知道哪些资产必须保留，哪些路径最危险。
-
-如果这三类字段没有写进 contract：
-
-1. 恢复就会退回幸运结果。
-2. anti-zombie 就会退回象征性规则。
-3. 交接就会退回作者记忆。
-
-## 7. Hard Contract 字段
+## 3. Hard Contract 与 Reject Trio
 
 最应写成 hard contract 的字段：
 
-1. `structure_object_type`
-2. `structure_object_id`
-3. `authoritative_path`
-4. `current_read_path`
-5. `current_write_path`
-6. `recovery_asset_ledger`
-7. `anti_zombie_evidence`
-8. `retained_assets`
-9. `rollback_object`
-10. `danger_paths`
+1. `structure_object_id`
+2. `contract_ref`
+3. `registry_ref`
+4. `current_truth_surface_ref`
+5. `consumer_subset_ref`
+6. `hotspot_kernel_ref`
+7. `mirror_gap_ref`
+8. `one_writable_present_witness`
+9. `reject_verdict`
 
-这些字段缺任何一项，都不应再被视为：
+结构线最值得长期复用的 reject trio 是：
 
-- 合法 Structure artifact
+1. `layout-first drift`
+2. `recovery-sovereignty leak`
+3. `surface-gap blur`
 
-## 8. 最小接法
+只要工件不能直接指出自己正在违反哪一类 reject，它就还不是 later maintainer 可复用的 artifact contract。
+
+## 4. 为什么 current-truth surface 必须先于恢复资产
+
+因为结构先进性真正要回答的不是：
+
+- 看起来是不是更整洁
+- 恢复是不是成功过一次
+
+而是：
+
+- 现在谁有权写现在
+
+如果工件围绕的不是 `current-truth surface`：
+
+1. 宿主卡会退回目录图。
+2. CI 附件会退回恢复结果面。
+3. 评审卡会退回作者权威。
+4. handoff package 会退回口头交接。
+
+也就是说，`recovery asset` 只能帮助找回 current truth，不能升级成第二主权面。
+
+## 5. 最小接入顺序
 
 如果你要最小化接入结构 artifact contract，建议按下面顺序做：
 
-1. 先把 shared header 固定下来。
-2. 再让宿主卡、CI 附件、评审卡与 handoff package 都继承这一 header。
-3. 再按角色增加 projection 字段。
-4. 最后再把 internal hints 变成 evidence refs，而不是公共 schema。
+1. 先固定 `contract_ref -> registry_ref -> current_truth_surface_ref`。
+2. 再把 `consumer_subset_ref` 与 `mirror_gap_ref` 补出来，防止可见面冒充真相。
+3. 再把 `hotspot_kernel_ref` 与 `one_writable_present_witness` 接进来，说明哪些复杂度是合法集中。
+4. 最后才把 retained assets、stale writers 与 handoff fields 作为 evidence carrier 补齐。
 
-## 9. 一句话总结
+不要反过来：
 
-结构 Host Artifact Contract 真正统一的，不是四类工件的展示形式，而是它们依赖的同一条权威路径、同一组恢复资产与同一个回退对象。
+1. 先做结构图
+2. 先做恢复日志
+3. 先做交接包模板
+
+那样只会把投影写得更丰富，却仍然保不住源码主语。
+
+## 6. 苏格拉底式追问
+
+在你准备宣布“结构 artifact contract 已经稳定”前，先问自己：
+
+1. 我共享的是同一条源码真相链，还是四份角色各自的结构摘要。
+2. `authoritative path` 在这里还是 live read/write witness，还是已经被读成抽象路径口号。
+3. `recovery asset` 在这里是在帮助找回 current truth，还是已经越权成第二主权面。
+4. later maintainer 是否能不问作者就指出 first reject path。
+5. 这些热点到底是在合法集中复杂度，还是只是在逃避拆分。
+
+## 7. 一句话总结
+
+结构 Host Artifact Contract 真正统一的，不是四类工件的展示格式，而是它们都必须从 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 这条源码真相链起手，再把旧结构名词降回局部见证。
