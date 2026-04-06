@@ -25,8 +25,22 @@
 - 本轮专题路由瘦身动作: 已继续把三个专题 README 里的过长跨目录细链压回 `navigation/README`，并在推荐入口层直接前置 `09`，减少“目录自己解释、自己分流、自己模板化”的角色混写。
 - 本轮根索引收口动作: 已继续更新 `bluebook/README`，把根层职责收回为稳定一级入口，明确 `docs/` 与 `bluebook/` 并列协同，把更深的跨目录细链统一交还 `navigation/README`，并把安全/风控入口先收回 `09` 的第二张控制面与 `philosophy/85`。
 - 本轮前部正文去记忆化动作: 已继续更新 `philosophy/09-15` 与 `architecture/27`、`38`，把“蓝皮书后续怎么写 / 对后续写作的约束 / 对蓝皮书的启发”改写成读者可复用的判断顺序与检查表，减少作者过程语言继续混入正文。
+- 本轮多 Agent 结果回灌动作: 已把并行 Agent 关于 `prompt 魔力`、`安全/省 token`、`源码先进性` 的三条硬判断回灌到 `09`、`security/README`、`risk/README` 与 `api/46-services`，把“世界准入法律 / 四种扩张定价 / 证据梯度 + 时间诚实”前置给第一次进入这些入口的读者。
 - 本轮深专题收束动作: 已继续更新 `navigation/03` 与 `07`，把旧深线接回新的主线/方法/验证/反例链，并把五个平面继续压回三句判断。
 - 主分支同步检查: `2026-04-06` 先尝试在仓库根执行 `checkout main && pull --ff-only`，但因共享主工作区存在未解决索引而停止；随后改用只读检查 `fetch origin + rev-parse/rev-list`，确认 `origin/main` 无新增提交，当前本地 `main` 领先 `origin/main` 29 个提交，因此本轮不改主分支，只在 `mainloop` 内推进。
+
+### A097. 多 Agent 并行深挖真正值钱的地方，不是多出几段评论，而是逼出应该落在哪个入口层的判断
+
+- Prompt 线的 Agent 说明，最该前置的不是更多“魔力”赞叹，而是“世界进入模型之前已先被编译”“同一个 request object 如何跨 display truth / protocol truth / handoff truth 继续成立”；所以落点应先是 `09`，而不是再在深层专题里堆解释。
+- 安全线的 Agent 说明，最该前置的不是更多分层名词，而是“动作、权威、上下文、时间四种扩张被统一定价”；所以落点应先是 `security/README` 与 `risk/README` 的入口句，而不是只留在 `architecture/83` 深层。
+- 源码质量线的 Agent 说明，最该前置的不是再讲目录层次，而是“证据梯度 + 时间诚实 + future maintainer 正式消费者地位”；所以落点应先是 `api/46-services` 这类 atlas 入口，而不是只停在后部哲学篇。
+
+证据:
+
+- `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+- `bluebook/security/README.md`
+- `bluebook/risk/README.md`
+- `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`
 
 ### A095. 真正该从正文迁出的，不是所有自我反思，而是只服务作者流程的元写作语言
 

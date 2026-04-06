@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新《三张控制面总图》、`security/README`、`risk/README` 与 `api/46-services`，把多 Agent 深挖得到的三条硬判断前置到主线与专题前门：`prompt 魔力 = 世界准入法律`、`安全/省 token = 四种扩张的统一定价`、`源码先进性 = 证据梯度 + 时间诚实 + future maintainer 的正式消费者地位`
 - 继续更新 `philosophy/09-15` 与 `architecture/27`、`architecture/38`，把正文里直接面向“蓝皮书后续怎么写”的过程性表述，改写成读者可复用的最小判断顺序与检查表，进一步把作者过程语言迁回 `docs/`
 - 继续更新《蓝皮书总索引》与开发文档，把根 README 收回为稳定一级入口层：明确 `bluebook/README + 00-09` 负责主线与最短路径、`docs/` 与 `bluebook/` 并列协同而非嵌套关系、更深跨目录细链统一回交 `navigation/README`，同时把安全/风控阅读链先收回 `09` 的第二张控制面与 `philosophy/85`
 - 继续更新 `guides/README`、`navigation/README`、`philosophy/README`，把推荐入口层显式前置到 `09`，并把过长的跨目录细链统一压回 `navigation/README`，同时同步更新开发文档

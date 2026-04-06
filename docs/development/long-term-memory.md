@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 多 Agent 深挖结果已继续落回主线与专题前门：
+  - `bluebook/09` 现已更明确写出 Prompt 魔力真正保护的是当前 / 下一步 / compact 后 / handoff 后仍活在同一个世界里，而不是某段 system prompt 更会说。
+  - `security/README` 与 `risk/README` 现已更明确把安全、风控、误伤恢复前置回“扩张如何被定价”的第二张控制面，不再把安全专题读成规则堆、把风控专题读成另一套封禁叙事。
+  - `api/46-services` 现已更明确把 `contract truth -> registry truth -> authoritative surface -> adapter subset -> danger surface` 前置成 `services/` atlas 的证据梯度，避免目录美学重新冒充源码质量判断。
+- 新的长期结论：
+  - Prompt 魔力最难抄走的不是 system prompt 文案，而是 `display truth / protocol truth / handoff truth` 是否仍被压在同一个 request object 上，以及 prefix asset 是否还能被辅助循环复用。
+  - 安全与省 token 不是两套系统，而是统一在给动作、权威、上下文与时间四种扩张收费；“更安全”和“更省 token”只是同一价格秩序在不同资产上的表现。
+  - 源码先进性的更高阶前门标准，应固定为“证据梯度 + 时间诚实 + future maintainer 正式消费者地位”，而不是目录细度、文件数量或大文件体感。
 - 前部高流量正文页已继续去记忆化：
   - `philosophy/09-15` 与 `architecture/27`、`architecture/38` 里原本直接面向“蓝皮书后续怎么写”的问题、章节标题与约束语句，现已改写成读者可复用的最小判断顺序与检查表。
   - 这批改写保留了苏格拉底反问与第一性原理自检，但不再让正文承担作者自己的过程管理语言。

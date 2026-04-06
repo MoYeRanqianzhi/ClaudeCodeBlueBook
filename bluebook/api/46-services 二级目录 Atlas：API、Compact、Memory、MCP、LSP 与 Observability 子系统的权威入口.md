@@ -21,6 +21,14 @@
   - `analytics`：约 `9` 个文件
   - `lsp`：约 `7` 个文件
 
+这些数字只用于定位热点，不构成成熟度评分。更稳的证据梯度应先看：
+
+1. `contract truth`
+2. `registry truth`
+3. `authoritative surface`
+4. `adapter subset`
+5. `danger surface`
+
 代表性源码锚点：
 
 - `claude-code-source-code/src/services/api/claude.ts:1-80`
@@ -54,6 +62,8 @@
 而是：
 
 - 不同子系统暴露了不同的权威入口、不同的消费者，以及不同的危险改动面
+
+也就是说，读 `services/` 的顺序首先是证据更硬不更硬，而不是目录拆得更细不更细。
 
 ## 2. API / Transport 子系统
 
