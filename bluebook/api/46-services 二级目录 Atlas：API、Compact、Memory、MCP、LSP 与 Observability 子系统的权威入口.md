@@ -46,7 +46,7 @@
 
 `services/` 不是“剩余杂项”目录。
 
-更准确地说，它是 Claude Code 的长期子系统平面，至少可以拆成六组：
+更准确地说，它是统一扩张定价秩序落成对象层的地方，至少可以拆成六组：
 
 1. API / transport / retry 子系统
 2. compact / budget / context maintenance 子系统
@@ -73,12 +73,13 @@
 4. 哪些 stale write / recovery object / projection 最容易在时间上撒谎
 5. future maintainer 如果不同意当前实现，应先沿哪条入口链拒收它
 
-再往上收一层，`services/` 也不是模块清单，而是统一定价秩序落成对象层的地方：
+再往上收一层，`services/` 也不是模块清单，而是 runtime 对请求进入、上下文续存、继续资产、外部能力、桥接暴露与观测追责逐项收费的对象层：
 
 - `api` 守请求真相
 - `compact` 与 budget 子系统守上下文与时间边界
 - `SessionMemory` 与 `PromptSuggestion` 守 continuation 资产
 - `mcp` 与 `remoteManagedSettings` 守外部能力边界
+- `analytics / logging / recovery evidence` 守执行后的结算、追责与连续性重绑
 
 如果不先看到这条主线，读者就会重新把 `services/` 误读成后台杂项集合。
 
@@ -279,9 +280,15 @@
 
 最容易误读的边界：
 
-1. analytics 不是可有可无的外层统计，而是很多治理开关的观察面。
+1. analytics 不是可有可无的外层统计，而是很多治理开关与恢复签发的结算观察面。
 2. notifier / tips 是用户辅助子系统，不是产品 copy 存放区。
 3. `preventSleep.ts` 这类文件虽小，但属于长生命周期运行维护面。
+
+如果把这层再压硬一点，它真正保护的是：
+
+- 哪些扩张已经发生过
+- 哪些责任已经被正式记账
+- 哪些恢复动作已经拿到足够证据去重新绑定执行连续性
 
 ## 8. Services 里的特殊目录：`services/tools`
 

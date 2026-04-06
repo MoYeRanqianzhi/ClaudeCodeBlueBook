@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新《运行时契约、知识层与生态边界》《安全专题索引》《风控专题》《Services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口》，把 `liability evidence` 正式抬到同级对象，并把 observability / recovery evidence 压成统一扩张定价秩序里的结算层
 - 继续更新《源码目录级能力地图：commands、tools、services、状态与宿主平面》，把 `commands / tools / services` 三段继续从分组导览压成 authority、subset、danger surface 与 reject path 协议
 - 继续更新《设计哲学》《第一性原理与苏格拉底反思》，把后半高阶原则从结论列表继续压成 `authority object / bad solution / reject path / migration order` 模板，并把 41 条零散自校准则收成 8 张长期自校卡
 - 继续更新《设计哲学》《第一性原理与苏格拉底反思》，把后半高阶原则继续压成 `authority object / bad solution / reject path / migration order` 模板，并把“下一轮怎么做得更好”改成长期有效的持续自校协议

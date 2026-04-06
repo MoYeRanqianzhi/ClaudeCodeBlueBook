@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `07 / security/README / risk/README / api/46-services` 已继续把统一定价入口从“入场秩序”压到“结算证据面”：
+  - `07` 现已把 `liability evidence` 抬到和 `request truth / continuation asset / capability governance` 同级。
+  - `security/README` 现已更明确把高体积对象常驻主 prompt 写成未定价的上下文写权与时间占权。
+  - `risk/README` 现已更明确把风控写成身份、入口子集与恢复签发上的用户侧结算面。
+  - `api/46-services` 现已更明确把 observability / logging / recovery evidence 压成统一收费秩序里的结算与追责对象层。
+- 新的长期结论：
+  - 扩张定价秩序真正成熟时，不只回答“谁能入场”，还回答“事后怎样回读、结算、追责并重新绑定执行连续性”。
+  - observability 真正重要的原因，不是图表更多，而是它构成了执行后责任与恢复资格的证据层。
 - `api/30` 已继续把 atlas 页的三大中层平面压成固定协议：
   - `commands` 现已更明确区分 authority object、dynamic subset、danger surface 与 reject path，不再主要按命令分组来读。
   - `tools` 现已更明确区分动作 ABI、visible subset、fail-closed 风险与回退入口，不再主要按工具类别来读。

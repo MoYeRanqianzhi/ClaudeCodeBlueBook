@@ -29,6 +29,7 @@
 - 本轮主线模板化动作: 已继续更新 `03` 与 `06`，把后半高阶原则继续压成固定模板，把作者过程式“下一轮”口吻继续改写成长期有效的自校协议。
 - 本轮主线自校卡硬化动作: 已继续更新 `03` 与 `06`，把高阶原则进一步补成 `authority object / bad solution / reject path / migration order` 四格，并把 41 条零散自校准则收成 8 张长期自校卡。
 - 本轮 atlas 中层协议化动作: 已继续更新 `api/30`，把 `commands / tools / services` 三段从目录分组说明继续压成 authority、subset、danger surface 与 reject path 的固定协议。
+- 本轮结算证据面前推动作: 已继续更新 `07`、`security/README`、`risk/README` 与 `api/46-services`，把 `liability evidence / observability / recovery evidence` 正式抬到统一扩张定价秩序里的同级对象层。
 - 本轮旧框架降级动作: 已继续更新 `00`、`01`、`05` 与 `api/30`，把“五层拆解法 / 运行链路导览 / 目录级能力大全 / 快速统计”都明确降成辅助检索与热点定位材料，不再让它们先于三条高阶判断出场。
 - 本轮主线制度化动作: 已继续更新 `03`、`06`、`09`，把“设计哲学 / 第一性原理 / 三张控制面图”从高级观察继续收束为主线宪法、自我约束与读者固定判断顺序。
 - 本轮目录硬化动作: 已继续更新 `README`、`00-导读`、`00-总览`、`00-蓝皮书总览`、`navigation/03` 与 `09`，把 `09` 真正前置到一级阅读路径、去掉推荐链裸编号短写，并把兼容页进一步收回为跳转页。
@@ -177,6 +178,19 @@
 证据:
 
 - `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md`
+
+### A113. 扩张定价秩序真正成熟时，会把 observability 与 recovery evidence 提到同级
+
+- 如果入口页只写“谁能进入当前世界”，却不写扩张后怎样被回读、结算、追责和重新绑定执行连续性，这条定价秩序就仍然缺失一半。
+- `security`、`risk`、`07` 与 `api/46-services` 继续收束后的共识是：`liability evidence` 不是附录，而是和 `request truth / continuation asset / capability governance` 同级的权威入口；没有这层，恢复与 observability 仍会被误写成辅助手段。
+- 这也说明 observability 的更高阶职责，不是“数据更多”，而是让执行后的责任、 signer 与恢复资格有正式结算面。
+
+证据:
+
+- `bluebook/07-运行时契约、知识层与生态边界.md`
+- `bluebook/security/README.md`
+- `bluebook/risk/README.md`
+- `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`
 
 ### A100. 设计内涵继续深化后，最值钱的不再是更多高阶短句，而是把高阶短句压成可排查的对象
 
