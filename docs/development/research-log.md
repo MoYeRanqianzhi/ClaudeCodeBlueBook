@@ -6,6 +6,15 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮主分支同步检查: 根仓库当前 `main=efca1092e8bb3ab5da4f65fdc7d615cf502d3493`、`origin/main=ec7519566b3abf2659fb3d65899dc7d2bad983da`；`git fetch origin --prune` 成功，但根仓库 `main` 比 `origin/main` 超前 `14` 个提交且存在未解决 index，`git checkout main && git merge --ff-only origin/main` 被根仓库自身冲突状态阻塞，因此本轮不触碰根仓库，只在 `.worktrees/mainloop` 内推进。
+- 本轮 mainloop 基线: `HEAD=640e4371ca056b39591c44580a80341247479a0d`，`main=efca1092e8bb3ab5da4f65fdc7d615cf502d3493`，`origin/main=ec7519566b3abf2659fb3d65899dc7d2bad983da`；`git rev-list --left-right --count HEAD...origin/main` 返回 `12 87`，说明本 worktree 继续按独立研究支线推进，而非试图改写根仓主线。
+- 本轮专题正文同序化动作: 已继续更新 `userbook/04-专题深潜/03`、`07` 与 `08`，把上一批已经稳定在专题入口层的三组最小顺序前推到正文第一页。
+- 本轮 user-facing 治理专题动作: `03` 现在更明确把治理首页写成 `governance key -> decision window -> failure verdict -> entrance choice`，并把 `mode / modal / usage / compact / default continue` 固定成不得冒充治理真相的投影替身。
+- 本轮 user-facing 会话运营动作: `07` 现在更明确把会话运营首页写成“同一个工作对象 -> stable bytes vs working set -> 时间线选择 -> 命令选择”，并把“恢复不是找聊天记录”“`/branch` 不是 Git branch”“`/clear` 不是轻量版 `/compact`”写成正文第一屏的 first reject signal。
+- 本轮 user-facing Prompt 编译动作: `08` 现在更明确把 Prompt 线翻译成 `target -> fact carriers -> working set -> handoff`，并明确文件、附件、图片、IDE 选区不是 prompt 附庸，而是正式 `fact carriers`；Prompt 魔力也被进一步收回“围绕同一个工作对象持续编译稳定输入”，而不是长 prompt 文采。
+- 本轮 Prompt 魔力深化结论: 已吸收并行 Agent 的侧线结论，把 Prompt 魔力进一步收回 `witness chain + shared prefix asset + continuation qualification`：真正值钱的不是某段 `systemPrompt` 更强，而是 `compact / resume / fork / handoff` 之后，当前工作对象仍能被复证为同一个世界；如果继续只能依赖最后一条回复或长摘要，保住的只是故事，不是 continuation。
+- 本轮目录结构深化结论: 目录优化的下一阶段已经从“专题入口同序化”推进到“专题正文第一页同序化”；如果正文第一页仍从功能表讲起，入口层建立起来的顺序会在进入长文后立即失效。
+- 本轮设计内涵深化结论: 当用户层能够直接用 `target -> fact carriers -> working set -> handoff`、`governance key -> decision window -> failure verdict`、`same object -> stable bytes vs working set -> timeline choice` 三组顺序推进实际工作时，Prompt 魔力、安全设计、省 token 设计与源码结构先进性就不再是三组赞美词，而是同一套运行时纪律在不同工作对象上的用户可见形态。
 - 本轮 userbook 专题入口同序化动作: 已继续更新 `userbook/04-专题深潜/README` 与 `userbook/05-控制面深挖/README`，把 `userbook` 入口层继续从“给目录”推进成“给工作对象/控制面入口 + 最小顺序 + first reject signal”。
 - 本轮专题层结论: `04` 现在更明确要求先按工作对象而不是按功能名进入，并把三组最小顺序翻译成真实工作动作；`05` 现在更明确要求先按控制面而不是相邻按钮进入，并把三组最小顺序直接写成控制面入口判断。
 - 本轮目录结构深化结论: 当 `userbook` 的主线使用、专题深潜、控制面深挖三层都开始共用同一组最小顺序时，用户侧目录结构才真正开始脱离“分栏目录”，进入“问题/顺序/边界一体化入口”阶段。
