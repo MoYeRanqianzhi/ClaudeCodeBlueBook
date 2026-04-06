@@ -67,6 +67,14 @@
 - [63-2026-04-06-direct connect transcript mode vs raw stream 拆分记忆.md](./63-2026-04-06-direct%20connect%20transcript%20mode%20vs%20raw%20stream%20拆分记忆.md)
 - [64-2026-04-06-remote durable status vs direct connect interaction 拆分记忆.md](./64-2026-04-06-remote%20durable%20status%20vs%20direct%20connect%20interaction%20拆分记忆.md)
 - [65-2026-04-06-remote continuous flow vs direct discrete projection 拆分记忆.md](./65-2026-04-06-remote%20continuous%20flow%20vs%20direct%20discrete%20projection%20拆分记忆.md)
+- [66-2026-04-06-remote same event different consumers 拆分记忆.md](./66-2026-04-06-remote%20same%20event%20different%20consumers%20拆分记忆.md)
+- [67-2026-04-06-remote event families to distinct consumers 拆分记忆.md](./67-2026-04-06-remote%20event%20families%20to%20distinct%20consumers%20拆分记忆.md)
+- [68-2026-04-06-remote command surface is not one table 拆分记忆.md](./68-2026-04-06-remote%20command%20surface%20is%20not%20one%20table%20拆分记忆.md)
+- [69-2026-04-06-remote slash discoverability vs executability 拆分记忆.md](./69-2026-04-06-remote%20slash%20discoverability%20vs%20executability%20拆分记忆.md)
+- [70-2026-04-06-disableSlashCommands does not kill remote slash ingress 拆分记忆.md](./70-2026-04-06-disableSlashCommands%20does%20not%20kill%20remote%20slash%20ingress%20拆分记忆.md)
+- [71-2026-04-06-remote local command plane selective thinning 拆分记忆.md](./71-2026-04-06-remote%20local%20command%20plane%20selective%20thinning%20拆分记忆.md)
+- [72-2026-04-06-remote tool plane stays live 拆分记忆.md](./72-2026-04-06-remote%20tool%20plane%20stays%20live%20拆分记忆.md)
+- [73-2026-04-06-remote tool plane local authority 拆分记忆.md](./73-2026-04-06-remote%20tool%20plane%20local%20authority%20拆分记忆.md)
 
 用途：
 
