@@ -8,6 +8,100 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README / 00 / 09 / userbook/README / userbook/00 / userbook/01-02` 现已继续把 canonical formulas 从哲学前门前推到蓝皮书和使用手册第一跳：
+  - `bluebook/README / 00 / 09` 现在更明确要求 later maintainer 在入口层先用 `same-world test / decision window / truth ladder` 审题。
+  - `userbook/README / 00 / 01-02` 现在更明确要求首次使用者在入口层先分清 `same-world test`、`Context Usage = decision window`、以及 `stable bytes vs working set`，不再把 token 百分比、长摘要或 slash 面板误当系统真相。
+- 新的长期结论：
+  - 目录结构真正成熟时，不能只让哲学页会说 canonical formula；蓝皮书与使用手册的第一跳也必须会说。否则 later maintainer 和首次使用者会在入口层先学会错误的 UI 主语，再到深页里纠偏。
+  - 根 `README` 保持 route-only 是正确约束；最该承载 doctrine 的不是最外层仓库首页，而是 `bluebook/README / 00 / 09` 和 `userbook` 第一跳这组“真正开始判断”的前门。
+  - `same-world test`、`Context Usage = decision window`、`Narrow / Later / Outside + stable bytes + working set`、`truth ladder + failure honesty` 现在已经形成一组可在目录层复用的 canonical formula；下一轮目录优化应优先检查还有哪些第一跳入口没有前置这组公式。
+- `philosophy/README / philosophy/84 / philosophy/85 / philosophy/87 / navigation/41` 现已继续把哲学前门收口成更短的 canonical formulas：
+  - Prompt 前门现在更明确要求先做 `same-world test`，再谈 Prompt 魔力。
+  - 治理前门现在更明确要求先用 `治理先外化当前真相，再批准当前扩张` 与 `Narrow / Later / Outside + stable bytes + working set` 审题。
+  - 源码质量前门现在更明确要求先过 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface` 与 `dependency honesty + temporal honesty + failure honesty`。
+  - `navigation/41` 现在更明确把这些 canonical formulas 前推到目录层，并要求 later maintainer 在目录前门就先看到它们。
+- 新的长期结论：
+  - 当深页与中层哲学页已经完成词汇换代后，下一层最值钱的优化通常不是再补对象，而是继续收紧前门；因为 later maintainer 最容易在 `README / navigation` 这种入口页重新学回旧世界观。
+  - 哲学前门真正成熟时，不只要给出高阶主语，还要给出 canonical formula 和 first reject signal；否则 later maintainer 仍会先学会“怎么夸”，再去深页里补“怎么判”。
+  - Prompt 前门如果不直接暴露 `same-world test`，读者很容易再次把 Prompt 魔力写回文案能力。
+  - 治理前门如果不直接暴露 `Narrow / Later / Outside + stable bytes + working set`，读者很容易再次把省 token 写回 compact 技巧、把治理写回 dashboard literacy。
+  - 源码质量前门如果不直接暴露 truth ladder 与 `failure honesty`，读者很容易再次把结构先进性写回“API vs implementation”或“模块看起来很清楚”的体感判断。
+- `philosophy/69-73` 现已继续把 artifact / validator / rule ABI / evaluator / replay 这一组中层哲学页对齐到当前高阶主语：
+  - Prompt 线现在统一固定为 `request compiler -> message lineage -> stable bytes -> continuation qualification`。
+  - 治理线现在统一固定为 `externalized truth chain -> decision window -> continuation pricing`。
+  - 当前真相线现在统一固定为 `current-truth surface -> current-truth writeback -> freshness gate -> rollback object`。
+  - 五页都已补出更短公式与第一条 `reject signal` 的苏格拉底自检，避免旧中层对象词在哲学页重新回流。
+- 新的长期结论：
+  - 当 `09 / 05 / 15 / 41` 与目录首页已经稳定后，下一层最容易让 doctrine 回退的往往不是总论页，而是 artifact / rule / replay 这类中层哲学页；它们如果不直接共用当前三条母线主语，later maintainer 就会在“共享对象/拒收语义/回放”这层重新学回旧世界观。
+  - Prompt 魔力继续往下压时，最稳的审题不是“prompt 强不强”，而是 `same-world test`：`request compiler` 是否让世界在 compact / handoff / replay 后仍保持同一 `message lineage`、`stable bytes` 与 `continuation qualification`。
+  - 安全与省 token 继续往下压时，最稳的短公式不是 compact 技巧，而是 `Narrow / Later / Outside + stable bytes + working set`；只要一项检查已经不能再带来 decision gain，它本身就是免费扩张。
+  - 源码质量继续往下压时，最稳的 truth ladder 可继续固定成 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface`；这比“API vs 实现”更适合长期约束 later maintainer 的阅读顺序。
+- `06 / 07 / navigation/41 / navigation/README` 现已继续把高阶前门和总论页压到更短的总公式：
+  - `06` 现在更明确把三条母线继续压成三条最短动作链，而不只停在四个跨平面函数。
+  - `07` 现在更明确把治理线写成“先外化当前真相，再批准当前扩张”，并补出“没有决策增益的检查，本身就是免费扩张”。
+  - `navigation/41` 现在更明确把治理第一性原理收成一句可迁移判断，而不是继续停在对象链总结。
+  - `navigation/README` 现在更明确要求高阶前门除了职责分工外，还要能把三条母线压成三条最短动作链。
+- 新的长期结论：
+  - 当三张控制面与 `09 / 05 / 15 / 41` 的分工已经稳定后，下一层最值钱的优化不是再补入口，而是把高阶页继续压成最短动作链；这样 later maintainer 才能更快识别某个总结是动作层、对象层还是结果词层。
+  - 治理线继续往下压时，最稳的第一性原理不是“统一定价”四个字，而是“治理先外化当前真相，再批准当前扩张；没有决策增益的检查，本身就是免费扩张”。
+  - 只要 `Context Usage` 在高阶前门层重新退回成本面板，蓝皮书就会再次把安全设计、省 token 设计和宿主真相消费拆成三件表面相邻、实则断开的事。
+- `00 / 02 / 04 / 05` 现已继续把根目录第一次接触页对齐到高阶前门协议：
+  - `00` 现在更明确把整本蓝皮书的三句判断改写成更贴近三张控制面的主语，并补出三条最短动作链。
+  - `02` 现在更明确要求使用层在继续讨论 REPL、headless、skill、tool 和 MCP 之前，先经过 `09 / 05 / 15 / 41` 的高阶判断。
+  - `04` 现在更明确声明自己不替高阶前门重做公开度判断，并把 `existence / current visibility / current admission / product promise` 继续钉回治理链。
+  - `05` 现在更明确要求功能/API 总览页不再把 dashboard、mode 条、token 百分比或 `Context Usage` 投影误当成功能前门答案。
+- 新的长期结论：
+  - 当高阶总论页、地图页和目录首页已经换代后，根目录第一次接触页也必须同步换代；否则 later maintainer 会在最外层正文重新被带回结果词，再进入深页纠偏一次。
+  - `00 / 02 / 04 / 05` 这组根页真正成熟时，职责不是“再讲一遍系统有多强”，而是把读者尽快送到正确的控制面、正确的拒收顺序和正确的证据梯度。
+  - 公开能力判断与功能/API 总览真正成熟时，都必须长期守住 `existence / visibility / admission / promise` 这四层；只要某个根页又把这四层压扁成“源码里有 / 产品可用”，目录结构就会重新退回功能表视角。
+- `01 / 08 / navigation/01 / navigation/02` 现已继续把地图页和矩阵页对齐到高阶前门协议：
+  - `01` 现在更明确要求读者先经过 `09 / 05 / 15 / 41`，再进入对象、状态机与危险改动面的结构地图，并补出“合法复杂度中心是资产，不是债务”。
+  - `08` 现在更明确声明自己不替高阶前门混层，并把能力矩阵继续对齐到三条最短动作链。
+  - `navigation/01` 现在更明确把三张控制面再压成三条最短动作链，并把 `09 / 05 / 15 / 41` 固定成第一性原理审读协议。
+  - `navigation/02` 现在更明确要求读者在停留于能力检索图之前，先判断自己是否已完成模仿对象校正、失稳前追问与第一性原理收束。
+- 新的长期结论：
+  - 当高阶总论页已经压成动作链后，下一层最值钱的目录优化就是让地图页和矩阵页承认同一套高阶协议；否则读者会在 `01 / 08 / navigation/01 / navigation/02` 这组入口页重新被带回功能表或目录树视角。
+  - 能力矩阵真正成熟时，不只要区分 `existence / implementation visibility / current admission / product promise`，还要明确说明这四层判断不替代 `09 / 05 / 15 / 41`；否则矩阵页会再次抢走高阶前门的职责。
+  - 第一性原理审读地图真正成熟时，不只要给出三句判断，还要给出三条最短动作链；只有这样，later maintainer 才能快速判断某个新总结究竟落在动作层、对象层还是只停在结果词。
+- `03 / 09 / navigation/03 / navigation/04` 现已继续把高阶总论页压成更短的动作链与职责链：
+  - `03` 现在更明确说明自己不替 `05 / 15 / 41` 重做高阶 judgment map，并补出“合法复杂度中心是资产，不是债务”。
+  - `09` 现在更明确把三张控制面继续压成三条最短动作链，并补出“省 token 的本体是 stable bytes，而不只是 compact”。
+  - `navigation/03` 现在更明确把三条深线分别收口成最短动作链，而不是只停在对象链总结。
+  - `navigation/04` 现在更明确把高阶入口协议固定为 `09 / 05 / 15 / 41`，并补出同一对象在 `architecture / api / security-risk` 之间的三层分工。
+- 新的长期结论：
+  - 高阶总论页真正成熟时，不能只会说“三张控制面是什么”，还要继续把它们压成最短动作链；只有这样，later maintainer 才能判断一个总结是否仍停在对象层。
+  - 省 token 设计继续往下压时，最稳的高阶主语不是 compact，而是 stable bytes；只要 replacement bytes 在 turn / fork / resume 后不再稳定，系统省掉的就不是 token，而是诚实性。
+  - 源码质量继续往下压时，最稳的高阶主语不是“目录别太碎”，而是“合法复杂度中心应被保留成正式席位”；这会直接改变 later maintainer 看待大文件、chokepoint 与 kernel/shell 分工的方式。
+  - 目录职责继续细化时，必须长期守住同一对象的三层分工：`architecture` 解释 orchestration，`api` 承认 truth/contract，`security / risk` 分别解释 signer 机制前门与用户侧结算面；否则高阶目录结构会再次混层。
+- `architecture/README / api/README / security/README / risk/README` 现已继续把运行时/契约/治理/风控四组前门对齐到高阶目录分工：
+  - `architecture/README` 现在更明确要求读者先经过 `09 / 05 / 15 / 41`，再进入对象、状态机与 choke point 的运行时拆解。
+  - `api/README` 现在更明确把 `api/` 写成 `contract truth / host-facing truth / consumer subset / danger surface` 的前门，而不是接口库存。
+  - `security/README` 现在更明确把安全首页限定为 signer / ledger / cleanup 前门，不再让它冒充另一套规则堆。
+  - `risk/README` 现在更明确把风控首页限定为统一定价治理在用户侧的结算面，不再和安全机制前门混层。
+- 新的长期结论：
+  - 当 `philosophy / guides / playbooks / casebooks / navigation` 五个目录首页已经承认 `09 / 05 / 15 / 41` 的分工后，下一层最值钱的目录优化就是让 `architecture / api / security / risk` 这些“运行时对象前门”也显式承认同一套高阶主语；否则 later maintainer 会在运行时层重新长回另一套世界观。
+  - `architecture / api / security / risk` 四类目录首页对应的不是四种写作风格，而是四种前门责任：对象、contract、signer/ledger、用户侧结算面。只要首页混掉这四种责任，目录结构就会重新退回“看起来都在解释系统”的松散拼盘。
+  - 治理线真正深入到目录首页后，`Context Usage` 这种词必须长期被写成 `decision window` 的诚实投影；一旦它在前门层重新退回 usage dashboard，安全与省 token 就会再次被拆成两套主题。
+- `philosophy/README / guides/README / playbooks/README / casebooks/README / navigation/README` 现已继续把子目录首页统一到高阶前门分工：
+  - `philosophy/README` 现在更明确要求读者先经过 `09 / 05 / 15 / 41`，再进入“为什么必须如此设计”的判断层。
+  - `guides/README` 现在更明确把模板页写成 `09 / 05 / 15 / 41` 之后的落地层，并修掉了重复的治理入口条目。
+  - `playbooks/README` 现在更明确声明这里只接受已经被承认的正式对象，不再替代模仿对象校正与失稳前追问。
+  - `casebooks/README` 现在更明确声明案例页只负责命名失真，不再和模板、执行与记忆混层。
+  - `navigation/README` 现在更明确把 `09 / 05 / 15 / 41` 写成一组稳定的高阶前门分工，而不是继续把它们并列成几个 route 节点。
+- 新的长期结论：
+  - 当根 README 与高阶导航已经换代后，下一层最值钱的目录优化就是让各子目录 README 明确承认自己和 `09 / 05 / 15 / 41` 的分工关系；否则 later maintainer 仍会在子目录首页把“哲学 / 模板 / 执行 / 反例 / 跨目录”重新混成一页。
+  - `guides/README` 这类目录首页的重复入口不是小排版问题，而是目录层会重新制造第二真相的信号；目录结构真正成熟时，首页本身也必须保持“同题只给一条主入口”的纪律。
+  - 治理线继续深化时，`Context Usage` 最稳的高阶写法不是成本面板，而是 `decision window` 的诚实投影；凡是目录首页仍把它写成 usage dashboard，都会把统一定价治理重新写浅。
+- `bluebook/README / 06 / navigation/05 / navigation/15 / navigation/41` 现已继续把高阶目录结构与第一性原理分工写硬：
+  - `bluebook/README` 现在更明确把 `navigation/05 / 15 / 41` 固定成高阶 judgment map 的三种职责，并补出 Prompt / 治理 / 当前真相三条深剖稳定入口。
+  - `06` 现在更明确把目录结构优化写成 `compile / price / externalize / evict` 四个跨平面函数在不同证据层上的责任分工，并把“目录前门是否仍说对主语”前置成顶层自校问题。
+  - `navigation/05` 现在更明确把目录优化本身也纳入“抄错对象”的坏解，并把三条母线继续写成 `philosophy / architecture / api / guides / playbooks / casebooks / docs` 的责任分层。
+  - `navigation/15` 现在更明确把三条母线各自的第一条反证信号写硬，并补出“目录结构的苏格拉底审读”。
+  - `navigation/41` 现在更明确要求 later maintainer 即使只看目录前门，也要先用对 `request assembly / governance pricing / current-truth protection` 这三组主语。
+- 新的长期结论：
+  - 目录结构真正成熟时，最值钱的优化不是新增更多入口，而是让 `09 / 05 / 15 / 41` 长期保持“宪法总图 / 模仿对象校正 / 失稳前追问 / 第一性原理收束”的稳定分工；一旦这四页重新变成四份不同角度的 route map，高阶层就会再次失去证据梯度。
+  - Prompt 魔力继续往下压时，最稳的高阶公式不是“Prompt 很强”，而是 `compile -> protocolize -> preserve -> continue -> explain`：世界先被编译，协议真相先被转写，稳定前缀与合法遗忘先被保住，继续资格才被承认，最后失稳原因仍可被解释。
+  - 第一性原理页、目录前门和高阶导航页必须长期共用同一组主语；否则即使深页已经换代，later maintainer 也会在进入正文前先被入口层的旧 route words 重新定向。
 - `navigation/47 / 48 / 50 / 51` 现已继续把宿主迁移与验收中间导航层的 visible noun 收口：
   - `47` 现在更明确把宿主迁移演练线前置为 `request compiler / externalized truth chain / current-truth writeback`，不再让 `compiled request truth / governance control plane object / 结构真相面` 继续冒充迁移演练的第一跳主语。
   - `48` 现在更明确把宿主迁移失真线前置为 `request compiler / externalized truth chain / current-truth writeback` 的伪交接、假灰度与伪回退，并把结构失真更准确收回到 `current-truth surface / current-truth writeback` 的失败信号。

@@ -3,6 +3,7 @@
 `security/` 当前有 237 篇正文，范围 `00-236`；`appendix/` 当前有 220 篇速查文档；`source-notes/` 当前有 87 篇源码剖面。
 
 `security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。本目录覆盖从 `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure` 一路推进到 stronger-request cleanup 家族的同构治理链。
+如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，不要急着把安全页读成另一套规则堆。
 
 ## 先记四句
 
@@ -42,6 +43,21 @@
 - `100-138`：完成权、字段生命周期、工程迁移、验证架构与制度化接口。
 - `139-236`：cleanup 契约与 signer/governor ladder，含 stronger-request cleanup 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone、resurrection、re-entitlement、reconfiguration、reactivation、readiness、continuity 等高阶治理分层。
 
+## 什么时候进来
+
+- 当你已经知道统一定价治理成立，但还没回答 signer、ledger 与 cleanup 责任究竟落在哪些对象上。
+- 当你需要判断哪种扩张该被 ask、哪种 truth 必须外化、哪种 cleanup 不配越级宣布终局。
+- 当你需要把“安全”和“省 token”继续压成同一治理纪律，而不是并列专题。
+
+## 如果你只先判断一件事
+
+- 如果你只先判断“哪种 signer 有资格改边界”，从 `00-29` 进入。
+  - 失败信号：还在把 classifier、mode、allow 规则或单点沙箱当成最终主权。
+- 如果你只先判断“哪条真相链必须被宿主承认”，从 `30-138` 进入。
+  - 失败信号：还在让宿主从事件流、usage 条或局部 status 自己回放拼治理真相。
+- 如果你只先判断“cleanup 与 forgetting 为什么不能混成一个结果词”，从 `147-224` 进入。
+  - 失败信号：还在把完成、终局、遗忘、清理写成一个“已经没事了”的总结果。
+
 ## 按问题进入
 
 - 想看来源主权、权限模式、能力边界与显式降级
@@ -69,6 +85,8 @@
 - README 只保留前门判断、编号段职责与代表性入口，不再镜像全部 237 篇标题。
 - `security/` 解释的是同一价格秩序的不同资产切面，不把“多道窄门”误写成“更多规则”。
 - `security/` 前门优先解释 `governance key`、动作/上下文/时间收费顺序与 host truth 消费关系，不回退成权限弹窗导览。
+- `security/README` 只负责治理 signer / ledger / cleanup 前门，不和 `risk/` 抢用户侧结算面，也不和 `playbooks/` 抢执行链。
+- 巨型目录库存、逐篇标题镜像和作者侧记忆不再回灌首页。
 - 深层速查表统一回 `appendix/README.md`，源码剖面统一回 `source-notes/README.md`。
 - 章节推进记忆、未来候选和目录编排提示统一写入 [../../docs/development/security/README.md](../../docs/development/security/README.md)，不再回写到正文尾段。
 - 需要宿主接入、验收、修复与长期回归时，回 [../playbooks/README.md](../playbooks/README.md) 与 [../risk/README.md](../risk/README.md)，不要继续停在安全首页摘要。

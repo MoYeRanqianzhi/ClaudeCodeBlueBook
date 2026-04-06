@@ -6,6 +6,56 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮目录前推动作: 已继续更新 `bluebook/README`、`00`、`09`、`userbook/README`、`userbook/00` 与 `userbook/01-02`，把 canonical formulas 从哲学前门继续前推到蓝皮书和使用手册第一跳；用户在第一次进入时就能先学会 `same-world test / decision window / stable bytes vs working set / truth ladder`，而不是先学 mode 条、token 百分比、长摘要或目录观感。
+- 本轮 Prompt 侧线补前门动作: 已把 Prompt 前门从哲学页继续前推到 `bluebook/README`、`00` 与 `userbook` 第一跳，让 later maintainer 和首次使用者都先经过 `same-world test`，再谈 Prompt 魔力或“怎么提问”。
+- 本轮治理侧线补前门动作: 已把治理前门从哲学页继续前推到 `09`、`userbook/README` 与 `userbook/01-02`，明确 `Context Usage = decision window`，并把 `Narrow / Later / Outside + stable bytes + working set` 提升为使用层就应掌握的 token 经济公式。
+- 本轮源码质量侧线补前门动作: 已把 `truth ladder` 与 `failure semantics` 前推到 `bluebook/README`、`00` 与 `09`，让 later maintainer 在根入口就先用“边界可证 / 时间诚实 / 失败诚实”审题，而不是先用目录美学审题。
+- 本轮目录结构深化结论: 根 `README` 继续保持 route-only 是对的；真正该前推 canonical formula 的，是 `bluebook/README`、`00`、`09` 和 `userbook` 第一跳。目录结构优化的关键，不是把 doctrine 灌到所有入口，而是把它灌到“读者第一次真正开始判断”的那一层。
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash，`git merge --ff-only origin/main` 返回 `Already up to date.`。本轮因此只记录基线，不对根仓库做任何修改。
+- 本轮哲学前门收口动作: 已继续更新 `philosophy/README`、`philosophy/84`、`philosophy/85`、`philosophy/87` 与 `navigation/41`，把哲学目录首页和第一性原理导航继续压成更短的 frontdoor formula，而不是继续让 later maintainer 先读对象层总结、再自己压回第一性原理。
+- 本轮 Prompt 侧线回灌动作: 已把 Prompt 前门继续压成 `same-world test = world-defining winner -> message lineage -> protocol transcript -> stable bytes -> continuation qualification`，并把 first reject signal 前置为“回答变差前，先看 same-world test 哪一环已经断了”。
+- 本轮治理侧线回灌动作: 已把治理前门继续压成 `治理先外化当前真相，再批准当前扩张` 与 `Narrow / Later / Outside + stable bytes + working set`，并把“没有决策增益的检查，本身就是免费扩张”继续写成目录前门级判断，不再只停在深页或手册页。
+- 本轮源码质量侧线回灌动作: 已把源码质量前门继续压成 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface` 与 `dependency honesty + temporal honesty + failure honesty`，并把 `failure semantics` 明确上提为 architecture doctrine，而不是尾部异常说明。
+- 本轮目录结构深化结论: 当三张控制面与中层哲学页已经稳定后，下一层最容易把 doctrine 写回旧世界观的，不是深页，而是 `philosophy/README` 与 `navigation/41` 这种前门页；因此目录结构优化的高价值动作，是优先让前门直接暴露 canonical formulas 与 first reject signal。
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash，`git merge --ff-only origin/main` 返回 `Already up to date.`。本轮因此只记录基线，不对根仓库做任何修改。
+- 本轮哲学中层对齐动作: 已继续更新 `philosophy/69-73`，把 artifact / validator / rule ABI / evaluator / replay 这一组中层哲学页从旧 `compiled request object / governance decision object / structure recovery object` 语汇，统一收回到当前三条母线主语，并让这五页都显式补出更短公式与第一条 `reject signal` 的苏格拉底自检。
+- 本轮 Prompt 侧线回灌动作: 已吸收并行 Agent 的增量结论，把 Prompt 魔力继续压成 `same-world test`：真正要反复证明的不是 prompt 文案，而是 `request compiler -> message lineage -> stable bytes -> continuation qualification` 这条链在 compact / handoff / replay 后是否仍保持同一世界。
+- 本轮治理侧线回灌动作: 已吸收并行 Agent 的增量结论，把治理与省 token 的共同短公式继续压成 `Narrow / Later / Outside + stable bytes + working set`，并确认“治理先外化当前真相，再批准当前扩张；没有决策增益的检查，本身就是免费扩张”仍是最稳的第一性原理句。
+- 本轮源码质量侧线回灌动作: 已吸收并行 Agent 的增量结论，把源码先进性的 truth ladder 继续压成 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface`，作为下一轮继续上提到哲学前门的高价值候选。
+- 本轮目录结构深化结论: 当前高阶前门与目录职责已经基本稳定后，最容易回流旧世界观的不是 `09 / 41` 这类总论页，而是 artifact / rule / replay 这类中层哲学页；因此这批页面也必须长期共用同一条高阶主语链，否则 later maintainer 会在中层重新学回旧对象词。
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash，`git merge --ff-only origin/main` 返回 `Already up to date.`。本轮因此只记录基线，不对根仓库做任何修改。
+- 本轮高阶总公式收口动作: 已继续更新 `06`、`07`、`navigation/41` 与 `navigation/README`，把三条母线继续压成三条最短动作链，并让高阶前门不只给职责分工，还给出最短可迁移公式。
+- 本轮治理侧线回灌动作: 已吸收并行 Agent 的一句高价值结论，并前置到高阶页：治理先外化当前真相，再批准当前扩张；连治理检查自己都必须被定价，没有决策增益的检查，本身就是免费扩张。
+- 本轮 Context Usage 收口动作: 已继续把 `Context Usage` 在高阶页里的读法固定成 `decision window` 的诚实投影，不再允许它在总论或导航前门里退回 usage dashboard / 成本面板。
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash，`git merge --ff-only origin/main` 返回 `Already up to date.`。本轮因此只记录基线，不对根仓库做任何修改。
+- 本轮根页前门收口动作: 已继续更新 `00`、`02`、`04` 与 `05`，把导读、使用指南、公开能力判断与功能/API 总览继续对齐到三张控制面和 `09 / 05 / 15 / 41` 的高阶协议，让读者在第一次进入根目录正文时不再退回“Prompt 很强 / 安全很严 / 能力很多”这些结果词。
+- 本轮 Prompt 侧线回灌动作: 已把并行 Agent 的有效结论继续吸收到 `00` 与 `02`，让根页也显式承认 `compile -> protocolize -> preserve -> continue -> explain` 这条 Prompt 最短动作链。
+- 本轮治理侧线回灌动作: 已把治理侧线的有效结论继续吸收到 `00 / 02 / 04 / 05`：`Context Usage` 不能被当成成本面板或功能前门答案，而应先经过 `decision window / current admission / product promise` 的分层判断。
+- 本轮目录结构深化结论: 当地图页、矩阵页与高阶总论页都已承认三张控制面后，下一层最值钱的优化就是让根目录第一次接触页也服从同一协议；否则 later maintainer 会在最外层正文重新学到一套更浅的世界观。
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash，`git merge --ff-only origin/main` 返回 `Already up to date.`。仓库本地 `git pull --ff-only` 仍受 upstream 配置影响返回 `Cannot fast-forward to multiple branches`，但本轮已通过 fetch + hash + ff-merge 证实没有待拉取更新，因此不对根仓库做任何修改。
+- 本轮地图/矩阵页收口动作: 已继续更新 `01`、`08`、`navigation/01` 与 `navigation/02`，把源码结构地图、能力矩阵、第一性原理审读地图与能力/API/治理检索图继续对齐到三张控制面和 `09 / 05 / 15 / 41` 的高阶协议。
+- 本轮 Prompt 侧线回灌动作: 已把并行 Agent 的有效结论继续吸收到 `navigation/01` 与 `08`，让三张控制面在地图层也显式落成三条最短动作链，而不是只停在对象层标签。
+- 本轮治理侧线回灌动作: 已把治理侧线的有效结论继续吸收到 `08` 与 `navigation/02`：能力检索与能力矩阵都不得再把 `Context Usage`、mode 条或 token 百分比直接当成治理真相，而必须先经过 `decision window / current admission / product promise` 的分层判断。
+- 本轮源码质量侧线回灌动作: 已把源码质量侧线的有效结论继续吸收到 `01`，把“合法复杂度中心是资产，不是债务”前置为源码地图的总判断，不再让结构地图先被目录体感主导。
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash。仓库本地 `git pull --ff-only` 继续因 upstream 配置返回 `Cannot fast-forward to multiple branches`，但当前没有待拉取更新，因此本轮只记录基线，不对根仓库做任何修改。
+- 本轮高阶总论页收口动作: 已继续更新 `03`、`09`、`navigation/03` 与 `navigation/04`，把高阶总论页继续压成更短的动作链与职责链：Prompt 线前置 `compile -> protocolize -> preserve -> continue -> explain`，治理线前置 `price -> externalize -> arbitrate -> continue-or-stop -> cleanup`，当前真相线前置 `surface -> writeback -> freshness -> evict`，并把 `05 / 15 / 41` 与三张控制面之间的职责缝隙继续写硬。
+- 本轮 Prompt 侧线回灌动作: 已把并行 Agent 的一条有效结论继续吸收到高阶总论页：Prompt 魔力真正值钱的不是“更强 prompt”，而是 `compile -> protocolize -> preserve -> continue -> explain` 这条五动作链。
+- 本轮治理侧线回灌动作: 已把并行 Agent 的一条有效结论继续吸收到 `09` 与目录协议页：省 token 的本体不是 compact，而是 stable bytes；治理页继续把 `Context Usage` 固定成 `decision window` 的诚实投影。
+- 本轮源码质量侧线回灌动作: 已把并行 Agent 的一条有效结论继续吸收到 `03` 与 `navigation/04`：合法复杂度中心是资产，不是债务；同一对象继续下钻时，应显式拆成 runtime orchestration、contract truth/host-facing truth、以及 signer/用户侧结算面三层责任。
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`；`git fetch origin main` 成功，`git rev-parse main origin/main` 确认两者同 hash。仓库本地 `git pull --ff-only` 因 upstream 配置返回 `Cannot fast-forward to multiple branches`，但当前并无待拉取更新，因此本轮只记录基线，不对根仓库做任何修改。
+- 本轮运行时/契约/安全/风控首页对齐动作: 已继续更新 `architecture/README`、`api/README`、`security/README` 与 `risk/README`，把运行时对象前门、host-facing truth 前门、治理 signer/ledger 前门与用户侧结算面前门继续统一到 `09 / 05 / 15 / 41` 的高阶分工，并让四个首页更明确声明自己不和高阶 judgment map 抢职责。
+- 本轮治理术语回灌动作: 已继续把 `Context Usage` 的高阶读法收回为 `decision window` 的诚实投影，而不是成本面板；这一结论现已进入 `architecture/api/security/risk` 邻接目录的目录判断语境，不再只停在深页里。
+- 本轮目录结构深化结论: 高阶目录结构继续稳定后，下一层最值钱的优化不再只是修子目录 README 的内部语气，而是让“对象前门 / contract 前门 / signer 前门 / 用户侧结算面前门”都明确承认自己相对于 `09 / 05 / 15 / 41` 的职责边界。
+- 本轮主分支同步检查: 根仓库当前 `main=origin/main=b6e525227ee57556adb08bd2e5c61978b290b5bd`，`git fetch origin main` 成功，`git pull --ff-only` 返回 `Already up to date.`；本轮因此只是记录基线，不对根仓库做任何修改。
+- 本轮子目录首页对齐动作: 已继续更新 `philosophy/README`、`guides/README`、`playbooks/README`、`casebooks/README` 与 `navigation/README`，把子目录首页进一步统一到 `09 / 05 / 15 / 41` 的高阶分工：`09` 负责宪法总图，`05` 负责模仿对象校正，`15` 负责失稳前追问，`41` 负责第一性原理收束；同时让各目录 README 更明确声明自己不和高阶 judgment map 抢职责。
+- 本轮目录缺陷修复动作: 已修掉 `guides/README` 中重复的治理入口条目，避免目录首页自己制造一次“同题双入口”噪音。
+- 本轮治理侧线回灌动作: 已吸收一条并行 Agent 的有效结论，把 `Context Usage` 继续收回 `decision window` 的诚实投影，而不是成本面板；这一结论已回写到 `philosophy/README` 与 `guides/README` 的治理失败信号里。
+- 本轮并行 Agent 策略: 已继续复用现有子代理并行派发 Prompt / 治理 / 源码质量三条只读侧线；治理侧线返回了可吸收目录层的结论，源码质量侧线本批次窗口内仍未给出可直接回灌正文的有效内容，主线继续坚持“不让侧线阻塞当前批次提交”。
+- 本轮主分支预检阻塞: 根仓库 `main=8bf0c2f534f8c6a96ea81439488048d251e836cc`，`origin/main=526ff66fc5de711f346599f2075c96b19347c808`；`git fetch origin main` 正常，但 `git pull --ff-only origin main` 继续被根仓库未解决冲突拦住，本轮可见 unmerged 文件为 `bluebook/security/README.md`。按隔离要求，本轮不处理根仓库冲突，只在 `.worktrees/mainloop` 内形成闭环。
+- 本轮高阶目录/第一性原理收口动作: 已继续更新 `bluebook/README`、`06`、`navigation/05`、`navigation/15` 与 `navigation/41`，把目录结构进一步写成 `09 / 05 / 15 / 41` 四段高阶分工：`09` 负责宪法总图，`05` 负责校正模仿对象，`15` 负责失稳前追问，`41` 负责第一性原理收束；同时把各目录 README 重新钉回证据梯度分流，而不是继续摊平成 route map。
+- 本轮 Prompt 侧线回灌动作: 已吸收一条并行 Agent 的有效结论，把 Prompt 魔力进一步压成 `compile -> protocolize -> preserve -> continue -> explain` 五动作链：世界先被编译，协议真相先被转写，稳定前缀与合法遗忘先被保住，继续资格才被承认，最后失稳原因仍可被解释；这一结论已回写到 `navigation/05` 与 `navigation/41`。
+- 本轮失稳前反证信号动作: 已继续更新 `navigation/15`，把三条母线各自的“第一条反证信号”显式前置：Prompt 线防 `systemPrompt`/UI transcript 篡位，治理线防 mode/弹窗/usage 条篡位，结构线防 replay/pointer/snapshot 篡位 current truth。
+- 本轮并行 Agent 策略: 已再次复用现有子代理并行派发 Prompt / 治理 / 源码质量三条只读侧线；其中 Prompt 侧线返回了可用摘要，治理与源码质量侧线在本批次窗口内未给出可吸收正文的有效内容，主线继续坚持“不让侧线阻塞当前批次提交”。
 - 本轮主分支预检阻塞: 根仓库 `main=0c735c877b1337da15d310af005f729e263d4bc6`，`origin/main=526ff66fc5de711f346599f2075c96b19347c808`；但根仓库当前存在未解决冲突，`bluebook/security/README.md` 与 `docs/development/research-log.md` 处于 unmerged 状态，因此 `git pull --ff-only origin main` 连续重试仍被 Git 拒绝。本轮按隔离要求不处理根仓库冲突，只在 `.worktrees/mainloop` 内继续形成闭环。
 - 本轮宿主迁移/验收导航收口动作: 已继续更新 `navigation/47 / 48 / 50 / 51`，把宿主迁移演练、失真、验收协议与验收执行这一组中间导航层 visible noun 收回到 `request compiler / externalized truth chain / current-truth writeback / current-truth surface`，并把自检段升级为第一性原理式对象追问，避免读者在进入 `playbooks / casebooks / api` 深页前先被 `compiled request truth / authority object` 这类旧 route words 带偏。
 - 本轮方法/迁移前门收口动作: 已继续更新 `navigation/07`、`navigation/46`、`navigation/README` 与 `api/README`，把方法导航、迁移工单导航与 API 目录前门进一步收回到 `request compiler / externalized truth chain / current-truth writeback / current-truth surface / consumer subset` 这组当前主语，并让 API 前门更明确给出 `49 -> 54` 与 `28 -> 32 -> 52` 两条宿主消费入口。

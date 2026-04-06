@@ -33,6 +33,18 @@
 
 如果一个解释还没有压到这四个函数，就还只是对象层总结，不算最硬的第一性原理收束。
 
+如果再往目录前门压一层，这一组哲学导航还应优先暴露三条最短 frontdoor formula：
+
+1. Prompt
+   - `same-world test = world-defining winner -> message lineage -> protocol transcript -> stable bytes -> continuation qualification`
+2. 治理
+   - `治理先外化当前真相，再批准当前扩张`
+   - `Narrow / Later / Outside + stable bytes + working set`
+3. 源码质量
+   - `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface`
+
+如果 later maintainer 第一次点进哲学前门时还看不见这三条，目录结构就还在迫使他先走对象层总结，再自己回压成第一性原理。
+
 ## 1. world entry / request assembly / six-stage assembly chain 哲学线
 
 先问：
@@ -54,6 +66,8 @@
 而是：
 
 - 把请求装配的 coherent effect 压回“世界进入模型前先被编译”的第一性原理
+- 如果只看 Prompt 线，它还可以继续压成 `compile -> protocolize -> preserve -> continue -> explain`：世界先被编译，协议真相先被转写，稳定前缀与合法遗忘先被保住，继续资格才被承认，最后失稳原因还能被解释
+- 更短的前门校准句是：先做 `same-world test`，再谈 Prompt 魔力；如果 `world-defining winner / lineage / protocol transcript / stable bytes / continuation qualification` 五环里有一环答不出来，解释就还停在文案层
 - 若仍停留在旧对象名和桥接词层，回 `../09` 与 `../architecture/82` 校正可见主语
 
 ## 2. 统一定价治理哲学线
@@ -77,6 +91,8 @@
 而是：
 
 - 把治理控制面压回“拒绝一切免费扩张”的第一性原理
+- 更短的最小判断句是：治理先外化当前真相，再批准当前扩张；连治理检查自己都必须被定价，没有决策增益的检查，本身就是免费扩张
+- 如果再继续压到 token 经济前门，最稳的短公式是：`Narrow / Later / Outside + stable bytes + working set`
 
 ## 3. 源码质量与可演化内核哲学线
 
@@ -101,6 +117,7 @@
 而是：
 
 - 把源码先进性压回 `current-truth surface / recovery asset non-sovereignty / freshness gate / ghost capability` 与 `证据梯度 / 时间诚实 / future maintainer 可独立 reject` 这组第一性原理，再谈模块美学
+- 如果再继续压成目录前门能直接承认的一行，应先看 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface`，再问 failure semantics 是否也已进入 architecture doctrine
 
 ## 4. 为什么这层更适合落在 philosophy
 
@@ -141,6 +158,12 @@
 - 谁负责保存失真
 - 谁负责保存记忆
 
+如果继续写得更好，还要再问两件事：
+
+1. `09 / 05 / 15 / 41` 是否仍保持“宪法总图 / 模仿对象校正 / 失稳前追问 / 第一性原理收束”的稳定分工，而没有重新变成四份不同角度的 route map。
+2. later maintainer 只看目录前门、不点深页时，是否已经能先用对 `request assembly / governance pricing / current-truth protection` 这三组主语。
+3. `philosophy/README` 是否已经先暴露 `same-world test`、治理短公式与 truth ladder，而不是把 later maintainer 再送回更深一层自己总结。
+
 ## 6. 苏格拉底式自检
 
 在你准备宣布“一套制度解释已经足够深”前，先问自己：
@@ -149,3 +172,4 @@
 2. 我是否已经回答安全与省 token 为什么不是两套分开的优化。
 3. 我是否已经回答源码先进性为什么不是结构洁癖，也不是公开镜像体感。
 4. 我是在描述 Claude Code 的做法，还是已经提炼出可迁移的第一性原理。
+5. 我是否已经解释目录结构为什么不是排版问题，而是第一性原理在不同证据层上的继续展开。
