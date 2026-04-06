@@ -29,6 +29,7 @@
 - [25-2026-04-06-bridge 设置面、控制面与状态面拆分记忆.md](./25-2026-04-06-bridge%20%E8%AE%BE%E7%BD%AE%E9%9D%A2%E3%80%81%E6%8E%A7%E5%88%B6%E9%9D%A2%E4%B8%8E%E7%8A%B6%E6%80%81%E9%9D%A2%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 - [26-2026-04-06-bridge 链接、二维码与定位符拆分记忆.md](./26-2026-04-06-bridge%20%E9%93%BE%E6%8E%A5%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E4%B8%8E%E5%AE%9A%E4%BD%8D%E7%AC%A6%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 - [27-2026-04-06-remote-control 入口矩阵拆分记忆.md](./27-2026-04-06-remote-control%20%E5%85%A5%E5%8F%A3%E7%9F%A9%E9%98%B5%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
+- [28-2026-04-06-remote session client 与 viewer 边界拆分记忆.md](./28-2026-04-06-remote%20session%20client%20%E4%B8%8E%20viewer%20%E8%BE%B9%E7%95%8C%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 
 用途：
 

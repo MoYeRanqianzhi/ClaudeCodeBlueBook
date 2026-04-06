@@ -16,3 +16,4 @@
 - [14-Remote Control 设置默认、显式开关与状态展示索引.md](./14-Remote%20Control%20%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E3%80%81%E6%98%BE%E5%BC%8F%E5%BC%80%E5%85%B3%E4%B8%8E%E7%8A%B6%E6%80%81%E5%B1%95%E7%A4%BA%E7%B4%A2%E5%BC%95.md)
 - [15-Remote Control 链接、二维码与 ID 索引.md](./15-Remote%20Control%20%E9%93%BE%E6%8E%A5%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E4%B8%8E%20ID%20%E7%B4%A2%E5%BC%95.md)
 - [16-Remote Control 入口矩阵索引.md](./16-Remote%20Control%20%E5%85%A5%E5%8F%A3%E7%9F%A9%E9%98%B5%E7%B4%A2%E5%BC%95.md)
+- [17-Remote Session Client、Viewer 与 Bridge Host 索引.md](./17-Remote%20Session%20Client%E3%80%81Viewer%20%E4%B8%8E%20Bridge%20Host%20%E7%B4%A2%E5%BC%95.md)
