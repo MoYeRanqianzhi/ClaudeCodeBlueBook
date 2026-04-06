@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/49 / api/54 / playbooks/29 / guides/100 / playbooks/78` 现已继续把 host-facing contract 线往下收：
+  - `49` 现在更明确把 Prompt 支持面写成 `request compiler input surface + observable surface + internal compiler surface` 三层，而不再让 `compiled_request_truth` 与 `systemPrompt` 继续占主语位。
+  - `54` 现在更明确补出 Prompt host contract 最短对照，把 `message lineage / projection consumer / stable prefix boundary / protocol transcript / continuation object+qualification` 直接钉到 host 应消费的 contract 面。
+  - `29` 现在更明确要求宿主不仅要守住 `message lineage`，还要守住 `request compiler continuity`，不允许把 request compiler 退回输入拼图。
+  - `100` 现在更明确把 `externalized truth chain` 提升进标题与诘问链，并把 `Context Usage` 固定成 `decision window` 证据面。
+  - `78` 现在更明确把 `externalized truth chain continuity` 与 `host_reconstructed_truth_from_projection` 写进回归验证与 drift verdict。
+- 新的长期结论：
+  - Prompt host-facing 文档真正成熟时，不能只会说“不要把 systemPrompt 当真相”；它还必须显式区分输入面、观测投影和 internal compiler surface，否则 later maintainer 仍会把 request compiler 退回几段输入拼图。
+  - 治理 host-facing 文档真正成熟时，`externalized truth chain` 必须先于 `typed ask / decision window / continuation pricing` 一起出现；否则 host 端最常见的退化就是重新从 mode 条、token 条和 `pending_action` 文案拼当前真相。
 - `07 / 01 / navigation/03 / navigation/41` 现已继续把高阶综合层往上压一层：
   - `07` 现在更明确把 Prompt、治理、当前真相与演化继续收成六个运行时平面与四个跨平面函数：`compile / price / externalize / evict`。
   - `01` 现在更明确把 `QueryEngine + transcript` 写成事件线真相，把 `state writeback / worker_status / external_metadata` 写成 host-facing current truth。

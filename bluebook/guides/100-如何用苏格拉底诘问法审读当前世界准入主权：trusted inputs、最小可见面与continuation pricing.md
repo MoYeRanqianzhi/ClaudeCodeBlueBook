@@ -1,4 +1,4 @@
-# 如何用苏格拉底诘问法审读当前世界准入主权：governance key、decision window与continuation pricing
+# 如何用苏格拉底诘问法审读当前世界准入主权：governance key、externalized truth chain、typed ask、decision window与continuation pricing
 
 这篇把 `architecture/83` 与 `philosophy/85` 压成一组失稳前审读问题。
 
@@ -34,10 +34,11 @@
 所以更高阶的审读顺序，不该从 dialog 开始，而应从：
 
 1. 谁能扩边界
-2. 哪些动作此刻配执行
-3. 哪些能力当前可见
-4. 哪些结果值得继续占据主席位
-5. 这轮继续是否仍有决策增益
+2. 宿主此刻承认哪条当前真相
+3. 哪些动作此刻配执行
+4. 哪些能力当前可见
+5. 哪些结果值得继续占据主席位
+6. 这轮继续是否仍有决策增益
 
 开始。
 
@@ -66,6 +67,12 @@
 判断标准：
 
 - 如果 ask 只是“弹个框等人点”，而不是围绕同一请求做分布式仲裁，它就还不是正式治理控制面。
+
+### 2.2.1 `Context Usage` 在我这里是 `decision window` 证据面，还是成本仪表
+
+判断标准：
+
+- 如果 `Context Usage` 只剩百分比、颜色与趋势，而不再和 `pending action / current state / continuation condition` 一起解释窗口，它就已经退回成本看板。
 
 ### 2.3 工具存在与工具当前可见，我有没有分开
 
@@ -114,6 +121,12 @@
 判断标准：
 
 - 如果 host 需要自己从事件流回放 `mode / pending action / context truth`，那 runtime 主权已经泄露到外围消费者。
+
+### 2.9.1 host 消费的是 `externalized truth chain`，还是 mode 条、token 条与文案替身
+
+判断标准：
+
+- 如果 host 主要依赖 mode 条、token 条、spinner 或 `pending_action` 文案，而不是直接消费 `sources / effective / applied / session_state_changed / worker_status / get_context_usage`，那外化真相链已经被投影层替身劫持。
 
 ## 3. 常见自欺
 
