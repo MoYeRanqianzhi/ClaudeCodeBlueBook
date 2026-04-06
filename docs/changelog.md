@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `userbook/03-参考索引/03-技能与扩展/README`、`01-内置技能索引`、`03-能力曝光、技能提醒与发现机制索引`、`04-技能发现、静态 listing 与 remote skills 索引` 与 `userbook/05-控制面深挖/14-来源信任、Trust Dialog 与 Plugin-only Policy`，把技能与扩展这一组进一步收口成“README 前门、01 库存页、03 主判断页、04 附页”的目录职责；同时把扩展面信任再压成“可见入口是发布承诺，不是运行时事实”，并明确 `plugin-only` 是 source/surface gate、`managed-only hooks` 是 hooks runtime gate
 - 继续更新 `userbook/05-控制面深挖/12-技能来源、暴露面与触发：为什么 skills 菜单不是能力全集`、`14-来源信任、Trust Dialog 与 Plugin-only Policy：扩展面为何分级信任`、`03-参考索引/03-技能与扩展/README`、`03-能力曝光、技能提醒与发现机制索引` 与 `04-技能发现、静态 listing 与 remote skills 索引`，把技能来源/触发、扩展信任和索引页统一压成两条前门公式：`source -> projection -> runtime gate -> activation` 与 `workspace trust -> source trust -> surface lock -> runtime gate`
 - 本轮根仓库 `main` 同步检查再次更新为：`main=389cd49369e3207954e8c6b5ceca7788013c4e38`、`origin/main=ec7519566b3abf2659fb3d65899dc7d2bad983da`、`main...origin/main = 49 0`；根仓仍有未解决冲突，因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
 - 继续更新 `userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断`、`13-system-init、技能提醒与 SkillTool：Claude 如何看见可用能力` 与 `15-技能发现、静态 listing 与 remote skills：为什么“relevant skills”不是技能总表`，把控制面正文第一页进一步压成最小顺序与 first reject signal：`06` 现在更明确要求先过 `same-world test -> host trust -> decision window` 再调模型和节奏；`13` 现在更明确把能力面收回 `audience -> exposure layer -> stable vs experimental -> runtime gate`；`15` 现在更明确把 `relevant skills` 收回 broad inventory / relevant subset / discover / runtime load 这条发现链
