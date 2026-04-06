@@ -66,6 +66,8 @@
   [05-控制面深挖/37-single-session、same-dir、worktree、capacity、create-session-in-dir 与 w：为什么 standalone remote-control 的 spawn topology、并发上限与前台 cwd 会话不是同一种调度.md](./05-控制面深挖/37-single-session、same-dir、worktree、capacity、create-session-in-dir%20与%20w：为什么%20standalone%20remote-control%20的%20spawn%20topology、并发上限与前台%20cwd%20会话不是同一种调度.md)
 - 分清 standalone remote-control 的 banner、状态行、QR 与 session list 为什么不是同一种显示面：
   [05-控制面深挖/38-Bridge Banner、QR、footer、session count 与 session list：为什么 standalone remote-control 的 banner、状态行与会话列表不是同一种显示面.md](./05-控制面深挖/38-Bridge%20Banner、QR、footer、session%20count%20与%20session%20list：为什么%20standalone%20remote-control%20的%20banner、状态行与会话列表不是同一种显示面.md)
+- 分清 standalone remote-control 的 `--name`、`--permission-mode`、`--sandbox` 与 title 回填为什么不是同一种继承：
+  [05-控制面深挖/39-name、permission-mode、sandbox 与 session title：为什么 standalone remote-control 的 host flags、session 默认策略与标题回填不是同一种继承.md](./05-控制面深挖/39-name、permission-mode、sandbox%20与%20session%20title：为什么%20standalone%20remote-control%20的%20host%20flags、session%20默认策略与标题回填不是同一种继承.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：
@@ -209,5 +211,6 @@
 - bridge 的 build 不可用、资格不可用与权限噪音边界
 - standalone remote-control 的 spawn topology、capacity 与目录分配边界
 - standalone remote-control 的 banner、状态行、QR 与会话列表边界
+- standalone remote-control 的 host flags、session 默认策略与 title 回填边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
