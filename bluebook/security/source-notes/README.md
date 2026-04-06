@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 87 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 94 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -106,6 +106,13 @@
 85. [85-refreshActivePlugins、reload-plugins与refreshPluginState的强请求清理重新激活治理边界](85-refreshActivePlugins、reload-plugins与refreshPluginState的强请求清理重新激活治理边界.md)
 86. [86-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的强请求清理就绪治理边界](86-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的强请求清理就绪治理边界.md)
 87. [87-useManageMCPConnections、toolExecution与print的强请求清理连续性治理边界](87-useManageMCPConnections、toolExecution与print的强请求清理连续性治理边界.md)
+88. [88-handleRemoteAuthFailure、reconnectMcpServerImpl与performMCPOAuthFlow的强请求清理恢复治理边界](88-handleRemoteAuthFailure、reconnectMcpServerImpl与performMCPOAuthFlow的强请求清理恢复治理边界.md)
+89. [89-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的强请求清理重新并入治理边界](89-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的强请求清理重新并入治理边界.md)
+90. [90-buildMcpServerStatuses、useMcpConnectivityStatus与MCPReconnect的强请求清理重新投影治理边界](90-buildMcpServerStatuses、useMcpConnectivityStatus与MCPReconnect的强请求清理重新投影治理边界.md)
+91. [91-McpAuthTool、MCPRemoteServerMenu与MCPReconnect的强请求清理重新担保治理边界](91-McpAuthTool、MCPRemoteServerMenu与MCPReconnect的强请求清理重新担保治理边界.md)
+92. [92-ensureConnectedClient、ReadMcpResourceTool与toolExecution的强请求清理用时重验证治理边界](92-ensureConnectedClient、ReadMcpResourceTool与toolExecution的强请求清理用时重验证治理边界.md)
+93. [93-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的强请求清理step-up重授权治理边界](93-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的强请求清理step-up重授权治理边界.md)
+94. [94-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界](94-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界.md)
 
 ## 和其他目录的分工
 

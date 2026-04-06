@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 220 篇速查文档。
+`appendix/` 当前包含 227 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -303,6 +303,27 @@
 - `220`
   载体家族强请求清理就绪治理与强请求清理连续性治理分层。
   入口：[220-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层速查表：continuity budget、stale retry line、pool repair与governor question](220-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层速查表：continuity budget、stale retry line、pool repair与governor question.md)。
+- `221`
+  载体家族强请求清理连续性治理与强请求清理恢复治理分层。
+  入口：[221-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层速查表：fresh proof、reconnect verdict、consumer discipline与governor question](221-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层速查表：fresh proof、reconnect verdict、consumer discipline与governor question.md)。
+- `222`
+  载体家族强请求清理恢复治理与强请求清理重新并入治理分层。
+  入口：[222-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question](222-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question.md)。
+- `223`
+  载体家族强请求清理重新并入治理与强请求清理重新投影治理分层。
+  入口：[223-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question](223-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question.md)。
+- `224`
+  载体家族强请求清理重新投影治理与强请求清理重新担保治理分层。
+  入口：[224-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层速查表：assurance ceiling、success silence、caveat budget与governor question](224-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层速查表：assurance ceiling、success silence、caveat budget与governor question.md)。
+- `225`
+  载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层。
+  入口：[225-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层速查表：fresh gate、runtime revocation、consumer proof与governor question](225-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层速查表：fresh gate、runtime revocation、consumer proof与governor question.md)。
+- `226`
+  载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层。
+  入口：[226-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gate、refresh suppression、step-up state与governor question](226-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gate、refresh suppression、step-up state与governor question.md)。
+- `227`
+  载体家族强请求清理step-up重授权治理与强请求清理续打治理分层。
+  入口：[227-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：step-up reauthorization decision、same-request continuation decision、auth success ceiling与governor question](227-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：step-up reauthorization decision、same-request continuation decision、auth success ceiling与governor question.md)。
 
 ## 怎么配合主线读
 
