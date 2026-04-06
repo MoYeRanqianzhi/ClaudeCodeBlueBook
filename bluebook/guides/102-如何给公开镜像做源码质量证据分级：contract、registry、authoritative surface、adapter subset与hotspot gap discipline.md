@@ -259,7 +259,29 @@ gap discipline 的价值不是“保守一点”，而是：
 
 - 形成一套可迁移的研究协议，去稳当地审任何公开镜像
 
-## 10. 苏格拉底式检查清单
+## 10. 危险改动面 Atlas
+
+当你已经完成 `contract -> registry -> authoritative surface -> adapter subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面点名出来。
+
+更稳的 atlas 至少应包含下面几类面：
+
+| 危险改动面 | 为什么危险 | 最小可见证据 | 最常见误判 |
+|---|---|---|---|
+| `QueryGuard / query lifecycle` | stale finally 最容易在这里重新获得清理权 | generation / forceEnd / running-dispatching boundary | 把它当普通并发细节 |
+| `messages normalization / tool pairing` | display truth、protocol truth 与 continuation truth 最容易在这里分裂 | normalize / pair / boundary-after-compact | 把它当格式整理 |
+| `session ingress / append chain` | 旧 head 假设最容易在这里重写当前真相 | `Last-Uuid` / `409 adopt` / retry ordering | 把它当远端同步噪声 |
+| `bridge pointer / resume path` | recovery asset 最容易在这里篡位 present state | pointer TTL / freshest worktree / generation gate | 把它当体验性断点续连 |
+| `host-facing state writeback` | event stream 最容易在这里冒充 current truth | single choke point / metadata clear / worker status upload | 把它当 UI 同步层 |
+| `fresh-read file write path` | stale snapshot 最容易在这里重写 fresh filesystem state | read-before-write / staleness check / timestamp refresh | 把它当普通文件写入 |
+
+这张 atlas 的作用不是再给目录贴标签，而是强迫 later maintainer 先回答：
+
+1. 这里在保护哪一条不变量。
+2. 这里最常复活的是哪类旧对象。
+3. 改这里时至少要回放哪一种 drift。
+4. 这里失败后，系统会重新退回哪一种第二真相。
+
+## 11. 苏格拉底式检查清单
 
 在你准备写下“这个仓库源码质量很高”前，先问自己：
 
@@ -270,6 +292,6 @@ gap discipline 的价值不是“保守一点”，而是：
 5. 我写下的哪一句判断，是被可见证据支撑的；哪一句只是脑补。
 6. 如果作者今天不解释，我的结论还能不能成立。
 
-## 11. 一句话总结
+## 12. 一句话总结
 
 公开镜像里的源码质量，不该靠目录树和大文件体感判断；更稳的顺序是 `contract -> registry -> authoritative surface -> adapter subset -> hotspot kernel -> mirror gap discipline`，并且同时审 `dependency honesty` 与 `temporal honesty`。

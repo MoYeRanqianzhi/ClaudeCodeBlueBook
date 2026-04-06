@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮结构 atlas 动作: 已继续更新 `guides/102` 与 `playbooks/79`，把源码质量研究从“六级证据分层”继续推进到 `危险改动面 atlas + verdict matrix` 两层：前者点名 `QueryGuard / messages normalization / session ingress / bridge pointer / host-facing state writeback / fresh-read file write` 这些危险面，后者把结构 drift 压成 `reject / cleanup-before-resume / degrade / halt / human-fallback`。
+- 本轮 `06` doctrine 化动作: 已继续更新 `06-第一性原理与苏格拉底反思` 的 `6.6-6.21`，把整组 `我们是否仍...` 过渡标题继续收回为更稳定的 doctrine 主语，并把 `request object / role contract / cache boundary / handoff truth` 进一步收口成 `request-surface constitution / cognitive contract / byte boundary / continuation truth`。
+- 本轮并行 Agent 经验: 本轮再次并行派发 Prompt / 治理 / 结构三条侧线；结构侧线再次被 `429` 限流打断，Prompt / 治理建议已吸收。后续并行仍值得保留，但结构线仍需默认准备本地兜底，不应阻塞当前批次提交。
 - 本轮 Prompt 宪法化动作: 已继续更新 `09`、`navigation/03` 与 `guides/99`，把 Prompt 线更明确收成 `Request Surface Constitution`，并把 system sections、tool descriptions、agent prompts、attachment deltas 与 continuation contract 的关系继续压成可定义、可检索、可审读的三层分工。
 - 本轮治理矩阵化动作: 已继续更新 `guides/28`、`guides/100` 与 `playbooks/78`，把统一定价治理从“抽象价格秩序”继续推进到 `默认失败语义 / threshold trigger / escalation target / headless divergence / durable assets / transient authority` 这类可执行矩阵。
 - 本轮目录结构判断加固: 已继续更新 `bluebook/README` 与 `navigation/04`，把目录职责进一步收口成证据梯度：`bluebook/00-09 -> philosophy -> architecture -> api -> guides -> playbooks -> casebooks -> navigation -> docs`；当前最值钱的目录优化不是再缩短入口，而是让“判断、对象、合同、模板、verdict、distortion、memory”不再混层。

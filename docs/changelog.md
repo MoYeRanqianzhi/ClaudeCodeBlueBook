@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `06`、`guides/102` 与 `playbooks/79`，把 `request object / role contract / cache boundary / handoff truth` 这组过渡词继续收回到更硬的 doctrine 对象，把公开镜像研究继续落成 `危险改动面 atlas`，并把结构线 drift 继续落成 `reject / cleanup-before-resume / degrade / halt / human-fallback` 的回归矩阵
 - 继续更新 `09`、`navigation/03`、`guides/99`、`guides/28`、`guides/100`、`playbooks/78`、`bluebook/README` 与 `navigation/04`，把 Prompt 线进一步收成 `Request Surface Constitution`，把治理线进一步落成 `失败语义 / 升级阈值 / durable-transient cleanup` 矩阵，并把蓝皮书目录结构继续收口成更明确的证据梯度分工
 - 继续更新 `philosophy/84 / 85 / 86 / 87` 与 `navigation/07 / 15 / 41 / 46`，把 Prompt 魔力、安全与省 token 同构、当前真相保护、合法复杂度中心与宿主迁移顺序进一步压回第一性原理、反证式苏格拉底追问与更硬的源码证据，并把蓝皮书目录结构继续收口成 `philosophy / architecture / api / guides / playbooks / casebooks / navigation / docs` 各守一种证据职责的稳定分工
 - 继续更新 `guides/README`、`philosophy/README`、`playbooks/README` 与 `casebooks/README`，把四页进一步压成 Prompt / 治理 / 当前真相三线对称的判断式入口，并把 `playbooks` 收成可准入 / 可收口 / 已闭环的判决状态，把 `casebooks` 收成请求装配伪装 / 准入主权篡位 / 当前真相面篡位三类失真状态

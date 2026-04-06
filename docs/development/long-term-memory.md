@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `06 / guides/102 / playbooks/79` 现已继续把结构线从解释推进到 atlas 与 verdict：
+  - `06` 现在更明确用 `request-surface constitution / cognitive contract / byte boundary / continuation truth` 这组更硬对象替代过渡词，并把 `6.6-6.21` 的自指反思标题继续收回到 doctrine 主语。
+  - `guides/102` 现在更明确承担结构线的 `危险改动面 atlas`，把 `QueryGuard / messages normalization / session ingress / bridge pointer / host-facing state writeback / fresh-read file write` 这些危险面显式点名。
+  - `playbooks/79` 现在更明确承担结构 drift 的执行型 verdict，把 `multi_writer_truth_detected / recovery_asset_usurped_authority / stale_worldview_unchecked / ghost_capability_not_evicted` 等情况分别映射到 `reject / cleanup-before-resume / degrade / halt / human-fallback`。
+- 新的长期结论：
+  - 结构线真正成熟时，不能只停在 `one writable present` 的原则句；它最终必须交出两样东西：一张 later maintainer 可用的危险改动面 atlas，以及一张可执行的 drift verdict 矩阵。
+  - `06` 这类总论页真正成熟时，不应继续保留“我们是否仍...”这种作者自查式可见主语；更稳的做法是把自反问题继续收回成可迁移的 doctrine 命名，再把具体判据下沉到 guides/playbooks。
 - `09 / navigation/03 / guides/99` 现已继续把 Prompt 线收成 `Request Surface Constitution`：
   - `09` 现在更明确把第一张图的最短制度名写成 `Request Surface Constitution`，用于指代 system sections、tool descriptions、agent prompts、attachment deltas 与 continuation contract 共同构成的 request-facing 宪法层。
   - `navigation/03` 现在把它固定成 Prompt 深线的检索短名；`guides/99` 现在把它继续压成可审读对象，而不是只停在 Prompt 文案与 lineage/section/boundary 的散点问题。
