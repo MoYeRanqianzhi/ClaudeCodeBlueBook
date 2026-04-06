@@ -1,4 +1,4 @@
-# Prompt宿主修复稳态纠偏再纠偏协议：compiled request truth restitution、protocol transcript repair、lawful forgetting reseal、continuation requalification rebinding与threshold liability reinstatement
+# Prompt宿主修复稳态纠偏再纠偏协议：message lineage restitution、protocol transcript repair、lawful forgetting reseal、continuation qualification rebinding与threshold liability reinstatement
 
 这一章回答五个问题：
 
@@ -35,11 +35,11 @@ Claude Code 当前并没有公开一份名为：
 但 Prompt 宿主修复稳态再纠偏实际上已经能围绕八类正式对象稳定成立：
 
 1. `steady_recorrection_object`
-2. `compiled_request_truth_restitution`
+2. `message_lineage_restitution`
 3. `protocol_transcript_repair`
 4. `stable_prefix_reseal`
 5. `lawful_forgetting_reseal`
-6. `continuation_requalification_rebinding`
+6. `continuation_qualification_rebinding`
 7. `threshold_liability_reinstatement`
 8. `recorrection_verdict`
 

@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `api/75 / 76` 与 `playbooks/27 / 28` 的可见标题和开头主语，把 Prompt / 治理 / 结构的协议与验证页从 `compiled request truth restitution / authority source restitution / authority source / recovery asset` 这些旧可见根词收回到 `message lineage restitution / governance key restitution / governance key / authority object / recovery asset non-sovereignty`
 - 继续更新 `api/54 / 56` 与 `security/README`、`risk/README`，把 Prompt / 结构宿主验收协议页和安全 / 风控入口标签从 `compiled request truth / authority state / authority source` 的旧 contract 词收回到 `message lineage / projection consumer / continuation qualification` 与 `authority object / per-host authority width / freshness gate / anti-zombie evidence`、`governance key` 的当前对象链
 - 继续更新 `guides/58` 与 `playbooks/33`，把治理宿主迁移纠偏与迁移演练尾部从 `authority source / permission ledger / continuation gate / rollback object` 的旧迁移主语收回到 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`
 - 继续更新 `navigation/README`、`playbooks/README` 与 `guides/README`，把目录入口层继续收口：结构线显式拆成 `legacy intake / acceptance`、`current repair / refinement`、`current validation` 三档，并把 `guides/57-59` 从“旧桥接页”入口里正式移出

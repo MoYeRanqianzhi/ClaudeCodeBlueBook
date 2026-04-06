@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/75 / 76 / playbooks/27 / 28` 现已把一批高价值可见标题债统一收口：
+  - `75` 现已把 Prompt 深协议可见主语从 `compiled request truth restitution` 收回到 `message lineage restitution`。
+  - `76` 现已把治理深协议可见主语从 `authority source restitution` 收回到 `governance key restitution`。
+  - `27` 现已把治理验证可见主语从 `authority source / continuation gate / rollback object` 收回到 `governance key / typed ask / continuation pricing / rollback cleanup`。
+  - `28` 现已把结构验证可见主语从 `authority / recovery asset` 收回到 `authority object / recovery asset non-sovereignty`。
+- 新的长期结论：
+  - 标题层真正成熟时，最重要的不是更短，而是它是否继续把 later maintainer 先带到当前对象链上；如果 H1 仍在发旧主语，正文已经换代也会被抵消。
+  - 当前标题债已经开始从 README / 导航层转移到深协议页和少数验证手册；后续若继续深挖，优先级仍高于再扩大量正文。
 - `api/54 / 56` 现已把 Prompt / 结构宿主验收协议统一到当前对象链：
   - `54` 现已把 Prompt 验收协议固定到 `message lineage -> projection consumer -> section registry + stable prefix boundary -> protocol transcript -> continuation object -> continuation qualification`。
   - `56` 现已把结构验收协议固定到 `authority object -> per-host authority width -> writeback path -> freshness gate -> anti-zombie evidence -> reopen boundary`，并把 `resume order` 降为 re-entry proof。
