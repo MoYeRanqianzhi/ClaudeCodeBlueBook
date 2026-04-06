@@ -6,6 +6,11 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮主分支同步检查: 根仓库当前干净，`main` 与 `origin/main` 同在 `d4ea1ea22471794d0a80ae314b2fc67455433c86`；`git pull --ff-only` 已正常返回 `Already up to date.`。
+- 本轮审读页 doctrine 化动作: 已继续更新 `guides/99 / 100 / 101` 的开头、`失稳时的回修顺序` 与后半段栏目名，把 `builder-facing / 审读记录卡 / 检查清单` 收回到更硬的 `失稳前审读问题 / 最小判据 / 否证问句` 语气。
+- 本轮局部对象链加固: 已继续把 `guides/100` 正文中的 `authority source` 收回到 `governance key`，把 host 消费面写成 `governance truth/status`，并把 `guides/101` 的 H1 收回到 `current-truth surface`，避免审读页 visible root 继续落后于当前对象链。
+- 本轮 `06` 后半段推进动作: 已继续更新 `6.22-6.35`，把“我们是否仍...”这组自指标题改写成更一般化的高频失真命名，同时把其中的治理段从旧 `authority object / deny-ask-bypass` 语言收回到 `governance pricing chain` 与投影替身语言。
+- 本轮分批策略判断: `06` 的第 `6` 节从 `6.36` 往后仍残留大量“蓝皮书会继续低估 / 会误写成”的自指句型；适合继续按主题分段清理，而不是一次性整章重写。
 - 本轮 doctrine 小标题收口动作: 已继续更新 `06` 的 `2.13 / 6.61-6.63` 与 `guides/99 / 100 / 101` 的后半段小标题，把 `审读记录卡 / 检查清单 / 渐进改写顺序 / 同题坏解` 这类仍偏 worksheet 或路线提示的标题收回到 `对称判断 / 最小判据 / 否证问句 / 失真命名` 这类更硬的 doctrine 语言。
 - 本轮 Prompt / 治理 / 结构深化结论: Prompt 线更明确回到了“对称判断”和 `message lineage` 的持续诚实；治理线更明确把 host 消费面写成 `governance truth/status`；结构线更明确把 one writable present 的审读页小标题收回到 present-truth doctrine，而不是 worksheet 栏目。
 - 本轮后续目标澄清: `06` 的第 `6` 节从 `6.36` 往后仍有大量“蓝皮书会继续低估 / 会误写成”自指句型；当前适合继续按主题分段清理，而不是一次性整章重写。
