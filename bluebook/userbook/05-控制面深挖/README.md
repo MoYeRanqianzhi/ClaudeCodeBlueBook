@@ -76,7 +76,7 @@
 - [66-stream_event、task_started、status、remote pill 与 BriefIdleStatus：为什么同一 remote session 事件不会以同样厚度出现在每个消费者里.md](./66-stream_event、task_started、status、remote%20pill%20与%20BriefIdleStatus：为什么同一%20remote%20session%20事件不会以同样厚度出现在每个消费者里.md)
 - [67-slash_commands、stream_event、task_started 与 status_compacting：为什么 remote session 的命令集、流式正文、后台计数与 timeout 策略不是同一种消费者.md](./67-slash_commands、stream_event、task_started%20与%20status_compacting：为什么%20remote%20session%20的命令集、流式正文、后台计数与%20timeout%20策略不是同一种消费者.md)
 
-68-83 建议连续阅读：
+68-84 建议连续阅读：
 
 - 68-71 先拆 remote session 的命令面、候选面、入口面与本地变薄逻辑。
 - 72-75 再拆 tool plane、approval shell、authority return path 与 bridge relay 的拓扑差异。
@@ -88,6 +88,7 @@
 - 81 再把 shutdown 单独拆出 approval family，说明 `terminate`、`shutdown_*` 与 `kill` 落在 termination lifecycle，而不是 continuation protocol。
 - 82 再往显示层推进，拆 `shutdown_request`、`shutdown_rejected`、`shutdown_approved`、`teammate_terminated` 与 `stopping` 为什么会投影到不同可见面。
 - 83 再往 routing 层推进，拆 `shutdown_request`、`shutdown_approved`、`shutdown_rejected` 与 `teammate_terminated` 为什么会分流到 structured handler、本地 pending/processed 与 regular message 三种路径。
+- 84 再往宿主层推进，比较 `useInboxPoller`、`attachments.ts` 与 `print.ts` 为什么共享 shutdown cleanup contract，却不共享同一条收口宿主路径。
 
 - [68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx fallthrough 与 remote send：为什么 remote session 的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md](./68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx%20fallthrough%20与%20remote%20send：为什么%20remote%20session%20的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md)
 - [69-hasCommand、isHidden、isCommandEnabled、local-jsx 与 remote send：为什么 remote mode 里的 slash 高亮、候选补全、启用态与实际执行去向不是同一个判定器.md](./69-hasCommand、isHidden、isCommandEnabled、local-jsx%20与%20remote%20send：为什么%20remote%20mode%20里的%20slash%20高亮、候选补全、启用态与实际执行去向不是同一个判定器.md)
@@ -105,4 +106,5 @@
 - [81-shutdown_request、shutdown_approved、shutdown_rejected、terminate 与 kill：为什么 swarms 的 shutdown mailbox 消息属于 lifecycle termination family.md](./81-shutdown_request、shutdown_approved、shutdown_rejected、terminate%20与%20kill：为什么%20swarms%20的%20shutdown%20mailbox%20消息属于%20lifecycle%20termination%20family.md)
 - [82-shutdown_request、shutdown_approved、shutdown_rejected、teammate_terminated 与 stopping：为什么 shutdown 生命周期不会完整落在同一可见消息面.md](./82-shutdown_request、shutdown_approved、shutdown_rejected、teammate_terminated%20与%20stopping：为什么%20shutdown%20生命周期不会完整落在同一可见消息面.md)
 - [83-shutdown_request、shutdown_approved、shutdown_rejected、teammate_terminated、pending 与 processed：为什么 shutdown 生命周期不会走同一条 mailbox routing 通道.md](./83-shutdown_request、shutdown_approved、shutdown_rejected、teammate_terminated、pending%20与%20processed：为什么%20shutdown%20生命周期不会走同一条%20mailbox%20routing%20通道.md)
+- [84-useInboxPoller、attachments、print、shutdown_approved、teammate_terminated 与 pending-processing：为什么 interactive、attachment bridge 与 headless print 不共享同一条 shutdown 收口宿主路径.md](./84-useInboxPoller、attachments、print、shutdown_approved、teammate_terminated%20与%20pending-processing：为什么%20interactive%E3%80%81attachment%20bridge%20与%20headless%20print%20不共享同一条%20shutdown%20收口宿主路径.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

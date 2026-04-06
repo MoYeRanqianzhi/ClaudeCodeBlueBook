@@ -72,3 +72,4 @@
 - [70-Shutdown mailbox lifecycle termination family 索引.md](./70-Shutdown%20mailbox%20lifecycle%20termination%20family%20索引.md)
 - [71-Shutdown lifecycle visible surface split 索引.md](./71-Shutdown%20lifecycle%20visible%20surface%20split%20索引.md)
 - [72-Shutdown mailbox routing split 索引.md](./72-Shutdown%20mailbox%20routing%20split%20索引.md)
+- [73-Shutdown host-path convergence and divergence 索引.md](./73-Shutdown%20host-path%20convergence%20and%20divergence%20索引.md)
