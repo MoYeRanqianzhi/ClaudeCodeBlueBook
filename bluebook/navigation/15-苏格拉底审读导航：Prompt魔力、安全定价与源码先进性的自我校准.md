@@ -26,6 +26,7 @@
 而是：
 
 - 如何确认 `message lineage`、`section registry / dynamic boundary`、`protocol transcript`、`continuation qualification` 与接手连续性都还成立
+- 第一条反证信号常常不是回答变差，而是 `systemPrompt` 截图、最后一条消息或 UI transcript 又开始篡位成 Prompt 主语
 
 ## 2. 统一治理定价的苏格拉底审读
 
@@ -49,6 +50,7 @@
 而是：
 
 - 如何确认 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-vs-transient cleanup` 仍是一条未失真的收费链
+- 第一条反证信号常常不是 token 升高，而是 mode 面板、审批弹窗、usage 条又开始被当成治理真相
 
 ## 3. 当前真相保护的苏格拉底审读
 
@@ -74,6 +76,7 @@
 而是：
 
 - 结构里是否已经提前编码了 `current-truth surface / recovery asset non-sovereignty / freshness gate / ghost capability` 这条 present-truth 纪律，以及证据梯度、批评路径、修改路径与退出路径
+- 第一条反证信号常常不是 bug 变多，而是 replay、pointer、snapshot 或作者说明又开始篡位成 `current-truth surface`
 
 ## 4. 三条线共同的先验反证
 
@@ -85,11 +88,19 @@
 
 只有这三问还能成立，后面的分析才不是新一层口号。
 
-## 5. 一刀区分
+## 5. 目录结构的苏格拉底审读
+
+在你准备继续优化蓝皮书目录前，先问自己：
+
+1. 哪一层负责不可约判断，哪一层只负责对象、template、verdict、反例与记忆。
+2. 我是不是又让 README 同时承担 inventory、哲学摘要、执行路由与研究记忆。
+3. `05 / 15 / 41` 是否仍只承担模仿对象校正、失稳前追问与第一性原理收束，而没有重新退回编号路线图。
+
+## 6. 一刀区分
 
 `14` 回答“出问题后怎样从现场观察回到制度根因”；`15` 回答“在再次出问题前，怎样反问自己的制度是否已埋下断裂点”。
 
-## 6. 苏格拉底式自检
+## 7. 苏格拉底式自检
 
 在你准备继续新增一篇“为什么它很强”的分析前，先问自己：
 

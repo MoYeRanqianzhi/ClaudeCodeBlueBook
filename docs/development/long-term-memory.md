@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README / 06 / navigation/05 / navigation/15 / navigation/41` 现已继续把高阶目录结构与第一性原理分工写硬：
+  - `bluebook/README` 现在更明确把 `navigation/05 / 15 / 41` 固定成高阶 judgment map 的三种职责，并补出 Prompt / 治理 / 当前真相三条深剖稳定入口。
+  - `06` 现在更明确把目录结构优化写成 `compile / price / externalize / evict` 四个跨平面函数在不同证据层上的责任分工，并把“目录前门是否仍说对主语”前置成顶层自校问题。
+  - `navigation/05` 现在更明确把目录优化本身也纳入“抄错对象”的坏解，并把三条母线继续写成 `philosophy / architecture / api / guides / playbooks / casebooks / docs` 的责任分层。
+  - `navigation/15` 现在更明确把三条母线各自的第一条反证信号写硬，并补出“目录结构的苏格拉底审读”。
+  - `navigation/41` 现在更明确要求 later maintainer 即使只看目录前门，也要先用对 `request assembly / governance pricing / current-truth protection` 这三组主语。
+- 新的长期结论：
+  - 目录结构真正成熟时，最值钱的优化不是新增更多入口，而是让 `09 / 05 / 15 / 41` 长期保持“宪法总图 / 模仿对象校正 / 失稳前追问 / 第一性原理收束”的稳定分工；一旦这四页重新变成四份不同角度的 route map，高阶层就会再次失去证据梯度。
+  - Prompt 魔力继续往下压时，最稳的高阶公式不是“Prompt 很强”，而是 `compile -> protocolize -> preserve -> continue -> explain`：世界先被编译，协议真相先被转写，稳定前缀与合法遗忘先被保住，继续资格才被承认，最后失稳原因仍可被解释。
+  - 第一性原理页、目录前门和高阶导航页必须长期共用同一组主语；否则即使深页已经换代，later maintainer 也会在进入正文前先被入口层的旧 route words 重新定向。
 - `navigation/47 / 48 / 50 / 51` 现已继续把宿主迁移与验收中间导航层的 visible noun 收口：
   - `47` 现在更明确把宿主迁移演练线前置为 `request compiler / externalized truth chain / current-truth writeback`，不再让 `compiled request truth / governance control plane object / 结构真相面` 继续冒充迁移演练的第一跳主语。
   - `48` 现在更明确把宿主迁移失真线前置为 `request compiler / externalized truth chain / current-truth writeback` 的伪交接、假灰度与伪回退，并把结构失真更准确收回到 `current-truth surface / current-truth writeback` 的失败信号。

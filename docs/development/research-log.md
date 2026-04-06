@@ -6,6 +6,11 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮主分支预检阻塞: 根仓库 `main=8bf0c2f534f8c6a96ea81439488048d251e836cc`，`origin/main=526ff66fc5de711f346599f2075c96b19347c808`；`git fetch origin main` 正常，但 `git pull --ff-only origin main` 继续被根仓库未解决冲突拦住，本轮可见 unmerged 文件为 `bluebook/security/README.md`。按隔离要求，本轮不处理根仓库冲突，只在 `.worktrees/mainloop` 内形成闭环。
+- 本轮高阶目录/第一性原理收口动作: 已继续更新 `bluebook/README`、`06`、`navigation/05`、`navigation/15` 与 `navigation/41`，把目录结构进一步写成 `09 / 05 / 15 / 41` 四段高阶分工：`09` 负责宪法总图，`05` 负责校正模仿对象，`15` 负责失稳前追问，`41` 负责第一性原理收束；同时把各目录 README 重新钉回证据梯度分流，而不是继续摊平成 route map。
+- 本轮 Prompt 侧线回灌动作: 已吸收一条并行 Agent 的有效结论，把 Prompt 魔力进一步压成 `compile -> protocolize -> preserve -> continue -> explain` 五动作链：世界先被编译，协议真相先被转写，稳定前缀与合法遗忘先被保住，继续资格才被承认，最后失稳原因仍可被解释；这一结论已回写到 `navigation/05` 与 `navigation/41`。
+- 本轮失稳前反证信号动作: 已继续更新 `navigation/15`，把三条母线各自的“第一条反证信号”显式前置：Prompt 线防 `systemPrompt`/UI transcript 篡位，治理线防 mode/弹窗/usage 条篡位，结构线防 replay/pointer/snapshot 篡位 current truth。
+- 本轮并行 Agent 策略: 已再次复用现有子代理并行派发 Prompt / 治理 / 源码质量三条只读侧线；其中 Prompt 侧线返回了可用摘要，治理与源码质量侧线在本批次窗口内未给出可吸收正文的有效内容，主线继续坚持“不让侧线阻塞当前批次提交”。
 - 本轮主分支预检阻塞: 根仓库 `main=0c735c877b1337da15d310af005f729e263d4bc6`，`origin/main=526ff66fc5de711f346599f2075c96b19347c808`；但根仓库当前存在未解决冲突，`bluebook/security/README.md` 与 `docs/development/research-log.md` 处于 unmerged 状态，因此 `git pull --ff-only origin main` 连续重试仍被 Git 拒绝。本轮按隔离要求不处理根仓库冲突，只在 `.worktrees/mainloop` 内继续形成闭环。
 - 本轮宿主迁移/验收导航收口动作: 已继续更新 `navigation/47 / 48 / 50 / 51`，把宿主迁移演练、失真、验收协议与验收执行这一组中间导航层 visible noun 收回到 `request compiler / externalized truth chain / current-truth writeback / current-truth surface`，并把自检段升级为第一性原理式对象追问，避免读者在进入 `playbooks / casebooks / api` 深页前先被 `compiled request truth / authority object` 这类旧 route words 带偏。
 - 本轮方法/迁移前门收口动作: 已继续更新 `navigation/07`、`navigation/46`、`navigation/README` 与 `api/README`，把方法导航、迁移工单导航与 API 目录前门进一步收回到 `request compiler / externalized truth chain / current-truth writeback / current-truth surface / consumer subset` 这组当前主语，并让 API 前门更明确给出 `49 -> 54` 与 `28 -> 32 -> 52` 两条宿主消费入口。

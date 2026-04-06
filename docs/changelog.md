@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新 `bluebook/README`、`06`、`navigation/05`、`navigation/15` 与 `navigation/41`，把蓝皮书目录结构进一步压成“`09 / 05 / 15 / 41` 四段高阶分工 + 各目录 README 证据层分流”，并把 Prompt 魔力继续压成 `compile -> protocolize -> preserve -> continue -> explain` 五动作链，明确目录结构优化不是补更多 route map，而是让第一性原理、失稳前审读与目录前门长期共用同一组主语
+- 本轮再次重试根仓库 `main` 同步；结果更新为 `main=8bf0c2f534f8c6a96ea81439488048d251e836cc`、`origin/main=526ff66fc5de711f346599f2075c96b19347c808`，但 `git pull --ff-only origin main` 仍被根仓库未解冲突阻塞，当前可见 unmerged 文件为 `bluebook/security/README.md`；因此本批次继续只在 `.worktrees/mainloop` 内推进并提交
 - 继续更新 `navigation/47`、`navigation/48`、`navigation/50` 与 `navigation/51`，把宿主迁移演练、失真、验收协议与验收执行这一组中间导航层的 visible noun 收回到 `request compiler / externalized truth chain / current-truth writeback / current-truth surface`，并把自检段升级为第一性原理式对象追问，避免读者在进入 `playbooks / casebooks / api` 前先被 `compiled request truth / authority object` 这类旧 route words 带偏
 - 本轮继续前重试根仓库 `main` 同步；结果确认根仓库当前有未解决冲突，`git pull --ff-only origin main` 被 `bluebook/security/README.md` 与 `docs/development/research-log.md` 的未合并状态阻塞，因此本批次继续严格只在 `.worktrees/mainloop` 内推进并落地提交，不触碰根仓库冲突
 - 继续更新 `navigation/07`、`navigation/46`、`navigation/README` 与 `api/README`，把方法/迁移/API 前门里的旧 route words 继续收回到 `request compiler / current-truth writeback / externalized truth chain / current-truth surface / consumer subset`，并把 API 目录层更明确分流到 `49 -> 54` 与 `28 -> 32 -> 52` 这两条 Prompt / 治理宿主消费入口

@@ -12,6 +12,8 @@
   专题入口、编号段职责与稳定跳转。
 - [navigation/README.md](navigation/README.md)
   judgment map 与跨目录反查。
+- `navigation/05 / 15 / 41`
+  高阶 judgment map：分别负责校正模仿对象、失稳前审读与第一性原理收束，不重新摊平成编号路线图。
 - [userbook/README.md](userbook/README.md)
   面向使用者的稳定入口，不替代蓝皮书主线。
 - [../docs/README.md](../docs/README.md)
@@ -25,6 +27,15 @@
   判断归 `philosophy/`，对象归 `architecture/`，合同归 `api/`，模板归 `guides/`，verdict 归 `playbooks/`，反例归 `casebooks/`。
 - 第三步最后才决定要不要跨目录。
   只有当问题已经变成“下一层证据去哪里找”时，才进入 `navigation/`。
+
+## 三条深剖稳定入口
+
+- 想继续剖 Prompt 为什么会显得有魔力
+  先走 `09 -> navigation/05 -> navigation/15 -> philosophy/84 -> architecture/82 -> guides/99 -> playbooks/77`，先校正模仿对象，再追第一条反证信号，最后才去看长期验证与回归。
+- 想继续剖安全设计与省 token 为什么其实是同一条治理链
+  先走 `09 -> navigation/05 -> navigation/15 -> philosophy/85 -> architecture/83 -> guides/100 -> playbooks/78`，先确认 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 没有在入口层被写浅。
+- 想继续剖源码先进性为什么不是目录更漂亮
+  先走 `09 -> navigation/05 -> navigation/15 -> philosophy/76 / 86 / 87 -> architecture/84 -> guides/101 / 102 -> playbooks/79`，先把“当前真相保护”守住，再去谈热点文件、依赖图与 mirror gap。
 
 ## 按问题进入
 
@@ -41,7 +52,8 @@
 - 想跨目录反查
   去 [navigation/README.md](navigation/README.md)。
 - 想继续写、改或审蓝皮书
-  先读 `06 -> 09 -> navigation/05`，先把对象链、同题坏解与改写顺序校正，再回具体目录。
+  先读 `06 -> 09 -> navigation/05 -> navigation/15 -> navigation/41`。
+  `05` 先校正模仿对象，`15` 先暴露失稳前追问，`41` 最后把结论压回第一性原理；做完这三步，再回具体目录。
 
 ## 证据梯度
 
@@ -67,3 +79,4 @@
   长时记忆、研究过程与变更记录。
 
 如果一页同时在做判断、矩阵、verdict、样本和记忆，目录结构就会重新退回临时拼盘。
+更值钱的目录优化也不是新增更多快捷入口，而是让 `09 / 05 / 15 / 41` 与各目录 `README` 长期保持分工：主线宪法、模仿对象校正、失稳前审读、第一性原理收束、证据层分流。
