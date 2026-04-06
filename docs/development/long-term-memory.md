@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `navigation/05`、`philosophy/33`、`84`、`85` 与 `87` 现已把这轮专题深化进一步压成更稳定的长期 doctrine：
+  - Prompt 线现在应长期记住：`lawful forgetting` 保护的不是摘要密度，而是 compact 前后 `world-entry / reject-continue verdict` 不改判；它真正保留的是最小 `verdict witness set`。后续凡是把 lawful forgetting 写成“总结得更好”，都可直接按写浅 reject。
+  - Prompt 线的 `first reject path` 现在更明确固定为：`world-defining winner` 不清 -> stable boundary 污染 -> `transcript conflation` -> `continuation_story_only`。后续若在 Prompt 审读页继续发明别的前置顺序，应优先先问是不是把对象层信号写成了展示层症状。
+  - `Explainability` 现在应长期记住：`diagnostic, not adjudicative`。它可以命名 `winner / boundary / qualification` 断在何处，但不能反向改写世界准入判决。
+  - 治理线现在应长期记住：`visible world admission` 常常比动作执行更早进入价格链；`classifier` 也只有在还能改变 `verdict` 时才值得调用。后续凡是把治理写成 modal 或把 classifier 写成免费保险，都可直接按 `projection usurpation / self-priced-control relapse` 拒收。
+  - 结构线现在应长期记住：future maintainer 的最低门槛不是“看懂作者意图”，而是拿不到作者时仍能只凭结构指出哪条 `event / snapshot / transport` 越权成了 authority，并立即说出第一退回层。
+- `philosophy/61`、`85`、`87` 与 `navigation/05` 现已把这轮深化进一步压成更明确的权限表：
+  - 治理线现在应长期记住：`governance key` 不只是第一道检查，而是下游收费权的主权对象；`verdict seams` 则是 `typed ask` 真正值钱的地方。后续凡是把治理继续写成 modal / modal race / UI 交互，而不写谁能出 verdict、谁能接管、谁能撤销、谁负责 rollback，都可直接按写浅 reject。
+  - classifier 的长期判断也更明确了：它不是免费安全层，而是只有在还能改变 `verdict` 时才值得调用的仲裁器；危险 allow rule 已让它失去仲裁空间或 working set 已让结论稳定时，再继续调用 classifier，都属于 `self-priced-control relapse`。
+  - 结构线现在应长期记住两条新增纪律：第一，只有同时仲裁 `dependency / temporal / failure / current-truth writeback` 多轴不变量的热点，才配叫合法复杂度中心；第二，truth-plane 冲突时的复核顺序固定为 `display -> current -> event`，前者只负责触发怀疑，第二层才有 present verdict，第三层只补证不改判。
+  - 目录结构现在也更明确可被长期复用成一张“发言权限表”：`philosophy` 判必要性，`architecture` 证对象链，`api` 定承认面，`guides / playbooks` 出可执行判决，`navigation` 只路由不代言，`docs` 只存记忆不重判正文。后续任何目录如果越权代言，都可直接按“仓库长出第二叙述者”拒收。
 - `philosophy/61`、`84` 与 `87` 现已把这轮专题深化补成更完整的长期 doctrine：
   - Prompt 线现在应长期记住：合法遗忘保护的不是摘要密度，而是 `reject / continue verdict` 在 compact 前后不改判；`Explainability` 只能解释 `winner / boundary / qualification` 断在何处，不能反向改写 world-entry 判决。
   - 治理线现在应长期记住：`classifier` 不是治理控制面外的免费裁判，而是只有在还能改变 `verdict` 时才值得调用的定价节点；后续凡是写 classifier，都要先问它是否真的还在产生决策增益。

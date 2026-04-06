@@ -117,6 +117,12 @@ tool pool 顺序与过滤逻辑稳定，意味着：
 
 - Explainability 不是第二前门，而是前五层成立后的命名权
 
+更硬一点说：
+
+- `Explainability is diagnostic, not adjudicative.`
+
+它只有命名权，没有改判权；它能解释 `winner / boundary / qualification` 断在何处，但不能把已经失真的世界重新说成合法。
+
 ## 5. 这页真正要防的失真
 
 这一页最容易重新长回两种错法：
