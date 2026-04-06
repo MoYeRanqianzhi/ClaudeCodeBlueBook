@@ -1,10 +1,10 @@
-# 治理 Host Artifact Contract：对象、窗口、仲裁、失败语义与回退工件协议
+# 治理 Host Artifact Contract：governance key、truth chain、typed ask、decision window 与 cleanup carrier
 
 这一章回答五个问题：
 
 1. 治理线的宿主卡、CI 附件、评审卡与交接包，到底应该共享哪些正式字段。
 2. 哪些字段是 shared contract，哪些只是 role-specific projection，哪些仍应停留在 internal hint。
-3. 为什么治理工件必须继续围绕 current object、decision window、winner source、failure semantics 与 rollback object，而不是围绕仪表盘、阈值图与审批次数。
+3. 为什么治理工件必须继续围绕 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，而不是围绕仪表盘、阈值图与审批次数。
 4. 哪些字段最适合写成 hard contract，缺失时必须直接判定工件不合法。
 5. 宿主开发者与平台设计者该按什么顺序接入这套治理 artifact contract。
 
@@ -21,12 +21,12 @@
 
 ## 1. 先说结论
 
-治理线真正成熟的 artifact contract，不是四类角色各自看一套 dashboard，而是四类工件共享同一份 Governance object contract：
+治理线真正成熟的 artifact contract，不是四类角色各自看一套 dashboard，而是四类工件共享同一份治理对象链：
 
-1. 宿主卡回答“当前对象、当前状态、当前窗口与当前回退边界是什么”。
+1. 宿主卡回答“当前 `governance key`、当前 truth chain、当前窗口与当前 cleanup carrier 是什么”。
 2. CI 附件回答“仲裁、Context Usage、失败语义与升级条件是否仍成立”。
-3. 评审卡回答“这次判断链是否仍由同一 authority source 支撑”。
-4. handoff package 回答“后来者是否能直接继续做继续、停止、升级或回退判断”。
+3. 评审卡回答“这次判断链是否仍由同一 `governance key` 与 `externalized truth chain` 支撑”。
+4. handoff package 回答“后来者是否能直接继续做继续、停止、升级或 cleanup 判断”。
 
 四类工件的差异只应该体现在展开深度，而不应该体现在：
 
@@ -42,14 +42,16 @@
 2. `governance_object_type`
 3. `governance_object_id`
 4. `current_state`
-5. `authority_source`
-6. `observed_window`
-7. `decision_window`
-8. `control_arbitration_truth`
-9. `failure_semantics`
-10. `rollback_object`
-11. `object_upgrade_rule`
-12. `next_action`
+5. `governance_key_ref`
+6. `truth_chain_ref`
+7. `observed_window`
+8. `decision_window`
+9. `typed_ask_ref`
+10. `failure_semantics`
+11. `continuation_pricing_ref`
+12. `cleanup_carrier`
+13. `object_upgrade_rule`
+14. `next_action`
 
 ### 2.2 Role-Specific Projection
 
@@ -91,12 +93,14 @@ artifact_header:
 - governance_object_type
 - governance_object_id
 - current_state
-- authority_source
+- governance_key_ref
+- truth_chain_ref
 - observed_window
 - decision_window
-- control_arbitration_truth
+- typed_ask_ref
 - failure_semantics
-- rollback_object
+- continuation_pricing_ref
+- cleanup_carrier
 - object_upgrade_rule
 - next_action
 ```
@@ -235,4 +239,4 @@ artifact_header:
 
 ## 9. 一句话总结
 
-治理 Host Artifact Contract 真正统一的，不是四类工件的展示方式，而是它们依赖的同一条治理判断链与同一组回退、升级、仲裁字段。
+治理 Host Artifact Contract 真正统一的，不是四类工件的展示方式，而是它们依赖的同一条治理判断链与同一组 cleanup、升级、仲裁字段。

@@ -2,6 +2,9 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮根仓库同步恢复: 根仓库当前 `main=origin/main=08f421bf8a35e19d32672c604101c3a4d96986c8`，`rev-list --left-right --count main...origin/main` 返回 `0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本轮恢复到“先检查、再继续只写 worktree”的正常节奏。
+- 本轮协议/矩阵页收口动作: 已继续更新 `api/23`、`api/24`、`api/38`、`api/55`、`playbooks/16` 与 `casebooks/18`。`api/23/24` 现在更明确把 API 支持与全谱系页的首屏收回三条 canonical chain，而不再先从 `same-world test / runtime contract / truth ladder + consumer subset` 起笔；`api/38/55` 现在更明确把治理合同与验收协议收回 `governance key / externalized truth chain / typed ask / decision window / continuation pricing / durable-transient cleanup`，旧词只留在 bridge slot、verdict 或 carrier 位置；`playbooks/16` 与 `casebooks/18` 现在更明确把结构 support 页的首屏主语收回 `current-truth surface / recovery asset / hotspot kernel / mirror gap discipline`。
+- 本轮新的第一性原理结论: 当入口页、atlas、support surface 已经收口后，下一批最值钱的页面往往是“协议页、矩阵页、落地手册页、反例页”这类中层页；它们的问题通常不是缺结论，而是仍在用旧桥接词顶掉 canonical chain 的第一页读法。继续深入时，应优先清这种“中层第一页还在说旧话”的 drift。
 - 本轮 Atlas / host-consumption / userbook 收口动作: 已继续更新 `api/41`、`50`、`46`、`47`、`48`、`playbooks/30` 与 `userbook/01-主线使用/01 / 02 / 05`。这一批的共同目标不是扩新结论，而是继续清 support surface、atlas 与 user-facing bridge 页里最容易越位的 carrier、projection 与 evidence field。
 - 本轮治理 host-consumption 深化结论: `authority source`、`rollback object`、`continuation gate` 这些词在治理页里最值钱的保留方式，不是继续让它们充当前门，而是明确把它们压回 `governance key`、`durable-transient cleanup` 与 `continuation pricing verdict` 之下。只要 carrier 重新越位成根对象，later maintainer 就会再次把 mode、文件回退或继续按钮错认成治理主权。
 - 本轮 API atlas 深化结论: `authority file / danger surface / first reject path` 这套 atlas 骨架已经不够稳，因为它会把 contract、registry、运行时真相与镜像缺口重新压扁成“权威/危险”两栏；更稳的 atlas 写法必须固定为 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`，并让 `danger surface` 只降格成热点内核的风险注。

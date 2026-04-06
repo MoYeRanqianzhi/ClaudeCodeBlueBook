@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/23`、`24`、`38`、`55`、`playbooks/16` 与 `casebooks/18` 现已继续把协议页、矩阵页、落地手册页与反例页的第一页主语压回三条 canonical chain：
+  - Prompt 线现在更明确要求 support/protocol 页先从 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 起笔，再允许 `runtime contract / same-world test` 这类桥接词留在说明层。
+  - 治理线现在更明确要求 artifact contract 与 acceptance protocol 先从 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 起笔，再允许 source slot、transaction evidence、pricing verdict、cleanup carrier 这类桥接槽位出现。
+  - 源码质量线现在更明确要求结构 support / 反例页的首屏先从 `current-truth surface / recovery asset / hotspot kernel / mirror gap discipline` 进入，再允许 `authority surface / rollback boundary / danger paths` 这类旧词留在局部证据层。
+- 新的长期结论：
+  - 中层页面最容易重新制造“第一页学旧话、深层页学新话”的裂缝；比起继续扩页，更值钱的动作是持续把协议页、矩阵页、playbook 页和 casebook 页的第一页改成 canonical chain。
+  - 对 Prompt 线来说，`same-world test` 最适合作为桥接词，不适合作为协议页前门；对治理线来说，`authority source / rollback object / continuation gate` 最适合作为 slot/carry/verdict，不适合作为规则页前门；对结构线来说，`authority surface / danger paths` 最适合作为局部证据词，不适合作为手册页首屏骨架。
+  - 根仓同步已恢复正常后，研究批次应继续把“根仓已同步”与“只写 mainloop”同时写入记忆，保持每一轮文档推进都有明确的基线证据。
 - `api/41`、`50`、`46`、`47`、`48`、`playbooks/30` 与 `userbook/01-主线使用/01 / 02 / 05` 现已继续把三类高频页面收回各自正确的语言层：
   - support surface 页现在更明确只负责把 canonical chain 投影成 host-consumption fields，不再让 `authority source / rollback object / continuation gate` 这些 carrier 越位成根对象。
   - atlas 页现在更明确统一按 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 解释目录，不再让 `danger surface` 停在 atlas 主骨架上。
