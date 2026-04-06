@@ -69,4 +69,5 @@
 - [59-cc__、open、createDirectConnectSession、ws_url 与 fail-fast disconnect：为什么 direct connect 的建会话、直连 socket 与断线退出不是同一种远端附着.md](./59-cc__、open、createDirectConnectSession、ws_url%20与%20fail-fast%20disconnect：为什么%20direct%20connect%20的建会话、直连%20socket%20与断线退出不是同一种远端附着.md)
 - [60-can_use_tool、interrupt、result、disconnect 与 stderr shutdown：为什么 direct connect 的控制子集、回合结束与连接失败不是同一种收口.md](./60-can_use_tool、interrupt、result、disconnect%20与%20stderr%20shutdown：为什么%20direct%20connect%20的控制子集、回合结束与连接失败不是同一种收口.md)
 - [61-init、status、tool_result、tool_progress 与 ignored families：为什么 direct connect 的远端消息流不是原样落进 REPL transcript.md](./61-init、status、tool_result、tool_progress%20与%20ignored%20families：为什么%20direct%20connect%20的远端消息流不是原样落进%20REPL%20transcript.md)
+- [62-Connected to server、Remote session initialized、busy_waiting_idle、PermissionRequest 与 stderr disconnect：为什么 direct connect 的可见状态面不是同一张远端状态板.md](./62-Connected%20to%20server、Remote%20session%20initialized、busy_waiting_idle、PermissionRequest%20与%20stderr%20disconnect：为什么%20direct%20connect%20的可见状态面不是同一张远端状态板.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

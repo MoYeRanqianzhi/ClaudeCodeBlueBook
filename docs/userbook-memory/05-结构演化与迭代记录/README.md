@@ -63,6 +63,7 @@
 - [59-2026-04-06-direct connect session contract 拆分记忆.md](./59-2026-04-06-direct%20connect%20session%20contract%20拆分记忆.md)
 - [60-2026-04-06-direct connect control subset and shutdown 拆分记忆.md](./60-2026-04-06-direct%20connect%20control%20subset%20and%20shutdown%20拆分记忆.md)
 - [61-2026-04-06-direct connect transcript surface 拆分记忆.md](./61-2026-04-06-direct%20connect%20transcript%20surface%20拆分记忆.md)
+- [62-2026-04-06-direct connect visible status surfaces 拆分记忆.md](./62-2026-04-06-direct%20connect%20visible%20status%20surfaces%20拆分记忆.md)
 
 用途：
 
