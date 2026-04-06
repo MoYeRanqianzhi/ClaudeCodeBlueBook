@@ -75,6 +75,12 @@
 - [65-stream_event、task_started、task_notification 与 transcript_overlay_stderr：为什么 remote session 是持续事件流消费者，而 direct connect 只是离散交互投影.md](./65-stream_event、task_started、task_notification%20与%20transcript_overlay_stderr：为什么%20remote%20session%20是持续事件流消费者，而%20direct%20connect%20只是离散交互投影.md)
 - [66-stream_event、task_started、status、remote pill 与 BriefIdleStatus：为什么同一 remote session 事件不会以同样厚度出现在每个消费者里.md](./66-stream_event、task_started、status、remote%20pill%20与%20BriefIdleStatus：为什么同一%20remote%20session%20事件不会以同样厚度出现在每个消费者里.md)
 - [67-slash_commands、stream_event、task_started 与 status_compacting：为什么 remote session 的命令集、流式正文、后台计数与 timeout 策略不是同一种消费者.md](./67-slash_commands、stream_event、task_started%20与%20status_compacting：为什么%20remote%20session%20的命令集、流式正文、后台计数与%20timeout%20策略不是同一种消费者.md)
+
+68-75 建议连续阅读：
+
+- 68-71 先拆 remote session 的命令面、候选面、入口面与本地变薄逻辑。
+- 72-75 再拆 tool plane、approval shell、authority return path 与 bridge relay 的拓扑差异。
+
 - [68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx fallthrough 与 remote send：为什么 remote session 的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md](./68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx%20fallthrough%20与%20remote%20send：为什么%20remote%20session%20的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md)
 - [69-hasCommand、isHidden、isCommandEnabled、local-jsx 与 remote send：为什么 remote mode 里的 slash 高亮、候选补全、启用态与实际执行去向不是同一个判定器.md](./69-hasCommand、isHidden、isCommandEnabled、local-jsx%20与%20remote%20send：为什么%20remote%20mode%20里的%20slash%20高亮、候选补全、启用态与实际执行去向不是同一个判定器.md)
 - [70-disableSlashCommands、commands=[]、hasCommand 与 remote send：为什么关掉本地 slash 命令层，不等于 remote mode 失去 slash 文本入口.md](./70-disableSlashCommands、commands%3D%5B%5D、hasCommand%20与%20remote%20send：为什么关掉本地%20slash%20命令层，不等于%20remote%20mode%20失去%20slash%20文本入口.md)
@@ -82,4 +88,5 @@
 - [72-getTools、useMergedTools、mcp.tools 与 toolPermissionContext：为什么 remote session 的 tool plane 不会像 command plane 一样一起变薄.md](./72-getTools、useMergedTools、mcp.tools%20与%20toolPermissionContext：为什么%20remote%20session%20的%20tool%20plane%20不会像%20command%20plane%20一样一起变薄.md)
 - [73-toolPermissionContext、initialMsg.mode、message.permissionMode、applyPermissionUpdate 与 computeTools：为什么 remote session 的本地 tool plane 主权不等于远端命令面主权.md](./73-toolPermissionContext、initialMsg.mode、message.permissionMode、applyPermissionUpdate%20与%20computeTools：为什么%20remote%20session%20的本地%20tool%20plane%20主权不等于远端命令面主权.md)
 - [74-can_use_tool、ToolUseConfirm、createToolStub、recheckPermission 与 manager.respondToPermissionRequest：为什么 remote session 的远端工具审批会借用本地权限队列 UI，却不会直接接管本地 tool plane.md](./74-can_use_tool、ToolUseConfirm、createToolStub、recheckPermission%20与%20manager.respondToPermissionRequest：为什么%20remote%20session%20的远端工具审批会借用本地权限队列%20UI，却不会直接接管本地%20tool%20plane.md)
+- [75-useRemoteSession、useDirectConnect、useSSHSession、handleInteractivePermission 与 bridgeCallbacks：为什么 remote session、direct connect、ssh session 都会借本地审批壳，而 bridge 只是把本地 permission prompt 外发竞速.md](./75-useRemoteSession、useDirectConnect、useSSHSession、handleInteractivePermission%20与%20bridgeCallbacks：为什么%20remote%20session%E3%80%81direct%20connect%E3%80%81ssh%20session%20都会借本地审批壳，而%20bridge%20只是把本地%20permission%20prompt%20外发竞速.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

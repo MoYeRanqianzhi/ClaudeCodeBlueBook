@@ -76,6 +76,7 @@
 - [72-2026-04-06-remote tool plane stays live 拆分记忆.md](./72-2026-04-06-remote%20tool%20plane%20stays%20live%20拆分记忆.md)
 - [73-2026-04-06-remote tool plane local authority 拆分记忆.md](./73-2026-04-06-remote%20tool%20plane%20local%20authority%20拆分记忆.md)
 - [74-2026-04-06-remote approval shell vs authority 拆分记忆.md](./74-2026-04-06-remote%20approval%20shell%20vs%20authority%20拆分记忆.md)
+- [75-2026-04-06-remote approval topology 拆分记忆.md](./75-2026-04-06-remote%20approval%20topology%20拆分记忆.md)
 
 用途：
 
