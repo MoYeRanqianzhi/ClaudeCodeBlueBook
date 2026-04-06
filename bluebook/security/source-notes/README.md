@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 95 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 105 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -114,6 +114,16 @@
 93. [93-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的强请求清理step-up重授权治理边界](93-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的强请求清理step-up重授权治理边界.md)
 94. [94-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界](94-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界.md)
 95. [95-callMCPToolWithUrlElicitationRetry、callMCPTool与tool_result映射的强请求清理完成治理边界](95-callMCPToolWithUrlElicitationRetry、callMCPTool与tool_result映射的强请求清理完成治理边界.md)
+96. [96-addToolResult、print与CCRClient的强请求清理终局治理边界](96-addToolResult、print与CCRClient的强请求清理终局治理边界.md)
+97. [97-StructuredIO与orphaned permission处理链的强请求清理遗忘治理边界](97-StructuredIO与orphaned permission处理链的强请求清理遗忘治理边界.md)
+98. [98-duplicate与orphan response分流中的强请求清理免责释放治理边界](98-duplicate与orphan response分流中的强请求清理免责释放治理边界.md)
+99. [99-commandLifecycle与orphaned-permission队列的强请求清理归档关闭治理边界](99-commandLifecycle与orphaned-permission队列的强请求清理归档关闭治理边界.md)
+100. [100-control_response回放与日志面的强请求清理审计关闭治理边界](100-control_response回放与日志面的强请求清理审计关闭治理边界.md)
+101. [101-debug与diagnostics载体物化中的强请求清理不可逆擦除治理边界](101-debug与diagnostics载体物化中的强请求清理不可逆擦除治理边界.md)
+102. [102-cleanupPeriodDays与housekeeping调度中的强请求清理保留期治理边界](102-cleanupPeriodDays与housekeeping调度中的强请求清理保留期治理边界.md)
+103. [103-settings文案与cleanup覆盖范围中的强请求清理保留期执行诚实性边界](103-settings文案与cleanup覆盖范围中的强请求清理保留期执行诚实性边界.md)
+104. [104-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界](104-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界.md)
+105. [105-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug、diagLogs与cleanup的强请求清理家族宪法边界](105-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug、diagLogs与cleanup的强请求清理家族宪法边界.md)
 
 ## 和其他目录的分工
 
