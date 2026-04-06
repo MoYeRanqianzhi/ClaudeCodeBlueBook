@@ -96,6 +96,7 @@
 - [92-2026-04-06-task result multi-ledger split 拆分记忆.md](./92-2026-04-06-task%20result%20multi-ledger%20split%20拆分记忆.md)
 - [93-2026-04-06-sdk task triad vs queue lifecycle 拆分记忆.md](./93-2026-04-06-sdk%20task%20triad%20vs%20queue%20lifecycle%20拆分记忆.md)
 - [94-2026-04-06-task progress host projection 拆分记忆.md](./94-2026-04-06-task%20progress%20host%20projection%20拆分记忆.md)
+- [95-2026-04-06-task result return path split 拆分记忆.md](./95-2026-04-06-task%20result%20return%20path%20split%20拆分记忆.md)
 
 用途：
 
