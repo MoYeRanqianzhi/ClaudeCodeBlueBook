@@ -59,3 +59,4 @@
 - [57-Remote slash_commands、REMOTE_SAFE_COMMANDS 与 local-jsx remote routing 索引.md](./57-Remote%20slash_commands、REMOTE_SAFE_COMMANDS%20与%20local-jsx%20remote%20routing%20索引.md)
 - [58-Remote slash discoverability、hidden exact、enabled gate 与 raw-send routing 索引.md](./58-Remote%20slash%20discoverability、hidden%20exact、enabled%20gate%20与%20raw-send%20routing%20索引.md)
 - [59-Remote disableSlashCommands、commands=[] 与 slash raw-send 索引.md](./59-Remote%20disableSlashCommands、commands%3D%5B%5D%20与%20slash%20raw-send%20索引.md)
+- [60-Remote local command plane selective thinning、plugin disable 与 MCP porosity 索引.md](./60-Remote%20local%20command%20plane%20selective%20thinning、plugin%20disable%20与%20MCP%20porosity%20索引.md)

@@ -72,6 +72,7 @@
 - [68-2026-04-06-remote command surface is not one table 拆分记忆.md](./68-2026-04-06-remote%20command%20surface%20is%20not%20one%20table%20拆分记忆.md)
 - [69-2026-04-06-remote slash discoverability vs executability 拆分记忆.md](./69-2026-04-06-remote%20slash%20discoverability%20vs%20executability%20拆分记忆.md)
 - [70-2026-04-06-disableSlashCommands does not kill remote slash ingress 拆分记忆.md](./70-2026-04-06-disableSlashCommands%20does%20not%20kill%20remote%20slash%20ingress%20拆分记忆.md)
+- [71-2026-04-06-remote local command plane selective thinning 拆分记忆.md](./71-2026-04-06-remote%20local%20command%20plane%20selective%20thinning%20拆分记忆.md)
 
 用途：
 
