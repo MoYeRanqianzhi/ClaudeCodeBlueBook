@@ -8,6 +8,22 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `architecture/83 / navigation/43` 现已把治理控制面继续压成单一对象链：
+  - `83` 现已明确 `governance key` 才是整张控制面的实现主键，`authority source` 只是最前面的 source slot。
+  - `43` 现已把治理支持面直接写成 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable/transient cleanup`，并明确宿主可写、宿主可读与 internal-only 的分层。
+- `guides/100 / playbooks/51` 现已把治理审读卡与稳态卡继续硬化：
+  - `100` 现已把 `governance_key_ref`、`externalized_truth_chain_ref`、`typed_ask_ref`、`decision_window_ref`、`continuation_pricing_ref`、`durable_assets_after` 与 `transient_authority_cleared` 写成强制字段。
+  - `51` 现已明确任一 `*_ref` 无法点名时，不是“信息不全”，而是应直接降为 `steady_state_blocked`。
+- `casebooks/23 / 35` 现已把治理失真继续压成同一条对象链被替身化后的多种症状：
+  - `mode` 只是 `governance key` 的替身。
+  - 审批历史只是 `typed ask + externalized truth chain` 的替身。
+  - `token` 条只是 `decision window` 的替身。
+  - 默认继续只是 `continuation pricing` 的替身。
+  - 文件 / compact 动作只是 `durable assets vs transient authority cleanup` 的替身。
+- 新的长期结论：
+  - 安全设计与省 token 设计真正成熟时，不应再被写成“同一组预算器 UI”或“两套目标偶然同向”；更稳的写法是它们共享同一个 `governance key`，并沿同一条 `externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable/transient cleanup` 继续外化。
+  - typed ask 真正成熟时，不应再被写成 modal 或审批事件；它必须继续被写成 typed transaction，因为只有这样，安全理由、winner source、duplicate suppression 与 stale ask teardown 才还属于同一个治理对象。
+  - 稳态治理真正成熟时，不应只看 steady verdict 是否存在，而要看 `governance_key_ref`、`externalized_truth_chain_ref`、`typed_ask_ref`、`decision_window_ref` 与 `continuation_pricing_ref` 能否被 later 团队逐一点名；否则所谓稳态只是投影稳态。
 - `architecture/82 / philosophy/81` 现已把 Prompt 魔力从“请求编译”继续压到更硬的对象层：
   - `82` 现已显式写出 `message lineage` 的三键内核：`parentUuid / logicalParentUuid`、`message.id`、`tool_use_id / sourceToolAssistantUUID`。
   - `82 / 81` 现已把 Prompt consumer 固定成 display、model API、SDK/control 与 handoff/compact/resume 四类正式读法，不再把 transcript 只写成 UI / 模型二分。

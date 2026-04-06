@@ -61,18 +61,21 @@
 2. `governance_object_id`
 3. `governance_key`
 4. `externalized_truth_chain_ref`
-5. `decision_window_dormant`
-6. `settled_price`
-7. `continuation_pricing_covenant`
-8. `typed_ask_visibility_alignment`
-9. `durable_assets_after`
-10. `transient_authority_cleared`
-11. `capability_release_scope`
-12. `reopen_threshold`
-13. `steady_verdict`
-14. `verdict_reason`
-15. `liability_owner`
-16. `evaluated_at`
+5. `typed_ask_ref`
+6. `decision_window_ref`
+7. `decision_window_dormant`
+8. `settled_price`
+9. `continuation_pricing_ref`
+10. `continuation_pricing_covenant`
+11. `typed_ask_visibility_alignment`
+12. `durable_assets_after`
+13. `transient_authority_cleared`
+14. `capability_release_scope`
+15. `reopen_threshold`
+16. `steady_verdict`
+17. `verdict_reason`
+18. `liability_owner`
+19. `evaluated_at`
 
 四类消费者的分工应固定为：
 
@@ -80,6 +83,10 @@
 2. CI 看 window、pricing、typed ask / visibility、custody 与 threshold 顺序是否完整。
 3. 评审看 `steady_verdict` 是否仍围绕同一个治理对象，而不是围绕 mode 与图表投影。
 4. 交接看 later 团队能否只凭 `steady-state card` 重建同一判定与责任边界。
+
+任一 `*_ref` 无法点名时，应直接把 steady verdict 降为：
+
+- `steady_state_blocked`
 
 ## 3. 固定 steady verdict 顺序
 

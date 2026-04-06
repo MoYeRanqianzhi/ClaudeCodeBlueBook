@@ -5,7 +5,7 @@
 它主要回答五个问题：
 
 1. 怎样避免把治理重新写回“更严的拦截器”。
-2. 怎样按固定顺序审读 `authority source`、`typed ask arbitration`、`deferred visibility`、`externalization` 与 `continuation pricing`。
+2. 怎样按固定顺序审读 `governance key`、`externalized truth chain`、`typed ask arbitration`、`deferred visibility`、`externalization` 与 `continuation pricing`。
 3. 怎样判断一个 runtime 是否真的把“当前世界的准入主权”保留在 runtime，而不是外包给模型或低信任输入。
 4. 怎样识别那些看起来更保守、实际更脆的坏改写。
 5. 怎样用苏格拉底式追问避免把这份模板重新写成设置页说明书。
@@ -27,7 +27,7 @@
 这些锚点共同说明：
 
 - 安全设计与省 Token 设计真正共享的是“当前世界的准入主权”，而不是同一组 UI 或同一个预算器名字。
-- 更硬一点说，`authority source` 是实现主键；ask、visibility、externalization 与 continuation 都只是 source-tagged rules 的后续消费结果。
+- 更硬一点说，`governance key` 才是这张控制面的实现主键；`authority source` 是其最前面的 source slot，而 ask、visibility、externalization 与 continuation 都只是这张主键向下游派生出的受价结果。
 
 ## 1. 第一性原理
 
@@ -147,13 +147,20 @@
 ```text
 审读对象:
 当前 trusted input 链:
+governance_key_ref:
+externalized_truth_chain_ref:
 authority source 是否先于动作、可见性和 continuation:
 source slot 是否真是规则主键:
+typed_ask_ref:
 typed ask arbitration 是否成立:
 能力存在 / 当前可见是否分层:
 哪些对象应 externalize:
+decision_window_ref:
 continuation 是否按条件出租:
+continuation_pricing_ref:
 resume 是否只恢复 durable assets:
+durable_assets_after:
+transient_authority_cleared:
 失败语义是否按资产类型分型:
 host 是否只消费 runtime 外化的 authority/status:
 当前最像哪类失真:
@@ -162,19 +169,24 @@ host 是否只消费 runtime 外化的 authority/status:
 - trusted input / ask arbitration / visibility / externalization / continuation / failure typing
 ```
 
+任一 `*_ref` 无法点名时，都应直接判定：
+
+- `not same control plane`
+
 ## 6. 苏格拉底式检查清单
 
 在你准备继续给系统加治理规则前，先问自己：
 
 1. 我在收回免费扩张，还是只在增加表层摩擦。
 2. 当前世界的准入主权是不是仍在 runtime 手里。
-3. 模型此刻看见的世界是否已经足够小。
-4. 大对象有没有迁出最昂贵的上下文主席位。
-5. 继续执行是否仍有正式价格和停止条件。
-6. 自动化还能不能合法退场。
-7. resume 恢复的是 durable assets，还是把 transient authority 也免费续租了。
-8. host 是在消费 runtime 已外化的真相，还是在自己猜当前真相。
-9. 如果把所有 UI 都删掉，这套治理秩序是否仍然成立。
+3. `governance_key_ref -> externalized_truth_chain_ref -> typed_ask_ref -> decision_window_ref -> continuation_pricing_ref` 这条链我能不能逐一指出。
+4. 模型此刻看见的世界是否已经足够小。
+5. 大对象有没有迁出最昂贵的上下文主席位。
+6. 继续执行是否仍有正式价格和停止条件。
+7. 自动化还能不能合法退场。
+8. resume 恢复的是 durable assets，还是把 transient authority 也免费续租了。
+9. host 是在消费 runtime 已外化的真相，还是在自己猜当前真相。
+10. 如果把所有 UI 都删掉，这套治理秩序是否仍然成立。
 
 ## 7. 一句话总结
 

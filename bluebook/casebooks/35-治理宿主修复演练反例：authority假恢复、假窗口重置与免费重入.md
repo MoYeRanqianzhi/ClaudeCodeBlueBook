@@ -56,6 +56,14 @@
 
 - 同一个 `governance key -> externalized truth chain -> decision window -> continuation pricing -> durable-vs-transient cleanup`
 
+最容易在 repair drill 里重新篡位的替身也正好对应这条链：
+
+1. `mode` 冒充 `governance key`
+2. 审批历史冒充 `externalized truth chain + typed ask`
+3. token / usage 面板冒充 `decision window`
+4. “还能继续”冒充 `continuation pricing`
+5. 文件动作 / compact 动作冒充 `durable-vs-transient cleanup`
+
 ## 2. governance key 假恢复：repair 退回 mode 标签与页面状态
 
 ### 坏解法
@@ -74,6 +82,21 @@
 ### Claude Code 式正解
 
 - repair 应先恢复 `governance key`，再恢复 mode 投影。
+
+## 2.1 repair drill 投影替身对照表
+
+如果 repair 现场出现下面这些话术，应直接升级拒收：
+
+1. “mode 已经切回来了”
+   - 实际可能在偷换 `governance key`
+2. “审批记录还在”
+   - 实际可能在偷换 `externalized truth chain + typed ask`
+3. “usage 已经掉下来了”
+   - 实际可能在偷换 `decision window`
+4. “反正现在没被拦”
+   - 实际可能在偷换 `continuation pricing`
+5. “把文件和 compact 再跑一遍”
+   - 实际可能在偷换 `durable assets vs transient authority cleanup`
 
 ## 3. externalized truth chain 漂白：typed ask 退回审批历史
 

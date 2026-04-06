@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮治理控制面再压实动作: 已继续更新 `architecture/83`、`guides/100`、`casebooks/23 / 35`、`playbooks/51` 与 `navigation/43`，把安全设计与省 token 设计继续压到单一对象链：`governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable/transient cleanup`。
+- 本轮治理投影替身显式化动作: `casebooks/23 / 35` 现已补出投影替身对照表，固定映射 `mode -> governance key`、`审批历史 -> typed ask + truth chain`、`token 条 -> decision window`、`默认继续 -> continuation pricing`、`文件/compact 动作 -> durable/transient cleanup`。
+- 本轮治理审读卡硬化动作: `guides/100` 与 `playbooks/51` 现已把 `governance_key_ref`、`externalized_truth_chain_ref`、`typed_ask_ref`、`decision_window_ref`、`continuation_pricing_ref`、`durable_assets_after` 与 `transient_authority_cleared` 提升成强制字段，并明确“任一 ref 无法点名 = not same control plane / steady_state_blocked”。
 - 本轮 Prompt 编译链再压实动作: 已继续更新 `architecture/82`、`guides/30`、`casebooks/73` 与 `philosophy/81`，把 Prompt 魔力从“请求编译链”进一步压到 `message lineage` 三键内核、四类 `projection consumer`、`continuation object` 最小对象清单与 `cache-safe fork reuse`。
 - 本轮 Prompt 路由收口动作: 已继续更新 `navigation/README` 与 `architecture/README`，把 Prompt 深读入口收成 `09 -> 81 -> 82 -> 30 -> 73 -> 77`，减少只靠旧桥接词和编号感自己拼链。
 - 本轮苏格拉底自校加固动作: `guides/30` 现已把 Prompt 审读问题从“边界与合法遗忘”进一步压到 `lineage kernel`、consumer matrix 与 continuation object 级别，减少把 Prompt 魔力继续读成长文案与摘要质量。
