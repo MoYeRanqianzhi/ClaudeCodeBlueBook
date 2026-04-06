@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `playbooks/31` 与 `navigation/45`，把结构宿主接入第一跳从 `authority state / recovery boundary / 恢复成功率` 的旧根词收回到 `authority object / per-host authority width / authoritative path / freshness gate / stale-worldview / ghost-capability / anti-zombie evidence`
 - 继续更新 `architecture/79`、`navigation/39 / 42`、`guides/52` 与 `api/52`，把 taxonomy-core 从 `compiled request truth / authority source / continuation gate` 这些旧根词收回到两条单一对象链：Prompt 收回 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`，治理收回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`
 - 继续更新 `navigation/39 / 42` 的结构段落，把导航页里的旧根词从 `single-writer authority / recovery asset / authority surface` 收回到 `authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`，并把 taxonomy 正文进一步去施工口吻
 - 继续更新 `playbooks/29 / 30 / 31`，把三条宿主接入审读手册统一到当前对象链：Prompt 收回 `message lineage / projection consumer / continuation qualification`，治理收回 `governance key / externalized truth / typed ask / continuation pricing`，结构收回 `authority object / per-host authority width / event-stream-vs-state-writeback / anti-zombie`

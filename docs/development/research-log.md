@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮结构宿主接入第一跳纠偏动作: 已继续更新 `playbooks/31` 与 `navigation/45`，把结构宿主接入从 `authority state / recovery boundary / anti-zombie result` 的旧叙事收回到 `authority object -> per-host authority width -> authoritative path -> freshness gate -> stale worldview / ghost capability -> anti-zombie evidence`。
+- 本轮结构接入 reject path 硬化动作: `playbooks/31` 现已把 `bridgePointer`、append-chain、resume file 明确降为 recovery asset，并要求宿主显式记录 `authoritative_path_ref`、`freshness_gate_ref`、`recovery_asset_non_sovereignty`、`stale_worldview_evidence` 与 `ghost_capability_eviction`，减少把“恢复最后成功了”继续写成结构成熟度。
+- 本轮宿主接入导航去流程化动作: `navigation/45` 现已把 Prompt / 治理 / 结构三条宿主接入线统一压成对象链入口，不再用“支持面如何进入复盘”这类流程说明充当主轴；宿主排查顺序当前固定为“先对象，再投影，再拒收，再复盘”。
 - 主分支同步检查: `2026-04-06` 再次执行 `git -C /home/mo/m/projects/cc/analysis pull --ff-only`，结果 `Already up to date.`；`mainloop` 在本批开工前保持干净。
 - 本轮 taxonomy-core 对齐动作: 已继续更新 `architecture/79`、`navigation/39 / 42`、`guides/52` 与 `api/52`，把 Prompt / 治理两条核心 taxonomy 从旧根词并列法收回到 root chain 写法，并把 `navigation/39 / 42` 中的结构线旧根词一起替换，避免导航页继续反向输送旧词。
 - 本轮 Prompt 根对象更正动作: `79 / 39 / 42` 现已把 `compiled request truth` 降为 legacy alias，不再充当一级主语；Prompt 线当前固定为 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`，其中 `section law / stable prefix boundary / lawful forgetting` 全部降为 lineage 的准入律、投影律与继续律。

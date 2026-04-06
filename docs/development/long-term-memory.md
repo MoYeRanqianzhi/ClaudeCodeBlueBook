@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/31 / navigation/45` 现已把结构宿主接入第一跳统一到当前对象链：
+  - `31` 现已把 `recovery boundary` 从一级主语降回 recovery asset non-sovereignty，接入卡固定为 `authority object -> per-host authority width -> authoritative path -> freshness gate -> stale worldview / ghost capability -> anti-zombie evidence`。
+  - `45` 现已把三条宿主接入导航母线统一改成对象链入口，不再让“支持面复盘流程”压过对象主语。
+- 新的长期结论：
+  - 结构宿主接入真正成熟时，不应再把 `bridgePointer`、append-chain、resume file 或恢复成功率写成主对象；它们只能帮助回到当前真相，不能宣布当前真相。
+  - 结构线第一跳真正成熟时，later maintainer 必须能先点名 `authority object`、合法 `per-host authority width`、正式 `authoritative path` 与 `freshness gate`，再谈恢复演练与 anti-zombie 结果；顺序反过来就会重新跌回假信号。
 - `architecture/79 / navigation/39 / 42 / guides/52 / api/52` 现已把 taxonomy-core 收到当前对象链：
   - `79` 现已把 `compiled request truth` 降为旧总称，Prompt 根对象固定为 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`。
   - `39 / 42` 现已把 Prompt / 治理 / 结构三条导航母线统一改写为 root chain 入口，不再让 `compiled request truth / authority source / recovery asset` 这些旧根词继续占据导航主轴。
