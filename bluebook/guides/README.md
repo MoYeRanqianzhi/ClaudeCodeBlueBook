@@ -26,9 +26,9 @@
 - [08-如何根据预算、阻塞与风险选择session、task、worktree与compact](08-如何根据预算、阻塞与风险选择session、task、worktree与compact.md)
 - `21-32`: 共享前缀、Prompt 审读与治理顺序模板
 - `99-102`: 三张控制面图对应的高阶审读模板与公开镜像证据分级方法
-- 想直接抓 Prompt 魔力的 builder 审读模板：从 `99`
-- 想直接抓 source-first pricing 的 builder 审读模板：从 `100`
-- 想直接抓 anti-stale / one writable present 的 builder 审读模板：从 `101`
+- 想直接抓 Prompt 对象链的 builder 审读模板：从 `99`
+- 想直接抓 source-first pricing / externalized truth 的 builder 审读模板：从 `100`
+- 想直接抓 `event-stream-vs-state-writeback / freshness gate / stale worldview / ghost capability` 的 builder 审读模板：从 `101`
 - 想直接抓公开镜像源码质量分级方法：从 `102`
 
 ## 使用方式
@@ -38,6 +38,7 @@
 - 想把方法沉到模板、卡片和 rollout 工件：从 `24-47`
 - 想处理宿主迁移、验收、修复和后续纠偏：从 `48-101`
 - 想把控制面总图变成 Builder 审读顺序：先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)，Prompt 线默认从 `99` 起步、治理线默认从 `100` 起步、结构线默认从 `101` 起步；只有需要旧词汇桥接时再补 `30-31`
+- 想把 builder 审读一路接到长期验证：Prompt 走 `99 -> 77`，治理走 `100 -> 78`，结构走 `101 -> 79`
 - 想看公开镜像下的源码质量方法：先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)，再从 `102` 进入；更细的跨目录回链统一去 [../navigation/README.md](../navigation/README.md)
 - 想看最新共同 `reject` 升级模板骨架：从 `93-98`
 - 想做跨目录跳转：回到 [../navigation/README.md](../navigation/README.md)

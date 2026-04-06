@@ -36,9 +36,12 @@
 
 如果问题已经进入运行手册层，不要再自己拼链：
 
-- Prompt 执行链：`46 -> 29 -> 35 -> 65 -> 77`
-- 治理执行链：`46 -> 30 -> 36 -> 66 -> 78`
-- 结构执行链：`46 -> 31 -> 37 -> 67 -> 79`
+- Prompt 执行链：`46 -> 29 -> 35 -> 65 -> 68 -> 71 -> 74 -> 77`
+- 治理执行链：`46 -> 30 -> 36 -> 66 -> 69 -> 72 -> 75 -> 78`
+- 结构执行链：`46 -> 31 -> 37 -> 67 -> 70 -> 73 -> 76 -> 79`
+- Prompt 深段对象：`message lineage -> projection consumer -> continuation object -> cache-safe fork`
+- 治理深段对象：`governance key -> externalized truth -> durable-vs-transient -> continuation pricing`
+- 结构深段对象：`per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`
 - 公开镜像证据分级与进一步 reject path：在三条链各自稳定后，再回 `102`
 
 ## 什么时候用它
