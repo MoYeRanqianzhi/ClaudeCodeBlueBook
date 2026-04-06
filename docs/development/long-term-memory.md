@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/38`、`api/55`、`playbooks/36`、`casebooks/26` 与 `casebooks/32` 现已继续把治理协议层、执行手册层与反例层的第一页主语统一压回 canonical governance chain：
+  - `api/38` 现在更明确要求 artifact contract 的 shared header、role projection 与 hard contract 都从 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 起笔，不再让 `winner source / rollback object / authority source` 充当前门名词。
+  - `api/55` 现在更明确把 acceptance protocol 写成统一定价规则面，并把 `authority source / permission ledger / continuation gate / rollback object` 固定为 source slot、transaction evidence、pricing verdict 与 cleanup carrier。
+  - `playbooks/36` 现在更明确把执行顺序、拒收顺序、cleanup 顺序与复盘字段统一成同一张六段治理执行卡，不再围绕 mode、modal 与 token 面板组织验收动作。
+  - `casebooks/26` 与 `casebooks/32` 现在更明确把 mode 崇拜、`pending_action` 文案化、usage 仪表盘化、免费继续与 cleanup 文件化写成 canonical chain 的具体偷换，而不是继续停在界面症状描述。
+- 新的长期结论：
+  - 治理线的中层页真正容易漂移的地方，不是“缺结论”，而是“承载壳、投影、结果词重新偷走第一页主语”。`authority source / permission ledger / continuation gate / rollback object` 必须长期只配停在 source slot、transaction evidence、pricing verdict 与 cleanup carrier 位置。
+  - 安全设计与省 token 设计在治理线里应长期被写成同一条收费链：`decision window` 负责解释当前世界为何仍值得判断，`continuation pricing` 负责解释当前时间为何仍值得付费；只要其中任一节点退回 usage 仪表盘或默认继续，另一端也会一起失真。
+  - 治理线当前更稳的 reject trio 已固定为 `projection usurpation / decision-window collapse / free-expansion relapse`。后续治理协议页、手册页、反例页与记忆层都应优先复用这组三联，而不是重新发明 mode/token/rollback 的零散症状名。
+  - 并行治理 Agent 已确认：下一轮最值得优先处理的治理残留，不再是主干协议页，而是 `playbooks/15` 与 `api/35` 这类 `Evidence Envelope / Rollout 证据消费 API` 页面；它们最容易把 envelope、API 与消费纪律重新越位成治理主语。后续若继续深化治理线，应优先把这类承载壳页面也改写成“先主链、再壳”的结构。
 - `api/23`、`24`、`38`、`55`、`playbooks/16` 与 `casebooks/18` 现已继续把协议页、矩阵页、落地手册页与反例页的第一页主语压回三条 canonical chain：
   - Prompt 线现在更明确要求 support/protocol 页先从 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 起笔，再允许 `runtime contract / same-world test` 这类桥接词留在说明层。
   - 治理线现在更明确要求 artifact contract 与 acceptance protocol 先从 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 起笔，再允许 source slot、transaction evidence、pricing verdict、cleanup carrier 这类桥接槽位出现。
