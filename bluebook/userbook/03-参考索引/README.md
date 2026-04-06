@@ -75,6 +75,7 @@
 71. 为什么 `shutdown_request`、`shutdown_rejected`、`shutdown_approved`、`teammate_terminated` 与 `stopping` 不会完整落在同一可见消息面。
 72. 为什么 `shutdown_request`、`shutdown_approved`、`shutdown_rejected`、`teammate_terminated` 在 routing 层就已经分道扬镳，而不会共用同一条 mailbox 通道。
 73. 为什么 `useInboxPoller`、`attachments.ts` 与 `print.ts` 虽然都在处理 shutdown 收口，却不共享同一条宿主路径。
+74. 为什么同一个 in-process teammate 明明仍是 `running`，却会在 `stopping`、`awaiting approval`、`idle` 与 working 之间投影成不同状态面。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

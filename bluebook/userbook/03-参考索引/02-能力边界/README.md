@@ -73,3 +73,4 @@
 - [71-Shutdown lifecycle visible surface split 索引.md](./71-Shutdown%20lifecycle%20visible%20surface%20split%20索引.md)
 - [72-Shutdown mailbox routing split 索引.md](./72-Shutdown%20mailbox%20routing%20split%20索引.md)
 - [73-Shutdown host-path convergence and divergence 索引.md](./73-Shutdown%20host-path%20convergence%20and%20divergence%20索引.md)
+- [74-In-process teammate state projection 索引.md](./74-In-process%20teammate%20state%20projection%20索引.md)
