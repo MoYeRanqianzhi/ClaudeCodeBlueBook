@@ -56,3 +56,4 @@
 - [54-Remote continuous event flow vs direct-connect discrete projection 索引.md](./54-Remote%20continuous%20event%20flow%20vs%20direct-connect%20discrete%20projection%20索引.md)
 - [55-Remote same event different consumers 索引.md](./55-Remote%20same%20event%20different%20consumers%20索引.md)
 - [56-Remote slash_commands、stream_event、task_* 与 compacting consumer 索引.md](./56-Remote%20slash_commands、stream_event、task_%2A%20与%20compacting%20consumer%20索引.md)
+- [57-Remote slash_commands、REMOTE_SAFE_COMMANDS 与 local-jsx remote routing 索引.md](./57-Remote%20slash_commands、REMOTE_SAFE_COMMANDS%20与%20local-jsx%20remote%20routing%20索引.md)

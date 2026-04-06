@@ -69,6 +69,7 @@
 - [65-2026-04-06-remote continuous flow vs direct discrete projection 拆分记忆.md](./65-2026-04-06-remote%20continuous%20flow%20vs%20direct%20discrete%20projection%20拆分记忆.md)
 - [66-2026-04-06-remote same event different consumers 拆分记忆.md](./66-2026-04-06-remote%20same%20event%20different%20consumers%20拆分记忆.md)
 - [67-2026-04-06-remote event families to distinct consumers 拆分记忆.md](./67-2026-04-06-remote%20event%20families%20to%20distinct%20consumers%20拆分记忆.md)
+- [68-2026-04-06-remote command surface is not one table 拆分记忆.md](./68-2026-04-06-remote%20command%20surface%20is%20not%20one%20table%20拆分记忆.md)
 
 用途：
 
