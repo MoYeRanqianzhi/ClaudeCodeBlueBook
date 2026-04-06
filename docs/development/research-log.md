@@ -3,9 +3,16 @@
 ## 当前基线
 
 - 日期: `2026-04-06`
-- 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/claude-code-risk-analysis`
+- 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮入口结构收口动作: 已继续更新 `bluebook/README` 与 `navigation/README`，把蓝皮书入口进一步压成“先定题 -> 再定证据层 -> 最后跨目录”的三步法，并把 `navigation/05` 提升成跨目录稳定节点，减少根 README 与导航层重复摊平深链。
+- 本轮第一性原理自校动作: 已继续更新 `06-第一性原理与苏格拉底反思`，把“怎样把这一章继续写得更好”前置为四个固定追问：对象链是否被偷换成结果词、是否给出同题坏解、是否写出第一条反证信号、是否给出 `shadow -> qualify -> cutover -> rollback` 的渐进改写顺序。
+- 本轮设计母线深化动作: 已继续更新 `navigation/05`，把 Prompt 魔力、安全与省 token、源码先进性三条母线都补上“最容易抄错的表象”与“三条母线如何互证”的高阶自校问题；当前更稳的写法不是只给阅读顺序，而是先纠正模仿对象。
+- 本轮治理侧线回灌动作: 已吸收并行 Agent 的一条高价值结论，把治理线进一步压实为“`typed ask` 不是 modal，而是分布式仲裁事务；`Context Usage` 不是成本仪表，而是 `decision window` 证据面”，并已回写到 `navigation/05` 与 `06` 的治理自校问题里。
+- 本轮 Prompt 侧线回灌动作: 已吸收并行 Agent 的一条高价值结论，把 Prompt 魔力进一步压实为“request compiler + message lineage + continuation qualification”，并明确 `systemPrompt`、UI transcript 与“还能继续聊”的直觉，都不是更稳的主语。
+- 本轮源码质量侧线回灌动作: 已吸收并行 Agent 的一条高价值结论，把源码先进性进一步压实为“显式 current-truth writeback + temporal honesty + leaf modules 作为依赖治理工具”，而不是静态结构观感或零散 race fix。
+- 本轮并行 Agent 策略: 已再次并行派发 Prompt / 治理 / 结构三条只读侧线，但主线仍坚持“不让侧线阻塞当前批次提交”；这一轮先把可立即落地的入口与自校改写提交，侧线结论再在后续批次吸收。
 - 本轮 atlas 承载纠偏动作: 已继续更新 `guides/102 / playbooks/79 / navigation/04`，把结构线里 atlas / template / verdict 的承载错位收回到更明确的目录法：`102` 现在只负责 atlas skeleton、gap note 与 handoff rule，`79` 现在只消费 `danger_surface_atlas_ref / gap_note_ref / authority_surface_ref` 这类输入工件绑定 verdict，`navigation/04` 现在把 atlas 正文默认归到 `api/46-50`，并把 `navigation/35` 固定为 atlas 路由入口。
 - 本轮治理 schema 补齐动作: 已继续更新 `guides/28 / 100` 与 `playbooks/78`，把治理矩阵进一步补齐为 `surface divergence / minimum legal degraded shape / escalation target / rollback action / re-entry condition` 这组字段；现在 `interactive / host / headless / async` 的执行面分叉，以及 `rollback -> re-entry` 的恢复条件，都已进入同一条治理对象链。
 - 本轮命名收口动作: 已继续更新 `09` 与 `06`，把三条控制面里残留的过泛 contract 名与过渡句式继续收回到更硬对象；治理线当前更明确使用 `execution contract`，结构线当前更明确使用 `authority contract`，Prompt 线当前更明确使用 `byte boundary / continuation truth`。

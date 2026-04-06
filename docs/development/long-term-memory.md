@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README / navigation/README / navigation/05 / 06` 现已继续把“继续写得更好”的问题正式前置：
+  - `bluebook/README` 现在更明确把蓝皮书入口压成“先定题 -> 再定证据层 -> 最后跨目录”的三步进入法，并把“继续写、改或审蓝皮书”固定回 `06 -> 09 -> navigation/05`。
+  - `navigation/README` 现在更明确要求先判自己在找主线宪法、证据层还是跨目录下一跳，并把 `navigation/05` 升成稳定节点。
+  - `navigation/05` 现在更明确先纠正“抄错对象”的三种常见误读，并把三条母线的互证关系与统一自校问题写明。
+  - `06` 现在更明确把对象链、同题坏解、第一条反证信号与 `shadow -> qualify -> cutover -> rollback` 的渐进改写顺序，提升成第一性原理页自己的持续审读协议。
+- 新的长期结论：
+  - 目录结构真正成熟时，最值钱的优化不是再补一条阅读链，而是把入口稳定成“先定题、再选证据层、最后才跨目录”；否则根 README、目录 README 和导航页会再次一起承担路由编排。
+  - 第一性原理章节真正成熟时，不能只会解释正解；它还必须固定点名同题坏解、第一条反证信号与渐进改写顺序，否则苏格拉底追问会重新退回高阶感想。
+  - 设计母线导航真正成熟时，最该先纠正的不是读者下一步点哪一页，而是读者打算模仿什么对象；只纠阅读顺序、不纠模仿对象，三条母线很快就会重新退回文案、拦截器和目录美学。
+  - 治理线真正成熟时，`typed ask` 不能再被写成 modal，`Context Usage` 也不能再被写成成本仪表；前者更稳的对象是分布式仲裁事务，后者更稳的对象是 `decision window` 的证据面。
+  - Prompt 线真正成熟时，`systemPrompt` 不能再冒充唯一主角；更稳的主语应是 request compiler、`message lineage` 的多消费者投影，以及 `continuation qualification / cache-safe fork reuse` 共同维持的同一世界。
+  - 源码质量线真正成熟时，最值钱的证据不只是 `current-truth surface` 这个名词，还包括显式 current-truth writeback、持续拒绝 stale writer 的 temporal honesty，以及 leaf modules 作为依赖治理工具的自觉。
 - `guides/102 / playbooks/79 / navigation/04` 现已继续把 atlas、template 与 verdict 的分工写死：
   - `102` 现在更明确只负责 atlas skeleton、gap note 与 handoff rule，不再继续自己承接 repo-specific atlas 正文。
   - `79` 现在更明确把 `danger_surface_atlas_ref / gap_note_ref / authority_surface_ref` 写成输入工件，而不是默认在本页临时生产 atlas。
