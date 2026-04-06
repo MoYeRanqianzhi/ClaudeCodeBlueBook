@@ -2,6 +2,21 @@
 
 ## 2026-04-06
 
+- 继续更新《设计哲学》《第一性原理与苏格拉底反思》，把后半高阶原则继续压成 `authority object / bad solution / reject path / migration order` 模板，并把“下一轮怎么做得更好”改成长期有效的持续自校协议
+- 继续更新《源码结构地图》《源码目录级能力地图：commands、tools、services、状态与宿主平面》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，把 atlas 页继续压成 `authority / subset / danger / reject path` 协议，并补上 Prompt `request object` 的更短装配顺序
+- 继续更新《蓝皮书总索引》《导读》《哲学专题》《使用专题》《导航专题》《安全专题索引》《风控专题》《运行时契约、知识层与生态边界》《Services 二级目录 Atlas》，把跨目录推荐链继续收回分层入口，并把“安全与省 token = 同一扩张定价秩序”前置到入口页
+- 继续更新《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》《提示词魔力来自运行时而非咒语》，把 prompt 魔力继续从“更强文案”压成 `request object / role contract / cache boundary / handoff truth`
+- 继续更新《源码结构地图》《源码目录级能力地图：commands、tools、services、状态与宿主平面》，把源码地图继续从导览/图鉴压成判断协议，明确 `authority / subset / second truth / danger surface / reject path`
+- 继续更新《功能全景与API支持》《能力全集、公开度与成熟度矩阵》《能力平面、公开度与宿主支持矩阵》，把长清单与对象表继续降成补证层，正文前门固定为 `existence / implementation visibility / current admission / product promise` 四层矩阵，标签只保留为结果写法
+- 继续更新《公开能力与隐藏能力》《功能全景与API支持》《能力全集、公开度与成熟度矩阵》《能力平面、公开度与宿主支持矩阵》，把能力前门继续从“压缩标签”拉回 `existence / implementation visibility / current admission / product promise` 四层判断
+- 继续更新《导读》《源码结构地图》《功能全景与API支持》《源码目录级能力地图：commands、tools、services、状态与宿主平面》，把“五层拆解法 / 运行链路导览 / 目录级能力大全”继续降成辅助检索与热点定位材料，不再让它们抢走三条高阶判断的主入口地位
+- 继续更新《源码结构地图》《公开能力与隐藏能力》《功能全景与API支持》《能力全集、公开度与成熟度矩阵》《能力平面、公开度与宿主支持矩阵》《能力、API与治理检索图》，把“能力前门 + 结构地图”进一步从功能表/目录树读法压成 `truth layer / existence / admission / promise / temporal risk` 的判断协议
+- 继续更新《设计哲学》《安全总论：Claude Code 不是单点沙箱，而是分层安全控制面》《真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面》，把 prompt 魔力、安全控制面与源码地图三条主论证分别继续压到 `request object / 四种扩张定价 / 证据梯度+时间诚实+future maintainer` 这一层
+- 继续更新《第一性原理与苏格拉底反思》《运行时契约、知识层与生态边界》《第一性原理阅读地图》《机制哲学导航》，把“三条硬判断”正式提升为这些前门页的默认入口，原来的八问题、五平面与深层对象名词降为二级展开
+- 继续更新《导读》、`api/README`、`api/46-services`、`security/14`、`risk/01` 与 `risk/11`，把入口页和总图页从“平面/机制清单”继续压成“先判断什么、再看对象链”的前门语言，进一步前置 `contract truth / authoritative surface / 四种扩张定价 / 时间诚实`
+- 继续更新《三张控制面总图》、`security/README`、`risk/README` 与 `api/46-services`，把多 Agent 深挖得到的三条硬判断前置到主线与专题前门：`prompt 魔力 = 世界准入法律`、`安全/省 token = 四种扩张的统一定价`、`源码先进性 = 证据梯度 + 时间诚实 + future maintainer 的正式消费者地位`
+- 继续更新 `philosophy/09-15` 与 `architecture/27`、`architecture/38`，把正文里直接面向“蓝皮书后续怎么写”的过程性表述，改写成读者可复用的最小判断顺序与检查表，进一步把作者过程语言迁回 `docs/`
+- 继续更新《蓝皮书总索引》与开发文档，把根 README 收回为稳定一级入口层：明确 `bluebook/README + 00-09` 负责主线与最短路径、`docs/` 与 `bluebook/` 并列协同而非嵌套关系、更深跨目录细链统一回交 `navigation/README`，同时把安全/风控阅读链先收回 `09` 的第二张控制面与 `philosophy/85`
 - 继续更新 `guides/README`、`navigation/README`、`philosophy/README`，把推荐入口层显式前置到 `09`，并把过长的跨目录细链统一压回 `navigation/README`，同时同步更新开发文档
 - 更新 `guides/README`、`navigation/README`、`philosophy/README`，继续把 `guides/99-102`、`philosophy/84-87` 与导航分流层都收口到 `09` 的主线宪法上，并同步更新开发文档
 - 更新《使用指南》《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，继续把三条母线的正式表述收口到 `09`，其余主线页只负责解释与应用，并同步更新开发文档

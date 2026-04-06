@@ -2,7 +2,15 @@
 
 这一篇不再回答“这些机制对象怎样成立、怎样验证、怎样失真”，而是回答：
 
-- 如果把 `compiled request truth`、`governance control plane object` 与 `evolvable kernel object boundary` 一路压回不可约判断，Claude Code 到底在坚持什么第一性原理。
+- 如果把 Prompt 魔力、安全/省 token、源码先进性一路压回不可约判断，Claude Code 到底在坚持什么第一性原理。
+
+更稳的读法不是先记住 `compiled request truth`、`governance control plane object`、`evolvable kernel object boundary` 这些深层对象名词，而是先记住三句：
+
+1. 世界怎样进入模型
+2. 扩张怎样进入当前世界
+3. 过去怎样不得写坏现在
+
+这些对象只是三条判断继续落成协议、对象和验证工件后的二级载体。
 
 它主要回答五个问题：
 

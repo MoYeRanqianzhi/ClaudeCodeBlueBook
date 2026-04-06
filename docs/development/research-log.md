@@ -18,14 +18,31 @@
 - 本轮入口前推动作: 已继续更新 `00`、`02`、`navigation/01`、`navigation/02`，把三句最高阶判断与公开镜像研究纪律前置给首次阅读者。
 - 本轮前门去记忆化动作: 已继续更新 `04`、`05`、`08` 与 `navigation/02`，把“当前空白 / 本轮抽出 / 后续补齐”式作者口吻改写成读者判断顺序、自检问题与稳定回链。
 - 本轮能力判断收束动作: 已把“能力存在 / 当前可见 / 当前被允许 / 对外承诺”四层显式前置到前门章节，避免功能表、能力表与产品承诺重新混写。
+- 本轮能力前门与结构地图收口动作: 已继续更新 `01`、`04`、`05`、`08`、`api/23` 与 `navigation/02`，把能力讨论继续固定到 `existence / visibility / admission / promise` 四层，把结构地图继续固定到 `authority / subset / danger / temporal risk` 四层。
+- 本轮能力标签解压动作: 已继续更新 `04`、`05`、`08` 与 `api/23`，把 `public runtime / gate / 产品受限` 这些压缩标签继续降成结果桶，要求读者先沿 `existence / implementation visibility / current admission / product promise` 四层去判断。
+- 本轮能力矩阵换骨动作: 已继续更新 `05`、`08` 与 `api/23`，把长清单、对象表与矩阵压缩判断继续降成补证层；正文前门只保留四层判断，标签只保留为结果写法。
+- 本轮地图协议化动作: 已继续更新 `01` 与 `api/30`，把源码地图继续从运行链路导览、目录级能力大全与体量图鉴压成 `authority / subset / second truth / danger surface / reject path` 的判断协议。
+- 本轮 Prompt 宪法收束动作: 已继续更新 `03`、`06`、`09` 与 `philosophy/14`，把 prompt 魔力继续从“system prompt 更强”压成 `request object / role contract / cache boundary / handoff truth` 四个正式对象。
+- 本轮入口与路由瘦身动作: 已继续更新 `README`、`00`、`philosophy/README`、`guides/README` 与 `navigation/README`，把根索引继续收回一级路由，把专题 README 继续收回簇级入口，把跨目录深链继续收回 `navigation/README`。
+- 本轮统一定价入口前移动作: 已继续更新 `security/README`、`risk/README`、`07` 与 `api/46-services`，把“安全 / 风控 / 省 token / services 平面”继续压回同一条扩张定价对象链。
+- 本轮 atlas lint 硬化动作: 已继续更新 `01`、`api/30` 与 `09`，把源码地图和控制面图继续压成 `authority object / consumer subset / danger surface / reject path` 协议，并补出 Prompt `request object` 的更短装配顺序。
+- 本轮主线模板化动作: 已继续更新 `03` 与 `06`，把后半高阶原则继续压成固定模板，把作者过程式“下一轮”口吻继续改写成长期有效的自校协议。
+- 本轮旧框架降级动作: 已继续更新 `00`、`01`、`05` 与 `api/30`，把“五层拆解法 / 运行链路导览 / 目录级能力大全 / 快速统计”都明确降成辅助检索与热点定位材料，不再让它们先于三条高阶判断出场。
 - 本轮主线制度化动作: 已继续更新 `03`、`06`、`09`，把“设计哲学 / 第一性原理 / 三张控制面图”从高级观察继续收束为主线宪法、自我约束与读者固定判断顺序。
 - 本轮目录硬化动作: 已继续更新 `README`、`00-导读`、`00-总览`、`00-蓝皮书总览`、`navigation/03` 与 `09`，把 `09` 真正前置到一级阅读路径、去掉推荐链裸编号短写，并把兼容页进一步收回为跳转页。
 - 本轮术语收口动作: 已继续更新 `02`、`03`、`06`、`09`，让三条母线的正式表述统一以 `09` 为准，其余主线页只负责解释与应用。
 - 本轮专题入口收口动作: 已继续更新 `guides/README`、`navigation/README`、`philosophy/README`，明确 `guides/99-102`、`philosophy/84-87`、导航分流层都服从 `09` 的权威短语，而不是继续并列定义。
 - 本轮专题路由瘦身动作: 已继续把三个专题 README 里的过长跨目录细链压回 `navigation/README`，并在推荐入口层直接前置 `09`，减少“目录自己解释、自己分流、自己模板化”的角色混写。
+- 本轮根索引收口动作: 已继续更新 `bluebook/README`，把根层职责收回为稳定一级入口，明确 `docs/` 与 `bluebook/` 并列协同，把更深的跨目录细链统一交还 `navigation/README`，并把安全/风控入口先收回 `09` 的第二张控制面与 `philosophy/85`。
+- 本轮前部正文去记忆化动作: 已继续更新 `philosophy/09-15` 与 `architecture/27`、`38`，把“蓝皮书后续怎么写 / 对后续写作的约束 / 对蓝皮书的启发”改写成读者可复用的判断顺序与检查表，减少作者过程语言继续混入正文。
+- 本轮多 Agent 结果回灌动作: 已把并行 Agent 关于 `prompt 魔力`、`安全/省 token`、`源码先进性` 的三条硬判断回灌到 `09`、`security/README`、`risk/README` 与 `api/46-services`，把“世界准入法律 / 四种扩张定价 / 证据梯度 + 时间诚实”前置给第一次进入这些入口的读者。
+- 本轮入口去机制清单化动作: 已继续更新 `00-导读`、`api/README`、`api/46-services`、`security/14`、`risk/01` 与 `risk/11`，把入口页和总图页从“平面划分 / 机制枚举 / 流程闭环”继续压成“先判断什么、哪些对象在收费、哪些时间风险最危险”的前门语言。
+- 本轮入口结构换挡动作: 已继续更新 `06`、`07`、`navigation/01` 与 `navigation/41`，把三条硬判断正式提升成这些前门页的默认入口，原本的八问题、五平面与深层对象名词全部降为二级展开，不再并列竞争主线解释权。
+- 本轮主论证深化动作: 已继续更新 `03`、`security/01` 与 `philosophy/76`，把 Prompt 魔力、安全控制面、源码地图三条论证各自继续压到 `request object / 四种扩张定价 / 证据梯度+时间诚实+future maintainer` 这一层，而不只停在入口摘要。
 - 本轮深专题收束动作: 已继续更新 `navigation/03` 与 `07`，把旧深线接回新的主线/方法/验证/反例链，并把五个平面继续压回三句判断。
 - 主分支同步检查: `2026-04-06` 在仓库根执行 `git fetch origin && git pull --ff-only`，结果为 `Already up to date.`；当前本地 `main` 领先 `origin/main` 6 个提交，因此本轮不改主分支，只在 `mainloop` 内推进。
 - 主分支同步检查: `2026-04-06` 在当前研究 worktree 内再次执行 `git fetch origin main`；结果确认 `LOCAL_MAIN=801fe80`、`ORIGIN_MAIN=801fe80`，本轮开始前主分支仍无新增提交需要吸收，因此继续只在 `.worktrees/claude-code-risk-analysis` 内推进。
+- 主分支同步检查: `2026-04-06` 先尝试在仓库根执行 `checkout main && pull --ff-only`，但因共享主工作区存在未解决索引而停止；随后改用只读检查 `fetch origin + rev-parse/rev-list`，确认 `origin/main` 无新增提交，当前本地 `main` 领先 `origin/main` 29 个提交，因此本轮不改主分支，只在 `mainloop` 内推进。
 
 ### A090. 墓碑治理之后仍要继续分出复活治理：Claude Code 当前即便知道旧 cleanup 世界退役后留下什么标记，也还没有谁被正式授权决定哪些旧对象还能回来
 
@@ -50,6 +67,225 @@
 - 本轮最硬的源码证据有四组。第一组是 model sunset 正例：`deprecation.ts:29-100` 不只记录 deprecated models，还明确维护 provider-specific retirement dates，说明 repo 已把 “何时正式退役” 当成正式治理对象；`useDeprecationWarningNotification.tsx:6-31` 与 `main.tsx:2872-2892` 则把这份退役真相投影到长期 warning surface。第二组是 migration-vs-sunset 双时钟正例：`useModelMigrationNotifications.tsx:7-33` 只在 migration timestamp 刚写入时做一次性通知，而 `deprecation.ts` / deprecation warning 负责持续表达旧模型何时 retired；这说明 “刚迁完” 与 “即将退役” 本来就不是一件事。第三组是 compatibility-not-yet-ended 正例：`migrateLegacyOpusToCurrent.ts:12-53` 即便已把 `userSettings` 改到 `opus` 并记录 `legacyOpusMigrationTimestamp`，`model.ts:552-554` 仍保留 `CLAUDE_CODE_DISABLE_LEGACY_MODEL_REMAP` 这样的 remap 开关，说明 migration 已发生但 sunset 仍未 hard-close。第四组是 plugin sunset 正例：`cacheUtils.ts:23-24,74-171` 通过 `.orphaned_at` 与 `CLEANUP_AGE_MS = 7 days` 明确给出 storage sunset；`orphanedPluginFilter.ts:1-79` 与 `main.tsx:2546-2568` 又通过 orphan exclusion cache 给出 visibility sunset。它们共同说明 repo 并不把 “旧版本已进入过渡世界” 直接偷写成 “旧版本何时不再算当前世界”。
 - 本轮因此同步补入 `appendix/149-安全载体家族迁移治理与退役治理分层速查表` 与 `source-notes/16-model deprecation、migration notifications与plugin orphan grace window的退役治理边界`。这样 `165` 不再停留在 “migration != sunset” 的抽象口号，而是第一次把 `migration decision / sunset decision / positive control / cleanup retirement gap / governor question` 压成回查矩阵，并把 model/plugin 两条退役治理正例与 cleanup 线未来的 compatibility-ending 问题放进同一篇源码剖面里。
 - 这也把下一候选自然推进到 `166`：既然 `165` 已经证明 sunset 主权不等于 migration 主权，那么下一层最值得继续追问的就不再只是 “谁来宣布兼容期结束”，而是 “结束之后还留下什么最小历史标记来约束未来读者”。也就是：`artifact-family cleanup sunset-governor signer` 仍不等于 `artifact-family cleanup tombstone-governor signer`，需要继续研究 `.orphaned_at`、retirement date、migration timestamp 这类 tombstone / marker grammar 如何与 cleanup 线未来的旧 path、旧 promise 与旧 receipt 世界对接。
+### A102. 一旦旧框架被压成二级，最需要继续警惕的是“辅助材料重新夺回总纲地位”
+
+- `00` 里的五层拆解法、快速统计，`01` 里的入口链导览，`05` 里的长功能表，`api/30` 里的目录级能力大全，都有一个共同风险：它们天然有更强的结构感，读者会先记住它们，再把三条高阶判断当成解释性附录。
+- 所以这类材料不能只被写对，还必须被写明“只负责检索、抽样和定位”。否则越是补足，越容易重新成为旧世界观的入口。
+- 这也说明蓝皮书继续迭代时，最值钱的不是给每一类材料都加一句高阶判断，而是持续控制它们在阅读协议中的优先级。
+
+证据:
+
+- `bluebook/00-导读.md`
+- `bluebook/01-源码结构地图.md`
+- `bluebook/05-功能全景与API支持.md`
+- `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md`
+
+### A103. 能力前门真正成熟的标志，不是标签更稳，而是标签不再抢答
+
+- `公共主路径`、`宿主主路径`、`声明先行`、`产品受限` 这些标签当然有用，但它们只能是四层判断后的压缩结论，不能反过来替代判断过程。
+- 一旦读者在 `04 / 05 / 08 / api/23` 里先记住标签，而不是先走 `existence / implementation visibility / current admission / product promise`，能力前门就会重新退回“写法很整齐，但判断很危险”的状态。
+- 所以继续优化这组页面时，最值钱的动作不是发明新标签，而是让标签越来越像摘要，四层判断越来越像正文。
+
+证据:
+
+- `bluebook/04-公开能力与隐藏能力.md`
+- `bluebook/05-功能全景与API支持.md`
+- `bluebook/08-能力全集、公开度与成熟度矩阵.md`
+- `bluebook/api/23-能力平面、公开度与宿主支持矩阵.md`
+
+### A104. 长清单真正稳的时候，不是被删掉，而是被降成补证层
+
+- `05` 的八个接口表面、`08` 的五张对象表、`api/23` 的对象 truth 都有价值，但它们只能回答“哪些对象存在、哪些实现当前可见”，不能直接充当前门答案。
+- 一旦这些长表继续在正文中抢答“当前是否进入主路径、当前是否已形成产品承诺”，读者就会重新把大全、矩阵和标签当成判断本身，而不是把它们当成四层判断后的证据仓库。
+- 所以能力前门继续成熟的标志，不是对象表越来越大，而是正文与补证层的角色越来越硬：前门只判断，附表只补证，标签只摘要。
+
+证据:
+
+- `bluebook/05-功能全景与API支持.md`
+- `bluebook/08-能力全集、公开度与成熟度矩阵.md`
+- `bluebook/api/23-能力平面、公开度与宿主支持矩阵.md`
+
+### A105. 源码地图真正成熟的标志，不是目录解释更全，而是更快交出拒收问题
+
+- `01` 与 `api/30` 这类地图页真正值钱的，不是把链路、目录、对象和体量再讲一遍，而是让后来者第一时间问出：谁在宣布真相、谁只是当前可见子集、哪里最容易把过去写成第二真相、如果不同意当前实现应先沿哪条入口链拒收。
+- 一旦地图页先教读者背目录、背数量、背能力分组，它就会重新退回 atlas；只有当这些材料被降成定位与补证层，源码地图才开始服务治理、重构与 future maintainer。
+- 这也说明目录优化的更高一层标准，不是“目录更清楚”，而是“目录页更快把人送到 authority、danger surface 与 reject path”。
+
+证据:
+
+- `bluebook/01-源码结构地图.md`
+- `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md`
+- `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`
+
+### A106. Prompt 魔力真正成熟的标志，不是措辞更像专家，而是交接后仍只有一个主语
+
+- 只要 `display truth / protocol truth / handoff truth` 仍被压在同一个 `request object` 里，当前回合、继续回合与人类接手回合就不会各自重造一个平行世界。
+- 这也解释了为什么 coordinator prompt、AgentTool prompt、compact prompt、memory、summary 与 suggestion 不能被分开理解：它们共同在维护 `role contract`、`cache boundary` 与 `handoff truth`，而不是各自贡献一点“更聪明的话术”。
+- 所以蓝皮书继续写 prompt 设计哲学时，最应该拒绝的旧写法不是“少讲了几个 prompt 细节”，而是把这整条装配链重新写回 system prompt 评论。
+
+证据:
+
+- `bluebook/philosophy/14-提示词魔力来自运行时而非咒语.md`
+- `bluebook/03-设计哲学.md`
+- `bluebook/06-第一性原理与苏格拉底反思.md`
+- `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+
+### A107. 跨目录推荐链必须只有一个所有者
+
+- 根索引、`00` 和专题 README 一旦同时开始发放跨目录阅读链，读者实际收到的不是“更多帮助”，而是多套竞争中的入口协议。
+- 更稳的目录分工应继续写硬：根索引只保留一级路由与最短主线，专题 README 只保留本目录簇级入口，`navigation/README` 独占跨目录、跨阶段、跨工件的深链路。
+- 这也解释了为什么 README 的成熟度不在“链接更多”，而在“知道哪些链该交出去”。
+
+证据:
+
+- `bluebook/README.md`
+- `bluebook/00-导读.md`
+- `bluebook/philosophy/README.md`
+- `bluebook/guides/README.md`
+- `bluebook/navigation/README.md`
+
+### A108. 安全、风控、省 token 与 services 平面真正成熟时，会重新收回同一条定价对象链
+
+- `security` 写动作、权威、上下文与时间四种扩张如何被收费，`risk` 写这张账怎样在身份、组织、入口与恢复上显形，`services` 写这张账落成哪些权威入口对象；三者如果分开写，读者就会重新回到规则堆、封禁叙事和后台杂项目录。
+- 所以入口页最值钱的不是再加一个“统一预算器”口号，而是把 `request truth / continuation asset / capability governance` 继续对应到 `api / compact / memory / mcp` 这些对象。
+- 这也说明“省 token”真正该写进安全前门，而不是被留作成本附题；因为它收费的是上下文与时间扩张，本来就是治理控制面的一部分。
+
+证据:
+
+- `bluebook/security/README.md`
+- `bluebook/risk/README.md`
+- `bluebook/07-运行时契约、知识层与生态边界.md`
+- `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`
+
+### A109. atlas 页真正成熟时，不再给你更多目录感，而是更快逼你给出 reject path
+
+- `01`、`api/30` 这类地图页一旦只剩分组说明、transport 列表、工具清单与使用启发，读者虽然知道对象更多了，却仍不知道哪里在宣布真相、哪里只是投影、哪里最危险、哪里先拒收。
+- 更稳的 atlas 协议必须强制每个平面至少回答：authority object 是谁、哪些 consumer 只拿子集、哪些 stale write / second truth 最危险、第一条 reject path 应回到哪个入口文件。
+- 这也说明 atlas 页和主线页的真正协作方式：`09` 给出最短装配顺序，`01` 给出主权链与危险改动面，`api/30` 给出每个平面的 authority / subset / reject protocol；三者合在一起，目录美学才不再冒充结构判断。
+
+证据:
+
+- `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+- `bluebook/01-源码结构地图.md`
+- `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md`
+
+### A110. 高阶原则真正成熟时，会自己长出坏解法、authority 与渐进改写顺序
+
+- 如果 `03` 后半仍只是一串更高阶的原则判断，读者知道“什么更好”，却仍不知道错误通常长什么样、第一条 reject path 应回到哪里、迁移时该先 shadow 还是先切换。
+- 同样，如果 `06` 的自我反思仍带“下一轮怎么做得更好”的时间口吻，它就仍更像作者工作台，而不是任何一轮都能复用的自校协议。
+- 所以主线继续成熟的标志，不是判断更多，而是每条高阶判断开始自带 authority object、坏解法、reject path 与 migration order；苏格拉底问题也开始脱离轮次时间，成为长期稳定的审读梯子。
+
+证据:
+
+- `bluebook/03-设计哲学.md`
+- `bluebook/06-第一性原理与苏格拉底反思.md`
+
+### A100. 设计内涵继续深化后，最值钱的不再是更多高阶短句，而是把高阶短句压成可排查的对象
+
+- Prompt 线如果只停在“世界进入模型前先被编译”，仍可能被重新误读成更强 prompt 工艺；只有继续压到 `display truth / protocol truth / handoff truth` 同属一个 request object，以及 prefix asset 能否继续共享，读者才会真正离开“文案更强”的旧解释。
+- 治理线如果只停在“统一定价”，仍可能被重新误读成更精细的风控故事；只有继续压到权威、动作、上下文、连续性四类扩张分别在被收费，安全与省 token 的同构性才会变得可检验。
+- 源码质量线如果只停在“权威入口 / consumer subset / danger surface”，仍会残留目录美学读法；必须继续把证据梯度、时间诚实与 future maintainer reject path 一起写进源码地图，才能真正把 later 维护者纳入设计对象。
+
+证据:
+
+- `bluebook/03-设计哲学.md`
+- `bluebook/security/01-安全总论：Claude Code 不是单点沙箱，而是分层安全控制面.md`
+- `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`
+
+### A099. 当主线已经有了更高阶判断，真正难的不是写出它，而是让旧框架退到二级
+
+- `06` 的八个不可约问题、`07` 的五个平面、`navigation/01` 的八问题地图、`navigation/41` 的深层对象名词，都各自有解释力；但一旦它们继续在开头带路，读者就会先形成“运行时有很多平面/问题/对象”的旧世界观，再被后文纠偏到三条硬判断。
+- 这说明前门优化的第二阶段不是再补一句高阶判断，而是做入口结构换挡：三条硬判断先出现，旧框架只保留为操作面、诊断面和对象面展开。
+- 只有这样，蓝皮书才算真正从“多视角解释同一个系统”转向“先有一套宪法，再有多种展开方式”。
+
+证据:
+
+- `bluebook/06-第一性原理与苏格拉底反思.md`
+- `bluebook/07-运行时契约、知识层与生态边界.md`
+- `bluebook/navigation/01-第一性原理阅读地图.md`
+- `bluebook/navigation/41-机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理.md`
+
+### A098. 目录结构继续成熟后，最容易落后的反而是总图页和 atlas 页
+
+- README 已经学会只做入口层之后，`00-导读`、`security/14`、`risk/11`、`api/46-services` 这类“总图页 / atlas 页”最容易重新变成新的信息堆积处：目录更清楚了，但总图仍在讲分层和机制清单，而不是先讲判断顺序。
+- 这类页面如果不继续收口，读者会先被“七层主链”“六段式闭环”“七个平面”这些结构感说服，再回到旧的模块主义读法，而不是直接带着高阶判断进入专题。
+- 所以更成熟的做法不是删掉总图，而是把总图改写成“哪些对象在收费、谁有资格宣布真相、哪些时间风险最危险、future maintainer 从哪里开始怀疑”的入口法。
+
+证据:
+
+- `bluebook/00-导读.md`
+- `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`
+- `bluebook/security/14-安全控制面总图：从 trust 到 entitlement 的全链结构图谱.md`
+- `bluebook/risk/11-治理闭环时序：观测、判定、下发、阻断与恢复.md`
+
+### A097. 多 Agent 并行深挖真正值钱的地方，不是多出几段评论，而是逼出应该落在哪个入口层的判断
+
+- Prompt 线的 Agent 说明，最该前置的不是更多“魔力”赞叹，而是“世界进入模型之前已先被编译”“同一个 request object 如何跨 display truth / protocol truth / handoff truth 继续成立”；所以落点应先是 `09`，而不是再在深层专题里堆解释。
+- 安全线的 Agent 说明，最该前置的不是更多分层名词，而是“动作、权威、上下文、时间四种扩张被统一定价”；所以落点应先是 `security/README` 与 `risk/README` 的入口句，而不是只留在 `architecture/83` 深层。
+- 源码质量线的 Agent 说明，最该前置的不是再讲目录层次，而是“证据梯度 + 时间诚实 + future maintainer 正式消费者地位”；所以落点应先是 `api/46-services` 这类 atlas 入口，而不是只停在后部哲学篇。
+
+证据:
+
+- `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+- `bluebook/security/README.md`
+- `bluebook/risk/README.md`
+- `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`
+
+### A095. 真正该从正文迁出的，不是所有自我反思，而是只服务作者流程的元写作语言
+
+- `philosophy/09-15` 与 `architecture/27`、`38` 的污染点证明，正文最容易混入的不是“抽象反思”，而是“蓝皮书后续怎么写、这一层接下来如何处理”这类只服务当前写作者的过程语言。
+- 这类内容一旦留在正文，读者会被迫同时消费两层东西：一层是 Claude Code 的设计判断，另一层是这本蓝皮书当下怎样继续长文。后者不具可迁移性，也不该伪装成设计内容。
+- 更稳的处理方式不是把这些段落全删掉，而是把它们重写成可迁移的方法约束，例如“判断宿主接入时的最小检查表”“公开镜像下研究源码质量时的最小判断顺序”。这样保住了苏格拉底反问的价值，但把作者过程语言迁回 `docs/`。
+
+证据:
+
+- `bluebook/philosophy/09-宿主控制平面优于聊天外壳.md`
+- `bluebook/philosophy/10-协议全集不等于适配器子集.md`
+- `bluebook/philosophy/11-显式失败优于假成功.md`
+- `bluebook/philosophy/12-闭环状态机优于单向请求.md`
+- `bluebook/philosophy/13-外化状态优于推断状态.md`
+- `bluebook/philosophy/14-提示词魔力来自运行时而非咒语.md`
+- `bluebook/philosophy/15-工程化质量优于聪明技巧.md`
+- `bluebook/architecture/27-能力迁移、Consumer Subset与产品边界.md`
+- `bluebook/architecture/38-Contract优先、运行时底盘与公开镜像缺口.md`
+
+### A094. 去记忆化最值钱的动作，不是去掉“约束”，而是把约束从作者自述改写成读者可复用的方法
+
+- 如果只是把“后续写作约束”整段删掉，正文会失去一部分自校准能力；但如果保留“蓝皮书接下来该怎么写”，正文又会重新承担作者工作台的职责。
+- 本轮高污染页的清理说明，更强的做法是把约束抽象成判断顺序：例如宿主控制平面应先分 UI 壳 / control plane、transport / control semantics、全集 / 子集；源码质量应先找跨层问题、复用结构、失败/缓存/恢复/边界语义。
+- 这意味着“正文 vs 记忆”的分界不该按语气切，而应按消费者切：能直接帮助读者以后重复判断的，留在正文；只帮助当前作者推进批次的，回到 `docs/`。
+
+证据:
+
+- `bluebook/philosophy/09-宿主控制平面优于聊天外壳.md`
+- `bluebook/philosophy/15-工程化质量优于聪明技巧.md`
+- `bluebook/architecture/38-Contract优先、运行时底盘与公开镜像缺口.md`
+
+### A093. 当根索引已经明确自己只是入口层时，真正要防的是它再次长成“更厚的导航 README”
+
+- 根 README 一旦继续维护 Prompt / 治理 / 源码质量的长编号链，它就会和 `navigation/README` 重新竞争“谁来负责跨目录分流”，也会和专题 README 重新竞争“谁来负责专题解释”。
+- 所以本轮更值钱的收口不是再删几个链接，而是把角色边界进一步写硬：根索引只暴露稳定入口、权威回链与目录职责；更深路由回到 `navigation/README`，过程问题回到 `docs/`。
+- 这也进一步说明“目录越厚越成熟”是错觉。真正成熟的是入口层知道何时停止解释、停止分流，并把读者交回专职层。
+
+证据:
+
+- `bluebook/README.md`
+- `bluebook/navigation/README.md`
+- `docs/README.md`
+
+### A092. 安全与风险入口如果绕过 `09/85`，读者就会重新把治理读成专题并列项，而不是主线宪法的第二张控制面
+
+- 安全、风控、误伤恢复当然有自己的目录与深文，但它们的稳定入口不应从根索引直接平铺成“另一个并列主题”，否则读者会跳过“扩张如何被定价”这条主线判断。
+- 所以根层更稳的做法是先把读者送回 `09` 的第二张控制面与 `philosophy/85`，先建立“安全=扩张定价”的判断，再进入 `security/README`、`risk/README` 与 `casebooks/README` 读具体对象与反例。
+- 这也意味着目录结构的成熟不只是减少链接数量，而是确保专题入口不会绕开更高阶的判断前提。
+
+证据:
+
+- `bluebook/README.md`
+- `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+- `bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md`
+- `bluebook/security/README.md`
+- `bluebook/risk/README.md`
 
 ### A091. 当目录开始成熟后，最值钱的不是再写更长的推荐链，而是把跨目录细节重新收回专职导航层
 

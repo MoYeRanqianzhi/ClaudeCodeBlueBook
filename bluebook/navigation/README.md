@@ -28,8 +28,6 @@
 - [46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布](46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布.md)
 - [77-宿主修复稳态纠偏再纠偏导航：Prompt、治理与故障模型纠偏执行失真如何压回固定顺序、拒收升级路径与改写模板骨架](77-宿主修复稳态纠偏再纠偏导航：Prompt、治理与故障模型纠偏执行失真如何压回固定顺序、拒收升级路径与改写模板骨架.md)
 - [102-宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议导航：compiled request truth、pricing object、authority stream与reopen责任面](102-宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议导航：compiled request truth、pricing object、authority stream与reopen责任面.md)
-- [103-宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行导航：compiled request card、pricing card、authority stream card与reopen演练](103-宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行导航：compiled request card、pricing card、authority stream card与reopen演练.md)
-- [104-宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真导航：假compiled request card、假pricing card、假authority stream card与假reopen](104-宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修失真导航：假compiled request card、假pricing card、假authority stream card与假reopen.md)
 
 ## 什么时候用它
 

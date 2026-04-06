@@ -8,6 +8,112 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `03 / 06` 已继续把主线高阶判断压成稳定模板：
+  - `03` 现已更明确把后半高阶原则补成 `authority object / bad solution / reject path / migration order` 的固定落笔顺序。
+  - `06` 现已把“下一轮怎么做得更好”改写成长期有效的持续自校协议，减少作者轮次口吻继续混入正文。
+- 新的长期结论：
+  - 设计内涵真正成熟的标志，不是高阶判断更多，而是高阶判断开始自带坏解法、拒收入口和渐进改写顺序。
+  - 苏格拉底自反真正稳定时，不再依赖“下一轮怎么写”这种时间口吻，而是直接变成任何一轮都能复用的自校问题梯子。
+- `01 / api/30 / 09` 已继续把 atlas 页从判断方向压到判断协议：
+  - `09` 现已更明确把 Prompt `request object` 写成 `authority chain / section registry -> dynamic boundary / attachment delta -> protocol transcript normalization -> lawful forgetting / compaction -> cache-safe forks / handoff continuation`。
+  - `01` 现已更明确把 MCP / remote 边界继续写成 authority、merge/dedup/policy/auth 与 stale auth 风险问题，而不是 transport 枚举。
+  - `api/30` 现已更明确给 `commands / tools / services / utils / components` 都补了 authority、subset、danger surface 与 reject path 的固定问法。
+- 新的长期结论：
+  - atlas 页真正成熟的标志，不是目录讲得更全，而是每一层都能直接交出 authority object、危险改动面和第一条 reject path。
+  - Prompt 魔力一旦被写成装配顺序，主线页、哲学页和地图页就能共享同一条 request object 语言，而不是各自再造一个 Prompt 故事。
+- `README / 00 / philosophy/README / guides/README / navigation/README` 已继续把目录结构收回稳定分工：
+  - 根索引现已更明确只保留一级路由与最短阅读路径，不再兼任二级导航器。
+  - `00` 现已继续收回正文判断，弱化 dated scan 与长阅读脚本。
+  - `philosophy/README`、`guides/README`、`navigation/README` 现已更明确把跨目录细链收回到更少的稳定节点。
+- `security/README / risk/README / 07 / api/46-services` 已继续把统一定价秩序前置到入口：
+  - `security/README` 现已更明确把省 token 写成安全控制面的上下文与时间维度。
+  - `risk/README` 现已更明确把风控写成统一价格秩序在身份、组织、入口与恢复上的用户侧显形。
+  - `07` 与 `api/46-services` 现已更明确把 `request truth / continuation asset / capability governance` 对应到 `api / compact / memory / mcp` 这些权威入口。
+- 新的长期结论：
+  - 跨目录推荐链必须有单一所有者；更稳的目录秩序是根索引管一级路由，专题 README 管本目录入口，`navigation/README` 独占跨目录链。
+  - 安全、风控、省 token 与服务平面不该被写成四个专题，而应被持续压回同一张扩张定价控制面。
+- `03 / 06 / 09 / philosophy/14` 已继续把 prompt 魔力从“文案更强”压成正式对象：
+  - `philosophy/14` 现已更明确把 prompt 合同写成 `request object / role contract / cache boundary / handoff truth`，减少“神 prompt 评论”口吻。
+  - `03 / 06 / 09` 现已更明确把 Prompt 线的最短判断统一压到这四个对象上，避免主线页与哲学页各自漂回抽象赞美。
+- 新的长期结论：
+  - prompt 哲学真正难抄走的，不是 system prompt 句子，而是 display truth、protocol truth、handoff truth 是否仍活在同一个 request object 上。
+  - 多 Agent prompt、compact prompt 与 memory/summary/handoff 并不是若干独立技巧，而是在共同维护角色合同、缓存边界与继续资格。
+- `01 / api/30` 已继续把源码地图从 atlas 压成判断协议：
+  - `01` 现已更明确把主链路、能力发布、多 Agent 与远程边界都写成“谁在宣布真相、谁在裁切可见集、谁最容易写出第二真相”。
+  - `api/30` 现已更明确把目录级平面写成 authority / subset / danger surface 地图，而不是命令大全、工具大全与服务大全。
+- 新的长期结论：
+  - 好的源码地图真正要保护的不是“覆盖更多目录”，而是让后来者更快分清 authority、projection、第二真相与拒收路径。
+  - 目录统计、对象统计和体量信号只能负责定位危险平面，不能直接冒充产品承诺或源码先进性结论。
+- `05 / 08 / api/23` 已继续把正文前门与补证层重新分开：
+  - `05` 现已更明确把八个接口表面与长功能表降成代表入口和对象 truth 索引，不再让长清单直接抢答“支持到哪一层”。
+  - `08` 现已把能力矩阵从压缩判断改成四列显式记账：`existence / implementation visibility / current admission / product promise`。
+  - `api/23` 现已更明确把五种标签降回结果写法，矩阵正文先写四层判断，再写结果标签。
+- 新的长期结论：
+  - 正文里最容易重新夺权的不是作者记忆，而是“看起来很中性的总表、矩阵与对象清单”；如果不把它们降成补证层，读者会先记住标签和大全，再回头补判断。
+  - 更成熟的能力前门不是对象表更大，而是前门只负责四层判断，对象 truth 统一退到附表、回链与补证层。
+- `04 / 05 / 08 / api/23` 已继续把能力前门从压缩标签拉回四层判断：
+  - `04` 现已更明确把三类能力改成四层问题之后的结果桶，而不是前门分类法。
+  - `05` 现已更明确把长功能表限定为“存在层与暴露面”，不默认冒充主路径、被允许或可承诺。
+  - `08` 与 `api/23` 现已更明确把矩阵/标签视为压缩写法，要求读者继续拆回 `existence / implementation visibility / current admission / product promise`。
+- 新的长期结论：
+  - 一旦能力前门只剩标签，读者就会跳过真正的判断顺序，直接把“公共主路径 / 产品受限 / gate 边界”当最终答案。
+  - 更成熟的能力前门不是标签更多，而是标签越来越退到后面，四层判断越来越前置。
+- `00 / 01 / 05 / api/30` 已继续降级旧框架的优先级：
+  - `00` 现已更明确把“五层拆解法”和“快速统计”降为辅助检索与热点定位，而不再竞争主判断地位。
+  - `01` 与 `api/30` 现已更明确把“结构图 / 目录级能力图”读成真相地图，而不是源码观光或目录大全。
+  - `05` 现已更明确把长表和长名单先限定在存在层，不允许它们默认冒充主路径承诺。
+- 新的长期结论：
+  - 当高阶判断已经建立后，真正要持续清理的不是所有长文，而是那些“自带结构感”的材料：方法论、统计、导览图、能力大全最容易重新夺回解释权。
+  - 更成熟的蓝皮书不是删掉这些材料，而是明确它们只服务于检索、抽样和定位，不再充当第一判断层。
+- `01 / 04 / 05 / 08 / api/23 / navigation/02` 已继续收紧成能力前门与结构地图判断协议：
+  - `01` 现已更明确把源码结构地图写成 `authority / subset / danger / temporal risk` 地图，而不是目录树展开。
+  - `04 / 05 / 08 / api/23 / navigation/02` 现已更明确把能力讨论固定到 `existence / current visibility / current admission / product promise` 四层，避免重新退回“代码里有就算支持”。
+- 新的长期结论：
+  - 当前门和主论证都开始成熟后，真正容易漏掉的是“能力前门”和“结构地图”这种看似中性的信息页；它们如果不持续收口，最容易把读者重新送回旧的功能表与目录体感。
+  - 结构地图真正要保护的是时间上的第二真相，而不仅是空间上的危险改动面；能力前门真正要保护的是承诺边界，而不只是列全能力。
+- `03 / security/01 / philosophy/76` 已继续深化主论证本体：
+  - `03` 现已更明确把 Prompt 魔力压成 `display truth / protocol truth / handoff truth` 同属一个 request object，并把安全/成本/体验继续压成四种扩张统一定价。
+  - `security/01` 现已更明确把六层安全控制面继续压回“权威 / 动作 / 上下文 / 连续性”四类扩张收费。
+  - `philosophy/76` 现已更明确把源码地图继续压回“证据梯度 + 时间上的第二真相 + future maintainer reject path”。
+- 新的长期结论：
+  - 真正深入设计内涵时，不能只在前门摘要里写高阶判断；主论证页本体也必须能把它们继续压成更不可约的对象和排查顺序。
+  - 源码地图一旦只剩空间分层，迟早会重新被目录美学夺权；必须把时间诚实和 later maintainer 的拒收能力一起写进去，地图才真正服务运行时治理。
+- `06 / 07 / navigation/01 / navigation/41` 已继续完成入口结构换挡：
+  - 三条硬判断现在更明确成为这些前门页的默认入口。
+  - 八个不可约问题、五个平面、机制对象名词被继续降为第二层诊断框架，而不再和三条硬判断并列竞争主线地位。
+- 新的长期结论：
+  - 当前门已经具备高阶判断后，真正要继续清理的不是措辞细节，而是“旧入口框架仍先出场”。只要八问题、五平面、深层对象名词继续在开头带路，读者还是会先进入旧世界观。
+  - 更成熟的目录优化不只是新增前门判断，还要持续把旧的解释骨架降级成二级展开，让主线真正只保留一套最高阶入口。
+- 入口页与总图页已继续去“平面/机制清单化”：
+  - `00-导读` 现已更明确把三条硬判断各自往下压半层，避免第一次进入时仍把 Prompt 魔力读成文案、把治理读成拦截器、把源码质量读成目录体感。
+  - `api/README` 与 `api/46-services` 现已更明确把 `contract truth -> registry truth -> authoritative surface -> adapter subset -> danger surface` 前置成接口入口判断，并补出 temporal risk 与 future maintainer reject path。
+  - `security/14`、`risk/01`、`risk/11` 现已更明确把层链和闭环继续压回统一定价控制面，避免安全/风控入口重新退回规则堆与流程图叙事。
+- 新的长期结论：
+  - 当高阶判断已经被前置到专题 README 后，下一步最值钱的不是继续堆更多“入口推荐链”，而是继续把总图页和 atlas 页从“模块分层说明”压成“判断顺序说明”。
+  - 安全与风控入口一旦只剩机制分类，读者就会重新把它们读成黑箱规则；必须持续把它们压回“哪些扩张在被收费、哪些连续性在被续租”的语言。
+- 多 Agent 深挖结果已继续落回主线与专题前门：
+  - `bluebook/09` 现已更明确写出 Prompt 魔力真正保护的是当前 / 下一步 / compact 后 / handoff 后仍活在同一个世界里，而不是某段 system prompt 更会说。
+  - `security/README` 与 `risk/README` 现已更明确把安全、风控、误伤恢复前置回“扩张如何被定价”的第二张控制面，不再把安全专题读成规则堆、把风控专题读成另一套封禁叙事。
+  - `api/46-services` 现已更明确把 `contract truth -> registry truth -> authoritative surface -> adapter subset -> danger surface` 前置成 `services/` atlas 的证据梯度，避免目录美学重新冒充源码质量判断。
+- 新的长期结论：
+  - Prompt 魔力最难抄走的不是 system prompt 文案，而是 `display truth / protocol truth / handoff truth` 是否仍被压在同一个 request object 上，以及 prefix asset 是否还能被辅助循环复用。
+  - 安全与省 token 不是两套系统，而是统一在给动作、权威、上下文与时间四种扩张收费；“更安全”和“更省 token”只是同一价格秩序在不同资产上的表现。
+  - 源码先进性的更高阶前门标准，应固定为“证据梯度 + 时间诚实 + future maintainer 正式消费者地位”，而不是目录细度、文件数量或大文件体感。
+- 前部高流量正文页已继续去记忆化：
+  - `philosophy/09-15` 与 `architecture/27`、`architecture/38` 里原本直接面向“蓝皮书后续怎么写”的问题、章节标题与约束语句，现已改写成读者可复用的最小判断顺序与检查表。
+  - 这批改写保留了苏格拉底反问与第一性原理自检，但不再让正文承担作者自己的过程管理语言。
+- 新的长期结论：
+  - 正文里最危险的记忆污染，不是出现“下一步”三个字，而是把只服务作者推进的元写作约束，伪装成读者应该消费的章节内容。
+  - 更稳的去记忆化不是删掉反思，而是把“蓝皮书如何继续写”改写成“研究者应按什么顺序判断”；能迁移给读者的方法留在正文，只服务当前批次的过程信息回到 `docs/`。
+- 根索引职责已继续收口到稳定一级入口：
+  - `bluebook/README` 现已明确自己只负责一级路由、目录职责与稳定阅读路径，不再维持过长跨目录细链。
+  - `docs/` 现已明确与 `bluebook/` 并列协同，而不是被读成 `bluebook/` 里的下级目录。
+  - 更深的跨目录阅读链统一继续回交给 `navigation/README`，避免根索引、专题 README 与导航 README 同时维护长链。
+  - 安全、风控与误伤恢复的根入口，现已先回到 `09` 的第二张控制面与 `philosophy/85`，再进入 `security/README`、`risk/README` 与 `casebooks/README`，减少治理阅读链绕过主线宪法。
+- 新的长期结论：
+  - 根索引成熟度不在“能不能塞下更多入口”，而在“能否克制自己不去兼做导航层与专题解释层”。
+  - 一旦根索引继续维护过长跨目录编号链，读者就会重新把入口厚度误读成判断权威；更稳的做法是根索引只暴露稳定入口，深链交还 `navigation/README`。
+  - 目录层的真正协同关系应固定为：`09` 定义，`philosophy/` 解释，`guides/` 模板化，`navigation/` 分流，`docs/` 记忆化。
 - 专题目录入口已继续收口到主线宪法：
   - `guides/README` 现在更明确说明 `99-102` 只是把 `09` 的三条控制面判断落成模板与证据方法，不再重新定义三条母线。
   - `philosophy/README` 现在更明确说明 `84-87` 是对 `09` 的哲学收束，而不是另一套并列主线。
