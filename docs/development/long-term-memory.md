@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/65 / 75 / 76` 已继续把三条“精修链”补到和前面验收、验证、再纠偏页同代：
+  - `65` 现已把 Prompt 精修从 `compiled request truth` 链继续压到 `message lineage / projection consumer / continuation object`。
+  - `75` 现已把治理精修从 `authority mode` / `mode panel` 语法继续压到 `governance key / externalized truth / durable-vs-transient`。
+  - `76` 现已把结构精修从 `authority stream / transport / anti-zombie` 继续压到 `event stream / state writeback / freshness gate / stale worldview / ghost capability`。
+- 新的长期结论：
+  - 三条执行链真正完整时，修复链、再纠偏链与精修链都必须使用同代对象；否则链条越往后越容易重新漂回旧词。
+  - Prompt 精修真正成熟时，不应再把 `message lineage` 藏在字段里，而应把它抬到精修 card 的主对象位。
+  - 治理精修真正成熟时，不应再让 `permission_mode` 充当前门主语，而应始终退回 `governance key` 和 externalized truth。
+  - 结构精修真正成熟时，不只要 fail-closed，还要显式防 stale worldview 与 ghost capability，否则“防过去写坏现在”仍不够硬。
 - `playbooks/56 / 57 / 58` 已继续把“再纠偏执行”这一层补到和验收页、长期验证页同代的对象语言：
   - `56` 现已把 Prompt recorrection 从单纯 `compiled request truth` 压到 `message lineage / projection consumer / continuation object`。
   - `57` 现已把治理 recorrection 从抽象 `authority source` 压到 `governance key / externalized truth chain / durable-vs-transient`。

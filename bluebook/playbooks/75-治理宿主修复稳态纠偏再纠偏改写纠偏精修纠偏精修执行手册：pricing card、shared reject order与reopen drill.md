@@ -1,4 +1,4 @@
-# 治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：pricing card、shared reject order 与 reopen drill
+# 治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：governance key pricing card、shared reject order与reopen drill
 
 这一章不再解释治理 refinement correction refinement protocol 该共享哪些字段，而是把 Claude Code 式治理 refinement correction refinement protocol 压成一张可持续执行的 cross-consumer `pricing card`。
 
@@ -34,11 +34,11 @@
 
 而是：
 
-- authority、action、window、continuation、classifier、reject、writeback、ingress 与 liability 仍围绕同一个治理对象正式宣布：现在什么能继续、什么值得继续、什么必须被拒绝继续
+- governance key、action、window、continuation、classifier、reject、writeback、ingress 与 liability 仍围绕同一个治理对象正式宣布：现在什么能继续、什么值得继续、什么必须被拒绝继续
 
 Claude Code 当前已经把治理 truth 拆在九类对象上：
 
-1. `authority_mode_surface`
+1. `governance_key_surface`
 2. `action_candidate_surface`
 3. `blocked_action_surface`
 4. `window_truth_surface`
@@ -58,31 +58,35 @@ Claude Code 当前已经把治理 truth 拆在九类对象上：
 2. `repair_attestation_id`
 3. `reprotocol_session_id`
 4. `governance_object_id`
-5. `permission_mode_external`
-6. `is_ultraplan_mode`
-7. `action_candidate_ref`
-8. `pending_action_ref`
-9. `window_total_tokens`
-10. `window_max_tokens`
-11. `window_pct`
-12. `reserved_tokens`
-13. `continuation_action`
-14. `continuation_count`
-15. `classifier_cost_usd`
-16. `classifier_should_block`
-17. `classifier_reason`
-18. `consecutive_denials`
-19. `pending_permission_requests_count`
-20. `writeback_attested`
-21. `ingress_head_uuid`
-22. `shared_reject_verdict`
-23. `threshold_retained_until`
-24. `reopen_required_when`
-25. `verdict_reason`
+5. `governance_key`
+6. `externalized_truth_chain`
+7. `permission_mode_external`
+8. `is_ultraplan_mode`
+9. `action_candidate_ref`
+10. `pending_action_ref`
+11. `window_total_tokens`
+12. `window_max_tokens`
+13. `window_pct`
+14. `reserved_tokens`
+15. `continuation_action`
+16. `continuation_count`
+17. `classifier_cost_usd`
+18. `classifier_should_block`
+19. `classifier_reason`
+20. `consecutive_denials`
+21. `pending_permission_requests_count`
+22. `durable_assets_after`
+23. `transient_authority_cleared`
+24. `writeback_attested`
+25. `ingress_head_uuid`
+26. `shared_reject_verdict`
+27. `threshold_retained_until`
+28. `reopen_required_when`
+29. `verdict_reason`
 
 四类消费者的分工应固定为：
 
-1. 宿主看 authority mode、action candidate 与 blocking projection 是否仍唯一。
+1. 宿主看 governance key、action candidate 与 blocking projection 是否仍唯一，并且只消费 externalized truth。
 2. CI 看 window、continuation、classifier、denial threshold、writeback 与 ingress 顺序是否完整。
 3. 评审看 `shared_reject_verdict` 是否仍围绕同一个统一定价对象，而不是围绕 mode 面板与 usage dashboard 投影。
 4. 交接看 later 团队能否只凭 `pricing card` 重建同一判定与责任边界。
@@ -93,15 +97,17 @@ Claude Code 当前已经把治理 truth 拆在九类对象上：
 
 先看当前准备宣布 protocol 可执行的，到底是不是同一个 `governance_object_id`，而不是一张更正式的稳定说明。
 
-### 3.2 再验 `authority_mode_surface`
+### 3.2 再验 `governance_key_surface`
 
 再看：
 
-1. `permission_mode`
-2. `is_ultraplan_mode`
-3. `is_auto_mode_available`
-4. `should_avoid_permission_prompts`
-5. `await_automated_checks_before_dialog`
+1. `governance_key`
+2. `externalized_truth_chain`
+3. `permission_mode`
+4. `is_ultraplan_mode`
+5. `is_auto_mode_available`
+6. `should_avoid_permission_prompts`
+7. `await_automated_checks_before_dialog`
 
 这一步先回答：
 
@@ -255,8 +261,8 @@ Claude Code 当前已经把治理 truth 拆在九类对象上：
 一旦 verdict 升级为 `reentry_required` 或 `reopen_required`，最低顺序应固定为：
 
 1. 冻结当前 `pricing card`，禁止把 mode 面板与 usage dashboard 当成真相。
-2. 保存 `permission_mode_external`、`action_candidate_ref`、`window_total_tokens`、`continuation_action`、`classifier_cost_usd` 与 `ingress_head_uuid`。
-3. 先重建 authority 与 action candidate，再重建 window 与 continuation gate，最后才考虑重新放权。
+2. 保存 `governance_key`、`externalized_truth_chain`、`action_candidate_ref`、`window_total_tokens`、`continuation_action`、`classifier_cost_usd` 与 `ingress_head_uuid`。
+3. 先重建 governance key 与 action candidate，再重建 window 与 continuation gate，最后才考虑重新放权。
 4. 明确 `liability_owner` 与 `reopen_required_when`，禁止把 reopen 写成流程备注。
 
 ## 6. 苏格拉底式自检
@@ -266,5 +272,6 @@ Claude Code 当前已经把治理 truth 拆在九类对象上：
 1. 我共享的是同一个统一定价对象，还是四份彼此相像的治理说明。
 2. 我共享的是同一条 shared reject order，还是不同消费者各自的继续阈值。
 3. 我保留的是 future reopen 的正式能力，还是一句“以后再看”。
-4. later 团队接手时依赖的是对象、价格与责任，还是仍要回到 dashboard、approval calmness 与作者记忆。
-5. 我现在保护的是 Claude Code 的安全设计与省 token 设计，还是只是在把它们写成更像制度的文稿。
+4. later 团队接手时依赖的是 governance key、externalized truth 与责任，还是仍要回到 dashboard、approval calmness 与作者记忆。
+5. 我恢复的是 durable assets，还是把 transient authority 也偷偷续租了。
+6. 我现在保护的是 Claude Code 的安全设计与省 token 设计，还是只是在把它们写成更像制度的文稿。
