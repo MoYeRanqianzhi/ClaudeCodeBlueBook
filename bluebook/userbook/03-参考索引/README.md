@@ -50,6 +50,7 @@
 46. 为什么 bridge 的 seek-work poll、at-capacity heartbeat、reconnecting 预算、sleep reset 与 give up 不是同一种重试。
 47. 为什么 headless remote-control 的 startup preflight、permanent error 与 transient retry 不是同一种开桥失败。
 48. 为什么 standalone remote-control 的一次性说明、账号资格、项目偏好与当前 effective mode 不是同一个默认。
+49. 为什么 CCR v2 worker 的初始化、状态恢复、保活与代际退场不是同一种存活合同。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
