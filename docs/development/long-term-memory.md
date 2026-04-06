@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/51 / 55`、`casebooks/43` 与 `navigation/65 / 79` 已继续把“中段执行叙事”收回当前对象链：
+  - `51` 现已把治理稳态执行从 `authority continuity / ledger dormancy / capability custody` 的旧中段词，压到 `governance key / externalized truth chain / continuation pricing / durable-vs-transient`。
+  - `55` 现已把结构稳态纠偏从 `authority / resume / writeback / anti-zombie / archive` 压到 `authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
+  - `43` 现已把 Prompt 解除监护反例从 `compiled request truth / release calmness` 压到 `message lineage / continuation object / residual reopen gate`。
+  - `65 / 79` 现已把监护纠偏与再纠偏导航从旧的 `watch / recorrection card / authority source / anti-zombie evidence` 叙事，压回三条母线各自当前对象链。
+- 新的长期结论：
+  - 当上游导航页已经换代后，最容易继续反向输送旧词的是中段执行页与中段反例页；如果不继续收口这些页，读者仍会在 `steady-state / correction / release / recorrection` 这些流程词里重新丢失对象主语。
+  - Prompt 中段真正成熟时，不再把 release / watch / closeout 当主对象，而始终回到 `message lineage`、`continuation object` 与 `residual reopen gate`。
+  - 治理中段真正成熟时，不再把 mode 平静感、usage 回落与 capability custody 当稳态本体，而始终回到 `governance key`、`externalized truth chain` 与 `durable-vs-transient`。
+  - 结构中段真正成熟时，不再把 `anti-zombie` 与 `archive restitution` 当第一主语，而始终回到 `event-stream-vs-state-writeback`、`freshness gate`、`stale worldview` 与 `ghost capability`。
 - `guides/69`、`casebooks/23 / 36 / 37` 与 `navigation/83 / 103` 已继续把“上游叙事层旧词”收回当前对象链：
   - `guides/69` 现已把 Prompt 监护纠偏从 `compiled request truth / watch note / reopen gate` 收紧到 `message lineage / projection consumer / continuation object / reopen gate`。
   - `casebooks/23` 现已把治理反例从 `authority source / mode / token panel` 收紧到 `governance key / externalized truth chain / continuation pricing / durable-vs-transient cleanup`。

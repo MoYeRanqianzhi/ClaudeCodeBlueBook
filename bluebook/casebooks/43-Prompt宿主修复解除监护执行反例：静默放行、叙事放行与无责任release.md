@@ -1,4 +1,4 @@
-# Prompt宿主修复解除监护执行反例：静默放行、叙事放行与无责任release
+# Prompt宿主修复解除监护执行反例：静默放行、叙事放行与无责任 continuation release
 
 这一章不再回答“Prompt 宿主修复解除监护执行该怎样运行”，而是回答：
 
@@ -7,8 +7,8 @@
 它主要回答五个问题：
 
 1. 为什么 Prompt 宿主修复解除监护执行最危险的失败方式不是“没有 release card”，而是“release card 存在，却仍围绕值班叙事工作”。
-2. 为什么静默放行最容易把 `compiled request truth` 重新退回“最近没出事”的气氛判断。
-3. 为什么叙事放行最容易把 watch release object、stability witness 与 drift ledger seal 重新退回 watch note、summary 与交接文案。
+2. 为什么静默放行最容易把 `message lineage` 与 `continuation object` 重新退回“最近没出事”的气氛判断。
+3. 为什么叙事放行最容易把 stability witness 与 drift ledger seal 重新退回 watch note、summary 与交接文案。
 4. 为什么无责任 release 最容易把 handoff release 与 residual reopen gate 重新退回 later 自觉与经验式兜底。
 5. 怎样用苏格拉底式追问避免把这些反例读成“把 release card 再填细一点就好”。
 
@@ -30,7 +30,7 @@
 
 这些锚点共同说明：
 
-- Prompt 宿主修复解除监护执行真正最容易失真的地方，不在 `release_verdict` 有没有写出来，而在 released、handoff 与 residual reopen 是否仍围绕同一个 `compiled request truth`、sealed drift ledger 与 continuation object 运作。
+- Prompt 宿主修复解除监护执行真正最容易失真的地方，不在 `release_verdict` 有没有写出来，而在 released、handoff 与 residual reopen 是否仍围绕同一条 `message lineage`、sealed drift ledger 与 `continuation object` 运作。
 
 ## 1. 第一性原理
 
@@ -53,27 +53,27 @@ Prompt 宿主修复解除监护执行最危险的，不是：
 
 而不再围绕：
 
-- 同一个 `compiled request truth`
+- 同一条 `message lineage`
+- 同一个 `continuation object`
 
 ## 2. 静默放行：released by silence
 
 ### 坏解法
 
-- 宿主、CI、评审与交接系统虽然都拿到了 `release_verdict=released`，但真正执行时只要 watch window 里一段时间没有新噪音，就默认 `watch_release_object` 与 `stability_witness` 仍然成立，不再检查 `restored_request_object_id`、`compiled_request_hash` 与 `drift_free_span` 是否仍指向同一个 request object family。
+- 宿主、CI、评审与交接系统虽然都拿到了 `release_verdict=released`，但真正执行时只要 watch window 里一段时间没有新噪音，就默认 `stability_witness` 仍然成立，不再检查 `message_lineage_ref`、`projection_consumer_alignment` 与 `drift_free_span` 是否仍指向同一个 Prompt 世界。
 
 ### 为什么坏
 
 - `released` 不是情绪平静，而是对象级稳定性被正式证明。
 - 一旦 release 退回静默，团队就会重新容忍：
-  - `watch_release_object` 只是收尾名词
   - `stability_witness` 只是“一段时间没事”
-  - `compiled_request_hash` 只是抄录值
+  - `message_lineage_ref` 只是抄录值
+  - `projection_consumer_alignment` 只是默认正常
 - 这会让“目前没有波动”的平静感直接取代 Prompt 的正式真相面。
 
 ### Claude Code 式正解
 
-- released verdict 应先绑定同一个 request object 与同一个稳定 witness，再宣布 release。
-
+- released verdict 应先绑定同一条 `message lineage` 与同一个稳定 witness，再宣布 release。
 
 ## 3. 叙事放行：narrative release
 
@@ -83,8 +83,8 @@ Prompt 宿主修复解除监护执行最危险的，不是：
 
 ### 为什么坏
 
-- drift ledger 记录的是 protocol truth 与 lawful forgetting 的对象漂移，不是解释文本是否完整。
-- handoff release 保护的是 continuation object，而不是故事是否可读。
+- drift ledger 记录的是 protocol transcript 与 lawful forgetting 的对象漂移，不是解释文本是否完整。
+- handoff release 保护的是 `continuation object`，而不是故事是否可读。
 - 一旦 release 退回叙事，团队就会最先误以为：
   - “原因说清了，应该就可以 release”
   - “summary 很完整，later 应该能接”
@@ -92,8 +92,7 @@ Prompt 宿主修复解除监护执行最危险的，不是：
 
 ### Claude Code 式正解
 
-- release 应围绕 sealed ledger、clearance 与 continuation object，而不是让交接叙事替代它们。
-
+- release 应围绕 sealed ledger、clearance 与 `continuation object`，而不是让交接叙事替代它们。
 
 ## 4. 无责任 release：release without residual gate
 
@@ -114,12 +113,11 @@ Prompt 宿主修复解除监护执行最危险的，不是：
 
 - handoff release 与 residual reopen 必须同时成立；没有 residual gate，就只能 `monitor_extended` 或 `reopen_required`。
 
-
 ## 5. gate 装饰化：residual reopen 退回日历提醒
 
 ### 坏解法
 
-- 团队只要在工单系统里挂一个后续检查提醒，就默认 residual reopen 已存在；即使 `gate_retained_until` 已过、`release_reason` 已变，仍不升级 verdict，不冻结 handoff，也不回到同一个 request object boundary。
+- 团队只要在工单系统里挂一个后续检查提醒，就默认 residual reopen 已存在；即使 `gate_retained_until` 已过、`release_reason` 已变，仍不升级 verdict，不冻结 handoff，也不回到同一条 `message lineage`。
 
 ### 为什么坏
 
@@ -134,17 +132,16 @@ Prompt 宿主修复解除监护执行最危险的，不是：
 
 - residual reopen gate 应是 verdict 升级器，而不是日历装饰。
 
-
 ## 6. 苏格拉底式追问
 
 在你读完这些反例后，先问自己：
 
-1. 我现在 release 的是 request object，还是一份更顺滑的值班叙事。
-2. 我现在保护的是 stability witness，还是一段时间的平静感。
-3. 我现在放行的是 continuation object，还是一段更好读的 summary。
+1. 我现在 release 的是 `message lineage`，还是一份更顺滑的值班叙事。
+2. 我现在保护的是 `stability_witness`，还是一段时间的平静感。
+3. 我现在放行的是 `continuation object`，还是一段更好读的 summary。
 4. 我现在保留的是 residual reopen gate，还是一条“以后再看”的提醒。
 5. 我现在保护的是单一真相的继续条件，还是 released 的情绪感受。
 
 ## 7. 一句话总结
 
-真正危险的 Prompt 宿主修复解除监护执行失败，不是没写 release card，而是写了 release card 却仍在围绕静默放行、叙事放行与无责任 release 消费 Prompt 世界。
+真正危险的 Prompt 宿主修复解除监护执行失败，不是没写 release card，而是写了 release card 却仍在围绕静默放行、叙事放行与无责任 continuation release 消费 Prompt 世界。
