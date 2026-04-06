@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/30 / 36 / 66 / 77` 已继续把上一批高层对象链压进执行层、验收层与修复层：
+  - `30 / 36` 现已把治理宿主手册从抽象 `authority source` 压到 `sources -> effective -> applied -> externalized`，并把“宿主只能消费 externalized truth、不能回放事件流猜当前真相”写进门禁与拒收条件。
+  - `36 / 66` 现已把 durable assets 与 transient authority 的分界正式写进 rollback / liability / reopen 字段，不再只把恢复写成 mode、页面或说明文的恢复。
+  - `77` 现已把 Prompt 验证手册从 `authority / section / history / continue` 扩到 `message lineage / projection consumer / continuation qualification`，与 `30 / 84 / 99` 对齐。
+- 新的长期结论：
+  - 高层页一旦更新到新对象链，执行手册如果不跟进，团队实际跑流程时还是会回到旧词汇和旧判断；所以桥接对象必须继续下沉到 playbook，而不只停在 philosophy / guides。
+  - 宿主类 playbook 真正成熟时，`governance key` 与 `externalized truth chain` 必须先于 mode、弹窗、图表出现；否则验收与修复仍会被投影层劫持。
+  - Prompt 类 playbook 真正成熟时，不只验证 `authority chain` 和 `protocol transcript`，还必须验证 `message lineage`、projection consumer 分工与 continuation qualification。
 - `guides/30 / guides/31 / philosophy/84 / architecture/60 / architecture/63 / guides/README` 已继续吸收这一批相邻深专题遗漏的对象链，并顺手清理正文中的桥接/记忆性说明：
   - `30` 现已把 Prompt 审读从 `主语 / 接手连续性` 压到 `message lineage / projection consumer / continuation qualification`，记录卡也改成可点名 lineage 与 continuation object 的版本。
   - `31` 现已把治理审读从抽象“主权链”压到 `sources -> effective -> applied -> externalized` 这条 governance key，并显式拆开 durable assets 与 transient authority。
