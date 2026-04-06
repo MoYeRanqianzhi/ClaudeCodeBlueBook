@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `00 / 03 / 06 / 09` 已继续把正文去记忆化与主线模板化往前推进一层：
+  - `00` 现已从“二次索引 + 研究工法页”收回成真正的主线前言，不再重做正式阅读路径、主题分流与源码阅读脚本。
+  - `03 / 09` 现已把治理线继续压成 `authority object / role contract / reject path` 模板，固定到 `permission mode / trusted inputs / visible-set / externalization / continuation pricing`。
+  - `03 / 06` 现已更明确把 `UI transcript / protocol transcript / state writeback` 分成三层真相，并把 `display truth / protocol truth / handoff truth` 继续压成共享 `source_uuid / origin / history` 的 message lineage 投影。
+  - `03 / 06` 现已更明确把 workflow 写成 `local_workflow / workflow_progress / independent transcript / worktree / cleanup semantics` 组成的后台对象，而不是命令变体或脚本皮肤。
+  - `06` 现已重写 `6.19-6.35` 中段自反区，修正错位编号与作者施工口吻，把宿主闭环、事件流 + 状态回写、显式失败、可见边界与前台真相面改成长期稳定的自校问题。
+- 新的长期结论：
+  - `00` 真正合法保留的不是索引功能，而是主线前言功能；详细路由应回根 README / `navigation/README`，研究工法与进度应回 `docs/`。
+  - Prompt 魔力真正更难被抄走的，不只是 `request object / role contract / cache boundary / handoff truth` 四对象，还包括三种 truth 投影共享同一条 message lineage，而不是各自重写平行世界。
+  - 宿主成熟度真正高的标志，不是消息事件更多，而是宿主被明确要求同时消费 event stream 与 state writeback，不能靠回放消息自己猜当前状态。
+  - workflow 真正成熟时，不再被写成命令分支或脚本能力，而是被写成可实例化、可观测、可清理、可恢复的后台对象。
 - `navigation/35 / api/46 / api/47 / api/48` 已继续把二级 atlas 页从导览册压成协议页：
   - `35` 现已更明确把三条 atlas 线收成 authority file、consumer subset、danger surface 与 reject path。
   - `46` 现已更明确把 services 子系统改写成 authority / projection / danger / reject 模板，并前置 evidence object 原型。

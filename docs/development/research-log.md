@@ -6,6 +6,11 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮前言收口动作: 已继续更新 `00-导读`，把它从“二次索引 + 研究工法页”收回成真正的主线前言，只保留研究对象、三条最高阶判断、结构图必要性与第一判断顺序。
+- 本轮治理模板硬化动作: 已继续更新 `03 / 06 / 09`，把治理线正式压成 `authority object / role contract / reject path` 模板，固定到 `permission mode / trusted inputs / visible-set / externalization / continuation pricing`。
+- 本轮可见真相硬化动作: 已继续更新 `03 / 06`，把 `UI transcript / protocol transcript / state writeback` 分成三层真相，并把 `display truth / protocol truth / handoff truth` 再压成共享 `source_uuid / origin / history` 的 message lineage 投影。
+- 本轮 workflow 对象化动作: 已继续更新 `03 / 06`，把 workflow 明确写成 `local_workflow / workflow_progress / independent transcript / worktree / cleanup semantics` 组成的后台对象，不再主要按命令变体或脚本能力理解。
+- 本轮宿主闭环收束动作: 已继续更新 `06`，重写 `6.19-6.35` 中段自反区，把 host-integrated runtime、协议全集 vs 宿主子集、显式失败、event stream + state writeback 与用户可见真相层改成长期稳定的自校问题。
 - 本轮目录治理重点: 继续把 `bluebook/` 正文中的开发记忆迁回 `docs/`，当前已完成 `casebooks/` 的 `改写路径` 整体迁出与 `navigation/` 入口语言稳态化。
 - 本轮新增研究收束: 已把并行 Agent 的三条独立研究线压成 `architecture/82-84` 三张控制面图，分别覆盖请求装配、反扩张治理与权威面/反僵尸结构。
 - 本轮主线回收动作: 已继续把 `architecture/82-84` 上提为 `bluebook/09` 与 `philosophy/84-86`，避免高阶结论只停留在深层专题。
