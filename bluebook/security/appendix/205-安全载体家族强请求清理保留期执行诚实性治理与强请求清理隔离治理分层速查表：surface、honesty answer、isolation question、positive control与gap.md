@@ -56,4 +56,3 @@
 cleanup stronger-request retention-enforcement honesty 才不会继续停留在：
 
 `它能更诚实地说明 stronger-request cleanup 现在执行到了哪里，却没人正式证明这次执行不会误伤同项目 live peer 仍在依赖的 carrier。`
-

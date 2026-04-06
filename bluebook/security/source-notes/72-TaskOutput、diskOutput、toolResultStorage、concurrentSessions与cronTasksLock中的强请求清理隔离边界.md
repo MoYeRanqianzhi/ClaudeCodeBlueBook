@@ -61,7 +61,7 @@
 而是直接告诉我们：
 
 1. output file 读时可能 `ENOENT`
-2. 一个已知历史解释是  
+2. 一个已知历史解释是
    `another Claude Code process in the same project deleted it during startup cleanup`
 3. 系统专门把这条解释写成 diagnostic string 返回，而不是静默吞掉
 
