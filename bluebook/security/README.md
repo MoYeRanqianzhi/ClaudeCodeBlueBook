@@ -42,7 +42,7 @@
 
 - Claude Code 的安全性不是单点沙箱，也不是单点分类器，而是一套分层 signer、ledger 与 lifecycle control plane。
 - 真正重要的不是把能力做得尽量小，而是让能力、声明、恢复权和清理权只能沿着正确边界流动。
-- `147-254` 这一整段已经证明：弱层只能说明局部事实，强层才有权宣布更高阶治理结果；任何弱层都不能越级冒充强层。
+- `147-256` 这一整段已经证明：弱层只能说明局部事实，强层才有权宣布更高阶治理结果；任何弱层都不能越级冒充强层。
 - 宿主如果绕过 runtime 已外化的 authority / status / verdict，自行从事件流回放拼“当前真相”，就会把安全控制面重新降成脆弱的局部推断。
 
 ## 什么时候进来
@@ -55,7 +55,7 @@
 
 - 如果你只先判断“哪种 signer 有资格改边界”，从 `00-29` 进入。失败信号：还在把 classifier、mode、allow 规则或单点沙箱当成最终主权。
 - 如果你只先判断“哪条真相链必须被宿主承认”，从 `30-138` 进入。失败信号：还在让宿主从事件流、usage 条或局部 status 自己回放拼治理真相。
-- 如果你只先判断“cleanup 与 forgetting 为什么不能混成一个结果词”，从 `147-254` 进入。失败信号：还在把完成、终局、遗忘、清理写成一个“已经没事了”的总结果。
+- 如果你只先判断“cleanup 与 forgetting 为什么不能混成一个结果词”，从 `147-256` 进入。失败信号：还在把完成、终局、遗忘、清理写成一个“已经没事了”的总结果。
 
 ## 目录分层
 
@@ -64,7 +64,7 @@
 - `30-69`：真相源、账本、恢复闭环、清理纪律、词法、租约与 failure path。
 - `70-99`：能力发布、状态编辑、恢复资格、默认路由与 reject semantics。
 - `100-138`：完成权、字段生命周期、工程迁移、验证架构与制度化接口。
-- `139-254`：cleanup 契约与 signer/governor ladder，含 stronger-request cleanup 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone、resurrection、re-entitlement、reconfiguration、reactivation、readiness、continuity、recovery、reintegration、reprojection、reassurance、use-time revalidation、step-up reauthorization、continuation、completion、finality、forgetting、liability-release、archive-close、audit-close、irreversible-erasure、retention-governance、retention-enforcement-honesty、cleanup-isolation、cleanup-constitution 等高阶治理分层。
+- `139-256`：cleanup 契约与 signer/governor ladder，含 stronger-request cleanup 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone、resurrection、re-entitlement、reconfiguration、reactivation、readiness、continuity、recovery、reintegration、reprojection、reassurance、use-time revalidation、step-up reauthorization、continuation、completion、finality、forgetting、liability-release、archive-close、audit-close、irreversible-erasure、retention-governance、retention-enforcement-honesty、cleanup-isolation、cleanup-constitution、cleanup-rationale、cleanup-metadata 等高阶治理分层。
 
 更稳的 first reject signal 还应先记两条：
 
@@ -77,7 +77,7 @@
 - 想看当前真相、账本、恢复闭环、状态编辑与 failure semantics：从 `30-138` 进入。
 - 想看 signer ladder 从 `receipt -> completion -> finality -> forgetting`：从 `147-166` 进入。
 - 想看 artifact-family cleanup ladder：从 `167-196` 进入。
-- 想看 stronger-request cleanup ladder 与更高阶 continuation / completion / finality / forgetting / constitution governor：从 `197-254` 进入。
+- 想看 stronger-request cleanup ladder 与更高阶 continuation / completion / finality / forgetting / constitution governor：从 `197-256` 进入。
 
 ## 推荐入口
 
@@ -112,6 +112,8 @@
 - [252-安全载体家族强请求清理保留期治理与强请求清理保留期执行诚实性治理分层：为什么artifact-family cleanup stronger-request retention-governor signer不能越级冒充artifact-family cleanup stronger-request retention-enforcement-honesty-governor signer](252-安全载体家族强请求清理保留期治理与强请求清理保留期执行诚实性治理分层.md)
 - [253-安全载体家族强请求清理保留期执行诚实性治理与强请求清理隔离治理分层：为什么artifact-family cleanup stronger-request retention-enforcement-honesty-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-isolation-governor signer](253-安全载体家族强请求清理保留期执行诚实性治理与强请求清理隔离治理分层.md)
 - [254-安全载体家族强请求清理隔离治理与强请求清理家族宪法治理分层：为什么artifact-family cleanup stronger-request cleanup-isolation-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-constitution-governor signer](254-安全载体家族强请求清理隔离治理与强请求清理家族宪法治理分层.md)
+- [255-安全载体家族强请求清理家族宪法治理与强请求清理制度理由治理分层：为什么artifact-family cleanup stronger-request cleanup-constitution-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-rationale-governor signer](255-安全载体家族强请求清理家族宪法治理与强请求清理制度理由治理分层.md)
+- [256-安全载体家族强请求清理制度理由治理与强请求清理制度元数据治理分层：为什么artifact-family cleanup stronger-request cleanup-rationale-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-metadata-governor signer](256-安全载体家族强请求清理制度理由治理与强请求清理制度元数据治理分层.md)
 
 ## 阅读顺序
 
@@ -134,7 +136,7 @@
 
 ## 维护约定
 
-- `security/README` 只保留前门判断、编号段职责、核心判断和代表性入口，不再镜像全部 255 篇标题。
+- `security/README` 只保留前门判断、编号段职责、核心判断和代表性入口，不再镜像全部 257 篇标题。
 - `security/README` 只负责治理 signer / ledger / cleanup 前门，不和 `risk/` 抢用户侧结算面，也不和 `playbooks/` 抢执行链。
 - 巨型目录库存、逐篇标题镜像和作者侧记忆不再回灌首页。
 - 深层速查和证据字典统一维护在 [appendix/README.md](appendix/README.md)。
