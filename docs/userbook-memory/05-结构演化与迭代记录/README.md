@@ -105,6 +105,7 @@
 - [101-2026-04-06-result terminal semantics vs stream tail 拆分记忆.md](./101-2026-04-06-result%20terminal%20semantics%20vs%20stream%20tail%20拆分记忆.md)
 - [102-2026-04-06-suggestion cleanup telemetry gap 拆分记忆.md](./102-2026-04-06-suggestion%20cleanup%20telemetry%20gap%20拆分记忆.md)
 - [103-2026-04-06-observer metadata stale scrub vs restore 拆分记忆.md](./103-2026-04-06-observer%20metadata%20stale%20scrub%20vs%20restore%20拆分记忆.md)
+- [104-2026-04-06-pendingLastEmittedEntry inert stale staging 拆分记忆.md](./104-2026-04-06-pendingLastEmittedEntry%20inert%20stale%20staging%20拆分记忆.md)
 
 用途：
 
