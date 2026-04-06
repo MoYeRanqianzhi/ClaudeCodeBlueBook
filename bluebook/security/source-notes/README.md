@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 77 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 78 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -96,6 +96,7 @@
 75. [75-cleanup、settings、path helpers、permissions与env contract中的强请求清理制度元数据边界](75-cleanup%E3%80%81settings%E3%80%81path%20helpers%E3%80%81permissions%E4%B8%8Eenv%20contract%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%88%B6%E5%BA%A6%E5%85%83%E6%95%B0%E6%8D%AE%E8%BE%B9%E7%95%8C.md)
 76. [76-cleanupPeriodDays、housekeeping、plansDirectory与CleanupResult的强请求清理运行时符合性缺口](76-cleanupPeriodDays、housekeeping、plansDirectory与CleanupResult的强请求清理运行时符合性缺口.md)
 77. [77-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口](77-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口.md)
+78. [78-verifyAutoModeGateAccess、checkAndDisableAutoModeIfNeeded、verifyAndDemote与强请求清理修复治理缺口](78-verifyAutoModeGateAccess、checkAndDisableAutoModeIfNeeded、verifyAndDemote与强请求清理修复治理缺口.md)
 
 ## 和其他目录的分工
 
