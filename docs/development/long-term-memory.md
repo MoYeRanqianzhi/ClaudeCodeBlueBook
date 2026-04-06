@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `01 / 04 / 05 / 08 / api/23 / navigation/02` 已继续收紧成能力前门与结构地图判断协议：
+  - `01` 现已更明确把源码结构地图写成 `authority / subset / danger / temporal risk` 地图，而不是目录树展开。
+  - `04 / 05 / 08 / api/23 / navigation/02` 现已更明确把能力讨论固定到 `existence / current visibility / current admission / product promise` 四层，避免重新退回“代码里有就算支持”。
+- 新的长期结论：
+  - 当前门和主论证都开始成熟后，真正容易漏掉的是“能力前门”和“结构地图”这种看似中性的信息页；它们如果不持续收口，最容易把读者重新送回旧的功能表与目录体感。
+  - 结构地图真正要保护的是时间上的第二真相，而不仅是空间上的危险改动面；能力前门真正要保护的是承诺边界，而不只是列全能力。
 - `03 / security/01 / philosophy/76` 已继续深化主论证本体：
   - `03` 现已更明确把 Prompt 魔力压成 `display truth / protocol truth / handoff truth` 同属一个 request object，并把安全/成本/体验继续压成四种扩张统一定价。
   - `security/01` 现已更明确把六层安全控制面继续压回“权威 / 动作 / 上下文 / 连续性”四类扩张收费。

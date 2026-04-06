@@ -26,6 +26,12 @@
 
 第一性原理上，接口面不是功能炫耀，而是 runtime 决定什么能进入模型、什么能进入当前世界、什么又能以何种代价持续存在的合法入口。
 
+所以本章里每列出一个“能力面”，都还要继续追问三次：
+
+1. 它只是存在，还是已经进入主路径
+2. 它只是可见，还是已经被当前治理秩序允许
+3. 它只是声明，还是已经成为宿主与用户可稳定依赖的承诺
+
 ## 1. 从第一性原理看，Claude Code 至少有八个接口表面
 
 如果把 Claude Code 当作一个 coding agent runtime，而不是一个聊天框，它至少要暴露八类接口:
@@ -40,6 +46,12 @@
 8. 协作接口: coordinator、team context、task list、task progress、workflow progress、task notification。
 
 Claude Code 强的原因之一，是它几乎把这八类接口都做成了正式模块，而不是临时拼接。
+
+但这并不自动等于：
+
+- 八类接口都已同强度对外承诺
+
+这里更值钱的判断是：Claude Code 已经把它们写成正式 runtime surface，但每个 surface 仍要继续经过可见度、准入度与承诺度分层。
 
 ## 2. 功能总矩阵
 
