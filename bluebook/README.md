@@ -14,6 +14,17 @@
 
 如果 later maintainer 第一次进蓝皮书时还看不见这三条，目录结构就还在迫使他先学对象层总结，再自己回压成第一性原理。
 
+如果继续把入口压成 later maintainer 能直接拿来排查的最小顺序，它还应再暴露三行：
+
+1. Prompt witness order
+   - `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+2. governance failure order
+   - `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
+3. current-truth reject order
+   - `shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer`
+
+前门如果只给公式，不给这三组顺序，later maintainer 仍要下潜到深页后才拿得到真正的排查起点；这说明入口层还没有完成从“同词化”到“同序化”的升级。
+
 根 README 的职责只有三层：先定题，再定证据层，最后才决定要不要跨目录跳转；它不再负责把整套深链重新摊平。
 
 ## 目录职责
@@ -50,6 +61,17 @@
   先回 `README -> navigation/README -> 05 -> 15`，确认优化的是第一问题单源化与证据层分工，而不是新增 route map。
 - 并行多 Agent 深挖
   先按 question domain 拆成 Prompt 魔力、安全/省 token、源码先进性、目录前门自校四题；最后统一回 `09 / 05 / 15 / 41` 合并，避免并行产生第二套入口词。
+
+## 三组最小排查顺序
+
+- Prompt
+  先按 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict` 排，不先看 `systemPrompt` 截图、最后一条消息或 summary prose。
+- 治理
+  先按 `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback` 排，不先看 mode、modal、usage、compact 或 default continue 这些投影替身。
+- 当前真相
+  先按 `shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer` 排，不先看目录体感、作者说明或“看起来还算能跑”的经验判断。
+
+如果入口层不给这三组顺序，目录结构优化就仍然主要在帮读者“找到页”，还没有开始帮 later maintainer “先拿到同一套排查动作”。
 
 ## 四条深剖稳定入口
 

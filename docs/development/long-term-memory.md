@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`navigation/README`、`06` 与 `navigation/05` 现已继续把最近几批稳定下来的顺序前推到入口层：
+  - `bluebook/README` 现在更明确把入口从 canonical formula 扩成 canonical formula + 三组最小排查顺序。
+  - `navigation/README` 现在更明确把跨目录入口扩成“公式 + 顺序 + 证据层”的三段式。
+  - `06` 现在更明确把目录结构优化的下一步定义成从“同词化”升级到“同序化”。
+  - `navigation/05` 现在更明确把并行多 Agent 深挖后的成熟合流标准写成“主语和顺序同时合流”。
+- 新的长期结论：
+  - 入口页如果只能给 canonical formula、却给不出最小排查顺序，就仍停在 route map 层；真正成熟的入口页必须同时交付问题、顺序和证据层。
+  - 目录结构优化真正值钱的下一阶段，不再是再补入口，而是把 `README / navigation / high-level philosophy` 全部推到“同序化”；否则同一问题在不同入口仍会有不同的第一步动作。
 - `bluebook/07`、`09`、`architecture/83` 与 `architecture/84` 现已继续把最近几批写进前门、builder 和审读模板的 object order 回灌到控制面宪法和架构主图：
   - `07` 现在更明确把 `Prompt witness order / governance failure order / current-truth reject order` 写成 runtime contract 的 shared order，而不再只存在于模板页。
   - `09` 现在更明确要求三张控制面图各自导出 later maintainer 可直接拿来排查的最小顺序，不再只导出 canonical formula。

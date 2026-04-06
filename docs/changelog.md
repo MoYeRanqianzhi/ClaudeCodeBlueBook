@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新 `bluebook/README`、`navigation/README`、`06` 与 `navigation/05`，把最近几批已经稳定下来的 `Prompt witness order / governance failure order / current-truth reject order` 继续前推到入口层：`bluebook/README` 现在更明确把三组最小排查顺序写进入口与继续深入法，`navigation/README` 现在更明确把跨目录入口从“公式 + route map”推进到“公式 + 顺序 + 证据层”三段式，`06` 现在更明确把目录优化目标从“同词化”升级成“同序化”，`navigation/05` 现在更明确把并行深挖后的真正合流定义成主语和顺序同时合流
+- 本轮继续把目录结构优化从“帮助找到页”压成“帮助 later maintainer 先拿到同一套排查动作”：入口层现在不只教读者先看哪类问题，也开始直接给出 Prompt witness order、治理 failure order 与当前真相 reject order，减少读者必须先下潜深页后才能学会如何排查的成本
 - 继续更新 `bluebook/07`、`09`、`architecture/83` 与 `architecture/84`，把近期已经压到 builder 与审读模板里的 `Prompt witness order / governance failure order / current-truth reject order` 回灌到运行时契约、三张控制面总图和两张架构主图：`07` 现在更明确把这三组最小顺序写成 runtime contract 必须持续导出的 shared order；`09` 现在更明确把三张图各自应导出的最小顺序和 later maintainer 排查顺序写回控制面宪法；`83` 现在更明确给出治理最小 failure order；`84` 现在更明确给出 later maintainer 的最小 reject order
 - 本轮继续把“高阶总结”压成 later maintainer 真能执行的顺序，而不是继续停在对象名：Prompt 线现在前推 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`，治理线现在前推 `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`，当前真相线现在前推 `shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer`
 - 继续更新 `guides/49` 与 `navigation/15`，把上一批补进 `62 / 30 / 32` 的治理位置学、Prompt witness 与 later-maintainer reject 继续回灌到治理 builder 与高阶前门：`49` 现在更明确把六步治理 builder 对齐成 `Narrow / Later / Outside` crosswalk，并补出 `reject / degrade / halt / cleanup-before-resume / human-fallback` 五类 failure verdict；`15` 现在更明确把 Prompt witness 顺序、治理 failure order 与当前真相线的 later-maintainer reject 顺序前推成失稳前追问入口

@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮入口层同序化动作: 已继续更新 `bluebook/README`、`navigation/README`、`06` 与 `navigation/05`，把最近几批稳定下来的 `Prompt witness order / governance failure order / current-truth reject order` 前推到目录入口与第一性原理页。
+- 本轮目录结构深化结论: 当入口层开始同时暴露 canonical formula 和最小排查顺序时，目录优化才真正从“同词化”进入“同序化”；否则 later maintainer 还是得先下潜到 `architecture / guides / playbooks` 之后，才拿得到真正可执行的排查动作。
+- 本轮入口层写作纪律动作: `navigation/README` 现在更明确把跨目录入口写成“公式 + 顺序 + 证据层”三段式，`06` 现在更明确要求目录优化不只共用主语，还要共用最小排查顺序，`navigation/05` 则把并行深挖后的合流标准进一步写成“主语和顺序同时合流”。
 - 本轮控制面/架构同词化动作: 已继续更新 `bluebook/07`、`09`、`architecture/83` 与 `architecture/84`，把上一轮已进入 builder/frontdoor/template 的三组最小顺序回灌到运行时契约、总图和架构主图。
 - 本轮 Prompt/runtime contract 动作: `07` 与 `09` 现在更明确把 Prompt 线的最小排查顺序固定成 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`，并把它写成 later maintainer 应先回的最小 witness order，而不是继续回 `systemPrompt` 截图或 summary prose。
 - 本轮治理架构动作: `architecture/83` 现在新增治理最小 failure order：`reject / degrade / halt / cleanup-before-resume / human-fallback`，并要求 later maintainer 能在不提 mode、modal、usage、compact 的情况下仍然点名当前 failure verdict 落在哪一格。

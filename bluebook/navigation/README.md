@@ -11,6 +11,17 @@
 
 如果一个跨目录问题还压不回这四条，它就还停在对象层或结果词层。
 
+如果继续往下压，跨目录入口也只该再暴露三组最小顺序：
+
+1. Prompt witness order
+   - `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+2. governance failure order
+   - `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
+3. current-truth reject order
+   - `shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer`
+
+如果一个跨目录问题还回答不出自己缺的是公式、顺序还是证据层，它就还没有真正进入 `navigation/` 的工作对象。
+
 ## 先判三件事
 
 - 先判你是在找主线宪法、证据层，还是跨目录下一跳。
@@ -21,6 +32,8 @@
   阅读优先 `01 / 02`，失稳前自校优先 `15`，迁移优先 `46`，继续改写三条母线优先 `05 / 15 / 41`。
 - 先判你是在单线深挖，还是准备并行多 Agent 同时研究。
   并行时优先按 question domain 拆成 Prompt 世界准入、治理定价、当前真相保护、目录前门纪律，不按文件库存拆。
+- 先判你现在缺的是最短公式、最小顺序，还是具体证据层。
+  缺公式先回 `09 / README`，缺顺序先回 `15 / guides`，缺对象和锚点才去 `architecture / api / playbooks / casebooks`。
 
 ## 稳定节点
 
@@ -55,6 +68,8 @@
   这是 `same-world test`、`decision window`、`truth ladder`，还是 `failure semantics` 的问题。
 - 如果你在判断“并行深挖后该回哪一个前门合并”，也先问：
   这个结论第一次该回 `09`、`05`、`15` 还是 `41`，而不是继续在 `README / navigation / guide` 三层同时第一次被回答。
+- 如果你在判断“排查顺序该先从哪一格开始”，也先问：
+  我现在缺的是 Prompt witness order、governance failure order，还是 current-truth reject order。
 - [46-宿主迁移工单导航：request compiler、governance key 与 current-truth writeback 如何进入实施顺序、交接包与灰度发布](46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布.md)
   进入宿主实现、迁移、验收与收口链。
 
@@ -82,3 +97,4 @@
 - 目录细节与编号段说明回各目录 `README` 或编号页。
 - 过程记录与变更记忆统一回 `docs/`。
 - 一旦某个 `README` 同时承担 canonical formula、route map、深页解释与研究记忆，它就已经混层，应退回各自证据层。
+- 一旦入口页只能给公式、却给不出最小顺序，它就仍停在 route map 层，还没有完成 later maintainer 可执行化。
