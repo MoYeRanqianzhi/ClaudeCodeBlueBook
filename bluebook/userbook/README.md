@@ -52,6 +52,8 @@
   [05-控制面深挖/13-system-init、技能提醒与 SkillTool：Claude 如何看见可用能力.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/13-system-init%E3%80%81%E6%8A%80%E8%83%BD%E6%8F%90%E9%86%92%E4%B8%8E%20SkillTool%EF%BC%9AClaude%20%E5%A6%82%E4%BD%95%E7%9C%8B%E8%A7%81%E5%8F%AF%E7%94%A8%E8%83%BD%E5%8A%9B.md)
 - 分清扩展面的 workspace trust、来源信任与 hooks 总闸：
   [05-控制面深挖/14-来源信任、Trust Dialog 与 Plugin-only Policy：扩展面为何分级信任.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/14-%E6%9D%A5%E6%BA%90%E4%BF%A1%E4%BB%BB%E3%80%81Trust%20Dialog%20%E4%B8%8E%20Plugin-only%20Policy%EF%BC%9A%E6%89%A9%E5%B1%95%E9%9D%A2%E4%B8%BA%E4%BD%95%E5%88%86%E7%BA%A7%E4%BF%A1%E4%BB%BB.md)
+- 分清 `relevant skills`、static listing 与 remote skills 的公开边界：
+  [05-控制面深挖/15-技能发现、静态 listing 与 remote skills：为什么“relevant skills”不是技能总表.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/15-%E6%8A%80%E8%83%BD%E5%8F%91%E7%8E%B0%E3%80%81%E9%9D%99%E6%80%81%20listing%20%E4%B8%8E%20remote%20skills%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9Crelevant%20skills%E2%80%9D%E4%B8%8D%E6%98%AF%E6%8A%80%E8%83%BD%E6%80%BB%E8%A1%A8.md)
 - 判断稳定面、灰度面和内部面：
   [03-参考索引/02-能力边界/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
 - 建立系统总图：
@@ -121,6 +123,7 @@
 - 技能来源、可见性与触发
 - system-init、技能提醒与 SkillTool
 - 来源信任、Trust Dialog 与 plugin-only policy
+- 技能发现、static listing 与 remote skills
 
 适合已经知道自己要完成什么工作，并准备读长文专题的读者。
 
@@ -137,5 +140,6 @@
 - skills 的来源、暴露面与触发边界
 - Claude 如何看见可用能力
 - 扩展来源为何被分级信任
+- `relevant skills`、static listing 与 remote skills 的公开边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
