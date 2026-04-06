@@ -92,6 +92,8 @@
   [05-控制面深挖/50-worker epoch、state restore、worker heartbeat、keep_alive 与 self-exit：为什么 CCR v2 worker 的初始化、保活与代际退场不是同一种存活合同.md](./05-控制面深挖/50-worker%20epoch、state%20restore、worker%20heartbeat、keep_alive%20与%20self-exit：为什么%20CCR%20v2%20worker%20的初始化、保活与代际退场不是同一种存活合同.md)
 - 分清远端看到的 `worker_status`、`pending_action`、`task_summary` 与 `session_state_changed` 为什么不是同一张运行态面：
   [05-控制面深挖/51-worker_status、requires_action_details、pending_action、task_summary、post_turn_summary 与 session_state_changed：为什么远端看到的运行态不是同一张面.md](./05-控制面深挖/51-worker_status、requires_action_details、pending_action、task_summary、post_turn_summary%20与%20session_state_changed：为什么%20远端看到的运行态不是同一张面.md)
+- 分清 `permission_mode`、`is_ultraplan_mode` 与 `model` 为什么不是同一种远端可恢复会话参数：
+  [05-控制面深挖/52-permission_mode、is_ultraplan_mode 与 model：为什么远端恢复回填、当前本地状态与 session control request 不是同一种会话参数.md](./05-控制面深挖/52-permission_mode、is_ultraplan_mode%20与%20model：为什么%20远端恢复回填、当前本地状态与%20session%20control%20request%20不是同一种会话参数.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：
