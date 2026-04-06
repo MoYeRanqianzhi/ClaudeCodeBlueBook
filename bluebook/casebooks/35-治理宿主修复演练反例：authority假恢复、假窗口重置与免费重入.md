@@ -1,15 +1,15 @@
-# 治理宿主修复演练反例：authority假恢复、假窗口重置与免费重入
+# 治理宿主修复演练反例：governance key 假恢复、假窗口重置与免费重入
 
 这一章不再回答“治理宿主修复演练该怎样运行”，而是回答：
 
-- 为什么团队明明已经写了 authority repair 共享升级卡、rollback drill 与 re-entry drill，仍会重新退回 mode 恢复、面板刷新与继续一轮试试看。
+- 为什么团队明明已经写了 repair card、rollback drill 与 re-entry drill，仍会重新退回 mode 恢复、面板刷新与继续一轮试试看。
 
 它主要回答五个问题：
 
-1. 为什么治理宿主修复演练最危险的失败方式不是“没有升级卡”，而是“升级卡存在，却仍围绕交互投影工作”。
-2. 为什么 authority 假恢复最容易把治理主权重新退回 mode 标签、页面状态与口头解释。
+1. 为什么治理宿主修复演练最危险的失败方式不是“没有 repair card”，而是“repair card 存在，却仍围绕交互投影工作”。
+2. 为什么治理主键假恢复最容易把治理主权重新退回 mode 标签、页面状态与口头解释。
 3. 为什么假窗口重置最容易把安全设计与省 token 设计同时降格成仪表盘刷新与统计重置。
-4. 为什么免费重入最容易把 continuation repricing 重新退回默认继续。
+4. 为什么免费重入最容易把 `continuation pricing` 重新退回默认继续。
 5. 怎样用苏格拉底式追问避免把这些反例读成“把审批界面再做清楚一点就好”。
 
 ## 0. 代表性源码锚点
@@ -31,13 +31,13 @@
 
 这些锚点共同说明：
 
-- 治理宿主修复演练真正最容易失真的地方，不在 repair card 有没有 authority、ledger、window 与 repricing 字段，而在执行层是否仍围绕同一个治理对象消费安全、成本、时间与回退。
+- 治理宿主修复演练真正最容易失真的地方，不在 repair card 有没有字段，而在执行层是否仍围绕同一个 `governance key`、同一条 `externalized truth chain`、同一个 `decision window` 与同一个 `continuation pricing` 对象消费安全、成本、时间与回退。
 
 ## 1. 第一性原理
 
 治理宿主修复演练最危险的，不是：
 
-- 没有 authority repair
+- 没有 repair card
 - 没有 window reset
 - 没有 re-entry ticket
 
@@ -54,56 +54,54 @@
 
 而不再围绕：
 
-- 同一个治理对象
+- 同一个 `governance key -> externalized truth chain -> decision window -> continuation pricing -> durable-vs-transient cleanup`
 
-## 2. authority 假恢复：authority repair 退回 mode 标签与页面状态
+## 2. governance key 假恢复：repair 退回 mode 标签与页面状态
 
 ### 坏解法
 
-- 宿主、CI 与评审只要看到 mode 名字对了、审批结束了、页面状态转绿，就默认 authority repair 已经完成，不再检查 authority source、effective settings 与 writer chokepoint 是否仍一致。
+- 宿主、CI 与评审只要看到 mode 名字对了、审批结束了、页面状态转绿，就默认 repair 已经完成，不再检查 `governance key`、effective settings 与 writer choke point 是否仍一致。
 
 ### 为什么坏
 
-- Claude Code 的治理控制面真正强大之处，在于 authority source 决定允许什么、看见什么、继续多久，而不是 mode 标签本身。
-- 一旦 authority repair 退回 mode 恢复，就会重新容忍：
+- Claude Code 的治理控制面真正强大之处，在于 `governance key` 决定允许什么、看见什么、继续多久，而不是 mode 标签本身。
+- 一旦 repair 退回 mode 恢复，就会重新容忍：
   - source 漂了却没人看见
   - externalized mode 只是投影却被误当主权
-  - writer chokepoint 漂移却只剩页面成功感
+  - writer choke point 漂移却只剩页面成功感
 - 这样看起来像恢复了安全，实际却只是恢复了交互投影。
 
 ### Claude Code 式正解
 
-- authority repair 应先恢复治理主权，再恢复 mode 投影。
+- repair 应先恢复 `governance key`，再恢复 mode 投影。
 
-
-## 3. stale ledger 漂白：ledger rebuild 退回审批历史
+## 3. externalized truth chain 漂白：typed ask 退回审批历史
 
 ### 坏解法
 
-- 团队虽然写了 `permission_ledger`，但真正演练时只看审批是否点完、请求是否消失，不再检查 typed decision、pending request、duplicate response 与 orphan state 是否仍被同一个 ledger 收口。
+- 团队虽然写了 `permission_ledger`，但真正演练时只看审批是否点完、请求是否消失，不再检查 typed ask、decision reason、pending request、duplicate response 与 orphan state 是否仍被同一条 `externalized truth chain` 收口。
 
 ### 为什么坏
 
-- ledger rebuild 保护的不是“审批做没做完”，而是“扩张理由是否仍可追溯”。
-- 一旦 ledger 退回审批历史，团队就会最先误以为：
+- ledger rebuild 保护的不是“审批做没做完”，而是“扩张理由是否仍可追溯、当前世界是否仍被同一条 truth chain 宣布”。
+- 一旦 `externalized truth chain` 退回审批历史，团队就会最先误以为：
   - “记录还在，应该没问题”
   - “弹窗关了，说明修好了”
 - 这会把安全设计与省 token 设计同时拆回一套无法定价的点击历史。
 
 ### Claude Code 式正解
 
-- ledger rebuild 应恢复 formal reason，而不是恢复交互完成感。
-
+- typed ask、decision reason 与 externalized truth 应先恢复为同一个对象，再谈审批完成感。
 
 ## 4. 假窗口重置：decision window reset 退回仪表盘刷新
 
 ### 坏解法
 
-- 执行层只要看到 usage 百分比刷新、context bar 下降、compact 触发过，就默认 `decision_window_reset` 已经完成，不再检查当前 request、pending action、generation 与 context usage 是否仍属于同一窗口。
+- 执行层只要看到 usage 百分比刷新、context bar 下降、compact 触发过，就默认 `decision_window_reset` 已经完成，不再检查当前 request、pending action、visible capability、generation 与 context usage 是否仍属于同一窗口。
 
 ### 为什么坏
 
-- Claude Code 的安全设计与省 token 设计共用同一个治理窗口；它不是“一个管权限、一个管成本”，而是同一对象在统一定价一切扩张。
+- Claude Code 的安全设计与省 token 设计共用同一个治理窗口；它不是“一个管权限、一个管成本”，而是同一对象在统一定价一切扩张与当前世界准入。
 - 一旦窗口重置退回面板刷新：
   - 安全会退回审批完成感
   - 成本会退回数字变小
@@ -112,10 +110,9 @@
 
 ### Claude Code 式正解
 
-- decision window reset 应先恢复同一窗口对象，再谈仪表盘变化。
+- decision window reset 应先恢复同一窗口对象，再谈仪表盘变化与 token 下降。
 
-
-## 5. 免费重入：continuation repricing 被默认继续篡位
+## 5. 免费重入：continuation pricing 被默认继续篡位
 
 ### 坏解法
 
@@ -132,35 +129,34 @@
 
 ### Claude Code 式正解
 
-- re-entry 应围绕 repricing 结果，而不是围绕“目前没被阻止”。
+- re-entry 应围绕 `continuation pricing` 结果，而不是围绕“目前没被阻止”。
 
-
-## 6. 伪回滚：rollback object 退回 mode/file 动作
+## 6. 假恢复：durable assets 与 transient authority 被动作感替代
 
 ### 坏解法
 
-- rollback 看起来存在，实际只是把 mode 切回去、文件撤回去、页面关掉，而不明确 `rollback_object`。
+- rollback 与恢复看起来存在，实际只是把 mode 切回去、文件撤回去、页面关掉、再跑一次 compact，而不明确哪些是 `durable assets`、哪些是应被清退的 `transient authority`。
 
 ### 为什么坏
 
-- rollback 真正保护的是对象级恢复；mode 切换、文件动作与 compact 只是其执行路径，不是它的真相。
-- 一旦回滚只剩操作动作，later 维护者会知道“按哪个按钮退”，却不知道“退回哪个治理对象”。
+- 治理恢复真正保护的是对象级清账；mode 切换、文件动作与 compact 只是执行路径，不是它的真相。
+- 一旦恢复只剩操作动作，later 维护者会知道“按哪个按钮退”，却不知道“保留哪个资产、清退哪个旧主权”。
+- 这会让 resume / reopen 变成旧 authority 的免费续租，而不是对象级 cleanup。
 
 ### Claude Code 式正解
 
-- rollback 应先绑定对象边界，再落到 mode、文件与流程动作。
-
+- 恢复应先点名 `durable assets after` 与 `transient authority cleared`，再落到 mode、文件与流程动作。
 
 ## 7. 苏格拉底式追问
 
 在你读完这些反例后，先问自己：
 
-1. 我现在消费的是 authority source，还是 mode 名字。
-2. 我现在消费的是 decision window，还是 usage 仪表盘。
-3. 我现在重入的是正式 gate，还是默认行为。
-4. 我现在回滚的是 `rollback_object`，还是一串操作动作。
-5. 我现在保护的是统一定价对象，还是两套互不相干的补救流程。
+1. 我现在消费的是 `governance key`，还是 mode 名字。
+2. 我现在消费的是 `externalized truth chain` 与 typed ask，还是审批历史。
+3. 我现在消费的是 `decision window`，还是 usage 仪表盘。
+4. 我现在重入的是正式 pricing gate，还是默认行为。
+5. 我现在保护的是 `durable assets vs transient authority` 的边界，还是一串更顺滑的恢复动作。
 
 ## 8. 一句话总结
 
-真正危险的治理宿主修复演练失败，不是没写升级卡，而是写了升级卡却仍在围绕 authority 假恢复、假窗口重置与免费重入消费治理世界。
+真正危险的治理宿主修复演练失败，不是没写 repair card，而是写了 repair card 却仍在围绕 `governance key` 假恢复、假窗口重置与免费重入消费治理世界。

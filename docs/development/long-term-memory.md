@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `casebooks/13 / 46` 现已把 Prompt Evidence Envelope 与稳态执行从 `compiled request truth / steady calmness` 的旧入口词，继续压到 `message lineage / projection consumer / protocol transcript / stable prefix boundary / continuation object / continuation qualification`。
+- `casebooks/15 / 42` 现已把结构 Evidence Envelope 与监护执行从 `authoritative surface / 恢复成功率 / 监控平静感` 的旧入口词，继续压到 `authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
+- `casebooks/35 / navigation/43` 现已把治理修复演练与机制支持面从 `authority source / 编译请求真相 / authority state` 的旧入口词，继续压到 `governance key / externalized truth chain / decision window / continuation pricing / authority object / per-host authority width` 三条母线的现代表达。
+- Prompt 并行 Agent 已补出一个更硬的长期判断：Prompt 魔力最稳的源码解释不是“Prompt 写得强”，而是 `message lineage -> protocol transcript -> lawful forgetting -> continuation qualification -> cache-safe fork reuse` 这条编译链；其中 `message lineage` 更像 `parentUuid / logicalParentUuid + message.id + tool_use_id / sourceToolAssistantUUID` 的三键内核，而 `continuation object` 在源码里行为很强、命名很弱。
+- `casebooks/README` 现已为 `13 / 15 / 35 / 42 / 46` 补上对象链入口，并明确“编号段负责时间顺序，对象链负责阅读顺序”；案例库结构优化的成熟标准不再是 README 链接更多，而是入口能先暴露对象主语。
+- 新的长期结论：
+  - Prompt 魔力真正成熟时，不应再被写成“原文 prompt + cache 指标 + summary + transcript”的材料拼图，而应被写成同一条 `message lineage` 如何同时约束 projection consumer、`protocol transcript`、`stable prefix boundary` 与 `continuation object`。
+  - 安全设计与省 token 设计真正成熟时，不应再被拆成审批历史与成本面板，而应被写成同一个 `governance key -> externalized truth chain -> decision window -> continuation pricing` 对象链。
+  - 源码质量真正成熟时，不应再被写成目录整洁度、恢复成功率与作者把握，而应被写成 `authority object`、合法 `per-host authority width`、`event stream` 不得篡位 `state writeback`、`freshness gate` 先于 continuity、`stale worldview / ghost capability` 被正式驱逐。
+  - 目录结构真正成熟时，不再让 README 只按编号段做二次导航；更稳的入口是“先暴露对象链，再暴露编号段”，让 later 维护者先知道自己在守什么对象，再决定往后读哪几页。
 - `playbooks/51 / 55`、`casebooks/43` 与 `navigation/65 / 79` 已继续把“中段执行叙事”收回当前对象链：
   - `51` 现已把治理稳态执行从 `authority continuity / ledger dormancy / capability custody` 的旧中段词，压到 `governance key / externalized truth chain / continuation pricing / durable-vs-transient`。
   - `55` 现已把结构稳态纠偏从 `authority / resume / writeback / anti-zombie / archive` 压到 `authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。

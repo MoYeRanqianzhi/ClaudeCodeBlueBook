@@ -12,6 +12,16 @@
 - `58-72`: 改写纠偏、精修与 card / reopen liability 反例。
 - `73-75`: 三张控制面图长期验证失真反例。
 
+## 按对象链进入
+
+- Prompt 证据壳层与继续对象：`13 -> 37 -> 46 -> 64 / 70`
+  - 核心对象：`message lineage / projection consumer / protocol transcript / continuation object`
+- 治理主键与统一定价修复链：`23 -> 35 -> 47 -> 71 / 74`
+  - 核心对象：`governance key / externalized truth chain / decision window / continuation pricing / durable-vs-transient`
+- 结构权威面与 present-truth 修复链：`15 -> 36 -> 42 -> 75`
+  - 核心对象：`authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`
+- 想看“宿主到底该消费哪些正式对象”，先去 `../navigation/43`，再回这些反例页看失真样本。
+
 ## 推荐入口
 
 - [01-Prompt事故案例集：修宪漂移、路径失配与合法遗忘失效](01-Prompt事故案例集：修宪漂移、路径失配与合法遗忘失效.md)
@@ -36,6 +46,7 @@
 - 想看正向纠偏路径：优先回到 `guides/`、`playbooks/`、`api/`，不要继续停留在案例正文里找待办
 - 想看共同 `reject` 与 `reopen` 的 card 失真样本：从 `70-72`
 - 想看三张控制面图的长期验证为什么会被伪验证偷走：从 `73-75` 或 `../navigation/40`
+- 想看 Evidence Envelope 为什么总会退回原文、目录与作者说明：优先从 `13 / 15` 配合 `../navigation/43` 进入
 
 ## 维护约定
 
@@ -43,3 +54,4 @@
 - 新样本应按编号段放回对应阶段，保持与 `playbooks/` 和 `navigation/` 的互补关系。
 - 正向改写、修复顺序与协议对象统一写回 `guides/`、`playbooks/`、`api/`，不重新塞回案例正文。
 - 轮次推进与开发记忆统一回写到 `docs/`，不写进案例正文。
+- 编号段负责时间顺序，对象链入口负责阅读顺序；不要再让编号感压过对象主语。
