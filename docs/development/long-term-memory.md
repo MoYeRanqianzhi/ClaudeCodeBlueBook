@@ -2119,6 +2119,8 @@
 - Prompt 主链前门当前应固定成 `section registry / dynamic boundary -> message lineage -> projection consumer -> protocol transcript -> continuation object / qualification -> cache-safe forks`，不要再让 `Request Surface Constitution` 或其他检索别名占可见主语位
 - Prompt 线必须继续写成第二张图的 request-surface 投影：`lawful forgetting`、stable prefix boundary、cache-safe fork reuse 与 continuation qualification 都在消费 `governance key -> externalized truth chain -> decision window -> continuation pricing` 的同一治理秩序，不能再把“安全”和“省 token”拆成两套话题
 - 目录页只负责暴露证据梯度与拒收链，不负责承担阅读编排；凡是规范入口、切换协议、推荐顺序与当前批次收口说明，一律留在 `docs/` 和记忆层，不回正文
+- 仓库入口当前应固定成单向职责链：`README` 只做仓库级四分路由，`bluebook/README` 只做主线宪法与证据梯度，`navigation/README` 只做跨目录 judgment map，专题 README 只做各自前门；不要让多层入口同时重写同一条主线
+- `security/README` 当前应只保留高阶判断、编号段范围与 `appendix / source-notes / docs` 分流，不再镜像巨型 inventory、逐篇标题链或作者侧推进记忆；安全首页先回答价格秩序，再把读者送去具体 ladder
 
 ## 后续章节建议
 

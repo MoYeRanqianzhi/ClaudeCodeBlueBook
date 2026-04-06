@@ -1,62 +1,40 @@
 # Claude Code Blue Book
 
-面向 `claude-code-source-code/` 的 Claude Code 蓝皮书工程。这个仓库把源码研究拆成主线章节、专题入口、失败样本、运行手册，以及研究过程、证据与变更记录，而不是维护一篇持续膨胀的长文。
+面向 `claude-code-source-code/` 的 Claude Code 蓝皮书工程。仓库现在只先分清四类入口：蓝皮书正文、面向使用者的 userbook、研究与记忆层、源码镜像；根 README 只负责把这四类入口分开，不再承担深层阅读路线。
 
-## 如何进入蓝皮书
-
-- 首次阅读：`README -> bluebook/README -> bluebook/09 -> bluebook/03 -> bluebook/00 / 01`
-- 按主题进入：先到 [bluebook/README.md](bluebook/README.md)，再按主线、方法、验证或反例分流
-- 跨目录反查：回到 [bluebook/navigation/README.md](bluebook/navigation/README.md)
-- 研究方法、证据归档与持久化记忆：回到 [docs/README.md](docs/README.md)
-
-## 目录入口
-
-- [bluebook/README.md](bluebook/README.md): 蓝皮书入口与主线前门
-- [bluebook/userbook/README.md](bluebook/userbook/README.md): 面向使用者的 Claude Code Userbook
-- [docs/README.md](docs/README.md): 研究过程、证据与变更记录
-- `docs/development/`: 研究材料、长期记忆与研究日志
-- `docs/userbook-memory/`: userbook 作者侧记忆
-- `claude-code-source-code/`: 反编译/镜像源码参考，不是蓝皮书正文
-- 根目录辅助文档：`Agents.md`、`cgit.md`、`cmainloop.md`、`crisk.md`、`cuserbook.md` 是协作或专题备忘，不替代主线索引
-
-## 主线入口
+## 先选入口
 
 - [bluebook/README.md](bluebook/README.md)
+  想先理解 Claude Code 的设计内涵、三张控制面和证据梯度。
 - [bluebook/userbook/README.md](bluebook/userbook/README.md)
-- [bluebook/00-导读.md](bluebook/00-导读.md)
-- [bluebook/01-源码结构地图.md](bluebook/01-源码结构地图.md)
-- [bluebook/02-使用指南.md](bluebook/02-使用指南.md)
-- [bluebook/03-设计哲学.md](bluebook/03-设计哲学.md)
-- [bluebook/04-公开能力与隐藏能力.md](bluebook/04-公开能力与隐藏能力.md)
-- [bluebook/05-功能全景与API支持.md](bluebook/05-功能全景与API支持.md)
-- [bluebook/06-第一性原理与苏格拉底反思.md](bluebook/06-第一性原理与苏格拉底反思.md)
-- [bluebook/07-运行时契约、知识层与生态边界.md](bluebook/07-运行时契约、知识层与生态边界.md)
-- [bluebook/08-能力全集、公开度与成熟度矩阵.md](bluebook/08-能力全集、公开度与成熟度矩阵.md)
+  想从使用者视角理解 Claude Code 的入口、目标与运行时边界。
+- [docs/README.md](docs/README.md)
+  想看研究过程、持久化记忆、变更记录和目录治理。
+- `claude-code-source-code/`
+  想回到源码镜像核对证据；它是研究对象，不是蓝皮书正文。
 
-## 专题入口
+## 最短进入
 
-- [bluebook/navigation/README.md](bluebook/navigation/README.md): 阅读地图、交叉反查与机制回灌导航
-- [bluebook/architecture/README.md](bluebook/architecture/README.md): 运行时结构、状态机与控制面
-- [bluebook/api/README.md](bluebook/api/README.md): 命令、工具、状态、宿主与扩展协议
-- [bluebook/guides/README.md](bluebook/guides/README.md): 使用方法、模板、审读清单与构建手册
-- [bluebook/philosophy/README.md](bluebook/philosophy/README.md): 第一性原理与源码先进性解释
-- [bluebook/casebooks/README.md](bluebook/casebooks/README.md): 失败样本、反例与失真原型
-- [bluebook/playbooks/README.md](bluebook/playbooks/README.md): 回归、演练、rollout 与运行手册
-- [bluebook/risk/README.md](bluebook/risk/README.md): 风控、账号治理、恢复与入口语义差
-- [bluebook/security/README.md](bluebook/security/README.md): 安全控制面正文
-- [bluebook/security/appendix/README.md](bluebook/security/appendix/README.md): 安全速查表与证据附录
+- 第一次进蓝皮书：`README -> bluebook/README -> bluebook/09 -> bluebook/03`
+- 想按用户目标进入：`bluebook/userbook/README`
+- 想跨目录反查：`bluebook/navigation/README`
+- 想追研究材料与长期记忆：`docs/README`
 
-## 推荐阅读
+## 目录分工
 
-- 初次进入：`README -> bluebook/README -> 09 -> 03 -> 00 / 01`
-- 想高效使用 Claude Code：`02 -> guides/README`
-- 想接宿主或控制协议：`05 -> api/README -> architecture/README`
-- 想看安全与风控：`security/README -> risk/README`
-- 想看失败样本和演练：`casebooks/README -> playbooks/README`
+- `bluebook/`
+  正式正文与专题结论。
+- `bluebook/userbook/`
+  面向使用者的系统说明书。
+- `docs/`
+  研究过程、证据归档、长期记忆与变更记录。
+- `docs/userbook-memory/`
+  userbook 作者侧记忆，不替代正式正文。
+- 根目录辅助文档
+  `Agents.md`、`cgit.md`、`cmainloop.md`、`crisk.md`、`cuserbook.md` 是协作或专题备忘，不替代主线入口。
 
-## 工作原则
+## 写作纪律
 
-- 结论尽量回到具体源码文件、运行时对象和可复查证据。
-- `bluebook/` 负责正式主线与专题结论；其中面向使用者的手册位于 `bluebook/userbook/`。
-- `docs/` 只负责开发与记忆；`docs/userbook-memory/` 承接 userbook 的作者侧记忆。
-- 总 README 只保留一级路由；深层交叉索引下沉到各目录 README 和 `bluebook/navigation/`。
+- 根 README 只保留一级路由，不重复展开目录深链。
+- 深层分流交给各目录 `README` 和 `bluebook/navigation/README.md`。
+- `docs/` 记录过程与记忆，不回灌蓝皮书正文主语。
