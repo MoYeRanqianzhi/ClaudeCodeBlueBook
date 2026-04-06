@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `navigation/README / playbooks/README / guides/README` 现已把目录入口层进一步收口：
+  - `navigation/README` 现已把结构运行链拆成 `46 -> 31 -> 37`、`67 -> 70 -> 73 -> 76`、`79` 三档，不再让结构入口层继续像一条平铺长链。
+  - `playbooks/README` 现已把结构推荐入口与对象主线统一成 `authority object -> per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`。
+  - `guides/README` 现已明确 `57-59` 与 `81 / 90` 已经回到新对象链，不再继续作为旧桥接页被入口层误导。
+- 新的长期结论：
+  - 目录结构真正成熟时，入口层不应再只给编号链，而必须先给对象链和阶段分流；否则就算正文已经换代，读者仍会被入口层重新带回旧顺序。
+  - 结构线入口尤其需要显式区分 `legacy intake / acceptance`、`current repair / refinement`、`current validation` 三档；不然 `31 / 37` 和 `67-79` 会继续被读成同一层级。
 - `guides/57 / playbooks/35 / playbooks/77` 现已把 Prompt 迁移纠偏、宿主验收执行与长期验证尾部统一到当前对象链：
   - `57` 现已把 Prompt 迁移纠偏固定回 `message lineage -> projection consumer -> protocol transcript -> stable prefix boundary -> continuation object -> continuation qualification`。
   - `35` 现已把 Prompt 宿主验收执行固定回 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification -> reject / rollback`。

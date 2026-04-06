@@ -39,10 +39,12 @@
 
 - Prompt 执行链：`46 -> 29 -> 35 -> 65 -> 68 -> 71 -> 74 -> 77`
 - 治理执行链：`46 -> 30 -> 36 -> 66 -> 69 -> 72 -> 75 -> 78`
-- 结构执行链：`46 -> 31 -> 37 -> 67 -> 70 -> 73 -> 76 -> 79`
+- 结构宿主接入与验收：`46 -> 31 -> 37`
+- 结构修复 / refinement：`67 -> 70 -> 73 -> 76`
+- 结构长期验证：`79`
 - Prompt 深段对象：`message lineage -> projection consumer -> continuation object -> cache-safe fork`
 - 治理深段对象：`governance key -> externalized truth -> durable-vs-transient -> continuation pricing`
-- 结构深段对象：`per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`
+- 结构深段对象：`authority object -> per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`
 - 公开镜像证据分级与进一步 reject path：在三条链各自稳定后，再回 `102`
 
 ## 什么时候用它
@@ -52,6 +54,7 @@
 - 需要把 `guides/`、`casebooks/`、`playbooks/`、`api/`、`architecture/` 串成同一条阅读链时
 - 需要确认某个深层编号段应该归谁解释时
 - 需要确认 Prompt / 治理 / 结构三条执行链各自应该走哪组接入、验收、修复与验证手册时
+- 需要区分结构线里的旧 intake / acceptance 页和当前 repair / validation 主入口时
 - 需要确认 Prompt 对象链在“为什么 / 审读 / 验证”三层分别该落到哪些页时
 - 需要确认 Prompt 编译链的“为什么 / 架构 / 反证 / 验证”该怎样稳定下钻时
 

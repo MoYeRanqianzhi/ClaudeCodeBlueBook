@@ -6,6 +6,7 @@
 
 - `77-79` 负责把 `09` 的三张控制面图落成长期验证手册；它们现在分别更明确覆盖 `message lineage`、`governance key` 与 `one writable present`，不再只是三篇并列回归文档
 - `29-31` 是三条执行链的宿主接入排查入口，`77-79` 才是三条控制面的长期验证主入口；不要把两组页读成并列替代关系
+- 结构线现在应显式分三档：`31-37` 负责 legacy host intake / acceptance，`67-76` 负责 current repair / refinement，`79` 才是 current validation 主入口
 
 ## 目录分层
 
@@ -23,11 +24,11 @@
 - [04-演练记录模板：前提、触发器、观测、判定、修复与防再发](04-演练记录模板：前提、触发器、观测、判定、修复与防再发.md)
 - [12-统一Rollout ABI模板：对象、Diff、阶段、观测与回退记录](<12-统一Rollout ABI模板：对象、Diff、阶段、观测与回退记录.md>)
 - [29-Prompt宿主接入审读手册：message lineage、projection consumer、protocol transcript与continuation qualification排查](<29-Prompt宿主接入审读手册：输入面、section breakdown、cache break可解释性与continue qualification排查.md>)
-- [30-治理宿主接入审读手册：authority source、decision window、pending action与rollback object排查](30-治理宿主接入审读手册：authority source、decision window、pending action与rollback object排查.md)
-- [31-故障模型宿主接入审读手册：authority state、recovery boundary与anti-zombie结果面排查](31-故障模型宿主接入审读手册：authority state、recovery boundary与anti-zombie结果面排查.md)
-- [35-Prompt宿主验收执行手册：message lineage、projection consumer、continuation qualification验收卡、拒收顺序与回退剧本](35-Prompt宿主验收执行手册：compiled request truth验收卡、拒收顺序与回退剧本.md)
-- [36-治理宿主验收执行手册：governance key、externalized truth、decision window、continuation gate与rollback剧本](36-治理宿主验收执行手册：authority source、permission ledger、decision window、continuation gate与rollback剧本.md)
-- [37-结构宿主验收执行手册：event stream、state writeback、freshness gate、stale worldview与ghost capability剧本](37-结构宿主验收执行手册：authority state、resume order、recovery boundary、writeback path与anti-zombie剧本.md)
+- [30-治理宿主接入审读手册：governance key、externalized truth chain、typed ask与continuation pricing排查](30-治理宿主接入审读手册：authority source、decision window、pending action与rollback object排查.md)
+- [31-结构宿主接入审读手册：authority object、per-host authority width、freshness gate与anti-zombie证据排查](31-故障模型宿主接入审读手册：authority state、recovery boundary与anti-zombie结果面排查.md)
+- [35-Prompt宿主验收执行手册：message lineage、protocol transcript、continuation object与回退剧本](35-Prompt宿主验收执行手册：compiled request truth验收卡、拒收顺序与回退剧本.md)
+- [36-治理宿主验收执行手册：governance key、typed ask、decision window、continuation pricing与rollback剧本](36-治理宿主验收执行手册：authority source、permission ledger、decision window、continuation gate与rollback剧本.md)
+- [37-结构宿主验收执行手册：authority object、writeback path、freshness gate与reopen边界](37-结构宿主验收执行手册：authority state、resume order、recovery boundary、writeback path与anti-zombie剧本.md)
 - [65-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：message lineage card、shared reject order与reopen drill](65-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md)
 - [66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：governance key host consumption card、hard reject order与reopen drill](66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md)
 - [67-结构宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：event stream / state writeback card、freshness gate、hard reject order与reopen drill](67-结构宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md)
@@ -43,14 +44,16 @@
 - 想沿三条母线进入执行链：
 - Prompt：`14 -> 29 -> 35 -> 77`
 - 治理：`30 -> 36 -> 66 -> 78`
-- 结构：`31 -> 37 -> 67 -> 79`
+- 结构 intake / acceptance：`31 -> 37`
+- 结构 repair / refinement：`67 -> 70 -> 73 -> 76`
+- 结构 validation：`79`
 - 想沿后段修复链继续下钻：
 - Prompt：`65 -> 68 -> 71 -> 74`
   对象主线：`message lineage -> projection consumer -> continuation object -> cache-safe fork`
 - 治理：`66 -> 69 -> 72 -> 75`
   对象主线：`governance key -> externalized truth -> durable-vs-transient -> continuation pricing`
 - 结构：`67 -> 70 -> 73 -> 76`
-  对象主线：`event-stream-vs-state-writeback -> freshness gate -> per-host authority width -> stale worldview / ghost capability`
+  对象主线：`authority object -> per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`
 - 想直接做当前长期验证，而不是先做宿主接入排查：默认从 `77-79` 起步
 - 想把高阶审读模板落成长期回归：Prompt 默认从 `77` 起步，再按需要回 `35`
 

@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮目录入口收口动作: 已继续更新 `navigation/README`、`playbooks/README` 与 `guides/README`，把入口层从长编号链收回到对象链分流：结构线现在显式拆成 `legacy intake / acceptance`、`current repair / refinement`、`current validation` 三档，Prompt / 治理 / 结构的 `57-59 / 35-37 / 77-79` 尾部路由也被前置进 README。
+- 本轮 README 旧桥接降级动作: `guides/README` 现已明确 `30-31` 才是旧一层桥接页，而 `57-59` 与 `81 / 90` 已经回到新对象链，不再继续被入口层误标为旧桥页；`playbooks/README` 现已把结构对象主线恢复成 `authority object -> per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`。
 - 本轮 Prompt 验收尾部纠偏动作: 已继续更新 `guides/57`、`playbooks/35` 与 `playbooks/77`，把 Prompt 迁移纠偏、宿主验收执行与长期验证尾部从 `compiled request truth / 请求对象 / continue qualification` 的旧执行主语收回到 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`。
 - 本轮 Prompt 尾部旧根词清理动作: `57` 现已把 `compiled request truth` 降为 legacy alias，把迁移纠偏固定回 `message lineage / projection consumer / protocol transcript / stable prefix boundary / continuation object / continuation qualification`；`35 / 77` 现已把“请求对象”与旧验证/验收尾语收回到 `message lineage / continuation qualification / cache-safe fork` 的单一对象链。
 - 并行 Agent 目录优化建议: 当前最值钱的目录层下一批不是正文，而是 `navigation/README + playbooks/README`，可选再带 `guides/README`；目标是把结构线入口从长编号链改成“legacy intake/acceptance、current repair/refinement、current validation”三档，而不再让入口层反向打乱当前对象链。
