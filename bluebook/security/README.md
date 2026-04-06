@@ -1,6 +1,6 @@
 # 安全专题索引
 
-`security/` 当前有 251 篇正文，范围 `00-250`；`appendix/` 当前有 234 篇速查文档；`source-notes/` 当前有 101 篇源码剖面。
+`security/` 当前有 252 篇正文，范围 `00-251`；`appendix/` 当前有 235 篇速查文档；`source-notes/` 当前有 102 篇源码剖面。
 
 本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及从 `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention -> honesty -> isolation -> constitution -> rationale -> metadata -> runtime-conformance -> anti-drift verification -> repair -> migration -> sunset -> tombstone ...` 一路推进到 stronger-request cleanup 家族的同构治理链。
 
@@ -17,7 +17,7 @@
 - `30-69`：真相源、账本、恢复闭环、清理纪律、词法、租约与 failure path。
 - `70-99`：能力发布、状态编辑、恢复资格、默认路由与 reject semantics。
 - `100-138`：完成权、字段生命周期、工程迁移、验证架构与制度化接口。
-- `139-250`：cleanup 契约与 signer/governor ladder，含 stronger-request cleanup 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone、resurrection、re-entitlement、reconfiguration、reactivation、readiness、continuity、recovery、reintegration、reprojection、reassurance、use-time revalidation、step-up reauthorization、continuation、completion、finality、forgetting、liability-release、archive-close、audit-close、irreversible-erasure 等高阶治理分层。
+- `139-251`：cleanup 契约与 signer/governor ladder，含 stronger-request cleanup 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone、resurrection、re-entitlement、reconfiguration、reactivation、readiness、continuity、recovery、reintegration、reprojection、reassurance、use-time revalidation、step-up reauthorization、continuation、completion、finality、forgetting、liability-release、archive-close、audit-close、irreversible-erasure、retention-governance 等高阶治理分层。
 
 ## 推荐入口
 
@@ -48,6 +48,7 @@
 - [248-安全载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层：为什么artifact-family cleanup stronger-request liability-release-governor signer不能越级冒充artifact-family cleanup stronger-request archive-close-governor signer](248-安全载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层.md)
 - [249-安全载体家族强请求清理归档关闭治理与强请求清理审计关闭治理分层：为什么artifact-family cleanup stronger-request archive-close-governor signer不能越级冒充artifact-family cleanup stronger-request audit-close-governor signer](249-安全载体家族强请求清理归档关闭治理与强请求清理审计关闭治理分层.md)
 - [250-安全载体家族强请求清理审计关闭治理与强请求清理不可逆擦除治理分层：为什么artifact-family cleanup stronger-request audit-close-governor signer不能越级冒充artifact-family cleanup stronger-request irreversible-erasure-governor signer](250-安全载体家族强请求清理审计关闭治理与强请求清理不可逆擦除治理分层.md)
+- [251-安全载体家族强请求清理不可逆擦除治理与强请求清理保留期治理分层：为什么artifact-family cleanup stronger-request irreversible-erasure-governor signer不能越级冒充artifact-family cleanup stronger-request retention-governor signer](251-安全载体家族强请求清理不可逆擦除治理与强请求清理保留期治理分层.md)
 
 ## 阅读顺序
 
@@ -55,7 +56,7 @@
 - 想定位“当前真相从哪里来、为什么恢复不等于完成”：先读 `30-69`。
 - 想看能力发布、状态编辑与恢复资格：先读 `70-99`。
 - 想看验证、迁移与工程化落地：先读 `100-138`。
-- 想直看治理链主干：先读 `147-250 -> appendix/131-234 -> source-notes/01-101`。
+- 想直看治理链主干：先读 `147-251 -> appendix/131-235 -> source-notes/01-102`。
 - 想快速查字段、词法、路由、签字权和速查表：直接去 [appendix/README.md](appendix/README.md)。
 - 想追具体源码证据簇：直接去 [source-notes/README.md](source-notes/README.md)。
 
