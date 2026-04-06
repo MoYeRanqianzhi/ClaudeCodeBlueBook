@@ -6,6 +6,10 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 userbook 第一跳同序化动作: 已继续更新 `userbook/README`、`00`、`01-主线使用/README`、`01`、`02`、`04` 与 `05`，把最近几批已经稳定下来的最小排查顺序前推到用户侧第一跳。
+- 本轮 user-facing Prompt 动作: `02` 现在更明确把“同一个工作对象”的用户侧最小顺序写成 `目标 -> 附件/文件 -> working set -> next action / handoff`，不再让用户只记住 `same-world test` 这句高阶判断。
+- 本轮 user-facing 治理动作: `05` 现在更明确把 `/status / /doctor / /usage / /add-dir` 失败后的五格处理方式写成 `拒收 / 降级 / 停止 / 清理后恢复 / 升级给人`，把治理 failure order 直接翻译成用户动作。
+- 本轮 user-facing 恢复动作: `04` 现在更明确把恢复链写成“先确认同一工作对象，再确认 stable bytes/working set，再判断继续格，再决定 `/resume / /compact / /memory`”，避免用户继续把恢复误读成找聊天记录。
 - 本轮入口层同序化动作: 已继续更新 `bluebook/README`、`navigation/README`、`06` 与 `navigation/05`，把最近几批稳定下来的 `Prompt witness order / governance failure order / current-truth reject order` 前推到目录入口与第一性原理页。
 - 本轮目录结构深化结论: 当入口层开始同时暴露 canonical formula 和最小排查顺序时，目录优化才真正从“同词化”进入“同序化”；否则 later maintainer 还是得先下潜到 `architecture / guides / playbooks` 之后，才拿得到真正可执行的排查动作。
 - 本轮入口层写作纪律动作: `navigation/README` 现在更明确把跨目录入口写成“公式 + 顺序 + 证据层”三段式，`06` 现在更明确要求目录优化不只共用主语，还要共用最小排查顺序，`navigation/05` 则把并行深挖后的合流标准进一步写成“主语和顺序同时合流”。

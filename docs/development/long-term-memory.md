@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `userbook/README`、`00`、`01-主线使用/README`、`01`、`02`、`04` 与 `05` 现已继续把蓝皮书主线里稳定下来的顺序前推到使用者第一跳：
+  - `userbook/README` 现在更明确把第一跳从三条使用判断扩成三组最小排查顺序。
+  - `00` 现在更明确把“先过 same-world / decision window / stable bytes vs working set”继续压成用户能直接执行的三步动作。
+  - `01-主线使用/README` 现在更明确把主线使用五页和三条母线/三组顺序对应起来。
+  - `01`、`02`、`04`、`05` 现在更明确把入口、输入编译、恢复链和开工前自检都写成用户侧最小顺序，而不是只给概念说明。
+- 新的长期结论：
+  - 只有当 `userbook` 第一跳也开始交付最小排查顺序，而不只交付目录和概念时，蓝皮书体系才真正把“同序化”从 later maintainer 推进到普通使用者。
+  - Prompt witness order、治理 failure order、当前真相 reject order 一旦能被翻译成用户侧动作顺序，说明这一轮概念已经足够稳定；如果还只能在架构页里成立，就说明它仍未成熟到可用层。
 - `bluebook/README`、`navigation/README`、`06` 与 `navigation/05` 现已继续把最近几批稳定下来的顺序前推到入口层：
   - `bluebook/README` 现在更明确把入口从 canonical formula 扩成 canonical formula + 三组最小排查顺序。
   - `navigation/README` 现在更明确把跨目录入口扩成“公式 + 顺序 + 证据层”的三段式。

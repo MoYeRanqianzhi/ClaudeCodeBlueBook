@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新 `userbook/README`、`userbook/00`、`userbook/01-主线使用/README`、`01`、`02`、`04` 与 `05`，把最近几批在蓝皮书主线里稳定下来的 `witness / failure / reject` 顺序前推到使用者第一跳：`userbook/README` 现在更明确给出三组最小排查顺序，`00` 现在更明确把三条使用判断再压成用户侧最小动作顺序，`01-主线使用/README` 现在更明确说明这一组主线页分别在承接 Prompt 连续性、治理判断与工作现场边界
+- `01-进入系统`、`02-提问、补上下文与让模型继续工作`、`04-会话、恢复、压缩与记忆` 与 `05-开工前自检` 现在更明确把入口、同一工作对象、working set、恢复链和自检失败后的 `拒收 / 降级 / 停止 / 清理后恢复 / 升级给人` 五格处理方式写成用户侧最小顺序，避免使用者必须下潜到深页后才学会同一套排查动作
 - 继续更新 `bluebook/README`、`navigation/README`、`06` 与 `navigation/05`，把最近几批已经稳定下来的 `Prompt witness order / governance failure order / current-truth reject order` 继续前推到入口层：`bluebook/README` 现在更明确把三组最小排查顺序写进入口与继续深入法，`navigation/README` 现在更明确把跨目录入口从“公式 + route map”推进到“公式 + 顺序 + 证据层”三段式，`06` 现在更明确把目录优化目标从“同词化”升级成“同序化”，`navigation/05` 现在更明确把并行深挖后的真正合流定义成主语和顺序同时合流
 - 本轮继续把目录结构优化从“帮助找到页”压成“帮助 later maintainer 先拿到同一套排查动作”：入口层现在不只教读者先看哪类问题，也开始直接给出 Prompt witness order、治理 failure order 与当前真相 reject order，减少读者必须先下潜深页后才能学会如何排查的成本
 - 继续更新 `bluebook/07`、`09`、`architecture/83` 与 `architecture/84`，把近期已经压到 builder 与审读模板里的 `Prompt witness order / governance failure order / current-truth reject order` 回灌到运行时契约、三张控制面总图和两张架构主图：`07` 现在更明确把这三组最小顺序写成 runtime contract 必须持续导出的 shared order；`09` 现在更明确把三张图各自应导出的最小顺序和 later maintainer 排查顺序写回控制面宪法；`83` 现在更明确给出治理最小 failure order；`84` 现在更明确给出 later maintainer 的最小 reject order
