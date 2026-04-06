@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/53 / playbooks/28 / casebooks/15 / 42` 现已继续把结构 visible root 收口：
+  - `api/53` 现已把结构宿主消费面从 `authority state / generation evidence / recovery boundary / anti-zombie projection` 收回到 `authority object / per-host authority width / freshness gate / recovery asset non-sovereignty / anti-zombie evidence`。
+  - `playbooks/28` 现已把可演化内核验证里的 `transition / dependency` 收硬成 `transition legality / dependency honesty`。
+  - `casebooks/15 / 42` 现已把结构失真前门从 `Evidence Envelope / authority watch` 这类看板词收回到 `authority object / current truth / freshness gate` 的对象语言。
+- 新的长期结论：
+  - 结构线最会反向输送旧世界观的，不一定是深层术语，而是 `support surface / envelope / watch` 这类 front word；它们会让 later maintainer 先看到看板、材料和监控，而不是 current-truth discipline。
+  - 结构正文真正成熟时，`authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale worldview / ghost capability` 应先于一切 envelope、watch、成功率与目录体感出场。
 - `00 / 01 / 06 / README / guides/06` 现已继续把正文里的元叙事和记忆仓库分工收口：
   - `00 / README` 现已不再把 `docs/` 直接写成“上一轮推进到哪”的工作台入口，而改写成方法附录、证据归档与目录治理记录。
   - `01` 现已把 `query` 主循环的表述从“直到本轮无需继续”收回到 `continuation qualification` 语义。

@@ -1,4 +1,4 @@
-# 可演化内核对象验证手册：authority object、transition、dependency、recovery asset non-sovereignty与anti-zombie回归
+# 可演化内核对象验证手册：authority object、transition legality、dependency honesty、recovery asset non-sovereignty与anti-zombie回归
 
 这一章不再解释 `evolvable kernel object boundary` 为什么重要，而是把它压成一张长期演化里的验证手册。
 
@@ -29,7 +29,7 @@
 
 而是：
 
-- 当前 authority object、transition、dependency、recovery asset non-sovereignty 与 anti-zombie 仍然围绕同一内核对象成立
+- 当前 authority object、transition legality、dependency honesty、recovery asset non-sovereignty 与 anti-zombie 仍然围绕同一内核对象成立
 
 所以这层验证最先要看的不是静态结构图，而是：
 
@@ -110,4 +110,4 @@
 
 ## 8. 一句话总结
 
-真正成熟的结构机制验证，不是看规则还在不在，而是持续证明 authority、transition、dependency、recovery asset 与 anti-zombie 仍然围绕同一个可演化内核对象成立。
+真正成熟的结构机制验证，不是看规则还在不在，而是持续证明 authority object、transition legality、dependency honesty、recovery asset non-sovereignty 与 anti-zombie 仍然围绕同一个可演化内核对象成立。

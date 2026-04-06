@@ -1,11 +1,11 @@
-# 结构 Evidence Envelope反例：authority object 被文件、目录与作者记忆拆散
+# 结构 authority object 失真反例：文件 diff、目录美观与作者记忆如何拆散 current truth
 
 这一章不再收集“结构本身设计错”的反例，而是收集结构证据明明已经存在，却被不同消费者拆成不同替身之后最常见的失真样本。
 
 它主要回答五个问题：
 
 1. 为什么结构升级明明已经有 `authority object`、`per-host authority width` 与 `event-stream-vs-state-writeback`，团队仍然会退回文件级回退与目录审美。
-2. 为什么结构的 shared evidence envelope 最容易被拆成“文件 diff”“目录图”“恢复成功率”“作者记忆”四份材料。
+2. 为什么结构的 shared current-truth chain 最容易被拆成“文件 diff”“目录图”“恢复成功率”“作者记忆”四份材料。
 3. 哪些坏解法最容易把源码先进性退回到静态美观和作者权威。
 4. 怎样把这些坏解法改写回 Claude Code 式共享证据消费。
 5. 怎样用苏格拉底式追问避免把这一章读成“作者偏好某种代码审美”。
@@ -36,7 +36,7 @@
 
 而是：
 
-- 图很多、提交很多、总结很多，却没有一份 shared envelope 能让不同消费者围绕同一对象与同一 present-truth 纪律判断
+- 图很多、提交很多、总结很多，却没有一条 shared current-truth chain 能让不同消费者围绕同一对象与同一 present-truth 纪律判断
 
 这样一来，系统虽然已经能描述：
 

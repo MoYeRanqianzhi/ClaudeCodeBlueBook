@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮结构 visible root 推进动作: 已继续更新 `api/53 / playbooks/28 / casebooks/15 / 42`，把结构宿主消费面、可演化内核验证与结构失真反例的可见主语从 `authority state / transition / dependency / Evidence Envelope / authority watch` 收回到 `authority object / per-host authority width / freshness gate / anti-zombie evidence / current truth`。
+- 本轮结构前门判断加固: 对结构线来说，最危险的旧词不再只是“single writer / recovery asset”这组浅层标题债，而是 `support surface / envelope / watch` 这类看板词继续偷走 current-truth 纪律；因此这批优先修 front words，而不是继续扩写深层证明。
 - 本轮正文去记忆化动作: 已继续更新 `00 / 01 / 06 / README / guides/06`，把主线前门、结构前门与第一性原理实践里直接点名 `docs/` 分工、轮次推进、changelog / 研究日志 / 长期记忆 的元叙事，收回成“独立附录载体”“证据归档”与“继续资格”这类稳定正文表达。
 - 本轮正文边界判断加固: 真正需要从正文移走的，不是一切提到 memory 的句子，而是那些把读者直接带到作者工作台、提交节奏与记忆仓库分工的句子；反过来说，作为 runtime 对象存在的 memory / continuation / evidence 仍应留在正文。
 - 本轮更深协议标题债推进动作: 已继续更新 `api/79 / 90 / 91 / 93`，把治理 / Prompt 更深一层 rewrite 与 refinement protocol 页的可见主语和开头对象链从 `authority source / authority chain / compiled request truth` 收回到 `governance key / typed ask ledger / decision window / continuation pricing` 与 `message lineage / role-contract custody / protocol transcript / continuation qualification`。
