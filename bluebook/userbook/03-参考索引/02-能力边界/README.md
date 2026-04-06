@@ -91,3 +91,4 @@
 - [89-task_summary vs post_turn_summary transport-lifecycle 索引.md](./89-task_summary%20vs%20post_turn_summary%20transport-lifecycle%20索引.md)
 - [90-Result terminal semantics vs stream tail 索引.md](./90-Result%20terminal%20semantics%20vs%20stream%20tail%20索引.md)
 - [91-Suggestion cleanup and telemetry gap 索引.md](./91-Suggestion%20cleanup%20and%20telemetry%20gap%20索引.md)
+- [92-Observer metadata stale scrub vs restore 索引.md](./92-Observer%20metadata%20stale%20scrub%20vs%20restore%20索引.md)
