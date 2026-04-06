@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 171 篇速查文档。
+`appendix/` 当前包含 177 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -156,6 +156,24 @@
 - `171`
   载体家族强请求不可逆擦除治理与强请求保留期治理分层。
   入口：[171-安全载体家族强请求不可逆擦除治理与强请求保留期治理分层速查表：carrier、current retention owner、execution gate、cleanup coverage gap与governor question](171-安全载体家族强请求不可逆擦除治理与强请求保留期治理分层速查表.md)。
+- `172`
+  载体家族强请求保留期治理与强请求保留期执行诚实性治理分层。
+  入口：[172-安全载体家族强请求保留期治理与强请求保留期执行诚实性治理分层速查表：surface、declared scope、visible runtime truth、honesty gap与governor question](172-安全载体家族强请求保留期治理与强请求保留期执行诚实性治理分层速查表.md)。
+- `173`
+  载体家族强请求保留期执行诚实性治理与强请求清理隔离治理分层。
+  入口：[173-安全载体家族强请求保留期执行诚实性治理与强请求清理隔离治理分层速查表：artifact family、current isolation proof、live-peer gap、positive control与governor question](173-安全载体家族强请求保留期执行诚实性治理与强请求清理隔离治理分层速查表.md)。
+- `174`
+  载体家族强请求清理隔离治理与强请求清理家族宪法治理分层。
+  入口：[174-安全载体家族强请求清理隔离治理与强请求清理家族宪法治理分层速查表：carrier family、constitution world、cleanup root、current gate与governor question](174-安全载体家族强请求清理隔离治理与强请求清理家族宪法治理分层速查表.md)。
+- `175`
+  载体家族强请求清理家族宪法治理与强请求清理制度理由治理分层。
+  入口：[175-安全载体家族强请求清理家族宪法治理与强请求清理制度理由治理分层速查表：carrier family、primary risk object、operational duty、host visibility与rationale drift](175-安全载体家族强请求清理家族宪法治理与强请求清理制度理由治理分层速查表.md)。
+- `176`
+  载体家族强请求清理制度理由治理与强请求清理制度元数据治理分层。
+  入口：[176-安全载体家族强请求清理制度理由治理与强请求清理制度元数据治理分层速查表：carrier family、where truth lives、who currently consumes it、metadata gap与drift symptom](176-安全载体家族强请求清理制度理由治理与强请求清理制度元数据治理分层速查表.md)。
+- `177`
+  载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层。
+  入口：[177-安全载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层速查表：metadata signal、runtime truth、gap type、receipt surface与governor question](177-安全载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层速查表.md)。
 
 ## 怎么配合主线读
 
