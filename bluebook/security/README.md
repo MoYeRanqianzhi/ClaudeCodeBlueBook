@@ -1,12 +1,12 @@
 # 安全专题索引
 
-`security/` 当前有 172 篇正文，范围 `00-171`；`appendix/` 当前有 155 篇速查文档；`source-notes/` 当前有 22 篇源码剖面。本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及终局、遗忘、免责释放、归档关闭、审计关闭、不可逆销毁、保留期治理、执行诚实性、清理隔离、载体家族宪法边界、制度理由边界、制度元数据边界、运行时符合性边界、反漂移验证边界、修复治理边界、迁移治理边界、退役治理边界、墓碑治理边界、复活治理边界、再赋权治理边界、重配置治理边界、重新激活治理边界与就绪治理边界的工程化验证。
+`security/` 当前有 173 篇正文，范围 `00-172`；`appendix/` 当前有 156 篇速查文档；`source-notes/` 当前有 23 篇源码剖面。本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及终局、遗忘、免责释放、归档关闭、审计关闭、不可逆销毁、保留期治理、执行诚实性、清理隔离、载体家族宪法边界、制度理由边界、制度元数据边界、运行时符合性边界、反漂移验证边界、修复治理边界、迁移治理边界、退役治理边界、墓碑治理边界、复活治理边界、再赋权治理边界、重配置治理边界、重新激活治理边界、就绪治理边界与连续性治理边界的工程化验证。
 
 ## 核心判断
 
 - Claude Code 的安全性不是单点沙箱，也不是单点分类器，而是一套分层 signer、ledger 与 lifecycle control plane。
 - 真正重要的不是把能力尽量做小，而是让能力、声明、恢复权和清理权只能沿着正确边界流动。
-- `147-171` 这一段 signer/governor/honesty/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone/resurrection/re-entitlement/reconfiguration/reactivation/readiness ladder 已经说明：`receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance -> artifact-family cleanup resurrection-governance -> artifact-family cleanup re-entitlement-governance -> artifact-family cleanup reconfiguration-governance -> artifact-family cleanup reactivation-governance -> artifact-family cleanup readiness-governance` 是逐层增强的安全声明、治理主权、执行诚实性、非干扰边界、家族级宪法主权、制度理由主权、制度元数据主权、运行时符合性主权、反漂移验证主权、修复治理主权、迁移治理主权、退役治理主权、墓碑治理主权、复活治理主权、再赋权治理主权、重配置治理主权、重新激活治理主权与就绪治理主权，任何弱层都不能越级冒充强层。
+- `147-172` 这一段 signer/governor/honesty/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone/resurrection/re-entitlement/reconfiguration/reactivation/readiness/continuity ladder 已经说明：`receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance -> artifact-family cleanup resurrection-governance -> artifact-family cleanup re-entitlement-governance -> artifact-family cleanup reconfiguration-governance -> artifact-family cleanup reactivation-governance -> artifact-family cleanup readiness-governance -> artifact-family cleanup continuity-governance` 是逐层增强的安全声明、治理主权、执行诚实性、非干扰边界、家族级宪法主权、制度理由主权、制度元数据主权、运行时符合性主权、反漂移验证主权、修复治理主权、迁移治理主权、退役治理主权、墓碑治理主权、复活治理主权、再赋权治理主权、重配置治理主权、重新激活治理主权、就绪治理主权与连续性治理主权，任何弱层都不能越级冒充强层。
 
 ## 目录分层
 
@@ -15,7 +15,7 @@
 - `30-69`: 真相源、账本、恢复闭环、清理纪律、词法、租约与 failure path。
 - `70-99`: 能力发布、状态编辑、恢复资格、默认路由与 reject semantics。
 - `100-138`: 完成权、字段生命周期、工程迁移、验证架构与制度化接口。
-- `139-171`: cleanup 契约、兼容迁移、版本偏斜、handoff、receipt/completion/finality/forgetting/liability-release/archive-close/audit-close/irreversible-erasure/retention-governance/retention-enforcement-honesty/cleanup-isolation/artifact-family-cleanup-constitution/artifact-family-cleanup-rationale/artifact-family-cleanup-metadata/artifact-family-cleanup-runtime-conformance/artifact-family-cleanup-anti-drift-verification/artifact-family-cleanup-repair-governance/artifact-family-cleanup-migration-governance/artifact-family-cleanup-sunset-governance/artifact-family-cleanup-tombstone-governance/artifact-family-cleanup-resurrection-governance/artifact-family-cleanup-re-entitlement-governance/artifact-family-cleanup-reconfiguration-governance/artifact-family-cleanup-reactivation-governance/artifact-family-cleanup-readiness-governance 分层。
+- `139-172`: cleanup 契约、兼容迁移、版本偏斜、handoff、receipt/completion/finality/forgetting/liability-release/archive-close/audit-close/irreversible-erasure/retention-governance/retention-enforcement-honesty/cleanup-isolation/artifact-family-cleanup-constitution/artifact-family-cleanup-rationale/artifact-family-cleanup-metadata/artifact-family-cleanup-runtime-conformance/artifact-family-cleanup-anti-drift-verification/artifact-family-cleanup-repair-governance/artifact-family-cleanup-migration-governance/artifact-family-cleanup-sunset-governance/artifact-family-cleanup-tombstone-governance/artifact-family-cleanup-resurrection-governance/artifact-family-cleanup-re-entitlement-governance/artifact-family-cleanup-reconfiguration-governance/artifact-family-cleanup-reactivation-governance/artifact-family-cleanup-readiness-governance/artifact-family-cleanup-continuity-governance 分层。
 
 ## 推荐入口
 
@@ -51,6 +51,7 @@
 - [169-安全载体家族再赋权治理与重配置治理分层：为什么artifact-family cleanup re-entitlement-governor signer不能越级冒充artifact-family cleanup reconfiguration-governor signer](169-安全载体家族再赋权治理与重配置治理分层：为什么artifact-family%20cleanup%20re-entitlement-governor%20signer不能越级冒充artifact-family%20cleanup%20reconfiguration-governor%20signer.md)
 - [170-安全载体家族重配置治理与重新激活治理分层：为什么artifact-family cleanup reconfiguration-governor signer不能越级冒充artifact-family cleanup reactivation-governor signer](170-安全载体家族重配置治理与重新激活治理分层：为什么artifact-family%20cleanup%20reconfiguration-governor%20signer不能越级冒充artifact-family%20cleanup%20reactivation-governor%20signer.md)
 - [171-安全载体家族重新激活治理与就绪治理分层：为什么artifact-family cleanup reactivation-governor signer不能越级冒充artifact-family cleanup readiness-governor signer](171-安全载体家族重新激活治理与就绪治理分层：为什么artifact-family%20cleanup%20reactivation-governor%20signer不能越级冒充artifact-family%20cleanup%20readiness-governor%20signer.md)
+- [172-安全载体家族就绪治理与连续性治理分层：为什么artifact-family cleanup readiness-governor signer不能越级冒充artifact-family cleanup continuity-governor signer](172-安全载体家族就绪治理与连续性治理分层：为什么artifact-family%20cleanup%20readiness-governor%20signer不能越级冒充artifact-family%20cleanup%20continuity-governor%20signer.md)
 - [安全专题附录索引](appendix/README.md)
 - [安全源码剖面索引](source-notes/README.md)
 
@@ -60,13 +61,13 @@
 - 想定位“当前真相从哪里来、为什么恢复不等于完成”：先读 `30-69`
 - 想看能力发布、状态编辑与恢复资格：先读 `70-99`
 - 想看验证、迁移与工程化落地：先读 `100-138`
-- 想直看 signer ladder、终局边界、遗忘边界、免责释放边界、归档关闭边界、审计关闭边界、不可逆销毁边界、保留期治理边界、执行诚实性边界、清理隔离边界、载体家族宪法边界、制度理由边界、制度元数据边界、运行时符合性边界、反漂移验证边界、修复治理边界、迁移治理边界、退役治理边界、墓碑治理边界、复活治理边界、再赋权治理边界、重配置治理边界、重新激活治理边界与就绪治理边界：先读 `147 -> 148 -> 149 -> 150 -> 151 -> 152 -> 153 -> 154 -> 155 -> 156 -> 157 -> 158 -> 159 -> 160 -> 161 -> 162 -> 163 -> 164 -> 165 -> 166 -> 167 -> 168 -> 169 -> 170 -> 171 -> appendix/131-155 -> source-notes/01-22`
+- 想直看 signer ladder、终局边界、遗忘边界、免责释放边界、归档关闭边界、审计关闭边界、不可逆销毁边界、保留期治理边界、执行诚实性边界、清理隔离边界、载体家族宪法边界、制度理由边界、制度元数据边界、运行时符合性边界、反漂移验证边界、修复治理边界、迁移治理边界、退役治理边界、墓碑治理边界、复活治理边界、再赋权治理边界、重配置治理边界、重新激活治理边界、就绪治理边界与连续性治理边界：先读 `147 -> 148 -> 149 -> 150 -> 151 -> 152 -> 153 -> 154 -> 155 -> 156 -> 157 -> 158 -> 159 -> 160 -> 161 -> 162 -> 163 -> 164 -> 165 -> 166 -> 167 -> 168 -> 169 -> 170 -> 171 -> 172 -> appendix/131-156 -> source-notes/01-23`
 - 想快速查字段、词法、路由、签字权和速查表：直接去 [appendix/README.md](appendix/README.md)
 - 想追具体源码证据簇：直接去 [source-notes/README.md](source-notes/README.md)
 
 ## 维护约定
 
-- README 只保留编号段和代表性入口，不再镜像全部 172 篇标题。
+- README 只保留编号段和代表性入口，不再镜像全部 173 篇标题。
 - 深层速查和证据字典统一维护在 [appendix/README.md](appendix/README.md)。
 - 单机制、单协议、单文件群的源码剖面统一维护在 [source-notes/README.md](source-notes/README.md)。
 - 章节推进记忆、未来候选和目录编排提示统一写入 [../../docs/development/security/README.md](../../docs/development/security/README.md)，不再回写到正文尾段。

@@ -24,6 +24,7 @@
 - `169` 已经稳定写出重配置治理边界：repo 在 `savePluginOptions()`、`getUnconfiguredOptions()`、`saveMcpServerUserConfig()`、`getUnconfiguredChannels()`、`needs-config` 与 `PluginOptionsFlow` / `ManagePlugins` 的 `configured / skipped / take effect` grammar 上已明确展示 reconfiguration governance 的存在，说明决定“对象回来后是否重新具备资格”与决定“它拿回资格后按哪组 current config 重新工作”仍然是两层主权；因此 `artifact-family cleanup re-entitlement-governance` 仍不能越级冒充 `artifact-family cleanup reconfiguration-governance`。
 - `170` 已经稳定写出重新激活治理边界：repo 在 `refreshActivePlugins()` 的 Layer-3 refresh primitive、`/reload-plugins` 的 take-effect contract、`useManagePlugins()` 的 `needsRefresh` discipline、`PluginInstallationManager` 的 mode-sensitive auto-refresh policy 与 `print.ts` 的 headless auto-consume path 上已明确展示 reactivation governance 的存在，说明决定“当前 config truth 是什么”与决定“这组 truth 何时真正接管 running session”仍然是两层主权；因此 `artifact-family cleanup reconfiguration-governance` 仍不能越级冒充 `artifact-family cleanup reactivation-governance`。
 - `171` 已经稳定写出就绪治理边界：repo 在 `MCPServerConnection` 的 `connected / pending / needs-auth / failed / disabled` 联合状态机、`pluginReconnectKey` 触发的 pending 初始化、`useMcpConnectivityStatus()` 与 `/mcp` health 的失败/鉴权显化、`ReadMcpResourceTool` 的 connected hard gate，以及 `toolExecution.ts` 对 connected client 的运行时降级路径上已明确展示 readiness governance 的存在，说明决定“新的 truth 何时接管 active world”与决定“这个 active world 何时真正可用”仍然是两层主权；因此 `artifact-family cleanup reactivation-governance` 仍不能越级冒充 `artifact-family cleanup readiness-governance`。
+- `172` 已经稳定写出连续性治理边界：repo 在 `useManageMCPConnections.ts` 的 auto-reconnect/backoff/give-up/cancel path、stale reconnect timer 清理、manual reconnect 与 toggle control、`toolExecution.ts` 对 connected client 的运行时 readiness 撤销，以及 `print.ts` 对 pending/failed SDK clients 的 pool-level re-init 上已明确展示 continuity governance 的存在，说明决定“这个 active world 现在能不能用”与决定“这种可用性在时间里怎样继续成立”仍然是两层主权；因此 `artifact-family cleanup readiness-governance` 仍不能越级冒充 `artifact-family cleanup continuity-governance`。
 
 ## 本轮已净化的正文段
 
@@ -43,14 +44,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-171`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance -> artifact-family cleanup resurrection-governance -> artifact-family cleanup re-entitlement-governance -> artifact-family cleanup reconfiguration-governance -> artifact-family cleanup reactivation-governance -> artifact-family cleanup readiness-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone/resurrection/re-entitlement/reconfiguration/reactivation/readiness ladder
+- `147-172`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance -> artifact-family cleanup resurrection-governance -> artifact-family cleanup re-entitlement-governance -> artifact-family cleanup reconfiguration-governance -> artifact-family cleanup reactivation-governance -> artifact-family cleanup readiness-governance -> artifact-family cleanup continuity-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone/resurrection/re-entitlement/reconfiguration/reactivation/readiness/continuity ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `172`
-  方向：`artifact-family cleanup readiness-governor signer` 仍不等于 `artifact-family cleanup continuity-governor signer`
-  原因：`171` 已经证明对象即便进入 active world，也仍要单独回答当前是否 ready；但 `connected` / `needs-auth` / `failed` 的可逆转变、自动重连 backoff 与 runtime downgrade 又说明 “现在能用” 并不自动回答 “它能否持续保持可用”。也就是：谁配决定 restored path、promise、receipt 在就绪后如何跨时间保持连续可用性，这仍是另一层 continuity governance 问题
-  证据起点：`useManageMCPConnections.ts` 的 onclose auto-reconnect/backoff、`toolExecution.ts` 的 readiness revocation、以及连接失败重试/放弃路径共同说明：repo 已展示当前 readiness，但“就绪能否持续”仍是另一层主权
+- 候选 `173`（暂定名）
+  方向：`artifact-family cleanup continuity-governor signer` 仍不等于 `artifact-family cleanup recovery-governor signer`
+  原因：`172` 已经证明 “现在 ready” 与 “接下来仍持续可用” 不是一回事；但 auto-reconnect give-up、manual reconnect、re-auth downgrade 与 SDK pool re-init 又继续说明：即便 continuity attempt 已经断裂，系统仍要回答“什么新的证据、入口与重建动作配得上正式宣布 service truth 恢复”。也就是：决定“继续维持连续性”与决定“连续性已断后怎样重新恢复”仍可能是下一层 recovery governance 问题
+  证据起点：`useManageMCPConnections.ts` 的 final give-up / manual reconnect、`toolExecution.ts` 的 `needs-auth` downgrade，以及 `print.ts` 对 pending/failed SDK clients 的整批 re-init 共同说明：repo 已展示 continuity grammar，但 continuity 之后的 formal recovery signer 仍值得继续钉住
 
 ## 持续约束
 

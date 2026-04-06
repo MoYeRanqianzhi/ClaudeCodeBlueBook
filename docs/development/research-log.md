@@ -29,6 +29,16 @@
 - 本轮目录治理修正: 已继续强化 `security/README.md`、`appendix/README.md`、`source-notes/README.md` 与 `docs/development/security/README.md` 的四层分工，避免正文、附录、源码剖面与持久化记忆重新混写。
 - 本轮继续深入推进: 已新增 `170-安全载体家族重配置治理与重新激活治理分层`、`appendix/154` 与 `source-notes/21`，把安全链从 persisted config truth 继续推进到 active-world takeover。
 - 本轮再次深入推进: 已新增 `171-安全载体家族重新激活治理与就绪治理分层`、`appendix/155` 与 `source-notes/22`，把安全链从 active-world takeover 继续推进到 usable-truth adjudication。
+- 本轮进一步深入推进: 已新增 `172-安全载体家族就绪治理与连续性治理分层`、`appendix/156` 与 `source-notes/23`，把安全链从 usable-truth adjudication 继续推进到 temporal continuity governance。
+- 本轮索引与记忆同步: 已同步更新 `security/README.md`、`appendix/README.md`、`source-notes/README.md`、`docs/development/security/long-term-memory.md` 与本日志，明确 `172` 已稳定写出 continuity 边界，并继续把“下一候选”隔离在 `docs/` 层而不混回正文。
+
+### A095. 就绪治理之后仍要继续分出连续性治理：Claude Code 当前即便知道旧 cleanup 对象现在能不能用，也还没有谁被正式授权决定这种可用性在时间里怎样继续成立
+
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `LOCAL_MAIN=328c29cdb5655f367caff73f5e64480106b59365`、`ORIGIN_MAIN=328c29cdb5655f367caff73f5e64480106b59365`，`main...origin/main` 为 `0 0`；当前 research worktree 继续只在 `.worktrees/claude-code-risk-analysis` 内推进，未影响主分支与其他 worktree。
+- 本轮新增 `172-安全载体家族就绪治理与连续性治理分层`，核心判断是：`171` 已经证明 cleanup 线未来即便长出 readiness governor，也只是在回答“当前对象现在是不是 ready”；但继续看 `useManageMCPConnections.ts` 的 auto-reconnect/backoff/give-up/cancel path、`toolExecution.ts` 的 `connected -> needs-auth` runtime downgrade、`print.ts` 的 pending/failed SDK client re-init，以及 `ReadMcpResourceTool.ts` 的当前时 connected hard gate，会发现更深层的问题已经不再只是 “现在能不能用”，而是 “这种可用性在断连、退化、重试、人工干预与时间流逝中怎样继续成立”。也就是说，`artifact-family cleanup readiness-governor signer` 仍不等于 `artifact-family cleanup continuity-governor signer`。
+- 本轮最硬的源码证据有三组。第一组是 continuity budget 正例：`useManageMCPConnections.ts:87-90,333-466` 把重连预算、指数退避、pending retry、最终 give-up 与 disable cancel 写成正式路径，说明 ready truth 一旦断掉，repo 不是只改一个当前状态，而是进入一条被治理的 continuity process。第二组是 current-world correctness 正例：`useManageMCPConnections.ts:765-853,1043-1123` 会清理 stale reconnect timer、终止旧 continuity line，并把 manual reconnect / disable / re-enable 写成显式控制面，说明 continuity 不只是 background retry，而是“谁能继续试、停下、重启”的正式主权。第三组是 temporal degradation 正例：`toolExecution.ts:1599-1628` 会把一个 connected client 降成 `needs-auth`，`print.ts:1392-1426` 又会因 pending/failed SDK client 而整批重建 MCP pool，这共同说明 ready truth 不只会消失，还会退化，而 continuity governance 正是在回答退化后的维持、重建与终止问题。
+- 本轮因此同步补入 `appendix/156-安全载体家族就绪治理与连续性治理分层速查表` 与 `source-notes/23-useManageMCPConnections、toolExecution与print的连续性治理边界`。这样 `172` 不再停留在 “readiness != continuity” 的抽象口号，而是第一次把 `readiness decision / continuity decision / positive control / cleanup continuity gap / governor question` 压成回查矩阵，并把 auto-reconnect、stale timer cleanup、runtime downgrade、SDK pool re-init 与 consumer hard gate 压成一篇贴近源码的 continuity 剖面。
+- 这也把下一候选暂定推进到 `173`：既然 `172` 已经证明 continuity 主权不等于 readiness 主权，那么下一层最值得继续追问的就不再只是 “谁来维持连续性”，而是 “连续性已经断裂后，什么新的证据、入口与重建动作才配宣布恢复成立”。也就是：`artifact-family cleanup continuity-governor signer` 仍可能不等于暂定命名的 `artifact-family cleanup recovery-governor signer`，需要继续研究 give-up 后的重新接入、re-auth 完成后的正式恢复，以及 pool-level rebuild 如何重新签出 recovery truth。
 
 ### A094. 重新激活治理之后仍要继续分出就绪治理：Claude Code 当前即便知道旧 cleanup 对象何时真正接管 active world，也还没有谁被正式授权决定它现在是否真的 ready for use
 
