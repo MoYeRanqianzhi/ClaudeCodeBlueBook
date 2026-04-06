@@ -18,6 +18,17 @@
 
 - 源码先进性不只是在保护 `one writable present`，还在保护 future maintainer 的 `局部可反对性` 与下一次重构的资本池。
 
+更硬一点说，`future maintainer = formal consumer` 的最低门槛也应直接记成：
+
+- 拿不到作者时，later maintainer 仍能只凭局部命名、注释、state machine、truth surface 指出越权写回、truth-plane 越位与第一退回层。
+
+如果继续把 `refactor capital` 压成更短的资本表，也只该剩：
+
+- 单一 authority 未裂开
+- 时间边界仍可说明
+- seam 仍可继续抽离
+- retreat layer 仍可点名
+
 如果一页解释还没压到这三条，它就还停在对象层总结，不算最硬的第一性原理前门。
 
 如果只先记 Prompt 前门的一句话，也只记这句：
@@ -27,6 +38,10 @@
 如果只先记治理前门的一句话，也只记这句：
 
 - 治理不是更会拦截，而是先由 governance key 外化当前真相，再给动作、可见性、上下文与 continuation 的一切扩张定价；安全、省 Token 与恢复都只是这条收费链的外观。
+
+这里还要再多记一句：
+
+- `governance key` 不只是第一环，而是后续收费权的主权对象；若这层退回 settings merge 或 mode 切换，后面的 `typed ask / decision window / continuation pricing / cleanup` 就只剩事后补救。
 
 想继续沿 Prompt 母线下钻时，哲学层最短跳转只认：
 

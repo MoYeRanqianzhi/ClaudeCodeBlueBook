@@ -3,6 +3,8 @@
 ## 2026-04-07 本轮增量
 
 - 本轮根仓库同步再次确认: 根仓库当前 `main=origin/main=20a0f55113c7e1c69bf4eca1f1041caeca8e79bb`，`rev-list --left-right --count main...origin/main` 返回 `0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本轮继续严格维持“先检查、再只写 worktree”的节奏。
+- 本轮 userbook 入口深化动作: 已继续更新 `userbook/02-能力地图/README`、`03-参考索引/README`、`04-专题深潜/README` 与 `05-控制面深挖/README`。这一批把近期稳定下来的目录权限 doctrine 下沉到用户侧高流量入口：`能力地图` 现在更明确只负责能力曝光翻译与边界提示，不代签系统真相；`参考索引` 现在更明确只负责速查，不代判正文 truth 与 verdict；`专题深潜` 现在更明确只负责把已承认对象链翻成工作对象与顺序；`控制面深挖` 现在更明确只负责把三条最小顺序翻成控制面判断动作，并直接拒收相邻投影替身。
+- 本轮新的目录结构结论: 用户侧目录一旦说不清自己到底是在“翻译 / 速查 / 工作对象组织 / 控制面判断”，就会把 later maintainer 和普通使用者一起送回第二叙述者。目录结构优化因此继续从蓝皮书层的发言权限表，下沉到 userbook 层的“翻译权 / 速查权 / 判断翻译权”边界。
 - 本轮方法论深化动作: 已继续更新 `docs/development/00-研究方法.md` 与 `03-反思与迭代准则.md`。这一批把最近几轮沉淀下来的目录权限 doctrine 写成了更可执行的写作约束：每个入口页现在不只要说明自己“放什么”，还应说明自己“能合法说什么、不能改判什么、异议往哪层申诉”；future maintainer 的局部可反对性也被进一步压成最小见证集 `authority surface + writeback seam + first retreat layer`；而批次收口、推荐顺序、兼容路径债这类编排真相，则被正式规定默认只进 `docs/` 和记忆层。
 - 本轮新的编辑结论: “新增入口”现在应被视为高成本治理动作，而不是整理动作。更稳的顺序是：先改可见标签，再补 `navigation`，再同步专题 README，最后才考虑新开前门；只有现有入口真的承载不了新的第一问或新的申诉位阶时，新增入口才算必要。
 - 本轮剩余入口页权限化动作: 已继续更新 `api/README`、`security/README`、`risk/README`、`userbook/README` 与 `docs/README`。这一批把“发言权限 / 申诉链” doctrine 从蓝皮书和专题 README 继续扩展到剩余高流量入口页：`api` 现在更明确只拥有承认权、消费边界说明权与危险面暴露权；`security` 现在更明确只解释 signer / ledger / cleanup 机制；`risk` 现在更明确只在用户侧结算误伤、恢复与 reopen；`userbook` 现在更明确只把已承认对象链翻成用户判断；`docs` 现在也显式承认自己只有记忆权，没有正文裁决权。

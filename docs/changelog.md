@@ -3,6 +3,7 @@
 ## 2026-04-07
 
 - 本轮根仓库同步再次确认：`main=origin/main=20a0f55113c7e1c69bf4eca1f1041caeca8e79bb`、`rev-list --left-right --count main...origin/main = 0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
+- 继续更新 `userbook/02-能力地图/README`、`03-参考索引/README`、`04-专题深潜/README` 与 `05-控制面深挖/README`，把这轮“发言权限 / 申诉链” doctrine 下沉到用户侧二级入口：`能力地图` 现在更明确只拥有能力曝光翻译权与边界提示权；`参考索引` 现在更明确只拥有速查权，不拥有改判权；`专题深潜` 现在更明确只拥有工作对象翻译权与工作顺序提示权；`控制面深挖` 现在更明确只拥有控制面判断翻译权与相邻替身拒收权
 - 继续更新 `docs/development/00-研究方法.md` 与 `03-反思与迭代准则.md`，把近期稳定下来的编辑 doctrine 正式写进方法论文档：发言权现在不仅要求回答“这一层能说什么”，还要回答“这一层不能改判什么、异议往哪层申诉”；批次收口、推荐顺序、兼容标签/路径债这类“编排真相”也被明确默认下沉到记忆层；“新增入口”则被写成高成本决策，必须先走“改标签 -> 补 navigation -> 同步专题 README -> 最后才新开前门”的更便宜顺序
 - 继续更新 `api/README`、`security/README`、`risk/README`、`userbook/README` 与 `docs/README`，把这轮“发言权限 / 申诉链” doctrine 扩展到剩余高流量入口：`api` 现在更明确只拥有承认权、消费边界说明权与危险面暴露权；`security` 现在更明确只解释 signer / ledger / cleanup 机制，不代签用户侧恢复或执行 verdict；`risk` 现在更明确只负责用户侧结算与 reopen 资格显形，不重判治理机制；`userbook` 现在更明确只翻译已承认对象链为使用判断，不宣布新的系统真相；`docs` 现在也显式承认自己只有记忆权，没有任何正文裁决权
 - 继续更新 `architecture/README`、`guides/README`、`playbooks/README` 与 `casebooks/README`，把这轮“发言权限 / 申诉链” doctrine 继续下沉到各专题目录入口：`architecture` 现在更明确暴露对象链、truth planes、writeback seam 与 retreat layer 这些 later maintainer 可据以反对的结构面；`guides` 现在更明确只把反对权压成问题梯子和模板；`playbooks` 现在更明确只对已承认对象链出 verdict；`casebooks` 现在更明确只保存最像成功、最会夺走 later maintainer 局部反对权的伪证样本

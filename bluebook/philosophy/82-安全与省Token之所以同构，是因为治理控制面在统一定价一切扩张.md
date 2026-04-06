@@ -150,6 +150,10 @@ Claude Code 更接近的真相是：
 
 所以 `Context Usage` 一旦退回 usage dashboard，失真的不只是成本理解，而是治理主语本身已经在入口层退位。
 
+更短的入口句也只该再补一句：
+
+- 先裁 `visible world`，再谈 action；`Context Usage` 是 `decision window`，不是成本面板。
+
 ## 6. 第四层：能力暴露与动作许可是同一类定价
 
 把权限系统只理解成“允不允许调用工具”，会严重低估治理控制面的范围。

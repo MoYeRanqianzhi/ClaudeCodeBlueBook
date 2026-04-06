@@ -23,9 +23,17 @@
 1. Prompt witness order
    - `authority winner -> boundary bundle -> protocol transcript -> lineage refs -> continuation qualification -> explainability card`
 2. governance failure order
-   - `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
+   - 先判 `asset / rollback object`，再进 `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
 3. current-truth reject order
    - `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`
+
+如果继续把源码质量线再压成 later maintainer 可立即执行的一句判断，也只该再补一条 `truth-plane order`：
+
+- `display truth` 只负责触发怀疑
+- `current truth` 只负责给出 present verdict
+- `event truth` 只负责补证
+
+冲突复核顺序固定为 `display -> current -> event`；若顺序颠倒，later maintainer 看到的就不再是 current truth，而是第二叙述者。
 
 如果一个跨目录问题还回答不出自己缺的是公式、顺序还是证据层，它就还没有真正进入 `navigation/` 的工作对象。
 
@@ -41,6 +49,8 @@
   并行时优先按 question domain 拆成 Prompt 世界准入、治理定价、当前真相保护、目录前门纪律，不按文件库存拆。
 - 先判你现在缺的是最短公式、最小顺序，还是具体证据层。
   缺公式先回 `09 / README`，缺顺序先回 `15 / guides`，缺对象和锚点才去 `architecture / api / playbooks / casebooks`。
+- 先判源码质量线是不是该按固定路由走。
+  更稳的固定顺序是：先经 `09 / 05 / 15 / 41` 判前门，再按 `philosophy -> architecture -> api -> guides -> playbooks -> casebooks` 走证据梯度；`navigation` 只负责跳转，`docs` 不回写正文。
 
 ## 稳定节点
 
