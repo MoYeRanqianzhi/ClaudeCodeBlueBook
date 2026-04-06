@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 70 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 71 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -89,6 +89,7 @@
 68. [68-control_response回放与日志面的强请求清理审计关闭治理边界](68-control_response%E5%9B%9E%E6%94%BE%E4%B8%8E%E6%97%A5%E5%BF%97%E9%9D%A2%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%AE%A1%E8%AE%A1%E5%85%B3%E9%97%AD%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 69. [69-debug与diagnostics载体物化中的强请求清理不可逆擦除治理边界](69-debug%E4%B8%8Ediagnostics%E8%BD%BD%E4%BD%93%E7%89%A9%E5%8C%96%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E4%B8%8D%E5%8F%AF%E9%80%86%E6%93%A6%E9%99%A4%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 70. [70-cleanupPeriodDays与housekeeping调度中的强请求清理保留期治理边界](70-cleanupPeriodDays%E4%B8%8Ehousekeeping%E8%B0%83%E5%BA%A6%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E4%BF%9D%E7%95%99%E6%9C%9F%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+71. [71-settings文案与cleanup覆盖范围中的强请求清理保留期执行诚实性边界](71-settings%E6%96%87%E6%A1%88%E4%B8%8Ecleanup%E8%A6%86%E7%9B%96%E8%8C%83%E5%9B%B4%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E4%BF%9D%E7%95%99%E6%9C%9F%E6%89%A7%E8%A1%8C%E8%AF%9A%E5%AE%9E%E6%80%A7%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
