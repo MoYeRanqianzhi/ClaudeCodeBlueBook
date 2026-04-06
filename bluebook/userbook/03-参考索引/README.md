@@ -88,6 +88,7 @@
 84. 为什么 headless `print` 的 task result 会在 XML re-entry 路和 direct SDK close 路之间分叉，而不是统一回流。
 85. 为什么 headless `print` 的 `drainSdkEvents()` 不是一次普通 drain，而是一组时序护栏。
 86. 为什么 headless `print` 的 `idle` 不是 finally 里的普通状态回写，而是 authoritative turn-over signal。
+87. 为什么 headless `print` 的 suggestion 不是生成即交付，而是要等真实交付后才进入 acceptance tracking。
 87. 为什么 headless `print` 的 late system tail 不能抢走 result 的 semantic last-message 主位。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)

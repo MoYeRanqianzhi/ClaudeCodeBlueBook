@@ -100,6 +100,7 @@
 - [96-2026-04-06-sdk event flush ordering 拆分记忆.md](./96-2026-04-06-sdk%20event%20flush%20ordering%20拆分记忆.md)
 - [97-2026-04-06-authoritative idle signal 拆分记忆.md](./97-2026-04-06-authoritative%20idle%20signal%20拆分记忆.md)
 - [98-2026-04-06-semantic last result vs late tail 拆分记忆.md](./98-2026-04-06-semantic%20last%20result%20vs%20late%20tail%20拆分记忆.md)
+- [99-2026-04-06-delayed suggestion delivery 拆分记忆.md](./99-2026-04-06-delayed%20suggestion%20delivery%20拆分记忆.md)
 
 用途：
 
