@@ -71,3 +71,4 @@
 - [69-Mailbox permission_request、sandbox_permission_request 与 plan_approval_request protocol family 索引.md](./69-Mailbox%20permission_request、sandbox_permission_request%20与%20plan_approval_request%20protocol%20family%20索引.md)
 - [70-Shutdown mailbox lifecycle termination family 索引.md](./70-Shutdown%20mailbox%20lifecycle%20termination%20family%20索引.md)
 - [71-Shutdown lifecycle visible surface split 索引.md](./71-Shutdown%20lifecycle%20visible%20surface%20split%20索引.md)
+- [72-Shutdown mailbox routing split 索引.md](./72-Shutdown%20mailbox%20routing%20split%20索引.md)
