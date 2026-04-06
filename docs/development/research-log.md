@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 API 合同页纠偏动作: 已继续更新 `api/54 / 56`，把 Prompt / 结构宿主验收协议从 `compiled request truth / authority state / resume order / recovery boundary` 的旧 contract 主语收回到 `message lineage / projection consumer / protocol transcript / continuation object / continuation qualification` 与 `authority object / per-host authority width / writeback path / freshness gate / anti-zombie evidence / reopen boundary`。
+- 本轮安全 / 风控入口标签对齐动作: 已继续更新 `security/README` 与 `risk/README`，把前门描述与运行手册入口标签里的 `authority source` 统一收回到 `governance key` 的当前读法，避免专题入口层继续反向输送旧治理主语。
+- 并行 Agent 当前标题债结论: 下一批如果继续收“标题/文件名层”的旧词债，最值钱的集中在 `api/76-93`、`api/54 / 56` 这类深协议标题，以及 `casebooks/73`、`playbooks/27-28` 这类仍保留旧 visible title 的文件；如果继续追目录结构，则优先级已经明显低于这些标题层债务。
 - 本轮治理迁移尾部纠偏动作: 已继续更新 `guides/58` 与 `playbooks/33`，把治理宿主迁移纠偏与迁移演练尾部从 `authority source / permission ledger / continuation gate / rollback object` 的旧迁移主语收回到 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
 - 本轮治理迁移主语降级动作: `58` 现已把 `authority source` 降为 `governance key` 的 source slot，把 `permission ledger` 降为 `typed ask` 证据面，把 `continuation gate` 降为 `continuation pricing` verdict；`33` 则把交接、灰度与回退统一围绕同一条治理对象链组织。
 - 本轮目录入口收口动作: 已继续更新 `navigation/README`、`playbooks/README` 与 `guides/README`，把入口层从长编号链收回到对象链分流：结构线现在显式拆成 `legacy intake / acceptance`、`current repair / refinement`、`current validation` 三档，Prompt / 治理 / 结构的 `57-59 / 35-37 / 77-79` 尾部路由也被前置进 README。

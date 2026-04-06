@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/54 / 56` 现已把 Prompt / 结构宿主验收协议统一到当前对象链：
+  - `54` 现已把 Prompt 验收协议固定到 `message lineage -> projection consumer -> section registry + stable prefix boundary -> protocol transcript -> continuation object -> continuation qualification`。
+  - `56` 现已把结构验收协议固定到 `authority object -> per-host authority width -> writeback path -> freshness gate -> anti-zombie evidence -> reopen boundary`，并把 `resume order` 降为 re-entry proof。
+- `security/README / risk/README` 现已把治理前门标签继续收回到 `governance key` 的当前读法，不再让专题入口层继续把 `authority source` 当根主语发出去。
+- 新的长期结论：
+  - API 合同页真正成熟时，最危险的不是正文没分析到，而是合同标题与入口标签还在继续发旧主语；一旦 contract 页没换代，README 和调用方会比正文更快把读者拉回旧对象。
+  - 当前最值钱的标题债已开始从正文层转移到协议标题层和少数案例 / 手册 visible title 层；下一批若继续深入，优先级高于再扩 README 入口。
 - `guides/58 / playbooks/33` 现已把治理迁移纠偏与迁移演练尾部统一到当前对象链：
   - `58` 现已把治理迁移纠偏固定回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
   - `33` 现已把治理宿主迁移演练固定回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
