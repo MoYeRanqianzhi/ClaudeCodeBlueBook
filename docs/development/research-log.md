@@ -30,6 +30,7 @@
 - 本轮主线自校卡硬化动作: 已继续更新 `03` 与 `06`，把高阶原则进一步补成 `authority object / bad solution / reject path / migration order` 四格，并把 41 条零散自校准则收成 8 张长期自校卡。
 - 本轮 atlas 中层协议化动作: 已继续更新 `api/30`，把 `commands / tools / services` 三段从目录分组说明继续压成 authority、subset、danger surface 与 reject path 的固定协议。
 - 本轮结算证据面前推动作: 已继续更新 `07`、`security/README`、`risk/README` 与 `api/46-services`，把 `liability evidence / observability / recovery evidence` 正式抬到统一扩张定价秩序里的同级对象层。
+- 本轮二级 atlas 去导览化动作: 已继续更新 `navigation/35`、`api/46`、`api/47` 与 `api/48`，把“怎么读 / 分成几组 / 推荐阅读顺序”继续压成 authority、subset、danger surface 与 first reject path 协议。
 - 本轮旧框架降级动作: 已继续更新 `00`、`01`、`05` 与 `api/30`，把“五层拆解法 / 运行链路导览 / 目录级能力大全 / 快速统计”都明确降成辅助检索与热点定位材料，不再让它们先于三条高阶判断出场。
 - 本轮主线制度化动作: 已继续更新 `03`、`06`、`09`，把“设计哲学 / 第一性原理 / 三张控制面图”从高级观察继续收束为主线宪法、自我约束与读者固定判断顺序。
 - 本轮目录硬化动作: 已继续更新 `README`、`00-导读`、`00-总览`、`00-蓝皮书总览`、`navigation/03` 与 `09`，把 `09` 真正前置到一级阅读路径、去掉推荐链裸编号短写，并把兼容页进一步收回为跳转页。
@@ -191,6 +192,19 @@
 - `bluebook/security/README.md`
 - `bluebook/risk/README.md`
 - `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`
+
+### A114. 二级 atlas 页真正成熟时，会把“推荐阅读顺序”退回 reject order
+
+- `46 / 47 / 48 / 35` 这类页如果继续主要靠“分成几组”“该按什么顺序看”来组织自己，本质上仍然是在发导览单，而不是在给 later maintainer 提供 atlas lint。
+- 更稳的写法是：每条线先给 authority file，再给 consumer subset，再给 danger surface，最后给 first reject path；只有这样，二级 atlas 才开始真正服务排错、拒收与重构。
+- 这也说明 atlas 页的成熟标准已经变了：它不该再教你“接下来去看哪一页”，而应先教你“这一层开始撒谎时，第一步该回哪里拒收”。
+
+证据:
+
+- `bluebook/navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md`
+- `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`
+- `bluebook/api/47-tools 二级目录 Atlas：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md`
+- `bluebook/api/48-commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界.md`
 
 ### A100. 设计内涵继续深化后，最值钱的不再是更多高阶短句，而是把高阶短句压成可排查的对象
 

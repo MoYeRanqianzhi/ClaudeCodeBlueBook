@@ -14,66 +14,42 @@
 
 ## 1. Services 二级目录 Atlas
 
-适合在这些问题下阅读：
+这一条线最该先交四件事：
 
-- 为什么 `services/` 不能只被理解成“一组后台功能”，而必须继续区分 API / compact / memory / mcp / lsp / analytics / policy 这些不同演化速度的子系统。
-- 为什么 Claude Code 的 Prompt 魔力、安全设计与源码先进性，都要从 `services/` 的二级目录形状里才能看出真正收口点。
-
-稳定阅读顺序：
-
-1. `30`
-2. `../api/46`
-3. `../philosophy/76`
-
-这条线的核心不是：
-
-- 再多列几个 service 名字
-
-而是：
-
-- 让读者更快知道哪个 service 真正在宣布权威真相，哪个 service 只是消费或投影它
+1. authority file：
+   - 先回 `30` 确认顶层平面，再进 `../api/46` 找具体 authority file。
+2. consumer subset：
+   - 哪些 service 只给 continuation、host、UI 或 observability 投影，而不直接宣布真相。
+3. danger surface：
+   - 哪个 stale write、recovery object、config merge 或 drift ledger 最容易在时间上撒谎。
+4. reject path：
+   - 一旦某个 service 看起来像权威真相，却只是在投影，先回 `../api/46` 的 authority file，再回 `../philosophy/76` 的 reject 原则。
 
 ## 2. Tools 二级目录 Atlas
 
-适合在这些问题下阅读：
+这一条线最该先交四件事：
 
-- 为什么 `tools/` 不能只被理解成“很多模型可调用工具”，而必须继续看清执行原语、交互控制、任务编排、扩展桥接、自动化环境与 deferred visibility 的边界。
-- 为什么 Claude Code 的安全与省 token 设计，在 `tools/` 二级目录里表现为“先治理可见性，再治理调用”。
-
-稳定阅读顺序：
-
-1. `30`
-2. `../api/47`
-3. `../philosophy/76`
-
-这条线的核心不是：
-
-- 再多枚举几个 tool
-
-而是：
-
-- 让读者更快知道哪类工具会进入 prompt 前缀、哪类工具会延迟暴露、哪类工具只是 mode / consumer subset 下的投影
+1. authority file：
+   - 先回 `30` 认清 `Tool.ts / tools.ts` 的分工，再进 `../api/47`。
+2. consumer subset：
+   - 哪些工具只在 simple mode、REPL、deferred visibility、MCP 或特定 host 下可见。
+3. danger surface：
+   - visible-set、deny rule、mode 裁切、cache-stable 排序与 execution orchestration 哪些最容易失真。
+4. reject path：
+   - 一旦工具行为不可信，先回 `tools.ts`、`Tool.ts` 与 `../api/47` 的 authority 段，而不是先看某个工具目录名字。
 
 ## 3. Commands 二级目录 Atlas
 
-适合在这些问题下阅读：
+这一条线最该先交四件事：
 
-- 为什么 `commands/` 不能只被理解成“一堆 slash command”，而必须继续看清会话控制、模式治理、扩展装配、交付诊断、安装集成与 internal-only 边界。
-- 为什么 Claude Code 的产品边界，在 `commands.ts` 与二级命令目录里表现成“公开命令面”“动态扩展命令面”“外部构建剔除命令面”三层。
-
-稳定阅读顺序：
-
-1. `30`
-2. `../api/48`
-3. `../philosophy/76`
-
-这条线的核心不是：
-
-- 再多看几个 `/xxx`
-
-而是：
-
-- 让读者更快知道哪个命令属于正式控制面，哪个命令只是 internal-only 或 feature-gated 入口
+1. authority file：
+   - 先回 `30` 认清 `COMMANDS()` 与 runtime assembly，再进 `../api/48`。
+2. consumer subset：
+   - 哪些命令是 public、dynamic、feature-gated、internal-only 或 external-build eliminated 子集。
+3. danger surface：
+   - assembly 顺序、入口壳层、构建剔除与 user-type gate 哪些最容易把公开边界写坏。
+4. reject path：
+   - 一旦命令看起来像公开能力，却更像内部命令面，先回 `commands.ts` 与 `../api/48` 的 authority 段，再回 `../philosophy/76`。
 
 ## 4. 为什么这层继续落在 API
 
@@ -96,13 +72,7 @@
 
 ## 5. 一句话用法
 
-如果：
-
-- `30` 回答“顶层目录大致分成哪些能力平面”
-
-那么：
-
-- `35` 回答“进入这些平面后，二级目录应该怎样读，才不会把投影层误读成权威层”
+`30` 回答“顶层哪些平面存在”，`35` 回答“进入这些平面后，先找哪个 authority file、哪些只是 subset、哪里最危险、第一条 reject path 应回哪”。
 
 ## 6. 苏格拉底式自检
 
@@ -111,4 +81,4 @@
 1. 这份地图是在帮助读者更快找到权威入口，还是只在把树打印得更长。
 2. 我是否区分了 public control surface 和 internal-only / feature-gated surface。
 3. 我是否区分了真正收口点和只是消费它的组件。
-4. 这份 atlas 能否帮助后来者更早看见危险改动面，而不只是更快看见文件名。
+4. 这份 atlas 能否帮助后来者更早看见危险改动面和 reject path，而不只是更快看见文件名。

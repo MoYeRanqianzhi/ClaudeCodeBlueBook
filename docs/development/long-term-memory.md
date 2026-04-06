@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `navigation/35 / api/46 / api/47 / api/48` 已继续把二级 atlas 页从导览册压成协议页：
+  - `35` 现已更明确把三条 atlas 线收成 authority file、consumer subset、danger surface 与 reject path。
+  - `46` 现已更明确把 services 子系统改写成 authority / projection / danger / reject 模板，并前置 evidence object 原型。
+  - `47` 与 `48` 现已更明确把 tools / commands 子页从“目录成员 + 阅读顺序”压成 authority 协议和 reject 顺序。
+- 新的长期结论：
+  - 二级 atlas 页真正成熟时，不再教读者“如何参观目录”，而是直接逼读者回答 authority file、子集边界、危险改动面和第一条拒收入口。
+  - 推荐阅读顺序一旦还停在 atlas 正文里，atlas 就仍然是导览册；更成熟的正文应优先给 reject order，而不是 next-link。
 - `07 / security/README / risk/README / api/46-services` 已继续把统一定价入口从“入场秩序”压到“结算证据面”：
   - `07` 现已把 `liability evidence` 抬到和 `request truth / continuation asset / capability governance` 同级。
   - `security/README` 现已更明确把高体积对象常驻主 prompt 写成未定价的上下文写权与时间占权。
