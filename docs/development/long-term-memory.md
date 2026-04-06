@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/02 / 03 / philosophy/76 / userbook/01-05` 现已继续把 canonical formulas 变成使用动作和 atlas 语言：
+  - `02` 现在更明确要求使用层先过 `same-world test / decision window / stable bytes vs working set`，再谈技巧。
+  - `03` 现在更明确把 `truth ladder + failure semantics` 写成制度设计前门，而不是只在源码质量深页出现。
+  - `philosophy/76` 现在更明确把源码 atlas 的 visible noun 收回到 `contract / registry / orchestration shell / current-truth surface / consumer subset / danger surface`。
+  - `userbook/01-05` 现在更明确把 `/status / /usage / /add-dir` 写成 same-world / decision-window / boundary-expansion 判断，而不是 UI 功能说明。
+- 新的长期结论：
+  - canonical formula 真正成熟时，不只要存在于哲学页和导读页，还要能被翻译成“用户接下来该怎么做”的动作语言；否则 doctrine 会停在会背，进不了会用。
+  - atlas 页真正成熟时，不只要暴露 danger surface，还要持续做 visible noun discipline；旧的 `authoritative surface / adapter subset` 一旦重新出现在 atlas 前门，later maintainer 就会重新学回过时的真相分层。
+  - 使用层真正成熟时，`/status` 应优先被读成 same-world check，`/usage` 应优先被读成 decision-window check，`/add-dir` 应优先被读成正式边界扩张；这三者都不应再先被读成 UI 功能按钮。
 - `bluebook/README / 00 / 09 / userbook/README / userbook/00 / userbook/01-02` 现已继续把 canonical formulas 从哲学前门前推到蓝皮书和使用手册第一跳：
   - `bluebook/README / 00 / 09` 现在更明确要求 later maintainer 在入口层先用 `same-world test / decision window / truth ladder` 审题。
   - `userbook/README / 00 / 01-02` 现在更明确要求首次使用者在入口层先分清 `same-world test`、`Context Usage = decision window`、以及 `stable bytes vs working set`，不再把 token 百分比、长摘要或 slash 面板误当系统真相。

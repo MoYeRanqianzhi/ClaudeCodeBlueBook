@@ -6,6 +6,11 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮使用层/atlas 收口动作: 已继续更新 `bluebook/02`、`bluebook/03`、`philosophy/76` 与 `userbook/01-05`，把 canonical formula 继续翻译成“使用动作”和“源码 atlas visible noun discipline”，避免 later maintainer 和首次使用者在这两层重新学回结果词与旧目录词。
+- 本轮 Prompt 侧线下沉动作: `02` 现在更明确要求先让任务通过 `same-world test`，再谈使用技巧；`userbook/01-05` 现在更明确把 `/status` 读成“先确认当前会话仍在同一个宿主现场”，不再只是状态页。
+- 本轮治理侧线下沉动作: `02` 与 `userbook/01-05` 现在更明确把 `Context Usage` 读成 `decision window`，并把 `stable bytes vs working set` 和 `Narrow / Later / Outside` 前推成使用层动作，而不是只停在高阶哲学页。
+- 本轮源码质量侧线下沉动作: `03` 现在更明确把 `truth ladder + failure semantics` 写成制度设计前门；`philosophy/76` 现在更明确用 `orchestration shell / current-truth surface / consumer subset / danger surface` 取代旧 `authoritative surface / adapter subset` 可见词。
+- 本轮目录结构深化结论: 当哲学前门和第一跳入口已经完成 canonical formula 换代后，下一层最值钱的优化不再是继续补高阶页，而是让使用层动作页和 atlas 页共享同一组 visible noun；否则 later maintainer 和首次使用者会在“怎么用 / 怎么找文件”这两层重新学回旧世界观。
 - 本轮目录前推动作: 已继续更新 `bluebook/README`、`00`、`09`、`userbook/README`、`userbook/00` 与 `userbook/01-02`，把 canonical formulas 从哲学前门继续前推到蓝皮书和使用手册第一跳；用户在第一次进入时就能先学会 `same-world test / decision window / stable bytes vs working set / truth ladder`，而不是先学 mode 条、token 百分比、长摘要或目录观感。
 - 本轮 Prompt 侧线补前门动作: 已把 Prompt 前门从哲学页继续前推到 `bluebook/README`、`00` 与 `userbook` 第一跳，让 later maintainer 和首次使用者都先经过 `same-world test`，再谈 Prompt 魔力或“怎么提问”。
 - 本轮治理侧线补前门动作: 已把治理前门从哲学页继续前推到 `09`、`userbook/README` 与 `userbook/01-02`，明确 `Context Usage = decision window`，并把 `Narrow / Later / Outside + stable bytes + working set` 提升为使用层就应掌握的 token 经济公式。
