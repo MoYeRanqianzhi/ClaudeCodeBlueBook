@@ -98,6 +98,8 @@
   [05-控制面深挖/53-task_started、task_progress、task_notification 与 session_state_changed：为什么远端消费方收到的不是同一种事件流.md](./05-控制面深挖/53-task_started、task_progress、task_notification%20与%20session_state_changed：为什么%20远端消费方收到的不是同一种事件流.md)
 - 分清 CCR v2 remote bridge 的 `transport rebuild`、initial flush、`flush gate` 与 `sequence resume` 为什么不是同一步：
   [05-控制面深挖/54-transport rebuild、initial flush、flush gate 与 sequence resume：为什么 CCR v2 remote bridge 的重建 transport、历史续接与 connected 不是同一步.md](./05-控制面深挖/54-transport%20rebuild、initial%20flush、flush%20gate%20与%20sequence%20resume：为什么%20CCR%20v2%20remote%20bridge%20的重建%20transport、历史续接与%20connected%20不是同一步.md)
+- 分清 `received`、`processed`、write cursor、echo dedup 与 replay dedup 为什么不是同一种去重：
+  [05-控制面深挖/55-received、processing、processed、lastWrittenIndexRef、recentPostedUUIDs、recentInboundUUIDs 与 sentUUIDsRef：为什么 remote bridge 的送达回执、增量转发、echo 过滤与重放防重不是同一种去重.md](./05-控制面深挖/55-received、processing、processed、lastWrittenIndexRef、recentPostedUUIDs、recentInboundUUIDs%20与%20sentUUIDsRef：为什么%20remote%20bridge%20的送达回执、增量转发、echo%20过滤与重放防重不是同一种去重.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：

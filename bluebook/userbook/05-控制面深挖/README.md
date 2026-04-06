@@ -62,5 +62,6 @@
 - [52-permission_mode、is_ultraplan_mode 与 model：为什么远端恢复回填、当前本地状态与 session control request 不是同一种会话参数.md](./52-permission_mode、is_ultraplan_mode%20与%20model：为什么%20远端恢复回填、当前本地状态与%20session%20control%20request%20不是同一种会话参数.md)
 - [53-task_started、task_progress、task_notification 与 session_state_changed：为什么远端消费方收到的不是同一种事件流.md](./53-task_started、task_progress、task_notification%20与%20session_state_changed：为什么%20远端消费方收到的不是同一种事件流.md)
 - [54-transport rebuild、initial flush、flush gate 与 sequence resume：为什么 CCR v2 remote bridge 的重建 transport、历史续接与 connected 不是同一步.md](./54-transport%20rebuild、initial%20flush、flush%20gate%20与%20sequence%20resume：为什么%20CCR%20v2%20remote%20bridge%20的重建%20transport、历史续接与%20connected%20不是同一步.md)
+- [55-received、processing、processed、lastWrittenIndexRef、recentPostedUUIDs、recentInboundUUIDs 与 sentUUIDsRef：为什么 remote bridge 的送达回执、增量转发、echo 过滤与重放防重不是同一种去重.md](./55-received、processing、processed、lastWrittenIndexRef、recentPostedUUIDs、recentInboundUUIDs%20与%20sentUUIDsRef：为什么%20remote%20bridge%20的送达回执、增量转发、echo%20过滤与重放防重不是同一种去重.md)
 
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

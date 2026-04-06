@@ -55,6 +55,7 @@
 51. 为什么 `permission_mode`、`is_ultraplan_mode` 与 `model` 不是同一种远端可恢复会话参数。
 52. 为什么 `task_started`、`task_progress`、`task_notification` 与 `session_state_changed` 不是同一种远端事件流。
 53. 为什么 CCR v2 remote bridge 的 `transport rebuild`、initial flush、`flush gate` 与 `sequence resume` 不是同一步。
+54. 为什么 remote bridge 的 `received`、`processed`、write cursor、echo dedup 与 replay dedup 不是同一种去重。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
