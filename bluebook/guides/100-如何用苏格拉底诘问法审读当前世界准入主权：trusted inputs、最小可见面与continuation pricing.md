@@ -21,6 +21,16 @@
 - 安全设计与省 Token 设计真正共享的是“当前世界的准入主权”，而不是同一组 UI 或同一个预算器名字。
 - 更硬一点说，`governance key` 才是这张控制面的实现主键；source slot 只是它的最前沿证据位，而 ask、visibility、externalization 与 continuation 都只是这张主键向下游派生出的受价结果。
 
+如果只先做一轮最短的治理审读，也只按这条 canonical chain 问：
+
+- `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
+
+这组问题最短的 reject trio 也只认：
+
+1. `decision-window collapse`
+2. `projection usurpation`
+3. `free-expansion relapse`
+
 ## 1. 第一性原理
 
 成熟治理首先处理的不是：

@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `philosophy/85`、`architecture/83`、`guides/100`、`philosophy/87`、`architecture/84`、`guides/101` 与 `guides/102`，把治理线与源码质量线的深页统一回 canonical chain、短顺序与 reject trio，不再让深页各自长回第二套前门
 - 继续更新 `philosophy/14`、`81`、`84`、`architecture/82` 与 `guides/99`，把 Prompt 母线的深页继续统一到 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`，并把 `authority_blur / transcript_conflation / continuation_story_only` 固定成跨目录复用的 Prompt reject trio
 - 继续更新 `bluebook/README`、`00-导读`、`03-设计哲学`、`06-第一性原理与苏格拉底反思`、`09-三张控制面总图`、`philosophy/README`、`navigation/README` 与 `architecture/README`，把顶层 Prompt / 治理 / 源码质量三条母线继续收口成更硬的 frontdoor nouns、canonical chain 与最短 reject signals；同时把根 README 的部分 deep path 收回 `navigation/README`，减少第一次回答同题的入口数
 - 继续更新 `security/README` 与 `risk/README`，把安全页和风控页继续压成同一治理收费链在 signer/ledger/cleanup 侧与用户侧结算面的两张前门，而不是第二套规则堆

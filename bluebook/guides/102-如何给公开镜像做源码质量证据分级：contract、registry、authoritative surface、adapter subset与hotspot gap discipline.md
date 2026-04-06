@@ -25,6 +25,16 @@
 
 - 公开镜像研究里最危险的不是“证据不够”，而是把不同层级的证据混成一层，然后对源码质量下出过度结论。
 
+如果只先记公开镜像的源码质量前门顺序，也只记这条：
+
+- `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+
+这条线最短的 reject trio 也只认：
+
+1. `layout-first drift`
+2. `recovery-sovereignty leak`
+3. `surface-gap blur`
+
 ## 1. 先说结论
 
 更稳的公开镜像研究顺序，不是：
