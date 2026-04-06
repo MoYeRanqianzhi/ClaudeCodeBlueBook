@@ -6,6 +6,7 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮改写纠偏链对齐动作: 已继续更新 `playbooks/62 / 63 / 64`，把 Prompt / 治理 / 结构三条 rewrite-correction 执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
 - 本轮改写链对齐动作: 已继续更新 `playbooks/59 / 60 / 61`，把 Prompt / 治理 / 结构三条 rewrite 执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
 - 本轮精修链对齐动作: 已继续更新 `playbooks/65 / 75 / 76`，把 Prompt / 治理 / 结构三条 refinement 执行页补齐到 `message lineage / projection consumer / governance key / externalized truth / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
 - 本轮再纠偏链对齐动作: 已继续更新 `playbooks/56 / 57 / 58`，把 Prompt / 治理 / 结构三条 recorrection 执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。

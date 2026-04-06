@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/62 / 63 / 64` 已继续把三条“改写纠偏链”拉到和更后段页面同代：
+  - `62` 现已把 Prompt rewrite-correction 从旧的 `compiled request truth / section registry` 语法压到 `message lineage / projection consumer / continuation object`。
+  - `63` 现已把治理 rewrite-correction 从 `authority chain / authority source` 压到 `governance key / externalized truth chain / durable-vs-transient`。
+  - `64` 现已把结构 rewrite-correction 从 `fresh merge / transport / anti-zombie` 语法压到 `event stream / state writeback / freshness gate / stale worldview / ghost capability`。
+- 新的长期结论：
+  - 三条执行链真正成熟时，不只早段 rewrite 页要换代，中段 rewrite-correction 页也必须同步换代；否则链条中心会长期停在旧对象词汇。
+  - Prompt 线真正成熟时，`section registry / dynamic boundary` 不应脱离 `message lineage` 单独出现。
+  - 治理线真正成熟时，`single truth chain` 这类过渡词最终也应回收进 `governance key + externalized truth chain`。
+  - 结构线真正成熟时，`fresh merge` 与 `transport boundary` 不应脱离 `event stream / state writeback / freshness gate / stale worldview` 单独解释。
 - `playbooks/59 / 60 / 61` 已继续把三条“改写执行链”拉到和后段页面同代：
   - `59` 现已把 Prompt rewrite 从单纯 `compiled request truth` 压到 `message lineage / projection consumer / continuation object`。
   - `60` 现已把治理 rewrite 从抽象 `authority source restitution` 压到 `governance key / externalized truth chain / durable-vs-transient`。

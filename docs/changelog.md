@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `playbooks/62`、`playbooks/63` 与 `playbooks/64`，把 Prompt / 治理 / 结构三条改写纠偏执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`
 - 继续更新 `playbooks/59`、`playbooks/60` 与 `playbooks/61`，把 Prompt / 治理 / 结构三条改写执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`
 - 继续更新 `playbooks/65`、`playbooks/75` 与 `playbooks/76`，把 Prompt / 治理 / 结构三条精修执行页补齐到 `message lineage / projection consumer / governance key / externalized truth / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`
 - 继续更新 `playbooks/56`、`playbooks/57` 与 `playbooks/58`，把 Prompt / 治理 / 结构三条再纠偏执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`
