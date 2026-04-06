@@ -80,6 +80,7 @@
 - [76-2026-04-06-local modal shell family 拆分记忆.md](./76-2026-04-06-local%20modal%20shell%20family%20拆分记忆.md)
 - [77-2026-04-06-worker mailbox ToolUseConfirm rewrap 拆分记忆.md](./77-2026-04-06-worker%20mailbox%20ToolUseConfirm%20rewrap%20拆分记忆.md)
 - [78-2026-04-06-worker sandbox mailbox queue 拆分记忆.md](./78-2026-04-06-worker%20sandbox%20mailbox%20queue%20拆分记忆.md)
+- [79-2026-04-06-approval shell atlas 拆分记忆.md](./79-2026-04-06-approval%20shell%20atlas%20拆分记忆.md)
 
 用途：
 
