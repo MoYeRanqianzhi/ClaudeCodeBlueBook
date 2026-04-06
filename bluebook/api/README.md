@@ -4,7 +4,7 @@
 
 还要先记一句：
 
-- `api/` 不是接口清单层，而是真相暴露层；更稳的读法不是先按编号扫平面，而是先问 `contract truth -> registry truth -> current-truth surface / host truth -> consumer subset -> danger surface`，再看具体接口和宿主消费路径。
+- `api/` 不是接口清单层，而是真相暴露层；更稳的读法不是先按编号扫平面，而是先问 `contract truth -> registry truth -> current-truth surface / host-facing truth -> consumer subset -> danger surface`，再看具体接口和宿主消费路径。
 
 ## 七个平面
 
@@ -30,7 +30,8 @@
 - 想先抓“谁在宣布真相、谁只是在消费真相”：从 `23 -> 31 -> 46`
 - 想看命令和控制协议：从 `01 -> 05 -> 15`
 - 想看状态消息与宿主消费：从 `09 -> 17 -> 19 -> 31`
-- 想看 Prompt / 记忆 / 知识注入：从 `18 -> 21 -> 49`
+- 想看 Prompt 编译与宿主消费：从 `18 -> 21 -> 49 -> 54`
+- 想看治理外化真相链与宿主消费：从 `28 -> 32 -> 52`
 - 想看扩展、MCP 和远程：从 `03 -> 12 -> 22`
 - 想看长期宿主协议化：从 `35 -> 51-71 -> 72-95`
 - 想看最新共同 `reject` 与长期 `reopen` 协议化：从 `../navigation/98 -> ../navigation/102 -> 93-95`

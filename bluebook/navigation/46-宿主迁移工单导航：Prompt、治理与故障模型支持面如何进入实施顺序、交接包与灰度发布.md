@@ -1,8 +1,8 @@
-# 宿主迁移工单导航：message lineage、governance key 与 current-truth surface 如何进入实施顺序、交接包与灰度发布
+# 宿主迁移工单导航：request compiler、governance key 与 current-truth writeback 如何进入实施顺序、交接包与灰度发布
 
 这篇聚焦迁移次序本身。
 
-- 核心问题不是再列一份接入清单，而是当 `message lineage / projection consumer / continuation qualification`、`governance key / externalized truth chain / decision window / continuation pricing` 与 `current-truth surface / freshness gate / ghost capability` 已经成立后，团队该按什么顺序把它们写进宿主、CI 与交接系统，才不会重新制造第二真相。
+- 核心问题不是再列一份接入清单，而是当 `request compiler / message lineage / projection consumer / continuation qualification`、`governance key / externalized truth chain / decision window / continuation pricing` 与 `current-truth surface / current-truth writeback / freshness gate / ghost capability` 已经成立后，团队该按什么顺序把它们写进宿主、CI 与交接系统，才不会重新制造第二真相。
 - 读这篇时要抓住四个门槛：哪一个对象必须先成为 single source、哪一种投影只能先只读开放、哪一种控制权必须后开放、哪一种继续/回退资格一旦抢跑就会让旧世界重新篡位。
 
 ## 1. Prompt 宿主迁移工单线
@@ -24,7 +24,7 @@
 
 而是：
 
-- 把 Prompt 宿主接入重新写成从消息血缘冻结、协议转录、缓存解释到继续资格的正式迁移工单
+- 把 Prompt 宿主接入重新写成从 request compiler 输入面、消息血缘冻结、协议转录、缓存解释到继续资格的正式迁移工单
 
 ## 2. 治理宿主迁移工单线
 
@@ -45,13 +45,13 @@
 
 而是：
 
-- 把治理宿主接入重新写成 governance key、externalized truth chain、typed ask、decision window、continuation pricing 与 durable-vs-transient cleanup 的正式迁移工单
+- 把治理宿主接入重新写成 governance key、externalized truth chain、typed ask、decision window、continuation pricing 与 durable-vs-transient cleanup 的正式迁移工单，并禁止 host 从 mode 条、token 条与 `pending_action` 文案反推当前真相
 
 ## 3. 当前真相保护宿主迁移工单线
 
 先问：
 
-- 怎样把宿主从状态猜测、pointer 神化与恢复成功率，迁到 current-truth surface、freshness gate、recovery asset non-sovereignty 与 ghost capability 结果面的正式消费。
+- 怎样把宿主从状态猜测、pointer 神化与恢复成功率，迁到 current-truth surface、current-truth writeback、freshness gate、recovery asset non-sovereignty 与 ghost capability 结果面的正式消费。
 - 怎样把结构审读结论继续压成迁移顺序、交接包与灰度发布门禁。
 
 成立证据：
@@ -66,7 +66,7 @@
 
 而是：
 
-- 把当前真相保护宿主接入重新写成 current-truth surface、writeback 主路径、recovery asset non-sovereignty、freshness gate 与 ghost capability 结果面的正式迁移工单
+- 把当前真相保护宿主接入重新写成 current-truth surface、current-truth writeback、recovery asset non-sovereignty、freshness gate 与 ghost capability 结果面的正式迁移工单
 
 ## 4. 迁移工单必须守住的门槛
 

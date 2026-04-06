@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `navigation/07 / navigation/46 / navigation/README / api/README` 现已继续把方法/迁移/API 前门的 route words 收口：
+  - `07` 现在更明确把合同优先方法线收回到 `current-truth surface / host-facing truth / consumer subset`，把公开镜像方法线收回到 `current-truth surface / consumer subset / hotspot kernel / mirror gap`。
+  - `46` 现在更明确把宿主迁移工单三线分别前置为 `request compiler`、`governance key + externalized truth chain` 与 `current-truth writeback`，不再让 `systemPrompt`、mode 面板或恢复成功率占前门。
+  - `navigation/README` 现在更明确把稳定节点 `46` 的标签同步到 `request compiler / governance key / current-truth writeback`。
+  - `api/README` 现在更明确把 API 前门里的 host truth 写成 `host-facing truth`，并把 Prompt / 治理宿主消费入口更清楚地分流到 `49 -> 54` 与 `28 -> 32 -> 52`。
+- 新的长期结论：
+  - 当 host-facing 深页已经换代后，下一层最值钱的目录优化常常不是再补一个 README，而是把“方法前门 / 迁移前门 / API 前门”三类入口继续同步到同一组主语；否则 later maintainer 会在真正进入深页前先被旧 route words 带偏。
+  - 迁移导航真正成熟时，不应再把 `systemPrompt`、mode 面板或恢复成功率当第一跳主语；更稳的迁移主语应是 `request compiler`、`externalized truth chain` 与 `current-truth writeback`。
 - `bluebook/README / guides/README / api/README / playbooks/README / navigation/03` 现已继续把目录层 visible label 跟上 recent doctrine：
   - `bluebook/README` 现在更明确把治理线链接标签收回到“同一治理收费链的三种外观”，把源码质量方法标签收回到 `current-truth surface / consumer subset / mirror gap discipline`。
   - `guides/README` 现在更明确把 `100` 标签补齐 `externalized truth chain`，把 `102` 标签补齐 `consumer subset / mirror gap discipline`。
