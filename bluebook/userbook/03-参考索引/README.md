@@ -20,6 +20,7 @@
 16. 为什么 `/mcp` 菜单、全局配置总览、按名解析与 Agent `mcpServers` 不是同一类 server。
 17. 为什么插件“装好了、改好了、提示待刷新了、当前会话已吃到”不是同一状态。
 18. 为什么插件有时会自己出现、有时只提示 `/reload-plugins`，而 startup trust、background install、headless refresh 又不是同一条自动链。
+19. 为什么 `print` 不是没有 UI 的 REPL，为什么 headless 的首问就绪、StructuredIO 与 `--sdk-url` 又不是同一层对象。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
