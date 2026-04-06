@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新《运行时契约、知识层与生态边界》《安全专题索引》《风控专题》《导航专题》，把治理前门继续压到“authority source 先收费，再谈动作 / 上下文 / 时间”，并明确 host 只消费 runtime 外化的 authority/status，不自己回放拼当前真相
+- 继续更新《运行时契约、知识层与生态边界》《导航专题》，把入口与导航进一步收薄：`07` 从轮次话术改回稳定前门，`navigation/README` 把深链统一收成 `46 -> 77 -> 102`，不再把每一级都摊平成根入口
 - 继续更新《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，把治理模板继续压实到“authority source 先收费，再谈动作 / 上下文 / 时间”，并明确 host 只能消费 runtime 外化的 authority/status，不能自己回放拼 mode、tool pool 与 pending action
 - 继续更新《导读》《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，把 `00` 从“二次索引 + 研究工法页”收回成真正的主线前言，只保留研究对象、三条最高阶判断、结构图必要性与第一判断顺序
 - 继续更新《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，把治理线正式压成 `authority object / role contract / reject path` 模板，固定到 `permission mode / trusted inputs / visible-set / externalization / continuation pricing`

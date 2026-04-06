@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `07 / security/README / risk/README / navigation/README` 已继续把目录前门和治理前门收薄并压硬：
+  - `07` 现已把 `authority source` 抬进运行时契约前门，并把 `request truth / continuation asset / authority source / capability governance / liability evidence` 固定成五类权威入口。
+  - `07` 现已更明确把 host 写成 runtime authority/status 的消费者，而不是 mode、tool pool、pending action 或 context truth 的第二推断器。
+  - `security/README` 现已更明确把收费顺序写成“authority source 先收费，再谈动作 / 上下文 / 时间”，不再退回权限弹窗导览。
+  - `risk/README` 现已更明确把 signer、证据、恢复资格与 authority source 前置为风控前门，而不是自己重做状态机总图。
+  - `navigation/README` 现已把深层修复与 reopen 责任深链统一收口到 `46 -> 77 -> 102`，减少根入口再长成大路由表。
+- 新的长期结论：
+  - 运行时契约的前门真正成熟时，不只讲 `request truth / continuation asset / capability governance / liability evidence`，还必须显式交出 `authority source`。
+  - 安全与风控前门真正成熟时，不再主要回答“怎么拦”，而是先回答“谁有资格改边界、谁有资格签发恢复、谁只配消费外化状态”。
+  - 导航层真正成熟时，根入口只列稳定节点；深链必须有单一路由 owner，而不是每一级都抢首页入口位。
 - `03 / 06 / 09` 已继续把治理模板从“四类扩张收费”压到“authority source 先收费”：
   - 现已更明确把 `settings sources` 抬进 authority object，同 `permission mode / trusted inputs / visible-set / externalization / continuation pricing` 并列。
   - 现已更明确把 host 写成 runtime authority/status 的消费者，而不是自己回放消息去拼 `mode / tool pool / pending action / context truth`。
