@@ -13,6 +13,9 @@
 - `claude-code-source-code/src/constants/systemPromptSections.ts:16-65`
 - `claude-code-source-code/src/constants/prompts.ts:491-576`
 - `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/utils/attachments.ts:1490-1862`
+- `claude-code-source-code/src/tools/AgentTool/prompt.ts:49-286`
+- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:437-697`
 - `claude-code-source-code/src/utils/api.ts:321-405`
 - `claude-code-source-code/src/utils/messages.ts:1989-2148`
 - `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
@@ -47,6 +50,15 @@ Prompt 的魔力，首先来自：
 
 - 世界先被编译
 
+更准确地说，被编译的不是单一 system prompt，而是至少四类 prompt surface：
+
+1. `system sections`
+2. `tool descriptions`
+3. `agent prompts`
+4. `attachment deltas`
+
+而 `compact / resume` 则决定这些 surface 在遗忘、重链与继续后还能否保持同一条 continuation contract。
+
 ## 2. 第一性原理：Prompt 首先是一道世界准入法律
 
 如果 Prompt 只负责：
@@ -70,6 +82,25 @@ Claude Code 更深的一层是：
 也就是说，Prompt 真正的魔力首先不是“表达能力”，而是：
 
 - 世界准入能力，以及让不同 projection consumer 继续围绕同一条 `message lineage` 工作的能力
+
+### 更硬一点的源码证据
+
+真正值钱的，不是“有一份 system prompt”，而是这份 prompt 已经被写成受约束的编译秩序：
+
+1. `systemPromptSection()` 与 `DANGEROUS_uncachedSystemPromptSection()` 把 section 区分成可缓存宪法和必须说明理由的晚绑定事实。
+2. `SYSTEM_PROMPT_DYNAMIC_BOUNDARY` 把静态前缀与动态 section 明确切开，说明“哪些东西配被长期继承、哪些东西只配当前回合进入”。
+3. `buildEffectiveSystemPrompt()` 继续把 override / coordinator / agent / custom / default 的优先级写成正式组合规则，而不是让不同调用点各自拼 prompt blob。
+4. proactive 模式下 agent prompt 选择 append 而不是 replace，说明“领域补充”必须活在同一条默认宪法之内，而不是另起一套世界。
+5. `attachments.ts` 把 `agent_listing_delta`、`mcp_instructions_delta`、nested rules 与 relevant memory prefetch 做成 late-bound injection，说明知识进入模型本来就是按需装配，而不是一次性塞满。
+6. `promptCacheBreakDetection.ts` 继续把 `systemPromptChanged / toolSchemasChanged / betasChanged / cachedMCChanged` 写成对象级 cache-break 原因，说明 prompt 稳定性首先是字节边界稳定性。
+
+所以这里真正的魔力不是：
+
+- prompt 文案更会说话
+
+而是：
+
+- world admission、late binding、cache boundary 与 continuation path 都已经被编译成正式制度对象
 
 ## 3. 最容易被误写成什么
 
@@ -108,6 +139,17 @@ Claude Code 更深的一层是：
 而是：
 
 - 当前、下一步、接手后都还活在同一个现场
+
+### 反证法：拿掉哪一层，魔力会最先消失
+
+最先塌掉的通常不是措辞，而是下面三层：
+
+1. 没有 section registry 和 boundary
+   - 结果不是 prompt 变短，而是系统再也说不清“什么是宪法、什么只是本回合事实”。
+2. 没有 protocol transcript 编译
+   - 结果不是展示层更自由，而是 UI transcript、summary 与模型 transcript 开始争主权。
+3. 没有 continuation qualification
+   - 结果不是 compact 更省，而是留下来的只是一段可读摘要，不再是仍可行动的继续对象。
 
 ## 5. 苏格拉底式追问
 

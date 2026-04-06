@@ -125,6 +125,26 @@
 4. 以为看见更多工具就等于系统更强。
 5. 以为 fail-closed 一定比资产分型更成熟。
 
+## 3.1 失败语义与升级阈值矩阵
+
+如果这条控制面已经成熟，它最终必须能被压成一张治理矩阵，而不是只剩抽象解释：
+
+| 控制对象 | 默认失败语义 | threshold trigger | escalation target | surface divergence | minimum legal degraded shape | re-entry / rollback requirement | durable assets kept | transient authority cleared |
+|---|---|---|---|---|---|---|---|---|
+| `governance key` | `reject` | 低信任来源试图扩边界 | human / managed authority | host/headless 都直接拒收，不允许本地猜测补边界 | 只保 trusted source chain | rollback 到 trusted source 后才可重新进入 | managed config / trusted env | project-scoped expansion |
+| `typed ask` | `ask` | cheap path 不足以定案 | human reviewer / host | interactive 允许 ask；headless / async 退 `deny` 或 `abort` | 只保 request identity 与 winner evidence | 重新建立 ask path 后才允许 re-entry | request identity / evidence refs | implicit auto-allow |
+| `visibility / externalization` | `degrade` 或 `persist+preview` | 高体积对象继续霸占主席位 | runtime-controlled externalization | host 可消费 preview；headless 只保最小 preview 与 stable ref | preview + stable ref，而不是 raw payload | rollback 到 preview marker 后才可继续 | durable refs / preview marker | raw bulky payload |
+| `continuation pricing` | `halt` 或对象升级 | decision gain 继续下降 | human handoff / object upgrade | interactive 可升级给人；headless 更早停机或升级对象 | compact summary + next-step object | 只有重新获得 decision window 后才允许 re-entry | compact summary / next-step object | default-continue illusion |
+| `durable / transient cleanup` | `cleanup-before-resume` | resume 试图续租旧 mode、旧 grant、旧可见集 | runtime cleanup gate | host 只消费 cleanup 后的 truth；headless 不做情绪化续租 | durable assets only | cleanup 完成后才能 resume / rollback | durable assets / stable refs | transient authority bundle |
+
+更短地说，治理成熟度最终要能回答：
+
+1. 哪类 drift 默认拒收。
+2. 哪类 drift 允许降级而不允许扩权。
+3. 哪类 drift 必须升级给人。
+4. 哪些 durable assets 可以带过下一轮。
+5. 哪些 transient authority 必须在升级或恢复前先清掉。
+
 ## 4. 失稳时的回修顺序
 
 当这组问题里有任何一个答不清时，优先做下面四步：
@@ -151,6 +171,11 @@ typed ask arbitration 是否成立:
 decision_window_ref:
 continuation 是否按条件出租:
 continuation_pricing_ref:
+surface_divergence:
+minimum_legal_degraded_shape:
+escalation_target:
+rollback_action:
+re_entry_condition:
 resume 是否只恢复 durable assets:
 durable_assets_after:
 transient_authority_cleared:
@@ -178,8 +203,10 @@ host 是否只消费 runtime 外化的 governance truth/status:
 6. 继续执行是否仍有正式价格和停止条件。
 7. 自动化还能不能合法退场。
 8. resume 恢复的是 durable assets，还是把 transient authority 也免费续租了。
-9. host 是在消费 runtime 已外化的真相，还是在自己猜当前真相。
-10. 如果把所有 UI 都删掉，这套治理秩序是否仍然成立。
+9. interactive / host / headless / async 这些执行面现在是否仍共享同一治理主键，只在合法分叉点分叉。
+10. 当前 drift 的最小合法降级形态到底是什么，而不是只剩一个 `degrade` verdict。
+11. rollback 之后要满足什么条件才配 re-entry。
+12. 如果把所有 UI 都删掉，这套治理秩序是否仍然成立。
 
 ## 7. 一句话总结
 

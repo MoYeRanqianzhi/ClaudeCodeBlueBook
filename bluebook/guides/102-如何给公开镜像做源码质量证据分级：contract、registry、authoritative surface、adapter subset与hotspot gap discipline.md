@@ -259,7 +259,38 @@ gap discipline 的价值不是“保守一点”，而是：
 
 - 形成一套可迁移的研究协议，去稳当地审任何公开镜像
 
-## 10. 苏格拉底式检查清单
+## 10. 危险改动面 Atlas 模板
+
+当你已经完成 `contract -> registry -> authoritative surface -> adapter subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一张可交接的 atlas。
+
+但 `guides/` 在这里负责的是：
+
+- atlas skeleton
+- gap note
+- handoff rule
+
+而不是直接承接 repo-specific atlas 正文。
+
+更稳的 atlas 模板至少应包含下面几列：
+
+| danger surface | protected invariant | minimum visible evidence | common misread | replay obligation | second-truth risk |
+|---|---|---|---|---|---|
+| `<surface>` | `<what it protects>` | `<authoritative proof>` | `<usual wrong reading>` | `<what must be replayed before changing>` | `<which stale world returns if broken>` |
+
+更稳的 handoff rule 是：
+
+1. atlas 正文默认落到最接近真相暴露面的目录。
+2. 对源码二级目录 atlas，默认正文宿主是 `api/46-50`，由 [../navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md](../navigation/35-%E6%BA%90%E7%A0%81%20Atlas%E5%AF%BC%E8%88%AA%EF%BC%9Aservices%E3%80%81tools%E3%80%81commands%20%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%E5%A6%82%E4%BD%95%E5%9B%9E%E5%88%B0%E6%9D%83%E5%A8%81%E5%85%A5%E5%8F%A3%E4%B8%8E%E6%B6%88%E8%B4%B9%E8%80%85%E8%BE%B9%E7%95%8C.md) 路由。
+3. `guides/102` 只负责交出 atlas 的列定义、gap note 写法与交接规则，不直接替 `api/46-50` 填满具体危险面。
+
+更短地说，这页真正要强迫 later maintainer 先回答的是：
+
+1. 这张 atlas 该长什么样。
+2. 哪些 gap 必须显式保留。
+3. atlas 正文应该交给哪一层。
+4. atlas 进入执行层时，哪一页只消费 `atlas_ref`，不反向承担 atlas 生产职责。
+
+## 11. 苏格拉底式检查清单
 
 在你准备写下“这个仓库源码质量很高”前，先问自己：
 
@@ -270,6 +301,6 @@ gap discipline 的价值不是“保守一点”，而是：
 5. 我写下的哪一句判断，是被可见证据支撑的；哪一句只是脑补。
 6. 如果作者今天不解释，我的结论还能不能成立。
 
-## 11. 一句话总结
+## 12. 一句话总结
 
 公开镜像里的源码质量，不该靠目录树和大文件体感判断；更稳的顺序是 `contract -> registry -> authoritative surface -> adapter subset -> hotspot kernel -> mirror gap discipline`，并且同时审 `dependency honesty` 与 `temporal honesty`。

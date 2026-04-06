@@ -8,6 +8,60 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `guides/102 / playbooks/79 / navigation/04` 现已继续把 atlas、template 与 verdict 的分工写死：
+  - `102` 现在更明确只负责 atlas skeleton、gap note 与 handoff rule，不再继续自己承接 repo-specific atlas 正文。
+  - `79` 现在更明确把 `danger_surface_atlas_ref / gap_note_ref / authority_surface_ref` 写成输入工件，而不是默认在本页临时生产 atlas。
+  - `navigation/04` 现在更明确规定 atlas 模板归 `guides/`、atlas 正文默认归 `api/46-50`、verdict 绑定归 `playbooks/`、`navigation/35` 负责 atlas 路由。
+- 新的长期结论：
+  - atlas 不是第九层证据梯度，而是前五层证据压出来的编译地图；如果 atlas 模板、atlas 正文和 verdict 绑定不分开，目录很快就会重新混层。
+  - 目录结构真正成熟时，不只要知道“哪层负责什么”，还要知道“哪层只生产 ref、哪层只消费 ref、哪层负责路由 ref”；否则 deep page 仍会偷偷长回第二主线。
+- `guides/28 / 100 / playbooks/78` 现已继续把治理线收成更完整的 schema：
+  - `28` 现在更明确把失败语义矩阵母版从 `headless divergence` 扩成 `surface divergence`，并把 `minimum legal degraded shape` 与 `re-entry / rollback requirement` 固定下来。
+  - `100` 现在更明确把 `interactive / host / headless / async` 的执行面分叉，以及 `rollback_action / re_entry_condition / escalation_target`，一起压进解释型矩阵和最小判据。
+  - `78` 现在更明确把这些字段写进执行型 verdict 矩阵和复盘记录最少字段，不再只给 `reject_verdict` 与 `rollback_object` 两个结果位。
+- 新的长期结论：
+  - 治理矩阵真正成熟时，不能只知道 `reject / degrade / halt / human-fallback / abort`；它还必须回答不同执行面是否同判、最小合法降级形态是什么、升级给谁、rollback 后何时允许 re-entry。
+  - `guides/` 和 `playbooks/` 的分工也因此更清楚：`guides` 固定矩阵 schema 与审读字段，`playbooks` 消费这些字段并绑定成可执行 verdict。
+- `09 / 06 / guides/README / playbooks/README / navigation/README` 现已继续把可见主语与目录入口收口：
+  - `09` 现在更明确把治理线的中段合同写成 `execution contract`，把结构线的中段合同写成 `authority contract`，避免 `role contract` 继续跨线泛化。
+  - `06` 现在继续清掉残留的过渡句式，让 Prompt / 治理 / 结构三线更稳定地落在 doctrine 对象，而不是“继续深挖 / 更准确的写法”这类作者过渡语气。
+  - `guides/README`、`playbooks/README` 与 `navigation/README` 现在更明确把 `102` 视为 atlas 入口、把 `79` 视为结构 drift verdict 入口。
+- 新的长期结论：
+  - 目录结构真正成熟后，最值钱的优化不再总是新增正文，而常常是把深页里已经成立的 atlas、矩阵与 verdict 提升成目录层稳定入口；否则读者会知道有这类对象，却找不到默认进入点。
+  - 当 doctrine 已基本稳定时，残留的过泛 contract 名和作者过渡句式仍会持续把读者拉回旧世界观；后期优化必须继续盯住这些小词，而不是只盯新增章节。
+- `06 / guides/102 / playbooks/79` 现已继续把结构线从解释推进到 atlas 与 verdict：
+  - `06` 现在更明确用 `request-surface constitution / cognitive contract / byte boundary / continuation truth` 这组更硬对象替代过渡词，并把 `6.6-6.21` 的自指反思标题继续收回到 doctrine 主语。
+  - `guides/102` 现在更明确承担结构线的 `危险改动面 atlas`，把 `QueryGuard / messages normalization / session ingress / bridge pointer / host-facing state writeback / fresh-read file write` 这些危险面显式点名。
+  - `playbooks/79` 现在更明确承担结构 drift 的执行型 verdict，把 `multi_writer_truth_detected / recovery_asset_usurped_authority / stale_worldview_unchecked / ghost_capability_not_evicted` 等情况分别映射到 `reject / cleanup-before-resume / degrade / halt / human-fallback`。
+- 新的长期结论：
+  - 结构线真正成熟时，不能只停在 `one writable present` 的原则句；它最终必须交出两样东西：一张 later maintainer 可用的危险改动面 atlas，以及一张可执行的 drift verdict 矩阵。
+  - `06` 这类总论页真正成熟时，不应继续保留“我们是否仍...”这种作者自查式可见主语；更稳的做法是把自反问题继续收回成可迁移的 doctrine 命名，再把具体判据下沉到 guides/playbooks。
+- `09 / navigation/03 / guides/99` 现已继续把 Prompt 线收成 `Request Surface Constitution`：
+  - `09` 现在更明确把第一张图的最短制度名写成 `Request Surface Constitution`，用于指代 system sections、tool descriptions、agent prompts、attachment deltas 与 continuation contract 共同构成的 request-facing 宪法层。
+  - `navigation/03` 现在把它固定成 Prompt 深线的检索短名；`guides/99` 现在把它继续压成可审读对象，而不是只停在 Prompt 文案与 lineage/section/boundary 的散点问题。
+- `guides/28 / guides/100 / playbooks/78` 现已继续把治理线收成矩阵：
+  - `guides/28` 现在更明确承担失败语义与升级阈值矩阵的母版列定义。
+  - `guides/100` 现在更明确承担治理线的解释型矩阵，把 `governance key / typed ask / visibility / externalization / continuation pricing / durable-transient cleanup` 分别写成对象级失败语义。
+  - `playbooks/78` 现在更明确承担执行型 verdict 矩阵，把 drift 映射到 `reject / degrade / halt / human-fallback / abort`。
+- 新的长期结论：
+  - Prompt 线真正成熟时，不应再把 system prompt 当唯一主角；最稳的主语应是 `Request Surface Constitution`，即多种 request-facing surfaces 如何共同构成模型可见世界。
+  - 治理线真正成熟时，不应只讲“统一定价”；它最终必须交出失败语义与升级阈值矩阵，否则读者会知道原则，却不知道何时 reject、何时 degrade、何时 halt、何时交还给人。
+  - 目录结构真正成熟时，不是入口更短，而是证据梯度更清楚；一旦总论页塞矩阵、导航页写正文、案例页写修复、记忆页抢判断，目录就会重新退回混层。
+- `philosophy/84 / 85 / 86 / 87` 与 `navigation/07 / 15 / 41 / 46` 现已继续向“第一性原理 + 反证 + 失稳前追问”收口：
+  - Prompt 线现已更明确把真正的 request surface 写成 `system sections + tool descriptions + agent prompts + attachment deltas + compact/resume contract`，不再默认把 system prompt 当成唯一主角。
+  - Prompt 魔力现已更明确被写成 world admission、section boundary 与 continuation qualification 的编译秩序，而不是措辞强度。
+  - 安全与省 token 现已更明确被写成同一条扩张定价链，而不是风险控制和成本优化两套平行话题；`persist+preview / compact / halt` 与 `allow / ask / deny` 现在都被视为同一治理动作在不同资产上的投影。
+  - 源码先进性现已更明确被写成 `stale writer 不得清理现在 / 恢复资产不得篡位现在 / event timeline 不得冒充 present truth` 的当前真相保护纪律；旧对象若还想影响 present，其合法命运应被压成 `invalidate / relink / adopt / projection`。
+  - 宿主迁移顺序现已更明确被写成 `single source -> 只读投影 -> 控制权 -> continuation / rollback 资格 -> 最小交接包` 的固定门槛，而不是功能接入清单。
+- 新的长期结论：
+  - 当正文已经进入 doctrine 阶段，最该继续清理的常常不是对象链本身，而是“最近稳定下来 / 这一轮怎么整理 / 作者写到哪里”的元叙事；这些句子会把正文重新拖回记忆仓库。
+  - 目录结构真正成熟时，必须按证据梯度固定分工：`philosophy` 负责不可约判断，`architecture` 负责对象与 choke point，`api` 负责 contract，`guides` 负责模板，`playbooks` 负责 verdict，`casebooks` 负责 distortion，`navigation` 负责 judgment map，`docs` 负责 memory。
+- `guides/README / philosophy/README / playbooks/README / casebooks/README` 现已继续向三线对称前门收口：
+  - 四页现在都更明确地围绕 Prompt / 治理 / 当前真相保护来给判断入口，而不是继续各自按编号段和链路感组织首页。
+  - `guides/README` 更明确把 `99 / 100 / 101` 写成三条高阶审读入口；`philosophy/README` 更明确把 `84 / 85 / 86-87` 写成三条哲学判断；`playbooks/README` 更明确把 `29-31 / 65-67 / 77-79` 写成可准入 / 可收口 / 已闭环三类执行状态；`casebooks/README` 更明确把 `73 / 74 / 75` 写成三类失真状态而不是样本货架。
+- 新的长期结论：
+  - 当 front-door visible root 与路径表语法都已经被收口后，下一层最值钱的优化是让不同目录首页共享同一条三线语法；只有这样，目录结构才会真正表现为一套单一宪法的分发面。
+  - 成熟的目录前门不只要“判断式”，还要“同构”：不同目录应围绕同一组 Prompt / 治理 / 当前真相主语给出各自的起点、失败信号和不回答范围。
 - `guides/README / philosophy/README / playbooks/README / casebooks/README` 现已继续从库存页和路径表收口成判断式入口：
   - `目录分层 / 推荐入口 / 使用方式 / 适合什么时候读 / 从 X 到 Y` 这类路径表语气，现已继续收回到 `什么时候进来 / 如果你只先判断一件事 / 如果失真发生在 / 这里不回答什么`。
   - 四个目录首页现在更明确地区分了“本目录负责什么”与“跨目录执行链 / 失败样本 / 长期验证应回哪里分流”。

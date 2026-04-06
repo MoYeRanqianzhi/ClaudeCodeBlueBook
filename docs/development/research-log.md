@@ -6,6 +6,24 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/claude-code-risk-analysis`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 atlas 承载纠偏动作: 已继续更新 `guides/102 / playbooks/79 / navigation/04`，把结构线里 atlas / template / verdict 的承载错位收回到更明确的目录法：`102` 现在只负责 atlas skeleton、gap note 与 handoff rule，`79` 现在只消费 `danger_surface_atlas_ref / gap_note_ref / authority_surface_ref` 这类输入工件绑定 verdict，`navigation/04` 现在把 atlas 正文默认归到 `api/46-50`，并把 `navigation/35` 固定为 atlas 路由入口。
+- 本轮治理 schema 补齐动作: 已继续更新 `guides/28 / 100` 与 `playbooks/78`，把治理矩阵进一步补齐为 `surface divergence / minimum legal degraded shape / escalation target / rollback action / re-entry condition` 这组字段；现在 `interactive / host / headless / async` 的执行面分叉，以及 `rollback -> re-entry` 的恢复条件，都已进入同一条治理对象链。
+- 本轮命名收口动作: 已继续更新 `09` 与 `06`，把三条控制面里残留的过泛 contract 名与过渡句式继续收回到更硬对象；治理线当前更明确使用 `execution contract`，结构线当前更明确使用 `authority contract`，Prompt 线当前更明确使用 `byte boundary / continuation truth`。
+- 本轮目录入口加固: 已继续更新 `guides/README`、`playbooks/README` 与 `navigation/README`，把 `102` 的 atlas 与 `79` 的 verdict 更明确提升成目录层稳定入口，而不是继续让它们只停在深页里被动等待读者下钻。
+- 本轮结构 atlas 动作: 已继续更新 `guides/102` 与 `playbooks/79`，把源码质量研究从“六级证据分层”继续推进到 `危险改动面 atlas + verdict matrix` 两层：前者点名 `QueryGuard / messages normalization / session ingress / bridge pointer / host-facing state writeback / fresh-read file write` 这些危险面，后者把结构 drift 压成 `reject / cleanup-before-resume / degrade / halt / human-fallback`。
+- 本轮 `06` doctrine 化动作: 已继续更新 `06-第一性原理与苏格拉底反思` 的 `6.6-6.21`，把整组 `我们是否仍...` 过渡标题继续收回为更稳定的 doctrine 主语，并把 `request object / role contract / cache boundary / handoff truth` 进一步收口成 `request-surface constitution / cognitive contract / byte boundary / continuation truth`。
+- 本轮并行 Agent 经验: 本轮再次并行派发 Prompt / 治理 / 结构三条侧线；结构侧线再次被 `429` 限流打断，Prompt / 治理建议已吸收。后续并行仍值得保留，但结构线仍需默认准备本地兜底，不应阻塞当前批次提交。
+- 本轮 Prompt 宪法化动作: 已继续更新 `09`、`navigation/03` 与 `guides/99`，把 Prompt 线更明确收成 `Request Surface Constitution`，并把 system sections、tool descriptions、agent prompts、attachment deltas 与 continuation contract 的关系继续压成可定义、可检索、可审读的三层分工。
+- 本轮治理矩阵化动作: 已继续更新 `guides/28`、`guides/100` 与 `playbooks/78`，把统一定价治理从“抽象价格秩序”继续推进到 `默认失败语义 / threshold trigger / escalation target / headless divergence / durable assets / transient authority` 这类可执行矩阵。
+- 本轮目录结构判断加固: 已继续更新 `bluebook/README` 与 `navigation/04`，把目录职责进一步收口成证据梯度：`bluebook/00-09 -> philosophy -> architecture -> api -> guides -> playbooks -> casebooks -> navigation -> docs`；当前最值钱的目录优化不是再缩短入口，而是让“判断、对象、合同、模板、verdict、distortion、memory”不再混层。
+- 本轮并行 Agent 经验: Prompt 与治理侧线给出了有效落点建议，结构侧线再次被 `429` 限流中断；后续并行仍值得保留，但主线应继续坚持“侧线补强、不阻塞当前批次提交”。
+- 本轮正文深化动作: 已继续更新 `philosophy/84 / 85 / 86 / 87` 与 `navigation/07 / 15 / 41 / 46`，把 Prompt 魔力、安全与省 token 同构、当前真相保护、合法复杂度中心与宿主迁移顺序进一步压回第一性原理、反证式苏格拉底追问与更硬的源码证据，不再让这些页继续承担“最近稳定下来 / 这一轮该怎么整理”式元叙事。
+- 本轮并行 Agent 结论吸收: Prompt 侧线已进一步确认真正起作用的是 `system sections + tool descriptions + agent prompts + attachment deltas + compact/resume contract`，治理侧线已进一步确认 `persist+preview / compact / halt` 与 `allow / ask / deny` 属于同一扩张定价链，结构侧线已进一步确认旧对象的合法命运应被压成 `invalidate / relink / adopt / projection` 四类动作。
+- 本轮目录结构判断加固: 当前最值钱的结构优化已不只是让 README 同构，而是把 `philosophy / architecture / api / guides / playbooks / casebooks / navigation / docs` 明确写成一条证据梯度；目录成熟的标志不是入口更短，而是“判断、对象、合同、模板、verdict、distortion、judgment map、memory”不再混写。
+- 本轮并行 Agent 经验: 已再次显式并行派发 Prompt / 治理 / 源码质量三条侧线；但 explorer 回传不稳定，因此主线策略仍应保持“侧线只做证据补强，不能阻塞当前 worktree 的验证与提交”。
+- 本轮 README 三线对称化动作: 已继续更新 `guides/README`、`philosophy/README`、`playbooks/README` 与 `casebooks/README`，把四页进一步压成 Prompt / 治理 / 当前真相保护三线对称入口，并把 `playbooks` 写成可准入 / 可收口 / 已闭环的判决状态，把 `casebooks` 写成请求装配伪装 / 准入主权篡位 / 当前真相面篡位三类失真状态。
+- 本轮目录结构判断加固: 当前最值钱的目录优化不再只是把 README 从路径表改成判断式入口，而是让不同目录首页开始共享同一条三线语法；这样目录结构才会更像单一宪法的分发面，而不是多套局部首页各自组织读者。
+- 本轮并行 Agent 经验: Prompt 与结构侧线继续给出了有效的 front-door debt 信号，治理侧线再次受 `429` 限流影响；后续并行多 Agent 仍有收益，但要继续控制并发并把任务压到单页。
 - 本轮 README judgment-first 动作: 已继续更新 `guides/README`、`philosophy/README`、`playbooks/README` 与 `casebooks/README`，把 `目录分层 / 推荐入口 / 使用方式 / 适合什么时候读 / 从 X 到 Y` 这类库存页与路径表语气收回到 `什么时候进来 / 如果你只先判断一件事 / 如果失真发生在 / 这里不回答什么`。
 - 本轮目录层判断加固: 当前最值钱的目录优化已继续从“去掉旧 visible root”推进到“去掉路径表语法”；更成熟的 README 不该再像调度台，而应先说明读者正在判断什么、最常怎样误判、以及这里不负责回答什么。
 - 本轮并行 Agent 经验: Prompt / 治理 / 结构三条侧线继续提供了有效的 front-door debt 信号，但仍有一条侧线因 `429` 限流中断；后续并行多 Agent 仍值得保留，只是要继续把任务压窄到单一入口页或单一目录 README。

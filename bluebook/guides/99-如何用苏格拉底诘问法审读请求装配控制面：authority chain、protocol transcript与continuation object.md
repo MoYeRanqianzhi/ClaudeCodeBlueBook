@@ -7,6 +7,8 @@
 - `claude-code-source-code/src/constants/systemPromptSections.ts:16-65`
 - `claude-code-source-code/src/constants/prompts.ts:491-576`
 - `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
+- `claude-code-source-code/src/utils/attachments.ts:1490-1862`
+- `claude-code-source-code/src/tools/AgentTool/prompt.ts:49-286`
 - `claude-code-source-code/src/utils/api.ts:321-405`
 - `claude-code-source-code/src/utils/messages.ts:1989-2148`
 - `claude-code-source-code/src/utils/messages.ts:5133-5458`
@@ -41,6 +43,16 @@
 
 开始。
 
+更短一点说，你真正该审的不是一段 prompt，而是一部：
+
+- `Request Surface Constitution`
+
+也就是：
+
+- 哪些 request-facing surfaces 共同组成模型可见世界
+- 哪些只配当 projection / delta
+- surface 冲突时谁真正说了算
+
 ## 2. 苏格拉底诘问链
 
 ### 2.1 现在到底是谁在定义世界
@@ -60,6 +72,12 @@
 判断标准：
 
 - 如果高波动事实和一次性观测进入长期正文，或关键法条只能依赖动态尾部成立，边界就是错的。
+
+### 2.3.1 你治理的是一段 prompt，还是一组 request surfaces
+
+判断标准：
+
+- 如果 system sections、tool descriptions、agent prompts、attachment deltas 仍被看成彼此无关的实现细节，而不是同一部 request-surface constitution 的不同槽位，那“Prompt 魔力”仍然会被误写成 system prompt 文案。
 
 ### 2.4 display transcript、protocol transcript 与 continuation object 是否已被明确分层
 
@@ -121,6 +139,9 @@
 ```text
 审读对象:
 当前 authority chain:
+constitution surfaces:
+projection / delta surfaces:
+surface conflict winner:
 section registry 是否成立:
 stable prefix / dynamic boundary 是否清楚:
 display transcript 与 protocol transcript 是否分层:
@@ -146,7 +167,8 @@ display / protocol / handoff 是否仍沿同一条 message lineage 投影:
 6. `parentUuid / message.id / tool_use_id` 这三类 lineage key 各自保什么不变量。
 7. display / protocol / handoff 三种 truth 还是不是同一条 message lineage 的不同投影。
 8. 继续资格是谁签发的，在哪失效。
-9. 如果把著名措辞全部删掉，这套世界编译机制还会不会成立。
+9. system sections、tool descriptions、agent prompts 与 attachment deltas 是否仍在同一部 request-surface constitution 里各守其位。
+10. 如果把著名措辞全部删掉，这套世界编译机制还会不会成立。
 
 ## 7. 一句话总结
 

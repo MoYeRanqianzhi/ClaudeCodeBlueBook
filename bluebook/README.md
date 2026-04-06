@@ -86,3 +86,19 @@
 - `navigation/README.md` 负责跨主题、跨阶段、跨工件的深层反查。
 - [../docs/README.md](../docs/README.md) 只处理方法附录、证据归档与目录治理记录，不承载正文。
 - 兼容别名页统一交给 [navigation/04-目录职责、规范入口与兼容别名页说明.md](navigation/04-目录职责、规范入口与兼容别名页说明.md)。
+
+## 证据梯度
+
+目录结构真正值钱的地方，不是分得更细，而是每层只承载一种证据职责：
+
+- `bluebook/00-09`: 宪法主线与总判断
+- `philosophy/`: 不可约判断与第一性原理
+- `architecture/`: 运行时对象、chokepoint 与 current-truth protection
+- `api/`: contract、schema 与 host-facing truth
+- `guides/`: 模板、审读清单、矩阵母版
+- `playbooks/`: 准入、收口、回归与拒收 verdict
+- `casebooks/`: distortion、伪证信号与误判样本
+- `navigation/`: judgment map 与跨目录反查
+- `docs/`: 长时记忆、研究过程与变更记录
+
+如果一页同时在做判断、矩阵、verdict、样本和记忆，目录结构就会重新退回临时拼盘。

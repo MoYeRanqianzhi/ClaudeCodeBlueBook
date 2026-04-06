@@ -2,6 +2,13 @@
 
 ## 2026-04-06
 
+- 继续更新 `guides/102`、`playbooks/79` 与 `navigation/04`，把结构线里 atlas / template / verdict 的承载错位收回到更硬的目录法：`102` 只保留 atlas skeleton、gap note 与 handoff rule，`79` 明确只消费 `danger_surface_atlas_ref / gap_note_ref / authority_surface_ref` 绑定 verdict，`navigation/04` 明确把 atlas 正文默认归到 `api/46-50`
+- 继续更新 `guides/28`、`guides/100` 与 `playbooks/78`，把治理矩阵进一步补齐到 `surface divergence / minimum legal degraded shape / escalation target / rollback action / re-entry condition` 这组字段，让 `interactive / host / headless / async` 的执行面分叉和 `rollback -> re-entry` 的恢复条件进入统一 schema
+- 继续更新 `06`、`09`、`guides/README`、`playbooks/README` 与 `navigation/README`，把 Prompt / 治理 / 结构三线里残留的过泛 contract 名和过渡句式继续收回到 `execution contract / authority contract / byte boundary / continuation truth` 这类更硬对象，并把 `102` 的 atlas 与 `79` 的 verdict 更明确提升成目录层稳定入口
+- 继续更新 `06`、`guides/102` 与 `playbooks/79`，把 `request object / role contract / cache boundary / handoff truth` 这组过渡词继续收回到更硬的 doctrine 对象，把公开镜像研究继续落成 `危险改动面 atlas`，并把结构线 drift 继续落成 `reject / cleanup-before-resume / degrade / halt / human-fallback` 的回归矩阵
+- 继续更新 `09`、`navigation/03`、`guides/99`、`guides/28`、`guides/100`、`playbooks/78`、`bluebook/README` 与 `navigation/04`，把 Prompt 线进一步收成 `Request Surface Constitution`，把治理线进一步落成 `失败语义 / 升级阈值 / durable-transient cleanup` 矩阵，并把蓝皮书目录结构继续收口成更明确的证据梯度分工
+- 继续更新 `philosophy/84 / 85 / 86 / 87` 与 `navigation/07 / 15 / 41 / 46`，把 Prompt 魔力、安全与省 token 同构、当前真相保护、合法复杂度中心与宿主迁移顺序进一步压回第一性原理、反证式苏格拉底追问与更硬的源码证据，并把蓝皮书目录结构继续收口成 `philosophy / architecture / api / guides / playbooks / casebooks / navigation / docs` 各守一种证据职责的稳定分工
+- 继续更新 `guides/README`、`philosophy/README`、`playbooks/README` 与 `casebooks/README`，把四页进一步压成 Prompt / 治理 / 当前真相三线对称的判断式入口，并把 `playbooks` 收成可准入 / 可收口 / 已闭环的判决状态，把 `casebooks` 收成请求装配伪装 / 准入主权篡位 / 当前真相面篡位三类失真状态
 - 继续更新 `guides/README`、`philosophy/README`、`playbooks/README` 与 `casebooks/README`，把 `目录分层 / 推荐入口 / 使用方式 / 适合什么时候读 / 从 X 到 Y` 这类库存页与路径表语气收回到 `什么时候进来 / 如果你只先判断一件事 / 如果失真发生在 / 这里不回答什么`，继续把目录 README 压成 judgment-first 入口页
 - 继续更新 `navigation/03`、`navigation/07`、`navigation/41` 与 `navigation/46`，把 `进入顺序 / 推荐阅读链 / 规范锚点 / 证明页 / 共同次序` 这类 route-map 语法继续收回到 `误判校正入口 / 先问 / 成立证据 / 补充证据 / 方法判据 / 迁移门槛`，并把结构线 visible root 继续从 `authority object` 收回到 `current-truth surface`
 - 继续更新 `navigation/01`、`navigation/15` 与 `navigation/41` 的前门语法，把 `最短反查链 / 稳定阅读顺序 / 三种入口问题 / Prompt魔力` 这类路线卡或旧前门词收回到 `规范锚点 / 证明页 / 三类审题 / 请求装配控制面 / 当前真相保护`，继续把导航页压成 judgment map 而不是 route map

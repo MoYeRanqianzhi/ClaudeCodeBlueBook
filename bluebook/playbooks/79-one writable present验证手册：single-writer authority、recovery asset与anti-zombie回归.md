@@ -79,6 +79,36 @@
 9. `later-maintainer rejectability continuity`
    - later maintainer 是否仍能直接看出危险改动面与 reject 条件。
 
+## 3.1 回归 / 拒收矩阵
+
+把结构 drift 写成正式 verdict，而不是散装告警：
+
+这里默认消费的是前置输入工件，而不是在本页临时生产 atlas：
+
+- `danger_surface_atlas_ref`
+- `gap_note_ref`
+- `authority_surface_ref`
+
+| drift | verdict | threshold trigger | 最小证据 | 回退动作 | 是否必须重建 fresh worldview / cleanup |
+|---|---|---|---|---|---|
+| `multi_writer_truth_detected` | `reject` | 多个 writer 并行宣布当前真相 | authority object / writer split evidence / `authority_surface_ref` | freeze write path | 是 |
+| `per_host_projection_claimed_authority` | `reject` | projection 冒充 authority | per-host width / projection claim evidence / `authority_surface_ref` | restore single authority surface | 是 |
+| `recovery_asset_usurped_authority` | `cleanup-before-resume` | pointer、ledger、resume file 直接宣布现在 | recovery asset ledger / resume claim / `danger_surface_atlas_ref` | strip asset sovereignty, then resume | 是 |
+| `event_stream_usurped_present` | `degrade` 或 `reject` | 时间线开始代替 state writeback | event/state split evidence / `authority_surface_ref` | rebuild writeback choke point | 是 |
+| `freshness_gate_missing` | `reject` | stale writer 重新可达 | generation / freshness proof missing / `danger_surface_atlas_ref` | reinstate freshness gate | 是 |
+| `stale_worldview_unchecked` | `halt` 或 `human-fallback` | validator / host 继续站在旧世界观上发放允许 | worldview ref / validation context / `danger_surface_atlas_ref` | stop and re-evaluate on fresh state | 是 |
+| `ghost_capability_not_evicted` | `cleanup-before-resume` | dead capability、旧 pin、旧 width 仍可用 | eviction evidence / capability ledger / `danger_surface_atlas_ref` | evict then rebuild legal subset | 是 |
+| `compile_runtime_artifact_conflated` | `human-fallback` | compile/runtime/artifact gate 混层 | release surface matrix / `gap_note_ref` | split boundaries before continue | 视情况而定 |
+| `later_maintainer_needs_author_memory` | `degrade` | later maintainer 无法点名危险改动面 | `danger_surface_atlas_ref` / `gap_note_ref` | write danger-surface note before change | 否 |
+
+更稳的纪律是：
+
+1. `reject` 用于 single-writer 与 authority surface 已经失守。
+2. `cleanup-before-resume` 用于恢复资产或 ghost capability 越权，但当前世界仍可被清理后恢复。
+3. `degrade` 用于还能保最小合法形态，但不能继续假装 present truth 完整成立。
+4. `halt` 用于 stale worldview 已让继续动作失去正当性。
+5. `human-fallback` 用于 later maintainer 或 release surface 已经失去清晰拒收能力。
+
 ## 4. 直接拒收条件
 
 出现下面情况时，应直接拒收：
@@ -110,6 +140,7 @@
 11. `reject_reason`
 12. `rollback_object`
 13. `later_maintainer_risk_note`
+14. `danger_surface_atlas_ref`
 
 ## 6. 防再发动作
 

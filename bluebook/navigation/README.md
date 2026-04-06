@@ -22,6 +22,7 @@
 - [15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性](15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md): 需要失稳前问题梯子时
 - [41-机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理](41-机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理.md): 需要把深专题回压成第一性原理时
 - [46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布](46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布.md): 需要进入宿主实现与迁移链时
+- [04-目录职责、规范入口与兼容别名页说明](04-目录职责、规范入口与兼容别名页说明.md): 需要确认 atlas、矩阵、verdict、样本与记忆各应落在哪一层时
 
 如果问题要沿 Prompt 对象链往下压，不要自己拼入口：
 
@@ -41,7 +42,8 @@
 - Prompt 深段对象：`message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification -> cache-safe fork`
 - 治理深段对象：`governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-vs-transient cleanup`
 - 结构深段对象：`current-truth surface -> per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`
-- 公开镜像证据分级与进一步 reject path：在三条链各自稳定后，再回 `102`
+- 公开镜像证据分级与危险改动面 atlas：在三条链各自稳定后，再回 `102`
+- 结构 drift 的执行 verdict：进入长期回归后默认看 `79`
 
 ## 什么时候用它
 
