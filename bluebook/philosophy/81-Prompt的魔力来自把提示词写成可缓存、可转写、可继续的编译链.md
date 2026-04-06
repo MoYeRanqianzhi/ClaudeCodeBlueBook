@@ -43,6 +43,8 @@
 6. `Explainability`
    - cache break、继续失效与世界断裂的原因能否被对象级点名。
 
+这六个 nouns 是目录前门的压缩路由，不是把 `message lineage` 升格成唯一对象；真正的 canonical witness 仍是 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`。
+
 ## 1. 先说结论
 
 Prompt 真正的魔力，不是：

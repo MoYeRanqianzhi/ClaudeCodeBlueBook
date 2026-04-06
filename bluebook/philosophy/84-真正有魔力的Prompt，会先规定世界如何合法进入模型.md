@@ -87,6 +87,8 @@ Prompt 的魔力，首先来自：
 1. `same-world test = world-defining winner -> message lineage -> protocol transcript -> stable bytes -> continuation qualification`
 2. `compile -> protocolize -> preserve -> continue -> explain`
 
+这里的 `same-world test` 与六个 nouns 都只是 frontdoor shorthand，首次出现时仍应立刻回绑到 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict` 这条 canonical object chain。
+
 如果把第一行再压成目录前门复用的一组 nouns，也只该剩：
 
 - `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`

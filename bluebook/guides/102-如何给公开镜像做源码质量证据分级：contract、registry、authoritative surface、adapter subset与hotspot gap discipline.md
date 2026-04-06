@@ -32,6 +32,7 @@
 这里还应先多记一句：
 
 - 文件名里的 `authoritative surface / adapter subset / hotspot gap discipline` 只保留为兼容检索别名，不再拥有首答权，也不是新的 canonical rung。
+- 本页只定义 canonical rung 与降格规则；repo-specific map projection 统一回 `01-源码结构地图`，源码二级目录 atlas 再经 `navigation/35 -> api/46-50` 路由，不在这里重写 atlas 正文。
 
 这条线最短的 reject trio 也只认：
 

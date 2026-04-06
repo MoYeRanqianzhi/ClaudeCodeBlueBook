@@ -8,6 +8,26 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- Prompt frontdoor shorthand 现已进一步收紧成一条长期必须回绑的 witness ABI：
+  - `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+  - `same-world test`、`Authority / Boundary / Transcript / Lineage / Continuation / Explainability`、`compiled request truth / stable prefix / lawful forgetting / threshold liability` 这些词后续都只能作为这条 witness ABI 的 shorthand、witness、packet 或 verdict；如果某页首次出现它们却没有立刻回绑 witness ABI，应直接视为 Prompt 深页长出第二语言。
+  - `host consumption card` 现在也应长期记住：它只配做 Explainability 末端 carrier，不是新的 Prompt 主语；execution 页真正该先守的是 witness order，而不是 card 完整度。
+- refinement attestation 的 visible noun 现已进一步分线稳定：
+  - Prompt 精修链后续优先使用 `shared_consumer_surface_attestation_packet`，强调“宿主 / CI / reviewer / handoff 是否仍消费同一条 witness order”。
+  - 结构精修链后续优先使用 `current_truth_surface_attestation_packet`，强调“display / event / handoff projection 是否仍被压回同一个 current-truth surface”。
+  - `cross_consumer_attestation_packet` 在这两条线里都应被视为旧总称；若还停在首屏，应优先往各自的 prompt / structure attestation visible noun 收口。
+- Atlas / ladder / route dispute 的目录分工现已继续写死：
+  - `01-源码结构地图 + guides/102` 只定义 canonical rung、`current-truth surface candidate` 的降格规则与旧别名降格。
+  - `api/46-50` 只承接 repo-specific atlas 正文、authority file、consumer subset 与 reject path。
+  - `navigation/35` 只承接 atlas projection / route dispute。
+  - `navigation/04` 只承接 speaking-rights / appeal-chain charter。
+  - 以后凡是 atlas 问题在 README、guide、navigation 与 api 四层同时第一次回答，默认按“目录层第二前门”处理。
+- Anthropic 官方 2026 文档/engineering 证据已形成一组长期稳定的外部校准：
+  - context 起手默认装配 `cwd + parent CLAUDE.md + auto memory + tool/skill projection`，因此 Prompt world entry 从来不是单段 system prompt
+  - subagents 长期应被视为独立 context window + summary return；这继续支持 `coordinator_synthesis_owner` 与“未综合子 Agent prose 只配做线索”的写法
+  - token 经济长期应记成 `prompt caching + auto-compaction + stable prefix / working set 分治`，而不是“回答更短”
+  - security 长期应记成 `sandbox / approval / hooks / working-dir write boundary` 的 runtime 叠加边界；2026-03-25 公布的 auto mode 还把“轻量前置拦截 + 主模型策略审查”写成双层防线
+  - sandboxing engineering 文里 `84%` 的 permission-prompt reduction 应长期被读成“未定价扩张先被 runtime 缩窄”，而不是“同样扩张只换成更少提示词”
 - `userbook/02-能力地图/README`、`03-参考索引/README`、`04-专题深潜/README` 与 `05-控制面深挖/README` 现已继续把目录权限 doctrine 下沉到用户侧入口：
   - `02-能力地图` 现在应长期记住：它有能力曝光翻译权与边界提示权，但没有真相签发权；后续若能力地图开始替 `api/` 或 `philosophy/` 重判 canonical truth，应直接视为长出第二蓝皮书。
   - `03-参考索引` 现在应长期记住：它只有速查权，不拥有改判权；需要真相、verdict 或反例时，必须显式把读者退回对应正文层。

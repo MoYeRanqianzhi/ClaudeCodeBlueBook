@@ -1,10 +1,10 @@
-# Prompt宿主修复稳态纠偏再纠偏改写纠偏精修协议：compiled request lineage、registry-boundary covenant、protocol-prefix custody、cross-consumer attestation 与 reopen liability ledger
+# Prompt宿主修复稳态纠偏再纠偏改写纠偏精修协议：message lineage witness、registry-boundary covenant、protocol-prefix custody、shared-consumer attestation 与 reopen liability ledger
 
 这一章回答五个问题：
 
 1. Claude Code 当前到底通过哪些正式对象，让宿主、CI、评审与交接在 Prompt rewrite correction 固定顺序已经被钉死之后，继续消费同一条 Prompt 编译链，而不是退回 builder-facing 手册。
 2. 哪些字段属于必须共享的宿主消费对象，哪些属于 `hard_reject / reentry / reopen` 语义，哪些仍不应被绑定成公共 ABI。
-3. 为什么 Claude Code 的 Prompt 魔力来自同一条 `compiled request truth -> section registry -> dynamic boundary -> protocol transcript -> stable prefix -> lawful forgetting -> continuation qualification -> threshold liability` 编译链，而不是更会写的 Prompt 文案。
+3. 为什么 Claude Code 的 Prompt 魔力来自同一条 `message lineage -> section registry / stable boundary -> protocol transcript -> continuation object -> continuation qualification` witness order，而不是更会写的 Prompt 文案。
 4. 宿主开发者该按什么顺序消费这套 Prompt rewrite correction 精修协议。
 5. 哪些现象一旦出现，应被直接升级为 `hard_reject`、`truth_recompile_required`、`registry_reseal_required`、`reentry_required` 或 `reopen_required`，而不是继续宣称 rewrite correction 已经成立。
 
@@ -43,7 +43,7 @@ Claude Code 当前并没有公开一份名为：
 6. `protocol_prefix_custody`
 7. `forgetting_continuation_covenant`
 8. `hard_reject_semantics_abi`
-9. `cross_consumer_attestation_packet`
+9. `shared_consumer_surface_attestation_packet`
 10. `reopen_liability_ledger`
 11. `rewrite_refinement_verdict`
 
@@ -53,6 +53,8 @@ Claude Code 当前并没有公开一份名为：
 - 只看 summary handoff 更完整
 - 只看 UI transcript 更安静
 
+本页的 `compiled request lineage / registry-boundary / protocol-prefix / reopen liability` 只是 packet layer，不是新的 Prompt frontdoor chain；真正的前门仍只认 `message lineage -> section registry / stable boundary -> protocol transcript -> continuation object -> continuation qualification`。
+
 而是：
 
 - 围绕这十一类对象继续消费同一个 `compiled request truth`、同一个 `section registry`、同一条 `dynamic boundary`、同一个 `protocol transcript`、同一个 `stable prefix`、同一条 `lawful forgetting boundary`、同一个 `continuation qualification` 与同一个 `threshold liability`
@@ -61,12 +63,12 @@ Claude Code 当前并没有公开一份名为：
 
 Claude Code 的 Prompt 魔力不在文案，而在同一个编译链持续成立：
 
-1. `compiled request truth` 先定义“模型实际在消费什么”。
-2. `section registry` 再定义“同一个主线程当前拥有哪些运行时 section”。
-3. `dynamic boundary` 再定义“什么属于 stable prefix，什么只是 late-bound attachment”。
-4. `protocol transcript` 再定义“过程真相如何进入可继续消费的消息链”。
-5. `stable prefix + lawful forgetting` 再定义“哪些内容允许复用、哪些内容允许遗忘”。
-6. `continuation qualification + threshold liability` 再定义“什么能继续、什么能反对当前继续”。
+1. `message lineage` 先定义“later consumer 继承的是不是同一条 request 身份链”。
+2. `section registry / stable boundary` 再定义“同一个主线程当前拥有哪些运行时 section，以及哪些 bytes 配进入 stable prefix”。
+3. `protocol transcript` 再定义“过程真相如何进入可继续消费的消息链”。
+4. `continuation object` 再定义“compact / handoff 之后继续对象究竟挂回哪一条 witness chain”。
+5. `continuation qualification` 再定义“什么能继续、什么能反对当前继续”。
+6. `compiled request truth / stable prefix / lawful forgetting / threshold liability` 只继续作为这五个 canonical node 的 witness、packet 或 verdict，不重新升格成另一条 frontdoor chain。
 
 所以 Prompt rewrite correction 精修协议真正要保护的不是：
 
@@ -193,7 +195,7 @@ Prompt 宿主还必须显式消费：
 14. `tool_pairing_health_failed`
 15. `threshold_liability_missing`
 
-### 6.2 cross consumer attestation packet
+### 6.2 shared consumer surface attestation packet
 
 1. `host_consumer_ref`
 2. `ci_consumer_ref`
@@ -220,7 +222,7 @@ Prompt 宿主还必须显式消费：
 这里最重要的是：
 
 - `hard_reject` 保护的是“现在不能继续假装同一条 Prompt truth 仍然成立”
-- `cross_consumer_attestation` 保护的是“宿主、CI、评审与交接在消费同一个对象”
+- `shared-consumer attestation` 保护的是“宿主、CI、评审与交接在消费同一条 witness order 的同一组对象”
 - `reopen liability ledger` 保护的是“未来仍能正式反对当前 rewrite correction 状态”
 
 ## 7. rewrite refinement verdict
@@ -269,7 +271,7 @@ Prompt rewrite correction 精修协议还必须消费：
 6. 再验 `protocol_prefix_custody`
 7. 再验 `forgetting_continuation_covenant`
 8. 再验 `hard_reject_semantics_abi`
-9. 再验 `cross_consumer_attestation_packet`
+9. 再验 `shared_consumer_surface_attestation_packet`
 10. 最后验 `reopen_liability_ledger`
 11. 再给 `rewrite_refinement_verdict`
 

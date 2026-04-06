@@ -17,6 +17,17 @@
 - `35` 不新建 ladder，只把 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 投影到二级目录阅读动作里；它是 atlas projection page，不是第二条源码质量前门。
 - 如果争议已经变成“这页到底有没有首答权”，不要继续在 atlas 页内部打转，直接回 `navigation/04` 处理 speaking-rights 问题。
 
+如果问题还没分清自己到底在问哪一种 atlas 事实，先用这张四路由短表：
+
+1. 问 canonical ladder、rung 定义与降格规则
+   - 先回 `01 + guides/102`
+2. 问 repo-specific atlas 正文、authority file、consumer subset 与 reject path
+   - 先回 `api/46-50`
+3. 问 atlas 模板、gap note 与 mirror-gap 记法
+   - 先回 `guides/102`
+4. 问 speaking-rights、route dispute 或 atlas 是否越权成第二前门
+   - 先回 `navigation/04`
+
 ## 1. Services 二级目录 Atlas
 
 这一条线最该先交四件事：

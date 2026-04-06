@@ -2,6 +2,10 @@
 
 ## 2026-04-07
 
+- 本轮根仓库同步再次确认：`main=origin/main=20a0f55113c7e1c69bf4eca1f1041caeca8e79bb`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
+- 继续更新 `api/81 / 84 / 86`、`playbooks/65` 与 `philosophy/75 / 81 / 84`，把 Prompt 精修链里仍残留的 `compiled request truth / cross-consumer attestation / host consumption card` 可见主语继续压回 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict` 这条 witness ABI，并把结构精修链的 attestation visible noun 收回 `current_truth_surface_attestation_packet`；这一批明确写死：`host consumption card` 只配做 Explainability 末端 carrier，不再自立成 Prompt 主语
+- 继续更新 `api/README`、`navigation/04 / 06 / 35`、`01-源码结构地图` 与 `guides/102`，把蓝皮书目录结构里仍混写的 atlas 事实拆成四种首答职责：`01 + guides/102` 继续只定义 canonical rung 与降格规则，`api/46-50` 继续只承接 repo-specific atlas 正文，`navigation/35` 继续只处理 atlas route / projection dispute，`navigation/04` 继续只做 speaking-rights charter；同时把 `api/README` 的 Atlas 套件显式展开成 `46-50`
+- 本轮并行 Agent 与 Anthropic 官方文档/engineering 证据共同回灌的稳定判断已写入记忆层：Prompt frontdoor shorthand 一旦不立刻回绑 witness ABI，就会在深页重长第二语言；atlas/canonical ladder/template/gap note/speaking-rights 只要不单源，就会在目录层重造第二前门；官方 2026 文档还进一步确认 Claude Code 的运行时现实是 `cwd + parent CLAUDE.md + auto memory + tool/skill projection` 的上下文装配、subagent 的独立上下文返回、以及 `prompt caching + auto-compaction + 双层 auto mode 防线 + sandboxing 降提示` 的统一安全/经济运行时
 - 本轮根仓库同步再次确认：`main=origin/main=20a0f55113c7e1c69bf4eca1f1041caeca8e79bb`、`rev-list --left-right --count main...origin/main = 0 0`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
 - 继续更新 `userbook/02-能力地图/README`、`03-参考索引/README`、`04-专题深潜/README` 与 `05-控制面深挖/README`，把这轮“发言权限 / 申诉链” doctrine 下沉到用户侧二级入口：`能力地图` 现在更明确只拥有能力曝光翻译权与边界提示权；`参考索引` 现在更明确只拥有速查权，不拥有改判权；`专题深潜` 现在更明确只拥有工作对象翻译权与工作顺序提示权；`控制面深挖` 现在更明确只拥有控制面判断翻译权与相邻替身拒收权
 - 继续更新 `docs/development/00-研究方法.md` 与 `03-反思与迭代准则.md`，把近期稳定下来的编辑 doctrine 正式写进方法论文档：发言权现在不仅要求回答“这一层能说什么”，还要回答“这一层不能改判什么、异议往哪层申诉”；批次收口、推荐顺序、兼容标签/路径债这类“编排真相”也被明确默认下沉到记忆层；“新增入口”则被写成高成本决策，必须先走“改标签 -> 补 navigation -> 同步专题 README -> 最后才新开前门”的更便宜顺序

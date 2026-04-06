@@ -76,12 +76,16 @@
 - [31-失败语义、取消请求与孤儿修复API手册](31-失败语义、取消请求与孤儿修复API手册.md)
 - [39-结构 Host Artifact Contract：权威路径、恢复资产、反zombie 与交接包字段骨架](39-结构 Host Artifact Contract：权威路径、恢复资产、反zombie 与交接包字段骨架.md)
 - [42-结构 Artifact Rule ABI：Authoritative Path、Recovery Asset、Anti-Zombie 与 Reject 语义的机器可读结构](42-结构 Artifact Rule ABI：Authoritative Path、Recovery Asset、Anti-Zombie 与 Reject 语义的机器可读结构.md)
-- [46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口](<46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md>)
+- [46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口](46-services%20二级目录%20Atlas：API、Compact、Memory、MCP、LSP%20与%20Observability%20子系统的权威入口.md)
+- [47-tools 二级目录 Atlas：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界](47-tools%20二级目录%20Atlas：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md)
+- [48-commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界](48-commands%20二级目录%20Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界.md)
+- [49-Prompt编译与稳定性支持面手册：注入入口、协议转译、缓存断点与合法遗忘边界](49-Prompt编译与稳定性支持面手册：注入入口、协议转译、缓存断点与合法遗忘边界.md)
+- [50-治理控制面支持面手册：Settings、Permission、MCP、Context Usage、状态写回与继续门控](50-治理控制面支持面手册：Settings、Permission、MCP、Context Usage、状态写回与继续门控.md)
 
 ## 适合谁先读
 
-- 想先抓“谁在宣布真相、谁只是在消费真相”：从 `23 -> 30 -> 31 -> 46`
-- 想看目录级地图、结构工件与规则包怎样回到源码真相梯度：从 `30 -> 39 -> 42 -> 46`
+- 想先抓“谁在宣布真相、谁只是在消费真相”：从 `23 -> 30 -> 31 -> 46-50`
+- 想看目录级地图、结构工件与规则包怎样回到源码真相梯度：从 `30 -> 39 -> 42 -> 46-50`
 - 想看命令和控制协议：从 `01 -> 05 -> 15`
 - 想看状态消息与宿主消费：从 `09 -> 17 -> 19 -> 31`
 - 想看 Prompt 编译与宿主消费：从 `18 -> 21 -> 49 -> 54`

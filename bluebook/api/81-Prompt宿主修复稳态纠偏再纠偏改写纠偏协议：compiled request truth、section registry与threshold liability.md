@@ -46,6 +46,8 @@ Claude Code 当前并没有公开一份名为：
 10. `threshold_liability_reinstatement`
 11. `rewrite_correction_verdict`
 
+上面这十一类对象只是 `message lineage -> section registry / stable boundary -> protocol transcript -> continuation object -> continuation qualification` 的展开层；`compiled request truth / stable prefix / lawful forgetting / threshold liability` 只应继续作为这些 canonical node 的 witness、packet 或 verdict，不再自立成第二条 Prompt frontdoor chain。
+
 更成熟的 Prompt rewrite correction 方式不是：
 
 - 只看 rewrite prose 更不像事故说明
