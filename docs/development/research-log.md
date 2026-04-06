@@ -6,6 +6,10 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮主分支同步检查: 根仓库 `main` 与 `origin/main` 当前同在 `3fa04b85f916980f264879d0632586c89f9aacc1`；`pull --ff-only` 仍因根工作区未解决冲突而失败，因此本轮继续只在 `.worktrees/mainloop` 内推进，不触碰主工作区冲突。
+- 本轮导航前门换代动作: 已继续更新 `navigation/03 / 40 / 44 / 46`，把深度专题总前门收回到“世界进入模型 / 扩张定价 / 当前真相”，并把 `40 / 44 / 46` 从层级沿革、文类安放与编排说明改写成直接面向 `message lineage / governance key / authority object` 的正文判断。
+- 本轮正文去记忆化动作: 已把 `40 / 44 / 46` 中“这一篇不再回答……”“为什么这层更适合落在……”这类更像编排记忆与作者工位说明的元话语移出正文中心，改成直接回答“哪种替身在夺权”“哪种误绑在制造第二真相”“哪种迁移顺序在写坏当前真相”。
+- 本轮第一性原理加固: 已继续把 `navigation/03` 的源码先进性入口从“公开镜像 / 热点文件 / 对象化”前移到“当前真相保护 / 合法复杂度中心 / 可证明边界 / 协作承载与升级”；并继续把 Prompt 魔力收紧为“同一世界的持续诚实”，把安全与省 token 收紧为同一条 `governance key / externalized truth chain / decision window / continuation pricing` 定价链。
 - 本轮旧链接标签清理动作: 已继续更新 `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41`，把仍沿 `architecture/82-84` 旧文件名暴露出来的 `authority chain / trusted inputs / single-writer surfaces` 收回到 `message lineage / projection consumer / continuation qualification`、`governance key / decision window / continuation pricing` 与 `authority object / freshness gate / ghost capability`。
 - 本轮链接标签判断加固: 当正文和前门都已经换代后，最容易继续反向输送旧术语的就是引用标签与目录名残留；这批是在清这种“链接还在讲旧世界，正文已在讲新世界”的噪音。
 - 本轮审读模板去姿态词动作: 已继续更新 `guides/99 / 100 / 101`，把开头里残留的“继续压成一套模板 / 更长 Prompt 规范 / 设置页说明书 / 结构洁癖清单”这类写作姿态词，收回成更稳定的“审读问题序列 / 设置页导览 / 结构外观清单”表达。

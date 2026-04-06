@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `navigation/03 / 40 / 44 / 46` 现已继续把前门主语收口：
+  - 深度专题总前门已从 `Prompt / 预算 / 对象 / 底盘 / 治理` 收回到“世界进入模型 / 扩张定价 / 当前真相”三张控制面，不再把“对象”本身当一级解释轴。
+  - `40 / 44 / 46` 现已不再把“这一层放在哪类文档更合适”当正文主语，而是直接围绕 `message lineage / governance key / authority object` 写失真、宿主误绑与迁移次序。
+- 新的长期结论：
+  - 当蓝皮书进入后期优化，最容易混进正文的已不只是作者记忆，也包括“文类沿革 / 目录安放 / 阅读编排”这类元叙事；这类内容应优先回写到 `docs/`，不应继续占据 bluebook 正文中心。
+  - 导航页真正成熟时，不再先解释“这篇属于哪一层”，而是先指出“哪种替身在夺权、哪种 drift 在制造第二真相、哪种顺序会把当前真相写坏”。
+- `navigation/03` 现已继续把 Prompt 魔力、源码先进性与协作承载线往第一性原理收紧：
+  - Prompt 魔力前门现已进一步收紧为“同一世界的持续诚实”，不再把“对象链”本身当主要口号。
+  - 源码先进性入口现已更靠前地暴露“当前真相保护 / 合法复杂度中心 / 可证明边界”，把“公开镜像证据分级 / 热点文件研究法”降为方法性补充。
+  - `对象化深线` 现已收回为 `协作承载与升级深线`，以免前门把承载体误读成新的总本体。
+- 新的长期结论：
+  - “安全设计”和“省 token 设计”真正共用的不是一组设置页，而是同一条世界准入定价链；后续凡是治理前门，都应优先暴露 `governance key / externalized truth chain / decision window / continuation pricing`，而不是 mode、面板或 token 条。
 - `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41` 现已继续把旧链接标签收口：
   - Prompt 线当前连到 `architecture/82` 时，已不再先暴露 `authority chain`，而是优先暴露 `message lineage / projection consumer / protocol transcript / continuation qualification`。
   - 治理线当前连到 `architecture/83` 时，已不再先暴露 `trusted inputs`，而是优先暴露 `governance key / typed ask / decision window / continuation pricing`。

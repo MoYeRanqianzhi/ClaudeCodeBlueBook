@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新 `navigation/03 / 40 / 44 / 46` 的前门语言，把深度专题前门收回到“世界进入模型 / 扩张定价 / 当前真相”三张控制面，并把 `40 / 44 / 46` 从“这一层放在哪一类文档更合适”的编排叙事改写成直接面向 `message lineage / governance key / authority object` 的失真、误绑与迁移次序正文
+- 继续更新 `navigation/03` 的源码先进性入口顺序与 Prompt 魔力结论，把“公开镜像 / 热点文件 / 对象化”这类次级阅读姿态降级，把“当前真相保护 / 合法复杂度中心 / 可证明边界 / 协作承载与升级”提升为更靠前的第一性原理入口
 - 继续更新 `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41` 的旧链接标签，把 `architecture/82-84` 仍沿旧文件名暴露出来的 `authority chain / trusted inputs / single-writer surfaces` 收回到当前对象链，并同步收紧少数 Prompt / 治理前门短语
 - 继续更新 `guides/99 / 100 / 101` 的开头元话语，把“继续压成一套模板 / 更长的 Prompt 规范 / 设置页说明书 / 结构洁癖清单”这类写作姿态词收回到更稳定的“审读问题序列 / 设置页导览 / 结构外观清单”表达
 - 继续更新 `casebooks/README`、`security/README` 与 `risk/README` 的路由层可见标签，把仍在暴露旧文件名术语的入口链收回到当前对象链，尤其是 Prompt 的 `message lineage / protocol truth / stable prefix` 与治理的 `governance key / typed ask / decision window / continuation pricing / cleanup`
