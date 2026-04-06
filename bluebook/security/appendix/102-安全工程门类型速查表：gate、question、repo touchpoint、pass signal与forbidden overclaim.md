@@ -2,7 +2,7 @@
 
 ## 1. 这一页服务于什么
 
-这一页服务于 [118-安全工程门的类型学：为什么研究版源码真正的阶段门是Reality Gate、Admission Gate、Normalization Gate、Static Gate、Isolation Gate、Bundle Gate、Smoke Gate与Verification Gap Gate](../118-%E5%AE%89%E5%85%A8%E5%B7%A5%E7%A8%8B%E9%97%A8%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%AD%A6%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A0%94%E7%A9%B6%E7%89%88%E6%BA%90%E7%A0%81%E7%9C%9F%E6%AD%A3%E7%9A%84%E9%98%B6%E6%AE%B5%E9%97%A8%E6%98%AFReality%20Gate%E3%80%81Admission%20Gate%E3%80%81Normalization%20Gate%E3%80%81Static%20Gate%E3%80%81Isolation%20Gate%E3%80%81Bundle%20Gate%E3%80%81Smoke%20Gate%E4%B8%8EVerification%20Gap%20Gate.md)。
+这一页服务于 [118-安全工程门的类型学：为什么研究版源码真正的阶段门是Reality Gate、Admission Gate、Normalization Gate、Static Gate、Isolation Gate、Bundle Gate、Smoke Gate与Verification Gap Gate](../118-%E5%AE%89%E5%85%A8%E5%B7%A5%E7%A8%8B%E9%97%A8%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%AD%A6.md)。
 
 如果 `118` 的长文解释的是：
 
