@@ -109,6 +109,7 @@
 - [105-2026-04-06-post_turn_summary wider wire visibility 拆分记忆.md](./105-2026-04-06-post_turn_summary%20wider%20wire%20visibility%20拆分记忆.md)
 - [106-2026-04-06-stream-json verbose raw wire 拆分记忆.md](./106-2026-04-06-stream-json%20verbose%20raw%20wire%20拆分记忆.md)
 - [107-2026-04-06-model separate override restore 拆分记忆.md](./107-2026-04-06-model%20separate%20override%20restore%20拆分记忆.md)
+- [108-2026-04-06-direct connect post_turn_summary callback consumer-path narrowing 拆分记忆.md](./108-2026-04-06-direct%20connect%20post_turn_summary%20callback%20consumer-path%20narrowing%20拆分记忆.md)
 
 用途：
 
