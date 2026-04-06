@@ -34,7 +34,7 @@
 
 - 为什么 Claude Code 的 prompt 看起来像“有魔力”。
 - 为什么它不是抄一段 system prompt 就能复刻。
-- 为什么工具 ABI、mailbox、channel 输入、cache break 都和 prompt 强度有关。
+- 为什么工具 ABI、mailbox、channel 输入、cache break 都和 request compiler 有关，而不只是和 prompt 强度有关。
 
 成立证据：
 
@@ -77,6 +77,7 @@
 - 为什么 `governance key`、`typed ask / decision window`、`continuation pricing` 与 prompt 稳定性应该放到同一张图里。
 - 为什么“省 token”首先在控制什么进入上下文，而不是在压缩句子。
 - 为什么 ask、续费、清理可以分层实现，却仍共享同一条治理收费链。
+- 为什么 `Context Usage` 在这里首先是 `decision window` 证据面，而不是成本仪表。
 
 成立证据：
 
@@ -187,6 +188,7 @@
 - 为什么当前真相保护、合法复杂度中心与成熟架构可以同时成立。
 - 为什么源码先进性首先要看 current-truth surface、danger surface 与 consumer subset，而不是目录观感。
 - 为什么源码质量判断最终必须落到合法复杂度中心、边界可证与下一次重构仍有路。
+- 为什么 transcript replay、UI snapshot 与 adapter cache 都不配冒充 current truth。
 
 成立证据：
 

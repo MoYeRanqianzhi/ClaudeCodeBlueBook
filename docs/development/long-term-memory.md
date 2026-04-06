@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `07 / 01 / navigation/03 / navigation/41` 现已继续把高阶综合层往上压一层：
+  - `07` 现在更明确把 Prompt、治理、当前真相与演化继续收成六个运行时平面与四个跨平面函数：`compile / price / externalize / evict`。
+  - `01` 现在更明确把 `QueryEngine + transcript` 写成事件线真相，把 `state writeback / worker_status / external_metadata` 写成 host-facing current truth。
+  - `navigation/03` 现在更明确把 Prompt 深线收回 request compiler、把治理深线收回 `Context Usage` 作为 `decision window` 证据面、把结构深线收回“哪些投影不配冒充 current truth”。
+  - `navigation/41` 现在更明确要求第一性原理收束最终落到四个跨平面函数，而不只停在对象层总结。
+- 新的长期结论：
+  - 当三条母线已经稳定后，下一层最值钱的深化不再只是继续清 visible root，而是把多页共同成立的对象继续压成更少的运行时函数；这样 later maintainer 才能看见“系统为什么难抄”，而不只是“系统对象很多”。
+  - 综合页真正成熟时，必须显式拆开事件线真相和当前真相面；否则 request compiler、governance externalization 与 current-truth writeback 仍会在读者脑中重新混成一个大而模糊的“系统真相”。
 - `03-设计哲学 / guides/102 / architecture/84 / architecture/59` 现已继续把 current-truth doctrine 的残留压平修掉：
   - `03` 现在更明确把 `transcript` 写成事件线真相，把 `state writeback` 写成宿主当前真相面，不再让两者共挤一个“系统真相”标题。
   - `102` 现在更明确把 `authoritative surface candidate` 视为公开镜像里的中间判断层，并补出 sole writer、writeback path、freshness gate 与 eviction rule 作为必须保留的 unknown。

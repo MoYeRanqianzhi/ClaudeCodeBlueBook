@@ -20,6 +20,19 @@
 4. 为什么不能停在反例层，而必须继续把坏解法压回第一性原理收束。
 5. 怎样用苏格拉底式追问避免把这一层写成新的口号集。
 
+如果再往下压一层，这五个判断最终都要回到四个跨平面函数：
+
+1. `compile`
+   - 世界如何先被编进模型
+2. `price`
+   - 扩张如何先被定价
+3. `externalize`
+   - 当前真相如何先被 runtime 外化给 host
+4. `evict`
+   - stale writer、ghost capability 与旧 authority 如何被正式驱逐
+
+如果一个解释还没有压到这四个函数，就还只是对象层总结，不算最硬的第一性原理收束。
+
 ## 1. world entry / request assembly / six-stage assembly chain 哲学线
 
 先问：
