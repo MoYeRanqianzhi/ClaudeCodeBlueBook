@@ -183,5 +183,5 @@ repo 已经在 `StructuredIO` 的 `resolvedToolUseIds`、`trackResolvedToolUseId
 
 因此：
 
-`stronger-request finality governance` 能回答“continued stronger cleanup request 的结果以后回来时是否仍然成立”；  
+`stronger-request finality governance` 能回答“continued stronger cleanup request 的结果以后回来时是否仍然成立”；
 `stronger-request forgetting governance` 才能回答“与它相关的 old identity 什么时候已经安全到可以忘掉”。
