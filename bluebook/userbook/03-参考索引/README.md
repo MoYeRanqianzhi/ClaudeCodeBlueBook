@@ -42,6 +42,7 @@
 38. 为什么 standalone remote-control 的 `--name`、`--permission-mode`、`--sandbox` 与 title 回填不是同一种继承。
 39. 为什么 remote-control 的工具审批、网络放行、自动批准与提示撤销不是同一种批准。
 40. 为什么 standalone remote-control 的 `sdk-url`、ingress、secret、token 与 worker epoch 不是同一种连接凭证。
+41. 为什么 standalone remote-control 的 environment 注册、work 租约、session 归档与环境销毁不是同一种生命周期操作。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
