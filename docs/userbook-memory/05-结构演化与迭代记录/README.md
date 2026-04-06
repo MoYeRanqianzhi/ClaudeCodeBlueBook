@@ -106,6 +106,7 @@
 - [102-2026-04-06-suggestion cleanup telemetry gap 拆分记忆.md](./102-2026-04-06-suggestion%20cleanup%20telemetry%20gap%20拆分记忆.md)
 - [103-2026-04-06-observer metadata stale scrub vs restore 拆分记忆.md](./103-2026-04-06-observer%20metadata%20stale%20scrub%20vs%20restore%20拆分记忆.md)
 - [104-2026-04-06-pendingLastEmittedEntry inert stale staging 拆分记忆.md](./104-2026-04-06-pendingLastEmittedEntry%20inert%20stale%20staging%20拆分记忆.md)
+- [105-2026-04-06-post_turn_summary wider wire visibility 拆分记忆.md](./105-2026-04-06-post_turn_summary%20wider%20wire%20visibility%20拆分记忆.md)
 
 用途：
 

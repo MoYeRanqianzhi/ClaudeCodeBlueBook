@@ -93,3 +93,4 @@
 - [91-Suggestion cleanup and telemetry gap 索引.md](./91-Suggestion%20cleanup%20and%20telemetry%20gap%20索引.md)
 - [92-Observer metadata stale scrub vs restore 索引.md](./92-Observer%20metadata%20stale%20scrub%20vs%20restore%20索引.md)
 - [93-pendingLastEmittedEntry inert stale staging 索引.md](./93-pendingLastEmittedEntry%20inert%20stale%20staging%20索引.md)
+- [94-post_turn_summary wider-wire visibility 索引.md](./94-post_turn_summary%20wider-wire%20visibility%20索引.md)

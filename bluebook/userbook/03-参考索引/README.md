@@ -57,6 +57,7 @@
 - 为什么已交付 suggestion 在 `interrupt`、`end_session` 与 output close 之后不一定留下 accepted / ignored telemetry。
 - 为什么 `pending_action`、`task_summary` 在 CCR startup 会被 scrub stale，却不会被本地恢复回填。
 - 为什么 deferred suggestion cleanup 里残留的 `pendingLastEmittedEntry` 更像 inert stale slot，而不是外部协议 bug。
+- 为什么 `post_turn_summary` 不是 core SDK-visible，却不等于完全不可见。
 51. 为什么 `permission_mode`、`is_ultraplan_mode` 与 `model` 不是同一种远端可恢复会话参数。
 52. 为什么 `task_started`、`task_progress`、`task_notification` 与 `session_state_changed` 不是同一种远端事件流。
 53. 为什么 CCR v2 remote bridge 的 `transport rebuild`、initial flush、`flush gate` 与 `sequence resume` 不是同一步。
