@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，把治理模板继续压实到“authority source 先收费，再谈动作 / 上下文 / 时间”，并明确 host 只能消费 runtime 外化的 authority/status，不能自己回放拼 mode、tool pool 与 pending action
 - 继续更新《导读》《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，把 `00` 从“二次索引 + 研究工法页”收回成真正的主线前言，只保留研究对象、三条最高阶判断、结构图必要性与第一判断顺序
 - 继续更新《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，把治理线正式压成 `authority object / role contract / reject path` 模板，固定到 `permission mode / trusted inputs / visible-set / externalization / continuation pricing`
 - 继续更新《设计哲学》《第一性原理与苏格拉底反思》，把 `UI transcript / protocol transcript / state writeback` 的真相分工前置到主线，并把 `display truth / protocol truth / handoff truth` 再压成共享 `source_uuid / origin / history` 的 message lineage 投影

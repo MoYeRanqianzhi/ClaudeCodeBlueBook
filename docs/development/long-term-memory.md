@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `03 / 06 / 09` 已继续把治理模板从“四类扩张收费”压到“authority source 先收费”：
+  - 现已更明确把 `settings sources` 抬进 authority object，同 `permission mode / trusted inputs / visible-set / externalization / continuation pricing` 并列。
+  - 现已更明确把 host 写成 runtime authority/status 的消费者，而不是自己回放消息去拼 `mode / tool pool / pending action / context truth`。
+- 新的长期结论：
+  - 治理秩序真正成熟时，不是先问“要不要拦”，而是先问“谁有资格改边界”；authority source 的收费先于动作、上下文与时间收费。
+  - 宿主成熟度真正高时，不再从事件流反推当前状态，而是消费 runtime 显式外化出来的 authority/status 真相。
 - `00 / 03 / 06 / 09` 已继续把正文去记忆化与主线模板化往前推进一层：
   - `00` 现已从“二次索引 + 研究工法页”收回成真正的主线前言，不再重做正式阅读路径、主题分流与源码阅读脚本。
   - `03 / 09` 现已把治理线继续压成 `authority object / role contract / reject path` 模板，固定到 `permission mode / trusted inputs / visible-set / externalization / continuation pricing`。

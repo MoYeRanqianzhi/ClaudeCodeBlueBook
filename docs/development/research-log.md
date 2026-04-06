@@ -6,6 +6,7 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮治理再压缩动作: 已继续更新 `03 / 06 / 09`，把统一定价从“四类扩张收费”进一步压到“authority source 先收费，再谈动作 / 上下文 / 时间”，并明确 host 只能消费 runtime 外化的 authority/status，不能自己回放拼 mode、tool pool 与 pending action。
 - 本轮前言收口动作: 已继续更新 `00-导读`，把它从“二次索引 + 研究工法页”收回成真正的主线前言，只保留研究对象、三条最高阶判断、结构图必要性与第一判断顺序。
 - 本轮治理模板硬化动作: 已继续更新 `03 / 06 / 09`，把治理线正式压成 `authority object / role contract / reject path` 模板，固定到 `permission mode / trusted inputs / visible-set / externalization / continuation pricing`。
 - 本轮可见真相硬化动作: 已继续更新 `03 / 06`，把 `UI transcript / protocol transcript / state writeback` 分成三层真相，并把 `display truth / protocol truth / handoff truth` 再压成共享 `source_uuid / origin / history` 的 message lineage 投影。
