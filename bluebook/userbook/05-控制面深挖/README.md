@@ -60,5 +60,6 @@
 - [50-worker epoch、state restore、worker heartbeat、keep_alive 与 self-exit：为什么 CCR v2 worker 的初始化、保活与代际退场不是同一种存活合同.md](./50-worker%20epoch、state%20restore、worker%20heartbeat、keep_alive%20与%20self-exit：为什么%20CCR%20v2%20worker%20的初始化、保活与代际退场不是同一种存活合同.md)
 - [51-worker_status、requires_action_details、pending_action、task_summary、post_turn_summary 与 session_state_changed：为什么远端看到的运行态不是同一张面.md](./51-worker_status、requires_action_details、pending_action、task_summary、post_turn_summary%20与%20session_state_changed：为什么%20远端看到的运行态不是同一张面.md)
 - [52-permission_mode、is_ultraplan_mode 与 model：为什么远端恢复回填、当前本地状态与 session control request 不是同一种会话参数.md](./52-permission_mode、is_ultraplan_mode%20与%20model：为什么%20远端恢复回填、当前本地状态与%20session%20control%20request%20不是同一种会话参数.md)
+- [53-task_started、task_progress、task_notification 与 session_state_changed：为什么远端消费方收到的不是同一种事件流.md](./53-task_started、task_progress、task_notification%20与%20session_state_changed：为什么%20远端消费方收到的不是同一种事件流.md)
 
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

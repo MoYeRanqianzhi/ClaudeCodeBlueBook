@@ -54,6 +54,7 @@
 - [50-2026-04-06-CCR v2 worker lifecycle 拆分记忆.md](./50-2026-04-06-CCR%20v2%20worker%20lifecycle%20拆分记忆.md)
 - [51-2026-04-06-remote runtime state projection 拆分记忆.md](./51-2026-04-06-remote%20runtime%20state%20projection%20拆分记忆.md)
 - [52-2026-04-06-remote metadata restore and writeback 拆分记忆.md](./52-2026-04-06-remote%20metadata%20restore%20and%20writeback%20拆分记忆.md)
+- [53-2026-04-06-remote sdk task event stream 拆分记忆.md](./53-2026-04-06-remote%20sdk%20task%20event%20stream%20拆分记忆.md)
 
 用途：
 
