@@ -2,6 +2,20 @@
 
 ## 2026-04-06
 
+- 继续更新 `architecture/80`、`guides/52`、`philosophy/86`、`architecture/README`，把相邻深专题继续吸收 `source lattice / managed-only switches / durable assets vs transient authority / freshness gate / ghost-capability eviction`，并把 `82-84` 三篇的最新重点前置回架构专题入口
+- 继续更新 `architecture/83`、`philosophy/85`、`guides/100`，把治理线继续压到 `source` 是治理主键、`policySettings` 是 sovereign tier、resume 只该恢复 durable assets 而不该免费续租 transient authority
+- 继续更新 `architecture/82`、`architecture/84`、`guides/99`、`guides/101`、`guides/102` 与相关哲学页，把 Prompt 深线从 `request object` 再压到 `message lineage`，并把 anti-stale 继续扩到文件写入 freshness gate、PowerShell stale-cwd、WebFetch per-host、remote managed settings 与 MCP ghost capability 清理
+- 继续更新《提示词魔力来自运行时而非咒语》《真正成熟的治理，不是更会拦截，而是更会为扩张定价》《真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路》以及 `guides/99-101`、`philosophy/README`、`guides/README`，把深专题继续压到 `message lineage / source-first pricing / event stream + state writeback / later maintainer rejectability`
+- 继续更新 `guides/99-101` 与专题 README，把 builder-facing 审读模板从“对象链说明”继续压成更短的 fixed questions：Prompt 线追问 message lineage，治理线追问 authority source 与 host truth，源码质量线追问 event stream 与 state writeback 的分工
+- 继续更新《运行时契约、知识层与生态边界》《安全专题索引》《风控专题》《导航专题》，把治理前门继续压到“authority source 先收费，再谈动作 / 上下文 / 时间”，并明确 host 只消费 runtime 外化的 authority/status，不自己回放拼当前真相
+- 继续更新《运行时契约、知识层与生态边界》《导航专题》，把入口与导航进一步收薄：`07` 从轮次话术改回稳定前门，`navigation/README` 把深链统一收成 `46 -> 77 -> 102`，不再把每一级都摊平成根入口
+- 继续更新《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，把治理模板继续压实到“authority source 先收费，再谈动作 / 上下文 / 时间”，并明确 host 只能消费 runtime 外化的 authority/status，不能自己回放拼 mode、tool pool 与 pending action
+- 继续更新《导读》《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，把 `00` 从“二次索引 + 研究工法页”收回成真正的主线前言，只保留研究对象、三条最高阶判断、结构图必要性与第一判断顺序
+- 继续更新《设计哲学》《第一性原理与苏格拉底反思》《三张控制面总图：世界进入模型、扩张定价与防过去写坏现在》，把治理线正式压成 `authority object / role contract / reject path` 模板，固定到 `permission mode / trusted inputs / visible-set / externalization / continuation pricing`
+- 继续更新《设计哲学》《第一性原理与苏格拉底反思》，把 `UI transcript / protocol transcript / state writeback` 的真相分工前置到主线，并把 `display truth / protocol truth / handoff truth` 再压成共享 `source_uuid / origin / history` 的 message lineage 投影
+- 继续更新《设计哲学》《第一性原理与苏格拉底反思》，把 workflow 明确写成 `local_workflow / workflow_progress / independent transcript / worktree / cleanup semantics` 组成的后台对象，而不是命令变体或脚本皮肤
+- 继续更新《第一性原理与苏格拉底反思》，重写 `6.19-6.35` 中段自反区，修正错位编号与作者施工口吻，把宿主闭环、事件流 + 状态回写、显式失败、可见边界与前台真相面改成长期稳定的自校问题
+- 继续更新《源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界》《Services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口》《Tools 二级目录 Atlas：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界》《Commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界》，把二级 atlas 页从“怎么读/目录分组/推荐顺序”压成 authority、subset、danger surface 与 first reject path 协议
 - 继续更新《运行时契约、知识层与生态边界》《安全专题索引》《风控专题》《Services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口》，把 `liability evidence` 正式抬到同级对象，并把 observability / recovery evidence 压成统一扩张定价秩序里的结算层
 - 继续更新《源码目录级能力地图：commands、tools、services、状态与宿主平面》，把 `commands / tools / services` 三段继续从分组导览压成 authority、subset、danger surface 与 reject path 协议
 - 继续更新《设计哲学》《第一性原理与苏格拉底反思》，把后半高阶原则从结论列表继续压成 `authority object / bad solution / reject path / migration order` 模板，并把 41 条零散自校准则收成 8 张长期自校卡

@@ -8,6 +8,72 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `architecture/80 / guides/52 / philosophy/86 / architecture/README` 已继续吸收上一批相邻专题遗漏的对象链：
+  - `80` 现已更明确把治理实现写成 `source lattice -> managed-only switches -> typed decision -> visibility pricing -> decision window -> continuation requalification`。
+  - `52` 现已更明确把 builder 手册写成 `source` 是治理主键、resume 只恢复 durable assets、不续租 transient authority 的实现顺序。
+  - `86` 现已更明确把 anti-stale 的高阶判断继续落到 freshness gate、stale validator worldview、per-host authority 与 ghost capability / ghost auth 驱逐。
+  - `architecture/README` 现已把 `82-84` 的最新重心前置成稳定入口：`message lineage`、`source lattice`、`anti-stale specifics`。
+- 新的长期结论：
+  - 相邻深专题真正成熟时，不只要和主线同义，还要吸收主线最近新增的最硬对象链；否则会形成“主线已更新、深专题还停在旧一层”的漂移。
+  - 架构入口页最值钱的更新，不是再列更多编号，而是及时把最新的控制面对象写进 `README` 的一句话职责和推荐入口注释里。
+- `architecture/83 / philosophy/85 / guides/100` 已继续把治理线从“source-first pricing”压到“source 作为治理主键”：
+  - `83` 现已更明确把 `authority source` 写成实现主键，而不是 provenance 标签；action、visibility、externalization 与 continuation 都被写成 source-tagged rules 的后续消费。
+  - `85` 现已更明确把 `policySettings` 写成带 `first-source-wins + admin-trusted` 语义的 sovereign tier，而不是普通 merge layer。
+  - `100` 现已更明确把 `resume` 问题改写成“只恢复 durable assets，重新审查 transient authority”的 builder-facing 检查点。
+- 新的长期结论：
+  - 治理线继续压到底时，不该只说“authority source 先收费”，还应直接说“source 是治理主键；后面的 action/context/time 只是它派生出来的消费结果”。
+  - resume / continuation 真正成熟时，不会把旧 grant、旧 mode、旧可见集整包续租，而只恢复当前 authority chain 仍承认的 durable assets。
+- `architecture/82 / architecture/84 / guides/99 / guides/101 / guides/102 / philosophy/14` 已继续吸收并行 Agent 的硬证据：
+  - `82 / 14 / 99` 现已更明确把 Prompt 线的一号对象从单次 `request object` 再压到可显示、可协议化、可交接的 `message lineage`，并把 lineage kernel 写成 `parentUuid / message.id / tool_use_id` 三键协同。
+  - `84 / 101 / 102` 现已更明确把 anti-stale 从抽象原则压到具体机制：文件写入 freshness gate、PowerShell stale-cwd validator 降级、WebFetch per-host 重新取真、remote managed settings 危险增量确认、MCP ghost capability 清理。
+- 新的长期结论：
+  - Prompt 深专题真正压到底时，不再把 `request object` 当成跨轮真相核；跨 `display / protocol / handoff` 持续存活的一号对象应写成 `message lineage`。
+  - one writable present 真正成熟时，不只防 stale state，还要防 stale file snapshot、stale validator worldview、stale capability directory 与 stale credential cache。
+  - 公开镜像里的 adapter subset 判断，必须继续区分 “协议全集 / 当前入口子集 / 当前 host/domain/credential truth”，否则很容易把 ghost tools、redirect host 或 stale auth 写成当前真相。
+- `philosophy/14 / philosophy/85 / philosophy/87 / guides/99-101 / philosophy/README / guides/README` 已继续把深专题与 builder 模板吸收进最新对象链：
+  - `14` 现已更明确把 Prompt 魔力继续压到 `message lineage`，不再把 `display / protocol / handoff` 只写成三份文本的并列关系。
+  - `85` 现已更明确把治理写成 `authority source -> action/context/time` 的收费顺序，并把 host replay 认定为新的坏解法。
+  - `87` 现已更明确把源码质量里的 `authoritative surface` 扩到 `event stream / state writeback` 分工，不再只停留在 schema / registry / file seams。
+  - `99-101` 现已把 message lineage、authority source、host truth 与 `event stream / state writeback` 固定进 builder-facing 苏格拉底审读卡。
+  - `philosophy/README` 与 `guides/README` 现已更明确把 `84-87`、`99-102` 的职责写成稳定入口，不再只按编号段粗分。
+- 新的长期结论：
+  - Prompt 深专题真正成熟时，不只讲 `request object / role contract / cache boundary / handoff truth`，还必须显式讲 `message lineage` 与 projection consumer。
+  - 治理深专题真正成熟时，不只讲四类扩张收费，还必须显式讲 authority source 先于动作、可见性与 continuation。
+  - 源码质量深专题真正成熟时，不只讲 anti-stale 和 later maintainer，还必须显式区分 `event stream` 与 `state writeback`，否则 host 很容易长成第二真相面。
+- `07 / security/README / risk/README / navigation/README` 已继续把目录前门和治理前门收薄并压硬：
+  - `07` 现已把 `authority source` 抬进运行时契约前门，并把 `request truth / continuation asset / authority source / capability governance / liability evidence` 固定成五类权威入口。
+  - `07` 现已更明确把 host 写成 runtime authority/status 的消费者，而不是 mode、tool pool、pending action 或 context truth 的第二推断器。
+  - `security/README` 现已更明确把收费顺序写成“authority source 先收费，再谈动作 / 上下文 / 时间”，不再退回权限弹窗导览。
+  - `risk/README` 现已更明确把 signer、证据、恢复资格与 authority source 前置为风控前门，而不是自己重做状态机总图。
+  - `navigation/README` 现已把深层修复与 reopen 责任深链统一收口到 `46 -> 77 -> 102`，减少根入口再长成大路由表。
+- 新的长期结论：
+  - 运行时契约的前门真正成熟时，不只讲 `request truth / continuation asset / capability governance / liability evidence`，还必须显式交出 `authority source`。
+  - 安全与风控前门真正成熟时，不再主要回答“怎么拦”，而是先回答“谁有资格改边界、谁有资格签发恢复、谁只配消费外化状态”。
+  - 导航层真正成熟时，根入口只列稳定节点；深链必须有单一路由 owner，而不是每一级都抢首页入口位。
+- `03 / 06 / 09` 已继续把治理模板从“四类扩张收费”压到“authority source 先收费”：
+  - 现已更明确把 `settings sources` 抬进 authority object，同 `permission mode / trusted inputs / visible-set / externalization / continuation pricing` 并列。
+  - 现已更明确把 host 写成 runtime authority/status 的消费者，而不是自己回放消息去拼 `mode / tool pool / pending action / context truth`。
+- 新的长期结论：
+  - 治理秩序真正成熟时，不是先问“要不要拦”，而是先问“谁有资格改边界”；authority source 的收费先于动作、上下文与时间收费。
+  - 宿主成熟度真正高时，不再从事件流反推当前状态，而是消费 runtime 显式外化出来的 authority/status 真相。
+- `00 / 03 / 06 / 09` 已继续把正文去记忆化与主线模板化往前推进一层：
+  - `00` 现已从“二次索引 + 研究工法页”收回成真正的主线前言，不再重做正式阅读路径、主题分流与源码阅读脚本。
+  - `03 / 09` 现已把治理线继续压成 `authority object / role contract / reject path` 模板，固定到 `permission mode / trusted inputs / visible-set / externalization / continuation pricing`。
+  - `03 / 06` 现已更明确把 `UI transcript / protocol transcript / state writeback` 分成三层真相，并把 `display truth / protocol truth / handoff truth` 继续压成共享 `source_uuid / origin / history` 的 message lineage 投影。
+  - `03 / 06` 现已更明确把 workflow 写成 `local_workflow / workflow_progress / independent transcript / worktree / cleanup semantics` 组成的后台对象，而不是命令变体或脚本皮肤。
+  - `06` 现已重写 `6.19-6.35` 中段自反区，修正错位编号与作者施工口吻，把宿主闭环、事件流 + 状态回写、显式失败、可见边界与前台真相面改成长期稳定的自校问题。
+- 新的长期结论：
+  - `00` 真正合法保留的不是索引功能，而是主线前言功能；详细路由应回根 README / `navigation/README`，研究工法与进度应回 `docs/`。
+  - Prompt 魔力真正更难被抄走的，不只是 `request object / role contract / cache boundary / handoff truth` 四对象，还包括三种 truth 投影共享同一条 message lineage，而不是各自重写平行世界。
+  - 宿主成熟度真正高的标志，不是消息事件更多，而是宿主被明确要求同时消费 event stream 与 state writeback，不能靠回放消息自己猜当前状态。
+  - workflow 真正成熟时，不再被写成命令分支或脚本能力，而是被写成可实例化、可观测、可清理、可恢复的后台对象。
+- `navigation/35 / api/46 / api/47 / api/48` 已继续把二级 atlas 页从导览册压成协议页：
+  - `35` 现已更明确把三条 atlas 线收成 authority file、consumer subset、danger surface 与 reject path。
+  - `46` 现已更明确把 services 子系统改写成 authority / projection / danger / reject 模板，并前置 evidence object 原型。
+  - `47` 与 `48` 现已更明确把 tools / commands 子页从“目录成员 + 阅读顺序”压成 authority 协议和 reject 顺序。
+- 新的长期结论：
+  - 二级 atlas 页真正成熟时，不再教读者“如何参观目录”，而是直接逼读者回答 authority file、子集边界、危险改动面和第一条拒收入口。
+  - 推荐阅读顺序一旦还停在 atlas 正文里，atlas 就仍然是导览册；更成熟的正文应优先给 reject order，而不是 next-link。
 - `07 / security/README / risk/README / api/46-services` 已继续把统一定价入口从“入场秩序”压到“结算证据面”：
   - `07` 现已把 `liability evidence` 抬到和 `request truth / continuation asset / capability governance` 同级。
   - `security/README` 现已更明确把高体积对象常驻主 prompt 写成未定价的上下文写权与时间占权。

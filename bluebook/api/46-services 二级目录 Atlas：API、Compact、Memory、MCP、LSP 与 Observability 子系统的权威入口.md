@@ -8,20 +8,9 @@
 4. 哪些目录最容易被误读，从而把 Prompt、安全、恢复或治理写坏。
 5. 平台设计者该按什么顺序阅读 `services/`。
 
-## 0. 本地扫描与代表性锚点
+## 0. 代表性锚点与 authority ladder
 
-本地扫描（`2026-04-02`，源码镜像）：
-
-- `src/services/` 可见 `20` 个一级子目录
-- `src/services/` 根目录可见 `16` 个根文件
-- 文件数较高的目录包括：
-  - `mcp`：约 `23` 个文件
-  - `api`：约 `20` 个文件
-  - `compact`：约 `11` 个文件
-  - `analytics`：约 `9` 个文件
-  - `lsp`：约 `7` 个文件
-
-这些数字只用于定位热点，不构成成熟度评分。更稳的证据梯度应先看：
+更稳的证据梯度应先看：
 
 1. `contract truth`
 2. `registry truth`
@@ -42,18 +31,17 @@
 - `claude-code-source-code/src/services/analytics/index.ts:1-80`
 - `claude-code-source-code/src/services/tools/toolOrchestration.ts:19-80`
 
+这页不再先靠目录数量解释自己，而是先给一条 authority ladder：
+
+1. `api/sessionIngress`、`claude.ts`
+2. `compact/compact.ts`
+3. `SessionMemory/sessionMemory.ts`、`PromptSuggestion/promptSuggestion.ts`
+4. `mcp/config.ts`、`remoteManagedSettings`
+5. `analytics/index.ts`、`internalLogging.ts`
+
 ## 1. 先说结论
 
-`services/` 不是“剩余杂项”目录。
-
-更准确地说，它是统一扩张定价秩序落成对象层的地方，至少可以拆成六组：
-
-1. API / transport / retry 子系统
-2. compact / budget / context maintenance 子系统
-3. memory / suggestion / summary 子系统
-4. MCP / plugin / settings sync 子系统
-5. IDE / LSP / voice 等扩展能力子系统
-6. analytics / logging / notifier / tips 等观测与辅助子系统
+`services/` 不是“剩余杂项”目录，而是统一扩张定价秩序落成对象层的地方。
 
 这张 atlas 最关键的意义不是：
 
@@ -63,15 +51,12 @@
 
 - 不同子系统暴露了不同的权威入口、不同的消费者，以及不同的危险改动面
 
-也就是说，读 `services/` 的顺序首先是证据更硬不更硬，而不是目录拆得更细不更细。
+也就是说，读 `services/` 的顺序首先是证据更硬不更硬，而不是目录拆得更细不更细。每个子系统都至少要先回答四件事：
 
-如果再把入口判断压得更硬一点，`services/` 的每个子系统都至少要回答五个问题：
-
-1. 谁在这里宣布真相
-2. 哪些 consumer 只拿到子集
-3. 哪个改动面最危险
-4. 哪些 stale write / recovery object / projection 最容易在时间上撒谎
-5. future maintainer 如果不同意当前实现，应先沿哪条入口链拒收它
+1. authority file
+2. consumer subset / projection
+3. danger surface
+4. first reject path
 
 再往上收一层，`services/` 也不是模块清单，而是 runtime 对请求进入、上下文续存、继续资产、外部能力、桥接暴露与观测追责逐项收费的对象层：
 
@@ -81,214 +66,80 @@
 - `mcp` 与 `remoteManagedSettings` 守外部能力边界
 - `analytics / logging / recovery evidence` 守执行后的结算、追责与连续性重绑
 
+最值得先记住的 evidence object 原型至少有四个：
+
+1. append-chain transcript
+2. prompt / cache drift ledger
+3. diagnostic / internal logs
+4. signer / readback / recovery outputs
+
 如果不先看到这条主线，读者就会重新把 `services/` 误读成后台杂项集合。
 
 ## 2. API / Transport 子系统
 
-核心目录与文件：
-
-- `services/api/`
-- `services/api/claude.ts`
-- `services/api/sessionIngress.ts`
-- `services/api/client.ts`
-- `services/api/promptCacheBreakDetection.ts`
-
-主要职责：
-
-1. 真正组装并发出模型请求
-2. 维护 usage、retry、errors 与 session ingress
-3. 在请求前后记录 prompt/cache 漂移
-
-主要消费者：
-
-- `query.ts`
-- `QueryEngine.ts`
-- 远程恢复与 host writeback 路径
-
-最该当权威入口看的文件：
-
-- `claude.ts`
-- `sessionIngress.ts`
-
-最容易误读的边界：
-
-1. `sessionIngress.ts` 不是普通持久化 helper，而是 append-chain 恢复对象。
-2. `promptCacheBreakDetection.ts` 不是 debug 插件，而是 prompt 漂移账本。
-3. `client.ts` 不是 public API 总入口，真正的行为合同仍在 `claude.ts`。
+- authority file：
+  - `claude.ts`、`sessionIngress.ts`
+- consumer subset / projection：
+  - `client.ts`、远程恢复路径、host writeback 只拿到部分请求与恢复投影
+- danger surface：
+  - append-chain 恢复对象、prompt/cache 漂移账本、retry / ingress 乱序最容易把请求真相写坏
+- first reject path：
+  - 一旦请求或恢复行为开始可疑，先回 `claude.ts` 与 `sessionIngress.ts`，不要先在 client shell 或 host projection 层补丁
 
 ## 3. Compact / Budget / Context Maintenance 子系统
 
-核心目录与文件：
-
-- `services/compact/`
-- `services/tokenEstimation.ts`
-- `services/claudeAiLimits.ts`
-- `services/policyLimits/`
-- `services/rateLimitMessages.ts`
-
-主要职责：
-
-1. 长会话 compact 与 microcompact
-2. compact 前后 cache / summary / cleanup 的对象维护
-3. budget、limit、rate-limit 相关解释
-
-主要消费者：
-
-- `QueryEngine.ts`
-- `query.ts`
-- Session memory / memory extraction 路径
-
-最该当权威入口看的文件：
-
-- `compact/compact.ts`
-- `compact/postCompactCleanup.ts`
-
-最容易误读的边界：
-
-1. `compact` 不是摘要功能，而是 continuation 维护子系统。
-2. `policyLimits` 不是产品文案配置，而是安全 / 成本边界的一部分。
-3. `claudeAiLimits.ts` 与 `rateLimitMessages.ts` 解释的是消费者可见约束，不是模型内部预算真相。
+- authority file：
+  - `compact/compact.ts`、`compact/postCompactCleanup.ts`
+- consumer subset / projection：
+  - `claudeAiLimits.ts`、`rateLimitMessages.ts` 更多是消费者可见投影，不是 budget authority
+- danger surface：
+  - compact 后 cleanup、policy limit、continuation pricing 一旦失真，就会同时破坏上下文与时间边界
+- first reject path：
+  - 一旦 compact 看起来像普通摘要，先回 `compact.ts` 与 post-compact cleanup，而不是先改 UI summary
 
 ## 4. Memory / Suggestion / Summary 子系统
 
-核心目录与文件：
-
-- `services/SessionMemory/`
-- `services/PromptSuggestion/`
-- `services/AgentSummary/`
-- `services/extractMemories/`
-- `services/teamMemorySync/`
-- `services/toolUseSummary/`
-- `services/autoDream/`
-
-主要职责：
-
-1. 压缩长期接手连续性
-2. 复用 cache-safe prefix 生成 suggestion / memory
-3. 把主线程状态沉淀成后续可继续行动的最小语义体
-
-主要消费者：
-
-- REPL 主线程
-- compact 之后的继续路径
-- team / subagent / suggestion 路径
-
-最该当权威入口看的文件：
-
-- `SessionMemory/sessionMemory.ts`
-- `PromptSuggestion/promptSuggestion.ts`
-
-最容易误读的边界：
-
-1. Session memory 不是聊天纪要，而是 compact 之后的继续资产。
-2. Prompt suggestion 不是 UI 小优化，而是 shared prefix 的旁路消费者。
-3. `AgentSummary` / `toolUseSummary` 更接近 continuation 投影，而不是额外智能层。
+- authority file：
+  - `SessionMemory/sessionMemory.ts`、`PromptSuggestion/promptSuggestion.ts`
+- consumer subset / projection：
+  - `AgentSummary`、`toolUseSummary`、team 记忆同步更像 continuation 投影
+- danger surface：
+  - 把聊天纪要误当继续资产、把 UI suggestion 误当 authority，最容易让 handoff truth 漂移
+- first reject path：
+  - 一旦 compact 后世界变形，先回 `SessionMemory` 与 `PromptSuggestion` 的 authority 文件重建 continuation
 
 ## 5. MCP / Plugin / Settings Sync 子系统
 
-核心目录与文件：
-
-- `services/mcp/`
-- `services/plugins/`
-- `services/oauth/`
-- `services/remoteManagedSettings/`
-- `services/settingsSync/`
-- `services/mcpServerApproval.tsx`
-
-主要职责：
-
-1. 装配外部能力边界
-2. 处理 scope、policy、allowlist、approval 与连接管理
-3. 管理 enterprise / user / local / project 多层真相
-
-主要消费者：
-
-- `commands/mcp`
-- `commands/plugin`
-- host / bridge / channel 路径
-
-最该当权威入口看的文件：
-
-- `mcp/config.ts`
-- `mcp/MCPConnectionManager.tsx`
-- `plugins/PluginInstallationManager.ts`
-
-最容易误读的边界：
-
-1. `mcp/config.ts` 是多 scope 合并与校验控制面，不只是 JSON 解析器。
-2. `remoteManagedSettings/` 是输入边界治理，而不是同步便利层。
-3. `plugins/` 是安装/生命周期/marketplace 平面，不等于 runtime tool pool 真相本身。
+- authority file：
+  - `mcp/config.ts`、`MCPConnectionManager.tsx`、`PluginInstallationManager.ts`
+- consumer subset / projection：
+  - `commands/mcp`、`commands/plugin`、host / bridge / channel 路径只是控制壳层
+- danger surface：
+  - scope 合并、approval、policy、settings sync 与 remote managed settings 一旦漂移，就会直接改写外部能力边界
+- first reject path：
+  - 一旦外部能力看起来像默认主路径，先回 `mcp/config.ts` 和插件生命周期 authority，而不是先在 command shell 改词
 
 ## 6. IDE / LSP / Voice / Docs 子系统
 
-核心目录与文件：
+- authority file：
+  - `lsp/LSPServerManager.ts`、`voice.ts`
+- consumer subset / projection：
+  - `LSPTool`、mobile / desktop / voice 前台只拿桥接投影
+- danger surface：
+  - 把 capability bridge 误写成 UI 装饰，最容易让 host / tool / service 边界一起失真
+- first reject path：
+  - 一旦 `lsp`、voice 或 docs 看起来像独立插件层，先回 `LSPServerManager` 与 `voice.ts`
 
-- `services/lsp/`
-- `services/voice.ts`
-- `services/voiceStreamSTT.ts`
-- `services/voiceKeyterms.ts`
-- `services/MagicDocs/`
+## 7. Observability / Logging / Recovery Evidence 子系统
 
-主要职责：
-
-1. IDE / language intelligence
-2. voice 输入与语音流
-3. 文档辅助与说明生成
-
-主要消费者：
-
-- `LSPTool`
-- voice / mobile / desktop 前台路径
-
-最该当权威入口看的文件：
-
-- `lsp/LSPServerManager.ts`
-- `voice.ts`
-
-最容易误读的边界：
-
-1. `lsp/` 不是普通插件目录，而是 tool / service 之间的桥。
-2. `voice*` 文件是 capability service，不是 UI 装饰。
-3. `MagicDocs` 更接近 prompt/document service，而不是 markdown helper。
-
-## 7. Observability / Logging / User Assist 子系统
-
-核心目录与文件：
-
-- `services/analytics/`
-- `services/diagnosticTracking.ts`
-- `services/internalLogging.ts`
-- `services/notifier.ts`
-- `services/tips/`
-- `services/preventSleep.ts`
-
-主要职责：
-
-1. 记录 growth、performance 与 runtime 事件
-2. 处理内部日志、通知与提示
-3. 为长期运行保留观测与辅助面
-
-主要消费者：
-
-- REPL 前台
-- debug / telemetry / feature flag 路径
-
-最该当权威入口看的文件：
-
-- `analytics/index.ts`
-- `internalLogging.ts`
-
-最容易误读的边界：
-
-1. analytics 不是可有可无的外层统计，而是很多治理开关与恢复签发的结算观察面。
-2. notifier / tips 是用户辅助子系统，不是产品 copy 存放区。
-3. `preventSleep.ts` 这类文件虽小，但属于长生命周期运行维护面。
-
-如果把这层再压硬一点，它真正保护的是：
-
-- 哪些扩张已经发生过
-- 哪些责任已经被正式记账
-- 哪些恢复动作已经拿到足够证据去重新绑定执行连续性
+- authority file：
+  - `analytics/index.ts`、`internalLogging.ts`
+- consumer subset / projection：
+  - notifier、tips、部分前台通知只拿用户可见辅助投影
+- danger surface：
+  - 观察面、恢复证据面与 signer 结算一旦缺失，系统就会出现执行后无责扩张与无法回绑连续性
+- first reject path：
+  - 一旦观测又被写成“附属统计”，先回 `analytics`、`internalLogging` 与 recovery evidence 这一侧
 
 ## 8. Services 里的特殊目录：`services/tools`
 
@@ -311,15 +162,14 @@
 
 - definition plane / runtime plane 分离
 
-## 9. 推荐阅读顺序
+## 9. Reject 顺序
 
-更稳的 `services/` 阅读顺序是：
+更稳的 `services/` reject 顺序是：
 
-1. `api/`：先知道请求、retry、ingress 与 drift 记录怎么收口
-2. `compact/`：再知道 continuation 为什么能维持
-3. `SessionMemory` / `PromptSuggestion`：再知道谁在消费 shared prefix
-4. `mcp/` / `plugins/`：再知道外部能力如何接入与被治理
-5. `services/tools/`：最后看 tool runtime 真正怎么跑
+1. 先回 `api / compact`
+2. 再回 `memory`
+3. 再回 `mcp / plugins / managed settings`
+4. 最后才看 `services/tools` 与观测投影层
 
 ## 10. 一句话总结
 

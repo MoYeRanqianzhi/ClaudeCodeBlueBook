@@ -6,6 +6,20 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/claude-code-risk-analysis`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮相邻深专题补强动作: 已继续更新 `architecture/80 / guides/52 / philosophy/86 / architecture/README`，把 `source lattice / managed-only switches / durable assets vs transient authority / freshness gate / ghost-capability eviction` 补回相邻主题页，并把 `82-84` 的最新对象链前置回架构专题入口。
+- 本轮治理主键再压缩动作: 已继续更新 `architecture/83 / philosophy/85 / guides/100`，把治理线从“authority source 先收费”进一步压到“source 是治理主键，action/visibility/continuation 都是 source-tagged 消费结果”，并把 `policySettings` 与 resume/durable-assets 问题前置到深专题。
+- 本轮 anti-stale 再下钻动作: 已继续更新 `architecture/84 / guides/101 / guides/102`，把 anti-stale 从状态机与恢复层继续压到文件写入 freshness gate、PowerShell stale-cwd validator 降级、WebFetch per-host 重取真相、remote managed settings 危险增量确认与 MCP ghost capability 清理。
+- 本轮 Prompt lineage 再压缩动作: 已继续更新 `architecture/82 / philosophy/14 / guides/99`，把 Prompt 深线从单次 `request object` 进一步压到 `message lineage`，并把其内核明确写成 `parentUuid / message.id / tool_use_id` 三键协同。
+- 本轮深专题吸收动作: 已继续更新 `philosophy/14 / 85 / 87` 与 `guides/99-101`，把 Prompt 深线继续压到 `message lineage`，把治理深线继续压到 `authority source` 优先顺序，把源码质量深线继续压到 `event stream + state writeback` 的 present-truth 分工。
+- 本轮专题入口收口动作: 已继续更新 `philosophy/README` 与 `guides/README`，把 `84-87`、`99-102` 的职责写得更硬，减少只按编号段粗分造成的入口含混。
+- 本轮治理前门收薄动作: 已继续更新 `07 / security/README / risk/README`，把统一定价前门继续压到“authority source 先收费，再谈动作 / 上下文 / 时间”，并明确 host 只消费 runtime 外化的 authority/status。
+- 本轮导航收口动作: 已继续更新 `navigation/README`，把深层修复与 reopen 责任深链统一收口到 `46 -> 77 -> 102`，不再把每一级都摊平成根入口。
+- 本轮治理再压缩动作: 已继续更新 `03 / 06 / 09`，把统一定价从“四类扩张收费”进一步压到“authority source 先收费，再谈动作 / 上下文 / 时间”，并明确 host 只能消费 runtime 外化的 authority/status，不能自己回放拼 mode、tool pool 与 pending action。
+- 本轮前言收口动作: 已继续更新 `00-导读`，把它从“二次索引 + 研究工法页”收回成真正的主线前言，只保留研究对象、三条最高阶判断、结构图必要性与第一判断顺序。
+- 本轮治理模板硬化动作: 已继续更新 `03 / 06 / 09`，把治理线正式压成 `authority object / role contract / reject path` 模板，固定到 `permission mode / trusted inputs / visible-set / externalization / continuation pricing`。
+- 本轮可见真相硬化动作: 已继续更新 `03 / 06`，把 `UI transcript / protocol transcript / state writeback` 分成三层真相，并把 `display truth / protocol truth / handoff truth` 再压成共享 `source_uuid / origin / history` 的 message lineage 投影。
+- 本轮 workflow 对象化动作: 已继续更新 `03 / 06`，把 workflow 明确写成 `local_workflow / workflow_progress / independent transcript / worktree / cleanup semantics` 组成的后台对象，不再主要按命令变体或脚本能力理解。
+- 本轮宿主闭环收束动作: 已继续更新 `06`，重写 `6.19-6.35` 中段自反区，把 host-integrated runtime、协议全集 vs 宿主子集、显式失败、event stream + state writeback 与用户可见真相层改成长期稳定的自校问题。
 - 本轮目录治理重点: 继续把 `bluebook/` 正文中的开发记忆迁回 `docs/`，当前已完成 `casebooks/` 的 `改写路径` 整体迁出与 `navigation/` 入口语言稳态化。
 - 本轮新增研究收束: 已把并行 Agent 的三条独立研究线压成 `architecture/82-84` 三张控制面图，分别覆盖请求装配、反扩张治理与权威面/反僵尸结构。
 - 本轮主线回收动作: 已继续把 `architecture/82-84` 上提为 `bluebook/09` 与 `philosophy/84-86`，避免高阶结论只停留在深层专题。
@@ -30,6 +44,7 @@
 - 本轮主线自校卡硬化动作: 已继续更新 `03` 与 `06`，把高阶原则进一步补成 `authority object / bad solution / reject path / migration order` 四格，并把 41 条零散自校准则收成 8 张长期自校卡。
 - 本轮 atlas 中层协议化动作: 已继续更新 `api/30`，把 `commands / tools / services` 三段从目录分组说明继续压成 authority、subset、danger surface 与 reject path 的固定协议。
 - 本轮结算证据面前推动作: 已继续更新 `07`、`security/README`、`risk/README` 与 `api/46-services`，把 `liability evidence / observability / recovery evidence` 正式抬到统一扩张定价秩序里的同级对象层。
+- 本轮二级 atlas 去导览化动作: 已继续更新 `navigation/35`、`api/46`、`api/47` 与 `api/48`，把“怎么读 / 分成几组 / 推荐阅读顺序”继续压成 authority、subset、danger surface 与 first reject path 协议。
 - 本轮旧框架降级动作: 已继续更新 `00`、`01`、`05` 与 `api/30`，把“五层拆解法 / 运行链路导览 / 目录级能力大全 / 快速统计”都明确降成辅助检索与热点定位材料，不再让它们先于三条高阶判断出场。
 - 本轮主线制度化动作: 已继续更新 `03`、`06`、`09`，把“设计哲学 / 第一性原理 / 三张控制面图”从高级观察继续收束为主线宪法、自我约束与读者固定判断顺序。
 - 本轮目录硬化动作: 已继续更新 `README`、`00-导读`、`00-总览`、`00-蓝皮书总览`、`navigation/03` 与 `09`，把 `09` 真正前置到一级阅读路径、去掉推荐链裸编号短写，并把兼容页进一步收回为跳转页。
@@ -274,6 +289,19 @@
 - `bluebook/security/README.md`
 - `bluebook/risk/README.md`
 - `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`
+
+### A114. 二级 atlas 页真正成熟时，会把“推荐阅读顺序”退回 reject order
+
+- `46 / 47 / 48 / 35` 这类页如果继续主要靠“分成几组”“该按什么顺序看”来组织自己，本质上仍然是在发导览单，而不是在给 later maintainer 提供 atlas lint。
+- 更稳的写法是：每条线先给 authority file，再给 consumer subset，再给 danger surface，最后给 first reject path；只有这样，二级 atlas 才开始真正服务排错、拒收与重构。
+- 这也说明 atlas 页的成熟标准已经变了：它不该再教你“接下来去看哪一页”，而应先教你“这一层开始撒谎时，第一步该回哪里拒收”。
+
+证据:
+
+- `bluebook/navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md`
+- `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`
+- `bluebook/api/47-tools 二级目录 Atlas：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md`
+- `bluebook/api/48-commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界.md`
 
 ### A100. 设计内涵继续深化后，最值钱的不再是更多高阶短句，而是把高阶短句压成可排查的对象
 

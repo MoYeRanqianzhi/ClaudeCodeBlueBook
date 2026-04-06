@@ -21,6 +21,11 @@
 - `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
 - `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
 - `claude-code-source-code/src/utils/task/framework.ts:158-269`
+- `claude-code-source-code/src/tools/FileEditTool/FileEditTool.ts:427-519`
+- `claude-code-source-code/src/tools/FileWriteTool/FileWriteTool.ts:250-331`
+- `claude-code-source-code/src/tools/PowerShellTool/pathValidation.ts:1515-1614`
+- `claude-code-source-code/src/services/remoteManagedSettings/securityCheck.tsx:15-69`
+- `claude-code-source-code/src/services/mcp/utils.ts:171-200`
 - `../architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md`
 - `../philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`
 
@@ -65,7 +70,7 @@
 
 判断标准：
 
-- 只要跨 `await`、跨 reconnect、跨 resume 之后旧对象仍可能回写 fresh state，anti-zombie 还没真正成立。
+- 只要跨 `await`、跨 reconnect、跨 resume 之后旧对象仍可能回写 fresh state，或者 write path 在 freshness check 与落盘之间仍有可漂移窗口，anti-zombie 还没真正成立。
 
 ### 2.4 compile-time gate、runtime gate 与 artifact surface 是否已经分层
 
@@ -83,7 +88,7 @@
 
 判断标准：
 
-- 如果外围层也能偷偷声明状态、改写身份或重放过时头部，结构先进性就已经被外围协议偷走。
+- 如果外围层也能偷偷声明状态、改写身份、重放过时头部，或者把 event stream 误当 present truth，结构先进性就已经被外围协议偷走。
 
 ### 2.7 新 feature 进来时，是哪个不变量在吸收增长
 
@@ -107,7 +112,7 @@
 
 1. 先回 `../philosophy/86` 与 `../architecture/84`，判断自己破坏的是 single-writer surface、恢复资产边界、anti-zombie 约束还是 release shaping。
 2. 再回 `32`，用旧一层源码先进性审读模板确认是权威面、恢复资产、未来维护者消费者还是 transport shell 先失真。
-3. 再检查 `QueryGuard`、`sessionIngress`、`WorkerStateUploader`、`bridgePointer` 与 task framework 的 present-state 保护条件。
+3. 再检查 `QueryGuard`、`sessionIngress`、`WorkerStateUploader`、`bridgePointer`、`FileEdit / FileWrite` freshness gate、PowerShell validator 与 MCP stale-capability 清理条件。
 4. 最后才决定是否重构目录；多数时候，先修写入权与时态保护，比先修分层外观更重要。
 
 ## 5. 审读记录卡
@@ -119,9 +124,11 @@ recovery asset 是否非主权:
 anti-zombie invariant 是否成立:
 compile/runtime/artifact 三层边界是否分层:
 later maintainer 是否能直接识别危险改动面:
+event stream / state writeback 是否分层:
+fresh-read write gate 是否成立:
 当前最像哪类失真:
 - multi-writer truth / recovery usurpation / stale overwrite / boundary conflation / release-surface leak
-下一步该修的是:
+优先回修对象:
 - authority surface / recovery asset contract / anti-zombie guard / boundary split / release shaping
 ```
 
@@ -133,8 +140,10 @@ later maintainer 是否能直接识别危险改动面:
 2. 如果系统开始说谎，我能否点名哪条 authority surface 出了问题。
 3. 哪些恢复资产被允许找真相，但不被允许宣布真相。
 4. 旧对象是不是已经被正式剥夺写回现在的能力。
-5. later maintainer 能不能不问作者就看出哪里最危险。
-6. 如果删掉漂亮目录图，这套结构先进性还剩下什么。
+5. 写入边界是不是要求 fresh-read 才能写，还是旧快照仍能越权落盘。
+6. 我现在读到的是时间线，还是当前真相；两者有没有被错误混成一层。
+7. later maintainer 能不能不问作者就看出哪里最危险。
+8. 如果删掉漂亮目录图，这套结构先进性还剩下什么。
 
 ## 7. 一句话总结
 

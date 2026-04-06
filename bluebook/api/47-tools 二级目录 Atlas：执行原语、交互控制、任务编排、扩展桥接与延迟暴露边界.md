@@ -8,17 +8,7 @@
 4. 哪些工具目录最容易被误读，从而把安全、token 或协作写坏。
 5. 平台设计者该按什么顺序阅读 `tools/`。
 
-## 0. 本地扫描与代表性锚点
-
-本地扫描（`2026-04-02`，源码镜像）：
-
-- `src/tools/` 可见 `42` 个一级子目录
-- `src/tools/` 根目录可见 `1` 个根文件
-- 文件数较高的目录包括：
-  - `AgentTool`：约 `20` 个文件
-  - `BashTool`：约 `18` 个文件
-  - `PowerShellTool`：约 `14` 个文件
-  - `plugin` 不在这里，说明插件生命周期与工具定义被刻意分开
+## 0. 代表性锚点与 authority ladder
 
 代表性源码锚点：
 
@@ -30,18 +20,17 @@
 - `claude-code-source-code/src/tools/REPLTool/primitiveTools.ts:1-120`
 - `claude-code-source-code/src/tools/MCPTool/MCPTool.ts:1-120`
 
+这页不再先靠文件数解释自己，而是先给一条 authority ladder：
+
+1. `Tool.ts`
+2. `tools.ts`
+3. `ToolSearchTool`
+4. `AgentTool / Task*`
+5. `MCPTool / SkillTool / LSPTool`
+
 ## 1. 先说结论
 
-`tools/` 不是“很多模型函数”目录。
-
-更准确地说，它是 Claude Code 的动作原语平面，至少可以拆成六组：
-
-1. 工作区与 shell 执行原语
-2. 搜索、检索与外部信息原语
-3. 认知控制与交互原语
-4. 任务、团队与编排原语
-5. 扩展、资源与桥接原语
-6. 环境自动化与内部测试原语
+`tools/` 不是“很多模型函数”目录，而是 Claude Code 的动作原语平面。
 
 这张 atlas 最关键的意义不是：
 
@@ -74,158 +63,69 @@
 
 ## 3. 工作区与 Shell 执行原语
 
-核心目录：
-
-- `BashTool/`
-- `PowerShellTool/`
-- `FileReadTool/`
-- `FileEditTool/`
-- `FileWriteTool/`
-- `NotebookEditTool/`
-
-主要职责：
-
-1. 直接操作工作区
-2. 提供 shell / file / notebook 原语
-3. 在工具级实现 path validation、mode validation、sandbox 与 destructive warnings
-
-主要消费者：
-
-- 主线程 query
-- REPL mode 内部 primitive VM
-
-最容易误读的边界：
-
-1. `BashTool` / `PowerShellTool` 不是同类小包装，而是各自带完整安全与模式语义。
-2. `FileRead/Edit/Write` 不是简单 CRUD，它们是 permission-aware tool surface。
-3. REPL mode 开启时，这些 primitive 可能被 `REPLTool` 隐藏成内部能力，而非对模型直接暴露。
+- authority file：
+  - `BashTool`、`PowerShellTool`、`FileRead/Edit/Write`
+- consumer subset：
+  - REPL primitive VM、mode-specific 隐藏工具只是特殊子集
+- danger surface：
+  - path validation、mode validation、sandbox 与 destructive warnings 一旦失真，会直接破坏动作边界
+- first reject path：
+  - 一旦工作区语义开始漂移，先回各原语 authority 文件，不先改 UI 壳层
 
 ## 4. 搜索、检索与外部信息原语
 
-核心目录：
-
-- `GlobTool/`
-- `GrepTool/`
-- `WebFetchTool/`
-- `WebSearchTool/`
-- `ToolSearchTool/`
-
-主要职责：
-
-1. 目录 / 文件 / 文本搜索
-2. web 获取与 web 搜索
-3. 对 deferred tools 做检索与显式选择
-
-最关键的特殊工具：
-
-- `ToolSearchTool`
-
-因为它说明：
-
-- Claude Code 并不要求模型一开始就看见所有工具
-
-而是允许：
-
-- 先通过 ToolSearch 找到 deferred tools，再决定暴露什么
-
-最容易误读的边界：
-
-1. `ToolSearchTool` 不是普通搜索工具，而是工具可见性控制面的组成部分。
-2. `WebFetch` / `WebSearch` 也受模式、预算与 host 能力影响，不是永远等价公开能力。
-3. embedded search tools 存在时，`Glob/Grep` 甚至可能从 built-in 列表中被裁掉。
+- authority file：
+  - `ToolSearchTool`、`GlobTool`、`GrepTool`、`WebFetchTool`、`WebSearchTool`
+- consumer subset：
+  - deferred tools、embedded search、host-specific web 能力都只是可见性子集
+- danger surface：
+  - 把搜索工具误写成永远主路径，会直接写坏 deferred visibility 与能力定价
+- first reject path：
+  - 一旦模型似乎一开始就“知道所有工具”，先回 `ToolSearchTool` 与 visible-set 裁切
 
 ## 5. 认知控制与交互原语
 
-核心目录：
-
-- `TodoWriteTool/`
-- `AskUserQuestionTool/`
-- `BriefTool/`
-- `ConfigTool/`
-- `EnterPlanModeTool/`
-- `ExitPlanModeTool/`
-- `EnterWorktreeTool/`
-- `ExitWorktreeTool/`
-
-主要职责：
-
-1. 让模型显式请求用户输入或切换计划模式
-2. 让模型进入新的对象边界，如 worktree / plan
-3. 把原本容易写成 prompt 技巧的能力收口成正式工具
-
-最容易误读的边界：
-
-1. 这组工具不是“交互体验小功能”，而是对象升级与治理控制面。
-2. `ConfigTool` 并不是总可见；它还受用户类型和 mode 影响。
-3. `Enter/ExitPlanMode` 与 `Enter/ExitWorktree` 更接近对象升级原语，而不是 UI 快捷操作。
+- authority file：
+  - `TodoWriteTool`、`AskUserQuestionTool`、`ConfigTool`、`Enter/ExitPlanModeTool`、`Enter/ExitWorktreeTool`
+- consumer subset：
+  - 用户类型、mode 与对象边界决定当前哪些控制原语可见
+- danger surface：
+  - 把对象升级原语误写成体验小功能，会直接写坏治理控制面
+- first reject path：
+  - 一旦 plan / worktree / ask-user 开始像 UI 快捷操作，先回这些 tool 的 authority 文件
 
 ## 6. 任务、团队与编排原语
 
-核心目录：
-
-- `AgentTool/`
-- `SendMessageTool/`
-- `TaskCreate/Get/List/Update/Stop/OutputTool/`
-- `TeamCreateTool/`
-- `TeamDeleteTool/`
-
-主要职责：
-
-1. 生成 subagent / fork / resume 语义
-2. 把 task 当成正式对象，而不是附属输出
-3. 支持 team / swarm / multi-agent 协作
-
-最容易误读的边界：
-
-1. `AgentTool` 不是“多开几个线程”，而是完整的任务对象与恢复语义。
-2. task 族工具只有在 feature / mode 打开时才出现，说明它们也是 consumer subset。
-3. `SendMessageTool` 是任务间控制面，不是普通聊天能力。
+- authority file：
+  - `AgentTool`、`Task*`、`Team*`、`SendMessageTool`
+- consumer subset：
+  - feature / mode / host 决定 task、team、worker 细节是否进入当前工具池
+- danger surface：
+  - 把对象化任务语义退回成“多开几个线程”，最容易破坏恢复与协作边界
+- first reject path：
+  - 一旦多 Agent 行为开始像线程技巧，先回 `AgentTool` 与 task 族 authority 文件
 
 ## 7. 扩展、资源与桥接原语
 
-核心目录：
-
-- `MCPTool/`
-- `ListMcpResourcesTool/`
-- `ReadMcpResourceTool/`
-- `McpAuthTool/`
-- `LSPTool/`
-- `SkillTool/`
-
-主要职责：
-
-1. 访问外部 MCP 服务器与资源
-2. 访问 LSP / language intelligence
-3. 调用本地 / bundled / marketplace skill
-
-最容易误读的边界：
-
-1. MCP tool 存在，不等于当前 host / scope / policy 一定支持。
-2. `SkillTool` 不是简单命令别名，它会把 prompt artifact 与权限附带进来。
-3. `LSPTool` 的存在仍然受 feature 和 host 配置影响，不是默认主路径。
+- authority file：
+  - `MCPTool`、`McpAuthTool`、`SkillTool`、`LSPTool`
+- consumer subset：
+  - host、scope、policy、feature 决定扩展桥接是否进入当前世界
+- danger surface：
+  - 把 bridge tool 误当默认主路径，会直接写坏 capability governance
+- first reject path：
+  - 一旦扩展能力看起来像无条件公开面，先回这些 bridge tool 的 authority 文件与 visible-set 裁切
 
 ## 8. 环境自动化与内部测试原语
 
-核心目录：
-
-- `RemoteTriggerTool/`
-- `ScheduleCronTool/`
-- `SleepTool/`
-- `SyntheticOutputTool/`
-- `testing/TestingPermissionTool.tsx`
-- `shared/`
-
-主要职责：
-
-1. 远程触发、计划调度、等待
-2. 生成合成输出或测试权限路径
-3. 放置工具间共享逻辑
-
-最容易误读的边界：
-
-1. `testing/` 明确是内部测试 surface，不是正式公开工具面。
-2. `shared/` 不是正式工具，而是跨工具辅助层。
-3. `SyntheticOutputTool` 等内部工具的存在，不等于产品公开承诺。
+- authority file：
+  - `RemoteTriggerTool`、`ScheduleCronTool`、`SleepTool`
+- consumer subset：
+  - `testing/`、`SyntheticOutputTool`、`shared/` 只构成内部或辅助子集
+- danger surface：
+  - 把内部测试面误写成正式公开工具面，最容易制造假承诺
+- first reject path：
+  - 一旦环境自动化开始看起来像默认产品面，先回 visible-set 与 internal-only 边界
 
 ## 9. Tools 的四个治理信号
 
@@ -242,15 +142,14 @@
 
 也是 Claude Code 安全与省 token 设计的重要来源。
 
-## 10. 推荐阅读顺序
+## 10. Reject 顺序
 
-更稳的 `tools/` 阅读顺序是：
+更稳的 `tools/` reject 顺序是：
 
-1. `tools.ts`：先看真实工具池怎样被装配
-2. `BashTool` / `File*Tool`：再看执行原语
-3. `ToolSearchTool`：再看 deferred visibility
-4. `AgentTool` / task 族：再看多 agent 与对象升级
-5. `MCPTool` / `SkillTool` / `LSPTool`：最后看扩展桥接
+1. 先回 `Tool.ts / tools.ts`
+2. 再回 deferred visibility 与 execution 原语
+3. 再回 task / agent / team authority
+4. 最后才看扩展桥接和环境自动化子集
 
 ## 11. 一句话总结
 

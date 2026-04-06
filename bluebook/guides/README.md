@@ -4,7 +4,7 @@
 
 还要先记一句：
 
-- `guides/99-102` 负责把 `09` 的三条控制面判断落成 builder-facing 审读与证据方法，不再重新定义三条母线本身
+- `guides/99-102` 负责把 `09` 的三条控制面判断落成 builder-facing 审读与证据方法；它们现在分别更明确覆盖 `message lineage`、`source-first pricing`、`one writable present` 与公开镜像证据分级，不再重新定义三条母线本身
 
 ## 目录分层
 
@@ -25,6 +25,10 @@
 - [08-如何根据预算、阻塞与风险选择session、task、worktree与compact](08-如何根据预算、阻塞与风险选择session、task、worktree与compact.md)
 - `21-32`: 共享前缀、Prompt 审读与治理顺序模板
 - `99-102`: 三张控制面图对应的高阶审读模板与公开镜像证据分级方法
+- 想直接抓 Prompt 魔力的 builder 审读模板：从 `99`
+- 想直接抓 source-first pricing 的 builder 审读模板：从 `100`
+- 想直接抓 anti-stale / one writable present 的 builder 审读模板：从 `101`
+- 想直接抓公开镜像源码质量分级方法：从 `102`
 
 ## 使用方式
 

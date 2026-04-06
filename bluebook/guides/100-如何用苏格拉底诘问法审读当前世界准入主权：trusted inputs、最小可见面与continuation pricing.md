@@ -5,7 +5,7 @@
 它主要回答五个问题：
 
 1. 怎样避免把治理重新写回“更严的拦截器”。
-2. 怎样按固定顺序审读 `trusted inputs`、`typed ask arbitration`、`deferred visibility`、`externalization` 与 `continuation pricing`。
+2. 怎样按固定顺序审读 `authority source`、`typed ask arbitration`、`deferred visibility`、`externalization` 与 `continuation pricing`。
 3. 怎样判断一个 runtime 是否真的把“当前世界的准入主权”保留在 runtime，而不是外包给模型或低信任输入。
 4. 怎样识别那些看起来更保守、实际更脆的坏改写。
 5. 怎样用苏格拉底式追问避免把这份模板重新写成设置页说明书。
@@ -27,6 +27,7 @@
 这些锚点共同说明：
 
 - 安全设计与省 Token 设计真正共享的是“当前世界的准入主权”，而不是同一组 UI 或同一个预算器名字。
+- 更硬一点说，`authority source` 是实现主键；ask、visibility、externalization 与 continuation 都只是 source-tagged rules 的后续消费结果。
 
 ## 1. 第一性原理
 
@@ -41,9 +42,10 @@
 所以更高阶的审读顺序，不该从 dialog 开始，而应从：
 
 1. 谁能扩边界
-2. 哪些能力当前可见
-3. 哪些结果值得继续占据主席位
-4. 这轮继续是否仍有决策增益
+2. 哪些动作此刻配执行
+3. 哪些能力当前可见
+4. 哪些结果值得继续占据主席位
+5. 这轮继续是否仍有决策增益
 
 开始。
 
@@ -54,6 +56,18 @@
 判断标准：
 
 - 如果 project/local inputs 也能像 managed authority 一样扩边界，那当前世界的准入主权已经被外包。
+
+### 2.1.1 authority source 有没有被放到动作之前
+
+判断标准：
+
+- 如果系统先讨论 ask/deny，再讨论谁有资格改 provider、policy、mode 或 trust 前环境，那么收费顺序已经反了。
+
+### 2.1.2 source slot 是普通 provenance，还是真正的收费主键
+
+判断标准：
+
+- 如果 `source` 只是事后标签，而不是决定 rule、visibility、resume 资格的主键，那当前世界的准入主权仍然没有被 runtime 真正持有。
 
 ### 2.2 permission 在这里是 modal，还是 typed decision transaction
 
@@ -79,6 +93,12 @@
 
 - 如果没有显式 stop condition、边际决策增益与 rented continuation 意识，系统只是在以“继续”名义免费烧时间。
 
+### 2.5.1 resume 恢复的是 durable assets，还是把 transient authority 一并续租
+
+判断标准：
+
+- 如果恢复流程不重新审 authority，只把旧 mode、旧 grant、旧可见集整包续上，那 continuation 还不是正式收费，而只是延长旧世界的错觉。
+
 ### 2.6 fail-open / fail-closed 的选择是否按资产类型区分
 
 判断标准：
@@ -96,6 +116,12 @@
 判断标准：
 
 - 如果自动化只有开启路径，没有撤销路径，它迟早会从高行动力通道变成失控通道。
+
+### 2.9 host 消费的是 authority/status，还是自己回放拼当前真相
+
+判断标准：
+
+- 如果 host 需要自己从事件流回放 `mode / pending action / context truth`，那 runtime 主权已经泄露到外围消费者。
 
 ## 3. 常见自欺
 
@@ -121,14 +147,18 @@
 ```text
 审读对象:
 当前 trusted input 链:
+authority source 是否先于动作、可见性和 continuation:
+source slot 是否真是规则主键:
 typed ask arbitration 是否成立:
 能力存在 / 当前可见是否分层:
 哪些对象应 externalize:
 continuation 是否按条件出租:
+resume 是否只恢复 durable assets:
 失败语义是否按资产类型分型:
+host 是否只消费 runtime 外化的 authority/status:
 当前最像哪类失真:
 - authority leak / free visibility / free context / free continuation / flattened failure semantics
-下一步该修的是:
+优先回修对象:
 - trusted input / ask arbitration / visibility / externalization / continuation / failure typing
 ```
 
@@ -142,7 +172,9 @@ continuation 是否按条件出租:
 4. 大对象有没有迁出最昂贵的上下文主席位。
 5. 继续执行是否仍有正式价格和停止条件。
 6. 自动化还能不能合法退场。
-7. 如果把所有 UI 都删掉，这套治理秩序是否仍然成立。
+7. resume 恢复的是 durable assets，还是把 transient authority 也免费续租了。
+8. host 是在消费 runtime 已外化的真相，还是在自己猜当前真相。
+9. 如果把所有 UI 都删掉，这套治理秩序是否仍然成立。
 
 ## 7. 一句话总结
 

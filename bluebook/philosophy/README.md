@@ -4,7 +4,7 @@
 
 还要先记一句：
 
-- `84-87` 负责把 `09` 的三张控制面图继续压成第一性原理判断；它们是对主线宪法的哲学收束，不是另一套并列主线
+- `84-87` 负责把 `09` 的三张控制面图继续压成第一性原理判断；它们现在分别更明确覆盖 `message lineage / source-first pricing / anti-stale authority surface / future maintainer rejectability`，不是另一套并列主线
 
 ## 目录分层
 
@@ -21,6 +21,9 @@
 - `18-32`: Prompt 契约、预算、单一真相入口
 - `48-67`: 协作语法、统一定价、未来维护者与 Prompt Constitution
 - `68-87`: 证据、拒收语义，以及三条控制面的高阶收束
+- 想直接抓 Prompt 魔力里的谱系问题：从 `14` 与 `84`
+- 想直接抓治理里的 source-first pricing：从 `85`
+- 想直接抓源码质量里的 anti-stale 与 later maintainer 判断：从 `86-87`
 - 想直接抓三条高阶收束：先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)，再从本目录进入 `84-87`
 
 ## 适合什么时候读
