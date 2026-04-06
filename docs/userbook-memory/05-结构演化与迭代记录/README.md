@@ -27,6 +27,7 @@
 - [23-2026-04-06-bridge trust、eligibility 与 trusted-device 边界拆分记忆.md](./23-2026-04-06-bridge%20trust%E3%80%81eligibility%20%E4%B8%8E%20trusted-device%20%E8%BE%B9%E7%95%8C%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 - [24-2026-04-06-bridge 生命周期模式专题拆分记忆.md](./24-2026-04-06-bridge%20%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%A8%A1%E5%BC%8F%E4%B8%93%E9%A2%98%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 - [25-2026-04-06-bridge 设置面、控制面与状态面拆分记忆.md](./25-2026-04-06-bridge%20%E8%AE%BE%E7%BD%AE%E9%9D%A2%E3%80%81%E6%8E%A7%E5%88%B6%E9%9D%A2%E4%B8%8E%E7%8A%B6%E6%80%81%E9%9D%A2%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
+- [26-2026-04-06-bridge 链接、二维码与定位符拆分记忆.md](./26-2026-04-06-bridge%20%E9%93%BE%E6%8E%A5%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E4%B8%8E%E5%AE%9A%E4%BD%8D%E7%AC%A6%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 
 用途：
 
