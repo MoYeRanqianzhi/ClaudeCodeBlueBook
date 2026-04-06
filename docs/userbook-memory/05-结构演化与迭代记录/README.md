@@ -92,6 +92,7 @@
 - [88-2026-04-06-headless print queue reentry 拆分记忆.md](./88-2026-04-06-headless%20print%20queue%20reentry%20拆分记忆.md)
 - [89-2026-04-06-headless print prompt batching 拆分记忆.md](./89-2026-04-06-headless%20print%20prompt%20batching%20拆分记忆.md)
 - [90-2026-04-06-headless print task-notification dual-consumer 拆分记忆.md](./90-2026-04-06-headless%20print%20task-notification%20dual-consumer%20拆分记忆.md)
+- [91-2026-04-06-headless print task-notification close signal family 拆分记忆.md](./91-2026-04-06-headless%20print%20task-notification%20close%20signal%20family%20拆分记忆.md)
 
 用途：
 
