@@ -113,6 +113,7 @@
 - [109-2026-04-06-streamlined pre-wire rewrite ordering 拆分记忆.md](./109-2026-04-06-streamlined%20pre-wire%20rewrite%20ordering%20拆分记忆.md)
 - [110-2026-04-06-direct connect suppress-reason split for streamlined and post_turn_summary 拆分记忆.md](./110-2026-04-06-direct%20connect%20suppress-reason%20split%20for%20streamlined%20and%20post_turn_summary%20拆分记忆.md)
 - [111-2026-04-06-visibility tables from builder transport to UI consumer 拆分记忆.md](./111-2026-04-06-visibility%20tables%20from%20builder%20transport%20to%20UI%20consumer%20拆分记忆.md)
+- [112-2026-04-06-streamlined dual-entry gate and null suppression 拆分记忆.md](./112-2026-04-06-streamlined%20dual-entry%20gate%20and%20null%20suppression%20拆分记忆.md)
 
 用途：
 
