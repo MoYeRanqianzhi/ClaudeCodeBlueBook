@@ -96,7 +96,7 @@ consumer edge 的世界观是：
 
 1. SDK client 原样返回
 2. 其他 client 一律重新 `connectToServer(client.name, client.config)`
-3. 若 fresh 结果不再是 `connected`，直接抛  
+3. 若 fresh 结果不再是 `connected`，直接抛
    `MCP server "<name>" is not connected`
 4. 只有 fresh 结果成立时，才返回 connected client
 
