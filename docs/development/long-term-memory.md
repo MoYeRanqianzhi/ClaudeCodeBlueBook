@@ -14,6 +14,7 @@
   - `04` 现在更明确把“同名入口先分 plane，再谈是否配对”写成短句，并要求遇到缺失对偶项时直接承认 root-only / session-only。
 - 新的长期结论：
   - 命令入口组继续成熟时，最稳的用户侧短句不是“root 和 slash 哪些成对”，而是“会外控制台先装世界，会内控制面再消费当前世界”；这条分界本身就是 Prompt magic 在 user-facing 层的投影。
+  - Prompt 魔力再往前门收一层时，最稳的 nouns 不该只停在 `same-world test`，而应展开成 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`；只要前门重新退回 “system prompt wording” 或最后一条回复，Prompt 线就会失去对象链。
   - 安全与省 token 在线控件层真正合流时，最稳的前门不是 token bar 或成本页，而是 `decision window -> continuation path`；只要 `/usage` 被重新写成账单条、`/extra-usage` 被写回查询页，治理线就会退回 UI 投影。
   - 源码先进性在命令系统这组页里的可见证据，不是命令覆盖更全，而是 later maintainer 能独立指出 `plane -> object -> semantics -> gate` 与 `bootstrap truth != present truth` 两条拒错链，而不依赖作者口头补语义。
   - `06` 现在更明确把三条母线各自收回最短拒错顺序：Prompt 线回 `same-world test -> witness chain -> continuation qualification`，治理线回 `governance key -> decision window -> continuation pricing -> durable-transient cleanup`，源码质量线回 `authority surface -> writeback split -> freshness gate -> later-maintainer rejectability`。
