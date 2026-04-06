@@ -2116,6 +2116,9 @@
 - Claude Code 的生态写作必须持续区分 protocol support、runtime path 与 product maturity，不能因为代码里有入口就上升为稳定公共承诺
 - 蓝皮书目录现在必须显式分成“主线正文”“导航层”“机制层”“接口层”“哲学层”“风险层”“实践层”，否则章节增多后会失去检索性
 - Claude Code 的第一性原理不应再只写成六问，而应扩展为观察、决策、行动、记忆、协作、恢复、治理、经济八问
+- Prompt 主链前门当前应固定成 `section registry / dynamic boundary -> message lineage -> projection consumer -> protocol transcript -> continuation object / qualification -> cache-safe forks`，不要再让 `Request Surface Constitution` 或其他检索别名占可见主语位
+- Prompt 线必须继续写成第二张图的 request-surface 投影：`lawful forgetting`、stable prefix boundary、cache-safe fork reuse 与 continuation qualification 都在消费 `governance key -> externalized truth chain -> decision window -> continuation pricing` 的同一治理秩序，不能再把“安全”和“省 token”拆成两套话题
+- 目录页只负责暴露证据梯度与拒收链，不负责承担阅读编排；凡是规范入口、切换协议、推荐顺序与当前批次收口说明，一律留在 `docs/` 和记忆层，不回正文
 
 ## 后续章节建议
 

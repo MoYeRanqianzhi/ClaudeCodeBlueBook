@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `09`、`architecture/82`、`philosophy/84` 与 `guides/99`，把 Prompt 主链收回到 `section registry / dynamic boundary -> message lineage -> projection consumer -> protocol transcript -> continuation object / qualification -> cache-safe forks` 这一条可判定装配链，修复 `84 / 99` 指向 `82` 的旧路径，移除 `再回 30` 式旧回修依赖，并把目录结构进一步收口为“只暴露证据梯度与拒收链，不承担阅读编排”的长期约束
 - 继续更新 `guides/102`、`playbooks/79` 与 `navigation/04`，把结构线里 atlas / template / verdict 的承载错位收回到更硬的目录法：`102` 只保留 atlas skeleton、gap note 与 handoff rule，`79` 明确只消费 `danger_surface_atlas_ref / gap_note_ref / authority_surface_ref` 绑定 verdict，`navigation/04` 明确把 atlas 正文默认归到 `api/46-50`
 - 继续更新 `guides/28`、`guides/100` 与 `playbooks/78`，把治理矩阵进一步补齐到 `surface divergence / minimum legal degraded shape / escalation target / rollback action / re-entry condition` 这组字段，让 `interactive / host / headless / async` 的执行面分叉和 `rollback -> re-entry` 的恢复条件进入统一 schema
 - 继续更新 `06`、`09`、`guides/README`、`playbooks/README` 与 `navigation/README`，把 Prompt / 治理 / 结构三线里残留的过泛 contract 名和过渡句式继续收回到 `execution contract / authority contract / byte boundary / continuation truth` 这类更硬对象，并把 `102` 的 atlas 与 `79` 的 verdict 更明确提升成目录层稳定入口

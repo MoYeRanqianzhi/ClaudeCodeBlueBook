@@ -3,7 +3,7 @@
 这一章回答五个问题：
 
 1. 为什么 Claude Code 的 Prompt 魔力首先不是文案强，而是世界编译强。
-2. 为什么 `message lineage`、`projection consumer`、`section registry / dynamic boundary`、`protocol transcript` 与 `continuation qualification` 共同决定 Prompt 上限。
+2. 为什么 `section registry / dynamic boundary`、`message lineage`、`projection consumer`、`protocol transcript` 与 `continuation qualification` 共同决定 Prompt 上限。
 3. 为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到魔力。
 4. 怎样用苏格拉底式追问审一个新 runtime 是否真的拥有这种 Prompt 能力。
 5. 这对 Agent runtime 设计者意味着什么。
@@ -21,7 +21,7 @@
 - `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
 - `claude-code-source-code/src/query/stopHooks.ts:84-214`
 - `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
-- `bluebook/architecture/82-请求装配流水线：message lineage、projection consumer、protocol transcript、continuation qualification与cache-safe forks.md`
+- `bluebook/architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md`
 
 ## 1. 先说结论
 
@@ -35,16 +35,12 @@
 
 - 它先规定世界如何合法进入模型
 
-这里的“世界”不是抽象比喻，而是：
+这里的“世界”不是抽象比喻，而是四件制度事实：
 
-1. 谁能宣布当前真相
-2. 哪条 `message lineage` 挂住当前 protocol truth 与 current work
-3. 哪些 section 构成正式 Prompt 宪法
-4. 哪条 transcript 配进入模型
-5. 哪些 consumer 只消费投影，不能改写 protocol truth
-6. 哪些动态事实必须晚绑定
-7. 忘掉什么之后系统仍然合法继续
-8. 旁路循环如何复用同一个世界，而不是重造平行世界
+1. 谁能宣布当前世界
+2. 哪些字节属于 stable prefix，哪些事实只能晚绑定
+3. `display transcript`、`protocol transcript` 与 `continuation object` 是否仍沿同一条 `message lineage` 投影
+4. `compact / fork / handoff` 之后谁仍有资格继续
 
 Prompt 的魔力，首先来自：
 
@@ -58,6 +54,8 @@ Prompt 的魔力，首先来自：
 4. `attachment deltas`
 
 而 `compact / resume` 则决定这些 surface 在遗忘、重链与继续后还能否保持同一条 continuation contract。
+
+这也是为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到魔力：他们抄到了说明文本，却没有抄到世界准入、投影分层与继续资格的制度体。真正稀缺的不是文风，而是不同 consumer 不必重新协商同一现场。
 
 ## 2. 第一性原理：Prompt 首先是一道世界准入法律
 
@@ -100,7 +98,7 @@ Claude Code 更深的一层是：
 
 而是：
 
-- world admission、late binding、cache boundary 与 continuation path 都已经被编译成正式制度对象
+- section registry、late binding、projection discipline 与 continuation path 都已经被编译成正式制度对象
 
 ## 3. 最容易被误写成什么
 
@@ -128,7 +126,7 @@ Claude Code 更深的一层是：
 1. 主语漂移
    - 多份文本争主权
 2. 历史漂移
-   - display truth / protocol truth / handoff truth 不再围绕同一条 lineage
+   - `display transcript / protocol transcript / continuation object` 不再围绕同一条 lineage
 3. 连续性漂移
    - compact 之后留下的是叙事，不是仍可继续行动的 continuation object
 
@@ -155,11 +153,11 @@ Claude Code 更深的一层是：
 
 如果要审一个新 runtime 是否真的拥有这种 Prompt 能力，先问：
 
-1. 现在是谁在定义世界；如果多份文本冲突，哪条 authority chain / message lineage 赢。
+1. 现在是谁在定义世界；如果多份文本冲突，谁是 world-defining winner，哪条 `message lineage` 继续有效。
 2. Prompt 是 blob，还是有正式 section 宪法。
 3. display transcript、protocol transcript 与 continuation object 是不是围绕同一条 lineage 投影出来的。
 4. compact 后保住的是行动语义与 continuation qualification，还是只是更好读的摘要。
-5. side loop、suggestion、memory extraction 与 worker summary 是否只是同一 protocol truth 的不同 consumer。
+5. side loop、suggestion、memory extraction 与 worker summary 是否只是同一 `protocol transcript` 的不同 consumer。
 6. 工具 ABI、continue 资格与 cache break 原因，是否已进入 Prompt 真相本体。
 7. 如果去掉“写得像专家”的文案风格，这套系统还能不能让不同 consumer 继续活在同一个现场。
 
@@ -167,7 +165,7 @@ Claude Code 更深的一层是：
 
 如果你想复制 Claude Code 的 Prompt 强度，先复制：
 
-1. 单一主权链
+1. 明确的 world-defining winner
 2. `message lineage` 内核
 3. section registry
 4. protocol transcript 编译

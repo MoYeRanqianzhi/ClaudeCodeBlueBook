@@ -40,9 +40,9 @@ Claude Code 真正保护的不是：
 
 - 一段更强的 system prompt
 
-而是同一条可被继续重建的 `message lineage`：
+而是同一条可被继续重建的 `message lineage` 及其六个制度护栏：
 
-1. `authority chain` 先固定谁有权定义当前世界。
+1. `world-defining winner` 先固定谁有权定义当前世界。
 2. `section registry` 先固定哪些制度字节属于正式 Prompt 宪法。
 3. `dynamic boundary` 先把晚绑定状态赶出稳定前缀。
 4. `protocol transcript` 先把显示历史重编成模型可执行历史。
@@ -72,7 +72,7 @@ Claude Code 的请求装配首先解决的不是：
 
 - 谁能宣布当前世界是什么
 
-从源码锚点可以压出一条清楚的主权顺序：
+从源码锚点可以压出一条清楚的世界定义顺序：
 
 1. `override`
 2. `coordinator`
@@ -85,7 +85,7 @@ Claude Code 的请求装配首先解决的不是：
 
 - 防止 system、worker、宿主、用户补丁、追加说明互相争主语
 
-一旦主权顺序漂移，系统就会重新退回：
+一旦世界定义顺序漂移，系统就会重新退回：
 
 - 多段看起来都像真相的文本并列存在
 
@@ -235,7 +235,7 @@ Claude Code 的 Prompt 会显得 unusually coherent，不是因为它：
 
 如果你想复制 Claude Code 的 Prompt 强度，优先复制的不是具体措辞，而是：
 
-1. 单一主权链
+1. 明确的 world-defining winner
 2. section 宪法
 3. `message lineage` 三键内核
 4. projection consumer 分层
@@ -258,4 +258,4 @@ Claude Code 的 Prompt 会显得 unusually coherent，不是因为它：
 
 ## 10. 一句话总结
 
-Claude Code 的 Prompt 魔力，首先不是文案魔力，而是请求装配魔力：它把主权顺序、lineage 内核、协议转写、合法遗忘与旁路复用一起写成了一条正式的 runtime pipeline。
+Claude Code 的 Prompt 魔力，首先不是文案魔力，而是请求装配魔力：它把世界定义顺序、lineage 内核、协议转写、合法遗忘与旁路复用一起写成了一条正式的 runtime pipeline。
