@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `guides/58 / playbooks/33` 现已把治理迁移纠偏与迁移演练尾部统一到当前对象链：
+  - `58` 现已把治理迁移纠偏固定回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
+  - `33` 现已把治理宿主迁移演练固定回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
+- 新的长期结论：
+  - 治理迁移尾部真正成熟时，不应再把 `authority source`、`permission ledger`、`continuation gate` 与 `rollback object` 写成一级迁移主语；它们都只能是治理根链上的 source slot、证据面、verdict 或 cleanup carrier。
+  - 当前治理线尾部已经基本收口，下一批如果继续走治理，不再优先改正文，而更像是标题/文件名层的旧词债清理。
 - `navigation/README / playbooks/README / guides/README` 现已把目录入口层进一步收口：
   - `navigation/README` 现已把结构运行链拆成 `46 -> 31 -> 37`、`67 -> 70 -> 73 -> 76`、`79` 三档，不再让结构入口层继续像一条平铺长链。
   - `playbooks/README` 现已把结构推荐入口与对象主线统一成 `authority object -> per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`。

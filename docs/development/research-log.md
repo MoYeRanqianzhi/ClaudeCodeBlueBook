@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮治理迁移尾部纠偏动作: 已继续更新 `guides/58` 与 `playbooks/33`，把治理宿主迁移纠偏与迁移演练尾部从 `authority source / permission ledger / continuation gate / rollback object` 的旧迁移主语收回到 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
+- 本轮治理迁移主语降级动作: `58` 现已把 `authority source` 降为 `governance key` 的 source slot，把 `permission ledger` 降为 `typed ask` 证据面，把 `continuation gate` 降为 `continuation pricing` verdict；`33` 则把交接、灰度与回退统一围绕同一条治理对象链组织。
 - 本轮目录入口收口动作: 已继续更新 `navigation/README`、`playbooks/README` 与 `guides/README`，把入口层从长编号链收回到对象链分流：结构线现在显式拆成 `legacy intake / acceptance`、`current repair / refinement`、`current validation` 三档，Prompt / 治理 / 结构的 `57-59 / 35-37 / 77-79` 尾部路由也被前置进 README。
 - 本轮 README 旧桥接降级动作: `guides/README` 现已明确 `30-31` 才是旧一层桥接页，而 `57-59` 与 `81 / 90` 已经回到新对象链，不再继续被入口层误标为旧桥页；`playbooks/README` 现已把结构对象主线恢复成 `authority object -> per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`。
 - 本轮 Prompt 验收尾部纠偏动作: 已继续更新 `guides/57`、`playbooks/35` 与 `playbooks/77`，把 Prompt 迁移纠偏、宿主验收执行与长期验证尾部从 `compiled request truth / 请求对象 / continue qualification` 的旧执行主语收回到 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`。
