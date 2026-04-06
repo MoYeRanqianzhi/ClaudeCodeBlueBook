@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 治理线的执行层 crosswalk 现已继续写死：
+  - `governance key` 的执行层名字应长期优先读成 `pricing-right signer / pricing-right lease`
+  - `externalized truth chain` 的消费层名字应长期优先读成 `truth-surface attestation`
+  - `durable-transient cleanup` 的交接层名字应长期优先读成 `asset-rollback ABI`
+  - 后续凡是治理深页还让 `host consumption card / rollback object` 抢第一页主语，都应优先按这组 crosswalk 回收
+- 治理 refinement execution 的顺序现已继续稳定：
+  - `truth-surface attestation` 应先于 `shared reject semantics / hard reject semantics` 被确认，因为 reject 语言只有在 shared consumer surface 已对齐后才合法
+  - `host consumption card` 在治理线里也只配做 carrier，不是控制面主语；真正的执行主语是 `pricing-right rebinding -> truth-surface attestation -> asset-rollback ABI -> shared reject / reopen drill`
+  - `userbook/05` 后续若再翻译 governance failure order，默认应从 `pricing-right 失配` 起手，而不是从 `rollback object` 起手
 - Prompt frontdoor shorthand 现已进一步收紧成一条长期必须回绑的 witness ABI：
   - `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
   - `same-world test`、`Authority / Boundary / Transcript / Lineage / Continuation / Explainability`、`compiled request truth / stable prefix / lawful forgetting / threshold liability` 这些词后续都只能作为这条 witness ABI 的 shorthand、witness、packet 或 verdict；如果某页首次出现它们却没有立刻回绑 witness ABI，应直接视为 Prompt 深页长出第二语言。

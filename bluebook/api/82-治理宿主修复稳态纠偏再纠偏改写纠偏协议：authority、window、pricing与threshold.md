@@ -49,6 +49,8 @@ Claude Code 当前并没有公开一份名为：
 11. `threshold_rebinding`
 12. `rewrite_correction_verdict`
 
+上面这十二类对象还可以继续收口成三段执行主语：`pricing-right restitution -> truth-surface attestation -> asset-rollback ABI`；`governance key / typed ask ledger / decision window / continuation pricing / classifier pricing / writeback seam / capability liability / threshold` 都只应继续作为这三段下的 evidence slot，而不是重新并列成八个一级对象。
+
 更成熟的治理 rewrite correction 方式不是：
 
 - 只看 mode 还没报错

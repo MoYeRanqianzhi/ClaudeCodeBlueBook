@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `api/82 / 85`、`playbooks/66`、`philosophy/85` 与 `userbook/05-控制面深挖/README`，把治理精修链里仍残留的 `host consumption card / rollback object / cross-consumer attestation` 壳词继续压回 `pricing-right rebinding -> truth-surface attestation -> asset-rollback ABI -> shared reject / reopen`：`api/82` 现在更明确把十二类对象收口成三段执行主语，`api/85` 现在把 `truth_surface_attestation_packet` 前移到 `hard_reject_semantics_abi` 之前，`playbooks/66` 现在明确写死 card 只是 carrier，`philosophy/85` 与 `userbook/05` 也都补上了执行层 crosswalk
 - 本轮根仓库同步再次确认：`main=origin/main=20a0f55113c7e1c69bf4eca1f1041caeca8e79bb`，`git merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交
 - 继续更新 `api/81 / 84 / 86`、`playbooks/65` 与 `philosophy/75 / 81 / 84`，把 Prompt 精修链里仍残留的 `compiled request truth / cross-consumer attestation / host consumption card` 可见主语继续压回 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict` 这条 witness ABI，并把结构精修链的 attestation visible noun 收回 `current_truth_surface_attestation_packet`；这一批明确写死：`host consumption card` 只配做 Explainability 末端 carrier，不再自立成 Prompt 主语
 - 继续更新 `api/README`、`navigation/04 / 06 / 35`、`01-源码结构地图` 与 `guides/102`，把蓝皮书目录结构里仍混写的 atlas 事实拆成四种首答职责：`01 + guides/102` 继续只定义 canonical rung 与降格规则，`api/46-50` 继续只承接 repo-specific atlas 正文，`navigation/35` 继续只处理 atlas route / projection dispute，`navigation/04` 继续只做 speaking-rights charter；同时把 `api/README` 的 Atlas 套件显式展开成 `46-50`

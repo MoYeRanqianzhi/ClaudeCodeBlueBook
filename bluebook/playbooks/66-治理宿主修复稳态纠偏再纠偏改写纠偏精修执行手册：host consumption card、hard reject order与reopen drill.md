@@ -63,6 +63,8 @@
 
 ## 2. 共享 host consumption card 最小字段
 
+`host consumption card` 在治理线里也只配做 carrier，不是新的控制面主语；更稳的执行主语应继续写成 `pricing-right rebinding -> truth-surface attestation -> asset-rollback ABI -> shared reject / reopen drill`，card 只是把这条执行链投影给宿主、CI、评审与交接的可消费容器。
+
 每次治理宿主修复稳态纠偏再纠偏改写纠偏精修巡检，宿主、CI、评审与交接系统至少应共享：
 
 1. `host_consumption_card_id`
