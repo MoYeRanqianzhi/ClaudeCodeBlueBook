@@ -28,3 +28,4 @@
 - [26-Remote Control spawn topology、capacity 与目录分配索引.md](./26-Remote%20Control%20spawn%20topology、capacity%20与目录分配索引.md)
 - [27-Remote Control banner、QR、footer 与 session list 索引.md](./27-Remote%20Control%20banner、QR、footer%20与%20session%20list%20索引.md)
 - [28-Remote Control name、permission-mode、sandbox 与 title 回填索引.md](./28-Remote%20Control%20name、permission-mode、sandbox%20与%20title%20回填索引.md)
+- [29-Remote Control 工具审批、网络放行、自动批准与提示撤销索引.md](./29-Remote%20Control%20工具审批、网络放行、自动批准与提示撤销索引.md)
