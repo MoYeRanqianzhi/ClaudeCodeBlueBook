@@ -8,15 +8,16 @@
 4. 哪些目录最容易被误读，从而把 Prompt、安全、恢复或治理写坏。
 5. 平台设计者该按什么顺序阅读 `services/`。
 
-## 0. 代表性锚点与 authority ladder
+## 0. 代表性锚点与证据梯度
 
 更稳的证据梯度应先看：
 
-1. `contract truth`
-2. `registry truth`
-3. `authoritative surface`
-4. `adapter subset`
-5. `danger surface`
+1. `contract`
+2. `registry`
+3. `current-truth surface`
+4. `consumer subset`
+5. `hotspot kernel`
+6. `mirror gap discipline`
 
 代表性源码锚点：
 
@@ -31,7 +32,7 @@
 - `claude-code-source-code/src/services/analytics/index.ts:1-80`
 - `claude-code-source-code/src/services/tools/toolOrchestration.ts:19-80`
 
-这页不再先靠目录数量解释自己，而是先给一条 authority ladder：
+这页不再先靠目录数量解释自己，而是先给一条证据梯度：
 
 1. `api/sessionIngress`、`claude.ts`
 2. `compact/compact.ts`
@@ -53,10 +54,12 @@
 
 也就是说，读 `services/` 的顺序首先是证据更硬不更硬，而不是目录拆得更细不更细。每个子系统都至少要先回答四件事：
 
-1. authority file
-2. consumer subset / projection
-3. danger surface
-4. first reject path
+1. `contract`
+2. `registry`
+3. `current-truth surface`
+4. `consumer subset`
+5. `hotspot kernel`
+6. `mirror gap discipline`
 
 再往上收一层，`services/` 也不是模块清单，而是 runtime 对请求进入、上下文续存、继续资产、外部能力、桥接暴露与观测追责逐项收费的对象层：
 
@@ -77,68 +80,92 @@
 
 ## 2. API / Transport 子系统
 
-- authority file：
+- `contract`：
   - `claude.ts`、`sessionIngress.ts`
-- consumer subset / projection：
-  - `client.ts`、远程恢复路径、host writeback 只拿到部分请求与恢复投影
-- danger surface：
+- `registry`：
+  - `client.ts`、transport assembly、append-chain 入口
+- `current-truth surface`：
+  - append-chain ingress、session ingress、host writeback
+- `consumer subset`：
+  - 远程恢复路径、host projection、client shell 只消费部分请求与恢复真相
+- `hotspot kernel`：
   - append-chain 恢复对象、prompt/cache 漂移账本、retry / ingress 乱序最容易把请求真相写坏
-- first reject path：
+- `mirror gap discipline`：
   - 一旦请求或恢复行为开始可疑，先回 `claude.ts` 与 `sessionIngress.ts`，不要先在 client shell 或 host projection 层补丁
 
 ## 3. Compact / Budget / Context Maintenance 子系统
 
-- authority file：
+- `contract`：
   - `compact/compact.ts`、`compact/postCompactCleanup.ts`
-- consumer subset / projection：
+- `registry`：
+  - compact pipeline、budget hookup、cleanup registration
+- `current-truth surface`：
+  - compact result、post-compact state、continuation pricing verdict
+- `consumer subset`：
   - `claudeAiLimits.ts`、`rateLimitMessages.ts` 更多是消费者可见投影，不是 budget authority
-- danger surface：
+- `hotspot kernel`：
   - compact 后 cleanup、policy limit、continuation pricing 一旦失真，就会同时破坏上下文与时间边界
-- first reject path：
+- `mirror gap discipline`：
   - 一旦 compact 看起来像普通摘要，先回 `compact.ts` 与 post-compact cleanup，而不是先改 UI summary
 
 ## 4. Memory / Suggestion / Summary 子系统
 
-- authority file：
+- `contract`：
   - `SessionMemory/sessionMemory.ts`、`PromptSuggestion/promptSuggestion.ts`
-- consumer subset / projection：
+- `registry`：
+  - memory extraction、prompt suggestion、summary/dream/fork wiring
+- `current-truth surface`：
+  - session memory、suggestion output、continuation asset readback
+- `consumer subset`：
   - `AgentSummary`、`toolUseSummary`、team 记忆同步更像 continuation 投影
-- danger surface：
+- `hotspot kernel`：
   - 把聊天纪要误当继续资产、把 UI suggestion 误当 authority，最容易让 handoff truth 漂移
-- first reject path：
-  - 一旦 compact 后世界变形，先回 `SessionMemory` 与 `PromptSuggestion` 的 authority 文件重建 continuation
+- `mirror gap discipline`：
+  - 一旦 compact 后世界变形，先回 `SessionMemory` 与 `PromptSuggestion` 的 contract / registry 重建 continuation
 
 ## 5. MCP / Plugin / Settings Sync 子系统
 
-- authority file：
+- `contract`：
   - `mcp/config.ts`、`MCPConnectionManager.tsx`、`PluginInstallationManager.ts`
-- consumer subset / projection：
+- `registry`：
+  - config merge、connection registry、plugin lifecycle registration
+- `current-truth surface`：
+  - 当前已连接、已批准、已暴露的外部能力真相
+- `consumer subset`：
   - `commands/mcp`、`commands/plugin`、host / bridge / channel 路径只是控制壳层
-- danger surface：
+- `hotspot kernel`：
   - scope 合并、approval、policy、settings sync 与 remote managed settings 一旦漂移，就会直接改写外部能力边界
-- first reject path：
-  - 一旦外部能力看起来像默认主路径，先回 `mcp/config.ts` 和插件生命周期 authority，而不是先在 command shell 改词
+- `mirror gap discipline`：
+  - 一旦外部能力看起来像默认主路径，先回 `mcp/config.ts` 和插件生命周期 contract / registry，而不是先在 command shell 改词
 
 ## 6. IDE / LSP / Voice / Docs 子系统
 
-- authority file：
+- `contract`：
   - `lsp/LSPServerManager.ts`、`voice.ts`
-- consumer subset / projection：
+- `registry`：
+  - LSP bridge registration、voice integration wiring
+- `current-truth surface`：
+  - 当前 live capability bridge 与 host handoff state
+- `consumer subset`：
   - `LSPTool`、mobile / desktop / voice 前台只拿桥接投影
-- danger surface：
+- `hotspot kernel`：
   - 把 capability bridge 误写成 UI 装饰，最容易让 host / tool / service 边界一起失真
-- first reject path：
+- `mirror gap discipline`：
   - 一旦 `lsp`、voice 或 docs 看起来像独立插件层，先回 `LSPServerManager` 与 `voice.ts`
 
 ## 7. Observability / Logging / Recovery Evidence 子系统
 
-- authority file：
+- `contract`：
   - `analytics/index.ts`、`internalLogging.ts`
-- consumer subset / projection：
+- `registry`：
+  - diagnostic / logging / recovery evidence registration
+- `current-truth surface`：
+  - 当前 diagnostic ledger、internal logs、recovery evidence readback
+- `consumer subset`：
   - notifier、tips、部分前台通知只拿用户可见辅助投影
-- danger surface：
+- `hotspot kernel`：
   - 观察面、恢复证据面与 signer 结算一旦缺失，系统就会出现执行后无责扩张与无法回绑连续性
-- first reject path：
+- `mirror gap discipline`：
   - 一旦观测又被写成“附属统计”，先回 `analytics`、`internalLogging` 与 recovery evidence 这一侧
 
 ## 8. Services 里的特殊目录：`services/tools`
@@ -173,4 +200,4 @@
 
 ## 10. 一句话总结
 
-`services/` 二级目录 atlas 真正统一的，不是“后台功能一共有多少”，而是每个长期子系统的权威入口、主要消费者与危险改动面。
+`services/` 二级目录 atlas 真正统一的，不是“后台功能一共有多少”，而是每个长期子系统如何沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 暴露自己的正式入口。
