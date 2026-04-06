@@ -7,7 +7,7 @@
 - `01-09`: 启动链路、Agent 循环、REPL、权限、compact、会话与记忆。
 - `10-17`: AgentTool、权限决策、流式工具执行、Bridge、Remote/StructuredIO 与双通道状态同步。
 - `18-27`: request assembly、服务层全景、Sticky Prompt、产品边界与对象升级。
-- `28-38`: 提示词契约、知识层栈、多 Agent 语法、统一预算器、workflow engine 与 Contract-First 阅读法。
+- `28-38`: 提示词契约、知识层栈、多 Agent 语法、治理收费链、workflow engine 与 Contract-First 阅读法。
 - `39-52`: 缓存稳定性、失败语义、依赖图诚实性、观察性、插件双真相、PolicySettings 与安全边界编译。
 - `53-63`: Cache-aware Prompt Assembly、Protocol Transcript、能力可见性、可解释运行时、恢复优先状态面与可演化内核。
 - `64-72`: 语义压缩、资源宪法、协调成本、有效自由、源码即治理界面与未来维护者消费者。

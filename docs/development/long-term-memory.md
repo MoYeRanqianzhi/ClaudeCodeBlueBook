@@ -2133,6 +2133,8 @@
 - Prompt 高阶前门现在应进一步固定两层写法：主入口、专题 README、导航页和总图页都先说 `world entry / request assembly / six-stage assembly chain`；`Prompt 魔力` 只保留为结果性现象词，`Request Surface Constitution` 只保留为已退位检索别名，不再占 H1、首句或稳定入口标签。
 - 治理高阶前门现在也应进一步固定两层写法：主入口、专题 README、导航页和治理 owner 页都先说 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；`预算器 / source lattice / 统一定价 / 可见性` 这些词只保留为解释层对象或内层机制，不再替代 canonical chain 自己站在前门。
 - 入口级 residual 当前已明显下降；接下来若继续精修，应优先区分“兼容文件名路径仍含旧词”和“可见标签仍含旧词”这两类债。前者可以继续容忍并靠标签覆盖，后者则会直接把读者带进旧世界，必须优先清理。
+- 在治理线里，`预算器` 当前只宜保留为历史比喻或内层解释对象，不宜再当高阶主语。更稳的写法是：动作空间、上下文空间、时间空间和体验结果，都是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链的不同外观。
+- 当前更细的 residual 已进一步缩小到“解释层是否还借旧抽象词说话”和“兼容路径是否仍暴露旧 noun”两类。前门已经基本对齐后，不要再大范围重写入口；后续精修应优先只动真正会重新误导读者第一判断的那几句。
 
 ## 后续章节建议
 
