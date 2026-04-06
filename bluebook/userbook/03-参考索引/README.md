@@ -57,6 +57,15 @@
 53. 为什么 CCR v2 remote bridge 的 `transport rebuild`、initial flush、`flush gate` 与 `sequence resume` 不是同一步。
 54. 为什么 remote bridge 的 `received`、`processed`、write cursor、echo dedup 与 replay dedup 不是同一种去重。
 55. 为什么 remote bridge 的 `can_use_tool`、`control_response`、`control_cancel_request` 与 `result` 不是同一种状态交接。
+56. 为什么 `useRemoteSession`、`useDirectConnect` 与 `useSSHSession` 不是同一种远端会话合同。
+57. 为什么 attached assistant REPL 的 `hasInitialPrompt`、history paging 与 title ownership 不是同一种主权。
+58. 为什么 `cc://`、`open`、`createDirectConnectSession`、`ws_url` 与 fail-fast disconnect 不是同一种 direct connect 合同。
+59. 为什么 direct connect 的 `can_use_tool`、`interrupt`、`result`、disconnect 与 stderr shutdown 不是同一种收口。
+60. 为什么 direct connect 的 `init`、`status`、`tool_result`、`tool_progress` 与 ignored families 不是同一种 transcript surface。
+61. 为什么 direct connect 的 `Connected to server`、`Remote session initialized`、`busy/waiting/idle`、`PermissionRequest` 与 stderr disconnect 不是同一张状态板。
+62. 为什么 direct connect 的 `Ctrl+O transcript`、`verbose`、`showAllInTranscript` 与 `tool_result` 不是同一种可见性层。
+63. 为什么 remote session 的 `remoteConnectionStatus` / `remoteBackgroundTaskCount` 与 direct connect 的 `busy/waiting/idle` 不是同一种状态来源。
+64. 为什么 remote session 的 `stream_event` / `task_started` / `task_notification` 与 direct connect 的 `transcript/overlay/stderr` 不是同一种消费合同。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

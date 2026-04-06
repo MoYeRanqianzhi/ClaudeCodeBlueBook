@@ -58,6 +58,15 @@
 - [54-2026-04-06-CCR v2 remote bridge transport continuity 拆分记忆.md](./54-2026-04-06-CCR%20v2%20remote%20bridge%20transport%20continuity%20拆分记忆.md)
 - [55-2026-04-06-remote bridge anti-dup semantics 拆分记忆.md](./55-2026-04-06-remote%20bridge%20anti-dup%20semantics%20拆分记忆.md)
 - [56-2026-04-06-remote bridge control handoff semantics 拆分记忆.md](./56-2026-04-06-remote%20bridge%20control%20handoff%20semantics%20拆分记忆.md)
+- [57-2026-04-06-remote session hook contract 拆分记忆.md](./57-2026-04-06-remote%20session%20hook%20contract%20拆分记忆.md)
+- [58-2026-04-06-attached viewer transcript ownership 拆分记忆.md](./58-2026-04-06-attached%20viewer%20transcript%20ownership%20拆分记忆.md)
+- [59-2026-04-06-direct connect session contract 拆分记忆.md](./59-2026-04-06-direct%20connect%20session%20contract%20拆分记忆.md)
+- [60-2026-04-06-direct connect control subset and shutdown 拆分记忆.md](./60-2026-04-06-direct%20connect%20control%20subset%20and%20shutdown%20拆分记忆.md)
+- [61-2026-04-06-direct connect transcript surface 拆分记忆.md](./61-2026-04-06-direct%20connect%20transcript%20surface%20拆分记忆.md)
+- [62-2026-04-06-direct connect visible status surfaces 拆分记忆.md](./62-2026-04-06-direct%20connect%20visible%20status%20surfaces%20拆分记忆.md)
+- [63-2026-04-06-direct connect transcript mode vs raw stream 拆分记忆.md](./63-2026-04-06-direct%20connect%20transcript%20mode%20vs%20raw%20stream%20拆分记忆.md)
+- [64-2026-04-06-remote durable status vs direct connect interaction 拆分记忆.md](./64-2026-04-06-remote%20durable%20status%20vs%20direct%20connect%20interaction%20拆分记忆.md)
+- [65-2026-04-06-remote continuous flow vs direct discrete projection 拆分记忆.md](./65-2026-04-06-remote%20continuous%20flow%20vs%20direct%20discrete%20projection%20拆分记忆.md)
 
 用途：
 

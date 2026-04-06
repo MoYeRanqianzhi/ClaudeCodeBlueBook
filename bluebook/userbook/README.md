@@ -102,6 +102,10 @@
   [05-控制面深挖/55-received、processing、processed、lastWrittenIndexRef、recentPostedUUIDs、recentInboundUUIDs 与 sentUUIDsRef：为什么 remote bridge 的送达回执、增量转发、echo 过滤与重放防重不是同一种去重.md](./05-控制面深挖/55-received、processing、processed、lastWrittenIndexRef、recentPostedUUIDs、recentInboundUUIDs%20与%20sentUUIDsRef：为什么%20remote%20bridge%20的送达回执、增量转发、echo%20过滤与重放防重不是同一种去重.md)
 - 分清 `initialize`、`can_use_tool`、`control_response`、`control_cancel_request` 与 `result` 为什么不是同一种状态交接：
   [05-控制面深挖/56-initialize、can_use_tool、control_response、control_cancel_request 与 result：为什么 remote bridge 的握手、提问、作答、撤销与回合收口不是同一种状态交接.md](./05-控制面深挖/56-initialize、can_use_tool、control_response、control_cancel_request%20与%20result：为什么%20remote%20bridge%20的握手、提问、作答、撤销与回合收口不是同一种状态交接.md)
+- 分清 `useRemoteSession`、`useDirectConnect` 与 `useSSHSession` 为什么不是同一种远端会话合同：
+  [05-控制面深挖/57-useRemoteSession、useDirectConnect 与 useSSHSession：为什么看起来都是远端 REPL，但连接、重连、权限与退出不是同一种会话合同.md](./05-控制面深挖/57-useRemoteSession、useDirectConnect%20与%20useSSHSession：为什么看起来都是远端%20REPL，但连接、重连、权限与退出不是同一种会话合同.md)
+- 分清 attached assistant REPL 的首问加载、历史翻页与会话标题为什么不是同一种主权：
+  [05-控制面深挖/58-viewerOnly、hasInitialPrompt、useAssistantHistory 与 updateSessionTitle：为什么 attached assistant REPL 的首问加载、历史翻页与会话标题不是同一种主权.md](./05-控制面深挖/58-viewerOnly、hasInitialPrompt、useAssistantHistory%20与%20updateSessionTitle：为什么%20attached%20assistant%20REPL%20的首问加载、历史翻页与会话标题不是同一种主权.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：
@@ -253,5 +257,12 @@
 - standalone remote-control 的 token freshness timing、child sync 与 heartbeat auth 边界
 - standalone remote-control 的 work intake validity、claim 与 routing 边界
 - bridge 的 session runtime timeout、shutdown grace 与 failed remap 边界
+- direct-connect 的 session factory、transport URL、workspace 回填与断线退出边界
+- direct-connect 的控制子集、权限投影与退出传播边界
+- direct-connect 的消息过滤、`init` 去重与 transcript surface 边界
+- direct-connect 的本地提示、transcript 状态、tab status、overlay 与 fatal stderr 边界
+- direct-connect 的 prompt 面、transcript 模式与 raw SDK stream 差异边界
+- remote session 的持续状态面与 direct connect 的当前交互态边界
+- remote session 的持续事件流消费与 direct connect 的离散交互投影边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
