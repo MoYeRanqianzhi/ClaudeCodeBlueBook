@@ -37,3 +37,4 @@
 - [35-Remote Control session timeout、watchdog、kill 与 failed remap 索引.md](./35-Remote%20Control%20session%20timeout、watchdog、kill%20与%20failed%20remap%20索引.md)
 - [36-Remote Control poll、heartbeat、reconnecting、give up 与 sleep reset 索引.md](./36-Remote%20Control%20poll、heartbeat、reconnecting、give%20up%20与%20sleep%20reset%20索引.md)
 - [37-Remote Control headless startup permanent error 与 transient retry 索引.md](./37-Remote%20Control%20headless%20startup%20permanent%20error%20与%20transient%20retry%20索引.md)
+- [38-Remote Control consent、multi-session gate、project spawn preference 与 effective mode 索引.md](./38-Remote%20Control%20consent、multi-session%20gate、project%20spawn%20preference%20与%20effective%20mode%20索引.md)

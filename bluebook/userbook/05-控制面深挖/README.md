@@ -56,5 +56,6 @@
 - [46-session timeout、watchdog、SIGTERM、SIGKILL 与 failed remap：为什么 bridge 的会话超时、收尾中断与请求 timeout 不是同一种 timeout.md](./46-session%20timeout、watchdog、SIGTERM、SIGKILL%20与%20failed%20remap：为什么%20bridge%20的会话超时、收尾中断与请求%20timeout%20不是同一种%20timeout.md)
 - [47-poll、heartbeat、reconnecting、give up 与 sleep reset：为什么 bridge 的保活、回连预算与放弃条件不是同一种重试.md](./47-poll、heartbeat、reconnecting、give%20up%20与%20sleep%20reset：为什么%20bridge%20的保活、回连预算与放弃条件不是同一种重试.md)
 - [48-Workspace not trusted、login token、HTTP base URL、worktree availability 与 registration failure：为什么 headless remote-control 的 permanent error 与 transient retry 不是同一种开桥失败.md](./48-Workspace%20not%20trusted、login%20token、HTTP%20base%20URL、worktree%20availability%20与%20registration%20failure：为什么%20headless%20remote-control%20的%20permanent%20error%20与%20transient%20retry%20不是同一种开桥失败.md)
+- [49-remoteDialogSeen、multi-session gate、ProjectConfig.remoteControlSpawnMode 与 effective spawnMode：为什么 standalone remote-control 的一次性说明、账号资格、项目偏好与当前模式不是同一个默认.md](./49-remoteDialogSeen、multi-session%20gate、ProjectConfig.remoteControlSpawnMode%20与%20effective%20spawnMode：为什么%20standalone%20remote-control%20的一次性说明、账号资格、项目偏好与当前模式不是同一个默认.md)
 
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。
