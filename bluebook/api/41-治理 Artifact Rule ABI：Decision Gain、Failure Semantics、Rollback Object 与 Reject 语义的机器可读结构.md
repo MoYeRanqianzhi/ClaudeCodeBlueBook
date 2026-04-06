@@ -1,11 +1,11 @@
-# 治理 Artifact Rule ABI：Decision Gain、Failure Semantics、Rollback Object 与 Reject 语义的机器可读结构
+# 治理 Artifact Rule ABI：治理对象、决策窗口、失败语义与 cleanup carrier 的机器可读结构
 
 这一章回答五个问题：
 
 1. 治理线的 validator 规则，怎样继续压成不同消费者共享的 `rule packet`。
 2. 哪些字段属于 `packet header`，哪些属于 `rule body`，哪些属于 `rewrite hint`。
 3. `hard fail`、`lint warn`、`reviewer gate`、`handoff reject` 与 `object-upgrade gate` 应怎样分层。
-4. 为什么治理 rule ABI 必须继续围绕 `decision gain`、`failure semantics` 与 `rollback object`，而不是围绕状态色、计数与 verdict。
+4. 为什么治理 rule ABI 必须继续围绕 `typed ask / decision window / failure semantics / cleanup carrier`，而不是围绕状态色、计数与 verdict。
 5. 平台设计者该按什么顺序把治理 rule ABI 接到宿主、CI、评审与交接里。
 
 ## 0. 关键源码锚点
@@ -29,13 +29,18 @@
 
 - 宿主卡、CI 附件、评审卡与 handoff package 共享同一份 `Governance rule packet`
 
-这份 packet 至少要统一五件事：
+这份 packet 至少要统一六件事：
 
 1. 当前共享的 `governance object` 是谁。
-2. 当前这轮判断还有没有 `decision gain`。
-3. 失败时到底采用哪种 `failure semantics`。
-4. 回退时到底退到哪个 `rollback object`。
-5. 没有这些前提时，系统怎样正式拒绝继续。
+2. 当前 `governance key` 与 `externalized truth chain` 是否仍一致。
+3. 当前 ask 是否还是正式 `typed ask` 对象。
+4. 当前这轮判断还有没有 `decision window`。
+5. 失败时到底采用哪种 `failure semantics`。
+6. cleanup 时到底沿哪个 carrier 回钉 `durable-transient cleanup`。
+
+更硬一点说，这份 packet 共享的不是零散规则，而是同一条：
+
+- `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
 
 ## 2. Rule Packet 的两层结构
 
@@ -61,12 +66,12 @@ packet_header:
   governance_object_id_field: governance_object_id
   shared_contract_fields:
     - governance_object_id
-    - authority_source
-    - decision_window
-    - winner_source
-    - control_arbitration_truth
+    - governance_key_ref
+    - decision_window_ref
+    - typed_ask_ref
+    - truth_chain_ref
     - failure_semantics
-    - rollback_object
+    - cleanup_carrier
     - object_upgrade_rule
     - next_action
   consumer_scopes:
@@ -110,8 +115,8 @@ packet_header:
 
 1. `governance_object_id` 缺失。
 2. `decision_window` 缺失。
-3. `rollback_object` 缺失。
-4. `governance_object_id` 或 `decision_window` 跨工件不一致。
+3. `cleanup_carrier` 缺失。
+4. `governance_object_id`、`decision_window_ref` 或 `typed_ask_ref` 跨工件不一致。
 5. `failure_semantics` 缺失，却仍试图继续行动。
 
 ### 3.2 Lint Warn
@@ -132,7 +137,7 @@ packet_header:
 3. `winner_source`
 4. `control_arbitration_truth`
 5. `failure_semantics`
-6. `rollback_object`
+6. `cleanup_carrier`
 7. `next_action`
 8. `review_judgement`
 
@@ -151,7 +156,7 @@ packet_header:
 
 1. 没有 `decision gain` 时，应直接触发 `upgrade_or_stop`。
 2. `object_upgrade_rule` 缺失时，不允许继续消耗 token。
-3. `failure_semantics` 与 `rollback_object` 未写清时，不允许自动放行。
+3. `failure_semantics` 与 `cleanup_carrier` 未写清时，不允许自动放行。
 
 ## 4. 最小治理 Rule Packet 样例
 
@@ -174,7 +179,7 @@ rules:
     severity: critical
     consumer_scope: handoff_package
     must_exist_fields:
-      - rollback_object
+      - cleanup_carrier
       - next_action
     reject_reason: no_rollback_or_next_action
     rewrite_target: handoff_package
@@ -189,7 +194,7 @@ rules:
       - allow_deny_without_window
     reject_reason: dashboard_substituted_decision_window
     rewrite_target: host_card
-    rewrite_hint: 改写为 object + window + rollback_object
+    rewrite_hint: 改写为 object + window + cleanup carrier
 
   - rule_id: G-RG-001
     rule_kind: reviewer_gate
@@ -198,7 +203,7 @@ rules:
     must_exist_fields:
       - decision_window
       - failure_semantics
-      - rollback_object
+      - cleanup_carrier
     reject_reason: review_without_decision_chain
     rewrite_target: review_card
     rewrite_hint: verdict 之前先写 decision chain
@@ -249,4 +254,4 @@ rules:
 
 ## 7. 一句话总结
 
-治理 Artifact Rule ABI 真正统一的，不是不同消费者的规则数量，而是它们依赖的同一套 `decision gain + failure semantics + rollback object` 拒收语义。
+治理 Artifact Rule ABI 真正统一的，不是不同消费者的规则数量，而是它们依赖的同一套 `governance object + typed ask + decision window + failure semantics + cleanup carrier` 拒收语义。

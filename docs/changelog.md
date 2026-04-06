@@ -2,6 +2,11 @@
 
 ## 2026-04-07
 
+- 本轮继续更新 `api/41`、`50`、`46`、`47`、`48`、`playbooks/30` 与 `userbook/01-主线使用/01 / 02 / 05`，把 support surface、atlas 与 user-facing bridge 这三类高频页面继续从 carrier / projection / evidence field 越位中收回来：治理线里 `authority source / rollback object / continuation gate` 现在更明确只配当 `governance key / durable-transient cleanup / continuation pricing verdict` 之下的 evidence field 或 carrier，API atlas 现在统一收口到 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`，userbook 主线页则继续把 `same-world test / decision window / stable bytes` 收回更口语化的使用动作
+- 本轮根仓库同步检查再次失败：`main=cc3c4b08ad1ce10d77f71fc81bd29f5d05f0ee5d`、`origin/main=4ad3d88510e09ca4ada4ae9852241b7a15e79b33`、`main...origin/main = 22 0`；`merge --ff-only origin/main` 因根工作区存在未解决冲突而失败，因此本批次继续只在 `.worktrees/mainloop` 内推进，不触碰主工作区
+- 继续更新 `api/41`、`api/50` 与 `playbooks/30`，把治理宿主消费/Artifact 这一组里仍越位的 `authority source / rollback object / continuation gate` 收回 canonical chain：这些词现在被更明确地降回 `governance key`、`typed ask`、`decision window`、`continuation pricing` 与 `durable-transient cleanup` 之下的 carrier 或 evidence field，不再在首屏句法里冒充根对象
+- 继续更新 `api/46`、`47` 与 `48`，把三张二级目录 Atlas 从 `authority file / danger surface / first reject path` 四件套统一改写成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 六段证据梯度；`danger surface` 现在只配作为 `hotspot kernel` 下的风险注，不再停在 atlas 主框架上
+- 继续更新 `userbook/01-主线使用/01`、`02` 与 `05`，把用户主线页里残留的 `same-world test / decision window / stable bytes / free expansion` 等内部框架词收回成更口语化的动作判断：用户现在更直接看到的是“是不是还在同一件事上”“这轮对话还值不值得继续”“把精确事实放文件/附件”“先别开工/先缩范围/先清理后恢复”
 - 继续更新 `bluebook/README`、`01-源码结构地图`、`05-功能全景与API支持`、`07-运行时契约、知识层与生态边界`、`03-设计哲学`、`architecture/31`、`guides/18`、`navigation/05`、`api/README`、`api/52` 与 `security/README`，把仍残留在地图页、目录页、运行时总论页与宿主消费页里的 `truth ladder / danger surface / runtime contract / same-world test / 协作语法 / 回退对象` 这类旧结果词进一步降级成 bridge/result word，并把高频入口统一压回三条 canonical chain
 - 本轮目录结构深化重点不再是补深页，而是把高频入口页继续从“同词化”推进到“同序化”：根 README、地图页、功能/API 页、导航页和宿主消费页现在更明确共享同一套 Prompt witness order、governance failure order 与 current-truth reject order，不再让 later maintainer 在不同入口先学到不同版本的第一问题
 - 本轮根仓库 `main` 同步检查再次确认：`main=origin/main=4ad3d88510e09ca4ada4ae9852241b7a15e79b33`、`main...origin/main = 0 0`，`merge --ff-only origin/main` 返回 `Already up to date.`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进并提交

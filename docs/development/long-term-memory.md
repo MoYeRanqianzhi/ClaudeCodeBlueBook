@@ -8,6 +8,30 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `api/41`、`50`、`46`、`47`、`48`、`playbooks/30` 与 `userbook/01-主线使用/01 / 02 / 05` 现已继续把三类高频页面收回各自正确的语言层：
+  - support surface 页现在更明确只负责把 canonical chain 投影成 host-consumption fields，不再让 `authority source / rollback object / continuation gate` 这些 carrier 越位成根对象。
+  - atlas 页现在更明确统一按 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 解释目录，不再让 `danger surface` 停在 atlas 主骨架上。
+  - user-facing 主线页现在更明确先给用户动作语言，再把内部框架词降到更深层解释页；`same-world test / decision window / stable bytes / free expansion` 只配当桥接词，不配当使用页首屏判断。
+- 新的长期结论：
+  - 文档体系继续深入后，最容易反向制造第二前门的三类页面依次是：support surface、atlas、user-facing bridge。因为它们天然会把 carrier、projection、evidence field 和根对象混在一起。
+  - 下一轮如果继续清目录语言，优先顺序应长期固定为：先清 support surface 的 carrier 越位，再清 atlas 的梯度压扁，最后清 user-facing 页里的内部框架越位。
+  - 当 root 仓库存在未解决冲突且无法 `ff-only` 时，应长期把“同步检查失败但不触碰根工作区”的事实写进 changelog / research-log / long-term-memory，而不要让 `.worktrees/mainloop` 的文档批次去吸收根工作区的修复责任。
+- `api/41`、`api/50` 与 `playbooks/30` 现已继续把治理宿主消费/Artifact 这一组的旧桥接词往下压：
+  - `authority source` 现在更明确只配留在 `governance key` 的证据面，不再在 host-consumption 页里自立成根对象。
+  - `rollback object` 现在更明确只配当 `durable-transient cleanup` 的 carrier，不再和 canonical chain 并列成第七个节点。
+  - `continuation gate` 现在更明确只配当 `continuation pricing verdict`，而不是时间边界本身。
+- `api/46`、`47` 与 `48` 现已继续把 atlas 写法统一到 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`：
+  - `authority file` 现在更明确被拆回 `contract / registry / current-truth surface` 三层。
+  - `danger surface` 现在更明确只配当 `hotspot kernel` 下的风险注，不再停在 atlas 首屏骨架。
+  - `first reject path` 现在更明确只配当 `mirror gap discipline` 的操作句，不再和主框架并列。
+- `userbook/01-主线使用/01`、`02` 与 `05` 现已继续把用户第一跳里的内部框架词降格成桥接词：
+  - `same-world test` 在 userbook 主线里更稳的口语化表达，是“是不是还在同一件事上 / 现在看到的还是不是刚才那套工作现场”。
+  - `decision window` 在 userbook 主线里更稳的口语化表达，是“这次任务还值不值得继续往下展开”。
+  - `stable bytes / working set / free expansion` 在 userbook 主线里更稳的口语化表达，是“把精确事实放文件/附件，只把还要决定的部分留在对话里”“别为了再确认一次继续硬撑”。
+- 新的长期结论：
+  - 蓝皮书继续成熟后，最容易重新制造第二前门的往往不是深页正文，而是 support surface 页、atlas 页和 user-facing bridge 页；因为这些页天然会混 carrier、projection、evidence field 和根对象。
+  - 后续再做目录优化时，应长期优先检查三件事：carrier 有没有越位成根对象、projection 有没有越位成当前真相、user-facing bridge 有没有越位成内部框架说明。
+  - 根仓无法 `ff-only` 到 `origin/main` 且存在未解决冲突时，应长期把这件事只记录进记忆与 changelog，不把根工作区修复混进 `.worktrees/mainloop` 的文档批次里。
 - `bluebook/README`、`01-源码结构地图`、`05-功能全景与API支持`、`07-运行时契约、知识层与生态边界`、`03-设计哲学`、`architecture/31`、`guides/18`、`navigation/05`、`api/README`、`api/52` 与 `security/README` 现已继续把高频入口页里的旧结果词与旧证据梯度收回三条 canonical chain：
   - Prompt 线现在更明确要求入口页先交付 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`，再允许 `runtime contract / 协作语法 / 共享前缀资产网络 / 工作语法` 这些词作为 bridge 或 result word 出现。
   - 治理线现在更明确要求宿主消费页和安全入口页先交付 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，再允许 `pending_action / rollback object / signer + ledger + cleanup` 这些词作为投影或 carrier 出现。

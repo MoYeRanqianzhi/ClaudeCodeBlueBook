@@ -8,7 +8,7 @@
 4. 哪些命令目录最容易被误读，从而把产品边界和工程边界混写。
 5. 平台设计者该按什么顺序阅读 `commands/`。
 
-## 0. 代表性锚点与 authority ladder
+## 0. 代表性锚点与证据梯度
 
 代表性源码锚点：
 
@@ -19,7 +19,7 @@
 - `claude-code-source-code/src/commands/permissions/permissions.tsx:1-120`
 - `claude-code-source-code/src/commands/resume/resume.tsx:1-120`
 
-这页不再先靠目录体量解释自己，而是先给一条 authority ladder：
+这页不再先靠目录体量解释自己，而是先给一条证据梯度：
 
 1. `INTERNAL_ONLY_COMMANDS`
 2. `COMMANDS()`
@@ -58,70 +58,94 @@
 
 ## 3. 会话与状态控制命令
 
-- authority file：
+- `contract`：
   - `resume`、`compact`、`session`、`context`
-- consumer subset：
+- `registry`：
+  - `INTERNAL_ONLY_COMMANDS`、`COMMANDS()`、runtime command assembly
+- `current-truth surface`：
+  - 当前 live session / context / resume command surface
+- `consumer subset`：
   - 交互式与非交互式路径、不同 host shell 只拿部分控制投影
-- danger surface：
+- `hotspot kernel`：
   - 把恢复、压缩、导出写成便利命令，最容易把会话控制面写浅
-- first reject path：
-  - 一旦 continue / compact 看起来像小按钮，先回这些命令 authority 文件和 `commands.ts`
+- `mirror gap discipline`：
+  - 一旦 continue / compact 看起来像小按钮，先回这些命令 contract / registry 和 `commands.ts`
 
 ## 4. 模式与设置治理命令
 
-- authority file：
+- `contract`：
   - `permissions`、`plan`、`model`、`config`、`hooks`
-- consumer subset：
+- `registry`：
+  - command gating、mode assembly、user-type/build registration
+- `current-truth surface`：
+  - 当前 live governance command surface
+- `consumer subset`：
   - user type、mode 与 build 目标决定部分治理命令是否出现
-- danger surface：
+- `hotspot kernel`：
   - 把治理命令写成设置页入口，会直接抹平对象升级与边界改写
-- first reject path：
-  - 一旦权限、模型、sandbox 讨论开始退回 UI 控件，先回这些命令 authority 文件
+- `mirror gap discipline`：
+  - 一旦权限、模型、sandbox 讨论开始退回 UI 控件，先回这些命令 contract / registry
 
 ## 5. 扩展与连接装配命令
 
-- authority file：
+- `contract`：
   - `mcp`、`plugin`、`remote-env`、`bridge`
-- consumer subset：
+- `registry`：
+  - runtime command assembly、service bridge registration
+- `current-truth surface`：
+  - 当前 live connection / plugin control surface
+- `consumer subset`：
   - desktop、mobile、IDE、安装器与 wrapper 更多只是控制壳层
-- danger surface：
+- `hotspot kernel`：
   - 把命令 shell 误当配置真相，最容易把 services 层 authority 写丢
-- first reject path：
-  - 一旦外部连接看起来像命令层自己就能宣布边界，先回 `services/mcp`、`services/plugins` 与命令 authority 文件
+- `mirror gap discipline`：
+  - 一旦外部连接看起来像命令层自己就能宣布边界，先回 `services/mcp`、`services/plugins` 与命令 contract / registry
 
 ## 6. 交付、诊断与运营命令
 
-- authority file：
+- `contract`：
   - `review`、`security-review`、`doctor`、`cost / stats / usage`
-- consumer subset：
+- `registry`：
+  - review/diagnostic command registration、runtime assembly
+- `current-truth surface`：
+  - 当前 live diagnostic / review command surface
+- `consumer subset`：
   - 成本、统计、诊断大多是消费者可见投影，不是 budget / review authority 本身
-- danger surface：
+- `hotspot kernel`：
   - 把可见投影误写成底层真相，最容易把质量、预算和诊断边界写坏
-- first reject path：
+- `mirror gap discipline`：
   - 一旦 `usage / cost / doctor` 被当成全部真相，先回对应 runtime plane，而不是继续在命令壳层加说明
 
 ## 7. 协作、团队与工作流命令
 
-- authority file：
+- `contract`：
   - `agents`、`tasks`、`btw`、`brief.ts`
-- consumer subset：
+- `registry`：
+  - workflow / task / agent command registration
+- `current-truth surface`：
+  - 当前 live collaboration command surface
+- `consumer subset`：
   - branch / tag / files / passes 只覆盖协作工作流的某些外部控制动作
-- danger surface：
+- `hotspot kernel`：
   - 把多 agent / task runtime 退回命令菜单层，最容易写坏协作边界
-- first reject path：
-  - 一旦 `btw`、`agents`、`tasks` 看起来像快捷命令，先回协作 runtime 与这些命令的 authority 文件
+- `mirror gap discipline`：
+  - 一旦 `btw`、`agents`、`tasks` 看起来像快捷命令，先回协作 runtime 与这些命令的 contract / registry
 
 ## 8. Internal-Only / Feature-Gated 命令面
 
 这层的关键不是名册，而是边界：
 
-- authority file：
+- `contract`：
   - `INTERNAL_ONLY_COMMANDS`
-- consumer subset：
+- `registry`：
+  - build elimination、feature gate、user-type-gated command registration
+- `current-truth surface`：
+  - 当前真正已公开的 command surface
+- `consumer subset`：
   - feature-gated、user-type-gated、external build eliminated 都只是特殊命令子集
-- danger surface：
+- `hotspot kernel`：
   - 把 internal-only 命令误写成公开控制面，是命令 atlas 最常见的假承诺来源
-- first reject path：
+- `mirror gap discipline`：
   - 一旦“代码里有命令”被误读成“产品支持”，先回 `INTERNAL_ONLY_COMMANDS` 与构建剔除边界
 
 ## 9. Commands 的三个目录信号
@@ -149,4 +173,4 @@
 
 ## 11. 一句话总结
 
-`commands/` 二级目录 atlas 真正统一的，不是“有哪些 slash 命令”，而是“哪些显式控制动作被公开承诺、哪些只对特定消费者开放、哪些根本不该被误当公开能力”。
+`commands/` 二级目录 atlas 真正统一的，不是“有哪些 slash 命令”，而是“哪些显式控制动作沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 被公开承诺、被裁切或被拒收”。

@@ -8,7 +8,7 @@
 4. 哪些工具目录最容易被误读，从而把安全、token 或协作写坏。
 5. 平台设计者该按什么顺序阅读 `tools/`。
 
-## 0. 代表性锚点与 authority ladder
+## 0. 代表性锚点与证据梯度
 
 代表性源码锚点：
 
@@ -20,7 +20,7 @@
 - `claude-code-source-code/src/tools/REPLTool/primitiveTools.ts:1-120`
 - `claude-code-source-code/src/tools/MCPTool/MCPTool.ts:1-120`
 
-这页不再先靠文件数解释自己，而是先给一条 authority ladder：
+这页不再先靠文件数解释自己，而是先给一条证据梯度：
 
 1. `Tool.ts`
 2. `tools.ts`
@@ -63,68 +63,92 @@
 
 ## 3. 工作区与 Shell 执行原语
 
-- authority file：
+- `contract`：
   - `BashTool`、`PowerShellTool`、`FileRead/Edit/Write`
-- consumer subset：
+- `registry`：
+  - `Tool.ts`、`tools.ts`、tool registration / assembly
+- `current-truth surface`：
+  - 当前 built-in visible set 与 primitive execution shape
+- `consumer subset`：
   - REPL primitive VM、mode-specific 隐藏工具只是特殊子集
-- danger surface：
+- `hotspot kernel`：
   - path validation、mode validation、sandbox 与 destructive warnings 一旦失真，会直接破坏动作边界
-- first reject path：
-  - 一旦工作区语义开始漂移，先回各原语 authority 文件，不先改 UI 壳层
+- `mirror gap discipline`：
+  - 一旦工作区语义开始漂移，先回各原语 contract / registry，不先改 UI 壳层
 
 ## 4. 搜索、检索与外部信息原语
 
-- authority file：
+- `contract`：
   - `ToolSearchTool`、`GlobTool`、`GrepTool`、`WebFetchTool`、`WebSearchTool`
-- consumer subset：
+- `registry`：
+  - visible-set assembly、deferred visibility、ToolSearch registration
+- `current-truth surface`：
+  - 当前可见搜索原语与已暴露的延迟能力
+- `consumer subset`：
   - deferred tools、embedded search、host-specific web 能力都只是可见性子集
-- danger surface：
+- `hotspot kernel`：
   - 把搜索工具误写成永远主路径，会直接写坏 deferred visibility 与能力定价
-- first reject path：
-  - 一旦模型似乎一开始就“知道所有工具”，先回 `ToolSearchTool` 与 visible-set 裁切
+- `mirror gap discipline`：
+  - 一旦模型似乎一开始就“知道所有工具”，先回 `ToolSearchTool` 与 visible-set registry
 
 ## 5. 认知控制与交互原语
 
-- authority file：
+- `contract`：
   - `TodoWriteTool`、`AskUserQuestionTool`、`ConfigTool`、`Enter/ExitPlanModeTool`、`Enter/ExitWorktreeTool`
-- consumer subset：
+- `registry`：
+  - control tool registration、mode gating、plan/worktree assembly
+- `current-truth surface`：
+  - 当前用户真能调用的控制原语集合
+- `consumer subset`：
   - 用户类型、mode 与对象边界决定当前哪些控制原语可见
-- danger surface：
+- `hotspot kernel`：
   - 把对象升级原语误写成体验小功能，会直接写坏治理控制面
-- first reject path：
-  - 一旦 plan / worktree / ask-user 开始像 UI 快捷操作，先回这些 tool 的 authority 文件
+- `mirror gap discipline`：
+  - 一旦 plan / worktree / ask-user 开始像 UI 快捷操作，先回这些 tool 的 contract / registry
 
 ## 6. 任务、团队与编排原语
 
-- authority file：
+- `contract`：
   - `AgentTool`、`Task*`、`Team*`、`SendMessageTool`
-- consumer subset：
+- `registry`：
+  - task/team/worker registration、visibility gating、mailbox wiring
+- `current-truth surface`：
+  - 当前 live task / team / worker tool surface
+- `consumer subset`：
   - feature / mode / host 决定 task、team、worker 细节是否进入当前工具池
-- danger surface：
+- `hotspot kernel`：
   - 把对象化任务语义退回成“多开几个线程”，最容易破坏恢复与协作边界
-- first reject path：
-  - 一旦多 Agent 行为开始像线程技巧，先回 `AgentTool` 与 task 族 authority 文件
+- `mirror gap discipline`：
+  - 一旦多 Agent 行为开始像线程技巧，先回 `AgentTool` 与 task 族 contract / registry
 
 ## 7. 扩展、资源与桥接原语
 
-- authority file：
+- `contract`：
   - `MCPTool`、`McpAuthTool`、`SkillTool`、`LSPTool`
-- consumer subset：
+- `registry`：
+  - bridge tool registration、scope / policy / feature gating、visible-set assembly
+- `current-truth surface`：
+  - 当前 live bridge / extension tool surface
+- `consumer subset`：
   - host、scope、policy、feature 决定扩展桥接是否进入当前世界
-- danger surface：
+- `hotspot kernel`：
   - 把 bridge tool 误当默认主路径，会直接写坏 capability governance
-- first reject path：
-  - 一旦扩展能力看起来像无条件公开面，先回这些 bridge tool 的 authority 文件与 visible-set 裁切
+- `mirror gap discipline`：
+  - 一旦扩展能力看起来像无条件公开面，先回这些 bridge tool 的 contract / registry 与 visible-set 裁切
 
 ## 8. 环境自动化与内部测试原语
 
-- authority file：
+- `contract`：
   - `RemoteTriggerTool`、`ScheduleCronTool`、`SleepTool`
-- consumer subset：
+- `registry`：
+  - runtime automation registration、internal-only / testing subset wiring
+- `current-truth surface`：
+  - 当前真正已暴露的 automation tool surface
+- `consumer subset`：
   - `testing/`、`SyntheticOutputTool`、`shared/` 只构成内部或辅助子集
-- danger surface：
+- `hotspot kernel`：
   - 把内部测试面误写成正式公开工具面，最容易制造假承诺
-- first reject path：
+- `mirror gap discipline`：
   - 一旦环境自动化开始看起来像默认产品面，先回 visible-set 与 internal-only 边界
 
 ## 9. Tools 的四个治理信号
@@ -153,4 +177,4 @@
 
 ## 11. 一句话总结
 
-`tools/` 二级目录 atlas 真正统一的，不是“模型能调用哪些工具”，而是“哪些动作原语会在什么模式、什么消费者、什么治理条件下被看见和被允许”。
+`tools/` 二级目录 atlas 真正统一的，不是“模型能调用哪些工具”，而是“哪些动作原语沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 被看见和被允许”。

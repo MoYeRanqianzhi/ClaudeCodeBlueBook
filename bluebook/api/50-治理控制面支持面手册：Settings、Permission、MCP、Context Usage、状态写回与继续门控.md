@@ -1,11 +1,11 @@
-# 治理控制面支持面手册：Settings、Permission、MCP、Context Usage、状态写回与继续门控
+# 治理控制面支持面手册：governance key、truth chain、typed ask、decision window 与 continuation pricing
 
 这一章回答五个问题：
 
 1. Claude Code 当前到底通过哪些正式支持面暴露治理控制面。
 2. 哪些属于宿主可写控制请求，哪些属于宿主可消费状态面，哪些仍然是 internal-only 决策逻辑。
 3. 为什么 Settings、Permission、MCP、Context Usage 与状态写回必须一起看。
-4. 为什么 continuation gate 虽然没有单独公共对象，却已经通过多个支持面被正式外化。
+4. 为什么 continuation pricing 虽然没有单独公共对象，却已经通过多个支持面被正式外化。
 5. 平台设计者该按什么顺序接入这套治理控制面。
 
 ## 0. 关键源码锚点
@@ -29,11 +29,15 @@ Claude Code 当前并没有公开一份名为：
 但治理控制面已经通过三层支持面稳定暴露出来：
 
 1. `control requests`
-   - 宿主能写哪些治理输入。
+   - 宿主能写哪些 `governance key` 输入。
 2. `state / event surfaces`
-   - 宿主能看到哪些当前治理真相。
+   - 宿主能看到哪些 `externalized truth chain / typed ask / decision window` 投影。
 3. `internal decision machinery`
-   - 真正做仲裁、定价、继续判断的内部机制。
+   - 真正做仲裁、定价、继续判断与 cleanup 的内部机制。
+
+这三层支持面真正共同支撑的，是同一条：
+
+- `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
 
 更成熟的接入方式不是：
 
@@ -104,15 +108,15 @@ Claude Code 当前并没有公开一份名为：
 
 - 消费已经外化出来的 control / state / usage surfaces
 
-## 5. continuation gate 的支持面
+## 5. continuation pricing 与 cleanup 的支持面
 
-`continuation` 虽然没有一个单独公共对象，但它的判断条件已经通过多个支持面被看见：
+`continuation pricing` 虽然没有一个单独公共对象，但它的判断条件已经通过多个支持面被看见：
 
 1. `Context Usage`
 2. `pending_action`
 3. `worker_status`
 4. completion / stop 相关状态变化
-5. 当前 rollback / object upgrade 条件
+5. 当前 cleanup / object upgrade 条件
 
 所以 continuation 不该被理解成：
 
@@ -120,7 +124,7 @@ Claude Code 当前并没有公开一份名为：
 
 而更该被理解成：
 
-- 通过多个状态面共同暴露出来的时间边界
+- 通过多个状态面共同暴露出来的时间边界与 cleanup 资格
 
 ## 6. 三层支持矩阵
 
@@ -164,5 +168,4 @@ Claude Code 当前并没有公开一份名为：
 
 ## 8. 一句话总结
 
-Claude Code 的治理控制面支持面，不是一组零散 control API，而是“控制请求 + 状态写回 + 观测窗口 + 内部决策外化效果”共同组成的分层支持面。
-
+Claude Code 的治理控制面支持面，不是一组零散 control API，而是“`governance key` 输入 + `externalized truth chain` 写回 + `typed ask / decision window / continuation pricing` 投影 + internal-only cleanup machinery”共同组成的分层支持面。

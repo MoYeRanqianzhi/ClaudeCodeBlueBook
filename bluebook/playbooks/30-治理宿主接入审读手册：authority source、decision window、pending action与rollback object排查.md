@@ -1,10 +1,10 @@
-# 治理宿主接入审读手册：governance key、externalized truth、typed ask与rollback object排查
+# 治理宿主接入审读手册：governance key、truth chain、typed ask 与 cleanup carrier 排查
 
 这一章不再解释统一定价治理为什么重要，而是把它压成一张可持续执行的宿主接入审读手册。
 
 它主要回答五个问题：
 
-1. 团队怎样知道宿主当前仍在围绕同一个治理对象消费 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback object`。
+1. 团队怎样知道宿主当前仍在围绕同一个治理对象消费 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`。
 2. 哪些症状最能暴露 mode 崇拜、pending action 降格、Context Usage 仪表盘化与文件级回退。
 3. 哪些检查点最适合作为宿主接入门禁，而不是靠经验排障。
 4. 哪些治理宿主接法必须直接拒收，而不是等线上再救火。
@@ -32,7 +32,7 @@
 
 而是：
 
-- 宿主当前仍在围绕同一个治理对象消费 `governance key`、`externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `rollback object`
+- 宿主当前仍在围绕同一个治理对象消费 `governance key`、`externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `durable-transient cleanup`
 
 所以这层审读最先要看的不是：
 
@@ -44,7 +44,7 @@
 2. `typed ask` 是否仍是 externalized object，而不是提示语。
 3. Context Usage 是否仍在解释 `decision window`。
 4. continuation 是否仍围绕同一 settled state 与 externalized truth chain。
-5. rollback 是否仍围绕 `durable assets` 与 `transient authority` 的分界，而不是围绕文件。
+5. cleanup 是否仍围绕 `durable assets` 与 `transient authority` 的分界，而不是围绕文件。
 
 ## 2. 回归症状
 
@@ -69,8 +69,8 @@
    - 宿主是否仍把 `state + pending_action + Context Usage` 作为同一判断窗口，而不是把 `pending_action` 降格成显示文案。
 4. `continuation pricing continuity`
    - 当前 stop / continue / object upgrade 是否仍被当成正式时间边界，而不是脱离 settled state 免费继续。
-5. `rollback object continuity`
-   - 宿主是否仍知道回退到哪个治理对象、哪些 `durable assets` 应保留、哪些 `transient authority` 必须清空，而不是只剩文件动作。
+5. `cleanup continuity`
+   - 宿主是否仍知道沿哪个 cleanup carrier 回到治理对象、哪些 `durable assets` 应保留、哪些 `transient authority` 必须清空，而不是只剩文件动作。
 
 ## 4. 直接拒收条件
 
@@ -80,7 +80,7 @@
 2. `pending_action` / typed ask 只剩文案，或靠事件流 / spinner 反推，不剩对象字段。
 3. Context Usage 只剩仪表盘，不再进入 `decision window`。
 4. continuation 只看能不能继续，不看应不应该继续。
-5. rollback 被替换成“回退哪些文件”。
+5. cleanup 被替换成“回退哪些文件”。
 
 ## 5. 最小演练集
 
@@ -95,7 +95,7 @@
 4. headless / background deny
    - 确认宿主不会把无弹窗条件误解成默认继续。
 5. `rewind_files`
-   - 确认宿主能把 file rewind 链回 rollback object，而不是只展示文件列表。
+   - 确认宿主能把 file rewind 链回 cleanup carrier，而不是只展示文件列表。
 
 ## 6. 复盘记录最少字段
 
@@ -107,7 +107,7 @@
 4. `typed_ask_ref`
 5. `decision_window_ref`
 6. `continuation_pricing_ref`
-7. `rollback_object`
+7. `cleanup_carrier`
 8. `symptom`
 9. `reject_reason`
 10. `recovery_action`
@@ -130,8 +130,8 @@
 2. typed ask 在我的系统里还是 externalized object，还是已经退化成文案。
 3. Context Usage 还在解释 `decision window`，还是只在展示成本。
 4. continuation 是正式时间边界，还是默认继续。
-5. rollback 在我的系统里还是对象，还是已经退化成文件回退。
+5. cleanup 在我的系统里还是对象，还是已经退化成文件回退。
 
 ## 9. 一句话总结
 
-真正成熟的治理宿主接入审读，不是看控制请求能不能跑通，而是持续证明宿主仍围绕同一个治理对象消费 `governance key`、`externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `rollback object`。
+真正成熟的治理宿主接入审读，不是看控制请求能不能跑通，而是持续证明宿主仍围绕同一个治理对象消费 `governance key`、`externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `durable-transient cleanup`。
