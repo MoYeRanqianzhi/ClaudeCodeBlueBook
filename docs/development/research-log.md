@@ -6,6 +6,10 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮正文深化动作: 已继续更新 `philosophy/84 / 85 / 86 / 87` 与 `navigation/07 / 15 / 41 / 46`，把 Prompt 魔力、安全与省 token 同构、当前真相保护、合法复杂度中心与宿主迁移顺序进一步压回第一性原理、反证式苏格拉底追问与更硬的源码证据，不再让这些页继续承担“最近稳定下来 / 这一轮该怎么整理”式元叙事。
+- 本轮并行 Agent 结论吸收: Prompt 侧线已进一步确认真正起作用的是 `system sections + tool descriptions + agent prompts + attachment deltas + compact/resume contract`，治理侧线已进一步确认 `persist+preview / compact / halt` 与 `allow / ask / deny` 属于同一扩张定价链，结构侧线已进一步确认旧对象的合法命运应被压成 `invalidate / relink / adopt / projection` 四类动作。
+- 本轮目录结构判断加固: 当前最值钱的结构优化已不只是让 README 同构，而是把 `philosophy / architecture / api / guides / playbooks / casebooks / navigation / docs` 明确写成一条证据梯度；目录成熟的标志不是入口更短，而是“判断、对象、合同、模板、verdict、distortion、judgment map、memory”不再混写。
+- 本轮并行 Agent 经验: 已再次显式并行派发 Prompt / 治理 / 源码质量三条侧线；但 explorer 回传不稳定，因此主线策略仍应保持“侧线只做证据补强，不能阻塞当前 worktree 的验证与提交”。
 - 本轮 README 三线对称化动作: 已继续更新 `guides/README`、`philosophy/README`、`playbooks/README` 与 `casebooks/README`，把四页进一步压成 Prompt / 治理 / 当前真相保护三线对称入口，并把 `playbooks` 写成可准入 / 可收口 / 已闭环的判决状态，把 `casebooks` 写成请求装配伪装 / 准入主权篡位 / 当前真相面篡位三类失真状态。
 - 本轮目录结构判断加固: 当前最值钱的目录优化不再只是把 README 从路径表改成判断式入口，而是让不同目录首页开始共享同一条三线语法；这样目录结构才会更像单一宪法的分发面，而不是多套局部首页各自组织读者。
 - 本轮并行 Agent 经验: Prompt 与结构侧线继续给出了有效的 front-door debt 信号，治理侧线再次受 `429` 限流影响；后续并行多 Agent 仍有收益，但要继续控制并发并把任务压到单页。

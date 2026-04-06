@@ -3,7 +3,7 @@
 这篇聚焦迁移次序本身。
 
 - 核心问题不是再列一份接入清单，而是当 `message lineage / projection consumer / continuation qualification`、`governance key / externalized truth chain / decision window / continuation pricing` 与 `current-truth surface / freshness gate / ghost capability` 已经成立后，团队该按什么顺序把它们写进宿主、CI 与交接系统，才不会重新制造第二真相。
-- 读这篇时要抓住三件事：哪一个对象必须先成为 single source、哪一种控制权必须后开放、哪一种交接包一旦缺失就会把系统重新推回口头交接。
+- 读这篇时要抓住四个门槛：哪一个对象必须先成为 single source、哪一种投影只能先只读开放、哪一种控制权必须后开放、哪一种继续/回退资格一旦抢跑就会让旧世界重新篡位。
 
 ## 1. Prompt 宿主迁移工单线
 
@@ -66,16 +66,33 @@
 
 而是：
 
-- 把故障模型宿主接入重新写成 current-truth surface、writeback 主路径、恢复资产边界、freshness gate 与 ghost capability 结果面的正式迁移工单
+- 把当前真相保护宿主接入重新写成 current-truth surface、writeback 主路径、恢复资产边界、freshness gate 与 ghost capability 结果面的正式迁移工单
 
 ## 4. 迁移工单必须守住的门槛
 
 真正要命的不是工单写得不够长，而是对象进入宿主前没有先过门槛：
 
-1. 前置单一真相：老宿主应先拆哪一层旧假设，哪个对象必须先成为 single source。
-2. 最小交接包：交接包至少要带哪些对象，才能不重新退回口头交接。
-3. 灰度开放顺序：灰度时先开放哪一种只读投影，后开放哪一种控制权。
-4. 禁止提前开放：哪些继续、回退与恢复控制一旦抢跑，就会重新制造第二真相。
+1. 前置单一真相
+   - 老宿主应先拆哪一层旧假设，哪个对象必须先成为 single source。
+2. 只读投影优先
+   - 灰度时应先开放哪一种 read-only projection，先让宿主、CI 与交接系统学会消费同一真相。
+3. 控制权后开放
+   - 哪一种 approve / continue / rollback / recovery control 必须等到前两步稳定后才配开放。
+4. 继续资格最后发放
+   - 哪些 continuation、回退与恢复资格一旦提前发放，就会让旧主语重新越权。
+5. 最小交接包
+   - 交接包至少要带哪些正式对象，才能不重新退回口头交接。
+
+### 顺序错了会怎样
+
+迁移最常见的失败，不是对象不存在，而是顺序倒了：
+
+1. 先开放控制权、后统一真相
+   - 结果是每个宿主都带着旧假设宣布自己理解对了。
+2. 先发继续资格、后做只读投影
+   - 结果是系统继续了，但没有任何消费者还围绕同一对象继续。
+3. 先交接摘要、后补正式对象
+   - 结果是交接包看起来完整，实际上没有 single source 可供后续灰度与回退复用。
 
 ## 5. 苏格拉底式自检
 

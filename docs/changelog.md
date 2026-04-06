@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `philosophy/84 / 85 / 86 / 87` 与 `navigation/07 / 15 / 41 / 46`，把 Prompt 魔力、安全与省 token 同构、当前真相保护、合法复杂度中心与宿主迁移顺序进一步压回第一性原理、反证式苏格拉底追问与更硬的源码证据，并把蓝皮书目录结构继续收口成 `philosophy / architecture / api / guides / playbooks / casebooks / navigation / docs` 各守一种证据职责的稳定分工
 - 继续更新 `guides/README`、`philosophy/README`、`playbooks/README` 与 `casebooks/README`，把四页进一步压成 Prompt / 治理 / 当前真相三线对称的判断式入口，并把 `playbooks` 收成可准入 / 可收口 / 已闭环的判决状态，把 `casebooks` 收成请求装配伪装 / 准入主权篡位 / 当前真相面篡位三类失真状态
 - 继续更新 `guides/README`、`philosophy/README`、`playbooks/README` 与 `casebooks/README`，把 `目录分层 / 推荐入口 / 使用方式 / 适合什么时候读 / 从 X 到 Y` 这类库存页与路径表语气收回到 `什么时候进来 / 如果你只先判断一件事 / 如果失真发生在 / 这里不回答什么`，继续把目录 README 压成 judgment-first 入口页
 - 继续更新 `navigation/03`、`navigation/07`、`navigation/41` 与 `navigation/46`，把 `进入顺序 / 推荐阅读链 / 规范锚点 / 证明页 / 共同次序` 这类 route-map 语法继续收回到 `误判校正入口 / 先问 / 成立证据 / 补充证据 / 方法判据 / 迁移门槛`，并把结构线 visible root 继续从 `authority object` 收回到 `current-truth surface`

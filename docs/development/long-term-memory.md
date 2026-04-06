@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `philosophy/84 / 85 / 86 / 87` 与 `navigation/07 / 15 / 41 / 46` 现已继续向“第一性原理 + 反证 + 失稳前追问”收口：
+  - Prompt 线现已更明确把真正的 request surface 写成 `system sections + tool descriptions + agent prompts + attachment deltas + compact/resume contract`，不再默认把 system prompt 当成唯一主角。
+  - Prompt 魔力现已更明确被写成 world admission、section boundary 与 continuation qualification 的编译秩序，而不是措辞强度。
+  - 安全与省 token 现已更明确被写成同一条扩张定价链，而不是风险控制和成本优化两套平行话题；`persist+preview / compact / halt` 与 `allow / ask / deny` 现在都被视为同一治理动作在不同资产上的投影。
+  - 源码先进性现已更明确被写成 `stale writer 不得清理现在 / 恢复资产不得篡位现在 / event timeline 不得冒充 present truth` 的当前真相保护纪律；旧对象若还想影响 present，其合法命运应被压成 `invalidate / relink / adopt / projection`。
+  - 宿主迁移顺序现已更明确被写成 `single source -> 只读投影 -> 控制权 -> continuation / rollback 资格 -> 最小交接包` 的固定门槛，而不是功能接入清单。
+- 新的长期结论：
+  - 当正文已经进入 doctrine 阶段，最该继续清理的常常不是对象链本身，而是“最近稳定下来 / 这一轮怎么整理 / 作者写到哪里”的元叙事；这些句子会把正文重新拖回记忆仓库。
+  - 目录结构真正成熟时，必须按证据梯度固定分工：`philosophy` 负责不可约判断，`architecture` 负责对象与 choke point，`api` 负责 contract，`guides` 负责模板，`playbooks` 负责 verdict，`casebooks` 负责 distortion，`navigation` 负责 judgment map，`docs` 负责 memory。
 - `guides/README / philosophy/README / playbooks/README / casebooks/README` 现已继续向三线对称前门收口：
   - 四页现在都更明确地围绕 Prompt / 治理 / 当前真相保护来给判断入口，而不是继续各自按编号段和链路感组织首页。
   - `guides/README` 更明确把 `99 / 100 / 101` 写成三条高阶审读入口；`philosophy/README` 更明确把 `84 / 85 / 86-87` 写成三条哲学判断；`playbooks/README` 更明确把 `29-31 / 65-67 / 77-79` 写成可准入 / 可收口 / 已闭环三类执行状态；`casebooks/README` 更明确把 `73 / 74 / 75` 写成三类失真状态而不是样本货架。
