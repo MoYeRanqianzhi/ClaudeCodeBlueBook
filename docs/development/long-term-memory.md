@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/59 / 60 / 61` 已继续把三条“改写执行链”拉到和后段页面同代：
+  - `59` 现已把 Prompt rewrite 从单纯 `compiled request truth` 压到 `message lineage / projection consumer / continuation object`。
+  - `60` 现已把治理 rewrite 从抽象 `authority source restitution` 压到 `governance key / externalized truth chain / durable-vs-transient`。
+  - `61` 现已把结构 rewrite 从旧的 writeback seam 语法压到 `event stream / state writeback / freshness gate / stale worldview / ghost capability`。
+- 新的长期结论：
+  - 三条执行链的上游改写页必须先换代，后面的 repair/refinement 页才不会持续复写旧对象语法。
+  - Prompt 线真正成熟时，`message lineage` 不只是验收/验证对象，也必须成为 rewrite / repair 页的主对象。
+  - 治理线真正成熟时，`governance key` 与 `externalized truth chain` 必须从 rewrite 开始就压过 `permission_mode`。
+  - 结构线真正成熟时，`event stream / state writeback` 的分工与 `freshness gate` 应从 rewrite 开始就成为正式 seam，而不是到验收/验证页才出现。
 - `playbooks/65 / 75 / 76` 已继续把三条“精修链”补到和前面验收、验证、再纠偏页同代：
   - `65` 现已把 Prompt 精修从 `compiled request truth` 链继续压到 `message lineage / projection consumer / continuation object`。
   - `75` 现已把治理精修从 `authority mode` / `mode panel` 语法继续压到 `governance key / externalized truth / durable-vs-transient`。
