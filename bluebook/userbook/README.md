@@ -104,6 +104,8 @@
   [05-控制面深挖/56-initialize、can_use_tool、control_response、control_cancel_request 与 result：为什么 remote bridge 的握手、提问、作答、撤销与回合收口不是同一种状态交接.md](./05-控制面深挖/56-initialize、can_use_tool、control_response、control_cancel_request%20与%20result：为什么%20remote%20bridge%20的握手、提问、作答、撤销与回合收口不是同一种状态交接.md)
 - 分清 `useRemoteSession`、`useDirectConnect` 与 `useSSHSession` 为什么不是同一种远端会话合同：
   [05-控制面深挖/57-useRemoteSession、useDirectConnect 与 useSSHSession：为什么看起来都是远端 REPL，但连接、重连、权限与退出不是同一种会话合同.md](./05-控制面深挖/57-useRemoteSession、useDirectConnect%20与%20useSSHSession：为什么看起来都是远端%20REPL，但连接、重连、权限与退出不是同一种会话合同.md)
+- 分清 attached assistant REPL 的首问加载、历史翻页与会话标题为什么不是同一种主权：
+  [05-控制面深挖/58-viewerOnly、hasInitialPrompt、useAssistantHistory 与 updateSessionTitle：为什么 attached assistant REPL 的首问加载、历史翻页与会话标题不是同一种主权.md](./05-控制面深挖/58-viewerOnly、hasInitialPrompt、useAssistantHistory%20与%20updateSessionTitle：为什么%20attached%20assistant%20REPL%20的首问加载、历史翻页与会话标题不是同一种主权.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：

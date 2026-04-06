@@ -46,3 +46,4 @@
 - [44-Remote Control received、processed、write cursor、echo dedup 与 replay dedup 索引.md](./44-Remote%20Control%20received、processed、write%20cursor、echo%20dedup%20与%20replay%20dedup%20索引.md)
 - [45-Remote Control can_use_tool、control_response、control_cancel_request、result 与 state handoff 索引.md](./45-Remote%20Control%20can_use_tool、control_response、control_cancel_request、result%20与%20state%20handoff%20索引.md)
 - [46-Remote useRemoteSession、useDirectConnect 与 useSSHSession 索引.md](./46-Remote%20useRemoteSession、useDirectConnect%20与%20useSSHSession%20索引.md)
+- [47-Remote attached history、loading 与 title ownership 索引.md](./47-Remote%20attached%20history、loading%20与%20title%20ownership%20索引.md)

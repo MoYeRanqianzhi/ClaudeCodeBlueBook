@@ -65,5 +65,6 @@
 - [55-received、processing、processed、lastWrittenIndexRef、recentPostedUUIDs、recentInboundUUIDs 与 sentUUIDsRef：为什么 remote bridge 的送达回执、增量转发、echo 过滤与重放防重不是同一种去重.md](./55-received、processing、processed、lastWrittenIndexRef、recentPostedUUIDs、recentInboundUUIDs%20与%20sentUUIDsRef：为什么%20remote%20bridge%20的送达回执、增量转发、echo%20过滤与重放防重不是同一种去重.md)
 - [56-initialize、can_use_tool、control_response、control_cancel_request 与 result：为什么 remote bridge 的握手、提问、作答、撤销与回合收口不是同一种状态交接.md](./56-initialize、can_use_tool、control_response、control_cancel_request%20与%20result：为什么%20remote%20bridge%20的握手、提问、作答、撤销与回合收口不是同一种状态交接.md)
 - [57-useRemoteSession、useDirectConnect 与 useSSHSession：为什么看起来都是远端 REPL，但连接、重连、权限与退出不是同一种会话合同.md](./57-useRemoteSession、useDirectConnect%20与%20useSSHSession：为什么看起来都是远端%20REPL，但连接、重连、权限与退出不是同一种会话合同.md)
+- [58-viewerOnly、hasInitialPrompt、useAssistantHistory 与 updateSessionTitle：为什么 attached assistant REPL 的首问加载、历史翻页与会话标题不是同一种主权.md](./58-viewerOnly、hasInitialPrompt、useAssistantHistory%20与%20updateSessionTitle：为什么%20attached%20assistant%20REPL%20的首问加载、历史翻页与会话标题不是同一种主权.md)
 
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。
