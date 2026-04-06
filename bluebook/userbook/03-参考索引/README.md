@@ -68,6 +68,18 @@
 64. 为什么 remote session 的 `stream_event` / `task_started` / `task_notification` 与 direct connect 的 `transcript/overlay/stderr` 不是同一种消费合同。
 65. 为什么同一 remote session 事件不会以同样厚度出现在 transcript、streaming、footer 和 brief idle 里。
 66. 为什么 remote session 的 `slash_commands`、`stream_event`、`task_*` 与 `status=compacting` 不是同一种消费者。
+67. 为什么 remote session 的远端发布命令面、本地保留命令面、输入框候选面与实际执行路由不是同一张命令表。
+68. 为什么同一 REPL 审批外观背后其实是五张不同的主权图，而不是同一种本地 approval shell。
+69. 为什么 `permission_request`、`sandbox_permission_request` 与 `plan_approval_request` 虽然都走 teammate mailbox，却不是同一种协议族。
+70. 为什么 `shutdown_request`、`shutdown_approved` 与 `shutdown_rejected` 也走 teammate mailbox，却属于 termination lifecycle，而不是 approval protocol。
+71. 为什么 `shutdown_request`、`shutdown_rejected`、`shutdown_approved`、`teammate_terminated` 与 `stopping` 不会完整落在同一可见消息面。
+72. 为什么 `shutdown_request`、`shutdown_approved`、`shutdown_rejected`、`teammate_terminated` 在 routing 层就已经分道扬镳，而不会共用同一条 mailbox 通道。
+73. 为什么 `useInboxPoller`、`attachments.ts` 与 `print.ts` 虽然都在处理 shutdown 收口，却不共享同一条宿主路径。
+74. 为什么同一个 in-process teammate 明明仍是 `running`，却会在 `stopping`、`awaiting approval`、`idle` 与 working 之间投影成不同状态面。
+75. 为什么 headless `print` 在 `inputClosed` 之后不会直接结束，而会进入一条先等 idle、再 shutdown team 的 drain 协议。
+76. 为什么 headless `print` 在 teammates 仍 active 时会持续 poll unread mailbox，并把 teammate 输出折返进主 run loop，而不是像被动 inbox reader 那样工作。
+77. 为什么 headless `print` 的主线程队列更像 single-consumer pump，而不是一个普通事件订阅器。
+78. 为什么 headless `print` 的 prompt batching 不是普通批量出队，而是 workload/meta/uuid 受约束的单 turn 合批。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

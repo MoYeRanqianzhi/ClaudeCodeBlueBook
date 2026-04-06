@@ -75,6 +75,22 @@
 - [71-2026-04-06-remote local command plane selective thinning 拆分记忆.md](./71-2026-04-06-remote%20local%20command%20plane%20selective%20thinning%20拆分记忆.md)
 - [72-2026-04-06-remote tool plane stays live 拆分记忆.md](./72-2026-04-06-remote%20tool%20plane%20stays%20live%20拆分记忆.md)
 - [73-2026-04-06-remote tool plane local authority 拆分记忆.md](./73-2026-04-06-remote%20tool%20plane%20local%20authority%20拆分记忆.md)
+- [74-2026-04-06-remote approval shell vs authority 拆分记忆.md](./74-2026-04-06-remote%20approval%20shell%20vs%20authority%20拆分记忆.md)
+- [75-2026-04-06-remote approval topology 拆分记忆.md](./75-2026-04-06-remote%20approval%20topology%20拆分记忆.md)
+- [76-2026-04-06-local modal shell family 拆分记忆.md](./76-2026-04-06-local%20modal%20shell%20family%20拆分记忆.md)
+- [77-2026-04-06-worker mailbox ToolUseConfirm rewrap 拆分记忆.md](./77-2026-04-06-worker%20mailbox%20ToolUseConfirm%20rewrap%20拆分记忆.md)
+- [78-2026-04-06-worker sandbox mailbox queue 拆分记忆.md](./78-2026-04-06-worker%20sandbox%20mailbox%20queue%20拆分记忆.md)
+- [79-2026-04-06-approval shell atlas 拆分记忆.md](./79-2026-04-06-approval%20shell%20atlas%20拆分记忆.md)
+- [80-2026-04-06-mailbox protocol family 拆分记忆.md](./80-2026-04-06-mailbox%20protocol%20family%20拆分记忆.md)
+- [81-2026-04-06-shutdown mailbox lifecycle family 拆分记忆.md](./81-2026-04-06-shutdown%20mailbox%20lifecycle%20family%20拆分记忆.md)
+- [82-2026-04-06-shutdown visible surfaces split 拆分记忆.md](./82-2026-04-06-shutdown%20visible%20surfaces%20split%20拆分记忆.md)
+- [83-2026-04-06-shutdown mailbox routing split 拆分记忆.md](./83-2026-04-06-shutdown%20mailbox%20routing%20split%20拆分记忆.md)
+- [84-2026-04-06-shutdown host paths split 拆分记忆.md](./84-2026-04-06-shutdown%20host%20paths%20split%20拆分记忆.md)
+- [85-2026-04-06-in-process teammate state projection 拆分记忆.md](./85-2026-04-06-in-process%20teammate%20state%20projection%20拆分记忆.md)
+- [86-2026-04-06-headless print team drain 拆分记忆.md](./86-2026-04-06-headless%20print%20team%20drain%20拆分记忆.md)
+- [87-2026-04-06-headless print mailbox polling 拆分记忆.md](./87-2026-04-06-headless%20print%20mailbox%20polling%20拆分记忆.md)
+- [88-2026-04-06-headless print queue reentry 拆分记忆.md](./88-2026-04-06-headless%20print%20queue%20reentry%20拆分记忆.md)
+- [89-2026-04-06-headless print prompt batching 拆分记忆.md](./89-2026-04-06-headless%20print%20prompt%20batching%20拆分记忆.md)
 
 用途：
 
