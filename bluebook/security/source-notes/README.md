@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 38 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 44 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -57,6 +57,12 @@
 36. [36-control_response回放与日志面的强请求审计关闭治理边界](36-control_response%E5%9B%9E%E6%94%BE%E4%B8%8E%E6%97%A5%E5%BF%97%E9%9D%A2%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E5%AE%A1%E8%AE%A1%E5%85%B3%E9%97%AD%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 37. [37-debug.ts、diagLogs、cleanup、sessionStorage与fileHistory的强请求不可逆擦除治理边界](37-debug.ts、diagLogs、cleanup、sessionStorage与fileHistory的强请求不可逆擦除治理边界.md)
 38. [38-cleanup、backgroundHousekeeping、settings与diagLogs-env选路的强请求保留期治理边界](38-cleanup、backgroundHousekeeping、settings与diagLogs-env选路的强请求保留期治理边界.md)
+39. [39-settings文案、sessionStorage、backgroundHousekeeping、cleanup与diagLogs的强请求保留期执行诚实性边界](39-settings文案、sessionStorage、backgroundHousekeeping、cleanup与diagLogs的强请求保留期执行诚实性边界.md)
+40. [40-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock的强请求清理隔离治理边界](40-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock的强请求清理隔离治理边界.md)
+41. [41-diskOutput、sessionStorage、toolResultStorage、cleanup、debug与diagLogs的强请求清理家族宪法边界](41-diskOutput、sessionStorage、toolResultStorage、cleanup、debug与diagLogs的强请求清理家族宪法边界.md)
+42. [42-diskOutput、toolResultStorage、plans、debug与diagLogs的强请求清理制度理由与漂移边界](42-diskOutput、toolResultStorage、plans、debug与diagLogs的强请求清理制度理由与漂移边界.md)
+43. [43-cleanup、settings、diskOutput、plans、debug与diagLogs的强请求清理元数据缺口](43-cleanup、settings、diskOutput、plans、debug与diagLogs的强请求清理元数据缺口.md)
+44. [44-cleanupPeriodDays、housekeeping、plansDirectory与CleanupResult的强请求运行时符合性缺口](44-cleanupPeriodDays、housekeeping、plansDirectory与CleanupResult的强请求运行时符合性缺口.md)
 
 ## 和其他目录的分工
 

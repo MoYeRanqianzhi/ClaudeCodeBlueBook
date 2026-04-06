@@ -1,10 +1,10 @@
-# 如何把Prompt宿主修复监护失真压回compiled request truth：固定纠偏顺序、拒收升级路径与改写模板骨架
+# 如何把Prompt宿主修复监护失真压回message lineage、continuation object与reopen gate：固定纠偏顺序、拒收升级路径与改写模板骨架
 
 这一章不再解释 Prompt 宿主修复监护执行最常怎样失真，而是把 Claude Code 式 Prompt 监护纠偏压成一张可执行的 builder-facing 手册。
 
 它主要回答五个问题：
 
-1. 为什么 Prompt 监护纠偏真正要救回的不是更漂亮的 watch note，而是同一个 `compiled request truth` 与 continuation object。
+1. 为什么 Prompt 监护纠偏真正要救回的不是更漂亮的 watch note，而是同一条 `message lineage`、同一个 `continuation object` 与同一条 `reopen gate`。
 2. 怎样把假观察、假冻结与假 reopen 压回固定纠偏顺序。
 3. 哪些现象应被直接升级为硬拒收，而不是继续观察。
 4. 怎样把 watch card、handoff freeze 与 reopen ticket 重新压回对象级骨架。
@@ -36,7 +36,9 @@ Prompt 监护纠偏真正要救回的不是：
 
 而是：
 
-- 模型与 later 接手者真正继续消费的同一个 `compiled request truth`
+- 模型与 later 接手者真正继续消费的同一条 `message lineage`
+- display / protocol / handoff 仍围绕这条 lineage 对齐的同一组 projection consumer
+- compact、冻结与重开之后仍被共同承认的同一个 `continuation object`
 
 所以更稳的纠偏目标不是：
 
@@ -45,7 +47,7 @@ Prompt 监护纠偏真正要救回的不是：
 而是：
 
 1. 先把 `watch_window` 从 closeout note 与观察说明里救出来。
-2. 先把 `baseline_drift_ledger` 从 reviewer 注释与 narrative monitoring 里救出来。
+2. 先把 `projection_consumer_alignment` 从 reviewer 注释与 narrative monitoring 里救出来。
 3. 先把 `handoff_freeze` 从摘要暂停与提醒语气里救出来。
 4. 先把 `reopen_gate` 从按钮状态与旧消息里救出来。
 5. 先把 `watch_verdict` 降回结果信号，而不是让它充当主对象。
@@ -56,27 +58,27 @@ Prompt 监护纠偏真正要救回的不是：
 
 第一步不是改写 watch note，而是冻结假观察信号：
 
-1. 禁止 `watch_verdict=stable_under_watch` 在 request object 复核之前生效。
-2. 禁止 narrative monitoring 继续替代 drift ledger。
-3. 禁止 closeout note 与 summary handoff 充当 watch window 主对象。
+1. 禁止 `watch_verdict=stable_under_watch` 在 `message_lineage_ref` 复核之前生效。
+2. 禁止 narrative monitoring 继续替代 `protocol_drift_ledger`。
+3. 禁止 closeout note 与 summary handoff 充当 `watch_window` 主对象。
 
 最小恢复对象：
 
 1. `watch_window_id`
-2. `restored_request_object_id`
-3. `compiled_request_hash`
+2. `message_lineage_ref`
+3. `restored_request_object_id`
 4. `stable_prefix_boundary`
 5. `monitor_only_reason`
 
-### 2.2 再恢复 drift ledger
+### 2.2 再恢复 projection consumer 与 drift ledger
 
 第二步要救回：
 
-1. `protocol_truth_witness`
-2. `lawful_forgetting_witness`
-3. `baseline_reset_witness`
-4. `drift_events`
-5. `protocol_recheck_at`
+1. `projection_consumer_alignment`
+2. `protocol_transcript_witness`
+3. `lawful_forgetting_witness`
+4. `baseline_reset_witness`
+5. `drift_events`
 
 不要继续做的事：
 
@@ -92,7 +94,7 @@ Prompt 监护纠偏真正要救回的不是：
 2. `handoff_status`
 3. `consumer_readiness_handoff`
 4. `required_preconditions`
-5. `continuation_object_attested`
+5. `continuation_object_ref`
 
 这一步的目标不是更容易读，而是更容易阻断错误交接。
 
@@ -119,8 +121,8 @@ Prompt 监护纠偏真正要救回的不是：
 
 不要反过来：
 
-1. 不要先润色 drift reason，再修 watch window。
-2. 不要先恢复旧 summary，再修 drift ledger。
+1. 不要先润色 drift reason，再修 `message_lineage_ref`。
+2. 不要先恢复旧 summary，再修 projection consumer 对齐。
 3. 不要先让 reopen 可点，再修 `reopen_gate`。
 
 ## 3. 硬拒收规则
@@ -128,13 +130,13 @@ Prompt 监护纠偏真正要救回的不是：
 出现下面情况时，应直接升级为硬拒收：
 
 1. `watch_window` 缺席，或仍主要绑定 closeout note 与 summary。
-2. `baseline_drift_ledger` 缺席，或仍被观察说明替代。
-3. `protocol_truth_witness`、`lawful_forgetting_witness` 与 `baseline_reset_witness` 不再进入正式 drift ledger。
-4. `handoff_freeze` 缺席，或 later 仍可继续消费旧摘要而不是 continuation object。
-5. `reopen_gate` 缺席，而重开仍由按钮状态、最后一条消息与“现在没报错”决定。
-6. `watch_verdict` 先于对象复核生效。
-7. `narrative_override_detected`、`handoff_blocked`、`reopen_required` 任一命中后仍继续发放 handoff。
-8. `watch_window_expired` 后仍以‘先盯着’替代正式 reopen 判定。
+2. `message_lineage_ref` 缺席，或仍被局部解释字段替代。
+3. `projection_consumer_alignment` 缺席，或 display / protocol / handoff 已经分家。
+4. `protocol_transcript_witness`、`lawful_forgetting_witness` 与 `baseline_reset_witness` 不再进入正式 drift ledger。
+5. `handoff_freeze` 缺席，或 later 仍可继续消费旧摘要而不是 `continuation_object_ref`。
+6. `reopen_gate` 缺席，而重开仍由按钮状态、最后一条消息与“现在没报错”决定。
+7. `watch_verdict` 先于对象复核生效。
+8. `watch_window_expired` 后仍以“先盯着”替代正式 reopen 判定。
 
 ## 4. 模板骨架
 
@@ -142,22 +144,22 @@ Prompt 监护纠偏真正要救回的不是：
 
 1. `watch_card_id`
 2. `watch_window_id`
-3. `restored_request_object_id`
-4. `compiled_request_hash`
-5. `baseline_drift_ledger`
+3. `message_lineage_ref`
+4. `projection_consumer_alignment`
+5. `protocol_drift_ledger`
 6. `handoff_watch`
 7. `handoff_status`
-8. `reopen_gate`
-9. `watch_verdict`
+8. `continuation_object_ref`
+9. `reopen_gate`
 10. `watch_deadline`
 
 ### 4.2 冻结阻断模板骨架
 
 1. `handoff_freeze_reason`
-2. `object_gap`
-3. `drift_gap`
+2. `lineage_gap`
+3. `projection_gap`
 4. `protocol_gap`
-5. `baseline_gap`
+5. `boundary_gap`
 6. `reopen_condition`
 7. `required_preconditions`
 
@@ -165,21 +167,21 @@ Prompt 监护纠偏真正要救回的不是：
 
 1. `reopen_trigger`
 2. `rollback_boundary`
-3. `restored_request_object_id`
+3. `message_lineage_ref`
 4. `re_entry_warranty`
-5. `pending_action_ref`
+5. `continuation_object_ref`
 6. `gate_expires_at`
 
 ## 5. 苏格拉底式检查清单
 
 在你准备宣布“Prompt 监护失真已经纠偏完成”前，先问自己：
 
-1. 我救回的是 `compiled request truth`，还是一份更像正式文件的 watch note。
-2. 我现在保护的是 drift ledger，还是一套更会解释的观察文本。
-3. 我现在冻结的是 continuation object，还是一段摘要。
+1. 我救回的是 `message lineage`，还是一份更像正式文件的 watch note。
+2. 我现在保护的是 projection consumer 对齐，还是一套更会解释的观察文本。
+3. 我现在冻结的是 `continuation object`，还是一段摘要。
 4. 我现在重开的是同一真相，还是默认继续。
 5. 我现在保护的是 lawful forgetting boundary，还是 compact 之后的舒适感。
 
 ## 6. 一句话总结
 
-真正成熟的 Prompt 监护纠偏，不是把 watch card 写得更像运维文档，而是把假观察、假冻结与假 reopen 重新压回同一个 `compiled request truth`。
+真正成熟的 Prompt 监护纠偏，不是把 watch card 写得更像运维文档，而是把假观察、假冻结与假 reopen 重新压回同一条 `message lineage`、同一个 `continuation object` 与同一条正式 `reopen gate`。

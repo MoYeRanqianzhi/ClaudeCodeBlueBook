@@ -1,4 +1,4 @@
-# 结构宿主修复演练反例：breadcrumb篡位、旁路写回与anti-zombie伪证明
+# 结构宿主修复演练反例：breadcrumb篡位、旁路写回与stale-worldview伪证明
 
 这一章不再回答“结构宿主修复演练该怎样运行”，而是回答：
 
@@ -7,9 +7,9 @@
 它主要回答五个问题：
 
 1. 为什么结构宿主修复演练最危险的失败方式不是“没有升级卡”，而是“升级卡存在，却仍围绕入口感与成功率工作”。
-2. 为什么 breadcrumb 篡位最容易把 authority object 重新退回 pointer、sidecar 与上次位置。
-3. 为什么旁路写回最容易把 writeback restoration 重新退回 telemetry 成功感。
-4. 为什么 anti-zombie 伪证明最容易把源码先进性重新退回目录美学、日志繁荣与恢复成功率。
+2. 为什么 breadcrumb 篡位最容易把 `authority object` 重新退回 pointer、sidecar 与上次位置。
+3. 为什么旁路写回最容易把 `state writeback` 重新退回 telemetry 成功感。
+4. 为什么 stale-worldview 伪证明最容易把源码先进性重新退回目录美学、日志繁荣与恢复成功率。
 5. 怎样用苏格拉底式追问避免把这些反例读成“再补几张恢复时序图就好”。
 
 ## 0. 代表性源码锚点
@@ -29,7 +29,7 @@
 
 这些锚点共同说明：
 
-- 结构宿主修复演练真正最容易失真的地方，不在字段有没有写出来，而在 authority object、resume order、writeback 主路径与 anti-zombie 结果面是否仍被当成 live truth，而不是被 breadcrumb、telemetry 与成功率替位。
+- 结构宿主修复演练真正最容易失真的地方，不在字段有没有写出来，而在 `authority object`、`per-host authority width`、`state writeback`、`freshness gate` 与 `stale worldview` 是否仍被当成 live truth，而不是被 breadcrumb、telemetry 与成功率替位。
 
 ## 1. 第一性原理
 
@@ -41,7 +41,7 @@
 
 而是：
 
-- 这些东西已经存在，却仍然围绕 pointer、spinner、PUT 成功数、恢复成功率与作者说明运作
+- 这些东西已经存在，却仍然围绕 pointer、spinner、PUT 成功数、恢复成功率与临时说明运作
 
 一旦如此，团队就会重新回到：
 
@@ -74,8 +74,7 @@
 
 - breadcrumb 只能证明“还有入口”，不能证明“当前对象仍成立”。
 
-
-## 3. resume 顺序隐式化：recovery 看起来成功，却没有重放对象顺序
+## 3. 恢复顺序隐式化：recovery 看起来成功，却没有重放对象顺序
 
 ### 坏解法
 
@@ -93,12 +92,11 @@
 
 - recovery 应先恢复顺序，再恢复通过感。
 
-
-## 4. 旁路写回：telemetry 成功感冒充 writeback restoration
+## 4. 旁路写回：telemetry 成功感冒充 state writeback restoration
 
 ### 坏解法
 
-- 团队只要看到 PUT 次数多、日志完整、监控繁荣，就默认 writeback path 健康，不再检查 `worker_status + external_metadata` 是否仍经由唯一主路径回灌。
+- 团队只要看到 PUT 次数多、日志完整、监控繁荣，就默认 `state writeback` 健康，不再检查 `worker_status + external_metadata` 是否仍经由唯一主路径回灌。
 
 ### 为什么坏
 
@@ -111,34 +109,32 @@
 
 ### Claude Code 式正解
 
-- writeback restoration 应围绕唯一 writer、merge 语义与最终 authority state 对齐，而不是围绕请求数量与日志丰富度。
+- `state writeback` restoration 应围绕唯一 writer、merge 语义与最终 authority state 对齐，而不是围绕请求数量与日志丰富度。
 
-
-## 5. anti-zombie 伪证明：源码先进性退回目录美学与成功率崇拜
+## 5. stale-worldview 伪证明：源码先进性退回目录美学与成功率崇拜
 
 ### 坏解法
 
-- 团队在复盘里夸赞目录更清楚、恢复成功率更高、日志更完整，却不检查 stale writer、late finally、重复恢复与 terminal revive 是否仍被阻断。
+- 团队在复盘里夸赞目录更清楚、恢复成功率更高、日志更完整，却不检查 `freshness gate`、`stale worldview`、`ghost capability eviction` 与 late finally 是否仍被阻断。
 
 ### 为什么坏
 
 - Claude Code 的源码先进性，不在“拆得更漂亮”，而在故障模型被提前编码进结构。
-- 一旦 anti-zombie 伪证明出现，团队就会重新把先进性理解成：
+- 一旦 stale-worldview 伪证明出现，团队就会重新把先进性理解成：
   - 文件分层更好看
   - 监控更丰富
   - 成功率更高
-- 这会把真正值钱的 stale-safe、generation guard 与 anti-zombie projection 直接蒸发掉。
+- 这会把真正值钱的 `event-stream-vs-state-writeback`、`freshness gate`、`stale worldview` 与 `ghost capability` 直接蒸发掉。
 
 ### Claude Code 式正解
 
-- 源码先进性应首先被验证为 anti-zombie 结果面仍然存在，而不是目录美学仍然成立。
-
+- 源码先进性应首先被验证为 `freshness gate`、`stale worldview` 与 `ghost capability eviction` 仍然存在，而不是目录美学仍然成立。
 
 ## 6. reconnect 冒充 rollback 与假重入
 
 ### 坏解法
 
-- rollback 看起来存在，实际只是回到旧 pointer、重新点一次恢复、看监控恢复正常，然后默认允许重入，而不明确回到哪个 authority object 与 recovery boundary。
+- rollback 看起来存在，实际只是回到旧 pointer、重新点一次恢复、看监控恢复正常，然后默认允许重入，而不明确回到哪个 `authority object`、哪个 `per-host authority width` 与哪个 `state writeback`。
 
 ### 为什么坏
 
@@ -148,8 +144,7 @@
 
 ### Claude Code 式正解
 
-- rollback 应先绑定 authority object、recovery boundary 与 writeback path，再允许操作 pointer、reconnect 与 UI；re-entry 应先证明旧 writer 不会复活。
-
+- rollback 应先绑定 `authority object`、`event-stream-vs-state-writeback` 边界与 `freshness gate`，再允许操作 pointer、reconnect 与 UI；re-entry 应先证明旧 writer 不会复活。
 
 ## 7. 苏格拉底式追问
 
@@ -157,10 +152,10 @@
 
 1. 我现在消费的是 authority object，还是 pointer 与 sidecar。
 2. 我现在验证的是对象顺序，还是最终成功感。
-3. 我现在保护的是 writeback 主路径，还是日志繁荣。
-4. 我现在保护的是 anti-zombie 结果面，还是恢复成功率与目录美学。
+3. 我现在保护的是 `state writeback` 主路径，还是日志繁荣。
+4. 我现在保护的是 `stale worldview` 与 `ghost capability` 驱逐面，还是恢复成功率与目录美学。
 5. 我现在回滚与重入的是结构边界，还是恢复入口与监控绿灯。
 
 ## 8. 一句话总结
 
-真正危险的结构宿主修复演练失败，不是没写升级卡，而是写了升级卡却仍在围绕 breadcrumb 篡位、旁路写回与 anti-zombie 伪证明消费结构世界。
+真正危险的结构宿主修复演练失败，不是没写升级卡，而是写了升级卡却仍在围绕 breadcrumb 篡位、旁路写回与 stale-worldview 伪证明消费结构世界。

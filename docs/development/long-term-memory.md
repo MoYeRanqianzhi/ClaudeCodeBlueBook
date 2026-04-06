@@ -8,6 +8,38 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/51 / 55`、`casebooks/43` 与 `navigation/65 / 79` 已继续把“中段执行叙事”收回当前对象链：
+  - `51` 现已把治理稳态执行从 `authority continuity / ledger dormancy / capability custody` 的旧中段词，压到 `governance key / externalized truth chain / continuation pricing / durable-vs-transient`。
+  - `55` 现已把结构稳态纠偏从 `authority / resume / writeback / anti-zombie / archive` 压到 `authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
+  - `43` 现已把 Prompt 解除监护反例从 `compiled request truth / release calmness` 压到 `message lineage / continuation object / residual reopen gate`。
+  - `65 / 79` 现已把监护纠偏与再纠偏导航从旧的 `watch / recorrection card / authority source / anti-zombie evidence` 叙事，压回三条母线各自当前对象链。
+- 新的长期结论：
+  - 当上游导航页已经换代后，最容易继续反向输送旧词的是中段执行页与中段反例页；如果不继续收口这些页，读者仍会在 `steady-state / correction / release / recorrection` 这些流程词里重新丢失对象主语。
+  - Prompt 中段真正成熟时，不再把 release / watch / closeout 当主对象，而始终回到 `message lineage`、`continuation object` 与 `residual reopen gate`。
+  - 治理中段真正成熟时，不再把 mode 平静感、usage 回落与 capability custody 当稳态本体，而始终回到 `governance key`、`externalized truth chain` 与 `durable-vs-transient`。
+  - 结构中段真正成熟时，不再把 `anti-zombie` 与 `archive restitution` 当第一主语，而始终回到 `event-stream-vs-state-writeback`、`freshness gate`、`stale worldview` 与 `ghost capability`。
+- `guides/69`、`casebooks/23 / 36 / 37` 与 `navigation/83 / 103` 已继续把“上游叙事层旧词”收回当前对象链：
+  - `guides/69` 现已把 Prompt 监护纠偏从 `compiled request truth / watch note / reopen gate` 收紧到 `message lineage / projection consumer / continuation object / reopen gate`。
+  - `casebooks/23` 现已把治理反例从 `authority source / mode / token panel` 收紧到 `governance key / externalized truth chain / continuation pricing / durable-vs-transient cleanup`。
+  - `casebooks/36` 现已把结构修复演练反例从 `anti-zombie` 总括词收紧到 `event-stream-vs-state-writeback / freshness gate / stale worldview / ghost capability`。
+  - `casebooks/37` 现已把 Prompt 收口反例从 `request object / compiled request truth` 收紧到 `message lineage / protocol transcript / continuation object / lawful forgetting boundary`。
+  - `navigation/83 / 103` 现已把上游执行导航从 `rewrite card / compiled request card / authority stream card` 收紧到对象链执行卡，不再让旧流程词充当前门主语。
+- 新的长期结论：
+  - 当深段页已经换代后，最容易反向输送旧词的不是执行手册本身，而是监护模板、反例页和导航页；如果不继续收口这些页，读者仍会被旧入口词拖回 `compiled request truth / authority source / authority stream` 的上一代语言。
+  - Prompt 线上游叙事真正成熟时，不再把 `watch / closeout / handoff / reopen` 当主语，而是始终回到 `message lineage`、projection consumer 与 `continuation object`。
+  - 治理线上游叙事真正成熟时，反例与导航都应先问 `governance key`、`externalized truth chain` 和 `durable-vs-transient`，再谈 mode、弹窗、usage 与恢复动作。
+  - 结构线上游叙事真正成熟时，`anti-zombie` 只适合作为总括词；真正该被前置暴露的是 `event-stream-vs-state-writeback`、`freshness gate`、`stale worldview` 与 `ghost capability`。
+- `playbooks/75 / 76 / 77 / 79`、`playbooks/README`、`guides/README` 与 `navigation/README` 已继续把深段执行页与长期验证入口收紧到更硬的对象链：
+  - `75` 现已把治理最深执行页从 `authority mode / *_surface / permission_mode` 收紧到 `governance key / externalized truth chain / typed ask / visible capability / continuation pricing / durable assets vs transient authority`。
+  - `76` 现已把结构最深执行页从 `authority stream` 收紧到 `per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
+  - `77` 现已把 Prompt 长期验证从 `compiled request truth` 更明确压到 `message lineage / projection consumer / protocol transcript / continuation object / cache-safe fork`。
+  - `79` 现已把 one writable present 的可见标题与主检查项继续压到 `per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`，把 `recovery asset` 降回从属边界。
+  - `playbooks/README`、`guides/README` 与 `navigation/README` 现已把深段阅读入口从纯编号链补成显式对象链，减少“知道往后读但不知道后面在守什么对象”的目录摩擦。
+- 新的长期结论：
+  - 治理深段真正成熟时，`surface` 只能表示投影或证据面，不能再充当根对象名；根对象必须始终回到 `governance key` 与 `externalized truth chain`。
+  - Prompt 长期验证真正成熟时，不应再把 `compiled request truth` 作为入口前门；更稳的前门是 `message lineage`、projection consumer 与 `continuation object`，因为它们直接解释 Prompt 世界如何被共同承认。
+  - 结构深段真正成熟时，`authority stream` 这类宽词最终也要继续下压；真正该被共同消费的是 `authority object` 的合法 width，以及 `event stream` 不能篡位 `state writeback` 的正式纪律。
+  - README 真正有用时，不只给出“读哪几页”，还要给出“这一段在守什么对象”；否则目录结构仍会被编号感而不是对象链主导。
 - `playbooks/71 / 72 / 73 / 74` 与 `playbooks/README` 已继续把三条“共享修复后段链”拉到更稳定的共同对象：
   - `71` 现已把 Prompt 共享修复从 `compiled request lineage / repair attestation` 压到 `message lineage / projection consumer / continuation object / cache-safe fork reuse`。
   - `72` 现已把治理共享修复从 `authority chain / 五条 truth channel / ingress lineage` 压到 `governance key / externalized truth chain / durable assets vs transient authority`。

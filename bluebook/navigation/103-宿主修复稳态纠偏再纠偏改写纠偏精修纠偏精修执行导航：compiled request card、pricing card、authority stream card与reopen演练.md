@@ -1,4 +1,4 @@
-# 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行导航：Prompt、治理与结构 refinement correction refinement protocol 如何进入 compiled request card、pricing card、authority stream card 与 reopen 演练
+# 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行导航：Prompt、治理与结构如何进入 continuation object card、externalized truth pricing card、authority width card 与 reopen 演练
 
 这一篇不再回答：
 
@@ -7,14 +7,14 @@
 
 这一篇回答的是：
 
-- 当 `api/93-95` 已经把 Prompt、治理与结构三条 refinement correction refinement fixed order 压成正式 protocol surface 之后，团队到底该怎样把这些协议继续运行成固定 `compiled request card / pricing card / authority stream card`、共同 `reject order` 与正式 `reopen drill`，才不让这条线重新退回更像 protocol prose、dashboard calmness、pointer 健康感与作者记忆。
+- 当 `api/93-95` 已经把 Prompt、治理与结构三条 refinement correction refinement fixed order 压成正式 protocol surface 之后，团队到底该怎样把这些协议继续运行成固定 `continuation object card / pricing card / authority width card`、共同 `reject order` 与正式 `reopen drill`，才不让这条线重新退回更像 protocol prose、dashboard calmness、pointer 健康感与作者记忆。
 
 它主要回答五个问题：
 
 1. 为什么只停在 `api/93-95` 的 protocol surface 仍不够，还需要单独讨论“宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行层”。
-2. 为什么 Prompt 线如果不把 `compiled request truth + protocol truth + synthesis ownership + continuation qualification` 继续压成同一张 `compiled request card`，Prompt 魔力仍会重新退回 transcript、handoff 与 worker prose 崇拜。
-3. 为什么治理线如果不把 `authority -> action -> window -> continuation -> classifier -> reject -> writeback -> ingress` 继续压成同一张 `pricing card`，安全设计与省 token 设计仍会重新退回 mode、usage、审批 calmness 与默认继续惯性。
-4. 为什么结构线如果不把 `authority stream -> single-source writeback -> lineage/fresh merge -> anti-zombie -> transport/fail-closed` 继续压成同一张 `authority stream card`，源码先进性仍会重新退回 pointer、telemetry、reconnect 成功率与目录整洁度。
+2. 为什么 Prompt 线如果不把 `message lineage + projection consumer + continuation object + continuation qualification` 继续压成同一张 `continuation object card`，Prompt 魔力仍会重新退回 transcript、handoff 与 worker prose 崇拜。
+3. 为什么治理线如果不把 `governance key + externalized truth + typed ask / visible capability + continuation pricing + durable-vs-transient cleanup` 继续压成同一张 `pricing card`，安全设计与省 token 设计仍会重新退回 mode、usage、审批 calmness 与默认继续惯性。
+4. 为什么结构线如果不把 `per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability` 继续压成同一张 `authority width card`，源码先进性仍会重新退回 pointer、telemetry、reconnect 成功率与目录整洁度。
 5. 怎样用第一性原理与苏格拉底式追问，避免把这一层写成“把 protocol 再执行熟练一点”的值班化叙事。
 
 ## 1. Prompt 宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行线
@@ -25,7 +25,7 @@
 
 而是：
 
-- 把 Prompt compiled request ABI 继续压成 later 团队可直接执行、可直接拒收、也可正式 reopen 的现场卡片
+- 把 Prompt 对象链继续压成 later 团队可直接执行、可直接拒收、也可正式 reopen 的现场卡片
 
 ## 2. 治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行线
 
