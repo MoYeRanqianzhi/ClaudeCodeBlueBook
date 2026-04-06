@@ -519,3 +519,4 @@
 - 再往下一层压实治理对象：`philosophy/85` 现在把 `governance key` 进一步压成 `pricing-right signer / pricing-right lease`，`architecture/79` 继续补出 `forbidden_upcast_set / promotion_requires` 语义，`userbook/05` 新增 `consumer-truth ladder` 与 `boundary lifecycle` 的用户侧翻译
 - 继续把治理与 Prompt 对象压成共享 ABI：`api/82` 现在补出 `pricing_authority_unbound`，`api/85` 现在补出 `truth surface attestation packet`，`philosophy/81` 现在补出 `lawful forgetting witness ABI`
 - 继续把目录结构优化压成问题级首答路由：`navigation/04` 现在新增 later maintainer 常见问题的首答表，明确 `future maintainer / 证据梯子 / repo atlas / speaking-rights 争议` 各自先回哪层
+- 修正协议页细节：`api/82` 的 rewrite correction verdict 编号现已对齐为严格递增，避免协议对象列表本身出现局部失稳

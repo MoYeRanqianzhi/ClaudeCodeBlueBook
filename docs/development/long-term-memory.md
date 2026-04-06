@@ -2721,3 +2721,4 @@
 - `truth surface attestation packet` 现在可继续稳定复用为：`display_truth_ref / event_truth_ref / current_truth_ref / protocol_truth_ref / surface_lossiness_digest / forbidden_promotion_set / event_replay_not_current_truth`。它的作用不是再多一层文书，而是防止 display/event truth 再次冒充 current/protocol truth。
 - `lawful forgetting witness ABI` 现在可继续稳定复用为四层：`required / derivable / narrative-only / forbidden-as-sole-witness`。compact、resume、handoff 共用的不是摘要格式，而是这组 witness ABI 能否仍被 parse 并复现同一 continuation verdict。
 - `navigation/04` 现在已开始承接 later maintainer 的问题级首答表；后续若某个 README 再次同时想回答 “future maintainer 为什么成立 / 证据梯子从哪开始 / repo atlas 先去哪 / 谁有首答权”，应优先回本页而不是再开新入口。
+- 协议页里的编号和字段顺序也应被视为 consumer-facing ABI 的一部分；新增 verdict reason 或 object slot 后，必须回头检查序号、命名与并列层级是否仍单义，否则 later consumer 会先被形式噪音绊住，再误读正文主张。
