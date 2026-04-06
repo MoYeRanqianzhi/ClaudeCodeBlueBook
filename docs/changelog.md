@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `03-设计哲学`、`architecture/83`、`api/52` 与 `guides/102`，把治理线进一步收回 canonical governance chain，并补出 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 的 runtime 对照；同时把公开镜像源码质量方法页进一步压成 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline` 的术语对照，减少 `预算器 / authoritative surface / adapter subset / rollback root` 这类旧中层词继续冒充前门
 - 继续更新 `bluebook/README`、`navigation/README`、`navigation/05` 与 `06`，把蓝皮书目录结构进一步压成“先定题 -> 再定证据层 -> 最后跨目录”的三步进入法，并把第一性原理页与设计母线页继续补上 `同题坏解 / 第一条反证信号 / shadow -> qualify -> cutover -> rollback` 的自校顺序，避免 Prompt 魔力、安全与省 token、源码先进性再次退回结果词或截图式误读
 - 继续更新 `bluebook/README`、`navigation/README`、`guides/README`、`navigation/03`、`navigation/05`、`07`、`architecture/83` 与 `philosophy/22`，把导航/目录层残留的旧标签与治理深页里仍抽象化 canonical chain 的句子继续收回到 `当前世界准入主权 / 当前真相保护 / world entry / request assembly / six-stage assembly chain` 与 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
 - 继续更新 `philosophy/22`、`architecture/README` 与 `navigation/05`，把治理高阶解释层从“统一预算器”进一步压回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 这条治理收费链，并把目录平面名与母线问题语气同步到这条 canonical chain

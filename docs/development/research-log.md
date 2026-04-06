@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮治理 crosswalk 动作: 已继续更新 `03-设计哲学`、`architecture/83` 与 `api/52`，把“安全/成本/体验共链”进一步压回 canonical governance chain，并把 `governance key / externalized truth chain / typed ask / decision window / continuation pricing / durable-transient cleanup` 分别钉到 runtime seam、宿主消费顺序与最常见误读点。
+- 本轮源码质量术语对照动作: 已继续更新 `guides/102`，把 `contract truth / registry truth / current-truth surface / authoritative surface candidate / consumer subset / hotspot kernel / mirror gap discipline` 的差异显式写出来，并把旧 `authoritative surface / adapter subset` visible root 继续收回到更硬的 current-truth / consumer-subset 语言。
 - 本轮入口结构收口动作: 已继续更新 `bluebook/README` 与 `navigation/README`，把蓝皮书入口进一步压成“先定题 -> 再定证据层 -> 最后跨目录”的三步法，并把 `navigation/05` 提升成跨目录稳定节点，减少根 README 与导航层重复摊平深链。
 - 本轮第一性原理自校动作: 已继续更新 `06-第一性原理与苏格拉底反思`，把“怎样把这一章继续写得更好”前置为四个固定追问：对象链是否被偷换成结果词、是否给出同题坏解、是否写出第一条反证信号、是否给出 `shadow -> qualify -> cutover -> rollback` 的渐进改写顺序。
 - 本轮设计母线深化动作: 已继续更新 `navigation/05`，把 Prompt 魔力、安全与省 token、源码先进性三条母线都补上“最容易抄错的表象”与“三条母线如何互证”的高阶自校问题；当前更稳的写法不是只给阅读顺序，而是先纠正模仿对象。

@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `03-设计哲学 / architecture/83 / api/52 / guides/102` 现已继续把治理线和源码质量线的中层词压回更硬对象：
+  - `03` 现在更明确把“安全、成本与体验”写成 canonical governance chain 的三种外观，而不再让“预算器”继续占主语位。
+  - `83` 现在更明确补出治理链 runtime 对照表，把 canonical node、runtime seam、host-facing read 与常见误读钉在同一张表里。
+  - `52` 现在更明确要求 host 只消费 `externalized truth chain`，并给出最短 runtime 对照，禁止从 mode 条、token 条、spinner 与 `pending_action` 文案反推治理真相。
+  - `102` 现在更明确区分 `current-truth surface` 与 `authoritative surface candidate`，并把 `adapter subset` 降成 `consumer subset` 的具体形态。
+- 新的长期结论：
+  - 治理线真正成熟后，最值钱的补强不再只是重复 canonical chain，而是把每个 node 明确钉到 runtime seam、宿主读法和常见误读；否则 later maintainer 还是会把 mode、usage dashboard 与 rollback carrier 重新扶正成主语。
+  - 公开镜像源码质量方法真正成熟后，`authoritative surface` 不应再被无条件当成已证明的 `current-truth surface`；更稳的写法是允许 `authoritative surface candidate` 这个中间状态存在，并把 `consumer subset` 与 `mirror gap discipline` 同时前置。
 - `bluebook/README / navigation/README / navigation/05 / 06` 现已继续把“继续写得更好”的问题正式前置：
   - `bluebook/README` 现在更明确把蓝皮书入口压成“先定题 -> 再定证据层 -> 最后跨目录”的三步进入法，并把“继续写、改或审蓝皮书”固定回 `06 -> 09 -> navigation/05`。
   - `navigation/README` 现在更明确要求先判自己在找主线宪法、证据层还是跨目录下一跳，并把 `navigation/05` 升成稳定节点。
