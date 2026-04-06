@@ -52,6 +52,7 @@
 48. 为什么 standalone remote-control 的一次性说明、账号资格、项目偏好与当前 effective mode 不是同一个默认。
 49. 为什么 CCR v2 worker 的初始化、状态恢复、保活与代际退场不是同一种存活合同。
 50. 为什么远端看到的 `worker_status`、`pending_action`、`task_summary` 与 `session_state_changed` 不是同一张运行态面。
+- 为什么 `task_summary` 与 `post_turn_summary` 的 carrier、clear、union visibility 与 forwarding suppression 不是同一条 summary contract。
 51. 为什么 `permission_mode`、`is_ultraplan_mode` 与 `model` 不是同一种远端可恢复会话参数。
 52. 为什么 `task_started`、`task_progress`、`task_notification` 与 `session_state_changed` 不是同一种远端事件流。
 53. 为什么 CCR v2 remote bridge 的 `transport rebuild`、initial flush、`flush gate` 与 `sequence resume` 不是同一步。

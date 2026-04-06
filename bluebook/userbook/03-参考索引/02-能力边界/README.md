@@ -88,3 +88,4 @@
 - [86-Headless print authoritative idle signal 索引.md](./86-Headless%20print%20authoritative%20idle%20signal%20索引.md)
 - [87-Semantic last result vs late system tail 索引.md](./87-Semantic%20last%20result%20vs%20late%20system%20tail%20索引.md)
 - [88-Delayed suggestion delivery and accounting 索引.md](./88-Delayed%20suggestion%20delivery%20and%20accounting%20索引.md)
+- [89-task_summary vs post_turn_summary transport-lifecycle 索引.md](./89-task_summary%20vs%20post_turn_summary%20transport-lifecycle%20索引.md)

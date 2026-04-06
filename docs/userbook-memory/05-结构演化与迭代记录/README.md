@@ -101,6 +101,7 @@
 - [97-2026-04-06-authoritative idle signal 拆分记忆.md](./97-2026-04-06-authoritative%20idle%20signal%20拆分记忆.md)
 - [98-2026-04-06-semantic last result vs late tail 拆分记忆.md](./98-2026-04-06-semantic%20last%20result%20vs%20late%20tail%20拆分记忆.md)
 - [99-2026-04-06-delayed suggestion delivery 拆分记忆.md](./99-2026-04-06-delayed%20suggestion%20delivery%20拆分记忆.md)
+- [100-2026-04-06-task_summary vs post_turn_summary transport split 拆分记忆.md](./100-2026-04-06-task_summary%20vs%20post_turn_summary%20transport%20split%20拆分记忆.md)
 
 用途：
 
