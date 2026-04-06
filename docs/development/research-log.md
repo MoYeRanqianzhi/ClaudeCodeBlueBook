@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 doctrine 语气收口动作: 已继续更新 `03-设计哲学` 后半段，把 `继续深挖 / 更稳的模板 / 渐进改写 / 值得继续往` 这类更像研究日志、写作工位与 workshop 提示的句型收回到更稳定的原则陈述。
+- 本轮语气层判断加固: 当前最值钱的“深入”已不只是继续换对象词，而是把理论页本身写成成熟制度判断；否则即便对象链正确，正文仍会让读者感觉作者还在加工理论，而不是在交付理论。
+- 本轮 Prompt / 治理 / 结构深化结论: `03-设计哲学` 后半段现已更直接地把 Prompt 写成协作语法与受治理宪法，把安全写成资源定价秩序，把构建系统写成结构秩序工具，把制度自审、坏解对照与保序迁移写成成熟制度的内生能力。
 - 本轮第一性原理前门推进动作: 已继续更新 `navigation/01`、`09` 与 `03-设计哲学`，把 `request object / authority object / 正式对象` 这些旧本体词从三张关键理论前门里收回到 `请求世界 / governance pricing chain / current-truth surface / 权威入口`，避免读者再把“对象”误读成蓝皮书的总解释轴。
 - 本轮 Prompt 母线加固: 已继续把 Prompt 魔力收紧为 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification` 这条链，不再把 `request object` 当根对象；`display / protocol / handoff truth` 现被更明确地写成同一条 lineage 的不同消费者视图。
 - 本轮治理母线加固: 已继续把安全与省 token 统一收紧到 `governance pricing chain`，并把治理链条更明确写成 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；mode、modal、dashboard 与 default-continue 被进一步降级为投影替身而非根对象。

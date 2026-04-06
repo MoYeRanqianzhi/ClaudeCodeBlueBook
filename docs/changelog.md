@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `03-设计哲学` 的后半段正文语气，把 `继续深挖 / 更稳的模板 / 渐进改写 / 值得继续往` 这类 workshop 和作者工位话术收回到更稳定的 doctrine prose，并把 Prompt 魔力、安全定价、构建秩序与制度自审这些段落改写成直接陈述的原则判断
 - 继续更新 `navigation/01`、`09` 与 `03-设计哲学` 的第一性原理前门，把 `request object / authority object / 正式对象` 这些旧本体词收回到 `请求世界 / governance pricing chain / current-truth surface / 权威入口`，并把 Prompt 魔力明确收紧到 `message lineage -> projection consumer -> protocol transcript -> continuation qualification`
 - 继续更新 `09` 的宪法页与 `navigation/01` 的阅读地图，把“下一步去哪读 / 对蓝皮书自己的约束”这类路由和编排话术移出正文中心，改成更适合正文的控制面判断、设计自检与当前真相保护表述
 - 继续更新 `navigation/03 / 40 / 44 / 46` 的前门语言，把深度专题前门收回到“世界进入模型 / 扩张定价 / 当前真相”三张控制面，并把 `40 / 44 / 46` 从“这一层放在哪一类文档更合适”的编排叙事改写成直接面向 `message lineage / governance key / authority object` 的失真、误绑与迁移次序正文
