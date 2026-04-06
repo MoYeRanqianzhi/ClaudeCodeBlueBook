@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `guides/28 / 100 / playbooks/78` 现已继续把治理线收成更完整的 schema：
+  - `28` 现在更明确把失败语义矩阵母版从 `headless divergence` 扩成 `surface divergence`，并把 `minimum legal degraded shape` 与 `re-entry / rollback requirement` 固定下来。
+  - `100` 现在更明确把 `interactive / host / headless / async` 的执行面分叉，以及 `rollback_action / re_entry_condition / escalation_target`，一起压进解释型矩阵和最小判据。
+  - `78` 现在更明确把这些字段写进执行型 verdict 矩阵和复盘记录最少字段，不再只给 `reject_verdict` 与 `rollback_object` 两个结果位。
+- 新的长期结论：
+  - 治理矩阵真正成熟时，不能只知道 `reject / degrade / halt / human-fallback / abort`；它还必须回答不同执行面是否同判、最小合法降级形态是什么、升级给谁、rollback 后何时允许 re-entry。
+  - `guides/` 和 `playbooks/` 的分工也因此更清楚：`guides` 固定矩阵 schema 与审读字段，`playbooks` 消费这些字段并绑定成可执行 verdict。
 - `09 / 06 / guides/README / playbooks/README / navigation/README` 现已继续把可见主语与目录入口收口：
   - `09` 现在更明确把治理线的中段合同写成 `execution contract`，把结构线的中段合同写成 `authority contract`，避免 `role contract` 继续跨线泛化。
   - `06` 现在继续清掉残留的过渡句式，让 Prompt / 治理 / 结构三线更稳定地落在 doctrine 对象，而不是“继续深挖 / 更准确的写法”这类作者过渡语气。

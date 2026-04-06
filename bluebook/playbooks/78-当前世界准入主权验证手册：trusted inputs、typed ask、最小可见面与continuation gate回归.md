@@ -71,15 +71,15 @@
 
 把 drift 写成正式 verdict，而不是散装症状：
 
-| drift | verdict | threshold trigger | 最小证据 | 回退动作 | 是否冻结 capability expansion | 是否必须重建 `decision window / cleanup` |
-|---|---|---|---|---|---|---|
-| `low_trust_source_expanded_authority` | `reject` | 低信任输入改边界 | source chain / applied config | rollback to trusted source | 是 | 是 |
-| `typed_ask_collapsed_to_modal` | `degrade` 或 `reject` | ask 不再是 typed transaction | request object / winner evidence | rebuild ask path | 是 | 视情况而定 |
-| `context_usage_detached_from_window` | `degrade` | token 图表脱离当前窗口 | window ref / pending action | rebuild window projection | 否 | 是 |
-| `continuation_pricing_defaulted` | `halt` | 继续失去 stop condition | continuation ref / decision gain | stop and re-qualify | 是 | 是 |
-| `transient_authority_resumed` | `reject` | 恢复时续租旧 authority | durable/transient split evidence | cleanup then resume | 是 | 是 |
-| `failure_semantics_flattened` | `human-fallback` | 全部 drift 被写成同一种情绪 | verdict mismatch | escalate to reviewer | 视情况冻结 | 视情况重建 |
-| `automation_no_longer_revocable` | `abort` 或 `human-fallback` | 自动化失去合法退场路径 | automation lease / killswitch evidence | kill automation path | 是 | 否 |
+| drift | verdict | threshold trigger | 最小证据 | escalation target | surface divergence | minimum legal degraded shape | rollback action | re-entry condition | 是否冻结 capability expansion | 是否必须重建 `decision window / cleanup` |
+|---|---|---|---|---|---|---|---|---|---|---|
+| `low_trust_source_expanded_authority` | `reject` | 低信任输入改边界 | source chain / applied config | human / managed authority | host/headless 都直接拒收 | 只保 trusted source chain | rollback to trusted source | trusted source chain restored | 是 | 是 |
+| `typed_ask_collapsed_to_modal` | `degrade` 或 `reject` | ask 不再是 typed transaction | request object / winner evidence | human reviewer / host | interactive 可 ask；headless / async 退 deny/abort | request identity + winner evidence | rebuild ask path | typed ask restored | 是 | 视情况而定 |
+| `context_usage_detached_from_window` | `degrade` | token 图表脱离当前窗口 | window ref / pending action | runtime window owner | host 可看 projection；headless 不得自行补窗口 | minimum window projection | rebuild window projection | decision window rebound | 否 | 是 |
+| `continuation_pricing_defaulted` | `halt` | 继续失去 stop condition | continuation ref / decision gain | human handoff / object upgrade | interactive 可升级；headless 更早停机 | compact summary + next-step object | stop and re-qualify | new decision window issued | 是 | 是 |
+| `transient_authority_resumed` | `reject` | 恢复时续租旧 authority | durable/transient split evidence | runtime cleanup gate | host 只消费 cleanup 后 truth | durable assets only | cleanup then resume | transient authority cleared | 是 | 是 |
+| `failure_semantics_flattened` | `human-fallback` | 全部 drift 被写成同一种情绪 | verdict mismatch | reviewer / runtime owner | 依执行面再判，但不许自发扩权 | asset-typed fallback only | rebuild verdict matrix | failure typing restored | 视情况冻结 | 视情况重建 |
+| `automation_no_longer_revocable` | `abort` 或 `human-fallback` | 自动化失去合法退场路径 | automation lease / killswitch evidence | human reviewer / runtime owner | interactive 可承接；headless 直接 kill path | auto path removed, durable refs kept | kill automation path | revocable lease restored | 是 | 否 |
 
 更稳的纪律是：
 
@@ -113,11 +113,16 @@
 4. `typed_ask_winner`
 5. `decision_window_ref`
 6. `continuation_pricing_ref`
-7. `durable_assets_after`
-8. `transient_authority_cleared`
-9. `symptom`
-10. `reject_verdict`
-11. `rollback_object`
+7. `surface_divergence`
+8. `minimum_legal_degraded_shape`
+9. `escalation_target`
+10. `rollback_action`
+11. `re_entry_condition`
+12. `durable_assets_after`
+13. `transient_authority_cleared`
+14. `symptom`
+15. `reject_verdict`
+16. `rollback_object`
 
 ## 6. 防再发动作
 

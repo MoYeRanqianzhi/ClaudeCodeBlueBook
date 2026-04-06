@@ -6,6 +6,7 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮治理 schema 补齐动作: 已继续更新 `guides/28 / 100` 与 `playbooks/78`，把治理矩阵进一步补齐为 `surface divergence / minimum legal degraded shape / escalation target / rollback action / re-entry condition` 这组字段；现在 `interactive / host / headless / async` 的执行面分叉，以及 `rollback -> re-entry` 的恢复条件，都已进入同一条治理对象链。
 - 本轮命名收口动作: 已继续更新 `09` 与 `06`，把三条控制面里残留的过泛 contract 名与过渡句式继续收回到更硬对象；治理线当前更明确使用 `execution contract`，结构线当前更明确使用 `authority contract`，Prompt 线当前更明确使用 `byte boundary / continuation truth`。
 - 本轮目录入口加固: 已继续更新 `guides/README`、`playbooks/README` 与 `navigation/README`，把 `102` 的 atlas 与 `79` 的 verdict 更明确提升成目录层稳定入口，而不是继续让它们只停在深页里被动等待读者下钻。
 - 本轮结构 atlas 动作: 已继续更新 `guides/102` 与 `playbooks/79`，把源码质量研究从“六级证据分层”继续推进到 `危险改动面 atlas + verdict matrix` 两层：前者点名 `QueryGuard / messages normalization / session ingress / bridge pointer / host-facing state writeback / fresh-read file write` 这些危险面，后者把结构 drift 压成 `reject / cleanup-before-resume / degrade / halt / human-fallback`。
