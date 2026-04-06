@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 73 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 74 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -92,6 +92,7 @@
 71. [71-settings文案与cleanup覆盖范围中的强请求清理保留期执行诚实性边界](71-settings%E6%96%87%E6%A1%88%E4%B8%8Ecleanup%E8%A6%86%E7%9B%96%E8%8C%83%E5%9B%B4%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E4%BF%9D%E7%95%99%E6%9C%9F%E6%89%A7%E8%A1%8C%E8%AF%9A%E5%AE%9E%E6%80%A7%E8%BE%B9%E7%95%8C.md)
 72. [72-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界](72-TaskOutput%E3%80%81diskOutput%E3%80%81toolResultStorage%E3%80%81concurrentSessions%E4%B8%8EcronTasksLock%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%9A%94%E7%A6%BB%E8%BE%B9%E7%95%8C.md)
 73. [73-diskOutput、sessionStorage、toolResultStorage、plans、debug与diagLogs中的强请求清理家族宪法边界](73-diskOutput%E3%80%81sessionStorage%E3%80%81toolResultStorage%E3%80%81plans%E3%80%81debug%E4%B8%8EdiagLogs%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%AE%B6%E6%97%8F%E5%AE%AA%E6%B3%95%E8%BE%B9%E7%95%8C.md)
+74. [74-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug与diagLogs中的强请求清理制度理由边界](74-diskOutput%E3%80%81sessionStorage%E3%80%81toolResultStorage%E3%80%81plans%E3%80%81fileHistory%E3%80%81sessionEnvironment%E3%80%81debug%E4%B8%8EdiagLogs%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%88%B6%E5%BA%A6%E7%90%86%E7%94%B1%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
