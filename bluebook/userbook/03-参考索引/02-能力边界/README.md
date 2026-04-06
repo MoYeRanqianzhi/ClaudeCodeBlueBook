@@ -20,3 +20,4 @@
 - [18-Remote 权限响应、控制请求与命令白名单索引.md](./18-Remote%20%E6%9D%83%E9%99%90%E5%93%8D%E5%BA%94%E3%80%81%E6%8E%A7%E5%88%B6%E8%AF%B7%E6%B1%82%E4%B8%8E%E5%91%BD%E4%BB%A4%E7%99%BD%E5%90%8D%E5%8D%95%E7%B4%A2%E5%BC%95.md)
 - [19-Remote 运行态、后台任务与 viewerOnly ownership 索引.md](./19-Remote%20%E8%BF%90%E8%A1%8C%E6%80%81%E3%80%81%E5%90%8E%E5%8F%B0%E4%BB%BB%E5%8A%A1%E4%B8%8E%20viewerOnly%20ownership%20%E7%B4%A2%E5%BC%95.md)
 - [20-Remote Control 状态词、恢复厚度与动作上限索引.md](./20-Remote%20Control%20%E7%8A%B6%E6%80%81%E8%AF%8D%E3%80%81%E6%81%A2%E5%A4%8D%E5%8E%9A%E5%BA%A6%E4%B8%8E%E5%8A%A8%E4%BD%9C%E4%B8%8A%E9%99%90%E7%B4%A2%E5%BC%95.md)
+- [21-Remote Control 故障提示、停机与默认回退索引.md](./21-Remote%20Control%20%E6%95%85%E9%9A%9C%E6%8F%90%E7%A4%BA%E3%80%81%E5%81%9C%E6%9C%BA%E4%B8%8E%E9%BB%98%E8%AE%A4%E5%9B%9E%E9%80%80%E7%B4%A2%E5%BC%95.md)
