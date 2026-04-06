@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `09 / 06 / guides/README / playbooks/README / navigation/README` 现已继续把可见主语与目录入口收口：
+  - `09` 现在更明确把治理线的中段合同写成 `execution contract`，把结构线的中段合同写成 `authority contract`，避免 `role contract` 继续跨线泛化。
+  - `06` 现在继续清掉残留的过渡句式，让 Prompt / 治理 / 结构三线更稳定地落在 doctrine 对象，而不是“继续深挖 / 更准确的写法”这类作者过渡语气。
+  - `guides/README`、`playbooks/README` 与 `navigation/README` 现在更明确把 `102` 视为 atlas 入口、把 `79` 视为结构 drift verdict 入口。
+- 新的长期结论：
+  - 目录结构真正成熟后，最值钱的优化不再总是新增正文，而常常是把深页里已经成立的 atlas、矩阵与 verdict 提升成目录层稳定入口；否则读者会知道有这类对象，却找不到默认进入点。
+  - 当 doctrine 已基本稳定时，残留的过泛 contract 名和作者过渡句式仍会持续把读者拉回旧世界观；后期优化必须继续盯住这些小词，而不是只盯新增章节。
 - `06 / guides/102 / playbooks/79` 现已继续把结构线从解释推进到 atlas 与 verdict：
   - `06` 现在更明确用 `request-surface constitution / cognitive contract / byte boundary / continuation truth` 这组更硬对象替代过渡词，并把 `6.6-6.21` 的自指反思标题继续收回到 doctrine 主语。
   - `guides/102` 现在更明确承担结构线的 `危险改动面 atlas`，把 `QueryGuard / messages normalization / session ingress / bridge pointer / host-facing state writeback / fresh-read file write` 这些危险面显式点名。
