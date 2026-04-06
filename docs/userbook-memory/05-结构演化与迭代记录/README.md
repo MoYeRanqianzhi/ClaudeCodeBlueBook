@@ -90,6 +90,7 @@
 - [86-2026-04-06-headless print team drain 拆分记忆.md](./86-2026-04-06-headless%20print%20team%20drain%20拆分记忆.md)
 - [87-2026-04-06-headless print mailbox polling 拆分记忆.md](./87-2026-04-06-headless%20print%20mailbox%20polling%20拆分记忆.md)
 - [88-2026-04-06-headless print queue reentry 拆分记忆.md](./88-2026-04-06-headless%20print%20queue%20reentry%20拆分记忆.md)
+- [89-2026-04-06-headless print prompt batching 拆分记忆.md](./89-2026-04-06-headless%20print%20prompt%20batching%20拆分记忆.md)
 
 用途：
 
