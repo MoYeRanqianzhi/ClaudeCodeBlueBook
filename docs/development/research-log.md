@@ -6,6 +6,7 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮目录与路由收口动作: 已继续更新 `bluebook/README / playbooks/README / navigation/README / security/README / risk/README / philosophy/README`，把三条执行链、治理执行链与“为什么 -> 如何验证”的跨目录入口写成稳定 README 路由。
 - 本轮执行手册对齐动作: 已继续更新 `playbooks/30 / 36 / 66 / 77`，把上一批高层对象链继续压到宿主接入、验收、修复与 Prompt 回归手册，重点补入 `governance key / externalized truth chain / durable assets vs transient authority / message lineage / projection consumer / continuation qualification`。
 - 本轮桥接页与相邻深专题对齐动作: 已继续更新 `guides/30 / guides/31 / philosophy/84 / architecture/60 / architecture/63 / guides/README`，把旧桥接页继续吸收到 `message lineage / projection consumer / governance key / externalized truth / event stream vs state writeback / stale worldview / ghost capability eviction`，并把“桥接页定位”从正文收回目录 README。
 - 本轮相邻深专题补强动作: 已继续更新 `architecture/80 / guides/52 / philosophy/86 / architecture/README`，把 `source lattice / managed-only switches / durable assets vs transient authority / freshness gate / ghost-capability eviction` 补回相邻主题页，并把 `82-84` 的最新对象链前置回架构专题入口。

@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `bluebook/README`、`guides/README`、`playbooks/README`、`navigation/README`、`security/README`、`risk/README` 与 `philosophy/README`，把 Prompt / 治理 / 结构三条执行链与“为什么 -> 如何验证”的跨目录入口写成稳定路由
 - 继续更新 `playbooks/30`、`playbooks/36`、`playbooks/66` 与 `playbooks/77`，把 `governance key / externalized truth chain / durable assets vs transient authority / message lineage / projection consumer / continuation qualification` 压进宿主接入、验收、修复与 Prompt 回归手册
 - 继续更新 `guides/30`、`guides/31`、`philosophy/84`、`architecture/60`、`architecture/63` 与 `guides/README`，把旧桥接页继续吸收到 `message lineage / projection consumer / governance key / externalized truth / event stream vs state writeback / stale worldview / ghost capability eviction`，并把正文中的桥接/记忆性说明收回目录入口与持久化记忆
 - 继续更新 `architecture/80`、`guides/52`、`philosophy/86`、`architecture/README`，把相邻深专题继续吸收 `source lattice / managed-only switches / durable assets vs transient authority / freshness gate / ghost-capability eviction`，并把 `82-84` 三篇的最新重点前置回架构专题入口

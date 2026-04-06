@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README / playbooks/README / navigation/README / security/README / risk/README / philosophy/README` 已继续把目录入口与跨目录路由拉平到最新对象链：
+  - `playbooks/README` 现已把 Prompt / 治理 / 结构三条执行链写成稳定入口，不再主要靠旧的单线 Prompt 代表页带路。
+  - `navigation/README` 现已把 `46 -> 29/30/31 -> 35/36/37 -> 65/66/67 -> 77/78/79` 固定成三条执行深链，减少读者自己拼手册顺序。
+  - `guides/README` 现已把 `30-31` 收回成旧词汇桥接，把 `99-101` 固定为当前 builder 审读主入口，不再把新旧入口并列。
+  - `security/README` 与 `risk/README` 现已把治理执行链显式接到 `30 / 36 / 66`，把“治理对象链”与“恢复/责任执行链”前置到专题入口。
+  - `philosophy/README` 现已把 `84-87` 与 `77-79` 之间的“为什么 -> 如何验证”关系显式写进推荐入口。
+  - `bluebook/README` 现已更明确把安全、风控、恢复与值班链统一接到 `playbooks/README` 与 `navigation/README`。
+- 新的长期结论：
+  - 目录结构真正成熟时，不只要把正文对象链写对，还要把“哪条执行链对应哪组手册”固定成 README 级稳定路由；否则读者仍会在执行层重新迷路。
+  - `playbooks/README` 的成熟度不在列更多代表页，而在能否直接交出 Prompt / 治理 / 结构三条稳定执行链。
+  - `navigation/README` 真正值钱的不是继续扩编号，而是替读者消灭“自己拼 29/35/65/77 这类链条”的负担。
 - `playbooks/30 / 36 / 66 / 77` 已继续把上一批高层对象链压进执行层、验收层与修复层：
   - `30 / 36` 现已把治理宿主手册从抽象 `authority source` 压到 `sources -> effective -> applied -> externalized`，并把“宿主只能消费 externalized truth、不能回放事件流猜当前真相”写进门禁与拒收条件。
   - `36 / 66` 现已把 durable assets 与 transient authority 的分界正式写进 rollback / liability / reopen 字段，不再只把恢复写成 mode、页面或说明文的恢复。
