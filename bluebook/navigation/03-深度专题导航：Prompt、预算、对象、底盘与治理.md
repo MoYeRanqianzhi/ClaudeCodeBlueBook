@@ -85,7 +85,7 @@
 2. [真正成熟的治理，不是更会拦截，而是更会为扩张定价](../philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md)
 3. [反扩张治理流水线：governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup](../architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md)
 4. [苏格拉底审读：governance key、typed ask、decision window 与 continuation pricing](../guides/100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md)
-5. [验证手册：governance key、typed ask、decision window 与 continuation pricing 回归](../playbooks/78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md)
+5. [验证手册：governance key、externalized truth chain、typed ask、decision window 与 continuation pricing 回归](../playbooks/78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md)
 6. [反例：低信任扩权、假 decision window 与免费继续](../casebooks/74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续.md)
 
 需要补证时再下钻：
@@ -107,7 +107,7 @@
 
 - 为什么 Claude Code 反复强调 single source of truth。
 - 为什么 mode、tool pool、schema、transcript path 这些地方不能让多个 feature 各自维护。
-- 为什么“宿主不该猜”最终会继续走向 authoritative surface。
+- 为什么“宿主不该猜”最终会继续走向 current-truth surface 与 consumer subset。
 
 需要补证时再下钻：
 
@@ -196,7 +196,7 @@
 2. [真正先进的内核，不是更会分层，而是更会阻止过去写坏现在](../philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md)
 3. [真正成熟的源码质量判断：复杂度中心合法、边界可证、下一次重构仍有路](../philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md)
 4. [权威面与反僵尸图谱：current-truth surface、freshness gate 与 ghost capability](../architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)
-5. [源码质量证据分级：contract、registry、authoritative surface 与 adapter subset](../guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md)
+5. [源码质量证据分级：contract、registry、current-truth surface 与 consumer subset](../guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md)
 
 需要补证时再下钻：
 

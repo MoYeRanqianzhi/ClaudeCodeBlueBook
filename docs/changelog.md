@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `bluebook/README`、`guides/README`、`api/README`、`playbooks/README` 与 `navigation/03`，把 recent H1/doctrine 变化同步回目录层 visible label：治理线现在更明确前置 `externalized truth chain`，源码质量方法线现在更明确前置 `current-truth surface / consumer subset / mirror gap discipline`，并把 `authoritative surface / adapter subset / 预算器` 这类旧 route words 继续降为内层解释词
 - 继续更新 `api/49`、`api/54`、`playbooks/29`、`guides/100` 与 `playbooks/78`，把 Prompt host-facing 文档进一步收回 `request compiler / message lineage / projection consumer / continuation qualification` 的 contract 面，并把治理模板/验证页进一步把 `externalized truth chain` 顶到标题和检查项层；同时补出“host 不得从 mode 条、token 条、spinner 与文案反推真相”的正式拒收与回归判断
 - 继续更新 `07-运行时契约、知识层与生态边界`、`01-源码结构地图`、`navigation/03` 与 `navigation/41`，把 Prompt request compiler、治理收费链、current-truth writeback 与 `compile / price / externalize / evict` 四个跨平面函数压成更高一层的综合公式，并把结构地图里“事件线真相 vs 当前真相面”的分工进一步写硬
 - 继续更新 `03-设计哲学`、`guides/102`、`architecture/84` 与 `architecture/59`，把“事件线真相 vs 当前真相面”的分工写得更硬，并把 `authoritative surface candidate / consumer subset / current-truth writeback` 这些晚到但高价值的术语修正回正文前台，避免 `transcript 是系统真相`、`adapter subset` 与抽象 authority 再次压平 current-truth doctrine

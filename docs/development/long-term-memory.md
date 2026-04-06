@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README / guides/README / api/README / playbooks/README / navigation/03` 现已继续把目录层 visible label 跟上 recent doctrine：
+  - `bluebook/README` 现在更明确把治理线链接标签收回到“同一治理收费链的三种外观”，把源码质量方法标签收回到 `current-truth surface / consumer subset / mirror gap discipline`。
+  - `guides/README` 现在更明确把 `100` 标签补齐 `externalized truth chain`，把 `102` 标签补齐 `consumer subset / mirror gap discipline`。
+  - `api/README` 现在更明确把 `authoritative surface -> adapter subset` 收回到 `current-truth surface / host truth -> consumer subset`。
+  - `playbooks/README` 现在更明确把 `78` 标签补齐 `externalized truth chain`。
+  - `navigation/03` 现在更明确把治理验证线和源码质量方法线的 visible label 同步到当前 H1，并把“宿主不该猜”更准确地收回到 `current-truth surface + consumer subset`。
+- 新的长期结论：
+  - 当深页 H1 已经换代后，下一层最值钱的目录优化不是新增入口，而是把目录层 visible label 同步过去；否则 later maintainer 还没点进去，就已经先被旧 route words 重新定向。
+  - 目录结构真正成熟时，README 与导航页不只要分工正确，还要在点击前就说对主语；这层标签治理做不好，深页 doctrine 会被入口层持续稀释。
 - `api/49 / api/54 / playbooks/29 / guides/100 / playbooks/78` 现已继续把 host-facing contract 线往下收：
   - `49` 现在更明确把 Prompt 支持面写成 `request compiler input surface + observable surface + internal compiler surface` 三层，而不再让 `compiled_request_truth` 与 `systemPrompt` 继续占主语位。
   - `54` 现在更明确补出 Prompt host contract 最短对照，把 `message lineage / projection consumer / stable prefix boundary / protocol transcript / continuation object+qualification` 直接钉到 host 应消费的 contract 面。

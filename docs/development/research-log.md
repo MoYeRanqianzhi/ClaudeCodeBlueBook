@@ -6,6 +6,7 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮目录标签同步动作: 已继续更新 `bluebook/README`、`guides/README`、`api/README`、`playbooks/README` 与 `navigation/03`，把 host-facing 页和方法页最近换代后的 H1 同步回目录/导航 visible label，避免目录层继续把读者送回 `预算器 / authoritative surface / adapter subset` 这些旧路由词。
 - 本轮 host-facing contract 动作: 已继续更新 `api/49`、`api/54`、`playbooks/29`、`guides/100` 与 `playbooks/78`，把 Prompt host-facing 文档进一步收回 `request compiler / message lineage / projection consumer / continuation qualification` 的 contract 面，并把治理模板/验证页进一步把 `externalized truth chain` 顶到标题、审读问题和 drift verdict 层。
 - 本轮综合页深化动作: 已继续更新 `07-运行时契约、知识层与生态边界`、`01-源码结构地图`、`navigation/03` 与 `navigation/41`，把 request compiler、governance pricing chain、current-truth writeback 与 `compile / price / externalize / evict` 四个跨平面函数压成更高一层的综合公式，并把结构地图里的“事件线真相 vs 当前真相面”分工补齐。
 - 本轮 late-agent follow-up 动作: 已继续更新 `03-设计哲学`、`guides/102`、`architecture/84` 与 `architecture/59`，把“transcript 保存事件线真相、state writeback 负责宿主当前真相”的分工前置，并把 `authoritative surface candidate / consumer subset / current-truth writeback` 这些晚到但高价值的修正吸回正文。

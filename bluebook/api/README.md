@@ -4,7 +4,7 @@
 
 还要先记一句：
 
-- `api/` 不是接口清单层，而是真相暴露层；更稳的读法不是先按编号扫平面，而是先问 `contract truth -> registry truth -> authoritative surface -> adapter subset -> danger surface`，再看具体接口和宿主消费路径。
+- `api/` 不是接口清单层，而是真相暴露层；更稳的读法不是先按编号扫平面，而是先问 `contract truth -> registry truth -> current-truth surface / host truth -> consumer subset -> danger surface`，再看具体接口和宿主消费路径。
 
 ## 七个平面
 
