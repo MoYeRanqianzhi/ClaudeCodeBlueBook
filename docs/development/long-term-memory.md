@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `docs/development/00-研究方法.md` 与 `03-反思与迭代准则.md` 现已继续把这轮编辑 doctrine 写成正式方法约束：
+  - 发言权现在应长期记住：它不只回答“这一层能说什么”，还必须回答“这一层不能改判什么、later maintainer 异议该往哪层申诉”。说不清 canonical owner 和 appeal layer 的入口页，默认按“第二叙述者风险”拒收。
+  - “局部可反对性”现在应长期记住：更稳的最小见证集是 `authority surface + writeback seam + first retreat layer`。后续凡是再写 future maintainer，而没有把这三件至少压进正文或模板，均视为价值口号。
+  - “只回写记忆、不回正文”现在应长期记住：批次收口、推荐顺序、入口切换协议、兼容标签/路径债等编排真相，默认先只进 `docs/` 和记忆层；只有它真的改动 canonical chain / frontdoor formula / first reject path，才升正文。
+  - “新增入口”现在应长期记住：先改可见标签，再补 `navigation`，再同步专题 README，最后才考虑新开前门；只有现有入口承载不了新的第一问或新的申诉位阶时，新增入口才算必要。
 - `api/README`、`security/README`、`risk/README`、`userbook/README` 与 `docs/README` 现已继续把“发言权限 / 申诉链” doctrine 扩展到剩余高流量入口：
   - `api/README` 现在应长期记住：它有 contract/host-facing truth 的承认权，但没有第一性原理改判权，也没有现场 verdict 签发权。
   - `security/README` 现在应长期记住：它解释 signer / ledger / cleanup 机制，但没有用户侧恢复签发权，也没有执行链 verdict 的代签权。
