@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 Prompt 验收尾部纠偏动作: 已继续更新 `guides/57`、`playbooks/35` 与 `playbooks/77`，把 Prompt 迁移纠偏、宿主验收执行与长期验证尾部从 `compiled request truth / 请求对象 / continue qualification` 的旧执行主语收回到 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`。
+- 本轮 Prompt 尾部旧根词清理动作: `57` 现已把 `compiled request truth` 降为 legacy alias，把迁移纠偏固定回 `message lineage / projection consumer / protocol transcript / stable prefix boundary / continuation object / continuation qualification`；`35 / 77` 现已把“请求对象”与旧验证/验收尾语收回到 `message lineage / continuation qualification / cache-safe fork` 的单一对象链。
+- 并行 Agent 目录优化建议: 当前最值钱的目录层下一批不是正文，而是 `navigation/README + playbooks/README`，可选再带 `guides/README`；目标是把结构线入口从长编号链改成“legacy intake/acceptance、current repair/refinement、current validation”三档，而不再让入口层反向打乱当前对象链。
 - 本轮 Prompt 深层执行纠偏动作: 已继续更新 `guides/81 / 90`，把 Prompt 再纠偏与 refinement execution 从 `compiled request truth / request object / continue qualification / host consumption card` 的旧执行主语收回到 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification`。
 - 本轮 Prompt 执行工件降级动作: `81 / 90` 现已把 `recorrection card`、`protocol repair block`、`host consumption card`、`reopen liability ticket` 明确降为修复工件，而不再让它们冒充 root object；`compiled request truth` 只保留为 legacy alias。
 - 并行 Agent Prompt 下一批建议更新: 在 `guides/81 / 90` 之后，Prompt 线最值钱的下一批应收口到 `playbooks/35 + playbooks/77`；当前残留问题主要不是对象链缺失，而是旧 slug / 旧 execution root 与导航/流程句式仍有尾巴。

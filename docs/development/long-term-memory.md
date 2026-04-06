@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `guides/57 / playbooks/35 / playbooks/77` 现已把 Prompt 迁移纠偏、宿主验收执行与长期验证尾部统一到当前对象链：
+  - `57` 现已把 Prompt 迁移纠偏固定回 `message lineage -> projection consumer -> protocol transcript -> stable prefix boundary -> continuation object -> continuation qualification`。
+  - `35` 现已把 Prompt 宿主验收执行固定回 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification -> reject / rollback`。
+  - `77` 现已把长期验证固定回 `message lineage -> projection consumer -> section registry -> protocol transcript -> continuation object -> continuation qualification -> cache-safe fork reuse`。
+- 新的长期结论：
+  - Prompt 验收尾部真正成熟时，不应再让“请求对象”“compiled request truth”“continue qualification”这些旧尾语留在执行主轴上；执行、验证与迁移层都必须回到同一条 `message lineage` 根链。
+  - 当前目录层最值钱的继续点，已由并行 Agent 收敛到 `navigation/README + playbooks/README`，可选再带 `guides/README`；这一批应只做入口分流，不动正文，把结构线明确拆成 legacy intake/acceptance、current repair/refinement、current validation 三档。
 - `guides/81 / 90` 现已把 Prompt 深层再纠偏与 refinement 执行统一到当前对象链：
   - `81` 现已把 Prompt 再纠偏执行固定到 `message lineage -> projection consumer -> protocol transcript -> stable prefix boundary -> continuation object -> continuation qualification -> threshold liability`。
   - `90` 现已把 Prompt refinement execution 固定到 `message lineage -> projection consumer -> section registry + dynamic boundary -> coordinator synthesis custody -> protocol-prefix custody -> continuation object -> reopen liability`。

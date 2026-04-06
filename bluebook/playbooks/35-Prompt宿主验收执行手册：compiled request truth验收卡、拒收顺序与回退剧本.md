@@ -1,14 +1,14 @@
-# Prompt宿主验收执行手册：message lineage、projection consumer、continuation qualification验收卡、拒收顺序与回退剧本
+# Prompt 宿主验收执行手册：message lineage、protocol transcript、continuation object 与回退剧本
 
-这一章不再解释 Prompt 宿主验收协议该消费哪些字段，而是把 Claude Code 式 Prompt 验收压成一张可持续执行的验收手册。
+Prompt 宿主验收真正要执行的，不是把 contract 字段抄进表单，而是持续证明下面这条执行链仍围绕同一条当前世界成立：
 
-它主要回答五个问题：
-
-1. 宿主、CI、评审与交接怎样共享同一张 Prompt 验收卡，而不是各自消费不同真相。
-2. 应该按什么固定顺序执行 Prompt 宿主验收，才能真正验到同一条 `message lineage` 上的 `protocol transcript` 与 `continuation object`。
-3. 哪些 reject reason 一旦出现就必须立即停止继续、拒绝交接并进入回退。
-4. 哪些回退演练最能暴露 Prompt 宿主实现又重新退回截图、摘要与 last-message heuristic。
-5. 怎样用第一性原理与苏格拉底式追问避免把这层写成“更细的 prompt 表单”。
+1. `message lineage`
+2. `projection consumer`
+3. `protocol transcript`
+4. `stable prefix boundary`
+5. `continuation object`
+6. `continuation qualification`
+7. `reject / rollback`
 
 ## 0. 代表性源码锚点
 
@@ -29,26 +29,20 @@
 
 ## 1. 第一性原理
 
-Prompt 宿主验收真正要执行的不是：
+Prompt 宿主验收真正要拒绝的，不是表单缺几项，而是交接替身重新篡位：
 
-- prompt 文案看起来更强了
-- 页面上有一张验收卡了
+- Prompt 文案冒充对象
+- display history 冒充 `protocol transcript`
+- 摘要冒充 `continuation object`
+- 按钮状态与最后一条消息冒充 `continuation qualification`
 
-而是：
-
-- 宿主、CI、评审与交接仍围绕同一条 `message lineage` 上的 `protocol transcript`、`lawful forgetting boundary` 与 `continuation object` 在判断
-
-所以这层 playbook 最先要看的不是：
-
-- 验收卡已经填完了
-
-而是：
+所以这层 playbook 最先要看的不是验收卡是否填完，而是：
 
 1. 当前判断对象是否仍是同一条 `message lineage`。
-2. projection consumer 是否仍指向同一条 truth。
+2. `projection consumer` 是否仍指向同一条 truth。
 3. `section registry` 与 `stable prefix boundary` 是否仍是正式权威边界。
 4. 模型消费的是否仍是 `protocol transcript`，而不是 UI 历史。
-5. compact 之后留下的是 `lawful forgetting boundary` 与 `continuation object`，而不是摘要替身。
+5. compact 之后留下的是 `continuation object`，而不是摘要替身。
 6. 继续资格是否仍由 `continuation qualification` 裁定，而不是由按钮、`stop_reason` 与最后一条消息裁定。
 
 ## 2. 共享验收卡最小字段
@@ -76,57 +70,57 @@ Prompt 宿主验收真正要执行的不是：
 1. 宿主看 live object 是否仍成立。
 2. CI 看字段与执行顺序是否完整。
 3. 评审看 reject reason 与解释链是否自洽。
-4. 交接看 `lawful_forgetting_boundary`、projection consumer 与 `continuation_qualification` 是否足以让后来者继续。
+4. 交接看 `lawful_forgetting_boundary`、projection consumer 与 `continuation_qualification` 是否足以让 later 团队继续。
 
 ## 3. 固定执行顺序
 
-### 3.1 先验 lineage continuity
+### 3.1 先验 `lineage continuity`
 
 先看：
 
-1. 当前对象是否仍挂在同一条 `message_lineage_ref`
-2. `lineage_kernel_integrity` 是否仍成立
-3. `section_registry_snapshot` 是否存在
-4. `stable_prefix_boundary` 是否仍可被复查
+1. 当前对象是否仍挂在同一条 `message_lineage_ref`。
+2. `lineage_kernel_integrity` 是否仍成立。
+3. `section_registry_snapshot` 是否存在。
+4. `stable_prefix_boundary` 是否仍可被复查。
 
 只要这一步不成立，就不应继续看 cache、摘要或 continue。
 
-### 3.2 再验 projection consumer 与 protocol transcript
+### 3.2 再验 `projection consumer` 与 `protocol transcript`
 
 再看：
 
-1. display / protocol / SDK-control / handoff 是否仍只是同一条 lineage 的不同 consumer
-2. raw history 与 `protocol transcript` 是否仍分层
-3. tool/result pairing 是否仍健康
-4. 交接系统是否仍围绕 rewrite 后 transcript 工作
+1. display / protocol / SDK-control / handoff 是否仍只是同一条 lineage 的不同 consumer。
+2. raw history 与 `protocol transcript` 是否仍分层。
+3. tool/result pairing 是否仍健康。
+4. 交接系统是否仍围绕 rewrite 后 transcript 工作。
 
 如果这一步不成立，就说明团队正在围绕错误历史做继续判断。
 
-### 3.3 再验 cache explainability
+### 3.3 再验 `cache explainability`
 
 再看：
 
-1. 当前 cache break 是否仍有对象级 reason
-2. tool schema / beta / extra body drift 是否仍能解释到字段级
-3. cache 指标是否仍是解释结果，而不是替代真相
+1. 当前 cache break 是否仍有对象级 reason。
+2. tool schema / beta / extra body drift 是否仍能解释到字段级。
+3. cache 指标是否仍是解释结果，而不是替代真相。
 
-### 3.4 再验 lawful forgetting boundary
+### 3.4 再验 `continuation object`
 
 再看：
 
-1. compact 后是否仍留下 boundary、preserved segment 与 next-step guard
-2. summary 是否仍只是辅助资产，而不是主真相
-3. `continuation_object_ref` 是否仍能挂回同一 lineage
-4. 交接对象是否仍能支撑 later continuation
+1. compact 后是否仍留下 boundary、preserved segment 与 next-step guard。
+2. summary 是否仍只是辅助资产，而不是主真相。
+3. `continuation_object_ref` 是否仍能挂回同一 lineage。
+4. 交接对象是否仍能支撑 later continuation。
 
-### 3.5 最后验 continuation qualification
+### 3.5 最后验 `continuation qualification`
 
 最后才看：
 
-1. `continuation_qualification` 是否与 `session_state`、`result_subtype` 一致
-2. stop hook / token budget / pending action 是否仍纳入同一 gate
-3. projection consumer 是否仍不会把 display truth 误当继续资格
-4. 是否仍能清楚区分 continue、compact、升级对象与停止
+1. `continuation_qualification` 是否与 `session_state`、`result_subtype` 一致。
+2. stop hook / token budget / pending action 是否仍纳入同一 gate。
+3. projection consumer 是否仍不会把 display truth 误当继续资格。
+4. 是否仍能清楚区分 continue、compact、升级对象与停止。
 
 ## 4. 直接拒收条件
 
@@ -183,7 +177,7 @@ Prompt 宿主验收真正要执行的不是：
 在你准备宣布“Prompt 宿主验收已经稳定运行”前，先问自己：
 
 1. 我消费的是同一条 `message lineage`，还是一段 Prompt 文本。
-2. 当前 projection consumer 有没有在宿主、CI、评审与交接之间保持对齐。
+2. 当前 `projection consumer` 有没有在宿主、CI、评审与交接之间保持对齐。
 3. 我现在看到的是 `stable prefix boundary`，还是作者脑内边界。
 4. cache drift 时，我能指出是哪类字段漂了，还是只能说命中率掉了。
 5. 模型看到的是 rewrite 后 transcript，还是我看到的 UI 历史。
@@ -194,4 +188,4 @@ Prompt 宿主验收真正要执行的不是：
 
 ## 9. 一句话总结
 
-真正成熟的 Prompt 宿主验收执行，不是把 contract 字段抄进表单，而是持续证明宿主、CI、评审与交接仍围绕同一条 `message lineage` 上的 `protocol transcript`、`lawful forgetting boundary` 与 `continuation qualification` 执行、拒收与回退。
+真正成熟的 Prompt 宿主验收执行，不是把 contract 字段抄进表单，而是持续证明宿主、CI、评审与交接仍围绕同一条 `message lineage` 上的 `protocol transcript`、`continuation object` 与 `continuation qualification` 执行、拒收与回退。
