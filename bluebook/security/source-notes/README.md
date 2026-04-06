@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 68 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 69 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -87,6 +87,7 @@
 66. [66-duplicate与orphan response分流中的强请求清理免责释放治理边界](66-duplicate%E4%B8%8Eorphan%20response%E5%88%86%E6%B5%81%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%85%8D%E8%B4%A3%E9%87%8A%E6%94%BE%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 67. [67-commandLifecycle与orphaned-permission队列的强请求清理归档关闭治理边界](67-commandLifecycle%E4%B8%8Eorphaned-permission%E9%98%9F%E5%88%97%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%BD%92%E6%A1%A3%E5%85%B3%E9%97%AD%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 68. [68-control_response回放与日志面的强请求清理审计关闭治理边界](68-control_response%E5%9B%9E%E6%94%BE%E4%B8%8E%E6%97%A5%E5%BF%97%E9%9D%A2%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%AE%A1%E8%AE%A1%E5%85%B3%E9%97%AD%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+69. [69-debug与diagnostics载体物化中的强请求清理不可逆擦除治理边界](69-debug%E4%B8%8Ediagnostics%E8%BD%BD%E4%BD%93%E7%89%A9%E5%8C%96%E4%B8%AD%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E4%B8%8D%E5%8F%AF%E9%80%86%E6%93%A6%E9%99%A4%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
