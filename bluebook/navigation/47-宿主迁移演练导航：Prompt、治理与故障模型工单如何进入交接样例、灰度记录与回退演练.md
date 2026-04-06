@@ -1,8 +1,8 @@
-# 宿主迁移演练导航：Prompt、治理与故障模型工单如何进入交接样例、灰度记录与回退演练
+# 宿主迁移演练导航：request compiler、externalized truth chain 与 current-truth writeback 如何进入交接样例、灰度记录与回退演练
 
 这一篇不再回答“宿主迁移工单该怎样编排”，而是回答：
 
-- 当 `compiled request truth`、`governance control plane object` 与结构真相面已经被压成迁移工单之后，团队该怎样把它们继续压成交接样例、灰度记录与回退演练，避免工单一落地就重新退回人工经验。
+- 当 `request compiler`、`externalized truth chain` 与 `current-truth writeback` 已经被压成迁移工单之后，团队该怎样把它们继续压成交接样例、灰度记录与回退演练，避免工单一落地就重新退回人工经验。
 
 它主要回答五个问题：
 
@@ -16,7 +16,7 @@
 
 适合在这些问题下阅读：
 
-- 怎样证明宿主已经能围绕同一个 `compiled request truth` 交接、灰度与回退。
+- 怎样证明宿主已经能围绕同一个 `request compiler` 交接、灰度与回退。
 - 怎样把 Prompt 迁移工单继续压成现场真的能跑的交接样例与演练记录。
 
 稳定阅读顺序：
@@ -37,7 +37,7 @@
 
 适合在这些问题下阅读：
 
-- 怎样证明宿主已经能围绕 authority source、decision window、continuation gate 与 rollback object 做交接、灰度与回退。
+- 怎样证明宿主已经能围绕 `governance key`、`externalized truth chain`、`decision window` 与 `continuation pricing / cleanup` 做交接、灰度与回退。
 - 怎样把治理迁移工单继续压成现场真的能跑的交接样例与演练记录。
 
 稳定阅读顺序：
@@ -58,7 +58,7 @@
 
 适合在这些问题下阅读：
 
-- 怎样证明宿主已经能围绕 authority state、recovery boundary、anti-zombie 结果面与 writeback 主路径做交接、灰度与回退。
+- 怎样证明宿主已经能围绕 `current-truth surface`、`current-truth writeback`、`freshness gate` 与 `anti-zombie evidence` 做交接、灰度与回退。
 - 怎样把结构迁移工单继续压成现场真的能跑的交接样例与演练记录。
 
 稳定阅读顺序：
@@ -93,11 +93,11 @@
 
 - 运营层、灰度层与复盘层
 
-## 5. 苏格拉底式自检
+## 5. 第一性原理与苏格拉底式自检
 
 在你准备宣布“宿主迁移已经完成”前，先问自己：
 
 1. 我的团队真的能交接、灰度与回退，还是只会讲迁移顺序。
-2. 交接包保护的是同一机制对象，还是又退回截图、摘要与作者说明。
+2. 交接包保护的是 `request compiler / externalized truth chain / current-truth writeback`，还是又退回截图、摘要与作者说明。
 3. 灰度记录里保留的是正式信号，还是局部界面印象。
 4. 回退演练保护的是同一对象边界，还是把文件操作误当治理与恢复真相。

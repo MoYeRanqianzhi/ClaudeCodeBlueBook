@@ -2,6 +2,8 @@
 
 ## 2026-04-06
 
+- 继续更新 `navigation/47`、`navigation/48`、`navigation/50` 与 `navigation/51`，把宿主迁移演练、失真、验收协议与验收执行这一组中间导航层的 visible noun 收回到 `request compiler / externalized truth chain / current-truth writeback / current-truth surface`，并把自检段升级为第一性原理式对象追问，避免读者在进入 `playbooks / casebooks / api` 前先被 `compiled request truth / authority object` 这类旧 route words 带偏
+- 本轮继续前重试根仓库 `main` 同步；结果确认根仓库当前有未解决冲突，`git pull --ff-only origin main` 被 `bluebook/security/README.md` 与 `docs/development/research-log.md` 的未合并状态阻塞，因此本批次继续严格只在 `.worktrees/mainloop` 内推进并落地提交，不触碰根仓库冲突
 - 继续更新 `navigation/07`、`navigation/46`、`navigation/README` 与 `api/README`，把方法/迁移/API 前门里的旧 route words 继续收回到 `request compiler / current-truth writeback / externalized truth chain / current-truth surface / consumer subset`，并把 API 目录层更明确分流到 `49 -> 54` 与 `28 -> 32 -> 52` 这两条 Prompt / 治理宿主消费入口
 - 继续更新 `bluebook/README`、`guides/README`、`api/README`、`playbooks/README` 与 `navigation/03`，把 recent H1/doctrine 变化同步回目录层 visible label：治理线现在更明确前置 `externalized truth chain`，源码质量方法线现在更明确前置 `current-truth surface / consumer subset / mirror gap discipline`，并把 `authoritative surface / adapter subset / 预算器` 这类旧 route words 继续降为内层解释词
 - 继续更新 `api/49`、`api/54`、`playbooks/29`、`guides/100` 与 `playbooks/78`，把 Prompt host-facing 文档进一步收回 `request compiler / message lineage / projection consumer / continuation qualification` 的 contract 面，并把治理模板/验证页进一步把 `externalized truth chain` 顶到标题和检查项层；同时补出“host 不得从 mode 条、token 条、spinner 与文案反推真相”的正式拒收与回归判断

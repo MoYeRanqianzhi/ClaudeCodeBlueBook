@@ -1,8 +1,8 @@
-# 宿主迁移失真导航：Prompt、治理与故障模型演练如何重新退回伪交接、假灰度与回退幻觉
+# 宿主迁移失真导航：request compiler、externalized truth chain 与 current-truth writeback 如何重新退回伪交接、假灰度与回退幻觉
 
 这一篇不再回答“宿主迁移演练该怎样执行”，而是回答：
 
-- 为什么团队明明已经把 `compiled request truth`、`governance control plane object` 与结构真相面写成交接包、灰度记录与回退演练，仍会重新退回截图交接、假窗口对齐、成功率回退与作者口述。
+- 为什么团队明明已经把 `request compiler`、`externalized truth chain` 与 `current-truth writeback` 写成交接包、灰度记录与回退演练，仍会重新退回截图交接、假窗口对齐、成功率回退与作者口述。
 
 它主要回答五个问题：
 
@@ -58,8 +58,8 @@
 
 适合在这些问题下阅读：
 
-- 为什么结构迁移演练明明已经有交接包、灰度记录与回退 drill，团队仍会重新把它消费成 pointer、成功率与作者说明。
-- 哪些“看起来恢复已经成立”的信号，其实正在重新制造 split-brain 与 zombie outcome。
+- 为什么 `current-truth writeback` 迁移演练明明已经有交接包、灰度记录与回退 drill，团队仍会重新把它消费成 pointer、成功率与作者说明。
+- 哪些“看起来 `current-truth surface` 已经成立”的信号，其实正在重新制造 stale worldview、ghost capability 与 writeback 分叉。
 
 稳定阅读顺序：
 
@@ -69,7 +69,7 @@
 
 这条线的核心不是：
 
-- 再讲一次结构真相面
+- 再讲一次 `current-truth surface`
 
 而是：
 
@@ -93,11 +93,11 @@
 
 - 失真样本层与反例层
 
-## 5. 苏格拉底式自检
+## 5. 第一性原理与苏格拉底式自检
 
 在你准备宣布“宿主迁移已经稳定”前，先问自己：
 
-1. 我看到的是正式对象交接，还是更漂亮的截图与摘要。
+1. 我看到的是 `request compiler / externalized truth chain / current-truth writeback` 的正式对象交接，还是更漂亮的截图与摘要。
 2. 我看到的是对象级灰度信号，还是一组黑箱通过率。
 3. 我看到的是对象级回退，还是文件回退、成功率与作者口述。
 4. 这份成功感来自机制对象真的成立，还是来自我们换了一套更高级的第二真相。

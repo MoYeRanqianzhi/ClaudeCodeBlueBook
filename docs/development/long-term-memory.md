@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `navigation/47 / 48 / 50 / 51` 现已继续把宿主迁移与验收中间导航层的 visible noun 收口：
+  - `47` 现在更明确把宿主迁移演练线前置为 `request compiler / externalized truth chain / current-truth writeback`，不再让 `compiled request truth / governance control plane object / 结构真相面` 继续冒充迁移演练的第一跳主语。
+  - `48` 现在更明确把宿主迁移失真线前置为 `request compiler / externalized truth chain / current-truth writeback` 的伪交接、假灰度与伪回退，并把结构失真更准确收回到 `current-truth surface / current-truth writeback` 的失败信号。
+  - `50` 现在更明确把宿主验收协议的结构 contract 收回到 `current-truth surface -> current-truth writeback -> per-host authority width -> freshness gate -> anti-zombie evidence -> reopen boundary`。
+  - `51` 现在更明确把宿主验收执行的结构顺序收回到 `current-truth surface -> current-truth writeback -> freshness gate -> stale worldview / ghost capability -> anti-zombie evidence -> reopen boundary`。
+- 新的长期结论：
+  - 当深页与目录 README 已经换代后，下一层最值钱的目录结构优化往往不是再补一个入口，而是把“迁移演练 / 失真反例 / 验收协议 / 验收执行”这组中间导航层同步换代；否则 later maintainer 在真正进入 `playbooks / casebooks / api` 之前，就会先被旧 route words 重新定向。
+  - 宿主验收真正成熟时，协议卡与执行卡的结构主语不应再停在 `authority object / writeback path` 这类过渡词；更稳的写法必须显式拆成 `current-truth surface / current-truth writeback / freshness gate / anti-zombie evidence` 这类对象级判断链。
+  - 当根仓库 `main` 处于外部未解决冲突时，隔离 worktree 的正确动作不是越权去解主仓冲突，而是记录阻塞、继续在 assigned worktree 内形成最小闭环，并把阻塞事实同步回持久化记忆。
 - `navigation/07 / navigation/46 / navigation/README / api/README` 现已继续把方法/迁移/API 前门的 route words 收口：
   - `07` 现在更明确把合同优先方法线收回到 `current-truth surface / host-facing truth / consumer subset`，把公开镜像方法线收回到 `current-truth surface / consumer subset / hotspot kernel / mirror gap`。
   - `46` 现在更明确把宿主迁移工单三线分别前置为 `request compiler`、`governance key + externalized truth chain` 与 `current-truth writeback`，不再让 `systemPrompt`、mode 面板或恢复成功率占前门。
