@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `README`、`bluebook/README`、`philosophy/README`、`guides/README`、`playbooks/README`、`casebooks/README`、`navigation/README` 与 `navigation/04` 的目录前门，把计数/编号库存、`source-first pricing / authority object / 最小可见面 / single-writer authority / builder / 开发记忆` 这类旧 visible root、角色口吻与过程词收回到 `稳定入口 / governance pricing chain / current-truth surface / decision window / 高阶审读 / 研究过程、证据与变更记录`，并同步移除 `guides/100 / 101` 开头的兼容路径正文提示
 - 继续更新 `06-第一性原理与苏格拉底反思` 的 `6.36-6.63`、`guides/100 / 101` 与 `navigation/03`，把后半段“我们是否仍 / 蓝皮书会...”式自指标题与句型收回到制度失真命名、失败模式与八张判据卡，并把治理 / 结构审读页的可见主语统一到 `governance key / decision window / continuation pricing` 与 `current-truth surface / freshness gate / ghost capability`，同时保留旧文件名作为兼容入口
 - 继续更新 `06-第一性原理与苏格拉底反思` 的 `6.22-6.35` 与 `guides/99 / 100 / 101` 的开头、回修顺序和栏目名，把 `我们是否仍... / builder-facing / 审读记录卡 / 检查清单` 这类自指或 worksheet 语气收回到 `为什么常被误写 / 失稳前审读问题 / 失稳时的回修顺序 / 最小判据 / 否证问句` 这类更硬的 doctrine 语言，并同步把局部治理链条从旧 `authority source / authority object` 收回到 `governance key / governance truth` 与 `current-truth surface`
 - 继续更新 `06-第一性原理与苏格拉底反思` 的 `2.13`、`6.61-6.63` 与 `guides/99 / 100 / 101` 的后半段小标题，把“本书应统一复用 / 审读记录卡 / 检查清单 / 同题坏解 / 渐进改写顺序”这类较强的 workshop 与路线提示语气收回到“对称判断 / 最小判据 / 否证问句 / 失真命名”这类更硬的 doctrine 语言

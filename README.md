@@ -1,13 +1,20 @@
 # Claude Code Blue Book
 
-面向 `claude-code-source-code/` 的 Claude Code 蓝皮书工程。这个仓库把源码研究拆成主线章节、专题索引、失败样本、运行手册和开发记忆，而不是维护一篇持续膨胀的长文。
+面向 `claude-code-source-code/` 的 Claude Code 蓝皮书工程。这个仓库把源码研究拆成主线章节、专题入口、失败样本、运行手册，以及研究过程、证据与变更记录，而不是维护一篇持续膨胀的长文。
 
-## 仓库结构
+## 如何进入蓝皮书
 
-- [bluebook/README.md](bluebook/README.md): 蓝皮书总索引。根目录含 `00-08` 主线 9 篇和 3 个兼容别名页；专题目录包括 `api/` 92 篇、`architecture/` 81 篇、`navigation/` 99 篇、`guides/` 95 篇、`philosophy/` 83 篇、`casebooks/` 66 篇、`playbooks/` 73 篇、`risk/` 65 篇、`security/` 139 篇正文与 `security/appendix/` 122 篇速查表。
-- [docs/README.md](docs/README.md): 开发与记忆文档。`docs/` 根目录 2 篇，`development/` 下 6 篇研究方法、证据索引与研究日志。
-- `claude-code-source-code/`: 反编译/镜像源码参考，不是蓝皮书正文。
-- 根目录辅助文档：`Agents.md`、`cgit.md`、`cmainloop.md`、`crisk.md`、`cuserbook.md` 是协作或专题备忘，不替代主线索引。
+- 首次阅读：`README -> bluebook/README -> bluebook/09 -> bluebook/03 -> bluebook/00 / 01`
+- 按主题进入：先到 [bluebook/README.md](bluebook/README.md)，再按主线、方法、验证或反例分流
+- 跨目录反查：回到 [bluebook/navigation/README.md](bluebook/navigation/README.md)
+- 研究方法、证据归档与持久化记忆：回到 [docs/README.md](docs/README.md)
+
+## 目录入口
+
+- [bluebook/README.md](bluebook/README.md): 蓝皮书入口与主线前门
+- [docs/README.md](docs/README.md): 研究过程、证据与变更记录
+- `claude-code-source-code/`: 反编译/镜像源码参考，不是蓝皮书正文
+- 根目录辅助文档：`Agents.md`、`cgit.md`、`cmainloop.md`、`crisk.md`、`cuserbook.md` 是协作或专题备忘，不替代主线索引
 
 ## 主线入口
 
@@ -37,7 +44,7 @@
 
 ## 推荐阅读
 
-- 初次进入：`README -> bluebook/README -> 00 -> 01 -> 03 -> 08`
+- 初次进入：`README -> bluebook/README -> 09 -> 03 -> 00 / 01`
 - 想高效使用 Claude Code：`02 -> guides/README`
 - 想接宿主或控制协议：`05 -> api/README -> architecture/README`
 - 想看安全与风控：`security/README -> risk/README`

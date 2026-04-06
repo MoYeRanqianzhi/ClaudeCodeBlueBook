@@ -1,6 +1,6 @@
-# 案例库
+# 失败样本
 
-`casebooks/` 当前有 75 篇编号文档，范围 `01-75`。本目录不重讲正确答案，而是收纳 Prompt、治理、结构和宿主落地里的失败样本、反例对照与失真原型。它只保留失败正文，不再夹带轮次级整改待办或“改写路径”。
+`casebooks/` 只收失败样本、反例对照与失真机制，不重讲正确答案。正向修复路径统一回 `guides/`、`playbooks/` 与对应协议页。
 
 ## 目录分层
 
@@ -19,7 +19,7 @@
 - 治理主键与统一定价修复链：`23 -> 35 -> 47 -> 71 / 74`
   - 核心对象：`governance key / externalized truth chain / decision window / continuation pricing / durable-vs-transient`
 - 结构权威面与 present-truth 修复链：`15 -> 36 -> 42 -> 75`
-  - 核心对象：`authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`
+  - 核心对象：`current-truth surface / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`
 - 想看“宿主到底该消费哪些正式对象”，先去 `../navigation/43`，再回这些反例页看失真样本。
 
 ## 推荐入口
@@ -34,8 +34,8 @@
 - [67-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假repair card、假共同reject语义与假reopen liability](67-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假repair card、假共同reject语义与假reopen liability.md)
 - [70-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假message lineage card、假shared reject语义与假reopen liability](70-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行反例：假compiled request card、假shared reject语义与假reopen liability.md)
 - [73-请求装配控制面验证失真反例：假lineage kernel、假protocol transcript与假continuation object](73-请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object.md)
-- [74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续](74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续.md)
-- [75-one writable present验证失真反例：健康投影篡位、恢复资产越权与anti-zombie伪证](75-one writable present验证失真反例：健康投影篡位、恢复资产越权与anti-zombie伪证.md)
+- [74-当前世界准入主权验证失真反例：低信任扩权、假decision window与免费继续](74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续.md)
+- [75-one writable present验证失真反例：健康投影篡位、恢复资产越权与ghost capability伪证](75-one writable present验证失真反例：健康投影篡位、恢复资产越权与anti-zombie伪证.md)
 
 ## 怎么配合其他目录使用
 
@@ -53,5 +53,5 @@
 - README 只保留阶段入口和代表性反例，不再镜像全部 75 篇标题。
 - 新样本应按编号段放回对应阶段，保持与 `playbooks/` 和 `navigation/` 的互补关系。
 - 正向改写、修复顺序与协议对象统一写回 `guides/`、`playbooks/`、`api/`，不重新塞回案例正文。
-- 轮次推进与开发记忆统一回写到 `docs/`，不写进案例正文。
+- 过程记录与变更记录统一回写到 `docs/`，不写进案例正文。
 - 编号段负责时间顺序，对象链入口负责阅读顺序；不要再让编号感压过对象主语。

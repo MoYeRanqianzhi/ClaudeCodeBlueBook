@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮目录前门收口动作: 已继续更新 `README`、`bluebook/README`、`philosophy/README`、`guides/README`、`playbooks/README`、`casebooks/README`、`navigation/README` 与 `navigation/04`，把目录首页的计数/编号库存、`source-first pricing / authority object / 最小可见面 / single-writer authority / builder / 开发记忆` 这类旧 visible root 与过程口吻收回到 `稳定入口 / governance pricing chain / current-truth surface / decision window / 高阶审读 / 研究过程、证据与变更记录`。
+- 本轮目录结构判断加固: 当前最值钱的目录优化已不再是补更多跳转链，而是让 README 首页先回答“从哪进入、该用什么对象链判断”，而不是继续报篇数、阶段状态或角色口吻；兼容路径保留给文件名，规范 visible root 应由 H1、导语、入口标签与目录摘要承担。
+- 本轮侧线结论吸收: 并行 Agent 已进一步确认剩余高价值债主要集中在目录前门而非深正文，尤其是根 README、`bluebook/README`、`navigation/README`、`guides/README` 与 `navigation/04`；因此本批继续优先清 visible-root copy，而不再扩正文深段。
 - 本轮 `06` 后半段去自指化动作: 已继续更新 `6.36-6.63`，把“我们是否仍 / 蓝皮书会...”这组后半段自指标题与句型收回到制度失真命名、失败模式与八张判据卡；其中 `6.45-6.60` 现已更明确把 Prompt 魔力、安全定价与源码先进性分别压到“工作语法工程 / 反扩张运行时 / present-state protection”，不再退回文案、压缩技巧与结构截图叙事。
 - 本轮 visible root 收口动作: `guides/100 / 101` 现已显式声明“文件名只做兼容路径”，可见主语分别固定为 `governance key / decision window / continuation pricing` 与 `current-truth surface / freshness gate / ghost capability`；`navigation/03` 的治理入口标签也已同步换到当前对象链。
 - 本轮并行 Agent 经验: Prompt / 治理 / 源码质量三条 sidecar 已再次并行发起，但侧线受 `429` 限流影响较大；后续并行多 Agent 仍应继续使用，但任务粒度要更小，且不能把主线提交阻塞在侧线回传上。

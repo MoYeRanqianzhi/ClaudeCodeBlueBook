@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 目录前门现已继续收口到当前对象链与稳定入口语言：
+  - `README` 与 `bluebook/README` 现已从“仓储索引 / 篇数库存 / 这套目录怎么读”收回到“如何进入蓝皮书 / 蓝皮书入口 / 入口分工”。
+  - `philosophy/README / guides/README / playbooks/README / casebooks/README / navigation/README / navigation/04` 现已把 `source-first pricing / authority object / 最小可见面 / single-writer authority / builder / 开发记忆` 这类旧 visible root、角色词与过程词，收回到 `governance pricing chain / current-truth surface / decision window / 高阶审读 / 研究过程、证据与变更记录`。
+  - `guides/100 / 101` 已移除开头“文件名保留旧词兼容路径”这类会抢正文可见区的提示，兼容信息重新退回文件路径层。
+- 新的长期结论：
+  - 当正文对象链与判据语气已经稳定后，下一层最值钱的优化通常发生在目录前门，因为 README 首页、导航标签与开头导语会在读者进入正文前先决定他用哪套世界观阅读。
+  - “兼容路径”和“规范可见主语”必须长期分载体：旧文件名可以继续保留为稳定链接，但首页标题、导语、入口标签与目录摘要必须优先服从当前 doctrine，不能再让兼容说明占据正文可见区。
 - `06` 的 `6.36-6.63` 现已继续把后半段自指反思收口：
   - `我们是否仍... / 蓝皮书会...` 这组后半段标题与句型，现已系统改成制度失真命名、失败模式与八张判据卡。
   - `6.45-6.60` 现已更明确把 Prompt 魔力、安全定价与源码先进性分别压到“工作语法工程 / 反扩张运行时 / present-state protection”。

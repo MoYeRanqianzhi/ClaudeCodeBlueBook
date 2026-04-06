@@ -1,7 +1,5 @@
 # 如何用苏格拉底诘问法审读当前世界准入主权：governance key、decision window与continuation pricing
 
-文件名保留旧词兼容路径，正文以 `governance key / decision window / continuation pricing` 作为规范可见主语。
-
 这篇把 `architecture/83` 与 `philosophy/85` 压成一组失稳前审读问题。
 
 ## 0. 代表性源码锚点
