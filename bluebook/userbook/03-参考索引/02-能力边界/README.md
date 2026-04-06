@@ -23,3 +23,4 @@
 - [21-Remote Control 故障提示、停机与默认回退索引.md](./21-Remote%20Control%20%E6%95%85%E9%9A%9C%E6%8F%90%E7%A4%BA%E3%80%81%E5%81%9C%E6%9C%BA%E4%B8%8E%E9%BB%98%E8%AE%A4%E5%9B%9E%E9%80%80%E7%B4%A2%E5%BC%95.md)
 - [22-Remote Control 断开、退出与恢复轨迹索引.md](./22-Remote%20Control%20%E6%96%AD%E5%BC%80%E3%80%81%E9%80%80%E5%87%BA%E4%B8%8E%E6%81%A2%E5%A4%8D%E8%BD%A8%E8%BF%B9%E7%B4%A2%E5%BC%95.md)
 - [23-Remote Control stale pointer、过期环境与重试语义索引.md](./23-Remote%20Control%20stale%20pointer%E3%80%81%E8%BF%87%E6%9C%9F%E7%8E%AF%E5%A2%83%E4%B8%8E%E9%87%8D%E8%AF%95%E8%AF%AD%E4%B9%89%E7%B4%A2%E5%BC%95.md)
+- [24-Remote Control 补救动作与恢复建议索引.md](./24-Remote%20Control%20%E8%A1%A5%E6%95%91%E5%8A%A8%E4%BD%9C%E4%B8%8E%E6%81%A2%E5%A4%8D%E5%BB%BA%E8%AE%AE%E7%B4%A2%E5%BC%95.md)
