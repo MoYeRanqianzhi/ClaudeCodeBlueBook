@@ -2127,6 +2127,9 @@
 - 结构线最值钱的判断不只是“有 single writer”，而是恢复、投影、日志、发布和后来维护者都被迫围绕同一个 present 说话；谁想冒充 current world，谁就先失去主权。`authority object / authority state / single-writer authority` 这类词只宜保留为下层证据槽位、旧文件名或兼容别名，不再充当前门主语。
 - 当前真相线的下一跳残留集中在 `guides/56 / playbooks/31 / api/53 / guides/32 / playbooks/79`；源码质量高阶分析还应继续补强 `per-host authority width`、`event stream vs state writeback`、mirror gap discipline、host/domain/credential truth 与 `migration order as architecture quality` 这些轴，不要让 visible root 再退回“恢复成功率 / authority state / 单写者”旧叙事。
 - Prompt 高阶前门的稳定主语应继续收口到 `world entry / request assembly / six-stage assembly chain`；凡导航首页、判断页或目录入口的首问仍以“这套 prompt”或旧对象名起手，都属于 residual visible root。
+- `guides/56 / playbooks/31 / api/53 / guides/32 / playbooks/79` 这一组宿主接入/验证第一页，当前也应遵守同一纪律：前门先说 `current-truth surface`，再下钻到 `per-host authority width / writeback path / recovery asset non-sovereignty / freshness gate / anti-zombie evidence` 这些宿主展开对象；不要再让 `authority state / authority object / recovery boundary` 抢回主语位。
+- 目录前门如果必须引用兼容文件名，优先改可见链接标签而不是改路径；旧文件名可以继续活在路径里，但首页、导航页和稳定 judgment map 不应再让旧文件名术语直接占读者的第一眼。
+- Prompt 线的下一跳残留已收束到 `09 / philosophy/README / architecture/README / guides/README`；治理线的下一跳残留已收束到 `architecture/83 / philosophy/22 / architecture/README / navigation/03 / navigation/05`。更稳的节奏是分别按“第一句主语 / canonical chain / 路由标签”三层清理，不要把 prompt 和治理的高阶前门再混成同一批大扫除。
 
 ## 后续章节建议
 

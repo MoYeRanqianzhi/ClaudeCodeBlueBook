@@ -22,9 +22,9 @@
 - 请求装配线
   `09 -> architecture/82 -> philosophy/84 -> guides/99 -> playbooks/77 -> casebooks/73`
 - 扩张定价线
-  `09 -> architecture/83 -> philosophy/19 / philosophy/22 -> guides/100 -> playbooks/78 -> casebooks/74`
+  `09 -> architecture/83 -> philosophy/19 / philosophy/22 -> guides/100 -> playbooks/78 -> casebooks/74`；核心治理线是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
 - 当前真相线
-  `09 -> architecture/84 -> philosophy/76 -> guides/101 -> playbooks/79 -> casebooks/75`
+  `09 -> architecture/84 -> philosophy/76 / philosophy/86 / philosophy/87 -> guides/101 / guides/102 -> playbooks/79 -> casebooks/75`
 
 如果问题已经进入运行手册层，不要在这里重新拼全链；直接去对应的 `playbooks/README.md`、`guides/README.md` 或 `security/README.md`。
 

@@ -1,4 +1,4 @@
-# one writable present验证手册：per-host authority width、event stream / state writeback、stale worldview与ghost capability回归
+# one writable present验证手册：current-truth surface、per-host authority width、event stream / state writeback 与 ghost capability回归
 
 这一章不再解释源码先进性为什么成立，而是把 `architecture/84`、`philosophy/86` 与 `guides/101` 继续压成一张长期运行里的验证手册。
 
@@ -34,14 +34,15 @@
 
 所以这层验证最先要看的不是分层截图，而是：
 
-1. authority-width continuity
-2. recovery asset non-sovereignty continuity
-3. event-stream-vs-state-writeback continuity
-4. freshness-gate continuity
-5. stale-worldview continuity
-6. ghost-capability continuity
-7. release-surface shaping continuity
-8. later-maintainer rejectability continuity
+1. current-truth surface continuity
+2. per-host authority width continuity
+3. recovery asset non-sovereignty continuity
+4. event-stream-vs-state-writeback continuity
+5. freshness-gate continuity
+6. stale-worldview continuity
+7. ghost-capability continuity
+8. release-surface shaping continuity
+9. later-maintainer rejectability continuity
 
 ## 2. 回归症状
 
@@ -60,23 +61,25 @@
 
 每次变更后，至少逐项检查：
 
-1. `authority-width continuity`
-   - 当前真相是否仍只有一个正式 authority object，各个 host 只消费自己的合法 width。
-2. `recovery asset non-sovereignty continuity`
+1. `current-truth surface continuity`
+   - 当前真相是否仍只有一个正式 current-truth surface，而不是被多个 writer 或多个 projection 并行宣布。
+2. `per-host authority width continuity`
+   - 各个 host 是否仍只消费自己的合法 width，而不是拿 event stream 自己拼 current truth。
+3. `recovery asset non-sovereignty continuity`
    - 恢复资产是否仍只帮助找回 authority，而不宣布 authority。
-3. `event-stream-vs-state-writeback continuity`
+4. `event-stream-vs-state-writeback continuity`
    - append-only 时间线与 authoritative current-state surface 是否仍严格分层。
-4. `freshness-gate continuity`
+5. `freshness-gate continuity`
    - 旧 head、旧 generation、旧 pointer 是否仍在写回前就被 freshness gate 剥夺 authority。
-5. `stale-worldview continuity`
+6. `stale-worldview continuity`
    - validator、adapter 与 host consumer 是否仍不会站在 stale worldview 上继续发放允许。
-6. `ghost-capability continuity`
+7. `ghost-capability continuity`
    - dead capability token、旧 pin、旧 authority width 是否仍会 eviction，而不是继续篡位。
-7. `anti-zombie continuity`
+8. `anti-zombie continuity`
    - stale finally、stale snapshot、stale pointer 是否仍被正式拒绝。
-8. `release shaping continuity`
+9. `release shaping continuity`
    - compile-time、runtime 与 artifact 三层边界是否仍然分层。
-9. `later-maintainer rejectability continuity`
+10. `later-maintainer rejectability continuity`
    - later maintainer 是否仍能直接看出危险改动面与 reject 条件。
 
 ## 3.1 回归 / 拒收矩阵
@@ -87,14 +90,14 @@
 
 - `danger_surface_atlas_ref`
 - `gap_note_ref`
-- `authority_surface_ref`
+- `current_truth_surface_ref`
 
 | drift | verdict | threshold trigger | 最小证据 | 回退动作 | 是否必须重建 fresh worldview / cleanup |
 |---|---|---|---|---|---|
-| `multi_writer_truth_detected` | `reject` | 多个 writer 并行宣布当前真相 | authority object / writer split evidence / `authority_surface_ref` | freeze write path | 是 |
-| `per_host_projection_claimed_authority` | `reject` | projection 冒充 authority | per-host width / projection claim evidence / `authority_surface_ref` | restore single authority surface | 是 |
+| `multi_writer_truth_detected` | `reject` | 多个 writer 并行宣布当前真相 | current-truth surface / writer split evidence / `current_truth_surface_ref` | freeze write path | 是 |
+| `per_host_projection_claimed_authority` | `reject` | projection 冒充 authority | per-host width / projection claim evidence / `current_truth_surface_ref` | restore single current-truth surface | 是 |
 | `recovery_asset_usurped_authority` | `cleanup-before-resume` | pointer、ledger、resume file 直接宣布现在 | recovery asset ledger / resume claim / `danger_surface_atlas_ref` | strip asset sovereignty, then resume | 是 |
-| `event_stream_usurped_present` | `degrade` 或 `reject` | 时间线开始代替 state writeback | event/state split evidence / `authority_surface_ref` | rebuild writeback choke point | 是 |
+| `event_stream_usurped_present` | `degrade` 或 `reject` | 时间线开始代替 state writeback | event/state split evidence / `current_truth_surface_ref` | rebuild writeback choke point | 是 |
 | `freshness_gate_missing` | `reject` | stale writer 重新可达 | generation / freshness proof missing / `danger_surface_atlas_ref` | reinstate freshness gate | 是 |
 | `stale_worldview_unchecked` | `halt` 或 `human-fallback` | validator / host 继续站在旧世界观上发放允许 | worldview ref / validation context / `danger_surface_atlas_ref` | stop and re-evaluate on fresh state | 是 |
 | `ghost_capability_not_evicted` | `cleanup-before-resume` | dead capability、旧 pin、旧 width 仍可用 | eviction evidence / capability ledger / `danger_surface_atlas_ref` | evict then rebuild legal subset | 是 |
@@ -103,7 +106,7 @@
 
 更稳的纪律是：
 
-1. `reject` 用于 single-writer 与 authority surface 已经失守。
+1. `reject` 用于 current-truth surface 已经失守。
 2. `cleanup-before-resume` 用于恢复资产或 ghost capability 越权，但当前世界仍可被清理后恢复。
 3. `degrade` 用于还能保最小合法形态，但不能继续假装 present truth 完整成立。
 4. `halt` 用于 stale worldview 已让继续动作失去正当性。
@@ -127,7 +130,7 @@
 
 每次 drift 至少记录：
 
-1. `authority_object_id`
+1. `current_truth_surface_id`
 2. `per_host_authority_width`
 3. `recovery_asset_ledger`
 4. `event_stream_writeback_split`
@@ -146,7 +149,7 @@
 
 更稳的防再发顺序是：
 
-1. 先补 authority object 与 per-host authority width。
+1. 先补 current-truth surface 与 per-host authority width。
 2. 先补 recovery asset 非主权边界。
 3. 先补 event stream / state writeback 分层与 freshness gate。
 4. 先补 stale worldview guard 与 ghost capability eviction。
@@ -170,4 +173,4 @@
 
 ## 8. 一句话总结
 
-真正成熟的源码验证，不是看结构还整不整齐，而是持续证明 one writable present 仍然成立：同一个 authority object 只按合法 width 被消费，event stream 不篡位 state writeback，freshness gate 先剥夺旧 authority，stale worldview 与 ghost capability 不得继续冒充 live authority。
+真正成熟的源码验证，不是看结构还整不整齐，而是持续证明 one writable present 仍然成立：同一个 current-truth surface 只按合法 width 被消费，event stream 不篡位 state writeback，freshness gate 先剥夺旧 authority，stale worldview 与 ghost capability 不得继续冒充 live authority。

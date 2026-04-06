@@ -19,12 +19,12 @@
 
 - 想先建立主线宪法
   读 `09 -> 03 -> 06`。
-- 想看请求装配 / Prompt 设计哲学
+- 想看 `world entry / request assembly / six-stage assembly chain`
   先回 `09`，再去 [philosophy/README.md](philosophy/README.md)、[architecture/README.md](architecture/README.md)、[guides/README.md](guides/README.md)。
 - 想看扩张定价、安全与省 token
-  先回 `09` 的第二张图，再去 [philosophy/19-安全与Token经济不是权衡而是同一优化](philosophy/19-安全与Token经济不是权衡而是同一优化.md)、[philosophy/22-安全、成本与体验必须共用预算器](philosophy/22-安全、成本与体验必须共用预算器.md)、[security/README.md](security/README.md)、[risk/README.md](risk/README.md)。
+  先回 `09` 的第二张图，再去 [philosophy/19-安全与Token经济不是权衡而是同一优化](philosophy/19-安全与Token经济不是权衡而是同一优化.md)、[philosophy/22-安全、成本与体验必须共用预算器](philosophy/22-安全、成本与体验必须共用预算器.md)、[security/README.md](security/README.md)、[risk/README.md](risk/README.md)；这一组共同回答的治理前门是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`。
 - 想看当前真相保护与源码先进性
-  先回 `09` 的第三张图，再去 [philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面](philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md)、[philosophy/59-源码先进性不在静态分层，而在未来维护者也是正式消费者](philosophy/59-源码先进性不在静态分层，而在未来维护者也是正式消费者.md)、[architecture/README.md](architecture/README.md)、[guides/README.md](guides/README.md)。
+  先回 `09` 的第三张图，再去 [architecture/84：current-truth surface 与反僵尸图谱](architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)、[philosophy/76：源码地图为什么先暴露权威入口、消费者子集与危险改动面](philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md)、[philosophy/86：为什么先进内核先防过去写坏现在](philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md)、[philosophy/87：为什么源码质量首先是复杂度中心合法](philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md)、[guides/101：如何审读 current-truth surface](guides/101-如何用苏格拉底诘问法审读one writable present：single-writer、recovery asset与anti-zombie.md)、[guides/102：如何做源码质量证据分级](guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md) 与 [playbooks/79：one writable present 回归手册](playbooks/79-one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归.md)。
 - 想看使用者世界
   直接去 [userbook/README.md](userbook/README.md)。
 - 想跨目录反查

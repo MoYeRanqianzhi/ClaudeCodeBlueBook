@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `guides/56`、`playbooks/31`、`api/53`、`guides/32`、`playbooks/79`、`navigation/README` 与 `bluebook/README`，把宿主接入/验证第一跳的旧 `authority state / authority object / single-writer authority / recovery boundary` 前门收回到 `current-truth surface` 及其宿主展开对象，并把当前真相线的跨目录路由补齐到 `84 / 76 / 86 / 87 / 101 / 102 / 79`
 - 继续更新 `architecture/84`、`philosophy/86`、`guides/101`、`navigation/15 / 41 / 46` 与 `security/README`，把结构线前门固定为 `current-truth surface -> recovery asset non-sovereignty -> freshness gate -> ghost capability`，修复 `guides/101` 指回 `84` 的失效旧链接，并把 Prompt / 治理前门的第一句主语分别收回到 `world entry / request assembly / six-stage assembly chain` 与统一治理收费链
 - 继续更新 `architecture/83`、`guides/31`、`navigation/15`、`navigation/41` 与 `navigation/46`，把治理线 canonical visible root 收回到 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，并把高阶导航页里残留的旧 Prompt / source-first 词汇继续降成现象词或内层对象，不再让它们反向主导治理前门
 - 继续更新 `README`、`bluebook/README`、`navigation/README` 与 `security/README`，把 merge 后重新变重的前门收回到更硬的职责链：根 README 只做仓库级四分路由，`bluebook/README` 只做主线宪法与证据梯度，`navigation/README` 只做跨目录 judgment map，`security/README` 只做安全前门与范围分层，不再镜像巨型 inventory、逐篇标题链和作者侧推进记忆
