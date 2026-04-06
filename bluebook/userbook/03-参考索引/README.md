@@ -84,6 +84,7 @@
 80. 为什么 headless `print` 的 terminal XML、statusless ping 与 direct SDK emit 不是同一种关单信号。
 81. 为什么 headless `print` 的任务结果会同时落在 task bookend、command lifecycle 与 attachment 内容三套账本上。
 82. 为什么 headless `print` 的 `task_started/task_progress/task_notification` 三段式 SDK 事件不是 queue lifecycle 那一层。
+83. 为什么 headless `print` 的 `task_progress/workflow_progress` 进展流属于宿主投影，而不是模型图层。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
