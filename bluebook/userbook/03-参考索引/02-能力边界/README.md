@@ -68,3 +68,4 @@
 - [66-Worker mailbox ask、leader ToolUseConfirm rewrap 与 pendingWorkerRequest 索引.md](./66-Worker%20mailbox%20ask、leader%20ToolUseConfirm%20rewrap%20与%20pendingWorkerRequest%20索引.md)
 - [67-Worker sandbox mailbox ask、workerSandboxPermissions.queue 与 pendingSandboxRequest 索引.md](./67-Worker%20sandbox%20mailbox%20ask、workerSandboxPermissions.queue%20与%20pendingSandboxRequest%20索引.md)
 - [68-Approval shell atlas、ask origin、queue owner、return path 与 recheck meaning 索引.md](./68-Approval%20shell%20atlas、ask%20origin、queue%20owner、return%20path%20与%20recheck%20meaning%20索引.md)
+- [69-Mailbox permission_request、sandbox_permission_request 与 plan_approval_request protocol family 索引.md](./69-Mailbox%20permission_request、sandbox_permission_request%20与%20plan_approval_request%20protocol%20family%20索引.md)
