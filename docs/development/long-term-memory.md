@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `casebooks/README`、`security/README` 与 `risk/README` 现已继续把路由层可见标签收口：
+  - `casebooks/README` 现已把 Prompt 长期验证反例入口从 `authority chain / compiled request card` 这类旧标签收回到 `lineage kernel / message lineage card / protocol truth`。
+  - `security/README` 与 `risk/README` 现已把治理接入 / 验收 / 修复链入口从 `authority source / permission ledger / continuation gate / rollback object` 的旧标签收回到 `governance key / typed ask / decision window / continuation pricing / cleanup`。
+- 新的长期结论：
+  - 目录层真正成熟时，链接文本本身也必须服从当前对象链；否则就算正文已经换代，README 仍会继续把读者送回旧术语世界。
+  - Prompt / 治理线的目录优化不只是在调路由层级，也是在清理“旧文件名词汇继续冒充当前入口标签”的长期噪音。
 - `bluebook/README`、`guides/README` 与 `playbooks/README` 现已继续把目录职责收口：
   - 根 README 现已更明确只承担宪法前门和一级路由，不再自己展开 Prompt 执行多跳链。
   - `guides/README` 现已更明确只给本目录起点，旧词汇桥接与跨目录映射统一回 `navigation/README`。

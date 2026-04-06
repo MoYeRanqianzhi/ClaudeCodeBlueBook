@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮目录路由标签推进动作: 已继续更新 `casebooks/README`、`security/README` 与 `risk/README`，把目录层仍沿旧文件名暴露出来的 Prompt / 治理可见标签收回到当前对象链，避免读者在进入正文前又被旧 front words 拉回上一代语言。
+- 本轮目录层判断加固: 目录优化到了这一层，最值钱的往往不是再改结构，而是先把 README 可见标签和推荐链路里的旧对象词收掉；否则路由层会持续反向污染已经换代的正文。
 - 本轮目录职责收口动作: 已继续更新 `bluebook/README`、`guides/README` 与 `playbooks/README`，把根 README 固定为宪法前门，把 `guides/` 与 `playbooks/` 目录首页收窄成各自的稳定起点页，不再在前门展开桥接记忆与完整多跳链。
 - 本轮目录结构判断加固: 目录优化在这一层最值钱的，不再是补更多推荐链，而是减少“每个目录首页都在半解释、半路由、半桥接”这种角色混写；宪法前门、目录起点和跨目录深链应分别由 `README`、子目录 README 和 `navigation/README` 独占。
 - 本轮苏格拉底审读前门推进动作: 已继续更新 `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41`，把 Prompt / 治理 / 结构自校模板的可见主语从 `authority chain / trusted inputs / single-writer / compiled request truth` 收回到 `message lineage / projection consumer / continuation qualification`、`governance key / decision window / durable-vs-transient cleanup` 与 `authority object / freshness gate / ghost capability`。
