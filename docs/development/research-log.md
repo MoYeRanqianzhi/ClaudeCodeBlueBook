@@ -6,6 +6,10 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮设计内涵深化动作: 已继续更新 `bluebook/03` 与 `06`，把设计内涵从“Prompt 更强 / 安全更严 / 源码更先进”收口回 `world-defining right / pricing right / stale-writer veto right` 三种主权安排；同时把“语义压缩强于信息堆叠”的坏解链、源码质量如何直接减少用户可见失真，以及并行多 Agent 深挖时的 question-domain 拆题纪律补到主线页。
+- 本轮目录结构优化动作: 已继续更新 `bluebook/README`、`navigation/05` 与 `navigation/15`，把目录优化固定成“第一问题单源化 + 证据层分工 + `09 / 05 / 15 / 41` merge frontdoor”，并把并行深挖前的先验反证、frontdoor 禁词与 canonical object chain 明确前置到入口层。
+- 本轮 Prompt 侧线技术补口动作: 已继续更新 `guides/51`，新增 `same-world test` 的最小 witness object：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`，并要求 `compact / resume / fork / side query / handoff` 只能继承或显式重绑这些引用，不能静默重造“差不多的世界”。
+- 本轮治理侧线技术补口动作: 已继续更新 `guides/49`，把治理 builder 顺序写硬为 `authority -> typed decision -> visibility pricing -> decision window -> continuation pricing -> outside pricing`，并把 `mode 面板 != governance key`、`审批弹窗 != typed ask`、`usage 条 != decision window`、`default continue != continuation pricing`、`compact 技巧 != Outside` 固定为入口层红线。
 - 本轮宿主消费链/rollout evidence 前推动作: 已继续更新 `userbook/03-参考索引/06`、`api/24`、`api/35`、`api/52`、`guides/46` 与 `guides/52`，把高价值入口速查、API 全谱系、rollout 证据消费、治理宿主消费、宿主落地模板与治理控制面 builder 页继续压成同一组前门公式，而不是让它们分别退回命令速查、SDK inventory、日志消费或 builder checklist 语言。
 - 本轮 Prompt 侧线补宿主动作: `userbook/03-06` 与 `api/24` 现在更明确先问 `same-world test`，再谈高价值入口、API 全谱系和宿主控制；宿主接入不再从 answer stream 或命令列表起手。
 - 本轮治理侧线补宿主动作: `api/52` 与 `guides/52` 现在更明确先问 `externalized truth chain / decision window / continuation pricing + rollback object`，而 `api/35` 也继续把 `Context Usage` 固定成 `decision window` 的诚实投影，不再允许它退回账单页语言。

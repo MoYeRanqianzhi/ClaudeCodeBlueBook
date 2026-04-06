@@ -143,27 +143,30 @@ Claude Code 更接近在做：
 2. 不要把 token 条形图当预算真相。
 3. 不要在没有 decision window 的情况下直接做 compact 或继续。
 
-## 6. 第五步：把 continuation 写成时间预算
+## 6. 第五步：把 continuation 写成正式定价
 
-Claude Code 把 continuation 理解成正式的时间定价，而不是默认免费延长。
+Claude Code 把 continuation 理解成正式的 continuation pricing，而不是默认免费延长。
 
 更稳的顺序是：
 
-1. 先判断当前对象是否还值得继续。
-2. 先判断继续是否已进入 diminishing returns。
-3. 先判断是否应升级对象，而不是继续聊天。
+1. 先判断 `decision window` 是否仍成立。
+2. 先判断当前对象是否还值得继续。
+3. 先判断继续是否已进入 diminishing returns。
+4. 先判断是 `stop / continue / object upgrade / human-fallback / cleanup-before-resume` 哪一种 verdict，而不是继续聊天。
 
 构建动作：
 
 1. 先定义 continuation counter / delta / diminishing rule。
-2. 先定义 stop / continue / object upgrade 的分叉条件。
+2. 先定义 stop / continue / object upgrade / human-fallback / cleanup-before-resume 的分叉条件。
 3. 先定义何时必须切换到 task / worktree / compact。
+4. 先把 `rollback object` 与 durable/transient split 写成继续资格之前的前置对象，而不是收尾描述。
 
 不要做的事：
 
 1. 不要把 continuation 理解成“再来一轮”。
 2. 不要把 stop 写成“模型自己收尾”。
 3. 不要在对象早该升级时继续消耗时间预算。
+4. 不要把 compact 当成 continuation pricing 的别名；compact 只是下游执行策略，不是前门 verdict。
 
 ## 7. 六步最小治理顺序
 
@@ -175,12 +178,12 @@ Claude Code 把 continuation 理解成正式的时间定价，而不是默认免
    - deny / ask / allow / reason
 3. `visibility pricing`
    - deferred / subset / delta
-4. `outside pricing`
-   - externalization / preview / replacement
-5. `time pricing`
-   - stop / continue / object upgrade
-6. `decision window`
-   - Context Usage + pending_action + rollback object
+4. `decision window`
+   - Context Usage + pending_action + current state
+5. `continuation pricing`
+   - stop / continue / object upgrade / human-fallback / cleanup-before-resume
+6. `outside pricing`
+   - externalization / preview / replacement + rollback object + durable-transient cleanup
 
 ## 8. 苏格拉底式检查清单
 
@@ -190,9 +193,9 @@ Claude Code 把 continuation 理解成正式的时间定价，而不是默认免
 2. 动作审批是否已经是 typed decision，而不是 modal。
 3. 模型看见的是当前最小必要世界，还是几乎全量世界。
 4. Context Usage 是否真的进入了下一步决策，而不是留在观测层。
-5. continuation 是正式时间预算，还是默认免费扩张。
+5. continuation 是正式 continuation pricing，还是默认免费扩张。
+6. mode 面板、审批弹窗、usage 条、compact 技巧里，当前是哪一个 projection 在冒充治理真相。
 
 ## 9. 一句话总结
 
 真正成熟的安全与省 token 设计，不是多几条限制或多一层压缩，而是把动作、能力、上下文与时间统一写成同一张治理控制面。
-

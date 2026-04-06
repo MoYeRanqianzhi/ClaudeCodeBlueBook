@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/03`、`06`、`README`、`navigation/05`、`navigation/15`、`guides/49` 与 `guides/51` 现已继续把“继续深入”本身写成可复用制度：
+  - `03` 现在更明确把设计内涵压成 `world-defining right / pricing right / stale-writer veto right` 三种主权安排，并补出 Prompt 线“语义压缩强于信息堆叠”的坏解链，以及源码质量怎样通过 invariant / failure / user distortion 三格直接变成产品能力。
+  - `06` 现在更明确把并行多 Agent 深挖写成 question-domain 拆题纪律，并新增 `7.10 并行判据`，防止主线页在合并时重新长回 route words。
+  - `bluebook/README`、`navigation/05` 与 `navigation/15` 现在更明确把目录优化写成“第一问题单源化 + 证据层分工 + `09 / 05 / 15 / 41` merge frontdoor”，而不是继续增殖 route map。
+  - `guides/51` 现在更明确给出 `same-world test` 的最小 witness object：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`。
+  - `guides/49` 现在更明确把治理控制面 builder 顺序改成 `authority -> typed decision -> visibility pricing -> decision window -> continuation pricing -> outside pricing`，并把 mode、审批弹窗、usage 条、default continue、compact 技巧统一降为不得篡位治理真相的 projection 替身。
+- 新的长期结论：
+  - 设计内涵真正成熟时，不能再停在“Prompt 更强 / 安全更严 / 源码更先进”这组三句赞美；更稳的写法必须回答谁定义世界、谁批准扩张、谁否决陈旧写入。
+  - 目录结构优化真正成熟时，核心不是入口更多，而是同一类第一问题只能在一个稳定前门第一次被回答；并行多 Agent 也应按 question domain 拆，而不是按文件库存拆。
+  - Prompt 线真正成熟时，`same-world test` 需要一个最小 witness object；治理线真正成熟时，`decision window -> continuation pricing -> outside pricing` 的先后因果必须写硬，不能再被 dashboard、compact 技巧或 default continue 抢走前门。
 - `userbook/03-参考索引/06`、`api/24`、`api/35`、`api/52`、`guides/46` 与 `guides/52` 现已继续把 reference 页、宿主消费页、rollout evidence 页和 builder 页统一到同一组 canonical formula：
   - `userbook/03-06` 现在更明确把高价值入口速查写成 `same-world test / decision window / truth ladder + consumer subset / rollback object boundary`。
   - `api/24` 现在更明确把 API 全谱系页写成 `same-world test / decision window / truth ladder + consumer subset / failure semantics + rollback object`。

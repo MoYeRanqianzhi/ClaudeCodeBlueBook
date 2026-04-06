@@ -40,7 +40,18 @@
 - 第三步最后才决定要不要跨目录。
   只有当问题已经变成“下一层证据去哪里找”时，才进入 `navigation/`。
 
-## 三条深剖稳定入口
+## 四种继续深入法
+
+- 单线深剖
+  先定自己是在追 Prompt 世界准入、治理定价，还是当前真相保护；不要先按页名跳。
+- 第一性原理回压
+  先回 `06 -> 41`，确认高阶总结已经压回不可约判断，再决定要不要继续扩对象层。
+- 目录优化
+  先回 `README -> navigation/README -> 05 -> 15`，确认优化的是第一问题单源化与证据层分工，而不是新增 route map。
+- 并行多 Agent 深挖
+  先按 question domain 拆成 Prompt 魔力、安全/省 token、源码先进性、目录前门自校四题；最后统一回 `09 / 05 / 15 / 41` 合并，避免并行产生第二套入口词。
+
+## 四条深剖稳定入口
 
 - 想继续剖 Prompt 为什么会显得有魔力
   先走 `09 -> navigation/05 -> navigation/15 -> philosophy/84 -> architecture/82 -> guides/99 -> playbooks/77`，先校正模仿对象，再追第一条反证信号，最后才去看长期验证与回归；前门先问的是 `same-world test`，不是 Prompt 文案强不强。
@@ -48,6 +59,8 @@
   先走 `09 -> navigation/05 -> navigation/15 -> philosophy/85 -> architecture/83 -> guides/100 -> playbooks/78`，先确认 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 没有在入口层被写浅；最短 token 经济公式先记 `Narrow / Later / Outside + stable bytes + working set`。
 - 想继续剖源码先进性为什么不是目录更漂亮
   先走 `09 -> navigation/05 -> navigation/15 -> philosophy/76 / 86 / 87 -> architecture/84 -> guides/101 / 102 -> playbooks/79`，先把“当前真相保护”守住，再去谈热点文件、依赖图与 mirror gap；前门先认 `truth ladder`，再谈结构体感。
+- 想继续优化蓝皮书目录结构与写作迭代
+  先走 `06 -> navigation/README -> navigation/05 -> navigation/15 -> navigation/41 -> 各目录 README`，先确认同一类问题只在一个前门第一次被回答；目录优化不是再补 README，而是防止 later maintainer 在入口层重新学错对象。
 
 ## 按问题进入
 
