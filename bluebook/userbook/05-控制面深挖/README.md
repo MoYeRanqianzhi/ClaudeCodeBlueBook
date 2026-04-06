@@ -50,5 +50,6 @@
 - [40-can_use_tool、SandboxNetworkAccess、hook-classifier 与 control_cancel_request：为什么 remote-control 的工具审批、网络放行、自动批准与提示撤销不是同一种批准.md](./40-can_use_tool、SandboxNetworkAccess、hook-classifier%20与%20control_cancel_request：为什么%20remote-control%20的工具审批、网络放行、自动批准与提示撤销不是同一种批准.md)
 - [41-sdk-url、sessionIngressUrl、environmentSecret、session access token 与 workerEpoch：为什么 standalone remote-control 的 URL、密钥、令牌与传输纪元不是同一种连接凭证.md](./41-sdk-url、sessionIngressUrl、environmentSecret、session%20access%20token%20与%20workerEpoch：为什么%20standalone%20remote-control%20的%20URL、密钥、令牌与传输纪元不是同一种连接凭证.md)
 - [42-register、poll、ack、heartbeat、stop、archive 与 deregister：为什么 standalone remote-control 的环境、work 与 session 生命周期不是同一种收口.md](./42-register、poll、ack、heartbeat、stop、archive%20与%20deregister：为什么%20standalone%20remote-control%20的环境、work%20与%20session%20生命周期不是同一种收口.md)
+- [43-session tag、compat shim 与 reconnect tag：为什么 bridge 的 compat session ID、infra session ID 与 sameSessionId 不是同一种标识.md](./43-session%20tag、compat%20shim%20与%20reconnect%20tag：为什么%20bridge%20的%20compat%20session%20ID、infra%20session%20ID%20与%20sameSessionId%20不是同一种标识.md)
 
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

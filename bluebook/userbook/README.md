@@ -74,6 +74,8 @@
   [05-控制面深挖/41-sdk-url、sessionIngressUrl、environmentSecret、session access token 与 workerEpoch：为什么 standalone remote-control 的 URL、密钥、令牌与传输纪元不是同一种连接凭证.md](./05-控制面深挖/41-sdk-url、sessionIngressUrl、environmentSecret、session%20access%20token%20与%20workerEpoch：为什么%20standalone%20remote-control%20的%20URL、密钥、令牌与传输纪元不是同一种连接凭证.md)
 - 分清 standalone remote-control 的 environment、work 与 session 生命周期动词为什么不是同一种操作：
   [05-控制面深挖/42-register、poll、ack、heartbeat、stop、archive 与 deregister：为什么 standalone remote-control 的环境、work 与 session 生命周期不是同一种收口.md](./05-控制面深挖/42-register、poll、ack、heartbeat、stop、archive%20与%20deregister：为什么%20standalone%20remote-control%20的环境、work%20与%20session%20生命周期不是同一种收口.md)
+- 分清 bridge 的 compat session ID、infra session ID 与 retag / compare helper 为什么不是同一种标识：
+  [05-控制面深挖/43-session tag、compat shim 与 reconnect tag：为什么 bridge 的 compat session ID、infra session ID 与 sameSessionId 不是同一种标识.md](./05-控制面深挖/43-session%20tag、compat%20shim%20与%20reconnect%20tag：为什么%20bridge%20的%20compat%20session%20ID、infra%20session%20ID%20与%20sameSessionId%20不是同一种标识.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：
@@ -221,5 +223,6 @@
 - remote-control 的工具审批、网络放行、自动批准与提示收口边界
 - standalone remote-control 的 transport URL、secret、token 与 epoch 边界
 - standalone remote-control 的 environment、work 与 session 生命周期边界
+- bridge 的 compat session tag、infra session tag 与 retag helper 边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。

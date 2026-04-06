@@ -31,3 +31,4 @@
 - [29-Remote Control 工具审批、网络放行、自动批准与提示撤销索引.md](./29-Remote%20Control%20工具审批、网络放行、自动批准与提示撤销索引.md)
 - [30-Remote Control sdk-url、session ingress、environment secret、access token 与 worker epoch 索引.md](./30-Remote%20Control%20sdk-url、session%20ingress、environment%20secret、access%20token%20与%20worker%20epoch%20索引.md)
 - [31-Remote Control register、poll、ack、heartbeat、stop、archive 与 deregister 索引.md](./31-Remote%20Control%20register、poll、ack、heartbeat、stop、archive%20与%20deregister%20索引.md)
+- [32-Remote Control session tag、compat shim 与 reconnect tag 索引.md](./32-Remote%20Control%20session%20tag、compat%20shim%20与%20reconnect%20tag%20索引.md)
