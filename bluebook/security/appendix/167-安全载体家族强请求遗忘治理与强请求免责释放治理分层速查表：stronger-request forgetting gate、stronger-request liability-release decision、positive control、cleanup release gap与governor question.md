@@ -1,0 +1,56 @@
+# 安全载体家族强请求遗忘治理与强请求免责释放治理分层速查表：stronger-request forgetting gate、stronger-request liability-release decision、positive control、cleanup release gap与governor question
+
+## 1. 这一页服务于什么
+
+这一页服务于 [183-安全载体家族强请求遗忘治理与强请求免责释放治理分层：为什么artifact-family cleanup stronger-request forgetting-governor signer不能越级冒充artifact-family cleanup stronger-request liability-release-governor signer](../183-安全载体家族强请求遗忘治理与强请求免责释放治理分层：为什么artifact-family%20cleanup%20stronger-request%20forgetting-governor%20signer不能越级冒充artifact-family%20cleanup%20stronger-request%20liability-release-governor%20signer.md)。
+
+如果 `183` 的长文解释的是：
+
+`为什么与 resumed stronger request 相关的 old identity 开始安全淡出，仍不等于系统已经对旧 duplicate/orphan echo 正式免责释放，`
+
+那么这一页只做一件事：
+
+`把 repo 里现成的 stronger-request forgetting gate / stronger-request liability-release decision 正例，与 cleanup 线当前仍缺的 release grammar，压成一张矩阵。`
+
+## 2. 强请求遗忘治理与强请求免责释放治理分层矩阵
+
+| line | stronger-request forgetting gate | stronger-request liability-release decision | positive control | cleanup release gap | governor question | 关键证据 |
+| --- | --- | --- | --- | --- | --- | --- |
+| duplicate control_response after resolution | retain handled IDs so old request identity is still known | explicitly ignore the duplicate because no second duty remains | `Ignoring duplicate control_response ...` | cleanup line has no explicit rule for when a forgotten-or-forgetting stronger cleanup request is also duty-free against duplicate echoes | who decides when a late duplicate against a final stronger cleanup request no longer deserves compensation or replay | `structuredIO.ts:374-392` |
+| unknown request response | old request may already have left the live pending ledger | ignore responses we don't know about when no stronger compensation basis exists | `Ignore responses for requests we don't know about` | cleanup line has no explicit no-more-duty decision for unknown old stronger cleanup echoes | who decides when the system no longer owes explanation or reattachment for an unknown old stronger cleanup response | `structuredIO.ts:395-398` |
+| orphaned permission already handled | handled-ID memory may still exist | refuse to re-enqueue because the orphan has already been compensated once | `already handled -> return false` | cleanup line has no explicit “compensated once, no more duty” grammar | who decides when an orphaned stronger cleanup echo has already exhausted its compensation right | `print.ts:5267-5276` |
+| orphaned permission already resolved in transcript | transcript truth already settles the old request | refuse to reattach because transcript-level stronger truth has released the duty | `already resolved in transcript -> return false` | cleanup line has no explicit transcript-level release decision for old stronger cleanup echoes | who decides when transcript-level stronger truth is enough to release further compensation duties | `print.ts:5278-5284` |
+| stale permission prompt teardown | memory state alone does not settle responsibility | actively cancel the stale waiting surface because the stronger signer has resolved it | `onControlRequestResolved(...)` | cleanup line has no explicit stale-obligation teardown after stronger cleanup release | who decides when old stronger cleanup waiting surfaces must be actively dismantled rather than merely ignored | `structuredIO.ts:401-409` |
+
+## 3. 三个最重要的判断问题
+
+判断一句“old stronger request 现在开始可以忘掉，所以等于系统已经不再欠它任何责任”有没有越级，先问三句：
+
+1. 这里回答的是 memory disposition，还是 no-more-duty decision
+2. 这里有没有明确写出 compensate-or-refuse 的 release grammar
+3. 这里是不是把 “不再继续处理” 建立在更强 truth 之上，而不是单纯因为“反正忘了”
+
+## 4. 最常见的五类误读
+
+| 误读 | 实际问题 |
+| --- | --- |
+| “已经开始遗忘了，所以自然免责了” | forgetting != liability release |
+| “live pending ledger 已经空了，所以旧 echo 都不再有解释权” | no pending != no more duty |
+| “duplicate 被跳过，只是因为系统记不清了” | explicit ignore can be a release decision, not a memory accident |
+| “transcript resolved 只是现状描述，不代表责任关闭” | transcript-level stronger truth can actively release further duty |
+| “撤掉旧 prompt 只是 UI 清理” | stale prompt teardown is an obligation-surface shutdown |
+
+## 5. 一条硬结论
+
+真正成熟的 stronger-request liability-release grammar 不是：
+
+`old request identity can now fade -> therefore the system owes nothing further`
+
+而是：
+
+`old request identity may fade under forgetting rules -> inspect whether duplicate/orphan echoes still deserve compensation -> explicitly ignore or refuse reattachment only when stronger truth says no more duty remains`
+
+只有中间这些层被补上，
+cleanup stronger-request forgetting governance 才不会继续停留在：
+
+`它能决定 old request identity 什么时候开始安全淡出，却没人正式决定旧 duplicate/orphan echo 什么时候已经不再对系统构成任何补偿或续作义务。`
