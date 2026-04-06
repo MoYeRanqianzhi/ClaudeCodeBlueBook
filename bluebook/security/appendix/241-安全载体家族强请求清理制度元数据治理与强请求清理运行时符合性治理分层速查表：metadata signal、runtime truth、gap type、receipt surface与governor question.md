@@ -1,0 +1,58 @@
+# 安全载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层速查表：metadata signal、runtime truth、gap type、receipt surface与governor question
+
+## 1. 这一页服务于什么
+
+这一页服务于 [257-安全载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层：为什么artifact-family cleanup stronger-request cleanup-metadata-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-runtime-conformance-governor signer](../257-安全载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层.md)。
+
+如果 `257` 的长文解释的是：
+
+`为什么 stronger-request cleanup metadata 已经存在，仍不等于运行时已经按这份 metadata 发生并留下可证明结果，`
+
+那么这一页只做一件事：
+
+`把 metadata truth、runtime truth、gap type 与 receipt surface 压成一张矩阵。`
+
+## 2. 强请求清理制度元数据治理与强请求清理运行时符合性治理分层矩阵
+
+| metadata signal | runtime truth | gap type | receipt surface | governor question | 关键证据 |
+| --- | --- | --- | --- | --- | --- |
+| `cleanupPeriodDays=0` means no writes + existing transcripts deleted at startup | `shouldSkipPersistence()` first suppresses writes; delete path is separate | temporal split between suppression and deletion | no unified transcript deletion receipt here | who signs that startup-delete wording has actually been fulfilled in this runtime | `settings/types.ts:325-333`; `validationTips.ts:46-53`; `sessionStorage.ts:954-969` |
+| startup/background cleanup implied by retention metadata | REPL starts housekeeping only after first submit; headless starts deferred bookkeeping | admission gap | no immediate startup receipt | who signs when cleanup really entered runtime rather than merely being declared | `REPL.tsx:3903-3906`; `main.tsx:2811-2818` |
+| background housekeeping should reconcile cleanup eventually | execution is delayed 10 minutes and can be rescheduled by recent interaction | temporal gap | no surfaced family-by-family conformance result | who signs that eventual cleanup really happened rather than being repeatedly deferred | `backgroundHousekeeping.ts:28-58,77-80` |
+| explicit retention metadata should guide cleanup execution | validation errors with explicit `cleanupPeriodDays` cause intentional skip | skip gap driven by higher-order fail-safe | only debug log message, no structured surfaced receipt | who signs `not executed because safer not to execute` as runtime truth | `cleanup.ts:575-584` |
+| `plansDirectory` is a formal metadata knob | storage/permission planes consume it, cleanup executor still targets default `~/.claude/plans` | propagation gap | no plan-family conformance receipt | who signs that plan metadata is actually honored across all runtime planes | `settings/types.ts:824-830`; `plans.ts:79-106`; `permissions/filesystem.ts:245-255,1487-1494,1644-1652`; `cleanup.ts:300-303` |
+| cleanup functions return `CleanupResult` | background entry discards almost all results; only stale worktrees get telemetry | receipt gap | local return values exist, global conformance surface absent | who turns local cleanup counts into a stronger-request family conformance receipt | `cleanup.ts:33-44,575-597` |
+| diagnostics carrier keeps writing to env-selected logfile | cleanup dispatcher never covers diagnostics and no cleanup receipt exists for it | coverage gap | none | who signs that uncovered carriers still need explicit runtime truth instead of silent omission | `diagLogs.ts:11-20,27-60`; `cleanup.ts:575-595` |
+
+## 3. 三个最重要的判断问题
+
+判断一句“这些 stronger-request cleanup metadata 已经存在，所以 runtime 已经符合”有没有越级，先问三句：
+
+1. 这里说的是 declared truth，还是 actual runtime event
+2. 当前 gap 是时间差、传播差、intentional skip、coverage 差，还是 receipt 缺口
+3. 当前 family outcome 是被正式 surfaced 了，还是只在 local helper return value / debug log 里短暂停留
+
+## 4. 最常见的五类误读
+
+| 误读 | 实际问题 |
+| --- | --- |
+| “文案写 startup delete，所以启动时已经删了” | startup language != immediate runtime receipt |
+| “停写已经生效，所以删除也一定生效了” | suppression != deletion |
+| “metadata 在 storage / permission plane 被消费了，所以 executor 一定也跟上” | partial metadata consumption != runtime conformance |
+| “这次 skip 说明实现不稳定” | intentional skip may express a higher-order fail-safe |
+| “`CleanupResult` 存在，所以 conformance surface 也存在” | local countability != surfaced conformance receipt |
+
+## 5. 一条硬结论
+
+真正成熟的 stronger-request cleanup-runtime-conformance grammar 不是：
+
+`metadata exists -> therefore runtime already conforms`
+
+而是：
+
+`metadata declared -> scheduler admitted -> executor actually consumed it -> skips explained -> covered carriers stated -> results surfaced as receipt`
+
+只有这些层被补上，
+stronger-request cleanup metadata 才不会继续停留在：
+
+`系统已经把规则写出来了，却没人正式证明这些规则当前已经被运行时诚实执行、传播、覆盖并签收。`
