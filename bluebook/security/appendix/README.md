@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 208 篇速查文档。
+`appendix/` 当前包含 219 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -267,6 +267,39 @@
 - `208`
   载体家族强请求清理制度理由治理与强请求清理制度元数据治理分层。
   入口：[208-安全载体家族强请求清理制度理由治理与强请求清理制度元数据治理分层速查表：carrier family、where truth lives、who currently consumes it、metadata gap与drift symptom](208-安全载体家族强请求清理制度理由治理与强请求清理制度元数据治理分层速查表：carrier family、where truth lives、who currently consumes it、metadata gap与drift symptom.md)。
+- `209`
+  载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层。
+  入口：[209-安全载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层速查表：metadata signal、runtime truth、gap type、receipt surface与governor question](209-安全载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层速查表：metadata signal、runtime truth、gap type、receipt surface与governor question.md)。
+- `210`
+  载体家族强请求清理运行时符合性治理与强请求清理反漂移验证治理分层。
+  入口：[210-安全载体家族强请求清理运行时符合性治理与强请求清理反漂移验证治理分层速查表：positive control、verifier pattern、cleanup current gap、drift risk与governor question](210-安全载体家族强请求清理运行时符合性治理与强请求清理反漂移验证治理分层速查表：positive control、verifier pattern、cleanup current gap、drift risk与governor question.md)。
+- `211`
+  载体家族强请求清理反漂移验证治理与强请求清理修复治理分层。
+  入口：[211-安全载体家族强请求清理反漂移验证治理与强请求清理修复治理分层速查表：verifier surface、governance consequence、repair scope、cleanup current gap与governor question](211-安全载体家族强请求清理反漂移验证治理与强请求清理修复治理分层速查表：verifier surface、governance consequence、repair scope、cleanup current gap与governor question.md)。
+- `212`
+  载体家族强请求清理修复治理与强请求清理迁移治理分层。
+  入口：[212-安全载体家族强请求清理修复治理与强请求清理迁移治理分层速查表：positive control、transition strategy、grace window、continuity policy与governor question](212-安全载体家族强请求清理修复治理与强请求清理迁移治理分层速查表：positive control、transition strategy、grace window、continuity policy与governor question.md)。
+- `213`
+  载体家族强请求清理迁移治理与强请求清理退役治理分层。
+  入口：[213-安全载体家族强请求清理迁移治理与强请求清理退役治理分层速查表：migration clock、sunset clock、visibility cutoff、hard-close signal与governor question](213-安全载体家族强请求清理迁移治理与强请求清理退役治理分层速查表：migration clock、sunset clock、visibility cutoff、hard-close signal与governor question.md)。
+- `214`
+  载体家族强请求清理退役治理与强请求清理墓碑治理分层。
+  入口：[214-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层速查表：positive control、marker type、consumer、future effect与governor question](214-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层速查表：positive control、marker type、consumer、future effect与governor question.md)。
+- `215`
+  载体家族强请求清理墓碑治理与强请求清理复活治理分层。
+  入口：[215-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层速查表：authoritative clearing、re-entry gate、identity policy、active layer与governor question](215-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层速查表：authoritative clearing、re-entry gate、identity policy、active layer与governor question.md)。
+- `216`
+  载体家族强请求清理复活治理与强请求清理再赋权治理分层。
+  入口：[216-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层速查表：return state、old entitlement、policy veto、identity fallback与governor question](216-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层速查表：return state、old entitlement、policy veto、identity fallback与governor question.md)。
+- `217`
+  载体家族强请求清理再赋权治理与强请求清理重配置治理分层。
+  入口：[217-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层速查表：seat truth、config truth、save truth、apply truth与governor question](217-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层速查表：seat truth、config truth、save truth、apply truth与governor question.md)。
+- `218`
+  载体家族强请求清理重配置治理与强请求清理重新激活治理分层。
+  入口：[218-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层速查表：persisted truth、active truth、mode policy、stale signal与governor question](218-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层速查表：persisted truth、active truth、mode policy、stale signal与governor question.md)。
+- `219`
+  载体家族强请求清理重新激活治理与强请求清理就绪治理分层。
+  入口：[219-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层速查表：state machine、consumer gate、runtime revocation与governor question](219-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层速查表：state machine、consumer gate、runtime revocation与governor question.md)。
 
 ## 怎么配合主线读
 

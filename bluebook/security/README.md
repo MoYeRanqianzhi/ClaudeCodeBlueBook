@@ -1,12 +1,14 @@
 # 安全专题入口
 
-`security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
+`security/` 当前有 236 篇正文，范围 `00-235`；`appendix/` 当前有 219 篇速查文档；`source-notes/` 当前有 86 篇源码剖面。
+
+`security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。本目录覆盖从 `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure` 一路推进到 stronger-request cleanup 家族的同构治理链。
 
 ## 先记四句
 
 - 安全不是单点沙箱，也不是单点分类器，而是一套 signer、ledger 与 lifecycle control plane。
 - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 不是安全页和省 token 页的拼接，而是同一条治理收费链。
-- 完成、终局、遗忘、清理与家族级 cleanup 都各有 signer；任何弱层都不配替强层宣布“已经没事了”。
+- `147-235` 这一整段已经证明：弱层只能说明局部事实，强层才有权宣布更高阶治理结果；任何弱层都不能越级冒充强层。
 - 宿主不该自己从事件流回放拼当前真相；更稳的做法是消费 runtime 已外化的 authority / status / verdict。
 
 ## 高阶前门
@@ -21,6 +23,22 @@
   看为什么体验只是这条治理收费链对外的结果。
 - [architecture/83：反扩张治理流水线](../architecture/83-%E5%8F%8D%E6%89%A9%E5%BC%A0%E6%B2%BB%E7%90%86%E6%B5%81%E6%B0%B4%E7%BA%BF%EF%BC%9Atrusted%20inputs%E3%80%81distributed%20ask%20arbitration%E3%80%81deferred%20visibility%E4%B8%8Econtinuation%20pricing.md)
   看治理控制面如何把 `governance key`、`externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup` 写成同一条流水线。
+- [229-安全载体家族强请求清理迁移治理与强请求清理退役治理分层](229-安全载体家族强请求清理迁移治理与强请求清理退役治理分层.md)
+- [230-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层](230-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层.md)
+- [231-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层](231-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层.md)
+- [232-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层](232-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层.md)
+- [233-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层](233-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层.md)
+- [234-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层](234-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层.md)
+- [235-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层](235-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层.md)
+
+## 目录分层
+
+- `00-17`：研究方法、总论、权限/沙箱、配置与受管环境、统一安全控制台导读。
+- `18-29`：检测内核、控制台字段与卡片、宿主资格、对象协议与显式降级。
+- `30-69`：真相源、账本、恢复闭环、清理纪律、词法、租约与 failure path。
+- `70-99`：能力发布、状态编辑、恢复资格、默认路由与 reject semantics。
+- `100-138`：完成权、字段生命周期、工程迁移、验证架构与制度化接口。
+- `139-235`：cleanup 契约与 signer/governor ladder，含 stronger-request cleanup 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone、resurrection、re-entitlement、reconfiguration、reactivation、readiness 等高阶治理分层。
 
 ## 按问题进入
 
@@ -33,7 +51,7 @@
 - 想看 artifact-family cleanup ladder
   从 `167-196` 进入。
 - 想看 stronger-request cleanup ladder
-  从 `197-224` 进入。
+  从 `197-235` 进入。
 
 ## 什么时候去 appendix / source-notes / docs
 
@@ -46,9 +64,11 @@
 
 ## 维护约定
 
-- `security/README` 只保留前门判断、编号段职责与分流。
-- 巨型目录库存、逐篇标题镜像和作者侧记忆不再回灌首页。
+- README 只保留前门判断、编号段职责与代表性入口，不再镜像全部 236 篇标题。
+- `security/` 解释的是同一价格秩序的不同资产切面，不把“多道窄门”误写成“更多规则”。
+- `security/` 前门优先解释 `governance key`、动作/上下文/时间收费顺序与 host truth 消费关系，不回退成权限弹窗导览。
 - 深层速查表统一回 `appendix/README.md`，源码剖面统一回 `source-notes/README.md`。
+- 章节推进记忆、未来候选和目录编排提示统一写入 [../../docs/development/security/README.md](../../docs/development/security/README.md)，不再回写到正文尾段。
 - 需要宿主接入、验收、修复与长期回归时，回 [../playbooks/README.md](../playbooks/README.md) 与 [../risk/README.md](../risk/README.md)，不要继续停在安全首页摘要。
 
 ## 相关目录
@@ -59,3 +79,5 @@
   更关心能力撤回、资格限制、误伤与治理后果。
 - [../casebooks/README.md](../casebooks/README.md)
   更关心失败样本、伪成功与恢复失真。
+- [../philosophy/README.md](../philosophy/README.md)
+  更关心第一性原理和抽象判断。
