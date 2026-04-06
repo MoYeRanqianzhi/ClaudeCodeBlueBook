@@ -141,11 +141,16 @@ contract 和 registry 都还不够。
 
 `bridgeMain` 明写 linear subset，remote / headless / REPL 又各有不同支持面。
 
+还要再加一条：
+
+- host / domain boundary 变化后，旧授权与旧 capability 目录不配自动继承
+
 所以第四步必须单独问：
 
 1. 这是协议全集吗。
 2. 这是当前 adapter 的子集吗。
 3. 这是当前入口此刻真启用的能力吗。
+4. 这份启用资格是不是仍绑定在同一个 host / config / credential truth 上。
 
 如果这三问不分开，后面就会频繁出现两种误写：
 
@@ -224,6 +229,7 @@ gap discipline 的价值不是“保守一点”，而是：
 - recovery asset 会不会篡位为 authority
 - stale writer 是否仍可达
 - 过去对象会不会重新写坏现在
+- stale capability / stale credential 会不会继续把 ghost tools 或 ghost auth 留在当前世界里
 
 如果只看第一条，你会高估静态分层漂亮度。
 如果只看第二条，你会忽视长期演化的认知债。
@@ -232,6 +238,7 @@ gap discipline 的价值不是“保守一点”，而是：
 
 1. 依赖图有没有说真话。
 2. 时间图有没有说真话。
+3. host / domain / credential truth 有没有继续说真话。
 
 ## 9. 迁移到自己的 runtime 设计与研究里
 

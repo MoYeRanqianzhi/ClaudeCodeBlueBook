@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `architecture/82 / architecture/84 / guides/99 / guides/101 / guides/102 / philosophy/14` 已继续吸收并行 Agent 的硬证据：
+  - `82 / 14 / 99` 现已更明确把 Prompt 线的一号对象从单次 `request object` 再压到可显示、可协议化、可交接的 `message lineage`，并把 lineage kernel 写成 `parentUuid / message.id / tool_use_id` 三键协同。
+  - `84 / 101 / 102` 现已更明确把 anti-stale 从抽象原则压到具体机制：文件写入 freshness gate、PowerShell stale-cwd validator 降级、WebFetch per-host 重新取真、remote managed settings 危险增量确认、MCP ghost capability 清理。
+- 新的长期结论：
+  - Prompt 深专题真正压到底时，不再把 `request object` 当成跨轮真相核；跨 `display / protocol / handoff` 持续存活的一号对象应写成 `message lineage`。
+  - one writable present 真正成熟时，不只防 stale state，还要防 stale file snapshot、stale validator worldview、stale capability directory 与 stale credential cache。
+  - 公开镜像里的 adapter subset 判断，必须继续区分 “协议全集 / 当前入口子集 / 当前 host/domain/credential truth”，否则很容易把 ghost tools、redirect host 或 stale auth 写成当前真相。
 - `philosophy/14 / philosophy/85 / philosophy/87 / guides/99-101 / philosophy/README / guides/README` 已继续把深专题与 builder 模板吸收进最新对象链：
   - `14` 现已更明确把 Prompt 魔力继续压到 `message lineage`，不再把 `display / protocol / handoff` 只写成三份文本的并列关系。
   - `85` 现已更明确把治理写成 `authority source -> action/context/time` 的收费顺序，并把 host replay 认定为新的坏解法。

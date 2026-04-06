@@ -18,6 +18,8 @@
 - `claude-code-source-code/src/utils/api.ts:321-405`
 - `claude-code-source-code/src/utils/messages.ts:1989-2148`
 - `claude-code-source-code/src/utils/messages.ts:5133-5458`
+- `claude-code-source-code/src/types/logs.ts:221-223`
+- `claude-code-source-code/src/utils/sessionStorage.ts:1028-1066`
 - `claude-code-source-code/src/services/compact/sessionMemoryCompact.ts:188-327`
 - `claude-code-source-code/src/query/stopHooks.ts:84-214`
 - `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
@@ -26,7 +28,7 @@
 
 这些锚点共同说明：
 
-- Prompt 魔力真正保护的不是更会说话，而是当前世界在进入模型之前已经被编译成同一条 `compiled request truth`。
+- Prompt 魔力真正保护的更硬对象，不是单次 request 壳，而是同一条可被显示、协议与交接共同重建的 `message lineage`。
 
 ## 1. 第一性原理
 
@@ -43,7 +45,7 @@
 1. 谁能宣布当前世界
 2. 哪些制度字节属于正式 Prompt 宪法
 3. 哪条 transcript 配进入模型
-4. 哪些对象在 compact / fork / resume 后仍保住同一身份
+4. 哪些 lineage key 在 compact / fork / resume 后仍保住同一身份
 
 开始。
 
@@ -91,6 +93,12 @@
 
 - 如果工具 schema、配对合法性、continue gate 仍被视为“Prompt 外部细节”，那 Prompt 魔力就会退回咒语工程。
 
+### 2.7.1 你的 lineage kernel 是一键、两键还是三键协同
+
+判断标准：
+
+- 如果 `parentUuid / message.id / tool_use_id` 的职责没有分开，后续一旦进入 compact、tool pairing 或 replay，系统就会开始错配是谁在继续同一个世界。
+
 ### 2.8 当 behavior drift 发生时，团队能否点名断的是哪一层边界
 
 判断标准：
@@ -125,6 +133,7 @@ section registry 是否成立:
 stable prefix / dynamic boundary 是否清楚:
 display transcript 与 protocol transcript 是否分层:
 continuation object 是否成立:
+lineage kernel 是否清楚区分 `parentUuid / message.id / tool_use_id`:
 display / protocol / handoff 是否仍沿同一条 message lineage 投影:
 旁路循环是否复用同一世界:
 当前最像哪类失真:
@@ -142,9 +151,10 @@ display / protocol / handoff 是否仍沿同一条 message lineage 投影:
 3. compact 后留下的是对象身份，还是只有叙事残影。
 4. worker、summary、memory、suggestion 是否仍复用同一编译世界。
 5. 模型此刻消费的到底是哪条 transcript。
-6. display / protocol / handoff 三种 truth 还是不是同一条 message lineage 的不同投影。
-7. 继续资格是谁签发的，在哪失效。
-8. 如果把著名措辞全部删掉，这套世界编译机制还会不会成立。
+6. `parentUuid / message.id / tool_use_id` 这三类 lineage key 各自保什么不变量。
+7. display / protocol / handoff 三种 truth 还是不是同一条 message lineage 的不同投影。
+8. 继续资格是谁签发的，在哪失效。
+9. 如果把著名措辞全部删掉，这套世界编译机制还会不会成立。
 
 ## 7. 一句话总结
 
