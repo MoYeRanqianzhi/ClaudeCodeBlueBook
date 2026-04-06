@@ -57,7 +57,7 @@ Claude Code 当前并没有公开一份名为：
 
 而是：
 
-- 围绕这十一类对象消费统一定价控制面怎样把 rewrite correction 重新拉回同一个 `governance key`、同一条 typed ask ledger、同一个 decision window、同一个 continuation pricing covenant、同一个 classifier 定价、同一个 writeback seam、同一个 capability liability 与同一个 reopen threshold
+- 围绕这十二类对象消费统一定价控制面怎样把 rewrite correction 重新拉回同一个 `governance key`、同一条 typed ask ledger、同一个 decision window、同一个 continuation pricing covenant、同一个 pricing right、同一个 classifier 定价、同一个 writeback seam、同一个 capability liability 与同一个 reopen threshold
 
 这层真正统一的不是两套不同能力，而是同一条：
 

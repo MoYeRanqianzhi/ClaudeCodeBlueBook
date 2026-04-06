@@ -2725,3 +2725,5 @@
 - `pricing_right_restitution` 现在不应只停在中层小节里；只要某个 pricing-right 对象已经成为后文稳定依赖，它就应被同步提到顶层对象清单，避免 later reader 误以为只是展开细节而非 first-class object。
 - atlas projection page 的长期稳定纪律现在可再补一句：它能投影 canonical ladder，但没有改判 canonical ladder 或首答权的资格；一旦争议滑到“这页有没有 first-answer authority”，就应直接回 `navigation/04`。
 - `lawful forgetting witness ABI` 现在还应继续被读成 versioned object：字段可以扩展，但 `required` 与 `forbidden-as-sole-witness` 两层若发生变化，必须显式 rebind，而不能靠 prose 静默漂移。
+- 当某个对象已经在正文中段被稳定写成 canonical object / shared ABI / stable verdict reason 时，H1、顶层对象清单、消费顺序和问题级首答路由都应在同一批次同步改写；否则 later consumer 先读到的仍是旧世界。这条规则现在已进入 `docs/development/03`，应视为蓝皮书目录治理的长期纪律。
+- `truth-surface attestation` 现在不仅是 `api/85` 正文对象，也应成为治理精修线的可见标题词；旧的 `cross-consumer attestation` 更适合退回兼容语境或旧文件路径，不再占可见前门主位。

@@ -1,4 +1,4 @@
-# 治理宿主修复稳态纠偏再纠偏改写纠偏精修协议：authority-ledger covenant、window-pricing custody、classifier-writeback attestation、cross-consumer attestation 与 reopen liability ledger
+# 治理宿主修复稳态纠偏再纠偏改写纠偏精修协议：authority-ledger covenant、window-pricing custody、classifier-writeback attestation、truth-surface attestation 与 reopen liability ledger
 
 这一章回答五个问题：
 

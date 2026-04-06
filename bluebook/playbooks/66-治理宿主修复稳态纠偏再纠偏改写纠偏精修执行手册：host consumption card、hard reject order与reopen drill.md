@@ -6,7 +6,7 @@
 
 1. 为什么安全设计与省 token 设计在精修执行里运行的不是“两套系统互相权衡”，而是同一个治理控制面持续拒绝免费扩张。
 2. 宿主、CI、评审与交接怎样共享同一张治理 `host consumption card`，而不是各自宣布不同版本的“现在可以继续”。
-3. 应该按什么固定顺序执行 `refinement session`、`false authority projection demotion`、`authority-ledger covenant`、`window-pricing covenant`、`classifier-writeback custody`、`capability liability ledger`、`hard reject semantics`、`cross-consumer attestation` 与 `reopen liability ledger`，才能不让免费继续、免费扩窗与免费放权重新进场。
+3. 应该按什么固定顺序执行 `refinement session`、`false authority projection demotion`、`authority-ledger covenant`、`window-pricing covenant`、`classifier-writeback custody`、`capability liability ledger`、`hard reject semantics`、`truth-surface attestation` 与 `reopen liability ledger`，才能不让免费继续、免费扩窗与免费放权重新进场。
 4. 哪些 `hard reject` 一旦出现就必须冻结 capability expansion、拒绝 handoff 并进入 `liability / re-entry / reopen` drill。
 5. 怎样用第一性原理与苏格拉底式追问避免把这层写成“更细的治理值班表”。
 
@@ -145,7 +145,7 @@
 3. `rollback_object` 是否仍让 later 团队可以正式回跳。
 4. `durable_assets_after / transient_authority_cleared` 是否仍明确区分“可恢复资产”和“必须失效的旧主权”。
 
-### 3.7 再验 `hard_reject_semantics_abi` 与 `cross_consumer_attestation_packet`
+### 3.7 再验 `hard_reject_semantics_abi` 与 `truth_surface_attestation_packet`
 
 再看：
 

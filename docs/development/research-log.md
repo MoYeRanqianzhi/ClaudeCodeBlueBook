@@ -6983,3 +6983,5 @@
 - 本轮收口前顺手修正了一个协议页形式问题：`api/82` 的 rewrite correction verdict 列表原本新增 `pricing_authority_unbound` 后出现重复编号，现已统一成严格递增。这个修正虽然小，但它本身也符合当前蓝皮书在推动的原则：协议对象页不只要概念对，还要在形式上可被 later consumer 无歧义消费。
 - 本轮最后又顺手清了两处 residual 一致性问题：`api/82` 顶层对象清单原先只在正文中有 `pricing right restitution`、列表里却没升格，现在已提到首层对象列表；`api/85` 顶层对象清单也不再停在 `cross_consumer_attestation_packet`，而与正文里已经稳定下来的 `truth surface attestation packet` 保持一致。
 - 同时补了两条更小但更硬的目录/Prompt 纪律：`navigation/35` 现在明确 atlas projection page 不裁决 speaking-rights，争议要回 `navigation/04`；`philosophy/81` 现在明确 `lawful forgetting witness ABI` 应被读成 versioned object，`required` 与 `forbidden-as-sole-witness` 两层不能在没有明确 rebinding 的情况下被静默改写。
+- 本轮又往前推进了一小步“局部真相外溢”治理：`api/85` 的可见 H1 与 `playbooks/66` 的执行手册用词现在都从 `cross-consumer attestation` 收回到 `truth-surface attestation`；`api/82` 顶层解释句也不再停在“十一类对象”，而是把 `pricing_right_restitution` 明确算进 first-class object count。这样 later consumer 第一次看到的标题、对象表和执行顺序，终于和正文中段已经成熟的对象语言处在同一个世界里。
+- 同时把这一类经验正式写回 `docs/development/03`：如果某个对象已经在正文中段被稳定写成 canonical object/shared ABI/stable verdict reason，却没有同批同步回 H1、顶层对象清单、消费顺序和问题级首答路由，那就不是深化，而是局部真相外溢。后续应优先把这种“中段先成熟、前门后跟进”的债当作目录治理问题处理。
