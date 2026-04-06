@@ -66,6 +66,7 @@
 - 为什么 builder/control transport、public SDK、direct-connect callback 与 UI consumer 不是同一张可见性表。
 - 为什么 `shouldIncludeInStreamlined(...)`、assistant/result 双入口与 `null` suppression 不是同一种消息简化。
 - 为什么 streamlined path 里的 result passthrough 不是 terminal semantic 主位保留。
+- 为什么 UI consumer 的 `message` / `stream_event` / `ignored` 三分法不是 callback surface 的镜像映射。
 51. 为什么 `permission_mode`、`is_ultraplan_mode` 与 `model` 不是同一种远端可恢复会话参数。
 52. 为什么 `task_started`、`task_progress`、`task_notification` 与 `session_state_changed` 不是同一种远端事件流。
 53. 为什么 CCR v2 remote bridge 的 `transport rebuild`、initial flush、`flush gate` 与 `sequence resume` 不是同一步。
