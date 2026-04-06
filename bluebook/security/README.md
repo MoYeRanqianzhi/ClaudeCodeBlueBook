@@ -12,7 +12,7 @@
 
 - 本目录研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张怎样被同一价格秩序收费；想先抓高阶判断，先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md) 的第二张图、[../philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md](../philosophy/85-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E6%B2%BB%E7%90%86%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%9B%B4%E4%BC%9A%E6%8B%A6%E6%88%AA%EF%BC%8C%E8%80%8C%E6%98%AF%E6%9B%B4%E4%BC%9A%E4%B8%BA%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7.md) 与 [../architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md](../architecture/83-%E5%8F%8D%E6%89%A9%E5%BC%A0%E6%B2%BB%E7%90%86%E6%B5%81%E6%B0%B4%E7%BA%BF%EF%BC%9Atrusted%20inputs%E3%80%81distributed%20ask%20arbitration%E3%80%81deferred%20visibility%E4%B8%8Econtinuation%20pricing.md)
 
-这里的省 token 不是副题，而是安全控制面的上下文维度。`deferred visibility`、大结果外置、`continuation pricing` 与权限、恢复、能力发布属于同一价格秩序；任何让高体积对象免费留在主 prompt 的设计，都是在免费扩张上下文与时间，因此既不省 token，也不更安全。
+这里的省 token 不是副题，而是安全控制面的上下文与时间主权。`deferred visibility`、大结果外置、`continuation pricing` 与权限、恢复、能力发布属于同一价格秩序；任何让高体积对象免费常驻主 prompt 的设计，都是未定价的上下文写权与时间占权，因此既不省 token，也不更安全。
 
 ## 目录分层
 

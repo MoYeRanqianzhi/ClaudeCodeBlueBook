@@ -67,77 +67,23 @@
 
 因此 `commands/` 的 `101` 个顶层入口，不能只当成“一堆 slash 命令”。
 
-更稳妥的分类是：
+更稳的读法不是继续把目录分成六类，而是先把命令面压成四个协议对象：
 
-### 2.1 会话与状态
+1. authority object
+   - `COMMANDS()` 与 `getCommands()` 共同决定当前显式控制面
+2. consumer subset
+   - builtin、skills、plugins、workflows、dynamic skills 只会在特定运行时组合下进入当前可见子集
+3. danger surface
+   - 任何会改写命令装配、命令可见性、命令来源优先级的变更，都会直接改写显式控制面
+4. reject path
+   - 一旦命令行为开始可疑，第一条 reject path 不该回到某个子命令目录，而应先回 `COMMANDS()`、`getCommands()` 与来源拼装顺序
 
-- `clear`
-- `compact`
-- `context`
-- `memory`
-- `resume`
-- `rewind`
-- `session`
-- `status`
+代表性表面只需要记住：
 
-### 2.2 配置与模式
-
-- `config`
-- `permissions`
-- `plan`
-- `model`
-- `output-style`
-- `theme`
-- `keybindings`
-- `vim`
-
-### 2.3 扩展与连接
-
-- `mcp`
-- `skills`
-- `plugin`
-- `reload-plugins`
-- `remote-env`
-- `bridge`
-- `ide`
-
-### 2.4 开发与交付
-
-- `diff`
-- `review`
-- `security-review.ts`
-- `commit.ts`
-- `branch`
-- `tag`
-
-### 2.5 运营与诊断
-
-- `doctor`
-- `usage`
-- `stats`
-- `feedback`
-- `cost`
-- `release-notes`
-
-### 2.6 协作与实验
-
-- `agents`
-- `tasks`
-- `voice`
-- `advisor.ts`
-- `ultraplan.tsx`
-- `autofix-pr`
-
-这说明命令面已经覆盖：
-
-- 会话生命周期
-- 模式治理
-- 扩展装配
-- 开发工作流
-- 诊断与运营
-- 协作与实验入口
-
-因此 `commands/` 在地图上应先被读成显式控制面与当前可见子集，而不是 slash catalog。
+- 会话与状态：`clear / compact / resume / rewind / session`
+- 配置与模式：`config / permissions / plan / model`
+- 扩展与连接：`mcp / skills / plugin / bridge / ide`
+- 协作与实验：`agents / tasks / voice`
 
 如果要继续把 `commands/` 读成判断协议，至少要再问五件事：
 
@@ -151,64 +97,6 @@
 
 `tools.ts` 把 `getAllBaseTools()`、`getTools()`、`assembleToolPool()` 写成统一真相，说明工具面不是插件式拼盘，而是正式 ABI。
 
-`43` 个顶层工具入口大致可以按六类理解：
-
-### 3.1 工作区与执行原语
-
-- `BashTool`
-- `PowerShellTool`
-- `FileReadTool`
-- `FileEditTool`
-- `FileWriteTool`
-- `NotebookEditTool`
-
-### 3.2 搜索与外部信息
-
-- `GlobTool`
-- `GrepTool`
-- `WebFetchTool`
-- `WebSearchTool`
-- `ToolSearchTool`
-
-### 3.3 认知控制与交互
-
-- `TodoWriteTool`
-- `AskUserQuestionTool`
-- `BriefTool`
-- `EnterPlanModeTool`
-- `ExitPlanModeTool`
-- `REPLTool`
-
-### 3.4 任务、团队与 workflow 编排
-
-- `AgentTool`
-- `SendMessageTool`
-- `TaskCreateTool`
-- `TaskGetTool`
-- `TaskUpdateTool`
-- `TaskListTool`
-- `TaskStopTool`
-- `TaskOutputTool`
-- `TeamCreateTool`
-- `TeamDeleteTool`
-
-### 3.5 扩展与连接
-
-- `MCPTool`
-- `ListMcpResourcesTool`
-- `ReadMcpResourceTool`
-- `McpAuthTool`
-- `SkillTool`
-- `LSPTool`
-
-### 3.6 执行环境与自动化
-
-- `EnterWorktreeTool`
-- `ExitWorktreeTool`
-- `RemoteTriggerTool`
-- `ScheduleCronTool`
-- `SleepTool`
-
 这里最关键的不是枚举，而是 `tools.ts` 还进一步显式处理了：
 
 - simple mode 裁剪
@@ -220,6 +108,24 @@
 
 - 工具面本身就已经带治理、可见性和 token/caching 约束
 - 地图上真正值钱的不是记住多少工具，而是分清谁在定义动作 ABI，谁在裁切当前可见集，谁在给扩张继续收费
+
+更稳的读法应先固定四个协议对象：
+
+1. authority object
+   - `Tool.ts` 宣布动作 ABI，`tools.ts` 宣布当前工具池真相
+2. consumer subset
+   - builtin、MCP、internal、mode-specific tools 都只是不同可见子集
+3. danger surface
+   - visible-set 裁切、deny rule、MCP 去重、cache-stable 排序一旦失真，就会直接破坏动作边界
+4. reject path
+   - 一旦工具语义开始漂移，第一条 reject path 应先回 `Tool.ts`、`getAllBaseTools()`、`getTools()` 与 `assembleToolPool()`
+
+代表性动作面只需要记住：
+
+- 工作区与执行原语：`BashTool / FileReadTool / FileEditTool / FileWriteTool`
+- 搜索与外部信息：`GlobTool / GrepTool / WebFetchTool / WebSearchTool`
+- 协作与任务编排：`AgentTool / Task* / Team*`
+- 扩展与执行环境：`MCPTool / SkillTool / LSPTool / EnterWorktreeTool / RemoteTriggerTool`
 
 继续往下压，`tools/` 也应固定成五问：
 
@@ -233,64 +139,28 @@
 
 如果 `commands/` 是显式控制面，`tools/` 是执行面，那么 `services/` 更像后台长期子系统。
 
-当前 `36` 个顶层服务入口至少能分五组：
-
-### 4.1 API、预算与上下文经济
-
-- `api`
-- `compact`
-- `tokenEstimation.ts`
-- `claudeAiLimits.ts`
-- `policyLimits`
-- `rateLimitMessages.ts`
-
-### 4.2 扩展、治理与组织策略
-
-- `mcp`
-- `plugins`
-- `oauth`
-- `remoteManagedSettings`
-- `settingsSync`
-- `mcpServerApproval.tsx`
-
-### 4.3 记忆、总结与协作沉淀
-
-- `SessionMemory`
-- `AgentSummary`
-- `PromptSuggestion`
-- `extractMemories`
-- `teamMemorySync`
-- `toolUseSummary`
-
-### 4.4 IDE 与多模态能力
-
-- `lsp`
-- `voice.ts`
-- `voiceStreamSTT.ts`
-- `voiceKeyterms.ts`
-- `MagicDocs`
-
-### 4.5 观测、诊断与用户辅助
-
-- `analytics`
-- `diagnosticTracking.ts`
-- `internalLogging.ts`
-- `notifier.ts`
-- `tips`
-- `preventSleep.ts`
-
-这说明 Claude Code 的真正后台不是“模型调用器”，而是一组围绕：
-
-- 预算
-- 治理
-- 记忆
-- 同步
-- 多模态
-- 观测
-
-持续运行的服务平面。
+这说明 Claude Code 的真正后台不是“模型调用器”，而是一组持续运行的长期子系统。
 
 因此 `services/` 在地图上更接近长期定价、治理、记忆与同步子系统，而不是后台杂项目录。
+
+更稳的读法应先固定四个协议对象：
+
+1. authority object
+   - 哪个文件在宣布子系统真相，例如 `api/sessionIngress`、`compact/compact.ts`、`SessionMemory/sessionMemory.ts`、`mcp/config.ts`
+2. consumer subset
+   - 哪些路径只拿到 continuation 投影、host 投影、UI 投影或观察投影
+3. danger surface
+   - 哪个 stale write / recovery object / config merge 最容易从这里潜入
+4. reject path
+   - 一旦子系统开始同时破坏安全、成本与继续资格，应先回 authority file，而不是先在 consumer 壳层打补丁
+
+代表性子系统只需要记住：
+
+- `api / compact / policyLimits`：请求真相、上下文与时间边界
+- `SessionMemory / PromptSuggestion / AgentSummary`：continuation 资产
+- `mcp / plugins / remoteManagedSettings / oauth`：外部能力与组织边界
+- `lsp / voice / MagicDocs`：能力接入桥
+- `analytics / internalLogging / notifier`：观测与辅助投影
 
 继续往下压，`services/` 也不该只按目录组读，而应再问：
 

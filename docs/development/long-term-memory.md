@@ -8,6 +8,27 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `07 / security/README / risk/README / api/46-services` 已继续把统一定价入口从“入场秩序”压到“结算证据面”：
+  - `07` 现已把 `liability evidence` 抬到和 `request truth / continuation asset / capability governance` 同级。
+  - `security/README` 现已更明确把高体积对象常驻主 prompt 写成未定价的上下文写权与时间占权。
+  - `risk/README` 现已更明确把风控写成身份、入口子集与恢复签发上的用户侧结算面。
+  - `api/46-services` 现已更明确把 observability / logging / recovery evidence 压成统一收费秩序里的结算与追责对象层。
+- 新的长期结论：
+  - 扩张定价秩序真正成熟时，不只回答“谁能入场”，还回答“事后怎样回读、结算、追责并重新绑定执行连续性”。
+  - observability 真正重要的原因，不是图表更多，而是它构成了执行后责任与恢复资格的证据层。
+- `api/30` 已继续把 atlas 页的三大中层平面压成固定协议：
+  - `commands` 现已更明确区分 authority object、dynamic subset、danger surface 与 reject path，不再主要按命令分组来读。
+  - `tools` 现已更明确区分动作 ABI、visible subset、fail-closed 风险与回退入口，不再主要按工具类别来读。
+  - `services` 现已更明确区分 authority file、continuation/host 投影、danger surface 与回退入口，不再主要按后台目录组来读。
+- 新的长期结论：
+  - atlas 页真正开始成熟时，目录分组只配保留最少代表项；真正值钱的是每个平面都能直接交出 authority、subset、danger 与 reject path。
+  - `api/30` 这类页越往后写，越不该像“目录里有什么”，而应更像“如果这一层开始撒谎，第一步应回哪个入口拒收”。
+- `03 / 06` 已继续把主线模板化再压一层：
+  - `03` 现已更明确给 prompt、治理、构建、源码质量这些高阶原则补出坏解法、权威对象、拒收入口与渐进改写顺序。
+  - `06` 现已把 41 条零散准则收成事实卡、入口卡、对象卡、Prompt 卡、治理卡、地图卡、反例卡、迁移卡 8 张长期自校卡。
+- 新的长期结论：
+  - 真正成熟的高阶判断，不该只是一句更强结论，而应自动带出 authority、坏解法、reject path 与 migration order。
+  - 真正成熟的苏格拉底自校，不该无限长出更多问题，而应把问题压成少量长期稳定、跨轮次复用的审读卡。
 - `03 / 06` 已继续把主线高阶判断压成稳定模板：
   - `03` 现已更明确把后半高阶原则补成 `authority object / bad solution / reject path / migration order` 的固定落笔顺序。
   - `06` 现已把“下一轮怎么做得更好”改写成长期有效的持续自校协议，减少作者轮次口吻继续混入正文。

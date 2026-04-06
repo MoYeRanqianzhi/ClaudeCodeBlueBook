@@ -27,6 +27,9 @@
 - 本轮统一定价入口前移动作: 已继续更新 `security/README`、`risk/README`、`07` 与 `api/46-services`，把“安全 / 风控 / 省 token / services 平面”继续压回同一条扩张定价对象链。
 - 本轮 atlas lint 硬化动作: 已继续更新 `01`、`api/30` 与 `09`，把源码地图和控制面图继续压成 `authority object / consumer subset / danger surface / reject path` 协议，并补出 Prompt `request object` 的更短装配顺序。
 - 本轮主线模板化动作: 已继续更新 `03` 与 `06`，把后半高阶原则继续压成固定模板，把作者过程式“下一轮”口吻继续改写成长期有效的自校协议。
+- 本轮主线自校卡硬化动作: 已继续更新 `03` 与 `06`，把高阶原则进一步补成 `authority object / bad solution / reject path / migration order` 四格，并把 41 条零散自校准则收成 8 张长期自校卡。
+- 本轮 atlas 中层协议化动作: 已继续更新 `api/30`，把 `commands / tools / services` 三段从目录分组说明继续压成 authority、subset、danger surface 与 reject path 的固定协议。
+- 本轮结算证据面前推动作: 已继续更新 `07`、`security/README`、`risk/README` 与 `api/46-services`，把 `liability evidence / observability / recovery evidence` 正式抬到统一扩张定价秩序里的同级对象层。
 - 本轮旧框架降级动作: 已继续更新 `00`、`01`、`05` 与 `api/30`，把“五层拆解法 / 运行链路导览 / 目录级能力大全 / 快速统计”都明确降成辅助检索与热点定位材料，不再让它们先于三条高阶判断出场。
 - 本轮主线制度化动作: 已继续更新 `03`、`06`、`09`，把“设计哲学 / 第一性原理 / 三张控制面图”从高级观察继续收束为主线宪法、自我约束与读者固定判断顺序。
 - 本轮目录硬化动作: 已继续更新 `README`、`00-导读`、`00-总览`、`00-蓝皮书总览`、`navigation/03` 与 `09`，把 `09` 真正前置到一级阅读路径、去掉推荐链裸编号短写，并把兼容页进一步收回为跳转页。
@@ -237,6 +240,40 @@
 
 - `bluebook/03-设计哲学.md`
 - `bluebook/06-第一性原理与苏格拉底反思.md`
+
+### A111. 自校协议真正成熟时，不是问题更多，而是问题被压成更少、更稳的卡
+
+- 41 条零散准则当然比没有准则更好，但它们仍容易重新长成作者工作台：写作者知道自己在迭代，读者却很难立刻抓住哪几张卡最关键。
+- 更稳的做法是把这些问题收成少数长期卡片，例如事实卡、入口卡、对象卡、Prompt 卡、治理卡、地图卡、反例卡、迁移卡；这样每轮都还能继续加深，但不会重新把正文写成过程日志。
+- 这也意味着苏格拉底式反思的成熟度标准，不是反问越来越多，而是反问越来越像制度化检查表，任何一轮都能直接复用。
+
+证据:
+
+- `bluebook/06-第一性原理与苏格拉底反思.md`
+- `bluebook/03-设计哲学.md`
+
+### A112. atlas 中层真正成熟时，不再靠分组解释自己，而是靠 reject path 暴露自己
+
+- `commands / tools / services` 这些中层平面当然可以被粗分成若干簇，但如果正文仍主要靠分组说明自己，读者最终记住的还是“目录里有什么”，而不是“这层哪里在宣布真相、哪里只给子集、哪里一改最危险”。
+- 更稳的 atlas 写法是把分组降成最少代表项，再把 authority object、consumer subset、danger surface 和 first reject path 写成正文骨架；这样目录感才不会重新压过判断协议。
+- 这也说明 atlas 页继续演化的方向，不是补更多类别，而是把每层的回退入口和拒收路径写得更短、更硬。
+
+证据:
+
+- `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md`
+
+### A113. 扩张定价秩序真正成熟时，会把 observability 与 recovery evidence 提到同级
+
+- 如果入口页只写“谁能进入当前世界”，却不写扩张后怎样被回读、结算、追责和重新绑定执行连续性，这条定价秩序就仍然缺失一半。
+- `security`、`risk`、`07` 与 `api/46-services` 继续收束后的共识是：`liability evidence` 不是附录，而是和 `request truth / continuation asset / capability governance` 同级的权威入口；没有这层，恢复与 observability 仍会被误写成辅助手段。
+- 这也说明 observability 的更高阶职责，不是“数据更多”，而是让执行后的责任、 signer 与恢复资格有正式结算面。
+
+证据:
+
+- `bluebook/07-运行时契约、知识层与生态边界.md`
+- `bluebook/security/README.md`
+- `bluebook/risk/README.md`
+- `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`
 
 ### A100. 设计内涵继续深化后，最值钱的不再是更多高阶短句，而是把高阶短句压成可排查的对象
 
