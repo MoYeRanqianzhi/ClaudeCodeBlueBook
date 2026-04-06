@@ -1,4 +1,4 @@
-# one writable present验证手册：single-writer authority、stale worldview、ghost capability与anti-zombie回归
+# one writable present验证手册：per-host authority width、event stream / state writeback、stale worldview与ghost capability回归
 
 这一章不再解释源码先进性为什么成立，而是把 `architecture/84`、`philosophy/86` 与 `guides/101` 继续压成一张长期运行里的验证手册。
 
@@ -34,12 +34,12 @@
 
 所以这层验证最先要看的不是分层截图，而是：
 
-1. single-writer authority continuity
+1. authority-width continuity
 2. recovery asset non-sovereignty continuity
 3. event-stream-vs-state-writeback continuity
-4. stale-worldview continuity
-5. ghost-capability continuity
-6. anti-zombie continuity
+4. freshness-gate continuity
+5. stale-worldview continuity
+6. ghost-capability continuity
 7. release-surface shaping continuity
 8. later-maintainer rejectability continuity
 
@@ -60,21 +60,23 @@
 
 每次变更后，至少逐项检查：
 
-1. `single-writer authority continuity`
-   - 当前真相是否仍只有一个正式写入面。
+1. `authority-width continuity`
+   - 当前真相是否仍只有一个正式 authority object，各个 host 只消费自己的合法 width。
 2. `recovery asset non-sovereignty continuity`
    - 恢复资产是否仍只帮助找回 authority，而不宣布 authority。
 3. `event-stream-vs-state-writeback continuity`
    - append-only 时间线与 authoritative current-state surface 是否仍严格分层。
-4. `stale-worldview continuity`
+4. `freshness-gate continuity`
+   - 旧 head、旧 generation、旧 pointer 是否仍在写回前就被 freshness gate 剥夺 authority。
+5. `stale-worldview continuity`
    - validator、adapter 与 host consumer 是否仍不会站在 stale worldview 上继续发放允许。
-5. `ghost-capability continuity`
+6. `ghost-capability continuity`
    - dead capability token、旧 pin、旧 authority width 是否仍会 eviction，而不是继续篡位。
-6. `anti-zombie continuity`
+7. `anti-zombie continuity`
    - stale finally、stale snapshot、stale pointer 是否仍被正式拒绝。
-7. `release shaping continuity`
+8. `release shaping continuity`
    - compile-time、runtime 与 artifact 三层边界是否仍然分层。
-8. `later-maintainer rejectability continuity`
+9. `later-maintainer rejectability continuity`
    - later maintainer 是否仍能直接看出危险改动面与 reject 条件。
 
 ## 4. 直接拒收条件
@@ -82,38 +84,38 @@
 出现下面情况时，应直接拒收：
 
 1. `multi_writer_truth_detected`
-2. `recovery_asset_usurped_authority`
-3. `stale_writer_reached_present`
-4. `single_source_boundary_broken`
-5. `compile_runtime_artifact_conflated`
-6. `transport_or_worktree_manufactured_second_truth`
-7. `event_stream_usurped_present`
-8. `stale_worldview_unchecked`
-9. `ghost_capability_not_evicted`
-10. `later_maintainer_needs_author_memory`
+2. `per_host_projection_claimed_authority`
+3. `recovery_asset_usurped_authority`
+4. `event_stream_usurped_present`
+5. `freshness_gate_missing`
+6. `stale_worldview_unchecked`
+7. `ghost_capability_not_evicted`
+8. `compile_runtime_artifact_conflated`
+9. `later_maintainer_needs_author_memory`
 
 ## 5. 复盘记录最少字段
 
 每次 drift 至少记录：
 
-1. `present_state_object_id`
-2. `single_writer_surface`
+1. `authority_object_id`
+2. `per_host_authority_width`
 3. `recovery_asset_ledger`
 4. `event_stream_writeback_split`
-5. `stale_worldview_evidence`
-6. `ghost_capability_eviction_state`
-7. `anti_zombie_evidence`
-8. `release_surface_matrix`
-9. `symptom`
-10. `reject_reason`
-11. `rollback_object`
-12. `later_maintainer_risk_note`
+5. `freshness_gate_attested`
+6. `stale_worldview_evidence`
+7. `ghost_capability_eviction_state`
+8. `anti_zombie_evidence`
+9. `release_surface_matrix`
+10. `symptom`
+11. `reject_reason`
+12. `rollback_object`
+13. `later_maintainer_risk_note`
 
 ## 6. 防再发动作
 
 更稳的防再发顺序是：
 
-1. 先补 single-writer authority surface。
+1. 先补 authority object 与 per-host authority width。
 2. 先补 recovery asset 非主权边界。
 3. 先补 event stream / state writeback 分层与 freshness gate。
 4. 先补 stale worldview guard 与 ghost capability eviction。
@@ -125,7 +127,7 @@
 
 在你准备宣布“内核结构仍然健康”前，先问自己：
 
-1. 当前到底谁配写当前真相。
+1. 当前到底谁配写当前真相，各个 host 各配消费多宽的 authority。
 2. recovery asset 是在帮助恢复，还是已经偷偷篡位。
 3. event stream 和 state writeback 有没有被错误混成一层。
 4. validator、adapter 与 host consumer 看到的是 fresh worldview，还是 stale worldview。
@@ -137,4 +139,4 @@
 
 ## 8. 一句话总结
 
-真正成熟的源码验证，不是看结构还整不整齐，而是持续证明 one writable present 仍然成立：只有一个正式写入面，event stream 不篡位 state writeback，stale worldview 与 ghost capability 不得继续冒充 live authority，过去对象不能写坏现在。
+真正成熟的源码验证，不是看结构还整不整齐，而是持续证明 one writable present 仍然成立：同一个 authority object 只按合法 width 被消费，event stream 不篡位 state writeback，freshness gate 先剥夺旧 authority，stale worldview 与 ghost capability 不得继续冒充 live authority。

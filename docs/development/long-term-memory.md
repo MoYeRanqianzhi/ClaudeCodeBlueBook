@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/75 / 76 / 77 / 79`、`playbooks/README`、`guides/README` 与 `navigation/README` 已继续把深段执行页与长期验证入口收紧到更硬的对象链：
+  - `75` 现已把治理最深执行页从 `authority mode / *_surface / permission_mode` 收紧到 `governance key / externalized truth chain / typed ask / visible capability / continuation pricing / durable assets vs transient authority`。
+  - `76` 现已把结构最深执行页从 `authority stream` 收紧到 `per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
+  - `77` 现已把 Prompt 长期验证从 `compiled request truth` 更明确压到 `message lineage / projection consumer / protocol transcript / continuation object / cache-safe fork`。
+  - `79` 现已把 one writable present 的可见标题与主检查项继续压到 `per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`，把 `recovery asset` 降回从属边界。
+  - `playbooks/README`、`guides/README` 与 `navigation/README` 现已把深段阅读入口从纯编号链补成显式对象链，减少“知道往后读但不知道后面在守什么对象”的目录摩擦。
+- 新的长期结论：
+  - 治理深段真正成熟时，`surface` 只能表示投影或证据面，不能再充当根对象名；根对象必须始终回到 `governance key` 与 `externalized truth chain`。
+  - Prompt 长期验证真正成熟时，不应再把 `compiled request truth` 作为入口前门；更稳的前门是 `message lineage`、projection consumer 与 `continuation object`，因为它们直接解释 Prompt 世界如何被共同承认。
+  - 结构深段真正成熟时，`authority stream` 这类宽词最终也要继续下压；真正该被共同消费的是 `authority object` 的合法 width，以及 `event stream` 不能篡位 `state writeback` 的正式纪律。
+  - README 真正有用时，不只给出“读哪几页”，还要给出“这一段在守什么对象”；否则目录结构仍会被编号感而不是对象链主导。
 - `playbooks/71 / 72 / 73 / 74` 与 `playbooks/README` 已继续把三条“共享修复后段链”拉到更稳定的共同对象：
   - `71` 现已把 Prompt 共享修复从 `compiled request lineage / repair attestation` 压到 `message lineage / projection consumer / continuation object / cache-safe fork reuse`。
   - `72` 现已把治理共享修复从 `authority chain / 五条 truth channel / ingress lineage` 压到 `governance key / externalized truth chain / durable assets vs transient authority`。

@@ -25,15 +25,15 @@
 - [29-Prompt宿主接入审读手册：输入面、section breakdown、cache break可解释性与continue qualification排查](<29-Prompt宿主接入审读手册：输入面、section breakdown、cache break可解释性与continue qualification排查.md>)
 - [30-治理宿主接入审读手册：authority source、decision window、pending action与rollback object排查](30-治理宿主接入审读手册：authority source、decision window、pending action与rollback object排查.md)
 - [31-故障模型宿主接入审读手册：authority state、recovery boundary与anti-zombie结果面排查](31-故障模型宿主接入审读手册：authority state、recovery boundary与anti-zombie结果面排查.md)
-- [35-Prompt宿主验收执行手册：compiled request truth验收卡、拒收顺序与回退剧本](35-Prompt宿主验收执行手册：compiled request truth验收卡、拒收顺序与回退剧本.md)
-- [36-治理宿主验收执行手册：authority source、permission ledger、decision window、continuation gate与rollback剧本](36-治理宿主验收执行手册：authority source、permission ledger、decision window、continuation gate与rollback剧本.md)
-- [37-结构宿主验收执行手册：authority state、resume order、recovery boundary、writeback path与anti-zombie剧本](37-结构宿主验收执行手册：authority state、resume order、recovery boundary、writeback path与anti-zombie剧本.md)
-- [65-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill](65-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md)
-- [66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill](66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md)
-- [67-结构宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill](67-结构宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md)
-- [77-请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归](77-请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归.md)
-- [78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归](78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md)
-- [79-one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归](79-one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归.md)
+- [35-Prompt宿主验收执行手册：message lineage、projection consumer、continuation qualification验收卡、拒收顺序与回退剧本](35-Prompt宿主验收执行手册：compiled request truth验收卡、拒收顺序与回退剧本.md)
+- [36-治理宿主验收执行手册：governance key、externalized truth、decision window、continuation gate与rollback剧本](36-治理宿主验收执行手册：authority source、permission ledger、decision window、continuation gate与rollback剧本.md)
+- [37-结构宿主验收执行手册：event stream、state writeback、freshness gate、stale worldview与ghost capability剧本](37-结构宿主验收执行手册：authority state、resume order、recovery boundary、writeback path与anti-zombie剧本.md)
+- [65-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：message lineage card、shared reject order与reopen drill](65-Prompt宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md)
+- [66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：governance key host consumption card、hard reject order与reopen drill](66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md)
+- [67-结构宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：event stream / state writeback card、freshness gate、hard reject order与reopen drill](67-结构宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md)
+- [77-请求装配控制面验证手册：message lineage、projection consumer、continuation object与cache-safe fork回归](77-请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归.md)
+- [78-当前世界准入主权验证手册：governance key、typed ask、最小可见面与continuation gate回归](78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md)
+- [79-one writable present验证手册：per-host authority width、event stream / state writeback、stale worldview与ghost capability回归](79-one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归.md)
 
 ## 与其他目录配合
 
@@ -46,8 +46,11 @@
 - 结构：`31 -> 37 -> 67 -> 79`
 - 想沿后段修复链继续下钻：
 - Prompt：`65 -> 68 -> 71 -> 74`
+  对象主线：`message lineage -> projection consumer -> continuation object -> cache-safe fork`
 - 治理：`66 -> 69 -> 72 -> 75`
+  对象主线：`governance key -> externalized truth -> durable-vs-transient -> continuation pricing`
 - 结构：`67 -> 70 -> 73 -> 76`
+  对象主线：`event-stream-vs-state-writeback -> freshness gate -> per-host authority width -> stale worldview / ghost capability`
 - 想直接做当前长期验证，而不是先做宿主接入排查：默认从 `77-79` 起步
 - 想把高阶审读模板落成长期回归：从 `77-79`
 

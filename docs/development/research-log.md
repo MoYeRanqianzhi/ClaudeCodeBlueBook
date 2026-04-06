@@ -6,6 +6,7 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮深段对象路由动作: 已继续更新 `playbooks/75 / 76 / 77 / 79`、`playbooks/README`、`guides/README` 与 `navigation/README`，把治理 / 结构最深执行页与 Prompt / 结构长期验证页继续补齐到 `externalized truth / typed ask / continuation pricing / per-host authority width / event-stream-vs-state-writeback / freshness gate / projection consumer / cache-safe fork`，并把目录入口改成显式对象链而不只保留编号链。
 - 本轮共享修复深段动作: 已继续更新 `playbooks/71 / 72 / 73 / 74` 与 `playbooks/README`，把 Prompt / 治理 / 结构三条共享修复深段继续补齐到 `projection consumer / continuation object / cache-safe fork / governance key / externalized truth chain / durable-vs-transient / per-host authority width / event-stream-vs-state-writeback / freshness gate`，并把 `65-76` 的后段路由显式收回目录 README。
 - 本轮修复后段执行链动作: 已继续更新 `playbooks/67 / 68 / 69 / 70`，把结构 / Prompt / 治理三条后段执行手册继续补齐到 `event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability / message lineage / projection consumer / continuation object / governance key / externalized truth chain / durable-vs-transient`，并把正文中的作者记忆式说明降回正式对象、reject 语义与 reopen 责任。
 - 本轮改写纠偏链对齐动作: 已继续更新 `playbooks/62 / 63 / 64`，把 Prompt / 治理 / 结构三条 rewrite-correction 执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
