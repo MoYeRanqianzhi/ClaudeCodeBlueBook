@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 52 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 53 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -71,6 +71,7 @@
 50. [50-removeOrphanedAtMarker、refreshActivePlugins与copyPlanForResume的强请求清理复活治理边界](50-removeOrphanedAtMarker%E3%80%81refreshActivePlugins%E4%B8%8EcopyPlanForResume%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%A4%8D%E6%B4%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 51. [51-deletePluginOptions、setPluginEnabledOp与copyPlanForFork的强请求清理再赋权治理边界](51-deletePluginOptions%E3%80%81setPluginEnabledOp%E4%B8%8EcopyPlanForFork%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%86%8D%E8%B5%8B%E6%9D%83%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 52. [52-savePluginOptions、saveMcpServerUserConfig与PluginOptionsFlow的强请求清理重配置治理边界](52-savePluginOptions%E3%80%81saveMcpServerUserConfig%E4%B8%8EPluginOptionsFlow%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E9%85%8D%E7%BD%AE%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+53. [53-refreshActivePlugins、reload-plugins与refreshPluginState的强请求清理重新激活治理边界](53-refreshActivePlugins%E3%80%81reload-plugins%E4%B8%8ErefreshPluginState%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
