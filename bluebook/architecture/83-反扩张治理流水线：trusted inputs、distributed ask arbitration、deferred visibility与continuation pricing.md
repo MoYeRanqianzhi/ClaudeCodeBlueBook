@@ -1,9 +1,9 @@
-# 反扩张治理流水线：governance key、externalized truth chain、decision window、continuation pricing与durable-transient cleanup
+# 反扩张治理流水线：governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup
 
 这一章回答五个问题：
 
 1. 为什么 Claude Code 的安全设计与省 Token 设计其实在压制同一个敌人。
-2. 为什么 `governance key`、`externalized truth chain`、typed ask、deferred visibility、continuation pricing 与 cleanup 必须被放在同一条流水线上。
+2. 为什么 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 必须被放在同一条流水线上。
 3. 为什么 permission 在这里更像 typed transaction，而不是一个弹窗。
 4. 为什么 fail-open / fail-closed 不该按情绪区分，而应按资产类型区分。
 5. 这对 Agent runtime 设计者意味着什么。

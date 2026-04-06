@@ -39,11 +39,11 @@
 成立证据：
 
 1. [三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
-2. [真正有魔力的 Prompt，会先规定世界如何合法进入模型](../philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md)
-3. [请求装配流水线：消息血缘、投影消费面、协议转录与合法遗忘](../architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md)
-4. [苏格拉底审读：消息血缘、协议转录与继续对象](../guides/99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object.md)
-5. [验证手册：消息血缘、协议转录、继续对象与 cache-safe fork](../playbooks/77-请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归.md)
-6. [反例：假消息血缘、假协议转录与假继续对象](../casebooks/73-请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object.md)
+2. [世界如何合法进入模型：request assembly 与 six-stage assembly chain](../philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md)
+3. [请求装配流水线：world entry / request assembly / six-stage assembly chain](../architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md)
+4. [苏格拉底审读：world entry / request assembly / six-stage assembly chain](../guides/99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object.md)
+5. [验证手册：request assembly、protocol transcript、continuation qualification 与 cache-safe fork](../playbooks/77-请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归.md)
+6. [反例：假 world entry、假 protocol transcript 与假 continuation qualification](../casebooks/73-请求装配控制面验证失真反例：假authority chain、假protocol transcript与假continuation object.md)
 
 需要补证时再下钻：
 
@@ -55,8 +55,8 @@
 
 这条线的核心结论是：
 
-- Prompt 魔力来自请求装配控制面：消息血缘、投影消费面、协议转录与继续对象必须持续对同一个世界保持诚实；装配顺序、工具 ABI、缓存边界、状态晚绑定与旁路 fork 只是这套控制面的实现面
-- 这条线的更短检索名可以直接记成 `Request Surface Constitution`：`09` 负责定义，`84 / 82` 负责展开，`99` 负责审读
+- `world entry / request assembly / six-stage assembly chain` 必须持续对同一个世界保持诚实；装配顺序、工具 ABI、缓存边界、状态晚绑定与旁路 fork 只是这套控制面的实现面
+- 这条线的前门不再让旧别名占主语位；`09` 负责定义，`84 / 82` 负责展开，`99` 负责审读
 - 最短记法：不是更强 prompt，而是同一世界的持续诚实
 
 继续追问时：
@@ -82,9 +82,9 @@
 
 1. [三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
 2. [真正成熟的治理，不是更会拦截，而是更会为扩张定价](../philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md)
-3. [反扩张治理流水线：治理键、typed ask、decision window 与 continuation pricing](../architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md)
-4. [苏格拉底审读：治理键、decision window 与 continuation pricing](../guides/100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md)
-5. [验证手册：治理键、typed ask、decision window 与 continuation pricing 回归](../playbooks/78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md)
+3. [反扩张治理流水线：governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup](../architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md)
+4. [苏格拉底审读：governance key、typed ask、decision window 与 continuation pricing](../guides/100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md)
+5. [验证手册：governance key、typed ask、decision window 与 continuation pricing 回归](../playbooks/78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md)
 6. [反例：低信任扩权、假 decision window 与免费继续](../casebooks/74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续.md)
 
 需要补证时再下钻：
@@ -97,7 +97,7 @@
 
 这条线的核心结论是：
 
-- Claude Code 真正持续压制的是当前世界的免费扩张；预算器、权限、可见性与 continuation pricing 只是它在动作空间、权威空间、上下文空间与时间空间上的具体定价器
+- Claude Code 真正持续压制的是当前世界的免费扩张；`governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 只是它在动作空间、权威空间、上下文空间与时间空间上的具体定价链
 - 如果要继续落到可执行层，优先去 `guides/28 -> guides/100 -> playbooks/78` 看失败语义与升级阈值矩阵，而不是把“统一定价”继续停在抽象解释层
 
 ## 3. 权威真相深线

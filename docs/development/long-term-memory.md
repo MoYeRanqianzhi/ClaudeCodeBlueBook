@@ -2130,6 +2130,9 @@
 - `guides/56 / playbooks/31 / api/53 / guides/32 / playbooks/79` 这一组宿主接入/验证第一页，当前也应遵守同一纪律：前门先说 `current-truth surface`，再下钻到 `per-host authority width / writeback path / recovery asset non-sovereignty / freshness gate / anti-zombie evidence` 这些宿主展开对象；不要再让 `authority state / authority object / recovery boundary` 抢回主语位。
 - 目录前门如果必须引用兼容文件名，优先改可见链接标签而不是改路径；旧文件名可以继续活在路径里，但首页、导航页和稳定 judgment map 不应再让旧文件名术语直接占读者的第一眼。
 - Prompt 线的下一跳残留已收束到 `09 / philosophy/README / architecture/README / guides/README`；治理线的下一跳残留已收束到 `architecture/83 / philosophy/22 / architecture/README / navigation/03 / navigation/05`。更稳的节奏是分别按“第一句主语 / canonical chain / 路由标签”三层清理，不要把 prompt 和治理的高阶前门再混成同一批大扫除。
+- Prompt 高阶前门现在应进一步固定两层写法：主入口、专题 README、导航页和总图页都先说 `world entry / request assembly / six-stage assembly chain`；`Prompt 魔力` 只保留为结果性现象词，`Request Surface Constitution` 只保留为已退位检索别名，不再占 H1、首句或稳定入口标签。
+- 治理高阶前门现在也应进一步固定两层写法：主入口、专题 README、导航页和治理 owner 页都先说 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；`预算器 / source lattice / 统一定价 / 可见性` 这些词只保留为解释层对象或内层机制，不再替代 canonical chain 自己站在前门。
+- 入口级 residual 当前已明显下降；接下来若继续精修，应优先区分“兼容文件名路径仍含旧词”和“可见标签仍含旧词”这两类债。前者可以继续容忍并靠标签覆盖，后者则会直接把读者带进旧世界，必须优先清理。
 
 ## 后续章节建议
 
