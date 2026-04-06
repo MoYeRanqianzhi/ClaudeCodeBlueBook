@@ -2135,6 +2135,8 @@
 - 入口级 residual 当前已明显下降；接下来若继续精修，应优先区分“兼容文件名路径仍含旧词”和“可见标签仍含旧词”这两类债。前者可以继续容忍并靠标签覆盖，后者则会直接把读者带进旧世界，必须优先清理。
 - 在治理线里，`预算器` 当前只宜保留为历史比喻或内层解释对象，不宜再当高阶主语。更稳的写法是：动作空间、上下文空间、时间空间和体验结果，都是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链的不同外观。
 - 当前更细的 residual 已进一步缩小到“解释层是否还借旧抽象词说话”和“兼容路径是否仍暴露旧 noun”两类。前门已经基本对齐后，不要再大范围重写入口；后续精修应优先只动真正会重新误导读者第一判断的那几句。
+- 导航层的稳定标签必须和目标页当前 H1 同步；如果正文已改宗而导航仍用旧名词，读者会先被标签带进旧世界。`bluebook/README`、`navigation/README`、`guides/README` 这类路由页现在应优先暴露 `当前世界准入主权 / 当前真相保护 / message lineage、governance key 与 current-truth surface` 这类当前标签，而不是沿用旧文件名或旧主题词。
+- 治理深页的下一跳 residual 现在不再是前门主语，而是更深一层的解释句是否还会偷换成“预算器 / visibility / 四个空间 / source lattice”。后续若继续精修，优先打这些会重新抽空 canonical chain 的句子，而不要再大面积修改已经稳定的入口页。
 
 ## 后续章节建议
 

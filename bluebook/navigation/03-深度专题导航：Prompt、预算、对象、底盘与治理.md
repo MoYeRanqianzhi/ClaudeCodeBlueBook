@@ -23,7 +23,7 @@
 它主要防五种误读：
 
 1. 把 Prompt 读成更强文案，而不是世界进入模型前的编译秩序。
-2. 把治理读成更严拦截，而不是拒绝免费扩张的统一定价。
+2. 把治理读成更严拦截，而不是围绕 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 拒绝免费扩张。
 3. 把协作承载体读成工具堆叠，而不是对象升级与恢复闭环。
 4. 把源码先进性读成目录美学，而不是 current-truth surface、consumer subset 与 chokepoint 的共同保护。
 5. 把第一性原理实践与苏格拉底自检放到正文尾部，而不是把它们当作前置判题器。
@@ -74,9 +74,9 @@
 先问：
 
 - 为什么安全和省 token 不是两套系统。
-- 为什么治理设置、能力裁剪、budget continuation 与 prompt 稳定性应该放到同一张图里。
+- 为什么 `governance key`、`typed ask / decision window`、`continuation pricing` 与 prompt 稳定性应该放到同一张图里。
 - 为什么“省 token”首先在控制什么进入上下文，而不是在压缩句子。
-- 为什么运行时里需要多套预算机制，却仍共享同一第一性原理。
+- 为什么 ask、续费、清理可以分层实现，却仍共享同一条治理收费链。
 
 成立证据：
 
@@ -97,8 +97,8 @@
 
 这条线的核心结论是：
 
-- Claude Code 真正持续压制的是当前世界的免费扩张；`governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 只是它在动作空间、权威空间、上下文空间与时间空间上的具体定价链
-- 如果要继续落到可执行层，优先去 `guides/28 -> guides/100 -> playbooks/78` 看失败语义与升级阈值矩阵，而不是把“统一定价”继续停在抽象解释层
+- Claude Code 真正持续压制的是当前世界的免费扩张；这条治理链真正要回答的是：谁能改边界、宿主承认哪条真相、哪些扩张必须 ask、这个 window 是否仍有效、继续与恢复是否还值得付费
+- 如果要继续落到可执行层，优先去 `guides/28 -> guides/100 -> playbooks/78` 看 source slot、ask arbitration、window 失效与 cleanup gate，而不是把治理继续停在抽象口号层
 
 ## 3. 权威真相深线
 
@@ -180,7 +180,7 @@
 
 - Claude Code 的远程可用性不是靠“断了再试”，而是靠分层失败语义、防假连续性和恢复边界管理
 
-## 7. 源码先进性深线
+## 7. 当前真相保护深线
 
 先问：
 
