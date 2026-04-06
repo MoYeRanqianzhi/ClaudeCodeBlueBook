@@ -1,4 +1,4 @@
-# 治理宿主验收执行手册：governance key、typed ask、decision window、continuation pricing 与 rollback 剧本
+# 治理宿主验收执行手册：governance key、typed ask、decision window、continuation pricing 与 cleanup 剧本
 
 治理宿主验收真正要执行的，不是 mode、弹窗与 token 图表还能不能工作，而是下面这条治理判断链仍围绕同一个当前世界成立：
 
@@ -7,9 +7,9 @@
 3. `typed ask`
 4. `decision window`
 5. `continuation pricing`
-6. `rollback / durable-transient cleanup`
+6. `durable-transient cleanup`
 
-`permission ledger` 只能作为 `typed ask` 的事务证据面，`continuation gate` 只能作为 `continuation pricing` 的 verdict 字段。
+`permission ledger` 只能作为 `typed ask` 的事务证据面，`continuation gate` 只能作为 `continuation pricing` 的 verdict 字段，`rollback object` 只能作为 cleanup carrier 的 legacy alias。
 
 ## 0. 代表性源码锚点
 
@@ -30,13 +30,13 @@
 
 ## 1. 第一性原理
 
-治理宿主验收真正要拒绝的，不是个别交互失灵，而是统一定价控制面被投影替身取代：
+治理宿主验收执行真正要拒绝的，不是个别交互失灵，而是统一定价控制面被投影替身取代：
 
-- mode 面板冒充治理主键
-- 审批弹窗冒充 typed ask
-- token 仪表盘冒充 decision window
-- 默认继续冒充 continuation pricing
-- 文件回退冒充 rollback object
+1. mode 面板冒充治理主键
+2. 审批弹窗冒充 typed ask
+3. token 仪表盘冒充 decision window
+4. 默认继续冒充 continuation pricing
+5. 文件回退冒充 durable-transient cleanup
 
 所以这层 playbook 最先要看的不是表象，而是：
 
@@ -44,31 +44,32 @@
 2. 当前世界边界是否仍沿同一条 `externalized truth chain` 外化。
 3. 当前 ask 是否仍是同一请求对象上的正式事务。
 4. 当前 continuation 是否仍由统一 pricing 裁定，而不是由阈值幻觉裁定。
-5. 当前 rollback 是否仍恢复对象边界，而不是只恢复 mode 或页面状态。
+5. 当前 cleanup 是否仍恢复对象边界，而不是只恢复 mode 或页面状态。
 
 ## 2. 共享验收卡最小字段
 
 每次治理宿主验收，宿主、CI、评审与交接系统至少应共享：
 
 1. `request_id`
-2. `governance_key`
+2. `governance_key_ref`
 3. `externalized_truth_chain_ref`
 4. `typed_ask_ref`
 5. `permission_ledger_ref`
 6. `decision_window_ref`
 7. `context_usage_snapshot`
 8. `continuation_pricing_ref`
-9. `durable_assets_after`
-10. `transient_authority_cleared`
-11. `rollback_object_ref`
+9. `cleanup_carrier_ref`
+10. `durable_assets_after`
+11. `transient_authority_cleared`
 12. `reject_verdict`
 13. `verdict_reason`
+14. `re_entry_condition`
 
 四类消费者的分工应固定为：
 
 1. 宿主看当前治理对象是否仍有唯一写点。
 2. CI 看协议字段、去重语义、baseline reset 与 cleanup 是否完整。
-3. 评审看 typed ask、拒收理由与 rollback object 是否自洽。
+3. 评审看 typed ask、拒收理由与 cleanup carrier 是否自洽。
 4. 交接看 later 接手者能否围绕同一 `governance key` 与 `externalized truth chain` 继续判断。
 
 ## 3. 固定执行顺序
@@ -108,14 +109,14 @@
 3. `continuation gate` 是否仍只是 pricing verdict，而不是新的根对象。
 4. compact / cache deletion 后 baseline 是否仍会重置。
 
-### 3.5 最后验 `rollback / durable-transient cleanup`
+### 3.5 最后验 `durable-transient cleanup`
 
 最后才看：
 
-1. 回退是否仍恢复对象，而不是只恢复 mode。
+1. cleanup 是否仍恢复对象，而不是只恢复 mode。
 2. permission、cache、context 三条基线是否仍一起回到合法状态。
 3. durable assets 与 transient authority 是否仍被明确区分。
-4. 交接系统能否明确指出 rollback 后的 re-entry condition。
+4. 交接系统能否明确指出 cleanup 后的 re-entry condition。
 
 ## 4. 直接拒收条件
 
@@ -129,25 +130,31 @@
 6. `context_usage_isolated`
 7. `continuation_pricing_defaulted`
 8. `transient_authority_resumed`
-9. `rollback_not_object`
+9. `cleanup_not_object`
 10. `baseline_reset_missing`
 
-## 5. 拒收升级与回退顺序
+更值得长期复用的 reject trio 是：
+
+1. `projection_usurpation`
+2. `decision_window_collapse`
+3. `free_expansion_relapse`
+
+## 5. 拒收升级与 cleanup 顺序
 
 看到 reject verdict 之后，更稳的处理顺序是：
 
 1. 先冻结新的 capability expansion，不再允许继续提权或自动化扩张。
 2. 先关闭当前 decision window，取消或隔离所有 outstanding request。
-3. 先把 automation 降回人工或更窄模式，再恢复 rollback object。
+3. 先把 automation 降回人工或更窄模式，再恢复 cleanup carrier 指向的对象边界。
 4. 先重建 `governance key`、`typed ask`、`decision window` 与 baseline，再允许重开 continuation。
 5. 如果根因是治理制度本身漂移，就回跳 `../guides/58` 做制度纠偏。
 
 ## 6. 回退演练集
 
-每轮至少跑下面六个治理宿主验收演练：
+每轮至少跑下面六个治理宿主演练：
 
-1. `permission race`
-2. `headless deny path`
+1. `permission_race`
+2. `headless_deny_path`
 3. `duplicate_orphan_response`
 4. `token_pressure_continuation`
 5. `mode_switch_after_pending_request`
@@ -155,34 +162,34 @@
 
 ## 7. 复盘记录最少字段
 
-每次治理宿主验收失败或回退，至少记录：
+每次治理宿主验收失败或 cleanup，至少记录：
 
 1. `governance_object_id`
-2. `governance_key`
+2. `governance_key_ref`
 3. `externalized_truth_chain_ref`
 4. `typed_ask_ref`
 5. `decision_window_ref`
 6. `continuation_pricing_ref`
-7. `durable_assets_after`
-8. `transient_authority_cleared`
-9. `rollback_object_ref`
+7. `cleanup_carrier_ref`
+8. `durable_assets_after`
+9. `transient_authority_cleared`
 10. `reject_verdict`
-11. `rollback_action`
+11. `cleanup_action`
 12. `re_entry_condition`
 
 ## 8. 苏格拉底式检查清单
 
 在你准备宣布“治理宿主验收已经稳定运行”前，先问自己：
 
-1. 我暴露的是状态投影，还是权威对象本身。
+1. 我暴露的是状态投影，还是治理对象本身。
 2. 当前所有决定是否仍围绕同一个 `governance key`。
-3. 当前 `permission ledger` 记录的是“用户点了允许”，还是“系统为何允许/拒绝”。
+3. 当前 `permission ledger` 记录的是事务真相，还是“用户点了允许”的表面事件。
 4. continuation 是正式 pricing，还是默认继续。
 5. baseline 下降时，我能否区分合法压缩与异常碎裂。
 6. 如果晚到响应、重复响应与并发切 mode 同时发生，这套实现是否仍成立。
-7. 当前 rollback 恢复的是对象边界，还是页面状态。
+7. 当前 cleanup 恢复的是对象边界，还是页面状态。
 8. 如果把 modal 和 dashboard 藏起来，团队是否仍知道该如何判断。
 
 ## 9. 一句话总结
 
-真正成熟的治理宿主验收执行，不是把 mode、弹窗与 token 曲线拼成更复杂的审批页，而是持续证明 `governance key`、`externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `rollback / durable-transient cleanup` 仍是同一个治理判断链。
+真正成熟的治理宿主验收执行，不是把 mode、弹窗与 token 曲线拼成更复杂的审批页，而是持续证明 `governance key`、`externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `durable-transient cleanup` 仍是同一个治理判断链。
