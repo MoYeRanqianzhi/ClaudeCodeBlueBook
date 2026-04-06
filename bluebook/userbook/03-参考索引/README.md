@@ -11,6 +11,15 @@
 7. 高价值入口背后到底有哪些运行时合同。
 8. 名字相近的 root command 和 slash command 到底是不是一回事。
 9. Settings tab、独立 screen、调参命令和预算分流到底分别属于什么对象。
+10. 同样都是 slash command，为什么它们在对象类型、执行语义和可见性边界上并不是同一类按钮。
+11. 技能为什么不是一张表，为什么 `/skills`、SkillTool、dynamic skills 看到的是不同投影。
+12. Claude 与 remote client 到底通过哪些链看到可用能力，为什么 UI 菜单、system/init、skill 提醒不是同一张表。
+13. 为什么同样是扩展来源，workspace trust、plugin-only policy、hooks 总闸和 admin-trusted source 不是同一层限制。
+14. 为什么 `relevant skills`、static listing、remote skills 与 `shortId` 反馈回路不是同一条公开主线。
+15. 为什么 `/hooks` 菜单、已配置 hooks、已注册 hooks 和实际会执行的 hooks 不是同一对象。
+16. 为什么 `/mcp` 菜单、全局配置总览、按名解析与 Agent `mcpServers` 不是同一类 server。
+17. 为什么插件“装好了、改好了、提示待刷新了、当前会话已吃到”不是同一状态。
+18. 为什么插件有时会自己出现、有时只提示 `/reload-plugins`，而 startup trust、background install、headless refresh 又不是同一条自动链。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
