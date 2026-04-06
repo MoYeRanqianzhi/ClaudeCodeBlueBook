@@ -353,19 +353,23 @@ delete executor 也还要等待：
 
 ### 反思四
 
-如果我要把这套设计再提高一倍，下一步最该补什么？
+`我是不是把 retention policy 的存在，偷写成 destruction governance 已经被完整制度化？`
 
-我会优先补三样东西：
+不能这样写。
+更稳妥的约束是：
 
-1. retention source trust-class 字段  
-   明确区分 user/project/local/policy 对 destructive policy 的资格等级
-2. declaration / enforcement honesty 字段  
-   让 UI 明确说出“policy says X, runtime executed Y”
-3. destruction governance ledger  
-   记录谁设了 cutoff、谁触发 cleanup、谁因为 validation guard 阻止了 cleanup
+`cleanupPeriodDays` 的声明、source precedence、validation guard、scheduler 与 destructive executor 已经被源码拆层。
 
-因为现在源码已经把这些层拆出来了，  
-但还没有把它们完全升级成产品层可见的治理协议。
+因此我能确认的，
+只是：
+
+`retention governance != irreversible erasure`
+
+以及：
+
+`真正的 retention governor 不能被任何单一删除动作篡位。`
+
+我还不能反过来宣称产品层已经把 source trust-class、execution ledger 与 honesty 协议全部做实。
 
 ## 13. 一条硬结论
 

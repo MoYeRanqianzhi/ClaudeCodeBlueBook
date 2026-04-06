@@ -315,18 +315,18 @@ Claude Code 当前源码最值得学习的地方，
 
 ### 反思四
 
-如果我要把这套设计再提高一倍，下一步最该补什么？
+`我是不是把 CleanupResult 的存在，偷写成 enforcement honesty protocol 已经完成？`
 
-我会优先补三样东西：
+不能这样写。
+内部计数、局部 side-effect 与正式 truth surface 仍然不是同一层。
 
-1. `retention_execution_status` 结构化字段  
-   区分 `declared / scheduled / deferred / skipped / executed / side_effected`
-2. declaration vs enforcement 的双层 UI 文法
-3. cleanup aggregation event  
-   至少把 transcript/session/file-history cleanup 的结果像 worktree/npm cleanup 那样正式打点或挂账
+更稳妥的判断只能是：
 
-因为现在源码已经把这些层次摆出来了，  
-但还没有把它们升级成统一 honesty protocol。
+`repo 已经把 declaration、scheduling、execution 与局部结果对象拆开，`
+
+但这还不足以推出：
+
+`系统已经拥有统一、对外可消费的 retention honesty protocol。`
 
 ## 12. 一条硬结论
 

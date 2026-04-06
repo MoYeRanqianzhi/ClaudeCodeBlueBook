@@ -339,18 +339,24 @@ cleanup 线今天更该继续向这个方向补课：
 
 ### 第四问
 
-`这章最值得继续逼问自己的地方是什么？`
+`我真正该继续约束自己的是什么？`
 
 是这句：
 
-`cleanup 线未来若长出 verifier，它最合理的 repair governor 应该挂在 settings governance、cleanup scheduler governance、artifact-family policy governance，还是 documentation/promise governance 上？`
+`不要把 repair loci 已经可枚举，误写成 repair authority 已经被正式分配。`
 
-如果答案不是一个而是多个，  
-那么下一层真正值得继续研究的，  
-就不再只是“repair governor 是否存在”，  
-而是：
+当前更稳妥的说法只能是：
+verifier 能告诉你 drift 出现了，
+但它不会自然告诉你应修改规则、修改执行器、修改承诺语言，还是直接熔断 feature。
 
-`repair governor 自身是否也必须继续拆成 promise governor、execution governor 与 migration governor。`
+因此本章能成立的是：
+
+`verification != repair governance`
+
+不能偷加的 stronger claim，
+则是：
+
+`repo 已经把 cleanup repair authority 明确挂到了某个现成 control plane 上。`
 
 ## 12. 一条硬结论
 

@@ -1,0 +1,54 @@
+# 安全载体家族重配置治理与重新激活治理分层速查表：reconfiguration decision、reactivation decision、positive control、cleanup reactivation gap与governor question
+
+## 1. 这一页服务于什么
+
+这一页服务于 [170-安全载体家族重配置治理与重新激活治理分层：为什么artifact-family cleanup reconfiguration-governor signer不能越级冒充artifact-family cleanup reactivation-governor signer](../170-安全载体家族重配置治理与重新激活治理分层：为什么artifact-family%20cleanup%20reconfiguration-governor%20signer不能越级冒充artifact-family%20cleanup%20reactivation-governor%20signer.md)。
+
+如果 `170` 的长文解释的是：
+
+`为什么决定对象该按哪组 current config truth 工作，与决定这组 truth 何时真正接管 running session，仍然是两层治理主权，`
+
+那么这一页只做一件事：
+
+`把 repo 里现成的 reconfiguration decision / reactivation decision 正例，与 cleanup 线当前仍缺的 reactivation grammar，压成一张矩阵。`
+
+## 2. 重配置治理与重新激活治理分层矩阵
+
+| line | reconfiguration decision | reactivation decision | positive control | cleanup reactivation gap | governor question | 关键证据 |
+| --- | --- | --- | --- | --- | --- | --- |
+| interactive plugin config save | decide current options/secrets/payload should now be persisted | decide when those persisted truths actually take effect in the running session | `Configuration saved. Run /reload-plugins for changes to take effect.` | cleanup line has no explicit rule for when restored config truth stops being merely saved and becomes active | who decides when restored cleanup truth really enters current session world | `ManagePlugins.tsx:1645-1668,1700-1707` |
+| Layer-3 plugin system | decide which plugin config is current | decide when commands/agents/hooks/MCP/LSP swap from stale active world to current active world | `refreshActivePlugins()` as `Layer-3 refresh primitive` | cleanup line has no explicit Layer-3 reactivation primitive | who owns the swap from stale cleanup world to current active cleanup world | `refresh.ts:1-177`; `reload-plugins.ts:10-56` |
+| interactive stale-state handling | decide config/disk truth has changed | decide whether to auto-reactivate or wait for explicit user action | `needsRefresh` notification + `Do NOT auto-refresh` | cleanup line has no explicit rule for “stale but not yet reactivated” | who signs stale-vs-active distinction after restored cleanup truth changes | `useManagePlugins.ts:25-35,287-303`; `AppStateStore.ts:209-214` |
+| background reconcile | decide marketplaces/plugins have been updated on disk | decide whether this scenario gets auto-refresh or deferred manual activation | new installs auto-refresh; updates only set `needsRefresh` | cleanup line has no explicit scenario policy for auto-reactivate vs deferred reactivation | who decides when restored cleanup changes are urgent enough to auto-activate | `PluginInstallationManager.ts:50-180` |
+| headless sync install | decide plugin/config truth before first ask | decide that headless mode auto-consumes reactivation before the first query | `refreshPluginState()` before first ask | cleanup line has no explicit headless-mode reactivation rule | who decides restored cleanup truth in headless mode auto-activates vs waits | `print.ts:1733-1765,1881-1910`; `AppStateStore.ts:209-214` |
+
+## 3. 三个最重要的判断问题
+
+判断一句“cleanup reconfiguration 已经完整”有没有越级，先问三句：
+
+1. 这只是 reconfiguration decision，还是已经明确这组 truth 何时真正进入 active world
+2. 当前变化只是 persisted truth 变了，还是 commands / agents / hooks / MCP / LSP 已经完成 Layer-3 swap
+3. 如果不同运行模式采用不同激活制度，那么谁来决定 interactive、background、headless 各自的 reactivation policy
+
+## 4. 最常见的五类误读
+
+| 误读 | 实际问题 |
+| --- | --- |
+| “配置保存成功，所以现在已经生效” | persistence != reactivation |
+| “磁盘世界更新了，active world 自然同步” | disk change != Layer-3 swap |
+| “发了 notification，就等于已经完成激活” | stale-state notice != active takeover |
+| “既然有统一 refresh primitive，谁触发都一样” | trigger authority is itself a governance layer |
+| “不同模式最终都能激活，所以不用区分制度” | interactive/background/headless can allocate reactivation differently |
+
+## 5. 一条硬结论
+
+真正成熟的 comeback grammar 不是：
+
+`config truth rewritten -> current active world is assumed`
+
+而是：
+
+`config truth rewritten -> detect stale active world -> assign reactivation authority -> perform Layer-3 swap -> only then treat current world as reactivated`
+
+只有中间三层被补上，
+cleanup reconfiguration governance 才不会继续停留在“知道对象现在该按哪组 truth 工作，却没人正式决定这组 truth 何时真正接管当前世界”的半治理状态。

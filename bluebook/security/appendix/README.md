@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 151 篇速查文档。
+`appendix/` 当前包含 157 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -96,6 +96,24 @@
 - `151`
   载体家族墓碑治理与复活治理分层。
   入口：[151-安全载体家族墓碑治理与复活治理分层速查表：tombstone decision、resurrection decision、positive control、cleanup re-entry gap与governor question](151-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%A2%93%E7%A2%91%E6%B2%BB%E7%90%86%E4%B8%8E%E5%A4%8D%E6%B4%BB%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Atombstone%20decision%E3%80%81resurrection%20decision%E3%80%81positive%20control%E3%80%81cleanup%20re-entry%20gap%E4%B8%8Egovernor%20question.md)。
+- `152`
+  载体家族复活治理与再赋权治理分层。
+  入口：[152-安全载体家族复活治理与再赋权治理分层速查表：resurrection decision、re-entitlement decision、positive control、cleanup requalification gap与governor question](152-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%A4%8D%E6%B4%BB%E6%B2%BB%E7%90%86%E4%B8%8E%E5%86%8D%E8%B5%8B%E6%9D%83%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Aresurrection%20decision%E3%80%81re-entitlement%20decision%E3%80%81positive%20control%E3%80%81cleanup%20requalification%20gap%E4%B8%8Egovernor%20question.md)。
+- `153`
+  载体家族再赋权治理与重配置治理分层。
+  入口：[153-安全载体家族再赋权治理与重配置治理分层速查表：re-entitlement decision、reconfiguration decision、positive control、cleanup reconfiguration gap与governor question](153-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%86%8D%E8%B5%8B%E6%9D%83%E6%B2%BB%E7%90%86%E4%B8%8E%E9%87%8D%E9%85%8D%E7%BD%AE%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Are-entitlement%20decision%E3%80%81reconfiguration%20decision%E3%80%81positive%20control%E3%80%81cleanup%20reconfiguration%20gap%E4%B8%8Egovernor%20question.md)。
+- `154`
+  载体家族重配置治理与重新激活治理分层。
+  入口：[154-安全载体家族重配置治理与重新激活治理分层速查表：reconfiguration decision、reactivation decision、positive control、cleanup reactivation gap与governor question](154-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E9%87%8D%E9%85%8D%E7%BD%AE%E6%B2%BB%E7%90%86%E4%B8%8E%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Areconfiguration%20decision%E3%80%81reactivation%20decision%E3%80%81positive%20control%E3%80%81cleanup%20reactivation%20gap%E4%B8%8Egovernor%20question.md)。
+- `155`
+  载体家族重新激活治理与就绪治理分层。
+  入口：[155-安全载体家族重新激活治理与就绪治理分层速查表：reactivation decision、readiness decision、positive control、cleanup readiness gap与governor question](155-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB%E6%B2%BB%E7%90%86%E4%B8%8E%E5%B0%B1%E7%BB%AA%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Areactivation%20decision%E3%80%81readiness%20decision%E3%80%81positive%20control%E3%80%81cleanup%20readiness%20gap%E4%B8%8Egovernor%20question.md)。
+- `156`
+  载体家族就绪治理与连续性治理分层。
+  入口：[156-安全载体家族就绪治理与连续性治理分层速查表：readiness decision、continuity decision、positive control、cleanup continuity gap与governor question](156-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E5%B0%B1%E7%BB%AA%E6%B2%BB%E7%90%86%E4%B8%8E%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Areadiness%20decision%E3%80%81continuity%20decision%E3%80%81positive%20control%E3%80%81cleanup%20continuity%20gap%E4%B8%8Egovernor%20question.md)。
+- `157`
+  载体家族连续性治理与恢复治理分层。
+  入口：[157-安全载体家族连续性治理与恢复治理分层速查表：continuity decision、recovery decision、positive control、cleanup recovery gap与governor question](157-%E5%AE%89%E5%85%A8%E8%BD%BD%E4%BD%93%E5%AE%B6%E6%97%8F%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%B2%BB%E7%90%86%E4%B8%8E%E6%81%A2%E5%A4%8D%E6%B2%BB%E7%90%86%E5%88%86%E5%B1%82%E9%80%9F%E6%9F%A5%E8%A1%A8%EF%BC%9Acontinuity%20decision%E3%80%81recovery%20decision%E3%80%81positive%20control%E3%80%81cleanup%20recovery%20gap%E4%B8%8Egovernor%20question.md)。
 
 ## 怎么配合主线读
 

@@ -351,17 +351,22 @@ Claude Code 当前实现却已经把它们拆成三层：
 
 ### 反思四
 
-如果我要把这套设计再提高一倍，还缺什么？
+`我是不是把“当前读不到”偷写成“已经制度性销毁”？`
 
-我会优先补三样东西：
+不能这样写。
+这一章最该继续约束自己的，
+是始终把：
 
-1. 结构化的 destruction scope 字段  
-   区分 transcript / backup / workspace / remote mirror / tool-results
-2. destruction owner 与 retention governor 的显式协议
-3. “filtered / hidden / destroyed” 的固定词法宪法
+- hidden
+- filtered
+- rewritten
+- expired
+- destroyed
 
-因为现在源码已经把这些语义在动作上拆开了，  
-但还没有把它们在 product language 与 typed contract 上完全做实。
+当成不同强度的 truth claim。
+只要 destruction scope、destruction owner 与词法宪法还没有被同一强层一起签字，
+我就只能说源码已经把多种删除强度拆开，
+还不能把任何一种局部不可见性冒充成系统级不可逆销毁。
 
 ## 13. 一条硬结论
 

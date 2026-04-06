@@ -459,17 +459,25 @@ plans family 已经给出最好的例子。
 
 ### 第四问
 
-`这章最值得继续逼问自己的地方是什么？`
+`我真正该继续约束自己的是什么？`
 
 是这句：
 
-`Claude Code 是否应该把 artifact family policy 做成显式 schema / registry，而不是继续分散在 helper 与注释里？`
+`不要把研究者事后能拼出来的 distributed truth，误写成系统已经拥有统一 metadata plane。`
 
-如果答案是应该，  
-那么更强的问题就不再是“有没有 metadata”，  
-而是：
+当前更稳妥的说法只能是：
+repo 已经有足够稳定的 family truth，
+但这些 truth 仍主要散落在 helper、path、settings schema 与 dispatcher 之间。
 
-`谁配签发这份 metadata，以及谁配校验 metadata 与 runtime reality 没有继续分叉。`
+因此本章能成立的，
+是：
+
+`rationale != metadata`
+
+不能偷加的 stronger claim，
+则是：
+
+`系统已经能用统一 registry 自己复述整套 artifact-family policy。`
 
 ## 14. 一条硬结论
 

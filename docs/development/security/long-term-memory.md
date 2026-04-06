@@ -20,15 +20,23 @@
 - `165` 已经稳定写出退役治理边界：repo 在模型退役日期、迁移通知、legacy runtime remap、plugin orphan grace window 与 search visibility cutoff 上已明确展示 sunset governance 的存在，说明决定“旧世界怎样过渡”与决定“兼容期何时正式结束”仍然是两层主权；因此 `artifact-family cleanup migration-governance` 仍不能越级冒充 `artifact-family cleanup sunset-governance`。
 - `166` 已经稳定写出墓碑治理边界：repo 在 `tombstone` messages、`.orphaned_at` markers、marker-driven exclusion grammar 与 migration timestamps 上已明确展示 tombstone governance 的存在，说明决定“旧世界何时结束”与决定“结束后还留下什么最小残留标记”仍然是两层主权；因此 `artifact-family cleanup sunset-governance` 仍不能越级冒充 `artifact-family cleanup tombstone-governance`。
 - `167` 已经稳定写出复活治理边界：repo 在 authoritative marker clearing、Layer-3 plugin refresh、`needsRefresh` / `/reload-plugins`、plan recovery 与 forked new-slug policy 上已明确展示 resurrection governance 的存在，说明决定“结束后留什么墓碑”与决定“旧对象怎样重新回到 current world”仍然是两层主权；因此 `artifact-family cleanup tombstone-governance` 仍不能越级冒充 `artifact-family cleanup resurrection-governance`。
+- `168` 已经稳定写出再赋权治理边界：repo 在 `deletePluginOptions()`、`setPluginEnabledOp()`、policy blocking、settings divergence guard 与 `copyPlanForFork()` 的 new-slug policy 上已明确展示 re-entitlement governance 的存在，说明决定“旧对象怎样回来”与决定“回来后恢复哪些旧资格”仍然是两层主权；因此 `artifact-family cleanup resurrection-governance` 仍不能越级冒充 `artifact-family cleanup re-entitlement-governance`。
+- `169` 已经稳定写出重配置治理边界：repo 在 `savePluginOptions()`、`getUnconfiguredOptions()`、`saveMcpServerUserConfig()`、`getUnconfiguredChannels()`、`needs-config` 与 `PluginOptionsFlow` / `ManagePlugins` 的 `configured / skipped / take effect` grammar 上已明确展示 reconfiguration governance 的存在，说明决定“对象回来后是否重新具备资格”与决定“它拿回资格后按哪组 current config 重新工作”仍然是两层主权；因此 `artifact-family cleanup re-entitlement-governance` 仍不能越级冒充 `artifact-family cleanup reconfiguration-governance`。
+- `170` 已经稳定写出重新激活治理边界：repo 在 `refreshActivePlugins()` 的 Layer-3 refresh primitive、`/reload-plugins` 的 take-effect contract、`useManagePlugins()` 的 `needsRefresh` discipline、`PluginInstallationManager` 的 mode-sensitive auto-refresh policy 与 `print.ts` 的 headless auto-consume path 上已明确展示 reactivation governance 的存在，说明决定“当前 config truth 是什么”与决定“这组 truth 何时真正接管 running session”仍然是两层主权；因此 `artifact-family cleanup reconfiguration-governance` 仍不能越级冒充 `artifact-family cleanup reactivation-governance`。
+- `171` 已经稳定写出就绪治理边界：repo 在 `MCPServerConnection` 的 `connected / pending / needs-auth / failed / disabled` 联合状态机、`pluginReconnectKey` 触发的 pending 初始化、`useMcpConnectivityStatus()` 与 `/mcp` health 的失败/鉴权显化、`ReadMcpResourceTool` 的 connected hard gate，以及 `toolExecution.ts` 对 connected client 的运行时降级路径上已明确展示 readiness governance 的存在，说明决定“新的 truth 何时接管 active world”与决定“这个 active world 何时真正可用”仍然是两层主权；因此 `artifact-family cleanup reactivation-governance` 仍不能越级冒充 `artifact-family cleanup readiness-governance`。
+- `172` 已经稳定写出连续性治理边界：repo 在 `useManageMCPConnections.ts` 的 auto-reconnect/backoff/give-up/cancel path、stale reconnect timer 清理、manual reconnect 与 toggle control、`toolExecution.ts` 对 connected client 的运行时 readiness 撤销，以及 `print.ts` 对 pending/failed SDK clients 的 pool-level re-init 上已明确展示 continuity governance 的存在，说明决定“这个 active world 现在能不能用”与决定“这种可用性在时间里怎样继续成立”仍然是两层主权；因此 `artifact-family cleanup readiness-governance` 仍不能越级冒充 `artifact-family cleanup continuity-governance`。
+- `173` 已经稳定写出恢复治理边界：repo 在 `handleRemoteAuthFailure()` 的 `needs-auth` demotion 与 auth cache、`reconnectMcpServerImpl()` 的 fresh keychain/cache reconnect、`performMCPOAuthFlow()` 的 silent/interactive 凭据闭环、`print.ts` 对 `mcp_reconnect` / `mcp_authenticate` / `mcp_oauth_callback_url` 的分层 choreography，以及 `McpAuthTool` / `MCPReconnect` 对 consumer-side result 的 discipline 上已明确展示 recovery governance 的存在，说明决定“旧线还要不要继续”与决定“什么新的证据足以重新宣布它已经回来”仍然是两层主权；因此 `artifact-family cleanup continuity-governance` 仍不能越级冒充 `artifact-family cleanup recovery-governance`。
 
 ## 本轮已净化的正文段
 
-本轮已经从 `bluebook/security/` 中移除统一模式的尾段元信息，覆盖两段主线：
+本轮已经从 `bluebook/security/` 中移除统一模式的尾段元信息，覆盖三段主线：
 
 1. `41-67`
    完成差异、恢复 signer、留痕、清理、词法与续租链
 2. `95-105`
    资格重签发、中间态、承诺上限、默认动作路由、错误路径禁令与投影协议链
+3. `154-168`
+   cleanup signer ladder 的尾段作者推进记忆已改写成源码锚定的苏格拉底自我约束，不再把下一候选、下一层目录计划或 future control-plane roadmap 混进正文
 
 这些章节现在只保留主论证、技术启示和结语，不再自带未来章节编排提示。
 
@@ -37,14 +45,14 @@
 - `41-49`: 完成差异控制面与宿主盲区显化
 - `50-67`: 恢复 signer、留痕、清理、词法与续租治理
 - `95-105`: 资格生命周期、承诺上限与投影协议
-- `147-167`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance -> artifact-family cleanup resurrection-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone/resurrection ladder
+- `147-173`: `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention governance -> retention enforcement honesty -> cleanup isolation -> artifact-family cleanup constitution -> artifact-family cleanup rationale -> artifact-family cleanup metadata -> artifact-family cleanup runtime-conformance -> artifact-family cleanup anti-drift verification -> artifact-family cleanup repair-governance -> artifact-family cleanup migration-governance -> artifact-family cleanup sunset-governance -> artifact-family cleanup tombstone-governance -> artifact-family cleanup resurrection-governance -> artifact-family cleanup re-entitlement-governance -> artifact-family cleanup reconfiguration-governance -> artifact-family cleanup reactivation-governance -> artifact-family cleanup readiness-governance -> artifact-family cleanup continuity-governance -> artifact-family cleanup recovery-governance` signer/governor/honesty/isolation/constitution/rationale/metadata/conformance/verifier/repair/migration/sunset/tombstone/resurrection/re-entitlement/reconfiguration/reactivation/readiness/continuity/recovery ladder
 
 ## 当前最值得继续深化的候选
 
-- 候选 `168`
-  方向：`artifact-family cleanup resurrection-governor signer` 仍不等于 `artifact-family cleanup re-entitlement-governor signer`
-  原因：`167` 已经证明旧对象回来需要单独的 resurrection authority；但对象回来，并不自动回答它是否恢复旧 identity、旧配置、旧 secrets、旧 scope 与旧可用资格。也就是：谁配决定 resurrected path、promise、receipt 是否重新获得旧 entitlement，这仍是另一层 re-entitlement governance 问题
-  证据起点：`src/utils/plugins/pluginOptionsStorage.ts` 的 `deletePluginOptions()`、`src/services/plugins/pluginOperations.ts` 的 `setPluginEnabledOp()`、`src/utils/plans.ts` 的 `copyPlanForFork()` 与 cleanup 线潜在的旧 path / old receipt 世界形成对照：repo 已展示对象可回来，但“回来后算不算原来的那个可用对象”仍是另一层主权
+- 候选 `174`（暂定名，尚未固化）
+  方向：`artifact-family cleanup recovery-governor signer` 仍可能不等于 `artifact-family cleanup reintegration-governor signer`
+  原因：`173` 已经证明新的凭据闭环、新的 reconnect result 与“已恢复”不是同一句弱话；但 `print.ts` 在 `mcp_reconnect` 成功后仍要单独 `registerElicitationHandlers()`、`reregisterChannelHandlerAfterReconnect()` 并写回 `appState` / `dynamicMcpState`，`McpAuthTool` 也要在 auth+reconnect 之后再把 real tools swap 回当前消费面。这暗示决定“recovered proof 已成立”与决定“恢复后的对象已经重新并回 current consumer world”仍可能是下一层 reintegration governance 问题
+  证据起点：`print.ts:3133-3204,3375-3455` 与 `McpAuthTool.ts:134-165` 共同表明：恢复后的 reinsertion / re-registration 还有独立 choreography，值得继续钉住但目前证据仍不足以固化章节名
 
 ## 持续约束
 

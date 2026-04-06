@@ -368,18 +368,24 @@ verifier 证明的是：
 
 ### 第四问
 
-`这章最值得继续逼问自己的地方是什么？`
+`我真正该继续约束自己的是什么？`
 
 是这句：
 
-`cleanup 线更适合哪一种 anti-drift verifier：source-of-truth test、atomic descriptor、live re-verification，还是三者组合？`
+`不要把一次 runtime receipt 或一次正确运行，误写成长期 anti-drift proof。`
 
-如果答案是组合，  
-那么下一层真正值得继续研究的，  
-就不再只是“verifier 要不要有”，  
-而是：
+当前更稳妥的说法只能是：
+repo 在别处已经明确展示 verifier culture，
+cleanup 线也已经暴露出 temporal gap、propagation gap 与 receipt gap。
 
-`verifier 的结构应如何分工，谁负责 source truth，谁负责 runtime dual-read，谁负责长期 drift receipt。`
+因此本章能成立的是：
+
+`this run conform != future runs stay honest`
+
+不能偷加的 stronger claim，
+则是：
+
+`cleanup 已经拥有正式、长期、自校正的 anti-drift verifier plane。`
 
 ## 13. 一条硬结论
 

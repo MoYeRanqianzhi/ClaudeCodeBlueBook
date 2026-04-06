@@ -374,21 +374,20 @@ warning 只是对 sunset governance 的可见输出之一，
 
 ### 第四问
 
-`这章最值得继续逼问自己的地方是什么？`
+`我真正该继续约束自己的是什么？`
 
 是这句：
 
-`cleanup 线未来最危险的 sunset object，到底是旧 path、旧 promise，还是旧 receipt semantics？`
+`不要把 migration 已经发生或 deprecation 已经可见，误写成 sunset authority 已经完整闭合。`
 
-如果答案不是一个而是多个，  
-那么真正成熟的 cleanup sunset governance  
-很可能还要继续拆成：
+当前更稳妥的说法只能是：
+旧对象已经可以进入过渡世界，
+也已经可能被 warning、timestamp、grace window 等机制显化；
+但这还不自动等于：
 
-1. path sunset
-2. promise sunset
-3. receipt sunset
+`谁配宣布它什么时候不再算当前 truth`
 
-三条不同 control plane。
+已经被正式签字。
 
 ## 12. 一条硬结论
 
