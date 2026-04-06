@@ -23,6 +23,7 @@
   - `navigation/README` 与 `api/README` 的分工也已进一步稳定：前者只负责“何时开侧门、下一层去哪”的 route map，后者只负责 Prompt residual reopen 的 host-facing truth 后续入口；结构 builder-facing 模板线则长期停留在 `guides/83 / 92` 这层，不在 `api/README` 被抬成新的并列前门。
   - Prompt residual reopen 责任线的真实编号锚点也应长期记住：当前树里更稳的承接顺序是 `api/66 -> api/69 -> api/72 -> api/78 -> playbooks/47 -> playbooks/50`；`67` 与 `71` 当前分别是治理与结构 sibling 页，后续只可作为旁证，不应再被误读成 Prompt 尾段对象链本身。
   - 这条真实编号链已经继续回写到目录入口与正文：`api/72` 现已和 `66 / 69 / 78 / 47 / 50` 一起站回 Prompt tail 责任线，`api/README`、`navigation/README` 与 `navigation/15` 也都已改成只在“高阶前门已判清”这一前提下开放这条侧门，避免 later maintainer 再从 sibling 页借词误入。
+  - 相邻 sibling 页的边界也已继续写死：治理 `67` 与结构 `71` 只可作旁证，不可再被 Prompt 尾段 route 借成续页；后续凡是看到 liability / reservation / release 这类词跨页越位，都应优先先问“这还是不是本页母线的尾段责任”，而不是直接沿编号继续下钻。
 - `api/78`、`69`、`playbooks/50`、`casebooks/49` 与 `46` 现已继续把 Prompt 稳态/纠偏协议页的第一页主语统一压回 Prompt canonical chain：
   - `Authority` 现在更明确重新承担 world-defining winner / restored request object / compiled request truth 的定义职责。
   - `Boundary` 现在更明确重新承担 stable prefix / lawful forgetting / cache-safe reuse 的定义职责。

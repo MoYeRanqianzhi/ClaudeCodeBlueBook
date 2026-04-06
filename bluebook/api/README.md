@@ -65,6 +65,8 @@
 - 想看状态消息与宿主消费：从 `09 -> 17 -> 19 -> 31`
 - 想看 Prompt 编译与宿主消费：从 `18 -> 21 -> 49 -> 54`
 - 想看 Prompt 在出监与稳态后怎样继续把 reopen 条件协议化：先按 `66 -> 69 -> 72 -> 78` 锁定 host-facing truth，再到 `../playbooks/47 -> ../playbooks/50` 看执行 verdict；这条线只回答 residual gate / threshold / liability，不重新定义 Prompt contract
+- 这条 Prompt 尾段线不要再借治理 `67` 的 liability 词或结构 `71` 的 reservation 词做主语；它们最多只配当 sibling 旁证。
+- 若问题已滑到 pricing release 或 writeback steady-state，就该离开 Prompt 线，分别回治理 `67` 或结构 `71`。
 - 想看治理外化真相链与宿主消费：从 `28 -> 32 -> 52`
 - 想看结构深层纠偏对象怎样继续被宿主消费：先过 `30 -> 39 -> 42`，再按 `83 -> 92` 下钻；不要从模板页第一次理解源码先进性
 - 想看扩展、MCP 和远程：从 `03 -> 12 -> 22`

@@ -69,6 +69,7 @@
   第一性原理收束，先判断高阶总结是否已经压回不可约约束。
 - 专题侧门只在主线已判清后开放：Prompt 残留线回答“出监或稳态后哪些 reopen 条件仍必须保留”，结构 `83 / 92` 回答“固定纠偏模板与精修模板”，都不代替 `09 / 05 / 15 / 41`。
 - 如果你已经确认 Prompt 主链成立，只剩“released / steady 之后怎样保留 residual reopen gate / threshold”，从 `66 -> 69 -> 72 -> 78 -> 47 -> 50` 进入。
+- Prompt 尾段只承接 residual reopen；治理 `67`（release）与结构 `71`（steady-state）只可互参，不可互借主语。
 - 如果你已经确认结构真相面的问题不在前门公式，而在“怎样把假 authority / merge / fail-closed / liability 压回固定顺序”，从 `41 -> 102 -> guides/83 -> playbooks/61 -> casebooks/54` 进入。
 - 如果你已经进入 refinement execution，且缺的是结构精修模板而不是第一性原理，从 `41 -> 102 -> guides/92 -> playbooks/67 -> casebooks/63` 进入。
 - 如果你在判断“高阶结论是否已经被压到最短动作链”，也只认三行：

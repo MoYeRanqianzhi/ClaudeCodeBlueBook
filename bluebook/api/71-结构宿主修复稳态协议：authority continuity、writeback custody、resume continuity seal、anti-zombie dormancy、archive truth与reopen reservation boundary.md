@@ -1,145 +1,103 @@
-# 结构宿主修复稳态协议：authority continuity、writeback custody、resume continuity seal、anti-zombie dormancy、archive truth与reopen reservation boundary
+# 结构宿主修复稳态协议：current-truth surface、writeback custody、lineage seal、anti-zombie dormancy 与 reopen reservation
 
-这一章回答五个问题：
+这一章也不是新的高阶前门，而是结构主链成立之后的一条结构 steady-side 旁证线：
 
-1. Claude Code 当前到底通过哪些正式对象让宿主、SDK、CI、评审与交接系统在结构 release correction 之后消费无人盯防延续、写回托管与 reopen reservation boundary。
-2. 哪些字段属于必须消费的结构 steady-state object，哪些属于 verdict 语义，哪些仍然不应被绑定成公共 ABI。
-3. 为什么结构稳态协议不应退回 pointer 健康感、telemetry 转绿与作者说明。
-4. 宿主开发者该按什么顺序消费这套结构 steady-state 规则面。
-5. 哪些现象一旦出现应被直接升级为 steady-state blocked、authority split detected 或 reopen reservation triggered，而不是继续宣布系统还在正常响应。
+- 它回答的不是“源码先进性为什么成立”，而是“在 steady 阶段，结构对象怎样保持唯一写回主语，并保留 structure-local reopen reservation”
 
-## 0. 关键源码锚点
+因此这页继续继承同一条结构真相梯度：
 
-- `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
-- `claude-code-source-code/src/utils/handlePromptSubmit.ts:430-517`
-- `claude-code-source-code/src/utils/task/framework.ts:77-248`
-- `claude-code-source-code/src/utils/sessionRestore.ts:435-490`
-- `claude-code-source-code/src/utils/conversationRecovery.ts:533-570`
-- `claude-code-source-code/src/state/onChangeAppState.ts:50-92`
-- `claude-code-source-code/src/utils/sessionState.ts:92-149`
-- `claude-code-source-code/src/services/api/sessionIngress.ts:57-170`
-- `claude-code-source-code/src/bridge/bridgePointer.ts:22-184`
-- `claude-code-source-code/src/cli/transports/WorkerStateUploader.ts:3-112`
-- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
-- `claude-code-source-code/src/cli/print.ts:5048-5067`
-- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:578-619`
+1. `contract`
+2. `registry`
+3. `current-truth surface`
+4. `consumer subset`
+5. `hotspot kernel`
+6. `mirror gap discipline`
 
-## 1. 先说结论
+## 0. 第一性原理
 
-Claude Code 当前并没有公开一份名为：
+结构稳态真正要宣布的不是：
 
-- `StructureRepairSteadyStateContract`
-
-的单独公共对象。
-
-但结构宿主修复稳态实际上已经能围绕六类正式对象稳定成立：
-
-1. `authority_continuity`
-2. `resume_continuity_seal`
-3. `writeback_custody`
-4. `anti_zombie_dormancy`
-5. `archive_truth`
-6. `reopen_reservation_boundary`
-
-更成熟的结构稳态方式不是：
-
-- 只看 pointer 还在
-- 只看 telemetry 重新转绿
-- 只看作者说“现在应该没问题了”
+- pointer 还在
+- telemetry 重新转绿
+- 作者说“现在应该没问题了”
 
 而是：
 
-- 围绕这六类对象消费结构真相面怎样在停止额外盯防之后，仍继续维持单一 authority、唯一写回主路径、可恢复 lineage 与 anti-zombie 能力
+- 当前结构对象已经可以停止额外盯防，但 structure-local reservation boundary 仍保留
 
-## 2. authority continuity：最小稳态对象
+所以这页最先要看的不是：
 
-宿主应至少围绕下面对象消费结构稳态真相：
+- `authority continuity` 或 `reopen reservation boundary` 已经出现
+
+而是：
+
+1. `current-truth surface` 是否仍由同一个 authority object 与 writer chokepoint 定义。
+2. `writeback custody` 是否仍围绕唯一主写路径成立。
+3. `lineage seal` 是否仍让 later 维护者沿同一对象链恢复。
+4. `anti-zombie dormancy` 是否仍只是 structure-local freshness witness，而不是新的世界主语。
+5. `archive truth / reopen reservation boundary` 是否仍只在 structure-local mirror gap 与 later reject path 层出现。
+
+## 1. 必须消费的结构 steady-side 对象
+
+### 1.1 `contract`
+
+宿主至少应消费：
+
+1. `structure_object_type`
+2. `structure_object_id`
+3. `contract_ref`
+
+### 1.2 `registry`
+
+宿主还必须消费：
+
+1. `registry_ref`
+2. `registry_generation`
+3. `steady_state_evaluated_at`
+
+### 1.3 `current-truth surface`
+
+宿主还必须消费：
 
 1. `authority_object_id`
-2. `authority_state_surface`
-3. `writer_chokepoint`
-4. `worktree_scope`
-5. `continuity_attested`
-6. `steady_state_evaluated_at`
+2. `authoritative_path`
+3. `current_write_path`
+4. `writer_chokepoint`
+5. `authority_continuity_attested`
 
-这些字段回答的不是：
+### 1.4 `consumer subset`
 
-- 当前哪个 pointer 看起来还最新
+宿主还必须消费：
 
-而是：
+1. `consumer_subset_ref`
+2. `bridge_pointer_scope`
+3. `projection_demoted`
 
-- 当前到底围绕哪个 authority object、以哪个结构边界进入了无人盯防稳态
+### 1.5 `hotspot kernel`
 
-## 3. resume continuity seal 与 writeback custody
+宿主还必须消费：
 
-结构宿主还必须显式消费：
+1. `resume_lineage_ref`
+2. `writeback_primary_path`
+3. `anti_zombie_evidence_ref`
+4. `stale_writer_blocked`
+5. `writeback_custody_attested`
 
-### 3.1 resume continuity seal
+### 1.6 `mirror gap discipline`
 
-1. `session_id_lineage`
-2. `worktree_resume_path`
-3. `bridge_pointer_scope`
-4. `resume_order_verified`
-5. `late_resume_blocked`
+最后才允许暴露：
 
-### 3.2 writeback custody
-
-1. `writeback_path`
-2. `worker_status`
-3. `external_metadata`
-4. `coalesced_patch_generation`
-5. `side_write_detected`
-6. `custody_attested`
-
-这说明宿主当前消费的不是：
-
-- 一次 reconnect 成功
-- 一串更漂亮的 telemetry
-
-而是：
-
-- `resume continuity seal + writeback custody` 共同组成的结构稳态证明
-
-## 4. anti-zombie dormancy、archive truth 与 reopen reservation boundary
-
-结构稳态还必须消费：
-
-### 4.1 anti-zombie dormancy
-
-1. `anti_zombie_projection`
-2. `orphan_session_resolved`
-3. `stale_writer_blocked`
-4. `dormancy_started_at`
-5. `reactivation_trigger_registered`
-
-### 4.2 archive truth
-
-1. `archive_pointer`
-2. `boundary_retirement_generation`
-3. `retired_surface_hash`
-4. `author_memory_not_required`
-5. `archive_truth_attested`
-
-### 4.3 reopen reservation boundary
-
-1. `recovery_boundary`
-2. `reopen_reservation`
+1. `archive_truth`
+2. `reopen_reservation_boundary`
 3. `reservation_owner`
 4. `threshold_retained_until`
 5. `reopen_required`
 
-这三组对象回答的不是：
+这里最重要的是：
 
-- 现在是不是还能继续连上
-- 之后如果有问题大家是不是再试一次
+- `archive truth / reopen reservation boundary` 只属于结构 local 的 later reject path，不得被 Prompt 借作 `Continuation` 的阈值词，也不得被治理借作通用 liability 主语
 
-而是：
-
-- zombie 风险是否已正式进入 dormant but recallable 的结构状态
-- archive 是否仍保留结构真相，而不是只剩目录美学
-- steady state 一旦失效，系统是否仍保留正式 reopen reservation boundary
-
-## 5. steady-state verdict：必须共享的稳态语义
+## 2. steady-state verdict：必须共享的结构 local 语义
 
 更成熟的结构宿主稳态 verdict 至少应共享下面枚举：
 
@@ -151,11 +109,13 @@ Claude Code 当前并没有公开一份名为：
 6. `archive_truth_missing`
 7. `reopen_reservation_triggered`
 
-这些 verdict reason 的价值在于：
+更值得长期复用的结构 reject trio 仍是：
 
-- 把“released 之后结构仍继续说真话”翻译成宿主、CI、评审与交接都能共享的结构 post-watch 语义
+1. `layout-first drift`
+2. `recovery-sovereignty leak`
+3. `surface-gap blur`
 
-## 6. 不应直接绑定为公共 ABI 的对象
+## 3. 不应直接绑定为公共 ABI 的对象
 
 宿主不应直接把下面内容绑成长期契约：
 
@@ -170,16 +130,16 @@ Claude Code 当前并没有公开一份名为：
 
 它们可以是稳态线索，但不能是稳态对象。
 
-## 7. 稳态消费顺序建议
+## 4. 稳态消费顺序建议
 
 更稳的顺序是：
 
-1. 先验 `authority_continuity`
-2. 再验 `resume_continuity_seal`
-3. 再验 `writeback_custody`
-4. 再验 `anti_zombie_dormancy`
-5. 再验 `archive_truth`
-6. 最后验 `reopen_reservation_boundary`
+1. 先验 `contract`
+2. 再验 `registry`
+3. 再验 `current-truth surface`
+4. 再验 `consumer subset`
+5. 再验 `hotspot kernel`
+6. 最后验 `mirror gap discipline`
 
 不要反过来做：
 
@@ -187,16 +147,16 @@ Claude Code 当前并没有公开一份名为：
 2. 不要先看监控转绿。
 3. 不要先看作者是否主观放心。
 
-## 8. 苏格拉底式检查清单
+## 5. 苏格拉底式检查清单
 
 在你准备宣布“结构已进入稳态”前，先问自己：
 
-1. 我现在保护的是 authority continuity，还是某个还没失效的入口。
-2. `resume continuity seal` 保住的是恢复 lineage，还是一次刚好成功的 reconnect。
-3. `writeback custody` 托管的是唯一写回主路径，还是最近没有再写坏文件。
-4. archive truth 保留下来的，是结构真相，还是一段更好看的归档说明。
-5. `reopen reservation boundary` 还在不在，如果不在，我是在进入稳态，还是在删除未来推翻当前状态的能力。
+1. 我现在保护的是 current-truth surface，还是某个还没失效的入口。
+2. `writeback custody` 托管的是唯一写回主路径，还是最近没有再写坏文件。
+3. `archive truth` 保留下来的，是结构真相，还是一段更好看的归档说明。
+4. `reopen reservation boundary` 还在不在，如果不在，我是在进入稳态，还是在删除未来推翻当前状态的能力。
+5. 如果把 pointer、telemetry 与作者说明都藏起来，later 维护者是否仍知道该如何继续结构判断。
 
-## 9. 一句话总结
+## 6. 一句话总结
 
-Claude Code 的结构宿主修复稳态协议，不是 release 之后的归档说明 API，而是 `authority continuity + resume continuity seal + writeback custody + anti-zombie dormancy + archive truth + reopen reservation boundary` 共同组成的规则面。
+Claude Code 的结构宿主修复稳态协议，不是 release 之后的归档说明 API，而是 `contract + registry + current-truth surface + consumer subset + hotspot kernel + mirror gap discipline` 在 steady 阶段的 structure-local 维持与 reservation 保留。
