@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`guides/README` 与 `playbooks/README` 现已继续把目录职责收口：
+  - 根 README 现已更明确只承担宪法前门和一级路由，不再自己展开 Prompt 执行多跳链。
+  - `guides/README` 现已更明确只给本目录起点，旧词汇桥接与跨目录映射统一回 `navigation/README`。
+  - `playbooks/README` 现已更明确只给执行阶段起点，不再在前门铺开完整多跳链。
+- 新的长期结论：
+  - 文档系统真正成熟时，宪法前门、目录起点和跨目录深链必须分治；一旦子目录 README 同时承担桥接、解释和深链，目录结构就会重新长回第二主线。
+  - 目录优化到了这一层，最值钱的不是“入口更多”，而是“每一层入口只承担一种导航粒度”。
 - `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41` 现已继续把苏格拉底审读前门收口：
   - Prompt 自校前门现已优先点名 `message lineage / projection consumer / protocol transcript / continuation qualification`，不再先从 `authority chain / compiled request truth` 起步。
   - 治理自校前门现已优先点名 `governance key / decision window / continuation pricing / durable-vs-transient cleanup`，不再先从 `trusted inputs / 最小可见面` 起步。
