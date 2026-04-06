@@ -264,5 +264,6 @@
 - direct-connect 的 prompt 面、transcript 模式与 raw SDK stream 差异边界
 - remote session 的持续状态面与 direct connect 的当前交互态边界
 - remote session 的持续事件流消费与 direct connect 的离散交互投影边界
+- remote session 内部不同消费者的投影厚度边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
