@@ -229,6 +229,19 @@ Claude Code 更高级的地方在于，它同样认真规定：
 
 - `lawful forgetting boundary` 是否仍然成立
 
+如果继续把这组对象再压成 `lawful forgetting witness ABI`，更稳的最小分层也只该剩：
+
+1. `required`
+   - `current work / next-step guard / required assets / rollback boundary / continue qualification / threshold liability`
+2. `derivable`
+   - 可以从同一 lineage 与同一 object graph 稳定重建，但不该单独担任 witness。
+3. `narrative-only`
+   - 只负责帮助人类快速理解，不负责改判 continue / reject。
+4. `forbidden-as-sole-witness`
+   - 只剩 prose、结论或情绪，而没有 object / guard / liability 绑定时，直接拒绝当作 lawful forgetting 成立证据。
+
+更硬一点说，compact / resume / handoff 共用的不是“摘要格式”，而是这组 witness ABI 能否仍被 parse 并复现同一条 continuation verdict。
+
 更准确地说，compact 之后系统至少还得保住一份最小 `continuation object`：
 
 1. `current work`

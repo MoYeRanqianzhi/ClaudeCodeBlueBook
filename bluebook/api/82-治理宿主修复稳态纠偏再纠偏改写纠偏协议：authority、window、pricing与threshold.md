@@ -238,6 +238,7 @@ Claude Code 当前并没有公开一份名为：
 7. `window_truth_missing`
 8. `classifier_cost_unpriced`
 9. `capability_liability_unbound`
+10. `pricing_authority_unbound`
 10. `threshold_rebinding_missing`
 
 这些 verdict reason 的价值在于：

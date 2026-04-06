@@ -517,3 +517,5 @@
 - 继续把 Prompt 哲学压回 admissibility 与 opposability：`03-设计哲学` 补出 `truth pluralism = one lineage, many projections; adjudication remains single-source`，`philosophy/33` 补出 Prompt 证据可采四问，`philosophy/63` 补出 `handoff` 的合法反对权，`philosophy/75` 把 continuation 推进到 `witness ABI` 可被 parse 并复现同一 verdict
 - 继续优化 later maintainer 首答路由：`guides/102` 显式降格旧别名为兼容检索词，`navigation/06` 补出 future maintainer 线的首答收口，`api/README` 补出 `consumer subset` 最小矩阵与 `21-30 / 46-50` 的完整 handoff 说明
 - 再往下一层压实治理对象：`philosophy/85` 现在把 `governance key` 进一步压成 `pricing-right signer / pricing-right lease`，`architecture/79` 继续补出 `forbidden_upcast_set / promotion_requires` 语义，`userbook/05` 新增 `consumer-truth ladder` 与 `boundary lifecycle` 的用户侧翻译
+- 继续把治理与 Prompt 对象压成共享 ABI：`api/82` 现在补出 `pricing_authority_unbound`，`api/85` 现在补出 `truth surface attestation packet`，`philosophy/81` 现在补出 `lawful forgetting witness ABI`
+- 继续把目录结构优化压成问题级首答路由：`navigation/04` 现在新增 later maintainer 常见问题的首答表，明确 `future maintainer / 证据梯子 / repo atlas / speaking-rights 争议` 各自先回哪层

@@ -2717,3 +2717,7 @@
 - `projection truth ladder` 现在可继续稳定复用为 `protocol -> continuation -> current -> event -> display` 五层；其中弱投影若要升格，必须补齐 `promotion_requires`，否则应直接落入 `forbidden_upcast_set`。
 - `governance key` 现在还应继续被读成 `pricing-right signer / pricing-right lease`：谁能定价、谁能见证价格、谁在 lease 失效后仍敢继续收费，这三件事属于同一主权对象链。
 - `userbook/05` 现在已经开始稳定翻译两组新增最小顺序：`consumer-truth ladder = protocol -> current -> event -> display` 与 `boundary lifecycle = continuation -> succession -> suspension -> retirement`；后续控制面首页若不能先说清自己承接的是哪一组，就仍停在对象解释页。
+- `pricing_authority_unbound` 现在应作为治理控制面的稳定 reject reason：如果只有 `settled_price` 而没有谁有资格签下这笔价格，治理链仍未真正闭环。
+- `truth surface attestation packet` 现在可继续稳定复用为：`display_truth_ref / event_truth_ref / current_truth_ref / protocol_truth_ref / surface_lossiness_digest / forbidden_promotion_set / event_replay_not_current_truth`。它的作用不是再多一层文书，而是防止 display/event truth 再次冒充 current/protocol truth。
+- `lawful forgetting witness ABI` 现在可继续稳定复用为四层：`required / derivable / narrative-only / forbidden-as-sole-witness`。compact、resume、handoff 共用的不是摘要格式，而是这组 witness ABI 能否仍被 parse 并复现同一 continuation verdict。
+- `navigation/04` 现在已开始承接 later maintainer 的问题级首答表；后续若某个 README 再次同时想回答 “future maintainer 为什么成立 / 证据梯子从哪开始 / repo atlas 先去哪 / 谁有首答权”，应优先回本页而不是再开新入口。
