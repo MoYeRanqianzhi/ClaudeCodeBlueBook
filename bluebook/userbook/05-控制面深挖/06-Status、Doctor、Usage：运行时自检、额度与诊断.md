@@ -10,6 +10,8 @@ Claude Code 要先解决的，不是“模型够不够聪明”，而是：
 
 这三件事分别投影成 `/status`、`/doctor`、`/usage`，但本质上都属于同一个控制面：运行时自检。
 
+如果你还想把 `/config`、`/cost`、`/stats`、`/statusline`、`/extra-usage` 这些邻接入口一起按 UI/控制面对象拆开，应继续看 `10-设置面板、诊断屏与运营命令：会内控制面的三层分工.md`。
+
 ## `/status` 解决的是宿主状态真相
 
 `/status` 不是 about 页，而是当前 CLI 会话的状态投影。

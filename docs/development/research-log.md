@@ -14,11 +14,21 @@
 - 本轮反例化动作: 已继续把三张控制面图的长期验证失真压成 `casebooks/73-75`，并通过 `navigation/40` 把“基础失真”与“验证失真”重新分层。
 - 本轮方法论动作: 已新增 `guides/102`，并同步升级 `navigation/07`、`navigation/15`、`navigation/41` 与 `guides/30`，把“公开镜像源码质量研究协议”补成稳定入口。
 - 本轮哲学收束动作: 已新增 `philosophy/87`，把源码质量线从“结构为什么先进”继续收束到“怎样判断先进才算稳”。
-- 主分支同步检查: `2026-04-06` 在当前研究 worktree 内再次执行 `git fetch origin main`；结果确认 `ORIGIN_MAIN=801fe80`，而本地 `main` 当前在 `389c4aa`，已领先 `origin/main` 37 个提交；同时 `origin/main` 已被当前研究分支包含，因此本轮无需改动主分支，也无需额外把远端主分支并入当前 worktree。
+- 本轮主线前推动作: 已继续更新 `03`、`06`、`09`，把三条母线的高阶判断从深层 `philosophy/` 前推到第一轮阅读路径。
+- 本轮入口前推动作: 已继续更新 `00`、`02`、`navigation/01`、`navigation/02`，把三句最高阶判断与公开镜像研究纪律前置给首次阅读者。
+- 本轮前门去记忆化动作: 已继续更新 `04`、`05`、`08` 与 `navigation/02`，把“当前空白 / 本轮抽出 / 后续补齐”式作者口吻改写成读者判断顺序、自检问题与稳定回链。
+- 本轮能力判断收束动作: 已把“能力存在 / 当前可见 / 当前被允许 / 对外承诺”四层显式前置到前门章节，避免功能表、能力表与产品承诺重新混写。
+- 本轮主线制度化动作: 已继续更新 `03`、`06`、`09`，把“设计哲学 / 第一性原理 / 三张控制面图”从高级观察继续收束为主线宪法、自我约束与读者固定判断顺序。
+- 本轮目录硬化动作: 已继续更新 `README`、`00-导读`、`00-总览`、`00-蓝皮书总览`、`navigation/03` 与 `09`，把 `09` 真正前置到一级阅读路径、去掉推荐链裸编号短写，并把兼容页进一步收回为跳转页。
+- 本轮术语收口动作: 已继续更新 `02`、`03`、`06`、`09`，让三条母线的正式表述统一以 `09` 为准，其余主线页只负责解释与应用。
+- 本轮专题入口收口动作: 已继续更新 `guides/README`、`navigation/README`、`philosophy/README`，明确 `guides/99-102`、`philosophy/84-87`、导航分流层都服从 `09` 的权威短语，而不是继续并列定义。
+- 本轮专题路由瘦身动作: 已继续把三个专题 README 里的过长跨目录细链压回 `navigation/README`，并在推荐入口层直接前置 `09`，减少“目录自己解释、自己分流、自己模板化”的角色混写。
+- 本轮深专题收束动作: 已继续更新 `navigation/03` 与 `07`，把旧深线接回新的主线/方法/验证/反例链，并把五个平面继续压回三句判断。
+- 主分支同步检查: `2026-04-06` 在当前研究 worktree 内再次执行 `git fetch origin main`；结果确认 `LOCAL_MAIN=328c29c`、`ORIGIN_MAIN=328c29c`，当前 `main...origin/main` 为 `0 0`；同时最新 `main` 已合入当前 research worktree，因此本轮继续只在 `.worktrees/claude-code-risk-analysis` 内推进。
 
 ### A091. 复活治理之后仍要继续分出再赋权治理：Claude Code 当前即便知道旧 cleanup 对象怎样回来，也还没有谁被正式授权决定它回来后恢复哪些旧资格
 
-- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `origin/main` 仍为 `801fe80`；本地 `main` 当前是 `389c4aa`，已超前远端 37 个提交，但这些变化不需要在当前 research worktree 里额外吸收。当前 research 分支已包含 `origin/main`，因此继续只在 `.worktrees/claude-code-risk-analysis` 内推进。
+- 本轮开始前再次完成主分支同步检查：执行 `git fetch origin main` 后确认 `LOCAL_MAIN=328c29c`、`ORIGIN_MAIN=328c29c`，`main...origin/main` 为 `0 0`；随后仅在当前研究 worktree 内合入最新 `origin/main`，冲突只出现在 `docs/development/research-log.md`，并已就地解决，不影响主分支与其他 worktree。
 - 本轮新增 `168-安全载体家族复活治理与再赋权治理分层`，核心判断是：`167` 已经证明 cleanup 线未来即便长出 resurrection governor，也只是在回答“旧对象怎样重新回到 current world”；但继续看 `pluginOptionsStorage.ts` 里 `deletePluginOptions()` 对 `pluginConfigs` 与 `pluginSecrets` 的删除、`pluginOperations.ts:setPluginEnabledOp()` 对 enabled state 的单独写入、`pluginPolicy.ts` 的 policy veto、`installedPluginsManager.ts` 的 settings divergence guard，以及 `plans.ts:copyPlanForFork()` 的 new-slug policy，会发现更深层的问题已经不再只是 “谁来让对象回来”，而是 “谁来决定它回来后恢复哪些旧资格”。也就是说，`artifact-family cleanup resurrection-governor signer` 仍不等于 `artifact-family cleanup re-entitlement-governor signer`。
 - 本轮最硬的源码证据有三组。第一组是 plugin re-entitlement 正例：`deletePluginOptions():210-267` 会在 last-scope uninstall 时清 `settings.pluginConfigs[pluginId]` 与 `secureStorage.pluginSecrets[pluginId]`，说明对象回来不等于旧配置和旧 secrets 自动回来；`setPluginEnabledOp():573-734` 又把 enabled state 恢复做成单独 settings write，说明 object return 与 enabled entitlement 也是两层主权。第二组是 stronger authority 正例：`pluginPolicy.ts:1-18` 明确把 `policySettings.enabledPlugins[pluginId] === false` 视为 block，`setPluginEnabledOp()` 在 enable 前直接挡住它；`installedPluginsManager.ts:820-861` 还写明只要 `settings.enabledPlugins` 与 `installed_plugins.json` diverge，就把对象视作 not-installed so the user can re-enable，说明 disk/materialized existence 仍不能偷签 effective entitlement。第三组是 identity entitlement 正例：`copyPlanForFork():234-258` 明确让内容回来时使用 new slug，而不是恢复 original slug，说明 resurrection 成立并不自动回答 old identity entitlement 是否恢复。这些正例共同说明 repo 并不把 “对象已经回来” 直接偷写成 “它还是原来那个被授权、被配置、被信任的对象”。
 - 本轮因此同步补入 `appendix/152-安全载体家族复活治理与再赋权治理分层速查表` 与 `source-notes/19-deletePluginOptions、setPluginEnabledOp与copyPlanForFork的再赋权治理边界`。这样 `168` 不再停留在 “resurrection != re-entitlement” 的抽象口号，而是第一次把 `resurrection decision / re-entitlement decision / positive control / cleanup requalification gap / governor question` 压成回查矩阵，并把 plugin / plan 两条正例与 cleanup 线未来的再资格赋予问题放进同一篇源码剖面里。
@@ -47,6 +57,130 @@
 - 本轮最硬的源码证据有四组。第一组是 model sunset 正例：`deprecation.ts:29-100` 不只记录 deprecated models，还明确维护 provider-specific retirement dates，说明 repo 已把 “何时正式退役” 当成正式治理对象；`useDeprecationWarningNotification.tsx:6-31` 与 `main.tsx:2872-2892` 则把这份退役真相投影到长期 warning surface。第二组是 migration-vs-sunset 双时钟正例：`useModelMigrationNotifications.tsx:7-33` 只在 migration timestamp 刚写入时做一次性通知，而 `deprecation.ts` / deprecation warning 负责持续表达旧模型何时 retired；这说明 “刚迁完” 与 “即将退役” 本来就不是一件事。第三组是 compatibility-not-yet-ended 正例：`migrateLegacyOpusToCurrent.ts:12-53` 即便已把 `userSettings` 改到 `opus` 并记录 `legacyOpusMigrationTimestamp`，`model.ts:552-554` 仍保留 `CLAUDE_CODE_DISABLE_LEGACY_MODEL_REMAP` 这样的 remap 开关，说明 migration 已发生但 sunset 仍未 hard-close。第四组是 plugin sunset 正例：`cacheUtils.ts:23-24,74-171` 通过 `.orphaned_at` 与 `CLEANUP_AGE_MS = 7 days` 明确给出 storage sunset；`orphanedPluginFilter.ts:1-79` 与 `main.tsx:2546-2568` 又通过 orphan exclusion cache 给出 visibility sunset。它们共同说明 repo 并不把 “旧版本已进入过渡世界” 直接偷写成 “旧版本何时不再算当前世界”。
 - 本轮因此同步补入 `appendix/149-安全载体家族迁移治理与退役治理分层速查表` 与 `source-notes/16-model deprecation、migration notifications与plugin orphan grace window的退役治理边界`。这样 `165` 不再停留在 “migration != sunset” 的抽象口号，而是第一次把 `migration decision / sunset decision / positive control / cleanup retirement gap / governor question` 压成回查矩阵，并把 model/plugin 两条退役治理正例与 cleanup 线未来的 compatibility-ending 问题放进同一篇源码剖面里。
 - 这也把下一候选自然推进到 `166`：既然 `165` 已经证明 sunset 主权不等于 migration 主权，那么下一层最值得继续追问的就不再只是 “谁来宣布兼容期结束”，而是 “结束之后还留下什么最小历史标记来约束未来读者”。也就是：`artifact-family cleanup sunset-governor signer` 仍不等于 `artifact-family cleanup tombstone-governor signer`，需要继续研究 `.orphaned_at`、retirement date、migration timestamp 这类 tombstone / marker grammar 如何与 cleanup 线未来的旧 path、旧 promise 与旧 receipt 世界对接。
+
+### A091. 当目录开始成熟后，最值钱的不是再写更长的推荐链，而是把跨目录细节重新收回专职导航层
+
+- 根索引、专题 README 与导航 README 一旦同时开始维护跨目录细链，目录就会重新退回“每一层都在做一点导航，也都在做一点解释”的混合态。
+- 所以本轮继续收口的关键不是删内容，而是恢复角色秩序：`09` 定义主线，`guides/` 模板化，`philosophy/` 解释，`navigation/` 负责跨目录细分流。
+- 这也意味着专题 README 的成熟标准应继续提高：不是“推荐链更长更全”，而是“推荐入口更短、更稳，并知道何时把读者交还给 `navigation/README`”。
+
+证据:
+
+- `bluebook/guides/README.md`
+- `bluebook/navigation/README.md`
+- `bluebook/philosophy/README.md`
+
+### A090. 主线宪法一旦建立，专题目录的第一职责就不再是“补充内容”，而是认清自己在宪法中的角色
+
+- `guides/` 的成熟，不在于它能不能再说一遍 Prompt 魔力、安全治理或源码质量，而在于它是否明确自己只负责把这些判断落成 builder-facing 模板与方法。
+- `philosophy/` 的成熟，不在于它能不能再长出更强的口号，而在于它是否明确自己只负责把 `09` 的三张控制面图继续压成第一性原理解释。
+- `navigation/` 的成熟，不在于它能不能总结得更像正文，而在于它是否明确自己只负责把读者送回正确入口，而不是自己重写判断。
+- 所以目录结构继续优化时，最值钱的不是再加 README 字数，而是继续减少“定义者 / 解释者 / 模板化者 / 分流者”之间的角色混写。
+
+证据:
+
+- `bluebook/guides/README.md`
+- `bluebook/navigation/README.md`
+- `bluebook/philosophy/README.md`
+
+### A089. 主线成熟后，最值钱的不是继续补同义句，而是给高阶判断建立唯一权威来源
+
+- 当 `09` 已经承担“三张控制面图”与三条母线的宪法层职责时，`02/03/06` 若继续各自再造一版 Prompt 线、治理线与源码质量线短语，读者实际接收到的仍然是多个竞争中的主线版本。
+- 所以这一轮更值钱的收口不是再增加解释，而是明确：`09` 负责定义，`02` 负责使用，`03` 负责解释设计哲学，`06` 负责第一性原理与苏格拉底反思上的论证。
+- 这也进一步说明蓝皮书后续的成熟度标准：不是“每一篇都把最强判断说一遍”，而是“整本书能不能让最强判断只有一个权威来源，并在不同章节里稳定复用”。
+
+证据:
+
+- `bluebook/02-使用指南.md`
+- `bluebook/03-设计哲学.md`
+- `bluebook/06-第一性原理与苏格拉底反思.md`
+- `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+
+### A088. 目录优化真正要防的不是入口不够多，而是入口彼此说不同的话
+
+- 当 `09` 已经被定义为“三张控制面总图”与主线宪法时，如果 `README` 和 `00-导读` 仍把它放在阅读末位，读者收到的就仍是两套顺序：正文说应当前置，入口说可以最后再看。
+- 同样，兼容页一旦继续保留自己的正文摘要，它就会重新制造第二套主张版本；读者并不会自然知道哪一页才是当前权威入口。
+- 所以这一轮目录优化更值钱的动作，不是继续增加入口数量，而是把一级入口统一到同一个判断顺序上：`09` 前置、`README` 负责目录协议、`00-导读` 负责主线引导、兼容页只负责兼容旧链接。
+
+证据:
+
+- `bluebook/README.md`
+- `bluebook/00-导读.md`
+- `bluebook/00-总览.md`
+- `bluebook/00-蓝皮书总览.md`
+- `bluebook/navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理.md`
+
+### A087. 当三张控制面图已经成立后，下一步最值钱的工作不是再长专题，而是让它们反过来约束主线
+
+- 一旦 `09`、`philosophy/84-87`、`guides/99-102`、`playbooks/77-79` 都已经成立，最容易继续自欺的方式就不再是“深文不够多”，而是让这些结论停留在高处，只在深层章节里成立，却不反过来约束 `03/06` 这样的主线文本。
+- 所以本轮更值钱的推进不是继续新建深文，而是把 `03` 改写成制度设计入口，把 `09` 明确写成设计宪法，把 `06` 继续补成针对蓝皮书自身的苏格拉底反思。这样读者第一次进入主线时，就不会把三张控制面图误读成“高级感总结”。
+- 这也说明一个更严格的蓝皮书写作纪律：高阶判断一旦形成，就必须反向约束主线表达、入口目录与正文/记忆分层；否则所谓“第一性原理”仍只是深层专题里的解释资源，而不是整本蓝皮书的写作法则。
+
+证据:
+
+- `bluebook/03-设计哲学.md`
+- `bluebook/06-第一性原理与苏格拉底反思.md`
+- `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+
+### A086. 当前最值钱的前门优化不是继续增加功能条目，而是强制把 existence、admission 与 promise 拆开
+
+- 当 `04/05/08/navigation/02` 已经承担第一次进入蓝皮书的阅读职责时，最容易复发的失真已经不是“深文还不够多”，而是读者重新把“源码里看见能力”“运行时当前可见”“治理当前允许”“产品已经承诺”混写成一层。
+- 这意味着前门章节的价值不在继续增长条目数，而在固定判断顺序：先问能力平面，再问公开度与成熟度，再问它服务的是世界进入模型、扩张定价，还是可继续重构的结构边界。
+- 同样，`navigation/02` 这种入口图也不应继续保留“当前空白 / 下一步补强”式作者口吻；它更稳的职责是把读者送回正确的自问顺序与回链，而不是把开发者自己的推进方向混进正文。
+- 这也进一步证明目录优化的关键不是继续造更多入口，而是保持 `navigation` 负责检索、主线负责判断、`docs/` 负责轮次推进与开发记忆的分层边界。
+
+证据:
+
+- `bluebook/04-公开能力与隐藏能力.md`
+- `bluebook/05-功能全景与API支持.md`
+- `bluebook/08-能力全集、公开度与成熟度矩阵.md`
+- `bluebook/navigation/02-能力、API与治理检索图.md`
+
+### A085. 当入口与主线都已前推后，最值钱的不是再长专题数量，而是防止深专题路由重新掉回旧词汇和旧世界观
+
+- 一旦 `00/02/navigation/01/02` 与 `03/06/09` 都已经前推了三句高阶判断，下一层最容易失真就转移到 `navigation/03` 与 `07` 这种“读者以为自己已经进入深层”的位置。这里如果还沿用旧 Prompt 术语、旧预算器表述和旧源码质量路由，读者就会在深专题里重新掉回旧世界观。
+- 这意味着深专题导航不能再只堆旧细拆列表，而必须先把 Prompt 线接回 `84/82/99/77/73`，治理线接回 `85/83/100/78/74`，源码质量线接回 `76/86/87/102/84/79/75`，再允许读者补旧一层 architecture / philosophy 细拆。
+- 同样，`07` 这种中主线文档也不能继续只停在“五个平面”，而必须继续说明：这五个平面最后仍服从三句判断，而且公开镜像下的源码质量读法应先服从证据梯度，再谈热点文件与目录体感。
+
+证据:
+
+- `bluebook/navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理.md`
+- `bluebook/07-运行时契约、知识层与生态边界.md`
+- `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`
+- `bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md`
+- `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`
+
+### A084. 当主线已成熟后，最值钱的不是再长深层专题，而是防止入口层把读者重新送回旧故事
+
+- 一旦 `03/06/09`、`philosophy/84-87`、`guides/99-102`、`playbooks/77-79` 都已经成立，读者最容易重新掉回去的旧故事就不在深层，而在入口层：打开 `00`、`02`、`navigation/01`、`navigation/02` 时，仍然可能先把 Claude Code 读成“功能很多、Prompt 很强、安全很严、代码很多”。
+- 所以入口层的职责现在必须升级：不只负责目录与阅读顺序，还要先把三句高阶判断压给读者。否则深层再完整，第一次进入时仍会先形成旧世界观，再被后续章节艰难纠偏。
+- 这也说明目录结构的一个稳定规则应继续固定：主线负责最短判断，专题负责把判断做实，入口负责确保读者先带着正确判断进入主线。入口层如果只保留功能清单和章节顺序，就会持续把高阶判断漏掉。
+
+证据:
+
+- `bluebook/00-导读.md`
+- `bluebook/02-使用指南.md`
+- `bluebook/navigation/01-第一性原理阅读地图.md`
+- `bluebook/navigation/02-能力、API与治理检索图.md`
+
+### A083. 当三条母线都已经成熟后，最值钱的不是继续长专题，而是把它们前推回主线入口
+
+- 一旦 `philosophy/84-87`、`guides/99-102`、`playbooks/77-79` 都已经成立，最危险的失败方式就不再是缺少深层内容，而是这些内容仍只停在深层专题里，导致读者第一轮阅读时重新把 Claude Code 误读成“Prompt 更强、安全更严、代码更漂亮”。
+- 这意味着主线应继续承担一个更高阶职责：不只告诉读者“三张控制面图是什么”，还要告诉读者这三条线各自的判断标准是什么。也就是：
+  - Prompt 线是否仍让主权链、历史链与继续链对同一个世界保持诚实。
+  - 治理线是否仍让一切扩张按同一价格秩序合法进入当前世界。
+  - 源码质量线是否仍让复杂度中心合法、边界可证、下一次重构仍有路。
+- 所以本轮继续前推 `03`、`06`、`09` 是比继续补深层专题更值钱的动作：`03` 负责把源码质量从“结构赞美”改写成“复杂度治理”，`06` 负责把三条母线压成三句对称判断，`09` 负责把判断标准直接写回主线总图。
+- 这也意味着蓝皮书目录结构的下一条稳定规则应继续成立：深层专题负责把对象和方法做实，主线负责把这些对象重新压成最短可迁移判断；不能让所有高阶结论都滞留在深层 README / philosophy / guides 里。
+
+证据:
+
+- `bluebook/03-设计哲学.md`
+- `bluebook/06-第一性原理与苏格拉底反思.md`
+- `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
+- `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`
+- `bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md`
+- `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`
 
 ### A081. 源码质量线继续深化后，最值钱的补层不是再赞美结构，而是把“判断标准”本身升级为第一性原理
 
