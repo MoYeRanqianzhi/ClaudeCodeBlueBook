@@ -16,12 +16,12 @@
 
 如果把安全前门继续压成最短公式，也只剩三条：
 
-1. `decision window`
-   - 当前扩张还配不配继续
-2. `signer + ledger + cleanup`
-   - 谁配宣布已经没事了
-3. `failure semantics`
-   - 哪种失败该 deny、哪种该 rollback、哪种该 cleanup、哪种必须 escalate
+1. `governance key -> externalized truth chain -> typed ask`
+   - 谁配改边界、谁配宣布当前治理真相、哪些扩张必须先协商
+2. `decision window -> continuation pricing`
+   - 当前扩张还配不配继续，继续是否仍值得付费
+3. `durable-transient cleanup`
+   - 谁配宣布已经没事了，哪些 signer / ledger / cleanup 结果词只配当投影
 
 如果一个安全判断还压不回这三条，它就还停在规则堆或工具堆层。
 
