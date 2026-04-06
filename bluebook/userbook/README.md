@@ -56,6 +56,8 @@
   [05-控制面深挖/32-Remote%20Control%20failed%E3%80%81disconnect%E3%80%81replBridgeEnabled=false%20%E4%B8%8E%20remoteControlAtStartup=false%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E6%95%85%E9%9A%9C%E6%8F%90%E7%A4%BA%E3%80%81%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%81%9C%E6%9C%BA%E4%B8%8E%E9%BB%98%E8%AE%A4%E7%AD%96%E7%95%A5%E5%9B%9E%E9%80%80%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%85%B3%E9%97%AD.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/32-Remote%20Control%20failed%E3%80%81disconnect%E3%80%81replBridgeEnabled=false%20%E4%B8%8E%20remoteControlAtStartup=false%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E6%95%85%E9%9A%9C%E6%8F%90%E7%A4%BA%E3%80%81%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%81%9C%E6%9C%BA%E4%B8%8E%E9%BB%98%E8%AE%A4%E7%AD%96%E7%95%A5%E5%9B%9E%E9%80%80%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%85%B3%E9%97%AD.md)
 - 分清 bridge 的断开、退出与恢复轨迹为什么不是同一种收口：
   [05-控制面深挖/33-Disconnect%20Dialog%E3%80%81Perpetual%20Teardown%E3%80%81bridge%20pointer%20%E4%B8%8E%20--continue%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E6%96%AD%E5%BC%80%E3%80%81%E9%80%80%E5%87%BA%E4%B8%8E%E6%81%A2%E5%A4%8D%E8%BD%A8%E8%BF%B9%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%94%B6%E5%8F%A3.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/33-Disconnect%20Dialog%E3%80%81Perpetual%20Teardown%E3%80%81bridge%20pointer%20%E4%B8%8E%20--continue%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E6%96%AD%E5%BC%80%E3%80%81%E9%80%80%E5%87%BA%E4%B8%8E%E6%81%A2%E5%A4%8D%E8%BD%A8%E8%BF%B9%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%94%B6%E5%8F%A3.md)
+- 分清 bridge 的 stale pointer、过期环境与瞬态重试为什么不是同一种恢复失败：
+  [05-控制面深挖/34-No%20recent%20session%20found%E3%80%81Session%20not%20found%E3%80%81environment_id%20%E4%B8%8E%20try%20running%20the%20same%20command%20again%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%20stale%20pointer%E3%80%81%E8%BF%87%E6%9C%9F%E7%8E%AF%E5%A2%83%E4%B8%8E%E7%9E%AC%E6%80%81%E9%87%8D%E8%AF%95%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%81%A2%E5%A4%8D%E5%A4%B1%E8%B4%A5.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/34-No%20recent%20session%20found%E3%80%81Session%20not%20found%E3%80%81environment_id%20%E4%B8%8E%20try%20running%20the%20same%20command%20again%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%20stale%20pointer%E3%80%81%E8%BF%87%E6%9C%9F%E7%8E%AF%E5%A2%83%E4%B8%8E%E7%9E%AC%E6%80%81%E9%87%8D%E8%AF%95%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%81%A2%E5%A4%8D%E5%A4%B1%E8%B4%A5.md)
 - 初始化仓库规范、安装 CLI 与开工环境：
   [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
 - 切换账户、理解隐私与升级资格：
@@ -194,5 +196,6 @@
 - bridge 的状态词、恢复厚度与动作上限边界
 - bridge 的故障提示、当前停机与默认回退边界
 - bridge 的断开、退出与恢复轨迹边界
+- bridge 的 stale pointer、过期环境与重试语义边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
