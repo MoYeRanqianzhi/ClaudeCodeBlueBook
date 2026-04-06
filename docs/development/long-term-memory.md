@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/35 / 37 / 78 / 79` 已继续把三条执行链内部补到更对称的状态：
+  - `35` 现已把 Prompt 宿主验收从单纯 `compiled request truth` 压到 `message lineage + projection consumer + continue qualification`。
+  - `37` 现已把结构宿主验收补进 `event stream / state writeback` 分层、`stale worldview` 与 `ghost capability` 驱逐，不再只停在恢复顺序与 anti-zombie 的旧一层。
+  - `78` 现已把治理验证从 `trusted inputs` 抬到 `governance key + externalized truth chain + durable vs transient`。
+  - `79` 现已把 one writable present 验证补到 `event-stream-vs-state-writeback / stale-worldview / ghost-capability`，与 `37 / 84 / 101` 对齐。
+- 新的长期结论：
+  - 三条执行链真正成熟时，不只要在入口层对称，还要在验收页和长期验证页里对称地携带各自最硬的新对象；否则会出现“链条对称、语言不同代”的伪整齐。
+  - Prompt 线真正成熟时，`compiled request truth` 不应脱离 `message lineage` 单独出现；治理线真正成熟时，`trusted inputs` 不应脱离 `governance key` 单独出现；结构线真正成熟时，`single-writer authority` 不应脱离 `event stream / state writeback` 与 `stale worldview` 单独出现。
 - `guides/30 / guides/31 / guides/99 / playbooks/30 / playbooks/36 / playbooks/77` 已继续把页面可见标题与正文对象链对齐：
   - Prompt 线标题现在显式前置 `message lineage`、`projection boundary` 与 `lawful forgetting`。
   - 治理线标题现在显式前置 `governance key`、`durable assets` 与 `continuation qualification`。
