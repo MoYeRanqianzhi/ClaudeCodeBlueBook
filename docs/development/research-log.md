@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 README judgment-first 动作: 已继续更新 `guides/README`、`philosophy/README`、`playbooks/README` 与 `casebooks/README`，把 `目录分层 / 推荐入口 / 使用方式 / 适合什么时候读 / 从 X 到 Y` 这类库存页与路径表语气收回到 `什么时候进来 / 如果你只先判断一件事 / 如果失真发生在 / 这里不回答什么`。
+- 本轮目录层判断加固: 当前最值钱的目录优化已继续从“去掉旧 visible root”推进到“去掉路径表语法”；更成熟的 README 不该再像调度台，而应先说明读者正在判断什么、最常怎样误判、以及这里不负责回答什么。
+- 本轮并行 Agent 经验: Prompt / 治理 / 结构三条侧线继续提供了有效的 front-door debt 信号，但仍有一条侧线因 `429` 限流中断；后续并行多 Agent 仍值得保留，只是要继续把任务压窄到单一入口页或单一目录 README。
 - 本轮深导航 judgment-map 动作: 已继续更新 `navigation/03 / 07 / 41 / 46`，把 `进入顺序 / 推荐阅读链 / 规范锚点 / 证明页 / 共同次序` 这类路线卡句法收回到 `误判校正入口 / 先问 / 成立证据 / 补充证据 / 方法判据 / 迁移门槛`，并把结构线 visible root 继续从 `authority object` 收回到 `current-truth surface`。
 - 本轮导航层判断加固: 当前最值钱的导航优化不在继续补链，而在把链接从“阅读序列”降为“成立证据”；更成熟的前门不是告诉读者按什么顺序点开，而是先说明哪种误判需要哪组证据来纠正。
 - 本轮 judgment-map 收口动作: 已继续更新 `navigation/01 / 15 / 41`，把 `最短反查链 / 稳定阅读顺序 / 三种入口问题 / Prompt魔力` 这类偏路线卡的前门语法收回到 `规范锚点 / 证明页 / 三类审题 / 请求装配控制面 / 当前真相保护`，让三页更像失稳前判题页，而不是阅读路线卡。
