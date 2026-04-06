@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/67 / 68 / 69 / 70` 已继续把三条“修复后段执行链”拉到和长期验证页同代：
+  - `67` 现已把结构精修执行从 `single-source / fresh merge / anti-zombie / transport` 压到 `per-host authority width / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
+  - `68` 现已把 Prompt 精修纠偏执行从 `compiled request lineage / registry-boundary custody` 压到 `message lineage / projection consumer / continuation object / continuation qualification`。
+  - `69` 现已把治理精修纠偏执行从 `authority chain / ledger-window surface / ingress lineage` 压到 `governance key / externalized truth chain / durable assets vs transient authority`。
+  - `70` 现已把结构精修纠偏执行从 `authority surface / fresh merge / anti-zombie` 压到 `state writeback / freshness gate / stale-worldview / ghost-capability`。
+- 新的长期结论：
+  - 结构线真正成熟时，不只要证明 single-source，还要把 `event stream` 不能篡位 `state writeback`、`freshness gate` 先于 continuity、`stale worldview` 与 `ghost capability` 被正式驱逐写进 card 字段与 reject 名。
+  - Prompt 线真正成熟时，`message lineage` 必须压过 `compiled request lineage` 这类局部实现键；display、protocol、handoff 都应被写成同一条 lineage 的 projection consumer，而不是各自的真相源。
+  - Prompt 继续资格真正成熟时，正文应优先写 `continuation object + continuation qualification`，把 `tool contract`、`repair attestation`、`compiled request hash` 降回证据面，而不是继续让它们盖过主对象。
+  - 治理线真正成熟时，`governance key -> externalized truth chain` 必须压过 `authority source / single truth chain / permission mode`；宿主只消费外化真相，不通过事件回放自行拼当前治理状态。
+  - 治理恢复真正成熟时，正文必须显式区分 `durable assets` 与 `transient authority`；resume / reopen 恢复的是资产，不是旧主权的免费续租。
 - `playbooks/62 / 63 / 64` 已继续把三条“改写纠偏链”拉到和更后段页面同代：
   - `62` 现已把 Prompt rewrite-correction 从旧的 `compiled request truth / section registry` 语法压到 `message lineage / projection consumer / continuation object`。
   - `63` 现已把治理 rewrite-correction 从 `authority chain / authority source` 压到 `governance key / externalized truth chain / durable-vs-transient`。
