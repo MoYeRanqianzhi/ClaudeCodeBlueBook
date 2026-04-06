@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `navigation/03`，把多段 `补充证据` 长清单压缩成少量 `成立证据 + 需要补证时再下钻`，并把实践入口收紧成最小起点，继续把深专题前门从二级索引页收回成 judgment-first 入口页
 - 继续更新 `guides/README`、`philosophy/README`、`playbooks/README` 与 `casebooks/README`，把 `目录分层 / 推荐入口 / 使用方式 / 适合什么时候读 / 从 X 到 Y` 这类库存页与路径表语气收回到 `什么时候进来 / 如果你只先判断一件事 / 如果失真发生在 / 这里不回答什么`，继续把目录 README 压成 judgment-first 入口页
 - 继续更新 `navigation/03`、`navigation/07`、`navigation/41` 与 `navigation/46`，把 `进入顺序 / 推荐阅读链 / 规范锚点 / 证明页 / 共同次序` 这类 route-map 语法继续收回到 `误判校正入口 / 先问 / 成立证据 / 补充证据 / 方法判据 / 迁移门槛`，并把结构线 visible root 继续从 `authority object` 收回到 `current-truth surface`
 - 继续更新 `navigation/01`、`navigation/15` 与 `navigation/41` 的前门语法，把 `最短反查链 / 稳定阅读顺序 / 三种入口问题 / Prompt魔力` 这类路线卡或旧前门词收回到 `规范锚点 / 证明页 / 三类审题 / 请求装配控制面 / 当前真相保护`，继续把导航页压成 judgment map 而不是 route map
