@@ -6,6 +6,10 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 Prompt 宪法化动作: 已继续更新 `09`、`navigation/03` 与 `guides/99`，把 Prompt 线更明确收成 `Request Surface Constitution`，并把 system sections、tool descriptions、agent prompts、attachment deltas 与 continuation contract 的关系继续压成可定义、可检索、可审读的三层分工。
+- 本轮治理矩阵化动作: 已继续更新 `guides/28`、`guides/100` 与 `playbooks/78`，把统一定价治理从“抽象价格秩序”继续推进到 `默认失败语义 / threshold trigger / escalation target / headless divergence / durable assets / transient authority` 这类可执行矩阵。
+- 本轮目录结构判断加固: 已继续更新 `bluebook/README` 与 `navigation/04`，把目录职责进一步收口成证据梯度：`bluebook/00-09 -> philosophy -> architecture -> api -> guides -> playbooks -> casebooks -> navigation -> docs`；当前最值钱的目录优化不是再缩短入口，而是让“判断、对象、合同、模板、verdict、distortion、memory”不再混层。
+- 本轮并行 Agent 经验: Prompt 与治理侧线给出了有效落点建议，结构侧线再次被 `429` 限流中断；后续并行仍值得保留，但主线应继续坚持“侧线补强、不阻塞当前批次提交”。
 - 本轮正文深化动作: 已继续更新 `philosophy/84 / 85 / 86 / 87` 与 `navigation/07 / 15 / 41 / 46`，把 Prompt 魔力、安全与省 token 同构、当前真相保护、合法复杂度中心与宿主迁移顺序进一步压回第一性原理、反证式苏格拉底追问与更硬的源码证据，不再让这些页继续承担“最近稳定下来 / 这一轮该怎么整理”式元叙事。
 - 本轮并行 Agent 结论吸收: Prompt 侧线已进一步确认真正起作用的是 `system sections + tool descriptions + agent prompts + attachment deltas + compact/resume contract`，治理侧线已进一步确认 `persist+preview / compact / halt` 与 `allow / ask / deny` 属于同一扩张定价链，结构侧线已进一步确认旧对象的合法命运应被压成 `invalidate / relink / adopt / projection` 四类动作。
 - 本轮目录结构判断加固: 当前最值钱的结构优化已不只是让 README 同构，而是把 `philosophy / architecture / api / guides / playbooks / casebooks / navigation / docs` 明确写成一条证据梯度；目录成熟的标志不是入口更短，而是“判断、对象、合同、模板、verdict、distortion、judgment map、memory”不再混写。

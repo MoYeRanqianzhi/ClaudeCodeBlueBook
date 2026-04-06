@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `09 / navigation/03 / guides/99` 现已继续把 Prompt 线收成 `Request Surface Constitution`：
+  - `09` 现在更明确把第一张图的最短制度名写成 `Request Surface Constitution`，用于指代 system sections、tool descriptions、agent prompts、attachment deltas 与 continuation contract 共同构成的 request-facing 宪法层。
+  - `navigation/03` 现在把它固定成 Prompt 深线的检索短名；`guides/99` 现在把它继续压成可审读对象，而不是只停在 Prompt 文案与 lineage/section/boundary 的散点问题。
+- `guides/28 / guides/100 / playbooks/78` 现已继续把治理线收成矩阵：
+  - `guides/28` 现在更明确承担失败语义与升级阈值矩阵的母版列定义。
+  - `guides/100` 现在更明确承担治理线的解释型矩阵，把 `governance key / typed ask / visibility / externalization / continuation pricing / durable-transient cleanup` 分别写成对象级失败语义。
+  - `playbooks/78` 现在更明确承担执行型 verdict 矩阵，把 drift 映射到 `reject / degrade / halt / human-fallback / abort`。
+- 新的长期结论：
+  - Prompt 线真正成熟时，不应再把 system prompt 当唯一主角；最稳的主语应是 `Request Surface Constitution`，即多种 request-facing surfaces 如何共同构成模型可见世界。
+  - 治理线真正成熟时，不应只讲“统一定价”；它最终必须交出失败语义与升级阈值矩阵，否则读者会知道原则，却不知道何时 reject、何时 degrade、何时 halt、何时交还给人。
+  - 目录结构真正成熟时，不是入口更短，而是证据梯度更清楚；一旦总论页塞矩阵、导航页写正文、案例页写修复、记忆页抢判断，目录就会重新退回混层。
 - `philosophy/84 / 85 / 86 / 87` 与 `navigation/07 / 15 / 41 / 46` 现已继续向“第一性原理 + 反证 + 失稳前追问”收口：
   - Prompt 线现已更明确把真正的 request surface 写成 `system sections + tool descriptions + agent prompts + attachment deltas + compact/resume contract`，不再默认把 system prompt 当成唯一主角。
   - Prompt 魔力现已更明确被写成 world admission、section boundary 与 continuation qualification 的编译秩序，而不是措辞强度。

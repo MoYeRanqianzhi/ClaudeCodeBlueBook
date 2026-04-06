@@ -125,6 +125,26 @@
 4. 以为看见更多工具就等于系统更强。
 5. 以为 fail-closed 一定比资产分型更成熟。
 
+## 3.1 失败语义与升级阈值矩阵
+
+如果这条控制面已经成熟，它最终必须能被压成一张治理矩阵，而不是只剩抽象解释：
+
+| 控制对象 | 默认失败语义 | threshold trigger | escalation target | headless divergence | durable assets kept | transient authority cleared |
+|---|---|---|---|---|---|---|
+| `governance key` | `reject` | 低信任来源试图扩边界 | human / managed authority | headless 直接拒收 | managed config / trusted env | project-scoped expansion |
+| `typed ask` | `ask` | cheap path 不足以定案 | human reviewer / host | 无交互时退 `deny` 或 `abort` | request identity / evidence refs | implicit auto-allow |
+| `visibility / externalization` | `degrade` 或 `persist+preview` | 高体积对象继续霸占主席位 | runtime-controlled externalization | headless 只保最小 preview | durable refs / preview marker | raw bulky payload |
+| `continuation pricing` | `halt` 或对象升级 | decision gain 继续下降 | human handoff / object upgrade | headless 更早停机 | compact summary / next-step object | default-continue illusion |
+| `durable / transient cleanup` | `cleanup-before-resume` | resume 试图续租旧 mode、旧 grant、旧可见集 | runtime cleanup gate | headless 不做情绪化续租 | durable assets / stable refs | transient authority bundle |
+
+更短地说，治理成熟度最终要能回答：
+
+1. 哪类 drift 默认拒收。
+2. 哪类 drift 允许降级而不允许扩权。
+3. 哪类 drift 必须升级给人。
+4. 哪些 durable assets 可以带过下一轮。
+5. 哪些 transient authority 必须在升级或恢复前先清掉。
+
 ## 4. 失稳时的回修顺序
 
 当这组问题里有任何一个答不清时，优先做下面四步：

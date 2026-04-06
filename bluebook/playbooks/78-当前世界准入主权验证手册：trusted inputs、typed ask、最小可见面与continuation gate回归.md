@@ -67,6 +67,28 @@
 5. `durable/transient cleanup continuity`
    - resume 是否只恢复 durable assets，而不会把旧 mode、旧 grant、旧可见集整包续租。
 
+## 3.1 回归 / 拒收矩阵
+
+把 drift 写成正式 verdict，而不是散装症状：
+
+| drift | verdict | threshold trigger | 最小证据 | 回退动作 | 是否冻结 capability expansion | 是否必须重建 `decision window / cleanup` |
+|---|---|---|---|---|---|---|
+| `low_trust_source_expanded_authority` | `reject` | 低信任输入改边界 | source chain / applied config | rollback to trusted source | 是 | 是 |
+| `typed_ask_collapsed_to_modal` | `degrade` 或 `reject` | ask 不再是 typed transaction | request object / winner evidence | rebuild ask path | 是 | 视情况而定 |
+| `context_usage_detached_from_window` | `degrade` | token 图表脱离当前窗口 | window ref / pending action | rebuild window projection | 否 | 是 |
+| `continuation_pricing_defaulted` | `halt` | 继续失去 stop condition | continuation ref / decision gain | stop and re-qualify | 是 | 是 |
+| `transient_authority_resumed` | `reject` | 恢复时续租旧 authority | durable/transient split evidence | cleanup then resume | 是 | 是 |
+| `failure_semantics_flattened` | `human-fallback` | 全部 drift 被写成同一种情绪 | verdict mismatch | escalate to reviewer | 视情况冻结 | 视情况重建 |
+| `automation_no_longer_revocable` | `abort` 或 `human-fallback` | 自动化失去合法退场路径 | automation lease / killswitch evidence | kill automation path | 是 | 否 |
+
+更稳的纪律是：
+
+1. `reject` 用于主权泄漏与旧 authority 续租。
+2. `degrade` 用于还能保最小合法形态、但不能继续免费扩张的情形。
+3. `halt` 用于 continuation 已无正式价格。
+4. `human-fallback` 用于 failure semantics 已失去资产分型。
+5. `abort` 用于自动化路径已无法合法撤销。
+
 ## 4. 直接拒收条件
 
 出现下面情况时，应直接拒收：
