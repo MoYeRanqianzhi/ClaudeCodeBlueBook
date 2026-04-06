@@ -1,14 +1,6 @@
-# 如何用苏格拉底诘问法审读one writable present：authority object、freshness gate与ghost capability
+# 如何用苏格拉底诘问法审读one writable present：current-truth surface、freshness gate与ghost capability
 
-这一章不再解释源码先进性为什么成立，而是把 `architecture/84` 与 `philosophy/86` 沉成一套 builder-facing 审读问题序列。
-
-它主要回答五个问题：
-
-1. 怎样避免把源码先进性重新写回目录美学与小文件焦虑。
-2. 怎样按固定顺序审读 `authority object / per-host authority width`、`event-stream-vs-state-writeback`、`freshness gate`、`recovery asset non-sovereignty` 与 `ghost capability eviction`。
-3. 怎样判断一个 runtime 是否真的保住了 one writable present。
-4. 怎样识别那些看起来更整齐、实际更会制造第二真相的坏改写。
-5. 怎样用苏格拉底式追问避免把这些问题重新写成结构外观清单。
+这篇把 `architecture/84` 与 `philosophy/86` 压成一组失稳前审读问题。
 
 ## 0. 代表性源码锚点
 
@@ -106,7 +98,7 @@
 4. 以为 build / release shaping 只是打包尾巴。
 5. 以为 later maintainer 的问题属于团队文化，不属于结构设计。
 
-## 4. 更好的迭代顺序
+## 4. 失稳时的回修顺序
 
 当这组问题里有任何一个答不清时，优先做下面四步：
 
@@ -142,7 +134,7 @@ fail_closed_branch:
 
 ## 6. 苏格拉底式检查清单
 
-在你准备继续“整理结构”前，先问自己：
+准备继续“整理结构”前，先问：
 
 1. 我现在改善的是 present-state protection，还是只是分层截图。
 2. 如果系统开始说谎，我能否点名哪条 authority surface 出了问题。
