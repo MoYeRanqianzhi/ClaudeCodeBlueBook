@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/37 / navigation/50 / 51` 现已把结构宿主验收协议与执行第一跳统一到当前对象链：
+  - `37` 现已把 `resume order` 明确降为 re-entry proof，把结构验收执行固定到 `authority object -> writeback path -> freshness gate -> stale worldview / ghost capability -> anti-zombie evidence -> reopen boundary`。
+  - `50 / 51` 现已把宿主验收协议线与执行线统一改成对象链入口，不再让 `authority state / authority source / compiled request truth` 这些旧 contract 名词继续占据导航主轴。
+- 新的长期结论：
+  - 结构宿主验收真正成熟时，不应再把 `resume order`、`authority state` 与 `recovery boundary` 并列成一级 contract；更稳的写法是先点名 `authority object` 与正式 `writeback path`，再让 `freshness gate`、anti-zombie 与 reopen boundary 决定拒收和回退。
+  - 宿主验收导航真正成熟时，不应再用“协议层 / 执行层”这类栏目词承载主语；读者首先应该看到的是三条对象链各自的 contract root、reject verdict 与 rollback / reopen 目标。
 - `playbooks/31 / navigation/45` 现已把结构宿主接入第一跳统一到当前对象链：
   - `31` 现已把 `recovery boundary` 从一级主语降回 recovery asset non-sovereignty，接入卡固定为 `authority object -> per-host authority width -> authoritative path -> freshness gate -> stale worldview / ghost capability -> anti-zombie evidence`。
   - `45` 现已把三条宿主接入导航母线统一改成对象链入口，不再让“支持面复盘流程”压过对象主语。

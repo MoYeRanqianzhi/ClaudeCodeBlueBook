@@ -6,6 +6,9 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮结构验收协议第一跳纠偏动作: 已继续更新 `playbooks/37`、`navigation/50 / 51`，把结构宿主验收从 `authority state / resume order / recovery boundary / writeback path / anti-zombie projection` 的旧 contract 收回到 `authority object -> writeback path -> freshness gate -> stale worldview / ghost capability -> anti-zombie evidence -> reopen boundary`。
+- 本轮结构验收字段再压缩动作: `playbooks/37` 现已把 `resume order` 明确降为 re-entry proof，只保留在 `freshness gate` 之后的子证据位；共享验收卡当前固定为 `authority_object`、`authoritative_path_ref`、`writeback_primary_path`、`freshness_gate_attested`、`stale_worldview_evidence`、`ghost_capability_eviction_state`、`anti_zombie_evidence_ref` 与 `reopen_boundary`。
+- 本轮宿主验收导航换骨动作: `navigation/50 / 51` 现已把 Prompt / 治理 / 结构三条验收协议线和执行线统一改成对象链入口，不再让 `compiled request truth / authority source / authority state` 这些旧 contract 名词继续占据导航根部。
 - 本轮结构宿主接入第一跳纠偏动作: 已继续更新 `playbooks/31` 与 `navigation/45`，把结构宿主接入从 `authority state / recovery boundary / anti-zombie result` 的旧叙事收回到 `authority object -> per-host authority width -> authoritative path -> freshness gate -> stale worldview / ghost capability -> anti-zombie evidence`。
 - 本轮结构接入 reject path 硬化动作: `playbooks/31` 现已把 `bridgePointer`、append-chain、resume file 明确降为 recovery asset，并要求宿主显式记录 `authoritative_path_ref`、`freshness_gate_ref`、`recovery_asset_non_sovereignty`、`stale_worldview_evidence` 与 `ghost_capability_eviction`，减少把“恢复最后成功了”继续写成结构成熟度。
 - 本轮宿主接入导航去流程化动作: `navigation/45` 现已把 Prompt / 治理 / 结构三条宿主接入线统一压成对象链入口，不再用“支持面如何进入复盘”这类流程说明充当主轴；宿主排查顺序当前固定为“先对象，再投影，再拒收，再复盘”。
