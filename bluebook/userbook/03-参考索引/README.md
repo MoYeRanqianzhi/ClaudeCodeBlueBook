@@ -54,6 +54,7 @@
 50. 为什么远端看到的 `worker_status`、`pending_action`、`task_summary` 与 `session_state_changed` 不是同一张运行态面。
 - 为什么 `task_summary` 与 `post_turn_summary` 的 carrier、clear、union visibility 与 forwarding suppression 不是同一条 summary contract。
 - 为什么 `lastMessage`、最终输出语义与 raw stream tail 不是同一个“最后一个消息”。
+- 为什么已交付 suggestion 在 `interrupt`、`end_session` 与 output close 之后不一定留下 accepted / ignored telemetry。
 51. 为什么 `permission_mode`、`is_ultraplan_mode` 与 `model` 不是同一种远端可恢复会话参数。
 52. 为什么 `task_started`、`task_progress`、`task_notification` 与 `session_state_changed` 不是同一种远端事件流。
 53. 为什么 CCR v2 remote bridge 的 `transport rebuild`、initial flush、`flush gate` 与 `sequence resume` 不是同一步。
