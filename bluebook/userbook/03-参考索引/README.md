@@ -78,6 +78,7 @@
 74. 为什么同一个 in-process teammate 明明仍是 `running`，却会在 `stopping`、`awaiting approval`、`idle` 与 working 之间投影成不同状态面。
 75. 为什么 headless `print` 在 `inputClosed` 之后不会直接结束，而会进入一条先等 idle、再 shutdown team 的 drain 协议。
 76. 为什么 headless `print` 在 teammates 仍 active 时会持续 poll unread mailbox，并把 teammate 输出折返进主 run loop，而不是像被动 inbox reader 那样工作。
+77. 为什么 headless `print` 的主线程队列更像 single-consumer pump，而不是一个普通事件订阅器。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
