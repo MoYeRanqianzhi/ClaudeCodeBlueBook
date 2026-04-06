@@ -97,10 +97,10 @@
 
 1. [三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
 2. [真正成熟的治理，不是更会拦截，而是更会为扩张定价](../philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md)
-3. [反扩张治理流水线：治理键、typed ask、最小可见面与 continuation pricing](../architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md)
-4. [苏格拉底审读：治理键、最小可见面与 continuation pricing](../guides/100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md)
-5. [验证手册：治理键、typed ask、最小可见面与 continuation pricing 回归](../playbooks/78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md)
-6. [反例：低信任扩权、假最小可见面与免费继续](../casebooks/74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续.md)
+3. [反扩张治理流水线：治理键、typed ask、decision window 与 continuation pricing](../architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md)
+4. [苏格拉底审读：治理键、decision window 与 continuation pricing](../guides/100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md)
+5. [验证手册：治理键、typed ask、decision window 与 continuation pricing 回归](../playbooks/78-当前世界准入主权验证手册：trusted inputs、typed ask、最小可见面与continuation gate回归.md)
+6. [反例：低信任扩权、假 decision window 与免费继续](../casebooks/74-当前世界准入主权验证失真反例：低信任扩权、假最小可见面与免费继续.md)
 
 补充入口：
 

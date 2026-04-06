@@ -1,5 +1,7 @@
 # 如何用苏格拉底诘问法审读one writable present：current-truth surface、freshness gate与ghost capability
 
+文件名保留旧词兼容路径，正文以 `current-truth surface / freshness gate / ghost capability` 作为规范可见主语。
+
 这篇把 `architecture/84` 与 `philosophy/86` 压成一组失稳前审读问题。
 
 ## 0. 代表性源码锚点
@@ -46,13 +48,13 @@
 
 ## 2. 苏格拉底诘问链
 
-### 2.1 当前真相有没有单一写入面
+### 2.1 current-truth surface 是否唯一
 
 判断标准：
 
 - 如果 mode、session head、protocol truth 或 bridge control 仍能被多处并行宣布，那 one writable present 还没成立。
 
-### 2.2 recovery asset 是在帮助恢复，还是已经开始篡位
+### 2.2 recovery asset 是否仍保持 non-sovereignty
 
 判断标准：
 
@@ -74,7 +76,7 @@
 
 判断标准：
 
-- 如果没有清楚的 single-writer surface、危险 seam、恢复资产说明和 anti-zombie 约束，后来者只能靠作者记忆。
+- 如果没有清楚的 current-truth surface、危险 seam、恢复资产说明和 anti-zombie 约束，后来者只能靠作者记忆。
 
 ### 2.6 host、worktree 或 transport 会不会制造第二真相
 
@@ -102,7 +104,7 @@
 
 当这组问题里有任何一个答不清时，优先做下面四步：
 
-1. 先回 `../philosophy/86` 与 `../architecture/84`，判断自己破坏的是 single-writer surface、恢复资产边界、anti-zombie 约束还是 release shaping。
+1. 先回 `../philosophy/86` 与 `../architecture/84`，判断自己破坏的是 current-truth surface、recovery asset non-sovereignty、freshness gate / ghost capability 约束还是 release shaping。
 2. 再回 `32`，用旧一层源码先进性审读模板确认是权威面、恢复资产、未来维护者消费者还是 transport shell 先失真。
 3. 再检查 `QueryGuard`、`sessionIngress`、`WorkerStateUploader`、`bridgePointer`、`FileEdit / FileWrite` freshness gate、PowerShell validator 与 MCP stale-capability 清理条件。
 4. 最后才决定是否重构目录；多数时候，先修写入权与时态保护，比先修分层外观更重要。
@@ -111,10 +113,10 @@
 
 ```text
 审读对象:
-single-writer surface:
+current-truth surface:
 authoritative_writeback_path:
-recovery asset 是否非主权:
-anti-zombie invariant 是否成立:
+recovery asset non-sovereignty:
+freshness gate invariant:
 compile/runtime/artifact 三层边界是否分层:
 later maintainer 是否能直接识别危险改动面:
 event stream / state writeback 是否分层:
@@ -127,17 +129,17 @@ fail_closed_branch:
 当前最像哪类失真:
 - multi-writer truth / recovery usurpation / stale overwrite / boundary conflation / release-surface leak
 优先回修对象:
-- authority surface / recovery asset contract / anti-zombie guard / boundary split / release shaping
+- current-truth surface / recovery asset contract / freshness gate / boundary split / release shaping
 ```
 
-上面六个新增槽位都应填写具体源码路径；任一槽位只能写“感觉这里有”时，就还不配宣布 `one writable present` 已成立。
+上面六个新增槽位都应填写具体源码路径；任一槽位只能写“感觉这里有”时，就还不配宣布 `current-truth surface` 已成立。
 
 ## 6. 否证问句
 
 准备继续“整理结构”前，先问：
 
 1. 我现在改善的是 present-state protection，还是只是分层截图。
-2. 如果系统开始说谎，我能否点名哪条 authority surface 出了问题。
+2. 如果系统开始说谎，我能否点名哪条 current-truth surface 出了问题。
 3. 哪些恢复资产被允许找真相，但不被允许宣布真相。
 4. 旧对象是不是已经被正式剥夺写回现在的能力。
 5. 写入边界是不是要求 fresh-read 才能写，还是旧快照仍能越权落盘。
@@ -147,4 +149,4 @@ fail_closed_branch:
 
 ## 7. 一句话总结
 
-要审读源码先进性，就不要只审结构是否更好看；真正该审的是 one writable present 是否成立，也就是现在能不能继续免于被过去写坏。
+要审读源码先进性，就不要只审结构是否更好看；真正该审的是 `current-truth surface / freshness gate / ghost capability` 是否成立，也就是现在能不能继续免于被过去写坏。

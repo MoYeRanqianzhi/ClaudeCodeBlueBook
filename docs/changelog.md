@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `06-第一性原理与苏格拉底反思` 的 `6.36-6.63`、`guides/100 / 101` 与 `navigation/03`，把后半段“我们是否仍 / 蓝皮书会...”式自指标题与句型收回到制度失真命名、失败模式与八张判据卡，并把治理 / 结构审读页的可见主语统一到 `governance key / decision window / continuation pricing` 与 `current-truth surface / freshness gate / ghost capability`，同时保留旧文件名作为兼容入口
 - 继续更新 `06-第一性原理与苏格拉底反思` 的 `6.22-6.35` 与 `guides/99 / 100 / 101` 的开头、回修顺序和栏目名，把 `我们是否仍... / builder-facing / 审读记录卡 / 检查清单` 这类自指或 worksheet 语气收回到 `为什么常被误写 / 失稳前审读问题 / 失稳时的回修顺序 / 最小判据 / 否证问句` 这类更硬的 doctrine 语言，并同步把局部治理链条从旧 `authority source / authority object` 收回到 `governance key / governance truth` 与 `current-truth surface`
 - 继续更新 `06-第一性原理与苏格拉底反思` 的 `2.13`、`6.61-6.63` 与 `guides/99 / 100 / 101` 的后半段小标题，把“本书应统一复用 / 审读记录卡 / 检查清单 / 同题坏解 / 渐进改写顺序”这类较强的 workshop 与路线提示语气收回到“对称判断 / 最小判据 / 否证问句 / 失真命名”这类更硬的 doctrine 语言
 - 继续更新 `guides/99 / 100 / 101` 与 `06-第一性原理与苏格拉底反思` 的局部正文，把 `builder-facing`、`继续改 Prompt 前`、`更好的迭代顺序` 与 `我们是否仍...` 这类 workshop / 自指施工语气收回到更一般化的“失稳前审读问题 / 失稳时回修顺序 / 高频失真命名 / 治理定价链”表达

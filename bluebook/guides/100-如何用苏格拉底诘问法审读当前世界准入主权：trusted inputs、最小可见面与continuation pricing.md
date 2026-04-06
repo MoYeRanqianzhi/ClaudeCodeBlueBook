@@ -1,5 +1,7 @@
 # 如何用苏格拉底诘问法审读当前世界准入主权：governance key、decision window与continuation pricing
 
+文件名保留旧词兼容路径，正文以 `governance key / decision window / continuation pricing` 作为规范可见主语。
+
 这篇把 `architecture/83` 与 `philosophy/85` 压成一组失稳前审读问题。
 
 ## 0. 代表性源码锚点
@@ -138,8 +140,9 @@
 
 ```text
 审读对象:
-当前 trusted input 链:
+当前 governance key 证据链:
 governance_key_ref:
+governance_evidence_slot:
 externalized_truth_chain_ref:
 governance key 是否先于动作、可见性和 continuation:
 source slot 是否真是规则主键:
@@ -158,7 +161,7 @@ host 是否只消费 runtime 外化的 governance truth/status:
 当前最像哪类失真:
 - authority leak / free visibility / free context / free continuation / flattened failure semantics
 优先回修对象:
-- trusted input / ask arbitration / visibility / externalization / continuation / failure typing
+- governance key / typed ask / visibility / externalization / continuation / failure typing
 ```
 
 任一 `*_ref` 无法点名时，都应直接判定：
