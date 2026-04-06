@@ -142,13 +142,13 @@ repair governance 被具体拆成了三个问题：
 
 stronger-request cleanup 当前已知至少有四类 drift：
 
-1. temporal drift  
+1. temporal drift
    startup wording 强于 actual scheduler timing
-2. propagation drift  
+2. propagation drift
    `plansDirectory` 被部分 plane 消费、未被 executor plane 跟随
-3. receipt drift  
+3. receipt drift
    `CleanupResult` 未升格成 surfaced family receipt
-4. abstention drift  
+4. abstention drift
    validation-error skip 当前只在 local logging / return path 上成立
 
 但当前仍没有一处可见代码正式决定：
