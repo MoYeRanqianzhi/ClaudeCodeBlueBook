@@ -332,18 +332,24 @@ cleanup 线未来若进入更强修复阶段，
 
 ### 第四问
 
-`这章最值得继续逼问自己的地方是什么？`
+`我真正该继续约束自己的是什么？`
 
 是这句：
 
-`cleanup 线未来最危险的迁移对象到底是旧 plan path、旧 transcript promise，还是旧 cleanup receipt semantics？`
+`不要把 migration object 确实有多个，误写成 repo 已经把多对象迁移主权制度化。`
 
-如果答案不是一个而是多个，  
-那么下一层真正值得继续研究的，  
-就不再只是“migration governor 是否存在”，  
-而是：
+当前更稳妥的说法只能是：
+旧 path、旧 promise、旧 receipt semantics 确实可能分别进入迁移问题，
+而 repair layer 并不能自动决定它们怎样退出旧世界、进入新世界。
 
-`迁移治理是否也必须继续拆成 path-migration、promise-migration 与 receipt-migration 三个不同 control plane。`
+因此本章能成立的是：
+
+`repair != migration`
+
+不能偷加的 stronger claim，
+则是：
+
+`cleanup 已经拥有正式、多对象、可复述的 migration governance map。`
 
 ## 12. 一条硬结论
 

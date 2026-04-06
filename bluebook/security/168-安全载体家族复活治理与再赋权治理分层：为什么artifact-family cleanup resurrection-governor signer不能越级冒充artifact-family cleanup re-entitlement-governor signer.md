@@ -331,21 +331,27 @@ enable 只是其中一部分。
 
 ### 第四问
 
-`这章最值得继续逼问自己的地方是什么？`
+`我真正该继续约束自己的是什么？`
 
 是这句：
 
-`cleanup 线未来最危险的 re-entitlement object，到底是旧 path、旧 promise，还是旧 receipt semantics？`
+`不要把 enabled、configured、same-scope、same-identity 与 same-secret return 混成同一个 re-entitlement 事件。`
 
-如果答案不是一个而是多个，  
-那么真正成熟的 cleanup re-entitlement governance  
-很可能还要继续拆成：
+当前更稳妥的说法只能是：
+repo 已经在 plugin 与 plan 线上明确展示：
 
-1. path re-entitlement
-2. promise re-entitlement
-3. receipt re-entitlement
+1. return != enabled
+2. return != same identity
+3. return != same config / same secret
 
-三条不同控制面。
+因此本章能成立的是：
+
+`resurrection != re-entitlement`
+
+不能偷加的 stronger claim，
+则是：
+
+`任何资格恢复都已经被单一 entitlement event 完整回答。`
 
 ## 11. 一条硬结论
 

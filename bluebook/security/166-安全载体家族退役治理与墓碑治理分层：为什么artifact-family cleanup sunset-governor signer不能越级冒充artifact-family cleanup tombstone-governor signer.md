@@ -345,21 +345,17 @@ cleanup 线当前真正缺的不只是 sunset grammar，
 
 ### 第四问
 
-`这章最值得继续逼问自己的地方是什么？`
+`我真正该继续约束自己的是什么？`
 
 是这句：
 
-`cleanup 线未来最危险的 tombstone object，到底是旧 path、旧 promise，还是旧 receipt semantics？`
+`不要把任何 marker grammar 的存在，误写成 cleanup world 已经拥有完整 tombstone constitution。`
 
-如果答案不是一个而是多个，  
-那么真正成熟的 cleanup tombstone governance  
-很可能还要继续拆成：
+当前更稳妥的说法只能是：
+repo 已经展示了 message tombstone、plugin marker 与 migration timestamp 这类残留标记正例，
+但这还不自动推出：
 
-1. path tombstone
-2. promise tombstone
-3. receipt tombstone
-
-三条不同控制面。
+`所有 cleanup artifact family 都已经有同等级、同语义的 post-retirement marker grammar。`
 
 ## 11. 一条硬结论
 

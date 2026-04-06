@@ -295,19 +295,19 @@ tool-results、transcripts、plans、file-history 各自的读取者、寿命与
 
 ### 反思四
 
-如果我要把这套设计再提高一倍，下一步最该补什么？
+`我是不是把多种 family 差异都看见了，就误写成 repo 已经有统一 constitution signer？`
 
-我会优先补三样东西：
+不能这样写。
+更稳妥的说法仍然是：
 
-1. artifact-family cleanup matrix  
-   task outputs、scratchpad、tool-results、transcripts、plans、file-history、session-env 一次性列出各自 preflight gate
-2. constitution rationale fields  
-   每个 family 说明为何用 temp-dir/session-scope/project-sweep/home-root
-3. family-specific cleanup receipts  
-   让 cleanup 结果按 family 出具不同强度的 noninterference verdict
+`当前可见源码展示出多种 constitution 并存，`
 
-因为现在源码已经把多宪法并存这件事暴露出来了，  
-正适合继续从“局部家法”升级成“正式宪法图谱”。
+但这不自动等于：
+
+`系统已经有一个显式、统一、自我复述的 artifact-family cleanup constitution plane。`
+
+所以本章能成立的是多宪法并存本身，
+不能偷加的 stronger claim，则是“统一宪法已经存在，只是我还没找到对象名”。
 
 ## 11. 一条硬结论
 

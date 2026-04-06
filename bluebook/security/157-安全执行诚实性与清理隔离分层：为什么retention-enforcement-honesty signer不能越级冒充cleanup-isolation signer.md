@@ -320,19 +320,21 @@ cleanup 不只是：
 
 ### 反思四
 
-如果我要把这套设计再提高一倍，下一步最该补什么？
+`我是不是把 session-scoped path bucketing，偷写成 live-peer noninterference proof 已经成立？`
 
-我会优先补三样东西：
+不能这样写。
+路径分桶只能说明对象分布方式，
+不能单独证明 cleanup 执行前已经 consult 了 live peer、dependency proof 与 cross-session side effect。
 
-1. cleanup preflight live-peer check  
-   删除前 consult active session ledger / dependency proof
-2. artifact-family isolation matrix  
-   task outputs、tool-results、transcripts、scratchpad 分别声明自己的 cleanup isolation gate
-3. cross-session side-effect receipt  
-   一旦 cleanup 影响到其他 live peer，系统应结构化记录，而不是只靠事后字符串补偿
+所以这一章最该继续约束自己的，
+不是去假装 isolation protocol 已经闭合，
+而是始终把：
 
-因为现在源码已经把局部修补和制度缺口都暴露出来了，  
-正适合继续升级成统一 cleanup isolation protocol。
+`artifact placement`
+`cleanup preflight`
+`live-peer noninterference`
+
+当成三层不同事实。
 
 ## 12. 一条硬结论
 

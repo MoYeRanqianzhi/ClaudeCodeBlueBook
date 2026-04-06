@@ -375,17 +375,19 @@ runtime-conformance 回答的则是：
 
 ### 第四问
 
-`这章最值得继续逼问自己的地方是什么？`
+`我真正该继续约束自己的是什么？`
 
 是这句：
 
-`谁配签发 family-by-family 的 runtime conformance receipt，以及这个 receipt 应该挂在哪个 control plane 上？`
+`不要把局部返回类型与局部 awareness，误写成正式的 runtime conformance receipt plane。`
 
-如果答案是必须存在，  
-那么下一层真正值得继续追问的就不再是“runtime 是否偶尔不一致”，  
-而是：
+当前更稳妥的说法只能是：
+repo 已经有局部 conformance awareness，
+因为 delay、skip、result object 与 validation guard 都已经被写进运行链。
 
-`runtime-conformance signer` 是否还必须继续拆成 `receipt signer` 与 `anti-drift verifier signer` 两层。
+但这还不足以推出：
+
+`family-by-family conformance receipt 已经成为正式、可传播、可审计的 signer 层。`
 
 ## 13. 一条硬结论
 

@@ -346,21 +346,29 @@ marker clearing 最多说明 tombstone 被撤销；
 
 ### 第四问
 
-`这章最值得继续逼问自己的地方是什么？`
+`我真正该继续约束自己的是什么？`
 
 是这句：
 
-`cleanup 线未来最危险的 resurrection object，到底是旧 path、旧 promise，还是旧 receipt semantics？`
+`不要把 marker clearing、disk return、active return 与 identity return 混成同一个 resurrection 事件。`
 
-如果答案不是一个而是多个，  
-那么真正成熟的 cleanup resurrection governance  
-很可能还要继续拆成：
+当前更稳妥的说法只能是：
+repo 已经在 plugin 与 plan 线上明确展示了 re-entry grammar，
+但这些 grammar 本身就要求继续区分：
 
-1. path resurrection
-2. promise resurrection
-3. receipt resurrection
+1. tombstone 被撤销
+2. 对象重新出现在 materialized world
+3. active/runtime world 重新接纳它
+4. identity 是否仍算原来那个 seat
 
-三条不同控制面。
+因此本章能成立的是：
+
+`tombstone != resurrection`
+
+不能偷加的 stronger claim，
+则是：
+
+`任何 comeback 都已经被单一 resurrection 事件完整覆盖。`
 
 ## 11. 一条硬结论
 
