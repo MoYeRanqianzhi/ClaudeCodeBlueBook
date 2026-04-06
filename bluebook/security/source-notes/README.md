@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 64 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 65 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -83,6 +83,7 @@
 62. [62-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界](62-callMCPToolWithUrlElicitationRetry%E3%80%81toolExecution%E4%B8%8EMCP%E8%AE%A4%E8%AF%81%E8%B7%AF%E5%BE%84%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E7%BB%AD%E6%89%93%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 63. [63-callMCPToolWithUrlElicitationRetry、callMCPTool与tool_result映射的强请求清理完成治理边界](63-callMCPToolWithUrlElicitationRetry%E3%80%81callMCPTool%E4%B8%8Etool_result%E6%98%A0%E5%B0%84%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%AE%8C%E6%88%90%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 64. [64-addToolResult、print与CCRClient的强请求清理终局治理边界](64-addToolResult%E3%80%81print%E4%B8%8ECCRClient%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E7%BB%88%E5%B1%80%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+65. [65-StructuredIO与orphaned permission处理链的强请求清理遗忘治理边界](65-StructuredIO%E4%B8%8Eorphaned%20permission%E5%A4%84%E7%90%86%E9%93%BE%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%81%97%E5%BF%98%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
