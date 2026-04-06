@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `casebooks/13 / 35 / 46` 与 `navigation/43` 现已继续把 Prompt / 治理前门语言收口：
+  - `13 / 46` 现已把 Prompt 反例前门从 `Evidence Envelope / 前缀托管 / reopen threshold` 收回到 `message lineage / protocol truth / stable prefix boundary / threshold liability`。
+  - `35 / 43` 现已把治理反例与支持面入口从 `假窗口重置 / 免费重入 / rollback object` 收回到 `decision window / transient authority cleanup / durable-vs-transient cleanup`。
+- 新的长期结论：
+  - Prompt / 治理线最会反向输送旧世界观的，不一定是协议页，而是 casebook 和导航页的 front words；这些前门词如果不换代，会在读者进入正文前就先把根对象偷换掉。
+  - Prompt 前门更稳的 visible root 应先暴露 `message lineage / protocol transcript / stable prefix boundary / continuation qualification / threshold liability`，治理前门更稳的 visible root 应先暴露 `governance key / externalized truth chain / decision window / continuation pricing / durable-vs-transient cleanup`。
 - `api/53 / playbooks/28 / casebooks/15 / 42` 现已继续把结构 visible root 收口：
   - `api/53` 现已把结构宿主消费面从 `authority state / generation evidence / recovery boundary / anti-zombie projection` 收回到 `authority object / per-host authority width / freshness gate / recovery asset non-sovereignty / anti-zombie evidence`。
   - `playbooks/28` 现已把可演化内核验证里的 `transition / dependency` 收硬成 `transition legality / dependency honesty`。

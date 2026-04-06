@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 Prompt / 治理前门收口动作: 已继续更新 `casebooks/13 / 35 / 46` 与 `navigation/43`，把 Prompt / 治理反例与支持面入口的可见主语从 `Evidence Envelope / 假窗口重置 / 免费重入 / 前缀托管 / rollback object` 收回到 `message lineage / protocol transcript / stable prefix boundary / continuation qualification / threshold liability` 与 `governance key / decision window / durable-vs-transient cleanup`。
+- 本轮前门判断加固: 对 Prompt / 治理线来说，最危险的旧词常常不是深层协议术语，而是反例页和导航页 front words；只要前门还先发 `Evidence Envelope / rollback object / 免费重入` 这类旧词，读者就会在进入正文前先被拉回旧对象世界。
 - 本轮结构 visible root 推进动作: 已继续更新 `api/53 / playbooks/28 / casebooks/15 / 42`，把结构宿主消费面、可演化内核验证与结构失真反例的可见主语从 `authority state / transition / dependency / Evidence Envelope / authority watch` 收回到 `authority object / per-host authority width / freshness gate / anti-zombie evidence / current truth`。
 - 本轮结构前门判断加固: 对结构线来说，最危险的旧词不再只是“single writer / recovery asset”这组浅层标题债，而是 `support surface / envelope / watch` 这类看板词继续偷走 current-truth 纪律；因此这批优先修 front words，而不是继续扩写深层证明。
 - 本轮正文去记忆化动作: 已继续更新 `00 / 01 / 06 / README / guides/06`，把主线前门、结构前门与第一性原理实践里直接点名 `docs/` 分工、轮次推进、changelog / 研究日志 / 长期记忆 的元叙事，收回成“独立附录载体”“证据归档”与“继续资格”这类稳定正文表达。
