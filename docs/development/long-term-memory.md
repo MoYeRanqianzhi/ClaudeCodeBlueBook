@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/14 / 35 / 77` 与 `navigation/45` 现已把 Prompt 执行链统一到当前对象链：
+  - `14` 现已把 Prompt Evidence Envelope 从 `compiled request truth / stable bytes / handoff state` 的旧前门词，压到 `message lineage / protocol transcript / lawful forgetting boundary / continuation object` 的角色化消费顺序。
+  - `35` 现已把 Prompt 宿主验收从“compiled request truth 验收卡”继续压到 `message lineage / projection consumer / protocol transcript / lawful forgetting boundary / continuation qualification`。
+  - `77` 现已把长期验证从“authority chain / protocol transcript / continuation object”继续压到 `lineage kernel / projection consumer / continuation qualification / cache-safe fork` 的验证口径。
+  - `45` 现已把宿主接入审读导航从 `compiled request truth / governance control plane object / authority state` 的旧支持面叙事，改成三条母线各自当前对象链。
+- `playbooks/README / guides/README` 现已把 Prompt 路由继续收口：
+  - Prompt 执行链默认入口现已前移到 `14 -> 29 -> 35 -> 77`。
+  - Prompt builder 审读入口现已写成 `30 -> 99`，不再只让读者在新旧模板之间自行跳转。
+- 新的长期结论：
+  - Prompt 目录结构真正成熟时，不应只在哲学页和架构页换代；Evidence Envelope、宿主验收、长期验证和宿主接入路由也必须共用同一套对象名，否则读者会在执行层重新跌回旧词。
+  - Prompt 验证真正成熟时，不应再把 `compiled request truth` 当成单一顶层对象反复出现；更稳的执行链写法是 `message lineage -> projection consumer -> protocol transcript -> lawful forgetting boundary -> continuation object -> continuation qualification`。
+  - README 真正成熟时，不只告诉读者“从哪个编号进”，还要把 Prompt 的 `why / review / acceptance / validation` 四层明确压成一条稳定路由。
 - `architecture/84 / philosophy/87 / guides/101` 现已把结构先进性继续压到更硬的验证对象：
   - `84` 现已补出 `authority atlas`，把 `permission_mode`、`pending_action`、`worker_status` 与 `bridge pointer vs session head` 写成 authority object / sole writer / per-host width / forbidden substitute writer / freshness guard 的固定对照。
   - `87` 现已把 `temporal honesty` 继续压成通道矩阵，明确 `writeEvent`、`writeInternalEvent`、`reportState/reportMetadata` 与 `flush before idle` 分别在保护什么真相。

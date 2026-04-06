@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮 Prompt 执行链统一动作: 已继续更新 `playbooks/14 / 35 / 77` 与 `navigation/45`，把 Prompt 的 Evidence Envelope、宿主验收、长期验证与宿主接入审读统一到 `message lineage / projection consumer / protocol transcript / lawful forgetting boundary / continuation object / continuation qualification / cache-safe fork`。
+- 本轮 Prompt 目录路由收口动作: 已继续更新 `playbooks/README` 与 `guides/README`，把 Prompt 的执行链入口收成 `14 -> 29 -> 35 -> 77`，把 builder 审读入口收成 `30 -> 99`，减少读者继续靠旧文件名与旧对象词自行拼链。
 - 本轮结构真相再压实动作: 已继续更新 `architecture/84`、`philosophy/87`、`guides/101`、`casebooks/15 / 42`，把结构先进性从“authority / anti-zombie / release shaping”进一步压成 `authority atlas`、`temporal honesty` 通道矩阵、one writable present 强制证据卡与结构替身对照表。
 - 本轮结构证据卡硬化动作: `guides/101` 现已要求显式填写 `authoritative_writeback_path`、`event_stream_non_sovereignty`、`freshness_gate_location`、`stale_worldview_downgrade`、`ghost_capability_eviction_trigger` 与 `fail_closed_branch`，减少把结构成熟度继续写成目录感与体感。
 - 本轮治理控制面再压实动作: 已继续更新 `architecture/83`、`guides/100`、`casebooks/23 / 35`、`playbooks/51` 与 `navigation/43`，把安全设计与省 token 设计继续压到单一对象链：`governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable/transient cleanup`。
