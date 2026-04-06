@@ -10,3 +10,4 @@
 - [08-插件自动物化、Startup Trust 与 Headless 刷新索引.md](./08-%E6%8F%92%E4%BB%B6%E8%87%AA%E5%8A%A8%E7%89%A9%E5%8C%96%E3%80%81Startup%20Trust%20%E4%B8%8E%20Headless%20%E5%88%B7%E6%96%B0%E7%B4%A2%E5%BC%95.md)
 - [09-Headless 启动链、首问就绪与 StructuredIO 索引.md](./09-Headless%20%E5%90%AF%E5%8A%A8%E9%93%BE%E3%80%81%E9%A6%96%E9%97%AE%E5%B0%B1%E7%BB%AA%E4%B8%8E%20StructuredIO%20%E7%B4%A2%E5%BC%95.md)
 - [10-Host、Viewer 与 Health Check 索引.md](./10-Host%E3%80%81Viewer%20%E4%B8%8E%20Health%20Check%20%E7%B4%A2%E5%BC%95.md)
+- [11-Trust Dialog、项目级 .mcp.json 批准与 Health Check 索引.md](./11-Trust%20Dialog%E3%80%81%E9%A1%B9%E7%9B%AE%E7%BA%A7%20.mcp.json%20%E6%89%B9%E5%87%86%E4%B8%8E%20Health%20Check%20%E7%B4%A2%E5%BC%95.md)
