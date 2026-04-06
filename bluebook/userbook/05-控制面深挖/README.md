@@ -58,5 +58,6 @@
 - [48-Workspace not trusted、login token、HTTP base URL、worktree availability 与 registration failure：为什么 headless remote-control 的 permanent error 与 transient retry 不是同一种开桥失败.md](./48-Workspace%20not%20trusted、login%20token、HTTP%20base%20URL、worktree%20availability%20与%20registration%20failure：为什么%20headless%20remote-control%20的%20permanent%20error%20与%20transient%20retry%20不是同一种开桥失败.md)
 - [49-remoteDialogSeen、multi-session gate、ProjectConfig.remoteControlSpawnMode 与 effective spawnMode：为什么 standalone remote-control 的一次性说明、账号资格、项目偏好与当前模式不是同一个默认.md](./49-remoteDialogSeen、multi-session%20gate、ProjectConfig.remoteControlSpawnMode%20与%20effective%20spawnMode：为什么%20standalone%20remote-control%20的一次性说明、账号资格、项目偏好与当前模式不是同一个默认.md)
 - [50-worker epoch、state restore、worker heartbeat、keep_alive 与 self-exit：为什么 CCR v2 worker 的初始化、保活与代际退场不是同一种存活合同.md](./50-worker%20epoch、state%20restore、worker%20heartbeat、keep_alive%20与%20self-exit：为什么%20CCR%20v2%20worker%20的初始化、保活与代际退场不是同一种存活合同.md)
+- [51-worker_status、requires_action_details、pending_action、task_summary、post_turn_summary 与 session_state_changed：为什么远端看到的运行态不是同一张面.md](./51-worker_status、requires_action_details、pending_action、task_summary、post_turn_summary%20与%20session_state_changed：为什么%20远端看到的运行态不是同一张面.md)
 
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

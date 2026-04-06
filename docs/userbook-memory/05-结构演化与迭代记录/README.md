@@ -52,6 +52,7 @@
 - [48-2026-04-06-headless remote-control startup verdict 拆分记忆.md](./48-2026-04-06-headless%20remote-control%20startup%20verdict%20拆分记忆.md)
 - [49-2026-04-06-standalone remote-control consent、gate 与 effective mode 拆分记忆.md](./49-2026-04-06-standalone%20remote-control%20consent、gate%20与%20effective%20mode%20拆分记忆.md)
 - [50-2026-04-06-CCR v2 worker lifecycle 拆分记忆.md](./50-2026-04-06-CCR%20v2%20worker%20lifecycle%20拆分记忆.md)
+- [51-2026-04-06-remote runtime state projection 拆分记忆.md](./51-2026-04-06-remote%20runtime%20state%20projection%20拆分记忆.md)
 
 用途：
 

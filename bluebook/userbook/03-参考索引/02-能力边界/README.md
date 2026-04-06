@@ -39,3 +39,4 @@
 - [37-Remote Control headless startup permanent error 与 transient retry 索引.md](./37-Remote%20Control%20headless%20startup%20permanent%20error%20与%20transient%20retry%20索引.md)
 - [38-Remote Control consent、multi-session gate、project spawn preference 与 effective mode 索引.md](./38-Remote%20Control%20consent、multi-session%20gate、project%20spawn%20preference%20与%20effective%20mode%20索引.md)
 - [39-Remote Control worker epoch、state restore、heartbeat、keep_alive 与 self-exit 索引.md](./39-Remote%20Control%20worker%20epoch、state%20restore、heartbeat、keep_alive%20与%20self-exit%20索引.md)
+- [40-Remote Control worker_status、pending_action、task_summary 与 session_state_changed 索引.md](./40-Remote%20Control%20worker_status、pending_action、task_summary%20与%20session_state_changed%20索引.md)
