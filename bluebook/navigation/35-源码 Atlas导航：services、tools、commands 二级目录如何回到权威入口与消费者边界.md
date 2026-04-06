@@ -15,6 +15,7 @@
 这里还应先多记一句：
 
 - `35` 不新建 ladder，只把 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 投影到二级目录阅读动作里；它是 atlas projection page，不是第二条源码质量前门。
+- 如果争议已经变成“这页到底有没有首答权”，不要继续在 atlas 页内部打转，直接回 `navigation/04` 处理 speaking-rights 问题。
 
 ## 1. Services 二级目录 Atlas
 

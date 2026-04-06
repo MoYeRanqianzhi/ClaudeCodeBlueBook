@@ -34,7 +34,7 @@ Claude Code 当前并没有公开一份名为：
 
 的单独公共对象。
 
-但治理宿主修复稳态再纠偏改写纠偏实际上已经能围绕十一类正式对象稳定成立：
+但治理宿主修复稳态再纠偏改写纠偏实际上已经能围绕十二类正式对象稳定成立：
 
 1. `rewrite_correction_session_object`
 2. `false_authority_demotion_set`
@@ -42,11 +42,12 @@ Claude Code 当前并没有公开一份名为：
 4. `ledger_reseal`
 5. `decision_window_refreeze`
 6. `continuation_pricing_rebinding`
-7. `classifier_pricing_attestation`
-8. `writeback_seam_reseal`
-9. `capability_liability_recustody`
-10. `threshold_rebinding`
-11. `rewrite_correction_verdict`
+7. `pricing_right_restitution`
+8. `classifier_pricing_attestation`
+9. `writeback_seam_reseal`
+10. `capability_liability_recustody`
+11. `threshold_rebinding`
+12. `rewrite_correction_verdict`
 
 更成熟的治理 rewrite correction 方式不是：
 

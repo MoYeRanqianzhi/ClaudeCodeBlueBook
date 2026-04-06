@@ -44,7 +44,7 @@ Claude Code 当前并没有公开一份名为：
 5. `classifier_writeback_custody`
 6. `capability_liability_ledger`
 7. `hard_reject_semantics_abi`
-8. `cross_consumer_attestation_packet`
+8. `truth_surface_attestation_packet`
 9. `reopen_liability_ledger`
 10. `rewrite_refinement_verdict`
 

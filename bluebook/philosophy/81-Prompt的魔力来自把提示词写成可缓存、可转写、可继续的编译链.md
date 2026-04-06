@@ -241,6 +241,7 @@ Claude Code 更高级的地方在于，它同样认真规定：
    - 只剩 prose、结论或情绪，而没有 object / guard / liability 绑定时，直接拒绝当作 lawful forgetting 成立证据。
 
 更硬一点说，compact / resume / handoff 共用的不是“摘要格式”，而是这组 witness ABI 能否仍被 parse 并复现同一条 continuation verdict。
+这组 witness ABI 也应被继续读成 versioned object：字段可以扩展，但 `required` 与 `forbidden-as-sole-witness` 这两层不能在没有明确 rebinding 的情况下被静默改写。
 
 更准确地说，compact 之后系统至少还得保住一份最小 `continuation object`：
 

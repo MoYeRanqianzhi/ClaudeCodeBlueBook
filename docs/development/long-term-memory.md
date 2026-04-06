@@ -2722,3 +2722,6 @@
 - `lawful forgetting witness ABI` 现在可继续稳定复用为四层：`required / derivable / narrative-only / forbidden-as-sole-witness`。compact、resume、handoff 共用的不是摘要格式，而是这组 witness ABI 能否仍被 parse 并复现同一 continuation verdict。
 - `navigation/04` 现在已开始承接 later maintainer 的问题级首答表；后续若某个 README 再次同时想回答 “future maintainer 为什么成立 / 证据梯子从哪开始 / repo atlas 先去哪 / 谁有首答权”，应优先回本页而不是再开新入口。
 - 协议页里的编号和字段顺序也应被视为 consumer-facing ABI 的一部分；新增 verdict reason 或 object slot 后，必须回头检查序号、命名与并列层级是否仍单义，否则 later consumer 会先被形式噪音绊住，再误读正文主张。
+- `pricing_right_restitution` 现在不应只停在中层小节里；只要某个 pricing-right 对象已经成为后文稳定依赖，它就应被同步提到顶层对象清单，避免 later reader 误以为只是展开细节而非 first-class object。
+- atlas projection page 的长期稳定纪律现在可再补一句：它能投影 canonical ladder，但没有改判 canonical ladder 或首答权的资格；一旦争议滑到“这页有没有 first-answer authority”，就应直接回 `navigation/04`。
+- `lawful forgetting witness ABI` 现在还应继续被读成 versioned object：字段可以扩展，但 `required` 与 `forbidden-as-sole-witness` 两层若发生变化，必须显式 rebind，而不能靠 prose 静默漂移。
