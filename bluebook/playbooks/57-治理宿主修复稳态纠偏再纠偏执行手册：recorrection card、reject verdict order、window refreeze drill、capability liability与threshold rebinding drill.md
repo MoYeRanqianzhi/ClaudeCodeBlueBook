@@ -1,4 +1,4 @@
-# 治理宿主修复稳态纠偏再纠偏执行手册：recorrection card、reject verdict order、window refreeze drill、capability liability与threshold rebinding drill
+# 治理宿主修复稳态纠偏再纠偏执行手册：governance key recorrection card、reject verdict order与threshold rebinding drill
 
 这一章不再解释治理宿主修复稳态纠偏再纠偏协议该消费哪些字段，而是把 Claude Code 式治理 steady-state correction-of-correction protocol 压成一张可持续执行的 `recorrection card`。
 
@@ -38,7 +38,7 @@
 
 而是：
 
-- authority、ledger、window、continuation、capability liability 与 threshold 仍围绕同一个治理对象正式宣布：现在什么能继续、什么值得继续、什么必须被拒绝继续
+- governance key、ledger、window、continuation、capability liability 与 threshold 仍围绕同一个治理对象正式宣布：现在什么能继续、什么值得继续、什么必须被拒绝继续
 
 安全设计反对的是：
 
@@ -57,10 +57,11 @@
 而是：
 
 1. 当前 recorrection object 是否仍围绕同一个 governance object。
-2. 当前 `authority source restitution` 是否真的把 authority 从 mode 与 dashboard 投影里救出来。
+2. 当前 `governance key restitution` 是否真的把 authority 从 mode 与 dashboard 投影里救出来，并恢复 `sources -> effective -> applied -> externalized` 这条对象链。
 3. 当前 `decision window refreeze` 是否真的把 `Context Usage`、`reserved buffer` 与继续资格放回同一窗口对象。
 4. 当前 `continuation pricing rebinding` 是否真的重新给未来继续定价，而不是给默认继续换个更体面的名字。
-5. 当前 `capability liability recustody` 与 `threshold rebinding` 是否仍围绕同一个 liability owner 与 rollback boundary。
+5. 当前 `capability liability recustody` 是否仍明确 durable assets 与 transient authority 的分界。
+6. 当前 `threshold rebinding` 是否仍围绕同一个 liability owner 与 rollback boundary。
 
 ## 2. 共享 recorrection card 最小字段
 
@@ -68,23 +69,26 @@
 
 1. `recorrection_card_id`
 2. `governance_object_id`
-3. `authority_source_after`
-4. `typed_decision_digest`
-5. `permission_ledger_state`
-6. `decision_window`
-7. `context_usage_snapshot`
-8. `reserved_buffer`
-9. `continuation_gate`
-10. `settled_price`
-11. `capability_release_scope`
-12. `liability_owner`
-13. `threshold_retained_until`
-14. `reject_verdict`
-15. `verdict_reason`
+3. `governance_key`
+4. `externalized_truth_chain`
+5. `typed_decision_digest`
+6. `permission_ledger_state`
+7. `decision_window`
+8. `context_usage_snapshot`
+9. `reserved_buffer`
+10. `continuation_gate`
+11. `settled_price`
+12. `durable_assets_after`
+13. `transient_authority_cleared`
+14. `capability_release_scope`
+15. `liability_owner`
+16. `threshold_retained_until`
+17. `reject_verdict`
+18. `verdict_reason`
 
 四类消费者的分工应固定为：
 
-1. 宿主看 authority source、writer chokepoint 与 capability scope 是否仍唯一。
+1. 宿主看 governance key、writer chokepoint 与 capability scope 是否仍唯一，并且只消费 externalized truth。
 2. CI 看 ledger、window、pricing、liability 与 threshold 顺序是否完整。
 3. 评审看 `reject_verdict` 是否仍围绕同一个治理对象，而不是围绕 mode 与图表投影。
 4. 交接看 later 团队能否只凭 `recorrection card` 重建同一判定与责任边界。
@@ -95,13 +99,14 @@
 
 先看当前准备宣布再纠偏完成的，到底是不是同一个 `governance_object_id`，而不是一张更正式的稳定说明。
 
-### 3.2 再验 `authority source restitution`
+### 3.2 再验 `governance key restitution`
 
 再看：
 
-1. `authority_source_before` 与 `authority_source_after` 是否已明确重绑。
-2. `mode_projection_demoted` 是否仍保证 mode 只是 authority 投影。
-3. capability custody 是否仍由唯一 writer chokepoint 发放，而不是由面板恢复感发放。
+1. `governance_key_before` 与 `governance_key` 是否已明确重绑。
+2. `externalized_truth_chain` 是否仍是宿主、CI、评审与交接共同消费的当前真相。
+3. `mode_projection_demoted` 是否仍保证 mode 只是 authority 投影。
+4. capability custody 是否仍由唯一 writer chokepoint 发放，而不是由面板恢复感发放。
 
 ### 3.3 再验 `ledger reseal`
 
@@ -110,6 +115,7 @@
 1. `permission_ledger_state` 是否仍自洽。
 2. `pending_permission_requests`、late response 与 orphan state 是否已正式清账。
 3. 当前 capability liability 是否仍不会继承旧尾账。
+4. host 是否仍从 externalized object 读取当前阻塞点，而不是回放事件流猜当前真相。
 
 ### 3.4 再验 `decision window refreeze`
 
@@ -125,7 +131,9 @@
 
 1. `continuation_gate` 是否已被重新裁定。
 2. `budget_policy_generation` 与 `settled_price` 是否仍把未来继续重新定价。
-3. 当前控制面是否仍阻止“没报错就继续”的免费扩张。
+3. `durable_assets_after` 是否仍只恢复可恢复资产。
+4. `transient_authority_cleared` 是否仍阻止旧 mode、旧 grant、旧 visible set 被整包续租。
+5. 当前控制面是否仍阻止“没报错就继续”的免费扩张。
 
 ### 3.6 再验 `capability liability recustody`
 
@@ -134,6 +142,7 @@
 1. `capability_release_scope` 是否仍围绕同一个 rollback / expansion object。
 2. `custody_owner`、`liability_owner` 与 `quarantine_recall_handle` 是否仍明确。
 3. capability 是否按 scope 被分层托管，而不是一次性全放开。
+4. durable assets 与 transient authority 是否仍没有被混写进同一恢复对象。
 
 ### 3.7 最后验 `threshold rebinding` 与 `reject_verdict`
 
@@ -160,9 +169,11 @@
 3. `ledger_reseal_required`
 4. `window_truth_missing`
 5. `free_continuation_detected`
-6. `capability_liability_unbound`
-7. `threshold_rebinding_missing`
-8. `reopen_required`
+6. `externalized_truth_chain_missing`
+7. `transient_authority_resumed`
+8. `capability_liability_unbound`
+9. `threshold_rebinding_missing`
+10. `reopen_required`
 
 ## 5. capability liability 与 threshold rebinding 处理顺序
 
@@ -171,7 +182,7 @@
 1. 先冻结新的 capability expansion，直到 `recorrection card` 补全。
 2. 先把 verdict 降为 `hard_reject`、`liability_hold`、`reentry_required` 或 `reopen_required`。
 3. 先把 mode、usage dashboard 与“当前还挺省”的感觉降回投影，不再让它们充当治理真相。
-4. 先按固定顺序重验 authority、ledger、window、pricing 与 liability，不允许跳过 `decision window refreeze`。
+4. 先按固定顺序重验 governance key、ledger、window、pricing 与 liability，不允许跳过 `decision window refreeze`。
 5. 只按 `capability_release_scope` 分层恢复 capability，不做一次性全放开。
 6. 交接前必须把 `liability_owner` 与 `threshold rebinding` 写成 later 团队可消费的对象，而不是一句“有问题再 reopen”。
 
@@ -192,27 +203,31 @@
 
 1. `recorrection_card_id`
 2. `governance_object_id`
-3. `authority_source_after`
-4. `permission_ledger_state`
-5. `decision_window`
-6. `context_usage_snapshot`
-7. `settled_price`
-8. `capability_release_scope`
-9. `liability_owner`
-10. `threshold_retained_until`
-11. `reject_verdict`
-12. `verdict_reason`
+3. `governance_key`
+4. `externalized_truth_chain`
+5. `permission_ledger_state`
+6. `decision_window`
+7. `context_usage_snapshot`
+8. `settled_price`
+9. `durable_assets_after`
+10. `transient_authority_cleared`
+11. `capability_release_scope`
+12. `liability_owner`
+13. `threshold_retained_until`
+14. `reject_verdict`
+15. `verdict_reason`
 
 ## 8. 苏格拉底式检查清单
 
 在你准备宣布“治理已完成稳态纠偏再纠偏执行”前，先问自己：
 
 1. 我现在救回的是同一个治理对象，还是一套更严格的稳定说明书。
-2. 我现在重申的是 authority，还是 mode 与 dashboard 的平静感。
+2. 我现在重申的是 governance key，还是 mode 与 dashboard 的平静感。
 3. 我现在冻结的是 formal `decision window`，还是只是在看 token 百分比是否回落。
 4. 我现在恢复的是 continuation 的正式定价，还是给默认继续换了个更体面的名字。
-5. 我现在保留的是未来推翻当前 steady 的正式 threshold，还是一句“以后有问题再看”。
+5. 我恢复的是 durable assets，还是把 transient authority 也一并续租了。
+6. 我现在保留的是未来推翻当前 steady 的正式 threshold，还是一句“以后有问题再看”。
 
 ## 9. 一句话总结
 
-真正成熟的治理宿主修复稳态纠偏再纠偏执行，不是把治理面板运行得更熟练，而是持续证明 authority、ledger、window、pricing、capability liability 与 threshold 仍在共同拒绝免费扩张。
+真正成熟的治理宿主修复稳态纠偏再纠偏执行，不是把治理面板运行得更熟练，而是持续证明 governance key、ledger、window、pricing、capability liability、durable-vs-transient 分界与 threshold 仍在共同拒绝免费扩张。

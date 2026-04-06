@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `playbooks/56 / 57 / 58` 已继续把“再纠偏执行”这一层补到和验收页、长期验证页同代的对象语言：
+  - `56` 现已把 Prompt recorrection 从单纯 `compiled request truth` 压到 `message lineage / projection consumer / continuation object`。
+  - `57` 现已把治理 recorrection 从抽象 `authority source` 压到 `governance key / externalized truth chain / durable-vs-transient`。
+  - `58` 现已把结构 recorrection 从旧的 authority / anti-zombie 语法压到 `event stream / state writeback / freshness gate / stale worldview / ghost capability`。
+- 新的长期结论：
+  - 三条执行链真正成熟时，不只要在验收页和验证页使用新对象，还要让中间的 recorrection / repair 页使用同代语言；否则链条中段会重新把读者拉回旧框架。
+  - 结构线真正成熟时，`resume / writeback / anti-zombie` 这组旧对象必须继续下压成 `event stream vs state writeback / freshness gate / stale worldview / ghost capability`，否则 anti-stale 仍停在旧一层。
 - `playbooks/35 / 37 / 78 / 79` 已继续把三条执行链内部补到更对称的状态：
   - `35` 现已把 Prompt 宿主验收从单纯 `compiled request truth` 压到 `message lineage + projection consumer + continue qualification`。
   - `37` 现已把结构宿主验收补进 `event stream / state writeback` 分层、`stale worldview` 与 `ghost capability` 驱逐，不再只停在恢复顺序与 anti-zombie 的旧一层。

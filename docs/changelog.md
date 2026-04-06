@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `playbooks/56`、`playbooks/57` 与 `playbooks/58`，把 Prompt / 治理 / 结构三条再纠偏执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`
 - 继续更新 `playbooks/35`、`playbooks/37`、`playbooks/78` 与 `playbooks/79`，把 Prompt / 治理 / 结构三条执行链的验收与长期验证页补齐到 `message lineage / projection consumer / governance key / durable-vs-transient / event-stream-vs-state-writeback / stale-worldview / ghost-capability`
 - 继续更新 `guides/30`、`guides/31`、`guides/99`、`playbooks/30`、`playbooks/36` 与 `playbooks/77` 的页面标题，使可见入口词与最新对象链对齐到 `message lineage / governance key / continuation qualification`
 - 继续更新 `bluebook/README`、`guides/README`、`playbooks/README`、`navigation/README`、`security/README`、`risk/README` 与 `philosophy/README`，把 Prompt / 治理 / 结构三条执行链与“为什么 -> 如何验证”的跨目录入口写成稳定路由

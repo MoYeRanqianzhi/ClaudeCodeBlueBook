@@ -6,6 +6,7 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮再纠偏链对齐动作: 已继续更新 `playbooks/56 / 57 / 58`，把 Prompt / 治理 / 结构三条 recorrection 执行页补齐到 `message lineage / projection consumer / governance key / externalized truth chain / durable-vs-transient / event-stream-vs-state-writeback / freshness gate / stale-worldview / ghost-capability`。
 - 本轮执行链对称化动作: 已继续更新 `playbooks/35 / 37 / 78 / 79`，把 Prompt / 治理 / 结构三条执行链的验收与长期验证页继续补齐到 `message lineage / projection consumer / governance key / durable-vs-transient / event-stream-vs-state-writeback / stale-worldview / ghost-capability`。
 - 本轮标题语义对齐动作: 已继续更新 `guides/30 / 31 / 99` 与 `playbooks/30 / 36 / 77` 的可见标题，使入口词与正文对象链统一到 `message lineage / governance key / continuation qualification`。
 - 本轮目录与路由收口动作: 已继续更新 `bluebook/README / playbooks/README / navigation/README / security/README / risk/README / philosophy/README`，把三条执行链、治理执行链与“为什么 -> 如何验证”的跨目录入口写成稳定 README 路由。
