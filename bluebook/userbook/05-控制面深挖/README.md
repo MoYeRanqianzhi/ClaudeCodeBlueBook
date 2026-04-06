@@ -23,5 +23,6 @@
 - [13-system-init、技能提醒与 SkillTool：Claude 如何看见可用能力.md](./13-system-init%E3%80%81%E6%8A%80%E8%83%BD%E6%8F%90%E9%86%92%E4%B8%8E%20SkillTool%EF%BC%9AClaude%20%E5%A6%82%E4%BD%95%E7%9C%8B%E8%A7%81%E5%8F%AF%E7%94%A8%E8%83%BD%E5%8A%9B.md)
 - [14-来源信任、Trust Dialog 与 Plugin-only Policy：扩展面为何分级信任.md](./14-%E6%9D%A5%E6%BA%90%E4%BF%A1%E4%BB%BB%E3%80%81Trust%20Dialog%20%E4%B8%8E%20Plugin-only%20Policy%EF%BC%9A%E6%89%A9%E5%B1%95%E9%9D%A2%E4%B8%BA%E4%BD%95%E5%88%86%E7%BA%A7%E4%BF%A1%E4%BB%BB.md)
 - [15-技能发现、静态 listing 与 remote skills：为什么“relevant skills”不是技能总表.md](./15-%E6%8A%80%E8%83%BD%E5%8F%91%E7%8E%B0%E3%80%81%E9%9D%99%E6%80%81%20listing%20%E4%B8%8E%20remote%20skills%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9Crelevant%20skills%E2%80%9D%E4%B8%8D%E6%98%AF%E6%8A%80%E8%83%BD%E6%80%BB%E8%A1%A8.md)
+- [16-Hooks 的加载、注册、执行与 UI：为什么 `/hooks` 看到的不是实际会跑的 hooks.md](./16-Hooks%20%E7%9A%84%E5%8A%A0%E8%BD%BD%E3%80%81%E6%B3%A8%E5%86%8C%E3%80%81%E6%89%A7%E8%A1%8C%E4%B8%8E%20UI%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20%60%2Fhooks%60%20%E7%9C%8B%E5%88%B0%E7%9A%84%E4%B8%8D%E6%98%AF%E5%AE%9E%E9%99%85%E4%BC%9A%E8%B7%91%E7%9A%84%20hooks.md)
 
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。

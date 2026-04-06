@@ -4,3 +4,4 @@
 - [02-Feature Gate 与可见性索引.md](./02-Feature%20Gate%20%E4%B8%8E%E5%8F%AF%E8%A7%81%E6%80%A7%E7%B4%A2%E5%BC%95.md)
 - [03-来源信任、插件锁定与 Hook 门控索引.md](./03-%E6%9D%A5%E6%BA%90%E4%BF%A1%E4%BB%BB%E3%80%81%E6%8F%92%E4%BB%B6%E9%94%81%E5%AE%9A%E4%B8%8E%20Hook%20%E9%97%A8%E6%8E%A7%E7%B4%A2%E5%BC%95.md)
 - [04-最易误判的能力清单.md](./04-%E6%9C%80%E6%98%93%E8%AF%AF%E5%88%A4%E7%9A%84%E8%83%BD%E5%8A%9B%E6%B8%85%E5%8D%95.md)
+- [05-Hooks 加载、注册、执行与 UI 索引.md](./05-Hooks%20%E5%8A%A0%E8%BD%BD%E3%80%81%E6%B3%A8%E5%86%8C%E3%80%81%E6%89%A7%E8%A1%8C%E4%B8%8E%20UI%20%E7%B4%A2%E5%BC%95.md)

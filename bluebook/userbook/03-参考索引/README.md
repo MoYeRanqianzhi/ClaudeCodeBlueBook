@@ -16,6 +16,7 @@
 12. Claude 与 remote client 到底通过哪些链看到可用能力，为什么 UI 菜单、system/init、skill 提醒不是同一张表。
 13. 为什么同样是扩展来源，workspace trust、plugin-only policy、hooks 总闸和 admin-trusted source 不是同一层限制。
 14. 为什么 `relevant skills`、static listing、remote skills 与 `shortId` 反馈回路不是同一条公开主线。
+15. 为什么 `/hooks` 菜单、已配置 hooks、已注册 hooks 和实际会执行的 hooks 不是同一对象。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
