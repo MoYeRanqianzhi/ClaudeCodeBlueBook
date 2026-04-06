@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 54 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 55 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -73,6 +73,7 @@
 52. [52-savePluginOptions、saveMcpServerUserConfig与PluginOptionsFlow的强请求清理重配置治理边界](52-savePluginOptions%E3%80%81saveMcpServerUserConfig%E4%B8%8EPluginOptionsFlow%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E9%85%8D%E7%BD%AE%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 53. [53-refreshActivePlugins、reload-plugins与refreshPluginState的强请求清理重新激活治理边界](53-refreshActivePlugins%E3%80%81reload-plugins%E4%B8%8ErefreshPluginState%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 54. [54-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的强请求清理就绪治理边界](54-pluginReconnectKey%E3%80%81MCPServerConnection%E4%B8%8EReadMcpResourceTool%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%B0%B1%E7%BB%AA%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
+55. [55-useManageMCPConnections、toolExecution与print的强请求清理连续性治理边界](55-useManageMCPConnections%E3%80%81toolExecution%E4%B8%8Eprint%E7%9A%84%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%B2%BB%E7%90%86%E8%BE%B9%E7%95%8C.md)
 
 ## 和其他目录的分工
 
