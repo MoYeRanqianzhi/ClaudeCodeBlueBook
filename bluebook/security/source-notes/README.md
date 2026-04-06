@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 44 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 45 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -63,6 +63,7 @@
 42. [42-diskOutput、toolResultStorage、plans、debug与diagLogs的强请求清理制度理由与漂移边界](42-diskOutput、toolResultStorage、plans、debug与diagLogs的强请求清理制度理由与漂移边界.md)
 43. [43-cleanup、settings、diskOutput、plans、debug与diagLogs的强请求清理元数据缺口](43-cleanup、settings、diskOutput、plans、debug与diagLogs的强请求清理元数据缺口.md)
 44. [44-cleanupPeriodDays、housekeeping、plansDirectory与CleanupResult的强请求运行时符合性缺口](44-cleanupPeriodDays、housekeeping、plansDirectory与CleanupResult的强请求运行时符合性缺口.md)
+45. [45-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口](45-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口.md)
 
 ## 和其他目录的分工
 
