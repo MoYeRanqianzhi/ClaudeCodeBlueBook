@@ -236,6 +236,20 @@ Claude Code 的会外入口至少有三种不同对象：
 - 宿主上的 MCP 实体
 - 不是配置文件文本本身
 
+### `mcp get` 的强度还比 `mcp list` / `doctor` 更大
+
+这三者虽然都属于 health check，但仍不是完全同一个对象面。
+
+更稳的区分是：
+
+- `mcp list` / `doctor` 更接近 merged-config 视角下的健康检查
+- `mcp get` 更接近“按名字直接取某个 scope 配置，再立刻探活”
+
+因此：
+
+- 不能把 `mcp get` 直接理解成 `mcp list` 的单项展开
+- 也不能把 `doctor` 理解成 `mcp list` 的 UI 版
+
 ### 对 `stdio` server，health check 就是实际拉起宿主子进程
 
 `connectToServer()` 的 `stdio` 分支会：

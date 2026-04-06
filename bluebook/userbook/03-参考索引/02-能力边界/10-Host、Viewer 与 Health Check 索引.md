@@ -18,7 +18,7 @@
 | `--assistant` | Host/daemon 开关 | 内部 | hidden | 否 | 否 | 只写内部/托管 |
 | `claude doctor` | Health Check | 稳定公开 | 普通 root command | 是 | 是 | 写成宿主健康检查 |
 | `claude mcp list` | Health Check | 稳定公开 | 普通 root command | 是 | 是 | 写成健康检查型读取 |
-| `claude mcp get` | Health Check | 稳定公开 | 普通 root command | 是 | 是 | 写成健康检查型读取 |
+| `claude mcp get` | Health Check | 稳定公开 | 普通 root command | 是 | 是 | 写成更强的按名探活读取 |
 
 ## 2. 三类对象到底回答什么问题
 
