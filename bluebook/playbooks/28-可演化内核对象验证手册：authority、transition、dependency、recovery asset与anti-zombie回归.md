@@ -1,4 +1,4 @@
-# 可演化内核对象验证手册：authority、transition、dependency、recovery asset与anti-zombie回归
+# 可演化内核对象验证手册：authority object、transition legality、dependency honesty、recovery asset non-sovereignty与anti-zombie回归
 
 这一章不再解释 `evolvable kernel object boundary` 为什么重要，而是把它压成一张长期演化里的验证手册。
 
@@ -29,14 +29,14 @@
 
 而是：
 
-- 当前 authority、transition、dependency、recovery asset 与 anti-zombie 仍然围绕同一内核对象成立
+- 当前 authority object、transition legality、dependency honesty、recovery asset non-sovereignty 与 anti-zombie 仍然围绕同一内核对象成立
 
 所以这层验证最先要看的不是静态结构图，而是：
 
-1. authority surface continuity
+1. authority object continuity
 2. transition legality continuity
 3. dependency honesty continuity
-4. recovery asset continuity
+4. recovery asset non-sovereignty continuity
 5. anti-zombie continuity
 
 ## 2. 回归症状
@@ -53,13 +53,13 @@
 
 每次变更后，至少逐项检查：
 
-1. `authority surface continuity`
+1. `authority object continuity`
    - 当前真相是否仍有单一权威入口。
 2. `transition legality continuity`
    - generation / stale-writer / terminal transition 是否仍受正式保护。
 3. `dependency honesty continuity`
    - single-source、leaf module 与 anti-cycle seam 是否仍说真话。
-4. `recovery asset continuity`
+4. `recovery asset non-sovereignty continuity`
    - 恢复资产是否仍只做恢复，不宣布第二套真相。
 5. `anti-zombie continuity`
    - 过去的对象是否仍无法写回现在。
@@ -79,10 +79,10 @@
 每次结构 drift 至少记录：
 
 1. `kernel_object_id`
-2. `authority_surface`
+2. `authority_object`
 3. `transition_boundary`
 4. `dependency_boundary`
-5. `recovery_asset_ledger`
+5. `recovery_asset_non_sovereignty`
 6. `anti_zombie_evidence`
 7. `rollback_object`
 8. `symptom`
@@ -92,7 +92,7 @@
 
 更稳的防再发顺序是：
 
-1. 先补 authority source 的单一入口。
+1. 先补 authority object 的单一入口。
 2. 先补 stale-safe transition 规则。
 3. 先补 dependency seam 的边界说明。
 4. 先补 recovery asset ledger。
@@ -102,13 +102,12 @@
 
 在你准备宣布“结构机制仍然健康”前，先问自己：
 
-1. 当前真相是否仍然只有一个 authority surface。
+1. 当前真相是否仍然只有一个 authority object。
 2. 状态迁移是否合法，还是只是运气好没撞上竞态。
 3. 依赖图是否仍在说真话。
-4. recovery asset 是否还只是一份恢复资产。
+4. recovery asset 是否还只是一份恢复资产，而不是第二主语。
 5. 如果把作者记忆拿掉，后来维护者是否仍能拒绝错误实现。
 
 ## 8. 一句话总结
 
-真正成熟的结构机制验证，不是看规则还在不在，而是持续证明 authority、transition、dependency、recovery asset 与 anti-zombie 仍然围绕同一个可演化内核对象成立。
-
+真正成熟的结构机制验证，不是看规则还在不在，而是持续证明 authority object、transition legality、dependency honesty、recovery asset non-sovereignty 与 anti-zombie 仍然围绕同一个可演化内核对象成立。

@@ -1,10 +1,10 @@
-# 治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：authority chain、pricing causality、writeback seam 与 long-term reopen liability
+# 治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：governance key、continuation pricing、writeback seam与long-term reopen liability
 
 这一章回答五个问题：
 
-1. Claude Code 当前到底通过哪些正式对象，让宿主、CI、评审与交接在治理 refinement correction fixed order 已被钉死之后，继续消费同一个统一定价 repair truth，而不是退回更保守的值班说明。
+1. Claude Code 当前到底通过哪些正式对象，让宿主、CI、评审与交接在治理 refinement correction fixed order 已被钉死之后，继续消费同一个 `governance key -> typed ask ledger -> decision window -> continuation pricing` repair truth，而不是退回更保守的值班说明。
 2. 哪些字段属于必须共享的 repair 对象，哪些属于共同 `hard_reject / reentry / reopen` 语义，哪些仍不应被绑定成公共 ABI。
-3. 为什么 Claude Code 的安全设计与省 token 设计本质上是同一条 `authority chain -> window/pricing truth -> classifier/writeback attestation -> long-horizon reopen liability` repair 协议，而不是两套并行主题。
+3. 为什么 Claude Code 的安全设计与省 token 设计本质上是同一条 `governance key -> typed ask ledger -> decision window -> continuation pricing -> writeback seam -> long-horizon reopen liability` repair 协议，而不是两套并行主题。
 4. 宿主开发者该按什么顺序消费这套治理 refinement correction 精修协议。
 5. 哪些现象一旦出现，应被直接升级为 `hard_reject`、`pricing_reseal_required`、`writeback_reseal_required`、`repair_attestation_rebuild_required`、`reentry_required` 或 `reopen_required`，而不是继续宣称 capability 仍然安全。
 
@@ -31,8 +31,8 @@ Claude Code 当前并没有公开一份名为：
 但治理 refinement correction fixed order 已经能围绕八类正式对象稳定成立：
 
 1. `repair_session_object`
-2. `repair_authority_chain`
-3. `ledger_window_truth_surface`
+2. `governance_key_attestation`
+3. `typed_ask_ledger_window_surface`
 4. `pricing_causality_surface`
 5. `classifier_writeback_attestation`
 6. `ingress_restore_repair_attestation`
@@ -47,7 +47,7 @@ Claude Code 当前并没有公开一份名为：
 
 而是：
 
-- 围绕这八类对象继续消费同一个 authority、同一个 ledger/window truth、同一条 pricing causality、同一个 classifier/writeback attestation、同一个 ingress/restore repair attestation 与同一个 threshold liability
+- 围绕这八类对象继续消费同一个 governance key、同一份 typed ask ledger/window truth、同一条 continuation pricing causality、同一个 classifier/writeback attestation、同一个 ingress/restore repair attestation 与同一个 threshold liability
 
 从宿主视角看，当前实现其实已经有一个“半成型”的 repair 对象面：
 
@@ -63,9 +63,9 @@ Claude Code 当前并没有公开一份名为：
 
 治理世界真正成熟，不是把“更保守一点”写得更体面，而是：
 
-1. `authority` 决定谁有资格定义扩张。
-2. `ledger + window` 决定哪些决策已被正式记账、当前还能承受什么上下文与动作。
-3. `pricing` 决定继续的代价是否已被显式结算。
+1. `governance key` 决定谁有资格定义扩张。
+2. `typed ask ledger + decision window` 决定哪些决策已被正式记账、当前还能承受什么上下文与动作。
+3. `continuation pricing` 决定继续的代价是否已被显式结算。
 4. `classifier` 本身也必须被纳入 continuation pricing，而不是免费旁路。
 5. `writeback seam` 决定安全与成本判断是否已被写回宿主真相。
 6. `ingress / restore lineage` 决定 later 团队回到的是不是同一条责任链。
@@ -73,7 +73,7 @@ Claude Code 当前并没有公开一份名为：
 
 所以安全设计与省 token 设计不是两套平行主题，而是同一条拒绝免费扩张的 repair 协议。
 
-## 3. repair session object 与 authority chain
+## 3. repair session object 与 governance key attestation
 
 治理宿主应至少围绕下面对象消费 refinement correction 真相：
 
@@ -87,7 +87,7 @@ Claude Code 当前并没有公开一份名为：
 6. `shared_consumer_surface`
 7. `repair_started_at`
 
-### 3.2 repair authority chain
+### 3.2 governance key attestation
 
 1. `authority_source_before`
 2. `authority_source_after`

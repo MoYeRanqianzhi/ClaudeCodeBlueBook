@@ -1,4 +1,4 @@
-# 治理控制面对象验证手册：authority source、decision window、continuation gate与rollback object回归
+# 治理控制面对象验证手册：governance key、typed ask、decision window、continuation pricing与rollback cleanup回归
 
 这一章不再解释 `governance control plane` 为什么重要，而是把它压成一张长期运行里的验证手册。
 
@@ -33,17 +33,17 @@
 
 所以这层验证最先要看的不是表象，而是：
 
-1. authority source
-2. typed decision continuity
+1. governance key continuity
+2. typed ask continuity
 3. decision window continuity
-4. continuation gate continuity
-5. rollback object continuity
+4. continuation pricing continuity
+5. rollback cleanup continuity
 
 ## 2. 回归症状
 
 看到下面信号时，应提高警惕：
 
-1. 团队开始只看 mode，而不看当前 authority source。
+1. 团队开始只看 mode，而不看当前 governance key。
 2. 审批完成被误当治理完成。
 3. Context Usage 被降级成一个 token 面板。
 4. 继续条件开始只剩“再来一轮看看”。
@@ -53,15 +53,15 @@
 
 每次变更后，至少逐项检查：
 
-1. `authority source`
+1. `governance key continuity`
    - mode、settings、policy 与状态写回是否仍来自正式权威入口。
-2. `typed decision continuity`
+2. `typed ask continuity`
    - 当前动作是否仍由正式 deny / ask / allow / reason 语义支撑。
 3. `decision window continuity`
    - 当前窗口是否仍把 Context Usage、pending action 与当前状态一起解释。
-4. `continuation gate continuity`
+4. `continuation pricing continuity`
    - 当前 stop / continue / upgrade 是否仍是正式时间边界。
-5. `rollback object continuity`
+5. `rollback cleanup continuity`
    - 当前失败路径是否仍知道回退到哪个对象。
 
 ## 4. 直接拒收条件
@@ -79,12 +79,12 @@
 每次治理 drift 至少记录：
 
 1. `governance_object_id`
-2. `authority_source`
+2. `governance_key`
 3. `current_state`
 4. `decision_window`
 5. `winner_source`
-6. `continuation_gate`
-7. `rollback_object`
+6. `continuation_pricing`
+7. `rollback_cleanup_ref`
 8. `symptom`
 9. `reject_reason`
 
@@ -93,7 +93,7 @@
 更稳的防再发顺序是：
 
 1. 先补 current object / current window 的显式化。
-2. 先补 authority source 的单一入口。
+2. 先补 governance key 的单一入口。
 3. 先补 typed decision 的拒收语义。
 4. 先补 continuation gate 的对象升级条件。
 5. 最后才补更多阈值、弹窗或统计项。
@@ -102,13 +102,12 @@
 
 在你准备宣布“治理机制仍然健康”前，先问自己：
 
-1. 当前所有判断是否仍围绕同一 authority source。
+1. 当前所有判断是否仍围绕同一 governance key。
 2. 现在看到的是 decision window，还是几个分散面板。
-3. continuation 是正式 gate，还是默认继续。
-4. 失败时我能否立刻指出 rollback object。
+3. continuation 是正式 pricing，还是默认继续。
+4. 失败时我能否立刻指出 rollback cleanup 对象。
 5. 如果把 modal 和 dashboard 藏起来，团队是否仍知道该如何判断。
 
 ## 8. 一句话总结
 
 真正成熟的治理机制验证，不是看门禁还在不在，而是持续证明当前治理对象、当前窗口和当前继续边界仍然是同一个判断链。
-

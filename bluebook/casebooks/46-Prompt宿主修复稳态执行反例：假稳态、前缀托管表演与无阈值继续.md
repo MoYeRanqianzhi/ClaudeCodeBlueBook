@@ -1,4 +1,4 @@
-# Prompt宿主修复稳态执行反例：lineage 假稳态、前缀托管表演与无阈值继续
+# Prompt宿主修复稳态执行反例：message lineage 假稳态、stable prefix 托管表演与无阈值继续
 
 这一章不再回答“Prompt 宿主修复稳态执行该怎样运行”，而是回答：
 
@@ -8,8 +8,8 @@
 
 1. 为什么 Prompt 宿主修复稳态执行最危险的失败方式不是“没有 steady-state card”，而是“steady-state card 存在，却仍围绕 summary 平静感工作”。
 2. 为什么假稳态最容易把 `message lineage` 与 `protocol transcript` 重新退回“最近一直很稳”的气氛判断。
-3. 为什么前缀托管表演最容易把 `stable prefix boundary`、`compaction lineage` 与 `cache-safe fork reuse` 重新退回摘要好运气与交接叙事。
-4. 为什么无阈值继续最容易把 `continuation object`、`continuation qualification` 与 `reopen threshold` 重新退回默认继续与以后再说。
+3. 为什么 stable prefix 托管表演最容易把 `stable prefix boundary`、`compaction lineage` 与 `cache-safe fork reuse` 重新退回摘要好运气与交接叙事。
+4. 为什么无阈值继续最容易把 `continuation object`、`continuation qualification` 与 `threshold liability` 重新退回默认继续与以后再说。
 5. 怎样用苏格拉底式追问避免把这些反例读成“把 steady-state card 再填细一点就好”。
 
 ## 0. 代表性源码锚点
@@ -37,8 +37,8 @@
 Prompt 宿主修复稳态执行最危险的，不是：
 
 - 没有 steady-state card
-- 没有 handoff continuity
-- 没有 reopen threshold drill
+- 没有 stable prefix boundary seal
+- 没有 threshold liability drill
 
 而是：
 

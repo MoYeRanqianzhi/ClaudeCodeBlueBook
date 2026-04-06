@@ -1,4 +1,4 @@
-# 治理宿主修复稳态纠偏再纠偏改写纠偏协议：authority source restitution、ledger reseal、decision window refreeze、continuation pricing rebinding、classifier pricing attestation、writeback seam reseal、capability liability recustody与threshold rebinding
+# 治理宿主修复稳态纠偏再纠偏改写纠偏协议：governance key restitution、typed ask ledger reseal、decision window refreeze、continuation pricing rebinding、classifier pricing attestation、writeback seam reseal、capability liability recustody与threshold rebinding
 
 这一章回答五个问题：
 
@@ -38,7 +38,7 @@ Claude Code 当前并没有公开一份名为：
 
 1. `rewrite_correction_session_object`
 2. `false_authority_demotion_set`
-3. `authority_chain_restitution`
+3. `governance_key_restitution`
 4. `ledger_reseal`
 5. `decision_window_refreeze`
 6. `continuation_pricing_rebinding`
@@ -56,11 +56,11 @@ Claude Code 当前并没有公开一份名为：
 
 而是：
 
-- 围绕这十一类对象消费统一定价控制面怎样把 rewrite correction 重新拉回同一个 authority、同一个 ledger、同一个 decision window、同一个 continuation pricing covenant、同一个 classifier 定价、同一个 writeback seam、同一个 capability liability 与同一个 reopen threshold
+- 围绕这十一类对象消费统一定价控制面怎样把 rewrite correction 重新拉回同一个 `governance key`、同一条 typed ask ledger、同一个 decision window、同一个 continuation pricing covenant、同一个 classifier 定价、同一个 writeback seam、同一个 capability liability 与同一个 reopen threshold
 
 这层真正统一的不是两套不同能力，而是同一条：
 
-- `authority -> ledger -> window -> pricing -> classifier cost -> writeback seam -> capability liability -> threshold`
+- `governance key -> typed ask ledger -> window -> pricing -> classifier cost -> writeback seam -> capability liability -> threshold`
 
 安全设计回答：
 

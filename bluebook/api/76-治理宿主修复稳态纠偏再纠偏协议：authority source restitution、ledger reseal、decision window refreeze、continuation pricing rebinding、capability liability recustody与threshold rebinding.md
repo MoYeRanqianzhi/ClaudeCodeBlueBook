@@ -1,4 +1,4 @@
-# 治理宿主修复稳态纠偏再纠偏协议：authority source restitution、ledger reseal、decision window refreeze、continuation pricing rebinding、capability liability recustody与threshold rebinding
+# 治理宿主修复稳态纠偏再纠偏协议：governance key restitution、typed ask ledger reseal、decision window refreeze、continuation pricing rebinding、capability liability recustody与threshold rebinding
 
 这一章回答五个问题：
 
@@ -37,7 +37,7 @@ Claude Code 当前并没有公开一份名为：
 但治理宿主修复稳态再纠偏实际上已经能围绕八类正式对象稳定成立：
 
 1. `steady_recorrection_object`
-2. `authority_source_restitution`
+2. `governance_key_restitution`
 3. `ledger_reseal`
 4. `decision_window_refreeze`
 5. `continuation_pricing_rebinding`

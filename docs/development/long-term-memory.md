@@ -8,6 +8,81 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `README / navigation/README / 03 / 09` 现已继续把前门合同收口：
+  - `README / navigation/README` 现已进一步降成路由页，不再各自半篇解释三条母线。
+  - `03` 现已明确只解释 `09` 的三条固定短语，不再近义重写。
+  - `09` 现已把第一张控制面图里的 Prompt 根对象继续收回到 `message lineage / projection consumer / protocol transcript / continuation qualification / cache-safe forks`。
+- 新的长期结论：
+  - 目录结构真正成熟时，最上层入口不应各自再造一版主线定义；应只有一个主线宪法文案源，其余入口只做路由或解释。
+  - Prompt 线真正成熟时，主线宪法页也不应再保留 `authority chain / request object` 这类过渡词；最短对象链应直接前置 `message lineage / projection consumer / protocol transcript / continuation qualification`。
+- `casebooks/13 / 35 / 46` 与 `navigation/43` 现已继续把 Prompt / 治理前门语言收口：
+  - `13 / 46` 现已把 Prompt 反例前门从 `Evidence Envelope / 前缀托管 / reopen threshold` 收回到 `message lineage / protocol truth / stable prefix boundary / threshold liability`。
+  - `35 / 43` 现已把治理反例与支持面入口从 `假窗口重置 / 免费重入 / rollback object` 收回到 `decision window / transient authority cleanup / durable-vs-transient cleanup`。
+- 新的长期结论：
+  - Prompt / 治理线最会反向输送旧世界观的，不一定是协议页，而是 casebook 和导航页的 front words；这些前门词如果不换代，会在读者进入正文前就先把根对象偷换掉。
+  - Prompt 前门更稳的 visible root 应先暴露 `message lineage / protocol transcript / stable prefix boundary / continuation qualification / threshold liability`，治理前门更稳的 visible root 应先暴露 `governance key / externalized truth chain / decision window / continuation pricing / durable-vs-transient cleanup`。
+- `api/53 / playbooks/28 / casebooks/15 / 42` 现已继续把结构 visible root 收口：
+  - `api/53` 现已把结构宿主消费面从 `authority state / generation evidence / recovery boundary / anti-zombie projection` 收回到 `authority object / per-host authority width / freshness gate / recovery asset non-sovereignty / anti-zombie evidence`。
+  - `playbooks/28` 现已把可演化内核验证里的 `transition / dependency` 收硬成 `transition legality / dependency honesty`。
+  - `casebooks/15 / 42` 现已把结构失真前门从 `Evidence Envelope / authority watch` 这类看板词收回到 `authority object / current truth / freshness gate` 的对象语言。
+- 新的长期结论：
+  - 结构线最会反向输送旧世界观的，不一定是深层术语，而是 `support surface / envelope / watch` 这类 front word；它们会让 later maintainer 先看到看板、材料和监控，而不是 current-truth discipline。
+  - 结构正文真正成熟时，`authority object / per-host authority width / event-stream-vs-state-writeback / freshness gate / stale worldview / ghost capability` 应先于一切 envelope、watch、成功率与目录体感出场。
+- `00 / 01 / 06 / README / guides/06` 现已继续把正文里的元叙事和记忆仓库分工收口：
+  - `00 / README` 现已不再把 `docs/` 直接写成“上一轮推进到哪”的工作台入口，而改写成方法附录、证据归档与目录治理记录。
+  - `01` 现已把 `query` 主循环的表述从“直到本轮无需继续”收回到 `continuation qualification` 语义。
+  - `06 / guides/06` 现已把 `docs/`、changelog、研究日志与长期记忆 这些载体名，改写成独立附录、共享 artifact、长期规则载体与推进记录等稳定类别。
+- 新的长期结论：
+  - 正文去记忆化真正该清理的，不是所有提到 memory / continue / evidence 的句子，而是那些把读者拉到作者工作台、提交节奏与记忆仓库分工的元叙事句子。
+  - 同一句话里只要同时出现“本轮/下一批/研究日志/changelog/长期记忆”这类推进载体与正文主判断，就很容易让主线退化成工作台；更稳的写法应把它们压回“继续资格”“证据归档”“独立附录”这类可复用对象。
+- `api/79 / 90 / 91 / 93` 现已把更深一层 rewrite / refinement protocol 页继续收口：
+  - `79 / 91` 现已把治理深协议可见主语从 `authority source / authority chain` 收回到 `governance key / typed ask ledger / decision window / continuation pricing`。
+  - `90 / 93` 现已把 Prompt 深协议可见主语从 `authority chain / compiled request truth` 收回到 `message lineage / role-contract custody / protocol transcript / continuation qualification`。
+- 新的长期结论：
+  - 深协议页真正危险的地方，不只在 H1，还在前五问、首段对象清单与第一性原理第一跳；只要这些开头对象还在发旧主语，later maintainer 就会在正文之前先被拉回上一代协议语言。
+  - Prompt 深协议更稳的 visible root 不再是 `compiled request truth` 或 `authority chain`，而是 `message lineage / role-contract custody / protocol transcript / continuation qualification`。
+  - 治理深协议更稳的 visible root 不再是 `authority source` 或抽象 `authority`，而是 `governance key / typed ask ledger / decision window / continuation pricing / durable-transient cleanup`。
+- `api/81 / 82 / 87 / 88` 现已把更深一层协议标题债继续收口：
+  - `81 / 87` 现已把 Prompt 深协议可见主语从 `compiled request truth / authority chain` 收回到 `message lineage`。
+  - `82 / 88` 现已把治理深协议可见主语从 `authority source restitution / authority chain` 收回到 `governance key / typed ask ledger`。
+- 新的长期结论：
+  - 深协议标题层如果继续保留旧主语，会比浅层标题更危险，因为它们看起来更正式、更像最终 contract，later maintainer 更容易直接拿来当权威入口。
+- `api/75 / 76 / playbooks/27 / 28` 现已把一批高价值可见标题债统一收口：
+  - `75` 现已把 Prompt 深协议可见主语从 `compiled request truth restitution` 收回到 `message lineage restitution`。
+  - `76` 现已把治理深协议可见主语从 `authority source restitution` 收回到 `governance key restitution`。
+  - `27` 现已把治理验证可见主语从 `authority source / continuation gate / rollback object` 收回到 `governance key / typed ask / continuation pricing / rollback cleanup`。
+  - `28` 现已把结构验证可见主语从 `authority / recovery asset` 收回到 `authority object / recovery asset non-sovereignty`。
+- 新的长期结论：
+  - 标题层真正成熟时，最重要的不是更短，而是它是否继续把 later maintainer 先带到当前对象链上；如果 H1 仍在发旧主语，正文已经换代也会被抵消。
+  - 当前标题债已经开始从 README / 导航层转移到深协议页和少数验证手册；后续若继续深挖，优先级仍高于再扩大量正文。
+  - 当前最值钱的标题债可分两层：第一层是宿主验收 / 入口合同页，第二层是深协议 / 验证页；后一层现在才是继续推进时最容易被忽略、但最会反向输送旧主语的区域。
+- `api/54 / 56` 现已把 Prompt / 结构宿主验收协议统一到当前对象链：
+  - `54` 现已把 Prompt 验收协议固定到 `message lineage -> projection consumer -> section registry + stable prefix boundary -> protocol transcript -> continuation object -> continuation qualification`。
+  - `56` 现已把结构验收协议固定到 `authority object -> per-host authority width -> writeback path -> freshness gate -> anti-zombie evidence -> reopen boundary`，并把 `resume order` 降为 re-entry proof。
+- `security/README / risk/README` 现已把治理前门标签继续收回到 `governance key` 的当前读法，不再让专题入口层继续把 `authority source` 当根主语发出去。
+- 新的长期结论：
+  - API 合同页真正成熟时，最危险的不是正文没分析到，而是合同标题与入口标签还在继续发旧主语；一旦 contract 页没换代，README 和调用方会比正文更快把读者拉回旧对象。
+  - 当前最值钱的标题债已开始从正文层转移到协议标题层和少数案例 / 手册 visible title 层；下一批若继续深入，优先级高于再扩 README 入口。
+- `guides/58 / playbooks/33` 现已把治理迁移纠偏与迁移演练尾部统一到当前对象链：
+  - `58` 现已把治理迁移纠偏固定回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
+  - `33` 现已把治理宿主迁移演练固定回 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> rollback / durable-transient cleanup`。
+- 新的长期结论：
+  - 治理迁移尾部真正成熟时，不应再把 `authority source`、`permission ledger`、`continuation gate` 与 `rollback object` 写成一级迁移主语；它们都只能是治理根链上的 source slot、证据面、verdict 或 cleanup carrier。
+  - 当前治理线尾部已经基本收口，下一批如果继续走治理，不再优先改正文，而更像是标题/文件名层的旧词债清理。
+- `navigation/README / playbooks/README / guides/README` 现已把目录入口层进一步收口：
+  - `navigation/README` 现已把结构运行链拆成 `46 -> 31 -> 37`、`67 -> 70 -> 73 -> 76`、`79` 三档，不再让结构入口层继续像一条平铺长链。
+  - `playbooks/README` 现已把结构推荐入口与对象主线统一成 `authority object -> per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`。
+  - `guides/README` 现已明确 `57-59` 与 `81 / 90` 已经回到新对象链，不再继续作为旧桥接页被入口层误导。
+- 新的长期结论：
+  - 目录结构真正成熟时，入口层不应再只给编号链，而必须先给对象链和阶段分流；否则就算正文已经换代，读者仍会被入口层重新带回旧顺序。
+  - 结构线入口尤其需要显式区分 `legacy intake / acceptance`、`current repair / refinement`、`current validation` 三档；不然 `31 / 37` 和 `67-79` 会继续被读成同一层级。
+- `guides/57 / playbooks/35 / playbooks/77` 现已把 Prompt 迁移纠偏、宿主验收执行与长期验证尾部统一到当前对象链：
+  - `57` 现已把 Prompt 迁移纠偏固定回 `message lineage -> projection consumer -> protocol transcript -> stable prefix boundary -> continuation object -> continuation qualification`。
+  - `35` 现已把 Prompt 宿主验收执行固定回 `message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification -> reject / rollback`。
+  - `77` 现已把长期验证固定回 `message lineage -> projection consumer -> section registry -> protocol transcript -> continuation object -> continuation qualification -> cache-safe fork reuse`。
+- 新的长期结论：
+  - Prompt 验收尾部真正成熟时，不应再让“请求对象”“compiled request truth”“continue qualification”这些旧尾语留在执行主轴上；执行、验证与迁移层都必须回到同一条 `message lineage` 根链。
+  - 当前目录层最值钱的继续点，已由并行 Agent 收敛到 `navigation/README + playbooks/README`，可选再带 `guides/README`；这一批应只做入口分流，不动正文，把结构线明确拆成 legacy intake/acceptance、current repair/refinement、current validation 三档。
 - `guides/81 / 90` 现已把 Prompt 深层再纠偏与 refinement 执行统一到当前对象链：
   - `81` 现已把 Prompt 再纠偏执行固定到 `message lineage -> projection consumer -> protocol transcript -> stable prefix boundary -> continuation object -> continuation qualification -> threshold liability`。
   - `90` 现已把 Prompt refinement execution 固定到 `message lineage -> projection consumer -> section registry + dynamic boundary -> coordinator synthesis custody -> protocol-prefix custody -> continuation object -> reopen liability`。

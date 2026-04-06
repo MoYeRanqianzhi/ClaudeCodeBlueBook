@@ -1,11 +1,11 @@
-# Prompt Evidence Envelope反例：message lineage 被原文、总结与只读历史拆散
+# Prompt message lineage 失真反例：原文 prompt、作者总结与只读历史如何拆散 protocol truth
 
-这一章不再收集“Prompt 自身写错”的反例，而是收集 Prompt 证据明明已经存在，却被不同消费者拆成不同替身之后最常见的失真样本。
+这一章不再收集“Prompt 自身写错”的反例，而是收集 `message lineage / protocol transcript / continuation object` 明明已经存在，却被不同消费者拆成不同替身之后最常见的失真样本。
 
 它主要回答五个问题：
 
-1. 为什么 Prompt 证据已经存在时，团队仍然会重新退回文案崇拜。
-2. 为什么 Prompt 的 shared evidence envelope 最容易被拆成“原文 prompt”“cache 指标”“作者总结”“聊天历史”四份材料。
+1. 为什么 Prompt 运行时对象已经存在时，团队仍然会重新退回文案崇拜。
+2. 为什么 Prompt 的 shared protocol-truth chain 最容易被拆成“原文 prompt”“cache 指标”“作者总结”“聊天历史”四份材料。
 3. 为什么这些坏解法最容易偷走 Claude Code prompt 的真正魔力。
 4. 怎样把这些坏解法改写回 Claude Code 式共享证据消费。
 5. 怎样用苏格拉底式追问避免把这一章读成“多补一点 prompt 说明书就行”。

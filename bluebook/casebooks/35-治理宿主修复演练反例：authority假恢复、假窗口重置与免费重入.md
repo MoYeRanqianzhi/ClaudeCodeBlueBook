@@ -1,4 +1,4 @@
-# 治理宿主修复演练反例：governance key 假恢复、假窗口重置与免费重入
+# 治理宿主修复演练反例：governance key 假恢复、decision window 假重置与transient authority 免费续租
 
 这一章不再回答“治理宿主修复演练该怎样运行”，而是回答：
 
@@ -9,7 +9,7 @@
 1. 为什么治理宿主修复演练最危险的失败方式不是“没有 repair card”，而是“repair card 存在，却仍围绕交互投影工作”。
 2. 为什么治理主键假恢复最容易把治理主权重新退回 mode 标签、页面状态与口头解释。
 3. 为什么假窗口重置最容易把安全设计与省 token 设计同时降格成仪表盘刷新与统计重置。
-4. 为什么免费重入最容易把 `continuation pricing` 重新退回默认继续。
+4. 为什么 transient authority 免费续租最容易把 `continuation pricing` 与 `durable-vs-transient cleanup` 重新退回默认继续。
 5. 怎样用苏格拉底式追问避免把这些反例读成“把审批界面再做清楚一点就好”。
 
 ## 0. 代表性源码锚点
@@ -38,8 +38,8 @@
 治理宿主修复演练最危险的，不是：
 
 - 没有 repair card
-- 没有 window reset
-- 没有 re-entry ticket
+- 没有 decision window reset
+- 没有 transient-authority cleanup ticket
 
 而是：
 

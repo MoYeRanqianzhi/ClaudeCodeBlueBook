@@ -1,12 +1,15 @@
-# Prompt宿主验收协议：compiled request truth、section registry、protocol transcript health与continue qualification
+# Prompt 宿主验收协议：message lineage、projection consumer、protocol transcript 与 continuation qualification
 
-这一章回答五个问题：
+Claude Code 当前没有公开一份单独名为 `PromptAcceptanceContract` 的对象，但宿主、SDK、CI 与交接系统已经可以围绕一条更稳的 contract chain 验收 Prompt 世界：
 
-1. Claude Code 当前到底通过哪些正式对象让宿主、SDK、CI 与交接系统验收 Prompt 世界。
-2. 哪些字段属于必须消费的 `compiled request truth`，哪些属于 reject 语义，哪些仍然不应被绑定成公共 ABI。
-3. 为什么 Prompt 验收不应退回 `systemPrompt` 字符串、cache hit 曲线与 `stop_reason`。
-4. 宿主开发者该按什么顺序验收这套 Prompt 规则面。
-5. 哪些现象一旦出现应被直接拒收，而不是继续灰度。
+1. `message lineage`
+2. `projection consumer`
+3. `section registry + stable prefix boundary`
+4. `protocol transcript`
+5. `continuation object`
+6. `continuation qualification`
+
+`compiled request truth` 在这里最多只保留为旧总称；它不再适合作为一级 contract 主语。
 
 ## 0. 关键源码锚点
 
@@ -28,43 +31,16 @@
 - `claude-code-source-code/src/query/stopHooks.ts:257-331`
 - `claude-code-source-code/src/query.ts:1258-1340`
 
-## 1. 先说结论
+## 1. 必须消费的 contract 对象
 
-Claude Code 当前并没有公开一份名为：
+### 1.1 `message lineage`
 
-- `PromptAcceptanceContract`
+宿主至少应显式消费：
 
-的单独公共对象。
-
-但 Prompt 宿主验收实际上已经能围绕四类正式对象稳定成立：
-
-1. `compiled_request_truth`
-2. `section_registry_snapshot`
-3. `protocol_transcript_health`
-4. `continue_qualification`
-
-更成熟的验收方式不是：
-
-- 只看 system prompt 截图
-- 只看 token 或 cache hit 曲线
-- 只看最后一条消息
-
-而是：
-
-- 围绕这四类对象消费 Prompt 世界是否仍然成立
-
-## 2. compiled request truth：最小验收对象
-
-宿主应至少围绕下面对象验收 Prompt 真相：
-
-1. `request_object_id`
-2. `system_blocks_hash`
-3. `tool_schemas_hash`
-4. `model`
-5. `betas`
-6. `query_source`
-7. `global_cache_strategy`
-8. `extra_body_hash`
+1. `message_lineage_ref`
+2. `lineage_kernel_integrity`
+3. `request_object_id_legacy`
+4. `shared_consumer_surface`
 
 这些字段回答的不是：
 
@@ -72,9 +48,23 @@ Claude Code 当前并没有公开一份名为：
 
 而是：
 
-- 模型这次真正被编译进去了什么世界
+- 当前到底是哪一条世界线在被宿主、CI、评审与交接共同消费
 
-## 3. section registry 与 stable prefix 边界
+### 1.2 `projection consumer`
+
+Prompt 验收还必须显式消费：
+
+1. `display_consumer_ref`
+2. `model_api_consumer_ref`
+3. `sdk_control_consumer_ref`
+4. `handoff_resume_consumer_ref`
+5. `projection_consumer_alignment`
+
+这说明宿主当前消费的不是一份模糊 transcript，而是：
+
+- 同一条 lineage 在不同 consumer 前的合法读法
+
+### 1.3 `section registry + stable prefix boundary`
 
 Prompt 验收还必须显式消费：
 
@@ -97,7 +87,7 @@ Prompt 验收还必须显式消费：
 
 - `section registry + stable prefix boundary` 共同组成的规则面
 
-## 4. protocol transcript health：不能退回 raw transcript
+### 1.4 `protocol transcript`
 
 Prompt 验收必须独立消费：
 
@@ -109,63 +99,52 @@ Prompt 验收必须独立消费：
 6. `duplicate_tool_use_count`
 7. `empty_assistant_placeholder_count`
 
-原因不是：
-
-- transcript 字段更多更完整
-
-而是：
+原因不是 transcript 字段更多，而是：
 
 - 模型真正消费的是 rewrite 后的协议 transcript，而不是 raw transcript
 
-## 5. lawful forgetting 与 continue qualification
+### 1.5 `continuation object` 与 `qualification`
 
 Prompt 验收还必须消费：
-
-### 5.1 lawful forgetting object
 
 1. `compact_trigger`
 2. `pre_tokens`
 3. `preserved_segment`
 4. `baseline_reset_applied`
 5. `post_compact_cleanup_applied`
-6. `handoff_ready`
+6. `continuation_object_ref`
+7. `continuation_qualification`
+8. `pending_action_ref`
 
-### 5.2 continue qualification
-
-1. `decision(continue|stop|requires_action)`
-2. `reason`
-3. `source(api_error|stop_hook|token_budget|max_output_recovery|compact_recovery)`
-4. `retryable`
-5. `pending_action_ref`
-
-这两组对象回答的不是：
+这回答的不是：
 
 - compact 有没有发生
 - 这轮有没有停下来
 
 而是：
 
-- lawful forgetting 之后系统是否仍可继续
+- compact 之后系统是否仍可继续
 - 当前继续资格是否仍由正式 gate 决定
 
-## 6. reject reason：必须共享的拒收语义
+## 2. reject verdict：必须共享的拒收语义
 
-更成熟的 Prompt 宿主 reject reason 至少应共享下面枚举：
+更成熟的 Prompt 宿主 reject verdict 至少应共享下面枚举：
 
-1. `raw_sysprompt_authority`
-2. `missing_section_registry`
-3. `boundary_missing_or_reordered`
-4. `compiled_request_drift_unexplained`
-5. `transcript_repair_required`
+1. `lineage_kernel_shadowed`
+2. `projection_consumer_split_detected`
+3. `missing_section_registry`
+4. `boundary_missing_or_reordered`
+5. `protocol_transcript_conflated_with_display`
 6. `summary_only_handoff`
-7. `continue_state_inconsistent`
-8. `post_compact_baseline_not_reset`
+7. `continuation_object_missing`
+8. `continuation_qualification_missing`
+9. `post_compact_baseline_not_reset`
 
-这些 reject reason 的价值在于：
+这些 reject verdict 的价值在于：
 
 - 把“像成功”的替身翻译成宿主、CI、评审与交接都能共享的拒收语义
 
-## 7. 不应直接绑定为公共 ABI 的对象
+## 3. 不应直接绑定为公共 ABI 的对象
 
 宿主不应直接把下面内容绑成长期契约：
 
@@ -180,15 +159,16 @@ Prompt 验收还必须消费：
 
 它们可以是观察信号，但不能是验收对象。
 
-## 8. 验收顺序建议
+## 4. 验收顺序建议
 
 更稳的顺序是：
 
-1. 先验 `compiled_request_truth`
-2. 再验 `section_registry_snapshot`
-3. 再验 `protocol_transcript_health`
-4. 再验 `lawful_forgetting_object`
-5. 最后验 `continue_qualification`
+1. 先验 `message lineage`
+2. 再验 `projection consumer`
+3. 再验 `section registry + stable prefix boundary`
+4. 再验 `protocol transcript`
+5. 再验 `continuation object`
+6. 最后验 `continuation qualification`
 
 不要反过来做：
 
@@ -196,6 +176,6 @@ Prompt 验收还必须消费：
 2. 不要先看 summary。
 3. 不要先看 `stop_reason`。
 
-## 9. 一句话总结
+## 5. 一句话总结
 
-Claude Code 的 Prompt 宿主验收协议，不是 system prompt 字符串 API，而是 `compiled request truth + section registry + protocol transcript health + continue qualification` 共同组成的规则面。
+Claude Code 的 Prompt 宿主验收协议，不是 system prompt 字符串 API，而是 `message lineage + projection consumer + section registry + protocol transcript + continuation object + continuation qualification` 共同组成的规则面。

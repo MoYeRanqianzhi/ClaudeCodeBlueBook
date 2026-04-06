@@ -1,10 +1,10 @@
-# 故障模型宿主消费面手册：authority state、generation evidence、recovery boundary与anti-zombie projection
+# 故障模型宿主消费面手册：authority object、per-host authority width、freshness gate与anti-zombie evidence
 
 这一章回答五个问题：
 
-1. Claude Code 当前到底通过哪些正式支持面让宿主消费结构故障模型。
-2. 哪些属于宿主可写恢复/回退入口，哪些属于宿主可读状态投影，哪些仍然是 internal-only 反僵尸机制。
-3. 为什么 authority state、generation evidence、recovery boundary 与 anti-zombie projection 必须被一起理解。
+1. Claude Code 当前到底通过哪些正式支持面让宿主消费结构故障模型的 `authority object`、合法 `per-host authority width` 与 `freshness gate`。
+2. 哪些属于宿主可写恢复/回退入口，哪些属于宿主可读 `authority object / per-host authority width` 投影，哪些仍然是 internal-only 的 stale-writer / anti-zombie 机制。
+3. 为什么 `authority object`、`per-host authority width`、`freshness gate` 与 `anti-zombie evidence` 必须被一起理解。
 4. 为什么宿主不该把源码先进性理解成目录图、恢复成功率或作者说明。
 5. 宿主开发者该按什么顺序接入这套故障模型支持面。
 
@@ -31,10 +31,10 @@ Claude Code 当前并没有公开一份名为：
 
 1. `rollback / recovery requests`
    - 宿主能写哪些恢复与回退动作。
-2. `authority / state projections`
-   - 宿主能看到哪些当前权威状态与阻塞状态。
-3. `internal fault-model machinery`
-   - 真正负责 generation guard、stale-safe merge、recovery boundary 与 anti-zombie 的内部机制。
+2. `authority object / per-host authority width projections`
+   - 宿主能看到哪些当前权威状态、阻塞状态与合法消费宽度。
+3. `freshness-gate / stale-writer machinery`
+   - 真正负责 generation guard、stale-safe merge、recovery asset non-sovereignty 与 anti-zombie 的内部机制。
 
 更成熟的接入方式不是：
 
@@ -42,7 +42,7 @@ Claude Code 当前并没有公开一份名为：
 
 而是：
 
-- 消费已经外化出来的 authority state、recovery contract 与 fault-model projection
+- 消费已经外化出来的 `authority object / per-host authority width` 投影、recovery contract 与 freshness-gate verdict
 
 ## 2. rollback / recovery requests：宿主可写恢复边界
 
@@ -68,9 +68,9 @@ Claude Code 当前并没有公开一份名为：
 
 - 这是结构故障模型对宿主暴露出的最小恢复 / 回退 contract
 
-## 3. authority state：宿主可读当前权威状态
+## 3. authority object / per-host authority width：宿主可读当前权威状态
 
-宿主当前最该消费的 authority state 主要有：
+宿主当前最该消费的 `authority object / per-host authority width` 投影主要有：
 
 1. `session_state_changed.state`
 2. `external_metadata.permission_mode`
@@ -88,7 +88,7 @@ Claude Code 当前并没有公开一份名为：
 
 - 当前故障模型的最小宿主投影
 
-## 4. generation evidence：宿主应消费什么、不应消费什么
+## 4. freshness gate evidence：宿主应消费什么、不应消费什么
 
 `QueryGuard` 与 task framework 真正保护的是：
 
@@ -104,7 +104,7 @@ Claude Code 当前并没有公开一份名为：
 2. 通过回退 contract 和恢复 contract 消费其边界。
 3. 不把 `_generation`、`updatedTaskOffsets`、`evictedTaskIds` 等内部字段当公共 ABI。
 
-## 5. recovery boundary：宿主可见边界与 internal-only 细节
+## 5. recovery asset non-sovereignty：宿主可见边界与 internal-only 细节
 
 Claude Code 的恢复边界真正依赖：
 

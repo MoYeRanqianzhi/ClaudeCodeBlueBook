@@ -1,10 +1,6 @@
 # 导航专题
 
-`navigation/` 当前有 104 篇编号文档，范围 `01-104`。本目录是跨目录路由层：把主线章节、专题目录、反例、演练、协议工件和 builder 手册压回稳定的阅读地图与反查入口，而不是承载轮次推进日志。
-
-还要先记一句：
-
-- `navigation/` 负责分流，不负责重新定义三条母线；需要权威短语时，先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)
+`navigation/` 当前有 104 篇编号文档，范围 `01-104`。本目录只负责跨目录路由，不重新定义三条母线；需要权威短语与最短主线时先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)；只有当问题已经变成跨目录反查时再留在这里。
 
 ## 目录分层
 
@@ -39,10 +35,12 @@
 
 - Prompt 执行链：`46 -> 29 -> 35 -> 65 -> 68 -> 71 -> 74 -> 77`
 - 治理执行链：`46 -> 30 -> 36 -> 66 -> 69 -> 72 -> 75 -> 78`
-- 结构执行链：`46 -> 31 -> 37 -> 67 -> 70 -> 73 -> 76 -> 79`
-- Prompt 深段对象：`message lineage -> projection consumer -> continuation object -> cache-safe fork`
+- 结构宿主接入与验收：`46 -> 31 -> 37`
+- 结构修复 / refinement：`67 -> 70 -> 73 -> 76`
+- 结构长期验证：`79`
+- Prompt 深段对象：`message lineage -> projection consumer -> protocol transcript -> continuation object -> continuation qualification -> cache-safe fork`
 - 治理深段对象：`governance key -> externalized truth -> durable-vs-transient -> continuation pricing`
-- 结构深段对象：`per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`
+- 结构深段对象：`authority object -> per-host authority width -> event-stream-vs-state-writeback -> freshness gate -> stale worldview / ghost capability`
 - 公开镜像证据分级与进一步 reject path：在三条链各自稳定后，再回 `102`
 
 ## 什么时候用它
@@ -52,6 +50,7 @@
 - 需要把 `guides/`、`casebooks/`、`playbooks/`、`api/`、`architecture/` 串成同一条阅读链时
 - 需要确认某个深层编号段应该归谁解释时
 - 需要确认 Prompt / 治理 / 结构三条执行链各自应该走哪组接入、验收、修复与验证手册时
+- 需要区分结构线里的旧 intake / acceptance 页和当前 repair / validation 主入口时
 - 需要确认 Prompt 对象链在“为什么 / 审读 / 验证”三层分别该落到哪些页时
 - 需要确认 Prompt 编译链的“为什么 / 架构 / 反证 / 验证”该怎样稳定下钻时
 
