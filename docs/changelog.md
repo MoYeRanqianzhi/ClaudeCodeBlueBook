@@ -2,6 +2,7 @@
 
 ## 2026-04-06
 
+- 继续更新 `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41` 的苏格拉底审读前门，把 `authority chain / trusted inputs / single-writer / compiled request truth` 这组旧 front words 收回到 `message lineage / projection consumer / continuation qualification`、`governance key / decision window / durable-vs-transient cleanup` 与 `authority object / freshness gate / ghost capability`
 - 继续更新 `README / navigation/README / 03 / 09` 的前门合同，把 `09` 固定成唯一主线宪法文案源，并把根 README、导航 README 与设计哲学前言进一步降成路由页 / 解释页，同时把 `09` 第一张控制面图里的 Prompt 根对象继续收紧到 `message lineage / projection consumer / protocol transcript / continuation qualification`
 - 继续更新 `casebooks/13 / 35 / 46` 与 `navigation/43` 的 Prompt / 治理前门语言，把 `Evidence Envelope / 假窗口重置 / 免费重入 / 前缀托管 / rollback object` 这些旧 front words 收回到 `message lineage / protocol truth / stable prefix boundary / threshold liability` 与 `governance key / decision window / durable-vs-transient cleanup`
 - 继续更新 `api/53 / playbooks/28 / casebooks/15 / 42` 的结构 visible root，把故障模型宿主消费面、可演化内核验证与结构失真反例从 `authority state / transition / dependency / Evidence Envelope / authority watch` 这些旧 front words 收回到 `authority object / per-host authority width / freshness gate / anti-zombie evidence / current truth`

@@ -6,6 +6,8 @@
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/mainloop`
 - 研究源码: `claude-code-source-code/`
 - 目标版本: `v2.1.88`
+- 本轮苏格拉底审读前门推进动作: 已继续更新 `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41`，把 Prompt / 治理 / 结构自校模板的可见主语从 `authority chain / trusted inputs / single-writer / compiled request truth` 收回到 `message lineage / projection consumer / continuation qualification`、`governance key / decision window / durable-vs-transient cleanup` 与 `authority object / freshness gate / ghost capability`。
+- 本轮自校层判断加固: 当前最值钱的“深入”不再只是补更多结论，而是让自校问题本身先问当前对象链；否则读者即使记住结论，也会沿旧 front words 去反问自己。
 - 本轮前门合同收口动作: 已继续更新 `README / navigation/README / 03 / 09`，把 `09` 固定成唯一主线宪法文案源，把根 README 与导航 README 进一步降成路由页，并把 `09` 第一张控制面图里的 Prompt 根对象从 `authority chain / request object` 收回到 `message lineage / projection consumer / protocol transcript / continuation qualification`。
 - 本轮目录结构判断加固: 目录优化在当前阶段最值钱的，不是再加更多推荐链，而是让根 README、导航 README 与主线页不再各自近义改写三条母线；只保留一个权威短语源，其余前门只负责分流或解释。
 - 本轮 Prompt / 治理前门收口动作: 已继续更新 `casebooks/13 / 35 / 46` 与 `navigation/43`，把 Prompt / 治理反例与支持面入口的可见主语从 `Evidence Envelope / 假窗口重置 / 免费重入 / 前缀托管 / rollback object` 收回到 `message lineage / protocol transcript / stable prefix boundary / continuation qualification / threshold liability` 与 `governance key / decision window / durable-vs-transient cleanup`。

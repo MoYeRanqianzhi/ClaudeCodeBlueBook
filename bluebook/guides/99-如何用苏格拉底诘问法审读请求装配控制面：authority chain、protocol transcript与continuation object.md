@@ -5,7 +5,7 @@
 它主要回答五个问题：
 
 1. 怎样避免把 Prompt 魔力重新写回 system prompt 咒语。
-2. 怎样按固定顺序审读 `authority chain`、`section registry`、`dynamic boundary`、`protocol transcript`、`message lineage` 与 `continuation object`。
+2. 怎样按固定顺序审读 `message lineage`、`projection consumer`、`section registry / dynamic boundary`、`protocol transcript`、`continuation object` 与 `continuation qualification`。
 3. 怎样判断一个 runtime 是否真的先把世界编译进模型，而不是先把世界描述给模型。
 4. 怎样识别那些看起来更聪明、实际更脆的坏改写。
 5. 怎样用苏格拉底式追问避免把这份模板重新写成一份更长的 Prompt 规范。
@@ -99,11 +99,11 @@
 
 - 如果 `parentUuid / message.id / tool_use_id` 的职责没有分开，后续一旦进入 compact、tool pairing 或 replay，系统就会开始错配是谁在继续同一个世界。
 
-### 2.8 当 behavior drift 发生时，团队能否点名断的是哪一层边界
+### 2.8 当 behavior drift 发生时，团队能否点名断的是哪一层对象边界
 
 判断标准：
 
-- 如果最后只能说“模型这次变笨了”，而不能说是 `authority chain / section registry / protocol transcript / lawful forgetting / continuation object` 哪一层失守，就还没有形成可解释 Prompt runtime。
+- 如果最后只能说“模型这次变笨了”，而不能说是 `message lineage / projection consumer / protocol transcript / lawful forgetting / continuation object / continuation qualification` 哪一层失守，就还没有形成可解释 Prompt runtime。
 
 ## 3. 常见自欺
 

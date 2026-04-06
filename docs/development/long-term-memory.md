@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `philosophy/84 / 85`、`guides/99 / 100 / 101` 与 `navigation/15 / 41` 现已继续把苏格拉底审读前门收口：
+  - Prompt 自校前门现已优先点名 `message lineage / projection consumer / protocol transcript / continuation qualification`，不再先从 `authority chain / compiled request truth` 起步。
+  - 治理自校前门现已优先点名 `governance key / decision window / continuation pricing / durable-vs-transient cleanup`，不再先从 `trusted inputs / 最小可见面` 起步。
+  - 结构自校前门现已优先点名 `authority object / freshness gate / ghost capability`，不再先从 `single-writer / recovery asset / anti-zombie` 起步。
+- 新的长期结论：
+  - 自校模板真正成熟时，不应只把新对象写在正文中段；提问顺序本身就必须先沿当前对象链展开，否则苏格拉底问题也会继续沿旧世界观发问。
+  - 深化设计内涵时，最值钱的工作常常不是补新理论，而是把“如何追问”先对齐当前对象链；这样结论、验证和自反才会共用同一语言。
 - `README / navigation/README / 03 / 09` 现已继续把前门合同收口：
   - `README / navigation/README` 现已进一步降成路由页，不再各自半篇解释三条母线。
   - `03` 现已明确只解释 `09` 的三条固定短语，不再近义重写。

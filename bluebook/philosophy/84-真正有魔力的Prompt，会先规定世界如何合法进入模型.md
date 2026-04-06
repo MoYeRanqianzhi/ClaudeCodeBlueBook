@@ -3,7 +3,7 @@
 这一章回答五个问题：
 
 1. 为什么 Claude Code 的 Prompt 魔力首先不是文案强，而是世界编译强。
-2. 为什么 `authority chain`、`message lineage`、`section registry`、`protocol transcript` 与 `lawful forgetting` 共同决定 Prompt 上限。
+2. 为什么 `message lineage`、`projection consumer`、`section registry / dynamic boundary`、`protocol transcript` 与 `continuation qualification` 共同决定 Prompt 上限。
 3. 为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到魔力。
 4. 怎样用苏格拉底式追问审一个新 runtime 是否真的拥有这种 Prompt 能力。
 5. 这对 Agent runtime 设计者意味着什么。
@@ -35,7 +35,7 @@
 这里的“世界”不是抽象比喻，而是：
 
 1. 谁能宣布当前真相
-2. 哪条 `message lineage` 挂住当前 compiled request truth
+2. 哪条 `message lineage` 挂住当前 protocol truth 与 current work
 3. 哪些 section 构成正式 Prompt 宪法
 4. 哪条 transcript 配进入模型
 5. 哪些 consumer 只消费投影，不能改写 protocol truth

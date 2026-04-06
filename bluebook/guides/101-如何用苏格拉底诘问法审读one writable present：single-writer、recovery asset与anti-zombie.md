@@ -1,11 +1,11 @@
-# 如何用苏格拉底诘问法审读one writable present：single-writer、recovery asset与anti-zombie
+# 如何用苏格拉底诘问法审读one writable present：authority object、freshness gate与ghost capability
 
 这一章不再解释源码先进性为什么成立，而是把 `architecture/84` 与 `philosophy/86` 继续压成一套 builder-facing 审读模板。
 
 它主要回答五个问题：
 
 1. 怎样避免把源码先进性重新写回目录美学与小文件焦虑。
-2. 怎样按固定顺序审读 `single-writer surface`、`recovery asset non-sovereignty`、`anti-zombie invariant` 与 `release shaping`。
+2. 怎样按固定顺序审读 `authority object / per-host authority width`、`event-stream-vs-state-writeback`、`freshness gate`、`recovery asset non-sovereignty` 与 `ghost capability eviction`。
 3. 怎样判断一个 runtime 是否真的保住了 one writable present。
 4. 怎样识别那些看起来更整齐、实际更会制造第二真相的坏改写。
 5. 怎样用苏格拉底式追问避免把这份模板重新写成结构洁癖清单。

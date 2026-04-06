@@ -4,7 +4,7 @@
 
 - 如果把 Prompt 魔力、安全/省 token、源码先进性一路压回不可约判断，Claude Code 到底在坚持什么第一性原理。
 
-更稳的读法不是先记住 `compiled request truth`、`governance control plane object`、`evolvable kernel object boundary` 这些深层对象名词，而是先记住三句：
+更稳的读法不是先记住 `compiled request truth`、`governance control plane object`、`evolvable kernel object boundary` 这些旧深层对象名词，而是先记住三句：
 
 1. 世界怎样进入模型
 2. 扩张怎样进入当前世界
@@ -25,7 +25,7 @@
 适合在这些问题下阅读：
 
 - 为什么 Claude Code 的 Prompt 会有如此的魔力。
-- 为什么魔力一旦离开 authority chain、section registry、protocol transcript、lawful forgetting 与 cache-safe forks，就会立刻褪色。
+- 为什么魔力一旦离开 `message lineage`、`projection consumer`、`protocol transcript`、`continuation qualification` 与 `cache-safe forks`，就会立刻褪色。
 
 稳定阅读顺序：
 
@@ -48,7 +48,7 @@
 适合在这些问题下阅读：
 
 - 为什么安全设计与省 token 设计看似不同，却总是落到同一治理控制面。
-- 为什么 action、visibility、context 与 continuation 必须被统一定价。
+- 为什么 `typed ask`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup` 必须被统一定价。
 
 稳定阅读顺序：
 
