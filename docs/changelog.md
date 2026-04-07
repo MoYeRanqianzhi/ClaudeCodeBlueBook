@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/userbook/README.md`、`docs/development/long-term-memory.md` 与 `docs/development/research-log.md`，把当前公开 artifact 版本锚点从旧的 `v2.1.88` live 表述修正为现场复核的 `@anthropic-ai/claude-code@2.1.92`，并明确 `research-log` 里更早的 `v2.1.88` 只应读成历史基线快照，不再当作当前公开 artifact 版本
 - 继续更新 `bluebook/userbook/README.md`，把 userbook 根前门最后一条 Prompt owner route 残余收掉：Prompt 线的 owner 级 ABI 现在在高流量 userbook 页里统一只回 `philosophy/84`，不再保留 `84 -> 51` 型双 owner 路线
 - 继续更新 `bluebook/userbook/01-主线使用/02-提问、补上下文与让模型继续工作.md`、`bluebook/userbook/04-专题深潜/08-上下文接入、附件与提示编译专题.md`、`bluebook/userbook/05-控制面深挖/README.md` 与 `bluebook/userbook/05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md`，把 user-facing Prompt witness 从字段映射继续压回动作判断：这些高流量页现在统一只保留 `目标 / 附件 / working set / next step` 的用户动作语言，不再在 frontdoor 层重列 `*_ref`，也不再把 owner route 写成 `84 -> 51`
 - 继续更新 `README.md`、`bluebook/navigation/README.md` 与 `bluebook/userbook/00-导读.md`，把高流量 route-only 页继续压回最小入口句：根 `README` 现在更明确只分四类入口，不再二次宣讲目录法；`navigation/README` 现在删除 `发言权卡 / 时间轴争议 / 先判三件事` 这类 owner-law 摘要，改成更纯的 next-hop；`userbook/00` 现在也把 Prompt alias 从 `*_ref` 字段映射改回用户动作语言

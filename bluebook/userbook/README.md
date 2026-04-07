@@ -1,6 +1,6 @@
 # Claude Code Userbook
 
-基于 `@anthropic-ai/claude-code` `v2.1.88` 反编译源码整理的用户手册。它不是第二本蓝皮书，而是用户侧入口：先判工作对象有没有送错、扩张或权限判断卡在哪一段、旧状态是否还在污染当前，再决定下一跳读哪个 README。
+当前官方 npm public artifact 现场核验为 `@anthropic-ai/claude-code@2.1.92`；本手册在 `public-evidence only` 约束下，结合已归档源码锚点与蓝皮书 owner 页整理用户侧理解路径。它不是第二本蓝皮书，而是用户侧入口：先判工作对象有没有送错、扩张或权限判断卡在哪一段、旧状态是否还在污染当前，再决定下一跳读哪个 README。
 
 这棵子树默认继承 [../README.md](../README.md)、[../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md) 与 `docs/development/00-研究方法.md` 已承认的 owner law；`userbook/` 只翻译用户动作、问题分型与二跳，不再在各层重复目录法、发言权或申诉链。
 
