@@ -9,7 +9,7 @@
 - 治理
   - `10 -> security / risk / playbooks`
 - 当前真相保护
-  - `102（先判 evidence mode / public-artifact ceiling / official-vs-mirror）-> 86 / 87 -> architecture/README -> 06`
+  - `102（先判 evidence mode / public-artifact ceiling / official-vs-mirror）`；缺 why 再去 `87`，缺 object / seam 再去 `architecture/README`，缺自校再去 `06`
 
 ## 根入口只做三件事
 

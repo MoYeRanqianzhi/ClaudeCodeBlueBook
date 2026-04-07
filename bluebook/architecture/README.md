@@ -6,7 +6,7 @@
 > Evidence mode
 > - 公开镜像的证据上限、canonical ladder 与降格规则统一回 [../guides/102](../guides/102-%E5%A6%82%E4%BD%95%E7%BB%99%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E5%81%9A%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7%EF%BC%9Acontract%E3%80%81registry%E3%80%81authoritative%20surface%E3%80%81adapter%20subset%E4%B8%8Ehotspot%20gap%20discipline.md)；本 README 只承接对象、状态机、writeback seam 与 choke point。
 
-如果只先记源码质量判断在架构层的一句话，也只记这句：
+如果只先记源码质量在架构对象层的一句话，也只记这句：
 
 - 架构层不负责再判梯子，而负责把 `authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer` 落成正式对象、状态机与 choke point，并用它们保护 `one writable present`。
 - 这里首先在分配 present 的写权与回写责任，而不是描述结构形状。
@@ -31,9 +31,9 @@
   - 失败信号：还在把治理理解成 mode 面板、权限门数、token 百分比，或把 `Context Usage` 继续读成成本面板。
 - 如果你只先判断“过去怎样不得写坏现在”，从 `41 -> 58 -> 60 -> 63 -> 66 -> 69 -> 84` 进入。
   - 失败信号：还在用 replay、pointer、恢复资产或目录体感代替 `current-truth surface / current-truth writeback / freshness gate`。
-- 如果你只先判断“源码质量到底该怎样判”，从 `44 -> 55 -> 63 -> 84` 进入。
+- 如果你只先判断“已过 `../guides/102` 后，源码质量在架构对象层怎么落地”，从 `44 -> 55 -> 63 -> 84` 进入。
   - 先过 `../guides/102`，再从 `44 -> 55 -> 63 -> 84` 进入对象层
-  - 失败信号：还在先谈“目录更整齐 / 文件更小 / 热点文件更大或更小”，而没先点名合法复杂度中心、`one writable present` 与第一条 reject path。
+  - 失败信号：还在先谈“目录更整齐 / 文件更小 / 热点文件更大或更小”，而没先点名 `one writable present / writeback seam / retreat layer`。
 - 如果你只先判断“future maintainer 在结构层到底拿什么正式反对当前实现”，从 `60 -> 63 -> 69 -> 72 -> 84` 进入。
   - 最短顺序：`authority surface -> truth planes -> writeback seam -> danger surface -> retreat layer`
   - 失败信号：later maintainer 还必须追全仓、追作者或靠日志回放猜 authority。

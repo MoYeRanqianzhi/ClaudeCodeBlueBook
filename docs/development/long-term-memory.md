@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 最新根仓同步记忆（2026-04-08，本轮最新批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均成功，根仓状态为 `main...origin/main`。之前记录的 `userbook` 冲突阻塞只应被读成时间点快照。
+- 当前批次继续新增一条 03-top-quality-route live 记忆：
+  - `03` 顶部三处源码质量入口默认继续统一写成 `07 -> guides/102 -> philosophy/87 -> architecture/README`，不再保留 `102 / 87 / architecture` 分拆口径
+- 当前批次继续新增一条 03-prompt-template-normalization live 记忆：
+  - `03` 默认继续把 Prompt why 全部压成同一句法：`本节只保留一句 why -> 固定回 philosophy/84 -> 自校层再回 06`
+- 当前批次继续新增一条 03-prompt-why-template live 记忆：
+  - `03` 默认继续不保留“本节不再补 Prompt 审计顺序”这类旧模板痕迹；更稳的高流量写法统一只剩：`本节只保留一句 why -> 固定回 philosophy/84 -> 自校层再回 06`
+- 当前批次继续新增一条 root-sync-blocked-snapshot live 记忆：
+  - `2026-04-08` 本轮起手同步时，根仓 `git checkout main` 因 `bluebook/userbook/03-参考索引/README.md` 与 `bluebook/userbook/README.md` `needs merge` 失败；本轮继续严格只在 `.worktrees/mainloop` 内推进，不碰主仓冲突
+- 当前批次继续新增一条 03-governance-card-demotion live 记忆：
+  - `03` 的治理 why 默认继续不保留轻量 canonical card；更稳的高流量写法是：只保留一句 why，再保留最小苏格拉底问题，owner 顺序统一回 `10 -> philosophy/85 -> philosophy/61 -> security/risk/playbooks`
 - 当前批次继续新增一条 03-governance-owner-sequence live 记忆：
   - `03` 的治理 why 默认继续不保留 `10 / security / risk` 这类松散口径；凡涉及 canonical chain、failure semantics、弱读回面、恢复尾链与执行收口，统一回 `10 -> philosophy/85 -> philosophy/61 -> security/risk/playbooks`
 - 当前批次继续新增一条 07-userbook05-fixed-bridge live 记忆：
@@ -3878,3 +3889,25 @@
 - `10` 如果想继续保持合法，后续就不能再长出第二层 crosswalk 或轻总论。更稳的边界是：它只保留 canonical chain、六节点短释义、reject trio、弱读回面与最短二跳；一旦开始扩写 security signer ladder、risk reopen、runtime seam 或为什么如此，它就该把内容退回 `85 / 83 / 100 / security / risk`。
 - user-facing 治理页的长期纪律现在也应继续固定：本地只保留 `first-answer order / first reject path / 相邻替身拒收 / 弱读回面声明`，不本地重讲 why、host truth 或现场 verdict。更稳的显式分流是：机制回 `security`，读回回 `risk`，执行回 `playbooks`；凡是 userbook 页里再出现“谁签字 / 谁记账 / 谁负责恢复 / 现场怎么做”的混写，都优先视为越位。
 - 根 README 的长期纪律也应继续固定为“仓库路由而非控制面摘要”：即使某条控制面已经很稳定，也不要在根入口重复给一句 canonical summary。更稳的做法是：根入口只提醒“先定题，不先找页”，再把首答权交给 `bluebook/README`；否则一旦 root、bluebook、userbook 同时各保留一句治理总句，first-answer count 又会慢慢反弹。
+- `2026-04-08` 这一批再次执行根仓库同步前置检查后，最新事实已经变成健康快照：`git fetch origin main && git checkout main && git merge --ff-only origin/main` 成功，结果为 `main...origin/main`。旧的“root sync blocked”条目只应被读成历史截面，不能再当当前状态。
+- Prompt 线的高流量 why 模板现在应继续固定成一套共用回链句法：中段统一优先写 `Authority / Boundary / Transcript / Lineage / Continuation` 与 same-world first-reject path；`philosophy/84` 是唯一顶层 owner，`architecture/82` 只展开 request assembly，`06` 只在“需要自校时”作为下游回查，不再像并列前门。
+- `07` 的长期稳定职责已进一步收紧为 route-only 综合页：它可以压出 `Prompt -> philosophy/84`、`governance -> 10 -> philosophy/85 -> architecture/83`、`current-truth -> architecture/84` 这三条 owner route，但不应再在本页重发 canonical order；continuity budget 表的第一列也应继续按 `runtime subject / seam` 阅读，而不是资产库存。
+- `userbook/05` 的长期稳定降格现在也应更细：`/status / /doctor / /usage` 只配做 weak readback surface，`/compact / /resume / /memory` 只配做 continuation consumer，`cleanup result / handoff promise / product promise readback` 只配做 reopen tail evidence。三者都不代签治理 verdict；packet 只做 `same-work prefilter / reject aid`，正式过关仍回 `continue qualification`。
+- 源码质量线的 next-hop 纪律已进一步固定：`guides/102` 负责 canonical ladder、降格 stamp 与 `current-truth surface candidate` 的默认交接；一旦问题进入 `sole writer / writeback seam / freshness gate / choke point`，默认二跳就是 `architecture/README -> architecture/84`。`architecture/README` 只回答对象层怎样落地，不再替 `102` 判梯度。
+- Prompt 路由层现在还要再固定一条首页例外纪律：`navigation/README` 的页首总规则可以把缺主语的读者送回根 `README / 09`，但 Prompt 顶层主语与 `first-reject path` 必须显式例外到 `philosophy/84`，不能只在分段正文里再补一次。
+- `philosophy/README` 里的 continuity 条目现在也应继续被视为“先判是不是时间轴投影”的自校入口，而不是新的 owner route。更稳的顺序是先回 `84` 确认 Prompt owner 与时间轴归属，再把 `06` 用作苏格拉底式自校，而不是先把 `06` 写成 continuity 首跳。
+- 源码质量前门现在还应继续执行一条更细的 speaking-rights 纪律：`03` 只负责 why 与 first-principles 去魅；`guides/102` 只负责 canonical ladder / evidence grading / candidate demotion；`architecture/README` 只负责对象层落点。三者都不该再用一条长回链互相代签。
+- userbook 与 security 线的长期降格规则也应继续细分成三类：`weak readback surface`、`continuation consumer`、`reopen tail evidence`。根 `userbook/README` 与 `05` 负责先把这三类拆开，`security/README` 只保留机制面降格，`risk/README` 只承接用户侧恢复与尾链证据，不让 `risk / playbooks` 再回到“谁在说真话”的首跳里。
+- 源码质量线的旧长链残余现在也应继续视为结构债：高流量页里凡出现 `07 -> guides/102 -> philosophy/87 -> architecture/README` 这种一口气兜完 why / ladder / object 的写法，都应继续拆回四段固定 next-hop。更稳的常式是：`07` 只承接 `shared runtime correctness / continuity budget`，`guides/102` 只承接 `canonical ladder / evidence grading`，`philosophy/87` 只承接 `quality why`，`architecture/README` 只承接对象与 writeback seam。
+- `86` 现在更应被读成源码质量线的深层 current-truth protection 补充页，而不是高流量 why frontdoor。高流量路由若继续写成 `86 / 87` 并列，会重新制造 why 首答竞争；目录与入口页的默认 why 路由应优先只回 `87`。
+- `owner law` 这组旧词现在也应继续退出高流量目录页。更稳的可见词法是 `首答来源 / 申诉链 / owner route`；`navigation/04`、`userbook/README`、`03-参考索引/README` 这类目录页若还保留 `owner law`，later maintainer 更容易把目录说明误读成第二层规范正文。
+- `09` 现在应继续被视为三母线的总图镜像页，而不是 Prompt / continuity 的并列 why 前门。高流量阅读地图或检索页若把 `09` 和 `philosophy/84` 放在同一“优先看哪里”槽位，会重新制造 Prompt owner 漂移。更稳的写法是：Prompt first hop 只留 `84`，`09` 只作为 cross-line summary / compat mirror 出现在下游说明里。
+- 高流量源码质量入口现在也应避免线性链条写法。`102 -> 87 -> architecture/README -> 06` 这种句法会让 why、ladder、object、自校看起来像固定 owner 序列；更稳的可见句法是条件分流：缺 why 去 `87`，缺 object / seam 去 `architecture/README`，缺自校去 `06`。
+- `navigation/05` 与 `06` 里的源码质量词法还应继续遵守一条更细的边界：`hotspot / kernel grading / quality verdict` 属于 `guides/102` 的梯度层；`object / seam / writeback / anti-stale object chain` 才属于 `architecture/README / 84 / 63` 的对象层。只要高流量页把 `kernel` 直接交给 `architecture/`，就会重新模糊 ladder 与 object 的 speaking-rights。
+- `risk/README` 的高阶回链现在也应固定为：若缺 why 或治理机制顺序，先回 `10 -> philosophy/85 -> philosophy/61 -> security`；`risk/` 自己只承接 `product promise readback / reopen qualification / evidence binding` 这组用户侧尾链对象，不再把 `09 / 10 / security` 混写成一团高阶入口。
+- continuity 在高流量导航页里的长期稳定首跳现在也应继续固定为 `philosophy/84`。`09 / 05 / 15 / 41` 可以继续承接跨母线总图、自校与反证信号，但不能在 continuity 问题上先于 `84` 站到第一个槽位。
+- 高流量检索/阅读地图若只是想指向“三条最高阶判断”，更稳的写法是把 `09` 明写为 `总图镜像`，再分流到 `philosophy/84 / 85 / 87`。只要 `09` 和 `84` 还被放在同一“优先看哪里”槽位，Prompt owner 漂移就会再次回潮。
+- `userbook/05` 的页首 bundled next-hop 语气也应继续降格：`security / risk / playbooks` 是机制、tail-readback、execution 的分流，不是并列 owner 集合。高流量 userbook 页里若继续把三者写成“直接回哪层 owner”，会重新抬高 `risk / playbooks` 的 owner 幻觉。
+- `navigation/03` 这类深度专题导航页的长期稳定写法也应继续固定：`09` 只能作为 `总图镜像` 出现在 bundled 入口前，不应再写成 `09 -> philosophy/84-87` 这种整包 first-hop。更稳的句法是“`09` 镜像后，再按题型分流到 `84 / 85 / 87`”。
+- `navigation/04` 的职责矩阵现在也应继续避免把 why 词和 object 词混在一个格子里。`current-truth protection` 属于 why/frontdoor 语汇，不应再和 `object / choke point / writeback seam` 一起被交给 `architecture/README`。
+- `navigation/README` 与 `userbook/05` 现在都应继续显式写出 `security（mechanism） / risk（tail readback） / playbooks（execution）` 的角色，不再让 later maintainer 从斜杠串里自行猜三者谁拥有 owner 身份。

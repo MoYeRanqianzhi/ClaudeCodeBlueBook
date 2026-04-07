@@ -74,11 +74,11 @@
 | 宿主如何接控制协议 | `api/13`、`api/14`、`api/15` | `architecture/13`、`architecture/15` |
 | 宿主如何拿到恢复与状态真相 | `api/16`、`api/17`、`api/19`、`api/20` | `architecture/16`、`architecture/17`、`architecture/25` |
 | prompt、知识、记忆从哪里注入 | `api/18`、`api/21` | `architecture/18`、`architecture/28`、`architecture/29` |
-| `compact / resume / memory / handoff` 为什么不是第四母线 | `09`、`navigation/05`、`navigation/15` | `navigation/41`、`userbook/02-能力地图/01-运行时主链/04-05`、`userbook/05-控制面深挖/03` |
-| prompt 为什么强到不像单段 system prompt | `09`、`philosophy/84` | `architecture/82`、`guides/99`、`playbooks/77`、`casebooks/73` |
-| 如果想先抓三条最高阶判断，而不是先读功能表 | `09`、`philosophy/84-87` | `guides/99-102`、`playbooks/77-79` |
+| `compact / resume / memory / handoff` 为什么不是第四母线 | `philosophy/84`、`09`、`navigation/05`、`navigation/15` | `navigation/41`、`userbook/02-能力地图/01-运行时主链/04-05`、`userbook/05-控制面深挖/03` |
+| prompt 为什么强到不像单段 system prompt | `philosophy/84` | `09`、`architecture/82`、`guides/99`、`playbooks/77`、`casebooks/73` |
+| 如果想先抓三条最高阶判断，而不是先读功能表 | `09（总图镜像）` | `philosophy/84`、`philosophy/85`、`philosophy/87`、`guides/99-102`、`playbooks/77-79` |
 | plugin / MCP / MCPB / channels / LSP 到底边界在哪 | `api/22` | `architecture/27`、`philosophy/20` |
-| 安全、治理、远程高安全链路如何理解 | `risk/README.md` | `architecture/19`、`risk/05`、`risk/11` |
+| 安全、治理、远程高安全链路如何理解 | `10`、`security/README.md` | `architecture/19`、`risk/05`、`risk/11` |
 | 目录结构为什么本身就在暴露能力拓扑 | `api/30` | `architecture/24`、`architecture/38` |
 | 为什么安全、治理与省 token 应该共读 | `09`、`philosophy/85` | `architecture/83`、`guides/100`、`playbooks/78`、`casebooks/74` |
 | 为什么公开镜像仍然值得学 | `architecture/33`、`architecture/38` | `philosophy/23`、`navigation/03` |
@@ -132,8 +132,8 @@
 
 如果问题已偏“为什么要这样设计”，先回：
 
-- `09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`
-- `philosophy/84-87`
+- `09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`（总图镜像）
+- 再按题型分流到 `philosophy/84`、`philosophy/85`、`philosophy/87`
 
 如果问题已偏“公开镜像里怎样稳地下判断”，先回：
 

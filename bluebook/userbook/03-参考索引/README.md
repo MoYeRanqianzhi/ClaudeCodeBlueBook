@@ -1,6 +1,6 @@
 # 参考索引
 
-这一层只继承 [../README.md](../README.md) 的问题分型，负责速查、定位和合同回跳，不再重复 speaking-rights、appeal-chain 或 owner law。
+这一层只继承 [../README.md](../README.md) 的问题分型，负责速查、定位和合同回跳，不再重复 speaking-rights、appeal-chain 或首答来源/申诉链。
 
 ## 最短路由
 
