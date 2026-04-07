@@ -119,6 +119,7 @@
 100. 为什么 `PERMANENT_CLOSE_CODES`、`4001` 与 reconnect budget 不是同一种 terminality 规则。
 101. 为什么 `compacting`、boundary、timeout、`4001` 与 keep-alive 不是同一种 compaction 恢复信号。
 102. 为什么 `SessionsWebSocket 4001`、`WebSocketTransport 4001` 与 `session not found` 不是同一种合同。
+103. 为什么 `headersRefreshed`、`autoReconnect`、sleep detection 与 `4003` refresh path 不是同一种恢复主权。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
