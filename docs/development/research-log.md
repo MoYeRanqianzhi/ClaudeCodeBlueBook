@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 top-level philosophy frontdoor 深化动作: 已继续更新 `bluebook/03`、`06` 与 `philosophy/80 / 82 / 84`。新的结论是：顶层哲学前门也不该把 continuity 单列成第四条线、第四个优点或第九个不可约问题。更稳的默认写法是：`03` 只把它写成三条主权安排的共同时间轴，`06` 只把它写成三条母线的共同验收，`80 / 82 / 84` 则只把它写成源码质量、治理与 Prompt 各自时间轴上的 continue / price / veto 纪律。
+- 本轮新的顶层目录结论: 目录结构优化如果只能做到同词化，而不能让 `03 / 06 / philosophy/80 / 82 / 84` 共享同一组 first-answer nouns 与最小排查顺序，就仍然会在顶层哲学页里长回第二前门。现在这组前门已经开始从“共享 nouns”推进到“共享 time-axis wording 与 shared order”。
 - 本轮 architecture continuity 深化动作: 已继续更新 `bluebook/architecture/82-84`。新的结论是：架构层也不该把 continuity 单列成第四条母线或第四种结构图。更稳的默认写法是：`82` 只把 continuity 写成 Prompt `Continuation` 的时间轴，`83` 只把它写成治理 `continuation pricing / durable-transient cleanup` 的计价面与清算面，`84` 只把它写成源码质量线在 bootstrap / authority / recovery / release 上的切面投影。
 - 本轮新的架构层结论: 一旦 architecture 页把 `lawful forgetting`、`continuation object`、`continuation pricing`、`四张图` 写成并列新主语，而不是写成三条母线各自的时间轴与结构裁面，later maintainer 就会在架构层重新学回第四平面。现在 `82-84` 的顶层句法已经和 README / navigation / guides / playbooks / casebooks / api 对齐了。
 - 本轮 API continuity 深化动作: 已继续更新 `bluebook/api/78 / 79 / 89`。新的结论是：API 协议层也不该把 continuity 单列成独立协议面。更稳的默认写法是：`78` 只把 continuity 写成 Prompt `Continuation` 的 rewrite 阶段，`79` 只把它写成治理 `continuation pricing / cleanup / threshold` 的连续消费段，`89` 只把它写成结构 `lineage / fresh merge / anti-zombie` 的证据槽与时间轴消费者。

@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/03`、`06` 与 `philosophy/80 / 82 / 84` 的长期默认 top-level philosophy language 现已继续写死：
+  - `03` 默认不把 `continuity` 升成第四条设计优点
+  - `06` 默认不把 `continuity` 升成第九个不可约问题
+  - `80 / 82 / 84` 默认不把 `recovery / continuation pricing / Prompt continuation` 升成三条线外的新平面
+  - 这组顶层页默认统一把 continuity 收回 `Continuation / continuation pricing / recovery non-sovereignty` 的共同时间轴
+  - 目录优化默认继续从“共享 nouns”推进到“共享 first-answer order 与 time-axis wording”
 - `bluebook/architecture/82-84` 的长期默认 continuity architecture language 现已继续写死：
   - `82` 默认不把 `lawful forgetting / continuation object / cache-safe fork reuse` 升成第四种 Prompt 机制
   - `83` 默认不把 `continuation pricing / durable-transient cleanup` 升成第四条治理恢复流

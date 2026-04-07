@@ -23,6 +23,8 @@
 
 - Claude Code 的治理控制面并不是分别处理安全、成本与继续，而是在统一定价一切扩张。
 
+这里还要先压住一个常见误读：`continuation pricing` 不是治理线外另起的一段恢复流程；它只是同一条 pricing chain 在时间轴上的续租段。
+
 ## 1. 先说结论
 
 安全与省 token 的深层共同点不是：
@@ -45,6 +47,8 @@
 而是：
 
 - 一切扩张的制度价格
+
+所以 `action / visibility / context / continuation` 不是四个松散议题，而是同一个治理计价对象的四个消费面。
 
 ## 2. 第一性原理：安全与省 token 共同反对免费扩张
 
@@ -139,6 +143,8 @@ Claude Code 更接近的真相是：
 
 - decision window 的可视化投影
 
+如果 `Context Usage` 不能回到 `decision window` 这一治理对象，它就只是在给免费扩张做更细的仪表盘。
+
 这意味着成熟的 Context Usage 应同时解释：
 
 1. 当前对象是什么。
@@ -202,6 +208,10 @@ Claude Code 更接近的真相是：
 - classifier 自己也必须被定价
 
 没有决策增益的 classifier、审批或默认重试，本身就是另一种免费扩张。
+
+所以更稳的苏格拉底式追问也只该再补一句：
+
+- 我们现在是在给风险定价，还是在给治理控制面的自我膨胀找借口。
 
 ## 8. 第六层：rollback object 让治理不退回运维补救
 
