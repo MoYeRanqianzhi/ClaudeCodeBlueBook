@@ -171,6 +171,13 @@
 - [167-2026-04-08-CCR v2 metadata readback vs local consumption split 拆分记忆.md](./167-2026-04-08-CCR%20v2%20metadata%20readback%20vs%20local%20consumption%20split%20拆分记忆.md)
 - [168-2026-04-08-headless transport recovery thickness split 拆分记忆.md](./168-2026-04-08-headless%20transport%20recovery%20thickness%20split%20拆分记忆.md)
 - [169-2026-04-08-resume source split 拆分记忆.md](./169-2026-04-08-resume%20source%20split%20拆分记忆.md)
+- [170-2026-04-08-headless resume source certainty split 拆分记忆.md](./170-2026-04-08-headless%20resume%20source%20certainty%20split%20拆分记忆.md)
+- [171-2026-04-08-local artifact provenance split 拆分记忆.md](./171-2026-04-08-local%20artifact%20provenance%20split%20拆分记忆.md)
+- [172-2026-04-08-bridge authority split 拆分记忆.md](./172-2026-04-08-bridge%20authority%20split%20拆分记忆.md)
+- [173-2026-04-08-environment truth layering split 拆分记忆.md](./173-2026-04-08-environment%20truth%20layering%20split%20拆分记忆.md)
+- [174-2026-04-08-environment register authority split 拆分记忆.md](./174-2026-04-08-environment%20register%20authority%20split%20拆分记忆.md)
+- [175-2026-04-08-provenance label vs identity split 拆分记忆.md](./175-2026-04-08-provenance%20label%20vs%20identity%20split%20拆分记忆.md)
+- [176-2026-04-08-session create field authority split 拆分记忆.md](./176-2026-04-08-session%20create%20field%20authority%20split%20拆分记忆.md)
 
 用途：
 

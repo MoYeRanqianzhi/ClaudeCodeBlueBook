@@ -85,6 +85,13 @@
 28. `restoredWorkerState`、`externalMetadataToAppState`、`SessionExternalMetadata` 与 `RemoteIO` 看起来都在 metadata readback 附近时，应该先去哪个入口分辨 CCR v2 的 readback 不是 observer metadata 的同一种本地消费合同。
 29. `StructuredIO`、`RemoteIO`、`setInternalEventReader`、`setInternalEventWriter` 与 `flushInternalEvents` 看起来都在 headless transport 附近时，应该先去哪个入口分辨协议宿主不等于同一种恢复厚度。
 30. `/resume`、`--continue`、`print --resume` 与 `remote-control --continue` 看起来都在接续入口附近时，应该先去哪个入口分辨 stable conversation resume、headless remote hydrate 与 bridge continuity 不是同一种接续来源。
+31. `print --continue`、`print --resume session-id`、`print --resume url` 与 `loadConversationForResume` 看起来都在 headless resume 附近时，应该先去哪个入口分辨同属 headless resume，也不是同一种 source certainty。
+32. `loadMessagesFromJsonlPath`、`parseSessionIdentifier`、`loadConversationForResume` 与 `sessionId` 看起来都在 local resume artifact 附近时，应该先去哪个入口分辨 `print --resume .jsonl` 与 `print --resume session-id` 不是同一种 local artifact provenance。
+33. `readBridgePointerAcrossWorktrees`、`getBridgeSession`、`reconnectSession` 与 `environment_id` 看起来都在 bridge reconnect 附近时，应该先去哪个入口分辨 `remote-control --continue` 与 `remote-control --session-id` 不是同一种 bridge authority。
+34. `BridgePointer.environmentId`、`getBridgeSession.environment_id`、`reuseEnvironmentId` 与 `registerBridgeEnvironment` 看起来都在环境恢复附近时，应该先去哪个入口分辨 pointer 里的 env hint、server session env 与 registered env 不是同一种 truth。
+35. `BridgeConfig.environmentId`、`reuseEnvironmentId`、`registerBridgeEnvironment.environment_id` 与 `createBridgeSession` 看起来都在环境 attach 附近时，应该先去哪个入口分辨本地 env key、reuse claim、live env 与 session attach target 不是同一种环境主权。
+36. `BridgeWorkerType`、`metadata.worker_type`、`BridgePointer.source` 与 `environment_id` 看起来都在来源标记附近时，应该先去哪个入口分辨环境来源标签、prior-state 域与环境身份不是同一种 provenance。
+37. `createBridgeSession.environment_id`、`source`、`session_context` 与 `permission_mode` 看起来都在 session attach 附近时，应该先去哪个入口分辨 session attach target、来源声明、上下文载荷与默认策略不是同一种会话归属。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 
