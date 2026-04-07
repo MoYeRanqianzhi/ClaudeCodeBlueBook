@@ -190,6 +190,7 @@
 - [186-2026-04-08-bridge history projection split 拆分记忆.md](./186-2026-04-08-bridge%20history%20projection%20split%20拆分记忆.md)
 - [187-2026-04-08-model allowlist veto split 拆分记忆.md](./187-2026-04-08-model%20allowlist%20veto%20split%20拆分记忆.md)
 - [188-2026-04-08-model allowlist surface split 拆分记忆.md](./188-2026-04-08-model%20allowlist%20surface%20split%20拆分记忆.md)
+- [189-2026-04-08-bridge continuity ledger split 拆分记忆.md](./189-2026-04-08-bridge%20continuity%20ledger%20split%20拆分记忆.md)
 
 用途：
 
