@@ -3905,3 +3905,6 @@
 - 高流量源码质量入口现在也应避免线性链条写法。`102 -> 87 -> architecture/README -> 06` 这种句法会让 why、ladder、object、自校看起来像固定 owner 序列；更稳的可见句法是条件分流：缺 why 去 `87`，缺 object / seam 去 `architecture/README`，缺自校去 `06`。
 - `navigation/05` 与 `06` 里的源码质量词法还应继续遵守一条更细的边界：`hotspot / kernel grading / quality verdict` 属于 `guides/102` 的梯度层；`object / seam / writeback / anti-stale object chain` 才属于 `architecture/README / 84 / 63` 的对象层。只要高流量页把 `kernel` 直接交给 `architecture/`，就会重新模糊 ladder 与 object 的 speaking-rights。
 - `risk/README` 的高阶回链现在也应固定为：若缺 why 或治理机制顺序，先回 `10 -> philosophy/85 -> philosophy/61 -> security`；`risk/` 自己只承接 `product promise readback / reopen qualification / evidence binding` 这组用户侧尾链对象，不再把 `09 / 10 / security` 混写成一团高阶入口。
+- continuity 在高流量导航页里的长期稳定首跳现在也应继续固定为 `philosophy/84`。`09 / 05 / 15 / 41` 可以继续承接跨母线总图、自校与反证信号，但不能在 continuity 问题上先于 `84` 站到第一个槽位。
+- 高流量检索/阅读地图若只是想指向“三条最高阶判断”，更稳的写法是把 `09` 明写为 `总图镜像`，再分流到 `philosophy/84 / 85 / 87`。只要 `09` 和 `84` 还被放在同一“优先看哪里”槽位，Prompt owner 漂移就会再次回潮。
+- `userbook/05` 的页首 bundled next-hop 语气也应继续降格：`security / risk / playbooks` 是机制、tail-readback、execution 的分流，不是并列 owner 集合。高流量 userbook 页里若继续把三者写成“直接回哪层 owner”，会重新抬高 `risk / playbooks` 的 owner 幻觉。

@@ -1,7 +1,7 @@
 # 控制面深挖
 
 这一层只继承 [../README.md](../README.md) 已判清的问题分型，负责把 Prompt / governance / current-truth 的最小顺序翻成用户动作与相邻替身拒收。
-它不再重写 speaking-rights、申诉链或完整治理公式；若你已经开始追问“谁签字 / 谁记账 / 谁负责恢复 / 能不能 reopen”，直接回 `security / risk / playbooks`。
+它不再重写 speaking-rights、申诉链或完整治理公式；若你已经开始追问“谁签字 / 谁记账 / 谁负责恢复 / 能不能 reopen”，就按 `security / risk / playbooks` 的对应 next-hop 分流。
 
 ## trusted-inputs 梯子
 
