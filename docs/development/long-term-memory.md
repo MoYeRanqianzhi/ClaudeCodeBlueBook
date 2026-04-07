@@ -3348,3 +3348,5 @@
 - Prompt 线后续若继续去魅，优先级也应改成“先改 page-role，再改比喻词”；比喻词还能活在兼容路径和历史文件名里，但 page-role 一旦混层，later maintainer 第一次看到的仍会是多 owner 结构。
 - 治理线的长期词法纪律也应再固定一条：`security/` 优先说 signer / ledger / cleanup authority 机制面，`risk/` 才说用户侧结算面；`结算面 / 外显 / crosswalk` 这组词只要越出自己的目录职责，就会把 canonical chain 改写成 audience bridge。
 - `architecture/83` 这类 canonical 机制页里，表头和导语也应尽量用对象词而不是读者词。`observable projection` 比 `host-facing read` 更稳，`运行时最短对照 / 运行时最小 failure order` 也比“later maintainer、宿主与 builder 共用”更不容易把机制页写成说明书。
+- 源码质量线也应继续固定一条目录纪律：`guides/102` 负责 canonical rung 与降格规则，`01 / philosophy/76` 只负责 atlas / projection locator，`02` 只负责使用层诊断句，`philosophy/README` 只负责高阶入口而不并排摆第二套压缩链。只要 atlas/projection 别名重新出现在前门公式里，就优先视为第二套 ladder 回潮。
+- 对源码质量 residual 的更稳处理方式不是“把旧别名解释得更清楚”，而是让旧别名退出 frontdoor 可见句，只保留 canonical rung 和一个明确归口：`atlas / projection 别名只作 locator，不作首答词`。

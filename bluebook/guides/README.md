@@ -35,10 +35,10 @@
   - 失败信号：还在用更严权限、更多模式、token 百分比或 `Context Usage` 成本面板代替治理主键与 decision window 判断。
 - 如果你只先判断“当前真相保护怎样落成模板”，从 [101-如何用苏格拉底诘问法审读当前真相保护：current-truth surface、freshness gate与ghost capability](101-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BBone%20writable%20present%EF%BC%9Asingle-writer%E3%80%81recovery%20asset%E4%B8%8Eanti-zombie.md) 进入。
   - 失败信号：还在用更强 prompt、更严权限、更漂亮目录这种结果词替代 `one writable present` 与 later maintainer reject order。
-- 如果你只先判断“怎样给公开镜像做源码质量证据分级”，从 [102-如何给公开镜像做源码质量证据分级：contract、registry、current-truth surface、consumer subset 与 mirror gap discipline](102-%E5%A6%82%E4%BD%95%E7%BB%99%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E5%81%9A%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7%EF%BC%9Acontract%E3%80%81registry%E3%80%81authoritative%20surface%E3%80%81adapter%20subset%E4%B8%8Ehotspot%20gap%20discipline.md) 进入。
+- 如果你只先判断“怎样给公开镜像做源码质量证据分级”，从 [102-公开镜像源码质量证据分级模板：contract、registry、current-truth surface、consumer subset 与 mirror gap discipline](102-%E5%A6%82%E4%BD%95%E7%BB%99%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E5%81%9A%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7%EF%BC%9Acontract%E3%80%81registry%E3%80%81authoritative%20surface%E3%80%81adapter%20subset%E4%B8%8Ehotspot%20gap%20discipline.md) 进入。
   - 失败信号：还在靠热点文件体感、目录整齐度和作者光环做判断，还没按 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 点名证据断口。
 - 如果你只先判断“怎样把 future maintainer 的局部可反对性压成模板”，先从 `101 -> 102` 进入，再回 `../philosophy/80 / 59 / 53` 校正主语。
-  - 失败信号：模板还在帮读者理解作者，而不是帮 later maintainer 正式指出 authority、truth plane、danger surface 与第一退回层。
+  - 失败信号：模板还在帮读者理解作者，而不是帮 later maintainer 正式指出 authority、truth plane、hotspot kernel / mirror gap discipline 与第一退回层。
 
 ## 这里不回答什么
 

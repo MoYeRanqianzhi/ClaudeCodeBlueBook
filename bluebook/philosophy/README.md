@@ -18,25 +18,10 @@
 
 - `continuity` 不是第四条独立哲学母线；它是 Prompt `Continuation`、治理 `continuation pricing` 与源码质量 `recovery non-sovereignty / anti-zombie` 的共同时间轴。
 
-这里还要再补一条 crosswalk 纪律：
+这里还要再补一条纪律：
 
-- `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability` 只继续保留为解释层压缩句
-- 不再和源码质量线 canonical ladder 并列抢 frontdoor 首答权
-- 真正进入 later maintainer 排查前，还应先过 `public artifact ceiling`
-
-如果继续把源码质量线再压成 later maintainer 更容易直接复用的入口句，也只该再补一句：
-
-- 源码先进性不只是在保护 `one writable present`，还在保护 future maintainer 的 `局部可反对性` 与下一次重构的资本池。
-- 若 sole writer、writeback seam 与 freshness gate 还没锁定，就只配先写 `current-truth surface candidate`，再谈 present truth。
-
-更硬一点说，`future maintainer = formal consumer` 的最低门槛也应直接记成：
-
-- 拿不到作者时，later maintainer 仍能只凭局部命名、注释、state machine、truth surface 指出越权写回、truth-plane 越位与第一退回层。
-- 如果只把 future maintainer 的最小见证集再压成一条入口句，也只认：`authority surface -> truth planes -> writeback seam -> danger surface -> first retreat layer`。
-
-这里还应再补一条 crosswalk：
-
-- `authority surface ~= current-truth surface`；`truth planes` 是对 `contract / registry / consumer subset` 的维护者投影；`danger surface -> first retreat layer` 则是对 `hotspot kernel / mirror gap discipline + appeal chain` 的执行化表达，不另起第二条 canonical ladder。
+- `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability` 这组句子只保留为解释层压缩句，不再和源码质量线 canonical ladder 并列抢 frontdoor 首答权。
+- 真正进入 later maintainer 排查前，还应先过 `public artifact ceiling`，再回 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`。
 
 如果继续把 `refactor capital` 压成更短的资本表，也只该剩：
 
