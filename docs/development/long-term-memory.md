@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/risk/README` 与 `bluebook/philosophy/85` 的长期默认 governance-recovery-bridge language 现已继续写死：
+  - `risk/README` 默认继续只写 `product promise / reopen qualification / evidence binding` 这组用户侧前门，不再写成 `用户侧结算面 / 结算权`
+  - `philosophy/85` 默认继续把 approval、usage、cleanup result 与恢复流程写成收费链上的 `projection / consumer`
+  - 这两页默认统一拒收 user-facing 读法再次越位成治理 speaking right
 - `bluebook/philosophy/README`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 route-shorthand-demotion language 现已继续写死：
   - 高流量入口句默认继续把 `Prompt 效力 / 安全省 token / 源码先进性` 收回 `请求装配 / 统一定价治理 / 当前真相保护`
   - 这三页默认统一拒收 route 层再次用结果词主语组织三条 canonical 母线

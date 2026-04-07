@@ -14,13 +14,13 @@
 
 如果只先记风控前门的一句话，也只记这句：
 
-- 风控不是第二套安全规则，而是同一条治理收费链在用户侧的结算面：先由 `governance key` 决定谁能改边界，再看 `product promise / decision window` 怎样被用户侧读到，先由 `durable-transient cleanup` 收口，再由 `signer + evidence + reopen` 决定恢复是否成立。
+- 风控不是第二套安全规则，而是同一条治理收费链在 `product promise / reopen qualification / evidence binding` 这组用户侧 consumer 上的读法：先由 `governance key` 决定谁能改边界，再看 `product promise / decision window` 怎样被用户侧读到，先由 `durable-transient cleanup` 收口，再由 `signer + evidence + reopen` 决定恢复是否成立。
 
 这里还应再多记一句：
 
-- 这条用户侧结算面并不脱离完整治理链；更稳的读法仍是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，只是它在风控目录里主要落到 `product promise` 与 `signer + evidence + reopen` 这两类用户侧判断对象。
+- 这组用户侧读法并不脱离完整治理链；更稳的读法仍是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，只是它在风控目录里主要落到 `product promise`、`reopen qualification` 与 `signer + evidence + reopen` 这组用户侧判断对象。
 
-风控不是安全之外第二套规则，而是同一价格秩序在身份、组织、入口子集与恢复签发上的用户侧结算面；误伤是在错误冻结能力，恢复是在凭证据和 signer 重新绑定执行连续性。
+风控不是安全之外第二套规则，而是同一价格秩序在身份、组织、入口子集与恢复签发上的用户侧读法；误伤是在错误冻结能力，恢复是在凭证据和 signer 重新绑定执行连续性。
 
 如果把风控前门继续压成最短公式，也只剩三条：
 
@@ -39,7 +39,7 @@
 
 更硬一点说，`risk/` 在目录里的发言权也只该剩三条：
 
-1. `用户侧结算权`
+1. `product promise / reopen qualification`
    - 误伤、恢复、入口差异与连续性成本怎样被用户侧读到。
 2. `reopen qualification`
    - 哪些 signer、evidence 与 reopen 责任在用户侧重新绑定执行连续性。
@@ -114,7 +114,7 @@
 - `risk/` 负责账号治理、误伤、恢复和入口语义差。
 - `risk/` 解释的是统一定价控制面怎样落到误伤、恢复、支持链路与地区入口上，不把风控退回“更多规则/更多封禁”叙事。
 - `risk/` 前门优先解释 signer、证据、恢复资格与 `governance key`，不自己重做权限或宿主状态机总图。
-- `risk/README` 只负责用户侧结算面前门，不和 `security/` 抢 signer/ledger 机制前门，不和 `playbooks/` 抢恢复执行链。
-- `risk/README` 有用户侧结算解释权，但没有治理机制改判权；一旦它开始自己重讲 signer ladder 或 host truth，对用户的结算面就会再次退回第二套故事。
+- `risk/README` 只负责 `product promise / reopen qualification / evidence binding` 这组用户侧前门，不和 `security/` 抢 signer/ledger 机制前门，不和 `playbooks/` 抢恢复执行链。
+- `risk/README` 有用户侧读法解释权，但没有治理机制改判权；一旦它开始自己重讲 signer ladder 或 host truth，对用户的恢复读法就会再次退回第二套故事。
 - 需要源码级安全控制面时，回到 [../security/README.md](../security/README.md)。
 - 需要失败样本和操作手册时，分别回到 [../casebooks/README.md](../casebooks/README.md) 与 [../playbooks/README.md](../playbooks/README.md)。
