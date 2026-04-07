@@ -1,59 +1,7 @@
 # 控制面深挖
 
-这一层专门处理“概览已经不够”的高价值控制面。
-
-它和 `04-专题深潜` 的区别是：
-
-- `04-专题深潜` 按真实工作目标组织。
-- 这里按控制面组织，专门回答“为什么同一目标不能随便走相邻入口”。
-- 这里不承担命令速查；速查页统一留在 `03-参考索引/`。
-
-## 发言权卡
-
-- `能合法说`
-  - 把 Prompt / governance / current-truth 三条最小顺序翻成用户侧控制面判断、trusted-inputs 梯子与相邻替身拒收动作。
-- `不能改判`
-  - 不替 `philosophy/` 重写公式，不替 `api/` 重签真相，不替 `playbooks/` 直接出 verdict。
-- `canonical owner`
-  - 治理控制面主语回 [../../README.md](../../README.md)、[../../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)、[../../security/README.md](../../security/README.md)、[../../risk/README.md](../../risk/README.md) 与 [../../guides/100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md](../../guides/100-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BB%E5%BD%93%E5%89%8D%E4%B8%96%E7%95%8C%E5%87%86%E5%85%A5%E4%B8%BB%E6%9D%83%EF%BC%9Atrusted%20inputs%E3%80%81%E6%9C%80%E5%B0%8F%E5%8F%AF%E8%A7%81%E9%9D%A2%E4%B8%8Econtinuation%20pricing.md)。
-- `申诉路径`
-  - 若你发现 `05` 已经开始代签真相，先退回根 `userbook/README` 重做问题分型；若是主语争议回 `09 / philosophy / architecture`，若是 host truth 争议回 `api/`，若是现场 verdict 争议回 `playbooks/`。
-
-如果你只缺治理收费链的一屏速记，而不是控制面翻译动作，先回 [../../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；`05` 只保留用户侧控制面翻译、trusted-inputs 梯子与相邻替身拒收。
-
-如果把这一层继续压成最短作用，也只剩一句：
-
-- `05` 先回答“哪条控制面现在在说真话”，再决定你该继续、切换、降级还是退出。
-
-如果继续把治理控制面也压成用户侧 first-answer order，这一层最稳的短句还应再补一句：
-
-- 治理顺序与弱读回面统一回 `../../10 -> ../../09 -> ../../security/README -> ../../risk/README`；`05` 只负责把它翻成用户动作，不第二次展开完整公式。
-- 一旦问题从“哪条控制面失真”推进到“我现在该回哪一层”时，就立刻分流：机制回 `../../security/README.md`，用户侧恢复读法回 `../../risk/README.md`，现场执行回 `../../playbooks/README.md`。
-
-更硬一点说，`05` 在 `userbook/` 里的发言权也只该剩：
-
-1. `控制面判断翻译权`
-   - 把 Prompt / governance / current-truth 三条最小顺序翻成用户侧判断动作。
-2. `相邻替身拒收权`
-   - 直接点名哪些按钮、面板、状态词只是投影替身。
-3. `无 canonical 改判权`
-   - 它不替 `philosophy/` 重写公式，不替 `api/` 重签真相，不替 `playbooks/` 直接出 verdict。
-
-所以这层不是“更难的目录”，而是：
-
-1. 先给控制面判断
-2. 再给相邻入口为什么不能混用
-3. 最后才给更细的长文拆解
-
-这里也要先压住一个常见误读：`continuity` 不是第四条控制面；它只是 Prompt `continue qualification`、治理 `continuation pricing` 与当前真相 `cleanup-before-resume` 的共同时间轴。
-
-如果控制面页不能先回答这三件事，它就还是“控制面话题集合”，还不是用户真正可执行的判断层。
-
-进入控制面长文前，只先记一句：
-
-- 这里只翻译用户侧判断；证据上限、truth plane 与 rollback ceiling 统一回蓝皮书根前门与 `09`，不在 `05` 里重签一遍。
-- 若你已经开始追问“谁签字 / 谁记账 / 谁负责恢复 / 能不能 reopen”，就不要停在 `05`；分别回 `security / risk / playbooks`。
-- `/status`、`/doctor`、`/usage` 在这一层也只是相邻证据面；若你开始拿它们直接下结论，先回 `../../10` 再判断。
+这一层只继承 [../README.md](../README.md) 已判清的问题分型，负责把 Prompt / governance / current-truth 的最小顺序翻成用户动作与相邻替身拒收。
+它不再重写 speaking-rights、申诉链或完整治理公式；若你已经开始追问“谁签字 / 谁记账 / 谁负责恢复 / 能不能 reopen”，直接回 `security / risk / playbooks`。
 
 ## trusted-inputs 梯子
 

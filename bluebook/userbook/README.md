@@ -2,16 +2,7 @@
 
 基于 `@anthropic-ai/claude-code` `v2.1.88` 反编译源码整理的用户手册。它不是第二本蓝皮书，而是用户侧入口：先判工作对象有没有送错、扩张或权限判断卡在哪一段、旧状态是否还在污染当前，再决定下一跳读哪个 README。
 
-## 发言权卡
-
-- `能合法说`
-  - 把 root / `09` 已承认的对象链、控制面与可见边界翻成用户侧问题分型、最小顺序与二跳动作。
-- `不能改判`
-  - 不替 `philosophy/` 重判为什么成立，不替 `api/` 重签 host-facing truth，不替 `playbooks/` 直接发现场 verdict。
-- `canonical owner`
-  - 主语与最小顺序统一回 [../README.md](../README.md) 与 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)；host-facing truth 回 `api/`；执行 verdict 回 `playbooks/`。
-- `申诉路径`
-  - 若你怀疑 userbook 已越位，先回 `../README -> 09` 重新定题；再按“不知道为什么成立 / 不知道现在是什么 / 不知道该判什么”分别申诉到 `philosophy / api / playbooks`。
+这棵子树默认继承 [../README.md](../README.md)、[../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md) 与 `docs/development/00-研究方法.md` 已承认的 owner law；`userbook/` 只翻译用户动作、问题分型与二跳，不再在各层重复目录法、发言权或申诉链。
 
 如果只先记住三条使用判断，也只先记这三条：
 
@@ -19,29 +10,13 @@
 2. 扩张或权限判断不要先看弹窗、`status`、`usage` 或继续入口；先看这次动作、可见性或继续请求有没有被当前控制面准入。
 3. 若问题已经是“为什么这里会省 token / 为什么要 `Later` / `Outside`”，统一回 `security/README`；`userbook/` 根入口只保留用户动作与二跳。
 
-更硬一点说，这里只翻两组 owner 结论：
-
-- Prompt 线只翻 user-facing witness：目标、附件、working set、next step；owner 级 ABI 仍回 `philosophy/84 -> guides/51`
-- 治理线只翻 user-facing readback：`/status / /doctor / /usage`、approval UI、`Compact / Resume / Memory` 都只是弱读回面或 continuation consumer；signer、cleanup authority 与 reopen 机制仍回 `10 / security / risk`
-
-这里的 Prompt user-facing witness 也默认只认一张固定 alias table：
-
-- `目标 = message_lineage_ref`
-- `附件 = section_registry_ref + stable_prefix_ref`
-- `working set = protocol_transcript_ref + continuation_object_ref`
-- `next step = continue_qualification_verdict`
-
 如果你只缺治理收费链的一屏速记，而不是具体控制面下潜，先回 [../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；userbook 根入口只保留问题分型、用户侧最小顺序与二跳。
 
-这里还应先钉死六条 user-facing discipline：
+这里也只先记三条边界：
 
-- `userbook/` 不宣布新的系统真相，它只把已经承认的对象链、控制面和可见边界翻译成用户侧可操作判断。
-- `userbook/` 默认只把已承认的对象链、控制面与可见边界翻成用户侧判断与二跳，不替 `README / 09 / api` 补签 runtime-core 缺口。
-- `userbook/` 不在根入口第二次展开完整治理顺序；治理速记统一回 `../10 -> ../09`，控制面翻译统一回 `05-控制面深挖/README`。
-- 别拿界面投影替系统真相说话；弱读回面总声明统一回 `10`。
-- 别拿 user-facing witness 替 owner 级 Prompt ABI 说话；Prompt 线的 canonical object chain 统一回 `84 / 51`。
-- `CLAUDE.md / hooks / settings` 能影响行为，但不能单独证明你仍在同一工作对象上。
-- `continuity` 在 `userbook/` 里也不是第四条使用主题；它只是“同一工作对象能否继续”的时间轴读法。所以 user-facing 第一问不该是“该点哪个入口”，而应先判 `上下文送错 / 扩张或权限判错 / 旧状态污染`。
+- Prompt 线只翻 user-facing witness；owner 级 ABI 统一回 `philosophy/84 -> guides/51`
+- 治理线只翻 user-facing readback；signer、cleanup authority 与 reopen 机制统一回 `10 / security / risk`
+- `continuity` 不是第四类使用主题；它只是同一工作对象在时间轴上的继续条件
 
 ## 用户侧四问
 

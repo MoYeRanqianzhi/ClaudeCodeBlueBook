@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/userbook/README` 与 `bluebook/userbook/00 / 01 / 02 / 03 / 04 / 05` 入口页的长期默认 userbook-owner-collapse language 现已继续写死：
+  - `userbook/README` 默认继续作为 userbook 唯一 first-answer frontdoor，保留用户侧问题分型、最小顺序与二跳
+  - `00-阅读路径`、`01-主线使用/README`、`02-能力地图/README`、`03-参考索引/README`、`04-专题深潜/README` 与 `05-控制面深挖/README` 默认继续只承接根前门已判清的 owner law，不再重复 speaking-rights、appeal-chain 或 first-answer order
+  - 更稳的默认修法顺序继续是：`先保留一个子树 frontdoor -> 再把其余入口页降成 inheritance-only route table -> 最后才考虑继续删减根前门 residual`
 - `bluebook/10`、`bluebook/security/README`、`bluebook/risk/README` 与 `bluebook/playbooks/66` 的长期默认 governance-crosswalk-hardening language 现已继续写死：
   - `10` 默认继续保留最短 `strong signer surface / weak readback surface / reopen tail evidence` crosswalk
   - `security/README` 默认继续把 `cleanup stage verdict` 写成前门层可见读回，而不自动夸大成 deeper conformance/finality signer

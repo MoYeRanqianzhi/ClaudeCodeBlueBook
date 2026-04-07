@@ -1,33 +1,10 @@
 # 参考索引
 
-这一层真正值钱的，不是“问题多”，而是它只拥有速查权，不拥有改判权。
-
-## 发言权卡
-
-- `能合法说`
-  - 按名字、对象、入口与运行时合同快速定位对应正文。
-- `不能改判`
-  - 不替 `philosophy/`、`api/`、`architecture/` 或 `playbooks/` 重判主语、真相与 verdict。
-- `canonical owner`
-  - 速查入口总归 [../README.md](../README.md)；控制面判断回 [../05-控制面深挖/README.md](../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/README.md)；工作对象判断回 [../04-专题深潜/README.md](../04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/README.md)。
-- `申诉路径`
-  - 若索引页已经开始像 owner 一样签 truth 或给 verdict，先退回 `userbook/README` 重做问题分型，再按对应层级申诉到 `philosophy / api / playbooks / casebooks`。
-
-更稳的读法只该剩三句：
-
-1. 它帮你按名字、对象和入口快速定位。
-2. 它帮你知道这些名字背后连接的是哪类运行时合同。
-3. 它不替 `philosophy/`、`api/`、`architecture/` 或 `playbooks/` 重判主语、真相与 verdict。
-
-这里也要先压住一个常见误读：`连续性 / 记忆 / 恢复` 在索引层不是第四类问题域；它们只该作为同一工作对象的时间轴入口，被继续路由回主线、专题或控制面。
-
-如果参考索引开始替正文宣布“什么是真的”或“现在该怎么裁决”，later maintainer 就会失去通过正式证据层申诉的入口。
+这一层只继承 [../README.md](../README.md) 的问题分型，负责速查、定位和合同回跳，不再重复 speaking-rights、appeal-chain 或 owner law。
 
 ## 最短路由
 
 别把这层当问题库存。更稳的默认用法是：
-
-更稳一点说，索引层也必须继承根前门的 first-answer order；若不能先回到问题分型、工作对象和控制面，再快的索引都会把用户送进 pseudo-authority。
 
 - 想按命令、工具、root/slash、Settings/Doctor/Usage 这类对象速查：
   [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
@@ -70,7 +47,3 @@
 - 需要判断“哪条真相被正式承认”，退回 `../../api/README.md`
 - 需要判断“现场现在该判哪一个 verdict”，退回 `../../playbooks/README.md`
 - 需要判断“哪种伪证最像成功”，退回 `../../casebooks/README.md`
-
-再补一句：
-
-- 索引层只负责 `触发怀疑 + 路由`，不负责 `签 truth + 出 verdict`。
