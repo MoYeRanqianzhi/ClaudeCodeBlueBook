@@ -2,32 +2,11 @@
 
 `navigation/` 只负责跨目录反查，不重新定义三条母线。需要权威短语与最短主线时先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)；只有当问题已经变成“我要跨目录找哪一层证据”时再留在这里。
 
-如果只先记跨目录前门的三条公式，也只记这三条：
-
-1. Prompt
-   - `same-world compiler = Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
-2. 治理
-   - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
-   - `Narrow / Later / Outside` 只是助记，不是第二套对象链
-3. 当前真相
-   - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
-
-如果一个跨目录问题还压不回这三条，它就还停在对象层或结果词层。
+这里不再重复 root frontdoor 的 canonical formula 与三组最小顺序；若你现在还缺这些，先回 [../README.md](../README.md) 与 `09`。`navigation/` 只接管两件事：判你该去哪一层证据，判哪一页只配当 route 不配改判。
 
 治理 / 安全 / Token 问题若已确认缺的是对象链而不是路线，也只先弹回：
 
 - `85 -> 83 -> 100 -> security -> risk`
-
-如果继续往下压，跨目录入口也只该再暴露三组最小顺序：
-
-1. Prompt witness order
-   - `authority winner -> boundary bundle -> protocol transcript -> lineage refs -> continuation qualification -> explainability card`
-   - 前五项才是可复核的 verdict witness set；`explainability card` 只是判后 diagnostic shell，不是新的 adjudicative evidence。
-2. governance failure order
-   - 先判 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
-   - 跨目录时也先问 `pricing-right` 与 `truth-surface`，不先追 modal、usage、cleanup event；`asset-rollback ABI` 只负责把收口做成 contract，不负责定义治理主语。
-3. current-truth reject order
-   - `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`
 
 如果继续把源码质量线再压成 later maintainer 可立即执行的一句判断，也只该再补一条 `truth-plane order`：
 
@@ -50,16 +29,10 @@
 
 - 先判你是在找主线宪法、证据层，还是跨目录下一跳。
   主线宪法回 `09`，证据层去各目录 `README`，只有跨目录下一跳才留在这里。
-- 先判你要的是解释、模板、verdict 还是反例。
+- 先判你缺的是哪类证据。
   `philosophy / architecture / api / guides / playbooks / casebooks` 各守一种职责，不在 `navigation/` 里重新混写。
-- 先判你是在阅读、迁移，还是继续改写蓝皮书。
+- 先判你当前是哪类任务。
   阅读优先 `01 / 02`，失稳前自校优先 `15`，迁移优先 `46`，继续改写三条母线优先 `05 / 15 / 41`。
-- 先判你是在单线深挖，还是准备并行多 Agent 同时研究。
-  并行时优先按 question domain 拆成 Prompt 世界准入、治理定价、当前真相保护、目录前门纪律，不按文件库存拆。
-- 先判你现在缺的是最短公式、最小顺序，还是具体证据层。
-  缺公式先回 `09 / README`，缺顺序先回 `15 / guides`，缺对象和锚点才去 `architecture / api / playbooks / casebooks`。
-- 先判源码质量线是不是该按固定路由走。
-  更稳的固定顺序是：先经 `09 / 05 / 15 / 41` 判前门，再按 `philosophy -> architecture -> api -> guides -> playbooks -> casebooks` 走证据梯度；`navigation` 只负责跳转，`docs` 不回写正文。
 
 ## 稳定节点
 
@@ -91,16 +64,10 @@
 - Prompt 尾段只承接 residual reopen；治理 `67`（release）与结构 `71`（steady-state）只可互参，不可互借主语。
 - 如果你已经确认结构真相面的问题不在前门公式，而在“怎样把假 authority / merge / fail-closed / liability 压回固定顺序”，从 `41 -> 102 -> guides/83 -> playbooks/61 -> casebooks/54` 进入。
 - 如果你已经进入 refinement execution，且缺的是结构精修模板而不是第一性原理，从 `41 -> 102 -> guides/92 -> playbooks/67 -> casebooks/63` 进入。
-- 如果你在判断“高阶结论是否已经被压到最短动作链”，也只认三行：
-  `compile -> protocolize -> preserve -> continue -> explain`
-  `price -> externalize -> arbitrate -> continue-or-stop -> cleanup`
-  `surface -> writeback -> freshness -> evict`
 - 如果你在判断“下一层该去哪个目录”，也先问：
   这是 same-world compiler、governance pricing chain，还是 authority surface / temporal honesty 的问题。
 - 如果你在判断“并行深挖后该回哪一个前门合并”，也先问：
   这个结论第一次该回 `09`、`05`、`15` 还是 `41`，而不是继续在 `README / navigation / guide` 三层同时第一次被回答。
-- 如果你在判断“排查顺序该先从哪一格开始”，也先问：
-  我现在缺的是 Prompt witness order、governance failure order，还是 current-truth reject order。
 - [46-宿主迁移工单导航：request compiler、governance key 与 current-truth writeback 如何进入实施顺序、交接包与灰度发布](46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布.md)
   进入宿主实现、迁移、验收与收口链。
 

@@ -8,6 +8,47 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- Prompt frontdoor 的长期默认硬句现已继续写死成：
+  - `world-defining winner -> compile world-entry -> verify witness ABI -> enforce continue qualification`
+  - `Explainability` 默认只负责诊断，不负责改判
+  - `Authority` 默认先解释成“谁赢得定义当前世界的优先级”，而不是继续停在抽象 noun
+- Prompt 前门的长期默认动作链现已继续写死成：
+  - `compile -> verify -> enforce -> continue -> explain`
+  - 旧的 `compile -> protocolize -> preserve -> continue -> explain` 后续默认降为解释层旧说法，不再做高流量前门首答
+- `00-导读` 与 `navigation/README` 的长期默认边界现已继续写死：
+  - `00-导读` 只保留研究对象、为什么这样读、读后的第一判断
+  - `navigation/README` 只保留 next-hop、稳定节点、route law 与证据层分工
+  - 二者后续若继续复制 canonical formula、最小顺序或 reject signal，默认视为第二 frontdoor 风险
+- frontdoor contract 的长期默认前置块现已继续稳定：
+  - `public-evidence ceiling`
+  - `runtime-core vs operator-governance evidence`
+  - `truth-surface attestation`
+  - `rollback ceiling`
+  - 以后凡是高流量前门页，如果这些约束出现在按钮、面板、目录名之后而不是之前，默认视为阅读顺序失真
+- 治理前门的长期默认 consumer 降格现已继续写死：
+  - `approval / modal / status / usage / compact` 只配做 `typed-ask / projection / continuation` consumer
+  - 定义治理 verdict 的主语默认只剩 `pricing-right -> truth-surface attestation -> asset-rollback ABI`
+- `07-运行时契约、知识层与生态边界` 这一类前门的长期默认分栏现已继续写死：
+  - `authority / witness seams`
+  - `continuation consumers`
+  - 前者签 contract、witness、writeback seam；后者只消费、压缩、恢复与投影
+- 下一批源码质量 frontdoor 收口的长期默认目标现已记下：
+  - 统一 `README / 03 / 06 / api/30` 对源码质量 canonical ladder 的首答
+  - 目标长期默认仍是 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - `evidence gradient / authority surface / temporal honesty / future maintainer rejectability` 与 `authority surface -> writeback split -> freshness gate -> later-maintainer rejectability` 后续默认只配做解释层，不再配继续抢 canonical first-answer
+- frontdoor 目录优化的长期默认策略现已继续收紧成“先删首答重复，再补 doctrine”：
+  - 根 `README` 默认只保留 canonical formula、三组最小顺序与最短进入规则
+  - `navigation/README` 默认只保留跨目录下一跳、稳定节点、route law 与证据层分工
+  - `00-导读` 默认只保留去魅后的三句高阶判断
+  - `06` 默认只解释为什么这样分工才不失真，不重写 route 清单
+- 如果根 `README` 同时承担 canonical formula、目录职责表、按问题索引、证据梯度与 route map，默认视为 frontdoor 过胖；如果 `navigation/README` 再重复 canonical formula 或最小顺序，默认视为第二 frontdoor 风险。
+- Prompt 前门的长期默认短句现已继续加强：
+  - `compiled law / advisory context / delegated world / enforcement gates`
+  - `compile + verify + enforce`
+  - 后续若前门又退回 secret text、system prompt 崇拜或 summary prose 崇拜，应直接按写浅拒收
+- 治理前门的长期默认短句现已继续加强：
+  - `pricing-right / truth-surface attestation` 先于 approval popup、modal、usage panel
+  - 审批框长期默认只配做 `typed ask` consumer，不再配被写成治理本体
 - governance frontdoor 的默认排查顺序现已继续写死：
   - `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
   - mode、modal、usage、status、compact、default continue 都只配做 `typed ask / projection` consumer，不再配冒充治理本体

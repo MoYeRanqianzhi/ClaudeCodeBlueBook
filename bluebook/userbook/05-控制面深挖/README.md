@@ -29,6 +29,17 @@
 
 如果控制面页不能先回答这三件事，它就还是“控制面话题集合”，还不是用户真正可执行的判断层。
 
+进入控制面长文前，还应先记四条前置硬约束：
+
+1. `public-evidence ceiling`
+   - 用户看见的 UI 面、命令面与状态面，只能签它们公开承诺过的 consumer truth，不能越级改判 runtime-core 缺口。
+2. `runtime-core vs operator-governance evidence`
+   - 前者签 contract、witness、writeback seam；后者签 `CLAUDE.md / hooks / settings / policy surface` 这类治理工件；两者都重要，但不能混写成同一 certainty。
+3. `truth-surface attestation`
+   - `protocol -> current -> event -> display` 是不同 truth plane；任何 status、usage、summary 都只能做投影。
+4. `rollback ceiling`
+   - rollback 只封住可恢复 contract surface，不等于 authority、conversation 或副作用世界整体可逆。
+
 ## 先按控制面，不按相邻按钮
 
 进入这一层前，先问自己：
