@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/casebooks/73-75` 的长期默认 continuity distortion language 现已继续写死：
+  - `73` 默认不把 continuity 升成第四类 Prompt 失真家族
+  - `74` 默认不把 continuity 升成第四条治理失败流程
+  - `75` 默认不把 continuity 升成第四类结构问题
+  - 三页默认统一把 continuity 收回 `Continuation / continuation pricing / recovery asset non-sovereignty`
 - `bluebook/playbooks/77-79` 的长期默认 continuity verification language 现已继续写死：
   - `77` 默认不把 `compact / summary / resume / handoff` 升成第四类 Prompt 机制
   - `78` 默认不把 `compact / resume / re-entry` 升成第四条治理对象线

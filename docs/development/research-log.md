@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 casebooks continuity 深化动作: 已继续更新 `bluebook/casebooks/73-75`。新的结论是：反例层也不该把 continuity 单列成第四类失败家族。更稳的默认写法是：`73` 只把 continuity 失真写成 Prompt `Continuation` 被 prose continuation 夺权，`74` 只把它写成治理 `continuation pricing` 被默认免费化，`75` 只把它写成 `recovery asset`、健康投影与作者记忆对 present truth 的篡位。
+- 本轮新的反例层结论: 一旦 casebook 用“恢复成功”“交接顺滑”“还能继续”这些结果词替代 `continue qualification / continuation pricing / present truth signer`，反例就会从制度失真退回体验吐槽。现在这组 casebook 顶层句法已经和 playbooks/guides/navigation 对齐了。
 - 本轮 playbooks continuity 深化动作: 已继续更新 `bluebook/playbooks/77-79`。新的结论是：执行验证手册层也不该把 continuity 单列成第四类验证对象。更稳的默认写法是：`77` 只把 continuity 写成 Prompt `Continuation` 的验证点，`78` 只把它写成 `continuation pricing / durable-transient cleanup` 的消费点，`79` 只把它写成 `current-truth surface / recovery asset non-sovereignty / freshness gate` 的时间轴回归语法。
 - 本轮新的设计内涵结论: 只要 playbook 还把 “还能继续 / resume 成功 / handoff 结束” 当成结果词，而不回到 `continue verdict / continuation pricing / present truth signer`，later maintainer 在执行层就会再次学回第四主语。现在这组手册的顶层句法已经和 README / navigation / guides 对齐了。
 - 本轮 guides continuity 深化动作: 已继续更新 `bluebook/guides/99-102`。新的结论是：审读模板、治理审题和公开镜像证据分级都不该把 continuity 单列成第四平面。更稳的默认做法是：`99` 只把 continuity 写成 Prompt `Continuation` 的 consumer，`100` 只把它写成 `continuation pricing` 的消费点，`101` 只把它写成 `recovery asset non-sovereignty / anti-zombie` 的时间轴，`102` 则只把它写成 `current-truth surface candidate / temporal honesty` 的降格规则。

@@ -12,6 +12,10 @@
 4. 为什么假 `continuation object` 最容易把 lawful forgetting 重新退回“更短的故事”。
 5. 怎样用苏格拉底式追问避免把这些反例读成“再补几条 Prompt 测试”。
 
+这里还应再多记一句：
+
+- 这页里的 continuity 失真不是第四类 Prompt 反例家族；它只是 `Continuation` 这一 rung 被 summary、handoff 与平行 world prose 夺权后的失真样式。
+
 ## 0. 代表性源码锚点
 
 - `claude-code-source-code/src/utils/systemPrompt.ts:28-123`
@@ -50,6 +54,8 @@
 而不再围绕：
 
 - 同一个 `lineage_kernel + protocol_transcript + continuation_object + cache_safe_fork`
+
+更硬一点说，这里真正坏掉的不是“恢复体验”，而是 Prompt 时间轴上 `continuation object -> continuation qualification -> cache-safe fork reuse` 这一段开始被当成 prose continuation。
 
 ## 2. 假lineage kernel vs 同一请求对象
 
