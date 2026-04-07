@@ -10,11 +10,11 @@
 
 这里还应再多记一句：
 
-- `continuity` 在风控目录里也不是第四类用户风险主题；它只是 `continuation pricing`、恢复证据与 `reopen qualification` 在用户侧的结算面。
+- `continuity` 在风控目录里也不是第四类用户风险主题；它只是 `continuation pricing`、恢复证据与 `reopen qualification` 在用户侧的共同时间轴。
 
 如果只先记风控前门的一句话，也只记这句：
 
-- 风控不是第二套安全规则，而是同一条治理收费链在 `product promise / reopen qualification / evidence binding` 这组用户侧 consumer 上的读法：先由 `governance key` 决定谁能改边界，再看 `product promise / decision window` 怎样被用户侧读到，先由 `durable-transient cleanup` 收口，再由 `signer + evidence + reopen` 决定恢复是否成立。
+- 风控不是第二套安全规则，而是同一条治理收费链落到 `product promise / reopen qualification / evidence binding` 这组用户侧判断对象上的前门解释：先由 `governance key` 决定谁能改边界，再看 `product promise / decision window` 怎样被用户侧读到，先由 `durable-transient cleanup` 收口，再由 `signer + evidence + reopen` 决定恢复是否成立。
 
 这里还应再多记一句：
 

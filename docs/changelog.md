@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/security/README.md`、`bluebook/risk/README.md`、`bluebook/userbook/README.md` 与 `bluebook/README.md`，把治理前门里残留的 `结算面 / consumer / 投影替身` bucket wording 继续拆细：`security` 现在把 `Export` 单列回 `Outside` handoff surface，`risk` 现在把 `结算面 / consumer` 收回用户侧判断对象与共同时间轴，`userbook` 根页现在把自我定义收回“判断与二跳”，根 `README` 现在把 `mode / usage` 和 `compact / default continue` 拆成不同类的替身
 - 继续更新 `bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md`、`bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`、`bluebook/navigation/README.md` 与 `bluebook/02-使用指南.md`，把两条高阶前门的 slug 与高流量入口回指正式收回 canonical 主语：`15 / 41` 现在不再用 `Prompt魔力 / 源码先进性` 做路径命名，`02` 和 `navigation/README` 也同步改掉旧 visible label 与旧 target
 - 继续更新 `bluebook/02-使用指南.md`、`bluebook/api/README.md`、`bluebook/navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md` 与 `bluebook/api/48-commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界.md`，把 atlas 线仍留在高流量 route/index 页上的 `Atlas / atlas 原则` visible label 继续收回 `源码地图 / 二级目录地图 / 源码地图原则`，并补掉 `api/48` 正文里最后一句 `命令 atlas` 残留
 - 继续更新 `bluebook/security/README.md` 与 `bluebook/playbooks/66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md`，把治理执行层残留的 `later maintainer 与 user-facing 共用顺序 / settlement right / host consumption card / 投影` 继续收回 `跨宿主对照顺序 / no user-side mechanism override / 治理执行卡 / 可见读面`，避免执行层桥接词再次冒充治理 speaking right

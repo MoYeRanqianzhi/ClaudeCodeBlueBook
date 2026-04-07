@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/security/README`、`bluebook/risk/README`、`bluebook/userbook/README` 与 `bluebook/README` 的长期默认 governance-bucket-split language 现已继续写死：
+  - `Export` 默认继续只写成 `Outside` handoff surface，不再并回 continuation consumer
+  - `risk/README` 默认继续把 `结算面 / consumer` 收回用户侧判断对象与共同时间轴
+  - `userbook/README` 默认继续把根角色写成判断与二跳，不先按 bucket 自我分类
+  - 根 `README` 默认继续把 `mode / usage` 与 `compact / default continue` 拆成不同类的替身
 - `bluebook/navigation/15`、`bluebook/navigation/41`、`bluebook/navigation/README` 与 `bluebook/02` 的长期默认 prompt-slug-alignment language 现已继续写死：
   - 两条高阶前门默认继续把 slug 收回 `请求装配控制面 / 统一定价治理 / 当前真相保护`
   - 高流量入口页默认继续同步这两条新 target，不再暴露旧 `Prompt魔力 / 源码先进性` 路径

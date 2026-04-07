@@ -19,7 +19,7 @@
 这里还要再多记一句：
 
 - `userbook/` 不宣布新的系统真相，它只把已经承认的对象链、控制面和可见边界翻译成用户侧可操作判断。
-- `userbook/` 默认只翻 user-visible projection、continuation consumer 与 `Outside` handoff surface，不替 `README / 09 / api` 补签 runtime-core 缺口；先忘了这层 `public-evidence ceiling`，就会把 UI 面和状态词误当系统真相。
+- `userbook/` 默认只把已承认的对象链、控制面与可见边界翻成用户侧判断与二跳，不替 `README / 09 / api` 补签 runtime-core 缺口；先忘了这层 `public-evidence ceiling`，就会把 UI 面和状态词误当系统真相。
 - Prompt 也不是单段 `systemPrompt`，而是 multi-surface world-entry object；`CLAUDE.md / hooks / settings` 能影响行为，但不能替 runtime witness 签 continue。
 - `continuity` 在 `userbook/` 里也不是第四条使用主题；它只是同一工作对象在 Prompt `Continuation`、治理 `continuation pricing` 与当前真相收口上的共同时间轴。
 - 所以 user-facing 第一问也不该是“该点哪个入口”，而应先判 `上下文送错 / 扩张或权限判错 / 旧状态污染`；先定题，不先找页。
