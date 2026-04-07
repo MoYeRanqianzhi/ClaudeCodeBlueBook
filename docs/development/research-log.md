@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 directory-not-owner 深化动作: 已继续更新 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `bluebook/userbook/04-专题深潜/README.md`。新的结论是：目录结构优化本身不该再被写成高阶判断对象；一旦 later maintainer 开始先讨论“目录怎么优化”，源码质量判断就已经从证据层退回地图层。
+- 本轮新的目录结论: 更稳的目录 wording 必须先说“专题首页只承担什么职责”，而不是先说“目录优化有什么价值”。也就是先说工作对象翻译、最小顺序提示与退出条件，再说这些承载纪律如何减少 first-answer count。
 - 本轮 governance-bucket-to-chain 深化动作: 已继续更新 `bluebook/security/README.md`、`bluebook/architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`、`bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md` 与 `bluebook/risk/README.md`。新的结论是：治理线当前更贵的 residual，已经不只是结果词，而是 later maintainer 仍可能先记住“动作空间 / 权威空间 / allow-ask-deny / 用户侧主题对象”这些 bucket，再回头补治理顺序。
 - 本轮新的治理结论: 更稳的 governance wording 必须先回答 canonical chain 怎样收动作、可见性、时间与恢复，再回答这些执行后果为什么会在安全、风控与省 token 上表现不同。也就是先说收费节点与执行层投影，不先说 bucket 分类。
 - 本轮 prompt-longform-result-word-demotion 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`。新的结论是：Prompt / 治理 / 源码质量高阶前门哪怕已经在 README 与导航页收回 first-principles 主语，长文章节仍可能通过 “看起来更有效 / Prompt 效力 / 源码先进性 / 拦得更严” 这组标题与总结句，把 later maintainer 带回结果词。

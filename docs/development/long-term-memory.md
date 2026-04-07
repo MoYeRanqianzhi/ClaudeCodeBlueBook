@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/87` 与 `bluebook/userbook/04` 的长期默认 directory-not-owner language 现已继续写死：
+  - 目录结构、专题分工与首页设计默认继续只做承载纪律，不再充当源码质量判断对象
+  - `philosophy/87` 默认继续把文档分工写成“同一判断只允许由同一证据层首答”，不再把目录结构本身写成高阶质量论题
+  - `userbook/04` 默认继续把专题首页价值写成工作对象翻译、最小顺序提示与退出条件，不再先说“目录优化”
 - `bluebook/security/README`、`bluebook/architecture/83`、`bluebook/philosophy/85` 与 `bluebook/risk/README` 的长期默认 governance-bucket-to-chain language 现已继续写死：
   - 治理长文与专题页默认继续先说 canonical chain 与执行层投影，不先把动作、空间、用户侧主题对象写成 owner bucket
   - `architecture/83` 默认继续把 `Narrow / Later / Outside` 写成 chain 导出的执行后果，不再写成第一主语
