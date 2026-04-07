@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06-第一性原理与苏格拉底反思.md` 的长期默认 governance-self-audit-alignment language 现已继续写死：
+  - `6.23 / 6.46 / 6.55 / 6.58 / 7.5` 默认继续优先反问“是否又把 signer、弱读回面、continuation consumer 与 cleanup 结果词写混”，不再只停在“统一预算器 / 更严拦截 / 压缩文本”这类中层概括
+  - 更稳的默认修法顺序继续是：`先删中层结果词 -> 再点名同一秩序里的非对称 -> 最后才回 owner 页`
 - `bluebook/philosophy/84`、`bluebook/guides/51`、`bluebook/guides/36` 与 userbook Prompt consumer 页的长期默认 prompt-abi-owner-collapse language 现已继续写死：
   - `84` 默认继续独占 canonical Prompt ABI statement：`message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
   - `51` 默认继续把这 6-link chain 写成 builder-facing 复用对象，不再另造一套实现 ABI
