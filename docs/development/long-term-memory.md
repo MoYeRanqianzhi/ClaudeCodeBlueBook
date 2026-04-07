@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `docs/development/02-证据索引.md` 的长期默认 evidence-index-mode-hardening language 现已继续写死：
+  - 当前 `.worktrees/mainloop` 若仍是 `mirror absent / public-evidence only`，`02-证据索引` 默认继续只充当 archival mirror-path index，不得被读成“本地已核验源码证据”
+  - 更稳的默认修法顺序继续是：`先在索引页点明 evidence mode -> 再列 mirror path -> 若需要 stronger claim，再回 00 判证据模式`
 - `bluebook/guides/36` 与 `bluebook/userbook/*` Prompt consumer 页的长期默认 prompt-abi-consumer-aliasing language 现已继续写死：
   - `guides/36` 默认继续不用抽象 `witness_chain_ref` 兜底，而是直接写出六个 Prompt ABI 槽位
   - `userbook/README`、`userbook/01-主线使用/02`、`userbook/04-专题深潜/08` 与 `userbook/05-控制面深挖/README` 默认继续共用同一张 alias table：`目标 = message_lineage_ref`、`附件 = section_registry_ref + stable_prefix_ref`、`working set = protocol_transcript_ref + continuation_object_ref`、`next step = continue_qualification_verdict`
