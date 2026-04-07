@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/22`、`bluebook/navigation/05` 与 `bluebook/security/README` 的长期默认 governance-bridge-demotion language 现已继续写死：
+  - 治理高流量前门默认继续把 `安全 / 成本 / 体验` 写成统一治理收费链的外部投影，不写成三项目标或并列主语
+  - `philosophy/22` 默认继续把 H1、章节名与总结句收回 `扩张定价不是三项目标权衡，而是同一条治理收费链`
+  - `navigation/05` 与 `security/README` 默认继续同步使用 `扩张定价为什么会投影成安全、成本与体验` 这一类 route label
+  - 这三页默认统一拒收 audience bridge 主语再次越位成 canonical pricing chain 的 visible label
 - `bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-lexicon-cleanup language 现已继续写死：
   - Prompt 反例句默认继续把 `更会说 / 更像专家 / Prompt 强度` 收回 `文风更顺滑 / Prompt 效力`
   - `winner / 争主权` 默认继续收回 `world-definition source / 首答来源 / 改判权`

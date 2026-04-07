@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 governance-bridge-demotion 深化动作: 已继续更新 `bluebook/philosophy/22-安全、成本与体验必须共用预算器.md`、`bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md` 与 `bluebook/security/README.md`。新的结论是：治理线当前高流量 residual 的核心，不再是 canonical chain 公式本身，而是入口层还在拿 `安全 / 成本 / 体验` 这种 audience bridge 主语代替治理收费链。现在这三页开始更一致地把这组 bridge wording 收回 `扩张定价 -> 治理收费链 -> 外部投影`。
+- 本轮新的治理结论: 如果 later maintainer 第一次看到的仍是“三项目标如何平衡”，他就会围绕体验/成本/safety 的并列优化理解治理；更稳的前门写法必须先说“哪条链在定价”，再说“它会投影成哪些可见外观”。
 - 本轮 prompt-lexicon-cleanup 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`。新的结论是：Prompt 去魅当前更顽固的 residual，不再主要是 headline 里的 `魔力`，而是反例句、反证句和设计启发句还在借用 `更会说 / 像专家 / 强度 / winner / 主权` 这种 signer 或 enchantment 词感。现在这三页开始更一致地把这组词收回 `文风更顺滑 / 效力 / world-definition source / 首答来源 / 改判权`。
 - 本轮新的 Prompt 结论: 最难清掉的不是正面定义句，而是“我在反对什么”时顺手借来的旧词；如果反例句仍在用 `更会说 / 更像专家 / 争主权` 讲机制失真，later maintainer 仍会先按文风和拟人主语来理解 Prompt。
 - 本轮 source-map-locator-demotion 深化动作: 已继续更新 `bluebook/01-源码结构地图.md`、`bluebook/02-使用指南.md` 与 `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`。新的结论是：源码质量线当前最容易回潮的 residual，不再是 canonical ladder 本身，而是地图页和使用层还会把 `atlas / projection / rung` 这种定位词写得像第二套公式。现在这三页开始更一致地把地图页话语收回 `定位与跳转 / canonical ladder / 地图定位规则`。
