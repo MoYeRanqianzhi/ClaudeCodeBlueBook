@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 Prompt 结论：`03 / 07` 现在更明确把 `lawful forgetting / continuation qualification` 收回 same-world compiler 的时间轴 verdict；凡 consumer path 还要重谈 `world-definition source`，都应直接按 `anti-renegotiation` 失败拒收。
+- 本轮新的 continuity 结论：`07` 现在开始把 continuity 压成 shared runtime correctness / continuity budget，并用 `asset -> survives what -> requires re-attestation -> veto owner` 四列把“哪些资产可续带、哪些必须重认证”写成可复核矩阵。
+- 本轮新的 source-quality subset 结论：`architecture/14 / 59` 现在更明确把自己标成 `consumer subset / candidate` 页，不代签全局源码质量 verdict；这让 subset 说明第一次拥有了明确 speaking-rights stamp，而不只是靠正文措辞收敛。
 - 本轮新的 Prompt next-hop 结论：`philosophy/README` 与 `navigation/README` 现在更明确把 Prompt 的继承、续写与 continue qualification 收回 `84 -> 81`，不再公开把 `51` 发成结果词页的 builder-facing 二跳。
 - 本轮新的 user-facing packet 结论：`userbook/05/README` 的 `目标 / 附件 / working set / next step` 现在更明确只是一张 user-side reject aid，而不是 `world-definition source` 或 `continue qualification` 的代签包。
 - 本轮新的 mechanism-owner 结论：`navigation/38` 现在更明确只做 mechanism owner route，不代签全局源码质量 verdict；`architecture/README` 也开始把结构结论直接挂回 `guides/102` 的 `change-risk record`，把对象图和 later maintainer 的变更前协议接上了。

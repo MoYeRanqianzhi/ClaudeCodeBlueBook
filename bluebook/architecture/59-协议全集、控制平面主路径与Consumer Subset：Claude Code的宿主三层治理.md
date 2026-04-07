@@ -152,6 +152,12 @@ Claude Code 的权威控制平面主路径，不在 schema 列表本身，而在
 
 如果继续往外看，不同宿主与不同消费者拿到的都只是子集。
 
+在公开镜像语境里，这一层也应先带着三条 badge 读：
+
+- `evidence level = consumer subset`
+- `no global source-quality verdict`
+- `surface = candidate unless sole writer / writeback / freshness visible`
+
 ### 4.1 bridge 是中等宽度子集
 
 bridge 会先在 `handleIngressMessage(...)` 里把：

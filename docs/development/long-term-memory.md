@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-anti-renegotiation live 记忆：
+  - `03 / 07` 默认继续把 `lawful forgetting / continuation qualification` 写成 same-world compiler 的时间轴 verdict，而不是第二条 Prompt 主语
+  - 凡 consumer path 仍要重谈 `world-definition source`，默认按 `anti-renegotiation` 失败处理
+- 当前批次继续新增一条 continuity-budget-matrix live 记忆：
+  - `07` 默认继续用 `asset -> survives what -> requires re-attestation -> veto owner` 这四列来压 shared runtime correctness / continuity budget
+  - 更稳的默认修法顺序继续是：`先点明哪些资产可续带 -> 再点明哪些必须重认证 -> 最后点明谁拥有 veto`
+- 当前批次继续新增一条 consumer-subset-badge live 记忆：
+  - `architecture/14 / 59` 这类 subset 页默认继续显式带 `evidence level = consumer subset / no global source-quality verdict / surface = candidate unless sole writer/writeback/freshness visible`
 - 当前批次继续新增一条 prompt-owner-next-hop live 记忆：
   - `philosophy/README` 与 `navigation/README` 默认继续把 Prompt 的继承、续写、continue qualification 与 lease legality 收回 `84 -> 81`，不再把 `51` 公开发成结果词页或 builder-facing 二跳
 - 当前批次继续新增一条 user-facing-packet-boundary live 记忆：
