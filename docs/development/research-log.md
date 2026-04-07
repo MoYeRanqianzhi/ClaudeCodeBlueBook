@@ -2,6 +2,7 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮根仓库同步最终状态已修正: 先前的 unresolved-conflict 阻塞没有继续持续；同回合补做后，`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均已成功，根仓 `main` 现已确认与 `origin/main` 对齐。本轮正文改写与提交仍然全部只在 `.worktrees/mainloop` 内完成。
 - 本轮 prompt-governance-current-truth-alignment 深化动作: 已继续更新 `bluebook/03-设计哲学.md`、`bluebook/05-功能全景与API支持.md`、`bluebook/architecture/52-...`、`bluebook/architecture/81-...` 与 `bluebook/philosophy/README.md`、`bluebook/navigation/02`、`03`、`07`、`bluebook/04`。新的结论是：当前更值钱的 residual，已经不在是否有 canonical chain，而在深页和高流量入口还会不会把 taxonomy、旧 display title 或旧 surface 术语重新冒充 first answer。
 - 本轮新的 first-principles 结论: 更稳的 `03` 写法必须让 Prompt 线只保留 `world-admission protocol + 四个苏格拉底问题`，让治理线在本章只保留 canonical pricing chain 与 acid test，而不在深段重开第二前门；更稳的 `05` 写法则必须先判 `current admission / product promise`，再允许读者进入接口分类。
 - 本轮新的源码先进性术语结论: `52 / 81` 现在更明确把 `Authoritative Surface / authority surface` 收回 `current-truth surface / current-truth writeback`。这说明源码质量线当前更高价值的工作，不是再补 aura 或抽象词，而是持续把“谁宣布当前真相、谁执行 writeback、谁能撤销陈旧写回”写成 later maintainer 可复用的正式主语。
