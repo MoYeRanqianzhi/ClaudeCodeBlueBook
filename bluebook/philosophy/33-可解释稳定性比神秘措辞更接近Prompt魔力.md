@@ -1,8 +1,8 @@
-# 可解释稳定性比神秘措辞更接近Prompt魔力
+# Explainability 只是 Prompt 的诊断命名层
 
 这一章回答四个问题：
 
-1. 为什么 Claude Code 的 prompt 魔力更接近“可解释稳定性系统”，而不是“神秘措辞模板”。
+1. 为什么 Claude Code 的 prompt 效力更接近“可解释稳定性系统”，而不是“神秘措辞模板”。
 2. 为什么一个真正成熟的 prompt 系统，必须既能稳定工作，也能解释什么时候失稳。
 3. 为什么 cache break 归因、预算观测、shared prefix 与 tool ABI 稳定性应该被看成同一哲学。
 4. 从第一性原理看，什么才是最难被抄走的 prompt 能力。
@@ -24,7 +24,7 @@
 
 - `Explainability`
 
-更准确地说，Claude Code 的 prompt 魔力不是：
+更准确地说，本页不再承担 Prompt 首答，只承担 `Explainability` 这一层的诊断命名权。Claude Code 的 prompt 效力不是：
 
 - 它有一段特别厉害的 system prompt
 
@@ -41,7 +41,7 @@
 
 ## 2. 为什么 Explainability 不是可有可无的附属层
 
-如果 prompt 魔力主要来自措辞，那么最重要的问题应该是：
+如果 prompt 效力主要来自措辞，那么最重要的问题应该是：
 
 - 这段话写得够不够强
 
@@ -155,4 +155,4 @@ tool pool 顺序与过滤逻辑稳定，意味着：
 
 ## 6. 一句话总结
 
-Claude Code 的 prompt 魔力，更接近 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 里最后一级真正成立，而不是多了一段难以言传的神秘措辞。
+Claude Code 的 prompt 效力，更接近 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 里最后一级真正成立，而不是多了一段难以言传的神秘措辞。

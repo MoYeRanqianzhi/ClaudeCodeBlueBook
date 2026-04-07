@@ -5,7 +5,7 @@
 如果把蓝皮书入口再压成最短公式，只剩三条：
 
 1. Prompt
-   - Prompt 的 first-answer law 统一回 `philosophy/84`；根前门这里只保留 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 作为二跳前的最短 hook，不在这里另起第二套 Prompt 总法。
+   - Prompt 的首答来源统一回 `philosophy/84`；根前门这里只保留 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 作为二跳前的最短 hook，不在这里另起第二套 Prompt 总法。
 2. 治理
    - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
    - `Narrow / Later / Outside` 只是这条收费链的用户侧助记，不是第二套主题

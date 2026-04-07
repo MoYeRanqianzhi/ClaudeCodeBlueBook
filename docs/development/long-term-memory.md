@@ -3343,3 +3343,6 @@
 - 下一条源码质量目录精修线也已被 sidecar 收敛：`navigation/04` 不能再继续扮演目录宪法 owner，`philosophy/87` 也不该再把 speaking-rights 正式回指给它。若继续推进源码质量线，优先做 demotion propagation，不优先再改高阶哲学论点。
 - 这条源码质量目录纪律现已进一步固定为：`navigation/04` 只配做 next-hop，不再展开目录宪法正文；各目录 README 负责各自边界；`guides/102` 负责 canonical rung 与降格规则；`navigation/README` 负责跨目录 next-hop。任何 route 页若开始提前指定某篇深页的 owner 身份，就又在制造第二套入口政治。
 - `philosophy/87` 这类源码质量 owner 页可以提出“目录是否又多 writer”这类自校，但不该再把 speaking-rights 本身正式托管给 `navigation/04`；源码质量线更稳的做法是只点名混层风险，再把目录边界回给 README / `guides/102` / `navigation/README` 这三层。
+- Prompt 线的长期 speaking-rights 现在应固定成四类页：`84 = frontdoor owner`，`81 = mechanism deep dive`，`63 = continuation / time-axis`，`33 = diagnostic naming`；`57` 只解释协作接口，`78` 只保留 compat jump / one-screen mnemonic。只要某页重新同时承担两类以上角色，就应优先视为 first-answer count 回潮。
+- Prompt README/目录页里也应直接命名 route 的角色，而不是只给数字链：`frontdoor appeal chain`、`mechanism deep dive`、`collaboration interface`、`compat jump` 这组标签比反复在正文里声明“canonical source 是 84”更稳，因为它把 speaking-rights 吸收进了结构本身。
+- Prompt 线后续若继续去魅，优先级也应改成“先改 page-role，再改比喻词”；比喻词还能活在兼容路径和历史文件名里，但 page-role 一旦混层，later maintainer 第一次看到的仍会是多 owner 结构。

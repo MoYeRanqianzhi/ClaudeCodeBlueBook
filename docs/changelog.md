@@ -600,3 +600,5 @@
 - 同步把用户侧回跳出口校正到 canonical chain：`05/06-Status...` 现在把治理 verdict 回跳改到根 `09 / api`，而不是再回 `userbook/05` 本地 README；`Export` 也正式从 continuation consumer 降格为 `Outside` handoff surface
 - 继续推进源码质量目录治理的 demotion propagation：`navigation/04` 现已从“目录宪法正文”收回成纯 route 页，只保留证据层 next-hop 与 speaking-rights 争议的路由方向，不再提前指定 `api/46-50`、authority file、danger surface 等深页 owner
 - `philosophy/87` 也同步停止把 speaking-rights 正式回指给 `navigation/04`；它现在把目录边界回给各目录 `README`，把 canonical rung 与降格规则回给 `guides/102`，把跨目录 next-hop 回给 `navigation/README`
+- 继续收口 Prompt 线的 speaking-rights：`bluebook/README` 现在把 `first-answer law` 收回 `首答来源`；`philosophy/README` 现在显式把 `84 -> 63 -> 33` 命名成 `frontdoor appeal chain`、把 `84 -> 81` 命名成 `mechanism deep dive`，并把 `57` 固定为 `collaboration interface`、`78` 固定为 `compat jump / one-screen mnemonic`
+- `33 / 57 / 63 / 78` 这一批也同步去前门化：`33` 现在显式只承担 `Explainability` 的诊断命名层，`57` 只承担 `Transcript -> Lineage -> Continuation` 的协作接口，`63` 只承担 `Continuation` 的时间轴与继续资格，`78` 则正式降成 Prompt 前门速记与兼容跳转，不再和 `84` 并列争首答
