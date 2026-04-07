@@ -8,6 +8,8 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 03-source-quality-wording live 记忆：
+  - `03` 默认继续把源码质量 why 的回链句法统一成 `07 -> guides/102 -> philosophy/87 -> architecture/README`，不再在不同小节保留 `07 -> 87`、`architecture only` 这类变体
 - 当前批次继续新增一条 source-quality-owner-sequence live 记忆：
   - `03` 默认继续不在多个设计原则里各自补源码质量轻量 verdict；若继续追问 why、continuity budget、evidence ladder、quality threshold 与对象/seam，统一顺序固定成 `07 -> guides/102 -> philosophy/87 -> architecture/README`
   - `07` 默认继续把公开镜像源码质量线写成完整的 8 段顺序：`public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline -> change-risk record`

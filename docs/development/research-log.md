@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 `03` 结论：源码质量 why 的回链句法现在更明确继续统一成 `07 -> 102 -> 87 -> architecture/README`，不再在不同小节残留 `07 -> 87` 或 `architecture only` 这类变体。
 - 本轮新的源码质量顺序结论：`03` 现在更明确不该在多个设计原则里各自补质量 verdict；更稳的固定顺序已经压实为 `07 -> 102 -> 87 -> architecture/README`。同时 `07` 也把公开镜像源码质量链补成了完整的 8 段顺序，把 `change-risk record` 从附加动作提升为 owner 链末端。
 - 本轮新的 continuity 总法结论：`07` 现在更明确把 `continue / resume` 收成 shared continue verdict，而不是第五种资产；真正决定它的，仍是 `continue qualification + pricing-right / truth-surface re-attestation + sole-writer freshness` 的联合通过。
 - 本轮新的 userbook/05 结论：控制面深挖页现在更明确给出三句用户问法的正向过关条件，不再只靠 first reject path 侧面防守；用户现在可以直接把“同一件工作 / 治理裁决 / 旧状态污染”分别对回 `continue qualification`、`pricing-right + truth-surface attestation`、`sole writer + freshness`。
