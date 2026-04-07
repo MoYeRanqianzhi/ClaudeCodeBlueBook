@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md` 与 `bluebook/philosophy/README.md`，把源码质量线剩余的 alias 暴露继续降格：`guides/102` 现在更明确正文只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`，`philosophy/README` 现在更明确源码质量前门只认 canonical ladder，不再在入口层显式保留第二套压缩话语
 - 继续更新 `bluebook/risk/README.md`，把风控入口开场继续从“账号/入口/恢复/地区场景”这类并列主题桶收回同一条治理收费链的用户侧读回对象：`risk/README` 现在更明确自己只看 `product promise readback / reopen qualification / evidence binding`
 - 继续更新 `bluebook/architecture/README.md`，把架构入口继续从路由表收回“最短证据入口 + 缺对象时再跳转”：现在更明确先按运行时对象与 first reject signal 选入口，再按缺失对象跳转，不再把 README 主要写成推荐路径表
 - 继续更新 `bluebook/README.md` 与 `bluebook/userbook/README.md`，把总入口里的治理 UI noun 回流继续降格：根入口现在把治理前门、failure order 与 first reject signal 收回 `pricing-right / truth-surface / cleanup authority` 这组节点判断，`userbook/README` 现在把治理界面、状态读数、压缩入口、导出入口与收口结果词统一收回“只读 verdict”的二跳消费者地位

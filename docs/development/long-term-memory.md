@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/guides/102` 与 `bluebook/philosophy/README` 的长期默认 source-quality-alias-demotion language 现已继续写死：
+  - 源码质量入口默认继续只暴露 canonical ladder，不显式保留 `authoritative surface / adapter subset / hotspot gap discipline` 或其它压缩话语作为第二套 frontdoor
+  - `guides/102` 默认继续把旧 alias 完全降到检索兼容层；正文只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`
+  - `philosophy/README` 默认继续把源码质量解释层压缩句降到解释层，不再和 canonical ladder 并列抢入口主语
 - `bluebook/risk/README` 的长期默认 risk-frontdoor-readback language 现已继续写死：
   - 风控入口默认继续先说 `product promise readback / reopen qualification / evidence binding` 这组用户侧读回对象，不先说账号、入口、恢复、地区场景这些并列主题桶
   - `risk/README` 默认继续把误伤、恢复与入口差异写成读回对象上的结算差异，不再把场景桶写成前门主语

@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 source-quality-alias-demotion 深化动作: 已继续更新 `bluebook/guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md` 与 `bluebook/philosophy/README.md`。新的结论是：源码质量线即使已经 canonicalize，later maintainer 仍会被旧 alias 或解释层压缩句误以为存在第二套 ladder。
+- 本轮新的源码质量入口结论: 更稳的 source-quality frontdoor 必须只暴露 canonical ladder，把旧 alias 和压缩句彻底降到检索层或解释层，不再让它们在入口句里与 canonical objects 并列。
 - 本轮 risk-frontdoor-readback 深化动作: 已继续更新 `bluebook/risk/README.md`。新的结论是：风控入口哪怕已经脱离“另一套安全规则”，仍可能在开场句把 later maintainer 拉回账号、入口、恢复、地区这些并列主题桶，而不是先看到同一条治理收费链的用户侧读回对象。
 - 本轮新的风控入口结论: 更稳的 risk wording 必须先说 `product promise readback / reopen qualification / evidence binding` 这组读回对象，再说误伤、恢复、入口差异或用户场景怎样落到这些对象上。
 - 本轮 architecture-readme-route-demotion 深化动作: 已继续更新 `bluebook/architecture/README.md`。新的结论是：架构入口哪怕已经不再争高阶前门，later maintainer 仍可能先被“推荐入口 / 阅读路径”这组路由表语气带走，而不是先拿到对象与 first reject signal。

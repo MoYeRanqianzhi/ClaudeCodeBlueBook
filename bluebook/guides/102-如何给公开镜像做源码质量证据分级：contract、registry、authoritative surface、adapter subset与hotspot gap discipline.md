@@ -31,7 +31,7 @@
 
 这里还应先多记一句：
 
-- 文件名里的 `authoritative surface / adapter subset / hotspot gap discipline` 只作为检索兼容标签，不改变本文的 canonical ladder 与降格规则。
+- 文件名保留旧词只是为了兼容检索；正文判断一律只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`。
 - 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航、跳转关系与其他编排说明都不参与源码质量结论。
 - 若 sole writer、writeback seam 与 freshness gate 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
 
@@ -201,7 +201,7 @@ contract 和 registry 都还不够。
 
 - protocol full set vs consumer subset
 
-因为协议全集里声明存在的能力，不等于每个 adapter、每个 host、每个入口都真的实现了它。`adapter subset` 只是 `consumer subset` 的一种旧写法；`worker_status / external_metadata`、resume path 与 search layer 也都在消费同一 runtime truth 的诚实子集。
+因为协议全集里声明存在的能力，不等于每个 adapter、每个 host、每个入口都真的实现了它。`worker_status / external_metadata`、resume path 与 search layer 也都在消费同一 runtime truth 的诚实子集。
 
 `bridgeMain` 明写 linear subset，remote / headless / REPL 又各有不同支持面。
 

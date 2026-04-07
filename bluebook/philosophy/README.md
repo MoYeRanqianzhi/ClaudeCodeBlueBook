@@ -20,7 +20,7 @@
 
 这里还要再补一条纪律：
 
-- `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability` 这组句子只保留为解释层压缩句，不再和源码质量线 canonical ladder 并列抢 frontdoor 首答权。
+- 源码质量线前门只认 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`；其它压缩句都只配留在解释层。
 - 真正进入 later maintainer 排查前，还应先过 `public artifact ceiling`，再回 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`。
 
 如果继续把 `refactor capital` 压成更短的资本表，也只该剩：
