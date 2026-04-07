@@ -43,14 +43,14 @@ Claude Code 更深的治理律，不是：
 - 多几道检查
 - 少花一点 token
 
-而是三种反扩张动作：
+而是同一条 canonical chain 导出的三种执行后果：
 
-1. `Narrow`
-   - 现在就收窄动作、能力与输入来源
-2. `Later`
-   - 没必要立即可见的能力与事实延后暴露
-3. `Outside`
-   - 体积大、波动高、只需引用的对象迁出主 prompt
+1. `governance key -> typed ask`
+   - 把不配即时放大的扩张压回 `Narrow`
+2. `externalized truth chain -> decision window`
+   - 把暂不配进入当前世界的能力压回 `Later`
+3. `continuation pricing -> durable-transient cleanup`
+   - 把不配继续占位的对象压回 `Outside`
 
 所以这条治理链之所以同时表现成安全与省 Token，不是因为它们都在“限制”，而是因为它们都在决定：
 

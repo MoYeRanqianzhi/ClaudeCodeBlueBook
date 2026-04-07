@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/security/README`、`bluebook/architecture/83`、`bluebook/philosophy/85` 与 `bluebook/risk/README` 的长期默认 governance-bucket-to-chain language 现已继续写死：
+  - 治理长文与专题页默认继续先说 canonical chain 与执行层投影，不先把动作、空间、用户侧主题对象写成 owner bucket
+  - `architecture/83` 默认继续把 `Narrow / Later / Outside` 写成 chain 导出的执行后果，不再写成第一主语
+  - `philosophy/85` 默认继续把动作、可见性、时间与恢复收回收费节点与执行层投影，不再把“空间”或“权限 + 压缩”写成高阶入口
+  - `risk/README` 默认继续把风控写成 canonical chain 的用户侧读回顺序，不再把身份、组织、入口与恢复写成新的治理主语
 - `bluebook/06` 的长期默认 prompt-longform-result-word language 现已继续写死：
   - 长文里的 Prompt / 治理 / 源码质量总结句默认继续与前门页共用 `same-world test / decision window / 源码质量判断` 这组主语，不再先用“Prompt 效力 / 看起来更有效 / 源码先进性 / 拦得更严”
   - `06` 默认继续把 Prompt 长文 summary 写成“为什么能先证明同一世界”，不再把结果词写成长文的第一回答

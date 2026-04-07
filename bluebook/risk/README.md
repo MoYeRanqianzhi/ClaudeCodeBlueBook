@@ -14,13 +14,13 @@
 
 如果只先记风控前门的一句话，也只记这句：
 
-- 风控不是另一条治理链，而是同一条治理收费链落到 `product promise / reopen qualification / evidence binding` 这组用户侧判断对象上的前门解释：先由 `governance key` 决定谁能改边界，再看 `product promise / decision window` 怎样被用户侧读到，先由 `durable-transient cleanup` 收口，再由 `signer + evidence + reopen` 决定恢复是否成立。
+- 风控不是第二套安全规则；它是同一条 canonical chain 在用户侧的读回顺序：`governance key` 先决定谁有资格冻结边界或签发恢复，`externalized truth chain` 把 `product promise` 写成可对账的当前真相，`typed ask` 决定哪些冻结或阻断动作必须进入正式仲裁，`decision window -> continuation pricing` 决定误伤、阻断与连续性成本是否仍可续租，`durable-transient cleanup` 先收口旧 authority，若要恢复，再由 `signer + evidence + reopen` 重新签发执行连续性。
 
 这里还应再多记一句：
 
-- 这组用户侧读法并不脱离完整治理链；更稳的读法仍是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，只是它在风控目录里主要落到 `product promise`、`reopen qualification` 与 `signer + evidence + reopen` 这组用户侧判断对象。
+- 这组用户侧读法并不脱离完整治理链；更稳的读法仍是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，只是它在风控目录里主要落到 `product promise`、`reopen qualification` 与 `signer + evidence + reopen` 这组用户侧读回对象。
 
-风控不是安全之外另一条治理链，而是同一价格秩序在身份、组织、入口子集与恢复签发上的用户侧读法；误伤是在错误冻结能力，恢复是在凭证据和 signer 重新绑定执行连续性。
+因此风控不该再被写成身份、组织、入口与恢复四个主题 bucket；这些都只是同一条链在用户侧的读回对象，不是新的治理主语。
 
 如果把风控前门继续压成最短公式，也只剩三条：
 
@@ -39,12 +39,12 @@
 
 更硬一点说，`risk/` 在目录里的发言权也只该剩三条：
 
-1. `product promise / reopen qualification`
-   - 误伤、恢复、入口差异与连续性成本怎样被用户侧读到。
+1. `product promise readback`
+   - 用户侧当前读到的 admission、capability 与 continuity claim 是否仍与 runtime truth chain 对账。
 2. `reopen qualification`
-   - 哪些 signer、evidence 与 reopen 责任在用户侧重新绑定执行连续性。
+   - cleanup 之后，哪些 signer、evidence 与 liability 配重新签发执行连续性。
 3. `no mechanism override`
-   - `risk/` 不重判治理主键、宿主状态机或 signer ladder 机制本身。
+   - `risk/` 只解释用户侧读回与恢复资格，不重判治理主键、宿主状态机或 signer ladder 机制本身。
 
 如果一个风控判断还压不回这三条，它就还停在“更多封禁 / 更多限制”的结果词层。
 如果一个风控判断还答不上“它在结算哪类用户侧工作对象、哪段治理收费链、哪个入口只是申诉或执行 consumer”，就说明它还没压回第一性原理。
