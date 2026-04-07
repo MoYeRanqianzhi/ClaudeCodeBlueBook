@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-second-frontdoor-convergence 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`。新的结论是：Prompt 第二前门当前更贵的 residual，不再是结果词，而是同一页内部仍可能用“runtime contract”“装配链”“judge card”三种近义写法分头解释同一件事。
+- 本轮新的 Prompt 收束结论: 更稳的 `06` wording 必须让 `2.10` 与 `7.4` 共同回到同一条 `same-world compiler` contract，再由 `section registry / stable boundary / protocol transcript / message lineage / continue qualification verdict` 充当具体 witness。
 - 本轮 philosophy-readme-frontdoor-thinning 深化动作: 已继续更新 `bluebook/philosophy/README.md`。新的结论是：哲学 README 哪怕已经 canonicalize 三条母线，仍可能因为解释层资本表、过厚 route table 和多组 README 内分流，把 later maintainer 带回“第二套压缩话语总表”。
 - 本轮新的哲学入口结论: 更稳的 philosophy README 必须只保留三条母线的最短前门和最短跳转；解释层资本表、苏格拉底审读与机制哲学展开都应下沉到 `06 / 15 / 41` 或对应专题页。
 - 本轮 reject-signal-hardening 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md` 与 `bluebook/README.md`。新的结论是：Prompt 判据卡如果不把 `stable prefix / protocol transcript / continue qualification verdict` 一起点名，later maintainer 仍可能把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation` 读成过薄的抽象词串；源码质量入口若仍说“先进性结论”，later maintainer 也会被结果词带走。

@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06` 的长期默认 prompt-second-frontdoor-convergence language 现已继续写死：
+  - `06` 默认继续把 `2.10`、开头魔力主句与 `7.4` 判据卡共同回绑同一条 `same-world compiler` contract
+  - Prompt 第二前门默认继续只保留一条主解释：`Authority / Boundary / Transcript / Lineage / Continuation` 是 contract，`section registry / stable boundary / protocol transcript / message lineage / continue qualification verdict` 是 witness
 - `bluebook/philosophy/README` 的长期默认 philosophy-readme-frontdoor-thinning language 现已继续写死：
   - 哲学 README 默认继续只保留三条母线的最短前门和最短分流，不再保留第二套源码质量资本表或过厚 route table
   - Prompt 线默认继续写成“先到 84，机制看 81，时间轴看 63，诊断命名看 33；其余只作补充侧门”
