@@ -159,3 +159,4 @@
 - [157-StructuredIO、RemoteIO、setInternalEventReader、setInternalEventWriter 与 flushInternalEvents 索引.md](./157-StructuredIO、RemoteIO、setInternalEventReader、setInternalEventWriter%20与%20flushInternalEvents%20索引.md)
 - [158-resume、--continue、print --resume 与 remote-control --continue 索引.md](./158-resume、--continue、print%20--resume%20与%20remote-control%20--continue%20索引.md)
 - [159-print --continue、print --resume session-id、print --resume url 与 loadConversationForResume 索引.md](./159-print%20--continue、print%20--resume%20session-id、print%20--resume%20url%20与%20loadConversationForResume%20索引.md)
+- [160-loadMessagesFromJsonlPath、parseSessionIdentifier、loadConversationForResume 与 sessionId 索引.md](./160-loadMessagesFromJsonlPath、parseSessionIdentifier、loadConversationForResume%20与%20sessionId%20索引.md)
