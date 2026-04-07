@@ -16,6 +16,7 @@
 
 - 用户侧治理判断仍先走 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`，approval、mode、usage、compact 与 cleanup result 只是在不同阶段消费这条链。
 - 换句话说，`05` 的治理顺序应与 `security/README` 的机制顺序、`risk/README` 的用户侧结算顺序严格同序，而不是只共享 noun。
+- 更稳一点说，`/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory / Export` 只配做 continuation consumer；真正 verdict 仍留在 `truth-surface -> decision window -> durable-transient cleanup`，用户侧恢复仍留在 `signer + evidence + reopen`。
 
 更硬一点说，`05` 在 `userbook/` 里的发言权也只该剩：
 

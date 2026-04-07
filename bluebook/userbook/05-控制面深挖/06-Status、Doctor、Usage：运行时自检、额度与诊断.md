@@ -42,6 +42,7 @@ Claude Code 要先解决的，不是“模型够不够聪明”，而是：
 - `/usage` 只投影预算窗口，不单独签发“这轮还值得继续付费”。
 
 真正的用户动作 verdict 仍是：`继续 / 降级 / 停止 / 清理后恢复 / 升级给人`。如果把这三者直接写成 verdict source，就又会把 projection consumer 抬回本体层。
+更稳一点说，`/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory / Export` 这些 continuation consumer 另在相邻页处理；真正 verdict 仍留在 `truth-surface -> decision window -> durable-transient cleanup`，用户侧恢复仍留在 `signer + evidence + reopen`。
 
 ## `/status` 解决的是宿主状态投影
 

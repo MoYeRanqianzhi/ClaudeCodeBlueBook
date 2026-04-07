@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 projection-consumer-verdict-handoff 深化动作: 已继续更新 `bluebook/security/README.md`、`bluebook/risk/README.md`、`bluebook/userbook/05-控制面深挖/README.md`、`bluebook/userbook/05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md` 与 `bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md`。新的结论是：治理/连续性线当前最值钱的 residual 已不再是“有没有做 demotion”，而是“demotion 后有没有把真正的 handoff 写清”。现在这五页开始共享同一条 split：projection、consumer、verdict、reopen 各自守自己的 speaking rights。
+- 本轮新的治理结论: 当 `/status / /doctor / /usage`、`Compact / Resume / Memory / Export`、`truth-surface -> decision window -> durable-transient cleanup` 和 `signer + evidence + reopen` 不能在前门层同时出现时，later maintainer 仍会停在“不是这个、也不是那个”的半否定状态。现在这条 handoff 已开始前推到前门层。
 - 本轮 userbook-frontdoor-demotion 深化动作: 已继续更新 `bluebook/userbook/README.md`。新的结论是：`userbook/` 当前最危险的 residual 已不再是问题分型本身，而是它会在根前门里不小心带出“我也在签治理顺序/整产品范围”的幻觉。现在根前门更明确地退回二跳和用户侧翻译权。
 - 本轮新的 userbook 结论: `userbook/` 更稳的默认话语不是“我宣布这条顺序”，而是“我复述 root / 09 已承认的用户侧顺序，并把它翻成可操作判断”。
 - 本轮 prompt-wording-de-enchantment-2 深化动作: 已继续更新 `bluebook/README.md`、`bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`。新的结论是：Prompt 线当前最危险的 residual 已不再是 owner 混写，而是词本身还让 Prompt、compiled request 与 projection 看起来像 signer。现在这几页开始更系统地把 `Constitution / 法律 / delegated world / truth` 这些词收回 `order / runtime asset / delegated context / projection`。

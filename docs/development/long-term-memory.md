@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/security/README`、`bluebook/risk/README`、`bluebook/userbook/05-README`、`05/03` 与 `05/06` 的长期默认 projection-consumer-verdict-handoff language 现已继续写死：
+  - `/status / /doctor / /usage` 默认继续写成 runtime projection
+  - `Compact / Resume / Memory / Export` 默认继续写成 continuation consumer
+  - `truth-surface -> decision window -> durable-transient cleanup` 默认继续写成真正的 verdict 链
+  - `signer + evidence + reopen` 默认继续写成用户侧恢复链
+  - 这五页默认统一拒收 projection、consumer、verdict、reopen 再次混成一个总桶
 - `bluebook/userbook/README` 的长期默认 userbook-frontdoor-demotion language 现已继续写死：
   - `userbook/README` 默认只复述 root / `09` 已承认的用户侧治理顺序
   - `userbook/README` 默认只翻 `user-visible consumer truth`，不补签 runtime-core 缺口
