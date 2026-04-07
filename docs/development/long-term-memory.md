@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/architecture/README`、`bluebook/philosophy/86` 与 `bluebook/philosophy/87` 的长期默认 source-quality-frontdoor-owner-language 现已继续写死：
+  - 源码质量高阶前门默认继续先说“源码质量判断”，不先说“源码先进性”
+  - `philosophy/86` 默认继续把外层证据路径写成 canonical ladder，不再写成另一条“证据梯度” owner 句
+  - `architecture/README` 与 `philosophy/87` 默认继续把前门判断回绑 `one writable present` 与 later maintainer `reject`，不让评价词先行
 - `bluebook/06`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-summary-object-order language 现已继续写死：
   - 高阶前门 summary 默认继续先讲对象顺序，再讲效果观感
   - 高阶前门默认继续拒收先说“更强 / 更省 / 更先进”，再补 `same-world test / decision window / current-truth protection`

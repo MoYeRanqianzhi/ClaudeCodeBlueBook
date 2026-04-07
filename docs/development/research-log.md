@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 source-quality-frontdoor-owner-language 深化动作: 已继续更新 `bluebook/architecture/README.md`、`bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md` 与 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`。新的结论是：源码质量高阶前门当前更贵的 residual，不再是 canonical ladder 没写出来，而是入口句仍容易先把 later maintainer 带去“源码先进性”这组评价词，再回头补证据顺序。
+- 本轮新的源码质量结论: 更稳的 frontdoor owner phrasing 应先说“这是一套源码质量判断”，再说它为什么显得先进。否则 later maintainer 学到的仍是评价词，而不是 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 与 `one writable present` 这组 first-principles object chain。
 - 本轮 prompt-summary-object-order 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`。新的结论是：高阶前门哪怕已经换掉旧路径和旧名词，仍可能在 summary 句上先教 later maintainer 记住“更强 / 更省 / 更先进”这组结果词；这会让第一性原理继续退回事后解释层。
 - 本轮新的高阶前门结论: 更稳的入口句必须先回答对象顺序，再回答性能观感。也就是先问 `same-world test`、`decision window`、`current-truth protection` 有没有成立，再谈 Prompt 效力、预算诚实和源码成熟度为什么会显现出来。
 - 本轮 prompt-frontdoor-first-principles-summary 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`。新的结论是：Prompt/治理/源码质量高阶前门当前更贵的 residual，不再是路径名或对象链没写出来，而是 summary sentence 仍容易先用“更强 / 更省 / 更先进”这组结果词组织 later maintainer。
