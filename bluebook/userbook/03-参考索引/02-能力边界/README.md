@@ -178,3 +178,4 @@
 - [176-getUserSpecifiedModelSetting、isModelAllowed、ANTHROPIC_MODEL、settings.model 与 getMainLoopModel 索引.md](./176-getUserSpecifiedModelSetting、isModelAllowed、ANTHROPIC_MODEL、settings.model%20与%20getMainLoopModel%20索引.md)
 - [177-model.tsx、validateModel、getModelOptions 与 getUserSpecifiedModelSetting 索引.md](./177-model.tsx、validateModel、getModelOptions%20与%20getUserSpecifiedModelSetting%20索引.md)
 - [178-reusedPriorSession、previouslyFlushedUUIDs、createCodeSession 与 flushHistory 索引.md](./178-reusedPriorSession、previouslyFlushedUUIDs、createCodeSession%20与%20flushHistory%20索引.md)
+- [179-writeMessages、writeSdkMessages、initialMessageUUIDs、recentPostedUUIDs 与 flushGate 索引.md](./179-writeMessages、writeSdkMessages、initialMessageUUIDs、recentPostedUUIDs%20与%20flushGate%20索引.md)
