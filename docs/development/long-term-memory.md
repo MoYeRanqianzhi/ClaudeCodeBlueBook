@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06` 与 `bluebook/README` 的长期默认 reject-signal-hardening language 现已继续写死：
+  - Prompt 判据默认继续把 `stable prefix / protocol transcript / continue qualification verdict` 与 `Authority -> Boundary -> Transcript -> Lineage -> Continuation` 一起写出，不再让 witness chain 停在过薄抽象层
+  - 根入口默认继续把 `layout-first drift` 直接写成“源码质量判断被目录观感冒充”，不再把“先进性结论”保留为入口记忆钩子
 - `bluebook/guides/102` 与 `bluebook/philosophy/README` 的长期默认 source-quality-alias-demotion language 现已继续写死：
   - 源码质量入口默认继续只暴露 canonical ladder，不显式保留 `authoritative surface / adapter subset / hotspot gap discipline` 或其它压缩话语作为第二套 frontdoor
   - `guides/102` 默认继续把旧 alias 完全降到检索兼容层；正文只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`

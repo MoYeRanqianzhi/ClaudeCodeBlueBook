@@ -98,7 +98,7 @@
 源码质量线还应再暴露三条 first reject signal：
 
 - `layout-first drift`
-  目录更整齐、文件更小、分层更漂亮开始冒充先进性结论。
+  目录更整齐、文件更小、分层更漂亮开始冒充源码质量判断。
 - `recovery-sovereignty leak`
   pointer、snapshot、resume asset 或 replay 开始越权 current-truth surface。
 - `surface-gap blur`

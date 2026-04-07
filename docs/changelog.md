@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md` 与 `bluebook/README.md`，把 Prompt 判据卡与源码质量 first reject signal 再压硬一层：`06` 现在更明确 later maintainer 应沿 `stable prefix / protocol transcript / continue qualification verdict` 复现同一个 `continue / reject` 判决，根入口现在把 `layout-first drift` 的错误主语收回“源码质量判断”
 - 继续更新 `bluebook/guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md` 与 `bluebook/philosophy/README.md`，把源码质量线剩余的 alias 暴露继续降格：`guides/102` 现在更明确正文只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`，`philosophy/README` 现在更明确源码质量前门只认 canonical ladder，不再在入口层显式保留第二套压缩话语
 - 继续更新 `bluebook/risk/README.md`，把风控入口开场继续从“账号/入口/恢复/地区场景”这类并列主题桶收回同一条治理收费链的用户侧读回对象：`risk/README` 现在更明确自己只看 `product promise readback / reopen qualification / evidence binding`
 - 继续更新 `bluebook/architecture/README.md`，把架构入口继续从路由表收回“最短证据入口 + 缺对象时再跳转”：现在更明确先按运行时对象与 first reject signal 选入口，再按缺失对象跳转，不再把 README 主要写成推荐路径表
