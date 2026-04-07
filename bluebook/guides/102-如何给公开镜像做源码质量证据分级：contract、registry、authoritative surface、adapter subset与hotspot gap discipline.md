@@ -3,7 +3,7 @@
 这一章回答五个问题：
 
 1. 为什么研究 Claude Code 这类公开镜像时，第一步不该直接夸“源码质量很高”或抱怨“缺太多源码”。
-2. 怎样把公开镜像里的证据压成稳定的六级阶梯，而不是把 README、schema、注册表、当前真相候选、消费者子集、热点文件和缺口脑补成同一层真相。
+2. 怎样把公开镜像里的证据压成稳定的证据阶梯，而不是把 README、schema、注册表、当前真相候选、消费者子集、热点文件和缺口脑补成同一层真相。
 3. 为什么“大文件”必须区分为合法复杂度中心和散落式复杂性，而不是一律判坏。
 4. 为什么源码质量必须同时审读 `dependency honesty` 与 `temporal honesty`。
 5. 怎样把这套证据分级方法迁移到别的 agent runtime 研究和代码评审中。
@@ -31,8 +31,8 @@
 
 这里还应先多记一句：
 
-- 文件名里的 `authoritative surface / adapter subset / hotspot gap discipline` 只保留为兼容检索别名，不再拥有首答权，也不是新的 canonical ladder 层级。
-- 本页只定义 canonical ladder 与降格规则；repo-specific 定位与跳转、地图正文宿主选择与跨目录路由不在这里宣布。
+- 文件名里的 `authoritative surface / adapter subset / hotspot gap discipline` 只作为检索兼容标签，不改变本文的 canonical ladder 与降格规则。
+- 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航、跳转关系与其他编排说明都不参与源码质量结论。
 - 若 sole writer、writeback seam 与 freshness gate 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
 
 这条线最短的 reject trio 也只认：
@@ -92,7 +92,7 @@
 
 在公开镜像研究里，下面这些词最容易互相挤占，必须先拆开：
 
-1. `contract truth`
+- `contract truth` 只保留为旧 alias，不再拥有单独层级。
 1. `contract`
    - 系统正式承认哪些对象、状态和动作可以存在。
 2. `registry`
@@ -327,9 +327,9 @@ gap discipline 的价值不是“保守一点”，而是：
 
 ## 10. 危险改动面记录模板
 
-当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一张可交接的源码地图。
+当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一份可交接的 `change-risk record`。
 
-但 `guides/` 在这里负责的是记录模板与 gap note 写法，不负责规定地图正文应宿主在哪一层，也不负责替任何目录填满具体危险面。
+`guides/` 在这里只负责 `change-risk record` 的字段与 gap note 写法，不替其他目录代写具体危险面。
 
 更稳的记录模板至少应包含下面几列：
 

@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/architecture/README`、`bluebook/philosophy/86`、`bluebook/philosophy/87` 与 `bluebook/guides/102` 的长期默认 source-quality-evidence-layer wording 现已继续写死：
+  - 源码质量线默认继续先说证据层职责，不先说地图宿主、目录跳转或 first-answer owner 竞争
+  - `philosophy/86` 默认继续把 canonical ladder 写成 later maintainer 必须遵守的证据顺序，不再写成另一套 frontdoor 命名包装
+  - `philosophy/87` 默认继续把目录自校收回 `contract / method / verdict / sample / memory` 这组证据职责，不再用 atlas、route 或 next-hop 组织源码质量判断
+  - `guides/102` 默认继续把 `authoritative surface / adapter subset / hotspot gap discipline / contract truth` 写成兼容标签或旧 alias；正文 owner 仍是 canonical ladder、降格规则与 `change-risk record`
 - `bluebook/philosophy/README`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-frontdoor-speaking-right language 现已继续写死：
   - Prompt 高阶前门默认继续先问“谁定义世界、模型实际消费什么、同一身份如何延续、继续资格由谁裁定”，不先问 Prompt 是否更强、更有效或 instruction 是否更长
   - `philosophy/README` 默认继续把 Prompt 入口写成“世界如何合法进入模型”，不再让 `world entry / request assembly / six-stage assembly chain` 抢第一主语
