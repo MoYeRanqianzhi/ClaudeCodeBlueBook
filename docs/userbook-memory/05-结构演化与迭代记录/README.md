@@ -173,6 +173,7 @@
 - [169-2026-04-08-resume source split 拆分记忆.md](./169-2026-04-08-resume%20source%20split%20拆分记忆.md)
 - [170-2026-04-08-headless resume source certainty split 拆分记忆.md](./170-2026-04-08-headless%20resume%20source%20certainty%20split%20拆分记忆.md)
 - [171-2026-04-08-local artifact provenance split 拆分记忆.md](./171-2026-04-08-local%20artifact%20provenance%20split%20拆分记忆.md)
+- [172-2026-04-08-bridge authority split 拆分记忆.md](./172-2026-04-08-bridge%20authority%20split%20拆分记忆.md)
 
 用途：
 
