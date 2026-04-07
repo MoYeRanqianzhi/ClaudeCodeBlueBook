@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06`、`bluebook/08`、`bluebook/navigation/38`、`bluebook/guides/50`、`bluebook/07` 与 `bluebook/02` 的长期默认 socratic-matrix-backflow language 现已继续写死：
+  - `06` 默认继续只充当总控自校页：只保留三条判断、最小拒错顺序、职责边界与苏格拉底问法，不再重发 Prompt / 治理 / 源码质量首答
+  - `08` 默认继续先判 `current admission / product promise`，再回填 `existence / implementation visibility`，最后才允许用八平面做定位；矩阵页默认继续拒收 taxonomy-first
+  - `navigation/38` 与 `guides/50` 默认继续共同把机制回灌写成 `compiled request truth -> current-truth surface -> single-source / anti-cycle seam -> current-truth writeback -> future maintainer consumer`
+  - `02 / 07` 默认继续把高流量显示文案中的 `Prompt魔力 / 权威面` 收回 `Prompt效力 / current-truth surface`，避免 live 入口重新泄露旧主语
 - `bluebook/03` 与 `bluebook/05` 的长期默认 first-principles-frontdoor-gating language 现已继续写死：
   - `03` 默认继续只把 Prompt 线写成 `world-admission protocol + 四个苏格拉底问题`，把治理线写成 canonical pricing chain + acid test，不再在深段回长第二前门
   - `05` 默认继续先判 `current admission / implementation closure / consumer subset / product promise`，再允许读者进入接口 taxonomy；`八个接口表面 / 七层 API` 默认继续只做后置索引，不再充当前门首答
