@@ -594,3 +594,5 @@
 - 继续把可见标题与对象清单跟 mid-body canonical object 对齐：`api/85` 的可见标题现已改成 `truth-surface attestation`，`playbooks/66` 的执行顺序与再验标题也同步改名，`api/82` 的顶层说明现已承认 `pricing_right_restitution` 是 first-class object；`docs/development/03` 追加了“canonical object 不能只活在正文中段”的新反思准则
 - 继续收口 Prompt 前门的去魅措辞：`bluebook/README` 把 `authority chain` 收回 `authority order`，`philosophy/81` 把 `主权顺序` 收回 `优先顺序`，`philosophy/84` 则把标题和开场从“世界进入模型/魔力”进一步压回“输入装配顺序/Prompt 效力”，减少前门对神秘化与主权化比喻的依赖
 - 同步把本轮 Prompt 术语精修写回持久化记忆：研究日志新增“前门不再用 magic / sovereignty 词族冒充首答”的批次记录，长期记忆新增 Prompt 高流量页面优先采用 `effectiveness / input assembly order / canonical source / first-answer rule` 这一组稳定词法
+- 继续向下清理 Prompt residual：`bluebook/README`、`06`、`philosophy/81`、`philosophy/84` 现在进一步把 `world-defining winner / owner 页 / Prompt 魔力 / 咒语 / 神秘成功` 收回到 `world-definition source / canonical source / Prompt 效力 / 文案 / 不可解释成功`，把 residual 从前门总句继续压到可见标题、反思条目与机制页说明
+- 本轮同时固定一条新的 Prompt 词法纪律：authority 相关前门优先写 precedence/admissibility，不再写 ownership/sovereignty；目录优化也优先写“承担首答责任”，不再写“拥有第一次解释权”

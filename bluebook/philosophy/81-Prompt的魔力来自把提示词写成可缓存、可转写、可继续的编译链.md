@@ -54,7 +54,7 @@ Prompt 真正的效力，不是：
 而是：
 
 1. 先把 system prompt 写成可分段、可缓存、可审计的 section registry。
-2. 先把主权顺序压成同一条 request assembly order，而不是让多份并列文本互相争主语。
+2. 先把优先顺序压成同一条 request assembly order，而不是让多份并列文本互相争主语。
 3. 先把 `message lineage` 写成可恢复的三键内核，而不是顺手拼出的聊天历史。
 4. 先把 transcript 重写成合法协议对象，再让模型消费。
 5. 先把动态变化赶到 stable boundary 之后，保住共享前缀资产。
@@ -67,7 +67,7 @@ Prompt 真正的效力，不是：
 
 而不是：
 
-- 一段咒语
+- 一段文案
 
 ## 2. 第一性原理：先固定谁能定义世界，再决定怎样描述世界
 
@@ -81,11 +81,11 @@ Claude Code 的 Prompt 有一个常被忽略的前提：
 
 这件事的重要性在于：
 
-1. Prompt 的主权顺序先被固定。
+1. Prompt 的优先顺序先被固定。
 2. 风格、流程、边界与工具法律被编译进 system 主链。
 3. 人类 later 接手者消费的也不是裸原文，而是同一条被治理过的 request assembly result。
 
-所以 Prompt 魔力首先不是：
+所以 Prompt 效力首先不是：
 
 - 写得更强势
 - 写得更像专家
@@ -111,7 +111,7 @@ Claude Code 更接近的真相是：
 3. `tool_use_id / sourceToolAssistantUUID`
    - 让 tool use / tool result 与 findings 回到同一个行动主语
 
-这意味着 Prompt 魔力不只是“记得说过什么”，而是：
+这意味着 Prompt 效力不只是“记得说过什么”，而是：
 
 - 还知道现在这句话属于哪个世界、哪个动作、哪个继续主语
 
@@ -123,7 +123,7 @@ Claude Code 更接近的真相是：
 
 - 模型真正消费的是 `prompt + normalized transcript + paired tool protocol`
 
-这意味着 Prompt 魔力不只来自 system prompt 本身，还来自：
+这意味着 Prompt 效力不只来自 system prompt 本身，还来自：
 
 1. UI 历史不会直接越权进入模型路径。
 2. `tool_use / tool_result` pairing 会先被修正。
@@ -174,7 +174,7 @@ Claude Code 更成熟的地方在于，它先问：
 - 不再追求“尽量写全”
 - 而是追求“真正稳定的部分尽量不被重编”
 
-所以它的魔力不是：
+所以它的效力不是：
 
 - 每次都重新讲清世界
 
@@ -200,7 +200,7 @@ Claude Code 的 Prompt 高密度，不只因为 instruction 多，还因为：
 2. 长度、格式、文件引用、列表层级与 channels 分工也被直接写进 Prompt。
 3. 显示层会继续把 thinking 与 tool 噪音蒸馏掉，保证用户消费的是 Prompt 指定的结果形态。
 
-这意味着 Prompt 魔力的一大部分，其实来自两层协同：
+这意味着 Prompt 效力的一大部分，其实来自两层协同：
 
 - Prompt frontdoor 固定行为与写法要求
 - Runtime 明确规定哪些内容能被用户看见
@@ -225,7 +225,7 @@ Claude Code 更高级的地方在于，它同样认真规定：
 
 - 续写对象重建
 
-真正保住 Prompt 魔力的不是：
+真正保住 Prompt 效力的不是：
 
 - 还留了多少上下文
 
@@ -270,7 +270,7 @@ Claude Code 更接近的真相是：
 
 - stop hooks、cache break explainability、budget continuation 与 prompt-too-long recovery 共同暴露 continue qualification 是否仍成立
 
-这说明 Prompt 魔力从来不是静态的。
+这说明 Prompt 效力从来不是静态的。
 
 它会继续追问：
 
@@ -279,7 +279,7 @@ Claude Code 更接近的真相是：
 3. 当前 side path 是否仍与主线程共享前缀。
 4. 当前是否还配继续、继续多久、何时必须 re-entry、何时必须 reopen。
 
-也就是说，Prompt 的魔力不只是：
+也就是说，Prompt 的效力不只是：
 
 - 会开场
 
@@ -287,9 +287,9 @@ Claude Code 更接近的真相是：
 
 - 暴露自己是否还配继续
 
-多 Agent 场景更能说明这一点。真正强的地方不是“会给 worker 写指令”，而是 coordinator 必须先理解 findings，再生成自包含、不可把理解外包给 worker 的 prompt。这里的 Prompt 魔力首先是一种组织设计，而不是更会写 worker 文案。
+多 Agent 场景更能说明这一点。真正强的地方不是“会给 worker 写指令”，而是 coordinator 必须先理解 findings，再生成自包含、不可把理解外包给 worker 的 prompt。这里的 Prompt 效力首先是一种组织设计，而不是更会写 worker 文案。
 
-## 10. 第九层：可解释失稳优于神秘成功
+## 10. 第九层：可解释失稳优于不可解释成功
 
 如果一个 Prompt 只能成功、不能解释自己为什么成功，它仍然只是幸运。
 
@@ -297,9 +297,9 @@ Claude Code 值得学的地方正在于：
 
 - 它把 prompt cache break、stable bytes、continue qualification 都做成了可追责对象
 
-这意味着 Prompt 魔力真正成熟的标志不是：
+这意味着 Prompt 效力真正成熟的标志不是：
 
-- 大家都觉得它很灵
+- 大家都觉得效果很好
 
 而是：
 
@@ -307,7 +307,7 @@ Claude Code 值得学的地方正在于：
 
 ## 11. 苏格拉底式追问
 
-### 11.1 为什么 Prompt 魔力不是文案技巧
+### 11.1 为什么 Prompt 效力不是文案技巧
 
 因为真正稀缺的不是好句子，而是：
 
@@ -327,7 +327,7 @@ Claude Code 值得学的地方正在于：
 
 - 删掉什么以后系统仍知道怎样继续
 
-### 11.5 为什么 Prompt 魔力最终仍是工程能力
+### 11.5 为什么 Prompt 效力最终仍是工程能力
 
 因为它保护的不是“这一轮说得好”，而是：
 
@@ -349,4 +349,4 @@ Claude Code 值得学的地方正在于：
 3. 把不同 projection consumer 的职责分开，而不是让 UI 历史兼任模型历史。
 4. 把动态变化赶到 stable boundary 后面。
 5. 把 lawful forgetting 设计成 continuation object 重建。
-6. 让 prompt 失稳原因可以被正式解释，而不是继续神秘化。
+6. 让 prompt 失稳原因可以被正式解释，而不是继续写回不可解释成功。

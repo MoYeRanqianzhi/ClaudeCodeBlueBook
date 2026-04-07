@@ -3335,3 +3335,6 @@
 - Prompt 前门的长期稳定词法应优先使用 `effectiveness / input assembly order / authority order / canonical source / first-answer rule`；`magic / 咒语 / 主权 / owner` 这组词若继续存在，最多只应活在历史文件名、检索别名、反思对象或伪解案例里，不再占高流量页面的 H1、首句或首答句。
 - 去魅的长期纪律不是“把魔力说成反魔力”，而是直接改写问题主语：少问 Prompt 为什么“有魔力”，多问它如何固定 `world-entry admissibility / witness order / continuation qualification`。如果一句话仍需借 `神秘 / 很灵 / 咒语化` 才能成立，通常说明首答还没有真正回到第一性原理。
 - authority 词法的长期纪律也应继续固定为 precedence/admissibility，而不是 ownership/sovereignty：`authority order` 优于 `authority chain`，`canonical source / 首答来源` 优于 `owner 页`，`拥有第一次解释权` 应优先改写成 `承担首答责任 / 拥有首答来源资格 / 固定 speaking rights`。
+- Prompt 线里 `world-definition source` 现在比 `world-defining winner` 更适合作为高流量页面的稳定词法：前者强调同题首答来源与 admissibility，后者更容易把论证重新拖回主权/胜负比喻。若正文仍保留旧词，优先把它降格为兼容或历史词，而不是继续站在前门。
+- 可见标题、反思条目和 first-answer formula 也应遵守同一条去魅纪律；不能出现正文已经讲 `Prompt 效力 / authority order / canonical source`，但小标题仍写 `Prompt 魔力 / 神秘成功 / owner 页` 的局部真相外溢。
+- 下一条独立治理精修线已经明确：`runtime projection`、`continuation consumer`、`verdict`、`reopen` 四类词必须在 user-facing frontdoor 上稳定分层；`cleanup result` 不应再被叫作 consumer，`reopen` 也不应再并入 `durable-transient cleanup` 尾槽。
