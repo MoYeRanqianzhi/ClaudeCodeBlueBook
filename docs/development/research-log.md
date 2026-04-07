@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 prompt-card-abstraction 深化动作：已继续更新 `06`。新的结论是：即使已经把 `84 / 51` 的具名链段从自校页移走，Prompt 判据卡仍可能通过“替身名单”“owner 术语”“轻量 reject 术语”重新长回第二张机制卡。更稳的默认修法是继续把这些词抽成纯反问：`是不是又写回替身 / 术语 / 机制，而没有回 owner 页。`
+- 本轮新的 `06` 结论：`7.4 / 7.7 / 7.9` 现在更接近真正的 self-audit card，而不是轻量 Prompt guide。对 `06` 来说，更稳的最终边界可以继续写成一句：`能问是否越位，不能枚举越位后的具体 Prompt 机制词。`
+- 本轮根仓库同步检查结果：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 本轮继续全部成功，根仓保持 `main...origin/main` 健康态。
 - 本轮 prompt-self-audit-card-demotion 深化动作：已继续更新 `06`。新的结论是：当 Prompt canonical chain、mid-page why 和后段论证都已经瘦身后，最后最容易复发的 residual 就在 `7.4 / 7.7 / 7.9 / 7.10` 这类判据卡里。它们很容易一边自称在自校，一边又把 `84 / 51` 的 object / reject / migration nouns 重新端上来。更稳的默认修法是：判据卡只保留抽象反问，具体 object / order / qualification / route 全部送回 owner 页。
 - 本轮新的 `06` 结论：`6.54` 现在更明确只问“是不是还在同一主语上”，`6.57` 现在更明确只问“为什么这不是秘诀”，`7.4 / 7.7 / 7.9 / 7.10` 则继续从“owner 术语卡”退成“是否又越位补写 owner 机制”的自校卡。这意味着 `06` 在 Prompt 线最稳的最终边界继续固定为：`能反问，不能代签。`
 - 本轮根仓库同步检查结果：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 再次全部成功，根仓继续保持 `main...origin/main` 健康态。

@@ -2,6 +2,8 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把 Prompt 自校卡再抽象一层：`7.4` 现在不再点名 `projection / summary / handoff prose` 这类替身，而只问是否又把 Prompt 写回替身；`7.7` 不再写 `object / reject` 术语；`7.9` 也把“`owner` 术语”收回成更抽象的“术语堆叠”。这使 `06` 更稳定地停在“能反问是否越位”，而不再自己变成一张轻量 Prompt 机制卡
+- 本轮根仓同步检查继续保持健康：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均成功，根仓状态仍为 `## main...origin/main`
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把这一轮 Prompt self-audit residual 再压一层：`6.54` 现在把“同一主语与继续资格”收回成更短的 why 反问，不再把 `lineage / projection / qualification` 写成 owner 术语；`6.57` 现在把 `Prompt Constitution` 收回成“不是秘诀、只是制度边界”的反问，不再直接在正文里解释 `owner split / speaking-right`；`7.4 / 7.7 / 7.9 / 7.10` 现在也从 route/判据卡继续收回成更纯的自校问句，不再在判据卡里并排复述 `84 / 51` 的 object / reject / migration nouns
 - 本轮并行 Agent 新结论已吸收入记忆：在 `06` 末段，最容易复发的不是 Prompt canonical chain 本身，而是“判据卡里顺手补 owner nouns”。更稳的默认修法继续是：`删具名判据 -> 留抽象反问 -> route 回 owner 页`
 - 继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把 late source-quality / explainability residual 再压一层：`03` 现在把 `设计原则三十二 / 三十三` 的标题和收束句继续收回 why / self-audit，不再让“复杂度治理”“首问单源化”以 owner verdict 的口气占位；`06` 现在把 `6.37-6.44` 这组 late self-audit cards 统一改成“若讨论已进入具体 owner nouns，就回 `87 / architecture / 对应 owner 页`”，不再在自校页里继续发合法复杂度中心、依赖诚实、observability 三层或 explainability 四件事这类结构卡

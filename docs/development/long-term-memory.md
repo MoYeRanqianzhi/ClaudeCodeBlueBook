@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 prompt-card-abstraction language 现已继续写死：
+  - `06` 的 Prompt 判据卡默认继续优先问“是不是又写回替身 / 术语 / 机制”，不再枚举 `projection / summary / handoff prose`、`object / reject` 或相近的轻量机制词
+  - 更稳的默认修法顺序继续是：`先删轻量机制词 -> 再把判据压成抽象反问 -> 最后补 owner route`
+- 最新根仓同步记忆（2026-04-08，本轮最新小批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
 - `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 prompt-self-audit-card-demotion language 现已继续写死：
   - `06` 的 `7.4 / 7.7 / 7.9 / 7.10` 这类 Prompt 判据卡默认继续只保留抽象反问，不再并排复述 `84 / 51` 的 object / reject / migration nouns
   - `6.54 / 6.57` 这类 Prompt 尾段默认继续只保留“为什么不能被写浅”的 why 句，不再在正文里解释 `owner split / speaking-right / qualification` 这一层
