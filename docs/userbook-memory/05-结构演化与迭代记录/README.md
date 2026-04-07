@@ -156,6 +156,7 @@
 - [152-2026-04-08-durable session metadata split 拆分记忆.md](./152-2026-04-08-durable%20session%20metadata%20split%20拆分记忆.md)
 - [153-2026-04-08-history paging sentinel split 拆分记忆.md](./153-2026-04-08-history%20paging%20sentinel%20split%20拆分记忆.md)
 - [154-2026-04-08-assistant entry chain split 拆分记忆.md](./154-2026-04-08-assistant%20entry%20chain%20split%20拆分记忆.md)
+- [155-2026-04-08-interactive host split 拆分记忆.md](./155-2026-04-08-interactive%20host%20split%20拆分记忆.md)
 
 用途：
 
