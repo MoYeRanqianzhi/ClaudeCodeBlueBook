@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 governance-midchain 深化动作: 已继续更新 `bluebook/security/README.md`、`bluebook/risk/README.md` 与 `bluebook/userbook/05-控制面深挖/README.md`。新的结论是：治理收费链当前最值钱的 residual 已不再是“有没有完整长链”，而是“机制前门、用户控制面前门、用户侧结算前门是否共享同一条中段顺序”。现在这三页已经开始统一收回 `pricing-right / truth-surface -> typed ask / sandbox -> decision window / continuation pricing / durable-transient cleanup` 这条 shared order。
+- 本轮新的治理结论: `security` 负责机制主语，`risk` 负责用户侧结算，`userbook/05` 负责用户动作翻译，但三者在治理中段顺序上现在已经更接近单源化；这比继续补更多入口词更值钱。
 - 本轮 user-facing control-plane 深化动作: 已继续更新 `bluebook/userbook/05-控制面深挖/README.md` 与 `05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md`。新的结论是：用户侧控制面前门过去最容易写浅的地方，不是没提到 `continuation pricing`，而是没把它和 `typed ask / decision window / durable-transient cleanup` 写成同一条顺序。现在 `05` 和 `05/03` 都开始共享这条治理链，而不再把 `/usage`、`/compact` 写成并列技巧。
 - 本轮新的连续性结论: `Compact / Resume / Memory / Export` 现在被进一步固定成 continuation consumer，而不是独立控制面；这意味着 user-facing continuity 的去魅又往前推了一步。
 - 本轮 user-facing governance 深化动作: 已继续更新 `bluebook/userbook/README.md` 与 `bluebook/risk/README.md`。新的结论是：用户侧治理 residual 现在不再是“有没有 shared nouns”，而是“有没有把 `decision window -> continuation pricing -> durable-transient cleanup` 也写成 first-answer order”。更稳的默认写法是：`userbook` 先把用户的治理判断压成完整顺序，`risk` 再把同一条完整治理链翻译成用户侧结算面，而不是只保留 `product promise / signer + evidence + reopen` 这些后段结果词。

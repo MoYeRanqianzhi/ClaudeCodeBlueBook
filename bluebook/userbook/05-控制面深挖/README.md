@@ -15,6 +15,7 @@
 如果继续把治理控制面也压成用户侧 first-answer order，这一层最稳的短句还应再补一句：
 
 - 用户侧治理判断仍先走 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`，approval、mode、usage、compact 与 cleanup result 只是在不同阶段消费这条链。
+- 换句话说，`05` 的治理顺序应与 `security/README` 的机制顺序、`risk/README` 的用户侧结算顺序严格同序，而不是只共享 noun。
 
 更硬一点说，`05` 在 `userbook/` 里的发言权也只该剩：
 

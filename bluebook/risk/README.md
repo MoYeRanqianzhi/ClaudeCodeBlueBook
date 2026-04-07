@@ -2,7 +2,7 @@
 
 `risk/` 当前有 65 篇编号文档，范围 `00-64`。本目录研究账号治理、误伤、恢复、支持链路、入口语义差和中国用户场景，不把风控简化成单一封号开关。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，不要急着把风控页读成“另一套安全规则”。
-`risk/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这是误伤、恢复、reopen 还是入口差异哪种用户侧工作对象，再判它卡在 `governance key / decision window / signer + evidence + reopen` 的哪一段，最后才选前门、playbook 或深页。
+`risk/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这是误伤、恢复、reopen 还是入口差异哪种用户侧工作对象，再判它卡在 `governance key / typed ask / decision window / continuation pricing / durable-transient cleanup / signer + evidence + reopen` 的哪一段，最后才选前门、playbook 或深页。
 
 还要先记一句：
 
@@ -30,6 +30,12 @@
    - 当前误伤、恢复与入口差异到底落在用户侧哪一层，以及这次继续是否仍值得续费
 3. `durable-transient cleanup -> signer + evidence + reopen`
    - 恢复不是讲故事，而是凭证据重建执行连续性，并把旧的 transient authority 清算干净
+
+如果继续把风控前门也压成和 `security / userbook/05` 共用的三段顺序，也只该再补一句：
+
+- 先判 `governance key / truth-surface`
+- 再判 `typed ask / visible-set / sandbox`
+- 最后才判 `decision window / continuation pricing / durable-transient cleanup / reopen`
 
 更硬一点说，`risk/` 在目录里的发言权也只该剩三条：
 

@@ -28,6 +28,12 @@
 3. `durable-transient cleanup`
    - 谁配宣布已经没事了，哪些 signer / ledger / cleanup 结果词只配当投影
 
+如果继续把这条机制链再压成 later maintainer 与 user-facing 都能共用的三段顺序，也只该再补一句：
+
+- 先判 `pricing-right / truth-surface`
+- 再判 `typed ask / sandbox`
+- 最后才判 `decision window / continuation pricing / durable-transient cleanup`
+
 如果继续把 `security/` 的目录发言权也压成最短公式，也只该剩三句：
 
 1. `signer / ledger / cleanup authority`
@@ -58,6 +64,7 @@
 - 当你已经知道统一定价治理成立，但还没回答 signer、ledger 与 cleanup 责任究竟落在哪些对象上。
 - 当你需要判断哪种扩张该被 ask、哪种 truth 必须外化、哪种 cleanup 不配越级宣布终局。
 - 当你需要把“安全”和“省 token”继续压成同一治理纪律，而不是并列专题。
+- 当你需要把 user-facing 的 `/usage / /compact / status` 这些观察面退回它们各自只配消费的治理阶段。
 
 ## 如果你只先判断一件事
 

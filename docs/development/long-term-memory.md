@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/security/README`、`bluebook/risk/README` 与 `bluebook/userbook/05-控制面深挖/README` 的长期默认 governance-midchain language 现已继续写死：
+  - `security/README` 默认继续把机制前门写成 `pricing-right / truth-surface -> typed ask / sandbox -> decision window / continuation pricing / durable-transient cleanup`
+  - `risk/README` 默认继续把用户侧结算 route 扩成 `governance key / typed ask / decision window / continuation pricing / durable-transient cleanup / signer + evidence + reopen`
+  - `risk/README` 默认继续保留与 `security / userbook/05` 共用的三段顺序
+  - `userbook/05-README` 默认继续明确自己应与 `security` 的机制顺序、`risk` 的结算顺序同序
+  - 这三页默认统一拒收只共享长链词、不共享治理中段顺序的写法
 - `bluebook/userbook/05-控制面深挖/README` 与 `05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md` 的长期默认 user-facing-control-plane language 现已继续写死：
   - `05-README` 默认继续把用户侧治理判断写成 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`
   - `05-README` 默认继续把治理裁决拆成前段准入与中后段续费/清算
