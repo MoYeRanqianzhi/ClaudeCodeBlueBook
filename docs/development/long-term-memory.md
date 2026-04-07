@@ -8,6 +8,24 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `04-专题深潜/README` 的长期默认目录纪律现已继续写死：
+  - 默认不再接受 19 条专题名平铺
+  - 默认先按 `同题推进 / 扩权扩能 / 跨宿主接续 / 收口交付` 四组工作对象分流
+  - 默认先签 `工作对象路由权`，不替 `05-控制面深挖` 重签控制面 truth
+  - 后续若 `04` 又长回专题库存，默认按 route-map 反弹处理
+- `06-第一性原理与苏格拉底反思.md` 的长期默认三问现已继续写死：
+  - Prompt 魔力默认先问 `world entry / witness / continuation qualification`
+  - 安全与省 token 默认先问同一个预算诚实问题，不再分写成两个松散专题
+  - 源码先进性默认先问 `合法复杂度中心 / fault model / later maintainer rejectability`
+  - 后续若这章再退回抽象赞美而不给去魅测试，默认按第一性原理写浅处理
+- `05-体验与入口/README` 的长期默认 speaking-rights 现已继续收紧：
+  - 默认至少补齐 `user-visible projection 翻译权 / host-session signer 区分权 / 无真相签发权`
+  - 默认给出 `01 / 02 / 03` 的最小 appeal chain
+  - 默认拒收“模型切换 = 主权切换 / viewer = host signer / 所有 remote 入口同一种合同”
+- `03-参考索引/03-技能与扩展/README` 的长期默认前门公式现已继续升级：
+  - 默认先讲 `source signer -> projection consumer -> runtime gate -> activation witness`
+  - 默认至少保留 `02 / 03 / 04` 三路 appeal chain
+  - relevant skills、静态 listing 与提醒面默认都只配当 inventory / projection，不配当技能全集
 - `02-能力地图` 二级 README 的长期默认目录纪律现已继续写死：
   - 不再接受裸列表二级 README
   - 默认至少先给 `前门公式 + first reject signal + 何时看哪一页`

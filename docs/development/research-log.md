@@ -2,6 +2,10 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮专题层目录减肥动作: 已继续更新 `bluebook/userbook/04-专题深潜/README`。这一批不再把专题层保留成 19 条平铺长清单，而是正式压成四组工作对象路由：`同题推进 / 扩权扩能 / 跨宿主接续 / 收口交付`。新的结论是：专题层最值钱的不是“专题名覆盖面”，而是先把读者送进正确工作对象组，再决定是否下钻深页。
+- 本轮第一性原理深化结论: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`。Prompt 魔力现在继续被压回 `runtime-first` 的 `world entry / witness / continuation qualification`，而不是文案技巧；安全与省 token 现在继续被压回同一个预算诚实问题，即“哪些字节、动作、外置资产与时间跨度可以合法进入当前世界”；源码先进性现在继续被压回 `合法复杂度中心 + contract/registry/choke point + later maintainer rejectability`，而不是目录体感。
+- 本轮并行 Agent 新结论已正式吸收: Prompt 线最该固定的去魅句是“Prompt 不是 `systemPrompt`，而是 world-entry 编译链”；安全与省 token 线最该固定的去魅句是“省 token 不是少说话，而是 `stable bytes externalize + working set narrow + reload contract`”；源码质量线最该固定的去魅句是“先进性不是没有大文件，而是复杂度被集中到合法热点，并提前编码 stale / zombie / duplicate / rollback 这些故障模型”。
+- 本轮入口层再硬化动作: 已继续更新 `userbook/02-能力地图/05-体验与入口/README` 与 `userbook/03-参考索引/03-技能与扩展/README`。`05-体验与入口` 现在不仅有 `host -> session -> projection -> display`，还补出 `user-visible projection / host-session signer / appeal chain`；`03-技能与扩展` 现在把前门公式改写成 `source signer -> projection consumer -> runtime gate -> activation witness`，并把争议正式分流到 `02 / 03 / 04` 三页。
 - 本轮能力地图二级 README 收口动作: 已继续更新 `userbook/02-能力地图/01-运行时主链/README`、`02-执行与工具/README`、`04-扩展与生态/README` 与 `05-体验与入口/README`。这一批把原先的裸列表收回成 mini-frontdoor：运行时主链现在先讲 `world entry -> command bus -> query loop -> session truth -> continuation`，执行与工具现在先讲 `tool surface -> runtime gate -> execution / task object -> output return -> notification -> recovery`，扩展与生态现在先讲 `source -> projection -> runtime gate -> activation`，体验与入口现在先讲 `host -> session -> projection -> display` 和 `tuning != truth`。
 - 本轮新的目录结构结论: 能力地图二级 README 若只剩文件列表，就会把用户再次推回“看标题猜内容”的旧路径。更稳的默认做法是：每个二级 README 至少先给 `前门公式 + first reject signal + 何时看哪一页`，再给文件列表。
 - 本轮新的扩展索引结论: `03-参考索引/03-技能与扩展/README` 现在继续从“技能库存入口”压回 “projection / signer / runtime gate” 的索引层。后续这类页最该先拒收的三种误读已经更明确：库存不等于 activation，projection 不等于 signer，source trust 不等于 runtime gate。
