@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 tail-residual-self-audit language 现已继续写死：
+  - `03` 的 `33-35` 默认继续只保留“可逆边界 / 制度空间 / 第一问题单源”这一级反问，不再复活 `shadow / 切换 / 回退`、`seam / 局部替换` 或具体页面分工示例
+  - `06` 的 `6.47 / 6.50 / 6.53 / 6.54 / 6.57 / 6.58 / 6.62` 与 `7.2 / 7.4 / 7.6 / 7.8` 默认继续只保留“为什么不能写浅”与“我是不是又越位补卡”的自校句；凡是再次出现 object/seam nouns、Constitution nouns、统一预算器规则卡、迁移 rollout 词表或入口层级分发表，默认按越位候选处理
+  - 更稳的默认修法顺序继续是：`先删步骤词、页位示例与小框架卡 -> 再压成“可逆边界 / 第一问题 / 制度空间”反问 -> 最后只在必要时补 owner route`
+- 最新根仓同步记忆（2026-04-08，本轮最新批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
 - `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 manual-tone-tail-demotion language 现已继续写死：
   - `03 / 06` 尾段默认继续不以“这页该给什么入口 / 这条线该有哪些组件 / 该回哪一页”这种 manual-card 口气说话；一旦出现，默认按越位候选处理
   - 更稳的默认修法顺序继续是：`先删 feature / route / component list -> 再把句子压成“我是不是又在发卡” -> 最后补 owner route`

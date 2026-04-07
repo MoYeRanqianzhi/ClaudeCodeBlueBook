@@ -2,6 +2,9 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把这一轮最顽固的 tail residual 再压回 why / self-audit：`03` 的 `设计原则三十一 / 三十二 / 三十三` 现在只保留“升级是否保住 current truth / capability / recovery path”“增长后是否仍保留正式反对与局部改写空间”“目录是否又把同题首答拆成多个前门”这三类反问；`06` 的 `6.47 / 6.50 / 6.53 / 6.54 / 6.57 / 6.58 / 6.62` 与 `7.2 / 7.4 / 7.6 / 7.8` 现在也统一改写成更纯的制度边界与自校问句，不再顺手补发 object/seam、Constitution nouns、统一预算器不足或迁移步骤卡
+- 本轮并行 Agent 新结论已吸收入记忆：当前更难清理的 residual，已经从显眼的 owner noun 越位转成更隐蔽的 manual-card tone。更稳的默认修法继续是：`先删步骤词、页位示例与小框架卡 -> 再压成“可逆边界 / 第一问题 / 制度空间”反问 -> 最后只在必要时补 owner route`
+- 本轮根仓同步检查结果：`git fetch origin main`、`git checkout main` 与 `git merge --ff-only origin/main` 均再次成功，根仓继续保持 `## main...origin/main`
 - 继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把迁移/目录与 tail methodology residual 再收成抽象自校：`03` 现在把 `设计原则三十一` 收回成“迁移是否同时交代渐进顺序与回退边界”的自校句，把 `设计原则三十三` 收回成“later maintainer 是否会在第一次进入时学错第一问题”的目录自校句，不再在尾段代发迁移卡或目录职责卡；`06` 现在把 `6.46-6.50` 的 feature / axis / object 列表继续压成更纯的 why 句，并把 `7.2 / 7.5 / 7.10` 再抽象成“是否又新增第一入口 / 重发机制顺序 / 把局部经验过早升级成全局公式”的自校句
 - 本轮并行 Agent 新结论已吸收入记忆：在当前阶段，最容易复发的 residual 已经不是 canonical chain，而是尾段里的 manual-card 口气。更稳的默认修法继续是：删 feature list、删目录分工卡、删页名路由，把 why/self-audit 段只保留误读、反问与 owner route
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把尾段 methodology cards 再抽象一层：`6.46-6.50` 现在不再并列发“工作集边界 / 不变量 / continuation 资产 / 资源分配轴 / 重构资本对象”这些轻量结构卡，而统一改成“若讨论已进入具体 owner nouns，回 owner 页”的 why 句；`7.10` 也把 `canonical formula / route words` 继续收回成“是否已够资格跨页复用 / 是否重新长回第二前门”的抽象反问
