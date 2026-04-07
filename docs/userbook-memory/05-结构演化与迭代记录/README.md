@@ -128,6 +128,7 @@
 - [124-2026-04-07-remote recovery signer split 拆分记忆.md](./124-2026-04-07-remote%20recovery%20signer%20split%20拆分记忆.md)
 - [125-2026-04-07-transport recovery action-state split 拆分记忆.md](./125-2026-04-07-transport%20recovery%20action-state%20split%20拆分记忆.md)
 - [126-2026-04-07-transport terminality policy split 拆分记忆.md](./126-2026-04-07-transport%20terminality%20policy%20split%20拆分记忆.md)
+- [127-2026-04-07-compaction recovery contract split 拆分记忆.md](./127-2026-04-07-compaction%20recovery%20contract%20split%20拆分记忆.md)
 
 用途：
 
