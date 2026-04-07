@@ -5,7 +5,7 @@
 如果把蓝皮书入口再压成最短公式，只剩三条：
 
 1. Prompt
-   - `same-world compiler = Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
+   - Prompt 的 first-answer law 统一回 `philosophy/84`；根前门这里只保留 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 作为二跳前的最短 hook，不在这里另起第二套 Prompt 总法。
 2. 治理
    - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
    - `Narrow / Later / Outside` 只是这条收费链的用户侧助记，不是第二套主题
@@ -62,7 +62,7 @@
 
 1. Prompt frontdoor order
    - `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
-   - 这六项先给 later maintainer 的 `first-reject path`；`Authority` 先要求 `world-defining winner` 唯一成立，`Explainability` 只负责 diagnostic naming，不负责改判。真正的 same-world witness 仍回 `09 / guides/51` 的 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`。
+   - 这六项先给 later maintainer 的 `first-reject path`；`Authority` 先要求 `world-defining winner` 唯一成立，`Explainability` 只负责 diagnostic naming，不负责改判。Prompt 线的 first-answer owner 仍是 `philosophy/84`；真正的 same-world witness 仍回 `09 / guides/51` 的 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`。
 2. governance failure order
    - `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
    - 治理先判 `pricing-right signer / lease` 是否成立，再看 `truth-surface attestation` 如何把 `reject / reopen` 外化；`asset-rollback ABI` 只负责把收口动作变成可恢复 contract，不再冒充治理起点。

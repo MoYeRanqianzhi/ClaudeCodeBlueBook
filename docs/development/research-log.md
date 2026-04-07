@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-owner-single-source 深化动作: 已继续更新 `bluebook/README.md`、`bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`。新的结论是：Prompt 线当前最值钱的 residual 已不再是 frontdoor/witness/action 三层混写，而是“谁配发布 Prompt 顶层 first answer”。现在 `84` 更接近唯一 owner，根 README 更接近 root hook，`06` 更接近第一性追问页，`81` 更接近机制页。
+- 本轮新的 Prompt 结论: `same-world compiler` 这类 owner-sounding 顶层短句现在开始退场；更稳的默认写法是让非 owner 页面只保留 hook、question ladder 或 mechanism，不再并列重签 Prompt 总法。
 - 本轮 shared-frontdoor-bucketing 深化动作: 已继续更新 `bluebook/security/README.md`、`bluebook/userbook/05-控制面深挖/README.md` 与 `bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md`。新的结论是：共享前门当前最危险的 residual 已不再是“有没有把 `/status / /usage` 降格”，而是“有没有把 runtime projection 与 continuation consumer 混成一桶”。现在这几页开始更明确地区分 `/status / /doctor / /usage` 与 `/compact / /resume` 的 speaking rights。
 - 本轮新的用户侧结论: `/compact` 不应再被写成普通观察面，`/resume` 也不该只在叶子页才拥有 signer-safe demotion；前门层现在开始更明确承认它们是 continuation consumer，而不是 runtime projection。
 - 本轮 source-quality-frontdoor-demotion 深化动作: 已继续更新 `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`、`bluebook/navigation/README.md` 与 `bluebook/guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md`。新的结论是：源码质量线当前最值钱的 residual 已不再是 canonical ladder 本身，而是 atlas/projection 页面、跨目录路由页和公开镜像方法页谁还在偷偷拥有“第一句话”的权力。现在 `76` 更接近 projection-only，`navigation/README` 更接近 route-only，`102` 也更接近纯方法页。

@@ -28,7 +28,7 @@
 
 - Prompt 的魔力不在“更会写”，而在“更会把世界编译成可缓存、可转写、可继续的工作对象”。
 
-如果把这条编译链再压成目录前门已经固定下来的 nouns，也只该剩六个：
+如果要消费目录前门已经固定下来的六个 nouns，owner page 统一是 `philosophy/84`；本页只在机制层展开它们各自对应的运行时对象：
 
 1. `Authority`
    - 主权顺序先固定谁能定义世界。
@@ -54,7 +54,7 @@ Prompt 真正的魔力，不是：
 而是：
 
 1. 先把 system prompt 写成可分段、可缓存、可审计的 section registry。
-2. 先把主权顺序压成同一条 request truth，而不是让多份并列文本互相争主语。
+2. 先把主权顺序压成同一条 request assembly law，而不是让多份并列文本互相争主语。
 3. 先把 `message lineage` 写成可恢复的三键内核，而不是顺手拼出的聊天历史。
 4. 先把 transcript 重写成合法协议对象，再让模型消费。
 5. 先把动态变化赶到 stable boundary 之后，保住共享前缀资产。
@@ -83,7 +83,7 @@ Claude Code 的 Prompt 有一个常被忽略的前提：
 
 1. Prompt 的主权顺序先被固定。
 2. 风格、流程、边界与工具法律被编译进 system 主链。
-3. 人类 later 接手者消费的也不是裸原文，而是同一条被治理过的 request truth。
+3. 人类 later 接手者消费的也不是裸原文，而是同一条被治理过的 request assembly object。
 
 所以 Prompt 魔力首先不是：
 

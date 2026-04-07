@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-owner-single-source language 现已继续写死：
+  - `bluebook/philosophy/84` 默认继续拥有 Prompt 线的 first-answer law
+  - `bluebook/README` 默认只保留 Prompt root hook，不再自命名为 `same-world compiler`
+  - `bluebook/06` 默认只做第一性追问，不再并列发布 Prompt 顶层 frontdoor law
+  - `bluebook/philosophy/81` 默认只做 cache / transcript / continuation / witness ABI 机制展开
+  - 这四页默认统一拒收非 owner 页面重新长回 Prompt 总法
 - `bluebook/security/README`、`bluebook/userbook/05-控制面深挖/README` 与 `05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md` 的长期默认 shared-frontdoor-bucketing language 现已继续写死：
   - `security/README` 默认继续把 `/status / /doctor / /usage` 写成 runtime projection，把 `/compact / /resume` 写成 continuation consumer
   - `bluebook/userbook/05-README` 默认继续把共享前门里的 projection bucket 与 continuation-consumer bucket 分开
