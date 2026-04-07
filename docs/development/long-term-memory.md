@@ -8,6 +8,8 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 03-governance-owner-sequence live 记忆：
+  - `03` 的治理 why 默认继续不保留 `10 / security / risk` 这类松散口径；凡涉及 canonical chain、failure semantics、弱读回面、恢复尾链与执行收口，统一回 `10 -> philosophy/85 -> philosophy/61 -> security/risk/playbooks`
 - 当前批次继续新增一条 07-userbook05-fixed-bridge live 记忆：
   - `07` 默认继续把用户动作翻译 next-hop 固定回 `userbook/05`
   - `userbook/05` 默认继续把 shared runtime correctness / continuity budget 的底层 why 固定回 `07`

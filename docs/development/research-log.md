@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的治理顺序结论：`03` 里较早与中段两处治理 why 现在也被继续压回同一条 owner 顺序，不再保留 `10 / security / risk` 这类松散回链。当前更稳的默认口径已经更明确是：凡涉及 canonical chain、failure semantics、弱读回面、恢复尾链与执行收口，统一回 `10 -> 85 -> 61 -> security/risk/playbooks`。
 - 本轮新的桥接结论：`07` 与 `userbook/05` 现在更明确继续被固定成双向桥。前者只保留 shared runtime correctness / continuity budget 的底层 why，并把用户动作翻译 next-hop 固定回 `userbook/05`；后者则继续只保留三问到三项过关条件的 crosswalk，底层 why 固定回 `07`。
 - 本轮新的 `03` 结论：治理 why 现在也被进一步压成和 Prompt why 同一模板，不再先用“本节不重列治理定价链”再补坏解，而是先钉死“只保留一句 why”，再给固定 owner 顺序。
 - 本轮新的 `03` 结论：Prompt why 与治理 why 的回链句法现在也更明确继续被统一。Prompt 线统一只回 `philosophy/84`，自校层才回 `06`；治理线统一只回 `10 -> 85 -> 61 -> security/risk/playbooks`，不再停在“治理 owner 页”这种松散口径。
