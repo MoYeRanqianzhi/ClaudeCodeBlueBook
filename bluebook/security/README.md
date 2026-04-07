@@ -1,10 +1,10 @@
 # 安全专题入口
 
 `security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
-如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，不要急着把安全页读成另一套规则堆。
-`security/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这次在失真的到底是 signer、ledger 还是 cleanup 工作对象，再判它卡在治理收费链的哪一段，最后才决定读机制前门、速查表、源码证据簇还是具体编号正文。
+如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶入口顺序，不要急着把安全页读成另一套规则堆。
+`security/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这次在失真的到底是 signer、ledger 还是 cleanup 工作对象，再判它卡在治理收费链的哪一段，最后才决定读机制入口摘要、速查表、源码证据簇还是具体编号正文。
 
-如果只先记安全前门的一句话，也只记这句：
+如果只先记安全入口判定的一句话，也只记这句：
 
 - 这不是第二套安全故事，而是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链在安全目录里的机制翻译。
 
@@ -15,13 +15,13 @@
 ## 先记四句
 
 - 安全不是单点沙箱，也不是单点分类器；它是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 在 signer authority、truth-surface attestation、ask arbitration、continuation pricing 与 cleanup authority 上的安全侧翻译。
-- `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 不是两条结果词前门的拼接，而是同一条治理收费链。
+- `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 不是两条结果词入口的拼接，而是同一条治理收费链。
 - 完成、终局、遗忘、清理与家族级 cleanup 都各有 signer；任何弱层都不配替强层宣布“已经没事了”。
 - 宿主不该自己从事件流回放拼当前真相；更稳的做法是消费 runtime 已外化的 truth-surface / decision window / cleanup verdict。
 - 任何 user-facing 状态、诊断、压缩或导出入口，都只配读取已外化的 truth-surface、decision window 与 cleanup verdict，不配定义治理真相、继续资格或恢复资格。
 - `shared_consumer_surface` 只表示不同 reader 是否仍在只读消费同一个 verdict object，不表示谁拥有 current truth；projection 字段层继续回 `appendix/87`，reprojection 分层继续回 `appendix/159`。
 
-如果把安全前门继续压成最短公式，也只剩三条：
+如果把安全入口判定继续压成最短公式，也只剩三条：
 
 1. `governance key -> externalized truth chain -> typed ask`
    - 谁配改边界、谁配宣布当前治理真相、哪些扩张必须先协商
@@ -48,7 +48,7 @@
 如果一个安全判断还压不回这三条，它就还停在规则堆或工具堆层。
 如果一个安全判断还答不上“它保护的到底是哪种工作对象、哪段收费链、哪个入口只是证据层 consumer”，就说明它还没压回第一性原理。
 
-## 高阶前门
+## 高阶入口顺序
 
 想先抓第一性原理，不要从安全目录库存开始：
 
@@ -70,7 +70,7 @@
 
 更稳的 first reject signal 还应先记三条：
 
-1. `Context Usage`、mode 条和 token UI 开始冒充治理真相
+1. usage 读数、permission 投影和 token 条开始冒充治理真相
 2. cleanup 结果词开始越级替 signer 和 verdict 说话
 3. `Later / Outside`、default continuation 或全量可见重新让免费扩张复活
 
@@ -81,8 +81,8 @@
 
 ## 维护约定
 
-- `security/README` 只保留前门判断、编号段职责与分流。
-- `security/README` 只负责治理 signer / ledger / cleanup 前门，不和 `risk/` 抢用户侧恢复与入口差异前门，也不和 `playbooks/` 抢执行链。
+- `security/README` 只保留入口判断、编号段职责与分流。
+- `security/README` 只负责治理 signer / ledger / cleanup 入口摘要，不和 `risk/` 抢用户侧恢复与入口差异摘要，也不和 `playbooks/` 抢执行链。
 - `security/README` 有 signer/ledger 机制解释权，但没有用户侧恢复签发权，也没有现场执行 verdict 的代签权。
 - 巨型目录库存、逐篇标题镜像和作者侧记忆不再回灌首页。
 - 深层速查表统一回 `appendix/README.md`，源码剖面统一回 `source-notes/README.md`。

@@ -677,3 +677,6 @@
 - 继续收口治理哲学页的可见标签：`philosophy/22` 现在把中段定义句从“安全、成本与体验只是同一条治理收费链的外显”收回到“这三件事都落在同一条治理收费链上”，把 `外显` 继续限缩在标题和总结句，不再让它占中段 canonical 定义位
 - 继续收口 Prompt 深页 residual：`33 / 57 / 63 / 78` 现在进一步把正文里的 `神秘措辞 / 神秘配方 / 咒语 / 更会说` 收回到 `文案模板 / 不可解释配方 / 文案技巧 / 更会组织措辞`，把 Prompt 深页从“反玄学对照组”继续压回更可检验的机制语
 - 继续收口治理可见标签：`philosophy/22` 的 H1 和总结句现已从“外显”进一步收回到“共同落在同一治理收费链”，`security/README` 对它的可见链接标签也同步改名，减少治理线在高流量前门继续借“外显学”包装对象链
+- 继续收紧目录入口与治理深页：`guides/README`、`playbooks/README`、`casebooks/README`、`security/README`、`risk/README`、`guides/31`、`architecture/83`、`philosophy/85` 现已统一把 `前门` 收回 `入口 / 入口顺序 / 入口摘要`，并把 `permission/mode/usage/UI` 系词系统性降格为 projection/readback/交互外观，而不再冒充治理主语
+- 同步固化一条新的源码质量证据纪律：当本地缺少 `claude-code-source-code/` 镜像时，前门页应显式承认 `public-evidence ceiling / mirror gap discipline`，避免把镜像缺席时的推论写成 runtime-core certainty；这一结论已写回研究日志与长期记忆，作为下一轮目录优化候选
+- 并行 Agent 结论也已写回记忆：Prompt 线进一步确认 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 才是 Prompt 效力的首答链；治理线进一步确认 `trusted inputs / typed ask / visibility / continuation / cleanup` 是同一收费链对动作、能力、上下文与时间的统一定价；源码质量线进一步确认当前批次最该优化的不是再发明术语，而是减少入口重复与显式标出 evidence mode

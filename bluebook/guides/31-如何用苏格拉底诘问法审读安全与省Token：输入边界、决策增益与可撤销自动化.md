@@ -121,7 +121,7 @@
 
 判断标准：
 
-- 如果 `mode`、弹窗、usage 条、summary 或 compact 结果已经开始替代 `governance key / externalized truth chain / decision window`，这条治理链就已经在前门失真。
+- 如果 `mode`、弹窗、usage 条、summary 或 compact 结果已经开始替代 `governance key / externalized truth chain / decision window`，这条治理链就已经在入口判定处失真。
 
 ### 2.14 这次 `stop / continue / upgrade / fallback / rollback` 到底由谁签发
 
@@ -133,7 +133,7 @@
 
 判断标准：
 
-- 如果恢复之后还能继续拿旧 authority、旧 mode 或旧 capability width 说“这还是当前世界”，恢复链就在偷渡主权。
+- 如果恢复之后还能继续拿旧 authority、旧 permission projection 或旧 capability width 说“这还是当前世界”，恢复链就在偷渡主权。
 
 ### 2.16 当前 drift 的 `minimum legal degraded shape` 是什么
 
@@ -154,7 +154,7 @@
 1. 以为多一层检查就等于更安全。
 2. 以为少一点输出就等于更省 token。
 3. 以为 `permission_mode` 这样的投影字段就等于治理主键。
-4. 以为宿主可以靠事件流、modal heuristic 或 spinner 自己猜当前真相。
+4. 以为宿主可以靠事件流、交互启发式或 spinner 自己猜当前真相。
 5. 以为自动化一旦开启就应该尽量别退回人工。
 6. 以为 visibility 只是产品体验问题，而不是治理问题。
 7. 以为只要结果没出错，输入边界如何扩张都无所谓。

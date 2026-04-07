@@ -3,7 +3,7 @@
 `guides/` 把源码研究翻成可执行的方法、模板、审读清单和构建手册，不重复产品说明文案。
 如果你还没先完成 `05` 的模仿对象校正、`15` 的失稳前追问或 `41` 的第一性原理收束，不要在这里直接把模板当答案。
 
-本 README 只保留 `guides/` 的稳定入口与任务分流；跨目录执行链统一由 [../navigation/README.md](../navigation/README.md) 承担。
+本 README 只保留 `guides/` 的稳定入口与任务分流，不承担高阶主语改判权；跨目录执行链统一由 [../navigation/README.md](../navigation/README.md) 承担。
 其中源码质量线现在固定分成两种模板：`101` 只审 `one writable present`，`102` 只做公开镜像证据梯度。
 
 这里还要再多记一句：
@@ -21,7 +21,7 @@
 - 当你已经接受 `09 / 05 / 15 / 41` 这组高阶主语，准备把它们压成真正能执行的 checklist 与 matrix。
 - 当你需要把“局部可反对性 / refactor capital / truth-plane discipline”翻成能执行的审读动作，而不想只停在价值判断。
 
-更稳一点说，`guides/` 也必须继承 shared first-answer order：先判是哪条母线失真、再判对象链、再判模板动作；如果顺序没先站住，模板页就会重新退回“看起来更会审”的第二前门。
+更稳一点说，`guides/` 也必须继承 shared first-answer order：先判是哪条母线失真、再判对象链、再判模板动作；如果顺序没先站住，模板页就会重新退回“看起来更会审”的第二入口。
 
 ## 如果你只先判断一件事
 
@@ -32,7 +32,7 @@
 - 如果你只先判断“请求装配控制面怎样落成模板”，从 [99-如何用苏格拉底诘问法审读请求装配控制面：world entry / request assembly / six-stage assembly chain](99-如何用苏格拉底诘问法审读请求装配控制面：authority%20chain%E3%80%81protocol%20transcript%E4%B8%8Econtinuation%20object.md) 进入。
   - 失败信号：还在用更强 prompt 这种结果词替代 `world entry / request assembly / six-stage assembly chain` 的对象链判断。
 - 如果你只先判断“当前世界准入主权怎样落成模板”，从 [100-如何用苏格拉底诘问法审读当前世界准入主权：governance key、externalized truth chain、typed ask、decision window 与 continuation pricing](100-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BB%E5%BD%93%E5%89%8D%E4%B8%96%E7%95%8C%E5%87%86%E5%85%A5%E4%B8%BB%E6%9D%83%EF%BC%9Atrusted%20inputs%E3%80%81%E6%9C%80%E5%B0%8F%E5%8F%AF%E8%A7%81%E9%9D%A2%E4%B8%8Econtinuation%20pricing.md) 进入。
-  - 失败信号：还在用更严权限、更多模式、token 百分比或 `Context Usage` 成本面板代替治理主键与 decision window 判断。
+  - 失败信号：还在把权限投影、usage 读数或 token 百分比当成治理主键与 decision window 判断。
 - 如果你只先判断“当前真相保护怎样落成模板”，从 [101-如何用苏格拉底诘问法审读当前真相保护：current-truth surface、freshness gate与ghost capability](101-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BBone%20writable%20present%EF%BC%9Asingle-writer%E3%80%81recovery%20asset%E4%B8%8Eanti-zombie.md) 进入。
   - 失败信号：还在用更强 prompt、更严权限、更漂亮目录这种结果词替代 `one writable present` 与 later maintainer reject order。
 - 如果你只先判断“怎样给公开镜像做源码质量证据分级”，从 [102-公开镜像源码质量证据分级模板：contract、registry、current-truth surface、consumer subset 与 mirror gap discipline](102-%E5%A6%82%E4%BD%95%E7%BB%99%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E5%81%9A%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7%EF%BC%9Acontract%E3%80%81registry%E3%80%81authoritative%20surface%E3%80%81adapter%20subset%E4%B8%8Ehotspot%20gap%20discipline.md) 进入。
@@ -50,7 +50,7 @@
 ## 维护约定
 
 - README 只保留判断式入口与稳定起点，不再展开长链路由。
-- README 只负责把判断压成模板，不和 `05 / 15 / 41` 抢高阶前门职责。
+- README 只负责把判断压成模板，不和 `05 / 15 / 41` 抢高阶入口职责。
 - README 只提供问题梯子与模板，不代替 `playbooks/` 发 verdict，不代替 `philosophy/` 重判必要性。
 - 需要失败样本时，回到 [../casebooks/README.md](../casebooks/README.md)。
 - 需要运行手册和演练脚本时，回到 [../playbooks/README.md](../playbooks/README.md)。
