@@ -81,7 +81,7 @@
 2. suggestion 维护“下一步最可能怎么接”。
 3. session memory 维护“压缩或恢复后还能从哪里继续”。
 
-把这三者放在一起看，真正稳定的写法就不是“协作语法很强”，而是：
+把这三者放在一起看，真正稳定的写法就不是“协作语法很强”，而是“同一协作接口在不同时间尺度上继续成立”：
 
 - 它们都是同一 continuation interface 的投影
 
@@ -98,7 +98,7 @@
 3. mailbox / task / notification 把 lineage object 接进运行时。
 4. handoff 结果必须能回写到主线程 continuation。
 
-所以所谓“协作语法很强”，真正的本体不是句式，而是：
+所以所谓“协作接口已经成立”，真正的本体不是句式，而是：
 
 - transcript grammar
 - lineage object
@@ -131,4 +131,4 @@
 
 ## 7. 一句话总结
 
-Claude Code 的 prompt 之所以能稳定协作，不是因为它更会说，而是因为它把意图写成了 `Transcript -> Lineage -> Continuation` 可持续协作接口，再让模型沿着这套接口继续行动。
+Claude Code 的 prompt 之所以能稳定协作，不是因为它更会组织措辞，而是因为它把意图写成了 `Transcript -> Lineage -> Continuation` 可持续协作接口，再让模型沿着这套接口继续行动。

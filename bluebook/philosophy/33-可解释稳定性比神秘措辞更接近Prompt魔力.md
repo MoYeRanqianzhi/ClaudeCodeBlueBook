@@ -2,7 +2,7 @@
 
 这一章回答四个问题：
 
-1. 为什么 Claude Code 的 prompt 效力更接近“可解释稳定性系统”，而不是“神秘措辞模板”。
+1. 为什么 Claude Code 的 prompt 效力更接近“可解释稳定性系统”，而不是“文案模板”。
 2. 为什么一个真正成熟的 prompt 系统，必须既能稳定工作，也能解释什么时候失稳。
 3. 为什么 cache break 归因、预算观测、shared prefix 与 tool ABI 稳定性应该被看成同一哲学。
 4. 从第一性原理看，什么才是最难被抄走的 prompt 能力。
@@ -83,7 +83,7 @@ Claude Code 更接近另一种逻辑：
 
 那么 prompt 就从：
 
-- 神秘配方
+- 不可解释配方
 
 升级成：
 
@@ -155,4 +155,4 @@ tool pool 顺序与过滤逻辑稳定，意味着：
 
 ## 6. 一句话总结
 
-Claude Code 的 prompt 效力，更接近 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 里最后一级真正成立，而不是多了一段难以言传的神秘措辞。
+Claude Code 的 prompt 效力，更接近 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 里最后一级真正成立，而不是多了一段难以复查的措辞模板。
