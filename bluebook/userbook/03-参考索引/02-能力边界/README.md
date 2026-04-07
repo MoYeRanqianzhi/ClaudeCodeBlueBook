@@ -110,3 +110,4 @@
 - [108-loading start、pause、resume、turn-end 与 teardown 索引.md](./108-loading%20start%E3%80%81pause%E3%80%81resume%E3%80%81turn-end%20与%20teardown%20索引.md)
 - [109-init full payload、bridge redaction 与 model-only banner 索引.md](./109-init%20full%20payload%E3%80%81bridge%20redaction%20与%20model-only%20banner%20索引.md)
 - [110-history init banner replay 与 live slash restore 索引.md](./110-history%20init%20banner%20replay%20与%20live%20slash%20restore%20索引.md)
+- [111-watchdog、warning、reconnecting 与 disconnected 索引.md](./111-watchdog%E3%80%81warning%E3%80%81reconnecting%20%E4%B8%8E%20disconnected%20索引.md)
