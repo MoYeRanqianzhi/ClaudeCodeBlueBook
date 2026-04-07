@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-summary-object-order language 现已继续写死：
+  - 高阶前门 summary 默认继续先讲对象顺序，再讲效果观感
+  - 高阶前门默认继续拒收先说“更强 / 更省 / 更先进”，再补 `same-world test / decision window / current-truth protection`
+  - `06` 默认继续把三条第一性问题写成对象顺序，`15 / 41` 默认继续把 route question 写成对象是否成立，而不是结果词是否讨喜
 - `bluebook/06`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-frontdoor-first-principles-summary language 现已继续写死：
   - 高阶前门 summary 默认继续先说 `same-world test / decision window / current-truth protection`
   - 高阶前门默认继续拒收先用“更强 / 更省 / 更先进”组织三条母线，再回头补对象链
