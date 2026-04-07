@@ -21,6 +21,8 @@
 - 安全设计与省 Token 设计真正共享的是“当前世界的准入主权”，而不是同一组 UI 或同一个预算器名字。
 - 更硬一点说，`governance key` 才是这张控制面的实现主键；source slot 只是它的最前沿证据位，而 ask、visibility、externalization 与 continuation 都只是这张主键向下游派生出的受价结果。
 
+如果你只缺治理收费链的一屏速记，而不是苏格拉底诘问链本身，先回 [../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；本页尽快进入问题链，不第二次承担入口卡职责。
+
 如果只先做一轮最短的治理审读，也只按这条 canonical chain 问：
 
 - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`

@@ -18,7 +18,7 @@
 
 治理 / 安全 / Token 问题若已确认缺的是对象链而不是路线，也只先弹回：
 
-- `85 -> 83 -> 100 -> security -> risk`
+- `10 -> 85 -> 83 -> 100 -> security -> risk`
 
 若你还在问 mode、usage、approval 或 cleanup result 谁说了算，说明缺的不是 next-hop，而是治理首答；先回 `../README.md` 与 `09`。
 
@@ -96,7 +96,7 @@
 - 请求装配线
   `09 -> architecture/82 -> philosophy/84 -> api/69 -> api/78 -> playbooks/50 -> casebooks/46 / 49`
 - 扩张定价线
-  `09 -> architecture/83 -> philosophy/19 / philosophy/22 -> guides/100 -> playbooks/78 -> casebooks/74`；核心治理线是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
+  `09 -> 10 -> philosophy/85 -> architecture/83 -> guides/100 -> security -> risk -> playbooks/78 -> casebooks/74`
 - 当前真相线
   `09 -> architecture/84 -> philosophy/86 / philosophy/87 -> guides/101 / guides/102 -> api/30 / api/39 / api/42 -> api/83 / api/92 -> playbooks/79 -> casebooks/75`
 
