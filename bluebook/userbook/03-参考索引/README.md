@@ -57,6 +57,7 @@
 11. `system/init.slash_commands`、`REMOTE_SAFE_COMMANDS`、`PromptInput`、`REPL`、`processUserInput` 与 `print` 看起来都在 slash 附近时，应该先去哪个入口分辨声明面、文本载荷与 runtime 再解释的三段合同。
 12. `getSessionId`、`switchSession`、`StatusLine`、`assistant viewer`、`remoteSessionUrl` 与 `useRemoteSession` 看起来都在 remote session 身份附近时，应该先去哪个入口分辨 `remote.session_id` 可见性与当前前端拥有权。
 13. `sessionStorage`、`hydrateFromCCRv2InternalEvents`、`sessionRestore`、`listSessionsImpl`、`SessionPreview` 与 `sessionTitle` 看起来都在 session 元数据附近时，应该先去哪个入口分辨 durable metadata、live `system/init` 与 foreground `external_metadata`。
+14. `SENTINEL_LOADING`、`SENTINEL_LOADING_FAILED`、`SENTINEL_START`、`useAssistantHistory`、`remoteConnectionStatus` 与 `BriefIdleStatus` 看起来都在历史翻页附近时，应该先去哪个入口分辨 attached viewer 哨兵与 remote presence surface。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 

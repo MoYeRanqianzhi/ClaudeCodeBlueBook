@@ -259,6 +259,7 @@
 - [150-system-init.slash_commands、REMOTE_SAFE_COMMANDS、PromptInput、REPL、processUserInput 与 print：为什么 slash 不是一张命令表，而是声明面、文本载荷与 runtime 再解释的三段合同.md](./150-system-init.slash_commands、REMOTE_SAFE_COMMANDS、PromptInput、REPL、processUserInput%20与%20print：为什么%20slash%20不是一张命令表，而是声明面、文本载荷与%20runtime%20再解释的三段合同.md)
 - [151-getSessionId、switchSession、StatusLine、assistant viewer、remoteSessionUrl 与 useRemoteSession：为什么 remote.session_id 可见，不等于当前前端拥有那条 remote session.md](./151-getSessionId、switchSession、StatusLine、assistant%20viewer、remoteSessionUrl%20与%20useRemoteSession：为什么%20remote.session_id%20可见，不等于当前前端拥有那条%20remote%20session.md)
 - [152-sessionStorage、hydrateFromCCRv2InternalEvents、sessionRestore、listSessionsImpl、SessionPreview 与 sessionTitle：为什么 durable session metadata 不是 live system-init，也不是 foreground external-metadata.md](./152-sessionStorage、hydrateFromCCRv2InternalEvents、sessionRestore、listSessionsImpl、SessionPreview%20与%20sessionTitle：为什么%20durable%20session%20metadata%20不是%20live%20system-init，也不是%20foreground%20external-metadata.md)
+- [153-SENTINEL_LOADING、SENTINEL_LOADING_FAILED、SENTINEL_START、maybeLoadOlder、fillBudgetRef、remoteConnectionStatus 与 BriefIdleStatus：为什么 attached viewer 的历史翻页哨兵不是 remote presence surface.md](./153-SENTINEL_LOADING、SENTINEL_LOADING_FAILED、SENTINEL_START、maybeLoadOlder、fillBudgetRef、remoteConnectionStatus%20与%20BriefIdleStatus：为什么%20attached%20viewer%20的历史翻页哨兵不是%20remote%20presence%20surface.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。
 
 更稳一点说，这一层真正值钱的目录优化也不是继续补页，而是让每个控制面首页都先回答：
