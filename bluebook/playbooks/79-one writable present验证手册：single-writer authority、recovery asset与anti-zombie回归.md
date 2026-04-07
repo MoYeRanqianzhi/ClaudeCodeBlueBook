@@ -10,6 +10,10 @@
 4. 哪些 drift 必须直接拒收，而不是继续靠目录整理或作者记忆兜底。
 5. 怎样用苏格拉底式追问避免把这层写成“结构卫生检查表”。
 
+这里还应再多记一句：
+
+- continuity 在这页不是第四主语，而是 `current-truth surface -> recovery asset non-sovereignty -> freshness gate -> stale-writer rejection` 这条时间轴的长期回归语法。
+
 ## 0. 代表性源码锚点
 
 - `claude-code-source-code/src/entrypoints/cli.tsx:16-33`
@@ -43,6 +47,8 @@
 7. ghost-capability continuity
 8. release-surface shaping continuity
 9. later-maintainer rejectability continuity
+
+更硬一点说，`resume / pointer / ledger / event stream` 都只配当这条时间轴上的 consumer 或风险源，不配升级成 present truth signer。
 
 ## 2. 回归症状
 

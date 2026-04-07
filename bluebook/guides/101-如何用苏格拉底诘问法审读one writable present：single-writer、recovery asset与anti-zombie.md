@@ -35,6 +35,10 @@
 2. `recovery-sovereignty leak`
 3. `surface-gap blur`
 
+这里还应再多记一句：
+
+- continuity 不另起第四类源码主语；它只是 `current-truth surface -> recovery asset non-sovereignty -> freshness gate -> stale-writer rejection` 这条时间轴的展开。
+
 ## 1. 第一性原理
 
 成熟内核首先处理的不是：
@@ -67,6 +71,7 @@
 判断标准：
 
 - 如果 pointer、ledger、resume file 或 cache 也能直接宣布“我就是最新真相”，恢复系统就已经长成第二主权面。
+- 所以 continuity 的源码审读不该先问“恢复成功了吗”，而应先问这些资产有没有借恢复之名重新获得 present truth 的签字权。
 
 ### 2.3 stale finally、stale snapshot、stale pointer 会不会在未来某个时刻写坏现在
 
@@ -116,6 +121,8 @@
 2. 再回 `32`，用旧一层源码先进性审读模板确认是权威面、恢复资产、未来维护者消费者还是 transport shell 先失真。
 3. 再检查 `QueryGuard`、`sessionIngress`、`WorkerStateUploader`、`bridgePointer`、`FileEdit / FileWrite` freshness gate、PowerShell validator 与 MCP stale-capability 清理条件。
 4. 最后才决定是否重构目录；多数时候，先修写入权与时态保护，比先修分层外观更重要。
+
+这里的 `32` 现在应被读成 builder-facing 补桥页，而不是旧一层 atlas route；若它把你重新带回 atlas/projection 前门，而不是带回 `86 / 84 / 101 / 102`，就说明桥页自己又写浅了。
 
 ## 5. 最小判据
 

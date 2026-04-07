@@ -42,13 +42,19 @@ Claude Code 更深的一层工程成熟度，可以压成四张图：
 3. anti-zombie invariant catalog
 4. release-surface shaping matrix
 
+这里的“四张图”不是第四条母线，而是源码质量线在不同结构切面与时间轴上的投影。
+
 这四张图一起回答的是同一件事：
 
 - 当前真相怎样不被旧对象、错误入口、陈旧状态与错误发布面重新写坏
 
+它们拆开的不是第四类主语，而是同一条“现在不能被过去写坏”的结构链在 bootstrap、authority、recovery 与 release 上的不同裁面。
+
 更前门地说，这四张图其实在共同保护：
 
 - `current-truth surface -> recovery asset non-sovereignty -> freshness gate -> ghost capability`
+
+更准确地说，这四张图共同复写的是同一条时间轴：谁先定义现在、哪些恢复资产不得篡位、哪些陈旧写入必须先被 freshness / eviction 撤权。
 
 这条线最短的 reject trio 也只认：
 

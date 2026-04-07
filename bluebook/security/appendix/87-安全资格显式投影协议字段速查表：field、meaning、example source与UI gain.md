@@ -12,6 +12,10 @@
 
 `把建议的 projection protocol fields、来源示例与UI收益压成一张字段矩阵。`
 
+这里还要再多记一句：
+
+- owner page 仍是 `security/README` 与 `api/85 / api/94`；这一页只给 projection consumer 提供诚实字段，不代签 `settled_price`、`shared_consumer_surface` 或 current truth。
+
 ## 2. 安全资格显式投影协议字段矩阵
 
 | field | meaning | example source | UI gain | 关键证据 |
@@ -27,11 +31,12 @@
 
 设计一个新 surface 时，先问五句：
 
-1. 它属于哪种 `projection_scope`
-2. 它真正能看到哪些 `visible_truth_subset`
-3. 它必须提醒哪些 `hidden_truth_hint`
-4. 它该 handoff 到哪里
-5. 它最该阻止哪种 `forbidden_inference`
+1. 它是不是 owner surface；如果是，先回 `security/README` 与 `api/85 / api/94`，不要先套 projection grammar
+2. 它属于哪种 `projection_scope`
+3. 它真正能看到哪些 `visible_truth_subset`
+4. 它必须提醒哪些 `hidden_truth_hint`
+5. 它该 handoff 到哪里
+6. 它最该阻止哪种 `forbidden_inference`
 
 ## 4. 最常见的五类字段缺失问题
 
@@ -52,4 +57,12 @@
 
 而是：
 
-`把投影诚实性编码成所有 surface 都能消费的结构化字段。`
+`把投影诚实性编码成所有 projection consumer 都能消费的结构化字段。`
+
+这些字段真正保护的也不是：
+
+`哪一层有权宣布 current truth，`
+
+而是：
+
+`弱 surface 在消费 shared verdict object 时，不能越级冒充 owner。`

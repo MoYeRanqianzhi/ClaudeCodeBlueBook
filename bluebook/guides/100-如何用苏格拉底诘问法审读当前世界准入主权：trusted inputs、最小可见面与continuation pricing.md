@@ -31,6 +31,10 @@
 2. `projection usurpation`
 3. `free-expansion relapse`
 
+这里还应再多记一句：
+
+- `compact / resume / re-entry` 不构成第四条治理对象线；它们只是 `continuation pricing`、`durable-transient cleanup` 与 authority re-qualification 在时间轴上的不同消费点。
+
 ## 1. 第一性原理
 
 成熟治理首先处理的不是：
@@ -101,6 +105,7 @@
 判断标准：
 
 - 如果没有显式 stop condition、边际决策增益与 rented continuation 意识，系统只是在以“继续”名义免费烧时间。
+- 更硬一点说，continuity 审的不是“还能不能继续用”，而是“这次继续是否仍值得付费、仍只续 durable assets、而没有把 transient authority 也一起续租”。
 
 ### 2.5.1 resume 恢复的是 durable assets，还是把 transient authority 一并续租
 

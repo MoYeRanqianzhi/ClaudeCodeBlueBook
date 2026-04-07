@@ -1,9 +1,9 @@
-# 如何给公开镜像做源码质量证据分级：contract、registry、current-truth surface、consumer subset与mirror gap discipline
+# 如何给公开镜像做源码质量证据分级：public artifact ceiling、contract、registry、current-truth surface、consumer subset、hotspot kernel 与 mirror gap discipline
 
 这一章回答五个问题：
 
 1. 为什么研究 Claude Code 这类公开镜像时，第一步不该直接夸“源码质量很高”或抱怨“缺太多源码”。
-2. 怎样把公开镜像里的证据压成稳定的六级阶梯，而不是把 README、schema、注册表、当前真相候选、消费者子集、热点文件和缺口脑补成同一层真相。
+2. 怎样把公开镜像里的证据压成稳定的证据阶梯，而不是把 README、schema、注册表、当前真相候选、消费者子集、热点文件和缺口脑补成同一层真相。
 3. 为什么“大文件”必须区分为合法复杂度中心和散落式复杂性，而不是一律判坏。
 4. 为什么源码质量必须同时审读 `dependency honesty` 与 `temporal honesty`。
 5. 怎样把这套证据分级方法迁移到别的 agent runtime 研究和代码评审中。
@@ -27,7 +27,13 @@
 
 如果只先记公开镜像的源码质量前门顺序，也只记这条：
 
-- `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+- `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+
+这里还应先多记一句：
+
+- 文件名保留旧词只是为了兼容检索；正文判断一律只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`。
+- 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航、跳转关系与其他编排说明都不参与源码质量结论。
+- 若 sole writer、writeback seam 与 freshness gate 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
 
 这条线最短的 reject trio 也只认：
 
@@ -35,7 +41,20 @@
 2. `recovery-sovereignty leak`
 3. `surface-gap blur`
 
+这里还应再多记一句：
+
+- continuity 在公开镜像里不另立第四类证据层；它应被写进 `current-truth surface candidate`、`temporal honesty` 与 `mirror gap discipline` 的同一组降格规则。
+
 ## 1. 先说结论
+
+### Step 0. 先过 `public artifact ceiling`
+
+在公开镜像研究里，第一步不是直接进 canonical ladder 第一级，而是先承认：
+
+- public artifact 只能签它真正公开签出的东西
+- 看得见的 README、schema、registry、热点文件、投影视图与恢复资产，不自动拥有同一种签字权
+
+这一步不过，后面各级判断都会被写浅，因为你会先把“可见”误当成“已被完整证明”。
 
 更稳的公开镜像研究顺序，不是：
 
@@ -43,14 +62,21 @@
 
 而是：
 
-1. `contract truth`
-2. `registry truth`
-3. `current-truth surface truth`
-4. `consumer subset truth`
-5. `hotspot kernel truth`
-6. `mirror gap discipline`
+1. `public artifact ceiling`
+2. `contract`
+3. `registry`
+4. `current-truth surface`
+5. `consumer subset`
+6. `hotspot kernel`
+7. `mirror gap discipline`
 
-这六层必须严格分开。
+所以当公开镜像里出现 `resume path / snapshot / pointer / archive / adapter replay` 这些 continuity 线索时，更稳的默认动作不是宣布“恢复机制很成熟”，而是先问：
+
+1. 它们只是 `recovery asset` 证据，还是已经足够支持 `current-truth surface candidate`。
+2. 它们有没有越位成 present truth signer。
+3. 它们是否反而暴露了 `stale writer / stale snapshot / stale capability` 这类 temporal honesty 缺口。
+
+这七层必须严格分开。
 
 因为只有这样，你才不会把：
 
@@ -66,9 +92,10 @@
 
 在公开镜像研究里，下面这些词最容易互相挤占，必须先拆开：
 
-1. `contract truth`
+- `contract truth` 只保留为旧 alias，不再拥有单独层级。
+1. `contract`
    - 系统正式承认哪些对象、状态和动作可以存在。
-2. `registry truth`
+2. `registry`
    - 当前 build / 当前 runtime 真的注册了哪些对象。
 3. `current-truth surface`
    - 真正有资格宣布 present truth 的 sole writer / choke point / writeback seam。
@@ -87,7 +114,9 @@
 - 还不能证明时，就降格写 `current-truth surface candidate`
 - 不要反过来把所有权威入口都写成已经被完整证明的 present truth
 
-## 2. 第一级：先找 contract truth
+这一页后面的所有降格规则都建立在这三句上，而不是建立在“我很熟源码”这种阅读体感上。
+
+## 2. 第一级：先找 contract
 
 先看：
 
@@ -112,19 +141,19 @@
 
 - 局部实现
 
-## 3. 第二级：再找 registry truth
+## 3. 第二级：再找 registry
 
-contract truth 只回答：
+contract 只回答：
 
 - 系统设计空间里可能有哪些对象
 
-registry truth 才回答：
+registry 才回答：
 
 - 当前 build / 当前运行时到底注册了哪些对象
 
 `tasks.ts`、feature gate、tool pool 装配、plugin / MCP 注册表都属于这一层。
 
-如果不把它和 contract truth 分开，你最容易犯两类错误：
+如果不把它和 contract 分开，你最容易犯两类错误：
 
 1. 把“类型里声明存在”误当成“当前肯定能用”。
 2. 把“注册表里当前没开”误当成“架构上根本没有”。
@@ -172,7 +201,7 @@ contract 和 registry 都还不够。
 
 - protocol full set vs consumer subset
 
-因为协议全集里声明存在的能力，不等于每个 adapter、每个 host、每个入口都真的实现了它。`adapter subset` 只是 `consumer subset` 的一种旧写法；`worker_status / external_metadata`、resume path 与 search layer 也都在消费同一 runtime truth 的诚实子集。
+因为协议全集里声明存在的能力，不等于每个 adapter、每个 host、每个入口都真的实现了它。`worker_status / external_metadata`、resume path 与 search layer 也都在消费同一 runtime truth 的诚实子集。
 
 `bridgeMain` 明写 linear subset，remote / headless / REPL 又各有不同支持面。
 
@@ -296,36 +325,24 @@ gap discipline 的价值不是“保守一点”，而是：
 
 - 形成一套可迁移的研究协议，去稳当地审任何公开镜像
 
-## 10. 危险改动面 Atlas 模板
+## 10. 危险改动面记录模板
 
-当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一张可交接的 atlas。
+当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一份可交接的 `change-risk record`。
 
-但 `guides/` 在这里负责的是：
+`guides/` 在这里只负责 `change-risk record` 的字段与 gap note 写法，不替其他目录代写具体危险面。
 
-- atlas skeleton
-- gap note
-- handoff rule
+更稳的记录模板至少应包含下面几列：
 
-而不是直接承接 repo-specific atlas 正文。
-
-更稳的 atlas 模板至少应包含下面几列：
-
-| danger surface | protected invariant | minimum visible evidence | common misread | replay obligation | second-truth risk |
+| change-risk surface | protected invariant | minimum visible evidence | common misread | replay obligation | second-truth risk |
 |---|---|---|---|---|---|
 | `<surface>` | `<what it protects>` | `<authoritative proof>` | `<usual wrong reading>` | `<what must be replayed before changing>` | `<which stale world returns if broken>` |
 
-更稳的 handoff rule 是：
-
-1. atlas 正文默认落到最接近真相暴露面的目录。
-2. 对源码二级目录 atlas，默认正文宿主是 `api/46-50`，由 [../navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md](../navigation/35-%E6%BA%90%E7%A0%81%20Atlas%E5%AF%BC%E8%88%AA%EF%BC%9Aservices%E3%80%81tools%E3%80%81commands%20%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%E5%A6%82%E4%BD%95%E5%9B%9E%E5%88%B0%E6%9D%83%E5%A8%81%E5%85%A5%E5%8F%A3%E4%B8%8E%E6%B6%88%E8%B4%B9%E8%80%85%E8%BE%B9%E7%95%8C.md) 路由。
-3. `guides/102` 只负责交出 atlas 的列定义、gap note 写法与交接规则，不直接替 `api/46-50` 填满具体危险面。
-
 更短地说，这页真正要强迫 later maintainer 先回答的是：
 
-1. 这张 atlas 该长什么样。
+1. 这份 change-risk record 该长什么样。
 2. 哪些 gap 必须显式保留。
-3. atlas 正文应该交给哪一层。
-4. atlas 进入执行层时，哪一页只消费 `atlas_ref`，不反向承担 atlas 生产职责。
+3. 哪些 replay obligation 必须先完成。
+4. 哪些 second-truth risk 必须先点名。
 
 ## 11. 苏格拉底式检查清单
 

@@ -1,8 +1,8 @@
-# 可解释稳定性比神秘措辞更接近Prompt魔力
+# Explainability 只是 Prompt 的诊断命名层
 
 这一章回答四个问题：
 
-1. 为什么 Claude Code 的 prompt 魔力更接近“可解释稳定性系统”，而不是“神秘措辞模板”。
+1. 为什么 Claude Code 的 prompt 效力更接近“可解释稳定性系统”，而不是“文案模板”。
 2. 为什么一个真正成熟的 prompt 系统，必须既能稳定工作，也能解释什么时候失稳。
 3. 为什么 cache break 归因、预算观测、shared prefix 与 tool ABI 稳定性应该被看成同一哲学。
 4. 从第一性原理看，什么才是最难被抄走的 prompt 能力。
@@ -24,7 +24,7 @@
 
 - `Explainability`
 
-更准确地说，Claude Code 的 prompt 魔力不是：
+更准确地说，本页不再承担 Prompt 首答，只承担 `Explainability` 这一层的诊断命名权。Claude Code 的 prompt 效力不是：
 
 - 它有一段特别厉害的 system prompt
 
@@ -41,7 +41,7 @@
 
 ## 2. 为什么 Explainability 不是可有可无的附属层
 
-如果 prompt 魔力主要来自措辞，那么最重要的问题应该是：
+如果 prompt 效力主要来自措辞，那么最重要的问题应该是：
 
 - 这段话写得够不够强
 
@@ -83,7 +83,7 @@ Claude Code 更接近另一种逻辑：
 
 那么 prompt 就从：
 
-- 神秘配方
+- 不可解释配方
 
 升级成：
 
@@ -113,9 +113,30 @@ tool pool 顺序与过滤逻辑稳定，意味着：
 
 - explainability 不只解释系统文本，还解释模型当前到底看见了什么行动世界
 
+### 4.4 Prompt 证据可采四问
+
+如果继续把 Explainability 的 standing 再压成最小 admissibility 纪律，也只该先问四件事：
+
+1. `belonging`
+   - 这份证据到底属于哪条 request / lineage，还是只是相邻 consumer 的截图或 prose。
+2. `admissibility`
+   - 它是否经过了同一条 contract / schema / projection 的合法入口，而不是只看起来像同一现场。
+3. `adjudicative scope`
+   - 它只能补证、命名，还是已经有资格改判 `winner / boundary / qualification`。
+4. `closure effect`
+   - 它会触发继续、拒收、重入还是 reopen；若没有收口效果，就不该冒充 verdict evidence。
+
+更硬一点说，截图、summary、handoff prose 往往最多只能证明 belonging；真正能进入改判层的，仍然必须经过同一条 admissibility gate。
+
 所以这一页真正想收住的是：
 
 - Explainability 不是第二前门，而是前五层成立后的命名权
+
+更硬一点说：
+
+- `Explainability is diagnostic, not adjudicative.`
+
+它只有命名权，没有改判权；它能解释 `winner / boundary / qualification` 断在何处，但不能把已经失真的世界重新说成合法。
 
 ## 5. 这页真正要防的失真
 
@@ -134,4 +155,4 @@ tool pool 顺序与过滤逻辑稳定，意味着：
 
 ## 6. 一句话总结
 
-Claude Code 的 prompt 魔力，更接近 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 里最后一级真正成立，而不是多了一段难以言传的神秘措辞。
+Claude Code 的 prompt 效力，更接近 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 里最后一级真正成立，而不是多了一段难以复查的措辞模板。

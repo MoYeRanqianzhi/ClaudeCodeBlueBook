@@ -24,7 +24,7 @@
 3. `architecture/46-Prompt稳定性解释层：cache-break detection的两阶段诊断器.md`
 4. `architecture/54-从UI Transcript到Protocol Transcript：Prompt不是聊天记录的直接重放.md`
 5. `architecture/73-Prompt Constitution控制面：section宪法、角色主权链、合法遗忘与可观测diff.md`
-6. `philosophy/33-可解释稳定性比神秘措辞更接近Prompt魔力.md`
+6. [Explainability只是Prompt的诊断命名层](<../philosophy/33-Explainability只是Prompt的诊断命名层.md>)
 7. `philosophy/39-治理必须落到字节级确定性：上下文准入优于功能堆叠.md`
 8. `philosophy/60-Prompt不是文案，而是受治理的Prompt Constitution.md`
 

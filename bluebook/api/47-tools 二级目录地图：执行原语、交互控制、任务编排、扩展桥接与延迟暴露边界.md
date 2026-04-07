@@ -1,4 +1,4 @@
-# Tools 二级目录 Atlas：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界
+# Tools 二级目录地图：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界
 
 这一章回答五个问题：
 
@@ -32,7 +32,7 @@
 
 `tools/` 不是“很多模型函数”目录，而是 Claude Code 的动作原语平面。
 
-这张 atlas 最关键的意义不是：
+这张源码地图最关键的意义不是：
 
 - 工具有多少
 
@@ -177,4 +177,4 @@
 
 ## 11. 一句话总结
 
-`tools/` 二级目录 atlas 真正统一的，不是“模型能调用哪些工具”，而是“哪些动作原语沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 被看见和被允许”。
+这页真正值钱的，不是把 `tools/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：哪些动作原语沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 被看见和被允许。

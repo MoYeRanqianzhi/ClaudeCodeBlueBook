@@ -8,6 +8,913 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README` 的长期默认 prompt-root-route-thinning language 现已继续写死：
+  - 根入口默认继续只保留 `same-world compiler` 这句 Prompt hook，不再第二次重列 Prompt formula、witness、counterfeit 与 reject signal
+  - 顶层判断与 `first-reject path` 默认继续回 `philosophy/84`
+  - same-world witness、实现顺序与 `continue qualification` 默认继续回 `guides/51`
+- `bluebook/architecture/20` 与 `bluebook/architecture/33` 的长期默认 source-quality-aura-demotion language 现已继续写死：
+  - 两页默认继续不从“先进感 / 高级感”起题，而先问公开证据能否证明 current-truth protection
+  - `20` 默认继续把 `contract / runtime kernel / cache boundary / recovery semantics` 写成结构质量入口，而不是工程气质入口
+  - `33` 默认继续把公开镜像能证明的东西收回结构质量与 present-truth discipline，不把它夸大成完整闭环已证实
+- `bluebook/03` 与 `bluebook/09` 的长期默认 prompt-constitutional-demotion language 现已继续写死：
+  - `03` 默认继续只保留 `same-world compiler` 这句制度哲学 hook，不再第二次重列 Prompt `frontdoor order / canonical witness order / reject trio`
+  - `09` 默认继续只保留三张图宪法层的 Prompt 总钩子；更细的 `frontdoor order / canonical witness order / implementation order` 都继续回 `84 / guides/51`
+  - `09` 默认继续不在总论页库存化 Prompt object list，只承认 compile inputs 与 verify witnesses 两类对象必须同时存在
+- `bluebook/philosophy/README` 的长期默认 source-quality-frontdoor-singularity language 现已继续写死：
+  - 源码质量线默认继续只认 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - `future maintainer = formal consumer` 默认继续只配解释 `consumer subset + mirror gap discipline`，不再和 ladder 并列成第二条前门
+  - 源码质量线默认继续先过 `guides/102` 的证据上限，再进 `86 / 87`
+- `bluebook/security/README` 与 `bluebook/risk/README` 的长期默认 governance-handoff-thinning language 现已继续写死：
+  - `security/README` 默认继续用 runtime readback consumer / continuation consumer 这类抽象角色，不再让具体命令名或 UI noun 冒充治理主语
+  - `security/README` 与 `risk/README` 默认继续把 route table 压成 object handoff，不再在前门库存化目录范围、推荐入口或大段分流清单
+  - `risk/README` 默认继续只保留治理前门、playbook handoff 与编号段下潜顺序，不再把推荐入口列表写回首页
+- `bluebook/navigation/15` 与 `bluebook/philosophy/README` 的长期默认 prompt-order-split language 现已继续写死：
+  - `15` 默认继续把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 只写成 `first-reject order`，把六个 canonical ref 只写成 witness order，不再混称为同一条 chain
+  - `philosophy/README` 默认继续只保留 `same-world compiler` 这句 Prompt hook；更细的 formula、witness 与 reject trio 都继续收回 `84`
+  - `philosophy/README` 默认继续允许只追 Prompt canonical source 的读者直接进入 `84`，不必先在其它高阶前门里重复找 Prompt 首答
+- `bluebook/06` 与 `bluebook/navigation/41` 的长期默认 prompt-speaking-right-thinning language 现已继续写死：
+  - `06` 默认继续只解释 Prompt 失稳为什么发生，不在本章第二次重列 `philosophy/84` 已固定的 canonical reject trio
+  - `41` 默认继续只消费 `same-world compiler` 这类 shared formula，不在哲学导航页重写 Prompt `first-reject order`
+  - `41` 默认继续不库存化列出 Prompt / 结构专题链路，也不夹带文档 choreography 或目录责任矩阵；它只说明这些页各自承接的 question domain，与“第一次定义权唯一”的分工原则
+- `bluebook/README` 与 `bluebook/risk/README` 的长期默认 governance-frontdoor-order-realignment language 现已继续写死：
+  - 治理总入口默认继续与 `09 / 15` 对齐回 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
+  - `risk/README` 默认继续只读取 `product promise readback / reopen qualification / evidence binding` 这组用户侧对象，不在 README 里第一次改判治理主键、truth-surface 或 signer ladder
+- `bluebook/userbook/README`、`bluebook/risk/README` 与 `bluebook/README` 的长期默认 user-facing-frontdoor-subjects language 现已继续写死：
+  - 用户侧前门默认继续先定工作对象、readback object 与控制面段位，不先按能力入口、账号地区或入口路径起题
+  - `userbook/README` 默认继续把“先定题，不先找页”前推到开场句，不再让入口能力表重新抢主语
+  - `risk/README` 默认继续把账号、地区、入口与支持链路降到编号页样貌层，不再在 README 里充当并列 bucket
+  - 根 README 默认继续把任何 user-facing bucket 降格成收费链的读回助记，不再把它们写成治理前门里的第二套主题
+- `bluebook/06` 的长期默认 prompt-demystification-scope-split language 现已继续写死：
+  - `6.32` 默认继续只负责 `same-world compiler` 主句，不再和 `6.45 / 6.57` 平行争 Prompt 魔力首答
+  - `6.45` 默认继续只补 `protocol surface / action grammar / delta discipline`
+  - `6.57` 默认继续只补 Constitution 的 speaking-right 边界
+- `bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-witness-order-alignment language 现已继续写死：
+  - Prompt 导航页默认继续把 `stable prefix` 与 `continue qualification verdict` 明写进 witness chain，不再让 `06 / 15 / 41` 在同一条链上使用不同粗细的 object order
+  - `15 / 41` 默认继续把 Prompt 线写成 canonical object chain 与 first-reject order 的分工，不再让 later maintainer 自己推断哪些 witness 是正文对象、哪些只是压缩简称
+- `bluebook/06` 的长期默认 prompt-second-frontdoor-convergence language 现已继续写死：
+  - `06` 默认继续把 `2.10`、开头魔力主句与 `7.4` 判据卡共同回绑同一条 `same-world compiler` contract
+  - Prompt 第二前门默认继续只保留一条主解释：`Authority / Boundary / Transcript / Lineage / Continuation` 是 contract，`section registry / stable boundary / protocol transcript / message lineage / continue qualification verdict` 是 witness
+- `bluebook/philosophy/README` 的长期默认 philosophy-readme-frontdoor-thinning language 现已继续写死：
+  - 哲学 README 默认继续只保留三条母线的最短前门和最短分流，不再保留第二套源码质量资本表或过厚 route table
+  - Prompt 线默认继续写成“先到 84，机制看 81，时间轴看 63，诊断命名看 33；其余只作补充侧门”
+  - 治理线默认继续写成“先到 85；机制拆解再看 64 / 82 / 83 / 100”
+  - `06 / 15 / 41` 默认继续拥有解释层资本表、苏格拉底审读与第一性原理总收束的主权
+- `bluebook/06` 与 `bluebook/README` 的长期默认 reject-signal-hardening language 现已继续写死：
+  - Prompt 判据默认继续把 `stable prefix / protocol transcript / continue qualification verdict` 与 `Authority -> Boundary -> Transcript -> Lineage -> Continuation` 一起写出，不再让 witness chain 停在过薄抽象层
+  - 根入口默认继续把 `layout-first drift` 直接写成“源码质量判断被目录观感冒充”，不再把“先进性结论”保留为入口记忆钩子
+- `bluebook/guides/102` 与 `bluebook/philosophy/README` 的长期默认 source-quality-alias-demotion language 现已继续写死：
+  - 源码质量入口默认继续只暴露 canonical ladder，不显式保留 `authoritative surface / adapter subset / hotspot gap discipline` 或其它压缩话语作为第二套 frontdoor
+  - `guides/102` 默认继续把旧 alias 完全降到检索兼容层；正文只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`
+  - `philosophy/README` 默认继续把源码质量解释层压缩句降到解释层，不再和 canonical ladder 并列抢入口主语
+- `bluebook/risk/README` 的长期默认 risk-frontdoor-readback language 现已继续写死：
+  - 风控入口默认继续先说 `product promise readback / reopen qualification / evidence binding` 这组用户侧读回对象，不先说账号、入口、恢复、地区场景这些并列主题桶
+  - `risk/README` 默认继续把误伤、恢复与入口差异写成读回对象上的结算差异，不再把场景桶写成前门主语
+- `bluebook/architecture/README` 的长期默认 architecture-readme-route-demotion language 现已继续写死：
+  - 架构入口默认继续先说最短证据入口与缺对象跳转，不先说推荐路径表
+  - `architecture/README` 默认继续把 later maintainer 的第一动作写成“先定对象和 first reject signal”，不写成“先挑阅读路径”
+- `bluebook/README` 与 `bluebook/userbook/README` 的长期默认 entry-governance-ui-demotion language 现已继续写死：
+  - 总入口默认继续先说治理顺序与节点判断，不先枚举 approval、status、usage、compact、export、cleanup result 这组界面名词
+  - `bluebook/README` 默认继续把治理 failure order 写成 `pricing-right / truth-surface / cleanup authority` 这组节点失效，不再让 UI noun 或 ABI noun 抢入口记忆
+  - `userbook/README` 默认继续把治理界面、状态读数、压缩入口、导出入口与收口结果词写成“只读 verdict”的二跳 consumer，不再把这些词写成控制面判断本体
+- `bluebook/philosophy/86`、`bluebook/philosophy/87` 与 `bluebook/philosophy/README` 的长期默认 source-quality-aura-demotion language 现已继续写死：
+  - 源码质量线默认继续先说 present protection、boundary provability、writeback seam、first reject path 与 refactor room，不先说“先进 / 成熟 / 很高 / 值得复制”
+  - `philosophy/86` 默认继续把苏格拉底追问写成“过去不得写坏现在是否被写成制度对象”，不再把“结构先进性”当被判对象
+  - `philosophy/87` 默认继续把启发与自校写成“复用源码判断 / 下源码质量判断”，不再写“复制成熟度 / 源码质量很高”
+  - `philosophy/README` 默认继续把源码质量失败信号回绑 canonical ladder 与 writeback seam / retreat layer，不再回到 aura 压缩句
+- `bluebook/security/README`、`bluebook/architecture/83`、`bluebook/philosophy/85` 与 `bluebook/risk/README` 的长期默认 governance-ui-noun-demotion language 现已继续写死：
+  - 治理线默认继续先说 canonical node、asset 与 authority 的失效，不先背 status、usage、approval、rollback、cleanup result 这组 UI noun / result wording
+  - `security/README` 与 `risk/README` 默认继续把状态、诊断、压缩、导出入口写成“只读 verdict”的 consumer，不再逐项枚举命令名当记忆钩子
+  - `architecture/83` 默认继续把 failure order 写成 canonical node/asset/authority 的结算逻辑，不再把 `reject / degrade / halt / cleanup-before-resume / human-fallback` 写成 owner ladder
+  - `philosophy/85` 默认继续把执行层 status/approval/rollback/handoff 写成 canonical chain 的接口名，不再把 visible noun crosswalk 写成第二层前门
+- `bluebook/06` 的长期默认 prompt-magic-witness-chain language 现已继续写死：
+  - Prompt “为什么有魔力”的默认首答继续固定为 `same-world compiler = Authority -> Boundary -> Transcript -> Lineage -> Continuation`，不再拆成多组相近的结果词去魅标题
+  - `06` 默认继续把 `2.10`、`6.32 / 6.45 / 6.54 / 6.57` 与 `7.4` 共同回绑同一条 witness chain，而不是让各节各自发明 Prompt 强度解释
+  - `Explainability` 默认继续只负责命名失稳，不负责补写世界或替代 `continue / reject` 判决
+- `bluebook/philosophy/87` 与 `bluebook/userbook/04` 的长期默认 directory-not-owner language 现已继续写死：
+  - 目录结构、专题分工与首页设计默认继续只做承载纪律，不再充当源码质量判断对象
+  - `philosophy/87` 默认继续把文档分工写成“同一判断只允许由同一证据层首答”，不再把目录结构本身写成高阶质量论题
+  - `userbook/04` 默认继续把专题首页价值写成工作对象翻译、最小顺序提示与退出条件，不再先说“目录优化”
+- `bluebook/security/README`、`bluebook/architecture/83`、`bluebook/philosophy/85` 与 `bluebook/risk/README` 的长期默认 governance-bucket-to-chain language 现已继续写死：
+  - 治理长文与专题页默认继续先说 canonical chain 与执行层投影，不先把动作、空间、用户侧主题对象写成 owner bucket
+  - `architecture/83` 默认继续把 `Narrow / Later / Outside` 写成 chain 导出的执行后果，不再写成第一主语
+  - `philosophy/85` 默认继续把动作、可见性、时间与恢复收回收费节点与执行层投影，不再把“空间”或“权限 + 压缩”写成高阶入口
+  - `risk/README` 默认继续把风控写成 canonical chain 的用户侧读回顺序，不再把身份、组织、入口与恢复写成新的治理主语
+- `bluebook/06` 的长期默认 prompt-longform-result-word language 现已继续写死：
+  - 长文里的 Prompt / 治理 / 源码质量总结句默认继续与前门页共用 `same-world test / decision window / 源码质量判断` 这组主语，不再先用“Prompt 效力 / 看起来更有效 / 源码先进性 / 拦得更严”
+  - `06` 默认继续把 Prompt 长文 summary 写成“为什么能先证明同一世界”，不再把结果词写成长文的第一回答
+  - `06` 默认继续把自校问题写成“是否退回结果词”，而不是自己重复结果词作为 owner 句
+- `bluebook/architecture/README`、`bluebook/philosophy/86`、`bluebook/philosophy/87` 与 `bluebook/guides/102` 的长期默认 source-quality-evidence-layer wording 现已继续写死：
+  - 源码质量线默认继续先说证据层职责，不先说地图宿主、目录跳转或 first-answer owner 竞争
+  - `philosophy/86` 默认继续把 canonical ladder 写成 later maintainer 必须遵守的证据顺序，不再写成另一套 frontdoor 命名包装
+  - `philosophy/87` 默认继续把目录自校收回 `contract / method / verdict / sample / memory` 这组证据职责，不再用 atlas、route 或 next-hop 组织源码质量判断
+  - `guides/102` 默认继续把 `authoritative surface / adapter subset / hotspot gap discipline / contract truth` 写成兼容标签或旧 alias；正文 owner 仍是 canonical ladder、降格规则与 `change-risk record`
+- `bluebook/philosophy/README`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-frontdoor-speaking-right language 现已继续写死：
+  - Prompt 高阶前门默认继续先问“谁定义世界、模型实际消费什么、同一身份如何延续、继续资格由谁裁定”，不先问 Prompt 是否更强、更有效或 instruction 是否更长
+  - `philosophy/README` 默认继续把 Prompt 入口写成“世界如何合法进入模型”，不再让 `world entry / request assembly / six-stage assembly chain` 抢第一主语
+  - `navigation/15` 与 `navigation/41` 默认继续拒收与 witness order 竞争的 verb formula；`compile -> ... -> explain` 只配做解释层压缩句，不配抢 first-answer speaking right
+- `bluebook/security/README`、`bluebook/architecture/83`、`bluebook/philosophy/85` 与 `bluebook/risk/README` 的长期默认 governance-result-word-demotion language 现已继续写死：
+  - 安全/省 token/风控高阶前门默认继续先说治理顺序，不先说“更安全 / 更省 / 更严”
+  - `architecture/83` 与 `philosophy/85` 默认继续把前门问句回绑 `decision window / continuation pricing`
+  - `risk/README` 默认继续把自己写成同一治理收费链的用户侧读法，不再写成另一条治理链
+- `bluebook/architecture/README`、`bluebook/philosophy/86` 与 `bluebook/philosophy/87` 的长期默认 source-quality-frontdoor-owner-language 现已继续写死：
+  - 源码质量高阶前门默认继续先说“源码质量判断”，不先说“源码先进性”
+  - `philosophy/86` 默认继续把外层证据路径写成 canonical ladder，不再写成另一条“证据梯度” owner 句
+  - `architecture/README` 与 `philosophy/87` 默认继续把前门判断回绑 `one writable present` 与 later maintainer `reject`，不让评价词先行
+- `bluebook/06`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-summary-object-order language 现已继续写死：
+  - 高阶前门 summary 默认继续先讲对象顺序，再讲效果观感
+  - 高阶前门默认继续拒收先说“更强 / 更省 / 更先进”，再补 `same-world test / decision window / current-truth protection`
+  - `06` 默认继续把三条第一性问题写成对象顺序，`15 / 41` 默认继续把 route question 写成对象是否成立，而不是结果词是否讨喜
+- `bluebook/06`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-frontdoor-first-principles-summary language 现已继续写死：
+  - 高阶前门 summary 默认继续先说 `same-world test / decision window / current-truth protection`
+  - 高阶前门默认继续拒收先用“更强 / 更省 / 更先进”组织三条母线，再回头补对象链
+  - `navigation/15 / 41` 默认继续把 prompt 追问写成 `instruction 更长 != same-world test 更稳`，把治理追问写成 `decision window / continuation pricing`，把源码质量追问写成 `current-truth protection`
+- `bluebook/security/appendix/87` 与 `bluebook/security/appendix/159` 的长期默认 governance-appendix-owner-demotion language 现已继续写死：
+  - `appendix/87` 默认继续只给 projection consumer 提供诚实字段，不代签 `settled_price`、`shared_consumer_surface` 或 current truth
+  - `appendix/159` 默认继续只解释 reader-specific reprojection grammar，不代签 reintegrated truth owner
+  - 治理附录页默认继续拒收“谁拥有 current truth / 谁在定义 verdict object”这类 owner 句，相关主语默认继续回 `security/README` 与 `api/85 / api/94`
+- `bluebook/api/30`、`bluebook/api/README` 与 `bluebook/api/46-48` 的长期默认 api-map-owner-split language 现已继续写死：
+  - 地图页默认继续只负责把 later maintainer 拉回 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - 地图页默认继续拒收把自己写成“源码真相梯度 / 第二条梯度公式”的 owner 句
+  - `api/README` 默认继续把目录级入口句写成“回到 canonical ladder”，不再把地图页说成 ladder 本身
+- `bluebook/api/30`、`bluebook/api/README` 与 `bluebook/api/46-48` 的长期默认 api-canonical-ladder-hardening language 现已继续写死：
+  - `api/30` 默认继续把“源码真相梯度”收回 `源码真相顺序 / canonical ladder`
+  - `api/README` 默认继续把目录级地图入口句直接回绑 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - `api/46-48` 的总结句默认继续承认自己只是把 later maintainer 拉回同一条 canonical ladder，不再把“二级目录地图”写成另一条结论主语
+- `bluebook/navigation/05`、`bluebook/navigation/06` 与 `bluebook/navigation/08` 的长期默认 prompt-navigation-visible-label language 现已继续写死：
+  - 高流量导航页默认继续用可见标题链接引向 `57 / 33`，不再直接打印 raw slug
+  - `navigation/06` 的 prompt 入口默认继续写成 `prompt 效力不在措辞`，不再回退到 `prompt 魔力` framing
+- `bluebook/api/85`、`bluebook/api/94`、`bluebook/playbooks/66` 与 `bluebook/security/README` 的长期默认 governance-protocol-owner-hardening language 现已继续写死：
+  - `settled_price` 默认继续只写成 `continuation pricing` 的 runtime witness，不再写成 usage 图表好转感或“感觉还能继续”
+  - `shared_consumer_surface` 默认继续只写成不同 reader 对同一 verdict object 的只读消费面，不再写成共享文案或共享 authority
+  - projection 越位默认继续直接落回 `mode_projection_as_authority / window_projection_not_authority` 这类 reject，字段化与重投影分层默认继续回 `appendix/87 / appendix/159`
+- `bluebook/navigation/35`、`bluebook/api/46`、`bluebook/api/47`、`bluebook/api/48`、`bluebook/02`、`bluebook/api/README` 与 `docs/development/01` 的长期默认 api-atlas-route-slug language 现已继续写死：
+  - `navigation/35` 的正式 route slug 默认继续固定为 `源码地图导航：services、tools、commands 二级目录如何回到权威入口与消费者边界`
+  - `api/46-48` 的正式 route slug 默认继续固定为各自的 `二级目录地图`
+  - `02`、`api/README` 与 `01-章节规划` 默认继续直连这组新 slug，不再通过旧 `Atlas` target 泄露旧路径
+- `bluebook/philosophy/81`、`bluebook/philosophy/84`、`bluebook/philosophy/63`、`bluebook/philosophy/README`、`bluebook/navigation/03`、`bluebook/guides/99` 与 `docs/development/01` 的长期默认 prompt-frontdoor-route-slug language 现已继续写死：
+  - `81` 的正式 route slug 默认继续固定为 `请求编译链：可缓存、可转写、可继续`
+  - `84` 的正式 route slug 默认继续固定为 `世界如何合法进入模型：request assembly 与 six-stage assembly chain`
+  - `63` 的正式 route slug 默认继续固定为 `Prompt 时间轴：先规定继续资格，再谈摘要连续性`
+  - `philosophy/README`、`navigation/03` 与 `guides/99` 默认继续直连这组新 slug，不再通过旧 `Prompt魔力` target 泄露旧路径
+- `bluebook/philosophy/57`、`bluebook/philosophy/33`、`bluebook/navigation/05`、`bluebook/navigation/06`、`bluebook/navigation/08` 与 `docs/development/01` 的长期默认 prompt-philosophy-slug language 现已继续写死：
+  - `57` 的正式文件名默认继续与 H1 对齐为 `Transcript、Lineage与Continuation如何组成协作接口`
+  - `33` 的正式文件名默认继续与 H1 对齐为 `Explainability只是Prompt的诊断命名层`
+  - 高流量导航页与规划清单默认继续同步新文件名，不再暴露旧 `Prompt魔力` slug
+- `bluebook/security/README`、`bluebook/risk/README`、`bluebook/userbook/README` 与 `bluebook/README` 的长期默认 governance-bucket-split language 现已继续写死：
+  - `Export` 默认继续只写成 `Outside` handoff surface，不再并回 continuation consumer
+  - `risk/README` 默认继续把 `结算面 / consumer` 收回用户侧判断对象与共同时间轴
+  - `userbook/README` 默认继续把根角色写成判断与二跳，不先按 bucket 自我分类
+  - 根 `README` 默认继续把 `mode / usage` 与 `compact / default continue` 拆成不同类的替身
+- `bluebook/navigation/15`、`bluebook/navigation/41`、`bluebook/navigation/README` 与 `bluebook/02` 的长期默认 prompt-slug-alignment language 现已继续写死：
+  - 两条高阶前门默认继续把 slug 收回 `请求装配控制面 / 统一定价治理 / 当前真相保护`
+  - 高流量入口页默认继续同步这两条新 target，不再暴露旧 `Prompt魔力 / 源码先进性` 路径
+- `bluebook/02`、`bluebook/api/README`、`bluebook/navigation/35` 与 `bluebook/api/48` 的长期默认 atlas-route-residual language 现已继续写死：
+  - 高流量 route/index 页默认继续把 `Atlas / atlas 原则` 收回 `源码地图 / 二级目录地图 / 源码地图原则`
+  - `api/48` 正文默认继续拒收 `命令 atlas` 这类单句 residual
+  - 这四页默认统一跟随 `guides/102 / navigation/35 / api/46-48` 的 locator 话语，不再在入口层回潮 atlas 命名
+- `bluebook/security/README` 与 `bluebook/playbooks/66` 的长期默认 governance-execution-bridge language 现已继续写死：
+  - `security/README` 默认继续把 `later maintainer 与 user-facing 共用顺序 / no user-side settlement right` 收回 `跨宿主对照顺序 / no user-side mechanism override`
+  - `playbooks/66` 默认继续把 `host consumption card / 投影` 收回 `治理执行卡 / 可见读面`
+  - 这两页默认统一拒收执行桥接词再次冒充治理 speaking right
+- `bluebook/09` 与 `bluebook/architecture/83` 的长期默认 governance-readback-demotion language 现已继续写死：
+  - 治理总图与机制页默认继续把 `projection / 计价面 / 清算面` 收回 `runtime readback / 收费节点 / 收口节点 / 可见替身`
+  - 这两页默认统一拒收 bridge wording 再次冒充 canonical chain 正式节点
+- `bluebook/api/46`、`bluebook/api/47` 与 `bluebook/api/48` 的长期默认 atlas-label-propagation language 现已继续写死：
+  - 下游 API atlas 页默认继续把 `二级目录 Atlas / 这张 atlas / 二级目录 atlas` 收回 `二级目录地图 / 这张源码地图 / 二级目录地图`
+  - 这三页默认统一跟随 `guides/102 / navigation/35` 的 locator 话语，不再自行保留 atlas 前门调门
+- `bluebook/guides/102` 与 `bluebook/navigation/35` 的长期默认 atlas-locator-demotion-2 language 现已继续写死：
+  - `guides/102` 默认继续只写 canonical ladder 与降格规则，不再用 `canonical rung / atlas 正文` 组织术语
+  - `navigation/35` 默认继续只写源码地图 route page，不再写成 atlas projection page
+  - 这两页默认统一拒收 atlas、projection 与 rung 再次越位成源码质量线前门
+- `bluebook/risk/README` 与 `bluebook/philosophy/85` 的长期默认 governance-recovery-bridge language 现已继续写死：
+  - `risk/README` 默认继续只写 `product promise / reopen qualification / evidence binding` 这组用户侧前门，不再写成 `用户侧结算面 / 结算权`
+  - `philosophy/85` 默认继续把 approval、usage、cleanup result 与恢复流程写成收费链上的 `projection / consumer`
+  - 这两页默认统一拒收 user-facing 读法再次越位成治理 speaking right
+- `bluebook/philosophy/README`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 route-shorthand-demotion language 现已继续写死：
+  - 高流量入口句默认继续把 `Prompt 效力 / 安全省 token / 源码先进性` 收回 `请求装配 / 统一定价治理 / 当前真相保护`
+  - 这三页默认统一拒收 route 层再次用结果词主语组织三条 canonical 母线
+- `bluebook/navigation/04`、`bluebook/navigation/README` 与 `bluebook/philosophy/87` 的长期默认 directory-constitution-demotion-2 language 现已继续写死：
+  - `navigation/04` 默认继续只写 question-based next-hop，不再正文式分配各目录职责
+  - `navigation/README` 默认继续只约束 `navigation/` 自己不越位，不再对“某个 README”立通用法
+  - `philosophy/87` 默认继续只保留“用证据梯度审目录是否混层”的提醒，不再重写目录分工链
+  - 这三页默认统一拒收 route 页与论文页再次长成第二套目录宪法
+- `bluebook/philosophy/22`、`bluebook/navigation/05` 与 `bluebook/security/README` 的长期默认 governance-bridge-demotion language 现已继续写死：
+  - 治理高流量前门默认继续把 `安全 / 成本 / 体验` 写成统一治理收费链的外部投影，不写成三项目标或并列主语
+  - `philosophy/22` 默认继续把 H1、章节名与总结句收回 `扩张定价不是三项目标权衡，而是同一条治理收费链`
+  - `navigation/05` 与 `security/README` 默认继续同步使用 `扩张定价为什么会投影成安全、成本与体验` 这一类 route label
+  - 这三页默认统一拒收 audience bridge 主语再次越位成 canonical pricing chain 的 visible label
+- `bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-lexicon-cleanup language 现已继续写死：
+  - Prompt 反例句默认继续把 `更会说 / 更像专家 / Prompt 强度` 收回 `文风更顺滑 / Prompt 效力`
+  - `winner / 争主权` 默认继续收回 `world-definition source / 首答来源 / 改判权`
+  - 这三页默认统一拒收反证句、坏解法句与设计启发句再次借用 enchantment 或 signer 词感
+- `bluebook/01`、`bluebook/02` 与 `bluebook/philosophy/76` 的长期默认 source-map-locator-demotion language 现已继续写死：
+  - 源码地图页默认继续只写成 repo-specific 定位与跳转，不再写成 map projection / atlas formula
+  - 使用层默认继续把 `world-defining winner / canonical rung` 收回 `world-definition source / canonical ladder`
+  - `philosophy/76` 默认继续把 `源码 atlas / Prompt 魔力 / atlas rung` 收回 `源码地图 / Prompt 效力 / 地图定位规则`
+  - 这三页默认统一拒收 atlas、projection 与 rung 再次越位成源码质量线第二前门
+- `bluebook/userbook/README`、`bluebook/userbook/05/03` 与 `bluebook/userbook/05/06` 的长期默认 userbook-frontdoor-buckets language 现已继续写死：
+  - `/status / /doctor / /usage` 默认继续只写成 runtime projection
+  - `Compact / Resume / Memory` 默认继续只写成 continuation consumer
+  - `Export` 默认继续只写成 `Outside` handoff surface
+  - `cleanup result` 默认继续只写成收口结果词
+  - `reopen` 默认继续只写成 cleanup 之后的用户侧恢复链
+  - 这三页默认统一拒收 projection、consumer、handoff、result word 与 reopen 再次互借 verdict 话语
+- `bluebook/navigation/05`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-route-framing language 现已继续写死：
+  - 高流量导航页默认继续把 `Prompt 魔力` 收回 `Prompt 效力 / 稳定有力`
+  - 导航页默认继续把 `神秘文案` 收回 `文案归因`
+  - route 页的长期默认首问现在统一拒收 enchantment framing 先于 mechanism framing
+- `bluebook/README`、`bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-title-lede-de-enchantment-3 language 现已继续写死：
+  - Prompt opener 里的 `魔力首先 / 其次 / 再次 / 最后` 默认继续统一收回 `效力`
+  - Prompt 顶层标题、导语、backlink 与 opener 现在默认继续保持同一条去魅调门
+- `bluebook/README`、`bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-title-lede-de-enchantment-2 language 现已继续写死：
+  - Prompt 线默认继续把标题和导语里的 `魔力` 收回 `效力`
+  - backlink 默认继续把 `owner / first-answer law` 收回 `canonical source / 首答来源`
+  - Prompt 顶层话语的长期默认写法现在统一拒收 headline-level enchantment 和 page-ownership 回潮
+- `bluebook/philosophy/76` 的长期默认 source-map-question-demotion language 现已继续写死：
+  - `bluebook/philosophy/76` 默认继续把 later maintainer 的问题模板写成 authority/object 问法，而不是目录先行问法
+  - 目录在 `76` 里的长期默认角色只是 locator，不是 authority 单位
+  - `76` 的长期默认写法现在统一拒收“哪个目录在说话”式首答模板
+- `bluebook/userbook/05/03` 与 `bluebook/userbook/05/06` 的长期默认 userbook-03-06-fail-route language 现已继续写死：
+  - `05/03` 默认继续把 failed `resume` 的去向写回 `risk/README` 与 reopen/playbook
+  - `05/06` 默认继续把 `/status / /doctor / /usage` 写成 runtime evidence surface，不写成 verdict source
+  - `05/03` 与 `05/06` 的长期默认写法现在统一拒收“叶子页自己收口恢复链”的残余
+- `bluebook/navigation/04` 的长期默认 navigation-04-route-demotion language 现已继续写死：
+  - `navigation/04` 默认只做 route pointer，不再自写成 `speaking rights / appeal chain` 的唯一 charter
+  - atlas / canonical rung / repo-specific 正文 / route dispute 默认分别回 `guides/102 / api/46-50 / navigation/35 / 各目录 README`
+  - `navigation/04` 的长期默认写法现在统一拒收 route 页直接代签目录宪法
+- `bluebook/security/README`、`bluebook/risk/README`、`bluebook/userbook/05-README`、`05/03` 与 `05/06` 的长期默认 projection-consumer-verdict-handoff language 现已继续写死：
+  - `/status / /doctor / /usage` 默认继续写成 runtime projection
+  - `Compact / Resume / Memory / Export` 默认继续写成 continuation consumer
+  - `truth-surface -> decision window -> durable-transient cleanup` 默认继续写成真正的 verdict 链
+  - `signer + evidence + reopen` 默认继续写成用户侧恢复链
+  - 这五页默认统一拒收 projection、consumer、verdict、reopen 再次混成一个总桶
+- `bluebook/userbook/README` 的长期默认 userbook-frontdoor-demotion language 现已继续写死：
+  - `userbook/README` 默认只复述 root / `09` 已承认的用户侧治理顺序
+  - `userbook/README` 默认只翻 `user-visible consumer truth`，不补签 runtime-core 缺口
+  - `userbook/README` 默认把覆盖范围写成对象范围，不写成系统首答权
+  - userbook 根前门的长期默认写法现在统一拒收“第二蓝皮书”式越位
+- `bluebook/README`、`bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-wording-de-enchantment-2 language 现已继续写死：
+  - Prompt 线默认继续把 signer-like 的 `Constitution / 法律 / delegated world / truth` 词收回 `order / runtime asset / delegated context / projection`
+  - `bluebook/philosophy/84` 默认继续把世界进入模型写成 authority chain 下的可采顺序，而不是抽象立法主语
+  - `bluebook/philosophy/81` 默认继续把 stable-prefix、tool ABI 与 continue qualification 写成 runtime order / runtime asset / qualification exposure
+  - `bluebook/06` 默认继续把 display / UI / handoff 相关词写成 projection，不再写成 truth co-signer
+  - Prompt 线的长期默认去魅写法现在统一拒收 signer-feeling 过强的 terminology 回潮
+- `bluebook/philosophy/87` 的长期默认 directory-constitution-demotion language 现已继续写死：
+  - `bluebook/philosophy/87` 默认只提供源码质量式目录自校，不再替蓝皮书直接分配目录 speaking rights
+  - 目录级 `speaking rights / appeal chain` 默认统一回 `navigation/04` 与各目录 README
+  - `philosophy/87` 的长期默认写法现在统一拒收源码质量论文页直接充当目录宪法
+- `bluebook/philosophy/81` 与 `bluebook/06` 的长期默认 prompt-terminology-de-enchantment language 现已继续写死：
+  - `bluebook/philosophy/81` 默认继续把已治理请求写成 `request assembly order / result`，不再写成过强的 truth-like 主语
+  - `bluebook/06` 默认继续把 `UI transcript`、display 与 handoff 相关词写成 projection，而不是 truth co-signer
+  - Prompt 线的长期默认术语现在统一拒收把 request、display、handoff 写成过强 signer 的词感
+- `bluebook/README`、`bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-owner-single-source language 现已继续写死：
+  - `bluebook/philosophy/84` 默认继续拥有 Prompt 线的 first-answer law
+  - `bluebook/README` 默认只保留 Prompt root hook，不再自命名为 `same-world compiler`
+  - `bluebook/06` 默认只做第一性追问，不再并列发布 Prompt 顶层 frontdoor law
+  - `bluebook/philosophy/81` 默认只做 cache / transcript / continuation / witness ABI 机制展开
+  - 这四页默认统一拒收非 owner 页面重新长回 Prompt 总法
+- `bluebook/security/README`、`bluebook/userbook/05-控制面深挖/README` 与 `05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md` 的长期默认 shared-frontdoor-bucketing language 现已继续写死：
+  - `security/README` 默认继续把 `/status / /doctor / /usage` 写成 runtime projection，把 `/compact / /resume` 写成 continuation consumer
+  - `bluebook/userbook/05-README` 默认继续把共享前门里的 projection bucket 与 continuation-consumer bucket 分开
+  - `bluebook/userbook/05/06` 默认继续把 `/status / /doctor / /usage` 的后半页措辞写成 evidence / pressure / drift，不再写成准 signer 或准 gate
+  - 这三页默认统一拒收把 `/compact` 重新降成观察面，或把 `/usage` 重新写成 continue verdict 签发人
+- `bluebook/philosophy/76`、`bluebook/navigation/README` 与 `bluebook/guides/102` 的长期默认 source-quality-frontdoor-demotion language 现已继续写死：
+  - `philosophy/76` 默认只做 atlas / projection 暴露，不再给源码质量线另写一套 rung
+  - `navigation/README` 默认只做 route，不再在本页定义 `truth-plane order / public-evidence ceiling / continuity crosswalk`
+  - `navigation/README` 默认不再把 `philosophy/76` 写进源码质量 canonical chain
+  - `guides/102` 默认只负责 canonical rung、降格规则与 change-risk record 模板，不再宣布 atlas 宿主选择与 handoff route
+  - 这三页默认统一拒收 source-quality frontdoor 再次长回第二 authority
+- `bluebook/06`、`bluebook/userbook/05-控制面深挖/README` 与 `05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md` 的长期默认 user-facing-runtime-projection language 现已继续写死：
+  - `bluebook/06` 默认继续把治理线最小顺序写成 `governance key -> truth-surface attestation -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
+  - `bluebook/userbook/05-README` 默认继续把 `/status / /doctor / /usage` 降为相邻 projection cluster，不再允许它们另起“运行时自检控制面”
+  - `bluebook/userbook/05/06` 默认继续把 `/status` 写成 host-state projection、`/doctor` 写成 trust projection、`/usage` 写成 `decision window / continuation pricing` 的预算投影
+  - 这三页默认统一拒收把 `/status`、`/doctor`、`/usage` 写成 signer、continue verdict 或新控制面名
+- Prompt 入口层的长期默认 layering 现已继续写死：
+  - `bluebook/README` 与 `bluebook/06` 默认继续把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 写成 `frontdoor / first-reject path`，不再写成 object witness chain
+  - `bluebook/philosophy/84` 默认继续把 Prompt 最短公式拆成 `frontdoor order / same-world witnesses / action chain` 三层，而不是两层混写
+  - `bluebook/navigation/15` 默认继续拒收 `request-surface constitution / cognitive contract / byte boundary / continuation truth` 这组旧 alias 重新冒充入口层主语
+  - `bluebook/07` 默认继续把对象级顺序命名为 `Prompt same-world witness chain`
+  - Prompt 线的长期默认写法现在统一拒收把 `Authority...Explainability`、`message_lineage_ref...continue_qualification_verdict` 与 `compile -> protocolize -> preserve -> continue -> explain` 写成同一层
+- `bluebook/security/README`、`bluebook/risk/README` 与 `bluebook/userbook/05-控制面深挖/README` 的长期默认 governance-midchain language 现已继续写死：
+  - `security/README` 默认继续把机制前门写成 `pricing-right / truth-surface -> typed ask / sandbox -> decision window / continuation pricing / durable-transient cleanup`
+  - `risk/README` 默认继续把用户侧结算 route 扩成 `governance key / typed ask / decision window / continuation pricing / durable-transient cleanup / signer + evidence + reopen`
+  - `risk/README` 默认继续保留与 `security / userbook/05` 共用的三段顺序
+  - `userbook/05-README` 默认继续明确自己应与 `security` 的机制顺序、`risk` 的结算顺序同序
+  - 这三页默认统一拒收只共享长链词、不共享治理中段顺序的写法
+- `bluebook/userbook/05-控制面深挖/README` 与 `05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md` 的长期默认 user-facing-control-plane language 现已继续写死：
+  - `05-README` 默认继续把用户侧治理判断写成 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`
+  - `05-README` 默认继续把治理裁决拆成前段准入与中后段续费/清算
+  - `05/03` 默认继续把 `Compact / Resume / Memory / Export` 写成这条治理链的 continuation consumer
+  - `05/03` 默认继续把 `/usage`、status 条与 compact 成功提示降回观察面，不配自己充当治理 verdict
+  - 这两页默认统一拒收把 continuity consumer 写成独立控制面或把 `/usage / /compact` 写成治理本体
+- `bluebook/userbook/README` 与 `bluebook/risk/README` 的长期默认 user-facing-governance language 现已继续写死：
+  - `userbook/README` 默认继续把用户侧治理首答写成 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`
+  - `userbook/README` 默认继续把 `扩张或权限判错` 的最小顺序写成先判前段准入，再判中后段续费与清算
+  - `risk/README` 默认继续明确风控前门并不脱离完整治理链，只是在用户侧翻译为 `product promise / signer + evidence + reopen`
+  - `risk/README` 默认继续把最短公式的中后段写成 `decision window -> continuation pricing` 与 `durable-transient cleanup -> signer + evidence + reopen`
+  - 这两页默认统一拒收只共享结果词、不共享治理顺序的用户侧压缩写法
+- `bluebook/philosophy/87`、`bluebook/guides/102` 与 `bluebook/guides/101` 的长期默认 source-quality-deep-page language 现已继续写死：
+  - `philosophy/87` 默认继续只认 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 为源码质量深页 canonical ladder
+  - `philosophy/87` 默认继续把 `contract truth / registry truth / orchestration shell / danger surface / authoritative surface` 降回 atlas / projection / 公开镜像兼容别名
+  - `guides/102` 默认继续用 plain rung 写公开镜像证据分级，不再把 `...truth` 写成新的 canonical rung
+  - `guides/101` 默认继续把 `32` 写成 builder-facing bridge，而不是旧 atlas / projection 回修前门
+  - 这三页默认统一拒收源码质量深页里旧 truth-ladder 词重新越位
+- `bluebook/philosophy/76` 与 `bluebook/navigation/README` 的长期默认 atlas-demotion language 现已继续写死：
+  - `philosophy/76` 默认只做源码地图 projection / crosswalk，不再重签源码质量线 canonical ladder
+  - `philosophy/76` 默认继续把 atlas 专用 `truth ladder` 降回 projection 词，不再与 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 并列
+  - `navigation/README` 默认继续把当前真相线的跨目录顺序写成 `84 -> 86 / 87 -> 101 / 102 -> 76 -> api / playbooks / casebooks`
+  - 这两页默认统一拒收 atlas/projection 词重新越位成 present-truth frontdoor
+- 根 `README`、`bluebook/navigation/README`、`bluebook/userbook/README` 与 `bluebook/guides/32` 的长期默认 residual-frontdoor language 现已继续写死：
+  - 根 `README` 默认继续把治理 / 权限 / Token 问题的前门闸门写成 `先判 pricing-right / truth-surface，再决定是否需要 navigation next-hop`
+  - `navigation/README` 默认继续把 `mode / usage / approval / cleanup result` 降回“如果你还在问它们谁说了算，就说明你缺的是治理首答”
+  - `userbook/README` 默认继续把 `扩张或权限判错` 压成 `pricing-right -> truth-surface`
+  - `guides/32` 默认继续把源码质量回修顺序写成 `86 / 84 / 101 / 102 / 15 / 79 / 75`
+  - 这四页默认统一拒收 projection 词替代治理首答，以及旧 atlas/兼容桥重新接管源码质量回修顺序
+- `bluebook/09`、`bluebook/README` 与 `bluebook/navigation/15` 的长期默认 source-quality-canonical language 现已继续写死：
+  - `09` 默认继续只认 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 为第三张图 canonical formula
+  - `09` 默认继续把 `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability` 降回 crosswalk
+  - 根 `README` 默认继续保留源码质量线的 `layout-first drift / recovery-sovereignty leak / surface-gap blur`
+  - `navigation/15` 默认继续把 atlas / projection 词降回 crosswalk，不再充当前门主语
+  - 这组三页默认统一拒收源码质量线的 authority split 与 atlas 词越位
+- `bluebook/architecture/README` 与 `bluebook/philosophy/86` 的长期默认 source-quality-residual language 现已继续写死：
+  - `architecture/README` 默认继续把 `局部可反对性` 写成 later maintainer 不追全仓、不追作者也能点名越权对象与 seam
+  - `architecture/README` 默认继续拒收“目录更整齐 / 文件更小 / 注释更完整”直接冒充先进性
+  - `philosophy/86` 默认继续把 later maintainer rejectability 写成能点名越权对象与第一退回层
+  - `philosophy/86` 默认继续把 `layout-first drift` 写成源码质量 counterfeit
+  - 这两页默认统一继续把源码先进性压成 `surface -> split writeback -> fresh-read -> reject stale writer -> retreat`
+- 根 `README`、`bluebook/navigation/README` 与 `bluebook/userbook/README` 的长期默认 governance-anti-misread language 现已继续写死：
+  - 根 `README` 默认继续提醒“安全与省 token 不是两道并列题，而是同一条治理收费链的两种外观”
+  - `navigation/README` 默认继续写死“只管 route，不签 truth”
+  - `navigation/README` 默认继续把 `mode / modal / usage / token UI / default continue / rollback files` 降回 projection / suspicion trigger
+  - `userbook/README` 默认继续把 user-facing 第一问写成 `上下文送错 / 扩张或权限判错 / 旧状态污染`
+  - 这组三页默认统一拒收 `projection usurpation` 与 `route-law inflation`
+- `bluebook/README`、`bluebook/navigation/15` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 Prompt-crosswalk language 现已继续写死：
+  - 根 `README` 默认继续把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 写成 canonical object 与 counterfeit 的对照
+  - `navigation/15` 默认继续写死 Prompt shorthand 必须回绑 canonical node，并明确 `display transcript` 不得越级成 `protocol transcript` 或 `continuation verdict`
+  - `06` 默认继续保留 “Prompt 魔力” 的四条 hard claims 与四条 counterfeit test
+  - 这组三页默认统一拒收把 `systemPrompt` 文本、UI transcript、summary prose 或 handoff card 升格成 Prompt 主语
+- `bluebook/01-源码总地图`、`01-源码结构地图`、`05-功能全景与API支持` 与 `08-能力全集、公开度与成熟度矩阵` 的长期默认 atlas/root-map language 现已继续写死：
+  - `01-源码总地图` 默认只做 repo-wide map projection，不额外签 canonical ladder / current-truth verdict / product promise
+  - `01-源码结构地图` 默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
+  - `05-功能全景与API支持` 默认只列正式 surface 与代表入口，不额外改判 `current admission / product promise`
+  - `08-能力全集、公开度与成熟度矩阵` 默认只做 `existence / visibility / admission / promise` 的分层记账
+  - 这组 atlas/root-map 前门默认统一不把 continuity 升成第四类源码主题、第九类接口表面或第五条公开度轴
+  - 这组 atlas/root-map 前门默认统一继续把 deeper ladder / verdict / promise 退回控制面正文与证据层
+- Prompt 线并行研究的长期默认结论现已继续写死：
+  - Prompt 的“魔力”默认先解释成 `same-world compiler`
+  - 真正难抄走的默认不是 system prompt 文本，而是 `世界准入 -> 协议转写 -> 身份保全 -> 合法继续 -> 可解释失稳` 的运行时编译链
+  - 后续 Prompt 前门若再把“魔力”写回 secret text、长 instruction 或摘要 prose，默认按去魅失败处理
+- `bluebook/security/README`、`security/appendix/README`、`security/source-notes/README` 与 `risk/README` 的长期默认 security/risk frontdoor language 现已继续写死：
+  - `security` 默认继续先判 signer / ledger / cleanup 工作对象，再判治理收费链失真段
+  - `security/appendix` 默认只做字段 / 矩阵 / 速查核对，不额外签 signer / verdict
+  - `security/source-notes` 默认只拆单机制源码证据，不额外代签治理 verdict
+  - `risk` 默认继续先判误伤 / 恢复 / reopen / 入口差异这些用户侧工作对象，再判 `governance key / decision window / signer + evidence + reopen`
+  - 这组 security/risk 前门默认统一不把 continuity 升成第四类安全主题或第四类用户风险主题
+  - 这组 security/risk 前门默认统一继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
+- `bluebook/00-导读`、`00-总览`、`00-蓝皮书总览` 与 `02-使用指南` 的长期默认 bluebook root-frontdoor language 现已继续写死：
+  - `00-导读` 默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
+  - `00-总览` 与 `00-蓝皮书总览` 默认只做兼容跳板，不额外签 frontdoor verdict
+  - `02-使用指南` 默认也先判工作对象与控制面，再选命令/技能/工具/子代理入口
+  - 这组根入口默认统一不把 continuity 升成第四条进入主题或第四类技巧专题
+  - 这组根入口默认统一把 continuity 收回 `Continuation / continuation pricing / stable-bytes reload law` 的时间轴同题
+- `bluebook/api/README`、`guides/README`、`playbooks/README` 与 `casebooks/README` 的长期默认 evidence-layer README language 现已继续写死：
+  - `api` 默认不把 continuity 升成第四类 API 平面
+  - `guides` 默认不把 continuity 升成第四类模板域
+  - `playbooks` 默认不把 continuity 升成第四类执行手册家族
+  - `casebooks` 默认不把 continuity 升成第四类失败样本家族
+  - 这组 evidence-layer README 默认统一把 continuity 收回 Prompt `Continuation`、治理 `continuation pricing` 与当前真相收口在各自证据层上的时间轴消费者
+  - 目录证据层默认继续继承“先判母线与对象，再判 contract / template / verdict / sample”
+- `bluebook/userbook/00-阅读路径`、`02-能力地图/01-运行时主链/README`、`03-参考索引/01-命令工具/06-命令类型、执行语义与可见性索引.md`、`03-参考索引/05-任务到入口速查矩阵.md` 与 `03-参考索引/06-高价值入口运行时合同速查.md` 的长期默认 userbook residual time-axis language 现已继续写死：
+  - `00-阅读路径` 默认不把连续性与记忆专题升成独立第五主线
+  - 运行时主链 README 默认继续把 continuity 写成 `session truth -> continuation` 的恢复合同
+  - 命令类型索引默认不把 `/compact / /resume / /memory` 升成第四类命令对象
+  - 任务矩阵默认不把 continuity 任务升成第五类任务簇
+  - 高价值入口合同页默认不把 continuity 入口升成独立合同家族
+  - 这组残留页默认统一把 continuity 收回同一工作对象在时间轴上的继续、压缩、恢复与附着动作
+  - userbook 残留入口页默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
+- `bluebook/userbook/02-能力地图/02-执行与工具/README`、`03-治理与边界/README`、`04-扩展与生态/README`、`03-参考索引/01-命令工具/05-设置、状态、预算与调参入口索引.md` 与 `03-参考索引/02-能力边界/01-能力状态矩阵.md` 的长期默认 userbook mid-layer language 现已继续写死：
+  - 执行与工具 README 默认不把 continuity 升成第三条执行主线
+  - 治理与边界 README 默认不把 continuity 升成第四条治理线
+  - 扩展与生态 README 默认不把扩展面升成第四条工作主线
+  - 设置/状态/预算索引默认不把 `/usage / /extra-usage / /rate-limit-options` 升成单独预算主题线
+  - 能力状态矩阵默认不把 continuity 升成第五个状态桶
+  - 这组中层页默认统一把 continuity 收回同一工作对象在 `Continuation / continuation pricing / cleanup-before-resume` 上的时间轴
+  - userbook 中层目录优化默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
+- `bluebook/userbook/00-导读`、`00-阅读路径`、`02-能力地图/01-运行时主链/README` 与 `03-参考索引/04-功能面七分法.md` 的长期默认 userbook path/map language 现已继续写死：
+  - `00-导读` 默认不把 continuity 升成第五类读者问题
+  - `00-阅读路径` 默认不把连续性与记忆专题升成独立第五主线
+  - 运行时主链 README 默认不把 `/compact / /resume / /memory` 升成另一条运行时主线
+  - 功能面七分法默认不把 continuity 升成第九个运行时主层
+  - 这组路径页与总图页默认统一把 continuity 收回同一工作对象在 `Continuation / continuation pricing / cleanup-before-resume` 上的时间轴
+  - userbook 路径页默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
+- `bluebook/userbook/03-参考索引/01-命令工具/README`、`02-能力边界/README`、`03-技能与扩展/README` 与 `06-高价值入口运行时合同速查.md` 的长期默认 userbook tertiary-frontdoor language 现已继续写死：
+  - 命令工具索引默认不把 `/compact / /resume / /memory` 升成第四类命令家族
+  - 能力边界索引默认不把 continuity 升成第五类边界家族
+  - 技能与扩展索引默认不把扩展面升成第四条工作主线
+  - 高价值入口合同页默认不把 `/compact / /resume / /memory / /session` 升成并列功能线
+  - 这组三级入口默认统一把 continuity 收回同一工作对象在 `Continuation / continuation pricing / cleanup-before-resume` 上的时间轴动作
+  - userbook 三级目录优化默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
+- `bluebook/userbook/02-能力地图/README`、`03-参考索引/README`、`02-能力地图/05-体验与入口/README` 与 `03-参考索引/05-任务到入口速查矩阵.md` 的长期默认 userbook secondary-frontdoor language 现已继续写死：
+  - `02` 默认不把 `continuity` 升成第六张能力平面
+  - `03` 默认不把 `连续性 / 记忆 / 恢复` 升成第四类索引问题域
+  - `05-体验与入口` 默认不把会话继续/remote 接续升成第四类体验主题
+  - 任务矩阵默认只做 route，不做 truth / verdict 签字
+  - 这组二级入口默认统一把 continuity 收回同一工作对象在 `Continuation / continuation pricing / cleanup-before-resume` 上的时间轴
+  - userbook 二级目录优化默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
+- `bluebook/userbook/README`、`01-主线使用/README`、`04-专题深潜/README` 与 `05-控制面深挖/README` 的长期默认 userbook frontdoor language 现已继续写死：
+  - 根 `README` 默认不把 `continuity` 升成第四条使用主题
+  - `01` 默认不把连续性升成第六种入口
+  - `04` 默认不把连续性与记忆升成第五类工作对象
+  - `05` 默认不把 continuity 升成第四条控制面
+  - 这组 userbook 前门默认统一把 continuity 收回同一工作对象在 `Continuation / continuation pricing / cleanup-before-resume` 上的共同时间轴
+  - userbook 目录优化默认继续从“问题分型 + README 二跳”推进到“共享 first-answer order”
+- `bluebook/03`、`06` 与 `philosophy/80 / 82 / 84` 的长期默认 top-level philosophy language 现已继续写死：
+  - `03` 默认不把 `continuity` 升成第四条设计优点
+  - `06` 默认不把 `continuity` 升成第九个不可约问题
+  - `80 / 82 / 84` 默认不把 `recovery / continuation pricing / Prompt continuation` 升成三条线外的新平面
+  - 这组顶层页默认统一把 continuity 收回 `Continuation / continuation pricing / recovery non-sovereignty` 的共同时间轴
+  - 目录优化默认继续从“共享 nouns”推进到“共享 first-answer order 与 time-axis wording”
+- `bluebook/architecture/82-84` 的长期默认 continuity architecture language 现已继续写死：
+  - `82` 默认不把 `lawful forgetting / continuation object / cache-safe fork reuse` 升成第四种 Prompt 机制
+  - `83` 默认不把 `continuation pricing / durable-transient cleanup` 升成第四条治理恢复流
+  - `84` 默认不把 `四张图` 升成第四条源码质量母线
+  - 三页默认统一把 continuity 收回 `Continuation / continuation pricing / current-truth surface + recovery asset non-sovereignty` 的时间轴与切面
+- `bluebook/api/78 / 79 / 89` 的长期默认 continuity protocol language 现已继续写死：
+  - `78` 默认不把 `continuation requalification` 升成第四类 Prompt 协议块
+  - `79` 默认不把 `continuation pricing rebinding / cleanup / threshold` 升成第四条治理流程
+  - `89` 默认不把 `lineage resume` 升成第四类结构协议
+  - 三页默认统一把 continuity 收回 `Continuation / continuation pricing / lineage+anti-zombie time axis`
+- `bluebook/casebooks/73-75` 的长期默认 continuity distortion language 现已继续写死：
+  - `73` 默认不把 continuity 升成第四类 Prompt 失真家族
+  - `74` 默认不把 continuity 升成第四条治理失败流程
+  - `75` 默认不把 continuity 升成第四类结构问题
+  - 三页默认统一把 continuity 收回 `Continuation / continuation pricing / recovery asset non-sovereignty`
+- `bluebook/playbooks/77-79` 的长期默认 continuity verification language 现已继续写死：
+  - `77` 默认不把 `compact / summary / resume / handoff` 升成第四类 Prompt 机制
+  - `78` 默认不把 `compact / resume / re-entry` 升成第四条治理对象线
+  - `79` 默认不把 continuity 升成第四类执行验证主语
+  - 三页默认统一把 continuity 收回 `Continuation / continuation pricing / recovery asset non-sovereignty`
+- `bluebook/guides/99-102` 的长期默认 continuity discipline 现已继续写死：
+  - `99` 默认不把 `compact / fork / resume / handoff` 升成第四类 Prompt 机制
+  - `100` 默认不把 `compact / resume / re-entry` 升成第四条治理对象线
+  - `101` 默认不把 continuity 升成第四类源码主语
+  - `102` 默认不把 continuity 升成第四类证据层
+  - 四页默认统一把 continuity 收回 `Continuation / continuation pricing / recovery asset non-sovereignty / temporal honesty`
+- `bluebook/navigation/01-第一性原理阅读地图.md` 与 `02-能力、API与治理检索图.md` 的长期默认 continuity map 现已继续写死：
+  - `01` 默认不把 `记忆 / 恢复 / 交接` 升成第四条母线
+  - `02` 默认不把 `compact / resume / memory / handoff` 升成第四类能力平面
+  - 两页默认都先把 continuity 收回 `Continuation / continuation pricing / recovery non-sovereignty`
+  - 后续若任一地图页再把 continuity 写回独立平面，默认按地图层退化处理
+- `bluebook/navigation/05`、`15`、`41` 的长期默认 continuity rule 现已继续写死：
+  - `05` 默认拒收“把 continuity 当第四类设计对象”
+  - `15` 默认拒收“把 continuity 当第四类审读对象”
+  - `41` 默认拒收“把 continuity 当第五个第一性函数”
+  - 三页默认统一把 continuity 收回 `Continuation / continuation pricing / recovery non-sovereignty`
+  - 后续若高阶导航又各自发明 continuity 新主语，默认按导航层退化处理
+- `bluebook/navigation/README.md` 与 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md` 的长期默认 continuity route 现已继续写死：
+  - `navigation/` 默认不按 `/compact / /resume / /memory` 分流 continuity 问题
+  - 默认先判 `continue qualification / continuation pricing / recovery non-sovereignty`
+  - `09` 默认明确写死 continuity 不是第四张控制面图，而是三张图的时间轴共同验收面
+  - 后续若这两页再把 continuity 写回第四母线或按钮库存，默认按目录桥接退化处理
+- `bluebook/README.md` 与 `bluebook/philosophy/README.md` 的长期默认 continuity bridge 现已继续写死：
+  - 默认明确写出 `continuity 不是第四条独立母线`
+  - 默认把 continuity 收回 Prompt `Continuation`、治理 `continuation pricing` 与源码质量 `recovery non-sovereignty / anti-zombie` 的共同时间轴
+  - 后续若目录桥接又把 continuity 写回命令目录，默认按前门退化处理
+- `userbook/05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md` 的长期默认 reject signal 现已继续收紧：
+  - 默认拒收 `pending_action / task_summary / summary prose` 冒充恢复主链
+  - 默认拒收旧恢复资产越权 current truth
+  - 默认拒收 stale witness / reload failure 被叙事化掩盖
+  - 后续若这页再把 continuity consumer 写成新宪法，默认按控制面越权处理
+- `userbook/02-能力地图/01-运行时主链/05-压缩、恢复与记忆：如何维持可继续工作的现场.md` 的长期默认首问现已继续写死：
+  - 默认不再把这一页写成命令按钮说明
+  - 默认先讲 `lawful forgetting -> stable bytes externalize -> reload law -> continuation qualification`
+  - 默认写死 `summary != witness / memory != transient state / resume != unconditional restore`
+  - 后续若这页再把省 token 写回“更短摘要”，默认按 continuity 写浅处理
+- `userbook/02-能力地图/01-运行时主链/04-会话真相层：实时状态、Transcript 与恢复账本.md` 的长期默认 continuity 预算器现已继续收紧：
+  - 默认继续保留 `reload value / stable bytes / tail-window witness`
+  - 默认明确哪些历史不配继续留在恢复主账
+  - 默认反对把 replay transcript 写成连续性本体
+- `userbook/04-专题深潜/02-连续性与记忆专题.md` 的长期默认目录纪律现已继续写死：
+  - 默认先问 `working set / worksite / stable rule` 哪一层失真
+  - 默认不再按命令名直接分流
+  - 默认把 `/compact / /resume / /memory / checkpointing` 分成不同工作对象动作
+  - 后续若这页又退回按钮导览，默认按专题层回胖处理
+- `bluebook/01-源码结构地图.md` 的长期默认正文桥接现已继续写死：
+  - 默认不只给 `kernel / shell / chokepoint` 地图
+  - 默认还要显式给出 `合法复杂度中心 / contract-registry-current truth 拆分 / later reject path`
+  - 默认固定做一次苏格拉底式自校：不要用文件大小替代复杂度分布，不要把恢复资产写成第二主权面
+- `userbook/02-能力地图/01-运行时主链/03-查询循环、工具池与行动编排.md` 的长期默认首问现已继续收紧：
+  - 默认不只讲工具池和 tool result
+  - 默认先讲 `runtime-first prompt`
+  - 默认先讲 `continuation pricing > answer prettiness`
+  - 默认先讲 `tool-result ABI > side effect`
+  - 后续若这页再把省 token 写回“回答更短”，默认按运行时写浅处理
+- `userbook/02-能力地图/01-运行时主链/04-会话真相层：实时状态、Transcript 与恢复账本.md` 的长期默认分层现已继续写死：
+  - 默认显式区分 `protocol transcript / display transcript / recovery asset / current truth`
+  - 默认写死 `recovery asset != current-truth signer`
+  - 默认补一组 anti-zombie / duplicate-response 的 first reject signal
+  - 后续若这页再让 `pending_action / task_summary / compact summary` 抢恢复主语，默认按真相层越权处理
+- `04-专题深潜/README` 的长期默认目录纪律现已继续写死：
+  - 默认不再接受 19 条专题名平铺
+  - 默认先按 `同题推进 / 扩权扩能 / 跨宿主接续 / 收口交付` 四组工作对象分流
+  - 默认先签 `工作对象路由权`，不替 `05-控制面深挖` 重签控制面 truth
+  - 后续若 `04` 又长回专题库存，默认按 route-map 反弹处理
+- `06-第一性原理与苏格拉底反思.md` 的长期默认三问现已继续写死：
+  - Prompt 魔力默认先问 `world entry / witness / continuation qualification`
+  - 安全与省 token 默认先问同一个预算诚实问题，不再分写成两个松散专题
+  - 源码先进性默认先问 `合法复杂度中心 / fault model / later maintainer rejectability`
+  - 后续若这章再退回抽象赞美而不给去魅测试，默认按第一性原理写浅处理
+- `05-体验与入口/README` 的长期默认 speaking-rights 现已继续收紧：
+  - 默认至少补齐 `user-visible projection 翻译权 / host-session signer 区分权 / 无真相签发权`
+  - 默认给出 `01 / 02 / 03` 的最小 appeal chain
+  - 默认拒收“模型切换 = 主权切换 / viewer = host signer / 所有 remote 入口同一种合同”
+- `03-参考索引/03-技能与扩展/README` 的长期默认前门公式现已继续升级：
+  - 默认先讲 `source signer -> projection consumer -> runtime gate -> activation witness`
+  - 默认至少保留 `02 / 03 / 04` 三路 appeal chain
+  - relevant skills、静态 listing 与提醒面默认都只配当 inventory / projection，不配当技能全集
+- `02-能力地图` 二级 README 的长期默认目录纪律现已继续写死：
+  - 不再接受裸列表二级 README
+  - 默认至少先给 `前门公式 + first reject signal + 何时看哪一页`
+  - `01-运行时主链` 默认先讲 `world entry -> command bus -> query loop -> session truth -> continuation`
+  - `02-执行与工具` 默认先讲 `tool surface / task object`
+  - `04-扩展与生态` 默认先讲 `source -> projection -> runtime gate -> activation`
+  - `05-体验与入口` 默认先讲 `host -> session -> projection -> display`，并写死 `tuning != truth`
+- `03-参考索引/03-技能与扩展/README` 的长期默认 first reject signal 现已继续写死：
+  - 库存不等于 activation
+  - projection 不等于 signer
+  - source trust 不等于 runtime gate
+  - 后续若这页又退回“扩展库存导览”，默认按索引回胖处理
+- 下一批目录减肥的长期默认目标现已记下：
+  - `04-专题深潜/README` 若继续保留过长专题库存，优先继续压成分组路由
+  - 若 `02-能力地图` 其余二级 README 仍有薄页或裸列表，继续按同一 mini-frontdoor 模板补齐
+- root `userbook/README` 的长期默认目录纪律现已继续升级：
+  - 根前门默认不再保留“大量深页直达”作为默认路线
+  - 默认只做 `问题分型 + 二跳`
+  - 二跳默认仍回 `01 / 04 / 05 / 02 / 03` 的 README
+  - 后续若根前门又开始长回深页库存，默认按 root frontdoor 反弹处理
+- `03-参考索引/README` 的长期默认职责现已继续写死：
+  - 默认只保留 `最短路由 + first reject signal + 使用边界`
+  - 更细的问题库存默认下沉到子目录 README 和具体索引页
+  - 索引层默认只配 `触发怀疑 + 路由`
+  - 不配直接签 truth 或出 verdict
+- `03-参考索引/01-命令工具/README` 与 `02-能力边界/README` 的长期默认边界现已继续写死：
+  - 只拆对象、语义、gate、danger surface
+  - 不负责把 projection 写回 signer
+  - 不负责单独宣布 `product promise` 或 `current admission verdict`
+- 下一批目录层继续减肥的长期默认目标现已记下：
+  - 若还有高流量 README 继续保留过长 one-off 问题库存，优先继续收回“分组路由 + 子 README 下沉”
+  - `03-技能与扩展/README` 之后若也长成问题库存，默认沿同一策略减肥
+- 源码质量 frontdoor 的长期默认单首答现已继续写死：
+  - canonical ladder 默认仍只认 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability` 默认只配做 crosswalk / 解释层压缩句
+  - `bluebook/09`、`philosophy/README`、`guides/102` 后续若再让这两组并列抢首答权，默认按 frontdoor 双首答处理
+- 公开镜像研究的长期默认 step 0 现已继续写死：
+  - 先过 `public artifact ceiling`
+  - 再进 canonical ladder
+  - 若 sole writer、writeback seam 与 freshness gate 还没锁定，默认先写 `current-truth surface candidate`
+  - 不得把“可见”直接升级成“已被完整证明”
+- `userbook/05` 的长期默认 speaking-rights 现已继续升级：
+  - `05` 默认不只拆对象，还要继续显式区分 signer / projection / consumer
+  - `05` 默认最值钱的是 `first reject path`
+  - signer 没锁定时，默认先退 `09 / api / architecture`
+  - projection 说得再像，也只配触发怀疑，不配直接改判
+- 远端运行态页与 session 参数页的长期默认 signer 纪律现已继续写死：
+  - `worker_status / requires_action_details / pending_action / task_summary / post_turn_summary / session_state_changed` 默认都只配写成 projection
+  - `permission_mode / is_ultraplan_mode / model` 这类页默认讲的是镜像、回填与恢复链，不是最终 signer
+  - 后续凡是把这些页重新写成“当前真相本身”，默认按 projection 冒充 signer 处理
+- `docs/userbook-memory/06` 的长期默认 anti-regression 顺序现已继续写死：
+  - `public artifact ceiling -> availability -> isEnabled() -> feature() / build gate -> runtime mode / context -> remote policy / managed settings -> USER_TYPE === 'ant' -> DCE / shadow -> current-truth surface or candidate`
+  - 后续能力边界写作若缺 `ceiling / demotion / retreat / appeal`，默认按 memory 回流
+- 下一批主干继续深化的长期默认目标现已记下：
+  - 根 `userbook/README` 仍应继续减少长深链清单，把根前门真正收回二跳
+  - `userbook/03-参考索引/README` 与相关索引页仍应继续把“只触发怀疑、不签 truth”写硬
+  - 若并行 Agent 后续回收更多 reject path，可优先灌进 `userbook/05/README` 与 `docs/userbook-memory/06`
+- Prompt user-facing 主线页的长期默认补口现已继续写死：
+  - `01-主线使用/02` 默认不只教 `compile inputs`，还必须继续教 `verify witnesses`
+  - 默认四个 witness 先验：
+    - `目标 witness`
+    - `附件 witness`
+    - `working-set witness`
+    - `next-step witness`
+  - 后续凡是再把 Prompt continuity 写成靠长摘要、标题、最后一条消息或 imagined `systemPrompt` 维持，默认按写浅处理
+- `compact / resume / memory / export` 的长期默认 signer 纪律现已继续写死：
+  - 它们都只是 `continuation consumer`
+  - `/compact` 默认只配换表示，不配替 `continuation qualification` 签字
+  - `/resume` 默认只配恢复已被承认的现场，不配把旧恢复资产升成 current truth
+  - `/memory` 默认只配外置 stable bytes，不配接管当前 working set verdict
+  - `/export` 默认只配把结果移到 `Outside`，不配替会内 cleanup / rollback 补签
+- `status / doctor / usage` 的长期默认写法现已继续写死：
+  - `/status` = `host-state projection`
+  - `/doctor` = `trust evidence`
+  - `/usage` = `budget window`
+  - 三者都不配单独充当 `continue verdict source`
+  - user-facing 失败动作默认仍回 `继续 / 降级 / 停止 / 清理后恢复 / 升级给人`
+- `03-参考索引/01-命令工具/05` 这一类索引页的长期默认边界现已继续写死：
+  - 索引页只配 `触发怀疑 + 路由`
+  - 不配把 `/status` 写成“宿主状态真相”
+  - 后续凡是索引页开始把 projection 写回 signer，默认按索引越权处理
+- `02-能力地图/README` 的长期默认 speaking rights 现已继续升级：
+  - 除了 `能力曝光翻译权 / 能力边界提示权 / 无真相签发权`
+  - 现在还必须继续显式保留 `退层与申诉提示权`
+  - 证据不足或 signer 不清时，默认要告诉读者退回哪一层
+- root `userbook/README` 的长期默认目录纪律现已继续收紧：
+  - 根前门默认职责仍是 `问题分型 + 二跳`
+  - 已显式写死“根前门不替 `04 / 05` README 重新充当专题目录”
+  - 下一批仍应继续减少长深链清单，把根前门真正收回二跳 frontdoor
+- 下一批 frontdoor / later-maintainer 收口目标现已记下：
+  - `bluebook/09` 与 `philosophy/README` 需要继续清掉源码质量线的双首答
+  - `guides/102` 需要把 `public artifact ceiling -> candidate demotion` 提到第一页
+  - `userbook/05-控制面深挖/README`、`51`、`52` 需要继续把 `projection vs signer` 与 `first reject path` 写硬
+  - `docs/userbook-memory/06` 需要继续吸收 `later-maintainer / local opposability / current-truth surface candidate`
+- userbook 根前门的长期默认问题分型现已继续写死：
+  - `上下文送错`
+  - `扩张或权限判错`
+  - `旧状态污染`
+  - 根前门默认只做这层分型与二跳，不再直接穿透到大量 `04 / 05` 深页
+- `04` 与 `05` 的长期默认首问现已继续收紧：
+  - `04` 默认首问是 `这还是同一个工作对象吗 / 这是继续推进还是该先回 05 / 这能不能外推成系统真相`
+  - `05` 默认首问是 `这还是同一件工作吗 / 这是治理裁决吗 / 这是旧状态污染吗`
+  - `05` 默认不再重签证据上限、truth plane 与 rollback ceiling
+- userbook 四层问题分工的长期默认写法现已继续写死：
+  - 根 `userbook/README` 只答“我现在想做什么”
+  - `04-专题深潜/README` 只答“我在推进哪个工作对象”
+  - `05-控制面深挖/README` 只答“哪条控制面现在在说话”
+  - 各能力地图二级 README 至少补一段迷你前门，不再只给裸链接
+- user-facing 根前门的长期默认结构现已继续写死：
+  - 先给三类问题分型
+  - 再给二跳入口
+  - 不直接穿透到一长串 `04 / 05` 深页
+- `04` 与 `05` 的长期默认问句现已继续写死：
+  - `04` 默认先问 `这还是同一个工作对象吗 / 这是继续推进还是该先回 05 / 这能不能外推成系统真相`
+  - `05` 默认先问 `这还是同一件工作吗 / 这是治理裁决吗 / 这是旧状态污染吗`
+- userbook 前门的长期默认翻译规则现已继续写死：
+  - Prompt 默认先翻译成 `唯一工作对象 / world-defining winner -> message lineage -> continuation qualification`
+  - 治理默认先翻译成 `pricing-right -> truth-surface attestation -> typed ask / sandbox / writeback seam`
+  - 省 token 默认先翻译成 `stable bytes / working set / reload law`
+  - 后续 userbook 若再先翻译用户感受而不是对象链，默认视为体验词抢占本体
+- `userbook/02-能力地图/03-治理与边界/01-权限、沙箱、审批与安全边界` 这类权限前门的长期默认第一句现已继续写死：
+  - 核心不是“在什么模式下做”，而是“这次扩张有没有先拿到 pricing-right”
+  - approval 默认只配做 `typed ask` consumer，不再配做治理本体
+- `userbook/05-控制面深挖/README` 的 Prompt witness order 现已继续写死一条 user-facing 补语：
+  - 先解出唯一 `world-defining winner / 工作对象`
+  - 再进入 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+- 源码质量线的长期默认 canonical ladder 现已继续写死成：
+  - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - `evidence gradient / authority surface / temporal honesty / future maintainer rejectability`
+  - `authority surface -> writeback split -> freshness gate -> later-maintainer rejectability`
+  - 后两组后续默认都只配做解释层压缩句，不再和 canonical ladder 并列抢首答权
+- later maintainer 在源码质量线上的长期默认第一问现已继续写死：
+  - 先判 `public artifact ceiling`
+  - 再判 `contract / registry / current-truth surface`
+  - 若 sole writer、writeback seam 与 freshness guard 还没锁定，就只配写 `current-truth surface candidate`
+- `api/30` 这一类目录地图页的长期默认第一页纪律现已继续写死：
+  - 必须先写 `public artifact ceiling`
+  - 必须先声明兼容检索旧词如 `authoritative surface / adapter subset / hotspot gap discipline` 不再拥有首答权
+- Prompt frontdoor 的长期默认硬句现已继续写死成：
+  - `world-defining winner -> compile world-entry -> verify witness ABI -> enforce continue qualification`
+  - `Explainability` 默认只负责诊断，不负责改判
+  - `Authority` 默认先解释成“谁赢得定义当前世界的优先级”，而不是继续停在抽象 noun
+- Prompt 前门的长期默认动作链现已继续写死成：
+  - `compile -> verify -> enforce -> continue -> explain`
+  - 旧的 `compile -> protocolize -> preserve -> continue -> explain` 后续默认降为解释层旧说法，不再做高流量前门首答
+- `00-导读` 与 `navigation/README` 的长期默认边界现已继续写死：
+  - `00-导读` 只保留研究对象、为什么这样读、读后的第一判断
+  - `navigation/README` 只保留 next-hop、稳定节点、route law 与证据层分工
+  - 二者后续若继续复制 canonical formula、最小顺序或 reject signal，默认视为第二 frontdoor 风险
+- frontdoor contract 的长期默认前置块现已继续稳定：
+  - `public-evidence ceiling`
+  - `runtime-core vs operator-governance evidence`
+  - `truth-surface attestation`
+  - `rollback ceiling`
+  - 以后凡是高流量前门页，如果这些约束出现在按钮、面板、目录名之后而不是之前，默认视为阅读顺序失真
+- 治理前门的长期默认 consumer 降格现已继续写死：
+  - `approval / modal / status / usage / compact` 只配做 `typed-ask / projection / continuation` consumer
+  - 定义治理 verdict 的主语默认只剩 `pricing-right -> truth-surface attestation -> asset-rollback ABI`
+- `07-运行时契约、知识层与生态边界` 这一类前门的长期默认分栏现已继续写死：
+  - `authority / witness seams`
+  - `continuation consumers`
+  - 前者签 contract、witness、writeback seam；后者只消费、压缩、恢复与投影
+- 下一批源码质量 frontdoor 收口的长期默认目标现已记下：
+  - 统一 `README / 03 / 06 / api/30` 对源码质量 canonical ladder 的首答
+  - 目标长期默认仍是 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - `evidence gradient / authority surface / temporal honesty / future maintainer rejectability` 与 `authority surface -> writeback split -> freshness gate -> later-maintainer rejectability` 后续默认只配做解释层，不再配继续抢 canonical first-answer
+- frontdoor 目录优化的长期默认策略现已继续收紧成“先删首答重复，再补 doctrine”：
+  - 根 `README` 默认只保留 canonical formula、三组最小顺序与最短进入规则
+  - `navigation/README` 默认只保留跨目录下一跳、稳定节点、route law 与证据层分工
+  - `00-导读` 默认只保留去魅后的三句高阶判断
+  - `06` 默认只解释为什么这样分工才不失真，不重写 route 清单
+- 如果根 `README` 同时承担 canonical formula、目录职责表、按问题索引、证据梯度与 route map，默认视为 frontdoor 过胖；如果 `navigation/README` 再重复 canonical formula 或最小顺序，默认视为第二 frontdoor 风险。
+- Prompt 前门的长期默认短句现已继续加强：
+  - `compiled law / advisory context / delegated world / enforcement gates`
+  - `compile + verify + enforce`
+  - 后续若前门又退回 secret text、system prompt 崇拜或 summary prose 崇拜，应直接按写浅拒收
+- 治理前门的长期默认短句现已继续加强：
+  - `pricing-right / truth-surface attestation` 先于 approval popup、modal、usage panel
+  - 审批框长期默认只配做 `typed ask` consumer，不再配被写成治理本体
+- governance frontdoor 的默认排查顺序现已继续写死：
+  - `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
+  - mode、modal、usage、status、compact、default continue 都只配做 `typed ask / projection` consumer，不再配冒充治理本体
+- `runtime-core evidence` 与 `operator-governance evidence` 的前门分栏现已继续稳定：
+  - 前者默认只签 contract、witness、writeback seam 与 current-truth choke point
+  - 后者默认只签 `CLAUDE.md / hooks / skills / policy surface / marketplace` 这类治理工件
+  - 二者都重要，但混写成同一层 certainty 时，默认按 `public-evidence ceiling` 降格
+- Prompt 魔力的长期默认解释现已继续写死成：
+  - `compile + verify + enforce`
+  - 真正稳定的是 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+  - secret prompt text、summary prose、最后一条消息或 handoff 故事后续都不再配充当前门主语
+- 安全与省 token 的长期默认解释现已继续写死成同一条治理链：
+  - 安全默认优先回 `trusted source -> governance key -> typed ask -> sandbox/filesystem/network boundary -> visible-set narrowing -> decision window -> continuation pricing -> writeback seam -> human fallback`
+  - 省 token 默认优先回 `stable prefix / section registry / prompt cache / externalization / compaction / reload law`，而不是 `/compact` 技巧或“回答更短”
+- 源码质量的长期默认六级梯子现已继续稳定：
+  - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - `orchestration shell != registry != current-truth surface`
+  - `code present / registry listed` 永不自动升级成 host promise
+- 下一阶段 frontdoor 目录优化的默认方向现已记下：
+  - 优先继续减少 `bluebook/README` 与 `navigation/README` 的重复首答
+  - `README` 更适合保留 canonical formula 与最小顺序
+  - `navigation/README` 更适合保留下一跳与 route law
+  - 后续若 `navigation` 再重述 canonical formula，应优先视为第二 frontdoor 风险
+- `public artifact ceiling` 现已继续稳定成源码质量前门的硬上限：
+  - 先承认 public artifact 只能签它能签的东西，再谈 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - 后续凡是 later maintainer 还没先过这层 ceiling，就直接开始夸“公开镜像很先进”，都应优先按证据上限降格
+- 公开证据现已继续拆成两类长期需要分写的 evidence class：
+  - `runtime-core evidence`
+  - `operator-governance evidence`
+  - `CLAUDE.md / slash commands / hooks / subagents / marketplace / README examples` 应长期优先归到第二类，不再当作附属材料看待
+- `README / navigation/35 / guides/102 / api/46-50` 的 route constitution 现已继续写死：
+  - `README` 只定题与最短顺序
+  - `navigation/35` 只做 atlas projection 与 route dispute
+  - `guides/102` 只定义 canonical rung、candidate 降格与 gap note 模板
+  - `api/46-50` 只承接 repo-specific atlas 正文、authority file、consumer subset 与 reject path
+  - atlas 越权改判 canonical ladder，应长期视为目录层第二前门
+- operator-governance artifact 现已继续写入设计内涵主线：
+  - `CLAUDE.md`
+  - slash commands
+  - hooks
+  - subagents
+  - plugin marketplace
+  - 后续这些对象不应再只被挂在 userbook 或扩展页里，而应继续被视为“正确操作者行为”的版本化治理工件
+- Prompt 母线现在应长期继续守住一个更硬的 production crosswalk：
+  - `same-world compiler` 不能只剩 `compile`
+  - 它还必须继续接上官方公开的 `verify results`
+  - 后续凡是再写 Prompt 魔力，如果没有回答 verify 是否仍沿同一 witness chain 成立，应按“只写了开场，没有写闭环”拒收
+- Prompt force class 现已继续写死：
+  - `compiled law`
+  - `advisory context`
+  - `delegated world`
+  - `CLAUDE.md / auto memory` 默认属于 advisory context；subagent world 属于 delegated world；二者都不得越位成 Authority witness
+- continuation shape 现已继续稳定成二分法：
+  - `shared-prefix helper path`
+  - `fresh-context delegated path`
+  - `/btw`、prompt suggestion、部分 memory/helper 回路优先属于前者；subagent 属于后者；后续不要再把它们混写成“都是 fork”
+- Anthropic engineering 对 Prompt 的 production framing 现已成为长期可复用证据：
+  - `collaboration framework`
+  - `effort budget`
+  - `tool heuristics`
+  - `observability`
+  - `tight feedback loops`
+  - 这组词后续应优先用于修正“Prompt 魔力 = 更会写 prompt”的写浅倾向
+- 官方 docs / engineering 现已被继续写成和公开源码镜像并列的长期证据面：
+  - 源码负责给 mechanism kernel
+  - 官方 docs 负责给 externalized contract
+  - engineering 文章负责给 operational guardrail
+  - 后续凡是研究 Claude Code，如果只盯其中一面，都应先按 `mirror-gap triangulation` 自我降格
+- `Narrow / Later / Outside` 现已继续稳定成一条有官方外证的治理合同：
+  - sandbox 处理 filesystem / network isolation
+  - approval 处理动作签发
+  - separate context window 处理高风险 payload 隔离
+  - auto mode 的 fast probe + reasoning fallback 处理低价筛查与高价复核
+  - `84%` permission-prompt reduction 应长期被读成“主权边界前置后的自治结果”，而不是“更少提示框”的 UX 指标
+- `语义压缩` 现已继续稳定成 load-fate contract，而不只是 conversation compaction：
+  - `startup full-load`
+  - `name-only / description-only preload`
+  - `on-demand expansion`
+  - `summary return`
+  - 后续凡是再写 prompt magic，如果没有把 startup context composition、subagent separate context 与 `/compact` reload law 算进去，应按“只写了 turn 后压缩”拒收
+- `Prompt Constitution` 的公共表面现已继续写死成两部法律：
+  - `load law`
+  - `admissibility law`
+  - 后续不要再把 Prompt 本体偷偷退回“secret text”；更稳的分析永远先问什么在 startup 进入、什么在 probe 后才 admissible、什么在 compact 后按 reload law 重放
+- rollback ceiling 现已继续稳定：
+  - `rewind files != rewind authority != rewind conversation`
+  - file checkpointing 只覆盖 `Write / Edit / NotebookEdit`
+  - Bash side-effects、authority state 与 conversation 本身都不在同一 rollback 合同里
+- 治理线的执行层 crosswalk 现已继续写死：
+  - `governance key` 的执行层名字应长期优先读成 `pricing-right signer / pricing-right lease`
+  - `externalized truth chain` 的消费层名字应长期优先读成 `truth-surface attestation`
+  - `durable-transient cleanup` 的交接层名字应长期优先读成 `asset-rollback ABI`
+  - 后续凡是治理深页还让 `host consumption card / rollback object` 抢第一页主语，都应优先按这组 crosswalk 回收
+- 治理 refinement execution 的顺序现已继续稳定：
+  - `truth-surface attestation` 应先于 `shared reject semantics / hard reject semantics` 被确认，因为 reject 语言只有在 shared consumer surface 已对齐后才合法
+  - `host consumption card` 在治理线里也只配做 carrier，不是控制面主语；真正的执行主语是 `pricing-right rebinding -> truth-surface attestation -> asset-rollback ABI -> shared reject / reopen drill`
+  - `userbook/05` 后续若再翻译 governance failure order，默认应从 `pricing-right 失配` 起手，而不是从 `rollback object` 起手
+- Prompt frontdoor shorthand 现已进一步收紧成一条长期必须回绑的 witness ABI：
+  - `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+  - `same-world test`、`Authority / Boundary / Transcript / Lineage / Continuation / Explainability`、`compiled request truth / stable prefix / lawful forgetting / threshold liability` 这些词后续都只能作为这条 witness ABI 的 shorthand、witness、packet 或 verdict；如果某页首次出现它们却没有立刻回绑 witness ABI，应直接视为 Prompt 深页长出第二语言。
+  - `host consumption card` 现在也应长期记住：它只配做 Explainability 末端 carrier，不是新的 Prompt 主语；execution 页真正该先守的是 witness order，而不是 card 完整度。
+- refinement attestation 的 visible noun 现已进一步分线稳定：
+  - Prompt 精修链后续优先使用 `shared_consumer_surface_attestation_packet`，强调“宿主 / CI / reviewer / handoff 是否仍消费同一条 witness order”。
+  - 结构精修链后续优先使用 `current_truth_surface_attestation_packet`，强调“display / event / handoff projection 是否仍被压回同一个 current-truth surface”。
+  - `cross_consumer_attestation_packet` 在这两条线里都应被视为旧总称；若还停在首屏，应优先往各自的 prompt / structure attestation visible noun 收口。
+- Atlas / ladder / route dispute 的目录分工现已继续写死：
+  - `01-源码结构地图 + guides/102` 只定义 canonical rung、`current-truth surface candidate` 的降格规则与旧别名降格。
+  - `api/46-50` 只承接 repo-specific atlas 正文、authority file、consumer subset 与 reject path。
+  - `navigation/35` 只承接 atlas projection / route dispute。
+  - `navigation/04` 只承接 speaking-rights / appeal-chain charter。
+  - 以后凡是 atlas 问题在 README、guide、navigation 与 api 四层同时第一次回答，默认按“目录层第二前门”处理。
+- Anthropic 官方 2026 文档/engineering 证据已形成一组长期稳定的外部校准：
+  - context 起手默认装配 `cwd + parent CLAUDE.md + auto memory + tool/skill projection`，因此 Prompt world entry 从来不是单段 system prompt
+  - subagents 长期应被视为独立 context window + summary return；这继续支持 `coordinator_synthesis_owner` 与“未综合子 Agent prose 只配做线索”的写法
+  - token 经济长期应记成 `prompt caching + auto-compaction + stable prefix / working set 分治`，而不是“回答更短”
+  - security 长期应记成 `sandbox / approval / hooks / working-dir write boundary` 的 runtime 叠加边界；2026-03-25 公布的 auto mode 还把“轻量前置拦截 + 主模型策略审查”写成双层防线
+  - sandboxing engineering 文里 `84%` 的 permission-prompt reduction 应长期被读成“未定价扩张先被 runtime 缩窄”，而不是“同样扩张只换成更少提示词”
+- `userbook/02-能力地图/README`、`03-参考索引/README`、`04-专题深潜/README` 与 `05-控制面深挖/README` 现已继续把目录权限 doctrine 下沉到用户侧入口：
+  - `02-能力地图` 现在应长期记住：它有能力曝光翻译权与边界提示权，但没有真相签发权；后续若能力地图开始替 `api/` 或 `philosophy/` 重判 canonical truth，应直接视为长出第二蓝皮书。
+  - `03-参考索引` 现在应长期记住：它只有速查权，不拥有改判权；需要真相、verdict 或反例时，必须显式把读者退回对应正文层。
+  - `04-专题深潜` 现在应长期记住：它有工作对象翻译权与工作顺序提示权，但没有机制改判权。
+  - `05-控制面深挖` 现在应长期记住：它有控制面判断翻译权与相邻替身拒收权，但没有 canonical 改判权。
+- `docs/development/00-研究方法.md` 与 `03-反思与迭代准则.md` 现已继续把这轮编辑 doctrine 写成正式方法约束：
+  - 发言权现在应长期记住：它不只回答“这一层能说什么”，还必须回答“这一层不能改判什么、later maintainer 异议该往哪层申诉”。说不清 canonical owner 和 appeal layer 的入口页，默认按“第二叙述者风险”拒收。
+  - “局部可反对性”现在应长期记住：更稳的最小见证集是 `authority surface + writeback seam + first retreat layer`。后续凡是再写 future maintainer，而没有把这三件至少压进正文或模板，均视为价值口号。
+  - “只回写记忆、不回正文”现在应长期记住：批次收口、推荐顺序、入口切换协议、兼容标签/路径债等编排真相，默认先只进 `docs/` 和记忆层；只有它真的改动 canonical chain / frontdoor formula / first reject path，才升正文。
+  - “新增入口”现在应长期记住：先改可见标签，再补 `navigation`，再同步专题 README，最后才考虑新开前门；只有现有入口承载不了新的第一问或新的申诉位阶时，新增入口才算必要。
+- `api/README`、`security/README`、`risk/README`、`userbook/README` 与 `docs/README` 现已继续把“发言权限 / 申诉链” doctrine 扩展到剩余高流量入口：
+  - `api/README` 现在应长期记住：它有 contract/host-facing truth 的承认权，但没有第一性原理改判权，也没有现场 verdict 签发权。
+  - `security/README` 现在应长期记住：它解释 signer / ledger / cleanup 机制，但没有用户侧恢复签发权，也没有执行链 verdict 的代签权。
+  - `risk/README` 现在应长期记住：它负责用户侧结算与 reopen 资格显形，但没有治理机制改判权。
+  - `userbook/README` 现在应长期记住：它只有使用判断翻译权，没有第一性原理改判权，也没有 host-facing truth 的签发权；后续凡是 userbook 开始替 `philosophy/` 或 `api/` 重讲 canonical truth，都应视为长出第二蓝皮书。
+  - `docs/README` 现在应长期记住：`docs/` 只有记忆权，没有正文的改判权、对象承认权或 verdict 签发权。
+- `architecture/README`、`guides/README`、`playbooks/README` 与 `casebooks/README` 现已继续把“发言权限 / 申诉链” doctrine 下沉到各专题入口：
+  - `architecture/README` 现在应长期记住：它不只是对象库存入口，而是 later maintainer 局部可反对性的结构入口；后续若架构专题入口还不能直接暴露 `authority surface / truth planes / writeback seam / retreat layer`，则视为入口写浅。
+  - `guides/README` 现在应长期记住：它只把反对权压成问题梯子与模板，不替正文判必要性，也不替 `playbooks/` 发 verdict。
+  - `playbooks/README` 现在应长期记住：它的职责是对已承认对象链出 verdict，而不是回头解释为什么这样设计。
+  - `casebooks/README` 现在应长期记住：它保存的是最会骗走 later maintainer 局部反对权的伪证样本，而不是“更吓人的故事”。
+- `philosophy/README` 与 `navigation/04` 现已把 future-maintainer 线继续推进到目录入口层：
+  - `philosophy/README` 现在应长期记住：源码质量线不只从 `86 / 87` 进入，也应显式开放 `80 -> 59 -> 53 -> 87` 这条 future-maintainer / local opposability / refactor capital 专题链。后续若目录入口还只会把源码先进性导向 current-truth / temporal honesty，而不暴露 later maintainer 的局部可反对性，也应视为入口写浅。
+  - `navigation/04` 现在应长期记住：目录职责最好继续按“发言权限与申诉链”来判，而不只按主题分层来判。`philosophy` 判必要性，`architecture` 证对象链，`api` 定承认面，`guides / playbooks` 分别出问题梯子与 verdict，`navigation` 只路由，`docs` 只存记忆；任何目录一旦越权代言，仓库就会长出第二叙述者。
+- `philosophy/README` 与 `navigation/05` 现已再把这条入口 doctrine 压强一层：
+  - `future maintainer = formal consumer` 现在应长期保留在哲学专题前门，而不只保留在正文深页；后续若源码质量前门还没有显式暴露这一句，就仍算入口写浅。
+  - `navigation/05` 现在应长期记住：源码质量线的入口版总括不只该是 current-truth / temporal honesty，还应直接包含 `local opposability + refactor capital`；发言权限表也不只是排版纪律，而是 later maintainer 的正式反对位阶。
+- `philosophy/80`、`59` 与 `53` 现已继续把 future-maintainer 线压成更稳定的长期 doctrine：
+  - `future maintainer is a formal consumer` 现在应长期记住：它的最低标准不是 later maintainer 最终能看懂，而是 later maintainer 拥有 `局部可反对性`。后续凡是再写“维护者很重要”，都要先问有没有把这句话压成“不追全仓也能指出越权写回、truth-plane 越位与第一退回层”的可执行门槛。
+  - `好架构始终保留重构可能性` 现在应长期记住：这里保留的不只是 seam，而是下一次重构的资本池，包括单一权威面、state machine 的时间边界、小而硬的共享真相文件、制度记忆注释，以及 later maintainer 的局部反对权。
+  - 这也意味着，后续若某页继续把源码先进性写成目录树观感、某次重构做得漂亮、或者作者看起来很有全景，就可直接按“没有把局部可反对性写成验收条件”拒收。
+- `navigation/05`、`philosophy/33`、`84`、`85` 与 `87` 现已把这轮专题深化进一步压成更稳定的长期 doctrine：
+  - Prompt 线现在应长期记住：`lawful forgetting` 保护的不是摘要密度，而是 compact 前后 `world-entry / reject-continue verdict` 不改判；它真正保留的是最小 `verdict witness set`。后续凡是把 lawful forgetting 写成“总结得更好”，都可直接按写浅 reject。
+  - Prompt 线的 `first reject path` 现在更明确固定为：`world-defining winner` 不清 -> stable boundary 污染 -> `transcript conflation` -> `continuation_story_only`。后续若在 Prompt 审读页继续发明别的前置顺序，应优先先问是不是把对象层信号写成了展示层症状。
+  - `Explainability` 现在应长期记住：`diagnostic, not adjudicative`。它可以命名 `winner / boundary / qualification` 断在何处，但不能反向改写世界准入判决。
+  - 治理线现在应长期记住：`visible world admission` 常常比动作执行更早进入价格链；`classifier` 也只有在还能改变 `verdict` 时才值得调用。后续凡是把治理写成 modal 或把 classifier 写成免费保险，都可直接按 `projection usurpation / self-priced-control relapse` 拒收。
+  - 结构线现在应长期记住：future maintainer 的最低门槛不是“看懂作者意图”，而是拿不到作者时仍能只凭结构指出哪条 `event / snapshot / transport` 越权成了 authority，并立即说出第一退回层。
+- `philosophy/61`、`85`、`87` 与 `navigation/05` 现已把这轮深化进一步压成更明确的权限表：
+  - 治理线现在应长期记住：`governance key` 不只是第一道检查，而是下游收费权的主权对象；`verdict seams` 则是 `typed ask` 真正值钱的地方。后续凡是把治理继续写成 modal / modal race / UI 交互，而不写谁能出 verdict、谁能接管、谁能撤销、谁负责 rollback，都可直接按写浅 reject。
+  - classifier 的长期判断也更明确了：它不是免费安全层，而是只有在还能改变 `verdict` 时才值得调用的仲裁器；危险 allow rule 已让它失去仲裁空间或 working set 已让结论稳定时，再继续调用 classifier，都属于 `self-priced-control relapse`。
+  - 结构线现在应长期记住两条新增纪律：第一，只有同时仲裁 `dependency / temporal / failure / current-truth writeback` 多轴不变量的热点，才配叫合法复杂度中心；第二，truth-plane 冲突时的复核顺序固定为 `display -> current -> event`，前者只负责触发怀疑，第二层才有 present verdict，第三层只补证不改判。
+  - 目录结构现在也更明确可被长期复用成一张“发言权限表”：`philosophy` 判必要性，`architecture` 证对象链，`api` 定承认面，`guides / playbooks` 出可执行判决，`navigation` 只路由不代言，`docs` 只存记忆不重判正文。后续任何目录如果越权代言，都可直接按“仓库长出第二叙述者”拒收。
+- `philosophy/61`、`84` 与 `87` 现已把这轮专题深化补成更完整的长期 doctrine：
+  - Prompt 线现在应长期记住：合法遗忘保护的不是摘要密度，而是 `reject / continue verdict` 在 compact 前后不改判；`Explainability` 只能解释 `winner / boundary / qualification` 断在何处，不能反向改写 world-entry 判决。
+  - 治理线现在应长期记住：`classifier` 不是治理控制面外的免费裁判，而是只有在还能改变 `verdict` 时才值得调用的定价节点；后续凡是写 classifier，都要先问它是否真的还在产生决策增益。
+  - 结构线现在应长期记住：旧 `snapshot / pointer / recovery asset` 在 fresh-read / adopt / relink 之前只能作为 `evidence / projection` 存在，不能直接跨时写回 `present`；`event truth / current truth / display truth` 也必须严格分层，任何一层代写另一层都视为 `truth-plane collapse`。
+- `philosophy/63`、`82`、`86` 与 `navigation/15` 现已继续把专题哲学页和失稳前审读页压回更硬的第一性原理：
+  - Prompt 线现在更明确把 `compact / fork / handoff` 视为 Prompt Constitution 的验真场；若压缩后只剩 story/prose、不剩 `continuation qualification`，系统就已经从 constitution 退回 narration。
+  - `Explainability` 现在也更明确只配做末端命名权；`release card / steady verdict / handoff prose` 只能解释 qualification，不能重新定义 qualification。后续凡是继续写 Prompt tail，都应先问：这里是在保住 `residual reopen gate / threshold liability`，还是又在把解释壳抬成主语。
+  - 治理线现在更明确把 `visible world` 前置到动作许可之前；`Context Usage` 继续只配做 `decision window` 的证据面，而 `classifier / approval / retry` 若无决策增益，也必须被当成免费扩张拒收。
+  - 结构线现在更明确把 `remote / session / transport` 视为主权域，而不是功能域；`event truth / current truth / display truth` 的分层也被正式提升成 current-truth 纪律的一部分。后续凡是分析 remote/session，都应先问它在保护 ownership、reconnect、permission 还是 exit contract，而不是先按功能表分组。
+- 新的长期失真词：
+  - Prompt 线新增 `story-only continuation`：压缩或 handoff 后只剩可读故事，不剩 `continuation qualification`。
+  - 治理线新增 `self-priced-control relapse`：classifier、approval、retry 自己没有进入定价链，反而膨胀成新的免费扩张源。
+  - 结构线新增 `truth-plane collapse`：`event truth / current truth / display truth` 被重新混写，宿主或 UI 又开始靠 replay transcript 猜现在。
+- 新的长期目录纪律：
+  - 根入口继续只负责高阶 doctrine；专题哲学页负责把 doctrine 压成更硬的 first-principles prose；`navigation/15` 负责把这些 prose 改写成失稳前问题梯子。后续若新增结论先想落在根 README，先问它是否其实更该沉到专题页或审读页。
+- `bluebook/README`、`03`、`06`、`01` 与 `navigation/41` 现已继续把高阶前门往“去魅后的制度判断”压稳：
+  - Prompt 前门现在更明确不再是 instruction 美学，而是不同 consumer 不必重新协商同一世界；`continuation qualification`、合法遗忘与 residual reopen 资格比 summary prose 更接近 Prompt 本体。
+  - 治理前门现在更明确不再是 budget 面板，而是动作、可见性、上下文、时间与 classifier 自身都被同一价格秩序批准；`Context Usage` 现在更明确只配做 `decision window` 的证据面，不再被写成 token dashboard。
+  - 源码前门现在更明确不再是功能分层或目录体感，而是把 `谁定义现在 / 谁只消费现在 / 谁只能帮助恢复现在` 先分开落进源码；`protocol transcript / UI transcript / state writeback` 也被更明确钉回三类不同真相层。
+- 新的长期目录纪律：
+  - 高阶前门继续固定为 `09 / 05 / 15 / 41`；Prompt `66 -> 69 -> 72 -> 78 -> 47 -> 50` 与结构 `guides/83 / 92 -> playbooks/61 / 67 -> casebooks/54 / 63` 继续只做专题侧门；`philosophy / architecture / api / guides / playbooks / casebooks / docs` 继续只做证据层。
+  - 一个新结论若第一次同时想落在 `README / navigation / guide` 三层，通常意味着它还没判清自己是在定义主语、打开侧门，还是下沉证据层；后续批次可直接用这条规则拒收混层。
+- 新的长期自校协议：
+  - 继续写前门页时，固定做三次去魅测试：删掉措辞魔力后 Prompt 解释是否仍能站回 `Authority / Boundary / Transcript / Lineage / Continuation / Explainability`；删掉 mode、token 面板与审批界面后治理解释是否仍能站回 `authority source / typed ask / decision window / continuation pricing / cleanup`；删掉目录树观感与作者说明后源码解释是否仍能站回 `current-truth surface / recovery non-sovereignty / freshness gate / later reject path`。
+  - 并行多 Agent 合并时，所有支线也必须先通过同样的去魅测试；删掉漂亮措辞、UI 投影与目录体感后站不住的句子，不再允许回写到高阶前门。
+- 新的长期源码桥接句：
+  - `remote / session / transport` 在 Claude Code 源码里首先是主权域，不是功能域；源码地图若不能暴露这点，就仍停在目录树展开图。
+  - `event truth / current truth / display truth` 必须分层，宿主与 UI 都不能靠 replay transcript 猜现在；这条句子后续可直接复用到所有结构 advanced line、host-facing truth 与 remote/session 分析。
+  - `command plane` 可以变薄，但 `tool plane` 不能跟着一起失去装配主权；以后凡是分析 remote/session 主权分配，都应优先复用这条桥接句，而不是重新解释“命令表为什么不一样”。
+- `api/66` 与 `playbooks/47` 现已继续把 Prompt post-watch / post-monitor side-door 压回 same-world compiler：
+  - `Authority / Boundary / Transcript / Lineage / Continuation` 继续是页面第一页主语，不再让 `watch release object / release card / watch note / handoff prose` 越位成第二套 Prompt 世界。
+  - `residual reopen gate` 现在更明确只配作为 post-watch / post-release 责任对象存在，回答“停止额外监护后哪些反证能力仍必须保留”，不再和 Prompt 主链并列充当前门。
+- `guides/83 / 92`、`playbooks/61 / 67` 与 `casebooks/54 / 63` 现已继续把结构 builder-facing 模板线压回源码真相梯度：
+  - builder-facing guide 现在更明确只提供 `current-truth surface / writer chokepoint / freshness gate / shared reject semantics / later reject path` 这条模板顺序，不再让 `authority seam block / liability ticket / host consumption card` 这些模板壳越位成主语。
+  - playbook 现在更明确只消费 writer chokepoint、fail-closed、anti-zombie 与 reopen drill，不再把 “卡片已填完 / telemetry 已转绿 / 当前没报错” 读成结构恢复本身。
+  - casebook 现在更明确把 pointer 主语、假 single-source、假 fail-closed 与 reconnect 责任幻觉写成对 `one writable present` 和 shared reject semantics 的具体偷换。
+- 新的长期结论：
+  - Prompt 线后续继续深化时，post-watch / post-steady 侧门的最大风险不再是“缺字段”，而是 `release card / watch note / handoff prose / warranty` 重新越位成主语。后续凡是写这条线，都应先问：这里是在定义世界，还是只是在解释为什么现在可以停止额外监护。
+  - 结构线后续继续深化时，builder-facing 模板线的最大风险不再是“模板不够细”，而是 `card / packet / ticket / liability` 重新越位成主语。后续凡是写这条线，都应先问：later maintainer 是否已经能只凭 `one writable present + shared reject semantics + later reject path` 拒收当前状态。
+  - 目录结构优化当前更稳定的长期纪律是：`09 / 05 / 15 / 41` 负责第一次定义三条母线；Prompt residual reopen 线与结构 builder-facing 模板线只负责承接主链成立后的责任与模板，不再并列成新的高阶前门。
+  - 当前下一批最值钱的继续点，不再是这两条侧门本身的第一页主语，而是看它们的相邻编号和 README/导航是否还残留 `card / packet / ticket / prose` 越位；如果有，应继续只在专题侧门层消化，不把这些词再抬回主线宪法层。
+  - `navigation/README` 与 `api/README` 的分工也已进一步稳定：前者只负责“何时开侧门、下一层去哪”的 route map，后者只负责 Prompt residual reopen 的 host-facing truth 后续入口；结构 builder-facing 模板线则长期停留在 `guides/83 / 92` 这层，不在 `api/README` 被抬成新的并列前门。
+  - Prompt residual reopen 责任线的真实编号锚点也应长期记住：当前树里更稳的承接顺序是 `api/66 -> api/69 -> api/72 -> api/78 -> playbooks/47 -> playbooks/50`；`67` 与 `71` 当前分别是治理与结构 sibling 页，后续只可作为旁证，不应再被误读成 Prompt 尾段对象链本身。
+  - 这条真实编号链已经继续回写到目录入口与正文：`api/72` 现已和 `66 / 69 / 78 / 47 / 50` 一起站回 Prompt tail 责任线，`api/README`、`navigation/README` 与 `navigation/15` 也都已改成只在“高阶前门已判清”这一前提下开放这条侧门，避免 later maintainer 再从 sibling 页借词误入。
+  - 相邻 sibling 页的边界也已继续写死：治理 `67` 与结构 `71` 只可作旁证，不可再被 Prompt 尾段 route 借成续页；后续凡是看到 liability / reservation / release 这类词跨页越位，都应优先先问“这还是不是本页母线的尾段责任”，而不是直接沿编号继续下钻。
 - `api/78`、`69`、`playbooks/50`、`casebooks/49` 与 `46` 现已继续把 Prompt 稳态/纠偏协议页的第一页主语统一压回 Prompt canonical chain：
   - `Authority` 现在更明确重新承担 world-defining winner / restored request object / compiled request truth 的定义职责。
   - `Boundary` 现在更明确重新承担 stable prefix / lawful forgetting / cache-safe reuse 的定义职责。
@@ -2602,3 +3509,62 @@
 - 写 prompt 相关结论时，必须同时标出装配链、角色合同、attachment 注入与 cache 约束
 - 写源码质量相关结论时，必须同时标出 invariant、边界、cache/retry 结构与真实工程债务
 - 写目录结构相关结论时，必须先问清自己是在补“正文主线”还是在补“导航/检索入口”
+- 高流量前门现在应继续共享同一套最小顺序，而不只是共享同一套 nouns：
+  - Prompt 线入口级顺序写成 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`；前五项才是 `world-entry / continue verdict` 的 witness set，`Explainability` 只配做 diagnostic naming。
+  - governance 线入口级顺序写成 `asset / rollback object -> reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`；用户侧五步与 API verdict family `hard_reject / liability_hold / writeback_reseal_required / reentry_required / reopen_required` 可以互相映射，但 userbook 不签发 verdict。
+  - current-truth 线入口级顺序写成 `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`。
+- `witness order` 更稳的长期定义是“证据可采顺序”，不是阅读顺序；`summary / card / handoff prose` 只能做 Explainability 末端投影，不能倒灌成 Prompt 主语。
+- `lawful forgetting` 的长期稳定定义应继续记成：删去叙事密度但不改写 verdict；能忘的是 prose 密度，不能忘的是 `intent / constraints / next action / rollback boundary / threshold liability` 这组最小 continuation witness。
+- `Boundary` / stable prefix 的长期稳定定义，不只是 cache 或性能技巧，而是字节政治经济学：它在决定哪些 bytes 能成为可继承的宪法资本，哪些只能做晚绑定 liabilities。
+- `continuation discipline` 的长期稳定定义，不是继承上一轮结论，而是每轮继续前重新消费上一轮留下的条件；Prompt 真正交付的产品也不是“上一轮一个好答案”，而是“下一轮开始前仍能被重新消费的一组 continuation 条件”。
+- 目录优化的长期稳定定义，不是新增 route map，而是减少“第一次回答同题”的入口数，并把 `speaking rights / appeal chain` 固定住；更稳的目录优化成功标准不是更快找到页，而是更少页拥有第一次解释权。
+- `navigation/04` 现在应被视为目录 `speaking rights / appeal chain` 的唯一 charter；如果异议是必要性回 `philosophy/`，对象链回 `architecture/`，承认面回 `api/`，模板动作回 `guides/`，verdict 回 `playbooks/`，伪证样本回 `casebooks/`，路由/入口债回 `navigation/`，记忆/变更台账回仓库根 `docs/`。
+- `docs/` 在目录梯度里始终指仓库根 `docs/`，不是 `bluebook/` 内部子目录；它是记忆层，不是正文层。
+- `future maintainer = formal consumer` 现在更应被压成最小见证集：`authority surface -> truth planes -> writeback seam -> danger surface -> first retreat layer`；later maintainer 若无法局部点名这五项，源码先进性就仍停在作者视角。
+- 源码质量线 canonical ladder 继续固定为 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`；若正文出现 `contract truth -> registry truth -> orchestration shell -> current-truth surface -> consumer subset -> danger surface`，应读成 orchestration 热点展开的投影变体，而不是第二条 canonical ladder。
+- `truth pluralism = one lineage, many projections; adjudication remains single-source` 现在应被视为 Prompt 前门的稳定补充句：多 projection 合法，不等于多主权合法。
+- Prompt 线现在应继续把 `Explainability` 之前再压出一条 admissibility 纪律：`belonging -> admissibility -> adjudicative scope -> closure effect`。截图、summary、handoff prose 通常最多只能证明 belonging；没有通过同一条 admissibility gate 的证据，不得进入改判层。
+- `handoff` 现在应被明确视为 later maintainer 的正式反对权场景，而不只是交付场景。更稳的最小区分是 `deliver -> admit -> accept/oppose`；`summary_only_handoff / witness_missing / liability_hidden` 是稳定的 reject reason。
+- `continuation discipline` 现在还应再固定一句：继续前的关键不是“再看一遍条件”，而是当前 consumer 能否 parse 上一轮 witness ABI，并复现同一 continue/reject verdict。可读但不可判的 handoff 包，不具 continuation validity。
+- `architecture/79` 的五层 truth ladder 现在应被记成稳定 crosswalk：`protocol truth` 决定模型消费、`continuation truth` 决定删到哪里仍算同一条继续链、`current truth` 决定现在正式算什么、`event truth` 只补证、`display truth` 只触发怀疑。
+- `continuation truth` 的最小 ABI 现在可稳定复用为：`current work / next-step guard / required assets / rollback boundary / continuation qualification / threshold liability`。
+- 治理控制面里的 `asset / rollback object ABI` 现在可稳定复用为：`rollback_object / rollback_boundary / required_assets / quarantine_recall_handle / threshold_retained_until / reentry_required_when / reopen_required_when`；它统一 compaction、handoff、rollback、reopen 四种看似不同的对象语言。
+- 安全词法主权现在可稳定复用 `ceiling / lease / revocation` ledger：`connected` 归 transport/session signer，`active` 归 current boundary owner，`ready` 归 current-truth/writeback seam，`resolved` 归 ledger/verdict signer。display 层只能在各自 ceiling 内说话。
+- 安全边界换届现在可稳定复用四格 boundary lifecycle：`continuation / succession / suspension / retirement`；并应默认在 succession 时重绑 `window_floor_generation / pricing_floor_generation / liability_owner / reopen_required_when`。
+- `guides/102` 文件名里的旧词现在只应被读成兼容检索别名，不再拥有首答权，也不是新的 canonical rung。
+- `consumer subset` 现在可继续压成 later maintainer 的最小矩阵：`code present / registry listed / host-facing truth signed / consumer subset admitted / promise boundary declared`。代码存在不等于 registry 承认，registry 承认不等于 host-facing truth 签发，truth 签发也不等于所有 consumer 都能合法消费。
+- future maintainer 线的首答路由现在应固定为：必要性先回 `philosophy/README / 59`，证据 ladder 先回 `01 + guides/102`，repo atlas 与 reject path 先回 `api/46-50`，目录 speaking-rights 争议才回 `navigation/04`。
+- `projection truth ladder` 现在可继续稳定复用为 `protocol -> continuation -> current -> event -> display` 五层；其中弱投影若要升格，必须补齐 `promotion_requires`，否则应直接落入 `forbidden_upcast_set`。
+- `governance key` 现在还应继续被读成 `pricing-right signer / pricing-right lease`：谁能定价、谁能见证价格、谁在 lease 失效后仍敢继续收费，这三件事属于同一主权对象链。
+- `userbook/05` 现在已经开始稳定翻译两组新增最小顺序：`consumer-truth ladder = protocol -> current -> event -> display` 与 `boundary lifecycle = continuation -> succession -> suspension -> retirement`；后续控制面首页若不能先说清自己承接的是哪一组，就仍停在对象解释页。
+- `pricing_authority_unbound` 现在应作为治理控制面的稳定 reject reason：如果只有 `settled_price` 而没有谁有资格签下这笔价格，治理链仍未真正闭环。
+- `truth surface attestation packet` 现在可继续稳定复用为：`display_truth_ref / event_truth_ref / current_truth_ref / protocol_truth_ref / surface_lossiness_digest / forbidden_promotion_set / event_replay_not_current_truth`。它的作用不是再多一层文书，而是防止 display/event truth 再次冒充 current/protocol truth。
+- `lawful forgetting witness ABI` 现在可继续稳定复用为四层：`required / derivable / narrative-only / forbidden-as-sole-witness`。compact、resume、handoff 共用的不是摘要格式，而是这组 witness ABI 能否仍被 parse 并复现同一 continuation verdict。
+- `navigation/04` 现在已开始承接 later maintainer 的问题级首答表；后续若某个 README 再次同时想回答 “future maintainer 为什么成立 / 证据梯子从哪开始 / repo atlas 先去哪 / 谁有首答权”，应优先回本页而不是再开新入口。
+- 协议页里的编号和字段顺序也应被视为 consumer-facing ABI 的一部分；新增 verdict reason 或 object slot 后，必须回头检查序号、命名与并列层级是否仍单义，否则 later consumer 会先被形式噪音绊住，再误读正文主张。
+- `pricing_right_restitution` 现在不应只停在中层小节里；只要某个 pricing-right 对象已经成为后文稳定依赖，它就应被同步提到顶层对象清单，避免 later reader 误以为只是展开细节而非 first-class object。
+- atlas projection page 的长期稳定纪律现在可再补一句：它能投影 canonical ladder，但没有改判 canonical ladder 或首答权的资格；一旦争议滑到“这页有没有 first-answer authority”，就应直接回 `navigation/04`。
+- `lawful forgetting witness ABI` 现在还应继续被读成 versioned object：字段可以扩展，但 `required` 与 `forbidden-as-sole-witness` 两层若发生变化，必须显式 rebind，而不能靠 prose 静默漂移。
+- 当某个对象已经在正文中段被稳定写成 canonical object / shared ABI / stable verdict reason 时，H1、顶层对象清单、消费顺序和问题级首答路由都应在同一批次同步改写；否则 later consumer 先读到的仍是旧世界。这条规则现在已进入 `docs/development/03`，应视为蓝皮书目录治理的长期纪律。
+- `truth-surface attestation` 现在不仅是 `api/85` 正文对象，也应成为治理精修线的可见标题词；旧的 `cross-consumer attestation` 更适合退回兼容语境或旧文件路径，不再占可见前门主位。
+- Prompt 前门的长期稳定词法应优先使用 `effectiveness / input assembly order / authority order / canonical source / first-answer rule`；`magic / 咒语 / 主权 / owner` 这组词若继续存在，最多只应活在历史文件名、检索别名、反思对象或伪解案例里，不再占高流量页面的 H1、首句或首答句。
+- 去魅的长期纪律不是“把魔力说成反魔力”，而是直接改写问题主语：少问 Prompt 为什么“有魔力”，多问它如何固定 `world-entry admissibility / witness order / continuation qualification`。如果一句话仍需借 `神秘 / 很灵 / 咒语化` 才能成立，通常说明首答还没有真正回到第一性原理。
+- authority 词法的长期纪律也应继续固定为 precedence/admissibility，而不是 ownership/sovereignty：`authority order` 优于 `authority chain`，`canonical source / 首答来源` 优于 `owner 页`，`拥有第一次解释权` 应优先改写成 `承担首答责任 / 拥有首答来源资格 / 固定 speaking rights`。
+- Prompt 线里 `world-definition source` 现在比 `world-defining winner` 更适合作为高流量页面的稳定词法：前者强调同题首答来源与 admissibility，后者更容易把论证重新拖回主权/胜负比喻。若正文仍保留旧词，优先把它降格为兼容或历史词，而不是继续站在前门。
+- 可见标题、反思条目和 first-answer formula 也应遵守同一条去魅纪律；不能出现正文已经讲 `Prompt 效力 / authority order / canonical source`，但小标题仍写 `Prompt 魔力 / 神秘成功 / owner 页` 的局部真相外溢。
+- 下一条独立治理精修线已经明确：`runtime projection`、`continuation consumer`、`verdict`、`reopen` 四类词必须在 user-facing frontdoor 上稳定分层；`cleanup result` 不应再被叫作 consumer，`reopen` 也不应再并入 `durable-transient cleanup` 尾槽。
+- 这条治理词法纪律现已进一步固定为五分法：`approval / mode / modal = 治理投影`，`/status / /doctor / /usage = runtime projection`，`Compact / Resume / Memory = continuation consumer`，`Export = Outside handoff surface`，`cleanup result = 收口结果词`。user-facing 前门若再把它们混叫成 `consumer / projection`，应优先视为边界退化而不是措辞小问题。
+- `reopen` 现在应被长期视为 verdict 之后的用户侧恢复链，而不是 `durable-transient cleanup` 的尾词。更稳的顺序是：先 `truth-surface -> decision window -> durable-transient cleanup`，再另判 `signer + evidence + reopen`；凡是把 `reopen` 并进 cleanup 槽的写法，都在偷混治理 verdict 与恢复签发。
+- 下一条源码质量目录精修线也已被 sidecar 收敛：`navigation/04` 不能再继续扮演目录宪法 owner，`philosophy/87` 也不该再把 speaking-rights 正式回指给它。若继续推进源码质量线，优先做 demotion propagation，不优先再改高阶哲学论点。
+- 这条源码质量目录纪律现已进一步固定为：`navigation/04` 只配做 next-hop，不再展开目录宪法正文；各目录 README 负责各自边界；`guides/102` 负责 canonical rung 与降格规则；`navigation/README` 负责跨目录 next-hop。任何 route 页若开始提前指定某篇深页的 owner 身份，就又在制造第二套入口政治。
+- `philosophy/87` 这类源码质量 owner 页可以提出“目录是否又多 writer”这类自校，但不该再把 speaking-rights 本身正式托管给 `navigation/04`；源码质量线更稳的做法是只点名混层风险，再把目录边界回给 README / `guides/102` / `navigation/README` 这三层。
+- Prompt 线的长期 speaking-rights 现在应固定成四类页：`84 = frontdoor owner`，`81 = mechanism deep dive`，`63 = continuation / time-axis`，`33 = diagnostic naming`；`57` 只解释协作接口，`78` 只保留 compat jump / one-screen mnemonic。只要某页重新同时承担两类以上角色，就应优先视为 first-answer count 回潮。
+- Prompt README/目录页里也应直接命名 route 的角色，而不是只给数字链：`frontdoor appeal chain`、`mechanism deep dive`、`collaboration interface`、`compat jump` 这组标签比反复在正文里声明“canonical source 是 84”更稳，因为它把 speaking-rights 吸收进了结构本身。
+- Prompt 线后续若继续去魅，优先级也应改成“先改 page-role，再改比喻词”；比喻词还能活在兼容路径和历史文件名里，但 page-role 一旦混层，later maintainer 第一次看到的仍会是多 owner 结构。
+- 治理线的长期词法纪律也应再固定一条：`security/` 优先说 signer / ledger / cleanup authority 机制面，`risk/` 才说用户侧结算面；`结算面 / 外显 / crosswalk` 这组词只要越出自己的目录职责，就会把 canonical chain 改写成 audience bridge。
+- `architecture/83` 这类 canonical 机制页里，表头和导语也应尽量用对象词而不是读者词。`observable projection` 比 `host-facing read` 更稳，`运行时最短对照 / 运行时最小 failure order` 也比“later maintainer、宿主与 builder 共用”更不容易把机制页写成说明书。
+- 源码质量线也应继续固定一条目录纪律：`guides/102` 负责 canonical rung 与降格规则，`01 / philosophy/76` 只负责 atlas / projection locator，`02` 只负责使用层诊断句，`philosophy/README` 只负责高阶入口而不并排摆第二套压缩链。只要 atlas/projection 别名重新出现在前门公式里，就优先视为第二套 ladder 回潮。
+- 对源码质量 residual 的更稳处理方式不是“把旧别名解释得更清楚”，而是让旧别名退出 frontdoor 可见句，只保留 canonical rung 和一个明确归口：`atlas / projection 别名只作 locator，不作首答词`。
+- 治理哲学页若仍要保留 `外显` 这类包装词，最稳的位置是 H1 或总结句，而不是中段 canonical 定义。中段一旦出现“这三件事只是……的外显/显形”，读者会更容易把治理链读成显现学总结，而不是对象链本身。
+- Prompt 深页在 page-role 已经分清后，也应继续执行一条正文词法纪律：`神秘 / 咒语 / 魔力 / 更会说` 这类对照词应优先让位给 `文案模板 / 不可解释配方 / 文案技巧 / 更会组织措辞 / 可检验条件`。否则页面虽然不再抢首答权，正文仍会把读者拉回旧 framing。
+- 治理线若继续收 visible label，优先级现在应改成：先收中段 canonical 定义，再收 H1 和相邻 README 的可见链接标签。这样既不会把包装词一刀切光，也能确保高流量前门先看到的是对象链而不是显现学比喻。

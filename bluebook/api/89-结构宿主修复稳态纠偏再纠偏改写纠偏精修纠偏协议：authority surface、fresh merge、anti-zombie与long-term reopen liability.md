@@ -64,6 +64,10 @@ Claude Code 当前并没有公开一份名为：
 
 所以结构 refinement correction 真正要被宿主消费的不是恢复叙事，而是 authority、writeback、lineage、merge、anti-zombie、transport 与 reopen 边界继续可验证地成立。
 
+这里还应再多记一句：
+
+- `lineage resume` 不构成第四类结构协议；它只是宿主用来证明“恢复回来的仍是同一个 authority object”的证据槽。
+
 ## 3. 会话、authority 与 single-source 托管
 
 结构宿主应至少围绕下面对象消费 refinement correction 真相：
@@ -135,6 +139,7 @@ Claude Code 当前并没有公开一份名为：
 - `lineage` 不是一次幸运 reconnect
 - `fresh merge` 不是 last-write-wins
 - `anti-zombie` 不是“现在很安静”，而是旧 writer 与旧 generation 真的已经失去回写资格
+- `resume` 也不是结构主语，而只是 `lineage`、`fresh merge` 与 `anti-zombie` 在 continuity 时间轴上的消费者。
 
 ## 5. transport、fail-closed 与长期 reopen 责任面
 

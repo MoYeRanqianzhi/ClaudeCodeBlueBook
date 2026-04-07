@@ -11,6 +11,17 @@
 
 只有把这两本账分开，`pending_action`、`resume`、`compact`、worktree 恢复这些东西才不会混写。
 
+更稳的去魅句还要再多记三条：
+
+1. `protocol transcript != display transcript`
+   - 能被滚屏看见的历史，不等于恢复器消费的协议主链。
+2. `recovery asset != current-truth signer`
+   - metadata、sidecar、compact summary 帮助恢复，但不单独签当前世界。
+3. `resume restores worksite, not sovereignty`
+   - `/resume` 恢复的是工作现场资格，不是无条件接管旧路径、旧权限或旧 pending state。
+
+display transcript 可以帮助定位问题，但真正决定还能不能继续的仍是 message chain、boundary、required assets 与 session metadata。
+
 ## 实时账：`SessionState` + `RequiresActionDetails`
 
 `src/utils/sessionState.ts` 给出了一个很清晰的定义：
@@ -35,6 +46,15 @@
 - 让长任务在还没结束时也能显示进度
 
 但它们不是恢复闭环的主依据。写 userbook 时，应该把它们写成观察面，而不是恢复面。
+
+## progress、duplicate 与 zombie 都不该写回主链
+
+源码里至少有两条很硬的反漂移纪律：
+
+1. `sessionStorage.ts` 明写 progress 不是 transcript participant，旧 progress 只配被 bridge 掉，不能继续留在 parentUuid 主链里。
+2. `structuredIO.ts` 明写 duplicate control_response 不能再推第二份 assistant 轨迹，否则会把旧 tool_use 重新写成当前消息链。
+
+这说明 Claude Code 保护的不是“所有历史都回放”，而是“只有仍合法的协议主链才配继续写回现在”。
 
 ## 恢复账：transcript JSONL + metadata + sidecar
 
@@ -62,6 +82,12 @@
 
 - session metadata 不是附属 UI 信息。
 - 它们是恢复账的一部分。
+
+更硬一点说，这里维护的不是“尾部信息还在不在”，而是：
+
+1. 哪些 bytes 仍配留在恢复主账。
+2. 哪些 witness 只要被盖回尾部窗口，就足以重新装配继续资格。
+3. 哪些历史若继续强留，只会让系统靠 replay transcript 假装自己还没失忆。
 
 ## worktree 状态也属于恢复账
 
@@ -101,6 +127,18 @@
 
 - 把恢复账重写成更小但还能继续工作的版本
 
+这也意味着 continuity system 的真正预算器不是 token 条本身，而是：
+
+1. 哪些内容仍有 `reload value`。
+2. 哪些 stable bytes 应外置后再按同一 load law 带回。
+3. 哪些高波动 progress、旧 blocker 与过期推导必须被逐出主账，避免继续资格退化成“只剩故事还说得通”。
+
+## 进入这一层前的 first reject signal
+
+1. 你把滚屏 transcript 当成 `/resume` 的主链，而不是把它先分成 display 与 protocol 两层。
+2. 你把 `pending_action`、`task_summary` 或 `post_turn_summary` 当成恢复资格，而不是把它们看成观察面。
+3. 你把旧 `worktreePath`、title、tag 或 compact summary 当成 current truth signer，而不是恢复资产。
+
 ## 稳定主线与条件边界
 
 ### 稳定主线
@@ -134,6 +172,10 @@
 ### 结论 3
 
 `/resume`、`/compact`、`memory`、worktree 恢复应被看成同一连续性系统的不同时间尺度，而不是几条互不相干的命令。
+
+### 结论 4
+
+恢复做得越强，越要警惕恢复资产越权；真正成熟的连续性，不是让旧状态自动回来，而是让旧状态只能在仍合法时回来。
 
 ## 源码锚点
 

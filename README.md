@@ -2,6 +2,10 @@
 
 面向 `claude-code-source-code/` 的 Claude Code 蓝皮书工程。仓库现在只先分清四类入口：蓝皮书正文、面向使用者的 userbook、研究与记忆层、源码镜像；根 README 只负责把这四类入口分开，不再承担深层阅读路线。
 
+这里还应再多记一句：
+
+- 安全与省 token 不是两道并列题，而是同一条治理收费链的两种外观；先定题，不先找页。
+
 ## 先选入口
 
 - [bluebook/README.md](bluebook/README.md)
@@ -37,4 +41,5 @@
 
 - 根 README 只保留一级路由，不重复展开目录深链。
 - 深层分流交给各目录 `README` 和 `bluebook/navigation/README.md`。
+- 治理 / 权限 / Token 问题若还没先判 `pricing-right / truth-surface`，就先别进 `navigation/`；它只做跨目录 next-hop，不代签 `reject / reopen`。
 - `docs/` 记录过程与记忆，不回灌蓝皮书正文主语。

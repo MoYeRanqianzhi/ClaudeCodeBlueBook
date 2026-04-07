@@ -18,7 +18,7 @@
 - `claude-code-source-code/src/query/stopHooks.ts:84-214`
 - `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
 - `../architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md`
-- `../philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`
+- `../philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md`
 
 这些锚点共同说明：
 
@@ -72,6 +72,10 @@
 - `transcript_conflation`
 - `continuation_story_only`
 
+这里还应再多记一句：
+
+- `compact / fork / resume / handoff` 不构成第四类 Prompt 机制；它们只是 `Continuation` 这一 rung 在时间轴上的不同 consumer。
+
 ## 2. 苏格拉底诘问链
 
 ### 2.1 现在到底是谁在定义世界
@@ -109,6 +113,7 @@
 判断标准：
 
 - 如果 compact 后只能知道“发生过什么”，却不知道“下一步受什么约束”，那 lawful forgetting 还没成立。
+- 如果 compact / handoff / resume 之后剩下的只是更完整的 prose，而不是仍可被后续消费者继续解析的 `continuation qualification`，那 continuity 就已经从 Prompt 时间轴退回摘要体验。
 
 ### 2.6 旁路循环复用的是同一个世界，还是各自重建近似世界
 

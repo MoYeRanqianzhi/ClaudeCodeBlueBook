@@ -12,11 +12,36 @@
 
 - `05` 先回答“哪条控制面现在在说真话”，再决定你该继续、切换、降级还是退出。
 
+如果继续把治理控制面也压成用户侧 first-answer order，这一层最稳的短句还应再补一句：
+
+- 用户侧治理判断仍先走 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`；approval、mode、modal 只配做治理投影，`/status / /doctor / /usage` 只配做 runtime projection，`Compact / Resume / Memory` 只配做 continuation consumer，`Export` 只配做 `Outside` handoff surface，`cleanup result` 只配做收口结果词。
+- 换句话说，`05` 的治理顺序应与 `security/README` 的机制顺序、`risk/README` 的用户侧结算顺序严格同序，而不是只共享 noun。
+- 更稳一点说，`/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory` 只配做 continuation consumer；`Export` 只配做 `Outside` handoff surface；真正 verdict 仍留在 `truth-surface -> decision window -> durable-transient cleanup`，用户侧恢复仍留在 `signer + evidence + reopen`。
+
+更硬一点说，`05` 在 `userbook/` 里的发言权也只该剩：
+
+1. `控制面判断翻译权`
+   - 把 Prompt / governance / current-truth 三条最小顺序翻成用户侧判断动作。
+2. `相邻替身拒收权`
+   - 直接点名哪些按钮、面板、状态词只是投影替身。
+3. `无 canonical 改判权`
+   - 它不替 `philosophy/` 重写公式，不替 `api/` 重签真相，不替 `playbooks/` 直接出 verdict。
+
 所以这层不是“更难的目录”，而是：
 
 1. 先给控制面判断
 2. 再给相邻入口为什么不能混用
 3. 最后才给更细的长文拆解
+
+这里也要先压住一个常见误读：`continuity` 不是第四条控制面；它只是 Prompt `continue qualification`、治理 `continuation pricing` 与当前真相 `cleanup-before-resume` 的共同时间轴。
+
+如果控制面页不能先回答这三件事，它就还是“控制面话题集合”，还不是用户真正可执行的判断层。
+
+进入控制面长文前，只先记一句：
+
+- 这里只翻译用户侧判断；证据上限、truth plane 与 rollback ceiling 统一回蓝皮书根前门与 `09`，不在 `05` 里重签一遍。
+- 这里只负责把 signer、projection、continuation consumer、`Outside` handoff surface 与 first reject path 翻成用户动作，不负责把 projection 重新抬回 signer。
+- `/status`、`/doctor`、`/usage` 在这一层也只配组成相邻 projection cluster，不配另起一条“运行时自检控制面”。
 
 ## 先按控制面，不按相邻按钮
 
@@ -28,24 +53,37 @@
 
 如果还说不清，就先回 `09 / 15 / userbook/01-主线使用`，不要在这一层继续背更长的入口列表。
 
-## 三组最小顺序怎样进入控制面层
+## 先判哪条控制面失真
 
-这一层真正承接的，就是最近几轮已经稳定下来的三组最小顺序：
+这一层真正承接的，不是再抄一遍对象链，而是把它们翻译成三句用户问法：
 
-1. Prompt witness order
-   - `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
-2. governance failure order
-   - `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
-3. current-truth reject order
-   - `shim exit condition -> recovery asset non-sovereignty -> stale authority eviction -> retreat layer`
+1. 这还是同一件工作吗
+   - 若目标、附件、handoff 或 summary 已经不再服务同一工作对象，优先按 Prompt 失真处理。
+2. 这是治理裁决吗
+   - 若你现在卡在继续、收口、降级、停止、清理后恢复或升级给人之间，就按治理失真处理，不要先盯投影替身。
+   - 更稳的最小顺序是：先判 `pricing-right / truth-surface`，再判 `typed ask / sandbox`，最后才判 `decision window / continuation pricing / durable-transient cleanup`。
+3. 这是旧状态污染吗
+   - 若旧目录、旧恢复资产、旧 capability 或旧 authority 在冒充现在，就按当前真相失真处理。
 
-如果某篇控制面长文没有明确告诉你自己主要承接的是哪一组顺序，它就还停在“对象解释页”，还没有真正承担控制面入口职责。
+更细的 object chain、truth plane 与 verdict family 统一回蓝皮书根前门与 `09 / api`；`05` 只负责把它们翻译成用户侧判断。
+
+如果 `05` 不能和根 `userbook/README`、`01`、`04` 共享同一组 first-answer order，它就会重新退回“控制面话题集合”，而不是用户真正可执行的判断层。
+
+如果继续把这一层的 speaking rights 写得更硬，还应再固定三句：
+
+1. signer 没锁定时，先别判真相
+   - 先退回 `09 / api / architecture`
+2. projection 说得再像，也只触发怀疑
+   - 不直接改判
+3. user-facing 最值钱的是 first reject path
+   - 先知道该拒收什么、退到哪层、再看深页拆解
 
 ## 进入控制面前的 first reject signal
 
 看到下面迹象时，应先停下来重审，而不是继续在相邻入口间来回切：
 
-1. 你在用 mode、modal、usage、compact 或 default continue 这些投影替身直接判断治理真相。
+1. 你在用 mode、modal、usage、default continue 这些投影替身，或把 `compact / resume` 这些 continuation consumer，直接拿来判断治理真相。
+   - 更直接地说，`/status / /doctor / /usage` 只配暴露 runtime projection；`/compact / /resume` 只配处理 continuation qualification 与 continuation pricing 相关的 consumer 动作，不配自己充当治理 verdict。
 2. 你在用 `systemPrompt` 截图、最后一条消息或 summary prose 直接判断 Prompt 是否仍在同一个世界里。
 3. 你在用目录体感、作者说明或“看起来能跑”直接判断当前真相边界。
 4. 你还没选定是该继续、降级、停止、清理后恢复还是升级给人，就已经在换入口。

@@ -12,6 +12,10 @@
 4. 为什么 compile-time / runtime / artifact 一旦混写，later maintainer 的 rejectability 就会崩塌。
 5. 怎样用苏格拉底式追问避免把这些反例读成“再补几条结构卫生规则”。
 
+这里还应再多记一句：
+
+- 这页里的 continuity 失真不是第四类结构问题；它只是 `current-truth surface -> recovery asset non-sovereignty -> freshness gate -> stale-writer rejection` 这条时间轴被健康投影、恢复成功率与作者记忆偷换后的失真样式。
+
 ## 0. 代表性源码锚点
 
 - `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
@@ -48,6 +52,8 @@ one writable present 验证最危险的，不是：
 而不再围绕：
 
 - 同一个 `single_writer_surface + recovery_asset_ledger + anti_zombie_evidence + release_surface_matrix + later_maintainer_rejectability`
+
+更硬一点说，这里真正坏掉的不是“恢复路径很多”，而是这些恢复 consumer 开始反向争夺 present truth 的签字权。
 
 ## 2. 健康投影篡位 vs single-writer authority continuity
 

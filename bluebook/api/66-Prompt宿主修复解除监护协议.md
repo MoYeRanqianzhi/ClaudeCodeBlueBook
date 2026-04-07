@@ -1,167 +1,140 @@
-# Prompt宿主修复解除监护协议：watch release object、stability witness、baseline drift ledger seal、continuation clearance、handoff release warranty与reopen residual gate
+# Prompt宿主修复解除监护协议：Authority、Boundary、Transcript、Lineage、Continuation 与 residual reopen gate
 
-这一章回答五个问题：
+这一章不是新的 Prompt 前门，而是 Prompt 主链已经成立之后的一条专题侧门：
 
-1. Claude Code 当前到底通过哪些正式对象让宿主、SDK、CI、评审与交接系统在 Prompt watch correction 之后消费解除监护、稳定释压与 residual reopen。
-2. 哪些字段属于必须消费的 Prompt watch release object，哪些属于 release verdict 语义，哪些仍然不应被绑定成公共 ABI。
-3. 为什么 Prompt 解除监护协议不应退回 watch note、handoff 文案与“最近没出事”。
-4. 宿主开发者该按什么顺序消费这套 Prompt watch release 规则面。
-5. 哪些现象一旦出现应被直接升级为 release blocked、monitor extended 或 reopen required，而不是宣布“观察结束”。
+- 它回答的不是“什么是 Prompt contract”，而是“在 post-watch / post-monitor 阶段，哪些 reopen 责任仍必须保留”
 
-## 0. 关键源码锚点
+因此这页继续继承同一条 same-world compiler：
 
-- `claude-code-source-code/src/constants/systemPromptSections.ts:20-65`
-- `claude-code-source-code/src/constants/prompts.ts:105-115`
-- `claude-code-source-code/src/constants/prompts.ts:343-347`
-- `claude-code-source-code/src/utils/api.ts:136-150`
-- `claude-code-source-code/src/utils/api.ts:321-405`
-- `claude-code-source-code/src/services/api/claude.ts:1374-1485`
-- `claude-code-source-code/src/services/api/claude.ts:3218-3236`
-- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:494-698`
-- `claude-code-source-code/src/utils/messages.ts:1989-2148`
-- `claude-code-source-code/src/utils/messages.ts:5133-5458`
-- `claude-code-source-code/src/services/compact/prompt.ts:293-337`
-- `claude-code-source-code/src/services/compact/compact.ts:330-711`
-- `claude-code-source-code/src/services/compact/postCompactCleanup.ts:31-66`
-- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
-- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1506-1531`
-- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
-- `claude-code-source-code/src/query/stopHooks.ts:257-331`
-- `claude-code-source-code/src/query.ts:1258-1518`
+1. `Authority`
+2. `Boundary`
+3. `Transcript`
+4. `Lineage`
+5. `Continuation`
+6. `Explainability`
 
-## 1. 先说结论
+## 0. 第一性原理
 
-Claude Code 当前并没有公开一份名为：
+Prompt 宿主修复解除监护真正要宣布的不是：
 
-- `PromptRepairWatchReleaseContract`
-
-的单独公共对象。
-
-但 Prompt 宿主修复解除监护实际上已经能围绕六类正式对象稳定成立：
-
-1. `watch_release_object`
-2. `stability_witness`
-3. `baseline_drift_ledger_seal`
-4. `continuation_clearance`
-5. `handoff_release_warranty`
-6. `reopen_residual_gate`
-
-更成熟的 Prompt 解除监护方式不是：
-
-- 只看最近没有告警
-- 只看 watch note 写得更完整
-- 只看 handoff 包似乎还能读
+- watch window 里最近没有告警
+- watch note 已经写完整了
+- handoff 包似乎还能继续读
 
 而是：
 
-- 围绕这六类对象消费 Prompt 世界怎样在停止额外监护之后，仍继续围绕同一个 `compiled request truth` 成立
+- 当前世界已经不再需要额外盯防，但 residual reopen 的正式能力仍被保留
 
-## 2. watch release object：最小解除监护对象
+所以这页最先要看的不是：
 
-宿主应至少围绕下面对象消费 Prompt 解除监护真相：
-
-1. `release_object_id`
-2. `source_watch_window_id`
-3. `restored_request_object_id`
-4. `compiled_request_hash`
-5. `stable_prefix_boundary`
-6. `release_scope`
-7. `release_evaluated_at`
-
-这些字段回答的不是：
-
-- 最近这一段时间看起来安不安静
+- `watch release object` 已经存在
 
 而是：
 
-- 当前到底围绕哪个 request object、从哪个 watch window 合法解除额外监护
+1. Authority 是否仍由同一个 winner 定义。
+2. Boundary 是否仍保住 stable prefix 与 lawful forgetting。
+3. Transcript 是否仍是模型真实消费的历史，而不是 watch note 的摘要版本。
+4. Lineage 是否仍能让 later 团队不继承值班者记忆也继续接手。
+5. Continuation 是否只是从“被监护资格”升级成“可继续资格”，而不是滑向默认继续。
+6. residual reopen gate 是否仍保留，而不是跟着监护一起被删掉。
 
-## 3. stability witness 与 baseline drift ledger seal
+## 1. 哪些对象必须被消费
 
-Prompt 宿主还必须显式消费：
+### 1.1 `Authority`
 
-### 3.1 stability witness
+宿主至少应消费：
+
+1. `authority_winner_ref`
+2. `restored_request_object_id`
+3. `compiled_request_hash`
+4. `watch_window_id`
+
+### 1.2 `Boundary`
+
+宿主还必须消费：
+
+1. `section_registry_snapshot`
+2. `stable_prefix_boundary`
+3. `lawful_forgetting_boundary`
+4. `baseline_drift_ledger_seal`
+
+### 1.3 `Transcript`
+
+宿主还必须消费：
 
 1. `protocol_truth_witness`
-2. `lawful_forgetting_witness`
-3. `continuation_consistency`
-4. `drift_free_span`
-5. `stability_attested`
+2. `transcript_boundary_attested`
+3. `projection_demoted`
 
-### 3.2 baseline drift ledger seal
+### 1.4 `Lineage`
 
-1. `baseline_drift_ledger_id`
-2. `unresolved_drift_count`
-3. `drift_ledger_closed_at`
-4. `seal_generation`
-5. `narrative_override_blocked`
+宿主还必须消费：
 
-这说明宿主当前消费的不是：
+1. `truth_lineage_ref`
+2. `compaction_lineage_ref`
+3. `resume_lineage_attested`
+4. `handoff_release_warranty`
 
-- 一段更像样的 watch 总结
-- 一次“最近没新问题”的运营判断
+### 1.5 `Continuation`
 
-而是：
+宿主还必须消费：
 
-- `stability_witness + baseline_drift_ledger_seal` 共同组成的 Prompt 解除监护证明
-
-## 4. continuation clearance、handoff release warranty 与 reopen residual gate
-
-Prompt 解除监护还必须消费：
-
-### 4.1 continuation clearance
-
-1. `required_preconditions`
-2. `pending_action_cleared`
-3. `continuation_qualification`
-4. `session_state_ready`
+1. `continuation_clearance`
+2. `required_preconditions`
+3. `rollback_boundary`
+4. `residual_reopen_gate`
 5. `clearance_expires_at`
 
-### 4.2 handoff release warranty
+### 1.6 `Explainability`
 
-1. `handoff_package_hash`
-2. `consumer_readiness_attested`
-3. `continuation_object_attested`
-4. `release_without_author_ok`
-5. `handoff_release_status`
+最后才允许暴露：
 
-### 4.3 reopen residual gate
+1. `release_card_id`
+2. `release_verdict`
+3. `release_reason`
+4. `watch_note_ref`
+5. `handoff_prose_ref`
 
-1. `residual_trigger_set`
-2. `rollback_boundary`
-3. `reopen_liability_record`
-4. `gate_retained_until`
-5. `reopen_required`
+`release card / watch note / prose` 只配当末端投影，不能再定义 released 与否。
 
-这三组对象回答的不是：
+## 2. 解除监护顺序建议
 
-- later 团队是不是现在大概能继续
-- 解除监护之后还能不能先试试看
+更稳的顺序是：
 
-而是：
+1. 先验 `Authority`
+2. 再验 `Boundary`
+3. 再验 `Transcript`
+4. 再验 `Lineage`
+5. 再验 `Continuation`
+6. 最后才给 `Explainability`
 
-- continuation 是否已经从“被监护资格”升级成“可继续资格”
-- 交接是否已经摆脱原作者记忆
-- residual reopen 条件是否仍被正式保留，而不是跟着监护一起遗忘
+不要反过来做：
 
-## 5. release verdict：必须共享的解除监护语义
+1. 不要先看最近是否无事发生。
+2. 不要先看 watch note 是否完整。
+3. 不要先看 later 团队是否主观放心。
+
+## 3. release verdict：必须共享的 post-watch 语义
 
 更成熟的 Prompt 宿主解除监护 verdict 至少应共享下面枚举：
 
 1. `released`
 2. `release_blocked`
 3. `monitor_extended`
-4. `stability_witness_missing`
-5. `narrative_release_rejected`
-6. `handoff_release_blocked`
-7. `residual_gate_retained`
-8. `reopen_required`
+4. `authority_recheck_required`
+5. `boundary_unsealed`
+6. `transcript_reconsume_required`
+7. `continuation_not_cleared`
+8. `residual_gate_missing`
+9. `reopen_required`
 
-这些 verdict reason 的价值在于：
+更值得长期复用的 reject trio 仍是：
 
-- 把“现在可以不盯了”翻译成宿主、CI、评审与交接都能共享的 Prompt post-watch 语义
+1. `authority_blur`
+2. `transcript_conflation`
+3. `continuation_story_only`
 
-## 6. 不应直接绑定为公共 ABI 的对象
+## 4. 不应直接绑定为公共 ABI 的对象
 
 宿主不应直接把下面内容绑成长期契约：
 
@@ -176,23 +149,16 @@ Prompt 解除监护还必须消费：
 
 它们可以是解除监护线索，但不能是解除监护对象。
 
-## 7. 解除监护顺序建议
+## 5. 苏格拉底式检查清单
 
-更稳的顺序是：
+在你准备宣布“Prompt 宿主修复已经 released”前，先问自己：
 
-1. 先验 `watch_release_object`
-2. 再验 `stability_witness`
-3. 再验 `baseline_drift_ledger_seal`
-4. 再验 `continuation_clearance`
-5. 再验 `handoff_release_warranty`
-6. 最后验 `reopen_residual_gate`
+1. 我现在 release 的是对象，还是一段更顺滑的值班叙事。
+2. `stability witness` 证明的是稳定，还是只是平静。
+3. `baseline drift ledger seal` 真的 seal 了 drift，还是只是暂时没人再看。
+4. handoff release 释放的是 continuation object，还是一段摘要故事。
+5. residual reopen gate 还在不在；如果不在，我是在 release，还是在删风险痕迹。
 
-不要反过来做：
+## 6. 一句话总结
 
-1. 不要先看最近是否无事发生。
-2. 不要先看 watch note 是否完整。
-3. 不要先看 later 团队是否主观放心。
-
-## 8. 一句话总结
-
-Claude Code 的 Prompt 宿主修复解除监护协议，不是观察期结束说明 API，而是 `watch release object + stability witness + baseline drift ledger seal + continuation clearance + handoff release warranty + reopen residual gate` 共同组成的规则面。
+Claude Code 的 Prompt 宿主修复解除监护协议，不是观察期结束说明 API，而是 `Authority + Boundary + Transcript + Lineage + Continuation` 共同证明“可以停止额外监护”，同时把 `residual reopen gate` 继续留在场上。

@@ -94,6 +94,7 @@ Claude Code 当前并没有公开一份名为：
 而是：
 
 - 当前到底先降级了哪些假 authority 投影，并把哪一条正式责任链重新交还给 later 消费者
+- `shared_consumer_surface` 在这里也不是“大家看同一句话”，而是四类消费者是否仍在只读消费同一个 repair verdict object
 
 ## 4. ledger/window truth 与 pricing object surface
 
@@ -123,8 +124,9 @@ Claude Code 当前并没有公开一份名为：
 这里最重要的是：
 
 - `decision window` 不是 usage 图表
-- `settled price` 不是“感觉还能继续”
+- `settled price` 不是“感觉还能继续”，而是 `continuation pricing` 已被正式结算的 runtime witness
 - classifier 也不是“免费的安全感”
+- `pricing_object_surface_attested` 保护的不是 dashboard 重新转绿，而是 later consumer 仍能沿同一个 pricing object 复算为什么可以继续
 
 ## 5. classifier/writeback/ingress 与 shared reject semantics
 
@@ -157,6 +159,7 @@ Claude Code 当前并没有公开一份名为：
 - `requires_action -> pending_action -> session_state_changed` 不是 UI 小状态，而是安全与成本共用的宿主真相缝
 - `ingress / restore` 也不是恢复成功率，而是 later 团队能否沿同一条责任链重新进入
 - `shared reject semantics` 不是四类角色各自的继续标准
+- `consumer_projection_demoted` 的意义不是消灭 projection，而是拒绝任何 projection 越级成 pricing object 或 shared reject semantics 的 owner
 
 ## 6. cross-consumer repair attestation 与 long-horizon reopen liability
 

@@ -1,22 +1,29 @@
 # 安全专题索引
 
-`security/` 当前有 260 篇正文，范围 `00-259`；`appendix/` 当前有 243 篇速查文档；`source-notes/` 当前有 110 篇源码剖面。
+`security/` 当前有 260 篇正文，范围 `00-259`；`appendix/` 当前有 243 篇速查文档；`source-notes/` 当前有 111 篇源码剖面。
 
 `security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，不要急着把安全页读成另一套规则堆。
+`security/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这次在失真的到底是 signer、ledger 还是 cleanup 工作对象，再判它卡在治理收费链的哪一段，最后才决定读机制前门、速查表、源码证据簇还是具体编号正文。
 
 本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及从 `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention -> honesty -> isolation -> constitution -> rationale -> metadata -> runtime-conformance -> anti-drift verification -> repair -> migration -> sunset -> tombstone ...` 一路推进到 stronger-request cleanup 家族的同构治理链。
 
 如果只先记安全前门的一句话，也只记这句：
 
-- 这不是第二套安全故事，而是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链在安全侧的结算面。
+- 这不是第二套安全故事，而是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链在安全目录里的机制翻译。
+
+这里还应再多记一句：
+
+- `continuity` 在安全目录里也不是第四类安全主题；它只是 `decision window -> continuation pricing -> durable-transient cleanup` 这段时间轴在安全侧的继续资格与清算资格。
 
 ## 先记四句
 
-- 安全不是单点沙箱，也不是单点分类器，而是一套 signer、ledger 与 lifecycle control plane。
-- `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 不是安全页和省 token 页的拼接，而是同一条治理收费链。
+- 安全不是单点沙箱，也不是单点分类器；它是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 在 signer authority、truth-surface attestation、ask arbitration、continuation pricing 与 cleanup authority 上的安全侧翻译。
+- `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 不是两条结果词前门的拼接，而是同一条治理收费链。
 - 完成、终局、遗忘、清理与家族级 cleanup 都各有 signer；任何弱层都不配替强层宣布“已经没事了”。
-- 宿主不该自己从事件流回放拼当前真相；更稳的做法是消费 runtime 已外化的 authority / status / verdict。
+- 宿主不该自己从事件流回放拼当前真相；更稳的做法是消费 runtime 已外化的 truth-surface / decision window / cleanup verdict。
+- 任何 user-facing 状态、诊断、压缩或导出入口，都只配读取已外化的 truth-surface、decision window 与 cleanup verdict，不配定义治理真相、继续资格或恢复资格。
+- `shared_consumer_surface` 只表示不同 reader 是否仍在只读消费同一个 verdict object，不表示谁拥有 current truth；projection 字段层继续回 `appendix/87`，reprojection 分层继续回 `appendix/159`。
 
 如果把安全前门继续压成最短公式，也只剩三条：
 
@@ -25,9 +32,25 @@
 2. `decision window -> continuation pricing`
    - 当前扩张还配不配继续，继续是否仍值得付费
 3. `durable-transient cleanup`
-   - 谁配宣布已经没事了，哪些 signer / ledger / cleanup 结果词只配当投影
+   - 哪些 transient authority 必须清退，哪些 durable asset 还能继续被承认
+
+如果继续把这条机制链再压成跨宿主都能对照的三段顺序，也只该再补一句：
+
+- 先判 `pricing-right / truth-surface`
+- 再判 `typed ask / sandbox`
+- 最后才判 `decision window / continuation pricing / durable-transient cleanup`
+
+如果继续把 `security/` 的目录发言权也压成最短公式，也只该剩三句：
+
+1. `signer / ledger / cleanup authority`
+   - 谁配签字、谁只配记账、谁只配收口。
+2. `governance mechanism speaking right`
+   - 哪条 signer / verdict / liability 机制在安全侧被看清。
+3. `no user-side mechanism override`
+   - 用户侧误伤、恢复与入口语义差不在这里第一次定义机制主语。
 
 如果一个安全判断还压不回这三条，它就还停在规则堆或工具堆层。
+如果一个安全判断还答不上“它保护的到底是哪种工作对象、哪段收费链、哪个入口只是证据层 consumer”，就说明它还没压回第一性原理。
 
 ## 高阶前门
 
@@ -37,8 +60,8 @@
   第二张图先回答“扩张如何被定价”。
 - [治理收费链为什么不是两套优化](../philosophy/19-%E5%AE%89%E5%85%A8%E4%B8%8EToken%E7%BB%8F%E6%B5%8E%E4%B8%8D%E6%98%AF%E6%9D%83%E8%A1%A1%E8%80%8C%E6%98%AF%E5%90%8C%E4%B8%80%E4%BC%98%E5%8C%96.md)
   看为什么治理收费链在动作、上下文与时间三面是同一优化。
-- [宿主体验为什么只是治理收费链的外显](../philosophy/22-%E5%AE%89%E5%85%A8%E3%80%81%E6%88%90%E6%9C%AC%E4%B8%8E%E4%BD%93%E9%AA%8C%E5%BF%85%E9%A1%BB%E5%85%B1%E7%94%A8%E9%A2%84%E7%AE%97%E5%99%A8.md)
-  看为什么体验只是这条治理收费链对外的结果。
+- [扩张定价为什么会投影成安全、成本与体验](../philosophy/22-%E5%AE%89%E5%85%A8%E3%80%81%E6%88%90%E6%9C%AC%E4%B8%8E%E4%BD%93%E9%AA%8C%E5%BF%85%E9%A1%BB%E5%85%B1%E7%94%A8%E9%A2%84%E7%AE%97%E5%99%A8.md)
+  看为什么这些可见外观不是第三个独立目标，而只是这条治理收费链的投影。
 - [architecture/83：反扩张治理流水线](../architecture/83-%E5%8F%8D%E6%89%A9%E5%BC%A0%E6%B2%BB%E7%90%86%E6%B5%81%E6%B0%B4%E7%BA%BF%EF%BC%9Atrusted%20inputs%E3%80%81distributed%20ask%20arbitration%E3%80%81deferred%20visibility%E4%B8%8Econtinuation%20pricing.md)
   看治理控制面如何把 `governance key`、`externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup` 写成同一条流水线。
 
@@ -54,6 +77,7 @@
 - 当你已经知道统一定价治理成立，但还没回答 signer、ledger 与 cleanup 责任究竟落在哪些对象上。
 - 当你需要判断哪种扩张该被 ask、哪种 truth 必须外化、哪种 cleanup 不配越级宣布终局。
 - 当你需要把“安全”和“省 token”继续压成同一治理纪律，而不是并列专题。
+- 当你需要把 user-facing 的 runtime readback consumer 与 continuation consumer 退回它们各自只配消费的治理阶段，而不是再让 projection 词或 consumer 词冒充治理主语。
 
 ## 如果你只先判断一件事
 
@@ -76,8 +100,10 @@
 2. cleanup 结果词开始越级替 signer 和 verdict 说话
 3. `Later / Outside`、default continuation 或全量可见重新让免费扩张复活
 
-## 按问题进入
+## 继续下潜时
 
+- 只按对象 handoff 继续：来源主权、能力边界与显式降级看 `00-29`；当前真相、账本与 failure semantics 看 `30-138`；`receipt -> completion -> finality -> forgetting` 与 cleanup ladder 看 `147-224`。
+- 只按证据层 handoff 回跳：字段矩阵与速查表回 [appendix/README.md](appendix/README.md)，源码证据簇回 [source-notes/README.md](source-notes/README.md)，长期记忆与目录治理回 [../../docs/development/security/README.md](../../docs/development/security/README.md)。
 - 想看来源主权、权限模式、能力边界与显式降级：从 `00-29` 进入。
 - 想看当前真相、账本、恢复闭环、状态编辑与 failure semantics：从 `30-138` 进入。
 - 想看 signer ladder 从 `receipt -> completion -> finality -> forgetting`：从 `147-166` 进入。
@@ -129,7 +155,7 @@
 - 想定位“当前真相从哪里来、为什么恢复不等于完成”：先读 `30-69`。
 - 想看能力发布、状态编辑与恢复资格：先读 `70-99`。
 - 想看验证、迁移与工程化落地：先读 `100-138`。
-- 想直看治理链主干：先读 `147-259 -> appendix/131-243 -> source-notes/01-110`。
+- 想直看治理链主干：先读 `147-259 -> appendix/131-243 -> source-notes/01-111`。
 - 想快速查字段、词法、路由、签字权和速查表：直接去 [appendix/README.md](appendix/README.md)。
 - 想追具体源码证据簇：直接去 [source-notes/README.md](source-notes/README.md)。
 
@@ -144,8 +170,8 @@
 
 ## 维护约定
 
-- `security/README` 只保留前门判断、编号段职责、核心判断和代表性入口，不再镜像全部正文标题。
-- `security/README` 只负责治理 signer / ledger / cleanup 前门，不和 `risk/` 抢用户侧结算面，也不和 `playbooks/` 抢执行链。
+- `security/README` 只保留前门判断、编号段职责、代表性入口与分流，不再镜像全部正文标题。
+- `security/README` 只负责治理 signer / ledger / cleanup 前门与机制解释权，不和 `risk/` 抢用户侧恢复与入口差异前门，也不和 `playbooks/` 抢执行链或现场 verdict 代签权。
 - 巨型目录库存、逐篇标题镜像和作者侧记忆不再回灌首页。
 - 深层速查和证据字典统一维护在 [appendix/README.md](appendix/README.md)。
 - 单机制、单协议、单文件群的源码剖面统一维护在 [source-notes/README.md](source-notes/README.md)。

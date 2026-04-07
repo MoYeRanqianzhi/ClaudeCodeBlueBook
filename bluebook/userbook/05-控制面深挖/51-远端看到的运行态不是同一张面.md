@@ -46,6 +46,11 @@
 - 不重复 30 页对连接告警、后台任务与 ownership 的运行态面
 - 不重复 50 页对 CCR v2 worker init / keep_alive / self-exit 的生命周期合同
 
+还要再补一句 signer 纪律：
+
+- 这六类对象都只是远端运行态投影面
+- 它们最多触发怀疑，不直接签 current truth、continue verdict 或 recovery authority
+
 ## 第一层：`worker_status` 只回答“当前大相位是什么”，不回答具体卡点
 
 ### `SessionState` 本身只有三态
@@ -83,6 +88,13 @@
 
 - `worker_status`：粗粒度 phase
 - 其他面：解释 phase 的具体上下文
+
+所以 first reject path 也该先固定成：
+
+1. 别把 `worker_status` 当完整运行态
+2. 别把 `requires_action_details / pending_action` 当 phase signer
+3. 别把 `task_summary / post_turn_summary` 当恢复主账
+4. 真要判 signer，退回 current-truth / restore / writeback 层
 
 只要这一层没拆开，正文就会把：
 

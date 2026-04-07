@@ -34,7 +34,7 @@ Claude Code 当前并没有公开一份名为：
 
 的单独公共对象。
 
-但治理宿主修复稳态再纠偏改写纠偏实际上已经能围绕十一类正式对象稳定成立：
+但治理宿主修复稳态再纠偏改写纠偏实际上已经能围绕十二类正式对象稳定成立：
 
 1. `rewrite_correction_session_object`
 2. `false_authority_demotion_set`
@@ -42,11 +42,14 @@ Claude Code 当前并没有公开一份名为：
 4. `ledger_reseal`
 5. `decision_window_refreeze`
 6. `continuation_pricing_rebinding`
-7. `classifier_pricing_attestation`
-8. `writeback_seam_reseal`
-9. `capability_liability_recustody`
-10. `threshold_rebinding`
-11. `rewrite_correction_verdict`
+7. `pricing_right_restitution`
+8. `classifier_pricing_attestation`
+9. `writeback_seam_reseal`
+10. `capability_liability_recustody`
+11. `threshold_rebinding`
+12. `rewrite_correction_verdict`
+
+上面这十二类对象还可以继续收口成三段执行主语：`pricing-right restitution -> truth-surface attestation -> asset-rollback ABI`；`governance key / typed ask ledger / decision window / continuation pricing / classifier pricing / writeback seam / capability liability / threshold` 都只应继续作为这三段下的 evidence slot，而不是重新并列成八个一级对象。
 
 更成熟的治理 rewrite correction 方式不是：
 
@@ -56,7 +59,7 @@ Claude Code 当前并没有公开一份名为：
 
 而是：
 
-- 围绕这十一类对象消费统一定价控制面怎样把 rewrite correction 重新拉回同一个 `governance key`、同一条 typed ask ledger、同一个 decision window、同一个 continuation pricing covenant、同一个 classifier 定价、同一个 writeback seam、同一个 capability liability 与同一个 reopen threshold
+- 围绕这十二类对象消费统一定价控制面怎样把 rewrite correction 重新拉回同一个 `governance key`、同一条 typed ask ledger、同一个 decision window、同一个 continuation pricing covenant、同一个 pricing right、同一个 classifier 定价、同一个 writeback seam、同一个 capability liability 与同一个 reopen threshold
 
 这层真正统一的不是两套不同能力，而是同一条：
 
@@ -164,10 +167,20 @@ Claude Code 当前并没有公开一份名为：
 4. `free_continuation_blocked`
 5. `repricing_expires_at`
 
+### 5.3 pricing right restitution
+
+1. `pricing_authority_ref`
+2. `pricing_scope`
+3. `pricing_generation`
+4. `repricing_delegate_ref`
+5. `charged_expansion_classes`
+6. `pricing_right_restituted_at`
+
 这里最重要的是：
 
 - `decision window` 回答的是“当前还能承受什么”
 - `continuation pricing` 回答的是“这次继续到底要付什么”
+- `pricing right restitution` 回答的是“谁有资格把这笔价格签下来”
 
 它们共同定义了同一条扩张准入链，而不是两份互不相干的运营说明。
 
@@ -228,7 +241,8 @@ Claude Code 当前并没有公开一份名为：
 7. `window_truth_missing`
 8. `classifier_cost_unpriced`
 9. `capability_liability_unbound`
-10. `threshold_rebinding_missing`
+10. `pricing_authority_unbound`
+11. `threshold_rebinding_missing`
 
 这些 verdict reason 的价值在于：
 

@@ -59,6 +59,19 @@
 
 `连续性可以续接，但一旦不能续接，就必须换届，不能混关。`
 
+如果继续把边界换届再压成最短的 boundary lifecycle，也只该剩四格：
+
+1. `continuation`
+   - 同一边界继续生效，同一组 session-scoped ledger 继续有效。
+2. `succession`
+   - continuity 已断；旧边界先 archive，新边界再就任，并重绑 `window_floor_generation / pricing_floor_generation / liability_owner / reopen_required_when`。
+3. `suspension`
+   - 边界仍活着，只是本地 consumer 暂退；pointer 可以续租，但不等于正式退役。
+4. `retirement`
+   - result、archive、deregister、clear pointer 全部完成；旧边界不再拥有继续发言权。
+
+更硬一点说，成熟控制面不只要会“保持同一边界”，还要会在这四个 lifecycle state 之间合法切换，避免 suspension 冒充 continuation、succession 冒充自然延长、retirement 冒充可恢复挂起。
+
 ## 3. 源码已经说明：成熟控制面必须把“续接失败”升级成“正式换届”
 
 ## 3.1 Strategy 2 不是普通 fallback，而是旧边界退役与新边界就任

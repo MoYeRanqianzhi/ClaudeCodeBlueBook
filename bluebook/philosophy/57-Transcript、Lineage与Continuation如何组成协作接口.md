@@ -1,9 +1,9 @@
-# Prompt的魔力不在措辞，而在把意图编译成协作语法
+# Transcript、Lineage 与 Continuation 如何组成协作接口
 
 这一章回答四个问题：
 
-1. 为什么 Claude Code 的 prompt 魔力不该被理解成“提示词更会写”。
-2. 为什么 UI transcript 与 protocol transcript 的分离是这套魔力的前提。
+1. 为什么 Claude Code 的协作接口不该被理解成“提示词更会写”。
+2. 为什么 UI transcript 与 protocol transcript 的分离是这套协作接口的前提。
 3. 为什么 sticky prompt、suggestion、session memory 其实是同一协作接口在不同时间尺度上的投影。
 4. 这对 agent runtime 设计者意味着什么。
 
@@ -13,7 +13,7 @@
 
 - `Transcript -> Lineage -> Continuation`
 
-Claude Code 的 prompt 真正强，不在于：
+本页也不再承担 Prompt 首答，而只解释这三段如何组成协作接口。Claude Code 的 prompt 真正强，不在于：
 
 - 它更会措辞
 
@@ -30,7 +30,7 @@ Claude Code 的 prompt 真正强，不在于：
 
 ## 2. 为什么这不是“文案优化”
 
-如果 prompt 只是更好的文案，那么更强模型理应自动复制这套魔力。
+如果 prompt 只是更好的文案，那么更强模型理应自动复制这套协作接口。
 
 但 Claude Code 的源码反复说明，真正起作用的不是几句 instruction，而是：
 
@@ -81,7 +81,7 @@ Claude Code 的 prompt 真正强，不在于：
 2. suggestion 维护“下一步最可能怎么接”。
 3. session memory 维护“压缩或恢复后还能从哪里继续”。
 
-把这三者放在一起看，真正稳定的写法就不是“协作语法很强”，而是：
+把这三者放在一起看，真正稳定的写法就不是“协作语法很强”，而是“同一协作接口在不同时间尺度上继续成立”：
 
 - 它们都是同一 continuation interface 的投影
 
@@ -98,7 +98,7 @@ Claude Code 的 prompt 真正强，不在于：
 3. mailbox / task / notification 把 lineage object 接进运行时。
 4. handoff 结果必须能回写到主线程 continuation。
 
-所以所谓“协作语法很强”，真正的本体不是句式，而是：
+所以所谓“协作接口已经成立”，真正的本体不是句式，而是：
 
 - transcript grammar
 - lineage object
@@ -131,4 +131,4 @@ Claude Code 的 prompt 真正强，不在于：
 
 ## 7. 一句话总结
 
-Claude Code 的 prompt 之所以有魔力，不是因为它更会说，而是因为它把意图写成了 `Transcript -> Lineage -> Continuation` 可持续协作语法，再让模型沿着这套语法继续行动。
+Claude Code 的 prompt 之所以能稳定协作，不是因为它更会组织措辞，而是因为它把意图写成了 `Transcript -> Lineage -> Continuation` 可持续协作接口，再让模型沿着这套接口继续行动。

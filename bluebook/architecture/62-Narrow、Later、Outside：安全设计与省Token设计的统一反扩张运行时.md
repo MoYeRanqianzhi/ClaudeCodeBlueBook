@@ -238,6 +238,41 @@ failure semantics 也因此不是后来补上的副产品，而是这条 runtime
 
 如果解释又退回权限弹窗、usage 条、compact 技巧或 default continue 这些投影替身，而不是回到 `governance key / decision window / continuation pricing / cleanup` 这组对象，这一章就已经在前门失真。
 
-## 7. 一句话总结
+## 7. 官方运行时证据：产品文档已经把 `Narrow / Later / Outside` 写成自治合同
+
+如果只看源码，本章已经能说明 `Narrow / Later / Outside` 是同一条反扩张运行时。
+
+但官方文档和 engineering 公开叙述又把这件事往前钉死了一层：
+
+1. `Security` 文档明确写出：
+   - 默认是 strict read-only；
+   - 写权限只限启动目录及其子目录；
+   - web fetch 使用单独 context window，避免把可疑 payload 直接注入主 agent。
+2. `auto mode` engineering 文明确写出：
+   - 有输入层 probe 和输出层 transcript classifier 两层防线；
+   - classifier 先跑 fast filter，只在被标红时才进入 reasoning；
+   - classifier 故意只看 `user messages + tool calls`，不看 assistant prose 与 tool outputs；
+   - subagent handoff 在 delegation 与 return 两端都再过同一条安全管线。
+3. `sandboxing` engineering 文明确写出：
+   - filesystem isolation 和 network isolation 必须一起成立；
+   - 这不是“少点提示框”的 UX 小优化，而是用预定义边界换自治；
+   - 内部样本里 prompt fatigue 被安全地压低了 `84%`。
+
+这三组公开证据合在一起，等于从产品外表再确认了一遍：
+
+1. `Narrow`
+   - 不是“别给太多”，而是先把可达世界、可写边界、可联网边界缩成正式合同。
+2. `Later`
+   - 不是“先等等”，而是 classifier reasoning、tool payload 与高波动内容只有在需要时才进入更贵的处理层。
+3. `Outside`
+   - 不是“放到别处省点 token”，而是让 sandbox、separate context window、externalized result 与 handoff summary 一起承担高风险 / 高体积对象。
+
+如果继续用苏格拉底式自校把这章写得更硬，还应再问三句：
+
+1. 我有没有把 `84%` 误读成“提示更少”，而没有看见它真正来自主权边界前置。
+2. 我有没有把 classifier 两阶段只写成成本技巧，而没有看见它同时在做风险分层与 token 分层。
+3. 我有没有把 sandbox / separate context window / transcript stripping 写成三个 feature，而没有看见它们都在回答同一件事：什么不配直接进入主 agent 当前世界。
+
+## 8. 一句话总结
 
 Claude Code 的安全设计和省 token 设计之所以能统一，是因为它反复使用 `Narrow / Later / Outside` 三种动作，持续压制模型可达世界的无序扩张。

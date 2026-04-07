@@ -1,39 +1,50 @@
-# Status、Doctor、Usage：运行时自检、额度与诊断
+# Status、Doctor、Usage：宿主状态、环境可信度与预算投影
 
-## 第一性问题
+## 先把它们读成运行时证据面
 
-Claude Code 要先解决的，不是“模型够不够聪明”，而是：
+在 `05` 这一层，这页真正值钱的不是新建一条控制面，而是先把三组 runtime evidence surface 分开：
 
 - 当前宿主状态到底是什么。
 - 当前工具环境到底值不值得信任。
 - 当前套餐和额度到底还能不能支持这次任务。
 
-这三件事分别投影成 `/status`、`/doctor`、`/usage`，但本质上都属于同一个控制面：运行时自检。
+这三件事分别投影成 `/status`、`/doctor`、`/usage`，但它们在这一层更该被读成同一组 runtime projection cluster，而不是第四条控制面或新的 verdict signer。
 
 如果你还想把 `/config`、`/cost`、`/stats`、`/statusline`、`/extra-usage` 这些邻接入口一起按 UI/控制面对象拆开，应继续看 `10-设置面板、诊断屏与运营命令：会内控制面的三层分工.md`。
 
 如果把这一页压成用户侧最小顺序，只该先做四步：
 
-1. 先过 `same-world test`
-   - 当前 `/status` 看到的还是不是同一个宿主现场。
-2. 再过 host trust
-   - 当前 `/doctor` 看到的工具环境还值不值得继续信任。
-3. 再过 `decision window`
-   - 当前 `/usage` 与 `Context Usage` 看到的 working set 是否仍有决策增益。
+1. 先看 `/status` 暴露的宿主状态投影
+   - 它有没有暴露 same-world / host-state drift，而不是自己签发“还是同一个现场”。
+2. 再看 `/doctor` 暴露的环境可信度投影
+   - 它有没有暴露 host trust / tool-environment drift，而不是自己签发“已经安全可用”。
+3. 再看 `/usage` 与 `Context Usage` 暴露的预算投影
+   - 它们有没有暴露 `decision window / continuation pricing` 的压力，而不是自己签发“还该继续付费”。
 4. 最后才调节模型、effort、节奏和成本观测。
 
-如果这四步反过来，最容易发生的就是：还没确认状态真相、环境可信度和预算窗口，就先去换模型、提 effort 或继续深挖。
+如果这四步反过来，最容易发生的就是：还没确认这些投影在暴露哪条上层 frontdoor 失真，就先去换模型、提 effort 或继续深挖。
 
 ## 进入本页前的 first reject signal
 
-看到下面迹象时，应先回到运行时自检顺序，不要直接去调参：
+看到下面迹象时，应先回到这组 runtime projection 的分工，不要直接去调参：
 
-- 你把 `/status` 当 about 页，而不是宿主状态真相的第一面。
+- 你把 `/status` 当 about 页，或直接把它抬成宿主状态 signer。
 - 你把 `/doctor` 当“装不上才跑一次”的工具，而不是 host trust 入口。
-- 你把 `Context Usage` 或 `/usage` 当 token 条，而不是当前 `decision window` 的诚实投影。
+- 你把 `Context Usage` 或 `/usage` 当 token 条，或直接把它抬成当前 `decision window` 的签发人。
 - 你还没确认状态、环境和预算，就已经在讨论“换更强模型”“调更高 effort”。
 
-## `/status` 解决的是宿主状态真相
+## 它们都是运行时投影，不是 continue verdict 的签发人
+
+更稳一点说：
+
+- `/status` 只投影当前宿主状态，不单独签发“这还是同一个工作现场”。
+- `/doctor` 只汇总可信度证据，不单独签发“这套环境已经安全可用”。
+- `/usage` 只投影预算窗口，不单独签发“这轮还值得继续付费”。
+
+真正的 verdict 到 `truth-surface -> decision window -> durable-transient cleanup` 为止先收口；若要恢复，再另沿 `signer + evidence + reopen` 去回读。对用户来说，这页最多只帮助你判断该继续、降级、停止、转入恢复链或升级给人；如果把这些动作直接写成这页的 verdict source，就又会把 projection 抬回本体层。
+更稳一点说，`/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory` 这些 continuation consumer 另在相邻页处理；`Export` 另归 `Outside` handoff surface；真正 verdict 仍留在 `truth-surface -> decision window -> durable-transient cleanup`，用户侧恢复仍留在 `signer + evidence + reopen`。
+
+## `/status` 解决的是宿主状态投影
 
 `/status` 不是 about 页，而是当前 CLI 会话的状态投影。
 
@@ -69,7 +80,7 @@ Claude Code 要先解决的，不是“模型够不够聪明”，而是：
 
 `/usage` 不是账单页，而是套餐和额度的运行时投影。
 
-它同样走 `Settings` 的 `Usage` tab，说明 Claude Code 把预算当成当前任务是否还能稳定推进的控制面。
+它同样走 `Settings` 的 `Usage` tab，说明 Claude Code 至少把预算投影公开成当前任务是否还能稳定推进的运行时观察面。
 
 对用户的实际意义：
 
@@ -80,7 +91,7 @@ Claude Code 要先解决的，不是“模型够不够聪明”，而是：
 
 - `/usage` 不是 token 条。
 - `Context Usage` 也不是 token 条。
-- 它们更接近当前 working set 还值不值得继续付费的 `decision window`。
+- 它们更接近 `decision window / continuation pricing` 的运行时投影，不等于这两个治理对象本身。
 
 误用边界：
 
@@ -91,16 +102,16 @@ Claude Code 要先解决的，不是“模型够不够聪明”，而是：
 
 因为它们回答的是同一个更深的问题：
 
-- `/status` 告诉你“我现在在哪个宿主状态里”。
-- `/doctor` 告诉你“这套宿主状态是否可信”。
-- `/usage` 告诉你“这套宿主状态是否还承受得起当前任务”。
+- `/status` 暴露你现在站在哪个宿主状态投影上。
+- `/doctor` 暴露这套宿主状态的可信度压力。
+- `/usage` 暴露这套宿主状态面对当前任务的预算压力。
 
 最稳的顺序通常是：
 
 1. 先看 `/status`。
 2. 状态异常时再看 `/doctor`。
 3. 长任务和高成本任务再看 `/usage`。
-4. 只有这三步过关后，再去调模型、effort、`/cost`、`/stats` 和 `/statusline`。
+4. 只有把这三组投影都读成上层 frontdoor 的证据后，再去调模型、effort、`/cost`、`/stats` 和 `/statusline`。
 
 ## 用户策略
 
@@ -113,6 +124,11 @@ Claude Code 要先解决的，不是“模型够不够聪明”，而是：
 如果你现在更想按“长任务如何运营节奏”来读，而不是按控制面来读，应继续看：
 
 - [../04-专题深潜/10-状态、额度、模型与节奏运营专题.md](../04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/10-%E7%8A%B6%E6%80%81%E3%80%81%E9%A2%9D%E5%BA%A6%E3%80%81%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%8A%82%E5%A5%8F%E8%BF%90%E8%90%A5%E4%B8%93%E9%A2%98.md)
+
+如果你已经不在判断证据面，而是在判断谁来重新签发恢复、cleanup 或 reopen，也不要继续停在本页：
+
+- 用户侧恢复与 reopen：回 [../../risk/README.md](../../risk/README.md)
+- 机制主语与治理 verdict：回 [../../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md) 与 [../../api/README.md](../../api/README.md)
 
 ## 源码锚点
 

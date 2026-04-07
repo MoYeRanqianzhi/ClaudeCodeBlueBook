@@ -1,4 +1,4 @@
-# Services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口
+# Services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口
 
 这一章回答五个问题：
 
@@ -44,7 +44,7 @@
 
 `services/` 不是“剩余杂项”目录，而是统一扩张定价秩序落成对象层的地方。
 
-这张 atlas 最关键的意义不是：
+这张源码地图最关键的意义不是：
 
 - 目录更多
 
@@ -200,4 +200,4 @@
 
 ## 10. 一句话总结
 
-`services/` 二级目录 atlas 真正统一的，不是“后台功能一共有多少”，而是每个长期子系统如何沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 暴露自己的正式入口。
+这页真正值钱的，不是把 `services/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：每个长期子系统究竟沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 哪一段暴露正式入口。

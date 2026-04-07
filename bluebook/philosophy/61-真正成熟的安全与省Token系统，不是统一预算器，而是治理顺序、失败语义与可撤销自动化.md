@@ -138,6 +138,17 @@ Claude Code 并不追求“检查越多越安全”。
 
 如果答案是否定的，系统就会停止继续烧 token。
 
+这里也要先拒绝一种常见误写：
+
+- `classifier` 不是治理控制面之外的免费裁判
+
+它只有在还能改变 `verdict` 时才值得调用；否则系统只是在用额外 token 购买“看起来更谨慎”的幻觉。
+
+最该点名的两种坏解也只该是：
+
+1. 危险 allow rule 已经让 classifier 失去仲裁空间，却还继续调用。
+2. allowlist、transcript 或 working set 已让结论稳定，却还继续用 classifier 购买谨慎表演。
+
 例如：
 
 1. 某些动作在安全 allowlist 下已足够确定，就不会再把成本继续丢给 classifier；

@@ -1,10 +1,10 @@
-# 真正有魔力的Prompt，首先会约束自己如何继续
+# Prompt 时间轴：先规定继续资格，再谈摘要连续性
 
 这一章回答五个问题：
 
 1. 为什么真正强的 Prompt 不该再被理解成“一轮里说得更好”。
 2. 为什么主语、共享前缀、合法遗忘与接手连续性必须一起看。
-3. 为什么 Prompt 的深层魔力来自它如何继续，而不是它如何开场。
+3. 为什么 Prompt 的深层效力来自它如何继续，而不是它如何开场。
 4. 为什么一个不能自我约束继续方式的 Prompt Constitution 最终会退回文案堆。
 5. 这对 agent runtime 设计者意味着什么。
 
@@ -19,11 +19,11 @@
 
 这些锚点共同说明：
 
-- Claude Code 的 Prompt 魔力，不在于它一次说服了模型，而在于它约束了当前、下一步与接手后如何继续服从同一套工作主语。
+- 本页不再承担 Prompt 前门，而只承担 `Continuation` 这一层的时间轴与继续资格；Claude Code 的 Prompt 效力，不在于它一次说服了模型，而在于它约束了当前、下一步与接手后如何继续服从同一套工作主语。
 
 ## 1. 先说结论
 
-真正有魔力的 Prompt，不是：
+真正有效的 Prompt，不是：
 
 - 让模型当前这一轮更像懂你
 
@@ -35,13 +35,17 @@
 4. 先固定删掉什么以后系统仍然能继续。
 5. 先固定后来者怎样接手，而不必重新读完全部历史。
 
-从第一性原理看，Prompt 的更深魔力不是：
+从第一性原理看，Prompt 的更深效力不是：
 
 - 让模型更会回答
 
 而是：
 
 - 让系统更会继续
+
+更硬一点说，真正值钱的也不是“这次总结得多顺”，而是：
+
+- `compact / fork / handoff` 之后留下来的，仍是不是同一条 `continuation qualification`
 
 ## 2. 第一层：主语稳定优于文案强势
 
@@ -59,7 +63,7 @@
 
 ## 3. 第二层：共享前缀优于重复讲背景
 
-很多系统以为要保住 Prompt 魔力，就该：
+很多系统以为要保住 Prompt 效力，就该：
 
 - 每次把背景讲得更全
 
@@ -71,7 +75,7 @@ Claude Code 相反。
 
 只要主线程已经生产出 cache-safe prefix，旁路循环就应该复用，而不是各自再造一套“差不多的世界”。
 
-所以它的魔力不是：
+所以它的效力不是：
 
 - 背景更多
 
@@ -87,7 +91,7 @@ Claude Code 更成熟的地方在于，它同样认真设计：
 
 - 忘掉什么后系统仍然合法
 
-这意味着 Prompt 魔力并不只是来自注入更多信息，还来自：
+这意味着 Prompt 效力并不只是来自注入更多信息，还来自：
 
 - 删除策略
 - 压缩策略
@@ -99,6 +103,9 @@ Claude Code 更成熟的地方在于，它同样认真设计：
 - 怎样忘
 - 忘完后怎样继续
 
+如果 compact、handoff 或 steady 之后留下来的只是一段更好读的 prose，而不再是仍可执行的 qualification object，系统就已经从 constitution 退回 narration。
+合法遗忘真正保留的也不是 prose 完整度，而是 `intent / constraints / next action / rollback boundary / threshold liability` 这组最小 witness set；能忘的是叙事密度，不能忘的是裁决依据。
+
 ## 5. 第四层：接手连续性优于单轮表现
 
 Prompt 若只让模型此刻更顺，却让人类和后续系统更难接手，那种“强”没有长期价值。
@@ -109,7 +116,7 @@ Claude Code 的高阶之处在于：
 - session memory 组织 handoff
 - transcript repair 组织恢复后的继续
 
-所以它的 Prompt 魔力不只是：
+所以它的 Prompt 效力不只是：
 
 - 让这一轮回答更好
 
@@ -117,14 +124,30 @@ Claude Code 的高阶之处在于：
 
 - 让接下来的继续成本更低
 
-## 6. 第五层：可解释失效优于神秘成功
+## 5.1 handoff 的合法反对权
+
+真正成熟的 handoff 不是把东西送出去就算完成，而是必须区分：
+
+1. `deliver`
+2. `admit`
+3. `accept / oppose`
+
+也就是说，later maintainer 不只配接收 handoff，还配合法反对它。更稳的 reject 理由至少包括：
+
+1. `summary_only_handoff`
+2. `witness_missing`
+3. `liability_hidden`
+
+如果交接包只能被“读懂”，却不能被“合法反对”，那它保住的仍然只是 prose continuity，而不是真正的 continuation contract。
+
+## 6. 第五层：可解释失效优于不可解释成功
 
 如果一个 Prompt 只能产生效果，却不能解释：
 
 - 为什么这次稳定
 - 为什么这次失稳
 
-那么它仍更接近咒语，而不是制度资产。
+那么它仍更接近不可解释配方，而不是制度资产。
 
 Claude Code 值得学的地方正在于：
 
@@ -135,11 +158,17 @@ Claude Code 值得学的地方正在于：
 
 这说明它追求的不是：
 
-- 神秘成功
+- 不可解释成功
 
 而是：
 
 - 可解释继续
+
+这里还要再多记一句：
+
+- `Explainability` 只配在 `Authority / Boundary / Transcript / Lineage / Continuation` 已经跑通之后出来命名稳定或失稳；`card / verdict / summary / handoff prose` 只能解释 qualification，不能重新定义 qualification。
+
+Prompt 尾段协议真正值钱的地方，也因此不是“release 后又多了几张卡”，而是 `residual reopen gate / threshold liability` 仍留在场上，继续保住 later maintainer 反对当前 steady 的能力。
 
 ## 7. 苏格拉底式追问
 
@@ -149,7 +178,7 @@ Claude Code 值得学的地方正在于：
 
 - 继续工作的主语秩序
 
-### 7.2 如果 Prompt 魔力来自更多上下文，为什么 Claude Code 还要认真设计遗忘与压缩
+### 7.2 如果 Prompt 效力来自更多上下文，为什么 Claude Code 还要认真设计遗忘与压缩
 
 因为长任务里真正要保住的从来不是更多文本，而是：
 
@@ -163,6 +192,14 @@ Claude Code 值得学的地方正在于：
 - 未来接手
 - 恢复后的继续
 
+### 7.4 如果 compact 之后留下来的只是故事，为什么这不算 Prompt 仍然成立
+
+因为被保住的若只是可读叙事，而不是可执行的 `continuation qualification`，系统已经失去同一世界，只剩同一语气。
+
+### 7.5 如果 release card、steady verdict 或 handoff prose 写得很完整，为什么它们仍不能当 Prompt 真相
+
+因为它们只是末端解释壳；一旦这些 Explainability 投影开始越位成主语，真正定义世界的就不再是 `Authority / Boundary / Transcript / Lineage / Continuation`。
+
 ## 8. 对 Agent 设计者的启发
 
 如果想学 Claude Code，最该抄走的不是：
@@ -175,4 +212,6 @@ Claude Code 值得学的地方正在于：
 2. 先固定共享前缀生产权，而不是允许多路重复造世界。
 3. 先设计合法遗忘，而不是只设计注入。
 4. 先设计接手连续性，而不是只设计单轮表现。
-5. 先让 Prompt 的失效可解释，而不是让它继续神秘地“看起来很强”。
+5. 先让 Prompt 的失效可解释，而不是让它只凭结果“看起来很强”。
+6. 先保住 `continuation qualification`，而不是先保住更顺滑的 summary prose。
+7. 先限制 Explainability 的越位范围，而不是让 card / verdict / handoff 文案反过来定义世界。

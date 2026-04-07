@@ -3,11 +3,20 @@
 `playbooks/` 固定接入、验收、修复与长期验证的执行判据、拒收条件与回归检查。
 这里只接受已经被承认的正式对象；如果你还在问“为什么如此设计”或“第一条反证信号是什么”，还没到 `playbooks/`。
 
+更硬一点说：
+
+- `playbooks/` 的职责不是解释对象链，而是对已经被承认的对象链出 verdict。
+
+这里也要先压住一个常见误读：`continuity` 不是第四类执行手册家族；它只是 Prompt `continue qualification`、治理 `continuation pricing` 与当前真相 `cleanup-before-resume` 在执行顺序上的共同时间轴。
+
 ## 什么时候进来
 
 - 当你已经有正式对象定义，需要把它们写进接入、验收、修复或长期验证的执行顺序。
 - 当你需要的不再是“为什么这样设计”，而是“下一步该验什么、拒收什么、回退什么”。
 - 当你已经经过 `09 / 05 / 15 / 41` 的高阶前门，准备把对象链压成现场顺序、reject verdict 与 rollback 边界。
+- 当你需要把 later maintainer 的局部反对权转成正式拒收、回退与 reopen 顺序，而不再停在“看起来不对”的体感层。
+
+更稳一点说，`playbooks/` 也必须继承 shared first-answer order：先判母线与对象、再判 verdict、rollback 与 reopen；如果顺序倒过来，执行手册就会重新退回“按模板代替对象链”。
 
 ## 如果你只先判断一件事
 
@@ -29,4 +38,5 @@
 - `playbooks/` 负责“怎么演练、怎么回归、怎么值班”，不复制方法论正文。
 - README 只保留判断式入口与稳定起点，不再展开长链路由。
 - README 只负责执行前门，不和 `41` 的第一性原理页或 `casebooks/` 的失真页混层。
+- README 应优先暴露 verdict、rollback 与 reopen 边界，不重新退回为什么如此设计的解释层。
 - 过程记录与变更记录统一回写到 `docs/`，不写进运行手册正文。

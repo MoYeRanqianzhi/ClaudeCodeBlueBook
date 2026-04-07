@@ -49,6 +49,8 @@
 6. `Explainability`
    - cache-break reason 与 continue 失效的对象级解释
 
+这里要先压住一个常见误读：`Continuation` 不是第四种 Prompt 机制；它只是同一条 same-world compiler 在 `compact / resume / handoff / fork` 上展开的时间轴。
+
 ## 1. 先说结论
 
 Claude Code 真正保护的不是：
@@ -190,6 +192,8 @@ Claude Code 更深的一层是：
 5. `continuation qualification`
 6. `threshold liability`
 
+这里的 `continuation object` 不是交接壳，而是同一条 `message lineage` 在 compact、resume、handoff 之后仍可继续行动的最小工作对象。换句话说，`lawful forgetting -> continuation object -> continuation qualification -> cache-safe fork reuse` 不是四个并列模块，而是同一条 `Continuation` 时间轴上的连续约束。
+
 如果 compact 之后只剩“更短的故事”，这就不是 lawful forgetting，而是对象蒸发。
 
 ## 6. Cache-Safe Forks：旁路循环不是第二主线程
@@ -197,6 +201,15 @@ Claude Code 更深的一层是：
 `stopHooks.ts`、`forkedAgent.ts`、`forkSubagent.ts`、prompt suggestion、memory extraction 与 `/btw` 这类机制揭示了同一条更深的设计律：
 
 - 旁路循环默认复用父前缀，而不是各自重写世界
+
+这里必须再补一刀：官方文档明确区分两种 continuation shape：
+
+1. shared-prefix helper path
+   - `/btw`、prompt suggestion、部分 memory/helper 循环优先复用父前缀
+2. fresh-context delegated path
+   - subagent 拥有自己的 context window、own prompt 与独立 capability boundary，只把 summary / artifact ref 回桥
+
+所以 `cache-safe fork` 与 `fresh-context subagent` 不能混写成同一种 continuation；前者保护 prefix continuity，后者保护 delegation isolation。
 
 这意味着：
 

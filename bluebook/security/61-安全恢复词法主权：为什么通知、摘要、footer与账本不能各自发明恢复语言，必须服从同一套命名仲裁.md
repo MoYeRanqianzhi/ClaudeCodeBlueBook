@@ -225,6 +225,19 @@ authoritative writer 不一定直接输出文案，
 2. 当前禁止哪些词
 3. 当前表达 ceiling 到哪一层
 
+如果继续把词法主权压成 later maintainer 最容易复用的 `ceiling / lease / revocation` 账本，也只该先记四个词：
+
+1. `connected`
+   - signer 只该是 transport / session layer；lease 只在链路仍有效时成立；disconnect / stale handshake 会撤销它。
+2. `active`
+   - signer 只该是当前 boundary owner；lease 只在 current boundary 仍存活时成立；archive / succession 会撤销它。
+3. `ready`
+   - signer 只该是 current-truth / writeback seam；lease 只在 capability 与 status 真正 reseal 后成立；`needs-auth / pending / liability_hold` 会撤销它。
+4. `resolved`
+   - signer 只该是 ledger / verdict layer；lease 只在 liability 清零且 reopen gate 关闭时成立；`reentry_required / reopen_required` 会撤销它。
+
+所以词法主权真正值钱的地方不是统一文案，而是每个词都带着 signer、租期和撤销触发器；display 层只能在 ceiling 以内说话，不能把局部绿灯抬成全局解决。
+
 ## 5.2 投影层只能转述，不能自造更强词
 
 BridgeDialog、`/status`、footer、notification 都可以：

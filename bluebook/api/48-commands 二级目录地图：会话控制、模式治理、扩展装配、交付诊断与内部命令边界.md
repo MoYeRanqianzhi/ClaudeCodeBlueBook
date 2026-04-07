@@ -1,4 +1,4 @@
-# Commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界
+# Commands 二级目录地图：会话控制、模式治理、扩展装配、交付诊断与内部命令边界
 
 这一章回答五个问题：
 
@@ -30,7 +30,7 @@
 
 `commands/` 不是“一堆 slash 命令”目录，而是 Claude Code 的显式控制平面。
 
-这张 atlas 最关键的意义不是：
+这张源码地图最关键的意义不是：
 
 - 命令有多少
 
@@ -144,7 +144,7 @@
 - `consumer subset`：
   - feature-gated、user-type-gated、external build eliminated 都只是特殊命令子集
 - `hotspot kernel`：
-  - 把 internal-only 命令误写成公开控制面，是命令 atlas 最常见的假承诺来源
+  - 把 internal-only 命令误写成公开控制面，是命令地图里最常见的假承诺来源
 - `mirror gap discipline`：
   - 一旦“代码里有命令”被误读成“产品支持”，先回 `INTERNAL_ONLY_COMMANDS` 与构建剔除边界
 
@@ -173,4 +173,4 @@
 
 ## 11. 一句话总结
 
-`commands/` 二级目录 atlas 真正统一的，不是“有哪些 slash 命令”，而是“哪些显式控制动作沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 被公开承诺、被裁切或被拒收”。
+这页真正值钱的，不是把 `commands/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：哪些显式控制动作沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 被公开承诺、被裁切或被拒收。

@@ -15,6 +15,11 @@
 
 否则，这张图很容易重新退回一张更大的功能清单。
 
+这里还应再固定一条 continuity 检索纪律：
+
+- 检索 `compact / resume / memory / handoff` 时，先把它们看成三条母线在时间维度上的 consumer，不把它们先写成第四类能力平面。
+- 更稳的分法是：`continue qualification` 回 Prompt 线，`continuation pricing` 回治理线，`recovery non-sovereignty / anti-zombie` 回源码质量线。
+
 所以用这张检索图时，最稳的起手式不是“Claude Code 有没有 X”，而是先问：
 
 1. 我现在要找的是存在性、可见性、被允许，还是产品承诺
@@ -69,6 +74,7 @@
 | 宿主如何接控制协议 | `api/13`、`api/14`、`api/15` | `architecture/13`、`architecture/15` |
 | 宿主如何拿到恢复与状态真相 | `api/16`、`api/17`、`api/19`、`api/20` | `architecture/16`、`architecture/17`、`architecture/25` |
 | prompt、知识、记忆从哪里注入 | `api/18`、`api/21` | `architecture/18`、`architecture/28`、`architecture/29` |
+| `compact / resume / memory / handoff` 为什么不是第四母线 | `09`、`navigation/05`、`navigation/15` | `navigation/41`、`userbook/02-能力地图/01-运行时主链/04-05`、`userbook/05-控制面深挖/03` |
 | prompt 为什么强到不像单段 system prompt | `09`、`philosophy/84` | `architecture/82`、`guides/99`、`playbooks/77`、`casebooks/73` |
 | 如果想先抓三条最高阶判断，而不是先读功能表 | `09`、`philosophy/84-87` | `guides/99-102`、`playbooks/77-79` |
 | plugin / MCP / MCPB / channels / LSP 到底边界在哪 | `api/22` | `architecture/27`、`philosophy/20` |
@@ -87,6 +93,12 @@
 3. 把产品成熟度直接写成协议支持度。
 
 这三件事必须持续拆开。
+
+对 continuity 检索尤其要先拆开三件事：
+
+1. `summary / snapshot / pointer / archive` 只是 recovery asset，不自动拥有 present verdict。
+2. `resume success`、状态转绿、标题匹配都只是结果词，不自动证明 `freshness gate` 还在。
+3. `memory / compact / export` 只是不同 consumer，不自动代表同一层 signer。
 
 ## 5. 推荐目录协议
 

@@ -1,84 +1,68 @@
-# 治理宿主修复解除监护协议：authority release、ledger residue clearance、window exit、continuation settlement、quarantine release与reopen liability
+# 治理宿主修复解除监护协议：governance key、typed ask、decision window、continuation pricing 与治理侧 reopen liability
 
-这一章回答五个问题：
+这一章不是新的高阶前门，而是治理主链已经成立之后的一条治理侧门：
 
-1. Claude Code 当前到底通过哪些正式对象让宿主、SDK、CI、评审与交接系统在治理 watch correction 之后消费解除监护、解除隔离与 residual reopen liability。
-2. 哪些字段属于必须消费的治理 watch release object，哪些属于 release verdict 语义，哪些仍然不应被绑定成公共 ABI。
-3. 为什么治理解除监护协议不应退回 mode 面板、usage dashboard 与“最近先保守点”。
-4. 宿主开发者该按什么顺序消费这套治理 watch release 规则面。
-5. 哪些现象一旦出现应被直接升级为 release blocked、monitor extended 或 reopen required，而不是宣布“观察结束”。
+- 它回答的不是“统一定价治理为什么成立”，而是“在 post-watch / post-monitor 阶段，治理对象怎样合法解除额外看护，同时仍保留治理侧 residual liability”
 
-## 0. 关键源码锚点
+因此这页继续继承同一条治理主链：
 
-- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:106-260`
-- `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:578-619`
-- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:337-348`
-- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1407-1450`
-- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1533-1541`
-- `claude-code-source-code/src/entrypoints/sdk/coreSchemas.ts:1735-1747`
-- `claude-code-source-code/src/cli/structuredIO.ts:362-657`
-- `claude-code-source-code/src/cli/print.ts:1052-1075`
-- `claude-code-source-code/src/cli/print.ts:4568-4641`
-- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:510-645`
-- `claude-code-source-code/src/utils/permissions/permissions.ts:1071-1318`
-- `claude-code-source-code/src/utils/sessionState.ts:92-149`
-- `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
-- `claude-code-source-code/src/utils/analyzeContext.ts:1098-1382`
-- `claude-code-source-code/src/query/tokenBudget.ts:22-92`
-- `claude-code-source-code/src/query.ts:1308-1518`
+1. `governance key`
+2. `externalized truth chain`
+3. `typed ask`
+4. `decision window`
+5. `continuation pricing`
+6. `durable-transient cleanup`
 
-## 1. 先说结论
+## 0. 第一性原理
 
-Claude Code 当前并没有公开一份名为：
+治理解除监护真正要宣布的不是：
 
-- `GovernanceRepairWatchReleaseContract`
-
-的单独公共对象。
-
-但治理宿主修复解除监护实际上已经能围绕六类正式对象稳定成立：
-
-1. `authority_release`
-2. `ledger_residue_clearance`
-3. `window_exit_certificate`
-4. `continuation_settlement`
-5. `quarantine_release`
-6. `reopen_liability_record`
-
-更成熟的治理解除监护方式不是：
-
-- 只看 mode 仍然安全
-- 只看 usage 面板重新转绿
-- 只看 later 团队愿意保守一点
+- mode 现在看着很稳
+- usage 面板重新转绿
+- later 团队愿意先保守一点
 
 而是：
 
-- 围绕这六类对象消费统一定价控制面怎样在停止额外监护之后，仍继续防止 authority 漂移、尾账复活、免费继续与责任失忆
+- 当前治理对象已经不再需要额外看护，但治理侧 residual liability 仍被保留
 
-## 2. authority release：最小解除监护对象
+所以这页最先要看的不是：
 
-宿主应至少围绕下面对象消费治理解除监护真相：
+- `authority release` 或 `reopen liability record` 已经出现
+
+而是：
+
+1. `governance key` 是否仍由同一 authority source 链定义。
+2. `externalized truth chain` 是否仍忠实外化当前窗口和状态。
+3. `typed ask` 是否已清尾，而不是只是看起来没有 modal 了。
+4. `decision window` 是否真的退出，而不是只让 usage 条消退。
+5. `continuation pricing` 是否真的结算，而不是把时间重新免费化。
+6. `durable-transient cleanup` 是否真的释放了隔离与残留责任，而不是把 liability 只留在说明里。
+
+## 1. 必须消费的治理 post-watch 对象
+
+### 1.1 `governance key`
+
+宿主至少应消费：
 
 1. `governance_object_id`
 2. `authority_source_before_release`
 3. `authority_source_after_release`
 4. `effective_settings_projection`
 5. `writer_chokepoint`
-6. `release_generation`
-7. `release_evaluated_at`
 
-这些字段回答的不是：
+### 1.2 `externalized truth chain`
 
-- mode 现在是不是看着很稳
+宿主还必须消费：
 
-而是：
+1. `session_state_changed`
+2. `worker_status`
+3. `external_metadata`
+4. `release_generation`
+5. `release_evaluated_at`
 
-- 当前到底围绕哪个治理对象、以哪个 authority 边界合法解除额外监护
+### 1.3 `typed ask`
 
-## 3. ledger residue clearance 与 window exit certificate
-
-治理宿主还必须显式消费：
-
-### 3.1 ledger residue clearance
+宿主还必须消费：
 
 1. `typed_decision_digest`
 2. `permission_ledger_state`
@@ -86,7 +70,9 @@ Claude Code 当前并没有公开一份名为：
 4. `late_permission_response`
 5. `residue_cleared`
 
-### 3.2 window exit certificate
+### 1.4 `decision window`
+
+宿主还必须消费：
 
 1. `decision_window`
 2. `pending_action_cleared`
@@ -94,55 +80,31 @@ Claude Code 当前并没有公开一份名为：
 4. `reserved_buffer`
 5. `window_exit_attested`
 
-这说明宿主当前消费的不是：
+### 1.5 `continuation pricing`
 
-- 一张仪表盘截图
-- 一次审批历史回看
+宿主还必须消费：
 
-而是：
-
-- `ledger_residue_clearance + window_exit_certificate` 共同组成的治理解除监护证明
-
-## 4. continuation settlement、quarantine release 与 reopen liability record
-
-治理解除监护还必须消费：
-
-### 4.1 continuation settlement
-
-1. `continuation_gate`
+1. `continuation_settlement`
 2. `token_budget_result`
 3. `settled_price`
 4. `next_action_allowed`
 5. `settlement_expires_at`
 
-### 4.2 quarantine release
+### 1.6 `durable-transient cleanup`
 
-1. `rollback_object`
-2. `quarantine_scope`
+最后才允许暴露：
+
+1. `quarantine_scope`
+2. `rollback_object`
 3. `baseline_reset_required`
 4. `quarantine_cleared`
-5. `capability_release_attested`
+5. `reopen_liability_record`
 
-### 4.3 reopen liability record
+这里最重要的是：
 
-1. `reopen_trigger`
-2. `liability_owner`
-3. `gate_retained_until`
-4. `residual_risk_digest`
-5. `reopen_required`
+- `reopen liability` 在这一页只属于治理对象链的尾段责任，不是 Prompt `Continuation` 的通用别名，也不是结构 `reservation boundary` 的跨页主语
 
-这三组对象回答的不是：
-
-- 安全现在是不是终于恢复正常
-- token 现在是不是终于降下来了
-
-而是：
-
-- continuation 是否已经重新回到正式定价，而不是重新免费化
-- quarantine 是否已经合法释放，而不是只在面板上消失
-- residual reopen 责任是否被保留下来，而不是随着解除监护一起失踪
-
-## 5. release verdict：必须共享的解除监护语义
+## 2. release verdict：必须共享的治理侧语义
 
 更成熟的治理宿主解除监护 verdict 至少应共享下面枚举：
 
@@ -155,11 +117,13 @@ Claude Code 当前并没有公开一份名为：
 7. `reopen_liability_retained`
 8. `reopen_required`
 
-这些 verdict reason 的价值在于：
+更值得长期复用的治理 reject trio 仍是：
 
-- 把“现在可以不再额外看护”翻译成宿主、CI、评审与交接都能共享的治理 post-watch 语义
+1. `projection_usurpation`
+2. `decision_window_collapse`
+3. `free_expansion_relapse`
 
-## 6. 不应直接绑定为公共 ABI 的对象
+## 3. 不应直接绑定为公共 ABI 的对象
 
 宿主不应直接把下面内容绑成长期契约：
 
@@ -174,16 +138,16 @@ Claude Code 当前并没有公开一份名为：
 
 它们可以是解除监护线索，但不能是解除监护对象。
 
-## 7. 解除监护顺序建议
+## 4. 解除监护顺序建议
 
 更稳的顺序是：
 
-1. 先验 `authority_release`
-2. 再验 `ledger_residue_clearance`
-3. 再验 `window_exit_certificate`
-4. 再验 `continuation_settlement`
-5. 再验 `quarantine_release`
-6. 最后验 `reopen_liability_record`
+1. 先验 `governance key`
+2. 再验 `externalized truth chain`
+3. 再验 `typed ask`
+4. 再验 `decision window`
+5. 再验 `continuation pricing`
+6. 最后验 `durable-transient cleanup`
 
 不要反过来做：
 
@@ -191,6 +155,16 @@ Claude Code 当前并没有公开一份名为：
 2. 不要先看 usage 图表。
 3. 不要先看 later 团队是否主观放心。
 
-## 8. 一句话总结
+## 5. 苏格拉底式检查清单
 
-Claude Code 的治理宿主修复解除监护协议，不是观察期结束审批 API，而是 `authority release + ledger residue clearance + window exit certificate + continuation settlement + quarantine release + reopen liability record` 共同组成的规则面。
+在你准备宣布“治理宿主修复已经 released”前，先问自己：
+
+1. 我现在 release 的是治理对象，还是一段更顺滑的运营叙事。
+2. `decision window` 真的退出了吗，还是只是仪表盘安静了。
+3. `continuation pricing` 真的结算了吗，还是又把时间默认免费化了。
+4. `reopen liability` 还在治理尾段里吗，还是已经漂成跨页借词。
+5. 如果把面板、modal 和说明文字都藏起来，later 团队是否仍知道该如何继续治理判断。
+
+## 6. 一句话总结
+
+Claude Code 的治理宿主修复解除监护协议，不是观察期结束审批 API，而是 `governance key + externalized truth chain + typed ask + decision window + continuation pricing + durable-transient cleanup` 在 post-watch 阶段的治理侧结算与 residual liability 保留。
