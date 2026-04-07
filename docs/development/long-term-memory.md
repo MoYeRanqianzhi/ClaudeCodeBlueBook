@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/security/README`、`bluebook/userbook/05-控制面深挖/README` 与 `05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md` 的长期默认 shared-frontdoor-bucketing language 现已继续写死：
+  - `security/README` 默认继续把 `/status / /doctor / /usage` 写成 runtime projection，把 `/compact / /resume` 写成 continuation consumer
+  - `bluebook/userbook/05-README` 默认继续把共享前门里的 projection bucket 与 continuation-consumer bucket 分开
+  - `bluebook/userbook/05/06` 默认继续把 `/status / /doctor / /usage` 的后半页措辞写成 evidence / pressure / drift，不再写成准 signer 或准 gate
+  - 这三页默认统一拒收把 `/compact` 重新降成观察面，或把 `/usage` 重新写成 continue verdict 签发人
 - `bluebook/philosophy/76`、`bluebook/navigation/README` 与 `bluebook/guides/102` 的长期默认 source-quality-frontdoor-demotion language 现已继续写死：
   - `philosophy/76` 默认只做 atlas / projection 暴露，不再给源码质量线另写一套 rung
   - `navigation/README` 默认只做 route，不再在本页定义 `truth-plane order / public-evidence ceiling / continuity crosswalk`

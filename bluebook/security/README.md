@@ -64,7 +64,7 @@
 - 当你已经知道统一定价治理成立，但还没回答 signer、ledger 与 cleanup 责任究竟落在哪些对象上。
 - 当你需要判断哪种扩张该被 ask、哪种 truth 必须外化、哪种 cleanup 不配越级宣布终局。
 - 当你需要把“安全”和“省 token”继续压成同一治理纪律，而不是并列专题。
-- 当你需要把 user-facing 的 `/usage / /compact / status` 这些观察面退回它们各自只配消费的治理阶段。
+- 当你需要把 user-facing 的 `/status / /doctor / /usage` 这些 runtime projection 与 `/compact / /resume` 这些 continuation consumer 退回它们各自只配消费的治理阶段。
 
 ## 如果你只先判断一件事
 

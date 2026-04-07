@@ -81,8 +81,8 @@
 
 看到下面迹象时，应先停下来重审，而不是继续在相邻入口间来回切：
 
-1. 你在用 mode、modal、usage、compact 或 default continue 这些投影替身直接判断治理真相。
-   - 更直接地说，`/usage` 和 `/compact` 只配帮助你判断 `decision window / continuation pricing`，不配自己充当治理 verdict。
+1. 你在用 mode、modal、usage、default continue 这些投影替身，或把 `compact / resume` 这些 continuation consumer，直接拿来判断治理真相。
+   - 更直接地说，`/status / /doctor / /usage` 只配暴露 runtime projection；`/compact / /resume` 只配处理 continuation qualification 与 continuation pricing 相关的 consumer 动作，不配自己充当治理 verdict。
 2. 你在用 `systemPrompt` 截图、最后一条消息或 summary prose 直接判断 Prompt 是否仍在同一个世界里。
 3. 你在用目录体感、作者说明或“看起来能跑”直接判断当前真相边界。
 4. 你还没选定是该继续、降级、停止、清理后恢复还是升级给人，就已经在换入口。

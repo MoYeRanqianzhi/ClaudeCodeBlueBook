@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 shared-frontdoor-bucketing 深化动作: 已继续更新 `bluebook/security/README.md`、`bluebook/userbook/05-控制面深挖/README.md` 与 `bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md`。新的结论是：共享前门当前最危险的 residual 已不再是“有没有把 `/status / /usage` 降格”，而是“有没有把 runtime projection 与 continuation consumer 混成一桶”。现在这几页开始更明确地区分 `/status / /doctor / /usage` 与 `/compact / /resume` 的 speaking rights。
+- 本轮新的用户侧结论: `/compact` 不应再被写成普通观察面，`/resume` 也不该只在叶子页才拥有 signer-safe demotion；前门层现在开始更明确承认它们是 continuation consumer，而不是 runtime projection。
 - 本轮 source-quality-frontdoor-demotion 深化动作: 已继续更新 `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`、`bluebook/navigation/README.md` 与 `bluebook/guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md`。新的结论是：源码质量线当前最值钱的 residual 已不再是 canonical ladder 本身，而是 atlas/projection 页面、跨目录路由页和公开镜像方法页谁还在偷偷拥有“第一句话”的权力。现在 `76` 更接近 projection-only，`navigation/README` 更接近 route-only，`102` 也更接近纯方法页。
 - 本轮新的源码质量结论: `09 / README / 86 / 87 / 101 / 102` 负责 canonical constitution 与 method，`76` 只负责 atlas/projection 降格，`navigation/README` 只负责 next-hop；源码质量前门现在更接近单源，而不是半 authority 半 route 的混层。
 - 本轮 user-facing-runtime-projection 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/userbook/05-控制面深挖/README.md` 与 `bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md`。新的结论是：`/status / /doctor / /usage` 当前最危险的 residual 已不再是有没有写出“它们只是观察面”，而是有没有把它们仍然写成一条新控制面或继续资格的近邻 signer。现在 `05` 和 `05/06` 都开始统一把它们降成 runtime projection cluster，而 `06` 也开始把治理线重新收回 `governance key -> truth-surface attestation -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`。
