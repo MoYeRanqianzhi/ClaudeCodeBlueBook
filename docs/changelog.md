@@ -2,6 +2,8 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面.md`、`bluebook/philosophy/61-真正成熟的安全与省Token系统，不是统一预算器，而是治理顺序、失败语义与可撤销自动化.md`、`bluebook/security/README.md` 与 `bluebook/risk/README.md`，把“安全与省 token 是同一治理秩序”写得更集中：`10` 现在显式写出强 signer 面与弱读回面的非对称，并把 `philosophy/61` 纳入最短二跳；`61` 现在把这条线收成“同一条治理秩序同时对危险扩张与昂贵扩张收费”；`security/README` 现在更明确地区分 signer / projection / cleanup authority，并给出 `43 -> 49 -> 127 -> 134 -> 157` 的机制梯子；`risk/README` 现在更明确地把 `product promise readback / reopen qualification / evidence binding` 写成同一治理尾链的用户侧读回
+- 本轮治理 Agent 新结论已吸收入记忆：Claude Code 的 token economy 不是压缩已准入世界，而是对 model-reachable world 的暴露重新定价；一旦把 `/status / /doctor / /usage`、`Compact / Resume / Memory`、`cleanup result` 或 `product promise readback` 当成 signer surface，治理与恢复就会同时被写浅
 - 继续更新根 `README.md` 与 `docs/development/01-章节规划.md`，把仓库层与规划层继续从“第二导航面”压回 route / inventory：根 `README` 现在把第一次进入蓝皮书改成 `README -> bluebook/README -> bluebook/09 -> owner page`，并明确目录法 owner 只回 `docs/development/00-研究方法.md` 与 `bluebook/README.md`；`章节规划` 现在新增“使用约定”，明确自己只记录章节循环、批次库存与候选收口，不再代写目录法、发言权或 public frontdoor 规则
 - 本轮源码质量/目录哲学 Agent 新结论已吸收入记忆：当前最贵的 residual 已经从理论缺口转成 meta-law duplication。更稳的默认修法继续是：`一个 public frontdoor owner + 一个 directory-law owner + 多个受约束 consumer`，而不是让根 README、章节规划、research-log 和自校页同时解释 first-answer governance
 - 继续更新 `bluebook/README.md`、`bluebook/philosophy/README.md` 与 `bluebook/navigation/README.md`，把高流量前门再压成更短的角色协议：根入口现在只保留三条首跳与“定题/定顺序/判是否跨目录”三件事；`philosophy/README` 现在只保留 why frontdoor 与单问入口；`navigation/README` 现在只保留两种合法停留场景、三类 route 缺口与申诉路径，不再在前门层反复重说长链

@@ -1,6 +1,7 @@
 # 风控专题
 
 `risk/` 只看统一治理收费链怎样在用户侧读回成 `product promise readback / reopen qualification / evidence binding`，不把风控写成账号、入口、恢复或地区场景的并列主题。
+这三件事读回的不是第二套支持故事，而是同一条治理尾链在 cleanup 之后仍留下哪些 liability、哪些 reopen 资格、哪些证据绑定。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶入口链路，不要急着把风控页读成“另一套安全规则”。
 `risk/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这是误伤、恢复、reopen 还是入口差异哪种用户侧工作对象，再决定你主要在读 `product promise readback`、`reopen qualification` 还是 `evidence binding`；若缺治理机制顺序，先回 `09 / 10 / security`，最后才选入口摘要、playbook 或深页。
 
@@ -27,6 +28,8 @@
 3. `evidence binding`
    - 最后才看自己在用什么证据申诉、恢复或追责
 
+这三步都只在读回同一条治理尾链：它们对账的是已外化 verdict 与剩余 liability，不是倒放事件去重判当前真相。
+
 更硬一点说，`risk/` 在目录里的发言权也只该剩三条：
 
 1. `product promise readback`
@@ -46,6 +49,7 @@
 因此风控入口说明也不该自己回放事件去猜当前真相，而应沿已外化的 readback、evidence 与 reopen 条件去回读。
 - 恢复与 reopen 的机制口径统一回 `security / playbooks`；通用弱读回面总声明统一回 `10`。
 - `product promise readback` 也是弱读回面：它只对账已外化 verdict，不回放事件，不改判治理真相，也不越级宣布恢复成立。
+- `reopen qualification` 与 `evidence binding` 也是同一尾链上的弱读回：前者判断剩余 liability 是否仍足以重开，后者判断用户侧申诉还能绑定哪类已外化证据。
 
 更稳的 first reject signal 也应先记三条：
 

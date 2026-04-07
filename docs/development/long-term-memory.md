@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/10`、`bluebook/philosophy/61`、`bluebook/security/README` 与 `bluebook/risk/README` 的长期默认 governance-one-order language 现已继续写死：
+  - `10` 默认继续显式区分强 signer 面与弱读回面，并把“为什么共用预算器还不够”固定二跳到 `61`
+  - `61` 默认继续把安全与省 token 写成“同一条治理秩序对 model-reachable world 的危险扩张与昂贵扩张同时收费”，不再退回“两个并列 feature”
+  - `security/README` 默认继续把 `/status / /doctor / /usage`、approval UI、summary、`Compact / Resume / Memory` 写成弱读回面或 continuation consumer，不再让 projection 冒充 signer
+  - `risk/README` 默认继续把 `product promise readback / reopen qualification / evidence binding` 写成同一治理尾链的用户侧读回，不再退回第二套支持故事
+  - 更稳的默认修法顺序继续是：`先写 one-order synthesis -> 再写 signer/readback asymmetry -> 最后补 owner ladder`
 - 根 `README` 与 `docs/development/01-章节规划.md` 的长期默认 meta-law demotion language 现已继续写死：
   - 根 `README` 默认继续只分四类入口，并把第一次进入蓝皮书固定成 `README -> bluebook/README -> bluebook/09 -> owner page`，不再越级送读者提前进入 `03`
   - `docs/development/01-章节规划.md` 默认继续只记录章节循环、批次库存与候选收口，不再代写目录法、发言权或 public frontdoor 规则
