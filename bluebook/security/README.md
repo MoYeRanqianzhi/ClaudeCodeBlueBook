@@ -29,7 +29,7 @@
 3. `durable-transient cleanup`
    - 谁配宣布已经没事了，哪些 signer / ledger / cleanup 结果词只配当投影
 
-如果继续把这条机制链再压成 later maintainer 与 user-facing 都能共用的三段顺序，也只该再补一句：
+如果继续把这条机制链再压成跨宿主都能对照的三段顺序，也只该再补一句：
 
 - 先判 `pricing-right / truth-surface`
 - 再判 `typed ask / sandbox`
@@ -38,11 +38,11 @@
 如果继续把 `security/` 的目录发言权也压成最短公式，也只该剩三句：
 
 1. `signer / ledger / cleanup authority`
-   - 谁配签字、谁只配记账、谁只配结算。
+   - 谁配签字、谁只配记账、谁只配收口。
 2. `governance mechanism speaking right`
    - 哪条 signer / verdict / liability 机制在安全侧被看清。
-3. `no user-side settlement right`
-   - 用户侧误伤、恢复与入口语义差不在这里第一次裁决。
+3. `no user-side mechanism override`
+   - 用户侧误伤、恢复与入口语义差不在这里第一次定义机制主语。
 
 如果一个安全判断还压不回这三条，它就还停在规则堆或工具堆层。
 如果一个安全判断还答不上“它保护的到底是哪种工作对象、哪段收费链、哪个入口只是证据层 consumer”，就说明它还没压回第一性原理。

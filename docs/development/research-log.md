@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 governance-execution-bridge 深化动作: 已继续更新 `bluebook/security/README.md` 与 `bluebook/playbooks/66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md`。新的结论是：治理线在执行层剩余的高价值 residual，已经不再是 canonical chain 本身，而是 `later maintainer / user-facing / host consumption card / settlement right / 投影` 这组桥接词还会把执行容器写成治理主语。现在这两页开始更一致地把它们收回跨宿主对照、治理执行卡与可见读面。
+- 本轮新的治理结论: 真正该被 later maintainer 学到的不是“谁拥有结算权”，而是“哪条执行链被哪些宿主共同回读”；只要执行卡仍被写成主语，bridge 词就会重新盖过 `pricing-right -> truth-surface -> asset-rollback ABI -> reject/reopen`。
 - 本轮 governance-readback-demotion 深化动作: 已继续更新 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md` 与 `bluebook/architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`。新的结论是：治理线当前在总图与机制页里最容易残留的，不再是 canonical chain，而是会顺手把 `projection / 计价面 / 清算面` 这组桥接词写成正式节点。现在这两页开始更一致地把它们收回 `runtime readback / 收费节点 / 收口节点 / 可见替身`。
 - 本轮新的治理结论: 如果 later maintainer 先学到的是“投影、计价面、清算面”，他就会误把读面和节点层混成一层；更稳的前门写法必须先保住 canonical chain 的节点名，再把读面降格成 readback 或可见替身。
 - 本轮 atlas-label-propagation 深化动作: 已继续更新 `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`、`bluebook/api/47-tools 二级目录 Atlas：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md` 与 `bluebook/api/48-commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界.md`。新的结论是：atlas 线在上游两页收口后，最容易继续回潮的位置就是下游 API atlas 页的 H1 和一句话总结。现在这三页开始更一致地把 `二级目录 Atlas` 收回 `二级目录地图 / 源码地图`。

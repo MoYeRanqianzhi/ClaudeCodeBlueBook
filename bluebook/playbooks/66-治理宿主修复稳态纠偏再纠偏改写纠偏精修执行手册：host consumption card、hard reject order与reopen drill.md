@@ -1,11 +1,11 @@
 # 治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill
 
-这一章不再解释治理 refinement protocol 该消费哪些字段，而是把 Claude Code 式治理 rewrite correction refinement protocol 压成一张可持续执行的 `host consumption card`。
+这一章不再解释治理 refinement protocol 该消费哪些字段，而是把 Claude Code 式治理 rewrite correction refinement protocol 压成一张可持续执行的治理执行卡。
 
 它主要回答五个问题：
 
 1. 为什么安全设计与省 token 设计在精修执行里运行的不是“两套系统互相权衡”，而是同一个治理控制面持续拒绝免费扩张。
-2. 宿主、CI、评审与交接怎样共享同一张治理 `host consumption card`，而不是各自宣布不同版本的“现在可以继续”。
+2. 宿主、CI、评审与交接怎样共享同一张治理执行卡，而不是各自宣布不同版本的“现在可以继续”。
 3. 应该按什么固定顺序执行 `refinement session`、`false authority projection demotion`、`authority-ledger covenant`、`window-pricing covenant`、`classifier-writeback custody`、`capability liability ledger`、`hard reject semantics`、`truth-surface attestation` 与 `reopen liability ledger`，才能不让免费继续、免费扩窗与免费放权重新进场。
 4. 哪些 `hard reject` 一旦出现就必须冻结 capability expansion、拒绝 handoff 并进入 `liability / re-entry / reopen` drill。
 5. 怎样用第一性原理与苏格拉底式追问避免把这层写成“更细的治理值班表”。
@@ -63,7 +63,7 @@
 
 ## 2. 共享 host consumption card 最小字段
 
-`host consumption card` 在治理线里也只配做 carrier，不是新的控制面主语；更稳的执行主语应继续写成 `pricing-right rebinding -> truth-surface attestation -> asset-rollback ABI -> shared reject / reopen drill`，card 只是把这条执行链投影给宿主、CI、评审与交接的可消费容器。
+治理执行卡在治理线里也只配做 carrier，不是新的控制面主语；更稳的执行主语应继续写成 `pricing-right rebinding -> truth-surface attestation -> asset-rollback ABI -> shared reject / reopen drill`，这张卡只是把这条执行链写成宿主、CI、评审与交接共同回读的容器。
 
 每次治理宿主修复稳态纠偏再纠偏改写纠偏精修巡检，宿主、CI、评审与交接系统至少应共享：
 
@@ -152,7 +152,7 @@
 再看：
 
 1. `hard_reject`、`liability_hold`、`writeback_reseal_required`、`reentry_required`、`reopen_required` 是否仍围绕对象链触发。
-2. `shared_consumer_surface` 是否仍让宿主、CI、评审与交接消费同一组 verdict。
+2. `shared_consumer_surface` 这个字段是否仍让宿主、CI、评审与交接消费同一组 verdict。
 
 ### 3.8 最后验 `reopen_liability_ledger` 与 `reject_verdict`
 
@@ -196,7 +196,7 @@
 
 1. 先冻结新的 capability expansion，直到 `host consumption card` 补全。
 2. 先把 verdict 降为 `hard_reject`、`liability_hold`、`writeback_reseal_required`、`reentry_required` 或 `reopen_required`。
-3. 先把 mode、usage dashboard 与“当前还挺省”的感觉降回投影，不再让它们充当治理真相。
+3. 先把 mode、usage dashboard 与“当前还挺省”的感觉降回可见读面，不再让它们充当治理真相。
 4. 先按固定顺序重验 authority、ledger、window、pricing、classifier、writeback 与 liability，不允许跳过 `window-pricing covenant`，也不允许宿主改从事件流猜当前真相。
 5. 只按 `capability_release_scope` 分层恢复 capability，不做一次性全放开。
 6. 交接前必须把 `liability_owner` 与 `reopen liability ledger` 写成 later 团队可消费的对象，而不是一句“有问题再 reopen”。

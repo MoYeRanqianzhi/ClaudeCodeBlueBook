@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/security/README` 与 `bluebook/playbooks/66` 的长期默认 governance-execution-bridge language 现已继续写死：
+  - `security/README` 默认继续把 `later maintainer 与 user-facing 共用顺序 / no user-side settlement right` 收回 `跨宿主对照顺序 / no user-side mechanism override`
+  - `playbooks/66` 默认继续把 `host consumption card / 投影` 收回 `治理执行卡 / 可见读面`
+  - 这两页默认统一拒收执行桥接词再次冒充治理 speaking right
 - `bluebook/09` 与 `bluebook/architecture/83` 的长期默认 governance-readback-demotion language 现已继续写死：
   - 治理总图与机制页默认继续把 `projection / 计价面 / 清算面` 收回 `runtime readback / 收费节点 / 收口节点 / 可见替身`
   - 这两页默认统一拒收 bridge wording 再次冒充 canonical chain 正式节点
