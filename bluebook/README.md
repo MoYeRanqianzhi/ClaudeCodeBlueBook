@@ -5,7 +5,7 @@
 ## 三条首跳
 
 - Prompt
-  - `84 -> 03 / 06`
+  - `84`
 - 治理
   - `10 -> security / risk / playbooks`
 - 当前真相保护
