@@ -133,6 +133,7 @@
 114. 为什么 `SDKPostTurnSummaryMessageSchema`、`StdoutMessageSchema`、`SDKMessageSchema`、`print.ts` 与 `directConnectManager` 说明 `post_turn_summary` 的 wide-wire、`@internal` 与 foreground narrowing 不是同一种可见性。
 115. 为什么 `remoteSessionUrl`、`remoteConnectionStatus`、`remoteBackgroundTaskCount`、`useRemoteSession`、`activeRemote` 与 `getIsRemoteMode` 说明 remote-session presence ledger 不会自动被 direct connect、ssh remote 复用。
 116. 为什么 `outboundOnly`、`useReplBridge`、`initBridgeCore`、`handleServerControlRequest`、`handleIngressMessage` 与 `createV2ReplTransport` 说明 hook 已经在 mirror，本体运行时却仍可能落成 gray runtime。
+117. 为什么 `getIsRemoteMode`、`setIsRemoteMode`、`activeRemote`、`remoteSessionUrl`、`commands/session` 与 `StatusLine` 说明全局 remote behavior 开关，不等于 remote presence truth。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

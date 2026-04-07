@@ -144,6 +144,7 @@
 - [140-2026-04-07-post-turn-summary visibility ladder 拆分记忆.md](./140-2026-04-07-post-turn-summary%20visibility%20ladder%20拆分记忆.md)
 - [141-2026-04-07-remote session presence ledger split 拆分记忆.md](./141-2026-04-07-remote%20session%20presence%20ledger%20split%20拆分记忆.md)
 - [142-2026-04-07-gray runtime split 拆分记忆.md](./142-2026-04-07-gray%20runtime%20split%20拆分记忆.md)
+- [143-2026-04-07-remote behavior flag split 拆分记忆.md](./143-2026-04-07-remote%20behavior%20flag%20split%20拆分记忆.md)
 
 用途：
 
