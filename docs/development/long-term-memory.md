@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-frontdoor-first-principles-summary language 现已继续写死：
+  - 高阶前门 summary 默认继续先说 `same-world test / decision window / current-truth protection`
+  - 高阶前门默认继续拒收先用“更强 / 更省 / 更先进”组织三条母线，再回头补对象链
+  - `navigation/15 / 41` 默认继续把 prompt 追问写成 `instruction 更长 != same-world test 更稳`，把治理追问写成 `decision window / continuation pricing`，把源码质量追问写成 `current-truth protection`
 - `bluebook/security/appendix/87` 与 `bluebook/security/appendix/159` 的长期默认 governance-appendix-owner-demotion language 现已继续写死：
   - `appendix/87` 默认继续只给 projection consumer 提供诚实字段，不代签 `settled_price`、`shared_consumer_surface` 或 current truth
   - `appendix/159` 默认继续只解释 reader-specific reprojection grammar，不代签 reintegrated truth owner

@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-frontdoor-first-principles-summary 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`。新的结论是：Prompt/治理/源码质量高阶前门当前更贵的 residual，不再是路径名或对象链没写出来，而是 summary sentence 仍容易先用“更强 / 更省 / 更先进”这组结果词组织 later maintainer。
+- 本轮新的高阶前门结论: 更稳的 frontdoor summary 应先说 `same-world test`、`decision window`、`current-truth protection`，再说它们为什么显得有效、省 token 或先进。只要入口层先让读者记住结果词，后面的第一性原理就还在做事后翻译，而不是第一次定义。
 - 本轮 governance-appendix-owner-demotion 深化动作: 已继续更新 `bluebook/security/appendix/87-安全资格显式投影协议字段速查表：field、meaning、example source与UI gain.md` 与 `bluebook/security/appendix/159-安全载体家族重新并入治理与重新投影治理分层速查表：reintegration decision、reprojection decision、positive control、cleanup reprojection gap与governor question.md`。新的结论是：治理附录层当前最贵的 residual，不再是字段或矩阵不够多，而是 later maintainer 仍可能把“解释 consumer honesty 的附录”误读成“在代签 current truth 的 owner 页”。
 - 本轮新的治理结论: 更稳的附录页只该回答两类问题。`87` 只答“弱 surface 怎么诚实地消费 shared verdict object”，`159` 只答“同一个 reintegrated truth 怎样按 reader 宽度重投影”。一旦附录页开始回答谁有权宣布 current truth，它就已经越位。
 - 本轮 api-map-owner-split 深化动作: 已继续更新 `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md`、`bluebook/api/README.md` 与 `bluebook/api/46-48`。新的结论是：源码质量/API 线当前更难守住的，不再是 `Atlas` 旧名，而是 later maintainer 仍可能把“地图页自己”误学成“源码真相顺序的 owner”。现在这几页开始更一致地承认：地图页只负责送你回 canonical ladder，不重新签一条新梯度。
