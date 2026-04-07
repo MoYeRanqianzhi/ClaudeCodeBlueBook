@@ -3925,3 +3925,5 @@
 - navigation 语法的长期默认单点现在也应继续写死：`navigation/README` 只保留通用 next-hop，`navigation/04` 只保留 compat alias 与 dispute escalation；通用 speaking-rights / next-hop 表不再允许在两页并行生长。
 - 源码质量公开二跳的长期默认口径现在也应继续写死：frontdoor 层统一公开 `guides/102 -> philosophy/87 -> architecture/README`；`guides/101` 与 `architecture/84 / 63` 都只配在 owner 页内部作为下游 drill，不再在 frontdoor 与 route 页并列首发。
 - `84` 与 `security/README` 的长期默认 frontdoor 边界现在也应继续写死：`84` 只保留 Prompt canonical source 与 first-reject handoff，不再兼任完整自校清单；`security/README` 只保留 ingress-only 安全判断，不再在首页直接铺 signer/readback/finality 的深层 law inventory。
+- `03` 顶部三条 first-answer 的长期默认写法现在也应继续写死：Prompt、治理、源码质量都只保留 why 级 first answer；Prompt richer why 继续回 `84`，治理 canonical chain 继续回治理 owner chain，源码质量 canonical route 继续先见根入口与 `guides/102`。`03` 不再同时扮演 why 页和 bundled owner-card。
+- `09` 的长期默认总图句法现在也应继续写死：总图页只保留三条控制面图的判断标准与 first-answer hooks；治理 canonical formula 与源码质量完整 ladder 不再在 `09` 与 owner/frontdoor 页并排重发。
