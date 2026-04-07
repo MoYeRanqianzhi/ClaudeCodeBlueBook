@@ -170,3 +170,4 @@
 - [168-session_context.sources、session_context.outcomes、parseGitRemote、parseGitHubRepository 与 getBranchFromSession 索引.md](./168-session_context.sources、session_context.outcomes、parseGitRemote、parseGitHubRepository%20与%20getBranchFromSession%20索引.md)
 - [169-validateSessionRepository、getBranchFromSession、checkOutTeleportedSessionBranch 与 teleportToRemote 索引.md](./169-validateSessionRepository、getBranchFromSession、checkOutTeleportedSessionBranch%20与%20teleportToRemote%20索引.md)
 - [170-createBridgeSession.events、initialMessages、previouslyFlushedUUIDs 与 writeBatch 索引.md](./170-createBridgeSession.events、initialMessages、previouslyFlushedUUIDs%20与%20writeBatch%20索引.md)
+- [171-session_context.model、metadata.model、lastModelUsage、modelUsage 与 restoreAgentFromSession 索引.md](./171-session_context.model、metadata.model、lastModelUsage、modelUsage%20与%20restoreAgentFromSession%20索引.md)

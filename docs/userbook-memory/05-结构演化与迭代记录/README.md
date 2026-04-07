@@ -183,6 +183,7 @@
 - [179-2026-04-08-git context split 拆分记忆.md](./179-2026-04-08-git%20context%20split%20拆分记忆.md)
 - [180-2026-04-08-teleport repo admission vs branch replay split 拆分记忆.md](./180-2026-04-08-teleport%20repo%20admission%20vs%20branch%20replay%20split%20拆分记忆.md)
 - [181-2026-04-08-session birth vs history hydrate split 拆分记忆.md](./181-2026-04-08-session%20birth%20vs%20history%20hydrate%20split%20拆分记忆.md)
+- [182-2026-04-08-model ledger split 拆分记忆.md](./182-2026-04-08-model%20ledger%20split%20拆分记忆.md)
 
 用途：
 
