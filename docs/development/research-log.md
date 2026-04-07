@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 atlas-route-residual 深化动作: 已继续更新 `bluebook/02-使用指南.md`、`bluebook/api/README.md`、`bluebook/navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md` 与 `bluebook/api/48-commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界.md`。新的结论是：atlas 线在上游 `102 / 35` 和下游 `46-48` 对齐后，最容易继续回潮的位置就只剩高流量 route/index 页和零星正文句。现在这四页开始更一致地把 `Atlas / atlas 原则` 收回 `源码地图 / 二级目录地图 / 源码地图原则`。
+- 本轮新的源码质量结论: 术语传播最难的不是 owner 页，而是 handoff 页；只要 `02`、`api/README` 或 `navigation/35` 还在用旧可见标签，later maintainer 仍会从入口层学到 atlas 旧话语，再把上游 locator 约束读成例外。
 - 本轮 governance-execution-bridge 深化动作: 已继续更新 `bluebook/security/README.md` 与 `bluebook/playbooks/66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md`。新的结论是：治理线在执行层剩余的高价值 residual，已经不再是 canonical chain 本身，而是 `later maintainer / user-facing / host consumption card / settlement right / 投影` 这组桥接词还会把执行容器写成治理主语。现在这两页开始更一致地把它们收回跨宿主对照、治理执行卡与可见读面。
 - 本轮新的治理结论: 真正该被 later maintainer 学到的不是“谁拥有结算权”，而是“哪条执行链被哪些宿主共同回读”；只要执行卡仍被写成主语，bridge 词就会重新盖过 `pricing-right -> truth-surface -> asset-rollback ABI -> reject/reopen`。
 - 本轮 governance-readback-demotion 深化动作: 已继续更新 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md` 与 `bluebook/architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`。新的结论是：治理线当前在总图与机制页里最容易残留的，不再是 canonical chain，而是会顺手把 `projection / 计价面 / 清算面` 这组桥接词写成正式节点。现在这两页开始更一致地把它们收回 `runtime readback / 收费节点 / 收口节点 / 可见替身`。

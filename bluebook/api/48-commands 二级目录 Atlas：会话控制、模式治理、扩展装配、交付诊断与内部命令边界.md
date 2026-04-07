@@ -144,7 +144,7 @@
 - `consumer subset`：
   - feature-gated、user-type-gated、external build eliminated 都只是特殊命令子集
 - `hotspot kernel`：
-  - 把 internal-only 命令误写成公开控制面，是命令 atlas 最常见的假承诺来源
+  - 把 internal-only 命令误写成公开控制面，是命令地图里最常见的假承诺来源
 - `mirror gap discipline`：
   - 一旦“代码里有命令”被误读成“产品支持”，先回 `INTERNAL_ONLY_COMMANDS` 与构建剔除边界
 

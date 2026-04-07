@@ -32,7 +32,7 @@
 
 - 源码地图页只做定位与跳转，不能重写 canonical ladder，不能替 `guides/102` 改判层级，也不能替 `navigation/04` 仲裁 speaking-rights；一旦这页开始代签这些判断，它就已经从 route page 长成第二前门。
 
-## 1. Services 二级目录 Atlas
+## 1. Services 二级目录地图
 
 这一条线最该先交四件事：
 
@@ -45,7 +45,7 @@
 4. reject path：
    - 一旦某个 service 看起来像权威真相，却只是在投影，先回 `../api/46` 的 authority file，再回 `../philosophy/76` 的 reject 原则。
 
-## 2. Tools 二级目录 Atlas
+## 2. Tools 二级目录地图
 
 这一条线最该先交四件事：
 
@@ -58,7 +58,7 @@
 4. reject path：
    - 一旦工具行为不可信，先回 `tools.ts`、`Tool.ts` 与 `../api/47` 的 authority 段，而不是先看某个工具目录名字。
 
-## 3. Commands 二级目录 Atlas
+## 3. Commands 二级目录地图
 
 这一条线最该先交四件事：
 

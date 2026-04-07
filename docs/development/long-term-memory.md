@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/02`、`bluebook/api/README`、`bluebook/navigation/35` 与 `bluebook/api/48` 的长期默认 atlas-route-residual language 现已继续写死：
+  - 高流量 route/index 页默认继续把 `Atlas / atlas 原则` 收回 `源码地图 / 二级目录地图 / 源码地图原则`
+  - `api/48` 正文默认继续拒收 `命令 atlas` 这类单句 residual
+  - 这四页默认统一跟随 `guides/102 / navigation/35 / api/46-48` 的 locator 话语，不再在入口层回潮 atlas 命名
 - `bluebook/security/README` 与 `bluebook/playbooks/66` 的长期默认 governance-execution-bridge language 现已继续写死：
   - `security/README` 默认继续把 `later maintainer 与 user-facing 共用顺序 / no user-side settlement right` 收回 `跨宿主对照顺序 / no user-side mechanism override`
   - `playbooks/66` 默认继续把 `host consumption card / 投影` 收回 `治理执行卡 / 可见读面`

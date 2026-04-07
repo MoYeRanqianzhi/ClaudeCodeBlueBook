@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/02-使用指南.md`、`bluebook/api/README.md`、`bluebook/navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md` 与 `bluebook/api/48-commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界.md`，把 atlas 线仍留在高流量 route/index 页上的 `Atlas / atlas 原则` visible label 继续收回 `源码地图 / 二级目录地图 / 源码地图原则`，并补掉 `api/48` 正文里最后一句 `命令 atlas` 残留
 - 继续更新 `bluebook/security/README.md` 与 `bluebook/playbooks/66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md`，把治理执行层残留的 `later maintainer 与 user-facing 共用顺序 / settlement right / host consumption card / 投影` 继续收回 `跨宿主对照顺序 / no user-side mechanism override / 治理执行卡 / 可见读面`，避免执行层桥接词再次冒充治理 speaking right
 - 继续更新 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md` 与 `bluebook/architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`，把治理总图线里残留的 `projection / 计价面 / 清算面` bridge wording 继续收回 `runtime readback / 收费节点 / 收口节点 / 可见替身`，避免高流量总图和机制页继续把 user-facing 读面写成治理对象本体
 - 继续更新 `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`、`bluebook/api/47-tools 二级目录 Atlas：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md` 与 `bluebook/api/48-commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界.md`，把下游 API atlas 页的 H1 与总结句继续统一收回“二级目录地图 / 源码地图”，让它们与 `guides/102 / navigation/35` 的 locator 话语保持同调
