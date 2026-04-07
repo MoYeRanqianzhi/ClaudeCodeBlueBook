@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 07-userbook05-fixed-bridge live 记忆：
+  - `07` 默认继续把用户动作翻译 next-hop 固定回 `userbook/05`
+  - `userbook/05` 默认继续把 shared runtime correctness / continuity budget 的底层 why 固定回 `07`
+- 当前批次继续新增一条 03-governance-why-template live 记忆：
+  - `03` 默认继续把治理 why 压成与 Prompt why 同一模板：`只保留一句 why -> 固定 owner 顺序 -> 不再补对象卡`
 - 当前批次继续新增一条 03-prompt-governance-wording live 记忆：
   - `03` 默认继续把 Prompt why 的回链句法统一成 `philosophy/84`，仅在明确自校语境下再回 `06`
   - `03` 默认继续把治理 why 的回链句法统一成 `10 -> philosophy/85 -> philosophy/61 -> security/risk/playbooks`，不再留下“治理 owner 页”这类松散写法

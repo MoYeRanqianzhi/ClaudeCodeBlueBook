@@ -89,6 +89,8 @@ Prompt 失真在这一层也只该继续消费同一张 user-facing witness pack
 - `这是旧状态污染吗`
   - 过关条件是 `sole writer + freshness`
 
+如果还要继续追问这三项过关条件背后的 shared runtime correctness / continuity budget，而不是停在用户动作层，固定回 `../../07-运行时契约、知识层与生态边界.md`。
+
 ## 进入控制面前的 first reject signal
 
 看到下面迹象时，应先停下来重审，而不是继续在相邻入口间来回切：

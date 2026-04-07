@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的桥接结论：`07` 与 `userbook/05` 现在更明确继续被固定成双向桥。前者只保留 shared runtime correctness / continuity budget 的底层 why，并把用户动作翻译 next-hop 固定回 `userbook/05`；后者则继续只保留三问到三项过关条件的 crosswalk，底层 why 固定回 `07`。
+- 本轮新的 `03` 结论：治理 why 现在也被进一步压成和 Prompt why 同一模板，不再先用“本节不重列治理定价链”再补坏解，而是先钉死“只保留一句 why”，再给固定 owner 顺序。
 - 本轮新的 `03` 结论：Prompt why 与治理 why 的回链句法现在也更明确继续被统一。Prompt 线统一只回 `philosophy/84`，自校层才回 `06`；治理线统一只回 `10 -> 85 -> 61 -> security/risk/playbooks`，不再停在“治理 owner 页”这种松散口径。
 - 本轮新的 `03` 结论：源码质量 why 的回链句法现在更明确继续统一成 `07 -> 102 -> 87 -> architecture/README`，不再在不同小节残留 `07 -> 87` 或 `architecture only` 这类变体。
 - 本轮新的源码质量顺序结论：`03` 现在更明确不该在多个设计原则里各自补质量 verdict；更稳的固定顺序已经压实为 `07 -> 102 -> 87 -> architecture/README`。同时 `07` 也把公开镜像源码质量链补成了完整的 8 段顺序，把 `change-risk record` 从附加动作提升为 owner 链末端。
