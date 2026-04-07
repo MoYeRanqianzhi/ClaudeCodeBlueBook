@@ -604,3 +604,4 @@
 - `33 / 57 / 63 / 78` 这一批也同步去前门化：`33` 现在显式只承担 `Explainability` 的诊断命名层，`57` 只承担 `Transcript -> Lineage -> Continuation` 的协作接口，`63` 只承担 `Continuation` 的时间轴与继续资格，`78` 则正式降成 Prompt 前门速记与兼容跳转，不再和 `84` 并列争首答
 - 继续收口治理兼容词：`security/README` 现在把“安全侧的结算面”收回“安全侧的机制面”；`risk/README` 现在减少“显形/结算面”在总论层的重复自我复制，统一往“落到用户侧/被用户侧读到”收口；`navigation/05` 现在把 `continuity crosswalk` 收回 `continuity 纪律`；`architecture/83` 则把 audience bridge 口气收回成纯运行时对照表，`host-facing read` 也收回 `observable projection`
 - 继续收口源码质量 residual：`01-源码结构地图` 不再完整打印旧链条对照，而把 atlas / projection 别名退回 locator；`02-使用指南` 现在把源码质量前提统一收回 canonical rung，并显式把术语归口回 `guides/102`；`philosophy/76` 不再给 atlas 单独写公式链，`philosophy/README` 也把源码质量 crosswalk 压回一条纪律句，`guides/README` 则把 `102` 的可见链接标签改成更中性的“公开镜像源码质量证据分级模板”
+- 继续收口治理哲学页的可见标签：`philosophy/22` 现在把中段定义句从“安全、成本与体验只是同一条治理收费链的外显”收回到“这三件事都落在同一条治理收费链上”，把 `外显` 继续限缩在标题和总结句，不再让它占中段 canonical 定义位

@@ -7190,3 +7190,4 @@
 - 这条源码质量 residual 批次现已落地，并严格限制在 `01 / 02 / 76 / philosophy/README / guides/README` 五页。核心不是再发明新 ladder，而是把 atlas/projection 词退回 locator：`01` 不再完整打印旧链条对照表，`02` 不再把使用层写成 `truth ladder` 入口，`76` 不再把 atlas 单独写成一条公式链，`philosophy/README` 也不再在前门并排摆两套源码质量压缩句，`guides/README` 则把 `102` 的可见标签改成中性模板名，减少旧别名在 README 层的回灌。
 - 这批进一步确认了一条源码质量目录纪律：atlas/projection 词只能帮助 later maintainer 定位，不能帮助 frontdoor 改判。更稳的写法不是再解释 “旧链条其实映射到新链条”，而是直接声明“canonical rung 统一回 `guides/102`，地图页只做 repo-specific locator”。只要 README 还在完整打印旧链条，它就仍在给第二套 canonical ladder 留入口。
 - 当前更下一步的 residual 也因此更清楚：若继续推进源码质量线，应优先检查 `philosophy/76` 是否还残留更多 atlas noun，以及 `02-使用指南` 是否还有别处在借结果词抢首答；Prompt 线则可继续等并行 agent 对 `33 / 57 / 63 / 78` 更深 residual 的回报再做一刀。
+- 这轮又单独落了一个更窄的治理哲学批次，只动 `philosophy/22` 一句中段定义：把“安全、成本与体验只是同一条治理收费链的外显”收回成“这三件事都落在同一条治理收费链上”。这批的意图不是重新改标题或总结，而是进一步执行 sidecar 给出的纪律：哲学页允许在 H1 与收束句保留一层包装词，但 canonical 中段定义应尽量只用对象链而不借“显现学”词增强戏剧性。

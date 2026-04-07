@@ -3350,3 +3350,4 @@
 - `architecture/83` 这类 canonical 机制页里，表头和导语也应尽量用对象词而不是读者词。`observable projection` 比 `host-facing read` 更稳，`运行时最短对照 / 运行时最小 failure order` 也比“later maintainer、宿主与 builder 共用”更不容易把机制页写成说明书。
 - 源码质量线也应继续固定一条目录纪律：`guides/102` 负责 canonical rung 与降格规则，`01 / philosophy/76` 只负责 atlas / projection locator，`02` 只负责使用层诊断句，`philosophy/README` 只负责高阶入口而不并排摆第二套压缩链。只要 atlas/projection 别名重新出现在前门公式里，就优先视为第二套 ladder 回潮。
 - 对源码质量 residual 的更稳处理方式不是“把旧别名解释得更清楚”，而是让旧别名退出 frontdoor 可见句，只保留 canonical rung 和一个明确归口：`atlas / projection 别名只作 locator，不作首答词`。
+- 治理哲学页若仍要保留 `外显` 这类包装词，最稳的位置是 H1 或总结句，而不是中段 canonical 定义。中段一旦出现“这三件事只是……的外显/显形”，读者会更容易把治理链读成显现学总结，而不是对象链本身。
