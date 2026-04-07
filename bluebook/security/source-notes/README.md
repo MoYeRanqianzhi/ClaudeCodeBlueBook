@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 138 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 144 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 源码剖面层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责把单机制证据拆开，不额外替主目录签治理 verdict。
 
 ## 这一子目录放什么
@@ -31,7 +31,7 @@
 - `30-46` stronger-request settlement / cleanup 机制簇：先看续打、完成、终局、遗忘、免责释放、归档/审计/擦除，再看 retention、隔离、反漂移与修复。
 - `47-60` stronger-request migration 与 plugin/MCP re-entry 机制簇：先看迁移、退役、墓碑、复活、再赋权，再看 continuity、recovery、reintegration、reprojection 与 reassurance。
 - `61-75` stronger-request 续打、终局、retention 与制度元数据机制簇：先看 step-up、续打、终局/遗忘，再看 archive/audit、不可逆擦除、保留期执行诚实性、隔离、cleanup family constitution 与制度元数据。
-- `76-138` stronger-request 清理后半段与墓碑/re-entry 机制簇：先看迁移、退役、墓碑，再看复活、再赋权、重配置、重新激活、就绪、连续性、恢复、重新并入、重新投影、重新担保、用时重验证，以及续打、完成、终局、遗忘、免责释放、归档关闭、审计关闭、不可逆擦除、保留期、保留期执行诚实性、隔离与家族宪法/制度理由。
+- `76-144` stronger-request 清理后半段与墓碑/re-entry 机制簇：先看迁移、退役、墓碑，再看复活、再赋权、重配置、重新激活、就绪、连续性、恢复、重新并入、重新投影、重新担保、用时重验证，以及续打、完成、终局、遗忘、免责释放、归档关闭、审计关闭、不可逆擦除、保留期、保留期执行诚实性、隔离、家族宪法/制度理由、制度元数据、运行时符合性、反漂移验证、修复、迁移与退役。
 
 1. [01-StructuredIO回执账本与签收边界](01-StructuredIO%E5%9B%9E%E6%89%A7%E8%B4%A6%E6%9C%AC%E4%B8%8E%E7%AD%BE%E6%94%B6%E8%BE%B9%E7%95%8C.md)
 2. [02-print与CCRClient的终局签字边界](02-print%E4%B8%8ECCRClient%E7%9A%84%E7%BB%88%E5%B1%80%E7%AD%BE%E5%AD%97%E8%BE%B9%E7%95%8C.md)
@@ -171,6 +171,12 @@
 136. [136-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界](136-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界.md)
 137. [137-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug、diagLogs与cleanup的强请求清理家族宪法边界](137-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug、diagLogs与cleanup的强请求清理家族宪法边界.md)
 138. [138-diskOutput、toolResultStorage、sessionStorage、plans、fileHistory、sessionEnvironment、debug与diagLogs中的强请求清理制度理由边界](138-diskOutput、toolResultStorage、sessionStorage、plans、fileHistory、sessionEnvironment、debug与diagLogs中的强请求清理制度理由边界.md)
+139. [139-cleanup、settings、path helpers、permissions与env contract中的强请求清理制度元数据边界](139-cleanup、settings、path helpers、permissions与env contract中的强请求清理制度元数据边界.md)
+140. [140-cleanupPeriodDays、housekeeping、plansDirectory、diagLogs与CleanupResult的强请求清理运行时符合性缺口](140-cleanupPeriodDays、housekeeping、plansDirectory、diagLogs与CleanupResult的强请求清理运行时符合性缺口.md)
+141. [141-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口](141-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口.md)
+142. [142-verifyAutoModeGateAccess、checkAndDisableAutoModeIfNeeded、verifyAndDemote与强请求清理修复治理缺口](142-verifyAutoModeGateAccess、checkAndDisableAutoModeIfNeeded、verifyAndDemote与强请求清理修复治理缺口.md)
+143. [143-runMigrations、migrateLegacyOpusToCurrent、orphan宽限期与plans continuity的强请求清理迁移治理边界](143-runMigrations、migrateLegacyOpusToCurrent、orphan宽限期与plans%20continuity的强请求清理迁移治理边界.md)
+144. [144-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界](144-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界.md)
 
 ## 和其他目录的分工
 
