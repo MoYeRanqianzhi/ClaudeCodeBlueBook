@@ -127,7 +127,7 @@
 再看：
 
 1. `decision_window`、`context_usage_snapshot` 与 `reserved_buffer` 是否仍属于同一窗口。
-2. `settled_price`、`budget_policy_generation` 与 `free_continuation_blocked` 是否仍阻止“没报错就继续”的免费扩张。
+2. `settled_price`、`budget_policy_generation` 与 `free_continuation_blocked` 是否仍把 `continuation pricing` 写成正式 runtime witness，而不是只阻止“没报错就继续”的免费扩张。
 3. 当前 refinement 是否仍阻止旧窗口、旧定价与旧 usage 投影复活。
 
 ### 3.5 再验 `classifier_writeback_custody`
@@ -152,7 +152,7 @@
 再看：
 
 1. `hard_reject`、`liability_hold`、`writeback_reseal_required`、`reentry_required`、`reopen_required` 是否仍围绕对象链触发。
-2. `shared_consumer_surface` 这个字段是否仍让宿主、CI、评审与交接消费同一组 verdict。
+2. `shared_consumer_surface` 这个字段是否仍让宿主、CI、评审与交接以不同宽度只读消费同一个 verdict object，而不是各自抄一段“差不多的结论”。
 
 ### 3.8 最后验 `reopen_liability_ledger` 与 `reject_verdict`
 
@@ -196,7 +196,7 @@
 
 1. 先冻结新的 capability expansion，直到 `host consumption card` 补全。
 2. 先把 verdict 降为 `hard_reject`、`liability_hold`、`writeback_reseal_required`、`reentry_required` 或 `reopen_required`。
-3. 先把 mode、usage dashboard 与“当前还挺省”的感觉降回可见读面，不再让它们充当治理真相。
+3. 先把 mode、usage dashboard 与“当前还挺省”的感觉降回可见读面；若它们继续冒充治理真相，直接按 `mode_projection_as_authority / decision_window_as_dashboard` 拒收。
 4. 先按固定顺序重验 authority、ledger、window、pricing、classifier、writeback 与 liability，不允许跳过 `window-pricing covenant`，也不允许宿主改从事件流猜当前真相。
 5. 只按 `capability_release_scope` 分层恢复 capability，不做一次性全放开。
 6. 交接前必须把 `liability_owner` 与 `reopen liability ledger` 写成 later 团队可消费的对象，而不是一句“有问题再 reopen”。

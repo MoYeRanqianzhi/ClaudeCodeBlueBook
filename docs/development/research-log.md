@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 governance-protocol-owner-hardening 深化动作: 已继续更新 `bluebook/api/85-治理宿主修复稳态纠偏再纠偏改写纠偏精修协议：ledger、writeback seam与reopen liability.md`、`bluebook/api/94-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：pricing object、shared reject semantics与long-term reopen liability.md`、`bluebook/playbooks/66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md` 与 `bluebook/security/README.md`。新的结论是：治理线这轮最值钱的 residual，不再是链条没写出来，而是 later maintainer 仍可能把 `settled_price` 误读成 usage 观感，把 `shared_consumer_surface` 误读成共享文案，把 projection 误读成 current truth。
+- 本轮新的治理结论: 更稳的 owner/consumer 分工必须写成三句。`settled_price = continuation pricing 的 runtime witness`，`shared_consumer_surface = 同对象、不同宽度、只读消费面`，`projection = 只能被降格或重投影，不能越级成 owner`。只要这三句没有被写硬，治理协议就会再次退回 dashboard calmness、作者说明或“当前还挺省”的感觉。
 - 本轮 api-atlas-route-slug 深化动作: 已继续更新 `bluebook/02-使用指南.md`、`bluebook/api/README.md` 与 `docs/development/01-章节规划.md`，并把 `bluebook/navigation/35`、`api/46-48` 的 route slug 正式收回 `源码地图导航 / 二级目录地图`。新的结论是：源码质量线当前最贵的 residual，已经不再是 H1 还在说 `Atlas`，而是高流量入口页 visible label 已改、真实 target 却还在把 later maintainer 送回旧 `Atlas` 文件名。
 - 本轮新的源码地图结论: 对 route page 来说，slug 也是 locator contract 的一部分；只要 `02` 或 `api/README` 的 target 还落到旧 `Atlas` 路径，读者就仍会把“地图只负责定位”误学成“Atlas 仍是首答名词”。
 - 本轮 prompt-frontdoor-route-slug 深化动作: 已继续更新 `bluebook/philosophy/README.md`、`bluebook/navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理.md`、`bluebook/guides/99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object.md` 与 `docs/development/01-章节规划.md`，并把 `bluebook/philosophy/81`、`84`、`63` 的 route slug 正式收回稳定可见标签。新的结论是：Prompt 前门最贵的 residual，不再只是正文还在说旧词，而是 route target 仍在偷偷把 later maintainer 送回旧 `Prompt魔力` 文件名。

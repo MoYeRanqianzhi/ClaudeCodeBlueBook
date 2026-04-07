@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/api/85`、`bluebook/api/94`、`bluebook/playbooks/66` 与 `bluebook/security/README` 的长期默认 governance-protocol-owner-hardening language 现已继续写死：
+  - `settled_price` 默认继续只写成 `continuation pricing` 的 runtime witness，不再写成 usage 图表好转感或“感觉还能继续”
+  - `shared_consumer_surface` 默认继续只写成不同 reader 对同一 verdict object 的只读消费面，不再写成共享文案或共享 authority
+  - projection 越位默认继续直接落回 `mode_projection_as_authority / window_projection_not_authority` 这类 reject，字段化与重投影分层默认继续回 `appendix/87 / appendix/159`
 - `bluebook/navigation/35`、`bluebook/api/46`、`bluebook/api/47`、`bluebook/api/48`、`bluebook/02`、`bluebook/api/README` 与 `docs/development/01` 的长期默认 api-atlas-route-slug language 现已继续写死：
   - `navigation/35` 的正式 route slug 默认继续固定为 `源码地图导航：services、tools、commands 二级目录如何回到权威入口与消费者边界`
   - `api/46-48` 的正式 route slug 默认继续固定为各自的 `二级目录地图`
