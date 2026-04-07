@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/api/30`、`bluebook/api/README` 与 `bluebook/api/46-48` 的长期默认 api-map-owner-split language 现已继续写死：
+  - 地图页默认继续只负责把 later maintainer 拉回 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - 地图页默认继续拒收把自己写成“源码真相梯度 / 第二条梯度公式”的 owner 句
+  - `api/README` 默认继续把目录级入口句写成“回到 canonical ladder”，不再把地图页说成 ladder 本身
 - `bluebook/api/30`、`bluebook/api/README` 与 `bluebook/api/46-48` 的长期默认 api-canonical-ladder-hardening language 现已继续写死：
   - `api/30` 默认继续把“源码真相梯度”收回 `源码真相顺序 / canonical ladder`
   - `api/README` 默认继续把目录级地图入口句直接回绑 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`

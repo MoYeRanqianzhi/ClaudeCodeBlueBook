@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 api-map-owner-split 深化动作: 已继续更新 `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md`、`bluebook/api/README.md` 与 `bluebook/api/46-48`。新的结论是：源码质量/API 线当前更难守住的，不再是 `Atlas` 旧名，而是 later maintainer 仍可能把“地图页自己”误学成“源码真相顺序的 owner”。现在这几页开始更一致地承认：地图页只负责送你回 canonical ladder，不重新签一条新梯度。
+- 本轮新的源码质量结论: 真正稳定的目录结构优化不是把 map 写得更像方法论，而是继续减少“第二 owner 句”。只要地图页还在用自己的话把 `canonical ladder` 重说成另一条“真相梯度”，later maintainer 就会在 handoff 层学到第二套主语。
 - 本轮 api-canonical-ladder-hardening 深化动作: 已继续更新 `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md`、`bluebook/api/README.md` 与 `bluebook/api/46-48`。新的结论是：源码质量/API 线当前最贵的 residual，不再是 `Atlas` 还在路径层回潮，而是地图页自己的总结句仍容易把“地图角色”和“canonical ladder 结论”缠成一层。
 - 本轮新的源码质量结论: 更稳的写法应先分清 `map page` 和 `ladder owner`。地图页只配回答“你该回哪一段 authority order / current-truth order”，不配把自己写成另一条“源码真相梯度”；一旦 later maintainer 先学到的是“地图本身就是梯度”，目录结构优化就又会退回体验层而不是证据层。
 - 本轮 prompt-navigation-visible-label 深化动作: 已继续更新 `bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md`、`bluebook/navigation/06-终局判断导航：协作语法、资源定价与未来维护者消费者.md` 与 `bluebook/navigation/08-高阶制度导航：Prompt Constitution、治理顺序与构建系统.md`。新的结论是：Prompt 线当前在高流量导航页最贵的 residual，已经不再是路径名没改，而是页面正文仍把 `57 / 33` 直接打印成 raw slug，让 later maintainer 先看到路径再看到主语。
