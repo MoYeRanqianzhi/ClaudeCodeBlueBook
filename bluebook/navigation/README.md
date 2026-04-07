@@ -25,6 +25,12 @@
 如果一个跨目录问题还回答不出自己缺的是公式、顺序还是证据层，它就还没有真正进入 `navigation/` 的工作对象。
 如果 `navigation/` 开始替目录改判 speaking rights，它也就不再是在路由，而是在制造第二套入口主语；later maintainer 的局部可反对性会先被 route words 吃掉。
 
+这里还应再固定一条 continuity crosswalk：
+
+- `continuity` 不是第四条母线；它是 Prompt `Continuation`、治理 `continuation pricing` 与源码质量 `recovery non-sovereignty / anti-zombie` 在时间维度上的共同路线。
+- 所以跨目录反查 continuity 时，先问缺的是 `continue qualification`、`continuation pricing`，还是 `stale-writer eviction / recovery asset non-sovereignty`，而不是先按 `/compact / /resume / /memory` 这些命令名分流。
+- continuity consumer 只配帮助继续，不配重签 present verdict；一旦 route 层开始把 summary、pointer、event replay 或 display transcript 写成 signer，先退回 `09`。
+
 ## 先判三件事
 
 - 先判你是在找主线宪法、证据层，还是跨目录下一跳。
@@ -33,6 +39,9 @@
   `philosophy / architecture / api / guides / playbooks / casebooks` 各守一种职责，不在 `navigation/` 里重新混写。
 - 先判你当前是哪类任务。
   阅读优先 `01 / 02`，失稳前自校优先 `15`，迁移优先 `46`，继续改写三条母线优先 `05 / 15 / 41`。
+
+- 先判 continuity 失真落在哪条母线上。
+  same-world 继续资格回 Prompt 线，扩张是否仍值得付费回治理线，恢复资产是否越权 current truth 回源码质量线。
 
 ## 稳定节点
 

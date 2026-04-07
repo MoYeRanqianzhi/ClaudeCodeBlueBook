@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 continuity 路由深化动作: 已继续更新 `bluebook/navigation/README.md` 与 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`。新的结论是：continuity 问题在目录层不该先按命令或功能分流，而应先判它是 Prompt `Continuation` 的 witness 问题、治理 `continuation pricing` 的收费问题，还是源码质量 `recovery non-sovereignty / anti-zombie` 的时间诚实性问题。
+- 本轮新的目录结构结论: 只要 `navigation/` 或 `09` 开始把 continuity 单列成第四条线，later maintainer 学到的就会重新是按钮库存，而不是三条母线的时间轴。更稳的默认做法是：在 root/philosophy 负责声明 continuity 不是第四母线，在 `navigation/` 负责跨目录分诊，在 `09` 负责给出 continuity 的最小顺序。
 - 本轮 continuity 目录桥接动作: 已继续更新 `bluebook/README.md`、`bluebook/philosophy/README.md` 与 `userbook/05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md`。这一批把 continuity 从“连续性命令专题”继续收回成三条母线的时间交汇：Prompt 线负责 `Continuation` witness，治理线负责 `continuation pricing`，源码质量线负责 `recovery non-sovereignty / anti-zombie`。新的结论是：只要把 continuity 单列成第四条母线，目录就会重新退回命令分类法。
 - 本轮新的 control-plane 结论: continuity 的控制面页最该继续拒收三类越权对象：`pending_action / task_summary / summary prose` 冒充恢复主链，旧 summary/title/mode/pointer 冒充 current truth，stale witness / reload failure 不被正式点名而继续假装恢复成功。
 - 本轮 continuity system 深化动作: 已继续更新 `userbook/02-能力地图/01-运行时主链/04-会话真相层：实时状态、Transcript 与恢复账本.md`、`05-压缩、恢复与记忆：如何维持可继续工作的现场.md` 与 `userbook/04-专题深潜/02-连续性与记忆专题.md`。这一批把“连续性工具”继续压回同一条 law：`lawful forgetting -> stable bytes externalize -> reload law -> continuation qualification`。新的结论是：真正省 token 的默认写法不是“更短”，而是“哪些 bytes 继续留主账、哪些应被外置、哪些必须被正式遗忘”。

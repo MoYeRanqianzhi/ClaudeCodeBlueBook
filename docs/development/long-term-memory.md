@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/navigation/README.md` 与 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md` 的长期默认 continuity route 现已继续写死：
+  - `navigation/` 默认不按 `/compact / /resume / /memory` 分流 continuity 问题
+  - 默认先判 `continue qualification / continuation pricing / recovery non-sovereignty`
+  - `09` 默认明确写死 continuity 不是第四张控制面图，而是三张图的时间轴共同验收面
+  - 后续若这两页再把 continuity 写回第四母线或按钮库存，默认按目录桥接退化处理
 - `bluebook/README.md` 与 `bluebook/philosophy/README.md` 的长期默认 continuity bridge 现已继续写死：
   - 默认明确写出 `continuity 不是第四条独立母线`
   - 默认把 continuity 收回 Prompt `Continuation`、治理 `continuation pricing` 与源码质量 `recovery non-sovereignty / anti-zombie` 的共同时间轴
