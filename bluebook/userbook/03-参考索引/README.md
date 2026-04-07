@@ -109,6 +109,7 @@
 90. 为什么 success `result` ignored、error `result` visible、turn-end 判定与 busy state 不是同一种 completion signal。
 91. 为什么 callback-visible init、transcript init 提示与 slash bootstrap 不是同一种初始化可见性。
 92. 为什么 viewerOnly 的本地 echo 去重、history attach overlap 与 transcript 追加不是同一种 replay dedup。
+93. 为什么 direct connect 的 `setIsLoading(true/false)` 不是同一种 loading lifecycle。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

@@ -107,3 +107,4 @@
 - [105-visible result、turn-end 判定与 busy state completion 索引.md](./105-visible%20result%E3%80%81turn-end%20判定与%20busy%20state%20completion%20索引.md)
 - [106-system.init metadata、callback、dedupe 与 bootstrap 索引.md](./106-system.init%20metadata%E3%80%81callback%E3%80%81dedupe%20与%20bootstrap%20索引.md)
 - [107-viewerOnly local echo、history attach overlap 与 replay sink 索引.md](./107-viewerOnly%20local%20echo%E3%80%81history%20attach%20overlap%20与%20replay%20sink%20索引.md)
+- [108-loading start、pause、resume、turn-end 与 teardown 索引.md](./108-loading%20start%E3%80%81pause%E3%80%81resume%E3%80%81turn-end%20与%20teardown%20索引.md)

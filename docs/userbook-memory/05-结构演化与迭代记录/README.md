@@ -120,6 +120,7 @@
 - [116-2026-04-07-direct connect completion signal split 拆分记忆.md](./116-2026-04-07-direct%20connect%20completion%20signal%20split%20拆分记忆.md)
 - [117-2026-04-07-init visibility split 拆分记忆.md](./117-2026-04-07-init%20visibility%20split%20拆分记忆.md)
 - [118-2026-04-07-viewer replay dedup split 拆分记忆.md](./118-2026-04-07-viewer%20replay%20dedup%20split%20拆分记忆.md)
+- [119-2026-04-07-loading lifecycle split 拆分记忆.md](./119-2026-04-07-loading%20lifecycle%20split%20拆分记忆.md)
 
 用途：
 
