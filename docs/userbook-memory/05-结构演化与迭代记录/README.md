@@ -126,6 +126,7 @@
 - [122-2026-04-07-remote recovery lifecycle split 拆分记忆.md](./122-2026-04-07-remote%20recovery%20lifecycle%20split%20拆分记忆.md)
 - [123-2026-04-07-viewerOnly non-owning client split 拆分记忆.md](./123-2026-04-07-viewerOnly%20non-owning%20client%20split%20拆分记忆.md)
 - [124-2026-04-07-remote recovery signer split 拆分记忆.md](./124-2026-04-07-remote%20recovery%20signer%20split%20拆分记忆.md)
+- [125-2026-04-07-transport recovery action-state split 拆分记忆.md](./125-2026-04-07-transport%20recovery%20action-state%20split%20拆分记忆.md)
 
 用途：
 
