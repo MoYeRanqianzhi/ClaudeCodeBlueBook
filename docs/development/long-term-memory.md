@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/userbook/README` 与 `bluebook/risk/README` 的长期默认 user-facing-governance language 现已继续写死：
+  - `userbook/README` 默认继续把用户侧治理首答写成 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`
+  - `userbook/README` 默认继续把 `扩张或权限判错` 的最小顺序写成先判前段准入，再判中后段续费与清算
+  - `risk/README` 默认继续明确风控前门并不脱离完整治理链，只是在用户侧翻译为 `product promise / signer + evidence + reopen`
+  - `risk/README` 默认继续把最短公式的中后段写成 `decision window -> continuation pricing` 与 `durable-transient cleanup -> signer + evidence + reopen`
+  - 这两页默认统一拒收只共享结果词、不共享治理顺序的用户侧压缩写法
 - `bluebook/philosophy/87`、`bluebook/guides/102` 与 `bluebook/guides/101` 的长期默认 source-quality-deep-page language 现已继续写死：
   - `philosophy/87` 默认继续只认 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 为源码质量深页 canonical ladder
   - `philosophy/87` 默认继续把 `contract truth / registry truth / orchestration shell / danger surface / authoritative surface` 降回 atlas / projection / 公开镜像兼容别名

@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 user-facing governance 深化动作: 已继续更新 `bluebook/userbook/README.md` 与 `bluebook/risk/README.md`。新的结论是：用户侧治理 residual 现在不再是“有没有 shared nouns”，而是“有没有把 `decision window -> continuation pricing -> durable-transient cleanup` 也写成 first-answer order”。更稳的默认写法是：`userbook` 先把用户的治理判断压成完整顺序，`risk` 再把同一条完整治理链翻译成用户侧结算面，而不是只保留 `product promise / signer + evidence + reopen` 这些后段结果词。
+- 本轮新的治理结论: 风控前门现在更接近完整治理链，而不再只是用户侧结果词翻译；这意味着 `risk/` 与 `userbook/` 在治理线上的同序化又往前推了一步。
 - 本轮 source-quality-deep-page 深化动作: 已继续更新 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`、`bluebook/guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md` 与 `bluebook/guides/101-如何用苏格拉底诘问法审读one writable present：single-writer、recovery asset与anti-zombie.md`。新的结论是：源码质量深页当前最危险的 residual 已不再是前门 split，而是深页内部仍在用旧 `...truth / orchestration shell / danger surface / authoritative surface` 这套 atlas/公开镜像词替代 canonical ladder。更稳的默认写法是：深页即便做公开镜像或 atlas crosswalk，也要先把 canonical ladder 写死，再显式声明哪些旧词只配做兼容别名。
 - 本轮新的源码质量结论: `guides/32` 和 `guides/101` 现在已经形成了更清晰的 builder-facing bridge 关系。`32` 负责审读与回修桥接，`101` 负责 one writable present 的失稳前追问；两者都不再允许 later maintainer 先被 atlas/projection route 带偏。
 - 本轮 atlas-demotion 深化动作: 已继续更新 `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md` 与 `bluebook/navigation/README.md`。新的结论是：源码地图哲学页最危险的 residual 不是地图不够细，而是 atlas/projection 词重新越位成 present-truth frontdoor。更稳的默认写法是：`76` 只做 map projection / crosswalk，源码质量线 canonical ladder 继续只由 `09 / README / 86 / 101 / 102 / 84` 负责。

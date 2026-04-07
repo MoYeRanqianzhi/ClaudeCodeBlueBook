@@ -16,16 +16,20 @@
 
 - 风控不是第二套安全规则，而是同一条治理收费链在用户侧的结算面：先由 `governance key` 决定谁能改边界，再看 `product promise / decision window` 怎样对用户显形，最后由 `signer + evidence + reopen` 决定恢复是否成立。
 
+这里还应再多记一句：
+
+- 这条用户侧结算面并不脱离完整治理链；更稳的读法仍是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，只是它在风控目录里被翻译成 `product promise / signer + evidence + reopen`。
+
 风控不是安全之外第二套规则，而是同一价格秩序在身份、组织、入口子集与恢复签发上的用户侧结算面；误伤是在错误冻结能力，恢复是在凭证据和 signer 重新绑定执行连续性。
 
 如果把风控前门继续压成最短公式，也只剩三条：
 
 1. `governance key`
    - 谁配签发恢复、谁配冻结边界
-2. `decision window + product promise`
-   - 当前误伤、恢复与入口差异到底落在用户侧哪一层
-3. `signer + evidence + reopen`
-   - 恢复不是讲故事，而是凭证据重建执行连续性
+2. `decision window -> continuation pricing`
+   - 当前误伤、恢复与入口差异到底落在用户侧哪一层，以及这次继续是否仍值得续费
+3. `durable-transient cleanup -> signer + evidence + reopen`
+   - 恢复不是讲故事，而是凭证据重建执行连续性，并把旧的 transient authority 清算干净
 
 更硬一点说，`risk/` 在目录里的发言权也只该剩三条：
 

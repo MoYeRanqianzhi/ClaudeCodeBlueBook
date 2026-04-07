@@ -12,6 +12,10 @@
 2. 安全不是弹窗多少，而是 `pricing-right -> truth-surface attestation -> typed ask / sandbox / writeback seam` 是否先成立；approval、modal、status 只配做 consumer / projection。
 3. 真正省 token 不是把话压短，而是 stable bytes 已被外置且可 reload，只把当前 working set 留在场内；`Narrow / Later / Outside` 只是这条 contract 的用户侧读法。
 
+这里还应再多记一句：
+
+- 用户侧治理首答的完整顺序仍是 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`；approval、mode、`/usage`、`/compact` 只是在不同阶段消费这条链。
+
 这里还要再多记一句：
 
 - `userbook/` 不宣布新的系统真相，它只把已经承认的对象链、控制面和可见边界翻译成用户侧可操作判断。
@@ -29,6 +33,7 @@
 2. `扩张或权限判错`
    - 先看这次扩张有没有先被准入、当前真相有没有先说清，再决定该继续、收口、降级还是升级给人。
    - 先判 `pricing-right -> truth-surface`，不先看 approval、mode、`/usage`、`/compact`；这些都只是 projection / continuation consumer。
+   - 若扩张已经获准，还要继续判 `decision window -> continuation pricing -> durable-transient cleanup`；不要把 `/usage`、`/compact`、cleanup result 误读成治理本体。
 3. `旧状态污染`
    - 先看是不是旧 shim、旧恢复资产、旧 capability token 或旧 authority width 还在冒充当前世界。
 
