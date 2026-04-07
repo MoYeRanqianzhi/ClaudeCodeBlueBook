@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/security/README.md` 与 `bluebook/risk/README.md`，把安全与风控前门里的 UI noun 和 route table 再降一层：`security/README` 现在把 `/status / /doctor / /usage / /compact / /resume` 这类具体名词改回 runtime readback consumer / continuation consumer，并把大段分流清单压成 object handoff；`risk/README` 现在去掉目录范围与推荐入口库存，只保留治理前门、playbook handoff 和编号段的对象下潜顺序
 - 继续更新 `bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/philosophy/README.md`，把 Prompt 术语边界和 canonical route 再收紧一层：`15` 现在明确把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 写成 `first-reject order`、把六个 ref 写成 canonical witness order；`philosophy/README` 现在把 Prompt 公式、witness 与 reject trio 继续收回 `84`，并允许只追 Prompt canonical source 的读者直接进入 `84`
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`，把 Prompt 顶层 speaking-right 再收紧一层：`06` 不再在本章第二次重列 canonical reject trio，而只解释这些失稳为何发生；`41` 现在只消费 `same-world compiler` 这类 shared formula，不再在哲学页重写 Prompt `first-reject order`、库存化列出专题链路，或夹带 `09 / 05 / 15 / 41` choreography 与目录责任矩阵
 - 继续更新 `bluebook/README.md` 与 `bluebook/risk/README.md`，把治理总入口顺序和风控前门主语重新对齐：根入口现在重新与 `09 / navigation/15` 对齐回 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`，`risk/README` 现在更明确自己只读取 `product promise readback / reopen qualification / evidence binding`，不再在 README 里第一次改判治理主键或 signer ladder

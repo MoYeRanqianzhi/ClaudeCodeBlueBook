@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/security/README` 与 `bluebook/risk/README` 的长期默认 governance-handoff-thinning language 现已继续写死：
+  - `security/README` 默认继续用 runtime readback consumer / continuation consumer 这类抽象角色，不再让具体命令名或 UI noun 冒充治理主语
+  - `security/README` 与 `risk/README` 默认继续把 route table 压成 object handoff，不再在前门库存化目录范围、推荐入口或大段分流清单
+  - `risk/README` 默认继续只保留治理前门、playbook handoff 与编号段下潜顺序，不再把推荐入口列表写回首页
 - `bluebook/navigation/15` 与 `bluebook/philosophy/README` 的长期默认 prompt-order-split language 现已继续写死：
   - `15` 默认继续把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 只写成 `first-reject order`，把六个 canonical ref 只写成 witness order，不再混称为同一条 chain
   - `philosophy/README` 默认继续只保留 `same-world compiler` 这句 Prompt hook；更细的 formula、witness 与 reject trio 都继续收回 `84`

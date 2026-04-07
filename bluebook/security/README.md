@@ -2,7 +2,7 @@
 
 `security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，不要急着把安全页读成另一套规则堆。
-`security/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这次在失真的到底是 signer、ledger 还是 cleanup 工作对象，再判它卡在治理收费链的哪一段，最后才决定读主 README、appendix、source-notes 还是具体编号正文。
+`security/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这次在失真的到底是 signer、ledger 还是 cleanup 工作对象，再判它卡在治理收费链的哪一段，最后才决定读机制前门、速查表、源码证据簇还是具体编号正文。
 
 如果只先记安全前门的一句话，也只记这句：
 
@@ -66,16 +66,7 @@
 - 当你已经知道统一定价治理成立，但还没回答 signer、ledger 与 cleanup 责任究竟落在哪些对象上。
 - 当你需要判断哪种扩张该被 ask、哪种 truth 必须外化、哪种 cleanup 不配越级宣布终局。
 - 当你需要把“安全”和“省 token”继续压成同一治理纪律，而不是并列专题。
-- 当你需要把 user-facing 的 `/status / /doctor / /usage` 这些 runtime projection 与 `/compact / /resume` 这些 continuation consumer 退回它们各自只配消费的治理阶段。
-
-## 如果你只先判断一件事
-
-- 如果你只先判断“哪种 signer 有资格改边界”，从 `00-29` 进入。
-  - 失败信号：还在把 classifier、mode、allow 规则或单点沙箱当成最终主权。
-- 如果你只先判断“哪条真相链必须被宿主承认”，从 `30-138` 进入。
-  - 失败信号：还在让宿主从事件流、usage 条或局部 status 自己回放拼治理真相。
-- 如果你只先判断“cleanup 与 forgetting 为什么不能混成一个结果词”，从 `147-224` 进入。
-  - 失败信号：还在把完成、终局、遗忘、清理写成一个“已经没事了”的总结果。
+- 当你需要把 user-facing 的 runtime readback consumer 与 continuation consumer 退回它们各自只配消费的治理阶段，而不是再让 projection 词或 consumer 词冒充治理主语。
 
 更稳的 first reject signal 还应先记三条：
 
@@ -83,27 +74,10 @@
 2. cleanup 结果词开始越级替 signer 和 verdict 说话
 3. `Later / Outside`、default continuation 或全量可见重新让免费扩张复活
 
-## 按问题进入
+## 继续下潜时
 
-- 想看来源主权、权限模式、能力边界与显式降级
-  从 `00-29` 进入。
-- 想看当前真相、账本、恢复闭环、状态编辑与 failure semantics
-  从 `30-138` 进入。
-- 想看 signer ladder 从 `receipt -> completion -> finality -> forgetting`
-  从 `147-166` 进入。
-- 想看 artifact-family cleanup ladder
-  从 `167-196` 进入。
-- 想看 stronger-request cleanup ladder
-  从 `197-224` 进入。
-
-## 什么时候去 appendix / source-notes / docs
-
-- [appendix/README.md](appendix/README.md)
-  想快速查矩阵、字段、词法、签字权与速查表。
-- [source-notes/README.md](source-notes/README.md)
-  想追单机制、单协议、单文件群的源码证据簇。
-- [../../docs/development/security/README.md](../../docs/development/security/README.md)
-  想看长期记忆与目录治理，而不是正文判断。
+- 只按对象 handoff 继续：来源主权、能力边界与显式降级看 `00-29`；当前真相、账本与 failure semantics 看 `30-138`；`receipt -> completion -> finality -> forgetting` 与 cleanup ladder 看 `147-224`。
+- 只按证据层 handoff 回跳：字段矩阵与速查表回 [appendix/README.md](appendix/README.md)，源码证据簇回 [source-notes/README.md](source-notes/README.md)，长期记忆与目录治理回 [../../docs/development/security/README.md](../../docs/development/security/README.md)。
 
 ## 维护约定
 
