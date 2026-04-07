@@ -8,6 +8,29 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- governance frontdoor 的默认排查顺序现已继续写死：
+  - `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
+  - mode、modal、usage、status、compact、default continue 都只配做 `typed ask / projection` consumer，不再配冒充治理本体
+- `runtime-core evidence` 与 `operator-governance evidence` 的前门分栏现已继续稳定：
+  - 前者默认只签 contract、witness、writeback seam 与 current-truth choke point
+  - 后者默认只签 `CLAUDE.md / hooks / skills / policy surface / marketplace` 这类治理工件
+  - 二者都重要，但混写成同一层 certainty 时，默认按 `public-evidence ceiling` 降格
+- Prompt 魔力的长期默认解释现已继续写死成：
+  - `compile + verify + enforce`
+  - 真正稳定的是 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+  - secret prompt text、summary prose、最后一条消息或 handoff 故事后续都不再配充当前门主语
+- 安全与省 token 的长期默认解释现已继续写死成同一条治理链：
+  - 安全默认优先回 `trusted source -> governance key -> typed ask -> sandbox/filesystem/network boundary -> visible-set narrowing -> decision window -> continuation pricing -> writeback seam -> human fallback`
+  - 省 token 默认优先回 `stable prefix / section registry / prompt cache / externalization / compaction / reload law`，而不是 `/compact` 技巧或“回答更短”
+- 源码质量的长期默认六级梯子现已继续稳定：
+  - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - `orchestration shell != registry != current-truth surface`
+  - `code present / registry listed` 永不自动升级成 host promise
+- 下一阶段 frontdoor 目录优化的默认方向现已记下：
+  - 优先继续减少 `bluebook/README` 与 `navigation/README` 的重复首答
+  - `README` 更适合保留 canonical formula 与最小顺序
+  - `navigation/README` 更适合保留下一跳与 route law
+  - 后续若 `navigation` 再重述 canonical formula，应优先视为第二 frontdoor 风险
 - `public artifact ceiling` 现已继续稳定成源码质量前门的硬上限：
   - 先承认 public artifact 只能签它能签的东西，再谈 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
   - 后续凡是 later maintainer 还没先过这层 ceiling，就直接开始夸“公开镜像很先进”，都应优先按证据上限降格

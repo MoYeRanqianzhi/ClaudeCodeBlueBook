@@ -62,6 +62,7 @@
 - 第一条反证信号常常不是 token 升高，而是 mode 面板、审批弹窗、usage 条、default continue 或 compact 技巧又开始被当成治理真相
 - 更硬的前置追问还应是：系统有没有先裁 `visible world`，还是先让过宽工具、schema 与上下文免费进入，再用动作审批补票
 - 如果 classifier、审批或默认重试自己没有被定价，它们就在把治理控制面重新膨胀成新的免费扩张源
+- 更第一性的失败也不是“reject 来得太晚”，而是 `pricing-right` 还没成立、`truth-surface attestation` 还没说清 reject / reopen，系统就已经让扩张先进入现场
 
 这一刀区分也要先钉死：
 
@@ -75,14 +76,14 @@
 
 如果继续往下排查，最稳的治理 failure order 也应先认：
 
-1. `asset / rollback object`
-2. `reject`
-3. `degrade`
-4. `halt`
-5. `cleanup-before-resume`
-6. `human-fallback`
+1. `pricing-right mismatch`
+2. `truth-surface demotion`
+3. `asset-rollback ABI sealing`
+4. `shared reject verdict`
+5. `reopen qualification / human fallback`
 
 删掉这组 failure verdict，只剩 mode、modal、usage、compact 这些投影替身时，第二条线就已经从治理 runtime 退回 UX 叙事。
+更硬一点说，`rollback asset` 从来不是第一主语；真正先决定系统是否还能继续扩张的，是 `pricing-right` 有没有先被批准、`truth-surface` 有没有先把 shared reject 说清。
 
 ## 3. 当前真相保护的苏格拉底审读
 
@@ -164,3 +165,4 @@
 3. 我是在解释 Claude Code 为什么强，还是在帮助团队避免用错它的思想。
 4. 如果今天把这些问题拿去审一个新 Agent runtime，它们是否足够具体到能改设计。
 5. 如果并行多 Agent 同时研究，这些问题是否足够让各自答案在同一前门合流，而不是再产生四套新目录词。
+6. 我有没有把 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification` 讲成制度顺序，而不是 UI 事件顺序。

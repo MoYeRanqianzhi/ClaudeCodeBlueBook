@@ -24,7 +24,8 @@
    - `authority winner -> boundary bundle -> protocol transcript -> lineage refs -> continuation qualification -> explainability card`
    - 前五项才是可复核的 verdict witness set；`explainability card` 只是判后 diagnostic shell，不是新的 adjudicative evidence。
 2. governance failure order
-   - 先判 `asset / rollback object`，再进 `reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
+   - 先判 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
+   - 跨目录时也先问 `pricing-right` 与 `truth-surface`，不先追 modal、usage、cleanup event；`asset-rollback ABI` 只负责把收口做成 contract，不负责定义治理主语。
 3. current-truth reject order
    - `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`
 
@@ -35,6 +36,12 @@
 - `event truth` 只负责补证
 
 冲突复核顺序固定为 `display -> current -> event`；若顺序颠倒，later maintainer 看到的就不再是 current truth，而是第二叙述者。
+
+跨目录入口还应固定一条 `public-evidence ceiling`：
+
+- `runtime-core evidence` 决定运行时 contract、witness 与 current-truth choke point。
+- `operator-governance evidence` 只说明 `CLAUDE.md / hooks / slash commands / marketplace / settings` 这类治理工件。
+- 两者可以互证，不可互相越权改判；`navigation/` 若把它们写成同一 certainty，自身就会退化成伪 authority。
 
 如果一个跨目录问题还回答不出自己缺的是公式、顺序还是证据层，它就还没有真正进入 `navigation/` 的工作对象。
 如果 `navigation/` 开始替目录改判 speaking rights，它也就不再是在路由，而是在制造第二套入口主语；later maintainer 的局部可反对性会先被 route words 吃掉。
@@ -123,3 +130,4 @@
 - 一旦某个 `README` 同时承担 canonical formula、route map、深页解释与研究记忆，它就已经混层，应退回各自证据层。
 - 一旦 `bluebook/README` 开始复制深链，或某个目录 README 开始第一次解释别的目录的 canonical formula，也视为混层。
 - 一旦入口页只能给公式、却给不出最小顺序，它就仍停在 route map 层，还没有完成 later maintainer 可执行化。
+- 一旦跨目录入口把 `runtime-core evidence`、`operator-governance evidence` 与公开镜像缺口混写成同一 certainty，route 就会开始伪装成 authority。

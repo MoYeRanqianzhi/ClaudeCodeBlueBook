@@ -34,7 +34,8 @@
    - `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
    - 前五项组成 `world-entry / continue verdict` 的最小 witness set；`Explainability` 只负责 diagnostic naming，不负责改判。具体 witness object 回 `09 / guides/51`。
 2. governance failure order
-   - `asset / rollback object -> reject -> degrade -> halt -> cleanup-before-resume -> human-fallback`
+   - `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
+   - 治理先判 `pricing-right signer / lease` 是否成立，再看 `truth-surface attestation` 如何把 `reject / reopen` 外化；`asset-rollback ABI` 只负责把收口动作变成可恢复 contract，不再冒充治理起点。
 3. current-truth reject order
    - `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`
 
@@ -96,7 +97,8 @@
 - Prompt
   先按 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 排；前五项才是 witness set，不先看 `systemPrompt` 截图、最后一条消息、summary prose 或 handoff card。
 - 治理
-  先按 `asset / rollback object -> reject -> degrade -> halt -> cleanup-before-resume -> human-fallback` 排，不先看 mode、modal、usage、compact 或 default continue 这些投影替身。
+  先按 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback` 排，不先看 mode、modal、usage、compact 或 default continue 这些投影替身。
+  更第一性的追问是：这次扩张有没有先拿到 `pricing-right`，`truth-surface` 有没有先说清 reject / reopen，`asset-rollback ABI` 有没有只做收口而没有篡位成治理主语。
 - 当前真相
   先按 `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion` 排，不先看目录体感、作者说明或“看起来还算能跑”的经验判断。
 
