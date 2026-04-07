@@ -9,17 +9,17 @@
 如果只先记住三条使用判断，也只先记这三条：
 
 1. 好 Prompt 不是更像专家，而是先解出唯一工作对象，再确认 `compile inputs` 和 `verify witnesses` 仍沿同一条 `message lineage -> continue_qualification_verdict` 继续成立。
-2. 安全不是弹窗多少，而是 `pricing-right -> truth-surface attestation -> typed ask / sandbox / writeback seam` 是否先成立；approval、modal、status 只配做 consumer / projection。
+2. 安全不是弹窗多少，而是 `pricing-right -> truth-surface attestation -> typed ask / sandbox / writeback seam` 是否先成立；approval、modal、mode 只配做治理投影，`/status / /doctor / /usage` 只配做 runtime projection。
 3. 真正省 token 不是把话压短，而是 stable bytes 已被外置且可 reload，只把当前 working set 留在场内；`Narrow / Later / Outside` 只是这条 contract 的用户侧读法。
 
 这里还应再多记一句：
 
-- `userbook/` 只复述 root / `09` 已承认的用户侧治理顺序：`pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`；approval、mode、`/usage`、`/compact` 只是在不同阶段消费这条链。
+- `userbook/` 只复述 root / `09` 已承认的用户侧治理顺序：`pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`；approval、mode、modal 只配做治理投影，`/status / /doctor / /usage` 只配做 runtime projection，`/compact` 只配做 continuation consumer。
 
 这里还要再多记一句：
 
 - `userbook/` 不宣布新的系统真相，它只把已经承认的对象链、控制面和可见边界翻译成用户侧可操作判断。
-- `userbook/` 默认只翻 user-visible consumer truth，不替 `README / 09 / api` 补签 runtime-core 缺口；先忘了这层 `public-evidence ceiling`，就会把 UI 面和状态词误当系统真相。
+- `userbook/` 默认只翻 user-visible projection、continuation consumer 与 `Outside` handoff surface，不替 `README / 09 / api` 补签 runtime-core 缺口；先忘了这层 `public-evidence ceiling`，就会把 UI 面和状态词误当系统真相。
 - Prompt 也不是单段 `systemPrompt`，而是 multi-surface world-entry object；`CLAUDE.md / hooks / settings` 能影响行为，但不能替 runtime witness 签 continue。
 - `continuity` 在 `userbook/` 里也不是第四条使用主题；它只是同一工作对象在 Prompt `Continuation`、治理 `continuation pricing` 与当前真相收口上的共同时间轴。
 - 所以 user-facing 第一问也不该是“该点哪个入口”，而应先判 `上下文送错 / 扩张或权限判错 / 旧状态污染`；先定题，不先找页。
@@ -32,7 +32,7 @@
    - 先看是不是已经换了工作对象，或附件/文件/working set/handoff 已不再服务同一件事。
 2. `扩张或权限判错`
    - 先看这次扩张有没有先被准入、当前真相有没有先说清，再决定该继续、收口、降级还是升级给人。
-   - 先判 `pricing-right -> truth-surface`，不先看 approval、mode、`/usage`、`/compact`；这些都只是 projection / continuation consumer。
+   - 先判 `pricing-right -> truth-surface`，不先看 approval、mode、modal、`/status`、`/doctor`、`/usage`、`/compact`；前者只是治理投影，`/status / /doctor / /usage` 只是 runtime projection，`/compact` 只是 continuation consumer。
    - 若扩张已经获准，还要继续判 `decision window -> continuation pricing -> durable-transient cleanup`；不要把 `/usage`、`/compact`、cleanup result 误读成治理本体。
 3. `旧状态污染`
    - 先看是不是旧 shim、旧恢复资产、旧 capability token 或旧 authority width 还在冒充当前世界。
@@ -42,7 +42,7 @@
 根前门真正负责的是 `问题分型 -> 二跳`，不负责替 `04 / 05` 的 README 重新充当专题目录。
 
 更稳一点说，`userbook/README -> 01 -> 04 / 05` 也应继续共享同一组 first-answer order；目录优化若只共享 nouns、不共享顺序，用户层仍会先退回“按页碰运气”。
-更稳一点说，approval、modal、status、usage 这些词也都只配做 projection / consumer；它们能帮助二跳，不能代替 `扩张或权限判错` 的控制面判断。
+更稳一点说，approval、modal、mode 这些词只配做治理投影；status、`/status`、`/doctor`、usage、`/usage` 这些词只配做 runtime projection；`/compact` 只配做 continuation consumer；它们都能帮助二跳，不能代替 `扩张或权限判错` 的控制面判断。
 
 更稳的默认二跳是：
 
@@ -126,5 +126,5 @@
 按高价值控制面组织，负责回答：
 
 1. 哪条控制面现在在说话。
-2. 哪些相邻入口只是 projection / consumer，不配改判。
+2. 哪些相邻入口只是 projection、continuation consumer 或 `Outside` handoff surface，不配改判。
 3. 什么时候该把问题退回 `09 / api / architecture / playbooks`。

@@ -14,9 +14,9 @@
 
 如果继续把治理控制面也压成用户侧 first-answer order，这一层最稳的短句还应再补一句：
 
-- 用户侧治理判断仍先走 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`，approval、mode、usage、compact 与 cleanup result 只是在不同阶段消费这条链。
+- 用户侧治理判断仍先走 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`；approval、mode、modal 只配做治理投影，`/status / /doctor / /usage` 只配做 runtime projection，`Compact / Resume / Memory` 只配做 continuation consumer，`Export` 只配做 `Outside` handoff surface，`cleanup result` 只配做收口结果词。
 - 换句话说，`05` 的治理顺序应与 `security/README` 的机制顺序、`risk/README` 的用户侧结算顺序严格同序，而不是只共享 noun。
-- 更稳一点说，`/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory / Export` 只配做 continuation consumer；真正 verdict 仍留在 `truth-surface -> decision window -> durable-transient cleanup`，用户侧恢复仍留在 `signer + evidence + reopen`。
+- 更稳一点说，`/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory` 只配做 continuation consumer；`Export` 只配做 `Outside` handoff surface；真正 verdict 仍留在 `truth-surface -> decision window -> durable-transient cleanup`，用户侧恢复仍留在 `signer + evidence + reopen`。
 
 更硬一点说，`05` 在 `userbook/` 里的发言权也只该剩：
 
@@ -40,7 +40,7 @@
 进入控制面长文前，只先记一句：
 
 - 这里只翻译用户侧判断；证据上限、truth plane 与 rollback ceiling 统一回蓝皮书根前门与 `09`，不在 `05` 里重签一遍。
-- 这里只负责把 signer、projection、consumer 与 first reject path 翻成用户动作，不负责把 projection 重新抬回 signer。
+- 这里只负责把 signer、projection、continuation consumer、`Outside` handoff surface 与 first reject path 翻成用户动作，不负责把 projection 重新抬回 signer。
 - `/status`、`/doctor`、`/usage` 在这一层也只配组成相邻 projection cluster，不配另起一条“运行时自检控制面”。
 
 ## 先按控制面，不按相邻按钮

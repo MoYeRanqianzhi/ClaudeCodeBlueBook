@@ -3338,3 +3338,6 @@
 - Prompt 线里 `world-definition source` 现在比 `world-defining winner` 更适合作为高流量页面的稳定词法：前者强调同题首答来源与 admissibility，后者更容易把论证重新拖回主权/胜负比喻。若正文仍保留旧词，优先把它降格为兼容或历史词，而不是继续站在前门。
 - 可见标题、反思条目和 first-answer formula 也应遵守同一条去魅纪律；不能出现正文已经讲 `Prompt 效力 / authority order / canonical source`，但小标题仍写 `Prompt 魔力 / 神秘成功 / owner 页` 的局部真相外溢。
 - 下一条独立治理精修线已经明确：`runtime projection`、`continuation consumer`、`verdict`、`reopen` 四类词必须在 user-facing frontdoor 上稳定分层；`cleanup result` 不应再被叫作 consumer，`reopen` 也不应再并入 `durable-transient cleanup` 尾槽。
+- 这条治理词法纪律现已进一步固定为五分法：`approval / mode / modal = 治理投影`，`/status / /doctor / /usage = runtime projection`，`Compact / Resume / Memory = continuation consumer`，`Export = Outside handoff surface`，`cleanup result = 收口结果词`。user-facing 前门若再把它们混叫成 `consumer / projection`，应优先视为边界退化而不是措辞小问题。
+- `reopen` 现在应被长期视为 verdict 之后的用户侧恢复链，而不是 `durable-transient cleanup` 的尾词。更稳的顺序是：先 `truth-surface -> decision window -> durable-transient cleanup`，再另判 `signer + evidence + reopen`；凡是把 `reopen` 并进 cleanup 槽的写法，都在偷混治理 verdict 与恢复签发。
+- 下一条源码质量目录精修线也已被 sidecar 收敛：`navigation/04` 不能再继续扮演目录宪法 owner，`philosophy/87` 也不该再把 speaking-rights 正式回指给它。若继续推进源码质量线，优先做 demotion propagation，不优先再改高阶哲学论点。

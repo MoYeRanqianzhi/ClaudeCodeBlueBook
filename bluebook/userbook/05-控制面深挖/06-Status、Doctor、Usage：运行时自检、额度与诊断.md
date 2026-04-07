@@ -41,8 +41,8 @@
 - `/doctor` 只汇总可信度证据，不单独签发“这套环境已经安全可用”。
 - `/usage` 只投影预算窗口，不单独签发“这轮还值得继续付费”。
 
-真正的 verdict 仍留在上层控制面与恢复链里。对用户来说，这页最多只帮助你判断该继续、降级、停止、转入恢复链或升级给人；如果把这些动作直接写成这页的 verdict source，就又会把 projection 抬回本体层。
-更稳一点说，`/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory / Export` 这些 continuation consumer 另在相邻页处理；真正 verdict 仍留在 `truth-surface -> decision window -> durable-transient cleanup`，用户侧恢复仍留在 `signer + evidence + reopen`。
+真正的 verdict 仍留在上层控制面的 `truth-surface -> decision window -> durable-transient cleanup` 里；用户侧恢复另沿 `signer + evidence + reopen` 去回读。对用户来说，这页最多只帮助你判断该继续、降级、停止、转入恢复链或升级给人；如果把这些动作直接写成这页的 verdict source，就又会把 projection 抬回本体层。
+更稳一点说，`/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory` 这些 continuation consumer 另在相邻页处理；`Export` 另归 `Outside` handoff surface；真正 verdict 仍留在 `truth-surface -> decision window -> durable-transient cleanup`，用户侧恢复仍留在 `signer + evidence + reopen`。
 
 ## `/status` 解决的是宿主状态投影
 
@@ -128,7 +128,7 @@
 如果你已经不在判断证据面，而是在判断谁来重新签发恢复、cleanup 或 reopen，也不要继续停在本页：
 
 - 用户侧恢复与 reopen：回 [../../risk/README.md](../../risk/README.md)
-- 机制主语与治理 verdict：回 [README.md](README.md)
+- 机制主语与治理 verdict：回 [../../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md) 与 [../../api/README.md](../../api/README.md)
 
 ## 源码锚点
 

@@ -596,3 +596,5 @@
 - 同步把本轮 Prompt 术语精修写回持久化记忆：研究日志新增“前门不再用 magic / sovereignty 词族冒充首答”的批次记录，长期记忆新增 Prompt 高流量页面优先采用 `effectiveness / input assembly order / canonical source / first-answer rule` 这一组稳定词法
 - 继续向下清理 Prompt residual：`bluebook/README`、`06`、`philosophy/81`、`philosophy/84` 现在进一步把 `world-defining winner / owner 页 / Prompt 魔力 / 咒语 / 神秘成功` 收回到 `world-definition source / canonical source / Prompt 效力 / 文案 / 不可解释成功`，把 residual 从前门总句继续压到可见标题、反思条目与机制页说明
 - 本轮同时固定一条新的 Prompt 词法纪律：authority 相关前门优先写 precedence/admissibility，不再写 ownership/sovereignty；目录优化也优先写“承担首答责任”，不再写“拥有第一次解释权”
+- 继续收口治理前门边界：`risk/README`、`userbook/README`、`userbook/05/README`、`userbook/05/03`、`userbook/05/06` 现在更明确把 `runtime projection`、`continuation consumer`、`Outside handoff surface`、`durable-transient cleanup verdict` 与 `signer + evidence + reopen` 分层，不再把 `reopen` 并进 cleanup 尾槽，也不再把 `cleanup result` 叫成 consumer
+- 同步把用户侧回跳出口校正到 canonical chain：`05/06-Status...` 现在把治理 verdict 回跳改到根 `09 / api`，而不是再回 `userbook/05` 本地 README；`Export` 也正式从 continuation consumer 降格为 `Outside` handoff surface

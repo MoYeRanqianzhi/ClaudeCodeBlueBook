@@ -2,7 +2,7 @@
 
 `risk/` 当前有 65 篇编号文档，范围 `00-64`。本目录研究账号治理、误伤、恢复、支持链路、入口语义差和中国用户场景，不把风控简化成单一封号开关。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，不要急着把风控页读成“另一套安全规则”。
-`risk/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这是误伤、恢复、reopen 还是入口差异哪种用户侧工作对象，再判它卡在 `governance key / typed ask / decision window / continuation pricing / durable-transient cleanup / signer + evidence + reopen` 的哪一段，最后才选前门、playbook 或深页。
+`risk/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这是误伤、恢复、reopen 还是入口差异哪种用户侧工作对象，再判它卡在 `governance key / typed ask / decision window / continuation pricing / durable-transient cleanup` 的哪一段；若问题已经进入恢复签发，再另判 `signer + evidence + reopen`，最后才选前门、playbook 或深页。
 
 还要先记一句：
 
@@ -14,11 +14,11 @@
 
 如果只先记风控前门的一句话，也只记这句：
 
-- 风控不是第二套安全规则，而是同一条治理收费链在用户侧的结算面：先由 `governance key` 决定谁能改边界，再看 `product promise / decision window` 怎样对用户显形，最后由 `signer + evidence + reopen` 决定恢复是否成立。
+- 风控不是第二套安全规则，而是同一条治理收费链在用户侧的结算面：先由 `governance key` 决定谁能改边界，再看 `product promise / decision window` 怎样对用户显形，先由 `durable-transient cleanup` 收口，再由 `signer + evidence + reopen` 决定恢复是否成立。
 
 这里还应再多记一句：
 
-- 这条用户侧结算面并不脱离完整治理链；更稳的读法仍是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，只是它在风控目录里被翻译成 `product promise / signer + evidence + reopen`。
+- 这条用户侧结算面并不脱离完整治理链；更稳的读法仍是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，只是它在风控目录里对用户显形为 `product promise` 与 `signer + evidence + reopen`。
 
 风控不是安全之外第二套规则，而是同一价格秩序在身份、组织、入口子集与恢复签发上的用户侧结算面；误伤是在错误冻结能力，恢复是在凭证据和 signer 重新绑定执行连续性。
 
@@ -28,14 +28,14 @@
    - 谁配签发恢复、谁配冻结边界
 2. `decision window -> continuation pricing`
    - 当前误伤、恢复与入口差异到底落在用户侧哪一层，以及这次继续是否仍值得续费
-3. `durable-transient cleanup -> signer + evidence + reopen`
-   - 恢复不是讲故事，而是凭证据重建执行连续性，并把旧的 transient authority 清算干净
+3. `durable-transient cleanup`
+   - 治理 verdict 到这里先收口；若要恢复，再由 `signer + evidence + reopen` 凭证据重建执行连续性，并把旧的 transient authority 清算干净
 
 如果继续把风控前门也压成和 `security / userbook/05` 共用的三段顺序，也只该再补一句：
 
 - 先判 `governance key / truth-surface`
 - 再判 `typed ask / visible-set / sandbox`
-- 最后才判 `decision window / continuation pricing / durable-transient cleanup / reopen`
+- 最后才判 `decision window / continuation pricing / durable-transient cleanup`；若要恢复，再另判 `reopen qualification`
 
 更硬一点说，`risk/` 在目录里的发言权也只该剩三条：
 
@@ -54,7 +54,7 @@
 - `governance key` 先决定谁有资格改边界、谁能签发恢复，再谈误伤、阻断、连续性成本与入口差异
 
 因此风控前门也不该自己回放事件去猜当前真相，而应沿 signer、证据和 runtime 已外化的 truth-surface / decision window / cleanup verdict 去回读。
-- `/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory / Export` 只配做 continuation consumer；用户侧恢复继续落在 `signer + evidence + reopen`。
+- `/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory` 只配做 continuation consumer；`Export` 只配做 `Outside` handoff surface；用户侧恢复继续落在 `signer + evidence + reopen`。
 
 更稳的 first reject signal 也应先记三条：
 
