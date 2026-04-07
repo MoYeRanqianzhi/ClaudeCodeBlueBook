@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-witness-order-alignment language 现已继续写死：
+  - Prompt 导航页默认继续把 `stable prefix` 与 `continue qualification verdict` 明写进 witness chain，不再让 `06 / 15 / 41` 在同一条链上使用不同粗细的 object order
+  - `15 / 41` 默认继续把 Prompt 线写成 canonical object chain 与 first-reject order 的分工，不再让 later maintainer 自己推断哪些 witness 是正文对象、哪些只是压缩简称
 - `bluebook/06` 的长期默认 prompt-second-frontdoor-convergence language 现已继续写死：
   - `06` 默认继续把 `2.10`、开头魔力主句与 `7.4` 判据卡共同回绑同一条 `same-world compiler` contract
   - Prompt 第二前门默认继续只保留一条主解释：`Authority / Boundary / Transcript / Lineage / Continuation` 是 contract，`section registry / stable boundary / protocol transcript / message lineage / continue qualification verdict` 是 witness

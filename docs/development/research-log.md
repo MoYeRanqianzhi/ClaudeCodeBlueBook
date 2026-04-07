@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-witness-order-alignment 深化动作: 已继续更新 `bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`。新的结论是：Prompt 第二前门当前更贵的 residual，已不只是结果词或过厚路由，而是 `06 / 15 / 41` 对同一条 witness chain 仍可能用不同粗细的 object order 书写。
+- 本轮新的 Prompt witness 结论: 更稳的 Prompt 导航 wording 必须统一点名 `message lineage / section registry / stable prefix / protocol transcript / continue qualification verdict`，否则 later maintainer 仍会把一些页读成 object chain，一些页读成 first-reject order，一些页读成解释层简写。
 - 本轮 prompt-second-frontdoor-convergence 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`。新的结论是：Prompt 第二前门当前更贵的 residual，不再是结果词，而是同一页内部仍可能用“runtime contract”“装配链”“judge card”三种近义写法分头解释同一件事。
 - 本轮新的 Prompt 收束结论: 更稳的 `06` wording 必须让 `2.10` 与 `7.4` 共同回到同一条 `same-world compiler` contract，再由 `section registry / stable boundary / protocol transcript / message lineage / continue qualification verdict` 充当具体 witness。
 - 本轮 philosophy-readme-frontdoor-thinning 深化动作: 已继续更新 `bluebook/philosophy/README.md`。新的结论是：哲学 README 哪怕已经 canonicalize 三条母线，仍可能因为解释层资本表、过厚 route table 和多组 README 内分流，把 later maintainer 带回“第二套压缩话语总表”。
