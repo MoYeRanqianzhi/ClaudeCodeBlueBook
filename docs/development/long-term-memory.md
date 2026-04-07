@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/01`、`bluebook/02` 与 `bluebook/philosophy/76` 的长期默认 source-map-locator-demotion language 现已继续写死：
+  - 源码地图页默认继续只写成 repo-specific 定位与跳转，不再写成 map projection / atlas formula
+  - 使用层默认继续把 `world-defining winner / canonical rung` 收回 `world-definition source / canonical ladder`
+  - `philosophy/76` 默认继续把 `源码 atlas / Prompt 魔力 / atlas rung` 收回 `源码地图 / Prompt 效力 / 地图定位规则`
+  - 这三页默认统一拒收 atlas、projection 与 rung 再次越位成源码质量线第二前门
 - `bluebook/userbook/README`、`bluebook/userbook/05/03` 与 `bluebook/userbook/05/06` 的长期默认 userbook-frontdoor-buckets language 现已继续写死：
   - `/status / /doctor / /usage` 默认继续只写成 runtime projection
   - `Compact / Resume / Memory` 默认继续只写成 continuation consumer

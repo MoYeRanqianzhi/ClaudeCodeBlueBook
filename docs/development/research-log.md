@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 source-map-locator-demotion 深化动作: 已继续更新 `bluebook/01-源码结构地图.md`、`bluebook/02-使用指南.md` 与 `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`。新的结论是：源码质量线当前最容易回潮的 residual，不再是 canonical ladder 本身，而是地图页和使用层还会把 `atlas / projection / rung` 这种定位词写得像第二套公式。现在这三页开始更一致地把地图页话语收回 `定位与跳转 / canonical ladder / 地图定位规则`。
+- 本轮新的源码质量结论: later maintainer 第一次看到源码地图时，最该先学到的不是“地图术语”，而是“canonical ladder 只在一个地方定义，地图页只负责把你带到那里”；一旦地图词重新长成公式，目录优化就又会从结构证据退回 route 文案。
 - 本轮 userbook-frontdoor-buckets 深化动作: 已继续更新 `bluebook/userbook/README.md`、`bluebook/userbook/05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md` 与 `bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md`。新的结论是：治理/连续性线当前在 user-facing 高流量页里最危险的 residual，不再是 canonical chain 本身，而是 bucket 边界写得还不够单槽，容易让 `projection / continuation consumer / Outside handoff / cleanup result / reopen` 重新互借发言权。现在这三页开始更一致地把这五类对象重新分桶。
 - 本轮新的治理结论: later maintainer 若在 user-facing 前门第一次看到的仍是“谁都能帮助判断下一步”，就会把 `/usage`、`Compact`、`Export` 或 cleanup 结果词误读成 verdict signer；更稳的目录结构写法是先把 bucket 写成单槽，再让用户去找对应动作页。
 - 本轮 prompt-route-framing 深化动作: 已继续更新 `bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md`、`bluebook/navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md` 与 `bluebook/navigation/41-机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理.md`。新的结论是：Prompt 线当前最容易漏掉的 residual 已经不只是深页 headline，而是高流量 route 页的入口问句、回链句和自检句还在重复 `魔力` 语气。现在这三页开始更一致地把 `魔力 / 神秘文案` 收回 `效力 / 稳定有力 / 文案归因`。
