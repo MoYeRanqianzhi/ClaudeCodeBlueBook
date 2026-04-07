@@ -147,6 +147,7 @@
 - [143-2026-04-07-remote behavior flag split 拆分记忆.md](./143-2026-04-07-remote%20behavior%20flag%20split%20拆分记忆.md)
 - [144-2026-04-07-session dual gate split 拆分记忆.md](./144-2026-04-07-session%20dual%20gate%20split%20%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 - [145-2026-04-07-remote bit without url split 拆分记忆.md](./145-2026-04-07-remote%20bit%20without%20url%20split%20%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
+- [146-2026-04-07-assistant viewer vs remote tui split 拆分记忆.md](./146-2026-04-07-assistant%20viewer%20vs%20remote%20tui%20split%20%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
 
 用途：
 

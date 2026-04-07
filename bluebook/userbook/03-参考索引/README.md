@@ -50,6 +50,7 @@
 4. 哪些能力是稳定、条件、内部或影子。
 5. 哪些扩展对象是 `/skills`、SkillTool、MCP、plugins、hooks、remote skills 的不同投影。
 6. 面对真实任务时，应先走哪个入口。
+7. `assistant viewer`、`--remote` TUI、`viewerOnly`、`remoteSessionUrl` 与 coarse remote bit 看起来相近时，应该先去哪个入口分辨合同厚度。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 

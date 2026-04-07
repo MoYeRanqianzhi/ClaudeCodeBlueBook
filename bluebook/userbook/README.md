@@ -58,6 +58,9 @@
   [02-能力地图/README.md](./02-%E8%83%BD%E5%8A%9B%E5%9C%B0%E5%9B%BE/README.md)
 - 只想按名字、入口和合同速查：
   [03-参考索引/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/README.md)
+- 想分清 `assistant viewer`、`--remote` TUI、`viewerOnly` 与 coarse remote bit 的合同厚度：
+  [03-参考索引/02-能力边界/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md) ->
+  [05-控制面深挖/146-assistant%20viewer%E3%80%81--remote%20TUI%E3%80%81viewerOnly%E3%80%81remoteSessionUrl%20%E4%B8%8E%20filterCommandsForRemoteMode%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%90%8C%E4%B8%80%20coarse%20remote%20bit%20%E4%B8%8D%E7%AD%89%E4%BA%8E%E5%90%8C%E6%A0%B7%E5%8E%9A%E5%BA%A6%E7%9A%84%20remote%20%E5%90%88%E5%90%8C.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/146-assistant%20viewer%E3%80%81--remote%20TUI%E3%80%81viewerOnly%E3%80%81remoteSessionUrl%20%E4%B8%8E%20filterCommandsForRemoteMode%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%90%8C%E4%B8%80%20coarse%20remote%20bit%20%E4%B8%8D%E7%AD%89%E4%BA%8E%E5%90%8C%E6%A0%B7%E5%8E%9A%E5%BA%A6%E7%9A%84%20remote%20%E5%90%88%E5%90%8C.md)
 
 如果你已经确定要读某个专题，请先到对应 README 再选深页，不要把根前门当默认深链库存。
 
