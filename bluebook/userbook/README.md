@@ -517,5 +517,6 @@
 - sandbox permission 的 persist-to-settings 在 context、settings 与 live sandbox 之间的三层写面边界
 - permission tail 从 verdict ledger 分叉到 closeout、re-evaluation、host sweep 与 persist surfaces 的结构边界
 - remote surface 从 consumer topology 分叉到 foreground runtime、interaction shell、presence ledger、gray runtime 与 behavior bit 的结构边界
+- 桥接审批回到本地之后，如何从用户问题层分诊 closeout、re-evaluation、host sweep 与 persist propagation
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
