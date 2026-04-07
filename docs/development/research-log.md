@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-philosophy-slug-alignment 深化动作: 已继续更新 `bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md`、`bluebook/navigation/06-终局判断导航：协作语法、资源定价与未来维护者消费者.md`、`bluebook/navigation/08-高阶制度导航：Prompt Constitution、治理顺序与构建系统.md` 与 `docs/development/01-章节规划.md`，并把 `bluebook/philosophy/57`、`bluebook/philosophy/33` 的文件名正式收回已稳定的 H1。新的结论是：对 later maintainer 来说，slug 不是纯兼容层，而是高流量入口的第一层 visible label；只要文件名还在说旧 `Prompt 魔力`，正文去魅就还没有完成。
+- 本轮新的 Prompt 结论: `57` 的正式对象应固定为 `Transcript -> Lineage -> Continuation` 组成的协作接口，`33` 的正式对象应固定为 `Explainability` 只是诊断命名层；导航与规划页若继续打印旧 slug，就会把“机制主语”重新降回“魅力归因”。
 - 本轮 governance-bucket-split 深化动作: 已继续更新 `bluebook/security/README.md`、`bluebook/risk/README.md`、`bluebook/userbook/README.md` 与 `bluebook/README.md`。新的结论是：治理线当前最顽固的 residual，已经从 canonical chain 与执行桥接退到 bucket 本身，即 `settlement / consumer / projection surrogate` 仍会把 `Export`、`continuity`、`compact`、`default continue` 这些不同对象压成一桶。现在这四页开始更一致地把它们拆回 `Outside handoff surface / 用户侧判断对象 / 共同时间轴 / 继续侧快捷替身`。
 - 本轮新的治理结论: later maintainer 最容易被误导的，不是链条没写出来，而是“哪些词其实不是同一桶”没被拆开；一旦 `Export` 被并回 continuation consumer，或 `compact / default continue` 被并回 projection surrogate，前门就会重新糊掉。
 - 本轮 prompt-slug-alignment 深化动作: 已继续更新 `bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md`、`bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`、`bluebook/navigation/README.md` 与 `bluebook/02-使用指南.md`。新的结论是：Prompt / 治理 / 源码质量线在高流量前门里剩余的最贵 residual，不再是正文话语，而是 slug 与入口 target 还在泄露旧 `Prompt魔力 / 源码先进性` framing。现在这四处开始更一致地把路径名和入口回指收回 canonical 主语。

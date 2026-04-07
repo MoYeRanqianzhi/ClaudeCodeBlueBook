@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md`、`bluebook/navigation/06-终局判断导航：协作语法、资源定价与未来维护者消费者.md`、`bluebook/navigation/08-高阶制度导航：Prompt Constitution、治理顺序与构建系统.md` 与 `docs/development/01-章节规划.md`，并把 `bluebook/philosophy/57`、`bluebook/philosophy/33` 的文件名正式收回各自已稳定的 H1：`57` 现在固定为 `Transcript、Lineage与Continuation如何组成协作接口`，`33` 现在固定为 `Explainability只是Prompt的诊断命名层`；高流量导航与规划清单也同步停止暴露旧 `Prompt魔力` slug
 - 继续更新 `bluebook/security/README.md`、`bluebook/risk/README.md`、`bluebook/userbook/README.md` 与 `bluebook/README.md`，把治理前门里残留的 `结算面 / consumer / 投影替身` bucket wording 继续拆细：`security` 现在把 `Export` 单列回 `Outside` handoff surface，`risk` 现在把 `结算面 / consumer` 收回用户侧判断对象与共同时间轴，`userbook` 根页现在把自我定义收回“判断与二跳”，根 `README` 现在把 `mode / usage` 和 `compact / default continue` 拆成不同类的替身
 - 继续更新 `bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md`、`bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`、`bluebook/navigation/README.md` 与 `bluebook/02-使用指南.md`，把两条高阶前门的 slug 与高流量入口回指正式收回 canonical 主语：`15 / 41` 现在不再用 `Prompt魔力 / 源码先进性` 做路径命名，`02` 和 `navigation/README` 也同步改掉旧 visible label 与旧 target
 - 继续更新 `bluebook/02-使用指南.md`、`bluebook/api/README.md`、`bluebook/navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md` 与 `bluebook/api/48-commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界.md`，把 atlas 线仍留在高流量 route/index 页上的 `Atlas / atlas 原则` visible label 继续收回 `源码地图 / 二级目录地图 / 源码地图原则`，并补掉 `api/48` 正文里最后一句 `命令 atlas` 残留

@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/57`、`bluebook/philosophy/33`、`bluebook/navigation/05`、`bluebook/navigation/06`、`bluebook/navigation/08` 与 `docs/development/01` 的长期默认 prompt-philosophy-slug language 现已继续写死：
+  - `57` 的正式文件名默认继续与 H1 对齐为 `Transcript、Lineage与Continuation如何组成协作接口`
+  - `33` 的正式文件名默认继续与 H1 对齐为 `Explainability只是Prompt的诊断命名层`
+  - 高流量导航页与规划清单默认继续同步新文件名，不再暴露旧 `Prompt魔力` slug
 - `bluebook/security/README`、`bluebook/risk/README`、`bluebook/userbook/README` 与 `bluebook/README` 的长期默认 governance-bucket-split language 现已继续写死：
   - `Export` 默认继续只写成 `Outside` handoff surface，不再并回 continuation consumer
   - `risk/README` 默认继续把 `结算面 / consumer` 收回用户侧判断对象与共同时间轴
