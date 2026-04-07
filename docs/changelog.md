@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 本轮根仓 `main / origin/main` 在同回合内持续并发变动，已先后观测到 `411377f6d16aaa838086190881b215aa77c0f2dc` 与 `f3614eb313ad8e4917d74da18d9a84761fe82ddd` 两组对齐状态；因此这些 SHA 只应被读成时间点记录，最终 live truth 以实时 `git rev-parse main origin/main` 为准
 - 最终复核确认：根仓 `main` 与 `origin/main` 当前同指 `411377f6d16aaa838086190881b215aa77c0f2dc`，`git status --short --branch` 显示 `## main...origin/main`，即本地与远端已重新对齐到包含 `Merge branch 'mainloop'` 的同一提交
 - 随后继续观察到根仓 `main` 在 `2026-04-07 23:45:49 +0800` 出现 reflog 记录 `411377f main@{2026-04-07 23:45:49 +0800}: merge mainloop: Merge made by the 'ort' strategy.`；当前根仓状态因此变为 `main...origin/main [ahead 3]`。这说明主分支已被推进到包含 `mainloop` 的合并提交；本轮我没有对根仓执行任何回退操作
 - 本轮根仓库同步随后已补做成功：`fetch origin main` 成功，`checkout main` 显示 `Already on 'main'` 且 `Your branch is up to date with 'origin/main'.`，`merge --ff-only origin/main` 结果为 `Already up to date.`；本轮文档改动仍然全部只发生在 `.worktrees/mainloop`

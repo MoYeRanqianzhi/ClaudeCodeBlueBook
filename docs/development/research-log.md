@@ -2,6 +2,7 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮根仓库状态再补一条稳态约束: `main / origin/main` 在同一回合里继续并发推进，已观测到 `411377f6d16aaa838086190881b215aa77c0f2dc` 与 `f3614eb313ad8e4917d74da18d9a84761fe82ddd` 两次对齐；因此本轮日志里的 SHA 都只代表时间点快照，真正的当前状态必须以实时 `git rev-parse main origin/main` 为准。
 - 本轮根仓库最终最终态确认: 继续复核后，`git rev-parse main origin/main` 已都指向 `411377f6d16aaa838086190881b215aa77c0f2dc`，`git status --short --branch` 也恢复为 `## main...origin/main`。也就是说，本地与远端现在都已经对齐到包含 `Merge branch 'mainloop'` 的同一提交。
 - 本轮根仓库最终观测状态再次修正: 在补做同步成功之后，根仓 `main` 又于 `2026-04-07 23:45:49 +0800` 出现 reflog `merge mainloop`，当前可见状态为 `main...origin/main [ahead 3]`。我没有对根仓做回退；这里只记录事实：主分支现在已经包含 `mainloop` 的合并提交，需要由用户决定后续是否保留或单独清理。
 - 本轮根仓库同步最终状态已修正: 先前的 unresolved-conflict 阻塞没有继续持续；同回合补做后，`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均已成功，根仓 `main` 现已确认与 `origin/main` 对齐。本轮正文改写与提交仍然全部只在 `.worktrees/mainloop` 内完成。
