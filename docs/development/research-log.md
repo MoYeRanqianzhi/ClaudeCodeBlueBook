@@ -2,6 +2,12 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 userbook-governance-owner-leak-trim 深化动作：已继续更新 `userbook/05-控制面深挖/README`、`05-06` 与 `userbook/02-能力地图/01-运行时主链/05`。新的结论是：当前更高价值的 residual 已从顶层入口转到 userbook 高流量页里的治理 owner 泄漏。更稳的改法不是删掉治理对象，而是把机制话语降成用户动作句：`若你在用 X 判断 Y，回 Z`，或 `先 A，再 B，不要用 X 直接下结论`。
+- 本轮新的治理 speaking-right 结论：`10` 继续独占通用弱读回面总清单，`security` 继续独占 signer ladder / ledger / cleanup authority，`risk` 继续独占用户侧 `product promise readback / reopen qualification / evidence binding`。`userbook` 这一层现在更明确只翻译 first reject path、route 与下一步动作，不再自己重讲 signer / verdict / reopen。
+- 本轮新的 `05/README` 结论：`05` 现在更明确只回答“哪条控制面现在在说真话”和“你该回哪一层”，不再在高流量页里展开 `谁签字 / 谁记账 / 谁负责恢复 / 能不能 reopen`。这些问题一旦出现，就直接分流回 `security / risk / playbooks`。
+- 本轮新的 `05-06` 结论：`/status / /doctor / /usage` 现在进一步被压成 runtime projection，而不是控制面本体。它们最多帮助用户判断该继续、降级、停止、转入恢复链或升级给人；若开始直接判断治理结论或恢复成立，就应回 `10 / risk / 09`。
+- 本轮新的 continuity 结论：`Compact / Resume / Memory` 在 userbook 能继续保留，但其最稳写法应是“帮助恢复连续性，不单独证明可以继续”。这说明连续性工具页仍可保留一阶原则和使用边界，但不应继续借 `continue verdict` 的机制调门说话。
+- 本轮根仓库同步检查结果：本轮起手 `fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 再次全部成功，根仓继续保持 `main...origin/main` 健康态。因此后续只需把根仓同步当起手例检，不再默认把它当阻塞源。
 - 本轮 de-linearize-top-entry-and-bridge-demotion 深化动作：已继续更新 `navigation/05`、`15`、`41`、`04`、`00`、`02`、`05` 与 `01-源码总地图`。新的结论是：当前更高价值的目录优化，不是再加顶层页，而是继续把顶层稳定成“少数宪法页 + 少数判断页 + 若干 first-hop bridge + stub-only compat alias”。`navigation/04` 现在正式把规范入口改成角色表，`01-源码总地图` 现在正式降成 shim。
 - 本轮新的 Prompt 目录结论：并行 agent 继续确认 Prompt 线的 residual 重复主要集中在 `03 / navigation/05 / 15 / 41 / 06` 这些 route/why/self-audit 页；因此这批改动继续只做 route trim，不补新入口。`navigation/05` 现在更明确只做“别抄错东西”的校正，`15` 只保留问题梯子，`41` 只保留 `compile / price / externalize / evict` 与第一次定义权唯一，完整 Prompt 首答仍只回 `84 / 51 / 06`。
 - 本轮新的顶层结构结论：`bluebook/` 顶层现在更稳地按角色读，而不是按编号线性读。当前默认顺序已更清楚地固定为：`README = 宪法前门`，`00 = preface / locator`，`09 = 宪法总图`，`03 = why`，`06 = self-audit`，`01 / 02 / 05 / 07 / 08 = bridge 或 locator`。这意味着后续若再收口 `02 / 05`，应继续学 `10` 的 card 化和 `api / 08` 的 owner split，而不是再补章节式教程。

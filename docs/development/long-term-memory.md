@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/userbook/05-控制面深挖/README`、`bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md` 与 `bluebook/userbook/02-能力地图/01-运行时主链/05-压缩、恢复与记忆：如何维持可继续工作的现场.md` 的长期默认 userbook-governance-owner-trim language 现已继续写死：
+  - `05/README` 默认继续只保留控制面判断、first reject path 与 route，不再自己首答 `谁签字 / 谁记账 / 谁负责恢复 / 能不能 reopen`
+  - `05-06` 默认继续只把 `/status / /doctor / /usage` 写成 runtime projection；若用户已经在判恢复、cleanup 或 reopen，默认直接回 `10 / risk / 09`
+  - `运行时主链/05` 默认继续把 `Compact / Resume / Memory` 写成“帮助恢复连续性”的使用边界，不再借 `continue verdict` 的机制调门说话
+- 并行 agent 吸收后的长期默认 governance-speaking-right ledger 现已继续写死：
+  - `10` 独占通用弱读回面总清单与“这些对象只能触发怀疑、不能代签治理链”的总声明
+  - `security` 独占 signer ladder、ledger / cleanup authority 与 finality 强弱层次
+  - `risk` 独占用户侧 `product promise readback / reopen qualification / evidence binding` 与 `signer + evidence + reopen`
+  - `userbook` 高流量页若再出现 `只配|不配|签发|签字|signer|verdict|reopen`，默认按降格候选处理
+- 最新根仓同步记忆（2026-04-08，本轮后段）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。后续起手仍要检查，但默认不再把根仓同步视为阻塞源。
 - `bluebook/navigation/05`、`bluebook/navigation/15`、`bluebook/navigation/41`、`bluebook/navigation/04`、`bluebook/00-导读`、`bluebook/02-使用指南`、`bluebook/05-功能全景与API支持` 与 `bluebook/01-源码总地图` 的长期默认 de-linearized-top-entry language 现已继续写死：
   - `navigation/05` 默认继续只做模仿对象校正，不重发 `84 / 51 / 10 / 102` 的首答公式、witness order 或 ladder
   - `navigation/15` 默认继续只保留失稳前问题梯子与第一条反证信号类型，不正文式首答 Prompt canonical formula / witness order
