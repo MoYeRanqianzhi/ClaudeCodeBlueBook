@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 Prompt 模板结论：`03` 的 Prompt why 现在又收掉了一处旧模板痕迹，不再保留“本节不再补 Prompt 审计顺序”这种写法；当前更稳的统一句法已经更明确是：只保留一句 why，再给固定 owner 顺序与自校回链。
 - 本轮根仓同步检查结果再次出现阻塞：`git checkout main` 因根仓 `bluebook/userbook/03-参考索引/README.md` 与 `bluebook/userbook/README.md` `needs merge` 失败。本轮仍严格只在 `.worktrees/mainloop` 内推进与提交。
 - 本轮新的治理 why 结论：`03` 的治理小节现在更明确被压回和 Prompt/源码质量相同的模板，不再保留轻量 canonical card，而是只保留一句 why 和最小苏格拉底问题；固定 owner 顺序继续只回 `10 -> 85 -> 61 -> security/risk/playbooks`。
 - 本轮新的治理顺序结论：`03` 里较早与中段两处治理 why 现在也被继续压回同一条 owner 顺序，不再保留 `10 / security / risk` 这类松散回链。当前更稳的默认口径已经更明确是：凡涉及 canonical chain、failure semantics、弱读回面、恢复尾链与执行收口，统一回 `10 -> 85 -> 61 -> security/risk/playbooks`。
