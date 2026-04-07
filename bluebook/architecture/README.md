@@ -9,6 +9,7 @@
 如果只先记源码质量判断在架构层的一句话，也只记这句：
 
 - 架构层不负责再判梯子，而负责把 `authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer` 落成正式对象、状态机与 choke point，并用它们保护 `one writable present`。
+- 这里首先在分配 present 的写权与回写责任，而不是描述结构形状。
 
 这里还要再多记一句：
 

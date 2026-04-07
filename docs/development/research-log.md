@@ -2,6 +2,11 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 Prompt route 结论：`09` 这类 high-flow 总图页剩下的最贵 residual，已经不是对象没列全，而是还会公开泄漏 `51`。更稳的默认修法是：总图页统一只回 `philosophy/84`；builder-facing implement / audit 顺序只留在 `84` owner chain 内部。
+- 本轮新的 Prompt first-principles 结论：`84` 与 `51` 现在更明确把 Prompt 魔力写成四层 why：`裁决权外化`、`inheritance law`、`行动因果作者链保护` 与 `time lease renewal`。对应地，`51` 的六步顺序也更明确不是模块目录，而是 `reject cost` 排序。
+- 本轮新的 governance/security-token 结论：弱读回面之所以不能代签，最短 why 现在被进一步压成 `consumer != compiler` 与 `no verdict seam / rollback liability`；一旦让 readback surface 自证主权，`externalize / evict` 就会反转成长期证明成本。
+- 本轮新的 source-quality 结论：源码先进性现在更明确不只该写成 `evidence governance`，还应写成 `present write right + later maintainer veto right + future change option value`。如果结论还落不到 `writeback seam / retreat layer / change-risk record`，它就更像研究方法词，不像工程先进性。
+- 本轮新的苏格拉底结论：`06` 现在把“有没有把时间漂移误当成免费继续”固定成常设反问，这让 Prompt 的 `continue qualification` 与治理的 `authority lease` 第一次在自校层合成同一条时间续租问题。
 - 本轮新的 Prompt live-route 结论：`03` 这种 why 页若继续把 Prompt route 写成 `84 / guides/51 / 06`，later maintainer 仍会先学到双 owner 而不是单一 owner。更稳的默认修法是：高流量 why/self-audit 页统一只回 `philosophy/84`；`51` 只继续留在 owner chain 内部处理 builder-facing same-world implement / audit。
 - 本轮后续单点收尾也已继续推进到中段 why：`03` 里最后两条仍把 `message lineage / handoff projection / continuation assets` 直接送去 `guides/51` 的句子，现已统一压回 `philosophy/84`，避免 mid-page why 又重新泄露第二条 Prompt 公开 route。
 - 本轮 prompt-hard-gate-cleanup 深化动作：已继续更新 `guides/36`、`userbook/00` 与 `long-term-memory`。新的结论是：Prompt 线当前最贵的 residual 已不再是“有没有 canonical ABI”，而是 host audit 与 user-facing shorthand 还会不会把 canonical verdict 名与 alias table 写散。更稳的默认修法是：`36` 只认六个 ABI ref + `continue_qualification_verdict` 的硬闸门，`userbook/00` 只认 `目标 / 附件 / working set / next step` 四项 Prompt alias，不再把治理 `decision window` 偷塞回 Prompt witness shorthand。

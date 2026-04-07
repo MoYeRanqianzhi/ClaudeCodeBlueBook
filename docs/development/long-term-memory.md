@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-first-principles live 记忆：
+  - `09` 这类 high-flow 总图页默认继续只把 Prompt owner route 收回 `philosophy/84`；凡再次出现 `84 / guides/51`、`84 -> 51` 或 mid-page 直接点名 `51` 的 builder-facing 顺序，默认按 public route leakage 处理
+  - `84` 默认继续把 Prompt 编译链写成 `裁决权外化`；`51` 默认继续把 `stable boundary` 写成 `inheritance law`、把 `protocol rewrite` 写成 `行动因果作者链保护`、把 `continue qualification` 写成 `time lease renewal`
+  - `51` 的 six-step card 默认继续先按 `reject cost` 排序理解，不按模块名、缓存术语或实现目录理解
+- 当前批次继续新增一条 governance-weak-surface live 记忆：
+  - `10 / security / 61` 默认继续把弱读回面 why 写成 `consumer != compiler` 与 `no verdict seam / no rollback liability`
+  - 弱读回面若被写成可代签，默认先按 `observability 偷权 -> current truth 分叉 -> externalize / evict 反转成证明成本` 处理
+- 当前批次继续新增一条 source-quality-rights live 记忆：
+  - `87 / architecture` 默认继续把源码先进性压成 `present write right + later maintainer local veto + future change option value`，不再只写 evidence governance、目录美学或“更好读”
+  - later maintainer 结论若还落不到 `first retreat layer / writeback seam / change-risk record`，默认按“研究方法词，不是工程先进性”处理
+- 当前批次继续新增一条 socratic-time-lease live 记忆：
+  - `06` 的苏格拉底自校默认继续把“时间漂移是否被误读成免费继续”固定成常设反问；凡 continue 解释里不再追问续租资格，默认按 Prompt / governance 联合失稳处理
 - `bluebook/userbook/README` 与 `bluebook/userbook/00 / 01 / 02 / 03 / 04 / 05` 入口页的长期默认 userbook-owner-collapse language 现已继续写死：
   - `userbook/README` 默认继续作为 userbook 唯一 first-answer frontdoor，保留用户侧问题分型、最小顺序与二跳
   - `00-阅读路径`、`01-主线使用/README`、`02-能力地图/README`、`03-参考索引/README`、`04-专题深潜/README` 与 `05-控制面深挖/README` 默认继续只承接根前门已判清的 owner law，不再重复 speaking-rights、appeal-chain 或 first-answer order
