@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md` 与 `bluebook/navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md`，把源码地图线最上游的 `atlas / rung / projection` 话语继续压回 `canonical ladder / 源码地图 / 定位与跳转`：`102` 现在更明确只负责 canonical ladder 与降格规则，`35` 现在更明确只做源码地图 route page，不再把 atlas 说成第二条前门
 - 继续更新 `bluebook/risk/README.md` 与 `bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md`，把治理恢复链里残留的 `用户侧结算面 / 结算权 / 外观` bridge wording 继续收回 `product promise / reopen qualification / evidence binding` 与 `projection / consumer`：`risk/README` 现在更明确自己只解释用户侧读法，不再自写成治理 speaking right；`85` 现在更明确把 approval、usage、cleanup result 与恢复流程都降回收费链上的 projection / consumer
 - 继续更新 `bluebook/philosophy/README.md`、`bluebook/navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md` 与 `bluebook/navigation/41-机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理.md`，把高流量入口句里残留的 `Prompt 效力 / 安全省 token / 源码先进性` 结果词 shorthand 继续压回 `请求装配 / 统一定价治理 / 当前真相保护` 三条 canonical 母线，避免 route 层先用结果词组织读者，再把第一性原理推迟到深页
 - 继续更新 `bluebook/navigation/04-目录职责、规范入口与兼容别名页说明.md`、`bluebook/navigation/README.md` 与 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`，把目录宪法 residual 继续压回 next-hop 与免责声明：`04` 现在把整段“各目录职责”改成 question-based next-hop，`navigation/README` 现在只约束自己不越位，`87` 现在不再正文式重写目录分工链，只保留“用证据梯度审目录混层”的提醒

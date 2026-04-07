@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 atlas-locator-demotion-2 深化动作: 已继续更新 `bluebook/guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md` 与 `bluebook/navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md`。新的结论是：源码地图线当前最值钱的 residual，已经收敛到最上游两页自己还在用 `atlas / rung` 组织 later maintainer；只要这里不先收口，`api/46-48` 这类下游 atlas 页就会继续继承旧话语。现在 `102` 更明确只拥有 canonical ladder 与降格规则，`35` 更明确只拥有源码地图 route。
+- 本轮新的源码质量结论: 对 later maintainer 来说，最稳定的地图入口不是“atlas 多精细”，而是“canonical ladder 在哪里定义、地图页只负责把你送到哪里”；一旦这两页继续混写，整个 atlas 线就会反向把 locator 话语抬成 authority。
 - 本轮 governance-recovery-bridge 深化动作: 已继续更新 `bluebook/risk/README.md` 与 `bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md`。新的结论是：治理线当前剩余的高价值 residual，已经从 canonical chain 公式退到恢复链 bridge wording 本身，即 `risk/` 还会顺手把自己写成 `用户侧结算面 / 结算权`，`85` 还会顺手把 approval、usage、cleanup result 与恢复流程写成“收费链的外观”。现在这两页开始更一致地把这些词收回 `product promise / reopen qualification / evidence binding` 与 `projection / consumer`。
 - 本轮新的治理结论: 对 later maintainer 最危险的，不是看不见收费链，而是把 user-facing 读法误认成治理 speaking right；一旦 `risk/README` 自写成 `结算权`，或 `85` 把恢复流程抬成外观主语，恢复链就会重新遮住 canonical chain。
 - 本轮 route-shorthand-demotion 深化动作: 已继续更新 `bluebook/philosophy/README.md`、`bluebook/navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md` 与 `bluebook/navigation/41-机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理.md`。新的结论是：Prompt / 治理 / 源码质量线当前在高流量入口里最容易留下的 residual，不再是 canonical chain 本身，而是 route 层会顺手用 `Prompt 效力 / 安全省 token / 源码先进性` 这些结果词组织读者。现在这三页开始更一致地把入口 shorthand 收回 `请求装配 / 统一定价治理 / 当前真相保护`。

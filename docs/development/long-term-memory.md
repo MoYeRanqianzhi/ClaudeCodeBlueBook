@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/guides/102` 与 `bluebook/navigation/35` 的长期默认 atlas-locator-demotion-2 language 现已继续写死：
+  - `guides/102` 默认继续只写 canonical ladder 与降格规则，不再用 `canonical rung / atlas 正文` 组织术语
+  - `navigation/35` 默认继续只写源码地图 route page，不再写成 atlas projection page
+  - 这两页默认统一拒收 atlas、projection 与 rung 再次越位成源码质量线前门
 - `bluebook/risk/README` 与 `bluebook/philosophy/85` 的长期默认 governance-recovery-bridge language 现已继续写死：
   - `risk/README` 默认继续只写 `product promise / reopen qualification / evidence binding` 这组用户侧前门，不再写成 `用户侧结算面 / 结算权`
   - `philosophy/85` 默认继续把 approval、usage、cleanup result 与恢复流程写成收费链上的 `projection / consumer`

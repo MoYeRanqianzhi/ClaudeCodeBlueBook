@@ -31,8 +31,8 @@
 
 这里还应先多记一句：
 
-- 文件名里的 `authoritative surface / adapter subset / hotspot gap discipline` 只保留为兼容检索别名，不再拥有首答权，也不是新的 canonical rung。
-- 本页只定义 canonical rung 与降格规则；repo-specific map projection、atlas 宿主选择与跨目录路由不在这里宣布。
+- 文件名里的 `authoritative surface / adapter subset / hotspot gap discipline` 只保留为兼容检索别名，不再拥有首答权，也不是新的 canonical ladder 层级。
+- 本页只定义 canonical ladder 与降格规则；repo-specific 定位与跳转、地图正文宿主选择与跨目录路由不在这里宣布。
 - 若 sole writer、writeback seam 与 freshness gate 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
 
 这条线最短的 reject trio 也只认：
@@ -49,12 +49,12 @@
 
 ### Step 0. 先过 `public artifact ceiling`
 
-在公开镜像研究里，第一步不是直接进 rung 1，而是先承认：
+在公开镜像研究里，第一步不是直接进 canonical ladder 第一级，而是先承认：
 
 - public artifact 只能签它真正公开签出的东西
 - 看得见的 README、schema、registry、热点文件、投影视图与恢复资产，不自动拥有同一种签字权
 
-这一步不过，后面所有 rung 都会被写浅，因为你会先把“可见”误当成“已被完整证明”。
+这一步不过，后面各级判断都会被写浅，因为你会先把“可见”误当成“已被完整证明”。
 
 更稳的公开镜像研究顺序，不是：
 
@@ -327,9 +327,9 @@ gap discipline 的价值不是“保守一点”，而是：
 
 ## 10. 危险改动面记录模板
 
-当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一张可交接的 atlas。
+当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一张可交接的源码地图。
 
-但 `guides/` 在这里负责的是记录模板与 gap note 写法，不负责规定 atlas 正文应宿主在哪一层，也不负责替任何目录填满具体危险面。
+但 `guides/` 在这里负责的是记录模板与 gap note 写法，不负责规定地图正文应宿主在哪一层，也不负责替任何目录填满具体危险面。
 
 更稳的记录模板至少应包含下面几列：
 
