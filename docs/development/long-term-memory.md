@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/README` 的长期默认 source-quality-frontdoor-singularity language 现已继续写死：
+  - 源码质量线默认继续只认 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - `future maintainer = formal consumer` 默认继续只配解释 `consumer subset + mirror gap discipline`，不再和 ladder 并列成第二条前门
+  - 源码质量线默认继续先过 `guides/102` 的证据上限，再进 `86 / 87`
 - `bluebook/security/README` 与 `bluebook/risk/README` 的长期默认 governance-handoff-thinning language 现已继续写死：
   - `security/README` 默认继续用 runtime readback consumer / continuation consumer 这类抽象角色，不再让具体命令名或 UI noun 冒充治理主语
   - `security/README` 与 `risk/README` 默认继续把 route table 压成 object handoff，不再在前门库存化目录范围、推荐入口或大段分流清单

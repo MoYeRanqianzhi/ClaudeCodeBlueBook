@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/philosophy/README.md`，把源码质量前门再单源化一层：源码质量线现在只认 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 这一条 ladder，`future maintainer = formal consumer` 被明确降格成 `consumer subset + mirror gap discipline` 的解释句；同时 README 也把源码质量的 canonical route 补成先过 `guides/102` 再进 `86 / 87`
 - 继续更新 `bluebook/security/README.md` 与 `bluebook/risk/README.md`，把安全与风控前门里的 UI noun 和 route table 再降一层：`security/README` 现在把 `/status / /doctor / /usage / /compact / /resume` 这类具体名词改回 runtime readback consumer / continuation consumer，并把大段分流清单压成 object handoff；`risk/README` 现在去掉目录范围与推荐入口库存，只保留治理前门、playbook handoff 和编号段的对象下潜顺序
 - 继续更新 `bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/philosophy/README.md`，把 Prompt 术语边界和 canonical route 再收紧一层：`15` 现在明确把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 写成 `first-reject order`、把六个 ref 写成 canonical witness order；`philosophy/README` 现在把 Prompt 公式、witness 与 reject trio 继续收回 `84`，并允许只追 Prompt canonical source 的读者直接进入 `84`
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`，把 Prompt 顶层 speaking-right 再收紧一层：`06` 不再在本章第二次重列 canonical reject trio，而只解释这些失稳为何发生；`41` 现在只消费 `same-world compiler` 这类 shared formula，不再在哲学页重写 Prompt `first-reject order`、库存化列出专题链路，或夹带 `09 / 05 / 15 / 41` choreography 与目录责任矩阵
