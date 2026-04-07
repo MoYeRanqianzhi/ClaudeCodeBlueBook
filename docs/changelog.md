@@ -2,6 +2,8 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/README.md`、`bluebook/architecture/README.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把这一轮源码质量前门 residual 收成 `题 -> 梯 -> 义 -> 物 -> 校` 的更硬分工：根入口现在只把源码质量线写成“current-truth protection”并把 canonical ladder/evidence ceiling 明确送回 `guides/102`；`architecture/README` 现在更明确只承接 `authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer` 这组对象层顺序，不再自己重判公开镜像证据梯度；`06` 现在也把源码质量线的最小拒错顺序收回纯自校问句，并把 canonical ladder 明确让位给 `102`
+- 本轮并行 Agent 关于源码质量前门的新结论已吸收入记忆：`guides/102` 继续拥有 canonical ladder、降格规则与 reject trio 的定义权；`03` 只保留 why，`architecture/README` 只保留对象，`06` 只保留自校，根入口只保留定题与 route
 - 继续更新 `bluebook/03-设计哲学.md`、`bluebook/philosophy/README.md`、`bluebook/navigation/README.md`、`bluebook/security/README.md` 与 `bluebook/risk/README.md`，把这一轮 residual 收成“Prompt owner 继续单源化、security/risk 继续拆 speaking right”：`03` 现在把 Prompt 公式再降成 `same-world compiler` 级别的 why 句，不再在本章重列完整 Prompt 公式；`philosophy/README` 现在更明确把 Prompt 前门压成 `same-world compiler`，把 same-world witness 与实现顺序继续送回 `51`，并把 continuity 的时间轴仲裁送回 `06`；`navigation/README` 现在把 continuity 类 route-law inflation 直接送回 `06`，不再在跨目录入口里重写 Prompt 尾段目录；`security` 现在把用户侧恢复读法明确让位给 `risk/`，`risk` 现在把通用弱读回面总声明继续让位回 `10`
 - 本轮并行 Agent 关于源码质量前门的新结论已吸收入记忆：源码质量线当前更稳的 route 继续固定为 `README 定题 -> guides/102 定 ladder -> 03 定 why -> architecture/README 定对象 -> 06 自校`，可压成 `题 -> 梯 -> 义 -> 物 -> 校`；后续若继续瘦身，优先级应先看 `03`，再看 `architecture/README` 与 `bluebook/README`
 - 本轮并行 Agent 新结论已吸收入记忆：Prompt residual 当前最值当的后续目标仍是继续清 `03 / 06 / navigation/README` 之外高流量页里的 owner 级 Prompt 首答；治理/风控 residual 当前已基本收口成 `10 = 通用弱读回面`、`security = signer / ledger / cleanup authority`、`risk = product promise / reopen qualification / evidence binding`

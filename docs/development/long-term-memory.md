@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`bluebook/architecture/README` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 source-quality-frontdoor-route-tightening language 现已继续写死：
+  - `bluebook/README` 默认继续只把源码质量线写成 current-truth protection 的定题句，不再自己携带 canonical ladder、public-evidence ceiling 或 reject trio
+  - `guides/102` 默认继续独占 canonical ladder、降格规则与 reject trio
+  - `architecture/README` 默认继续只承接对象层顺序：`authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer`
+  - `06` 默认继续只保留源码质量自校问句与 `surface ownership -> writeback split -> freshness gate -> later-maintainer rejectability`，不再与 `102` 争 canonical ladder
+  - 源码质量前门 route 默认继续固定为 `题 -> 梯 -> 义 -> 物 -> 校`
 - `bluebook/03-设计哲学`、`bluebook/philosophy/README`、`bluebook/navigation/README`、`bluebook/security/README` 与 `bluebook/risk/README` 的长期默认 prompt-owner-singularity-and-governance-boundary language 现已继续写死：
   - `03` 默认继续只保留 Prompt 的 why / first-principles / Socratic judgment，不再在本章重列完整 Prompt 公式
   - `philosophy/README` 默认继续把 Prompt 前门压成 `same-world compiler` 的 consumer-facing hook；same-world witness 与实现顺序默认继续只回 `51`

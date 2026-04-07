@@ -10,7 +10,7 @@
    - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
    - 任何 user-facing bucket 都只是这条收费链的读回助记，不是治理入口里的第二套主题；四类被收费资源、reject trio 与弱读回面统一回 [10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)
 3. 当前真相保护
-   - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+   - 先认 current-truth protection；canonical ladder 与 evidence ceiling 统一回 `guides/102`，why 统一回 `03 / philosophy/86 / philosophy/87`，对象与 writeback seam 统一回 `architecture/README`
 
 这里还应再多记一句目录纪律：
 
@@ -24,11 +24,7 @@
 
 如果 later maintainer 第一次进蓝皮书时还看不见这三条，目录结构就还在迫使他先学对象层总结，再自己回压成第一性原理。
 
-入口还应先记住一条 `public-evidence ceiling`：
-
-- 公开证据只能先签它已公开承诺的 contract、witness、writeback seam 与治理工件；它不能替闭源 runtime-core 缺口脑补 certainty。
-- 后续凡是把 `runtime-core evidence`、`operator-governance evidence` 与 UI 投影混写成同一层真相，都应先按证据上限降格。
-- 入口层还应先判 `evidence mode`：本地镜像在场时优先按 mirror evidence 读；镜像缺席时先按 `public-evidence only` 模式读，不把“通常在源码镜像里可见”误写成“当前 worktree 已经核实”。
+源码质量线若缺 `public-evidence ceiling`、canonical ladder 或 `current-truth surface candidate` 的降格判断，直接回 `guides/102` 与 `docs/development/00`；根入口不再第二次展开这套梯子。
 
 如果只先记治理入口的一句话，也只记这句：
 
@@ -42,8 +38,8 @@
 2. governance failure order
    - `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
    - 治理先判 `pricing-right signer / lease` 是否成立，再看 `truth-surface attestation` 有没有把 `reject / reopen` 外化清楚；`asset-rollback ABI` 只负责把收口动作做成可恢复 contract，不再冒充治理起点。
-3. current-truth reject order
-   - `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`
+3. current-truth route order
+   - `README -> guides/102 -> 03 / philosophy/86 / philosophy/87 -> architecture/README -> 06`
 
 入口如果只给公式，不给这三组顺序，later maintainer 仍要下潜到深页后才拿得到真正的排查起点；这说明入口层还没有完成从“同词化”到“同序化”的升级。
 
@@ -71,15 +67,6 @@
   先按 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback` 排，不先看任何界面投影、状态百分比或继续快捷入口；四类被收费资源、弱读回面与 reject trio 统一回 `10`。
 - 当前真相
   先按 `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion` 排，不先看目录体感、作者说明或“看起来还算能跑”的经验判断。
-
-源码质量线还应再暴露三条 first reject signal：
-
-- `layout-first drift`
-  目录更整齐、文件更小、分层更漂亮开始冒充源码质量判断。
-- `recovery-sovereignty leak`
-  pointer、snapshot、resume asset 或 replay 开始越权 current-truth surface。
-- `surface-gap blur`
-  `current-truth surface / consumer subset / hotspot kernel` 重新说不清边界。
 
 如果入口层不给这三组顺序，目录结构优化就仍然主要在帮读者“找到页”，还没有开始帮 later maintainer “先拿到同一套排查动作”。
 
