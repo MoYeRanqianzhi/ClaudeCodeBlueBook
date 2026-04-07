@@ -40,6 +40,12 @@
 - 当前批次继续新增一条 user-facing Prompt live 记忆：
   - `userbook/01-02`、`04-08`、`05-README` 与 `05-03` 默认继续只保留 `目标 / 附件 / working set / next step` 这类动作判断，不再在高流量页重列 `message_lineage_ref / section_registry_ref / ...`
   - user-facing 页若开始把 Prompt witness 再写成字段映射或 `84 -> 51` owner route，默认优先按“把工作动作写回字段表”的 residual 处理；高流量页的 owner route 统一只回 `philosophy/84`
+- 当前批次继续新增一条 governance-lease live 记忆：
+  - 安全与省 token 更深的同构默认继续写成 `authority lease` 法则，而不只写成共用预算器：动作权限、上下文席位与 continuation 时间都应被读成需要续租或结算的治理对象
+  - `大结果继续留在主上下文` 默认不只算 token 浪费，也算 `未经重定价的权威续租`；弱读回面一旦被误读成 signer，也应优先按“observability 偷权”处理
+- 当前批次继续新增一条 source-quality-why live 记忆：
+  - 公开镜像里的“先进性”默认优先写成 `evidence governance`：谁能签字、何时必须降格、哪些缺口必须保留、第一条 reject path 在哪，而不先写目录美学或热点 aura
+  - Prompt magic 默认继续先写成 `anti-renegotiation`：不同 consumer、多轮与多次接手不必重新协商“现在是什么世界”；一旦现场需要重述，same-world magic 就已失效
 - `bluebook/06-第一性原理与苏格拉底反思.md` 的长期默认 governance-self-audit-alignment language 现已继续写死：
   - `6.23 / 6.46 / 6.55 / 6.58 / 7.5` 默认继续优先反问“是否又把 signer、弱读回面、continuation consumer 与 cleanup 结果词写混”，不再只停在“统一预算器 / 更严拦截 / 压缩文本”这类中层概括
   - 更稳的默认修法顺序继续是：`先删中层结果词 -> 再点名同一秩序里的非对称 -> 最后才回 owner 页`

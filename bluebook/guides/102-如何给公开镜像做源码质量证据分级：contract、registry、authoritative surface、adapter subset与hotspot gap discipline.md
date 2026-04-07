@@ -55,6 +55,7 @@
 - 看得见的 README、schema、registry、热点文件、投影视图与恢复资产，不自动拥有同一种签字权
 
 这一步不过，后面各级判断都会被写浅，因为你会先把“可见”误当成“已被完整证明”。
+更硬一点说，能把 `public artifact ceiling / downgrade / gap note / change-risk record` 固化成统一 speaking-rights protocol，本身就是公开可见的工程先进性，因为它降低的是过度主张、误改与制度失忆成本。
 
 更稳的公开镜像研究顺序，不是：
 
