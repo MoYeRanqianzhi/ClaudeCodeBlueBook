@@ -68,6 +68,19 @@
 - `旧状态污染`：
   [01-主线使用/README.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/README.md) ->
   [05-控制面深挖/README.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/README.md)
+- 把上下文送准：
+  [01-主线使用/02-提问、补上下文与让模型继续工作.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/02-%E6%8F%90%E9%97%AE%E3%80%81%E8%A1%A5%E4%B8%8A%E4%B8%8B%E6%96%87%E4%B8%8E%E8%AE%A9%E6%A8%A1%E5%9E%8B%E7%BB%A7%E7%BB%AD%E5%B7%A5%E4%BD%9C.md) ->
+  [04-专题深潜/08-上下文接入、附件与提示编译专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/08-%E4%B8%8A%E4%B8%8B%E6%96%87%E6%8E%A5%E5%85%A5%E3%80%81%E9%99%84%E4%BB%B6%E4%B8%8E%E6%8F%90%E7%A4%BA%E7%BC%96%E8%AF%91%E4%B8%93%E9%A2%98.md)
+- 把结果交付给团队或外部流程：
+  [04-专题深潜/09-评审、提交、导出与反馈专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/09-%E8%AF%84%E5%AE%A1%E3%80%81%E6%8F%90%E4%BA%A4%E3%80%81%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%8F%8D%E9%A6%88%E4%B8%93%E9%A2%98.md)
+- 运营长任务的状态、预算和模型节奏：
+  [04-专题深潜/10-状态、额度、模型与节奏运营专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/10-%E7%8A%B6%E6%80%81%E3%80%81%E9%A2%9D%E5%BA%A6%E3%80%81%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%8A%82%E5%A5%8F%E8%BF%90%E8%90%A5%E4%B8%93%E9%A2%98.md)
+- 提升终端交互效率：
+  [04-专题深潜/11-终端交互、状态栏与输入效率专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/11-%E7%BB%88%E7%AB%AF%E4%BA%A4%E4%BA%92%E3%80%81%E7%8A%B6%E6%80%81%E6%A0%8F%E4%B8%8E%E8%BE%93%E5%85%A5%E6%95%88%E7%8E%87%E4%B8%93%E9%A2%98.md)
+- 找回过去的会话与提问：
+  [04-专题深潜/12-会话发现、历史检索与恢复选择专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/12-%E4%BC%9A%E8%AF%9D%E5%8F%91%E7%8E%B0%E3%80%81%E5%8E%86%E5%8F%B2%E6%A3%80%E7%B4%A2%E4%B8%8E%E6%81%A2%E5%A4%8D%E9%80%89%E6%8B%A9%E4%B8%93%E9%A2%98.md)
+- 把 Claude Code 接进脚本、后台任务或协议流：
+  [04-专题深潜/13-非交互、后台会话与自动化专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/13-%E9%9D%9E%E4%BA%A4%E4%BA%92%E3%80%81%E5%90%8E%E5%8F%B0%E4%BC%9A%E8%AF%9D%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%93%E9%A2%98.md)
 - 想建立运行时总图，而不是先学操作：
   [02-能力地图/README.md](./02-%E8%83%BD%E5%8A%9B%E5%9C%B0%E5%9B%BE/README.md)
 - 只想按名字、入口和合同速查：
@@ -99,6 +112,8 @@
 - 想分清 `discoverAssistantSessions`、`launchAssistantInstallWizard`、`launchAssistantSessionChooser`、`createRemoteSessionConfig` 与 attach banner 的 assistant entry chain：
   [03-参考索引/02-能力边界/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md) ->
   [05-控制面深挖/154-discoverAssistantSessions%E3%80%81launchAssistantInstallWizard%E3%80%81launchAssistantSessionChooser%E3%80%81createRemoteSessionConfig%20%E4%B8%8E%20attach%20banner%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20claude%20assistant%20%E7%9A%84%E5%8F%91%E7%8E%B0%E3%80%81%E5%AE%89%E8%A3%85%E3%80%81%E9%80%89%E6%8B%A9%E4%B8%8E%E9%99%84%E7%9D%80%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%20connect%20flow.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/154-discoverAssistantSessions%E3%80%81launchAssistantInstallWizard%E3%80%81launchAssistantSessionChooser%E3%80%81createRemoteSessionConfig%20%E4%B8%8E%20attach%20banner%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20claude%20assistant%20%E7%9A%84%E5%8F%91%E7%8E%B0%E3%80%81%E5%AE%89%E8%A3%85%E3%80%81%E9%80%89%E6%8B%A9%E4%B8%8E%E9%99%84%E7%9D%80%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%20connect%20flow.md)
+- 想分清 `forkSession`、`switchSession`、`copyPlanForFork`、`restoreWorktreeForResume` 与 `adoptResumedSessionFile` 的会话分叉边界：
+  [05-控制面深挖/159-forkSession、switchSession、copyPlanForFork、restoreWorktreeForResume 与 adoptResumedSessionFile：为什么 --fork-session 不是较弱的原会话恢复，而是新 session 分叉.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/159-forkSession%E3%80%81switchSession%E3%80%81copyPlanForFork%E3%80%81restoreWorktreeForResume%20%E4%B8%8E%20adoptResumedSessionFile%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20--fork-session%20%E4%B8%8D%E6%98%AF%E8%BE%83%E5%BC%B1%E7%9A%84%E5%8E%9F%E4%BC%9A%E8%AF%9D%E6%81%A2%E5%A4%8D%EF%BC%8C%E8%80%8C%E6%98%AF%E6%96%B0%20session%20%E5%88%86%E5%8F%89.md)
 
 如果你已经确定要读某个专题，请先到对应 README 再选深页，不要把根前门当默认深链库存。
 

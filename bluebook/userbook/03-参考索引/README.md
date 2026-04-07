@@ -74,6 +74,7 @@
 17. `getSessionFilesLite`、`loadFullLog`、`SessionPreview`、`useAssistantHistory` 与 `fetchLatestEvents` 看起来都在 `/resume` 历史附近时，应该先去哪个入口分辨本地 preview transcript 与 attached viewer remote history。
 18. `getSessionFilesLite`、`enrichLogs`、`LogSelector`、`SessionPreview` 与 `loadFullLog` 看起来都在 `/resume` 本地 durable surface 附近时，应该先去哪个入口分辨列表摘要面与 preview transcript。
 19. `SessionPreview`、`loadFullLog`、`loadConversationForResume`、`switchSession` 与 `adoptResumedSessionFile` 看起来都在 `/resume` 恢复附近时，应该先去哪个入口分辨 preview transcript 与正式 session restore。
+20. `forkSession`、`switchSession`、`copyPlanForFork`、`restoreWorktreeForResume` 与 `adoptResumedSessionFile` 看起来都在会话分叉附近时，应该先去哪个入口分辨 `--fork-session` 与原会话恢复的边界。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 
