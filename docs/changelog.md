@@ -2,6 +2,8 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把尾段 methodology cards 再抽象一层：`6.46-6.50` 现在不再并列发“工作集边界 / 不变量 / continuation 资产 / 资源分配轴 / 重构资本对象”这些轻量结构卡，而统一改成“若讨论已进入具体 owner nouns，回 owner 页”的 why 句；`7.10` 也把 `canonical formula / route words` 继续收回成“是否已够资格跨页复用 / 是否重新长回第二前门”的抽象反问
+- 本轮并行 Agent 新结论已吸收入记忆：`06` 尾段方法论卡的最后一类 residual，不在于结论真伪，而在于它们容易把“更稳的分析方法”写成“更短的 owner 卡”。更稳的默认修法继续是：删掉尾段里的小框架卡，让 why/self-audit 段只保留误读、反问和 route。
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把 Prompt 自校卡再抽象一层：`7.4` 现在不再点名 `projection / summary / handoff prose` 这类替身，而只问是否又把 Prompt 写回替身；`7.7` 不再写 `object / reject` 术语；`7.9` 也把“`owner` 术语”收回成更抽象的“术语堆叠”。这使 `06` 更稳定地停在“能反问是否越位”，而不再自己变成一张轻量 Prompt 机制卡
 - 本轮根仓同步检查继续保持健康：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均成功，根仓状态仍为 `## main...origin/main`
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把这一轮 Prompt self-audit residual 再压一层：`6.54` 现在把“同一主语与继续资格”收回成更短的 why 反问，不再把 `lineage / projection / qualification` 写成 owner 术语；`6.57` 现在把 `Prompt Constitution` 收回成“不是秘诀、只是制度边界”的反问，不再直接在正文里解释 `owner split / speaking-right`；`7.4 / 7.7 / 7.9 / 7.10` 现在也从 route/判据卡继续收回成更纯的自校问句，不再在判据卡里并排复述 `84 / 51` 的 object / reject / migration nouns

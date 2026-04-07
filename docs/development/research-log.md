@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 tail-method-card-abstraction 深化动作：已继续更新 `06`。新的结论是：在 Prompt self-audit 卡已经抽象化之后，尾段最容易复发的 residual 是“把分析方法本身写成小框架卡”。`6.46-6.50` 这组如果继续保留“三件更本体的事”“不变量”“资源轴”“边界对象”这类清单，就仍会把 why/self-audit 段重新长成轻量 owner 卡。更稳的默认修法是：只保留“不要写浅”的 why 句，把具名对象与轴统一送回 owner 页。
+- 本轮新的 `06` 结论：`7.10` 现在也更明确只检查“并行后有没有失去同一问题主语 / 长回第二前门”，不再在判据卡里显式讨论 `canonical formula / route words`。这意味着 `06` 的方法论尾段也开始和前面的 Prompt self-audit card 使用同一抽象层级。
+- 本轮根仓库同步检查结果：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 本轮继续全部成功，根仓保持 `main...origin/main` 健康态。
 - 本轮 prompt-card-abstraction 深化动作：已继续更新 `06`。新的结论是：即使已经把 `84 / 51` 的具名链段从自校页移走，Prompt 判据卡仍可能通过“替身名单”“owner 术语”“轻量 reject 术语”重新长回第二张机制卡。更稳的默认修法是继续把这些词抽成纯反问：`是不是又写回替身 / 术语 / 机制，而没有回 owner 页。`
 - 本轮新的 `06` 结论：`7.4 / 7.7 / 7.9` 现在更接近真正的 self-audit card，而不是轻量 Prompt guide。对 `06` 来说，更稳的最终边界可以继续写成一句：`能问是否越位，不能枚举越位后的具体 Prompt 机制词。`
 - 本轮根仓库同步检查结果：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 本轮继续全部成功，根仓保持 `main...origin/main` 健康态。

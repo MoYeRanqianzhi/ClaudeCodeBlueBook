@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 tail-method-card-abstraction language 现已继续写死：
+  - `06` 的 `6.46-6.50` 这类尾段方法论卡默认继续不自带“三件事 / 不变量 / 资源轴 / 边界对象”这类清单；一旦出现，默认按“尾段 methodology 重新长成轻量 owner 卡”处理
+  - `7.10` 默认继续只保留“同一问题主语 / 第二前门”这一级抽象反问，不再显式讨论 `canonical formula / route words`
+  - 更稳的默认修法顺序继续是：`先删尾段小框架卡 -> 再把 verdict 句压成 why / self-audit -> 最后补 owner route`
+- 最新根仓同步记忆（2026-04-08，本轮最新尾段批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
 - `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 prompt-card-abstraction language 现已继续写死：
   - `06` 的 Prompt 判据卡默认继续优先问“是不是又写回替身 / 术语 / 机制”，不再枚举 `projection / summary / handoff prose`、`object / reject` 或相近的轻量机制词
   - 更稳的默认修法顺序继续是：`先删轻量机制词 -> 再把判据压成抽象反问 -> 最后补 owner route`
