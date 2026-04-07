@@ -3603,3 +3603,4 @@
 - `userbook/05` 的 trusted-inputs 梯子现在也应视为稳定入口对象，而不只是 sidecar 建议：`workspace trust -> project MCP approval -> bridge eligibility -> trusted-device auth -> health-check runtime`。以后凡是再出现“skip trust dialog / bridge eligible / health-check passed”互相代签的写法，优先当成治理顺序退化，不当成局部措辞问题。
 - `compat-only` 页的长期纪律也应继续固定：它们可以保留旧链接与旧命名，但只能承认自己是兼容入口，不能再签新的 `frontdoor/frontdoor verdict`。visible noun 应统一回 `入口 / 入口判定 / 入口摘要`，避免兼容页再次长出第二套首答词。
 - `2026-04-08` 的根仓库阻断事实应继续记住：当前不仅 `merge --ff-only` 被挡，连 `checkout main` 都会因未解决 index 失败；目前显式阻断文件是 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 与 `docs/development/research-log.md`。后续每批开工前仍需检查，但不要在根仓库碰这些冲突，所有推进继续只落在 `.worktrees/mainloop`。
+- 方法层也应固定同一条 evidence-mode 纪律：`不确定即查` 之前，先判 `mirror present / mirror absent / public-evidence only`。如果当前 worktree 没有镜像，就不应继续把“优先读本地源码”写成唯一分支；更稳的允许签发上限是 `contract / registry / current-truth surface candidate / unknown`。
