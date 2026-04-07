@@ -515,5 +515,6 @@
 - 远端接续、bridge ingress 输入注入与桥接审批在用户目标层面的分工边界
 - sandbox network bridge 里同 host sibling sweep 与 tool-level closeout 的边界
 - sandbox permission 的 persist-to-settings 在 context、settings 与 live sandbox 之间的三层写面边界
+- permission tail 从 verdict ledger 分叉到 closeout、re-evaluation、host sweep 与 persist surfaces 的结构边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
