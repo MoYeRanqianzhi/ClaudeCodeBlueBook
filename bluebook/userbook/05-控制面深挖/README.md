@@ -76,7 +76,7 @@ Prompt 失真在这一层也只该继续消费同一张 user-facing witness pack
 
 如果继续把这一层压成用户动作，也只先记三句：
 
-1. 说不清哪层在说真话时，先退回 `../../10 -> ../../philosophy/85 -> ../../philosophy/61 -> ../../security -> ../../risk -> ../../playbooks`，不要直接在 readback surface 上猜 verdict
+1. 说不清哪层在说真话时，先退回 `../../10 -> ../../philosophy/85 -> ../../philosophy/61 -> ../../security` 判 owner / verdict seam；若已经确认自己只在读用户侧恢复或尾链证据，再分别去 `../../risk` / `../../playbooks`，不要直接在 readback surface 上猜 verdict
 2. `/status / /doctor / /usage` 这些都只是 weak readback surface；`/compact / /resume / /memory` 这些都只是 continuation consumer；`cleanup result / handoff promise / product promise readback` 这些都只是 reopen tail evidence，它们都不直接下结论
 3. user-facing 最值钱的是 first reject path：先知道该拒收什么、退到哪层、再看深页拆解
 

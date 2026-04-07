@@ -5,11 +5,11 @@
 1. 你已经知道主语，只缺下一层证据或 next-hop。
 2. 你在争某页是否越位改判。
 
-如果你还缺主语、最小顺序或 first reject path，先回 [../README.md](../README.md) 与 `09`。
+如果你还缺主语、最小顺序或 first reject path，先回 [../README.md](../README.md) 与 `09`；但 Prompt 顶层主语与 first-reject path 例外，直接回 `philosophy/84`。
 
 这里默认只回答 next-hop：
 
-- 缺主语、最小顺序或 first reject path，回 `../README.md` 与 `09`
+- 缺主语、最小顺序或 first reject path，默认回 `../README.md` 与 `09`；Prompt 顶层主语与 first-reject path 例外，直接回 `philosophy/84`
 - 缺目录法或入口升级规则，回 `../../docs/development/00-研究方法.md`
 - 缺源码质量证据 ceiling，回 `guides/102`
 

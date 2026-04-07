@@ -22,7 +22,8 @@
 - 完成、终局、遗忘、清理与家族级 cleanup 都各有 signer；任何弱层都不配替强层宣布“已经没事了”。
 - 宿主不该自己从事件流回放拼当前真相；更稳的做法是消费 runtime 已外化的 truth-surface / decision window / cleanup stage verdict。
 - 任何 user-facing 状态、诊断、压缩或导出入口，都只配读取已外化的 truth-surface、decision window 与 cleanup stage verdict，不配定义治理真相或继续资格；用户侧恢复读法统一回 `risk/`。
-- `/status / /doctor / /usage`、approval UI、summary、dashboard 与 `Compact / Resume / Memory` 都只配触发怀疑、做二跳或消费 continuation verdict，不配越级充当 signer。
+- `/status / /doctor / /usage`、approval UI、summary 与 dashboard 都只配做 weak readback surface：它们只能触发怀疑、做二跳或读取已外化 verdict，不配越级充当 signer。
+- `Compact / Resume / Memory` 只配做 continuation consumer，不是 weak readback surface；cleanup tail evidence 与用户侧恢复读法统一回 `risk/`。
 - 弱读回面之所以必须弱，不是因为信息少，而是因为一旦被误读成 signer，observability 就会反向偷权，重新长出新的免费扩张通道。
 - 弱读回面一旦代签，observability 就不再是 consumer，而会长成第二个 same-world compiler / host-truth source；这不是读回增厚，而是 current truth 分叉。
 - 弱读回面不能代签的根因，也不是权限不够，而是它们不持有 `verdict seam`，也不承担 rollback / residual liability。

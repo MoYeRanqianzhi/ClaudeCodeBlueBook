@@ -776,3 +776,6 @@
 - `userbook/05-控制面深挖/README.md` 现已补齐 packet 与 formal verdict 的桥接，并把治理最短 reject trio 前置；同时明确区分 weak readback surface、continuation consumer 与 reopen tail evidence，避免 `/status`、`resume`、`cleanup result`、`handoff promise` 再越位成治理 verdict
 - `guides/102` 现已把 `current-truth surface candidate` 的默认 next hop 写死为 `architecture/README -> architecture/84`；`architecture/README` 的源码质量入口也同步改成“先过 `guides/102`，再到对象层”，进一步阻止 canonical ladder 与对象层入口互相抢首答
 - 同步更新 `docs/development/long-term-memory.md` 与 `docs/development/research-log.md`，写回本批三路 Agent 深挖结论，并修正当前 root sync 快照：最新检查结果已经恢复为 `main...origin/main`
+- 继续收紧 Prompt / continuity / source-quality 的跨目录残余：`navigation/README` 现已把 Prompt 顶层主语与 `first-reject path` 明确设为页首例外，直接回 `philosophy/84`；`philosophy/README` 的 continuity 条目也改成“先回 `84` 确认 owner，再把 `06` 当自校页”，避免把时间轴自校入口写成新的 owner route
+- `03-设计哲学` 开头三处源码质量前门现已统一拆成 `07`、`guides/102`、`philosophy/87`、`architecture/README` 的明确分流；`guides/102` 也把 `sole writer / writeback path / freshness guard` 收回成判级触发条件，`architecture/README` 则继续降成“对象层落点”，防止 why 页、梯度页与对象页互抢首答
+- `userbook/README`、`05-控制面深挖/README.md` 与 `security/README` 现已进一步对齐治理 readback 三分法：`weak readback surface / continuation consumer / reopen tail evidence` 分别降格，`security / risk / playbooks` 的分流也更明确，避免 `risk` 或执行页重新混入“谁在说真话”的首跳判断

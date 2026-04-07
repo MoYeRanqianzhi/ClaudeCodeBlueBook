@@ -8,14 +8,14 @@
 
 1. 好 Prompt 不是更像专家，而是先确认你还在同一件事上，附件、文件与 working set 仍服务同一现场。
 2. 扩张或权限判断不要先看弹窗、`status`、`usage` 或继续入口；先看这次动作、可见性或继续请求有没有被当前控制面准入。
-3. 若问题已经是“为什么这里会省 token / 为什么要 `Later` / `Outside`”，先回 `10 -> philosophy/85 -> philosophy/61` 固定 why；只有要看 signer / cleanup / mechanism 时，才进 `security/README`。
+3. 若问题已经是“为什么这里会省 token / 为什么要 `Later` / `Outside`”，先回 `10 -> philosophy/85 -> philosophy/61` 固定 why；要看 signer / cleanup / mechanism 时进 `security/README`，要看用户侧恢复与 reopen 时进 `risk/README`，要看现场执行时进 `playbooks/README`。
 
 如果你只缺治理收费链的一屏速记，而不是具体控制面下潜，先回 [../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；userbook 根入口只保留问题分型、用户侧最小顺序与二跳。
 
 这里也只先记三条边界：
 
 - Prompt 线只翻 user-facing witness；owner 级 ABI 统一回 `philosophy/84`
-- 治理线只翻 user-facing readback；治理速记与 why 统一回 `10 -> philosophy/85 -> philosophy/61`，机制与用户侧恢复分别回 `security / risk`
+- 治理线只翻 weak readback surface，并显式降格 continuation consumer 与 reopen tail evidence；治理速记与 why 统一回 `10 -> philosophy/85 -> philosophy/61`，机制、用户侧恢复与现场执行分别回 `security / risk / playbooks`
 - `continuity` 不是第四类使用主题；它只是同一工作对象在时间轴上的继续条件
 
 ## 用户侧四问
@@ -33,7 +33,7 @@
    - 先看是不是已经换了工作对象，或附件/文件/working set/handoff 已不再服务同一件事。
 2. `扩张或权限判错`
   - 先看这次扩张有没有先被准入、当前真相有没有先说清，再决定该继续、收口、降级还是升级给人。
-  - 先别拿任何治理界面、状态读数或压缩入口直接下结论；治理速记与 why 先回 `10 -> philosophy/85 -> philosophy/61`，控制面顺序回 `05-控制面深挖/README`，机制细节再回 `security / risk`。
+  - 先别拿任何治理界面、状态读数或压缩入口直接下结论；治理速记与 why 先回 `10 -> philosophy/85 -> philosophy/61`，控制面顺序回 `05-控制面深挖/README`，机制细节回 `security`，用户侧恢复/尾链读回回 `risk`，现场执行回 `playbooks`。
 3. `旧状态污染`
    - 先看是不是旧 shim、旧恢复资产、旧 capability token 或旧 authority width 还在冒充当前世界。
 
@@ -127,4 +127,4 @@
 
 1. 哪条控制面现在在说话。
 2. 哪些相邻入口只是 projection、continuation consumer 或 `Outside` handoff surface，不配改判。
-3. 什么时候该把问题退回 `09 / api / architecture / playbooks`。
+3. 什么时候该把问题退回 `09 / 10 / security / risk / architecture / playbooks` 的对应 owner。

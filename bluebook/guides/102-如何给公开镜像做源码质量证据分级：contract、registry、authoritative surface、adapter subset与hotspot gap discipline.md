@@ -101,7 +101,7 @@
 2. `registry`
    - 当前 build / 当前 runtime 真的注册了哪些对象。
 3. `current-truth surface`
-   - 真正有资格宣布 present truth 的 sole writer / choke point / writeback seam。
+   - 只有在 object-level 证据已锁定时，才配把 `sole writer / choke point / writeback seam` 升格成 present-truth signer；对象解释统一回 `architecture/README`。
 4. `current-truth surface candidate`
    - 在公开镜像里你已经看到 sole writer 或 choke point 候选，但证据还不足以把它写死成完整 `current-truth surface`；默认 next hop 先回 `architecture/README`，再按对象细化到 `architecture/84`。
 5. `consumer subset`
@@ -176,7 +176,7 @@ contract 和 registry 都还不够。
 
 - 当前谁有权宣布 present truth
 
-这里的 `current-truth surface` 不是谁更重要，而是当前哪条 surface 被允许写当前真相。若 sole writer、writeback path 与 freshness guard 还没锁定，就不能宣布这层真相已经成立；在公开镜像里，这时最多只能先把它记成 `current-truth surface candidate`，并同步把 next hop 写成“先回 `architecture/README` 点名对象层，再按对象细化到 `architecture/84`”。
+这里的 `current-truth surface` 不是谁更重要，而是当前哪条 surface 被允许写当前真相。`sole writer / writeback path / freshness guard` 在本页只作为判级触发条件，不在这里代行对象解释；若这些 object-level 证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate`，并同步把 next hop 写成“先回 `architecture/README` 点名对象层，再按对象细化到 `architecture/84`”。
 
 典型信号包括：
 
