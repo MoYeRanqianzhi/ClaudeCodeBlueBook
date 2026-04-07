@@ -24,7 +24,7 @@
   - 已确认主语，只缺 signer / mechanism，回 `security`；缺 tail readback / reopen qualification，回 `risk`；缺 execution / repair drill，回 `playbooks`
   - 还在争 mode、usage、approval 或 cleanup result 谁说了算，先退回 `../README` 与 `09`
 - 当前真相
-  - 缺方法入口或 evidence ceiling，回 `09 -> guides/102`
+  - 缺方法入口或 evidence ceiling，回 `guides/102`
   - 已确认 ceiling，缺 why 回 `philosophy/87`；缺 `sole writer / recovery asset / anti-zombie / writeback seam` 回 `architecture/README`
   - 还在混 runtime-core evidence、operator-governance evidence 与公开镜像缺口，先退回 `06`
 
