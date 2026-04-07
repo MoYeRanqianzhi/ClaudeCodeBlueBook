@@ -182,9 +182,9 @@ Claude Code 更成熟的地方在于，它先问：
 
 - 尽量不重复讲已经成立的世界
 
-也正因为如此，`SYSTEM_PROMPT_DYNAMIC_BOUNDARY`、section registry 与 stable prefix 不只是性能技巧，而是 Prompt Constitution 的一部分。
+也正因为如此，`SYSTEM_PROMPT_DYNAMIC_BOUNDARY`、section registry 与 stable prefix 不只是性能技巧，而是 Prompt stable-prefix order 的一部分。
 
-更进一步，section registry 也不是一份静态目录，而是会在 `/compact` 之后被重新整理、重置与续接的运行时对象。这意味着 Prompt Constitution 不是“永远附着在顶部的一段总纲”，而是有自己生命周期的正式制度资产。
+更进一步，section registry 也不是一份静态目录，而是会在 `/compact` 之后被重新整理、重置与续接的运行时对象。这意味着 Prompt stable-prefix order 不是“永远附着在顶部的一段总纲”，而是有自己生命周期的正式运行时资产。
 
 Anthropic 官方文档又把这件事往外表钉死了一层：
 
@@ -192,7 +192,7 @@ Anthropic 官方文档又把这件事往外表钉死了一层：
 2. startup context、on-demand expansion 与 `/compact` 后 reload 被公开写成不同 load fate；
 3. `InstructionsLoaded / PreCompact / PostCompact` 这种 hook 生命周期进一步说明，Boundary 不只是在管 stable bytes，还在管 `eager load / lazy load / compact reload` 的正式装配法。
 
-## 7. 第六层：工具 ABI 与写作法同属 Prompt 法律
+## 7. 第六层：工具 ABI 与写作法同属 Prompt runtime order
 
 Claude Code 的 Prompt 高密度，不只因为 instruction 多，还因为：
 
@@ -202,7 +202,7 @@ Claude Code 的 Prompt 高密度，不只因为 instruction 多，还因为：
 
 这意味着 Prompt 魔力的一大部分，其实来自两层协同：
 
-- Prompt 明确规定行为与写法
+- Prompt frontdoor 固定行为与写法要求
 - Runtime 明确规定哪些内容能被用户看见
 
 所以它强的地方不是：
@@ -268,7 +268,7 @@ Claude Code 更高级的地方在于，它同样认真规定：
 
 Claude Code 更接近的真相是：
 
-- stop hooks、cache break explainability、budget continuation 与 prompt-too-long recovery 共同决定 Prompt 还有没有资格继续
+- stop hooks、cache break explainability、budget continuation 与 prompt-too-long recovery 共同暴露 continue qualification 是否仍成立
 
 这说明 Prompt 魔力从来不是静态的。
 
@@ -285,7 +285,7 @@ Claude Code 更接近的真相是：
 
 而且还会：
 
-- 审查自己是否还配继续
+- 暴露自己是否还配继续
 
 多 Agent 场景更能说明这一点。真正强的地方不是“会给 worker 写指令”，而是 coordinator 必须先理解 findings，再生成自包含、不可把理解外包给 worker 的 prompt。这里的 Prompt 魔力首先是一种组织设计，而不是更会写 worker 文案。
 

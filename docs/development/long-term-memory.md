@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-wording-de-enchantment-2 language 现已继续写死：
+  - Prompt 线默认继续把 signer-like 的 `Constitution / 法律 / delegated world / truth` 词收回 `order / runtime asset / delegated context / projection`
+  - `bluebook/philosophy/84` 默认继续把世界进入模型写成 authority chain 下的可采顺序，而不是抽象立法主语
+  - `bluebook/philosophy/81` 默认继续把 stable-prefix、tool ABI 与 continue qualification 写成 runtime order / runtime asset / qualification exposure
+  - `bluebook/06` 默认继续把 display / UI / handoff 相关词写成 projection，不再写成 truth co-signer
+  - Prompt 线的长期默认去魅写法现在统一拒收 signer-feeling 过强的 terminology 回潮
 - `bluebook/philosophy/87` 的长期默认 directory-constitution-demotion language 现已继续写死：
   - `bluebook/philosophy/87` 默认只提供源码质量式目录自校，不再替蓝皮书直接分配目录 speaking rights
   - 目录级 `speaking rights / appeal chain` 默认统一回 `navigation/04` 与各目录 README
