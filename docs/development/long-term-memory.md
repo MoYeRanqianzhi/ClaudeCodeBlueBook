@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/navigation/05`、`bluebook/navigation/06` 与 `bluebook/navigation/08` 的长期默认 prompt-navigation-visible-label language 现已继续写死：
+  - 高流量导航页默认继续用可见标题链接引向 `57 / 33`，不再直接打印 raw slug
+  - `navigation/06` 的 prompt 入口默认继续写成 `prompt 效力不在措辞`，不再回退到 `prompt 魔力` framing
 - `bluebook/api/85`、`bluebook/api/94`、`bluebook/playbooks/66` 与 `bluebook/security/README` 的长期默认 governance-protocol-owner-hardening language 现已继续写死：
   - `settled_price` 默认继续只写成 `continuation pricing` 的 runtime witness，不再写成 usage 图表好转感或“感觉还能继续”
   - `shared_consumer_surface` 默认继续只写成不同 reader 对同一 verdict object 的只读消费面，不再写成共享文案或共享 authority

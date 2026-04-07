@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-navigation-visible-label 深化动作: 已继续更新 `bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md`、`bluebook/navigation/06-终局判断导航：协作语法、资源定价与未来维护者消费者.md` 与 `bluebook/navigation/08-高阶制度导航：Prompt Constitution、治理顺序与构建系统.md`。新的结论是：Prompt 线当前在高流量导航页最贵的 residual，已经不再是路径名没改，而是页面正文仍把 `57 / 33` 直接打印成 raw slug，让 later maintainer 先看到路径再看到主语。
+- 本轮新的 Prompt 结论: 对 route page 来说，visible label 应先于 file path 出场；如果前门先把读者送进 `philosophy/57-...` 这类路径感，再告诉他这是协作接口或诊断命名层，导航页就仍在教他按路径记忆而不是按第一性对象记忆。
 - 本轮 governance-protocol-owner-hardening 深化动作: 已继续更新 `bluebook/api/85-治理宿主修复稳态纠偏再纠偏改写纠偏精修协议：ledger、writeback seam与reopen liability.md`、`bluebook/api/94-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修协议：pricing object、shared reject semantics与long-term reopen liability.md`、`bluebook/playbooks/66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md` 与 `bluebook/security/README.md`。新的结论是：治理线这轮最值钱的 residual，不再是链条没写出来，而是 later maintainer 仍可能把 `settled_price` 误读成 usage 观感，把 `shared_consumer_surface` 误读成共享文案，把 projection 误读成 current truth。
 - 本轮新的治理结论: 更稳的 owner/consumer 分工必须写成三句。`settled_price = continuation pricing 的 runtime witness`，`shared_consumer_surface = 同对象、不同宽度、只读消费面`，`projection = 只能被降格或重投影，不能越级成 owner`。只要这三句没有被写硬，治理协议就会再次退回 dashboard calmness、作者说明或“当前还挺省”的感觉。
 - 本轮 api-atlas-route-slug 深化动作: 已继续更新 `bluebook/02-使用指南.md`、`bluebook/api/README.md` 与 `docs/development/01-章节规划.md`，并把 `bluebook/navigation/35`、`api/46-48` 的 route slug 正式收回 `源码地图导航 / 二级目录地图`。新的结论是：源码质量线当前最贵的 residual，已经不再是 H1 还在说 `Atlas`，而是高流量入口页 visible label 已改、真实 target 却还在把 later maintainer 送回旧 `Atlas` 文件名。
