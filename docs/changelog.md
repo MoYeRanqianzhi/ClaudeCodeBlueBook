@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/navigation/04-目录职责、规范入口与兼容别名页说明.md`，把 route 宪法越位继续收回：`navigation/04` 现在不再把自己写成 `speaking rights / appeal chain` 的唯一 charter，也不再直接代签 atlas 正文宿主，而是把这类争议路由回 `guides/102 / navigation/35 / api/46-50 / 各目录 README`
 - 继续更新 `bluebook/security/README.md`、`bluebook/risk/README.md`、`bluebook/userbook/05-控制面深挖/README.md`、`bluebook/userbook/05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md` 与 `bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md`，把 projection / consumer / verdict 的 handoff 在前门层继续同序化：这几页现在都更明确地区分 `/status / /doctor / /usage` 的 runtime projection、`Compact / Resume / Memory / Export` 的 continuation consumer、`truth-surface -> decision window -> durable-transient cleanup` 的 verdict 链，以及 `signer + evidence + reopen` 的用户侧恢复链
 - 继续更新 `bluebook/userbook/README.md`，把 user-facing 根前门再压回二跳职责：`userbook/` 现在明确自己只复述 root / `09` 已承认的用户侧治理顺序，只翻 `user-visible consumer truth`，并把“覆盖的 Claude Code 能力”改写成对象范围而不是系统首答权
 - 继续更新 `bluebook/README.md`、`bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`，把 Prompt wording-only 去魅继续往前推：根 README 现在把 `解出 / compile` 改成 authority chain 的锁定与排序语言；`06` 现在把 `world entry / witness / continuation` 从“编译成”改回“排成”协作语法；`81` 现在把 `Prompt Constitution / Prompt 法律 / 审查自己是否还配继续` 收回 `stable-prefix order / runtime order / 暴露 continue qualification 是否仍成立`；`84` 现在把 `世界准入法律 / compiled law / delegated world / 可缓存宪法 / 默认宪法` 继续收回 `世界准入顺序 / compiled order / delegated context / 可缓存稳定前缀 / 默认前缀顺序`

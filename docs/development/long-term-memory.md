@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/navigation/04` 的长期默认 navigation-04-route-demotion language 现已继续写死：
+  - `navigation/04` 默认只做 route pointer，不再自写成 `speaking rights / appeal chain` 的唯一 charter
+  - atlas / canonical rung / repo-specific 正文 / route dispute 默认分别回 `guides/102 / api/46-50 / navigation/35 / 各目录 README`
+  - `navigation/04` 的长期默认写法现在统一拒收 route 页直接代签目录宪法
 - `bluebook/security/README`、`bluebook/risk/README`、`bluebook/userbook/05-README`、`05/03` 与 `05/06` 的长期默认 projection-consumer-verdict-handoff language 现已继续写死：
   - `/status / /doctor / /usage` 默认继续写成 runtime projection
   - `Compact / Resume / Memory / Export` 默认继续写成 continuation consumer
