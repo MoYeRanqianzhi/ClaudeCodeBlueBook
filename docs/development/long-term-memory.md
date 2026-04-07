@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/userbook/00-导读`、`00-阅读路径`、`02-能力地图/01-运行时主链/README` 与 `03-参考索引/04-功能面七分法.md` 的长期默认 userbook path/map language 现已继续写死：
+  - `00-导读` 默认不把 continuity 升成第五类读者问题
+  - `00-阅读路径` 默认不把连续性与记忆专题升成独立第五主线
+  - 运行时主链 README 默认不把 `/compact / /resume / /memory` 升成另一条运行时主线
+  - 功能面七分法默认不把 continuity 升成第九个运行时主层
+  - 这组路径页与总图页默认统一把 continuity 收回同一工作对象在 `Continuation / continuation pricing / cleanup-before-resume` 上的时间轴
+  - userbook 路径页默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
 - `bluebook/userbook/03-参考索引/01-命令工具/README`、`02-能力边界/README`、`03-技能与扩展/README` 与 `06-高价值入口运行时合同速查.md` 的长期默认 userbook tertiary-frontdoor language 现已继续写死：
   - 命令工具索引默认不把 `/compact / /resume / /memory` 升成第四类命令家族
   - 能力边界索引默认不把 continuity 升成第五类边界家族

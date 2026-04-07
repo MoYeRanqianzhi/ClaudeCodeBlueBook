@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/userbook/00-导读.md`、`00-阅读路径.md`、`02-能力地图/01-运行时主链/README.md` 与 `03-参考索引/04-功能面七分法.md`，把 userbook 的路径页与总图页也继续收回 shared first-answer order：`00-导读` 现在明确 continuity 不是第五类读者问题；`00-阅读路径` 现在明确所有路径都先继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`，连续性专题只承接同一工作对象的时间轴；运行时主链 README 现在明确 `/compact / /resume / /memory` 不是另一条主线；功能面七分法现在明确 continuity 不是第九个运行时主层
 - 继续更新 `bluebook/userbook/03-参考索引/01-命令工具/README.md`、`02-能力边界/README.md`、`03-技能与扩展/README.md` 与 `06-高价值入口运行时合同速查.md`，把 userbook 三级入口层也继续从“共享 nouns”推进到“共享 first-answer order”：命令工具索引现在明确 `/compact / /resume / /memory` 不是第四类命令家族；能力边界索引现在明确 continuity 不是第五类边界家族；技能与扩展索引现在明确扩展面不是第四条工作主线；高价值入口合同页现在也明确 `/compact / /resume / /memory / /session` 只是同一工作对象在时间轴上的动作，并把四页统一压回 `问题分型 -> 工作对象 -> 控制面 -> 入口`
 - 继续更新 `bluebook/userbook/02-能力地图/README.md`、`03-参考索引/README.md`、`02-能力地图/05-体验与入口/README.md` 与 `03-参考索引/05-任务到入口速查矩阵.md`，把 userbook 二级入口层也继续从“共享 nouns”推进到“共享 first-answer order”：`02` 现在明确 continuity 不是第六张能力平面；`03` 现在明确连续性/记忆/恢复在索引层不是第四类问题域；`05-体验与入口` 现在明确会话继续/remote 接续不是第四类体验主题；任务矩阵现在也明确只做 route 不做签字，并要求先按 `问题分型 -> 工作对象 -> 控制面 -> 入口` 再选入口
 - 继续更新 `bluebook/userbook/README.md`、`01-主线使用/README.md`、`04-专题深潜/README.md` 与 `05-控制面深挖/README.md`，把 userbook 前门继续从“共享 nouns”推进到“共享 first-answer order”：根 `README` 现在明确 `continuity` 在用户层也不是第四条使用主题，而只是同一工作对象在三条母线上的共同时间轴；`01` 现在明确连续性不是第六种入口；`04` 现在明确连续性不是第五类工作对象；`05` 现在明确 continuity 不是第四条控制面，并把四页的目录优化统一压成 shared order 而不是标题试错

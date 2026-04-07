@@ -11,6 +11,8 @@
 3. `projection != signer`
    - transcript、summary、状态词和恢复资产都可能只是投影，不自动拥有签字权。
 
+这里也要先压住一个常见误读：`/compact`、`/resume`、`/memory` 不是另一条运行时主线；它们只是同一工作对象在 `session truth -> continuation` 这段时间轴上的动作与合同。
+
 如果你在这一层还分不清“哪一环在编译世界、哪一环只是在展示世界”，就不要继续靠目录名碰运气。
 
 这组页真正回答的是：
@@ -25,6 +27,8 @@
 1. 你把长摘要、最后一条消息或 transcript 当成 signer。
 2. 你把 `/compact`、`/resume`、`/memory` 当成技巧，而不是 continuity contract。
 3. 你还没先判 `compile / verify / continue` 的哪一环失真，就已经开始点深页标题。
+
+更稳一点说，这一层也必须继承 `问题分型 -> 工作对象 -> 控制面 -> 入口` 的 first-answer order；若工作对象和控制面还没先站住，运行时主链 README 也只会被读成另一张机制目录。
 
 - [01-输入分流、命令分发与入口编译.md](./01-%E8%BE%93%E5%85%A5%E5%88%86%E6%B5%81%E3%80%81%E5%91%BD%E4%BB%A4%E5%88%86%E5%8F%91%E4%B8%8E%E5%85%A5%E5%8F%A3%E7%BC%96%E8%AF%91.md)
 - [02-命令总线、注入链与命令空间合同.md](./02-%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BA%BF%E3%80%81%E6%B3%A8%E5%85%A5%E9%93%BE%E4%B8%8E%E5%91%BD%E4%BB%A4%E7%A9%BA%E9%97%B4%E5%90%88%E5%90%8C.md)
