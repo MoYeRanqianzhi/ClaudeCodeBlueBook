@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 284 篇速查文档。
+`appendix/` 当前包含 290 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 附录层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责核对字段、矩阵与速查对象，不额外签 signer / verdict。
 
@@ -510,6 +510,24 @@
 - `284`
   载体家族强请求清理就绪治理与强请求清理连续性治理分层。
   入口：[284-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层速查表：continuity budget、stale retry line、pool repair与governor question](284-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层速查表：continuity budget、stale retry line、pool repair与governor question.md)。
+- `285`
+  载体家族强请求清理连续性治理与强请求清理恢复治理分层。
+  入口：[285-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层速查表：fresh proof、reconnect verdict、consumer discipline与governor question](285-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层速查表：fresh proof、reconnect verdict、consumer discipline与governor question.md)。
+- `286`
+  载体家族强请求清理恢复治理与强请求清理重新并入治理分层。
+  入口：[286-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question](286-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question.md)。
+- `287`
+  载体家族强请求清理重新并入治理与强请求清理重新投影治理分层。
+  入口：[287-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question](287-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question.md)。
+- `288`
+  载体家族强请求清理重新投影治理与强请求清理重新担保治理分层。
+  入口：[288-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层速查表：assurance ceiling、success silence、requiresUserAction与governor question](288-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层速查表：assurance ceiling、success silence、requiresUserAction与governor question.md)。
+- `289`
+  载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层。
+  入口：[289-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层速查表：fresh gate、runtime revocation、current-use proof与governor question](289-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层速查表：fresh gate、runtime revocation、current-use proof与governor question.md)。
+- `290`
+  载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层。
+  入口：[290-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gate、refresh suppression、step-up state与governor question](290-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gate、refresh suppression、step-up state与governor question.md)。
 
 ## 怎么配合主线读
 
