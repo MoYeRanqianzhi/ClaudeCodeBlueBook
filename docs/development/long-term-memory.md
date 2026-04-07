@@ -119,6 +119,8 @@
 - `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 mid-page-why-bridge / self-audit wording 现已继续写死：
   - `03` 中段若再次出现 Prompt truth plane、lawful forgetting、audit order、evidence gradient、合法复杂度中心、future maintainer、重构资本或五步 ladder，默认按越位候选处理；更稳的默认修法是只保留 why 句，把 Prompt 统一改路由回 `84 / 06`，把源码质量统一改路由回 `102 / 87 / architecture`
   - `06` 的 Prompt 深段默认继续只保留“我有没有越位复述 `84` owner 术语”这类自校反问，不再列 object / witness / qualification nouns
+- 当前批次继续新增一条 mid-page Prompt live 记忆：
+  - `03` 这类 why 页若继续把 `message lineage`、handoff projection 或 continuation 资产载体直接送去 `guides/51`，默认也按 live route 残余处理；高流量与 mid-page route 统一只回 `philosophy/84`
 - 并行 agent 吸收后的长期默认 mid-page-owner-audit rule 现已继续写死：
   - 高流量前门之外的 why/self-audit 长文若开始自己发 full ladder、object/seam 清单或 quality verdict bundle，也默认按越位候选处理
   - 更稳的默认修法顺序继续是：`删 bundle -> 留 why / self-audit 句 -> 把 owner 还给 84 / 102 / 87 / architecture`

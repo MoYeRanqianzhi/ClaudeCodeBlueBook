@@ -3,6 +3,7 @@
 ## 2026-04-08 本轮增量
 
 - 本轮新的 Prompt live-route 结论：`03` 这种 why 页若继续把 Prompt route 写成 `84 / guides/51 / 06`，later maintainer 仍会先学到双 owner 而不是单一 owner。更稳的默认修法是：高流量 why/self-audit 页统一只回 `philosophy/84`；`51` 只继续留在 owner chain 内部处理 builder-facing same-world implement / audit。
+- 本轮后续单点收尾也已继续推进到中段 why：`03` 里最后两条仍把 `message lineage / handoff projection / continuation assets` 直接送去 `guides/51` 的句子，现已统一压回 `philosophy/84`，避免 mid-page why 又重新泄露第二条 Prompt 公开 route。
 - 本轮 prompt-hard-gate-cleanup 深化动作：已继续更新 `guides/36`、`userbook/00` 与 `long-term-memory`。新的结论是：Prompt 线当前最贵的 residual 已不再是“有没有 canonical ABI”，而是 host audit 与 user-facing shorthand 还会不会把 canonical verdict 名与 alias table 写散。更稳的默认修法是：`36` 只认六个 ABI ref + `continue_qualification_verdict` 的硬闸门，`userbook/00` 只认 `目标 / 附件 / working set / next step` 四项 Prompt alias，不再把治理 `decision window` 偷塞回 Prompt witness shorthand。
 - 本轮 governance-crosswalk-split 深化动作：已继续更新 `10`、`userbook/README`、`philosophy/README` 与 `00-导读`。新的结论是：治理前门真正还会写浅的，不是 canonical chain 本身，而是 `weak readback`、`continuation consumer` 与 `reopen tail evidence` 容易重新糊成一团。更稳的默认修法是：`10` 固定四格 `strong signer surface / weak readback surface / continuation consumer / reopen tail evidence`；`userbook/README` 与 `philosophy/README` 的 why 路径固定回 `10 -> 85 -> 61`，机制细节只再回 `security/README`。
 - 本轮新的 evidence-mode 结论：`philosophy/61` 与 `85` 若继续在缺镜像 worktree 中列源码锚点，就必须在页首显式声明这些只是 archival anchors，而不是 live mirror proof；否则 why 页也会悄悄越过 `02-证据索引` 的 evidence-mode owner。
