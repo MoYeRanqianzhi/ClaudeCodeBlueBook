@@ -43,6 +43,34 @@
 - 这里只负责把 signer、projection、continuation consumer、`Outside` handoff surface 与 first reject path 翻成用户动作，不负责把 projection 重新抬回 signer。
 - `/status`、`/doctor`、`/usage` 在这一层也只配组成相邻 projection cluster，不配另起一条“运行时自检控制面”。
 
+## trusted-inputs 梯子
+
+如果你现在卡在“到底哪把钥匙先说了算”，先不要把 trust、auth、approval 与 probe 写成同一个准入词。用户侧更稳的最小顺序是：
+
+1. `workspace trust`
+   - 当前工作目录是否允许进入更高风险工作面。
+2. `project MCP approval`
+   - 项目级 `.mcp.json` 是否被正式承认。
+3. `bridge eligibility`
+   - 当前 remote-control / bridge 场景是否具备被接管资格。
+4. `trusted-device auth`
+   - 当前设备与账号能否代表用户继续签发远端动作。
+5. `health-check runtime`
+   - 当前 runtime 是否能被探活、诊断或继续消费。
+
+这五层只共享“都像准入”，不共享 signer：
+
+- `skip trust dialog` 不等于 `project MCP approval`
+- `bridge eligible` 不等于 `trusted-device auth`
+- `health-check passed` 不等于前四层都已成立
+
+需要分别下潜时，优先回：
+
+- [14-来源信任、Trust Dialog 与 Plugin-only Policy：扩展面为何分级信任.md](./14-%E6%9D%A5%E6%BA%90%E4%BF%A1%E4%BB%BB%E3%80%81Trust%20Dialog%20%E4%B8%8E%20Plugin-only%20Policy%EF%BC%9A%E6%89%A9%E5%B1%95%E9%9D%A2%E4%B8%BA%E4%BD%95%E5%88%86%E7%BA%A7%E4%BF%A1%E4%BB%BB.md)
+- [21-Host、Viewer 与 Health Check：为什么 server、remote-control、assistant、doctor 不能写成同一类会外入口.md](./21-Host%E3%80%81Viewer%20%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20server%E3%80%81remote-control%E3%80%81assistant%E3%80%81doctor%20%E4%B8%8D%E8%83%BD%E5%86%99%E6%88%90%E5%90%8C%E4%B8%80%E7%B1%BB%E4%BC%9A%E5%A4%96%E5%85%A5%E5%8F%A3.md)
+- [22-Trust Dialog、项目级 .mcp.json 批准与 Health Check：为什么 skip trust dialog 不等于 project MCP 已被批准.md](./22-Trust%20Dialog%E3%80%81%E9%A1%B9%E7%9B%AE%E7%BA%A7%20.mcp.json%20%E6%89%B9%E5%87%86%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20skip%20trust%20dialog%20%E4%B8%8D%E7%AD%89%E4%BA%8E%20project%20MCP%20%E5%B7%B2%E8%A2%AB%E6%89%B9%E5%87%86.md)
+- [23-Workspace Trust、Bridge Eligibility 与 Trusted Device：为什么 remote-control 的 trust、auth、policy 不是同一把钥匙.md](./23-Workspace%20Trust%E3%80%81Bridge%20Eligibility%20%E4%B8%8E%20Trusted%20Device%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%20trust%E3%80%81auth%E3%80%81policy%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E6%8A%8A%E9%92%A5%E5%8C%99.md)
+
 ## 先按控制面，不按相邻按钮
 
 进入这一层前，先问自己：
