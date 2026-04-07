@@ -162,3 +162,4 @@
 - [137-CLAUDE_CODE_REMOTE、getIsRemoteMode、print、reload-plugins 与 settingsSync 索引.md](./137-CLAUDE_CODE_REMOTE、getIsRemoteMode、print、reload-plugins%20与%20settingsSync%20索引.md)
 - [138-CLAUDE_CODE_REMOTE_MEMORY_DIR、memdir、SessionMemory、extractMemories 与 print 索引.md](./138-CLAUDE_CODE_REMOTE_MEMORY_DIR、memdir、SessionMemory、extractMemories%20与%20print%20索引.md)
 - [139-system-init.slash_commands、REMOTE_SAFE_COMMANDS、PromptInput、REPL、processUserInput 与 print 索引.md](./139-system-init.slash_commands、REMOTE_SAFE_COMMANDS、PromptInput、REPL、processUserInput%20与%20print%20索引.md)
+- [140-getSessionId、switchSession、StatusLine、assistant viewer、remoteSessionUrl 与 useRemoteSession 索引.md](./140-getSessionId、switchSession、StatusLine、assistant%20viewer、remoteSessionUrl%20与%20useRemoteSession%20索引.md)
