@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-frontdoor 深化动作: 已继续更新 `bluebook/README.md`、`bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/07-运行时契约、知识层与生态边界.md`、`bluebook/navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`。新的结论是：Prompt 这一线当前最值钱的 residual 已不再是“有没有 frontdoor nouns”，而是“入口顺序、对象 witness、动作链有没有被写成三层不同职责”。现在这几页已经开始统一把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 收回入口层 `first-reject path`，把 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict` 收回 same-world witness，把 `compile -> protocolize -> preserve -> continue -> explain` 收回动作链。
+- 本轮新的 Prompt 结论: `request-surface constitution / cognitive contract / byte boundary / continuation truth` 这组旧 alias 现在更明确地被降为历史 route words，不再配和 frontdoor order、same-world witness 并列。
 - 本轮 governance-midchain 深化动作: 已继续更新 `bluebook/security/README.md`、`bluebook/risk/README.md` 与 `bluebook/userbook/05-控制面深挖/README.md`。新的结论是：治理收费链当前最值钱的 residual 已不再是“有没有完整长链”，而是“机制前门、用户控制面前门、用户侧结算前门是否共享同一条中段顺序”。现在这三页已经开始统一收回 `pricing-right / truth-surface -> typed ask / sandbox -> decision window / continuation pricing / durable-transient cleanup` 这条 shared order。
 - 本轮新的治理结论: `security` 负责机制主语，`risk` 负责用户侧结算，`userbook/05` 负责用户动作翻译，但三者在治理中段顺序上现在已经更接近单源化；这比继续补更多入口词更值钱。
 - 本轮 user-facing control-plane 深化动作: 已继续更新 `bluebook/userbook/05-控制面深挖/README.md` 与 `05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md`。新的结论是：用户侧控制面前门过去最容易写浅的地方，不是没提到 `continuation pricing`，而是没把它和 `typed ask / decision window / durable-transient cleanup` 写成同一条顺序。现在 `05` 和 `05/03` 都开始共享这条治理链，而不再把 `/usage`、`/compact` 写成并列技巧。

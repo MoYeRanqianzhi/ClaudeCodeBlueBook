@@ -60,9 +60,9 @@
 
 如果继续把入口压成 later maintainer 能直接拿来排查的最小顺序，它还应再暴露三行：
 
-1. Prompt witness order
+1. Prompt frontdoor order
    - `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
-   - 前五项组成 `world-entry / continue verdict` 的最小 witness set；`Authority` 先要求 `world-defining winner` 唯一成立，`Explainability` 只负责 diagnostic naming，不负责改判。具体 witness object 回 `09 / guides/51`。
+   - 这六项先给 later maintainer 的 `first-reject path`；`Authority` 先要求 `world-defining winner` 唯一成立，`Explainability` 只负责 diagnostic naming，不负责改判。真正的 same-world witness 仍回 `09 / guides/51` 的 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`。
 2. governance failure order
    - `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
    - 治理先判 `pricing-right signer / lease` 是否成立，再看 `truth-surface attestation` 如何把 `reject / reopen` 外化；`asset-rollback ABI` 只负责把收口动作变成可恢复 contract，不再冒充治理起点。
@@ -88,7 +88,7 @@
 ## 三组最小排查顺序
 
 - Prompt
-  先按 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 排；前五项才是 witness set，不先看 `systemPrompt` 截图、最后一条消息、summary prose 或 handoff card。
+  先按 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 排；这是入口层的 `first-reject path`，不是对象级 witness chain，不先看 `systemPrompt` 截图、最后一条消息、summary prose 或 handoff card。
 - 治理
   先按 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback` 排，不先看 mode、modal、usage、compact 或 default continue 这些投影替身。
   更第一性的追问是：这次扩张有没有先拿到 `pricing-right`，`truth-surface` 有没有先说清 reject / reopen，`asset-rollback ABI` 有没有只做收口而没有篡位成治理主语。

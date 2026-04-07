@@ -32,11 +32,11 @@
 而是：
 
 - Prompt 线唯一 canonical object chain 是 `message lineage -> section registry / stable boundary -> protocol transcript -> continuation object -> continuation qualification`
+- Prompt 线目录前门只复用 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 这组 `first-reject order`，不把它偷写成对象级 same-world witness
 - `compile -> protocolize -> preserve -> continue -> explain` 只是动作链，不替代这条 object chain
-- `world entry / request assembly / six-stage assembly chain` 与 `request-surface constitution / cognitive contract / byte boundary / continuation truth` 都只是 route shorthand，首次出现必须回绑到 canonical node
+- `world entry / request assembly / six-stage assembly chain` 只配继续做 route shorthand；入口层不再保留 `request-surface constitution / cognitive contract / byte boundary / continuation truth` 这组旧 alias
 - 如果继续往下排查，最稳的 witness 顺序也只认：`message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
-- 这条 witness order 首先是证据可采顺序，不是阅读顺序；`summary / card / handoff prose` 只配做 Explainability 末端投影，不得倒灌成 Prompt 主语
-- 更稳的 shorthand crosswalk 也只该再补五行：`request-surface constitution -> Authority`，`cognitive contract -> Boundary + Transcript`，`byte boundary -> Boundary`，`continuation truth -> Continuation`，`steady / release / handoff card -> Explainability tail projection`
+- 这条 witness order 首先是证据可采顺序，不是目录前门顺序；`summary / card / handoff prose` 只配做 Explainability 末端投影，不得倒灌成 Prompt 主语
 - 如何确认 `message lineage`、`section registry / dynamic boundary`、`protocol transcript`、`continuation qualification` 与接手连续性都还成立
 - 第一条反证信号常常不是回答变差，而是 `systemPrompt` 截图、最后一条消息或 UI transcript 又开始篡位成 Prompt 主语
 - 如果 `compact / handoff / steady` 之后留下来的只是故事，不再是 `continuation qualification`，那它就不是 Prompt 稳态，而只是 Prompt 风格延续

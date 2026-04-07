@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- Prompt 入口层的长期默认 layering 现已继续写死：
+  - `bluebook/README` 与 `bluebook/06` 默认继续把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 写成 `frontdoor / first-reject path`，不再写成 object witness chain
+  - `bluebook/philosophy/84` 默认继续把 Prompt 最短公式拆成 `frontdoor order / same-world witnesses / action chain` 三层，而不是两层混写
+  - `bluebook/navigation/15` 默认继续拒收 `request-surface constitution / cognitive contract / byte boundary / continuation truth` 这组旧 alias 重新冒充入口层主语
+  - `bluebook/07` 默认继续把对象级顺序命名为 `Prompt same-world witness chain`
+  - Prompt 线的长期默认写法现在统一拒收把 `Authority...Explainability`、`message_lineage_ref...continue_qualification_verdict` 与 `compile -> protocolize -> preserve -> continue -> explain` 写成同一层
 - `bluebook/security/README`、`bluebook/risk/README` 与 `bluebook/userbook/05-控制面深挖/README` 的长期默认 governance-midchain language 现已继续写死：
   - `security/README` 默认继续把机制前门写成 `pricing-right / truth-surface -> typed ask / sandbox -> decision window / continuation pricing / durable-transient cleanup`
   - `risk/README` 默认继续把用户侧结算 route 扩成 `governance key / typed ask / decision window / continuation pricing / durable-transient cleanup / signer + evidence + reopen`

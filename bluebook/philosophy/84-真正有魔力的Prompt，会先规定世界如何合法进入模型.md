@@ -92,18 +92,19 @@ Anthropic 官方文档把这条 force ladder 说得更硬了一层：
 
 这也是为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到魔力：他们抄到了说明文本，却没有抄到世界准入、投影分层与继续资格的制度体。真正稀缺的不是文风，而是不同 consumer 不必重新协商同一现场。
 
-如果把这章继续压成最短公式，只剩两行：
+如果把这章继续压成最短公式，只剩三行：
 
-1. `same-world test = world-defining winner -> message lineage -> protocol transcript -> stable bytes -> continuation qualification`
-2. `compile -> protocolize -> preserve -> continue -> explain`
+1. `frontdoor order = Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
+2. `same-world witnesses = message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+3. `compile -> protocolize -> preserve -> continue -> explain`
 
-如果这两行还需要靠“连续性系统”这样的第四对象补完，通常也说明这里仍在把时间轴误写成独立 Prompt 平面。
+如果这三行还需要靠“连续性系统”这样的第四对象补完，通常也说明这里仍在把时间轴误写成独立 Prompt 平面。
 
-这里的 `same-world test` 与六个 nouns 都只是 frontdoor shorthand，首次出现时仍应立刻回绑到 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict` 这条 canonical object chain。
+这里也要先卡死三层关系：
 
-如果把第一行再压成目录前门复用的一组 nouns，也只该剩：
-
-- `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
+- 第一行给 later maintainer 的 `first-reject path`
+- 第二行才是 object-level same-world witness
+- 第三行只是动作链，不替代前两行
 
 更稳的 Prompt reject trio 也只认三条：
 
