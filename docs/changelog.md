@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md`、`bluebook/navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md` 与 `bluebook/navigation/41-机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理.md`，把高流量导航页里残留的 `Prompt 魔力` visible framing 继续统一收回 `Prompt 效力 / 稳定有力 / 文案归因`，避免 route 页先把读者带回 enchantment 语气，再在深页里二次去魅
 - 继续更新 `bluebook/README.md`、`bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md` 的 opener 级余词，把残留的 `魔力其次 / 魔力再次 / Prompt 的魔力` 继续统一收回 `效力`，让 title、lede 与回指句调门一致
 - 继续更新 `bluebook/README.md`、`bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md` 的标题、导语与 backlink，进一步把 `魔力 / owner / first-answer law` 这组词感收回 `效力 / canonical source / 首答来源`，并把剩余的 headline 语气继续从去魅前框架压回 authority-order 与 mechanism 语言
 - 继续更新 `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`，把源码地图页的问题模板进一步去目录化：`76` 现在把“哪个目录在宣布控制平面真相 / 哪个目录是权威入口”收回 `authority file / current-truth surface / consumer subset / hotspot kernel / mirror-gap note` 这组对象级问法，并明确“目录只是 locator，不是 authority 单位”

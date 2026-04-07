@@ -14,7 +14,7 @@
 
 它主要压成五个不可约判断：
 
-1. 为什么 Claude Code 的请求装配会显得有“魔力”，答案不在文案，而在可缓存、可转写、可继续的编译链。
+1. 为什么 Claude Code 的请求装配会显得稳定有力，答案不在文案，而在可缓存、可转写、可继续的编译链。
 2. 为什么安全与省 token 并不是两套权衡，而是治理控制面对一切扩张的统一定价。
 3. 为什么源码先进性并不是风格或洁癖，而是把故障模型提前编码进结构。
 4. 为什么不能停在反例层，而必须继续把坏解法压回第一性原理收束。
@@ -62,7 +62,7 @@
 - `41` 第一次压回不可约判断
 - 其余页只承接，不第一次发明三条母线的新主语
 
-Prompt `66 -> 69 -> 72 -> 78 -> 47 -> 50` 与结构 `guides/83 / 92 -> playbooks/61 / 67 -> casebooks/54 / 63` 因而都只配做专题侧门：前者承接 same-world compiler 的继续资格、residual reopen 与 threshold liability，后者承接 builder-facing template 与 later reject path；它们都不负责第一次定义 Prompt 魔力、安全定价或源码先进性。
+Prompt `66 -> 69 -> 72 -> 78 -> 47 -> 50` 与结构 `guides/83 / 92 -> playbooks/61 / 67 -> casebooks/54 / 63` 因而都只配做专题侧门：前者承接 same-world compiler 的继续资格、residual reopen 与 threshold liability，后者承接 builder-facing template 与 later reject path；它们都不负责第一次定义 Prompt 效力、安全定价或源码先进性。
 
 ## 1. world entry / request assembly / six-stage assembly chain 哲学线
 
@@ -82,13 +82,13 @@ Anthropic 官方 engineering 还把这条线从 production 角度补硬了一层
 
 这条线的核心不是：
 
-- 再夸一次 Prompt 很强
+- 再夸一次 Prompt 很有效
 
 而是：
 
 - 把请求装配的 coherent effect 压回“世界进入模型前先被编译”的第一性原理
 - 如果只看 Prompt 线，它还可以继续压成 `compile -> bound -> transcriptize -> preserve lineage -> qualify continuation -> explain`：世界先被编译，合法边界先被钉住，协议真相先被转写，身份链与合法遗忘先被保住，继续资格才被承认，最后失稳原因还能被解释
-- 更短的前门校准句是：先看 `Authority / Boundary / Transcript / Lineage / Continuation`，再谈 Prompt 魔力；如果这五环里有一环答不出来，解释就还停在文案层
+- 更短的前门校准句是：先看 `Authority / Boundary / Transcript / Lineage / Continuation`，再谈 Prompt 效力；如果这五环里有一环答不出来，解释就还停在文案层
 - continuity 在这条线上只配回答：`Continuation` 这一 rung 还是否沿同一 witness chain 成立，而不是自己单独长成命令法学
 - 若仍停留在旧对象名和桥接词层，回 `../09` 与 `../architecture/82` 校正可见主语
 
@@ -200,6 +200,6 @@ Anthropic 官方 engineering 还把这条线从 production 角度补硬了一层
 3. 我是否已经回答源码先进性为什么不是结构洁癖，也不是公开镜像体感。
 4. 我是在描述 Claude Code 的做法，还是已经提炼出可迁移的第一性原理。
 5. 我是否已经解释目录结构为什么不是排版问题，而是第一性原理在不同证据层上的继续展开。
-6. 如果删掉“Prompt 很有魔力”的措辞，我是否仍能只靠 `same-world compiler` 与 `continuation qualification` 讲清楚 Prompt 强度。
+6. 如果删掉“Prompt 很强”的措辞，我是否仍能只靠 `same-world compiler` 与 `continuation qualification` 讲清楚 Prompt 强度。
 7. 如果删掉 mode、token 面板与审批界面，我是否仍能只靠 `decision window` 与 `continuation pricing` 讲清楚安全与省 token 的同构。
 8. 如果删掉目录树观感与作者说明，我是否仍能只靠 `current-truth surface`、`freshness gate` 与 `later reject path` 讲清楚源码先进性。

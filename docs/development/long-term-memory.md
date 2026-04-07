@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/navigation/05`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-route-framing language 现已继续写死：
+  - 高流量导航页默认继续把 `Prompt 魔力` 收回 `Prompt 效力 / 稳定有力`
+  - 导航页默认继续把 `神秘文案` 收回 `文案归因`
+  - route 页的长期默认首问现在统一拒收 enchantment framing 先于 mechanism framing
 - `bluebook/README`、`bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-title-lede-de-enchantment-3 language 现已继续写死：
   - Prompt opener 里的 `魔力首先 / 其次 / 再次 / 最后` 默认继续统一收回 `效力`
   - Prompt 顶层标题、导语、backlink 与 opener 现在默认继续保持同一条去魅调门

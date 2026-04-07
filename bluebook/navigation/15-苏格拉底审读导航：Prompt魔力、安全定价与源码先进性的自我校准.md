@@ -3,7 +3,7 @@
 这篇只做一件事：把苏格拉底审读压成失稳前问题，而不是故障后诊断。
 
 - 核心问题不是“事后怎么解释”，而是“在再次出问题前，怎样反问这套制度是否已经埋下断裂点”。
-- Prompt 魔力、安全/省 token 与源码先进性在这里都只是入口名；真正要追问的始终是 `same-world test`、`decision window` 与 `present-truth protection` 有没有在前门失真。
+- Prompt 效力、安全/省 token 与源码先进性在这里都只是入口名；真正要追问的始终是 `same-world test`、`decision window` 与 `present-truth protection` 有没有在前门失真。
 
 这里还应再多记一句：
 
@@ -16,7 +16,7 @@
 
 - 为什么这条 `world entry / request assembly / six-stage assembly chain` 在当前、下一步、接手后都像活在同一个现场里。
 - 为什么一段 prompt 看起来更长，却未必更强。
-- 为什么请求装配控制面如果不能被失稳前审读，最终会退回神秘文案。
+- 为什么请求装配控制面如果不能被失稳前审读，最终会退回文案归因。
 
 规范锚点：
 

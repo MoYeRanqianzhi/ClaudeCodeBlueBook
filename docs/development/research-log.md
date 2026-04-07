@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-route-framing 深化动作: 已继续更新 `bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md`、`bluebook/navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md` 与 `bluebook/navigation/41-机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理.md`。新的结论是：Prompt 线当前最容易漏掉的 residual 已经不只是深页 headline，而是高流量 route 页的入口问句、回链句和自检句还在重复 `魔力` 语气。现在这三页开始更一致地把 `魔力 / 神秘文案` 收回 `效力 / 稳定有力 / 文案归因`。
+- 本轮新的 Prompt 结论: 如果导航页还先问“为什么 Prompt 有魔力”，读者就会先带着 enchantment frame 进入 `84 / 81`，再被迫在深页里二次去魅；更稳的目录结构写法是 route 层先保持机制调门，把“效力来自什么对象链”而不是“魔力从何而来”写成第一问。
 - 本轮 prompt-title-lede-de-enchantment-3 深化动作: 已继续更新 `bluebook/README.md`、`bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`。新的结论是：Prompt 去魅在 title/lede 层最容易漏掉的不是大词，而是 opener 里反复出现的 `魔力首先 / 其次 / 再次 / 最后` 这种节奏词。现在这些 opener 也开始统一收回 `效力`。
 - 本轮新的 Prompt 结论: later maintainer 读到第一屏时，不该先被 enchantment 语气带走，再在第二屏里回到 object chain；更稳的写法是从标题到 opener 都直接保持同一条机制调门。
 - 本轮 prompt-title-lede-de-enchantment-2 深化动作: 已继续更新 `bluebook/README.md`、`bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`。新的结论是：Prompt 线当前最显眼的 residual 已不再是 signer-like technical noun，而是标题、导语与 backlink 还在重复去魅前的 framing。现在这几页开始更一致地把 `魔力 / owner / first-answer law` 收回 `效力 / canonical source / 首答来源`。
