@@ -83,6 +83,15 @@
 49. `model.tsx`、`validateModel`、`getModelOptions` 与 `getUserSpecifiedModelSetting` 看起来都在 allowlist 可见面附近时，应该先去哪个入口分辨显式拒绝、选项隐藏与 silent veto 不是同一种 allowlist contract。
 50. `reusedPriorSession`、`previouslyFlushedUUIDs`、`createCodeSession` 与 `flushHistory` 看起来都在 continuity 历史附近时，应该先去哪个入口分辨 v1 continuity ledger 与 v2 fresh-session replay 不是同一种 history contract。
 51. `writeMessages`、`writeSdkMessages`、`initialMessageUUIDs`、`recentPostedUUIDs` 与 `flushGate` 看起来都在 bridge 写入附近时，应该先去哪个入口分辨 REPL path 与 daemon path 不是同一种 bridge write contract。
+52. `handleIngressMessage`、`recentPostedUUIDs`、`recentInboundUUIDs` 与 `onInboundMessage` 看起来都在 ingress 读取附近时，应该先去哪个入口分辨 outbound echo drop、inbound replay guard 与 non-user ignore 不是同一种 ingress consumer contract。
+53. `lastTransportSequenceNum`、`recentInboundUUIDs`、`tryReconnectInPlace`、`createSession` 与 `rebuildTransport` 看起来都在重连回放附近时，应该先去哪个入口分辨 same-session continuity 与 fresh-session reset 不是同一种 inbound replay contract。
+54. `handleIngressMessage`、`isSDKControlResponse`、`isSDKControlRequest`、`onPermissionResponse` 与 `onControlRequest` 看起来都在 bridge control 附近时，应该先去哪个入口分辨 bridge ingress 的 control side-channel 不是对称的通用 control 总线。
+55. `handleIngressMessage`、`control_response/control_request`、`extractInboundMessageFields` 与 `enqueue(prompt)` 看起来都在 ingress transcript 适配附近时，应该先去哪个入口分辨 bridge ingress 只有 control 旁路和 user-only transcript adapter。
+56. `extractInboundMessageFields`、`normalizeImageBlocks`、`resolveInboundAttachments`、`prependPathRefs` 与 `resolveAndPrepend` 看起来都在入站标准化附近时，应该先去哪个入口分辨 image block repair 与 attachment path-ref prepend 不是同一种 inbound normalization contract。
+57. `pendingPermissionHandlers`、`BridgePermissionCallbacks`、`request_id`、`handlePermissionResponse` 与 `isBridgePermissionResponse` 看起来都在权限回包附近时，应该先去哪个入口分辨 bridge permission race 的 verdict ledger 不是 generic control callback ownership。
+58. `handleIngressMessage`、`recentInboundUUIDs`、`onPermissionResponse`、`extractInboundMessageFields`、`resolveAndPrepend` 与 `pendingPermissionHandlers` 看起来都在 bridge ingress 附近时，应该先去哪个入口分辨 191-196 不是并列碎页，而是一条六层阅读链。
+59. `cancelRequest`、`onResponse unsubscribe`、`pendingPermissionHandlers.delete` 与 `leader queue recheck` 看起来都在权限收口附近时，应该先去哪个入口分辨 prompt 撤场、订阅退役、响应消费与策略重判不是同一种收口合同。
+60. `onSetPermissionMode`、`getLeaderToolUseConfirmQueue`、`recheckPermission`、`useRemoteSession` 与 `useInboxPoller` 看起来都在权限重判附近时，应该先去哪个入口分辨 permission context 变更后的本地重判广播不是同一种 permission re-evaluation surface。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 

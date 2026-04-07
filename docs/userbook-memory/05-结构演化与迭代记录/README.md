@@ -192,6 +192,15 @@
 - [188-2026-04-08-model allowlist surface split 拆分记忆.md](./188-2026-04-08-model%20allowlist%20surface%20split%20拆分记忆.md)
 - [189-2026-04-08-bridge continuity ledger split 拆分记忆.md](./189-2026-04-08-bridge%20continuity%20ledger%20split%20拆分记忆.md)
 - [190-2026-04-08-bridge write contract split 拆分记忆.md](./190-2026-04-08-bridge%20write%20contract%20split%20拆分记忆.md)
+- [191-2026-04-08-ingress consumer split 拆分记忆.md](./191-2026-04-08-ingress%20consumer%20split%20拆分记忆.md)
+- [192-2026-04-08-inbound replay continuity split 拆分记忆.md](./192-2026-04-08-inbound%20replay%20continuity%20split%20拆分记忆.md)
+- [193-2026-04-08-control side-channel split 拆分记忆.md](./193-2026-04-08-control%20side-channel%20split%20拆分记忆.md)
+- [194-2026-04-08-user-only transcript adapter split 拆分记忆.md](./194-2026-04-08-user-only%20transcript%20adapter%20split%20拆分记忆.md)
+- [195-2026-04-08-inbound normalization split 拆分记忆.md](./195-2026-04-08-inbound%20normalization%20split%20拆分记忆.md)
+- [196-2026-04-08-permission verdict ledger split 拆分记忆.md](./196-2026-04-08-permission%20verdict%20ledger%20split%20拆分记忆.md)
+- [197-2026-04-08-ingress reading chain split 拆分记忆.md](./197-2026-04-08-ingress%20reading%20chain%20split%20拆分记忆.md)
+- [198-2026-04-08-permission closeout split 拆分记忆.md](./198-2026-04-08-permission%20closeout%20split%20拆分记忆.md)
+- [199-2026-04-08-permission reevaluation surface split 拆分记忆.md](./199-2026-04-08-permission%20reevaluation%20surface%20split%20拆分记忆.md)
 
 用途：
 
