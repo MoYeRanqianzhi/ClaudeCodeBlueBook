@@ -196,6 +196,7 @@
 - [192-2026-04-08-inbound replay continuity split 拆分记忆.md](./192-2026-04-08-inbound%20replay%20continuity%20split%20拆分记忆.md)
 - [193-2026-04-08-control side-channel split 拆分记忆.md](./193-2026-04-08-control%20side-channel%20split%20拆分记忆.md)
 - [194-2026-04-08-user-only transcript adapter split 拆分记忆.md](./194-2026-04-08-user-only%20transcript%20adapter%20split%20拆分记忆.md)
+- [195-2026-04-08-inbound normalization split 拆分记忆.md](./195-2026-04-08-inbound%20normalization%20split%20拆分记忆.md)
 
 用途：
 
