@@ -2,6 +2,10 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 deeper-page-owner-noun-demotion 深化动作：已继续更新 `03` 与 `06`。新的结论是：就算不在首页，只要 why/self-audit 长文还在自己发 `Transcript / Lineage / Continuation`、`section registry / lawful forgetting`、治理链段、或 later-maintainer / object-seam 这一类 owner nouns，它仍会在深页重长出第二前门。更稳的默认修法是：深页标题先改成 why 句，正文把具名链段改成“若已进入具体 owner nouns，直接回 owner 页”的 bridge。
+- 本轮新的 `03` 结论：`设计原则四` 现在更明确只保留“时间线与当前真相不能混写”的 why，不再在本章定义 truth planes / writeback surface；`设计原则二十三 / 二十六` 也更明确只保留“Prompt 是连续性制度 / 制度边界”这类 why，不再把 `Transcript / Lineage / Continuation` 与 `section registry / lawful forgetting` 写成章节自己的审读位。
+- 本轮新的 `06` 结论：`6.32 / 6.45 / 6.54 / 6.55 / 6.56 / 6.57` 现在更明确只保留“为什么不能被写浅”的反问，而不再自己列 Prompt assembly nouns、治理四类定价、或源码质量 object / verdict bundle；`7.4-7.6 / 7.9` 也同步改成 route-aware 的自校问句，不再把 `Authority -> Boundary -> ...`、治理 full chain、或 `future maintainer / freshness gate` 当作自校页自带 canon。
+- 本轮根仓库同步检查结果：`fetch origin main` 成功，但根仓 `checkout main` 再次被 `bluebook/userbook/03-参考索引/README.md` 与 `bluebook/userbook/README.md` 的 unresolved merge 阻塞，因此本轮继续只在 `.worktrees/mainloop` 内推进。
 - 本轮 mid-page-why-bridge cleanup 深化动作：已继续更新 `03` 与 `06`。新的结论是：当前更深一层的 residual 主要不在首页，而在 why/self-audit 长文的中段。`03` 一旦开始自己发 `guides/102` 的 ladder、`architecture` 的 object/seam 清单，或 `philosophy/87` 的 quality verdict，就会从 why 页长成第二个源码质量前门；`06` 一旦开始自己枚举 Prompt object / witness nouns，就会把自校页重新做成半个 `84 / 51`。更稳的默认修法继续是：`03` 删清单、留 why、改路由；`06` 删名词、留反问、改自校。
 - 本轮新的 `03` 结论：Prompt 深段里凡是进入 truth plane、lawful forgetting、audit order 的段落，默认统一回 `84 / 51 / 06`；源码质量深段里凡是进入 evidence gradient、合法复杂度中心、future maintainer、重构资本与五步 ladder 的段落，默认统一回 `102 / 87 / architecture`。`03` 继续只保留“为什么不能退回文案崇拜 / 目录美学 / 尺寸治理”的 why。
 - 本轮新的 `06` 结论：`2.10` 现在更明确只回答“为什么不能把 Prompt 稳定性读成文案聪明”，而不再列 `Authority / Boundary / Transcript / Lineage / Continuation` 或 `section registry / protocol transcript / continue qualification` 这组 owner nouns。`06` 对 Prompt 线最稳的默认句型，继续固定为“我有没有越位复述 `84 / 51`”。

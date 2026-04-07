@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 deeper-page-owner-noun-demotion language 现已继续写死：
+  - `03` 深页标题默认继续优先写 why 句，不再把 `Transcript / Lineage / Continuation`、`section registry / lawful forgetting`、truth planes / writeback surface 或 quality ladder / verdict bundle 写成章节标题或章节自带审读位
+  - `06` 深页默认继续只保留“为什么不能被写浅”的自校反问；凡是自校页开始自己列 Prompt assembly nouns、治理链段、later-maintainer / object-seam nouns，默认按越位候选处理
+  - 更稳的默认修法顺序继续是：`先改标题成 why / self-audit 句 -> 再删正文里具名 owner nouns -> 最后补一句 owner route`
+- 最新根仓同步记忆（2026-04-08，本轮后续批次）继续记录为部分阻塞：`fetch origin main` 成功，但根仓 `checkout main` 被 `bluebook/userbook/03-参考索引/README.md` 与 `bluebook/userbook/README.md` 的 unresolved merge 阻塞；因此后续起手仍应检查，但默认继续只在 `.worktrees/mainloop` 内推进。
 - `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 mid-page-why-bridge / self-audit wording 现已继续写死：
   - `03` 中段若再次出现 Prompt truth plane、lawful forgetting、audit order、evidence gradient、合法复杂度中心、future maintainer、重构资本或五步 ladder，默认按越位候选处理；更稳的默认修法是只保留 why 句，把 Prompt 统一改路由回 `84 / 51 / 06`，把源码质量统一改路由回 `102 / 87 / architecture`
   - `06` 的 Prompt 深段默认继续只保留“我有没有越位复述 `84 / 51`”这类自校反问，不再列 object / witness / qualification nouns
