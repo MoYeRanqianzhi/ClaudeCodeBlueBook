@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-terminology-de-enchantment 深化动作: 已继续更新 `bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`。新的结论是：Prompt 线当前更危险的 residual 已经从 owner 混写转移到“词看起来太像 signer”。现在 `request assembly law / object` 开始退回 order / result，`UI transcript` 与 `display truth / handoff truth` 这类词也开始退回 projection wording。
+- 本轮新的 Prompt 结论: Prompt 去魅不只是把公式单源化，还要把 request、display、handoff 这些 consumer 词从“真相主语”继续降回“被治理后的装配结果或投影结果”。
 - 本轮 prompt-owner-single-source 深化动作: 已继续更新 `bluebook/README.md`、`bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`。新的结论是：Prompt 线当前最值钱的 residual 已不再是 frontdoor/witness/action 三层混写，而是“谁配发布 Prompt 顶层 first answer”。现在 `84` 更接近唯一 owner，根 README 更接近 root hook，`06` 更接近第一性追问页，`81` 更接近机制页。
 - 本轮新的 Prompt 结论: `same-world compiler` 这类 owner-sounding 顶层短句现在开始退场；更稳的默认写法是让非 owner 页面只保留 hook、question ladder 或 mechanism，不再并列重签 Prompt 总法。
 - 本轮 shared-frontdoor-bucketing 深化动作: 已继续更新 `bluebook/security/README.md`、`bluebook/userbook/05-控制面深挖/README.md` 与 `bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md`。新的结论是：共享前门当前最危险的 residual 已不再是“有没有把 `/status / /usage` 降格”，而是“有没有把 runtime projection 与 continuation consumer 混成一桶”。现在这几页开始更明确地区分 `/status / /doctor / /usage` 与 `/compact / /resume` 的 speaking rights。

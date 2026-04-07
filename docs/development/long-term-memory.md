@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/81` 与 `bluebook/06` 的长期默认 prompt-terminology-de-enchantment language 现已继续写死：
+  - `bluebook/philosophy/81` 默认继续把已治理请求写成 `request assembly order / result`，不再写成过强的 truth-like 主语
+  - `bluebook/06` 默认继续把 `UI transcript`、display 与 handoff 相关词写成 projection，而不是 truth co-signer
+  - Prompt 线的长期默认术语现在统一拒收把 request、display、handoff 写成过强 signer 的词感
 - `bluebook/README`、`bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-owner-single-source language 现已继续写死：
   - `bluebook/philosophy/84` 默认继续拥有 Prompt 线的 first-answer law
   - `bluebook/README` 默认只保留 Prompt root hook，不再自命名为 `same-world compiler`

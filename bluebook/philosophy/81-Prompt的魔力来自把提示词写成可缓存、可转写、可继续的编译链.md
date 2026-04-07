@@ -54,7 +54,7 @@ Prompt 真正的魔力，不是：
 而是：
 
 1. 先把 system prompt 写成可分段、可缓存、可审计的 section registry。
-2. 先把主权顺序压成同一条 request assembly law，而不是让多份并列文本互相争主语。
+2. 先把主权顺序压成同一条 request assembly order，而不是让多份并列文本互相争主语。
 3. 先把 `message lineage` 写成可恢复的三键内核，而不是顺手拼出的聊天历史。
 4. 先把 transcript 重写成合法协议对象，再让模型消费。
 5. 先把动态变化赶到 stable boundary 之后，保住共享前缀资产。
@@ -83,7 +83,7 @@ Claude Code 的 Prompt 有一个常被忽略的前提：
 
 1. Prompt 的主权顺序先被固定。
 2. 风格、流程、边界与工具法律被编译进 system 主链。
-3. 人类 later 接手者消费的也不是裸原文，而是同一条被治理过的 request assembly object。
+3. 人类 later 接手者消费的也不是裸原文，而是同一条被治理过的 request assembly result。
 
 所以 Prompt 魔力首先不是：
 
