@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮 `03` 的 Prompt why 与治理 why 句法继续统一成单一 owner 顺序：Prompt 相关回链现已统一只回 `philosophy/84`，治理相关回链现已统一写成 `10 -> philosophy/85 -> philosophy/61 -> security/risk/playbooks`
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮 `03` 的 source-quality why 句法继续统一成单一 owner 顺序：相关回链现已统一写成 `07 -> guides/102 -> philosophy/87 -> architecture/README`，不再在不同小节残留 `07 -> 87` 或 `architecture only` 的变体
 - 继续更新 `bluebook/03-设计哲学.md`、`bluebook/07-运行时契约、知识层与生态边界.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮 source-quality why 收口继续收成两条 live 纪律：`03` 现已把源码质量的 why / continuity budget / evidence ladder / quality threshold / objects-seam 统一压回 `07 -> 102 -> 87 -> architecture/README`；`07` 现已把公开镜像源码质量链补成完整的 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline -> change-risk record`
 - 继续更新 `bluebook/07-运行时契约、知识层与生态边界.md`、`bluebook/userbook/05-控制面深挖/README.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮 continuity 总法补刀继续收成两条 live 纪律：`continue / resume` 现已明确收成 shared continue verdict，而不是第五种资产；`userbook/05` 现已把三句用户问法直接对回 `continue qualification / pricing-right + truth-surface attestation / sole writer + freshness` 这三项最小过关条件

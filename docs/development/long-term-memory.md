@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 03-prompt-governance-wording live 记忆：
+  - `03` 默认继续把 Prompt why 的回链句法统一成 `philosophy/84`，仅在明确自校语境下再回 `06`
+  - `03` 默认继续把治理 why 的回链句法统一成 `10 -> philosophy/85 -> philosophy/61 -> security/risk/playbooks`，不再留下“治理 owner 页”这类松散写法
 - 当前批次继续新增一条 03-source-quality-wording live 记忆：
   - `03` 默认继续把源码质量 why 的回链句法统一成 `07 -> guides/102 -> philosophy/87 -> architecture/README`，不再在不同小节保留 `07 -> 87`、`architecture only` 这类变体
 - 当前批次继续新增一条 source-quality-owner-sequence live 记忆：

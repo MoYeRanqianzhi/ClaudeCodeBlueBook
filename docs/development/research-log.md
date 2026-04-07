@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 `03` 结论：Prompt why 与治理 why 的回链句法现在也更明确继续被统一。Prompt 线统一只回 `philosophy/84`，自校层才回 `06`；治理线统一只回 `10 -> 85 -> 61 -> security/risk/playbooks`，不再停在“治理 owner 页”这种松散口径。
 - 本轮新的 `03` 结论：源码质量 why 的回链句法现在更明确继续统一成 `07 -> 102 -> 87 -> architecture/README`，不再在不同小节残留 `07 -> 87` 或 `architecture only` 这类变体。
 - 本轮新的源码质量顺序结论：`03` 现在更明确不该在多个设计原则里各自补质量 verdict；更稳的固定顺序已经压实为 `07 -> 102 -> 87 -> architecture/README`。同时 `07` 也把公开镜像源码质量链补成了完整的 8 段顺序，把 `change-risk record` 从附加动作提升为 owner 链末端。
 - 本轮新的 continuity 总法结论：`07` 现在更明确把 `continue / resume` 收成 shared continue verdict，而不是第五种资产；真正决定它的，仍是 `continue qualification + pricing-right / truth-surface re-attestation + sole-writer freshness` 的联合通过。
