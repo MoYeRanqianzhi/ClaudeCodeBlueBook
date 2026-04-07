@@ -33,6 +33,11 @@
 
 如果一个解释还没有压到这四个函数，就还只是对象层总结，不算最硬的第一性原理收束。
 
+这里还应再多记一句：
+
+- `continuity` 不是第五个函数，也不是第四条母线；它只是 `compile / price / externalize / evict` 在时间维度上的联合验收。
+- 更短地说，continuity 只配被写成：Prompt 保 `Continuation`，治理保 `continuation pricing`，源码质量保 `recovery non-sovereignty / anti-zombie`。
+
 如果再往目录前门压一层，这一组哲学导航还应优先暴露三条最短 frontdoor formula：
 
 1. Prompt
@@ -44,6 +49,10 @@
    - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
 如果 later maintainer 第一次点进哲学前门时还看不见这三条，目录结构就还在迫使他先走对象层总结，再自己回压成第一性原理。
+
+如果继续把 continuity 的最小哲学判断也压成一行，它也只该剩：
+
+- `继续不只是还能发生，而是仍值得被编译、被定价、被安全写回。`
 
 如果继续把目录结构优化也压成第一性原理层的一句判断，它最该先守住的不是“route 更短”，而是“第一次定义权唯一”：
 
@@ -80,6 +89,7 @@ Anthropic 官方 engineering 还把这条线从 production 角度补硬了一层
 - 把请求装配的 coherent effect 压回“世界进入模型前先被编译”的第一性原理
 - 如果只看 Prompt 线，它还可以继续压成 `compile -> bound -> transcriptize -> preserve lineage -> qualify continuation -> explain`：世界先被编译，合法边界先被钉住，协议真相先被转写，身份链与合法遗忘先被保住，继续资格才被承认，最后失稳原因还能被解释
 - 更短的前门校准句是：先看 `Authority / Boundary / Transcript / Lineage / Continuation`，再谈 Prompt 魔力；如果这五环里有一环答不出来，解释就还停在文案层
+- continuity 在这条线上只配回答：`Continuation` 这一 rung 还是否沿同一 witness chain 成立，而不是自己单独长成命令法学
 - 若仍停留在旧对象名和桥接词层，回 `../09` 与 `../architecture/82` 校正可见主语
 
 ## 2. 统一定价治理哲学线
@@ -106,6 +116,7 @@ Anthropic 官方 engineering 还把这条线从 production 角度补硬了一层
 - 把“先裁 visible world，再谈动作许可”写成治理前门，而不是让 mode、modal、token 面板抢先代表治理
 - 更短的最小判断句是：治理先外化当前真相，再批准当前扩张；连治理检查自己都必须被定价，没有决策增益的检查，本身就是免费扩张
 - 如果再继续压到 token 经济前门，最稳的短公式是：`Narrow / Later / Outside + stable bytes + working set`
+- continuity 在这条线上只配回答：这次继续是否仍值得付费；一旦 continuation 被默认免费化，第二条线就已经让时间扩张逃费
 
 ## 3. 源码质量与可演化内核哲学线
 
@@ -131,6 +142,7 @@ Anthropic 官方 engineering 还把这条线从 production 角度补硬了一层
 
 - 把源码先进性压回 `current-truth surface / recovery asset non-sovereignty / freshness gate / ghost capability` 与 `证据梯度 / 时间诚实 / future maintainer 可独立 reject` 这组第一性原理，再谈模块美学
 - 如果再继续压成目录前门能直接承认的一行，应先看 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`，再问 failure semantics 是否也已进入 architecture doctrine
+- continuity 在这条线上只配回答：恢复资产、旧写入者与 replay 路径有没有借“继续”之名重新篡位 present truth
 
 ## 4. 为什么这层更适合落在 philosophy
 

@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮高阶导航 continuity 收口动作: 已继续更新 `bluebook/navigation/05`、`15`、`41`。新的结论是：continuity 在导航层不能被写成第四条母线、第五个函数或第四类审读对象，而只能被写成三条母线在时间维度上的共同交汇。更稳的默认动作是：`05` 负责先拒“把 continuity 当按钮表”，`15` 负责先拒“把 continuity 当独立审读域”，`41` 负责先拒“把 continuity 当第五个第一性函数”。
+- 本轮新的目录结构结论: 目录结构继续优化的关键不再是多给 continuity 一层入口，而是继续减少高阶导航层第一次解释 continuity 的主语数。现在 continuity 的高阶说法已经在 `README / philosophy README / navigation README / 09 / 05 / 15 / 41` 上统一成同一条时间轴，不再允许各页各自发明一版 continuity 词表。
 - 本轮 continuity 路由深化动作: 已继续更新 `bluebook/navigation/README.md` 与 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`。新的结论是：continuity 问题在目录层不该先按命令或功能分流，而应先判它是 Prompt `Continuation` 的 witness 问题、治理 `continuation pricing` 的收费问题，还是源码质量 `recovery non-sovereignty / anti-zombie` 的时间诚实性问题。
 - 本轮新的目录结构结论: 只要 `navigation/` 或 `09` 开始把 continuity 单列成第四条线，later maintainer 学到的就会重新是按钮库存，而不是三条母线的时间轴。更稳的默认做法是：在 root/philosophy 负责声明 continuity 不是第四母线，在 `navigation/` 负责跨目录分诊，在 `09` 负责给出 continuity 的最小顺序。
 - 本轮 continuity 目录桥接动作: 已继续更新 `bluebook/README.md`、`bluebook/philosophy/README.md` 与 `userbook/05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md`。这一批把 continuity 从“连续性命令专题”继续收回成三条母线的时间交汇：Prompt 线负责 `Continuation` witness，治理线负责 `continuation pricing`，源码质量线负责 `recovery non-sovereignty / anti-zombie`。新的结论是：只要把 continuity 单列成第四条母线，目录就会重新退回命令分类法。

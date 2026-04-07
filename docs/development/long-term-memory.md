@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/navigation/05`、`15`、`41` 的长期默认 continuity rule 现已继续写死：
+  - `05` 默认拒收“把 continuity 当第四类设计对象”
+  - `15` 默认拒收“把 continuity 当第四类审读对象”
+  - `41` 默认拒收“把 continuity 当第五个第一性函数”
+  - 三页默认统一把 continuity 收回 `Continuation / continuation pricing / recovery non-sovereignty`
+  - 后续若高阶导航又各自发明 continuity 新主语，默认按导航层退化处理
 - `bluebook/navigation/README.md` 与 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md` 的长期默认 continuity route 现已继续写死：
   - `navigation/` 默认不按 `/compact / /resume / /memory` 分流 continuity 问题
   - 默认先判 `continue qualification / continuation pricing / recovery non-sovereignty`

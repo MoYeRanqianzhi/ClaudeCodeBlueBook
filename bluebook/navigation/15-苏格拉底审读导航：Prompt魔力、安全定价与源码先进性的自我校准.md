@@ -5,6 +5,11 @@
 - 核心问题不是“事后怎么解释”，而是“在再次出问题前，怎样反问这套制度是否已经埋下断裂点”。
 - Prompt 魔力、安全/省 token 与源码先进性在这里都只是入口名；真正要追问的始终是 `same-world test`、`decision window` 与 `present-truth protection` 有没有在前门失真。
 
+这里还应再多记一句：
+
+- `continuity` 不是第四类审读对象；它只是这三类问题在时间维度上的共同失稳面。
+- 所以继续相关问题先问 `continue qualification`、再问 `continuation pricing`、最后问 `recovery asset` 是否越权 current truth，而不是先按 `/compact / /resume / /memory` 这些命令名拆题。
+
 ## 1. 请求装配控制面的苏格拉底审读
 
 关键追问：
@@ -36,6 +41,7 @@
 - 如果 `compact / handoff / steady` 之后留下来的只是故事，不再是 `continuation qualification`，那它就不是 Prompt 稳态，而只是 Prompt 风格延续
 - `release card / steady verdict / handoff prose` 只配做 Explainability 末端投影；一旦这些壳开始定义世界，Prompt 就已经从 constitution 退回 narration
 - handoff consumer 有没有合法反对权，还是系统把 `delivery` 偷换成了 `acceptance`
+- continuity 失真时，最先断的也不该只是“还能不能继续聊”，而应先问 `continuation_object_ref`、`continue_qualification_verdict` 与 reopen 条件是否还在同一条 witness chain 上
 
 ## 2. 统一治理定价的苏格拉底审读
 
@@ -63,6 +69,7 @@
 - 更硬的前置追问还应是：系统有没有先裁 `visible world`，还是先让过宽工具、schema 与上下文免费进入，再用动作审批补票
 - 如果 classifier、审批或默认重试自己没有被定价，它们就在把治理控制面重新膨胀成新的免费扩张源
 - 更第一性的失败也不是“reject 来得太晚”，而是 `pricing-right` 还没成立、`truth-surface attestation` 还没说清 reject / reopen，系统就已经让扩张先进入现场
+- 如果 continuation 还在默认免费续费，而 classifier、compact、resume 只是在补票，第二条线就已经把时间扩张退回了 UX 故事
 
 这一刀区分也要先钉死：
 
@@ -113,6 +120,7 @@
 - 如果 `remote / session / transport` 仍被讲成功能域而不是主权域，later maintainer 就还看不见 ownership、reconnect、permission 与 exit contract 实际在保护什么
 - 如果 `event truth / current truth / display truth` 重新混写，宿主与 UI 就会再次靠 transcript replay 猜现在，而不是消费正式 writeback surface
 - `later maintainer rejectability` 的最低标准也不是“看懂作者设计”，而是拿不到作者时仍能只凭结构指出哪条 `event / snapshot / transport` 越权成了 authority，并立刻说出第一退回层
+- continuity 的源码审读也不该先问“恢复成功了吗”，而应先问旧 summary、pointer、snapshot 与 replay transcript 有没有借恢复路径篡位成 present truth
 
 如果继续往下排查，最稳的 later-maintainer reject 顺序也只认：
 
@@ -130,6 +138,7 @@
 1. 如果删掉漂亮措辞，这条 `world entry / request assembly / six-stage assembly chain` 还剩哪条合法世界准入链。
 2. 如果删掉面板与预算图，这套治理还剩哪条拒绝免费扩张的价格链。
 3. 如果删掉目录美学，这套结构还剩哪条当前真相保护链。
+4. 如果删掉 `/compact / /resume / /memory` 这些命令名，这套系统还剩哪条 `continue qualification -> continuation pricing -> recovery non-sovereignty` 的时间轴。
 
 只有这三问还能成立，后面的分析才不是新一层口号。
 
