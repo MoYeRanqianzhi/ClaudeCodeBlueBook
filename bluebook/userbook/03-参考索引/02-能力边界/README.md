@@ -119,3 +119,4 @@
 - [117-4001 在 SessionsWebSocket 与 WebSocketTransport 的语义分裂 索引.md](./117-4001%20在%20SessionsWebSocket%20%E4%B8%8E%20WebSocketTransport%20%E7%9A%84%E8%AF%AD%E4%B9%89%E5%88%86%E8%A3%82%20索引.md)
 - [118-headersRefreshed、autoReconnect、sleep detection 与 4003 refresh path 索引.md](./118-headersRefreshed%E3%80%81autoReconnect%E3%80%81sleep%20detection%20%E4%B8%8E%204003%20refresh%20path%20索引.md)
 - [119-remoteSessionUrl、brief line、bridge pill、bridge dialog 与 attached viewer 索引.md](./119-remoteSessionUrl%E3%80%81brief%20line%E3%80%81bridge%20pill%E3%80%81bridge%20dialog%20%E4%B8%8E%20attached%20viewer%20索引.md)
+- [120-warning transcript、remoteConnectionStatus、remoteBackgroundTaskCount 与 brief line 索引.md](./120-warning%20transcript%E3%80%81remoteConnectionStatus%E3%80%81remoteBackgroundTaskCount%20%E4%B8%8E%20brief%20line%20索引.md)
