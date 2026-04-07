@@ -2,10 +2,15 @@
 
 `security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，不要急着把安全页读成另一套规则堆。
+`security/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这次在失真的到底是 signer、ledger 还是 cleanup 工作对象，再判它卡在治理收费链的哪一段，最后才决定读主 README、appendix、source-notes 还是具体编号正文。
 
 如果只先记安全前门的一句话，也只记这句：
 
 - 这不是第二套安全故事，而是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链在安全侧的结算面。
+
+这里还应再多记一句：
+
+- `continuity` 在安全目录里也不是第四类安全主题；它只是 `decision window -> continuation pricing -> durable-transient cleanup` 这段时间轴在安全侧的继续资格与清算资格。
 
 ## 先记四句
 
@@ -33,6 +38,7 @@
    - 用户侧误伤、恢复与入口语义差不在这里第一次裁决。
 
 如果一个安全判断还压不回这三条，它就还停在规则堆或工具堆层。
+如果一个安全判断还答不上“它保护的到底是哪种工作对象、哪段收费链、哪个入口只是证据层 consumer”，就说明它还没压回第一性原理。
 
 ## 高阶前门
 

@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/security/README`、`security/appendix/README`、`security/source-notes/README` 与 `risk/README` 的长期默认 security/risk frontdoor language 现已继续写死：
+  - `security` 默认继续先判 signer / ledger / cleanup 工作对象，再判治理收费链失真段
+  - `security/appendix` 默认只做字段 / 矩阵 / 速查核对，不额外签 signer / verdict
+  - `security/source-notes` 默认只拆单机制源码证据，不额外代签治理 verdict
+  - `risk` 默认继续先判误伤 / 恢复 / reopen / 入口差异这些用户侧工作对象，再判 `governance key / decision window / signer + evidence + reopen`
+  - 这组 security/risk 前门默认统一不把 continuity 升成第四类安全主题或第四类用户风险主题
+  - 这组 security/risk 前门默认统一继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
 - `bluebook/00-导读`、`00-总览`、`00-蓝皮书总览` 与 `02-使用指南` 的长期默认 bluebook root-frontdoor language 现已继续写死：
   - `00-导读` 默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
   - `00-总览` 与 `00-蓝皮书总览` 默认只做兼容跳板，不额外签 frontdoor verdict
