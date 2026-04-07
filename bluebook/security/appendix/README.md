@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 255 篇速查文档。
+`appendix/` 当前包含 263 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 附录层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责核对字段、矩阵与速查对象，不额外签 signer / verdict。
 
@@ -423,6 +423,30 @@
 - `255`
   载体家族强请求清理重新并入治理与强请求清理重新投影治理分层。
   入口：[255-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question](255-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question.md)。
+- `256`
+  载体家族强请求清理重新投影治理与强请求清理重新担保治理分层。
+  入口：[256-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层速查表：assurance ceiling、success silence、caveat budget与governor question](256-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层速查表：assurance ceiling、success silence、caveat budget与governor question.md)。
+- `257`
+  载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层。
+  入口：[257-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层速查表：fresh gate、runtime revocation、consumer proof与governor question](257-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层速查表：fresh gate、runtime revocation、consumer proof与governor question.md)。
+- `258`
+  载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层。
+  入口：[258-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gate、refresh suppression、step-up state与governor question](258-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gate、refresh suppression、step-up state与governor question.md)。
+- `259`
+  载体家族强请求清理step-up重授权治理与强请求清理续打治理分层。
+  入口：[259-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：step-up reauthorization decision、same-request continuation decision、state continuity ceiling与governor question](259-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：step-up reauthorization decision、same-request continuation decision、state continuity ceiling与governor question.md)。
+- `260`
+  载体家族强请求清理续打治理与强请求清理完成治理分层。
+  入口：[260-安全载体家族强请求清理续打治理与强请求清理完成治理分层速查表：continuation decision、completion decision、result settlement与governor question](260-安全载体家族强请求清理续打治理与强请求清理完成治理分层速查表：continuation decision、completion decision、result settlement与governor question.md)。
+- `261`
+  载体家族强请求清理完成治理与强请求清理终局治理分层。
+  入口：[261-安全载体家族强请求清理完成治理与强请求清理终局治理分层速查表：tool_result、files_persisted、idle与governor question](261-安全载体家族强请求清理完成治理与强请求清理终局治理分层速查表：tool_result、files_persisted、idle与governor question.md)。
+- `262`
+  载体家族强请求清理终局治理与强请求清理遗忘治理分层。
+  入口：[262-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层速查表：finality scope、forgetting gate、retained memory与governor question](262-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层速查表：finality scope、forgetting gate、retained memory与governor question.md)。
+- `263`
+  载体家族强请求清理遗忘治理与强请求清理免责释放治理分层。
+  入口：[263-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层速查表：forgetting gate、liability-release gate、compensate-or-refuse与governor question](263-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层速查表：forgetting gate、liability-release gate、compensate-or-refuse与governor question.md)。
 
 ## 怎么配合主线读
 

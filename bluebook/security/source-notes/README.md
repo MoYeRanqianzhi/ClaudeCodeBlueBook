@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 122 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 130 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 源码剖面层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责把单机制证据拆开，不额外替主目录签治理 verdict。
 
 ## 这一子目录放什么
@@ -31,7 +31,7 @@
 - `30-46` stronger-request settlement / cleanup 机制簇：先看续打、完成、终局、遗忘、免责释放、归档/审计/擦除，再看 retention、隔离、反漂移与修复。
 - `47-60` stronger-request migration 与 plugin/MCP re-entry 机制簇：先看迁移、退役、墓碑、复活、再赋权，再看 continuity、recovery、reintegration、reprojection 与 reassurance。
 - `61-75` stronger-request 续打、终局、retention 与制度元数据机制簇：先看 step-up、续打、终局/遗忘，再看 archive/audit、不可逆擦除、保留期执行诚实性、隔离、cleanup family constitution 与制度元数据。
-- `76-122` stronger-request 清理后半段与墓碑/re-entry 机制簇：先看迁移、退役、墓碑，再看复活、再赋权、重配置、重新激活、就绪、连续性、恢复、重新并入、重新投影、重新担保与用时重验证。
+- `76-130` stronger-request 清理后半段与墓碑/re-entry 机制簇：先看迁移、退役、墓碑，再看复活、再赋权、重配置、重新激活、就绪、连续性、恢复、重新并入、重新投影、重新担保、用时重验证，以及续打、完成、终局、遗忘与免责释放。
 
 1. [01-StructuredIO回执账本与签收边界](01-StructuredIO%E5%9B%9E%E6%89%A7%E8%B4%A6%E6%9C%AC%E4%B8%8E%E7%AD%BE%E6%94%B6%E8%BE%B9%E7%95%8C.md)
 2. [02-print与CCRClient的终局签字边界](02-print%E4%B8%8ECCRClient%E7%9A%84%E7%BB%88%E5%B1%80%E7%AD%BE%E5%AD%97%E8%BE%B9%E7%95%8C.md)
@@ -155,6 +155,14 @@
 120. [120-handleRemoteAuthFailure、reconnectMcpServerImpl与performMCPOAuthFlow的强请求清理恢复治理边界](120-handleRemoteAuthFailure、reconnectMcpServerImpl与performMCPOAuthFlow的强请求清理恢复治理边界.md)
 121. [121-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的强请求清理重新并入治理边界](121-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的强请求清理重新并入治理边界.md)
 122. [122-buildMcpServerStatuses、useMcpConnectivityStatus与MCPReconnect的强请求清理重新投影治理边界](122-buildMcpServerStatuses、useMcpConnectivityStatus与MCPReconnect的强请求清理重新投影治理边界.md)
+123. [123-McpAuthTool、MCPRemoteServerMenu与MCPReconnect的强请求清理重新担保治理边界](123-McpAuthTool、MCPRemoteServerMenu与MCPReconnect的强请求清理重新担保治理边界.md)
+124. [124-ensureConnectedClient、ReadMcpResourceTool与toolExecution的强请求清理用时重验证治理边界](124-ensureConnectedClient、ReadMcpResourceTool与toolExecution的强请求清理用时重验证治理边界.md)
+125. [125-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的强请求清理step-up重授权治理边界](125-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的强请求清理step-up重授权治理边界.md)
+126. [126-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界](126-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界.md)
+127. [127-callMCPToolWithUrlElicitationRetry、callMCPTool与tool_result映射的强请求清理完成治理边界](127-callMCPToolWithUrlElicitationRetry、callMCPTool与tool_result映射的强请求清理完成治理边界.md)
+128. [128-addToolResult、print与CCRClient的强请求清理终局治理边界](128-addToolResult、print与CCRClient的强请求清理终局治理边界.md)
+129. [129-StructuredIO与orphaned permission处理链的强请求清理遗忘治理边界](129-StructuredIO与orphaned permission处理链的强请求清理遗忘治理边界.md)
+130. [130-duplicate与orphan response分流中的强请求清理免责释放治理边界](130-duplicate与orphan response分流中的强请求清理免责释放治理边界.md)
 
 ## 和其他目录的分工
 
