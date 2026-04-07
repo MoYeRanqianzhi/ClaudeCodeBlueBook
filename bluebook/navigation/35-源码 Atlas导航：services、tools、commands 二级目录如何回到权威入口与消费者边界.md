@@ -28,6 +28,10 @@
 4. 问 speaking-rights、route dispute 或 atlas 是否越权成第二前门
    - 先回 `navigation/04`
 
+这里还要再多记一条硬规则：
+
+- atlas 只能做 projection 与 route，不能重写 canonical ladder，不能替 `guides/102` 改判 rung，也不能替 `navigation/04` 仲裁 speaking-rights；一旦这页开始代签这些判断，它就已经从 atlas projection page 长成第二前门。
+
 ## 1. Services 二级目录 Atlas
 
 这一条线最该先交四件事：

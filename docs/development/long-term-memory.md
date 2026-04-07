@@ -8,6 +8,26 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `public artifact ceiling` 现已继续稳定成源码质量前门的硬上限：
+  - 先承认 public artifact 只能签它能签的东西，再谈 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - 后续凡是 later maintainer 还没先过这层 ceiling，就直接开始夸“公开镜像很先进”，都应优先按证据上限降格
+- 公开证据现已继续拆成两类长期需要分写的 evidence class：
+  - `runtime-core evidence`
+  - `operator-governance evidence`
+  - `CLAUDE.md / slash commands / hooks / subagents / marketplace / README examples` 应长期优先归到第二类，不再当作附属材料看待
+- `README / navigation/35 / guides/102 / api/46-50` 的 route constitution 现已继续写死：
+  - `README` 只定题与最短顺序
+  - `navigation/35` 只做 atlas projection 与 route dispute
+  - `guides/102` 只定义 canonical rung、candidate 降格与 gap note 模板
+  - `api/46-50` 只承接 repo-specific atlas 正文、authority file、consumer subset 与 reject path
+  - atlas 越权改判 canonical ladder，应长期视为目录层第二前门
+- operator-governance artifact 现已继续写入设计内涵主线：
+  - `CLAUDE.md`
+  - slash commands
+  - hooks
+  - subagents
+  - plugin marketplace
+  - 后续这些对象不应再只被挂在 userbook 或扩展页里，而应继续被视为“正确操作者行为”的版本化治理工件
 - Prompt 母线现在应长期继续守住一个更硬的 production crosswalk：
   - `same-world compiler` 不能只剩 `compile`
   - 它还必须继续接上官方公开的 `verify results`

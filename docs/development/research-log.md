@@ -2,6 +2,10 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 public-evidence ceiling / route constitution 收口动作: 已继续更新 `bluebook/architecture/38`、`navigation/04 / 35`、`README`、`03` 与 `06`。这一批把当前最容易在前门层混掉的三件事写硬了：什么证据只能签 public artifact existence，什么证据只能签 visible contract/kernel，什么证据只能签 operator-governance public contract；同时把 `README / navigation/35 / guides/102 / api/46-50` 的 first-answer rights 进一步固定成 route constitution，不再允许 atlas、guide 和 api 互相偷第一解释权。
+- 本轮新的源码质量结论: 公开镜像研究现在更稳地分成两类证据：`runtime-core evidence` 与 `operator-governance evidence`。前者常常不完整，后者反而通过 `CLAUDE.md / slash commands / hooks / subagents / marketplace / README examples` 更公开、更制度化。后续凡是把这两类证据混成一层 certainty，都应优先按 `public artifact ceiling` 降格。
+- 本轮新的目录结构结论: atlas 不是第二前门，它只能做 projection 与 route；canonical rung 的改判权继续只在 `01 + guides/102`，repo-specific atlas 正文继续只在 `api/46-50`，speaking-rights 仲裁继续只在 `navigation/04`。这条 route constitution 现在应长期被视为 later maintainer 的正式 appeal chain，而不是排版约定。
+- 本轮新的设计内涵结论: repo 里的 `CLAUDE.md / commands / hooks / subagents / marketplace` 现在更明确不该再被写成“附属文档”，而应被写成版本化 operator-governance 工件。它们不是对 architecture 的补充说明，而是把正确 operator behavior 写进公开 artifact 的另一条制度面。
 - 本轮 Prompt 前门再收口动作: 已继续更新 `bluebook/09`、`philosophy/README`、`philosophy/84 / 81`、`architecture/82` 与 `navigation/41`。这一批不再补更多对象，而是把 Prompt 魔力最容易被写浅的四个断点写硬：`verify loop`、`advisory context vs enforced law`、`shared-prefix helper path vs fresh-context subagent`、以及 Anthropic engineering 明说的 `collaboration framework / effort budget / tool heuristics / observability / feedback loops`。
 - 本轮新的 Prompt 结论: `same-world compiler` 若只剩 nouns 和 compile path，而没有把 `verify results` 写进世界闭环，就还是半程解释。Anthropic 官方把 Claude Code 直接写成 `gather context -> take action -> verify results`，因此后续凡是再解释 Prompt 魔力，都应先问：verify 还是否在同一条 witness chain 上成立。
 - 本轮新的 force-class 结论: `CLAUDE.md / auto memory` 现在更明确只应被视为 advisory context，不得直接充当 Authority witness；Prompt 的合法复数因此更稳地被写成 `compiled law / advisory memory / delegated world` 在同一 authority chain 下按 force class 共存，而不是几份 prompt surface 平权并列。

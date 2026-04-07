@@ -153,6 +153,10 @@ Prompt 线还应再暴露三条 first reject signal：
 
 目录结构真正值钱的地方，不是入口更多，而是每层只承载一种证据职责：
 
+这里还应再多记一句 public-evidence ceiling：
+
+- 源码质量线先受 `public artifact ceiling` 约束，再谈 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`；later maintainer 若先忘了这层 ceiling，就会把公开 contract、operator-governance 工件与闭源 runtime-core 缺口混写成同一份 certainty。
+
 - `bluebook/00-09`
   宪法主线与总判断。
 - `philosophy/`
