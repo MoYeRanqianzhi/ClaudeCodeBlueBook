@@ -203,6 +203,7 @@
 - [199-2026-04-08-permission reevaluation surface split 拆分记忆.md](./199-2026-04-08-permission%20reevaluation%20surface%20split%20拆分记忆.md)
 - [200-2026-04-08-ingress topic projection split 拆分记忆.md](./200-2026-04-08-ingress%20topic%20projection%20split%20拆分记忆.md)
 - [201-2026-04-08-sandbox host sibling cleanup split 拆分记忆.md](./201-2026-04-08-sandbox%20host%20sibling%20cleanup%20split%20拆分记忆.md)
+- [202-2026-04-08-sandbox persist write surfaces split 拆分记忆.md](./202-2026-04-08-sandbox%20persist%20write%20surfaces%20split%20拆分记忆.md)
 
 用途：
 
