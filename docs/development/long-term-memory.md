@@ -8,6 +8,31 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 源码质量 frontdoor 的长期默认单首答现已继续写死：
+  - canonical ladder 默认仍只认 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability` 默认只配做 crosswalk / 解释层压缩句
+  - `bluebook/09`、`philosophy/README`、`guides/102` 后续若再让这两组并列抢首答权，默认按 frontdoor 双首答处理
+- 公开镜像研究的长期默认 step 0 现已继续写死：
+  - 先过 `public artifact ceiling`
+  - 再进 canonical ladder
+  - 若 sole writer、writeback seam 与 freshness gate 还没锁定，默认先写 `current-truth surface candidate`
+  - 不得把“可见”直接升级成“已被完整证明”
+- `userbook/05` 的长期默认 speaking-rights 现已继续升级：
+  - `05` 默认不只拆对象，还要继续显式区分 signer / projection / consumer
+  - `05` 默认最值钱的是 `first reject path`
+  - signer 没锁定时，默认先退 `09 / api / architecture`
+  - projection 说得再像，也只配触发怀疑，不配直接改判
+- 远端运行态页与 session 参数页的长期默认 signer 纪律现已继续写死：
+  - `worker_status / requires_action_details / pending_action / task_summary / post_turn_summary / session_state_changed` 默认都只配写成 projection
+  - `permission_mode / is_ultraplan_mode / model` 这类页默认讲的是镜像、回填与恢复链，不是最终 signer
+  - 后续凡是把这些页重新写成“当前真相本身”，默认按 projection 冒充 signer 处理
+- `docs/userbook-memory/06` 的长期默认 anti-regression 顺序现已继续写死：
+  - `public artifact ceiling -> availability -> isEnabled() -> feature() / build gate -> runtime mode / context -> remote policy / managed settings -> USER_TYPE === 'ant' -> DCE / shadow -> current-truth surface or candidate`
+  - 后续能力边界写作若缺 `ceiling / demotion / retreat / appeal`，默认按 memory 回流
+- 下一批主干继续深化的长期默认目标现已记下：
+  - 根 `userbook/README` 仍应继续减少长深链清单，把根前门真正收回二跳
+  - `userbook/03-参考索引/README` 与相关索引页仍应继续把“只触发怀疑、不签 truth”写硬
+  - 若并行 Agent 后续回收更多 reject path，可优先灌进 `userbook/05/README` 与 `docs/userbook-memory/06`
 - Prompt user-facing 主线页的长期默认补口现已继续写死：
   - `01-主线使用/02` 默认不只教 `compile inputs`，还必须继续教 `verify witnesses`
   - 默认四个 witness 先验：

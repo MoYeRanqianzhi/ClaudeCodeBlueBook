@@ -32,6 +32,7 @@
 进入控制面长文前，只先记一句：
 
 - 这里只翻译用户侧判断；证据上限、truth plane 与 rollback ceiling 统一回蓝皮书根前门与 `09`，不在 `05` 里重签一遍。
+- 这里只负责把 signer、projection、consumer 与 first reject path 翻成用户动作，不负责把 projection 重新抬回 signer。
 
 ## 先按控制面，不按相邻按钮
 
@@ -55,6 +56,15 @@
    - 若旧目录、旧恢复资产、旧 capability 或旧 authority 在冒充现在，就按当前真相失真处理。
 
 更细的 object chain、truth plane 与 verdict family 统一回蓝皮书根前门与 `09 / api`；`05` 只负责把它们翻译成用户侧判断。
+
+如果继续把这一层的 speaking rights 写得更硬，还应再固定三句：
+
+1. signer 没锁定时，先别判真相
+   - 先退回 `09 / api / architecture`
+2. projection 说得再像，也只触发怀疑
+   - 不直接改判
+3. user-facing 最值钱的是 first reject path
+   - 先知道该拒收什么、退到哪层、再看深页拆解
 
 ## 进入控制面前的 first reject signal
 

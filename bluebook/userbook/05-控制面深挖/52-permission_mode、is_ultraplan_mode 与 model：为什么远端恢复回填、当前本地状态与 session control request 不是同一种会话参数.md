@@ -48,6 +48,11 @@
 - 不重复 25 页对设置面、控制面与状态面的分工
 - 不重复 51 页对运行态投影面的 phase / pending_action / summary 分层
 
+还要再补一句 signer 纪律：
+
+- 这页讨论的是 session 参数的外化、回填与恢复链
+- 不是在宣布哪一层已经拥有最终 session truth 的单一签发权
+
 ## 第一层：`toolPermissionContext.mode` 是本地运行态，`permission_mode` 是外化后的远端镜像
 
 ### 本地 mode 不会原样直接写给远端
@@ -76,6 +81,13 @@
 
 - `toolPermissionContext.mode`：本地运行态
 - `permission_mode`：去除了 internal-only 噪音后的外化镜像
+
+如果把这页压成 first reject path，最该先拒收的是：
+
+1. 把镜像 metadata 误当本地运行态
+2. 把一次性 `is_ultraplan_mode` 误当长期 session mode
+3. 把“都能恢复”误写成“共享同一条 restore path”
+4. 把 control request 入口误写成 signer 本身
 
 只要这一层没拆开，正文就会把：
 

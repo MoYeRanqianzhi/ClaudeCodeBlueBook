@@ -1,4 +1,4 @@
-# 如何给公开镜像做源码质量证据分级：contract、registry、current-truth surface、consumer subset与mirror gap discipline
+# 如何给公开镜像做源码质量证据分级：public artifact ceiling、contract、registry、current-truth surface、consumer subset、hotspot kernel 与 mirror gap discipline
 
 这一章回答五个问题：
 
@@ -27,12 +27,13 @@
 
 如果只先记公开镜像的源码质量前门顺序，也只记这条：
 
-- `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+- `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
 这里还应先多记一句：
 
 - 文件名里的 `authoritative surface / adapter subset / hotspot gap discipline` 只保留为兼容检索别名，不再拥有首答权，也不是新的 canonical rung。
 - 本页只定义 canonical rung 与降格规则；repo-specific map projection 统一回 `01-源码结构地图`，源码二级目录 atlas 再经 `navigation/35 -> api/46-50` 路由，不在这里重写 atlas 正文。
+- 若 sole writer、writeback seam 与 freshness gate 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
 
 这条线最短的 reject trio 也只认：
 
@@ -42,20 +43,30 @@
 
 ## 1. 先说结论
 
+### Step 0. 先过 `public artifact ceiling`
+
+在公开镜像研究里，第一步不是直接进 rung 1，而是先承认：
+
+- public artifact 只能签它真正公开签出的东西
+- 看得见的 README、schema、registry、热点文件、投影视图与恢复资产，不自动拥有同一种签字权
+
+这一步不过，后面所有 rung 都会被写浅，因为你会先把“可见”误当成“已被完整证明”。
+
 更稳的公开镜像研究顺序，不是：
 
 - 先冲进 `query.ts`、`main.tsx` 这类热点文件，再从实现猜全貌
 
 而是：
 
-1. `contract truth`
-2. `registry truth`
-3. `current-truth surface truth`
-4. `consumer subset truth`
-5. `hotspot kernel truth`
-6. `mirror gap discipline`
+1. `public artifact ceiling`
+2. `contract truth`
+3. `registry truth`
+4. `current-truth surface truth`
+5. `consumer subset truth`
+6. `hotspot kernel truth`
+7. `mirror gap discipline`
 
-这六层必须严格分开。
+这七层必须严格分开。
 
 因为只有这样，你才不会把：
 
@@ -91,6 +102,8 @@
 - 能证明 `current-truth surface` 就直接写 `current-truth surface`
 - 还不能证明时，就降格写 `current-truth surface candidate`
 - 不要反过来把所有权威入口都写成已经被完整证明的 present truth
+
+这一页后面的所有降格规则都建立在这三句上，而不是建立在“我很熟源码”这种阅读体感上。
 
 ## 2. 第一级：先找 contract truth
 

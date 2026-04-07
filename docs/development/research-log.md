@@ -2,6 +2,11 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮源码质量 frontdoor 单首答收口动作: 已继续更新 `bluebook/09-三张控制面总图`、`bluebook/philosophy/README` 与 `bluebook/guides/102`。这一批把源码质量线 frontdoor 里残留的双首答正式拆开：`contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 继续保留 canonical ladder；`evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability` 则明确降为 crosswalk / 解释层压缩句，不再与 canonical ladder 并列抢首答权。
+- 本轮新的源码质量结论: `public artifact ceiling` 现在继续被提升成公开镜像研究的 step 0，而不只是前门口号。更稳的顺序现在是 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`；若 sole writer、writeback seam 与 freshness gate 还没锁定，就只配先写 `current-truth surface candidate`。
+- 本轮新的 userbook/05 结论: `05-控制面深挖` 这一层现在继续从“对象分层”推进到“主权分层”。README 现在更明确写死：这里只负责把 signer / projection / consumer / first reject path 翻成用户动作；`51` 现在明写远端运行态诸面都只是 projection；`52` 现在明写 session 参数页讨论的是镜像/回填/恢复链，而不是最终 signer。
+- 本轮新的 later-maintainer 结论: `docs/userbook-memory/06` 现在正式吸收了 `public artifact ceiling`、`current-truth surface candidate` 与 `later maintainer 局部可反对性` 这组新默认纪律。后续 userbook/memory 若再退回旧 `availability / isEnabled / feature` taxonomy 而不给 `ceiling -> demotion -> retreat / appeal`，默认按 memory 回流处理。
+- 本轮新的目录结构结论: 这批最值钱的优化不再是继续补 route，而是继续减少“第一次解释源码质量线”的入口数。`09`、`philosophy/README`、`guides/102` 现在更明确各自只负责宪法总图、第一性原理前门、公开镜像分级方法，不再相互偷 canonical first-answer。
 - 本轮 Prompt 去魅补口动作: 已继续更新 `userbook/01-主线使用/02` 与 `04`。这一批把 user-facing Prompt 线从“会 compile 输入”继续压到“还要 verify witnesses”：主线页现在显式要求先验 `目标 / 附件 / working set / next-step` 四个 witness，`/compact` 也被继续写死成“summary 只是 carrier，不是 signer”。后续凡是再把 Prompt 魔力写回 secret prose、长摘要或最后一条消息，默认按去魅失败处理。
 - 本轮 projection consumer 收口动作: 已继续更新 `userbook/01-主线使用/05`、`05-控制面深挖/03`、`06`、`10` 与 `03-参考索引/01-命令工具/05`。这批把 `/status / /doctor / /usage` 与 `compact / resume / memory / export` 统一收回“投影 / 连续性 consumer”，不再允许它们在 user-facing 页里代签 `continue verdict`、`current truth` 或 `world-entry`。
 - 本轮新的 user-facing 结论: `status / doctor / usage` 的真正价值不是“更快告诉你答案”，而是把 `host-state projection / trust evidence / budget window` 这三类不同对象拆开。它们能帮助你判 `继续 / 降级 / 停止 / 清理后恢复 / 升级给人`，但它们自己不是 verdict source。

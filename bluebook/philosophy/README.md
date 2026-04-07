@@ -11,12 +11,19 @@
    - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
    - `Narrow / Later / Outside` 只是用户侧助记，不是第二套治理故事
 3. 源码质量线
-   - `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability`
+   - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
    - `future maintainer = formal consumer`
+
+这里还要再补一条 crosswalk 纪律：
+
+- `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability` 只继续保留为解释层压缩句
+- 不再和源码质量线 canonical ladder 并列抢 frontdoor 首答权
+- 真正进入 later maintainer 排查前，还应先过 `public artifact ceiling`
 
 如果继续把源码质量线再压成 later maintainer 更容易直接复用的入口句，也只该再补一句：
 
 - 源码先进性不只是在保护 `one writable present`，还在保护 future maintainer 的 `局部可反对性` 与下一次重构的资本池。
+- 若 sole writer、writeback seam 与 freshness gate 还没锁定，就只配先写 `current-truth surface candidate`，再谈 present truth。
 
 更硬一点说，`future maintainer = formal consumer` 的最低门槛也应直接记成：
 
