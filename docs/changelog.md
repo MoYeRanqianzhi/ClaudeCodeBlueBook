@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/userbook/README.md`，把 userbook 根前门最后一条 Prompt owner route 残余收掉：Prompt 线的 owner 级 ABI 现在在高流量 userbook 页里统一只回 `philosophy/84`，不再保留 `84 -> 51` 型双 owner 路线
 - 继续更新 `bluebook/userbook/01-主线使用/02-提问、补上下文与让模型继续工作.md`、`bluebook/userbook/04-专题深潜/08-上下文接入、附件与提示编译专题.md`、`bluebook/userbook/05-控制面深挖/README.md` 与 `bluebook/userbook/05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md`，把 user-facing Prompt witness 从字段映射继续压回动作判断：这些高流量页现在统一只保留 `目标 / 附件 / working set / next step` 的用户动作语言，不再在 frontdoor 层重列 `*_ref`，也不再把 owner route 写成 `84 -> 51`
 - 继续更新 `README.md`、`bluebook/navigation/README.md` 与 `bluebook/userbook/00-导读.md`，把高流量 route-only 页继续压回最小入口句：根 `README` 现在更明确只分四类入口，不再二次宣讲目录法；`navigation/README` 现在删除 `发言权卡 / 时间轴争议 / 先判三件事` 这类 owner-law 摘要，改成更纯的 next-hop；`userbook/00` 现在也把 Prompt alias 从 `*_ref` 字段映射改回用户动作语言
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/07-运行时契约、知识层与生态边界.md`、`bluebook/userbook/00-导读.md`、`bluebook/guides/36-Prompt Host Implementation审读模板：编译真相、稳定字节、合法遗忘与交接闸门.md`、`bluebook/README.md` 与 `bluebook/philosophy/README.md`，把 Prompt owner singularity 与 source-quality ceiling 再压一层：`06/07` 现在继续删除 `84 / 51` 型双 owner 回指，非 owner 页统一只回 `philosophy/84`；`userbook/00` 现在也不再把 owner route 写成 `84 -> 51`；`36` 现在把模板核验语句改成“按 `84` canonical naming 填写的必填 refs”；`bluebook/README` 与 `philosophy/README` 则把 `guides/102` 的 evidence-class 门槛写得更前，不再让 why 页看起来能升级 evidence class

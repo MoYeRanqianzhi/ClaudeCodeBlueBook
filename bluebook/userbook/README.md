@@ -14,7 +14,7 @@
 
 这里也只先记三条边界：
 
-- Prompt 线只翻 user-facing witness；owner 级 ABI 统一回 `philosophy/84 -> guides/51`
+- Prompt 线只翻 user-facing witness；owner 级 ABI 统一回 `philosophy/84`
 - 治理线只翻 user-facing readback；治理速记与 why 统一回 `10 -> philosophy/85 -> philosophy/61`，机制与用户侧恢复分别回 `security / risk`
 - `continuity` 不是第四类使用主题；它只是同一工作对象在时间轴上的继续条件
 
