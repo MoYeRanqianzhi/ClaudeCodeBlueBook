@@ -6,12 +6,12 @@
 
 1. `public artifact ceiling`
    - 先分清公开镜像到底签到了什么 contract、哪些只是 operator-governance artifact、哪些还处在 runtime-core 缺口里。
-2. 源码真相梯度
+2. 源码真相顺序
    - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
 文件名里的 `authoritative surface / adapter subset / hotspot gap discipline` 只保留为兼容检索别名，不再拥有首答权。
 
-更细一点说，真正的源码真相梯度是：
+更细一点说，这页只认同一条源码质量 canonical ladder：
 
 1. `contract`
 2. `registry`
@@ -247,4 +247,4 @@ later maintainer 最该先学会的，不是“有哪些目录”，而是：
 
 ## 7. 一句话总结
 
-源码目录级能力地图真正值钱的，不是把 `commands / tools / services / 状态 / 宿主` 排成几列，而是持续把 later maintainer 拉回 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 这条源码真相梯度。
+源码目录级能力地图真正值钱的，不是把 `commands / tools / services / 状态 / 宿主` 排成几列，而是持续把 later maintainer 拉回 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 这条 canonical ladder。

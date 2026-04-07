@@ -177,4 +177,4 @@
 
 ## 11. 一句话总结
 
-`tools/` 二级目录地图真正统一的，不是“模型能调用哪些工具”，而是“哪些动作原语沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 被看见和被允许”。
+这页真正值钱的，不是把 `tools/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：哪些动作原语沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 被看见和被允许。

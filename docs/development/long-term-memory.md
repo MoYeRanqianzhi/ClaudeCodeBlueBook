@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/api/30`、`bluebook/api/README` 与 `bluebook/api/46-48` 的长期默认 api-canonical-ladder-hardening language 现已继续写死：
+  - `api/30` 默认继续把“源码真相梯度”收回 `源码真相顺序 / canonical ladder`
+  - `api/README` 默认继续把目录级地图入口句直接回绑 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - `api/46-48` 的总结句默认继续承认自己只是把 later maintainer 拉回同一条 canonical ladder，不再把“二级目录地图”写成另一条结论主语
 - `bluebook/navigation/05`、`bluebook/navigation/06` 与 `bluebook/navigation/08` 的长期默认 prompt-navigation-visible-label language 现已继续写死：
   - 高流量导航页默认继续用可见标题链接引向 `57 / 33`，不再直接打印 raw slug
   - `navigation/06` 的 prompt 入口默认继续写成 `prompt 效力不在措辞`，不再回退到 `prompt 魔力` framing

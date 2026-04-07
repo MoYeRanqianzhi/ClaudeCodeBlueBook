@@ -173,4 +173,4 @@
 
 ## 11. 一句话总结
 
-`commands/` 二级目录地图真正统一的，不是“有哪些 slash 命令”，而是“哪些显式控制动作沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 被公开承诺、被裁切或被拒收”。
+这页真正值钱的，不是把 `commands/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：哪些显式控制动作沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 被公开承诺、被裁切或被拒收。
