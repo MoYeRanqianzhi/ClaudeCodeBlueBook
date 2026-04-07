@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/api/README`、`guides/README`、`playbooks/README` 与 `casebooks/README` 的长期默认 evidence-layer README language 现已继续写死：
+  - `api` 默认不把 continuity 升成第四类 API 平面
+  - `guides` 默认不把 continuity 升成第四类模板域
+  - `playbooks` 默认不把 continuity 升成第四类执行手册家族
+  - `casebooks` 默认不把 continuity 升成第四类失败样本家族
+  - 这组 evidence-layer README 默认统一把 continuity 收回 Prompt `Continuation`、治理 `continuation pricing` 与当前真相收口在各自证据层上的时间轴消费者
+  - 目录证据层默认继续继承“先判母线与对象，再判 contract / template / verdict / sample”
 - `bluebook/userbook/00-阅读路径`、`02-能力地图/01-运行时主链/README`、`03-参考索引/01-命令工具/06-命令类型、执行语义与可见性索引.md`、`03-参考索引/05-任务到入口速查矩阵.md` 与 `03-参考索引/06-高价值入口运行时合同速查.md` 的长期默认 userbook residual time-axis language 现已继续写死：
   - `00-阅读路径` 默认不把连续性与记忆专题升成独立第五主线
   - 运行时主链 README 默认继续把 continuity 写成 `session truth -> continuation` 的恢复合同

@@ -10,6 +10,8 @@
 
 - `guides/` 不替正文宣布真相，它只把 later maintainer 的反对权压成问题梯子、模板与检查表。
 
+这里也要先压住一个常见误读：`continuity` 不是第四类 guide 模板域；它只是 Prompt `Continuation`、治理 `continuation pricing` 与当前真相收口在审读模板里的共同时间轴。
+
 ## 什么时候进来
 
 - 当你想先学会用 Claude Code，而不是先背对象链。
@@ -18,6 +20,8 @@
 - 当你需要在公开镜像条件下，把源码质量判断压成可执行方法而不是目录体感。
 - 当你已经接受 `09 / 05 / 15 / 41` 这组高阶主语，准备把它们压成真正能执行的 checklist 与 matrix。
 - 当你需要把“局部可反对性 / refactor capital / truth-plane discipline”翻成能执行的审读动作，而不想只停在价值判断。
+
+更稳一点说，`guides/` 也必须继承 shared first-answer order：先判是哪条母线失真、再判对象链、再判模板动作；如果顺序没先站住，模板页就会重新退回“看起来更会审”的第二前门。
 
 ## 如果你只先判断一件事
 

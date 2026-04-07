@@ -16,6 +16,8 @@
 3. `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
    - 宿主到底在消费哪一层 truth、哪一层热点、哪一层镜像缺口
 
+这里也要先压住一个常见误读：`continuity` 不是第四类 API 平面；它只是 Prompt `Continuation`、治理 `continuation pricing` 与源码质量 `recovery non-sovereignty / anti-zombie` 在 host-facing truth 上的共同时间轴。
+
 更硬一点说，`api/` 在目录里的发言权也只该剩三条：
 
 1. `承认权`
@@ -36,6 +38,8 @@
 代码里有，不等于 registry 承认；registry 承认，不等于 host-facing truth 已签发；truth 已签发，也不等于所有 consumer 都能合法消费。
 
 如果一页开始替 `philosophy/` 重判必要性，替 `architecture/` 重新发明对象链，或替 `playbooks/` 直接下 verdict，它就已经越权。
+
+更稳一点说，`api/` 也必须继承 shared first-answer order：先判是 Prompt witness、治理外化，还是 current-truth exposure，再决定去看 contract、registry、host-facing truth 还是 consumer subset；顺序没先站住时，API README 也会退回接口库存。
 
 如果一个 API 判断还压不回这三条，它就还停在接口库存层。
 

@@ -7,12 +7,16 @@
 
 - `casebooks/` 的职责不是替 later maintainer 下 verdict，而是保存最像成功、最容易骗过 later maintainer 的伪证样本。
 
+这里也要先压住一个常见误读：`continuity` 不是第四类失败样本家族；它只是 Prompt `Continuation`、治理 `continuation pricing` 与当前真相时间诚实性在失真样本里的共同时间轴。
+
 ## 什么时候进来
 
 - 当你已经知道正向对象链，但想看它最常怎样失真、伪装与篡位。
 - 当你需要 failure mode，而不是新的方法模板或执行手册。
 - 当你已经先知道对象链成立条件，准备判断“哪种伪证最像成功、最容易骗过 later maintainer”。
 - 当你需要保存“第二叙述者如何复活、truth plane 如何互相代写、UI 体感如何冒充 authority”这类失真，而不想把这些伪证重新写回正解正文。
+
+更稳一点说，`casebooks/` 也必须继承 shared first-answer order：先判哪条母线被伪造、再判哪个正式对象被替代、最后才保存样本；如果顺序倒过来，案例页就会重新退回“更吓人的故事库”。
 
 ## 如果失真已经被点名为
 

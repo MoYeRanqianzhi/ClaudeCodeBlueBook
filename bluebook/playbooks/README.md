@@ -7,12 +7,16 @@
 
 - `playbooks/` 的职责不是解释对象链，而是对已经被承认的对象链出 verdict。
 
+这里也要先压住一个常见误读：`continuity` 不是第四类执行手册家族；它只是 Prompt `continue qualification`、治理 `continuation pricing` 与当前真相 `cleanup-before-resume` 在执行顺序上的共同时间轴。
+
 ## 什么时候进来
 
 - 当你已经有正式对象定义，需要把它们写进接入、验收、修复或长期验证的执行顺序。
 - 当你需要的不再是“为什么这样设计”，而是“下一步该验什么、拒收什么、回退什么”。
 - 当你已经经过 `09 / 05 / 15 / 41` 的高阶前门，准备把对象链压成现场顺序、reject verdict 与 rollback 边界。
 - 当你需要把 later maintainer 的局部反对权转成正式拒收、回退与 reopen 顺序，而不再停在“看起来不对”的体感层。
+
+更稳一点说，`playbooks/` 也必须继承 shared first-answer order：先判母线与对象、再判 verdict、rollback 与 reopen；如果顺序倒过来，执行手册就会重新退回“按模板代替对象链”。
 
 ## 如果你只先判断一件事
 
