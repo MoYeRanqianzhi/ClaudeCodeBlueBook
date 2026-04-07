@@ -2,6 +2,8 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/08-能力全集、公开度与成熟度矩阵.md`、`bluebook/navigation/38-机制回灌导航：编译请求真相、治理控制面与可演化内核对象边界.md`、`bluebook/guides/50-如何把源码先进性落成可演化内核：权威入口、单一来源、anti-cycle seam与未来维护者消费者.md`、`bluebook/07-运行时契约、知识层与生态边界.md` 与 `bluebook/02-使用指南.md`，把下一批深层 residual 收成四条纪律：`06` 现在更明确只充当总控自校页，不再长成第二入口页；`08` 现在把能力矩阵首答收回 `current admission / product promise`，把八平面降为定位索引；`38 / 50` 现在把机制回灌顺序正式写成 `compiled request truth -> current-truth surface -> single-source / anti-cycle seam -> current-truth writeback -> future maintainer consumer`；`02 / 07` 则把高流量显示文案里的 `Prompt魔力 / 权威面` 收回 `Prompt效力 / current-truth surface`
+- 本轮根仓库起手同步再次被主仓自身冲突阻塞：`git checkout main` 报错 `bluebook/userbook/03-参考索引/README.md` 与 `bluebook/userbook/README.md` `needs merge`，`git merge --ff-only origin/main` 因 unmerged files 无法继续；因此本批次继续严格只在 `.worktrees/mainloop` 内推进与提交
 - 本轮根仓 `main / origin/main` 在同回合内持续并发变动，已先后观测到 `411377f6d16aaa838086190881b215aa77c0f2dc` 与 `f3614eb313ad8e4917d74da18d9a84761fe82ddd` 两组对齐状态；因此这些 SHA 只应被读成时间点记录，最终 live truth 以实时 `git rev-parse main origin/main` 为准
 - 最终复核确认：根仓 `main` 与 `origin/main` 当前同指 `411377f6d16aaa838086190881b215aa77c0f2dc`，`git status --short --branch` 显示 `## main...origin/main`，即本地与远端已重新对齐到包含 `Merge branch 'mainloop'` 的同一提交
 - 随后继续观察到根仓 `main` 在 `2026-04-07 23:45:49 +0800` 出现 reflog 记录 `411377f main@{2026-04-07 23:45:49 +0800}: merge mainloop: Merge made by the 'ort' strategy.`；当前根仓状态因此变为 `main...origin/main [ahead 3]`。这说明主分支已被推进到包含 `mainloop` 的合并提交；本轮我没有对根仓执行任何回退操作

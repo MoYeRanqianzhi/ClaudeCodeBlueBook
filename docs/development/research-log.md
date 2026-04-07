@@ -2,6 +2,12 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 socratic-matrix-backflow 深化动作: 已继续更新 `bluebook/06`、`08`、`navigation/38`、`guides/50`、`bluebook/07` 与 `bluebook/02`。新的结论是：当前更高价值的 residual，已经不在 canonical chain 缺失，而在总控页会不会回长第二入口、矩阵页会不会继续 taxonomy-first、机制回灌页会不会只停在概念总结、以及高流量桥接页会不会继续用旧 display nouns 泄露旧主语。
+- 本轮新的第一性原理结论: `06` 最稳的默认角色不是再发一套 Prompt / 治理 / 源码质量首答，而是只保留三条判断、最小拒错顺序、职责边界与苏格拉底自校问题。只要 `06` 开始代行 route law 或重复发放 canonical ladder，它就会重新长成第二入口页。
+- 本轮新的目录结构结论: `08` 现在更明确只能做 `judgment-first, taxonomy-second`。更稳的矩阵页必须先判 `current admission` 与 `product promise`，再回填 `existence / implementation visibility`，最后才用能力平面做对象定位。否则 later maintainer 仍会在矩阵页学回 taxonomy-first。
+- 本轮新的源码先进性结论: `navigation/38` 与 `guides/50` 现在共同写死一条更硬的机制回灌顺序：`compiled request truth -> current-truth surface -> single-source / anti-cycle seam -> current-truth writeback -> future maintainer consumer`。这说明源码先进性最值钱的迁移对象，不是“结构很好看”，而是请求对象、当前真相、写回规则与 later maintainer 反驳能力能否被写成同一条构建序。
+- 本轮新的高流量入口结论: `02 / 07` 这组 bridge 页现在更明确把 `Prompt魔力 / 权威面` 收回 `Prompt效力 / current-truth surface`。这说明高流量页的显示标签本身就是目录结构的一部分；如果 live 入口继续泄露旧 display nouns，正文即使已经收口，later maintainer 仍会在入口层学回旧主语。
+- 本轮根仓库同步检查结果: `fetch origin main` 成功，但 `checkout main` 与 `merge --ff-only origin/main` 被根仓 `userbook` 冲突再次阻塞；因此本轮继续严格只在 `.worktrees/mainloop` 内推进。
 - 本轮根仓库状态再补一条稳态约束: `main / origin/main` 在同一回合里继续并发推进，已观测到 `411377f6d16aaa838086190881b215aa77c0f2dc` 与 `f3614eb313ad8e4917d74da18d9a84761fe82ddd` 两次对齐；因此本轮日志里的 SHA 都只代表时间点快照，真正的当前状态必须以实时 `git rev-parse main origin/main` 为准。
 - 本轮根仓库最终最终态确认: 继续复核后，`git rev-parse main origin/main` 已都指向 `411377f6d16aaa838086190881b215aa77c0f2dc`，`git status --short --branch` 也恢复为 `## main...origin/main`。也就是说，本地与远端现在都已经对齐到包含 `Merge branch 'mainloop'` 的同一提交。
 - 本轮根仓库最终观测状态再次修正: 在补做同步成功之后，根仓 `main` 又于 `2026-04-07 23:45:49 +0800` 出现 reflog `merge mainloop`，当前可见状态为 `main...origin/main [ahead 3]`。我没有对根仓做回退；这里只记录事实：主分支现在已经包含 `mainloop` 的合并提交，需要由用户决定后续是否保留或单独清理。
