@@ -8,6 +8,8 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 03-prompt-template-normalization live 记忆：
+  - `03` 默认继续把 Prompt why 全部压成同一句法：`本节只保留一句 why -> 固定回 philosophy/84 -> 自校层再回 06`
 - 当前批次继续新增一条 03-prompt-why-template live 记忆：
   - `03` 默认继续不保留“本节不再补 Prompt 审计顺序”这类旧模板痕迹；更稳的高流量写法统一只剩：`本节只保留一句 why -> 固定回 philosophy/84 -> 自校层再回 06`
 - 当前批次继续新增一条 root-sync-blocked-snapshot live 记忆：
