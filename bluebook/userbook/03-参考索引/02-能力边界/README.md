@@ -153,3 +153,4 @@
 - [151-main.tsx、print.ts、loadInitialMessages、ResumeConversation 与 REPL.resume 索引.md](./151-main.tsx、print.ts、loadInitialMessages、ResumeConversation%20与%20REPL.resume%20索引.md)
 - [152-print.ts、parseSessionIdentifier、hydrateRemoteSession 与 loadConversationForResume 索引.md](./152-print.ts、parseSessionIdentifier、hydrateRemoteSession%20与%20loadConversationForResume%20索引.md)
 - [153-deserializeMessages、SessionEnd、SessionStart 与 interrupted-resume 索引.md](./153-deserializeMessages、SessionEnd、SessionStart%20与%20interrupted-resume%20索引.md)
+- [154-hydrateFromCCRv2InternalEvents、externalMetadataToAppState、hydrateRemoteSession 与 startup fallback 索引.md](./154-hydrateFromCCRv2InternalEvents、externalMetadataToAppState、hydrateRemoteSession%20与%20startup%20fallback%20索引.md)

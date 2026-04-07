@@ -166,6 +166,7 @@
 - [162-2026-04-08-resume host family split 拆分记忆.md](./162-2026-04-08-resume%20host%20family%20split%20拆分记忆.md)
 - [163-2026-04-08-print-resume pre-stage split 拆分记忆.md](./163-2026-04-08-print-resume%20pre-stage%20split%20拆分记忆.md)
 - [164-2026-04-08-resume runtime stage split 拆分记忆.md](./164-2026-04-08-resume%20runtime%20stage%20split%20拆分记忆.md)
+- [165-2026-04-08-print-remote recovery stage split 拆分记忆.md](./165-2026-04-08-print-remote%20recovery%20stage%20split%20拆分记忆.md)
 
 用途：
 
