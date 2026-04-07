@@ -29,16 +29,9 @@
 
 如果控制面页不能先回答这三件事，它就还是“控制面话题集合”，还不是用户真正可执行的判断层。
 
-进入控制面长文前，还应先记四条前置硬约束：
+进入控制面长文前，只先记一句：
 
-1. `public-evidence ceiling`
-   - 用户看见的 UI 面、命令面与状态面，只能签它们公开承诺过的 consumer truth，不能越级改判 runtime-core 缺口。
-2. `runtime-core vs operator-governance evidence`
-   - 前者签 contract、witness、writeback seam；后者签 `CLAUDE.md / hooks / settings / policy surface` 这类治理工件；两者都重要，但不能混写成同一 certainty。
-3. `truth-surface attestation`
-   - `protocol -> current -> event -> display` 是不同 truth plane；任何 status、usage、summary 都只能做投影。
-4. `rollback ceiling`
-   - rollback 只封住可恢复 contract surface，不等于 authority、conversation 或副作用世界整体可逆。
+- 这里只翻译用户侧判断；证据上限、truth plane 与 rollback ceiling 统一回蓝皮书根前门与 `09`，不在 `05` 里重签一遍。
 
 ## 先按控制面，不按相邻按钮
 
@@ -50,23 +43,18 @@
 
 如果还说不清，就先回 `09 / 15 / userbook/01-主线使用`，不要在这一层继续背更长的入口列表。
 
-## 三组最小顺序怎样进入控制面层
+## 先判哪条控制面失真
 
-这一层真正承接的，就是最近几轮已经稳定下来的三组最小顺序：
+这一层真正承接的，不是再抄一遍对象链，而是把它们翻译成三句用户问法：
 
-1. Prompt witness order
-   - `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
-2. governance failure order
-   - `pricing-right 失配 -> truth-surface 降格 -> asset-rollback ABI 收口 -> shared reject verdict -> reopen / human fallback`
-   - 旧的 `asset / rollback object -> reject -> degrade -> halt -> cleanup-before-resume -> human-fallback` 现在只配保留为对照说法；`05` 只负责翻译这组 verdict family，不负责替 `api/` 签发它们。
-3. current-truth reject order
-   - `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`
-4. consumer-truth ladder
-   - `protocol -> current -> event -> display`
-5. boundary lifecycle
-   - `continuation -> succession -> suspension -> retirement`
+1. 这还是同一件工作吗
+   - 若目标、附件、handoff 或 summary 已经不再服务同一工作对象，优先按 Prompt 失真处理。
+2. 这是治理裁决吗
+   - 若你现在卡在继续、收口、降级、停止、清理后恢复或升级给人之间，就按治理失真处理，不要先盯投影替身。
+3. 这是旧状态污染吗
+   - 若旧目录、旧恢复资产、旧 capability 或旧 authority 在冒充现在，就按当前真相失真处理。
 
-如果某篇控制面长文没有明确告诉你自己主要承接的是哪一组顺序，它就还停在“对象解释页”，还没有真正承担控制面入口职责。
+更细的 object chain、truth plane 与 verdict family 统一回蓝皮书根前门与 `09 / api`；`05` 只负责把它们翻译成用户侧判断。
 
 ## 进入控制面前的 first reject signal
 

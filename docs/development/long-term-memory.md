@@ -8,6 +8,29 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- userbook 四层问题分工的长期默认写法现已继续写死：
+  - 根 `userbook/README` 只答“我现在想做什么”
+  - `04-专题深潜/README` 只答“我在推进哪个工作对象”
+  - `05-控制面深挖/README` 只答“哪条控制面现在在说话”
+  - 各能力地图二级 README 至少补一段迷你前门，不再只给裸链接
+- user-facing 根前门的长期默认结构现已继续写死：
+  - 先给三类问题分型
+  - 再给二跳入口
+  - 不直接穿透到一长串 `04 / 05` 深页
+- `04` 与 `05` 的长期默认问句现已继续写死：
+  - `04` 默认先问 `这还是同一个工作对象吗 / 这是继续推进还是该先回 05 / 这能不能外推成系统真相`
+  - `05` 默认先问 `这还是同一件工作吗 / 这是治理裁决吗 / 这是旧状态污染吗`
+- userbook 前门的长期默认翻译规则现已继续写死：
+  - Prompt 默认先翻译成 `唯一工作对象 / world-defining winner -> message lineage -> continuation qualification`
+  - 治理默认先翻译成 `pricing-right -> truth-surface attestation -> typed ask / sandbox / writeback seam`
+  - 省 token 默认先翻译成 `stable bytes / working set / reload law`
+  - 后续 userbook 若再先翻译用户感受而不是对象链，默认视为体验词抢占本体
+- `userbook/02-能力地图/03-治理与边界/01-权限、沙箱、审批与安全边界` 这类权限前门的长期默认第一句现已继续写死：
+  - 核心不是“在什么模式下做”，而是“这次扩张有没有先拿到 pricing-right”
+  - approval 默认只配做 `typed ask` consumer，不再配做治理本体
+- `userbook/05-控制面深挖/README` 的 Prompt witness order 现已继续写死一条 user-facing 补语：
+  - 先解出唯一 `world-defining winner / 工作对象`
+  - 再进入 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
 - 源码质量线的长期默认 canonical ladder 现已继续写死成：
   - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
   - `evidence gradient / authority surface / temporal honesty / future maintainer rejectability`

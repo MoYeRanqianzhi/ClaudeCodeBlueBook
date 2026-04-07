@@ -2,6 +2,13 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 userbook 目录职责收口动作: 已继续更新 `userbook/README`、`04-专题深潜/README`、`05-控制面深挖/README` 与 `02-能力地图/03-治理与边界/README`。这批不再继续往 user-facing 入口里堆 doctrine，而是把四层问题重新分开：根 userbook 只答“我现在想做什么”，`04` 只答“我在推进哪个工作对象”，`05` 只答“哪条控制面现在在说话”，治理边界二级 README 只做迷你前门和下一跳。
+- 本轮新的 userbook 结构结论: user-facing 根前门若直接穿透到一大串 `04 / 05` 深页，就会让根入口兼做专题层与控制面层。更稳的默认做法是：根前门只给问题分型与二跳，深链默认留在各自层级的 README 里。
+- 本轮新的 04/05 分工结论: `04` 的最稳表述不是 verdict family，而是工作对象版三问；`05` 的最稳表述不是再抄 object chain，而是“这是同一件工作吗 / 这是治理裁决吗 / 这是旧状态污染吗”。后续一旦 `04` 又开始代答控制面 verdict，或 `05` 又开始重签证据上限，默认按层级越位处理。
+- 本轮新的能力地图结论: 二级 README 不能再是裸链接列表，尤其是治理与边界这类用户高频入口。哪怕只加三句迷你前门，也比让读者绕开新的 userbook contract 直接落入深页更稳。
+- 本轮 user-facing frontdoor 收口动作: 已继续更新 `userbook/README`、`userbook/05-控制面深挖/README` 与 `01-权限、沙箱、审批与安全边界`。这一批把 userbook 前门从“用户感受”继续压回 “对象链的用户侧翻译”：Prompt 现在更明确先解唯一工作对象，再看 lineage 与 continuation；治理现在更明确先问 `pricing-right` 与 `truth-surface attestation`，approval/modal/status 继续只配做 consumer/projection；省 token 现在更明确先回 stable bytes、working set 与 reload law。
+- 本轮新的 userbook 结论: user-facing 入口如果只告诉用户“Prompt 好不好、弹窗多不多、token 省不省”，就会在阅读顺序上重新把 UI 与体验词抬回本体层。更稳的 userbook 写法应默认先翻译 admitted object chain，再翻译用户动作，不再先翻译感受。
+- 本轮新的治理翻译结论: 权限页不该再把“模式”当第一主语。更稳的第一句应默认先问 `pricing-right` 是否成立，再分 visible set / typed ask / sandbox / rollback ceiling 四层合同；approval 只负责消费 typed ask，不负责单独宣布治理真相。
 - 本轮源码质量 frontdoor 单源化动作: 已继续更新 `03`、`06` 与 `api/30`。这一批把源码质量线的 first-answer 从多套高阶解释词收回同一条 canonical ladder：`contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`。后续 `evidence gradient / authority surface / temporal honesty / future maintainer rejectability` 与 `authority surface -> writeback split -> freshness gate -> later-maintainer rejectability` 默认都只配做解释层压缩句，不再在前门层和 canonical ladder 并列。
 - 本轮新的源码质量结论: later maintainer 的第一性顺序也被进一步写硬了。更稳的入口顺序应是：先判 `public artifact ceiling`，再判 `contract / registry / current-truth surface`；若 sole writer、writeback seam 与 freshness guard 还没锁定，就只配写 `current-truth surface candidate`，不能把 present truth 提前写实。
 - 本轮新的 API/frontdoor 结论: `api/30` 这种目录地图页若不把 `public artifact ceiling` 与旧别名降权规则写在第一页，就会继续把 `authoritative surface / adapter subset / hotspot gap discipline` 这组兼容检索词误读成 canonical rung。现在这条降权规则已前移，后续 API/frontdoor 默认都应复用。

@@ -8,26 +8,30 @@
 
 如果你只想先记住三条使用判断，也只先记这三条：
 
-1. 好 Prompt 不是更像专家，而是先过 `same-world test`：当前、下一步和 handoff 仍共享同一条 `message lineage`。
-2. `Context Usage` 不是成本面板，而是 `decision window` 的诚实投影；没有决策增益的检查也是免费扩张。
-3. 真正省 token 不是把话压短，而是 `Narrow / Later / Outside`：冻结 stable bytes，只把当前 working set 留在场内。
+1. 好 Prompt 不是更像专家，而是先解出唯一工作对象，再确认 `compile inputs` 和 `verify witnesses` 仍沿同一条 `message lineage -> continue_qualification_verdict` 继续成立。
+2. 安全不是弹窗多少，而是 `pricing-right -> truth-surface attestation -> typed ask / sandbox / writeback seam` 是否先成立；approval、modal、status 只配做 consumer / projection。
+3. 真正省 token 不是把话压短，而是 stable bytes 已被外置且可 reload，只把当前 working set 留在场内；`Narrow / Later / Outside` 只是这条 contract 的用户侧读法。
 
 这里还要再多记一句：
 
 - `userbook/` 不宣布新的系统真相，它只把已经承认的对象链、控制面和可见边界翻译成用户侧可操作判断。
+- `userbook/` 默认先签 user-visible consumer truth，不替 `README / 09 / api` 补签 runtime-core 缺口；先忘了这层 `public-evidence ceiling`，就会把 UI 面和状态词误当系统真相。
+- Prompt 也不是单段 `systemPrompt`，而是 multi-surface world-entry object；`CLAUDE.md / hooks / settings` 能影响行为，但不能替 runtime witness 签 continue。
 
-如果你还只想先记住三组最小排查顺序，也只先记这三组：
+如果你还只想先记住三类最小分型，也只先记这三类：
 
-1. Prompt
-   - 先看目标、附件/文件、当前 working set、下一步与 handoff 是否还指向同一个工作对象；不要先回 `systemPrompt` 截图、最后一条消息或 summary prose。
-2. 治理
-   - 先问这次该 `拒收 / 降级 / 停止 / 清理后恢复 / 升级给人` 的哪一格；不要先盯 mode、modal、usage 条、compact 或 default continue 这些投影替身。
-3. 当前真相
-   - 先看是不是旧 shim、旧恢复资产、旧 capability token 或旧 authority width 还在冒充当前世界；不要先看目录体感或作者说明。
+1. `上下文送错`
+   - 先看是不是已经换了工作对象，或附件/文件/working set/handoff 已不再服务同一件事。
+2. `扩张或权限判错`
+   - 先看这次扩张有没有先被准入、当前真相有没有先说清，再决定该继续、收口、降级还是升级给人。
+3. `旧状态污染`
+   - 先看是不是旧 shim、旧恢复资产、旧 capability token 或旧 authority width 还在冒充当前世界。
 
 ## 按目标进入
 
 如果你不是来“按目录从头读”，而是想先解决眼前问题，建议直接按目标进入：
+
+- 更稳的默认二跳是：先到 `04-专题深潜/README` 认工作对象，或先到 `05-控制面深挖/README` 判控制面，再决定要不要继续下钻到深页。
 
 - 快速上手：
   [00-导读.md](./00-%E5%AF%BC%E8%AF%BB.md) ->
