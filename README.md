@@ -5,6 +5,7 @@
 这里还应再多记一句：
 
 - 先定题，不先找页；治理速记与 first reject path 统一回 `bluebook/README`，根 README 不再重讲控制面主语。
+- 目录法与首答法的稳定 owner 统一回 `docs/development/00-研究方法.md` 与 `bluebook/README.md`；根 README 只分入口，不再代写目录治理。
 
 ## Evidence Mode
 
@@ -26,7 +27,7 @@
 
 ## 最短进入
 
-- 第一次进蓝皮书：`README -> bluebook/README -> bluebook/09 -> bluebook/03`
+- 第一次进蓝皮书：`README -> bluebook/README -> bluebook/09 -> owner page`
 - 想按用户目标进入：`bluebook/userbook/README`
 - 想跨目录反查：`bluebook/navigation/README`
 - 想追研究材料与长期记忆：`docs/README`
@@ -49,4 +50,5 @@
 - 根 README 只保留一级路由，不重复展开目录深链。
 - 深层分流交给各目录 `README` 和 `bluebook/navigation/README.md`。
 - 治理 / 权限 / Token 问题若还没先判对象链与最小顺序，先回 `bluebook/README`，不要在根 README 或 `navigation/` 里找首答。
+- `docs/development/00-研究方法.md` 负责目录法、发言权与入口升级规则；根 README 不再充当第二目录宪法。
 - `docs/` 记录过程与记忆，不回灌蓝皮书正文主语。

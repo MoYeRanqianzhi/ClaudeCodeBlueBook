@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 根 `README` 与 `docs/development/01-章节规划.md` 的长期默认 meta-law demotion language 现已继续写死：
+  - 根 `README` 默认继续只分四类入口，并把第一次进入蓝皮书固定成 `README -> bluebook/README -> bluebook/09 -> owner page`，不再越级送读者提前进入 `03`
+  - `docs/development/01-章节规划.md` 默认继续只记录章节循环、批次库存与候选收口，不再代写目录法、发言权或 public frontdoor 规则
+  - 目录法、发言权与入口升级规则的稳定 owner 继续只认 `docs/development/00-研究方法.md`
 - 当前 `.worktrees/mainloop` 的长期默认 evidence-mode 记忆现已继续写死：
   - 此 worktree 当前缺少本地 `claude-code-source-code/` 镜像；若无额外镜像落地，深度 Prompt / 治理 / 源码质量分析默认按 `public-evidence only` 处理，只能锚定 bluebook、userbook 与 `docs/development/02-证据索引.md`
   - 因此任何“源码直接证明”表述都必须先确认镜像存在；否则默认降级成 owner docs 的保守推论

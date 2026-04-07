@@ -2,6 +2,8 @@
 
 ## 2026-04-08
 
+- 继续更新根 `README.md` 与 `docs/development/01-章节规划.md`，把仓库层与规划层继续从“第二导航面”压回 route / inventory：根 `README` 现在把第一次进入蓝皮书改成 `README -> bluebook/README -> bluebook/09 -> owner page`，并明确目录法 owner 只回 `docs/development/00-研究方法.md` 与 `bluebook/README.md`；`章节规划` 现在新增“使用约定”，明确自己只记录章节循环、批次库存与候选收口，不再代写目录法、发言权或 public frontdoor 规则
+- 本轮源码质量/目录哲学 Agent 新结论已吸收入记忆：当前最贵的 residual 已经从理论缺口转成 meta-law duplication。更稳的默认修法继续是：`一个 public frontdoor owner + 一个 directory-law owner + 多个受约束 consumer`，而不是让根 README、章节规划、research-log 和自校页同时解释 first-answer governance
 - 继续更新 `bluebook/README.md`、`bluebook/philosophy/README.md` 与 `bluebook/navigation/README.md`，把高流量前门再压成更短的角色协议：根入口现在只保留三条首跳与“定题/定顺序/判是否跨目录”三件事；`philosophy/README` 现在只保留 why frontdoor 与单问入口；`navigation/README` 现在只保留两种合法停留场景、三类 route 缺口与申诉路径，不再在前门层反复重说长链
 - 本轮并行 Agent 新结论已吸收入记忆：Prompt 魔力更应稳定写成 `same-world compiler + witness chain + continuation qualification` 的单一 ABI，而不是文案效力；安全与省 token 更应稳定写成“同一治理秩序对 model-reachable world 重新定价”，而不是“安全功能 + 压缩功能”并列
 - 本轮新的目录优化判断已固化：当前最高价值动作继续不是新开页，而是 `route trim > role hardening > owner back-link`。若根入口、哲学前门或 navigation 再次同时重说最小顺序、route law 与 deep chain，就默认按第二前门候选处理

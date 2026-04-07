@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 meta-law 结论：目录法、发言权与入口升级规则的稳定 owner 继续只认 `docs/development/00-研究方法.md`；`research-log` 只记批次 lesson，不再充当第二份目录宪法或 route README。
 - 本轮 frontdoor-role-hardening 深化动作：已继续更新 `bluebook/README`、`bluebook/philosophy/README` 与 `bluebook/navigation/README`。新的结论是：当前目录优化的最高杠杆，不在新页，而在高流量前门是否还在重复“首跳 + why + route law + deep chain”。更稳的默认修法是：根入口只保留三条首跳与跨目录判定，`philosophy/README` 只保留 why frontdoor，`navigation/README` 只保留 route gap 与 appeal path。
 - 本轮新的目录结构结论：如果 `README / philosophy/README / navigation/README` 三层同时在讲最小顺序，later maintainer 学到的就不是“单源首答 + 二跳分流”，而是“三本总览互相转述”。因此当前更稳的结构目标继续是：`root 定题与首跳 -> philosophy 定 why -> navigation 定 next-hop`，谁多说一步，谁就更接近第二前门。
 - 本轮并行 Agent 新结论一：在当前 worktree 缺少 `claude-code-source-code` 镜像时，Prompt 魔力的最强稳定表述应继续写成 `same-world compiler + witness chain + continuation qualification` 的单一 ABI；frontdoor 和 userbook 都应消费这张 ABI，而不是各自重讲一套 Prompt 效力故事。
