@@ -171,6 +171,7 @@
 - [167-2026-04-08-CCR v2 metadata readback vs local consumption split 拆分记忆.md](./167-2026-04-08-CCR%20v2%20metadata%20readback%20vs%20local%20consumption%20split%20拆分记忆.md)
 - [168-2026-04-08-headless transport recovery thickness split 拆分记忆.md](./168-2026-04-08-headless%20transport%20recovery%20thickness%20split%20拆分记忆.md)
 - [169-2026-04-08-resume source split 拆分记忆.md](./169-2026-04-08-resume%20source%20split%20拆分记忆.md)
+- [170-2026-04-08-headless resume source certainty split 拆分记忆.md](./170-2026-04-08-headless%20resume%20source%20certainty%20split%20拆分记忆.md)
 
 用途：
 
