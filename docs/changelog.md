@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md` 与 `bluebook/architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`，把治理总图线里残留的 `projection / 计价面 / 清算面` bridge wording 继续收回 `runtime readback / 收费节点 / 收口节点 / 可见替身`，避免高流量总图和机制页继续把 user-facing 读面写成治理对象本体
 - 继续更新 `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`、`bluebook/api/47-tools 二级目录 Atlas：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md` 与 `bluebook/api/48-commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界.md`，把下游 API atlas 页的 H1 与总结句继续统一收回“二级目录地图 / 源码地图”，让它们与 `guides/102 / navigation/35` 的 locator 话语保持同调
 - 继续更新 `bluebook/guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md` 与 `bluebook/navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md`，把源码地图线最上游的 `atlas / rung / projection` 话语继续压回 `canonical ladder / 源码地图 / 定位与跳转`：`102` 现在更明确只负责 canonical ladder 与降格规则，`35` 现在更明确只做源码地图 route page，不再把 atlas 说成第二条前门
 - 继续更新 `bluebook/risk/README.md` 与 `bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md`，把治理恢复链里残留的 `用户侧结算面 / 结算权 / 外观` bridge wording 继续收回 `product promise / reopen qualification / evidence binding` 与 `projection / consumer`：`risk/README` 现在更明确自己只解释用户侧读法，不再自写成治理 speaking right；`85` 现在更明确把 approval、usage、cleanup result 与恢复流程都降回收费链上的 projection / consumer

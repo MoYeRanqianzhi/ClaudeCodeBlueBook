@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/09` 与 `bluebook/architecture/83` 的长期默认 governance-readback-demotion language 现已继续写死：
+  - 治理总图与机制页默认继续把 `projection / 计价面 / 清算面` 收回 `runtime readback / 收费节点 / 收口节点 / 可见替身`
+  - 这两页默认统一拒收 bridge wording 再次冒充 canonical chain 正式节点
 - `bluebook/api/46`、`bluebook/api/47` 与 `bluebook/api/48` 的长期默认 atlas-label-propagation language 现已继续写死：
   - 下游 API atlas 页默认继续把 `二级目录 Atlas / 这张 atlas / 二级目录 atlas` 收回 `二级目录地图 / 这张源码地图 / 二级目录地图`
   - 这三页默认统一跟随 `guides/102 / navigation/35` 的 locator 话语，不再自行保留 atlas 前门调门
