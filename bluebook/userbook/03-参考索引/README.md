@@ -168,6 +168,7 @@
 149. 为什么 `BridgeWorkerType`、`metadata.worker_type`、`BridgePointer.source` 与 `environment_id` 说明环境来源标签、prior-state 域与环境身份不是同一种 provenance。
 150. 为什么 `createBridgeSession.environment_id`、`source`、`session_context` 与 `permission_mode` 说明 session attach target、来源声明、上下文载荷与默认策略不是同一种会话归属。
 151. 为什么 `createBridgeSession.source`、`metadata.worker_type`、`BridgeWorkerType` 与 `claude_code_assistant` 说明 session origin declaration 与 environment origin label 不是同一种 remote provenance。
+152. 为什么 `session_context.sources`、`session_context.outcomes`、`session_context.model` 与 `getBranchFromSession` 说明 repo source、branch outcome 与 model stamp 不是同一种上下文主语。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

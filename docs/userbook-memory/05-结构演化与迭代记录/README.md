@@ -179,6 +179,7 @@
 - [175-2026-04-08-provenance label vs identity split 拆分记忆.md](./175-2026-04-08-provenance%20label%20vs%20identity%20split%20拆分记忆.md)
 - [176-2026-04-08-session create field authority split 拆分记忆.md](./176-2026-04-08-session%20create%20field%20authority%20split%20拆分记忆.md)
 - [177-2026-04-08-session source vs environment label split 拆分记忆.md](./177-2026-04-08-session%20source%20vs%20environment%20label%20split%20拆分记忆.md)
+- [178-2026-04-08-session context subject split 拆分记忆.md](./178-2026-04-08-session%20context%20subject%20split%20拆分记忆.md)
 
 用途：
 
