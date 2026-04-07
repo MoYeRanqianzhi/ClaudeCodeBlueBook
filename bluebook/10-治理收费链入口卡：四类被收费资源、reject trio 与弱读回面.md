@@ -53,21 +53,38 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
 
 ## 弱读回面声明
 
-真正配签字的，只是 `governance key / externalized truth chain / decision window / continuation pricing / durable-transient cleanup` 这组强面；下面这些对象都只配做 projection / readback / consumer。
+真正配签字的，只是 `governance key / externalized truth chain / decision window / continuation pricing / durable-transient cleanup` 这组强面；下面这些对象最多只配做弱读回或 continuation consumer。
 
 下面这些对象都不配代签治理真相：
 
 - `approval / modal / mode / permission projection`
 - `/status / /doctor / /usage`
-- `Compact / Resume / Memory`
-- `cleanup result`
 - 用户可见 transcript、summary、dashboard 与类似状态文案
+- `cleanup result`
+
+下面这些对象也不配代签治理真相，但它们连弱读回面都不是；它们只是 continuation consumer：
+
+- `Compact / Resume / Memory`
+- 各类 `resume / re-entry` 入口与 continuation workflow 提示
 
 更稳一点说：
 
 - 它们只能帮助你触发怀疑、做二跳、消费已外化 verdict。
 - 它们不能替 `governance key / externalized truth chain / decision window / continuation pricing` 说话。
-- 它们也不能把 cleanup 结果、product promise readback 或 continuation consumer 误写成 signer surface；这些都只是在同一治理尾链上读回剩余 liability。
+- 它们也不能把 cleanup 结果、continuation consumer 或用户侧 `product promise readback` 误写成 signer surface；cleanup 之后真正还能留下的，只是 residual liability 与 future-readable evidence。
+
+如果把这条非对称再压成最短 crosswalk，也只该剩四列：
+
+1. `strong signer surface`
+   - `governance key / externalized truth chain / decision window / continuation pricing / durable-transient cleanup`
+2. `weak readback surface`
+   - `approval / mode / usage / transcript / dashboard / cleanup result`
+3. `continuation consumer`
+   - `Compact / Resume / Memory / re-entry`
+4. `reopen tail evidence`
+   - 只保留 residual liability 与 future-readable evidence；用户侧 `product promise readback / reopen qualification / evidence binding` 统一回 `risk/README`
+
+更稳一点说，`cleanup result` 只有在背后仍能回到更强的 conformance / finality evidence 时，才配被读成安全的尾链读回；否则它也只是一条弱投影。
 
 ## 最短二跳
 

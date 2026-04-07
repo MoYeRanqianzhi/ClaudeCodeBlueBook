@@ -23,6 +23,10 @@
 
 - Claude Code 的安全与省 token 不只共享“预算器”这个抽象，更共享一套治理顺序、失败语义、自动化撤销和稳定字节资产的运行时制度。
 
+> Evidence mode
+> - 当前 `.worktrees/mainloop` 若缺少本地 `claude-code-source-code/` 镜像，本页这些源码路径在本批只应读成 archival anchors，而不是 live mirror proof。
+> - 当前证据模式、镜像是否在场与更强 claim 的前置条件，统一回 `docs/development/02-证据索引.md`。
+
 ## 1. 先说结论
 
 更成熟的安全/省 token 系统，不是：

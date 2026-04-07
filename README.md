@@ -2,10 +2,7 @@
 
 面向 `claude-code-source-code/` 的 Claude Code 蓝皮书工程。仓库现在只先分清四类入口：蓝皮书正文、面向使用者的 userbook、研究与记忆层、源码镜像；根 README 只负责把这四类入口分开，不再承担深层阅读路线。
 
-这里还应再多记一句：
-
-- 先定题，不先找页；治理速记与 first reject path 统一回 `bluebook/README`，根 README 不再重讲控制面主语。
-- 目录法与首答法的稳定 owner 统一回 `docs/development/00-研究方法.md` 与 `bluebook/README.md`；根 README 只分入口，不再代写目录治理。
+目录法与 frontdoor 顺序统一回 `docs/development/00-研究方法.md` 与 `bluebook/README.md`；根 README 只分入口，不再代写目录治理。
 
 ## Evidence Mode
 
@@ -48,7 +45,5 @@
 ## 写作纪律
 
 - 根 README 只保留一级路由，不重复展开目录深链。
-- 深层分流交给各目录 `README` 和 `bluebook/navigation/README.md`。
-- 治理 / 权限 / Token 问题若还没先判对象链与最小顺序，先回 `bluebook/README`，不要在根 README 或 `navigation/` 里找首答。
-- `docs/development/00-研究方法.md` 负责目录法、发言权与入口升级规则；根 README 不再充当第二目录宪法。
-- `docs/` 记录过程与记忆，不回灌蓝皮书正文主语。
+- 深层分流交给各目录 `README` 与 `bluebook/navigation/README.md`。
+- 若一个入口句开始回答“谁先答 / 谁能改判 / 最小顺序是什么”，默认应回 `bluebook/README` 或 `docs/development/00-研究方法.md`。
