@@ -55,7 +55,7 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
 
 ## 弱读回面声明
 
-真正配签字的，只是 `governance key / externalized truth chain / typed ask / decision window / continuation pricing / durable-transient cleanup` 这组强面；下面这些对象最多只配做弱读回或 continuation consumer。
+真正配签字的，只是 `governance key / externalized truth chain / typed ask / decision window / continuation pricing / durable-transient cleanup` 这组强面；下面这些对象最多只配做弱读回、continuation consumer、liability-threshold readback 或 reopen tail evidence。
 
 下面这些对象都不配代签治理真相：
 
@@ -87,8 +87,10 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
    - `approval / mode / usage / transcript / dashboard / cleanup result / product promise readback`
 3. `continuation consumer`
    - `Compact / Resume / Memory / re-entry`
-4. `reopen tail evidence`
-   - 只保留 residual liability 与 future-readable evidence；用户侧 `reopen qualification / evidence binding` 统一回 `risk/README`
+4. `liability-threshold readback`
+   - `reopen qualification`
+5. `reopen tail evidence`
+   - `evidence binding / future-readable evidence`
 
 更稳一点说，`cleanup result != cleanup stage verdict != future-readable finality receipt`：前者只是弱投影，第二层才是前门可见 verdict，第三层才是更强的 receipt/finality 证据。
 

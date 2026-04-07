@@ -95,7 +95,8 @@ Anthropic 官方文档把这条 force ladder 说得更硬了一层：
 能被忘掉的是叙事密度，不能被忘掉的是裁决依据。
 
 这也是为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到这种效力：他们抄到了说明文本，却没有抄到世界准入、投影分层与继续资格的制度体。真正稀缺的不是文风，而是不同 consumer 不必重新协商同一现场。
-更硬一点说，Prompt 的魔力不是“多给指导”，而是取消“当前世界”在多轮、多 consumer 与多次接手之间的重复协商成本；一旦任何路径需要重述现场，same-world magic 就已经失效。
+更硬一点说，Prompt 的魔力不是“多给指导”，而是取消“当前世界”在多轮、多 consumer 与多次接手之间的重复协商成本；same-world 的魔力也在于 verify、delegate、tool choice 与 feedback loop 共用同一条 witness 与 effort budget，而不是各自重开现场。一旦任何路径需要重述现场，same-world magic 就已经失效。
+只有世界定义权、消费边界与继续资格被同一条 witness 链持续见证，Prompt 才能免于重复协商；下面三行只是这条 judgment 的对象化压缩，不是另一条 first answer。
 
 如果把这章继续压成最短公式，只剩三行：
 

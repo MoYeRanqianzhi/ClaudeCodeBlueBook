@@ -77,10 +77,10 @@ Prompt 失真在这一层也只该继续消费同一张 user-facing witness pack
 如果继续把这一层压成用户动作，也只先记三句：
 
 1. 说不清哪层在说真话时，先退回 `../../10 -> ../../philosophy/85 -> ../../philosophy/61 -> ../../security` 判 owner / verdict seam；若已经确认自己只在读用户侧恢复或尾链证据，再分别去 `../../risk` / `../../playbooks`，不要直接在 readback surface 上猜 verdict
-2. `/status / /doctor / /usage / product promise readback` 这些都只是 weak readback surface；`/compact / /resume / /memory` 这些都只是 continuation consumer；`cleanup result / handoff promise / reopen qualification / evidence binding` 这些都只是 reopen tail evidence，它们都不直接下结论
+2. `/status / /doctor / /usage / product promise readback / cleanup result / handoff promise` 这些都只是 weak readback surface；`/compact / /resume / /memory` 这些都只是 continuation consumer；`reopen qualification` 是 liability-threshold readback；`evidence binding` 才是 reopen tail evidence，它们都不直接下结论
 3. user-facing 最值钱的是 first reject path：先知道该拒收什么、退到哪层、再看深页拆解
 
-更硬一点说，`/status / /doctor / /usage / product promise readback` 这些都只是 weak readback surface；`/compact / /resume / /memory` 这些都只是 continuation consumer；`cleanup result / handoff promise / reopen qualification / evidence binding` 这些都只保留 liability / evidence，不代签治理 verdict。谁拿它们直接代签 same-world、治理真相或继续资格，谁就在把 consumer 写成 compiler。
+更硬一点说，`/status / /doctor / /usage / product promise readback / cleanup result / handoff promise` 这些都只是 weak readback surface；`/compact / /resume / /memory` 这些都只是 continuation consumer；`reopen qualification` 只读 residual liability 是否足以重开；`evidence binding` 才是 reopen tail evidence。谁拿它们直接代签 same-world、治理真相或继续资格，谁就在把 consumer 写成 compiler。
 续租也只延长仍合法的同一 lease；`resume / heartbeat / keep_alive / token refresh` 都不能替代 `re-entry / reopen / rebinding`。
 
 如果还想要一张最小正向 crosswalk，也只记三行：

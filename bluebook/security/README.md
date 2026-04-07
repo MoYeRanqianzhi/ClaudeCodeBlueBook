@@ -44,7 +44,7 @@
 如果继续把这条机制链再压成跨宿主都能对照的三段顺序，也只该再补一句：
 
 - 先判 `pricing-right / truth-surface`
-- 再判 `typed ask / sandbox`
+- 再判 `typed ask`；`sandbox` 只作为 ask verdict 的执行约束与消费面
 - 最后才判 `decision window / continuation pricing / durable-transient cleanup`
 
 如果继续把 `security/` 的目录发言权也压成最短公式，也只该剩三句：
