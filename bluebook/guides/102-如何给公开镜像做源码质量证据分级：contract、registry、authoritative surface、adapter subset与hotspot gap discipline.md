@@ -32,7 +32,7 @@
 这里还应先多记一句：
 
 - 文件名里的 `authoritative surface / adapter subset / hotspot gap discipline` 只保留为兼容检索别名，不再拥有首答权，也不是新的 canonical rung。
-- 本页只定义 canonical rung 与降格规则；repo-specific map projection 统一回 `01-源码结构地图`，源码二级目录 atlas 再经 `navigation/35 -> api/46-50` 路由，不在这里重写 atlas 正文。
+- 本页只定义 canonical rung 与降格规则；repo-specific map projection、atlas 宿主选择与跨目录路由不在这里宣布。
 - 若 sole writer、writeback seam 与 freshness gate 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
 
 这条线最短的 reject trio 也只认：
@@ -325,36 +325,24 @@ gap discipline 的价值不是“保守一点”，而是：
 
 - 形成一套可迁移的研究协议，去稳当地审任何公开镜像
 
-## 10. 危险改动面 Atlas 模板
+## 10. 危险改动面记录模板
 
 当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一张可交接的 atlas。
 
-但 `guides/` 在这里负责的是：
+但 `guides/` 在这里负责的是记录模板与 gap note 写法，不负责规定 atlas 正文应宿主在哪一层，也不负责替任何目录填满具体危险面。
 
-- atlas skeleton
-- gap note
-- handoff rule
+更稳的记录模板至少应包含下面几列：
 
-而不是直接承接 repo-specific atlas 正文。
-
-更稳的 atlas 模板至少应包含下面几列：
-
-| danger surface | protected invariant | minimum visible evidence | common misread | replay obligation | second-truth risk |
+| change-risk surface | protected invariant | minimum visible evidence | common misread | replay obligation | second-truth risk |
 |---|---|---|---|---|---|
 | `<surface>` | `<what it protects>` | `<authoritative proof>` | `<usual wrong reading>` | `<what must be replayed before changing>` | `<which stale world returns if broken>` |
 
-更稳的 handoff rule 是：
-
-1. atlas 正文默认落到最接近真相暴露面的目录。
-2. 对源码二级目录 atlas，默认正文宿主是 `api/46-50`，由 [../navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md](../navigation/35-%E6%BA%90%E7%A0%81%20Atlas%E5%AF%BC%E8%88%AA%EF%BC%9Aservices%E3%80%81tools%E3%80%81commands%20%E4%BA%8C%E7%BA%A7%E7%9B%AE%E5%BD%95%E5%A6%82%E4%BD%95%E5%9B%9E%E5%88%B0%E6%9D%83%E5%A8%81%E5%85%A5%E5%8F%A3%E4%B8%8E%E6%B6%88%E8%B4%B9%E8%80%85%E8%BE%B9%E7%95%8C.md) 路由。
-3. `guides/102` 只负责交出 atlas 的列定义、gap note 写法与交接规则，不直接替 `api/46-50` 填满具体危险面。
-
 更短地说，这页真正要强迫 later maintainer 先回答的是：
 
-1. 这张 atlas 该长什么样。
+1. 这份 change-risk record 该长什么样。
 2. 哪些 gap 必须显式保留。
-3. atlas 正文应该交给哪一层。
-4. atlas 进入执行层时，哪一页只消费 `atlas_ref`，不反向承担 atlas 生产职责。
+3. 哪些 replay obligation 必须先完成。
+4. 哪些 second-truth risk 必须先点名。
 
 ## 11. 苏格拉底式检查清单
 

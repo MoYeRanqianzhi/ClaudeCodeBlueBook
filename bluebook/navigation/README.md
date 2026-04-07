@@ -11,19 +11,8 @@
 
 若你还在问 mode、usage、approval 或 cleanup result 谁说了算，说明缺的不是 next-hop，而是治理首答；先回 `../README.md` 与 `09`。
 
-如果继续把源码质量线再压成 later maintainer 可立即执行的一句判断，也只该再补一条 `truth-plane order`：
-
-- `display truth` 只负责触发怀疑
-- `current truth` 只负责给出 present verdict
-- `event truth` 只负责补证
-
-冲突复核顺序固定为 `display -> current -> event`；若顺序颠倒，later maintainer 看到的就不再是 current truth，而是第二叙述者。
-
-跨目录入口还应固定一条 `public-evidence ceiling`：
-
-- `runtime-core evidence` 决定运行时 contract、witness 与 current-truth choke point。
-- `operator-governance evidence` 只说明 `CLAUDE.md / hooks / slash commands / marketplace / settings` 这类治理工件。
-- 两者可以互证，不可互相越权改判；`navigation/` 若把它们写成同一 certainty，自身就会退化成伪 authority。
+源码质量 / 公开镜像问题若还在争 `truth-plane order`、`public-evidence ceiling` 或 `current-truth surface candidate`，说明缺的不是 next-hop，而是方法前门；先回 `09` 与 `guides/102`。
+若你已经确认公开证据 ceiling 成立，只剩 `sole writer / recovery asset / anti-zombie` 这类 present-truth 争议，再转 `guides/101`。
 
 治理线在 route 层也要先拒收一组投影篡位：
 
@@ -34,11 +23,13 @@
 如果 `navigation/` 开始替目录改判 speaking rights，它也就不再是在路由，而是在制造第二套入口主语；later maintainer 的局部可反对性会先被 route words 吃掉。
 如果一个 route 句子开始把 `security vs token`、`continuity / memory / resume / handoff` 写成并列主题，而不是写成同一条治理或时间轴问题，它也已经在长出 `route-law inflation`。
 
-这里还应再固定一条 continuity crosswalk：
+跨目录反查 continuity 时，这里也只做三跳路由：
 
-- `continuity` 不是第四条母线；它是 Prompt `Continuation`、治理 `continuation pricing` 与源码质量 `recovery non-sovereignty / anti-zombie` 在时间维度上的共同路线。
-- 所以跨目录反查 continuity 时，先问缺的是 `continue qualification`、`continuation pricing`，还是 `stale-writer eviction / recovery asset non-sovereignty`，而不是先按 `/compact / /resume / /memory` 这些命令名分流。
-- continuity consumer 只配帮助继续，不配重签 present verdict；一旦 route 层开始把 summary、pointer、event replay 或 display transcript 写成 signer，先退回 `09`。
+- 缺 `continue qualification`，回 Prompt 线
+- 缺 `continuation pricing`，回治理线
+- 缺 `stale-writer eviction / recovery asset non-sovereignty`，回源码质量线
+
+若你还在争 summary、pointer、event replay 或 display transcript 谁说了算，先退回 `09`，不要让 route 句子代替 frontdoor。
 
 ## 先判三件事
 
@@ -96,7 +87,9 @@
 - 扩张定价线
   `09 -> architecture/83 -> philosophy/19 / philosophy/22 -> guides/100 -> playbooks/78 -> casebooks/74`；核心治理线是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
 - 当前真相线
-  `09 -> architecture/84 -> philosophy/86 / philosophy/87 -> guides/101 / guides/102 -> philosophy/76 -> api/30 / api/39 / api/42 -> api/83 / api/92 -> playbooks/79 -> casebooks/75`
+  `09 -> architecture/84 -> philosophy/86 / philosophy/87 -> guides/101 / guides/102 -> api/30 / api/39 / api/42 -> api/83 / api/92 -> playbooks/79 -> casebooks/75`
+
+若你缺的只是 atlas / projection crosswalk，再另转 `philosophy/76` 或 `navigation/35`；不要把它们写回源码质量 canonical chain。
 
 如果问题已经进入运行手册层，不要在这里重新拼全链；直接去对应的 `playbooks/README.md`、`guides/README.md` 或 `security/README.md`。
 
