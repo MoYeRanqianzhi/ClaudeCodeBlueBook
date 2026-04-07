@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 entry-governance-ui-demotion 深化动作: 已继续更新 `bluebook/README.md` 与 `bluebook/userbook/README.md`。新的结论是：治理线即使在专题页里已经收回 canonical chain，总入口仍可能通过 approval、status、usage、compact、export、cleanup result 这组 UI noun 把 later maintainer 带回界面记忆。
+- 本轮新的总入口结论: 更稳的入口 wording 必须先教 later maintainer 记住 `pricing-right -> truth-surface -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 的排查顺序，再把任何界面、状态、压缩或导出入口降格成读取 verdict 的二跳消费者。
 - 本轮 source-quality-aura-demotion 深化动作: 已继续更新 `bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`、`bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `bluebook/philosophy/README.md`。新的结论是：源码质量线哪怕已经不再直接说“先进性”，later maintainer 仍可能被“成熟度 / 源码质量很高 / 结构先进性”这组 aura wording 拉回评奖式判断。
 - 本轮新的源码质量对象结论: 更稳的 source-quality wording 必须先问 present protection、boundary provability、writeback seam、first reject path 与 refactor room 是否成立，再谈是否值得复用。也就是先给对象判断，不先给成熟度评价。
 - 本轮 governance-ui-noun-demotion 深化动作: 已继续更新 `bluebook/security/README.md`、`bluebook/architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`、`bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md` 与 `bluebook/risk/README.md`。新的结论是：治理线哪怕已经从 bucket wording 收回 canonical chain，later maintainer 仍会被 status、usage、approval、rollback、cleanup result 这组 UI noun / result wording 拉回投影层。

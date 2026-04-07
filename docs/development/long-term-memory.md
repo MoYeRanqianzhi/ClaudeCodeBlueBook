@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README` 与 `bluebook/userbook/README` 的长期默认 entry-governance-ui-demotion language 现已继续写死：
+  - 总入口默认继续先说治理顺序与节点判断，不先枚举 approval、status、usage、compact、export、cleanup result 这组界面名词
+  - `bluebook/README` 默认继续把治理 failure order 写成 `pricing-right / truth-surface / cleanup authority` 这组节点失效，不再让 UI noun 或 ABI noun 抢入口记忆
+  - `userbook/README` 默认继续把治理界面、状态读数、压缩入口、导出入口与收口结果词写成“只读 verdict”的二跳 consumer，不再把这些词写成控制面判断本体
 - `bluebook/philosophy/86`、`bluebook/philosophy/87` 与 `bluebook/philosophy/README` 的长期默认 source-quality-aura-demotion language 现已继续写死：
   - 源码质量线默认继续先说 present protection、boundary provability、writeback seam、first reject path 与 refactor room，不先说“先进 / 成熟 / 很高 / 值得复制”
   - `philosophy/86` 默认继续把苏格拉底追问写成“过去不得写坏现在是否被写成制度对象”，不再把“结构先进性”当被判对象

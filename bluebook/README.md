@@ -56,7 +56,7 @@
 
 如果只先记治理前门的一句话，也只记这句：
 
-- 治理不是更会拦截，而是先由 governance key 外化当前真相，再给动作、可见性、上下文与 continuation 的一切扩张定价；安全、省 Token 与恢复都只是这条收费链的外观。
+- 治理不是更会拦截，而是先固定 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，再让安全、省 Token 与恢复只读这条收费链在不同资产上的外观。
 
 如果继续把入口压成 later maintainer 能直接拿来排查的最小顺序，它还应再暴露三行：
 
@@ -64,8 +64,8 @@
    - `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
    - 这六项先给 later maintainer 的 `first-reject path`；`Authority` 先要求 `world-definition source` 唯一成立，`Explainability` 只负责 diagnostic naming，不负责改判。Prompt 线的 canonical source 仍是 `philosophy/84`；真正的 same-world witness 仍回 `09 / guides/51` 的 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`。
 2. governance failure order
-   - `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
-   - 治理先判 `pricing-right signer / lease` 是否成立，再看 `truth-surface attestation` 如何把 `reject / reopen` 外化；`asset-rollback ABI` 只负责把收口动作变成可恢复 contract，不再冒充治理起点。
+   - `pricing-right mismatch -> truth-surface demotion -> cleanup-authority breach -> shared reject verdict -> reopen qualification`
+   - 治理先判 `pricing-right` 是否成立，再看 `truth-surface` 如何把 `reject / reopen` 外化；cleanup 只负责 authority 清退与 durable asset 留存，不再冒充治理起点。
 3. current-truth reject order
    - `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`
 
@@ -90,8 +90,8 @@
 - Prompt
   先按 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 排；这是入口层的 `first-reject path`，不是对象级 witness chain，不先看 `systemPrompt` 截图、最后一条消息、summary prose 或 handoff card。
 - 治理
-  先按 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback` 排，不先看 mode、modal、usage 这些投影替身，也不先看 compact、default continue 这些继续侧快捷替身。
-  更第一性的追问是：这次扩张有没有先拿到 `pricing-right`，`truth-surface` 有没有先说清 reject / reopen，`asset-rollback ABI` 有没有只做收口而没有篡位成治理主语。
+  先按 `pricing-right mismatch -> truth-surface demotion -> cleanup-authority breach -> shared reject verdict -> reopen qualification` 排，不先看任何界面投影、状态百分比或继续快捷入口。
+  更第一性的追问是：这次扩张有没有先拿到 `pricing-right`，`truth-surface` 有没有先说清 reject / reopen，cleanup 有没有只做 authority 清退而没有篡位成治理主语。
 - 当前真相
   先按 `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion` 排，不先看目录体感、作者说明或“看起来还算能跑”的经验判断。
 
@@ -118,9 +118,9 @@ Prompt 线还应再暴露三条 first reject signal：
 治理线还应再暴露三条 first reject signal：
 
 - `decision-window collapse`
-  `Context Usage` 被直接读成成本面板，而不是 `decision window`。
+  任何预算面板或状态读数开始冒充 `decision window`。
 - `projection usurpation`
-  mode 条、token UI、cleanup 结果词或事件回放开始冒充 `authority / status / verdict`。
+  任何界面投影、结果词或事件回放开始冒充 `authority / status / verdict`。
 - `free-expansion relapse`
   全量可见、重结果仍占主 prompt、默认 continuation 或无决策增益的检查重新免费复活。
 
