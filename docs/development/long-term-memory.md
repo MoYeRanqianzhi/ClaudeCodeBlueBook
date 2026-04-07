@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06` 的长期默认 prompt-magic-witness-chain language 现已继续写死：
+  - Prompt “为什么有魔力”的默认首答继续固定为 `same-world compiler = Authority -> Boundary -> Transcript -> Lineage -> Continuation`，不再拆成多组相近的结果词去魅标题
+  - `06` 默认继续把 `2.10`、`6.32 / 6.45 / 6.54 / 6.57` 与 `7.4` 共同回绑同一条 witness chain，而不是让各节各自发明 Prompt 强度解释
+  - `Explainability` 默认继续只负责命名失稳，不负责补写世界或替代 `continue / reject` 判决
 - `bluebook/philosophy/87` 与 `bluebook/userbook/04` 的长期默认 directory-not-owner language 现已继续写死：
   - 目录结构、专题分工与首页设计默认继续只做承载纪律，不再充当源码质量判断对象
   - `philosophy/87` 默认继续把文档分工写成“同一判断只允许由同一证据层首答”，不再把目录结构本身写成高阶质量论题
