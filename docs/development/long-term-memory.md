@@ -8,6 +8,31 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 官方 docs / engineering 现已被继续写成和公开源码镜像并列的长期证据面：
+  - 源码负责给 mechanism kernel
+  - 官方 docs 负责给 externalized contract
+  - engineering 文章负责给 operational guardrail
+  - 后续凡是研究 Claude Code，如果只盯其中一面，都应先按 `mirror-gap triangulation` 自我降格
+- `Narrow / Later / Outside` 现已继续稳定成一条有官方外证的治理合同：
+  - sandbox 处理 filesystem / network isolation
+  - approval 处理动作签发
+  - separate context window 处理高风险 payload 隔离
+  - auto mode 的 fast probe + reasoning fallback 处理低价筛查与高价复核
+  - `84%` permission-prompt reduction 应长期被读成“主权边界前置后的自治结果”，而不是“更少提示框”的 UX 指标
+- `语义压缩` 现已继续稳定成 load-fate contract，而不只是 conversation compaction：
+  - `startup full-load`
+  - `name-only / description-only preload`
+  - `on-demand expansion`
+  - `summary return`
+  - 后续凡是再写 prompt magic，如果没有把 startup context composition、subagent separate context 与 `/compact` reload law 算进去，应按“只写了 turn 后压缩”拒收
+- `Prompt Constitution` 的公共表面现已继续写死成两部法律：
+  - `load law`
+  - `admissibility law`
+  - 后续不要再把 Prompt 本体偷偷退回“secret text”；更稳的分析永远先问什么在 startup 进入、什么在 probe 后才 admissible、什么在 compact 后按 reload law 重放
+- rollback ceiling 现已继续稳定：
+  - `rewind files != rewind authority != rewind conversation`
+  - file checkpointing 只覆盖 `Write / Edit / NotebookEdit`
+  - Bash side-effects、authority state 与 conversation 本身都不在同一 rollback 合同里
 - 治理线的执行层 crosswalk 现已继续写死：
   - `governance key` 的执行层名字应长期优先读成 `pricing-right signer / pricing-right lease`
   - `externalized truth chain` 的消费层名字应长期优先读成 `truth-surface attestation`

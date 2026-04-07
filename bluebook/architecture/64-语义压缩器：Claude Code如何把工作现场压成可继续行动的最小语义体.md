@@ -191,6 +191,52 @@ Claude Code 的 prompt 之所以看起来有魔力，是因为它每一轮都在
 
 这比“文案更强”更接近本体。
 
-## 8. 一句话总结
+## 8. 官方上下文文档证明：语义压缩首先是 load contract，不只是 turn 后压缩
+
+如果只看源码，本章已经能说明 Claude Code 在压“可继续行动的最小语义体”。
+
+但官方 `Explore the context window` 与 `Manage costs effectively` 两页又把这条线往前钉死了一层：
+
+1. 在你还没输入任何内容前，启动上下文就会先装：
+   - `CLAUDE.md`
+   - auto memory
+   - MCP tool names
+   - skill descriptions
+2. subagent 拥有自己的 separate context window：
+   - 大文件读取和冗长研究不直接污染主线程；
+   - 回来的只是 summary 和少量 metadata trailer。
+3. `/compact` 并不是把一切都清空后重来：
+   - conversation 会被 structured summary 替换；
+   - 多数 startup content 会自动 reload；
+   - skill listing 是被明确点名的例外。
+4. `costs` 文档明确把：
+   - prompt caching
+   - auto-compaction
+   - deferred MCP tool definitions
+   - hooks 预处理长日志
+   - 把专用说明从 `CLAUDE.md` 移到 skills
+   - 把 verbose work 交给 subagents
+   一起写成降低 context cost 的同一运行时策略。
+
+这意味着“语义压缩”的起点其实比 session memory、suggestion 和 tool result replacement 更早：
+
+1. 先决定什么在 startup 时以 full content 进入。
+2. 再决定什么只以名字、摘要、delta 或 trailer 进入。
+3. 最后才决定本轮对话本身应该怎样 compact。
+
+更硬一点说，Claude Code 在压缩的不是“历史文本”，而是四种不同的 load fate：
+
+1. `startup full-load`
+2. `name-only / description-only preload`
+3. `on-demand expansion`
+4. `summary return`
+
+如果继续用苏格拉底式自校把这章写得更硬，还应再问三句：
+
+1. 我有没有把“语义压缩”只写成 conversation 后处理，而没有把 startup composition 也算进去。
+2. 我有没有把 subagent isolation 只写成并行提效，而没有看见它首先在保护主线程 working set。
+3. 我有没有把 prompt caching / deferred definitions / hooks preprocessing 写成省 token 小技巧，而没有看见它们共同在定义对象的 load fate。
+
+## 9. 一句话总结
 
 Claude Code 的 prompt 魔力更深的一层，不在于它把世界写成了更漂亮的 prompt，而在于它持续把工作现场压成可继续行动的最小语义体，并让主线程和旁路循环共享这份压缩后的行动语义。

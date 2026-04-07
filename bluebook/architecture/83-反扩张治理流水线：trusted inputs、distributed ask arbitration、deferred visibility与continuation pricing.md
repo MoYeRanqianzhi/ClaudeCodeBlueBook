@@ -141,6 +141,23 @@ Claude Code 的一个高级点，是它先问：
 
 所以 Claude Code 的 permission 成熟度，不在 modal，而在事务性。
 
+官方 `Configure permissions`、`Security` 与 `Claude Code auto mode` 的公开叙述，也把这条事务链从产品外表再钉死了一层：
+
+1. permission rules 公开承认 `deny / ask / allow` 的 first-match 顺序，而不是“先弹窗再说”。
+2. `PreToolUse` hooks 明确先于 permission prompt 运行，但 deny / ask rules 仍在 hook 之后继续生效，这说明 hook 不是绕过事务，而是事务前置筛选器。
+3. `auto` mode 被公开描述成 background safety checks，不是无条件自动批准；engineering 文更进一步把它拆成 fast filter + reasoning fallback 两层 classifier。
+4. classifier prompt 又故意剥离 assistant prose 与 tool outputs，只看 `user messages + tool calls`，说明它保护的不是完整 transcript，而是 `typed ask` 的可裁决性。
+
+所以更稳的治理读法不是：
+
+- permission = modal
+
+而是：
+
+- broad allow 先决定哪些 ask 会被偷走
+- hook / rule / classifier / human handoff 再共同决定哪一个裁决者赢得这次事务
+- single winner 最终只以 externalized truth chain 的形态被宿主继续消费
+
 ## 4. Externalized Truth Chain 决定哪些能力投影配进入当前世界
 
 `toolSearch.ts` 与 deferred tools 机制说明：
@@ -207,6 +224,8 @@ Claude Code 的正式做法是：
 4. 当前 continuation 还有没有边际收益
 
 因此 continuation 在这里不是 granted，而是 rented。
+
+更硬一点说，`continuation pricing` 不只是在决定“还要不要继续花 token”，也在决定“恢复后哪些 authority 还能沿用，哪些只能把 durable asset 留下、把主权重开一轮”。
 
 而且 continuation 也不是把所有旧权限一并续租。
 

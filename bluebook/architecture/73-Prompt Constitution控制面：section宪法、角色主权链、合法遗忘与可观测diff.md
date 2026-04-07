@@ -272,6 +272,46 @@ Prompt Constitution 的最后一层不是写作，而是观测。
 
 - Prompt Constitution control plane
 
-## 10. 一句话总结
+## 10. 官方文档暴露的不是 prompt 文本，而是宪法的 load law 与 admissibility law
+
+如果只看源码，本章已经把 Prompt Constitution 写成：
+
+- section 宪法
+- 角色主权链
+- 合法遗忘
+- 可观测 diff
+
+但官方文档对外真正暴露的，并不是“那段神秘 system prompt 原文”，而是另一组更像宪法本体的东西：
+
+1. `How Claude Code works` 与 `Explore the context window` 公开解释：
+   - startup 时哪些对象会自动进入 context；
+   - `CLAUDE.md`、auto memory、MCP tool names、skill descriptions 以什么形态进入；
+   - `/compact` 之后哪些 startup content 会 reload，哪些不会。
+2. `costs` 文档公开解释：
+   - prompt caching
+   - auto-compaction
+   - deferred MCP definitions
+   - skills on-demand loading
+   - subagent separate context
+   这些对象怎样共同决定 context 成本。
+3. `security` 与 `auto mode` 公开解释：
+   - web fetch 使用 separate context window；
+   - 输入层 probe 会先筛 tool results 再让内容进入 agent context；
+   - transcript classifier 故意看不到 assistant prose 与 tool outputs。
+
+这说明 Prompt Constitution 对外最稳定的公共表面，其实不是 prompt text，而是两部法律：
+
+1. `load law`
+   - 哪些东西什么时候、以什么形态、以哪种 reload 规则进入上下文。
+2. `admissibility law`
+   - 哪些外部 payload、tool outputs、projection 或 transport 内容有资格进入主 agent 的 protocol truth。
+
+如果继续用苏格拉底式自校把这章写得更硬，还应再问三句：
+
+1. 我有没有把 constitution 写成“文案结构”，却没把 load law 写进去。
+2. 我有没有把 admissibility 只写成消息规范，却没把 probe / separate context window / transcript stripping 写进去。
+3. 我有没有仍在偷偷把 prompt 本体理解成 secret text，而不是一套可执行的 load / admission / reload 制度。
+
+## 11. 一句话总结
 
 Claude Code 的 prompt 底盘之所以强，不是因为它写了一段更好的 system prompt，而是因为它把 prompt 做成了一部可执行宪法：按 section 立法、按角色分配主权、按协议准入真相、按遗忘法维护连续性，并按 diff 与观测机制持续解释自身。
