@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把页内 Prompt 第二前门继续压薄：`6.32` 现在更明确把 Prompt 魔力收回 `same-world compiler` 合同，`6.45` 现在只补 `protocol surface / action grammar / delta discipline`，`6.57` 现在只补 Constitution 的 speaking-right 边界，不再各自重讲 Prompt 为什么强
 - 继续更新 `bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`，把 Prompt witness order 继续与 `06` 对齐：两页现在都更明确把 `stable prefix` 与 `continue qualification verdict` 写进 canonical witness chain，减少 `06 / 15 / 41` 之间的第二前门分叉
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把 Prompt 第二前门继续收回同一条 `same-world compiler` contract：`2.10` 现在更明确把 `Authority / Boundary / Transcript / Lineage / Continuation` 写成同一个 contract，`7.4` 现在也更明确 later maintainer 审的不是文案，而是同一条 compiler 装配链
 - 继续更新 `bluebook/philosophy/README.md`，把哲学 README 继续从“压缩话语总表 + 过厚路由表”收回最短前门：源码质量解释层现在明确下沉到 `06 / 15 / 41`，Prompt 与治理分流现在只保留一句最短跳转，README 维护约定现在更明确自己只负责三条母线的最短前门

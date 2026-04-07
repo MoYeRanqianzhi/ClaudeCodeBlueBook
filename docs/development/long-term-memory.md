@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06` 的长期默认 prompt-demystification-scope-split language 现已继续写死：
+  - `6.32` 默认继续只负责 `same-world compiler` 主句，不再和 `6.45 / 6.57` 平行争 Prompt 魔力首答
+  - `6.45` 默认继续只补 `protocol surface / action grammar / delta discipline`
+  - `6.57` 默认继续只补 Constitution 的 speaking-right 边界
 - `bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-witness-order-alignment language 现已继续写死：
   - Prompt 导航页默认继续把 `stable prefix` 与 `continue qualification verdict` 明写进 witness chain，不再让 `06 / 15 / 41` 在同一条链上使用不同粗细的 object order
   - `15 / 41` 默认继续把 Prompt 线写成 canonical object chain 与 first-reject order 的分工，不再让 later maintainer 自己推断哪些 witness 是正文对象、哪些只是压缩简称
