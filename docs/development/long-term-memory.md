@@ -3611,3 +3611,4 @@
 - 治理线新增速记页后的稳定 next-hop 现在应记成：`10 -> 85 -> 83 -> 100 -> security -> risk -> playbooks`。更细一点说，`10` 只负责 chain/resource/reject/weak-surface 一屏速记，`85` 回答为什么，`83` 回答 runtime seam，`100` 回答审读问题，`security/risk` 分别回答机制面与用户侧读回，`playbooks` 负责现场 verdict。
 - `10` 如果想继续保持合法，后续就不能再长出第二层 crosswalk 或轻总论。更稳的边界是：它只保留 canonical chain、六节点短释义、reject trio、弱读回面与最短二跳；一旦开始扩写 security signer ladder、risk reopen、runtime seam 或为什么如此，它就该把内容退回 `85 / 83 / 100 / security / risk`。
 - user-facing 治理页的长期纪律现在也应继续固定：本地只保留 `first-answer order / first reject path / 相邻替身拒收 / 弱读回面声明`，不本地重讲 why、host truth 或现场 verdict。更稳的显式分流是：机制回 `security`，读回回 `risk`，执行回 `playbooks`；凡是 userbook 页里再出现“谁签字 / 谁记账 / 谁负责恢复 / 现场怎么做”的混写，都优先视为越位。
+- 根 README 的长期纪律也应继续固定为“仓库路由而非控制面摘要”：即使某条控制面已经很稳定，也不要在根入口重复给一句 canonical summary。更稳的做法是：根入口只提醒“先定题，不先找页”，再把首答权交给 `bluebook/README`；否则一旦 root、bluebook、userbook 同时各保留一句治理总句，first-answer count 又会慢慢反弹。

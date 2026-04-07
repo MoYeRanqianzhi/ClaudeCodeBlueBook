@@ -4,7 +4,7 @@
 
 这里还应再多记一句：
 
-- 安全与省 token 不是两道并列题，而是同一条治理收费链的两种外观；先定题，不先找页。
+- 先定题，不先找页；治理速记与 first reject path 统一回 `bluebook/README`，根 README 不再重讲控制面主语。
 
 ## Evidence Mode
 
@@ -48,5 +48,5 @@
 
 - 根 README 只保留一级路由，不重复展开目录深链。
 - 深层分流交给各目录 `README` 和 `bluebook/navigation/README.md`。
-- 治理 / 权限 / Token 问题若还没先判 `pricing-right / truth-surface`，就先别进 `navigation/`；它只做跨目录 next-hop，不代签 `reject / reopen`。
+- 治理 / 权限 / Token 问题若还没先判对象链与最小顺序，先回 `bluebook/README`，不要在根 README 或 `navigation/` 里找首答。
 - `docs/` 记录过程与记忆，不回灌蓝皮书正文主语。

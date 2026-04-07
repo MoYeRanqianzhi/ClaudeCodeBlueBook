@@ -36,7 +36,7 @@
 
 如果只先记治理入口的一句话，也只记这句：
 
-- 治理不是更会拦截，而是先固定 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，再让安全、省 Token 与恢复只读这条收费链在不同资产上的外观；若只缺一屏速记，先回 [10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)。
+- 治理首答只认 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；若只缺一屏速记，先回 [10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，若缺 why/runtime seam/question ladder，再按 `85 / 83 / 100` 下潜。
 
 如果继续把入口压成 later maintainer 能直接拿来排查的最小顺序，它还应再暴露三行：
 
@@ -70,8 +70,7 @@
 - Prompt
   缺顶层判断与 `first-reject path` 回 `philosophy/84`；缺 same-world witness、实现顺序与 `continue qualification` 回 `guides/51`，不先看 `systemPrompt` 截图、最后一条消息、summary prose 或 handoff card。
 - 治理
-  先按 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback` 排，不先看任何界面投影、状态百分比或继续快捷入口。
-  更第一性的追问是：这次扩张有没有先拿到 `pricing-right`，`truth-surface` 有没有先说清 reject / reopen，`asset-rollback ABI` 有没有只做收口而没有篡位成治理主语。
+  先按 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback` 排，不先看任何界面投影、状态百分比或继续快捷入口；四类被收费资源、弱读回面与 reject trio 统一回 `10`。
 - 当前真相
   先按 `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion` 排，不先看目录体感、作者说明或“看起来还算能跑”的经验判断。
 
