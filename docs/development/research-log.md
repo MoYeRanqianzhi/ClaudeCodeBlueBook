@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 atlas-demotion 深化动作: 已继续更新 `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md` 与 `bluebook/navigation/README.md`。新的结论是：源码地图哲学页最危险的 residual 不是地图不够细，而是 atlas/projection 词重新越位成 present-truth frontdoor。更稳的默认写法是：`76` 只做 map projection / crosswalk，源码质量线 canonical ladder 继续只由 `09 / README / 86 / 101 / 102 / 84` 负责。
+- 本轮新的源码质量结论: `navigation/README` 里的当前真相链顺序现在也已经跟着修正，不再让 `76` 先于 `86 / 101 / 102` 说话。这意味着 atlas 层终于从“前门解释者”退回“后置 projection 层”。
 - 本轮 residual-frontdoor 深化动作: 已继续更新根 `README.md`、`bluebook/navigation/README.md`、`bluebook/userbook/README.md` 与 `bluebook/guides/32-如何用苏格拉底诘问法审读源码先进性：权威面、恢复资产与未来维护者消费者.md`。新的结论是：治理首答如果不在最前两跳把 `pricing-right -> truth-surface` 写死，用户和 later maintainer 仍会先被 approval、mode、usage、cleanup 这些投影词带偏；源码质量桥页如果不把回修顺序 rebased 到 `86 / 84 / 101 / 102 / 15 / 79 / 75`，就仍会把 later maintainer 拉回旧 atlas/兼容桥的 route。
 - 本轮新的目录结构结论: `guides/32` 现在终于不再把源码先进性的 builder-facing 审读回修链牵回旧 frontdoor；这意味着源码质量线的 `philosophy -> architecture -> guides -> navigation/playbooks/casebooks` 已经基本完成同序化，而不是只停在同词化。
 - 本轮源码质量 canonical-split 深化动作: 已继续更新 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`、`bluebook/README.md` 与 `bluebook/navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md`。新的结论是：源码质量线当前最危险的 residual 不是概念不够，而是 canonical ladder、crosswalk 与 atlas/projection 词重新发生 authority split。更稳的默认写法是：`09` 只保留一条 canonical ladder，根 README 补齐 reject trio，`15` 只把 atlas 词当 projection。

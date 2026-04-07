@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/76` 与 `bluebook/navigation/README` 的长期默认 atlas-demotion language 现已继续写死：
+  - `philosophy/76` 默认只做源码地图 projection / crosswalk，不再重签源码质量线 canonical ladder
+  - `philosophy/76` 默认继续把 atlas 专用 `truth ladder` 降回 projection 词，不再与 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 并列
+  - `navigation/README` 默认继续把当前真相线的跨目录顺序写成 `84 -> 86 / 87 -> 101 / 102 -> 76 -> api / playbooks / casebooks`
+  - 这两页默认统一拒收 atlas/projection 词重新越位成 present-truth frontdoor
 - 根 `README`、`bluebook/navigation/README`、`bluebook/userbook/README` 与 `bluebook/guides/32` 的长期默认 residual-frontdoor language 现已继续写死：
   - 根 `README` 默认继续把治理 / 权限 / Token 问题的前门闸门写成 `先判 pricing-right / truth-surface，再决定是否需要 navigation next-hop`
   - `navigation/README` 默认继续把 `mode / usage / approval / cleanup result` 降回“如果你还在问它们谁说了算，就说明你缺的是治理首答”
