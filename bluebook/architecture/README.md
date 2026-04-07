@@ -4,12 +4,11 @@
 如果你还没先建立 `09 / 05 / 15 / 41` 这组高阶判据，不要把这里读成目录库存；这里回答的是这些判据在运行时对象、状态机与 choke point 上怎样落地。
 
 > Evidence mode
-> - `mirror present`：本地镜像在场时，优先按源码对象、注册表、writeback seam 与 choke point 读。
-> - `public-evidence only`：本地镜像缺席时，先按 `contract -> registry -> current-truth surface candidate -> consumer subset -> hotspot kernel -> mirror gap discipline` 读，不把 mirror-derived certainty 写成已核实事实。
+> - 公开镜像的证据上限、canonical ladder 与降格规则统一回 [../guides/102](../guides/102-%E5%A6%82%E4%BD%95%E7%BB%99%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E5%81%9A%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7%EF%BC%9Acontract%E3%80%81registry%E3%80%81authoritative%20surface%E3%80%81adapter%20subset%E4%B8%8Ehotspot%20gap%20discipline.md)；本 README 只承接对象、状态机、writeback seam 与 choke point。
 
 如果只先记源码质量判断在架构层的一句话，也只记这句：
 
-- 源码质量判断不是文件更小，而是把复杂度收进合法复杂度中心，把 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 落成正式对象、状态机与 choke point，并用它们保护 `one writable present`。
+- 架构层不负责再判梯子，而负责把 `authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer` 落成正式对象、状态机与 choke point，并用它们保护 `one writable present`。
 
 这里还要再多记一句：
 
@@ -32,7 +31,7 @@
 - 如果你只先判断“过去怎样不得写坏现在”，从 `41 -> 58 -> 60 -> 63 -> 66 -> 69 -> 84` 进入。
   - 失败信号：还在用 replay、pointer、恢复资产或目录体感代替 `current-truth surface / current-truth writeback / freshness gate`。
 - 如果你只先判断“源码质量到底该怎样判”，从 `44 -> 55 -> 63 -> 84` 进入。
-  - 最短顺序：`contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - 先过 `../guides/102`，再从 `44 -> 55 -> 63 -> 84` 进入对象层
   - 失败信号：还在先谈“目录更整齐 / 文件更小 / 热点文件更大或更小”，而没先点名合法复杂度中心、`one writable present` 与第一条 reject path。
 - 如果你只先判断“future maintainer 在结构层到底拿什么正式反对当前实现”，从 `60 -> 63 -> 69 -> 72 -> 84` 进入。
   - 最短顺序：`authority surface -> truth planes -> writeback seam -> danger surface -> retreat layer`

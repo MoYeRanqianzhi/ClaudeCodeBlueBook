@@ -16,6 +16,12 @@
 
 这里不再重复根入口的 canonical formula 与三组最小顺序；若你现在还缺这些，先回 [../README.md](../README.md) 与 `09`。`navigation/` 只接管两件事：判你该去哪一层证据，判哪一页只配当 route 不配改判。
 
+Prompt 问题若还在混，也只先拆三种缺口：
+
+- 缺顶层主语与 `first-reject path`，回 `philosophy/84`
+- 缺 same-world witness、实现顺序与 `continue qualification`，回 `guides/51`
+- 缺“为什么这轮只该 route trim、还不该新开 Prompt 入口”，回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md) 与 [../../docs/development/00-研究方法.md](../../docs/development/00-%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95.md)
+
 治理 / 安全 / Token 问题若已确认缺的是对象链而不是路线，也只先弹回：
 
 - `10 -> 85 -> 83 -> 100 -> security -> risk`
@@ -32,7 +38,7 @@
 
 如果一个跨目录问题还回答不出自己缺的是公式、顺序还是证据层，它就还没有真正进入 `navigation/` 的工作对象。
 如果 `navigation/` 开始替目录改判 speaking rights，它也就不再是在路由，而是在制造第二套入口主语；later maintainer 的局部可反对性会先被 route words 吃掉。
-如果一个 route 句子开始把 `security vs token`、`continuity / memory / resume / handoff` 写成并列主题，而不是写成同一条治理或时间轴问题，它也已经在长出 `route-law inflation`。
+如果一个 route 句子开始把 `security vs token`、`continuity / memory / resume / handoff` 写成并列主题，而不是写成同一条治理或时间轴问题，它也已经在长出 `route-law inflation`；这类时间轴争议默认先回 `06`。
 
 跨目录反查 continuity 时，这里也只做三跳路由：
 
@@ -79,9 +85,7 @@
   失稳前追问，先暴露第一条反证信号与 first reject path。
 - `41`
   第一性原理收束，先判断高阶总结是否已经压回不可约约束。
-- 专题侧门只在主线已判清后开放：Prompt 残留线回答“出监或稳态后哪些 reopen 条件仍必须保留”，结构 `83 / 92` 回答“固定纠偏模板与精修模板”，都不代替 `09 / 05 / 15 / 41`。
-- 如果你已经确认 Prompt 主链成立，只剩“released / steady 之后怎样保留 residual reopen gate / threshold”，从 `66 -> 69 -> 72 -> 78 -> 47 -> 50` 进入。
-- Prompt 尾段只承接 residual reopen；治理 `67`（release）与结构 `71`（steady-state）只可互参，不可互借主语。
+- 专题侧门只在主线已判清后开放：若你缺的是 Prompt residual reopen / threshold，再按 Prompt owner page 的侧门继续，不在这里第二次写尾段目录。
 - 如果你已经确认结构真相面的问题不在入口公式，而在“怎样把假 current-truth surface / merge / fail-closed / liability 压回固定顺序”，从 `41 -> 102 -> guides/83 -> playbooks/61 -> casebooks/54` 进入。
 - 如果你已经进入 refinement execution，且缺的是结构精修模板而不是第一性原理，从 `41 -> 102 -> guides/92 -> playbooks/67 -> casebooks/63` 进入。
 - 如果你在判断“下一层该去哪个目录”，也先问：
@@ -120,3 +124,4 @@
 - 一旦 `bluebook/README` 开始复制深链，或某个目录 README 开始第一次解释别的目录的 canonical formula，也视为混层。
 - 一旦入口页只能给公式、却给不出最小顺序，它就仍停在 route map 层，还没有完成 later maintainer 可执行化。
 - 一旦跨目录入口把 `runtime-core evidence`、`operator-governance evidence` 与公开镜像缺口混写成同一 certainty，route 就会开始伪装成 authority。
+- 一旦新的 route 提案还答不上自己缺的是 `formula / order / evidence ceiling / verdict` 哪一类，先退回 `06` 与 `docs/development/00`，不要急着升成目录动作。

@@ -1,16 +1,16 @@
 # 功能全景与 API 支持
 
-这一章回答两个问题:
+这一章回答两个 bridge 问题:
 
 1. Claude Code 到底支持哪些能力面。
 2. 这些能力分别通过什么接口暴露出来。
 
-为了避免“看到一点功能就写一点功能”的碎片化，本章按 runtime 表面来组织。
-能力全景层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责把正式 surface 与代表入口列成索引，不额外改判 `current admission` 或 `product promise`。
+为了避免“看到一点功能就写一点功能”的碎片化，本章按 runtime 表面来组织；但它不再承担 capability 首答权，只承担 capability / API bridge。
+能力全景层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责把正式 surface 与代表入口列成索引，不额外改判 `current admission` 或 `product promise`。用户侧能力地图统一回 `userbook/02`，host-facing truth 与 contract 统一回 `api/README`。
 
 ## 0. 先带着三条判断读功能表
 
-这一章虽然在列能力面，但更稳的读法不是把它当“功能总清单”，而是先带着三句判断来读：
+这一章虽然在列能力面，但更稳的读法不是把它当“功能总清单”，而是先带着三句 bridge judgment 来读：
 
 1. Prompt 线
    - 这些接口最终在帮助 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 的哪一段合法进入模型
@@ -40,9 +40,9 @@
 
 如果把功能表前门继续压成最短公式，也只剩三句：
 
-1. `same-world compiler` 决定这组接口是不是在帮助同一个世界进入模型。
-2. `decision window` 决定这组接口是不是还配继续进入当前世界。
-3. `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 决定你现在到底配把它写成主路径能力、宿主子集、热点入口，还是只配写成声明痕迹。
+1. 用户在问“我能看到什么、能怎么进入”时，先回 `userbook/02`。
+2. 宿主在问“contract / schema / host-facing truth 是什么”时，先回 `api/README`。
+3. 若还在问“到底算不算支持、算不算承诺”，先回 `09 / 05 / 15 / 41` 与 `08`，不要在 taxonomy 里找 verdict。
 
 如果这四问还回答不清，就不要继续停在功能总览页：
 
@@ -70,7 +70,7 @@
 3. 远程与状态
 4. 协作与扩展
 
-它们只用于定位对象与源码证据，不直接产出“已支持/已承诺”的结论。真正的支持结论，仍由上面的治理判定给出。
+它们只用于定位对象与源码证据，不直接产出“已支持/已承诺”的结论。真正的支持结论，仍由上面的治理判定给出；本页自己只做 bridge，不重发 capability first answer。
 
 治理线里还要额外补一句：
 

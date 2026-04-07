@@ -8,6 +8,89 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`bluebook/philosophy/README`、`bluebook/userbook/README`、`bluebook/risk/README`、`bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 frontdoor-route-only / why-only / self-audit-only language 现已继续写死：
+  - 根 `README` 默认继续把第一次进入写成 `09 -> 84 / 10 / 102`；Prompt / 治理 / 当前真相三线只保留“先回 owner，再回 why / self-audit”的 route，不再自留 canonical chain、failure ladder、witness heuristic 或治理入口卡
+  - `philosophy/README` 默认继续把 Prompt 压成 `84 -> 51` 的最短 first-hop，把源码质量压成 `102 -> 86/87 -> architecture` 的 why-route，不再另立 `future maintainer` 并行前门，也不再在 README 保留 Prompt 下游分流库存
+  - `userbook/README` 默认继续只保留用户动作、问题分型与二跳；弱读回面 inventory 统一回 `10`，安全 / 省 token 的 why 统一回 `security/README`
+  - `risk/README` 默认继续只保留 `product promise readback / reopen qualification / evidence binding` 这组三个用户侧对象；任何机制顺序、signer 标准、reopen 成立条件都默认改路由回 `10 / security / playbooks`
+  - `03` 默认继续只保留 why；Prompt 线只保留一个苏格拉底问题，源码质量线只保留“为什么不能先看目录美学”这类 why 句，不再出现 full ladder、object/seam 清单或 `87` 的 quality verdict bundle
+  - `06` 默认继续只保留总控自校；Prompt 线默认继续只问“我有没有越位复述 `84 / 51`”，不再自带 Prompt 最小拒错顺序
+- 并行 agent 吸收后的长期默认 frontdoor-owner-audit rule 现已继续写死：
+  - 高流量前门若再次出现 canonical chain、witness order、weak-readback inventory、signer/reopen 机制口径、full ladder 或 object/seam 清单，默认按越位候选处理
+  - 更稳的默认修法顺序继续是：`删具体机制名词 -> 缩成 route 句 -> 把 owner 还给 84 / 51 / 10 / security / risk / 102 / 87 / architecture`
+- 最新根仓同步记忆（2026-04-08，本轮当前批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
+- `bluebook/06-第一性原理与苏格拉底反思` 与 `bluebook/03-设计哲学` 的长期默认 source-quality-self-audit language 现已继续写死：
+  - `06` 的源码质量线默认继续只保留 why 句和自校问句；凡涉及 canonical ladder、降格规则与证据签字，一律回 `102/87`
+  - `03` 的源码质量去魅句默认继续写成 `102 -> 87` 的 owner 顺序，不再在本章第二次重列证据梯度
+- `bluebook/README`、`bluebook/architecture/README` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 source-quality-frontdoor-route-tightening language 现已继续写死：
+  - `bluebook/README` 默认继续只把源码质量线写成 current-truth protection 的定题句，不再自己携带 canonical ladder、public-evidence ceiling 或 reject trio
+  - `guides/102` 默认继续独占 canonical ladder、降格规则与 reject trio
+  - `architecture/README` 默认继续只承接对象层顺序：`authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer`
+  - `06` 默认继续只保留源码质量自校问句与 `surface ownership -> writeback split -> freshness gate -> later-maintainer rejectability`，不再与 `102` 争 canonical ladder
+  - 源码质量前门 route 默认继续固定为 `题 -> 梯 -> 义 -> 物 -> 校`
+- `bluebook/03-设计哲学`、`bluebook/philosophy/README`、`bluebook/navigation/README`、`bluebook/security/README` 与 `bluebook/risk/README` 的长期默认 prompt-owner-singularity-and-governance-boundary language 现已继续写死：
+  - `03` 默认继续只保留 Prompt 的 why / first-principles / Socratic judgment，不再在本章重列完整 Prompt 公式
+  - `philosophy/README` 默认继续把 Prompt 前门压成 `same-world compiler` 的 consumer-facing hook；same-world witness 与实现顺序默认继续只回 `51`
+  - `navigation/README` 默认继续只做 triage；凡是 continuity / reopen / threshold 这类时间轴争议，默认先回 `06`
+  - `security` 默认继续只保留治理 signer / ledger / cleanup authority，不再带出用户侧恢复读法
+  - `risk` 默认继续只保留 `product promise readback / reopen qualification / evidence binding` 与 `signer + evidence + reopen`，不再重复 `10` 的通用弱读回面总声明
+- 并行 agent 吸收后的长期默认 prompt-residual-aftercare language 现已继续写死：
+  - Prompt residual 仍主要集中在高流量 why/route 页，而不是 owner page；默认优先级继续是 `03 -> philosophy/README -> navigation/README`
+  - 任何高流量页若再次同时出现完整 Prompt 公式、same-world witness order 与目录仲裁，默认拆回 `84 / 51 / 06`
+- 并行 agent 吸收后的长期默认 source-quality-frontdoor-route language 现已继续写死：
+  - 源码质量线默认 route 继续固定为 `README 定题 -> guides/102 定 ladder -> 03 定 why -> architecture/README 定对象 -> 06 自校`
+  - 可压成 `题 -> 梯 -> 义 -> 物 -> 校`
+  - 后续若继续瘦身源码质量前门，默认优先级继续是 `03 -> architecture/README -> bluebook/README -> philosophy/README`
+- 最新根仓同步记忆（2026-04-08，本轮末段）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
+- `bluebook/userbook/05-控制面深挖/README`、`bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md` 与 `bluebook/userbook/02-能力地图/01-运行时主链/05-压缩、恢复与记忆：如何维持可继续工作的现场.md` 的长期默认 userbook-governance-owner-trim language 现已继续写死：
+  - `05/README` 默认继续只保留控制面判断、first reject path 与 route，不再自己首答 `谁签字 / 谁记账 / 谁负责恢复 / 能不能 reopen`
+  - `05-06` 默认继续只把 `/status / /doctor / /usage` 写成 runtime projection；若用户已经在判恢复、cleanup 或 reopen，默认直接回 `10 / risk / 09`
+  - `运行时主链/05` 默认继续把 `Compact / Resume / Memory` 写成“帮助恢复连续性”的使用边界，不再借 `continue verdict` 的机制调门说话
+- 并行 agent 吸收后的长期默认 governance-speaking-right ledger 现已继续写死：
+  - `10` 独占通用弱读回面总清单与“这些对象只能触发怀疑、不能代签治理链”的总声明
+  - `security` 独占 signer ladder、ledger / cleanup authority 与 finality 强弱层次
+  - `risk` 独占用户侧 `product promise readback / reopen qualification / evidence binding` 与 `signer + evidence + reopen`
+  - `userbook` 高流量页若再出现 `只配|不配|签发|签字|signer|verdict|reopen`，默认按降格候选处理
+- 最新根仓同步记忆（2026-04-08，本轮后段）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。后续起手仍要检查，但默认不再把根仓同步视为阻塞源。
+- `bluebook/navigation/05`、`bluebook/navigation/15`、`bluebook/navigation/41`、`bluebook/navigation/04`、`bluebook/00-导读`、`bluebook/02-使用指南`、`bluebook/05-功能全景与API支持` 与 `bluebook/01-源码总地图` 的长期默认 de-linearized-top-entry language 现已继续写死：
+  - `navigation/05` 默认继续只做模仿对象校正，不重发 `84 / 51 / 10 / 102` 的首答公式、witness order 或 ladder
+  - `navigation/15` 默认继续只保留失稳前问题梯子与第一条反证信号类型，不正文式首答 Prompt canonical formula / witness order
+  - `navigation/41` 默认继续只保留 `compile / price / externalize / evict` 与“第一次定义权唯一”，不库存化 Prompt witness chain 或专题侧门
+  - `navigation/04` 默认继续把顶层页写成角色表，不再把 `README + 00-09` 写成强线性规范主线
+  - `00-导读` 默认继续只做 preface / locator，不充当编号教程的第一站
+  - `02` 默认继续只做 usage bridge，`05` 默认继续只做 capability / API bridge，不再各自充当第二本 `userbook` 或 capability first-answer page
+  - 顶层 compat alias 默认继续是 stub-only shim；`01-源码总地图` 现已作为模板被压成显式 `[兼容别名页]`
+- 并行 agent 吸收后的长期默认 prompt-residual-trim ledger 现已继续写死：
+  - 完整 Prompt 首答公式 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 默认继续只回 `84`
+  - 完整 same-world witness order 与 builder-facing six-step implementation 默认继续只回 `51`
+  - `continuity 不是第四条母线 / 第五个函数`、`route trim > new entry`、`05 / 15 / 41` choreography 与目录仲裁默认继续只回 `06`
+  - `03 / navigation/05 / 15 / 41 / navigation/README` 若再次出现 owner 级 Prompt 首答，默认按 residual trim 候选处理
+- 并行 agent 吸收后的长期默认 governance-owner-leak cleanup 现已继续写死：
+  - `10` 独占通用弱读回面声明与总清单
+  - `security` 独占 signer ladder、ledger / cleanup authority 与 finality 强弱层次
+  - `risk` 独占用户侧 `product promise / reopen qualification / evidence binding`
+  - `userbook` 默认只翻译成 first reject path、route 与下一步动作；在 `10 / security / risk` 之外，凡出现 `只配|不配|签发|签字|signer|verdict|reopen`，默认就是降格候选
+  - 下一批治理线高价值目标默认锁定在 `userbook/05-控制面深挖/README`、`05-06` 与 `userbook/02-能力地图/01-运行时主链/05`
+- 最新根仓同步记忆（2026-04-08，本轮后段）已修正为健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均成功，根仓状态回到 `main...origin/main`。先前 unresolved merge 阻塞只应被读成时间点事实，不再视为当前 live truth。
+- `bluebook/README`、`bluebook/userbook/README`、`bluebook/navigation/README`、`bluebook/06` 与 `docs/development/00-研究方法` 的长期默认 prompt-route-trim-and-role-layering language 现已继续写死：
+  - Prompt 线的 owner split 默认继续固定成 `philosophy/84 = 顶层定义与 first-reject path`、`guides/51 = same-world witness / builder-facing implementation / continue qualification`、`06 = 为什么这套 owner split 不该再长出第二 Prompt 前门`
+  - Prompt 线默认继续拒收“为求更顺手再补一个 Prompt 入口卡”；只有现有页真的承载不了新的第一问或新的申诉位阶时，才允许新开前门
+  - `bluebook/` 顶层高流量入口默认按角色读，不按 `00-09` 线性读：`00=导读/locator`，`09=宪法`，`03=why`，`06=self-audit`，`01 / 10=bridge`
+  - `userbook/README` 默认继续把 Prompt 说法降回“同一现场 / 为什么还能继续”的用户侧判断，并固定四问自校，不在根前门保留过重的 owner 级 Prompt 术语
+  - `navigation/README` 默认继续把 Prompt 路由拆成三种缺口：`first-reject path -> 84`、`same-world witness / implementation / continue qualification -> 51`、`为什么现在还只该 route trim -> 06 + docs/development/00`
+- `docs/development/00-研究方法` 的长期默认 directory-optimization-socratic-gate language 现已继续写死：
+  - 目录优化默认先问七件事：`formula / order / evidence ceiling / verdict` 四分法、`删掉这页会失去什么`、`为什么不用更简单方案`、`镜像缺席时会不会放大 second narrator risk`、`是否真的承接新的第一问或申诉位阶`
+  - 目录动作默认继续按 `label fix -> route trim -> speaking rights / appeal chain -> README sync -> new entry` 升级；答不上这组反证时，默认先记进 `docs/`
+- 并行 agent 吸收后的长期默认 governance-signing-surface language 现已继续写死：
+  - 安全与省 token 默认继续被读成“当前世界准入主权”对四类扩张收费，而不是“更多拦截 + 更强压缩技巧”
+  - 真正可签的治理面默认只认 `governance key / externalized truth chain / typed ask / decision window + continuation pricing / durable-transient cleanup`
+  - mode、modal、`/status / /doctor / /usage`、`compact / resume`、summary/transcript/dashboard 默认继续只写成弱读回面或 continuation consumer，不得越级代签 verdict
+  - 治理高流量前门默认继续分工为：`10 = canonical formula`，`security = mechanism translation`，`risk = user-facing readback`
+- 并行 agent 吸收后的长期默认 source-quality-owner-ledger language 现已继续写死：
+  - 源码质量线默认继续把 `guides/102` 视为公开镜像证据上限与 canonical ladder owner，把 `philosophy/86 / 87` 视为 why owner，把 `architecture/84 / 63` 视为 object/kernel owner，把 `api/39 / 42` 视为 artifact-contract owner，把 `playbooks/79` 与 `casebooks/75` 视为 verdict / distortion owner
+  - `navigation`、`userbook` 与 `docs` 默认继续不得代签源码质量主结论；它们只配 route、翻译或记忆
+  - 兼容页默认继续视为 `stub-only compat aliases`，不参与规范阅读顺序
+- 最新根仓同步阻塞记忆（2026-04-08）：`fetch origin main` 成功，但根仓 `checkout main` 仍被 `bluebook/userbook/03-参考索引/README.md` 与 `bluebook/userbook/README.md` unresolved merge 阻塞，`merge --ff-only origin/main` 也因此失败；根仓状态为 `main...origin/main [ahead 30]` 且仍有额外脏改动。默认继续不要触碰根仓冲突，只在 `mainloop` 记录事实。
 - `bluebook/README`、`bluebook/navigation/README`、`bluebook/09`、`bluebook/01`、`bluebook/philosophy/70`、`bluebook/guides/22`、`bluebook/guides/30`、`bluebook/guides/32`、`bluebook/playbooks/08`、`bluebook/playbooks/11` 与 `bluebook/playbooks/16` 的长期默认 central-entry-and-method-depth language 现已继续写死：
   - central 入口页默认继续把 `前门 / frontdoor / Prompt魔力 / authority surface` 收回 `入口顺序 / Prompt效力 / current-truth surface`
   - Prompt 深层方法页默认继续把“强不强”改写成 `compiled request truth + witness chain + continuation qualification` 的 gate/validator 语言，不再以魅力解释为主
