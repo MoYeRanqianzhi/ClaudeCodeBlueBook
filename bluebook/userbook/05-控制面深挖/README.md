@@ -55,7 +55,7 @@
 3. 这是旧状态污染吗
    - 若旧目录、旧恢复资产、旧 capability 或旧 authority 在冒充现在，就按当前真相失真处理。
 
-更细的 object chain 与 truth plane 统一回蓝皮书根前门；治理 why / signer / reopen / execution 则按上一条 owner route 分流；`05` 只负责把它们翻译成用户侧判断。
+更细的 object chain 与 truth plane 统一回蓝皮书根前门；治理 why / signer / reopen / execution 则按上一条 next-hop route 分流；`05` 只负责把它们翻译成用户侧判断。
 
 如果 `05` 不能和根 `userbook/README`、`01`、`04` 共享同一组 first-answer order，它就会重新退回“控制面话题集合”，而不是用户真正可执行的判断层。
 

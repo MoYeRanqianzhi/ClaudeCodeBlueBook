@@ -127,4 +127,4 @@
 
 1. 哪条控制面现在在说话。
 2. 哪些相邻入口只是 projection、continuation consumer 或 `Outside` handoff surface，不配改判。
-3. 什么时候该把问题退回 `09 / 10 / security / risk / architecture / playbooks` 的对应 owner。
+3. 什么时候该把问题退回 `09 / 10 / security / architecture` 的对应 owner，或退回 `risk / playbooks` 的 tail-readback / execution next-hop。
