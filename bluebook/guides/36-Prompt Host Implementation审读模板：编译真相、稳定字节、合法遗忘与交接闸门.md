@@ -54,11 +54,13 @@ authority source:
 assembly path:
 compiled request summary:
 compiled request diff:
+witness_chain_ref:
 stable bytes ledger:
 lawful forgetting ABI:
 current object:
 pending action:
 next-step guard:
+continuation_qualification_verdict:
 rollback object:
 ```
 
@@ -156,7 +158,9 @@ Prompt implementation 更稳的评审顺序是：
 [ ] pending action 已写清
 [ ] next-step guard 已写清
 [ ] rollback object 已写清
+[ ] witness chain ref 已写清
 [ ] lawful forgetting 之后保留的 ABI 已写清
+[ ] continuation qualification verdict 已写清
 [ ] 如果不读全文，接手者仍能继续
 ```
 
@@ -181,9 +185,11 @@ Prompt implementation 更稳的评审顺序是：
 authority source:
 assembly path:
 compiled request diff:
+witness_chain_ref:
 stable bytes drift:
 lawful forgetting ABI:
 handoff guard:
+continuation_qualification_verdict:
 当前最像哪类失真:
 - 卡片替代真相 / 绿灯替代解释 / 顺序替代判断 / 摘要替代交接
 下一步应重写的是:

@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 prompt-abi-owner-collapse 深化动作：已继续更新 `84`、`51`、`36` 与 userbook 的 Prompt consumer 页。新的结论是：当前 Prompt 线更贵的 residual，已经不再是“Prompt 为什么强”没写，而是 same-world witness 在 frontdoor、自校、host audit 与 user translation 之间仍可能各自变体。更稳的默认修法是：让 `84` 独占 canonical Prompt ABI，`51` 把它写成 builder-facing 复用对象，`36` 把它写成 host/handoff 必填字段，`userbook` 只做最短翻译。
+- 本轮新的 Prompt 结论：`message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict` 这 6 个引用现在更明确被写成 Prompt 线唯一该复用的 ABI；谁开始靠 summary prose、最后一条回复、`/resume` 成功提示或 compact 结果重签它，谁就在制造第二 Prompt 前门。
+- 本轮新的 continuity 结论：`Compact / Resume / Memory / Export` 默认继续只消费 `continuation_object_ref + continue_qualification_verdict` 这一段时间轴，不再作为 Prompt 主语本身出现；这让 continuity 更稳定地回到 Prompt / 治理 / cleanup 的交汇，而不是变成第四条母线。
 - 本轮 governance-one-order synthesis 深化动作：已继续更新 `10`、`61`、`security/README` 与 `risk/README`。新的结论是：当前更值钱的不是再补治理链条名词，而是把“强 signer 面 / 弱读回面 / 用户侧读回”之间的非对称写硬。更稳的默认修法是：`10` 负责写一屏 canonical chain 与弱读回面声明，`61` 负责写为什么共用预算器还不够，`security/README` 负责 signer/projection/cleanup ladder，`risk/README` 负责 `product promise / reopen / evidence` 的用户侧读回。
 - 本轮新的治理结论：安全与省 token 在 Claude Code 里共享的不是“一个预算器按钮”，而是同一条治理秩序对 model-reachable world 的危险扩张与昂贵扩张同时收费。更短地说，token saving 真正省掉的不是文本长度，而是免费暴露、免费继续与免费遗留 liability。
 - 本轮新的 signer/readback 结论：`/status / /doctor / /usage`、approval UI、summary、`Compact / Resume / Memory`、`cleanup result` 与 `product promise readback` 默认都只该触发怀疑、二跳或消费已外化 verdict；它们一旦被写成 signer surface，治理、cleanup 与 reopen 就会一起变浅。

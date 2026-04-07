@@ -193,6 +193,13 @@ Claude Code 更接近的真相是：
 5. `continuation_object_ref`
 6. `continue_qualification_verdict`
 
+更硬一点说，这 6 个引用就构成 Prompt 线唯一该复用的 canonical ABI：
+
+- `84` 用它声明 first-reject path
+- `30` 用它做苏格拉底 gate
+- `36` 用它做 host / handoff 审读
+- `userbook` 只翻译它，不重造它
+
 更稳的实现纪律是：
 
 1. `compact / resume / fork / side query / handoff`

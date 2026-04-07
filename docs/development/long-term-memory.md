@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/84`、`bluebook/guides/51`、`bluebook/guides/36` 与 userbook Prompt consumer 页的长期默认 prompt-abi-owner-collapse language 现已继续写死：
+  - `84` 默认继续独占 canonical Prompt ABI statement：`message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+  - `51` 默认继续把这 6-link chain 写成 builder-facing 复用对象，不再另造一套实现 ABI
+  - `36` 默认继续要求 `witness_chain_ref` 与 `continuation_qualification_verdict` 成为 host / handoff 审读必填字段
+  - `userbook/00`、`userbook/01-主线使用/02` 与 `userbook/05-控制面深挖/03` 默认继续只翻译这张 ABI，不再生成第二套 Prompt doctrine 或 continuity frontdoor
+  - 更稳的默认修法顺序继续是：`先固定 owner ABI -> 再让 audit/template 复用 -> 最后只给 userbook 最短映射`
 - `bluebook/10`、`bluebook/philosophy/61`、`bluebook/security/README` 与 `bluebook/risk/README` 的长期默认 governance-one-order language 现已继续写死：
   - `10` 默认继续显式区分强 signer 面与弱读回面，并把“为什么共用预算器还不够”固定二跳到 `61`
   - `61` 默认继续把安全与省 token 写成“同一条治理秩序对 model-reachable world 的危险扩张与昂贵扩张同时收费”，不再退回“两个并列 feature”

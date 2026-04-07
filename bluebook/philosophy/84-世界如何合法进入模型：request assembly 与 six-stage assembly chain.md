@@ -99,7 +99,7 @@ Anthropic 官方文档把这条 force ladder 说得更硬了一层：
 如果把这章继续压成最短公式，只剩三行：
 
 1. `frontdoor order = Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
-2. `same-world witnesses = message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+2. `canonical Prompt ABI = message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
 3. `compile -> protocolize -> preserve -> continue -> explain`
 
 如果这三行还需要靠“连续性系统”这样的第四对象补完，通常也说明这里仍在把时间轴误写成独立 Prompt 平面。
@@ -107,7 +107,7 @@ Anthropic 官方文档把这条 force ladder 说得更硬了一层：
 这里也要先卡死三层关系：
 
 - 第一行给 later maintainer 的 `first-reject path`
-- 第二行才是 object-level same-world witness
+- 第二行才是唯一 object-level same-world witness；frontdoor、自校、host audit 与 userbook 都只配消费这张 ABI，不该各自重造一条 Prompt 解释链
 - 第三行只是动作链，不替代前两行
 
 更稳的 Prompt reject trio 也只认三条：
