@@ -40,6 +40,7 @@
 
 - Prompt 的魔力不在措辞，而在它先用 Authority 定义世界、用 Boundary 固定合法字节、用 Transcript 规定模型实际消费、用 Lineage 保住同一身份、用 Continuation 裁定还能否继续，并用 Explainability 把失稳点提前点名。
 - 前五项才是 `world-entry / continue verdict` 的 witness set；`Explainability` 只拥有失稳命名权，没有改判权。
+- 前门 shorthand 一旦落到排查，只认 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`；`CLAUDE.md / auto memory` 在官方文档里属于 advisory context，不是 enforced configuration，不能直接越位成 Authority witness。
 
 如果只先记治理前门的一句话，也只记这句：
 

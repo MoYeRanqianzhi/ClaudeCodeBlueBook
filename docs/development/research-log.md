@@ -2,6 +2,10 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 Prompt 前门再收口动作: 已继续更新 `bluebook/09`、`philosophy/README`、`philosophy/84 / 81`、`architecture/82` 与 `navigation/41`。这一批不再补更多对象，而是把 Prompt 魔力最容易被写浅的四个断点写硬：`verify loop`、`advisory context vs enforced law`、`shared-prefix helper path vs fresh-context subagent`、以及 Anthropic engineering 明说的 `collaboration framework / effort budget / tool heuristics / observability / feedback loops`。
+- 本轮新的 Prompt 结论: `same-world compiler` 若只剩 nouns 和 compile path，而没有把 `verify results` 写进世界闭环，就还是半程解释。Anthropic 官方把 Claude Code 直接写成 `gather context -> take action -> verify results`，因此后续凡是再解释 Prompt 魔力，都应先问：verify 还是否在同一条 witness chain 上成立。
+- 本轮新的 force-class 结论: `CLAUDE.md / auto memory` 现在更明确只应被视为 advisory context，不得直接充当 Authority witness；Prompt 的合法复数因此更稳地被写成 `compiled law / advisory memory / delegated world` 在同一 authority chain 下按 force class 共存，而不是几份 prompt surface 平权并列。
+- 本轮新的 delegation 结论: `cache-safe fork` 与 `fresh-context subagent` 必须继续二分。前者保护 shared prefix continuity，后者保护 delegation isolation；把 `/btw`、memory helper、summary path 与 fresh-context subagent 混写成同一种 continuation，是 Prompt 线当前最高价值的误写之一。
 - 本轮官方 contract 前推动作: 已继续更新 `bluebook/architecture/62 / 64 / 73 / 33` 与 `83 / 74`、`userbook/02-能力地图/03-治理与边界/01`、`userbook/02-能力地图/01-运行时主链/05`。这一批不是再补对象名，而是把 Anthropic 官方公开 docs/engineering 已承认的 runtime contract 直接推进到高阶总论页和用户高流量页：startup context composition、subagent separate context window、prompt caching、auto-compaction、auto mode 的 fast probe + reasoning fallback、sandboxing 的 filesystem/network isolation 与 `84%` permission-prompt reduction、以及 file checkpointing 的 rollback ceiling，都被明确写回设计内涵。
 - 本轮新的 Prompt 结论: `语义压缩` 现在应长期记成一条 load-fate contract，而不只是 turn 后压缩。更稳的四类 fate 是 `startup full-load / name-only preload / on-demand expansion / summary return`；只要分析还只围绕 session memory、suggestion 和 result replacement，而没有把 startup composition 和 subagent isolation 算进去，就仍然写浅了。
 - 本轮新的安全/治理结论: `Narrow / Later / Outside` 现在有了更硬的外部反证。sandbox、approval、separate context window、fast probe、reasoning fallback 与 classifier transcript stripping 不再只是底层实现，而是一条公开可解释的“未定价扩张不准直进主 agent 世界”治理合同。后续凡是再写安全和省 token，如果没有把这几类边界写成同一条 contract，应直接视为只写了结果面。

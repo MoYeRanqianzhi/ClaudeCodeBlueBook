@@ -198,6 +198,15 @@ Claude Code 更深的一层是：
 
 - 旁路循环默认复用父前缀，而不是各自重写世界
 
+这里必须再补一刀：官方文档明确区分两种 continuation shape：
+
+1. shared-prefix helper path
+   - `/btw`、prompt suggestion、部分 memory/helper 循环优先复用父前缀
+2. fresh-context delegated path
+   - subagent 拥有自己的 context window、own prompt 与独立 capability boundary，只把 summary / artifact ref 回桥
+
+所以 `cache-safe fork` 与 `fresh-context subagent` 不能混写成同一种 continuation；前者保护 prefix continuity，后者保护 delegation isolation。
+
 这意味着：
 
 1. 主线程是稳定前缀生产者

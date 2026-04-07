@@ -186,6 +186,12 @@ Claude Code 更成熟的地方在于，它先问：
 
 更进一步，section registry 也不是一份静态目录，而是会在 `/compact` 之后被重新整理、重置与续接的运行时对象。这意味着 Prompt Constitution 不是“永远附着在顶部的一段总纲”，而是有自己生命周期的正式制度资产。
 
+Anthropic 官方文档又把这件事往外表钉死了一层：
+
+1. nested `CLAUDE.md`、path-scoped rules、skills 与 MCP 定义都属于按需加载对象；
+2. startup context、on-demand expansion 与 `/compact` 后 reload 被公开写成不同 load fate；
+3. `InstructionsLoaded / PreCompact / PostCompact` 这种 hook 生命周期进一步说明，Boundary 不只是在管 stable bytes，还在管 `eager load / lazy load / compact reload` 的正式装配法。
+
 ## 7. 第六层：工具 ABI 与写作法同属 Prompt 法律
 
 Claude Code 的 Prompt 高密度，不只因为 instruction 多，还因为：

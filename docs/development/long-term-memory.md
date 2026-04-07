@@ -8,6 +8,26 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- Prompt 母线现在应长期继续守住一个更硬的 production crosswalk：
+  - `same-world compiler` 不能只剩 `compile`
+  - 它还必须继续接上官方公开的 `verify results`
+  - 后续凡是再写 Prompt 魔力，如果没有回答 verify 是否仍沿同一 witness chain 成立，应按“只写了开场，没有写闭环”拒收
+- Prompt force class 现已继续写死：
+  - `compiled law`
+  - `advisory context`
+  - `delegated world`
+  - `CLAUDE.md / auto memory` 默认属于 advisory context；subagent world 属于 delegated world；二者都不得越位成 Authority witness
+- continuation shape 现已继续稳定成二分法：
+  - `shared-prefix helper path`
+  - `fresh-context delegated path`
+  - `/btw`、prompt suggestion、部分 memory/helper 回路优先属于前者；subagent 属于后者；后续不要再把它们混写成“都是 fork”
+- Anthropic engineering 对 Prompt 的 production framing 现已成为长期可复用证据：
+  - `collaboration framework`
+  - `effort budget`
+  - `tool heuristics`
+  - `observability`
+  - `tight feedback loops`
+  - 这组词后续应优先用于修正“Prompt 魔力 = 更会写 prompt”的写浅倾向
 - 官方 docs / engineering 现已被继续写成和公开源码镜像并列的长期证据面：
   - 源码负责给 mechanism kernel
   - 官方 docs 负责给 externalized contract

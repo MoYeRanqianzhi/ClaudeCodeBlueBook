@@ -69,6 +69,8 @@ Prompt `66 -> 69 -> 72 -> 78 -> 47 -> 50` 与结构 `guides/83 / 92 -> playbooks
 3. `../guides/99`
 4. `../playbooks/77`
 
+Anthropic 官方 engineering 还把这条线从 production 角度补硬了一层：prompt engineering 真正的杠杆是 collaboration framework、effort budget、tool heuristics、observability 与 tight feedback loops；这说明 `same-world compiler` 若只剩 nouns、没有 verify 与 delegation heuristics，就还没有压回 production first principles。
+
 这条线的核心不是：
 
 - 再夸一次 Prompt 很强

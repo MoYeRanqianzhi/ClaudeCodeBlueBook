@@ -68,6 +68,14 @@ Prompt 的魔力，首先来自：
 
 更硬一点说，Prompt 的合法复数是 `projection pluralism`，不是 `adjudication pluralism`；复数成立，裁决权仍然单源。
 
+Anthropic 官方文档把这条 force ladder 说得更硬了一层：
+
+- `CLAUDE.md / auto memory` 属于 advisory context；
+- subagent 可以拥有 own context window、custom system prompt 与独立 capability boundary；
+- 但这些复数 surface 仍必须回到同一个 `world-defining winner` 下决定谁在改判。
+
+所以 Prompt 的合法复数不是“所有 surface 同权并列”，而是 compiled law、advisory memory 与 delegated world 在同一条 authority chain 下按 force class 并存。
+
 而 `compact / resume` 则决定这些 surface 在遗忘、重链与继续后还能否保持同一条 continuation contract。
 
 更硬一点说，合法遗忘真正保护的也不是记忆密度，而是：
