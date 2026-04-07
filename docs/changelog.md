@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/philosophy/README.md`、`bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`，把 Prompt 高阶前门继续从 route phrase、effect wording 与 competing verb formula 收回 first-principles question：`philosophy/README` 现在先说“世界如何合法进入模型”，`15` 现在把 Prompt 审读首问改成 `same-world witness chain`，`41` 现在把 H1、Prompt 小节与一行公式统一收回“谁定义世界、模型实际消费什么、继续资格由谁裁定”
 - 继续更新 `bluebook/security/README.md`、`bluebook/architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`、`bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md` 与 `bluebook/risk/README.md`，把安全/省 token/风控这组三条高阶前门继续从结果词收回治理顺序本身：`83 / 85` 现在更明确先说 `decision window / continuation pricing` 与扩张定价，`security/README` 现在更明确拒收“两条结果词前门”的写法，`risk/README` 现在更明确自己不是另一条治理链
 - 继续更新 `bluebook/architecture/README.md`、`bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md` 与 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`，把源码质量高阶前门继续从“源码先进性”这组评价词收回 `源码质量判断 / canonical ladder / one writable present`：`architecture/README` 现在更明确先问“源码质量到底该怎样判”，`86` 现在把外层证据路径写成 canonical ladder，`87` 现在把前门判断句收回“源码质量判断”
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`，把高阶前门 summary 继续从“更强 / 更省 / 更先进”这组结果词压回对象顺序：入口层现在更明确先说 `same-world test / decision window / current-truth protection`，再解释它们为什么会显得有效、省 token 或先进

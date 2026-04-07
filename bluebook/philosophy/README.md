@@ -1,6 +1,6 @@
 # 哲学专题
 
-`philosophy/` 解释 Claude Code 为什么要这样设计，而不是仅仅罗列功能：为什么 `world entry / request assembly / six-stage assembly chain` 必须先成立，为什么治理要被写成统一定价，为什么源码质量首先服务当前真相保护。
+`philosophy/` 只回答三件事：世界如何合法进入模型，扩张如何先被定价，过去如何不得越权写回现在。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，不要急着在这里直接下哲学判断。
 
 如果把 `philosophy/` 前门再压成最短公式，只剩三条：
@@ -34,8 +34,8 @@
 
 如果只先记 Prompt 前门的一句话，也只记这句：
 
-- Prompt 的效力不在措辞，而在它先用 Authority 定义世界、用 Boundary 固定合法字节、用 Transcript 规定模型实际消费、用 Lineage 保住同一身份、用 Continuation 裁定还能否继续，并用 Explainability 把失稳点提前点名。
-- 前五项才是 `world-entry / continue verdict` 的 witness set；`Explainability` 只拥有失稳命名权，没有改判权。
+- Prompt 前门不先比较措辞，而先回答谁定义世界、谁固定合法字节、模型实际消费什么、同一身份如何延续、继续资格由谁裁定，以及失稳该由谁命名。
+- 前五项才是 `same-world test` 的 witness set；`Explainability` 只拥有失稳命名权，没有改判权。
 - 前门 shorthand 一旦落到排查，只认 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`；`CLAUDE.md / auto memory` 在官方文档里属于 advisory context，不是 enforced configuration，不能直接越位成 Authority witness。
 
 如果只先记治理前门的一句话，也只记这句：
@@ -81,14 +81,14 @@ Prompt 线最短的 reject trio 也只认：
 ## 什么时候进来
 
 - 当你已经知道功能和机制存在，但还没回答“为什么必须这样设计”。
-- 当你想把 `world entry / request assembly / six-stage assembly chain`、统一定价治理、当前真相保护，从做法解释压回不可约判断。
+- 当你想把世界如何合法进入模型、统一定价治理、当前真相保护，从做法解释压回不可约判断。
 - 当你需要区分什么是实现、什么是约束、什么是迁移到别的 runtime 后仍成立的原则。
 - 当你已经完成“模仿对象校正”和“失稳前追问”，准备把它们继续压成第一性原理。
 
 ## 如果你只先判断一件事
 
-- 如果你只先判断“为什么 `world entry / request assembly / six-stage assembly chain` 不是文案技巧”，从 [84-世界如何合法进入模型：request assembly 与 six-stage assembly chain](<84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md>) 进入；缺机制展开再下潜到 [81-请求编译链：可缓存、可转写、可继续](<81-请求编译链：可缓存、可转写、可继续.md>)，缺时间轴再走 [63-Prompt 时间轴：先规定继续资格，再谈摘要连续性](<63-Prompt 时间轴：先规定继续资格，再谈摘要连续性.md>)，缺诊断命名再走 [33-Explainability只是Prompt的诊断命名层](<33-Explainability只是Prompt的诊断命名层.md>)。
-  - 失败信号：还在把 Prompt 效力解释成更长 instruction 或更强措辞，或者前门还没有回到 `Authority / Boundary / Transcript / Lineage / Continuation / Explainability`。
+- 如果你只先判断“为什么 Prompt 必须先证明同一世界”，从 [84-世界如何合法进入模型：request assembly 与 six-stage assembly chain](<84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md>) 进入；缺机制展开再下潜到 [81-请求编译链：可缓存、可转写、可继续](<81-请求编译链：可缓存、可转写、可继续.md>)，缺时间轴再走 [63-Prompt 时间轴：先规定继续资格，再谈摘要连续性](<63-Prompt 时间轴：先规定继续资格，再谈摘要连续性.md>)，缺诊断命名再走 [33-Explainability只是Prompt的诊断命名层](<33-Explainability只是Prompt的诊断命名层.md>)。
+  - 失败信号：还在比较 instruction 长短或措辞强弱，而没有先回答谁定义世界、模型实际消费什么、继续资格由谁裁定。
 - 如果你只先判断“为什么安全与省 token 是同一条治理定价链”，从 [85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md](85-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E6%B2%BB%E7%90%86%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%9B%B4%E4%BC%9A%E6%8B%A6%E6%88%AA%EF%BC%8C%E8%80%8C%E6%98%AF%E6%9B%B4%E4%BC%9A%E4%B8%BA%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7.md) 进入。
   - 失败信号：还在把治理理解成权限门数、模式面板、token 百分比，或把 `Context Usage` 继续读成成本面板；还没把 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 写成正式判断。
 - 如果你只先判断“为什么源码质量首先服务当前真相保护”，从 [86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md](86-%E7%9C%9F%E6%AD%A3%E5%85%88%E8%BF%9B%E7%9A%84%E5%86%85%E6%A0%B8%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%9B%B4%E4%BC%9A%E5%88%86%E5%B1%82%EF%BC%8C%E8%80%8C%E6%98%AF%E6%9B%B4%E4%BC%9A%E9%98%BB%E6%AD%A2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md) 与 [87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md](87-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E5%88%A4%E6%96%AD%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%96%87%E4%BB%B6%E6%9B%B4%E5%B0%8F%EF%BC%8C%E8%80%8C%E6%98%AF%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%AD%E5%BF%83%E5%90%88%E6%B3%95%E3%80%81%E8%BE%B9%E7%95%8C%E5%8F%AF%E8%AF%81%E3%80%81%E4%B8%8B%E4%B8%80%E6%AC%A1%E9%87%8D%E6%9E%84%E4%BB%8D%E6%9C%89%E8%B7%AF.md) 进入。

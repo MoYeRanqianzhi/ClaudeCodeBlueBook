@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/README`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-frontdoor-speaking-right language 现已继续写死：
+  - Prompt 高阶前门默认继续先问“谁定义世界、模型实际消费什么、同一身份如何延续、继续资格由谁裁定”，不先问 Prompt 是否更强、更有效或 instruction 是否更长
+  - `philosophy/README` 默认继续把 Prompt 入口写成“世界如何合法进入模型”，不再让 `world entry / request assembly / six-stage assembly chain` 抢第一主语
+  - `navigation/15` 与 `navigation/41` 默认继续拒收与 witness order 竞争的 verb formula；`compile -> ... -> explain` 只配做解释层压缩句，不配抢 first-answer speaking right
 - `bluebook/security/README`、`bluebook/architecture/83`、`bluebook/philosophy/85` 与 `bluebook/risk/README` 的长期默认 governance-result-word-demotion language 现已继续写死：
   - 安全/省 token/风控高阶前门默认继续先说治理顺序，不先说“更安全 / 更省 / 更严”
   - `architecture/83` 与 `philosophy/85` 默认继续把前门问句回绑 `decision window / continuation pricing`
