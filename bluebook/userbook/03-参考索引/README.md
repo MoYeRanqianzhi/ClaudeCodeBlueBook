@@ -82,6 +82,7 @@
 48. `getUserSpecifiedModelSetting`、`isModelAllowed`、`ANTHROPIC_MODEL`、`settings.model` 与 `getMainLoopModel` 看起来都在模型准入附近时，应该先去哪个入口分辨 source selection 之后的 allowlist veto 不会回退到更低优先级来源。
 49. `model.tsx`、`validateModel`、`getModelOptions` 与 `getUserSpecifiedModelSetting` 看起来都在 allowlist 可见面附近时，应该先去哪个入口分辨显式拒绝、选项隐藏与 silent veto 不是同一种 allowlist contract。
 50. `reusedPriorSession`、`previouslyFlushedUUIDs`、`createCodeSession` 与 `flushHistory` 看起来都在 continuity 历史附近时，应该先去哪个入口分辨 v1 continuity ledger 与 v2 fresh-session replay 不是同一种 history contract。
+51. `writeMessages`、`writeSdkMessages`、`initialMessageUUIDs`、`recentPostedUUIDs` 与 `flushGate` 看起来都在 bridge 写入附近时，应该先去哪个入口分辨 REPL path 与 daemon path 不是同一种 bridge write contract。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 

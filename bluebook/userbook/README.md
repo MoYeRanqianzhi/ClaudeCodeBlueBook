@@ -176,6 +176,8 @@
   [05-控制面深挖/188-model.tsx、validateModel、getModelOptions 与 getUserSpecifiedModelSetting：为什么显式拒绝、选项隐藏与 silent veto 不是同一种 allowlist contract.md](./05-控制面深挖/188-model.tsx、validateModel、getModelOptions%20与%20getUserSpecifiedModelSetting：为什么显式拒绝、选项隐藏与%20silent%20veto%20不是同一种%20allowlist%20contract.md)
 - 想分清 `reusedPriorSession`、`previouslyFlushedUUIDs`、`createCodeSession` 与 `flushHistory` 的 continuity ledger：
   [05-控制面深挖/189-reusedPriorSession、previouslyFlushedUUIDs、createCodeSession 与 flushHistory：为什么 v1 continuity ledger 与 v2 fresh-session replay 不是同一种 history contract.md](./05-控制面深挖/189-reusedPriorSession、previouslyFlushedUUIDs、createCodeSession%20与%20flushHistory：为什么%20v1%20continuity%20ledger%20与%20v2%20fresh-session%20replay%20不是同一种%20history%20contract.md)
+- 想分清 `writeMessages`、`writeSdkMessages`、`initialMessageUUIDs`、`recentPostedUUIDs` 与 `flushGate` 的 bridge write contract：
+  [05-控制面深挖/190-writeMessages、writeSdkMessages、initialMessageUUIDs、recentPostedUUIDs 与 flushGate：为什么 REPL path 与 daemon path 不是同一种 bridge write contract.md](./05-控制面深挖/190-writeMessages、writeSdkMessages、initialMessageUUIDs、recentPostedUUIDs%20与%20flushGate：为什么%20REPL%20path%20与%20daemon%20path%20不是同一种%20bridge%20write%20contract.md)
 
 如果你已经确定要读某个专题，请先到对应 README 再选深页，不要把根前门当默认深链库存。
 
