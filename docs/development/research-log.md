@@ -2,6 +2,15 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 prompt-route-trim-and-entry-role-hardening 深化动作：已继续更新 `bluebook/README`、`bluebook/userbook/README`、`bluebook/navigation/README`、`bluebook/06` 与 `docs/development/00-研究方法`。新的结论是：当前更高价值的目录优化，不在于再补一个 Prompt 入口卡，而在于把 Prompt owner split 写死成 `84 / 51 / 06`，并把“先做 route trim、再谈新入口”升成顶层制度。
+- 本轮新的 Prompt 结论：Prompt 的“魔力”继续被压回 same-world contract，而不是 prompt prose；根入口现在正式把 Prompt first-hop 写成 `same-world compiler -> philosophy/84 -> guides/51`，`06` 只负责解释为什么这套 owner split 比再补一个 Prompt 前门更稳。并行 agent 也确认：新增 Prompt 入口卡只会增加 first-answer count，不会减少它。
+- 本轮新的目录结构结论：`bluebook/` 顶层入口现在更稳地被读成分层角色，而不是 `00-09` 强线性教程。当前更可复用的角色顺序是：`00=导读/locator`，`09=宪法`，`03=why`，`06=self-audit`，`01/10=bridge`。源码质量线的并行分析也进一步提示：若后续再动 `02` 与 `05`，更自然的方向是把它们继续降成 bridge，而不是继续站在 bluebook 根层抢 usage/capability 首答。
+- 本轮新的方法论结论：`docs/development/00-研究方法` 现在正式把目录优化写成七问反证：除了 `formula / order / evidence ceiling / verdict` 四分法，还必须追问“删掉这页会失去什么”“为什么不用更简单方案”“镜像缺席时会不会放大 second narrator risk”。默认动作顺序也已写硬为 `label fix -> route trim -> speaking rights / appeal chain -> README sync -> new entry`。
+- 本轮新的 user-facing 结论：`userbook/README` 现在把 Prompt 说法继续降回“同一现场”与四问自校，不再在根前门保留过重的 owner 级 Prompt 术语；同时继续把 `public-evidence ceiling`、弱读回面与 `上下文送错 / 扩张或权限判错 / 旧状态污染` 固定成用户侧第一判断。
+- 本轮新的安全与 token 结论：并行 agent 继续确认安全与省 token 不是两条优化，而是“当前世界准入主权”对四类扩张收费；真正可签的治理面只认 `governance key / truth chain / typed ask / decision window + continuation pricing / cleanup`，其余 mode/modal、`/status / /doctor / /usage`、`compact/resume`、summary/transcript 都只是弱读回面。后续若再收紧高流量治理前门，应继续让 `10` 保留公式，`security` 保留机制翻译，`risk` 保留用户侧读回。
+- 本轮新的源码质量结论：并行 agent 继续确认源码质量线当前最需要的不是再补 aura 文案，而是继续收束 owner。更稳的默认链已更清楚地显出来：`guides/102` 管证据上限与 canonical ladder，`philosophy/86 / 87` 管 why，`architecture/84 / 63` 管对象与 kernel，`api/39 / 42` 管 artifact contract，`playbooks/79` 与 `casebooks/75` 管 verdict 与反例。反过来说，`navigation`、`userbook` 与 `docs` 不该再代签源码质量主结论。
+- 本轮证据模式结论：当前 `mainloop` worktree 仍缺 `claude-code-source-code/`，本批次继续是 `public-evidence only`；因此本轮正文只做 owner、route、first-principles 与 directory discipline 收口，不把镜像通常可见对象写成当前本地已核验事实。
+- 本轮根仓库同步检查结果：`fetch origin main` 成功，但 `checkout main` 仍被 `bluebook/userbook/03-参考索引/README.md` 与 `bluebook/userbook/README.md` 的 unresolved merge 阻塞，`merge --ff-only origin/main` 也因此失败；根仓当前状态为 `main...origin/main [ahead 30]` 且仍有额外脏改动。本轮继续严格只在 `.worktrees/mainloop` 内推进。
 - 本轮 central-entry-and-method-depth 深化动作: 已继续更新 `bluebook/README`、`bluebook/navigation/README`、`bluebook/09`、`bluebook/01`、`philosophy/70`、`guides/22`、`guides/30`、`guides/32`、`playbooks/08`、`11`、`16`。新的结论是：当前更高价值的 residual，已经不在主线页有没有 canonical chain，而在中央入口页、深层方法页和执行手册页是否还会用旧 `前门 / 魔力 / 权威面` 语言偷偷把 later maintainer 带回旧主语。
 - 本轮新的目录结构结论: 根入口、跨目录入口、`09` 与源码地图现在更明确地完成同一件事：入口页只负责最小顺序、route 纪律与 speaking-right 边界，不再借 `前门 / frontdoor / 文案魔力 / 权威面` 这类旧词重新抢首答权。更稳的目录优化，不是再加 route map，而是继续减少 headline 级旧主语。
 - 本轮新的 Prompt 设计结论: Prompt 深层方法页现在更明确把“Prompt效力”写成 `compiled request truth + witness chain + continuation qualification` 的 gate 语言，而不是魅力描述。也就是说，真正该被 later maintainer 复用的，不是“这套 Prompt 很强”，而是“哪些 witness 必须同时成立，否则就 reject / rollback / stop continue”。

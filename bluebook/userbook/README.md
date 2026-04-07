@@ -15,24 +15,27 @@
 
 如果只先记住三条使用判断，也只先记这三条：
 
-1. 好 Prompt 不是更像专家，而是先解出唯一工作对象，再确认 `compile inputs` 和 `verify witnesses` 仍沿同一条 `message lineage -> continue_qualification_verdict` 继续成立。
+1. 好 Prompt 不是更像专家，而是先解出唯一工作对象，再确认“现在究竟在做什么、为什么还能继续”仍指向同一现场。
 2. 安全不是弹窗多少，而是 `pricing-right -> truth-surface attestation -> typed ask / sandbox / writeback seam` 是否先成立；任何治理界面、状态读数或继续入口都只配读取 verdict，不配改判控制面。
 3. 真正省 token 不是把话压短，而是 stable bytes 已被外置且可 reload，只把当前 working set 留在场内；`Narrow / Later / Outside` 只是这条 contract 的用户侧读法。
 
 如果你只缺治理收费链的一屏速记，而不是具体控制面下潜，先回 [../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；userbook 根入口只保留问题分型、用户侧最小顺序与二跳。
 
-这里还应再多记一句：
-
-- `userbook/` 不在根入口第二次展开完整治理顺序；治理速记统一回 `../10 -> ../09`，控制面翻译统一回 `05-控制面深挖/README`，任何治理界面、状态读数、压缩入口或导出入口都只配读取 verdict，不配改判控制面或恢复资格。
-- 弱读回面只做 `projection / readback`：`status / usage / summary / transcript / continue` 只配触发怀疑，不改判治理真相、继续资格或恢复资格。
-
-这里还要再多记一句：
+这里还应先钉死六条 user-facing discipline：
 
 - `userbook/` 不宣布新的系统真相，它只把已经承认的对象链、控制面和可见边界翻译成用户侧可操作判断。
 - `userbook/` 默认只把已承认的对象链、控制面与可见边界翻成用户侧判断与二跳，不替 `README / 09 / api` 补签 runtime-core 缺口；先忘了这层 `public-evidence ceiling`，就会把 UI 面和状态词误当系统真相。
+- `userbook/` 不在根入口第二次展开完整治理顺序；治理速记统一回 `../10 -> ../09`，控制面翻译统一回 `05-控制面深挖/README`。
+- 弱读回面只做 `projection / readback`：`status / usage / summary / transcript / continue` 只配触发怀疑，不改判治理真相、继续资格或恢复资格。
 - Prompt 也不是单段 `systemPrompt`，而是 multi-surface world-entry object；`CLAUDE.md / hooks / settings` 能影响行为，但不能替 runtime witness 签 continue。
-- `continuity` 在 `userbook/` 里也不是第四条使用主题；它只是同一工作对象在 Prompt `Continuation`、治理 `continuation pricing` 与当前真相收口上的共同时间轴。
-- 所以 user-facing 第一问也不该是“该点哪个入口”，而应先判 `上下文送错 / 扩张或权限判错 / 旧状态污染`；先定题，不先找页。
+- `continuity` 在 `userbook/` 里也不是第四条使用主题；它只是同一工作对象在 Prompt `Continuation`、治理 `continuation pricing` 与当前真相收口上的共同时间轴。所以 user-facing 第一问不该是“该点哪个入口”，而应先判 `上下文送错 / 扩张或权限判错 / 旧状态污染`；先定题，不先找页。
+
+## 用户侧四问
+
+- 我是不是正在用 `systemPrompt` 截图、`status`、`usage`、summary 这些弱读回面，偷替工作对象、signer 或 continue verdict 说话。
+- 我缺的是 Prompt 的 same-world witness、治理 signer，还是 current-truth writeback，而不是“再点一个入口”。
+- 我现在是在找下一跳，还是已经越级偷问 canonical owner。
+- 当前 worktree 若缺镜像，我写的是用户侧读法，还是在越界补签 runtime truth。
 
 ## 先做三类问题分型
 

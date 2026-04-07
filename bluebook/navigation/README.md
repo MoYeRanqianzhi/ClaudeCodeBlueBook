@@ -16,6 +16,12 @@
 
 这里不再重复根入口的 canonical formula 与三组最小顺序；若你现在还缺这些，先回 [../README.md](../README.md) 与 `09`。`navigation/` 只接管两件事：判你该去哪一层证据，判哪一页只配当 route 不配改判。
 
+Prompt 问题若还在混，也只先拆三种缺口：
+
+- 缺顶层主语与 `first-reject path`，回 `philosophy/84`
+- 缺 same-world witness、实现顺序与 `continue qualification`，回 `guides/51`
+- 缺“为什么这轮只该 route trim、还不该新开 Prompt 入口”，回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md) 与 [../../docs/development/00-研究方法.md](../../docs/development/00-%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95.md)
+
 治理 / 安全 / Token 问题若已确认缺的是对象链而不是路线，也只先弹回：
 
 - `10 -> 85 -> 83 -> 100 -> security -> risk`
@@ -120,3 +126,4 @@
 - 一旦 `bluebook/README` 开始复制深链，或某个目录 README 开始第一次解释别的目录的 canonical formula，也视为混层。
 - 一旦入口页只能给公式、却给不出最小顺序，它就仍停在 route map 层，还没有完成 later maintainer 可执行化。
 - 一旦跨目录入口把 `runtime-core evidence`、`operator-governance evidence` 与公开镜像缺口混写成同一 certainty，route 就会开始伪装成 authority。
+- 一旦新的 route 提案还答不上自己缺的是 `formula / order / evidence ceiling / verdict` 哪一类，先退回 `06` 与 `docs/development/00`，不要急着升成目录动作。

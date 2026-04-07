@@ -5,7 +5,7 @@
 如果把蓝皮书入口再压成最短公式，只剩三条：
 
 1. Prompt
-   - Prompt 的首答来源统一回 `philosophy/84`；根入口这里只保留 `same-world compiler` 这句二跳前 hook，不在这里另起第二套 Prompt 总法。
+   - 根入口只保留 `same-world compiler` 这句总钩子；顶层判断与 `first-reject path` 回 `philosophy/84`，same-world witness、实现顺序与 `continue qualification` 回 `guides/51`；若要追问为什么这仍不该再长出第二 Prompt 前门，再回 `06`。
 2. 治理
    - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
    - 任何 user-facing bucket 都只是这条收费链的读回助记，不是治理入口里的第二套主题；四类被收费资源、reject trio 与弱读回面统一回 [10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)
@@ -30,10 +30,6 @@
 - 后续凡是把 `runtime-core evidence`、`operator-governance evidence` 与 UI 投影混写成同一层真相，都应先按证据上限降格。
 - 入口层还应先判 `evidence mode`：本地镜像在场时优先按 mirror evidence 读；镜像缺席时先按 `public-evidence only` 模式读，不把“通常在源码镜像里可见”误写成“当前 worktree 已经核实”。
 
-如果只先记 Prompt 入口的一句话，也只记这句：
-
-- Prompt 的效力不在措辞，而在世界先被合法编译进模型；顶层判断与 `first-reject path` 统一回 `philosophy/84`，same-world witness、实现顺序与 `continue qualification` 统一回 `guides/51`。
-
 如果只先记治理入口的一句话，也只记这句：
 
 - 治理首答只认 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`；若只缺一屏速记，先回 [10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，若缺 why/runtime seam/question ladder，再按 `85 / 83 / 100` 下潜。
@@ -41,8 +37,8 @@
 如果继续把入口压成 later maintainer 能直接拿来排查的最小顺序，它还应再暴露三行：
 
 1. Prompt 入口顺序
-   - `same-world compiler`
-   - 根入口这里不再第二次重列 Prompt formula、witness 与 counterfeit；顶层判断与 `first-reject path` 回 `philosophy/84`，same-world witness、实现顺序与 `continue qualification` 回 `guides/51`。
+   - `same-world compiler -> philosophy/84 -> guides/51`
+   - 根入口只给 Prompt 的 first-hop，不再第二次重列 Prompt formula、witness 与 counterfeit；`06` 只负责解释为什么这套 owner split 比再补一个 Prompt 入口更稳。
 2. governance failure order
    - `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
    - 治理先判 `pricing-right signer / lease` 是否成立，再看 `truth-surface attestation` 有没有把 `reject / reopen` 外化清楚；`asset-rollback ABI` 只负责把收口动作做成可恢复 contract，不再冒充治理起点。
@@ -58,12 +54,14 @@
 
 - 先定题，不先找页。
   回 `09 / 03 / 06`，先判断自己究竟在问请求装配、扩张定价，还是当前真相保护。
+- 先按角色，不按编号线性走。
+  `00` 只做导读与 locator，`09` 只做宪法总图，`03` 只做 why，`06` 只做自校，`01 / 10` 只做源码定位或治理速记 bridge。
 - 先定顺序，不先追长链。
   先拿到上面的三组最小顺序，再决定自己缺的是 first reject signal、对象链，还是模板与 verdict。
 - 先定层级，最后才跨目录。
   缺高阶主语回 `09 / 05 / 15 / 41`；缺对象与 contract 去 `philosophy / architecture / api / guides / playbooks / casebooks`；只有缺“下一层去哪里找”时才进入 [navigation/README.md](navigation/README.md)。
 
-如果一个新结论第一次同时想落在 `README / navigation / guide` 三层，通常不是因为它太重要，而是因为还没判清它究竟是在定义主语、打开侧门，还是下沉证据层。
+如果一个新结论第一次同时想落在 `README / navigation / guide` 三层，通常不是因为它太重要，而是因为还没判清它究竟是在定义主语、补最小顺序、下沉证据层，还是其实只缺一次 route trim；这时先回 [06-第一性原理与苏格拉底反思](06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md) 与 [../docs/development/00-研究方法.md](../docs/development/00-%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95.md) 反问。
 
 ## 三组最小排查顺序
 
@@ -88,5 +86,3 @@
 治理线的四类被收费资源、reject trio 与弱读回面声明统一回 [10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；根入口这里只保留 canonical chain 与治理 failure order，不再第二次重列。
 
 具体深链、稳定节点、专题侧门与跨目录下一跳，统一交给 [navigation/README.md](navigation/README.md)；根入口不再继续代行 route map。
-
-更细的目录职责、稳定节点、跨目录下一跳与证据层分工，统一交给 [navigation/README.md](navigation/README.md)。
