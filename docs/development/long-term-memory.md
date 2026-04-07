@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/03` 与 `bluebook/09` 的长期默认 prompt-constitutional-demotion language 现已继续写死：
+  - `03` 默认继续只保留 `same-world compiler` 这句制度哲学 hook，不再第二次重列 Prompt `frontdoor order / canonical witness order / reject trio`
+  - `09` 默认继续只保留三张图宪法层的 Prompt 总钩子；更细的 `frontdoor order / canonical witness order / implementation order` 都继续回 `84 / guides/51`
+  - `09` 默认继续不在总论页库存化 Prompt object list，只承认 compile inputs 与 verify witnesses 两类对象必须同时存在
 - `bluebook/philosophy/README` 的长期默认 source-quality-frontdoor-singularity language 现已继续写死：
   - 源码质量线默认继续只认 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
   - `future maintainer = formal consumer` 默认继续只配解释 `consumer subset + mirror gap discipline`，不再和 ladder 并列成第二条前门

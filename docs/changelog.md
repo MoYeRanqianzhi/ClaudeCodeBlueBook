@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`，把 Prompt 第二前门再收一层：`03` 现在只保留 `same-world compiler` 这句制度解释，不再在本章第二次重列 Prompt reject trio；`09` 现在只保留三张图宪法层的 Prompt 总钩子，把具体 `frontdoor order / canonical witness order / implementation order` 继续收回 `84 / guides/51`
 - 继续更新 `bluebook/philosophy/README.md`，把源码质量前门再单源化一层：源码质量线现在只认 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 这一条 ladder，`future maintainer = formal consumer` 被明确降格成 `consumer subset + mirror gap discipline` 的解释句；同时 README 也把源码质量的 canonical route 补成先过 `guides/102` 再进 `86 / 87`
 - 继续更新 `bluebook/security/README.md` 与 `bluebook/risk/README.md`，把安全与风控前门里的 UI noun 和 route table 再降一层：`security/README` 现在把 `/status / /doctor / /usage / /compact / /resume` 这类具体名词改回 runtime readback consumer / continuation consumer，并把大段分流清单压成 object handoff；`risk/README` 现在去掉目录范围与推荐入口库存，只保留治理前门、playbook handoff 和编号段的对象下潜顺序
 - 继续更新 `bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/philosophy/README.md`，把 Prompt 术语边界和 canonical route 再收紧一层：`15` 现在明确把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 写成 `first-reject order`、把六个 ref 写成 canonical witness order；`philosophy/README` 现在把 Prompt 公式、witness 与 reject trio 继续收回 `84`，并允许只追 Prompt canonical source 的读者直接进入 `84`
