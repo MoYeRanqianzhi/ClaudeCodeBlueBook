@@ -28,6 +28,7 @@
    - 先看是不是已经换了工作对象，或附件/文件/working set/handoff 已不再服务同一件事。
 2. `扩张或权限判错`
    - 先看这次扩张有没有先被准入、当前真相有没有先说清，再决定该继续、收口、降级还是升级给人。
+   - 先判 `pricing-right -> truth-surface`，不先看 approval、mode、`/usage`、`/compact`；这些都只是 projection / continuation consumer。
 3. `旧状态污染`
    - 先看是不是旧 shim、旧恢复资产、旧 capability token 或旧 authority width 还在冒充当前世界。
 

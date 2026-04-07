@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 根 `README`、`bluebook/navigation/README`、`bluebook/userbook/README` 与 `bluebook/guides/32` 的长期默认 residual-frontdoor language 现已继续写死：
+  - 根 `README` 默认继续把治理 / 权限 / Token 问题的前门闸门写成 `先判 pricing-right / truth-surface，再决定是否需要 navigation next-hop`
+  - `navigation/README` 默认继续把 `mode / usage / approval / cleanup result` 降回“如果你还在问它们谁说了算，就说明你缺的是治理首答”
+  - `userbook/README` 默认继续把 `扩张或权限判错` 压成 `pricing-right -> truth-surface`
+  - `guides/32` 默认继续把源码质量回修顺序写成 `86 / 84 / 101 / 102 / 15 / 79 / 75`
+  - 这四页默认统一拒收 projection 词替代治理首答，以及旧 atlas/兼容桥重新接管源码质量回修顺序
 - `bluebook/09`、`bluebook/README` 与 `bluebook/navigation/15` 的长期默认 source-quality-canonical language 现已继续写死：
   - `09` 默认继续只认 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 为第三张图 canonical formula
   - `09` 默认继续把 `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability` 降回 crosswalk

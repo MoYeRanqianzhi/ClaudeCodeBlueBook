@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 residual-frontdoor 深化动作: 已继续更新根 `README.md`、`bluebook/navigation/README.md`、`bluebook/userbook/README.md` 与 `bluebook/guides/32-如何用苏格拉底诘问法审读源码先进性：权威面、恢复资产与未来维护者消费者.md`。新的结论是：治理首答如果不在最前两跳把 `pricing-right -> truth-surface` 写死，用户和 later maintainer 仍会先被 approval、mode、usage、cleanup 这些投影词带偏；源码质量桥页如果不把回修顺序 rebased 到 `86 / 84 / 101 / 102 / 15 / 79 / 75`，就仍会把 later maintainer 拉回旧 atlas/兼容桥的 route。
+- 本轮新的目录结构结论: `guides/32` 现在终于不再把源码先进性的 builder-facing 审读回修链牵回旧 frontdoor；这意味着源码质量线的 `philosophy -> architecture -> guides -> navigation/playbooks/casebooks` 已经基本完成同序化，而不是只停在同词化。
 - 本轮源码质量 canonical-split 深化动作: 已继续更新 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`、`bluebook/README.md` 与 `bluebook/navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md`。新的结论是：源码质量线当前最危险的 residual 不是概念不够，而是 canonical ladder、crosswalk 与 atlas/projection 词重新发生 authority split。更稳的默认写法是：`09` 只保留一条 canonical ladder，根 README 补齐 reject trio，`15` 只把 atlas 词当 projection。
 - 本轮新的源码质量结论: `layout-first drift / recovery-sovereignty leak / surface-gap blur` 现在被前推成根入口级 first reject signal；这意味着 later maintainer 不必先下潜到 `86 / 101` 才拿得到源码质量线的第一条反证。
 - 本轮源码质量 residual 深化动作: 已继续更新 `bluebook/architecture/README.md` 与 `bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`。新的结论是：源码质量前门最容易写浅的地方不是缺 canonical ladder，而是把 `later maintainer rejectability` 写成“看懂作者设计”，或把“目录更整齐”偷换成局部可反对性。更稳的默认写法是：先点名 `writeback seam / first retreat layer`，再谈 layout。

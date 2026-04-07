@@ -9,6 +9,8 @@
 
 - `85 -> 83 -> 100 -> security -> risk`
 
+若你还在问 mode、usage、approval 或 cleanup result 谁说了算，说明缺的不是 next-hop，而是治理首答；先回 `../README.md` 与 `09`。
+
 如果继续把源码质量线再压成 later maintainer 可立即执行的一句判断，也只该再补一条 `truth-plane order`：
 
 - `display truth` 只负责触发怀疑

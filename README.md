@@ -41,4 +41,5 @@
 
 - 根 README 只保留一级路由，不重复展开目录深链。
 - 深层分流交给各目录 `README` 和 `bluebook/navigation/README.md`。
+- 治理 / 权限 / Token 问题若还没先判 `pricing-right / truth-surface`，就先别进 `navigation/`；它只做跨目录 next-hop，不代签 `reject / reopen`。
 - `docs/` 记录过程与记忆，不回灌蓝皮书正文主语。
