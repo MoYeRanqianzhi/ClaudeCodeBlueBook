@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/09`、`bluebook/README` 与 `bluebook/navigation/15` 的长期默认 source-quality-canonical language 现已继续写死：
+  - `09` 默认继续只认 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 为第三张图 canonical formula
+  - `09` 默认继续把 `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability` 降回 crosswalk
+  - 根 `README` 默认继续保留源码质量线的 `layout-first drift / recovery-sovereignty leak / surface-gap blur`
+  - `navigation/15` 默认继续把 atlas / projection 词降回 crosswalk，不再充当前门主语
+  - 这组三页默认统一拒收源码质量线的 authority split 与 atlas 词越位
 - `bluebook/architecture/README` 与 `bluebook/philosophy/86` 的长期默认 source-quality-residual language 现已继续写死：
   - `architecture/README` 默认继续把 `局部可反对性` 写成 later maintainer 不追全仓、不追作者也能点名越权对象与 seam
   - `architecture/README` 默认继续拒收“目录更整齐 / 文件更小 / 注释更完整”直接冒充先进性

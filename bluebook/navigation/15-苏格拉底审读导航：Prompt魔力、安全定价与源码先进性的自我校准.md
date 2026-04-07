@@ -104,11 +104,11 @@
 
 规范锚点：
 
-1. `../philosophy/76`
-2. `../guides/102`
-3. `../philosophy/86`
-4. `../architecture/84`
-5. `../guides/101`
+1. `../philosophy/86`
+2. `../architecture/84`
+3. `../guides/101`
+4. `../guides/102`
+5. `../philosophy/76`
 6. `../guides/32`
 
 这条线的核心不是：
@@ -118,6 +118,7 @@
 而是：
 
 - 结构里是否已经提前编码了 `current-truth surface / recovery asset non-sovereignty / freshness gate / ghost capability` 这条 present-truth 纪律，以及证据梯度、批评路径、修改路径与退出路径
+- `truth ladder / orchestration shell / danger surface / atlas` 这些词只配做 projection / crosswalk，不再单独充当 present-truth frontdoor
 - 第一条反证信号常常不是 bug 变多，而是 replay、pointer、snapshot 或作者说明又开始篡位成 `current-truth surface`
 - 如果 `remote / session / transport` 仍被讲成功能域而不是主权域，later maintainer 就还看不见 ownership、reconnect、permission 与 exit contract 实际在保护什么
 - 如果 `event truth / current truth / display truth` 重新混写，宿主与 UI 就会再次靠 transcript replay 猜现在，而不是消费正式 writeback surface

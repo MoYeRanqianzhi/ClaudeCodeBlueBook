@@ -95,6 +95,15 @@
 - 当前真相
   先按 `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion` 排，不先看目录体感、作者说明或“看起来还算能跑”的经验判断。
 
+源码质量线还应再暴露三条 first reject signal：
+
+- `layout-first drift`
+  目录更整齐、文件更小、分层更漂亮开始冒充先进性结论。
+- `recovery-sovereignty leak`
+  pointer、snapshot、resume asset 或 replay 开始越权 current-truth surface。
+- `surface-gap blur`
+  `current-truth surface / consumer subset / hotspot kernel` 重新说不清边界。
+
 如果入口层不给这三组顺序，目录结构优化就仍然主要在帮读者“找到页”，还没有开始帮 later maintainer “先拿到同一套排查动作”。
 
 Prompt 线还应再暴露三条 first reject signal：
