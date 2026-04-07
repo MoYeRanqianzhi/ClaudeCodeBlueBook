@@ -1,6 +1,17 @@
 # Claude Code Userbook
 
-基于 `@anthropic-ai/claude-code` `v2.1.88` 反编译源码整理的用户手册。它不是第二本蓝皮书，而是用户侧前门：先判工作对象有没有送错、扩张或权限判断卡在哪一段、旧状态是否还在污染当前，再决定下一跳读哪个 README。
+基于 `@anthropic-ai/claude-code` `v2.1.88` 反编译源码整理的用户手册。它不是第二本蓝皮书，而是用户侧入口：先判工作对象有没有送错、扩张或权限判断卡在哪一段、旧状态是否还在污染当前，再决定下一跳读哪个 README。
+
+## 发言权卡
+
+- `能合法说`
+  - 把 root / `09` 已承认的对象链、控制面与可见边界翻成用户侧问题分型、最小顺序与二跳动作。
+- `不能改判`
+  - 不替 `philosophy/` 重判为什么成立，不替 `api/` 重签 host-facing truth，不替 `playbooks/` 直接发现场 verdict。
+- `canonical owner`
+  - 主语与最小顺序统一回 [../README.md](../README.md) 与 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)；host-facing truth 回 `api/`；执行 verdict 回 `playbooks/`。
+- `申诉路径`
+  - 若你怀疑 userbook 已越位，先回 `../README -> 09` 重新定题；再按“不知道为什么成立 / 不知道现在是什么 / 不知道该判什么”分别申诉到 `philosophy / api / playbooks`。
 
 如果只先记住三条使用判断，也只先记这三条：
 
@@ -88,9 +99,9 @@
 
 如果你已经确定要读某个专题，请先到对应 README 再选深页，不要把根前门当默认深链库存。
 
-## 根前门的 first reject signal
+## 根入口的 first reject signal
 
-看到下面迹象时，应先停在根前门，不要直接跳进深页：
+看到下面迹象时，应先停在根入口，不要直接跳进深页：
 
 1. 你还没先判 `上下文送错 / 扩张或权限判错 / 旧状态污染`，就已经开始点深页标题。
 2. 你还没先判工作对象或控制面，就已经在 mode、usage、status、summary 和目录体感之间来回切。

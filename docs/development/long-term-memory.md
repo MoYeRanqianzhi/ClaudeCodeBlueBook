@@ -3598,3 +3598,12 @@
 - Prompt 线的残余结构债也已经更清楚：高流量根入口仍过度依赖数字缩写和兼容 frontdoor。后续若继续优化目录，应优先减少 `00-* / 01-*` 兼容页与根 README 的数字短链，把 alias-table 或 compat 标签显式化，而不是继续在正文里解释“为什么这不是第二入口”。
 - 治理线的长期稳定约束还应继续加一条：`trusted inputs` 不是总钥匙，`workspace trust / project MCP approval / bridge eligibility / trusted-device auth / health-check runtime` 不可互推；只要任一文档开始把其中某个“通过/skip/可探活”写成整体准入 verdict，就应优先视为治理主语退化。
 - 弱读回面的降格也应成为固定 header 纪律：`Context Usage`、`worker_status`、`pending_action`、`task_summary`、`post_turn_summary`、用户可见 transcript 都只配标成 `projection/readback/观察面`，不能再让读者自己猜它们是否签 `current truth / continue verdict / recovery authority`。
+- 高流量入口现在还应固定一条新的结构纪律：先判 `evidence mode`，再判阅读顺序。更稳的最短二分法是 `mirror present` 与 `public-evidence only`；前者允许先按本地镜像核证，后者只允许按蓝皮书正文、`docs/` 归档锚点与公开材料说话，不把缺席镜像写成当前在场事实。
+- `00-导读` 一类前言页若当前 worktree 不含 `claude-code-source-code/`，就不应继续默认写“本蓝皮书研究的是仓库中的 claude-code-source-code/，其 package.json 标明……”。这类句子在 mirror absent 场景里会制造假在场。更稳的写法是：研究对象设计上对应该镜像；镜像在场时按本地核证，镜像缺席时先回 `docs/development/02-证据索引` 看已归档锚点。
+- `userbook/05` 的 trusted-inputs 梯子现在也应视为稳定入口对象，而不只是 sidecar 建议：`workspace trust -> project MCP approval -> bridge eligibility -> trusted-device auth -> health-check runtime`。以后凡是再出现“skip trust dialog / bridge eligible / health-check passed”互相代签的写法，优先当成治理顺序退化，不当成局部措辞问题。
+- `compat-only` 页的长期纪律也应继续固定：它们可以保留旧链接与旧命名，但只能承认自己是兼容入口，不能再签新的 `frontdoor/frontdoor verdict`。visible noun 应统一回 `入口 / 入口判定 / 入口摘要`，避免兼容页再次长出第二套首答词。
+- `2026-04-08` 的根仓库阻断事实应继续记住：当前不仅 `merge --ff-only` 被挡，连 `checkout main` 都会因未解决 index 失败；目前显式阻断文件是 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 与 `docs/development/research-log.md`。后续每批开工前仍需检查，但不要在根仓库碰这些冲突，所有推进继续只落在 `.worktrees/mainloop`。
+- 方法层也应固定同一条 evidence-mode 纪律：`不确定即查` 之前，先判 `mirror present / mirror absent / public-evidence only`。如果当前 worktree 没有镜像，就不应继续把“优先读本地源码”写成唯一分支；更稳的允许签发上限是 `contract / registry / current-truth surface candidate / unknown`。
+- speaking-rights 模板现在可以视为稳定可复用对象，但更稳的落地方式不是先新开 charter 页，而是先在高流量入口放四行卡片：`能合法说 / 不能改判 / canonical owner / 申诉路径`。当 later maintainer 仍需要从长段 prose 里自己拼这些信息时，入口就还没有完成真正的结构优化。
+- `userbook/README`、`04-专题深潜/README`、`05-控制面深挖/README`、`03-参考索引/README` 与 `navigation/README` 现在都适合使用这张卡，但每页的 `canonical owner` 与 `申诉路径` 必须随页角色变化，不宜机械复制。更稳的规则是：工作对象争议回 `userbook/README / 04`，控制面争议回 `05 / 09 / security / risk / guides/100`，route 争议回 `navigation/README`，host truth 与 verdict 争议则继续回 `api / playbooks`。
+- `2026-04-08` 的根仓库阻断文件是漂移的，不应把某一组冲突文件当成稳定事实。当前已观测到至少三组不同阻断点，因此更稳的长期记忆不是“记住哪几个文件冲突”，而是“每批开工前都要重新做 fetch/checkout/merge 检查，并把阻断事实只写进 worktree 记忆，不在根仓库动手修”。

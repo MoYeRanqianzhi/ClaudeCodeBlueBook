@@ -25,7 +25,7 @@
 
 - 想看正式蓝皮书正文：去 [../bluebook/README.md](../bluebook/README.md)
 - 想看面向使用者的正文：去 [../bluebook/userbook/README.md](../bluebook/userbook/README.md)
-- 想确认研究方法、证据边界、写作约束或演进记录：留在 `docs/`
+- 想确认研究方法、证据边界、当前是 `mirror present` 还是 `public-evidence only`：先看 [development/00-研究方法.md](development/00-研究方法.md)
 - 想知道当前还缺什么证据或后续该补什么：看 `development/research-log.md`
 - 想确认哪些内容刚被从正文迁出、为什么迁出：先看 `changelog.md` 与 `development/long-term-memory.md`
 

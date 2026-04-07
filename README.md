@@ -6,6 +6,13 @@
 
 - 安全与省 token 不是两道并列题，而是同一条治理收费链的两种外观；先定题，不先找页。
 
+## Evidence Mode
+
+- `mirror present`
+  当前 worktree 若含 `claude-code-source-code/`，优先按本地镜像核对源码锚点、版本锚点与运行时对象。
+- `public-evidence only`
+  当前 worktree 若不含该目录，只按蓝皮书正文、`docs/` 归档锚点与已公开材料说话；不要把缺席镜像写成当前在场事实，也不要替 runtime-core 缺口脑补 certainty。
+
 ## 先选入口
 
 - [bluebook/README.md](bluebook/README.md)
@@ -15,7 +22,7 @@
 - [docs/README.md](docs/README.md)
   想看研究过程、持久化记忆、变更记录和目录治理。
 - `claude-code-source-code/`
-  想回到源码镜像核对证据；它是研究对象，不是蓝皮书正文。
+  想回到源码镜像核对证据；它是研究对象，不是蓝皮书正文。若当前 worktree 缺席该目录，先按上面的 `public-evidence only` 模式阅读。
 
 ## 最短进入
 

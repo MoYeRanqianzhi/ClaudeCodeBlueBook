@@ -3,6 +3,10 @@
 `architecture/` 当前有 84 篇编号文档，范围 `01-84`。本目录负责把 Claude Code 拆成可验证的运行时对象、状态机、控制面、writeback seam 和演化边界。
 如果你还没先建立 `09 / 05 / 15 / 41` 这组高阶判据，不要把这里读成目录库存；这里回答的是这些判据在运行时对象、状态机与 choke point 上怎样落地。
 
+> Evidence mode
+> - `mirror present`：本地镜像在场时，优先按源码对象、注册表、writeback seam 与 choke point 读。
+> - `public-evidence only`：本地镜像缺席时，先按 `contract -> registry -> current-truth surface candidate -> consumer subset -> hotspot kernel -> mirror gap discipline` 读，不把 mirror-derived certainty 写成已核实事实。
+
 如果只先记源码质量判断在架构层的一句话，也只记这句：
 
 - 源码质量判断不是文件更小，而是把复杂度收进合法复杂度中心，把 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 落成正式对象、状态机与 choke point，并用它们保护 `one writable present`。
@@ -73,7 +77,7 @@
 ## 这里不回答什么
 
 - 本目录不负责直接给出 host-facing contract、字段 schema 与 consumer subset 判决。
-- 本目录也不负责公开镜像证据分级；如果你需要把源码质量压成证据梯度，去 `../guides/102`。
+- 本目录也不负责替缺席镜像补 certainty；如果你需要把源码质量压成公开镜像证据梯度，去 `../guides/102`。
 - 本目录也不负责值班、验收、回退与长期 reopen 执行链。
 - 如果你还在问“为什么必须这样设计”或“第一条反证信号是什么”，先回 `../navigation/15` 与 `../navigation/41`。
 

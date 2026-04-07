@@ -8,6 +8,17 @@
 - 这里按控制面组织，专门回答“为什么同一目标不能随便走相邻入口”。
 - 这里不承担命令速查；速查页统一留在 `03-参考索引/`。
 
+## 发言权卡
+
+- `能合法说`
+  - 把 Prompt / governance / current-truth 三条最小顺序翻成用户侧控制面判断、trusted-inputs 梯子与相邻替身拒收动作。
+- `不能改判`
+  - 不替 `philosophy/` 重写公式，不替 `api/` 重签真相，不替 `playbooks/` 直接出 verdict。
+- `canonical owner`
+  - 治理控制面主语回 [../../README.md](../../README.md)、[../../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)、[../../security/README.md](../../security/README.md)、[../../risk/README.md](../../risk/README.md) 与 [../../guides/100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing.md](../../guides/100-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BB%E5%BD%93%E5%89%8D%E4%B8%96%E7%95%8C%E5%87%86%E5%85%A5%E4%B8%BB%E6%9D%83%EF%BC%9Atrusted%20inputs%E3%80%81%E6%9C%80%E5%B0%8F%E5%8F%AF%E8%A7%81%E9%9D%A2%E4%B8%8Econtinuation%20pricing.md)。
+- `申诉路径`
+  - 若你发现 `05` 已经开始代签真相，先退回根 `userbook/README` 重做问题分型；若是主语争议回 `09 / philosophy / architecture`，若是 host truth 争议回 `api/`，若是现场 verdict 争议回 `playbooks/`。
+
 如果把这一层继续压成最短作用，也只剩一句：
 
 - `05` 先回答“哪条控制面现在在说真话”，再决定你该继续、切换、降级还是退出。
@@ -42,6 +53,34 @@
 - 这里只翻译用户侧判断；证据上限、truth plane 与 rollback ceiling 统一回蓝皮书根前门与 `09`，不在 `05` 里重签一遍。
 - 这里只负责把 signer、projection、continuation consumer、`Outside` handoff surface 与 first reject path 翻成用户动作，不负责把 projection 重新抬回 signer。
 - `/status`、`/doctor`、`/usage` 在这一层也只配组成相邻 projection cluster，不配另起一条“运行时自检控制面”。
+
+## trusted-inputs 梯子
+
+如果你现在卡在“到底哪把钥匙先说了算”，先不要把 trust、auth、approval 与 probe 写成同一个准入词。用户侧更稳的最小顺序是：
+
+1. `workspace trust`
+   - 当前工作目录是否允许进入更高风险工作面。
+2. `project MCP approval`
+   - 项目级 `.mcp.json` 是否被正式承认。
+3. `bridge eligibility`
+   - 当前 remote-control / bridge 场景是否具备被接管资格。
+4. `trusted-device auth`
+   - 当前设备与账号能否代表用户继续签发远端动作。
+5. `health-check runtime`
+   - 当前 runtime 是否能被探活、诊断或继续消费。
+
+这五层只共享“都像准入”，不共享 signer：
+
+- `skip trust dialog` 不等于 `project MCP approval`
+- `bridge eligible` 不等于 `trusted-device auth`
+- `health-check passed` 不等于前四层都已成立
+
+需要分别下潜时，优先回：
+
+- [14-来源信任、Trust Dialog 与 Plugin-only Policy：扩展面为何分级信任.md](./14-%E6%9D%A5%E6%BA%90%E4%BF%A1%E4%BB%BB%E3%80%81Trust%20Dialog%20%E4%B8%8E%20Plugin-only%20Policy%EF%BC%9A%E6%89%A9%E5%B1%95%E9%9D%A2%E4%B8%BA%E4%BD%95%E5%88%86%E7%BA%A7%E4%BF%A1%E4%BB%BB.md)
+- [21-Host、Viewer 与 Health Check：为什么 server、remote-control、assistant、doctor 不能写成同一类会外入口.md](./21-Host%E3%80%81Viewer%20%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20server%E3%80%81remote-control%E3%80%81assistant%E3%80%81doctor%20%E4%B8%8D%E8%83%BD%E5%86%99%E6%88%90%E5%90%8C%E4%B8%80%E7%B1%BB%E4%BC%9A%E5%A4%96%E5%85%A5%E5%8F%A3.md)
+- [22-Trust Dialog、项目级 .mcp.json 批准与 Health Check：为什么 skip trust dialog 不等于 project MCP 已被批准.md](./22-Trust%20Dialog%E3%80%81%E9%A1%B9%E7%9B%AE%E7%BA%A7%20.mcp.json%20%E6%89%B9%E5%87%86%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20skip%20trust%20dialog%20%E4%B8%8D%E7%AD%89%E4%BA%8E%20project%20MCP%20%E5%B7%B2%E8%A2%AB%E6%89%B9%E5%87%86.md)
+- [23-Workspace Trust、Bridge Eligibility 与 Trusted Device：为什么 remote-control 的 trust、auth、policy 不是同一把钥匙.md](./23-Workspace%20Trust%E3%80%81Bridge%20Eligibility%20%E4%B8%8E%20Trusted%20Device%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%20trust%E3%80%81auth%E3%80%81policy%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E6%8A%8A%E9%92%A5%E5%8C%99.md)
 
 ## 先按控制面，不按相邻按钮
 

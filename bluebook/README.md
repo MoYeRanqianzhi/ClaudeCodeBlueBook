@@ -28,6 +28,7 @@
 
 - 公开证据只能先签它已公开承诺的 contract、witness、writeback seam 与治理工件；它不能替闭源 runtime-core 缺口脑补 certainty。
 - 后续凡是把 `runtime-core evidence`、`operator-governance evidence` 与 UI 投影混写成同一层真相，都应先按证据上限降格。
+- 入口层还应先判 `evidence mode`：本地镜像在场时优先按 mirror evidence 读；镜像缺席时先按 `public-evidence only` 模式读，不把“通常在源码镜像里可见”误写成“当前 worktree 已经核实”。
 
 如果只先记 Prompt 入口的一句话，也只记这句：
 

@@ -3,6 +3,17 @@
 `navigation/` 只负责跨目录反查，不重新定义三条母线。需要权威短语与最短主线时先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)；只有当问题已经变成“我要跨目录找哪一层证据”时再留在这里。
 最值钱的纪律也只该再多记一句：`navigation/` 只管 route，不签 truth；一旦 route words 开始代替 `governance key / typed ask / decision window / current-truth surface` 说话，它就在制造第二入口。
 
+## 发言权卡
+
+- `能合法说`
+  - 只判断你该去哪一层证据、哪一页只配当 route、不配改判。
+- `不能改判`
+  - 不重新定义三条母线，不替目录 README、深页正文或 `docs/` 记忆层代签 canonical formula 与深页结论。
+- `canonical owner`
+  - 主语与最小顺序回 [../README.md](../README.md) 与 `09`；目录边界回各目录 `README`；源码质量证据梯度回 `guides/102`。
+- `申诉路径`
+  - 若你发现 route 词已经在代签 truth，先退回 `../README -> 09`；若争议是目录边界，回对应目录 `README`；若争议是镜像证据 ceiling，回 `guides/102`。
+
 这里不再重复根入口的 canonical formula 与三组最小顺序；若你现在还缺这些，先回 [../README.md](../README.md) 与 `09`。`navigation/` 只接管两件事：判你该去哪一层证据，判哪一页只配当 route 不配改判。
 
 治理 / 安全 / Token 问题若已确认缺的是对象链而不是路线，也只先弹回：
