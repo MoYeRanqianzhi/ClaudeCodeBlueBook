@@ -124,3 +124,4 @@
 - [122-pending_action、post_turn_summary、task_summary 与 externalMetadataToAppState 索引.md](./122-pending_action%E3%80%81post_turn_summary%E3%80%81task_summary%20%E4%B8%8E%20externalMetadataToAppState%20索引.md)
 - [123-createV1ReplTransport、createV2ReplTransport、reportState、reportMetadata 与 reportDelivery 索引.md](./123-createV1ReplTransport%E3%80%81createV2ReplTransport%E3%80%81reportState%E3%80%81reportMetadata%20%E4%B8%8E%20reportDelivery%20索引.md)
 - [124-createDirectConnectSession、DirectConnectSessionManager、useDirectConnect、remoteSessionUrl 与 replBridgeConnected 索引.md](./124-createDirectConnectSession%E3%80%81DirectConnectSessionManager%E3%80%81useDirectConnect%E3%80%81remoteSessionUrl%20%E4%B8%8E%20replBridgeConnected%20索引.md)
+- [125-ccrMirrorEnabled、outboundOnly、system-init、replBridgeConnected 与 sessionUrl-connectUrl 索引.md](./125-ccrMirrorEnabled%E3%80%81outboundOnly%E3%80%81system-init%E3%80%81replBridgeConnected%20%E4%B8%8E%20sessionUrl-connectUrl%20索引.md)

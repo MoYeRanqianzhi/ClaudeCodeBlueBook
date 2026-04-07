@@ -137,6 +137,7 @@
 - [133-2026-04-07-metadata not consumed split 拆分记忆.md](./133-2026-04-07-metadata%20not%20consumed%20split%20拆分记忆.md)
 - [134-2026-04-07-bridge version split 拆分记忆.md](./134-2026-04-07-bridge%20version%20split%20拆分记忆.md)
 - [135-2026-04-07-direct connect foreground runtime split 拆分记忆.md](./135-2026-04-07-direct%20connect%20foreground%20runtime%20split%20拆分记忆.md)
+- [136-2026-04-07-outboundOnly active surface split 拆分记忆.md](./136-2026-04-07-outboundOnly%20active%20surface%20split%20拆分记忆.md)
 
 用途：
 

@@ -126,6 +126,7 @@
 107. 为什么 `pending_action`、`post_turn_summary`、`task_summary` 与 `externalMetadataToAppState` 不是同一种“前台已消费”。
 108. 为什么 `createV1ReplTransport`、`createV2ReplTransport`、`reportState`、`reportMetadata` 与 `reportDelivery` 不是同一种 bridge 状态消费链。
 109. 为什么 `createDirectConnectSession`、`DirectConnectSessionManager`、`useDirectConnect`、`remoteSessionUrl` 与 `replBridgeConnected` 说明 direct connect 更像 foreground remote runtime，而不是 remote presence store。
+110. 为什么 `ccrMirrorEnabled`、`outboundOnly`、`system/init`、`replBridgeConnected` 与 `sessionUrl/connectUrl` 说明同属 v2 的 bridge 也不是同一种活跃 front-state surface。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
