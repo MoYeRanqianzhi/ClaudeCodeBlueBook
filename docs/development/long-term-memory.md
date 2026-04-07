@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06-第一性原理与苏格拉底反思` 与 `bluebook/03-设计哲学` 的长期默认 source-quality-self-audit language 现已继续写死：
+  - `06` 的源码质量线默认继续只保留 why 句和自校问句；凡涉及 canonical ladder、降格规则与证据签字，一律回 `102/87`
+  - `03` 的源码质量去魅句默认继续写成 `102 -> 87` 的 owner 顺序，不再在本章第二次重列证据梯度
 - `bluebook/README`、`bluebook/architecture/README` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 source-quality-frontdoor-route-tightening language 现已继续写死：
   - `bluebook/README` 默认继续只把源码质量线写成 current-truth protection 的定题句，不再自己携带 canonical ladder、public-evidence ceiling 或 reject trio
   - `guides/102` 默认继续独占 canonical ladder、降格规则与 reject trio

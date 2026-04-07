@@ -2,6 +2,8 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md` 与 `bluebook/03-设计哲学.md`，把源码质量 residual 再压成 `why + 自校问句`：`06` 现在把源码质量线的最小拒错顺序改写成“我是否仍沿 `102 -> 87` 的 owner 顺序审读 current-truth protection”，不再像第二条 canonical ladder；`03` 现在把源码质量去魅句与一处证据梯度表述继续收回 `guides/102 -> philosophy/87`
+- 本轮并行 Agent 关于 `06` 与 `architecture/README` 的新结论已吸收入记忆：`06` 的源码质量线只保留 why 句和自校问句，凡涉及 canonical ladder、降格规则与证据签字一律回 `102/87`；`architecture/README` 只定义对象、seam、gate 与 retreat layer，不再定义“源码质量怎么判”
 - 继续更新 `bluebook/README.md`、`bluebook/architecture/README.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把这一轮源码质量前门 residual 收成 `题 -> 梯 -> 义 -> 物 -> 校` 的更硬分工：根入口现在只把源码质量线写成“current-truth protection”并把 canonical ladder/evidence ceiling 明确送回 `guides/102`；`architecture/README` 现在更明确只承接 `authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer` 这组对象层顺序，不再自己重判公开镜像证据梯度；`06` 现在也把源码质量线的最小拒错顺序收回纯自校问句，并把 canonical ladder 明确让位给 `102`
 - 本轮并行 Agent 关于源码质量前门的新结论已吸收入记忆：`guides/102` 继续拥有 canonical ladder、降格规则与 reject trio 的定义权；`03` 只保留 why，`architecture/README` 只保留对象，`06` 只保留自校，根入口只保留定题与 route
 - 继续更新 `bluebook/03-设计哲学.md`、`bluebook/philosophy/README.md`、`bluebook/navigation/README.md`、`bluebook/security/README.md` 与 `bluebook/risk/README.md`，把这一轮 residual 收成“Prompt owner 继续单源化、security/risk 继续拆 speaking right”：`03` 现在把 Prompt 公式再降成 `same-world compiler` 级别的 why 句，不再在本章重列完整 Prompt 公式；`philosophy/README` 现在更明确把 Prompt 前门压成 `same-world compiler`，把 same-world witness 与实现顺序继续送回 `51`，并把 continuity 的时间轴仲裁送回 `06`；`navigation/README` 现在把 continuity 类 route-law inflation 直接送回 `06`，不再在跨目录入口里重写 Prompt 尾段目录；`security` 现在把用户侧恢复读法明确让位给 `risk/`，`risk` 现在把通用弱读回面总声明继续让位回 `10`

@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 source-quality-self-audit-demotion 深化动作：已继续更新 `06` 与 `03`。新的结论是：源码质量线在 `06` 最稳的角色不是再发一条“简化 ladder”，而是只问“我是否仍沿 `102 -> 87` 的 owner 顺序审读 current-truth protection”。`03` 里与源码质量相关的去魅句，也更稳地退回成“先去 `102` 判证据上限，再去 `87` 判质量门槛”。
 - 本轮 source-quality-frontdoor-route-tightening 深化动作：已继续更新 `bluebook/README`、`architecture/README` 与 `06`。新的结论是：源码质量前门当前最值当的 residual，不是再补新卡，而是继续把 canonical ladder 从高流量入口页里收走，让 `README` 只定题，`102` 只定梯，`03` 只定 why，`architecture/README` 只定对象，`06` 只定自校。
 - 本轮新的源码质量前门结论：`bluebook/README` 现在不再第二次展开 `public-evidence ceiling` 与 ladder，而是直接把这组判断送回 `guides/102`；`architecture/README` 现在不再自己携带公开镜像证据梯度，而只承接 `authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer`；`06` 则把源码质量最小拒错顺序收回 `surface ownership -> writeback split -> freshness gate -> later-maintainer rejectability` 的自校框架，并明确 canonical ladder/evidence ceiling 统一回 `102`。
 - 本轮根仓库同步检查结果：本轮起手 `fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 继续全部成功，根仓继续保持 `main...origin/main` 健康态。
