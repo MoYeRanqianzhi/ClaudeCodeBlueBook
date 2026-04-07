@@ -117,6 +117,7 @@
 - [113-2026-04-06-result passthrough vs terminal primacy 拆分记忆.md](./113-2026-04-06-result%20passthrough%20vs%20terminal%20primacy%20拆分记忆.md)
 - [114-2026-04-06-callback to UI triad split 拆分记忆.md](./114-2026-04-06-callback%20to%20UI%20triad%20split%20拆分记忆.md)
 - [115-2026-04-06-adapter consumer policies split 拆分记忆.md](./115-2026-04-06-adapter%20consumer%20policies%20split%20拆分记忆.md)
+- [116-2026-04-07-direct connect completion signal split 拆分记忆.md](./116-2026-04-07-direct%20connect%20completion%20signal%20split%20拆分记忆.md)
 
 用途：
 
