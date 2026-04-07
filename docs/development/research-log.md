@@ -2,6 +2,7 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮根仓库最终最终态确认: 继续复核后，`git rev-parse main origin/main` 已都指向 `411377f6d16aaa838086190881b215aa77c0f2dc`，`git status --short --branch` 也恢复为 `## main...origin/main`。也就是说，本地与远端现在都已经对齐到包含 `Merge branch 'mainloop'` 的同一提交。
 - 本轮根仓库最终观测状态再次修正: 在补做同步成功之后，根仓 `main` 又于 `2026-04-07 23:45:49 +0800` 出现 reflog `merge mainloop`，当前可见状态为 `main...origin/main [ahead 3]`。我没有对根仓做回退；这里只记录事实：主分支现在已经包含 `mainloop` 的合并提交，需要由用户决定后续是否保留或单独清理。
 - 本轮根仓库同步最终状态已修正: 先前的 unresolved-conflict 阻塞没有继续持续；同回合补做后，`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均已成功，根仓 `main` 现已确认与 `origin/main` 对齐。本轮正文改写与提交仍然全部只在 `.worktrees/mainloop` 内完成。
 - 本轮 prompt-governance-current-truth-alignment 深化动作: 已继续更新 `bluebook/03-设计哲学.md`、`bluebook/05-功能全景与API支持.md`、`bluebook/architecture/52-...`、`bluebook/architecture/81-...` 与 `bluebook/philosophy/README.md`、`bluebook/navigation/02`、`03`、`07`、`bluebook/04`。新的结论是：当前更值钱的 residual，已经不在是否有 canonical chain，而在深页和高流量入口还会不会把 taxonomy、旧 display title 或旧 surface 术语重新冒充 first answer。
