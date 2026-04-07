@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 late-card-why-demotion 深化动作：已继续更新 `03` 与 `06`。新的结论是：当高流量前门、中段 why 和自校段都已瘦身后，最后一层 residual 往往会以“判断框架清单”的形式复发。`06` 的 `6.37-6.44` 这一组原本就在讲“小文件/热点文件/observability/可解释性/DRY”，但如果继续把这些段落写成四项框架或三层分类，它们仍会在尾段重新长成 `87 / architecture` 的 owner 卡。更稳的默认修法是：尾段只保留一句“不要写浅”，具体框架与对象统一改路由。
+- 本轮新的 `03` 结论：`设计原则三十二 / 三十三` 现在更明确只保留 why 与自校，不再让“复杂度治理”“首问单源化”以 owner verdict 口气占位。对 `03` 来说，尾段最稳的默认边界继续是“可以压总结论，但不能用标题或收尾句替 owner 页下最终 verdict”。
+- 本轮新的 `06` 结论：`6.37-6.44` 现在更明确只保留“为什么不能把源码质量和 explainability 写浅”，不再自带合法复杂度中心、依赖诚实、observability 三层或 explainability 四件事的具名卡片。`06` 尾段最稳的默认写法，继续固定为“只保留误读 -> 更稳的问法 -> owner route”。
 - 本轮 deeper-self-audit-card-demotion 深化动作：已继续更新 `03` 与 `06`。新的结论是：在首页和中段已经瘦身以后，最容易复发的 residual 是“自校页或 why 页顺手补一张机制卡”。`03` 的治理/重构/build 小节一旦开始带 `decision window / continuation pricing`、future-maintainer owner 句或 build/object 清单，就会再次长回 owner 页；`06` 的治理/构建小节一旦开始列失败语义清单、职责矩阵或 build nouns，也会从 self-audit 滑回第二机制页。更稳的默认修法是：把它们统统压回 why / self-audit 句，并让具名对象重新路由到 `10 / security / risk / 87 / architecture / navigation`。
 - 本轮新的 `03` 结论：`设计原则二十四 / 二十五 / 二十八` 现在更明确只保留 why，不再在哲学页自带治理链段、future maintainer owner verdict 或 build-side object 清单。对 `03` 来说，更稳的默认边界继续是“能说为什么浅写会错，但不能自己重新发明 owner 级清单”。
 - 本轮新的 `06` 结论：`6.6` 的职责矩阵现在退回到目录 README / `navigation/README`，`6.58` 不再自带失败语义 checklist，`6.59` 也不再自带 build-side nouns；这再次确认 `06` 最稳的角色不是“补一张更短机制卡”，而是“指出哪里又把 why/self-audit写回机制卡”。

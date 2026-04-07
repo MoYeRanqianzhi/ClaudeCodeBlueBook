@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 late-card-why-demotion language 现已继续写死：
+  - `03` 尾段标题与收束句默认继续优先写 why / self-audit，不再把“复杂度治理”“首问单源化”这类 owner verdict 直接写成章节占位句
+  - `06` 的 `6.37-6.44` 这类 late self-audit cards 默认继续不自带框架清单、三层分类或四件事配方；一旦出现，默认按“尾段再长第二张结构卡”处理
+  - 更稳的默认修法顺序继续是：`先删框架清单 -> 再把 verdict 句压成 why / self-audit -> 最后补 owner route`
 - `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 deeper-self-audit-card-demotion language 现已继续写死：
   - `03` 的治理 / 重构 / build why 小节默认继续不自带治理链段、future-maintainer owner verdict 或 build-side object 清单；一旦出现，默认按越位候选处理并改路由回 `10 / security / risk / 87 / architecture`
   - `06` 的治理 / 构建自校小节默认继续不自带 failure checklist、职责矩阵或 build nouns；一旦出现，默认按“self-audit 页误长第二机制卡”处理
