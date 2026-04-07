@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 userbook-03-06-fail-route 深化动作: 已继续更新 `bluebook/userbook/05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md` 与 `bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md`。新的结论是：`projection / consumer / verdict / reopen` 这条 split 在前门层已经更清楚，但叶子页里 `resume -> reopen` 与 `runtime evidence -> action routing` 的 handoff 还不够硬。现在 `03` 和 `06` 都开始明确把失败续接、恢复签发和 reopen 责任路由回 `risk/README` 与对应 playbook。
+- 本轮新的连续性结论: `resume` 不是恢复链的终点，`/status / /doctor / /usage` 也不是 verdict source；更稳的叶子页写法是把它们继续压成 evidence / consumer，然后把责任和恢复重新交还给 `signer + evidence + reopen`。
 - 本轮 navigation-04-route-demotion 深化动作: 已继续更新 `bluebook/navigation/04-目录职责、规范入口与兼容别名页说明.md`。新的结论是：目录宪法 residual 现在不再主要卡在 `navigation/README` 或 `philosophy/87`，而是卡在 `navigation/04` 仍把自己写成“唯一 charter”。现在这页更明确地退回 route pointer，只负责把 speaking-rights / atlas / route dispute 的问题转给真正的节点。
 - 本轮新的目录结构结论: `navigation/04` 更稳的职责不是亲自裁决谁有权第一次回答，而是把争议送回 `guides/102 / navigation/35 / api/46-50 / 各目录 README` 这组已存在的 owner 或 host。
 - 本轮 projection-consumer-verdict-handoff 深化动作: 已继续更新 `bluebook/security/README.md`、`bluebook/risk/README.md`、`bluebook/userbook/05-控制面深挖/README.md`、`bluebook/userbook/05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md` 与 `bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md`。新的结论是：治理/连续性线当前最值钱的 residual 已不再是“有没有做 demotion”，而是“demotion 后有没有把真正的 handoff 写清”。现在这五页开始共享同一条 split：projection、consumer、verdict、reopen 各自守自己的 speaking rights。

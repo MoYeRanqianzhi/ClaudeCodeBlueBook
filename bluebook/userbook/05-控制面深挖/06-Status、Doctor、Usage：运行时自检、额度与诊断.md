@@ -1,8 +1,8 @@
 # Status、Doctor、Usage：宿主状态、环境可信度与预算投影
 
-## 第一性问题
+## 先把它们读成运行时证据面
 
-Claude Code 要先解决的，不是“模型够不够聪明”，而是：
+在 `05` 这一层，这页真正值钱的不是新建一条控制面，而是先把三组 runtime evidence surface 分开：
 
 - 当前宿主状态到底是什么。
 - 当前工具环境到底值不值得信任。
@@ -41,7 +41,7 @@ Claude Code 要先解决的，不是“模型够不够聪明”，而是：
 - `/doctor` 只汇总可信度证据，不单独签发“这套环境已经安全可用”。
 - `/usage` 只投影预算窗口，不单独签发“这轮还值得继续付费”。
 
-真正的用户动作 verdict 仍是：`继续 / 降级 / 停止 / 清理后恢复 / 升级给人`。如果把这三者直接写成 verdict source，就又会把 projection consumer 抬回本体层。
+真正的 verdict 仍留在上层控制面与恢复链里。对用户来说，这页最多只帮助你判断该继续、降级、停止、转入恢复链或升级给人；如果把这些动作直接写成这页的 verdict source，就又会把 projection 抬回本体层。
 更稳一点说，`/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory / Export` 这些 continuation consumer 另在相邻页处理；真正 verdict 仍留在 `truth-surface -> decision window -> durable-transient cleanup`，用户侧恢复仍留在 `signer + evidence + reopen`。
 
 ## `/status` 解决的是宿主状态投影
@@ -124,6 +124,11 @@ Claude Code 要先解决的，不是“模型够不够聪明”，而是：
 如果你现在更想按“长任务如何运营节奏”来读，而不是按控制面来读，应继续看：
 
 - [../04-专题深潜/10-状态、额度、模型与节奏运营专题.md](../04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/10-%E7%8A%B6%E6%80%81%E3%80%81%E9%A2%9D%E5%BA%A6%E3%80%81%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%8A%82%E5%A5%8F%E8%BF%90%E8%90%A5%E4%B8%93%E9%A2%98.md)
+
+如果你已经不在判断证据面，而是在判断谁来重新签发恢复、cleanup 或 reopen，也不要继续停在本页：
+
+- 用户侧恢复与 reopen：回 [../../risk/README.md](../../risk/README.md)
+- 机制主语与治理 verdict：回 [README.md](README.md)
 
 ## 源码锚点
 

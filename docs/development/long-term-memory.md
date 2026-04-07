@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/userbook/05/03` 与 `bluebook/userbook/05/06` 的长期默认 userbook-03-06-fail-route language 现已继续写死：
+  - `05/03` 默认继续把 failed `resume` 的去向写回 `risk/README` 与 reopen/playbook
+  - `05/06` 默认继续把 `/status / /doctor / /usage` 写成 runtime evidence surface，不写成 verdict source
+  - `05/03` 与 `05/06` 的长期默认写法现在统一拒收“叶子页自己收口恢复链”的残余
 - `bluebook/navigation/04` 的长期默认 navigation-04-route-demotion language 现已继续写死：
   - `navigation/04` 默认只做 route pointer，不再自写成 `speaking rights / appeal chain` 的唯一 charter
   - atlas / canonical rung / repo-specific 正文 / route dispute 默认分别回 `guides/102 / api/46-50 / navigation/35 / 各目录 README`
