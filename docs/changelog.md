@@ -2,6 +2,8 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把这一轮 Prompt self-audit residual 再压一层：`6.54` 现在把“同一主语与继续资格”收回成更短的 why 反问，不再把 `lineage / projection / qualification` 写成 owner 术语；`6.57` 现在把 `Prompt Constitution` 收回成“不是秘诀、只是制度边界”的反问，不再直接在正文里解释 `owner split / speaking-right`；`7.4 / 7.7 / 7.9 / 7.10` 现在也从 route/判据卡继续收回成更纯的自校问句，不再在判据卡里并排复述 `84 / 51` 的 object / reject / migration nouns
+- 本轮并行 Agent 新结论已吸收入记忆：在 `06` 末段，最容易复发的不是 Prompt canonical chain 本身，而是“判据卡里顺手补 owner nouns”。更稳的默认修法继续是：`删具名判据 -> 留抽象反问 -> route 回 owner 页`
 - 继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把 late source-quality / explainability residual 再压一层：`03` 现在把 `设计原则三十二 / 三十三` 的标题和收束句继续收回 why / self-audit，不再让“复杂度治理”“首问单源化”以 owner verdict 的口气占位；`06` 现在把 `6.37-6.44` 这组 late self-audit cards 统一改成“若讨论已进入具体 owner nouns，就回 `87 / architecture / 对应 owner 页`”，不再在自校页里继续发合法复杂度中心、依赖诚实、observability 三层或 explainability 四件事这类结构卡
 - 本轮并行 Agent 新结论已吸收入记忆：在深页尾段，最容易复发的不是 canonical chain，而是“判断框架清单化”本身。更稳的默认修法继续是：把清单降成一句自校问句，避免让 why/self-audit 段再长出第二张 source-quality / explainability 机制卡
 - 继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把这一轮 deeper residual 再压一层：`03` 现在把 `设计原则二十四 / 二十五 / 二十八` 里的治理 failure semantics、future-maintainer owner 句与 build/object 清单继续收回 why-bridge，不再在哲学页自带 `decision window / continuation pricing` 或 `portable shadow entry / transport shell / 薄 registry` 这类 owner nouns；`06` 现在把 `6.6` 的职责矩阵、`6.58` 的失败语义清单和 `6.59` 的 build/object 清单继续收回“若讨论已进入具体规则与对象，统一回 owner 页”的自校句

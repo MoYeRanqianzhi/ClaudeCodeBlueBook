@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 prompt-self-audit-card-demotion 深化动作：已继续更新 `06`。新的结论是：当 Prompt canonical chain、mid-page why 和后段论证都已经瘦身后，最后最容易复发的 residual 就在 `7.4 / 7.7 / 7.9 / 7.10` 这类判据卡里。它们很容易一边自称在自校，一边又把 `84 / 51` 的 object / reject / migration nouns 重新端上来。更稳的默认修法是：判据卡只保留抽象反问，具体 object / order / qualification / route 全部送回 owner 页。
+- 本轮新的 `06` 结论：`6.54` 现在更明确只问“是不是还在同一主语上”，`6.57` 现在更明确只问“为什么这不是秘诀”，`7.4 / 7.7 / 7.9 / 7.10` 则继续从“owner 术语卡”退成“是否又越位补写 owner 机制”的自校卡。这意味着 `06` 在 Prompt 线最稳的最终边界继续固定为：`能反问，不能代签。`
+- 本轮根仓库同步检查结果：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 再次全部成功，根仓继续保持 `main...origin/main` 健康态。
 - 本轮 late-card-why-demotion 深化动作：已继续更新 `03` 与 `06`。新的结论是：当高流量前门、中段 why 和自校段都已瘦身后，最后一层 residual 往往会以“判断框架清单”的形式复发。`06` 的 `6.37-6.44` 这一组原本就在讲“小文件/热点文件/observability/可解释性/DRY”，但如果继续把这些段落写成四项框架或三层分类，它们仍会在尾段重新长成 `87 / architecture` 的 owner 卡。更稳的默认修法是：尾段只保留一句“不要写浅”，具体框架与对象统一改路由。
 - 本轮新的 `03` 结论：`设计原则三十二 / 三十三` 现在更明确只保留 why 与自校，不再让“复杂度治理”“首问单源化”以 owner verdict 口气占位。对 `03` 来说，尾段最稳的默认边界继续是“可以压总结论，但不能用标题或收尾句替 owner 页下最终 verdict”。
 - 本轮新的 `06` 结论：`6.37-6.44` 现在更明确只保留“为什么不能把源码质量和 explainability 写浅”，不再自带合法复杂度中心、依赖诚实、observability 三层或 explainability 四件事的具名卡片。`06` 尾段最稳的默认写法，继续固定为“只保留误读 -> 更稳的问法 -> owner route”。

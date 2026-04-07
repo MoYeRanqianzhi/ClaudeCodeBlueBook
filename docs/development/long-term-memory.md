@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 prompt-self-audit-card-demotion language 现已继续写死：
+  - `06` 的 `7.4 / 7.7 / 7.9 / 7.10` 这类 Prompt 判据卡默认继续只保留抽象反问，不再并排复述 `84 / 51` 的 object / reject / migration nouns
+  - `6.54 / 6.57` 这类 Prompt 尾段默认继续只保留“为什么不能被写浅”的 why 句，不再在正文里解释 `owner split / speaking-right / qualification` 这一层
+  - 更稳的默认修法顺序继续是：`先删具名 owner 术语 -> 再把判据压成反问句 -> 最后补 owner route`
+- 最新根仓同步记忆（2026-04-08，本轮最新批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
 - `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 late-card-why-demotion language 现已继续写死：
   - `03` 尾段标题与收束句默认继续优先写 why / self-audit，不再把“复杂度治理”“首问单源化”这类 owner verdict 直接写成章节占位句
   - `06` 的 `6.37-6.44` 这类 late self-audit cards 默认继续不自带框架清单、三层分类或四件事配方；一旦出现，默认按“尾段再长第二张结构卡”处理
