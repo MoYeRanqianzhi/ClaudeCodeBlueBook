@@ -139,6 +139,7 @@
 120. 为什么 `assistant viewer`、`--remote` TUI、`viewerOnly`、`remoteSessionUrl` 与 `filterCommandsForRemoteMode` 说明同一 coarse remote bit 不等于同样厚度的 remote 合同。
 121. 为什么 `REMOTE_SAFE_COMMANDS`、`filterCommandsForRemoteMode`、`handleRemoteInit`、`session` 与 `mobile` 说明 remote-safe 命令面不是 runtime readiness proof。
 122. 为什么 `CLAUDE_CODE_REMOTE`、`getIsRemoteMode()`、`print`、`reload-plugins` 与 `settingsSync` 说明 headless remote 分支不是 interactive remote bit 的镜像。
+123. 为什么 `CLAUDE_CODE_REMOTE_MEMORY_DIR`、`memdir`、`SessionMemory`、`extractMemories` 与 `print` 说明 remote 记忆持久化不是单根目录，而是 auto-memory 根与 session 账本的双轨体系。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
