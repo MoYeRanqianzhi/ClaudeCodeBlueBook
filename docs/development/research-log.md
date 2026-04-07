@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 philosophy-readme-frontdoor-thinning 深化动作: 已继续更新 `bluebook/philosophy/README.md`。新的结论是：哲学 README 哪怕已经 canonicalize 三条母线，仍可能因为解释层资本表、过厚 route table 和多组 README 内分流，把 later maintainer 带回“第二套压缩话语总表”。
+- 本轮新的哲学入口结论: 更稳的 philosophy README 必须只保留三条母线的最短前门和最短跳转；解释层资本表、苏格拉底审读与机制哲学展开都应下沉到 `06 / 15 / 41` 或对应专题页。
 - 本轮 reject-signal-hardening 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md` 与 `bluebook/README.md`。新的结论是：Prompt 判据卡如果不把 `stable prefix / protocol transcript / continue qualification verdict` 一起点名，later maintainer 仍可能把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation` 读成过薄的抽象词串；源码质量入口若仍说“先进性结论”，later maintainer 也会被结果词带走。
 - 本轮新的判据结论: 更稳的 reject signal 必须直接落到 witness、writeback seam 与可复核 verdict 上，不再借“更强 / 更先进”这类评价词过桥。
 - 本轮 source-quality-alias-demotion 深化动作: 已继续更新 `bluebook/guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md` 与 `bluebook/philosophy/README.md`。新的结论是：源码质量线即使已经 canonicalize，later maintainer 仍会被旧 alias 或解释层压缩句误以为存在第二套 ladder。

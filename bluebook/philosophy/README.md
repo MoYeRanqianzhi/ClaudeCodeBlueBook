@@ -23,14 +23,7 @@
 - 源码质量线前门只认 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`；其它压缩句都只配留在解释层。
 - 真正进入 later maintainer 排查前，还应先过 `public artifact ceiling`，再回 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`。
 
-如果继续把 `refactor capital` 压成更短的资本表，也只该剩：
-
-- 单一 authority 未裂开
-- 时间边界仍可说明
-- seam 仍可继续抽离
-- retreat layer 仍可点名
-
-如果一页解释还没压到这三条，它就还停在对象层总结，不算最硬的第一性原理前门。
+需要“重构资本 / retreat layer / seam 仍可继续抽离”的解释层展开，转到 `06 / 15 / 41`，不在 README 再立第二套源码质量前门。
 
 如果只先记 Prompt 前门的一句话，也只记这句：
 
@@ -46,25 +39,13 @@
 
 - `governance key` 不只是第一环，而是后续收费权的主权对象；若这层退回 settings merge 或 mode 切换，后面的 `typed ask / decision window / continuation pricing / cleanup` 就只剩事后补救。
 
-想继续沿 Prompt 母线下钻时，哲学层只认分工清楚的四条 route：
+Prompt 线分流只保留一句：
 
-- `frontdoor appeal chain = 84 -> 63 -> 33`
-- `mechanism deep dive = 84 -> 81`
-- `collaboration interface = 57`
-- `compat jump / one-screen mnemonic = 78`
+- 先到 `84`，机制展开看 `81`，时间轴看 `63`，诊断命名看 `33`；协作接口再看 `57`，前门速记再看 `78`。
 
-也就是说：
+治理线分流也只保留一句：
 
-- `84` 先回答世界如何合法进入模型
-- `63` 只回答继续资格与时间轴
-- `33` 只回答 Explainability 如何命名失稳
-- `81` 只展开机制链
-- `57` 只解释 `Transcript -> Lineage -> Continuation` 的协作接口
-- `78` 只保留 Prompt 前门速记，不再和 `84` 并列争首答
-
-想继续沿治理母线下钻时，哲学层最短跳转只认：
-
-- `85 -> 64 / 82 -> 83 -> 100`
+- 先到 `85`；需要机制拆解再看 `64 / 82 / 83 / 100`。
 
 Prompt 线最短的 reject trio 也只认：
 
@@ -111,5 +92,5 @@ Prompt 线最短的 reject trio 也只认：
 - `philosophy/` 负责解释“为什么”，不替代 `architecture/` 的机制拆解和 `api/` 的协议定义。
 - README 只保留判断式入口，不再展开长链路由。
 - README 应优先暴露三条 frontdoor formula、最短 first reject signal 与 later maintainer 可直接复用的判断主语，不重新退回对象库存页。
-- README 只负责第一性原理前门，不和 `05 / 15 / 41` 抢高阶 judgment map 的职责。
+- README 只负责三条母线的最短前门；苏格拉底审读与机制哲学展开分别回 `15 / 41`，第一性原理总收束回 `06`。
 - 需要跨目录执行链时，回到 [../navigation/README.md](../navigation/README.md)。

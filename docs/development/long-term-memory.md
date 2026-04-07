@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/README` 的长期默认 philosophy-readme-frontdoor-thinning language 现已继续写死：
+  - 哲学 README 默认继续只保留三条母线的最短前门和最短分流，不再保留第二套源码质量资本表或过厚 route table
+  - Prompt 线默认继续写成“先到 84，机制看 81，时间轴看 63，诊断命名看 33；其余只作补充侧门”
+  - 治理线默认继续写成“先到 85；机制拆解再看 64 / 82 / 83 / 100”
+  - `06 / 15 / 41` 默认继续拥有解释层资本表、苏格拉底审读与第一性原理总收束的主权
 - `bluebook/06` 与 `bluebook/README` 的长期默认 reject-signal-hardening language 现已继续写死：
   - Prompt 判据默认继续把 `stable prefix / protocol transcript / continue qualification verdict` 与 `Authority -> Boundary -> Transcript -> Lineage -> Continuation` 一起写出，不再让 witness chain 停在过薄抽象层
   - 根入口默认继续把 `layout-first drift` 直接写成“源码质量判断被目录观感冒充”，不再把“先进性结论”保留为入口记忆钩子
