@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`，把源码质量论文页对目录结构的越位发言权继续收回：`87` 现在不再替整本蓝皮书分配目录 speaking rights，而是只保留三条源码质量式目录自校，具体的 `speaking rights / appeal chain` 统一回 `navigation/04` 与各目录 README
 - 继续更新 `bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把 Prompt 术语继续去魅：`81` 现在把 `request assembly law / object` 收回 `request assembly order / result`，避免把已治理请求写得过像 signer；`06` 现在把 `UI transcript` 从“人类可见真相”降回“人类可见投影”，并把 `display truth / protocol truth / handoff truth` 收回 `display projection / protocol transcript / handoff projection`
 - 继续更新 `bluebook/README.md`、`bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`，把 Prompt 顶层 first-answer owner 继续单源化：根 README 现在把 Prompt 行改成指向 `84` 的 root hook，不再自称 `same-world compiler`；`06` 现在明确自己只消费 `84` 已经写死的 Prompt 前门，只保留第一性追问；`81` 现在明确 owner page 在 `84`，自身只展开 mechanism；`84` 则显式声明自己负责 Prompt 线的 first-answer law
 - 继续更新 `bluebook/security/README.md`、`bluebook/userbook/05-控制面深挖/README.md` 与 `bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md`，把共享前门里的 user-facing 对象进一步分桶：`/status / /doctor / /usage` 现在更明确地被写成 runtime projection，`/compact / /resume` 被明确写成 continuation consumer；`05/06` 后半页原先“告诉你宿主状态/任务可承受性”“这三步过关后”的准 signer 语气也被收回成 evidence wording

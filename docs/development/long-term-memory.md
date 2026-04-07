@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/87` 的长期默认 directory-constitution-demotion language 现已继续写死：
+  - `bluebook/philosophy/87` 默认只提供源码质量式目录自校，不再替蓝皮书直接分配目录 speaking rights
+  - 目录级 `speaking rights / appeal chain` 默认统一回 `navigation/04` 与各目录 README
+  - `philosophy/87` 的长期默认写法现在统一拒收源码质量论文页直接充当目录宪法
 - `bluebook/philosophy/81` 与 `bluebook/06` 的长期默认 prompt-terminology-de-enchantment language 现已继续写死：
   - `bluebook/philosophy/81` 默认继续把已治理请求写成 `request assembly order / result`，不再写成过强的 truth-like 主语
   - `bluebook/06` 默认继续把 `UI transcript`、display 与 handoff 相关词写成 projection，而不是 truth co-signer

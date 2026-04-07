@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 directory-constitution-demotion 深化动作: 已继续更新 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`。新的结论是：源码质量论文页当前最危险的 residual 不再是 canonical ladder 本身，而是它顺手替整本蓝皮书分配目录 speaking rights。现在 `87` 更明确地退回“怎样用源码质量原则审目录是否混层”，不再直接充当目录宪法页。
+- 本轮新的目录结构结论: 目录宪法应尽量集中在 `navigation/04` 与各目录 README；`philosophy/87` 只该提供 `first-answer owner / evidence-layer separation / frontdoor overreach` 这类审读准则，而不该直接发目录 charter。
 - 本轮 prompt-terminology-de-enchantment 深化动作: 已继续更新 `bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`。新的结论是：Prompt 线当前更危险的 residual 已经从 owner 混写转移到“词看起来太像 signer”。现在 `request assembly law / object` 开始退回 order / result，`UI transcript` 与 `display truth / handoff truth` 这类词也开始退回 projection wording。
 - 本轮新的 Prompt 结论: Prompt 去魅不只是把公式单源化，还要把 request、display、handoff 这些 consumer 词从“真相主语”继续降回“被治理后的装配结果或投影结果”。
 - 本轮 prompt-owner-single-source 深化动作: 已继续更新 `bluebook/README.md`、`bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`。新的结论是：Prompt 线当前最值钱的 residual 已不再是 frontdoor/witness/action 三层混写，而是“谁配发布 Prompt 顶层 first answer”。现在 `84` 更接近唯一 owner，根 README 更接近 root hook，`06` 更接近第一性追问页，`81` 更接近机制页。
