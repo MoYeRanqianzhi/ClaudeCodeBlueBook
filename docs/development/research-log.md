@@ -2,6 +2,11 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮根 `userbook` 二跳收口动作: 已继续重写 `userbook/README`。这一批不再只在长深链清单前加说明，而是直接把根前门收回成 `问题分型 -> 二跳`：先分 `上下文送错 / 扩张或权限判错 / 旧状态污染`，再跳 `01 / 04 / 05 / 02 / 03` 的 README。根前门现在更像真正的 frontdoor，不再像“深页总目录”。
+- 本轮新的 root-frontdoor 结论: user-facing 根前门若继续保留大量深页直达链接，读者会重新学回“靠标题搜页”，不会学会“先分层、再二跳”。更稳的目录优化，不是再写更多 route，而是减少第一次解释权和默认深链数。
+- 本轮参考索引减肥动作: 已继续重写 `03-参考索引/README`。这一批把超长 one-off 问题库存收回成六类速查路由：命令工具、能力边界、技能与扩展、功能面总图、任务到入口矩阵、高价值入口合同速查。更细的问题库存统一下沉到各子目录 README 和对应索引页。
+- 本轮新的索引层结论: 索引页最稳的默认职责不是“继续列问题”，而是 `触发怀疑 + 路由`。一旦索引页开始直接给 truth 或 verdict，它就会抢走正文层的申诉链。`01-命令工具/README` 与 `02-能力边界/README` 现在都继续把这条边界写硬了。
+- 本轮并行 Agent 新结论已记下，作为下一批 residual 清单: Prompt/治理/源码质量三条线现在的高价值工作不再是补更多名词，而是继续减少 first-answer 入口数、继续把 projection 从 signer 下撤、继续把 later maintainer 的局部可反对性写进 memory 与 user-facing 目录入口。
 - 本轮源码质量 frontdoor 单首答收口动作: 已继续更新 `bluebook/09-三张控制面总图`、`bluebook/philosophy/README` 与 `bluebook/guides/102`。这一批把源码质量线 frontdoor 里残留的双首答正式拆开：`contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 继续保留 canonical ladder；`evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability` 则明确降为 crosswalk / 解释层压缩句，不再与 canonical ladder 并列抢首答权。
 - 本轮新的源码质量结论: `public artifact ceiling` 现在继续被提升成公开镜像研究的 step 0，而不只是前门口号。更稳的顺序现在是 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`；若 sole writer、writeback seam 与 freshness gate 还没锁定，就只配先写 `current-truth surface candidate`。
 - 本轮新的 userbook/05 结论: `05-控制面深挖` 这一层现在继续从“对象分层”推进到“主权分层”。README 现在更明确写死：这里只负责把 signer / projection / consumer / first reject path 翻成用户动作；`51` 现在明写远端运行态诸面都只是 projection；`52` 现在明写 session 参数页讨论的是镜像/回填/恢复链，而不是最终 signer。

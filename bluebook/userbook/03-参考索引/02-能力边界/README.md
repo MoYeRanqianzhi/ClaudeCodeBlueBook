@@ -15,6 +15,10 @@
 
 如果这组索引页没有先把问题压回这四句，读者就会重新把能力边界页读成功能目录。
 
+这里还要再补一句索引边界：
+
+- 这组页只负责触发怀疑、标注 danger surface 与把你送去对应正文，不负责单独签 `product promise` 或 `current admission verdict`。
+
 - [01-能力状态矩阵.md](./01-%E8%83%BD%E5%8A%9B%E7%8A%B6%E6%80%81%E7%9F%A9%E9%98%B5.md)
 - [02-Feature Gate 与可见性索引.md](./02-Feature%20Gate%20%E4%B8%8E%E5%8F%AF%E8%A7%81%E6%80%A7%E7%B4%A2%E5%BC%95.md)
 - [03-来源信任、插件锁定与 Hook 门控索引.md](./03-%E6%9D%A5%E6%BA%90%E4%BF%A1%E4%BB%BB%E3%80%81%E6%8F%92%E4%BB%B6%E9%94%81%E5%AE%9A%E4%B8%8E%20Hook%20%E9%97%A8%E6%8E%A7%E7%B4%A2%E5%BC%95.md)

@@ -1,12 +1,12 @@
 # Claude Code Userbook
 
-基于 `@anthropic-ai/claude-code` `v2.1.88` 反编译源码整理的用户手册。目标不是再写一套“架构蓝皮书”，而是回答三个用户问题：
+基于 `@anthropic-ai/claude-code` `v2.1.88` 反编译源码整理的用户手册。它不是第二本蓝皮书，而是用户侧前门：
 
 1. Claude Code 实际能做什么。
 2. 这些能力分别通过什么入口暴露。
 3. 什么时候该用普通提示词、斜杠命令、技能、工具、计划模式、子代理、worktree、MCP 或插件。
 
-如果你只想先记住三条使用判断，也只先记这三条：
+如果只先记住三条使用判断，也只先记这三条：
 
 1. 好 Prompt 不是更像专家，而是先解出唯一工作对象，再确认 `compile inputs` 和 `verify witnesses` 仍沿同一条 `message lineage -> continue_qualification_verdict` 继续成立。
 2. 安全不是弹窗多少，而是 `pricing-right -> truth-surface attestation -> typed ask / sandbox / writeback seam` 是否先成立；approval、modal、status 只配做 consumer / projection。
@@ -18,7 +18,9 @@
 - `userbook/` 默认先签 user-visible consumer truth，不替 `README / 09 / api` 补签 runtime-core 缺口；先忘了这层 `public-evidence ceiling`，就会把 UI 面和状态词误当系统真相。
 - Prompt 也不是单段 `systemPrompt`，而是 multi-surface world-entry object；`CLAUDE.md / hooks / settings` 能影响行为，但不能替 runtime witness 签 continue。
 
-如果你还只想先记住三类最小分型，也只先记这三类：
+## 先做三类问题分型
+
+根前门最值钱的不是深页清单，而是先把问题分到对的层：
 
 1. `上下文送错`
    - 先看是不是已经换了工作对象，或附件/文件/working set/handoff 已不再服务同一件事。
@@ -27,161 +29,38 @@
 3. `旧状态污染`
    - 先看是不是旧 shim、旧恢复资产、旧 capability token 或旧 authority width 还在冒充当前世界。
 
-## 按目标进入
+## 按问题二跳，不按深页碰运气
 
-如果你不是来“按目录从头读”，而是想先解决眼前问题，建议直接按目标进入：
+根前门真正负责的是 `问题分型 -> 二跳`，不负责替 `04 / 05` 的 README 重新充当专题目录。
 
-- 更稳的默认二跳是：先到 `04-专题深潜/README` 认工作对象，或先到 `05-控制面深挖/README` 判控制面，再决定要不要继续下钻到深页。
-- 根前门真正负责的是问题分型与二跳，不负责替 `04 / 05` 的 README 重新充当专题目录。
-- 如果你已经确定要读某个专题，请先到对应 README 再选深页，不要把下面的长清单当默认路线。
+更稳的默认二跳是：
 
-- 快速上手：
+- 想先知道今天该怎么开工：
   [00-导读.md](./00-%E5%AF%BC%E8%AF%BB.md) ->
   [01-主线使用/README.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/README.md)
-- 建立稳定工作流：
-  [01-主线使用/05-开工前自检：状态、诊断、额度与工作边界.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/05-%E5%BC%80%E5%B7%A5%E5%89%8D%E8%87%AA%E6%A3%80%EF%BC%9A%E7%8A%B6%E6%80%81%E3%80%81%E8%AF%8A%E6%96%AD%E3%80%81%E9%A2%9D%E5%BA%A6%E4%B8%8E%E5%B7%A5%E4%BD%9C%E8%BE%B9%E7%95%8C.md) ->
-  [04-专题深潜/README.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/README.md) ->
+- `上下文送错`：
+  [01-主线使用/README.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/README.md) ->
+  [04-专题深潜/README.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/README.md)
+- `扩张或权限判错`：
+  [01-主线使用/README.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/README.md) ->
   [05-控制面深挖/README.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/README.md)
-- 把上下文送准：
-  [01-主线使用/02-提问、补上下文与让模型继续工作.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/02-%E6%8F%90%E9%97%AE%E3%80%81%E8%A1%A5%E4%B8%8A%E4%B8%8B%E6%96%87%E4%B8%8E%E8%AE%A9%E6%A8%A1%E5%9E%8B%E7%BB%A7%E7%BB%AD%E5%B7%A5%E4%BD%9C.md) ->
-  [04-专题深潜/08-上下文接入、附件与提示编译专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/08-%E4%B8%8A%E4%B8%8B%E6%96%87%E6%8E%A5%E5%85%A5%E3%80%81%E9%99%84%E4%BB%B6%E4%B8%8E%E6%8F%90%E7%A4%BA%E7%BC%96%E8%AF%91%E4%B8%93%E9%A2%98.md)
-- 把结果交付给团队或外部流程：
-  [04-专题深潜/09-评审、提交、导出与反馈专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/09-%E8%AF%84%E5%AE%A1%E3%80%81%E6%8F%90%E4%BA%A4%E3%80%81%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%8F%8D%E9%A6%88%E4%B8%93%E9%A2%98.md)
-- 运营长任务的状态、预算和模型节奏：
-  [04-专题深潜/10-状态、额度、模型与节奏运营专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/10-%E7%8A%B6%E6%80%81%E3%80%81%E9%A2%9D%E5%BA%A6%E3%80%81%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%8A%82%E5%A5%8F%E8%BF%90%E8%90%A5%E4%B8%93%E9%A2%98.md)
-- 提升终端交互效率：
-  [04-专题深潜/11-终端交互、状态栏与输入效率专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/11-%E7%BB%88%E7%AB%AF%E4%BA%A4%E4%BA%92%E3%80%81%E7%8A%B6%E6%80%81%E6%A0%8F%E4%B8%8E%E8%BE%93%E5%85%A5%E6%95%88%E7%8E%87%E4%B8%93%E9%A2%98.md)
-- 找回过去的会话与提问：
-  [04-专题深潜/12-会话发现、历史检索与恢复选择专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/12-%E4%BC%9A%E8%AF%9D%E5%8F%91%E7%8E%B0%E3%80%81%E5%8E%86%E5%8F%B2%E6%A3%80%E7%B4%A2%E4%B8%8E%E6%81%A2%E5%A4%8D%E9%80%89%E6%8B%A9%E4%B8%93%E9%A2%98.md)
-- 把 Claude Code 接进脚本、后台任务或协议流：
-  [04-专题深潜/13-非交互、后台会话与自动化专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/13-%E9%9D%9E%E4%BA%A4%E4%BA%92%E3%80%81%E5%90%8E%E5%8F%B0%E4%BC%9A%E8%AF%9D%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%93%E9%A2%98.md)
-- 分清 host、viewer 与 health-check 的会外入口边界：
-  [05-控制面深挖/21-Host、Viewer 与 Health Check：为什么 server、remote-control、assistant、doctor 不能写成同一类会外入口.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/21-Host%E3%80%81Viewer%20%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20server%E3%80%81remote-control%E3%80%81assistant%E3%80%81doctor%20%E4%B8%8D%E8%83%BD%E5%86%99%E6%88%90%E5%90%8C%E4%B8%80%E7%B1%BB%E4%BC%9A%E5%A4%96%E5%85%A5%E5%8F%A3.md)
-- 分清 `skip trust dialog`、项目级 `.mcp.json` 批准与 health-check 为什么不是一层：
-  [05-控制面深挖/22-Trust Dialog、项目级 .mcp.json 批准与 Health Check：为什么 skip trust dialog 不等于 project MCP 已被批准.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/22-Trust%20Dialog%E3%80%81%E9%A1%B9%E7%9B%AE%E7%BA%A7%20.mcp.json%20%E6%89%B9%E5%87%86%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20skip%20trust%20dialog%20%E4%B8%8D%E7%AD%89%E4%BA%8E%20project%20MCP%20%E5%B7%B2%E8%A2%AB%E6%89%B9%E5%87%86.md)
-- 分清 remote-control 的 workspace trust、bridge eligibility 与 trusted-device 为什么不是同一把钥匙：
-  [05-控制面深挖/23-Workspace Trust、Bridge Eligibility 与 Trusted Device：为什么 remote-control 的 trust、auth、policy 不是同一把钥匙.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/23-Workspace%20Trust%E3%80%81Bridge%20Eligibility%20%E4%B8%8E%20Trusted%20Device%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%20trust%E3%80%81auth%E3%80%81policy%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E6%8A%8A%E9%92%A5%E5%8C%99.md)
-- 分清 remote-control 的启动默认、mirror、perpetual 与 continue 为什么不是同一种“重连”：
-  [05-控制面深挖/24-remoteControlAtStartup、CCR Mirror、Perpetual Session 与 --continue：为什么 bridge 的 auto、mirror、resume 不是同一种重连.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/24-remoteControlAtStartup%E3%80%81CCR%20Mirror%E3%80%81Perpetual%20Session%20%E4%B8%8E%20--continue%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%20auto%E3%80%81mirror%E3%80%81resume%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E9%87%8D%E8%BF%9E.md)
-- 分清 remote session 的远端发布命令面、本地保留命令面与执行路由为什么不是同一张命令表：
-  [05-控制面深挖/68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx fallthrough 与 remote send：为什么 remote session 的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/68-slash_commands%E3%80%81REMOTE_SAFE_COMMANDS%E3%80%81local-jsx%20fallthrough%20%E4%B8%8E%20remote%20send%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote%20session%20%E7%9A%84%E8%BF%9C%E7%AB%AF%E5%8F%91%E5%B8%83%E5%91%BD%E4%BB%A4%E9%9D%A2%E3%80%81%E6%9C%AC%E5%9C%B0%E4%BF%9D%E7%95%99%E5%91%BD%E4%BB%A4%E9%9D%A2%E4%B8%8E%E5%AE%9E%E9%99%85%E6%89%A7%E8%A1%8C%E8%B7%AF%E7%94%B1%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E5%BC%A0%E5%91%BD%E4%BB%A4%E8%A1%A8.md)
-- 分清 remote mode 里的 slash 高亮、候选补全、hidden 例外、启用态与执行去向为什么不是同一个判定器：
-  [05-控制面深挖/69-hasCommand、isHidden、isCommandEnabled、local-jsx 与 remote send：为什么 remote mode 里的 slash 高亮、候选补全、启用态与实际执行去向不是同一个判定器.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/69-hasCommand%E3%80%81isHidden%E3%80%81isCommandEnabled%E3%80%81local-jsx%20%E4%B8%8E%20remote%20send%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote%20mode%20%E9%87%8C%E7%9A%84%20slash%20%E9%AB%98%E4%BA%AE%E3%80%81%E5%80%99%E9%80%89%E8%A1%A5%E5%85%A8%E3%80%81%E5%90%AF%E7%94%A8%E6%80%81%E4%B8%8E%E5%AE%9E%E9%99%85%E6%89%A7%E8%A1%8C%E5%8E%BB%E5%90%91%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E4%B8%AA%E5%88%A4%E5%AE%9A%E5%99%A8.md)
-- 分清 `disableSlashCommands` 为什么会杀掉本地 slash 命令层，却不自动杀掉 remote mode 的 slash 文本入口：
-  [05-控制面深挖/70-disableSlashCommands、commands=[]、hasCommand 与 remote send：为什么关掉本地 slash 命令层，不等于 remote mode 失去 slash 文本入口.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/70-disableSlashCommands%E3%80%81commands%3D%5B%5D%E3%80%81hasCommand%20%E4%B8%8E%20remote%20send%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%85%B3%E6%8E%89%E6%9C%AC%E5%9C%B0%20slash%20%E5%91%BD%E4%BB%A4%E5%B1%82%EF%BC%8C%E4%B8%8D%E7%AD%89%E4%BA%8E%20remote%20mode%20%E5%A4%B1%E5%8E%BB%20slash%20%E6%96%87%E6%9C%AC%E5%85%A5%E5%8F%A3.md)
-- 分清 remote session 的本地命令面为什么默认会变薄，但仍保留局部 MCP 合流孔道：
-  [05-控制面深挖/71-useSkillsChange、useManagePlugins、MCPConnectionManager 与 useMergedCommands：为什么 remote session 的本地命令面不是持续增厚的本地 REPL，也不是完全冻结的远端镜像.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/71-useSkillsChange%E3%80%81useManagePlugins%E3%80%81MCPConnectionManager%20%E4%B8%8E%20useMergedCommands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote%20session%20%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%91%BD%E4%BB%A4%E9%9D%A2%E4%B8%8D%E6%98%AF%E6%8C%81%E7%BB%AD%E5%A2%9E%E5%8E%9A%E7%9A%84%E6%9C%AC%E5%9C%B0%20REPL%EF%BC%8C%E4%B9%9F%E4%B8%8D%E6%98%AF%E5%AE%8C%E5%85%A8%E5%86%BB%E7%BB%93%E7%9A%84%E8%BF%9C%E7%AB%AF%E9%95%9C%E5%83%8F.md)
-- 分清 remote session 的 tool plane 为什么仍会跟着 `toolPermissionContext` 与 `mcp.tools` 重算，而不会像 command plane 一样一起变薄：
-  [05-控制面深挖/72-getTools、useMergedTools、mcp.tools 与 toolPermissionContext：为什么 remote session 的 tool plane 不会像 command plane 一样一起变薄.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/72-getTools%E3%80%81useMergedTools%E3%80%81mcp.tools%20%E4%B8%8E%20toolPermissionContext%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote%20session%20%E7%9A%84%20tool%20plane%20%E4%B8%8D%E4%BC%9A%E5%83%8F%20command%20plane%20%E4%B8%80%E6%A0%B7%E4%B8%80%E8%B5%B7%E5%8F%98%E8%96%84.md)
-- 分清 remote session 的本地 tool plane 为什么仍由 `toolPermissionContext` 主导，而不等于远端命令面主权：
-  [05-控制面深挖/73-toolPermissionContext、initialMsg.mode、message.permissionMode、applyPermissionUpdate 与 computeTools：为什么 remote session 的本地 tool plane 主权不等于远端命令面主权.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/73-toolPermissionContext%E3%80%81initialMsg.mode%E3%80%81message.permissionMode%E3%80%81applyPermissionUpdate%20%E4%B8%8E%20computeTools%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote%20session%20%E7%9A%84%E6%9C%AC%E5%9C%B0%20tool%20plane%20%E4%B8%BB%E6%9D%83%E4%B8%8D%E7%AD%89%E4%BA%8E%E8%BF%9C%E7%AB%AF%E5%91%BD%E4%BB%A4%E9%9D%A2%E4%B8%BB%E6%9D%83.md)
-- 分清 remote-control 的设置默认、显式开关与状态展示为什么不是同一个按钮：
-  [05-控制面深挖/25-Settings%E3%80%81remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81Footer%20%E7%8A%B6%E6%80%81%20pill%20%E4%B8%8E%20Bridge%20Dialog%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E3%80%81%E5%BD%93%E5%89%8D%E5%BC%80%E5%85%B3%E4%B8%8E%E8%BF%9E%E6%8E%A5%E5%B1%95%E7%A4%BA%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E4%B8%AA%E6%8C%89%E9%92%AE.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/25-Settings%E3%80%81remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81Footer%20%E7%8A%B6%E6%80%81%20pill%20%E4%B8%8E%20Bridge%20Dialog%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E3%80%81%E5%BD%93%E5%89%8D%E5%BC%80%E5%85%B3%E4%B8%8E%E8%BF%9E%E6%8E%A5%E5%B1%95%E7%A4%BA%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E4%B8%AA%E6%8C%89%E9%92%AE.md)
-- 分清 remote-control 的链接、二维码与 ID 为什么不是同一种定位符：
-  [05-控制面深挖/26-Connect%20URL、Session%20URL、Environment%20ID、Session%20ID%20与%20remoteSessionUrl%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E9%93%BE%E6%8E%A5%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E4%B8%8E%20ID%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%AE%9A%E4%BD%8D%E7%AC%A6.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/26-Connect%20URL%E3%80%81Session%20URL%E3%80%81Environment%20ID%E3%80%81Session%20ID%20%E4%B8%8E%20remoteSessionUrl%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E9%93%BE%E6%8E%A5%E3%80%81%E4%BA%8C%E7%BB%B4%E7%A0%81%E4%B8%8E%20ID%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%AE%9A%E4%BD%8D%E7%AC%A6.md)
-- 分清 remote-control 的会内开桥、启动带桥与 standalone host 为什么不是同一种入口：
-  [05-控制面深挖/27-remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81--remote-control%E3%80%81claude%20remote-control%20%E4%B8%8E%20Remote%20Callout%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E4%BC%9A%E5%86%85%E5%BC%80%E6%A1%A5%E3%80%81%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%A1%A5%E4%B8%8E%20standalone%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%85%A5%E5%8F%A3.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/27-remote-control%20%E5%91%BD%E4%BB%A4%E3%80%81--remote-control%E3%80%81claude%20remote-control%20%E4%B8%8E%20Remote%20Callout%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%E4%BC%9A%E5%86%85%E5%BC%80%E6%A1%A5%E3%80%81%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%A1%A5%E4%B8%8E%20standalone%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%85%A5%E5%8F%A3.md)
-- 分清 remote session client、viewer 与 bridge host 为什么不是同一种远程工作流：
-  [05-控制面深挖/28-remote%20%E4%BC%9A%E8%AF%9D%E3%80%81session%20%E5%91%BD%E4%BB%A4%E3%80%81assistant%20viewer%20%E4%B8%8E%20remote-safe%20commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E4%BC%9A%E8%AF%9D%20client%E3%80%81viewer%20%E4%B8%8E%20bridge%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C%E6%B5%81.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/28-remote%20%E4%BC%9A%E8%AF%9D%E3%80%81session%20%E5%91%BD%E4%BB%A4%E3%80%81assistant%20viewer%20%E4%B8%8E%20remote-safe%20commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E4%BC%9A%E8%AF%9D%20client%E3%80%81viewer%20%E4%B8%8E%20bridge%20host%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E8%BF%9C%E7%A8%8B%E5%B7%A5%E4%BD%9C%E6%B5%81.md)
-- 分清远端的权限提示、会话控制与命令白名单为什么不是同一种控制合同：
-  [05-控制面深挖/29-Bridge%20Permission%20Callbacks%E3%80%81Control%20Request%20%E4%B8%8E%20Bridge-safe%20Commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E7%9A%84%E6%9D%83%E9%99%90%E6%8F%90%E7%A4%BA%E3%80%81%E4%BC%9A%E8%AF%9D%E6%8E%A7%E5%88%B6%E4%B8%8E%E5%91%BD%E4%BB%A4%E7%99%BD%E5%90%8D%E5%8D%95%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%8E%A7%E5%88%B6%E5%90%88%E5%90%8C.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/29-Bridge%20Permission%20Callbacks%E3%80%81Control%20Request%20%E4%B8%8E%20Bridge-safe%20Commands%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E7%9A%84%E6%9D%83%E9%99%90%E6%8F%90%E7%A4%BA%E3%80%81%E4%BC%9A%E8%AF%9D%E6%8E%A7%E5%88%B6%E4%B8%8E%E5%91%BD%E4%BB%A4%E7%99%BD%E5%90%8D%E5%8D%95%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%8E%A7%E5%88%B6%E5%90%88%E5%90%8C.md)
-- 分清远端会话的连接告警、后台任务、viewer ownership 与 bridge 重连为什么不是同一张运行态面：
-  [05-控制面深挖/30-remoteConnectionStatus%E3%80%81remoteBackgroundTaskCount%E3%80%81BriefIdleStatus%20%E4%B8%8E%20viewerOnly%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E4%BC%9A%E8%AF%9D%E7%9A%84%E8%BF%9E%E6%8E%A5%E5%91%8A%E8%AD%A6%E3%80%81%E5%90%8E%E5%8F%B0%E4%BB%BB%E5%8A%A1%E4%B8%8E%20bridge%20%E9%87%8D%E8%BF%9E%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E5%BC%A0%E8%BF%90%E8%A1%8C%E6%80%81%E9%9D%A2.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/30-remoteConnectionStatus%E3%80%81remoteBackgroundTaskCount%E3%80%81BriefIdleStatus%20%E4%B8%8E%20viewerOnly%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%9C%E7%AB%AF%E4%BC%9A%E8%AF%9D%E7%9A%84%E8%BF%9E%E6%8E%A5%E5%91%8A%E8%AD%A6%E3%80%81%E5%90%8E%E5%8F%B0%E4%BB%BB%E5%8A%A1%E4%B8%8E%20bridge%20%E9%87%8D%E8%BF%9E%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E5%BC%A0%E8%BF%90%E8%A1%8C%E6%80%81%E9%9D%A2.md)
-- 分清 bridge 的状态词、恢复厚度与动作上限为什么不是同一个“已恢复”：
-  [05-控制面深挖/31-Remote%20Control%20active%E3%80%81reconnecting%E3%80%81Connect%20URL%E3%80%81Session%20URL%20%E4%B8%8E%20outbound-only%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E7%8A%B6%E6%80%81%E8%AF%8D%E3%80%81%E6%81%A2%E5%A4%8D%E5%8E%9A%E5%BA%A6%E4%B8%8E%E5%8A%A8%E4%BD%9C%E4%B8%8A%E9%99%90%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E4%B8%AA%E2%80%9C%E5%B7%B2%E6%81%A2%E5%A4%8D%E2%80%9D.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/31-Remote%20Control%20active%E3%80%81reconnecting%E3%80%81Connect%20URL%E3%80%81Session%20URL%20%E4%B8%8E%20outbound-only%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E7%8A%B6%E6%80%81%E8%AF%8D%E3%80%81%E6%81%A2%E5%A4%8D%E5%8E%9A%E5%BA%A6%E4%B8%8E%E5%8A%A8%E4%BD%9C%E4%B8%8A%E9%99%90%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E4%B8%AA%E2%80%9C%E5%B7%B2%E6%81%A2%E5%A4%8D%E2%80%9D.md)
-- 分清 bridge 的故障提示、当前会话停机与默认策略回退为什么不是同一种关闭：
-  [05-控制面深挖/32-Remote%20Control%20failed%E3%80%81disconnect%E3%80%81replBridgeEnabled=false%20%E4%B8%8E%20remoteControlAtStartup=false%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E6%95%85%E9%9A%9C%E6%8F%90%E7%A4%BA%E3%80%81%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%81%9C%E6%9C%BA%E4%B8%8E%E9%BB%98%E8%AE%A4%E7%AD%96%E7%95%A5%E5%9B%9E%E9%80%80%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%85%B3%E9%97%AD.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/32-Remote%20Control%20failed%E3%80%81disconnect%E3%80%81replBridgeEnabled=false%20%E4%B8%8E%20remoteControlAtStartup=false%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E6%95%85%E9%9A%9C%E6%8F%90%E7%A4%BA%E3%80%81%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E5%81%9C%E6%9C%BA%E4%B8%8E%E9%BB%98%E8%AE%A4%E7%AD%96%E7%95%A5%E5%9B%9E%E9%80%80%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E5%85%B3%E9%97%AD.md)
-- 分清 bridge 的断开、退出与恢复轨迹为什么不是同一种收口：
-  [05-控制面深挖/33-Disconnect%20Dialog%E3%80%81Perpetual%20Teardown%E3%80%81bridge%20pointer%20%E4%B8%8E%20--continue%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E6%96%AD%E5%BC%80%E3%80%81%E9%80%80%E5%87%BA%E4%B8%8E%E6%81%A2%E5%A4%8D%E8%BD%A8%E8%BF%B9%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%94%B6%E5%8F%A3.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/33-Disconnect%20Dialog%E3%80%81Perpetual%20Teardown%E3%80%81bridge%20pointer%20%E4%B8%8E%20--continue%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%E6%96%AD%E5%BC%80%E3%80%81%E9%80%80%E5%87%BA%E4%B8%8E%E6%81%A2%E5%A4%8D%E8%BD%A8%E8%BF%B9%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%94%B6%E5%8F%A3.md)
-- 分清 bridge 的 stale pointer、过期环境与瞬态重试为什么不是同一种恢复失败：
-  [05-控制面深挖/34-No%20recent%20session%20found%E3%80%81Session%20not%20found%E3%80%81environment_id%20%E4%B8%8E%20try%20running%20the%20same%20command%20again%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%20stale%20pointer%E3%80%81%E8%BF%87%E6%9C%9F%E7%8E%AF%E5%A2%83%E4%B8%8E%E7%9E%AC%E6%80%81%E9%87%8D%E8%AF%95%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%81%A2%E5%A4%8D%E5%A4%B1%E8%B4%A5.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/34-No%20recent%20session%20found%E3%80%81Session%20not%20found%E3%80%81environment_id%20%E4%B8%8E%20try%20running%20the%20same%20command%20again%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20bridge%20%E7%9A%84%20stale%20pointer%E3%80%81%E8%BF%87%E6%9C%9F%E7%8E%AF%E5%A2%83%E4%B8%8E%E7%9E%AC%E6%80%81%E9%87%8D%E8%AF%95%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%81%A2%E5%A4%8D%E5%A4%B1%E8%B4%A5.md)
-- 分清 bridge 的 trust、`/login`、restart、fresh fallback 与 retry 为什么不是同一种补救动作：
-  [05-控制面深挖/35-Workspace Trust、login、restart remote-control、fresh session fallback 与 retry：为什么 bridge 的补救动作不是同一种恢复建议.md](./05-控制面深挖/35-Workspace%20Trust、login、restart%20remote-control、fresh%20session%20fallback%20与%20retry：为什么%20bridge%20的补救动作不是同一种恢复建议.md)
-- 分清 remote-control 的 build 不可用、资格不可用、组织拒绝与权限噪音为什么不是同一种“不能用”：
-  [05-控制面深挖/36-Remote Control build 不可用、资格不可用、组织拒绝与权限噪音：为什么 bridge 的 not enabled、policy disabled、not available 与 Access denied 不是同一种“不能用”.md](./05-控制面深挖/36-Remote%20Control%20build%20不可用、资格不可用、组织拒绝与权限噪音：为什么%20bridge%20的%20not%20enabled、policy%20disabled、not%20available%20与%20Access%20denied%20不是同一种“不能用”.md)
-- 分清 standalone remote-control 的 spawn topology、并发上限与 cwd 初始会话为什么不是同一种调度：
-  [05-控制面深挖/37-single-session、same-dir、worktree、capacity、create-session-in-dir 与 w：为什么 standalone remote-control 的 spawn topology、并发上限与前台 cwd 会话不是同一种调度.md](./05-控制面深挖/37-single-session、same-dir、worktree、capacity、create-session-in-dir%20与%20w：为什么%20standalone%20remote-control%20的%20spawn%20topology、并发上限与前台%20cwd%20会话不是同一种调度.md)
-- 分清 standalone remote-control 的 banner、状态行、QR 与 session list 为什么不是同一种显示面：
-  [05-控制面深挖/38-Bridge Banner、QR、footer、session count 与 session list：为什么 standalone remote-control 的 banner、状态行与会话列表不是同一种显示面.md](./05-控制面深挖/38-Bridge%20Banner、QR、footer、session%20count%20与%20session%20list：为什么%20standalone%20remote-control%20的%20banner、状态行与会话列表不是同一种显示面.md)
-- 分清 standalone remote-control 的 `--name`、`--permission-mode`、`--sandbox` 与 title 回填为什么不是同一种继承：
-  [05-控制面深挖/39-name、permission-mode、sandbox 与 session title：为什么 standalone remote-control 的 host flags、session 默认策略与标题回填不是同一种继承.md](./05-控制面深挖/39-name、permission-mode、sandbox%20与%20session%20title：为什么%20standalone%20remote-control%20的%20host%20flags、session%20默认策略与标题回填不是同一种继承.md)
-- 分清 remote-control 的工具审批、网络放行、自动批准与提示撤销为什么不是同一种批准：
-  [05-控制面深挖/40-can_use_tool、SandboxNetworkAccess、hook-classifier 与 control_cancel_request：为什么 remote-control 的工具审批、网络放行、自动批准与提示撤销不是同一种批准.md](./05-控制面深挖/40-can_use_tool、SandboxNetworkAccess、hook-classifier%20与%20control_cancel_request：为什么%20remote-control%20的工具审批、网络放行、自动批准与提示撤销不是同一种批准.md)
-- 分清 standalone remote-control 的 `sdkUrl`、ingress base、environment secret、session token 与 worker epoch 为什么不是同一种连接凭证：
-  [05-控制面深挖/41-sdk-url、sessionIngressUrl、environmentSecret、session access token 与 workerEpoch：为什么 standalone remote-control 的 URL、密钥、令牌与传输纪元不是同一种连接凭证.md](./05-控制面深挖/41-sdk-url、sessionIngressUrl、environmentSecret、session%20access%20token%20与%20workerEpoch：为什么%20standalone%20remote-control%20的%20URL、密钥、令牌与传输纪元不是同一种连接凭证.md)
-- 分清 standalone remote-control 的 environment、work 与 session 生命周期动词为什么不是同一种操作：
-  [05-控制面深挖/42-register、poll、ack、heartbeat、stop、archive 与 deregister：为什么 standalone remote-control 的环境、work 与 session 生命周期不是同一种收口.md](./05-控制面深挖/42-register、poll、ack、heartbeat、stop、archive%20与%20deregister：为什么%20standalone%20remote-control%20的环境、work%20与%20session%20生命周期不是同一种收口.md)
-- 分清 bridge 的 compat session ID、infra session ID 与 retag / compare helper 为什么不是同一种标识：
-  [05-控制面深挖/43-session tag、compat shim 与 reconnect tag：为什么 bridge 的 compat session ID、infra session ID 与 sameSessionId 不是同一种标识.md](./05-控制面深挖/43-session%20tag、compat%20shim%20与%20reconnect%20tag：为什么%20bridge%20的%20compat%20session%20ID、infra%20session%20ID%20与%20sameSessionId%20不是同一种标识.md)
-- 分清 standalone remote-control 的 child refresh、heartbeat 认证与 v2 reconnect 为什么不是同一种 token refresh：
-  [05-控制面深挖/44-session token refresh、child sync 与 bridge reconnect：为什么 standalone remote-control 的 child 刷新、heartbeat 续租与 v2 重派发不是同一种 token refresh.md](./05-控制面深挖/44-session%20token%20refresh、child%20sync%20与%20bridge%20reconnect：为什么%20standalone%20remote-control%20的%20child%20刷新、heartbeat%20续租与%20v2%20重派发不是同一种%20token%20refresh.md)
-- 分清 standalone remote-control 的 work secret、ack 时机、existing session refresh 与 unknown work 为什么不是同一种领取：
-  [05-控制面深挖/45-work secret、ack timing、existing session refresh 与 unknown work：为什么 standalone remote-control 的 work intake 不是同一种领取.md](./05-控制面深挖/45-work%20secret、ack%20timing、existing%20session%20refresh%20与%20unknown%20work：为什么%20standalone%20remote-control%20的%20work%20intake%20不是同一种领取.md)
-- 分清 bridge 的 session timeout、watchdog、SIGTERM、SIGKILL 与 failed remap 为什么不是同一种 timeout：
-  [05-控制面深挖/46-session timeout、watchdog、SIGTERM、SIGKILL 与 failed remap：为什么 bridge 的会话超时、收尾中断与请求 timeout 不是同一种 timeout.md](./05-控制面深挖/46-session%20timeout、watchdog、SIGTERM、SIGKILL%20与%20failed%20remap：为什么%20bridge%20的会话超时、收尾中断与请求%20timeout%20不是同一种%20timeout.md)
-- 分清 bridge 的 poll、heartbeat、reconnecting、give up 与 sleep reset 为什么不是同一种重试：
-  [05-控制面深挖/47-poll、heartbeat、reconnecting、give up 与 sleep reset：为什么 bridge 的保活、回连预算与放弃条件不是同一种重试.md](./05-控制面深挖/47-poll、heartbeat、reconnecting、give%20up%20与%20sleep%20reset：为什么%20bridge%20的保活、回连预算与放弃条件不是同一种重试.md)
-- 分清 headless remote-control 的 trust、token、HTTP base URL、worktree substrate 与 registration failure 为什么不是同一种开桥失败：
-  [05-控制面深挖/48-Workspace not trusted、login token、HTTP base URL、worktree availability 与 registration failure：为什么 headless remote-control 的 permanent error 与 transient retry 不是同一种开桥失败.md](./05-控制面深挖/48-Workspace%20not%20trusted、login%20token、HTTP%20base%20URL、worktree%20availability%20与%20registration%20failure：为什么%20headless%20remote-control%20的%20permanent%20error%20与%20transient%20retry%20不是同一种开桥失败.md)
-- 分清 standalone remote-control 的一次性说明、账号资格、项目偏好与当前 effective mode 为什么不是同一个默认：
-  [05-控制面深挖/49-remoteDialogSeen、multi-session gate、ProjectConfig.remoteControlSpawnMode 与 effective spawnMode：为什么 standalone remote-control 的一次性说明、账号资格、项目偏好与当前模式不是同一个默认.md](./05-控制面深挖/49-remoteDialogSeen、multi-session%20gate、ProjectConfig.remoteControlSpawnMode%20与%20effective%20spawnMode：为什么%20standalone%20remote-control%20的一次性说明、账号资格、项目偏好与当前模式不是同一个默认.md)
-- 分清 CCR v2 worker 的初始化、状态恢复、保活与代际退场为什么不是同一种存活合同：
-  [05-控制面深挖/50-worker epoch、state restore、worker heartbeat、keep_alive 与 self-exit：为什么 CCR v2 worker 的初始化、保活与代际退场不是同一种存活合同.md](./05-控制面深挖/50-worker%20epoch、state%20restore、worker%20heartbeat、keep_alive%20与%20self-exit：为什么%20CCR%20v2%20worker%20的初始化、保活与代际退场不是同一种存活合同.md)
-- 分清远端看到的 `worker_status`、`pending_action`、`task_summary` 与 `session_state_changed` 为什么不是同一张运行态面：
-  [05-控制面深挖/51-worker_status、requires_action_details、pending_action、task_summary、post_turn_summary 与 session_state_changed：为什么远端看到的运行态不是同一张面.md](./05-控制面深挖/51-worker_status、requires_action_details、pending_action、task_summary、post_turn_summary%20与%20session_state_changed：为什么%20远端看到的运行态不是同一张面.md)
-- 分清 `permission_mode`、`is_ultraplan_mode` 与 `model` 为什么不是同一种远端可恢复会话参数：
-  [05-控制面深挖/52-permission_mode、is_ultraplan_mode 与 model：为什么远端恢复回填、当前本地状态与 session control request 不是同一种会话参数.md](./05-控制面深挖/52-permission_mode、is_ultraplan_mode%20与%20model：为什么%20远端恢复回填、当前本地状态与%20session%20control%20request%20不是同一种会话参数.md)
-- 分清 `task_started`、`task_progress`、`task_notification` 与 `session_state_changed` 为什么不是同一种远端事件流：
-  [05-控制面深挖/53-task_started、task_progress、task_notification 与 session_state_changed：为什么远端消费方收到的不是同一种事件流.md](./05-控制面深挖/53-task_started、task_progress、task_notification%20与%20session_state_changed：为什么%20远端消费方收到的不是同一种事件流.md)
-- 分清 CCR v2 remote bridge 的 `transport rebuild`、initial flush、`flush gate` 与 `sequence resume` 为什么不是同一步：
-  [05-控制面深挖/54-transport rebuild、initial flush、flush gate 与 sequence resume：为什么 CCR v2 remote bridge 的重建 transport、历史续接与 connected 不是同一步.md](./05-控制面深挖/54-transport%20rebuild、initial%20flush、flush%20gate%20与%20sequence%20resume：为什么%20CCR%20v2%20remote%20bridge%20的重建%20transport、历史续接与%20connected%20不是同一步.md)
-- 分清 `received`、`processed`、write cursor、echo dedup 与 replay dedup 为什么不是同一种去重：
-  [05-控制面深挖/55-received、processing、processed、lastWrittenIndexRef、recentPostedUUIDs、recentInboundUUIDs 与 sentUUIDsRef：为什么 remote bridge 的送达回执、增量转发、echo 过滤与重放防重不是同一种去重.md](./05-控制面深挖/55-received、processing、processed、lastWrittenIndexRef、recentPostedUUIDs、recentInboundUUIDs%20与%20sentUUIDsRef：为什么%20remote%20bridge%20的送达回执、增量转发、echo%20过滤与重放防重不是同一种去重.md)
-- 分清 `initialize`、`can_use_tool`、`control_response`、`control_cancel_request` 与 `result` 为什么不是同一种状态交接：
-  [05-控制面深挖/56-initialize、can_use_tool、control_response、control_cancel_request 与 result：为什么 remote bridge 的握手、提问、作答、撤销与回合收口不是同一种状态交接.md](./05-控制面深挖/56-initialize、can_use_tool、control_response、control_cancel_request%20与%20result：为什么%20remote%20bridge%20的握手、提问、作答、撤销与回合收口不是同一种状态交接.md)
-- 分清 `useRemoteSession`、`useDirectConnect` 与 `useSSHSession` 为什么不是同一种远端会话合同：
-  [05-控制面深挖/57-useRemoteSession、useDirectConnect 与 useSSHSession：为什么看起来都是远端 REPL，但连接、重连、权限与退出不是同一种会话合同.md](./05-控制面深挖/57-useRemoteSession、useDirectConnect%20与%20useSSHSession：为什么看起来都是远端%20REPL，但连接、重连、权限与退出不是同一种会话合同.md)
-- 分清 attached assistant REPL 的首问加载、历史翻页与会话标题为什么不是同一种主权：
-  [05-控制面深挖/58-viewerOnly、hasInitialPrompt、useAssistantHistory 与 updateSessionTitle：为什么 attached assistant REPL 的首问加载、历史翻页与会话标题不是同一种主权.md](./05-控制面深挖/58-viewerOnly、hasInitialPrompt、useAssistantHistory%20与%20updateSessionTitle：为什么%20attached%20assistant%20REPL%20的首问加载、历史翻页与会话标题不是同一种主权.md)
-- 初始化仓库规范、安装 CLI 与开工环境：
-  [04-专题深潜/14-初始化、安装与开工环境搭建专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/14-%E5%88%9D%E5%A7%8B%E5%8C%96%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BC%80%E5%B7%A5%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E4%B8%93%E9%A2%98.md)
-- 切换账户、理解隐私与升级资格：
-  [04-专题深潜/15-账户、隐私、资格与升级专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/15-%E8%B4%A6%E6%88%B7%E3%80%81%E9%9A%90%E7%A7%81%E3%80%81%E8%B5%84%E6%A0%BC%E4%B8%8E%E5%8D%87%E7%BA%A7%E4%B8%93%E9%A2%98.md)
-- 在 IDE、Desktop、Mobile 之间继续同一工作：
-  [04-专题深潜/16-IDE、Desktop、Mobile 与会话接续专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/16-IDE%E3%80%81Desktop%E3%80%81Mobile%20%E4%B8%8E%E4%BC%9A%E8%AF%9D%E6%8E%A5%E7%BB%AD%E4%B8%93%E9%A2%98.md)
-- 管理插件、MCP、skills、hooks 与 agents：
-  [04-专题深潜/17-插件、MCP、技能、Hooks 与 Agents 运维专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/17-%E6%8F%92%E4%BB%B6%E3%80%81MCP%E3%80%81%E6%8A%80%E8%83%BD%E3%80%81Hooks%20%E4%B8%8E%20Agents%20%E8%BF%90%E7%BB%B4%E4%B8%93%E9%A2%98.md)
-- 分清 `claude ...` 本身的根入口、旗标与启动模式：
-  [04-专题深潜/18-CLI 根入口、旗标与启动模式专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/18-CLI%20%E6%A0%B9%E5%85%A5%E5%8F%A3%E3%80%81%E6%97%97%E6%A0%87%E4%B8%8E%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F%E4%B8%93%E9%A2%98.md)
-- 分清会外 root commands 和会内 slash 面板：
-  [04-专题深潜/19-会外控制台与会内面板专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/19-%E4%BC%9A%E5%A4%96%E6%8E%A7%E5%88%B6%E5%8F%B0%E4%B8%8E%E4%BC%9A%E5%86%85%E9%9D%A2%E6%9D%BF%E4%B8%93%E9%A2%98.md)
-- 分清 Settings tab、独立诊断屏、调参命令与预算分流：
-  [05-控制面深挖/10-设置面板、诊断屏与运营命令：会内控制面的三层分工.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/10-%E8%AE%BE%E7%BD%AE%E9%9D%A2%E6%9D%BF%E3%80%81%E8%AF%8A%E6%96%AD%E5%B1%8F%E4%B8%8E%E8%BF%90%E8%90%A5%E5%91%BD%E4%BB%A4%EF%BC%9A%E4%BC%9A%E5%86%85%E6%8E%A7%E5%88%B6%E9%9D%A2%E7%9A%84%E4%B8%89%E5%B1%82%E5%88%86%E5%B7%A5.md)
-- 分清 slash command 的对象类型、执行语义与可见性边界：
-  [05-控制面深挖/11-命令对象、执行语义与可见性：为什么 slash command 不是同一种按钮.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/11-%E5%91%BD%E4%BB%A4%E5%AF%B9%E8%B1%A1%E3%80%81%E6%89%A7%E8%A1%8C%E8%AF%AD%E4%B9%89%E4%B8%8E%E5%8F%AF%E8%A7%81%E6%80%A7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20slash%20command%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%E6%8C%89%E9%92%AE.md)
-- 分清技能来源、用户可见面、模型可调用面与动态激活面：
-  [05-控制面深挖/12-技能来源、暴露面与触发：为什么 skills 菜单不是能力全集.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/12-%E6%8A%80%E8%83%BD%E6%9D%A5%E6%BA%90%E3%80%81%E6%9A%B4%E9%9C%B2%E9%9D%A2%E4%B8%8E%E8%A7%A6%E5%8F%91%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20skills%20%E8%8F%9C%E5%8D%95%E4%B8%8D%E6%98%AF%E8%83%BD%E5%8A%9B%E5%85%A8%E9%9B%86.md)
-- 分清 Claude 与 remote client 真正看到的能力曝光链：
-  [05-控制面深挖/13-system-init、技能提醒与 SkillTool：Claude 如何看见可用能力.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/13-system-init%E3%80%81%E6%8A%80%E8%83%BD%E6%8F%90%E9%86%92%E4%B8%8E%20SkillTool%EF%BC%9AClaude%20%E5%A6%82%E4%BD%95%E7%9C%8B%E8%A7%81%E5%8F%AF%E7%94%A8%E8%83%BD%E5%8A%9B.md)
-- 分清扩展面的 workspace trust、来源信任与 hooks 总闸：
-  [05-控制面深挖/14-来源信任、Trust Dialog 与 Plugin-only Policy：扩展面为何分级信任.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/14-%E6%9D%A5%E6%BA%90%E4%BF%A1%E4%BB%BB%E3%80%81Trust%20Dialog%20%E4%B8%8E%20Plugin-only%20Policy%EF%BC%9A%E6%89%A9%E5%B1%95%E9%9D%A2%E4%B8%BA%E4%BD%95%E5%88%86%E7%BA%A7%E4%BF%A1%E4%BB%BB.md)
-- 分清 `relevant skills`、static listing 与 remote skills 的公开边界：
-  [05-控制面深挖/15-技能发现、静态 listing 与 remote skills：为什么“relevant skills”不是技能总表.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/15-%E6%8A%80%E8%83%BD%E5%8F%91%E7%8E%B0%E3%80%81%E9%9D%99%E6%80%81%20listing%20%E4%B8%8E%20remote%20skills%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9Crelevant%20skills%E2%80%9D%E4%B8%8D%E6%98%AF%E6%8A%80%E8%83%BD%E6%80%BB%E8%A1%A8.md)
-- 分清 `/hooks` 可见面、注册面与执行面的错位：
-  [05-控制面深挖/16-Hooks 的加载、注册、执行与 UI：为什么 `/hooks` 看到的不是实际会跑的 hooks.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/16-Hooks%20%E7%9A%84%E5%8A%A0%E8%BD%BD%E3%80%81%E6%B3%A8%E5%86%8C%E3%80%81%E6%89%A7%E8%A1%8C%E4%B8%8E%20UI%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20%60%2Fhooks%60%20%E7%9C%8B%E5%88%B0%E7%9A%84%E4%B8%8D%E6%98%AF%E5%AE%9E%E9%99%85%E4%BC%9A%E8%B7%91%E7%9A%84%20hooks.md)
-- 分清 `/mcp` 菜单、按名解析与 Agent `mcpServers` 的错位：
-  [05-控制面深挖/17-MCP 配置、按名解析与 Agent 引用：为什么你看到的 server 不是 Agent 真能挂上的 server.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/17-MCP%20%E9%85%8D%E7%BD%AE%E3%80%81%E6%8C%89%E5%90%8D%E8%A7%A3%E6%9E%90%E4%B8%8E%20Agent%20%E5%BC%95%E7%94%A8%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9C%8B%E5%88%B0%E7%9A%84%20server%20%E4%B8%8D%E6%98%AF%20Agent%20%E7%9C%9F%E8%83%BD%E6%8C%82%E4%B8%8A%E7%9A%84%20server.md)
-- 分清插件安装面、待刷新面与当前会话激活面的错位：
-  [05-控制面深挖/18-插件安装、待刷新与当前会话激活：为什么 `/reload-plugins` 不是安装器.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/18-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E3%80%81%E5%BE%85%E5%88%B7%E6%96%B0%E4%B8%8E%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E6%BF%80%E6%B4%BB%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20%60%2Freload-plugins%60%20%E4%B8%8D%E6%98%AF%E5%AE%89%E8%A3%85%E5%99%A8.md)
-- 分清插件为什么有时自动出现、有时只停在待刷新：
-  [05-控制面深挖/19-插件自动物化、Startup Trust 与 Headless 刷新：为什么插件有时会自己出现、有时只提示 `/reload-plugins`.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/19-%E6%8F%92%E4%BB%B6%E8%87%AA%E5%8A%A8%E7%89%A9%E5%8C%96%E3%80%81Startup%20Trust%20%E4%B8%8E%20Headless%20%E5%88%B7%E6%96%B0%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8F%92%E4%BB%B6%E6%9C%89%E6%97%B6%E4%BC%9A%E8%87%AA%E5%B7%B1%E5%87%BA%E7%8E%B0%E3%80%81%E6%9C%89%E6%97%B6%E5%8F%AA%E6%8F%90%E7%A4%BA%20%60%2Freload-plugins%60.md)
-- 分清 headless 的启动链、首问就绪与结构化宿主对象：
-  [05-控制面深挖/20-Headless 启动链、首问就绪与 StructuredIO：为什么 print 不是没有 UI 的 REPL.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/20-Headless%20%E5%90%AF%E5%8A%A8%E9%93%BE%E3%80%81%E9%A6%96%E9%97%AE%E5%B0%B1%E7%BB%AA%E4%B8%8E%20StructuredIO%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20print%20%E4%B8%8D%E6%98%AF%E6%B2%A1%E6%9C%89%20UI%20%E7%9A%84%20REPL.md)
-- 判断稳定面、灰度面和内部面：
-  [03-参考索引/02-能力边界/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
-- 建立系统总图：
-  [03-参考索引/04-功能面七分法.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/04-%E5%8A%9F%E8%83%BD%E9%9D%A2%E4%B8%83%E5%88%86%E6%B3%95.md) ->
+- `旧状态污染`：
+  [01-主线使用/README.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/README.md) ->
+  [05-控制面深挖/README.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/README.md)
+- 想建立运行时总图，而不是先学操作：
   [02-能力地图/README.md](./02-%E8%83%BD%E5%8A%9B%E5%9C%B0%E5%9B%BE/README.md)
+- 只想按名字、入口和合同速查：
+  [03-参考索引/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/README.md)
+
+如果你已经确定要读某个专题，请先到对应 README 再选深页，不要把根前门当默认深链库存。
+
+## 根前门的 first reject signal
+
+看到下面迹象时，应先停在根前门，不要直接跳进深页：
+
+1. 你还没先判 `上下文送错 / 扩张或权限判错 / 旧状态污染`，就已经开始点深页标题。
+2. 你还没先判工作对象或控制面，就已经在 mode、usage、status、summary 和目录体感之间来回切。
+3. 你把根 README 当成专题层或控制面层，而不是二跳路由。
 
 ## 阅读原则
 
@@ -225,87 +104,16 @@
 
 ### `04-专题深潜`
 
-按真实工作目标组织：
+按真实工作目标组织，负责回答：
 
-- 代码工作流
-- 连续性与记忆
-- 治理与安全
-- 扩展与集成
-- 并行执行与隔离
-- 前端与远程
-- 上下文接入与提示编译
-- 评审、提交、导出与反馈
-- 状态、额度、模型与节奏运营
-- 终端交互与输入效率
-- 会话发现与恢复选择
-- 非交互、后台会话与自动化
-- 初始化、安装与开工环境搭建
-- 账户、隐私、资格与升级
-- IDE、Desktop、Mobile 与会话接续
-- 插件、MCP、技能、Hooks 与 Agents 运维
-- CLI 根入口、旗标与启动模式
-- 会外控制台与会内面板
-
-适合已经知道自己要完成什么工作，并准备读长文专题的读者。
+1. 我在推进哪个工作对象。
+2. 这类工作先按哪组最小顺序排。
+3. 什么时候该退出专题，退回 `05` 或主线使用重校边界。
 
 ### `05-控制面深挖`
 
-按高价值控制面组织：
+按高价值控制面组织，负责回答：
 
-- 权限、计划模式与 worktree
-- MCP、插件、技能与 hooks 的边界
-- compact / resume / memory 的控制面
-- agent / task / team / cron 的控制面
-- 入口决策树
-- status / doctor / usage 的运行时自检面
-- add-dir 的工作面扩张与 sandbox 刷新
-- rename / export 的会话对象化与交付
-- release-notes / feedback 的版本证据与反馈回路
-- 设置面板、诊断屏与运营命令的三层分工
-- slash command 的对象、执行与可见性边界
-- skills 的来源、暴露面与触发边界
-- Claude 如何看见可用能力
-- 扩展来源为何被分级信任
-- `relevant skills`、static listing 与 remote skills 的公开边界
-- `/hooks` 可见面、注册面与执行面的错位
-- `/mcp` 总览、按名解析与 Agent 引用的错位
-- `/reload-plugins` 与插件当前会话激活面的错位
-- 插件自动物化链与当前会话激活链的错位
-- headless 启动链、首问就绪与结构化宿主合同
-- host / viewer / health-check 的会外入口边界
-- `skip trust dialog`、project `.mcp.json` 批准与 health-check 的边界
-- bridge 的 workspace trust、bridge eligibility 与 trusted-device 边界
-- bridge 的 auto-connect、mirror、perpetual 与 continue 模式边界
-- bridge 的设置默认、显式开关与状态展示边界
-- bridge 的链接、二维码与定位符边界
-- remote-control 的入口矩阵边界
-- remote session client、viewer 与 bridge host 的边界
-- remote 的权限响应、会话控制与命令合同边界
-- remote session 的运行态、后台任务与 viewer ownership 边界
-- bridge 的状态词、恢复厚度与动作上限边界
-- bridge 的故障提示、当前停机与默认回退边界
-- bridge 的断开、退出与恢复轨迹边界
-- bridge 的 stale pointer、过期环境与重试语义边界
-- bridge 的补救动作与恢复建议边界
-- bridge 的 build 不可用、资格不可用与权限噪音边界
-- standalone remote-control 的 spawn topology、capacity 与目录分配边界
-- standalone remote-control 的 banner、状态行、QR 与会话列表边界
-- standalone remote-control 的 host flags、session 默认策略与 title 回填边界
-- remote-control 的工具审批、网络放行、自动批准与提示收口边界
-- standalone remote-control 的 transport URL、secret、token 与 epoch 边界
-- standalone remote-control 的 environment、work 与 session 生命周期边界
-- bridge 的 compat session tag、infra session tag 与 retag helper 边界
-- standalone remote-control 的 token freshness timing、child sync 与 heartbeat auth 边界
-- standalone remote-control 的 work intake validity、claim 与 routing 边界
-- bridge 的 session runtime timeout、shutdown grace 与 failed remap 边界
-- direct-connect 的 session factory、transport URL、workspace 回填与断线退出边界
-- direct-connect 的控制子集、权限投影与退出传播边界
-- direct-connect 的消息过滤、`init` 去重与 transcript surface 边界
-- direct-connect 的本地提示、transcript 状态、tab status、overlay 与 fatal stderr 边界
-- direct-connect 的 prompt 面、transcript 模式与 raw SDK stream 差异边界
-- remote session 的持续状态面与 direct connect 的当前交互态边界
-- remote session 的持续事件流消费与 direct connect 的离散交互投影边界
-- remote session 内部不同消费者的投影厚度边界
-- remote session 事件族到命令集、流式正文、后台计数与 timeout 控制的映射边界
-
-适合想判断“为什么系统这样设计、哪里不能混写”的读者。
+1. 哪条控制面现在在说话。
+2. 哪些相邻入口只是 projection / consumer，不配改判。
+3. 什么时候该把问题退回 `09 / api / architecture / playbooks`。

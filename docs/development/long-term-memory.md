@@ -8,6 +8,23 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- root `userbook/README` 的长期默认目录纪律现已继续升级：
+  - 根前门默认不再保留“大量深页直达”作为默认路线
+  - 默认只做 `问题分型 + 二跳`
+  - 二跳默认仍回 `01 / 04 / 05 / 02 / 03` 的 README
+  - 后续若根前门又开始长回深页库存，默认按 root frontdoor 反弹处理
+- `03-参考索引/README` 的长期默认职责现已继续写死：
+  - 默认只保留 `最短路由 + first reject signal + 使用边界`
+  - 更细的问题库存默认下沉到子目录 README 和具体索引页
+  - 索引层默认只配 `触发怀疑 + 路由`
+  - 不配直接签 truth 或出 verdict
+- `03-参考索引/01-命令工具/README` 与 `02-能力边界/README` 的长期默认边界现已继续写死：
+  - 只拆对象、语义、gate、danger surface
+  - 不负责把 projection 写回 signer
+  - 不负责单独宣布 `product promise` 或 `current admission verdict`
+- 下一批目录层继续减肥的长期默认目标现已记下：
+  - 若还有高流量 README 继续保留过长 one-off 问题库存，优先继续收回“分组路由 + 子 README 下沉”
+  - `03-技能与扩展/README` 之后若也长成问题库存，默认沿同一策略减肥
 - 源码质量 frontdoor 的长期默认单首答现已继续写死：
   - canonical ladder 默认仍只认 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
   - `evidence gradient -> authority surface -> temporal honesty -> future maintainer rejectability` 默认只配做 crosswalk / 解释层压缩句
