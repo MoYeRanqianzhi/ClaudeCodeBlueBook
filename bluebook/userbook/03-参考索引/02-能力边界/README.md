@@ -155,3 +155,4 @@
 - [153-deserializeMessages、SessionEnd、SessionStart 与 interrupted-resume 索引.md](./153-deserializeMessages、SessionEnd、SessionStart%20与%20interrupted-resume%20索引.md)
 - [154-hydrateFromCCRv2InternalEvents、externalMetadataToAppState、hydrateRemoteSession 与 startup fallback 索引.md](./154-hydrateFromCCRv2InternalEvents、externalMetadataToAppState、hydrateRemoteSession%20与%20startup%20fallback%20索引.md)
 - [155-print.ts、externalMetadataToAppState、setMainLoopModelOverride 与 startup fallback 索引.md](./155-print.ts、externalMetadataToAppState、setMainLoopModelOverride%20与%20startup%20fallback%20索引.md)
+- [156-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata 与 RemoteIO 索引.md](./156-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata%20与%20RemoteIO%20索引.md)
