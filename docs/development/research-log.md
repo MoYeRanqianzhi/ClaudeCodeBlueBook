@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 userbook mid-layer 深化动作: 已继续更新 `bluebook/userbook/02-能力地图/02-执行与工具/README`、`03-治理与边界/README`、`04-扩展与生态/README`、`03-参考索引/01-命令工具/05-设置、状态、预算与调参入口索引.md` 与 `03-参考索引/02-能力边界/01-能力状态矩阵.md`。新的结论是：user-facing 中层页也不该把 continuity、扩展或预算分流误写成新的并列主线。更稳的默认写法是：执行与工具只把 continuity 写成 task/output/recovery 的时间轴，治理与边界只把它写成 `decision window -> continuation pricing -> cleanup-before-resume`，扩展与生态只把扩展面写成 source/projection/gate 路径，状态矩阵与设置/预算索引则只把它们写成时间轴动作与状态分类，而不是 pseudo-authority。
+- 本轮新的中层目录结论: userbook 如果在 `02-执行与工具 / 03-治理与边界 / 04-扩展与生态 / 关键索引页` 这些中层页里还不能继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`，就会在二跳之后重新长回 route-map drift。现在这一层也开始共享同一组 first-answer order。
 - 本轮 userbook path/map 深化动作: 已继续更新 `bluebook/userbook/00-导读`、`00-阅读路径`、`02-能力地图/01-运行时主链/README` 与 `03-参考索引/04-功能面七分法.md`。新的结论是：路径页与总图页也不该把 continuity 单列成读者问题、独立主线或第九个运行时层。更稳的默认写法是：`00` 只把它写成同一工作对象在时间轴上的继续条件，运行时主链 README 只把它写成 `session truth -> continuation` 的动作，功能面七分法只把它写成主层与横切面的时间轴复用。
 - 本轮新的路径页结论: userbook 如果在 `00-导读 / 00-阅读路径 / 运行时主链 / 功能面七分法` 这些总图页里还不能继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`，就会在最早的阅读路径层重新长回 route-map drift。现在路径页与总图页也开始共享这组顺序。
 - 本轮 userbook tertiary-frontdoor 深化动作: 已继续更新 `bluebook/userbook/03-参考索引/01-命令工具/README`、`02-能力边界/README`、`03-技能与扩展/README` 与 `06-高价值入口运行时合同速查.md`。新的结论是：三级入口层也不该把 continuation actions、边界时间轴或扩展路径误写成新的并列主题。更稳的默认写法是：命令索引只把 `/compact / /resume / /memory` 写成时间轴动作，边界索引只把 continuity 写成 `same-world / decision window / current admission` 的时间轴复用，扩展索引只把 skills/MCP/plugins/hooks 写成 source/projection/gate 路径，高价值入口页则只把它们写成运行时合同，而不是更高优先级的命令表。

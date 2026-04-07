@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/userbook/02-能力地图/02-执行与工具/README`、`03-治理与边界/README`、`04-扩展与生态/README`、`03-参考索引/01-命令工具/05-设置、状态、预算与调参入口索引.md` 与 `03-参考索引/02-能力边界/01-能力状态矩阵.md` 的长期默认 userbook mid-layer language 现已继续写死：
+  - 执行与工具 README 默认不把 continuity 升成第三条执行主线
+  - 治理与边界 README 默认不把 continuity 升成第四条治理线
+  - 扩展与生态 README 默认不把扩展面升成第四条工作主线
+  - 设置/状态/预算索引默认不把 `/usage / /extra-usage / /rate-limit-options` 升成单独预算主题线
+  - 能力状态矩阵默认不把 continuity 升成第五个状态桶
+  - 这组中层页默认统一把 continuity 收回同一工作对象在 `Continuation / continuation pricing / cleanup-before-resume` 上的时间轴
+  - userbook 中层目录优化默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
 - `bluebook/userbook/00-导读`、`00-阅读路径`、`02-能力地图/01-运行时主链/README` 与 `03-参考索引/04-功能面七分法.md` 的长期默认 userbook path/map language 现已继续写死：
   - `00-导读` 默认不把 continuity 升成第五类读者问题
   - `00-阅读路径` 默认不把连续性与记忆专题升成独立第五主线
