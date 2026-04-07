@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 286 篇速查文档。
+`appendix/` 当前包含 287 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -501,6 +501,9 @@
 - `286`
   载体家族强请求清理恢复治理与强请求清理重新并入治理分层。
   入口：[286-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question](286-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question.md)。
+- `287`
+  载体家族强请求清理重新并入治理与强请求清理重新投影治理分层。
+  入口：[287-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question](287-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question.md)。
 
 ## 怎么配合主线读
 
