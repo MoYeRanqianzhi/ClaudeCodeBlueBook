@@ -495,5 +495,6 @@
 - model 的 create-time stamp、live shadow、durable usage 与 resumed fallback 边界
 - bridge 的 initial-message local seed、真实 delivery ledger 与旧注释语义边界
 - model 的 persisted preference、live override、resume short-circuit 与 fallback authority 边界
+- model 的 ambient env preference、saved setting、agent bootstrap、launch override 与 startup snapshot 边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
