@@ -152,6 +152,7 @@
 - [148-2026-04-07-headless remote env split 拆分记忆.md](./148-2026-04-07-headless%20remote%20env%20split%20拆分记忆.md)
 - [149-2026-04-07-remote memory persistence split 拆分记忆.md](./149-2026-04-07-remote%20memory%20persistence%20split%20拆分记忆.md)
 - [150-2026-04-07-slash contract split 拆分记忆.md](./150-2026-04-07-slash%20contract%20split%20拆分记忆.md)
+- [151-2026-04-07-remote session identity split 拆分记忆.md](./151-2026-04-07-remote%20session%20identity%20split%20拆分记忆.md)
 
 用途：
 

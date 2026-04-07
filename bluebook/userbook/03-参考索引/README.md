@@ -141,6 +141,7 @@
 122. 为什么 `CLAUDE_CODE_REMOTE`、`getIsRemoteMode()`、`print`、`reload-plugins` 与 `settingsSync` 说明 headless remote 分支不是 interactive remote bit 的镜像。
 123. 为什么 `CLAUDE_CODE_REMOTE_MEMORY_DIR`、`memdir`、`SessionMemory`、`extractMemories` 与 `print` 说明 remote 记忆持久化不是单根目录，而是 auto-memory 根与 session 账本的双轨体系。
 124. 为什么 `system/init.slash_commands`、`REMOTE_SAFE_COMMANDS`、`PromptInput`、`REPL`、`processUserInput` 与 `print` 说明 slash 不是一张命令表，而是声明面、文本载荷与 runtime 再解释的三段合同。
+125. 为什么 `getSessionId`、`switchSession`、`StatusLine`、`assistant viewer`、`remoteSessionUrl` 与 `useRemoteSession` 说明 `remote.session_id` 可见，不等于当前前端拥有那条 remote session。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
