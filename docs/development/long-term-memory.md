@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/76` 的长期默认 source-map-question-demotion language 现已继续写死：
+  - `bluebook/philosophy/76` 默认继续把 later maintainer 的问题模板写成 authority/object 问法，而不是目录先行问法
+  - 目录在 `76` 里的长期默认角色只是 locator，不是 authority 单位
+  - `76` 的长期默认写法现在统一拒收“哪个目录在说话”式首答模板
 - `bluebook/userbook/05/03` 与 `bluebook/userbook/05/06` 的长期默认 userbook-03-06-fail-route language 现已继续写死：
   - `05/03` 默认继续把 failed `resume` 的去向写回 `risk/README` 与 reopen/playbook
   - `05/06` 默认继续把 `/status / /doctor / /usage` 写成 runtime evidence surface，不写成 verdict source
