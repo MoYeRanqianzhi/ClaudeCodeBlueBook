@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 user-facing control-plane 深化动作: 已继续更新 `bluebook/userbook/05-控制面深挖/README.md` 与 `05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md`。新的结论是：用户侧控制面前门过去最容易写浅的地方，不是没提到 `continuation pricing`，而是没把它和 `typed ask / decision window / durable-transient cleanup` 写成同一条顺序。现在 `05` 和 `05/03` 都开始共享这条治理链，而不再把 `/usage`、`/compact` 写成并列技巧。
+- 本轮新的连续性结论: `Compact / Resume / Memory / Export` 现在被进一步固定成 continuation consumer，而不是独立控制面；这意味着 user-facing continuity 的去魅又往前推了一步。
 - 本轮 user-facing governance 深化动作: 已继续更新 `bluebook/userbook/README.md` 与 `bluebook/risk/README.md`。新的结论是：用户侧治理 residual 现在不再是“有没有 shared nouns”，而是“有没有把 `decision window -> continuation pricing -> durable-transient cleanup` 也写成 first-answer order”。更稳的默认写法是：`userbook` 先把用户的治理判断压成完整顺序，`risk` 再把同一条完整治理链翻译成用户侧结算面，而不是只保留 `product promise / signer + evidence + reopen` 这些后段结果词。
 - 本轮新的治理结论: 风控前门现在更接近完整治理链，而不再只是用户侧结果词翻译；这意味着 `risk/` 与 `userbook/` 在治理线上的同序化又往前推了一步。
 - 本轮 source-quality-deep-page 深化动作: 已继续更新 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`、`bluebook/guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md` 与 `bluebook/guides/101-如何用苏格拉底诘问法审读one writable present：single-writer、recovery asset与anti-zombie.md`。新的结论是：源码质量深页当前最危险的 residual 已不再是前门 split，而是深页内部仍在用旧 `...truth / orchestration shell / danger surface / authoritative surface` 这套 atlas/公开镜像词替代 canonical ladder。更稳的默认写法是：深页即便做公开镜像或 atlas crosswalk，也要先把 canonical ladder 写死，再显式声明哪些旧词只配做兼容别名。

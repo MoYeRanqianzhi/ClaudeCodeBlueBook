@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/userbook/05-控制面深挖/README` 与 `05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md` 的长期默认 user-facing-control-plane language 现已继续写死：
+  - `05-README` 默认继续把用户侧治理判断写成 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`
+  - `05-README` 默认继续把治理裁决拆成前段准入与中后段续费/清算
+  - `05/03` 默认继续把 `Compact / Resume / Memory / Export` 写成这条治理链的 continuation consumer
+  - `05/03` 默认继续把 `/usage`、status 条与 compact 成功提示降回观察面，不配自己充当治理 verdict
+  - 这两页默认统一拒收把 continuity consumer 写成独立控制面或把 `/usage / /compact` 写成治理本体
 - `bluebook/userbook/README` 与 `bluebook/risk/README` 的长期默认 user-facing-governance language 现已继续写死：
   - `userbook/README` 默认继续把用户侧治理首答写成 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`
   - `userbook/README` 默认继续把 `扩张或权限判错` 的最小顺序写成先判前段准入，再判中后段续费与清算
