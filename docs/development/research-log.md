@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 atlas-label-propagation 深化动作: 已继续更新 `bluebook/api/46-services 二级目录 Atlas：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md`、`bluebook/api/47-tools 二级目录 Atlas：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md` 与 `bluebook/api/48-commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界.md`。新的结论是：atlas 线在上游两页收口后，最容易继续回潮的位置就是下游 API atlas 页的 H1 和一句话总结。现在这三页开始更一致地把 `二级目录 Atlas` 收回 `二级目录地图 / 源码地图`。
+- 本轮新的源码质量结论: 术语上游一旦收紧，就要立刻把 visible label 传播到下游宿主页；否则 later maintainer 仍会先在 API atlas 页里学到旧词，再把 `guides/102 / navigation/35` 的 locator 约束读成例外。
 - 本轮 atlas-locator-demotion-2 深化动作: 已继续更新 `bluebook/guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md` 与 `bluebook/navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md`。新的结论是：源码地图线当前最值钱的 residual，已经收敛到最上游两页自己还在用 `atlas / rung` 组织 later maintainer；只要这里不先收口，`api/46-48` 这类下游 atlas 页就会继续继承旧话语。现在 `102` 更明确只拥有 canonical ladder 与降格规则，`35` 更明确只拥有源码地图 route。
 - 本轮新的源码质量结论: 对 later maintainer 来说，最稳定的地图入口不是“atlas 多精细”，而是“canonical ladder 在哪里定义、地图页只负责把你送到哪里”；一旦这两页继续混写，整个 atlas 线就会反向把 locator 话语抬成 authority。
 - 本轮 governance-recovery-bridge 深化动作: 已继续更新 `bluebook/risk/README.md` 与 `bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md`。新的结论是：治理线当前剩余的高价值 residual，已经从 canonical chain 公式退到恢复链 bridge wording 本身，即 `risk/` 还会顺手把自己写成 `用户侧结算面 / 结算权`，`85` 还会顺手把 approval、usage、cleanup result 与恢复流程写成“收费链的外观”。现在这两页开始更一致地把这些词收回 `product promise / reopen qualification / evidence binding` 与 `projection / consumer`。

@@ -1,4 +1,4 @@
-# Commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界
+# Commands 二级目录地图：会话控制、模式治理、扩展装配、交付诊断与内部命令边界
 
 这一章回答五个问题：
 
@@ -30,7 +30,7 @@
 
 `commands/` 不是“一堆 slash 命令”目录，而是 Claude Code 的显式控制平面。
 
-这张 atlas 最关键的意义不是：
+这张源码地图最关键的意义不是：
 
 - 命令有多少
 
@@ -173,4 +173,4 @@
 
 ## 11. 一句话总结
 
-`commands/` 二级目录 atlas 真正统一的，不是“有哪些 slash 命令”，而是“哪些显式控制动作沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 被公开承诺、被裁切或被拒收”。
+`commands/` 二级目录地图真正统一的，不是“有哪些 slash 命令”，而是“哪些显式控制动作沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 被公开承诺、被裁切或被拒收”。

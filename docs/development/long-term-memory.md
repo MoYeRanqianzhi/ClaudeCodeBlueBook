@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/api/46`、`bluebook/api/47` 与 `bluebook/api/48` 的长期默认 atlas-label-propagation language 现已继续写死：
+  - 下游 API atlas 页默认继续把 `二级目录 Atlas / 这张 atlas / 二级目录 atlas` 收回 `二级目录地图 / 这张源码地图 / 二级目录地图`
+  - 这三页默认统一跟随 `guides/102 / navigation/35` 的 locator 话语，不再自行保留 atlas 前门调门
 - `bluebook/guides/102` 与 `bluebook/navigation/35` 的长期默认 atlas-locator-demotion-2 language 现已继续写死：
   - `guides/102` 默认继续只写 canonical ladder 与降格规则，不再用 `canonical rung / atlas 正文` 组织术语
   - `navigation/35` 默认继续只写源码地图 route page，不再写成 atlas projection page
