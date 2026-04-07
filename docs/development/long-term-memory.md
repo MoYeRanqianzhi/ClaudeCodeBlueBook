@@ -8,6 +8,43 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- Prompt user-facing 主线页的长期默认补口现已继续写死：
+  - `01-主线使用/02` 默认不只教 `compile inputs`，还必须继续教 `verify witnesses`
+  - 默认四个 witness 先验：
+    - `目标 witness`
+    - `附件 witness`
+    - `working-set witness`
+    - `next-step witness`
+  - 后续凡是再把 Prompt continuity 写成靠长摘要、标题、最后一条消息或 imagined `systemPrompt` 维持，默认按写浅处理
+- `compact / resume / memory / export` 的长期默认 signer 纪律现已继续写死：
+  - 它们都只是 `continuation consumer`
+  - `/compact` 默认只配换表示，不配替 `continuation qualification` 签字
+  - `/resume` 默认只配恢复已被承认的现场，不配把旧恢复资产升成 current truth
+  - `/memory` 默认只配外置 stable bytes，不配接管当前 working set verdict
+  - `/export` 默认只配把结果移到 `Outside`，不配替会内 cleanup / rollback 补签
+- `status / doctor / usage` 的长期默认写法现已继续写死：
+  - `/status` = `host-state projection`
+  - `/doctor` = `trust evidence`
+  - `/usage` = `budget window`
+  - 三者都不配单独充当 `continue verdict source`
+  - user-facing 失败动作默认仍回 `继续 / 降级 / 停止 / 清理后恢复 / 升级给人`
+- `03-参考索引/01-命令工具/05` 这一类索引页的长期默认边界现已继续写死：
+  - 索引页只配 `触发怀疑 + 路由`
+  - 不配把 `/status` 写成“宿主状态真相”
+  - 后续凡是索引页开始把 projection 写回 signer，默认按索引越权处理
+- `02-能力地图/README` 的长期默认 speaking rights 现已继续升级：
+  - 除了 `能力曝光翻译权 / 能力边界提示权 / 无真相签发权`
+  - 现在还必须继续显式保留 `退层与申诉提示权`
+  - 证据不足或 signer 不清时，默认要告诉读者退回哪一层
+- root `userbook/README` 的长期默认目录纪律现已继续收紧：
+  - 根前门默认职责仍是 `问题分型 + 二跳`
+  - 已显式写死“根前门不替 `04 / 05` README 重新充当专题目录”
+  - 下一批仍应继续减少长深链清单，把根前门真正收回二跳 frontdoor
+- 下一批 frontdoor / later-maintainer 收口目标现已记下：
+  - `bluebook/09` 与 `philosophy/README` 需要继续清掉源码质量线的双首答
+  - `guides/102` 需要把 `public artifact ceiling -> candidate demotion` 提到第一页
+  - `userbook/05-控制面深挖/README`、`51`、`52` 需要继续把 `projection vs signer` 与 `first reject path` 写硬
+  - `docs/userbook-memory/06` 需要继续吸收 `later-maintainer / local opposability / current-truth surface candidate`
 - userbook 根前门的长期默认问题分型现已继续写死：
   - `上下文送错`
   - `扩张或权限判错`

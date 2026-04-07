@@ -2,6 +2,13 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 Prompt 去魅补口动作: 已继续更新 `userbook/01-主线使用/02` 与 `04`。这一批把 user-facing Prompt 线从“会 compile 输入”继续压到“还要 verify witnesses”：主线页现在显式要求先验 `目标 / 附件 / working set / next-step` 四个 witness，`/compact` 也被继续写死成“summary 只是 carrier，不是 signer”。后续凡是再把 Prompt 魔力写回 secret prose、长摘要或最后一条消息，默认按去魅失败处理。
+- 本轮 projection consumer 收口动作: 已继续更新 `userbook/01-主线使用/05`、`05-控制面深挖/03`、`06`、`10` 与 `03-参考索引/01-命令工具/05`。这批把 `/status / /doctor / /usage` 与 `compact / resume / memory / export` 统一收回“投影 / 连续性 consumer”，不再允许它们在 user-facing 页里代签 `continue verdict`、`current truth` 或 `world-entry`。
+- 本轮新的 user-facing 结论: `status / doctor / usage` 的真正价值不是“更快告诉你答案”，而是把 `host-state projection / trust evidence / budget window` 这三类不同对象拆开。它们能帮助你判 `继续 / 降级 / 停止 / 清理后恢复 / 升级给人`，但它们自己不是 verdict source。
+- 本轮新的 continuity 结论: `compact / resume / memory / export` 的最稳写法不再是工作流技巧，而是“哪些对象可继续留在场内、哪些必须外置或清理”。如果哪页继续把 `/compact` 写成“省字数”，或把 `/resume` 写成“找旧聊天记录”，就仍是在把 continuation qualification 写浅。
+- 本轮新的目录结构结论: userbook 根前门虽然还保留长深链清单，但现在已继续显式写死“根前门只做问题分型与二跳，不替 `04 / 05` README 重新充当专题目录”。后续目录优化默认继续沿这条线推进，而不是再给根前门补更多深链。
+- 本轮新的 later-maintainer / appeal 结论: 已继续更新 `userbook/02-能力地图/README`，把这层从“只会提醒别越签”推进到“证据不足时提醒退到哪一层”。这说明 userbook 入口现在不只要会说 `不要改判`，还要会说 `该往哪层申诉 / 退层`。
+- 本轮并行 Agent 新结论已记下，作为下一批主干页收口目标: `bluebook/09` 与 `philosophy/README` 仍残留源码质量线“双首答”；`guides/102` 仍缺 `public artifact ceiling -> candidate demotion` 的第一页纪律；`docs/userbook-memory/06` 仍未吸收 `later-maintainer / local opposability / current-truth surface candidate` 这组新默认语汇。
 - 本轮 userbook 根前门再收口动作: 已继续更新 `userbook/README`。这一批把根前门从“抽象三分法 + 长深链目录”继续收回 “三类问题分型 + 二跳路由”。这条调整很值钱，因为它把 root userbook 从“替 04/05 回答一半”重新拉回 “先把人送到对的问题上”。
 - 本轮新的 userbook 路由结论: user-facing 根前门最稳的默认形式不是“列更多深页”，而是 `问题分型 -> 04/05/02/03 README`。一旦根前门开始直接穿透到大量控制面深页，它就会重新兼任 `05` 的目录，层级又会混掉。
 - 本轮新的 04/05 结论: `04` 的最佳 first-answer 现在更明确是 “工作对象版三问”，而不是继续/降级/停止 这类控制面 verdict；`05` 的最佳 first-answer 则是 “先判哪条控制面失真”，而不是再讲一遍 object chain。以后两层一旦互借主语，默认按层级越位处理。

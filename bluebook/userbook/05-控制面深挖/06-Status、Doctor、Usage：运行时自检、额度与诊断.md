@@ -33,6 +33,16 @@ Claude Code 要先解决的，不是“模型够不够聪明”，而是：
 - 你把 `Context Usage` 或 `/usage` 当 token 条，而不是当前 `decision window` 的诚实投影。
 - 你还没确认状态、环境和预算，就已经在讨论“换更强模型”“调更高 effort”。
 
+## 它们都是运行时投影，不是 continue verdict 的签发人
+
+更稳一点说：
+
+- `/status` 只投影当前宿主状态，不单独签发“这还是同一个工作现场”。
+- `/doctor` 只汇总可信度证据，不单独签发“这套环境已经安全可用”。
+- `/usage` 只投影预算窗口，不单独签发“这轮还值得继续付费”。
+
+真正的用户动作 verdict 仍是：`继续 / 降级 / 停止 / 清理后恢复 / 升级给人`。如果把这三者直接写成 verdict source，就又会把 projection consumer 抬回本体层。
+
 ## `/status` 解决的是宿主状态真相
 
 `/status` 不是 about 页，而是当前 CLI 会话的状态投影。
