@@ -162,6 +162,14 @@
 - [158-2026-04-08-resume restore pipeline split 拆分记忆.md](./158-2026-04-08-resume%20restore%20pipeline%20split%20拆分记忆.md)
 - [159-2026-04-08-fork-session ownership split 拆分记忆.md](./159-2026-04-08-fork-session%20ownership%20split%20拆分记忆.md)
 - [160-2026-04-08-resume payload taxonomy split 拆分记忆.md](./160-2026-04-08-resume%20payload%20taxonomy%20split%20拆分记忆.md)
+- [161-2026-04-08-resume entry host split 拆分记忆.md](./161-2026-04-08-resume%20entry%20host%20split%20拆分记忆.md)
+- [162-2026-04-08-resume host family split 拆分记忆.md](./162-2026-04-08-resume%20host%20family%20split%20拆分记忆.md)
+- [163-2026-04-08-print-resume pre-stage split 拆分记忆.md](./163-2026-04-08-print-resume%20pre-stage%20split%20拆分记忆.md)
+- [164-2026-04-08-resume runtime stage split 拆分记忆.md](./164-2026-04-08-resume%20runtime%20stage%20split%20拆分记忆.md)
+- [165-2026-04-08-print-remote recovery stage split 拆分记忆.md](./165-2026-04-08-print-remote%20recovery%20stage%20split%20拆分记忆.md)
+- [166-2026-04-08-print-remote state split 拆分记忆.md](./166-2026-04-08-print-remote%20state%20split%20拆分记忆.md)
+- [167-2026-04-08-CCR v2 metadata readback vs local consumption split 拆分记忆.md](./167-2026-04-08-CCR%20v2%20metadata%20readback%20vs%20local%20consumption%20split%20拆分记忆.md)
+- [168-2026-04-08-headless transport recovery thickness split 拆分记忆.md](./168-2026-04-08-headless%20transport%20recovery%20thickness%20split%20拆分记忆.md)
 
 用途：
 

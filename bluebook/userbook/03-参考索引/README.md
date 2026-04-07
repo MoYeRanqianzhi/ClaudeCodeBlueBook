@@ -76,6 +76,14 @@
 19. `SessionPreview`、`loadFullLog`、`loadConversationForResume`、`switchSession` 与 `adoptResumedSessionFile` 看起来都在 `/resume` 恢复附近时，应该先去哪个入口分辨 preview transcript 与正式 session restore。
 20. `forkSession`、`switchSession`、`copyPlanForFork`、`restoreWorktreeForResume` 与 `adoptResumedSessionFile` 看起来都在会话分叉附近时，应该先去哪个入口分辨 `--fork-session` 与原会话恢复的边界。
 21. `loadConversationForResume`、`deserializeMessagesWithInterruptDetection`、`copyPlanForResume`、`fileHistoryRestoreStateFromLog` 与 `processSessionStartHooks` 看起来都在 resume 恢复包附近时，应该先去哪个入口分辨内容载荷与恢复流程的边界。
+22. `main.tsx`、`launchResumeChooser`、`ResumeConversation`、`resume.tsx` 与 `REPL.resume` 看起来都在 resume 入口附近时，应该先去哪个入口分辨 `--continue`、startup picker 与会内 `resume` 共享恢复合同，却不是同一种入口宿主。
+23. `main.tsx`、`print.ts`、`loadInitialMessages`、`ResumeConversation` 与 `REPL.resume` 看起来都在恢复入口附近时，应该先去哪个入口分辨 interactive resume host 与 headless print host 共享恢复语义，却不是同一种宿主族。
+24. `print.ts`、`parseSessionIdentifier`、`hydrateRemoteSession` 与 `loadConversationForResume` 看起来都在 print resume 附近时，应该先去哪个入口分辨 parse、hydrate、restore 不是同一种前置阶段。
+25. `deserializeMessages`、`SessionEnd`、`SessionStart` 与 `interrupted-resume` 看起来都在恢复时序附近时，应该先去哪个入口分辨合法化、修复与 hook 注入不是同一种 runtime stage。
+26. `hydrateFromCCRv2InternalEvents`、`externalMetadataToAppState`、`hydrateRemoteSession` 与 `startup fallback` 看起来都在 print resume 的 remote recovery 附近时，应该先去哪个入口分辨它们不是同一种 stage。
+27. `print.ts`、`externalMetadataToAppState`、`setMainLoopModelOverride` 与 `startup fallback` 看起来都在 print remote recovery 附近时，应该先去哪个入口分辨 transcript、metadata 与 emptiness 不是同一种 stage。
+28. `restoredWorkerState`、`externalMetadataToAppState`、`SessionExternalMetadata` 与 `RemoteIO` 看起来都在 metadata readback 附近时，应该先去哪个入口分辨 CCR v2 的 readback 不是 observer metadata 的同一种本地消费合同。
+29. `StructuredIO`、`RemoteIO`、`setInternalEventReader`、`setInternalEventWriter` 与 `flushInternalEvents` 看起来都在 headless transport 附近时，应该先去哪个入口分辨协议宿主不等于同一种恢复厚度。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 
