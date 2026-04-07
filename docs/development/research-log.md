@@ -2,6 +2,10 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 frontdoor-role-hardening 深化动作：已继续更新 `bluebook/README`、`bluebook/philosophy/README` 与 `bluebook/navigation/README`。新的结论是：当前目录优化的最高杠杆，不在新页，而在高流量前门是否还在重复“首跳 + why + route law + deep chain”。更稳的默认修法是：根入口只保留三条首跳与跨目录判定，`philosophy/README` 只保留 why frontdoor，`navigation/README` 只保留 route gap 与 appeal path。
+- 本轮新的目录结构结论：如果 `README / philosophy/README / navigation/README` 三层同时在讲最小顺序，later maintainer 学到的就不是“单源首答 + 二跳分流”，而是“三本总览互相转述”。因此当前更稳的结构目标继续是：`root 定题与首跳 -> philosophy 定 why -> navigation 定 next-hop`，谁多说一步，谁就更接近第二前门。
+- 本轮并行 Agent 新结论一：在当前 worktree 缺少 `claude-code-source-code` 镜像时，Prompt 魔力的最强稳定表述应继续写成 `same-world compiler + witness chain + continuation qualification` 的单一 ABI；frontdoor 和 userbook 都应消费这张 ABI，而不是各自重讲一套 Prompt 效力故事。
+- 本轮并行 Agent 新结论二：安全与省 token 的最高阶解释，应继续写成“同一治理秩序对 model-reachable world 重新定价”，而不是两个并列 feature；真正该稳定复用的是 signer surface 与 weak readback surface 的不对称，以及 cleanup / reopen 仍属于同一条治理尾链。
 - 本轮 tail-residual-self-audit 深化动作：已继续更新 `03` 与 `06`。新的结论是：当 owner nouns、目录职责卡与 route phrase 都已明显降下去之后，剩余最顽固的越位往往不是“说错页”，而是句子仍在偷偷发手册。典型信号就是 `shadow / 切换 / 回退哪层`、`这段该放哪层`、`若进入具体 nouns 就回 owner` 这种口气。更稳的默认修法是：把它们压成“可逆边界是否仍在”“是否又新增同题首答”“制度空间是否仍被保住”这类自校问句。
 - 本轮新的 `03` 结论：`设计原则三十一 / 三十二 / 三十三` 现在更稳定地只保留迁移、源码质量与目录优化的 why / self-audit，不再在哲学尾段继续发迁移编排词表、结构 verdict 或具体页面分工示例。对 `03` 来说，尾段最稳的默认边界继续是：`能追问制度是否成熟，不能顺手代发步骤卡或页位卡。`
 - 本轮新的 `06` 结论：`6.47 / 6.50 / 6.53 / 6.54 / 6.57 / 6.58 / 6.62` 与 `7.2 / 7.4 / 7.6 / 7.8` 现在更稳定地停在“为什么不能写浅”与“我是不是又越位补卡”的抽象层，不再把源码质量、Prompt、治理和迁移的 owner nouns、轻量术语索引或 rollout 词表重新塞回 `06`。对 `06` 来说，更稳的最终边界继续是：`能反问制度边界，不能再长第二张机制卡。`

@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前 `.worktrees/mainloop` 的长期默认 evidence-mode 记忆现已继续写死：
+  - 此 worktree 当前缺少本地 `claude-code-source-code/` 镜像；若无额外镜像落地，深度 Prompt / 治理 / 源码质量分析默认按 `public-evidence only` 处理，只能锚定 bluebook、userbook 与 `docs/development/02-证据索引.md`
+  - 因此任何“源码直接证明”表述都必须先确认镜像存在；否则默认降级成 owner docs 的保守推论
+- `bluebook/README`、`bluebook/philosophy/README` 与 `bluebook/navigation/README` 的长期默认 frontdoor-role-hardening language 现已继续写死：
+  - 根入口默认继续只保留三条首跳与“定题 / 定顺序 / 判是否跨目录”三件事，不再第二次摊平 why 与 deep chain
+  - `philosophy/README` 默认继续只保留 why frontdoor 与单问入口，不再自己库存 Prompt / 治理 / 源码质量的长链 route
+  - `navigation/README` 默认继续只保留两类合法停留场景、三类 route gap 与 appeal path；若它再次同时解释主语、最小顺序和 deep chain，默认按第二前门候选处理
+  - 更稳的默认修法顺序继续是：`先做 route trim -> 再做角色硬化 -> 最后补 owner back-link`，而不是先新开页
+- 并行 Agent 吸收后的长期默认 high-order synthesis language 现已继续写死：
+  - Prompt 魔力默认继续写成 `same-world compiler + witness chain + continuation qualification` 的单一 ABI，不再退回“文案更强”
+  - 安全与省 token 默认继续写成“同一治理秩序对 model-reachable world 重新定价”，不再退回“安全功能 + 压缩功能”并列
 - `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 tail-residual-self-audit language 现已继续写死：
   - `03` 的 `33-35` 默认继续只保留“可逆边界 / 制度空间 / 第一问题单源”这一级反问，不再复活 `shadow / 切换 / 回退`、`seam / 局部替换` 或具体页面分工示例
   - `06` 的 `6.47 / 6.50 / 6.53 / 6.54 / 6.57 / 6.58 / 6.62` 与 `7.2 / 7.4 / 7.6 / 7.8` 默认继续只保留“为什么不能写浅”与“我是不是又越位补卡”的自校句；凡是再次出现 object/seam nouns、Constitution nouns、统一预算器规则卡、迁移 rollout 词表或入口层级分发表，默认按越位候选处理

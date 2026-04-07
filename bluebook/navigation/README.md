@@ -1,127 +1,73 @@
 # 跨目录入口
 
-`navigation/` 只负责跨目录反查，不重新定义三条母线。需要权威短语与最短主线时先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)；只有当问题已经变成“我要跨目录找哪一层证据”时再留在这里。
-最值钱的纪律也只该再多记一句：`navigation/` 只管 route，不签 truth；一旦 route words 开始代替 `governance key / typed ask / decision window / current-truth surface` 说话，它就在制造第二入口。
+`navigation/` 只做跨目录反查，不重新定义三条母线。只有两种情况留在这里：
+
+1. 你已经知道主语，只缺下一层证据或 next-hop。
+2. 你在争某页是否越位改判。
+
+如果你还缺主语、最小顺序或 first reject path，先回 [../README.md](../README.md) 与 `09`。
 
 ## 发言权卡
 
 - `能合法说`
-  - 只判断你该去哪一层证据、哪一页只配当 route、不配改判。
+  - 只判断 next-hop、route-only page 与 appeal path。
 - `不能改判`
-  - 不重新定义三条母线，不替目录 README、深页正文或 `docs/` 记忆层代签 canonical formula 与深页结论。
+  - 不重写 canonical formula，不代签目录 `README`、深页正文或 `docs/` 记忆层的结论。
 - `canonical owner`
   - 主语与最小顺序回 [../README.md](../README.md) 与 `09`；目录边界回各目录 `README`；源码质量证据梯度回 `guides/102`。
 - `申诉路径`
-  - 若你发现 route 词已经在代签 truth，先退回 `../README -> 09`；若争议是目录边界，回对应目录 `README`；若争议是镜像证据 ceiling，回 `guides/102`。
+  - route words 开始代签 truth，退回 `../README -> 09`；目录边界争议回对应目录 `README`；镜像证据 ceiling 争议回 `guides/102`；若争议只是“是否还只该 route trim”，回 `06` 与 `docs/development/00`。
 
-这里不再重复根入口的 canonical formula 与三组最小顺序；若你现在还缺这些，先回 [../README.md](../README.md) 与 `09`。`navigation/` 只接管两件事：判你该去哪一层证据，判哪一页只配当 route 不配改判。
+## 三类 route 缺口
 
-Prompt 问题若还在混，也只先拆三种缺口：
+- Prompt
+  - 缺顶层主语与 `first-reject path`，回 `philosophy/84`
+  - 缺 same-world witness、实现顺序与 `continue qualification`，回 `guides/51`
+  - 缺“为什么这轮还只该 route trim”，回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md) 与 [../../docs/development/00-研究方法.md](../../docs/development/00-%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95.md)
+- 治理
+  - 缺治理首答，回 `../10`
+  - 已确认主语，只缺 signer / weak readback / reopen / execution path，回 `security / risk / playbooks`
+  - 还在争 mode、usage、approval 或 cleanup result 谁说了算，先退回 `../README` 与 `09`
+- 当前真相
+  - 缺方法入口或 evidence ceiling，回 `09 -> guides/102`
+  - 已确认 ceiling，只剩 `sole writer / recovery asset / anti-zombie` 争议，回 `guides/101` 与 `architecture/README`
+  - 还在混 runtime-core evidence、operator-governance evidence 与公开镜像缺口，先退回 `06`
 
-- 缺顶层主语与 `first-reject path`，回 `philosophy/84`
-- 缺 same-world witness、实现顺序与 `continue qualification`，回 `guides/51`
-- 缺“为什么这轮只该 route trim、还不该新开 Prompt 入口”，回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md) 与 [../../docs/development/00-研究方法.md](../../docs/development/00-%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95.md)
-
-治理 / 安全 / Token 问题若已确认缺的是对象链而不是路线，也只先弹回：
-
-- `10 -> 85 -> 83 -> 100 -> security -> risk`
-
-若你还在问 mode、usage、approval 或 cleanup result 谁说了算，说明缺的不是 next-hop，而是治理首答；先回 `../README.md` 与 `09`。
-
-源码质量 / 公开镜像问题若还在争 `truth-plane order`、`public-evidence ceiling` 或 `current-truth surface candidate`，说明缺的不是 next-hop，而是方法入口；先回 `09` 与 `guides/102`。
-若你已经确认公开证据 ceiling 成立，只剩 `sole writer / recovery asset / anti-zombie` 这类 present-truth 争议，再转 `guides/101`。
-
-治理线在 route 层也要先拒收一组投影篡位：
-
-- `mode / modal / usage / token UI / default continue / rollback files`
-- 这些对象都只配触发怀疑或帮助分流，不配越级充当治理真相
-
-如果一个跨目录问题还回答不出自己缺的是公式、顺序还是证据层，它就还没有真正进入 `navigation/` 的工作对象。
-如果 `navigation/` 开始替目录改判 speaking rights，它也就不再是在路由，而是在制造第二套入口主语；later maintainer 的局部可反对性会先被 route words 吃掉。
-如果一个 route 句子开始把 `security vs token`、`continuity / memory / resume / handoff` 写成并列主题，而不是写成同一条治理或时间轴问题，它也已经在长出 `route-law inflation`；这类时间轴争议默认先回 `06`。
-
-跨目录反查 continuity 时，这里也只做三跳路由：
+## 时间轴争议
 
 - 缺 `continue qualification`，回 Prompt 线
 - 缺 `continuation pricing`，回治理线
-- 缺 `stale-writer eviction / recovery asset non-sovereignty`，回源码质量线
+- 缺 `stale-writer eviction / recovery asset non-sovereignty`，回当前真相线
 
 若你还在争 summary、pointer、event replay 或 display transcript 谁说了算，先退回 `09`，不要让 route 句子代替入口判断。
 
 ## 先判三件事
 
-- 先判你是在找主线宪法、证据层，还是跨目录下一跳。
-  主线宪法回 `09`，证据层去各目录 `README`，只有跨目录下一跳才留在这里。
-- 先判你缺的是哪类证据。
-  `philosophy / architecture / api / guides / playbooks / casebooks` 各守一种职责，不在 `navigation/` 里重新混写。
-- 先判你当前是哪类任务。
-  阅读优先 `01 / 02`，失稳前自校优先 `15`，迁移优先 `46`，继续改写三条母线优先 `05 / 15 / 41`。
+- 你缺的是主线宪法、证据层，还是跨目录下一跳。
+- 你缺的是 `formula / order / evidence ceiling / verdict` 哪一类。
+- 你当前是在阅读、失稳前自校、迁移，还是 refinement execution。
 
-- 先判 continuity 失真落在哪条母线上。
-  same-world 继续资格回 Prompt 线，扩张是否仍值得付费回治理线，恢复资产是否越权 current truth 回源码质量线。
+如果这三件事答不清，就还没真正进入 `navigation/` 的工作对象。
 
 ## 稳定节点
 
 - [01-第一性原理阅读地图](01-第一性原理阅读地图.md)
-  第一次进入蓝皮书时的主线阅读路由。
+  - 第一次进入蓝皮书时的主线阅读路由。
 - [02-能力、API与治理检索图](02-能力、API与治理检索图.md)
-  按问题反查能力、接口与治理入口。
+  - 按问题反查能力、接口与治理入口。
 - [04-目录职责、规范入口与兼容别名页说明](04-目录职责、规范入口与兼容别名页说明.md)
-  判断某个入口、atlas、矩阵、verdict 或记忆该落在哪一层。
+  - 判断某个入口、atlas、矩阵、verdict 或记忆该落在哪一层。
 - [05-设计母线导航：工作语法、反扩张与可演化内核](05-设计母线导航：工作语法、反扩张与可演化内核.md)
-  校正你到底在模仿什么，不让三条母线退回结果词。
+  - 校正你到底在模仿什么，不让三条母线退回结果词。
 - [15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护](15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md)
-  失稳前的高阶追问入口，负责暴露第一条反证信号。
+  - 失稳前的高阶追问入口，负责暴露第一条反证信号。
 - [41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理](41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md)
-  把深专题结论回压成第一性原理，不再停在对象层总结。
-
-## 高阶入口分工
-
-- `09`
-  宪法总图，先定义你在问哪一张控制面。
-- `05`
-  模仿对象校正，先防止 Prompt 效力、安全定价和源码先进性被读成表象技巧。
-- `15`
-  失稳前追问，先暴露第一条反证信号与 first reject path。
-- `41`
-  第一性原理收束，先判断高阶总结是否已经压回不可约约束。
-- 专题侧门只在主线已判清后开放：若你缺的是 Prompt residual reopen / threshold，再按 Prompt owner page 的侧门继续，不在这里第二次写尾段目录。
-- 如果你已经确认结构真相面的问题不在入口公式，而在“怎样把假 current-truth surface / merge / fail-closed / liability 压回固定顺序”，从 `41 -> 102 -> guides/83 -> playbooks/61 -> casebooks/54` 进入。
-- 如果你已经进入 refinement execution，且缺的是结构精修模板而不是第一性原理，从 `41 -> 102 -> guides/92 -> playbooks/67 -> casebooks/63` 进入。
-- 如果你在判断“下一层该去哪个目录”，也先问：
-  这是 same-world compiler、governance pricing chain，还是 current-truth surface / temporal honesty 的问题。
-- 如果你在判断“并行深挖后该回哪一个入口合并”，也先问：
-  这个结论第一次该回 `09`、`05`、`15` 还是 `41`，而不是继续在 `README / navigation / guide` 三层同时第一次被回答。
-- [46-宿主迁移工单导航：request compiler、governance key 与 current-truth writeback 如何进入实施顺序、交接包与灰度发布](46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布.md)
-  进入宿主实现、迁移、验收与收口链。
-
-## 三条跨目录链
-
-- 请求装配线
-  `09 -> architecture/82 -> philosophy/84 -> api/69 -> api/78 -> playbooks/50 -> casebooks/46 / 49`
-- 扩张定价线
-  `09 -> 10 -> philosophy/85 -> architecture/83 -> guides/100 -> security -> risk -> playbooks/78 -> casebooks/74`
-- 当前真相线
-  `09 -> architecture/84 -> philosophy/86 / philosophy/87 -> guides/101 / guides/102 -> api/30 / api/39 / api/42 -> api/83 / api/92 -> playbooks/79 -> casebooks/75`
-
-若你缺的只是 atlas / projection crosswalk，再另转 `philosophy/76` 或 `navigation/35`；不要把它们写回源码质量 canonical chain。
-
-如果问题已经进入运行手册层，不要在这里重新拼全链；直接去对应的 `playbooks/README.md`、`guides/README.md` 或 `security/README.md`。
-
-## 什么时候用它
-
-- 需要跨章节、跨目录、跨证据层反查时
-- 需要确认某个问题该先看判断、架构、模板、verdict 还是反例时
-- 需要把 `architecture / guides / playbooks / casebooks` 串成同一条判断链时
-- 需要确认某个入口页究竟是正文入口、判断地图还是记忆层时
+  - 把深专题结论回压成第一性原理，不再停在对象层总结。
+- [46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布](46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布.md)
+  - 进入宿主实现、迁移、验收与收口链。
 
 ## 维护约定
 
-- `navigation/` 只给稳定节点，不把每条深链摊平成首页。
-- 目录细节与编号段说明回各目录 `README` 或编号页。
-- 过程记录与变更记忆统一回 `docs/`。
-- `navigation/README` 自己不代替各目录 `README`、深页正文或仓库根 `docs/` 去承担 canonical formula、深页解释与研究记忆。
-- 一旦 `bluebook/README` 开始复制深链，或某个目录 README 开始第一次解释别的目录的 canonical formula，也视为混层。
-- 一旦入口页只能给公式、却给不出最小顺序，它就仍停在 route map 层，还没有完成 later maintainer 可执行化。
-- 一旦跨目录入口把 `runtime-core evidence`、`operator-governance evidence` 与公开镜像缺口混写成同一 certainty，route 就会开始伪装成 authority。
-- 一旦新的 route 提案还答不上自己缺的是 `formula / order / evidence ceiling / verdict` 哪一类，先退回 `06` 与 `docs/development/00`，不要急着升成目录动作。
+- `navigation/` 只保留稳定节点与 route gap，不把每条深链重新摊平成首页。
+- 如果一个 route 句子开始代签 truth，或开始把 `security / token / continuity` 写成并列主题，它就已经越位。
+- 如果新的 route 提案还答不上自己缺的是 `formula / order / evidence ceiling / verdict` 哪一类，先退回 `06` 与 `docs/development/00`，不要急着升成目录动作。

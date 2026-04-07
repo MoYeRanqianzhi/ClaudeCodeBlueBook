@@ -2,6 +2,9 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/README.md`、`bluebook/philosophy/README.md` 与 `bluebook/navigation/README.md`，把高流量前门再压成更短的角色协议：根入口现在只保留三条首跳与“定题/定顺序/判是否跨目录”三件事；`philosophy/README` 现在只保留 why frontdoor 与单问入口；`navigation/README` 现在只保留两种合法停留场景、三类 route 缺口与申诉路径，不再在前门层反复重说长链
+- 本轮并行 Agent 新结论已吸收入记忆：Prompt 魔力更应稳定写成 `same-world compiler + witness chain + continuation qualification` 的单一 ABI，而不是文案效力；安全与省 token 更应稳定写成“同一治理秩序对 model-reachable world 重新定价”，而不是“安全功能 + 压缩功能”并列
+- 本轮新的目录优化判断已固化：当前最高价值动作继续不是新开页，而是 `route trim > role hardening > owner back-link`。若根入口、哲学前门或 navigation 再次同时重说最小顺序、route law 与 deep chain，就默认按第二前门候选处理
 - 继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把这一轮最顽固的 tail residual 再压回 why / self-audit：`03` 的 `设计原则三十一 / 三十二 / 三十三` 现在只保留“升级是否保住 current truth / capability / recovery path”“增长后是否仍保留正式反对与局部改写空间”“目录是否又把同题首答拆成多个前门”这三类反问；`06` 的 `6.47 / 6.50 / 6.53 / 6.54 / 6.57 / 6.58 / 6.62` 与 `7.2 / 7.4 / 7.6 / 7.8` 现在也统一改写成更纯的制度边界与自校问句，不再顺手补发 object/seam、Constitution nouns、统一预算器不足或迁移步骤卡
 - 本轮并行 Agent 新结论已吸收入记忆：当前更难清理的 residual，已经从显眼的 owner noun 越位转成更隐蔽的 manual-card tone。更稳的默认修法继续是：`先删步骤词、页位示例与小框架卡 -> 再压成“可逆边界 / 第一问题 / 制度空间”反问 -> 最后只在必要时补 owner route`
 - 本轮根仓同步检查结果：`git fetch origin main`、`git checkout main` 与 `git merge --ff-only origin/main` 均再次成功，根仓继续保持 `## main...origin/main`
