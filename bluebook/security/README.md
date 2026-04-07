@@ -8,7 +8,7 @@
 
 本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及从 `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention -> honesty -> isolation -> constitution -> rationale -> metadata -> runtime-conformance -> anti-drift verification -> repair -> migration -> sunset -> tombstone ...` 一路推进到 stronger-request cleanup 家族的同构治理链。
 
-如果只先记安全前门的一句话，也只记这句：
+如果只先记安全入口判定的一句话，也只记这句：
 
 - 这不是第二套安全故事，而是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链在安全目录里的机制翻译。
 
@@ -178,7 +178,7 @@
 ## 维护约定
 
 - `security/README` 只保留前门判断、编号段职责、代表性入口与分流，不再镜像全部正文标题。
-- `security/README` 只负责治理 signer / ledger / cleanup 前门与机制解释权，不和 `risk/` 抢用户侧恢复与入口差异前门，也不和 `playbooks/` 抢执行链或现场 verdict 代签权。
+- `security/README` 只负责治理 signer / ledger / cleanup 入口摘要与机制解释权，不和 `risk/` 抢用户侧恢复与入口差异前门，也不和 `playbooks/` 抢执行链或现场 verdict 代签权。
 - 巨型目录库存、逐篇标题镜像和作者侧记忆不再回灌首页。
 - 深层速查和证据字典统一维护在 [appendix/README.md](appendix/README.md)。
 - 单机制、单协议、单文件群的源码剖面统一维护在 [source-notes/README.md](source-notes/README.md)。

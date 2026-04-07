@@ -3589,3 +3589,12 @@
 - 治理哲学页若仍要保留 `外显` 这类包装词，最稳的位置是 H1 或总结句，而不是中段 canonical 定义。中段一旦出现“这三件事只是……的外显/显形”，读者会更容易把治理链读成显现学总结，而不是对象链本身。
 - Prompt 深页在 page-role 已经分清后，也应继续执行一条正文词法纪律：`神秘 / 咒语 / 魔力 / 更会说` 这类对照词应优先让位给 `文案模板 / 不可解释配方 / 文案技巧 / 更会组织措辞 / 可检验条件`。否则页面虽然不再抢首答权，正文仍会把读者拉回旧 framing。
 - 治理线若继续收 visible label，优先级现在应改成：先收中段 canonical 定义，再收 H1 和相邻 README 的可见链接标签。这样既不会把包装词一刀切光，也能确保高流量前门先看到的是对象链而不是显现学比喻。
+- 目录层 README 的稳定词法现在应进一步固定成 `入口 / 入口顺序 / 入口摘要`，不要再把 `前门 / 第二前门 / 高阶前门 / 执行前门` 留在高流量页。更细一点说，`guides/` 只承担模板化发言权，`playbooks/` 只承担执行入口，`security/` 只承担 signer/ledger/cleanup 机制入口，`risk/` 只承担用户侧读回对象；这些 speaking-rights 应在页首就可见，而不是藏在正文中段。
+- 治理线的 consumer 降格纪律现在也应继续稳定复用：`permission / mode / usage / approval / UI` 一旦重新站到 canonical noun 位，就会把对象链退回投影层。更稳的写法是 `permission 投影 / usage 读数 / authority-status 读回 / 单次交互外观`，并始终让 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 站在首答位。
+- 当本地缺少 `claude-code-source-code/` 镜像时，源码质量线必须主动承认 `public-evidence ceiling / mirror gap discipline`，不要把公开材料上的结构判断写成 runtime-core certainty。此时更稳的首答仍是 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`，并在入口层显式提示“当前是 public-evidence only 模式”。
+- 源码质量线的下一步结构优化方向已经从“换词”收束到“减前门数”和“固定页头模板”两件事：一是给高流量入口补统一 evidence-mode 横幅，二是把 `Can sign / Cannot sign / Canonical owner / Appeal path` 变成 speaking-rights 的显式 header，而不是继续把 `不代签 / 不重判 / 回哪层申诉` 写成长段 prose。
+- `2026-04-08` 的操作约束也应被记住：根仓库 `git merge --ff-only origin/main` 仍因 `bluebook/security/README.md` 与 `bluebook/security/source-notes/README.md` 的未解决冲突而阻断；继续工作时先做 fetch/checkout/merge 检查，但不要在根仓库解决或重写这些冲突，所有文档推进都只落在 `.worktrees/mainloop`。
+- Prompt 线的新稳定首答也应继续固定为 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`。更细一点说，原则层优先写 `same-world compiler`，对象层优先写 `compiled request truth`，机制层优先写 `request assembly`，时间轴门槛优先写 `continuation qualification`；`Prompt魔力` 只宜保留在旧文件名、兼容别名或历史语境里。
+- Prompt 线的残余结构债也已经更清楚：高流量根入口仍过度依赖数字缩写和兼容 frontdoor。后续若继续优化目录，应优先减少 `00-* / 01-*` 兼容页与根 README 的数字短链，把 alias-table 或 compat 标签显式化，而不是继续在正文里解释“为什么这不是第二入口”。
+- 治理线的长期稳定约束还应继续加一条：`trusted inputs` 不是总钥匙，`workspace trust / project MCP approval / bridge eligibility / trusted-device auth / health-check runtime` 不可互推；只要任一文档开始把其中某个“通过/skip/可探活”写成整体准入 verdict，就应优先视为治理主语退化。
+- 弱读回面的降格也应成为固定 header 纪律：`Context Usage`、`worker_status`、`pending_action`、`task_summary`、`post_turn_summary`、用户可见 transcript 都只配标成 `projection/readback/观察面`，不能再让读者自己猜它们是否签 `current truth / continue verdict / recovery authority`。
