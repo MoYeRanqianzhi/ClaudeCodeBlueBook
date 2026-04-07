@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮 `03` 顶部源码质量入口的三处旧分流口径继续统一成单一 owner 顺序：相关位置现已固定写成 `07 -> guides/102 -> philosophy/87 -> architecture/README`
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮 Prompt why 模板再做一次归一：`03` 里两处 Prompt why 现已都统一成“本节只保留一句 why -> 回 `philosophy/84` -> 自校层再回 `06`”的同一句法
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮 Prompt why 模板再压一层：`03` 现已收掉“本节不再补 Prompt 审计顺序”这类旧写法，继续统一成“只保留一句 why -> 回 `philosophy/84` -> 自校层再回 `06`”的高流量模板
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮治理 why 小节再压一层：`03` 的治理线现已不再保留轻量 canonical card，而是和 Prompt/源码质量一样继续收成“只保留一句 why + 最小苏格拉底问题 + 固定 owner 顺序”的模板；同时记录了本轮根仓同步因 `userbook` 冲突阻塞、因此继续只在 `mainloop` 推进

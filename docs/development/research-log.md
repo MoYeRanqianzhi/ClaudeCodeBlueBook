@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 `03` 顶部入口结论：源码质量线在页首三处现在更明确统一成同一条 owner 顺序 `07 -> 102 -> 87 -> architecture/README`，不再一会儿拆写成 `102 / 87 / architecture`，一会儿在中后段再补完整顺序。
 - 本轮新的 Prompt 模板结论：`03` 里两处 Prompt why 现在更明确被压成同一句法，不再一处写“这一节不再追加…”，另一处写“本节不再展开…”。当前更稳的高流量写法已经统一成：只保留一句 why，再给 `philosophy/84` 与 `06` 的固定回链。
 - 本轮新的 Prompt 模板结论：`03` 的 Prompt why 现在又收掉了一处旧模板痕迹，不再保留“本节不再补 Prompt 审计顺序”这种写法；当前更稳的统一句法已经更明确是：只保留一句 why，再给固定 owner 顺序与自校回链。
 - 本轮根仓同步检查结果再次出现阻塞：`git checkout main` 因根仓 `bluebook/userbook/03-参考索引/README.md` 与 `bluebook/userbook/README.md` `needs merge` 失败。本轮仍严格只在 `.worktrees/mainloop` 内推进与提交。

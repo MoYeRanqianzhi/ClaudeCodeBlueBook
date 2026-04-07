@@ -8,6 +8,8 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 03-top-quality-route live 记忆：
+  - `03` 顶部三处源码质量入口默认继续统一写成 `07 -> guides/102 -> philosophy/87 -> architecture/README`，不再保留 `102 / 87 / architecture` 分拆口径
 - 当前批次继续新增一条 03-prompt-template-normalization live 记忆：
   - `03` 默认继续把 Prompt why 全部压成同一句法：`本节只保留一句 why -> 固定回 philosophy/84 -> 自校层再回 06`
 - 当前批次继续新增一条 03-prompt-why-template live 记忆：
