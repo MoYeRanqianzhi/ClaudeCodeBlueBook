@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 source-quality-owner-sequence live 记忆：
+  - `03` 默认继续不在多个设计原则里各自补源码质量轻量 verdict；若继续追问 why、continuity budget、evidence ladder、quality threshold 与对象/seam，统一顺序固定成 `07 -> guides/102 -> philosophy/87 -> architecture/README`
+  - `07` 默认继续把公开镜像源码质量线写成完整的 8 段顺序：`public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline -> change-risk record`
 - 当前批次继续新增一条 continue-verdict-law live 记忆：
   - `07` 默认继续把 `continue / resume` 写成 shared continue verdict，不把它们写成第五种资产或第五条母线
   - 更稳的默认修法顺序继续是：`先点明 runtime subject / seam -> 再点明 re-attestation -> 最后点明 shared continue verdict`
