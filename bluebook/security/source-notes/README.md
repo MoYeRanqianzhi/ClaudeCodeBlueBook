@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 118 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 119 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -137,6 +137,7 @@
 116. [116-savePluginOptions、saveMcpServerUserConfig与PluginOptionsFlow的强请求清理重配置治理边界](116-savePluginOptions、saveMcpServerUserConfig与PluginOptionsFlow的强请求清理重配置治理边界.md)
 117. [117-refreshActivePlugins、reload-plugins与refreshPluginState的强请求清理重新激活治理边界](117-refreshActivePlugins、reload-plugins与refreshPluginState的强请求清理重新激活治理边界.md)
 118. [118-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的强请求清理就绪治理边界](118-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的强请求清理就绪治理边界.md)
+119. [119-useManageMCPConnections、toolExecution与print的强请求清理连续性治理边界](119-useManageMCPConnections、toolExecution与print的强请求清理连续性治理边界.md)
 
 ## 和其他目录的分工
 
