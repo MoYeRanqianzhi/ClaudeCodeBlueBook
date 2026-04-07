@@ -21,12 +21,19 @@
   - 当前 `.worktrees/mainloop` 若仍是 `mirror absent / public-evidence only`，`02-证据索引` 默认继续只充当 archival mirror-path index，不得被读成“本地已核验源码证据”
   - 更稳的默认修法顺序继续是：`先在索引页点明 evidence mode -> 再列 mirror path -> 若需要 stronger claim，再回 00 判证据模式`
 - 当前批次继续新增一条 source-quality live 记忆：
-  - `2026-04-08` 的 public-artifact ceiling snapshot 默认继续记住：官方 GitHub repo 当前主要是 frontdoor / plugin surface，npm 当前稳定暴露的是 bundle `cli.js`、`sdk-tools.d.ts` 与 vendor 目录；因此 `claude-code-source-code/src/...` 级锚点默认都应读成 `mirror-backed evidence`，不是 `official-artifact-backed evidence`
+  - `2026-04-08` 的 public-artifact ceiling snapshot 默认继续记住：官方 GitHub repo 当前主要是 frontdoor / plugin surface，npm 当前稳定暴露的是 `@anthropic-ai/claude-code@2.1.92` bundle `cli.js`、`sdk-tools.d.ts` 与 vendor 目录；因此 `claude-code-source-code/src/...` 级锚点默认都应读成 `mirror-backed evidence`，不是 `official-artifact-backed evidence`
   - 源码质量线后续默认继续把结论分成 `official-artifact-backed / mirror-backed but triangulated / mirror-only candidate` 三层；`guides/102` 继续做唯一 ceiling owner，`86/87` 只做 why，`architecture` 只做 object/kernel，`api/39/42` 只做 artifact-contract
+  - 更短的 canonical mapping 默认继续写死：`GitHub frontdoor + npm bundle/schema = official-artifact-backed`；`claude-code-source-code/src/... = mirror-backed evidence`；`mirror absent` 时最多写 `candidate / current-truth surface candidate`
+- 当前批次继续新增一条 meta-law live 记忆：
+  - `navigation/04` 默认继续只处理 compat alias 与 route dispute，不再重写规范入口、角色化主线或目录宪法；稳定 owner law 继续只认 `bluebook/README + 09 + docs/development/00`
+  - `docs/README` 与 `01-章节规划` 默认继续只保留 process / inventory / memory 说明；凡出现“负责 / 规范入口 / speaking rights”一类句子，都应先声明自己只是 batch inventory 或 route-only translation
 - `bluebook/guides/36` 与 `bluebook/userbook/*` Prompt consumer 页的长期默认 prompt-abi-consumer-aliasing language 现已继续写死：
   - `guides/36` 默认继续不用抽象 `witness_chain_ref` 兜底，而是直接写出六个 Prompt ABI 槽位
   - `userbook/README`、`userbook/01-主线使用/02`、`userbook/04-专题深潜/08` 与 `userbook/05-控制面深挖/README` 默认继续共用同一张 alias table：`目标 = message_lineage_ref`、`附件 = section_registry_ref + stable_prefix_ref`、`working set = protocol_transcript_ref + continuation_object_ref`、`next step = continue_qualification_verdict`
   - 更稳的默认修法顺序继续是：`owner 页先写 canonical ABI -> host audit 展开显式槽位 -> userbook 只复用固定 alias table`
+- 当前批次继续新增一条 prompt-owner live 记忆：
+  - 非 owner 页默认继续禁止出现 `84 / 51`、`84 -> 51`、`84 / guides/51` 这类 Prompt 回指；Prompt 正式 owner 统一只回 `philosophy/84`
+  - 非 owner 页若开始把用户动作重新映射成第二套 `*_ref` doctrine，或把 object / witness / qualification 再列成自己的最小顺序，默认优先按“第二 Prompt 前门”处理
 - `bluebook/06-第一性原理与苏格拉底反思.md` 的长期默认 governance-self-audit-alignment language 现已继续写死：
   - `6.23 / 6.46 / 6.55 / 6.58 / 7.5` 默认继续优先反问“是否又把 signer、弱读回面、continuation consumer 与 cleanup 结果词写混”，不再只停在“统一预算器 / 更严拦截 / 压缩文本”这类中层概括
   - 更稳的默认修法顺序继续是：`先删中层结果词 -> 再点名同一秩序里的非对称 -> 最后才回 owner 页`

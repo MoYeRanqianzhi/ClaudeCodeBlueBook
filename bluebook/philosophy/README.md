@@ -6,13 +6,14 @@
 
 - Prompt 线
   - 只认 `same-world compiler`
-  - first answer 回 `84`，需要 how / witness / continue qualification 再到 `51`
+  - first answer 统一回 `84`；需要 how / witness / continue qualification 时，按 owner 页内部 next-hop 继续
 - 治理线
   - 这里只回答“为什么扩张必须先被同一秩序定价”
   - canonical formula 与弱读回面总则先回 `10`；why 回 `85`，若还在把它误读成统一预算器，再到 `61`
 - 源码质量线
   - 这里只回答“为什么源码质量首先服务 current-truth protection”
   - 证据上限与 canonical ladder 先回 `guides/102`，why 再回 `86 / 87`，对象与 writeback seam 再回 `architecture/README`
+  - `86 / 87` 只解释 why，不升级 evidence class；路径级源码结论必须先由 `102` 判成 `official-artifact-backed / mirror-backed / candidate`
   - 凡涉及 `QueryGuard / sessionIngress / bridgePointer` 这类路径级 certainty，统一先退回 `guides/102` 处理 `public artifact ceiling / mirror gap discipline`
 
 ## 什么时候进来

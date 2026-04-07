@@ -74,7 +74,7 @@ rollback object:
 
 1. 没有 authority source 的 Prompt 卡片，不算正式实现卡。
 2. 没有 compiled request diff 的 CI 绿灯，不算正式实现证据。
-3. 六个 Prompt ABI 槽位里任一缺席，或 `continue_qualification_verdict` 缺席，host / handoff 一律视为硬阻断。
+3. 按 `philosophy/84` canonical naming 填写的必填 refs 里任一缺席，或 `continue_qualification_verdict` 缺席，host / handoff 一律视为硬阻断。
 4. 没有 lawful forgetting ABI 与 next-step guard 的 handoff，不算正式交接。
 
 ## 3. Host Surface Audit
@@ -86,7 +86,7 @@ rollback object:
 [ ] authority source 已点名
 [ ] assembly path 已点名
 [ ] compiled request summary 能回到真实请求对象
-[ ] 六个 Prompt ABI 槽位与 continue_qualification_verdict 都能被反查
+[ ] 按 `philosophy/84` canonical naming 填写的必填 refs 与 `continue_qualification_verdict` 都能被反查
 [ ] next-step guard 没被摘要包吞掉
 ```
 

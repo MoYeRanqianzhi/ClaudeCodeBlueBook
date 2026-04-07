@@ -1,11 +1,11 @@
 # 开发与记忆文档
 
-`docs/` 只放研究过程、长期记忆和版本记录，不承载蓝皮书正文。正文去记忆化批次、目录治理调整、待办候选与研究推进摘要也统一留在这里。当前目录由根目录文档、`development/` 下研究材料、`development/security/` 下安全专题隔离记忆文档，以及 `userbook-memory/` 下 userbook 作者记忆组成。
+`docs/` 只放研究过程、长期记忆、证据索引和版本记录，不承载蓝皮书正文。正文 first-answer order 统一回 [../bluebook/README.md](../bluebook/README.md)，目录法、发言权与入口升级规则统一回 [development/00-研究方法.md](development/00-研究方法.md)；这里默认只保存“为什么改、改了什么、下一轮该警惕什么”。
 
-更硬一点说，`docs/` 在整套目录里的发言权是零：
+更准确地说：
 
-- 它保存为什么改、改了什么、下一轮该警惕什么。
-- 它不负责重新宣布什么是真的，也不负责替正文补做裁决。
+- 这里保存过程与记忆。
+- 这里不重签正文对象、frontdoor formula 或 verdict。
 
 ## 当前内容
 
@@ -36,4 +36,4 @@
 - userbook 的作者记忆统一写入 `docs/userbook-memory/`
 - 专题级推进记忆优先写入对应 `docs/development/<topic>/`
 - `README` 只保留稳定入口，不重复正文目录
-- `docs/` 只保留记忆与演进说明，不拥有正文的改判权、对象承认权或 verdict 签发权
+- 若这里出现与正文 owner law 冲突的句子，一律以 `bluebook/README + development/00` 为准

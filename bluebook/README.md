@@ -5,11 +5,11 @@
 ## 三条首跳
 
 - Prompt
-  - `84 -> 51 -> 03 / 06`
+  - `84 -> 03 / 06`
 - 治理
   - `10 -> security / risk / playbooks`
 - 当前真相保护
-  - `102 -> 86 / 87 -> architecture/README -> 06`
+  - `102（先判 evidence mode / public-artifact ceiling / official-vs-mirror）-> 86 / 87 -> architecture/README -> 06`
 
 ## 根入口只做三件事
 
