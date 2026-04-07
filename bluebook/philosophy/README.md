@@ -1,6 +1,6 @@
 # 哲学专题
 
-`philosophy/` 只回答三件事：世界如何合法进入模型，扩张如何先被定价，过去如何不得越权写回现在。这里不重写长链，只保留 why frontdoor：Prompt 先到 `84`，治理先到 `85`，源码质量先经 `guides/102` 再回 `86 / 87`。
+`philosophy/` 只回答三件事：世界如何合法进入模型，扩张如何先被定价，过去如何不得越权写回现在。这里不重写长链，只保留 why frontdoor：Prompt 先到 `84`，治理先经 `10` 固定 canonical chain 再回 `85 / 61`，源码质量先经 `guides/102` 再回 `86 / 87`。
 
 ## 三条最短前门
 
@@ -9,10 +9,11 @@
   - first answer 回 `84`，需要 how / witness / continue qualification 再到 `51`
 - 治理线
   - 这里只回答“为什么扩张必须先被同一秩序定价”
-  - why 回 `85`；治理首答与弱读回面总则仍先回 `10`
+  - canonical formula 与弱读回面总则先回 `10`；why 回 `85`，若还在把它误读成统一预算器，再到 `61`
 - 源码质量线
   - 这里只回答“为什么源码质量首先服务 current-truth protection”
   - 证据上限与 canonical ladder 先回 `guides/102`，why 再回 `86 / 87`，对象与 writeback seam 再回 `architecture/README`
+  - 凡涉及 `QueryGuard / sessionIngress / bridgePointer` 这类路径级 certainty，统一先退回 `guides/102` 处理 `public artifact ceiling / mirror gap discipline`
 
 ## 什么时候进来
 
@@ -25,7 +26,7 @@
 - 如果你只先判断“为什么 Prompt 必须先证明同一世界”
   - 从 [84-世界如何合法进入模型：request assembly 与 six-stage assembly chain](<84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md>) 进入；若缺 witness / continue qualification，再到 `51`
 - 如果你只先判断“为什么安全与省 token 是同一条治理定价链”
-  - 从 [85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md](85-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E6%B2%BB%E7%90%86%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%9B%B4%E4%BC%9A%E6%8B%A6%E6%88%AA%EF%BC%8C%E8%80%8C%E6%98%AF%E6%9B%B4%E4%BC%9A%E4%B8%BA%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7.md) 进入；若还在把治理理解成 mode、usage 或弹窗投影，先退回 `10`
+  - 先用 `10` 固定 canonical chain 与弱读回面，再从 [85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md](85-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E6%B2%BB%E7%90%86%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%9B%B4%E4%BC%9A%E6%8B%A6%E6%88%AA%EF%BC%8C%E8%80%8C%E6%98%AF%E6%9B%B4%E4%BC%9A%E4%B8%BA%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7.md) 进入；若还在把治理误读成统一预算器、mode、usage 或弹窗投影，再到 `61`
 - 如果你只先判断“为什么源码质量首先服务当前真相保护”
   - 先回 [102-如何给公开镜像做源码质量证据分级：public artifact ceiling、contract、registry、current-truth surface、consumer subset、hotspot kernel 与 mirror gap discipline.md](../guides/102-%E5%A6%82%E4%BD%95%E7%BB%99%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E5%81%9A%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7%EF%BC%9Acontract%E3%80%81registry%E3%80%81authoritative%20surface%E3%80%81adapter%20subset%E4%B8%8Ehotspot%20gap%20discipline.md)，再回 [86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md](86-%E7%9C%9F%E6%AD%A3%E5%85%88%E8%BF%9B%E7%9A%84%E5%86%85%E6%A0%B8%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%9B%B4%E4%BC%9A%E5%88%86%E5%B1%82%EF%BC%8C%E8%80%8C%E6%98%AF%E6%9B%B4%E4%BC%9A%E9%98%BB%E6%AD%A2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md) 与 [87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md](87-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E5%88%A4%E6%96%AD%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%96%87%E4%BB%B6%E6%9B%B4%E5%B0%8F%EF%BC%8C%E8%80%8C%E6%98%AF%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%AD%E5%BF%83%E5%90%88%E6%B3%95%E3%80%81%E8%BE%B9%E7%95%8C%E5%8F%AF%E8%AF%81%E3%80%81%E4%B8%8B%E4%B8%80%E6%AC%A1%E9%87%8D%E6%9E%84%E4%BB%8D%E6%9C%89%E8%B7%AF.md)；对象与 writeback seam 继续回 `architecture/README`
 - 如果你只先判断“为什么 continuity 不是第四条并列母线”

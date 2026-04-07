@@ -48,6 +48,8 @@
 
 任何 Prompt implementation 审读都先填这一张统一 header：
 
+- 这张 header 只消费 `philosophy/84` 已固定的 canonical Prompt ABI，不在这里重定义字段语义。
+
 ```text
 审读对象:
 authority source:
@@ -64,7 +66,7 @@ lawful forgetting ABI:
 current object:
 pending action:
 next-step guard:
-continuation_qualification_verdict:
+continue_qualification_verdict:
 rollback object:
 ```
 
@@ -72,7 +74,8 @@ rollback object:
 
 1. 没有 authority source 的 Prompt 卡片，不算正式实现卡。
 2. 没有 compiled request diff 的 CI 绿灯，不算正式实现证据。
-3. 没有 lawful forgetting ABI 与 next-step guard 的 handoff，不算正式交接。
+3. 六个 Prompt ABI 槽位里任一缺席，或 `continue_qualification_verdict` 缺席，host / handoff 一律视为硬阻断。
+4. 没有 lawful forgetting ABI 与 next-step guard 的 handoff，不算正式交接。
 
 ## 3. Host Surface Audit
 
@@ -83,6 +86,7 @@ rollback object:
 [ ] authority source 已点名
 [ ] assembly path 已点名
 [ ] compiled request summary 能回到真实请求对象
+[ ] 六个 Prompt ABI 槽位与 continue_qualification_verdict 都能被反查
 [ ] next-step guard 没被摘要包吞掉
 ```
 
@@ -157,6 +161,8 @@ Prompt implementation 更稳的评审顺序是：
 
 交接时必须先验闸门，再验摘要：
 
+- 六个 ABI ref 与 `continue_qualification_verdict` 是交接硬闸门，不是“有就更好”的补充字段。
+
 ```text
 [ ] current object 已写清
 [ ] pending action 已写清
@@ -168,7 +174,7 @@ Prompt implementation 更稳的评审顺序是：
 [ ] protocol transcript ref 已写清
 [ ] continuation object ref 已写清
 [ ] lawful forgetting 之后保留的 ABI 已写清
-[ ] continuation qualification verdict 已写清
+[ ] continue qualification verdict 已写清
 [ ] 如果不读全文，接手者仍能继续
 ```
 
@@ -201,7 +207,7 @@ continuation_object_ref:
 stable bytes drift:
 lawful forgetting ABI:
 handoff guard:
-continuation_qualification_verdict:
+continue_qualification_verdict:
 当前最像哪类失真:
 - 卡片替代真相 / 绿灯替代解释 / 顺序替代判断 / 摘要替代交接
 下一步应重写的是:
