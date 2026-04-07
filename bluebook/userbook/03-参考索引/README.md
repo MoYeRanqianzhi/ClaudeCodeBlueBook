@@ -176,6 +176,7 @@
 157. 为什么 `initialMessageUUIDs`、`previouslyFlushedUUIDs`、`createBridgeSession.events` 与 `writeBatch` 说明注释里的 session creation events 不等于 bridge 的真实历史账。
 158. 为什么 `getUserSpecifiedModelSetting`、`settings.model`、`getMainLoopModelOverride`、`currentAgentDefinition` 与 `restoreAgentFromSession` 说明 persisted model preference、live override 与 resumed-agent fallback 不是同一种 model authority。
 159. 为什么 `getUserSpecifiedModelSetting`、`ANTHROPIC_MODEL`、`settings.model`、`mainThreadAgentDefinition.model` 与 `setMainLoopModelOverride` 说明 ambient env preference、saved setting、agent bootstrap 与 live launch override 不是同一种 model source。
+160. 为什么 `initialHistoryCap`、`isEligibleBridgeMessage`、`toSDKMessages` 与 `local_command` 说明 bridge 的 eligible history replay 不是 model prompt authority。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
