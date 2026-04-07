@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 137 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 138 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -156,6 +156,7 @@
 135. [135-settings文案与cleanup覆盖范围中的强请求清理保留期执行诚实性边界](135-settings文案与cleanup覆盖范围中的强请求清理保留期执行诚实性边界.md)
 136. [136-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界](136-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界.md)
 137. [137-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug、diagLogs与cleanup的强请求清理家族宪法边界](137-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug、diagLogs与cleanup的强请求清理家族宪法边界.md)
+138. [138-diskOutput、toolResultStorage、sessionStorage、plans、fileHistory、sessionEnvironment、debug与diagLogs中的强请求清理制度理由边界](138-diskOutput、toolResultStorage、sessionStorage、plans、fileHistory、sessionEnvironment、debug与diagLogs中的强请求清理制度理由边界.md)
 
 ## 和其他目录的分工
 
