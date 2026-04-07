@@ -2,6 +2,9 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 atlas/root-map 深化动作: 已继续更新 `bluebook/01-源码总地图.md`、`01-源码结构地图.md`、`05-功能全景与API支持.md` 与 `08-能力全集、公开度与成熟度矩阵.md`。新的结论是：地图页、能力全景页与矩阵页也必须共享 `问题分型 -> 工作对象 -> 控制面 -> 入口`，否则 atlas 会在目录层重新长回“目录观感 / 存在性清单 / 产品承诺”三者混写的第二前门语言。
+- 本轮新的 atlas 结论: `01-源码总地图` 这类兼容地图必须明确自己只有 repo-wide projection 权，没有 canonical ladder、current-truth verdict 或产品承诺的签发权；`05` 与 `08` 则必须明确自己只有 surface inventory 权与四层分层记账权，不能把 `current admission` 或 `product promise` 从控制面正文里偷前门。更稳的默认写法是：atlas 先交代对象和边界，再把 deeper judgment 退回 `09 / guides/102 / api / playbooks`。
+- 本轮并行 Prompt 子 Agent 已返回的稳定结论: Prompt 的“魔力”更接近 `same-world compiler`，真正难抄走的不是 system prompt 文本，而是 `世界准入 -> 协议转写 -> 身份保全 -> 合法继续 -> 可解释失稳` 这条运行时编译链。后续若要继续深化 Prompt 线，优先缺口是 `bluebook/README`、`navigation/15` 与 `06-第一性原理与苏格拉底反思` 三页里缺一张更短的 canonical object / counterfeit crosswalk。
 - 本轮 security/risk frontdoor 深化动作: 已继续更新 `bluebook/security/README.md`、`security/appendix/README.md`、`security/source-notes/README.md` 与 `risk/README.md`。新的结论是：安全机制面、附录速查面、源码剖面面、用户侧结算面也必须共享同一组 `问题分型 -> 工作对象 -> 控制面 -> 入口`，否则 security/risk 会在目录层互相越位，重新长出“第二前门语言”。
 - 本轮新的 security/risk 结论: `security` 前门最该先拒收的是把 continuity 写成第四类安全主题，`risk` 前门最该先拒收的是把 continuity 写成第四类用户风险主题；`appendix` 与 `source-notes` 则都必须明确自己只有核对权和贴近源码拆机制权，没有 signer / verdict 改判权。更稳的默认分工是：`security` 先定 signer/ledger/cleanup 机制，`risk` 只定用户侧结算与 reopen qualification，附录与源码剖面只为前两者供证。
 - 本轮 bluebook 根入口深化动作: 已继续更新 `bluebook/00-导读.md`、`00-总览.md`、`00-蓝皮书总览.md` 与 `02-使用指南.md`。新的结论是：蓝皮书根入口和使用入口也必须继承同一组 `问题分型 -> 工作对象 -> 控制面 -> 入口`，否则读者会在最早两跳里重新学回“按标题找页”的第二前门语言。

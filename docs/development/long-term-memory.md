@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/01-源码总地图`、`01-源码结构地图`、`05-功能全景与API支持` 与 `08-能力全集、公开度与成熟度矩阵` 的长期默认 atlas/root-map language 现已继续写死：
+  - `01-源码总地图` 默认只做 repo-wide map projection，不额外签 canonical ladder / current-truth verdict / product promise
+  - `01-源码结构地图` 默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
+  - `05-功能全景与API支持` 默认只列正式 surface 与代表入口，不额外改判 `current admission / product promise`
+  - `08-能力全集、公开度与成熟度矩阵` 默认只做 `existence / visibility / admission / promise` 的分层记账
+  - 这组 atlas/root-map 前门默认统一不把 continuity 升成第四类源码主题、第九类接口表面或第五条公开度轴
+  - 这组 atlas/root-map 前门默认统一继续把 deeper ladder / verdict / promise 退回控制面正文与证据层
+- Prompt 线并行研究的长期默认结论现已继续写死：
+  - Prompt 的“魔力”默认先解释成 `same-world compiler`
+  - 真正难抄走的默认不是 system prompt 文本，而是 `世界准入 -> 协议转写 -> 身份保全 -> 合法继续 -> 可解释失稳` 的运行时编译链
+  - 后续 Prompt 前门若再把“魔力”写回 secret text、长 instruction 或摘要 prose，默认按去魅失败处理
 - `bluebook/security/README`、`security/appendix/README`、`security/source-notes/README` 与 `risk/README` 的长期默认 security/risk frontdoor language 现已继续写死：
   - `security` 默认继续先判 signer / ledger / cleanup 工作对象，再判治理收费链失真段
   - `security/appendix` 默认只做字段 / 矩阵 / 速查核对，不额外签 signer / verdict
