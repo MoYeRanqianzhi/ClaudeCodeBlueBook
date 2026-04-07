@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 source-quality-aura-demotion 深化动作: 已继续更新 `bluebook/architecture/20-源码质量、分层与工程先进性.md` 与 `bluebook/architecture/33-公开源码镜像的先进性、热点与技术债.md`。新的结论是：只要源码质量页还从“先进感 / 高级感”起题，later maintainer 就仍会先学 aura，再倒推结构质量与证据上限。
+- 本轮新的源码质量去魅结论: 更稳的写法必须先问公开证据能否证明 current truth、runtime kernel、cache boundary、recovery semantics 与 hotspot kernel，而不是先问这份源码看起来有多先进。
 - 本轮 prompt-constitutional-demotion 深化动作: 已继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`。新的结论是：只要 `03` 继续保留独立 Prompt Frontdoor + reject trio，或 `09` 继续在总论页重列 Prompt formula、witness object 与实现清单，later maintainer 仍会把 `84 / 51` 的 canonical speaking-right 误读成“只是另外两页的并列版本”。
 - 本轮新的 Prompt constitution 结论: 更稳的写法必须让 `03` 只解释 Prompt 制度为什么成立，让 `09` 只解释三张图宪法为什么成立；具体 `frontdoor order / canonical witness order / implementation order` 都继续收回 `84 / guides/51`。
 - 本轮 source-quality-frontdoor-singularity 深化动作: 已继续更新 `bluebook/philosophy/README.md`。新的结论是：只要源码质量前门同时保留 ladder 和 `future maintainer = formal consumer` 这类平行公式，later maintainer 就仍会把源码质量读成两套第一答案，而不是一条 current-truth ladder 的不同解释层。

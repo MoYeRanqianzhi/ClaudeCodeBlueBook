@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/architecture/20` 与 `bluebook/architecture/33` 的长期默认 source-quality-aura-demotion language 现已继续写死：
+  - 两页默认继续不从“先进感 / 高级感”起题，而先问公开证据能否证明 current-truth protection
+  - `20` 默认继续把 `contract / runtime kernel / cache boundary / recovery semantics` 写成结构质量入口，而不是工程气质入口
+  - `33` 默认继续把公开镜像能证明的东西收回结构质量与 present-truth discipline，不把它夸大成完整闭环已证实
 - `bluebook/03` 与 `bluebook/09` 的长期默认 prompt-constitutional-demotion language 现已继续写死：
   - `03` 默认继续只保留 `same-world compiler` 这句制度哲学 hook，不再第二次重列 Prompt `frontdoor order / canonical witness order / reject trio`
   - `09` 默认继续只保留三张图宪法层的 Prompt 总钩子；更细的 `frontdoor order / canonical witness order / implementation order` 都继续回 `84 / guides/51`

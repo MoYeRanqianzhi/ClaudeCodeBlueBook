@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/architecture/20-源码质量、分层与工程先进性.md` 与 `bluebook/architecture/33-公开源码镜像的先进性、热点与技术债.md`，把源码质量开场里的 aura wording 再降一层：两页现在都不再先从“很先进的感觉”起题，而先追问公开证据能否证明 current truth、runtime kernel、cache boundary、recovery semantics 与 hotspot kernel 的结构质量
 - 继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`，把 Prompt 第二前门再收一层：`03` 现在只保留 `same-world compiler` 这句制度解释，不再在本章第二次重列 Prompt reject trio；`09` 现在只保留三张图宪法层的 Prompt 总钩子，把具体 `frontdoor order / canonical witness order / implementation order` 继续收回 `84 / guides/51`
 - 继续更新 `bluebook/philosophy/README.md`，把源码质量前门再单源化一层：源码质量线现在只认 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 这一条 ladder，`future maintainer = formal consumer` 被明确降格成 `consumer subset + mirror gap discipline` 的解释句；同时 README 也把源码质量的 canonical route 补成先过 `guides/102` 再进 `86 / 87`
 - 继续更新 `bluebook/security/README.md` 与 `bluebook/risk/README.md`，把安全与风控前门里的 UI noun 和 route table 再降一层：`security/README` 现在把 `/status / /doctor / /usage / /compact / /resume` 这类具体名词改回 runtime readback consumer / continuation consumer，并把大段分流清单压成 object handoff；`risk/README` 现在去掉目录范围与推荐入口库存，只保留治理前门、playbook handoff 和编号段的对象下潜顺序
