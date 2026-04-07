@@ -50,10 +50,12 @@
 2. 这是治理裁决吗
    - 若你现在卡在继续、收口、降级、停止、清理后恢复或升级给人之间，就按治理失真处理，不要先盯投影替身。
    - 更稳的最小顺序是：先判 `pricing-right / truth-surface`，再判 `typed ask / sandbox`，最后才判 `decision window / continuation pricing / durable-transient cleanup`。
+   - 最短 reject trio 也只先认 `decision-window collapse / projection usurpation / free-expansion relapse`。
+   - 若你追问 why，固定回 `../../10 -> ../../philosophy/85 -> ../../philosophy/61`；若追问 signer / cleanup mechanism，回 `../../security`；若追问 user-side readback / reopen，回 `../../risk`；若要现场执行，回 `../../playbooks`。
 3. 这是旧状态污染吗
    - 若旧目录、旧恢复资产、旧 capability 或旧 authority 在冒充现在，就按当前真相失真处理。
 
-更细的 object chain、truth plane 与 verdict family 统一回蓝皮书根前门与 `09 / api`；`05` 只负责把它们翻译成用户侧判断。
+更细的 object chain 与 truth plane 统一回蓝皮书根前门；治理 why / signer / reopen / execution 则按上一条 owner route 分流；`05` 只负责把它们翻译成用户侧判断。
 
 如果 `05` 不能和根 `userbook/README`、`01`、`04` 共享同一组 first-answer order，它就会重新退回“控制面话题集合”，而不是用户真正可执行的判断层。
 
@@ -70,20 +72,21 @@ Prompt 失真在这一层也只该继续消费同一张 user-facing witness pack
 
 若这里开始靠 `systemPrompt` 截图、summary prose 或最后一条回复改判 Prompt 主语，就已经越位回第二套 Prompt 前门。
 这张 packet 也只做 user-side reject aid：它只验同一工作对象是否被继承，不签 `world-definition source`，也不签 `continue qualification`。
+换句话说，它只做 `same-work prefilter / reject aid`：先帮你排除“这已经不是同一件工作”的假继续；真正是否过关，仍要把这张 packet 上交给 `continue qualification` 的正式判定，而不是让 packet 自己代签。
 
 如果继续把这一层压成用户动作，也只先记三句：
 
-1. 说不清哪层在说真话时，先退回 `09 / api / architecture`
-2. `/status`、`/doctor`、`/usage`、`compact / resume` 说得再像，也先只当怀疑入口，不直接下结论
+1. 说不清哪层在说真话时，先退回 `../../10 -> ../../philosophy/85 -> ../../philosophy/61 -> ../../security -> ../../risk -> ../../playbooks`，不要直接在 readback surface 上猜 verdict
+2. `/status / /doctor / /usage` 这些都只是 weak readback surface；`/compact / /resume / /memory` 这些都只是 continuation consumer；`cleanup result / handoff promise / product promise readback` 这些都只是 reopen tail evidence，它们都不直接下结论
 3. user-facing 最值钱的是 first reject path：先知道该拒收什么、退到哪层、再看深页拆解
 
-更硬一点说，`/status / /doctor / /usage` 这些都只是 weak readback surface；`/compact / /resume / /memory` 这些都只是 continuation consumer。谁拿它们直接代签 same-world、治理真相或继续资格，谁就在把 consumer 写成 compiler。
+更硬一点说，`/status / /doctor / /usage` 这些都只是 weak readback surface；`/compact / /resume / /memory` 这些都只是 continuation consumer；`cleanup result / handoff promise / product promise readback` 这些都只保留 liability / evidence，不代签治理 verdict。谁拿它们直接代签 same-world、治理真相或继续资格，谁就在把 consumer 写成 compiler。
 续租也只延长仍合法的同一 lease；`resume / heartbeat / keep_alive / token refresh` 都不能替代 `re-entry / reopen / rebinding`。
 
 如果还想要一张最小正向 crosswalk，也只记三行：
 
 - `这还是同一件工作吗`
-  - 过关条件是 `continue qualification`
+  - 正式过关条件是 `continue qualification`；packet 只负责 same-work prefilter
 - `这是治理裁决吗`
   - 过关条件是 `pricing-right + truth-surface attestation`
 - `这是旧状态污染吗`
@@ -96,7 +99,7 @@ Prompt 失真在这一层也只该继续消费同一张 user-facing witness pack
 看到下面迹象时，应先停下来重审，而不是继续在相邻入口间来回切：
 
 1. 你在用 mode、modal、usage、default continue 这些投影替身，或把 `compact / resume` 这些 continuation consumer，直接拿来判断治理真相。
-   - 更直接地说，`/status / /doctor / /usage` 只是证据面；`/compact / /resume` 只是连续性动作。若你在用它们直接下结论，先回 `../../10`。
+   - 更直接地说，`/status / /doctor / /usage` 只是 weak readback；`/compact / /resume` 只是 continuation consumer；`cleanup result / handoff promise / product promise readback` 只是 reopen tail evidence。若你在用它们直接下结论，先回 `../../10`。
 2. 你在用 `systemPrompt` 截图、最后一条消息或 summary prose 直接判断 Prompt 是否仍在同一个世界里。
 3. 你在用目录体感、作者说明或“看起来能跑”直接判断当前真相边界。
 4. 你还没选定是该继续、降级、停止、清理后恢复还是升级给人，就已经在换入口。

@@ -31,9 +31,9 @@
   - 失败信号：还在把治理理解成 mode 面板、权限门数、token 百分比，或把 `Context Usage` 继续读成成本面板。
 - 如果你只先判断“过去怎样不得写坏现在”，从 `41 -> 58 -> 60 -> 63 -> 66 -> 69 -> 84` 进入。
   - 失败信号：还在用 replay、pointer、恢复资产或目录体感代替 `current-truth surface / current-truth writeback / freshness gate`。
-- 如果你只先判断“源码质量到底该怎样判”，从 `44 -> 55 -> 63 -> 84` 进入。
+- 如果你只先判断“已过 `../guides/102` 后，源码质量在对象层怎么落地”，从 `44 -> 55 -> 63 -> 84` 进入。
   - 先过 `../guides/102`，再从 `44 -> 55 -> 63 -> 84` 进入对象层
-  - 失败信号：还在先谈“目录更整齐 / 文件更小 / 热点文件更大或更小”，而没先点名合法复杂度中心、`one writable present` 与第一条 reject path。
+  - 失败信号：还在先谈“目录更整齐 / 文件更小 / 热点文件更大或更小”，而没先点名 `one writable present / writeback seam / retreat layer`。
 - 如果你只先判断“future maintainer 在结构层到底拿什么正式反对当前实现”，从 `60 -> 63 -> 69 -> 72 -> 84` 进入。
   - 最短顺序：`authority surface -> truth planes -> writeback seam -> danger surface -> retreat layer`
   - 失败信号：later maintainer 还必须追全仓、追作者或靠日志回放猜 authority。
