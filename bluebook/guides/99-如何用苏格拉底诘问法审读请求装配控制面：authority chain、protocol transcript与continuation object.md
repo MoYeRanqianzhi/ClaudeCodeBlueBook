@@ -18,7 +18,7 @@
 - `claude-code-source-code/src/query/stopHooks.ts:84-214`
 - `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
 - `../architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md`
-- `../philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`
+- `../philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md`
 
 这些锚点共同说明：
 

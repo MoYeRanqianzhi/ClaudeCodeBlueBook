@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/81`、`bluebook/philosophy/84`、`bluebook/philosophy/63`、`bluebook/philosophy/README`、`bluebook/navigation/03`、`bluebook/guides/99` 与 `docs/development/01` 的长期默认 prompt-frontdoor-route-slug language 现已继续写死：
+  - `81` 的正式 route slug 默认继续固定为 `请求编译链：可缓存、可转写、可继续`
+  - `84` 的正式 route slug 默认继续固定为 `世界如何合法进入模型：request assembly 与 six-stage assembly chain`
+  - `63` 的正式 route slug 默认继续固定为 `Prompt 时间轴：先规定继续资格，再谈摘要连续性`
+  - `philosophy/README`、`navigation/03` 与 `guides/99` 默认继续直连这组新 slug，不再通过旧 `Prompt魔力` target 泄露旧路径
 - `bluebook/philosophy/57`、`bluebook/philosophy/33`、`bluebook/navigation/05`、`bluebook/navigation/06`、`bluebook/navigation/08` 与 `docs/development/01` 的长期默认 prompt-philosophy-slug language 现已继续写死：
   - `57` 的正式文件名默认继续与 H1 对齐为 `Transcript、Lineage与Continuation如何组成协作接口`
   - `33` 的正式文件名默认继续与 H1 对齐为 `Explainability只是Prompt的诊断命名层`

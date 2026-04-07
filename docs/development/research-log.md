@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-frontdoor-route-slug 深化动作: 已继续更新 `bluebook/philosophy/README.md`、`bluebook/navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理.md`、`bluebook/guides/99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object.md` 与 `docs/development/01-章节规划.md`，并把 `bluebook/philosophy/81`、`84`、`63` 的 route slug 正式收回稳定可见标签。新的结论是：Prompt 前门最贵的 residual，不再只是正文还在说旧词，而是 route target 仍在偷偷把 later maintainer 送回旧 `Prompt魔力` 文件名。
+- 本轮新的 Prompt 结论: 对 Prompt 线来说，visible label 与 target slug 必须共享同一首答主语；如果 `README` 嘴上已经在说 `world entry / request assembly / continuation`，真实跳转却仍落到旧魔力命名，later maintainer 学到的仍是旧入口语气而不是 canonical route。
 - 本轮 prompt-philosophy-slug-alignment 深化动作: 已继续更新 `bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md`、`bluebook/navigation/06-终局判断导航：协作语法、资源定价与未来维护者消费者.md`、`bluebook/navigation/08-高阶制度导航：Prompt Constitution、治理顺序与构建系统.md` 与 `docs/development/01-章节规划.md`，并把 `bluebook/philosophy/57`、`bluebook/philosophy/33` 的文件名正式收回已稳定的 H1。新的结论是：对 later maintainer 来说，slug 不是纯兼容层，而是高流量入口的第一层 visible label；只要文件名还在说旧 `Prompt 魔力`，正文去魅就还没有完成。
 - 本轮新的 Prompt 结论: `57` 的正式对象应固定为 `Transcript -> Lineage -> Continuation` 组成的协作接口，`33` 的正式对象应固定为 `Explainability` 只是诊断命名层；导航与规划页若继续打印旧 slug，就会把“机制主语”重新降回“魅力归因”。
 - 本轮 governance-bucket-split 深化动作: 已继续更新 `bluebook/security/README.md`、`bluebook/risk/README.md`、`bluebook/userbook/README.md` 与 `bluebook/README.md`。新的结论是：治理线当前最顽固的 residual，已经从 canonical chain 与执行桥接退到 bucket 本身，即 `settlement / consumer / projection surrogate` 仍会把 `Export`、`continuity`、`compact`、`default continue` 这些不同对象压成一桶。现在这四页开始更一致地把它们拆回 `Outside handoff surface / 用户侧判断对象 / 共同时间轴 / 继续侧快捷替身`。

@@ -46,7 +46,7 @@
 成立证据：
 
 1. [三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md)
-2. [世界如何合法进入模型：request assembly 与 six-stage assembly chain](../philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md)
+2. [世界如何合法进入模型：request assembly 与 six-stage assembly chain](<../philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md>)
 3. [请求装配流水线：world entry / request assembly / six-stage assembly chain](../architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md)
 4. [苏格拉底审读：world entry / request assembly / six-stage assembly chain](../guides/99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object.md)
 5. [验证手册：request assembly、protocol transcript、continuation qualification 与 cache-safe fork](../playbooks/77-请求装配控制面验证手册：authority chain、protocol transcript、continuation object与cache-safe fork回归.md)
