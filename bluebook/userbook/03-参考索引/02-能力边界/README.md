@@ -182,3 +182,4 @@
 - [180-handleIngressMessage、recentPostedUUIDs、recentInboundUUIDs 与 onInboundMessage 索引.md](./180-handleIngressMessage、recentPostedUUIDs、recentInboundUUIDs%20与%20onInboundMessage%20索引.md)
 - [181-lastTransportSequenceNum、recentInboundUUIDs、tryReconnectInPlace、createSession 与 rebuildTransport 索引.md](./181-lastTransportSequenceNum、recentInboundUUIDs、tryReconnectInPlace、createSession%20与%20rebuildTransport%20索引.md)
 - [182-handleIngressMessage、isSDKControlResponse、isSDKControlRequest、onPermissionResponse 与 onControlRequest 索引.md](./182-handleIngressMessage、isSDKControlResponse、isSDKControlRequest、onPermissionResponse%20与%20onControlRequest%20索引.md)
+- [183-handleIngressMessage、control_response-control_request、extractInboundMessageFields 与 enqueue(prompt) 索引.md](./183-handleIngressMessage、control_response-control_request、extractInboundMessageFields%20与%20enqueue%28prompt%29%20索引.md)
