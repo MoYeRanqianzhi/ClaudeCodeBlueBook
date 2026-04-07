@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 root-sync-blocked-snapshot live 记忆：
+  - `2026-04-08` 本轮起手同步时，根仓 `git checkout main` 因 `bluebook/userbook/03-参考索引/README.md` 与 `bluebook/userbook/README.md` `needs merge` 失败；本轮继续严格只在 `.worktrees/mainloop` 内推进，不碰主仓冲突
+- 当前批次继续新增一条 03-governance-card-demotion live 记忆：
+  - `03` 的治理 why 默认继续不保留轻量 canonical card；更稳的高流量写法是：只保留一句 why，再保留最小苏格拉底问题，owner 顺序统一回 `10 -> philosophy/85 -> philosophy/61 -> security/risk/playbooks`
 - 当前批次继续新增一条 03-governance-owner-sequence live 记忆：
   - `03` 的治理 why 默认继续不保留 `10 / security / risk` 这类松散口径；凡涉及 canonical chain、failure semantics、弱读回面、恢复尾链与执行收口，统一回 `10 -> philosophy/85 -> philosophy/61 -> security/risk/playbooks`
 - 当前批次继续新增一条 07-userbook05-fixed-bridge live 记忆：

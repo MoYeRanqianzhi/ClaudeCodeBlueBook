@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮治理 why 小节再压一层：`03` 的治理线现已不再保留轻量 canonical card，而是和 Prompt/源码质量一样继续收成“只保留一句 why + 最小苏格拉底问题 + 固定 owner 顺序”的模板；同时记录了本轮根仓同步因 `userbook` 冲突阻塞、因此继续只在 `mainloop` 推进
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮 `03` 中较早与中段残留的治理回链继续压成单一 owner 顺序：相关口径现已统一写成 `10 -> philosophy/85 -> philosophy/61 -> security/risk/playbooks`，不再保留 `10 / security / risk` 这类松散变体
 - 继续更新 `bluebook/03-设计哲学.md`、`bluebook/07-运行时契约、知识层与生态边界.md`、`bluebook/userbook/05-控制面深挖/README.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮 why/bridge 收口再压一层：`03` 的治理 why 现已和 Prompt why 一样继续统一成“只保留一句 why -> 固定 owner 顺序”的模板；`07` 与 `userbook/05` 现已更明确继续固定成 shared budget why 与用户动作 crosswalk 的双向桥
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮 `03` 的 Prompt why 与治理 why 句法继续统一成单一 owner 顺序：Prompt 相关回链现已统一只回 `philosophy/84`，治理相关回链现已统一写成 `10 -> philosophy/85 -> philosophy/61 -> security/risk/playbooks`

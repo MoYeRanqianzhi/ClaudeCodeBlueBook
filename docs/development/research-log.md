@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮根仓同步检查结果再次出现阻塞：`git checkout main` 因根仓 `bluebook/userbook/03-参考索引/README.md` 与 `bluebook/userbook/README.md` `needs merge` 失败。本轮仍严格只在 `.worktrees/mainloop` 内推进与提交。
+- 本轮新的治理 why 结论：`03` 的治理小节现在更明确被压回和 Prompt/源码质量相同的模板，不再保留轻量 canonical card，而是只保留一句 why 和最小苏格拉底问题；固定 owner 顺序继续只回 `10 -> 85 -> 61 -> security/risk/playbooks`。
 - 本轮新的治理顺序结论：`03` 里较早与中段两处治理 why 现在也被继续压回同一条 owner 顺序，不再保留 `10 / security / risk` 这类松散回链。当前更稳的默认口径已经更明确是：凡涉及 canonical chain、failure semantics、弱读回面、恢复尾链与执行收口，统一回 `10 -> 85 -> 61 -> security/risk/playbooks`。
 - 本轮新的桥接结论：`07` 与 `userbook/05` 现在更明确继续被固定成双向桥。前者只保留 shared runtime correctness / continuity budget 的底层 why，并把用户动作翻译 next-hop 固定回 `userbook/05`；后者则继续只保留三问到三项过关条件的 crosswalk，底层 why 固定回 `07`。
 - 本轮新的 `03` 结论：治理 why 现在也被进一步压成和 Prompt why 同一模板，不再先用“本节不重列治理定价链”再补坏解，而是先钉死“只保留一句 why”，再给固定 owner 顺序。
