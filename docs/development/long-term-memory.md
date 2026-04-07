@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/navigation/01-第一性原理阅读地图.md` 与 `02-能力、API与治理检索图.md` 的长期默认 continuity map 现已继续写死：
+  - `01` 默认不把 `记忆 / 恢复 / 交接` 升成第四条母线
+  - `02` 默认不把 `compact / resume / memory / handoff` 升成第四类能力平面
+  - 两页默认都先把 continuity 收回 `Continuation / continuation pricing / recovery non-sovereignty`
+  - 后续若任一地图页再把 continuity 写回独立平面，默认按地图层退化处理
 - `bluebook/navigation/05`、`15`、`41` 的长期默认 continuity rule 现已继续写死：
   - `05` 默认拒收“把 continuity 当第四类设计对象”
   - `15` 默认拒收“把 continuity 当第四类审读对象”
