@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 directory-constitution-demotion-2 深化动作: 已继续更新 `bluebook/navigation/04-目录职责、规范入口与兼容别名页说明.md`、`bluebook/navigation/README.md` 与 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`。新的结论是：目录宪法 residual 当前最危险的形式，不再是某个单句越位，而是 route 页和论文页会顺手把“去哪里看”写成“谁负责什么”。现在这三页开始更一致地把这类句子收回 next-hop、自我约束与一句提醒。
+- 本轮新的目录结构结论: later maintainer 真正需要的是“这个问题先跳哪层”，而不是 route 页替所有目录预先发职责；一旦 `navigation/04`、`navigation/README` 或 `87` 再把目录分工正文化，bluebook 就会重新长出第二套目录宪法。
 - 本轮 governance-bridge-demotion 深化动作: 已继续更新 `bluebook/philosophy/22-安全、成本与体验必须共用预算器.md`、`bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md` 与 `bluebook/security/README.md`。新的结论是：治理线当前高流量 residual 的核心，不再是 canonical chain 公式本身，而是入口层还在拿 `安全 / 成本 / 体验` 这种 audience bridge 主语代替治理收费链。现在这三页开始更一致地把这组 bridge wording 收回 `扩张定价 -> 治理收费链 -> 外部投影`。
 - 本轮新的治理结论: 如果 later maintainer 第一次看到的仍是“三项目标如何平衡”，他就会围绕体验/成本/safety 的并列优化理解治理；更稳的前门写法必须先说“哪条链在定价”，再说“它会投影成哪些可见外观”。
 - 本轮 prompt-lexicon-cleanup 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`。新的结论是：Prompt 去魅当前更顽固的 residual，不再主要是 headline 里的 `魔力`，而是反例句、反证句和设计启发句还在借用 `更会说 / 像专家 / 强度 / winner / 主权` 这种 signer 或 enchantment 词感。现在这三页开始更一致地把这组词收回 `文风更顺滑 / 效力 / world-definition source / 首答来源 / 改判权`。

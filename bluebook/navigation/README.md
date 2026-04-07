@@ -105,7 +105,7 @@
 - `navigation/` 只给稳定节点，不把每条深链摊平成首页。
 - 目录细节与编号段说明回各目录 `README` 或编号页。
 - 过程记录与变更记忆统一回 `docs/`。
-- 一旦某个 `README` 同时承担 canonical formula、route map、深页解释与研究记忆，它就已经混层，应退回各自证据层。
+- `navigation/README` 自己不代替各目录 `README`、深页正文或仓库根 `docs/` 去承担 canonical formula、深页解释与研究记忆。
 - 一旦 `bluebook/README` 开始复制深链，或某个目录 README 开始第一次解释别的目录的 canonical formula，也视为混层。
 - 一旦入口页只能给公式、却给不出最小顺序，它就仍停在 route map 层，还没有完成 later maintainer 可执行化。
 - 一旦跨目录入口把 `runtime-core evidence`、`operator-governance evidence` 与公开镜像缺口混写成同一 certainty，route 就会开始伪装成 authority。

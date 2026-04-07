@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/navigation/04`、`bluebook/navigation/README` 与 `bluebook/philosophy/87` 的长期默认 directory-constitution-demotion-2 language 现已继续写死：
+  - `navigation/04` 默认继续只写 question-based next-hop，不再正文式分配各目录职责
+  - `navigation/README` 默认继续只约束 `navigation/` 自己不越位，不再对“某个 README”立通用法
+  - `philosophy/87` 默认继续只保留“用证据梯度审目录是否混层”的提醒，不再重写目录分工链
+  - 这三页默认统一拒收 route 页与论文页再次长成第二套目录宪法
 - `bluebook/philosophy/22`、`bluebook/navigation/05` 与 `bluebook/security/README` 的长期默认 governance-bridge-demotion language 现已继续写死：
   - 治理高流量前门默认继续把 `安全 / 成本 / 体验` 写成统一治理收费链的外部投影，不写成三项目标或并列主语
   - `philosophy/22` 默认继续把 H1、章节名与总结句收回 `扩张定价不是三项目标权衡，而是同一条治理收费链`

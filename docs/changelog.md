@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/navigation/04-目录职责、规范入口与兼容别名页说明.md`、`bluebook/navigation/README.md` 与 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`，把目录宪法 residual 继续压回 next-hop 与免责声明：`04` 现在把整段“各目录职责”改成 question-based next-hop，`navigation/README` 现在只约束自己不越位，`87` 现在不再正文式重写目录分工链，只保留“用证据梯度审目录混层”的提醒
 - 继续更新 `bluebook/philosophy/22-安全、成本与体验必须共用预算器.md`、`bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md` 与 `bluebook/security/README.md`，把治理高流量入口里仍把 canonical pricing chain 写成 `安全 / 成本 / 体验` 三项目标的 visible framing 继续压回 `扩张定价 -> 治理收费链 -> 外部投影`：`22` 现在把 H1、章节名与总结句统一改成“投影不是治理主语”，`05` 与 `security/README` 也同步改掉旧链接标签
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`，把 Prompt 顶层前门与机制页里残留的 `更像专家 / 更会说话 / Prompt 强度 / winner / 争主权` 继续统一收回 `文风更顺滑 / Prompt 效力 / world-definition source / 首答来源 / 改判权`，避免 high-traffic 深页在反例句里继续借用 enchantment 或 signer 词感
 - 继续更新 `bluebook/01-源码结构地图.md`、`bluebook/02-使用指南.md` 与 `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`，把源码地图线里残留的 `atlas / projection / rung` 话语继续压回 locator 角色：`01` 现在只保留 repo-specific 定位与跳转，`02` 现在统一改写成 `world-definition source / canonical ladder`，`76` 现在把“源码 atlas / Prompt 魔力”继续收回“源码地图 / Prompt 效力”
