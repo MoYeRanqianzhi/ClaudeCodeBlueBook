@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/architecture/82-84` 的长期默认 continuity architecture language 现已继续写死：
+  - `82` 默认不把 `lawful forgetting / continuation object / cache-safe fork reuse` 升成第四种 Prompt 机制
+  - `83` 默认不把 `continuation pricing / durable-transient cleanup` 升成第四条治理恢复流
+  - `84` 默认不把 `四张图` 升成第四条源码质量母线
+  - 三页默认统一把 continuity 收回 `Continuation / continuation pricing / current-truth surface + recovery asset non-sovereignty` 的时间轴与切面
 - `bluebook/api/78 / 79 / 89` 的长期默认 continuity protocol language 现已继续写死：
   - `78` 默认不把 `continuation requalification` 升成第四类 Prompt 协议块
   - `79` 默认不把 `continuation pricing rebinding / cleanup / threshold` 升成第四条治理流程

@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 architecture continuity 深化动作: 已继续更新 `bluebook/architecture/82-84`。新的结论是：架构层也不该把 continuity 单列成第四条母线或第四种结构图。更稳的默认写法是：`82` 只把 continuity 写成 Prompt `Continuation` 的时间轴，`83` 只把它写成治理 `continuation pricing / durable-transient cleanup` 的计价面与清算面，`84` 只把它写成源码质量线在 bootstrap / authority / recovery / release 上的切面投影。
+- 本轮新的架构层结论: 一旦 architecture 页把 `lawful forgetting`、`continuation object`、`continuation pricing`、`四张图` 写成并列新主语，而不是写成三条母线各自的时间轴与结构裁面，later maintainer 就会在架构层重新学回第四平面。现在 `82-84` 的顶层句法已经和 README / navigation / guides / playbooks / casebooks / api 对齐了。
 - 本轮 API continuity 深化动作: 已继续更新 `bluebook/api/78 / 79 / 89`。新的结论是：API 协议层也不该把 continuity 单列成独立协议面。更稳的默认写法是：`78` 只把 continuity 写成 Prompt `Continuation` 的 rewrite 阶段，`79` 只把它写成治理 `continuation pricing / cleanup / threshold` 的连续消费段，`89` 只把它写成结构 `lineage / fresh merge / anti-zombie` 的证据槽与时间轴消费者。
 - 本轮新的协议层结论: 一旦 API 页把 `continuation requalification`、`continuation pricing rebinding`、`lineage resume` 这些对象写成新主语，而不是写成三条母线在 rewrite / recovery 时间轴上的阶段对象，later maintainer 就会在协议层重新学回第四平面。
 - 本轮 casebooks continuity 深化动作: 已继续更新 `bluebook/casebooks/73-75`。新的结论是：反例层也不该把 continuity 单列成第四类失败家族。更稳的默认写法是：`73` 只把 continuity 失真写成 Prompt `Continuation` 被 prose continuation 夺权，`74` 只把它写成治理 `continuation pricing` 被默认免费化，`75` 只把它写成 `recovery asset`、健康投影与作者记忆对 present truth 的篡位。

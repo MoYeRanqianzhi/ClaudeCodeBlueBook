@@ -49,6 +49,8 @@
 6. `Explainability`
    - cache-break reason 与 continue 失效的对象级解释
 
+这里要先压住一个常见误读：`Continuation` 不是第四种 Prompt 机制；它只是同一条 same-world compiler 在 `compact / resume / handoff / fork` 上展开的时间轴。
+
 ## 1. 先说结论
 
 Claude Code 真正保护的不是：
@@ -189,6 +191,8 @@ Claude Code 更深的一层是：
 4. `rollback boundary`
 5. `continuation qualification`
 6. `threshold liability`
+
+这里的 `continuation object` 不是交接壳，而是同一条 `message lineage` 在 compact、resume、handoff 之后仍可继续行动的最小工作对象。换句话说，`lawful forgetting -> continuation object -> continuation qualification -> cache-safe fork reuse` 不是四个并列模块，而是同一条 `Continuation` 时间轴上的连续约束。
 
 如果 compact 之后只剩“更短的故事”，这就不是 lawful forgetting，而是对象蒸发。
 

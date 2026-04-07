@@ -34,6 +34,8 @@
 
 - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
 
+这里也要先压住一个常见误读：`continuation pricing -> durable-transient cleanup` 不是治理线外另起的一条恢复流；它只是同一条 canonical chain 在时间轴上的计价面、清算面与再入场资格判定。
+
 ## 1. 先说结论
 
 Claude Code 更深的治理律，不是：
@@ -225,6 +227,8 @@ Claude Code 的正式做法是：
 
 因此 continuation 在这里不是 granted，而是 rented。
 
+continuity 在这里不新增治理对象；它只是 `decision window` 落到时间轴之后的续租语法。
+
 更硬一点说，`continuation pricing` 不只是在决定“还要不要继续花 token”，也在决定“恢复后哪些 authority 还能沿用，哪些只能把 durable asset 留下、把主权重开一轮”。
 
 而且 continuation 也不是把所有旧权限一并续租。
@@ -233,6 +237,8 @@ Claude Code 的正式做法是：
 
 - continuation 只恢复仍被当前 governance truth chain 承认的 durable assets
 - transient authority 则必须在恢复时重新审查
+
+所以 `continuation pricing` 与 `durable-transient cleanup` 不是两段相邻流程，而是同一次续租判决的计价面与清算面。
 
 真正成熟的省 Token 不是：
 
