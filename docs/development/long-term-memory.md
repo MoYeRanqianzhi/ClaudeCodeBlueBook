@@ -3604,3 +3604,6 @@
 - `compat-only` 页的长期纪律也应继续固定：它们可以保留旧链接与旧命名，但只能承认自己是兼容入口，不能再签新的 `frontdoor/frontdoor verdict`。visible noun 应统一回 `入口 / 入口判定 / 入口摘要`，避免兼容页再次长出第二套首答词。
 - `2026-04-08` 的根仓库阻断事实应继续记住：当前不仅 `merge --ff-only` 被挡，连 `checkout main` 都会因未解决 index 失败；目前显式阻断文件是 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 与 `docs/development/research-log.md`。后续每批开工前仍需检查，但不要在根仓库碰这些冲突，所有推进继续只落在 `.worktrees/mainloop`。
 - 方法层也应固定同一条 evidence-mode 纪律：`不确定即查` 之前，先判 `mirror present / mirror absent / public-evidence only`。如果当前 worktree 没有镜像，就不应继续把“优先读本地源码”写成唯一分支；更稳的允许签发上限是 `contract / registry / current-truth surface candidate / unknown`。
+- speaking-rights 模板现在可以视为稳定可复用对象，但更稳的落地方式不是先新开 charter 页，而是先在高流量入口放四行卡片：`能合法说 / 不能改判 / canonical owner / 申诉路径`。当 later maintainer 仍需要从长段 prose 里自己拼这些信息时，入口就还没有完成真正的结构优化。
+- `userbook/README`、`04-专题深潜/README`、`05-控制面深挖/README`、`03-参考索引/README` 与 `navigation/README` 现在都适合使用这张卡，但每页的 `canonical owner` 与 `申诉路径` 必须随页角色变化，不宜机械复制。更稳的规则是：工作对象争议回 `userbook/README / 04`，控制面争议回 `05 / 09 / security / risk / guides/100`，route 争议回 `navigation/README`，host truth 与 verdict 争议则继续回 `api / playbooks`。
+- `2026-04-08` 的根仓库阻断文件是漂移的，不应把某一组冲突文件当成稳定事实。当前已观测到至少三组不同阻断点，因此更稳的长期记忆不是“记住哪几个文件冲突”，而是“每批开工前都要重新做 fetch/checkout/merge 检查，并把阻断事实只写进 worktree 记忆，不在根仓库动手修”。

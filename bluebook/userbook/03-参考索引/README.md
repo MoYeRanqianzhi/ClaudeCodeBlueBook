@@ -2,6 +2,17 @@
 
 这一层真正值钱的，不是“问题多”，而是它只拥有速查权，不拥有改判权。
 
+## 发言权卡
+
+- `能合法说`
+  - 按名字、对象、入口与运行时合同快速定位对应正文。
+- `不能改判`
+  - 不替 `philosophy/`、`api/`、`architecture/` 或 `playbooks/` 重判主语、真相与 verdict。
+- `canonical owner`
+  - 速查入口总归 [../README.md](../README.md)；控制面判断回 [../05-控制面深挖/README.md](../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/README.md)；工作对象判断回 [../04-专题深潜/README.md](../04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/README.md)。
+- `申诉路径`
+  - 若索引页已经开始像 owner 一样签 truth 或给 verdict，先退回 `userbook/README` 重做问题分型，再按对应层级申诉到 `philosophy / api / playbooks / casebooks`。
+
 更稳的读法只该剩三句：
 
 1. 它帮你按名字、对象和入口快速定位。
