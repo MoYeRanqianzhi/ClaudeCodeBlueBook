@@ -122,6 +122,7 @@
 - [118-2026-04-07-viewer replay dedup split 拆分记忆.md](./118-2026-04-07-viewer%20replay%20dedup%20split%20拆分记忆.md)
 - [119-2026-04-07-loading lifecycle split 拆分记忆.md](./119-2026-04-07-loading%20lifecycle%20split%20拆分记忆.md)
 - [120-2026-04-07-init payload thickness split 拆分记忆.md](./120-2026-04-07-init%20payload%20thickness%20split%20拆分记忆.md)
+- [121-2026-04-07-attach restore semantics split 拆分记忆.md](./121-2026-04-07-attach%20restore%20semantics%20split%20拆分记忆.md)
 
 用途：
 
