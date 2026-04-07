@@ -2,6 +2,8 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把迁移/目录与 tail methodology residual 再收成抽象自校：`03` 现在把 `设计原则三十一` 收回成“迁移是否同时交代渐进顺序与回退边界”的自校句，把 `设计原则三十三` 收回成“later maintainer 是否会在第一次进入时学错第一问题”的目录自校句，不再在尾段代发迁移卡或目录职责卡；`06` 现在把 `6.46-6.50` 的 feature / axis / object 列表继续压成更纯的 why 句，并把 `7.2 / 7.5 / 7.10` 再抽象成“是否又新增第一入口 / 重发机制顺序 / 把局部经验过早升级成全局公式”的自校句
+- 本轮并行 Agent 新结论已吸收入记忆：在当前阶段，最容易复发的 residual 已经不是 canonical chain，而是尾段里的 manual-card 口气。更稳的默认修法继续是：删 feature list、删目录分工卡、删页名路由，把 why/self-audit 段只保留误读、反问与 owner route
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把尾段 methodology cards 再抽象一层：`6.46-6.50` 现在不再并列发“工作集边界 / 不变量 / continuation 资产 / 资源分配轴 / 重构资本对象”这些轻量结构卡，而统一改成“若讨论已进入具体 owner nouns，回 owner 页”的 why 句；`7.10` 也把 `canonical formula / route words` 继续收回成“是否已够资格跨页复用 / 是否重新长回第二前门”的抽象反问
 - 本轮并行 Agent 新结论已吸收入记忆：`06` 尾段方法论卡的最后一类 residual，不在于结论真伪，而在于它们容易把“更稳的分析方法”写成“更短的 owner 卡”。更稳的默认修法继续是：删掉尾段里的小框架卡，让 why/self-audit 段只保留误读、反问和 route。
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把 Prompt 自校卡再抽象一层：`7.4` 现在不再点名 `projection / summary / handoff prose` 这类替身，而只问是否又把 Prompt 写回替身；`7.7` 不再写 `object / reject` 术语；`7.9` 也把“`owner` 术语”收回成更抽象的“术语堆叠”。这使 `06` 更稳定地停在“能反问是否越位”，而不再自己变成一张轻量 Prompt 机制卡

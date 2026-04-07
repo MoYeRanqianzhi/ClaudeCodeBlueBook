@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 manual-tone-tail-demotion language 现已继续写死：
+  - `03 / 06` 尾段默认继续不以“这页该给什么入口 / 这条线该有哪些组件 / 该回哪一页”这种 manual-card 口气说话；一旦出现，默认按越位候选处理
+  - 更稳的默认修法顺序继续是：`先删 feature / route / component list -> 再把句子压成“我是不是又在发卡” -> 最后补 owner route`
 - `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 tail-method-card-abstraction language 现已继续写死：
   - `06` 的 `6.46-6.50` 这类尾段方法论卡默认继续不自带“三件事 / 不变量 / 资源轴 / 边界对象”这类清单；一旦出现，默认按“尾段 methodology 重新长成轻量 owner 卡”处理
   - `7.10` 默认继续只保留“同一问题主语 / 第二前门”这一级抽象反问，不再显式讨论 `canonical formula / route words`
