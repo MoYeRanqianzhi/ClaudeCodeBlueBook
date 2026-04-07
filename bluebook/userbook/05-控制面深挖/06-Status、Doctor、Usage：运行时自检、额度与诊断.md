@@ -1,4 +1,4 @@
-# Status、Doctor、Usage：运行时自检、额度与诊断
+# Status、Doctor、Usage：宿主状态、环境可信度与预算投影
 
 ## 第一性问题
 
@@ -8,29 +8,29 @@ Claude Code 要先解决的，不是“模型够不够聪明”，而是：
 - 当前工具环境到底值不值得信任。
 - 当前套餐和额度到底还能不能支持这次任务。
 
-这三件事分别投影成 `/status`、`/doctor`、`/usage`，但本质上都属于同一个控制面：运行时自检。
+这三件事分别投影成 `/status`、`/doctor`、`/usage`，但它们在这一层更该被读成同一组 runtime projection cluster，而不是第四条控制面或新的 verdict signer。
 
 如果你还想把 `/config`、`/cost`、`/stats`、`/statusline`、`/extra-usage` 这些邻接入口一起按 UI/控制面对象拆开，应继续看 `10-设置面板、诊断屏与运营命令：会内控制面的三层分工.md`。
 
 如果把这一页压成用户侧最小顺序，只该先做四步：
 
-1. 先过 `same-world test`
-   - 当前 `/status` 看到的还是不是同一个宿主现场。
-2. 再过 host trust
-   - 当前 `/doctor` 看到的工具环境还值不值得继续信任。
-3. 再过 `decision window`
-   - 当前 `/usage` 与 `Context Usage` 看到的 working set 是否仍有决策增益。
+1. 先看 `/status` 暴露的宿主状态投影
+   - 它有没有暴露 same-world / host-state drift，而不是自己签发“还是同一个现场”。
+2. 再看 `/doctor` 暴露的环境可信度投影
+   - 它有没有暴露 host trust / tool-environment drift，而不是自己签发“已经安全可用”。
+3. 再看 `/usage` 与 `Context Usage` 暴露的预算投影
+   - 它们有没有暴露 `decision window / continuation pricing` 的压力，而不是自己签发“还该继续付费”。
 4. 最后才调节模型、effort、节奏和成本观测。
 
-如果这四步反过来，最容易发生的就是：还没确认状态真相、环境可信度和预算窗口，就先去换模型、提 effort 或继续深挖。
+如果这四步反过来，最容易发生的就是：还没确认这些投影在暴露哪条上层 frontdoor 失真，就先去换模型、提 effort 或继续深挖。
 
 ## 进入本页前的 first reject signal
 
-看到下面迹象时，应先回到运行时自检顺序，不要直接去调参：
+看到下面迹象时，应先回到这组 runtime projection 的分工，不要直接去调参：
 
-- 你把 `/status` 当 about 页，而不是宿主状态真相的第一面。
+- 你把 `/status` 当 about 页，或直接把它抬成宿主状态 signer。
 - 你把 `/doctor` 当“装不上才跑一次”的工具，而不是 host trust 入口。
-- 你把 `Context Usage` 或 `/usage` 当 token 条，而不是当前 `decision window` 的诚实投影。
+- 你把 `Context Usage` 或 `/usage` 当 token 条，或直接把它抬成当前 `decision window` 的签发人。
 - 你还没确认状态、环境和预算，就已经在讨论“换更强模型”“调更高 effort”。
 
 ## 它们都是运行时投影，不是 continue verdict 的签发人
@@ -43,7 +43,7 @@ Claude Code 要先解决的，不是“模型够不够聪明”，而是：
 
 真正的用户动作 verdict 仍是：`继续 / 降级 / 停止 / 清理后恢复 / 升级给人`。如果把这三者直接写成 verdict source，就又会把 projection consumer 抬回本体层。
 
-## `/status` 解决的是宿主状态真相
+## `/status` 解决的是宿主状态投影
 
 `/status` 不是 about 页，而是当前 CLI 会话的状态投影。
 
@@ -79,7 +79,7 @@ Claude Code 要先解决的，不是“模型够不够聪明”，而是：
 
 `/usage` 不是账单页，而是套餐和额度的运行时投影。
 
-它同样走 `Settings` 的 `Usage` tab，说明 Claude Code 把预算当成当前任务是否还能稳定推进的控制面。
+它同样走 `Settings` 的 `Usage` tab，说明 Claude Code 至少把预算投影公开成当前任务是否还能稳定推进的运行时观察面。
 
 对用户的实际意义：
 
@@ -90,7 +90,7 @@ Claude Code 要先解决的，不是“模型够不够聪明”，而是：
 
 - `/usage` 不是 token 条。
 - `Context Usage` 也不是 token 条。
-- 它们更接近当前 working set 还值不值得继续付费的 `decision window`。
+- 它们更接近 `decision window / continuation pricing` 的运行时投影，不等于这两个治理对象本身。
 
 误用边界：
 

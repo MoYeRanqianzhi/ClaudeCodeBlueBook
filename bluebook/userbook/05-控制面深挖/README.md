@@ -40,6 +40,7 @@
 
 - 这里只翻译用户侧判断；证据上限、truth plane 与 rollback ceiling 统一回蓝皮书根前门与 `09`，不在 `05` 里重签一遍。
 - 这里只负责把 signer、projection、consumer 与 first reject path 翻成用户动作，不负责把 projection 重新抬回 signer。
+- `/status`、`/doctor`、`/usage` 在这一层也只配组成相邻 projection cluster，不配另起一条“运行时自检控制面”。
 
 ## 先按控制面，不按相邻按钮
 

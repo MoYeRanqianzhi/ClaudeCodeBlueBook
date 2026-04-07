@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06`、`bluebook/userbook/05-控制面深挖/README` 与 `05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md` 的长期默认 user-facing-runtime-projection language 现已继续写死：
+  - `bluebook/06` 默认继续把治理线最小顺序写成 `governance key -> truth-surface attestation -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
+  - `bluebook/userbook/05-README` 默认继续把 `/status / /doctor / /usage` 降为相邻 projection cluster，不再允许它们另起“运行时自检控制面”
+  - `bluebook/userbook/05/06` 默认继续把 `/status` 写成 host-state projection、`/doctor` 写成 trust projection、`/usage` 写成 `decision window / continuation pricing` 的预算投影
+  - 这三页默认统一拒收把 `/status`、`/doctor`、`/usage` 写成 signer、continue verdict 或新控制面名
 - Prompt 入口层的长期默认 layering 现已继续写死：
   - `bluebook/README` 与 `bluebook/06` 默认继续把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 写成 `frontdoor / first-reject path`，不再写成 object witness chain
   - `bluebook/philosophy/84` 默认继续把 Prompt 最短公式拆成 `frontdoor order / same-world witnesses / action chain` 三层，而不是两层混写
