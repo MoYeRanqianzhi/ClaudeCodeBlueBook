@@ -84,6 +84,7 @@
 27. `print.ts`、`externalMetadataToAppState`、`setMainLoopModelOverride` 与 `startup fallback` 看起来都在 print remote recovery 附近时，应该先去哪个入口分辨 transcript、metadata 与 emptiness 不是同一种 stage。
 28. `restoredWorkerState`、`externalMetadataToAppState`、`SessionExternalMetadata` 与 `RemoteIO` 看起来都在 metadata readback 附近时，应该先去哪个入口分辨 CCR v2 的 readback 不是 observer metadata 的同一种本地消费合同。
 29. `StructuredIO`、`RemoteIO`、`setInternalEventReader`、`setInternalEventWriter` 与 `flushInternalEvents` 看起来都在 headless transport 附近时，应该先去哪个入口分辨协议宿主不等于同一种恢复厚度。
+30. `/resume`、`--continue`、`print --resume` 与 `remote-control --continue` 看起来都在接续入口附近时，应该先去哪个入口分辨 stable conversation resume、headless remote hydrate 与 bridge continuity 不是同一种接续来源。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 

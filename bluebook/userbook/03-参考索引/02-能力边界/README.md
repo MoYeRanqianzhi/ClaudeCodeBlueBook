@@ -180,3 +180,4 @@
 - [155-print.ts、externalMetadataToAppState、setMainLoopModelOverride 与 startup fallback 索引.md](./155-print.ts、externalMetadataToAppState、setMainLoopModelOverride%20与%20startup%20fallback%20索引.md)
 - [156-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata 与 RemoteIO 索引.md](./156-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata%20与%20RemoteIO%20索引.md)
 - [157-StructuredIO、RemoteIO、setInternalEventReader、setInternalEventWriter 与 flushInternalEvents 索引.md](./157-StructuredIO、RemoteIO、setInternalEventReader、setInternalEventWriter%20与%20flushInternalEvents%20索引.md)
+- [158-resume、--continue、print --resume 与 remote-control --continue 索引.md](./158-resume、--continue、print%20--resume%20与%20remote-control%20--continue%20索引.md)

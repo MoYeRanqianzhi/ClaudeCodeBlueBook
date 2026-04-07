@@ -312,6 +312,7 @@
 - [166-print.ts、externalMetadataToAppState、setMainLoopModelOverride 与 startup fallback：为什么 print remote recovery 的 transcript、metadata 与 emptiness 不是同一种 stage.md](./166-print.ts、externalMetadataToAppState、setMainLoopModelOverride%20与%20startup%20fallback：为什么%20print%20remote%20recovery%20的%20transcript%E3%80%81metadata%20与%20emptiness%20不是同一种%20stage.md)
 - [167-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata 与 RemoteIO：为什么 CCR v2 的 metadata readback 不是 observer metadata 的同一种本地消费合同.md](./167-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata%20与%20RemoteIO：为什么%20CCR%20v2%20的%20metadata%20readback%20不是%20observer%20metadata%20的同一种本地消费合同.md)
 - [168-StructuredIO、RemoteIO、setInternalEventReader、setInternalEventWriter 与 flushInternalEvents：为什么 headless transport 的协议宿主不等于同一种恢复厚度.md](./168-StructuredIO、RemoteIO、setInternalEventReader、setInternalEventWriter%20与%20flushInternalEvents：为什么%20headless%20transport%20的协议宿主不等于同一种恢复厚度.md)
+- [169-resume、--continue、print --resume 与 remote-control --continue：为什么 stable conversation resume、headless remote hydrate 与 bridge continuity 不是同一种接续来源.md](./169-resume、--continue、print%20--resume%20与%20remote-control%20--continue：为什么%20stable%20conversation%20resume%E3%80%81headless%20remote%20hydrate%20与%20bridge%20continuity%20不是同一种接续来源.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。
 
 更稳一点说，这一层真正值钱的目录优化也不是继续补页，而是让每个控制面首页都先回答：

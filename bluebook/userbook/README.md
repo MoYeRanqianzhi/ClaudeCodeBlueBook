@@ -146,6 +146,8 @@
   [05-控制面深挖/167-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata 与 RemoteIO：为什么 CCR v2 的 metadata readback 不是 observer metadata 的同一种本地消费合同.md](./05-控制面深挖/167-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata%20与%20RemoteIO：为什么%20CCR%20v2%20的%20metadata%20readback%20不是%20observer%20metadata%20的同一种本地消费合同.md)
 - 想分清 `StructuredIO`、`RemoteIO`、`setInternalEventReader`、`setInternalEventWriter` 与 `flushInternalEvents` 的 transport 恢复厚度：
   [05-控制面深挖/168-StructuredIO、RemoteIO、setInternalEventReader、setInternalEventWriter 与 flushInternalEvents：为什么 headless transport 的协议宿主不等于同一种恢复厚度.md](./05-控制面深挖/168-StructuredIO、RemoteIO、setInternalEventReader、setInternalEventWriter%20与%20flushInternalEvents：为什么%20headless%20transport%20的协议宿主不等于同一种恢复厚度.md)
+- 想分清 `/resume`、`--continue`、`print --resume` 与 `remote-control --continue` 的接续来源边界：
+  [05-控制面深挖/169-resume、--continue、print --resume 与 remote-control --continue：为什么 stable conversation resume、headless remote hydrate 与 bridge continuity 不是同一种接续来源.md](./05-控制面深挖/169-resume、--continue、print%20--resume%20与%20remote-control%20--continue：为什么%20stable%20conversation%20resume%E3%80%81headless%20remote%20hydrate%20与%20bridge%20continuity%20不是同一种接续来源.md)
 
 如果你已经确定要读某个专题，请先到对应 README 再选深页，不要把根前门当默认深链库存。
 
