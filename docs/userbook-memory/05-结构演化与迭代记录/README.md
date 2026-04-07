@@ -124,6 +124,7 @@
 - [120-2026-04-07-init payload thickness split 拆分记忆.md](./120-2026-04-07-init%20payload%20thickness%20split%20拆分记忆.md)
 - [121-2026-04-07-attach restore semantics split 拆分记忆.md](./121-2026-04-07-attach%20restore%20semantics%20split%20拆分记忆.md)
 - [122-2026-04-07-remote recovery lifecycle split 拆分记忆.md](./122-2026-04-07-remote%20recovery%20lifecycle%20split%20拆分记忆.md)
+- [123-2026-04-07-viewerOnly non-owning client split 拆分记忆.md](./123-2026-04-07-viewerOnly%20non-owning%20client%20split%20拆分记忆.md)
 
 用途：
 

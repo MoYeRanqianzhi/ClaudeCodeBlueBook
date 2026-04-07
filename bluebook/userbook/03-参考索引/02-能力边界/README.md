@@ -111,3 +111,4 @@
 - [109-init full payload、bridge redaction 与 model-only banner 索引.md](./109-init%20full%20payload%E3%80%81bridge%20redaction%20与%20model-only%20banner%20索引.md)
 - [110-history init banner replay 与 live slash restore 索引.md](./110-history%20init%20banner%20replay%20与%20live%20slash%20restore%20索引.md)
 - [111-watchdog、warning、reconnecting 与 disconnected 索引.md](./111-watchdog%E3%80%81warning%E3%80%81reconnecting%20%E4%B8%8E%20disconnected%20索引.md)
+- [112-viewerOnly、history、timeout、Ctrl+C 与 title 索引.md](./112-viewerOnly%E3%80%81history%E3%80%81timeout%E3%80%81Ctrl%2BC%20%E4%B8%8E%20title%20索引.md)
