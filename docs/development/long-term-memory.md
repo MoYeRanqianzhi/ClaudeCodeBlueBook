@@ -3898,3 +3898,6 @@
 - `philosophy/README` 里的 continuity 条目现在也应继续被视为“先判是不是时间轴投影”的自校入口，而不是新的 owner route。更稳的顺序是先回 `84` 确认 Prompt owner 与时间轴归属，再把 `06` 用作苏格拉底式自校，而不是先把 `06` 写成 continuity 首跳。
 - 源码质量前门现在还应继续执行一条更细的 speaking-rights 纪律：`03` 只负责 why 与 first-principles 去魅；`guides/102` 只负责 canonical ladder / evidence grading / candidate demotion；`architecture/README` 只负责对象层落点。三者都不该再用一条长回链互相代签。
 - userbook 与 security 线的长期降格规则也应继续细分成三类：`weak readback surface`、`continuation consumer`、`reopen tail evidence`。根 `userbook/README` 与 `05` 负责先把这三类拆开，`security/README` 只保留机制面降格，`risk/README` 只承接用户侧恢复与尾链证据，不让 `risk / playbooks` 再回到“谁在说真话”的首跳里。
+- 源码质量线的旧长链残余现在也应继续视为结构债：高流量页里凡出现 `07 -> guides/102 -> philosophy/87 -> architecture/README` 这种一口气兜完 why / ladder / object 的写法，都应继续拆回四段固定 next-hop。更稳的常式是：`07` 只承接 `shared runtime correctness / continuity budget`，`guides/102` 只承接 `canonical ladder / evidence grading`，`philosophy/87` 只承接 `quality why`，`architecture/README` 只承接对象与 writeback seam。
+- `86` 现在更应被读成源码质量线的深层 current-truth protection 补充页，而不是高流量 why frontdoor。高流量路由若继续写成 `86 / 87` 并列，会重新制造 why 首答竞争；目录与入口页的默认 why 路由应优先只回 `87`。
+- `owner law` 这组旧词现在也应继续退出高流量目录页。更稳的可见词法是 `首答来源 / 申诉链 / owner route`；`navigation/04`、`userbook/README`、`03-参考索引/README` 这类目录页若还保留 `owner law`，later maintainer 更容易把目录说明误读成第二层规范正文。
