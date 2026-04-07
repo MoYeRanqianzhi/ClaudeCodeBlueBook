@@ -516,5 +516,6 @@
 - sandbox network bridge 里同 host sibling sweep 与 tool-level closeout 的边界
 - sandbox permission 的 persist-to-settings 在 context、settings 与 live sandbox 之间的三层写面边界
 - permission tail 从 verdict ledger 分叉到 closeout、re-evaluation、host sweep 与 persist surfaces 的结构边界
+- remote surface 从 consumer topology 分叉到 foreground runtime、interaction shell、presence ledger、gray runtime 与 behavior bit 的结构边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
