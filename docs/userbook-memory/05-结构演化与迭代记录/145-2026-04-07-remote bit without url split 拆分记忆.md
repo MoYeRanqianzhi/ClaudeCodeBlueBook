@@ -40,7 +40,11 @@
 
 ### 判断五：真正直接依赖 URL 的运行时 consumer 很窄，核心只有 `/session` pane 与 footer remote pill
 
-### 判断六：因此这类分叉态更像 affordance failure，而不是 runtime failure
+### 判断六：`RemoteSessionManager` 的 message submit 与 `useRemoteSession` 的 live-status projection 也和 URL 脱钩，因此这类分叉态更像 affordance failure，而不是 runtime failure
+
+### 判断七：assistant viewer 不种 URL 更像刻意缩窄的 remote 合同，而不像技术上无法导出 URL
+
+### 判断八：`StatusLine` 的 remote block 在结构上能继续活，但 `session_id` 在 viewer path 上未必天然等于远端 session；`/reload-plugins` 的实现虽然 URL 无关，但 viewer path 上是否还能进入命令面本身也是 reachability 问题
 
 ## 苏格拉底式自审
 
@@ -51,6 +55,10 @@
 ### 问：为什么一定要把 `useRemoteSession` 拉进来？
 
 答：因为只有证明 runtime engine 不依赖 URL，才能把损伤精确限定在 display affordance。
+
+### 问：为什么还要把 `viewerOnly` 拉进来？
+
+答：因为只有这样，才能把 “URL 缺席” 从坏态进一步收窄成一类更薄的 remote 合同。
 
 ### 问：为什么一定要做全仓 `remoteSessionUrl` 搜索？
 

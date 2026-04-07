@@ -150,6 +150,25 @@
 
 - URL 字段本身
 
+更细一点看，`RemoteSessionManager` 的用户消息发送走的是基于 config 的请求路径，
+
+而不是：
+
+- 依赖一个已存在的 browser URL
+
+`useRemoteSession` 这边的 WS live/readiness 更新，更主要是回写：
+
+- `remoteConnectionStatus`
+
+所以这里至少又分成了两层：
+
+1. message submit / remote execution path
+2. WS live status projection
+
+它们都不是：
+
+- `remoteSessionUrl` display affordance
+
 所以当 `remote bit` 为真但 URL 缺席时，
 
 更准确的说法应该是：
@@ -214,7 +233,8 @@
 - `Messages.tsx` 里的 terminal progress bar 抑制
 - `sessionMemory.ts` 里的 session memory 初始化跳过
 - `settings/changeDetector.ts` 里的 file watching 初始化跳过
-- `/reload-plugins` 与 `print.ts` 里围绕 remote 条件的 user settings 下载分支
+- `print.ts` 里围绕 remote 条件的 user settings 下载分支
+- `/reload-plugins` 的实现本身也是 URL 无关的，但它在 viewer path 上是否还能被命令面保留，要另看 remote-safe command surface
 
 这些分支共同说明一件事：
 
@@ -282,6 +302,17 @@ footer 的 remote indicator 只在：
 
 - remote engine
 
+而且 footer 在这类分叉态里还会形成一个更容易误判的组合：
+
+- 远端本地 mode 标签已经被压掉
+- 但正向 remote link pill 又没有出现
+
+于是用户看到的不是“明显 remote”，
+
+而更像：
+
+- 两边都没给足解释
+
 ## 第六层：为什么这页必须把它叫作 `affordance failure`，而不是 `runtime failure`
 
 把上面两层合起来，就会得到一个更稳的措辞。
@@ -314,7 +345,46 @@ footer 的 remote indicator 只在：
 
 这会把系统真实坏掉的地方描述得更精确。
 
-## 第七层：最容易误导用户的，是“误报式失效”而不是“真实停机”
+## 第七层：assistant viewer 更像刻意缩窄的 remote 合同，不像技术做不到
+
+如果只看现象，仍然可能会冒出一个更强的怀疑：
+
+- “assistant viewer 没有 URL，是不是因为技术上拿不到？”
+
+但从当前代码看，这个解释并不强。
+
+因为 assistant attach 路径已经持有：
+
+- `targetSessionId`
+
+而 `getRemoteSessionUrl(sessionId)` 本身就能从 session id 推出 browser URL。
+
+再结合 `AppStateStore` 对 `remoteSessionUrl` 的注释：
+
+- `for --remote mode (shown in footer indicator)`
+
+更稳的推断反而是：
+
+- assistant viewer 更像刻意去掉 URL/QR affordance 的 remote 变体
+
+而不是：
+
+- 技术上无法给 URL 的残缺 remote
+
+这层推断之所以重要，是因为 `viewerOnly` 还会连带改变别的运行时行为：
+
+- assistant history paging 会专门为 viewer path 打开
+- title rewrite、stuck-session timeout、`Ctrl+C` interrupt 等路径则会对 viewerOnly 做收窄
+
+所以 assistant viewer 更像：
+
+- 更薄的 remote 合同
+
+不是：
+
+- 单纯缺了一条 URL 的坏态
+
+## 第八层：最容易误导用户的，是“误报式失效”而不是“真实停机”
 
 这轮还要再补一个更细的判断。
 
@@ -348,9 +418,9 @@ assistant viewer 路径完全可能同时满足：
 
 | 类型 | 结论 |
 | --- | --- |
-| 稳定可见 | `remote bit` 与 `remoteSessionUrl` 先天分离；assistant viewer 路径会稳定产生 `getIsRemoteMode() = true` 且 URL 缺席的初始态；`useRemoteSession` / `activeRemote` 的运行链路不依赖 URL；`StatusLine`、startup-notification gate、terminal progress 抑制、session memory gate、settings watcher gate 等只认 remote bit，因此会继续工作 |
-| 条件公开 | `/session` pane 与 footer remote pill 是 URL 依赖面；URL 缺席时，它们会失去 QR/link affordance；footer 又只拿 mount-time snapshot，因此后续就算别处补写 store，也不自动承诺恢复 |
-| 灰度/实现层 | `SessionInfo` 的 “Not in remote mode” 文案会把“URL 缺席”说成“remote 不成立”；从当前代码能证明它在某些路径上会误报，但仅凭这些文件还不能断言这是产品刻意设计还是 UX 欠账 |
+| 稳定可见 | `remote bit` 与 `remoteSessionUrl` 先天分离；assistant viewer 路径会稳定产生 `getIsRemoteMode() = true` 且 URL 缺席的初始态；`useRemoteSession` / `activeRemote` 的运行链路不依赖 URL；`RemoteSessionManager` 的 message submit 与 `useRemoteSession` 的 live-status projection 也不依赖 URL；startup-notification gate、terminal progress 抑制、session memory gate、settings watcher gate 等只认 remote bit，因此会继续工作 |
+| 条件公开 | `/session` pane 与 footer remote pill 是 URL 依赖面；URL 缺席时，它们会失去 QR/link affordance；footer 又只拿 mount-time snapshot，因此后续就算别处补写 store，也不自动承诺恢复；`StatusLine` 的 remote block 结构会继续存在，但它在 viewer path 上导出的 `session_id` 是否就是远端那个 session 仍要另看 session bootstrap |
+| 灰度/实现层 | `SessionInfo` 的 “Not in remote mode” 文案会把“URL 缺席”说成“remote 不成立”；assistant viewer 不种 URL 更像产品分层而不是技术做不到，但这层“刻意为之”的动机仍属于从代码做出的强推断，不是公开承诺；`/reload-plugins` 的实现虽然 URL 无关，但 viewer path 上它是否还能从命令面进入，本身也是可达性问题 |
 
 ## 苏格拉底式自审
 

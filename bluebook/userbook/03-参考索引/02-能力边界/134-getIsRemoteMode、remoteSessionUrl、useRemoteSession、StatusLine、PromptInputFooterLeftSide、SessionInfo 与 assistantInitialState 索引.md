@@ -44,8 +44,8 @@
 | 类型 | 对象 |
 | --- | --- |
 | 稳定可见 | `remote bit` 与 URL 先天分离；assistant viewer 稳定可产生 “bit 真、URL 缺席”；大量 consumer 继续按 remote bit 工作；CCR runtime 继续依赖 config，不依赖 URL |
-| 条件公开 | `/session` pane 与 footer remote pill 会在 URL 缺席时停摆；footer 还是 mount-time snapshot，不承诺后续自愈 |
-| 内部/灰度层 | `/session` fallback 文案把 “URL 缺席” 写成 “Not in remote mode”；这是用户解释口径，不是精密 runtime 判定 |
+| 条件公开 | `/session` pane 与 footer remote pill 会在 URL 缺席时停摆；footer 还是 mount-time snapshot，不承诺后续自愈；status-line remote block 会继续存在，但 `session_id` 语义在 viewer path 上还要另看 bootstrap |
+| 内部/灰度层 | `/session` fallback 文案把 “URL 缺席” 写成 “Not in remote mode”；`/reload-plugins` 的实现虽然 URL 无关，但 viewer path 上能否进入命令面仍是 reachability 问题 |
 
 ## 5. 五个检查问题
 
