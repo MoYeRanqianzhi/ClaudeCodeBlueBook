@@ -199,6 +199,7 @@
 - [195-2026-04-08-inbound normalization split 拆分记忆.md](./195-2026-04-08-inbound%20normalization%20split%20拆分记忆.md)
 - [196-2026-04-08-permission verdict ledger split 拆分记忆.md](./196-2026-04-08-permission%20verdict%20ledger%20split%20拆分记忆.md)
 - [197-2026-04-08-ingress reading chain split 拆分记忆.md](./197-2026-04-08-ingress%20reading%20chain%20split%20拆分记忆.md)
+- [198-2026-04-08-permission closeout split 拆分记忆.md](./198-2026-04-08-permission%20closeout%20split%20拆分记忆.md)
 
 用途：
 

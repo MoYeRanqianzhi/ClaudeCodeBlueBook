@@ -188,6 +188,7 @@
 169. 为什么 `extractInboundMessageFields`、`normalizeImageBlocks`、`resolveInboundAttachments`、`prependPathRefs` 与 `resolveAndPrepend` 说明 image block repair 与 attachment path-ref prepend 不是同一种 inbound normalization contract。
 170. 为什么 `pendingPermissionHandlers`、`BridgePermissionCallbacks`、`request_id`、`handlePermissionResponse` 与 `isBridgePermissionResponse` 说明 bridge permission race 的 verdict ledger 不是 generic control callback ownership。
 171. 为什么 `handleIngressMessage`、`recentInboundUUIDs`、`onPermissionResponse`、`extractInboundMessageFields`、`resolveAndPrepend` 与 `pendingPermissionHandlers` 说明 bridge ingress 的 191-196 应按六层阅读链而不是并列碎页来读。
+172. 为什么 `cancelRequest`、`onResponse` unsubscribe、`pendingPermissionHandlers.delete` 与 leader queue recheck 说明 bridge permission race 的 prompt 撤场、订阅退役、响应消费与策略重判不是同一种收口合同。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
