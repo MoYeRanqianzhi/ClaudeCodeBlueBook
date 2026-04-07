@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 governance-crosswalk-hardening 深化动作：已继续更新 `10`、`security/README`、`risk/README` 与 `playbooks/66`。新的结论是：治理线当前更贵的 residual，已经不在 canonical chain 本身，而在 strong signer surface、weak readback surface 与 reopen tail evidence 之间还缺一张最短 crosswalk。更稳的默认修法是：`10` 负责一屏 crosswalk，`security/README` 负责 signer-strength caveat，`risk/README` 负责 tail consumer dependency map，`66` 明确只是 host-facing dialect，canonical `repair card` 继续只认 `72`。
 - 本轮 evidence-index-mode-hardening 深化动作：已继续更新 `02-证据索引`。新的结论是：在 `public-evidence only` worktree 里，镜像路径索引本身也必须显式降级成 archival anchor；否则 later maintainer 很容易把“这里列出了 mirror path”误读成“这里已经本地核验过 mirror evidence”。更稳的默认修法是：索引页开头先写 evidence mode，再列路径。
 - 本轮 prompt-abi-consumer-aliasing 深化动作：已继续更新 `36` 与 `userbook` 的 Prompt consumer 页。新的结论是：Prompt 线真正容易漂移的，不只是 owner statement，而是 consumer 页各自用不同 user nouns 重新讲同一件事。更稳的默认修法是：host audit 直接写六个 ABI 槽位，userbook 则固定只用一张 alias table，把 `目标 / 附件 / working set / next step` 回绑到同一张 canonical Prompt ABI。
 - 本轮 governance-self-audit-alignment 深化动作：已继续更新 `06`。新的结论是：当 owner 页已经把 one-order / weak-readback / reopen tail-chain 写硬之后，`06` 最容易滞后的地方，是仍用“统一预算器”“更严拦截”“压缩文本”这类中层词做自校。更稳的默认修法是：把这些词继续压成“我是不是又把 signer、弱读回面、continuation consumer 与 cleanup 结果词写混了”的反问。

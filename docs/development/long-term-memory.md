@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/10`、`bluebook/security/README`、`bluebook/risk/README` 与 `bluebook/playbooks/66` 的长期默认 governance-crosswalk-hardening language 现已继续写死：
+  - `10` 默认继续保留最短 `strong signer surface / weak readback surface / reopen tail evidence` crosswalk
+  - `security/README` 默认继续把 `cleanup stage verdict` 写成前门层可见读回，而不自动夸大成 deeper conformance/finality signer
+  - `risk/README` 默认继续把 `product promise readback / reopen qualification / evidence binding` 写成 tail consumer dependency map，并把 canonical `repair card` 先回 `playbooks/72`
+  - `playbooks/66` 默认继续只读成 host-facing projection dialect，不再和 `72` 竞争 canonical governance repair/reopen ABI
 - `docs/development/02-证据索引.md` 的长期默认 evidence-index-mode-hardening language 现已继续写死：
   - 当前 `.worktrees/mainloop` 若仍是 `mirror absent / public-evidence only`，`02-证据索引` 默认继续只充当 archival mirror-path index，不得被读成“本地已核验源码证据”
   - 更稳的默认修法顺序继续是：`先在索引页点明 evidence mode -> 再列 mirror path -> 若需要 stronger claim，再回 00 判证据模式`
@@ -21,7 +26,7 @@
 - `bluebook/philosophy/84`、`bluebook/guides/51`、`bluebook/guides/36` 与 userbook Prompt consumer 页的长期默认 prompt-abi-owner-collapse language 现已继续写死：
   - `84` 默认继续独占 canonical Prompt ABI statement：`message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
   - `51` 默认继续把这 6-link chain 写成 builder-facing 复用对象，不再另造一套实现 ABI
-  - `36` 默认继续要求 `witness_chain_ref` 与 `continuation_qualification_verdict` 成为 host / handoff 审读必填字段
+  - `36` 默认继续要求六个 Prompt ABI 槽位与 `continuation_qualification_verdict` 成为 host / handoff 审读必填字段
   - `userbook/00`、`userbook/01-主线使用/02` 与 `userbook/05-控制面深挖/03` 默认继续只翻译这张 ABI，不再生成第二套 Prompt doctrine 或 continuity frontdoor
   - 更稳的默认修法顺序继续是：`先固定 owner ABI -> 再让 audit/template 复用 -> 最后只给 userbook 最短映射`
 - `bluebook/10`、`bluebook/philosophy/61`、`bluebook/security/README` 与 `bluebook/risk/README` 的长期默认 governance-one-order language 现已继续写死：

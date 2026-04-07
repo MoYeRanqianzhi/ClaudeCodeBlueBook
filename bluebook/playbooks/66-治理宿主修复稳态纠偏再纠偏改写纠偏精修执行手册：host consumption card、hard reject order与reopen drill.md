@@ -1,5 +1,7 @@
 # 治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill
 
+这页默认只读成 host-facing projection dialect：它负责把 canonical governance repair/reopen ABI 翻成宿主消费卡，不重新定义 owner 字段集合。若要看更贴近前门 canonical chain 的 `repair card` 字段面，先回 `playbooks/72`。
+
 这一章不再解释治理 refinement protocol 该消费哪些字段，而是把 Claude Code 式治理 rewrite correction refinement protocol 压成一张可持续执行的治理执行卡。
 
 它主要回答五个问题：

@@ -69,6 +69,17 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
 - 它们不能替 `governance key / externalized truth chain / decision window / continuation pricing` 说话。
 - 它们也不能把 cleanup 结果、product promise readback 或 continuation consumer 误写成 signer surface；这些都只是在同一治理尾链上读回剩余 liability。
 
+如果把这条非对称再压成最短 crosswalk，也只该剩三列：
+
+1. `strong signer surface`
+   - `governance key / externalized truth chain / decision window / continuation pricing / durable-transient cleanup`
+2. `weak readback surface`
+   - `approval / mode / usage / Compact / Resume / Memory / transcript / dashboard / cleanup result / product promise readback`
+3. `reopen tail evidence`
+   - 只保留 residual liability 与 future-readable evidence，不允许任何弱投影越级升级成新主权
+
+更稳一点说，`cleanup result` 只有在背后仍能回到更强的 conformance / finality evidence 时，才配被读成安全的尾链读回；否则它也只是一条弱投影。
+
 ## 最短二跳
 
 - 缺“为什么治理首先处理的是免费扩张”，回 [philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价](philosophy/85-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E6%B2%BB%E7%90%86%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%9B%B4%E4%BC%9A%E6%8B%A6%E6%88%AA%EF%BC%8C%E8%80%8C%E6%98%AF%E6%9B%B4%E4%BC%9A%E4%B8%BA%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7.md)

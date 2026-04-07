@@ -30,6 +30,15 @@
 
 这三步都只在读回同一条治理尾链：它们对账的是已外化 verdict 与剩余 liability，不是倒放事件去重判当前真相。
 
+如果继续把这三步压成最短上游依赖图，也只该再多记三句：
+
+- `product promise readback`
+  - 只读已外化 admission / capability / continuity verdict，不配补签 host truth
+- `reopen qualification`
+  - 只读 stronger signer 留下的 residual liability 与 threshold，不配靠弱投影自行重开
+- `evidence binding`
+  - 只绑定已外化 evidence 与 future-readable receipt，不回放事件重造治理真相
+
 更硬一点说，`risk/` 在目录里的发言权也只该剩三条：
 
 1. `product promise readback`
@@ -67,10 +76,11 @@
 
 - 验收与回退对象：回 [../playbooks/36-治理宿主验收执行手册：governance key、typed ask、decision window、continuation pricing与cleanup剧本](../playbooks/36-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20source%E3%80%81permission%20ledger%E3%80%81decision%20window%E3%80%81continuation%20gate%E4%B8%8Erollback%E5%89%A7%E6%9C%AC.md)
 - liability / reopen 执行链：回 [../playbooks/66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：governance key host consumption card、hard reject order与reopen drill](../playbooks/66-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Ahost%20consumption%20card%E3%80%81hard%20reject%20order%E4%B8%8Ereopen%20drill.md)
+- liability / reopen 的 canonical `repair card`：回 [../playbooks/72-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：repair card、共同reject order与reopen drill](../playbooks/72-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arepair%20card%E3%80%81%E5%85%B1%E5%90%8Creject%20order%E4%B8%8Ereopen%20drill.md)；若你缺的是 host-facing projection dialect，再回 [../playbooks/66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：governance key host consumption card、hard reject order与reopen drill](../playbooks/66-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Ahost%20consumption%20card%E3%80%81hard%20reject%20order%E4%B8%8Ereopen%20drill.md)
 
 ## 继续下潜时
 
-- 只按对象 handoff 继续：还在判治理主键、host truth 或 liability evidence，先回 `09 / philosophy/85 / security/README`；已经进入验收与回退对象，回 [../playbooks/36-治理宿主验收执行手册：governance key、typed ask、decision window、continuation pricing与cleanup剧本](../playbooks/36-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20source%E3%80%81permission%20ledger%E3%80%81decision%20window%E3%80%81continuation%20gate%E4%B8%8Erollback%E5%89%A7%E6%9C%AC.md)；已经进入 liability / reopen drill，回 [../playbooks/66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：governance key host consumption card、hard reject order与reopen drill](../playbooks/66-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Ahost%20consumption%20card%E3%80%81hard%20reject%20order%E4%B8%8Ereopen%20drill.md)。
+- 只按对象 handoff 继续：还在判治理主键、host truth 或 liability evidence，先回 `09 / philosophy/85 / security/README`；已经进入验收与回退对象，回 [../playbooks/36-治理宿主验收执行手册：governance key、typed ask、decision window、continuation pricing与cleanup剧本](../playbooks/36-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20source%E3%80%81permission%20ledger%E3%80%81decision%20window%E3%80%81continuation%20gate%E4%B8%8Erollback%E5%89%A7%E6%9C%AC.md)；已经进入 liability / reopen drill，先回 [../playbooks/72-治理宿主修复稳态纠偏再纠偏改写纠偏精修纠偏精修执行手册：repair card、共同reject order与reopen drill](../playbooks/72-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Arepair%20card%E3%80%81%E5%85%B1%E5%90%8Creject%20order%E4%B8%8Ereopen%20drill.md)，若你缺的是 host-facing projection dialect，再回 [../playbooks/66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：governance key host consumption card、hard reject order与reopen drill](../playbooks/66-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Ahost%20consumption%20card%E3%80%81hard%20reject%20order%E4%B8%8Ereopen%20drill.md)。
 - 只按用户侧样貌下潜编号正文：方法与总判断看 `00-10`，症状/恢复/支持链路看 `11-40`，产品化改进与长期路线看 `41-54`，现实入口与退出语义差看 `55-64`。
 
 ## 这里不回答什么

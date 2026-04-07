@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面.md`、`bluebook/security/README.md`、`bluebook/risk/README.md` 与 `bluebook/playbooks/66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md`，把治理前门的 signer / weak readback / reopen tail crosswalk 再写硬：`10` 现在新增 `strong signer surface / weak readback surface / reopen tail evidence` 三列；`security/README` 现在把 `cleanup verdict` 明确降成前门层可见的 `cleanup stage verdict`；`risk/README` 现在补了 `product promise / reopen / evidence` 的最短上游依赖图，并把 `playbooks/72` 提升为 canonical `repair card`；`playbooks/66` 现在明确只读成 host-facing projection dialect
 - 继续更新 `docs/development/02-证据索引.md`，新增 `Evidence Mode` 横幅，明确当前 `.worktrees/mainloop` 若缺少本地 `claude-code-source-code/` 镜像，则索引中的源码路径只应被读成 archival anchors，而不是“已在本 worktree 直接核验”的 live evidence
 - 继续更新 `bluebook/guides/36-Prompt Host Implementation审读模板：编译真相、稳定字节、合法遗忘与交接闸门.md`、`bluebook/userbook/README.md`、`bluebook/userbook/01-主线使用/02-提问、补上下文与让模型继续工作.md`、`bluebook/userbook/04-专题深潜/08-上下文接入、附件与提示编译专题.md` 与 `bluebook/userbook/05-控制面深挖/README.md`，把 Prompt ABI 的 host/user-facing consumer 继续同表化：`36` 现在把 `witness_chain_ref` 展开成六个显式 ABI 槽位；`userbook` 根前门、主线页、专题页与控制面页现在统一共用 `目标 / 附件 / working set / next step` 到 canonical Prompt ABI 的固定 alias table，不再让不同 consumer 页各自发明 Prompt witness 词表
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把治理 one-order 结论回灌到自校层：`6.23 / 6.46 / 6.55 / 6.58 / 7.5` 现在更明确地把“安全、治理、省 token 与 prompt 稳定性是同一秩序”压回 signer surface、弱读回面、continuation consumer 与 reopen tail-chain 的抽象反问，不再只停在“统一预算器 / 更严拦截 / 压缩文本”这些中层表述
