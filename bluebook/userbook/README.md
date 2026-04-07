@@ -519,5 +519,6 @@
 - remote surface 从 consumer topology 分叉到 foreground runtime、interaction shell、presence ledger、gray runtime 与 behavior bit 的结构边界
 - 桥接审批回到本地之后，如何从用户问题层分诊 closeout、re-evaluation、host sweep 与 persist propagation
 - `can_use_tool` 如何升级成 `requires_action/pending_action` 双轨投影，以及 bridge 为什么只发布裸 blocked bit
+- 同样在等输入时，为什么系统有时只有 waiting bit、有时却能给出更厚的 blocked context
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
