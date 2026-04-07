@@ -135,6 +135,7 @@
 - [131-2026-04-07-remote status table split 拆分记忆.md](./131-2026-04-07-remote%20status%20table%20split%20拆分记忆.md)
 - [132-2026-04-07-front-state consumer split 拆分记忆.md](./132-2026-04-07-front-state%20consumer%20split%20拆分记忆.md)
 - [133-2026-04-07-metadata not consumed split 拆分记忆.md](./133-2026-04-07-metadata%20not%20consumed%20split%20拆分记忆.md)
+- [134-2026-04-07-bridge version split 拆分记忆.md](./134-2026-04-07-bridge%20version%20split%20拆分记忆.md)
 
 用途：
 
