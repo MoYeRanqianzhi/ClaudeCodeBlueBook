@@ -7,22 +7,17 @@
 
 如果你还缺主语、最小顺序或 first reject path，先回 [../README.md](../README.md) 与 `09`。
 
-## 发言权卡
+这里默认只回答 route-only 问题：
 
-- `能合法说`
-  - 只判断 next-hop、route-only page 与 appeal path。
-- `不能改判`
-  - 不重写 canonical formula，不代签目录 `README`、深页正文或 `docs/` 记忆层的结论。
-- `canonical owner`
-  - 主语与最小顺序回 [../README.md](../README.md) 与 `09`；目录边界回各目录 `README`；源码质量证据梯度回 `guides/102`。
-- `申诉路径`
-  - route words 开始代签 truth，退回 `../README -> 09`；目录边界争议回对应目录 `README`；镜像证据 ceiling 争议回 `guides/102`；若争议只是“是否还只该 route trim”，回 `06` 与 `docs/development/00`。
+- 缺主语、最小顺序或 first reject path，回 `../README.md` 与 `09`
+- 缺目录法、speaking rights 或入口升级规则，回 `../../docs/development/00-研究方法.md`
+- 缺源码质量证据 ceiling，回 `guides/102`
 
 ## 三类 route 缺口
 
 - Prompt
   - 缺顶层主语与 `first-reject path`，回 `philosophy/84`
-  - 缺 same-world witness、实现顺序与 `continue qualification`，回 `guides/51`
+  - 缺 Prompt owner 页内部的 same-world next-hop，回 `philosophy/84`
   - 缺“为什么这轮还只该 route trim”，回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md) 与 [../../docs/development/00-研究方法.md](../../docs/development/00-%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95.md)
 - 治理
   - 缺治理首答，回 `../10`
@@ -32,22 +27,6 @@
   - 缺方法入口或 evidence ceiling，回 `09 -> guides/102`
   - 已确认 ceiling，只剩 `sole writer / recovery asset / anti-zombie` 争议，回 `guides/101` 与 `architecture/README`
   - 还在混 runtime-core evidence、operator-governance evidence 与公开镜像缺口，先退回 `06`
-
-## 时间轴争议
-
-- 缺 `continue qualification`，回 Prompt 线
-- 缺 `continuation pricing`，回治理线
-- 缺 `stale-writer eviction / recovery asset non-sovereignty`，回当前真相线
-
-若你还在争 summary、pointer、event replay 或 display transcript 谁说了算，先退回 `09`，不要让 route 句子代替入口判断。
-
-## 先判三件事
-
-- 你缺的是主线宪法、证据层，还是跨目录下一跳。
-- 你缺的是 `formula / order / evidence ceiling / verdict` 哪一类。
-- 你当前是在阅读、失稳前自校、迁移，还是 refinement execution。
-
-如果这三件事答不清，就还没真正进入 `navigation/` 的工作对象。
 
 ## 稳定节点
 
@@ -69,5 +48,5 @@
 ## 维护约定
 
 - `navigation/` 只保留稳定节点与 route gap，不把每条深链重新摊平成首页。
-- 如果一个 route 句子开始代签 truth，或开始把 `security / token / continuity` 写成并列主题，它就已经越位。
-- 如果新的 route 提案还答不上自己缺的是 `formula / order / evidence ceiling / verdict` 哪一类，先退回 `06` 与 `docs/development/00`，不要急着升成目录动作。
+- 如果一个 route 句子开始代签 truth、owner law 或 verdict，它就已经越位。
+- 如果新的 route 提案还需要解释 canonical formula、最小顺序或目录法，就先退回 `../README`、`09` 与 `docs/development/00`，不要急着升成目录动作。

@@ -34,6 +34,9 @@
 - 当前批次继续新增一条 prompt-owner live 记忆：
   - 非 owner 页默认继续禁止出现 `84 / 51`、`84 -> 51`、`84 / guides/51` 这类 Prompt 回指；Prompt 正式 owner 统一只回 `philosophy/84`
   - 非 owner 页若开始把用户动作重新映射成第二套 `*_ref` doctrine，或把 object / witness / qualification 再列成自己的最小顺序，默认优先按“第二 Prompt 前门”处理
+- 当前批次继续新增一条 high-flow route live 记忆：
+  - 根 `README` 与 `navigation/README` 默认继续只保留入口分流与 next-hop；凡再次出现 speaking rights、目录宪法、时间轴裁决或 canonical formula 的摘要版，默认先按 second narrator risk 处理
+  - `userbook/00` 默认继续保留用户动作语言，不在 frontdoor 层重列 `*_ref` 字段映射
 - `bluebook/06-第一性原理与苏格拉底反思.md` 的长期默认 governance-self-audit-alignment language 现已继续写死：
   - `6.23 / 6.46 / 6.55 / 6.58 / 7.5` 默认继续优先反问“是否又把 signer、弱读回面、continuation consumer 与 cleanup 结果词写混”，不再只停在“统一预算器 / 更严拦截 / 压缩文本”这类中层概括
   - 更稳的默认修法顺序继续是：`先删中层结果词 -> 再点名同一秩序里的非对称 -> 最后才回 owner 页`
