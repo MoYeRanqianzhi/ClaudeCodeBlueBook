@@ -152,6 +152,13 @@ Claude Code 的权威控制平面主路径，不在 schema 列表本身，而在
 
 如果继续往外看，不同宿主与不同消费者拿到的都只是子集。
 
+在公开镜像语境里，这一层也应先带着三条 badge 读：
+
+- `evidence level = consumer subset`
+- `no global source-quality verdict`
+- `surface = candidate unless sole writer / writeback / freshness visible`
+- 本页只给 `consumer subset / status projection` 分级；底层 `current-truth surface` 仍按 `candidate` 处理，除非 sole writer / writeback / freshness 已可见。
+
 ### 4.1 bridge 是中等宽度子集
 
 bridge 会先在 `handleIngressMessage(...)` 里把：
@@ -211,6 +218,8 @@ Claude Code 选择的是第三条路：
 1. 先统一协议全集。
 2. 再统一权威主路径。
 3. 最后允许不同消费者诚实接入子集。
+
+凡改宿主子集宽度、subtype 支持面或 status projection，先按 `guides/102` 记一行 `change-risk record`，至少写出 `<surface> / replay obligation / gap note>`。
 
 这种设计的收益有三点：
 

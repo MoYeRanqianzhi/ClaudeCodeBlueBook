@@ -9,6 +9,7 @@
 如果只先记源码质量判断在架构层的一句话，也只记这句：
 
 - 架构层不负责再判梯子，而负责把 `authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer` 落成正式对象、状态机与 choke point，并用它们保护 `one writable present`。
+- 这里首先在分配 present 的写权与回写责任，而不是描述结构形状。
 
 这里还要再多记一句：
 
@@ -87,5 +88,6 @@
 - README 只描述运行时平面、最短证据入口与对象分流，未单列文档仍属于对应平面的延伸。
 - README 只负责运行时对象、结构边界与推荐起点，不重复 `05 / 15 / 41` 的高阶判据，也不替 `api/` 宣布 contract truth。
 - README 应优先暴露 later maintainer 能直接据此提出反对的对象与 seams，而不是先暴露目录体感或功能库存。
+- 凡借 `63 / 84` 写出结构结论，默认还应同时补回 `../guides/102` 的 `change-risk record` next hop，说明改这里前必须先回放什么、保留什么 gap note。
 - 需要字段、接口与宿主契约时，回到 [../api/README.md](../api/README.md)。
 - 需要跨专题反查时，回到 [../navigation/README.md](../navigation/README.md)。

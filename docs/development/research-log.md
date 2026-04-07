@@ -2,6 +2,34 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的桥接结论：`07` 与 `userbook/05` 现在更明确继续被固定成双向桥。前者只保留 shared runtime correctness / continuity budget 的底层 why，并把用户动作翻译 next-hop 固定回 `userbook/05`；后者则继续只保留三问到三项过关条件的 crosswalk，底层 why 固定回 `07`。
+- 本轮新的 `03` 结论：治理 why 现在也被进一步压成和 Prompt why 同一模板，不再先用“本节不重列治理定价链”再补坏解，而是先钉死“只保留一句 why”，再给固定 owner 顺序。
+- 本轮新的 `03` 结论：Prompt why 与治理 why 的回链句法现在也更明确继续被统一。Prompt 线统一只回 `philosophy/84`，自校层才回 `06`；治理线统一只回 `10 -> 85 -> 61 -> security/risk/playbooks`，不再停在“治理 owner 页”这种松散口径。
+- 本轮新的 `03` 结论：源码质量 why 的回链句法现在更明确继续统一成 `07 -> 102 -> 87 -> architecture/README`，不再在不同小节残留 `07 -> 87` 或 `architecture only` 这类变体。
+- 本轮新的源码质量顺序结论：`03` 现在更明确不该在多个设计原则里各自补质量 verdict；更稳的固定顺序已经压实为 `07 -> 102 -> 87 -> architecture/README`。同时 `07` 也把公开镜像源码质量链补成了完整的 8 段顺序，把 `change-risk record` 从附加动作提升为 owner 链末端。
+- 本轮新的 continuity 总法结论：`07` 现在更明确把 `continue / resume` 收成 shared continue verdict，而不是第五种资产；真正决定它的，仍是 `continue qualification + pricing-right / truth-surface re-attestation + sole-writer freshness` 的联合通过。
+- 本轮新的 userbook/05 结论：控制面深挖页现在更明确给出三句用户问法的正向过关条件，不再只靠 first reject path 侧面防守；用户现在可以直接把“同一件工作 / 治理裁决 / 旧状态污染”分别对回 `continue qualification`、`pricing-right + truth-surface attestation`、`sole writer + freshness`。
+- 本轮新的 subset page 结论：`architecture/14 / 59` 现在更明确不只要带 `consumer subset / candidate` badge，还要把 `change-risk record` next hop 写成本页硬动作；否则 later maintainer 仍知道要保守，却不知道改动前该回放什么。
+- 本轮新的 `guides/102` 结论：subset/candidate 页现在更明确被要求同时落下降格 stamp 和具体交接动作；“这里只是 subset”若没有本页 handoff，就仍只是态度，不是制度。
+- 本轮新的源码质量 owner 结论：`03` 现在更明确只保留源码质量 why，不再在多个设计原则里各自重开轻量 quality verdict；若要继续谈 shared runtime correctness / continuity budget、later maintainer veto、option value 或变更前协议，统一顺序继续回 `07 -> 102 -> 87 -> architecture/README`。
+- 本轮新的公开镜像 ladder 结论：`07` 现在更明确把源码质量前门顺序补全成 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline -> change-risk record`，把结构 why、对象边界与变更前协议第一次压成同一条可复用句。
+- 本轮新的 Prompt 结论：`03 / 07` 现在更明确把 `lawful forgetting / continuation qualification` 收回 same-world compiler 的时间轴 verdict；凡 consumer path 还要重谈 `world-definition source`，都应直接按 `anti-renegotiation` 失败拒收。
+- 本轮新的 continuity 结论：`07` 现在开始把 continuity 压成 shared runtime correctness / continuity budget，并用 `asset -> survives what -> requires re-attestation -> veto owner` 四列把“哪些资产可续带、哪些必须重认证”写成可复核矩阵。
+- 本轮新的 source-quality subset 结论：`architecture/14 / 59` 现在更明确把自己标成 `consumer subset / candidate` 页，不代签全局源码质量 verdict；这让 subset 说明第一次拥有了明确 speaking-rights stamp，而不只是靠正文措辞收敛。
+- 本轮新的 Prompt next-hop 结论：`philosophy/README` 与 `navigation/README` 现在更明确把 Prompt 的继承、续写与 continue qualification 收回 `84 -> 81`，不再公开把 `51` 发成结果词页的 builder-facing 二跳。
+- 本轮新的 user-facing packet 结论：`userbook/05/README` 的 `目标 / 附件 / working set / next step` 现在更明确只是一张 user-side reject aid，而不是 `world-definition source` 或 `continue qualification` 的代签包。
+- 本轮新的 mechanism-owner 结论：`navigation/38` 现在更明确只做 mechanism owner route，不代签全局源码质量 verdict；`architecture/README` 也开始把结构结论直接挂回 `guides/102` 的 `change-risk record`，把对象图和 later maintainer 的变更前协议接上了。
+- 本轮新的 navigation 结论：`navigation/05 / 15 / 41` 这组高流量导航页剩下的最贵 Prompt residual，不再是公式没写，而是仍会公开分发 `guides/51` 这个 builder-facing 二跳。更稳的默认修法是：导航页统一只回 `philosophy/84`；实现顺序只留在 owner chain 内部。
+- 本轮新的 userbook 控制面结论：`userbook/05` 线真正需要继续写硬的，不是更多控制面对象，而是 `weak readback surface` 与 `continuation consumer` 的非主权边界。`/status / /doctor / /usage` 若被抬成 signer，projection 就会长成 shadow compiler / shadow pricing surface。
+- 本轮新的 continuity 结论：`Compact / Memory / Resume` 现在更明确应被读成 continuity law consumer，而不是 continuation qualification signer；时间不是免费继续的 UX 背景，而是需要续租的扩张面。
+- 本轮新的 source-quality 结论：`guides/102` 的 `change-risk record` 现在更明确该被读成 later maintainer 变更前的最小协议，而不是研究附表；写不出这张表，通常就说明 current-truth surface 仍没被真正看清。
+- 本轮新的 Prompt route 结论：`09` 这类 high-flow 总图页剩下的最贵 residual，已经不是对象没列全，而是还会公开泄漏 `51`。更稳的默认修法是：总图页统一只回 `philosophy/84`；builder-facing implement / audit 顺序只留在 `84` owner chain 内部。
+- 本轮新的 Prompt first-principles 结论：`84` 与 `51` 现在更明确把 Prompt 魔力写成四层 why：`裁决权外化`、`inheritance law`、`行动因果作者链保护` 与 `time lease renewal`。对应地，`51` 的六步顺序也更明确不是模块目录，而是 `reject cost` 排序。
+- 本轮新的 governance/security-token 结论：弱读回面之所以不能代签，最短 why 现在被进一步压成 `consumer != compiler` 与 `no verdict seam / rollback liability`；一旦让 readback surface 自证主权，`externalize / evict` 就会反转成长期证明成本。
+- 本轮新的 source-quality 结论：源码先进性现在更明确不只该写成 `evidence governance`，还应写成 `present write right + later maintainer veto right + future change option value`。如果结论还落不到 `writeback seam / retreat layer / change-risk record`，它就更像研究方法词，不像工程先进性。
+- 本轮新的苏格拉底结论：`06` 现在把“有没有把时间漂移误当成免费继续”固定成常设反问，这让 Prompt 的 `continue qualification` 与治理的 `authority lease` 第一次在自校层合成同一条时间续租问题。
+- 本轮新的 Prompt live-route 结论：`03` 这种 why 页若继续把 Prompt route 写成 `84 / guides/51 / 06`，later maintainer 仍会先学到双 owner 而不是单一 owner。更稳的默认修法是：高流量 why/self-audit 页统一只回 `philosophy/84`；`51` 只继续留在 owner chain 内部处理 builder-facing same-world implement / audit。
+- 本轮后续单点收尾也已继续推进到中段 why：`03` 里最后两条仍把 `message lineage / handoff projection / continuation assets` 直接送去 `guides/51` 的句子，现已统一压回 `philosophy/84`，避免 mid-page why 又重新泄露第二条 Prompt 公开 route。
 - 本轮 prompt-hard-gate-cleanup 深化动作：已继续更新 `guides/36`、`userbook/00` 与 `long-term-memory`。新的结论是：Prompt 线当前最贵的 residual 已不再是“有没有 canonical ABI”，而是 host audit 与 user-facing shorthand 还会不会把 canonical verdict 名与 alias table 写散。更稳的默认修法是：`36` 只认六个 ABI ref + `continue_qualification_verdict` 的硬闸门，`userbook/00` 只认 `目标 / 附件 / working set / next step` 四项 Prompt alias，不再把治理 `decision window` 偷塞回 Prompt witness shorthand。
 - 本轮 governance-crosswalk-split 深化动作：已继续更新 `10`、`userbook/README`、`philosophy/README` 与 `00-导读`。新的结论是：治理前门真正还会写浅的，不是 canonical chain 本身，而是 `weak readback`、`continuation consumer` 与 `reopen tail evidence` 容易重新糊成一团。更稳的默认修法是：`10` 固定四格 `strong signer surface / weak readback surface / continuation consumer / reopen tail evidence`；`userbook/README` 与 `philosophy/README` 的 why 路径固定回 `10 -> 85 -> 61`，机制细节只再回 `security/README`。
 - 本轮新的 evidence-mode 结论：`philosophy/61` 与 `85` 若继续在缺镜像 worktree 中列源码锚点，就必须在页首显式声明这些只是 archival anchors，而不是 live mirror proof；否则 why 页也会悄悄越过 `02-证据索引` 的 evidence-mode owner。

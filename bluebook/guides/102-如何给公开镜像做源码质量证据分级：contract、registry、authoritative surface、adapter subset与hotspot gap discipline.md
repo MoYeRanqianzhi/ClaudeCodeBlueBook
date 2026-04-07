@@ -33,6 +33,7 @@
 
 - 文件名保留旧词只是为了兼容检索；正文判断一律只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`。
 - 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航、跳转关系与其他编排说明都不参与源码质量结论。
+- 凡正文把对象写成 `consumer subset` 或 `current-truth surface candidate`，必须同时把降格 stamp 与具体 next hop 一起落页；只写“这里要保守”而不写交接动作，默认按证据纪律未落地处理。
 - 若 sole writer、writeback seam 与 freshness gate 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
 
 这条线最短的 reject trio 也只认：
@@ -331,6 +332,7 @@ gap discipline 的价值不是“保守一点”，而是：
 当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一份可交接的 `change-risk record`。
 
 `guides/` 在这里只负责 `change-risk record` 的字段与 gap note 写法，不替其他目录代写具体危险面。
+这份 `change-risk record` 不是研究附表，而是 later maintainer 变更前的最小协议；如果改动前还写不出这张表，就还不配宣称自己已经看清 current-truth surface。
 
 更稳的记录模板至少应包含下面几列：
 

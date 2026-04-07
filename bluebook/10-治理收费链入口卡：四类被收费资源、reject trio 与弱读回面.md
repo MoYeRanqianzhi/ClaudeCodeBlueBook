@@ -75,6 +75,9 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
 - 它们不能替 `governance key / externalized truth chain / decision window / continuation pricing` 说话。
 - 它们也不能把 cleanup 结果、continuation consumer 或用户侧 `product promise readback` 误写成 signer surface；cleanup 之后真正还能留下的，只是 residual liability 与 future-readable evidence。
 
+它们之所以永远不配代签，不是因为“信息不够多”，而是因为一旦代签，observability 就会从 consumer 长成第二个 current-world compiler / host-truth source。
+更硬一点说，弱读回面不持有 `verdict seam`，也不承担 rollback / residual liability；允许它们代签，等于让权力脱离债务。cleanup 之后留下的是 liability / evidence，不是可再次收费的 authority handle。
+
 如果把这条非对称再压成最短 crosswalk，也只该剩四列：
 
 1. `strong signer surface`

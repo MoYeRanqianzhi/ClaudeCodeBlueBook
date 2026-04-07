@@ -8,6 +8,71 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 07-userbook05-fixed-bridge live 记忆：
+  - `07` 默认继续把用户动作翻译 next-hop 固定回 `userbook/05`
+  - `userbook/05` 默认继续把 shared runtime correctness / continuity budget 的底层 why 固定回 `07`
+- 当前批次继续新增一条 03-governance-why-template live 记忆：
+  - `03` 默认继续把治理 why 压成与 Prompt why 同一模板：`只保留一句 why -> 固定 owner 顺序 -> 不再补对象卡`
+- 当前批次继续新增一条 03-prompt-governance-wording live 记忆：
+  - `03` 默认继续把 Prompt why 的回链句法统一成 `philosophy/84`，仅在明确自校语境下再回 `06`
+  - `03` 默认继续把治理 why 的回链句法统一成 `10 -> philosophy/85 -> philosophy/61 -> security/risk/playbooks`，不再留下“治理 owner 页”这类松散写法
+- 当前批次继续新增一条 03-source-quality-wording live 记忆：
+  - `03` 默认继续把源码质量 why 的回链句法统一成 `07 -> guides/102 -> philosophy/87 -> architecture/README`，不再在不同小节保留 `07 -> 87`、`architecture only` 这类变体
+- 当前批次继续新增一条 source-quality-owner-sequence live 记忆：
+  - `03` 默认继续不在多个设计原则里各自补源码质量轻量 verdict；若继续追问 why、continuity budget、evidence ladder、quality threshold 与对象/seam，统一顺序固定成 `07 -> guides/102 -> philosophy/87 -> architecture/README`
+  - `07` 默认继续把公开镜像源码质量线写成完整的 8 段顺序：`public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline -> change-risk record`
+- 当前批次继续新增一条 continue-verdict-law live 记忆：
+  - `07` 默认继续把 `continue / resume` 写成 shared continue verdict，不把它们写成第五种资产或第五条母线
+  - 更稳的默认修法顺序继续是：`先点明 runtime subject / seam -> 再点明 re-attestation -> 最后点明 shared continue verdict`
+- 当前批次继续新增一条 userbook-05-pass-crosswalk live 记忆：
+  - `userbook/05/README` 默认继续把三句用户问法对回三项最小过关条件：`continue qualification`、`pricing-right + truth-surface attestation`、`sole writer + freshness`
+- 当前批次继续新增一条 subset-page-handoff live 记忆：
+  - `architecture/14 / 59` 这类 subset/candidate 页默认继续不只带 badge，还要页内落下 `change-risk record` next hop，至少点明 `<surface> / replay obligation / gap note>`
+- 当前批次继续新增一条 guides-102-stamp-rule live 记忆：
+  - `guides/102` 默认继续强制 subset/candidate 页把降格 stamp 与具体交接动作一起落页；只声明“这里要保守”不再算完成证据纪律
+- 当前批次继续新增一条 source-quality-owner-collapse live 记忆：
+  - `03` 默认继续只保留源码质量 why，不再在不同小节各自重开 quality verdict；凡涉及 shared runtime correctness / continuity budget，统一回 `07`
+  - `03` 若继续谈 later maintainer veto、option value、变更前协议或结构边界，默认路由顺序继续固定成 `07 -> guides/102 -> philosophy/87 -> architecture/README`
+- 当前批次继续新增一条 public-mirror-quality-ladder live 记忆：
+  - `07` 默认继续把公开镜像源码质量顺序写成 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline -> change-risk record`
+  - 这条线默认继续要求结构 why、对象边界与变更前协议一并出现；只写其中一段，默认按“不足以构成稳定源码质量读法”处理
+- 当前批次继续新增一条 prompt-anti-renegotiation live 记忆：
+  - `03 / 07` 默认继续把 `lawful forgetting / continuation qualification` 写成 same-world compiler 的时间轴 verdict，而不是第二条 Prompt 主语
+  - 凡 consumer path 仍要重谈 `world-definition source`，默认按 `anti-renegotiation` 失败处理
+- 当前批次继续新增一条 continuity-budget-matrix live 记忆：
+  - `07` 默认继续用 `asset -> survives what -> requires re-attestation -> veto owner` 这四列来压 shared runtime correctness / continuity budget
+  - 更稳的默认修法顺序继续是：`先点明哪些资产可续带 -> 再点明哪些必须重认证 -> 最后点明谁拥有 veto`
+- 当前批次继续新增一条 consumer-subset-badge live 记忆：
+  - `architecture/14 / 59` 这类 subset 页默认继续显式带 `evidence level = consumer subset / no global source-quality verdict / surface = candidate unless sole writer/writeback/freshness visible`
+- 当前批次继续新增一条 prompt-owner-next-hop live 记忆：
+  - `philosophy/README` 与 `navigation/README` 默认继续把 Prompt 的继承、续写、continue qualification 与 lease legality 收回 `84 -> 81`，不再把 `51` 公开发成结果词页或 builder-facing 二跳
+- 当前批次继续新增一条 user-facing-packet-boundary live 记忆：
+  - `userbook/05/README` 的 `目标 / 附件 / working set / next step` packet 默认继续只读成 user-side reject aid，不签 `world-definition source`，也不签 `continue qualification`
+- 当前批次继续新增一条 mechanism-owner-boundary live 记忆：
+  - `navigation/38` 默认继续只路由 mechanism owner，不代签全局 source-quality verdict；`architecture/README` 默认继续把结构结论 next-hop 挂回 `guides/102` 的 `change-risk record`
+- 当前批次继续新增一条 navigation-prompt-route-trim live 记忆：
+  - `navigation/05 / 15 / 41` 这组高流量导航页默认继续只把 Prompt 公开 owner route 收回 `philosophy/84`；builder-facing implement / audit 不再由导航页公开分发到 `guides/51`
+  - 导航页若再次同时发放 `first-reject order` 与 builder-facing next hop，默认按 Prompt owner singularity 残留处理
+- 当前批次继续新增一条 userbook-control-surface live 记忆：
+  - `userbook/05/README` 与 `05-06` 默认继续把 `/status / /doctor / /usage` 写成 weak readback surface，把 `Compact / Resume / Memory` 写成 continuation consumer
+  - user-facing 控制面页若再次直接拿 projection 或 continuity action 代签 same-world、治理真相或继续资格，默认按 `consumer 写成 compiler` 处理
+- 当前批次继续新增一条 continuity-time-lease live 记忆：
+  - `userbook/02/01/05` 默认继续把 `Compact / Memory / Resume` 写成 continuity law 的 consumer，不把它们写成 continuation qualification signer
+  - 更稳的默认修法顺序继续是：`先删恢复便利口气 -> 再点明 time lease renewal -> 最后补 required assets / stable witness`
+- 当前批次继续新增一条 source-quality-record live 记忆：
+  - `guides/102` 的 `change-risk record` 默认继续只读成 later maintainer 变更前的最小协议，不再被读成研究附表或写作附件
+- 当前批次继续新增一条 prompt-first-principles live 记忆：
+  - `09` 这类 high-flow 总图页默认继续只把 Prompt owner route 收回 `philosophy/84`；凡再次出现 `84 / guides/51`、`84 -> 51` 或 mid-page 直接点名 `51` 的 builder-facing 顺序，默认按 public route leakage 处理
+  - `84` 默认继续把 Prompt 编译链写成 `裁决权外化`；`51` 默认继续把 `stable boundary` 写成 `inheritance law`、把 `protocol rewrite` 写成 `行动因果作者链保护`、把 `continue qualification` 写成 `time lease renewal`
+  - `51` 的 six-step card 默认继续先按 `reject cost` 排序理解，不按模块名、缓存术语或实现目录理解
+- 当前批次继续新增一条 governance-weak-surface live 记忆：
+  - `10 / security / 61` 默认继续把弱读回面 why 写成 `consumer != compiler` 与 `no verdict seam / no rollback liability`
+  - 弱读回面若被写成可代签，默认先按 `observability 偷权 -> current truth 分叉 -> externalize / evict 反转成证明成本` 处理
+- 当前批次继续新增一条 source-quality-rights live 记忆：
+  - `87 / architecture` 默认继续把源码先进性压成 `present write right + later maintainer local veto + future change option value`，不再只写 evidence governance、目录美学或“更好读”
+  - later maintainer 结论若还落不到 `first retreat layer / writeback seam / change-risk record`，默认按“研究方法词，不是工程先进性”处理
+- 当前批次继续新增一条 socratic-time-lease live 记忆：
+  - `06` 的苏格拉底自校默认继续把“时间漂移是否被误读成免费继续”固定成常设反问；凡 continue 解释里不再追问续租资格，默认按 Prompt / governance 联合失稳处理
 - `bluebook/userbook/README` 与 `bluebook/userbook/00 / 01 / 02 / 03 / 04 / 05` 入口页的长期默认 userbook-owner-collapse language 现已继续写死：
   - `userbook/README` 默认继续作为 userbook 唯一 first-answer frontdoor，保留用户侧问题分型、最小顺序与二跳
   - `00-阅读路径`、`01-主线使用/README`、`02-能力地图/README`、`03-参考索引/README`、`04-专题深潜/README` 与 `05-控制面深挖/README` 默认继续只承接根前门已判清的 owner law，不再重复 speaking-rights、appeal-chain 或 first-answer order
@@ -117,18 +182,20 @@
   - 更稳的默认修法顺序继续是：`先改标题成 why / self-audit 句 -> 再删正文里具名 owner nouns -> 最后补一句 owner route`
 - 最新根仓同步记忆（2026-04-08，本轮后续批次）已被后续检查修正为健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均成功，根仓状态回到 `main...origin/main`；所有更早的阻塞记忆只应被读成时间点快照。
 - `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 mid-page-why-bridge / self-audit wording 现已继续写死：
-  - `03` 中段若再次出现 Prompt truth plane、lawful forgetting、audit order、evidence gradient、合法复杂度中心、future maintainer、重构资本或五步 ladder，默认按越位候选处理；更稳的默认修法是只保留 why 句，把 Prompt 统一改路由回 `84 / 51 / 06`，把源码质量统一改路由回 `102 / 87 / architecture`
-  - `06` 的 Prompt 深段默认继续只保留“我有没有越位复述 `84 / 51`”这类自校反问，不再列 object / witness / qualification nouns
+  - `03` 中段若再次出现 Prompt truth plane、lawful forgetting、audit order、evidence gradient、合法复杂度中心、future maintainer、重构资本或五步 ladder，默认按越位候选处理；更稳的默认修法是只保留 why 句，把 Prompt 统一改路由回 `84 / 06`，把源码质量统一改路由回 `102 / 87 / architecture`
+  - `06` 的 Prompt 深段默认继续只保留“我有没有越位复述 `84` owner 术语”这类自校反问，不再列 object / witness / qualification nouns
+- 当前批次继续新增一条 mid-page Prompt live 记忆：
+  - `03` 这类 why 页若继续把 `message lineage`、handoff projection 或 continuation 资产载体直接送去 `guides/51`，默认也按 live route 残余处理；高流量与 mid-page route 统一只回 `philosophy/84`
 - 并行 agent 吸收后的长期默认 mid-page-owner-audit rule 现已继续写死：
   - 高流量前门之外的 why/self-audit 长文若开始自己发 full ladder、object/seam 清单或 quality verdict bundle，也默认按越位候选处理
-  - 更稳的默认修法顺序继续是：`删 bundle -> 留 why / self-audit 句 -> 把 owner 还给 84 / 51 / 102 / 87 / architecture`
+  - 更稳的默认修法顺序继续是：`删 bundle -> 留 why / self-audit 句 -> 把 owner 还给 84 / 102 / 87 / architecture`
 - `bluebook/README`、`bluebook/philosophy/README`、`bluebook/userbook/README`、`bluebook/risk/README`、`bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 frontdoor-route-only / why-only / self-audit-only language 现已继续写死：
   - 根 `README` 默认继续把第一次进入写成 `09 -> 84 / 10 / 102`；Prompt / 治理 / 当前真相三线只保留“先回 owner，再回 why / self-audit”的 route，不再自留 canonical chain、failure ladder、witness heuristic 或治理入口卡
-  - `philosophy/README` 默认继续把 Prompt 压成 `84 -> 51` 的最短 first-hop，把源码质量压成 `102 -> 86/87 -> architecture` 的 why-route，不再另立 `future maintainer` 并行前门，也不再在 README 保留 Prompt 下游分流库存
+  - `philosophy/README` 默认继续把 Prompt 压成单一 `84` first-hop，把源码质量压成 `102 -> 86/87 -> architecture` 的 why-route，不再另立 `future maintainer` 并行前门，也不再在 README 保留 Prompt 下游分流库存
   - `userbook/README` 默认继续只保留用户动作、问题分型与二跳；治理速记与 why 统一回 `10 -> philosophy/85 -> philosophy/61`，机制细节才继续回 `security/README`
   - `risk/README` 默认继续只保留 `product promise readback / reopen qualification / evidence binding` 这组三个用户侧对象；任何机制顺序、signer 标准、reopen 成立条件都默认改路由回 `10 / security / playbooks`
   - `03` 默认继续只保留 why；Prompt 线只保留一个苏格拉底问题，源码质量线只保留“为什么不能先看目录美学”这类 why 句，不再出现 full ladder、object/seam 清单或 `87` 的 quality verdict bundle
-  - `06` 默认继续只保留总控自校；Prompt 线默认继续只问“我有没有越位复述 `84 / 51`”，不再自带 Prompt 最小拒错顺序
+  - `06` 默认继续只保留总控自校；Prompt 线默认继续只问“我有没有越位复述 `84` owner 术语”，不再自带 Prompt 最小拒错顺序
 - 并行 agent 吸收后的长期默认 frontdoor-owner-audit rule 现已继续写死：
   - 高流量前门若再次出现 canonical chain、witness order、weak-readback inventory、signer/reopen 机制口径、full ladder 或 object/seam 清单，默认按越位候选处理
   - 更稳的默认修法顺序继续是：`删具体机制名词 -> 缩成 route 句 -> 把 owner 还给 84 / 51 / 10 / security / risk / 102 / 87 / architecture`
@@ -229,14 +296,14 @@
 - `bluebook/README` 的长期默认 prompt-root-route-thinning language 现已继续写死：
   - 根入口默认继续只保留 `same-world compiler` 这句 Prompt hook，不再第二次重列 Prompt formula、witness、counterfeit 与 reject signal
   - 顶层判断与 `first-reject path` 默认继续回 `philosophy/84`
-  - same-world witness、实现顺序与 `continue qualification` 默认继续回 `guides/51`
+  - same-world witness、实现顺序与 `continue qualification` 默认继续留在 `84` owner chain 内部处理，不在高流量前门另立公开 route
 - `bluebook/architecture/20` 与 `bluebook/architecture/33` 的长期默认 source-quality-aura-demotion language 现已继续写死：
   - 两页默认继续不从“先进感 / 高级感”起题，而先问公开证据能否证明 current-truth protection
   - `20` 默认继续把 `contract / runtime kernel / cache boundary / recovery semantics` 写成结构质量入口，而不是工程气质入口
   - `33` 默认继续把公开镜像能证明的东西收回结构质量与 present-truth discipline，不把它夸大成完整闭环已证实
 - `bluebook/03` 与 `bluebook/09` 的长期默认 prompt-constitutional-demotion language 现已继续写死：
   - `03` 默认继续只保留 `same-world compiler` 这句制度哲学 hook，不再第二次重列 Prompt `frontdoor order / canonical witness order / reject trio`
-  - `09` 默认继续只保留三张图宪法层的 Prompt 总钩子；更细的 `frontdoor order / canonical witness order / implementation order` 都继续回 `84 / guides/51`
+  - `09` 默认继续只保留三张图宪法层的 Prompt 总钩子；更细的 `frontdoor order / canonical witness order / implementation order` 都继续留在 `84` owner chain 内部处理
   - `09` 默认继续不在总论页库存化 Prompt object list，只承认 compile inputs 与 verify witnesses 两类对象必须同时存在
 - `bluebook/philosophy/README` 的长期默认 source-quality-frontdoor-singularity language 现已继续写死：
   - 源码质量线默认继续只认 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
