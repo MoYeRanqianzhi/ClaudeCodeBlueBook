@@ -5,10 +5,10 @@
 如果把蓝皮书入口再压成最短公式，只剩三条：
 
 1. Prompt
-   - Prompt 的首答来源统一回 `philosophy/84`；根前门这里只保留 `same-world compiler` 这句二跳前 hook，不在这里另起第二套 Prompt 总法。
+   - Prompt 的首答来源统一回 `philosophy/84`；根入口这里只保留 `same-world compiler` 这句二跳前 hook，不在这里另起第二套 Prompt 总法。
 2. 治理
    - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
-   - 任何 user-facing bucket 都只是这条收费链的读回助记，不是治理前门里的第二套主题
+   - 任何 user-facing bucket 都只是这条收费链的读回助记，不是治理入口里的第二套主题
 3. 当前真相保护
    - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
@@ -24,22 +24,22 @@
 
 如果 later maintainer 第一次进蓝皮书时还看不见这三条，目录结构就还在迫使他先学对象层总结，再自己回压成第一性原理。
 
-前门还应先记住一条 `public-evidence ceiling`：
+入口还应先记住一条 `public-evidence ceiling`：
 
 - 公开证据只能先签它已公开承诺的 contract、witness、writeback seam 与治理工件；它不能替闭源 runtime-core 缺口脑补 certainty。
 - 后续凡是把 `runtime-core evidence`、`operator-governance evidence` 与 UI 投影混写成同一层真相，都应先按证据上限降格。
 
-如果只先记 Prompt 前门的一句话，也只记这句：
+如果只先记 Prompt 入口的一句话，也只记这句：
 
 - Prompt 的效力不在措辞，而在世界先被合法编译进模型；顶层判断与 `first-reject path` 统一回 `philosophy/84`，same-world witness、实现顺序与 `continue qualification` 统一回 `guides/51`。
 
-如果只先记治理前门的一句话，也只记这句：
+如果只先记治理入口的一句话，也只记这句：
 
 - 治理不是更会拦截，而是先固定 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，再让安全、省 Token 与恢复只读这条收费链在不同资产上的外观。
 
 如果继续把入口压成 later maintainer 能直接拿来排查的最小顺序，它还应再暴露三行：
 
-1. Prompt frontdoor order
+1. Prompt 入口顺序
    - `same-world compiler`
    - 根入口这里不再第二次重列 Prompt formula、witness 与 counterfeit；顶层判断与 `first-reject path` 回 `philosophy/84`，same-world witness、实现顺序与 `continue qualification` 回 `guides/51`。
 2. governance failure order
@@ -48,7 +48,7 @@
 3. current-truth reject order
    - `contract mismatch -> registry drift -> current-truth split -> stale-writer eviction -> mirror-gap demotion`
 
-前门如果只给公式，不给这三组顺序，later maintainer 仍要下潜到深页后才拿得到真正的排查起点；这说明入口层还没有完成从“同词化”到“同序化”的升级。
+入口如果只给公式，不给这三组顺序，later maintainer 仍要下潜到深页后才拿得到真正的排查起点；这说明入口层还没有完成从“同词化”到“同序化”的升级。
 
 根 README 的职责只有三层：先定题，再定最小顺序，最后才决定要不要跨目录跳转；它不再负责把整套深链重新摊平。
 更硬一点说，目录优化也不是再补一个更长入口，而是先减少“第一次回答同一问题”的入口数，再把 `speaking rights / appeal chain` 固定住。

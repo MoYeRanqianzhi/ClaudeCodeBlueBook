@@ -1,11 +1,11 @@
-# 结构 Rollout样例：从第二真相到权威面与反zombie结构的灰度记录
+# 结构 Rollout样例：从第二真相到 current-truth surface 与反zombie结构的灰度记录
 
 这一章不再给结构迁移工单，而是给一份完整 rollout 样例。
 
 它主要回答五个问题：
 
-1. 一套第二真相 / 伪模块化系统如何渐进迁到 authoritative surface + anti-zombie 结构。
-2. rollout 期间该如何记录权威面切换、transport shell 收口和 recovery asset 建账的真实证据。
+1. 一套第二真相 / 伪模块化系统如何渐进迁到 `current-truth surface -> current-truth writeback -> freshness -> anti-zombie -> handoff` 结构。
+2. rollout 期间该如何记录 current-truth surface 切换、writeback 收口、transport shell 收口和 recovery asset 建账的真实证据。
 3. 怎样判断结构升级是在减少说谎，而不是只在改善目录表面。
 4. 怎样定义 stale-state、resume、reconnect 与 adopt 的灰度指标和回退条件。
 5. 怎样用苏格拉底式追问避免把 rollout 样例写成“漂亮重构故事”。
@@ -18,7 +18,7 @@
 2. transport 差异扩散到业务层。
 3. 恢复仍主要靠重放或重新猜。
 4. finally、旧 snapshot、旧 append 仍可能复活旧对象。
-5. 新维护者看不出哪里是权威面，哪里最危险。
+5. 新维护者看不出哪里是 current-truth surface、哪里最危险。
 
 ## 1. 目标状态
 
@@ -28,12 +28,13 @@
 
 而是：
 
-1. 关键状态各有唯一 authoritative surface。
-2. 第二真相收回投影层。
+1. 关键状态各有唯一 `current-truth surface`。
+2. 第二真相先收回唯一 `current-truth writeback`，再下沉为投影层。
 3. transport 差异被关进 shell。
 4. recovery asset 已正式列账。
 5. stale write 被 generation / fresh merge / stale drop 限制。
-6. 命名、注释和 seam 让未来维护者能沿结构提出正确质疑。
+6. handoff 交付同一条结构证据链。
+7. 命名、注释和 seam 让未来维护者能沿结构提出正确质疑。
 
 ## 2. 最小结构 diff 样例
 
@@ -49,7 +50,7 @@ finally -> 以旧 snapshot 做 cleanup
 ### 改写后
 
 ```text
-authoritative session state -> 唯一写入口
+current-truth session state -> 唯一 writeback 入口
 UI / host / recovery -> 只消费投影
 resume / reconnect -> 依赖 pointer + snapshot + replacement log
 async cleanup -> 先过 generation / fresh-state merge / stale drop
@@ -87,30 +88,30 @@ async cleanup -> 先过 generation / fresh-state merge / stale drop
 
 - 无。只盘点，不切换。
 
-### Phase 1：建 authoritative surface，先双写
+### Phase 1：建 current-truth surface，先双写
 
 动作：
 
-1. 为 mode、state、metadata、pending action 建统一写入口。
+1. 为 mode、state、metadata、pending action 建统一 `current-truth surface`。
 2. 旧写路径暂保留，但只做比对，不再新增散写逻辑。
 
 观测指标：
 
-- 新旧权威面对账差异
+- 新旧 current-truth surface 对账差异
 - UI / host 与 current truth 偏差率
 - worker_status / metadata 一致性
 
 回退条件：
 
-- 新旧权威面对账出现不可解释分歧。
+- 新旧 current-truth surface 对账出现不可解释分歧。
 - 统一写入口引入大面积 current truth 丢失。
 
-### Phase 2：收第二真相，改读投影
+### Phase 2：收 current-truth writeback，改读投影
 
 动作：
 
 1. UI、宿主、搜索、恢复路径改为只读投影。
-2. 旧路径不再顺手维护状态。
+2. 旧路径不再顺手维护状态，所有主状态改写统一进入 `current-truth writeback`。
 
 观测指标：
 
@@ -159,13 +160,14 @@ async cleanup -> 先过 generation / fresh-state merge / stale drop
 - 恢复成功率下降。
 - 恢复后 current truth 明显错误。
 
-### Phase 5：接 fresh-state merge 与 anti-zombie
+### Phase 5：接 fresh-state merge、anti-zombie 与 handoff
 
 动作：
 
 1. 为 async gap 增加 generation / freshness gate。
 2. 用 patch merge 替代旧对象全量回写。
 3. finally / append / snapshot 全部纳入 stale drop 规则。
+4. 宿主、CI、评审与交接开始消费同一条 `surface -> writeback -> freshness -> anti-zombie -> handoff` 证据链。
 
 观测指标：
 
@@ -183,7 +185,9 @@ async cleanup -> 先过 generation / fresh-state merge / stale drop
 ```text
 本轮先收口了哪份真相:
 
-当前 authoritative surface 是否唯一:
+当前 current-truth surface 是否唯一:
+
+current-truth writeback 是否唯一:
 
 哪些第二真相仍保留:
 
@@ -207,7 +211,7 @@ Phase 2 read-from-projection
 - 但 search 面板仍依赖旧 state cache
 
 结论:
-- authoritative surface 开始形成
+- current-truth surface 开始形成
 - 但搜索路径尚未完全切读投影，不能继续删旧同步逻辑
 ```
 
@@ -222,7 +226,7 @@ Phase 2 read-from-projection
 
 回退动作:
 - 回退 anti-zombie gate 到 Phase 4 末版本
-- 保留 authoritative surface、projection、recovery asset 成果
+- 保留 current-truth surface、current-truth writeback、projection、recovery asset 成果
 
 防再发:
 - 为 finally 路径单独加 fate classification

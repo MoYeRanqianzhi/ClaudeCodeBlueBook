@@ -1,9 +1,9 @@
 # 跨目录入口
 
 `navigation/` 只负责跨目录反查，不重新定义三条母线。需要权威短语与最短主线时先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)；只有当问题已经变成“我要跨目录找哪一层证据”时再留在这里。
-最值钱的纪律也只该再多记一句：`navigation/` 只管 route，不签 truth；一旦 route words 开始代替 `governance key / typed ask / decision window / current-truth surface` 说话，它就在制造第二前门。
+最值钱的纪律也只该再多记一句：`navigation/` 只管 route，不签 truth；一旦 route words 开始代替 `governance key / typed ask / decision window / current-truth surface` 说话，它就在制造第二入口。
 
-这里不再重复 root frontdoor 的 canonical formula 与三组最小顺序；若你现在还缺这些，先回 [../README.md](../README.md) 与 `09`。`navigation/` 只接管两件事：判你该去哪一层证据，判哪一页只配当 route 不配改判。
+这里不再重复根入口的 canonical formula 与三组最小顺序；若你现在还缺这些，先回 [../README.md](../README.md) 与 `09`。`navigation/` 只接管两件事：判你该去哪一层证据，判哪一页只配当 route 不配改判。
 
 治理 / 安全 / Token 问题若已确认缺的是对象链而不是路线，也只先弹回：
 
@@ -11,7 +11,7 @@
 
 若你还在问 mode、usage、approval 或 cleanup result 谁说了算，说明缺的不是 next-hop，而是治理首答；先回 `../README.md` 与 `09`。
 
-源码质量 / 公开镜像问题若还在争 `truth-plane order`、`public-evidence ceiling` 或 `current-truth surface candidate`，说明缺的不是 next-hop，而是方法前门；先回 `09` 与 `guides/102`。
+源码质量 / 公开镜像问题若还在争 `truth-plane order`、`public-evidence ceiling` 或 `current-truth surface candidate`，说明缺的不是 next-hop，而是方法入口；先回 `09` 与 `guides/102`。
 若你已经确认公开证据 ceiling 成立，只剩 `sole writer / recovery asset / anti-zombie` 这类 present-truth 争议，再转 `guides/101`。
 
 治理线在 route 层也要先拒收一组投影篡位：
@@ -29,7 +29,7 @@
 - 缺 `continuation pricing`，回治理线
 - 缺 `stale-writer eviction / recovery asset non-sovereignty`，回源码质量线
 
-若你还在争 summary、pointer、event replay 或 display transcript 谁说了算，先退回 `09`，不要让 route 句子代替 frontdoor。
+若你还在争 summary、pointer、event replay 或 display transcript 谁说了算，先退回 `09`，不要让 route 句子代替入口判断。
 
 ## 先判三件事
 
@@ -58,12 +58,12 @@
 - [41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理](41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md)
   把深专题结论回压成第一性原理，不再停在对象层总结。
 
-## 高阶前门分工
+## 高阶入口分工
 
 - `09`
   宪法总图，先定义你在问哪一张控制面。
 - `05`
-  模仿对象校正，先防止 Prompt 魔力、安全定价和源码先进性被读成表象技巧。
+  模仿对象校正，先防止 Prompt 效力、安全定价和源码先进性被读成表象技巧。
 - `15`
   失稳前追问，先暴露第一条反证信号与 first reject path。
 - `41`
@@ -71,11 +71,11 @@
 - 专题侧门只在主线已判清后开放：Prompt 残留线回答“出监或稳态后哪些 reopen 条件仍必须保留”，结构 `83 / 92` 回答“固定纠偏模板与精修模板”，都不代替 `09 / 05 / 15 / 41`。
 - 如果你已经确认 Prompt 主链成立，只剩“released / steady 之后怎样保留 residual reopen gate / threshold”，从 `66 -> 69 -> 72 -> 78 -> 47 -> 50` 进入。
 - Prompt 尾段只承接 residual reopen；治理 `67`（release）与结构 `71`（steady-state）只可互参，不可互借主语。
-- 如果你已经确认结构真相面的问题不在前门公式，而在“怎样把假 authority / merge / fail-closed / liability 压回固定顺序”，从 `41 -> 102 -> guides/83 -> playbooks/61 -> casebooks/54` 进入。
+- 如果你已经确认结构真相面的问题不在入口公式，而在“怎样把假 current-truth surface / merge / fail-closed / liability 压回固定顺序”，从 `41 -> 102 -> guides/83 -> playbooks/61 -> casebooks/54` 进入。
 - 如果你已经进入 refinement execution，且缺的是结构精修模板而不是第一性原理，从 `41 -> 102 -> guides/92 -> playbooks/67 -> casebooks/63` 进入。
 - 如果你在判断“下一层该去哪个目录”，也先问：
-  这是 same-world compiler、governance pricing chain，还是 authority surface / temporal honesty 的问题。
-- 如果你在判断“并行深挖后该回哪一个前门合并”，也先问：
+  这是 same-world compiler、governance pricing chain，还是 current-truth surface / temporal honesty 的问题。
+- 如果你在判断“并行深挖后该回哪一个入口合并”，也先问：
   这个结论第一次该回 `09`、`05`、`15` 还是 `41`，而不是继续在 `README / navigation / guide` 三层同时第一次被回答。
 - [46-宿主迁移工单导航：request compiler、governance key 与 current-truth writeback 如何进入实施顺序、交接包与灰度发布](46-宿主迁移工单导航：Prompt、治理与故障模型支持面如何进入实施顺序、交接包与灰度发布.md)
   进入宿主实现、迁移、验收与收口链。
@@ -98,7 +98,7 @@
 - 需要跨章节、跨目录、跨证据层反查时
 - 需要确认某个问题该先看判断、架构、模板、verdict 还是反例时
 - 需要把 `architecture / guides / playbooks / casebooks` 串成同一条判断链时
-- 需要确认某个入口页究竟是正文前门、判断地图还是记忆层时
+- 需要确认某个入口页究竟是正文入口、判断地图还是记忆层时
 
 ## 维护约定
 

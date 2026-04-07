@@ -1,14 +1,14 @@
-# 如何用苏格拉底诘问法审读Prompt魔力：lineage kernel、projection consumers与lawful forgetting
+# 如何用苏格拉底诘问法审读Prompt效力：lineage kernel、projection consumers与lawful forgetting
 
-这一章不再解释 Prompt 为什么强，而是把“怎么审它是否真的强”压成一套 builder-facing 审读框架。
+这一章不再解释 Prompt 为什么强，而是把“怎么审它是否具备稳定 Prompt效力”压成一套 builder-facing 审读框架。
 
 它主要回答五个问题：
 
-1. 怎样避免把 Prompt 魔力重新写回措辞崇拜。
+1. 怎样避免把 Prompt效力重新写回措辞崇拜。
 2. 怎样用递进式问题审读 `message lineage`、共享前缀、section 宪法、projection consumers 与 lawful forgetting。
 3. 怎样判断一个 Prompt Constitution 是制度体，还是长文案。
 4. 怎样在设计、排障与迁移时用同一组问题自我校准。
-5. 怎样用苏格拉底式追问避免把审读模板写成另一份长 prompt。
+5. 怎样把苏格拉底式追问落成可执行的判定与拒绝链，而不是另一份长 prompt。
 
 ## 0. 代表性源码锚点
 
@@ -27,7 +27,7 @@
 
 这些锚点共同说明：
 
-- Claude Code 的 Prompt 魔力不是某段文案写得更凶，而是 `message lineage`、共享前缀、consumer 分层、合法遗忘与 continuation qualification 被共同治理。
+- Claude Code 的 Prompt效力不是某段文案写得更凶，而是 `message lineage`、共享前缀、consumer 分层、合法遗忘与 continuation qualification 被共同治理。
 
 ## 1. 对象对照：旧词汇与当前审读对象
 
@@ -74,7 +74,7 @@
 
 - 让当前、下一步、接手后仍消费同一条 `message lineage` 与同一份 request compile chain
 
-所以审读 Prompt 魔力时，最该反问的不是：
+所以审读 Prompt效力时，最该反问的不是：
 
 - 这段话够不够厉害
 
@@ -82,103 +82,112 @@
 
 - 这套 prompt 是否已经把 lineage kernel、projection consumer、continuation qualification 与 lawful forgetting 组织成同一条制度链
 
-## 3. 苏格拉底诘问链
+## 3. 苏格拉底可执行判定链
 
-### 3.1 当前 `message lineage` 还是三键内核吗
+执行协议先固定为四步：
 
-判断标准：
+1. 输入：`compiled request truth`、`witness chain`、consumer matrix、当前 continuation object。
+2. 每个 gate 必须产出 `pass | fail | unknown`。
+3. `fail` 与 `unknown` 一律视为不可继续，必须写出 `reject signal + rollback object + next action`。
+4. 仅当关键 gate 全部 `pass`，才允许产出 `continuation qualification = continue`。
 
-- 如果已经说不清 `parentUuid / logicalParentUuid`、`message.id`、`tool_use_id / sourceToolAssistantUUID` 分别在接住什么，这条 lineage 就退回成了一条更顺的历史叙事。
+### 3.1 Gate-1：`message lineage` 还是三键内核吗
 
-### 3.2 当前 request compile chain 挂在哪条 authority chain / message lineage 上
+- 输入：`parentUuid / logicalParentUuid`、`message.id`、`tool_use_id / sourceToolAssistantUUID`
+- 通过条件：三键都可点名且职责不冲突
+- reject signal：任一键缺失或职责混淆
+- 失败动作：冻结继续资格，先补 lineage witness
 
-判断标准：
+### 3.2 Gate-2：request compile chain 是否挂在明确 authority chain 上
 
-- 如果说不清谁在续写这条 truth、谁只是在消费它、谁只是在显示它，这就不是制度，只是文案堆叠。
+- 输入：authority owner、writer、consumer、display actor
+- 通过条件：谁续写 truth、谁消费 truth、谁展示 truth 可区分
+- reject signal：角色混写或只能靠口头解释
+- 失败动作：重写 authority map，再重新编译
 
-### 3.3 不同入口、不同宿主、不同回合消费的还是同一条 truth 吗
+### 3.3 Gate-3：多入口是否仍消费同一份 compiled request truth
 
-判断标准：
+- 输入：REPL / SDK / bridge / resume 的投影样本
+- 通过条件：不同入口只显示差异，不改变 same-world truth
+- reject signal：入口间出现 path parity split
+- 失败动作：标记 projection-consumer split 并停止继续
 
-- 如果 REPL、SDK、bridge、resume 各自消费的是不同 projection，而不是同一条 compiled truth 的不同视图，后面所有“魔力”都会退化成路径偶然性。
+### 3.4 Gate-4：`same-world witness` 是否可点名
 
-### 3.3.1 `same-world witness` 还可点名吗
+- 输入：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`
+- 通过条件：六项 witness 可被独立验证且互相一致
+- reject signal：任一 witness 无法点名或互相冲突
+- 失败动作：进入 rollback，禁止用总结 prose 代替 witness
 
-判断标准：
+### 3.5 Gate-5：projection consumer matrix 是否对齐
 
-- 如果已经点不出 `message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict` 这六个最小 witness，对“同一个世界”的判断就只剩修辞，不剩证明对象。
+- 输入：display transcript、`protocol transcript`、SDK/control projection、`continuation object`
+- 通过条件：每个 consumer 只消费其合法投影
+- reject signal：把投影差异误当真相差异
+- 失败动作：重画 consumer matrix 并回填边界
 
-### 3.4 projection consumers 的矩阵是否明确
+### 3.6 Gate-6：共享前缀是否仍由唯一合法生产者维护
 
-判断标准：
+- 输入：stable prefix producer 列表、fork/reuse 规则
+- 通过条件：主线程是唯一稳定前缀生产者
+- reject signal：多个旁路各自产生“差不多的世界”
+- 失败动作：关闭旁路写入，回收到主线程重编译
 
-- 如果还说不清 display transcript、`protocol transcript`、SDK/control projection 与 `continuation object` 分别服务谁，这条 prompt 就仍会把投影差异写成真相差异。
+### 3.7 Gate-7：section 是否是宪法槽位而非排版分块
 
-### 3.5 哪些内容是共享前缀资产，谁是唯一合法生产者
+- 输入：section 职责、优先级、边界、变更理由
+- 通过条件：section 变更可追溯且具制度理由
+- reject signal：section 仅剩阅读友好，不具约束力
+- 失败动作：补 section registry 与 change reason
 
-判断标准：
+### 3.8 Gate-8：stable boundary / dynamic boundary / projection boundary 是否清晰
 
-- 如果主线程不是唯一稳定前缀生产者，而是多个旁路各自拼接“差不多的世界”，那得到的是多份世界模型，不是共享前缀。
+- 输入：边界定义与越界样本
+- 通过条件：临时事实不漂进稳定前缀，三类 truth 不互侵
+- reject signal：display truth / protocol truth / handoff truth 混叠
+- 失败动作：触发 boundary drift reject，并生成回退对象
 
-### 3.6 你的 section 是宪法槽位，还是随手可换的段落分块
+### 3.9 Gate-9：invalidation 触发器是否制度化
 
-判断标准：
+- 输入：失效规则、section/模型/工具/状态事件触发表
+- 通过条件：触发器由显式规则决定，不靠“感觉变动大”
+- reject signal：缓存失效依赖作者直觉
+- 失败动作：补 invalidation rulebook 后再评估
 
-- 如果每个 section 没有明确职责、边界、优先级和变更理由，它就不是 constitutional slot，只是方便阅读的排版。
+### 3.10 Gate-10：lawful forgetting 后是否仍保留 continuation object
 
-### 3.7 稳定前缀、动态边界与 projection boundary 到底画在了哪里
+- 输入：compact / summary / resume 前后对象对照
+- 通过条件：forgetting 后仍可点名 continuation object、lineage ref 与资格
+- reject signal：只剩“发生过什么”的摘要叙事
+- 失败动作：回退至 forgetting 前版本并重做 compact
 
-判断标准：
+### 3.11 Gate-11：handoff 是否无需重读全量 transcript 即可判定继续资格
 
-- 如果临时事实、局部状态、一次性观测漂进稳定前缀，或 display truth / protocol truth / handoff truth 的边界互相侵入，边界就是错的。
+- 输入：handoff 包、约束清单、next action
+- 通过条件：接手方可直接判断 continuation / reopen / new task
+- reject signal：必须扫长历史才能继续
+- 失败动作：补 continuation qualification card
 
-### 3.8 同一现场经过不同 assembly path，会被编译成同一份 prompt 真相吗
+### 3.12 Gate-12：旁路流程是否在重绑 witness，而不是静默重造世界
 
-判断标准：
+- 输入：`compact / resume / fork / handoff` 的重绑记录
+- 通过条件：旁路只重绑 witness，不新造第二套 truth
+- reject signal：旁路可在无 witness 重绑下继续行动
+- 失败动作：标记 continuation-story-only，拒绝放行
 
-- 如果同一任务在不同组装路径下得到不同的制度字节、section 顺序或头部开关，那不是 cache-aware assembly，而是 path parity split。
+### 3.13 Gate-13：当决策增益归零时，系统是否停止扩张 prompt
 
-### 3.9 什么变化会触发 invalidation，什么变化不该触发
+- 输入：decision gain 记录、token 增长与结论变化
+- 通过条件：结论不再变化时停止追加字节
+- reject signal：持续追加、重放、重试但无新增决策
+- 失败动作：触发 continuation pricing gate，强制停机
 
-判断标准：
+### 3.14 Gate-14：失效解释是否落在制度对象而非感受词
 
-- 如果失效条件靠“感觉这次改得挺大”，而不是由 section、边界、模型、工具面与状态事件显式触发，缓存稳定性只是运气。
-
-### 3.10 哪些内容允许被忘掉，忘掉以后仍保住的是摘要还是 continuation object
-
-判断标准：
-
-- 如果 compact、summary、resume 之后只能留下“发生过什么”，却保不住 `continuation object`、`lineage ref` 或继续资格，那就是不合法的遗忘。
-
-### 3.11 接手方不重读全量 transcript，也能判断这是 continuation、reopen 还是 new task 吗
-
-判断标准：
-
-- 如果接手仍必须扫描长历史才能知道当前约束、继续资格与下一步动作，这条 prompt 就没有形成可点名的 continuation qualification。
-
-### 3.12 旁路查询、摘要、外置输出、恢复链会不会偷偷生成第二套 prompt 真相
-
-判断标准：
-
-- 如果 side query、summary、tool externalization、resume 结果不是在向不同 consumer 投影同一份 protocol truth，它们就在制造第二现场，而不是辅助主线。
-
-### 3.12.1 谁配重绑 witness，而不是静默重造世界
-
-判断标准：
-
-- 如果 `compact / resume / fork / handoff` 可以在不显式重绑 witness 的情况下继续行动，它们就在把“差不多的世界”冒充成同一个世界。
-
-### 3.13 当再增加上下文已不可能改变结论时，系统会停止扩张 prompt 吗
-
-判断标准：
-
-- 如果没有“何时不再值得继续加字节”的意识，只会不断追加、重放、重试，那追求的不是魔力，而是失控膨胀。
-
-### 3.14 一旦 prompt 失灵，你能否用 section、lineage、consumer、遗忘与接手这些词解释它
-
-判断标准：
-
-- 如果最后只能说“感觉变笨了”或“这次味道不对”，说明还没有把 prompt 做成可审读、可诊断的制度对象。
+- 输入：故障解释文本
+- 通过条件：可明确归因到 section / lineage / consumer / forgetting / handoff
+- reject signal：仅有“变笨了”“味道不对”
+- 失败动作：故障报告退回重写，不得进入评审通过态
 
 ## 4. 常见自欺
 
@@ -191,7 +200,7 @@
 5. 把 handoff 理解成“再写一段总结”，而不是延续同一工作主语。
 6. 把 projection consumer 的分工写坏后，还以为只是展示差异，而不是制度分叉。
 7. 把 cache break 理解成性能问题，而不是制度边界问题。
-8. 把 `systemPrompt` 截图、最后一条 assistant 消息或 summary prose 当成 Prompt 魔力主语。
+8. 把 `systemPrompt` 截图、最后一条 assistant 消息或 summary prose 当成 Prompt效力主语。
 
 ## 5. 更好的迭代顺序
 

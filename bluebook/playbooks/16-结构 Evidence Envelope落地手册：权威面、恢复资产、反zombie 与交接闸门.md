@@ -5,7 +5,7 @@
 它主要回答五个问题：
 
 1. 结构线真正的 host implementation playbook 到底该检查什么。
-2. `current-truth surface`、recovery asset、anti-zombie gate 与 handoff carrier 该怎样被不同角色共同消费。
+2. `current-truth surface`、`current-truth writeback`、recovery asset、anti-zombie gate 与 handoff carrier 该怎样被不同角色共同消费。
 3. 哪些检查最适合写成 handoff gate，哪些最适合写成 CI gate。
 4. 怎样避免结构升级再次退回文件级回退、目录美观与作者记忆。
 5. 怎样用苏格拉底式追问避免把这章写成结构洁癖清单。
@@ -28,10 +28,10 @@
 
 而是：
 
-1. 宿主消费当前 object、`current-truth surface` 与 current truth。
-2. CI 校验 recovery asset、anti-zombie gate 与 `hotspot kernel`。
-3. 评审先看 `contract / registry / current-truth surface`，再看目录与文件。
-4. 交接拿到 retained assets、danger paths 与 handoff carrier。
+1. 宿主消费当前 object、`current-truth surface`、`current-truth writeback` 与 current truth。
+2. CI 校验 `current-truth writeback`、recovery asset、anti-zombie gate 与 `hotspot kernel`。
+3. 评审先看 `contract / registry / current-truth surface / current-truth writeback`，再看目录与文件。
+4. 交接拿到 retained assets、danger paths、writeback 约束与 handoff carrier。
 5. 四类角色围绕同一结构 envelope 骨架判断。
 
 ## 2. 最小落地 diff
@@ -56,13 +56,13 @@ CI:
 
 ```text
 宿主:
-- 展示 current object / current-truth surface / projection set
+- 展示 current object / current-truth surface / current-truth writeback / projection set
 
 CI:
-- 检查 recovery asset / anti-zombie gate / handoff carrier
+- 检查 current-truth writeback / recovery asset / anti-zombie gate / handoff carrier
 
 评审:
-- 先看 current truth / recovery / handoff，再看文件与目录
+- 先看 current truth / writeback / recovery / handoff，再看文件与目录
 
 交接:
 - 先看 retained assets / danger paths / handoff carrier
@@ -86,9 +86,10 @@ CI:
 
 1. current object
 2. current-truth surface
-3. projection set
-4. current recovery state
-5. handoff carrier
+3. current-truth writeback
+4. projection set
+5. current recovery state
+6. handoff carrier
 
 硬要求：
 
@@ -99,14 +100,16 @@ CI:
 CI 至少必须检查：
 
 1. current-truth surface 是否已点名。
-2. recovery asset ledger 是否完整。
-3. anti-zombie gate 是否存在。
-4. handoff carrier boundary 是否明确。
-5. retained assets 是否已定义。
+2. current-truth writeback 是否唯一。
+3. recovery asset ledger 是否完整。
+4. anti-zombie gate 是否存在。
+5. handoff carrier boundary 是否明确。
+6. retained assets 是否已定义。
 
 硬门禁：
 
 - current-truth surface 缺失
+- current-truth writeback 缺失
 - recovery asset 缺失
 - anti-zombie gate 缺失
 - handoff carrier 缺失
@@ -116,10 +119,11 @@ CI 至少必须检查：
 评审至少必须先看：
 
 1. current-truth surface
-2. projection set
-3. recovery asset
-4. anti-zombie gate
-5. handoff carrier boundary
+2. current-truth writeback
+3. projection set
+4. recovery asset
+5. anti-zombie gate
+6. handoff carrier boundary
 
 软检查点：
 
@@ -136,10 +140,11 @@ CI 至少必须检查：
 
 1. current object
 2. current-truth surface
-3. retained assets
-4. danger paths
-5. handoff carrier
-6. dropped stale writers
+3. current-truth writeback
+4. retained assets
+5. danger paths
+6. handoff carrier
+7. dropped stale writers
 
 硬要求：
 
@@ -152,19 +157,21 @@ CI 至少必须检查：
 1. `contract`
 2. `registry`
 3. `current-truth surface`
-4. `consumer subset`
-5. `hotspot kernel`
-6. `mirror gap discipline`
+4. `current-truth writeback`
+5. `consumer subset`
+6. `hotspot kernel`
+7. `mirror gap discipline`
 
 ## 5. 结构线硬门禁
 
 下面这些最适合写成硬门禁：
 
 1. `current-truth surface` 缺失。
-2. `recovery_asset` 缺失。
-3. `anti_zombie_gate` 缺失。
-4. `rollback_object_boundary` 缺失。
-5. `retained_assets` 缺失。
+2. `current-truth writeback` 缺失。
+3. `recovery_asset` 缺失。
+4. `anti_zombie_gate` 缺失。
+5. `rollback_object_boundary` 缺失。
+6. `retained_assets` 缺失。
 
 ## 6. handoff gate
 
@@ -183,7 +190,7 @@ CI 至少必须检查：
 
 在你准备宣布结构 host implementation 已落地前，先问自己：
 
-1. 宿主、CI、评审与交接是不是都先围绕 current truth / recovery / handoff 判断。
+1. 宿主、CI、评审与交接是不是都先围绕 current truth / writeback / recovery / handoff 判断。
 2. 我保住的是对象真相，还是只保住了文件与目录表面。
 3. 任何一个角色现在还能不能只凭结构图或作者解释给出结论。
 4. 如果今天发生回退，我知道该退回哪个对象，而不是只知道该回退哪些文件吗。
