@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/architecture/README` 的长期默认 architecture-readme-route-demotion language 现已继续写死：
+  - 架构入口默认继续先说最短证据入口与缺对象跳转，不先说推荐路径表
+  - `architecture/README` 默认继续把 later maintainer 的第一动作写成“先定对象和 first reject signal”，不写成“先挑阅读路径”
 - `bluebook/README` 与 `bluebook/userbook/README` 的长期默认 entry-governance-ui-demotion language 现已继续写死：
   - 总入口默认继续先说治理顺序与节点判断，不先枚举 approval、status、usage、compact、export、cleanup result 这组界面名词
   - `bluebook/README` 默认继续把治理 failure order 写成 `pricing-right / truth-surface / cleanup authority` 这组节点失效，不再让 UI noun 或 ABI noun 抢入口记忆

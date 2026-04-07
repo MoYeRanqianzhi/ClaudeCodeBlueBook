@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 architecture-readme-route-demotion 深化动作: 已继续更新 `bluebook/architecture/README.md`。新的结论是：架构入口哪怕已经不再争高阶前门，later maintainer 仍可能先被“推荐入口 / 阅读路径”这组路由表语气带走，而不是先拿到对象与 first reject signal。
+- 本轮新的架构入口结论: 更稳的 architecture README 必须先说“你缺的是哪类对象和证据”，再说“该去读哪页”。也就是先给最短证据入口与缺对象跳转，不先给路径表。
 - 本轮 entry-governance-ui-demotion 深化动作: 已继续更新 `bluebook/README.md` 与 `bluebook/userbook/README.md`。新的结论是：治理线即使在专题页里已经收回 canonical chain，总入口仍可能通过 approval、status、usage、compact、export、cleanup result 这组 UI noun 把 later maintainer 带回界面记忆。
 - 本轮新的总入口结论: 更稳的入口 wording 必须先教 later maintainer 记住 `pricing-right -> truth-surface -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 的排查顺序，再把任何界面、状态、压缩或导出入口降格成读取 verdict 的二跳消费者。
 - 本轮 source-quality-aura-demotion 深化动作: 已继续更新 `bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`、`bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `bluebook/philosophy/README.md`。新的结论是：源码质量线哪怕已经不再直接说“先进性”，later maintainer 仍可能被“成熟度 / 源码质量很高 / 结构先进性”这组 aura wording 拉回评奖式判断。

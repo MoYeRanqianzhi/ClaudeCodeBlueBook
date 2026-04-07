@@ -46,7 +46,9 @@
 - `64-72`: 语义压缩、资源宪法、协调成本、有效自由、源码即治理界面与未来维护者消费者。
 - `73-84`: `world entry / request assembly / six-stage assembly chain`、治理顺序、构建系统、升级证据、持续验证、source-lattice 反扩张治理与 anti-stale 内核对象边界。
 
-## 推荐入口
+## 最短证据入口
+
+先按运行时对象与 first reject signal 选入口，不按目录名碰运气。
 
 - [01-启动链路与CLI](01-启动链路与CLI.md)
 - [10-AgentTool与隔离编排](10-AgentTool与隔离编排.md)
@@ -59,14 +61,14 @@
 - [83-反扩张治理流水线：governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup](83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md): 看治理控制面如何把这六段链条压成同一条反扩张治理收费链
 - [84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping](84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md): 看 anti-stale 如何落到 freshness gate、validator、per-host 与 capability surface
 
-## 阅读路径
+## 缺对象时再跳转
 
-- 想先看启动和主循环：`01 -> 02 -> 12`
-- 想先看 `world entry / request assembly / six-stage assembly chain`：`18 -> 28 -> 31 -> 39 -> 82`
-- 想先看多 Agent 与对象升级：`30 -> 45`
-- 想先看安全、权限与治理：`19 -> 23 -> 32 -> 50-52`
-- 想先看长期演化与验证：`63 -> 73-84`
-- 想先抓最新三张深控制面：`82 -> 83 -> 84`
+- 缺启动与主循环对象：`01 -> 02 -> 12`
+- 缺 `world entry / request assembly / six-stage assembly chain` 对象：`18 -> 28 -> 31 -> 39 -> 82`
+- 缺多 Agent / 任务对象：`30 -> 45`
+- 缺治理对象与 choke point：`19 -> 23 -> 32 -> 50-52 -> 83`
+- 缺 current-truth writeback / anti-stale 对象：`60 -> 63 -> 84`
+- 缺长期演化 / 验证对象：`63 -> 73-84`
 
 ## 这里不回答什么
 
@@ -79,7 +81,7 @@
 
 ## 维护约定
 
-- README 只描述运行时平面和推荐起点，未单列文档仍属于对应平面的延伸。
+- README 只描述运行时平面、最短证据入口与对象分流，未单列文档仍属于对应平面的延伸。
 - README 只负责运行时对象、结构边界与推荐起点，不重复 `05 / 15 / 41` 的高阶判据，也不替 `api/` 宣布 contract truth。
 - README 应优先暴露 later maintainer 能直接据此提出反对的对象与 seams，而不是先暴露目录体感或功能库存。
 - 需要字段、接口与宿主契约时，回到 [../api/README.md](../api/README.md)。

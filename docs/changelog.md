@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/architecture/README.md`，把架构入口继续从路由表收回“最短证据入口 + 缺对象时再跳转”：现在更明确先按运行时对象与 first reject signal 选入口，再按缺失对象跳转，不再把 README 主要写成推荐路径表
 - 继续更新 `bluebook/README.md` 与 `bluebook/userbook/README.md`，把总入口里的治理 UI noun 回流继续降格：根入口现在把治理前门、failure order 与 first reject signal 收回 `pricing-right / truth-surface / cleanup authority` 这组节点判断，`userbook/README` 现在把治理界面、状态读数、压缩入口、导出入口与收口结果词统一收回“只读 verdict”的二跳消费者地位
 - 继续更新 `bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`、`bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `bluebook/philosophy/README.md`，把源码质量 aura wording 继续收回对象判断：`86` 现在更明确先审“过去不得写坏现在”是否被写成制度对象，`87` 现在更明确先复用源码判断而不是“成熟度”，`philosophy/README` 现在把失败信号收回 canonical ladder 与 writeback seam / retreat layer
 - 继续更新 `bluebook/security/README.md`、`bluebook/architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`、`bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md` 与 `bluebook/risk/README.md`，把治理线残留的 UI noun / result wording 再次降格：`security/README` 与 `risk/README` 现在把状态、诊断、压缩、导出入口统一收回“只读 verdict”的消费者地位，`83` 现在把 failure order 收回 canonical node/asset/authority 失效，`85` 现在把审批/统计/恢复界面与 status/rollback/handoff 名词统一收回治理接口名
