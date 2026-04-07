@@ -175,6 +175,7 @@
 - [171-2026-04-08-local artifact provenance split 拆分记忆.md](./171-2026-04-08-local%20artifact%20provenance%20split%20拆分记忆.md)
 - [172-2026-04-08-bridge authority split 拆分记忆.md](./172-2026-04-08-bridge%20authority%20split%20拆分记忆.md)
 - [173-2026-04-08-environment truth layering split 拆分记忆.md](./173-2026-04-08-environment%20truth%20layering%20split%20拆分记忆.md)
+- [174-2026-04-08-environment register authority split 拆分记忆.md](./174-2026-04-08-environment%20register%20authority%20split%20拆分记忆.md)
 
 用途：
 
