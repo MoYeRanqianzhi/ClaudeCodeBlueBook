@@ -35,6 +35,10 @@
 2. `recovery-sovereignty leak`
 3. `surface-gap blur`
 
+这里还应再多记一句：
+
+- continuity 不另起第四类源码主语；它只是 `current-truth surface -> recovery asset non-sovereignty -> freshness gate -> stale-writer rejection` 这条时间轴的展开。
+
 ## 1. 第一性原理
 
 成熟内核首先处理的不是：
@@ -67,6 +71,7 @@
 判断标准：
 
 - 如果 pointer、ledger、resume file 或 cache 也能直接宣布“我就是最新真相”，恢复系统就已经长成第二主权面。
+- 所以 continuity 的源码审读不该先问“恢复成功了吗”，而应先问这些资产有没有借恢复之名重新获得 present truth 的签字权。
 
 ### 2.3 stale finally、stale snapshot、stale pointer 会不会在未来某个时刻写坏现在
 

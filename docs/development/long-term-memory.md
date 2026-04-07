@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/guides/99-102` 的长期默认 continuity discipline 现已继续写死：
+  - `99` 默认不把 `compact / fork / resume / handoff` 升成第四类 Prompt 机制
+  - `100` 默认不把 `compact / resume / re-entry` 升成第四条治理对象线
+  - `101` 默认不把 continuity 升成第四类源码主语
+  - `102` 默认不把 continuity 升成第四类证据层
+  - 四页默认统一把 continuity 收回 `Continuation / continuation pricing / recovery asset non-sovereignty / temporal honesty`
 - `bluebook/navigation/01-第一性原理阅读地图.md` 与 `02-能力、API与治理检索图.md` 的长期默认 continuity map 现已继续写死：
   - `01` 默认不把 `记忆 / 恢复 / 交接` 升成第四条母线
   - `02` 默认不把 `compact / resume / memory / handoff` 升成第四类能力平面

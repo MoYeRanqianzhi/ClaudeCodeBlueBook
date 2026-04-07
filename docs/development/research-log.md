@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 guides continuity 深化动作: 已继续更新 `bluebook/guides/99-102`。新的结论是：审读模板、治理审题和公开镜像证据分级都不该把 continuity 单列成第四平面。更稳的默认做法是：`99` 只把 continuity 写成 Prompt `Continuation` 的 consumer，`100` 只把它写成 `continuation pricing` 的消费点，`101` 只把它写成 `recovery asset non-sovereignty / anti-zombie` 的时间轴，`102` 则只把它写成 `current-truth surface candidate / temporal honesty` 的降格规则。
+- 本轮新的设计内涵结论: continuity 现在不只在 README、navigation、control-plane 页上被收回三条母线，也已经在 guides 模板层完成同一动作。后续如果哪一页又把 `compact / resume / memory / handoff` 写成独立问题域，就不只是目录漂移，而是审题模板本身已经开始教错 later maintainer。
 - 本轮 continuity 检索地图深化动作: 已继续更新 `bluebook/navigation/01-第一性原理阅读地图.md` 与 `02-能力、API与治理检索图.md`。新的结论是：只要 `记忆 / 恢复 / 交接 / 经济` 在地图层被重新读成独立平面，读者就会再次先学对象库存，再自己回压成三条母线。更稳的默认写法是：`01` 只承认 continuity 是三条母线在时间维度上的 crosswalk，`02` 只承认 `compact / resume / memory / handoff` 是三条母线的 consumer，不是第四类能力表面。
 - 本轮新的目录结构结论: continuity 路由的“第一次解释权”现在已经在 `README / philosophy README / navigation README / 09 / navigation 05 / 15 / 41 / navigation 01 / 02` 这些高流量地图页上统一收口。后续目录优化若再让 continuity 在任一地图页里被第一次写成独立主题，默认按目录回胖与主语漂移处理。
 - 本轮高阶导航 continuity 收口动作: 已继续更新 `bluebook/navigation/05`、`15`、`41`。新的结论是：continuity 在导航层不能被写成第四条母线、第五个函数或第四类审读对象，而只能被写成三条母线在时间维度上的共同交汇。更稳的默认动作是：`05` 负责先拒“把 continuity 当按钮表”，`15` 负责先拒“把 continuity 当独立审读域”，`41` 负责先拒“把 continuity 当第五个第一性函数”。

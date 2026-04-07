@@ -41,6 +41,10 @@
 2. `recovery-sovereignty leak`
 3. `surface-gap blur`
 
+这里还应再多记一句：
+
+- continuity 在公开镜像里不另立第四类证据层；它应被写进 `current-truth surface candidate`、`temporal honesty` 与 `mirror gap discipline` 的同一组降格规则。
+
 ## 1. 先说结论
 
 ### Step 0. 先过 `public artifact ceiling`
@@ -65,6 +69,12 @@
 5. `consumer subset truth`
 6. `hotspot kernel truth`
 7. `mirror gap discipline`
+
+所以当公开镜像里出现 `resume path / snapshot / pointer / archive / adapter replay` 这些 continuity 线索时，更稳的默认动作不是宣布“恢复机制很成熟”，而是先问：
+
+1. 它们只是 `recovery asset` 证据，还是已经足够支持 `current-truth surface candidate`。
+2. 它们有没有越位成 present truth signer。
+3. 它们是否反而暴露了 `stale writer / stale snapshot / stale capability` 这类 temporal honesty 缺口。
 
 这七层必须严格分开。
 
