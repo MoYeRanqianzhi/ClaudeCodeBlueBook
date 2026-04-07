@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 security-index-shell-thinning 深化动作: 已继续更新 `bluebook/security/appendix/README.md` 与 `bluebook/security/source-notes/README.md`。新的结论是：只要安全目录的附录层与源码剖面层还在平铺 208 / 75 条库存表，later maintainer 就还是会把索引壳误读成导航本体，而不是对象簇与机制簇分流层。
+- 本轮新的安全索引结论: 更稳的写法必须让 `appendix/README` 只保留速查对象簇，让 `source-notes/README` 只保留源码机制簇；逐篇平铺查找应回到编号页和文件名搜索，不再由 README 本身承担。
 - 本轮 prompt-root-route-thinning 深化动作: 已继续更新 `bluebook/README.md`。新的结论是：只要根入口还在自己重列 Prompt crosswalk、witness、counterfeit 与 reject signal，later maintainer 就还是会把根 README 误读成 `84 / 51` 之外的压缩版第二前门。
 - 本轮新的根入口 Prompt 结论: 更稳的写法必须让根 README 只保留 `same-world compiler` 这句 hook，并把顶层判断与 `first-reject path` 送回 `84`，把 same-world witness、实现顺序与 `continue qualification` 送回 `51`。
 - 本轮 source-quality-aura-demotion 深化动作: 已继续更新 `bluebook/architecture/20-源码质量、分层与工程先进性.md` 与 `bluebook/architecture/33-公开源码镜像的先进性、热点与技术债.md`。新的结论是：只要源码质量页还从“先进感 / 高级感”起题，later maintainer 就仍会先学 aura，再倒推结构质量与证据上限。

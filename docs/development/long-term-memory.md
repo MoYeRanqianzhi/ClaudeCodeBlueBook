@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/security/appendix/README` 与 `bluebook/security/source-notes/README` 的长期默认 security-index-shell-thinning language 现已继续写死：
+  - `appendix/README` 默认继续只保留少数速查对象簇与代表入口，不再平铺 200+ 条 route map
+  - `source-notes/README` 默认继续只保留少数机制簇与代表入口，不再逐条复写 75 篇源码剖面
+  - 安全目录的 README 壳默认继续承担对象簇/机制簇分流，不再自己长成导航本体
 - `bluebook/README` 的长期默认 prompt-root-route-thinning language 现已继续写死：
   - 根入口默认继续只保留 `same-world compiler` 这句 Prompt hook，不再第二次重列 Prompt formula、witness、counterfeit 与 reject signal
   - 顶层判断与 `first-reject path` 默认继续回 `philosophy/84`

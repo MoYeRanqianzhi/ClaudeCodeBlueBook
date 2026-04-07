@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/security/appendix/README.md` 与 `bluebook/security/source-notes/README.md`，把安全目录的两层索引壳从库存表压成对象簇和机制簇：`appendix/README` 现在只保留 6 组速查对象与代表入口，不再平铺 208 条 route map；`source-notes/README` 现在只保留 5 组源码机制簇与代表入口，不再逐条复写 75 篇剖面
 - 继续更新 `bluebook/README.md`，把根入口里的 Prompt 压缩版第二前门继续收回 route：根 README 现在只保留 `same-world compiler` 这句 Prompt hook，不再第二次重列 Prompt crosswalk、witness、counterfeit 与 reject signal；同时更明确把顶层判断与 `first-reject path` 送回 `philosophy/84`，把 same-world witness、实现顺序与 `continue qualification` 送回 `guides/51`
 - 继续更新 `bluebook/architecture/20-源码质量、分层与工程先进性.md` 与 `bluebook/architecture/33-公开源码镜像的先进性、热点与技术债.md`，把源码质量开场里的 aura wording 再降一层：两页现在都不再先从“很先进的感觉”起题，而先追问公开证据能否证明 current truth、runtime kernel、cache boundary、recovery semantics 与 hotspot kernel 的结构质量
 - 继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`，把 Prompt 第二前门再收一层：`03` 现在只保留 `same-world compiler` 这句制度解释，不再在本章第二次重列 Prompt reject trio；`09` 现在只保留三张图宪法层的 Prompt 总钩子，把具体 `frontdoor order / canonical witness order / implementation order` 继续收回 `84 / guides/51`
