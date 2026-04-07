@@ -154,6 +154,7 @@
 - [150-2026-04-07-slash contract split 拆分记忆.md](./150-2026-04-07-slash%20contract%20split%20拆分记忆.md)
 - [151-2026-04-07-remote session identity split 拆分记忆.md](./151-2026-04-07-remote%20session%20identity%20split%20拆分记忆.md)
 - [152-2026-04-08-durable session metadata split 拆分记忆.md](./152-2026-04-08-durable%20session%20metadata%20split%20拆分记忆.md)
+- [153-2026-04-08-history paging sentinel split 拆分记忆.md](./153-2026-04-08-history%20paging%20sentinel%20split%20拆分记忆.md)
 
 用途：
 

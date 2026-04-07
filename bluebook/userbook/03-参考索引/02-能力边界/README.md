@@ -141,3 +141,4 @@
 - [139-system-init.slash_commands、REMOTE_SAFE_COMMANDS、PromptInput、REPL、processUserInput 与 print 索引.md](./139-system-init.slash_commands、REMOTE_SAFE_COMMANDS、PromptInput、REPL、processUserInput%20与%20print%20索引.md)
 - [140-getSessionId、switchSession、StatusLine、assistant viewer、remoteSessionUrl 与 useRemoteSession 索引.md](./140-getSessionId、switchSession、StatusLine、assistant%20viewer、remoteSessionUrl%20与%20useRemoteSession%20索引.md)
 - [141-sessionStorage、hydrateFromCCRv2InternalEvents、sessionRestore、listSessionsImpl、SessionPreview 与 sessionTitle 索引.md](./141-sessionStorage、hydrateFromCCRv2InternalEvents、sessionRestore、listSessionsImpl、SessionPreview%20与%20sessionTitle%20索引.md)
+- [142-SENTINEL_LOADING、SENTINEL_LOADING_FAILED、SENTINEL_START、useAssistantHistory、remoteConnectionStatus 与 BriefIdleStatus 索引.md](./142-SENTINEL_LOADING、SENTINEL_LOADING_FAILED、SENTINEL_START、useAssistantHistory、remoteConnectionStatus%20与%20BriefIdleStatus%20索引.md)

@@ -143,6 +143,7 @@
 124. 为什么 `system/init.slash_commands`、`REMOTE_SAFE_COMMANDS`、`PromptInput`、`REPL`、`processUserInput` 与 `print` 说明 slash 不是一张命令表，而是声明面、文本载荷与 runtime 再解释的三段合同。
 125. 为什么 `getSessionId`、`switchSession`、`StatusLine`、`assistant viewer`、`remoteSessionUrl` 与 `useRemoteSession` 说明 `remote.session_id` 可见，不等于当前前端拥有那条 remote session。
 126. 为什么 `sessionStorage`、`hydrateFromCCRv2InternalEvents`、`sessionRestore`、`listSessionsImpl`、`SessionPreview` 与 `sessionTitle` 说明 durable session metadata 不是 live `system/init`，也不是 foreground `external_metadata`。
+127. 为什么 `SENTINEL_LOADING`、`SENTINEL_LOADING_FAILED`、`SENTINEL_START`、`useAssistantHistory`、`remoteConnectionStatus` 与 `BriefIdleStatus` 说明 attached viewer 的历史翻页哨兵不是 remote presence surface。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
