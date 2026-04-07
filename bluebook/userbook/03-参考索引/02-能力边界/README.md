@@ -160,3 +160,5 @@
 - [135-assistant viewer、--remote TUI、viewerOnly、remoteSessionUrl 与 filterCommandsForRemoteMode 索引.md](./135-assistant%20viewer%E3%80%81--remote%20TUI%E3%80%81viewerOnly%E3%80%81remoteSessionUrl%20%E4%B8%8E%20filterCommandsForRemoteMode%20%E7%B4%A2%E5%BC%95.md)
 - [136-REMOTE_SAFE_COMMANDS、filterCommandsForRemoteMode、handleRemoteInit、session 与 mobile 索引.md](./136-REMOTE_SAFE_COMMANDS%E3%80%81filterCommandsForRemoteMode%E3%80%81handleRemoteInit%E3%80%81session%20%E4%B8%8E%20mobile%20%E7%B4%A2%E5%BC%95.md)
 - [137-CLAUDE_CODE_REMOTE、getIsRemoteMode、print、reload-plugins 与 settingsSync 索引.md](./137-CLAUDE_CODE_REMOTE、getIsRemoteMode、print、reload-plugins%20与%20settingsSync%20索引.md)
+- [138-CLAUDE_CODE_REMOTE_MEMORY_DIR、memdir、SessionMemory、extractMemories 与 print 索引.md](./138-CLAUDE_CODE_REMOTE_MEMORY_DIR、memdir、SessionMemory、extractMemories%20与%20print%20索引.md)
+- [139-system-init.slash_commands、REMOTE_SAFE_COMMANDS、PromptInput、REPL、processUserInput 与 print 索引.md](./139-system-init.slash_commands、REMOTE_SAFE_COMMANDS、PromptInput、REPL、processUserInput%20与%20print%20索引.md)
