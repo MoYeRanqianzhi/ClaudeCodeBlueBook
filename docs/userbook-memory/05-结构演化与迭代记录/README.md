@@ -176,6 +176,7 @@
 - [172-2026-04-08-bridge authority split 拆分记忆.md](./172-2026-04-08-bridge%20authority%20split%20拆分记忆.md)
 - [173-2026-04-08-environment truth layering split 拆分记忆.md](./173-2026-04-08-environment%20truth%20layering%20split%20拆分记忆.md)
 - [174-2026-04-08-environment register authority split 拆分记忆.md](./174-2026-04-08-environment%20register%20authority%20split%20拆分记忆.md)
+- [175-2026-04-08-provenance label vs identity split 拆分记忆.md](./175-2026-04-08-provenance%20label%20vs%20identity%20split%20拆分记忆.md)
 
 用途：
 
