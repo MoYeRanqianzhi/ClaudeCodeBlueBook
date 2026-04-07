@@ -146,3 +146,4 @@
 - [144-showSetupDialog、renderAndRun、launchResumeChooser、launchRepl、AppStateProvider 与 KeybindingSetup 索引.md](./144-showSetupDialog、renderAndRun、launchResumeChooser、launchRepl、AppStateProvider%20与%20KeybindingSetup%20索引.md)
 - [145-getSessionFilesLite、loadFullLog、SessionPreview、useAssistantHistory 与 fetchLatestEvents 索引.md](./145-getSessionFilesLite、loadFullLog、SessionPreview、useAssistantHistory%20与%20fetchLatestEvents%20索引.md)
 - [146-getSessionFilesLite、enrichLogs、LogSelector、SessionPreview 与 loadFullLog 索引.md](./146-getSessionFilesLite、enrichLogs、LogSelector、SessionPreview%20与%20loadFullLog%20索引.md)
+- [147-SessionPreview、loadFullLog、loadConversationForResume、switchSession 与 adoptResumedSessionFile 索引.md](./147-SessionPreview、loadFullLog、loadConversationForResume、switchSession%20与%20adoptResumedSessionFile%20索引.md)
