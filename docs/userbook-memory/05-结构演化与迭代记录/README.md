@@ -158,6 +158,7 @@
 - [154-2026-04-08-assistant entry chain split 拆分记忆.md](./154-2026-04-08-assistant%20entry%20chain%20split%20拆分记忆.md)
 - [155-2026-04-08-interactive host split 拆分记忆.md](./155-2026-04-08-interactive%20host%20split%20拆分记忆.md)
 - [156-2026-04-08-history surface provenance split 拆分记忆.md](./156-2026-04-08-history%20surface%20provenance%20split%20拆分记忆.md)
+- [157-2026-04-08-resume list vs preview split 拆分记忆.md](./157-2026-04-08-resume%20list%20vs%20preview%20split%20拆分记忆.md)
 
 用途：
 

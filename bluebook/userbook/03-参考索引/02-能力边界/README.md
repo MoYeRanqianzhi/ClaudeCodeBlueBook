@@ -145,3 +145,4 @@
 - [143-discoverAssistantSessions、launchAssistantInstallWizard、launchAssistantSessionChooser、createRemoteSessionConfig 与 attach banner 索引.md](./143-discoverAssistantSessions、launchAssistantInstallWizard、launchAssistantSessionChooser、createRemoteSessionConfig%20与%20attach%20banner%20索引.md)
 - [144-showSetupDialog、renderAndRun、launchResumeChooser、launchRepl、AppStateProvider 与 KeybindingSetup 索引.md](./144-showSetupDialog、renderAndRun、launchResumeChooser、launchRepl、AppStateProvider%20与%20KeybindingSetup%20索引.md)
 - [145-getSessionFilesLite、loadFullLog、SessionPreview、useAssistantHistory 与 fetchLatestEvents 索引.md](./145-getSessionFilesLite、loadFullLog、SessionPreview、useAssistantHistory%20与%20fetchLatestEvents%20索引.md)
+- [146-getSessionFilesLite、enrichLogs、LogSelector、SessionPreview 与 loadFullLog 索引.md](./146-getSessionFilesLite、enrichLogs、LogSelector、SessionPreview%20与%20loadFullLog%20索引.md)
