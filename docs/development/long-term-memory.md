@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/87`、`bluebook/guides/102` 与 `bluebook/guides/101` 的长期默认 source-quality-deep-page language 现已继续写死：
+  - `philosophy/87` 默认继续只认 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 为源码质量深页 canonical ladder
+  - `philosophy/87` 默认继续把 `contract truth / registry truth / orchestration shell / danger surface / authoritative surface` 降回 atlas / projection / 公开镜像兼容别名
+  - `guides/102` 默认继续用 plain rung 写公开镜像证据分级，不再把 `...truth` 写成新的 canonical rung
+  - `guides/101` 默认继续把 `32` 写成 builder-facing bridge，而不是旧 atlas / projection 回修前门
+  - 这三页默认统一拒收源码质量深页里旧 truth-ladder 词重新越位
 - `bluebook/philosophy/76` 与 `bluebook/navigation/README` 的长期默认 atlas-demotion language 现已继续写死：
   - `philosophy/76` 默认只做源码地图 projection / crosswalk，不再重签源码质量线 canonical ladder
   - `philosophy/76` 默认继续把 atlas 专用 `truth ladder` 降回 projection 词，不再与 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 并列

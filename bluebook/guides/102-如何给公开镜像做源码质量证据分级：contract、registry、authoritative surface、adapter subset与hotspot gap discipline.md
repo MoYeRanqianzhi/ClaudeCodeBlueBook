@@ -63,11 +63,11 @@
 而是：
 
 1. `public artifact ceiling`
-2. `contract truth`
-3. `registry truth`
-4. `current-truth surface truth`
-5. `consumer subset truth`
-6. `hotspot kernel truth`
+2. `contract`
+3. `registry`
+4. `current-truth surface`
+5. `consumer subset`
+6. `hotspot kernel`
 7. `mirror gap discipline`
 
 所以当公开镜像里出现 `resume path / snapshot / pointer / archive / adapter replay` 这些 continuity 线索时，更稳的默认动作不是宣布“恢复机制很成熟”，而是先问：
@@ -93,8 +93,9 @@
 在公开镜像研究里，下面这些词最容易互相挤占，必须先拆开：
 
 1. `contract truth`
+1. `contract`
    - 系统正式承认哪些对象、状态和动作可以存在。
-2. `registry truth`
+2. `registry`
    - 当前 build / 当前 runtime 真的注册了哪些对象。
 3. `current-truth surface`
    - 真正有资格宣布 present truth 的 sole writer / choke point / writeback seam。
@@ -115,7 +116,7 @@
 
 这一页后面的所有降格规则都建立在这三句上，而不是建立在“我很熟源码”这种阅读体感上。
 
-## 2. 第一级：先找 contract truth
+## 2. 第一级：先找 contract
 
 先看：
 
@@ -140,19 +141,19 @@
 
 - 局部实现
 
-## 3. 第二级：再找 registry truth
+## 3. 第二级：再找 registry
 
-contract truth 只回答：
+contract 只回答：
 
 - 系统设计空间里可能有哪些对象
 
-registry truth 才回答：
+registry 才回答：
 
 - 当前 build / 当前运行时到底注册了哪些对象
 
 `tasks.ts`、feature gate、tool pool 装配、plugin / MCP 注册表都属于这一层。
 
-如果不把它和 contract truth 分开，你最容易犯两类错误：
+如果不把它和 contract 分开，你最容易犯两类错误：
 
 1. 把“类型里声明存在”误当成“当前肯定能用”。
 2. 把“注册表里当前没开”误当成“架构上根本没有”。

@@ -122,6 +122,8 @@
 3. 再检查 `QueryGuard`、`sessionIngress`、`WorkerStateUploader`、`bridgePointer`、`FileEdit / FileWrite` freshness gate、PowerShell validator 与 MCP stale-capability 清理条件。
 4. 最后才决定是否重构目录；多数时候，先修写入权与时态保护，比先修分层外观更重要。
 
+这里的 `32` 现在应被读成 builder-facing 补桥页，而不是旧一层 atlas route；若它把你重新带回 atlas/projection 前门，而不是带回 `86 / 84 / 101 / 102`，就说明桥页自己又写浅了。
+
 ## 5. 最小判据
 
 ```text
