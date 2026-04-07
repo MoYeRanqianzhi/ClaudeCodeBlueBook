@@ -3928,3 +3928,4 @@
 - `03` 顶部三条 first-answer 的长期默认写法现在也应继续写死：Prompt、治理、源码质量都只保留 why 级 first answer；Prompt richer why 继续回 `84`，治理 canonical chain 继续回治理 owner chain，源码质量 canonical route 继续先见根入口与 `guides/102`。`03` 不再同时扮演 why 页和 bundled owner-card。
 - `09` 的长期默认总图句法现在也应继续写死：总图页只保留三条控制面图的判断标准与 first-answer hooks；治理 canonical formula 与源码质量完整 ladder 不再在 `09` 与 owner/frontdoor 页并排重发。
 - current-truth 的长期默认公开首跳现在也应继续写死：根入口与 navigation frontdoor 一律直接回 `guides/102`；`09` 只做 cross-line mirror，不再出现在 `102` 之前充当方法入口。
+- `09` 的 Prompt 与治理 mirror 纪律现在也应继续写死：总图页不再保留 later-maintainer 排查顺序、治理 failure order 或 Prompt witness/object inventory；这些顺序统一回 `15` 与各 owner page。`09` 只保留 constitutional hook，`41` 只保留 first-principles 验收问句，不再增量持有 Prompt production heuristics。
