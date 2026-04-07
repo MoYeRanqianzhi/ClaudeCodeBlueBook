@@ -3908,3 +3908,6 @@
 - continuity 在高流量导航页里的长期稳定首跳现在也应继续固定为 `philosophy/84`。`09 / 05 / 15 / 41` 可以继续承接跨母线总图、自校与反证信号，但不能在 continuity 问题上先于 `84` 站到第一个槽位。
 - 高流量检索/阅读地图若只是想指向“三条最高阶判断”，更稳的写法是把 `09` 明写为 `总图镜像`，再分流到 `philosophy/84 / 85 / 87`。只要 `09` 和 `84` 还被放在同一“优先看哪里”槽位，Prompt owner 漂移就会再次回潮。
 - `userbook/05` 的页首 bundled next-hop 语气也应继续降格：`security / risk / playbooks` 是机制、tail-readback、execution 的分流，不是并列 owner 集合。高流量 userbook 页里若继续把三者写成“直接回哪层 owner”，会重新抬高 `risk / playbooks` 的 owner 幻觉。
+- `navigation/03` 这类深度专题导航页的长期稳定写法也应继续固定：`09` 只能作为 `总图镜像` 出现在 bundled 入口前，不应再写成 `09 -> philosophy/84-87` 这种整包 first-hop。更稳的句法是“`09` 镜像后，再按题型分流到 `84 / 85 / 87`”。
+- `navigation/04` 的职责矩阵现在也应继续避免把 why 词和 object 词混在一个格子里。`current-truth protection` 属于 why/frontdoor 语汇，不应再和 `object / choke point / writeback seam` 一起被交给 `architecture/README`。
+- `navigation/README` 与 `userbook/05` 现在都应继续显式写出 `security（mechanism） / risk（tail readback） / playbooks（execution）` 的角色，不再让 later maintainer 从斜杠串里自行猜三者谁拥有 owner 身份。
