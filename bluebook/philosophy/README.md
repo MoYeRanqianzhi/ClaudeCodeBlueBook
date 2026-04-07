@@ -25,7 +25,7 @@
 ## 单问入口
 
 - 如果你只先判断“为什么 Prompt 必须先证明同一世界”
-  - 从 [84-世界如何合法进入模型：request assembly 与 six-stage assembly chain](<84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md>) 进入；若缺 witness / continue qualification，再到 `51`
+  - 从 [84-世界如何合法进入模型：request assembly 与 six-stage assembly chain](<84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md>) 进入；若争的是 witness、继承是否合法或 continue qualification，继续留在 `84` 的 owner next-hop，必要时再到 [81-请求编译链：可缓存、可转写、可继续](<81-请求编译链：可缓存、可转写、可继续.md>)
 - 如果你只先判断“为什么安全与省 token 是同一条治理定价链”
   - 先用 `10` 固定 canonical chain 与弱读回面，再从 [85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md](85-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E6%B2%BB%E7%90%86%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%9B%B4%E4%BC%9A%E6%8B%A6%E6%88%AA%EF%BC%8C%E8%80%8C%E6%98%AF%E6%9B%B4%E4%BC%9A%E4%B8%BA%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7.md) 进入；若还在把治理误读成统一预算器、mode、usage 或弹窗投影，再到 `61`
 - 如果你只先判断“为什么源码质量首先服务当前真相保护”

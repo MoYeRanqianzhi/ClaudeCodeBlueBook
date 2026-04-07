@@ -69,12 +69,16 @@ Prompt 失真在这一层也只该继续消费同一张 user-facing witness pack
   - 这次继续、拒收、清理或 handoff 是否仍围绕同一工作对象
 
 若这里开始靠 `systemPrompt` 截图、summary prose 或最后一条回复改判 Prompt 主语，就已经越位回第二套 Prompt 前门。
+这张 packet 也只做 user-side reject aid：它只验同一工作对象是否被继承，不签 `world-definition source`，也不签 `continue qualification`。
 
 如果继续把这一层压成用户动作，也只先记三句：
 
 1. 说不清哪层在说真话时，先退回 `09 / api / architecture`
 2. `/status`、`/doctor`、`/usage`、`compact / resume` 说得再像，也先只当怀疑入口，不直接下结论
 3. user-facing 最值钱的是 first reject path：先知道该拒收什么、退到哪层、再看深页拆解
+
+更硬一点说，`/status / /doctor / /usage` 这些都只是 weak readback surface；`/compact / /resume / /memory` 这些都只是 continuation consumer。谁拿它们直接代签 same-world、治理真相或继续资格，谁就在把 consumer 写成 compiler。
+续租也只延长仍合法的同一 lease；`resume / heartbeat / keep_alive / token refresh` 都不能替代 `re-entry / reopen / rebinding`。
 
 ## 进入控制面前的 first reject signal
 

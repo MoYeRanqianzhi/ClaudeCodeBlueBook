@@ -2,6 +2,13 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 Prompt next-hop 结论：`philosophy/README` 与 `navigation/README` 现在更明确把 Prompt 的继承、续写与 continue qualification 收回 `84 -> 81`，不再公开把 `51` 发成结果词页的 builder-facing 二跳。
+- 本轮新的 user-facing packet 结论：`userbook/05/README` 的 `目标 / 附件 / working set / next step` 现在更明确只是一张 user-side reject aid，而不是 `world-definition source` 或 `continue qualification` 的代签包。
+- 本轮新的 mechanism-owner 结论：`navigation/38` 现在更明确只做 mechanism owner route，不代签全局源码质量 verdict；`architecture/README` 也开始把结构结论直接挂回 `guides/102` 的 `change-risk record`，把对象图和 later maintainer 的变更前协议接上了。
+- 本轮新的 navigation 结论：`navigation/05 / 15 / 41` 这组高流量导航页剩下的最贵 Prompt residual，不再是公式没写，而是仍会公开分发 `guides/51` 这个 builder-facing 二跳。更稳的默认修法是：导航页统一只回 `philosophy/84`；实现顺序只留在 owner chain 内部。
+- 本轮新的 userbook 控制面结论：`userbook/05` 线真正需要继续写硬的，不是更多控制面对象，而是 `weak readback surface` 与 `continuation consumer` 的非主权边界。`/status / /doctor / /usage` 若被抬成 signer，projection 就会长成 shadow compiler / shadow pricing surface。
+- 本轮新的 continuity 结论：`Compact / Memory / Resume` 现在更明确应被读成 continuity law consumer，而不是 continuation qualification signer；时间不是免费继续的 UX 背景，而是需要续租的扩张面。
+- 本轮新的 source-quality 结论：`guides/102` 的 `change-risk record` 现在更明确该被读成 later maintainer 变更前的最小协议，而不是研究附表；写不出这张表，通常就说明 current-truth surface 仍没被真正看清。
 - 本轮新的 Prompt route 结论：`09` 这类 high-flow 总图页剩下的最贵 residual，已经不是对象没列全，而是还会公开泄漏 `51`。更稳的默认修法是：总图页统一只回 `philosophy/84`；builder-facing implement / audit 顺序只留在 `84` owner chain 内部。
 - 本轮新的 Prompt first-principles 结论：`84` 与 `51` 现在更明确把 Prompt 魔力写成四层 why：`裁决权外化`、`inheritance law`、`行动因果作者链保护` 与 `time lease renewal`。对应地，`51` 的六步顺序也更明确不是模块目录，而是 `reject cost` 排序。
 - 本轮新的 governance/security-token 结论：弱读回面之所以不能代签，最短 why 现在被进一步压成 `consumer != compiler` 与 `no verdict seam / rollback liability`；一旦让 readback surface 自证主权，`externalize / evict` 就会反转成长期证明成本。

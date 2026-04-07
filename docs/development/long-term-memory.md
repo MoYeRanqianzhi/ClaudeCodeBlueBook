@@ -8,6 +8,23 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-owner-next-hop live 记忆：
+  - `philosophy/README` 与 `navigation/README` 默认继续把 Prompt 的继承、续写、continue qualification 与 lease legality 收回 `84 -> 81`，不再把 `51` 公开发成结果词页或 builder-facing 二跳
+- 当前批次继续新增一条 user-facing-packet-boundary live 记忆：
+  - `userbook/05/README` 的 `目标 / 附件 / working set / next step` packet 默认继续只读成 user-side reject aid，不签 `world-definition source`，也不签 `continue qualification`
+- 当前批次继续新增一条 mechanism-owner-boundary live 记忆：
+  - `navigation/38` 默认继续只路由 mechanism owner，不代签全局 source-quality verdict；`architecture/README` 默认继续把结构结论 next-hop 挂回 `guides/102` 的 `change-risk record`
+- 当前批次继续新增一条 navigation-prompt-route-trim live 记忆：
+  - `navigation/05 / 15 / 41` 这组高流量导航页默认继续只把 Prompt 公开 owner route 收回 `philosophy/84`；builder-facing implement / audit 不再由导航页公开分发到 `guides/51`
+  - 导航页若再次同时发放 `first-reject order` 与 builder-facing next hop，默认按 Prompt owner singularity 残留处理
+- 当前批次继续新增一条 userbook-control-surface live 记忆：
+  - `userbook/05/README` 与 `05-06` 默认继续把 `/status / /doctor / /usage` 写成 weak readback surface，把 `Compact / Resume / Memory` 写成 continuation consumer
+  - user-facing 控制面页若再次直接拿 projection 或 continuity action 代签 same-world、治理真相或继续资格，默认按 `consumer 写成 compiler` 处理
+- 当前批次继续新增一条 continuity-time-lease live 记忆：
+  - `userbook/02/01/05` 默认继续把 `Compact / Memory / Resume` 写成 continuity law 的 consumer，不把它们写成 continuation qualification signer
+  - 更稳的默认修法顺序继续是：`先删恢复便利口气 -> 再点明 time lease renewal -> 最后补 required assets / stable witness`
+- 当前批次继续新增一条 source-quality-record live 记忆：
+  - `guides/102` 的 `change-risk record` 默认继续只读成 later maintainer 变更前的最小协议，不再被读成研究附表或写作附件
 - 当前批次继续新增一条 prompt-first-principles live 记忆：
   - `09` 这类 high-flow 总图页默认继续只把 Prompt owner route 收回 `philosophy/84`；凡再次出现 `84 / guides/51`、`84 -> 51` 或 mid-page 直接点名 `51` 的 builder-facing 顺序，默认按 public route leakage 处理
   - `84` 默认继续把 Prompt 编译链写成 `裁决权外化`；`51` 默认继续把 `stable boundary` 写成 `inheritance law`、把 `protocol rewrite` 写成 `行动因果作者链保护`、把 `continue qualification` 写成 `time lease renewal`

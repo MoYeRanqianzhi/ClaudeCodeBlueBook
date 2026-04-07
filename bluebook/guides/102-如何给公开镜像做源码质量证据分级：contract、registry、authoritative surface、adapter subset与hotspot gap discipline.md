@@ -331,6 +331,7 @@ gap discipline 的价值不是“保守一点”，而是：
 当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一份可交接的 `change-risk record`。
 
 `guides/` 在这里只负责 `change-risk record` 的字段与 gap note 写法，不替其他目录代写具体危险面。
+这份 `change-risk record` 不是研究附表，而是 later maintainer 变更前的最小协议；如果改动前还写不出这张表，就还不配宣称自己已经看清 current-truth surface。
 
 更稳的记录模板至少应包含下面几列：
 
