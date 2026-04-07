@@ -17,20 +17,10 @@
 
 ## 先记四句
 
-- 安全不是单点沙箱，也不是单点分类器；它是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 在 signer authority、truth-surface attestation、ask arbitration、continuation pricing 与 cleanup authority 上的安全侧翻译。
-- `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 不是两条结果词入口的拼接，而是同一条治理收费链。
-- 完成、终局、遗忘、清理与家族级 cleanup 都各有 signer；任何弱层都不配替强层宣布“已经没事了”。
-- 宿主不该自己从事件流回放拼当前真相；更稳的做法是消费 runtime 已外化的 truth-surface / decision window / cleanup stage verdict。
-- 任何 user-facing 状态与诊断入口，都只配读取已外化的 truth-surface、decision window 与 cleanup stage verdict，不配定义治理真相或继续资格。
-- 压缩入口只配做 continuation consumer；导出与用户侧恢复读法统一回 `risk/`，不在这里冒充 signer 链。
-- `/status / /doctor / /usage`、approval UI、summary 与 dashboard 都只配做 weak readback surface：它们只能触发怀疑、做二跳或读取已外化 verdict，不配越级充当 signer。
-- `Compact / Resume / Memory` 只配做 continuation consumer，不是 weak readback surface；cleanup tail evidence 与用户侧恢复读法统一回 `risk/`。
-- 弱读回面之所以必须弱，不是因为信息少，而是因为一旦被误读成 signer，observability 就会反向偷权，重新长出新的免费扩张通道。
-- 弱读回面一旦代签，observability 就不再是 consumer，而会长成第二个 same-world compiler / host-truth source；这不是读回增厚，而是 current truth 分叉。
-- 弱读回面不能代签的根因，也不是权限不够，而是它们不持有 `verdict seam`，也不承担 rollback / residual liability。
-- `shared_consumer_surface` 只表示不同 reader 是否仍在只读消费同一个 verdict object，不表示谁拥有 current truth；projection 字段层继续回 `appendix/87`，reprojection 分层继续回 `appendix/159`。
-- consumer surface 可以多 reader、多 dialect 并存；signer surface 不能。否则不同宿主投影会把同一 verdict 再撕成多个当前真相。
-- 这里说的 `cleanup stage verdict` 只表示前门层可见的 cleanup 读回，不自动等于更深层的 unified runtime-conformance receipt 或 future-readable finality；若要判断那条更强 signer 链，继续回深页 signer 分层。
+- 安全不是单点沙箱，也不是单点分类器；它是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 的安全侧翻译。
+- 完成、终局、遗忘、清理都各有 signer；任何弱层都不配替强层宣布“已经没事了”。
+- 宿主与 user-facing 入口只配消费 runtime 已外化的 `truth-surface / decision window / cleanup stage verdict`，不配自己从事件流回放拼当前真相。
+- `/status / /doctor / /usage` 与 approval UI 只配做 weak readback，`Compact / Resume / Memory` 只配做 continuation consumer；用户侧恢复读法统一回 `risk/`。
 
 如果把安全入口判定继续压成最短公式，也只剩三条：
 
