@@ -198,6 +198,7 @@
 - [194-2026-04-08-user-only transcript adapter split 拆分记忆.md](./194-2026-04-08-user-only%20transcript%20adapter%20split%20拆分记忆.md)
 - [195-2026-04-08-inbound normalization split 拆分记忆.md](./195-2026-04-08-inbound%20normalization%20split%20拆分记忆.md)
 - [196-2026-04-08-permission verdict ledger split 拆分记忆.md](./196-2026-04-08-permission%20verdict%20ledger%20split%20拆分记忆.md)
+- [197-2026-04-08-ingress reading chain split 拆分记忆.md](./197-2026-04-08-ingress%20reading%20chain%20split%20拆分记忆.md)
 
 用途：
 

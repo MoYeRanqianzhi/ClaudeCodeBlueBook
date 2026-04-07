@@ -507,5 +507,6 @@
 - bridge ingress 的 user-only transcript adapter 与 non-user `SDKMessage` 无第二消费面边界
 - bridge user adapter 内部的 image block repair 与 attachment path-ref materialization 边界
 - bridge permission race 的本地 pending verdict ledger 与 generic callback ownership 边界
+- bridge ingress 从 191 到 196 的六层阅读链与局部导航边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
