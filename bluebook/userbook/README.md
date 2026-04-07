@@ -336,6 +336,8 @@
   [04-专题深潜/15-账户、隐私、资格与升级专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/15-%E8%B4%A6%E6%88%B7%E3%80%81%E9%9A%90%E7%A7%81%E3%80%81%E8%B5%84%E6%A0%BC%E4%B8%8E%E5%8D%87%E7%BA%A7%E4%B8%93%E9%A2%98.md)
 - 在 IDE、Desktop、Mobile 之间继续同一工作：
   [04-专题深潜/16-IDE、Desktop、Mobile 与会话接续专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/16-IDE%E3%80%81Desktop%E3%80%81Mobile%20%E4%B8%8E%E4%BC%9A%E8%AF%9D%E6%8E%A5%E7%BB%AD%E4%B8%93%E9%A2%98.md)
+- 分清远端前端里的会话接续、输入注入与桥接审批为什么不是一件事：
+  [04-专题深潜/20-远端输入注入、桥接审批与会话接续专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/20-%E8%BF%9C%E7%AB%AF%E8%BE%93%E5%85%A5%E6%B3%A8%E5%85%A5%E3%80%81%E6%A1%A5%E6%8E%A5%E5%AE%A1%E6%89%B9%E4%B8%8E%E4%BC%9A%E8%AF%9D%E6%8E%A5%E7%BB%AD%E4%B8%93%E9%A2%98.md)
 - 管理插件、MCP、skills、hooks 与 agents：
   [04-专题深潜/17-插件、MCP、技能、Hooks 与 Agents 运维专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/17-%E6%8F%92%E4%BB%B6%E3%80%81MCP%E3%80%81%E6%8A%80%E8%83%BD%E3%80%81Hooks%20%E4%B8%8E%20Agents%20%E8%BF%90%E7%BB%B4%E4%B8%93%E9%A2%98.md)
 - 分清 `claude ...` 本身的根入口、旗标与启动模式：
@@ -510,5 +512,6 @@
 - bridge ingress 从 191 到 196 的六层阅读链与局部导航边界
 - bridge permission race 的 prompt 撤场、订阅退役、late response 消费与策略重判边界
 - permission context 变更后的本地重判广播与 remote/worker no-op surface 边界
+- 远端接续、bridge ingress 输入注入与桥接审批在用户目标层面的分工边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
