@@ -170,6 +170,7 @@
 151. 为什么 `createBridgeSession.source`、`metadata.worker_type`、`BridgeWorkerType` 与 `claude_code_assistant` 说明 session origin declaration 与 environment origin label 不是同一种 remote provenance。
 152. 为什么 `session_context.sources`、`session_context.outcomes`、`session_context.model` 与 `getBranchFromSession` 说明 repo source、branch outcome 与 model stamp 不是同一种上下文主语。
 153. 为什么 `session_context.sources`、`session_context.outcomes`、`parseGitRemote`、`parseGitHubRepository` 与 `getBranchFromSession` 说明 repo declaration 与 branch projection 不是同一种 git context。
+154. 为什么 `validateSessionRepository`、`getBranchFromSession`、`checkOutTeleportedSessionBranch` 与 `teleportToRemote` 说明 repo admission 与 branch replay 不是同一种 teleport contract。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

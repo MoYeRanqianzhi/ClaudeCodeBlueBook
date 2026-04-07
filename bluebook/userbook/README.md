@@ -490,5 +490,6 @@
 - remote session 的持续事件流消费与 direct connect 的离散交互投影边界
 - remote session 内部不同消费者的投影厚度边界
 - remote session 事件族到命令集、流式正文、后台计数与 timeout 控制的映射边界
+- teleport 的 repo admission、branch replay 与 explicit-env attach 合同边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。

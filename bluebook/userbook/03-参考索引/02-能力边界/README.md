@@ -168,3 +168,4 @@
 - [166-createBridgeSession.source、metadata.worker_type、BridgeWorkerType 与 claude_code_assistant 索引.md](./166-createBridgeSession.source、metadata.worker_type、BridgeWorkerType%20与%20claude_code_assistant%20索引.md)
 - [167-session_context.sources、session_context.outcomes、session_context.model 与 getBranchFromSession 索引.md](./167-session_context.sources、session_context.outcomes、session_context.model%20与%20getBranchFromSession%20索引.md)
 - [168-session_context.sources、session_context.outcomes、parseGitRemote、parseGitHubRepository 与 getBranchFromSession 索引.md](./168-session_context.sources、session_context.outcomes、parseGitRemote、parseGitHubRepository%20与%20getBranchFromSession%20索引.md)
+- [169-validateSessionRepository、getBranchFromSession、checkOutTeleportedSessionBranch 与 teleportToRemote 索引.md](./169-validateSessionRepository、getBranchFromSession、checkOutTeleportedSessionBranch%20与%20teleportToRemote%20索引.md)

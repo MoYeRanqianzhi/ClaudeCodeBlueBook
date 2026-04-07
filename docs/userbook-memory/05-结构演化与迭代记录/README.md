@@ -181,6 +181,7 @@
 - [177-2026-04-08-session source vs environment label split 拆分记忆.md](./177-2026-04-08-session%20source%20vs%20environment%20label%20split%20拆分记忆.md)
 - [178-2026-04-08-session context subject split 拆分记忆.md](./178-2026-04-08-session%20context%20subject%20split%20拆分记忆.md)
 - [179-2026-04-08-git context split 拆分记忆.md](./179-2026-04-08-git%20context%20split%20拆分记忆.md)
+- [180-2026-04-08-teleport repo admission vs branch replay split 拆分记忆.md](./180-2026-04-08-teleport%20repo%20admission%20vs%20branch%20replay%20split%20拆分记忆.md)
 
 用途：
 
