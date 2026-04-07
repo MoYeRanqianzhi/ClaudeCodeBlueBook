@@ -144,6 +144,7 @@
 125. 为什么 `getSessionId`、`switchSession`、`StatusLine`、`assistant viewer`、`remoteSessionUrl` 与 `useRemoteSession` 说明 `remote.session_id` 可见，不等于当前前端拥有那条 remote session。
 126. 为什么 `sessionStorage`、`hydrateFromCCRv2InternalEvents`、`sessionRestore`、`listSessionsImpl`、`SessionPreview` 与 `sessionTitle` 说明 durable session metadata 不是 live `system/init`，也不是 foreground `external_metadata`。
 127. 为什么 `SENTINEL_LOADING`、`SENTINEL_LOADING_FAILED`、`SENTINEL_START`、`useAssistantHistory`、`remoteConnectionStatus` 与 `BriefIdleStatus` 说明 attached viewer 的历史翻页哨兵不是 remote presence surface。
+128. 为什么 `discoverAssistantSessions`、`launchAssistantInstallWizard`、`launchAssistantSessionChooser`、`createRemoteSessionConfig` 与 attach banner 说明 `claude assistant` 的发现、安装、选择与附着不是同一种 connect flow。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
