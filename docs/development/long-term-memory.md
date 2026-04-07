@@ -8,6 +8,21 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/01-源码结构地图.md` 的长期默认正文桥接现已继续写死：
+  - 默认不只给 `kernel / shell / chokepoint` 地图
+  - 默认还要显式给出 `合法复杂度中心 / contract-registry-current truth 拆分 / later reject path`
+  - 默认固定做一次苏格拉底式自校：不要用文件大小替代复杂度分布，不要把恢复资产写成第二主权面
+- `userbook/02-能力地图/01-运行时主链/03-查询循环、工具池与行动编排.md` 的长期默认首问现已继续收紧：
+  - 默认不只讲工具池和 tool result
+  - 默认先讲 `runtime-first prompt`
+  - 默认先讲 `continuation pricing > answer prettiness`
+  - 默认先讲 `tool-result ABI > side effect`
+  - 后续若这页再把省 token 写回“回答更短”，默认按运行时写浅处理
+- `userbook/02-能力地图/01-运行时主链/04-会话真相层：实时状态、Transcript 与恢复账本.md` 的长期默认分层现已继续写死：
+  - 默认显式区分 `protocol transcript / display transcript / recovery asset / current truth`
+  - 默认写死 `recovery asset != current-truth signer`
+  - 默认补一组 anti-zombie / duplicate-response 的 first reject signal
+  - 后续若这页再让 `pending_action / task_summary / compact summary` 抢恢复主语，默认按真相层越权处理
 - `04-专题深潜/README` 的长期默认目录纪律现已继续写死：
   - 默认不再接受 19 条专题名平铺
   - 默认先按 `同题推进 / 扩权扩能 / 跨宿主接续 / 收口交付` 四组工作对象分流

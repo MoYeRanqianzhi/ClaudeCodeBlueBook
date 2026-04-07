@@ -2,6 +2,10 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮运行时正文深化动作: 已继续更新 `bluebook/01-源码结构地图.md`、`userbook/02-能力地图/01-运行时主链/03-查询循环、工具池与行动编排.md` 与 `04-会话真相层：实时状态、Transcript 与恢复账本.md`。这批不再把 Prompt 魔力、安全与省 token、源码先进性停留在哲学页，而是压进具体运行时页面：源码地图现在更明确先问 `合法复杂度中心 / contract-registry-current truth / later reject path`，查询循环页现在更明确先问 `runtime-first prompt / continuation pricing / tool-result ABI`，会话真相页现在更明确先问 `protocol transcript / current truth / recovery asset` 三层分工。
+- 本轮新的 Prompt 设计结论: Prompt 的“魔力”在运行时正文里最该被写成 `query loop 不是 prompt 后处理，而是 prompt contract 真正落成行动语法的执行面`。这意味着后续若再把 Prompt 深挖退回 `systemPrompt prose`、摘要体感或最后一条消息，默认按去魅失败处理。
+- 本轮新的安全/省 token 结论: 真正省 token 的默认写法现在继续收紧成 `stable bytes externalize + working set narrow + continuation qualification 不失真`。`tool_result budget / snip / microcompact / context collapse / autocompact` 之后应被视为同一 continuation-pricing 链，而不是五个松散技巧。
+- 本轮新的源码质量结论: 源码先进性在 user-facing 正文里也可以被短句化。更稳的默认桥接是：`热点大文件不是羞耻，而是合法复杂度中心`；`恢复资产只能帮助恢复现在，不能重签现在`；`stale / duplicate / zombie` 若不能沿源码内建 reject path 被清退，系统就还不算成熟。
 - 本轮专题层目录减肥动作: 已继续更新 `bluebook/userbook/04-专题深潜/README`。这一批不再把专题层保留成 19 条平铺长清单，而是正式压成四组工作对象路由：`同题推进 / 扩权扩能 / 跨宿主接续 / 收口交付`。新的结论是：专题层最值钱的不是“专题名覆盖面”，而是先把读者送进正确工作对象组，再决定是否下钻深页。
 - 本轮第一性原理深化结论: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`。Prompt 魔力现在继续被压回 `runtime-first` 的 `world entry / witness / continuation qualification`，而不是文案技巧；安全与省 token 现在继续被压回同一个预算诚实问题，即“哪些字节、动作、外置资产与时间跨度可以合法进入当前世界”；源码先进性现在继续被压回 `合法复杂度中心 + contract/registry/choke point + later maintainer rejectability`，而不是目录体感。
 - 本轮并行 Agent 新结论已正式吸收: Prompt 线最该固定的去魅句是“Prompt 不是 `systemPrompt`，而是 world-entry 编译链”；安全与省 token 线最该固定的去魅句是“省 token 不是少说话，而是 `stable bytes externalize + working set narrow + reload contract`”；源码质量线最该固定的去魅句是“先进性不是没有大文件，而是复杂度被集中到合法热点，并提前编码 stale / zombie / duplicate / rollback 这些故障模型”。
