@@ -11,6 +11,10 @@
 
 这些对象是否仍在共同保住“当前世界的准入主权”。
 
+这里还应再多记一句：
+
+- `compact / resume / re-entry` 不构成第四条治理对象线；它们只是 `continuation pricing`、`durable/transient cleanup` 与 authority re-qualification 在时间轴上的不同消费点。
+
 ## 0. 代表性源码锚点
 
 - `claude-code-source-code/src/utils/managedEnv.ts:93-220`
@@ -41,6 +45,8 @@
 4. `decision window continuity`
 5. `continuation pricing continuity`
 6. `durable/transient cleanup continuity`
+
+更硬一点说，这页审的不是“还能不能继续用”，而是这次继续是否仍值得付费、仍只续 durable assets，而没有把 transient authority 也一起续租。
 
 ## 2. 回归症状
 

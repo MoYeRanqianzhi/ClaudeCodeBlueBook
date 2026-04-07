@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 playbooks continuity 深化动作: 已继续更新 `bluebook/playbooks/77-79`。新的结论是：执行验证手册层也不该把 continuity 单列成第四类验证对象。更稳的默认写法是：`77` 只把 continuity 写成 Prompt `Continuation` 的验证点，`78` 只把它写成 `continuation pricing / durable-transient cleanup` 的消费点，`79` 只把它写成 `current-truth surface / recovery asset non-sovereignty / freshness gate` 的时间轴回归语法。
+- 本轮新的设计内涵结论: 只要 playbook 还把 “还能继续 / resume 成功 / handoff 结束” 当成结果词，而不回到 `continue verdict / continuation pricing / present truth signer`，later maintainer 在执行层就会再次学回第四主语。现在这组手册的顶层句法已经和 README / navigation / guides 对齐了。
 - 本轮 guides continuity 深化动作: 已继续更新 `bluebook/guides/99-102`。新的结论是：审读模板、治理审题和公开镜像证据分级都不该把 continuity 单列成第四平面。更稳的默认做法是：`99` 只把 continuity 写成 Prompt `Continuation` 的 consumer，`100` 只把它写成 `continuation pricing` 的消费点，`101` 只把它写成 `recovery asset non-sovereignty / anti-zombie` 的时间轴，`102` 则只把它写成 `current-truth surface candidate / temporal honesty` 的降格规则。
 - 本轮新的设计内涵结论: continuity 现在不只在 README、navigation、control-plane 页上被收回三条母线，也已经在 guides 模板层完成同一动作。后续如果哪一页又把 `compact / resume / memory / handoff` 写成独立问题域，就不只是目录漂移，而是审题模板本身已经开始教错 later maintainer。
 - 本轮 continuity 检索地图深化动作: 已继续更新 `bluebook/navigation/01-第一性原理阅读地图.md` 与 `02-能力、API与治理检索图.md`。新的结论是：只要 `记忆 / 恢复 / 交接 / 经济` 在地图层被重新读成独立平面，读者就会再次先学对象库存，再自己回压成三条母线。更稳的默认写法是：`01` 只承认 continuity 是三条母线在时间维度上的 crosswalk，`02` 只承认 `compact / resume / memory / handoff` 是三条母线的 consumer，不是第四类能力表面。

@@ -10,6 +10,10 @@
 6. `continuation qualification`
 7. `cache-safe fork reuse`
 
+这里还应再多记一句：
+
+- `compact / summary / resume / handoff` 不构成第四类 Prompt 机制；它们只是 `continuation object -> continuation qualification -> cache-safe fork reuse` 这条时间轴上的不同验证点。
+
 ## 0. 代表性源码锚点
 
 - `claude-code-source-code/src/constants/systemPromptSections.ts:16-65`
@@ -42,6 +46,8 @@
 5. `continuation object continuity`
 6. `continuation qualification continuity`
 7. `cache-safe fork continuity`
+
+更硬一点说，这里真正验证的不是“还能不能继续聊”，而是 `message lineage` 经过 transcript 重写、compact、fork 与 handoff 后，是否仍能签发同一个 continue verdict。
 
 ## 2. 回归症状
 
