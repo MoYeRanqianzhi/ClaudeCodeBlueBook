@@ -164,6 +164,7 @@
 - [160-2026-04-08-resume payload taxonomy split 拆分记忆.md](./160-2026-04-08-resume%20payload%20taxonomy%20split%20拆分记忆.md)
 - [161-2026-04-08-resume entry host split 拆分记忆.md](./161-2026-04-08-resume%20entry%20host%20split%20拆分记忆.md)
 - [162-2026-04-08-resume host family split 拆分记忆.md](./162-2026-04-08-resume%20host%20family%20split%20拆分记忆.md)
+- [163-2026-04-08-print-resume pre-stage split 拆分记忆.md](./163-2026-04-08-print-resume%20pre-stage%20split%20拆分记忆.md)
 
 用途：
 

@@ -151,3 +151,4 @@
 - [149-loadConversationForResume、deserializeMessagesWithInterruptDetection、copyPlanForResume、fileHistoryRestoreStateFromLog 与 processSessionStartHooks 索引.md](./149-loadConversationForResume、deserializeMessagesWithInterruptDetection、copyPlanForResume、fileHistoryRestoreStateFromLog%20与%20processSessionStartHooks%20索引.md)
 - [150-main.tsx、launchResumeChooser、ResumeConversation、resume.tsx 与 REPL.resume 索引.md](./150-main.tsx、launchResumeChooser、ResumeConversation、resume.tsx%20与%20REPL.resume%20索引.md)
 - [151-main.tsx、print.ts、loadInitialMessages、ResumeConversation 与 REPL.resume 索引.md](./151-main.tsx、print.ts、loadInitialMessages、ResumeConversation%20与%20REPL.resume%20索引.md)
+- [152-print.ts、parseSessionIdentifier、hydrateRemoteSession 与 loadConversationForResume 索引.md](./152-print.ts、parseSessionIdentifier、hydrateRemoteSession%20与%20loadConversationForResume%20索引.md)
