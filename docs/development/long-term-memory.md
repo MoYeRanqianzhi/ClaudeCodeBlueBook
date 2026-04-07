@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/security/README`、`bluebook/architecture/83`、`bluebook/philosophy/85` 与 `bluebook/risk/README` 的长期默认 governance-result-word-demotion language 现已继续写死：
+  - 安全/省 token/风控高阶前门默认继续先说治理顺序，不先说“更安全 / 更省 / 更严”
+  - `architecture/83` 与 `philosophy/85` 默认继续把前门问句回绑 `decision window / continuation pricing`
+  - `risk/README` 默认继续把自己写成同一治理收费链的用户侧读法，不再写成另一条治理链
 - `bluebook/architecture/README`、`bluebook/philosophy/86` 与 `bluebook/philosophy/87` 的长期默认 source-quality-frontdoor-owner-language 现已继续写死：
   - 源码质量高阶前门默认继续先说“源码质量判断”，不先说“源码先进性”
   - `philosophy/86` 默认继续把外层证据路径写成 canonical ladder，不再写成另一条“证据梯度” owner 句

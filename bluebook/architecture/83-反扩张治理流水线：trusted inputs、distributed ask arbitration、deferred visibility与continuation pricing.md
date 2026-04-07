@@ -2,7 +2,7 @@
 
 这一章回答五个问题：
 
-1. 为什么 Claude Code 的安全设计与省 Token 设计其实在压制同一个敌人。
+1. 为什么 Claude Code 的 `decision window` 与 `continuation pricing` 会同时压制同一笔免费扩张。
 2. 为什么 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 必须被放在同一条流水线上。
 3. 为什么 permission 在这里更像 typed transaction，而不是一个弹窗。
 4. 为什么 fail-open / fail-closed 不该按情绪区分，而应按资产类型区分。
@@ -52,7 +52,7 @@ Claude Code 更深的治理律，不是：
 3. `Outside`
    - 体积大、波动高、只需引用的对象迁出主 prompt
 
-所以安全与省 Token 之所以同构，不是因为它们都在“限制”，而是因为它们都在决定：
+所以这条治理链之所以同时表现成安全与省 Token，不是因为它们都在“限制”，而是因为它们都在决定：
 
 - 什么东西值不值得进入当前世界
 

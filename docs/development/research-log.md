@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 governance-result-word-demotion 深化动作: 已继续更新 `bluebook/security/README.md`、`bluebook/architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`、`bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md` 与 `bluebook/risk/README.md`。新的结论是：安全/省 token/风控高阶前门当前更贵的 residual，不再是链条没写出来，而是入口句仍容易先让 later maintainer 记住“更安全 / 更省 / 更严 / 风控更强”这组结果词。
+- 本轮新的治理结论: 更稳的安全前门 summary 必须先说治理顺序，再说用户感受。也就是先回答 `governance key / decision window / continuation pricing / durable-transient cleanup` 怎样成立，再回答为什么它会表现成安全、预算诚实、恢复成本或风控差异。
 - 本轮 source-quality-frontdoor-owner-language 深化动作: 已继续更新 `bluebook/architecture/README.md`、`bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md` 与 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`。新的结论是：源码质量高阶前门当前更贵的 residual，不再是 canonical ladder 没写出来，而是入口句仍容易先把 later maintainer 带去“源码先进性”这组评价词，再回头补证据顺序。
 - 本轮新的源码质量结论: 更稳的 frontdoor owner phrasing 应先说“这是一套源码质量判断”，再说它为什么显得先进。否则 later maintainer 学到的仍是评价词，而不是 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 与 `one writable present` 这组 first-principles object chain。
 - 本轮 prompt-summary-object-order 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`。新的结论是：高阶前门哪怕已经换掉旧路径和旧名词，仍可能在 summary 句上先教 later maintainer 记住“更强 / 更省 / 更先进”这组结果词；这会让第一性原理继续退回事后解释层。

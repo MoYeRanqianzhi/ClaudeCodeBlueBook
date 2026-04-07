@@ -15,7 +15,7 @@
 ## 先记四句
 
 - 安全不是单点沙箱，也不是单点分类器，而是一套 signer、ledger 与 lifecycle control plane。
-- `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 不是安全页和省 token 页的拼接，而是同一条治理收费链。
+- `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 不是两条结果词前门的拼接，而是同一条治理收费链。
 - 完成、终局、遗忘、清理与家族级 cleanup 都各有 signer；任何弱层都不配替强层宣布“已经没事了”。
 - 宿主不该自己从事件流回放拼当前真相；更稳的做法是消费 runtime 已外化的 truth-surface / decision window / cleanup verdict。
 - `/status / /doctor / /usage` 只配做 runtime projection；它们若越位成治理真相，应直接落回 `mode_projection_as_authority / window_projection_not_authority` 这类 reject。`Compact / Resume / Memory` 只配做 continuation consumer；`Export` 只配做 `Outside` handoff surface；用户侧恢复另沿 `signer + evidence + reopen` 去回读。
