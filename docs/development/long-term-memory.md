@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06` 的长期默认 prompt-longform-result-word language 现已继续写死：
+  - 长文里的 Prompt / 治理 / 源码质量总结句默认继续与前门页共用 `same-world test / decision window / 源码质量判断` 这组主语，不再先用“Prompt 效力 / 看起来更有效 / 源码先进性 / 拦得更严”
+  - `06` 默认继续把 Prompt 长文 summary 写成“为什么能先证明同一世界”，不再把结果词写成长文的第一回答
+  - `06` 默认继续把自校问题写成“是否退回结果词”，而不是自己重复结果词作为 owner 句
 - `bluebook/architecture/README`、`bluebook/philosophy/86`、`bluebook/philosophy/87` 与 `bluebook/guides/102` 的长期默认 source-quality-evidence-layer wording 现已继续写死：
   - 源码质量线默认继续先说证据层职责，不先说地图宿主、目录跳转或 first-answer owner 竞争
   - `philosophy/86` 默认继续把 canonical ladder 写成 later maintainer 必须遵守的证据顺序，不再写成另一套 frontdoor 命名包装

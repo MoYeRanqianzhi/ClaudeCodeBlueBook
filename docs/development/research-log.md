@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-longform-result-word-demotion 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`。新的结论是：Prompt / 治理 / 源码质量高阶前门哪怕已经在 README 与导航页收回 first-principles 主语，长文章节仍可能通过 “看起来更有效 / Prompt 效力 / 源码先进性 / 拦得更严” 这组标题与总结句，把 later maintainer 带回结果词。
+- 本轮新的长文结论: 更稳的 `06` wording 必须让长文 summary 与前门页共用同一组主语。也就是先回答 `same-world test`、`decision window` 与 `源码质量判断`，再解释它们为什么会表现成协作稳定、预算诚实、风险更低或结构更成熟。
 - 本轮 source-quality-evidence-layer-wording 深化动作: 已继续更新 `bluebook/architecture/README.md`、`bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`、`bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `bluebook/guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md`。新的结论是：源码质量线当前更贵的 residual，已经不是 canonical ladder 没写出来，而是 later maintainer 仍可能先被地图编排、首答权与宿主归属这些 map-owner 说法带走。
 - 本轮新的源码质量结论: 更稳的 source-quality wording 必须先说证据层职责，再说文档如何组织。也就是先回答哪一层定义对象、哪一层给方法、哪一层出 verdict、哪一层只保存样本与记忆，再回答模板、README 与兼容标签分别怎么降格。
 - 本轮 prompt-frontdoor-speaking-right 深化动作: 已继续更新 `bluebook/philosophy/README.md`、`bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`。新的结论是：Prompt 高阶前门当前更贵的 residual，不再是 canonical nouns 没写出来，而是 later maintainer 的第一眼仍容易先记住 `world entry / request assembly` 这组 route phrase、`Prompt 很有效` 这组结果词，或 competing verb formula。
