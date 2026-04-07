@@ -27,6 +27,10 @@ Claude Code 当前并没有公开一份名为：
 
 `rewrite session`、`correction card`、`demotion set`、`rewrite verdict` 都只配当过程壳或末端投影，不能替代这条链。
 
+这里还应再多记一句：
+
+- `stable prefix reseal -> lawful forgetting reseal -> continuation requalification` 不构成第四类 Prompt 协议块；它们只是 `Continuation` 这一 rung 在 rewrite 时间轴上的连续阶段。
+
 ## 1. Rewrite 先验：哪些内容只配做 carrier
 
 下面这些内容仍可保留，但必须降回 carrier 或 Explainability：
@@ -120,6 +124,7 @@ Prompt 世界真正被修回的，不是：
 它们必须一起证明：
 
 - 世界仍由同一 boundary bundle 约束
+- 继续资格仍围绕同一 `Authority / Boundary / Transcript / Lineage` 被正式重绑，而不是只剩下“还能继续”的体感。
 
 ## 4. rewrite 消费顺序建议
 

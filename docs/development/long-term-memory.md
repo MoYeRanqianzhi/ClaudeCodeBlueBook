@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/api/78 / 79 / 89` 的长期默认 continuity protocol language 现已继续写死：
+  - `78` 默认不把 `continuation requalification` 升成第四类 Prompt 协议块
+  - `79` 默认不把 `continuation pricing rebinding / cleanup / threshold` 升成第四条治理流程
+  - `89` 默认不把 `lineage resume` 升成第四类结构协议
+  - 三页默认统一把 continuity 收回 `Continuation / continuation pricing / lineage+anti-zombie time axis`
 - `bluebook/casebooks/73-75` 的长期默认 continuity distortion language 现已继续写死：
   - `73` 默认不把 continuity 升成第四类 Prompt 失真家族
   - `74` 默认不把 continuity 升成第四条治理失败流程

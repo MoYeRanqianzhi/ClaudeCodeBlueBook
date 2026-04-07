@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 API continuity 深化动作: 已继续更新 `bluebook/api/78 / 79 / 89`。新的结论是：API 协议层也不该把 continuity 单列成独立协议面。更稳的默认写法是：`78` 只把 continuity 写成 Prompt `Continuation` 的 rewrite 阶段，`79` 只把它写成治理 `continuation pricing / cleanup / threshold` 的连续消费段，`89` 只把它写成结构 `lineage / fresh merge / anti-zombie` 的证据槽与时间轴消费者。
+- 本轮新的协议层结论: 一旦 API 页把 `continuation requalification`、`continuation pricing rebinding`、`lineage resume` 这些对象写成新主语，而不是写成三条母线在 rewrite / recovery 时间轴上的阶段对象，later maintainer 就会在协议层重新学回第四平面。
 - 本轮 casebooks continuity 深化动作: 已继续更新 `bluebook/casebooks/73-75`。新的结论是：反例层也不该把 continuity 单列成第四类失败家族。更稳的默认写法是：`73` 只把 continuity 失真写成 Prompt `Continuation` 被 prose continuation 夺权，`74` 只把它写成治理 `continuation pricing` 被默认免费化，`75` 只把它写成 `recovery asset`、健康投影与作者记忆对 present truth 的篡位。
 - 本轮新的反例层结论: 一旦 casebook 用“恢复成功”“交接顺滑”“还能继续”这些结果词替代 `continue qualification / continuation pricing / present truth signer`，反例就会从制度失真退回体验吐槽。现在这组 casebook 顶层句法已经和 playbooks/guides/navigation 对齐了。
 - 本轮 playbooks continuity 深化动作: 已继续更新 `bluebook/playbooks/77-79`。新的结论是：执行验证手册层也不该把 continuity 单列成第四类验证对象。更稳的默认写法是：`77` 只把 continuity 写成 Prompt `Continuation` 的验证点，`78` 只把它写成 `continuation pricing / durable-transient cleanup` 的消费点，`79` 只把它写成 `current-truth surface / recovery asset non-sovereignty / freshness gate` 的时间轴回归语法。

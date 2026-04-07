@@ -60,6 +60,10 @@ Claude Code 当前并没有公开一份名为：
 
 - `governance key -> typed ask ledger -> decision window -> continuation pricing -> durable/transient cleanup -> threshold`
 
+这里还应再多记一句：
+
+- `continuation pricing rebinding -> durable/transient cleanup recustody -> threshold rebinding` 不构成第四条治理流程；它们只是同一条收费链在 rewrite 时间轴上的连续消费段。
+
 安全设计回答：
 
 - 什么能继续放开
@@ -82,6 +86,7 @@ Claude Code 当前并没有公开一份名为：
 6. `threshold` 决定未来何时必须回跳、重入或 reopen。
 
 所以安全设计与省 token 设计不是两套平行主题，而是同一条拒绝免费扩张的控制链。
+更硬一点说，这里真正被重绑的不是“继续能力”，而是这次继续是否仍值得付费、仍只续 durable assets、仍保留正式停止条件与未来 reopen 责任。
 
 ## 3. rewrite session object 与 false governance projection demotion set
 
