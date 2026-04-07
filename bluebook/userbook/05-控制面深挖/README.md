@@ -19,15 +19,16 @@
 - `申诉路径`
   - 若你发现 `05` 已经开始代签真相，先退回根 `userbook/README` 重做问题分型；若是主语争议回 `09 / philosophy / architecture`，若是 host truth 争议回 `api/`，若是现场 verdict 争议回 `playbooks/`。
 
+如果你只缺治理收费链的一屏速记，而不是控制面翻译动作，先回 [../../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；`05` 只保留用户侧控制面翻译、trusted-inputs 梯子与相邻替身拒收。
+
 如果把这一层继续压成最短作用，也只剩一句：
 
 - `05` 先回答“哪条控制面现在在说真话”，再决定你该继续、切换、降级还是退出。
 
 如果继续把治理控制面也压成用户侧 first-answer order，这一层最稳的短句还应再补一句：
 
-- 用户侧治理判断仍先走 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`；approval、mode、modal 只配做治理投影，`/status / /doctor / /usage` 只配做 runtime projection，`Compact / Resume / Memory` 只配做 continuation consumer，`Export` 只配做 `Outside` handoff surface，`cleanup result` 只配做收口结果词。
-- 换句话说，`05` 的治理顺序应与 `security/README` 的机制顺序、`risk/README` 的用户侧结算顺序严格同序，而不是只共享 noun。
-- 更稳一点说，`/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory` 只配做 continuation consumer；`Export` 只配做 `Outside` handoff surface；真正 verdict 仍留在 `truth-surface -> decision window -> durable-transient cleanup`，用户侧恢复仍留在 `signer + evidence + reopen`。
+- 治理顺序与弱读回面统一回 `../../10 -> ../../09 -> ../../security/README -> ../../risk/README`；`05` 只负责把它翻成 projection、consumer、handoff 与 trusted-inputs 的用户动作，不第二次展开完整公式。
+- 一旦问题从“哪条控制面失真”推进到“谁签字 / 谁记账 / 谁负责恢复 / 现场怎么做”，就立刻分流：机制回 `../../security/README.md`，读回回 `../../risk/README.md`，执行回 `../../playbooks/README.md`。
 
 更硬一点说，`05` 在 `userbook/` 里的发言权也只该剩：
 

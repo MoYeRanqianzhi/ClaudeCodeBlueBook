@@ -16,6 +16,8 @@
 
 - 风控不是第二套安全规则；它只读取同一条 canonical governance chain 在用户侧留下的三类对象：`product promise readback`、`reopen qualification` 与 `evidence binding`；治理主键、truth-surface、typed ask、decision window 与 cleanup 仍以 root / `09` / `security` 已承认的顺序为准。
 
+如果你只缺治理收费链的一屏速记，而不是用户侧读回对象的差异，先回 [../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；`risk/` 只保留 `product promise readback / reopen qualification / evidence binding` 的用户侧翻译。
+
 这里还应再多记一句：
 
 - 这组三个用户侧对象不是并列主题桶，而是同一条 canonical governance chain 的读回切面：`product promise readback` 对应 `decision window` 暴露的当前 admission，`reopen qualification` 对应 `continuation pricing` 之后的继续资格，`evidence binding` 对应 `durable-transient cleanup` 后仍被承认的 signer / liability 证据绑定。
@@ -55,6 +57,7 @@
 
 因此风控入口说明也不该自己回放事件去猜当前真相，而应沿 signer、证据和 runtime 已外化的 truth-surface / decision window / cleanup verdict 去回读。
 - 任何用户侧状态、诊断、压缩或导出入口都只配读取已外化 verdict；恢复是否成立只沿 `signer + evidence + reopen` 判断，并且必须与 `continuation pricing / cleanup` 的既有结论对齐。
+- `product promise readback` 也是弱读回面：它只对账已外化 verdict，不回放事件，不改判治理真相，也不越级宣布恢复成立。
 
 更稳的 first reject signal 也应先记三条：
 

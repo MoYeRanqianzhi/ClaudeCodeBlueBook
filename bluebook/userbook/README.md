@@ -19,9 +19,12 @@
 2. 安全不是弹窗多少，而是 `pricing-right -> truth-surface attestation -> typed ask / sandbox / writeback seam` 是否先成立；任何治理界面、状态读数或继续入口都只配读取 verdict，不配改判控制面。
 3. 真正省 token 不是把话压短，而是 stable bytes 已被外置且可 reload，只把当前 working set 留在场内；`Narrow / Later / Outside` 只是这条 contract 的用户侧读法。
 
+如果你只缺治理收费链的一屏速记，而不是具体控制面下潜，先回 [../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；userbook 根入口只保留问题分型、用户侧最小顺序与二跳。
+
 这里还应再多记一句：
 
-- `userbook/` 只复述 root / `09` 已承认的用户侧治理顺序：`pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`；任何治理界面、状态读数、压缩入口或导出入口都只配读取 verdict，不配改判控制面或恢复资格。
+- `userbook/` 不在根入口第二次展开完整治理顺序；治理速记统一回 `../10 -> ../09`，控制面翻译统一回 `05-控制面深挖/README`，任何治理界面、状态读数、压缩入口或导出入口都只配读取 verdict，不配改判控制面或恢复资格。
+- 弱读回面只做 `projection / readback`：`status / usage / summary / transcript / continue` 只配触发怀疑，不改判治理真相、继续资格或恢复资格。
 
 这里还要再多记一句：
 

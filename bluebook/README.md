@@ -8,7 +8,7 @@
    - Prompt 的首答来源统一回 `philosophy/84`；根入口这里只保留 `same-world compiler` 这句二跳前 hook，不在这里另起第二套 Prompt 总法。
 2. 治理
    - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
-   - 任何 user-facing bucket 都只是这条收费链的读回助记，不是治理入口里的第二套主题
+   - 任何 user-facing bucket 都只是这条收费链的读回助记，不是治理入口里的第二套主题；四类被收费资源、reject trio 与弱读回面统一回 [10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)
 3. 当前真相保护
    - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
@@ -36,7 +36,7 @@
 
 如果只先记治理入口的一句话，也只记这句：
 
-- 治理不是更会拦截，而是先固定 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，再让安全、省 Token 与恢复只读这条收费链在不同资产上的外观。
+- 治理不是更会拦截，而是先固定 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，再让安全、省 Token 与恢复只读这条收费链在不同资产上的外观；若只缺一屏速记，先回 [10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)。
 
 如果继续把入口压成 later maintainer 能直接拿来排查的最小顺序，它还应再暴露三行：
 
@@ -86,14 +86,7 @@
 
 如果入口层不给这三组顺序，目录结构优化就仍然主要在帮读者“找到页”，还没有开始帮 later maintainer “先拿到同一套排查动作”。
 
-治理线还应再暴露三条 first reject signal：
-
-- `decision-window collapse`
-  任何预算面板或状态读数开始冒充 `decision window`。
-- `projection usurpation`
-  任何界面投影、结果词或事件回放开始冒充 `authority / status / verdict`。
-- `free-expansion relapse`
-  全量可见、重结果仍占主 prompt、默认 continuation 或无决策增益的检查重新免费复活。
+治理线的四类被收费资源、reject trio 与弱读回面声明统一回 [10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；根入口这里只保留 canonical chain 与治理 failure order，不再第二次重列。
 
 具体深链、稳定节点、专题侧门与跨目录下一跳，统一交给 [navigation/README.md](navigation/README.md)；根入口不再继续代行 route map。
 
