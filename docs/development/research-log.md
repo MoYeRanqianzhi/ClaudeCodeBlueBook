@@ -2,6 +2,9 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 continuity system 深化动作: 已继续更新 `userbook/02-能力地图/01-运行时主链/04-会话真相层：实时状态、Transcript 与恢复账本.md`、`05-压缩、恢复与记忆：如何维持可继续工作的现场.md` 与 `userbook/04-专题深潜/02-连续性与记忆专题.md`。这一批把“连续性工具”继续压回同一条 law：`lawful forgetting -> stable bytes externalize -> reload law -> continuation qualification`。新的结论是：真正省 token 的默认写法不是“更短”，而是“哪些 bytes 继续留主账、哪些应被外置、哪些必须被正式遗忘”。
+- 本轮新的 continuity 结论: `summary` 不能单独充当 witness，`memory` 不能单独充当 transient state 容器，`resume` 也不能单独充当 unconditional restore。更稳的默认分层现在是：`04-会话真相层` 定义 ledger / budget / reload law，`05-压缩、恢复与记忆` 解释具体 continuity tools，`04-专题深潜/02` 把它翻译成用户如何先判 `working set / worksite / stable rule` 哪一层失真。
+- 本轮并行 Agent 新结论已吸收: Prompt 线继续把 continuity magic 写成 `continue qualification` 而不是摘要 prose；安全与省 token 线继续把 continuity 写成 `budget-honesty` 而不是“少写字”；源码质量线继续把 continuity 写成 `anti-zombie / duplicate-response / recovery non-sovereignty`，而不是“恢复能力更强”。
 - 本轮运行时正文深化动作: 已继续更新 `bluebook/01-源码结构地图.md`、`userbook/02-能力地图/01-运行时主链/03-查询循环、工具池与行动编排.md` 与 `04-会话真相层：实时状态、Transcript 与恢复账本.md`。这批不再把 Prompt 魔力、安全与省 token、源码先进性停留在哲学页，而是压进具体运行时页面：源码地图现在更明确先问 `合法复杂度中心 / contract-registry-current truth / later reject path`，查询循环页现在更明确先问 `runtime-first prompt / continuation pricing / tool-result ABI`，会话真相页现在更明确先问 `protocol transcript / current truth / recovery asset` 三层分工。
 - 本轮新的 Prompt 设计结论: Prompt 的“魔力”在运行时正文里最该被写成 `query loop 不是 prompt 后处理，而是 prompt contract 真正落成行动语法的执行面`。这意味着后续若再把 Prompt 深挖退回 `systemPrompt prose`、摘要体感或最后一条消息，默认按去魅失败处理。
 - 本轮新的安全/省 token 结论: 真正省 token 的默认写法现在继续收紧成 `stable bytes externalize + working set narrow + continuation qualification 不失真`。`tool_result budget / snip / microcompact / context collapse / autocompact` 之后应被视为同一 continuation-pricing 链，而不是五个松散技巧。

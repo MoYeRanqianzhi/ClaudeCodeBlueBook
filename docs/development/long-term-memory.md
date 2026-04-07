@@ -8,6 +8,20 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `userbook/02-能力地图/01-运行时主链/05-压缩、恢复与记忆：如何维持可继续工作的现场.md` 的长期默认首问现已继续写死：
+  - 默认不再把这一页写成命令按钮说明
+  - 默认先讲 `lawful forgetting -> stable bytes externalize -> reload law -> continuation qualification`
+  - 默认写死 `summary != witness / memory != transient state / resume != unconditional restore`
+  - 后续若这页再把省 token 写回“更短摘要”，默认按 continuity 写浅处理
+- `userbook/02-能力地图/01-运行时主链/04-会话真相层：实时状态、Transcript 与恢复账本.md` 的长期默认 continuity 预算器现已继续收紧：
+  - 默认继续保留 `reload value / stable bytes / tail-window witness`
+  - 默认明确哪些历史不配继续留在恢复主账
+  - 默认反对把 replay transcript 写成连续性本体
+- `userbook/04-专题深潜/02-连续性与记忆专题.md` 的长期默认目录纪律现已继续写死：
+  - 默认先问 `working set / worksite / stable rule` 哪一层失真
+  - 默认不再按命令名直接分流
+  - 默认把 `/compact / /resume / /memory / checkpointing` 分成不同工作对象动作
+  - 后续若这页又退回按钮导览，默认按专题层回胖处理
 - `bluebook/01-源码结构地图.md` 的长期默认正文桥接现已继续写死：
   - 默认不只给 `kernel / shell / chokepoint` 地图
   - 默认还要显式给出 `合法复杂度中心 / contract-registry-current truth 拆分 / later reject path`
