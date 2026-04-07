@@ -173,6 +173,7 @@
 154. 为什么 `validateSessionRepository`、`getBranchFromSession`、`checkOutTeleportedSessionBranch` 与 `teleportToRemote` 说明 repo admission 与 branch replay 不是同一种 teleport contract。
 155. 为什么 `createBridgeSession.events`、`initialMessages`、`previouslyFlushedUUIDs` 与 `writeBatch` 说明 session-create events 不是 remote-control 历史回放机制。
 156. 为什么 `session_context.model`、`metadata.model`、`lastModelUsage`、`modelUsage` 与 `restoreAgentFromSession` 说明 create-time model stamp、live override shadow、durable usage ledger 与 resumed-agent fallback 不是同一种 model ledger。
+157. 为什么 `initialMessageUUIDs`、`previouslyFlushedUUIDs`、`createBridgeSession.events` 与 `writeBatch` 说明注释里的 session creation events 不等于 bridge 的真实历史账。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

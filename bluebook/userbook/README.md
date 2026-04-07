@@ -493,5 +493,6 @@
 - teleport 的 repo admission、branch replay 与 explicit-env attach 合同边界
 - bridge 的 session birth、history hydrate 与 ingress flush 合同边界
 - model 的 create-time stamp、live shadow、durable usage 与 resumed fallback 边界
+- bridge 的 initial-message local seed、真实 delivery ledger 与旧注释语义边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
