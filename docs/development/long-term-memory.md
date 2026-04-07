@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/00-导读`、`00-总览`、`00-蓝皮书总览` 与 `02-使用指南` 的长期默认 bluebook root-frontdoor language 现已继续写死：
+  - `00-导读` 默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
+  - `00-总览` 与 `00-蓝皮书总览` 默认只做兼容跳板，不额外签 frontdoor verdict
+  - `02-使用指南` 默认也先判工作对象与控制面，再选命令/技能/工具/子代理入口
+  - 这组根入口默认统一不把 continuity 升成第四条进入主题或第四类技巧专题
+  - 这组根入口默认统一把 continuity 收回 `Continuation / continuation pricing / stable-bytes reload law` 的时间轴同题
 - `bluebook/api/README`、`guides/README`、`playbooks/README` 与 `casebooks/README` 的长期默认 evidence-layer README language 现已继续写死：
   - `api` 默认不把 continuity 升成第四类 API 平面
   - `guides` 默认不把 continuity 升成第四类模板域

@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 bluebook 根入口深化动作: 已继续更新 `bluebook/00-导读.md`、`00-总览.md`、`00-蓝皮书总览.md` 与 `02-使用指南.md`。新的结论是：蓝皮书根入口和使用入口也必须继承同一组 `问题分型 -> 工作对象 -> 控制面 -> 入口`，否则读者会在最早两跳里重新学回“按标题找页”的第二前门语言。
+- 本轮新的根入口结论: `00-总览 / 00-蓝皮书总览` 这类兼容页不能再只是“旧链接跳板”，还必须显式承认自己没有额外的 frontdoor verdict 签发权；`00-导读` 与 `02-使用指南` 则必须显式拒收“把 continuity 写成第四主题”这种时间轴越位。更稳的默认写法是：根入口只负责前言与顺序，使用层只负责把同一对象链翻译成用户动作，不再各自长第二套总论。
 - 本轮 evidence-layer README 深化动作: 已继续更新 `bluebook/api/README`、`guides/README`、`playbooks/README` 与 `casebooks/README`。新的结论是：目录证据层前门也不该把 continuity 单列成第四类 API 平面、模板域、执行手册家族或失败样本家族。更稳的默认写法是：它们都只把 continuity 写成 Prompt `Continuation`、治理 `continuation pricing` 与当前真相收口在各自 evidence layer 上的时间轴消费者。
 - 本轮新的目录证据层结论: 当 `api / guides / playbooks / casebooks` 这些 README 还不能共享“先判母线与对象，再判 contract / template / verdict / sample”的顺序时，later maintainer 仍会在目录层先学到层名，再自己补对象链。现在这四层也开始共享同一组 first-answer order。
 - 本轮 userbook residual time-axis 深化动作: 已继续更新 `bluebook/userbook/00-阅读路径`、`02-能力地图/01-运行时主链/README`、`03-参考索引/01-命令工具/06-命令类型、执行语义与可见性索引.md`、`03-参考索引/05-任务到入口速查矩阵.md` 与 `03-参考索引/06-高价值入口运行时合同速查.md`。新的结论是：这些残留页也不该把 continuity 单列成第五主线、第四类命令对象、第五类任务簇或独立合同家族。更稳的默认写法是：它们只把 continuity 写成同一工作对象在时间轴上的继续、压缩、恢复与附着动作，并继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`。
