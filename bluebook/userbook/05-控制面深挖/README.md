@@ -109,6 +109,15 @@
 
 如果 `05` 不能和根 `userbook/README`、`01`、`04` 共享同一组 first-answer order，它就会重新退回“控制面话题集合”，而不是用户真正可执行的判断层。
 
+Prompt 失真在这一层也只该继续消费同一张 user-facing witness packet：
+
+- `目标 = message_lineage_ref`
+- `附件 = section_registry_ref + stable_prefix_ref`
+- `working set = protocol_transcript_ref + continuation_object_ref`
+- `next step = continue_qualification_verdict`
+
+若这里开始靠 `systemPrompt` 截图、summary prose 或最后一条回复改判 Prompt 主语，就已经越位回第二套 Prompt 前门。
+
 如果继续把这一层压成用户动作，也只先记三句：
 
 1. 说不清哪层在说真话时，先退回 `09 / api / architecture`

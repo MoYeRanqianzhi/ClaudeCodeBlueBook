@@ -54,7 +54,11 @@ authority source:
 assembly path:
 compiled request summary:
 compiled request diff:
-witness_chain_ref:
+message_lineage_ref:
+section_registry_ref:
+stable_prefix_ref:
+protocol_transcript_ref:
+continuation_object_ref:
 stable bytes ledger:
 lawful forgetting ABI:
 current object:
@@ -158,7 +162,11 @@ Prompt implementation 更稳的评审顺序是：
 [ ] pending action 已写清
 [ ] next-step guard 已写清
 [ ] rollback object 已写清
-[ ] witness chain ref 已写清
+[ ] message lineage ref 已写清
+[ ] section registry ref 已写清
+[ ] stable prefix ref 已写清
+[ ] protocol transcript ref 已写清
+[ ] continuation object ref 已写清
 [ ] lawful forgetting 之后保留的 ABI 已写清
 [ ] continuation qualification verdict 已写清
 [ ] 如果不读全文，接手者仍能继续
@@ -185,7 +193,11 @@ Prompt implementation 更稳的评审顺序是：
 authority source:
 assembly path:
 compiled request diff:
-witness_chain_ref:
+message_lineage_ref:
+section_registry_ref:
+stable_prefix_ref:
+protocol_transcript_ref:
+continuation_object_ref:
 stable bytes drift:
 lawful forgetting ABI:
 handoff guard:

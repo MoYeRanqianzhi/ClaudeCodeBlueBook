@@ -19,6 +19,18 @@
 2. 扩张或权限判断不要先看弹窗、`status`、`usage` 或继续入口；先看这次动作、可见性或继续请求有没有被当前控制面准入。
 3. 若问题已经是“为什么这里会省 token / 为什么要 `Later` / `Outside`”，统一回 `security/README`；`userbook/` 根入口只保留用户动作与二跳。
 
+更硬一点说，这里只翻两组 owner 结论：
+
+- Prompt 线只翻 user-facing witness：目标、附件、working set、next step；owner 级 ABI 仍回 `philosophy/84 -> guides/51`
+- 治理线只翻 user-facing readback：`/status / /doctor / /usage`、approval UI、`Compact / Resume / Memory` 都只是弱读回面或 continuation consumer；signer、cleanup authority 与 reopen 机制仍回 `10 / security / risk`
+
+这里的 Prompt user-facing witness 也默认只认一张固定 alias table：
+
+- `目标 = message_lineage_ref`
+- `附件 = section_registry_ref + stable_prefix_ref`
+- `working set = protocol_transcript_ref + continuation_object_ref`
+- `next step = continue_qualification_verdict`
+
 如果你只缺治理收费链的一屏速记，而不是具体控制面下潜，先回 [../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；userbook 根入口只保留问题分型、用户侧最小顺序与二跳。
 
 这里还应先钉死六条 user-facing discipline：
@@ -27,6 +39,7 @@
 - `userbook/` 默认只把已承认的对象链、控制面与可见边界翻成用户侧判断与二跳，不替 `README / 09 / api` 补签 runtime-core 缺口。
 - `userbook/` 不在根入口第二次展开完整治理顺序；治理速记统一回 `../10 -> ../09`，控制面翻译统一回 `05-控制面深挖/README`。
 - 别拿界面投影替系统真相说话；弱读回面总声明统一回 `10`。
+- 别拿 user-facing witness 替 owner 级 Prompt ABI 说话；Prompt 线的 canonical object chain 统一回 `84 / 51`。
 - `CLAUDE.md / hooks / settings` 能影响行为，但不能单独证明你仍在同一工作对象上。
 - `continuity` 在 `userbook/` 里也不是第四条使用主题；它只是“同一工作对象能否继续”的时间轴读法。所以 user-facing 第一问不该是“该点哪个入口”，而应先判 `上下文送错 / 扩张或权限判错 / 旧状态污染`。
 

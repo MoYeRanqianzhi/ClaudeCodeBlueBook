@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 prompt-abi-consumer-aliasing 深化动作：已继续更新 `36` 与 `userbook` 的 Prompt consumer 页。新的结论是：Prompt 线真正容易漂移的，不只是 owner statement，而是 consumer 页各自用不同 user nouns 重新讲同一件事。更稳的默认修法是：host audit 直接写六个 ABI 槽位，userbook 则固定只用一张 alias table，把 `目标 / 附件 / working set / next step` 回绑到同一张 canonical Prompt ABI。
 - 本轮 governance-self-audit-alignment 深化动作：已继续更新 `06`。新的结论是：当 owner 页已经把 one-order / weak-readback / reopen tail-chain 写硬之后，`06` 最容易滞后的地方，是仍用“统一预算器”“更严拦截”“压缩文本”这类中层词做自校。更稳的默认修法是：把这些词继续压成“我是不是又把 signer、弱读回面、continuation consumer 与 cleanup 结果词写混了”的反问。
 - 本轮 prompt-abi-owner-collapse 深化动作：已继续更新 `84`、`51`、`36` 与 userbook 的 Prompt consumer 页。新的结论是：当前 Prompt 线更贵的 residual，已经不再是“Prompt 为什么强”没写，而是 same-world witness 在 frontdoor、自校、host audit 与 user translation 之间仍可能各自变体。更稳的默认修法是：让 `84` 独占 canonical Prompt ABI，`51` 把它写成 builder-facing 复用对象，`36` 把它写成 host/handoff 必填字段，`userbook` 只做最短翻译。
 - 本轮新的 Prompt 结论：`message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict` 这 6 个引用现在更明确被写成 Prompt 线唯一该复用的 ABI；谁开始靠 summary prose、最后一条回复、`/resume` 成功提示或 compact 结果重签它，谁就在制造第二 Prompt 前门。

@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/guides/36` 与 `bluebook/userbook/*` Prompt consumer 页的长期默认 prompt-abi-consumer-aliasing language 现已继续写死：
+  - `guides/36` 默认继续不用抽象 `witness_chain_ref` 兜底，而是直接写出六个 Prompt ABI 槽位
+  - `userbook/README`、`userbook/01-主线使用/02`、`userbook/04-专题深潜/08` 与 `userbook/05-控制面深挖/README` 默认继续共用同一张 alias table：`目标 = message_lineage_ref`、`附件 = section_registry_ref + stable_prefix_ref`、`working set = protocol_transcript_ref + continuation_object_ref`、`next step = continue_qualification_verdict`
+  - 更稳的默认修法顺序继续是：`owner 页先写 canonical ABI -> host audit 展开显式槽位 -> userbook 只复用固定 alias table`
 - `bluebook/06-第一性原理与苏格拉底反思.md` 的长期默认 governance-self-audit-alignment language 现已继续写死：
   - `6.23 / 6.46 / 6.55 / 6.58 / 7.5` 默认继续优先反问“是否又把 signer、弱读回面、continuation consumer 与 cleanup 结果词写混”，不再只停在“统一预算器 / 更严拦截 / 压缩文本”这类中层概括
   - 更稳的默认修法顺序继续是：`先删中层结果词 -> 再点名同一秩序里的非对称 -> 最后才回 owner 页`
