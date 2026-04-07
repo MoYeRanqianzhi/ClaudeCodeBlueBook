@@ -12,6 +12,7 @@
    - transcript、summary、状态词和恢复资产都可能只是投影，不自动拥有签字权。
 
 这里也要先压住一个常见误读：`/compact`、`/resume`、`/memory` 不是另一条运行时主线；它们只是同一工作对象在 `session truth -> continuation` 这段时间轴上的动作与合同。
+更准确地说，这里的 continuity 不是独立对象面，而是 `world entry -> command bus -> query loop -> session truth` 落到时间轴之后的继续资格与恢复合同。
 
 如果你在这一层还分不清“哪一环在编译世界、哪一环只是在展示世界”，就不要继续靠目录名碰运气。
 

@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/userbook/00-阅读路径`、`02-能力地图/01-运行时主链/README`、`03-参考索引/01-命令工具/06-命令类型、执行语义与可见性索引.md`、`03-参考索引/05-任务到入口速查矩阵.md` 与 `03-参考索引/06-高价值入口运行时合同速查.md` 的长期默认 userbook residual time-axis language 现已继续写死：
+  - `00-阅读路径` 默认不把连续性与记忆专题升成独立第五主线
+  - 运行时主链 README 默认继续把 continuity 写成 `session truth -> continuation` 的恢复合同
+  - 命令类型索引默认不把 `/compact / /resume / /memory` 升成第四类命令对象
+  - 任务矩阵默认不把 continuity 任务升成第五类任务簇
+  - 高价值入口合同页默认不把 continuity 入口升成独立合同家族
+  - 这组残留页默认统一把 continuity 收回同一工作对象在时间轴上的继续、压缩、恢复与附着动作
+  - userbook 残留入口页默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
 - `bluebook/userbook/02-能力地图/02-执行与工具/README`、`03-治理与边界/README`、`04-扩展与生态/README`、`03-参考索引/01-命令工具/05-设置、状态、预算与调参入口索引.md` 与 `03-参考索引/02-能力边界/01-能力状态矩阵.md` 的长期默认 userbook mid-layer language 现已继续写死：
   - 执行与工具 README 默认不把 continuity 升成第三条执行主线
   - 治理与边界 README 默认不把 continuity 升成第四条治理线

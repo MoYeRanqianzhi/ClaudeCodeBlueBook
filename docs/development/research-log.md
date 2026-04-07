@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 userbook residual time-axis 深化动作: 已继续更新 `bluebook/userbook/00-阅读路径`、`02-能力地图/01-运行时主链/README`、`03-参考索引/01-命令工具/06-命令类型、执行语义与可见性索引.md`、`03-参考索引/05-任务到入口速查矩阵.md` 与 `03-参考索引/06-高价值入口运行时合同速查.md`。新的结论是：这些残留页也不该把 continuity 单列成第五主线、第四类命令对象、第五类任务簇或独立合同家族。更稳的默认写法是：它们只把 continuity 写成同一工作对象在时间轴上的继续、压缩、恢复与附着动作，并继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`。
+- 本轮新的残留层结论: 当路径页、矩阵页、命令类型页和高价值合同页还在把 continuity 当作额外主题时，userbook 的 shared order 其实还没有真正闭环。现在这组残留页也开始统一承认：它们只承接时间轴动作，不再另起主题平面。
 - 本轮 userbook mid-layer 深化动作: 已继续更新 `bluebook/userbook/02-能力地图/02-执行与工具/README`、`03-治理与边界/README`、`04-扩展与生态/README`、`03-参考索引/01-命令工具/05-设置、状态、预算与调参入口索引.md` 与 `03-参考索引/02-能力边界/01-能力状态矩阵.md`。新的结论是：user-facing 中层页也不该把 continuity、扩展或预算分流误写成新的并列主线。更稳的默认写法是：执行与工具只把 continuity 写成 task/output/recovery 的时间轴，治理与边界只把它写成 `decision window -> continuation pricing -> cleanup-before-resume`，扩展与生态只把扩展面写成 source/projection/gate 路径，状态矩阵与设置/预算索引则只把它们写成时间轴动作与状态分类，而不是 pseudo-authority。
 - 本轮新的中层目录结论: userbook 如果在 `02-执行与工具 / 03-治理与边界 / 04-扩展与生态 / 关键索引页` 这些中层页里还不能继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`，就会在二跳之后重新长回 route-map drift。现在这一层也开始共享同一组 first-answer order。
 - 本轮 userbook path/map 深化动作: 已继续更新 `bluebook/userbook/00-导读`、`00-阅读路径`、`02-能力地图/01-运行时主链/README` 与 `03-参考索引/04-功能面七分法.md`。新的结论是：路径页与总图页也不该把 continuity 单列成读者问题、独立主线或第九个运行时层。更稳的默认写法是：`00` 只把它写成同一工作对象在时间轴上的继续条件，运行时主链 README 只把它写成 `session truth -> continuation` 的动作，功能面七分法只把它写成主层与横切面的时间轴复用。
