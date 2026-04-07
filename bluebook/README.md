@@ -33,6 +33,27 @@
 
 - Prompt 的魔力不在措辞，而在它先解出唯一 `world-defining winner`，再 `compile world-entry -> verify witness ABI -> enforce continue qualification`；`Explainability` 只负责诊断，不负责改判。
 
+如果继续把 Prompt 前门再压成 first-answer crosswalk，也只该再补六行：
+
+1. `Authority`
+   - canonical object 是 `world-defining winner`
+   - 常见 counterfeit 是 `systemPrompt` 截图、`CLAUDE.md`、settings merge 或“最后一条看起来最强的话”
+2. `Boundary`
+   - canonical object 是 `section registry / stable prefix / byte boundary`
+   - 常见 counterfeit 是“更长 instruction”或“把所有上下文都塞进来”
+3. `Transcript`
+   - canonical object 是 `protocol transcript`
+   - 常见 counterfeit 是 `display transcript / UI transcript`
+4. `Lineage`
+   - canonical object 是 `message lineage / tool-use identity chain`
+   - 常见 counterfeit 是 summary、title、pointer 或 handoff prose
+5. `Continuation`
+   - canonical object 是 `continuation object -> continue qualification verdict`
+   - 常见 counterfeit 是“看起来还能接着聊”的平滑感
+6. `Explainability`
+   - canonical object 是 diagnostic naming
+   - 常见 counterfeit 是 release card、steady verdict 或别的解释壳重新改判世界
+
 如果只先记治理前门的一句话，也只记这句：
 
 - 治理不是更会拦截，而是先由 governance key 外化当前真相，再给动作、可见性、上下文与 continuation 的一切扩张定价；安全、省 Token 与恢复都只是这条收费链的外观。

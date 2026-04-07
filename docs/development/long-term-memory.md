@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`bluebook/navigation/15` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 Prompt-crosswalk language 现已继续写死：
+  - 根 `README` 默认继续把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 写成 canonical object 与 counterfeit 的对照
+  - `navigation/15` 默认继续写死 Prompt shorthand 必须回绑 canonical node，并明确 `display transcript` 不得越级成 `protocol transcript` 或 `continuation verdict`
+  - `06` 默认继续保留 “Prompt 魔力” 的四条 hard claims 与四条 counterfeit test
+  - 这组三页默认统一拒收把 `systemPrompt` 文本、UI transcript、summary prose 或 handoff card 升格成 Prompt 主语
 - `bluebook/01-源码总地图`、`01-源码结构地图`、`05-功能全景与API支持` 与 `08-能力全集、公开度与成熟度矩阵` 的长期默认 atlas/root-map language 现已继续写死：
   - `01-源码总地图` 默认只做 repo-wide map projection，不额外签 canonical ladder / current-truth verdict / product promise
   - `01-源码结构地图` 默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`

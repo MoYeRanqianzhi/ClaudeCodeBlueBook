@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 Prompt crosswalk 深化动作: 已继续更新 `bluebook/README.md`、`bluebook/navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`。新的结论是：Prompt 前门如果只共享 `Authority / Boundary / Transcript / Lineage / Continuation / Explainability` 这些 nouns，而不给 canonical object、常见 counterfeit 与 truth-plane non-promotion，later maintainer 仍会在入口层重新把 system prompt 文本、UI transcript、summary prose 与 handoff card 误升成第二主语。
+- 本轮新的 Prompt 设计结论: Prompt 的“魔力”现在被进一步压成四条 hard claims：唯一 `world-defining winner`、`protocol transcript` 优先于 `display transcript`、`continuation qualification` 优先于平滑叙事、`Explainability` 只有命名权没有改判权。更稳的默认前门现在不只要给公式，还要给 counterfeit test。
 - 本轮 atlas/root-map 深化动作: 已继续更新 `bluebook/01-源码总地图.md`、`01-源码结构地图.md`、`05-功能全景与API支持.md` 与 `08-能力全集、公开度与成熟度矩阵.md`。新的结论是：地图页、能力全景页与矩阵页也必须共享 `问题分型 -> 工作对象 -> 控制面 -> 入口`，否则 atlas 会在目录层重新长回“目录观感 / 存在性清单 / 产品承诺”三者混写的第二前门语言。
 - 本轮新的 atlas 结论: `01-源码总地图` 这类兼容地图必须明确自己只有 repo-wide projection 权，没有 canonical ladder、current-truth verdict 或产品承诺的签发权；`05` 与 `08` 则必须明确自己只有 surface inventory 权与四层分层记账权，不能把 `current admission` 或 `product promise` 从控制面正文里偷前门。更稳的默认写法是：atlas 先交代对象和边界，再把 deeper judgment 退回 `09 / guides/102 / api / playbooks`。
 - 本轮并行 Prompt 子 Agent 已返回的稳定结论: Prompt 的“魔力”更接近 `same-world compiler`，真正难抄走的不是 system prompt 文本，而是 `世界准入 -> 协议转写 -> 身份保全 -> 合法继续 -> 可解释失稳` 这条运行时编译链。后续若要继续深化 Prompt 线，优先缺口是 `bluebook/README`、`navigation/15` 与 `06-第一性原理与苏格拉底反思` 三页里缺一张更短的 canonical object / counterfeit crosswalk。

@@ -36,10 +36,12 @@
 - `world entry / request assembly / six-stage assembly chain` 与 `request-surface constitution / cognitive contract / byte boundary / continuation truth` 都只是 route shorthand，首次出现必须回绑到 canonical node
 - 如果继续往下排查，最稳的 witness 顺序也只认：`message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
 - 这条 witness order 首先是证据可采顺序，不是阅读顺序；`summary / card / handoff prose` 只配做 Explainability 末端投影，不得倒灌成 Prompt 主语
+- 更稳的 shorthand crosswalk 也只该再补五行：`request-surface constitution -> Authority`，`cognitive contract -> Boundary + Transcript`，`byte boundary -> Boundary`，`continuation truth -> Continuation`，`steady / release / handoff card -> Explainability tail projection`
 - 如何确认 `message lineage`、`section registry / dynamic boundary`、`protocol transcript`、`continuation qualification` 与接手连续性都还成立
 - 第一条反证信号常常不是回答变差，而是 `systemPrompt` 截图、最后一条消息或 UI transcript 又开始篡位成 Prompt 主语
 - 如果 `compact / handoff / steady` 之后留下来的只是故事，不再是 `continuation qualification`，那它就不是 Prompt 稳态，而只是 Prompt 风格延续
 - `release card / steady verdict / handoff prose` 只配做 Explainability 末端投影；一旦这些壳开始定义世界，Prompt 就已经从 constitution 退回 narration
+- truth-plane 也要先钉死一条禁止越级升格：`display transcript -> protocol transcript -> continuation verdict` 不能反向改判；display 只配触发怀疑，不能跳级签世界
 - handoff consumer 有没有合法反对权，还是系统把 `delivery` 偷换成了 `acceptance`
 - continuity 失真时，最先断的也不该只是“还能不能继续聊”，而应先问 `continuation_object_ref`、`continue_qualification_verdict` 与 reopen 条件是否还在同一条 witness chain 上
 
