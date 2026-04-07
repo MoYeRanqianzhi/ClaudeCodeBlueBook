@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 source-quality-aura-demotion 深化动作: 已继续更新 `bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`、`bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `bluebook/philosophy/README.md`。新的结论是：源码质量线哪怕已经不再直接说“先进性”，later maintainer 仍可能被“成熟度 / 源码质量很高 / 结构先进性”这组 aura wording 拉回评奖式判断。
+- 本轮新的源码质量对象结论: 更稳的 source-quality wording 必须先问 present protection、boundary provability、writeback seam、first reject path 与 refactor room 是否成立，再谈是否值得复用。也就是先给对象判断，不先给成熟度评价。
 - 本轮 governance-ui-noun-demotion 深化动作: 已继续更新 `bluebook/security/README.md`、`bluebook/architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`、`bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md` 与 `bluebook/risk/README.md`。新的结论是：治理线哪怕已经从 bucket wording 收回 canonical chain，later maintainer 仍会被 status、usage、approval、rollback、cleanup result 这组 UI noun / result wording 拉回投影层。
 - 本轮新的治理接口结论: 更稳的治理 wording 必须先说节点、资产与 authority 的失效，再说界面、状态和结果词怎样读回这些结算投影。也就是先问哪一个 canonical node 失效、哪类 asset 被清退或留存、谁还配签字，再问 status/approval/rollback/handoff 这些接口名怎样出现。
 - 本轮 prompt-magic-witness-chain 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`。新的结论是：Prompt “有魔力”这件事不该再被拆成多组相近的去魅标题；更稳的写法是让开头、`2.10`、长文去魅段与判据卡都共同回到同一条 `Authority -> Boundary -> Transcript -> Lineage -> Continuation` witness chain。

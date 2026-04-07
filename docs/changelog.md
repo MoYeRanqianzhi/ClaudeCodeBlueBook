@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`、`bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `bluebook/philosophy/README.md`，把源码质量 aura wording 继续收回对象判断：`86` 现在更明确先审“过去不得写坏现在”是否被写成制度对象，`87` 现在更明确先复用源码判断而不是“成熟度”，`philosophy/README` 现在把失败信号收回 canonical ladder 与 writeback seam / retreat layer
 - 继续更新 `bluebook/security/README.md`、`bluebook/architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md`、`bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md` 与 `bluebook/risk/README.md`，把治理线残留的 UI noun / result wording 再次降格：`security/README` 与 `risk/README` 现在把状态、诊断、压缩、导出入口统一收回“只读 verdict”的消费者地位，`83` 现在把 failure order 收回 canonical node/asset/authority 失效，`85` 现在把审批/统计/恢复界面与 status/rollback/handoff 名词统一收回治理接口名
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把 Prompt “为什么显得有魔力”的主解释继续收束到同一条 witness-chain：`06` 现在更明确把开头 hard claims、`2.10`、`6.32 / 6.45 / 6.54 / 6.57` 与 `7.4` 共同压回 `same-world compiler = Authority -> Boundary -> Transcript -> Lineage -> Continuation`，并把 `Explainability` 固定回只负责命名失稳
 - 继续更新 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `bluebook/userbook/04-专题深潜/README.md`，把“目录优化 / 目录结构”继续从源码质量判断对象降回承载纪律：`87` 现在更明确文档分工只复用同一条证据顺序，`userbook/04` 现在更明确专题首页的价值在于工作对象翻译、最小顺序提示与退出条件，而不是目录优化本身

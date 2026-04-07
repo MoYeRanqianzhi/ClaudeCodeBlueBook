@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/86`、`bluebook/philosophy/87` 与 `bluebook/philosophy/README` 的长期默认 source-quality-aura-demotion language 现已继续写死：
+  - 源码质量线默认继续先说 present protection、boundary provability、writeback seam、first reject path 与 refactor room，不先说“先进 / 成熟 / 很高 / 值得复制”
+  - `philosophy/86` 默认继续把苏格拉底追问写成“过去不得写坏现在是否被写成制度对象”，不再把“结构先进性”当被判对象
+  - `philosophy/87` 默认继续把启发与自校写成“复用源码判断 / 下源码质量判断”，不再写“复制成熟度 / 源码质量很高”
+  - `philosophy/README` 默认继续把源码质量失败信号回绑 canonical ladder 与 writeback seam / retreat layer，不再回到 aura 压缩句
 - `bluebook/security/README`、`bluebook/architecture/83`、`bluebook/philosophy/85` 与 `bluebook/risk/README` 的长期默认 governance-ui-noun-demotion language 现已继续写死：
   - 治理线默认继续先说 canonical node、asset 与 authority 的失效，不先背 status、usage、approval、rollback、cleanup result 这组 UI noun / result wording
   - `security/README` 与 `risk/README` 默认继续把状态、诊断、压缩、导出入口写成“只读 verdict”的 consumer，不再逐项枚举命令名当记忆钩子
