@@ -3341,3 +3341,5 @@
 - 这条治理词法纪律现已进一步固定为五分法：`approval / mode / modal = 治理投影`，`/status / /doctor / /usage = runtime projection`，`Compact / Resume / Memory = continuation consumer`，`Export = Outside handoff surface`，`cleanup result = 收口结果词`。user-facing 前门若再把它们混叫成 `consumer / projection`，应优先视为边界退化而不是措辞小问题。
 - `reopen` 现在应被长期视为 verdict 之后的用户侧恢复链，而不是 `durable-transient cleanup` 的尾词。更稳的顺序是：先 `truth-surface -> decision window -> durable-transient cleanup`，再另判 `signer + evidence + reopen`；凡是把 `reopen` 并进 cleanup 槽的写法，都在偷混治理 verdict 与恢复签发。
 - 下一条源码质量目录精修线也已被 sidecar 收敛：`navigation/04` 不能再继续扮演目录宪法 owner，`philosophy/87` 也不该再把 speaking-rights 正式回指给它。若继续推进源码质量线，优先做 demotion propagation，不优先再改高阶哲学论点。
+- 这条源码质量目录纪律现已进一步固定为：`navigation/04` 只配做 next-hop，不再展开目录宪法正文；各目录 README 负责各自边界；`guides/102` 负责 canonical rung 与降格规则；`navigation/README` 负责跨目录 next-hop。任何 route 页若开始提前指定某篇深页的 owner 身份，就又在制造第二套入口政治。
+- `philosophy/87` 这类源码质量 owner 页可以提出“目录是否又多 writer”这类自校，但不该再把 speaking-rights 本身正式托管给 `navigation/04`；源码质量线更稳的做法是只点名混层风险，再把目录边界回给 README / `guides/102` / `navigation/README` 这三层。

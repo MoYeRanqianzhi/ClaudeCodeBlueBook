@@ -7177,3 +7177,6 @@
 - `05/06-Status...` 这页的 fail route 也已收紧：真正 verdict 明确留在 `truth-surface -> decision window -> durable-transient cleanup`，用户侧恢复另沿 `signer + evidence + reopen` 去回读；其“机制主语与治理 verdict”回跳也从本地 `05/README` 改成根 `09 / api`，避免 userbook 本地页再假装拥有 canonical re-judge authority。
 - `05/03-Compact...` 这页同时完成了 `Export` 降格：`Compact / Resume / Memory` 仍是 continuation consumer，但 `Export` 只配做 `Outside` handoff surface，不再和会内 continuation consumer 并写。这让长任务连续性页第一次在首段就与治理边界、用户侧恢复链和对外交付链同序。
 - 并行 source-quality sidecar 也已把下一条最值钱的目录 batch 指明为“demotion propagation”：`navigation/04` 还在扮演目录宪法正文，`philosophy/87` 仍把 speaking-rights 回指给它；若继续推进源码质量线，最稳的下一批应只收这两页与 `guides/102 / navigation/README` 的关系，不把治理和 Prompt 又混回去。
+- 这条源码质量目录批次现已落地，并刻意只动 `navigation/04` 与 `philosophy/87`。`navigation/04` 现在只保留“该去哪个证据层 / 该把 speaking-rights 争议路由到哪”的 next-hop，不再展开完整发言权限表、later maintainer 问题形首答表，也不再提前指定 `api/46-50` 才是 atlas 正文 owner。它终于更接近 `navigation/README` 一开始声明的“只管 route，不签 truth”。
+- `philosophy/87` 对目录宪法的回指也同步收紧：源码质量线现在不再把 speaking-rights 正式交给 `navigation/04`，而是拆成三层更稳的归口：目录边界回各目录 README，canonical rung 与降格规则回 `guides/102`，跨目录 next-hop 才回 `navigation/README`。这让 `87` 自己也更像源码质量 owner，而不是继续借 route 页替自己签目录宪法。
+- 当前三条线的下一跳也因此更清楚了：Prompt 线还剩更深的 `63 / 57 / 33 / 78` 去魅与 speaking-rights 压缩；治理线还剩更少量的兼容/导航面精修；源码质量线最危险的“route page 继续代签宪法”这类债已经开始从根上被拔掉。

@@ -598,3 +598,5 @@
 - 本轮同时固定一条新的 Prompt 词法纪律：authority 相关前门优先写 precedence/admissibility，不再写 ownership/sovereignty；目录优化也优先写“承担首答责任”，不再写“拥有第一次解释权”
 - 继续收口治理前门边界：`risk/README`、`userbook/README`、`userbook/05/README`、`userbook/05/03`、`userbook/05/06` 现在更明确把 `runtime projection`、`continuation consumer`、`Outside handoff surface`、`durable-transient cleanup verdict` 与 `signer + evidence + reopen` 分层，不再把 `reopen` 并进 cleanup 尾槽，也不再把 `cleanup result` 叫成 consumer
 - 同步把用户侧回跳出口校正到 canonical chain：`05/06-Status...` 现在把治理 verdict 回跳改到根 `09 / api`，而不是再回 `userbook/05` 本地 README；`Export` 也正式从 continuation consumer 降格为 `Outside` handoff surface
+- 继续推进源码质量目录治理的 demotion propagation：`navigation/04` 现已从“目录宪法正文”收回成纯 route 页，只保留证据层 next-hop 与 speaking-rights 争议的路由方向，不再提前指定 `api/46-50`、authority file、danger surface 等深页 owner
+- `philosophy/87` 也同步停止把 speaking-rights 正式回指给 `navigation/04`；它现在把目录边界回给各目录 `README`，把 canonical rung 与降格规则回给 `guides/102`，把跨目录 next-hop 回给 `navigation/README`
