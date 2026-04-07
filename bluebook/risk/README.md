@@ -54,7 +54,7 @@
 - `governance key` 先决定谁有资格改边界、谁能签发恢复，再谈误伤、阻断、连续性成本与入口差异
 
 因此风控前门也不该自己回放事件去猜当前真相，而应沿 signer、证据和 runtime 已外化的 truth-surface / decision window / cleanup verdict 去回读。
-- `/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory` 只配做 continuation consumer；`Export` 只配做 `Outside` handoff surface；用户侧恢复继续落在 `signer + evidence + reopen`。
+- 任何用户侧状态、诊断、压缩或导出入口都只配读取已外化 verdict；恢复是否成立只沿 `signer + evidence + reopen` 判断。
 
 更稳的 first reject signal 也应先记三条：
 

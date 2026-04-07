@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/security/README`、`bluebook/architecture/83`、`bluebook/philosophy/85` 与 `bluebook/risk/README` 的长期默认 governance-ui-noun-demotion language 现已继续写死：
+  - 治理线默认继续先说 canonical node、asset 与 authority 的失效，不先背 status、usage、approval、rollback、cleanup result 这组 UI noun / result wording
+  - `security/README` 与 `risk/README` 默认继续把状态、诊断、压缩、导出入口写成“只读 verdict”的 consumer，不再逐项枚举命令名当记忆钩子
+  - `architecture/83` 默认继续把 failure order 写成 canonical node/asset/authority 的结算逻辑，不再把 `reject / degrade / halt / cleanup-before-resume / human-fallback` 写成 owner ladder
+  - `philosophy/85` 默认继续把执行层 status/approval/rollback/handoff 写成 canonical chain 的接口名，不再把 visible noun crosswalk 写成第二层前门
 - `bluebook/06` 的长期默认 prompt-magic-witness-chain language 现已继续写死：
   - Prompt “为什么有魔力”的默认首答继续固定为 `same-world compiler = Authority -> Boundary -> Transcript -> Lineage -> Continuation`，不再拆成多组相近的结果词去魅标题
   - `06` 默认继续把 `2.10`、`6.32 / 6.45 / 6.54 / 6.57` 与 `7.4` 共同回绑同一条 witness chain，而不是让各节各自发明 Prompt 强度解释

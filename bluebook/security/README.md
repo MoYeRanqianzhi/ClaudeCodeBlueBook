@@ -18,7 +18,7 @@
 - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 不是两条结果词前门的拼接，而是同一条治理收费链。
 - 完成、终局、遗忘、清理与家族级 cleanup 都各有 signer；任何弱层都不配替强层宣布“已经没事了”。
 - 宿主不该自己从事件流回放拼当前真相；更稳的做法是消费 runtime 已外化的 truth-surface / decision window / cleanup verdict。
-- `/status / /doctor / /usage` 只配做 runtime projection；它们若越位成治理真相，应直接落回 `mode_projection_as_authority / window_projection_not_authority` 这类 reject。`Compact / Resume / Memory` 只配做 continuation consumer；`Export` 只配做 `Outside` handoff surface；用户侧恢复另沿 `signer + evidence + reopen` 去回读。
+- 任何 user-facing 状态、诊断、压缩或导出入口，都只配读取已外化的 truth-surface、decision window 与 cleanup verdict，不配定义治理真相、继续资格或恢复资格。
 - `shared_consumer_surface` 只表示不同 reader 是否仍在只读消费同一个 verdict object，不表示谁拥有 current truth；projection 字段层继续回 `appendix/87`，reprojection 分层继续回 `appendix/159`。
 
 如果把安全前门继续压成最短公式，也只剩三条：
@@ -28,7 +28,7 @@
 2. `decision window -> continuation pricing`
    - 当前扩张还配不配继续，继续是否仍值得付费
 3. `durable-transient cleanup`
-   - 谁配宣布已经没事了，哪些 signer / ledger / cleanup 结果词只配当投影
+   - 哪些 transient authority 必须清退，哪些 durable asset 还能继续被承认
 
 如果继续把这条机制链再压成跨宿主都能对照的三段顺序，也只该再补一句：
 
