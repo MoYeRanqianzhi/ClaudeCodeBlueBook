@@ -117,18 +117,18 @@
   - 更稳的默认修法顺序继续是：`先改标题成 why / self-audit 句 -> 再删正文里具名 owner nouns -> 最后补一句 owner route`
 - 最新根仓同步记忆（2026-04-08，本轮后续批次）已被后续检查修正为健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均成功，根仓状态回到 `main...origin/main`；所有更早的阻塞记忆只应被读成时间点快照。
 - `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 mid-page-why-bridge / self-audit wording 现已继续写死：
-  - `03` 中段若再次出现 Prompt truth plane、lawful forgetting、audit order、evidence gradient、合法复杂度中心、future maintainer、重构资本或五步 ladder，默认按越位候选处理；更稳的默认修法是只保留 why 句，把 Prompt 统一改路由回 `84 / 51 / 06`，把源码质量统一改路由回 `102 / 87 / architecture`
-  - `06` 的 Prompt 深段默认继续只保留“我有没有越位复述 `84 / 51`”这类自校反问，不再列 object / witness / qualification nouns
+  - `03` 中段若再次出现 Prompt truth plane、lawful forgetting、audit order、evidence gradient、合法复杂度中心、future maintainer、重构资本或五步 ladder，默认按越位候选处理；更稳的默认修法是只保留 why 句，把 Prompt 统一改路由回 `84 / 06`，把源码质量统一改路由回 `102 / 87 / architecture`
+  - `06` 的 Prompt 深段默认继续只保留“我有没有越位复述 `84` owner 术语”这类自校反问，不再列 object / witness / qualification nouns
 - 并行 agent 吸收后的长期默认 mid-page-owner-audit rule 现已继续写死：
   - 高流量前门之外的 why/self-audit 长文若开始自己发 full ladder、object/seam 清单或 quality verdict bundle，也默认按越位候选处理
-  - 更稳的默认修法顺序继续是：`删 bundle -> 留 why / self-audit 句 -> 把 owner 还给 84 / 51 / 102 / 87 / architecture`
+  - 更稳的默认修法顺序继续是：`删 bundle -> 留 why / self-audit 句 -> 把 owner 还给 84 / 102 / 87 / architecture`
 - `bluebook/README`、`bluebook/philosophy/README`、`bluebook/userbook/README`、`bluebook/risk/README`、`bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 frontdoor-route-only / why-only / self-audit-only language 现已继续写死：
   - 根 `README` 默认继续把第一次进入写成 `09 -> 84 / 10 / 102`；Prompt / 治理 / 当前真相三线只保留“先回 owner，再回 why / self-audit”的 route，不再自留 canonical chain、failure ladder、witness heuristic 或治理入口卡
-  - `philosophy/README` 默认继续把 Prompt 压成 `84 -> 51` 的最短 first-hop，把源码质量压成 `102 -> 86/87 -> architecture` 的 why-route，不再另立 `future maintainer` 并行前门，也不再在 README 保留 Prompt 下游分流库存
+  - `philosophy/README` 默认继续把 Prompt 压成单一 `84` first-hop，把源码质量压成 `102 -> 86/87 -> architecture` 的 why-route，不再另立 `future maintainer` 并行前门，也不再在 README 保留 Prompt 下游分流库存
   - `userbook/README` 默认继续只保留用户动作、问题分型与二跳；治理速记与 why 统一回 `10 -> philosophy/85 -> philosophy/61`，机制细节才继续回 `security/README`
   - `risk/README` 默认继续只保留 `product promise readback / reopen qualification / evidence binding` 这组三个用户侧对象；任何机制顺序、signer 标准、reopen 成立条件都默认改路由回 `10 / security / playbooks`
   - `03` 默认继续只保留 why；Prompt 线只保留一个苏格拉底问题，源码质量线只保留“为什么不能先看目录美学”这类 why 句，不再出现 full ladder、object/seam 清单或 `87` 的 quality verdict bundle
-  - `06` 默认继续只保留总控自校；Prompt 线默认继续只问“我有没有越位复述 `84 / 51`”，不再自带 Prompt 最小拒错顺序
+  - `06` 默认继续只保留总控自校；Prompt 线默认继续只问“我有没有越位复述 `84` owner 术语”，不再自带 Prompt 最小拒错顺序
 - 并行 agent 吸收后的长期默认 frontdoor-owner-audit rule 现已继续写死：
   - 高流量前门若再次出现 canonical chain、witness order、weak-readback inventory、signer/reopen 机制口径、full ladder 或 object/seam 清单，默认按越位候选处理
   - 更稳的默认修法顺序继续是：`删具体机制名词 -> 缩成 route 句 -> 把 owner 还给 84 / 51 / 10 / security / risk / 102 / 87 / architecture`
@@ -229,7 +229,7 @@
 - `bluebook/README` 的长期默认 prompt-root-route-thinning language 现已继续写死：
   - 根入口默认继续只保留 `same-world compiler` 这句 Prompt hook，不再第二次重列 Prompt formula、witness、counterfeit 与 reject signal
   - 顶层判断与 `first-reject path` 默认继续回 `philosophy/84`
-  - same-world witness、实现顺序与 `continue qualification` 默认继续回 `guides/51`
+  - same-world witness、实现顺序与 `continue qualification` 默认继续留在 `84` owner chain 内部处理，不在高流量前门另立公开 route
 - `bluebook/architecture/20` 与 `bluebook/architecture/33` 的长期默认 source-quality-aura-demotion language 现已继续写死：
   - 两页默认继续不从“先进感 / 高级感”起题，而先问公开证据能否证明 current-truth protection
   - `20` 默认继续把 `contract / runtime kernel / cache boundary / recovery semantics` 写成结构质量入口，而不是工程气质入口
