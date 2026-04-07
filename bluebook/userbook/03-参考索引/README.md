@@ -146,6 +146,7 @@
 127. 为什么 `SENTINEL_LOADING`、`SENTINEL_LOADING_FAILED`、`SENTINEL_START`、`useAssistantHistory`、`remoteConnectionStatus` 与 `BriefIdleStatus` 说明 attached viewer 的历史翻页哨兵不是 remote presence surface。
 128. 为什么 `discoverAssistantSessions`、`launchAssistantInstallWizard`、`launchAssistantSessionChooser`、`createRemoteSessionConfig` 与 attach banner 说明 `claude assistant` 的发现、安装、选择与附着不是同一种 connect flow。
 129. 为什么 `showSetupDialog`、`renderAndRun`、`launchResumeChooser`、`launchRepl`、`AppStateProvider` 与 `KeybindingSetup` 说明 setup-dialog host 与 attached REPL host 不是同一种 interactive host。
+130. 为什么 `getSessionFilesLite`、`loadFullLog`、`SessionPreview`、`useAssistantHistory` 与 `fetchLatestEvents` 说明 `/resume` preview 的本地 transcript 快照不是 attached viewer 的 remote history。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
