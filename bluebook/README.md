@@ -31,7 +31,7 @@
 
 如果只先记 Prompt 前门的一句话，也只记这句：
 
-- Prompt 的效力不在措辞，而在 authority chain 先锁定唯一 `world-defining winner`，再把 `world-entry -> witness ABI -> continue qualification` 排成可检验顺序；`Explainability` 只负责诊断，不负责改判。
+- Prompt 的效力不在措辞，而在 authority order 先锁定唯一 `world-defining winner`，再把 `world-entry -> witness ABI -> continue qualification` 排成可检验顺序；`Explainability` 只负责诊断，不负责改判。
 
 如果继续把 Prompt 前门再压成 first-answer crosswalk，也只该再补六行：
 

@@ -592,3 +592,5 @@
 - 修正协议页细节：`api/82` 的 rewrite correction verdict 编号现已对齐为严格递增，避免协议对象列表本身出现局部失稳
 - 继续收紧协议对象和 atlas 一致性：`api/82` 顶层对象清单现已正式纳入 `pricing_right_restitution`，`api/85` 顶层对象清单现已与 `truth surface attestation packet` 对齐，`navigation/35` 明确自身只负责 atlas 投影不裁决首答权，`philosophy/81` 补出 `witness ABI` 的 version 语义
 - 继续把可见标题与对象清单跟 mid-body canonical object 对齐：`api/85` 的可见标题现已改成 `truth-surface attestation`，`playbooks/66` 的执行顺序与再验标题也同步改名，`api/82` 的顶层说明现已承认 `pricing_right_restitution` 是 first-class object；`docs/development/03` 追加了“canonical object 不能只活在正文中段”的新反思准则
+- 继续收口 Prompt 前门的去魅措辞：`bluebook/README` 把 `authority chain` 收回 `authority order`，`philosophy/81` 把 `主权顺序` 收回 `优先顺序`，`philosophy/84` 则把标题和开场从“世界进入模型/魔力”进一步压回“输入装配顺序/Prompt 效力”，减少前门对神秘化与主权化比喻的依赖
+- 同步把本轮 Prompt 术语精修写回持久化记忆：研究日志新增“前门不再用 magic / sovereignty 词族冒充首答”的批次记录，长期记忆新增 Prompt 高流量页面优先采用 `effectiveness / input assembly order / canonical source / first-answer rule` 这一组稳定词法

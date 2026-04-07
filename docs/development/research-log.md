@@ -7166,3 +7166,7 @@
 - 同时补了两条更小但更硬的目录/Prompt 纪律：`navigation/35` 现在明确 atlas projection page 不裁决 speaking-rights，争议要回 `navigation/04`；`philosophy/81` 现在明确 `lawful forgetting witness ABI` 应被读成 versioned object，`required` 与 `forbidden-as-sole-witness` 两层不能在没有明确 rebinding 的情况下被静默改写。
 - 本轮又往前推进了一小步“局部真相外溢”治理：`api/85` 的可见 H1 与 `playbooks/66` 的执行手册用词现在都从 `cross-consumer attestation` 收回到 `truth-surface attestation`；`api/82` 顶层解释句也不再停在“十一类对象”，而是把 `pricing_right_restitution` 明确算进 first-class object count。这样 later consumer 第一次看到的标题、对象表和执行顺序，终于和正文中段已经成熟的对象语言处在同一个世界里。
 - 同时把这一类经验正式写回 `docs/development/03`：如果某个对象已经在正文中段被稳定写成 canonical object/shared ABI/stable verdict reason，却没有同批同步回 H1、顶层对象清单、消费顺序和问题级首答路由，那就不是深化，而是局部真相外溢。后续应优先把这种“中段先成熟、前门后跟进”的债当作目录治理问题处理。
+- `2026-04-07` 根分支同步检查再次确认：仓库根目录执行 `git fetch origin main && git checkout main && git merge --ff-only origin/main` 后仍是 up to date；本轮所有编辑继续只发生在 `.worktrees/mainloop`。
+- 本轮先收口一批更窄的 Prompt 词法精修：`bluebook/README` 把 `authority chain` 收回 `authority order`；`philosophy/81` 把 `主权顺序` 收回 `优先顺序`；`philosophy/84` 则把标题与开场从“世界进入模型/真正有魔力”往“输入装配顺序/Prompt 效力”压回。这个批次仍只动前门措辞，不改对象链、不改 witness order、不改 canonical source 分工。
+- 本轮新增的研究约束是：Prompt 高流量页面的首答层不再让 `magic / 咒语 / 主权 / owner` 词族占可见主位。更稳的前门写法应优先回 `effectiveness / input assembly order / authority order / canonical source / first-answer rule`；“Prompt 魔力”只适合作为现象级检索词或被反思对象，不再充当顶层判断词。
+- 并行 agent 首轮返回也验证了这一判断：当前 residual 已明显从对象链和目录主语错位，继续收束到“去魅不彻底的标题/首句/比喻词”与“authority 词法仍过度主权化”两类。下一批若继续深入，应优先清 `06 / 81 / 84 / README` 里仍残留的 `魔力 / 咒语 / world-defining winner / owner 页 / 拥有第一次解释权` 这些词，而不是重新大范围改前门结构。

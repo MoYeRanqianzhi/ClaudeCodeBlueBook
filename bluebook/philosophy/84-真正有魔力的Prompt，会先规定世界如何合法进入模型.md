@@ -1,8 +1,8 @@
-# 真正有效的 Prompt，会先把世界进入模型的顺序排清
+# 真正有效的 Prompt，会先把输入装配顺序排清
 
 这一章回答五个问题：
 
-1. 为什么 Claude Code 的 Prompt 效力首先不是文案强，而是世界编译顺序强。
+1. 为什么 Claude Code 的 Prompt 效力首先不是文案强，而是输入装配顺序强。
 2. 为什么 `section registry / dynamic boundary`、`message lineage`、`projection consumer`、`protocol transcript` 与 `continuation qualification` 共同决定 Prompt 上限。
 3. 为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到这种效力。
 4. 怎样用苏格拉底式追问审一个新 runtime 是否真的拥有这种 Prompt 能力。
@@ -37,7 +37,7 @@
 
 而是：
 
-- authority chain 先把世界进入模型的可采顺序排清
+- authority order 先把输入进入模型的可采顺序排清
 
 这里的“世界”不是抽象比喻，而是四件制度事实：
 
@@ -132,7 +132,7 @@ Anthropic 官方文档把这条 force ladder 说得更硬了一层：
 
 Claude Code 更深的一层是：
 
-- authority chain 先排清什么配被模型看见、谁配被模型相信、哪些历史配被模型继承
+- authority order 先排清什么配被模型看见、谁配被模型相信、哪些历史配被模型继承
 
 这会把 Prompt 从：
 

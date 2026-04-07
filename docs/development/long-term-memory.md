@@ -3332,3 +3332,6 @@
 - `lawful forgetting witness ABI` 现在还应继续被读成 versioned object：字段可以扩展，但 `required` 与 `forbidden-as-sole-witness` 两层若发生变化，必须显式 rebind，而不能靠 prose 静默漂移。
 - 当某个对象已经在正文中段被稳定写成 canonical object / shared ABI / stable verdict reason 时，H1、顶层对象清单、消费顺序和问题级首答路由都应在同一批次同步改写；否则 later consumer 先读到的仍是旧世界。这条规则现在已进入 `docs/development/03`，应视为蓝皮书目录治理的长期纪律。
 - `truth-surface attestation` 现在不仅是 `api/85` 正文对象，也应成为治理精修线的可见标题词；旧的 `cross-consumer attestation` 更适合退回兼容语境或旧文件路径，不再占可见前门主位。
+- Prompt 前门的长期稳定词法应优先使用 `effectiveness / input assembly order / authority order / canonical source / first-answer rule`；`magic / 咒语 / 主权 / owner` 这组词若继续存在，最多只应活在历史文件名、检索别名、反思对象或伪解案例里，不再占高流量页面的 H1、首句或首答句。
+- 去魅的长期纪律不是“把魔力说成反魔力”，而是直接改写问题主语：少问 Prompt 为什么“有魔力”，多问它如何固定 `world-entry admissibility / witness order / continuation qualification`。如果一句话仍需借 `神秘 / 很灵 / 咒语化` 才能成立，通常说明首答还没有真正回到第一性原理。
+- authority 词法的长期纪律也应继续固定为 precedence/admissibility，而不是 ownership/sovereignty：`authority order` 优于 `authority chain`，`canonical source / 首答来源` 优于 `owner 页`，`拥有第一次解释权` 应优先改写成 `承担首答责任 / 拥有首答来源资格 / 固定 speaking rights`。

@@ -3,7 +3,7 @@
 这一章回答五个问题：
 
 1. 为什么 Claude Code 的 Prompt 看起来更有效，但答案并不在文案修辞。
-2. 为什么主权顺序、section registry、dynamic boundary 与 stable prefix 会决定 Prompt 的真实上限。
+2. 为什么优先顺序、section registry、dynamic boundary 与 stable prefix 会决定 Prompt 的真实上限。
 3. 为什么 `message lineage` 的三键内核与 projection consumer 分层不是消息层细节，而是 Prompt 效力的一部分。
 4. 为什么 lawful forgetting、compact、continue 与 threshold liability 属于同一条 Prompt 编译链。
 5. 这对 agent runtime 设计者意味着什么。
@@ -31,7 +31,7 @@
 如果要消费目录前门已经固定下来的六个 nouns，canonical source 统一是 `philosophy/84`；本页只在机制层展开它们各自对应的运行时对象：
 
 1. `Authority`
-   - 主权顺序先固定谁能定义世界。
+   - 优先顺序先固定谁能定义世界。
 2. `Boundary`
    - `section registry + dynamic boundary` 先固定哪些字节配进入 stable prefix。
 3. `Transcript`
