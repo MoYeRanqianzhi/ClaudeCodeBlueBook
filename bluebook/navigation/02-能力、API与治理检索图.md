@@ -137,4 +137,4 @@
 
 如果问题已偏“公开镜像里怎样稳地下判断”，先回：
 
-- `guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md`
+- `guides/102-如何给公开镜像做源码质量证据分级：public artifact ceiling、contract、registry、current-truth surface、consumer subset、hotspot kernel 与 mirror gap discipline.md`

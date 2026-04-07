@@ -39,7 +39,7 @@
 
 先问：
 
-- 为什么 Claude Code 的 prompt 看起来像“有魔力”。
+- 为什么 Claude Code 的 prompt 看起来特别稳定有力，而不是像文案魔法。
 - 为什么它不是抄一段 system prompt 就能复刻。
 - 为什么工具 ABI、mailbox、channel 输入、cache break 都和 request compiler 有关，而不只是和 prompt 强度有关。
 
@@ -63,7 +63,7 @@
 这条线的核心结论是：
 
 - `world entry / request assembly / six-stage assembly chain` 必须持续对同一个世界保持诚实；装配顺序、工具 ABI、缓存边界、状态晚绑定与旁路 fork 只是这套控制面的实现面
-- 这条线的前门不再让旧别名占主语位；`09` 负责定义，`84 / 82` 负责展开，`99` 负责审读
+- 这条线的首答入口不再让旧别名占主语位；`09` 负责定义，`84 / 82` 负责展开，`99` 负责审读
 - 最短记法：不是更强 prompt，而是同一世界的持续诚实
 - 如果继续压成最短动作链，就是 `compile -> protocolize -> preserve -> continue -> explain`
 
@@ -205,12 +205,12 @@
 2. [真正先进的内核，不是更会分层，而是更会阻止过去写坏现在](../philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md)
 3. [真正成熟的源码质量判断：复杂度中心合法、边界可证、下一次重构仍有路](../philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md)
 4. [权威面与反僵尸图谱：current-truth surface、freshness gate 与 ghost capability](../architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)
-5. [源码质量证据分级：contract、registry、current-truth surface 与 consumer subset](../guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md)
+5. [源码质量证据分级：public artifact ceiling、contract、registry、current-truth surface、consumer subset、hotspot kernel 与 mirror gap discipline](../guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md)
 
 需要补证时再下钻：
 
 1. `architecture/38-Contract优先、运行时底盘与公开镜像缺口.md`
-2. `architecture/52-Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法.md`
+2. `architecture/52-Chokepoint、Typed Decision、Current-Truth Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法.md`
 3. `architecture/58-让依赖图说真话：Leaf Module、Anti-Cycle Seam与Single-Source File.md`
 4. `playbooks/79-one writable present验证手册：single-writer authority、recovery asset与anti-zombie回归.md`
 5. `casebooks/75-one writable present验证失真反例：健康投影篡位、恢复资产越权与anti-zombie伪证.md`
