@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 api-atlas-route-slug 深化动作: 已继续更新 `bluebook/02-使用指南.md`、`bluebook/api/README.md` 与 `docs/development/01-章节规划.md`，并把 `bluebook/navigation/35`、`api/46-48` 的 route slug 正式收回 `源码地图导航 / 二级目录地图`。新的结论是：源码质量线当前最贵的 residual，已经不再是 H1 还在说 `Atlas`，而是高流量入口页 visible label 已改、真实 target 却还在把 later maintainer 送回旧 `Atlas` 文件名。
+- 本轮新的源码地图结论: 对 route page 来说，slug 也是 locator contract 的一部分；只要 `02` 或 `api/README` 的 target 还落到旧 `Atlas` 路径，读者就仍会把“地图只负责定位”误学成“Atlas 仍是首答名词”。
 - 本轮 prompt-frontdoor-route-slug 深化动作: 已继续更新 `bluebook/philosophy/README.md`、`bluebook/navigation/03-深度专题导航：Prompt、预算、对象、底盘与治理.md`、`bluebook/guides/99-如何用苏格拉底诘问法审读请求装配控制面：authority chain、protocol transcript与continuation object.md` 与 `docs/development/01-章节规划.md`，并把 `bluebook/philosophy/81`、`84`、`63` 的 route slug 正式收回稳定可见标签。新的结论是：Prompt 前门最贵的 residual，不再只是正文还在说旧词，而是 route target 仍在偷偷把 later maintainer 送回旧 `Prompt魔力` 文件名。
 - 本轮新的 Prompt 结论: 对 Prompt 线来说，visible label 与 target slug 必须共享同一首答主语；如果 `README` 嘴上已经在说 `world entry / request assembly / continuation`，真实跳转却仍落到旧魔力命名，later maintainer 学到的仍是旧入口语气而不是 canonical route。
 - 本轮 prompt-philosophy-slug-alignment 深化动作: 已继续更新 `bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md`、`bluebook/navigation/06-终局判断导航：协作语法、资源定价与未来维护者消费者.md`、`bluebook/navigation/08-高阶制度导航：Prompt Constitution、治理顺序与构建系统.md` 与 `docs/development/01-章节规划.md`，并把 `bluebook/philosophy/57`、`bluebook/philosophy/33` 的文件名正式收回已稳定的 H1。新的结论是：对 later maintainer 来说，slug 不是纯兼容层，而是高流量入口的第一层 visible label；只要文件名还在说旧 `Prompt 魔力`，正文去魅就还没有完成。

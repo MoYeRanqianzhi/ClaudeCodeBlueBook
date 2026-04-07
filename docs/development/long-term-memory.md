@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/navigation/35`、`bluebook/api/46`、`bluebook/api/47`、`bluebook/api/48`、`bluebook/02`、`bluebook/api/README` 与 `docs/development/01` 的长期默认 api-atlas-route-slug language 现已继续写死：
+  - `navigation/35` 的正式 route slug 默认继续固定为 `源码地图导航：services、tools、commands 二级目录如何回到权威入口与消费者边界`
+  - `api/46-48` 的正式 route slug 默认继续固定为各自的 `二级目录地图`
+  - `02`、`api/README` 与 `01-章节规划` 默认继续直连这组新 slug，不再通过旧 `Atlas` target 泄露旧路径
 - `bluebook/philosophy/81`、`bluebook/philosophy/84`、`bluebook/philosophy/63`、`bluebook/philosophy/README`、`bluebook/navigation/03`、`bluebook/guides/99` 与 `docs/development/01` 的长期默认 prompt-frontdoor-route-slug language 现已继续写死：
   - `81` 的正式 route slug 默认继续固定为 `请求编译链：可缓存、可转写、可继续`
   - `84` 的正式 route slug 默认继续固定为 `世界如何合法进入模型：request assembly 与 six-stage assembly chain`
