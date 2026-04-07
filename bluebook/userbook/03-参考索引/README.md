@@ -130,6 +130,7 @@
 111. 为什么 `pending_action.input`、`task_summary`、`post_turn_summary`、`externalMetadataToAppState`、`print.ts` 与 `directConnectManager` 说明“frontend 会读”更像跨前端 consumer path，而不是当前 CLI foreground contract。
 112. 为什么 `activeRemote`、`useDirectConnect`、`useSSHSession`、`useRemoteSession`、`remoteSessionUrl` 与 `directConnectServerUrl` 说明共用交互壳，不等于共用 remote presence ledger。
 113. 为什么 `ccrMirrorEnabled`、`isEnvLessBridgeEnabled`、`initReplBridge`、`outboundOnly`、`replBridge` 与 `createV2ReplTransport` 说明启动意图、实现选路与实际 runtime topology 不是同一层 mirror 合同。
+114. 为什么 `SDKPostTurnSummaryMessageSchema`、`StdoutMessageSchema`、`SDKMessageSchema`、`print.ts` 与 `directConnectManager` 说明 `post_turn_summary` 的 wide-wire、`@internal` 与 foreground narrowing 不是同一种可见性。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

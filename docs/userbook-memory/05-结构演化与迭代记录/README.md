@@ -141,6 +141,7 @@
 - [137-2026-04-07-cross frontend consumer split 拆分记忆.md](./137-2026-04-07-cross%20frontend%20consumer%20split%20拆分记忆.md)
 - [138-2026-04-07-activeRemote interaction shell split 拆分记忆.md](./138-2026-04-07-activeRemote%20interaction%20shell%20split%20拆分记忆.md)
 - [139-2026-04-07-mirror gate topology split 拆分记忆.md](./139-2026-04-07-mirror%20gate%20topology%20split%20拆分记忆.md)
+- [140-2026-04-07-post-turn-summary visibility ladder 拆分记忆.md](./140-2026-04-07-post-turn-summary%20visibility%20ladder%20拆分记忆.md)
 
 用途：
 
