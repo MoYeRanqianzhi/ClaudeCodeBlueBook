@@ -26,6 +26,8 @@
 2. 对应的最小排查顺序
 3. 需要时再下钻到控制面深挖
 
+这里也要先压住一个常见误读：`连续性与记忆` 不是第五类工作对象；它只是这四组工作对象在时间轴上的继续条件，失真时要么退回 Prompt `Continuation`，要么退回治理 `continuation pricing`，要么退回当前真相收口。
+
 如果专题页不能先回答这三件事，它就还只是“更长的目录”，不是工作对象入口。
 
 ## 先按工作对象，不按功能名
@@ -50,6 +52,8 @@
    - 先过 `public artifact ceiling`；若 sole writer、writeback seam 与 freshness guard 还没锁定，就只配写 `current-truth surface candidate`。
 
 如果某篇专题长文只会继续列入口、列功能，却没有把这三问翻译成对应的工作动作，那它就还停在“扩展版目录”，还不是专题入口。
+
+更稳一点说，`04` 不只要和根 `userbook/README` 共享 nouns，也要和 `01 / 05` 共享同一组 first-answer order；否则专题层仍会把用户送回“按标题试错”。
 
 ## 进入专题前的 first reject signal
 

@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/userbook/README`、`01-主线使用/README`、`04-专题深潜/README` 与 `05-控制面深挖/README` 的长期默认 userbook frontdoor language 现已继续写死：
+  - 根 `README` 默认不把 `continuity` 升成第四条使用主题
+  - `01` 默认不把连续性升成第六种入口
+  - `04` 默认不把连续性与记忆升成第五类工作对象
+  - `05` 默认不把 continuity 升成第四条控制面
+  - 这组 userbook 前门默认统一把 continuity 收回同一工作对象在 `Continuation / continuation pricing / cleanup-before-resume` 上的共同时间轴
+  - userbook 目录优化默认继续从“问题分型 + README 二跳”推进到“共享 first-answer order”
 - `bluebook/03`、`06` 与 `philosophy/80 / 82 / 84` 的长期默认 top-level philosophy language 现已继续写死：
   - `03` 默认不把 `continuity` 升成第四条设计优点
   - `06` 默认不把 `continuity` 升成第九个不可约问题

@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 userbook frontdoor 深化动作: 已继续更新 `bluebook/userbook/README`、`01-主线使用/README`、`04-专题深潜/README` 与 `05-控制面深挖/README`。新的结论是：user-facing 前门也不该把 continuity 单列成第四条使用主题、第五类工作对象或第四条控制面。更稳的默认写法是：根 `README` 只把它写成同一工作对象在三条母线上的共同时间轴，`01` 只把它写成主线动作链的继续条件，`04` 只把它写成工作对象分组的时间轴，`05` 只把它写成 continue / price / cleanup 的用户侧判断。
+- 本轮新的 userbook 目录结论: userbook 目录优化如果只能做到“问题分型”和“README 二跳”，却不能让 `userbook/README -> 01 -> 04 / 05` 共享同一组 first-answer order，就仍然会把用户送回“按页碰运气”。现在这一层已经开始把 shared nouns 继续前推成 shared order。
 - 本轮 top-level philosophy frontdoor 深化动作: 已继续更新 `bluebook/03`、`06` 与 `philosophy/80 / 82 / 84`。新的结论是：顶层哲学前门也不该把 continuity 单列成第四条线、第四个优点或第九个不可约问题。更稳的默认写法是：`03` 只把它写成三条主权安排的共同时间轴，`06` 只把它写成三条母线的共同验收，`80 / 82 / 84` 则只把它写成源码质量、治理与 Prompt 各自时间轴上的 continue / price / veto 纪律。
 - 本轮新的顶层目录结论: 目录结构优化如果只能做到同词化，而不能让 `03 / 06 / philosophy/80 / 82 / 84` 共享同一组 first-answer nouns 与最小排查顺序，就仍然会在顶层哲学页里长回第二前门。现在这组前门已经开始从“共享 nouns”推进到“共享 time-axis wording 与 shared order”。
 - 本轮 architecture continuity 深化动作: 已继续更新 `bluebook/architecture/82-84`。新的结论是：架构层也不该把 continuity 单列成第四条母线或第四种结构图。更稳的默认写法是：`82` 只把 continuity 写成 Prompt `Continuation` 的时间轴，`83` 只把它写成治理 `continuation pricing / durable-transient cleanup` 的计价面与清算面，`84` 只把它写成源码质量线在 bootstrap / authority / recovery / release 上的切面投影。

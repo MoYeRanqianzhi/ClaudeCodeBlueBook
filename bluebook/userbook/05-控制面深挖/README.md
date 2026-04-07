@@ -27,6 +27,8 @@
 2. 再给相邻入口为什么不能混用
 3. 最后才给更细的长文拆解
 
+这里也要先压住一个常见误读：`continuity` 不是第四条控制面；它只是 Prompt `continue qualification`、治理 `continuation pricing` 与当前真相 `cleanup-before-resume` 的共同时间轴。
+
 如果控制面页不能先回答这三件事，它就还是“控制面话题集合”，还不是用户真正可执行的判断层。
 
 进入控制面长文前，只先记一句：
@@ -56,6 +58,8 @@
    - 若旧目录、旧恢复资产、旧 capability 或旧 authority 在冒充现在，就按当前真相失真处理。
 
 更细的 object chain、truth plane 与 verdict family 统一回蓝皮书根前门与 `09 / api`；`05` 只负责把它们翻译成用户侧判断。
+
+如果 `05` 不能和根 `userbook/README`、`01`、`04` 共享同一组 first-answer order，它就会重新退回“控制面话题集合”，而不是用户真正可执行的判断层。
 
 如果继续把这一层的 speaking rights 写得更硬，还应再固定三句：
 

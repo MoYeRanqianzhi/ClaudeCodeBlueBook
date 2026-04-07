@@ -17,6 +17,7 @@
 - `userbook/` 不宣布新的系统真相，它只把已经承认的对象链、控制面和可见边界翻译成用户侧可操作判断。
 - `userbook/` 默认先签 user-visible consumer truth，不替 `README / 09 / api` 补签 runtime-core 缺口；先忘了这层 `public-evidence ceiling`，就会把 UI 面和状态词误当系统真相。
 - Prompt 也不是单段 `systemPrompt`，而是 multi-surface world-entry object；`CLAUDE.md / hooks / settings` 能影响行为，但不能替 runtime witness 签 continue。
+- `continuity` 在 `userbook/` 里也不是第四条使用主题；它只是同一工作对象在 Prompt `Continuation`、治理 `continuation pricing` 与当前真相收口上的共同时间轴。
 
 ## 先做三类问题分型
 
@@ -32,6 +33,8 @@
 ## 按问题二跳，不按深页碰运气
 
 根前门真正负责的是 `问题分型 -> 二跳`，不负责替 `04 / 05` 的 README 重新充当专题目录。
+
+更稳一点说，`userbook/README -> 01 -> 04 / 05` 也应继续共享同一组 first-answer order；目录优化若只共享 nouns、不共享顺序，用户层仍会先退回“按页碰运气”。
 
 更稳的默认二跳是：
 
