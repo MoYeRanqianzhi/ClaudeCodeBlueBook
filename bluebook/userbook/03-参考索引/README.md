@@ -107,6 +107,7 @@
 88. 为什么 headless `print` 的 late system tail 不能抢走 result 的 semantic last-message 主位。
 89. 为什么 `convertToolResults`、`convertUserTextMessages` 与 success `result` ignored 虽然同在 adapter，却不是同一种 UI consumer policy。
 90. 为什么 success `result` ignored、error `result` visible、turn-end 判定与 busy state 不是同一种 completion signal。
+91. 为什么 callback-visible init、transcript init 提示与 slash bootstrap 不是同一种初始化可见性。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
