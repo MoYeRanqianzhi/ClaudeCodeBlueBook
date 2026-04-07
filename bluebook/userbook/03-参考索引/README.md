@@ -52,6 +52,7 @@
 6. 面对真实任务时，应先走哪个入口。
 7. `assistant viewer`、`--remote` TUI、`viewerOnly`、`remoteSessionUrl` 与 coarse remote bit 看起来相近时，应该先去哪个入口分辨合同厚度。
 8. `REMOTE_SAFE_COMMANDS`、`filterCommandsForRemoteMode`、`handleRemoteInit`、`session` 与 `mobile` 看起来都在 remote 模式附近时，应该先去哪个入口分辨 remote-safe 命令面与 runtime readiness proof。
+9. `CLAUDE_CODE_REMOTE`、`getIsRemoteMode()`、`print`、`reload-plugins` 与 `settingsSync` 看起来都指向 remote 环境时，应该先去哪个入口分辨 headless remote 分支与 interactive remote bit。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 

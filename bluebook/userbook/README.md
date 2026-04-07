@@ -64,6 +64,9 @@
 - 想分清 `REMOTE_SAFE_COMMANDS`、`filterCommandsForRemoteMode`、`handleRemoteInit`、`session` 与 `mobile` 的 remote-safe surface：
   [03-参考索引/02-能力边界/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md) ->
   [05-控制面深挖/147-REMOTE_SAFE_COMMANDS%E3%80%81filterCommandsForRemoteMode%E3%80%81handleRemoteInit%E3%80%81session%20%E4%B8%8E%20mobile%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-safe%20%E5%91%BD%E4%BB%A4%E9%9D%A2%E4%B8%8D%E6%98%AF%20runtime%20readiness%20proof.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/147-REMOTE_SAFE_COMMANDS%E3%80%81filterCommandsForRemoteMode%E3%80%81handleRemoteInit%E3%80%81session%20%E4%B8%8E%20mobile%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-safe%20%E5%91%BD%E4%BB%A4%E9%9D%A2%E4%B8%8D%E6%98%AF%20runtime%20readiness%20proof.md)
+- 想分清 `CLAUDE_CODE_REMOTE`、`getIsRemoteMode()`、`print`、`reload-plugins` 与 `settingsSync` 的 headless remote env：
+  [03-参考索引/02-能力边界/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md) ->
+  [05-控制面深挖/148-CLAUDE_CODE_REMOTE%E3%80%81getIsRemoteMode%E3%80%81print%E3%80%81reload-plugins%20%E4%B8%8E%20settingsSync%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20headless%20remote%20%E5%88%86%E6%94%AF%E4%B8%8D%E6%98%AF%20interactive%20remote%20bit%20%E7%9A%84%E9%95%9C%E5%83%8F.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/148-CLAUDE_CODE_REMOTE%E3%80%81getIsRemoteMode%E3%80%81print%E3%80%81reload-plugins%20%E4%B8%8E%20settingsSync%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20headless%20remote%20%E5%88%86%E6%94%AF%E4%B8%8D%E6%98%AF%20interactive%20remote%20bit%20%E7%9A%84%E9%95%9C%E5%83%8F.md)
 
 如果你已经确定要读某个专题，请先到对应 README 再选深页，不要把根前门当默认深链库存。
 
