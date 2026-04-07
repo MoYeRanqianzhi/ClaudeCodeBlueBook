@@ -185,6 +185,7 @@
 - [181-2026-04-08-session birth vs history hydrate split 拆分记忆.md](./181-2026-04-08-session%20birth%20vs%20history%20hydrate%20split%20拆分记忆.md)
 - [182-2026-04-08-model ledger split 拆分记忆.md](./182-2026-04-08-model%20ledger%20split%20拆分记忆.md)
 - [183-2026-04-08-initial message ledger split 拆分记忆.md](./183-2026-04-08-initial%20message%20ledger%20split%20拆分记忆.md)
+- [184-2026-04-08-model authority order split 拆分记忆.md](./184-2026-04-08-model%20authority%20order%20split%20拆分记忆.md)
 
 用途：
 

@@ -172,3 +172,4 @@
 - [170-createBridgeSession.events、initialMessages、previouslyFlushedUUIDs 与 writeBatch 索引.md](./170-createBridgeSession.events、initialMessages、previouslyFlushedUUIDs%20与%20writeBatch%20索引.md)
 - [171-session_context.model、metadata.model、lastModelUsage、modelUsage 与 restoreAgentFromSession 索引.md](./171-session_context.model、metadata.model、lastModelUsage、modelUsage%20与%20restoreAgentFromSession%20索引.md)
 - [172-initialMessageUUIDs、previouslyFlushedUUIDs、createBridgeSession.events 与 writeBatch 索引.md](./172-initialMessageUUIDs、previouslyFlushedUUIDs、createBridgeSession.events%20与%20writeBatch%20索引.md)
+- [173-getUserSpecifiedModelSetting、settings.model、getMainLoopModelOverride、currentAgentDefinition 与 restoreAgentFromSession 索引.md](./173-getUserSpecifiedModelSetting、settings.model、getMainLoopModelOverride、currentAgentDefinition%20与%20restoreAgentFromSession%20索引.md)
