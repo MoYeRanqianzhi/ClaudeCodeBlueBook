@@ -162,6 +162,8 @@
   [05-控制面深挖/175-BridgeWorkerType、metadata.worker_type、BridgePointer.source 与 environment_id：为什么环境来源标签、prior-state 域与环境身份不是同一种 provenance.md](./05-控制面深挖/175-BridgeWorkerType、metadata.worker_type、BridgePointer.source%20与%20environment_id：为什么%20环境来源标签、prior-state%20域与环境身份不是同一种%20provenance.md)
 - 想分清 `createBridgeSession.environment_id`、`source`、`session_context` 与 `permission_mode` 的会话归属：
   [05-控制面深挖/176-createBridgeSession.environment_id、source、session_context 与 permission_mode：为什么 session attach target、来源声明、上下文载荷与默认策略不是同一种会话归属.md](./05-控制面深挖/176-createBridgeSession.environment_id、source、session_context%20与%20permission_mode：为什么%20session%20attach%20target、来源声明、上下文载荷与默认策略不是同一种会话归属.md)
+- 想分清 `createBridgeSession.source`、`metadata.worker_type`、`BridgeWorkerType` 与 `claude_code_assistant` 的 remote provenance：
+  [05-控制面深挖/177-createBridgeSession.source、metadata.worker_type、BridgeWorkerType 与 claude_code_assistant：为什么 session origin declaration 与 environment origin label 不是同一种 remote provenance.md](./05-控制面深挖/177-createBridgeSession.source、metadata.worker_type、BridgeWorkerType%20与%20claude_code_assistant：为什么%20session%20origin%20declaration%20与%20environment%20origin%20label%20不是同一种%20remote%20provenance.md)
 
 如果你已经确定要读某个专题，请先到对应 README 再选深页，不要把根前门当默认深链库存。
 

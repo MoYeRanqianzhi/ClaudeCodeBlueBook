@@ -320,6 +320,7 @@
 - [174-BridgeConfig.environmentId、reuseEnvironmentId、registerBridgeEnvironment.environment_id 与 createBridgeSession：为什么本地 env key、reuse claim、live env 与 session attach target 不是同一种环境主权.md](./174-BridgeConfig.environmentId、reuseEnvironmentId、registerBridgeEnvironment.environment_id%20与%20createBridgeSession：为什么%20本地%20env%20key、reuse%20claim、live%20env%20与%20session%20attach%20target%20不是同一种环境主权.md)
 - [175-BridgeWorkerType、metadata.worker_type、BridgePointer.source 与 environment_id：为什么环境来源标签、prior-state 域与环境身份不是同一种 provenance.md](./175-BridgeWorkerType、metadata.worker_type、BridgePointer.source%20与%20environment_id：为什么%20环境来源标签、prior-state%20域与环境身份不是同一种%20provenance.md)
 - [176-createBridgeSession.environment_id、source、session_context 与 permission_mode：为什么 session attach target、来源声明、上下文载荷与默认策略不是同一种会话归属.md](./176-createBridgeSession.environment_id、source、session_context%20与%20permission_mode：为什么%20session%20attach%20target、来源声明、上下文载荷与默认策略不是同一种会话归属.md)
+- [177-createBridgeSession.source、metadata.worker_type、BridgeWorkerType 与 claude_code_assistant：为什么 session origin declaration 与 environment origin label 不是同一种 remote provenance.md](./177-createBridgeSession.source、metadata.worker_type、BridgeWorkerType%20与%20claude_code_assistant：为什么%20session%20origin%20declaration%20与%20environment%20origin%20label%20不是同一种%20remote%20provenance.md)
 这一层适合在你已经知道“我想做什么”之后，进一步判断“为什么系统推荐这条路径，而不是相邻那条路径”。
 
 更稳一点说，这一层真正值钱的目录优化也不是继续补页，而是让每个控制面首页都先回答：

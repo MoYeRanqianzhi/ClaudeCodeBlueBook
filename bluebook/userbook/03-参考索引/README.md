@@ -92,6 +92,7 @@
 35. `BridgeConfig.environmentId`、`reuseEnvironmentId`、`registerBridgeEnvironment.environment_id` 与 `createBridgeSession` 看起来都在环境 attach 附近时，应该先去哪个入口分辨本地 env key、reuse claim、live env 与 session attach target 不是同一种环境主权。
 36. `BridgeWorkerType`、`metadata.worker_type`、`BridgePointer.source` 与 `environment_id` 看起来都在来源标记附近时，应该先去哪个入口分辨环境来源标签、prior-state 域与环境身份不是同一种 provenance。
 37. `createBridgeSession.environment_id`、`source`、`session_context` 与 `permission_mode` 看起来都在 session attach 附近时，应该先去哪个入口分辨 session attach target、来源声明、上下文载荷与默认策略不是同一种会话归属。
+38. `createBridgeSession.source`、`metadata.worker_type`、`BridgeWorkerType` 与 `claude_code_assistant` 看起来都在 remote provenance 附近时，应该先去哪个入口分辨 session origin declaration 与 environment origin label 不是同一种 remote provenance。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 
