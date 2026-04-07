@@ -123,3 +123,4 @@
 - [121-worker_status、external_metadata、AppState shadow 与 SDK event projection 索引.md](./121-worker_status%E3%80%81external_metadata%E3%80%81AppState%20shadow%20%E4%B8%8E%20SDK%20event%20projection%20索引.md)
 - [122-pending_action、post_turn_summary、task_summary 与 externalMetadataToAppState 索引.md](./122-pending_action%E3%80%81post_turn_summary%E3%80%81task_summary%20%E4%B8%8E%20externalMetadataToAppState%20索引.md)
 - [123-createV1ReplTransport、createV2ReplTransport、reportState、reportMetadata 与 reportDelivery 索引.md](./123-createV1ReplTransport%E3%80%81createV2ReplTransport%E3%80%81reportState%E3%80%81reportMetadata%20%E4%B8%8E%20reportDelivery%20索引.md)
+- [124-createDirectConnectSession、DirectConnectSessionManager、useDirectConnect、remoteSessionUrl 与 replBridgeConnected 索引.md](./124-createDirectConnectSession%E3%80%81DirectConnectSessionManager%E3%80%81useDirectConnect%E3%80%81remoteSessionUrl%20%E4%B8%8E%20replBridgeConnected%20索引.md)
