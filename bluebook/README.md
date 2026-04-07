@@ -12,6 +12,10 @@
 3. 当前真相保护
    - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
+这里还应再多记一句目录纪律：
+
+- `continuity` 不是第四条并列母线，而是 Prompt 的 `Continuation`、治理的 `continuation pricing` 与源码质量的 `recovery non-sovereignty / anti-zombie` 在时间维度的交汇；一旦把它单独写成命令目录，就会重新把对象链拆散。
+
 如果继续把“设计内涵”也压成 later maintainer 第一次就该抓住的三句制度判断，也只该剩：
 
 1. Prompt 不是 instruction 美学，而是不同 consumer 不必重新协商当前世界。

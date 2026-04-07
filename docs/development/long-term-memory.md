@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README.md` 与 `bluebook/philosophy/README.md` 的长期默认 continuity bridge 现已继续写死：
+  - 默认明确写出 `continuity 不是第四条独立母线`
+  - 默认把 continuity 收回 Prompt `Continuation`、治理 `continuation pricing` 与源码质量 `recovery non-sovereignty / anti-zombie` 的共同时间轴
+  - 后续若目录桥接又把 continuity 写回命令目录，默认按前门退化处理
+- `userbook/05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md` 的长期默认 reject signal 现已继续收紧：
+  - 默认拒收 `pending_action / task_summary / summary prose` 冒充恢复主链
+  - 默认拒收旧恢复资产越权 current truth
+  - 默认拒收 stale witness / reload failure 被叙事化掩盖
+  - 后续若这页再把 continuity consumer 写成新宪法，默认按控制面越权处理
 - `userbook/02-能力地图/01-运行时主链/05-压缩、恢复与记忆：如何维持可继续工作的现场.md` 的长期默认首问现已继续写死：
   - 默认不再把这一页写成命令按钮说明
   - 默认先讲 `lawful forgetting -> stable bytes externalize -> reload law -> continuation qualification`

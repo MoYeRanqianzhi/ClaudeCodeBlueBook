@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 continuity 目录桥接动作: 已继续更新 `bluebook/README.md`、`bluebook/philosophy/README.md` 与 `userbook/05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md`。这一批把 continuity 从“连续性命令专题”继续收回成三条母线的时间交汇：Prompt 线负责 `Continuation` witness，治理线负责 `continuation pricing`，源码质量线负责 `recovery non-sovereignty / anti-zombie`。新的结论是：只要把 continuity 单列成第四条母线，目录就会重新退回命令分类法。
+- 本轮新的 control-plane 结论: continuity 的控制面页最该继续拒收三类越权对象：`pending_action / task_summary / summary prose` 冒充恢复主链，旧 summary/title/mode/pointer 冒充 current truth，stale witness / reload failure 不被正式点名而继续假装恢复成功。
 - 本轮 continuity system 深化动作: 已继续更新 `userbook/02-能力地图/01-运行时主链/04-会话真相层：实时状态、Transcript 与恢复账本.md`、`05-压缩、恢复与记忆：如何维持可继续工作的现场.md` 与 `userbook/04-专题深潜/02-连续性与记忆专题.md`。这一批把“连续性工具”继续压回同一条 law：`lawful forgetting -> stable bytes externalize -> reload law -> continuation qualification`。新的结论是：真正省 token 的默认写法不是“更短”，而是“哪些 bytes 继续留主账、哪些应被外置、哪些必须被正式遗忘”。
 - 本轮新的 continuity 结论: `summary` 不能单独充当 witness，`memory` 不能单独充当 transient state 容器，`resume` 也不能单独充当 unconditional restore。更稳的默认分层现在是：`04-会话真相层` 定义 ledger / budget / reload law，`05-压缩、恢复与记忆` 解释具体 continuity tools，`04-专题深潜/02` 把它翻译成用户如何先判 `working set / worksite / stable rule` 哪一层失真。
 - 本轮并行 Agent 新结论已吸收: Prompt 线继续把 continuity magic 写成 `continue qualification` 而不是摘要 prose；安全与省 token 线继续把 continuity 写成 `budget-honesty` 而不是“少写字”；源码质量线继续把 continuity 写成 `anti-zombie / duplicate-response / recovery non-sovereignty`，而不是“恢复能力更强”。
