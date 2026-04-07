@@ -161,3 +161,4 @@
 - [159-print --continue、print --resume session-id、print --resume url 与 loadConversationForResume 索引.md](./159-print%20--continue、print%20--resume%20session-id、print%20--resume%20url%20与%20loadConversationForResume%20索引.md)
 - [160-loadMessagesFromJsonlPath、parseSessionIdentifier、loadConversationForResume 与 sessionId 索引.md](./160-loadMessagesFromJsonlPath、parseSessionIdentifier、loadConversationForResume%20与%20sessionId%20索引.md)
 - [161-readBridgePointerAcrossWorktrees、getBridgeSession、reconnectSession 与 environment_id 索引.md](./161-readBridgePointerAcrossWorktrees、getBridgeSession、reconnectSession%20与%20environment_id%20索引.md)
+- [162-BridgePointer.environmentId、getBridgeSession.environment_id、reuseEnvironmentId 与 registerBridgeEnvironment 索引.md](./162-BridgePointer.environmentId、getBridgeSession.environment_id、reuseEnvironmentId%20与%20registerBridgeEnvironment%20索引.md)

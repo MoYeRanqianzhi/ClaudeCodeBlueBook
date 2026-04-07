@@ -163,6 +163,7 @@
 144. 为什么 `print --continue`、`print --resume session-id`、`print --resume url` 与 `loadConversationForResume` 说明同属 headless resume，也不是同一种 source certainty。
 145. 为什么 `loadMessagesFromJsonlPath`、`parseSessionIdentifier`、`loadConversationForResume` 与 `sessionId` 说明 `print --resume .jsonl` 与 `print --resume session-id` 不是同一种 local artifact provenance。
 146. 为什么 `readBridgePointerAcrossWorktrees`、`getBridgeSession`、`reconnectSession` 与 `environment_id` 说明 `remote-control --continue` 与 `remote-control --session-id` 不是同一种 bridge authority。
+147. 为什么 `BridgePointer.environmentId`、`getBridgeSession.environment_id`、`reuseEnvironmentId` 与 `registerBridgeEnvironment` 说明 pointer 里的 env hint、server session env 与 registered env 不是同一种 truth。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
