@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 113 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 115 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 源码剖面层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责把单机制证据拆开，不额外替主目录签治理 verdict。
 
 ## 这一子目录放什么
@@ -137,7 +137,7 @@
 102. [102-cleanupPeriodDays与housekeeping调度中的强请求清理保留期治理边界](102-cleanupPeriodDays与housekeeping调度中的强请求清理保留期治理边界.md)
 103. [103-settings文案与cleanup覆盖范围中的强请求清理保留期执行诚实性边界](103-settings文案与cleanup覆盖范围中的强请求清理保留期执行诚实性边界.md)
 104. [104-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界](104-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界.md)
-105. [105-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug、diagLogs与cleanup的强请求清理家族宪法边界](105-%E5%BC%BA%E8%AF%B7%E6%B1%82%E6%B8%85%E7%90%86%E5%AE%B6%E6%97%8F%E5%AE%AA%E6%B3%95%E8%BE%B9%E7%95%8C.md)
+105. [105-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug、diagLogs与cleanup的强请求清理家族宪法边界](105-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug、diagLogs与cleanup的强请求清理家族宪法边界.md)
 106. [106-diskOutput、toolResultStorage、sessionStorage、plans、fileHistory、sessionEnvironment、debug与diagLogs中的强请求清理制度理由边界](106-diskOutput、toolResultStorage、sessionStorage、plans、fileHistory、sessionEnvironment、debug与diagLogs中的强请求清理制度理由边界.md)
 107. [107-cleanup、settings、path helpers、permissions与env contract中的强请求清理制度元数据边界](107-cleanup、settings、path helpers、permissions与env contract中的强请求清理制度元数据边界.md)
 108. [108-cleanupPeriodDays、housekeeping、plansDirectory、diagLogs与CleanupResult的强请求清理运行时符合性缺口](108-cleanupPeriodDays、housekeeping、plansDirectory、diagLogs与CleanupResult的强请求清理运行时符合性缺口.md)
@@ -146,10 +146,12 @@
 111. [111-runMigrations、migrateLegacyOpusToCurrent、orphan宽限期与plans continuity的强请求清理迁移治理边界](111-runMigrations、migrateLegacyOpusToCurrent、orphan宽限期与plans continuity的强请求清理迁移治理边界.md)
 112. [112-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界](112-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界.md)
 113. [113-tombstone messages、.orphaned_at与migration timestamps的强请求清理墓碑治理边界](113-tombstone messages、.orphaned_at与migration timestamps的强请求清理墓碑治理边界.md)
+114. [114-removeOrphanedAtMarker、refreshActivePlugins与copyPlanForResume的强请求清理复活治理边界](114-removeOrphanedAtMarker、refreshActivePlugins与copyPlanForResume的强请求清理复活治理边界.md)
+115. [115-deletePluginOptions、setPluginEnabledOp与copyPlanForFork的强请求清理再赋权治理边界](115-deletePluginOptions、setPluginEnabledOp与copyPlanForFork的强请求清理再赋权治理边界.md)
 
 ## 和其他目录的分工
 
 - 与 `security/` 主目录的关系：`source-notes/` 负责贴近源码拆机制，主目录负责把这些机制压成更高阶判断。
 - 与 `appendix/` 的关系：`appendix/` 负责短表、矩阵和索引；`source-notes/` 负责长一点的证据剖面，不把速查卡撑成半篇长文。
 - 与 `docs/development/research-log.md` 的关系：research log 负责记录研究推进；`source-notes/` 负责留下可以长期复用的源码剖面资产。
-- 与 [../../../docs/development/security/README.md](../../../docs/development/security/README.md) 的关系：安全专题的后续候选、章节推进和写作边界放到隔离记忆层，不再混回 `source-notes/`。
+- 与 [../../docs/development/security/README.md](../../docs/development/security/README.md) 的关系：安全专题的后续候选、章节推进和写作边界放到隔离记忆层，不再混回 `source-notes/`。
