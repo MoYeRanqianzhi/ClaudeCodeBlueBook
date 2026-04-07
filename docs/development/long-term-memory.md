@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-title-lede-de-enchantment-3 language 现已继续写死：
+  - Prompt opener 里的 `魔力首先 / 其次 / 再次 / 最后` 默认继续统一收回 `效力`
+  - Prompt 顶层标题、导语、backlink 与 opener 现在默认继续保持同一条去魅调门
 - `bluebook/README`、`bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-title-lede-de-enchantment-2 language 现已继续写死：
   - Prompt 线默认继续把标题和导语里的 `魔力` 收回 `效力`
   - backlink 默认继续把 `owner / first-answer law` 收回 `canonical source / 首答来源`

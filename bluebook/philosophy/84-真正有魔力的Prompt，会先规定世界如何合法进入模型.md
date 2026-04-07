@@ -46,7 +46,7 @@
 3. `display transcript`、`protocol transcript` 与 `continuation object` 是否仍沿同一条 `message lineage` 投影
 4. `compact / fork / handoff` 之后谁仍有资格继续
 
-Prompt 的魔力，首先来自：
+Prompt 的效力，首先来自：
 
 - 世界先被编译
 
