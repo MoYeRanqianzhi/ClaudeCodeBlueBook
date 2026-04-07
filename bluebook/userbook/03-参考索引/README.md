@@ -71,6 +71,9 @@
 14. `SENTINEL_LOADING`、`SENTINEL_LOADING_FAILED`、`SENTINEL_START`、`useAssistantHistory`、`remoteConnectionStatus` 与 `BriefIdleStatus` 看起来都在历史翻页附近时，应该先去哪个入口分辨 attached viewer 哨兵与 remote presence surface。
 15. `discoverAssistantSessions`、`launchAssistantInstallWizard`、`launchAssistantSessionChooser`、`createRemoteSessionConfig` 与 attach banner 看起来都在 assistant 入口附近时，应该先去哪个入口分辨发现、安装、选择与附着不是同一种 connect flow。
 16. `showSetupDialog`、`renderAndRun`、`launchResumeChooser`、`launchRepl`、`AppStateProvider` 与 `KeybindingSetup` 看起来都在 interactive 入口附近时，应该先去哪个入口分辨 setup-dialog host 与 attached REPL host。
+17. `getSessionFilesLite`、`loadFullLog`、`SessionPreview`、`useAssistantHistory` 与 `fetchLatestEvents` 看起来都在 `/resume` 历史附近时，应该先去哪个入口分辨本地 preview transcript 与 attached viewer remote history。
+18. `getSessionFilesLite`、`enrichLogs`、`LogSelector`、`SessionPreview` 与 `loadFullLog` 看起来都在 `/resume` 本地 durable surface 附近时，应该先去哪个入口分辨列表摘要面与 preview transcript。
+19. `SessionPreview`、`loadFullLog`、`loadConversationForResume`、`switchSession` 与 `adoptResumedSessionFile` 看起来都在 `/resume` 恢复附近时，应该先去哪个入口分辨 preview transcript 与正式 session restore。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 
