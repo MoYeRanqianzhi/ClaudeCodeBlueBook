@@ -88,6 +88,8 @@ Claude Code 真正复用的不是聊天历史，而是主线程留下的 cache-s
 2. 先把 tool schema 当作 Prompt ABI，而不是外围细节。
 3. 先定义谁可以补边，谁只能继承。
 
+更稳的 builder 自校也只该再补一句：若 tool schema、beta/header 变化与 cache break 仍被视为外围实现，复制到的就只是 Prompt 外观，不是 Prompt 魔力。
+
 不要做的事：
 
 1. 不要让 side path 自己再拼一份“差不多的世界”。

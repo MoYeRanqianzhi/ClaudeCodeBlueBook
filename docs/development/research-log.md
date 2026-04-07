@@ -10,6 +10,8 @@
 - 本轮新的 meta-law 结论：`navigation/04` 若继续重写“规范入口是什么”，它就会和 `bluebook/README / 09 / docs/development/00` 竞争 owner；更稳的写法是把它收回 compat alias 与 route dispute 页。相应地，`docs/README` 只继续保存过程/记忆，`01-章节规划` 里的“负责”只继续视为 batch inventory，而不是稳定 speaking rights。
 - 本轮新的 public-artifact 记忆也已现场复核：`npm view @anthropic-ai/claude-code version dist.tarball` 当前返回 `2.1.92` 与对应 tarball，因此 ceiling 纪律现在可以更具体地写成“官方 npm bundle/schema 可核验，`claude-code-source-code/src/...` 仍只算 mirror-backed evidence”。
 - 本轮也顺手修正了一条 live version anchor：`userbook/README` 与 `long-term-memory` 现在统一把当前公开 artifact 版本写成 `@anthropic-ai/claude-code@2.1.92`；`research-log` 里更早的 `v2.1.88` 只应继续读成 `2026-04-06` 的历史基线快照。
+- 本轮新的治理 why 结论：安全与省 token 更深的同构不是“共用预算器”，而是“共用 authority lease 法则”。动作权限、上下文席位与 continuation 时间都不是普通资源，而是需要续租、重定价与按时结算的治理租约；因此大结果继续留在主上下文、弱读回面被误读成 signer，都会同时制造安全 drift 与 token 浪费。
+- 本轮新的 Prompt / 源码质量 why 结论：Prompt magic 还可再压成 `anti-renegotiation`，即不同 consumer 与多轮/接手链不必重复协商当前世界；源码先进性则应更明确承认 `evidence governance` 本身就是能力对象，因为 `public artifact ceiling / downgrade / gap retention / reject path` 已经在治理谁能签字、何时必须保留未知。
 - 本轮新的 Prompt owner 结论：真正会制造双 owner 心智的，不只是重发 6-link ABI，而是各种 `84 / 51`、`84 -> 51`、`84 / guides/51` 回指。更稳的默认修法是：非 owner 页统一只回 `philosophy/84`；`51` 只在其自身 builder-facing implement / audit 语境里出现。
 - 本轮新的高流量入口结论：`README`、`navigation/README` 与 `userbook/00` 的 residual 现在更像“说太多的 route page”，而不是“缺页”。更稳的默认修法不是再补一层 frontdoor，而是继续做 link-back compression：删掉 owner-law / `*_ref` / 时间轴裁决，只留入口句和 next-hop。
 - 本轮新的 user-facing Prompt 结论：`userbook/01-02`、`04-08`、`05-README` 与 `05-03` 这几页若继续把 Prompt witness 写成 `*_ref` 字段表，就会把“工作动作判断”重新退回 owner object list。更稳的默认修法是：高流量 user-facing 页只保留 `目标 / 附件 / working set / next step` 四种动作语言，owner object chain 统一回 `philosophy/84`。

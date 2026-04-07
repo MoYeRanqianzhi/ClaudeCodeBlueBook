@@ -34,6 +34,7 @@
 
 - `product promise readback`
   - 只读已外化 admission / capability / continuity verdict，不配补签 host truth
+  - 它不是恢复中的临时权威，而更像 cleanup 之后的用户侧结算单
 - `reopen qualification`
   - 只读 stronger signer 留下的 residual liability 与 threshold，不配靠弱投影自行重开
 - `evidence binding`

@@ -23,6 +23,7 @@
 - 宿主不该自己从事件流回放拼当前真相；更稳的做法是消费 runtime 已外化的 truth-surface / decision window / cleanup stage verdict。
 - 任何 user-facing 状态、诊断、压缩或导出入口，都只配读取已外化的 truth-surface、decision window 与 cleanup stage verdict，不配定义治理真相或继续资格；用户侧恢复读法统一回 `risk/`。
 - `/status / /doctor / /usage`、approval UI、summary、dashboard 与 `Compact / Resume / Memory` 都只配触发怀疑、做二跳或消费 continuation verdict，不配越级充当 signer。
+- 弱读回面之所以必须弱，不是因为信息少，而是因为一旦被误读成 signer，observability 就会反向偷权，重新长出新的免费扩张通道。
 - `shared_consumer_surface` 只表示不同 reader 是否仍在只读消费同一个 verdict object，不表示谁拥有 current truth；projection 字段层继续回 `appendix/87`，reprojection 分层继续回 `appendix/159`。
 - 这里说的 `cleanup stage verdict` 只表示前门层可见的 cleanup 读回，不自动等于更深层的 unified runtime-conformance receipt 或 future-readable finality；若要判断那条更强 signer 链，继续回深页 signer 分层。
 
