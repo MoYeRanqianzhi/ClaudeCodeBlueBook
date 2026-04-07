@@ -7,7 +7,7 @@
 - Prompt
   - `84`
 - 治理
-  - `10 -> security / risk / playbooks`
+  - `10 -> security（mechanism） / risk（tail readback） / playbooks（execution）`
 - 当前真相保护
   - `102（先判 evidence mode / public-artifact ceiling / official-vs-mirror）`；缺 why 再去 `87`，缺 object / seam 再去 `architecture/README`，缺自校再去 `06`
 

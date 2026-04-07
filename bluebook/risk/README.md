@@ -58,8 +58,9 @@
 
 因此风控入口说明也不该自己回放事件去猜当前真相，而应沿已外化的 readback、evidence 与 reopen 条件去回读。
 - 恢复与 reopen 的机制口径统一回 `security`；若已经进入验收、修复或 reopen drill，再回 `playbooks`。通用弱读回面总声明与治理 why 统一回 `10 -> philosophy/85 -> philosophy/61`。
-- `product promise readback` 也是弱读回面：它只对账已外化 verdict，不回放事件，不改判治理真相，也不越级宣布恢复成立。
-- `reopen qualification` 与 `evidence binding` 也是同一尾链上的弱读回：前者判断剩余 liability 是否仍足以重开，后者判断用户侧申诉还能绑定哪类已外化证据。
+- `product promise readback` 是用户侧 weak readback：它只对账已外化 verdict，不回放事件，不改判治理真相，也不越级宣布恢复成立。
+- `reopen qualification` 是 liability-threshold readback：它判断剩余 liability 是否仍足以重开，不自己补签 signer。
+- `evidence binding` 是 tail evidence：它判断用户侧申诉还能绑定哪类已外化证据。
 
 更稳的 first reject signal 也应先记三条：
 
