@@ -2,6 +2,9 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮源码质量 frontdoor 单源化动作: 已继续更新 `03`、`06` 与 `api/30`。这一批把源码质量线的 first-answer 从多套高阶解释词收回同一条 canonical ladder：`contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`。后续 `evidence gradient / authority surface / temporal honesty / future maintainer rejectability` 与 `authority surface -> writeback split -> freshness gate -> later-maintainer rejectability` 默认都只配做解释层压缩句，不再在前门层和 canonical ladder 并列。
+- 本轮新的源码质量结论: later maintainer 的第一性顺序也被进一步写硬了。更稳的入口顺序应是：先判 `public artifact ceiling`，再判 `contract / registry / current-truth surface`；若 sole writer、writeback seam 与 freshness guard 还没锁定，就只配写 `current-truth surface candidate`，不能把 present truth 提前写实。
+- 本轮新的 API/frontdoor 结论: `api/30` 这种目录地图页若不把 `public artifact ceiling` 与旧别名降权规则写在第一页，就会继续把 `authoritative surface / adapter subset / hotspot gap discipline` 这组兼容检索词误读成 canonical rung。现在这条降权规则已前移，后续 API/frontdoor 默认都应复用。
 - 本轮 Prompt frontdoor 硬化动作: 已继续更新 `README`、`06`、`07` 与 `09`。这一批不再给 Prompt 新造 noun，而是把现有前门句统一收回 `world-defining winner -> compile world-entry -> verify witness ABI -> enforce continue qualification`：`Explainability` 现在更早被写死为 `diagnostic, not adjudicative`，`Authority` 也更明确被解释成“先解出唯一 winner”，不再像 secret noun。
 - 本轮新的 Prompt 结论: `compile -> protocolize -> preserve -> continue -> explain` 已不再足够硬。更稳的前门动作链应默认改读为 `compile -> verify -> enforce -> continue -> explain`，否则会与官方已承认的 `gather context -> take action -> verify results` 和当前 witness ABI 解释相互打架。
 - 本轮新的目录分工结论: `00-导读` 一旦继续保留完整 canonical formula、动作链与 reject signal，就会重新长成第二前门；`navigation/README` 一旦继续重讲公式与顺序，就会把 canonical formula 降成 route 口令。后续 frontdoor 优化默认优先删这两类重复首答。

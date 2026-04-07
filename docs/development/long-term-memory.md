@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 源码质量线的长期默认 canonical ladder 现已继续写死成：
+  - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - `evidence gradient / authority surface / temporal honesty / future maintainer rejectability`
+  - `authority surface -> writeback split -> freshness gate -> later-maintainer rejectability`
+  - 后两组后续默认都只配做解释层压缩句，不再和 canonical ladder 并列抢首答权
+- later maintainer 在源码质量线上的长期默认第一问现已继续写死：
+  - 先判 `public artifact ceiling`
+  - 再判 `contract / registry / current-truth surface`
+  - 若 sole writer、writeback seam 与 freshness guard 还没锁定，就只配写 `current-truth surface candidate`
+- `api/30` 这一类目录地图页的长期默认第一页纪律现已继续写死：
+  - 必须先写 `public artifact ceiling`
+  - 必须先声明兼容检索旧词如 `authoritative surface / adapter subset / hotspot gap discipline` 不再拥有首答权
 - Prompt frontdoor 的长期默认硬句现已继续写死成：
   - `world-defining winner -> compile world-entry -> verify witness ABI -> enforce continue qualification`
   - `Explainability` 默认只负责诊断，不负责改判

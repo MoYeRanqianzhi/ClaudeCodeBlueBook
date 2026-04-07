@@ -2,7 +2,16 @@
 
 这页不该被读成“目录级能力大全”。
 
-更稳的读法是先过一条源码真相梯度：
+更稳的读法是先过两道入口纪律：
+
+1. `public artifact ceiling`
+   - 先分清公开镜像到底签到了什么 contract、哪些只是 operator-governance artifact、哪些还处在 runtime-core 缺口里。
+2. 源码真相梯度
+   - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+
+文件名里的 `authoritative surface / adapter subset / hotspot gap discipline` 只保留为兼容检索别名，不再拥有首答权。
+
+更细一点说，真正的源码真相梯度是：
 
 1. `contract`
 2. `registry`
@@ -80,6 +89,7 @@ Claude Code 的目录先进性，首先不是：
 4. `src/cli/structuredIO.ts`
 
 这层是 `one writable present` 的正式入口。只要 stale snapshot、event replay 或 UI 投影还能越权写现在，这层就还没有站稳。
+若 sole writer、writeback seam 与 freshness guard 还没锁定，在公开镜像里最多只能先把它写成 `current-truth surface candidate`，不能提前宣布 present truth 已经成立。
 
 ### 1.4 `consumer subset`
 
