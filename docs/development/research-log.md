@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮治理 anti-misread 深化动作: 已继续更新根 `README.md`、`bluebook/navigation/README.md` 与 `bluebook/userbook/README.md`。新的结论是：最高频入口现在最危险的失真不再是材料不足，而是 route words、projection words 与 UI words 重新篡位成治理主语。更稳的默认写法是：根 README 先提醒“安全与省 token 是同一条治理收费链”，`navigation` 先提醒自己“只管 route，不签 truth”，`userbook` 先提醒读者“先定题，不先找页”。
+- 本轮新的治理结论: `projection usurpation` 与 `route-law inflation` 现在都被前推成显式误读类别。后续凡是把 `mode / modal / usage / token UI / default continue / rollback files` 写成治理本体，或把 `security vs token`、`continuity / memory / resume / handoff` 写成并列主题，默认都按第二前门语言处理。
 - 本轮 Prompt crosswalk 深化动作: 已继续更新 `bluebook/README.md`、`bluebook/navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`。新的结论是：Prompt 前门如果只共享 `Authority / Boundary / Transcript / Lineage / Continuation / Explainability` 这些 nouns，而不给 canonical object、常见 counterfeit 与 truth-plane non-promotion，later maintainer 仍会在入口层重新把 system prompt 文本、UI transcript、summary prose 与 handoff card 误升成第二主语。
 - 本轮新的 Prompt 设计结论: Prompt 的“魔力”现在被进一步压成四条 hard claims：唯一 `world-defining winner`、`protocol transcript` 优先于 `display transcript`、`continuation qualification` 优先于平滑叙事、`Explainability` 只有命名权没有改判权。更稳的默认前门现在不只要给公式，还要给 counterfeit test。
 - 本轮 atlas/root-map 深化动作: 已继续更新 `bluebook/01-源码总地图.md`、`01-源码结构地图.md`、`05-功能全景与API支持.md` 与 `08-能力全集、公开度与成熟度矩阵.md`。新的结论是：地图页、能力全景页与矩阵页也必须共享 `问题分型 -> 工作对象 -> 控制面 -> 入口`，否则 atlas 会在目录层重新长回“目录观感 / 存在性清单 / 产品承诺”三者混写的第二前门语言。

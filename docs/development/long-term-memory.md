@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 根 `README`、`bluebook/navigation/README` 与 `bluebook/userbook/README` 的长期默认 governance-anti-misread language 现已继续写死：
+  - 根 `README` 默认继续提醒“安全与省 token 不是两道并列题，而是同一条治理收费链的两种外观”
+  - `navigation/README` 默认继续写死“只管 route，不签 truth”
+  - `navigation/README` 默认继续把 `mode / modal / usage / token UI / default continue / rollback files` 降回 projection / suspicion trigger
+  - `userbook/README` 默认继续把 user-facing 第一问写成 `上下文送错 / 扩张或权限判错 / 旧状态污染`
+  - 这组三页默认统一拒收 `projection usurpation` 与 `route-law inflation`
 - `bluebook/README`、`bluebook/navigation/15` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 Prompt-crosswalk language 现已继续写死：
   - 根 `README` 默认继续把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 写成 canonical object 与 counterfeit 的对照
   - `navigation/15` 默认继续写死 Prompt shorthand 必须回绑 canonical node，并明确 `display transcript` 不得越级成 `protocol transcript` 或 `continuation verdict`
