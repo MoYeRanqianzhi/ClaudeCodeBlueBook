@@ -9,6 +9,8 @@
 3. `multi-host != same surface`
    - IDE、终端、Vim、语音、桌面、浏览器、remote-control 都在消费同一个 runtime 的不同子集，不是同一张面板换皮。
 
+这里也要先压住一个常见误读：`会话继续 / remote 接续 / status 变化` 不是第四类体验主题；它们只是 `host / session / projection / display` 落到时间轴之后的继续条件。
+
 更硬一点说，这一层在 `02-能力地图` 里的发言权也只该剩：
 
 1. `user-visible projection 翻译权`
@@ -19,6 +21,8 @@
    - 它不替 runtime-core 重签当前世界，也不替控制面页改判治理 verdict。
 
 如果你还在把 UI 体感、状态词或平台入口当成 truth source，就先不要继续靠目录名碰运气。
+
+如果这一层不能和根 `userbook/README`、`01-主线使用` 以及本层 `03-Session 与 Remote-control` 共享同一组 first-answer order，它就会把平台入口重新写成真相入口。
 
 这一层最该先拒收的误读也只剩三种：
 

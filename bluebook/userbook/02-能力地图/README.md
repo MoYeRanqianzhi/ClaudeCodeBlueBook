@@ -15,7 +15,11 @@
 4. `无真相签发权`
    - 它不替 `api/` 重签 host-facing truth，也不替 `philosophy/` 重判为什么成立。
 
+这里也要先压住一个常见误读：`continuity` 不是第六张能力平面；它只是同一工作对象在 `Continuation / continuation pricing / cleanup-before-resume` 上跨平面的共同时间轴。
+
 如果这里开始把 capability map 写成系统真相本体，它就会从地图长成第二蓝皮书。
+
+更稳一点说，`02-能力地图` 也必须继承 `userbook/README -> 01 -> 04 / 05` 的同一组 first-answer order；如果地图只能罗列平面，却不能把用户送回正确顺序，它就还只是 inventory，不是真正的 capability map。
 
 - [01-运行时主链/README.md](./01-%E8%BF%90%E8%A1%8C%E6%97%B6%E4%B8%BB%E9%93%BE/README.md)
 - [02-执行与工具/README.md](./02-%E6%89%A7%E8%A1%8C%E4%B8%8E%E5%B7%A5%E5%85%B7/README.md)

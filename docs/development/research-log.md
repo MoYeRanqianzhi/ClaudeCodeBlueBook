@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 userbook secondary-frontdoor 深化动作: 已继续更新 `bluebook/userbook/02-能力地图/README`、`03-参考索引/README`、`02-能力地图/05-体验与入口/README` 与 `03-参考索引/05-任务到入口速查矩阵.md`。新的结论是：二级入口层也不该把 continuity 单列成能力平面、问题域或体验主题。更稳的默认写法是：`02` 只把它写成 capability map 的跨平面时间轴，`03` 只把它写成索引路由的时间轴入口，`05-体验与入口` 只把它写成 host/session 生命周期的继续条件，任务矩阵则只把它写成 route，不写成新功能桶。
+- 本轮新的索引层结论: 如果 `02 / 03 / 05-任务到入口速查矩阵` 不能继承 `问题分型 -> 工作对象 -> 控制面 -> 入口` 这组顺序，userbook 就仍然会在二跳之后把用户送回“按标题碰运气”。现在二级入口层也开始从“共享 nouns”推进到“共享 first-answer order”。
 - 本轮 userbook frontdoor 深化动作: 已继续更新 `bluebook/userbook/README`、`01-主线使用/README`、`04-专题深潜/README` 与 `05-控制面深挖/README`。新的结论是：user-facing 前门也不该把 continuity 单列成第四条使用主题、第五类工作对象或第四条控制面。更稳的默认写法是：根 `README` 只把它写成同一工作对象在三条母线上的共同时间轴，`01` 只把它写成主线动作链的继续条件，`04` 只把它写成工作对象分组的时间轴，`05` 只把它写成 continue / price / cleanup 的用户侧判断。
 - 本轮新的 userbook 目录结论: userbook 目录优化如果只能做到“问题分型”和“README 二跳”，却不能让 `userbook/README -> 01 -> 04 / 05` 共享同一组 first-answer order，就仍然会把用户送回“按页碰运气”。现在这一层已经开始把 shared nouns 继续前推成 shared order。
 - 本轮 top-level philosophy frontdoor 深化动作: 已继续更新 `bluebook/03`、`06` 与 `philosophy/80 / 82 / 84`。新的结论是：顶层哲学前门也不该把 continuity 单列成第四条线、第四个优点或第九个不可约问题。更稳的默认写法是：`03` 只把它写成三条主权安排的共同时间轴，`06` 只把它写成三条母线的共同验收，`80 / 82 / 84` 则只把它写成源码质量、治理与 Prompt 各自时间轴上的 continue / price / veto 纪律。

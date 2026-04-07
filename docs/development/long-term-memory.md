@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/userbook/02-能力地图/README`、`03-参考索引/README`、`02-能力地图/05-体验与入口/README` 与 `03-参考索引/05-任务到入口速查矩阵.md` 的长期默认 userbook secondary-frontdoor language 现已继续写死：
+  - `02` 默认不把 `continuity` 升成第六张能力平面
+  - `03` 默认不把 `连续性 / 记忆 / 恢复` 升成第四类索引问题域
+  - `05-体验与入口` 默认不把会话继续/remote 接续升成第四类体验主题
+  - 任务矩阵默认只做 route，不做 truth / verdict 签字
+  - 这组二级入口默认统一把 continuity 收回同一工作对象在 `Continuation / continuation pricing / cleanup-before-resume` 上的时间轴
+  - userbook 二级目录优化默认继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`
 - `bluebook/userbook/README`、`01-主线使用/README`、`04-专题深潜/README` 与 `05-控制面深挖/README` 的长期默认 userbook frontdoor language 现已继续写死：
   - 根 `README` 默认不把 `continuity` 升成第四条使用主题
   - `01` 默认不把连续性升成第六种入口
