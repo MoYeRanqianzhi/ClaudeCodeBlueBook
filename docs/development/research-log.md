@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 risk-frontdoor-readback 深化动作: 已继续更新 `bluebook/risk/README.md`。新的结论是：风控入口哪怕已经脱离“另一套安全规则”，仍可能在开场句把 later maintainer 拉回账号、入口、恢复、地区这些并列主题桶，而不是先看到同一条治理收费链的用户侧读回对象。
+- 本轮新的风控入口结论: 更稳的 risk wording 必须先说 `product promise readback / reopen qualification / evidence binding` 这组读回对象，再说误伤、恢复、入口差异或用户场景怎样落到这些对象上。
 - 本轮 architecture-readme-route-demotion 深化动作: 已继续更新 `bluebook/architecture/README.md`。新的结论是：架构入口哪怕已经不再争高阶前门，later maintainer 仍可能先被“推荐入口 / 阅读路径”这组路由表语气带走，而不是先拿到对象与 first reject signal。
 - 本轮新的架构入口结论: 更稳的 architecture README 必须先说“你缺的是哪类对象和证据”，再说“该去读哪页”。也就是先给最短证据入口与缺对象跳转，不先给路径表。
 - 本轮 entry-governance-ui-demotion 深化动作: 已继续更新 `bluebook/README.md` 与 `bluebook/userbook/README.md`。新的结论是：治理线即使在专题页里已经收回 canonical chain，总入口仍可能通过 approval、status、usage、compact、export、cleanup result 这组 UI noun 把 later maintainer 带回界面记忆。

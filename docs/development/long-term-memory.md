@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/risk/README` 的长期默认 risk-frontdoor-readback language 现已继续写死：
+  - 风控入口默认继续先说 `product promise readback / reopen qualification / evidence binding` 这组用户侧读回对象，不先说账号、入口、恢复、地区场景这些并列主题桶
+  - `risk/README` 默认继续把误伤、恢复与入口差异写成读回对象上的结算差异，不再把场景桶写成前门主语
 - `bluebook/architecture/README` 的长期默认 architecture-readme-route-demotion language 现已继续写死：
   - 架构入口默认继续先说最短证据入口与缺对象跳转，不先说推荐路径表
   - `architecture/README` 默认继续把 later maintainer 的第一动作写成“先定对象和 first reject signal”，不写成“先挑阅读路径”
