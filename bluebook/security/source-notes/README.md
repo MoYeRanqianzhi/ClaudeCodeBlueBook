@@ -24,6 +24,15 @@
 
 ## 当前内容
 
+更稳的速读可先按六簇看：
+
+- `01-15` receipt / finality / retention / cleanup carrier 机制簇：先看回执签收、session restore、不可逆销毁、保留期与 cleanup 家族元数据/反漂移。
+- `16-29` plugin / MCP capability lifecycle 机制簇：先看墓碑、复活、再赋权、重配置、就绪、reconnect、reprojection、revalidation 与 step-up。
+- `30-46` stronger-request settlement / cleanup 机制簇：先看续打、完成、终局、遗忘、免责释放、归档/审计/擦除，再看 retention、隔离、反漂移与修复。
+- `47-60` stronger-request migration 与 plugin/MCP re-entry 机制簇：先看迁移、退役、墓碑、复活、再赋权，再看 continuity、recovery、reintegration、reprojection 与 reassurance。
+- `61-75` stronger-request 续打、终局、retention 与制度元数据机制簇：先看 step-up、续打、终局/遗忘，再看 archive/audit、不可逆擦除、保留期执行诚实性、隔离、cleanup family constitution 与制度元数据。
+- `76-113` stronger-request 清理后半段与墓碑/re-entry 机制簇：先看迁移、退役、墓碑，再看复活、再赋权、重配置、重新激活、就绪、连续性、恢复、重新并入、重新投影、重新担保与用时重验证。
+
 1. [01-StructuredIO回执账本与签收边界](01-StructuredIO%E5%9B%9E%E6%89%A7%E8%B4%A6%E6%9C%AC%E4%B8%8E%E7%AD%BE%E6%94%B6%E8%BE%B9%E7%95%8C.md)
 2. [02-print与CCRClient的终局签字边界](02-print%E4%B8%8ECCRClient%E7%9A%84%E7%BB%88%E5%B1%80%E7%AD%BE%E5%AD%97%E8%BE%B9%E7%95%8C.md)
 3. [03-bridgePointer、sessionRestore与conversationRecovery的续作责任边界](03-bridgePointer%E3%80%81sessionRestore%E4%B8%8EconversationRecovery%E7%9A%84%E7%BB%AD%E4%BD%9C%E8%B4%A3%E4%BB%BB%E8%BE%B9%E7%95%8C.md)
