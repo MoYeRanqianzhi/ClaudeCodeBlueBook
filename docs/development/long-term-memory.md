@@ -8,6 +8,63 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/10`、`bluebook/philosophy/61`、`bluebook/security/README` 与 `bluebook/risk/README` 的长期默认 governance-one-order language 现已继续写死：
+  - `10` 默认继续显式区分强 signer 面与弱读回面，并把“为什么共用预算器还不够”固定二跳到 `61`
+  - `61` 默认继续把安全与省 token 写成“同一条治理秩序对 model-reachable world 的危险扩张与昂贵扩张同时收费”，不再退回“两个并列 feature”
+  - `security/README` 默认继续把 `/status / /doctor / /usage`、approval UI、summary、`Compact / Resume / Memory` 写成弱读回面或 continuation consumer，不再让 projection 冒充 signer
+  - `risk/README` 默认继续把 `product promise readback / reopen qualification / evidence binding` 写成同一治理尾链的用户侧读回，不再退回第二套支持故事
+  - 更稳的默认修法顺序继续是：`先写 one-order synthesis -> 再写 signer/readback asymmetry -> 最后补 owner ladder`
+- 根 `README` 与 `docs/development/01-章节规划.md` 的长期默认 meta-law demotion language 现已继续写死：
+  - 根 `README` 默认继续只分四类入口，并把第一次进入蓝皮书固定成 `README -> bluebook/README -> bluebook/09 -> owner page`，不再越级送读者提前进入 `03`
+  - `docs/development/01-章节规划.md` 默认继续只记录章节循环、批次库存与候选收口，不再代写目录法、发言权或 public frontdoor 规则
+  - 目录法、发言权与入口升级规则的稳定 owner 继续只认 `docs/development/00-研究方法.md`
+- 当前 `.worktrees/mainloop` 的长期默认 evidence-mode 记忆现已继续写死：
+  - 此 worktree 当前缺少本地 `claude-code-source-code/` 镜像；若无额外镜像落地，深度 Prompt / 治理 / 源码质量分析默认按 `public-evidence only` 处理，只能锚定 bluebook、userbook 与 `docs/development/02-证据索引.md`
+  - 因此任何“源码直接证明”表述都必须先确认镜像存在；否则默认降级成 owner docs 的保守推论
+- `bluebook/README`、`bluebook/philosophy/README` 与 `bluebook/navigation/README` 的长期默认 frontdoor-role-hardening language 现已继续写死：
+  - 根入口默认继续只保留三条首跳与“定题 / 定顺序 / 判是否跨目录”三件事，不再第二次摊平 why 与 deep chain
+  - `philosophy/README` 默认继续只保留 why frontdoor 与单问入口，不再自己库存 Prompt / 治理 / 源码质量的长链 route
+  - `navigation/README` 默认继续只保留两类合法停留场景、三类 route gap 与 appeal path；若它再次同时解释主语、最小顺序和 deep chain，默认按第二前门候选处理
+  - 更稳的默认修法顺序继续是：`先做 route trim -> 再做角色硬化 -> 最后补 owner back-link`，而不是先新开页
+- 并行 Agent 吸收后的长期默认 high-order synthesis language 现已继续写死：
+  - Prompt 魔力默认继续写成 `same-world compiler + witness chain + continuation qualification` 的单一 ABI，不再退回“文案更强”
+  - 安全与省 token 默认继续写成“同一治理秩序对 model-reachable world 重新定价”，不再退回“安全功能 + 压缩功能”并列
+- `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 tail-residual-self-audit language 现已继续写死：
+  - `03` 的 `33-35` 默认继续只保留“可逆边界 / 制度空间 / 第一问题单源”这一级反问，不再复活 `shadow / 切换 / 回退`、`seam / 局部替换` 或具体页面分工示例
+  - `06` 的 `6.47 / 6.50 / 6.53 / 6.54 / 6.57 / 6.58 / 6.62` 与 `7.2 / 7.4 / 7.6 / 7.8` 默认继续只保留“为什么不能写浅”与“我是不是又越位补卡”的自校句；凡是再次出现 object/seam nouns、Constitution nouns、统一预算器规则卡、迁移 rollout 词表或入口层级分发表，默认按越位候选处理
+  - 更稳的默认修法顺序继续是：`先删步骤词、页位示例与小框架卡 -> 再压成“可逆边界 / 第一问题 / 制度空间”反问 -> 最后只在必要时补 owner route`
+- 最新根仓同步记忆（2026-04-08，本轮最新批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
+- `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 manual-tone-tail-demotion language 现已继续写死：
+  - `03 / 06` 尾段默认继续不以“这页该给什么入口 / 这条线该有哪些组件 / 该回哪一页”这种 manual-card 口气说话；一旦出现，默认按越位候选处理
+  - 更稳的默认修法顺序继续是：`先删 feature / route / component list -> 再把句子压成“我是不是又在发卡” -> 最后补 owner route`
+- `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 tail-method-card-abstraction language 现已继续写死：
+  - `06` 的 `6.46-6.50` 这类尾段方法论卡默认继续不自带“三件事 / 不变量 / 资源轴 / 边界对象”这类清单；一旦出现，默认按“尾段 methodology 重新长成轻量 owner 卡”处理
+  - `7.10` 默认继续只保留“同一问题主语 / 第二前门”这一级抽象反问，不再显式讨论 `canonical formula / route words`
+  - 更稳的默认修法顺序继续是：`先删尾段小框架卡 -> 再把 verdict 句压成 why / self-audit -> 最后补 owner route`
+- 最新根仓同步记忆（2026-04-08，本轮最新尾段批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
+- `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 prompt-card-abstraction language 现已继续写死：
+  - `06` 的 Prompt 判据卡默认继续优先问“是不是又写回替身 / 术语 / 机制”，不再枚举 `projection / summary / handoff prose`、`object / reject` 或相近的轻量机制词
+  - 更稳的默认修法顺序继续是：`先删轻量机制词 -> 再把判据压成抽象反问 -> 最后补 owner route`
+- 最新根仓同步记忆（2026-04-08，本轮最新小批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
+- `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 prompt-self-audit-card-demotion language 现已继续写死：
+  - `06` 的 `7.4 / 7.7 / 7.9 / 7.10` 这类 Prompt 判据卡默认继续只保留抽象反问，不再并排复述 `84 / 51` 的 object / reject / migration nouns
+  - `6.54 / 6.57` 这类 Prompt 尾段默认继续只保留“为什么不能被写浅”的 why 句，不再在正文里解释 `owner split / speaking-right / qualification` 这一层
+  - 更稳的默认修法顺序继续是：`先删具名 owner 术语 -> 再把判据压成反问句 -> 最后补 owner route`
+- 最新根仓同步记忆（2026-04-08，本轮最新批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
+- `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 late-card-why-demotion language 现已继续写死：
+  - `03` 尾段标题与收束句默认继续优先写 why / self-audit，不再把“复杂度治理”“首问单源化”这类 owner verdict 直接写成章节占位句
+  - `06` 的 `6.37-6.44` 这类 late self-audit cards 默认继续不自带框架清单、三层分类或四件事配方；一旦出现，默认按“尾段再长第二张结构卡”处理
+  - 更稳的默认修法顺序继续是：`先删框架清单 -> 再把 verdict 句压成 why / self-audit -> 最后补 owner route`
+- `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 deeper-self-audit-card-demotion language 现已继续写死：
+  - `03` 的治理 / 重构 / build why 小节默认继续不自带治理链段、future-maintainer owner verdict 或 build-side object 清单；一旦出现，默认按越位候选处理并改路由回 `10 / security / risk / 87 / architecture`
+  - `06` 的治理 / 构建自校小节默认继续不自带 failure checklist、职责矩阵或 build nouns；一旦出现，默认按“self-audit 页误长第二机制卡”处理
+  - 更稳的默认修法顺序继续是：`先删清单 -> 再把 verdict 句缩成 why / self-audit -> 最后补 owner route`
+- 最新根仓同步记忆（2026-04-08，本轮当前批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
+- `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 deeper-page-owner-noun-demotion language 现已继续写死：
+  - `03` 深页标题默认继续优先写 why 句，不再把 `Transcript / Lineage / Continuation`、`section registry / lawful forgetting`、truth planes / writeback surface 或 quality ladder / verdict bundle 写成章节标题或章节自带审读位
+  - `06` 深页默认继续只保留“为什么不能被写浅”的自校反问；凡是自校页开始自己列 Prompt assembly nouns、治理链段、later-maintainer / object-seam nouns，默认按越位候选处理
+  - 更稳的默认修法顺序继续是：`先改标题成 why / self-audit 句 -> 再删正文里具名 owner nouns -> 最后补一句 owner route`
+- 最新根仓同步记忆（2026-04-08，本轮后续批次）继续记录为部分阻塞：`fetch origin main` 成功，但根仓 `checkout main` 被 `bluebook/userbook/03-参考索引/README.md` 与 `bluebook/userbook/README.md` 的 unresolved merge 阻塞；因此后续起手仍应检查，但默认继续只在 `.worktrees/mainloop` 内推进。
 - `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 mid-page-why-bridge / self-audit wording 现已继续写死：
   - `03` 中段若再次出现 Prompt truth plane、lawful forgetting、audit order、evidence gradient、合法复杂度中心、future maintainer、重构资本或五步 ladder，默认按越位候选处理；更稳的默认修法是只保留 why 句，把 Prompt 统一改路由回 `84 / 51 / 06`，把源码质量统一改路由回 `102 / 87 / architecture`
   - `06` 的 Prompt 深段默认继续只保留“我有没有越位复述 `84 / 51`”这类自校反问，不再列 object / witness / qualification nouns

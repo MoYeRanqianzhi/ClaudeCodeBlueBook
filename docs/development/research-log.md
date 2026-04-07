@@ -2,6 +2,42 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 governance-one-order synthesis 深化动作：已继续更新 `10`、`61`、`security/README` 与 `risk/README`。新的结论是：当前更值钱的不是再补治理链条名词，而是把“强 signer 面 / 弱读回面 / 用户侧读回”之间的非对称写硬。更稳的默认修法是：`10` 负责写一屏 canonical chain 与弱读回面声明，`61` 负责写为什么共用预算器还不够，`security/README` 负责 signer/projection/cleanup ladder，`risk/README` 负责 `product promise / reopen / evidence` 的用户侧读回。
+- 本轮新的治理结论：安全与省 token 在 Claude Code 里共享的不是“一个预算器按钮”，而是同一条治理秩序对 model-reachable world 的危险扩张与昂贵扩张同时收费。更短地说，token saving 真正省掉的不是文本长度，而是免费暴露、免费继续与免费遗留 liability。
+- 本轮新的 signer/readback 结论：`/status / /doctor / /usage`、approval UI、summary、`Compact / Resume / Memory`、`cleanup result` 与 `product promise readback` 默认都只该触发怀疑、二跳或消费已外化 verdict；它们一旦被写成 signer surface，治理、cleanup 与 reopen 就会一起变浅。
+- 本轮新的 meta-law 结论：目录法、发言权与入口升级规则的稳定 owner 继续只认 `docs/development/00-研究方法.md`；`research-log` 只记批次 lesson，不再充当第二份目录宪法或 route README。
+- 本轮 frontdoor-role-hardening 深化动作：已继续更新 `bluebook/README`、`bluebook/philosophy/README` 与 `bluebook/navigation/README`。新的结论是：当前目录优化的最高杠杆，不在新页，而在高流量前门是否还在重复“首跳 + why + route law + deep chain”。更稳的默认修法是：根入口只保留三条首跳与跨目录判定，`philosophy/README` 只保留 why frontdoor，`navigation/README` 只保留 route gap 与 appeal path。
+- 本轮新的目录结构结论：如果 `README / philosophy/README / navigation/README` 三层同时在讲最小顺序，later maintainer 学到的就不是“单源首答 + 二跳分流”，而是“三本总览互相转述”。因此当前更稳的结构目标继续是：`root 定题与首跳 -> philosophy 定 why -> navigation 定 next-hop`，谁多说一步，谁就更接近第二前门。
+- 本轮并行 Agent 新结论一：在当前 worktree 缺少 `claude-code-source-code` 镜像时，Prompt 魔力的最强稳定表述应继续写成 `same-world compiler + witness chain + continuation qualification` 的单一 ABI；frontdoor 和 userbook 都应消费这张 ABI，而不是各自重讲一套 Prompt 效力故事。
+- 本轮并行 Agent 新结论二：安全与省 token 的最高阶解释，应继续写成“同一治理秩序对 model-reachable world 重新定价”，而不是两个并列 feature；真正该稳定复用的是 signer surface 与 weak readback surface 的不对称，以及 cleanup / reopen 仍属于同一条治理尾链。
+- 本轮 tail-residual-self-audit 深化动作：已继续更新 `03` 与 `06`。新的结论是：当 owner nouns、目录职责卡与 route phrase 都已明显降下去之后，剩余最顽固的越位往往不是“说错页”，而是句子仍在偷偷发手册。典型信号就是 `shadow / 切换 / 回退哪层`、`这段该放哪层`、`若进入具体 nouns 就回 owner` 这种口气。更稳的默认修法是：把它们压成“可逆边界是否仍在”“是否又新增同题首答”“制度空间是否仍被保住”这类自校问句。
+- 本轮新的 `03` 结论：`设计原则三十一 / 三十二 / 三十三` 现在更稳定地只保留迁移、源码质量与目录优化的 why / self-audit，不再在哲学尾段继续发迁移编排词表、结构 verdict 或具体页面分工示例。对 `03` 来说，尾段最稳的默认边界继续是：`能追问制度是否成熟，不能顺手代发步骤卡或页位卡。`
+- 本轮新的 `06` 结论：`6.47 / 6.50 / 6.53 / 6.54 / 6.57 / 6.58 / 6.62` 与 `7.2 / 7.4 / 7.6 / 7.8` 现在更稳定地停在“为什么不能写浅”与“我是不是又越位补卡”的抽象层，不再把源码质量、Prompt、治理和迁移的 owner nouns、轻量术语索引或 rollout 词表重新塞回 `06`。对 `06` 来说，更稳的最终边界继续是：`能反问制度边界，不能再长第二张机制卡。`
+- 本轮根仓库同步检查结果：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 本轮继续全部成功，根仓保持 `main...origin/main` 健康态。
+- 本轮 manual-tone-tail-demotion 深化动作：已继续更新 `03` 与 `06`。新的结论是：当 owner nouns、framework cards 和 route 清单都被压薄后，尾段最常剩下的 residual 是 manual-card 口气。它不一定再说错对象，但会继续用“这页该给什么入口 / 这条线该有哪些组件 / 该回哪一页”的语气重长出半张 owner 卡。更稳的默认修法是：改成“我是不是又在发入口卡 / 组件卡 / 迁移卡”，而不是继续写“应该有哪些卡”。
+- 本轮新的 `03` 结论：`设计原则三十一 / 三十三` 现在更明确只保留迁移与目录的自校问题，不再在哲学尾段继续充当迁移协议页或目录职责页。对 `03` 来说，更稳的尾段边界继续是：`能追问制度是否成熟，不能顺手发操作卡。`
+- 本轮新的 `06` 结论：`6.46-6.50` 与 `7.2 / 7.5 / 7.10` 现在更明确只问“是不是又把行动语义、协作接口、入口结构、治理机制、并行结果写成 manual card”，而不再半显式地教读者“该看哪些 feature / 该回哪些页 / 哪些结论够资格升级”。这让 `06` 更稳定地停在“抽象自校”而不是“轻量编目”。
+- 本轮根仓库同步检查结果：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 本轮继续全部成功，根仓保持 `main...origin/main` 健康态。
+- 本轮 tail-method-card-abstraction 深化动作：已继续更新 `06`。新的结论是：在 Prompt self-audit 卡已经抽象化之后，尾段最容易复发的 residual 是“把分析方法本身写成小框架卡”。`6.46-6.50` 这组如果继续保留“三件更本体的事”“不变量”“资源轴”“边界对象”这类清单，就仍会把 why/self-audit 段重新长成轻量 owner 卡。更稳的默认修法是：只保留“不要写浅”的 why 句，把具名对象与轴统一送回 owner 页。
+- 本轮新的 `06` 结论：`7.10` 现在也更明确只检查“并行后有没有失去同一问题主语 / 长回第二前门”，不再在判据卡里显式讨论 `canonical formula / route words`。这意味着 `06` 的方法论尾段也开始和前面的 Prompt self-audit card 使用同一抽象层级。
+- 本轮根仓库同步检查结果：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 本轮继续全部成功，根仓保持 `main...origin/main` 健康态。
+- 本轮 prompt-card-abstraction 深化动作：已继续更新 `06`。新的结论是：即使已经把 `84 / 51` 的具名链段从自校页移走，Prompt 判据卡仍可能通过“替身名单”“owner 术语”“轻量 reject 术语”重新长回第二张机制卡。更稳的默认修法是继续把这些词抽成纯反问：`是不是又写回替身 / 术语 / 机制，而没有回 owner 页。`
+- 本轮新的 `06` 结论：`7.4 / 7.7 / 7.9` 现在更接近真正的 self-audit card，而不是轻量 Prompt guide。对 `06` 来说，更稳的最终边界可以继续写成一句：`能问是否越位，不能枚举越位后的具体 Prompt 机制词。`
+- 本轮根仓库同步检查结果：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 本轮继续全部成功，根仓保持 `main...origin/main` 健康态。
+- 本轮 prompt-self-audit-card-demotion 深化动作：已继续更新 `06`。新的结论是：当 Prompt canonical chain、mid-page why 和后段论证都已经瘦身后，最后最容易复发的 residual 就在 `7.4 / 7.7 / 7.9 / 7.10` 这类判据卡里。它们很容易一边自称在自校，一边又把 `84 / 51` 的 object / reject / migration nouns 重新端上来。更稳的默认修法是：判据卡只保留抽象反问，具体 object / order / qualification / route 全部送回 owner 页。
+- 本轮新的 `06` 结论：`6.54` 现在更明确只问“是不是还在同一主语上”，`6.57` 现在更明确只问“为什么这不是秘诀”，`7.4 / 7.7 / 7.9 / 7.10` 则继续从“owner 术语卡”退成“是否又越位补写 owner 机制”的自校卡。这意味着 `06` 在 Prompt 线最稳的最终边界继续固定为：`能反问，不能代签。`
+- 本轮根仓库同步检查结果：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 再次全部成功，根仓继续保持 `main...origin/main` 健康态。
+- 本轮 late-card-why-demotion 深化动作：已继续更新 `03` 与 `06`。新的结论是：当高流量前门、中段 why 和自校段都已瘦身后，最后一层 residual 往往会以“判断框架清单”的形式复发。`06` 的 `6.37-6.44` 这一组原本就在讲“小文件/热点文件/observability/可解释性/DRY”，但如果继续把这些段落写成四项框架或三层分类，它们仍会在尾段重新长成 `87 / architecture` 的 owner 卡。更稳的默认修法是：尾段只保留一句“不要写浅”，具体框架与对象统一改路由。
+- 本轮新的 `03` 结论：`设计原则三十二 / 三十三` 现在更明确只保留 why 与自校，不再让“复杂度治理”“首问单源化”以 owner verdict 口气占位。对 `03` 来说，尾段最稳的默认边界继续是“可以压总结论，但不能用标题或收尾句替 owner 页下最终 verdict”。
+- 本轮新的 `06` 结论：`6.37-6.44` 现在更明确只保留“为什么不能把源码质量和 explainability 写浅”，不再自带合法复杂度中心、依赖诚实、observability 三层或 explainability 四件事的具名卡片。`06` 尾段最稳的默认写法，继续固定为“只保留误读 -> 更稳的问法 -> owner route”。
+- 本轮 deeper-self-audit-card-demotion 深化动作：已继续更新 `03` 与 `06`。新的结论是：在首页和中段已经瘦身以后，最容易复发的 residual 是“自校页或 why 页顺手补一张机制卡”。`03` 的治理/重构/build 小节一旦开始带 `decision window / continuation pricing`、future-maintainer owner 句或 build/object 清单，就会再次长回 owner 页；`06` 的治理/构建小节一旦开始列失败语义清单、职责矩阵或 build nouns，也会从 self-audit 滑回第二机制页。更稳的默认修法是：把它们统统压回 why / self-audit 句，并让具名对象重新路由到 `10 / security / risk / 87 / architecture / navigation`。
+- 本轮新的 `03` 结论：`设计原则二十四 / 二十五 / 二十八` 现在更明确只保留 why，不再在哲学页自带治理链段、future maintainer owner verdict 或 build-side object 清单。对 `03` 来说，更稳的默认边界继续是“能说为什么浅写会错，但不能自己重新发明 owner 级清单”。
+- 本轮新的 `06` 结论：`6.6` 的职责矩阵现在退回到目录 README / `navigation/README`，`6.58` 不再自带失败语义 checklist，`6.59` 也不再自带 build-side nouns；这再次确认 `06` 最稳的角色不是“补一张更短机制卡”，而是“指出哪里又把 why/self-audit写回机制卡”。
+- 本轮根仓库同步检查结果：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 本轮已再次全部成功，根仓恢复并保持 `main...origin/main` 健康态。
+- 本轮 deeper-page-owner-noun-demotion 深化动作：已继续更新 `03` 与 `06`。新的结论是：就算不在首页，只要 why/self-audit 长文还在自己发 `Transcript / Lineage / Continuation`、`section registry / lawful forgetting`、治理链段、或 later-maintainer / object-seam 这一类 owner nouns，它仍会在深页重长出第二前门。更稳的默认修法是：深页标题先改成 why 句，正文把具名链段改成“若已进入具体 owner nouns，直接回 owner 页”的 bridge。
+- 本轮新的 `03` 结论：`设计原则四` 现在更明确只保留“时间线与当前真相不能混写”的 why，不再在本章定义 truth planes / writeback surface；`设计原则二十三 / 二十六` 也更明确只保留“Prompt 是连续性制度 / 制度边界”这类 why，不再把 `Transcript / Lineage / Continuation` 与 `section registry / lawful forgetting` 写成章节自己的审读位。
+- 本轮新的 `06` 结论：`6.32 / 6.45 / 6.54 / 6.55 / 6.56 / 6.57` 现在更明确只保留“为什么不能被写浅”的反问，而不再自己列 Prompt assembly nouns、治理四类定价、或源码质量 object / verdict bundle；`7.4-7.6 / 7.9` 也同步改成 route-aware 的自校问句，不再把 `Authority -> Boundary -> ...`、治理 full chain、或 `future maintainer / freshness gate` 当作自校页自带 canon。
+- 本轮根仓库同步检查结果：`fetch origin main` 成功，但根仓 `checkout main` 再次被 `bluebook/userbook/03-参考索引/README.md` 与 `bluebook/userbook/README.md` 的 unresolved merge 阻塞，因此本轮继续只在 `.worktrees/mainloop` 内推进。
 - 本轮 mid-page-why-bridge cleanup 深化动作：已继续更新 `03` 与 `06`。新的结论是：当前更深一层的 residual 主要不在首页，而在 why/self-audit 长文的中段。`03` 一旦开始自己发 `guides/102` 的 ladder、`architecture` 的 object/seam 清单，或 `philosophy/87` 的 quality verdict，就会从 why 页长成第二个源码质量前门；`06` 一旦开始自己枚举 Prompt object / witness nouns，就会把自校页重新做成半个 `84 / 51`。更稳的默认修法继续是：`03` 删清单、留 why、改路由；`06` 删名词、留反问、改自校。
 - 本轮新的 `03` 结论：Prompt 深段里凡是进入 truth plane、lawful forgetting、audit order 的段落，默认统一回 `84 / 51 / 06`；源码质量深段里凡是进入 evidence gradient、合法复杂度中心、future maintainer、重构资本与五步 ladder 的段落，默认统一回 `102 / 87 / architecture`。`03` 继续只保留“为什么不能退回文案崇拜 / 目录美学 / 尺寸治理”的 why。
 - 本轮新的 `06` 结论：`2.10` 现在更明确只回答“为什么不能把 Prompt 稳定性读成文案聪明”，而不再列 `Authority / Boundary / Transcript / Lineage / Continuation` 或 `section registry / protocol transcript / continue qualification` 这组 owner nouns。`06` 对 Prompt 线最稳的默认句型，继续固定为“我有没有越位复述 `84 / 51`”。
