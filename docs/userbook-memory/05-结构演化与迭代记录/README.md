@@ -169,6 +169,7 @@
 - [165-2026-04-08-print-remote recovery stage split 拆分记忆.md](./165-2026-04-08-print-remote%20recovery%20stage%20split%20拆分记忆.md)
 - [166-2026-04-08-print-remote state split 拆分记忆.md](./166-2026-04-08-print-remote%20state%20split%20拆分记忆.md)
 - [167-2026-04-08-CCR v2 metadata readback vs local consumption split 拆分记忆.md](./167-2026-04-08-CCR%20v2%20metadata%20readback%20vs%20local%20consumption%20split%20拆分记忆.md)
+- [168-2026-04-08-headless transport recovery thickness split 拆分记忆.md](./168-2026-04-08-headless%20transport%20recovery%20thickness%20split%20拆分记忆.md)
 
 用途：
 

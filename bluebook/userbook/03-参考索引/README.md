@@ -158,6 +158,7 @@
 139. 为什么 `hydrateFromCCRv2InternalEvents`、`externalMetadataToAppState`、`hydrateRemoteSession` 与 `startup fallback` 说明 print resume 的 remote recovery 不是同一种 stage。
 140. 为什么 `print.ts`、`externalMetadataToAppState`、`setMainLoopModelOverride` 与 `startup fallback` 说明 print remote recovery 的 transcript、metadata 与 emptiness 不是同一种 stage。
 141. 为什么 `restoredWorkerState`、`externalMetadataToAppState`、`SessionExternalMetadata` 与 `RemoteIO` 说明 CCR v2 的 metadata readback 不是 observer metadata 的同一种本地消费合同。
+142. 为什么 `StructuredIO`、`RemoteIO`、`setInternalEventReader`、`setInternalEventWriter` 与 `flushInternalEvents` 说明 headless transport 的协议宿主不等于同一种恢复厚度。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
