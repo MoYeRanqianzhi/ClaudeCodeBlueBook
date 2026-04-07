@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 userbook tertiary-frontdoor 深化动作: 已继续更新 `bluebook/userbook/03-参考索引/01-命令工具/README`、`02-能力边界/README`、`03-技能与扩展/README` 与 `06-高价值入口运行时合同速查.md`。新的结论是：三级入口层也不该把 continuation actions、边界时间轴或扩展路径误写成新的并列主题。更稳的默认写法是：命令索引只把 `/compact / /resume / /memory` 写成时间轴动作，边界索引只把 continuity 写成 `same-world / decision window / current admission` 的时间轴复用，扩展索引只把 skills/MCP/plugins/hooks 写成 source/projection/gate 路径，高价值入口页则只把它们写成运行时合同，而不是更高优先级的命令表。
+- 本轮新的三级入口结论: userbook 如果在三级入口层还不能持续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`，就会在最细的索引页里重新长回 pseudo-route map。现在这一层也开始把 shared first-answer order 前推到了命令、边界、扩展和高价值入口合同页。
 - 本轮 userbook secondary-frontdoor 深化动作: 已继续更新 `bluebook/userbook/02-能力地图/README`、`03-参考索引/README`、`02-能力地图/05-体验与入口/README` 与 `03-参考索引/05-任务到入口速查矩阵.md`。新的结论是：二级入口层也不该把 continuity 单列成能力平面、问题域或体验主题。更稳的默认写法是：`02` 只把它写成 capability map 的跨平面时间轴，`03` 只把它写成索引路由的时间轴入口，`05-体验与入口` 只把它写成 host/session 生命周期的继续条件，任务矩阵则只把它写成 route，不写成新功能桶。
 - 本轮新的索引层结论: 如果 `02 / 03 / 05-任务到入口速查矩阵` 不能继承 `问题分型 -> 工作对象 -> 控制面 -> 入口` 这组顺序，userbook 就仍然会在二跳之后把用户送回“按标题碰运气”。现在二级入口层也开始从“共享 nouns”推进到“共享 first-answer order”。
 - 本轮 userbook frontdoor 深化动作: 已继续更新 `bluebook/userbook/README`、`01-主线使用/README`、`04-专题深潜/README` 与 `05-控制面深挖/README`。新的结论是：user-facing 前门也不该把 continuity 单列成第四条使用主题、第五类工作对象或第四条控制面。更稳的默认写法是：根 `README` 只把它写成同一工作对象在三条母线上的共同时间轴，`01` 只把它写成主线动作链的继续条件，`04` 只把它写成工作对象分组的时间轴，`05` 只把它写成 continue / price / cleanup 的用户侧判断。
