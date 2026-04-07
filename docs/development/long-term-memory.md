@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/navigation/15`、`bluebook/navigation/41`、`bluebook/navigation/README` 与 `bluebook/02` 的长期默认 prompt-slug-alignment language 现已继续写死：
+  - 两条高阶前门默认继续把 slug 收回 `请求装配控制面 / 统一定价治理 / 当前真相保护`
+  - 高流量入口页默认继续同步这两条新 target，不再暴露旧 `Prompt魔力 / 源码先进性` 路径
 - `bluebook/02`、`bluebook/api/README`、`bluebook/navigation/35` 与 `bluebook/api/48` 的长期默认 atlas-route-residual language 现已继续写死：
   - 高流量 route/index 页默认继续把 `Atlas / atlas 原则` 收回 `源码地图 / 二级目录地图 / 源码地图原则`
   - `api/48` 正文默认继续拒收 `命令 atlas` 这类单句 residual

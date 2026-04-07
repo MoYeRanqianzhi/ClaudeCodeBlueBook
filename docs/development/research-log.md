@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-slug-alignment 深化动作: 已继续更新 `bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md`、`bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`、`bluebook/navigation/README.md` 与 `bluebook/02-使用指南.md`。新的结论是：Prompt / 治理 / 源码质量线在高流量前门里剩余的最贵 residual，不再是正文话语，而是 slug 与入口 target 还在泄露旧 `Prompt魔力 / 源码先进性` framing。现在这四处开始更一致地把路径名和入口回指收回 canonical 主语。
+- 本轮新的 Prompt 结论: 对 later maintainer 来说，路径名本身就是第一层 visible label；只要 slug 还在暴露旧 framing，正文去魅就还没有真正完成。
 - 本轮 atlas-route-residual 深化动作: 已继续更新 `bluebook/02-使用指南.md`、`bluebook/api/README.md`、`bluebook/navigation/35-源码 Atlas导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md` 与 `bluebook/api/48-commands 二级目录 Atlas：会话控制、模式治理、扩展装配、交付诊断与内部命令边界.md`。新的结论是：atlas 线在上游 `102 / 35` 和下游 `46-48` 对齐后，最容易继续回潮的位置就只剩高流量 route/index 页和零星正文句。现在这四页开始更一致地把 `Atlas / atlas 原则` 收回 `源码地图 / 二级目录地图 / 源码地图原则`。
 - 本轮新的源码质量结论: 术语传播最难的不是 owner 页，而是 handoff 页；只要 `02`、`api/README` 或 `navigation/35` 还在用旧可见标签，later maintainer 仍会从入口层学到 atlas 旧话语，再把上游 locator 约束读成例外。
 - 本轮 governance-execution-bridge 深化动作: 已继续更新 `bluebook/security/README.md` 与 `bluebook/playbooks/66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：host consumption card、hard reject order与reopen drill.md`。新的结论是：治理线在执行层剩余的高价值 residual，已经不再是 canonical chain 本身，而是 `later maintainer / user-facing / host consumption card / settlement right / 投影` 这组桥接词还会把执行容器写成治理主语。现在这两页开始更一致地把它们收回跨宿主对照、治理执行卡与可见读面。
