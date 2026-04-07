@@ -196,3 +196,8 @@
 - [171-session_context.model、metadata.model、lastModelUsage、modelUsage 与 restoreAgentFromSession 索引.md](./171-session_context.model、metadata.model、lastModelUsage、modelUsage%20与%20restoreAgentFromSession%20索引.md)
 - [172-initialMessageUUIDs、previouslyFlushedUUIDs、createBridgeSession.events 与 writeBatch 索引.md](./172-initialMessageUUIDs、previouslyFlushedUUIDs、createBridgeSession.events%20与%20writeBatch%20索引.md)
 - [173-getUserSpecifiedModelSetting、settings.model、getMainLoopModelOverride、currentAgentDefinition 与 restoreAgentFromSession 索引.md](./173-getUserSpecifiedModelSetting、settings.model、getMainLoopModelOverride、currentAgentDefinition%20与%20restoreAgentFromSession%20索引.md)
+- [174-getUserSpecifiedModelSetting、ANTHROPIC_MODEL、settings.model、mainThreadAgentDefinition.model 与 setMainLoopModelOverride 索引.md](./174-getUserSpecifiedModelSetting、ANTHROPIC_MODEL、settings.model、mainThreadAgentDefinition.model%20与%20setMainLoopModelOverride%20索引.md)
+- [175-initialHistoryCap、isEligibleBridgeMessage、toSDKMessages 与 local_command 索引.md](./175-initialHistoryCap、isEligibleBridgeMessage、toSDKMessages%20与%20local_command%20索引.md)
+- [176-getUserSpecifiedModelSetting、isModelAllowed、ANTHROPIC_MODEL、settings.model 与 getMainLoopModel 索引.md](./176-getUserSpecifiedModelSetting、isModelAllowed、ANTHROPIC_MODEL、settings.model%20与%20getMainLoopModel%20索引.md)
+- [177-model.tsx、validateModel、getModelOptions 与 getUserSpecifiedModelSetting 索引.md](./177-model.tsx、validateModel、getModelOptions%20与%20getUserSpecifiedModelSetting%20索引.md)
+- [178-reusedPriorSession、previouslyFlushedUUIDs、createCodeSession 与 flushHistory 索引.md](./178-reusedPriorSession、previouslyFlushedUUIDs、createCodeSession%20与%20flushHistory%20索引.md)

@@ -77,6 +77,11 @@
 43. `session_context.model`、`metadata.model`、`lastModelUsage`、`modelUsage` 与 `restoreAgentFromSession` 看起来都在模型恢复附近时，应该先去哪个入口分辨 create-time model stamp、live override shadow、durable usage ledger 与 resumed-agent fallback 不是同一种 model ledger。
 44. `initialMessageUUIDs`、`previouslyFlushedUUIDs`、`createBridgeSession.events` 与 `writeBatch` 看起来都在初始消息账本附近时，应该先去哪个入口分辨注释里的 session creation events 不等于 bridge 的真实历史账。
 45. `getUserSpecifiedModelSetting`、`settings.model`、`getMainLoopModelOverride`、`currentAgentDefinition` 与 `restoreAgentFromSession` 看起来都在模型选择附近时，应该先去哪个入口分辨 persisted model preference、live override 与 resumed-agent fallback 不是同一种 model authority。
+46. `getUserSpecifiedModelSetting`、`ANTHROPIC_MODEL`、`settings.model`、`mainThreadAgentDefinition.model` 与 `setMainLoopModelOverride` 看起来都在模型来源附近时，应该先去哪个入口分辨 ambient env preference、saved setting、agent bootstrap 与 live launch override 不是同一种 model source。
+47. `initialHistoryCap`、`isEligibleBridgeMessage`、`toSDKMessages` 与 `local_command` 看起来都在 bridge 历史附近时，应该先去哪个入口分辨 bridge 的 eligible history replay 不是 model prompt authority。
+48. `getUserSpecifiedModelSetting`、`isModelAllowed`、`ANTHROPIC_MODEL`、`settings.model` 与 `getMainLoopModel` 看起来都在模型准入附近时，应该先去哪个入口分辨 source selection 之后的 allowlist veto 不会回退到更低优先级来源。
+49. `model.tsx`、`validateModel`、`getModelOptions` 与 `getUserSpecifiedModelSetting` 看起来都在 allowlist 可见面附近时，应该先去哪个入口分辨显式拒绝、选项隐藏与 silent veto 不是同一种 allowlist contract。
+50. `reusedPriorSession`、`previouslyFlushedUUIDs`、`createCodeSession` 与 `flushHistory` 看起来都在 continuity 历史附近时，应该先去哪个入口分辨 v1 continuity ledger 与 v2 fresh-session replay 不是同一种 history contract。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 
