@@ -8,6 +8,21 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `02-能力地图` 二级 README 的长期默认目录纪律现已继续写死：
+  - 不再接受裸列表二级 README
+  - 默认至少先给 `前门公式 + first reject signal + 何时看哪一页`
+  - `01-运行时主链` 默认先讲 `world entry -> command bus -> query loop -> session truth -> continuation`
+  - `02-执行与工具` 默认先讲 `tool surface / task object`
+  - `04-扩展与生态` 默认先讲 `source -> projection -> runtime gate -> activation`
+  - `05-体验与入口` 默认先讲 `host -> session -> projection -> display`，并写死 `tuning != truth`
+- `03-参考索引/03-技能与扩展/README` 的长期默认 first reject signal 现已继续写死：
+  - 库存不等于 activation
+  - projection 不等于 signer
+  - source trust 不等于 runtime gate
+  - 后续若这页又退回“扩展库存导览”，默认按索引回胖处理
+- 下一批目录减肥的长期默认目标现已记下：
+  - `04-专题深潜/README` 若继续保留过长专题库存，优先继续压成分组路由
+  - 若 `02-能力地图` 其余二级 README 仍有薄页或裸列表，继续按同一 mini-frontdoor 模板补齐
 - root `userbook/README` 的长期默认目录纪律现已继续升级：
   - 根前门默认不再保留“大量深页直达”作为默认路线
   - 默认只做 `问题分型 + 二跳`

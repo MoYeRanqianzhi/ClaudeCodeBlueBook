@@ -2,6 +2,10 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮能力地图二级 README 收口动作: 已继续更新 `userbook/02-能力地图/01-运行时主链/README`、`02-执行与工具/README`、`04-扩展与生态/README` 与 `05-体验与入口/README`。这一批把原先的裸列表收回成 mini-frontdoor：运行时主链现在先讲 `world entry -> command bus -> query loop -> session truth -> continuation`，执行与工具现在先讲 `tool surface -> runtime gate -> execution / task object -> output return -> notification -> recovery`，扩展与生态现在先讲 `source -> projection -> runtime gate -> activation`，体验与入口现在先讲 `host -> session -> projection -> display` 和 `tuning != truth`。
+- 本轮新的目录结构结论: 能力地图二级 README 若只剩文件列表，就会把用户再次推回“看标题猜内容”的旧路径。更稳的默认做法是：每个二级 README 至少先给 `前门公式 + first reject signal + 何时看哪一页`，再给文件列表。
+- 本轮新的扩展索引结论: `03-参考索引/03-技能与扩展/README` 现在继续从“技能库存入口”压回 “projection / signer / runtime gate” 的索引层。后续这类页最该先拒收的三种误读已经更明确：库存不等于 activation，projection 不等于 signer，source trust 不等于 runtime gate。
+- 本轮并行 Agent 新结论已记下，作为下一批 residual 清单: `04-专题深潜/README` 仍保留较长专题库存，若继续减肥，最自然的下一步是把它从“一排专题”继续压回更强的分组路由；另一些能力地图二级 README 若仍是薄页，也应继续补同一套 mini-frontdoor。
 - 本轮根 `userbook` 二跳收口动作: 已继续重写 `userbook/README`。这一批不再只在长深链清单前加说明，而是直接把根前门收回成 `问题分型 -> 二跳`：先分 `上下文送错 / 扩张或权限判错 / 旧状态污染`，再跳 `01 / 04 / 05 / 02 / 03` 的 README。根前门现在更像真正的 frontdoor，不再像“深页总目录”。
 - 本轮新的 root-frontdoor 结论: user-facing 根前门若继续保留大量深页直达链接，读者会重新学回“靠标题搜页”，不会学会“先分层、再二跳”。更稳的目录优化，不是再写更多 route，而是减少第一次解释权和默认深链数。
 - 本轮参考索引减肥动作: 已继续重写 `03-参考索引/README`。这一批把超长 one-off 问题库存收回成六类速查路由：命令工具、能力边界、技能与扩展、功能面总图、任务到入口矩阵、高价值入口合同速查。更细的问题库存统一下沉到各子目录 README 和对应索引页。

@@ -11,6 +11,15 @@
 
 所以这里不是技能库存目录，而是“能力怎样进入世界、怎样被看见、怎样被拦住”的索引层。
 
+这一层最该先拒收的误读也只有三种：
+
+1. 把库存当 activation
+   - 菜单里有，不等于当前会话真能调。
+2. 把 projection 当 signer
+   - `/skills`、skill reminder、SkillTool、remote skills 看到的不是同一层。
+3. 把 source trust 当 runtime gate
+   - 来源可信，不等于当前 surface 已被放行。
+
 当前这一层先从技能索引切入：
 
 - [01-内置技能索引.md](./01-%E5%86%85%E7%BD%AE%E6%8A%80%E8%83%BD%E7%B4%A2%E5%BC%95.md)
