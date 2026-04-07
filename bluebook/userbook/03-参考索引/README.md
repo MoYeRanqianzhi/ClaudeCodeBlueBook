@@ -137,6 +137,7 @@
 118. 为什么 `getIsRemoteMode`、`commands/session`、`remoteSessionUrl`、`SessionInfo`、`PromptInputFooterLeftSide` 与 `StatusLine` 说明 `/session` 的命令显隐与 pane 内容不是同一种 remote mode。
 119. 为什么 `getIsRemoteMode`、`remoteSessionUrl`、`useRemoteSession`、`StatusLine`、`PromptInputFooterLeftSide`、`SessionInfo` 与 `assistantInitialState` 说明 remote bit 为真但 URL 缺席时，CCR 本体仍可继续，而 link 与 QR affordance 会停摆。
 120. 为什么 `assistant viewer`、`--remote` TUI、`viewerOnly`、`remoteSessionUrl` 与 `filterCommandsForRemoteMode` 说明同一 coarse remote bit 不等于同样厚度的 remote 合同。
+121. 为什么 `REMOTE_SAFE_COMMANDS`、`filterCommandsForRemoteMode`、`handleRemoteInit`、`session` 与 `mobile` 说明 remote-safe 命令面不是 runtime readiness proof。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
