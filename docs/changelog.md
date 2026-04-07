@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`，把 Prompt 顶层 speaking-right 再收紧一层：`06` 不再在本章第二次重列 canonical reject trio，而只解释这些失稳为何发生；`41` 现在只消费 `same-world compiler` 这类 shared formula，不再在哲学页重写 Prompt `first-reject order`、库存化列出专题链路，或夹带 `09 / 05 / 15 / 41` choreography 与目录责任矩阵
 - 继续更新 `bluebook/README.md` 与 `bluebook/risk/README.md`，把治理总入口顺序和风控前门主语重新对齐：根入口现在重新与 `09 / navigation/15` 对齐回 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`，`risk/README` 现在更明确自己只读取 `product promise readback / reopen qualification / evidence binding`，不再在 README 里第一次改判治理主键或 signer ladder
 - 继续更新 `bluebook/userbook/README.md`、`bluebook/risk/README.md` 与 `bluebook/README.md`，把治理与用户前门 residual 再收一层：`userbook/README` 现在开场先定工作对象/扩张判断/旧状态污染，不再先按入口能力起题；`risk/README` 现在更明确账号、地区、入口与支持链路只是在编号页里出现的样貌，不再在 README 里充当并列 bucket；根 README 现在也把 user-facing bucket 明确降格成收费链的读回助记
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`，把页内 Prompt 第二前门继续压薄：`6.32` 现在更明确把 Prompt 魔力收回 `same-world compiler` 合同，`6.45` 现在只补 `protocol surface / action grammar / delta discipline`，`6.57` 现在只补 Constitution 的 speaking-right 边界，不再各自重讲 Prompt 为什么强

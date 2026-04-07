@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-speaking-right-thinning 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`。新的结论是：只要 `06` 继续在本章重列 canonical reject trio，或 `41` 继续在哲学页重写 Prompt 前门、专题库存链、文档 choreography 与目录责任矩阵，Prompt 的首答来源仍会被 later maintainer 误读成多入口并列。
+- 本轮新的 Prompt speaking-right 结论: 更稳的写法必须让 `06` 只解释失稳生成机理、让 `41` 只消费 shared formula 并压回 first principles；`philosophy/84` 继续独占 Prompt `first-reject order` 与 canonical reject trio 的定义权，而 `41` 只额外保留“第一次定义权唯一”的分工原则。
 - 本轮 governance-frontdoor-order-realignment 深化动作: 已继续更新 `bluebook/README.md` 与 `bluebook/risk/README.md`。新的结论是：总入口治理线一旦在 failure order 上偏离 `09 / 15` 的 canonical 顺序，或者风控 README 重新把 signer ladder / 治理主键抬回前门，后续再多的 user-facing 降格也会被带偏。
 - 本轮新的治理主语结论: 更稳的治理总入口必须继续固定 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`；风控 README 则只保留 `product promise readback / reopen qualification / evidence binding` 这组用户侧对象，不重讲机制主语。
 - 本轮 user-facing-frontdoor-subjects 深化动作: 已继续更新 `bluebook/userbook/README.md`、`bluebook/risk/README.md` 与 `bluebook/README.md`。新的结论是：治理线即使已经在总入口和专题页收回 canonical chain，later maintainer 仍可能被 user-facing 入口句重新带回“能力入口 / 账号地区恢复 / 用户侧 bucket”这组旧主语。

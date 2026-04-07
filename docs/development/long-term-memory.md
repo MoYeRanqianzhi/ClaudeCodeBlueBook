@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06` 与 `bluebook/navigation/41` 的长期默认 prompt-speaking-right-thinning language 现已继续写死：
+  - `06` 默认继续只解释 Prompt 失稳为什么发生，不在本章第二次重列 `philosophy/84` 已固定的 canonical reject trio
+  - `41` 默认继续只消费 `same-world compiler` 这类 shared formula，不在哲学导航页重写 Prompt `first-reject order`
+  - `41` 默认继续不库存化列出 Prompt / 结构专题链路，也不夹带文档 choreography 或目录责任矩阵；它只说明这些页各自承接的 question domain，与“第一次定义权唯一”的分工原则
 - `bluebook/README` 与 `bluebook/risk/README` 的长期默认 governance-frontdoor-order-realignment language 现已继续写死：
   - 治理总入口默认继续与 `09 / 15` 对齐回 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
   - `risk/README` 默认继续只读取 `product promise readback / reopen qualification / evidence binding` 这组用户侧对象，不在 README 里第一次改判治理主键、truth-surface 或 signer ladder
