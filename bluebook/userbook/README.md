@@ -513,5 +513,6 @@
 - bridge permission race 的 prompt 撤场、订阅退役、late response 消费与策略重判边界
 - permission context 变更后的本地重判广播与 remote/worker no-op surface 边界
 - 远端接续、bridge ingress 输入注入与桥接审批在用户目标层面的分工边界
+- sandbox network bridge 里同 host sibling sweep 与 tool-level closeout 的边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
