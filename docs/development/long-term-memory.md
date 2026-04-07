@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README` 的长期默认 prompt-root-route-thinning language 现已继续写死：
+  - 根入口默认继续只保留 `same-world compiler` 这句 Prompt hook，不再第二次重列 Prompt formula、witness、counterfeit 与 reject signal
+  - 顶层判断与 `first-reject path` 默认继续回 `philosophy/84`
+  - same-world witness、实现顺序与 `continue qualification` 默认继续回 `guides/51`
 - `bluebook/architecture/20` 与 `bluebook/architecture/33` 的长期默认 source-quality-aura-demotion language 现已继续写死：
   - 两页默认继续不从“先进感 / 高级感”起题，而先问公开证据能否证明 current-truth protection
   - `20` 默认继续把 `contract / runtime kernel / cache boundary / recovery semantics` 写成结构质量入口，而不是工程气质入口

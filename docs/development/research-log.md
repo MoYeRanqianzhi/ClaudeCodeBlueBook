@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-root-route-thinning 深化动作: 已继续更新 `bluebook/README.md`。新的结论是：只要根入口还在自己重列 Prompt crosswalk、witness、counterfeit 与 reject signal，later maintainer 就还是会把根 README 误读成 `84 / 51` 之外的压缩版第二前门。
+- 本轮新的根入口 Prompt 结论: 更稳的写法必须让根 README 只保留 `same-world compiler` 这句 hook，并把顶层判断与 `first-reject path` 送回 `84`，把 same-world witness、实现顺序与 `continue qualification` 送回 `51`。
 - 本轮 source-quality-aura-demotion 深化动作: 已继续更新 `bluebook/architecture/20-源码质量、分层与工程先进性.md` 与 `bluebook/architecture/33-公开源码镜像的先进性、热点与技术债.md`。新的结论是：只要源码质量页还从“先进感 / 高级感”起题，later maintainer 就仍会先学 aura，再倒推结构质量与证据上限。
 - 本轮新的源码质量去魅结论: 更稳的写法必须先问公开证据能否证明 current truth、runtime kernel、cache boundary、recovery semantics 与 hotspot kernel，而不是先问这份源码看起来有多先进。
 - 本轮 prompt-constitutional-demotion 深化动作: 已继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`。新的结论是：只要 `03` 继续保留独立 Prompt Frontdoor + reject trio，或 `09` 继续在总论页重列 Prompt formula、witness object 与实现清单，later maintainer 仍会把 `84 / 51` 的 canonical speaking-right 误读成“只是另外两页的并列版本”。

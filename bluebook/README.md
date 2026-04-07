@@ -5,7 +5,7 @@
 如果把蓝皮书入口再压成最短公式，只剩三条：
 
 1. Prompt
-   - Prompt 的首答来源统一回 `philosophy/84`；根前门这里只保留 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 作为二跳前的最短 hook，不在这里另起第二套 Prompt 总法。
+   - Prompt 的首答来源统一回 `philosophy/84`；根前门这里只保留 `same-world compiler` 这句二跳前 hook，不在这里另起第二套 Prompt 总法。
 2. 治理
    - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
    - 任何 user-facing bucket 都只是这条收费链的读回助记，不是治理前门里的第二套主题
@@ -31,28 +31,7 @@
 
 如果只先记 Prompt 前门的一句话，也只记这句：
 
-- Prompt 的效力不在措辞，而在 authority order 先锁定唯一 `world-definition source`，再把 `world-entry -> witness ABI -> continue qualification` 排成可检验顺序；`Explainability` 只负责诊断，不负责改判。
-
-如果继续把 Prompt 前门再压成 first-answer crosswalk，也只该再补六行：
-
-1. `Authority`
-   - canonical object 是 `world-definition source`
-   - 常见 counterfeit 是 `systemPrompt` 截图、`CLAUDE.md`、settings merge 或“最后一条看起来最强的话”
-2. `Boundary`
-   - canonical object 是 `section registry / stable prefix / byte boundary`
-   - 常见 counterfeit 是“更长 instruction”或“把所有上下文都塞进来”
-3. `Transcript`
-   - canonical object 是 `protocol transcript`
-   - 常见 counterfeit 是 `display transcript / UI transcript`
-4. `Lineage`
-   - canonical object 是 `message lineage / tool-use identity chain`
-   - 常见 counterfeit 是 summary、title、pointer 或 handoff prose
-5. `Continuation`
-   - canonical object 是 `continuation object -> continue qualification verdict`
-   - 常见 counterfeit 是“看起来还能接着聊”的平滑感
-6. `Explainability`
-   - canonical object 是 diagnostic naming
-   - 常见 counterfeit 是 release card、steady verdict 或别的解释壳重新改判世界
+- Prompt 的效力不在措辞，而在世界先被合法编译进模型；顶层判断与 `first-reject path` 统一回 `philosophy/84`，same-world witness、实现顺序与 `continue qualification` 统一回 `guides/51`。
 
 如果只先记治理前门的一句话，也只记这句：
 
@@ -61,8 +40,8 @@
 如果继续把入口压成 later maintainer 能直接拿来排查的最小顺序，它还应再暴露三行：
 
 1. Prompt frontdoor order
-   - `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
-   - 这六项先给 later maintainer 的 `first-reject path`；`Authority` 先要求 `world-definition source` 唯一成立，`Explainability` 只负责 diagnostic naming，不负责改判。Prompt 线的 canonical source 仍是 `philosophy/84`；真正的 same-world witness 仍回 `09 / guides/51` 的 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`。
+   - `same-world compiler`
+   - 根入口这里不再第二次重列 Prompt formula、witness 与 counterfeit；顶层判断与 `first-reject path` 回 `philosophy/84`，same-world witness、实现顺序与 `continue qualification` 回 `guides/51`。
 2. governance failure order
    - `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
    - 治理先判 `pricing-right signer / lease` 是否成立，再看 `truth-surface attestation` 有没有把 `reject / reopen` 外化清楚；`asset-rollback ABI` 只负责把收口动作做成可恢复 contract，不再冒充治理起点。
@@ -88,7 +67,7 @@
 ## 三组最小排查顺序
 
 - Prompt
-  先按 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 排；这是入口层的 `first-reject path`，不是对象级 witness chain，不先看 `systemPrompt` 截图、最后一条消息、summary prose 或 handoff card。
+  缺顶层判断与 `first-reject path` 回 `philosophy/84`；缺 same-world witness、实现顺序与 `continue qualification` 回 `guides/51`，不先看 `systemPrompt` 截图、最后一条消息、summary prose 或 handoff card。
 - 治理
   先按 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback` 排，不先看任何界面投影、状态百分比或继续快捷入口。
   更第一性的追问是：这次扩张有没有先拿到 `pricing-right`，`truth-surface` 有没有先说清 reject / reopen，`asset-rollback ABI` 有没有只做收口而没有篡位成治理主语。
@@ -105,15 +84,6 @@
   `current-truth surface / consumer subset / hotspot kernel` 重新说不清边界。
 
 如果入口层不给这三组顺序，目录结构优化就仍然主要在帮读者“找到页”，还没有开始帮 later maintainer “先拿到同一套排查动作”。
-
-Prompt 线还应再暴露三条 first reject signal：
-
-- `authority_blur`
-  `world-definition source` 不清，多个 prompt surface 开始争主语。
-- `transcript_conflation`
-  `display transcript` 试图冒充 `protocol transcript`。
-- `continuation_story_only`
-  compact / handoff 后只剩故事，不剩 `continuation qualification`。
 
 治理线还应再暴露三条 first reject signal：
 
