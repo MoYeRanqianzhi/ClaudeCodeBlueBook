@@ -2,6 +2,10 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 deeper-self-audit-card-demotion 深化动作：已继续更新 `03` 与 `06`。新的结论是：在首页和中段已经瘦身以后，最容易复发的 residual 是“自校页或 why 页顺手补一张机制卡”。`03` 的治理/重构/build 小节一旦开始带 `decision window / continuation pricing`、future-maintainer owner 句或 build/object 清单，就会再次长回 owner 页；`06` 的治理/构建小节一旦开始列失败语义清单、职责矩阵或 build nouns，也会从 self-audit 滑回第二机制页。更稳的默认修法是：把它们统统压回 why / self-audit 句，并让具名对象重新路由到 `10 / security / risk / 87 / architecture / navigation`。
+- 本轮新的 `03` 结论：`设计原则二十四 / 二十五 / 二十八` 现在更明确只保留 why，不再在哲学页自带治理链段、future maintainer owner verdict 或 build-side object 清单。对 `03` 来说，更稳的默认边界继续是“能说为什么浅写会错，但不能自己重新发明 owner 级清单”。
+- 本轮新的 `06` 结论：`6.6` 的职责矩阵现在退回到目录 README / `navigation/README`，`6.58` 不再自带失败语义 checklist，`6.59` 也不再自带 build-side nouns；这再次确认 `06` 最稳的角色不是“补一张更短机制卡”，而是“指出哪里又把 why/self-audit写回机制卡”。
+- 本轮根仓库同步检查结果：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 本轮已再次全部成功，根仓恢复并保持 `main...origin/main` 健康态。
 - 本轮 deeper-page-owner-noun-demotion 深化动作：已继续更新 `03` 与 `06`。新的结论是：就算不在首页，只要 why/self-audit 长文还在自己发 `Transcript / Lineage / Continuation`、`section registry / lawful forgetting`、治理链段、或 later-maintainer / object-seam 这一类 owner nouns，它仍会在深页重长出第二前门。更稳的默认修法是：深页标题先改成 why 句，正文把具名链段改成“若已进入具体 owner nouns，直接回 owner 页”的 bridge。
 - 本轮新的 `03` 结论：`设计原则四` 现在更明确只保留“时间线与当前真相不能混写”的 why，不再在本章定义 truth planes / writeback surface；`设计原则二十三 / 二十六` 也更明确只保留“Prompt 是连续性制度 / 制度边界”这类 why，不再把 `Transcript / Lineage / Continuation` 与 `section registry / lawful forgetting` 写成章节自己的审读位。
 - 本轮新的 `06` 结论：`6.32 / 6.45 / 6.54 / 6.55 / 6.56 / 6.57` 现在更明确只保留“为什么不能被写浅”的反问，而不再自己列 Prompt assembly nouns、治理四类定价、或源码质量 object / verdict bundle；`7.4-7.6 / 7.9` 也同步改成 route-aware 的自校问句，不再把 `Authority -> Boundary -> ...`、治理 full chain、或 `future maintainer / freshness gate` 当作自校页自带 canon。

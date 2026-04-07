@@ -2,6 +2,9 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把这一轮 deeper residual 再压一层：`03` 现在把 `设计原则二十四 / 二十五 / 二十八` 里的治理 failure semantics、future-maintainer owner 句与 build/object 清单继续收回 why-bridge，不再在哲学页自带 `decision window / continuation pricing` 或 `portable shadow entry / transport shell / 薄 registry` 这类 owner nouns；`06` 现在把 `6.6` 的职责矩阵、`6.58` 的失败语义清单和 `6.59` 的 build/object 清单继续收回“若讨论已进入具体规则与对象，统一回 owner 页”的自校句
+- 本轮并行 Agent 新结论已吸收入改写与记忆：`06` 仍然是深页 residual 的高流量源头，尤其是治理/Prompt/源码质量的“自校页里顺手补一张机制卡”最容易复发；更稳的默认修法继续是“删掉清单与链段，保留 why / self-audit 句，并把具名对象统一送回 owner 页”
+- 本轮根仓同步检查恢复成功：`fetch origin main`、`checkout main`、`merge --ff-only origin/main` 均成功，根仓状态为 `## main...origin/main`
 - 继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把这一轮 deeper-page residual 收成“深页也不代发 owner nouns”：`03` 现在把 `设计原则四` 的标题与正文从 `current-truth writeback` 的 object 口径收回成“事件线真相不等于宿主当前真相”，把 `设计原则二十三 / 二十六` 的 Prompt 小节收回“连续性制度 / 制度边界”这类 why 句，不再在章节标题和正文里重发 `Transcript / Lineage / Continuation`、`section registry` 或 `lawful forgetting`；`06` 现在把 `6.32 / 6.45 / 6.54 / 6.55 / 6.56 / 6.57` 与 `7.4-7.6 / 7.9` 里的具体 Prompt / 治理 / 结构名词串继续压成“如果讨论已进入具体 owner nouns，就回 `84 / 51 / 10 / security / risk / 87 / architecture`”的自校句，不再在自校页里并排复述链段、witness nouns 与 quality verdict bundle
 - 本轮新的根仓同步记录：`fetch origin main` 本次成功，但根仓 `checkout main` 再次被现有未解决冲突阻塞，具体文件为 `bluebook/userbook/03-参考索引/README.md` 与 `bluebook/userbook/README.md`；因此本批次继续严格只在 `.worktrees/mainloop` 内推进与提交
 - 继续更新 `bluebook/03-设计哲学.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把第二批深页 residual 收成“`03` 只保留 why bridge，`06` 只保留自校反问”：`03` 现在把 Prompt 深段里的 truth plane / lawful forgetting / audit order 统一改回 `84 / 51 / 06` 路由，把源码质量深段里的 evidence-gradient、合法复杂度中心、future maintainer、重构资本与五步 ladder 统一改回 `102 / 87 / architecture` 路由，不再在中段发 full ladder、object 清单或 quality verdict bundle；`06` 的 `2.10` 现在也不再列 Prompt object / witness nouns，而改成“`06` 是否越位复述 `84 / 51`”的自校句

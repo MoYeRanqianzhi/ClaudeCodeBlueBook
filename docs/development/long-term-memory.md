@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 deeper-self-audit-card-demotion language 现已继续写死：
+  - `03` 的治理 / 重构 / build why 小节默认继续不自带治理链段、future-maintainer owner verdict 或 build-side object 清单；一旦出现，默认按越位候选处理并改路由回 `10 / security / risk / 87 / architecture`
+  - `06` 的治理 / 构建自校小节默认继续不自带 failure checklist、职责矩阵或 build nouns；一旦出现，默认按“self-audit 页误长第二机制卡”处理
+  - 更稳的默认修法顺序继续是：`先删清单 -> 再把 verdict 句缩成 why / self-audit -> 最后补 owner route`
+- 最新根仓同步记忆（2026-04-08，本轮当前批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
 - `bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 deeper-page-owner-noun-demotion language 现已继续写死：
   - `03` 深页标题默认继续优先写 why 句，不再把 `Transcript / Lineage / Continuation`、`section registry / lawful forgetting`、truth planes / writeback surface 或 quality ladder / verdict bundle 写成章节标题或章节自带审读位
   - `06` 深页默认继续只保留“为什么不能被写浅”的自校反问；凡是自校页开始自己列 Prompt assembly nouns、治理链段、later-maintainer / object-seam nouns，默认按越位候选处理
