@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/navigation/15` 与 `bluebook/philosophy/README` 的长期默认 prompt-order-split language 现已继续写死：
+  - `15` 默认继续把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 只写成 `first-reject order`，把六个 canonical ref 只写成 witness order，不再混称为同一条 chain
+  - `philosophy/README` 默认继续只保留 `same-world compiler` 这句 Prompt hook；更细的 formula、witness 与 reject trio 都继续收回 `84`
+  - `philosophy/README` 默认继续允许只追 Prompt canonical source 的读者直接进入 `84`，不必先在其它高阶前门里重复找 Prompt 首答
 - `bluebook/06` 与 `bluebook/navigation/41` 的长期默认 prompt-speaking-right-thinning language 现已继续写死：
   - `06` 默认继续只解释 Prompt 失稳为什么发生，不在本章第二次重列 `philosophy/84` 已固定的 canonical reject trio
   - `41` 默认继续只消费 `same-world compiler` 这类 shared formula，不在哲学导航页重写 Prompt `first-reject order`

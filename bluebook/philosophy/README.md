@@ -1,12 +1,12 @@
 # 哲学专题
 
 `philosophy/` 只回答三件事：世界如何合法进入模型，扩张如何先被定价，过去如何不得越权写回现在。
-如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，不要急着在这里直接下哲学判断。
+如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，通常先补它们；但如果你只在追 Prompt 线 canonical source，可以直接进入 `84`，不必先在别页重复找 Prompt 前门。
 
 如果把 `philosophy/` 前门再压成最短公式，只剩三条：
 
 1. Prompt 线
-   - `same-world compiler = Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
+   - 只认 `same-world compiler`；具体 `frontdoor order / canonical witness order / reject trio` 统一回 `84`
 2. 治理线
    - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
    - `Narrow / Later / Outside` 只是用户侧助记，不是第二套治理故事
@@ -28,8 +28,7 @@
 如果只先记 Prompt 前门的一句话，也只记这句：
 
 - Prompt 前门不先比较措辞，而先回答谁定义世界、谁固定合法字节、模型实际消费什么、同一身份如何延续、继续资格由谁裁定，以及失稳该由谁命名。
-- 前五项才是 `same-world test` 的 witness set；`Explainability` 只拥有失稳命名权，没有改判权。
-- 前门 shorthand 一旦落到排查，只认 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`；`CLAUDE.md / auto memory` 在官方文档里属于 advisory context，不是 enforced configuration，不能直接越位成 Authority witness。
+- 更细的 `frontdoor order / canonical witness order / reject trio` 继续统一回 `84`；本 README 只保留这句 consumer-facing hook，不在这里第二次重列。
 
 如果只先记治理前门的一句话，也只记这句：
 
@@ -41,17 +40,11 @@
 
 Prompt 线分流只保留一句：
 
-- 先到 `84`，机制展开看 `81`，时间轴看 `63`，诊断命名看 `33`；协作接口再看 `57`，前门速记再看 `78`。
+- 先到 `84`；机制展开看 `81`，时间轴看 `63`，诊断命名看 `33`；协作接口再看 `57`，前门速记再看 `78`。
 
 治理线分流也只保留一句：
 
 - 先到 `85`；需要机制拆解再看 `64 / 82 / 83 / 100`。
-
-Prompt 线最短的 reject trio 也只认：
-
-- `authority_blur`
-- `transcript_conflation`
-- `continuation_story_only`
 
 治理线最短的 reject trio 也只认：
 

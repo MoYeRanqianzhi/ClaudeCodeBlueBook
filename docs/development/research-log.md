@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-order-split 深化动作: 已继续更新 `bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/philosophy/README.md`。新的结论是：只要 `15` 继续把 frontdoor order 与 witness order 混写成同一条 chain，或 `philosophy/README` 继续重列 Prompt formula / witness / reject trio，later maintainer 仍会把 `84` 的 canonical speaking-right 误读成“只是多个前门之一”。
+- 本轮新的 Prompt route 结论: 更稳的写法必须让 `15` 只保留 frontdoor-vs-witness 的术语边界，让 `philosophy/README` 只保留 `same-world compiler` 这句 hook，并让只追 Prompt canonical source 的读者可以直接进 `84`。
 - 本轮 prompt-speaking-right-thinning 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`。新的结论是：只要 `06` 继续在本章重列 canonical reject trio，或 `41` 继续在哲学页重写 Prompt 前门、专题库存链、文档 choreography 与目录责任矩阵，Prompt 的首答来源仍会被 later maintainer 误读成多入口并列。
 - 本轮新的 Prompt speaking-right 结论: 更稳的写法必须让 `06` 只解释失稳生成机理、让 `41` 只消费 shared formula 并压回 first principles；`philosophy/84` 继续独占 Prompt `first-reject order` 与 canonical reject trio 的定义权，而 `41` 只额外保留“第一次定义权唯一”的分工原则。
 - 本轮 governance-frontdoor-order-realignment 深化动作: 已继续更新 `bluebook/README.md` 与 `bluebook/risk/README.md`。新的结论是：总入口治理线一旦在 failure order 上偏离 `09 / 15` 的 canonical 顺序，或者风控 README 重新把 signer ladder / 治理主键抬回前门，后续再多的 user-facing 降格也会被带偏。
