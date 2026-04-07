@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-lexicon-cleanup language 现已继续写死：
+  - Prompt 反例句默认继续把 `更会说 / 更像专家 / Prompt 强度` 收回 `文风更顺滑 / Prompt 效力`
+  - `winner / 争主权` 默认继续收回 `world-definition source / 首答来源 / 改判权`
+  - 这三页默认统一拒收反证句、坏解法句与设计启发句再次借用 enchantment 或 signer 词感
 - `bluebook/01`、`bluebook/02` 与 `bluebook/philosophy/76` 的长期默认 source-map-locator-demotion language 现已继续写死：
   - 源码地图页默认继续只写成 repo-specific 定位与跳转，不再写成 map projection / atlas formula
   - 使用层默认继续把 `world-defining winner / canonical rung` 收回 `world-definition source / canonical ladder`
