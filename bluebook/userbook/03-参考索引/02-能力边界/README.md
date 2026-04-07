@@ -192,3 +192,4 @@
 - [190-applyPermissionUpdate、persistPermissionUpdate、SandboxManager.refreshConfig 与 localSettings 索引.md](./190-applyPermissionUpdate、persistPermissionUpdate、SandboxManager.refreshConfig%20与%20localSettings%20索引.md)
 - [191-pendingPermissionHandlers、cancelRequest、recheckPermission、hostPattern.host 与 applyPermissionUpdate 索引.md](./191-pendingPermissionHandlers、cancelRequest、recheckPermission、hostPattern.host%20与%20applyPermissionUpdate%20索引.md)
 - [192-activeRemote、remoteSessionUrl、outboundOnly、getIsRemoteMode 与 useReplBridge 索引.md](./192-activeRemote、remoteSessionUrl、outboundOnly、getIsRemoteMode%20与%20useReplBridge%20索引.md)
+- [193-StructuredIO、sessionState、remoteBridgeCore、pending_action、requires_action_details 与 reportState 索引.md](./193-StructuredIO、sessionState、remoteBridgeCore、pending_action、requires_action_details%20与%20reportState%20索引.md)

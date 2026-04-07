@@ -194,6 +194,7 @@
 175. 为什么 `applyPermissionUpdate`、`persistPermissionUpdate`、`SandboxManager.refreshConfig` 与 `localSettings` 说明 sandbox permission 的 persist-to-settings 不是一次单层 permission 写入。
 176. 为什么 `pendingPermissionHandlers`、`cancelRequest`、`recheckPermission`、`hostPattern.host` 与 `applyPermissionUpdate` 说明 permission tail 的 196、198、199、201、202 不是并列尾页，而是从 verdict ledger 分叉出去的四种后继问题。
 177. 为什么 `activeRemote`、`remoteSessionUrl`、`outboundOnly`、`getIsRemoteMode` 与 `useReplBridge` 说明 remote surface 的 132、135、138、141、142、143 不是并列 remote 页，而是从 front-state consumer topology 分叉出去的五种后继问题。
+178. 为什么 `StructuredIO`、`sessionState`、`remoteBridgeCore`、`pending_action`、`requires_action_details` 与 `reportState` 说明 `can_use_tool` 不等于 `requires_action/pending_action`，而 bridge blocked-state publish 只签裸 blocked bit。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

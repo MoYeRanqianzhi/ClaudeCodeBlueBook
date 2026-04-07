@@ -207,6 +207,7 @@
 - [203-2026-04-08-permission tail branch map split 拆分记忆.md](./203-2026-04-08-permission%20tail%20branch%20map%20split%20拆分记忆.md)
 - [204-2026-04-08-remote surface branch map split 拆分记忆.md](./204-2026-04-08-remote%20surface%20branch%20map%20split%20拆分记忆.md)
 - [205-2026-04-08-permission tail topic projection split 拆分记忆.md](./205-2026-04-08-permission%20tail%20topic%20projection%20split%20拆分记忆.md)
+- [206-2026-04-08-blocked-state publish ceiling split 拆分记忆.md](./206-2026-04-08-blocked-state%20publish%20ceiling%20split%20拆分记忆.md)
 
 用途：
 
