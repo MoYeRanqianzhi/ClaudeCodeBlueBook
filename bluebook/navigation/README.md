@@ -7,17 +7,16 @@
 
 如果你还缺主语、最小顺序或 first reject path，先回 [../README.md](../README.md) 与 `09`。
 
-这里默认只回答 route-only 问题：
+这里默认只回答 next-hop：
 
 - 缺主语、最小顺序或 first reject path，回 `../README.md` 与 `09`
-- 缺目录法、speaking rights 或入口升级规则，回 `../../docs/development/00-研究方法.md`
+- 缺目录法或入口升级规则，回 `../../docs/development/00-研究方法.md`
 - 缺源码质量证据 ceiling，回 `guides/102`
 
 ## 三类 route 缺口
 
 - Prompt
   - 缺顶层主语与 `first-reject path`，回 `philosophy/84`
-  - 缺 Prompt owner 页内部的 same-world next-hop，回 `philosophy/84`
   - 缺“为什么这轮还只该 route trim”，回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md) 与 [../../docs/development/00-研究方法.md](../../docs/development/00-%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95.md)
 - 治理
   - 缺治理首答，回 `../10`
@@ -49,4 +48,4 @@
 
 - `navigation/` 只保留稳定节点与 route gap，不把每条深链重新摊平成首页。
 - 如果一个 route 句子开始代签 truth、owner law 或 verdict，它就已经越位。
-- 如果新的 route 提案还需要解释 canonical formula、最小顺序或目录法，就先退回 `../README`、`09` 与 `docs/development/00`，不要急着升成目录动作。
+- 如果新的 route 提案还需要解释 canonical formula、最小顺序或目录法，就先退回 `../README`、`09` 与 `docs/development/00`。

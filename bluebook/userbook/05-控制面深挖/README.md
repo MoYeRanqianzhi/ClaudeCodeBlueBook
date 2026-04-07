@@ -59,10 +59,14 @@
 
 Prompt 失真在这一层也只该继续消费同一张 user-facing witness packet：
 
-- `目标 = message_lineage_ref`
-- `附件 = section_registry_ref + stable_prefix_ref`
-- `working set = protocol_transcript_ref + continuation_object_ref`
-- `next step = continue_qualification_verdict`
+- `目标`
+  - 你是否还在同一件事上看控制面
+- `附件`
+  - 当前文件、上下文和外置材料是否仍在给这件事补事实
+- `working set`
+  - 当前控制面真正还在裁决的是不是这件事，而不是旧摘要或显示层投影
+- `next step`
+  - 这次继续、拒收、清理或 handoff 是否仍围绕同一工作对象
 
 若这里开始靠 `systemPrompt` 截图、summary prose 或最后一条回复改判 Prompt 主语，就已经越位回第二套 Prompt 前门。
 

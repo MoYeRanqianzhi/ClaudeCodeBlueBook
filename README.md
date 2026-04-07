@@ -2,7 +2,7 @@
 
 面向 `claude-code-source-code/` 的 Claude Code 蓝皮书工程。仓库现在只先分清四类入口：蓝皮书正文、面向使用者的 userbook、研究与记忆层、源码镜像；根 README 只负责把这四类入口分开，不再承担深层阅读路线。
 
-目录法、frontdoor 顺序与 first reject path 统一回 `docs/development/00-研究方法.md` 与 `bluebook/README.md`；根 README 只分入口，不再代写目录治理。
+目录法与 frontdoor 顺序统一回 `docs/development/00-研究方法.md` 与 `bluebook/README.md`；根 README 只分入口，不再代写目录治理。
 
 ## Evidence Mode
 

@@ -37,6 +37,9 @@
 - 当前批次继续新增一条 high-flow route live 记忆：
   - 根 `README` 与 `navigation/README` 默认继续只保留入口分流与 next-hop；凡再次出现 speaking rights、目录宪法、时间轴裁决或 canonical formula 的摘要版，默认先按 second narrator risk 处理
   - `userbook/00` 默认继续保留用户动作语言，不在 frontdoor 层重列 `*_ref` 字段映射
+- 当前批次继续新增一条 user-facing Prompt live 记忆：
+  - `userbook/01-02`、`04-08`、`05-README` 与 `05-03` 默认继续只保留 `目标 / 附件 / working set / next step` 这类动作判断，不再在高流量页重列 `message_lineage_ref / section_registry_ref / ...`
+  - user-facing 页若开始把 Prompt witness 再写成字段映射或 `84 -> 51` owner route，默认优先按“把工作动作写回字段表”的 residual 处理
 - `bluebook/06-第一性原理与苏格拉底反思.md` 的长期默认 governance-self-audit-alignment language 现已继续写死：
   - `6.23 / 6.46 / 6.55 / 6.58 / 7.5` 默认继续优先反问“是否又把 signer、弱读回面、continuation consumer 与 cleanup 结果词写混”，不再只停在“统一预算器 / 更严拦截 / 压缩文本”这类中层概括
   - 更稳的默认修法顺序继续是：`先删中层结果词 -> 再点名同一秩序里的非对称 -> 最后才回 owner 页`
