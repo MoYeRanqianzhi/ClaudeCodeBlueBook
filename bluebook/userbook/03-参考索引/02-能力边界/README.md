@@ -114,3 +114,4 @@
 - [112-viewerOnly、history、timeout、Ctrl+C 与 title 索引.md](./112-viewerOnly%E3%80%81history%E3%80%81timeout%E3%80%81Ctrl%2BC%20%E4%B8%8E%20title%20索引.md)
 - [113-warning、连接态、force reconnect 与 viewerOnly 索引.md](./113-warning%E3%80%81%E8%BF%9E%E6%8E%A5%E6%80%81%E3%80%81force%20reconnect%20%E4%B8%8E%20viewerOnly%20索引.md)
 - [114-handleClose、scheduleReconnect、force reconnect、onReconnecting 与 onClose 索引.md](./114-handleClose%E3%80%81scheduleReconnect%E3%80%81force%20reconnect%E3%80%81onReconnecting%20%E4%B8%8E%20onClose%20索引.md)
+- [115-PERMANENT_CLOSE_CODES、4001 与 reconnect budget 索引.md](./115-PERMANENT_CLOSE_CODES%E3%80%814001%20%E4%B8%8E%20reconnect%20budget%20索引.md)
