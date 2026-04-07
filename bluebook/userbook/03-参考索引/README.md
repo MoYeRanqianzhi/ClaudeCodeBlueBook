@@ -166,6 +166,7 @@
 147. 为什么 `BridgePointer.environmentId`、`getBridgeSession.environment_id`、`reuseEnvironmentId` 与 `registerBridgeEnvironment` 说明 pointer 里的 env hint、server session env 与 registered env 不是同一种 truth。
 148. 为什么 `BridgeConfig.environmentId`、`reuseEnvironmentId`、`registerBridgeEnvironment.environment_id` 与 `createBridgeSession` 说明本地 env key、reuse claim、live env 与 session attach target 不是同一种环境主权。
 149. 为什么 `BridgeWorkerType`、`metadata.worker_type`、`BridgePointer.source` 与 `environment_id` 说明环境来源标签、prior-state 域与环境身份不是同一种 provenance。
+150. 为什么 `createBridgeSession.environment_id`、`source`、`session_context` 与 `permission_mode` 说明 session attach target、来源声明、上下文载荷与默认策略不是同一种会话归属。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

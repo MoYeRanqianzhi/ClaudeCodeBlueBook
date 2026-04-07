@@ -164,3 +164,4 @@
 - [162-BridgePointer.environmentId、getBridgeSession.environment_id、reuseEnvironmentId 与 registerBridgeEnvironment 索引.md](./162-BridgePointer.environmentId、getBridgeSession.environment_id、reuseEnvironmentId%20与%20registerBridgeEnvironment%20索引.md)
 - [163-BridgeConfig.environmentId、reuseEnvironmentId、registerBridgeEnvironment.environment_id 与 createBridgeSession 索引.md](./163-BridgeConfig.environmentId、reuseEnvironmentId、registerBridgeEnvironment.environment_id%20与%20createBridgeSession%20索引.md)
 - [164-BridgeWorkerType、metadata.worker_type、BridgePointer.source 与 environment_id 索引.md](./164-BridgeWorkerType、metadata.worker_type、BridgePointer.source%20与%20environment_id%20索引.md)
+- [165-createBridgeSession.environment_id、source、session_context 与 permission_mode 索引.md](./165-createBridgeSession.environment_id、source、session_context%20与%20permission_mode%20索引.md)
