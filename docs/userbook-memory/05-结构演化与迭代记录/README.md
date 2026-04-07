@@ -139,6 +139,7 @@
 - [135-2026-04-07-direct connect foreground runtime split 拆分记忆.md](./135-2026-04-07-direct%20connect%20foreground%20runtime%20split%20拆分记忆.md)
 - [136-2026-04-07-outboundOnly active surface split 拆分记忆.md](./136-2026-04-07-outboundOnly%20active%20surface%20split%20拆分记忆.md)
 - [137-2026-04-07-cross frontend consumer split 拆分记忆.md](./137-2026-04-07-cross%20frontend%20consumer%20split%20拆分记忆.md)
+- [138-2026-04-07-activeRemote interaction shell split 拆分记忆.md](./138-2026-04-07-activeRemote%20interaction%20shell%20split%20拆分记忆.md)
 
 用途：
 
