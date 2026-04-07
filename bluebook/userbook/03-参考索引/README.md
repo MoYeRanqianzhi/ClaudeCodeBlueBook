@@ -114,6 +114,7 @@
 95. 为什么 history init banner 回放与 live slash 恢复不是同一种 attach 恢复语义。
 96. 为什么 timeout watchdog、warning、reconnecting 与 disconnected 不是同一种 remote recovery 状态。
 97. 为什么 `viewerOnly`、history、timeout、`Ctrl+C` 与 title 不是同一种 assistant viewer 特判。
+98. 为什么 `warning`、连接态、force reconnect 与 `viewerOnly` 不是同一种 recovery signer。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
