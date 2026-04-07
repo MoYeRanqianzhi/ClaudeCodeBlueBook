@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 157 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 158 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -176,6 +176,7 @@
 155. [155-McpAuthTool、MCPRemoteServerMenu与print的强请求清理重新担保治理边界](155-McpAuthTool、MCPRemoteServerMenu与print的强请求清理重新担保治理边界.md)
 156. [156-ReadMcpResourceTool、ListMcpResourcesTool与toolExecution的强请求清理用时重验证治理边界](156-ReadMcpResourceTool、ListMcpResourcesTool与toolExecution的强请求清理用时重验证治理边界.md)
 157. [157-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的强请求清理step-up重授权治理边界](157-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的强请求清理step-up重授权治理边界.md)
+158. [158-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界](158-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界.md)
 
 ## 和其他目录的分工
 
