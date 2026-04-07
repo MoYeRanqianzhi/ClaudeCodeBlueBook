@@ -181,3 +181,4 @@
 - [179-writeMessages、writeSdkMessages、initialMessageUUIDs、recentPostedUUIDs 与 flushGate 索引.md](./179-writeMessages、writeSdkMessages、initialMessageUUIDs、recentPostedUUIDs%20与%20flushGate%20索引.md)
 - [180-handleIngressMessage、recentPostedUUIDs、recentInboundUUIDs 与 onInboundMessage 索引.md](./180-handleIngressMessage、recentPostedUUIDs、recentInboundUUIDs%20与%20onInboundMessage%20索引.md)
 - [181-lastTransportSequenceNum、recentInboundUUIDs、tryReconnectInPlace、createSession 与 rebuildTransport 索引.md](./181-lastTransportSequenceNum、recentInboundUUIDs、tryReconnectInPlace、createSession%20与%20rebuildTransport%20索引.md)
+- [182-handleIngressMessage、isSDKControlResponse、isSDKControlRequest、onPermissionResponse 与 onControlRequest 索引.md](./182-handleIngressMessage、isSDKControlResponse、isSDKControlRequest、onPermissionResponse%20与%20onControlRequest%20索引.md)
