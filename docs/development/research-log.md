@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 prompt-title-lede-de-enchantment-2 深化动作: 已继续更新 `bluebook/README.md`、`bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`。新的结论是：Prompt 线当前最显眼的 residual 已不再是 signer-like technical noun，而是标题、导语与 backlink 还在重复去魅前的 framing。现在这几页开始更一致地把 `魔力 / owner / first-answer law` 收回 `效力 / canonical source / 首答来源`。
+- 本轮新的 Prompt 结论: Prompt 去魅的高杠杆位置不只是深段落，而是读者第一眼会看到的标题、导语和回指句；这些地方一旦还保留 enchantment 或 page-ownership 话语，后面的 object chain 再干净也会被前门调门带偏。
 - 本轮 source-map-question-demotion 深化动作: 已继续更新 `bluebook/philosophy/76-真正成熟的源码地图，不是目录列得更细，而是更快暴露权威入口、消费者子集与危险改动面.md`。新的结论是：atlas/projection 页当前最显眼的 residual 已不再是旧 rung 本身，而是问题模板还在把目录当 authority 单位。现在 `76` 更明确地把 later maintainer 的提问顺序压回 `authority file / current-truth surface / consumer subset / hotspot kernel / mirror-gap note`。
 - 本轮新的源码地图结论: 目录在源码质量线里更稳的角色只是 locator；真正该先回答的仍是 authority file、truth-surface、consumer subset 和 hotspot/mirror-gap 对象。
 - 本轮 userbook-03-06-fail-route 深化动作: 已继续更新 `bluebook/userbook/05-控制面深挖/03-Compact、Resume、Memory：长任务连续性手册.md` 与 `bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md`。新的结论是：`projection / consumer / verdict / reopen` 这条 split 在前门层已经更清楚，但叶子页里 `resume -> reopen` 与 `runtime evidence -> action routing` 的 handoff 还不够硬。现在 `03` 和 `06` 都开始明确把失败续接、恢复签发和 reopen 责任路由回 `risk/README` 与对应 playbook。

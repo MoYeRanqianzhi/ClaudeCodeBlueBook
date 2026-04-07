@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-title-lede-de-enchantment-2 language 现已继续写死：
+  - Prompt 线默认继续把标题和导语里的 `魔力` 收回 `效力`
+  - backlink 默认继续把 `owner / first-answer law` 收回 `canonical source / 首答来源`
+  - Prompt 顶层话语的长期默认写法现在统一拒收 headline-level enchantment 和 page-ownership 回潮
 - `bluebook/philosophy/76` 的长期默认 source-map-question-demotion language 现已继续写死：
   - `bluebook/philosophy/76` 默认继续把 later maintainer 的问题模板写成 authority/object 问法，而不是目录先行问法
   - 目录在 `76` 里的长期默认角色只是 locator，不是 authority 单位

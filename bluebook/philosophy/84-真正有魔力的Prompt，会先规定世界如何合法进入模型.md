@@ -1,10 +1,10 @@
-# 真正有魔力的Prompt，会先规定世界如何合法进入模型
+# 真正有效的 Prompt，会先把世界进入模型的顺序排清
 
 这一章回答五个问题：
 
-1. 为什么 Claude Code 的 Prompt 魔力首先不是文案强，而是世界编译强。
+1. 为什么 Claude Code 的 Prompt 效力首先不是文案强，而是世界编译顺序强。
 2. 为什么 `section registry / dynamic boundary`、`message lineage`、`projection consumer`、`protocol transcript` 与 `continuation qualification` 共同决定 Prompt 上限。
-3. 为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到魔力。
+3. 为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到这种效力。
 4. 怎样用苏格拉底式追问审一个新 runtime 是否真的拥有这种 Prompt 能力。
 5. 这对 Agent runtime 设计者意味着什么。
 
@@ -27,9 +27,9 @@
 
 `84` 在蓝皮书里只承担一件额外职责：
 
-- 它负责 Prompt 线的 first-answer law；`README / 06 / 81` 只配引用、回绑或展开机制，不再并列重签 Prompt 顶层公式。
+- 它是 Prompt 线顶层说明的 canonical source；`README / 06 / 81` 负责引用、回绑或展开机制，不再并列重写 Prompt 顶层公式。
 
-真正有魔力的 Prompt，不是：
+真正有效的 Prompt，不是：
 
 - 更长
 - 更聪明
