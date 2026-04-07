@@ -2,6 +2,13 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 de-linearize-top-entry-and-bridge-demotion 深化动作：已继续更新 `navigation/05`、`15`、`41`、`04`、`00`、`02`、`05` 与 `01-源码总地图`。新的结论是：当前更高价值的目录优化，不是再加顶层页，而是继续把顶层稳定成“少数宪法页 + 少数判断页 + 若干 first-hop bridge + stub-only compat alias”。`navigation/04` 现在正式把规范入口改成角色表，`01-源码总地图` 现在正式降成 shim。
+- 本轮新的 Prompt 目录结论：并行 agent 继续确认 Prompt 线的 residual 重复主要集中在 `03 / navigation/05 / 15 / 41 / 06` 这些 route/why/self-audit 页；因此这批改动继续只做 route trim，不补新入口。`navigation/05` 现在更明确只做“别抄错东西”的校正，`15` 只保留问题梯子，`41` 只保留 `compile / price / externalize / evict` 与第一次定义权唯一，完整 Prompt 首答仍只回 `84 / 51 / 06`。
+- 本轮新的顶层结构结论：`bluebook/` 顶层现在更稳地按角色读，而不是按编号线性读。当前默认顺序已更清楚地固定为：`README = 宪法前门`，`00 = preface / locator`，`09 = 宪法总图`，`03 = why`，`06 = self-audit`，`01 / 02 / 05 / 07 / 08 = bridge 或 locator`。这意味着后续若再收口 `02 / 05`，应继续学 `10` 的 card 化和 `api / 08` 的 owner split，而不是再补章节式教程。
+- 本轮新的 bridge 结论：`02-使用指南` 现在更明确只做 usage bridge，不再充当第二本 `userbook`；`05-功能全景与API支持` 现在更明确只做 capability / API bridge，不再代签 capability first answer；用户侧能力地图继续回 `userbook/02`，host-facing truth 继续回 `api/README`。
+- 本轮新的 compat alias 结论：顶层 alias 默认不应再保留大段正文。`01-源码总地图` 现在已被压成与 `00-总览 / 00-蓝皮书总览` 同级的 stub-only shim，只保留规范地图与宪法入口跳转。后续兼容页默认都应遵守同一策略：显式标注 `[兼容别名页]`、不参与规范排序、内容压到 3 行左右。
+- 本轮新的治理线后续目标：并行 agent 继续确认当前更值当的 residual 已从 Prompt 转到治理 owner 泄漏。下一批最自然的目标不是再动 `10 / security / risk`，而是继续把 `userbook/05-控制面深挖/README`、`05-06` 与 `运行时主链/05` 里残留的 `只配 / 不配 / signer / verdict / reopen` 语言降成 route 或用户动作，把通用弱读回面、signer ladder 与用户侧恢复资格彻底送回 `10 / security / risk`。
+- 本轮根仓库同步检查结果：本轮起手 `fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 已全部成功，根仓状态回到 `main...origin/main`。这说明上一轮 unresolved merge 阻塞已解除；后续仍默认只在 `mainloop` 执行正文改动，但不再把根仓同步视为默认阻塞态。
 - 本轮 prompt-route-trim-and-entry-role-hardening 深化动作：已继续更新 `bluebook/README`、`bluebook/userbook/README`、`bluebook/navigation/README`、`bluebook/06` 与 `docs/development/00-研究方法`。新的结论是：当前更高价值的目录优化，不在于再补一个 Prompt 入口卡，而在于把 Prompt owner split 写死成 `84 / 51 / 06`，并把“先做 route trim、再谈新入口”升成顶层制度。
 - 本轮新的 Prompt 结论：Prompt 的“魔力”继续被压回 same-world contract，而不是 prompt prose；根入口现在正式把 Prompt first-hop 写成 `same-world compiler -> philosophy/84 -> guides/51`，`06` 只负责解释为什么这套 owner split 比再补一个 Prompt 前门更稳。并行 agent 也确认：新增 Prompt 入口卡只会增加 first-answer count，不会减少它。
 - 本轮新的目录结构结论：`bluebook/` 顶层入口现在更稳地被读成分层角色，而不是 `00-09` 强线性教程。当前更可复用的角色顺序是：`00=导读/locator`，`09=宪法`，`03=why`，`06=self-audit`，`01/10=bridge`。源码质量线的并行分析也进一步提示：若后续再动 `02` 与 `05`，更自然的方向是把它们继续降成 bridge，而不是继续站在 bluebook 根层抢 usage/capability 首答。

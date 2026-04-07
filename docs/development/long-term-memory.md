@@ -8,6 +8,26 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/navigation/05`、`bluebook/navigation/15`、`bluebook/navigation/41`、`bluebook/navigation/04`、`bluebook/00-导读`、`bluebook/02-使用指南`、`bluebook/05-功能全景与API支持` 与 `bluebook/01-源码总地图` 的长期默认 de-linearized-top-entry language 现已继续写死：
+  - `navigation/05` 默认继续只做模仿对象校正，不重发 `84 / 51 / 10 / 102` 的首答公式、witness order 或 ladder
+  - `navigation/15` 默认继续只保留失稳前问题梯子与第一条反证信号类型，不正文式首答 Prompt canonical formula / witness order
+  - `navigation/41` 默认继续只保留 `compile / price / externalize / evict` 与“第一次定义权唯一”，不库存化 Prompt witness chain 或专题侧门
+  - `navigation/04` 默认继续把顶层页写成角色表，不再把 `README + 00-09` 写成强线性规范主线
+  - `00-导读` 默认继续只做 preface / locator，不充当编号教程的第一站
+  - `02` 默认继续只做 usage bridge，`05` 默认继续只做 capability / API bridge，不再各自充当第二本 `userbook` 或 capability first-answer page
+  - 顶层 compat alias 默认继续是 stub-only shim；`01-源码总地图` 现已作为模板被压成显式 `[兼容别名页]`
+- 并行 agent 吸收后的长期默认 prompt-residual-trim ledger 现已继续写死：
+  - 完整 Prompt 首答公式 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 默认继续只回 `84`
+  - 完整 same-world witness order 与 builder-facing six-step implementation 默认继续只回 `51`
+  - `continuity 不是第四条母线 / 第五个函数`、`route trim > new entry`、`05 / 15 / 41` choreography 与目录仲裁默认继续只回 `06`
+  - `03 / navigation/05 / 15 / 41 / navigation/README` 若再次出现 owner 级 Prompt 首答，默认按 residual trim 候选处理
+- 并行 agent 吸收后的长期默认 governance-owner-leak cleanup 现已继续写死：
+  - `10` 独占通用弱读回面声明与总清单
+  - `security` 独占 signer ladder、ledger / cleanup authority 与 finality 强弱层次
+  - `risk` 独占用户侧 `product promise / reopen qualification / evidence binding`
+  - `userbook` 默认只翻译成 first reject path、route 与下一步动作；在 `10 / security / risk` 之外，凡出现 `只配|不配|签发|签字|signer|verdict|reopen`，默认就是降格候选
+  - 下一批治理线高价值目标默认锁定在 `userbook/05-控制面深挖/README`、`05-06` 与 `userbook/02-能力地图/01-运行时主链/05`
+- 最新根仓同步记忆（2026-04-08，本轮后段）已修正为健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均成功，根仓状态回到 `main...origin/main`。先前 unresolved merge 阻塞只应被读成时间点事实，不再视为当前 live truth。
 - `bluebook/README`、`bluebook/userbook/README`、`bluebook/navigation/README`、`bluebook/06` 与 `docs/development/00-研究方法` 的长期默认 prompt-route-trim-and-role-layering language 现已继续写死：
   - Prompt 线的 owner split 默认继续固定成 `philosophy/84 = 顶层定义与 first-reject path`、`guides/51 = same-world witness / builder-facing implementation / continue qualification`、`06 = 为什么这套 owner split 不该再长出第二 Prompt 前门`
   - Prompt 线默认继续拒收“为求更顺手再补一个 Prompt 入口卡”；只有现有页真的承载不了新的第一问或新的申诉位阶时，才允许新开前门
