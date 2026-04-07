@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/architecture/README` 与 `bluebook/philosophy/86` 的长期默认 source-quality-residual language 现已继续写死：
+  - `architecture/README` 默认继续把 `局部可反对性` 写成 later maintainer 不追全仓、不追作者也能点名越权对象与 seam
+  - `architecture/README` 默认继续拒收“目录更整齐 / 文件更小 / 注释更完整”直接冒充先进性
+  - `philosophy/86` 默认继续把 later maintainer rejectability 写成能点名越权对象与第一退回层
+  - `philosophy/86` 默认继续把 `layout-first drift` 写成源码质量 counterfeit
+  - 这两页默认统一继续把源码先进性压成 `surface -> split writeback -> fresh-read -> reject stale writer -> retreat`
 - 根 `README`、`bluebook/navigation/README` 与 `bluebook/userbook/README` 的长期默认 governance-anti-misread language 现已继续写死：
   - 根 `README` 默认继续提醒“安全与省 token 不是两道并列题，而是同一条治理收费链的两种外观”
   - `navigation/README` 默认继续写死“只管 route，不签 truth”

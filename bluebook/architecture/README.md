@@ -10,6 +10,7 @@
 这里还要再多记一句：
 
 - `architecture/` 真正值钱的，不只是把对象链列出来，而是把 later maintainer 的局部可反对性落成可见的 `authority surface / truth planes / current-truth writeback / retreat layer`。
+- 这里说的 `局部可反对性` 不是“最后还能看懂”，而是拿不到作者时，later maintainer 仍能只凭局部对象与 seam 指出哪条 `event / snapshot / pointer / recovery asset` 在越权。
 
 ## 什么时候进来
 
@@ -32,6 +33,7 @@
 - 如果你只先判断“future maintainer 在结构层到底拿什么正式反对当前实现”，从 `60 -> 63 -> 69 -> 72 -> 84` 进入。
   - 最短顺序：`authority surface -> truth planes -> writeback seam -> danger surface -> retreat layer`
   - 失败信号：later maintainer 还必须追全仓、追作者或靠日志回放猜 authority。
+  - counterfeit test：如果“目录更整齐 / 文件更小 / 注释更完整”已经足以被写成先进性结论，而还没点名 `writeback seam / first retreat layer`，那就仍停在目录观感层。
 
 ## 八个平面
 

@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮源码质量 residual 深化动作: 已继续更新 `bluebook/architecture/README.md` 与 `bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md`。新的结论是：源码质量前门最容易写浅的地方不是缺 canonical ladder，而是把 `later maintainer rejectability` 写成“看懂作者设计”，或把“目录更整齐”偷换成局部可反对性。更稳的默认写法是：先点名 `writeback seam / first retreat layer`，再谈 layout。
+- 本轮新的源码质量结论: `local opposability` 现在被进一步压成一个最短动作链：`surface -> split writeback -> fresh-read -> reject stale writer -> retreat`。后续凡是还在先夸 layout，再补 `one writable present` 的页面，默认按 `layout-first drift` 处理。
 - 本轮治理 anti-misread 深化动作: 已继续更新根 `README.md`、`bluebook/navigation/README.md` 与 `bluebook/userbook/README.md`。新的结论是：最高频入口现在最危险的失真不再是材料不足，而是 route words、projection words 与 UI words 重新篡位成治理主语。更稳的默认写法是：根 README 先提醒“安全与省 token 是同一条治理收费链”，`navigation` 先提醒自己“只管 route，不签 truth”，`userbook` 先提醒读者“先定题，不先找页”。
 - 本轮新的治理结论: `projection usurpation` 与 `route-law inflation` 现在都被前推成显式误读类别。后续凡是把 `mode / modal / usage / token UI / default continue / rollback files` 写成治理本体，或把 `security vs token`、`continuity / memory / resume / handoff` 写成并列主题，默认都按第二前门语言处理。
 - 本轮 Prompt crosswalk 深化动作: 已继续更新 `bluebook/README.md`、`bluebook/navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`。新的结论是：Prompt 前门如果只共享 `Authority / Boundary / Transcript / Lineage / Continuation / Explainability` 这些 nouns，而不给 canonical object、常见 counterfeit 与 truth-plane non-promotion，later maintainer 仍会在入口层重新把 system prompt 文本、UI transcript、summary prose 与 handoff card 误升成第二主语。
