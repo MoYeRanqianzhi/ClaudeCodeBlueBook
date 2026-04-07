@@ -178,6 +178,7 @@
 159. 为什么 `getUserSpecifiedModelSetting`、`ANTHROPIC_MODEL`、`settings.model`、`mainThreadAgentDefinition.model` 与 `setMainLoopModelOverride` 说明 ambient env preference、saved setting、agent bootstrap 与 live launch override 不是同一种 model source。
 160. 为什么 `initialHistoryCap`、`isEligibleBridgeMessage`、`toSDKMessages` 与 `local_command` 说明 bridge 的 eligible history replay 不是 model prompt authority。
 161. 为什么 `getUserSpecifiedModelSetting`、`isModelAllowed`、`ANTHROPIC_MODEL`、`settings.model` 与 `getMainLoopModel` 说明 source selection 之后的 allowlist veto 不会回退到更低优先级来源。
+162. 为什么 `model.tsx`、`validateModel`、`getModelOptions` 与 `getUserSpecifiedModelSetting` 说明显式拒绝、选项隐藏与 silent veto 不是同一种 allowlist contract。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

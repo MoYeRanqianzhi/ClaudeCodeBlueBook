@@ -498,5 +498,6 @@
 - model 的 ambient env preference、saved setting、agent bootstrap、launch override 与 startup snapshot 边界
 - bridge 的 eligible history projection、remote UI replay 与 model prompt authority 边界
 - model 的 source selection、allowlist admission 与 default fallback 边界
+- model allowlist 的显式拒绝、选项隐藏与 silent getter veto 边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
