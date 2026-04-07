@@ -8,6 +8,7 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 最新根仓同步记忆（2026-04-08，本轮最新批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均成功，根仓状态为 `main...origin/main`。之前记录的 `userbook` 冲突阻塞只应被读成时间点快照。
 - 当前批次继续新增一条 03-top-quality-route live 记忆：
   - `03` 顶部三处源码质量入口默认继续统一写成 `07 -> guides/102 -> philosophy/87 -> architecture/README`，不再保留 `102 / 87 / architecture` 分拆口径
 - 当前批次继续新增一条 03-prompt-template-normalization live 记忆：

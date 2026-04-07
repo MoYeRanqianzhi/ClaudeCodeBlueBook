@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的根仓同步结论：最新一次 `fetch origin main && checkout main && merge --ff-only origin/main` 已再次成功，根仓状态回到 `main...origin/main`；更早出现的 `userbook` merge 阻塞现在只应读成时间点快照，而不是当前起手假设。
+- 本轮新的 `03` 顶部治理结论：页首三条母线里的治理线现在也更明确挂上了固定 owner 顺序，和 Prompt / 源码质量两线更对称，later maintainer 不再需要等到中段 why 才看到治理 owner chain。
 - 本轮新的 `03` 顶部入口结论：源码质量线在页首三处现在更明确统一成同一条 owner 顺序 `07 -> 102 -> 87 -> architecture/README`，不再一会儿拆写成 `102 / 87 / architecture`，一会儿在中后段再补完整顺序。
 - 本轮新的 Prompt 模板结论：`03` 里两处 Prompt why 现在更明确被压成同一句法，不再一处写“这一节不再追加…”，另一处写“本节不再展开…”。当前更稳的高流量写法已经统一成：只保留一句 why，再给 `philosophy/84` 与 `06` 的固定回链。
 - 本轮新的 Prompt 模板结论：`03` 的 Prompt why 现在又收掉了一处旧模板痕迹，不再保留“本节不再补 Prompt 审计顺序”这种写法；当前更稳的统一句法已经更明确是：只保留一句 why，再给固定 owner 顺序与自校回链。
