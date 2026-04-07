@@ -1,5 +1,14 @@
 # 研究日志
 
+## 2026-04-08 本轮增量
+
+- 本轮 central-entry-and-method-depth 深化动作: 已继续更新 `bluebook/README`、`bluebook/navigation/README`、`bluebook/09`、`bluebook/01`、`philosophy/70`、`guides/22`、`guides/30`、`guides/32`、`playbooks/08`、`11`、`16`。新的结论是：当前更高价值的 residual，已经不在主线页有没有 canonical chain，而在中央入口页、深层方法页和执行手册页是否还会用旧 `前门 / 魔力 / 权威面` 语言偷偷把 later maintainer 带回旧主语。
+- 本轮新的目录结构结论: 根入口、跨目录入口、`09` 与源码地图现在更明确地完成同一件事：入口页只负责最小顺序、route 纪律与 speaking-right 边界，不再借 `前门 / frontdoor / 文案魔力 / 权威面` 这类旧词重新抢首答权。更稳的目录优化，不是再加 route map，而是继续减少 headline 级旧主语。
+- 本轮新的 Prompt 设计结论: Prompt 深层方法页现在更明确把“Prompt效力”写成 `compiled request truth + witness chain + continuation qualification` 的 gate 语言，而不是魅力描述。也就是说，真正该被 later maintainer 复用的，不是“这套 Prompt 很强”，而是“哪些 witness 必须同时成立，否则就 reject / rollback / stop continue”。
+- 本轮新的源码先进性结论: 源码先进性深层方法页和结构执行面现在开始共享一条更严格的证据/执行顺序：`contract -> registry -> current-truth surface -> current-truth writeback -> recovery / freshness / anti-zombie -> handoff / future maintainer reject`。这说明 later maintainer 真正需要的不是更漂亮的结构解释，而是可以独立通过或拒绝的证据梯度。
+- 本轮新的执行层结论: `playbooks/08 / 11 / 16` 现在开始把结构迁移、rollout 和 evidence envelope 同时收回 `surface -> writeback -> freshness -> anti-zombie -> handoff`。这说明结构升级是否成立，最终不取决于目录图，而取决于宿主、CI、评审与交接能否沿同一条对象链消费同一份当前真相。
+- 本轮根仓库同步检查结果: `fetch origin main` 成功，但 `checkout main` 与 `merge --ff-only origin/main` 被根仓 `bluebook/security/README.md` 与 `bluebook/security/source-notes/README.md` 的未解决冲突再次阻塞；根仓当时状态为 `main...origin/main [ahead 13]`。本轮继续严格只在 `.worktrees/mainloop` 内推进。
+
 ## 2026-04-07 本轮增量
 
 - 本轮 socratic-matrix-backflow 深化动作: 已继续更新 `bluebook/06`、`08`、`navigation/38`、`guides/50`、`bluebook/07` 与 `bluebook/02`。新的结论是：当前更高价值的 residual，已经不在 canonical chain 缺失，而在总控页会不会回长第二入口、矩阵页会不会继续 taxonomy-first、机制回灌页会不会只停在概念总结、以及高流量桥接页会不会继续用旧 display nouns 泄露旧主语。

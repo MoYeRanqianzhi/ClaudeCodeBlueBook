@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-04-08
+
+- 继续更新 `bluebook/README.md`、`bluebook/navigation/README.md`、`bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md` 与 `bluebook/01-源码结构地图.md`，把 central 入口页里的旧 `前门 / Prompt魔力 / authority surface` 继续收回 `入口顺序 / Prompt效力 / current-truth surface`：根入口和跨目录入口现在更明确只保留入口顺序、route 纪律与 speaking-right 边界；`09` 现在更明确把第三张图写成“当前真相与反僵尸控制面”，并把 `frontdoor order`、`authority surface` 这类旧说法降到 `入口顺序 / current-truth surface`
+- 继续更新 `bluebook/philosophy/70-真正成熟的校验，不是字段齐全，而是共享对象能拒绝漂移.md` 与 `bluebook/guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md`，把 Prompt 深层方法页继续从“魔力解释”压成 validator / gate 语言：`70` 现在把 Prompt 效力收回 `compiled request truth / witness chain / continuation qualification` 的 validator 链；`30` 现在把整页核心改成一串 `Gate`，每个 Gate 都显式写出输入、通过条件、reject signal 与失败动作
+- 继续更新 `bluebook/guides/22-Contract-First审读清单：如何系统读懂Agent Runtime的合同、权威面与热点文件.md` 与 `bluebook/guides/32-如何用苏格拉底诘问法审读源码先进性：权威面、恢复资产与未来维护者消费者.md`，把源码先进性深层方法页继续收回 `current-truth surface / current-truth writeback / evidence gradient`：`22` 现在把 contract-first 审读写成六层证据梯度，先收对象合同、协议合同、registry、current-truth surface、writeback/subset，再读 kernel；`32` 现在把苏格拉底审读写成 G1-G6 六层证据梯度，不再保留“权威面”式旧主语
+- 继续更新 `bluebook/playbooks/08-结构迁移工单：从伪模块化到权威面与反zombie结构的改写顺序.md`、`bluebook/playbooks/11-结构 Rollout样例：从第二真相到权威面与反zombie结构的灰度记录.md` 与 `bluebook/playbooks/16-结构 Evidence Envelope落地手册：权威面、恢复资产、反zombie 与交接闸门.md`，把结构执行面继续收回 `current-truth surface -> current-truth writeback -> freshness -> anti-zombie -> handoff`：`08` 现在正式把迁移顺序写成这条主链；`11` 现在把 rollout 样例的 phase 与对账对象收回 `current-truth surface / writeback`；`16` 现在把宿主、CI、评审与交接的最小检查点统一拉回 `surface / writeback / recovery / anti-zombie / handoff`
+- 本轮根仓库起手同步再次被主仓自身未解决冲突阻塞：`git checkout main` 报错 `bluebook/security/README.md` 与 `bluebook/security/source-notes/README.md` `needs merge`，`git merge --ff-only origin/main` 因 unmerged files 无法继续；因此本批次继续严格只在 `.worktrees/mainloop` 内推进与提交
+
 ## 2026-04-07
 
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/08-能力全集、公开度与成熟度矩阵.md`、`bluebook/navigation/38-机制回灌导航：编译请求真相、治理控制面与可演化内核对象边界.md`、`bluebook/guides/50-如何把源码先进性落成可演化内核：权威入口、单一来源、anti-cycle seam与未来维护者消费者.md`、`bluebook/07-运行时契约、知识层与生态边界.md` 与 `bluebook/02-使用指南.md`，把下一批深层 residual 收成四条纪律：`06` 现在更明确只充当总控自校页，不再长成第二入口页；`08` 现在把能力矩阵首答收回 `current admission / product promise`，把八平面降为定位索引；`38 / 50` 现在把机制回灌顺序正式写成 `compiled request truth -> current-truth surface -> single-source / anti-cycle seam -> current-truth writeback -> future maintainer consumer`；`02 / 07` 则把高流量显示文案里的 `Prompt魔力 / 权威面` 收回 `Prompt效力 / current-truth surface`

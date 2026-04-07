@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`bluebook/navigation/README`、`bluebook/09`、`bluebook/01`、`bluebook/philosophy/70`、`bluebook/guides/22`、`bluebook/guides/30`、`bluebook/guides/32`、`bluebook/playbooks/08`、`bluebook/playbooks/11` 与 `bluebook/playbooks/16` 的长期默认 central-entry-and-method-depth language 现已继续写死：
+  - central 入口页默认继续把 `前门 / frontdoor / Prompt魔力 / authority surface` 收回 `入口顺序 / Prompt效力 / current-truth surface`
+  - Prompt 深层方法页默认继续把“强不强”改写成 `compiled request truth + witness chain + continuation qualification` 的 gate/validator 语言，不再以魅力解释为主
+  - 源码先进性深层方法页默认继续把 contract-first / 苏格拉底审读写成 later maintainer 可执行的证据梯度：`contract -> registry -> current-truth surface -> current-truth writeback -> recovery / freshness / anti-zombie -> handoff / reject`
+  - 结构执行面默认继续把迁移、rollout 与 evidence envelope 统一收回 `current-truth surface -> current-truth writeback -> freshness -> anti-zombie -> handoff`
 - `bluebook/06`、`bluebook/08`、`bluebook/navigation/38`、`bluebook/guides/50`、`bluebook/07` 与 `bluebook/02` 的长期默认 socratic-matrix-backflow language 现已继续写死：
   - `06` 默认继续只充当总控自校页：只保留三条判断、最小拒错顺序、职责边界与苏格拉底问法，不再重发 Prompt / 治理 / 源码质量首答
   - `08` 默认继续先判 `current admission / product promise`，再回填 `existence / implementation visibility`，最后才允许用八平面做定位；矩阵页默认继续拒收 taxonomy-first
