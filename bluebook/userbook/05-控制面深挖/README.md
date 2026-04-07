@@ -80,6 +80,15 @@ Prompt 失真在这一层也只该继续消费同一张 user-facing witness pack
 更硬一点说，`/status / /doctor / /usage` 这些都只是 weak readback surface；`/compact / /resume / /memory` 这些都只是 continuation consumer。谁拿它们直接代签 same-world、治理真相或继续资格，谁就在把 consumer 写成 compiler。
 续租也只延长仍合法的同一 lease；`resume / heartbeat / keep_alive / token refresh` 都不能替代 `re-entry / reopen / rebinding`。
 
+如果还想要一张最小正向 crosswalk，也只记三行：
+
+- `这还是同一件工作吗`
+  - 过关条件是 `continue qualification`
+- `这是治理裁决吗`
+  - 过关条件是 `pricing-right + truth-surface attestation`
+- `这是旧状态污染吗`
+  - 过关条件是 `sole writer + freshness`
+
 ## 进入控制面前的 first reject signal
 
 看到下面迹象时，应先停下来重审，而不是继续在相邻入口间来回切：

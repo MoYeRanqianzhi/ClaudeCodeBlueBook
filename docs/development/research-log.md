@@ -2,6 +2,12 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 continuity 总法结论：`07` 现在更明确把 `continue / resume` 收成 shared continue verdict，而不是第五种资产；真正决定它的，仍是 `continue qualification + pricing-right / truth-surface re-attestation + sole-writer freshness` 的联合通过。
+- 本轮新的 userbook/05 结论：控制面深挖页现在更明确给出三句用户问法的正向过关条件，不再只靠 first reject path 侧面防守；用户现在可以直接把“同一件工作 / 治理裁决 / 旧状态污染”分别对回 `continue qualification`、`pricing-right + truth-surface attestation`、`sole writer + freshness`。
+- 本轮新的 subset page 结论：`architecture/14 / 59` 现在更明确不只要带 `consumer subset / candidate` badge，还要把 `change-risk record` next hop 写成本页硬动作；否则 later maintainer 仍知道要保守，却不知道改动前该回放什么。
+- 本轮新的 `guides/102` 结论：subset/candidate 页现在更明确被要求同时落下降格 stamp 和具体交接动作；“这里只是 subset”若没有本页 handoff，就仍只是态度，不是制度。
+- 本轮新的源码质量 owner 结论：`03` 现在更明确只保留源码质量 why，不再在多个设计原则里各自重开轻量 quality verdict；若要继续谈 shared runtime correctness / continuity budget、later maintainer veto、option value 或变更前协议，统一顺序继续回 `07 -> 102 -> 87 -> architecture/README`。
+- 本轮新的公开镜像 ladder 结论：`07` 现在更明确把源码质量前门顺序补全成 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline -> change-risk record`，把结构 why、对象边界与变更前协议第一次压成同一条可复用句。
 - 本轮新的 Prompt 结论：`03 / 07` 现在更明确把 `lawful forgetting / continuation qualification` 收回 same-world compiler 的时间轴 verdict；凡 consumer path 还要重谈 `world-definition source`，都应直接按 `anti-renegotiation` 失败拒收。
 - 本轮新的 continuity 结论：`07` 现在开始把 continuity 压成 shared runtime correctness / continuity budget，并用 `asset -> survives what -> requires re-attestation -> veto owner` 四列把“哪些资产可续带、哪些必须重认证”写成可复核矩阵。
 - 本轮新的 source-quality subset 结论：`architecture/14 / 59` 现在更明确把自己标成 `consumer subset / candidate` 页，不代签全局源码质量 verdict；这让 subset 说明第一次拥有了明确 speaking-rights stamp，而不只是靠正文措辞收敛。

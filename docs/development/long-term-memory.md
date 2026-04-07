@@ -8,6 +8,21 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 continue-verdict-law live 记忆：
+  - `07` 默认继续把 `continue / resume` 写成 shared continue verdict，不把它们写成第五种资产或第五条母线
+  - 更稳的默认修法顺序继续是：`先点明 runtime subject / seam -> 再点明 re-attestation -> 最后点明 shared continue verdict`
+- 当前批次继续新增一条 userbook-05-pass-crosswalk live 记忆：
+  - `userbook/05/README` 默认继续把三句用户问法对回三项最小过关条件：`continue qualification`、`pricing-right + truth-surface attestation`、`sole writer + freshness`
+- 当前批次继续新增一条 subset-page-handoff live 记忆：
+  - `architecture/14 / 59` 这类 subset/candidate 页默认继续不只带 badge，还要页内落下 `change-risk record` next hop，至少点明 `<surface> / replay obligation / gap note>`
+- 当前批次继续新增一条 guides-102-stamp-rule live 记忆：
+  - `guides/102` 默认继续强制 subset/candidate 页把降格 stamp 与具体交接动作一起落页；只声明“这里要保守”不再算完成证据纪律
+- 当前批次继续新增一条 source-quality-owner-collapse live 记忆：
+  - `03` 默认继续只保留源码质量 why，不再在不同小节各自重开 quality verdict；凡涉及 shared runtime correctness / continuity budget，统一回 `07`
+  - `03` 若继续谈 later maintainer veto、option value、变更前协议或结构边界，默认路由顺序继续固定成 `07 -> guides/102 -> philosophy/87 -> architecture/README`
+- 当前批次继续新增一条 public-mirror-quality-ladder live 记忆：
+  - `07` 默认继续把公开镜像源码质量顺序写成 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline -> change-risk record`
+  - 这条线默认继续要求结构 why、对象边界与变更前协议一并出现；只写其中一段，默认按“不足以构成稳定源码质量读法”处理
 - 当前批次继续新增一条 prompt-anti-renegotiation live 记忆：
   - `03 / 07` 默认继续把 `lawful forgetting / continuation qualification` 写成 same-world compiler 的时间轴 verdict，而不是第二条 Prompt 主语
   - 凡 consumer path 仍要重谈 `world-definition source`，默认按 `anti-renegotiation` 失败处理
