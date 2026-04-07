@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/userbook/README` 的长期默认 userbook-frontdoor-demotion language 现已继续写死：
+  - `userbook/README` 默认只复述 root / `09` 已承认的用户侧治理顺序
+  - `userbook/README` 默认只翻 `user-visible consumer truth`，不补签 runtime-core 缺口
+  - `userbook/README` 默认把覆盖范围写成对象范围，不写成系统首答权
+  - userbook 根前门的长期默认写法现在统一拒收“第二蓝皮书”式越位
 - `bluebook/README`、`bluebook/06`、`bluebook/philosophy/81` 与 `bluebook/philosophy/84` 的长期默认 prompt-wording-de-enchantment-2 language 现已继续写死：
   - Prompt 线默认继续把 signer-like 的 `Constitution / 法律 / delegated world / truth` 词收回 `order / runtime asset / delegated context / projection`
   - `bluebook/philosophy/84` 默认继续把世界进入模型写成 authority chain 下的可采顺序，而不是抽象立法主语

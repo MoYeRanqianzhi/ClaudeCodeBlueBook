@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/userbook/README.md`，把 user-facing 根前门再压回二跳职责：`userbook/` 现在明确自己只复述 root / `09` 已承认的用户侧治理顺序，只翻 `user-visible consumer truth`，并把“覆盖的 Claude Code 能力”改写成对象范围而不是系统首答权
 - 继续更新 `bluebook/README.md`、`bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`，把 Prompt wording-only 去魅继续往前推：根 README 现在把 `解出 / compile` 改成 authority chain 的锁定与排序语言；`06` 现在把 `world entry / witness / continuation` 从“编译成”改回“排成”协作语法；`81` 现在把 `Prompt Constitution / Prompt 法律 / 审查自己是否还配继续` 收回 `stable-prefix order / runtime order / 暴露 continue qualification 是否仍成立`；`84` 现在把 `世界准入法律 / compiled law / delegated world / 可缓存宪法 / 默认宪法` 继续收回 `世界准入顺序 / compiled order / delegated context / 可缓存稳定前缀 / 默认前缀顺序`
 - 继续更新 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`，把源码质量论文页对目录结构的越位发言权继续收回：`87` 现在不再替整本蓝皮书分配目录 speaking rights，而是只保留三条源码质量式目录自校，具体的 `speaking rights / appeal chain` 统一回 `navigation/04` 与各目录 README
 - 继续更新 `bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md`，把 Prompt 术语继续去魅：`81` 现在把 `request assembly law / object` 收回 `request assembly order / result`，避免把已治理请求写得过像 signer；`06` 现在把 `UI transcript` 从“人类可见真相”降回“人类可见投影”，并把 `display truth / protocol truth / handoff truth` 收回 `display projection / protocol transcript / handoff projection`

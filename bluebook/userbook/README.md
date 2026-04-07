@@ -14,12 +14,12 @@
 
 这里还应再多记一句：
 
-- 用户侧治理首答的完整顺序仍是 `pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`；approval、mode、`/usage`、`/compact` 只是在不同阶段消费这条链。
+- `userbook/` 只复述 root / `09` 已承认的用户侧治理顺序：`pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`；approval、mode、`/usage`、`/compact` 只是在不同阶段消费这条链。
 
 这里还要再多记一句：
 
 - `userbook/` 不宣布新的系统真相，它只把已经承认的对象链、控制面和可见边界翻译成用户侧可操作判断。
-- `userbook/` 默认先签 user-visible consumer truth，不替 `README / 09 / api` 补签 runtime-core 缺口；先忘了这层 `public-evidence ceiling`，就会把 UI 面和状态词误当系统真相。
+- `userbook/` 默认只翻 user-visible consumer truth，不替 `README / 09 / api` 补签 runtime-core 缺口；先忘了这层 `public-evidence ceiling`，就会把 UI 面和状态词误当系统真相。
 - Prompt 也不是单段 `systemPrompt`，而是 multi-surface world-entry object；`CLAUDE.md / hooks / settings` 能影响行为，但不能替 runtime witness 签 continue。
 - `continuity` 在 `userbook/` 里也不是第四条使用主题；它只是同一工作对象在 Prompt `Continuation`、治理 `continuation pricing` 与当前真相收口上的共同时间轴。
 - 所以 user-facing 第一问也不该是“该点哪个入口”，而应先判 `上下文送错 / 扩张或权限判错 / 旧状态污染`；先定题，不先找页。
@@ -94,7 +94,7 @@
 
 ## 这本 Userbook 的边界
 
-这本手册覆盖的是“发布构建中可见或可从源码恢复”的 Claude Code 能力，包括：
+这本手册覆盖的是“发布构建中可见或可从源码恢复”的 Claude Code 能力对象范围，不等于这些页面拥有系统首答权，包括：
 
 - CLI 启动链、REPL、会话恢复、上下文装配。
 - 斜杠命令系统、技能系统、工具系统。
