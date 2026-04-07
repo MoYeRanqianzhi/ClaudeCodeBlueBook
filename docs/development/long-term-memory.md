@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/03` 与 `bluebook/05` 的长期默认 first-principles-frontdoor-gating language 现已继续写死：
+  - `03` 默认继续只把 Prompt 线写成 `world-admission protocol + 四个苏格拉底问题`，把治理线写成 canonical pricing chain + acid test，不再在深段回长第二前门
+  - `05` 默认继续先判 `current admission / implementation closure / consumer subset / product promise`，再允许读者进入接口 taxonomy；`八个接口表面 / 七层 API` 默认继续只做后置索引，不再充当前门首答
+- `bluebook/architecture/52`、`bluebook/architecture/81` 与 `bluebook/philosophy/README`、`bluebook/navigation/02`、`03`、`07`、`bluebook/04` 的长期默认 current-truth-surface-term-alignment language 现已继续写死：
+  - 源码先进性正文默认继续把 `Authoritative Surface / authority surface` 收回 `current-truth surface / current-truth writeback`
+  - 高流量入口默认继续把 `guides/102` 的显示标题统一到 `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+  - 入口页默认继续拒收旧 surface alias、旧 ladder title 与 taxonomy-first wording 再次冒充源码质量线首答
 - `bluebook/security/appendix/README` 与 `bluebook/security/source-notes/README` 的长期默认 security-index-shell-thinning language 现已继续写死：
   - `appendix/README` 默认继续只保留少数速查对象簇与代表入口，不再平铺 200+ 条 route map
   - `source-notes/README` 默认继续只保留少数机制簇与代表入口，不再逐条复写 75 篇源码剖面

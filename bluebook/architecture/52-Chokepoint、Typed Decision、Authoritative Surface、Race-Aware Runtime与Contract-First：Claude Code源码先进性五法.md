@@ -1,10 +1,10 @@
-# Chokepoint、Typed Decision、Authoritative Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法
+# Chokepoint、Typed Decision、Current-Truth Surface、Race-Aware Runtime与Contract-First：Claude Code源码先进性五法
 
 这一章回答五个问题：
 
 1. 为什么 Claude Code 的源码先进性不该被理解成“模块多、功能多”，而该被理解成对不变量的治理方式。
 2. 为什么 `query.ts` 这样的大文件并不自动等于坏设计，关键要看它是不是 control-plane chokepoint。
-3. 为什么 typed decision、authoritative surface 与 race-aware runtime 才是 agent 系统最值钱的工程能力。
+3. 为什么 typed decision、current-truth surface 与 race-aware runtime 才是 agent 系统最值钱的工程能力。
 4. 为什么工具系统的 contract-first 分层，比“又加了多少工具”更接近长期优势。
 5. 这些模式为什么共同解释了 Claude Code 为什么既复杂，又没有完全失控。
 
@@ -44,7 +44,7 @@ Claude Code 这份源码最先进的地方，不是：
 
 1. chokepoint 控制面
 2. typed decision / typed transition
-3. authoritative surface
+3. current-truth surface
 4. race-aware runtime
 5. contract-first tooling
 
@@ -166,11 +166,11 @@ Claude Code 很少满足于：
 
 不是函数个数。
 
-## 4. 第三法：Authoritative Surface
+## 4. 第三法：Current-Truth Surface
 
 Claude Code 很多看似“只是个 util”的文件，实际上承担的是：
 
-- authoritative surface
+- current-truth surface
 
 最典型的就是 `normalizeMessagesForAPI()`。
 
@@ -187,7 +187,7 @@ Claude Code 很多看似“只是个 util”的文件，实际上承担的是：
 
 - 任何准备进 API 的消息，都必须先过这一层防腐线
 
-同理，`claude.ts` 也承担请求出口上的 authoritative surface 角色：
+同理，`claude.ts` 也承担请求出口上的 current-truth surface 角色：
 
 - system prompt blocks 定稿
 - cache_control 附着
@@ -204,9 +204,9 @@ Claude Code 很多看似“只是个 util”的文件，实际上承担的是：
 - 某个宿主能过，另一个宿主 400
 - 某个恢复链留下了只有局部路径才懂的脏数据
 
-authoritative surface 的本质就是：
+current-truth surface 的本质就是：
 
-- 减少协议入口数量
+- 把 current-truth writeback 限定在唯一协议入口
 
 这比“多几个 helper”高级得多。
 
@@ -335,7 +335,7 @@ Claude Code 显然把后者当成本体问题在写。
 
 1. `chokepoint` 治理优先级顺序。
 2. `typed transition` 治理状态空间。
-3. `authoritative surface` 治理协议入口。
+3. `current-truth surface` 治理协议入口。
 4. `race-aware runtime` 治理异步真实世界。
 5. `contract-first` 治理跨层一致性。
 
@@ -344,10 +344,10 @@ Claude Code 显然把后者当成本体问题在写。
 1. 每一法都必须回答自己在防哪类 `failure object`，而不只是在提供抽象便利。
 2. `typed decision / transition`
    - 不只应覆盖继续与迁移，也应覆盖 `deny / ask / rollback / cleanup / halt / step-up` 这类失败判词。
-3. `authoritative surface`
-   - 不只是谁能发布 happy-path truth，也是谁能撤销、清理、宣布不可恢复。
+3. `current-truth surface`
+   - 不只是谁能发布 happy-path truth，也是谁能撤销、清理、宣布不可恢复并执行 current-truth writeback。
 4. `race-aware runtime`
-   - 完成条件不是“少出 race”，而是 stale actor 失败时只能降级或 cleanup，不能复活旧 authority。
+   - 完成条件不是“少出 race”，而是 stale actor 失败时只能降级或 cleanup，不能复活旧 current-truth writeback 通道。
 5. `contract-first tooling`
    - 必须交代 failure semantics 如何跨 model / UI / search / host 保持同题不同投影，而不是各层各说各话。
 
@@ -366,4 +366,4 @@ Claude Code 显然把后者当成本体问题在写。
 
 ## 8. 一句话总结
 
-Claude Code 的源码先进性，本质上不是模块堆叠，而是它反复用 chokepoint、typed transition、authoritative surface、race-aware runtime 与 contract-first 五种模式，把 agent 系统最危险的不变量压回少数可推理边界。
+Claude Code 的源码先进性，本质上不是模块堆叠，而是它反复用 chokepoint、typed transition、current-truth surface、race-aware runtime 与 contract-first 五种模式，把 agent 系统最危险的不变量压回少数可推理边界。
