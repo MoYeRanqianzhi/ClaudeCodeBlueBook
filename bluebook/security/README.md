@@ -20,7 +20,7 @@
 - `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 不是两条结果词入口的拼接，而是同一条治理收费链。
 - 完成、终局、遗忘、清理与家族级 cleanup 都各有 signer；任何弱层都不配替强层宣布“已经没事了”。
 - 宿主不该自己从事件流回放拼当前真相；更稳的做法是消费 runtime 已外化的 truth-surface / decision window / cleanup verdict。
-- 任何 user-facing 状态、诊断、压缩或导出入口，都只配读取已外化的 truth-surface、decision window 与 cleanup verdict，不配定义治理真相、继续资格或恢复资格。
+- 任何 user-facing 状态、诊断、压缩或导出入口，都只配读取已外化的 truth-surface、decision window 与 cleanup verdict，不配定义治理真相或继续资格；用户侧恢复读法统一回 `risk/`。
 - `shared_consumer_surface` 只表示不同 reader 是否仍在只读消费同一个 verdict object，不表示谁拥有 current truth；projection 字段层继续回 `appendix/87`，reprojection 分层继续回 `appendix/159`。
 
 如果把安全入口判定继续压成最短公式，也只剩三条：

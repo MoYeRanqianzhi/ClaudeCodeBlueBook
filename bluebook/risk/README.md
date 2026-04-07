@@ -31,7 +31,7 @@
 2. `decision window -> continuation pricing`
    - 当前误伤、恢复与入口差异到底落在用户侧哪一层，以及这次继续是否仍值得续费
 3. `durable-transient cleanup`
-   - 治理 verdict 到这里先收口；若要恢复，再由 `signer + evidence + reopen` 凭证据重建执行连续性，并把旧的 transient authority 清算干净
+   - 治理 verdict 到这里先收口；若要恢复，再由 `signer + evidence + reopen` 凭证据重建执行连续性
 
 如果继续把风控入口判定也压成和 `security / userbook/05` 共用的三段顺序，也只该再补一句：
 
@@ -56,7 +56,7 @@
 - `governance key` 先决定谁有资格改边界、谁能签发恢复，再谈误伤、阻断、连续性成本与入口差异
 
 因此风控入口说明也不该自己回放事件去猜当前真相，而应沿 signer、证据和 runtime 已外化的 truth-surface / decision window / cleanup verdict 去回读。
-- 任何用户侧状态、诊断、压缩或导出入口都只配读取已外化 verdict；恢复是否成立只沿 `signer + evidence + reopen` 判断，并且必须与 `continuation pricing / cleanup` 的既有结论对齐。
+- 恢复是否成立只沿 `signer + evidence + reopen` 判断，并且必须与 `continuation pricing / cleanup` 的既有结论对齐；通用弱读回面总声明统一回 `10`。
 - `product promise readback` 也是弱读回面：它只对账已外化 verdict，不回放事件，不改判治理真相，也不越级宣布恢复成立。
 
 更稳的 first reject signal 也应先记三条：

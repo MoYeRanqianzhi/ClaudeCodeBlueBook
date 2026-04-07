@@ -38,7 +38,7 @@ Prompt 问题若还在混，也只先拆三种缺口：
 
 如果一个跨目录问题还回答不出自己缺的是公式、顺序还是证据层，它就还没有真正进入 `navigation/` 的工作对象。
 如果 `navigation/` 开始替目录改判 speaking rights，它也就不再是在路由，而是在制造第二套入口主语；later maintainer 的局部可反对性会先被 route words 吃掉。
-如果一个 route 句子开始把 `security vs token`、`continuity / memory / resume / handoff` 写成并列主题，而不是写成同一条治理或时间轴问题，它也已经在长出 `route-law inflation`。
+如果一个 route 句子开始把 `security vs token`、`continuity / memory / resume / handoff` 写成并列主题，而不是写成同一条治理或时间轴问题，它也已经在长出 `route-law inflation`；这类时间轴争议默认先回 `06`。
 
 跨目录反查 continuity 时，这里也只做三跳路由：
 
@@ -85,9 +85,7 @@ Prompt 问题若还在混，也只先拆三种缺口：
   失稳前追问，先暴露第一条反证信号与 first reject path。
 - `41`
   第一性原理收束，先判断高阶总结是否已经压回不可约约束。
-- 专题侧门只在主线已判清后开放：Prompt 残留线回答“出监或稳态后哪些 reopen 条件仍必须保留”，结构 `83 / 92` 回答“固定纠偏模板与精修模板”，都不代替 `09 / 05 / 15 / 41`。
-- 如果你已经确认 Prompt 主链成立，只剩“released / steady 之后怎样保留 residual reopen gate / threshold”，从 `66 -> 69 -> 72 -> 78 -> 47 -> 50` 进入。
-- Prompt 尾段只承接 residual reopen；治理 `67`（release）与结构 `71`（steady-state）只可互参，不可互借主语。
+- 专题侧门只在主线已判清后开放：若你缺的是 Prompt residual reopen / threshold，再按 Prompt owner page 的侧门继续，不在这里第二次写尾段目录。
 - 如果你已经确认结构真相面的问题不在入口公式，而在“怎样把假 current-truth surface / merge / fail-closed / liability 压回固定顺序”，从 `41 -> 102 -> guides/83 -> playbooks/61 -> casebooks/54` 进入。
 - 如果你已经进入 refinement execution，且缺的是结构精修模板而不是第一性原理，从 `41 -> 102 -> guides/92 -> playbooks/67 -> casebooks/63` 进入。
 - 如果你在判断“下一层该去哪个目录”，也先问：

@@ -2,6 +2,11 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 prompt-owner-singularity-and-governance-boundary-trim 深化动作：已继续更新 `03`、`philosophy/README`、`navigation/README`、`security/README` 与 `risk/README`。新的结论是：当前最值当的 residual 已不再是“是否要补新入口”，而是继续减少高流量页里 owner 级 Prompt 首答，并继续把 `security / risk` 的跨界句压回各自 speaking right。
+- 本轮新的 Prompt 结论：`03` 现在更明确只保留 Prompt 的 why，不再在本章重列完整 Prompt 公式；`philosophy/README` 现在更明确把 Prompt 前门压成 `same-world compiler` 的 consumer-facing hook，把 same-world witness 与实现顺序继续送回 `51`；`navigation/README` 现在也不再在跨目录入口里保留 Prompt 尾段目录，而是把 residual reopen / threshold 继续视作 owner page 的侧门问题。Prompt owner split 因此进一步稳定为：`84 = 顶层定义`，`51 = witness / implementation`，`06 = 目录仲裁与时间轴仲裁`。
+- 本轮新的治理/风控结论：`security` 现在更明确只保留治理 signer / ledger / cleanup authority，不再带出“恢复资格”读法；`risk` 现在更明确只保留 `signer + evidence + reopen` 这一组用户侧恢复资格，不再重复 `10` 的通用弱读回面总声明。这意味着治理线现在更清楚地稳定成：`10 = 通用 projection/readback 总则`，`security = 机制 speaking right`，`risk = 用户侧恢复与 promise readback`。
+- 本轮新的源码质量前门结论：并行 agent 继续确认 `guides/102` 已拥有 canonical ladder、降格规则与 reject trio 的定义权。当前更稳的 frontdoor route 是 `README 定题 -> 102 定 ladder -> 03 定 why -> architecture/README 定对象 -> 06 自校`。这意味着源码质量线后续若继续瘦身，应优先清 `03` 里的第二个 `102` 倾向，其次再清 `architecture/README` 和根 `README` 里的 ladder residual。
+- 本轮根仓库同步检查结果：本轮起手 `fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 再次全部成功，根仓继续保持 `main...origin/main` 健康态。
 - 本轮 userbook-governance-owner-leak-trim 深化动作：已继续更新 `userbook/05-控制面深挖/README`、`05-06` 与 `userbook/02-能力地图/01-运行时主链/05`。新的结论是：当前更高价值的 residual 已从顶层入口转到 userbook 高流量页里的治理 owner 泄漏。更稳的改法不是删掉治理对象，而是把机制话语降成用户动作句：`若你在用 X 判断 Y，回 Z`，或 `先 A，再 B，不要用 X 直接下结论`。
 - 本轮新的治理 speaking-right 结论：`10` 继续独占通用弱读回面总清单，`security` 继续独占 signer ladder / ledger / cleanup authority，`risk` 继续独占用户侧 `product promise readback / reopen qualification / evidence binding`。`userbook` 这一层现在更明确只翻译 first reject path、route 与下一步动作，不再自己重讲 signer / verdict / reopen。
 - 本轮新的 `05/README` 结论：`05` 现在更明确只回答“哪条控制面现在在说真话”和“你该回哪一层”，不再在高流量页里展开 `谁签字 / 谁记账 / 谁负责恢复 / 能不能 reopen`。这些问题一旦出现，就直接分流回 `security / risk / playbooks`。

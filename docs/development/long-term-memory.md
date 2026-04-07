@@ -8,6 +8,20 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/03-设计哲学`、`bluebook/philosophy/README`、`bluebook/navigation/README`、`bluebook/security/README` 与 `bluebook/risk/README` 的长期默认 prompt-owner-singularity-and-governance-boundary language 现已继续写死：
+  - `03` 默认继续只保留 Prompt 的 why / first-principles / Socratic judgment，不再在本章重列完整 Prompt 公式
+  - `philosophy/README` 默认继续把 Prompt 前门压成 `same-world compiler` 的 consumer-facing hook；same-world witness 与实现顺序默认继续只回 `51`
+  - `navigation/README` 默认继续只做 triage；凡是 continuity / reopen / threshold 这类时间轴争议，默认先回 `06`
+  - `security` 默认继续只保留治理 signer / ledger / cleanup authority，不再带出用户侧恢复读法
+  - `risk` 默认继续只保留 `product promise readback / reopen qualification / evidence binding` 与 `signer + evidence + reopen`，不再重复 `10` 的通用弱读回面总声明
+- 并行 agent 吸收后的长期默认 prompt-residual-aftercare language 现已继续写死：
+  - Prompt residual 仍主要集中在高流量 why/route 页，而不是 owner page；默认优先级继续是 `03 -> philosophy/README -> navigation/README`
+  - 任何高流量页若再次同时出现完整 Prompt 公式、same-world witness order 与目录仲裁，默认拆回 `84 / 51 / 06`
+- 并行 agent 吸收后的长期默认 source-quality-frontdoor-route language 现已继续写死：
+  - 源码质量线默认 route 继续固定为 `README 定题 -> guides/102 定 ladder -> 03 定 why -> architecture/README 定对象 -> 06 自校`
+  - 可压成 `题 -> 梯 -> 义 -> 物 -> 校`
+  - 后续若继续瘦身源码质量前门，默认优先级继续是 `03 -> architecture/README -> bluebook/README -> philosophy/README`
+- 最新根仓同步记忆（2026-04-08，本轮末段）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
 - `bluebook/userbook/05-控制面深挖/README`、`bluebook/userbook/05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md` 与 `bluebook/userbook/02-能力地图/01-运行时主链/05-压缩、恢复与记忆：如何维持可继续工作的现场.md` 的长期默认 userbook-governance-owner-trim language 现已继续写死：
   - `05/README` 默认继续只保留控制面判断、first reject path 与 route，不再自己首答 `谁签字 / 谁记账 / 谁负责恢复 / 能不能 reopen`
   - `05-06` 默认继续只把 `/status / /doctor / /usage` 写成 runtime projection；若用户已经在判恢复、cleanup 或 reopen，默认直接回 `10 / risk / 09`
