@@ -12,6 +12,10 @@
 
 `把 repo 里现成的 reintegration decision / reprojection decision 正例，与 cleanup 线当前仍缺的 reprojection grammar，压成一张矩阵。`
 
+这里也还要再多记一句：
+
+- reintegrated current truth 的 owner 仍是 `security/README` 与 `api/85 / api/94`；这一页只解释 reader-specific reprojection grammar，不代签 `shared_consumer_surface` 或新的 current truth。
+
 ## 2. 重新并入治理与重新投影治理分层矩阵
 
 | line | reintegration decision | reprojection decision | positive control | cleanup reprojection gap | governor question | 关键证据 |
@@ -29,7 +33,8 @@
 
 1. 这里回答的只是对象是否重新回到当前世界，还是已经回答不同 reader 现在该看到什么版本的当前真相
 2. 当前看到的是 reintegrated state，还是已经看到专门为某个 surface 重新压缩过的 projection
-3. 如果同一 current truth 在 control/status/notification/dialog surface 上使用不同句法，那么谁配决定这些词法强度与沉默策略
+3. 这句话消费的还是同一个 `shared_consumer_surface`，还是已经偷偷为某个 reader 重造了第二份 verdict object
+4. 如果同一 current truth 在 control/status/notification/dialog surface 上使用不同句法，那么谁配决定这些词法强度与沉默策略
 
 ## 4. 最常见的五类误读
 
@@ -55,3 +60,11 @@
 cleanup reintegration governance 才不会继续停留在：
 
 `它能说对象已经回来，却没人正式决定哪些读者现在该看到什么版本的当前真相。`
+
+更稳地说，reprojection grammar 保护的不是：
+
+`reintegrated truth 回来以后每个 reader 自己讲自己的故事，`
+
+而是：
+
+`同一个 shared verdict object 先成立，再按 reader 宽度去投影。`

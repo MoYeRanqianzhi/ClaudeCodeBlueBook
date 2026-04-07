@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/security/appendix/87` 与 `bluebook/security/appendix/159` 的长期默认 governance-appendix-owner-demotion language 现已继续写死：
+  - `appendix/87` 默认继续只给 projection consumer 提供诚实字段，不代签 `settled_price`、`shared_consumer_surface` 或 current truth
+  - `appendix/159` 默认继续只解释 reader-specific reprojection grammar，不代签 reintegrated truth owner
+  - 治理附录页默认继续拒收“谁拥有 current truth / 谁在定义 verdict object”这类 owner 句，相关主语默认继续回 `security/README` 与 `api/85 / api/94`
 - `bluebook/api/30`、`bluebook/api/README` 与 `bluebook/api/46-48` 的长期默认 api-map-owner-split language 现已继续写死：
   - 地图页默认继续只负责把 later maintainer 拉回 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
   - 地图页默认继续拒收把自己写成“源码真相梯度 / 第二条梯度公式”的 owner 句
