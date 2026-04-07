@@ -3,7 +3,7 @@
 这篇只做一件事：把苏格拉底审读压成失稳前问题，而不是故障后诊断。
 
 - 核心问题不是“事后怎么解释”，而是“在再次出问题前，怎样反问这套制度是否已经埋下断裂点”。
-- Prompt 效力、安全/省 token 与源码先进性在这里都只是入口名；真正要追问的始终是 `same-world test`、`decision window` 与 `present-truth protection` 有没有在前门失真。
+- 请求装配、统一定价治理与当前真相保护在这里都只是 route shorthand；真正要追问的始终是 `same-world test`、`decision window` 与 `present-truth protection` 有没有在前门失真。
 
 这里还应再多记一句：
 

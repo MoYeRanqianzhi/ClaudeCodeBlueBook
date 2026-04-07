@@ -81,7 +81,7 @@ Prompt 线最短的 reject trio 也只认：
 ## 什么时候进来
 
 - 当你已经知道功能和机制存在，但还没回答“为什么必须这样设计”。
-- 当你想把 `world entry / request assembly / six-stage assembly chain`、安全/省 token、源码先进性，从做法解释压回不可约判断。
+- 当你想把 `world entry / request assembly / six-stage assembly chain`、统一定价治理、当前真相保护，从做法解释压回不可约判断。
 - 当你需要区分什么是实现、什么是约束、什么是迁移到别的 runtime 后仍成立的原则。
 - 当你已经完成“模仿对象校正”和“失稳前追问”，准备把它们继续压成第一性原理。
 

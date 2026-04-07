@@ -2,6 +2,8 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 route-shorthand-demotion 深化动作: 已继续更新 `bluebook/philosophy/README.md`、`bluebook/navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md` 与 `bluebook/navigation/41-机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理.md`。新的结论是：Prompt / 治理 / 源码质量线当前在高流量入口里最容易留下的 residual，不再是 canonical chain 本身，而是 route 层会顺手用 `Prompt 效力 / 安全省 token / 源码先进性` 这些结果词组织读者。现在这三页开始更一致地把入口 shorthand 收回 `请求装配 / 统一定价治理 / 当前真相保护`。
+- 本轮新的设计内涵结论: 第一性原理层最怕的不是术语不够多，而是入口层先用结果词分类；一旦读者先按“效果 / 成本 / 先进性”进门，后面的 canonical order 就会被错读成对既有结论的补充说明。
 - 本轮 directory-constitution-demotion-2 深化动作: 已继续更新 `bluebook/navigation/04-目录职责、规范入口与兼容别名页说明.md`、`bluebook/navigation/README.md` 与 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`。新的结论是：目录宪法 residual 当前最危险的形式，不再是某个单句越位，而是 route 页和论文页会顺手把“去哪里看”写成“谁负责什么”。现在这三页开始更一致地把这类句子收回 next-hop、自我约束与一句提醒。
 - 本轮新的目录结构结论: later maintainer 真正需要的是“这个问题先跳哪层”，而不是 route 页替所有目录预先发职责；一旦 `navigation/04`、`navigation/README` 或 `87` 再把目录分工正文化，bluebook 就会重新长出第二套目录宪法。
 - 本轮 governance-bridge-demotion 深化动作: 已继续更新 `bluebook/philosophy/22-安全、成本与体验必须共用预算器.md`、`bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md` 与 `bluebook/security/README.md`。新的结论是：治理线当前高流量 residual 的核心，不再是 canonical chain 公式本身，而是入口层还在拿 `安全 / 成本 / 体验` 这种 audience bridge 主语代替治理收费链。现在这三页开始更一致地把这组 bridge wording 收回 `扩张定价 -> 治理收费链 -> 外部投影`。

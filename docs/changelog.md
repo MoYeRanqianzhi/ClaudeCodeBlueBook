@@ -2,6 +2,7 @@
 
 ## 2026-04-07
 
+- 继续更新 `bluebook/philosophy/README.md`、`bluebook/navigation/15-苏格拉底审读导航：Prompt魔力、安全定价与源码先进性的自我校准.md` 与 `bluebook/navigation/41-机制哲学导航：Prompt魔力、统一定价治理与故障模型编码如何回到第一性原理.md`，把高流量入口句里残留的 `Prompt 效力 / 安全省 token / 源码先进性` 结果词 shorthand 继续压回 `请求装配 / 统一定价治理 / 当前真相保护` 三条 canonical 母线，避免 route 层先用结果词组织读者，再把第一性原理推迟到深页
 - 继续更新 `bluebook/navigation/04-目录职责、规范入口与兼容别名页说明.md`、`bluebook/navigation/README.md` 与 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md`，把目录宪法 residual 继续压回 next-hop 与免责声明：`04` 现在把整段“各目录职责”改成 question-based next-hop，`navigation/README` 现在只约束自己不越位，`87` 现在不再正文式重写目录分工链，只保留“用证据梯度审目录混层”的提醒
 - 继续更新 `bluebook/philosophy/22-安全、成本与体验必须共用预算器.md`、`bluebook/navigation/05-设计母线导航：工作语法、反扩张与可演化内核.md` 与 `bluebook/security/README.md`，把治理高流量入口里仍把 canonical pricing chain 写成 `安全 / 成本 / 体验` 三项目标的 visible framing 继续压回 `扩张定价 -> 治理收费链 -> 外部投影`：`22` 现在把 H1、章节名与总结句统一改成“投影不是治理主语”，`05` 与 `security/README` 也同步改掉旧链接标签
 - 继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`、`bluebook/philosophy/81-Prompt的魔力来自把提示词写成可缓存、可转写、可继续的编译链.md` 与 `bluebook/philosophy/84-真正有魔力的Prompt，会先规定世界如何合法进入模型.md`，把 Prompt 顶层前门与机制页里残留的 `更像专家 / 更会说话 / Prompt 强度 / winner / 争主权` 继续统一收回 `文风更顺滑 / Prompt 效力 / world-definition source / 首答来源 / 改判权`，避免 high-traffic 深页在反例句里继续借用 enchantment 或 signer 词感

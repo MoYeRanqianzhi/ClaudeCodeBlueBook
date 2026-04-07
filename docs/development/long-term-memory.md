@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/philosophy/README`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 route-shorthand-demotion language 现已继续写死：
+  - 高流量入口句默认继续把 `Prompt 效力 / 安全省 token / 源码先进性` 收回 `请求装配 / 统一定价治理 / 当前真相保护`
+  - 这三页默认统一拒收 route 层再次用结果词主语组织三条 canonical 母线
 - `bluebook/navigation/04`、`bluebook/navigation/README` 与 `bluebook/philosophy/87` 的长期默认 directory-constitution-demotion-2 language 现已继续写死：
   - `navigation/04` 默认继续只写 question-based next-hop，不再正文式分配各目录职责
   - `navigation/README` 默认继续只约束 `navigation/` 自己不越位，不再对“某个 README”立通用法
