@@ -2,6 +2,11 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮 frontdoor-route-only-owner-trim 深化动作：已继续更新 `bluebook/README`、`philosophy/README`、`userbook/README`、`risk/README`、`03` 与 `06`。新的结论是：当前最高价值的目录优化不再是补新页，而是继续把高流量前门里的 canonical chain、failure ladder、weak-readback inventory、signer/reopen 机制句与 full ladder 退回 owner 页。更稳的默认写法是：root 只保留 `09 -> 84 / 10 / 102` 的 first-hop；`philosophy/README` 只保留 why + `84 -> 51`、`102 -> 86/87 -> architecture` 这两组 route；`userbook` 只保留问题分型与二跳；`risk` 只保留 `product promise / reopen / evidence` 的用户侧对象；`03` 只保留 why；`06` 只保留“我有没有越位复述 owner 术语”的自校。
+- 本轮新的 Prompt 结论：根 `README` 不应再把 `03 / 06` 写成第一次首答，而应先把 Prompt 线送到 `84`；`philosophy/README` 也不应再保留 `81 / 63 / 33 / 57 / 78` 这组 mini Prompt route。更稳的默认语法继续是：`84` 拿 first answer，`51` 拿 how/witness，`03` 拿 why，`06` 拿自校。
+- 本轮新的治理/风控结论：root 不再自留治理 canonical chain 或 failure ladder，`10` 继续独占治理入口卡；`userbook` 不再维护弱读回面 inventory 或 token why，治理速记统一回 `10`，控制面顺序统一回 `05`；`risk` 不再把 `product promise / reopen / evidence` 映射回机制链段或 signer 标准，恢复与 reopen 的机制口径继续只回 `security / playbooks`。
+- 本轮新的源码质量结论：`03` 顶部不再把源码质量写成缩水 ladder，而只保留“为什么不能先看目录美学”的 why 句；`06` 顶部也不再自带 Prompt 最小拒错顺序，而改成“是否又把 `84 / 51` 压成第二前门”的自校问句。当前更稳的源码质量默认 route 因而继续固定成：`102 定证据顺序 -> 86/87 定 why/门槛 -> architecture 定 object/seam -> 06 定自校`。
+- 本轮根仓库同步检查结果：本轮起手 `fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 继续全部成功，根仓继续保持 `main...origin/main` 健康态。
 - 本轮 source-quality-self-audit-demotion 深化动作：已继续更新 `06` 与 `03`。新的结论是：源码质量线在 `06` 最稳的角色不是再发一条“简化 ladder”，而是只问“我是否仍沿 `102 -> 87` 的 owner 顺序审读 current-truth protection”。`03` 里与源码质量相关的去魅句，也更稳地退回成“先去 `102` 判证据上限，再去 `87` 判质量门槛”。
 - 本轮 source-quality-frontdoor-route-tightening 深化动作：已继续更新 `bluebook/README`、`architecture/README` 与 `06`。新的结论是：源码质量前门当前最值当的 residual，不是再补新卡，而是继续把 canonical ladder 从高流量入口页里收走，让 `README` 只定题，`102` 只定梯，`03` 只定 why，`architecture/README` 只定对象，`06` 只定自校。
 - 本轮新的源码质量前门结论：`bluebook/README` 现在不再第二次展开 `public-evidence ceiling` 与 ladder，而是直接把这组判断送回 `guides/102`；`architecture/README` 现在不再自己携带公开镜像证据梯度，而只承接 `authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer`；`06` 则把源码质量最小拒错顺序收回 `surface ownership -> writeback split -> freshness gate -> later-maintainer rejectability` 的自校框架，并明确 canonical ladder/evidence ceiling 统一回 `102`。

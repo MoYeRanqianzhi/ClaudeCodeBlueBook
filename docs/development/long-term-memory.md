@@ -8,6 +8,17 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README`、`bluebook/philosophy/README`、`bluebook/userbook/README`、`bluebook/risk/README`、`bluebook/03-设计哲学` 与 `bluebook/06-第一性原理与苏格拉底反思` 的长期默认 frontdoor-route-only / why-only / self-audit-only language 现已继续写死：
+  - 根 `README` 默认继续把第一次进入写成 `09 -> 84 / 10 / 102`；Prompt / 治理 / 当前真相三线只保留“先回 owner，再回 why / self-audit”的 route，不再自留 canonical chain、failure ladder、witness heuristic 或治理入口卡
+  - `philosophy/README` 默认继续把 Prompt 压成 `84 -> 51` 的最短 first-hop，把源码质量压成 `102 -> 86/87 -> architecture` 的 why-route，不再另立 `future maintainer` 并行前门，也不再在 README 保留 Prompt 下游分流库存
+  - `userbook/README` 默认继续只保留用户动作、问题分型与二跳；弱读回面 inventory 统一回 `10`，安全 / 省 token 的 why 统一回 `security/README`
+  - `risk/README` 默认继续只保留 `product promise readback / reopen qualification / evidence binding` 这组三个用户侧对象；任何机制顺序、signer 标准、reopen 成立条件都默认改路由回 `10 / security / playbooks`
+  - `03` 默认继续只保留 why；Prompt 线只保留一个苏格拉底问题，源码质量线只保留“为什么不能先看目录美学”这类 why 句，不再出现 full ladder、object/seam 清单或 `87` 的 quality verdict bundle
+  - `06` 默认继续只保留总控自校；Prompt 线默认继续只问“我有没有越位复述 `84 / 51`”，不再自带 Prompt 最小拒错顺序
+- 并行 agent 吸收后的长期默认 frontdoor-owner-audit rule 现已继续写死：
+  - 高流量前门若再次出现 canonical chain、witness order、weak-readback inventory、signer/reopen 机制口径、full ladder 或 object/seam 清单，默认按越位候选处理
+  - 更稳的默认修法顺序继续是：`删具体机制名词 -> 缩成 route 句 -> 把 owner 还给 84 / 51 / 10 / security / risk / 102 / 87 / architecture`
+- 最新根仓同步记忆（2026-04-08，本轮当前批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均再次成功，根仓状态仍为 `main...origin/main`。
 - `bluebook/06-第一性原理与苏格拉底反思` 与 `bluebook/03-设计哲学` 的长期默认 source-quality-self-audit language 现已继续写死：
   - `06` 的源码质量线默认继续只保留 why 句和自校问句；凡涉及 canonical ladder、降格规则与证据签字，一律回 `102/87`
   - `03` 的源码质量去魅句默认继续写成 `102 -> 87` 的 owner 顺序，不再在本章第二次重列证据梯度

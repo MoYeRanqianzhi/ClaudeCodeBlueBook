@@ -2,49 +2,37 @@
 
 `risk/` 只看统一治理收费链怎样在用户侧读回成 `product promise readback / reopen qualification / evidence binding`，不把风控写成账号、入口、恢复或地区场景的并列主题。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶入口链路，不要急着把风控页读成“另一套安全规则”。
-`risk/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这是误伤、恢复、reopen 还是入口差异哪种用户侧工作对象，再判它卡在 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 的哪一段；只有当 cleanup 已经完成、问题转入恢复签发时，才另判 `signer + evidence + reopen`，最后才选入口摘要、playbook 或深页。
+`risk/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这是误伤、恢复、reopen 还是入口差异哪种用户侧工作对象，再决定你主要在读 `product promise readback`、`reopen qualification` 还是 `evidence binding`；若缺治理机制顺序，先回 `09 / 10 / security`，最后才选入口摘要、playbook 或深页。
 
 还要先记一句：
 
-- 本目录不是在补充另一套规则堆，而是在看同一条治理收费链怎样在用户侧读回成 `product promise readback / reopen qualification / evidence binding`；想先抓高阶判断，先回 [../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md](../09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md) 的第二张图与 [../philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md](../philosophy/85-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E6%B2%BB%E7%90%86%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%9B%B4%E4%BC%9A%E6%8B%A6%E6%88%AA%EF%BC%8C%E8%80%8C%E6%98%AF%E6%9B%B4%E4%BC%9A%E4%B8%BA%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7.md)，再进入风控专题看误伤与恢复怎样落到用户侧
+- 本目录不是在补充另一套规则堆，而是在看同一条治理收费链怎样被用户侧读成 `product promise readback / reopen qualification / evidence binding`；想先抓高阶判断，先回 `09 / 10 / security`，再回本目录看误伤、恢复与入口差异怎样落到用户侧。
 
 这里还应再多记一句：
 
-- `continuity` 在风控目录里也不是第四类用户风险主题；它只是 `continuation pricing`、恢复证据与 `reopen qualification` 在用户侧的共同时间轴。
+- `continuity` 在风控目录里也不是第四类用户风险主题；它只是 `reopen qualification` 与恢复证据在时间轴上的联合读法。
 
 如果只先记风控入口判定的一句话，也只记这句：
 
-- 风控不是第二套安全规则；它只读取同一条 canonical governance chain 在用户侧留下的三类对象：`product promise readback`、`reopen qualification` 与 `evidence binding`；治理主键、truth-surface、typed ask、decision window 与 cleanup 仍以 root / `09` / `security` 已承认的顺序为准。
+- 风控不是第二套安全规则；它只解释 `product promise readback / reopen qualification / evidence binding` 这三类用户侧对象。治理机制 speaking right 仍回 `09 / 10 / security`。
 
-如果你只缺治理收费链的一屏速记，而不是用户侧读回对象的差异，先回 [../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；`risk/` 只保留 `product promise readback / reopen qualification / evidence binding` 的用户侧翻译。
+如果你只缺治理收费链的一屏速记，而不是用户侧读回对象的差异，先回 [../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；`risk/` 只保留用户侧读法与恢复资格。
 
-这里还应再多记一句：
+如果把风控入口判定压成最短顺序，也只剩三步：
 
-- 这组三个用户侧对象不是并列主题桶，而是同一条 canonical governance chain 的读回切面：`product promise readback` 对应 `decision window` 暴露的当前 admission，`reopen qualification` 对应 `continuation pricing` 之后的继续资格，`evidence binding` 对应 `durable-transient cleanup` 后仍被承认的 signer / liability 证据绑定。
-
-因此风控不再按账号、地区、入口或恢复分题；这些都只是 `product promise readback / reopen qualification / evidence binding` 在不同场景里的落点，不是新的治理主语。
-
-如果把风控入口判定继续压成最短公式，也只剩三条：
-
-1. `governance key`
-   - 谁配签发恢复、谁配冻结边界
-2. `decision window -> continuation pricing`
-   - 当前误伤、恢复与入口差异到底落在用户侧哪一层，以及这次继续是否仍值得续费
-3. `durable-transient cleanup`
-   - 治理 verdict 到这里先收口；若要恢复，再由 `signer + evidence + reopen` 凭证据重建执行连续性
-
-如果继续把风控入口判定也压成和 `security / userbook/05` 共用的三段顺序，也只该再补一句：
-
-- 先判 `governance key / truth-surface`
-- 再判 `typed ask / visible-set / sandbox`
-- 最后才判 `decision window / continuation pricing / durable-transient cleanup`；若要恢复，再另判 `reopen qualification`
+1. `product promise readback`
+   - 先确认自己看到的是哪类用户侧承诺与读回
+2. `reopen qualification`
+   - 再确认当前问题是否已经进入恢复 / reopen 资格判断
+3. `evidence binding`
+   - 最后才看自己在用什么证据申诉、恢复或追责
 
 更硬一点说，`risk/` 在目录里的发言权也只该剩三条：
 
 1. `product promise readback`
-   - 用户侧当前读到的 admission、capability 与 continuity claim 是否仍与 runtime truth chain 对账。
+   - 用户侧当前读到的 admission、capability 与 continuity claim，究竟在读什么样的 runtime readback。
 2. `reopen qualification`
-   - cleanup 之后，哪些 signer、evidence 与 liability 配重新签发执行连续性。
+   - cleanup 之后，用户侧为什么会把某件事读成“还能不能重开”。
 3. `no mechanism override`
    - `risk/` 只解释用户侧读回与恢复资格，不重判治理主键、宿主状态机或 signer ladder 机制本身。
 
@@ -53,10 +41,10 @@
 
 这里也要先记一句顺序：
 
-- `governance key` 先决定谁有资格改边界、谁能签发恢复，再谈误伤、阻断、连续性成本与入口差异
+- `risk/` 先读用户侧对象，再决定自己该回 `security`、`10` 还是 `playbooks`；不在入口页自己重放治理链
 
-因此风控入口说明也不该自己回放事件去猜当前真相，而应沿 signer、证据和 runtime 已外化的 truth-surface / decision window / cleanup verdict 去回读。
-- 恢复是否成立只沿 `signer + evidence + reopen` 判断，并且必须与 `continuation pricing / cleanup` 的既有结论对齐；通用弱读回面总声明统一回 `10`。
+因此风控入口说明也不该自己回放事件去猜当前真相，而应沿已外化的 readback、evidence 与 reopen 条件去回读。
+- 恢复与 reopen 的机制口径统一回 `security / playbooks`；通用弱读回面总声明统一回 `10`。
 - `product promise readback` 也是弱读回面：它只对账已外化 verdict，不回放事件，不改判治理真相，也不越级宣布恢复成立。
 
 更稳的 first reject signal 也应先记三条：
@@ -68,12 +56,12 @@
 ## 什么时候进来
 
 - 当你已经知道统一定价治理成立，准备判断它怎样落到误伤、恢复、支持链路与入口语义差上。
-- 当你需要从用户侧读回面理解 signer、liability、reopen 与恢复连续性，而不是继续停在安全控制面。
+- 当你需要从用户侧读回面理解 `product promise / reopen / evidence` 的样貌，而不是继续停在安全控制面。
 - 当你需要判断某种现实入口选择会怎样改写 `product promise`、恢复资格或证据绑定时，再进入本目录。
 
 如果问题已经进入恢复签发、责任划分与 reopen drill，就不要继续停在风控入口摘要：
 
-- 验收与回退对象：回 [../playbooks/36-治理宿主验收执行手册：governance key、typed ask、decision window、continuation pricing与cleanup剧本](../playbooks/36-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20source%E3%80%81permission%20ledger%E3%80%81decision%20window%E3%80%81continuation%20gate%E4%B8%8Erollback%E5%89%A7%E6%9C%AC.md)；当前对象链读法应以 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> cleanup` 为准
+- 验收与回退对象：回 [../playbooks/36-治理宿主验收执行手册：governance key、typed ask、decision window、continuation pricing与cleanup剧本](../playbooks/36-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E9%AA%8C%E6%94%B6%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20source%E3%80%81permission%20ledger%E3%80%81decision%20window%E3%80%81continuation%20gate%E4%B8%8Erollback%E5%89%A7%E6%9C%AC.md)
 - liability / reopen 执行链：回 [../playbooks/66-治理宿主修复稳态纠偏再纠偏改写纠偏精修执行手册：governance key host consumption card、hard reject order与reopen drill](../playbooks/66-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E4%BF%AE%E5%A4%8D%E7%A8%B3%E6%80%81%E7%BA%A0%E5%81%8F%E5%86%8D%E7%BA%A0%E5%81%8F%E6%94%B9%E5%86%99%E7%BA%A0%E5%81%8F%E7%B2%BE%E4%BF%AE%E6%89%A7%E8%A1%8C%E6%89%8B%E5%86%8C%EF%BC%9Ahost%20consumption%20card%E3%80%81hard%20reject%20order%E4%B8%8Ereopen%20drill.md)
 
 ## 继续下潜时
