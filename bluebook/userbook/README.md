@@ -502,5 +502,6 @@
 - bridge 的 continuity ledger、fresh-session break 与 replay 合同边界
 - bridge 的 REPL 写入合同、daemon 写入合同与共享 echo 层边界
 - bridge ingress reader 的 side-channel、echo、replay 与 user-consumer 边界
+- bridge read-side replay continuity 的 same-session 保留与 fresh-session reset 边界
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。

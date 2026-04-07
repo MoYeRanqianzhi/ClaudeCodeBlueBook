@@ -182,6 +182,7 @@
 163. 为什么 `reusedPriorSession`、`previouslyFlushedUUIDs`、`createCodeSession` 与 `flushHistory` 说明 v1 continuity ledger 与 v2 fresh-session replay 不是同一种 history contract。
 164. 为什么 `writeMessages`、`writeSdkMessages`、`initialMessageUUIDs`、`recentPostedUUIDs` 与 `flushGate` 说明 REPL path 与 daemon path 不是同一种 bridge write contract。
 165. 为什么 `handleIngressMessage`、`recentPostedUUIDs`、`recentInboundUUIDs` 与 `onInboundMessage` 说明 outbound echo drop、inbound replay guard 与 non-user ignore 不是同一种 ingress consumer contract。
+166. 为什么 `lastTransportSequenceNum`、`recentInboundUUIDs`、`tryReconnectInPlace`、`createSession` 与 `rebuildTransport` 说明 same-session continuity 与 fresh-session reset 不是同一种 inbound replay contract。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
