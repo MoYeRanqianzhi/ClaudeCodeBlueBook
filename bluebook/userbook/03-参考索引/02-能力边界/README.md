@@ -121,3 +121,4 @@
 - [119-remoteSessionUrl、brief line、bridge pill、bridge dialog 与 attached viewer 索引.md](./119-remoteSessionUrl%E3%80%81brief%20line%E3%80%81bridge%20pill%E3%80%81bridge%20dialog%20%E4%B8%8E%20attached%20viewer%20索引.md)
 - [120-warning transcript、remoteConnectionStatus、remoteBackgroundTaskCount 与 brief line 索引.md](./120-warning%20transcript%E3%80%81remoteConnectionStatus%E3%80%81remoteBackgroundTaskCount%20%E4%B8%8E%20brief%20line%20索引.md)
 - [121-worker_status、external_metadata、AppState shadow 与 SDK event projection 索引.md](./121-worker_status%E3%80%81external_metadata%E3%80%81AppState%20shadow%20%E4%B8%8E%20SDK%20event%20projection%20索引.md)
+- [122-pending_action、post_turn_summary、task_summary 与 externalMetadataToAppState 索引.md](./122-pending_action%E3%80%81post_turn_summary%E3%80%81task_summary%20%E4%B8%8E%20externalMetadataToAppState%20索引.md)

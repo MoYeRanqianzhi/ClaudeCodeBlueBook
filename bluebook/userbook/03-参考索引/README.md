@@ -123,6 +123,7 @@
 104. 为什么 `remoteSessionUrl`、brief line、bridge pill、bridge dialog 与 attached viewer 不是同一种 surface presence。
 105. 为什么 `warning` transcript、`remoteConnectionStatus`、`remoteBackgroundTaskCount` 与 brief line 不是同一张 remote status table。
 106. 为什么 `worker_status`、`external_metadata`、`AppState shadow` 与 SDK event projection 不是同一种前台状态消费链。
+107. 为什么 `pending_action`、`post_turn_summary`、`task_summary` 与 `externalMetadataToAppState` 不是同一种“前台已消费”。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
