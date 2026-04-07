@@ -131,6 +131,7 @@
 - [127-2026-04-07-compaction recovery contract split 拆分记忆.md](./127-2026-04-07-compaction%20recovery%20contract%20split%20拆分记忆.md)
 - [128-2026-04-07-session not found contract split 拆分记忆.md](./128-2026-04-07-session%20not%20found%20contract%20split%20拆分记忆.md)
 - [129-2026-04-07-websocket recovery ownership split 拆分记忆.md](./129-2026-04-07-websocket%20recovery%20ownership%20split%20拆分记忆.md)
+- [130-2026-04-07-surface presence split 拆分记忆.md](./130-2026-04-07-surface%20presence%20split%20拆分记忆.md)
 
 用途：
 
