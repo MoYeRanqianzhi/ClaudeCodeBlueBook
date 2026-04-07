@@ -2,7 +2,7 @@
 
 `risk/` 当前有 65 篇编号文档，范围 `00-64`。本目录只看统一治理收费链怎样在用户侧读回成 `product promise readback / reopen qualification / evidence binding`，不把风控写成账号、入口、恢复或地区场景的并列主题。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门，不要急着把风控页读成“另一套安全规则”。
-`risk/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这是误伤、恢复、reopen 还是入口差异哪种用户侧工作对象，再判它卡在 `governance key / typed ask / decision window / continuation pricing / durable-transient cleanup` 的哪一段；若问题已经进入恢复签发，再另判 `signer + evidence + reopen`，最后才选前门、playbook 或深页。
+`risk/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这是误伤、恢复、reopen 还是入口差异哪种用户侧工作对象，再判它卡在 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 的哪一段；只有当 cleanup 已经完成、问题转入恢复签发时，才另判 `signer + evidence + reopen`，最后才选前门、playbook 或深页。
 
 还要先记一句：
 
@@ -14,13 +14,13 @@
 
 如果只先记风控前门的一句话，也只记这句：
 
-- 风控不是第二套安全规则；它是同一条 canonical chain 在用户侧的读回顺序：`governance key` 先决定谁有资格冻结边界或签发恢复，`externalized truth chain` 把 `product promise` 写成可对账的当前真相，`typed ask` 决定哪些冻结或阻断动作必须进入正式仲裁，`decision window -> continuation pricing` 决定误伤、阻断与连续性成本是否仍可续租，`durable-transient cleanup` 先收口旧 authority，若要恢复，再由 `signer + evidence + reopen` 重新签发执行连续性。
+- 风控不是第二套安全规则；它只读取同一条 canonical chain 在用户侧留下的三类对象：`product promise readback`、`reopen qualification` 与 `evidence binding`；治理主键、truth-surface、typed ask、decision window 与 cleanup 仍以 root / `09` / `security` 已承认的顺序为准。
 
 这里还应再多记一句：
 
 - 这组用户侧读法并不脱离完整治理链；更稳的读法仍是 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，只是它在风控目录里主要落到 `product promise`、`reopen qualification` 与 `signer + evidence + reopen` 这组用户侧读回对象。
 
-因此风控不该再被写成身份、组织、入口与恢复四个主题 bucket；这些都只是同一条链在用户侧的读回对象，不是新的治理主语。
+因此风控不再按账号、地区、入口或恢复分题；这些都只是 `product promise readback / reopen qualification / evidence binding` 在不同场景里的落点，不是新的治理主语。
 
 如果把风控前门继续压成最短公式，也只剩三条：
 
@@ -66,7 +66,7 @@
 
 - 当你已经知道统一定价治理成立，准备判断它怎样落到误伤、恢复、支持链路与入口语义差上。
 - 当你需要从用户侧结算面理解 signer、liability、reopen 与恢复连续性，而不是继续停在安全控制面。
-- 当你需要回答“中国用户入口、兼容路径与官方路径”这些现实选择怎样改变风险语义。
+- 当你需要判断某种现实入口选择会怎样改写 `product promise`、恢复资格或证据绑定时，再进入本目录。
 
 如果问题已经进入恢复签发、责任划分与 reopen drill，就不要继续停在风控前门摘要：
 
@@ -111,9 +111,9 @@
 
 ## 维护约定
 
-- `risk/` 负责账号治理、误伤、恢复和入口语义差。
+- `risk/README` 前门只负责 `product promise readback / reopen qualification / evidence binding`；账号、地区、入口与支持链路只在编号页里作为样貌出现，不再在 README 里充当并列 bucket。
 - `risk/` 解释的是统一定价控制面怎样落到误伤、恢复、支持链路与地区入口上，不把风控退回“更多规则/更多封禁”叙事。
-- `risk/` 前门优先解释 signer、证据、恢复资格与 `governance key`，不自己重做权限或宿主状态机总图。
+- `risk/` 前门优先解释 `product promise readback / reopen qualification / evidence binding` 这组三个用户侧对象；涉及 signer ladder、治理主键或宿主状态机时，只引用 `security/` 与 `09` 已承认的机制，不在这里第一次改判。
 - `risk/README` 只负责 `product promise / reopen qualification / evidence binding` 这组用户侧前门，不和 `security/` 抢 signer/ledger 机制前门，不和 `playbooks/` 抢恢复执行链。
 - `risk/README` 有用户侧读法解释权，但没有治理机制改判权；一旦它开始自己重讲 signer ladder 或 host truth，对用户的恢复读法就会再次退回第二套故事。
 - 需要源码级安全控制面时，回到 [../security/README.md](../security/README.md)。

@@ -8,6 +8,14 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/README` 与 `bluebook/risk/README` 的长期默认 governance-frontdoor-order-realignment language 现已继续写死：
+  - 治理总入口默认继续与 `09 / 15` 对齐回 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`
+  - `risk/README` 默认继续只读取 `product promise readback / reopen qualification / evidence binding` 这组用户侧对象，不在 README 里第一次改判治理主键、truth-surface 或 signer ladder
+- `bluebook/userbook/README`、`bluebook/risk/README` 与 `bluebook/README` 的长期默认 user-facing-frontdoor-subjects language 现已继续写死：
+  - 用户侧前门默认继续先定工作对象、readback object 与控制面段位，不先按能力入口、账号地区或入口路径起题
+  - `userbook/README` 默认继续把“先定题，不先找页”前推到开场句，不再让入口能力表重新抢主语
+  - `risk/README` 默认继续把账号、地区、入口与支持链路降到编号页样貌层，不再在 README 里充当并列 bucket
+  - 根 README 默认继续把任何 user-facing bucket 降格成收费链的读回助记，不再把它们写成治理前门里的第二套主题
 - `bluebook/06` 的长期默认 prompt-demystification-scope-split language 现已继续写死：
   - `6.32` 默认继续只负责 `same-world compiler` 主句，不再和 `6.45 / 6.57` 平行争 Prompt 魔力首答
   - `6.45` 默认继续只补 `protocol surface / action grammar / delta discipline`

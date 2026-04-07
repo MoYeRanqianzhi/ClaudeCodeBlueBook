@@ -2,6 +2,10 @@
 
 ## 2026-04-07 本轮增量
 
+- 本轮 governance-frontdoor-order-realignment 深化动作: 已继续更新 `bluebook/README.md` 与 `bluebook/risk/README.md`。新的结论是：总入口治理线一旦在 failure order 上偏离 `09 / 15` 的 canonical 顺序，或者风控 README 重新把 signer ladder / 治理主键抬回前门，后续再多的 user-facing 降格也会被带偏。
+- 本轮新的治理主语结论: 更稳的治理总入口必须继续固定 `pricing-right mismatch -> truth-surface demotion -> asset-rollback ABI sealing -> shared reject verdict -> reopen qualification / human fallback`；风控 README 则只保留 `product promise readback / reopen qualification / evidence binding` 这组用户侧对象，不重讲机制主语。
+- 本轮 user-facing-frontdoor-subjects 深化动作: 已继续更新 `bluebook/userbook/README.md`、`bluebook/risk/README.md` 与 `bluebook/README.md`。新的结论是：治理线即使已经在总入口和专题页收回 canonical chain，later maintainer 仍可能被 user-facing 入口句重新带回“能力入口 / 账号地区恢复 / 用户侧 bucket”这组旧主语。
+- 本轮新的用户侧前门结论: 更稳的 user-facing wording 必须先定工作对象、readback object 与控制面段位，再谈现实入口或场景差异；一切入口词都只能当样貌或二跳，不再充当前门主语。
 - 本轮 prompt-demystification-scope-split 深化动作: 已继续更新 `bluebook/06-第一性原理与苏格拉底反思.md`。新的结论是：Prompt 第二前门的剩余成本，不只在于词不统一，还在于同一页内部多个去魅小节仍各自重讲 Prompt 为什么强。
 - 本轮新的 Prompt 分工结论: 更稳的 `06` wording 必须让 `6.32` 只负责 `same-world compiler` 主句，`6.45` 只负责 `protocol surface / action grammar / delta discipline`，`6.57` 只负责 Constitution 的 speaking-right 边界，不再让三节平行争“Prompt 魔力”的首答权。
 - 本轮 prompt-witness-order-alignment 深化动作: 已继续更新 `bluebook/navigation/15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护.md` 与 `bluebook/navigation/41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md`。新的结论是：Prompt 第二前门当前更贵的 residual，已不只是结果词或过厚路由，而是 `06 / 15 / 41` 对同一条 witness chain 仍可能用不同粗细的 object order 书写。
