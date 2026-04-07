@@ -192,6 +192,7 @@
 - [188-2026-04-08-model allowlist surface split 拆分记忆.md](./188-2026-04-08-model%20allowlist%20surface%20split%20拆分记忆.md)
 - [189-2026-04-08-bridge continuity ledger split 拆分记忆.md](./189-2026-04-08-bridge%20continuity%20ledger%20split%20拆分记忆.md)
 - [190-2026-04-08-bridge write contract split 拆分记忆.md](./190-2026-04-08-bridge%20write%20contract%20split%20拆分记忆.md)
+- [191-2026-04-08-ingress consumer split 拆分记忆.md](./191-2026-04-08-ingress%20consumer%20split%20拆分记忆.md)
 
 用途：
 
