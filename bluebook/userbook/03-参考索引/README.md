@@ -151,6 +151,7 @@
 132. 为什么 `SessionPreview`、`loadFullLog`、`loadConversationForResume`、`switchSession` 与 `adoptResumedSessionFile` 说明 `/resume` 的 preview transcript 不是正式 session restore。
 133. 为什么 `forkSession`、`switchSession`、`copyPlanForFork`、`restoreWorktreeForResume` 与 `adoptResumedSessionFile` 说明 `--fork-session` 不是较弱的原会话恢复，而是新 session 分叉。
 134. 为什么 `loadConversationForResume`、`deserializeMessagesWithInterruptDetection`、`copyPlanForResume`、`fileHistoryRestoreStateFromLog` 与 `processSessionStartHooks` 说明 resume 恢复包不是同一种内容载荷。
+135. 为什么 `main.tsx`、`launchResumeChooser`、`ResumeConversation`、`resume.tsx` 与 `REPL.resume` 说明 `--continue`、startup picker 与会内 `resume` 共享恢复合同，却不是同一种入口宿主。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)

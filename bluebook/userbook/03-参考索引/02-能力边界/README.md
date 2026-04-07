@@ -149,3 +149,4 @@
 - [147-SessionPreview、loadFullLog、loadConversationForResume、switchSession 与 adoptResumedSessionFile 索引.md](./147-SessionPreview、loadFullLog、loadConversationForResume、switchSession%20与%20adoptResumedSessionFile%20索引.md)
 - [148-forkSession、switchSession、copyPlanForFork、restoreWorktreeForResume 与 adoptResumedSessionFile 索引.md](./148-forkSession、switchSession、copyPlanForFork、restoreWorktreeForResume%20与%20adoptResumedSessionFile%20索引.md)
 - [149-loadConversationForResume、deserializeMessagesWithInterruptDetection、copyPlanForResume、fileHistoryRestoreStateFromLog 与 processSessionStartHooks 索引.md](./149-loadConversationForResume、deserializeMessagesWithInterruptDetection、copyPlanForResume、fileHistoryRestoreStateFromLog%20与%20processSessionStartHooks%20索引.md)
+- [150-main.tsx、launchResumeChooser、ResumeConversation、resume.tsx 与 REPL.resume 索引.md](./150-main.tsx、launchResumeChooser、ResumeConversation、resume.tsx%20与%20REPL.resume%20索引.md)

@@ -162,6 +162,7 @@
 - [158-2026-04-08-resume restore pipeline split 拆分记忆.md](./158-2026-04-08-resume%20restore%20pipeline%20split%20拆分记忆.md)
 - [159-2026-04-08-fork-session ownership split 拆分记忆.md](./159-2026-04-08-fork-session%20ownership%20split%20拆分记忆.md)
 - [160-2026-04-08-resume payload taxonomy split 拆分记忆.md](./160-2026-04-08-resume%20payload%20taxonomy%20split%20拆分记忆.md)
+- [161-2026-04-08-resume entry host split 拆分记忆.md](./161-2026-04-08-resume%20entry%20host%20split%20拆分记忆.md)
 
 用途：
 
