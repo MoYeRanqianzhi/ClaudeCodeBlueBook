@@ -14,7 +14,7 @@
 
 这里还应再多记一句：
 
-- `userbook/` 只复述 root / `09` 已承认的用户侧治理顺序：`pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`；approval、mode、modal 只配做治理投影，`/status / /doctor / /usage` 只配做 runtime projection，`/compact` 只配做 continuation consumer。
+- `userbook/` 只复述 root / `09` 已承认的用户侧治理顺序：`pricing-right -> truth-surface attestation -> typed ask / sandbox -> decision window -> continuation pricing -> durable-transient cleanup`；approval、mode、modal 只配做治理投影，`/status / /doctor / /usage` 只配做 runtime projection，`Compact / Resume / Memory` 只配做 continuation consumer，`Export` 只配做 `Outside` handoff surface，`cleanup result` 只配做收口结果词。
 
 这里还要再多记一句：
 
@@ -33,7 +33,7 @@
 2. `扩张或权限判错`
    - 先看这次扩张有没有先被准入、当前真相有没有先说清，再决定该继续、收口、降级还是升级给人。
    - 先判 `pricing-right -> truth-surface`，不先看 approval、mode、modal、`/status`、`/doctor`、`/usage`、`/compact`；前者只是治理投影，`/status / /doctor / /usage` 只是 runtime projection，`/compact` 只是 continuation consumer。
-   - 若扩张已经获准，还要继续判 `decision window -> continuation pricing -> durable-transient cleanup`；不要把 `/usage`、`/compact`、cleanup result 误读成治理本体。
+   - 若扩张已经获准，还要继续判 `decision window -> continuation pricing -> durable-transient cleanup`；不要把 `/usage` 误读成治理本体，也不要把 `Compact / Resume / Memory`、`Export` 或 `cleanup result` 误读成 verdict signer。
 3. `旧状态污染`
    - 先看是不是旧 shim、旧恢复资产、旧 capability token 或旧 authority width 还在冒充当前世界。
 
@@ -42,7 +42,7 @@
 根前门真正负责的是 `问题分型 -> 二跳`，不负责替 `04 / 05` 的 README 重新充当专题目录。
 
 更稳一点说，`userbook/README -> 01 -> 04 / 05` 也应继续共享同一组 first-answer order；目录优化若只共享 nouns、不共享顺序，用户层仍会先退回“按页碰运气”。
-更稳一点说，approval、modal、mode 这些词只配做治理投影；status、`/status`、`/doctor`、usage、`/usage` 这些词只配做 runtime projection；`/compact` 只配做 continuation consumer；它们都能帮助二跳，不能代替 `扩张或权限判错` 的控制面判断。
+更稳一点说，approval、modal、mode 这些词只配做治理投影；status、`/status`、`/doctor`、usage、`/usage` 这些词只配做 runtime projection；`Compact / Resume / Memory` 只配做 continuation consumer；`Export` 只配做 `Outside` handoff surface；`cleanup result` 只配做收口结果词；它们都能帮助二跳，不能代替 `扩张或权限判错` 的控制面判断。
 
 更稳的默认二跳是：
 

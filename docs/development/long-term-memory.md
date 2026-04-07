@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- `bluebook/userbook/README`、`bluebook/userbook/05/03` 与 `bluebook/userbook/05/06` 的长期默认 userbook-frontdoor-buckets language 现已继续写死：
+  - `/status / /doctor / /usage` 默认继续只写成 runtime projection
+  - `Compact / Resume / Memory` 默认继续只写成 continuation consumer
+  - `Export` 默认继续只写成 `Outside` handoff surface
+  - `cleanup result` 默认继续只写成收口结果词
+  - `reopen` 默认继续只写成 cleanup 之后的用户侧恢复链
+  - 这三页默认统一拒收 projection、consumer、handoff、result word 与 reopen 再次互借 verdict 话语
 - `bluebook/navigation/05`、`bluebook/navigation/15` 与 `bluebook/navigation/41` 的长期默认 prompt-route-framing language 现已继续写死：
   - 高流量导航页默认继续把 `Prompt 魔力` 收回 `Prompt 效力 / 稳定有力`
   - 导航页默认继续把 `神秘文案` 收回 `文案归因`

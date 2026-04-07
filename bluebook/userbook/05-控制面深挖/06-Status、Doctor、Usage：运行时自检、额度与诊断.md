@@ -41,7 +41,7 @@
 - `/doctor` 只汇总可信度证据，不单独签发“这套环境已经安全可用”。
 - `/usage` 只投影预算窗口，不单独签发“这轮还值得继续付费”。
 
-真正的 verdict 仍留在上层控制面的 `truth-surface -> decision window -> durable-transient cleanup` 里；用户侧恢复另沿 `signer + evidence + reopen` 去回读。对用户来说，这页最多只帮助你判断该继续、降级、停止、转入恢复链或升级给人；如果把这些动作直接写成这页的 verdict source，就又会把 projection 抬回本体层。
+真正的 verdict 到 `truth-surface -> decision window -> durable-transient cleanup` 为止先收口；若要恢复，再另沿 `signer + evidence + reopen` 去回读。对用户来说，这页最多只帮助你判断该继续、降级、停止、转入恢复链或升级给人；如果把这些动作直接写成这页的 verdict source，就又会把 projection 抬回本体层。
 更稳一点说，`/status / /doctor / /usage` 只配做 runtime projection；`Compact / Resume / Memory` 这些 continuation consumer 另在相邻页处理；`Export` 另归 `Outside` handoff surface；真正 verdict 仍留在 `truth-surface -> decision window -> durable-transient cleanup`，用户侧恢复仍留在 `signer + evidence + reopen`。
 
 ## `/status` 解决的是宿主状态投影
