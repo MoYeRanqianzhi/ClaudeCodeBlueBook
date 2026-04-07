@@ -3346,3 +3346,5 @@
 - Prompt 线的长期 speaking-rights 现在应固定成四类页：`84 = frontdoor owner`，`81 = mechanism deep dive`，`63 = continuation / time-axis`，`33 = diagnostic naming`；`57` 只解释协作接口，`78` 只保留 compat jump / one-screen mnemonic。只要某页重新同时承担两类以上角色，就应优先视为 first-answer count 回潮。
 - Prompt README/目录页里也应直接命名 route 的角色，而不是只给数字链：`frontdoor appeal chain`、`mechanism deep dive`、`collaboration interface`、`compat jump` 这组标签比反复在正文里声明“canonical source 是 84”更稳，因为它把 speaking-rights 吸收进了结构本身。
 - Prompt 线后续若继续去魅，优先级也应改成“先改 page-role，再改比喻词”；比喻词还能活在兼容路径和历史文件名里，但 page-role 一旦混层，later maintainer 第一次看到的仍会是多 owner 结构。
+- 治理线的长期词法纪律也应再固定一条：`security/` 优先说 signer / ledger / cleanup authority 机制面，`risk/` 才说用户侧结算面；`结算面 / 外显 / crosswalk` 这组词只要越出自己的目录职责，就会把 canonical chain 改写成 audience bridge。
+- `architecture/83` 这类 canonical 机制页里，表头和导语也应尽量用对象词而不是读者词。`observable projection` 比 `host-facing read` 更稳，`运行时最短对照 / 运行时最小 failure order` 也比“later maintainer、宿主与 builder 共用”更不容易把机制页写成说明书。

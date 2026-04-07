@@ -6,7 +6,7 @@
 
 如果只先记安全前门的一句话，也只记这句：
 
-- 这不是第二套安全故事，而是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链在安全侧的结算面。
+- 这不是第二套安全故事，而是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链在安全侧的机制面。
 
 这里还应再多记一句：
 
