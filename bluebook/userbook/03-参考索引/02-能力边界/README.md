@@ -116,3 +116,4 @@
 - [114-handleClose、scheduleReconnect、force reconnect、onReconnecting 与 onClose 索引.md](./114-handleClose%E3%80%81scheduleReconnect%E3%80%81force%20reconnect%E3%80%81onReconnecting%20%E4%B8%8E%20onClose%20索引.md)
 - [115-PERMANENT_CLOSE_CODES、4001 与 reconnect budget 索引.md](./115-PERMANENT_CLOSE_CODES%E3%80%814001%20%E4%B8%8E%20reconnect%20budget%20索引.md)
 - [116-compacting、boundary、timeout、4001 与 keep-alive 索引.md](./116-compacting%E3%80%81boundary%E3%80%81timeout%E3%80%814001%20%E4%B8%8E%20keep-alive%20索引.md)
+- [117-4001 在 SessionsWebSocket 与 WebSocketTransport 的语义分裂 索引.md](./117-4001%20在%20SessionsWebSocket%20%E4%B8%8E%20WebSocketTransport%20%E7%9A%84%E8%AF%AD%E4%B9%89%E5%88%86%E8%A3%82%20索引.md)
