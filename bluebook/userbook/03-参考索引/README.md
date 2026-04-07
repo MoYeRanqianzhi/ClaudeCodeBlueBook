@@ -186,6 +186,7 @@
 167. 为什么 `handleIngressMessage`、`isSDKControlResponse`、`isSDKControlRequest`、`onPermissionResponse` 与 `onControlRequest` 说明 bridge ingress 的 control side-channel 不是对称的通用 control 总线。
 168. 为什么 `handleIngressMessage`、`control_response/control_request`、`extractInboundMessageFields` 与 `enqueue(prompt)` 说明 bridge ingress 只有 control 旁路和 user-only transcript adapter。
 169. 为什么 `extractInboundMessageFields`、`normalizeImageBlocks`、`resolveInboundAttachments`、`prependPathRefs` 与 `resolveAndPrepend` 说明 image block repair 与 attachment path-ref prepend 不是同一种 inbound normalization contract。
+170. 为什么 `pendingPermissionHandlers`、`BridgePermissionCallbacks`、`request_id`、`handlePermissionResponse` 与 `isBridgePermissionResponse` 说明 bridge permission race 的 verdict ledger 不是 generic control callback ownership。
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
