@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 public-artifacts-must-declare-signing-level live 记忆：
+  - `87` 现在可以继续把公开 operator artifacts 的要求写硬：它们不仅要可读、可反对，还必须显式声明签字权层级
+  - 更稳的默认写法是：foundation/context 工件不配代签执行侧裁决或阻断；否则 later maintainer 会把公开文本误读成同层同权的治理真相
+- 当前批次继续新增一条 auto-memory-cannot-sign-world live 记忆：
+  - `84` 现在应直接写死：`auto memory` 这类机器本地、不可跨环境继承的记忆层，只配当 foundation/context，不配当 `world-definition / continue qualification` 的 witness
+  - 更稳的默认写法是：若一次继续只有靠这台机器的本地记忆才成立，就应先判 same-world fail，而不是先补摘要或补措辞
+- 当前批次继续新增一条 permissions-sandbox-readback-three-part-order live 记忆：
+  - `85` 现在可以继续压成一句最短治理秩序：`permissions` 定价起租，`sandboxing` 预先圈界，`weak readback` 只出回单
+  - 更稳的默认写法是：少一次重判，就少一次免费扩张；不要把这三者退回并排机制清单
+- 当前批次继续新增一条 owner-to-attribution-language live 记忆：
+  - 高流量页里的 `owner page / owner chain / owner route / owner README` 现在默认继续统一收敛成 `归属页 / 归属链 / 归属路由 / 归属页 README`
+  - 更稳的默认写法是：优先在 later consumer first-hop 最常经过的 `03 / 09 / 05 / 41 / README` 收口，不靠新增别名页迁就旧术语
 - 当前批次继续新增一条 clickable-owner-links-over-pseudo-routes live 记忆：
   - `navigation/01` 这类高流量页里，像 `philosophy/86`、`philosophy/87` 这样的编号索引默认继续优先改成明确可点击的归属链接，而不是保留“像路径的索引串”
   - 更稳的默认写法是：later consumer 要看到的是 why-proof 的可点归属目标，而不是一串会被误读成目录 route 的伪路径
