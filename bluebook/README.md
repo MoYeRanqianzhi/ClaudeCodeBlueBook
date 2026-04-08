@@ -14,6 +14,7 @@
 
 - Prompt
   - `84`
+  - 不是因为那里“讲 Prompt”，而是因为 `compiled world verdict` 先替 `verify / delegate / resume` 付掉世界协商成本
 - 治理
   - `10 -> security（mechanism） / risk（tail readback） / playbooks（execution）`
 - 源码质量证据链
