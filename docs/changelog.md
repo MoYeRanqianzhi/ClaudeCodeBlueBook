@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更细的尾段纪律：`03` 后半段现已继续把“runtime 是资源宪法”“好架构保留重构可能性”“制度升级必须保序迁移”“不要把源码质量退回尺寸治理”这些重复 slogan 压成更短的新增观察或自校句，不再在尾段反复重发 already-settled why 口号。与此同时，本轮起手根仓 `git fetch origin main` 成功、`git merge --ff-only origin/main` 一度成功后，又再次观测到根仓 `/home/mo/m/projects/cc/analysis` 外层出现 `ahead 20` 与未解决冲突；正文仍然严格只在 `.worktrees/mainloop` 内推进
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更细的总控页纪律：`03` 中后段现已继续把 `continue`、治理 why 与源码质量 why 的重复 slogan 压成真正新增的自校句，不再在多个“设计原则”里重复发放相同首答。与此同时，本轮起手根仓 `git fetch origin main` 成功、`git merge --ff-only origin/main` 一度成功后又再次观测到根仓 `/home/mo/m/projects/cc/analysis` 外层出现 `ahead 20` 与未解决冲突；正文仍然严格只在 `.worktrees/mainloop` 内推进
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的总控页纪律：`03` 中后段现已继续收掉重复发放的治理/源码质量口号，只保留新增 why 观察与自校句，不再在不同“设计原则”里重复重发同一条首问。与此同时，本轮起手根仓 `git fetch origin main` 与 `git merge --ff-only origin/main` 一度成功，但随后再次观测到根仓 `/home/mo/m/projects/cc/analysis` 外层出现 `ahead 20` 与未解决冲突；正文仍然严格只在 `.worktrees/mainloop` 内推进
 - 继续更新 `bluebook/{README.md,03-设计哲学.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的总控页纪律：根入口现已回到纯首跳，`03` 现已退回“解释三条母线为什么成立”的 why 页，`06` 现已退回“只验母线是否闭合”的 self-audit 页；高流量页不再重复发放 Prompt/治理/源码质量的 `first test / minimum repair`。本轮根仓 `git fetch origin main` 与 `git merge --ff-only origin/main` 继续成功，结果为 `Already up to date.`
