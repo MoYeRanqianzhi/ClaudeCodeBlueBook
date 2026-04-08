@@ -61,12 +61,7 @@
 Claude Code 更成熟的地方在于：
 
 - 它先决定谁必须先检查
-
-比如：
-
-1. 危险 allow rule 会在 auto mode classifier 之前被剔除，因为它们会绕过后续判断；
-2. `.claude/**` 这类窄豁免被允许在极窄边界上提前通过，但更一般的 allow rule 仍然要服从后续 safety check；
-3. 某些路径先做 source gating，再做 adapter enforcement，而不是把所有判断都塞给同一层。
+- 危险 allow rule、窄豁免与 source gating 这些差异，都只是“检查必须落在最有治理价值的时点”这条原则的不同实例
 
 这说明安全与省 token 的共同问题其实是：
 
@@ -111,11 +106,7 @@ Claude Code 对失败并不追求一种统一美德。
 
 如果自动化只能越来越多、越来越强，那它迟早会从行动力变成失控源。
 
-Claude Code 明显在避免这一点：
-
-1. auto mode 不是永久授权，而是随时可能被 denial-limit fallback 打回人工；
-2. classifier 如果继续没有增益，会停止自动化路径；
-3. bypass、auto 这类高阶模式本身还受 gate 与 killswitch 约束。
+Claude Code 明显在避免这一点：auto mode 不是永久授权，classifier 没有增益时应退出自动化路径，高阶模式本身也继续受 gate 与 killswitch 约束。
 
 这说明 Claude Code 对自动化的理解不是：
 

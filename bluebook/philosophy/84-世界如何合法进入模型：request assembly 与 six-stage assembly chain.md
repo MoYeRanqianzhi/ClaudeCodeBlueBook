@@ -1,9 +1,9 @@
-# 真正有效的 Prompt，会先把输入装配顺序排清
+# Prompt 首先是世界准入顺序，不是文案技巧
 
 这一章回答五个问题：
 
-1. 为什么 Claude Code 的 Prompt 效力首先不是文案强，而是输入装配顺序强。
-2. 为什么 `section registry / dynamic boundary`、`message lineage`、`projection consumer`、`protocol transcript` 与 `continuation qualification` 共同决定 Prompt 上限。
+1. 为什么 Claude Code 的 Prompt 效力首先不是文案强，而是世界准入顺序强。
+2. 为什么 single-source world definition、projection discipline 与 continuation qualification 共同决定 Prompt 上限。
 3. 为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到这种效力。
 4. 怎样用苏格拉底式追问审一个新 runtime 是否真的具备这种 Prompt 效力。
 5. 这对 Agent runtime 设计者意味着什么。
@@ -54,7 +54,7 @@ Prompt 的效力，首先来自：
 
 ### 合法复数不是平行世界
 
-这些 surface 可以并存，但它们之所以仍算同一个 Prompt 世界，不是因为最后会被拼成一段更长文本，而是因为它们同时满足四个条件：
+复数 surface 可以并存，但它们之所以仍算同一个 Prompt 世界，不是因为最后会被拼成一段更长文本，而是因为它们同时满足四个条件：
 
 1. `same lineage`
    - 都在同一条 `message lineage` 上取位。
@@ -242,4 +242,4 @@ Prompt 自校统一回 `navigation/15`；本页只保留一条 first-reject hand
 
 ## 7. 一句话总结
 
-真正有效的 Prompt，会先把输入装配顺序排清；如果这一步没有先成立，后面的 Prompt 再华丽，也只是更高明的文案。
+Prompt 首先是世界准入顺序；如果这一步没有先成立，后面的 Prompt 再完整，也只是更高明的文案。

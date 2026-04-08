@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-title-not-effect-word live 记忆：
+  - `84` 默认继续把顶层 owner 标题与问题列表写成世界准入顺序、single-source world definition、projection discipline 与 continuation qualification
+  - `84` 默认继续不让结果词、magic framing 或 surface inventory 领第一页
+- 当前批次继续新增一条 03-summary-plane-demotion live 记忆：
+  - `03` 的总结句默认继续先写三条制度判断，再写运行时平面怎样承接
+  - 若总结句再次把 runtime planes 写成设计主体，默认按“平面重新升格”处理
+- 当前批次继续新增一条 03-prompt-subtitle-demotion live 记忆：
+  - `03` 的 Prompt 中后段标题默认继续不使用“Prompt 首先...”这类平行 first-answer 句法
+  - 更稳的默认修法是把标题收成 `continue verdict / same-world boundary / compression audit` 这类 projection 级语言
+- 当前批次继续新增一条 61-example-inventory-demotion live 记忆：
+  - `61` 默认继续把案例 list 压回 why 原则，只在确实需要时保留一个示例
+  - 若 why 页再次出现多条机制示例清单，默认按“owner taxonomy 回流”处理
 - 最新根仓同步记忆（2026-04-08，本轮深化批次）继续保持健康态：`fetch origin main` 与 `merge --ff-only origin/main` 均再次成功，根仓当前仍是干净的 `main...origin/main`。
 - 当前批次继续新增一条 prompt-owner-invariant-only live 记忆：
   - `84` 默认继续只保留 Prompt 顶层 owner 的两条 canonical fact：`frontdoor order` 与 `canonical Prompt ABI`

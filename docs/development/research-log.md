@@ -2,6 +2,10 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 prompt-title 结论：`84` 现在更明确把顶层 owner 标题收回“Prompt 首先是世界准入顺序，不是文案技巧”，问题列表也从 object inventory 收回到 `single-source world definition / projection discipline / continuation qualification` 这组 invariant；`84` 页首不再由结果词领路。
+- 本轮新的 03-summary 结论：`03` 的“一句话收束”现在更明确先说“三条制度如何先成立”，再说运行时平面怎样协同承接，不再让 runtime planes 在总结句里重新升格成第一设计单位。
+- 本轮新的 prompt-section-title 结论：`03` 的 `25 / 28` 现在继续把标题从平行 Prompt first-answer 收回成 `continue verdict` 与 `same-world 边界判断`，不再用“Prompt 首先...”这类句法重复 owner-level noun。
+- 本轮新的 governance-why 结论：`61` 现在进一步把 section-2 / section-4 的案例 inventory 压回原则句，只保留“检查必须落在最有治理价值的时点”“自动化必须可撤销”这两层 why，不再让举例段滑向机制 owner taxonomy。
 - 本轮新的根仓同步结论：`fetch origin main` 与 `merge --ff-only origin/main` 已再次成功，根仓当前仍是干净的 `main...origin/main`；本轮继续严格只在 `.worktrees/mainloop` 内推进。
 - 本轮新的 prompt-owner 收束结论：`84` 现已继续把 Prompt 顶层 owner 压回 invariant，只保留 `frontdoor order` 与 `canonical Prompt ABI` 两条 canonical fact，不再在页首保留额外动作链、reject trio 或“magic”叙事；surface pluralism 也被明确收回“adjudication single-source”。
 - 本轮新的 prompt-why 收束结论：`03` 的 Prompt 中后段残片现在继续退回 pointer，`25 / 28` 不再重发“连续性制度 / 组织制度边界”这类平行 first answer；`41` 也继续退回 why-only 哲学导航，不再公开列 owner-chain nouns。
