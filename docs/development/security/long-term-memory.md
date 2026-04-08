@@ -2,6 +2,9 @@
 
 ## 当前稳定边界
 
+- `2026-04-08` 最新一轮已完成 `385 / 369 / 236`：主线把 stronger-request cleanup 从 `cleanup-runtime-conformance-governance` 继续推进到 `cleanup-anti-drift-verification-governance`，附录把 `positive control / verifier pattern / cleanup current gap / drift risk / governor question` 压成统一矩阵，源码剖面则把 source-of-truth test、atomic anti-drift structure、live re-verification 与 cleanup conformance cluster 并排钉成 `future-divergence-who-catches-it grammar`。这一轮稳定写出的新边界是：`一次符合` 不等于 `长期可信`，`这次看起来符合` 不等于 `以后不会重新漂移`。
+- `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-repair-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
 - `2026-04-08` 最新一轮已完成 `384 / 368 / 235`：主线把 stronger-request cleanup 从 `cleanup-metadata-governance` 继续推进到 `cleanup-runtime-conformance-governance`，附录把 `metadata signal / runtime truth / gap type / receipt surface / governor question` 压成统一矩阵，源码剖面则把 declaration truth、admission truth、execution truth、skip truth、propagation truth、coverage truth 与 receipt truth 并排钉成 `runtime-fulfilled-or-not grammar`。这一轮稳定写出的新边界是：`有自描述` 不等于 `有符合性证明`，`制度会自述` 不等于 `制度已被兑现`。
 - `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-anti-drift-verification-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
