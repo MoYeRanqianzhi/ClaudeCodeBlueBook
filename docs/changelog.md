@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更细的 Prompt residual 纪律：`03` 中 `lawful forgetting`、人类接手、`continue verdict` 与 `same-world` 边界这几处 Prompt 尾段现已进一步压回最小自校句，不再在高流量总论页里长出第二遍 Prompt why / self-audit；`03` 继续只保留 cross-line 原则与最短判断，具体 continuation 资产与 same-world owner 仍统一回 `84`。
 - 继续更新 `bluebook/{philosophy/README.md,api/README.md,playbooks/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更稳的 `meta` 回链纪律：在 `meta/README` 落地后，仍然会直接解释“why / object / verdict 是否越位代签”的高流量页，现在都开始把这类目录契约争议显式送回 `meta/README`，而不再各自在正文里兜圈解决。
 - 继续更新 `bluebook/casebooks/README.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更细的 sibling-page 纪律：`casebooks/README` 现已剪掉首页残留的 route-only 口气，不再把 `05 / 15 / 41` 的问题梯子与 `shared first-answer order` 写进失败样本页；本页现在只保留“样本页自己的主语、基准样本和离场条件”，更明确地只做失真命名而不做路由守卫。
 - 继续更新 `bluebook/risk/README.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的治理 owner 纪律：`risk/README` 现已从“治理尾链总说明 + 用户侧对象 + 重复离场说明”压回纯 post-cleanup readback owner 页，只保留三类用户侧对象 `product promise readback / reopen eligibility readback / evidence receipt binding`、用户侧失真信号、最小入场条件与离场条件，不再多次重复“不是第二套规则 / 先回治理前门 / 不抢 security/playbooks”。

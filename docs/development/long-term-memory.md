@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 03-prompt-tail-crossline-only live 记忆：
+  - `03` 的 Prompt 尾段现在应继续只保留 cross-line 原则与最短自校，不再长出第二遍 Prompt why / self-audit
+  - 尤其 `lawful forgetting`、人类接手路径、`continue verdict` 与 `same-world` 边界判断，这些节默认只保留一句判断；具体 continuation / world-entry owner 统一回 `84`
 - 当前批次继续新增一条 meta-backlinks-expand-to-speaking-right-pages live 记忆：
   - `meta/README` 现在不再只被 `README / 03 / 06 / navigation` 回链；凡是正文已经开始直接解释“why / object / verdict 是否越位代签”的高流量页，也应显式把目录契约争议送回 `meta`
   - 当前已补回链的新增页为 `philosophy/README`、`api/README` 与 `playbooks/README`
