@@ -2,8 +2,8 @@
 
 `security/` 研究的不是“规则越多越安全”，也不是与省 token 并列的第二条优化线，而是 signer、ledger 与 cleanup authority 这三种不对称如何阻止最早 `unpaid expansion` 免费续租。
 更短地说：安全入口第一问不是“哪条规则更严”，而是“最早 `unpaid expansion` 是什么，以及 signer / verdict ledger / cleanup authority 怎样让这次扩张不能免费继续”。
-如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶入口顺序，不要急着把安全页读成另一套规则堆。
-`security/` 内部不先按主题桶分型，而先走同一条 diagnosis loop：`earliest unpaid expansion -> signer_ref / verdict_ledger_ref / cleanup_ref / lease_revocation_condition -> lease checkpoint -> handoff`。也就是说，先点名最早扩张，再补齐三类强面 ref 与撤租条件，再复用 `10` 的 `same scene? still priced? who settles?`，最后才决定读机制入口摘要、速查表、源码证据簇还是具体编号正文。
+若你还没先在 `10` 定位最早 `unpaid expansion`，本页不开始；那时你缺的还是治理前门，不是安全机制翻译。
+`security/` 内部也不再自建 syllabus，只保留三件事：谁在签字、谁在记 `verdict ledger`、谁在 `cleanup` 时撤租旧 authority。若这三件事还答不上，再复用 `10` 的 `same scene? still priced? who settles?` 去看 lease 到底卡在哪，再决定读机制入口摘要、速查表、源码证据簇还是具体编号正文。
 
 如果只先记安全入口判定的一句话，也只记这句：
 

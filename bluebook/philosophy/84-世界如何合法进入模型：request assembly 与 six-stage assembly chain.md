@@ -94,11 +94,13 @@ Prompt potency 真正值钱的地方，也不是 prompt prose 更强，而是 la
 这也是为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到这种世界准入能力：他们抄到了说明文本，却没有抄到“世界已被编译、consumer 无需重谈”的制度体。
 更硬一点说，later consumer 仍可继承同一份已编译世界判决，不是因为某句 prompt 更会说服模型，而是因为世界定义权、消费边界与继续资格被同一条证据链持续见证；一旦任何路径需要重新定义“现在是什么世界”，下一步动作选择就会退回冷启动。真正该被复用的 therefore，不是某句著名措辞，而是上面四个制度动作能否同时成立。
 
-如果把这章继续压成最短公式，只保留一句：
+如果把这章继续压成最短公式，later consumer 真正只会先问三件事：
 
-- 只有同一条 `Authority -> Boundary -> Transcript -> Lineage -> Continuation` 仍能单源裁决谁在定义世界、谁在消费这份定义、谁在继续时重获资格，当前世界才算被合法编译进模型。
+1. 现在到底谁在定义世界。
+2. 边界内哪些动作和工具仍合法。
+3. `resume / handoff` 之后，哪些 transcript / lineage 仍绑定继续资格。
 
-这里的 `Authority / Boundary / Transcript / Lineage / Continuation` 也不是另一张 inventory；它们只是同一份 `continue-or-reject` 判决的五个裁定轴。
+这三问里只要有一问需要重答，就先按 same-world 失败处理。`Authority / Boundary / Transcript / Lineage / Continuation` 只是这三问在解释层的五个裁定轴，不该反过来抢主句。
 
 若要继续核对更细的 same-world evidence，也只做一件事：沿 `82` 与本页锚点检查 `stable prefix / visibility pruning / advisory downgrade / continuation object` 是否仍共同指向同一份 verdict。
 

@@ -4209,3 +4209,5 @@
 - Prompt 高流量页的最新压缩也应继续写死：`README / 03 / 84` 先写 later consumer 少重答了什么，再补 `same-world compiler`、`compiled world verdict` 这些解释词；不要再让 abstract contract 或术语 inventory 抢回主句。
 - README route-boundary 的最新纪律也应继续写死：`navigation` 只给条件式 route，不给 newcomer/value-prop；`risk` 只做 post-cleanup readback，不出 admit / recover / rollback / reopen 动词；`playbooks` 只出 `execution verdict`；`security` 与 `userbook` 根页都不再重建第一性原理 syllabus 或 why 改判。
 - `risk` 的最新命名纪律也应继续写死：根页优先保留 `product promise readback / reopen eligibility readback / evidence receipt binding` 这组三个尾部读回名词，不再在 README 里继续定义 signer threshold 或 execution dispatch；一旦问题改写成动作词，统一离场到 `playbooks/README`。
+- 安全与自校入口的最新压缩也应继续写死：`06` 不要再把 Prompt 自校写成 artifact 名称先行，先问 later consumer 是否还要重答世界定义、边界与工具资格；`security/README` 也只保留 signer / `verdict ledger` / `cleanup authority` 的机制分诊与离场条件，若没先在 `10` 定位 `earliest unpaid expansion`，安全首页不开始。
+- Prompt 前门的最新反术语化纪律也应继续写死：`README / 03 / 84` 要先写 skim reader 能观察到的失败态，再把 `same-world compiler / compiled world verdict / Authority-Boundary-Transcript-Lineage-Continuation` 放回解释层。若主句里先出现 contract 词、artifact 名或五轴公式，说明 later-consumer test 还没有真正站到前门。
