@@ -15,7 +15,7 @@
 - `architecture/` 真正值钱的，不只是把对象链列出来，而是把 later maintainer 的局部可反对性落成可见对象与 seam。
 - 这里说的 `局部可反对性` 不是“最后还能看懂”，而是拿不到作者时，later maintainer 仍能只凭局部对象与 seam 指出哪条 `event / snapshot / pointer / recovery asset` 在越权。
 - 因而 `event truth / current truth / display truth` 的对象化分工，以及 `writeEvent / reportState / reportMetadata` 这类通道怎样落到 writeback seam，也统一由本目录与 `60 / 84` 负责，不在 `87` 这类 why 页重发对象矩阵。
-- `102` 里的 `change-risk record`，也只有在这里被重新落成 object、state machine 与 seam 之后，才足以进入真正的 change control；但 landing card 本身仍不是终局，后面还必须过 `87` 的 quality gate。
+- `102` 里的 `change-risk record`，也只有在这里被重新落成 object、state machine 与 seam 之后，才足以进入真正的 change control；但 landing card 本身仍不是终局，后面还必须经过基于 `87` 三条 why-proof 命题的 quality gate。
 
 ## 四个对象问题
 
@@ -42,7 +42,7 @@
 - `replay obligation` -> `writeback seam / first fallback`
 - `second-truth risk` -> `first fallback / unresolved authority`
 
-`landing card` 写完后，默认下一步不是立刻展开更多对象专题，而是先回到 `87` 过一遍 quality gate：
+`landing card` 写完后，默认下一步不是立刻展开更多对象专题，而是先在当前链内过一遍 quality gate；这道 gate 直接复用 `87` 已经给出的三条 why-proof 命题，而不是再把 `87` 误读成后置验收页：
 
 1. 这里是否仍是 `合法复杂度中心`
 2. 这里是否仍只承认 `one writable present`

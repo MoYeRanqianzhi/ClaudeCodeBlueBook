@@ -8,6 +8,22 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 deep-self-audit-objects live 记忆：
+  - `06` 深段默认继续不再用 `owner page` 兜底，而是压回最小可反驳对象：Prompt 回 `compiled world verdict`，治理回 `lease checkpoint`，结构回 `later-maintainer veto`
+  - `7.2 入口判据` 默认继续不先问“有没有新增入口”，而先问是否逼 later consumer 重谈同一主语、证据级别或 first-reject path
+- 当前批次继续新增一条 repo-map-thin-top live 记忆：
+  - `01-源码结构地图` 顶部默认继续只保留两句：`repo-specific 定位与跳转`、`artifact gate 与 canonical ladder 回 README / 102`
+  - 地图页若再次长回“更稳读法 / 四步顺序 / 第二前门式桥接”开场，默认优先削掉
+- 当前批次继续新增一条 why-proof-not-post-gate live 记忆：
+  - `87` 默认继续只承担 `why-proof`，不承担 landing 之后的后置验收页职责
+  - `quality gate` 默认继续发生在 `architecture landing card` 之后，但只复用 `87` 的三条命题，不把 `87` 再拉回成回跳页
+- 最新根仓同步记忆（2026-04-08，本批次四次深化）继续保持健康态：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 deep-why-no-route-scaffold live 记忆：
+  - `06` 深段默认继续不再靠“统一回某页”支撑判断；若删掉 route note 后段落就不成立，默认判为 route masquerading as why
+  - 更稳的默认修法是把每段压回一个可反驳对象：Prompt 回 `compiled world verdict`，治理回 `lease checkpoint`，源码质量回 `later-maintainer veto`
+- 当前批次继续新增一条 source-quality-single-handoff live 记忆：
+  - 源码质量线默认继续把 later maintainer 的消费顺序写死成 `102 -> 87 -> architecture landing card -> local quality gate`
+  - 这道 `quality gate` 默认继续复用 `87` 的三条 why-proof 命题，但 gate 本身发生在 landing card 之后，不把 `87` 误读成后置验收页
 - 最新根仓同步记忆（2026-04-08，本批次三次深化）继续保持健康态：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
 - 当前批次继续新增一条 why-survives-route-removal live 记忆：
   - `03 / 06` 默认继续把 why 页自校压成一句硬规则：删掉 `next-hop / owner page / route note` 之后，整段若不成立，它就不是 why，而只是 route

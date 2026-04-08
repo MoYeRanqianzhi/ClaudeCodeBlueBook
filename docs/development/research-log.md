@@ -5,6 +5,12 @@
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 继续把安全正文推进到 `321-327`，把附录推进到 `305-311`，把源码剖面推进到 `172-178`；链路从 `stronger-request cleanup-runtime-conformance-governance` 一直推进到 `stronger-request cleanup-resurrection-governance`，说明旧 cleanup carrier 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone 与 resurrection 仍是分层治理，而不是单一“cleanup done”结果词。
 - 本轮新的机制证据结论：新增证据继续把 `plans / diagnostics / orphan / tombstone / re-entry` 的关系压成更硬的制度边界。repo 现在已经把 migration clock、visibility cutoff、tombstone marker、remove-orphan marker 与 refresh / resume 路径拆成不同层 truth，因此 `旧对象还可见` 不等于 `旧对象仍被承认`，`留下墓碑` 也不等于 `已经具备复活资格`。
 - 本轮新的目录同步结论：安全目录与持久化记忆已对应到 `security=328 / appendix=311 / source-notes=178`；研究正文继续坚持“主目录只写机制本体，开放问题只留在隔离记忆层”的边界，不把开放问题回灌到安全前门。
+- 本轮新的自校协议结论：`06` 的 `7.2 入口判据` 与若干深段现在继续从 route-policing 转向更硬的因果检查。新的默认问法不再是“有没有新增入口”，而是“有没有逼 later consumer 重谈同一主语、证据级别或 first-reject path”；这让 `06` 更像一张最小可反驳对象卡，而不是一张隐形目录法。
+- 本轮新的源码地图结论：`01-源码结构地图` 顶部现已继续收成更薄的 repo-specific map，删掉了部分“更稳的读法 / 四步顺序”式前门语气，只保留地图页最少必要的定位公式与三条桥接句。
+- 本轮新的源码质量纠偏结论：`87` 的正职继续明确为 `why-proof`，而不是 landing 之后再跳回去的后置 gate 页面。更稳的默认顺序已再次校正成 `102 -> 87 -> architecture landing card -> local quality gate`；其中 gate 只复用 `87` 的三条命题，不改变 `87` 的页职责。
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
+- 本轮新的深段自校结论：`06` 的 6.32、6.35、6.37-6.49 等深段现在进一步从 “统一回 owner page” 收回到真正的 why。新的默认句法是：如果一段解释删掉 route note 后就站不住，它只是 route，不是自校；每段都应直接回答一个可反驳对象，而不是把 owner nouns 当脚手架。
+- 本轮新的源码质量 handoff 结论：`87`、根 `README` 与 `navigation/README` 现在更明确把 later maintainer 的默认消费顺序固定成 `102 -> 87 -> architecture landing card -> local quality gate`。这意味着 `87` 的正职仍是 `why-proof`，而 landing 之后的 gate 只是复用 `87` 的三条命题，不再把 `87` 误读成后置验收页。
 
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
 - 本轮新的 why-page 结论：`03` 与 `06` 现在更明确把高流量 why 页的最低自校写成一句硬规则：删掉 `next-hop / owner page / route note` 后若整段不成立，它就只是 route，不是 why。这让 `03` 更像制度因果页，`06` 更像可反驳自校页，而不是隐形导航页。
