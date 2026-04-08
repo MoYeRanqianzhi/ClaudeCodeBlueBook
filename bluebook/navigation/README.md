@@ -1,15 +1,11 @@
 # 跨目录入口
 
-`navigation/` 只做跨目录反查，不重新定义三条母线。只有两种情况留在这里：
+`navigation/` 只做跨目录 artifact gap 反查，不重新定义三条母线。只有两种情况留在这里：
 
 1. 你已经知道主语，只缺下一层证据或 next-hop。
 2. 你在争某页是否越位改判。
 
-如果你还缺主语或最小顺序，先回 [../README.md](../README.md)；但三条线的正式 first-hop 要记死：
-
-- Prompt 顶层主语与 first-reject path，直接回 `philosophy/84`
-- 治理首答，直接回 `../10`
-- 当前真相与 source-quality artifact chain，直接按 `../README.md -> guides/102`
+如果你还缺主语或最小顺序，先回 [../README.md](../README.md)；这里不再重做 first-hop 判定，只负责在主语已知后指出缺的是哪种 artifact / verdict。
 
 这里默认只回答 artifact gap，而不是页面归属：
 
@@ -30,23 +26,21 @@
 - 保留失真样本，回 `casebooks/`
 - 记录稳定经验与批次记忆，回 `docs/`
 
-## 三类第一问题缺口
+## 三类常见 artifact gap
 
-- 谁在定义世界
-  - 缺顶层主语与 `first-reject path`，回 `philosophy/84`
-  - 若争的是继承是否越权、continue qualification 或续租是否合法，回 `84 -> 81`
-  - 缺“为什么这轮还不该重谈世界定义，而只该继续压回同一因果律”，回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md) 与 [../../docs/development/00-研究方法.md](../../docs/development/00-%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95.md)
-- 谁在为扩张定价
-  - 缺治理首答，回 `../10`
-  - 已确认主语，只缺 signer / mechanism，回 `security`；缺 tail readback / reopen qualification，回 `risk`；缺 execution / repair drill，回 `playbooks`
-  - 还在争 mode、usage、approval 或 cleanup result 谁说了算，先退回 `../10`
-- 谁在宣布现在
-  - 缺 `ceiling note`、`downgrade stamp` 或 `unresolved-authority note`，回 `guides/102`
-  - 已有 promotion proof 但还没写出 `change-risk record`，继续停在 `guides/102`
-  - 已有 `change-risk record` 但还没写 `why-proof`，回 `philosophy/87`
-  - 已有 `change-risk record` 与 `why-proof`，但还没完成 `landing card / first fallback`，回 `architecture/README`
-  - 已有 `landing card` 但还没过 `quality gate`，继续停在 `architecture/README` 按 `87` 的三条 why-proof 命题补齐
-  - artifact 已齐但还在混 runtime-core evidence、operator-governance evidence 与公开镜像缺口，先退回 `06`
+- 已知是 Prompt 线
+  - 缺 `compiled world verdict / first reject`，回 `philosophy/84`
+  - 缺 continue qualification、继承越权或 lawful forgetting 的对象展开，回 `84 -> 81`
+  - 缺 why / 自校，而不是缺对象与首跳，回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md)
+- 已知是治理线
+  - 缺 `repricing proof / lease checkpoint / cleanup witness`，先回 `../10`
+  - 已知主语，只缺 signer / mechanism，回 `security`；缺 tail readback / reopen qualification，回 `risk`；缺 execution / repair drill，回 `playbooks`
+  - 如果还在争 mode、usage、approval 或 cleanup result 谁说了算，说明主语未定清，先退回 `../10`
+- 已知是当前真相保护线
+  - 缺 `ceiling note`、`downgrade stamp`、`unresolved-authority note` 或 `change-risk record`，回 `guides/102`
+  - 缺 why-proof，回 `philosophy/87`
+  - 缺 `landing card / local quality gate`，回 `architecture/README`
+  - 如果 artifact 已齐但还在混 `runtime-core evidence`、`operator-governance evidence` 与公开镜像缺口，回 `06`
 
 ## 稳定节点
 

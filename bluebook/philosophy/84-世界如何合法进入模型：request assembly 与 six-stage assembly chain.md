@@ -30,6 +30,7 @@
 - 只有当 `stable prefix / visibility pruning / delegated-context downgrade / continuation qualification` 被同一条 authority order 编译成 `compiled world verdict`，当前世界才算被合法编译进模型。
 
 真正成立的世界准入，是 runtime 先把 `compiled world verdict` 编译成一个可被多 consumer 复用的合法输入秩序；后来的 `verify / delegate / tool choice / resume / handoff` 因此不必重谈“现在是什么世界”。
+这种强感首先来自当前 turn 已继承同一份 `compiled world verdict`，模型不必先重建世界，只需在已裁定边界内选择动作。
 
 Prompt potency 真正值钱的地方，也不是 prompt prose 更强，而是四个制度动作同时成立：
 
@@ -55,6 +56,7 @@ Prompt potency 真正值钱的地方，也不是 prompt prose 更强，而是四
 
 更准确地说，被编译的不是单一 system prompt，而是一条多 surface 的输入秩序；surface 可以复数，但世界定义权不能复数。
 更硬一点说，晚绑定只有在填充预授权槽位、而不改写 `Authority / Boundary / Transcript / Lineage / Continuation` 时才合法；后来的 consumer 只要改写了其中任何一项，就已经从 lawful late binding 滑回了 renegotiation。
+所谓 `pre-authorized slot`，只允许在既定 `Authority / Boundary / Transcript / Lineage / Continuation` 内填值；一旦需要改写其中任一项，就是 renegotiation，不再是 late binding。
 
 | surface mutation | 是否允许 | 破坏了哪一环 | 降格去向 | 观察者证据 |
 |---|---|---|---|---|
