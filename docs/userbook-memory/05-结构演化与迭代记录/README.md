@@ -253,6 +253,7 @@
 - [249-2026-04-08-long-task continuity contract table split 拆分记忆.md](./249-2026-04-08-long-task%20continuity%20contract%20table%20split%20拆分记忆.md)
 - [250-2026-04-08-long-task continuity contract table refinement 拆分记忆.md](./250-2026-04-08-long-task%20continuity%20contract%20table%20refinement%20拆分记忆.md)
 - [251-2026-04-08-session operations top-level lift 拆分记忆.md](./251-2026-04-08-session%20operations%20top-level%20lift%20拆分记忆.md)
+- [252-2026-04-08-session operations scope guard split 拆分记忆.md](./252-2026-04-08-session%20operations%20scope%20guard%20split%20拆分记忆.md)
 
 用途：
 
