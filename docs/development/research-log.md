@@ -8,6 +8,15 @@
 - 本轮新的 source-quality split 结论：`102` 现已把 candidate 页规则收回到 evidence-status + generic handoff，不再提前点名 `sole writer / writeback seam / freshness gate`；`87` 现已进一步退回 why，不再重列 truth ladder 或 truth-plane 顺序；`architecture/README` 也改成只回答四个对象问题，而不再像第二条 frontdoor 公式链。
 - 本轮新的 editorial-boundary 结论：`41` 现已把 `第一次定义权 / route law` 这组编辑治理词退回 `navigation/README / 04`；哲学导航页只保留 why，不再公开承载 editorial rulebook。
 - 本轮新的 residual-vocabulary 结论：`84` 深段里的 `Prompt 效力` 现已改写成 `世界准入能力`；`102` 深段里的 `sole writer / writeback path / freshness gate` 现已退回 generic object-level authority wording；`87` 与 `41` 也继续收掉了 `writeback seam` 对象矩阵提示与 `route law / 第一次定义权` 这组编辑法词。
+- 本轮新的 sovereignty-wording 结论：`03` 的 `0.0` 与顶层三分法现在更明确继续写成 `世界准入 / 扩张定价 / 当前真相`，不再由 `Prompt` 结果词领起首答；`41` 的 Prompt 线开头也继续改成“世界定义权、消费边界与继续资格”。
+- 本轮新的 security-entry 结论：`security/README` 现在更明确继续只收 `signer ambiguity / ledger-verdict ambiguity / cleanup authority ambiguity` 这三种进入条件，不再把 readback 或 reopen 词当入口桶。
+- 本轮新的 102-visible-name 结论：`guides/102` 现在更明确把 `contract / registry / current-truth surface / consumer subset / hotspot kernel / mirror gap discipline` 写成 visible entry names；object-level signals 只再承担 candidate evidence，不承担对象 verdict。
+- 本轮新的 87-why-only 结论：`87` 的问题列表和边界可证段现在更明确把 ladder 与 object next hop 继续还给 `102 / architecture/README`，自身只保留合法复杂度中心、`one writable present` 与 later maintainer veto 的 why。
+- 本轮新的 prompt-frontdoor 结论：`03 / 41 / 84` 现在更明确把 Prompt 线彻底收回“世界准入 / 世界定义权 / 世界准入能力”这组 sovereignty 语言；`84` 的 deep section 也不再公开发布 witness/test rubric，而只保留一条原则句和 handoff。
+- 本轮新的 owner-card 结论：`10` 现已把 crosswalk 收回 `strong signer / weak readback / continuation consumer` 三列，不再继续生产 `liability-threshold readback / reopen tail evidence / finality receipt` 这组二阶 taxonomy。
+- 本轮新的 security-index 结论：`security/README` 现在更明确只保留 `signer ambiguity / ledger-verdict ambiguity / cleanup authority ambiguity` 三类入口，不再把 readback、reopen 或 deeper cleanup vocabulary 当成首页分流词。
+- 本轮新的 61-why 结论：`61` 现在进一步把 `future-turn decision authority lease`、`classifier`、`working set` 和 stable-bytes inventory 收回到抽象 why，只保留“未被重新定价的继续会同时延长 authority 与成本在场”“关键字节必须被当成制度资产稳定下来”这两条原则。
+- 本轮新的 source-quality split 结论：`102` 现已把 handoff 改写成 unresolved-authority note，而不是 route 义务；`87` 的 temporal honesty 也退回“旧时间证据不得直接跨时写 present”的原则句；`architecture/README` 开头则只保留四个对象问题，不再先教前置页位。
 - 本轮新的 prompt-title 结论：`84` 现在更明确把顶层 owner 标题收回“Prompt 首先是世界准入顺序，不是文案技巧”，问题列表也从 object inventory 收回到 `single-source world definition / projection discipline / continuation qualification` 这组 invariant；`84` 页首不再由结果词领路。
 - 本轮新的 03-summary 结论：`03` 的“一句话收束”现在更明确先说“三条制度如何先成立”，再说运行时平面怎样协同承接，不再让 runtime planes 在总结句里重新升格成第一设计单位。
 - 本轮新的 prompt-section-title 结论：`03` 的 `25 / 28` 现在继续把标题从平行 Prompt first-answer 收回成 `continue verdict` 与 `same-world 边界判断`，不再用“Prompt 首先...”这类句法重复 owner-level noun。

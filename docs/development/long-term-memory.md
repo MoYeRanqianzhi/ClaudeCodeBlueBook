@@ -27,6 +27,33 @@
   - `84` 默认继续不用 `Prompt 效力` 这类结果词承接深段解释，而改用 `世界准入能力`
   - `102` 默认继续不用 `sole writer / writeback path / freshness gate` 这组 object noun 充当前门级 wording
   - `41 / 87` 默认继续不用 `route law / 第一次定义权 / writeback seam 对象矩阵` 这类编辑法或对象矩阵词承担哲学页主句
+- 当前批次继续新增一条 sovereignty-wording-across-frontdoors live 记忆：
+  - `03 / 41 / 84` 默认继续把 Prompt 线写成 `世界准入 / 世界定义权 / 世界准入能力`，不再让 `Prompt` 结果词领起前门
+  - 更稳的默认修法是：`先写 sovereignty question -> 再写 downstream mechanism name`
+- 当前批次继续新增一条 security-three-ambiguities live 记忆：
+  - `security/README` 默认继续只按 `signer ambiguity / ledger-verdict ambiguity / cleanup authority ambiguity` 分流
+  - 任何 readback、reopen、consumer class 词若重新出现在安全前门，默认回 `10 / risk`
+- 当前批次继续新增一条 102-visible-entry-names live 记忆：
+  - `102` 默认继续把 `contract / registry / current-truth surface / consumer subset / hotspot kernel / mirror gap discipline` 当 visible entry names
+  - object-level signals 默认只配当 candidate evidence，不直接升级成对象 verdict
+- 当前批次继续新增一条 87-ladder-free-why live 记忆：
+  - `87` 默认继续不在问题列表或边界段里重发 ladder、truth-plane 顺序或对象 next hop
+  - `87` 的更稳默认口径只剩：合法复杂度中心、边界可证、`one writable present`、future maintainer veto、refactor option value
+- 当前批次继续新增一条 prompt-frontdoor-sovereignty-only live 记忆：
+  - `03 / 41 / 84` 默认继续把 Prompt 线写成 `世界准入 / 世界定义权 / 世界准入能力`
+  - `84` 的 deep section 默认继续不公开发布 witness/test rubric，而只保留原则句与 handoff
+- 当前批次继续新增一条 governance-card-three-column live 记忆：
+  - `10` 默认继续只保留 `strong signer / weak readback / continuation consumer` 三列
+  - 更细的 liability / reopen / finality taxonomy 默认统一回 `risk` 与 deeper owner pages
+- 当前批次继续新增一条 security-three-entry-ambiguities live 记忆：
+  - `security/README` 默认继续只按 `signer ambiguity / ledger-verdict ambiguity / cleanup authority ambiguity` 分流
+  - 首页若再次出现 readback/reopen/deeper cleanup 词，默认按 vocabulary leak 处理
+- 当前批次继续新增一条 61-two-principles-only live 记忆：
+  - `61` 默认继续只保留两条最贵 why：`未被重新定价的继续会同时延长 authority 与成本在场`、`关键字节必须被当成制度资产稳定下来`
+  - `classifier / working set / stable-bytes inventory` 这类对象例子默认继续回源码锚点与 owner page
+- 当前批次继续新增一条 unresolved-authority-note live 记忆：
+  - `102` 默认继续把 candidate 页 handoff 写成 unresolved-authority note，而不是 route law
+  - `87` 与 `architecture/README` 默认继续只回答 why 与 object layer，不替 `102` 承担证据路由义务
 - 当前批次继续新增一条 prompt-title-not-effect-word live 记忆：
   - `84` 默认继续把顶层 owner 标题与问题列表写成世界准入顺序、single-source world definition、projection discipline 与 continuation qualification
   - `84` 默认继续不让结果词、magic framing 或 surface inventory 领第一页

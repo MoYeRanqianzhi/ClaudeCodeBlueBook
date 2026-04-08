@@ -61,7 +61,7 @@
 Claude Code 更成熟的地方在于：
 
 - 它先决定谁必须先检查
-- 具体顺序差异只是在证明同一条原则：检查必须落在最有治理价值的时点
+- 具体顺序差异只是在证明同一条原则：检查必须落在最有治理价值的时点；更细 precedence 统一回 `83 / security / playbooks`
 
 这说明安全与省 token 的共同问题其实是：
 
@@ -134,13 +134,9 @@ Claude Code 并不追求“检查越多越安全”。
 
 如果答案是否定的，系统就会停止继续烧 token。
 
-更硬一点说，主上下文席位也不是纯成本位，而是 `future-turn decision authority lease`；大结果继续留在席位里，效果上等价于未经重定价地延长权威在场。
+更硬一点说，未被重新定价的继续会同时延长 authority 与成本在场；它不是便宜，而是把代价推迟到后面。
 
-这里也要先拒绝一种常见误写：
-
-- `classifier` 不是治理控制面之外的免费裁判
-
-它只有在还能改变 `verdict` 时才值得调用；否则系统只是在用额外 token 购买“看起来更谨慎”的幻觉。凡是判断已经不会改变 authority allocation，却还继续保留大 working set、继续重试自动化或继续调用 classifier，都会把 why 页重新写回 owner taxonomy；具体反例统一回 `10 / security / playbooks`。
+这里也要先拒绝一种常见误写：当判断已经不会改变 authority allocation，却还继续加检、重试自动化或保留过大的工作集时，系统只是在用额外 token 购买“看起来更谨慎”的幻觉。具体反例统一回 `10 / security / playbooks`。
 
 所以 Claude Code 的省 token，并不是：
 
@@ -163,12 +159,7 @@ Claude Code 的很多高级设计都在强调：
 
 - 关键字节必须稳定
 
-例如：
-
-1. system prompt sections 的 cache 与显式危险标记；
-2. sticky beta / latched header；
-3. tool-result replacement replay；
-4. prompt cache break diff 与 root-cause 解释。
+这里先只保留抽象判断：凡会同时改写治理、成本与解释一致性的字节，都应被当成制度资产稳定下来；更细的缓存、重放与 break 证据统一回源码锚点与对象页。
 
 这说明对 Claude Code 来说，真正要被保护的不是“缓存命中率”这个结果，而是：
 

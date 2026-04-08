@@ -24,25 +24,16 @@
 
 如果把安全入口判定继续压成最短公式，也只剩三种不对称：
 
-1. `signer vs consumer`
-   - 谁配签字，谁只配读取投影
-2. `ledger vs verdict`
+1. `signer ambiguity`
+   - 谁配签字
+2. `ledger / verdict ambiguity`
    - 谁在记账，谁在宣布治理事实
-3. `cleanup authority vs later readback`
-   - 谁能收口，谁只能消费收口后的读回面
+3. `cleanup authority ambiguity`
+   - 谁能收口
 
 如果你已经开始重发 canonical chain 的 stage names，说明这页又在代签 `10`。
 
-如果继续把 `security/` 的目录发言权也压成最短公式，也只该剩三句：
-
-1. `signer / ledger / cleanup authority`
-   - 谁配签字、谁只配记账、谁只配收口。
-2. `governance mechanism speaking right`
-   - 哪条 signer / verdict / liability 机制在安全侧被看清。
-3. `no user-side mechanism override`
-   - 用户侧误伤、恢复与入口语义差不在这里第一次定义机制主语。
-
-如果一个安全判断还压不回这三条，它就还停在规则堆或工具堆层。
+如果一个安全判断还压不回 `signer ambiguity / ledger-verdict ambiguity / cleanup authority ambiguity` 这三类入口，它就还停在规则堆或工具堆层。
 如果一个安全判断还答不上“它保护的到底是哪种工作对象、哪段收费链、哪个入口只是证据层 consumer”，就说明它还没压回第一性原理。
 
 ## 高阶入口顺序
@@ -59,20 +50,20 @@
   看为什么安全与省 token 共享的是同一条秩序，而不是同一个单点预算器。
 - [architecture/83：反扩张治理流水线](../architecture/83-%E5%8F%8D%E6%89%A9%E5%BC%A0%E6%B2%BB%E7%90%86%E6%B5%81%E6%B0%B4%E7%BA%BF%EF%BC%9Atrusted%20inputs%E3%80%81distributed%20ask%20arbitration%E3%80%81deferred%20visibility%E4%B8%8Econtinuation%20pricing.md)
   看治理控制面如何把定价对象与 choke point 写成同一条流水线。
-- 若已确认自己缺的是 signer / projection / cleanup 不对称，按 `43 -> 49 -> 127 -> 134 -> 157` 继续下潜，而不要把这些机制读成彼此独立的安全专题。
+- 若已确认自己缺的是 signer / projection / cleanup 不对称，继续下潜到对应编号页，而不要把这些机制读成彼此独立的安全专题。
 
 ## 什么时候进来
 
 - 当你已经知道统一定价治理成立，但还没回答 signer、ledger 与 cleanup 责任究竟落在哪些对象上。
 - 当 signer 到底是谁仍然模糊，弱层开始越级替强层说话。
-- 当 ledger 与 verdict 的边界模糊，读回结果开始冒充治理事实。
+- 当 ledger 与 verdict 的边界模糊，结果词开始冒充治理事实。
 - 当 cleanup authority 到底落在哪仍不清楚，收口后谁还配负责也开始失真。
 
 更稳的读法是：若 usage 读数、permission 投影、cleanup 结果词或 default continuation 开始替 signer / verdict 说话，把它们先当安全症状，而不是 canonical reject semantics；具体弱读回与拒收语义统一回 `../10`。
 
 ## 继续下潜时
 
-- 只按对象 handoff 继续：来源主权、能力边界与显式降级看 `00-29`；当前真相、账本与 failure semantics 看 `30-138`；`receipt -> completion -> finality -> forgetting` 与 cleanup ladder 看 `147-224`。
+- 只按对象 handoff 继续：来源主权、能力边界与显式降级看 `00-29`；当前真相、账本与 failure semantics 看 `30-138`；cleanup 收口对象继续看 `147-224`。
 - 只按证据层 handoff 回跳：字段矩阵与速查表回 [appendix/README.md](appendix/README.md)，源码证据簇回 [source-notes/README.md](source-notes/README.md)，长期记忆与目录治理回 [../../docs/development/security/README.md](../../docs/development/security/README.md)。
 
 ## 维护约定

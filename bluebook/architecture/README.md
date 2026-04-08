@@ -1,7 +1,6 @@
 # 架构专题
 
 `architecture/` 只负责对象层：谁在写现在，哪些 truth plane 在说话，writeback seam 在哪，第一退回层落哪。
-如果你还没先建立 `09 / 05 / 15 / 41` 这组高阶判据，不要把这里读成目录库存；这里回答的是这些判据怎样落成运行时对象、状态机与 choke point。
 
 > Evidence mode
 > - 公开镜像的证据上限、canonical ladder 与降格规则统一回 [../guides/102](../guides/102-%E5%A6%82%E4%BD%95%E7%BB%99%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E5%81%9A%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7%EF%BC%9Acontract%E3%80%81registry%E3%80%81authoritative%20surface%E3%80%81adapter%20subset%E4%B8%8Ehotspot%20gap%20discipline.md)；本 README 只承接对象、状态机、writeback seam 与 choke point。
