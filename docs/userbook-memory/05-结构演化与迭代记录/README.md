@@ -241,6 +241,17 @@
 - [237-2026-04-08-startup entry mainline drift alignment 拆分记忆.md](./237-2026-04-08-startup%20entry%20mainline%20drift%20alignment%20拆分记忆.md)
 - [238-2026-04-08-startup entry index-layer routing split 拆分记忆.md](./238-2026-04-08-startup%20entry%20index-layer%20routing%20split%20拆分记忆.md)
 - [239-2026-04-08-startup command-index cross-routing split 拆分记忆.md](./239-2026-04-08-startup%20command-index%20cross-routing%20split%20拆分记忆.md)
+- [240-2026-04-08-settings status budget top-level lift 拆分记忆.md](./240-2026-04-08-settings%20status%20budget%20top-level%20lift%20拆分记忆.md)
+- [241-2026-04-08-settings usage product-plane alignment 拆分记忆.md](./241-2026-04-08-settings%20usage%20product-plane%20alignment%20拆分记忆.md)
+- [242-2026-04-08-settings index to self-check handoff 拆分记忆.md](./242-2026-04-08-settings%20index%20to%20self-check%20handoff%20拆分记忆.md)
+- [243-2026-04-08-settings topic-layer first-hop split 拆分记忆.md](./243-2026-04-08-settings%20topic-layer%20first-hop%20split%20拆分记忆.md)
+- [244-2026-04-08-extension operations top-level lift 拆分记忆.md](./244-2026-04-08-extension%20operations%20top-level%20lift%20拆分记忆.md)
+- [245-2026-04-08-extension operations topic-layer first-hop split 拆分记忆.md](./245-2026-04-08-extension%20operations%20topic-layer%20first-hop%20split%20拆分记忆.md)
+- [246-2026-04-08-long-task continuity top-level lift 拆分记忆.md](./246-2026-04-08-long-task%20continuity%20top-level%20lift%20拆分记忆.md)
+- [247-2026-04-08-long-task continuity topic-layer first-hop split 拆分记忆.md](./247-2026-04-08-long-task%20continuity%20topic-layer%20first-hop%20split%20拆分记忆.md)
+- [248-2026-04-08-long-task continuity reading-path lift 拆分记忆.md](./248-2026-04-08-long-task%20continuity%20reading-path%20lift%20拆分记忆.md)
+- [249-2026-04-08-long-task continuity contract table split 拆分记忆.md](./249-2026-04-08-long-task%20continuity%20contract%20table%20split%20拆分记忆.md)
+- [250-2026-04-08-long-task continuity contract table refinement 拆分记忆.md](./250-2026-04-08-long-task%20continuity%20contract%20table%20refinement%20拆分记忆.md)
 
 用途：
 

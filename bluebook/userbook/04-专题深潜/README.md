@@ -30,6 +30,24 @@
 - [18-CLI 根入口、旗标与启动模式专题.md](./18-CLI%20%E6%A0%B9%E5%85%A5%E5%8F%A3%E3%80%81%E6%97%97%E6%A0%87%E4%B8%8E%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F%E4%B8%93%E9%A2%98.md)
 - 如果你卡住的是 `claude auth` / `claude mcp` / `claude plugin` / `claude doctor` 与 `/login` / `/mcp` / `/plugin` / `/status` 为什么不在一层，再接着看 [19-会外控制台与会内面板专题.md](./19-%E4%BC%9A%E5%A4%96%E6%8E%A7%E5%88%B6%E5%8F%B0%E4%B8%8E%E4%BC%9A%E5%86%85%E9%9D%A2%E6%9D%BF%E4%B8%93%E9%A2%98.md)
 
+如果你现在主要卡在 `/status`、`/doctor`、`/usage`、`/config`、`/model`、`/effort` 为什么不在一层，而不是 deeper command semantics，先看：
+
+- [../00-阅读路径.md](../00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md) 里的“路径 16：我想分清 Settings tab、独立诊断屏、调参命令与预算分流”
+- [10-状态、额度、模型与节奏运营专题.md](./10-%E7%8A%B6%E6%80%81%E3%80%81%E9%A2%9D%E5%BA%A6%E3%80%81%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%8A%82%E5%A5%8F%E8%BF%90%E8%90%A5%E4%B8%93%E9%A2%98.md)
+- 如果你主要卡在运行时自检三件套的对象边界，再接着看 [../05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md](../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/06-Status%E3%80%81Doctor%E3%80%81Usage%EF%BC%9A%E8%BF%90%E8%A1%8C%E6%97%B6%E8%87%AA%E6%A3%80%E3%80%81%E9%A2%9D%E5%BA%A6%E4%B8%8E%E8%AF%8A%E6%96%AD.md)
+
+如果你现在主要卡在 `/memory`、`/compact`、`/resume` 各自延续什么对象，以及长任务为什么不该靠“开新会话重讲”来续上，而不是旧会话发现细节，先看：
+
+- [../01-主线使用/04-会话、恢复、压缩与记忆.md](../01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/04-%E4%BC%9A%E8%AF%9D%E3%80%81%E6%81%A2%E5%A4%8D%E3%80%81%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%AE%B0%E5%BF%86.md)
+- [02-连续性与记忆专题.md](./02-%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E8%AE%B0%E5%BF%86%E4%B8%93%E9%A2%98.md)
+- 如果你主要卡在“以前的工作到底在哪里、该恢复哪个会话”，再接着看 [12-会话发现、历史检索与恢复选择专题.md](./12-%E4%BC%9A%E8%AF%9D%E5%8F%91%E7%8E%B0%E3%80%81%E5%8E%86%E5%8F%B2%E6%A3%80%E7%B4%A2%E4%B8%8E%E6%81%A2%E5%A4%8D%E9%80%89%E6%8B%A9%E4%B8%93%E9%A2%98.md)
+
+如果你现在主要卡在 `/plugin`、`/mcp`、`/skills`、`/hooks`、`/agents` 各自管什么，以及 `/reload-plugins` 为什么只是当前 session 刷新而不是安装器，先看：
+
+- [../00-阅读路径.md](../00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md) 里的“路径 91：我想稳地管理插件、MCP、skills、hooks 和 agents”
+- [17-插件、MCP、技能、Hooks 与 Agents 运维专题.md](./17-%E6%8F%92%E4%BB%B6%E3%80%81MCP%E3%80%81%E6%8A%80%E8%83%BD%E3%80%81Hooks%20%E4%B8%8E%20Agents%20%E8%BF%90%E7%BB%B4%E4%B8%93%E9%A2%98.md)
+- 如果你主要卡在“到底该选技能、插件、MCP 还是 Hooks 这一层”，再接着看 [../05-控制面深挖/02-MCP、插件、技能与 Hooks：如何选择正确扩展层.md](../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/02-MCP%E3%80%81%E6%8F%92%E4%BB%B6%E3%80%81%E6%8A%80%E8%83%BD%E4%B8%8E%20Hooks%EF%BC%9A%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E6%AD%A3%E7%A1%AE%E6%89%A9%E5%B1%95%E5%B1%82.md)
+
 - [01-代码工作流专题.md](./01-%E4%BB%A3%E7%A0%81%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%B8%93%E9%A2%98.md)
 - [02-连续性与记忆专题.md](./02-%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E8%AE%B0%E5%BF%86%E4%B8%93%E9%A2%98.md)
 - [08-上下文接入、附件与提示编译专题.md](./08-%E4%B8%8A%E4%B8%8B%E6%96%87%E6%8E%A5%E5%85%A5%E3%80%81%E9%99%84%E4%BB%B6%E4%B8%8E%E6%8F%90%E7%A4%BA%E7%BC%96%E8%AF%91%E4%B8%93%E9%A2%98.md)
