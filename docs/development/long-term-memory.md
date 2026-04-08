@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 owner-pages-need-veto-and-retreat-defaults live 记忆：
+  - `81 / 85 / 87` 现在应直接在 owner why 页里保留最短的 `local veto cue + first retreat layer` 默认句，而不只把这组对象留给 `03 / 06 / 102`
+  - 更稳的默认写法是：Prompt 线先问失稳时 `section registry / protocol transcript / continue qualification` 谁先失守；治理线先问 `weak readback / host replay / default continue / reopen tail evidence` 是否越权代签；源码质量线若答不出第一条局部 veto 与第一退回层，就先把 advancedness claim 降格成 `layout praise`
 - 当前批次继续新增一条 route-pages-must-exit-before-branching live 记忆：
   - `09 / 15` 现在应直接把治理线与 current-truth 线写成“先离开当前导航页，再按 why / security / object 分支”的出口语法，而不是在页内广播 owner chain
   - 更稳的默认写法是：总图页与导航页先给第一出口 `10 / guides/102`，再分流到 `85 / 61 / security/README` 或 `86 / 87 / architecture/README`
