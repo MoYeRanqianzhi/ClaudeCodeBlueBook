@@ -89,9 +89,9 @@
 
 ## 稳定面、条件面与内部面
 
-- 稳定可见：`/permissions`、`/plan`、EnterPlanMode / ExitPlanMode、EnterWorktree / ExitWorktree、`/add-dir`
-- 条件公开：teammate / leader 审批联动、remote managed settings、某些 channel / Git / worktree 上下文前提、`/add-dir` 的 local-settings 持久化选择
-- 内部/灰度：更激进的 auto / coordinator / swarm 治理链、leader approval handoff、fetch 跳过策略、symlink 大目录优化等实现细节
+- 稳定可见：`/permissions`、`/plan`、EnterPlanMode / ExitPlanMode、EnterWorktree / ExitWorktree、`/add-dir`，以及 `/add-dir` 的 session / local-settings 两种持久度选择
+- 条件公开：teammate 里的计划审批联动、某些 channel / Git / worktree 上下文前提
+- 内部/灰度：更激进的 auto / coordinator / swarm 治理链、leader approval handoff、remote managed settings、fetch 跳过策略、symlink 大目录优化等实现细节
 
 ## 苏格拉底式自审
 

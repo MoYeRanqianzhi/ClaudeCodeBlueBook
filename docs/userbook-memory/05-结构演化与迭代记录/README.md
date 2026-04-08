@@ -232,6 +232,7 @@
 - [228-2026-04-08-headless result-summary-protocol physical entry split 拆分记忆.md](./228-2026-04-08-headless%20result-summary-protocol%20physical%20entry%20split%20拆分记忆.md)
 - [229-2026-04-08-multi-frontend continuity vs conditional-remote split 拆分记忆.md](./229-2026-04-08-multi-frontend%20continuity%20vs%20conditional-remote%20split%20拆分记忆.md)
 - [230-2026-04-08-safe action-radius front door split 拆分记忆.md](./230-2026-04-08-safe%20action-radius%20front%20door%20split%20拆分记忆.md)
+- [231-2026-04-08-safe action-radius stable-gray alignment 拆分记忆.md](./231-2026-04-08-safe%20action-radius%20stable-gray%20alignment%20拆分记忆.md)
 
 用途：
 
