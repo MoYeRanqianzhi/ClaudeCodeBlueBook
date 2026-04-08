@@ -281,6 +281,7 @@
 - [277-2026-04-08-object triage mini-tables split 拆分记忆.md](./277-2026-04-08-object%20triage%20mini-tables%20split%20拆分记忆.md)
 - [278-2026-04-08-topic README front-door split 拆分记忆.md](./278-2026-04-08-topic%20README%20front-door%20split%20拆分记忆.md)
 - [279-2026-04-08-control README front-door split 拆分记忆.md](./279-2026-04-08-control%20README%20front-door%20split%20拆分记忆.md)
+- [280-2026-04-08-skills vs plugin matrix fallback cleanup 拆分记忆.md](./280-2026-04-08-skills%20vs%20plugin%20matrix%20fallback%20cleanup%20拆分记忆.md)
 
 用途：
 
