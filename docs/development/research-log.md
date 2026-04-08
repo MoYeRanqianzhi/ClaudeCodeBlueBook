@@ -2,6 +2,11 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `363`、把附录推进到 `347`、把源码剖面推进到 `214`；链路从 `stronger-request cleanup-readiness-governance` 继续推进到 `stronger-request cleanup-continuity-governance`，说明 stronger-request cleanup 进一步进入“当前可用性在时间里怎样继续成立”的治理层。
+- 本轮新的机制证据结论：新增 `214` 把 `useManageMCPConnections / toolExecution / print` 压成 stronger-request cleanup 的连续性治理边界，继续证明 `现在可用` 不等于 `持续可用`，`制度知道此刻敢不敢用它` 也不等于 `制度已经知道这份可用性在时间里怎样继续成立`。
+- 本轮新的技术结论：这轮新增证据继续把 stronger-request cleanup 的命题往时间轴再推进一格：对象就绪之后，仍然要面对重试预算、降级、修池、停表与 operator control 这些 continuity 约束；ready truth 本身并不能自动担保 continuity truth。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=364 / appendix=347 / source-notes=214`；本轮继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
+
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `357-362`，把附录推进到 `341-346`，把源码剖面推进到 `208-213`；链路从 `stronger-request cleanup-tombstone-governance` 一直推进到 `stronger-request cleanup-readiness-governance`，说明 stronger-request cleanup 已经从“旧对象怎样留下痕迹、怎样回来”继续推进到“回来后它还算不算被重新授权、重新配置、重新激活并已经就绪”。
 - 本轮新的机制证据结论：新增 `208-213` 继续把 stronger-request cleanup 的后段边界压硬。`208` 把 `tombstone messages / .orphaned_at / migration timestamps` 压成墓碑治理边界；`209` 把 `removeOrphanedAtMarker / refreshActivePlugins / copyPlanForResume` 压成复活治理边界；`210` 把 `deletePluginOptions / setPluginEnabledOp / copyPlanForFork` 压成再赋权治理边界；`211` 把 `savePluginOptions / saveMcpServerUserConfig / PluginOptionsFlow` 压成重配置治理边界；`212` 把 `refreshActivePlugins / reload-plugins / refreshPluginState` 压成重新激活治理边界；`213` 再把 `pluginReconnectKey / MCPServerConnection / ReadMcpResourceTool` 压成就绪治理边界。
 - 本轮新的技术结论：这批新增证据继续证明 `会留墓碑` 不等于 `会让它回来`，`会回来` 不等于 `还是原来那个被授权的对象`，`配置写好了` 不等于 `已经重新生效`，`重新激活` 也不等于 `已经就绪`。
