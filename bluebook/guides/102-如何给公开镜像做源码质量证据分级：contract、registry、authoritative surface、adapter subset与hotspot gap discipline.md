@@ -60,6 +60,7 @@
 - public artifact 只能签它真正公开签出的东西
 - 看得见的 README、schema、registry、热点文件、投影视图与恢复资产，不自动拥有同一种签字权
 - 凡公开 artifact 会改变运行时行为（装配、权限、上下文、目录工作面、代理或工具池），至少还要同时写清 `signer` 与第一条 `local veto cue`；否则它最多停在 `public artifact ceiling`，不配 promotion 成 current-truth claim
+- 更稳一点说，公开 artifact 若还写不清自己的 `effect ceiling`，也不配 promotion：例如 managed settings 是否最高且不可覆盖、`CLAUDE.md` / auto memory 是否只配当 context、subagents 是否拥有独立 context/permissions、async hooks 是否根本无权回头阻断已发生的动作、同一仓库 worktrees 是否共享同一个 auto memory 目录且 project settings 无权改写它。
 
 这一步不过，后面各级判断都会被写浅，因为你会先把“可见”误当成“已被完整证明”。
 更硬一点说，能把 `public artifact ceiling / downgrade / gap note / change-risk record` 固化成统一 speaking-rights protocol，本身就是公开可见的工程先进性，因为它降低的是过度主张、误改与制度失忆成本。
@@ -335,12 +336,15 @@ gap discipline 的价值不是“保守一点”，而是：
 
 `guides/` 在这里只负责这张附表的字段与 gap note 写法，不替其他目录代写具体危险面。
 这张附表也不是变更批准协议，而是把 visible evidence、常见误读、第一条局部拒收线索、降格理由与 unresolved-authority 缺口写实；如果改动前还写不出这张表，current-truth 判断就应继续保持 provisional。
+更硬一点说，能把 `public artifact ceiling / downgrade / gap note / change-risk` 一起写成 later maintainer 可继承的记录协议，本身就是公开可见的工程先进性：它先公开的是拒收与降格能力，而不是过满 promotion。
 
 更稳的记录模板至少应包含下面几列：
 
 | change-risk surface | protected invariant | minimum visible evidence | first local veto cue | first retreat layer | common misread | downgrade note | unresolved-authority note |
 |---|---|---|---|---|---|
 | `<surface>` | `<what it protects>` | `<authoritative proof>` | `<where later maintainer first says no>` | `<where the fallback lands first>` | `<usual wrong reading>` | `<why this stays provisional>` | `<what promotion still lacks>` |
+
+若 `change-risk surface` 本身是公开 operator artifact，`minimum visible evidence` 至少还应写出 `signer` 与 `effect ceiling`。缺任一项时，默认降格回 `public artifact ceiling`，不得 promotion 成 current-truth claim 或稳定 capability claim。
 
 更短地说，这页真正要先写实的是：
 

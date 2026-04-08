@@ -8,6 +8,66 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 governance-typed-tail-evidence live 记忆：
+  - `10 / 85 / 06` 现在应直接把治理尾链 typed 化：入口层唯一认 `reject trio`，usage/status/readback/reopen tail 一律先降回 `weak readback / tail evidence`；`reopen qualification` 与 `evidence binding` 只配当尾链证据；`approval fatigue` 则视为重判资格外泄
+  - 更稳的默认写法是：凡尾链对象不能补 `repricing proof / lease checkpoint / cleanup`，就不配代签继续、重试或 reopen 资格
+- 当前批次继续新增一条 public-artifact-overclaim-should-fail-low live 记忆：
+  - `84 architecture / 87 / 102` 现在应直接把 public artifact 的 overclaim 写成低签字权层先失败：release-surface 争议先回 `compile-time gate / runtime gate / artifact surface`，`change-risk` 附表默认补 `signer + effect ceiling`，分不清时先降格回 `public artifact ceiling`
+  - 更稳的默认写法是：later maintainer 不先问“到底有没有这个能力”，而先问“它到底没编进 build、没在 runtime 点亮，还是只没进入公开 artifact”
+- 当前批次继续新增一条 prompt-residuals-should-fail-fast-on-summary-usurpation live 记忆：
+  - `81 / 84 / 15` 现在应直接把 Prompt residual 收成快拒句：`narrative-only / forbidden-as-sole-witness` 一旦独自承担 continuation witness，就直接判 `continue qualification` 失效；`summary / delegated context / display transcript` 越权代签时，也一律先降回 `projection`
+  - 更稳的默认写法是：Prompt 线的 first reject 不是“故事变短”，而是更顺手的 surface 开始越权代签 `same-world / continue verdict`
+- 当前批次继续新增一条 public-governance-metrics-prove-boundary-first live 记忆：
+  - `85` 现在应直接把官方工程文里的 `93%` approval 与 sandboxing `84%` prompt reduction 写成治理 why 的公开证据，而不只写成抽象的 approval fatigue 叙事
+  - 更稳的默认写法是：成熟治理不是“更少 prompts”或“更严审查”二选一，而是先把 boundary 写成可承受的自由区，再把人工批准留给真正还能改价的动作
+- 当前批次继续新增一条 auto-memory-is-not-worktree-local-witness live 记忆：
+  - `84 / 87 / 102` 现在应直接写死：auto memory 不只是不配当 world-definition witness，它连 worktree-local witness 都不配；同一仓库下所有 worktrees 共享一个 auto memory 目录，且 `autoMemoryDirectory` 不能由 project settings 指定
+  - 更稳的默认写法是：凡 machine-local、repo-shared、project-unwritable 的 memory layer，只配当 context，不配被 later consumer 误读成 repo-authored or worktree-authored authority
+- 当前批次继续新增一条 first-reject-and-retreat-defaults-need-owner-pages live 记忆：
+  - `81 / 85 / 87 / architecture/84` 现在应直接把 lawful forgetting、治理回炉、later maintainer rejectability 与 release-surface shaping 的默认 `first reject / first retreat` 句写在 owner 页里
+  - 更稳的默认写法是：Prompt 线退回 `protocol transcript / stable prefix / continuation object`，治理线把 no-decision-gain check 读成 `unpaid expansion`，源码质量线把第一 veto 先落在 `projection / provisional claim / recovery asset / stale capability`，发布面则显式区分 compile-time / runtime / artifact 三层可见性
+- 当前批次继续新增一条 public-artifacts-need-effect-ceilings live 记忆：
+  - `84 / 87 / 102` 现在应直接把 public artifact 的先进性写成 `effect ceiling` 是否公开写死，而不只写成 artifact 是否存在
+  - 更稳的默认写法是：managed settings 是否最高且不可覆盖、`CLAUDE.md` / auto memory 是否只配当 context、subagents 是否独立 context/permissions、async hooks 是否无权回头阻断，若答不清就继续停在 `public artifact ceiling`
+- 当前批次继续新增一条 public-artifact-protocol-is-visible-advancedness live 记忆：
+  - `102 / 03` 现在应直接把 `public artifact ceiling / downgrade / gap note / change-risk` 读成 later maintainer 可继承的记录协议；operator artifact 若写不清层级、作用域与阻断权限，就只配停在 `public artifact ceiling`
+  - 更稳的默认写法是：源码质量先进性不先暴露“能做什么”，而先暴露“何时必须降格、谁能先拒收、还有哪些 authority 仍未解决”
+- 当前批次继续新增一条 governance-needs-single-repricing-furnace live 记忆：
+  - `83 / 10 / 06 / 03` 现在应直接把治理链写成同一座回炉：`signer ceiling` 保护单源定价，`repricing seam` 是唯一允许改价的回炉口，`weak readback / projection` 只能降格，`continue` 也只在同一 `authority lease` 仍成立时才配叫 `continuation qualification`
+  - 更稳的默认写法是：凡不能补 `repricing proof / lease checkpoint / cleanup` 的 surface 都不配再说当前治理真相；否则就按多头定价与 `free-expansion relapse` 处理
+- 当前批次继续新增一条 prompt-magic-means-prepaid-rejudication-tax live 记忆：
+  - `03 / 84 / 15` 现在应直接把 Prompt “魔力”去魅成制度结果：runtime 先替 later consumer 预付世界重判税，prompt-side `local veto` 负责阻止 `display transcript / delegated context / summary` 越级，第一退回层则先把这些 surface 降回 `projection`
+  - 更稳的默认写法是：Prompt 线若答不出这条 `local veto + first retreat layer`，就先按 `same-world failure verdict` 处理，不再补摘要或补解释
+- 当前批次继续新增一条 owner-pages-need-veto-and-retreat-defaults live 记忆：
+  - `81 / 85 / 87` 现在应直接在 owner why 页里保留最短的 `local veto cue + first retreat layer` 默认句，而不只把这组对象留给 `03 / 06 / 102`
+  - 更稳的默认写法是：Prompt 线先问失稳时 `section registry / protocol transcript / continue qualification` 谁先失守；治理线先问 `weak readback / host replay / default continue / reopen tail evidence` 是否越权代签；源码质量线若答不出第一条局部 veto 与第一退回层，就先把 advancedness claim 降格成 `layout praise`
+- 当前批次继续新增一条 route-pages-must-exit-before-branching live 记忆：
+  - `09 / 15` 现在应直接把治理线与 current-truth 线写成“先离开当前导航页，再按 why / security / object 分支”的出口语法，而不是在页内广播 owner chain
+  - 更稳的默认写法是：总图页与导航页先给第一出口 `10 / guides/102`，再分流到 `85 / 61 / security/README` 或 `86 / 87 / architecture/README`
+- 当前批次继续新增一条 governance-frontdoor-needs-architecture-exit live 记忆：
+  - `10` 现在应直接补出 `architecture/83` 这一条对象出口，专门接 canonical chain、runtime seam 与对象镜像类缺口
+  - 更稳的默认写法是：前门页若缺对象出口，later consumer 就会回到总图横跳，最终把 route dispute 误读成 why gap
+- 当前批次继续新增一条 03-needs-acid-tests-for-pricing-and-present-veto live 记忆：
+  - `03` 现在应直接把治理线与当前线都压成最短 acid test：前者先问 `earliest unpaid expansion / repricing proof / cleanup`，后者先问 `local veto cue / first retreat layer`
+  - 更稳的默认写法是：若这些对象级反问答不出，就先把成熟度或当前判断降格，不再拿 route 句或结果词撑 why
+- 当前批次继续新增一条 06-minimum-retreat-must-name-downgrade-freeze-withdraw live 记忆：
+  - `06` 现在应直接把最小回退动作写成 `降格 claim -> 冻结 continuation -> 撤回 maturity verdict`
+  - 更稳的默认写法是：边界混写时先把 `UI transcript / mode / usage / 作者说明` 降回 `projection / evidence`，而不是先补更大的检查表
+- 当前批次继续新增一条 auto-mode-is-not-a-signer-peer live 记忆：
+  - `83` 现在应直接把 `auto mode` 压回“剩余 `ask` 压缩器”，不再让它和 `managed settings / permissions / sandboxing` 并排冒充 signer peer
+  - 更稳的默认写法是：`/compact / /resume / /memory` 这些 continuation consumer 最多消费已签边界、durable asset 与 pending action，不继承旧 `permission mode` 或批量 `ask` 的裁决权；凡要改写价格、继续资格或终局解释的动作，都必须回到 `repricing seam`
+- 当前批次继续新增一条 authority-precedence-is-internal-to-world-definition-signer live 记忆：
+  - `82` 现在应直接把 `override -> coordinator -> agent -> custom -> default -> append` 压回 `world-definition signer` 的内部 precedence
+  - 更稳的默认写法是：不要再把这组六项误读成跨 `CLAUDE.md / settings / subagents / hooks` 的通用主权链
+- 当前批次继续新增一条 prompt-object-veto-maps-to-protocol-transcript live 记忆：
+  - `82` 现在应直接把 `display transcript / control projection / continuation object` 越权代签 `protocol transcript` 写成 Prompt 对象层的第一条 `local veto cue`
+  - 更稳的默认写法是：第一退回层先回 `protocol transcript + message lineage + section registry`
+- 当前批次继续新增一条 governance-object-hinge-before-and-after-verdict live 记忆：
+  - `83` 现在应直接把治理 canonical chain 写成对象层 signer 铰链：`managed settings -> permissions -> sandboxing -> auto-mode/classifier` 都在 verdict 之前，`continuation consumer -> durable-transient cleanup / weak readback` 都在结算之后
+  - 更稳的默认写法是：投影面、continue 入口或尾部 readback 一旦越权代签价格、继续资格或终局解释，就先回 `governance key / externalized truth chain / repricing seam`
+- 当前批次继续新增一条 forbidden-substitute-writer-maps-to-local-veto live 记忆：
+  - `architecture/84` 现在应直接把 atlas 表里的 `forbidden substitute writer` 显式读成 `local veto cue`
+  - 更稳的默认写法是：离它最近、能重新取回 sole writer 资格的 `freshness / recovery / eviction` seam，就是 `first retreat layer`
 - 当前批次继续新增一条 same-scope-words-do-not-imply-same-signer-semantics live 记忆：
   - `84` 现在应直接写死：`managed / user / project / local` 这组 scope 名词，在 `CLAUDE.md / settings / subagents / hooks` 上不是同一种组合律
   - 更稳的默认写法是：`CLAUDE.md` 拼接加载，settings 覆盖链，subagents 更接近同名遮蔽，hooks 先合并再过 managed-only 与 runtime veto gate；共享 scope 词不等于共享 signer 语义
