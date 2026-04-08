@@ -209,7 +209,7 @@ Claude Code 更深的一层是：
 
 ### first reject signal 比成功表述更值钱
 
-这条世界准入能力最先失稳时，第一条信号通常不是回答质量下降，而是世界定义权、展示边界与继续资格开始彼此脱钩。若这些失稳还不能在回答变差前被点名，那失去的也不是回答质感，而是这条世界准入顺序的先验反对权；更细的 reject order 与检查清单统一回 `82` 与 `navigation/15`。
+这条世界准入能力最先失稳时，第一条信号通常不是回答质量下降，而是世界定义权、展示边界与继续资格开始彼此脱钩。若这些失稳还不能在回答变差前被点名，那失去的也不是回答质感，而是这条世界准入顺序的先验反对权；这时更该先停在 same-world test 失败，而不是急着补更多 checklist。
 
 ## 5. 苏格拉底式追问
 
@@ -219,7 +219,7 @@ Claude Code 更深的一层是：
 2. 当前被消费的是哪条 authoritative transcript / projection，展示层有没有越权成改判层。
 3. 经历 `handoff / compaction / resume` 之后，continuation qualification 是否仍成立，而不是靠重述现场续命。
 
-更细 checklist 统一回 `navigation/15`；如果这三条已经答不清，就先按 same-world test 失败处理。
+如果这三条已经答不清，就先按 same-world test 失败处理；更细 checklist 只有在这三条都站住之后才有意义。
 
 ## 6. 对 Agent Runtime 设计者的直接启发
 
