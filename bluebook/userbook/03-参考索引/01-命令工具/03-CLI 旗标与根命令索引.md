@@ -260,16 +260,19 @@
 - `--enable-auto-mode`
   可见性：`条件/高级`
   用途：显式 opt in auto mode
-- `--assistant`
-  可见性：`内部/托管`
-  用途：强制 assistant mode
-  关键约束：help 文案已写明更偏 Agent SDK daemon use
 - `--channels <servers...>`
   可见性：`条件/高级`
   用途：注册 MCP channel notifications
 - `--dangerously-load-development-channels <servers...>`
   可见性：`条件/高级`
   用途：加载非 allowlist 的 development channels
+
+### 更偏内部托管的一项
+
+- `--assistant`
+  可见性：`内部/托管`
+  用途：强制 assistant mode
+  关键约束：help 文案已写明更偏 Agent SDK daemon use
 
 ### 隐藏但仍能说明运行时合同的一组
 
