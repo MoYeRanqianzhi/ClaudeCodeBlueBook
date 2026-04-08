@@ -270,6 +270,7 @@
 - [266-2026-04-08-init and setup topic-layer route split 拆分记忆.md](./266-2026-04-08-init%20and%20setup%20topic-layer%20route%20split%20拆分记忆.md)
 - [267-2026-04-08-account topic-layer route split 拆分记忆.md](./267-2026-04-08-account%20topic-layer%20route%20split%20拆分记忆.md)
 - [268-2026-04-08-extension operations contract-table split 拆分记忆.md](./268-2026-04-08-extension%20operations%20contract-table%20split%20拆分记忆.md)
+- [269-2026-04-08-account contract-table split 拆分记忆.md](./269-2026-04-08-account%20contract-table%20split%20拆分记忆.md)
 
 用途：
 
