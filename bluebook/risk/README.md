@@ -1,13 +1,13 @@
 # 风控专题
 
-`risk/` 只看统一治理收费链怎样在用户侧读回成 `product promise readback / reopen qualification / evidence binding`，不把风控写成账号、入口、恢复或地区场景的并列主题。
-这三件事读回的不是第二套支持故事，而是同一条治理尾链在 cleanup 之后仍留下哪些 liability、哪些 reopen 资格、哪些证据绑定。
-如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶入口链路，不要急着把风控页读成“另一套安全规则”。
-`risk/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这是误伤、恢复、reopen 还是入口差异哪种用户侧工作对象，再决定你主要在读 `product promise readback`、`reopen qualification` 还是 `evidence binding`；若缺治理机制顺序或 why，先回 `10 -> philosophy/85 -> philosophy/61 -> security`，最后才选入口摘要、playbook 或深页。
+`risk/` 只看统一治理收费链在 cleanup 之后怎样被用户侧读回成 `product promise readback / reopen qualification / evidence binding`，不把风控写成账号、入口、恢复或地区场景的并列主题。
+这三件事读回的不是第二套支持故事，而是同一条治理尾链在 cleanup 之后留下哪些 liability、哪些 reopen 资格、哪些证据绑定。
+若你还没先在 `10` 定位最早 `unpaid expansion`，本页不开始；那时你缺的还是治理前门，不是用户侧读回。
+`risk/` 不先做第一轮 intake；它只在 post-cleanup readback 已经成立后，继续区分你现在读到的是 `product promise readback`、`reopen qualification` 还是 `evidence binding`。
 
 还要先记一句：
 
-- 本目录不是在补充另一套规则堆，而是在看同一条治理收费链怎样被用户侧读成 `product promise readback / reopen qualification / evidence binding`；想先抓高阶判断，先回 `10 -> philosophy/85 -> philosophy/61 -> security`，再回本目录看误伤、恢复与入口差异怎样落到用户侧。
+- 本目录不是在补充另一套规则堆，而是在看同一条治理收费链怎样在 cleanup 之后被用户侧读成 `product promise readback / reopen qualification / evidence binding`；想先抓高阶判断，先回 `10 -> philosophy/85 -> philosophy/61 -> security`，再回本目录看误伤、恢复与入口差异怎样落到用户侧。
 
 这里还应再多记一句：
 
@@ -19,7 +19,7 @@
 
 如果你只缺治理收费链的一屏速记，而不是用户侧读回对象的差异，先回 [../10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；`risk/` 只保留用户侧读法与恢复资格。
 
-如果把风控入口判定压成最短顺序，也只剩三步：
+如果把本页压成最短顺序，也只剩三步，但它们都只是 post-cleanup readback，不是新的入口流程：
 
 1. `product promise readback`
    - 先确认自己看到的是哪类用户侧承诺与读回
@@ -54,7 +54,7 @@
 
 这里也要先记一句顺序：
 
-- `risk/` 先读用户侧对象，再决定自己该回 `10 -> philosophy/85 -> philosophy/61 -> security` 还是 `playbooks`；不在入口页自己重放治理链
+- `risk/` 只在 post-cleanup readback 已经成立后开始；若还要回头重判治理链，先退回 `10 -> philosophy/85 -> philosophy/61 -> security`，不在本页自己重放治理前门。
 
 因此风控入口说明也不该自己回放事件去猜当前真相，而应沿已外化的 readback、evidence 与 reopen 条件去回读。
 - 恢复与 reopen 的机制口径统一回 `security`；若已经进入验收、修复或 reopen drill，再回 `playbooks`。通用弱读回面总声明与治理 why 统一回 `10 -> philosophy/85 -> philosophy/61`。
@@ -62,7 +62,7 @@
 - `reopen qualification` 是 liability-threshold readback：它判断剩余 liability 是否仍足以重开，不自己补签 signer。
 - `evidence binding` 是 tail evidence：它判断用户侧申诉还能绑定哪类已外化证据。
 
-更稳的 first reject signal 也应先记三条：
+更稳的用户侧失真信号也只记三条：
 
 1. 入口差异开始被写成“能跑就算等价”，而不是 `current admission / product promise` 的差异
 2. 恢复动作开始绕开 signer、证据和 reopen 责任，只剩口头安抚或结果词
@@ -70,7 +70,7 @@
 
 ## 什么时候进来
 
-- 当你已经知道统一定价治理成立，准备判断它怎样落到误伤、恢复、支持链路与入口语义差上。
+- 当你已经知道统一定价治理成立，并且 cleanup 已经把旧 authority 收口，准备判断它怎样落到误伤、恢复、支持链路与入口语义差上。
 - 当你需要从用户侧读回面理解 `product promise / reopen / evidence` 的样貌，而不是继续停在安全控制面。
 - 当你需要判断某种现实入口选择会怎样改写 `product promise`、恢复资格或证据绑定时，再进入本目录。
 

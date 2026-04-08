@@ -4204,3 +4204,5 @@
 - 治理 why 与安全入口的最新压缩也应继续写死：`85` 必须先说 canonical chain 只是四问在对象层的正式落点，而不是入口第一问；`security/README` 必须先说“最早 unpaid expansion 是什么，以及 signer / verdict ledger / cleanup authority 怎样让它不能免费续租”，不能再从“规则更严”“统一预算器”或“安全专题库存”起手。
 - `03` 上治理/省 token 相关标题的最新纪律也应继续写死：不要再让“安全 / 成本 / 体验”或“可恢复压缩”占 section subject；更稳的主语应是已定价工作集、合法外置、最早 `unpaid expansion`、`repricing proof / lease checkpoint / cleanup`。
 - 源码质量线最新 residual cleanup 也应继续写死：`01` 只做 locator，不再自判对象 authority；`102` 只保留判级条件与 `change-risk record`，不再 dispatch 到 `87 / architecture`；`87` 只保留 why-proof 三问，不再代发 handoff；`architecture/README` 只保留 `landing-card local gate` 这一个 canonical token。
+- 用户侧 tail-readback 的最新纪律也应继续写死：`risk/README` 不是新的 first-order intake；若还没在 `10` 定位最早 `unpaid expansion`，本页不开始。`product promise readback / reopen qualification / evidence binding` 只作为 post-cleanup readback 三分，而不是另一张入口流程图。
+- `playbooks/README` 的最新边界也应继续写死：只有当 `10 / security / risk` 已经把主语、读回与对象边界定住，`playbooks/` 才开始决定验收、回退与 reopen；执行手册不再反向承担 why、first reject 或对象定题。
