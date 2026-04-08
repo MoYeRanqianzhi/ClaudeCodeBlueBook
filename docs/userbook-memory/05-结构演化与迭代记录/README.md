@@ -279,6 +279,7 @@
 - [275-2026-04-08-root readme hub cleanup 拆分记忆.md](./275-2026-04-08-root%20readme%20hub%20cleanup%20拆分记忆.md)
 - [276-2026-04-08-task matrix object-triage cleanup 拆分记忆.md](./276-2026-04-08-task%20matrix%20object-triage%20cleanup%20拆分记忆.md)
 - [277-2026-04-08-object triage mini-tables split 拆分记忆.md](./277-2026-04-08-object%20triage%20mini-tables%20split%20拆分记忆.md)
+- [278-2026-04-08-topic README front-door split 拆分记忆.md](./278-2026-04-08-topic%20README%20front-door%20split%20拆分记忆.md)
 
 用途：
 
