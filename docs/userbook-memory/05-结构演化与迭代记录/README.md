@@ -24,6 +24,7 @@
 - [288-2026-04-08-capability map second-hop demotion 拆分记忆.md](./288-2026-04-08-capability%20map%20second-hop%20demotion%20拆分记忆.md)
 - [289-2026-04-08-path-90 routing flatten cleanup 拆分记忆.md](./289-2026-04-08-path-90%20routing%20flatten%20cleanup%20拆分记忆.md)
 - [290-2026-04-08-continuity topic boundary cleanup 拆分记忆.md](./290-2026-04-08-continuity%20topic%20boundary%20cleanup%20拆分记忆.md)
+- [291-2026-04-08-clear boundary cleanup 拆分记忆.md](./291-2026-04-08-clear%20boundary%20cleanup%20拆分记忆.md)
 
 ## 全量档案
 
