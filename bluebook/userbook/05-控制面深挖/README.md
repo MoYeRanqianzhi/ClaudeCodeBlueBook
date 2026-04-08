@@ -203,6 +203,7 @@
 - [165-hydrateFromCCRv2InternalEvents、externalMetadataToAppState、hydrateRemoteSession 与 startup fallback：为什么 print resume 的 remote recovery 不是同一种 stage.md](./165-hydrateFromCCRv2InternalEvents、externalMetadataToAppState、hydrateRemoteSession%20与%20startup%20fallback：为什么%20print%20resume%20的%20remote%20recovery%20不是同一种%20stage.md)
 - [166-print.ts、externalMetadataToAppState、setMainLoopModelOverride 与 startup fallback：为什么 print remote recovery 的 transcript、metadata 与 emptiness 不是同一种 stage.md](./166-print.ts、externalMetadataToAppState、setMainLoopModelOverride%20与%20startup%20fallback：为什么%20print%20remote%20recovery%20的%20transcript%E3%80%81metadata%20与%20emptiness%20不是同一种%20stage.md)
 - [167-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata 与 RemoteIO：为什么 CCR v2 的 metadata readback 不是 observer metadata 的同一种本地消费合同.md](./167-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata%20与%20RemoteIO：为什么%20CCR%20v2%20的%20metadata%20readback%20不是%20observer%20metadata%20的同一种本地消费合同.md)
+- [接续与桥接分叉/README.md](./接续与桥接分叉/README.md)
 范围收束页：`218` 固定 `168-179` 子树，`219` 承接它的三个前向出口；先看范围图，再回 168-190 叶子页。
 - [218-headless source、bridge authority 与 create-context 子树：为什么 168-179 不是线性十二连.md](./218-headless%20source、bridge%20authority%20与%20create-context%20子树：为什么%20168-179%20不是线性十二连.md)
 - [219-teleport、model 与 bridge 分支：为什么 180-190 不是线性十一连.md](./219-teleport、model%20与%20bridge%20分支：为什么%20180-190%20不是线性十一连.md)

@@ -262,6 +262,8 @@
   [05-控制面深挖/166-print.ts、externalMetadataToAppState、setMainLoopModelOverride 与 startup fallback：为什么 print remote recovery 的 transcript、metadata 与 emptiness 不是同一种 stage.md](./05-控制面深挖/166-print.ts、externalMetadataToAppState、setMainLoopModelOverride%20与%20startup%20fallback：为什么%20print%20remote%20recovery%20的%20transcript%E3%80%81metadata%20与%20emptiness%20不是同一种%20stage.md)
 - 分清 `restoredWorkerState`、`externalMetadataToAppState`、`SessionExternalMetadata` 与 `RemoteIO` 为什么说明 CCR v2 的 metadata readback 不是 observer metadata 的同一种本地消费合同：
   [05-控制面深挖/167-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata 与 RemoteIO：为什么 CCR v2 的 metadata readback 不是 observer metadata 的同一种本地消费合同.md](./05-控制面深挖/167-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata%20与%20RemoteIO：为什么%20CCR%20v2%20的%20metadata%20readback%20不是%20observer%20metadata%20的同一种本地消费合同.md)
+- 想先从物理目录入口浏览 `168-190` 的接力簇，而不是直接在平铺文件里跳读：
+  [05-控制面深挖/接续与桥接分叉/README.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/%E6%8E%A5%E7%BB%AD%E4%B8%8E%E6%A1%A5%E6%8E%A5%E5%88%86%E5%8F%89/README.md)
 - 想先把 `168-179` 读成“`168` 是邻接 thickness 轴，`169` 再分出 stable source、`170→171` 的 headless source 分支，以及 `172` 起步并在 `174` 区域下长出 `175/176/177/178→179` 的 bridge create-context 子树”，而不是线性十二连：
   [05-控制面深挖/218-headless source、bridge authority 与 create-context 子树：为什么 168-179 不是线性十二连.md](./05-控制面深挖/218-headless%20source、bridge%20authority%20与%20create-context%20子树：为什么%20168-179%20不是线性十二连.md)
 - 想先把 `180-190` 读成“`179→180` 的 teleport runtime、model 的 ledger trunk 与 selection/allowlist trunk，以及从 `176→181→183→186→189→190` 的 outbound write 主干继续长到 `191→{192,193→206}` 的 bridge 后继线”，而不是线性十一连：
