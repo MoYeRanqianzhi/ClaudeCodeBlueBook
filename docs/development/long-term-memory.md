@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 entry-pages-need-symmetric-governance-and-source-quality-tests live 记忆：
+  - `bluebook/README / philosophy/README` 现在应直接让三条母线在高流量入口页更对称：Prompt 线已有“已排除路径回流候选集”的首拒句，且入口页也应补齐 `tool choice / compaction` 这层继续资格测试；治理线则至少要露出“最早 unpaid expansion + repricing proof / lease checkpoint / cleanup + 风险提前收费 + 自动化可撤销”，源码质量线至少要露出“合法复杂度中心 + one writable present + later-maintainer veto”
+  - 更稳的默认写法是：入口页只补 first test，不扩成 second-hop inventory；`87` 在入口页也要有正面判据，而不只剩“不能退回目录观感”这类负面口号，治理线也不应只剩“扩张如何被定价”这类薄摘要，否则 Prompt 仍会看起来像唯一“有判据”的母线
+- 当前批次继续新增一条 root-sync-healthy-clean live 记忆：
+  - 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，`git status --short --branch` 当前为干净的 `main...origin/main`
+  - 更稳的默认写法是：根仓若健康且干净，只把预检结果记为外部事实；正文、记忆与提交继续只落在 `.worktrees/mainloop`
 - 当前批次继续新增一条 entry-readmes-must-inherit-branch-reopen test live 记忆：
   - `bluebook/README / philosophy/README` 现在也应直接继承 `84 / 15 / 41 / 03` 已写死的 Prompt 首问：later consumer 不只是不该重答世界定义、边界与继续资格，也不该把原本已排除的路径重新拉回候选集
   - 更稳的默认写法是：高流量入口页只保留这句 first test，不自行扩成 Prompt owner 清单；若入口页还停在旧版“重谈世界”表述，就会把更早的 first reject 重新藏回抽象叙事
