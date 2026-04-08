@@ -2,7 +2,12 @@
 
 ## 用户目标
 
-203 已经把 permission tail 收成：
+193 已经把 control side-channel 收成：
+
+- permission verdict 返回腿
+- session-control 请求腿
+
+203 又把 permission tail 收成：
 
 - verdict ledger
 - closeout
@@ -33,6 +38,21 @@
 - `reportState('requires_action')`
 
 重新压成一句模糊的“等待输入状态”。
+
+所以这页更准确的位置不是：
+
+- 203 的 permission tail sibling
+
+而是：
+
+- `190` 之后由 `193` 再继续长出来的 blocked-state publish zoom
+
+它和 203 会交叉，
+
+但不同根：
+
+- 203 追的是 verdict 之后怎么收口
+- 206 追的是 ask 如何先被提升成 blocked-state projection
 
 ## 第一性原理
 

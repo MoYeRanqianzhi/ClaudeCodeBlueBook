@@ -29,6 +29,11 @@
 1. `control_response -> onPermissionResponse`
 2. `control_request -> onControlRequest -> handleServerControlRequest(...)`
 
+而且这页之后还会继续长出一个更窄的后继问题：
+
+- `193` 先回答 control side-channel 为什么不对称
+- `206` 再回答同样会出现 `can_use_tool`，为什么 bridge 仍只发布裸 blocked bit，而不自动携带完整 `pending_action`
+
 如果这两腿不先拆开，后面就会把：
 
 - `control_response`

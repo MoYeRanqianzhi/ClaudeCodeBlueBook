@@ -12,7 +12,9 @@
 - model line
   - `178 -> 182` = ledger trunk
   - `184 -> 185 -> 187 -> 188` = selection / source / allowlist trunk
-- `176 -> 181 -> 183 -> 186 -> 189 -> 190` = bridge birth / hydrate / replay / write line
+- bridge line
+  - `176 -> 181 -> 183 -> 186 -> 189 -> 190` = outbound birth / hydrate / replay / write trunk
+  - `190 -> 191 -> {192, 193 -> 206}` = post-connect ingress / control / blocked-state branch
 
 所以这轮最该补的是：
 
@@ -106,7 +108,7 @@
 
 但回答的是不同层的问题。
 
-## 为什么 bridge 线更稳是 `181 -> 183 -> 186 -> 189 -> 190`
+## 为什么 bridge 线更稳是“outbound trunk + post-190 descendants”
 
 ### 判断四：`181` 先问 create-time events 为什么不是 history hydrate
 
@@ -114,7 +116,7 @@
 
 ### 判断六：`186` 再把 replay object 与 model prompt authority 拆开
 
-### 判断七：`189` 与 `190` 是这条桥接线的后段，不是 183 的并列尾页
+### 判断七：`189` 与 `190` 是这条桥接线 outbound trunk 的后段，不是 183 的并列尾页
 
 `189` 先追 continuity inheritance，
 `190` 再追 REPL / daemon write contract。
@@ -126,6 +128,32 @@
 而是：
 
 - `181 -> 183 -> 186 -> 189 -> 190`
+
+### 判断七点五：`190` 不是 bridge terminal，而是 outbound trunk tip
+
+如果停在 `190`，
+
+最容易再次把 bridge 写成：
+
+- create / hydrate / replay / write
+
+的自然终点。
+
+但更稳的结构是：
+
+- `190` 只把 outbound write contract 收口
+- 后面立刻还会长出 `191` 的 ingress triage root
+- 再分到 `192` 的 read-side continuity
+- 以及 `193 -> 206` 的 control side-channel / blocked-state publish 问题
+
+所以更稳的 bridge 句子已经不是：
+
+- `181 -> 183 -> 186 -> 189 -> 190`
+
+而是：
+
+- `181 -> 183 -> 186 -> 189 -> 190`
+- 然后再转入 `191 -> {192, 193 -> 206}`
 
 ## 本轮最关键的新判断
 

@@ -20,6 +20,7 @@
 - 这页不是 `180-190` 的细节证明总集。
 - 这页不替代 219 的结构长文。
 - 这页只抓 `178 -> 179 -> 180` 的 teleport runtime、model line里的 `182` 与 `184 -> 185 -> 187 -> 188` 两个 trunk，以及 `176 -> 181 -> 183 -> 186 -> 189 -> 190` 的 bridge line。
+- 为了避免把 `190` 误判成 bridge 终点，这页顺带收 `190` 之后立刻长出的 `191 / 192 / 193 / 206` 四个后继问题。
 - 这页保护的是 teleport runtime、model、bridge birth/hydrate/write 的主语切换，不把某个 helper、某个字段或某个 UUID 集合直接升级成稳定公共合同。
 - 这页承接 `205` 的三个出口：`179 -> 180`、`178 -> model line`、`176 -> bridge line`；因此 `205 -> 206` 就是 `168-190` 的接力关系，不需要第三张 `168-190` 伞形总页。
 - 如果接下来只想继续深读 model，也仍然留在这张 `180-190` branch map 下，不额外新建 model-only 范围页，更不把 `183/186` 误判成 model 线的缺口。
@@ -40,6 +41,10 @@
 | 186 | 继续分 eligible replay projection 与 model prompt authority | replay-object zoom |
 | 189 | 再分 v1 continuity ledger 与 v2 fresh-session replay | continuity-contract zoom |
 | 190 | 再分 REPL path 与 daemon path 的 bridge write contract | write-contract zoom |
+| 191 | 从 `190` 后继续打开 ingress triage root | post-190 bridge descendant |
+| 192 | 继续分 same-session continuity 与 fresh-session reset | read-side continuity descendant |
+| 193 | 继续分 control_response verdict leg 与 control_request session-control leg | control side-channel descendant |
+| 206 | 再分 ask transport、blocked projection 与 bridge publish ceiling | blocked-state descendant |
 
 ## 2. 最常见的假等式
 
@@ -49,16 +54,19 @@
 | `180` 只是 `181` 的起手例子 | `180` 接 `179` 的 git-context 线；`181` 接 createSession birth/hydrate 线 |
 | `182 -> 184 -> 185 -> 187 -> 188` 是一条必须线性下钻的 model 五连 | 更稳的是 `182` = ledger trunk；`184 -> 185 -> 187 -> 188` = resolution/source/allowlist trunk |
 | `181/183/186/189/190` 都只是在讲 dedup | 更稳的是 birth/hydrate -> ledger -> replay object -> continuity -> write contract |
+| `190` 已经是 bridge 线的终点 | `190` 只结束 outbound write trunk；bridge 还会继续长出 `191/192/193/206` |
 | `189` 与 `190` 只是 183 的两个并列尾页 | `189` 先问 continuity inheritance，`190` 再问 REPL/daemon write contract |
+| `206` 只属于 permission tail，和 bridge 主干无关 | `206` 更稳的位置是 `193` 下的 blocked-state publish zoom，并与 `203` 形成交叉参照 |
+| 只要看见 `can_use_tool`，就已经拿到了完整 blocked-state 合同 | 更稳的是 ask transport、blocked projection 与 bridge publish ceiling 三层分开 |
 | `createBridgeSession.events`、`initialMessageUUIDs`、`previouslyFlushedUUIDs` 只是在同一张历史账里取不同视角 | 它们分属 wire slot、local seed、success ledger、continuity ledger 等不同对象层 |
 
 ## 3. stable / conditional / internal
 
 | 类型 | 对象 |
 | --- | --- |
-| 稳定可见 | `180` = teleport runtime zoom；model line 里更稳的是 saved preference vs live override 的层次、显式拒绝 / 写入校验 / 选项隐藏且保留 `Default` 的用户 surface，以及 bridge line = `181 -> 183 -> 186 -> 189 -> 190` |
-| 条件公开 | 显式 `environmentId` teleport path、`outcomes: []`、`ANTHROPIC_MODEL` / agent bootstrap / allowlist veto、v1 continuity 继承与 v2 fresh-session replay |
-| 内部/灰度层 | `session_context.model`、`metadata.model`、`lastModelUsage`、override slot 的具体存储形状、branch naming、history cap 数值、`previouslyFlushedUUIDs` reconnect 细节、provider / allowlist 细则、部分 UX surface 的报错文案 |
+| 稳定可见 | `180` = teleport runtime zoom；model line 里更稳的是 saved preference vs live override 的层次、显式拒绝 / 写入校验 / 选项隐藏且保留 `Default` 的用户 surface；bridge line 里更稳的是 outbound trunk 与 post-190 ingress / control / blocked-state branch 的分层 |
+| 条件公开 | 显式 `environmentId` teleport path、`outcomes: []`、`ANTHROPIC_MODEL` / agent bootstrap / allowlist veto、v1 continuity 继承与 v2 fresh-session replay、same-session carryover、foreground restore 厚度 |
+| 内部/灰度层 | `session_context.model`、`metadata.model`、`lastModelUsage`、override slot 的具体存储形状、`initialMessageUUIDs` / `recentPostedUUIDs` / `recentInboundUUIDs` / `lastTransportSequenceNum` 这些具体账本、branch naming、history cap 数值、provider / allowlist 细则、部分 UX surface 的报错文案 |
 
 更稳的 model 落笔纪律：
 
@@ -73,6 +81,7 @@
 - 我是不是把 `180` 的 admission / replay runtime 合同写回了 `179` 的字段语义？
 - 我是不是把 `182/184/185/187/188` 又压回“模型设置细节”，忘了 ledger trunk 与 selection/allowlist trunk 的分层？
 - 我是不是把 source family、override sink 与 startup snapshot 写成了同一种 source？
+- 我是不是把 `190` 写成 bridge terminal，而没有再追 post-190 的 ingress / control / blocked-state handoff？
 - 我是不是把 `181/183/186/189/190` 又压回 generic dedup，而没有先分 birth/hydrate、replay object、continuity 与 write contract？
 - 我有没有因为几个页面都出现 `writeBatch(...)` / `model` / `events`，就把它们写成同一条后继线？
 
