@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `docs/development/{long-term-memory,research-log}.md`，补记本轮收尾的最新根仓 live 截面：在先前一次 `merge --ff-only` 被根仓未解决冲突阻断、状态一度漂移到 `main...origin/main [ahead 47]` 之后，本轮最终复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态又恢复为 `main...origin/main`。该漂移继续只作为外部事实记录，不在根仓动手处理。
 - 继续更新 `bluebook/playbooks/README.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更稳的 execution-owner 纪律：`playbooks/README` 现已继续从“execution owner + family 解释重复”压回更纯的 `execution verdict / rollback / reopen` 入口，开头 family scope、`什么时候进来` 与维护约定里的重复 owner 边界都已收薄。本轮根仓前置检查中，`git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓未解决冲突而失败；当前根仓 live 状态为 `main...origin/main [ahead 47]`。
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更细的治理/源码质量 residual 纪律：`03` 第 29 节与第 34 节现已进一步压回最短自校句，不再保留“统一预算器口号”与“不要先按尺寸和目录体感判断”这类已经被 `85 / 87 / 06` 吸收的影子总论措辞。本轮根仓前置检查中，`git fetch origin main` 成功，但 `git merge --ff-only origin/main` 已被根仓未解决冲突直接阻断。
 - 继续更新 `bluebook/architecture/README.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更稳的 object-owner 纪律：`architecture/README` 现已继续从“对象摘要 + 轻库存解释层”压回更纯的 object owner 页，前言重复、`landing card` 解释层重复与对象专题索引后的说明句都已收薄；链接本身保留，但不再让标题后再复制一遍对象说明。本轮收尾再次复核根仓 `/home/mo/m/projects/cc/analysis` 时，live 状态已外漂为 `main...origin/main [ahead 30]`，并伴随 `bluebook/security/README.md`、`bluebook/security/source-notes/README.md`、`docs/development/research-log.md` 等根仓未解决冲突；该漂移只记录，不在根仓处理。
