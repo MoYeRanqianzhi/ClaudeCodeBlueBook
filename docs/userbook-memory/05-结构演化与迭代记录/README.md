@@ -22,6 +22,7 @@
 - [286-2026-04-08-session remote-control front-door split 拆分记忆.md](./286-2026-04-08-session%20remote-control%20front-door%20split%20拆分记忆.md)
 - [287-2026-04-08-task output naming split 拆分记忆.md](./287-2026-04-08-task%20output%20naming%20split%20拆分记忆.md)
 - [288-2026-04-08-capability map second-hop demotion 拆分记忆.md](./288-2026-04-08-capability%20map%20second-hop%20demotion%20拆分记忆.md)
+- [289-2026-04-08-path-90 routing flatten cleanup 拆分记忆.md](./289-2026-04-08-path-90%20routing%20flatten%20cleanup%20拆分记忆.md)
 
 ## 全量档案
 
