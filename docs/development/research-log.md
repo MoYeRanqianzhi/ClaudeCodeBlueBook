@@ -2,6 +2,16 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 root-opener 结论：`bluebook/README` 不再把 law、route 与 evidence ceiling 挤在同一开场句里，而是拆成 `三条 governing questions -> 三条首跳 -> evidence ceiling note` 三步；根前门因此先像定题，而不是先像导航。
+- 本轮新的 ownership-test 结论：`navigation/README` 现已独占一句 canonical ownership test，把“定主语 / 解释 why / 判证据 / 展开对象 / 发 contract / 下 verdict / 存样本 / 存记忆”分别固定回根入口、`philosophy / guides / architecture / api / playbooks / casebooks / docs`；其余页只应继承，不再自带完整目录法。
+- 本轮新的 prompt-magic 因果结论：`03 / 06 / 84` 现在更明确把 Claude Code prompt 的“魔力”写成 `anti-renegotiation contract`，也就是 runtime 先预编译 `shared present`，让 `verify / delegate / tool choice / resume / handoff` 可以复用同一世界，而不是继续重谈“现在是什么世界”。
+- 本轮新的 prompt acid-test 结论：`84` 现已不再把 Prompt 自校完全外包给 `navigation/15`，而是自己保留三条最小酸测：`谁在定义世界`、`哪条 transcript/projection 在改判`、`handoff / compaction / resume 后 continuation 是否仍合格`。
+- 本轮新的 self-audit 结论：`06` 的苏格拉底追问现在更明确从 route hygiene 转向 falsification，新增了 `compaction / delegation / last-reply deletion / UI-protocol divergence` 之后能否继续维持同一 `reject / continue verdict` 这条反证问题。
+- 本轮新的 governance-card 结论：`10` 现已删掉会重新生产第二层 taxonomy 的 `strong / weak / consumer` 三列表，只保留“弱层最多触发怀疑、消费已外化 verdict、承接继续，但永不代签真相”这条非对称。
+- 本轮新的 61 结论：`61` 现已把源码锚点与 evidence-mode 退出页首，改成 why-only 边界页，并明确把安全与省 token 的共同制度写成 `authority lease accounting`，不再像机制页。
+- 本轮新的 102 结论：`current-truth surface candidate` 现已被写死为同一 rung 内的降格状态，`unresolved-authority note` 也被继续收回“缺少 promotion 所需证明”，不再带任何路由义务。
+- 本轮新的 directory-demotion 结论：`03 / 06 / 87` 现已进一步收掉对目录治理本身的高阶论述，只保留“减少 later consumer 重谈同一主语的次数 / 减少 first-answer count”这组最小判断，不再争做第二层目录前门。
+
 - 本轮新的 prompt-sovereignty 结论：`84` 与 `41` 现在更明确把 Prompt 线前门写回“谁有权把当前世界合法编译进模型 / 世界定义权必须单源”，而不是先由 `Prompt 效力`、`same-world property` 或专题侧门词汇带路。
 - 本轮新的 governance-readback 结论：`security/README` 现已继续把自己收回 signer / ledger / cleanup authority 三种不对称，不再公开重发治理 stage names、runtime readback class 或 reopen liability 这组 owner vocabulary。
 - 本轮新的 61-demotion 结论：`61` 现在更明确把治理顺序差异、classifier 幻觉与 owner taxonomy 继续压回 why，只保留“检查必须落在最有治理价值的时点”“判断已不会改变 authority allocation 时不应继续花 token”这两条抽象判断。

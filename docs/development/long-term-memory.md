@@ -8,6 +8,30 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 root-opener-three-moves live 记忆：
+  - `bluebook/README` 的根前门默认继续拆成三步：`三条 governing questions -> 三条首跳 -> evidence ceiling note`
+  - 根入口若再次把定题、分流与 public-artifact ceiling 混写成同一口气，默认按“navigation 先于 law”处理
+- 当前批次继续新增一条 navigation-ownership-test live 记忆：
+  - `navigation/README` 默认继续独占一句 canonical ownership test：`定主语 -> root/owner`、`why -> philosophy`、`evidence -> guides`、`object -> architecture`、`contract -> api`、`verdict -> playbooks`、`sample -> casebooks`、`memory -> docs`
+  - 非根页若再开始自带完整目录职责表，默认先删到只剩一句提醒或直接回 `navigation/README`
+- 当前批次继续新增一条 prompt-magic-causal-law live 记忆：
+  - `03 / 06 / 84` 默认继续把 Claude Code prompt 的“魔力”写成正向因果律：runtime 先预编译 `shared present`，于是 `verify / delegate / tool choice / resume / handoff` 不必重新协商当前世界
+  - 更稳的默认修法不是再说“不是更会说话”，而是直接写 `anti-renegotiation contract`
+- 当前批次继续新增一条 prompt-owner-acid-test live 记忆：
+  - `84` 默认继续保留最小 owner 自校，而不是把自校完全外包：只问 `谁在定义世界`、`哪条 transcript/projection 在改判`、`handoff / compaction / resume 后 continuation 是否仍合格`
+  - `84` 若再出现 `witness set / public noun / effect` 这类 meta 词，默认优先改回“compact 后还能否维持同一 reject/continue verdict”
+- 当前批次继续新增一条 source-quality-candidate-is-downgrade-state live 记忆：
+  - `102` 默认继续把 `current-truth surface candidate` 写成同一 rung 内的降格状态，不是独立 rung
+  - unresolved-authority note 默认继续只写“缺少 promotion 所需证明”，不再承担路由义务
+- 当前批次继续新增一条 directory-meta-demotion live 记忆：
+  - `03 / 06 / 87` 默认继续只保留最小目录纪律提醒，不再重讲 route law、动作顺序或完整目录职责表
+  - 目录优化更稳的默认主句只剩：减少 later consumer 重谈同一主语的次数，降低 `first-answer count`
+- 当前批次继续新增一条 governance-weak-surface-no-retaxonomy live 记忆：
+  - `10` 默认继续只写弱层的三种合法动作：`触发怀疑 / 消费 verdict / 承接继续`
+  - 入口卡若再次长回 `strong / weak / consumer` 三列表或 liability/reopen/finality 细分，默认按“第二层 taxonomy 复发”处理
+- 当前批次继续新增一条 61-why-only-lease-accounting live 记忆：
+  - `61` 默认继续不持有源码锚点和机制 inventory，只保留 why
+  - 更稳的默认主句是：真正统一的不是 budgeter，而是同一套 `authority lease accounting`
 - 当前批次继续新增一条 prompt-sovereignty-frontdoor live 记忆：
   - `84` 与 `41` 默认继续把 Prompt 线前门写成“谁有权把当前世界合法编译进模型 / 世界定义权必须单源”
   - Prompt 效力、same-world property、专题侧门词汇与 side-door inventory 默认都不配再充当前门 noun

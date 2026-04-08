@@ -67,8 +67,6 @@
 
 更硬一点说，这里的合法复数是 surface pluralism，而不是 adjudication pluralism；复数成立，裁决权仍然单源。
 
-Anthropic 官方文档把这条 force ladder 说得更硬了一层：advisory context、delegated context 与 consumer-local context 可以并存，但它们仍必须回到同一个 `world-definition source` 下决定谁在改判。
-
 所以这里的合法复数不是“所有 surface 同权并列”，而是 compiled order、advisory memory 与 delegated context 在同一条 authority order 下按 force class 并存。
 
 而 `compact / resume` 则决定这些 surface 在遗忘、重链与继续后还能否保持同一条 continuation contract。
@@ -81,22 +79,22 @@ Anthropic 官方文档把这条 force ladder 说得更硬了一层：advisory co
 
 如果继续把 lawful forgetting 再压成最短的制度句，它真正保留的也只该是：
 
-- 足以复现同一 `world-entry / reject-continue verdict` 的最小 witness set
+- compact 之后仍足以维持同一 `reject / continue verdict` 的最小事实
 
-能被忘掉的是叙事密度，不能被忘掉的是裁决依据。
+能被忘掉的是叙事密度，不能被忘掉的是世界定义、边界与继续资格的裁决依据。
 
-这也是为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到这种效力：他们抄到了说明文本，却没有抄到世界准入、投影分层与继续资格的制度体。真正稀缺的不是文风，而是不同 consumer 不必重新协商同一现场。
-更硬一点说，这里值钱的不是魅力叙事，而是不同 consumer 不必重新协商同一现场。一旦任何路径需要重述现场，same-world property 就已经失效。只有世界定义权、消费边界与继续资格被同一条证据链持续见证，当前世界才不会被反复协商；下面这句只是这条 judgment 的压缩，不是另一条 first answer。
+这也是为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到这种世界准入能力：他们抄到了说明文本，却没有抄到“世界已被编译、consumer 无需重谈”的制度体。
+更硬一点说，所谓 Claude Code prompt 的“魔力”，不是某句 prompt 更会说服模型，而是 `verify / delegate / tool choice / resume / handoff` 在不同 consumer 之间仍可继承同一份已编译世界；一旦任何路径需要重新定义“现在是什么世界”，magic 就已经失效。只有世界定义权、消费边界与继续资格被同一条证据链持续见证，当前世界才不会被反复协商；下面这句只是这条 judgment 的压缩，不是另一条 first answer。
 
 如果把这章继续压成最短公式，只保留一句：
 
-- 只有同一条 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 仍能单源裁决谁在定义世界、谁在消费这份定义、谁在继续时重获资格，当前世界才算被合法编译进模型。
+- 只有同一条 `Authority -> Boundary -> Transcript -> Lineage -> Continuation` 仍能单源裁决谁在定义世界、谁在消费这份定义、谁在继续时重获资格，当前世界才算被合法编译进模型。
 
-若要继续核对更细的 object-level same-world evidence，统一回 `82` 与本页锚点；frontdoor、自校、host audit 与 userbook 都不在这里再并列重造第二组 public noun。
+若要继续核对更细的 object-level same-world evidence，统一回 `82` 与本页锚点；frontdoor、自校、host audit 与 userbook 都不在这里再并列重造第二组术语。
 
 这里还要再多记一句：
 
-- `Explainability` 不能越位成新的 Prompt 主语；它只能解释 `world-definition source / boundary / qualification` 在哪里断，不能反向改写世界准入判决。
+- 解释层只配命名哪一环断了，不能反向改写世界准入判决。
 
 ## 2. 第一性原理：世界准入首先是一条合法编译顺序
 
@@ -180,7 +178,7 @@ Claude Code 更深的一层是：
 
 - 当前、下一步、接手后都还活在同一个现场
 
-### 反证法：拿掉哪一层，效力会最先失效
+### 反证法：拿掉哪一层，世界准入能力会最先失效
 
 最先塌掉的通常不是措辞，而是下面三层：
 
@@ -197,7 +195,13 @@ Claude Code 更深的一层是：
 
 ## 5. 苏格拉底式追问
 
-Prompt 自校统一回 `navigation/15`；本页只保留一条 handoff：如果世界定义权、消费边界与继续资格已经说不清是否仍属于同一条证据链，就先按 same-world test 失败处理，而不是继续在这里补第二张自校清单。
+本页只保留三条 acid test：
+
+1. 现在到底是谁在定义世界，是否仍然单源。
+2. 当前被消费的是哪条 authoritative transcript / projection，展示层有没有越权成改判层。
+3. 经历 `handoff / compaction / resume` 之后，continuation qualification 是否仍成立，而不是靠重述现场续命。
+
+更细 checklist 统一回 `navigation/15`；如果这三条已经答不清，就先按 same-world test 失败处理。
 
 ## 6. 对 Agent Runtime 设计者的直接启发
 

@@ -17,6 +17,17 @@
 - 缺当前真相的方法入口、evidence ceiling 或 owner 次序，回 `../README.md -> guides/102`
 - 缺其他更细 route gap，再按下面三类分流
 
+一句话该落在哪层，只问它在做哪种动作：
+
+- 定主语或给 first-hop，回根入口与对应 owner page
+- 解释 why，回 `philosophy/`
+- 判 evidence ceiling / ladder / downgrade，回 `guides/`
+- 展开对象、状态机与 choke point，回 `architecture/`
+- 声明 host contract 与字段 truth，回 `api/`
+- 发现场 verdict、rollback 与 repair，回 `playbooks/`
+- 保留失真样本，回 `casebooks/`
+- 记录稳定经验与批次记忆，回 `docs/`
+
 ## 三类第一问题缺口
 
 - 谁在定义世界

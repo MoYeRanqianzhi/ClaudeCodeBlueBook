@@ -1,6 +1,14 @@
 # 蓝皮书入口
 
-蓝皮书根入口只先回答三件事：世界如何进入模型，扩张如何被定价，当前如何不被过去写坏。第一次进入先在本页定题，再按三条首跳分流：Prompt 线先去 `philosophy/84`，治理线先去 [10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，当前真相保护先去 `guides/102`；若需要 cross-line mirror 再读 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)；若要补 why / 自校，再回 [03-设计哲学](03-设计哲学.md) 与 [06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)。截至 `2026-04-08`，官方 public artifact 只稳签到 GitHub frontdoor 与 npm bundle/schema；凡涉及路径级源码 certainty 的判断，一律先经 `guides/102` 仲裁。
+蓝皮书根入口只先回答三件事：
+
+- 世界如何进入模型
+- 扩张如何被定价
+- 当前如何不被过去写坏
+
+第一次进入先在本页定题，再按三条首跳分流：Prompt 线先去 `philosophy/84`，治理线先去 [10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，当前真相保护先去 `guides/102`；若需要 cross-line mirror 再读 [09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在](09-%E4%B8%89%E5%BC%A0%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%80%BB%E5%9B%BE%EF%BC%9A%E4%B8%96%E7%95%8C%E8%BF%9B%E5%85%A5%E6%A8%A1%E5%9E%8B%E3%80%81%E6%89%A9%E5%BC%A0%E5%AE%9A%E4%BB%B7%E4%B8%8E%E9%98%B2%E8%BF%87%E5%8E%BB%E5%86%99%E5%9D%8F%E7%8E%B0%E5%9C%A8.md)；若要补 why / 自校，再回 [03-设计哲学](03-设计哲学.md) 与 [06-第一性原理与苏格拉底反思](06-第一性原理与苏格拉底反思.md)。
+
+证据上限也先记一句：截至 `2026-04-08`，官方 public artifact 只稳签到 GitHub frontdoor 与 npm bundle/schema；凡涉及路径级源码 certainty 的判断，一律先经 `guides/102` 仲裁。
 
 ## 三条首跳
 
@@ -33,4 +41,4 @@
 - 缺跨目录下一跳，而不是缺主语：
   - 回 [navigation/README.md](navigation/README.md)
 
-如果一个新结论第一次同时想落在 `README / navigation / guide` 三层，通常不是因为它太重要，而是因为还没判清它究竟是在定义主语、补最小顺序、下沉证据层，还是其实只缺一次 route trim；这时先回 [06-第一性原理与苏格拉底反思](06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md) 与 [../docs/development/00-研究方法.md](../docs/development/00-%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95.md) 反问。
+如果一个新结论第一次同时想落在 `README / navigation / guide` 三层，先回 [navigation/README.md](navigation/README.md) 的 ownership test；通常不是因为它太重要，而是因为你还没判清自己是在定义主语、解释 why、判证据，还是下执行 verdict。

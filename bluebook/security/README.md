@@ -18,9 +18,9 @@
 ## 先记四句
 
 - 安全页只翻译 signer / ledger / cleanup authority 的不对称；canonical chain 与 readback vocabulary 一律回 `../10` 与 `risk/`。
-- 完成、终局、遗忘、清理都各有 signer；任何弱层都不配替强层宣布“已经没事了”。
-- 宿主与 user-facing 入口只配消费 runtime 已外化的治理结果，不配自己从事件流回放拼当前真相。
-- 若你缺的是 canonical readback、continuation consumer 或用户侧恢复语义，统一回 `../10` 与 `risk/`；`security/README` 不在这里代发读回规则。
+- 完成、终局、遗忘与清理都各有 signer；弱层最多触发怀疑或消费已外化 verdict，不能替强层宣布“已经没事了”。
+- 宿主与 user-facing 入口只配消费 runtime 已外化的治理结果，不配自己从投影回放拼当前真相。
+- 如果你已经开始列 stage names、consumer classes 或恢复术语，说明这页又在越位代签；更细顺序、尾部读回与执行尾链统一回 `../10`、`risk/` 与 `playbooks/`。
 
 如果把安全入口判定继续压成最短公式，也只剩三种不对称：
 
@@ -59,7 +59,7 @@
 - 当 ledger 与 verdict 的边界模糊，结果词开始冒充治理事实。
 - 当 cleanup authority 到底落在哪仍不清楚，收口后谁还配负责也开始失真。
 
-更稳的读法是：若 usage 读数、permission 投影、cleanup 结果词或 default continuation 开始替 signer / verdict 说话，把它们先当安全症状，而不是 canonical reject semantics；具体弱读回与拒收语义统一回 `../10`。
+更稳的读法是：若 projection、状态词或收口结果开始替 signer / verdict 说话，把它们先当安全症状，而不是治理事实；更细弱读回与拒收语义统一回 `../10` 与 `risk/`。
 
 ## 继续下潜时
 
