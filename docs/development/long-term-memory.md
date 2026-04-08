@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 public-artifact-overclaim-should-fail-low live 记忆：
+  - `84 architecture / 87 / 102` 现在应直接把 public artifact 的 overclaim 写成低签字权层先失败：release-surface 争议先回 `compile-time gate / runtime gate / artifact surface`，`change-risk` 附表默认补 `signer + effect ceiling`，分不清时先降格回 `public artifact ceiling`
+  - 更稳的默认写法是：later maintainer 不先问“到底有没有这个能力”，而先问“它到底没编进 build、没在 runtime 点亮，还是只没进入公开 artifact”
 - 当前批次继续新增一条 prompt-residuals-should-fail-fast-on-summary-usurpation live 记忆：
   - `81 / 84 / 15` 现在应直接把 Prompt residual 收成快拒句：`narrative-only / forbidden-as-sole-witness` 一旦独自承担 continuation witness，就直接判 `continue qualification` 失效；`summary / delegated context / display transcript` 越权代签时，也一律先降回 `projection`
   - 更稳的默认写法是：Prompt 线的 first reject 不是“故事变短”，而是更顺手的 surface 开始越权代签 `same-world / continue verdict`

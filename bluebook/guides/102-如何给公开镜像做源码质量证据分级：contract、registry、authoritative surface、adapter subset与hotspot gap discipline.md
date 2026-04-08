@@ -344,6 +344,8 @@ gap discipline 的价值不是“保守一点”，而是：
 |---|---|---|---|---|---|
 | `<surface>` | `<what it protects>` | `<authoritative proof>` | `<where later maintainer first says no>` | `<where the fallback lands first>` | `<usual wrong reading>` | `<why this stays provisional>` | `<what promotion still lacks>` |
 
+若 `change-risk surface` 本身是公开 operator artifact，`minimum visible evidence` 至少还应写出 `signer` 与 `effect ceiling`。缺任一项时，默认降格回 `public artifact ceiling`，不得 promotion 成 current-truth claim 或稳定 capability claim。
+
 更短地说，这页真正要先写实的是：
 
 1. 这份 `change-risk` 附表该长什么样。
