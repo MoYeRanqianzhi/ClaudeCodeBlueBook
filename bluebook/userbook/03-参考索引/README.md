@@ -94,6 +94,9 @@
 60. `onSetPermissionMode`、`getLeaderToolUseConfirmQueue`、`recheckPermission`、`useRemoteSession` 与 `useInboxPoller` 看起来都在权限重判附近时，应该先去哪个入口分辨 permission context 变更后的本地重判广播不是同一种 permission re-evaluation surface。
 61. headless print 的 result convergence、summary tail、wire visibility 与 builder/callback/UI 可见性看起来都挤在 `92-115` 这一段时，应该先去 `02-能力边界/194-197` 的 branch map，再跳 `05-控制面深挖/207-210`，不要直接把四种收束线混成一条“headless 输出”。
 62. headless print 的 completion signal、system init、history attach restore 与 loading edge 看起来都落在 `116-121` 这一段时，应该先去 `02-能力边界/198` 的 pair map，再跳 `05-控制面深挖/211`，不要把这六页误读成单线时间顺序。
+63. headless print 的 remote recovery、viewer ownership、transport terminality 与 compaction contract 看起来都落在 `122-127` 这一段时，应该先去 `02-能力边界/199-200` 的 branch map / double-trunk map，再跳 `05-控制面深挖/212-213`。
+64. remote 的 `4001 contract / surface presence / status ledger / front-state consumer topology` 看起来都压在 `128-132` 时，先去 `02-能力边界/201`，再跳 `05-控制面深挖/214`。
+65. schema-store consumer、bridge chain split 与 shared remote interaction shell 看起来都混在 `133-138` 时，先去 `02-能力边界/202`，再跳 `05-控制面深挖/215`。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 
