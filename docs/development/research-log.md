@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的目录元协议结论：根据并行 Agent 的回报，这次真正值得落地的是 `meta/README`，不是 `owners/README`。理由很具体：总控页之间的 mixed-role 争议目前还缺一个纯元协议页，所以根 `README`、`03`、`06`、`navigation` 都在轻度代写目录契约；新增 `meta/README` 能把这部分收口成“same-question 多页首答 / sibling 代签 / 删词还是退回哪层”的专门页。相反，`owners/README` 当前大概率只会重复根入口里已经存在的角色协议，并把 `architecture / security / risk / playbooks / api` 再讲成一遍总论，因此本轮刻意不建。
+- 本轮新的回链结论：`meta/README` 的最小回链集合先固定在四处高流量页：根 `README`、`03`、`06`、`navigation/README`。`philosophy/README` 这一轮不回链，因为 why-only 前门当前最值钱的特征就是不带 route 感；太早给它接 `meta`，会把 why 页重新拉回目录说明页。
+- 本轮新的根仓同步结论：本轮再次复核根仓 `/home/mo/m/projects/cc/analysis`，`git status --short --branch` 仍为 `main...origin/main`。本轮未在根仓处理任何文件，正文继续严格只在 `mainloop` 内推进。
 - 本轮新的 owner-page 结论：并行 Agent 的三条最硬结论已经各自沉入 owner 页。`84` 现在更明确地把 Prompt 写成 multi-surface `world-entry object`，强调真正被编译进模型的是共享 authority order 与 continuation qualification 的多个 surface，而不是单段 system prompt；`61` 现在直接把 continue、能力暴露、上下文占位与时间续租统一写成 `authority lease`；`87` 则把源码质量再压成 `dependency honesty + temporal honesty` 的双重诚实，避免 later maintainer 再把时间线撒谎漏掉。
 - 本轮新的根仓同步结论：本轮再次复核根仓 `/home/mo/m/projects/cc/analysis`，`git status --short --branch` 仍为 `main...origin/main`。本轮未在根仓处理任何文件，正文继续严格只在 `mainloop` 内推进。
 - 本轮新的目录结论：这次不再把“目录优化”理解成挪更多文件，而是先把目录角色正式写成 speaking-rights protocol。根 `README` 现在直接声明蓝皮书不是按题材分桶，而是按发言权分桶；`03` 则把目录优化上升为固定发言权测试；`06` 新增的五个苏格拉底追问，专门抓 `first answer / second-hop inventory / why / object / verdict` 混权。当前判断是：只要 same question 还会在两页里第一次被回答，就还不配做物理重组。

@@ -37,6 +37,7 @@
   - 分别只负责治理机制、post-cleanup readback 与 execution verdict。
 
 目录优化真正要减少的，不是文件数，而是 later consumer 在两页里学到同一第一答案的概率。
+若问题已经不是“首跳去哪”，而是“哪一页正在越位代签、目录契约是否失真”，统一回 [meta/README.md](meta/README.md)。
 
 ## 根入口只做三件事
 

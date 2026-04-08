@@ -6,6 +6,7 @@
 2. 你在争某页是否越位改判。
 
 如果你还缺主语或最小顺序，先回 [../README.md](../README.md)；这里不再重做 first-hop 判定，只负责在主语已知后指出缺的是哪种 artifact / 证据。
+如果争议已经变成“总控页之间谁在越位代签、目录契约是否失真”，先回 [../meta/README.md](../meta/README.md)；那不是 artifact gap。
 
 这里默认只回答 artifact gap，而不是页面归属。扁平反查规则如下：
 
