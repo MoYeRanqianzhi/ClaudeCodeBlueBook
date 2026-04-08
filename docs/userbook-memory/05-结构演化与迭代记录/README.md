@@ -223,6 +223,7 @@
 - [219-2026-04-08-144-149 coarse remote bit pair split 拆分记忆.md](./219-2026-04-08-144-149%20coarse%20remote%20bit%20pair%20split%20拆分记忆.md)
 - [220-2026-04-08-168-179 headless source and create-context subtree split 拆分记忆.md](./220-2026-04-08-168-179%20headless%20source%20and%20create-context%20subtree%20split%20拆分记忆.md)
 - [221-2026-04-08-180-190 teleport-model-bridge branch split 拆分记忆.md](./221-2026-04-08-180-190%20teleport-model-bridge%20branch%20split%20拆分记忆.md)
+- [222-2026-04-08-ingress and permission tail stable-gray hardening 拆分记忆.md](./222-2026-04-08-ingress%20and%20permission%20tail%20stable-gray%20hardening%20拆分记忆.md)
 
 用途：
 

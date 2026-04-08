@@ -368,6 +368,8 @@
   [04-专题深潜/16-IDE、Desktop、Mobile 与会话接续专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/16-IDE%E3%80%81Desktop%E3%80%81Mobile%20%E4%B8%8E%E4%BC%9A%E8%AF%9D%E6%8E%A5%E7%BB%AD%E4%B8%93%E9%A2%98.md)
 - 分清远端前端里的会话接续、输入注入与桥接审批为什么不是一件事：
   [04-专题深潜/20-远端输入注入、桥接审批与会话接续专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/20-%E8%BF%9C%E7%AB%AF%E8%BE%93%E5%85%A5%E6%B3%A8%E5%85%A5%E3%80%81%E6%A1%A5%E6%8E%A5%E5%AE%A1%E6%89%B9%E4%B8%8E%E4%BC%9A%E8%AF%9D%E6%8E%A5%E7%BB%AD%E4%B8%93%E9%A2%98.md)
+- 分清桥接审批返回本地之后，为什么还会继续分叉成 closeout、re-evaluation、host sweep 与 persist propagation：
+  [04-专题深潜/21-桥接审批后处理与权限尾部分诊专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/21-%E6%A1%A5%E6%8E%A5%E5%AE%A1%E6%89%B9%E5%90%8E%E5%A4%84%E7%90%86%E4%B8%8E%E6%9D%83%E9%99%90%E5%B0%BE%E9%83%A8%E5%88%86%E8%AF%8A%E4%B8%93%E9%A2%98.md)
 - 管理插件、MCP、skills、hooks 与 agents：
   [04-专题深潜/17-插件、MCP、技能、Hooks 与 Agents 运维专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/17-%E6%8F%92%E4%BB%B6%E3%80%81MCP%E3%80%81%E6%8A%80%E8%83%BD%E3%80%81Hooks%20%E4%B8%8E%20Agents%20%E8%BF%90%E7%BB%B4%E4%B8%93%E9%A2%98.md)
 - 分清 `claude ...` 本身的根入口、旗标与启动模式：

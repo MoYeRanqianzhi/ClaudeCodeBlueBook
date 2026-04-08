@@ -21,6 +21,7 @@
 - 这页不替代 219 的结构长文。
 - 这页只抓 `178 -> 179 -> 180` 的 teleport runtime、model line里的 `182` 与 `184 -> 185 -> 187 -> 188` 两个 trunk，以及 `176 -> 181 -> 183 -> 186 -> 189 -> 190` 的 bridge line。
 - 这页保护的是 teleport runtime、model、bridge birth/hydrate/write 的主语切换，不把某个 helper、某个字段或某个 UUID 集合直接升级成稳定公共合同。
+- 这页承接 `205` 的三个出口：`179 -> 180`、`178 -> model line`、`176 -> bridge line`；因此 `205 -> 206` 就是 `168-190` 的接力关系，不需要第三张 `168-190` 伞形总页。
 - 如果接下来只想继续深读 model，也仍然留在这张 `180-190` branch map 下，不额外新建 model-only 范围页，更不把 `183/186` 误判成 model 线的缺口。
 
 ## 1. 结构总表
