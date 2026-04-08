@@ -45,6 +45,7 @@
   - 已有 promotion proof 但还没写出 `change-risk record`，继续停在 `guides/102`
   - 已有 `change-risk record` 但还没写 `why-proof`，回 `philosophy/87`
   - 已有 `change-risk record` 与 `why-proof`，但还没完成 `landing card / first fallback`，回 `architecture/README`
+  - 已有 `landing card` 但还没过 `quality gate`，继续停在 `architecture/README` 按 `87` 的三条 why-proof 命题补齐
   - artifact 已齐但还在混 runtime-core evidence、operator-governance evidence 与公开镜像缺口，先退回 `06`
 
 ## 稳定节点

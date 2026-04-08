@@ -17,12 +17,12 @@
 - 治理
   - `10 -> security（mechanism） / risk（tail readback） / playbooks（execution）`
 - 当前真相保护
-  - `102（先写 ceiling note；candidate 必带 downgrade / unresolved-authority note；promotion 成立后再产出 change-risk record，并继续进入 why-proof / landing card）`
+  - `102（先写 ceiling note；candidate 必带 downgrade / unresolved-authority note；promotion 成立后再产出 change-risk record，并继续进入 why-proof / landing card / quality gate）`
 
 ## 根入口只做三件事
 
 1. 先定题与 artifact 状态，不先决定 page hop。
-   - 先判断自己究竟在问请求装配、扩张定价，还是当前真相保护；再判断自己缺的是 `compiled world verdict`、`repricing proof`，还是 `ceiling note / change-risk record`。
+   - 先判断自己究竟在问请求装配、扩张定价，还是当前真相保护；再判断自己缺的是 `compiled world verdict`、`repricing proof`，还是 `ceiling note / change-risk record / quality gate`。
 2. 先给最小 artifact 顺序，不先摊深链。
    - 先拿到上面的三条首跳，再决定自己缺的是 first reject signal、support card，还是执行 verdict。
 3. 先判是否要跨目录，最后才进入 route map。

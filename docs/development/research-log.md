@@ -3,6 +3,10 @@
 ## 2026-04-08 本轮增量
 
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
+- 本轮新的深段自校结论：`06` 的 6.32、6.35、6.37-6.49 等深段现在进一步从 “统一回 owner page” 收回到真正的 why。新的默认句法是：如果一段解释删掉 route note 后就站不住，它只是 route，不是自校；每段都应直接回答一个可反驳对象，而不是把 owner nouns 当脚手架。
+- 本轮新的源码质量 handoff 结论：`87`、根 `README` 与 `navigation/README` 现在更明确把 later maintainer 的默认消费顺序固定成 `102 -> 87 -> architecture landing card -> local quality gate`。这意味着 `87` 的正职仍是 `why-proof`，而 landing 之后的 gate 只是复用 `87` 的三条命题，不再把 `87` 误读成后置验收页。
+
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
 - 本轮新的 why-page 结论：`03` 与 `06` 现在更明确把高流量 why 页的最低自校写成一句硬规则：删掉 `next-hop / owner page / route note` 后若整段不成立，它就只是 route，不是 why。这让 `03` 更像制度因果页，`06` 更像可反驳自校页，而不是隐形导航页。
 - 本轮新的目录冻结结论：根层角色继续收紧成 `README = 唯一 frontdoor`、`navigation/README = 唯一路由反查`、`00-导读 = preface / locator`、`01-源码结构地图 = 唯一规范源码地图`。其中 `01-源码总地图` 已被正式收回成纯兼容别名页，不再发布独立源码判断。
 - 本轮新的 architecture handoff 结论：`architecture/README` 现在更明确把 `landing card` 写成 change control 中间态，而不是对象层终局；更稳的默认顺序是 `102 artifact gate -> 87 why-proof -> architecture landing card -> 87 quality gate`。

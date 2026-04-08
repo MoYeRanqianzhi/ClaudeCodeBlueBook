@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 最新根仓同步记忆（2026-04-08，本批次四次深化）继续保持健康态：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 deep-why-no-route-scaffold live 记忆：
+  - `06` 深段默认继续不再靠“统一回某页”支撑判断；若删掉 route note 后段落就不成立，默认判为 route masquerading as why
+  - 更稳的默认修法是把每段压回一个可反驳对象：Prompt 回 `compiled world verdict`，治理回 `lease checkpoint`，源码质量回 `later-maintainer veto`
+- 当前批次继续新增一条 source-quality-single-handoff live 记忆：
+  - 源码质量线默认继续把 later maintainer 的消费顺序写死成 `102 -> 87 -> architecture landing card -> local quality gate`
+  - 这道 `quality gate` 默认继续复用 `87` 的三条 why-proof 命题，但 gate 本身发生在 landing card 之后，不把 `87` 误读成后置验收页
 - 最新根仓同步记忆（2026-04-08，本批次三次深化）继续保持健康态：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
 - 当前批次继续新增一条 why-survives-route-removal live 记忆：
   - `03 / 06` 默认继续把 why 页自校压成一句硬规则：删掉 `next-hop / owner page / route note` 之后，整段若不成立，它就不是 why，而只是 route
