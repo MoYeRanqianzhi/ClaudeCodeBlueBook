@@ -15,7 +15,7 @@
 - `architecture/` 真正值钱的，不只是把对象链列出来，而是把 later maintainer 的局部可反对性落成可见对象与 seam。
 - 这里说的 `局部可反对性` 不是“最后还能看懂”，而是拿不到作者时，later maintainer 仍能只凭局部对象与 seam 指出哪条 `event / snapshot / pointer / recovery asset` 在越权。
 - 因而 `event truth / current truth / display truth` 的对象化分工，以及 `writeEvent / reportState / reportMetadata` 这类通道怎样落到 writeback seam，也统一由本目录与 `60 / 84` 负责，不在 `87` 这类 why 页重发对象矩阵。
-- `102` 里的 `change-risk record`，也只有在这里被重新落成 object、state machine 与 seam 之后，才足以进入真正的 change control。
+- `102` 里的 `change-risk record`，也只有在这里被重新落成 object、state machine 与 seam 之后，才足以进入真正的 change control；但 landing card 本身仍不是终局，后面还必须过 `87` 的 quality gate。
 
 ## 四个对象问题
 
@@ -26,13 +26,37 @@
 
 如果这四问还答不上，说明你缺的还是对象层，而不是新的目录路线。
 
+## landing card
+
+当 `102` 已经产出 `change-risk record`，对象层至少还要把它继续落成下面六栏：
+
+| surface | protected invariant | writer truth plane | writeback seam | first fallback | unresolved authority |
+|---|---|---|---|---|---|
+| `<surface>` | `<what it protects>` | `<who may write now>` | `<where current truth is committed>` | `<first retreat layer>` | `<what still lacks promotion proof>` |
+
+字段映射也应固定成机械关系，而不是解释关系：
+
+- `change-risk surface` -> `surface`
+- `protected invariant` -> `protected invariant`
+- `minimum visible evidence` -> `writer truth plane / unresolved authority`
+- `replay obligation` -> `writeback seam / first fallback`
+- `second-truth risk` -> `first fallback / unresolved authority`
+
+`landing card` 写完后，默认下一步不是立刻展开更多对象专题，而是先回到 `87` 过一遍 quality gate：
+
+1. 这里是否仍是 `合法复杂度中心`
+2. 这里是否仍只承认 `one writable present`
+3. later maintainer 是否已能据此执行第一条 veto
+
+三问有一问答不上，就说明 landing card 还只是对象草图，不是可升级的 change control。
+
 ## 什么时候进来
 
 - 当你已经知道某条高阶判断成立，但还没回答“它到底落成了哪些正式对象、状态机与 choke point”。
 - 当你需要把 Prompt、治理或当前真相保护继续压到运行时结构，而不是停在哲学判断、模板或排错层。
 - 当你准备判断 later maintainer 拿什么局部反对当前实现，而不想把问题退回目录观感或作者说明。
 
-## 最短对象入口
+## quality gate 通过后的对象展开
 
 - [82-请求装配流水线：world entry / request assembly / six-stage assembly chain](82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md)
   - 看 same-world contract 怎样落成 request assembly 对象。

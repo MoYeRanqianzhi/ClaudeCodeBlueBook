@@ -40,7 +40,7 @@
 更硬一点说，真正统一的不是一个 budgeter，而是同一套 `authority lease accounting`；四类被收费资源、开闸者、记账者与结算者的最短交叉表统一回 `10`。
 这条线再压一层，其实只剩一句：错误顺序的检查与未结算的继续，本质上是同一种制度错误，都是把本该重定价的 authority 当成默认续期。
 
-## 2. 第一层：治理顺序优于检查数量
+## 2. 测试一：是不是定价得太晚
 
 很多系统谈安全时，只会说：
 
@@ -64,7 +64,7 @@ Claude Code 更成熟的地方在于：
 
 - 检查发生在最有治理价值的时点
 
-## 3. 第二层：失败语义分型优于一刀切 fail-open / fail-closed
+## 3. 测试二：是不是给错了失败语义
 
 Claude Code 对失败并不追求一种统一美德。
 
@@ -90,7 +90,7 @@ Claude Code 对失败并不追求一种统一美德。
 
 - 身份相关失败、组织边界失败、高危配置失败、低价值自动化失败，本来就不该拥有同一种回退语义。
 
-## 4. 第三层：可撤销自动化优于单向升级
+## 4. 测试三：自动化是否仍可撤销
 
 如果自动化只能越来越多、越来越强，那它迟早会从行动力变成失控源。
 
@@ -112,15 +112,19 @@ Claude Code 明显在避免这一点：auto mode 不是永久授权，classifier
 
 - 当系统已经没有决策增益时，继续自动化只会更贵、更冒险。
 
-## 5. 第四层：只在仍有决策增益时花 token
+## 5. 测试四：这笔 token 还能改变决策吗
 
 Claude Code 并不追求“检查越多越安全”。
 
-它更像在问：
+它更像在走一道更硬的 diagnosis loop：
 
-- 这次检查还能改变决策吗
+1. 这次检查还能改写哪个 decision。
+2. 如果症状来自 `continue / compact / resume / re-entry`，旧 lease 有没有 `repricing proof`。
+3. 哪些 stable bytes 仍必须留下，才能继续支撑 `same scene / still priced`。
+4. 哪些 transient authority 必须被 cleanup 撤销，不能伪装成同一现场的合法继续。
 
-如果答案是否定的，系统就会停止继续烧 token。
+四问里只要有一问答不上，系统停掉的就不只是“额外检查”，而是一笔不该默认续租的 authority。
+更具体的 `lease checkpoint / repricing proof / cleanup` 对象链统一回 `10`；本页只保留 why：为什么决策增益一旦消失，就不该再免费续租 authority。
 
 更硬一点说，未被重新定价的继续会同时延长 authority 与成本在场；它不是便宜，而是把代价推迟到后面。
 
@@ -141,7 +145,7 @@ Claude Code 并不追求“检查越多越安全”。
 
 如果继续讨论谁在代签、谁只在读回、谁在收口，说明你缺的已不是 why，而是治理 owner chain。
 
-## 6. 第五层：稳定字节是制度资产，不是实现细节
+## 6. 测试五：哪些字节必须保持可重放
 
 Claude Code 的很多高级设计都在强调：
 
@@ -149,6 +153,7 @@ Claude Code 的很多高级设计都在强调：
 
 这里先只保留抽象判断：凡会同时改写治理、成本与解释一致性的字节，都应被当成制度资产稳定下来；更细的缓存、重放与 break 证据统一回源码锚点与对象页。
 它们不是第五类被收费资源，而是 `externalized truth chain (verdict ledger)` 的 durable form：正因为这些字节稳定，前面四类收费对象才可被重放、复核与结算。
+更硬一点说，stable bytes 保留的不是“更长缓存”，而是 `repricing / cleanup / continue verdict` 仍可被 later consumer 重放所需的最小证据。
 
 这说明对 Claude Code 来说，真正要被保护的不是“缓存命中率”这个结果，而是：
 
@@ -198,12 +203,20 @@ Claude Code 的很多高级设计都在强调：
 - 无意义的自动化重试
 - 已无收益的分类与审批
 
-### 7.4 为什么继续资格本身就是治理对象
+### 7.4 为什么 `compact / resume / re-entry` 也只是治理对象入口
 
 因为 continue 从来不是免费“下一轮”。
 
 - 一旦继续还能改写 authority、价格或清算资格，它就仍是一笔待结算的治理对象。
 - 一旦继续已经不能改写这些东西，它就不该继续占据高价上下文与自动化权限。
+- 所以 `continuity` 也只是一道 lease checkpoint：`same scene? still priced? who settles?`；`compact / resume / re-entry` 只是这道 checkpoint 的三种入口形式。
+- `compact`
+  - 只能保留仍足以支持 `same scene / repricing proof` 的 stable bytes；否则它只是摘要，不是合法继续。
+- `resume`
+  - 只有旧 `verdict ledger` 仍能证明 lease 未被撤销时，才算继续同一现场。
+- `re-entry`
+  - 先问谁为旧 authority 清账；旧 lease 若未先结算，就不是继续，而是重新开价。
+- 更具体的 checkpoint 拆解与拒收顺序统一回 `10`；本页只保留为什么这三种入口本质上仍是同一治理对象。
 
 ## 8. 对 Agent 设计者的启发
 

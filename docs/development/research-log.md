@@ -2,6 +2,40 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
+- 本轮新的 why-page 结论：`03` 与 `06` 现在更明确把高流量 why 页的最低自校写成一句硬规则：删掉 `next-hop / owner page / route note` 后若整段不成立，它就只是 route，不是 why。这让 `03` 更像制度因果页，`06` 更像可反驳自校页，而不是隐形导航页。
+- 本轮新的目录冻结结论：根层角色继续收紧成 `README = 唯一 frontdoor`、`navigation/README = 唯一路由反查`、`00-导读 = preface / locator`、`01-源码结构地图 = 唯一规范源码地图`。其中 `01-源码总地图` 已被正式收回成纯兼容别名页，不再发布独立源码判断。
+- 本轮新的 architecture handoff 结论：`architecture/README` 现在更明确把 `landing card` 写成 change control 中间态，而不是对象层终局；更稳的默认顺序是 `102 artifact gate -> 87 why-proof -> architecture landing card -> 87 quality gate`。
+
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
+- 本轮新的 Prompt 因果结论：`84` 现已继续把 Claude Code prompt 的效力压成四个同时成立的制度动作：`stable prefix custody / visibility pruning / delegated-context downgrade / lawful continuation`。这意味着下一批若还出现“更会写 prompt / 更会协作”这类效果词，默认先按这四个动作逐项回查。
+- 本轮新的治理收束结论：`10` 现已把治理入口卡继续往 diagnosis-first 推进，显式把 `compact / resume / re-entry` 收编成 `lease checkpoint` 的三种入口；`61` 与 `security/README` 也继续收回“只复用 `10` 的 checkpoint，不在 why 页或安全入口页自造 continuity 理论”。
+- 本轮新的源码质量目录结论：`102` 现已明确写出 `artifact completeness is the only ownership law`，并把目录优化成功标准继续压成同一条 artifact chain：`ceiling note / downgrade note / unresolved-authority note -> change-risk record -> why-proof -> landing card -> quality gate`。这意味着 later maintainer 以后缺的应先被写成 artifact gap，而不是 page ownership 争议。
+- 本轮新的入口结论：根 `README` 与 `navigation/README` 现已继续从“按页分发”收回“按 artifact state 反查”。根入口只判题目与 artifact 状态，不代签 promotion；`navigation/README` 只回答 artifact gap，不再把反查写成页面签字权分发表。
+
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
+- 本轮新的 Prompt 收束结论：`bluebook/03` 与 `navigation/41` 现已把 Prompt why 收成和治理/当前真相对称的四联式：`law / counterfeit / first reject / reversible fix`。新的最短口径不再先说“Prompt 有魔力”，而是先说 `same-world compiler` 如何产出 `compiled world verdict`，以及 counterfeit 如何被 reject、如何被可逆修复。
+- 本轮新的 artifact-first 结论：`bluebook/03`、`06` 与 `navigation/41` 现已进一步把目录优化从 page ownership 压回 artifact completeness。源码质量线默认先问缺的是 `ceiling note / unresolved-authority note / change-risk record / why-proof / landing card / quality gate` 哪一个，而不是先争“哪页越位”。
+- 本轮新的 official-surface 结论：并行 agent 与外部公开面复核后，当前更稳的判断是 Claude Code 的 prompt potency 应优先写成 runtime contract，而不是猜内部 prompt 原文。尤其在当前 worktree 缺源码镜像、官方公开面主要暴露 agents / hooks / permissions / plugin / settings artifact 时，本批次继续按 `public-evidence / official-surface` 模式推进。
+- 本轮新的并行分析结论：Prompt 线下一批最值得继续压硬的四个因果词已更清楚地浮现为 `stable prefix / visibility pruning / isolated delegation / lawful continuation`；治理线下一批更自然的诊断环则是 `earliest unpaid expansion -> repricing proof -> reject trio -> cleanup / lease revocation`。
+
+- 本轮新的源码质量路由结论：`navigation/README` 现已继续从 page-owned route 改成 artifact-state route。当前真相保护不再问“缺哪一页”，而问“缺 `ceiling note / downgrade stamp / unresolved-authority note / change-risk record / why-proof / landing card / first fallback` 里的哪一个”。
+- 本轮新的根入口结论：根 `README` 的当前真相首跳现已继续改成条件链，而不是线性链：先写 `ceiling note`，若仍是 `candidate` 就停在 `102`；只有 promotion 成立后才产出 `change-risk record` 并进入 `landing card`。
+- 本轮新的 87 结论：`87` 现在更明确把自己的共享产物写成 `why-proof`，不再只说“这张表为什么值钱”；这份 `why-proof` 只继续证明三件事：`合法复杂度中心 / one writable present / later-maintainer veto`。
+- 本轮新的 architecture 结论：`architecture/README` 现在不只给出 `landing card` 六栏，还继续补出了和 `change-risk record` 的字段映射，因此 source-quality line 从 `record` 到 `landing` 的 handoff 开始变成机械投影，而不再只是解释性 handoff。
+
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，本轮正文继续只在 `.worktrees/mainloop` 内推进。
+- 本轮新的 root frontdoor 结论：根 `README` 现在把证据上限句继续压成固定 artifact 口径，不再把 dated public-artifact snapshot 混进根前门；更稳的默认写法只剩 `路径级源码 certainty 先经 guides/102 的 ceiling note`。
+- 本轮新的 governance diagnostics 结论：`10` 现在在 lease crosswalk 之后继续补出四问诊断律：`what expanded / who repriced it / what ledger proves it / what cleanup ends it`；任何一问答不上，默认先按 unpaid renegotiation 或 default-renewed lease 处理。
+- 本轮新的 self-audit 结论：`06` 的源码质量分支现在进一步从 page ownership 退回 artifact completeness，不再先问“缺的是哪一页”，而先问 `ceiling note / downgrade note / change-risk record / object landing / verdict` 是否齐全。
+
+- 本轮新的根仓同步结论：重新执行 `git fetch origin main` 与 `git merge --ff-only origin/main` 后，结果为 `Already up to date.`；根仓当前最新状态回到 `main...origin/main`。这说明上一批写入的 root-blocked 记忆只应保留为历史截面，本轮正文继续只在 `.worktrees/mainloop` 内推进。
+- 本轮新的 Prompt 结论：Prompt 线现在不只写 `compiled world verdict`，还补上了更可判定的 admissibility-law 模板：`84` 已新增 `surface mutation / allowed / broken link / downgrade / observer evidence` 判定表，并把 counterfeit 固定成 `UI transcript 越权 / delegated context 长成第二世界 / compaction 丢 continuation object`，同时给出第一条可逆修法。
+- 本轮新的 Prompt 去效果词结论：`03 / 06 / 41` 继续把 `Prompt 很强 / 魔力` 这类效果词退回 `world-entry honesty / compiled world verdict / consumer 无需重谈现场` 的 failure-based predicate；旧的赞美句法不再承担主句。
+- 本轮新的治理诊断结论：`10` 现在更明确按 `earliest unpaid expansion` 定位治理问题，不再先盯 surface noun；`reject trio` 也继续从标签推进成条件诊断，`continuity` 被统一压成 `lease checkpoint: same scene? still priced? who settles?`。
+- 本轮新的安全 intake 结论：`security/README` 现已继续把强结论的入口固定成四个 object ref：`signer_ref / verdict_ledger_ref / cleanup_ref / lease_revocation_condition`；命名不出时默认先降格成 weak projection / readback。
+- 本轮新的源码质量 artifact 结论：source-quality 分流现在更明确按 artifact chain 组织：根入口先写 `ceiling note`，`102` 产出 `change-risk record`，`architecture/README` 新增 `landing card` 承接 object landing，`87` 则把 `change-risk record` 的最低验收写成三条 gate：`合法复杂度中心 / one writable present / later-maintainer veto`。
+
 - 本轮新的根仓阻塞结论：已再次执行 `fetch origin main`，但根仓 `merge --ff-only origin/main` 因 `/home/mo/m/projects/cc/analysis` 外层现存 `UU` 冲突失败；这些冲突位于 `.worktrees/mainloop` 之外。本轮仍严格只在 `mainloop` 内深化，并把该阻塞写入长期记忆。
 - 本轮新的 Prompt line 结论：`84 / 06 / 03 / 41` 现在继续把 Prompt 哲学从“共享 present / 魔力”推进到更可证伪的 admissibility law：later consumer 继承的是 `compiled world verdict`，合法 late binding 只允许填充预授权槽位，不允许改写 `Authority / Boundary / Transcript / Lineage / Continuation`。
 - 本轮新的 Prompt counterfeit 结论：`84` 现在继续把三类最典型 counterfeit case 写明为 `UI transcript 越权成 protocol transcript`、`delegated context 长成第二世界`、`compaction 留下 summary 但丢 continuation object`，Prompt acid test 因此从口号推进到 earliest reject signal 与 first reversible fix。

@@ -8,6 +8,83 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 最新根仓同步记忆（2026-04-08，本批次三次深化）继续保持健康态：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 why-survives-route-removal live 记忆：
+  - `03 / 06` 默认继续把 why 页自校压成一句硬规则：删掉 `next-hop / owner page / route note` 之后，整段若不成立，它就不是 why，而只是 route
+  - Prompt / 治理 / 源码质量三线默认继续分别回到 `compiled world verdict / lease checkpoint / artifact completeness` 这三个可反驳对象
+- 当前批次继续新增一条 root-role-freeze live 记忆：
+  - 根层角色默认继续冻结成：`README = 唯一 frontdoor`、`navigation/README = 唯一路由反查`、`00-导读 = preface / locator`、`01-源码结构地图 = 唯一规范源码地图`
+  - `00-总览 / 00-蓝皮书总览 / 01-源码总地图` 默认继续只保留兼容别名职责，不再承担首答
+- 当前批次继续新增一条 alias-page-must-be-thin live 记忆：
+  - `01-源码总地图` 默认继续不再承载任何独立源码判断；兼容别名页若正文开始输出 canonical conclusion，默认立即收回 stub-only 形态
+- 当前批次继续新增一条 landing-card-quality-gate live 记忆：
+  - `architecture/README` 默认继续不把 `landing card` 误写成终局；更稳的默认后继是 `landing card -> 87 quality gate`
+  - quality gate 默认继续只验三条：`合法复杂度中心 / one writable present / later-maintainer veto`
+- 最新根仓同步记忆（2026-04-08，本批次二次深化）继续保持健康态：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 prompt-four-moves live 记忆：
+  - `84` 默认继续把 Prompt potency 压成四个制度动作：`stable prefix custody / visibility pruning / delegated-context downgrade / lawful continuation`
+  - 以后若再把 Prompt 强度写回文案效果、owner 口号或并行协作结果词，默认先改回这四个动作有没有同时成立
+- 当前批次继续新增一条 governance-diagnosis-loop live 记忆：
+  - `10` 默认继续把治理入口卡组织成单一 diagnosis loop：`symptom -> earliest unpaid expansion -> repricing proof -> lease checkpoint -> reject -> escalation`
+  - `canonical chain / 四类资源 / reject trio / 弱读回面` 默认继续只做 support cards，不再让标题结构看起来像 taxonomy first
+- 当前批次继续新增一条 continuity-reuses-10 live 记忆：
+  - `compact / resume / re-entry` 默认继续不单列成第四治理对象；它们只复用 `10` 的 lease checkpoint：`same scene? still priced? who settles?`
+  - `61 / security/README` 默认继续不自定义 continuity 解释，只消费 `10` 的 checkpoint
+- 当前批次继续新增一条 artifact-completeness-ownership live 记忆：
+  - `102` 默认继续明确：`artifact completeness` 是源码质量线唯一 ownership law
+  - 更稳的 artifact chain 默认继续写成：`ceiling note / downgrade note / unresolved-authority note -> change-risk record -> why-proof -> landing card -> quality gate`
+- 当前批次继续新增一条 root-and-nav-artifact-gate live 记忆：
+  - 根 `README` 与 `navigation/README` 默认继续不按页面归属分发，而按 artifact state 反查
+  - 根入口默认继续只判题目和 artifact 状态，不代签 artifact promotion；`navigation/README` 默认继续只回答 artifact gap，不再回答“哪页说了算”
+- 最新根仓同步记忆（2026-04-08，本批次继续深化）继续保持健康态：`git fetch origin main` 后再次执行 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 prompt-quartet-symmetry live 记忆：
+  - `41` 与 `03` 默认继续把 Prompt why 写成与治理/当前真相对称的四联式：`law / counterfeit / first reject / reversible fix`
+  - Prompt 段若还靠“统一回 owner page / 本页只保留”的 route-policing 才能站住，默认改回 `same-world compiler -> counterfeit -> reject -> fix`
+- 当前批次继续新增一条 artifact-over-route live 记忆：
+  - `03 / 06 / 41` 默认继续把目录优化写成 artifact completeness，而不是 page ownership 或 second-frontdoor 纪律
+  - later maintainer 若还需要第二套摘要词，默认先补对应 artifact：Prompt 补 `compiled world verdict`，治理补 `repricing / ledger / cleanup`，源码质量补 `change-risk record / why-proof / landing card`
+- 当前批次继续新增一条 official-surface-blackbox live 记忆：
+  - 当前 `mainloop` 仍缺 `claude-code-source-code` 镜像时，若官方公开面只给出 agents / hooks / permissions / plugin / settings 这类 operator artifact，Prompt “magic” 默认继续先降回 runtime contract，而不是猜内部 prompt 原文
+  - 这意味着当前批次默认继续按 `public-evidence / official-surface` 模式推进，不把未公开或未在 worktree 出现的内部实现写成已核验事实
+- 当前批次继续新增一条 source-quality-artifact-router live 记忆：
+  - `navigation/README` 默认继续按缺失 artifact 派发源码质量线，而不是按缺哪一页派发
+  - 更稳的默认顺序是：`ceiling note / downgrade stamp / unresolved-authority note -> change-risk record -> why-proof -> landing card / first fallback`
+- 当前批次继续新增一条 87-why-proof live 记忆：
+  - `87` 默认继续不只解释 `change-risk record` 为什么值钱，还要把自己的最小产物写成 `why-proof`
+  - 这份 `why-proof` 默认继续只证明三件事：`合法复杂度中心 / one writable present / later-maintainer veto`
+- 当前批次继续新增一条 architecture-field-mapping live 记忆：
+  - `architecture/README` 默认继续不只给 `landing card`，还要固定它和 `change-risk record` 的字段映射关系
+  - 如果 `landing card` 仍靠解释理解而不是字段投影理解，默认说明 source-quality line 还没真正机械化
+- 当前批次继续新增一条 source-quality-artifact-checklist live 记忆：
+  - `06` 的源码质量自校默认继续不再先问“页归属有没有写对”，而先问 `ceiling note / downgrade note / change-risk record / object landing / verdict` 是否齐全
+  - 如果这五项缺一，还把自己写成“已经分清 why/证据/对象”，默认按第二前门复发处理
+- 当前批次继续新增一条 governance-four-check diagnostic live 记忆：
+  - `10` 默认继续在 `authority lease accounting` 之后补四问诊断：`what expanded / who repriced it / what ledger proves it / what cleanup ends it`
+  - 四问里只要有一问答不上，默认先按 unpaid renegotiation 或 default-renewed lease 处理
+- 当前批次继续新增一条 root-ceiling-note live 记忆：
+  - 根 `README` 的 evidence sentence 默认继续不用时间快照式声明承载，而只写：路径级源码 certainty 先经 `guides/102` 的 `ceiling note`
+  - 当前 live root sync 事实继续放在 `research-log` 与长期记忆里，不再混进 bluebook 根前门正文
+- 当前批次继续新增一条 root-sync-healthy-again live 记忆：
+  - `2026-04-08` 这一轮起手再次执行 `fetch origin main` 与 `merge --ff-only origin/main`，结果为 `Already up to date.`
+  - 当前最新根仓状态为 `main...origin/main`；先前记录的 root-blocked snapshot 仍保留为历史截面，但不再是当前 live truth
+- 当前批次继续新增一条 prompt-law-counterfeit-template live 记忆：
+  - Prompt 线默认继续不只写 `compiled world verdict` 的 law，还要同时给出 `counterfeit / first reject / first reversible fix`
+  - 更稳的默认模板已经固定成：`lawful late binding rule -> mutation 判定表 -> counterfeit trio -> first reversible fix`
+- 当前批次继续新增一条 governance-repricing-template live 记忆：
+  - 治理线默认继续用 `earliest unpaid expansion` 作为第一诊断顺序，不先盯最吵的 surface noun
+  - `continuity` 默认继续不是第四类治理对象，而是一道 `lease checkpoint: same scene? still priced? who settles?`
+- 当前批次继续新增一条 security-intake-gate live 记忆：
+  - `security/README` 默认继续要求最小 intake object：`signer_ref / verdict_ledger_ref / cleanup_ref / lease_revocation_condition`
+  - 若四者点不出来，默认先按弱投影或读回面处理，不按安全真相处理
+- 当前批次继续新增一条 source-quality-artifact-chain live 记忆：
+  - 源码质量线默认继续按 artifact chain 而不是 page ownership 分流：`ceiling note -> change-risk record -> object landing card -> quality gate -> verdict/repair`
+  - 根 `README` 与 `navigation/README` 若再回到“缺哪一页”式分流，默认优先改回“缺哪一个 artifact”
+- 当前批次继续新增一条 architecture-landing-card live 记忆：
+  - `architecture/README` 默认继续把 `change-risk record` 的对象层落点写成六栏：`surface / protected invariant / writer truth plane / writeback seam / first fallback / unresolved authority`
+  - 若 later maintainer 还答不上这六栏，默认说明 source-quality line 还没真正进入 change control
+- 当前批次继续新增一条 87-quality-gate live 记忆：
+  - `87` 默认继续不再解释目录 ownership，而只验收 `change-risk record` 的三条最低标准：`合法复杂度中心 / one writable present / later-maintainer veto`
+  - `87` 后续若又开始大段解释“102 管什么 / architecture 管什么”，默认按 why 页密度回退处理
 - 当前批次继续新增一条 root-sync-blocked-outside-mainloop live 记忆：
   - `2026-04-08` 这一轮起手已再次执行 `fetch origin main`，但根仓 `merge --ff-only origin/main` 因 `/home/mo/m/projects/cc/analysis` 外层未解决冲突而失败
   - 这些 `UU` 状态位于 `.worktrees/mainloop` 之外；后续若用户仍要求“开始前先拉主分支”，默认先复核并明确记录阻塞，但不在未获指示前触碰根仓冲突

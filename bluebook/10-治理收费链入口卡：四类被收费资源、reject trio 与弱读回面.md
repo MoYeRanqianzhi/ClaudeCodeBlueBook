@@ -19,10 +19,39 @@
 - 治理不是更会拦截，而是先固定 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，再让权限投影、状态读数、继续入口与收口结果词只读这条收费链在不同资产上的外观。
 - 因此省 token 不是压缩已准入世界，而是减少免费扩张、延后暴露、外置 durable asset，并在 cleanup 后杀死不该继续收费的 transient authority。
 
-## canonical chain
+## 最短诊断环
+
+这页最值钱的，不是多记几组 noun，而是把治理问题压成一条最短诊断环：
+
+1. `symptom`
+   - 先记最显眼的异常，但不在这里下结论
+2. `earliest unpaid expansion`
+   - 先找最早哪条动作 / 能力 / 上下文席位 / 时间扩张还没被定价
+3. `repricing proof`
+   - 再问谁重新定价、哪条 `verdict ledger` 证明它发生、什么 cleanup / revocation 负责结算
+4. `lease checkpoint`
+   - 若症状来自 `compact / resume / re-entry`，只问 `same scene? still priced? who settles?`
+5. `reject`
+   - 再判这更像 `decision-window collapse`、`projection usurpation` 还是 `free-expansion relapse`
+6. `escalation`
+   - 最后才决定去 `security / risk / playbooks / architecture`
+
+后面的 `canonical chain / 四类被收费资源 / reject trio / 弱读回面` 都只是这条诊断环的支持卡片，不是新的分类主题。
+若症状正好发生在 `compact / resume / re-entry`，也不另开第四类治理专题，而只把它们当成这条诊断环的三种 lease-checkpoint 入口：
+
+- `compact`
+  - 外置之后还剩哪些 stable bytes 足以支撑 `same scene / repricing proof`
+- `resume`
+  - 上一轮 `verdict ledger` 是否仍能证明旧 lease 还合法续存
+- `re-entry`
+  - `cleanup / revocation` 是否已先结束旧 transient authority
+
+三问里只要有一问答不上，就先按 `free-expansion relapse` 处理。
+
+## Support Card A: canonical chain
 
 - `governance key`
-- `externalized truth chain`
+- `externalized truth chain (verdict ledger)`
 - `typed ask`
 - `decision window`
 - `continuation pricing`
@@ -31,8 +60,9 @@
 这里还应先记一句：
 
 - `compact / resume / re-entry` 不构成第四条治理对象线；它们只是 `continuation pricing` 与 `durable-transient cleanup` 在时间轴上的消费点。
+- 治理线里的 `continuity` 统一只问这道 checkpoint：`same scene? still priced? who settles?`；`compact / resume / re-entry` 只是它的三种入口形式。
 
-## 四类被收费资源
+## Support Card B: 四类被收费资源
 
 Claude Code 治理线真正统一收费的是四类稀缺资源：
 
@@ -44,6 +74,20 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
    - `authority lease` 的持续期，不是无限继续资格
 
 如果一句治理说明答不上“这次在给哪类资源收费”，它通常还停在界面词、结果词或规则堆层。
+更稳的诊断顺序也只认一句：先找最早那条 unpaid expansion，而不是先盯最吵的 surface noun。
+
+真正进入诊断时，也只先问四件事：
+
+1. `what expanded`
+   - 最早扩张的是动作、能力、上下文席位还是时间
+2. `who repriced it`
+   - 谁重新定价了这次扩张
+3. `what ledger / verdict proves it`
+   - 哪条 `externalized truth chain (verdict ledger)` 证明这次定价真实发生
+4. `what cleanup / revocation ends it`
+   - 什么结算或撤销动作终止了这份 lease
+
+四问里只要有一问答不上，就先按 unpaid renegotiation 或 default-renewed lease 处理。
 
 如果把 `authority lease accounting` 压成最短 crosswalk，也只剩四句：
 
@@ -55,8 +99,9 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
 | 时间 | signer | `externalized truth chain (verdict ledger)` | cleanup |
 
 更硬一点说，signer 打开被定价的 authority，`externalized truth chain (verdict ledger)` 记录被定价的扩张，cleanup 负责把这份 lease 收口。
+因此 `compact / resume / re-entry` 真正检查的，也不是“还能不能继续对话”，而只是 signer、ledger 与 cleanup 有没有重新对齐同一份 lease。
 
-## reject trio
+## Support Card C: reject trio
 
 这条链最短的 reject trio 只认：
 
@@ -73,7 +118,7 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
 - `free-expansion relapse`
   - lease 是不是在未重定价、未结算的情况下被默认续期了
 
-## 弱读回面声明
+## Support Card D: 弱读回面声明
 
 真正配签字的，只有 `governance key / externalized truth chain (verdict ledger) / typed ask / decision window / continuation pricing / durable-transient cleanup` 这组强面；其余对象最多只能做三件事：
 
