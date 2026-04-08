@@ -216,3 +216,7 @@
 - [191-pendingPermissionHandlers、cancelRequest、recheckPermission、hostPattern.host 与 applyPermissionUpdate 索引.md](./191-pendingPermissionHandlers、cancelRequest、recheckPermission、hostPattern.host%20与%20applyPermissionUpdate%20索引.md)
 - [192-activeRemote、remoteSessionUrl、outboundOnly、getIsRemoteMode 与 useReplBridge 索引.md](./192-activeRemote、remoteSessionUrl、outboundOnly、getIsRemoteMode%20与%20useReplBridge%20索引.md)
 - [193-StructuredIO、sessionState、remoteBridgeCore、pending_action、requires_action_details 与 reportState 索引.md](./193-StructuredIO、sessionState、remoteBridgeCore、pending_action、requires_action_details%20与%20reportState%20索引.md)
+- [194-Headless print result-convergence reading chain 索引.md](./194-Headless%20print%20result-convergence%20reading%20chain%20索引.md)
+- [195-Headless print summary-tail and observer-restore branch map 索引.md](./195-Headless%20print%20summary-tail%20and%20observer-restore%20branch%20map%20索引.md)
+- [196-Headless print wire-visibility and projection branch map 索引.md](./196-Headless%20print%20wire-visibility%20and%20projection%20branch%20map%20索引.md)
+- [197-Headless print builder-callback-UI branch map 索引.md](./197-Headless%20print%20builder-callback-UI%20branch%20map%20索引.md)

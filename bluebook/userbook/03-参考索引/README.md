@@ -92,6 +92,7 @@
 58. `handleIngressMessage`、`recentInboundUUIDs`、`onPermissionResponse`、`extractInboundMessageFields`、`resolveAndPrepend` 与 `pendingPermissionHandlers` 看起来都在 bridge ingress 附近时，应该先去哪个入口分辨 191-196 不是并列碎页，而是一条六层阅读链。
 59. `cancelRequest`、`onResponse unsubscribe`、`pendingPermissionHandlers.delete` 与 `leader queue recheck` 看起来都在权限收口附近时，应该先去哪个入口分辨 prompt 撤场、订阅退役、响应消费与策略重判不是同一种收口合同。
 60. `onSetPermissionMode`、`getLeaderToolUseConfirmQueue`、`recheckPermission`、`useRemoteSession` 与 `useInboxPoller` 看起来都在权限重判附近时，应该先去哪个入口分辨 permission context 变更后的本地重判广播不是同一种 permission re-evaluation surface。
+61. headless print 的 result convergence、summary tail、wire visibility 与 builder/callback/UI 可见性看起来都挤在 `92-115` 这一段时，应该先去 `02-能力边界/194-197` 的 branch map，再跳 `05-控制面深挖/207-210`，不要直接把四种收束线混成一条“headless 输出”。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 

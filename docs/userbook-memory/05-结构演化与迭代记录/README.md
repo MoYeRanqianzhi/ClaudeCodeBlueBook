@@ -210,6 +210,10 @@
 - [206-2026-04-08-blocked-state publish ceiling split 拆分记忆.md](./206-2026-04-08-blocked-state%20publish%20ceiling%20split%20拆分记忆.md)
 - [207-2026-04-08-blocked-state topic projection split 拆分记忆.md](./207-2026-04-08-blocked-state%20topic%20projection%20split%20拆分记忆.md)
 - [208-2026-04-08-remote surface topic projection split 拆分记忆.md](./208-2026-04-08-remote%20surface%20topic%20projection%20split%20拆分记忆.md)
+- [209-2026-04-08-headless print convergence reading chain split 拆分记忆.md](./209-2026-04-08-headless%20print%20convergence%20reading%20chain%20split%20拆分记忆.md)
+- [210-2026-04-08-headless print summary-tail and observer-restore branch map split 拆分记忆.md](./210-2026-04-08-headless%20print%20summary-tail%20and%20observer-restore%20branch%20map%20split%20拆分记忆.md)
+- [211-2026-04-08-headless print wire-visibility and projection branch map split 拆分记忆.md](./211-2026-04-08-headless%20print%20wire-visibility%20and%20projection%20branch%20map%20split%20拆分记忆.md)
+- [212-2026-04-08-headless print builder-callback-ui branch map split 拆分记忆.md](./212-2026-04-08-headless%20print%20builder-callback-ui%20branch%20map%20split%20拆分记忆.md)
 
 用途：
 

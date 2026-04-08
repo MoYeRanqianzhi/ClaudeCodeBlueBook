@@ -196,6 +196,18 @@
   [05-控制面深挖/198-cancelRequest、onResponse unsubscribe、pendingPermissionHandlers.delete 与 leader queue recheck：为什么 bridge permission race 的 prompt 撤场、订阅退役、响应消费与策略重判不是同一种收口合同.md](./05-控制面深挖/198-cancelRequest、onResponse%20unsubscribe、pendingPermissionHandlers.delete%20与%20leader%20queue%20recheck：为什么%20bridge%20permission%20race%20的%20prompt%20撤场、订阅退役、响应消费与策略重判不是同一种收口合同.md)
 - 想分清 `onSetPermissionMode`、`getLeaderToolUseConfirmQueue`、`recheckPermission`、`useRemoteSession` 与 `useInboxPoller` 的 permission re-evaluation surface：
   [05-控制面深挖/199-onSetPermissionMode、getLeaderToolUseConfirmQueue、recheckPermission、useRemoteSession 与 useInboxPoller：为什么 permission context 变更后的本地重判广播不是同一种 permission re-evaluation surface.md](./05-控制面深挖/199-onSetPermissionMode、getLeaderToolUseConfirmQueue、recheckPermission、useRemoteSession%20与%20useInboxPoller：为什么%20permission%20context%20变更后的本地重判广播不是同一种%20permission%20re-evaluation%20surface.md)
+- 想把 headless print 的 `92-99` 先压成一条 result-convergence reading chain，而不是逐页拼装多账本与延迟交付：
+  [03-参考索引/02-能力边界/194-Headless print result-convergence reading chain 索引.md](./03-参考索引/02-能力边界/194-Headless%20print%20result-convergence%20reading%20chain%20索引.md) ->
+  [05-控制面深挖/207-task triad、result return-path、flush ordering、authoritative idle、semantic last result 与 suggestion delivery：为什么 headless print 的 92-99 不是并列细页，而是一条从多账本前提走到延迟交付的收束链.md](./05-控制面深挖/207-task%20triad、result%20return-path、flush%20ordering、authoritative%20idle、semantic%20last%20result%20与%20suggestion%20delivery：为什么%20headless%20print%20的%2092-99%20不是并列细页，而是一条从多账本前提走到延迟交付的收束链.md)
+- 想把 `100-104` 先收成 summary tail、observer restore 与终态收口的 branch map：
+  [03-参考索引/02-能力边界/195-Headless print summary-tail and observer-restore branch map 索引.md](./03-参考索引/02-能力边界/195-Headless%20print%20summary-tail%20and%20observer-restore%20branch%20map%20索引.md) ->
+  [05-控制面深挖/208-task_summary、post_turn_summary、terminal tail、observer restore 与 suggestion settlement：为什么 100-104 不是并列细页，而是先从 summary 分家，再分叉到终态收口与恢复合同.md](./05-控制面深挖/208-task_summary、post_turn_summary、terminal%20tail、observer%20restore%20与%20suggestion%20settlement：为什么%20100-104%20不是并列细页，而是先从%20summary%20分家，再分叉到终态收口与恢复合同.md)
+- 想把 `105-110` 先看成 wider-wire visibility 的分叉图，而不是把 raw wire、summary narrowing 与 streamlined rewrite 混成一页：
+  [03-参考索引/02-能力边界/196-Headless print wire-visibility and projection branch map 索引.md](./03-参考索引/02-能力边界/196-Headless%20print%20wire-visibility%20and%20projection%20branch%20map%20索引.md) ->
+  [05-控制面深挖/209-post_turn_summary、StdoutMessage、SDKMessage、stream-json raw wire 与 streamlined_*：为什么 105、106、108、109、110 不是并列尾页，而是从 wider-wire visibility 分叉出去的四种后继问题.md](./05-控制面深挖/209-post_turn_summary、StdoutMessage、SDKMessage、stream-json%20raw%20wire%20与%20streamlined_%2A：为什么%20105、106、108、109、110%20不是并列尾页，而是从%20wider-wire%20visibility%20分叉出去的四种后继问题.md)
+- 想把 `111-115` 先还原成 builder transport、callback surface 与 UI consumer 的四层可见性表：
+  [03-参考索引/02-能力边界/197-Headless print builder-callback-UI branch map 索引.md](./03-参考索引/02-能力边界/197-Headless%20print%20builder-callback-UI%20branch%20map%20索引.md) ->
+  [05-控制面深挖/210-builder transport、callback surface、streamlined dual-entry 与 UI consumer policy：为什么 111、112、113、114、115 不是并列细页，而是先定四层可见性表，再分叉到 streamlined 与 adapter 两条后继线.md](./05-控制面深挖/210-builder%20transport、callback%20surface、streamlined%20dual-entry%20与%20UI%20consumer%20policy：为什么%20111、112、113、114、115%20不是并列细页，而是先定四层可见性表，再分叉到%20streamlined%20与%20adapter%20两条后继线.md)
 
 如果你已经确定要读某个专题，请先到对应 README 再选深页，不要把根前门当默认深链库存。
 
