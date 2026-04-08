@@ -229,6 +229,7 @@
 - [198-Headless print completion-init-attach pair map 索引.md](./198-Headless%20print%20completion-init-attach%20pair%20map%20索引.md)
 - [199-Headless print remote recovery branch map 索引.md](./199-Headless%20print%20remote%20recovery%20branch%20map%20索引.md)
 - [200-Headless print remote recovery double-trunk map 索引.md](./200-Headless%20print%20remote%20recovery%20double-trunk%20map%20索引.md)
+如果你不是在逐页扫 `92-110`，而是想从高频使用面继续深入非交互结果、summary 尾部与协议流，可先回 [04-专题深潜/13-非交互、后台会话与自动化专题.md](../../04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/13-%E9%9D%9E%E4%BA%A4%E4%BA%92%E3%80%81%E5%90%8E%E5%8F%B0%E4%BC%9A%E8%AF%9D%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%93%E9%A2%98.md)，再走 [05-控制面深挖/非交互结果、summary 与协议流/README.md](../../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/%E9%9D%9E%E4%BA%A4%E4%BA%92%E7%BB%93%E6%9E%9C%E3%80%81summary%20%E4%B8%8E%E5%8D%8F%E8%AE%AE%E6%B5%81/README.md)。
 - [201-128-132 contract、presence、ledger 与 front-state consumer topology 索引.md](./201-128-132%20contract%E3%80%81presence%E3%80%81ledger%20%E4%B8%8E%20front-state%20consumer%20topology%20索引.md)
 - [202-133-138 schema-store consumer、bridge chain 与 remote interaction shell 索引.md](./202-133-138%20schema-store%20consumer%E3%80%81bridge%20chain%20%E4%B8%8E%20remote%20interaction%20shell%20索引.md)
 - [203-139-143 visibility、mirror runtime 与 remote truth split 索引.md](./203-139-143%20visibility%E3%80%81mirror%20runtime%20%E4%B8%8E%20remote%20truth%20split%20索引.md)
