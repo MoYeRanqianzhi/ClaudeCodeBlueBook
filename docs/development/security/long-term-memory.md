@@ -2,6 +2,9 @@
 
 ## 当前稳定边界
 
+- `2026-04-08` 最新一轮已完成 `380 / 364 / 231`：主线把 stronger-request cleanup 从 `cleanup-retention-enforcement-honesty-governance` 继续推进到 `cleanup-isolation-governance`，附录把 `surface / honesty answer / isolation question / positive control / gap` 压成统一矩阵，源码剖面则把 historical side effect、task-output session-scoped repair、shared-readable temp space、tool-results old sweep world、live-session ledger 与 cron single-owner positive control 并排钉成 `noninterference grammar`。这一轮稳定写出的新边界是：`执行状态已被更诚实地说明` 不等于 `非干扰性已被证明`，`你更诚实地说明了自己做到哪一步` 不等于 `你已经证明不会伤到别的活对象`。
+- `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-constitution-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
 - `bluebook/security/` 正文不再承载“下一步写什么”“后续应新增哪章”“这一链条应视作几段小循环”这类推进记忆。
 - `bluebook/security/appendix/` 只承载速查矩阵，不承载章节推进提示。
 - `bluebook/security/source-notes/` 只承载单机制源码剖面，不承载研究推进日志。
