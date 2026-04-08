@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 trim-owner-readmes-before-owner-family live 记忆：
+  - 当前比新增 `owners/README` 更稳的动作，是继续压薄现有 owner README，尤其是 `api/README`
+  - `api/README` 现在应固定成 `host-facing truth / consumer subset / contract truth` owner 页，不再在首页承担平面书架、推荐入口与长链 syllabus；owner 页越像书架，later maintainer 越会重新回到“先扫目录再定题”
 - 当前批次继续新增一条 meta-readme-before-owner-family live 记忆：
   - 当前更稳的目录结构增量是先新增 `bluebook/meta/README.md`，把总控页之间的目录契约单独收口；它只配处理 `same-question 多页首答 / mixed-role / 最小回退`，不配重发三条母线 first answer
   - `owners/README` 当前暂缓更稳：并行研究给出的结论是，根入口已经有一张目录角色协议；现在再加 owner 家族总页，重复 frontdoor 的风险高于收益，除非未来真准备把根入口里的角色表整体迁出

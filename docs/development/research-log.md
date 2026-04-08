@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 owner-page 结论：在 `meta/README` 落地之后，更高收益的下一刀不是继续加 `owners/README`，而是直接瘦身最偏厚的 owner README。于是本轮只动了 `api/README`：把它从“owner scope + 七个平面 + 推荐入口 + 适合谁先读”压回纯 owner 页，只保留 `host-facing truth / consumer subset / contract truth` 的 scope、最小进入法和离场条件。当前判断是：owner family 若未来真要做，也应建立在这些 README 已经足够瘦、足够单职之后，而不是拿一个新家族页去盖住现有 mixed-role。
 - 本轮新的目录元协议结论：根据并行 Agent 的回报，这次真正值得落地的是 `meta/README`，不是 `owners/README`。理由很具体：总控页之间的 mixed-role 争议目前还缺一个纯元协议页，所以根 `README`、`03`、`06`、`navigation` 都在轻度代写目录契约；新增 `meta/README` 能把这部分收口成“same-question 多页首答 / sibling 代签 / 删词还是退回哪层”的专门页。相反，`owners/README` 当前大概率只会重复根入口里已经存在的角色协议，并把 `architecture / security / risk / playbooks / api` 再讲成一遍总论，因此本轮刻意不建。
 - 本轮新的回链结论：`meta/README` 的最小回链集合先固定在四处高流量页：根 `README`、`03`、`06`、`navigation/README`。`philosophy/README` 这一轮不回链，因为 why-only 前门当前最值钱的特征就是不带 route 感；太早给它接 `meta`，会把 why 页重新拉回目录说明页。
 - 本轮新的根仓同步结论：本轮再次复核根仓 `/home/mo/m/projects/cc/analysis`，`git status --short --branch` 仍为 `main...origin/main`。本轮未在根仓处理任何文件，正文继续严格只在 `mainloop` 内推进。
