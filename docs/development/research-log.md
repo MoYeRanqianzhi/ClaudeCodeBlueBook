@@ -7798,3 +7798,6 @@
 - `2026-04-08` 随后再收一个更窄的 Prompt 时间轴批次，只动 `philosophy/81`、`philosophy/84` 与 `navigation/15`。这一刀真正要回答的第一性原理不是“如何把 continue 讲得更顺”，而是“continue qualification 到底在裁什么，以及 later consumer 第一条该拒收什么”。
 - 这批因此把三个页角色重新钉死：`81` 不是在夸 compact 摘要，而是在把 `lawful forgetting witness ABI` 继续压成 later consumer 能否复现同一条 `continue-or-reject verdict`；`84` 不是在讲“还能不能继续生成”，而是在说明 later consumer 是否仍在消费同一份 `world-entry object`；`15` 则只保留失稳前问题梯子，把 continue 线第一条 `first-reject` 固定成“是不是某个更易读 surface 正在越权代签继续资格”。
 - 这轮苏格拉底式自审也因此更明确：如果一句 continue 相关判断删掉 `later consumer` 后依然自称成立，它大概率只是在评摘要观感，而不是在评继续资格；如果一句导航句没有先问“谁在越权代签 `continue qualification`”，却直接跳去 witness 细节或恢复技巧，它其实已经从失稳前追问滑回故障后补救。
+- `2026-04-08` 本轮接着收一个更窄的“设计内涵去魅”批次，只动 `03 / 06 / 61 / 87`。真正的第一性原理收束不是再补一组赞美词，而是把三条母线共同压成同一种制度失败：`zero-delta re-adjudication`。Prompt 线失真时表现为世界已定却还要重谈，治理线表现为没有新增 `repricing / deny / cleanup` 决策增益却还在重复 ask，源码质量线表现为现在已失守却还靠回放、目录观感或作者说明重猜当前。
+- 因而这批的正文动作也都只补一条更硬的否证句：`03` 把“设计内涵”再压成消灭零增益重判；`06` 把总控自校最先抓的失真明确为“把零增益重判写成进步”；`61` 把省 token 进一步改写成 `fewer zero-delta asks`；`87` 则把源码先进性从“更会扩展”继续压成“也显式暴露 non-upgrade / negative capability 边界”。
+- 这轮苏格拉底式自审得到的额外结论也值得记住：如果一个“更深分析”提案只是在把重复批准、重复说明、重复回放包装成更谨慎，它并没有提高制度成熟度，只是在扩大 later consumer 的代签面；如果一个“源码先进性”判断只暴露 extension seam，不暴露哪些工件永远不配升级成 signer/current-truth writer，它也还没有把 later-maintainer veto 真正写进结构。

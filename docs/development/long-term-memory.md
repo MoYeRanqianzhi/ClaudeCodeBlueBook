@@ -4565,3 +4565,7 @@
 - `2026-04-08` Prompt 时间轴又固定了一条更硬的定义：`continue qualification` 不是摘要是否“还够用”的感受分，而是 later consumer 重新读取 `lawful forgetting witness ABI` 后，是否还能在不重谈 `authority / boundary / lineage` 的前提下复现同一条 `continue-or-reject verdict`。只要继续前还得重谈世界主语、边界或 lineage，就应按资格失效处理，而不是按“摘要不够好”处理。
 - `84` 的长期主句也因此应继续记死：`continuation qualification` 裁定的是 later consumer 是否仍在消费同一份 `world-entry object`，而不是系统是否还能接着生成。若某个补丁、summary、delegated context 或 display transcript 会逼 consumer 重开世界协商，它就属于 renegotiation，不属于 continuation。
 - `navigation/15` 的 Prompt 线第一条 `first-reject` 也应继续记死：先问是不是某个更易读的 `projection / summary / delegated context` 正在越权代签 `continue qualification`；若是，先停在 `same-world failure verdict`，不要直接跳去补 witness 细节、compact 技巧或恢复手法。
+- `2026-04-08` 又固定了一条跨三母线的总控判断：真正该被持续压掉的不是“错误本身”，而是 `zero-delta re-adjudication`。更具体地说，Prompt 线是世界已定却还要重谈，治理线是没有新增 `repricing / deny / cleanup` 决策增益却还在重复 ask，源码质量线是现在已失守却还靠回放、目录观感或作者说明重猜当前；凡某页把这种重复裁决包装成“更谨慎 / 更灵活 / 更会协作”，就说明它还在制度外观层。
+- 安全与省 token 线也应继续记死一个更硬指标：成熟度不追 `fewer total asks`，而追 `fewer zero-delta asks`。重复批准、重复分类、重复 compact 只要不新增 `repricing / deny / cleanup` 决策增益，就不算谨慎，只算把 `authority lease` 的结算成本往后拖。
+- 源码质量线还应继续补齐 `negative capability`：later maintainer 不只要知道哪里还能扩展，也要立刻知道哪些 foundation/context artifacts 永远不配升级成 signer 或 `current-truth writer`。答不出这条非升级边界，advancedness 仍只是“可扩展体感”，不是可拒收结构。
+- 本轮根仓同步前置检查的当前截面也应记住：`git fetch origin main` 成功，`git merge --ff-only origin/main` 结果为 `Already up to date.`。这再次说明根仓状态本身会漂移，长期纪律仍是每批重查、只在 worktree 记账，而不是把任何单次健康/阻断快照当长期前提。

@@ -146,6 +146,8 @@ Claude Code 并不追求“检查越多越安全”。
 - 决策增益是否仍存在
 - 也就是不让未被重新定价的动作、能力、上下文席位与时间续费继续免费扩张
 
+更稳一点说，省 token 追的不是 `fewer total asks`，而是 `fewer zero-delta asks`：凡不会新增 `repricing / deny / cleanup` 决策增益的重复批准、重复分类或重复 compact，都只是在把 `authority lease` 的结算成本往后拖。
+
 如果继续讨论谁在代签、谁只在读回、谁在收口，说明你缺的已不是 why，而是治理 owner chain。
 
 ## 6. 测试五：继续前还剩哪些证据必须保持可重放
