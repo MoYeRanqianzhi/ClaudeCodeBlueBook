@@ -238,6 +238,7 @@
 - [234-2026-04-08-safe action-radius mainline drift alignment 拆分记忆.md](./234-2026-04-08-safe%20action-radius%20mainline%20drift%20alignment%20拆分记忆.md)
 - [235-2026-04-08-reading-path numbering collision repair 拆分记忆.md](./235-2026-04-08-reading-path%20numbering%20collision%20repair%20拆分记忆.md)
 - [236-2026-04-08-startup entry top-level lift 拆分记忆.md](./236-2026-04-08-startup%20entry%20top-level%20lift%20拆分记忆.md)
+- [237-2026-04-08-startup entry mainline drift alignment 拆分记忆.md](./237-2026-04-08-startup%20entry%20mainline%20drift%20alignment%20拆分记忆.md)
 
 用途：
 
