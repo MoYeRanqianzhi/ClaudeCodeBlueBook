@@ -251,17 +251,17 @@ repo 公开拒绝把一个 ready verdict 当作天然可持续的真相。
 如果对这组代码做更严格的自我审查，
 至少要追问六句：
 
-1. 如果 readiness grammar 已经足够强，为什么还要再拆 continuity？  
+1. 如果 readiness grammar 已经足够强，为什么还要再拆 continuity？
    因为当前 ready，不等于 ready truth 断掉后系统还知道怎样继续、暂停或终止。
-2. 如果对象已经 `connected`，是不是就说明后面自然会稳定？  
+2. 如果对象已经 `connected`，是不是就说明后面自然会稳定？
    不是。retry budget、backoff 与 give-up 都说明稳定性需要被继续治理。
-3. 如果旧 retry line 还在跑，是不是就说明系统还在正确维护 continuity？  
+3. 如果旧 retry line 还在跑，是不是就说明系统还在正确维护 continuity？
    不能这样推。stale retry line 可能已经不再代表 current world。
-4. 如果 manual reconnect 只是一个按钮，是不是不值得写成治理层？  
+4. 如果 manual reconnect 只是一个按钮，是不是不值得写成治理层？
    恰恰相反。按钮语义本身就是 continuity authority 的显式入口。
-5. 如果 `ReadMcpResourceTool` 当前能读成功一次，是不是就说明 continuity 已成立？  
+5. 如果 `ReadMcpResourceTool` 当前能读成功一次，是不是就说明 continuity 已成立？
    也不对。那只是 current-time proof，不是 temporal proof。
-6. 如果 cleanup 线现在还没有显式 continuity 代码，是不是说明这层还不值得写？  
+6. 如果 cleanup 线现在还没有显式 continuity 代码，是不是说明这层还不值得写？
    恰恰相反。越是缺这层明确 grammar，越容易把“现在可用”偷写成“持续可用”。`
 
 这一串反问最终逼出一句更稳的判断：
