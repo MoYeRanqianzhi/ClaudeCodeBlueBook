@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 这次已直接返回 `Already up to date.`，`git status --short --branch` 也仍是干净的 `main...origin/main`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓正文。
+- 本轮新的 usage bridge 结论：我把 Prompt 线最新的 first test 再抬进了 `02-使用指南.md`，但只做 bridge 首句的纠偏。`02` 现在不再把 Prompt 线压成旧版 `world-definition source -> message lineage -> protocol transcript -> stable bytes -> continuation qualification` 压缩链，而是更明确写成：later consumer 在 `verify / delegate / tool choice / resume / handoff` 时不必重答世界定义、边界与工具合法性，`resume / handoff / compaction` 后也不必重判继续资格，更不必把已排除路径重新拉回候选集。当前判断是，这一步能继续减少 later consumer 在高流量桥接页里重新学到上一版 Prompt 前门的概率。
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 这次已直接返回 `Already up to date.`，`git status --short --branch` 也恢复为干净的 `main...origin/main`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓正文。
 - 本轮新的入口页对称性结论：我把高流量入口页的三线判据继续补对称，只改了 `bluebook/README / philosophy/README`。Prompt 线沿用最近几批已写死的“已排除路径回流候选集”首拒句，并在入口页补齐 `tool choice / compaction` 这一层继续资格测试；治理线现在不再只剩“最早 unpaid expansion 是什么”，而更明确露出“继续前必须补齐 `repricing proof / lease checkpoint / cleanup`、检查顺序是否把风险提前收费、自动化是否仍可撤销”；源码质量线则不再只剩“不能退回目录观感”，而继续前置“复杂度是否落在合法中心、现在是否仍只有一个可写现在、later maintainer 是否仍保有正式 veto”。当前判断是，这一步能继续减少 later consumer 在第一次进蓝皮书时，把治理和源码质量误读成比 Prompt 更扁平的路线标签，也能减少把 `87` 误读成 `86` 余波的概率。
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 这次没有快进成功，而是因根仓存在未解决冲突直接失败；`git status --short --branch` 同时显示 `main...origin/main [ahead 2]`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓收敛。
