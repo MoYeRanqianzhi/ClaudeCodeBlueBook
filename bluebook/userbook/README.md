@@ -467,6 +467,10 @@
 
 ## 完整结构导航
 
+这一段只反映 `bluebook/userbook/` 的物理目录结构，不代表 first-hop 路由优先级。
+
+因此 `02-能力地图` 仍会出现在这里，但它的阅读位阶仍按上文处理为 second-hop 的机制总图层。
+
 - [00-导读.md](./00-%E5%AF%BC%E8%AF%BB.md)
 - [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md)
 - [01-主线使用/README.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/README.md)
