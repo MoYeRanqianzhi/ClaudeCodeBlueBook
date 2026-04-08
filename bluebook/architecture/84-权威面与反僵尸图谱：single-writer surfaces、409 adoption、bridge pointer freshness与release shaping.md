@@ -139,6 +139,8 @@ Claude Code 的高级点，在于它不断把 current-truth surface 做显式化
 | `worker_status` | `reportState/reportMetadata` | CCR / SDK status width | event timeline / print log | coalesced uploader + flush discipline |
 | `bridge pointer vs session head` | server/session head | bridge freshness pointer | pointer 直接宣布 current truth | TTL + head adoption |
 
+按 landing card 语法再压一层，这张表里的 `forbidden substitute writer` 就是各 current-truth object 的第一条 `local veto cue`，而离它最近、能重新取回 sole writer 资格的 `freshness / recovery / eviction` seam，就是 `first retreat layer`。
+
 ## 5. Anti-Zombie Pattern Catalog：过去不能把自己写回现在
 
 Claude Code 的 `anti-zombie` 不是一句注释，而是一套跨系统复现的写法纪律。
