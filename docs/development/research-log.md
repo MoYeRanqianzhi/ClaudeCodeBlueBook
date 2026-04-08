@@ -2,6 +2,11 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `351-355`，把附录推进到 `335-339`，把源码剖面推进到 `202-206`；链路从 `stronger-request cleanup-metadata-governance` 一直推进到 `stronger-request cleanup-migration-governance`，说明 stronger-request cleanup 已经从制度理由继续推进到制度元数据、运行时符合性、反漂移验证、修复与迁移治理。
+- 本轮新的机制证据结论：新增 `202-206` 继续把 stronger-request cleanup 的深层边界压硬。`202` 把 cleanup truth 写进 settings、path helpers、permissions 与 env contract 的 metadata boundary；`203` 把 `cleanupPeriodDays / housekeeping / plansDirectory / diagLogs / CleanupResult` 压成 runtime-conformance gap；`204` 把 `microCompact / switchSession / verifyAutoModeGateAccess` 压成 anti-drift verification gap；`205` 把 `verifyAutoModeGateAccess / checkAndDisableAutoModeIfNeeded / verifyAndDemote` 压成 repair-governance gap；`206` 再把 `runMigrations / migrateLegacyOpusToCurrent / orphan 宽限期 / plans continuity` 压成 migration-governance boundary。
+- 本轮新的技术结论：这批新增证据继续证明 `有 metadata` 不等于 `已按 runtime 兑现`，`这次看起来符合` 不等于 `以后不会漂移`，`检测到 drift` 不等于 `已经拥有 repair 主权`，`会修当前世界` 也不等于 `知道如何让旧世界有序退场`。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=356 / appendix=339 / source-notes=206`；本轮继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
+
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `328`、附录推进到 `312`、源码剖面推进到 `179`，把 stronger-request cleanup 链从 resurrection 继续推进到 re-entitlement。
 - 本轮新的机制证据结论：最新证据继续证明 comeback fact 不等于 old entitlement return fact。`deletePluginOptions`、`setPluginEnabledOp` 与 `copyPlanForFork` 分别把旧配置/旧启用态/旧身份 seat 的恢复拆成不同层 truth，因此“对象回来了”仍不等于“原来的资格、配置与身份一起回来”。
 - 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=329 / appendix=312 / source-notes=179`；研究正文继续保持“主目录只写机制本体，开放问题只留在隔离记忆层”的写作边界。
