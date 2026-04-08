@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 auto-memory-is-not-worktree-local-witness live 记忆：
+  - `84 / 87 / 102` 现在应直接写死：auto memory 不只是不配当 world-definition witness，它连 worktree-local witness 都不配；同一仓库下所有 worktrees 共享一个 auto memory 目录，且 `autoMemoryDirectory` 不能由 project settings 指定
+  - 更稳的默认写法是：凡 machine-local、repo-shared、project-unwritable 的 memory layer，只配当 context，不配被 later consumer 误读成 repo-authored or worktree-authored authority
 - 当前批次继续新增一条 first-reject-and-retreat-defaults-need-owner-pages live 记忆：
   - `81 / 85 / 87 / architecture/84` 现在应直接把 lawful forgetting、治理回炉、later maintainer rejectability 与 release-surface shaping 的默认 `first reject / first retreat` 句写在 owner 页里
   - 更稳的默认写法是：Prompt 线退回 `protocol transcript / stable prefix / continuation object`，治理线把 no-decision-gain check 读成 `unpaid expansion`，源码质量线把第一 veto 先落在 `projection / provisional claim / recovery asset / stale capability`，发布面则显式区分 compile-time / runtime / artifact 三层可见性

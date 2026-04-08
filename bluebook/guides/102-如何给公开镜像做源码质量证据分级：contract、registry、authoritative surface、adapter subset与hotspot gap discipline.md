@@ -60,7 +60,7 @@
 - public artifact 只能签它真正公开签出的东西
 - 看得见的 README、schema、registry、热点文件、投影视图与恢复资产，不自动拥有同一种签字权
 - 凡公开 artifact 会改变运行时行为（装配、权限、上下文、目录工作面、代理或工具池），至少还要同时写清 `signer` 与第一条 `local veto cue`；否则它最多停在 `public artifact ceiling`，不配 promotion 成 current-truth claim
-- 更稳一点说，公开 artifact 若还写不清自己的 `effect ceiling`，也不配 promotion：例如 managed settings 是否最高且不可覆盖、`CLAUDE.md` / auto memory 是否只配当 context、subagents 是否拥有独立 context/permissions、async hooks 是否根本无权回头阻断已发生的动作。
+- 更稳一点说，公开 artifact 若还写不清自己的 `effect ceiling`，也不配 promotion：例如 managed settings 是否最高且不可覆盖、`CLAUDE.md` / auto memory 是否只配当 context、subagents 是否拥有独立 context/permissions、async hooks 是否根本无权回头阻断已发生的动作、同一仓库 worktrees 是否共享同一个 auto memory 目录且 project settings 无权改写它。
 
 这一步不过，后面各级判断都会被写浅，因为你会先把“可见”误当成“已被完整证明”。
 更硬一点说，能把 `public artifact ceiling / downgrade / gap note / change-risk record` 固化成统一 speaking-rights protocol，本身就是公开可见的工程先进性，因为它降低的是过度主张、误改与制度失忆成本。
