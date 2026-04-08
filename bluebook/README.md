@@ -6,7 +6,7 @@
 - 扩张如何被定价
 - 当前如何不被过去写坏
 
-第一次进入先在本页定题并判断当前 artifact chain 处于哪一段，再按三条首跳分流：Prompt 线先去 `philosophy/84`，治理线先去 [10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，源码质量证据链先去 `guides/102 -> philosophy/87 -> architecture/README`。只有当你已经定清主语、只缺 cross-line mirror 或跨目录 artifact gap 时，才离开根入口去读其他导航页。
+第一次进入先在本页定题：Prompt 线先问 later consumer 在 `verify / delegate / resume / handoff` 时是否还要重答“谁定义世界、边界在哪、工具还能不能用”；治理线先问最早 `unpaid expansion` 是什么；源码质量线先问当前真相为何不被过去写坏。定清这三个第一问题后，再按三条首跳分流：Prompt 展开去 `philosophy/84`，治理展开去 [10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，源码质量证据链先去 `guides/102 -> philosophy/87 -> architecture/README`。只有当你已经定清主语、只缺 cross-line mirror 或跨目录 artifact gap 时，才离开根入口去读其他导航页。
 
 证据上限也先记一句：凡涉及路径级源码 certainty 的判断，一律先经 `guides/102` 的 `ceiling note` 仲裁；根入口不代签 artifact promotion。
 
