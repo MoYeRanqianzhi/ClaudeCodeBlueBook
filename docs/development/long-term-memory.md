@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 root-merge-head-blocks-sync live 记忆：
+  - 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因 `MERGE_HEAD exists` 被阻断；该状态只作为外部事实记录
+  - 更稳的默认写法是：不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、提交与更新记忆
+- 当前批次继续新增一条 governance-single-repricing-furnace live 记忆：
+  - `10 / 83 / 85` 现在应直接把治理尾链写成一座 `single repricing furnace`：`approval fatigue` 也先记成 `unpaid expansion`，`weak readback / reopen tail evidence` 只配回单，凡改价都必须回同一 `repricing seam`
+  - 更稳的默认写法是：若尾链对象还在代签继续、重试或 reopen 资格，就先按 `projection usurpation` 退回正式回炉口
 - 当前批次继续新增一条 governance-typed-tail-evidence live 记忆：
   - `10 / 85 / 06` 现在应直接把治理尾链 typed 化：入口层唯一认 `reject trio`，usage/status/readback/reopen tail 一律先降回 `weak readback / tail evidence`；`reopen qualification` 与 `evidence binding` 只配当尾链证据；`approval fatigue` 则视为重判资格外泄
   - 更稳的默认写法是：凡尾链对象不能补 `repricing proof / lease checkpoint / cleanup`，就不配代签继续、重试或 reopen 资格

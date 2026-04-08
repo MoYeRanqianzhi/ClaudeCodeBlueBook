@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的治理尾链结论：治理侧线最后又补回了三条 typed 句。我已把它们继续压进 `10 / 83 / 85`：`10` 现在把 `approval fatigue` 直接记成一种 `unpaid expansion` 暴露，`83` 的 runtime 对照表单列了 `weak readback / reopen tail evidence`，`85` 则把治理母句压短成“只允许一个 `single repricing furnace`”。当前判断是，这一步能继续减少 later consumer 把治理尾链散写成 readback、retry、reopen、continue 各自有一套定价口，而更容易把它们重新收回同一座正式回炉。
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `380`、把附录推进到 `364`、把源码剖面推进到 `231`；链路从 `stronger-request cleanup-retention-enforcement-honesty-governance` 继续推进到 `stronger-request cleanup-isolation-governance`，说明 stronger-request cleanup 已进一步进入“系统更诚实地说明自己做到哪一步”与“destructive path 是否已经被证明不会误伤 live peer”之间的治理分层。
 - 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=381 / appendix=364 / source-notes=231`。当前唯一 open question 已继续前推到 `stronger-request cleanup-constitution-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 - 本轮新的 Prompt why 结论：`Archimedes` 指出，真正还没写死的不是“谁优先级更高”，而是同一组 scope 词在不同 surface 上根本不是同一种组合律。本轮已把这条纪律补进 `84`：`CLAUDE.md` 是拼接加载，settings 是覆盖链，subagents 更接近同名遮蔽，hooks 则是先合并再过 managed-only 与 runtime veto gate。当前判断是，这一句能明显减少 later consumer 把 `managed / user / project / local` 误读成一条平面 precedence 表的概率。
