@@ -7,6 +7,9 @@
 - 本轮新的技术结论：这轮新增证据继续把 stronger-request cleanup 的深层命题往前推了一格: 系统已经知道怎样让旧世界过桥，但 cleanup 线仍未正式决定那座桥什么时候必须关停，哪些旧 wording / old path / old receipt 该在何时失去 current truth 资格。
 - 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=357 / appendix=340 / source-notes=207`；本轮继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 
+- 本轮新的 `03` 结论：在完成 `README / 03 / 06` 的角色去重后，`03` 的中后段仍残留一类更细的重复，即在多个“设计原则”里反复重发治理与源码质量的 why slogan。这次已继续把这些段落压成新增观察或自校句，例如治理段退回“先外化当前真相再批准扩张”的抽象句，future-maintainer 段不再扩成第二套 quality verdict，审读顺序也统一退回 `06`。
+- 本轮新的根仓同步结论：本轮起手再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果当时为 `Already up to date.`；但本轮后续再次观测根仓 `/home/mo/m/projects/cc/analysis` 状态时，已变成 `main...origin/main [ahead 20]`，并出现 `UU bluebook/security/README.md`、`UU bluebook/security/source-notes/README.md`、`UU docs/development/research-log.md` 等未解决冲突。该漂移发生在 `.worktrees/mainloop` 之外；本轮正文仍然严格只在 `mainloop` 内推进。
+
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `351-355`，把附录推进到 `335-339`，把源码剖面推进到 `202-206`；链路从 `stronger-request cleanup-metadata-governance` 一直推进到 `stronger-request cleanup-migration-governance`，说明 stronger-request cleanup 已经从制度理由继续推进到制度元数据、运行时符合性、反漂移验证、修复与迁移治理。
 - 本轮新的机制证据结论：新增 `202-206` 继续把 stronger-request cleanup 的深层边界压硬。`202` 把 cleanup truth 写进 settings、path helpers、permissions 与 env contract 的 metadata boundary；`203` 把 `cleanupPeriodDays / housekeeping / plansDirectory / diagLogs / CleanupResult` 压成 runtime-conformance gap；`204` 把 `microCompact / switchSession / verifyAutoModeGateAccess` 压成 anti-drift verification gap；`205` 把 `verifyAutoModeGateAccess / checkAndDisableAutoModeIfNeeded / verifyAndDemote` 压成 repair-governance gap；`206` 再把 `runMigrations / migrateLegacyOpusToCurrent / orphan 宽限期 / plans continuity` 压成 migration-governance boundary。
 - 本轮新的技术结论：这批新增证据继续证明 `有 metadata` 不等于 `已按 runtime 兑现`，`这次看起来符合` 不等于 `以后不会漂移`，`检测到 drift` 不等于 `已经拥有 repair 主权`，`会修当前世界` 也不等于 `知道如何让旧世界有序退场`。
