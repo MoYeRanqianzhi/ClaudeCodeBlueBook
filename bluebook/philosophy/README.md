@@ -19,6 +19,7 @@
 - 当你已经知道功能或机制存在，但还没回答“为什么必须这样设计”。
 - 当你要把 Prompt 效力、治理成熟度或源码先进性，从结果词压回不可约判断。
 - 当你需要区分什么是 why、什么是 object、什么是 verdict，而不想在 route 页里反复兜圈。
+- 若争议已经变成“哪一页在越位代签 why / object / verdict”，回 [../meta/README.md](../meta/README.md)；那已不是 why 本身。
 
 ## 按缺口进来
 

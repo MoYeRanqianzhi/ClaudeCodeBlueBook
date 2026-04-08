@@ -38,6 +38,7 @@
 代码里有，不等于 registry 承认；registry 承认，不等于 host-facing truth 已签发；truth 已签发，也不等于所有 consumer 都能合法消费。
 
 如果一页开始替 `philosophy/` 重判必要性，替 `architecture/` 重新发明对象链，或替 `playbooks/` 直接下 verdict，它就已经越权。
+若争议已经变成“这个 owner 页是否越位、目录契约是否失真”，回 [../meta/README.md](../meta/README.md)；那已不是 host-facing truth 本身。
 
 更稳一点说，`api/` 也必须继承 shared first-answer order：先判是 Prompt witness、治理外化，还是 current-truth exposure，再决定去看 contract、registry、host-facing truth 还是 consumer subset；顺序没先站住时，API README 也会退回接口库存。
 
@@ -72,6 +73,7 @@
 - 本目录不负责解释第一性原理，也不负责展开运行手册、拒收顺序与案例反例。
 - 本目录只回答“哪些真相被正式暴露、哪些 consumer 应怎样消费、哪里最危险”。
 - 如果你还在问“为什么必须如此设计”或“第一条反证信号是什么”，先回 `../navigation/15` 与 `../navigation/41`。
+- 如果你在争的是目录发言权而不是 host-facing truth，回 [../meta/README.md](../meta/README.md)。
 
 更准确地说，`api/` 有正式承认权与消费边界说明权，但没有第一性原理改判权，也没有现场 verdict 签发权。
 

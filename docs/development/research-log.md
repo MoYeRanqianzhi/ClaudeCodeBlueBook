@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 `meta` 结构结论：`meta/README` 不是只给总控页看的。并行 Agent 这轮指出，凡是正文已经开始直接解释“哪一页在越位代签 why / object / verdict”的高流量页，都应显式回链 `meta`，否则目录契约争议还会在各页正文里被各说一遍。于是本轮把这类回链补到了 `philosophy/README`、`api/README` 与 `playbooks/README`。
 - 本轮新的 sibling-page 结论：在 `risk/README` 压回单职之后，又顺手收掉了 `casebooks/README` 首页残留的一点 mixed-role。它原先唯一明显越位的地方，不是库存过多，而是还在替 route-only 层说“先守住 05/15/41 的问题梯子”“继承 shared first-answer order”。本轮已把这些句子剪掉，保留失败样本页自己的主语、基准样本与离场条件。当前判断是：`casebooks/` 本身并不需要像 `api/README` 那样大幅瘦身，只需要防止首页再长出 route guard 口气。
 - 本轮新的治理 owner 结论：在 `api/README` 去库存之后，治理 owner 线里最值得继续压的确实是 `risk/README`。本轮已把它从“治理尾链总说明”压回纯 post-cleanup readback owner 页：只保留三类用户侧对象、用户侧失真信号以及最小入场/离场条件。当前判断是，`security/README` 与 `playbooks/README` 已经更接近目标态，而 `risk/README` 原先最容易把 owner 边界重复讲成第二套摘要。
 - 本轮新的 owner-page 结论：在 `meta/README` 落地之后，更高收益的下一刀不是继续加 `owners/README`，而是直接瘦身最偏厚的 owner README。于是本轮只动了 `api/README`：把它从“owner scope + 七个平面 + 推荐入口 + 适合谁先读”压回纯 owner 页，只保留 `host-facing truth / consumer subset / contract truth` 的 scope、最小进入法和离场条件。当前判断是：owner family 若未来真要做，也应建立在这些 README 已经足够瘦、足够单职之后，而不是拿一个新家族页去盖住现有 mixed-role。

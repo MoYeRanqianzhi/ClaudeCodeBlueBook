@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 meta-backlinks-expand-to-speaking-right-pages live 记忆：
+  - `meta/README` 现在不再只被 `README / 03 / 06 / navigation` 回链；凡是正文已经开始直接解释“why / object / verdict 是否越位代签”的高流量页，也应显式把目录契约争议送回 `meta`
+  - 当前已补回链的新增页为 `philosophy/README`、`api/README` 与 `playbooks/README`
 - 当前批次继续新增一条 casebooks-sibling-not-route-guard live 记忆：
   - `casebooks/README` 现在应固定成纯失败样本 sibling 页，不再在首页承担 `shared first-answer order` 或 route-guard 口气
   - 更稳的默认写法是：只保留失真页自己的主语、基准样本、离场条件；若还在问正向对象链或第一条 reject path，统一回对应 owner README 与 why 页
