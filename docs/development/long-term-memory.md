@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 03-tail-minimum-judgment live 记忆：
+  - `03` 尾段的残余 slogan 现在默认继续只保留最短新增判断；`12 / 27 / 31 / 32` 这些节若仍在重发治理投影、future-maintainer 价值、制度自审或坏解对照的整段口号，就应继续压回一句 why-proof / self-audit / bad-solution 判断
+  - 更稳的默认写法是：尾段只补“这一节新增了什么判断”，不再补第二遍 Prompt/治理/源码质量总论
+- 最新根仓同步记忆（2026-04-08，本批次当前 live 快照）已回到健康态：本轮再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，随后根仓 `/home/mo/m/projects/cc/analysis` 的 `git status --short --branch` 为 `main...origin/main`。后续仍按外部状态处理：每批重新检查，但所有正文推进与提交继续只落在 `.worktrees/mainloop`。
 - 当前批次继续新增一条 03-tail-observation-over-slogan live 记忆：
   - `03` 尾段默认继续只保留新增观察或新增自校，不再把 `runtime 是资源宪法 / 好架构保留重构可能性 / 制度升级必须保序迁移 / 尺寸不是 first test` 写成完整 slogan 段
   - 更稳的默认写法是：保留一句新增判断，删掉同义的铺陈段与 next-hop 提示
