@@ -74,8 +74,6 @@
 - 稳地管理插件、MCP、skills、hooks 和 agents：
   [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md)
   里的“路径 91：我想稳地管理插件、MCP、skills、hooks 和 agents”。
-  如果你主要卡在“到底该选技能、插件、MCP 还是 Hooks 这一层”，再继续看
-  [05-控制面深挖/02-MCP、插件、技能与 Hooks：如何选择正确扩展层.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/02-MCP%E3%80%81%E6%8F%92%E4%BB%B6%E3%80%81%E6%8A%80%E8%83%BD%E4%B8%8E%20Hooks%EF%BC%9A%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E6%AD%A3%E7%A1%AE%E6%89%A9%E5%B1%95%E5%B1%82.md)。
 - 把 Claude Code 接进脚本、后台任务或协议流：
   [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md)
   里的“路径 9：我想把 Claude Code 接进脚本或后台任务”。
