@@ -21,7 +21,7 @@
 
 就先回：
 
-1. Prompt 误判先回 `philosophy/84`；`09` 只在 owner 确认后作为总图镜像回看
+1. Prompt 误判先回 `philosophy/84`；`09` 只在归属页确认后作为总图镜像回看
 2. `architecture/82-84`
 3. `guides/99-102 -> playbooks/77-79 -> casebooks/73-75`
 
@@ -63,7 +63,7 @@
 这条线的核心结论是：
 
 - `world entry / request assembly / six-stage assembly chain` 必须持续对同一个世界保持诚实；装配顺序、工具 ABI、缓存边界、状态晚绑定与旁路 fork 只是这套控制面的实现面
-- 这条线的首答入口不再让旧别名占主语位；`09` 只做总图镜像，`84` 负责 why owner，`82` 负责 object 展开，`99` 负责审读
+- 这条线的首答入口不再让旧别名占主语位；`09` 只做总图镜像，`84` 负责 why 归属页，`82` 负责 object 展开，`99` 负责审读
 - 最短记法：不是更强 prompt，而是同一世界的持续诚实
 - 如果继续压成最短动作链，就是 `compile -> protocolize -> preserve -> continue -> explain`
 

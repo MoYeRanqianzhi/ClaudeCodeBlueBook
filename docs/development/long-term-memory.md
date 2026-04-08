@@ -8,6 +8,85 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 architecture-needs-first-retreat-layer live 记忆：
+  - `architecture/README` 现在应直接把 landing card 从 `local veto cue` 扩成 `local veto cue + first retreat layer`
+  - 更稳的默认写法是：对象层若答不出第一退回层，就还只是 locator，不配被 later maintainer 当成可继承的 `next-refactor entry`
+- 当前批次继续新增一条 change-risk-table-needs-retreat-layer live 记忆：
+  - `102` 里的 `change-risk` 模板现在默认也应带 `first retreat layer`
+  - 更稳的默认写法是：later maintainer 不只要知道第一条局部 veto 落哪，还要知道失败后第一退回层先落哪
+- 当前批次继续新增一条 law-follows-precedence-and-veto live 记忆：
+  - `84` 现在应直接把 Prompt why 压成一句更硬的总律：runtime 里的 law 按优先级与 veto 能力生效，不按句子强弱生效
+  - 更稳的默认写法是：不能 veto 的 surface 只配补 context，不配代签世界定义、权限边界与继续资格
+- 当前批次继续新增一条 governance-signer-ceiling live 记忆：
+  - `85` 现在可以继续把治理对象写成 signer ceiling：managed settings 先签主权边界，auto mode 只配压缩高频 approval，continuation consumer 与 weak readback 只配消费或回单既有 verdict
+  - 更稳的默认写法是：凡会改写价格、继续资格或终局解释的动作，都必须回到正式 repricing 面
+- 当前批次继续新增一条 refactor-entry-needs-retreat-layer live 记忆：
+  - `102 / 87` 现在应直接把 `next-refactor entry` 的 promotion 条件写成 `signing layer + first local veto + first retreat layer`
+  - 更稳的默认写法是：答不出这三点的 seam 只配先写成 `seam candidate`，不配叫可继承的重构入口
+- 当前批次继续新增一条 frontdoor-should-not-leak-second-hop live 记忆：
+  - `bluebook/README` 现在默认不应在首跳页提前枚举 `86/87` 这类 second-hop why 分流
+  - 更稳的默认写法是：`102` 只先回答公开证据够不够支撑当前真相主张；why/object/verdict 的继续分辨，统一交给对应归属页接手
+- 当前批次继续新增一条 navigation-is-not-fixed-syllabus live 记忆：
+  - `02 / 05 / 09` 这类高流量页现在默认不应再把 `navigation/05 / 15 / 41` 写成固定顺序，而只在 route dispute 时回 `navigation/README`
+  - 更稳的默认写法是：总图页和 usage bridge 只负责定控制面，不替 later consumer 预排导航 syllabus
+- 当前批次继续新增一条 navigation-pages-should-not-ship-object-chains live 记忆：
+  - `navigation/41` 现在默认只保留 why 问句与分流职责，不再发具体 object / artifact chain
+  - 更稳的默认写法是：更完整的对象层与执行收口统一回对应归属页与 `navigation/README`
+- 当前批次继续新增一条 add-dir-is-boundary-expansion-not-config-sovereignty live 记忆：
+  - `84` 现在应直接写死：`/add-dir / additionalDirectories` 只是在扩大未来可发现事实面与文件/沙箱边界，不自动扩容 `world-definition` 的配置主权
+  - 更稳的默认写法是：boundary expansion 不等于 configuration root 扩张；否则 same-world 会重新退回“这次又多读到哪些局部规则”的随机协商
+- 当前批次继续新增一条 managed-settings-are-governance-channel live 记忆：
+  - `85` 现在可以继续把 managed settings 压回治理 why：它们若能改写危险执行边界，就更接近待审签的治理命令通道，而不是普通 merge
+  - 更稳的默认写法是：不要再问“谁的设置写得更晚”，而要问“哪条策略现在有资格改边界、危险 delta 是否已单独审签”
+- 当前批次继续新增一条 signer-plus-local-veto-cue live 记忆：
+  - `102` 现在应直接把公开 artifact promotion 的最低要求写成 `signer + first local veto cue`
+  - 更稳的默认写法是：凡公开 artifact 会改变运行时行为，却写不出 signer 与第一条局部拒收线索，就只配停在 `public artifact ceiling`
+- 当前批次继续新增一条 frontdoor-must-not-contradict-first-hop live 记忆：
+  - 根 `README` 与 `bluebook/README` 现在默认必须共享同一条 first-hop 协议：`README -> bluebook/README -> 84 / 10 / 102`
+  - 更稳的默认写法是：`09` 只当三条母线总图，不再冒充必经前门；根入口不再提前发 second-hop inventory 或抽象“归属页”占位符
+- 当前批次继续新增一条 102-86-87-split live 记忆：
+  - `bluebook/README` 与 `philosophy/README` 现在应在前门就把 `102 -> 86 -> 87` 的分工写死：`102` 先判证据 ceiling 与 current-truth 入口，`86` 只答过去为何不得越权写回现在，`87` 只答源码质量为何不能退回目录观感
+  - 更稳的默认写法是：不要把 current-truth why 与 source-quality why 再压回同一条首答
+- 当前批次继续新增一条 governance-should-reduce-human-readjudication live 记忆：
+  - `85` 现在可以继续把官方 `auto mode` 公开 why 压回治理主句：成熟治理不是把人类反复拖回同一种 permission prompt，而是减少没有新信息的人类重判
+  - 更稳的默认写法是：`permissions` 决定配不配尝试，`sandboxing` 决定最多烧到哪一圈，`/compact / /resume / /memory` 只是 `authority lease` 的 continuation consumer，`/status / /usage` 仍只配出回单
+- 当前批次继续新增一条 self-audit-must-check-signing-level live 记忆：
+  - `06` 的 artifact 自校现在默认还要多问一句：这份 artifact 到底配签到哪一层，foundation/context 若越级代签执行侧裁决，本身就是缺口
+  - 更稳的默认写法是：不要只问“缺哪份 artifact”，还要问“谁配签它、它能签多强”
+- 当前批次继续新增一条 reduce-re-adjudication-surfaces live 记忆：
+  - `03` 现在可以继续把三条母线压成一句 cross-line 制度判断：Claude Code 的先进性在于系统性减少 `world-definition / pricing / present truth` 的重判面
+  - 更稳的默认写法是：Prompt 不让 later consumer 重新定义世界，治理不让尾链重新给扩张开价，源码质量不让陈旧工件、恢复资产或公开文本重新裁决当前
+- 当前批次继续新增一条 re-adjudication-self-audit live 记忆：
+  - `06` 现在可以把总控自校继续压成一句更短的反问：我是不是又让 later consumer 重新获得了对世界、扩张或当前的重判资格
+  - 更稳的默认写法是：若答案为是，先判哪条母线失守，而不是先补更多总结词
+- 当前批次继续新增一条 public-artifacts-must-declare-signing-level live 记忆：
+  - `87` 现在可以继续把公开 operator artifacts 的要求写硬：它们不仅要可读、可反对，还必须显式声明签字权层级
+  - 更稳的默认写法是：foundation/context 工件不配代签执行侧裁决或阻断；否则 later maintainer 会把公开文本误读成同层同权的治理真相
+- 当前批次继续新增一条 auto-memory-cannot-sign-world live 记忆：
+  - `84` 现在应直接写死：`auto memory` 这类机器本地、不可跨环境继承的记忆层，只配当 foundation/context，不配当 `world-definition / continue qualification` 的 witness
+  - 更稳的默认写法是：若一次继续只有靠这台机器的本地记忆才成立，就应先判 same-world fail，而不是先补摘要或补措辞
+- 当前批次继续新增一条 permissions-sandbox-readback-three-part-order live 记忆：
+  - `85` 现在可以继续压成一句最短治理秩序：`permissions` 定价起租，`sandboxing` 预先圈界，`weak readback` 只出回单
+  - 更稳的默认写法是：少一次重判，就少一次免费扩张；不要把这三者退回并排机制清单
+- 当前批次继续新增一条 owner-to-attribution-language live 记忆：
+  - 高流量页里的 `owner page / owner chain / owner route / owner README` 现在默认继续统一收敛成 `归属页 / 归属链 / 归属路由 / 归属页 README`
+  - 更稳的默认写法是：优先在 later consumer first-hop 最常经过的 `03 / 09 / 05 / 41 / README` 收口，不靠新增别名页迁就旧术语
+- 当前批次继续新增一条 clickable-owner-links-over-pseudo-routes live 记忆：
+  - `navigation/01` 这类高流量页里，像 `philosophy/86`、`philosophy/87` 这样的编号索引默认继续优先改成明确可点击的归属链接，而不是保留“像路径的索引串”
+  - 更稳的默认写法是：later consumer 要看到的是 why-proof 的可点归属目标，而不是一串会被误读成目录 route 的伪路径
+- 最新根仓同步记忆（2026-04-08，本批次起手 live 快照）继续保持健康态：`git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；复核时根仓 `/home/mo/m/projects/cc/analysis` 为 `main...origin/main`。该状态继续只作为外部事实记录；本轮所有编辑与提交仍严格只落在 `.worktrees/mainloop`。
+- 当前批次继续新增一条 operator-artifacts-have-different-signing-rights live 记忆：
+  - `03` 现在应直接把 operator-governance 工件的签字权差异写死：`CLAUDE.md` 这类 foundation 只配塑形上下文与偏好，permissions / sandboxing / hook veto 这类执行侧机制才配正式收紧与阻断
+  - 更稳的默认写法是：成熟 runtime 的先进性不在于“工件更多”，而在于 later maintainer 不会把 foundation、裁决面和硬边界混成同一层治理真相
+- 当前批次继续新增一条 subdir-claude-md-cannot-sign-world live 记忆：
+  - `84` 现在应直接写死：按需加载的子目录 `CLAUDE.md` 只能提供局部背景，不配承担 `world-definition / continue qualification` 的主签名
+  - 更稳的默认写法是：same-world 不能依赖“这次碰巧读到了哪些目录文件”，主权裁决必须由启动期可确定加载的 foundation 与执行侧 enforcement 共同签署
+- 当前批次继续新增一条 deny-first-boundary-first live 记忆：
+  - `85` 现在应直接把 `permissions` 与 `sandboxing` 压回两层不同边界：前者回答是否配尝试扩张，后者回答即便允许也最多能到哪里
+  - 更稳的默认写法是：成熟治理默认应是 `deny-first / boundary-first`，不要把两者误写成“多一道安全检查”
+- 当前批次继续新增一条 owner-page-to-guishuye live 记忆：
+  - 高流量入口里残留的 `owner page / why owner / owner README` 现在默认继续统一收敛成 `归属页（owner page）`
+  - 更稳的默认写法是：首次出现保留一次英文括注，后续只用 `归属页`
 - 当前批次继续新增一条 claude-md-foundation-not-enforcement live 记忆：
   - 官方 docs 现在已明确：`CLAUDE.md` / memory 文件是自动加载、分层叠加的 foundation，强制边界仍要靠 settings、permissions、sandboxing 与 hook veto 这类执行侧机制成立
   - 更稳的默认写法是：在 Prompt 线里把 `CLAUDE.md` 归入 foundation / context 层，不把它误写成 enforcement surface

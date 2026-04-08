@@ -1,6 +1,6 @@
 # 架构专题
 
-`architecture/` 只负责对象层：哪个对象面在写现在，哪些 truth plane 在发言，writeback seam 在哪，局部 veto 该落在哪。
+`architecture/` 只负责对象层：哪个对象面在写现在，哪些 truth plane 在发言，writeback seam 在哪，局部 veto 该落在哪，第一退回层先落哪。
 
 > Evidence mode
 > - 公开镜像的证据上限、canonical ladder 与降格规则统一回 [../guides/102](../guides/102-%E5%A6%82%E4%BD%95%E7%BB%99%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E5%81%9A%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7%EF%BC%9Acontract%E3%80%81registry%E3%80%81authoritative%20surface%E3%80%81adapter%20subset%E4%B8%8Ehotspot%20gap%20discipline.md)；本 README 只承接对象、状态机、writeback seam 与 choke point。
@@ -17,6 +17,7 @@
 - 现在是哪条 truth plane 在发言。
 - writeback seam 在哪。
 - 局部 veto 该先落在哪。
+- 第一退回层先落哪。
 
 如果这四问还答不上，说明你缺的还是对象层，而不是新的目录路线。
 
@@ -24,13 +25,13 @@
 
 ## landing card（对象摘要）
 
-当对象层判断需要落成统一摘要时，至少写成下面六栏：
+当对象层判断需要落成统一摘要时，至少写成下面七栏：
 
-| surface | protected invariant | writer truth plane | writeback seam | stale-writer risk | local veto cue |
+| surface | protected invariant | writer truth plane | writeback seam | stale-writer risk | local veto cue | first retreat layer |
 |---|---|---|---|---|---|
-| `<surface>` | `<what it protects>` | `<who may write now>` | `<where current truth is committed>` | `<which stale write most threatens this surface>` | `<what should trigger a local veto>` |
+| `<surface>` | `<what it protects>` | `<who may write now>` | `<where current truth is committed>` | `<which stale write most threatens this surface>` | `<what should trigger a local veto>` | `<where the fallback lands first>` |
 
-这六栏只做对象摘要，不复写 `ceiling / downgrade / unresolved-authority` 之类证据字段；那些 promotion 纪律统一留在 `102`，`landing card` 也不承担验收卡或准入判断。若 `surface` 本身是 operator artifact，也同样必须写清 `writer truth plane` 与 `local veto cue`，否则 later maintainer 拿到的仍只是阅读体感，而不是正式反对路径。
+这七栏只做对象摘要，不复写 `ceiling / downgrade / unresolved-authority` 之类证据字段；那些 promotion 纪律统一留在 `102`，`landing card` 也不承担验收卡或准入判断。若 `surface` 本身是 operator artifact，也同样必须写清 `writer truth plane`、`local veto cue` 与 `first retreat layer`，否则 later maintainer 拿到的仍只是阅读体感，而不是正式反对路径；答不出退回层的 seam 也还不配被叫作可继承的 `next-refactor entry`。
 
 ## 对象专题索引
 

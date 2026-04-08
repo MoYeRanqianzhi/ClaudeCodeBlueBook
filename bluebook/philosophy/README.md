@@ -1,6 +1,7 @@
 # 哲学专题
 
-`philosophy/` 只回答三件事：世界如何合法进入模型，扩张为什么必须先被定价，过去为什么不得越权写回现在。这里不预排 first-hop，只保留 why 判据；若你缺的是证据 ceiling、对象摘要或执行 next hop，回对应 owner README，不在这里补 route。
+`philosophy/` 只回答三件事：世界如何合法进入模型，扩张为什么必须先被定价，过去为什么不得越权写回现在。这里不预排 first-hop，只保留 why 判据；若你缺的是证据 ceiling、对象摘要或执行 next hop，回对应归属页，不在这里补 route。
+其中 `86` 只回答“为什么过去不得越权写回现在”，`87` 只回答“为什么源码质量不能退回目录观感”；不要把 current-truth why 与 source-quality why 再压回同一条首答。
 
 ## 三条 Why 判据
 
@@ -32,7 +33,7 @@
 - 缺源码质量 why：
   - 看 [87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md](87-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E5%88%A4%E6%96%AD%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%96%87%E4%BB%B6%E6%9B%B4%E5%B0%8F%EF%BC%8C%E8%80%8C%E6%98%AF%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%AD%E5%BF%83%E5%90%88%E6%B3%95%E3%80%81%E8%BE%B9%E7%95%8C%E5%8F%AF%E8%AF%81%E3%80%81%E4%B8%8B%E4%B8%80%E6%AC%A1%E9%87%8D%E6%9E%84%E4%BB%8D%E6%9C%89%E8%B7%AF.md>)
 - `continuity` 时间轴自校：
-  - 看 `06`；一旦主语重新落回 Prompt / 治理 / 源码质量，仍回各自 owner 页
+  - 看 `06`；一旦主语重新落回 Prompt / 治理 / 源码质量，仍回各自归属页
 
 ## 这里不回答什么
 
@@ -43,5 +44,5 @@
 ## 维护约定
 
 - `philosophy/` 只保留 why 判据，不重新库存 first-hop 或长链 route。
-- README 只暴露三条 why failure test 与最少量 owner 引用，不提前暴露 second-hop object nouns。
-- 需要对象、证据 ceiling、retreat layer 或 execution verdict，转对应 owner README；需要苏格拉底式自校，回 `06`；需要跨目录执行链，回 [../navigation/README.md](../navigation/README.md)。
+- README 只暴露三条 why failure test 与最少量归属页引用，不提前暴露 second-hop object nouns。
+- 需要对象、证据 ceiling、retreat layer 或 execution verdict，转对应归属页 README；需要苏格拉底式自校，回 `06`；需要跨目录执行链，回 [../navigation/README.md](../navigation/README.md)。

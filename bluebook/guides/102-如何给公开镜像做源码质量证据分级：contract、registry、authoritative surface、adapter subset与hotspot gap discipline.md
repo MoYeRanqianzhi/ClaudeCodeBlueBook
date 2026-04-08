@@ -39,6 +39,7 @@
 - 凡正文把对象写成 `consumer subset` 或 provisional current-truth claim，必须同时把 `downgrade stamp` 与 `unresolved-authority note` 一起落页；只写“这里要保守”而不写这条说明，默认按证据纪律未落地处理。
 - 若对象层 authority 仍需细化，note 只说明“缺少 promotion 所需证明”，不附带任何路由义务。
 - 若 object-level authority 还没锁定，就只配先写 provisional current-truth claim；`current-truth surface candidate` 只保留为兼容标签。
+- 同理，公开 evidence 若声称存在 `next-refactor entry`，也必须同时说明它落在哪条签字权层级、能触发哪一条 `first local veto`、以及失败时先退回哪一层；做不到这三点，它就只配先写成 `seam candidate`。
 
 这条线最短的 reject trio 也只认：
 
@@ -58,6 +59,7 @@
 
 - public artifact 只能签它真正公开签出的东西
 - 看得见的 README、schema、registry、热点文件、投影视图与恢复资产，不自动拥有同一种签字权
+- 凡公开 artifact 会改变运行时行为（装配、权限、上下文、目录工作面、代理或工具池），至少还要同时写清 `signer` 与第一条 `local veto cue`；否则它最多停在 `public artifact ceiling`，不配 promotion 成 current-truth claim
 
 这一步不过，后面各级判断都会被写浅，因为你会先把“可见”误当成“已被完整证明”。
 更硬一点说，能把 `public artifact ceiling / downgrade / gap note / change-risk record` 固化成统一 speaking-rights protocol，本身就是公开可见的工程先进性，因为它降低的是过度主张、误改与制度失忆成本。
@@ -332,20 +334,22 @@ gap discipline 的价值不是“保守一点”，而是：
 当你已经完成 `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一张可交接的 `change-risk` 附表。
 
 `guides/` 在这里只负责这张附表的字段与 gap note 写法，不替其他目录代写具体危险面。
-这张附表也不是变更批准协议，而是把 visible evidence、常见误读、降格理由与 unresolved-authority 缺口写实；如果改动前还写不出这张表，current-truth 判断就应继续保持 provisional。
+这张附表也不是变更批准协议，而是把 visible evidence、常见误读、第一条局部拒收线索、降格理由与 unresolved-authority 缺口写实；如果改动前还写不出这张表，current-truth 判断就应继续保持 provisional。
 
 更稳的记录模板至少应包含下面几列：
 
-| change-risk surface | protected invariant | minimum visible evidence | common misread | downgrade note | unresolved-authority note |
+| change-risk surface | protected invariant | minimum visible evidence | first local veto cue | first retreat layer | common misread | downgrade note | unresolved-authority note |
 |---|---|---|---|---|---|
-| `<surface>` | `<what it protects>` | `<authoritative proof>` | `<usual wrong reading>` | `<why this stays provisional>` | `<what promotion still lacks>` |
+| `<surface>` | `<what it protects>` | `<authoritative proof>` | `<where later maintainer first says no>` | `<where the fallback lands first>` | `<usual wrong reading>` | `<why this stays provisional>` | `<what promotion still lacks>` |
 
 更短地说，这页真正要先写实的是：
 
 1. 这份 `change-risk` 附表该长什么样。
 2. 哪些 gap 必须显式保留。
-3. 为什么当前判断仍要降格。
-4. 哪些 authority 缺口必须继续显式保留。
+3. later maintainer 第一条局部 veto 应该落在哪。
+4. 第一退回层先落哪。
+5. 为什么当前判断仍要降格。
+6. 哪些 authority 缺口必须继续显式保留。
 
 对象层若还需要继续写 `writeback seam / first fallback / local veto cue`，统一留给 `architecture/README`；`102` 不代写对象摘要。
 

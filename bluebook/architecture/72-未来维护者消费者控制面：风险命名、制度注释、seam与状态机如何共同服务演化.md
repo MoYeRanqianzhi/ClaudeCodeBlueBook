@@ -115,6 +115,8 @@ Claude Code 的源码先进性真正稀缺的地方，不在于：
 
 - 立即把所有代码整理得更漂亮
 
+更稳一点说，未来维护者真正能消费的 seam，不是“看见这里未来也许能抽”，而是同时看见第一条局部 veto 与第一退回层；否则它仍只是阅读提示，不是可执行的重构入口。
+
 ## 6. snapshot semantics 与 state machine 说明时间边界也必须被显式治理
 
 `hooksConfigSnapshot.ts` 维护配置快照。

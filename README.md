@@ -24,7 +24,8 @@
 
 ## 最短进入
 
-- 第一次进蓝皮书：`README -> bluebook/README -> bluebook/09 -> owner page`
+- 第一次进蓝皮书：`README -> bluebook/README -> 84 / 10 / 102`
+- 想先看三条母线总图，再回 `bluebook/09`
 - 想按用户目标进入：`bluebook/userbook/README`
 - 想跨目录反查：`bluebook/navigation/README`
 - 想追研究材料与长期记忆：`docs/README`
