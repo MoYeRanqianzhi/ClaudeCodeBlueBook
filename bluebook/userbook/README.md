@@ -34,8 +34,8 @@
 - 分清启动时决定什么，进会话后决定什么：
   [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md)
   里的“路径 14：我想分清 root flags、root commands 和 slash commands”。
-  如果你主要卡在 `claude auth`、`claude mcp`、`claude plugin`、`claude doctor`
-  和 `/login`、`/mcp`、`/plugin`、`/status` 为什么不在同一层，再接着看
+  如果你主要卡在 `claude auth`、`claude mcp`、`claude plugin`
+  和 `/login`、`/mcp`、`/plugin` 为什么不在同一层，再接着看
   [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md)
   里的“路径 15：我想分清会外 root commands 和会内面板”。
 - 建立稳定工作流：
