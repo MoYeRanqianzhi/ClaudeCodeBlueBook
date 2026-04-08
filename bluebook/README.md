@@ -17,7 +17,7 @@
   - 不是因为那里“讲 Prompt”，而是因为那里先回答 later consumer 为什么不必重答“谁在定义世界、边界在哪、工具还能不能用”
 - 治理
   - [10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)
-  - 根入口只把你送到最早 `unpaid expansion` 的入口；后续对象与执行分流由治理 owner 页继续判断
+  - 根入口只把你送到最早 `unpaid expansion` 的入口；后续对象与执行分流由治理目标页继续判断
 - 当前真相保护
   - `guides/102`
   - 根入口只把你送到源码质量证据入口；对象、why 与执行边界都不在这里预排

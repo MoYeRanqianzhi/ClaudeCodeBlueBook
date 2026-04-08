@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 102-main-axis-claim-state live 记忆：
+  - `102` 的高可见主轴句、continuity 提问、检查清单与总结句默认继续统一写成 `current-truth claim state / provisional current-truth claim`
+  - `current-truth surface / candidate` 默认继续只作为兼容标签出现在局部解释里，不再回到主轴句
+- 当前批次继续新增一条 root-first-hop-target-page live 记忆：
+  - 根 `README` 在三条首跳里默认继续用 `目标页`，不再用 `owner 页`
+  - 根入口若再次开始评价下游 speaking-right，默认按 frontdoor 漂移处理
+- 最新根仓同步记忆（2026-04-08，本批次本轮继续推进）继续保持健康态：`git fetch origin main` 与 `git merge --ff-only origin/main` 均成功，结果为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
 - 当前批次继续新增一条 102-claim-state-wording live 记忆：
   - `102` 正文默认继续把 `current-truth surface / candidate` 只保留为兼容标签
   - 更稳的默认主句是 `current-truth claim state / provisional claim`，避免证据梯度页重新长回 object-flavored wording

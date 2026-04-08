@@ -3,7 +3,7 @@
 这一章回答五个问题：
 
 1. 为什么研究 Claude Code 这类公开镜像时，第一步不该直接夸“源码质量很高”或抱怨“缺太多源码”。
-2. 怎样把公开镜像里的证据压成稳定的证据阶梯，而不是把 README、schema、注册表、当前真相候选、消费者子集、热点文件和缺口脑补成同一层真相。
+2. 怎样把公开镜像里的证据压成稳定的证据阶梯，而不是把 README、schema、注册表、current-truth claim 的不同状态、消费者子集、热点文件和缺口脑补成同一层真相。
 3. 为什么“大文件”必须区分为合法复杂度中心和散落式复杂性，而不是一律判坏。
 4. 为什么源码质量必须同时审读 `dependency honesty` 与 `temporal honesty`。
 5. 怎样把这套证据分级方法迁移到别的 agent runtime 研究和代码评审中。
@@ -48,7 +48,7 @@
 
 这里还应再多记一句：
 
-- continuity 在公开镜像里不另立第四类证据层；它应被写进 `current-truth surface candidate`、`temporal honesty` 与 `mirror gap discipline` 的同一组降格规则。
+- continuity 在公开镜像里不另立第四类证据层；它应被写进 provisional current-truth claim、`temporal honesty` 与 `mirror gap discipline` 的同一组降格规则。
 
 ## 1. 先说结论
 
@@ -72,15 +72,15 @@
 1. `public artifact ceiling`
 2. `contract`
 3. `registry`
-4. `current-truth surface`
+4. `current-truth claim state`
 5. `consumer subset`
 6. `hotspot kernel`
 7. `mirror gap discipline`
 
 所以当公开镜像里出现 `resume path / snapshot / pointer / archive / adapter replay` 这些 continuity 线索时，更稳的默认动作不是宣布“恢复机制很成熟”，而是先问：
 
-1. 它们只是 `recovery asset` 证据，还是已经足够支持 `current-truth surface candidate`。
-2. 它们有没有越位成当前写权 claim。
+1. 它们只是 `recovery asset` 证据，还是已经足够支持 provisional current-truth claim。
+2. 它们有没有越位成已获 promotion 的 current-truth claim。
 3. 它们是否反而暴露了 `stale writer / stale snapshot / stale capability` 这类 temporal honesty 缺口。
 
 这七层必须严格分开。
@@ -329,7 +329,7 @@ gap discipline 的价值不是“保守一点”，而是：
 
 ## 10. 危险改动面附表模板
 
-当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一张可交接的 `change-risk` 附表。
+当你已经完成 `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一张可交接的 `change-risk` 附表。
 
 `guides/` 在这里只负责这张附表的字段与 gap note 写法，不替其他目录代写具体危险面。
 这张附表也不是变更批准协议，而是把 visible evidence、常见误读、降格理由与 unresolved-authority 缺口写实；如果改动前还写不出这张表，current-truth 判断就应继续保持 provisional。
@@ -342,7 +342,7 @@ gap discipline 的价值不是“保守一点”，而是：
 
 更短地说，这页真正要先写实的是：
 
-1. 这份 change-risk record 该长什么样。
+1. 这份 `change-risk` 附表该长什么样。
 2. 哪些 gap 必须显式保留。
 3. 为什么当前判断仍要降格。
 4. 哪些 authority 缺口必须继续显式保留。
@@ -353,7 +353,7 @@ gap discipline 的价值不是“保守一点”，而是：
 
 在你准备写下“这个仓库源码质量很高”前，先问自己：
 
-1. 我现在看到的是 contract、registry、current-truth surface 候选、consumer subset 还是 hotspot。
+1. 我现在看到的是 contract、registry、provisional current-truth claim、consumer subset 还是 hotspot。
 2. 我是否把“声明存在”“当前注册”“宿主实装”混成了一层。
 3. 这个大文件是在维护统一 invariant，还是在四处补丁式接线。
 4. 我是否同时审了 dependency honesty 与 temporal honesty。
@@ -362,4 +362,4 @@ gap discipline 的价值不是“保守一点”，而是：
 
 ## 12. 一句话总结
 
-公开镜像里的源码质量，不该靠目录树和大文件体感判断；更稳的顺序是 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`，并且同时审 `dependency honesty` 与 `temporal honesty`。
+公开镜像里的源码质量，不该靠目录树和大文件体感判断；更稳的顺序是 `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline`，并且同时审 `dependency honesty` 与 `temporal honesty`。
