@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 high-traffic-pages-must-inherit-branch-reopen wording live 记忆：
+  - `03 / 41 / 81` 现在应直接继承 `84 / 06 / 15` 已写死的 Prompt 主句：Prompt 线值钱的不是“世界重判税”或 `message lineage` 这个前门词，而是 later consumer 不必把已排除路径重新拉回候选集，重开一轮冷启动动作搜索
+  - 更稳的默认写法是：`84` 定锚 owner 主句，`81` 只展开机制对象，`03` 只做设计内涵压缩，`41` 只保留 why 问句与 first-reject 提示；高流量页若还沿用旧版抽象词，就继续把 later consumer 引回“重谈世界”而不是“排除分支回流”的更早反证
+- 当前批次继续新增一条 root-sync-healthy-ahead-49 live 记忆：
+  - 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，`git status --short --branch` 当前为 `main...origin/main [ahead 49]`
+  - 更稳的默认写法是：根仓若只是 ahead 而未脏，不做任何收敛动作，继续把预检结果作为外部事实记录，正文与提交仍只落在 `.worktrees/mainloop`
 - 当前批次继续新增一条 prompt-first-reject-means-excluded-branches-reopen live 记忆：
   - `06 / 15 / 81 / 84` 现在应直接把 Prompt 线的 first reject 压成“已排除分支回流候选集”：later consumer 不只是在重搜动作空间，而是在重新证明哪些分支为何仍该被 `authority / boundary` 排除
   - 更稳的默认写法是：若继续前还得重写排除理由，这消耗掉的就不只是 token，而是一轮没有新增决策增益的 branch re-adjudication；此时先判 `same-world / continue qualification` 失效，不把它包装成恢复技巧

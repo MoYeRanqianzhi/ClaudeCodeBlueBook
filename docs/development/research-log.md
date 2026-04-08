@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 这次已直接返回 `Already up to date.`，`git status --short --branch` 当前为 `main...origin/main [ahead 49]`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓收敛。
+- 本轮新的高流量页结论：我把 Prompt 线的新主句从 owner/self-audit/route 页继续抬到了 `03 / 41 / 81` 三个高流量页，但仍只做句子级纠偏。`03` 现在不再把 Prompt 魔力概括成“预付世界重判税”，而是更明确写成 later consumer 不必把已排除路径重新拉回候选集、重开一轮冷启动动作搜索；`41` 则把 `first reject` 从“重述现场”继续压硬成“原本已排除的路径又被拉回候选集”；`81` 的标题也不再把 `message lineage` 放在 front-door，而是收回 `request assembly result`。当前判断是，这一步能继续减少 later consumer 在高流量页里把 Prompt 线读回抽象的重谈世界叙事，或把 `message lineage` 误读成整条 Prompt front door，而更容易在 why 层直接看见更早的失败信号。
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 这次没有进入快进，而是因根仓存在未解决冲突直接失败；`git status --short --branch` 同时显示 `main...origin/main [ahead 31]`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓收敛。
 - 本轮新的 Prompt 失稳结论：我把 Prompt 线的 first reject 又往前压了一层，只改了 `06 / 15 / 81 / 84` 的一句主语：失稳不再只写成“later consumer 重新搜索动作空间”，而进一步写成“已排除分支回流候选集，且还得重新证明它们为何仍该被排除”。`06` 现在把这件事压回重判资格回流，`15` 只把它保留为失稳前问题，`84` 把它写成 same-world failure 早于回答质量下降成立的反证，`81` 则把它压回 `next-step guard / explainability` 的对象条件。当前判断是，这一步能继续减少 later consumer 把 Prompt 魔力误读成更会总结或更会选工具，而更容易把它读成：runtime 先替接手者付掉冷启动动作搜索与排除理由重写的成本。
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 这次已直接返回 `Already up to date.`，随后 `git status --short --branch` 也仍是干净的 `main...origin/main`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓正文。
