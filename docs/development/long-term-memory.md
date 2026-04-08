@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 playbooks-execution-owner-only live 记忆：
+  - `playbooks/README` 现在应固定成更纯的 execution owner 页，只回答 `execution verdict / rollback / reopen`
+  - 更稳的默认写法是：收掉开头 family 展开、`什么时候进来` 与维护约定里的重复 owner 边界，只保留正式对象已定、现在问的是执行顺序这两层条件
+- 最新根仓同步记忆（2026-04-08，本批次起手 live 快照）继续保持外部阻塞态：本轮起手 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓未解决冲突而失败；当前根仓 `/home/mo/m/projects/cc/analysis` 为 `main...origin/main [ahead 47]`。后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
 - 当前批次继续新增一条 03-governance-source-quality-tail-minify live 记忆：
   - `03` 的治理与源码质量尾段现在也继续只保留最短自校，不再保留已被 `85 / 87 / 06` 吸收的影子总论措辞
   - 更稳的默认写法是：第 29 节只保留“若安全与省 token 被写成两套优化，它就已退回治理投影层”；第 34 节只保留“尺寸治理只是后验投影，不是源码质量 first test”

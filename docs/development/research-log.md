@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 `playbooks` 结论：并行 Agent 进一步确认，`playbooks/README` 现在主要剩的不是 inventory，而是 family 解释重复。本轮已据此继续收口：开头不再重复解释 execution owner 的家族范围，`什么时候进来` 更聚焦在“正式对象已定、现在问的是 verdict/rollback/reopen”，维护约定里的重复 owner 边界也继续压薄。当前判断是，`playbooks/README` 现在更接近 `api / risk / security` 那类单职 owner 页。
+- 本轮新的根仓同步结论：本轮起手 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓未解决冲突而失败；复核根仓 `/home/mo/m/projects/cc/analysis` 时，当前为 `main...origin/main [ahead 47]`。该阻断发生在 `.worktrees/mainloop` 之外；本轮继续只在 `mainloop` 内推进与提交。
 - 本轮新的 `03` 治理/源码质量结论：在 Prompt residual 收口之后，又继续把 `03` 尾段里最后两处治理/源码质量影子总论压薄了。第 29 节不再保留“统一预算器口号”这类已被 why owner 页吸收的措辞，只剩“若安全与省 token 被写成两套优化，它就已退回治理投影层”；第 34 节也只剩“尺寸治理只是后验投影，不是源码质量 first test”。当前判断是，这两节现在终于更像总论页里的最小自校，而不是 why 页的影子复写。
 - 本轮新的根仓同步结论：本轮起手 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 已被根仓未解决冲突直接阻断；复核根仓 `/home/mo/m/projects/cc/analysis` 时，当前为 `main...origin/main [ahead 37]`。该阻断发生在 `.worktrees/mainloop` 之外；本轮继续只在 `mainloop` 内推进与提交。
 - 本轮新的 `architecture` 结论：并行 Agent 明确指出，当前更值钱的不是再改 `03` 一两句 residual，而是把 `architecture/README` 再从“对象摘要 + 轻库存解释”压回纯 object owner 页。本轮已按这个方向继续收口：前言重复被压平，`landing card` 的解释层只留一条边界句，对象专题索引保留最小链接集合，但删掉每条链接后面重复标题的说明。当前判断是，`architecture/README` 还值得继续做去库存，但已经不值得再改 speaking-right。
