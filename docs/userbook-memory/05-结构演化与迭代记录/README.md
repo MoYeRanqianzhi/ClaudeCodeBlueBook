@@ -29,6 +29,7 @@
 - [293-2026-04-08-clear matrix row split 拆分记忆.md](./293-2026-04-08-clear%20matrix%20row%20split%20拆分记忆.md)
 - [294-2026-04-08-command-index session-ops split 拆分记忆.md](./294-2026-04-08-command-index%20session-ops%20split%20拆分记忆.md)
 - [295-2026-04-08-mainline continuity boundary cleanup 拆分记忆.md](./295-2026-04-08-mainline%20continuity%20boundary%20cleanup%20拆分记忆.md)
+- [296-2026-04-08-rename-export vs release-feedback split 拆分记忆.md](./296-2026-04-08-rename-export%20vs%20release-feedback%20split%20拆分记忆.md)
 
 ## 全量档案
 
