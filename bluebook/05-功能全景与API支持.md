@@ -42,18 +42,14 @@
 
 1. 用户在问“我能看到什么、能怎么进入”时，先回 `userbook/02`。
 2. 宿主在问“contract / schema / host-facing truth 是什么”时，先回 `api/README`。
-3. 若还在问“到底算不算支持、算不算承诺”，先回 `09`、`navigation/05`、`navigation/15`、`navigation/41` 与 `08`，不要在 taxonomy 里找 verdict。
+3. 若还在问“到底算不算支持、算不算承诺”，先回 `09` 定控制面；若问题已经变成 route dispute，再回 `navigation/README` 分流，不要在 taxonomy 里找 verdict。
 
 如果这四问还回答不清，就不要继续停在功能总览页：
 
 1. 回 `09`
-   - 先定义世界进入模型、扩张定价与当前真相保护
-2. 回 `navigation/05`
-   - 先校正你到底在模仿功能表还是控制面
-3. 回 `navigation/15`
-   - 先找 first reject path
-4. 回 `navigation/41`
-   - 再确认高阶总结是否已经压回第一性原理
+   - 先定义世界进入模型、扩张定价与当前真相保护。
+2. 若争议已经变成 route dispute
+   - 回 `navigation/README`；功能总览页不再替 later consumer 预排固定导航顺序。
 
 ## 1. 前门首答：先治理判定，再查接口索引
 

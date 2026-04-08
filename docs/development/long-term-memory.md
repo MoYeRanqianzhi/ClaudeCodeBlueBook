@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 frontdoor-should-not-leak-second-hop live 记忆：
+  - `bluebook/README` 现在默认不应在首跳页提前枚举 `86/87` 这类 second-hop why 分流
+  - 更稳的默认写法是：`102` 只先回答公开证据够不够支撑当前真相主张；why/object/verdict 的继续分辨，统一交给对应归属页接手
+- 当前批次继续新增一条 navigation-is-not-fixed-syllabus live 记忆：
+  - `02 / 05 / 09` 这类高流量页现在默认不应再把 `navigation/05 / 15 / 41` 写成固定顺序，而只在 route dispute 时回 `navigation/README`
+  - 更稳的默认写法是：总图页和 usage bridge 只负责定控制面，不替 later consumer 预排导航 syllabus
+- 当前批次继续新增一条 navigation-pages-should-not-ship-object-chains live 记忆：
+  - `navigation/41` 现在默认只保留 why 问句与分流职责，不再发具体 object / artifact chain
+  - 更稳的默认写法是：更完整的对象层与执行收口统一回对应归属页与 `navigation/README`
 - 当前批次继续新增一条 add-dir-is-boundary-expansion-not-config-sovereignty live 记忆：
   - `84` 现在应直接写死：`/add-dir / additionalDirectories` 只是在扩大未来可发现事实面与文件/沙箱边界，不自动扩容 `world-definition` 的配置主权
   - 更稳的默认写法是：boundary expansion 不等于 configuration root 扩张；否则 same-world 会重新退回“这次又多读到哪些局部规则”的随机协商
