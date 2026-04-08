@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 reduce-re-adjudication-surfaces live 记忆：
+  - `03` 现在可以继续把三条母线压成一句 cross-line 制度判断：Claude Code 的先进性在于系统性减少 `world-definition / pricing / present truth` 的重判面
+  - 更稳的默认写法是：Prompt 不让 later consumer 重新定义世界，治理不让尾链重新给扩张开价，源码质量不让陈旧工件、恢复资产或公开文本重新裁决当前
+- 当前批次继续新增一条 re-adjudication-self-audit live 记忆：
+  - `06` 现在可以把总控自校继续压成一句更短的反问：我是不是又让 later consumer 重新获得了对世界、扩张或当前的重判资格
+  - 更稳的默认写法是：若答案为是，先判哪条母线失守，而不是先补更多总结词
 - 当前批次继续新增一条 public-artifacts-must-declare-signing-level live 记忆：
   - `87` 现在可以继续把公开 operator artifacts 的要求写硬：它们不仅要可读、可反对，还必须显式声明签字权层级
   - 更稳的默认写法是：foundation/context 工件不配代签执行侧裁决或阻断；否则 later maintainer 会把公开文本误读成同层同权的治理真相

@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的设计内涵结论：这一轮没有继续加新的分线口号，而是把三条母线压成了一句更硬的 cross-line 制度判断。本轮已在 `03` 明写：Claude Code 的先进性在于系统性减少 `world-definition / pricing / present truth` 的重判面。当前判断是，这一句比单独强调 Prompt why、治理 why、源码质量 why 更稳，因为它直接指出了三条线共享的制度敌人：把本该已经定下来的东西重新拖回协商。
+- 本轮新的苏格拉底自校结论：本轮也把 `06` 的总控反问继续压短了一层。现在除了 `compile / price / preserve` 这三个环节外，还多了一句更硬的反问：我是不是又让 later consumer 重新获得了对世界、扩张或当前的重判资格。当前判断是，这一句能让后续所有目录优化和 deep-dive 合并都更容易辨认“是在补 artifact，还是在重开协商”。
 - 本轮新的源码质量结论：并行 Agent 指出，公开 operator artifacts 还缺一条比“它们是 veto surface”更硬的纪律。本轮已把它补进 `87`：公开工件不仅要可读、可 diff、可反对，还必须显式写死签字权层级；foundation/context 工件不配代签执行侧裁决或阻断。当前判断是，这一句能更直接阻止 later maintainer 把“公开可见”误读成“同层同权的治理真相”。
 - 本轮新的 Prompt why 结论：并行 Agent 继续把 memory hierarchy 的边界压硬了一步。本轮已把它补进 `84`：除了按需加载的子目录 `CLAUDE.md`，`auto memory` 这类机器本地、不可跨环境继承的记忆层也只配当 foundation/context，不配承担 `world-definition / continue qualification` 的 witness。当前判断是，这一句能更直接阻止 later consumer 把“这台机器记得什么”误读成 same-world 证据。
 - 本轮新的治理 why 结论：并行 Agent 给了 `85` 一句更短但更硬的收束。本轮已把治理秩序压成 `permissions` 定价起租、`sandboxing` 预先圈界、`weak readback` 只出回单；少一次重判，就少一次免费扩张。当前判断是，这一句比再复述 `permissions / sandboxing / readback` 三者分工更稳，因为它已经直接变成 why 句，而不是机制串。

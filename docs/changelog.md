@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/{03-设计哲学.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 cross-line 制度句：`03` 现在明确把 Claude Code 的先进性压成“系统性减少 `world-definition / pricing / present truth` 的重判面”，而 `06` 也把自校继续压成一句更短的反问：我是不是又让 later consumer 重新获得了对世界、扩张或当前的重判资格。
 - 继续更新 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的源码质量纪律：公开 operator artifacts 现在不只要可读、可 diff、可反对，还必须显式写死签字权层级；foundation/context 工件不配代签执行侧裁决或阻断，否则 later maintainer 很容易把公开文本误读成同层同权的治理真相。
 - 继续更新 `bluebook/{03-设计哲学.md,09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md,navigation/{05-设计母线导航：工作语法、反扩张与可演化内核.md,41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md},philosophy/{84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md,85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md}}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成两条更硬增量：`84` 现在把 `auto memory` 也明确降格为机器本地的 foundation/context，不配承担 `world-definition / continue qualification` 的 witness；`85` 现在把治理 why 再压成一句三段式收束：`permissions` 定价起租、`sandboxing` 预先圈界、`weak readback` 只出回单，少一次重判就少一次免费扩张。与此同时，`03 / 09 / 05 / 41` 这些高流量页里残留的 `owner page / owner chain / owner route / owner README` 也继续统一收敛成 `归属页 / 归属链 / 归属路由`。
 - 继续更新 `bluebook/navigation/01-第一性原理阅读地图.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更细但高价值的路由纪律：`navigation/01` 里原先像路径、实则只是编号索引的 `philosophy/84-87`，现在统一改成明确可点击的归属链接，避免 later consumer 把 why-proof 当成目录 route 串去兜圈。
