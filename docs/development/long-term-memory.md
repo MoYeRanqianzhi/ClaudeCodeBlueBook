@@ -4188,3 +4188,4 @@
 - Prompt 线的新稳定句法也应继续写死：根 `README` 的 Prompt 首跳现在应显式说明，去 `84` 不是因为那里“讲 Prompt”，而是因为 `compiled world verdict` 先替 `verify / delegate / resume` 付掉世界协商成本。`03 / 84` 的默认 why 也应继续把 Prompt potency 写成“后续 consumer 只需在已裁定边界内选下一步动作”，而不是只写“不必重谈世界”。
 - `84` 的新稳定残余处理方式也应继续写死：`Authority / Boundary / Transcript / Lineage / Continuation` 只配被写成同一份 `continue-or-reject` 判决的五个裁定轴，不再长回 inventory；`UI transcript / delegated context / summary` 这组三种 counterfeit 也优先写成成本句，分别对应 `tool choice / verify`、`handoff / delegate`、`resume` 的冷启动回退。
 - `06` 与 `docs/development/03` 的新稳定自校框架也应继续写死：苏格拉底自校不再先发长问题清单，而先问四件事：哪条 law 失效、第一反证信号是什么、缺哪个 artifact / verdict、最小回退动作是什么。后续若继续精修 `06`，优先把“八个不可约问题”继续降格成这四问之后的下钻层，而不是再扩一个第二总纲。
+- `06` 的更细稳定句法现在也应继续写死：三条判断、三条拒错顺序与三条职责边界都只是在告诉读者“同一组四问分别落在哪条母线”，不能再被读成三张并列表；`八个不可约问题` 也只配在四问已经判到某一环失效后作为下钻子层出现。
