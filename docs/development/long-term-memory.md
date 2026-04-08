@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 same-scope-words-do-not-imply-same-signer-semantics live 记忆：
+  - `84` 现在应直接写死：`managed / user / project / local` 这组 scope 名词，在 `CLAUDE.md / settings / subagents / hooks` 上不是同一种组合律
+  - 更稳的默认写法是：`CLAUDE.md` 拼接加载，settings 覆盖链，subagents 更接近同名遮蔽，hooks 先合并再过 managed-only 与 runtime veto gate；共享 scope 词不等于共享 signer 语义
 - 当前批次继续新增一条 operator-artifacts-enter-object-layer-as-candidates live 记忆：
   - `architecture/84` 现在应直接把公开 operator artifact 压成 `surface candidate`；除非 signer、作用域与第一条 `local veto cue` 已足够清楚，否则对象层不预填 `sole writer`
   - 更稳的默认写法是：公开可见不等于 current-truth writer；对象层只能在 promotion 条件足够时才给它 writer truth plane
