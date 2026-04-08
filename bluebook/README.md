@@ -14,7 +14,7 @@
 
 - Prompt
   - `84`
-  - 不是因为那里“讲 Prompt”，而是因为 `compiled world verdict` 先替 `verify / delegate / resume` 付掉世界协商成本
+  - 不是因为那里“讲 Prompt”，而是因为 `compiled world verdict` 先让 later consumer 在 `verify / delegate / resume / handoff` 时不用再重答“谁在定义世界、边界在哪、工具还能不能用”
 - 治理
   - `10 -> security（mechanism） / risk（tail readback） / playbooks（execution）`
 - 源码质量证据链
