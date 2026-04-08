@@ -333,20 +333,7 @@ gap discipline 的价值不是“保守一点”，而是：
 
 `guides/` 在这里只负责 `change-risk record` 的字段与 gap note 写法；这张表也就是源码质量线唯一新增共享接口，不替其他目录代写具体危险面。
 这份 `change-risk record` 不是研究附表，而是 later maintainer 变更前的最小协议；如果改动前还写不出这张表，就还不配宣称自己已经看清 current-truth surface。
-更稳的 handoff 也不是“把 record 丢给下一页”，而是把 artifact chain 继续走完：
-
-1. `ceiling note / downgrade note / unresolved-authority note`
-   - 固定证据上限与 promotion 缺口
-2. `change-risk record`
-   - 点名可变面、replay obligation 与 second-truth risk
-3. `why-proof`
-   - 证明这份风险确实落在合法复杂度中心、`one writable present` 与 later-maintainer veto 之内
-4. `landing card`
-   - 把它落进 `writer truth plane / writeback seam / first fallback`
-5. `quality gate`
-   - 只有前四步都成立，才允许升级成源码质量强结论
-
-如果这五步还有一步没落，目录优化就还没完成，只是页面顺序更好看。
+更稳的 handoff 也不是“把 record 丢给下一页”，而是先在本页把 `ceiling note / downgrade note / unresolved-authority note / change-risk record` 写实；why-proof 统一回 `87`，landing card 与本地 quality gate 统一回 `architecture/README`。如果这几步还没分清 speaking-rights，目录优化就还没完成，只是页面顺序更好看。
 
 更稳的记录模板至少应包含下面几列：
 

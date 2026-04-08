@@ -6,7 +6,7 @@
 - 扩张如何被定价
 - 当前如何不被过去写坏
 
-第一次进入先在本页定题并判断当前 artifact chain 处于哪一段，再按三条首跳分流：Prompt 线先去 `philosophy/84`，治理线先去 [10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，当前真相保护先去 `guides/102 -> philosophy/87 -> architecture/README`。只有当你已经定清主语、只缺 cross-line mirror 或跨目录 artifact gap 时，才离开根入口去读其他导航页。
+第一次进入先在本页定题并判断当前 artifact chain 处于哪一段，再按三条首跳分流：Prompt 线先去 `philosophy/84`，治理线先去 [10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，源码质量证据链先去 `guides/102 -> philosophy/87 -> architecture/README`。只有当你已经定清主语、只缺 cross-line mirror 或跨目录 artifact gap 时，才离开根入口去读其他导航页。
 
 证据上限也先记一句：凡涉及路径级源码 certainty 的判断，一律先经 `guides/102` 的 `ceiling note` 仲裁；根入口不代签 artifact promotion。
 
@@ -16,10 +16,11 @@
   - `84`
 - 治理
   - `10 -> security（mechanism） / risk（tail readback） / playbooks（execution）`
-- 当前真相保护
+- 源码质量证据链
   - `102 -> philosophy/87 -> architecture/README`
-  - `102` 先写 `ceiling note`，并在 promotion 成立前补齐 `downgrade / unresolved-authority note / change-risk record`
-  - `87` 只负责 why-proof，`architecture/README` 只负责 landing card 与 local quality gate
+  - `102` 先判证据等级，并在 promotion 成立前补齐 `ceiling note / downgrade / unresolved-authority note / change-risk record`
+  - `87` 只负责 why-proof；只有 `102` 已产出 `change-risk record` 时，才进入 `87`
+  - `architecture/README` 只负责把 `change-risk record + why-proof` 落成 landing card，并在本地过 quality gate
 
 ## 根入口只做三件事
 
