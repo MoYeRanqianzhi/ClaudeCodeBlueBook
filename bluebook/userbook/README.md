@@ -413,7 +413,6 @@
   [04-专题深潜/15-账户、隐私、资格与升级专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/15-%E8%B4%A6%E6%88%B7%E3%80%81%E9%9A%90%E7%A7%81%E3%80%81%E8%B5%84%E6%A0%BC%E4%B8%8E%E5%8D%87%E7%BA%A7%E4%B8%93%E9%A2%98.md)
 - 在 IDE、Desktop、Mobile 之间继续同一工作：
   先看 [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md) 里的“路径 90：我想在 IDE、Desktop 和移动端之间继续同一工作”。
-  再进 [04-专题深潜/多前端接续与条件远端/README.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/%E5%A4%9A%E5%89%8D%E7%AB%AF%E6%8E%A5%E7%BB%AD%E4%B8%8E%E6%9D%A1%E4%BB%B6%E8%BF%9C%E7%AB%AF/README.md)。
 - 分清远端前端里的会话接续、输入注入与桥接审批为什么不是一件事：
   [04-专题深潜/20-远端输入注入、桥接审批与会话接续专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/20-%E8%BF%9C%E7%AB%AF%E8%BE%93%E5%85%A5%E6%B3%A8%E5%85%A5%E3%80%81%E6%A1%A5%E6%8E%A5%E5%AE%A1%E6%89%B9%E4%B8%8E%E4%BC%9A%E8%AF%9D%E6%8E%A5%E7%BB%AD%E4%B8%93%E9%A2%98.md)
 - 分清桥接审批返回本地之后，为什么还会继续分叉成 closeout、re-evaluation、host sweep 与 persist propagation：

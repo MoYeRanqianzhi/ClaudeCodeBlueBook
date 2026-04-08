@@ -75,6 +75,7 @@
 - [339-2026-04-08-reference-index task-entry wording cleanup 拆分记忆.md](./339-2026-04-08-reference-index%20task-entry%20wording%20cleanup%20拆分记忆.md)
 - [340-2026-04-08-root path-91 local-direct cleanup 拆分记忆.md](./340-2026-04-08-root%20path-91%20local-direct%20cleanup%20拆分记忆.md)
 - [341-2026-04-08-control-readme priority-heading cleanup 拆分记忆.md](./341-2026-04-08-control-readme%20priority-heading%20cleanup%20拆分记忆.md)
+- [342-2026-04-08-root path-90 local-direct cleanup 拆分记忆.md](./342-2026-04-08-root%20path-90%20local-direct%20cleanup%20拆分记忆.md)
 
 ## 全量档案
 
