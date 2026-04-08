@@ -80,6 +80,7 @@
 - [344-2026-04-08-root path-90 route re-lift after main fast-forward 拆分记忆.md](./344-2026-04-08-root%20path-90%20route%20re-lift%20after%20main%20fast-forward%20拆分记忆.md)
 - [345-2026-04-08-path-90 stable-vs-conditional frontend split 拆分记忆.md](./345-2026-04-08-path-90%20stable-vs-conditional%20frontend%20split%20拆分记忆.md)
 - [346-2026-04-08-root second-hop hub contraction after main merge 拆分记忆.md](./346-2026-04-08-root%20second-hop%20hub%20contraction%20after%20main%20merge%20拆分记忆.md)
+- [347-2026-04-08-noninteractive hidden-flag visibility alignment 拆分记忆.md](./347-2026-04-08-noninteractive%20hidden-flag%20visibility%20alignment%20拆分记忆.md)
 
 ## 全量档案
 
