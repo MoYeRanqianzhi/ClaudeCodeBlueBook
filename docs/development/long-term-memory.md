@@ -8,6 +8,47 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 official-public-evidence-refresh live 记忆：
+  - 2026-04-08 现场复核 `npm view @anthropic-ai/claude-code version`，当前最新公开 npm artifact 已不是 `2.1.92`，而是 `2.1.96`
+  - 更稳的默认写法是：若正文需要引用最新公开版本，统一写成“截至 2026-04-08，`@anthropic-ai/claude-code` 的 npm 最新版本为 `2.1.96`（发布时间 `2026-04-08T04:32:44.614Z`，registry `modified` 时间 `2026-04-08T04:37:26.106Z`）”，旧的 `2.1.92` 只继续读成更早批次的历史快照
+- 当前批次继续新增一条 prompt-governance-public-surface live 记忆：
+  - 官方 docs 现在已经明确：subagents 各自运行在独立 context window 中，带有 custom system prompt、specific tool access 与 independent permissions；hooks 也可以直接定义在 skills 与 subagents 中
+  - 更稳的默认写法是：Prompt 效力若要在 `public-evidence` 模式下继续深化，优先写成“同一世界准入顺序如何沿组件生命周期被局部承接”，而不是猜内部 prompt 原文
+- 当前批次继续新增一条 governance-readback-must-stay-weak live 记忆：
+  - `85` 现在应直接承担一句更硬的治理第一性原理：`weak readback` 必须保持为弱，否则会把已结算的 `authority lease` 重新打开成新的 `unpaid expansion`
+  - 更稳的默认写法是：读回面只配承接 `product promise / reopen eligibility / evidence receipt` 这类结算后对象，不配重判 `repricing proof / lease checkpoint / cleanup`
+- 当前批次继续新增一条 source-quality-legitimate-center-triad live 记忆：
+  - `87` 现在应直接把合法复杂度中心压成三重责任：`one writable present / low-signature failure first / future maintainer local veto + continued extraction`
+  - 更稳的默认写法是：做不到这三点的热点，只是债务汇流点，不是成熟内核
+- 当前批次继续新增一条 anti-second-frontdoor-self-audit live 记忆：
+  - `06` 的目录优化自校现在应多问一句：新增 why 若离开 owner 页就站不住，却被抬成总控综合，缺的不是新 frontdoor，而是 owner 页自己的单线因果
+  - 更稳的默认写法是：目录优化先减少 later consumer 重谈同一主语，不把 owner 页的缺口误修成新的总论页
+- 当前批次继续新增一条 second-order-why-synthesis-live 记忆：
+  - Prompt 新增 why 更稳的回灌页是 `03`：总论页可以合法承接“consumer-class inheritance”作为设计内涵压缩句
+  - 治理新增 why 更稳的回灌页是 `06`：自校页可以合法承接“authority lease 是否仍闭合”作为更硬的治理检查项
+  - 更稳的默认分工是：`03` 继续负责 why 的二阶综合，`06` 继续负责 audit protocol 的二阶综合
+- 当前批次继续新增一条 prompt-consumer-class-inheritance live 记忆：
+  - `84` 现在应直接承担一句更硬的 Prompt 第一性原理：同一份 `world-entry object` 必须能被不同 consumer class 继承，而不重新夺回世界主语
+  - 更稳的默认写法是：模型、接手者、子代理与宿主侧消费者都只能消费同一份已裁定世界；谁若只能靠摘要、局部投影或补写 prompt 才能继续，失败的就不只是 continuity，而是 consumer-class inheritance 已经失真
+- 当前批次继续新增一条 source-quality-low-signature-failure-first live 记忆：
+  - `87` 现在应直接承担一句更硬的源码质量第一性原理：错误必须先在低签字权层失败，而不是等到 present writeback 已经被改坏
+  - 更稳的默认写法是：projection、恢复资产与 provisional claim 必须先于 present writeback 暴露失真，让 later maintainer 的第一条 veto 发生在降格层
+- 最新根仓同步记忆（2026-04-08，本批次最终收尾 live 快照）继续保持健康态：本轮起手 `git fetch origin main` 成功、`git merge --ff-only origin/main` 返回 `Already up to date.`；本轮最终复核根仓 `/home/mo/m/projects/cc/analysis` 时，`git status --short --branch` 仍为 `main...origin/main`。后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
+- 当前批次继续新增一条 landing-card-demoted-from-global-chain live 记忆：
+  - `landing card` 现在继续保留在 `architecture/README` 里，作为局部对象摘要模板
+  - 更稳的默认写法是：高层导航与 artifact chain 用 `object summary / local quality gate` 指代它，而不是把 `landing card` 自己抬成跨层 canonical token
+- 当前批次继续新增一条 03-remove-standalone-source-quality-tail live 记忆：
+  - `03` 尾段原先独立的源码质量影子自校节现在已完全并掉，不再单列“尺寸治理不是 first test”
+  - 更稳的默认写法是：源码质量这条判断统一让回 `87 / 06`；`03` 只保留仍有 cross-line 增量的迁移、自审、坏解对照与目录单源化原则
+- 当前批次继续新增一条 governance-authority-lease-why live 记忆：
+  - `85` 现在应直接承担一句更硬的治理第一性原理：真正被续租的不是一次动作或一次 token 花费，而是一条 `authority lease`
+  - 更稳的默认写法是：世界准入、能力暴露、上下文占位与 continuation 都只是这条 lease 的收费节点；安全在阻止危险扩张免费续租，省 token 在阻止昂贵扩张免费续租
+- 最新根仓同步记忆（2026-04-08，本批次最终收尾 live 快照）已再次恢复健康态：在本轮中段 `git merge --ff-only origin/main` 一度因根仓未解决冲突而失败、状态也曾漂移为 `main...origin/main [ahead 47]` 之后，本轮最终复核根仓 `/home/mo/m/projects/cc/analysis` 时，`git status --short --branch` 又恢复为 `main...origin/main`。后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
+- 最新根仓同步记忆（2026-04-08，本批次最终收尾 live 快照）已再次恢复健康态：在本轮中段 `git merge --ff-only origin/main` 一度因根仓未解决冲突而失败、状态也曾漂移为 `main...origin/main [ahead 47]` 之后，本轮最终复核根仓 `/home/mo/m/projects/cc/analysis` 时，`git status --short --branch` 又恢复为 `main...origin/main`。后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
+- 当前批次继续新增一条 playbooks-execution-owner-only live 记忆：
+  - `playbooks/README` 现在应固定成更纯的 execution owner 页，只回答 `execution verdict / rollback / reopen`
+  - 更稳的默认写法是：收掉开头 family 展开、`什么时候进来` 与维护约定里的重复 owner 边界，只保留正式对象已定、现在问的是执行顺序这两层条件
+- 最新根仓同步记忆（2026-04-08，本批次起手 live 快照）继续保持外部阻塞态：本轮起手 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓未解决冲突而失败；当前根仓 `/home/mo/m/projects/cc/analysis` 为 `main...origin/main [ahead 47]`。后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
 - 当前批次继续新增一条 03-governance-source-quality-tail-minify live 记忆：
   - `03` 的治理与源码质量尾段现在也继续只保留最短自校，不再保留已被 `85 / 87 / 06` 吸收的影子总论措辞
   - 更稳的默认写法是：第 29 节只保留“若安全与省 token 被写成两套优化，它就已退回治理投影层”；第 34 节只保留“尺寸治理只是后验投影，不是源码质量 first test”

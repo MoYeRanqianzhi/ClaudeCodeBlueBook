@@ -19,7 +19,7 @@
 - 缺 execution evidence / reopen drill，回 `playbooks`
 - 缺当前真相线的 `ceiling note / downgrade stamp / unresolved-authority note / change-risk record`，回 `guides/102`
 - 缺当前真相线的 why-proof，回 `philosophy/87`
-- 缺当前真相线的对象、状态机、writeback seam 或 `landing card`，回 `architecture/README`
+- 缺当前真相线的对象、状态机、writeback seam 或对象摘要（如 `landing card`），回 `architecture/README`
 
 ## 维护约定
 
