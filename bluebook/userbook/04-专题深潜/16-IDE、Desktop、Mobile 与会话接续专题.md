@@ -104,6 +104,24 @@
 
 不要把 slash command 和 CLI flag 写成同一条链。
 
+### 补充：我卡在 attach 后已经看见 history init banner，但 slash / 恢复语义还是不一样
+
+先读：
+
+- [05-控制面深挖/211-completion signal、system.init dual-axis、history attach restore 与 loading edge：为什么 116、117、118、119、120、121 不是线性后续页，而是三组相邻配对分叉.md](../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/211-completion%20signal%E3%80%81system.init%20dual-axis%E3%80%81history%20attach%20restore%20%E4%B8%8E%20loading%20edge%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20116%E3%80%81117%E3%80%81118%E3%80%81119%E3%80%81120%E3%80%81121%20%E4%B8%8D%E6%98%AF%E7%BA%BF%E6%80%A7%E5%90%8E%E7%BB%AD%E9%A1%B5%EF%BC%8C%E8%80%8C%E6%98%AF%E4%B8%89%E7%BB%84%E7%9B%B8%E9%82%BB%E9%85%8D%E5%AF%B9%E5%88%86%E5%8F%89.md)
+- [05-控制面深挖/118-convertUserTextMessages、sentUUIDsRef、fetchLatestEvents(anchor_to_latest)、pageToMessages 与 source-blind append：为什么 viewerOnly 的本地 echo 去重、history attach overlap 与 transcript 追加不是同一种 replay dedup.md](../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/118-convertUserTextMessages%E3%80%81sentUUIDsRef%E3%80%81fetchLatestEvents%28anchor_to_latest%29%E3%80%81pageToMessages%20%E4%B8%8E%20source-blind%20append%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20viewerOnly%20%E7%9A%84%E6%9C%AC%E5%9C%B0%20echo%20%E5%8E%BB%E9%87%8D%E3%80%81history%20attach%20overlap%20%E4%B8%8E%20transcript%20%E8%BF%BD%E5%8A%A0%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%20replay%20dedup.md)
+- [05-控制面深挖/121-useAssistantHistory、fetchLatestEvents(anchor_to_latest)、pageToMessages、useRemoteSession onInit 与 handleRemoteInit：为什么 history init banner 回放与 live slash 恢复不是同一种 attach 恢复语义.md](../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/121-useAssistantHistory%E3%80%81fetchLatestEvents%28anchor_to_latest%29%E3%80%81pageToMessages%E3%80%81useRemoteSession%20onInit%20%E4%B8%8E%20handleRemoteInit%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20history%20init%20banner%20%E5%9B%9E%E6%94%BE%E4%B8%8E%20live%20slash%20%E6%81%A2%E5%A4%8D%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E7%A7%8D%20attach%20%E6%81%A2%E5%A4%8D%E8%AF%AD%E4%B9%89.md)
+
+这组页解决的是：
+
+- 为什么 attach 后看到的 transcript replay，不等于 live bootstrap / command-surface restore
+- 为什么 history banner、live slash、local echo 去重与 history/live overlap 不是同一条恢复
+
+不是：
+
+- `/session` 到底能不能生成 URL
+- `/desktop`、`/mobile` 与 `/ide` 谁才是 continuation 入口
+
 ## 隐藏的运行时合同
 
 ### `/ide` 只连接“当前工作现场可用”的 IDE

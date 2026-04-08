@@ -214,6 +214,7 @@
 - [210-2026-04-08-headless print summary-tail and observer-restore branch map split 拆分记忆.md](./210-2026-04-08-headless%20print%20summary-tail%20and%20observer-restore%20branch%20map%20split%20拆分记忆.md)
 - [211-2026-04-08-headless print wire-visibility and projection branch map split 拆分记忆.md](./211-2026-04-08-headless%20print%20wire-visibility%20and%20projection%20branch%20map%20split%20拆分记忆.md)
 - [212-2026-04-08-headless print builder-callback-ui branch map split 拆分记忆.md](./212-2026-04-08-headless%20print%20builder-callback-ui%20branch%20map%20split%20拆分记忆.md)
+- [213-2026-04-08-headless print completion-init-attach pair map split 拆分记忆.md](./213-2026-04-08-headless%20print%20completion-init-attach%20pair%20map%20split%20拆分记忆.md)
 
 用途：
 
