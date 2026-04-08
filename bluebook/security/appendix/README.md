@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 290 篇速查文档。
+`appendix/` 当前包含 296 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 附录层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责核对字段、矩阵与速查对象，不额外签 signer / verdict。
 
@@ -528,6 +528,24 @@
 - `290`
   载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层。
   入口：[290-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gate、refresh suppression、step-up state与governor question](290-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gate、refresh suppression、step-up state与governor question.md)。
+- `291`
+  载体家族强请求清理step-up重授权治理与强请求清理续打治理分层。
+  入口：[291-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：same-request identity、retry budget、future readiness与governor question](291-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：same-request identity、retry budget、future readiness与governor question.md)。
+- `292`
+  载体家族强请求清理续打治理与强请求清理完成治理分层。
+  入口：[292-安全载体家族强请求清理续打治理与强请求清理完成治理分层速查表：could-not-complete、completed progress、result settlement与governor question](292-安全载体家族强请求清理续打治理与强请求清理完成治理分层速查表：could-not-complete、completed progress、result settlement与governor question.md)。
+- `293`
+  载体家族强请求清理完成治理与强请求清理终局治理分层。
+  入口：[293-安全载体家族强请求清理完成治理与强请求清理终局治理分层速查表：tool_result、files_persisted、idle与governor question](293-安全载体家族强请求清理完成治理与强请求清理终局治理分层速查表：tool_result、files_persisted、idle与governor question.md)。
+- `294`
+  载体家族强请求清理终局治理与强请求清理遗忘治理分层。
+  入口：[294-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层速查表：finality scope、forgetting gate、retained memory与governor question](294-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层速查表：finality scope、forgetting gate、retained memory与governor question.md)。
+- `295`
+  载体家族强请求清理遗忘治理与强请求清理免责释放治理分层。
+  入口：[295-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层速查表：forgetting gate、liability-release gate、compensate-or-refuse与governor question](295-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层速查表：forgetting gate、liability-release gate、compensate-or-refuse与governor question.md)。
+- `296`
+  载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层。
+  入口：[296-安全载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层速查表：liability-release decision、archive-close surface、positive control、cleanup archive gap与governor question](296-安全载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层速查表：liability-release decision、archive-close surface、positive control、cleanup archive gap与governor question.md)。
 
 ## 怎么配合主线读
 
