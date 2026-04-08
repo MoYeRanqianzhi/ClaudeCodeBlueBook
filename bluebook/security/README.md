@@ -2,6 +2,7 @@
 
 `security/` 当前有 357 篇正文，范围 `00-356`；`appendix/` 当前有 340 篇速查文档；`source-notes/` 当前有 207 篇源码剖面。
 
+`security/` 首页默认先压回三类机制 ambiguity：`signer / verdict ledger / cleanup authority`。
 `security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
 更短地说：安全与省 token 在这里保护的是同一个 model-reachable world；前者阻止免费危险扩张，后者阻止免费昂贵扩张。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门顺序，不要急着把安全页读成另一套规则堆。

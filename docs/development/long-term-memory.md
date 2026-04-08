@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 最新根仓同步记忆（2026-04-08，本批次收尾 live 快照）已再次漂移：本轮起手 `git fetch origin main` 成功、`git merge --ff-only origin/main` 返回 `Already up to date.`；但收尾再次复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态已重新出现 root 工作区改动，并伴随 `UU docs/development/research-log.md`。该状态只作为外部事实记录，后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
+- 当前批次继续新增一条 security-mechanism-owner-only live 记忆：
+  - `security/README` 现在应固定成纯 mechanism owner 入口，只回答 `signer / verdict ledger / cleanup authority`
+  - 更稳的默认写法是：保留三类 ambiguity、最小入场条件与离场条件；删掉重复的 family 边界铺陈和目录卫生句
 - 当前批次继续新增一条 03-prompt-tail-crossline-only live 记忆：
   - `03` 的 Prompt 尾段现在应继续只保留 cross-line 原则与最短自校，不再长出第二遍 Prompt why / self-audit
   - 尤其 `lawful forgetting`、人类接手路径、`continue verdict` 与 `same-world` 边界判断，这些节默认只保留一句判断；具体 continuation / world-entry owner 统一回 `84`
