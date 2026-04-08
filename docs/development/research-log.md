@@ -7635,3 +7635,5 @@
 - `84` 这一批继续把 same-world contract 压到动作层：晚绑定一旦越过 `Authority / Boundary / Transcript / Lineage / Continuation`，下一步动作就要重算边界、重判工具资格，动作选择成本直接回到冷启动；同页也新增了三条 counterfeit 成本句，并明确 `Authority / Boundary / Transcript / Lineage / Continuation` 不是另一张 inventory，而是同一份 `continue-or-reject` 判决的五个裁定轴。
 - `06` 与 `docs/development/03` 这一批则把苏格拉底自校改回 failure-first：不再先发长问题清单，而先问四件事：哪条 law 失效、第一反证信号是什么、缺哪个 artifact / verdict、最小回退动作是什么。当前 residual 也因此更清楚：若继续推进 `06`，下一刀应优先把“八个不可约问题”从正文主链继续降格成四问后的下钻层。
 - 这一批随后的 follow-up 又只补了 `06` 一刀：把三条判断、三条拒错顺序与三条职责边界明确声明成“同一组四问在三条母线上的落点”，并把“八个不可约问题”继续压回“四问已经判到某一环失效后，才下钻的子层”。这一刀的目标不是新增术语，而是继续拆掉 `06` 里残留的并列总纲感。
+- 这一轮继续追打 Prompt potency 的动作成本句法，只动 `03 / 06 / 84`。`84` 现在把“真正值钱的”改成 later consumer 选下一步动作所需的世界定义、边界与继续资格已经被编译成受约束秩序；一句话总结也改成“Prompt 首先是替 later consumer 预付世界协商与边界重算成本的世界准入顺序”。`03` 的 same-world 判据也同步把收益压成“later consumer 可以直接沿同一份判决去选下一步动作”。`06` 则把多 Agent prompt / coordinator prompt / teammate addendum 的强点继续收成“不必重定义当前世界、重算边界与重判工具资格”。
+- `06` 这一轮还继续拆了更深一层的第二目录感：`## 1` 被改成“若四问已判到 runtime 对象层，再按八类失效面下钻”，`2.13` 改回“所有 drill-down 最后仍只回四问”，`3-5` 被并成“四问第 1 问后的三种常见误判”，`6` 的导语也明确说后面只是四桶样例，不是失真百科。

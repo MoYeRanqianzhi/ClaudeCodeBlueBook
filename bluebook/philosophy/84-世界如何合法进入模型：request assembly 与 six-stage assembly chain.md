@@ -140,7 +140,7 @@ Claude Code 更深的一层是：
 
 ### 更硬一点的源码证据
 
-真正值钱的，不是“有一份 system prompt”，而是 same-world contract 已经被写成受约束的编译秩序：
+真正值钱的，不是“有一份 system prompt”，而是 later consumer 选下一步动作所需的世界定义、边界与继续资格，已经被写成一条受约束的编译秩序：
 
 1. stable prefix 与 late-bound facts 被正式区分，而不是由不同调用点临场拼接。
 2. delegated / consumer-local context 必须活在同一条默认前缀顺序内，而不是另起一套世界。
@@ -248,4 +248,4 @@ Claude Code 更深的一层是：
 
 ## 7. 一句话总结
 
-Prompt 首先是世界准入顺序；如果这一步没有先成立，后面的 Prompt 再完整，也只是更高明的文案。
+Prompt 首先是替 later consumer 预付世界协商与边界重算成本的世界准入顺序；如果这一步没有先成立，后面的 Prompt 再完整，也只会把下一步动作留在冷启动里。
