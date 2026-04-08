@@ -4191,3 +4191,4 @@
 - `06` 的更细稳定句法现在也应继续写死：三条判断、三条拒错顺序与三条职责边界都只是在告诉读者“同一组四问分别落在哪条母线”，不能再被读成三张并列表；`八个不可约问题` 也只配在四问已经判到某一环失效后作为下钻子层出现。
 - Prompt 线的最新更硬句法也应继续写死：`84` 里“真正值钱的”不再写成抽象 `same-world contract`，而写成 later consumer 选下一步动作所需的世界定义、边界与继续资格已经被编译好；一句话总结也应继续固定为“Prompt 先替 later consumer 预付世界协商与边界重算成本，否则下一步动作就会掉回冷启动”。
 - `06` 的第二目录 residual 现在也应继续写死为：`## 1` 的八项只配叫“失效面下钻”，不能再作为总纲；`2.13` 也不该再长出独立的三线对称矩阵，只配把所有下钻收回到四问。后续若继续精修，优先删“苏格拉底式追问一/二/三”这类新 why 章节，把它们并成“第 1 问后的常见误判”。
+- 源码质量线的最新 micro residual 也应继续写死：`01` 不再列任何 evidence rung 名，只回答 repo path locator；`102` 继续压回 promotion / downgrade 判级页，只记录 `dependency honesty / temporal honesty` 风险，不再代答 why；`87` 则继续把高阶对象词收回 later-maintainer veto 这条 why-proof 命题，具体 truth plane / seam / authority next hop 统一回 `architecture/README`。
