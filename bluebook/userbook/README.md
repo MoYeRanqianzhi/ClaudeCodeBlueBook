@@ -226,6 +226,15 @@
 - 想把 `139-143` 先看成 post-turn_summary 可见性、mirror gray runtime、remote-session ledger 与 global remote bit 的 remote truth split：
   [03-参考索引/02-能力边界/203-139-143 visibility、mirror runtime 与 remote truth split 索引.md](./03-参考索引/02-能力边界/203-139-143%20visibility%E3%80%81mirror%20runtime%20%E4%B8%8E%20remote%20truth%20split%20索引.md) ->
   [05-控制面深挖/216-post_turn_summary visibility、mirror gray runtime、remote-session ledger 与 global remote bit：为什么 139、140、141、142、143 不是线性五连，而是接在三条后继线上的三组问题.md](./05-控制面深挖/216-post_turn_summary%20visibility%E3%80%81mirror%20gray%20runtime%E3%80%81remote-session%20ledger%20%E4%B8%8E%20global%20remote%20bit%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20139%E3%80%81140%E3%80%81141%E3%80%81142%E3%80%81143%20%E4%B8%8D%E6%98%AF%E7%BA%BF%E6%80%A7%E4%BA%94%E8%BF%9E%EF%BC%8C%E8%80%8C%E6%98%AF%E6%8E%A5%E5%9C%A8%E4%B8%89%E6%9D%A1%E5%90%8E%E7%BB%A7%E7%BA%BF%E4%B8%8A%E7%9A%84%E4%B8%89%E7%BB%84%E9%97%AE%E9%A2%98.md)
+- 想把 `144-149` 先看成 session pane、command shell 与 headless remote memory 的三组相邻配对：
+  [03-参考索引/02-能力边界/204-144-149 coarse remote bit pair map 索引.md](./03-参考索引/02-能力边界/204-144-149%20coarse%20remote%20bit%20pair%20map%20索引.md) ->
+  [05-控制面深挖/217-session pane、command shell 与 headless remote memory：为什么 144、145、146、147、148、149 不是线性六连，而是从 143 分出去的三组相邻配对.md](./05-控制面深挖/217-session%20pane%E3%80%81command%20shell%20%E4%B8%8E%20headless%20remote%20memory%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20144%E3%80%81145%E3%80%81146%E3%80%81147%E3%80%81148%E3%80%81149%20%E4%B8%8D%E6%98%AF%E7%BA%BF%E6%80%A7%E5%85%AD%E8%BF%9E%EF%BC%8C%E8%80%8C%E6%98%AF%E4%BB%8E%20143%20%E5%88%86%E5%87%BA%E5%8E%BB%E7%9A%84%E4%B8%89%E7%BB%84%E7%9B%B8%E9%82%BB%E9%85%8D%E5%AF%B9.md)
+- 想把 `168-179` 先看成 headless source、bridge authority 与 create-context 的子树，而不是线性十二连：
+  [03-参考索引/02-能力边界/205-168-179 headless source、bridge authority 与 create-context 子树 索引.md](./03-参考索引/02-能力边界/205-168-179%20headless%20source%E3%80%81bridge%20authority%20%E4%B8%8E%20create-context%20%E5%AD%90%E6%A0%91%20索引.md) ->
+  [05-控制面深挖/218-headless source、bridge authority 与 create-context 子树：为什么 168-179 不是线性十二连.md](./05-控制面深挖/218-headless%20source%E3%80%81bridge%20authority%20%E4%B8%8E%20create-context%20%E5%AD%90%E6%A0%91%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20168-179%20%E4%B8%8D%E6%98%AF%E7%BA%BF%E6%80%A7%E5%8D%81%E4%BA%8C%E8%BF%9E.md)
+- 想把 `180-190` 先看成 teleport、model 与 bridge 的分支，而不是线性十一连：
+  [03-参考索引/02-能力边界/206-180-190 teleport、model 与 bridge branch map 索引.md](./03-参考索引/02-能力边界/206-180-190%20teleport%E3%80%81model%20%E4%B8%8E%20bridge%20branch%20map%20索引.md) ->
+  [05-控制面深挖/219-teleport、model 与 bridge 分支：为什么 180-190 不是线性十一连.md](./05-控制面深挖/219-teleport%E3%80%81model%20%E4%B8%8E%20bridge%20%E5%88%86%E6%94%AF%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20180-190%20%E4%B8%8D%E6%98%AF%E7%BA%BF%E6%80%A7%E5%8D%81%E4%B8%80%E8%BF%9E.md)
 
 如果你已经确定要读某个专题，请先到对应 README 再选深页，不要把根前门当默认深链库存。
 
