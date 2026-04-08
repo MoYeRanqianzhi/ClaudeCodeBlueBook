@@ -19,6 +19,17 @@
 - [283-2026-04-08-mcp matrix fallback cleanup 拆分记忆.md](./283-2026-04-08-mcp%20matrix%20fallback%20cleanup%20拆分记忆.md)
 - [284-2026-04-08-capability map hub cleanup 拆分记忆.md](./284-2026-04-08-capability%20map%20hub%20cleanup%20拆分记忆.md)
 - [285-2026-04-08-hooks matrix fallback cleanup 拆分记忆.md](./285-2026-04-08-hooks%20matrix%20fallback%20cleanup%20拆分记忆.md)
+- [286-2026-04-08-session remote-control front-door split 拆分记忆.md](./286-2026-04-08-session%20remote-control%20front-door%20split%20拆分记忆.md)
+- [287-2026-04-08-task output naming split 拆分记忆.md](./287-2026-04-08-task%20output%20naming%20split%20拆分记忆.md)
+- [288-2026-04-08-capability map second-hop demotion 拆分记忆.md](./288-2026-04-08-capability%20map%20second-hop%20demotion%20拆分记忆.md)
+- [289-2026-04-08-path-90 routing flatten cleanup 拆分记忆.md](./289-2026-04-08-path-90%20routing%20flatten%20cleanup%20拆分记忆.md)
+- [290-2026-04-08-continuity topic boundary cleanup 拆分记忆.md](./290-2026-04-08-continuity%20topic%20boundary%20cleanup%20拆分记忆.md)
+- [291-2026-04-08-clear boundary cleanup 拆分记忆.md](./291-2026-04-08-clear%20boundary%20cleanup%20拆分记忆.md)
+- [292-2026-04-08-clear index sync cleanup 拆分记忆.md](./292-2026-04-08-clear%20index%20sync%20cleanup%20拆分记忆.md)
+- [293-2026-04-08-clear matrix row split 拆分记忆.md](./293-2026-04-08-clear%20matrix%20row%20split%20拆分记忆.md)
+- [294-2026-04-08-command-index session-ops split 拆分记忆.md](./294-2026-04-08-command-index%20session-ops%20split%20拆分记忆.md)
+- [295-2026-04-08-mainline continuity boundary cleanup 拆分记忆.md](./295-2026-04-08-mainline%20continuity%20boundary%20cleanup%20拆分记忆.md)
+- [296-2026-04-08-rename-export vs release-feedback split 拆分记忆.md](./296-2026-04-08-rename-export%20vs%20release-feedback%20split%20拆分记忆.md)
 
 ## 全量档案
 

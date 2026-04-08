@@ -11,12 +11,16 @@
 - [00-导读.md](./00-%E5%AF%BC%E8%AF%BB.md)
 - [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md)
 - [01-主线使用/README.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/README.md)
-- [02-能力地图/README.md](./02-%E8%83%BD%E5%8A%9B%E5%9C%B0%E5%9B%BE/README.md)
 - [03-参考索引/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/README.md)
 - [04-专题深潜/README.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/README.md)
 - [05-控制面深挖/README.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/README.md)
 
 如果你已经知道自己卡在某个具体目标，再继续看下面这组“按目标进入”。
+
+如果你要建立机制总图，而不是先做用户入口分诊，走：
+
+- [03-参考索引/04-功能面七分法.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/04-%E5%8A%9F%E8%83%BD%E9%9D%A2%E4%B8%83%E5%88%86%E6%B3%95.md) ->
+  [02-能力地图/README.md](./02-%E8%83%BD%E5%8A%9B%E5%9C%B0%E5%9B%BE/README.md)
 
 ## 按目标进入
 
@@ -127,9 +131,16 @@
   [04-专题深潜/13-非交互、后台会话与自动化专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/13-%E9%9D%9E%E4%BA%A4%E4%BA%92%E3%80%81%E5%90%8E%E5%8F%B0%E4%BC%9A%E8%AF%9D%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%93%E9%A2%98.md) ->
   [05-控制面深挖/非交互结果、summary 与协议流/README.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/%E9%9D%9E%E4%BA%A4%E4%BA%92%E7%BB%93%E6%9E%9C%E3%80%81summary%20%E4%B8%8E%E5%8D%8F%E8%AE%AE%E6%B5%81/README.md)
 - 想建立运行时总图，而不是先学操作：
+  [03-参考索引/04-功能面七分法.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/04-%E5%8A%9F%E8%83%BD%E9%9D%A2%E4%B8%83%E5%88%86%E6%B3%95.md) ->
   [02-能力地图/README.md](./02-%E8%83%BD%E5%8A%9B%E5%9C%B0%E5%9B%BE/README.md)
 - 只想按名字、入口和合同速查：
   [03-参考索引/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/README.md)
+- 分清 host、viewer 与 health-check 的会外入口边界：
+  [05-控制面深挖/21-Host、Viewer 与 Health Check：为什么 server、remote-control、assistant、doctor 不能写成同一类会外入口.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/21-Host%E3%80%81Viewer%20%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20server%E3%80%81remote-control%E3%80%81assistant%E3%80%81doctor%20%E4%B8%8D%E8%83%BD%E5%86%99%E6%88%90%E5%90%8C%E4%B8%80%E7%B1%BB%E4%BC%9A%E5%A4%96%E5%85%A5%E5%8F%A3.md)
+- 分清 remote-control 的 workspace trust、bridge eligibility 与 trusted-device 为什么不是同一把钥匙：
+  [05-控制面深挖/23-Workspace Trust、Bridge Eligibility 与 Trusted Device：为什么 remote-control 的 trust、auth、policy 不是同一把钥匙.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/23-Workspace%20Trust%E3%80%81Bridge%20Eligibility%20%E4%B8%8E%20Trusted%20Device%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote-control%20%E7%9A%84%20trust%E3%80%81auth%E3%80%81policy%20%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E6%8A%8A%E9%92%A5%E5%8C%99.md)
+- 分清 remote session 的远端发布命令面、本地保留命令面与执行路由为什么不是同一张命令表：
+  [05-控制面深挖/68-slash_commands、REMOTE_SAFE_COMMANDS、local-jsx fallthrough 与 remote send：为什么 remote session 的远端发布命令面、本地保留命令面与实际执行路由不是同一张命令表.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/68-slash_commands%E3%80%81REMOTE_SAFE_COMMANDS%E3%80%81local-jsx%20fallthrough%20%E4%B8%8E%20remote%20send%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20remote%20session%20%E7%9A%84%E8%BF%9C%E7%AB%AF%E5%8F%91%E5%B8%83%E5%91%BD%E4%BB%A4%E9%9D%A2%E3%80%81%E6%9C%AC%E5%9C%B0%E4%BF%9D%E7%95%99%E5%91%BD%E4%BB%A4%E9%9D%A2%E4%B8%8E%E5%AE%9E%E9%99%85%E6%89%A7%E8%A1%8C%E8%B7%AF%E7%94%B1%E4%B8%8D%E6%98%AF%E5%90%8C%E4%B8%80%E5%BC%A0%E5%91%BD%E4%BB%A4%E8%A1%A8.md)
 - 想分清 `assistant viewer`、`--remote` TUI、`viewerOnly` 与 coarse remote bit 的合同厚度：
   [03-参考索引/02-能力边界/README.md](./03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md) ->
   [05-控制面深挖/146-assistant%20viewer%E3%80%81--remote%20TUI%E3%80%81viewerOnly%E3%80%81remoteSessionUrl%20%E4%B8%8E%20filterCommandsForRemoteMode%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%90%8C%E4%B8%80%20coarse%20remote%20bit%20%E4%B8%8D%E7%AD%89%E4%BA%8E%E5%90%8C%E6%A0%B7%E5%8E%9A%E5%BA%A6%E7%9A%84%20remote%20%E5%90%88%E5%90%8C.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/146-assistant%20viewer%E3%80%81--remote%20TUI%E3%80%81viewerOnly%E3%80%81remoteSessionUrl%20%E4%B8%8E%20filterCommandsForRemoteMode%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%90%8C%E4%B8%80%20coarse%20remote%20bit%20%E4%B8%8D%E7%AD%89%E4%BA%8E%E5%90%8C%E6%A0%B7%E5%8E%9A%E5%BA%A6%E7%9A%84%20remote%20%E5%90%88%E5%90%8C.md)

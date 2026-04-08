@@ -26,7 +26,8 @@
 
 如果你现在主要卡在“稳定接续”和“条件远端”之间的分界，而不是 deeper remote runtime，先看：
 
-- [多前端接续与条件远端/README.md](./%E5%A4%9A%E5%89%8D%E7%AB%AF%E6%8E%A5%E7%BB%AD%E4%B8%8E%E6%9D%A1%E4%BB%B6%E8%BF%9C%E7%AB%AF/README.md)
+- [../00-阅读路径.md](../00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md) 里的“路径 90：我想在 IDE、Desktop 和移动端之间继续同一工作”
+- 其第一跳再进 [多前端接续与条件远端/README.md](./%E5%A4%9A%E5%89%8D%E7%AB%AF%E6%8E%A5%E7%BB%AD%E4%B8%8E%E6%9D%A1%E4%BB%B6%E8%BF%9C%E7%AB%AF/README.md)
 
 如果你现在主要卡在“启动时决定什么，进会话后决定什么”，而不是 deeper command semantics，先看：
 
