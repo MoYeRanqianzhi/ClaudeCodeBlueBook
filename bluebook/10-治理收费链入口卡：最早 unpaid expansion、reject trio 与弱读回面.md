@@ -27,6 +27,8 @@
 4. `cleanup`
    - 旧 authority 是否已经撤租、归档、停用；若没有，继续一律不算合法续租。
 
+`repricing seam` 不是一个补救动作名，而是这四问唯一允许改价的回炉口：凡要改写 continue、默认重试、usage 解读或 readback 结论的动作，都必须回到这里重开。若不同 surface 可以各自补签一点安全、一点成本，同一现场就会出现多头定价，`free-expansion relapse` 也会重新出现。
+
 若症状正好发生在 `compact / resume / re-entry`，也只把它们当成 `lease checkpoint` 的暴露时刻；这页不继续展开这些入口各自的对象清单。
 
 四问里只要有一问答不上，就先按 `free-expansion relapse` 处理，而不是继续补第二套术语表。

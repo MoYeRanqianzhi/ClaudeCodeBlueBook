@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 governance-needs-single-repricing-furnace live 记忆：
+  - `83 / 10 / 06 / 03` 现在应直接把治理链写成同一座回炉：`signer ceiling` 保护单源定价，`repricing seam` 是唯一允许改价的回炉口，`weak readback / projection` 只能降格，`continue` 也只在同一 `authority lease` 仍成立时才配叫 `continuation qualification`
+  - 更稳的默认写法是：凡不能补 `repricing proof / lease checkpoint / cleanup` 的 surface 都不配再说当前治理真相；否则就按多头定价与 `free-expansion relapse` 处理
 - 当前批次继续新增一条 prompt-magic-means-prepaid-rejudication-tax live 记忆：
   - `03 / 84 / 15` 现在应直接把 Prompt “魔力”去魅成制度结果：runtime 先替 later consumer 预付世界重判税，prompt-side `local veto` 负责阻止 `display transcript / delegated context / summary` 越级，第一退回层则先把这些 surface 降回 `projection`
   - 更稳的默认写法是：Prompt 线若答不出这条 `local veto + first retreat layer`，就先按 `same-world failure verdict` 处理，不再补摘要或补解释
