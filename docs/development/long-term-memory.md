@@ -4196,3 +4196,4 @@
 - 治理线入口的最新结构纪律也应继续写死：`10` 的文件名与 H1 现在都应直接对齐 `earliest unpaid expansion / repricing proof / lease checkpoint / cleanup`，不再把“四类被收费资源”摆在入口；对象类目、reject trio 与弱读回面继续只保留在 support card，而不再占高流量入口 noun 位。
 - `03` 的治理去魅与原则二现在也应继续写死成诊断环句法：删掉 mode、token 面板与审批界面后，治理线若还成立，就只需回答四问：最早 `unpaid expansion` 是什么、`repricing proof` 在哪、`lease checkpoint` 是否通过、旧 authority 是否已 cleanup；失败语义也不再按资产类型起步，而只按这条诊断环决定。
 - 治理入口命名的最新平衡纪律也应继续写死：相比把 `repricing proof / lease checkpoint / cleanup` 全塞进文件名，更稳的高流量入口名是 `最早 unpaid expansion、reject trio 与弱读回面`。这样既把第一问题从 taxonomy 拉回 diagnosis，又保留 support card 的可检索性；更细的 `repricing proof / lease checkpoint / cleanup` 继续留在正文与 support cards 里。
+- 源码质量线的最新 micro-cut 也应继续写死：`01` 的开头现在应压成两句即可，不再叠三层护栏；`102` 在 `change-risk record` 段只保留模板与 handoff，不再补“为什么更值钱”的 why 口气；`87` 则进一步写死成“没有 `change-risk record`，就还不配下源码质量判断”，字段/模板/handoff 全部回 `102`。
