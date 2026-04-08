@@ -4217,3 +4217,7 @@
 - 源码质量线的页角色现可视为稳定四分：`navigation/README = artifact-gap 单跳`，`01 = repo locator`，`87 = why-proof`，`architecture/README = object owner summary`，`102 = evidence ceiling / promotion gate`。任何一句话若同时承担其中两种以上角色，应优先按 speaking-rights 回潮处理，而不是当作普通措辞问题。
 - `userbook/README` 的稳定职责也应继续写死：根页只做 `问题分型 -> 单跳`，不再默认 `01` 中转，也不再把 `10 / 85 / 61 / security / risk / playbooks` 预排成用户侧固定 deep chain。用户侧根页一旦开始替 why、truth 或恢复执行写 syllabus，就在长成第二蓝皮书。
 - 根仓库的同步纪律在 `2026-04-08` 这轮又验证了一次：继续只在根仓做 `fetch / ff-only merge` 前置检查，不处理根仓 dirty/conflicted 文件；所有正文推进、记忆更新与提交都只落在 `.worktrees/mainloop`。
+- `2026-04-08` 又固定了一条 why 页第一性原理：why 页的主句只配站在 consumer-visible failure test 上，不配靠 owner route、first-hop 或解释轴站立。更硬一点说，`Authority / Boundary / Transcript / Lineage / Continuation` 这类词只配在故障定位层出现；一旦跑回 why 主句，later consumer test 就会被术语链替代。
+- 治理线的新稳定页角色也应继续写死：`10 = earliest unpaid expansion 的 first-answer card`，`security = signer / ledger / cleanup ambiguity owner`，`risk = post-cleanup readback owner`，`playbooks = execution verdict owner`。任何一页若又开始预排另外三页的 syllabus、步骤或卡组，就说明治理线在回潮成链式讲义。
+- 源码质量线也再固定一条更硬的 promotion 纪律：artifact completeness 只决定 promotion eligibility，从不改写 page ownership；`102` 可以要求 `ceiling note / downgrade / unresolved-authority note / change-risk record` 写实，但不能把“谁补齐 artifact”改写成“谁暂时拥有升级结论资格”。
+- 本轮根仓同步检查的当前截面也应写死：`git fetch origin main` 成功，但根仓 `git merge --ff-only origin/main` 仍被未解决冲突阻断。该事实只作为外部状态写回记忆，不在根仓动手修；后续每批继续先查再做，不复用旧的阻断文件清单。

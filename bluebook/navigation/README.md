@@ -20,13 +20,6 @@
 - 缺当前真相线的证据分级与 `change-risk record`，回 `guides/102`
 - 缺当前真相线的 why-proof，回 `philosophy/87`
 - 缺当前真相线的对象、状态机、writeback seam 或 `landing card`，回 `architecture/README`
-- 解释 why，回 `philosophy/`
-- 判 evidence ceiling / ladder / downgrade，回 `guides/`
-- 展开对象、状态机与 choke point，回 `architecture/`
-- 声明 host contract 与字段 truth，回 `api/`
-- 发现场 verdict、rollback 与 repair，回 `playbooks/`
-- 保留失真样本，回 `casebooks/`
-- 记录稳定经验与批次记忆，回 `docs/`
 
 ## 三类常见 artifact gap
 

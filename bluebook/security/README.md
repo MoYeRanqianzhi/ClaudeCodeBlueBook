@@ -3,7 +3,7 @@
 `security/` 研究的不是“规则越多越安全”，也不是与省 token 并列的第二条优化线，而是 signer、ledger 与 cleanup authority 这三种不对称如何阻止最早 `unpaid expansion` 免费续租。
 更短地说：安全入口第一问不是“哪条规则更严”，而是“最早 `unpaid expansion` 是什么，以及 signer / verdict ledger / cleanup authority 怎样让这次扩张不能免费继续”。
 若你还没先在 `10` 定位最早 `unpaid expansion`，本页不开始；那时你缺的还是治理前门，不是安全机制翻译。
-`security/` 内部也不再自建 syllabus，只保留三件事：谁在签字、谁在记 `verdict ledger`、谁在 `cleanup` 时撤租旧 authority。若这三件事还答不上，再复用 `10` 的 `same scene? still priced? who settles?` 去看 lease 到底卡在哪，再决定读机制入口摘要、速查表、源码证据簇还是具体编号正文。
+`security/` 内部也不再自建 syllabus，只保留三件事：谁在签字、谁在记 `verdict ledger`、谁在 `cleanup` 时撤租旧 authority。若这三件事还答不上，再复用 `10` 的 `same scene? still priced? who settles?` 去看 lease 到底卡在哪，但不在首页编排“先读哪类材料”。
 
 ## 入场条件
 
@@ -29,7 +29,7 @@
 - 当 ledger 与 verdict 的边界模糊，结果词开始冒充治理事实。
 - 当 cleanup authority 到底落在哪仍不清楚，收口后谁还配负责也开始失真。
 
-更稳的读法是：若 projection、状态词或收口结果开始替 signer / verdict 说话，把它们先当安全症状，而不是治理事实。继续下潜时只按对象 handoff：来源主权、能力边界与显式降级看 `00-29`；当前真相、账本与 failure semantics 看 `30-138`；cleanup 收口对象继续看 `147-224`。若缺字段矩阵或证据簇，再回 [appendix/README.md](appendix/README.md) 与 [source-notes/README.md](source-notes/README.md)。
+更稳的读法是：若 projection、状态词或收口结果开始替 signer / verdict 说话，把它们先当安全症状，而不是治理事实。继续下潜时只按对象 handoff，不按摘要/附录/编号通关：缺字段矩阵回 [appendix/README.md](appendix/README.md)，缺源码证据簇回 [source-notes/README.md](source-notes/README.md)，其余 ambiguity 留给对应正文。
 
 ## 维护约定
 

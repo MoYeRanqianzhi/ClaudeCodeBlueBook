@@ -35,7 +35,7 @@
 
 - 文件名保留旧词只是为了兼容检索；正文判断一律只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`。
 - 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航与对象展开即使被提及，也只算证据状态声明，不算新的 frontdoor。
-- 在这条线里，artifact completeness 就是唯一 ownership law：谁先补齐 artifact，谁才暂时拥有升级结论的资格；页面标题本身不构成签字权。
+- 在这条线里，artifact completeness 只决定 promotion eligibility，不重写 owner README 的稳定职责；页面标题与补写者都不额外增加签字权。
 - 凡正文把对象写成 `consumer subset` 或 `current-truth surface candidate`，必须同时把 `downgrade stamp` 与 `unresolved-authority note` 一起落页；只写“这里要保守”而不写这条说明，默认按证据纪律未落地处理。
 - 若对象层 authority 仍需细化，note 只说明“缺少 promotion 所需证明”，不附带任何路由义务。
 - 若 object-level authority 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
@@ -332,7 +332,7 @@ gap discipline 的价值不是“保守一点”，而是：
 当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一份可交接的 `change-risk record`。
 
 `guides/` 在这里只负责 `change-risk record` 的字段与 gap note 写法；这张表也就是源码质量线唯一新增共享接口，不替其他目录代写具体危险面。
-这份 `change-risk record` 不是研究附表，而是 later maintainer 变更前的最小协议；如果改动前还写不出这张表，就还不配宣称自己已经看清 current-truth surface。更稳的 handoff 也不是“把 record 丢给下一页”，而是先在本页把 `ceiling note / downgrade note / unresolved-authority note / change-risk record` 写实。
+这份 `change-risk record` 不是研究附表，而是 later maintainer 变更前的最小协议；如果改动前还写不出这张表，current-truth 判断就应继续保持 provisional。更稳的 handoff 也不是“把 record 丢给下一页”，而是先在本页把 `ceiling note / downgrade note / unresolved-authority note / change-risk record` 写实。
 
 更稳的记录模板至少应包含下面几列：
 
