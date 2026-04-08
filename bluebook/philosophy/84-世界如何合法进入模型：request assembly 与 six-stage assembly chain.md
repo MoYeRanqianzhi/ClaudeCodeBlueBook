@@ -66,6 +66,8 @@ Claude Code 更深的一层是：
 
 late binding 因此也只能发生在不触发重协商的前提下。更硬一点说：凡是会逼 later consumer 重新定义世界、重画边界、重接历史或重判继续资格的补写，都不再是 continue，而是 renegotiation。
 
+再往前追一层，这也解释了为什么 `hooks / skills / subagents` 不是 Prompt 外挂，而是世界准入顺序在不同生命周期里的局部承接：它们只能在各自组件边界内消费、裁剪或补充继续所需的局部约束，却不能重写 `world-definition source`。一旦某个组件级 prompt、hook 或 delegated context 可以各自改判世界主语，系统就不再是在做 lawful continuation，而是在做分布式重协商。
+
 ### 更硬一点的源码证据
 
 真正值钱的，不是“有一份 system prompt”，而是 later consumer 选下一步动作所需的最小依据，已经被正式承接到足以维持同一 `reject / continue verdict` 的程度；具体 invariant 与对象链统一留给 `82` 与源码锚点，why 页不再展开第二层清单。

@@ -8,6 +8,21 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 official-public-evidence-refresh live 记忆：
+  - 2026-04-08 现场复核 `npm view @anthropic-ai/claude-code version`，当前最新公开 npm artifact 已不是 `2.1.92`，而是 `2.1.96`
+  - 更稳的默认写法是：若正文需要引用最新公开版本，统一写成“截至 2026-04-08，`@anthropic-ai/claude-code` 的 npm 最新版本为 `2.1.96`（发布时间 `2026-04-08T04:32:44.614Z`，registry `modified` 时间 `2026-04-08T04:37:26.106Z`）”，旧的 `2.1.92` 只继续读成更早批次的历史快照
+- 当前批次继续新增一条 prompt-governance-public-surface live 记忆：
+  - 官方 docs 现在已经明确：subagents 各自运行在独立 context window 中，带有 custom system prompt、specific tool access 与 independent permissions；hooks 也可以直接定义在 skills 与 subagents 中
+  - 更稳的默认写法是：Prompt 效力若要在 `public-evidence` 模式下继续深化，优先写成“同一世界准入顺序如何沿组件生命周期被局部承接”，而不是猜内部 prompt 原文
+- 当前批次继续新增一条 governance-readback-must-stay-weak live 记忆：
+  - `85` 现在应直接承担一句更硬的治理第一性原理：`weak readback` 必须保持为弱，否则会把已结算的 `authority lease` 重新打开成新的 `unpaid expansion`
+  - 更稳的默认写法是：读回面只配承接 `product promise / reopen eligibility / evidence receipt` 这类结算后对象，不配重判 `repricing proof / lease checkpoint / cleanup`
+- 当前批次继续新增一条 source-quality-legitimate-center-triad live 记忆：
+  - `87` 现在应直接把合法复杂度中心压成三重责任：`one writable present / low-signature failure first / future maintainer local veto + continued extraction`
+  - 更稳的默认写法是：做不到这三点的热点，只是债务汇流点，不是成熟内核
+- 当前批次继续新增一条 anti-second-frontdoor-self-audit live 记忆：
+  - `06` 的目录优化自校现在应多问一句：新增 why 若离开 owner 页就站不住，却被抬成总控综合，缺的不是新 frontdoor，而是 owner 页自己的单线因果
+  - 更稳的默认写法是：目录优化先减少 later consumer 重谈同一主语，不把 owner 页的缺口误修成新的总论页
 - 当前批次继续新增一条 second-order-why-synthesis-live 记忆：
   - Prompt 新增 why 更稳的回灌页是 `03`：总论页可以合法承接“consumer-class inheritance”作为设计内涵压缩句
   - 治理新增 why 更稳的回灌页是 `06`：自校页可以合法承接“authority lease 是否仍闭合”作为更硬的治理检查项
