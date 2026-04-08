@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 public-artifact-protocol-is-visible-advancedness live 记忆：
+  - `102 / 03` 现在应直接把 `public artifact ceiling / downgrade / gap note / change-risk` 读成 later maintainer 可继承的记录协议；operator artifact 若写不清层级、作用域与阻断权限，就只配停在 `public artifact ceiling`
+  - 更稳的默认写法是：源码质量先进性不先暴露“能做什么”，而先暴露“何时必须降格、谁能先拒收、还有哪些 authority 仍未解决”
 - 当前批次继续新增一条 governance-needs-single-repricing-furnace live 记忆：
   - `83 / 10 / 06 / 03` 现在应直接把治理链写成同一座回炉：`signer ceiling` 保护单源定价，`repricing seam` 是唯一允许改价的回炉口，`weak readback / projection` 只能降格，`continue` 也只在同一 `authority lease` 仍成立时才配叫 `continuation qualification`
   - 更稳的默认写法是：凡不能补 `repricing proof / lease checkpoint / cleanup` 的 surface 都不配再说当前治理真相；否则就按多头定价与 `free-expansion relapse` 处理

@@ -335,6 +335,7 @@ gap discipline 的价值不是“保守一点”，而是：
 
 `guides/` 在这里只负责这张附表的字段与 gap note 写法，不替其他目录代写具体危险面。
 这张附表也不是变更批准协议，而是把 visible evidence、常见误读、第一条局部拒收线索、降格理由与 unresolved-authority 缺口写实；如果改动前还写不出这张表，current-truth 判断就应继续保持 provisional。
+更硬一点说，能把 `public artifact ceiling / downgrade / gap note / change-risk` 一起写成 later maintainer 可继承的记录协议，本身就是公开可见的工程先进性：它先公开的是拒收与降格能力，而不是过满 promotion。
 
 更稳的记录模板至少应包含下面几列：
 
