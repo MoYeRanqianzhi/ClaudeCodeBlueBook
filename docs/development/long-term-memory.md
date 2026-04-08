@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 security-mechanism-owner-only live 记忆：
+  - `security/README` 现在应固定成纯 mechanism owner 入口，只回答 `signer / verdict ledger / cleanup authority`
+  - 更稳的默认写法是：保留三类 ambiguity、最小入场条件与离场条件；删掉重复的 family 边界铺陈和目录卫生句
 - 当前批次继续新增一条 03-prompt-tail-crossline-only live 记忆：
   - `03` 的 Prompt 尾段现在应继续只保留 cross-line 原则与最短自校，不再长出第二遍 Prompt why / self-audit
   - 尤其 `lawful forgetting`、人类接手路径、`continue verdict` 与 `same-world` 边界判断，这些节默认只保留一句判断；具体 continuation / world-entry owner 统一回 `84`
