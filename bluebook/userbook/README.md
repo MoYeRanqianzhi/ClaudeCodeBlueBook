@@ -546,70 +546,16 @@
 - `/mcp` 总览、按名解析与 Agent 引用的错位
 - `/reload-plugins` 与插件当前会话激活面的错位
 - 插件自动物化链与当前会话激活链的错位
-- headless 启动链、首问就绪与结构化宿主合同
-- host / viewer / health-check 的会外入口边界
-- `skip trust dialog`、project `.mcp.json` 批准与 health-check 的边界
-- bridge 的 workspace trust、bridge eligibility 与 trusted-device 边界
-- bridge 的 auto-connect、mirror、perpetual 与 continue 模式边界
-- bridge 的设置默认、显式开关与状态展示边界
-- bridge 的链接、二维码与定位符边界
-- remote-control 的入口矩阵边界
-- remote session client、viewer 与 bridge host 的边界
-- remote 的权限响应、会话控制与命令合同边界
-- remote session 的运行态、后台任务与 viewer ownership 边界
-- bridge 的状态词、恢复厚度与动作上限边界
-- bridge 的故障提示、当前停机与默认回退边界
-- bridge 的断开、退出与恢复轨迹边界
-- bridge 的 stale pointer、过期环境与重试语义边界
-- bridge 的补救动作与恢复建议边界
-- bridge 的 build 不可用、资格不可用与权限噪音边界
-- standalone remote-control 的 spawn topology、capacity 与目录分配边界
-- standalone remote-control 的 banner、状态行、QR 与会话列表边界
-- standalone remote-control 的 host flags、session 默认策略与 title 回填边界
-- remote-control 的工具审批、网络放行、自动批准与提示收口边界
-- standalone remote-control 的 transport URL、secret、token 与 epoch 边界
-- standalone remote-control 的 environment、work 与 session 生命周期边界
-- bridge 的 compat session tag、infra session tag 与 retag helper 边界
-- standalone remote-control 的 token freshness timing、child sync 与 heartbeat auth 边界
-- standalone remote-control 的 work intake validity、claim 与 routing 边界
-- bridge 的 session runtime timeout、shutdown grace 与 failed remap 边界
-- direct-connect 的 session factory、transport URL、workspace 回填与断线退出边界
-- direct-connect 的控制子集、权限投影与退出传播边界
-- direct-connect 的消息过滤、`init` 去重与 transcript surface 边界
-- direct-connect 的本地提示、transcript 状态、tab status、overlay 与 fatal stderr 边界
-- direct-connect 的 prompt 面、transcript 模式与 raw SDK stream 差异边界
-- remote session 的持续状态面与 direct connect 的当前交互态边界
-- remote session 的持续事件流消费与 direct connect 的离散交互投影边界
-- remote session 内部不同消费者的投影厚度边界
-- remote session 事件族到命令集、流式正文、后台计数与 timeout 控制的映射边界
-- teleport 的 repo admission、branch replay 与 explicit-env attach 合同边界
-- bridge 的 session birth、history hydrate 与 ingress flush 合同边界
-- model 的 create-time stamp、live shadow、durable usage 与 resumed fallback 边界
-- bridge 的 initial-message local seed、真实 delivery ledger 与旧注释语义边界
-- model 的 persisted preference、live override、resume short-circuit 与 fallback authority 边界
-- model 的 ambient env preference、saved setting、agent bootstrap、launch override 与 startup snapshot 边界
-- bridge 的 eligible history projection、remote UI replay 与 model prompt authority 边界
-- model 的 source selection、allowlist admission 与 default fallback 边界
-- model allowlist 的显式拒绝、选项隐藏与 silent getter veto 边界
-- bridge 的 continuity ledger、fresh-session break 与 replay 合同边界
-- bridge 的 REPL 写入合同、daemon 写入合同与共享 echo 层边界
-- bridge ingress reader 的 side-channel、echo、replay 与 user-consumer 边界
-- bridge read-side replay continuity 的 same-session 保留与 fresh-session reset 边界
-- bridge control side-channel 的 permission verdict 返回腿与 session-control 请求腿边界
-- bridge ingress 的 user-only transcript adapter 与 non-user `SDKMessage` 无第二消费面边界
-- bridge user adapter 内部的 image block repair 与 attachment path-ref materialization 边界
-- bridge permission race 的本地 pending verdict ledger 与 generic callback ownership 边界
-- bridge ingress 从 191 到 196 的六层阅读链与局部导航边界
-- bridge permission race 的 prompt 撤场、订阅退役、late response 消费与策略重判边界
-- permission context 变更后的本地重判广播与 remote/worker no-op surface 边界
-- 远端接续、bridge ingress 输入注入与桥接审批在用户目标层面的分工边界
-- sandbox network bridge 里同 host sibling sweep 与 tool-level closeout 的边界
-- sandbox permission 的 persist-to-settings 在 context、settings 与 live sandbox 之间的三层写面边界
-- permission tail 从 verdict ledger 分叉到 closeout、re-evaluation、host sweep 与 persist surfaces 的结构边界
-- remote surface 从 consumer topology 分叉到 foreground runtime、interaction shell、presence ledger、gray runtime 与 behavior bit 的结构边界
-- 桥接审批回到本地之后，如何从用户问题层分诊 closeout、re-evaluation、host sweep 与 persist propagation
-- `can_use_tool` 如何升级成 `requires_action/pending_action` 双轨投影，以及 bridge 为什么只发布裸 blocked bit
-- 同样在等输入时，为什么系统有时只有 waiting bit、有时却能给出更厚的 blocked context
-- 同样都叫 remote surface 时，为什么有时你面对的是前台运行、有时是 session 存在面、有时只是 bridge 后台层
+如果你已经进入 headless / host-viewer / bridge / direct-connect / remote session / permission tail / model authority 这类更细的控制面分叉，不要继续在根 README 找叶子页，直接转去：
+
+- [05-控制面深挖/README.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/README.md)
+
+在那里先看：
+
+- `优先控制面`
+
+再根据需要进入：
+
+- `完整控制面目录`
 
 适合想判断“为什么系统这样设计、哪里不能混写”的读者。
