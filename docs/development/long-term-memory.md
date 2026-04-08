@@ -8,6 +8,24 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 source-quality-artifact-router live 记忆：
+  - `navigation/README` 默认继续按缺失 artifact 派发源码质量线，而不是按缺哪一页派发
+  - 更稳的默认顺序是：`ceiling note / downgrade stamp / unresolved-authority note -> change-risk record -> why-proof -> landing card / first fallback`
+- 当前批次继续新增一条 87-why-proof live 记忆：
+  - `87` 默认继续不只解释 `change-risk record` 为什么值钱，还要把自己的最小产物写成 `why-proof`
+  - 这份 `why-proof` 默认继续只证明三件事：`合法复杂度中心 / one writable present / later-maintainer veto`
+- 当前批次继续新增一条 architecture-field-mapping live 记忆：
+  - `architecture/README` 默认继续不只给 `landing card`，还要固定它和 `change-risk record` 的字段映射关系
+  - 如果 `landing card` 仍靠解释理解而不是字段投影理解，默认说明 source-quality line 还没真正机械化
+- 当前批次继续新增一条 source-quality-artifact-checklist live 记忆：
+  - `06` 的源码质量自校默认继续不再先问“页归属有没有写对”，而先问 `ceiling note / downgrade note / change-risk record / object landing / verdict` 是否齐全
+  - 如果这五项缺一，还把自己写成“已经分清 why/证据/对象”，默认按第二前门复发处理
+- 当前批次继续新增一条 governance-four-check diagnostic live 记忆：
+  - `10` 默认继续在 `authority lease accounting` 之后补四问诊断：`what expanded / who repriced it / what ledger proves it / what cleanup ends it`
+  - 四问里只要有一问答不上，默认先按 unpaid renegotiation 或 default-renewed lease 处理
+- 当前批次继续新增一条 root-ceiling-note live 记忆：
+  - 根 `README` 的 evidence sentence 默认继续不用时间快照式声明承载，而只写：路径级源码 certainty 先经 `guides/102` 的 `ceiling note`
+  - 当前 live root sync 事实继续放在 `research-log` 与长期记忆里，不再混进 bluebook 根前门正文
 - 当前批次继续新增一条 root-sync-healthy-again live 记忆：
   - `2026-04-08` 这一轮起手再次执行 `fetch origin main` 与 `merge --ff-only origin/main`，结果为 `Already up to date.`
   - 当前最新根仓状态为 `main...origin/main`；先前记录的 root-blocked snapshot 仍保留为历史截面，但不再是当前 live truth

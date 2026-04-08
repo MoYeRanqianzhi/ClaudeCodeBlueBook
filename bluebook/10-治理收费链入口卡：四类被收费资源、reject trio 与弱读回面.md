@@ -19,6 +19,23 @@
 - 治理不是更会拦截，而是先固定 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`，再让权限投影、状态读数、继续入口与收口结果词只读这条收费链在不同资产上的外观。
 - 因此省 token 不是压缩已准入世界，而是减少免费扩张、延后暴露、外置 durable asset，并在 cleanup 后杀死不该继续收费的 transient authority。
 
+## 最短诊断环
+
+这页最值钱的，不是多记几组 noun，而是把治理问题压成一条最短诊断环：
+
+1. `symptom`
+   - 先记最显眼的异常，但不在这里下结论
+2. `earliest unpaid expansion`
+   - 先找最早哪条动作 / 能力 / 上下文席位 / 时间扩张还没被定价
+3. `repricing proof`
+   - 再问谁重新定价、哪条 `verdict ledger` 证明它发生、什么 cleanup / revocation 负责结算
+4. `reject`
+   - 再判这更像 `decision-window collapse`、`projection usurpation` 还是 `free-expansion relapse`
+5. `escalation`
+   - 最后才决定去 `security / risk / playbooks / architecture`
+
+后面的 `canonical chain / 四类被收费资源 / reject trio / 弱读回面` 都只是这条诊断环的支持卡片，不是新的分类主题。
+
 ## canonical chain
 
 - `governance key`
@@ -31,7 +48,7 @@
 这里还应先记一句：
 
 - `compact / resume / re-entry` 不构成第四条治理对象线；它们只是 `continuation pricing` 与 `durable-transient cleanup` 在时间轴上的消费点。
-- `continuity` 在治理线里也只是一道 lease checkpoint：`same scene? still priced? who settles?`；`compact / resume / re-entry` 只是这道 checkpoint 的三种入口形式。
+- 治理线里的 `continuity` 统一只问这道 checkpoint：`same scene? still priced? who settles?`；`compact / resume / re-entry` 只是它的三种入口形式。
 
 ## 四类被收费资源
 
@@ -46,6 +63,19 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
 
 如果一句治理说明答不上“这次在给哪类资源收费”，它通常还停在界面词、结果词或规则堆层。
 更稳的诊断顺序也只认一句：先找最早那条 unpaid expansion，而不是先盯最吵的 surface noun。
+
+真正进入诊断时，也只先问四件事：
+
+1. `what expanded`
+   - 最早扩张的是动作、能力、上下文席位还是时间
+2. `who repriced it`
+   - 谁重新定价了这次扩张
+3. `what ledger / verdict proves it`
+   - 哪条 `externalized truth chain (verdict ledger)` 证明这次定价真实发生
+4. `what cleanup / revocation ends it`
+   - 什么结算或撤销动作终止了这份 lease
+
+四问里只要有一问答不上，就先按 unpaid renegotiation 或 default-renewed lease 处理。
 
 如果把 `authority lease accounting` 压成最短 crosswalk，也只剩四句：
 

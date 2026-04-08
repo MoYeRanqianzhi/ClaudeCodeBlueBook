@@ -14,7 +14,7 @@
 这里默认只回答 next-hop：
 
 - 缺目录法或入口升级规则，回 `../../docs/development/00-研究方法.md`
-- 缺当前真相的 artifact chain 起点、ceiling note 或 change-risk record，回 `../README.md -> guides/102`
+- 缺当前真相的 artifact chain 起点、`ceiling note`、`downgrade stamp`、`unresolved-authority note` 或 `change-risk record`，回 `../README.md -> guides/102`
 - 缺其他更细 route gap，再按下面三类分流
 
 一句话该落在哪层，只问它在做哪种动作：
@@ -39,9 +39,11 @@
   - 已确认主语，只缺 signer / mechanism，回 `security`；缺 tail readback / reopen qualification，回 `risk`；缺 execution / repair drill，回 `playbooks`
   - 还在争 mode、usage、approval 或 cleanup result 谁说了算，先退回 `../10`
 - 谁在宣布现在
-  - 缺 `ceiling note / change-risk record`，回 `guides/102`
-  - 已有 `change-risk record`，缺 why gate 回 `philosophy/87`；缺 object landing card 回 `architecture/README`
-  - 还在混 runtime-core evidence、operator-governance evidence 与公开镜像缺口，先退回 `06`
+  - 缺 `ceiling note`、`downgrade stamp` 或 `unresolved-authority note`，回 `guides/102`
+  - 已有 promotion proof 但还没写出 `change-risk record`，继续停在 `guides/102`
+  - 已有 `change-risk record` 但还没写 `why-proof`，回 `philosophy/87`
+  - 已有 `change-risk record` 与 `why-proof`，但还没完成 `landing card / first fallback`，回 `architecture/README`
+  - artifact 已齐但还在混 runtime-core evidence、operator-governance evidence 与公开镜像缺口，先退回 `06`
 
 ## 稳定节点
 

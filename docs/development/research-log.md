@@ -2,6 +2,16 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的源码质量路由结论：`navigation/README` 现已继续从 page-owned route 改成 artifact-state route。当前真相保护不再问“缺哪一页”，而问“缺 `ceiling note / downgrade stamp / unresolved-authority note / change-risk record / why-proof / landing card / first fallback` 里的哪一个”。
+- 本轮新的根入口结论：根 `README` 的当前真相首跳现已继续改成条件链，而不是线性链：先写 `ceiling note`，若仍是 `candidate` 就停在 `102`；只有 promotion 成立后才产出 `change-risk record` 并进入 `landing card`。
+- 本轮新的 87 结论：`87` 现在更明确把自己的共享产物写成 `why-proof`，不再只说“这张表为什么值钱”；这份 `why-proof` 只继续证明三件事：`合法复杂度中心 / one writable present / later-maintainer veto`。
+- 本轮新的 architecture 结论：`architecture/README` 现在不只给出 `landing card` 六栏，还继续补出了和 `change-risk record` 的字段映射，因此 source-quality line 从 `record` 到 `landing` 的 handoff 开始变成机械投影，而不再只是解释性 handoff。
+
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，本轮正文继续只在 `.worktrees/mainloop` 内推进。
+- 本轮新的 root frontdoor 结论：根 `README` 现在把证据上限句继续压成固定 artifact 口径，不再把 dated public-artifact snapshot 混进根前门；更稳的默认写法只剩 `路径级源码 certainty 先经 guides/102 的 ceiling note`。
+- 本轮新的 governance diagnostics 结论：`10` 现在在 lease crosswalk 之后继续补出四问诊断律：`what expanded / who repriced it / what ledger proves it / what cleanup ends it`；任何一问答不上，默认先按 unpaid renegotiation 或 default-renewed lease 处理。
+- 本轮新的 self-audit 结论：`06` 的源码质量分支现在进一步从 page ownership 退回 artifact completeness，不再先问“缺的是哪一页”，而先问 `ceiling note / downgrade note / change-risk record / object landing / verdict` 是否齐全。
+
 - 本轮新的根仓同步结论：重新执行 `git fetch origin main` 与 `git merge --ff-only origin/main` 后，结果为 `Already up to date.`；根仓当前最新状态回到 `main...origin/main`。这说明上一批写入的 root-blocked 记忆只应保留为历史截面，本轮正文继续只在 `.worktrees/mainloop` 内推进。
 - 本轮新的 Prompt 结论：Prompt 线现在不只写 `compiled world verdict`，还补上了更可判定的 admissibility-law 模板：`84` 已新增 `surface mutation / allowed / broken link / downgrade / observer evidence` 判定表，并把 counterfeit 固定成 `UI transcript 越权 / delegated context 长成第二世界 / compaction 丢 continuation object`，同时给出第一条可逆修法。
 - 本轮新的 Prompt 去效果词结论：`03 / 06 / 41` 继续把 `Prompt 很强 / 魔力` 这类效果词退回 `world-entry honesty / compiled world verdict / consumer 无需重谈现场` 的 failure-based predicate；旧的赞美句法不再承担主句。

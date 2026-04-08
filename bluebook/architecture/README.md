@@ -34,6 +34,14 @@
 |---|---|---|---|---|---|
 | `<surface>` | `<what it protects>` | `<who may write now>` | `<where current truth is committed>` | `<first retreat layer>` | `<what still lacks promotion proof>` |
 
+字段映射也应固定成机械关系，而不是解释关系：
+
+- `change-risk surface` -> `surface`
+- `protected invariant` -> `protected invariant`
+- `minimum visible evidence` -> `writer truth plane / unresolved authority`
+- `replay obligation` -> `writeback seam / first fallback`
+- `second-truth risk` -> `first fallback / unresolved authority`
+
 ## 什么时候进来
 
 - 当你已经知道某条高阶判断成立，但还没回答“它到底落成了哪些正式对象、状态机与 choke point”。
