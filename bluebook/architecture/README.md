@@ -9,13 +9,7 @@
 
 - 架构层不负责再判梯子，而负责把“四个对象问题”继续展开成正式对象、状态机与 choke point，并用它们保护 `one writable present`。
 
-这里还要再多记一句：
-
-- `architecture/` 真正值钱的，不只是把对象链列出来，而是把 later maintainer 的局部可反对性落成可见对象与 seam。
-- 这里说的 `局部可反对性` 不是“最后还能看懂”，而是拿不到作者时，later maintainer 仍能只凭局部对象与 seam 指出哪一处对象边界在越权。
-- 因而 `event truth / current truth / display truth` 的对象化分工，以及 `writeEvent / reportState / reportMetadata` 这类通道怎样落到 writeback seam，也统一由本目录负责，不在 `87` 这类 why 页重发对象矩阵。
-- 本 README 只收束对象层的稳定判断：谁在写现在、哪条 truth plane 在发言、writeback seam 在哪，以及 later maintainer 拿什么局部反对。
-- 如需把对象判断压成统一摘要，使用下文 `landing card` 六栏；它是对象摘要页提供的固定表达，不是新的流程关卡。
+这里也只再多记一句：`architecture/` 真正值钱的，不只是把对象链列出来，而是把 later maintainer 的局部可反对性落成可见对象与 seam。这里说的局部可反对性，不是“最后还能看懂”，而是拿不到作者时仍能只凭局部对象与 seam 指出哪一处对象边界在越权。
 
 ## 四个对象问题
 
@@ -26,8 +20,6 @@
 
 如果这四问还答不上，说明你缺的还是对象层，而不是新的目录路线。
 
-对象层不再单独发第二条 handoff；这里不重发全局顺序，只负责把对象判断收束成对象、状态机与 seam。
-
 ## landing card（对象摘要）
 
 当对象层判断需要落成统一摘要时，至少写成下面六栏：
@@ -36,23 +28,17 @@
 |---|---|---|---|---|---|
 | `<surface>` | `<what it protects>` | `<who may write now>` | `<where current truth is committed>` | `<which stale write most threatens this surface>` | `<what should trigger a local veto>` |
 
-这六栏只做对象摘要，不复写 `ceiling / downgrade / unresolved-authority` 之类证据字段；那些 promotion 纪律统一留在 `102`。
-`landing card` 的作用也只是在一张卡片里看清 object surface、protected invariant、writer truth plane、writeback seam、stale-writer risk 与 local veto cue，不承担验收卡或准入判断。
+这六栏只做对象摘要，不复写 `ceiling / downgrade / unresolved-authority` 之类证据字段；那些 promotion 纪律统一留在 `102`，`landing card` 也不承担验收卡或准入判断。
 
 ## 对象专题索引
 
 如果要继续展开某一个对象面，可按主题进入下面页面；这些链接只是对象摘要页的专题索引，不构成固定顺序：
 
 - [82-请求装配流水线：world entry / request assembly / six-stage assembly chain](82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md)
-  - 看 same-world compiler 怎样落成 request assembly 对象。
 - [83-反扩张治理流水线：governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup](83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md)
-  - 看治理秩序怎样落成定价对象与 choke point。
 - [60-恢复优先的双通道状态面：writeback、resume与reconnect一体化](60-恢复优先的双通道状态面：writeback、resume与reconnect一体化.md)
-  - 看 event truth、current truth 与 display truth 怎样在 writeback seam 分开。
 - [63-可演化内核：Claude Code如何在持续增长中维持不变量](63-可演化内核：Claude Code如何在持续增长中维持不变量.md)
-  - 看 later maintainer 的局部可反对性怎样落成结构约束。
 - [84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping](84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)
-  - 看 anti-stale 如何落到 freshness gate、validator、per-host 与 capability surface。
 
 ## 这里不回答什么
 

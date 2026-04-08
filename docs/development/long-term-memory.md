@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 architecture-owner-over-index-commentary live 记忆：
+  - `architecture/README` 现在应固定成更纯的 object owner 页：保留对象四问、`landing card` 与最小专题索引，但不再在标题后重复解释链接已经说明的对象面
+  - 更稳的默认写法是：保留边界链接和对象下潜链接本身，删掉“看 X 如何落成 Y”的重复说明句；对象 owner 页值钱的是 object summary，不是轻书架口气
+- 最新根仓同步记忆（2026-04-08，本批次收尾 live 快照）再次升级为外部阻塞态：本轮收尾再次复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态已漂移为 `main...origin/main [ahead 30]`，并伴随 `UU bluebook/security/README.md`、`UU bluebook/security/source-notes/README.md`、`UU docs/development/research-log.md` 等未解决冲突。后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
 - 最新根仓同步记忆（2026-04-08，本批次收尾 live 快照）已再次漂移：本轮起手 `git fetch origin main` 成功、`git merge --ff-only origin/main` 返回 `Already up to date.`；但收尾再次复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态已重新出现 root 工作区改动，并伴随 `UU docs/development/research-log.md`。该状态只作为外部事实记录，后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
 - 当前批次继续新增一条 security-mechanism-owner-only live 记忆：
   - `security/README` 现在应固定成纯 mechanism owner 入口，只回答 `signer / verdict ledger / cleanup authority`
