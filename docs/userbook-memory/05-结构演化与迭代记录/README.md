@@ -69,6 +69,7 @@
 - [333-2026-04-08-root path-92 local-direct cleanup 拆分记忆.md](./333-2026-04-08-root%20path-92%20local-direct%20cleanup%20拆分记忆.md)
 - [334-2026-04-08-root session-recovery route narrowing 拆分记忆.md](./334-2026-04-08-root%20session-recovery%20route%20narrowing%20拆分记忆.md)
 - [335-2026-04-08-root delivery route narrowing 拆分记忆.md](./335-2026-04-08-root%20delivery%20route%20narrowing%20拆分记忆.md)
+- [336-2026-04-08-command-index files visibility note 拆分记忆.md](./336-2026-04-08-command-index%20files%20visibility%20note%20拆分记忆.md)
 
 ## 全量档案
 
