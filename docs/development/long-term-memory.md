@@ -4192,3 +4192,22 @@
 - Prompt 线的最新更硬句法也应继续写死：`84` 里“真正值钱的”不再写成抽象 `same-world contract`，而写成 later consumer 选下一步动作所需的世界定义、边界与继续资格已经被编译好；一句话总结也应继续固定为“Prompt 先替 later consumer 预付世界协商与边界重算成本，否则下一步动作就会掉回冷启动”。
 - `06` 的第二目录 residual 现在也应继续写死为：`## 1` 的八项只配叫“失效面下钻”，不能再作为总纲；`2.13` 也不该再长出独立的三线对称矩阵，只配把所有下钻收回到四问。后续若继续精修，优先删“苏格拉底式追问一/二/三”这类新 why 章节，把它们并成“第 1 问后的常见误判”。
 - 源码质量线的最新 micro residual 也应继续写死：`01` 不再列任何 evidence rung 名，只回答 repo path locator；`102` 继续压回 promotion / downgrade 判级页，只记录 `dependency honesty / temporal honesty` 风险，不再代答 why；`87` 则继续把高阶对象词收回 later-maintainer veto 这条 why-proof 命题，具体 truth plane / seam / authority next hop 统一回 `architecture/README`。
+- `2026-04-08` 这一轮根仓库阻塞又发生了新的漂移：`ff-only` 合并继续失败，但当前可见的未解决冲突主语已经换成 `userbook` 相关文件，而不再是前几批看到的 `security` 组。继续工作的稳定纪律仍是：把这类漂移只记成根仓库外部状态，不在 `mainloop` 内尝试处理；每批都重新检查，不复用上一批的阻塞文件清单。
+- 治理线入口的最新结构纪律也应继续写死：`10` 的文件名与 H1 现在都应直接对齐 `earliest unpaid expansion / repricing proof / lease checkpoint / cleanup`，不再把“四类被收费资源”摆在入口；对象类目、reject trio 与弱读回面继续只保留在 support card，而不再占高流量入口 noun 位。
+- `03` 的治理去魅与原则二现在也应继续写死成诊断环句法：删掉 mode、token 面板与审批界面后，治理线若还成立，就只需回答四问：最早 `unpaid expansion` 是什么、`repricing proof` 在哪、`lease checkpoint` 是否通过、旧 authority 是否已 cleanup；失败语义也不再按资产类型起步，而只按这条诊断环决定。
+- 治理入口命名的最新平衡纪律也应继续写死：相比把 `repricing proof / lease checkpoint / cleanup` 全塞进文件名，更稳的高流量入口名是 `最早 unpaid expansion、reject trio 与弱读回面`。这样既把第一问题从 taxonomy 拉回 diagnosis，又保留 support card 的可检索性；更细的 `repricing proof / lease checkpoint / cleanup` 继续留在正文与 support cards 里。
+- 源码质量线的最新 micro-cut 也应继续写死：`01` 的开头现在应压成两句即可，不再叠三层护栏；`102` 在 `change-risk record` 段只保留模板与 handoff，不再补“为什么更值钱”的 why 口气；`87` 则进一步写死成“没有 `change-risk record`，就还不配下源码质量判断”，字段/模板/handoff 全部回 `102`。
+- `06` 的最新结构纪律也应继续写死：这页现在只保留“四问 + 四桶下钻 + 四桶失真 + 五步持续审读”，不再长回“锚点墙 + 八类总表 + 失真百科 + 十张判据卡”；源码锚点只能作为 `first reject` 支撑，不再单列墙。
+- Prompt 前门与 why 句的最新压缩也应继续写死：`README / 03 / 84 / 06` 现在都应优先写“later consumer 在 `verify / delegate / resume / handoff` 时不必再重答谁定义世界、边界在哪、工具还能不能用”，而不是继续用“世界协商成本 / anti-renegotiation contract”这类抽象合同词站立。
+- 架构对象层的最新 speaking-rights 也应继续写死：`architecture/README` 只承接 `change-risk record + why-proof`，输出 `landing card + landing-card local gate`；若缺 why-proof，统一回 `87`，`navigation/README` 只做跨专题反查。
+- 治理入口的最新 diagnosis-first 纪律也应继续写死：`10` 的主诊断环现在只保留 `earliest unpaid expansion -> repricing proof -> lease checkpoint -> cleanup`；`reject trio` 只命名 seam，`escalation` 只决定下一跳 owner page，不能再混进 why / 自校页的主句法。
+- 治理 why 与安全入口的最新压缩也应继续写死：`85` 必须先说 canonical chain 只是四问在对象层的正式落点，而不是入口第一问；`security/README` 必须先说“最早 unpaid expansion 是什么，以及 signer / verdict ledger / cleanup authority 怎样让它不能免费续租”，不能再从“规则更严”“统一预算器”或“安全专题库存”起手。
+- `03` 上治理/省 token 相关标题的最新纪律也应继续写死：不要再让“安全 / 成本 / 体验”或“可恢复压缩”占 section subject；更稳的主语应是已定价工作集、合法外置、最早 `unpaid expansion`、`repricing proof / lease checkpoint / cleanup`。
+- 源码质量线最新 residual cleanup 也应继续写死：`01` 只做 locator，不再自判对象 authority；`102` 只保留判级条件与 `change-risk record`，不再 dispatch 到 `87 / architecture`；`87` 只保留 why-proof 三问，不再代发 handoff；`architecture/README` 只保留 `landing-card local gate` 这一个 canonical token。
+- 用户侧 tail-readback 的最新纪律也应继续写死：`risk/README` 不是新的 first-order intake；若还没在 `10` 定位最早 `unpaid expansion`，本页不开始。`product promise readback / reopen qualification / evidence binding` 只作为 post-cleanup readback 三分，而不是另一张入口流程图。
+- `playbooks/README` 的最新边界也应继续写死：只有当 `10 / security / risk` 已经把主语、读回与对象边界定住，`playbooks/` 才开始决定验收、回退与 reopen；执行手册不再反向承担 why、first reject 或对象定题。
+- Prompt 高流量页的最新压缩也应继续写死：`README / 03 / 84` 先写 later consumer 少重答了什么，再补 `same-world compiler`、`compiled world verdict` 这些解释词；不要再让 abstract contract 或术语 inventory 抢回主句。
+- README route-boundary 的最新纪律也应继续写死：`navigation` 只给条件式 route，不给 newcomer/value-prop；`risk` 只做 post-cleanup readback，不出 admit / recover / rollback / reopen 动词；`playbooks` 只出 `execution verdict`；`security` 与 `userbook` 根页都不再重建第一性原理 syllabus 或 why 改判。
+- `risk` 的最新命名纪律也应继续写死：根页优先保留 `product promise readback / reopen eligibility readback / evidence receipt binding` 这组三个尾部读回名词，不再在 README 里继续定义 signer threshold 或 execution dispatch；一旦问题改写成动作词，统一离场到 `playbooks/README`。
+- 安全与自校入口的最新压缩也应继续写死：`06` 不要再把 Prompt 自校写成 artifact 名称先行，先问 later consumer 是否还要重答世界定义、边界与工具资格；`security/README` 也只保留 signer / `verdict ledger` / `cleanup authority` 的机制分诊与离场条件，若没先在 `10` 定位 `earliest unpaid expansion`，安全首页不开始。
+- Prompt 前门的最新反术语化纪律也应继续写死：`README / 03 / 84` 要先写 skim reader 能观察到的失败态，再把 `same-world compiler / compiled world verdict / Authority-Boundary-Transcript-Lineage-Continuation` 放回解释层。若主句里先出现 contract 词、artifact 名或五轴公式，说明 later-consumer test 还没有真正站到前门。

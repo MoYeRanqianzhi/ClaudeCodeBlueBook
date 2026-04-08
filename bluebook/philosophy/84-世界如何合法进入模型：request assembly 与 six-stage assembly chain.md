@@ -27,28 +27,26 @@
 
 `84` 在蓝皮书里只固定一条因果律：
 
-- 只有当 `stable prefix / visibility pruning / delegated-context downgrade / continuation qualification` 被同一条 authority order 编译成 `compiled world verdict`，当前世界才算被合法编译进模型。
+- 只有 later consumer 在 `verify / delegate / tool choice / resume / handoff` 时都不用再重述现场、重划边界、重接消息血缘、重判继续资格，当前世界才算真的被合法编译进模型。
 
-真正成立的世界准入，是 runtime 先把 `compiled world verdict` 编译成一个可被多 consumer 复用的合法输入秩序；后来的 `verify / delegate / tool choice / resume / handoff` 因此不必重谈“现在是什么世界”。
-这种强感首先来自当前 turn 已继承同一份 `compiled world verdict`，模型不必先重建世界，只需在已裁定边界内选择动作。更直白地说，它预先付掉了后续 consumer 的世界协商成本。
+更准确地说，`stable prefix / visibility pruning / delegated-context downgrade / continuation qualification` 真正值钱，不是因为术语齐，而是因为它们把 `world-definition source / boundary / transcript lineage / continuation qualification` 预先编译成 later consumer 可直接继承的 verdict；正确下一步因此直接可选，而不是再开一轮冷启动协商。
 
-Prompt potency 真正值钱的地方，也不是 prompt prose 更强，而是四个制度动作同时成立：
+Prompt potency 真正值钱的地方，也不是 prompt prose 更强，而是 later consumer 少重答四件事：
 
-1. `stable prefix custody`
+1. 不重答世界定义
    - later consumer 继承的是已编译前缀，而不是自己补一套世界定义。
-2. `visibility pruning`
+2. 不重算边界与工具资格
    - 先裁可见面，再给行动权；模型不会先看见未定价、未定界的世界。
-3. `delegated-context downgrade`
+3. 不让 delegated context 越权成第二主语
    - delegated context 只能当 advisory surface，不能长成第二个 `world-definition source`。
-4. `lawful continuation`
+4. 不重判继续资格
    - `compact / fork / handoff / resume` 之后仍保住同一 `reject / continue verdict`，而不是靠重述现场续命。
 
-这里的“世界”不是抽象比喻，而是四件制度事实：
+把这里继续压短，later consumer 真正只在乎三件事：
 
-1. 哪一层有资格定义当前世界
-2. 哪些字节属于 stable prefix，哪些事实只能晚绑定
-3. `display transcript`、`protocol transcript` 与 `continuation object` 是否仍沿同一条 `message lineage` 投影
-4. `compact / fork / handoff` 之后谁仍有资格继续
+1. 现在到底谁在定义世界
+2. 边界内哪些动作和工具仍合法
+3. 哪些 transcript / lineage 仍绑定当前继续资格
 
 这条世界准入能力，首先来自：
 
@@ -68,7 +66,9 @@ Prompt potency 真正值钱的地方，也不是 prompt prose 更强，而是四
 
 ### 合法复数不是平行世界
 
-复数 surface 可以并存，但它们之所以仍算同一个 Prompt 世界，不是因为最后会被拼成一段更长文本，而是因为它们同时满足四个条件：
+多个 surface 只有在任何 consumer 都仍指回同一个 `world-definition source`、child 不能自立主语、失格 surface 会立刻降回 display / evidence 时，才算同一世界；否则每多一层 surface，`delegate / handoff` 就多一次权属清点、边界重算与工具资格重判。
+
+它们之所以仍算同一个 Prompt 世界，不是因为最后会被拼成一段更长文本，而是因为它们同时满足四个条件：
 
 1. `same lineage`
    - 都在同一条 `message lineage` 上取位。
@@ -87,24 +87,20 @@ Prompt potency 真正值钱的地方，也不是 prompt prose 更强，而是四
 
 这也意味着，`Continuation` 不是外另起的一段功能说明，而是 same-world test 落到时间轴之后的 continue verdict。
 
-更硬一点说，合法遗忘真正保护的也不是记忆密度，而是：
+更硬一点说，`compact` 真正要保住的不是摘要是否好看，而是 `resume / handoff` 之后不用再补世界定义、补边界、补继续资格，系统还能直接继续行动。
 
-- `reject / continue verdict` 在 compact 前后不改判
-
-如果继续把 lawful forgetting 再压成最短的制度句，它真正保留的也只该是：
-
-- compact 之后仍足以维持同一 `reject / continue verdict` 的最小事实
-
-能被忘掉的是叙事密度，不能被忘掉的是世界定义、边界与继续资格的裁决依据。
+如果继续把 lawful forgetting 压成最短制度句，它保留的也只该是：compact 之后仍足以维持同一 `reject / continue verdict` 的最小事实。能被忘掉的是叙事密度，不能被忘掉的是继续 verdict 的裁定依据。
 
 这也是为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到这种世界准入能力：他们抄到了说明文本，却没有抄到“世界已被编译、consumer 无需重谈”的制度体。
 更硬一点说，later consumer 仍可继承同一份已编译世界判决，不是因为某句 prompt 更会说服模型，而是因为世界定义权、消费边界与继续资格被同一条证据链持续见证；一旦任何路径需要重新定义“现在是什么世界”，下一步动作选择就会退回冷启动。真正该被复用的 therefore，不是某句著名措辞，而是上面四个制度动作能否同时成立。
 
-如果把这章继续压成最短公式，只保留一句：
+如果把这章继续压成最短公式，later consumer 真正只会先问三件事：
 
-- 只有同一条 `Authority -> Boundary -> Transcript -> Lineage -> Continuation` 仍能单源裁决谁在定义世界、谁在消费这份定义、谁在继续时重获资格，当前世界才算被合法编译进模型。
+1. 现在到底谁在定义世界。
+2. 边界内哪些动作和工具仍合法。
+3. `resume / handoff` 之后，哪些 transcript / lineage 仍绑定继续资格。
 
-这里的 `Authority / Boundary / Transcript / Lineage / Continuation` 也不是另一张 inventory；它们只是同一份 `continue-or-reject` 判决的五个裁定轴。
+这三问里只要有一问需要重答，就先按 same-world 失败处理。`Authority / Boundary / Transcript / Lineage / Continuation` 只是这三问在解释层的五个裁定轴，不该反过来抢主句。
 
 若要继续核对更细的 same-world evidence，也只做一件事：沿 `82` 与本页锚点检查 `stable prefix / visibility pruning / advisory downgrade / continuation object` 是否仍共同指向同一份 verdict。
 
@@ -248,4 +244,4 @@ Claude Code 更深的一层是：
 
 ## 7. 一句话总结
 
-Prompt 首先是替 later consumer 预付世界协商与边界重算成本的世界准入顺序；如果这一步没有先成立，后面的 Prompt 再完整，也只会把下一步动作留在冷启动里。
+Prompt 首先是替 later consumer 预付冷启动协商成本的世界准入顺序；如果这一步没有先成立，后面的 Prompt 再完整，也只会把下一步动作留在“先重谈世界、再决定动作”的高成本路径里。

@@ -5,20 +5,21 @@
 
 更硬一点说：
 
-- `playbooks/` 的职责不是解释对象链，而是对已经被承认的对象链出 verdict。
+- `playbooks/` 的职责不是解释对象链，而是对已经被承认的对象链出 `execution verdict`。
+- 更具体地说，只有当 `10 / security / risk` 已经把主语、读回与对象边界定住，`playbooks/` 才开始决定验收、回退与 reopen 顺序。
 
-这里也要先压住一个常见误读：`continuity` 不是第四类执行手册家族；它只是 Prompt `continue qualification`、治理 `continuation pricing` 与当前真相 `cleanup-before-resume` 在执行顺序上的共同时间轴。
+若你还在判母线、对象链或 `continuity` 到底是什么意思，先离开本目录；这些都还不是 execution question。
 
 ## 什么时候进来
 
 - 当你已经有正式对象定义，需要把它们写进接入、验收、修复或长期验证的执行顺序。
 - 当你需要的不再是“为什么这样设计”，而是“下一步该验什么、拒收什么、回退什么”。
-- 当你已经经过 `09 / 05 / 15 / 41` 的高阶前门，准备把对象链压成现场顺序、reject verdict 与 rollback 边界。
+- 当你已经经过 `10 / security / risk` 的边界判定，准备把对象链压成现场顺序、`execution verdict` 与 rollback 边界。
 - 当你需要把 later maintainer 的局部反对权转成正式拒收、回退与 reopen 顺序，而不再停在“看起来不对”的体感层。
 
-更稳一点说，`playbooks/` 也必须继承 shared first-answer order：先判母线与对象、再判 verdict、rollback 与 reopen；如果顺序倒过来，执行手册就会重新退回“按模板代替对象链”。
+更稳一点说，`playbooks/` 也必须继承 shared first-answer order：先确认母线、对象与用户侧 readback 都已定住，再判 `execution verdict`、rollback 与 reopen；如果顺序倒过来，执行手册就会重新退回“按模板代替对象链”。
 
-## 如果你只先判断一件事
+## 只在 verdict 已定后再选执行入口
 
 - 如果你只先判断“宿主现在可准入还是不可准入”，看 [29-Prompt宿主接入审读手册：message lineage、projection consumer、protocol transcript与continuation qualification排查](29-Prompt%E5%AE%BF%E4%B8%BB%E6%8E%A5%E5%85%A5%E5%AE%A1%E8%AF%BB%E6%89%8B%E5%86%8C%EF%BC%9A%E8%BE%93%E5%85%A5%E9%9D%A2%E3%80%81section%20breakdown%E3%80%81cache%20break%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7%E4%B8%8Econtinue%20qualification%E6%8E%92%E6%9F%A5.md)、[30-治理宿主接入审读手册：governance key、externalized truth chain、typed ask与continuation pricing排查](30-%E6%B2%BB%E7%90%86%E5%AE%BF%E4%B8%BB%E6%8E%A5%E5%85%A5%E5%AE%A1%E8%AF%BB%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20source%E3%80%81decision%20window%E3%80%81pending%20action%E4%B8%8Erollback%20object%E6%8E%92%E6%9F%A5.md)、[31-结构宿主接入审读手册：current-truth surface、per-host authority width、freshness gate与ghost capability证据排查](31-%E6%95%85%E9%9A%9C%E6%A8%A1%E5%9E%8B%E5%AE%BF%E4%B8%BB%E6%8E%A5%E5%85%A5%E5%AE%A1%E8%AF%BB%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20state%E3%80%81recovery%20boundary%E4%B8%8Eanti-zombie%E7%BB%93%E6%9E%9C%E9%9D%A2%E6%8E%92%E6%9F%A5.md)。
   - 失败信号：宿主仍在消费字符串、投影状态或恢复体感，而不是正式对象。

@@ -16,7 +16,7 @@
 - 这里说的 `局部可反对性` 不是“最后还能看懂”，而是拿不到作者时，later maintainer 仍能只凭局部对象与 seam 指出哪条 `event / snapshot / pointer / recovery asset` 在越权。
 - 因而 `event truth / current truth / display truth` 的对象化分工，以及 `writeEvent / reportState / reportMetadata` 这类通道怎样落到 writeback seam，也统一由本目录与 `60 / 84` 负责，不在 `87` 这类 why 页重发对象矩阵。
 - 这里的前置输入只有两件：`102` 已产出的 `change-risk record`，以及 `87` 已补完的 why-proof。
-- 本页输出只有两件：landing card，以及只在本页本地执行的 quality gate。
+- 本页输出也只有两件：landing card，以及只在本页执行的 `landing-card local gate`。
 
 ## 四个对象问题
 
@@ -45,7 +45,7 @@
 - `replay obligation` -> `writeback seam / first fallback`
 - `second-truth risk` -> `first fallback / unresolved authority`
 
-`landing card` 写完后，默认下一步不是立刻展开更多对象专题，而是先在当前链内过一遍 quality gate；这道 gate 直接复用 `87` 已经给出的三条 why-proof 命题，而不是再把 `87` 误读成后置验收页：
+`landing card` 写完后，默认下一步不是立刻展开更多对象专题，而是先在当前链内过一遍 `landing-card local gate`；`87` 只提供 why-proof 命题，本页只负责执行这道 `landing-card local gate`：
 
 1. 这里是否仍是 `合法复杂度中心`
 2. 这里是否仍只承认 `one writable present`
@@ -59,10 +59,10 @@
 - 当你需要把 Prompt、治理或当前真相保护继续压到运行时结构，而不是停在哲学判断、模板或排错层。
 - 当你准备判断 later maintainer 拿什么局部反对当前实现，而不想把问题退回目录观感或作者说明。
 
-## quality gate 通过后的对象展开
+## landing-card local gate 通过后的对象展开
 
 - [82-请求装配流水线：world entry / request assembly / six-stage assembly chain](82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md)
-  - 看 same-world contract 怎样落成 request assembly 对象。
+  - 看 same-world compiler 怎样落成 request assembly 对象。
 - [83-反扩张治理流水线：governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup](83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md)
   - 看治理秩序怎样落成定价对象与 choke point。
 - [60-恢复优先的双通道状态面：writeback、resume与reconnect一体化](60-恢复优先的双通道状态面：writeback、resume与reconnect一体化.md)
@@ -77,7 +77,7 @@
 - 本目录不负责直接给出 host-facing contract、字段 schema 与 consumer subset 判决。
 - 本目录也不负责替缺席镜像补 certainty；如果你需要把源码质量压成公开镜像证据梯度，去 `../guides/102`。
 - 本目录也不负责值班、验收、回退与长期 reopen 执行链。
-- 如果你还在问“为什么必须这样设计”或“第一条反证信号是什么”，先回 `../navigation/15` 与 `../navigation/41`。
+- 若缺 why-proof，统一回 `../philosophy/87`；`../navigation/README` 只做跨专题反查。
 
 更准确地说，`architecture/` 负责把对象链、chokepoint 与 current-truth writeback 说清，但不负责替 `playbooks/` 直接发 verdict，也不替 `philosophy/` 重判为什么必须如此。
 
