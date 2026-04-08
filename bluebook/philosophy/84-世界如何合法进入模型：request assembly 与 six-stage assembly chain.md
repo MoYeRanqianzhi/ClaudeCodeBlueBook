@@ -130,6 +130,8 @@ Prompt 线也因此有自己的 `local veto`：凡是不能独立 veto 世界定
 - 先把越位内容降回非主权层
 - 再停在 same-world failure verdict
 
+对 `handoff / compaction / resume` 而言，第一条 same-world 反证也不是摘要变短，而是 `summary / delegated context / display transcript` 开始越权代签 `continuation qualification`。一旦发生，先把越权 surface 降回 `projection`，再停在 `same-world failure verdict`；否则这就不是 continue，而是 renegotiation。
+
 ### first reject signal 比成功表述更值钱
 
 这条世界准入能力最先失稳时，第一条信号通常不是回答质量下降，而是世界定义权、展示边界与继续资格开始彼此脱钩。若这些失稳还不能在回答变差前被点名，那失去的也不是回答质感，而是这条世界准入顺序的先验反对权；这时更该先停在 same-world test 失败，而不是急着补更多 checklist。

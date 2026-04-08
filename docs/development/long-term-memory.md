@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-residuals-should-fail-fast-on-summary-usurpation live 记忆：
+  - `81 / 84 / 15` 现在应直接把 Prompt residual 收成快拒句：`narrative-only / forbidden-as-sole-witness` 一旦独自承担 continuation witness，就直接判 `continue qualification` 失效；`summary / delegated context / display transcript` 越权代签时，也一律先降回 `projection`
+  - 更稳的默认写法是：Prompt 线的 first reject 不是“故事变短”，而是更顺手的 surface 开始越权代签 `same-world / continue verdict`
 - 当前批次继续新增一条 public-governance-metrics-prove-boundary-first live 记忆：
   - `85` 现在应直接把官方工程文里的 `93%` approval 与 sandboxing `84%` prompt reduction 写成治理 why 的公开证据，而不只写成抽象的 approval fatigue 叙事
   - 更稳的默认写法是：成熟治理不是“更少 prompts”或“更严审查”二选一，而是先把 boundary 写成可承受的自由区，再把人工批准留给真正还能改价的动作
