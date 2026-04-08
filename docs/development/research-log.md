@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 Prompt 对象层结论：这轮没有再去补 `84` 的 why，而是把已经写死的 signer/precedence 纪律继续落到 `82`。本轮已把 `display transcript / control projection / continuation object` 越权代签 `protocol transcript` 明写成第一条 `local veto cue`，并把第一退回层写回 `protocol transcript + message lineage + section registry`。当前判断是，这一步让 `82` 第一次不只是在讲 projection consumer taxonomy，而是在给 later maintainer 一个对象层的 first reject 和 first retreat。
+- 本轮新的治理对象层结论：这轮也没有再去补 `85` 的 why，而是把 signer ceiling 落到 `83` 的 canonical chain。本轮已把 `managed settings -> permissions -> sandboxing -> auto-mode/classifier` 明写成 verdict 之前的 signer 铰链，把 `continuation consumer -> durable-transient cleanup / weak readback` 明写成结算之后的消费/回执层。当前判断是，这一步能明显减少 later consumer 把 `83` 读成 feature inventory，而更容易把它读成一条前后分明的 verdict hinge。
 - 本轮新的对象层结论：`Hilbert` 指出，真正还没显式落地的不是 landing card 字段本身，而是 `84` atlas 表和 landing card 列语法之间的映射。本轮已把 `forbidden substitute writer` 显式翻译成 `local veto cue`，并把最近的 `freshness / recovery / eviction` seam 显式翻译成 `first retreat layer`。当前判断是，这一步让 `84` 不再只是一张 current-truth atlas，而第一次和对象摘要卡共享同一套列语法。
 - 本轮新的 Prompt why 结论：`Archimedes` 指出，真正还没写死的不是“谁优先级更高”，而是同一组 scope 词在不同 surface 上根本不是同一种组合律。本轮已把这条纪律补进 `84`：`CLAUDE.md` 是拼接加载，settings 是覆盖链，subagents 更接近同名遮蔽，hooks 则是先合并再过 managed-only 与 runtime veto gate。当前判断是，这一句能明显减少 later consumer 把 `managed / user / project / local` 误读成一条平面 precedence 表的概率。
 - 本轮新的对象层结论：`Halley` 指出，landing card 字段本身已经够了，真正缺的是 operator artifact 进入对象层时的准入句。本轮已把这条纪律补进 `architecture/84`：公开 operator artifact 先只有 `surface candidate`，除非 signer、作用域与第一条 `local veto cue` 已足够清楚，否则 `84` 不再替它预填 `sole writer`。当前判断是，这一步让 `102` 的 `public artifact ceiling`、`architecture/README` 的 landing card 与 `84` 的 current-truth atlas 第一次真正接成同一条对象层协议。

@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-object-veto-maps-to-protocol-transcript live 记忆：
+  - `82` 现在应直接把 `display transcript / control projection / continuation object` 越权代签 `protocol transcript` 写成 Prompt 对象层的第一条 `local veto cue`
+  - 更稳的默认写法是：第一退回层先回 `protocol transcript + message lineage + section registry`
+- 当前批次继续新增一条 governance-object-hinge-before-and-after-verdict live 记忆：
+  - `83` 现在应直接把治理 canonical chain 写成对象层 signer 铰链：`managed settings -> permissions -> sandboxing -> auto-mode/classifier` 都在 verdict 之前，`continuation consumer -> durable-transient cleanup / weak readback` 都在结算之后
+  - 更稳的默认写法是：投影面、continue 入口或尾部 readback 一旦越权代签价格、继续资格或终局解释，就先回 `governance key / externalized truth chain / repricing seam`
 - 当前批次继续新增一条 forbidden-substitute-writer-maps-to-local-veto live 记忆：
   - `architecture/84` 现在应直接把 atlas 表里的 `forbidden substitute writer` 显式读成 `local veto cue`
   - 更稳的默认写法是：离它最近、能重新取回 sole writer 资格的 `freshness / recovery / eviction` seam，就是 `first retreat layer`
