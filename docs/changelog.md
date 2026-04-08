@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/{03-设计哲学.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更稳的二阶综合：Prompt 新增的 `consumer-class inheritance` why 现已只回灌到 `03` 的 Prompt 总句，作为设计内涵的压缩判断；治理新增的 `authority lease` why 则只回灌到 `06` 的治理自校句，作为更硬的总控检查项。这样 `03` 继续承接 design meaning，`06` 继续承接 audit protocol，不互相越位。
 - 继续更新 `bluebook/philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 Prompt 第一性原理：`84` 现在直接补出了“同一份 `world-entry object` 必须能被不同 consumer class 继承而不重新夺回世界主语”这条判断，明确说明 Prompt 真正先保护的不是某段 prompt 文本还能不能继续被用，而是模型、接手者、子代理与宿主侧消费者都只能继承同一份已裁定世界。
 - 继续更新 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的源码质量第一性原理：`87` 现在直接补出了“错误应先在低签字权层失败”的判断，明确要求 projection、恢复资产与 provisional claim 必须先于 present writeback 暴露失真，让 later maintainer 的第一条 veto 发生在降格层，而不是等当前真相已被写坏后才失败。本轮收尾复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态保持为 `main...origin/main`。
 - 继续更新 `bluebook/navigation/{README.md,41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更稳的源码质量 artifact-chain 纪律：`landing card` 继续保留在 `architecture/README` 作为局部对象摘要模板，但高层导航现已不再把它写成跨层 canonical rung；`navigation/41` 现已统一改写成 `object summary / local quality gate`，`navigation/README` 也把 `landing card` 降成对象摘要示例，而不是当前真相保护线的全局 token。

@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的二阶综合结论：在三条新增 why 都已落回 owner 页之后，本轮开始做 very small 的上游回灌，但不让总论页和自校页互相越位。并行 Agent 最终给出的更稳分工是：Prompt 的 `consumer-class inheritance` why 回灌到 `03`，因为它属于设计内涵压缩句；治理的 `authority lease` why 回灌到 `06`，因为它更像治理线该不该继续成立的总控检查项。当前判断是，这样回灌能让新增 why 被上游消费，但不会把 `03` 变成第二张 audit 页，也不会把 `06` 变成第二张 why 页。
 - 本轮新的 Prompt why 结论：并行 Agent 指出，Prompt 线还缺一条比 same-world continuity 更硬的第一性原理。本轮已把它补进 `84`：Prompt 真正先保护的不是“同一段 prompt 还能继续被用”，而是同一份 `world-entry object` 必须能被不同 consumer class 继承，而不重新夺回世界主语；模型、接手者、子代理与宿主侧消费者都只能消费同一份已裁定世界。当前判断是，这一句把 later consumer continuity、world-entry object 与 consumer inheritance 三条原先分散的判断真正收成了一条 why。
 - 本轮新的源码质量 why 结论：并行 Agent 指出，源码质量线还缺一条比 `dependency honesty / temporal honesty` 更硬的 failure-first 原理。本轮已把它补进 `87`：成熟源码质量不只要求只有一个可写现在，还要求错误先在低签字权层失败，projection、恢复资产与 provisional claim 必须先于 present writeback 暴露失真，让 later maintainer 的第一条 veto 发生在降格层，而不是发生在当前真相已被改坏之后。当前判断是，这一句把 `failure semantics`、`temporal honesty` 与 `later-maintainer veto` 三条分散判断真正收成了一条 why。
 - 本轮新的根仓同步结论：本轮起手 `git fetch origin main` 成功、`git merge --ff-only origin/main` 返回 `Already up to date.`；本轮最终复核根仓 `/home/mo/m/projects/cc/analysis` 时，`git status --short --branch` 仍为 `main...origin/main`。本轮未在根仓处理任何文件，正文与提交继续只在 `mainloop` 内完成。

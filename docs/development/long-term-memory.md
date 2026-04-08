@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 second-order-why-synthesis-live 记忆：
+  - Prompt 新增 why 更稳的回灌页是 `03`：总论页可以合法承接“consumer-class inheritance”作为设计内涵压缩句
+  - 治理新增 why 更稳的回灌页是 `06`：自校页可以合法承接“authority lease 是否仍闭合”作为更硬的治理检查项
+  - 更稳的默认分工是：`03` 继续负责 why 的二阶综合，`06` 继续负责 audit protocol 的二阶综合
 - 当前批次继续新增一条 prompt-consumer-class-inheritance live 记忆：
   - `84` 现在应直接承担一句更硬的 Prompt 第一性原理：同一份 `world-entry object` 必须能被不同 consumer class 继承，而不重新夺回世界主语
   - 更稳的默认写法是：模型、接手者、子代理与宿主侧消费者都只能消费同一份已裁定世界；谁若只能靠摘要、局部投影或补写 prompt 才能继续，失败的就不只是 continuity，而是 consumer-class inheritance 已经失真
