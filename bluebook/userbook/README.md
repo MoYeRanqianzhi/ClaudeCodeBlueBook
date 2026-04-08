@@ -264,7 +264,7 @@
   [05-控制面深挖/167-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata 与 RemoteIO：为什么 CCR v2 的 metadata readback 不是 observer metadata 的同一种本地消费合同.md](./05-控制面深挖/167-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata%20与%20RemoteIO：为什么%20CCR%20v2%20的%20metadata%20readback%20不是%20observer%20metadata%20的同一种本地消费合同.md)
 - 想先把 `168-179` 读成“`168` 是邻接 thickness 轴，`169` 再分出 stable source、`170→171` 的 headless source 分支，以及 `172` 起步并在 `174` 区域下长出 `175/176/177/178→179` 的 bridge create-context 子树”，而不是线性十二连：
   [05-控制面深挖/218-headless source、bridge authority 与 create-context 子树：为什么 168-179 不是线性十二连.md](./05-控制面深挖/218-headless%20source、bridge%20authority%20与%20create-context%20子树：为什么%20168-179%20不是线性十二连.md)
-- 想先把 `180-190` 读成“`179→180` 的 teleport runtime、model 的 ledger trunk 与 selection/allowlist trunk，以及 `176→181→183→186→189→190` 的 bridge birth/hydrate/write 线”，而不是线性十一连：
+- 想先把 `180-190` 读成“`179→180` 的 teleport runtime、model 的 ledger trunk 与 selection/allowlist trunk，以及从 `176→181→183→186→189→190` 的 outbound write 主干继续长到 `191→{192,193→206}` 的 bridge 后继线”，而不是线性十一连：
   [05-控制面深挖/219-teleport、model 与 bridge 分支：为什么 180-190 不是线性十一连.md](./05-控制面深挖/219-teleport、model%20与%20bridge%20分支：为什么%20180-190%20不是线性十一连.md)
 - 想只顺着 model 线读 `182/184/185/187/188`，先分 `182` 的 ledger trunk 与 `184` 的 resolution trunk，再顺着 `185 -> 187 -> 188` 读 source / admission / surface；这条线继续挂在 `219` 下面，不另起独立范围页：
   [05-控制面深挖/219-teleport、model 与 bridge 分支：为什么 180-190 不是线性十一连.md](./05-控制面深挖/219-teleport、model%20与%20bridge%20分支：为什么%20180-190%20不是线性十一连.md)
