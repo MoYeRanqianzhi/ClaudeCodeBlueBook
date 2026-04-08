@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 03-governance-source-quality-tail-minify live 记忆：
+  - `03` 的治理与源码质量尾段现在也继续只保留最短自校，不再保留已被 `85 / 87 / 06` 吸收的影子总论措辞
+  - 更稳的默认写法是：第 29 节只保留“若安全与省 token 被写成两套优化，它就已退回治理投影层”；第 34 节只保留“尺寸治理只是后验投影，不是源码质量 first test”
+- 最新根仓同步记忆（2026-04-08，本批次起手 live 快照）继续保持外部阻塞态：本轮起手 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 已被根仓未解决冲突直接阻断；当前根仓 `/home/mo/m/projects/cc/analysis` 为 `main...origin/main [ahead 37]`。后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
 - 当前批次继续新增一条 architecture-owner-over-index-commentary live 记忆：
   - `architecture/README` 现在应固定成更纯的 object owner 页：保留对象四问、`landing card` 与最小专题索引，但不再在标题后重复解释链接已经说明的对象面
   - 更稳的默认写法是：保留边界链接和对象下潜链接本身，删掉“看 X 如何落成 Y”的重复说明句；对象 owner 页值钱的是 object summary，不是轻书架口气

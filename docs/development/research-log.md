@@ -7,6 +7,11 @@
 - 本轮新的技术结论：这轮新增证据继续把 stronger-request cleanup 的命题往时间轴再推进一格：对象就绪之后，仍然要面对重试预算、降级、修池、停表与 operator control 这些 continuity 约束；ready truth 本身并不能自动担保 continuity truth。
 - 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=364 / appendix=347 / source-notes=214`；本轮继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 
+- 本轮新的 `03` 治理/源码质量结论：在 Prompt residual 收口之后，又继续把 `03` 尾段里最后两处治理/源码质量影子总论压薄了。第 29 节不再保留“统一预算器口号”这类已被 why owner 页吸收的措辞，只剩“若安全与省 token 被写成两套优化，它就已退回治理投影层”；第 34 节也只剩“尺寸治理只是后验投影，不是源码质量 first test”。当前判断是，这两节现在终于更像总论页里的最小自校，而不是 why 页的影子复写。
+- 本轮新的根仓同步结论：本轮起手 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 已被根仓未解决冲突直接阻断；复核根仓 `/home/mo/m/projects/cc/analysis` 时，当前为 `main...origin/main [ahead 37]`。该阻断发生在 `.worktrees/mainloop` 之外；本轮继续只在 `mainloop` 内推进与提交。
+- 本轮新的 `architecture` 结论：并行 Agent 明确指出，当前更值钱的不是再改 `03` 一两句 residual，而是把 `architecture/README` 再从“对象摘要 + 轻库存解释”压回纯 object owner 页。本轮已按这个方向继续收口：前言重复被压平，`landing card` 的解释层只留一条边界句，对象专题索引保留最小链接集合，但删掉每条链接后面重复标题的说明。当前判断是，`architecture/README` 还值得继续做去库存，但已经不值得再改 speaking-right。
+- 本轮新的根仓同步结论：本轮起手 `git fetch origin main` 成功、`git merge --ff-only origin/main` 返回 `Already up to date.`；但收尾再次复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态已外漂为 `main...origin/main [ahead 30]`，并伴随 `UU bluebook/security/README.md`、`UU bluebook/security/source-notes/README.md`、`UU docs/development/research-log.md` 等未解决冲突。该漂移发生在 `.worktrees/mainloop` 之外；本轮所有正文与提交仍严格只在 `mainloop` 内完成。
+
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `357-362`，把附录推进到 `341-346`，把源码剖面推进到 `208-213`；链路从 `stronger-request cleanup-tombstone-governance` 一直推进到 `stronger-request cleanup-readiness-governance`，说明 stronger-request cleanup 已经从“旧对象怎样留下痕迹、怎样回来”继续推进到“回来后它还算不算被重新授权、重新配置、重新激活并已经就绪”。
 - 本轮新的机制证据结论：新增 `208-213` 继续把 stronger-request cleanup 的后段边界压硬。`208` 把 `tombstone messages / .orphaned_at / migration timestamps` 压成墓碑治理边界；`209` 把 `removeOrphanedAtMarker / refreshActivePlugins / copyPlanForResume` 压成复活治理边界；`210` 把 `deletePluginOptions / setPluginEnabledOp / copyPlanForFork` 压成再赋权治理边界；`211` 把 `savePluginOptions / saveMcpServerUserConfig / PluginOptionsFlow` 压成重配置治理边界；`212` 把 `refreshActivePlugins / reload-plugins / refreshPluginState` 压成重新激活治理边界；`213` 再把 `pluginReconnectKey / MCPServerConnection / ReadMcpResourceTool` 压成就绪治理边界。
 - 本轮新的技术结论：这批新增证据继续证明 `会留墓碑` 不等于 `会让它回来`，`会回来` 不等于 `还是原来那个被授权的对象`，`配置写好了` 不等于 `已经重新生效`，`重新激活` 也不等于 `已经就绪`。
