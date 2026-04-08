@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 public-artifacts-need-effect-ceilings live 记忆：
+  - `84 / 87 / 102` 现在应直接把 public artifact 的先进性写成 `effect ceiling` 是否公开写死，而不只写成 artifact 是否存在
+  - 更稳的默认写法是：managed settings 是否最高且不可覆盖、`CLAUDE.md` / auto memory 是否只配当 context、subagents 是否独立 context/permissions、async hooks 是否无权回头阻断，若答不清就继续停在 `public artifact ceiling`
 - 当前批次继续新增一条 public-artifact-protocol-is-visible-advancedness live 记忆：
   - `102 / 03` 现在应直接把 `public artifact ceiling / downgrade / gap note / change-risk` 读成 later maintainer 可继承的记录协议；operator artifact 若写不清层级、作用域与阻断权限，就只配停在 `public artifact ceiling`
   - 更稳的默认写法是：源码质量先进性不先暴露“能做什么”，而先暴露“何时必须降格、谁能先拒收、还有哪些 authority 仍未解决”
