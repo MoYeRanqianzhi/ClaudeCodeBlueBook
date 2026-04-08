@@ -2,6 +2,16 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `380`、把附录推进到 `364`、把源码剖面推进到 `231`；链路从 `stronger-request cleanup-retention-enforcement-honesty-governance` 继续推进到 `stronger-request cleanup-isolation-governance`，说明 stronger-request cleanup 已进一步进入“系统更诚实地说明自己做到哪一步”与“destructive path 是否已经被证明不会误伤 live peer”之间的治理分层。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=381 / appendix=364 / source-notes=231`。当前唯一 open question 已继续前推到 `stronger-request cleanup-constitution-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `379`、把附录推进到 `363`、把源码剖面推进到 `230`；链路从 `stronger-request cleanup-retention-governance` 继续推进到 `stronger-request cleanup-retention-enforcement-honesty-governance`，说明 stronger-request cleanup 已进一步进入“本来该保留多久”与“系统是否已经诚实说明自己做到哪一步”之间的治理分层。
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `378`、把附录推进到 `362`、把源码剖面推进到 `229`；链路从 `stronger-request cleanup-irreversible-erasure-governance` 继续推进到 `stronger-request cleanup-retention-governance`，说明 stronger-request cleanup 已进一步进入“现在能不能删”与“本来应不应该现在删”之间的治理分层。
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `377`、把附录推进到 `361`、把源码剖面推进到 `228`；链路从 `stronger-request cleanup-audit-close-governance` 继续推进到 `stronger-request cleanup-irreversible-erasure-governance`，说明 stronger-request cleanup 已进一步进入“已经离开证据观看面”与“承载它的 carrier 是否已真正被摧毁”之间的治理分层。
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `376`、把附录推进到 `360`、把源码剖面推进到 `227`；链路从 `stronger-request cleanup-archive-close-governance` 继续推进到 `stronger-request cleanup-audit-close-governance`，说明 stronger-request cleanup 已进一步进入“已经退出当前活跃秩序”与“是否也已退出未来可追索的证据世界”之间的治理分层。
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `375`、把附录推进到 `359`、把源码剖面推进到 `226`；链路从 `stronger-request cleanup-liability-release-governance` 继续推进到 `stronger-request cleanup-archive-close-governance`，说明 stronger-request cleanup 已进一步进入“系统是否已不再欠旧回音责任”与“旧回音是否已经从当前世界的活跃位置撤下”之间的治理分层。
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `374`、把附录推进到 `358`、把源码剖面推进到 `225`；链路从 `stronger-request cleanup-forgetting-governance` 继续推进到 `stronger-request cleanup-liability-release-governance`，说明 stronger-request cleanup 已进一步进入“旧身份已开始安全淡出”与“系统是否已对旧回音免责”之间的治理分层。
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `373`、把附录推进到 `357`、把源码剖面推进到 `224`；链路从 `stronger-request cleanup-finality-governance` 继续推进到 `stronger-request cleanup-forgetting-governance`，说明 stronger-request cleanup 已进一步进入“以后回来仍然成立”与“什么时候已经安全到可以忘掉相关旧身份”之间的治理分层。
+
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `371`、把附录推进到 `355`、把源码剖面推进到 `222`；链路从 `stronger-request cleanup-continuation-governance` 继续推进到 `stronger-request cleanup-completion-governance`，说明 stronger-request cleanup 已进一步进入“旧动作已经回到因果链”与“这条旧动作现在究竟有没有被结案”之间的治理分层。
 - 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=372 / appendix=355 / source-notes=222`；本轮开始前 fresh 复核根仓库，结果为 `main...origin/main = 0 0` 与 `## main...origin/main`，`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`。当前唯一 open question 已继续前推到 `stronger-request cleanup-finality-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 

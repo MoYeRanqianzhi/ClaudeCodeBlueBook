@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 355 篇速查文档。
+`appendix/` 当前包含 364 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 附录层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责核对字段、矩阵与速查对象，不额外签 signer / verdict。
 
@@ -723,6 +723,33 @@
 - `355`
   载体家族强请求清理续打治理与强请求清理完成治理分层。
   入口：[355-安全载体家族强请求清理续打治理与强请求清理完成治理分层速查表：could-not-complete、completed progress、result settlement与governor question](355-安全载体家族强请求清理续打治理与强请求清理完成治理分层速查表：could-not-complete、completed progress、result settlement与governor question.md)。
+- `356`
+  载体家族强请求清理完成治理与强请求清理终局治理分层。
+  入口：[356-安全载体家族强请求清理完成治理与强请求清理终局治理分层速查表：tool_result、files_persisted、idle与governor question](356-安全载体家族强请求清理完成治理与强请求清理终局治理分层速查表：tool_result、files_persisted、idle与governor question.md)。
+- `357`
+  载体家族强请求清理终局治理与强请求清理遗忘治理分层。
+  入口：[357-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层速查表：finality scope、forgetting gate、retained memory与governor question](357-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层速查表：finality scope、forgetting gate、retained memory与governor question.md)。
+- `358`
+  载体家族强请求清理遗忘治理与强请求清理免责释放治理分层。
+  入口：[358-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层速查表：forgetting gate、liability-release gate、compensate-or-refuse与governor question](358-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层速查表：forgetting gate、liability-release gate、compensate-or-refuse与governor question.md)。
+- `359`
+  载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层。
+  入口：[359-安全载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层速查表：liability-release decision、archive-close surface、positive control、cleanup archive gap与governor question](359-安全载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层速查表：liability-release decision、archive-close surface、positive control、cleanup archive gap与governor question.md)。
+- `360`
+  载体家族强请求清理归档关闭治理与强请求清理审计关闭治理分层。
+  入口：[360-安全载体家族强请求清理归档关闭治理与强请求清理审计关闭治理分层速查表：replay surface、debug trace、diagnostics与governor question](360-安全载体家族强请求清理归档关闭治理与强请求清理审计关闭治理分层速查表：replay surface、debug trace、diagnostics与governor question.md)。
+- `361`
+  载体家族强请求清理审计关闭治理与强请求清理不可逆擦除治理分层。
+  入口：[361-安全载体家族强请求清理审计关闭治理与强请求清理不可逆擦除治理分层速查表：audit-close surface、irreversible-erasure surface、carrier destruction与governor question](361-安全载体家族强请求清理审计关闭治理与强请求清理不可逆擦除治理分层速查表：audit-close surface、irreversible-erasure surface、carrier destruction与governor question.md)。
+- `362`
+  载体家族强请求清理不可逆擦除治理与强请求清理保留期治理分层。
+  入口：[362-安全载体家族强请求清理不可逆擦除治理与强请求清理保留期治理分层速查表：time law、validation veto、admission gate与coverage gap](362-安全载体家族强请求清理不可逆擦除治理与强请求清理保留期治理分层速查表：time law、validation veto、admission gate与coverage gap.md)。
+- `363`
+  载体家族强请求清理保留期治理与强请求清理保留期执行诚实性治理分层。
+  入口：[363-安全载体家族强请求清理保留期治理与强请求清理保留期执行诚实性治理分层速查表：surface、declared scope、runtime truth与honesty gap](363-安全载体家族强请求清理保留期治理与强请求清理保留期执行诚实性治理分层速查表：surface、declared scope、runtime truth与honesty gap.md)。
+- `364`
+  载体家族强请求清理保留期执行诚实性治理与强请求清理隔离治理分层。
+  入口：[364-安全载体家族强请求清理保留期执行诚实性治理与强请求清理隔离治理分层速查表：surface、honesty answer、isolation question、positive control与gap](364-安全载体家族强请求清理保留期执行诚实性治理与强请求清理隔离治理分层速查表：surface、honesty answer、isolation question、positive control与gap.md)。
 
 ## 怎么配合主线读
 
