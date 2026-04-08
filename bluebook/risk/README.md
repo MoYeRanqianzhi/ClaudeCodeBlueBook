@@ -17,7 +17,7 @@
 
 - 风控不是第二套安全规则；它只解释 `product promise readback / reopen qualification / evidence binding` 这三类用户侧对象。治理机制 speaking right 仍回 `10 -> philosophy/85 -> philosophy/61 -> security`。
 
-如果你只缺治理收费链的一屏速记，而不是用户侧读回对象的差异，先回 [../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；`risk/` 只保留用户侧读法与恢复资格。
+如果你只缺治理收费链的一屏速记，而不是用户侧读回对象的差异，先回 [../10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；`risk/` 只保留用户侧读法与恢复资格。
 
 如果把风控入口判定压成最短顺序，也只剩三步：
 

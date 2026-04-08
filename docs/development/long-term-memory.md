@@ -4192,3 +4192,7 @@
 - Prompt 线的最新更硬句法也应继续写死：`84` 里“真正值钱的”不再写成抽象 `same-world contract`，而写成 later consumer 选下一步动作所需的世界定义、边界与继续资格已经被编译好；一句话总结也应继续固定为“Prompt 先替 later consumer 预付世界协商与边界重算成本，否则下一步动作就会掉回冷启动”。
 - `06` 的第二目录 residual 现在也应继续写死为：`## 1` 的八项只配叫“失效面下钻”，不能再作为总纲；`2.13` 也不该再长出独立的三线对称矩阵，只配把所有下钻收回到四问。后续若继续精修，优先删“苏格拉底式追问一/二/三”这类新 why 章节，把它们并成“第 1 问后的常见误判”。
 - 源码质量线的最新 micro residual 也应继续写死：`01` 不再列任何 evidence rung 名，只回答 repo path locator；`102` 继续压回 promotion / downgrade 判级页，只记录 `dependency honesty / temporal honesty` 风险，不再代答 why；`87` 则继续把高阶对象词收回 later-maintainer veto 这条 why-proof 命题，具体 truth plane / seam / authority next hop 统一回 `architecture/README`。
+- `2026-04-08` 这一轮根仓库阻塞又发生了新的漂移：`ff-only` 合并继续失败，但当前可见的未解决冲突主语已经换成 `userbook` 相关文件，而不再是前几批看到的 `security` 组。继续工作的稳定纪律仍是：把这类漂移只记成根仓库外部状态，不在 `mainloop` 内尝试处理；每批都重新检查，不复用上一批的阻塞文件清单。
+- 治理线入口的最新结构纪律也应继续写死：`10` 的文件名与 H1 现在都应直接对齐 `earliest unpaid expansion / repricing proof / lease checkpoint / cleanup`，不再把“四类被收费资源”摆在入口；对象类目、reject trio 与弱读回面继续只保留在 support card，而不再占高流量入口 noun 位。
+- `03` 的治理去魅与原则二现在也应继续写死成诊断环句法：删掉 mode、token 面板与审批界面后，治理线若还成立，就只需回答四问：最早 `unpaid expansion` 是什么、`repricing proof` 在哪、`lease checkpoint` 是否通过、旧 authority 是否已 cleanup；失败语义也不再按资产类型起步，而只按这条诊断环决定。
+- 治理入口命名的最新平衡纪律也应继续写死：相比把 `repricing proof / lease checkpoint / cleanup` 全塞进文件名，更稳的高流量入口名是 `最早 unpaid expansion、reject trio 与弱读回面`。这样既把第一问题从 taxonomy 拉回 diagnosis，又保留 support card 的可检索性；更细的 `repricing proof / lease checkpoint / cleanup` 继续留在正文与 support cards 里。

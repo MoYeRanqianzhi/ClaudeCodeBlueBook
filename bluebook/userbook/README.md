@@ -10,7 +10,7 @@
 2. 扩张或权限判断不要先看弹窗、`status`、`usage` 或继续入口；先看这次动作、可见性或继续请求有没有被当前控制面准入。
 3. 若问题已经是“为什么这里会省 token / 为什么要 `Later` / `Outside`”，先回 `10 -> philosophy/85 -> philosophy/61` 固定 why；要看 signer / cleanup / mechanism 时进 `security/README`，要看用户侧恢复与 reopen 时进 `risk/README`，要看现场执行时进 `playbooks/README`。
 
-如果你只缺治理收费链的一屏速记，而不是具体控制面下潜，先回 [../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；userbook 根入口只保留问题分型、用户侧最小顺序与二跳。
+如果你只缺治理收费链的一屏速记，而不是具体控制面下潜，先回 [../10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；userbook 根入口只保留问题分型、用户侧最小顺序与二跳。
 
 这里也只先记三条边界：
 
