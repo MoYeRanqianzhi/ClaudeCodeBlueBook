@@ -80,7 +80,7 @@
 所以当公开镜像里出现 `resume path / snapshot / pointer / archive / adapter replay` 这些 continuity 线索时，更稳的默认动作不是宣布“恢复机制很成熟”，而是先问：
 
 1. 它们只是 `recovery asset` 证据，还是已经足够支持 `current-truth surface candidate`。
-2. 它们有没有越位成 present truth signer。
+2. 它们有没有越位成当前写权 claim。
 3. 它们是否反而暴露了 `stale writer / stale snapshot / stale capability` 这类 temporal honesty 缺口。
 
 这七层必须严格分开。
@@ -172,17 +172,17 @@ registry 才回答：
 
 不能让两者互相替代。
 
-## 4. 第三级：锁定 current-truth surface 候选
+## 4. 第三级：判断 current-truth claim 是否只能保留 candidate
 
 contract 和 registry 都还不够。
 
 真正会决定源码质量判断稳定性的，是：
 
-- 当前谁有权宣布 present truth
+- 当前这份 claim 有没有足够可见证据支持 promotion
 
-这里的 `current-truth surface` 不是谁更重要，而是当前哪条 surface 被允许写当前真相。对象层 authority 证据在本页只作为判级触发条件，不在这里代行对象解释；若这些 object-level 证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate`，并同步附一条 unresolved-authority note。
+这里的 `current-truth surface` 不是在本页回答“谁在写现在”，而是在判断公开镜像里的可见证据是否已经足够支撑 `current-truth surface` claim。若这些 object-level 证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate`，并同步附一条 unresolved-authority note。
 
-典型信号只在证明“这里可能是 authority candidate”，不在本页直接升级成对象层 verdict。
+典型信号只在证明“这里可能支持 current-truth claim”，不在本页直接升级成对象层 verdict。
 
 如果这一层没有先锁定，你就很容易从：
 
@@ -195,7 +195,7 @@ contract 和 registry 都还不够。
 
 而 Claude Code 式的成熟度，正好体现在：
 
-- 它会主动把权威入口暴露出来
+- 它会主动暴露更接近权威 claim 的可见证据
 
 ## 5. 第四级：把 consumer subset 从协议全集里剥出来
 
@@ -336,16 +336,18 @@ gap discipline 的价值不是“保守一点”，而是：
 
 更稳的记录模板至少应包含下面几列：
 
-| change-risk surface | protected invariant | minimum visible evidence | common misread | replay obligation | second-truth risk |
+| change-risk surface | protected invariant | minimum visible evidence | common misread | downgrade note | unresolved-authority note |
 |---|---|---|---|---|---|
-| `<surface>` | `<what it protects>` | `<authoritative proof>` | `<usual wrong reading>` | `<what must be replayed before changing>` | `<which stale world returns if broken>` |
+| `<surface>` | `<what it protects>` | `<authoritative proof>` | `<usual wrong reading>` | `<why this stays provisional>` | `<what promotion still lacks>` |
 
 更短地说，这页真正要强迫 later maintainer 先回答的是：
 
 1. 这份 change-risk record 该长什么样。
 2. 哪些 gap 必须显式保留。
-3. 哪些 replay obligation 必须先完成。
-4. 哪些 second-truth risk 必须先点名。
+3. 为什么当前判断仍要降格。
+4. 哪些 authority 缺口必须继续显式保留。
+
+对象层若还需要继续写 `writeback seam / first fallback / local veto cue`，统一留给 `architecture/README`；`102` 不代写对象摘要。
 
 ## 11. 苏格拉底式检查清单
 

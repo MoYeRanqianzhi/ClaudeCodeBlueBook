@@ -4225,3 +4225,5 @@
 - 自校页的长期纪律也因此更明确：`06` 只配保留“四问 + 最小回退 + 何时退出到对象层”，不配再长出对象桶位、源码簇或阅读清单。一旦它重新开始说“先看哪些文件/哪些对象”，它就又在从 self-audit 滑回 second-hop atlas。
 - 治理 why 页也再固定一条边界：`85` 只回答“为什么 unpaid expansion 必须被定价”，不再承担 visible noun 对照表、长串机制巡览或执行接口翻译。只要 why 页开始逐项解释 `allow / ask / deny / compact / halt / handoff` 映射到哪条 chain，它就在从 why-proof 滑回机制导览。
 - `playbooks/README` 的稳定边界也应继续写死：它可以给扁平手册索引，但不该再把 admission、repair、verification 重新包装成首页场景卡。执行 owner 页一旦在 README 里替读者预分场景，就是在重做 second-hop syllabus。
+- `2026-04-08` 的源码质量线 speaking-rights 也应再固定一条：`102` 只判断 evidence 是否足以让 current-truth claim 维持 candidate 或 promotion，不回答“谁在写现在”；`01` 只回答“找哪类代码先看哪里”，不回答“谁是首落点”；`87` 只回答为什么必须保有 later-maintainer veto，不负责第一退回层；`architecture/README` 的 `landing card` 只做 object summary，不重编码 evidence ladder 字段。
+- `navigation/README` 的长期边界也因此更硬：它只配按 artifact noun 做单跳路由，不再摆稳定节点书架、reading map 或第二层索引。只要 `navigation` 又开始列“缺 reading map 时来这里”这类句子，就说明它在从 artifact-gap 反查滑回第二前门。
