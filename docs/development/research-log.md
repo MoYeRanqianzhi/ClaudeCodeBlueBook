@@ -7803,3 +7803,5 @@
 - 这轮苏格拉底式自审得到的额外结论也值得记住：如果一个“更深分析”提案只是在把重复批准、重复说明、重复回放包装成更谨慎，它并没有提高制度成熟度，只是在扩大 later consumer 的代签面；如果一个“源码先进性”判断只暴露 extension seam，不暴露哪些工件永远不配升级成 signer/current-truth writer，它也还没有把 later-maintainer veto 真正写进结构。
 - `2026-04-08` 随后又落了一批更窄的治理边界残差，只动 `10 / 61 / security/README / guides/100`。这批真正补的不是新对象，而是更硬的分流纪律：哪些 surface 永远只配回单、哪些 surface 只是 boundary custody、哪些设置/allow 规则一旦越过 signer ceiling 就该直接按 `authority leak` 处理。
 - 更具体地说，这批把 settings diff、hook review、status snapshot 与 host replay 全部收回 `weak readback`；把重复 ask、无增益 classifier 与默认重试明确改写成“最早 unpaid expansion 已转移到审批面与判断面”；把 `sandboxing` 从“可能的第四类安全问题”收回 signer 起租后的边界看管；也把 project/local settings 与 repo-authored allow rules 偷签 `governance key` 的情形压成 `guides/100` 里的 first-principles 红线。
+- `2026-04-08` 接着又收了一个更窄的 Prompt 效力批次，只动 `06 / 84 / 81 / 15`。这一刀没有再去讲 same-world 的定义本身，而是继续往 consumer-visible 收益收：为什么 Claude Code 的 prompt 看起来“有魔力”，其实是因为 runtime 先替 later consumer 删掉了大量冷启动动作搜索成本。
+- 因而这批的正文动作也都很克制：`06` 把 Prompt 自校压成“接手者是否还得重新搜索现场与动作空间”；`84` 把世界准入能力的收益明确写成“当前、下一步、接手后都活在同一个现场，并且不必重新枚举候选动作”；`81` 把工具 ABI / 输出法 / 用户可见面写成共同压缩下一步动作空间；`15` 则把“答不出删掉了哪段动作搜索”的分析直接降格成配置库存，而不是制度问题。

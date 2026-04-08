@@ -4572,3 +4572,5 @@
 - `2026-04-08` 治理线还应继续固定一条更细的弱读回面纪律：settings diff、hook review、status snapshot 与 host replay 这类 surface 只配回单，不配回判。只要它们不能独立补齐 `repricing proof / lease checkpoint / cleanup`，就必须继续留在 `weak readback / tail evidence` 层，不得在尾链补签 continue、重试或 reopen 资格。
 - `security/README` 的三分法也应继续记死：`sandboxing` 不是第四类 ambiguity，而是 signer 已起租后的 boundary custody；`async hook / weak readback / host replay` 若开始改写 allow、continue 或 cleanup 结论，应先回 `ledger / cleanup authority ambiguity`，不另起安全主线。
 - `guides/100` 的治理红线也应继续具体化：若 project/local settings 还能静默开启高风险自动化，或 repo-authored allow rules 还能替 managed deny / policy ceiling 改价，就应先按 `authority leak` 处理，而不是继续把问题写成 ask 体验优化。
+- `2026-04-08` Prompt 线还应继续固定一个更可观察的收益定义：Claude Code prompt 的效力不只是在删掉世界重谈，也是在删掉 later consumer 的冷启动动作搜索成本。若接手者仍要先枚举候选世界与候选动作，才能知道下一步做什么，那么 same-world 即使文面仍顺也已失效。
+- `81 / 84 / 15` 的长期分工也因此更硬：`81` 解释工具 ABI、输出法与用户可见面如何共同把下一步动作空间压成少数已授权分支； `84` 解释为什么同一份 `world-entry object` 能替 later consumer 省掉动作枚举； `15` 则只保留失稳前自检，追问一段“Prompt 很强”的分析是否真的指出删掉了哪段冷启动动作搜索，而不是重新罗列 artifact 库存。

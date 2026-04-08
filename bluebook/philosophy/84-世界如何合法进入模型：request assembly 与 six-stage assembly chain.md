@@ -119,6 +119,7 @@ Prompt 线也因此有自己的 `local veto`：凡是不能独立 veto 世界定
 而是：
 
 - 当前、下一步、接手后都还活在同一个现场
+- 以及 later consumer 不必重新枚举候选动作，才能把下一步压回少数合法分支
 
 ### 三种最常见的 counterfeit
 
