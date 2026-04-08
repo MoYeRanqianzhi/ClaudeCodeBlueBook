@@ -4557,3 +4557,8 @@
 - `navigation/README` 的长期边界也因此更硬：它只配按 artifact noun 做单跳路由，不再摆稳定节点书架、reading map 或第二层索引。只要 `navigation` 又开始列“缺 reading map 时来这里”这类句子，就说明它在从 artifact-gap 反查滑回第二前门。
 
 - `2026-04-08` 的治理深页也应再固定一条：`10` 可以命名最短 reject seam 和弱读回面，但不再列判责对象清单；`85` 可以举原则级源码信号，但不再提供术语表、机制 inventory 或“复制能力清单”。更稳的分层是：入口卡只问 first-answer，why 页只答为什么，owner README 才答对象和菜单。
+- `2026-04-08` 又固定了一条源码质量目录纪律：`guides/102` 的 canonical ladder 在 README 层也应直接写成 `public artifact ceiling -> contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline -> change-risk record`。如果 `signer / effect ceiling / local veto cue / first retreat layer` 还答不清，就不要让 `guides/README`、`02-使用指南` 或 `navigation/README` 代签 current-truth claim；更稳的顺序是先回 `102` 降格，再回 `architecture/README / 84` 补对象与 release-surface shaping。
+- 源码地图页的长期边界也因此再硬一层：`01-源码结构地图` 可以点名 `build.mjs / bridgeEnabled.ts / entry shadow / feature()` 这些 locator，但只用来帮 later maintainer 先拆 `compile-time gate / runtime gate / artifact surface`；只要这三层还没拆开，locator 页就不该把 capability 可见性写成 public support，更不该代签 signer/effect ceiling。
+- `navigation/README` 的 artifact-gap 规则现在也应继续记死：缺 `public artifact ceiling / signer / effect ceiling / downgrade / change-risk record` 统一先回 `guides/102`；缺 `release-surface shaping` 先回 `architecture/84`；缺 `local veto cue / first retreat layer` 先回 `architecture/README`。route 页只做回退分流，不代签 capability promise。
+- `02-使用指南` 的 usage bridge 边界也应继续记死：它可以回答“怎么进入正确使用入口”，但不拥有源码质量 verdict。凡问题已经变成公开 artifact 能写到哪一层、当前是 entry shadow 还是 runtime gate 未亮，就应立刻退回 `guides/102 / architecture/84`，而不是在使用层继续硬判支持面。
+- 本轮根仓同步前置检查再次验证了“外部状态漂移”纪律：`git fetch origin main` 成功，但根仓仍因未完成 merge/冲突状态而无法安全 fast-forward。长期记忆只保留“每批必须重查、只在 worktree 记账、不碰根仓冲突”的方法，不把具体阻断文件列表当稳定事实。
