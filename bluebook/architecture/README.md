@@ -26,6 +26,8 @@
 
 如果这四问还答不上，说明你缺的还是对象层，而不是新的目录路线。
 
+源码质量线在对象层的默认顺序也只认一条：`102 change-risk record -> 87 why-proof -> architecture landing card -> local quality gate`。对象层不再单独发第二条 handoff。
+
 ## landing card
 
 当 `102` 已经产出 `change-risk record`，对象层至少还要把它继续落成下面六栏：

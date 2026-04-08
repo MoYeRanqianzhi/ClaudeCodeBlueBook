@@ -2,6 +2,11 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的根入口结论：根 `README` 的源码质量分流现在继续避免端点缩写，当前默认链显式保持为 `ceiling note / change-risk record / why-proof / landing card / local quality gate`，不再用 `ceiling note / record / gate` 之类短写给 later maintainer 留出跳级空间。
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，`git merge --ff-only origin/main` 因根仓 `/home/mo/m/projects/cc/analysis` 外部未解决冲突而失败，报错 `Merging is not possible because you have unmerged files.`。本轮继续严格只在 `.worktrees/mainloop` 内推进，不碰根仓冲突。
+- 本轮新的深段因果结论：`06` 的若干后段现在继续从“owner page 兜底”收回到更直接的 why。新的默认句法更明确地把 free exposure、free continuation、transient authority、same-world compiler 与 unified budgeting 为何不足以单独解释成熟度，写成联动因果，而不是写成术语出口。
+- 本轮新的对象层结论：`architecture/README` 现在更明确把源码质量 handoff 固定成单一顺序 `102 -> 87 -> landing card -> local quality gate`，避免对象层再生一条并行前门。
+
 - 本轮新的自校协议结论：`06` 的 `7.2 入口判据` 与若干深段现在继续从 route-policing 转向更硬的因果检查。新的默认问法不再是“有没有新增入口”，而是“有没有逼 later consumer 重谈同一主语、证据级别或 first-reject path”；这让 `06` 更像一张最小可反驳对象卡，而不是一张隐形目录法。
 - 本轮新的源码地图结论：`01-源码结构地图` 顶部现已继续收成更薄的 repo-specific map，删掉了部分“更稳的读法 / 四步顺序”式前门语气，只保留地图页最少必要的定位公式与三条桥接句。
 

@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 source-quality-full-chain-at-root live 记忆：
+  - 根 `README` 的源码质量线默认继续不用端点缩写；更稳的默认写法是完整链：`ceiling note / change-risk record / why-proof / landing card / local quality gate`
+- 最新根仓同步记忆（2026-04-08，本批次当前轮）更新为阻塞态：`git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓 `/home/mo/m/projects/cc/analysis` 存在未解决冲突而失败，错误为 `Merging is not possible because you have unmerged files.`；后续继续严格只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 06-deep-causal-floor live 记忆：
+  - `06` 后段默认继续不用 `owner page` 或 `route note` 为因果兜底；更稳的默认写法是直接说明 free exposure / free continuation / transient authority 为什么会联动失真
+  - 尤其 `统一预算器 / build tail / prompt 文案更强` 这类话题，默认继续先问删掉口号后是否仍能说明同一世界、同一秩序或同一边界为何成立
+- 当前批次继续新增一条 architecture-single-handoff live 记忆：
+  - `architecture/README` 默认继续只承认一条源码质量 handoff：`102 record -> 87 why-proof -> landing card -> local quality gate`
+  - 对象层入口若再次长回“另一条默认顺序”或“并行前门”，默认优先收回
 - 当前批次继续新增一条 deep-self-audit-objects live 记忆：
   - `06` 深段默认继续不再用 `owner page` 兜底，而是压回最小可反驳对象：Prompt 回 `compiled world verdict`，治理回 `lease checkpoint`，结构回 `later-maintainer veto`
   - `7.2 入口判据` 默认继续不先问“有没有新增入口”，而先问是否逼 later consumer 重谈同一主语、证据级别或 first-reject path
