@@ -107,6 +107,7 @@
 87. 为什么 headless `print` 的 suggestion 不是生成即交付，而是要等真实交付后才进入 acceptance tracking。
 88. 为什么 headless `print` 的 late system tail 不能抢走 result 的 semantic last-message 主位。
 - 如果你已经在 89-93 这组 summary/result-tail/settlement/observer-restore 页之间迷路，先看 [02-能力边界/195-Headless print summary-tail and observer-restore branch map 索引.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/195-Headless%20print%20summary-tail%20and%20observer-restore%20branch%20map%20%E7%B4%A2%E5%BC%95.md)，再回到 89/90/91/92/93。
+- 如果你继续往 94/95/97/98/99 这组 wider-wire / callback / projection 页下钻，先看 [02-能力边界/196-Headless print wire-visibility and projection branch map 索引.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/196-Headless%20print%20wire-visibility%20and%20projection%20branch%20map%20%E7%B4%A2%E5%BC%95.md)，再回到 94/95/97/98/99。
 89. 为什么 `convertToolResults`、`convertUserTextMessages` 与 success `result` ignored 虽然同在 adapter，却不是同一种 UI consumer policy。
 90. 为什么 success `result` ignored、error `result` visible、turn-end 判定与 busy state 不是同一种 completion signal。
 91. 为什么 callback-visible init、transcript init 提示与 slash bootstrap 不是同一种初始化可见性。
