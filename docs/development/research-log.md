@@ -2,6 +2,12 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
+- 本轮新的 Prompt 收束结论：`bluebook/03` 与 `navigation/41` 现已把 Prompt why 收成和治理/当前真相对称的四联式：`law / counterfeit / first reject / reversible fix`。新的最短口径不再先说“Prompt 有魔力”，而是先说 `same-world compiler` 如何产出 `compiled world verdict`，以及 counterfeit 如何被 reject、如何被可逆修复。
+- 本轮新的 artifact-first 结论：`bluebook/03`、`06` 与 `navigation/41` 现已进一步把目录优化从 page ownership 压回 artifact completeness。源码质量线默认先问缺的是 `ceiling note / unresolved-authority note / change-risk record / why-proof / landing card / quality gate` 哪一个，而不是先争“哪页越位”。
+- 本轮新的 official-surface 结论：并行 agent 与外部公开面复核后，当前更稳的判断是 Claude Code 的 prompt potency 应优先写成 runtime contract，而不是猜内部 prompt 原文。尤其在当前 worktree 缺源码镜像、官方公开面主要暴露 agents / hooks / permissions / plugin / settings artifact 时，本批次继续按 `public-evidence / official-surface` 模式推进。
+- 本轮新的并行分析结论：Prompt 线下一批最值得继续压硬的四个因果词已更清楚地浮现为 `stable prefix / visibility pruning / isolated delegation / lawful continuation`；治理线下一批更自然的诊断环则是 `earliest unpaid expansion -> repricing proof -> reject trio -> cleanup / lease revocation`。
+
 - 本轮新的源码质量路由结论：`navigation/README` 现已继续从 page-owned route 改成 artifact-state route。当前真相保护不再问“缺哪一页”，而问“缺 `ceiling note / downgrade stamp / unresolved-authority note / change-risk record / why-proof / landing card / first fallback` 里的哪一个”。
 - 本轮新的根入口结论：根 `README` 的当前真相首跳现已继续改成条件链，而不是线性链：先写 `ceiling note`，若仍是 `candidate` 就停在 `102`；只有 promotion 成立后才产出 `change-risk record` 并进入 `landing card`。
 - 本轮新的 87 结论：`87` 现在更明确把自己的共享产物写成 `why-proof`，不再只说“这张表为什么值钱”；这份 `why-proof` 只继续证明三件事：`合法复杂度中心 / one writable present / later-maintainer veto`。

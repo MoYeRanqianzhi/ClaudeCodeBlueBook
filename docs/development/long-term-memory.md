@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 最新根仓同步记忆（2026-04-08，本批次继续深化）继续保持健康态：`git fetch origin main` 后再次执行 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 prompt-quartet-symmetry live 记忆：
+  - `41` 与 `03` 默认继续把 Prompt why 写成与治理/当前真相对称的四联式：`law / counterfeit / first reject / reversible fix`
+  - Prompt 段若还靠“统一回 owner page / 本页只保留”的 route-policing 才能站住，默认改回 `same-world compiler -> counterfeit -> reject -> fix`
+- 当前批次继续新增一条 artifact-over-route live 记忆：
+  - `03 / 06 / 41` 默认继续把目录优化写成 artifact completeness，而不是 page ownership 或 second-frontdoor 纪律
+  - later maintainer 若还需要第二套摘要词，默认先补对应 artifact：Prompt 补 `compiled world verdict`，治理补 `repricing / ledger / cleanup`，源码质量补 `change-risk record / why-proof / landing card`
+- 当前批次继续新增一条 official-surface-blackbox live 记忆：
+  - 当前 `mainloop` 仍缺 `claude-code-source-code` 镜像时，若官方公开面只给出 agents / hooks / permissions / plugin / settings 这类 operator artifact，Prompt “magic” 默认继续先降回 runtime contract，而不是猜内部 prompt 原文
+  - 这意味着当前批次默认继续按 `public-evidence / official-surface` 模式推进，不把未公开或未在 worktree 出现的内部实现写成已核验事实
 - 当前批次继续新增一条 source-quality-artifact-router live 记忆：
   - `navigation/README` 默认继续按缺失 artifact 派发源码质量线，而不是按缺哪一页派发
   - 更稳的默认顺序是：`ceiling note / downgrade stamp / unresolved-authority note -> change-risk record -> why-proof -> landing card / first fallback`
