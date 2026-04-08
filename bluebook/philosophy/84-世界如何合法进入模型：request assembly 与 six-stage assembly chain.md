@@ -37,14 +37,9 @@
 
 这三问里只要有一问需要 later consumer 重答，same-world test 就已经失败；此时不该先补摘要、补说明或补第二张检查表，而该先停止继续。
 
-如果 same-world failure 已经成立，才值得继续用 `stable prefix / visibility pruning / delegated-context downgrade / lawful continuation` 这些兼容标签去诊断断点；它们不配反过来抢 why 页主句。
+如果 same-world failure 已经成立，才值得继续诊断断点；那些熟悉的机制名词此时只配当兼容标签，不配反过来抢 why 页主句。
 
-所谓合法复数，也只允许 surface pluralism，不允许 adjudication pluralism。多个 surface 只有在同时满足下列条件时，才仍算同一世界：
-
-- 仍能指出唯一 `world-definition source`
-- 仍共享同一条 `message lineage`
-- delegated context 只能提供线索，不能长成第二主语
-- 失格 surface 会立刻降回 display / evidence，而不是继续冒充 protocol 或 continuation truth
+所谓合法复数，也只允许这样一种复数：多个 surface 仍不逼 later consumer 重谈同一世界。只要接手者必须重新确认谁在定义世界、哪条历史还算数、继续资格是否仍成立，这个复数就已经不合法。
 
 这里还要再多记一句：
 
@@ -66,13 +61,7 @@ Claude Code 更深的一层是：
 
 也就是说，这条世界准入能力首先不是表达能力，而是 later consumer 围绕同一现场继续工作的能力。被外化的也不是“一段更完整的提示词文本”，而是足以让接手者不用重谈世界就能继续动作的最小依据；否则 surface 再多，也只是在不同 consumer 之间重复协商同一现场。
 
-late binding 因此也只能发生在预授权槽位内。更硬一点说：
-
-- 允许填充 slot，不允许改写世界主语
-- 允许补事实，不允许重写边界
-- 允许压缩叙事密度，不允许丢掉继续 verdict 的裁定依据
-
-一旦 later consumer 需要重写 `world-definition source / boundary / transcript lineage / continuation qualification` 中的任一项，这就不再是 late binding，而是 renegotiation。
+late binding 因此也只能发生在不触发重协商的前提下。更硬一点说：凡是会逼 later consumer 重新定义世界、重画边界、重接历史或重判继续资格的补写，都不再是 continue，而是 renegotiation。
 
 ### 更硬一点的源码证据
 
@@ -124,9 +113,8 @@ late binding 因此也只能发生在预授权槽位内。更硬一点说：
 
 第一条可逆修法也因此固定：
 
-- 把 UI transcript 降回 display layer
-- 把 delegated context 降回 advisory slot
-- 把 summary 降回非 continuation artifact
+- 先把越位内容降回非主权层
+- 再停在 same-world failure verdict
 
 ### first reject signal 比成功表述更值钱
 

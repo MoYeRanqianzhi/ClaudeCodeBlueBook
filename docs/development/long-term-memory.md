@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 84-failure-first-wording live 记忆：
+  - `84` 默认继续先停在 same-world failure test，不在主测试后立刻摊开 `stable prefix / visibility pruning / delegated-context downgrade / lawful continuation`
+  - `合法复数` 与 `late binding` 默认继续只用来解释“何时已经滑回重协商”，不再写成条件清单或对象约束表
+- 最新根仓同步记忆（2026-04-08，本批次本轮再收口）继续保持健康态：`git fetch origin main` 与 `git merge --ff-only origin/main` 均成功，结果为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
 - 当前批次继续新增一条 102-main-axis-claim-state live 记忆：
   - `102` 的高可见主轴句、continuity 提问、检查清单与总结句默认继续统一写成 `current-truth claim state / provisional current-truth claim`
   - `current-truth surface / candidate` 默认继续只作为兼容标签出现在局部解释里，不再回到主轴句

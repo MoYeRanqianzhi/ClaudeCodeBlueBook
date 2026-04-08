@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 Prompt 结论：`84` 这次继续把最容易泄露机制感的三段一起压回 failure-first 语言。same-world 主测试后不再立刻列 `stable prefix / visibility pruning / delegated-context downgrade / lawful continuation`，`合法复数` 也不再展开成条件串，而是统一回到一句判断：凡是逼接手者重谈同一世界的复数都不合法；`late binding` 则直接改写成“会逼 later consumer 重协商的，都不算 continue”。
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果继续为 `Already up to date.`；本轮没有根仓阻塞，正文继续只在 `.worktrees/mainloop` 内推进。
 - 本轮新的 102 主轴结论：`guides/102` 这次继续把最容易回流旧词的高可见位置也一起收口了。现在不仅正文解释层把 `current-truth surface / candidate` 读成 `claim state / provisional claim`，连前门顺序、continuity 提问、Socratic checklist 和一句话总结也都继续统一到这组术语上，旧词只保留为兼容标签。
 - 本轮新的根入口结论：根 `README` 的治理首跳现在也继续把 `owner 页` 改回 `目标页`，避免 frontdoor 再轻度复述下游 speaking-right。
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果继续为 `Already up to date.`；本轮没有根仓阻塞，正文继续只在 `.worktrees/mainloop` 内推进。
