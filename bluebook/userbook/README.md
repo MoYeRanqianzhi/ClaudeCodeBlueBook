@@ -266,6 +266,8 @@
   [05-控制面深挖/218-headless source、bridge authority 与 create-context 子树：为什么 168-179 不是线性十二连.md](./05-控制面深挖/218-headless%20source、bridge%20authority%20与%20create-context%20子树：为什么%20168-179%20不是线性十二连.md)
 - 想先把 `180-190` 读成“`179→180` 的 teleport runtime、model 的 ledger trunk 与 selection/allowlist trunk，以及 `176→181→183→186→189→190` 的 bridge birth/hydrate/write 线”，而不是线性十一连：
   [05-控制面深挖/219-teleport、model 与 bridge 分支：为什么 180-190 不是线性十一连.md](./05-控制面深挖/219-teleport、model%20与%20bridge%20分支：为什么%20180-190%20不是线性十一连.md)
+- 想只顺着 model 线读 `182/184/185/187/188`，先分 `182` 的 ledger trunk 与 `184` 的 resolution trunk，再顺着 `185 -> 187 -> 188` 读 source / admission / surface；这条线继续挂在 `219` 下面，不另起独立范围页：
+  [05-控制面深挖/219-teleport、model 与 bridge 分支：为什么 180-190 不是线性十一连.md](./05-控制面深挖/219-teleport、model%20与%20bridge%20分支：为什么%20180-190%20不是线性十一连.md)
 - 分清 `StructuredIO`、`RemoteIO`、`setInternalEventReader`、`setInternalEventWriter` 与 `flushInternalEvents` 为什么说明 headless transport 的协议宿主不等于同一种恢复厚度：
   [05-控制面深挖/168-StructuredIO、RemoteIO、setInternalEventReader、setInternalEventWriter 与 flushInternalEvents：为什么 headless transport 的协议宿主不等于同一种恢复厚度.md](./05-控制面深挖/168-StructuredIO、RemoteIO、setInternalEventReader、setInternalEventWriter%20与%20flushInternalEvents：为什么%20headless%20transport%20的协议宿主不等于同一种恢复厚度.md)
 - 分清 `/resume`、`--continue`、`print --resume` 与 `remote-control --continue` 为什么说明 stable conversation resume、headless remote hydrate 与 bridge continuity 不是同一种接续来源：

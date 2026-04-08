@@ -208,6 +208,42 @@
 - `182` = model ledger trunk
 - `184 -> 185 -> 187 -> 188` = model selection / source / allowlist trunk
 
+更稳的 model 子树应该记成：
+
+```text
+model line
+  ├─ 182 ledger trunk
+  │   ├─ create-time stamp
+  │   ├─ live shadow / readback
+  │   ├─ durable usage ledger
+  │   └─ resumed-agent fallback
+  └─ 184 resolution trunk
+      ├─ authority order
+      ├─ 185 startup source-family zoom
+      ├─ 187 allowlist-stage zoom
+      └─ 188 allowlist-surface zoom
+```
+
+这里最容易犯的错不是漏掉某个 helper，
+
+而是把不同层的问题写成同一种“model 设置”：
+
+- `182` 回答的是“到底有哪些 model fact”
+- `184` 回答的是“当前 runtime authority 怎么排”
+- `185` 回答的是“authority 上游 source family 从哪里来”
+- `187` 回答的是“挑出 candidate 之后，admission 怎样改写 runtime 结果”
+- `188` 回答的是“allowlist 在不同用户 surface 上怎样显影”
+
+所以如果接下来只想继续深读 model，
+
+目录上也不该再另起一张 model-only branch map。
+
+更稳的做法是：
+
+- 继续把 `182/184/185/187/188` 视为 `180-190` branch map 内部的一条后继线
+- 再回各自 leaf page 里追局部证据
+- 不把 `183/186` 这类 bridge 节点误判成“model 线中间缺页”
+
 ## 第五层：`181 -> 183 -> 186 -> 189 -> 190` 是 createSession birth / hydrate / replay / write 线
 
 `176` 先把 `createBridgeSession(...)` 里的 field authority 拆开。
@@ -339,9 +375,9 @@
 
 | 类型 | 对象 |
 | --- | --- |
-| 稳定可见 | `180` = `179` 下的 teleport runtime zoom；model line = `182` 的 ledger trunk + `184 -> 185 -> 187 -> 188` 的 selection/allowlist trunk；bridge line = `181 -> 183 -> 186 -> 189 -> 190` |
+| 稳定可见 | `180` = `179` 下的 teleport runtime zoom；model line 里真正该保护的是 `182` 的 ledger / `184` 的 authority layer 区分，以及 `188` 里显式拒绝、写入校验、选项隐藏且保留 `Default` 这类用户可观察 surface；bridge line = `181 -> 183 -> 186 -> 189 -> 190` |
 | 条件公开 | 显式 `environmentId` teleport path、`outcomes: []`、`ANTHROPIC_MODEL` / agent bootstrap / allowlist veto、v1 continuity 继承与 v2 fresh-session replay |
-| 内部/灰度层 | branch naming、history cap 数值、`previouslyFlushedUUIDs` reconnect 细节、provider / allowlist 细则、部分 UX surface 的报错文案 |
+| 内部/灰度层 | `session_context.model`、`metadata.model`、`lastModelUsage`、override slot 的具体存储形状、branch naming、history cap 数值、`previouslyFlushedUUIDs` reconnect 细节、provider / allowlist 细则、部分 UX surface 的报错文案 |
 
 ## 苏格拉底式自审
 
@@ -360,3 +396,11 @@
 ### 问：我是不是把 `185/187/188` 只写成“模型设置细节”？
 
 答：先分 startup source、admission veto 与 surface contract；这些不是同一层。
+
+### 问：我是不是把 override sink、startup snapshot 与 raw source family 写成同一种来源？
+
+答：同槽不等于同源；先分 env / settings / agent bootstrap，再分 launch sink / initial snapshot。
+
+### 问：我是不是把 `/model`、`/config`、picker 与 silent getter veto 写成同一种 allowlist 行为？
+
+答：先分 explicit rejection、write validator、option hiding、silent veto，再判断哪些属于稳定用户面。

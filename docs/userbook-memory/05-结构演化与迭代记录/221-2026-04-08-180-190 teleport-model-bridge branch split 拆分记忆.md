@@ -16,9 +16,9 @@
 
 所以这轮最该补的是：
 
-- 一张新的 `05` 结构页，把 `180-190` 收成三条后继线
-- 一张新的 `03` 索引页，把 teleport / model / bridge 三股树形关系钉死
-- 一条新的持久化记忆，记录为什么这轮不能继续按编号线性推进
+- 在现有 `219` / `206` / `221` 三个结构面里把三条后继线钉死
+- 不再额外增殖 model-only 范围页，避免把目录写成“model 另起一棵树”
+- 只在总 README / 阅读路径 / `03-参考索引/README.md` 里补一条 model 深读导航
 
 ## 为什么 `180` 不该并进 model / bridge 主线
 
@@ -78,6 +78,34 @@
 - `182` = model ledger trunk
 - `184 -> 185 -> 187 -> 188` = model selection / allowlist trunk
 
+### 判断三点五：`184` 更稳是 resolution trunk，不是 `182` 的第二层细目
+
+如果只按编号往下滑，
+
+最容易把：
+
+- `182` 的 stamp / shadow / usage / fallback
+- `184` 的 preference / override / resumed fallback
+
+写成同一个表。
+
+但更稳的分法是：
+
+- `182` 先问 model fact 有几张 ledger
+- `184` 再问 runtime authority 怎么排序
+- `185` 才追 authority 上游的 startup source family
+- `187` 再追选定 candidate 之后的 allowlist admission
+- `188` 最后追这些 admission 在不同 surface 上怎么显影
+
+也就是说，
+
+- `182` 不是 `184` 的前置页
+- `184` 也不是 `182` 的细节附录
+
+它们只是同属 model line，
+
+但回答的是不同层的问题。
+
 ## 为什么 bridge 线更稳是 `181 -> 183 -> 186 -> 189 -> 190`
 
 ### 判断四：`181` 先问 create-time events 为什么不是 history hydrate
@@ -116,6 +144,39 @@
 - `writeBatch`
 
 写成一条编号尾巴。
+
+## 为什么这轮不再新建独立 model branch map
+
+### 判断九：model 深读仍应挂在 `180-190` branch map 下，而不是另起一张范围页
+
+这轮继续深读之后更清楚的一点是：
+
+- model line 的确需要更厚的 first-principles 解释
+
+但它仍然属于：
+
+- `180-190` 这张 teleport / model / bridge 的三股后继图
+
+如果再新建一张 standalone model branch map，
+
+目录上会马上制造两个坏信号：
+
+1. 像是在暗示 `182/184/185/187/188` 已经脱离 `180-190` 主图
+2. 像是在暗示 `183/186` 是 model 线中间“空出来”的缺页
+
+这两种暗示都会让读者重新回到：
+
+- 按编号线性推进
+
+的误判里。
+
+所以更稳的目录优化不是再加一页，
+
+而是：
+
+- 把 model 的 trunk / zoom / stable-vs-gray 纪律补进现有 `219`
+- 把 quick index 的落笔纪律补进现有 `206`
+- 把“为什么不另起一页”写进当前记忆
 
 ## 主树状态记录
 

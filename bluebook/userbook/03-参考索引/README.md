@@ -118,6 +118,7 @@
 - 如果你已经在 `133-138` 这组索引之间来回跳，先看 [02-能力边界/204-144-149 coarse remote bit pair map 索引.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/204-144-149%20coarse%20remote%20bit%20pair%20map%20%E7%B4%A2%E5%BC%95.md)，再决定你要回到 `144/145` 的 pane / URL、`146/147` 的 command shell，还是 `148/149` 的 env / memory pair。
 - 如果你已经在 `157-168` 这组索引之间来回跳，先看 [02-能力边界/205-168-179 headless source、bridge authority 与 create-context 子树 索引.md](./02-能力边界/205-168-179%20headless%20source、bridge%20authority%20与%20create-context%20子树%20索引.md)，再决定你要回到 `168/169/170/171` 的 thickness / source 分支，还是 `172-179` 的 bridge authority / provenance / `createSession` 子树。
 - 如果你已经在 `169-179` 这组索引之间来回跳，先看 [02-能力边界/206-180-190 teleport、model 与 bridge branch map 索引.md](./02-能力边界/206-180-190%20teleport、model%20与%20bridge%20branch%20map%20索引.md)，再决定你要回到 `180` 的 teleport runtime、`182/184/185/187/188` 的 model 线，还是 `181/183/186/189/190` 的 bridge 线。
+- 如果你已经确定只追 model，仍然先留在 [02-能力边界/206-180-190 teleport、model 与 bridge branch map 索引.md](./02-能力边界/206-180-190%20teleport、model%20与%20bridge%20branch%20map%20索引.md) 这张总图里，把 `182` 当 ledger trunk、`184` 当 resolution trunk，再顺着 `185 -> 187 -> 188` 往下读；不要把 `183/186` 误当成 model 线的空洞。
 89. 为什么 `convertToolResults`、`convertUserTextMessages` 与 success `result` ignored 虽然同在 adapter，却不是同一种 UI consumer policy。
 90. 为什么 success `result` ignored、error `result` visible、turn-end 判定与 busy state 不是同一种 completion signal。
 91. 为什么 callback-visible init、transcript init 提示与 slash bootstrap 不是同一种初始化可见性。
