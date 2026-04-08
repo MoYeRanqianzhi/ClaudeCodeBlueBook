@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的目录结构结论：并行只读复查确认，高价值残余已经不在 frontdoor 数量，而在 route page 还会不会先广播 owner chain。本轮已把这层纪律继续补进 `09 / 15 / 10`：`09` 的治理线先回 `10`，`15` 的治理与 current-truth 线都先离场到 `10 / guides/102`，只有离场后才按 why-proof、security 或对象镜像继续分流；`10` 也补出了缺失的 `architecture/83` 对象出口。当前判断是，这一步能继续减少 later consumer 在总图页和导航页里把“去哪一页”误读成“哪一页在代签 first answer”的概率。
 - 本轮新的设计内涵结论：并行只读复查指出，`03` 开头最值钱的 residual 不是缺更多母线总论，而是治理线与当前线还没有像 Prompt 线那样被压成对象级 acid test。本轮已把这层判断补进 `03`：治理线先问 `earliest unpaid expansion / repricing proof / cleanup`，当前线先问 `local veto cue / first retreat layer`。当前判断是，这一步能明显减少 later consumer 把 why 页重新读成导航页或结论词页的概率，因为页内 now 先要求判失守点，再允许继续解释。
 - 本轮新的苏格拉底自校结论：这轮也把 `06` 的最小回退动作继续写硬。现在它不再只说“先降格哪层结论”，而是明确要求回答该降格哪层 claim、冻结哪类 `continuation`、撤回哪条 `maturity verdict`；边界混写时，则先把 `UI transcript / mode / usage / 作者说明` 一律降回 `projection / evidence`。当前判断是，这一步让 `06` 更像可执行的自校协议，而不再只是对 later maintainer 的抽象提醒。
 - 本轮新的治理对象层结论：沿着 `83` 已经写出的 signer hinge，这轮又把 signer ceiling 往前压硬了一层。`auto mode` 现在被明确压回“剩余 `ask` 压缩器”，不再和 `managed settings / permissions / sandboxing` 并排充当 signer peer；`/compact / /resume / /memory` 这些 continuation consumer 也只配消费已签边界、durable asset 与 pending action，不继承旧 `permission mode` 或批量 `ask` 的裁决权。当前判断是，这一步能明显减少 later consumer 把 auto mode 或 continuation loop 误读成再判一轮的主权面，而更容易把它们读成 verdict 之后的续租消费层。

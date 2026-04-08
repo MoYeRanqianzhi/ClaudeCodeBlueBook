@@ -34,6 +34,7 @@
 ## 何时离场
 
 - 若你还在问“为什么 expansion 必须先被定价”，回 `85`。
+- 若你缺的是 canonical chain、runtime seam 或对象镜像，而不是 why / signer / readback / execution，回 `architecture/83`。
 - 若你已经在判 signer / `verdict ledger` / cleanup authority 谁在代签，回 `security/README`。
 - 若你已经在判用户侧 readback、reopen 或恢复承诺，回 `risk/README`。
 - 若你已经要下现场 verdict、rollback 或回归动作，回 `playbooks/README`。

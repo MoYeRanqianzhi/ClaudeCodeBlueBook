@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 route-pages-must-exit-before-branching live 记忆：
+  - `09 / 15` 现在应直接把治理线与 current-truth 线写成“先离开当前导航页，再按 why / security / object 分支”的出口语法，而不是在页内广播 owner chain
+  - 更稳的默认写法是：总图页与导航页先给第一出口 `10 / guides/102`，再分流到 `85 / 61 / security/README` 或 `86 / 87 / architecture/README`
+- 当前批次继续新增一条 governance-frontdoor-needs-architecture-exit live 记忆：
+  - `10` 现在应直接补出 `architecture/83` 这一条对象出口，专门接 canonical chain、runtime seam 与对象镜像类缺口
+  - 更稳的默认写法是：前门页若缺对象出口，later consumer 就会回到总图横跳，最终把 route dispute 误读成 why gap
 - 当前批次继续新增一条 03-needs-acid-tests-for-pricing-and-present-veto live 记忆：
   - `03` 现在应直接把治理线与当前线都压成最短 acid test：前者先问 `earliest unpaid expansion / repricing proof / cleanup`，后者先问 `local veto cue / first retreat layer`
   - 更稳的默认写法是：若这些对象级反问答不出，就先把成熟度或当前判断降格，不再拿 route 句或结果词撑 why
