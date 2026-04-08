@@ -259,6 +259,7 @@
 - [255-2026-04-08-session operations task-matrix split 拆分记忆.md](./255-2026-04-08-session%20operations%20task-matrix%20split%20拆分记忆.md)
 - [256-2026-04-08-context intake topic-layer route split 拆分记忆.md](./256-2026-04-08-context%20intake%20topic-layer%20route%20split%20拆分记忆.md)
 - [257-2026-04-08-noninteractive automation topic-layer route split 拆分记忆.md](./257-2026-04-08-noninteractive%20automation%20topic-layer%20route%20split%20拆分记忆.md)
+- [258-2026-04-08-context intake task-matrix split 拆分记忆.md](./258-2026-04-08-context%20intake%20task-matrix%20split%20拆分记忆.md)
 
 用途：
 
