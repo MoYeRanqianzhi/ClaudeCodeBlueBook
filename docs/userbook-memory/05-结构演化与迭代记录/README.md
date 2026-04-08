@@ -63,6 +63,7 @@
 - [327-2026-04-08-intro capability-map front-door demotion 拆分记忆.md](./327-2026-04-08-intro%20capability-map%20front-door%20demotion%20拆分记忆.md)
 - [328-2026-04-08-capability taxonomy structured-output wording cleanup 拆分记忆.md](./328-2026-04-08-capability%20taxonomy%20structured-output%20wording%20cleanup%20拆分记忆.md)
 - [329-2026-04-08-intro source-evidence heading demotion 拆分记忆.md](./329-2026-04-08-intro%20source-evidence%20heading%20demotion%20拆分记忆.md)
+- [330-2026-04-08-root automation route narrowing 拆分记忆.md](./330-2026-04-08-root%20automation%20route%20narrowing%20拆分记忆.md)
 
 ## 全量档案
 
