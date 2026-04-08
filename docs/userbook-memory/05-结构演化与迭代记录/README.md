@@ -273,6 +273,7 @@
 - [269-2026-04-08-account contract-table split 拆分记忆.md](./269-2026-04-08-account%20contract-table%20split%20拆分记忆.md)
 - [270-2026-04-08-init and setup task-matrix split 拆分记忆.md](./270-2026-04-08-init%20and%20setup%20task-matrix%20split%20拆分记忆.md)
 - [271-2026-04-08-multi-frontend contract-table split 拆分记忆.md](./271-2026-04-08-multi-frontend%20contract-table%20split%20拆分记忆.md)
+- [272-2026-04-08-account task-matrix split 拆分记忆.md](./272-2026-04-08-account%20task-matrix%20split%20拆分记忆.md)
 
 用途：
 
