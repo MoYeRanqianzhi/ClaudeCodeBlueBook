@@ -8,6 +8,22 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 最新根仓同步记忆（2026-04-08，本轮收束批次）已再次更新为健康态：`fetch origin main` 与 `merge --ff-only origin/main` 均成功，根仓当前状态为干净的 `main...origin/main`；更早记录的 ahead / dirty / unmerged 快照只作历史观察保留。
+- 当前批次继续新增一条 03-single-constitutional-hook live 记忆：
+  - `03` 默认继续只保留一组 Prompt / 治理 / 当前真相宪法钩子，不再允许第二组 `first-answer nouns`
+  - `03` 的中后段 Prompt / 治理小节若再次开始发布 mini constitution、failure-order、坏解卡或 owner 顺序，默认按越位候选处理；更稳的默认修法是 `删 bundle -> 留 why / self-audit 句 -> 路由回 84 / 10 / 61 / 102 / 87 / architecture`
+- 当前批次继续新增一条 09-mirror-only live 记忆：
+  - `09` 默认继续只发布 mirror-level control-plane verdict
+  - 凡 `09` 再次出现 Prompt witness nouns、治理 canonical chain nouns、四类被定价空间或 current-truth ladder nouns，默认按“总图页重开 owner 链”处理
+- 当前批次继续新增一条 navigation-first-question-frontdoor live 记忆：
+  - `navigation/README` 默认继续把 first-hop 固定成 `Prompt -> 84`、`治理 -> 10`、`当前真相 -> README -> guides/102`
+  - `navigation/README` 默认继续按“谁在定义世界 / 谁在为扩张定价 / 谁在宣布现在”组织 route gap，而不是按目录桶组织 frontdoor ontology
+- 当前批次继续新增一条 nav15-pre-failure-only live 记忆：
+  - `navigation/15` 默认继续只保留失稳前问题梯子与第一条反证信号
+  - 凡 `15` 再次出现 failure order、later-maintainer reject 顺序、编号路线图或 builder-facing 模板 handoff，默认改回“离开 `15`，回对应 owner chain”
+- 当前批次继续新增一条 security-and-87-speaking-right live 记忆：
+  - `security/README` 默认继续只保留 signer / ledger / cleanup authority 的安全侧翻译；canonical governance chain、weak-readback 与用户侧恢复语义统一回 `10` 与 `risk`
+  - `philosophy/87` 默认继续只保留源码质量 why 与“同题不多层首答”的提醒；目录职责、证据层 speaking right 与 frontdoor law 一律退回 `navigation/04` 与根入口
 - 最新根仓同步记忆（2026-04-08，本轮最新批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均成功，根仓状态为 `main...origin/main`。之前记录的 `userbook` 冲突阻塞只应被读成时间点快照。
 - 当前批次继续新增一条 03-top-quality-route live 记忆：
   - `03` 顶部三处源码质量入口默认继续统一写成 `07 -> guides/102 -> philosophy/87 -> architecture/README`，不再保留 `102 / 87 / architecture` 分拆口径

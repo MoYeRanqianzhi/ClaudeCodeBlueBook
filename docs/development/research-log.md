@@ -2,6 +2,12 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的根仓同步结论：`fetch origin main` 与 `merge --ff-only origin/main` 已再次成功，根仓当前状态为干净的 `main...origin/main`；更早出现的 ahead / dirty / unmerged 快照不再适合作为当前起手假设。
+- 本轮新的前门收束结论：`03` 已继续收掉第二组 Prompt / 治理 / 当前真相 `first-answer nouns`，并把中后段 Prompt why、治理坏解与 failure-order 影子压回 owner redirect。当前更稳的写法是：`03` 只保留一组宪法钩子与 why / self-audit 句，不再重发 mini constitution。
+- 本轮新的总图结论：`09` 现在更明确只保留 mirror-level control-plane verdict，不再把 Prompt witness nouns、治理 canonical chain nouns 或 current-truth ladder nouns留在总图页；如果一段 `09` 已经开始点 `witness / pricing-right / current-truth surface`，默认按越位候选处理。
+- 本轮新的 route 结论：`navigation/README` 现已把 current-truth 首跳固定回 `README -> guides/102`，并把分流标题改写成“谁在定义世界 / 谁在为扩张定价 / 谁在宣布现在”这组三个第一问题，而不是继续按目录桶组织前门。
+- 本轮新的苏格拉底结论：`navigation/15` 现在更明确只保留失稳前问题梯子，不再发布治理 failure order、later-maintainer reject 顺序或编号路线图；若排查已经进入 failure semantics / reopen qualification / builder-facing template，统一离开 `15` 回对应 owner chain。
+- 本轮新的安全与源码质量结论：`security/README` 现已继续收回 signer / ledger / cleanup authority 的不对称，不再代发 canonical weak-readback 语义；`philosophy/87` 现已只保留“同一源码质量判断不应多证据层首答”的提醒，目录职责与 frontdoor law 统一退回 `navigation/04` 与根入口。
 - 本轮新的根仓同步结论：最新一次 `fetch origin main && checkout main && merge --ff-only origin/main` 已再次成功，根仓状态回到 `main...origin/main`；更早出现的 `userbook` merge 阻塞现在只应读成时间点快照，而不是当前起手假设。
 - 本轮新的 `03` 顶部治理结论：页首三条母线里的治理线现在也更明确挂上了固定 owner 顺序，和 Prompt / 源码质量两线更对称，later maintainer 不再需要等到中段 why 才看到治理 owner chain。
 - 本轮新的 `03` 顶部入口结论：源码质量线在页首三处现在更明确统一成同一条 owner 顺序 `07 -> 102 -> 87 -> architecture/README`，不再一会儿拆写成 `102 / 87 / architecture`，一会儿在中后段再补完整顺序。

@@ -1,13 +1,13 @@
 # 安全专题入口
 
-`security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
-更短地说：安全与省 token 在这里保护的是同一个 model-reachable world；前者阻止免费危险扩张，后者阻止免费昂贵扩张。
+`security/` 研究的不是“规则越多越安全”，而是 signer、ledger 与 cleanup authority 这三种不对称如何阻止免费危险扩张与免费昂贵扩张。
+更短地说：安全与省 token 在这里保护的是同一个 model-reachable world；前者拒绝未授权危险扩张，后者拒绝未定价昂贵扩张。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶入口顺序，不要急着把安全页读成另一套规则堆。
 `security/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这次在失真的到底是 signer、ledger 还是 cleanup 工作对象，再判它卡在治理收费链的哪一段，最后才决定读机制入口摘要、速查表、源码证据簇还是具体编号正文。
 
 如果只先记安全入口判定的一句话，也只记这句：
 
-- 这不是第二套安全故事，而是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链在安全目录里的机制翻译。
+- 这不是第二套安全故事，而是同一治理收费链在 signer / ledger / cleanup authority 上的机制翻译。
 
 如果你只缺治理收费链的一屏速记，而不是安全侧机制翻译，先回 [../10-治理收费链入口卡：四类被收费资源、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E5%9B%9B%E7%B1%BB%E8%A2%AB%E6%94%B6%E8%B4%B9%E8%B5%84%E6%BA%90%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；`security/` 只保留 signer / ledger / cleanup authority 的安全侧翻译。
 
@@ -17,25 +17,21 @@
 
 ## 先记四句
 
-- 安全不是单点沙箱，也不是单点分类器；它是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 的安全侧翻译。
+- 安全页只翻译 signer / ledger / cleanup authority 的不对称，不重发 canonical governance chain；那条链统一回 `../10`。
 - 完成、终局、遗忘、清理都各有 signer；任何弱层都不配替强层宣布“已经没事了”。
 - 宿主与 user-facing 入口只配消费 runtime 已外化的 `truth-surface / decision window / cleanup stage verdict`，不配自己从事件流回放拼当前真相。
-- `/status / /doctor / /usage` 与 approval UI 只配做 weak readback，`Compact / Resume / Memory` 只配做 continuation consumer；用户侧恢复读法统一回 `risk/`。
+- 若你缺的是 canonical weak-readback、continuation consumer 或用户侧恢复语义，统一回 `../10` 与 `risk/`；`security/README` 不在这里代发读回规则。
 
-如果把安全入口判定继续压成最短公式，也只剩三条：
+如果把安全入口判定继续压成最短公式，也只剩三种不对称：
 
-1. `governance key -> externalized truth chain -> typed ask`
-   - 谁配改边界、谁配宣布当前治理真相、哪些扩张必须先协商
-2. `decision window -> continuation pricing`
-   - 当前扩张还配不配继续，继续是否仍值得付费
-3. `durable-transient cleanup`
-   - 哪些 transient authority 必须清退，哪些 durable asset 还能继续被承认
+1. `signer vs consumer`
+   - 谁配签字，谁只配读取投影
+2. `ledger vs verdict`
+   - 谁在记账，谁在宣布治理事实
+3. `cleanup authority vs later readback`
+   - 谁能收口，谁只能消费收口后的读回面
 
-如果继续把这条机制链再压成跨宿主都能对照的三段顺序，也只该再补一句：
-
-- 先判 `pricing-right / truth-surface`
-- 再判 `typed ask`；`sandbox` 只作为 ask verdict 的执行约束与消费面
-- 最后才判 `decision window / continuation pricing / durable-transient cleanup`
+如果你已经开始重发 `pricing-right / truth-surface / typed ask / decision window / continuation pricing` 的 canonical chain，说明这页又在代签 `10`。
 
 如果继续把 `security/` 的目录发言权也压成最短公式，也只该剩三句：
 
@@ -73,11 +69,7 @@
 - 当你需要把 user-facing 的 runtime readback consumer 与 continuation consumer 退回它们各自只配消费的治理阶段，而不是再让 projection 词或 consumer 词冒充治理主语。
 - 当你需要判断哪个对象只是弱读回面、哪个对象仍保留 signer authority，以及 cleanup 之后谁还配留下 reopen liability。
 
-更稳的 first reject signal 还应先记三条：
-
-1. usage 读数、permission 投影和 token 条开始冒充治理真相
-2. cleanup 结果词开始越级替 signer 和 verdict 说话
-3. `Later / Outside`、default continuation 或全量可见重新让免费扩张复活
+更稳的读法是：若 usage 读数、permission 投影、cleanup 结果词或 default continuation 开始替 signer / verdict 说话，把它们先当安全症状，而不是 canonical reject semantics；具体弱读回与拒收语义统一回 `../10`。
 
 ## 继续下潜时
 

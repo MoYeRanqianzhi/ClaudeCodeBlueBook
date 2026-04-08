@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/03-设计哲学.md`、`bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`、`bluebook/navigation/{README,15-苏格拉底审读导航：请求装配控制面、统一定价治理与当前真相保护}.md`、`bluebook/security/README.md`、`bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮高流量前门继续压回 speaking-right：`03` 收掉第二组宪法钩子与中后段 mini constitutions，`09` 退回 mirror-level verdict，`15` 只保留失稳前问题梯子，`navigation/README` 把 current-truth 首跳固定回 `README -> guides/102` 并改写成“三个第一问题”分流，`security/README` 与 `87` 分别退回 signer/ledger/cleanup 不对称与源码质量 why，不再代签 canonical chain、weak-readback 或目录法
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮页首治理线与根仓同步记忆一起收口：`03` 页首治理公式现已挂上固定 owner 顺序 `10 -> philosophy/85 -> philosophy/61 -> security/risk/playbooks`；最新根仓同步也已再次确认为健康态，旧的 `userbook` 冲突阻塞现仅作历史快照保留
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮 `03` 顶部源码质量入口的三处旧分流口径继续统一成单一 owner 顺序：相关位置现已固定写成 `07 -> guides/102 -> philosophy/87 -> architecture/README`
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把本轮 Prompt why 模板再做一次归一：`03` 里两处 Prompt why 现已都统一成“本节只保留一句 why -> 回 `philosophy/84` -> 自校层再回 `06`”的同一句法
