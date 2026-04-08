@@ -2,6 +2,9 @@
 
 ## 当前稳定边界
 
+- `2026-04-08` 最新一轮已完成 `383 / 367 / 234`：主线把 stronger-request cleanup 从 `cleanup-rationale-governance` 继续推进到 `cleanup-metadata-governance`，附录把 `carrier family / naming surface / path helper / env contract / gap` 压成统一矩阵，源码剖面则把 hardcoded dispatcher、local settings knob、path helper、permission projection、local comment、argv/env convention 与 host contract 并排钉成 `where-the-why-is-carried grammar`。这一轮稳定写出的新边界是：`理由已知` 不等于 `理由已被系统命名、携带并防漂移`，`你已经知道为什么这样设计` 不等于 `系统已经把这个为什么保存成了能被所有相关平面共读的名字、路径和契约`。
+- `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-runtime-conformance-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
 - `2026-04-08` 最新一轮已完成 `382 / 366 / 233`：主线把 stronger-request cleanup 从 `cleanup-constitution-governance` 继续推进到 `cleanup-rationale-governance`，附录把 `carrier family / primary risk object / operational duty / host visibility / rationale drift` 压成统一矩阵，源码剖面则把 live non-clobber、persisted inspection、continuity / replay、planning recovery、restore backup、environment replay、operational debugging 与 host monitoring 并排钉成 `why-this-law grammar`。这一轮稳定写出的新边界是：`家法已分` 不等于 `家法理由已被诚实保存`，`你已经区分这些 family 活在哪个 law 里` 不等于 `你已经解释这些 law 为什么配存在`。
 - `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-metadata-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
