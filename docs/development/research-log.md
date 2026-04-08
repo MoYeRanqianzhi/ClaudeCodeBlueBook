@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 Prompt why 结论：并行 Agent 指出，Prompt 线还缺一条比 same-world continuity 更硬的第一性原理。本轮已把它补进 `84`：Prompt 真正先保护的不是“同一段 prompt 还能继续被用”，而是同一份 `world-entry object` 必须能被不同 consumer class 继承，而不重新夺回世界主语；模型、接手者、子代理与宿主侧消费者都只能消费同一份已裁定世界。当前判断是，这一句把 later consumer continuity、world-entry object 与 consumer inheritance 三条原先分散的判断真正收成了一条 why。
 - 本轮新的源码质量 why 结论：并行 Agent 指出，源码质量线还缺一条比 `dependency honesty / temporal honesty` 更硬的 failure-first 原理。本轮已把它补进 `87`：成熟源码质量不只要求只有一个可写现在，还要求错误先在低签字权层失败，projection、恢复资产与 provisional claim 必须先于 present writeback 暴露失真，让 later maintainer 的第一条 veto 发生在降格层，而不是发生在当前真相已被改坏之后。当前判断是，这一句把 `failure semantics`、`temporal honesty` 与 `later-maintainer veto` 三条分散判断真正收成了一条 why。
 - 本轮新的根仓同步结论：本轮起手 `git fetch origin main` 成功、`git merge --ff-only origin/main` 返回 `Already up to date.`；本轮最终复核根仓 `/home/mo/m/projects/cc/analysis` 时，`git status --short --branch` 仍为 `main...origin/main`。本轮未在根仓处理任何文件，正文与提交继续只在 `mainloop` 内完成。
 - 本轮新的源码质量 artifact-chain 结论：在 `landing card` 是否该下沉的问题上，并行判断最终收敛为一个更稳的中间态：不动 `architecture/README`，但把高层导航中把 `landing card` 当成跨层 canonical token 的写法降格掉。于是本轮只改了 `navigation/41` 与 `navigation/README`：前者把 `landing card / quality gate` 改写成 `object summary / local quality gate`，后者也把 `landing card` 降成对象摘要示例。当前判断是，`landing card` 仍应留在 architecture 层，但高层链路不该再用它充当全局 rung 名。

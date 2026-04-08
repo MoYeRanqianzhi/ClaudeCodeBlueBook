@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-consumer-class-inheritance live 记忆：
+  - `84` 现在应直接承担一句更硬的 Prompt 第一性原理：同一份 `world-entry object` 必须能被不同 consumer class 继承，而不重新夺回世界主语
+  - 更稳的默认写法是：模型、接手者、子代理与宿主侧消费者都只能消费同一份已裁定世界；谁若只能靠摘要、局部投影或补写 prompt 才能继续，失败的就不只是 continuity，而是 consumer-class inheritance 已经失真
 - 当前批次继续新增一条 source-quality-low-signature-failure-first live 记忆：
   - `87` 现在应直接承担一句更硬的源码质量第一性原理：错误必须先在低签字权层失败，而不是等到 present writeback 已经被改坏
   - 更稳的默认写法是：projection、恢复资产与 provisional claim 必须先于 present writeback 暴露失真，让 later maintainer 的第一条 veto 发生在降格层
