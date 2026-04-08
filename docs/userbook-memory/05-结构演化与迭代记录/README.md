@@ -65,6 +65,7 @@
 - [329-2026-04-08-intro source-evidence heading demotion 拆分记忆.md](./329-2026-04-08-intro%20source-evidence%20heading%20demotion%20拆分记忆.md)
 - [330-2026-04-08-root automation route narrowing 拆分记忆.md](./330-2026-04-08-root%20automation%20route%20narrowing%20拆分记忆.md)
 - [331-2026-04-08-root quickstart route narrowing 拆分记忆.md](./331-2026-04-08-root%20quickstart%20route%20narrowing%20拆分记忆.md)
+- [332-2026-04-08-intro topic-layer wording cleanup 拆分记忆.md](./332-2026-04-08-intro%20topic-layer%20wording%20cleanup%20拆分记忆.md)
 
 ## 全量档案
 
