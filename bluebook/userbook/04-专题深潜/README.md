@@ -56,6 +56,13 @@
 - [13-非交互、后台会话与自动化专题.md](./13-%E9%9D%9E%E4%BA%A4%E4%BA%92%E3%80%81%E5%90%8E%E5%8F%B0%E4%BC%9A%E8%AF%9D%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%93%E9%A2%98.md)
 - 如果你已经分清 `-p/--print`、`--bg`、`--sdk-url` 各自是什么对象，只是想继续看结果收束、summary / tail / restore 与协议流投影，再接着看 [../05-控制面深挖/非交互结果、summary 与协议流/README.md](../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/%E9%9D%9E%E4%BA%A4%E4%BA%92%E7%BB%93%E6%9E%9C%E3%80%81summary%20%E4%B8%8E%E5%8D%8F%E8%AE%AE%E6%B5%81/README.md)
 
+如果你现在主要卡在“我是该先看本地 diff、做本地 review、收口 commit、升级成 PR，还是把结果正式导出或反馈出去”，而不是 deeper git/remote review 细节，先看：
+
+- [../00-阅读路径.md](../00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md) 里的“路径 6：我想把结果稳定交付出去”
+- [09-评审、提交、导出与反馈专题.md](./09-%E8%AF%84%E5%AE%A1%E3%80%81%E6%8F%90%E4%BA%A4%E3%80%81%E5%AF%BC%E5%87%BA%E4%B8%8E%E5%8F%8D%E9%A6%88%E4%B8%93%E9%A2%98.md)
+- 如果你主要卡在“会话对象怎样外化成正式文本交付”，而不是 review / commit / PR 路径，再接着看 [../05-控制面深挖/08-Rename、Export：会话对象化与对外交付.md](../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/08-Rename%E3%80%81Export%EF%BC%9A%E4%BC%9A%E8%AF%9D%E5%AF%B9%E8%B1%A1%E5%8C%96%E4%B8%8E%E5%AF%B9%E5%A4%96%E4%BA%A4%E4%BB%98.md)
+- 如果你主要卡在 release-notes 与 feedback 的版本证据和产品回路，而不是本地收口或 PR 升级，再接着看 [../05-控制面深挖/09-Release-notes、Feedback：版本证据与产品反馈回路.md](../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/09-Release-notes%E3%80%81Feedback%EF%BC%9A%E7%89%88%E6%9C%AC%E8%AF%81%E6%8D%AE%E4%B8%8E%E4%BA%A7%E5%93%81%E5%8F%8D%E9%A6%88%E5%9B%9E%E8%B7%AF.md)
+
 - [01-代码工作流专题.md](./01-%E4%BB%A3%E7%A0%81%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%B8%93%E9%A2%98.md)
 - [02-连续性与记忆专题.md](./02-%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E8%AE%B0%E5%BF%86%E4%B8%93%E9%A2%98.md)
 - [03-治理与安全专题.md](./03-%E6%B2%BB%E7%90%86%E4%B8%8E%E5%AE%89%E5%85%A8%E4%B8%93%E9%A2%98.md)
