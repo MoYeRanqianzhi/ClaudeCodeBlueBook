@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 `architecture` 结论：并行 Agent 明确指出，当前更值钱的不是再改 `03` 一两句 residual，而是把 `architecture/README` 再从“对象摘要 + 轻库存解释”压回纯 object owner 页。本轮已按这个方向继续收口：前言重复被压平，`landing card` 的解释层只留一条边界句，对象专题索引保留最小链接集合，但删掉每条链接后面重复标题的说明。当前判断是，`architecture/README` 还值得继续做去库存，但已经不值得再改 speaking-right。
+- 本轮新的根仓同步结论：本轮起手 `git fetch origin main` 成功、`git merge --ff-only origin/main` 返回 `Already up to date.`；但收尾再次复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态已外漂为 `main...origin/main [ahead 30]`，并伴随 `UU bluebook/security/README.md`、`UU bluebook/security/source-notes/README.md`、`UU docs/development/research-log.md` 等未解决冲突。该漂移发生在 `.worktrees/mainloop` 之外；本轮所有正文与提交仍严格只在 `mainloop` 内完成。
+
 - 本轮新的根仓同步结论：本轮起手再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；但在本轮收尾再次复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态已经外漂为带多处 root 工作区改动，并伴随 `UU docs/development/research-log.md`。该漂移发生在 `.worktrees/mainloop` 之外；本轮所有正文与提交仍严格只在 `mainloop` 内完成。
 - 本轮新的 `security` 结论：在 `risk/README` 与 `casebooks/README` 收口之后，又继续压了一刀 `security/README`。这次不是改主语，而是把首页从轻度 family 解释页压回纯 mechanism owner 页：开头四连句合成两句，入场条件与症状说明不再双重列举，偏目录卫生的 `meta` 级句子也删掉。当前判断是，`security/README` 现在更接近 `api/README`、`risk/README` 那种“单职 owner 页”的形态。
 - 本轮新的 `03` Prompt 结论：在 `meta` 回链补齐后，又继续收了一刀 `03` 的 Prompt residual。原先最像“影子 owner / 影子自校”的四处尾段，现在都被压回最小判断：`lawful forgetting` 不再讲第二遍 continuation 资产，人类接手不再展开 Prompt 架构如何组织接手，只保留“人类也应沿同一现场继续”，`continue verdict` 与 `same-world` 边界也都只剩一句自校。当前判断是，`03` 作为高流量总论页，继续只该保留 cross-line 原则，不该再给 later maintainer 学第二套 Prompt why。
