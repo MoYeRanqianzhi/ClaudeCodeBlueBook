@@ -65,6 +65,7 @@
 判断标准：
 
 - 如果 project/local inputs 也能像 managed authority 一样扩边界，那当前世界的准入主权已经被外包。
+- 更具体地说，若 project/local settings 还能静默开启高风险自动化，或 repo-authored allow rules 还能替 managed deny / policy ceiling 改价，那么低信任来源已经在偷签 `governance key`；这时应先判 `authority leak`，而不是继续讨论 ask 体验。
 
 ### 2.1.1 governance key 有没有先于动作被确认
 
@@ -83,6 +84,7 @@
 判断标准：
 
 - 如果 ask 只是“弹个框等人点”，而不是围绕同一请求做分布式仲裁，它就还不是正式治理控制面。
+- 再追一问：这次 ask 有没有真的收紧 signer ceiling、收回免费扩张，还是只是在重复上一轮已知 verdict；若后者成立，它就不是新的 typed ask，而应被降回 `zero-delta ask / weak readback` 的治理噪音。
 
 ### 2.2.1 `Context Usage` 在我这里是 `decision window` 证据面，还是成本仪表
 

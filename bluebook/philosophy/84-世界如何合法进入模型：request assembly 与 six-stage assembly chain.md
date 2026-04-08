@@ -63,6 +63,7 @@ Claude Code 更深的一层是：
 更硬一点说，被编译进模型的从来不只是单段 system prompt，而是由 `system sections / tool descriptions / agent prompts / attachment deltas` 共同组成的 `world-entry object`；这些 surface 只有共享同一 authority order 与 continuation qualification，才配被 later consumer 体验成“Prompt 很强”。
 
 也就是说，这条世界准入能力首先不是表达能力，而是 later consumer 围绕同一现场继续工作的能力。被外化的也不是“一段更完整的提示词文本”，而是足以让接手者不用重谈世界就能继续动作的最小依据；否则 surface 再多，也只是在不同 consumer 之间重复协商同一现场。
+所以 `continuation qualification` 真正裁定的不是“是否还能接着生成”，而是 later consumer 是否仍在消费同一份 `world-entry object`；只要继续前还要重谈世界主语、边界或 lineage，这里的资格就已经失效。
 
 late binding 因此也只能发生在不触发重协商的前提下。更硬一点说：凡是会逼 later consumer 重新定义世界、重画边界、重接历史或重判继续资格的补写，都不再是 continue，而是 renegotiation。
 
@@ -118,6 +119,7 @@ Prompt 线也因此有自己的 `local veto`：凡是不能独立 veto 世界定
 而是：
 
 - 当前、下一步、接手后都还活在同一个现场
+- 以及 later consumer 不必重新枚举候选动作，才能把下一步压回少数合法分支
 
 ### 三种最常见的 counterfeit
 
@@ -135,6 +137,7 @@ Prompt 线也因此有自己的 `local veto`：凡是不能独立 veto 世界定
 ### first reject signal 比成功表述更值钱
 
 这条世界准入能力最先失稳时，第一条信号通常不是回答质量下降，而是世界定义权、展示边界与继续资格开始彼此脱钩。若这些失稳还不能在回答变差前被点名，那失去的也不是回答质感，而是这条世界准入顺序的先验反对权；这时更该先停在 same-world test 失败，而不是急着补更多 checklist。
+同样常见的第一反证也不是世界定义句突然消失，而是 `next-step choice` 又从“少数合法分支中的选择”退回“全量动作中的搜索”；一旦 later consumer 必须重新排除旧工具、旧摘要路线或旧 delegated path，same-world failure 就已先于回答质量下降成立。
 
 ## 5. 苏格拉底式追问
 
@@ -143,6 +146,7 @@ Prompt 线也因此有自己的 `local veto`：凡是不能独立 veto 世界定
 1. 现在到底是谁在定义世界，是否仍然单源。
 2. 当前被消费的是哪条 authoritative transcript / projection，展示层有没有越权成改判层。
 3. 经历 `handoff / compaction / resume` 之后，continuation qualification 是否仍成立，而不是靠重述现场续命。
+4. later consumer 在 `tool choice / delegate / verify` 前，是否仍要先把“还能做什么”从头搜一遍；若下一步没有先被收敛到少数已授权动作，same-world 即使文面仍顺也已开始失效。
 
 如果这三条已经答不清，就先按 same-world test 失败处理；更细 checklist 只有在这三条都站住之后才有意义。
 
