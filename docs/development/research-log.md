@@ -7801,3 +7801,5 @@
 - `2026-04-08` 本轮接着收一个更窄的“设计内涵去魅”批次，只动 `03 / 06 / 61 / 87`。真正的第一性原理收束不是再补一组赞美词，而是把三条母线共同压成同一种制度失败：`zero-delta re-adjudication`。Prompt 线失真时表现为世界已定却还要重谈，治理线表现为没有新增 `repricing / deny / cleanup` 决策增益却还在重复 ask，源码质量线表现为现在已失守却还靠回放、目录观感或作者说明重猜当前。
 - 因而这批的正文动作也都只补一条更硬的否证句：`03` 把“设计内涵”再压成消灭零增益重判；`06` 把总控自校最先抓的失真明确为“把零增益重判写成进步”；`61` 把省 token 进一步改写成 `fewer zero-delta asks`；`87` 则把源码先进性从“更会扩展”继续压成“也显式暴露 non-upgrade / negative capability 边界”。
 - 这轮苏格拉底式自审得到的额外结论也值得记住：如果一个“更深分析”提案只是在把重复批准、重复说明、重复回放包装成更谨慎，它并没有提高制度成熟度，只是在扩大 later consumer 的代签面；如果一个“源码先进性”判断只暴露 extension seam，不暴露哪些工件永远不配升级成 signer/current-truth writer，它也还没有把 later-maintainer veto 真正写进结构。
+- `2026-04-08` 随后又落了一批更窄的治理边界残差，只动 `10 / 61 / security/README / guides/100`。这批真正补的不是新对象，而是更硬的分流纪律：哪些 surface 永远只配回单、哪些 surface 只是 boundary custody、哪些设置/allow 规则一旦越过 signer ceiling 就该直接按 `authority leak` 处理。
+- 更具体地说，这批把 settings diff、hook review、status snapshot 与 host replay 全部收回 `weak readback`；把重复 ask、无增益 classifier 与默认重试明确改写成“最早 unpaid expansion 已转移到审批面与判断面”；把 `sandboxing` 从“可能的第四类安全问题”收回 signer 起租后的边界看管；也把 project/local settings 与 repo-authored allow rules 偷签 `governance key` 的情形压成 `guides/100` 里的 first-principles 红线。

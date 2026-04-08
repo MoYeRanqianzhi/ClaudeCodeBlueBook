@@ -18,6 +18,8 @@
 3. `cleanup authority ambiguity`
    - 谁能收口
 
+这里还应先压住一条分流纪律：`sandboxing` 不构成第四类 ambiguity，它只是 signer 已起租后的 boundary custody；而 `async hook / weak readback / host replay` 若开始改写 allow、continue 或 cleanup 结论，应先分别退回 `ledger / cleanup authority ambiguity`，而不是另发一条安全主线。
+
 如果一条安全判断还压不回这三类 ambiguity，它就还停在规则堆或工具堆层；如果已经开始重发治理 stage names，这页就又在代签 `10`。
 
 ## 什么时候进来

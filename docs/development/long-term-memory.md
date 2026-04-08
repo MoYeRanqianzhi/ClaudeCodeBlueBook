@@ -4569,3 +4569,6 @@
 - 安全与省 token 线也应继续记死一个更硬指标：成熟度不追 `fewer total asks`，而追 `fewer zero-delta asks`。重复批准、重复分类、重复 compact 只要不新增 `repricing / deny / cleanup` 决策增益，就不算谨慎，只算把 `authority lease` 的结算成本往后拖。
 - 源码质量线还应继续补齐 `negative capability`：later maintainer 不只要知道哪里还能扩展，也要立刻知道哪些 foundation/context artifacts 永远不配升级成 signer 或 `current-truth writer`。答不出这条非升级边界，advancedness 仍只是“可扩展体感”，不是可拒收结构。
 - 本轮根仓同步前置检查的当前截面也应记住：`git fetch origin main` 成功，`git merge --ff-only origin/main` 结果为 `Already up to date.`。这再次说明根仓状态本身会漂移，长期纪律仍是每批重查、只在 worktree 记账，而不是把任何单次健康/阻断快照当长期前提。
+- `2026-04-08` 治理线还应继续固定一条更细的弱读回面纪律：settings diff、hook review、status snapshot 与 host replay 这类 surface 只配回单，不配回判。只要它们不能独立补齐 `repricing proof / lease checkpoint / cleanup`，就必须继续留在 `weak readback / tail evidence` 层，不得在尾链补签 continue、重试或 reopen 资格。
+- `security/README` 的三分法也应继续记死：`sandboxing` 不是第四类 ambiguity，而是 signer 已起租后的 boundary custody；`async hook / weak readback / host replay` 若开始改写 allow、continue 或 cleanup 结论，应先回 `ledger / cleanup authority ambiguity`，不另起安全主线。
+- `guides/100` 的治理红线也应继续具体化：若 project/local settings 还能静默开启高风险自动化，或 repo-authored allow rules 还能替 managed deny / policy ceiling 改价，就应先按 `authority leak` 处理，而不是继续把问题写成 ask 体验优化。
