@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 238 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 239 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -257,6 +257,7 @@
 236. [236-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口](236-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口.md)
 237. [237-verifyAutoModeGateAccess、checkAndDisableAutoModeIfNeeded、verifyAndDemote与强请求清理修复治理缺口](237-verifyAutoModeGateAccess、checkAndDisableAutoModeIfNeeded、verifyAndDemote与强请求清理修复治理缺口.md)
 238. [238-runMigrations、migrateLegacyOpusToCurrent、orphan宽限期与plans continuity的强请求清理迁移治理边界](238-runMigrations、migrateLegacyOpusToCurrent、orphan宽限期与plans continuity的强请求清理迁移治理边界.md)
+239. [239-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界](239-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界.md)
 
 ## 和其他目录的分工
 
