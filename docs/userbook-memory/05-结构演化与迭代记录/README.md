@@ -60,6 +60,7 @@
 - [324-2026-04-08-root long-task continuity route narrowing 拆分记忆.md](./324-2026-04-08-root%20long-task%20continuity%20route%20narrowing%20拆分记忆.md)
 - [325-2026-04-08-root path-15 example scope cleanup 拆分记忆.md](./325-2026-04-08-root%20path-15%20example%20scope%20cleanup%20拆分记忆.md)
 - [326-2026-04-08-structured-output stability bucket cleanup 拆分记忆.md](./326-2026-04-08-structured-output%20stability%20bucket%20cleanup%20拆分记忆.md)
+- [327-2026-04-08-intro capability-map front-door demotion 拆分记忆.md](./327-2026-04-08-intro%20capability-map%20front-door%20demotion%20拆分记忆.md)
 
 ## 全量档案
 
