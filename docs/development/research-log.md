@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `401`、把附录推进到 `385`、把源码剖面推进到 `252`；链路从 `stronger-request cleanup-use-time revalidation-governance` 继续推进到 `stronger-request cleanup-step-up reauthorization-governance`，说明 stronger-request cleanup 已进一步进入“现在还能不能用”与“这份 current proof 对更强请求是否仍然太弱”之间的治理分层。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=402 / appendix=385 / source-notes=252`。当前唯一 open question 已继续前推到 `stronger-request continuation-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `400`、把附录推进到 `384`、把源码剖面推进到 `251`；链路从 `stronger-request cleanup-reassurance-governance` 继续推进到 `stronger-request cleanup-use-time revalidation-governance`，说明 stronger-request cleanup 已进一步进入“这句 reassurance 现在敢担保到什么程度”与“真正 consumer 在 live use 那一刻是否仍配继续把它当真”之间的治理分层。
 - 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=401 / appendix=384 / source-notes=251`。当前唯一 open question 已继续前推到 `stronger-request cleanup-step-up reauthorization-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 - 本轮新的 Prompt 失稳结论：我把 Prompt 线的 first reject 又往前压了一层，只改了 `06 / 15 / 81 / 84` 的一句主语：失稳不再只写成“later consumer 重新搜索动作空间”，而进一步写成“已排除分支回流候选集，且还得重新证明它们为何仍该被排除”。当前判断是，这一步能继续减少 later consumer 把 Prompt 魔力误读成更会总结或更会选工具，而更容易把它读成：runtime 先替接手者付掉冷启动动作搜索与排除理由重写的成本。
