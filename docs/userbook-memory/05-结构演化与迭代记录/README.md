@@ -50,6 +50,7 @@
 - [314-2026-04-08-cli heading nondefault-public cleanup 拆分记忆.md](./314-2026-04-08-cli%20heading%20nondefault-public%20cleanup%20拆分记忆.md)
 - [315-2026-04-08-root control deep-ledger compression 拆分记忆.md](./315-2026-04-08-root%20control%20deep-ledger%20compression%20拆分记忆.md)
 - [316-2026-04-08-root path-15 handoff link repair 拆分记忆.md](./316-2026-04-08-root%20path-15%20handoff%20link%20repair%20拆分记忆.md)
+- [317-2026-04-08-command-index nonmainline bucket cleanup 拆分记忆.md](./317-2026-04-08-command-index%20nonmainline%20bucket%20cleanup%20拆分记忆.md)
 
 ## 全量档案
 
