@@ -4207,3 +4207,4 @@
 - 用户侧 tail-readback 的最新纪律也应继续写死：`risk/README` 不是新的 first-order intake；若还没在 `10` 定位最早 `unpaid expansion`，本页不开始。`product promise readback / reopen qualification / evidence binding` 只作为 post-cleanup readback 三分，而不是另一张入口流程图。
 - `playbooks/README` 的最新边界也应继续写死：只有当 `10 / security / risk` 已经把主语、读回与对象边界定住，`playbooks/` 才开始决定验收、回退与 reopen；执行手册不再反向承担 why、first reject 或对象定题。
 - Prompt 高流量页的最新压缩也应继续写死：`README / 03 / 84` 先写 later consumer 少重答了什么，再补 `same-world compiler`、`compiled world verdict` 这些解释词；不要再让 abstract contract 或术语 inventory 抢回主句。
+- README route-boundary 的最新纪律也应继续写死：`navigation` 只给条件式 route，不给 newcomer/value-prop；`risk` 只做 post-cleanup readback，不出 admit / recover / rollback / reopen 动词；`playbooks` 只出 `execution verdict`；`security` 与 `userbook` 根页都不再重建第一性原理 syllabus 或 why 改判。

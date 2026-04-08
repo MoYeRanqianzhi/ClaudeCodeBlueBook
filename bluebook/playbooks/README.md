@@ -5,19 +5,19 @@
 
 更硬一点说：
 
-- `playbooks/` 的职责不是解释对象链，而是对已经被承认的对象链出 verdict。
+- `playbooks/` 的职责不是解释对象链，而是对已经被承认的对象链出 `execution verdict`。
 - 更具体地说，只有当 `10 / security / risk` 已经把主语、读回与对象边界定住，`playbooks/` 才开始决定验收、回退与 reopen 顺序。
 
-这里也要先压住一个常见误读：`continuity` 不是第四类执行手册家族；它只是 Prompt `continue qualification`、治理 `continuation pricing` 与当前真相 `cleanup-before-resume` 在执行顺序上的共同时间轴。
+若你还在判母线、对象链或 `continuity` 到底是什么意思，先离开本目录；这些都还不是 execution question。
 
 ## 什么时候进来
 
 - 当你已经有正式对象定义，需要把它们写进接入、验收、修复或长期验证的执行顺序。
 - 当你需要的不再是“为什么这样设计”，而是“下一步该验什么、拒收什么、回退什么”。
-- 当你已经经过 `09 / 05 / 15 / 41` 的高阶入口顺序，准备把对象链压成现场顺序、reject verdict 与 rollback 边界。
+- 当你已经经过 `10 / security / risk` 的边界判定，准备把对象链压成现场顺序、`execution verdict` 与 rollback 边界。
 - 当你需要把 later maintainer 的局部反对权转成正式拒收、回退与 reopen 顺序，而不再停在“看起来不对”的体感层。
 
-更稳一点说，`playbooks/` 也必须继承 shared first-answer order：先确认母线、对象与用户侧读回都已定住，再判 verdict、rollback 与 reopen；如果顺序倒过来，执行手册就会重新退回“按模板代替对象链”。
+更稳一点说，`playbooks/` 也必须继承 shared first-answer order：先确认母线、对象与用户侧 readback 都已定住，再判 `execution verdict`、rollback 与 reopen；如果顺序倒过来，执行手册就会重新退回“按模板代替对象链”。
 
 ## 只在 verdict 已定后再选执行入口
 
