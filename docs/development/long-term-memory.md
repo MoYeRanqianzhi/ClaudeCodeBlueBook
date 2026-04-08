@@ -8,6 +8,25 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 claude-md-foundation-not-enforcement live 记忆：
+  - 官方 docs 现在已明确：`CLAUDE.md` / memory 文件是自动加载、分层叠加的 foundation，强制边界仍要靠 settings、permissions、sandboxing 与 hook veto 这类执行侧机制成立
+  - 更稳的默认写法是：在 Prompt 线里把 `CLAUDE.md` 归入 foundation / context 层，不把它误写成 enforcement surface
+- 当前批次继续新增一条 86-vs-87-why-split live 记忆：
+  - `86` 现在应只回答“过去为什么不得越权写回现在”，`87` 继续只回答“源码质量判断为什么不能退回目录观感、文件大小与模块美学”
+  - 更稳的默认写法是：高流量对象页、地图页与路由页需要把 `86 = 当前真相 why`、`87 = 源码质量 why` 明写出来，不再用单一 `why-proof` 糊过去
+- 最新根仓同步记忆（2026-04-08，本批次提交前 live 快照）已再次外漂：本轮起手时根仓 `/home/mo/m/projects/cc/analysis` 仍为 `main...origin/main`，但在本轮提交前复核时又出现多处 root 工作区改动与未解决冲突（含 `UU bluebook/playbooks/README.md`、`UU docs/development/research-log.md`）。该状态继续只作为外部事实记录；本轮所有编辑与提交仍严格只落在 `.worktrees/mainloop`。
+- 当前批次继续新增一条 prompt-monotonic-sovereignty live 记忆：
+  - `84` 现在应直接把跨组件 Prompt 承接压成一条 `主权单调律`
+  - 更稳的默认写法是：`CLAUDE.md / commands / hooks / skills / subagents` 只能沿生命周期单向提供背景、收紧、阻断或要求证明，不能各自改判 `world-definition source`
+- 当前批次继续新增一条 governance-tail-chain-hard-boundary live 记忆：
+  - `85` 现在应直接把治理尾链写成硬边界：`/status / /usage` 之类 `weak readback` 只配暴露 drift 与 pressure；`host replay`、从面板推断 `reopen eligibility`、或把 `cleanup receipt` 写成“已安全 / 可默认继续”，都会在已结算之后重新制造 `unpaid expansion`
+  - 更稳的默认写法是：尾链对象只配降格与分流，不配重判 `repricing proof / lease checkpoint / cleanup`
+- 当前批次继续新增一条 operator-artifacts-as-veto-surface live 记忆：
+  - `CLAUDE.md / hooks / skills / agent defs / permission schemas` 这类公开 operator artifacts 现在默认继续不只算文档卫生，而算 later maintainer 的正式 veto surface
+  - 更稳的默认写法是：若这些工件会改变运行时行为、权限裁决、上下文注入或代理装配，就应被点成 `surface`，并写出 `local veto cue`
+- 当前批次继续新增一条 current-truth-vs-source-quality-route-split live 记忆：
+  - 高流量 route 页现在默认继续拆清 `86 = 当前真相 why`、`87 = 源码质量 why`
+  - 更稳的默认写法是：`guides/102` 之后先补 `86` 的“过去为何不得写坏现在”，再补 `87` 的“源码质量为什么不能退回目录观感”；不要再在 route 页把两者混成一条 owner chain
 - 当前批次继续新增一条 official-public-evidence-refresh live 记忆：
   - 2026-04-08 现场复核 `npm view @anthropic-ai/claude-code version`，当前最新公开 npm artifact 已不是 `2.1.92`，而是 `2.1.96`
   - 更稳的默认写法是：若正文需要引用最新公开版本，统一写成“截至 2026-04-08，`@anthropic-ai/claude-code` 的 npm 最新版本为 `2.1.96`（发布时间 `2026-04-08T04:32:44.614Z`，registry `modified` 时间 `2026-04-08T04:37:26.106Z`）”，旧的 `2.1.92` 只继续读成更早批次的历史快照

@@ -66,7 +66,9 @@ Claude Code 更深的一层是：
 
 late binding 因此也只能发生在不触发重协商的前提下。更硬一点说：凡是会逼 later consumer 重新定义世界、重画边界、重接历史或重判继续资格的补写，都不再是 continue，而是 renegotiation。
 
-再往前追一层，这也解释了为什么 `hooks / skills / subagents` 不是 Prompt 外挂，而是世界准入顺序在不同生命周期里的局部承接：它们只能在各自组件边界内消费、裁剪或补充继续所需的局部约束，却不能重写 `world-definition source`。一旦某个组件级 prompt、hook 或 delegated context 可以各自改判世界主语，系统就不再是在做 lawful continuation，而是在做分布式重协商。
+再往前追一层，这也解释了为什么 `CLAUDE.md / commands / hooks / skills / subagents` 不是 Prompt 外挂，而是世界准入顺序在不同生命周期里的局部承接：它们只能在各自组件边界内提供背景、约束、证据或动作入口，却不能重写 `world-definition source`。
+公开 docs 也把这层边界钉得更清楚：`CLAUDE.md` / memory 文件是自动加载、分层叠加的 foundation，真正的强制边界仍要靠 settings、permissions、sandboxing 与 hook veto 这类执行侧机制来成立。把 `CLAUDE.md` 自己误写成 enforcement surface，本身就是把 foundation 冒充成治理主权。
+更硬一点说，这种跨组件承接还必须满足一条 `主权单调律`：越靠近执行面，组件越只配收紧、阻断、要求证明；越靠近文本与偏好面，组件越只配提供背景与偏好，不能自立为新的判决面。任何需要靠组件重新重述现场才能继续的补写，都不是 continuation，而是 renegotiation；一旦某个组件级 prompt、hook 或 delegated context 可以各自改判世界主语，系统就不再是在做 lawful continuation，而是在做分布式重协商。
 
 ### 更硬一点的源码证据
 

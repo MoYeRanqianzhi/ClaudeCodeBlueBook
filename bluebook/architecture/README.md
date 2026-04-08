@@ -20,6 +20,8 @@
 
 如果这四问还答不上，说明你缺的还是对象层，而不是新的目录路线。
 
+这里的 `surface` 也不只指 runtime state surface；凡是会改变运行时行为、权限裁决、上下文注入或代理装配的 `operator artifacts`，例如 `CLAUDE.md`、hooks、skills、agent defs 与 permission schemas，也都属于对象层要点名的 `surface`。它们之所以算对象层，不是因为它们更像文档，而是因为 later maintainer 也必须能在这些工件上定位第一条局部 veto。
+
 ## landing card（对象摘要）
 
 当对象层判断需要落成统一摘要时，至少写成下面六栏：
@@ -28,7 +30,7 @@
 |---|---|---|---|---|---|
 | `<surface>` | `<what it protects>` | `<who may write now>` | `<where current truth is committed>` | `<which stale write most threatens this surface>` | `<what should trigger a local veto>` |
 
-这六栏只做对象摘要，不复写 `ceiling / downgrade / unresolved-authority` 之类证据字段；那些 promotion 纪律统一留在 `102`，`landing card` 也不承担验收卡或准入判断。
+这六栏只做对象摘要，不复写 `ceiling / downgrade / unresolved-authority` 之类证据字段；那些 promotion 纪律统一留在 `102`，`landing card` 也不承担验收卡或准入判断。若 `surface` 本身是 operator artifact，也同样必须写清 `writer truth plane` 与 `local veto cue`，否则 later maintainer 拿到的仍只是阅读体感，而不是正式反对路径。
 
 ## 对象专题索引
 
@@ -45,7 +47,7 @@
 - 本目录不负责直接给出 host-facing contract、字段 schema 与 consumer subset 判决。
 - 本目录也不负责替缺席镜像补 certainty；如果你需要把源码质量压成公开镜像证据梯度，去 `../guides/102`。
 - 本目录也不负责值班、验收、回退与长期 reopen 执行链。
-- why-proof 由 `../philosophy/87` 负责；跨专题反查由 `../navigation/README` 负责。
+- 当前真相 why-proof 由 `../philosophy/86` 负责，源码质量 why-proof 由 `../philosophy/87` 负责；跨专题反查由 `../navigation/README` 负责。
 
 更准确地说，`architecture/` 负责把对象链、chokepoint 与 current-truth writeback 说清，但不负责替 `playbooks/` 直接发 verdict，也不替 `philosophy/` 重判为什么必须如此。
 
