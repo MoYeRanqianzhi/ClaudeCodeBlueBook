@@ -1,13 +1,14 @@
 # 安全专题入口
 
-`security/` 研究的不是“规则越多越安全”，而是 signer、ledger 与 cleanup authority 这三种不对称如何阻止免费危险扩张与免费昂贵扩张。
-更短地说：安全与省 token 在这里保护的是同一个 model-reachable world；前者拒绝未授权危险扩张，后者拒绝未定价昂贵扩张。
+`security/` 研究的不是“规则越多越安全”，也不是与省 token 并列的第二条优化线，而是 signer、ledger 与 cleanup authority 这三种不对称如何阻止最早 `unpaid expansion` 免费续租。
+更短地说：安全入口第一问不是“哪条规则更严”，而是“最早 `unpaid expansion` 是什么，以及 signer / verdict ledger / cleanup authority 怎样让这次扩张不能免费继续”。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶入口顺序，不要急着把安全页读成另一套规则堆。
-`security/` 内部不先按主题桶分型，而先走同一条 diagnosis loop：`symptom -> signer_ref / verdict_ledger_ref / cleanup_ref / lease_revocation_condition -> ambiguity -> lease checkpoint -> handoff`。也就是说，先记最显眼的异常，再点名缺失的四个 intake ref，再判它落向哪种 ambiguity，再复用 `10` 的 `same scene? still priced? who settles?`，最后才决定读机制入口摘要、速查表、源码证据簇还是具体编号正文。
+`security/` 内部不先按主题桶分型，而先走同一条 diagnosis loop：`earliest unpaid expansion -> signer_ref / verdict_ledger_ref / cleanup_ref / lease_revocation_condition -> lease checkpoint -> handoff`。也就是说，先点名最早扩张，再补齐三类强面 ref 与撤租条件，再复用 `10` 的 `same scene? still priced? who settles?`，最后才决定读机制入口摘要、速查表、源码证据簇还是具体编号正文。
 
 如果只先记安全入口判定的一句话，也只记这句：
 
 - 这不是第二套安全故事，而是同一治理收费链在 signer / ledger / cleanup authority 上的机制翻译。
+- 换句话说，安全页不先决定“更严”，而先决定哪次扩张没有被合法 repricing、哪份 lease 还没被结算。
 
 如果你只缺治理收费链的一屏速记，而不是安全侧机制翻译，先回 [../10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；`security/` 只保留 signer / ledger / cleanup authority 的安全侧翻译。
 
@@ -63,7 +64,7 @@
 
 ## 什么时候进来
 
-- 当你已经知道统一定价治理成立，但还没回答 signer、ledger 与 cleanup 责任究竟落在哪些对象上。
+- 当你已经定位到最早 `unpaid expansion`，但还没回答 signer、ledger 与 cleanup 责任究竟落在哪些对象上。
 - 当 signer 到底是谁仍然模糊，弱层开始越级替强层说话。
 - 当 ledger 与 verdict 的边界模糊，结果词开始冒充治理事实。
 - 当 cleanup authority 到底落在哪仍不清楚，收口后谁还配负责也开始失真。

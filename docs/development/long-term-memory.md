@@ -4200,3 +4200,6 @@
 - `06` 的最新结构纪律也应继续写死：这页现在只保留“四问 + 四桶下钻 + 四桶失真 + 五步持续审读”，不再长回“锚点墙 + 八类总表 + 失真百科 + 十张判据卡”；源码锚点只能作为 `first reject` 支撑，不再单列墙。
 - Prompt 前门与 why 句的最新压缩也应继续写死：`README / 03 / 84 / 06` 现在都应优先写“later consumer 在 `verify / delegate / resume / handoff` 时不必再重答谁定义世界、边界在哪、工具还能不能用”，而不是继续用“世界协商成本 / anti-renegotiation contract”这类抽象合同词站立。
 - 架构对象层的最新 speaking-rights 也应继续写死：`architecture/README` 只承接 `change-risk record + why-proof`，输出 `landing card + landing-card local gate`；若缺 why-proof，统一回 `87`，`navigation/README` 只做跨专题反查。
+- 治理入口的最新 diagnosis-first 纪律也应继续写死：`10` 的主诊断环现在只保留 `earliest unpaid expansion -> repricing proof -> lease checkpoint -> cleanup`；`reject trio` 只命名 seam，`escalation` 只决定下一跳 owner page，不能再混进 why / 自校页的主句法。
+- 治理 why 与安全入口的最新压缩也应继续写死：`85` 必须先说 canonical chain 只是四问在对象层的正式落点，而不是入口第一问；`security/README` 必须先说“最早 unpaid expansion 是什么，以及 signer / verdict ledger / cleanup authority 怎样让它不能免费续租”，不能再从“规则更严”“统一预算器”或“安全专题库存”起手。
+- `03` 上治理/省 token 相关标题的最新纪律也应继续写死：不要再让“安全 / 成本 / 体验”或“可恢复压缩”占 section subject；更稳的主语应是已定价工作集、合法外置、最早 `unpaid expansion`、`repricing proof / lease checkpoint / cleanup`。
