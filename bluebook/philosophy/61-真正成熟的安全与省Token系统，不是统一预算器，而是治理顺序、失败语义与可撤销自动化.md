@@ -175,6 +175,7 @@ Claude Code 并不追求“检查越多越安全”。
 这也是为什么安全与成本在这里并不冲突，而是共享同一条判断：
 
 - 决策增益是否仍存在
+- 也就是不为未经 `governance key / truth chain / typed ask / decision window / continuation / cleanup` 定价的动作、能力、上下文席位与时间续费
 
 弱读回面若可代签，主工作集就必须长期保留更多回放与对账细节，`externalize / evict` 会立刻反转成证明成本。
 

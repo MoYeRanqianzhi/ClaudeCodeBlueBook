@@ -3903,6 +3903,7 @@
 - `owner law` 这组旧词现在也应继续退出高流量目录页。更稳的可见词法是 `首答来源 / 申诉链 / owner route`；`navigation/04`、`userbook/README`、`03-参考索引/README` 这类目录页若还保留 `owner law`，later maintainer 更容易把目录说明误读成第二层规范正文。
 - `09` 现在应继续被视为三母线的总图镜像页，而不是 Prompt / continuity 的并列 why 前门。高流量阅读地图或检索页若把 `09` 和 `philosophy/84` 放在同一“优先看哪里”槽位，会重新制造 Prompt owner 漂移。更稳的写法是：Prompt first hop 只留 `84`，`09` 只作为 cross-line summary / compat mirror 出现在下游说明里。
 - 根 `bluebook/README` 与专题导航页的 Prompt 首跳现在也应继续固定为单一 `84`。`03 / 06` 只该在“缺 why / 缺自校”时作为次级出口出现，`09` 更只能在 owner 已确认后作为总图镜像出现，不能再写成 `84 -> 03 / 06` 或 `09 -> 84 / 85 / 87` 这种 bundled first hop。
+- Prompt magic 的高价值稳定句法现在也应继续固定成因果句，而不只剩标签：更稳的前门句法不是单写 `same-world compiler`，而是同时写出“把当前世界编成可续租的单源对象，使正确下一步不再支付重述现场税”。自校页则应优先反问“same-world compiler 为什么让 verify / delegate / tool choice / feedback loop 更便宜”，再回头做 route-discipline 警戒。
 - 高流量源码质量入口现在也应避免线性链条写法。`102 -> 87 -> architecture/README -> 06` 这种句法会让 why、ladder、object、自校看起来像固定 owner 序列；更稳的可见句法是条件分流：缺 why 去 `87`，缺 object / seam 去 `architecture/README`，缺自校去 `06`。
 - `navigation/05` 与 `06` 里的源码质量词法还应继续遵守一条更细的边界：`hotspot / kernel grading / quality verdict` 属于 `guides/102` 的梯度层；`object / seam / writeback / anti-stale object chain` 才属于 `architecture/README / 84 / 63` 的对象层。只要高流量页把 `kernel` 直接交给 `architecture/`，就会重新模糊 ladder 与 object 的 speaking-rights。
 - `risk/README` 的高阶回链现在也应固定为：若缺 why 或治理机制顺序，先回 `10 -> philosophy/85 -> philosophy/61 -> security`；`risk/` 自己只承接 `product promise readback / reopen qualification / evidence binding` 这组用户侧尾链对象，不再把 `09 / 10 / security` 混写成一团高阶入口。
@@ -3915,3 +3916,17 @@
 - `navigation/05` 这类母线导航页若仍想保留长样本清单，也只能把它们标成“补读样本”，不能继续叫“稳定阅读顺序”。否则 later maintainer 会把样本页误读成新的源码质量前门，而绕过 `guides/102 -> philosophy/87 -> architecture/84 / 63`。
 - `navigation/03` 的源码质量“成立证据”顺序也应继续固定为 `09（总图镜像） -> guides/102 -> philosophy/87 -> architecture/84`，`86` 最多只作 why 补读。只要 `86 / 87 / 84 / 102` 被写成前后错位的线性链，why/ladder/object 的 speaking-rights 就会重新打结。
 - `risk/README` 也应继续守住同一条边界：`security` 承接 mechanism/signer，`playbooks` 承接 execution/drill，`risk` 自己只承接 tail readback / reopen qualification。只要句子里把 `security / playbooks` 合写成“机制口径”，执行页就会再次被抬成 mechanism owner。
+- `2026-04-08` 的根仓库同步快照再次提醒：root sync 状态会在相邻批次间漂移。当前最新观测已再次回到健康态，`git fetch origin main` 与 `git merge --ff-only origin/main` 均成功，根仓继续保持 `main...origin/main`；更早的 `userbook` 阻断只应被读成历史截面。继续工作的稳定纪律仍是：每批先检查，但正文推进只落在 `.worktrees/mainloop`。
+- Prompt richest-why 的长期默认 owner 现在也应继续写死：`03 / 41` 这类高流量 why/frontdoor 页只保留验收问句与 owner route，不再代答 Prompt magic；真正解释“为什么 `same-world compiler` 让 verify / delegate / tool choice / feedback loop 一起变便宜”的 richer why 统一只留在 `84`。
+- `03` 的长期默认源码质量 route 现在也应继续写死：why/self-audit 页不再自带另一条 `07 -> 102 -> 87 -> architecture` owner chain；更稳的句法是“正式首跳先见根入口与 `guides/102`，缺 why 再回 `87`，缺 `shared runtime correctness / continuity budget` 再回 `07`，缺对象与 writeback seam 再回 `architecture/README`”。
+- 源码质量线的 speaking-rights 现在应继续守住更细的三层分工：`87` 只保留 why 级判断，不再展开 truth-plane / writeback 通道矩阵；`guides/102` 只保留 ladder、降格与 generic handoff，不再预派 `architecture/84` 这类具体对象编号；`architecture/README` 只保留对象入口与对象索引，不再自己发源码质量 counterfeit verdict。
+- 治理线的长期默认 crosswalk 现在也应继续写死：`cleanup result / handoff promise / product promise readback` 只配做 weak readback，`reopen qualification` 只配做 liability-threshold readback，`evidence binding` 才是 reopen tail evidence；`sandbox` 只作为 `typed ask verdict` 的执行约束与消费面，不能再和 `typed ask` 并列成治理 canonical node。
+- `navigation/05` 的长期默认职责现在也应继续写死：它只校正“别把文案、UI、目录体感误抄成母线本体”，不再公开发放“按哪几类第一问题拆题、回哪组 merge frontdoor、谁拥有哪条子链”的目录宪法语句。
+- navigation 语法的长期默认单点现在也应继续写死：`navigation/README` 只保留通用 next-hop，`navigation/04` 只保留 compat alias 与 dispute escalation；通用 speaking-rights / next-hop 表不再允许在两页并行生长。
+- 源码质量公开二跳的长期默认口径现在也应继续写死：frontdoor 层统一公开 `guides/102 -> philosophy/87 -> architecture/README`；`guides/101` 与 `architecture/84 / 63` 都只配在 owner 页内部作为下游 drill，不再在 frontdoor 与 route 页并列首发。
+- `84` 与 `security/README` 的长期默认 frontdoor 边界现在也应继续写死：`84` 只保留 Prompt canonical source 与 first-reject handoff，不再兼任完整自校清单；`security/README` 只保留 ingress-only 安全判断，不再在首页直接铺 signer/readback/finality 的深层 law inventory。
+- `03` 顶部三条 first-answer 的长期默认写法现在也应继续写死：Prompt、治理、源码质量都只保留 why 级 first answer；Prompt richer why 继续回 `84`，治理 canonical chain 继续回治理 owner chain，源码质量 canonical route 继续先见根入口与 `guides/102`。`03` 不再同时扮演 why 页和 bundled owner-card。
+- `09` 的长期默认总图句法现在也应继续写死：总图页只保留三条控制面图的判断标准与 first-answer hooks；治理 canonical formula 与源码质量完整 ladder 不再在 `09` 与 owner/frontdoor 页并排重发。
+- current-truth 的长期默认公开首跳现在也应继续写死：根入口与 navigation frontdoor 一律直接回 `guides/102`；`09` 只做 cross-line mirror，不再出现在 `102` 之前充当方法入口。
+- `09` 的 Prompt 与治理 mirror 纪律现在也应继续写死：总图页不再保留 later-maintainer 排查顺序、治理 failure order 或 Prompt witness/object inventory；这些顺序统一回 `15` 与各 owner page。`09` 只保留 constitutional hook，`41` 只保留 first-principles 验收问句，不再增量持有 Prompt production heuristics。
+- `03` 中段的长期默认分析语法现在也应继续写死：`运行时平面` 只配做二级分析透镜，不再升级成顶层设计单位。later maintainer 的 first answer 仍只认三条母线，plane taxonomy 只在对象层帮助看见主权怎样协同。

@@ -34,7 +34,7 @@
 - 文件名保留旧词只是为了兼容检索；正文判断一律只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`。
 - 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航、跳转关系与其他编排说明都不参与源码质量结论。
 - 凡正文把对象写成 `consumer subset` 或 `current-truth surface candidate`，必须同时把降格 stamp 与具体 next hop 一起落页；只写“这里要保守”而不写交接动作，默认按证据纪律未落地处理。
-- 默认交接也要写死：凡 `current-truth surface candidate` 指向 `sole writer / writeback seam / freshness gate`，先回 `architecture/README`，再按对象细化到 `architecture/84`；未写这条二跳就仍算 next hop 不完整。
+- 默认交接也要写明对象层 next hop：凡 `current-truth surface candidate` 指向 `sole writer / writeback seam / freshness gate`，先回 `architecture/README`；对象细化由对象页内部继续，不在 `102` 预派具体编号。未写这条 generic handoff，就仍算 next hop 不完整。
 - 若 sole writer、writeback seam 与 freshness gate 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
 
 这条线最短的 reject trio 也只认：
@@ -176,7 +176,7 @@ contract 和 registry 都还不够。
 
 - 当前谁有权宣布 present truth
 
-这里的 `current-truth surface` 不是谁更重要，而是当前哪条 surface 被允许写当前真相。`sole writer / writeback path / freshness guard` 在本页只作为判级触发条件，不在这里代行对象解释；若这些 object-level 证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate`，并同步把 next hop 写成“先回 `architecture/README` 点名对象层，再按对象细化到 `architecture/84`”。
+这里的 `current-truth surface` 不是谁更重要，而是当前哪条 surface 被允许写当前真相。`sole writer / writeback path / freshness guard` 在本页只作为判级触发条件，不在这里代行对象解释；若这些 object-level 证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate`，并同步把 next hop 写成“先回 `architecture/README` 点名对象层”。
 
 典型信号包括：
 
