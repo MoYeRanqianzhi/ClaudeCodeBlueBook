@@ -2,6 +2,10 @@
 
 ## 当前稳定边界
 
+- `2026-04-08` 最新一轮已完成 `399 / 383 / 250`：主线把 stronger-request cleanup 从 `cleanup-reprojection-governance` 继续推进到 `cleanup-reassurance-governance`，附录把 `assurance ceiling / success silence / caveat budget / governor question` 压成统一矩阵，源码剖面则把 graded positive lexicon、auth-complete branching、operation-local reassurance、narrow health reassurance 与 selective positive silence 并排钉成 `reassurance-ceiling grammar`。这一轮稳定写出的新边界是：`被重新讲述` 不等于 `已被担保到足以承载依赖负荷`，`制度知道现在该怎样说它` 不等于 `制度已经知道这句话现在敢担保到什么程度。`
+- `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-use-time revalidation-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
+
 - `2026-04-08` 最新一轮已完成 `398 / 382 / 249`：主线把 stronger-request cleanup 从 `cleanup-reintegration-governance` 继续推进到 `cleanup-reprojection-governance`，附录把 `status grammar / notification policy / control payload / governor question` 压成统一矩阵，源码剖面则把 structured control projection、UI status grammar、selective publication、health glyph 与 dialog copy 并排钉成 `reader-facing reprojection grammar`。这一轮稳定写出的新边界是：`reintegrated` 不等于 `reprojected`，`制度知道它已经并回当前世界` 不等于 `制度已经知道该让谁看到哪一版当前真相。`
 - `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-reassurance-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
