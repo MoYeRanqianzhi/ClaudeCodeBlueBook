@@ -42,7 +42,7 @@
 
 1. 用户在问“我能看到什么、能怎么进入”时，先回 `userbook/02`。
 2. 宿主在问“contract / schema / host-facing truth 是什么”时，先回 `api/README`。
-3. 若还在问“到底算不算支持、算不算承诺”，先回 `09 / 05 / 15 / 41` 与 `08`，不要在 taxonomy 里找 verdict。
+3. 若还在问“到底算不算支持、算不算承诺”，先回 `09`、`navigation/05`、`navigation/15`、`navigation/41` 与 `08`，不要在 taxonomy 里找 verdict。
 
 如果这四问还回答不清，就不要继续停在功能总览页：
 

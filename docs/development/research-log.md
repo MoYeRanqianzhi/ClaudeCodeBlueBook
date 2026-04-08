@@ -2,6 +2,10 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 frontdoor 结论：并行 Agent 证明，当前最高价值的目录问题已不再是“缺一个新入口页”，而是现有高流量入口彼此打架。本轮已把根 `README` 与 `bluebook/README` 统一收回同一条首跳协议：`README -> bluebook/README -> 84 / 10 / 102`，并把 `09` 明确降回可选总图而非必经前门。当前判断是，这比继续新增 frontdoor 更值钱，因为它直接减少了 later consumer 在第一跳上重判“到底先去哪”的次数。
+- 本轮新的 current-truth / source-quality 分工结论：在多轮拆分之后，真正还贵的 residual 已不再是术语本身，而是 `102 / 86 / 87` 在前门是否能一次看懂。本轮已把这条分工前置写进 `bluebook/README` 与 `philosophy/README`：`102` 先判证据 ceiling 与 current-truth 入口，`86` 只答过去为何不得越权写回现在，`87` 只答源码质量为何不能退回目录观感。当前判断是，这一步能明显降低 later consumer 在 why 层把 current-truth why 与 source-quality why 混成一条的概率。
+- 本轮新的治理 why 结论：官方公开的 `auto mode` 说明，把治理成熟度又压硬了一步。它证明成熟治理不该把人类反复拖回同一种 permission prompt，而应尽量减少没有新信息的人类重判；本轮已把这条 why 收进 `85`，并进一步把 `/compact / /resume / /memory` 压回 `authority lease` 的 continuation consumer。当前判断是，这比再列一张 permissions/sandbox/compact 机制表更稳，因为它直接回答了“为什么安全、省 token 与继续续租其实都在问同一笔 lease 该不该继续”。
+- 本轮新的苏格拉底自校结论：并行 Agent 指出，`06` 里最缺的不是新的大框架，而是一句更硬的 artifact 追问。本轮已把它补进 `06`：除了问缺哪份 artifact，还要问它到底配签到哪一层；foundation/context 若越级代签执行侧裁决，本身就是缺口。当前判断是，这一句能让后续所有“公开 artifact 很重要”的论证不再滑成“公开就等于可裁决”。
 - 本轮新的设计内涵结论：这一轮没有继续加新的分线口号，而是把三条母线压成了一句更硬的 cross-line 制度判断。本轮已在 `03` 明写：Claude Code 的先进性在于系统性减少 `world-definition / pricing / present truth` 的重判面。当前判断是，这一句比单独强调 Prompt why、治理 why、源码质量 why 更稳，因为它直接指出了三条线共享的制度敌人：把本该已经定下来的东西重新拖回协商。
 - 本轮新的苏格拉底自校结论：本轮也把 `06` 的总控反问继续压短了一层。现在除了 `compile / price / preserve` 这三个环节外，还多了一句更硬的反问：我是不是又让 later consumer 重新获得了对世界、扩张或当前的重判资格。当前判断是，这一句能让后续所有目录优化和 deep-dive 合并都更容易辨认“是在补 artifact，还是在重开协商”。
 - 本轮新的源码质量结论：并行 Agent 指出，公开 operator artifacts 还缺一条比“它们是 veto surface”更硬的纪律。本轮已把它补进 `87`：公开工件不仅要可读、可 diff、可反对，还必须显式写死签字权层级；foundation/context 工件不配代签执行侧裁决或阻断。当前判断是，这一句能更直接阻止 later maintainer 把“公开可见”误读成“同层同权的治理真相”。

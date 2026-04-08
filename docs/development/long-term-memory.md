@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 frontdoor-must-not-contradict-first-hop live 记忆：
+  - 根 `README` 与 `bluebook/README` 现在默认必须共享同一条 first-hop 协议：`README -> bluebook/README -> 84 / 10 / 102`
+  - 更稳的默认写法是：`09` 只当三条母线总图，不再冒充必经前门；根入口不再提前发 second-hop inventory 或抽象“归属页”占位符
+- 当前批次继续新增一条 102-86-87-split live 记忆：
+  - `bluebook/README` 与 `philosophy/README` 现在应在前门就把 `102 -> 86 -> 87` 的分工写死：`102` 先判证据 ceiling 与 current-truth 入口，`86` 只答过去为何不得越权写回现在，`87` 只答源码质量为何不能退回目录观感
+  - 更稳的默认写法是：不要把 current-truth why 与 source-quality why 再压回同一条首答
+- 当前批次继续新增一条 governance-should-reduce-human-readjudication live 记忆：
+  - `85` 现在可以继续把官方 `auto mode` 公开 why 压回治理主句：成熟治理不是把人类反复拖回同一种 permission prompt，而是减少没有新信息的人类重判
+  - 更稳的默认写法是：`permissions` 决定配不配尝试，`sandboxing` 决定最多烧到哪一圈，`/compact / /resume / /memory` 只是 `authority lease` 的 continuation consumer，`/status / /usage` 仍只配出回单
+- 当前批次继续新增一条 self-audit-must-check-signing-level live 记忆：
+  - `06` 的 artifact 自校现在默认还要多问一句：这份 artifact 到底配签到哪一层，foundation/context 若越级代签执行侧裁决，本身就是缺口
+  - 更稳的默认写法是：不要只问“缺哪份 artifact”，还要问“谁配签它、它能签多强”
 - 当前批次继续新增一条 reduce-re-adjudication-surfaces live 记忆：
   - `03` 现在可以继续把三条母线压成一句 cross-line 制度判断：Claude Code 的先进性在于系统性减少 `world-definition / pricing / present truth` 的重判面
   - 更稳的默认写法是：Prompt 不让 later consumer 重新定义世界，治理不让尾链重新给扩张开价，源码质量不让陈旧工件、恢复资产或公开文本重新裁决当前
