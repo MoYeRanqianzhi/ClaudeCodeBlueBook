@@ -66,7 +66,7 @@ Claude Code 更深的治理律，不是：
 2. `projection usurpation`
 3. `free-expansion relapse`
 
-按对象层再压一层，这条 canonical chain 里也存在一条 signer 铰链：`managed settings -> permissions -> sandboxing -> auto-mode/classifier` 都在 verdict 之前，分别签主权边界、扩张起租、已签边界内的执行范围与剩余 ask 的压缩；`continuation consumer -> durable-transient cleanup / weak readback` 则都在结算之后，只配消费或回执既有 verdict。第一条 `local veto cue` 也因此不是“体验变差”，而是投影面、continue 入口或尾部 readback 开始越权代签价格、继续资格或终局解释；第一退回层则应先回 `governance key / externalized truth chain / repricing seam`。
+按对象层再压一层，这条 canonical chain 里也存在一条 signer 铰链：`managed settings -> permissions -> sandboxing -> auto-mode/classifier` 都在 verdict 之前，分别签主权边界、扩张起租、已签边界内的执行范围与剩余 ask 的压缩；`continuation consumer -> durable-transient cleanup / weak readback` 则都在结算之后，只配消费或回执既有 verdict。第一条 `local veto cue` 也因此不是“体验变差”，而是投影面、continue 入口或尾部 readback 开始越权代签价格、继续资格或终局解释；第一退回层则应先回 `governance key / externalized truth chain / repricing seam`。更硬一点说，`auto mode` 只配压缩剩余 `ask`，不配充当主权 signer；`/compact / /resume / /memory` 这些 continuation consumer 也最多消费已签边界、durable asset 与 pending action，不会继承旧 `permission mode` 或批量 `ask` 的裁决权；凡要改写价格、继续资格或终局解释，都必须回到 `repricing seam` 重开。
 
 ## 2. 第一性原理：governance key 先于 trust 投影
 

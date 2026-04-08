@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 auto-mode-is-not-a-signer-peer live 记忆：
+  - `83` 现在应直接把 `auto mode` 压回“剩余 `ask` 压缩器”，不再让它和 `managed settings / permissions / sandboxing` 并排冒充 signer peer
+  - 更稳的默认写法是：`/compact / /resume / /memory` 这些 continuation consumer 最多消费已签边界、durable asset 与 pending action，不继承旧 `permission mode` 或批量 `ask` 的裁决权；凡要改写价格、继续资格或终局解释的动作，都必须回到 `repricing seam`
 - 当前批次继续新增一条 authority-precedence-is-internal-to-world-definition-signer live 记忆：
   - `82` 现在应直接把 `override -> coordinator -> agent -> custom -> default -> append` 压回 `world-definition signer` 的内部 precedence
   - 更稳的默认写法是：不要再把这组六项误读成跨 `CLAUDE.md / settings / subagents / hooks` 的通用主权链
