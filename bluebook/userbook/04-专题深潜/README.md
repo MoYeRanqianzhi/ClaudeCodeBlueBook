@@ -50,6 +50,12 @@
 - [17-插件、MCP、技能、Hooks 与 Agents 运维专题.md](./17-%E6%8F%92%E4%BB%B6%E3%80%81MCP%E3%80%81%E6%8A%80%E8%83%BD%E3%80%81Hooks%20%E4%B8%8E%20Agents%20%E8%BF%90%E7%BB%B4%E4%B8%93%E9%A2%98.md)
 - 如果你主要卡在“到底该选技能、插件、MCP 还是 Hooks 这一层”，再接着看 [../05-控制面深挖/02-MCP、插件、技能与 Hooks：如何选择正确扩展层.md](../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/02-MCP%E3%80%81%E6%8F%92%E4%BB%B6%E3%80%81%E6%8A%80%E8%83%BD%E4%B8%8E%20Hooks%EF%BC%9A%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E6%AD%A3%E7%A1%AE%E6%89%A9%E5%B1%95%E5%B1%82.md)
 
+如果你现在主要卡在“我是想一次性拿结果、持续养后台会话，还是把 Claude Code 当成协议宿主”，而不是 deeper transport/runtime 细节，先看：
+
+- [../00-阅读路径.md](../00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md) 里的“路径 9：我想把 Claude Code 接进脚本或后台任务”
+- [13-非交互、后台会话与自动化专题.md](./13-%E9%9D%9E%E4%BA%A4%E4%BA%92%E3%80%81%E5%90%8E%E5%8F%B0%E4%BC%9A%E8%AF%9D%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%93%E9%A2%98.md)
+- 如果你已经分清 `-p/--print`、`--bg`、`--sdk-url` 各自是什么对象，只是想继续看结果收束、summary / tail / restore 与协议流投影，再接着看 [../05-控制面深挖/非交互结果、summary 与协议流/README.md](../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/%E9%9D%9E%E4%BA%A4%E4%BA%92%E7%BB%93%E6%9E%9C%E3%80%81summary%20%E4%B8%8E%E5%8D%8F%E8%AE%AE%E6%B5%81/README.md)
+
 - [01-代码工作流专题.md](./01-%E4%BB%A3%E7%A0%81%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%B8%93%E9%A2%98.md)
 - [02-连续性与记忆专题.md](./02-%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E8%AE%B0%E5%BF%86%E4%B8%93%E9%A2%98.md)
 - [03-治理与安全专题.md](./03-%E6%B2%BB%E7%90%86%E4%B8%8E%E5%AE%89%E5%85%A8%E4%B8%93%E9%A2%98.md)
