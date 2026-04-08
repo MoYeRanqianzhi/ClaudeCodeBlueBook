@@ -4221,3 +4221,7 @@
 - 治理线的新稳定页角色也应继续写死：`10 = earliest unpaid expansion 的 first-answer card`，`security = signer / ledger / cleanup ambiguity owner`，`risk = post-cleanup readback owner`，`playbooks = execution verdict owner`。任何一页若又开始预排另外三页的 syllabus、步骤或卡组，就说明治理线在回潮成链式讲义。
 - 源码质量线也再固定一条更硬的 promotion 纪律：artifact completeness 只决定 promotion eligibility，从不改写 page ownership；`102` 可以要求 `ceiling note / downgrade / unresolved-authority note / change-risk record` 写实，但不能把“谁补齐 artifact”改写成“谁暂时拥有升级结论资格”。
 - 本轮根仓同步检查的当前截面也应写死：`git fetch origin main` 成功，但根仓 `git merge --ff-only origin/main` 仍被未解决冲突阻断。该事实只作为外部状态写回记忆，不在根仓动手修；后续每批继续先查再做，不复用旧的阻断文件清单。
+- `2026-04-08` 的下一条结构纪律也应固定下来：高流量前门不该提前列 second-hop inventory。根 `README` 不该先列 artifact 名与离场清单，`userbook/README` 不该先列课程书架和专题分工，`06` 不该先列 runtime 桶位；这些都应在首跳之后由对应 owner README 自己展开。
+- 自校页的长期纪律也因此更明确：`06` 只配保留“四问 + 最小回退 + 何时退出到对象层”，不配再长出对象桶位、源码簇或阅读清单。一旦它重新开始说“先看哪些文件/哪些对象”，它就又在从 self-audit 滑回 second-hop atlas。
+- 治理 why 页也再固定一条边界：`85` 只回答“为什么 unpaid expansion 必须被定价”，不再承担 visible noun 对照表、长串机制巡览或执行接口翻译。只要 why 页开始逐项解释 `allow / ask / deny / compact / halt / handoff` 映射到哪条 chain，它就在从 why-proof 滑回机制导览。
+- `playbooks/README` 的稳定边界也应继续写死：它可以给扁平手册索引，但不该再把 admission、repair、verification 重新包装成首页场景卡。执行 owner 页一旦在 README 里替读者预分场景，就是在重做 second-hop syllabus。

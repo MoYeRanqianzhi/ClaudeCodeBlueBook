@@ -19,13 +19,10 @@
 
 更稳一点说，入场前只确认主语、用户侧 readback 与对象边界都已定住；不要在执行首页重跑 first-answer 或 why。
 
-## 稳定执行索引
+## 稳定手册索引
 
-- 宿主接入 / 准入判据：看 `29 / 30 / 31`
-- 修复、rollback 与 reopen drill：看 `65 / 66 / 67`
-- 验收与回归：看 `77 / 78 / 79`
-
-先判这次是在做 admission、repair 还是 verification，再进对应手册；不要在 README 里按情景重建 card-deck。
+- 现有执行手册稳定编号见 `29-31`、`65-67`、`77-79`
+- README 不在这里再把它们重分成场景卡组；真正的 admission / repair / verification 判断留给具体手册
 
 ## 这里不回答什么
 

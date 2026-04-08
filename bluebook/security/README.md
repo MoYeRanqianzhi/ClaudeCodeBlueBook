@@ -29,7 +29,7 @@
 - 当 ledger 与 verdict 的边界模糊，结果词开始冒充治理事实。
 - 当 cleanup authority 到底落在哪仍不清楚，收口后谁还配负责也开始失真。
 
-更稳的读法是：若 projection、状态词或收口结果开始替 signer / verdict 说话，把它们先当安全症状，而不是治理事实。继续下潜时只按对象 handoff，不按摘要/附录/编号通关：缺字段矩阵回 [appendix/README.md](appendix/README.md)，缺源码证据簇回 [source-notes/README.md](source-notes/README.md)，其余 ambiguity 留给对应正文。
+更稳的读法是：若 projection、状态词或收口结果开始替 signer / verdict 说话，把它们先当安全症状，而不是治理事实；缺字段矩阵与源码证据簇时再去 appendix 或 source-notes，不在首页列材料菜单。
 
 ## 维护约定
 
@@ -40,11 +40,4 @@
 - 深层速查表统一回 `appendix/README.md`，源码剖面统一回 `source-notes/README.md`。
 - 需要宿主接入、验收、修复与长期回归时，回 [../playbooks/README.md](../playbooks/README.md) 与 [../risk/README.md](../risk/README.md)，不要继续停在安全首页摘要。
 
-## 相关目录
-
-- [../architecture/README.md](../architecture/README.md)
-  更关心安全机制如何接线、如何进入状态机与恢复链。
-- [../risk/README.md](../risk/README.md)
-  更关心能力撤回、资格限制、误伤与治理后果。
-- [../casebooks/README.md](../casebooks/README.md)
-  更关心失败样本、伪成功与恢复失真。
+相关对象页与证据页统一留给对应目录；安全首页不再补充目录菜单。
