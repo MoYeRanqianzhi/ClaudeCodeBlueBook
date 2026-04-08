@@ -1,6 +1,6 @@
 # 安全专题索引
 
-`security/` 当前有 329 篇正文，范围 `00-328`；`appendix/` 当前有 312 篇速查文档；`source-notes/` 当前有 179 篇源码剖面。
+`security/` 当前有 336 篇正文，范围 `00-335`；`appendix/` 当前有 319 篇速查文档；`source-notes/` 当前有 186 篇源码剖面。
 
 `security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
 更短地说：安全与省 token 在这里保护的是同一个 model-reachable world；前者阻止免费危险扩张，后者阻止免费昂贵扩张。
@@ -232,6 +232,13 @@
 - [326-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层：为什么artifact-family cleanup stronger-request cleanup-sunset-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-tombstone-governor signer](326-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层.md)
 - [327-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层：为什么artifact-family cleanup stronger-request cleanup-tombstone-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-resurrection-governor signer](327-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层.md)
 - [328-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层：为什么artifact-family cleanup stronger-request cleanup-resurrection-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-re-entitlement-governor signer](328-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层.md)
+- [329-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层：为什么artifact-family cleanup stronger-request cleanup-re-entitlement-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reconfiguration-governor signer](329-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层.md)
+- [330-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层：为什么artifact-family cleanup stronger-request cleanup-reconfiguration-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reactivation-governor signer](330-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层.md)
+- [331-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层：为什么artifact-family cleanup stronger-request cleanup-reactivation-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-readiness-governor signer](331-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层.md)
+- [332-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层：为什么artifact-family cleanup stronger-request cleanup-readiness-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-continuity-governor signer](332-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层.md)
+- [333-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层：为什么artifact-family cleanup stronger-request cleanup-continuity-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-recovery-governor signer](333-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层.md)
+- [334-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层：为什么artifact-family cleanup stronger-request cleanup-recovery-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reintegration-governor signer](334-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层.md)
+- [335-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层：为什么artifact-family cleanup stronger-request cleanup-reintegration-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reprojection-governor signer](335-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层.md)
 
 ## 阅读顺序
 
@@ -239,7 +246,7 @@
 - 想定位“当前真相从哪里来、为什么恢复不等于完成”：先读 `30-69`。
 - 想看能力发布、状态编辑与恢复资格：先读 `70-99`。
 - 想看验证、迁移与工程化落地：先读 `100-138`。
-- 想直看治理链主干：先读 `147-328 -> appendix/131-312 -> source-notes/01-179`。
+- 想直看治理链主干：先读 `147-335 -> appendix/131-319 -> source-notes/01-186`。
 - 想快速查字段、词法、路由、签字权和速查表：直接去 [appendix/README.md](appendix/README.md)。
 - 想追具体源码证据簇：直接去 [source-notes/README.md](source-notes/README.md)。
 

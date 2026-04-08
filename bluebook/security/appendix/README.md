@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 312 篇速查文档。
+`appendix/` 当前包含 319 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 附录层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责核对字段、矩阵与速查对象，不额外签 signer / verdict。
 
@@ -594,6 +594,27 @@
 - `312`
   载体家族强请求清理复活治理与强请求清理再赋权治理分层。
   入口：[312-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层速查表：return state、old entitlement、policy veto、identity fallback与governor question](312-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层速查表：return state、old entitlement、policy veto、identity fallback与governor question.md)。
+- `313`
+  载体家族强请求清理再赋权治理与强请求清理重配置治理分层。
+  入口：[313-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层速查表：seat truth、config truth、apply truth、needs-config与governor question](313-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层速查表：seat truth、config truth、apply truth、needs-config与governor question.md)。
+- `314`
+  载体家族强请求清理重配置治理与强请求清理重新激活治理分层。
+  入口：[314-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层速查表：persisted truth、active truth、mode policy、stale signal与governor question](314-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层速查表：persisted truth、active truth、mode policy、stale signal与governor question.md)。
+- `315`
+  载体家族强请求清理重新激活治理与强请求清理就绪治理分层。
+  入口：[315-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层速查表：activation truth、connectivity truth、auth state、health signal与governor question](315-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层速查表：activation truth、connectivity truth、auth state、health signal与governor question.md)。
+- `316`
+  载体家族强请求清理就绪治理与强请求清理连续性治理分层。
+  入口：[316-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层速查表：continuity budget、stale retry line、pool repair与governor question](316-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层速查表：continuity budget、stale retry line、pool repair与governor question.md)。
+- `317`
+  载体家族强请求清理连续性治理与强请求清理恢复治理分层。
+  入口：[317-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层速查表：fresh proof、reconnect verdict、consumer discipline与governor question](317-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层速查表：fresh proof、reconnect verdict、consumer discipline与governor question.md)。
+- `318`
+  载体家族强请求清理恢复治理与强请求清理重新并入治理分层。
+  入口：[318-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question](318-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question.md)。
+- `319`
+  载体家族强请求清理重新并入治理与强请求清理重新投影治理分层。
+  入口：[319-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question](319-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question.md)。
 
 ## 怎么配合主线读
 
