@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更细的治理/源码质量 residual 纪律：`03` 第 29 节与第 34 节现已进一步压回最短自校句，不再保留“统一预算器口号”与“不要先按尺寸和目录体感判断”这类已经被 `85 / 87 / 06` 吸收的影子总论措辞。本轮根仓前置检查中，`git fetch origin main` 成功，但 `git merge --ff-only origin/main` 已被根仓未解决冲突直接阻断。
 - 继续更新 `bluebook/architecture/README.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更稳的 object-owner 纪律：`architecture/README` 现已继续从“对象摘要 + 轻库存解释层”压回更纯的 object owner 页，前言重复、`landing card` 解释层重复与对象专题索引后的说明句都已收薄；链接本身保留，但不再让标题后再复制一遍对象说明。本轮收尾再次复核根仓 `/home/mo/m/projects/cc/analysis` 时，live 状态已外漂为 `main...origin/main [ahead 30]`，并伴随 `bluebook/security/README.md`、`bluebook/security/source-notes/README.md`、`docs/development/research-log.md` 等根仓未解决冲突；该漂移只记录，不在根仓处理。
 - 继续更新 `docs/development/{long-term-memory,research-log}.md`，补记本轮末尾新的根仓 live 状态：本轮起手 `git fetch origin main` 成功、`git merge --ff-only origin/main` 返回 `Already up to date.`，但在本轮收尾复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态又再次外漂为 `main...origin/main` 且出现多处 root 工作区改动，并伴随 `UU docs/development/research-log.md`。该漂移发生在 `mainloop` 之外，本轮继续严格不触碰根仓文件。
 - 继续更新 `bluebook/security/README.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更细的机制 owner 纪律：`security/README` 现已压开头四连句、合并重复的入场/症状说明，并删除那句偏目录卫生的 `meta` 级句子；安全首页现在更明确地只做 `signer / verdict ledger / cleanup authority` 的 mechanism owner 入口，不再轻度兼做 family 解释页。
