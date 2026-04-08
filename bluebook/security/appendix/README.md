@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 347 篇速查文档。
+`appendix/` 当前包含 354 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 附录层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责核对字段、矩阵与速查对象，不额外签 signer / verdict。
 
@@ -699,6 +699,27 @@
 - `347`
   载体家族强请求清理就绪治理与强请求清理连续性治理分层。
   入口：[347-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层速查表：continuity budget、stale retry line、pool repair与governor question](347-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层速查表：continuity budget、stale retry line、pool repair与governor question.md)。
+- `348`
+  载体家族强请求清理连续性治理与强请求清理恢复治理分层。
+  入口：[348-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层速查表：fresh proof、reconnect verdict、consumer discipline与governor question](348-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层速查表：fresh proof、reconnect verdict、consumer discipline与governor question.md)。
+- `349`
+  载体家族强请求清理恢复治理与强请求清理重新并入治理分层。
+  入口：[349-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question](349-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question.md)。
+- `350`
+  载体家族强请求清理重新并入治理与强请求清理重新投影治理分层。
+  入口：[350-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question](350-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question.md)。
+- `351`
+  载体家族强请求清理重新投影治理与强请求清理重新担保治理分层。
+  入口：[351-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层速查表：reader lease、positive lexicon、fallback discipline与governor question](351-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层速查表：reader lease、positive lexicon、fallback discipline与governor question.md)。
+- `352`
+  载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层。
+  入口：[352-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层速查表：fresh gate、runtime revocation、consumer proof与governor question](352-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层速查表：fresh gate、runtime revocation、consumer proof与governor question.md)。
+- `353`
+  载体家族强请求清理用时重验证治理与强请求清理 step-up 重授权治理分层。
+  入口：[353-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gap、step-up proof、fallback surface与governor question](353-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gap、step-up proof、fallback surface与governor question.md)。
+- `354`
+  载体家族强请求清理 step-up 重授权治理与强请求清理续打治理分层。
+  入口：[354-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：resumable request、human loop、request identity与governor question](354-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：resumable request、human loop、request identity与governor question.md)。
 
 ## 怎么配合主线读
 
