@@ -47,7 +47,7 @@
 - 本目录不负责直接给出 host-facing contract、字段 schema 与 consumer subset 判决。
 - 本目录也不负责替缺席镜像补 certainty；如果你需要把源码质量压成公开镜像证据梯度，去 `../guides/102`。
 - 本目录也不负责值班、验收、回退与长期 reopen 执行链。
-- why-proof 由 `../philosophy/87` 负责；跨专题反查由 `../navigation/README` 负责。
+- 当前真相 why-proof 由 `../philosophy/86` 负责，源码质量 why-proof 由 `../philosophy/87` 负责；跨专题反查由 `../navigation/README` 负责。
 
 更准确地说，`architecture/` 负责把对象链、chokepoint 与 current-truth writeback 说清，但不负责替 `playbooks/` 直接发 verdict，也不替 `philosophy/` 重判为什么必须如此。
 

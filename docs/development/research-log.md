@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 Prompt why 结论：官方 docs 进一步把 `84` 的跨组件主权继承写硬了。文档明确把 `CLAUDE.md` / memory 文件定义成自动加载、分层叠加的 foundation，而不是强制性 enforcement surface；强制边界仍要靠 settings、permissions、sandboxing 与 hook veto 这类执行侧机制成立。本轮已把这层判断补进 `84`。当前判断是，这一句能更稳地阻止 later maintainer 把 `CLAUDE.md` 误读成“安全边界本体”或“更强系统提示词”。
+- 本轮新的当前真相 why 结论：在高流量路由页开始拆 `86/87` 之后，`86` 自己也需要把职责边界写死。本轮已在 `86` 明确：本页只回答“过去为何不得越权写回现在”；若问题已经变成“源码质量为什么不能退回目录观感、文件大小与模块美学”，统一回 `87`。当前判断是，这一步能减少对象页、地图页和 why 页之间继续把 present-truth why 与 source-quality why 糊成一团。
+- 本轮新的目录结构结论：`architecture/README` 与 `01-源码结构地图` 仍残留把 why-proof 单写成 `87` 的高流量旧路由。本轮已把它们改成显式区分 `86 = 当前真相 why`、`87 = 源码质量 why`。当前判断是，这类修正虽然只改几句，但价值高于再补一个新 README，因为它直接修掉了 high-traffic 页把读者送错主语的问题。
 - 本轮新的根仓同步结论：本轮起手时根仓 `/home/mo/m/projects/cc/analysis` 仍为 `main...origin/main`，但在本轮提交前复核时又外漂为带多处 root 工作区改动与未解决冲突（含 `UU bluebook/playbooks/README.md`、`UU docs/development/research-log.md`）。该漂移继续只作为外部事实记录；本轮所有正文与提交仍严格只在 `mainloop` 内完成。
 - 本轮新的 Prompt why 结论：并行 Agent 继续把 Prompt 线从“跨组件也能继承同一世界”再压硬一步。本轮已把它补进 `84`：`CLAUDE.md / commands / hooks / skills / subagents` 不是并列 prompt 片段，而是同一份 `world-entry object` 在不同生命周期里的分段承接；更靠近执行面者只配收紧、阻断或要求证明，更靠近文本与偏好面者只配提供背景，不能自立为新的判决面。当前判断是，把这条规律写成 `主权单调律` 比只写“hooks 不是外挂”更稳，因为它直接给 later maintainer 留下了 first-reject test。
 - 本轮新的治理 why 结论：并行 Agent 把治理尾链继续压成了一条更硬的 first-principles boundary。本轮已把它补进 `85`：`/status / /usage` 之类 `weak readback` 只配暴露 drift 与 pressure，`host replay` 若靠事件回放拼当前 permission 与上下文真相，就已经在自造第二裁决面；`reopen eligibility` 只能读 residual liability 的门槛，`cleanup receipt` 就算做强也只能签 closure truth，不能签“已安全 / 可默认继续”。当前判断是，这一小段把“治理尾链为什么必须弱”从一句 general warning 压成了一组具体边界。

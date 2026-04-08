@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 claude-md-foundation-not-enforcement live 记忆：
+  - 官方 docs 现在已明确：`CLAUDE.md` / memory 文件是自动加载、分层叠加的 foundation，强制边界仍要靠 settings、permissions、sandboxing 与 hook veto 这类执行侧机制成立
+  - 更稳的默认写法是：在 Prompt 线里把 `CLAUDE.md` 归入 foundation / context 层，不把它误写成 enforcement surface
+- 当前批次继续新增一条 86-vs-87-why-split live 记忆：
+  - `86` 现在应只回答“过去为什么不得越权写回现在”，`87` 继续只回答“源码质量判断为什么不能退回目录观感、文件大小与模块美学”
+  - 更稳的默认写法是：高流量对象页、地图页与路由页需要把 `86 = 当前真相 why`、`87 = 源码质量 why` 明写出来，不再用单一 `why-proof` 糊过去
 - 最新根仓同步记忆（2026-04-08，本批次提交前 live 快照）已再次外漂：本轮起手时根仓 `/home/mo/m/projects/cc/analysis` 仍为 `main...origin/main`，但在本轮提交前复核时又出现多处 root 工作区改动与未解决冲突（含 `UU bluebook/playbooks/README.md`、`UU docs/development/research-log.md`）。该状态继续只作为外部事实记录；本轮所有编辑与提交仍严格只落在 `.worktrees/mainloop`。
 - 当前批次继续新增一条 prompt-monotonic-sovereignty live 记忆：
   - `84` 现在应直接把跨组件 Prompt 承接压成一条 `主权单调律`
