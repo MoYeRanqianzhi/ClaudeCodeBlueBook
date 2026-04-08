@@ -2,6 +2,10 @@
 
 ## 当前稳定边界
 
+- `2026-04-08` 最新一轮已完成 `391 / 375 / 242`：主线把 stronger-request cleanup 从 `cleanup-resurrection-governance` 继续推进到 `cleanup-re-entitlement-governance`，附录把 `return state / old entitlement / policy veto / identity fallback / governor question` 压成统一矩阵，源码剖面则把 old config / secrets wipe、explicit enabled write、policy veto、installed-vs-enabled divergence、closure-level entitlement write 与 new-slug identity fallback 并排钉成 `post-return qualification grammar`。这一轮稳定写出的新边界是：`会回来` 不等于 `还是原来那个被授权的它`，`制度知道怎样让对象重新出现` 不等于 `制度已经知道该把哪些旧权利重新还给它`。
+- `2026-04-08` 本轮 fresh 复核根仓库时，`git fetch origin main` 成功，但根仓状态已推进到 `## main...origin/main [ahead 44]`，且仍存在未解决冲突；`git merge --ff-only origin/main` 返回 `Merging is not possible because you have unmerged files.`。这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-reconfiguration-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
+
 - `2026-04-08` 最新一轮已完成 `390 / 374 / 241`：主线把 stronger-request cleanup 从 `cleanup-tombstone-governance` 继续推进到 `cleanup-resurrection-governance`，附录把 `authoritative clearing / re-entry gate / identity policy / active layer / governor question` 压成统一矩阵，源码剖面则把 `.orphaned_at` 清除、Layer-3 refresh、`needsRefresh`、`/reload-plugins`、plan lineage recovery 与 deletion-only tombstone path 并排钉成 `current-world readmission grammar`。这一轮稳定写出的新边界是：`会留墓碑` 不等于 `会让它回来`，`制度知道怎样留下历史痕迹` 不等于 `制度已经知道谁配重新被当前世界承认`。
 - `2026-04-08` 本轮 fresh 复核根仓库时，`git fetch origin main` 成功，但根仓状态为 `## main...origin/main [ahead 18]`，且存在未解决冲突；`git merge --ff-only origin/main` 返回 `Merging is not possible because you have unmerged files.`。这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-re-entitlement-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
