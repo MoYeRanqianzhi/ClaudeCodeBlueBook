@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 Prompt 对象层结论：`Bohr` 指出，`82` 真正还没写死的不是 section 或 projection，而是 `Authority` 本身的 signer 语义。本轮已把 `override -> coordinator -> agent -> custom -> default -> append` 明确压回 `world-definition signer` 的内部 precedence，不再让它继续冒充跨 `CLAUDE.md / settings / subagents / hooks` 的总 authority chain。当前判断是，这一步能明显减少 later consumer 把 `82` 的 signer 顺序误读成一条跨 surface 的平面主权链。
 - 本轮新的 Prompt 对象层结论：这轮没有再去补 `84` 的 why，而是把已经写死的 signer/precedence 纪律继续落到 `82`。本轮已把 `display transcript / control projection / continuation object` 越权代签 `protocol transcript` 明写成第一条 `local veto cue`，并把第一退回层写回 `protocol transcript + message lineage + section registry`。当前判断是，这一步让 `82` 第一次不只是在讲 projection consumer taxonomy，而是在给 later maintainer 一个对象层的 first reject 和 first retreat。
 - 本轮新的治理对象层结论：这轮也没有再去补 `85` 的 why，而是把 signer ceiling 落到 `83` 的 canonical chain。本轮已把 `managed settings -> permissions -> sandboxing -> auto-mode/classifier` 明写成 verdict 之前的 signer 铰链，把 `continuation consumer -> durable-transient cleanup / weak readback` 明写成结算之后的消费/回执层。当前判断是，这一步能明显减少 later consumer 把 `83` 读成 feature inventory，而更容易把它读成一条前后分明的 verdict hinge。
 - 本轮新的对象层结论：`Hilbert` 指出，真正还没显式落地的不是 landing card 字段本身，而是 `84` atlas 表和 landing card 列语法之间的映射。本轮已把 `forbidden substitute writer` 显式翻译成 `local veto cue`，并把最近的 `freshness / recovery / eviction` seam 显式翻译成 `first retreat layer`。当前判断是，这一步让 `84` 不再只是一张 current-truth atlas，而第一次和对象摘要卡共享同一套列语法。

@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 authority-precedence-is-internal-to-world-definition-signer live 记忆：
+  - `82` 现在应直接把 `override -> coordinator -> agent -> custom -> default -> append` 压回 `world-definition signer` 的内部 precedence
+  - 更稳的默认写法是：不要再把这组六项误读成跨 `CLAUDE.md / settings / subagents / hooks` 的通用主权链
 - 当前批次继续新增一条 prompt-object-veto-maps-to-protocol-transcript live 记忆：
   - `82` 现在应直接把 `display transcript / control projection / continuation object` 越权代签 `protocol transcript` 写成 Prompt 对象层的第一条 `local veto cue`
   - 更稳的默认写法是：第一退回层先回 `protocol transcript + message lineage + section registry`

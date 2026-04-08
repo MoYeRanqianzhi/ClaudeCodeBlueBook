@@ -37,7 +37,7 @@
 如果把这条流水线再压成目录前门已经稳定的 nouns，它们只该对应成：
 
 1. `Authority`
-   - `world-defining winner`
+   - `world-definition signer`
 2. `Boundary`
    - `section registry + dynamic boundary`
 3. `Transcript`
@@ -101,6 +101,8 @@ Claude Code 的请求装配首先解决的不是：
 这条顺序的价值不是样式统一，而是：
 
 - 防止 system、worker、宿主、用户补丁、追加说明互相争主语
+
+更硬一点说，`override -> coordinator -> agent -> custom -> default -> append` 也只是在 `world-definition signer` 内部决定主签名的 precedence；`CLAUDE.md` 属于 foundation/context，subagents 更接近遮蔽式替身，而 settings / hooks 才握有可执行的 first veto。
 
 一旦世界定义顺序漂移，系统就会重新退回：
 
