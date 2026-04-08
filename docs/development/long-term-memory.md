@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 seam-locator-must-stop-before-object-page live 记忆：
+  - `01 / architecture/README / navigation/README / philosophy/76` 现在应直接把源码地图协议写成 `repo seam locator -> object-level first no -> fail-closed seam -> object page`
+  - 更稳的默认写法是：`01` 只把人送到 seam 类型门口，不越过 `architecture/README` 直跳对象页；`navigation/README` 只负责强制 later consumer 离开 locator、进入对象层；`76` 的苏格拉底自校则继续追问 locator 有没有真的把人送到“哪个对象面先失去写权”这道题门口
+- 当前批次继续新增一条 root-sync-preflight-healthy-again live 记忆：
+  - 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，随后 `git status --short --branch` 仍为 `main...origin/main`
+  - 更稳的默认写法是：每一批仍先做根仓同步预检，但所有正文编辑、记忆更新与提交继续只落在 `.worktrees/mainloop`
 - 当前批次继续新增一条 root-merge-head-blocks-sync live 记忆：
   - 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因 `MERGE_HEAD exists` 被阻断；该状态只作为外部事实记录
   - 更稳的默认写法是：不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、提交与更新记忆

@@ -22,6 +22,7 @@
 - 缺 `release-surface shaping / compile-time gate / runtime gate / artifact surface`，回 `architecture/84`
 - 缺当前真相保护的 why-proof，回 `philosophy/86`；若继续追源码质量 why，再回 `philosophy/87`
 - 缺 repo-specific seam type locator（如 `generation guard / server-head adoption / host truth externalization / release-surface split`），先回 `../01-源码结构地图.md`
+- 若 seam type 已能定位，却还答不出“现在是哪一个对象面先失去写权”，说明问题已经离开 repo locator、进入对象层；先回 `architecture/README`，不要继续在 route 页兜目录
 - 缺当前真相线的对象、状态机、writeback seam、`local veto cue / first retreat layer` 或对象摘要（如 `landing card`），回 `architecture/README`
 - 缺 first no 之后最近的 `fail-closed seam`，也先回 `architecture/README`；若问题已经缩到 `release-surface split / recovery-eviction / server-head adoption` 这类对象型退回层，再回对应对象页
 

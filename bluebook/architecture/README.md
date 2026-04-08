@@ -20,7 +20,7 @@
 - 第一退回层先落哪。
 
 如果这四问还答不上，说明你缺的还是对象层，而不是新的目录路线。
-若你已经知道自己在找 `first no / first retreat layer`，却还说不清它落在哪类 seam，上游先回 `../01-源码结构地图.md` 定位 `generation guard / server-head adoption / host truth externalization / release-surface split` 这类 repo-specific locator；对象层不代做 repo grep。
+若你已经知道自己在找 `first no / first retreat layer`，却还说不清它落在哪类 seam，上游先回 `../01-源码结构地图.md` 定位 `generation guard / server-head adoption / host truth externalization / release-surface split` 这类 repo-specific locator；对象层不代做 repo grep。更硬一点说，这里的 `first no` 问的不是修复顺序，而是此刻哪一个对象面、哪一类 seam 正在先失去合法写权；若这个主语还没答出，任何 remediation checklist 都还太早。
 
 这里的 `surface` 也不只指 runtime state surface；凡是会改变运行时行为、权限裁决、上下文注入或代理装配的 `operator artifacts`，例如 `CLAUDE.md`、hooks、skills、agent defs 与 permission schemas，也都属于对象层要点名的 `surface`。它们之所以算对象层，不是因为它们更像文档，而是因为 later maintainer 也必须能在这些工件上定位第一条局部 veto。
 
