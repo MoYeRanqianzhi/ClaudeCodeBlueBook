@@ -26,7 +26,6 @@
 - `TodoWrite`：维护会话级任务清单。
 - `TaskStop` / `TaskOutput`：处理后台任务。
 - `Skill`：调用斜杠技能。
-- `StructuredOutput`：把最终输出收成结构化 JSON。
 
 从设计上看，这些工具的分工很明确：
 
@@ -51,6 +50,7 @@
 
 源码里还有很多条件性工具：
 
+- `StructuredOutput`：主要在非交互 + `--json-schema` 路径下注入，用来把最终输出收成结构化 JSON。
 - `LSP`：定义、引用、hover、symbols。
 - `EnterPlanMode` / `ExitPlanMode`。
 - `EnterWorktree` / `ExitWorktree`。
@@ -68,6 +68,11 @@
 - 定时调度。
 - worktree 隔离。
 - 外部资源索引。
+
+这也意味着：
+
+- `StructuredOutput` 更接近结构化输出路径里的条件/辅助工具，
+- 不该和 `Read`、`Edit`、`Bash` 这类常驻稳定核心工具写成同一层。
 
 ## MCP 工具为什么是特殊类
 
