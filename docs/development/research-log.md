@@ -2,6 +2,38 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 prompt-sovereignty 结论：`84` 与 `41` 现在更明确把 Prompt 线前门写回“谁有权把当前世界合法编译进模型 / 世界定义权必须单源”，而不是先由 `Prompt 效力`、`same-world property` 或专题侧门词汇带路。
+- 本轮新的 governance-readback 结论：`security/README` 现已继续把自己收回 signer / ledger / cleanup authority 三种不对称，不再公开重发治理 stage names、runtime readback class 或 reopen liability 这组 owner vocabulary。
+- 本轮新的 61-demotion 结论：`61` 现在更明确把治理顺序差异、classifier 幻觉与 owner taxonomy 继续压回 why，只保留“检查必须落在最有治理价值的时点”“判断已不会改变 authority allocation 时不应继续花 token”这两条抽象判断。
+- 本轮新的 source-quality split 结论：`102` 现已把 candidate 页规则收回到 evidence-status + generic handoff，不再提前点名 `sole writer / writeback seam / freshness gate`；`87` 现已进一步退回 why，不再重列 truth ladder 或 truth-plane 顺序；`architecture/README` 也改成只回答四个对象问题，而不再像第二条 frontdoor 公式链。
+- 本轮新的 editorial-boundary 结论：`41` 现已把 `第一次定义权 / route law` 这组编辑治理词退回 `navigation/README / 04`；哲学导航页只保留 why，不再公开承载 editorial rulebook。
+- 本轮新的 residual-vocabulary 结论：`84` 深段里的 `Prompt 效力` 现已改写成 `世界准入能力`；`102` 深段里的 `sole writer / writeback path / freshness gate` 现已退回 generic object-level authority wording；`87` 与 `41` 也继续收掉了 `writeback seam` 对象矩阵提示与 `route law / 第一次定义权` 这组编辑法词。
+- 本轮新的 sovereignty-wording 结论：`03` 的 `0.0` 与顶层三分法现在更明确继续写成 `世界准入 / 扩张定价 / 当前真相`，不再由 `Prompt` 结果词领起首答；`41` 的 Prompt 线开头也继续改成“世界定义权、消费边界与继续资格”。
+- 本轮新的 security-entry 结论：`security/README` 现在更明确继续只收 `signer ambiguity / ledger-verdict ambiguity / cleanup authority ambiguity` 这三种进入条件，不再把 readback 或 reopen 词当入口桶。
+- 本轮新的 102-visible-name 结论：`guides/102` 现在更明确把 `contract / registry / current-truth surface / consumer subset / hotspot kernel / mirror gap discipline` 写成 visible entry names；object-level signals 只再承担 candidate evidence，不承担对象 verdict。
+- 本轮新的 87-why-only 结论：`87` 的问题列表和边界可证段现在更明确把 ladder 与 object next hop 继续还给 `102 / architecture/README`，自身只保留合法复杂度中心、`one writable present` 与 later maintainer veto 的 why。
+- 本轮新的 prompt-frontdoor 结论：`03 / 41 / 84` 现在更明确把 Prompt 线彻底收回“世界准入 / 世界定义权 / 世界准入能力”这组 sovereignty 语言；`84` 的 deep section 也不再公开发布 witness/test rubric，而只保留一条原则句和 handoff。
+- 本轮新的 owner-card 结论：`10` 现已把 crosswalk 收回 `strong signer / weak readback / continuation consumer` 三列，不再继续生产 `liability-threshold readback / reopen tail evidence / finality receipt` 这组二阶 taxonomy。
+- 本轮新的 security-index 结论：`security/README` 现在更明确只保留 `signer ambiguity / ledger-verdict ambiguity / cleanup authority ambiguity` 三类入口，不再把 readback、reopen 或 deeper cleanup vocabulary 当成首页分流词。
+- 本轮新的 61-why 结论：`61` 现在进一步把 `future-turn decision authority lease`、`classifier`、`working set` 和 stable-bytes inventory 收回到抽象 why，只保留“未被重新定价的继续会同时延长 authority 与成本在场”“关键字节必须被当成制度资产稳定下来”这两条原则。
+- 本轮新的 source-quality split 结论：`102` 现已把 handoff 改写成 unresolved-authority note，而不是 route 义务；`87` 的 temporal honesty 也退回“旧时间证据不得直接跨时写 present”的原则句；`architecture/README` 开头则只保留四个对象问题，不再先教前置页位。
+- 本轮新的 prompt-title 结论：`84` 现在更明确把顶层 owner 标题收回“Prompt 首先是世界准入顺序，不是文案技巧”，问题列表也从 object inventory 收回到 `single-source world definition / projection discipline / continuation qualification` 这组 invariant；`84` 页首不再由结果词领路。
+- 本轮新的 03-summary 结论：`03` 的“一句话收束”现在更明确先说“三条制度如何先成立”，再说运行时平面怎样协同承接，不再让 runtime planes 在总结句里重新升格成第一设计单位。
+- 本轮新的 prompt-section-title 结论：`03` 的 `25 / 28` 现在继续把标题从平行 Prompt first-answer 收回成 `continue verdict` 与 `same-world 边界判断`，不再用“Prompt 首先...”这类句法重复 owner-level noun。
+- 本轮新的 governance-why 结论：`61` 现在进一步把 section-2 / section-4 的案例 inventory 压回原则句，只保留“检查必须落在最有治理价值的时点”“自动化必须可撤销”这两层 why，不再让举例段滑向机制 owner taxonomy。
+- 本轮新的根仓同步结论：`fetch origin main` 与 `merge --ff-only origin/main` 已再次成功，根仓当前仍是干净的 `main...origin/main`；本轮继续严格只在 `.worktrees/mainloop` 内推进。
+- 本轮新的 prompt-owner 收束结论：`84` 现已继续把 Prompt 顶层 owner 压回 invariant，只保留 `frontdoor order` 与 `canonical Prompt ABI` 两条 canonical fact，不再在页首保留额外动作链、reject trio 或“magic”叙事；surface pluralism 也被明确收回“adjudication single-source”。
+- 本轮新的 prompt-why 收束结论：`03` 的 Prompt 中后段残片现在继续退回 pointer，`25 / 28` 不再重发“连续性制度 / 组织制度边界”这类平行 first answer；`41` 也继续退回 why-only 哲学导航，不再公开列 owner-chain nouns。
+- 本轮新的 governance-why 收束结论：`61` 现已把失败语义与 token 经济段继续压回“不同资产不共享同一种失败语义”与“只在仍有决策增益时花 token”两条 why，不再把 case list 与 chain/readback law 写成第二套 owner taxonomy。
+- 本轮新的 source-quality-frontdoor 结论：`102` 现在更明确把 canonical ladder 写成“谁配签现在”的 speaking-right protocol；`87` 则继续退回 why-only，明确把 evidence ladder、降格规则与 speaking-right protocol 还给 `102`。
+- 本轮新的 architecture-boundary 结论：`architecture/README` 现已继续压回 object-layer expansion，不再代发 ingress sequence、平面库存或 change-risk protocol；它现在更明确只回答 `current-truth surface` 怎样继续展开成 `authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer`。
+- 本轮新的 philosophy-frontdoor 结论：`41` 的源码质量哲学入口现已继续改成“先确认谁配写现在，再让 ladder、writeback doctrine 与 failure honesty 保护 one writable present”，不再把 source-quality 哲学前门收窄成单纯 ladder 口号。
+- 本轮新的根仓同步结论：`fetch origin main` 与 `merge --ff-only origin/main` 已再次成功，根仓当前状态为干净的 `main...origin/main`；更早出现的 ahead / dirty / unmerged 快照不再适合作为当前起手假设。
+- 本轮新的前门收束结论：`03` 已继续收掉第二组 Prompt / 治理 / 当前真相 `first-answer nouns`，并把中后段 Prompt why、治理坏解与 failure-order 影子压回 owner redirect。当前更稳的写法是：`03` 只保留一组宪法钩子与 why / self-audit 句，不再重发 mini constitution。
+- 本轮新的总图结论：`09` 现在更明确只保留 mirror-level control-plane verdict，不再把 Prompt witness nouns、治理 canonical chain nouns 或 current-truth ladder nouns留在总图页；如果一段 `09` 已经开始点 `witness / pricing-right / current-truth surface`，默认按越位候选处理。
+- 本轮新的 route 结论：`navigation/README` 现已把 current-truth 首跳固定回 `README -> guides/102`，并把分流标题改写成“谁在定义世界 / 谁在为扩张定价 / 谁在宣布现在”这组三个第一问题，而不是继续按目录桶组织前门。
+- 本轮新的苏格拉底结论：`navigation/15` 现在更明确只保留失稳前问题梯子，不再发布治理 failure order、later-maintainer reject 顺序或编号路线图；若排查已经进入 failure semantics / reopen qualification / builder-facing template，统一离开 `15` 回对应 owner chain。
+- 本轮新的安全与源码质量结论：`security/README` 现已继续收回 signer / ledger / cleanup authority 的不对称，不再代发 canonical weak-readback 语义；`philosophy/87` 现已只保留“同一源码质量判断不应多证据层首答”的提醒，目录职责与 frontdoor law 统一退回 `navigation/04` 与根入口。
 - 本轮新的根仓同步结论：最新一次 `fetch origin main && checkout main && merge --ff-only origin/main` 已再次成功，根仓状态回到 `main...origin/main`；更早出现的 `userbook` merge 阻塞现在只应读成时间点快照，而不是当前起手假设。
 - 本轮新的 `03` 顶部治理结论：页首三条母线里的治理线现在也更明确挂上了固定 owner 顺序，和 Prompt / 源码质量两线更对称，later maintainer 不再需要等到中段 why 才看到治理 owner chain。
 - 本轮新的 `03` 顶部入口结论：源码质量线在页首三处现在更明确统一成同一条 owner 顺序 `07 -> 102 -> 87 -> architecture/README`，不再一会儿拆写成 `102 / 87 / architecture`，一会儿在中后段再补完整顺序。

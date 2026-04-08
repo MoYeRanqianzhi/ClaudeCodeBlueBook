@@ -5,25 +5,29 @@
 1. 你已经知道主语，只缺下一层证据或 next-hop。
 2. 你在争某页是否越位改判。
 
-如果你还缺主语、最小顺序或 first reject path，先回 [../README.md](../README.md) 与 `09`；但 Prompt 顶层主语与 first-reject path 例外，直接回 `philosophy/84`。
+如果你还缺主语或最小顺序，先回 [../README.md](../README.md)；但三条线的正式 first-hop 要记死：
+
+- Prompt 顶层主语与 first-reject path，直接回 `philosophy/84`
+- 治理首答，直接回 `../10`
+- 当前真相与 evidence ceiling，直接按 `../README.md -> guides/102`
 
 这里默认只回答 next-hop：
 
-- 缺主语、最小顺序或 first reject path，默认回 `../README.md` 与 `09`；Prompt 顶层主语与 first-reject path 例外，直接回 `philosophy/84`
 - 缺目录法或入口升级规则，回 `../../docs/development/00-研究方法.md`
-- 缺源码质量证据 ceiling，回 `guides/102`
+- 缺当前真相的方法入口、evidence ceiling 或 owner 次序，回 `../README.md -> guides/102`
+- 缺其他更细 route gap，再按下面三类分流
 
-## 三类 route 缺口
+## 三类第一问题缺口
 
-- Prompt
+- 谁在定义世界
   - 缺顶层主语与 `first-reject path`，回 `philosophy/84`
   - 若争的是继承是否越权、continue qualification 或续租是否合法，回 `84 -> 81`
   - 缺“为什么这轮还只该 route trim”，回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md) 与 [../../docs/development/00-研究方法.md](../../docs/development/00-%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95.md)
-- 治理
+- 谁在为扩张定价
   - 缺治理首答，回 `../10`
   - 已确认主语，只缺 signer / mechanism，回 `security`；缺 tail readback / reopen qualification，回 `risk`；缺 execution / repair drill，回 `playbooks`
-  - 还在争 mode、usage、approval 或 cleanup result 谁说了算，先退回 `../README` 与 `09`
-- 当前真相
+  - 还在争 mode、usage、approval 或 cleanup result 谁说了算，先退回 `../10`
+- 谁在宣布现在
   - 缺方法入口或 evidence ceiling，回 `guides/102`
   - 已确认 ceiling，缺 why 回 `philosophy/87`；缺 `sole writer / recovery asset / anti-zombie / writeback seam` 回 `architecture/README`
   - 还在混 runtime-core evidence、operator-governance evidence 与公开镜像缺口，先退回 `06`
@@ -49,4 +53,4 @@
 
 - `navigation/` 只保留稳定节点与 route gap，不把每条深链重新摊平成首页。
 - 如果一个 route 句子开始代签 truth、owner law 或 verdict，它就已经越位。
-- 如果新的 route 提案还需要解释 canonical formula、最小顺序或目录法，就先退回 `../README`、`09` 与 `docs/development/00`。
+- 如果新的 route 提案还需要解释 canonical formula、治理 owner law、current-truth ladder 或目录法，就先退回 `../README`、`../10`、`guides/102` 与 `docs/development/00`，不要把 `navigation/` 变成第二 frontdoor。

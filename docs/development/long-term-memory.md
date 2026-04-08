@@ -8,6 +8,99 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-sovereignty-frontdoor live 记忆：
+  - `84` 与 `41` 默认继续把 Prompt 线前门写成“谁有权把当前世界合法编译进模型 / 世界定义权必须单源”
+  - Prompt 效力、same-world property、专题侧门词汇与 side-door inventory 默认都不配再充当前门 noun
+- 当前批次继续新增一条 security-signer-only-entry live 记忆：
+  - `security/README` 默认继续只围绕 signer / ledger / cleanup authority 分流
+  - canonical chain stage names、runtime readback class、reopen liability 与用户侧恢复语义默认继续回 `10 / risk`
+- 当前批次继续新增一条 61-abstract-only live 记忆：
+  - `61` 默认继续只保留 why：顺序决定风险与花费、不同资产不共享失败语义、authority allocation 不再变化时不应继续花 token
+  - 若 `61` 再次出现治理 stage names、classifier 反例清单或 countersigning/readback law，默认按 owner taxonomy 回流处理
+- 当前批次继续新增一条 source-quality-generic-handoff live 记忆：
+  - `102` 默认继续只给 evidence-status 语言与 generic handoff 到 `architecture/README`
+  - `87` 默认继续不重发 ladder、truth-plane 顺序或 object route；`architecture/README` 默认继续只保留四个对象问题
+- 当前批次继续新增一条 editorial-law-out-of-41 live 记忆：
+  - `41` 默认继续不承载 `第一次定义权 / route law / speaking-right ledger` 的编辑治理正文
+  - 这组 editorial governance 默认只回 `navigation/README` 与 `navigation/04`
+- 当前批次继续新增一条 residual-vocabulary-scrub live 记忆：
+  - `84` 默认继续不用 `Prompt 效力` 这类结果词承接深段解释，而改用 `世界准入能力`
+  - `102` 默认继续不用 `sole writer / writeback path / freshness gate` 这组 object noun 充当前门级 wording
+  - `41 / 87` 默认继续不用 `route law / 第一次定义权 / writeback seam 对象矩阵` 这类编辑法或对象矩阵词承担哲学页主句
+- 当前批次继续新增一条 sovereignty-wording-across-frontdoors live 记忆：
+  - `03 / 41 / 84` 默认继续把 Prompt 线写成 `世界准入 / 世界定义权 / 世界准入能力`，不再让 `Prompt` 结果词领起前门
+  - 更稳的默认修法是：`先写 sovereignty question -> 再写 downstream mechanism name`
+- 当前批次继续新增一条 security-three-ambiguities live 记忆：
+  - `security/README` 默认继续只按 `signer ambiguity / ledger-verdict ambiguity / cleanup authority ambiguity` 分流
+  - 任何 readback、reopen、consumer class 词若重新出现在安全前门，默认回 `10 / risk`
+- 当前批次继续新增一条 102-visible-entry-names live 记忆：
+  - `102` 默认继续把 `contract / registry / current-truth surface / consumer subset / hotspot kernel / mirror gap discipline` 当 visible entry names
+  - object-level signals 默认只配当 candidate evidence，不直接升级成对象 verdict
+- 当前批次继续新增一条 87-ladder-free-why live 记忆：
+  - `87` 默认继续不在问题列表或边界段里重发 ladder、truth-plane 顺序或对象 next hop
+  - `87` 的更稳默认口径只剩：合法复杂度中心、边界可证、`one writable present`、future maintainer veto、refactor option value
+- 当前批次继续新增一条 prompt-frontdoor-sovereignty-only live 记忆：
+  - `03 / 41 / 84` 默认继续把 Prompt 线写成 `世界准入 / 世界定义权 / 世界准入能力`
+  - `84` 的 deep section 默认继续不公开发布 witness/test rubric，而只保留原则句与 handoff
+- 当前批次继续新增一条 governance-card-three-column live 记忆：
+  - `10` 默认继续只保留 `strong signer / weak readback / continuation consumer` 三列
+  - 更细的 liability / reopen / finality taxonomy 默认统一回 `risk` 与 deeper owner pages
+- 当前批次继续新增一条 security-three-entry-ambiguities live 记忆：
+  - `security/README` 默认继续只按 `signer ambiguity / ledger-verdict ambiguity / cleanup authority ambiguity` 分流
+  - 首页若再次出现 readback/reopen/deeper cleanup 词，默认按 vocabulary leak 处理
+- 当前批次继续新增一条 61-two-principles-only live 记忆：
+  - `61` 默认继续只保留两条最贵 why：`未被重新定价的继续会同时延长 authority 与成本在场`、`关键字节必须被当成制度资产稳定下来`
+  - `classifier / working set / stable-bytes inventory` 这类对象例子默认继续回源码锚点与 owner page
+- 当前批次继续新增一条 unresolved-authority-note live 记忆：
+  - `102` 默认继续把 candidate 页 handoff 写成 unresolved-authority note，而不是 route law
+  - `87` 与 `architecture/README` 默认继续只回答 why 与 object layer，不替 `102` 承担证据路由义务
+- 当前批次继续新增一条 prompt-title-not-effect-word live 记忆：
+  - `84` 默认继续把顶层 owner 标题与问题列表写成世界准入顺序、single-source world definition、projection discipline 与 continuation qualification
+  - `84` 默认继续不让结果词、magic framing 或 surface inventory 领第一页
+- 当前批次继续新增一条 03-summary-plane-demotion live 记忆：
+  - `03` 的总结句默认继续先写三条制度判断，再写运行时平面怎样承接
+  - 若总结句再次把 runtime planes 写成设计主体，默认按“平面重新升格”处理
+- 当前批次继续新增一条 03-prompt-subtitle-demotion live 记忆：
+  - `03` 的 Prompt 中后段标题默认继续不使用“Prompt 首先...”这类平行 first-answer 句法
+  - 更稳的默认修法是把标题收成 `continue verdict / same-world boundary / compression audit` 这类 projection 级语言
+- 当前批次继续新增一条 61-example-inventory-demotion live 记忆：
+  - `61` 默认继续把案例 list 压回 why 原则，只在确实需要时保留一个示例
+  - 若 why 页再次出现多条机制示例清单，默认按“owner taxonomy 回流”处理
+- 最新根仓同步记忆（2026-04-08，本轮深化批次）继续保持健康态：`fetch origin main` 与 `merge --ff-only origin/main` 均再次成功，根仓当前仍是干净的 `main...origin/main`。
+- 当前批次继续新增一条 prompt-owner-invariant-only live 记忆：
+  - `84` 默认继续只保留 Prompt 顶层 owner 的两条 canonical fact：`frontdoor order` 与 `canonical Prompt ABI`
+  - `84` 默认继续不在页首保留额外动作链、reject trio、magic framing 或大段 surface inventory；更稳的默认修法是 `先写 invariant -> 再写 single-source pluralism -> 具体对象回 82 / anchors`
+- 当前批次继续新增一条 prompt-why-pointer-only live 记忆：
+  - `03` 的 Prompt 中后段默认继续不重发“连续性制度 / 组织制度边界”这类平行 first answer
+  - `03` 与 `41` 若继续谈 Prompt，只保留 why / self-audit / pointer；凡 owner-chain nouns、witness order、object inventory 再出现，默认退回 `84`
+- 当前批次继续新增一条 governance-61-why-only live 记忆：
+  - `61` 默认继续只保留“不同资产不共享同一种失败语义”“只在仍有决策增益时花 token”这组 why
+  - `61` 默认继续不重发 canonical chain、weak-readback law 或完整 case taxonomy；对象与机制差异统一回 `10 / security / playbooks`
+- 当前批次继续新增一条 source-quality-speaking-right-split live 记忆：
+  - `102` 默认继续独占 evidence ladder、降格规则与 speaking-right protocol，并明说这条 ladder 是“谁配签现在”的方法协议
+  - `87` 默认继续只保留 why：合法复杂度中心、failure honesty、later-maintainer rejectability 与 refactorability
+- 当前批次继续新增一条 architecture-object-expansion live 记忆：
+  - `architecture/README` 默认继续只把 `current-truth surface` 展开成对象层 `authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer`
+  - 若 `architecture/README` 再次开始发布 ingress sequence、平面库存、change-risk protocol 或目录法，默认按越位候选处理
+- 当前批次继续新增一条 41-philosophy-frontdoor live 记忆：
+  - `41` 默认继续只回答 why，不再持有三条母线的共享公式库
+  - source-quality 哲学前门默认继续先写“谁配写现在 + one writable present”，再 handoff 到 `102 / architecture/README`
+- 最新根仓同步记忆（2026-04-08，本轮收束批次）已再次更新为健康态：`fetch origin main` 与 `merge --ff-only origin/main` 均成功，根仓当前状态为干净的 `main...origin/main`；更早记录的 ahead / dirty / unmerged 快照只作历史观察保留。
+- 当前批次继续新增一条 03-single-constitutional-hook live 记忆：
+  - `03` 默认继续只保留一组 Prompt / 治理 / 当前真相宪法钩子，不再允许第二组 `first-answer nouns`
+  - `03` 的中后段 Prompt / 治理小节若再次开始发布 mini constitution、failure-order、坏解卡或 owner 顺序，默认按越位候选处理；更稳的默认修法是 `删 bundle -> 留 why / self-audit 句 -> 路由回 84 / 10 / 61 / 102 / 87 / architecture`
+- 当前批次继续新增一条 09-mirror-only live 记忆：
+  - `09` 默认继续只发布 mirror-level control-plane verdict
+  - 凡 `09` 再次出现 Prompt witness nouns、治理 canonical chain nouns、四类被定价空间或 current-truth ladder nouns，默认按“总图页重开 owner 链”处理
+- 当前批次继续新增一条 navigation-first-question-frontdoor live 记忆：
+  - `navigation/README` 默认继续把 first-hop 固定成 `Prompt -> 84`、`治理 -> 10`、`当前真相 -> README -> guides/102`
+  - `navigation/README` 默认继续按“谁在定义世界 / 谁在为扩张定价 / 谁在宣布现在”组织 route gap，而不是按目录桶组织 frontdoor ontology
+- 当前批次继续新增一条 nav15-pre-failure-only live 记忆：
+  - `navigation/15` 默认继续只保留失稳前问题梯子与第一条反证信号
+  - 凡 `15` 再次出现 failure order、later-maintainer reject 顺序、编号路线图或 builder-facing 模板 handoff，默认改回“离开 `15`，回对应 owner chain”
+- 当前批次继续新增一条 security-and-87-speaking-right live 记忆：
+  - `security/README` 默认继续只保留 signer / ledger / cleanup authority 的安全侧翻译；canonical governance chain、weak-readback 与用户侧恢复语义统一回 `10` 与 `risk`
+  - `philosophy/87` 默认继续只保留源码质量 why 与“同题不多层首答”的提醒；目录职责、证据层 speaking right 与 frontdoor law 一律退回 `navigation/04` 与根入口
 - 最新根仓同步记忆（2026-04-08，本轮最新批次）继续保持健康态：`fetch origin main`、`checkout main` 与 `merge --ff-only origin/main` 均成功，根仓状态为 `main...origin/main`。之前记录的 `userbook` 冲突阻塞只应被读成时间点快照。
 - 当前批次继续新增一条 03-top-quality-route live 记忆：
   - `03` 顶部三处源码质量入口默认继续统一写成 `07 -> guides/102 -> philosophy/87 -> architecture/README`，不再保留 `102 / 87 / architecture` 分拆口径

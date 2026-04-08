@@ -61,12 +61,7 @@
 Claude Code 更成熟的地方在于：
 
 - 它先决定谁必须先检查
-
-比如：
-
-1. 危险 allow rule 会在 auto mode classifier 之前被剔除，因为它们会绕过后续判断；
-2. `.claude/**` 这类窄豁免被允许在极窄边界上提前通过，但更一般的 allow rule 仍然要服从后续 safety check；
-3. 某些路径先做 source gating，再做 adapter enforcement，而不是把所有判断都塞给同一层。
+- 具体顺序差异只是在证明同一条原则：检查必须落在最有治理价值的时点；更细 precedence 统一回 `83 / security / playbooks`
 
 这说明安全与省 token 的共同问题其实是：
 
@@ -85,12 +80,11 @@ Claude Code 更成熟的地方在于：
 
 Claude Code 对失败并不追求一种统一美德。
 
-它会按资产类别分型：
+它只坚持一条更高的原则：
 
-1. 有些远程托管设置在无缓存时 fail-open，避免把非核心治理流量升级成全局阻断；
-2. 某些 policy limit 又会在关键路径上 fail-closed；
-3. classifier 遇到 transcript too long 时，交互模式退回人工，headless 直接终止；
-4. autocompact 在连续失败后触发 circuit breaker，而不是永远重试。
+- 不同资产不该共享同一种失败语义。
+
+远程托管设置、policy limit、classifier 与 autocompact 只是这条原则的不同例子；具体对象与机制差异统一回 `10 / security / playbooks`，本页不再把 case list写成第二套 owner taxonomy。
 
 这说明系统真正追求的不是：
 
@@ -112,11 +106,7 @@ Claude Code 对失败并不追求一种统一美德。
 
 如果自动化只能越来越多、越来越强，那它迟早会从行动力变成失控源。
 
-Claude Code 明显在避免这一点：
-
-1. auto mode 不是永久授权，而是随时可能被 denial-limit fallback 打回人工；
-2. classifier 如果继续没有增益，会停止自动化路径；
-3. bypass、auto 这类高阶模式本身还受 gate 与 killswitch 约束。
+Claude Code 明显在避免这一点：auto mode 不是永久授权，classifier 没有增益时应退出自动化路径，高阶模式本身也继续受 gate 与 killswitch 约束。
 
 这说明 Claude Code 对自动化的理解不是：
 
@@ -144,25 +134,9 @@ Claude Code 并不追求“检查越多越安全”。
 
 如果答案是否定的，系统就会停止继续烧 token。
 
-更硬一点说，主上下文席位也不是纯成本位，而是 `future-turn decision authority lease`；大结果继续留在席位里，效果上等价于未经重定价地延长权威在场。
+更硬一点说，未被重新定价的继续会同时延长 authority 与成本在场；它不是便宜，而是把代价推迟到后面。
 
-这里也要先拒绝一种常见误写：
-
-- `classifier` 不是治理控制面之外的免费裁判
-
-它只有在还能改变 `verdict` 时才值得调用；否则系统只是在用额外 token 购买“看起来更谨慎”的幻觉。
-
-最该点名的两种坏解也只该是：
-
-1. 危险 allow rule 已经让 classifier 失去仲裁空间，却还继续调用。
-2. allowlist、transcript 或 working set 已让结论稳定，却还继续用 classifier 购买谨慎表演。
-
-例如：
-
-1. 某些动作在安全 allowlist 下已足够确定，就不会再把成本继续丢给 classifier；
-2. 危险 allow rule 若会直接绕过 classifier，则先被剔除；
-3. transcript 已长到 classifier 再判也无增益时，直接转人工或终止；
-4. autocompact 连续失败后触发 circuit breaker，而不是继续徒劳压缩。
+这里也要先拒绝一种常见误写：当判断已经不会改变 authority allocation，却还继续加检、重试自动化或保留过大的工作集时，系统只是在用额外 token 购买“看起来更谨慎”的幻觉。具体反例统一回 `10 / security / playbooks`。
 
 所以 Claude Code 的省 token，并不是：
 
@@ -175,9 +149,9 @@ Claude Code 并不追求“检查越多越安全”。
 这也是为什么安全与成本在这里并不冲突，而是共享同一条判断：
 
 - 决策增益是否仍存在
-- 也就是不为未经 `governance key / truth chain / typed ask / decision window / continuation / cleanup` 定价的动作、能力、上下文席位与时间续费
+- 也就是不让未被重新定价的动作、能力、上下文席位与时间续费继续免费扩张
 
-弱读回面若可代签，主工作集就必须长期保留更多回放与对账细节，`externalize / evict` 会立刻反转成证明成本。
+如果继续讨论谁在代签、谁只在读回、谁在收口，说明你缺的已不是 why，而是治理 owner chain。
 
 ## 6. 第五层：稳定字节是制度资产，不是实现细节
 
@@ -185,12 +159,7 @@ Claude Code 的很多高级设计都在强调：
 
 - 关键字节必须稳定
 
-例如：
-
-1. system prompt sections 的 cache 与显式危险标记；
-2. sticky beta / latched header；
-3. tool-result replacement replay；
-4. prompt cache break diff 与 root-cause 解释。
+这里先只保留抽象判断：凡会同时改写治理、成本与解释一致性的字节，都应被当成制度资产稳定下来；更细的缓存、重放与 break 证据统一回源码锚点与对象页。
 
 这说明对 Claude Code 来说，真正要被保护的不是“缓存命中率”这个结果，而是：
 
