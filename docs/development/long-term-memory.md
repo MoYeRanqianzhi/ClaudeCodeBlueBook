@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 03-midsection-no-slogan-repeat live 记忆：
+  - `03` 中后段默认继续不再用多个“设计原则”反复重发 Prompt/治理/源码质量的首问口号
+  - 更稳的默认写法是：只保留一处 canonical why，后续章节只写新增观察或新增自校，不再重发 owner 结论
+- 最新根仓同步记忆（2026-04-08，本批次本轮再次漂移）更新为外部阻塞态：本轮起手 `git fetch origin main` 与 `git merge --ff-only origin/main` 一度成功，但随后根仓 `/home/mo/m/projects/cc/analysis` 又出现 `main...origin/main [ahead 20]`、`UU bluebook/security/README.md`、`UU bluebook/security/source-notes/README.md`、`UU docs/development/research-log.md` 等外层冲突与新增文件；后续继续严格只在 `.worktrees/mainloop` 内推进，不触碰根仓冲突。
 - 当前批次继续新增一条 control-pages-no-second-frontdoor live 记忆：
   - `README` 默认继续只做定题与首跳，不再用第二句解释 `84 / 10 / 102` 为什么回答同一个问题
   - `03` 默认继续只解释三条母线为什么成立，不再在页首重发 `first test / counterfeit / minimum repair`

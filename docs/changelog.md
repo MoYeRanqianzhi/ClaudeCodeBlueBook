@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的总控页纪律：`03` 中后段现已继续收掉重复发放的治理/源码质量口号，只保留新增 why 观察与自校句，不再在不同“设计原则”里重复重发同一条首问。与此同时，本轮起手根仓 `git fetch origin main` 与 `git merge --ff-only origin/main` 一度成功，但随后再次观测到根仓 `/home/mo/m/projects/cc/analysis` 外层出现 `ahead 20` 与未解决冲突；正文仍然严格只在 `.worktrees/mainloop` 内推进
 - 继续更新 `bluebook/{README.md,03-设计哲学.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的总控页纪律：根入口现已回到纯首跳，`03` 现已退回“解释三条母线为什么成立”的 why 页，`06` 现已退回“只验母线是否闭合”的 self-audit 页；高流量页不再重复发放 Prompt/治理/源码质量的 `first test / minimum repair`。本轮根仓 `git fetch origin main` 与 `git merge --ff-only origin/main` 继续成功，结果为 `Already up to date.`
 - 继续更新 `bluebook/philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 Prompt 纪律：`84` 现已把 same-world 主测试后紧跟的 mechanism labels、合法复数条件串与 late-binding 约束句继续压回 failure-first 语言，只在 failure 已成立后才承认诊断标签存在。本轮根仓 `git fetch origin main` 与 `git merge --ff-only origin/main` 继续成功，结果为 `Already up to date.`
 - 继续更新 `bluebook/{guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md,README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的术语纪律：`102` 的高可见主轴、continuity 提问、附表段与总结句现已继续统一压回 `current-truth claim state / provisional current-truth claim` 语言，根入口治理首跳里残留的 `owner 页` 口气也已改回 `目标页`。本轮根仓 `git fetch origin main` 与 `git merge --ff-only origin/main` 继续成功，结果为 `Already up to date.`
