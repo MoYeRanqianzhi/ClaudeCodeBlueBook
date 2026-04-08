@@ -148,6 +148,7 @@ Claude Code 并不追求“检查越多越安全”。
 
 更稳一点说，省 token 追的不是 `fewer total asks`，而是 `fewer zero-delta asks`：凡不会新增 `repricing / deny / cleanup` 决策增益的重复批准、重复分类或重复 compact，都只是在把 `authority lease` 的结算成本往后拖。
 更细一点说，重复 ask、无增益 classifier 与默认重试一旦只是在重演同一类批准，它们就不再是“更谨慎的检查”，而是把最早 `unpaid expansion` 转移到了审批面与判断面本身。
+更硬一点说，没有新增 signer ceiling、没有收紧 boundary、也没有推进 cleanup 的 ask，不会因为多过一遍 classifier 或 modal 就更安全；它只是把 `zero-delta ask` 伪装成谨慎。
 
 如果继续讨论谁在代签、谁只在读回、谁在收口，说明你缺的已不是 why，而是治理 owner chain。
 

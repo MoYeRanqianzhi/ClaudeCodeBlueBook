@@ -29,6 +29,7 @@
 
 `repricing seam` 不是一个补救动作名，而是这四问唯一允许改价的回炉口：凡要改写 continue、默认重试、usage 解读或 readback 结论的动作，都必须回到这里重开。若不同 surface 可以各自补签一点安全、一点成本，同一现场就会出现多头定价，`free-expansion relapse` 也会重新出现。这里入口层唯一认的 `reject trio` 也只剩：`decision-window collapse / projection usurpation / free-expansion relapse`；凡 usage、status、readback 或 reopen tail 不能补齐 `repricing proof / lease checkpoint / cleanup`，一律先降回 `weak readback / tail evidence`，不得在尾链补签继续、重试或 reopen 资格。若同类安全扩张在没有新增 `repricing / deny` 决策增益时仍反复 ask，入口层也先按 `approval fatigue` 记账，而不是按体验波动归档；这说明最早 `unpaid expansion` 已从动作本身转移到重复批准。
 这里的 `weak readback` 也应显式包含 settings diff、hook review、status snapshot 与 host replay：凡这些 surface 只能展示“刚才发生了什么”，却不能独立补齐 `repricing proof / lease checkpoint / cleanup`，就只配回单，不配回判。
+一旦某次 ask 只能产出 approval receipt，却没有新增 signer 证据、boundary delta 或 cleanup 结果，它也应视作 `weak readback`：这类 `zero-delta ask` 只会补一张回单，不会补一条 `repricing proof`。
 
 若症状正好发生在 `compact / resume / re-entry`，也只把它们当成 `lease checkpoint` 的暴露时刻；这页不继续展开这些入口各自的对象清单。
 

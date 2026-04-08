@@ -84,6 +84,7 @@
 判断标准：
 
 - 如果 ask 只是“弹个框等人点”，而不是围绕同一请求做分布式仲裁，它就还不是正式治理控制面。
+- 再追一问：这次 ask 有没有真的收紧 signer ceiling、收回免费扩张，还是只是在重复上一轮已知 verdict；若后者成立，它就不是新的 typed ask，而应被降回 `zero-delta ask / weak readback` 的治理噪音。
 
 ### 2.2.1 `Context Usage` 在我这里是 `decision window` 证据面，还是成本仪表
 

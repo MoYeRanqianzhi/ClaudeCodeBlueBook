@@ -7807,3 +7807,5 @@
 - 因而这批的正文动作也都很克制：`06` 把 Prompt 自校压成“接手者是否还得重新搜索现场与动作空间”；`84` 把世界准入能力的收益明确写成“当前、下一步、接手后都活在同一个现场，并且不必重新枚举候选动作”；`81` 把工具 ABI / 输出法 / 用户可见面写成共同压缩下一步动作空间；`15` 则把“答不出删掉了哪段动作搜索”的分析直接降格成配置库存，而不是制度问题。
 - `2026-04-08` 本轮最后又收了一批更窄的源码地图残差，只动 `76 / 01 / architecture/84 / 87`。这一刀真正推进的不是再发一套源码质量 why，而是把 later maintainer 的第一条“先去哪说不”压成可继承的单跳规则。
 - 因而这批的正文动作也都指向同一个目标：`76` 把源码地图成熟度补成 `first local veto cue -> first retreat layer` 的暴露； `01` 把 `QueryGuard / sessionIngress / onChangeAppState / build.mjs` 明确写成 first-veto locator； `architecture/84` 把 release-surface shaping 写成变更前协议； `87` 则把可交接的 why-proof 再压成 later maintainer 能一跳回到 `hotspot kernel / sole writer / first retreat layer`。这使源码质量线从“解释为什么先进”更进一步收口到“后来者第一次该从哪条单跳路径拒收错误实现”。
+- `2026-04-08` 接着又收了一个更窄的零增益成本批次，范围落在 `84 / 81 / 15 / 10 / 61 / 100`。这一刀把 Prompt 与治理再次压回同一类 first-principles failure：要么接手者还得重新搜索动作空间，要么 ask 仍不新增 signer / boundary / cleanup 增量。
+- 因而这批的动作也都只补最小判定句：Prompt 线把“为什么有效”继续收成 later consumer 不必重做动作搜索；治理线把 `zero-delta ask` 更明确收成 `weak readback / governance noise`。这样继续往下压后，两条线的共同对象更清楚了：系统真正值钱的不是“更会答”，也不是“更会 ask”，而是更少让 later consumer 为没有新增制度增量的事情再付一遍冷启动或重判成本。

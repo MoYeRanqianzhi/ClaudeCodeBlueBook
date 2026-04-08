@@ -145,6 +145,7 @@ Prompt 线也因此有自己的 `local veto`：凡是不能独立 veto 世界定
 1. 现在到底是谁在定义世界，是否仍然单源。
 2. 当前被消费的是哪条 authoritative transcript / projection，展示层有没有越权成改判层。
 3. 经历 `handoff / compaction / resume` 之后，continuation qualification 是否仍成立，而不是靠重述现场续命。
+4. later consumer 在 `tool choice / delegate / verify` 前，是否仍要先把“还能做什么”从头搜一遍；若下一步没有先被收敛到少数已授权动作，same-world 即使文面仍顺也已开始失效。
 
 如果这三条已经答不清，就先按 same-world test 失败处理；更细 checklist 只有在这三条都站住之后才有意义。
 

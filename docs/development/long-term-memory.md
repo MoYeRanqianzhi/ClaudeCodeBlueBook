@@ -4576,3 +4576,6 @@
 - `81 / 84 / 15` 的长期分工也因此更硬：`81` 解释工具 ABI、输出法与用户可见面如何共同把下一步动作空间压成少数已授权分支； `84` 解释为什么同一份 `world-entry object` 能替 later consumer 省掉动作枚举； `15` 则只保留失稳前自检，追问一段“Prompt 很强”的分析是否真的指出删掉了哪段冷启动动作搜索，而不是重新罗列 artifact 库存。
 - `2026-04-08` 源码地图线也应继续固定一个更硬标准：later maintainer 的单跳 veto 地图必须同时暴露 `first local veto cue -> first retreat layer`。若源码地图只能帮助 grep 文件，却不能帮助 later maintainer 一跳回到 `hotspot kernel / sole writer / retreat layer`，它就还只是检索页，不算可继承的治理地图。
 - `01-源码结构地图` 的长期 locator 组也因此更明确：当问题从“代码在哪”升级成“第一条 veto 先落在哪”，优先看 `QueryGuard / sessionIngress / onChangeAppState / build.mjs` 这组 chokepoint，再回 `architecture/84` 判对象层，而不是先在 consumer subset 或 UI projection 上打补丁。
+- `2026-04-08` 还应继续固定一条跨 Prompt 与治理的零增益成本纪律：later consumer 若还要重新搜索动作空间，或 ask 仍不新增 signer / boundary / cleanup 增量，那它们都已经退回 `zero-delta` 形态。前者说明 same-world 只剩文面顺滑，后者说明治理只剩回单噪音；两者都不该被再包装成“更谨慎”的成熟度。
+- `10 / 61 / 100` 的分工也因此更清楚：`10` 负责把 `zero-delta ask` 降格成 `weak readback`，`61` 负责说明为什么它不增加安全，`100` 负责把“这次 ask 是否真的收紧 signer ceiling”写成苏格拉底追问。
+- `2026-04-08` Prompt 线的零增益成本也应继续类型化：`84` 负责把“还要不要从头搜还能做什么”写成 acid test，`81` 负责把 stable prefix 与动作搜索成本挂钩，`15` 负责把“是否还要遍历哪些动作可能成立”写成失稳前问题梯子。三者共同保护的不是更顺的叙述，而是 later consumer 不再为下一步动作先做冷启动枚举。
