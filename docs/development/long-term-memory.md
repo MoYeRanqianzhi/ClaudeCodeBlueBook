@@ -4579,3 +4579,4 @@
 - `2026-04-08` 还应继续固定一条跨 Prompt 与治理的零增益成本纪律：later consumer 若还要重新搜索动作空间，或 ask 仍不新增 signer / boundary / cleanup 增量，那它们都已经退回 `zero-delta` 形态。前者说明 same-world 只剩文面顺滑，后者说明治理只剩回单噪音；两者都不该被再包装成“更谨慎”的成熟度。
 - `10 / 61 / 100` 的分工也因此更清楚：`10` 负责把 `zero-delta ask` 降格成 `weak readback`，`61` 负责说明为什么它不增加安全，`100` 负责把“这次 ask 是否真的收紧 signer ceiling”写成苏格拉底追问。
 - `2026-04-08` Prompt 线的零增益成本也应继续类型化：`84` 负责把“还要不要从头搜还能做什么”写成 acid test，`81` 负责把 stable prefix 与动作搜索成本挂钩，`15` 负责把“是否还要遍历哪些动作可能成立”写成失稳前问题梯子。三者共同保护的不是更顺的叙述，而是 later consumer 不再为下一步动作先做冷启动枚举。
+- `2026-04-08` Prompt 线还应继续再细一层：`84` 负责把 `next-step choice` 何时从“合法分支中的选择”退回“全量动作中的搜索”写成 first-reject 症状；`81` 负责把 `next-step guard` 明确成负向剪枝，而不只是正向建议。若 compact 后只剩“接下来建议做什么”，却没有保住“哪些分支已被 authority/boundary 排除”，later consumer 仍会重新打开全量动作搜索。
