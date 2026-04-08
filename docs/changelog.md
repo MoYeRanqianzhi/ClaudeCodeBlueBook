@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `docs/development/{long-term-memory,research-log}.md`，补记本轮末尾新的根仓 live 状态：本轮起手 `git fetch origin main` 成功、`git merge --ff-only origin/main` 返回 `Already up to date.`，但在本轮收尾复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态又再次外漂为 `main...origin/main` 且出现多处 root 工作区改动，并伴随 `UU docs/development/research-log.md`。该漂移发生在 `mainloop` 之外，本轮继续严格不触碰根仓文件。
 - 继续更新 `bluebook/security/README.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更细的机制 owner 纪律：`security/README` 现已压开头四连句、合并重复的入场/症状说明，并删除那句偏目录卫生的 `meta` 级句子；安全首页现在更明确地只做 `signer / verdict ledger / cleanup authority` 的 mechanism owner 入口，不再轻度兼做 family 解释页。
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更细的 Prompt residual 纪律：`03` 中 `lawful forgetting`、人类接手、`continue verdict` 与 `same-world` 边界这几处 Prompt 尾段现已进一步压回最小自校句，不再在高流量总论页里长出第二遍 Prompt why / self-audit；`03` 继续只保留 cross-line 原则与最短判断，具体 continuation 资产与 same-world owner 仍统一回 `84`。
 - 继续更新 `bluebook/{philosophy/README.md,api/README.md,playbooks/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更稳的 `meta` 回链纪律：在 `meta/README` 落地后，仍然会直接解释“why / object / verdict 是否越位代签”的高流量页，现在都开始把这类目录契约争议显式送回 `meta/README`，而不再各自在正文里兜圈解决。

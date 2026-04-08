@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的根仓同步结论：本轮起手再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；但在本轮收尾再次复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态已经外漂为带多处 root 工作区改动，并伴随 `UU docs/development/research-log.md`。该漂移发生在 `.worktrees/mainloop` 之外；本轮所有正文与提交仍严格只在 `mainloop` 内完成。
 - 本轮新的 `security` 结论：在 `risk/README` 与 `casebooks/README` 收口之后，又继续压了一刀 `security/README`。这次不是改主语，而是把首页从轻度 family 解释页压回纯 mechanism owner 页：开头四连句合成两句，入场条件与症状说明不再双重列举，偏目录卫生的 `meta` 级句子也删掉。当前判断是，`security/README` 现在更接近 `api/README`、`risk/README` 那种“单职 owner 页”的形态。
 - 本轮新的 `03` Prompt 结论：在 `meta` 回链补齐后，又继续收了一刀 `03` 的 Prompt residual。原先最像“影子 owner / 影子自校”的四处尾段，现在都被压回最小判断：`lawful forgetting` 不再讲第二遍 continuation 资产，人类接手不再展开 Prompt 架构如何组织接手，只保留“人类也应沿同一现场继续”，`continue verdict` 与 `same-world` 边界也都只剩一句自校。当前判断是，`03` 作为高流量总论页，继续只该保留 cross-line 原则，不该再给 later maintainer 学第二套 Prompt why。
 - 本轮新的 `meta` 结构结论：`meta/README` 不是只给总控页看的。并行 Agent 这轮指出，凡是正文已经开始直接解释“哪一页在越位代签 why / object / verdict”的高流量页，都应显式回链 `meta`，否则目录契约争议还会在各页正文里被各说一遍。于是本轮把这类回链补到了 `philosophy/README`、`api/README` 与 `playbooks/README`。
