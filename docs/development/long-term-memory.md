@@ -8,6 +8,30 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 root-sync-blocked-outside-mainloop live 记忆：
+  - `2026-04-08` 这一轮起手已再次执行 `fetch origin main`，但根仓 `merge --ff-only origin/main` 因 `/home/mo/m/projects/cc/analysis` 外层未解决冲突而失败
+  - 这些 `UU` 状态位于 `.worktrees/mainloop` 之外；后续若用户仍要求“开始前先拉主分支”，默认先复核并明确记录阻塞，但不在未获指示前触碰根仓冲突
+- 当前批次继续新增一条 prompt-admissibility-law live 记忆：
+  - Prompt 线默认继续不用 `shared present` 承担主句，以免和 current-truth line 混写
+  - 更稳的默认写法是：`compiled world verdict / single-source adjudication / continuation qualification`；协调成本更低只是 consequence，不是 thesis
+- 当前批次继续新增一条 prompt-counterfeit-trio live 记忆：
+  - `84` 默认继续把 Prompt line 的 counterfeit case 固定成三类：`UI transcript 越权成 protocol transcript`、`delegated context 长成第二世界`、`compaction 留下 summary 但丢 continuation object`
+  - acid test 默认继续同时问 `坏解是什么 / 第一条失稳信号是什么 / 第一条可逆改写是什么`
+- 当前批次继续新增一条 governance-lease-crosswalk live 记忆：
+  - `10` 默认继续独占 `authority lease accounting` 的最短交叉表：`signer 开闸`、`externalized truth chain (verdict ledger) 记账`、`cleanup 结算`，并映射到 `动作 / 能力 / 上下文席位 / 时间`
+  - `61 / security / 41` 默认继续只消费这张交叉表，不再各自重新暗示一套 lease 模型
+- 当前批次继续新增一条 governance-reject-diagnostics live 记忆：
+  - `10` 里的 `reject trio` 默认继续带最短 seam 问句：`decision-window collapse -> 定价是否晚于暴露`、`projection usurpation -> 弱层是否替 signer 或 verdict ledger 说话`、`free-expansion relapse -> lease 是否在未重定价/未结算时被默认续期`
+  - 只记名字不记 seam，默认算“可背诵但不可诊断”的坏写法
+- 当前批次继续新增一条 stable-bytes-not-fifth-asset live 记忆：
+  - `61` 默认继续明确 `stable bytes` 不是第五类被收费资源
+  - 更稳的默认写法是：它们是 `externalized truth chain (verdict ledger)` 的 durable form，让前面四类收费对象保持可重放、可复核、可结算
+- 当前批次继续新增一条 source-quality-shared-artifact live 记忆：
+  - 源码质量线默认继续把 `change-risk record` 当成唯一新增共享接口：`102` 定义字段，`87` 解释为什么值钱，`architecture/README` 把它落成 object / state machine / seam
+  - 后续目录优化若又回到“谁管什么”，默认优先改回“这条线产出什么，别人如何消费”
+- 当前批次继续新增一条 root-frontdoor-minimalism live 记忆：
+  - 根 `README` 默认继续只保留 `三问 + 三首跳 + 一句证据上限`
+  - `continuity` 或 ownership law 若重新回灌根入口，默认按“frontdoor 重新开始解释 directory law”处理
 - 当前批次继续新增一条 root-opener-three-moves live 记忆：
   - `bluebook/README` 的根前门默认继续拆成三步：`三条 governing questions -> 三条首跳 -> evidence ceiling note`
   - 根入口若再次把定题、分流与 public-artifact ceiling 混写成同一口气，默认按“navigation 先于 law”处理

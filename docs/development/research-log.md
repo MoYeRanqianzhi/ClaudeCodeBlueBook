@@ -2,6 +2,15 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的根仓阻塞结论：已再次执行 `fetch origin main`，但根仓 `merge --ff-only origin/main` 因 `/home/mo/m/projects/cc/analysis` 外层现存 `UU` 冲突失败；这些冲突位于 `.worktrees/mainloop` 之外。本轮仍严格只在 `mainloop` 内深化，并把该阻塞写入长期记忆。
+- 本轮新的 Prompt line 结论：`84 / 06 / 03 / 41` 现在继续把 Prompt 哲学从“共享 present / 魔力”推进到更可证伪的 admissibility law：later consumer 继承的是 `compiled world verdict`，合法 late binding 只允许填充预授权槽位，不允许改写 `Authority / Boundary / Transcript / Lineage / Continuation`。
+- 本轮新的 Prompt counterfeit 结论：`84` 现在继续把三类最典型 counterfeit case 写明为 `UI transcript 越权成 protocol transcript`、`delegated context 长成第二世界`、`compaction 留下 summary 但丢 continuation object`，Prompt acid test 因此从口号推进到 earliest reject signal 与 first reversible fix。
+- 本轮新的 governance-lease 结论：`10` 现在继续显式补出 `authority lease accounting` 的最短交叉表，把 `signer 开闸 / externalized truth chain (verdict ledger) 记账 / cleanup 结算` 固定映射到 `动作 / 能力 / 上下文席位 / 时间` 四类收费资源；`61` 与 `security` 则改成消费这张表，不再各自隐含一套 lease 解释。
+- 本轮新的 governance-diagnostics 结论：`10` 的 `reject trio` 现在继续绑定 seam 问句，不再只是可记忆 slogan：`decision-window collapse` 明确追问“定价是否晚于暴露”，`projection usurpation` 追问“弱层是否替 signer 或 verdict ledger 说话”，`free-expansion relapse` 追问“lease 是否在未重定价/未结算时被默认续期”。
+- 本轮新的 stable-bytes 结论：`61` 现在明确把 `stable bytes` 写回 `verdict ledger` 的 durable form，而不是第五类被收费资源；这条修正避免了治理线重新长出 shadow taxonomy。
+- 本轮新的 source-quality artifact 结论：`102`、`87` 与 `architecture/README` 现在更明确共享一条新接口：`change-risk record`。`102` 负责字段与 gap note，`87` 负责解释为什么 later maintainer 若写不出这张表就还不配宣称自己看清了质量边界，`architecture/README` 负责把这张表重新锚到 object / state machine / seam 上。
+- 本轮新的 root-frontdoor 结论：根 `README` 现已继续收回 `三问 + 三首跳 + 一句证据上限`；ownership test 与 continuity 纪律不再停留在根前门，避免根页重新轻度解释 directory law。
+
 - 本轮新的 root-opener 结论：`bluebook/README` 不再把 law、route 与 evidence ceiling 挤在同一开场句里，而是拆成 `三条 governing questions -> 三条首跳 -> evidence ceiling note` 三步；根前门因此先像定题，而不是先像导航。
 - 本轮新的 ownership-test 结论：`navigation/README` 现已独占一句 canonical ownership test，把“定主语 / 解释 why / 判证据 / 展开对象 / 发 contract / 下 verdict / 存样本 / 存记忆”分别固定回根入口、`philosophy / guides / architecture / api / playbooks / casebooks / docs`；其余页只应继承，不再自带完整目录法。
 - 本轮新的 prompt-magic 因果结论：`03 / 06 / 84` 现在更明确把 Claude Code prompt 的“魔力”写成 `anti-renegotiation contract`，也就是 runtime 先预编译 `shared present`，让 `verify / delegate / tool choice / resume / handoff` 可以复用同一世界，而不是继续重谈“现在是什么世界”。
