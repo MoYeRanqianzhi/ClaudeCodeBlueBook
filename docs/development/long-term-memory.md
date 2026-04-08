@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 source-quality-full-chain-at-root live 记忆：
+  - 根 `README` 的源码质量线默认继续不用端点缩写；更稳的默认写法是完整链：`ceiling note / change-risk record / why-proof / landing card / local quality gate`
+- 最新根仓同步记忆（2026-04-08，本批次当前轮）更新为阻塞态：`git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓 `/home/mo/m/projects/cc/analysis` 存在未解决冲突而失败，错误为 `Merging is not possible because you have unmerged files.`；后续继续严格只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 06-deep-causal-floor live 记忆：
+  - `06` 后段默认继续不用 `owner page` 或 `route note` 为因果兜底；更稳的默认写法是直接说明 free exposure / free continuation / transient authority 为什么会联动失真
+  - 尤其 `统一预算器 / build tail / prompt 文案更强` 这类话题，默认继续先问删掉口号后是否仍能说明同一世界、同一秩序或同一边界为何成立
+- 当前批次继续新增一条 architecture-single-handoff live 记忆：
+  - `architecture/README` 默认继续只承认一条源码质量 handoff：`102 record -> 87 why-proof -> landing card -> local quality gate`
+  - 对象层入口若再次长回“另一条默认顺序”或“并行前门”，默认优先收回
 - 当前批次继续新增一条 deep-self-audit-objects live 记忆：
   - `06` 深段默认继续不再用 `owner page` 兜底，而是压回最小可反驳对象：Prompt 回 `compiled world verdict`，治理回 `lease checkpoint`，结构回 `later-maintainer veto`
   - `7.2 入口判据` 默认继续不先问“有没有新增入口”，而先问是否逼 later consumer 重谈同一主语、证据级别或 first-reject path
@@ -4165,3 +4174,20 @@
 - `09` 的 Prompt 与治理 mirror 纪律现在也应继续写死：总图页不再保留 later-maintainer 排查顺序、治理 failure order 或 Prompt witness/object inventory；这些顺序统一回 `15` 与各 owner page。`09` 只保留 constitutional hook，`41` 只保留 first-principles 验收问句，不再增量持有 Prompt production heuristics。
 - `03` 中段的长期默认分析语法现在也应继续写死：`运行时平面` 只配做二级分析透镜，不再升级成顶层设计单位。later maintainer 的 first answer 仍只认三条母线，plane taxonomy 只在对象层帮助看见主权怎样协同。
 - `09` 的第二、三张图中段现在也应继续写死成 mirror-only：治理页不再在总图发布 `governance pricing chain / failure semantics / human fallback` 模板或 later-maintainer 排查顺序；源码质量页也不再在总图发布 current-truth 模板、later reject 规则或排查顺序。所有这些 object/verdict/order 都统一回各 owner page。
+- `2026-04-08` 的最新同步观察应继续记住：根仓库 `git fetch origin main` 成功，但根目录仍带未解决冲突，当前可见阻断至少包括 `bluebook/security/README.md`、`bluebook/security/source-notes/README.md` 与 `docs/development/research-log.md`；因此 `checkout main / merge --ff-only origin/main` 不是安全前置动作。`.worktrees/mainloop` 这边当前无 upstream，且 `HEAD...origin/main = 9/481`，后续若无用户明确要求做大规模同步手术，默认只做 fetch、记录阻塞、继续在隔离 worktree 内推进。
+- Prompt 线当前更硬的长期 acid test 也应继续写死：删掉 `owner nouns / next-hop / checklist` 之后，真正要问的不是术语还能否站立，而是 `compact / resume / handoff` 之后 later consumer 是否仍可沿同一 `compiled world verdict` 继续行动，而不必重新协商“当前世界是什么”。若答不清，先按 same-world test 失败处理，再谈更细 checklist。
+- 蓝皮书目录层的最新稳定分工也应继续写死：根 `README` 只保留三条首跳，当前真相保护明确公开成 `guides/102 -> philosophy/87 -> architecture/README`；`00-导读` 只保留 preface / evidence mode，不再重发三条母线判断；`navigation/README` 只保留 artifact gap 反查，不再代做 first-hop 判定；`01-源码结构地图` 只保留 repo locator，不再兼任 why-proof / object frontdoor / evidence ladder。
+- Prompt potency 的最新稳定解释也应继续写死：`84` 不只说 later consumer 不必重谈世界，还应明确“当前 turn 已继承同一份 compiled world verdict，所以模型不必先重建世界，只需在已裁定边界内选择动作”；`03` 的厚 runtime 判断也必须显式回收到这条 same-world contract，否则读者会把 Prompt 强感误读成 feature density。
+- 下一批 residual 也应记住，不要在后续批次里散掉：治理线仍优先收 `10 / 61` 的 taxonomy 气味，把讨论压回 `earliest unpaid expansion / repricing proof / lease checkpoint / cleanup`；源码质量线仍优先收 `102 / 87 / architecture/README` 的 why-proof 与 local gate 边界，不要让 `quality gate` 再回长成全局 rung。
+- `2026-04-08` 这一轮根仓库同步前置检查仍然是阻断态：`git fetch origin main` 成功，但根仓库 `status` 仍可见 `bluebook/security/README.md`、`bluebook/security/source-notes/README.md`、`docs/development/research-log.md` 的未解决冲突，所以“根仓回到健康态”的旧记忆只应当作历史截面，不应覆盖当前判断。继续工作的稳定纪律仍是：每批先检查，但只在 `.worktrees/mainloop` 内推进与提交。
+- 治理线的新稳定入口也应继续写死：`10` 的第一问题不再是“属于哪类资源”，而是“最早 unpaid expansion 是什么”；资源类目、reject trio 与弱读回面只在判责时回看。更稳的常式是 `earliest unpaid expansion -> repricing proof -> lease checkpoint -> reject -> escalation`，而不是先报 taxonomy 再进入 diagnosis loop。
+- `61` 的新稳定 why 也应继续写死：成熟的安全/省 token 统一性不再写成 `budgeter`、`authority lease accounting` 或“不同资产的失败哲学”，而统一写成同一条现场判据链：先找 unpaid expansion，再判 repricing 是否已发生，证明不了时只在 `立即 reject / cleanup 后重开价 / 退回人工` 三种失败语义里选一条；稳定证据也不再写成第五类资源，而只写成 later consumer 仍可重放 `repricing / cleanup / continue verdict` 的最小证据。
+- 源码质量线的最新稳定分工也应继续写死：根 `README` 对第三条首跳不再写成单纯“当前真相保护”，而应显式公开成 `源码质量证据链 = 102 -> 87 -> architecture/README`；`102` 只负责 `ceiling note / downgrade / unresolved-authority note / change-risk record`，`87` 只负责 why-proof，`architecture/README` 只负责 landing card 与本地 quality gate。凡前门重新把三者写成 bundled why/object/ladder 混合入口，都优先视为 speaking-rights 回潮。
+- `01-源码结构地图` 的最新稳定边界也应继续写死：它只负责 repo locator 与兼容索引，不再代发 ladder / why-proof。更稳的句法是“本页只回答对象在哪；判 rung 回 `102`，判 why 回 `87`，落 writer truth plane / writeback seam 回 `architecture/README`”；`QueryEngine` 在地图上也只写成 turn transcript / request-assembly 首落点，不再借 `registry truth` 模糊 `102` 的 registry 语义。
+- `2026-04-08` 这一轮还应继续记住一条更硬的同步证据：根仓库再次执行 `git merge --ff-only origin/main` 直接报错 `Merging is not possible because you have unmerged files.`。这意味着“先检查并拉取主分支更新”的前置动作已经在当前日期被完成并被阻断，后续批次只需复核阻断是否仍在，不要在根仓库继续尝试解决这些冲突。
+- Prompt 线的新稳定句法也应继续写死：根 `README` 的 Prompt 首跳现在应显式说明，去 `84` 不是因为那里“讲 Prompt”，而是因为 `compiled world verdict` 先替 `verify / delegate / resume` 付掉世界协商成本。`03 / 84` 的默认 why 也应继续把 Prompt potency 写成“后续 consumer 只需在已裁定边界内选下一步动作”，而不是只写“不必重谈世界”。
+- `84` 的新稳定残余处理方式也应继续写死：`Authority / Boundary / Transcript / Lineage / Continuation` 只配被写成同一份 `continue-or-reject` 判决的五个裁定轴，不再长回 inventory；`UI transcript / delegated context / summary` 这组三种 counterfeit 也优先写成成本句，分别对应 `tool choice / verify`、`handoff / delegate`、`resume` 的冷启动回退。
+- `06` 与 `docs/development/03` 的新稳定自校框架也应继续写死：苏格拉底自校不再先发长问题清单，而先问四件事：哪条 law 失效、第一反证信号是什么、缺哪个 artifact / verdict、最小回退动作是什么。后续若继续精修 `06`，优先把“八个不可约问题”继续降格成这四问之后的下钻层，而不是再扩一个第二总纲。
+- `06` 的更细稳定句法现在也应继续写死：三条判断、三条拒错顺序与三条职责边界都只是在告诉读者“同一组四问分别落在哪条母线”，不能再被读成三张并列表；`八个不可约问题` 也只配在四问已经判到某一环失效后作为下钻子层出现。
+- Prompt 线的最新更硬句法也应继续写死：`84` 里“真正值钱的”不再写成抽象 `same-world contract`，而写成 later consumer 选下一步动作所需的世界定义、边界与继续资格已经被编译好；一句话总结也应继续固定为“Prompt 先替 later consumer 预付世界协商与边界重算成本，否则下一步动作就会掉回冷启动”。
+- `06` 的第二目录 residual 现在也应继续写死为：`## 1` 的八项只配叫“失效面下钻”，不能再作为总纲；`2.13` 也不该再长出独立的三线对称矩阵，只配把所有下钻收回到四问。后续若继续精修，优先删“苏格拉底式追问一/二/三”这类新 why 章节，把它们并成“第 1 问后的常见误判”。
