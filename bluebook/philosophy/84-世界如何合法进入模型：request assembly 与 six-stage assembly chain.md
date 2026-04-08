@@ -3,7 +3,7 @@
 这一章回答五个问题：
 
 1. 为什么 Claude Code 首先在分配“谁有权把当前世界合法编译进模型”。
-2. 为什么 single-source world definition、projection discipline 与 continuation qualification 共同决定这条世界准入链的上限。
+2. 为什么 same-world failure test 的上限不取决于文案强度，而取决于世界主语与继续资格是否仍然单源。
 3. 为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到这条合法世界准入链。
 4. 怎样用苏格拉底式追问审一个新 runtime 是否真的具备这种世界准入能力。
 5. 这对 Agent runtime 设计者意味着什么。
@@ -29,80 +29,17 @@
 
 - 只有 later consumer 在 `verify / delegate / tool choice / resume / handoff` 时都不用再重述现场、重划边界、重接消息血缘、重判继续资格，当前世界才算真的被合法编译进模型。
 
-更准确地说，`stable prefix / visibility pruning / delegated-context downgrade / continuation qualification` 真正值钱，不是因为术语齐，而是因为它们把 `world-definition source / boundary / transcript lineage / continuation qualification` 预先编译成 later consumer 可直接继承的 verdict；正确下一步因此直接可选，而不是再开一轮冷启动协商。
-
-Prompt potency 真正值钱的地方，也不是 prompt prose 更强，而是 later consumer 少重答四件事：
-
-1. 不重答世界定义
-   - later consumer 继承的是已编译前缀，而不是自己补一套世界定义。
-2. 不重算边界与工具资格
-   - 先裁可见面，再给行动权；模型不会先看见未定价、未定界的世界。
-3. 不让 delegated context 越权成第二主语
-   - delegated context 只能当 advisory surface，不能长成第二个 `world-definition source`。
-4. 不重判继续资格
-   - `compact / fork / handoff / resume` 之后仍保住同一 `reject / continue verdict`，而不是靠重述现场续命。
-
-把这里继续压短，later consumer 真正只在乎三件事：
-
-1. 现在到底谁在定义世界
-2. 边界内哪些动作和工具仍合法
-3. 哪些 transcript / lineage 仍绑定当前继续资格
-
-这条世界准入能力，首先来自：
-
-- 世界先被编译
-
-更准确地说，被编译的不是单一 system prompt，而是一条多 surface 的输入秩序；surface 可以复数，但世界定义权不能复数。
-更硬一点说，晚绑定只有在填充预授权槽位、而不改写 `Authority / Boundary / Transcript / Lineage / Continuation` 时才合法；后来的 consumer 只要改写了其中任何一项，下一步动作就得先重算边界、重判工具资格，动作选择成本立刻回到冷启动。
-所谓 `pre-authorized slot`，只允许在既定 `Authority / Boundary / Transcript / Lineage / Continuation` 内填值；一旦需要改写其中任一项，就是 renegotiation，不再是 late binding。
-
-| surface mutation | 是否允许 | 破坏了哪一环 | 降格去向 | 观察者证据 |
-|---|---|---|---|---|
-| 填充预授权 late-bound slot | 允许 | 无 | 保持原位 | 同一 `Authority / Boundary / Transcript / Lineage / Continuation` 仍成立 |
-| 改写 authority source | 不允许 | `Authority` | reject / downgrade | 出现第二个 world-definition source |
-| 改写 boundary 或 transcript truth | 不允许 | `Boundary / Transcript` | downgrade | display/UI 开始争改判权 |
-| 改写 lineage | 不允许 | `Lineage` | reject | consumer 不再共享同一消息血缘 |
-| 改写 continuation qualification | 不允许 | `Continuation` | reject / downgrade | compact / handoff 后只能重述现场，不能继续行动 |
-
-### 合法复数不是平行世界
-
-多个 surface 只有在任何 consumer 都仍指回同一个 `world-definition source`、child 不能自立主语、失格 surface 会立刻降回 display / evidence 时，才算同一世界；否则每多一层 surface，`delegate / handoff` 就多一次权属清点、边界重算与工具资格重判。
-
-它们之所以仍算同一个 Prompt 世界，不是因为最后会被拼成一段更长文本，而是因为它们同时满足四个条件：
-
-1. `same lineage`
-   - 都在同一条 `message lineage` 上取位。
-2. `isolated delegation`
-   - child 只继承同一份 `compiled world verdict`，但上下文与工作现场仍保持隔离；它可以生产线索，不能自立世界。
-3. `single-source adjudication`
-   - 每个问题都仍能指出唯一 `world-definition source`，而不是四层并列争主语。
-4. `mandatory downgrade path`
-   - 任一 surface 若丢失 admissibility，就必须降格成 display / evidence / hint，不能硬升格成 protocol 或 continuation truth。
-
-更硬一点说，这里的合法复数是 surface pluralism，而不是 adjudication pluralism；复数成立，裁决权仍然单源。
-
-所以这里的合法复数不是“所有 surface 同权并列”，而是 compiled order、advisory memory 与 delegated context 在同一条 authority order 下按 force class 并存。
-
-而 `compact / resume` 则决定这些 surface 在遗忘、重链与继续后还能否保持同一条 continuation contract。
-
-这也意味着，`Continuation` 不是外另起的一段功能说明，而是 same-world test 落到时间轴之后的 continue verdict。
-
-更硬一点说，`compact` 真正要保住的不是摘要是否好看，而是 `resume / handoff` 之后不用再补世界定义、补边界、补继续资格，系统还能直接继续行动。
-
-如果继续把 lawful forgetting 压成最短制度句，它保留的也只该是：compact 之后仍足以维持同一 `reject / continue verdict` 的最小事实。能被忘掉的是叙事密度，不能被忘掉的是继续 verdict 的裁定依据。
-
-这也是为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到这种世界准入能力：他们抄到了说明文本，却没有抄到“世界已被编译、consumer 无需重谈”的制度体。
-更硬一点说，later consumer 仍可继承同一份已编译世界判决，不是因为某句 prompt 更会说服模型，而是因为世界定义权、消费边界与继续资格被同一条证据链持续见证；一旦任何路径需要重新定义“现在是什么世界”，下一步动作选择就会退回冷启动。真正该被复用的 therefore，不是某句著名措辞，而是上面四个制度动作能否同时成立。
-
-如果把这章继续压成最短公式，later consumer 真正只会先问三件事：
+如果把 Prompt why 压成入口第一句，也只剩三问：
 
 1. 现在到底谁在定义世界。
 2. 边界内哪些动作和工具仍合法。
-3. `resume / handoff` 之后，哪些 transcript / lineage 仍绑定继续资格。
+3. `resume / handoff / compaction` 之后，哪些 transcript / lineage 仍绑定继续资格。
 
-这三问里只要有一问需要重答，same-world 就已经失败；later consumer 此时不该先补摘要或重谈边界，而该先停止继续。`Authority / Boundary / Transcript / Lineage / Continuation` 只是故障定位时的诊断标签，不该反过来抢主句。
+这三问里只要有一问需要 later consumer 重答，same-world test 就已经失败；此时不该先补摘要、补说明或补第二张检查表，而该先停止继续。
 
-若要继续核对更细的 same-world evidence，也只做一件事：沿 `82` 与本页锚点检查 `stable prefix / visibility pruning / advisory downgrade / continuation object` 是否仍共同指向同一份 verdict，不把它们再写成另一条入口链。
+如果 same-world failure 已经成立，才值得继续诊断断点；那些熟悉的机制名词此时只配当兼容标签，不配反过来抢 why 页主句。
+
+所谓合法复数，也只允许这样一种复数：多个 surface 仍不逼 later consumer 重谈同一世界。只要接手者必须重新确认谁在定义世界、哪条历史还算数、继续资格是否仍成立，这个复数就已经不合法。
 
 这里还要再多记一句：
 
@@ -110,7 +47,7 @@ Prompt potency 真正值钱的地方，也不是 prompt prose 更强，而是 la
 
 ## 2. 第一性原理：世界准入首先是一条合法编译顺序
 
-如果这条输入装配只负责：
+如果输入装配只负责：
 
 - 告诉模型应该怎么做
 
@@ -120,61 +57,45 @@ Claude Code 更深的一层是：
 
 - authority order 先排清什么配被模型看见、谁配被模型相信、哪些历史配被模型继承
 
-这会把输入装配从：
+这会把输入装配从“说服工具”改写成“准入顺序”。
 
-- 说服工具
+也就是说，这条世界准入能力首先不是表达能力，而是 later consumer 围绕同一现场继续工作的能力。被外化的也不是“一段更完整的提示词文本”，而是足以让接手者不用重谈世界就能继续动作的最小依据；否则 surface 再多，也只是在不同 consumer 之间重复协商同一现场。
 
-改写成：
-
-- 准入顺序
-
-也就是说，这条世界准入能力首先不是“表达能力”，而是：
-
-- 世界准入能力，以及让不同 projection consumer 继续围绕同一条 `message lineage` 工作的能力
-
-编译链首先外化的也不是“更完整的提示词文本”，而是裁决权本身：哪些世界法必须先被宿主对象持有、记录并可复核，而不是留给模型临场记住。否则 surface 再多，也只是在不同 consumer 之间重复协商同一现场。
+late binding 因此也只能发生在不触发重协商的前提下。更硬一点说：凡是会逼 later consumer 重新定义世界、重画边界、重接历史或重判继续资格的补写，都不再是 continue，而是 renegotiation。
 
 ### 更硬一点的源码证据
 
-真正值钱的，不是“有一份 system prompt”，而是 later consumer 选下一步动作所需的世界定义、边界与继续资格，已经被写成一条受约束的编译秩序：
-
-1. stable prefix 与 late-bound facts 被正式区分，而不是由不同调用点临场拼接。
-2. delegated / consumer-local context 必须活在同一条默认前缀顺序内，而不是另起一套世界。
-3. cache break 与 continuation 资格都有正式对象承接，prompt 稳定性因此先是字节边界稳定性，再是文案感受。
-
-具体对象名继续留在本页锚点与 `82`，这里不把 invariant 再退回 inventory。
-
-所以这里真正起作用的，不是 prompt 文案更顺滑，而是 section registry、late binding、projection discipline 与 continuation path 都已经被编译成正式制度对象；正确下一步之所以更便宜，不是因为模型突然更聪明，而是因为 later consumer 不必重谈当前世界。
+真正值钱的，不是“有一份 system prompt”，而是 later consumer 选下一步动作所需的最小依据，已经被正式承接到足以维持同一 `reject / continue verdict` 的程度；具体 invariant 与对象链统一留给 `82` 与源码锚点，why 页不再展开第二层清单。
 
 ## 3. 最容易被误写成什么
 
 这一层最容易被误写成五种坏解法：
 
 1. 更长的 system prompt
-   - 以为信息更全就更强
+   - 以为信息更全就更强。
 2. UI transcript 直接就是模型 transcript
-   - 以为看见什么，模型就该直接消费什么
+   - 以为看见什么，模型就该直接消费什么。
 3. summary 就等于 lawful forgetting
-   - 以为会总结就等于还能继续
+   - 以为会总结就等于还能继续。
 4. 每条 side loop 都可以各自重述现场
-   - 以为并行只是多开几个 agent
+   - 以为并行只是多开几个 agent。
 5. 工具 ABI 在 Prompt 外面，不算 Prompt 本体
-   - 以为工具 schema、cache 断点、continue 资格只是外围实现细节
+   - 以为工具 schema、cache 断点、continue 资格只是外围实现细节。
 
 这些误写的共同问题在于：
 
-- 它们都把世界编译重新退回世界描述
+- 它们都把世界编译重新退回世界描述。
 
 ## 4. 为什么这类误写会直接削弱世界准入能力
 
 一旦系统退回上述坏解法，马上会发生三类失真：
 
 1. 主语漂移
-   - 多份文本争首答来源
+   - 多份文本开始争“谁先定义世界”。
 2. 历史漂移
-   - `display transcript / protocol transcript / continuation object` 不再围绕同一条 lineage
+   - `display transcript / protocol transcript / continuation artifact` 不再围绕同一条 lineage。
 3. 连续性漂移
-   - compact 之后留下的是叙事，不是仍可继续行动的 continuation object
+   - compact 之后留下的是叙事，不是仍可继续行动的依据。
 
 所以这条世界准入能力真正保护的不是：
 
@@ -184,34 +105,16 @@ Claude Code 更深的一层是：
 
 - 当前、下一步、接手后都还活在同一个现场
 
-### 反证法：拿掉哪一层，世界准入能力会最先失效
-
-最先塌掉的通常不是措辞，而是下面三层：
-
-1. 没有 section registry 和 boundary
-   - 结果不是 prompt 变短，而是系统再也说不清“什么是宪法、什么只是本回合事实”。
-2. 没有 protocol transcript 编译
-   - 结果不是展示层更自由，而是 UI transcript、summary 与模型 transcript 开始争改判权。
-3. 没有 continuation qualification
-   - 结果不是 compact 更省，而是留下来的只是一段可读摘要，不再是仍可行动的继续对象。
-
-对应的三种 counterfeit 也最常见：
+### 三种最常见的 counterfeit
 
 1. UI transcript 越权成 protocol transcript
-2. delegated context 自己长成第二个 world-definition source
-3. compaction 只留下 summary，却丢了 continuation object
-
-如果把这些 counterfeit 继续压成成本句，也只剩三句：
-
-1. UI transcript 越权，会让 `tool choice / verify` 先重判主语。
-2. delegated context 升格，会让 `handoff / delegate` 先重新清权属。
-3. summary 冒充 continuation，会让 `resume` 先重建现场。
+2. delegated context 自己长成第二个 `world-definition source`
+3. compaction 只留下 summary，却丢了 continuation 资格所需的最小事实
 
 第一条可逆修法也因此固定：
 
-- 把 UI transcript 降回 display layer
-- 把 delegated context 降回 advisory slot
-- 把 summary 降回非 continuation object
+- 先把越位内容降回非主权层
+- 再停在 same-world failure verdict
 
 ### first reject signal 比成功表述更值钱
 
@@ -229,19 +132,16 @@ Claude Code 更深的一层是：
 
 ## 6. 对 Agent Runtime 设计者的直接启发
 
-如果你想复制 Claude Code 的这条世界准入能力，先复制：
+如果你想复制 Claude Code 的这条世界准入能力，先复制“替 later consumer 预付冷启动协商成本”的制度结果，而不是先复制某段著名措辞。
 
-1. 明确的 `world-definition source`
-2. `message lineage` 内核
-3. section registry
-4. protocol transcript 编译
-5. lawful forgetting 与 continuation qualification
-6. cache-safe fork reuse
+更具体地说，你要先保证：
 
-而不是先复制：
+- 接手者拿到的是 same-world verdict，而不是另一轮世界协商
+- delegated context 只能给线索，不能给世界主语
+- compaction 保留的是继续依据，不只是阅读友好的摘要
 
-- 某段著名措辞
+对象链、字段名与实现对象统一留给 `82` 与源码锚点；why 页不再重发 inventory。
 
 ## 7. 一句话总结
 
-Prompt 首先是替 later consumer 预付冷启动协商成本的世界准入顺序；如果这一步没有先成立，后面的 Prompt 再完整，也只会把下一步动作留在“先重谈世界、再决定动作”的高成本路径里。
+Prompt 首先是替 later consumer 预付冷启动协商成本的世界准入顺序；如果接手者还要先重谈世界、再决定动作，Prompt 就已经失败。

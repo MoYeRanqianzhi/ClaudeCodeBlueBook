@@ -8,6 +8,59 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 control-pages-no-second-frontdoor live 记忆：
+  - `README` 默认继续只做定题与首跳，不再用第二句解释 `84 / 10 / 102` 为什么回答同一个问题
+  - `03` 默认继续只解释三条母线为什么成立，不再在页首重发 `first test / counterfeit / minimum repair`
+  - `06` 默认继续只验三条母线是否仍闭合，不再把 owner 页的具体 first-test、artifact 与回退动作逐条重述
+- 最新根仓同步记忆（2026-04-08，本批次本轮继续深化）继续保持健康态：`git fetch origin main` 与 `git merge --ff-only origin/main` 均成功，结果为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 84-failure-first-wording live 记忆：
+  - `84` 默认继续先停在 same-world failure test，不在主测试后立刻摊开 `stable prefix / visibility pruning / delegated-context downgrade / lawful continuation`
+  - `合法复数` 与 `late binding` 默认继续只用来解释“何时已经滑回重协商”，不再写成条件清单或对象约束表
+- 最新根仓同步记忆（2026-04-08，本批次本轮再收口）继续保持健康态：`git fetch origin main` 与 `git merge --ff-only origin/main` 均成功，结果为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 102-main-axis-claim-state live 记忆：
+  - `102` 的高可见主轴句、continuity 提问、检查清单与总结句默认继续统一写成 `current-truth claim state / provisional current-truth claim`
+  - `current-truth surface / candidate` 默认继续只作为兼容标签出现在局部解释里，不再回到主轴句
+- 当前批次继续新增一条 root-first-hop-target-page live 记忆：
+  - 根 `README` 在三条首跳里默认继续用 `目标页`，不再用 `owner 页`
+  - 根入口若再次开始评价下游 speaking-right，默认按 frontdoor 漂移处理
+- 最新根仓同步记忆（2026-04-08，本批次本轮继续推进）继续保持健康态：`git fetch origin main` 与 `git merge --ff-only origin/main` 均成功，结果为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 102-claim-state-wording live 记忆：
+  - `102` 正文默认继续把 `current-truth surface / candidate` 只保留为兼容标签
+  - 更稳的默认主句是 `current-truth claim state / provisional claim`，避免证据梯度页重新长回 object-flavored wording
+- 当前批次继续新增一条 84-failure-before-diagnostics live 记忆：
+  - `84` 默认继续先停在 same-world failure test，再谈 `stable prefix / visibility pruning / delegated-context downgrade / lawful continuation` 这些兼容标签
+  - Prompt why 页若再把 diagnostic labels 贴回主测试前后，默认按 mechanism-inventory 回流处理
+- 最新根仓同步记忆（2026-04-08，本批次本轮再深化）继续保持健康态：`git fetch origin main` 与 `git merge --ff-only origin/main` 均成功，结果为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 source-quality-speaking-right-cleanup live 记忆：
+  - 根 `README` 默认继续只把 `guides/102` 写成源码质量线首跳，不再用 `仲裁 / promotion` 这类证据裁决语气
+  - `navigation/README` 默认继续只用 `artifact / evidence` 反查词，不再把自己写成 `verdict` 分发表
+- 当前批次继续新增一条 102-claim-state-compat live 记忆：
+  - `102` 默认继续允许保留 `current-truth surface / candidate` 这组兼容标签，但正文必须明确把它们读成 `claim state / provisional claim`
+  - `change-risk record` 默认继续只配做附表，不再和 ladder 主轴并列
+- 当前批次继续新增一条 architecture-object-summary-page live 记忆：
+  - `architecture/README` 默认继续自称 `对象摘要页`，不再自称 owner README
+  - `landing card` 默认继续是对象摘要模板，不承担 object-line speaking right
+- 最新根仓同步记忆（2026-04-08，本批次本轮继续深化）继续保持健康态：`git fetch origin main` 与 `git merge --ff-only origin/main` 均成功，结果为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 source-quality-owner-split live 记忆：
+  - 源码质量线默认继续固定成 `guides/102 = evidence state / downgrade discipline`、`philosophy/87 = why-proof`、`architecture/README = object summary`、`01-源码结构地图 = repo locator`
+  - `navigation/README` 默认继续只做 artifact-gap 反查，不再把源码质量线拆成第二 frontdoor
+- 当前批次继续新增一条 source-quality-no-artifact-first live 记忆：
+  - `03 / 06` 默认继续不把源码质量线写成 `change-risk record / why-proof / landing card` 的 artifact-name-first 清单
+  - 更稳的默认主句是：先问 `one writable present` 是否仍成立、later maintainer 的第一条 veto 是否仍在
+- 当前批次继续新增一条 architecture-landing-card-summary-only live 记忆：
+  - `architecture/README` 的 `landing card` 默认继续只做对象摘要，不再承担验收卡、准入卡或流程门槛
+  - later maintainer 的局部 veto 继续只作为对象摘要字段出现，不再被对象 owner README 写成 protocol
+- 最新根仓同步记忆（2026-04-08，本批次本轮后续）更新为健康态：`git fetch origin main` 与 `git merge --ff-only origin/main` 均成功，结果为 `Already up to date.`；后续正文仍继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 prompt-why-equals-same-world-test live 记忆：
+  - `84` 默认继续只把 Prompt why 写成 `same-world failure test`，不再在 why 页页首预发 second-hop object nouns 或机制 inventory
+  - `03 / philosophy/README` 默认继续只复用这条 failure test，不再提前点名 repair object、witness 或 continuation 资产载体
+- 当前批次继续新增一条 governance-frontdoor-split live 记忆：
+  - 治理线默认继续固定成 `10 = 四问 first-answer`、`85 = why-proof`
+  - `reject seam / signer ambiguity / readback / execution verdict` 默认继续统一退回 `security / risk / playbooks`，不在 `10 / 85` 提前混写
+- 当前批次继续新增一条 security-playbooks-no-menu live 记忆：
+  - `security/README` 默认继续只定义 `signer / ledger / cleanup authority` 三类 ambiguity，不再提示 appendix/source-notes 材料菜单
+  - `playbooks/README` 默认继续只定义 `execution verdict / rollback / reopen` 的 owner scope，不再在首页展开稳定手册编号簇
+- 最新根仓同步记忆（2026-04-08，本批次本轮）继续保持阻塞态：`git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓 `/home/mo/m/projects/cc/analysis` 外层未解决冲突而失败；后续继续严格只在 `.worktrees/mainloop` 内推进。
 - 当前批次继续新增一条 source-quality-full-chain-at-root live 记忆：
   - 根 `README` 的源码质量线默认继续不用端点缩写；更稳的默认写法是完整链：`ceiling note / change-risk record / why-proof / landing card / local quality gate`
 - 最新根仓同步记忆（2026-04-08，本批次当前轮）更新为阻塞态：`git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓 `/home/mo/m/projects/cc/analysis` 存在未解决冲突而失败，错误为 `Merging is not possible because you have unmerged files.`；后续继续严格只在 `.worktrees/mainloop` 内推进。
