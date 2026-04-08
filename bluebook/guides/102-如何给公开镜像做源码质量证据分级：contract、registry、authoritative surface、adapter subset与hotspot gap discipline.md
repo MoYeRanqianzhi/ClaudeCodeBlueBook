@@ -39,6 +39,7 @@
 - 凡正文把对象写成 `consumer subset` 或 provisional current-truth claim，必须同时把 `downgrade stamp` 与 `unresolved-authority note` 一起落页；只写“这里要保守”而不写这条说明，默认按证据纪律未落地处理。
 - 若对象层 authority 仍需细化，note 只说明“缺少 promotion 所需证明”，不附带任何路由义务。
 - 若 object-level authority 还没锁定，就只配先写 provisional current-truth claim；`current-truth surface candidate` 只保留为兼容标签。
+- 同理，公开 evidence 若声称存在 `next-refactor entry`，也必须同时说明它落在哪条签字权层级、能触发哪一条 `first local veto`、以及失败时先退回哪一层；做不到这三点，它就只配先写成 `seam candidate`。
 
 这条线最短的 reject trio 也只认：
 

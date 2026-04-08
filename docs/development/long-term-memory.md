@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 law-follows-precedence-and-veto live 记忆：
+  - `84` 现在应直接把 Prompt why 压成一句更硬的总律：runtime 里的 law 按优先级与 veto 能力生效，不按句子强弱生效
+  - 更稳的默认写法是：不能 veto 的 surface 只配补 context，不配代签世界定义、权限边界与继续资格
+- 当前批次继续新增一条 governance-signer-ceiling live 记忆：
+  - `85` 现在可以继续把治理对象写成 signer ceiling：managed settings 先签主权边界，auto mode 只配压缩高频 approval，continuation consumer 与 weak readback 只配消费或回单既有 verdict
+  - 更稳的默认写法是：凡会改写价格、继续资格或终局解释的动作，都必须回到正式 repricing 面
+- 当前批次继续新增一条 refactor-entry-needs-retreat-layer live 记忆：
+  - `102 / 87` 现在应直接把 `next-refactor entry` 的 promotion 条件写成 `signing layer + first local veto + first retreat layer`
+  - 更稳的默认写法是：答不出这三点的 seam 只配先写成 `seam candidate`，不配叫可继承的重构入口
 - 当前批次继续新增一条 frontdoor-should-not-leak-second-hop live 记忆：
   - `bluebook/README` 现在默认不应在首跳页提前枚举 `86/87` 这类 second-hop why 分流
   - 更稳的默认写法是：`102` 只先回答公开证据够不够支撑当前真相主张；why/object/verdict 的继续分辨，统一交给对应归属页接手

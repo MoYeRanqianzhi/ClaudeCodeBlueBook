@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 Prompt why 结论：`Feynman` 把 `84` 里最值钱但还没写死的一层补了出来。本轮已把 Prompt 线继续压成一句更硬的总律：runtime 里的 `law` 按优先级与 veto 能力生效，而不是按句子强弱生效。当前判断是，这一句比再罗列 `CLAUDE.md / hooks / permissions / subagents` 的 surface taxonomy 更稳，因为它直接解释了为什么 context 不能代签 enforcement、也解释了为什么 lazy-loaded 补写天然失去主签名资格。
+- 本轮新的治理 why 结论：`Raman` 给出的最强增量，不是又补一个治理 feature，而是把治理链改写成 signer ceiling。本轮已把这层 why 补进 `85`：managed settings 先签主权边界，auto mode 只配压缩高频 approval，continuation consumer 与 weak readback 只配消费或回单既有 verdict。当前判断是，这一步能明显减少 later consumer 把治理链读成并列 feature 清单，而更容易把它读成不同签字上限的结算链。
+- 本轮新的源码质量结论：`Planck` 继续把 `next-refactor entry` 从“看见 seam 就算有路”压成更硬的 promotion 门槛。本轮已把这层条件分别补进 `102` 与 `87`：凡声称存在可继承的重构入口，必须同时说明 signing layer、first local veto 与 first retreat layer；答不出这三点的 seam 只配先叫 `seam candidate`。当前判断是，这一步把“保留下一次重构可能性”第一次压成了可检查的证据条件，而不再只是高阶美德。
 - 本轮新的目录结构结论：`Descartes` 指出，当前最高价值残余已不再是术语脏词，而是 high-traffic 页在偷偷预排 second-hop。于是本轮把 `bluebook/README` 收回纯 first-hop，不再在首跳页提前泄漏 `86/87`；同时也把 `02 / 05 / 09` 里残留的固定 `navigation/05 / 15 / 41` syllabus 收掉，统一改成只有在 route dispute 时才回 `navigation/README`。当前判断是，这比继续新增 frontdoor 更值钱，因为它直接减少 later consumer 在高流量页里把“导航顺序”误读成“制度顺序”的概率。
 - 本轮新的导航页结论：`navigation/41` 之前最大的 mixed-role residual，不再是 wording，而是它仍在发 object/artifact chain 甚至错链。本轮没有重写整页，只把这些越位链删回“更完整的对象层与执行收口统一回对应归属页与 navigation/README”。当前判断是，这种收法比继续补 why 句更稳，因为导航页一旦开始 shipping chain，就会重新长成 second frontdoor。
 - 本轮新的 Prompt why 结论：官方公开面与本地 userbook 交叉之后，`84` 还可以再压硬一步。本轮已把 `/add-dir / additionalDirectories` 明确降回 boundary expansion：它们只扩未来可发现事实面与文件/沙箱边界，不自动扩容 `world-definition` 的配置主权。当前判断是，这一句能更直接阻止 later consumer 把“多加了一个工作目录”误读成“多了一个新的配置主签名面”。
