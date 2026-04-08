@@ -37,6 +37,7 @@
 - 在哪里该更早判断，在哪里该停止判断，在哪里该退回人工，在哪里必须把治理字节稳定下来
 
 更短地说，它在写的不是“安全 feature + 压缩 feature”，而是同一条治理秩序如何对 model-reachable world 的危险扩张与昂贵扩张同时收费。
+因此真正被续租的不是一次动作，而是一条 `authority lease`：世界准入、能力暴露、上下文占位与 continuation，只是这条 lease 在不同节点上的收费与 checkpoint。
 更硬一点说，真正统一的不是一个 budgeter 或角色表，而是同一条诊断环：先找 `earliest unpaid expansion`，再证明它已被 repriced、仍可续租、且旧 authority 已 cleanup；证明不了就不续租。
 这条线再压一层，其实只剩一句：错误顺序的检查与未结算的继续，本质上是同一种制度错误，都是把本该重定价的 authority 当成默认续期。
 

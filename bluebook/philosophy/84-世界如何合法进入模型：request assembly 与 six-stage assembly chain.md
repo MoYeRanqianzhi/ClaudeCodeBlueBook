@@ -58,6 +58,7 @@ Claude Code 更深的一层是：
 - authority order 先排清什么配被模型看见、谁配被模型相信、哪些历史配被模型继承
 
 这会把输入装配从“说服工具”改写成“准入顺序”。
+更硬一点说，被编译进模型的从来不只是单段 system prompt，而是由 `system sections / tool descriptions / agent prompts / attachment deltas` 共同组成的 `world-entry object`；这些 surface 只有共享同一 authority order 与 continuation qualification，才配被 later consumer 体验成“Prompt 很强”。
 
 也就是说，这条世界准入能力首先不是表达能力，而是 later consumer 围绕同一现场继续工作的能力。被外化的也不是“一段更完整的提示词文本”，而是足以让接手者不用重谈世界就能继续动作的最小依据；否则 surface 再多，也只是在不同 consumer 之间重复协商同一现场。
 

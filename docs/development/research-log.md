@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 owner-page 结论：并行 Agent 的三条最硬结论已经各自沉入 owner 页。`84` 现在更明确地把 Prompt 写成 multi-surface `world-entry object`，强调真正被编译进模型的是共享 authority order 与 continuation qualification 的多个 surface，而不是单段 system prompt；`61` 现在直接把 continue、能力暴露、上下文占位与时间续租统一写成 `authority lease`；`87` 则把源码质量再压成 `dependency honesty + temporal honesty` 的双重诚实，避免 later maintainer 再把时间线撒谎漏掉。
+- 本轮新的根仓同步结论：本轮再次复核根仓 `/home/mo/m/projects/cc/analysis`，`git status --short --branch` 仍为 `main...origin/main`。本轮未在根仓处理任何文件，正文继续严格只在 `mainloop` 内推进。
 - 本轮新的目录结论：这次不再把“目录优化”理解成挪更多文件，而是先把目录角色正式写成 speaking-rights protocol。根 `README` 现在直接声明蓝皮书不是按题材分桶，而是按发言权分桶；`03` 则把目录优化上升为固定发言权测试；`06` 新增的五个苏格拉底追问，专门抓 `first answer / second-hop inventory / why / object / verdict` 混权。当前判断是：只要 same question 还会在两页里第一次被回答，就还不配做物理重组。
 - 本轮新的并行研究结论：四条 Agent 线几乎给出了同一组支撑。Prompt 线把“魔力”压回 later consumer 少重答世界与 continuation object；治理线把安全与省 token 压回同一条 `repricing -> lease checkpoint -> cleanup` 链；源码质量线把先进性压回合法复杂度中心、`one writable present` 与 later maintainer veto；目录线则建议未来如要继续物理重组，可考虑 `meta / owners` 这类家族层，但当前批次更稳的动作仍是先在高流量页写死角色协议，而不是立刻搬树。
 - 本轮新的根仓同步结论：本轮再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；随后复核根仓 `/home/mo/m/projects/cc/analysis` 状态，`git status --short --branch` 为 `main...origin/main`。本轮未在根仓处理任何文件，正文仍严格只在 `mainloop` 内推进。

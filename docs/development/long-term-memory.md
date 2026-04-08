@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 owner-pages-absorb-parallel-findings live 记忆：
+  - `84` 现在应固定读成 multi-surface `world-entry object` 的 why-proof，而不是单段 system prompt 的效果页
+  - `61` 现在应固定把安全与省 token 的共同收费对象读成 `authority lease`，不要再把 continue / compact / resume 误写成体验连续性
+  - `87` 现在应固定把成熟源码质量读成 `dependency honesty + temporal honesty + one writable present + later-maintainer veto`
+- 最新根仓同步记忆（2026-04-08，本批次当前 live 快照）继续保持健康态：本轮再次复核根仓 `/home/mo/m/projects/cc/analysis`，`git status --short --branch` 仍为 `main...origin/main`。后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
 - 当前批次继续新增一条 directory-speaking-rights-over-taxonomy live 记忆：
   - 蓝皮书目录现在应优先按发言权理解，而不是按题材理解：`README / userbook` 只定题，`philosophy` 只给 why-proof，`guides` 只给证据梯度，`architecture` 只给对象摘要，`navigation` 只补 artifact gap，`playbooks` 只发 execution verdict
   - 更稳的目录优化默认不是先挪文件，而是先减少 later consumer 在两页里学到同一 first answer 的概率；若 speaking-rights 还未写死，物理重组只会把混权换个位置继续发生
