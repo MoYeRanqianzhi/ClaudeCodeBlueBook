@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 operator-artifacts-enter-object-layer-as-candidates live 记忆：
+  - `architecture/84` 现在应直接把公开 operator artifact 压成 `surface candidate`；除非 signer、作用域与第一条 `local veto cue` 已足够清楚，否则对象层不预填 `sole writer`
+  - 更稳的默认写法是：公开可见不等于 current-truth writer；对象层只能在 promotion 条件足够时才给它 writer truth plane
 - 当前批次继续新增一条 architecture-needs-first-retreat-layer live 记忆：
   - `architecture/README` 现在应直接把 landing card 从 `local veto cue` 扩成 `local veto cue + first retreat layer`
   - 更稳的默认写法是：对象层若答不出第一退回层，就还只是 locator，不配被 later maintainer 当成可继承的 `next-refactor entry`

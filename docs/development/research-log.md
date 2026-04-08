@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的对象层结论：`Halley` 指出，landing card 字段本身已经够了，真正缺的是 operator artifact 进入对象层时的准入句。本轮已把这条纪律补进 `architecture/84`：公开 operator artifact 先只有 `surface candidate`，除非 signer、作用域与第一条 `local veto cue` 已足够清楚，否则 `84` 不再替它预填 `sole writer`。当前判断是，这一步让 `102` 的 `public artifact ceiling`、`architecture/README` 的 landing card 与 `84` 的 current-truth atlas 第一次真正接成同一条对象层协议。
 - 本轮新的对象层结论：在 `102 / 87` 已经把 `next-refactor entry` 压成 promotion 条件之后，真正还缺的是把这条条件落进对象层。本轮已把 `architecture/README` 的 landing card 扩成 `local veto cue + first retreat layer`，并同步把 `63 / 72` 里的 seam 从“未来可抽”继续压成“同时看见局部 veto 与第一退回层，才算可执行的重构入口”。当前判断是，这一步把 why/guides 里的高阶句真正压成了 later maintainer 可落手的对象协议。
 - 本轮新的证据纪律结论：`102` 之前虽然已经写出 `next-refactor entry` 需要 signing layer、local veto 与 retreat layer，但 `change-risk` 模板本身还缺退回列。本轮已把 `first retreat layer` 补进模板。当前判断是，这能让 `change-risk` 附表从“知道哪里先说不”继续升级成“知道说不之后先退回哪层”的可执行表。
 - 本轮新的 Prompt why 结论：`Feynman` 把 `84` 里最值钱但还没写死的一层补了出来。本轮已把 Prompt 线继续压成一句更硬的总律：runtime 里的 `law` 按优先级与 veto 能力生效，而不是按句子强弱生效。当前判断是，这一句比再罗列 `CLAUDE.md / hooks / permissions / subagents` 的 surface taxonomy 更稳，因为它直接解释了为什么 context 不能代签 enforcement、也解释了为什么 lazy-loaded 补写天然失去主签名资格。
