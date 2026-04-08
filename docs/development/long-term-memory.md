@@ -8,6 +8,25 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-sovereignty-frontdoor live 记忆：
+  - `84` 与 `41` 默认继续把 Prompt 线前门写成“谁有权把当前世界合法编译进模型 / 世界定义权必须单源”
+  - Prompt 效力、same-world property、专题侧门词汇与 side-door inventory 默认都不配再充当前门 noun
+- 当前批次继续新增一条 security-signer-only-entry live 记忆：
+  - `security/README` 默认继续只围绕 signer / ledger / cleanup authority 分流
+  - canonical chain stage names、runtime readback class、reopen liability 与用户侧恢复语义默认继续回 `10 / risk`
+- 当前批次继续新增一条 61-abstract-only live 记忆：
+  - `61` 默认继续只保留 why：顺序决定风险与花费、不同资产不共享失败语义、authority allocation 不再变化时不应继续花 token
+  - 若 `61` 再次出现治理 stage names、classifier 反例清单或 countersigning/readback law，默认按 owner taxonomy 回流处理
+- 当前批次继续新增一条 source-quality-generic-handoff live 记忆：
+  - `102` 默认继续只给 evidence-status 语言与 generic handoff 到 `architecture/README`
+  - `87` 默认继续不重发 ladder、truth-plane 顺序或 object route；`architecture/README` 默认继续只保留四个对象问题
+- 当前批次继续新增一条 editorial-law-out-of-41 live 记忆：
+  - `41` 默认继续不承载 `第一次定义权 / route law / speaking-right ledger` 的编辑治理正文
+  - 这组 editorial governance 默认只回 `navigation/README` 与 `navigation/04`
+- 当前批次继续新增一条 residual-vocabulary-scrub live 记忆：
+  - `84` 默认继续不用 `Prompt 效力` 这类结果词承接深段解释，而改用 `世界准入能力`
+  - `102` 默认继续不用 `sole writer / writeback path / freshness gate` 这组 object noun 充当前门级 wording
+  - `41 / 87` 默认继续不用 `route law / 第一次定义权 / writeback seam 对象矩阵` 这类编辑法或对象矩阵词承担哲学页主句
 - 当前批次继续新增一条 prompt-title-not-effect-word live 记忆：
   - `84` 默认继续把顶层 owner 标题与问题列表写成世界准入顺序、single-source world definition、projection discipline 与 continuation qualification
   - `84` 默认继续不让结果词、magic framing 或 surface inventory 领第一页

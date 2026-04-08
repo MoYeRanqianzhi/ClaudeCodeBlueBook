@@ -36,8 +36,8 @@
 - 文件名保留旧词只是为了兼容检索；正文判断一律只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`。
 - 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航、跳转关系与其他编排说明都不参与源码质量结论。
 - 凡正文把对象写成 `consumer subset` 或 `current-truth surface candidate`，必须同时把降格 stamp 与具体 next hop 一起落页；只写“这里要保守”而不写交接动作，默认按证据纪律未落地处理。
-- 默认交接也要写明对象层 next hop：凡 `current-truth surface candidate` 指向 `sole writer / writeback seam / freshness gate`，先回 `architecture/README`；对象细化由对象页内部继续，不在 `102` 预派具体编号。未写这条 generic handoff，就仍算 next hop 不完整。
-- 若 sole writer、writeback seam 与 freshness gate 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
+- 默认交接也只写一条 generic handoff：凡对象层 authority 仍需细化，统一回 `architecture/README`；对象页内部怎样继续，不在 `102` 预派具体编号。未写这条 generic handoff，就仍算 next hop 不完整。
+- 若 object-level authority 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
 
 这条线最短的 reject trio 也只认：
 
@@ -103,9 +103,9 @@
 2. `registry`
    - 当前 build / 当前 runtime 真的注册了哪些对象。
 3. `current-truth surface`
-   - 只有在 object-level 证据已锁定时，才配把 `sole writer / choke point / writeback seam` 升格成 present-truth signer；对象解释统一回 `architecture/README`。
+   - 只有在 object-level authority 已锁定时，才配把当前 surface 升格成 present-truth signer；对象解释统一回 `architecture/README`。
 4. `current-truth surface candidate`
-   - 在公开镜像里你已经看到 sole writer 或 choke point 候选，但证据还不足以把它写死成完整 `current-truth surface`；默认 next hop 先回 `architecture/README`，再按对象细化到 `architecture/84`。
+   - 在公开镜像里你已经看到 authority 候选，但证据还不足以把它写死成完整 `current-truth surface`；默认 next hop 先回 `architecture/README`。
 5. `consumer subset`
    - 同一份权威真相对不同 host / adapter / projection 只暴露各自职责宽度。
 6. `hotspot kernel`
@@ -178,7 +178,7 @@ contract 和 registry 都还不够。
 
 - 当前谁有权宣布 present truth
 
-这里的 `current-truth surface` 不是谁更重要，而是当前哪条 surface 被允许写当前真相。`sole writer / writeback path / freshness guard` 在本页只作为判级触发条件，不在这里代行对象解释；若这些 object-level 证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate`，并同步把 next hop 写成“先回 `architecture/README` 点名对象层”。
+这里的 `current-truth surface` 不是谁更重要，而是当前哪条 surface 被允许写当前真相。对象层 authority 证据在本页只作为判级触发条件，不在这里代行对象解释；若这些 object-level 证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate`，并同步把 next hop 写成“先回 `architecture/README` 点名对象层”。
 
 典型信号包括：
 
@@ -272,7 +272,7 @@ contract 和 registry 都还不够。
 2. 测试体系一定如何组织
 3. feature-gated 能力在内部是否都和公开树同构
 
-公开镜像最该保留的 unknown，不是“内部也许还有更多实现”，而是 sole writer、writeback path、freshness gate 与 eviction rule 是否可见；这些证据不可见时，只能写 unknown，不能从 replay asset、UI snapshot 或 adapter cache 反推 current truth。
+公开镜像最该保留的 unknown，不是“内部也许还有更多实现”，而是 current-truth authority、跨时回写约束与 eviction rule 是否可见；这些证据不可见时，只能写 unknown，不能从 replay asset、UI snapshot 或 adapter cache 反推 current truth。
 
 gap discipline 的价值不是“保守一点”，而是：
 

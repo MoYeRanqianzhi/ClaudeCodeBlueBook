@@ -13,14 +13,14 @@
 
 这里还应再多记一句：
 
-- `continuity` 在安全目录里也不是第四类安全主题；它只是 `decision window -> continuation pricing -> durable-transient cleanup` 这段时间轴在安全侧的继续资格与清算资格。
+- `continuity` 在安全目录里也不是第四类安全主题；它只是安全侧的继续资格与清算资格。
 
 ## 先记四句
 
-- 安全页只翻译 signer / ledger / cleanup authority 的不对称，不重发 canonical governance chain；那条链统一回 `../10`。
+- 安全页只翻译 signer / ledger / cleanup authority 的不对称；canonical chain 与 readback vocabulary 一律回 `../10` 与 `risk/`。
 - 完成、终局、遗忘、清理都各有 signer；任何弱层都不配替强层宣布“已经没事了”。
-- 宿主与 user-facing 入口只配消费 runtime 已外化的 `truth-surface / decision window / cleanup stage verdict`，不配自己从事件流回放拼当前真相。
-- 若你缺的是 canonical weak-readback、continuation consumer 或用户侧恢复语义，统一回 `../10` 与 `risk/`；`security/README` 不在这里代发读回规则。
+- 宿主与 user-facing 入口只配消费 runtime 已外化的治理结果，不配自己从事件流回放拼当前真相。
+- 若你缺的是 canonical readback、continuation consumer 或用户侧恢复语义，统一回 `../10` 与 `risk/`；`security/README` 不在这里代发读回规则。
 
 如果把安全入口判定继续压成最短公式，也只剩三种不对称：
 
@@ -31,7 +31,7 @@
 3. `cleanup authority vs later readback`
    - 谁能收口，谁只能消费收口后的读回面
 
-如果你已经开始重发 `pricing-right / truth-surface / typed ask / decision window / continuation pricing` 的 canonical chain，说明这页又在代签 `10`。
+如果你已经开始重发 canonical chain 的 stage names，说明这页又在代签 `10`。
 
 如果继续把 `security/` 的目录发言权也压成最短公式，也只该剩三句：
 
@@ -58,16 +58,15 @@
 - [为什么“统一预算器”还不够](../philosophy/61-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E5%AE%89%E5%85%A8%E4%B8%8E%E7%9C%81Token%E7%B3%BB%E7%BB%9F%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%BB%9F%E4%B8%80%E9%A2%84%E7%AE%97%E5%99%A8%EF%BC%8C%E8%80%8C%E6%98%AF%E6%B2%BB%E7%90%86%E9%A1%BA%E5%BA%8F%E3%80%81%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E4%B8%8E%E5%8F%AF%E6%92%A4%E9%94%80%E8%87%AA%E5%8A%A8%E5%8C%96.md)
   看为什么安全与省 token 共享的是同一条秩序，而不是同一个单点预算器。
 - [architecture/83：反扩张治理流水线](../architecture/83-%E5%8F%8D%E6%89%A9%E5%BC%A0%E6%B2%BB%E7%90%86%E6%B5%81%E6%B0%B4%E7%BA%BF%EF%BC%9Atrusted%20inputs%E3%80%81distributed%20ask%20arbitration%E3%80%81deferred%20visibility%E4%B8%8Econtinuation%20pricing.md)
-  看治理控制面如何把 `governance key`、`externalized truth chain`、`typed ask`、`decision window`、`continuation pricing` 与 `durable-vs-transient cleanup` 写成同一条流水线。
+  看治理控制面如何把定价对象与 choke point 写成同一条流水线。
 - 若已确认自己缺的是 signer / projection / cleanup 不对称，按 `43 -> 49 -> 127 -> 134 -> 157` 继续下潜，而不要把这些机制读成彼此独立的安全专题。
 
 ## 什么时候进来
 
 - 当你已经知道统一定价治理成立，但还没回答 signer、ledger 与 cleanup 责任究竟落在哪些对象上。
-- 当你需要判断哪种扩张该被 ask、哪种 truth 必须外化、哪种 cleanup 不配越级宣布终局。
-- 当你需要把“安全”和“省 token”继续压成同一治理纪律，而不是并列专题。
-- 当你需要把 user-facing 的 runtime readback consumer 与 continuation consumer 退回它们各自只配消费的治理阶段，而不是再让 projection 词或 consumer 词冒充治理主语。
-- 当你需要判断哪个对象只是弱读回面、哪个对象仍保留 signer authority，以及 cleanup 之后谁还配留下 reopen liability。
+- 当 signer 到底是谁仍然模糊，弱层开始越级替强层说话。
+- 当 ledger 与 verdict 的边界模糊，读回结果开始冒充治理事实。
+- 当 cleanup authority 到底落在哪仍不清楚，收口后谁还配负责也开始失真。
 
 更稳的读法是：若 usage 读数、permission 投影、cleanup 结果词或 default continuation 开始替 signer / verdict 说话，把它们先当安全症状，而不是 canonical reject semantics；具体弱读回与拒收语义统一回 `../10`。
 

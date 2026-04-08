@@ -1,11 +1,11 @@
-# Prompt 首先是世界准入顺序，不是文案技巧
+# 谁有权把当前世界合法编译进模型
 
 这一章回答五个问题：
 
-1. 为什么 Claude Code 的 Prompt 效力首先不是文案强，而是世界准入顺序强。
-2. 为什么 single-source world definition、projection discipline 与 continuation qualification 共同决定 Prompt 上限。
-3. 为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到这种效力。
-4. 怎样用苏格拉底式追问审一个新 runtime 是否真的具备这种 Prompt 效力。
+1. 为什么 Claude Code 首先在分配“谁有权把当前世界合法编译进模型”。
+2. 为什么 single-source world definition、projection discipline 与 continuation qualification 共同决定这条世界准入链的上限。
+3. 为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到这条合法世界准入链。
+4. 怎样用苏格拉底式追问审一个新 runtime 是否真的具备这种世界准入能力。
 5. 这对 Agent runtime 设计者意味着什么。
 
 ## 0. 代表性源码锚点
@@ -27,7 +27,7 @@
 
 `84` 在蓝皮书里只承担一件额外职责：
 
-- 它是 Prompt 线顶层说明的 canonical source；`README / 06 / 81` 负责引用、回绑或展开机制，不再并列重写 Prompt 顶层公式。
+- 它是“谁有权把当前世界合法编译进模型”这条问题的 canonical source；`README / 06 / 81` 负责引用、回绑或展开机制，不再并列重写顶层公式。
 
 真正有效的 Prompt，不是：
 
@@ -37,7 +37,7 @@
 
 而是：
 
-- authority order 先把输入进入模型的可采顺序排清
+- 合法世界准入顺序先把输入进入模型的可采顺序排清
 
 这里的“世界”不是抽象比喻，而是四件制度事实：
 
@@ -89,19 +89,11 @@ Anthropic 官方文档把这条 force ladder 说得更硬了一层：advisory co
 更硬一点说，这里值钱的不是魅力叙事，而是 `anti-renegotiation property` 与 `shared witness economy`：verify、delegate、tool choice 与 feedback loop 共用同一条 witness 与 effort budget，而不是各自重开现场。一旦任何路径需要重述现场，same-world property 就已经失效。
 只有世界定义权、消费边界与继续资格被同一条 witness 链持续见证，Prompt 才能免于重复协商；下面三行只是这条 judgment 的对象化压缩，不是另一条 first answer。
 
-如果把这章继续压成最短公式，只保留两条 canonical fact：
+如果把这章继续压成最短公式，只保留一句：
 
-1. `frontdoor order = Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
-2. `canonical Prompt ABI = message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+- 只有同一条 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 仍能单源裁决谁在定义世界、谁在消费这份定义、谁在继续时重获资格，当前世界才算被合法编译进模型。
 
-如果这两条还需要靠“连续性系统”这样的第四对象补完，通常也说明这里仍在把时间轴误写成独立 Prompt 平面。
-
-这里也要先卡死两层关系：
-
-- 第一行给 later maintainer 的 `first-reject path`
-- 第二行才是唯一 object-level same-world witness；frontdoor、自校、host audit 与 userbook 都只配消费这张 ABI，不该各自重造一条 Prompt 解释链
-
-如果一套 Prompt 解释还没压到这两行，它就还停在机制总结，不算最硬的第一性原理。
+若要继续核对 witness notation、ABI 载体或 object-level same-world evidence，统一回 `82` 与本页锚点；frontdoor、自校、host audit 与 userbook 都不在这里再并列重造第二组 public noun。
 
 这里还要再多记一句：
 
@@ -170,7 +162,7 @@ Claude Code 更深的一层是：
 
 - 它们都把世界编译重新退回世界描述
 
-## 4. 为什么这类误写会直接削弱 Prompt 效力
+## 4. 为什么这类误写会直接削弱世界准入能力
 
 一旦系统退回上述坏解法，马上会发生三类失真：
 
@@ -181,7 +173,7 @@ Claude Code 更深的一层是：
 3. 连续性漂移
    - compact 之后留下的是叙事，不是仍可继续行动的 continuation object
 
-所以 Prompt 效力真正保护的不是：
+所以这条世界准入能力真正保护的不是：
 
 - 当前这轮回答更顺
 
@@ -202,7 +194,7 @@ Claude Code 更深的一层是：
 
 ### first reject signal 比成功表述更值钱
 
-Prompt 效力最先失稳时，第一条信号通常不是回答质量下降，而是 `same-world test` 已经先失败：
+这条世界准入能力最先失稳时，第一条信号通常不是回答质量下降，而是 `same-world test` 已经先失败：
 
 1. `world-definition source` 不清，多个 prompt surface 开始争主语。
 2. `display transcript` 试图冒充 `protocol transcript`。
@@ -227,7 +219,7 @@ Prompt 自校统一回 `navigation/15`；本页只保留一条 first-reject hand
 
 ## 6. 对 Agent Runtime 设计者的直接启发
 
-如果你想复制 Claude Code 的 Prompt 效力，先复制：
+如果你想复制 Claude Code 的这条世界准入能力，先复制：
 
 1. 明确的 `world-definition source`
 2. `message lineage` 内核

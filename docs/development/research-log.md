@@ -2,6 +2,12 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 prompt-sovereignty 结论：`84` 与 `41` 现在更明确把 Prompt 线前门写回“谁有权把当前世界合法编译进模型 / 世界定义权必须单源”，而不是先由 `Prompt 效力`、`same-world property` 或专题侧门词汇带路。
+- 本轮新的 governance-readback 结论：`security/README` 现已继续把自己收回 signer / ledger / cleanup authority 三种不对称，不再公开重发治理 stage names、runtime readback class 或 reopen liability 这组 owner vocabulary。
+- 本轮新的 61-demotion 结论：`61` 现在更明确把治理顺序差异、classifier 幻觉与 owner taxonomy 继续压回 why，只保留“检查必须落在最有治理价值的时点”“判断已不会改变 authority allocation 时不应继续花 token”这两条抽象判断。
+- 本轮新的 source-quality split 结论：`102` 现已把 candidate 页规则收回到 evidence-status + generic handoff，不再提前点名 `sole writer / writeback seam / freshness gate`；`87` 现已进一步退回 why，不再重列 truth ladder 或 truth-plane 顺序；`architecture/README` 也改成只回答四个对象问题，而不再像第二条 frontdoor 公式链。
+- 本轮新的 editorial-boundary 结论：`41` 现已把 `第一次定义权 / route law` 这组编辑治理词退回 `navigation/README / 04`；哲学导航页只保留 why，不再公开承载 editorial rulebook。
+- 本轮新的 residual-vocabulary 结论：`84` 深段里的 `Prompt 效力` 现已改写成 `世界准入能力`；`102` 深段里的 `sole writer / writeback path / freshness gate` 现已退回 generic object-level authority wording；`87` 与 `41` 也继续收掉了 `writeback seam` 对象矩阵提示与 `route law / 第一次定义权` 这组编辑法词。
 - 本轮新的 prompt-title 结论：`84` 现在更明确把顶层 owner 标题收回“Prompt 首先是世界准入顺序，不是文案技巧”，问题列表也从 object inventory 收回到 `single-source world definition / projection discipline / continuation qualification` 这组 invariant；`84` 页首不再由结果词领路。
 - 本轮新的 03-summary 结论：`03` 的“一句话收束”现在更明确先说“三条制度如何先成立”，再说运行时平面怎样协同承接，不再让 runtime planes 在总结句里重新升格成第一设计单位。
 - 本轮新的 prompt-section-title 结论：`03` 的 `25 / 28` 现在继续把标题从平行 Prompt first-answer 收回成 `continue verdict` 与 `same-world 边界判断`，不再用“Prompt 首先...”这类句法重复 owner-level noun。

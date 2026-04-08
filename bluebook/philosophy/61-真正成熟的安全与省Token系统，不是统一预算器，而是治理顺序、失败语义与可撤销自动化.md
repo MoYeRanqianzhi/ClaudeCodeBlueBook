@@ -61,7 +61,7 @@
 Claude Code 更成熟的地方在于：
 
 - 它先决定谁必须先检查
-- 危险 allow rule、窄豁免与 source gating 这些差异，都只是“检查必须落在最有治理价值的时点”这条原则的不同实例
+- 具体顺序差异只是在证明同一条原则：检查必须落在最有治理价值的时点
 
 这说明安全与省 token 的共同问题其实是：
 
@@ -140,19 +140,7 @@ Claude Code 并不追求“检查越多越安全”。
 
 - `classifier` 不是治理控制面之外的免费裁判
 
-它只有在还能改变 `verdict` 时才值得调用；否则系统只是在用额外 token 购买“看起来更谨慎”的幻觉。
-
-最该点名的两种坏解也只该是：
-
-1. 危险 allow rule 已经让 classifier 失去仲裁空间，却还继续调用。
-2. allowlist、transcript 或 working set 已让结论稳定，却还继续用 classifier 购买谨慎表演。
-
-例如：
-
-1. 某些动作在安全 allowlist 下已足够确定，就不会再把成本继续丢给 classifier；
-2. 危险 allow rule 若会直接绕过 classifier，则先被剔除；
-3. transcript 已长到 classifier 再判也无增益时，直接转人工或终止；
-4. autocompact 连续失败后触发 circuit breaker，而不是继续徒劳压缩。
+它只有在还能改变 `verdict` 时才值得调用；否则系统只是在用额外 token 购买“看起来更谨慎”的幻觉。凡是判断已经不会改变 authority allocation，却还继续保留大 working set、继续重试自动化或继续调用 classifier，都会把 why 页重新写回 owner taxonomy；具体反例统一回 `10 / security / playbooks`。
 
 所以 Claude Code 的省 token，并不是：
 
@@ -167,7 +155,7 @@ Claude Code 并不追求“检查越多越安全”。
 - 决策增益是否仍存在
 - 也就是不让未被重新定价的动作、能力、上下文席位与时间续费继续免费扩张
 
-如果弱读回面开始代签，系统就必须长期保留更多回放与对账细节，省下来的不再是 token，而只是把证明成本挪到了以后。
+如果继续讨论谁在代签、谁只在读回、谁在收口，说明你缺的已不是 why，而是治理 owner chain。
 
 ## 6. 第五层：稳定字节是制度资产，不是实现细节
 

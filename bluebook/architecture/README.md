@@ -8,12 +8,12 @@
 
 如果只先记架构对象层的一句话，也只记这句：
 
-- 架构层不负责再判梯子，而负责把 `current-truth surface` 继续展开成 `authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer` 这组正式对象、状态机与 choke point，并用它们保护 `one writable present`。
+- 架构层不负责再判梯子，而负责把“四个对象问题”继续展开成正式对象、状态机与 choke point，并用它们保护 `one writable present`。
 - 这里首先在分配 present 的写权与回写责任，而不是描述结构形状。
 
 这里还要再多记一句：
 
-- `architecture/` 真正值钱的，不只是把对象链列出来，而是把 later maintainer 的局部可反对性落成可见的 `authority surface / truth planes / current-truth writeback / retreat layer`。
+- `architecture/` 真正值钱的，不只是把对象链列出来，而是把 later maintainer 的局部可反对性落成可见对象与 seam。
 - 这里说的 `局部可反对性` 不是“最后还能看懂”，而是拿不到作者时，later maintainer 仍能只凭局部对象与 seam 指出哪条 `event / snapshot / pointer / recovery asset` 在越权。
 - 因而 `event truth / current truth / display truth` 的对象化分工，以及 `writeEvent / reportState / reportMetadata` 这类通道怎样落到 writeback seam，也统一由本目录与 `60 / 84` 负责，不在 `87` 这类 why 页重发对象矩阵。
 
@@ -58,6 +58,6 @@
 
 - README 只负责运行时对象、结构边界与推荐起点，不重复 `05 / 15 / 41` 的高阶判据，也不替 `api/` 宣布 contract truth。
 - README 应优先暴露 later maintainer 能直接据此提出反对的对象与 seams，而不是先暴露目录体感或功能库存。
-- 如果一段 README 开始代发 evidence ladder、change-risk protocol 或目录法，它就已经离开对象层。
+- 如果一段 README 开始代发 evidence ladder、五段公式链、change-risk protocol 或目录法，它就已经离开对象层。
 - 需要字段、接口与宿主契约时，回到 [../api/README.md](../api/README.md)。
 - 需要跨专题反查时，回到 [../navigation/README.md](../navigation/README.md)。
