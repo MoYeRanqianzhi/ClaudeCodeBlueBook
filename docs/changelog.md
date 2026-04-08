@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的源码质量第一性原理：`87` 现在直接补出了“错误应先在低签字权层失败”的判断，明确要求 projection、恢复资产与 provisional claim 必须先于 present writeback 暴露失真，让 later maintainer 的第一条 veto 发生在降格层，而不是等当前真相已被写坏后才失败。本轮收尾复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态保持为 `main...origin/main`。
 - 继续更新 `bluebook/navigation/{README.md,41-机制哲学导航：请求装配、统一定价治理与当前真相保护如何回到第一性原理.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更稳的源码质量 artifact-chain 纪律：`landing card` 继续保留在 `architecture/README` 作为局部对象摘要模板，但高层导航现已不再把它写成跨层 canonical rung；`navigation/41` 现已统一改写成 `object summary / local quality gate`，`navigation/README` 也把 `landing card` 降成对象摘要示例，而不是当前真相保护线的全局 token。
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的总论收口：`03` 原先独立的“不要把源码质量判断退回尺寸治理”小节现已完全并掉，不再让总论页为源码质量 why 保留单独的影子自校节；目录优化节也因此前移一位。当前 `03` 的尾段更明确地只保留迁移、自审、坏解对照与目录单源化这类仍有 cross-line 增量的原则。
 - 继续更新 `bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的治理第一性原理：`85` 现在直接把治理 why 写成 `authority lease` 的续租问题，明确说明真正被续租的不是一次动作或一次 token 花费，而是世界准入、能力暴露、上下文占位与 continuation 这条 lease；安全在阻止危险扩张免费续租，省 token 在阻止昂贵扩张免费续租。本轮最终复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态已恢复为 `main...origin/main`。

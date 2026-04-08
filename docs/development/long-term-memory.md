@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 source-quality-low-signature-failure-first live 记忆：
+  - `87` 现在应直接承担一句更硬的源码质量第一性原理：错误必须先在低签字权层失败，而不是等到 present writeback 已经被改坏
+  - 更稳的默认写法是：projection、恢复资产与 provisional claim 必须先于 present writeback 暴露失真，让 later maintainer 的第一条 veto 发生在降格层
+- 最新根仓同步记忆（2026-04-08，本批次最终收尾 live 快照）继续保持健康态：本轮起手 `git fetch origin main` 成功、`git merge --ff-only origin/main` 返回 `Already up to date.`；本轮最终复核根仓 `/home/mo/m/projects/cc/analysis` 时，`git status --short --branch` 仍为 `main...origin/main`。后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
 - 当前批次继续新增一条 landing-card-demoted-from-global-chain live 记忆：
   - `landing card` 现在继续保留在 `architecture/README` 里，作为局部对象摘要模板
   - 更稳的默认写法是：高层导航与 artifact chain 用 `object summary / local quality gate` 指代它，而不是把 `landing card` 自己抬成跨层 canonical token
