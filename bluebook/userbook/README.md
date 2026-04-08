@@ -29,8 +29,8 @@
 如果你不是来“按目录从头读”，而是想先解决眼前问题，建议直接按目标进入：
 
 - 快速上手：
-  [00-导读.md](./00-%E5%AF%BC%E8%AF%BB.md) ->
-  [01-主线使用/README.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/README.md)
+  [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md)
+  里的“路径 1：我只想尽快上手”。
 - 分清启动时决定什么，进会话后决定什么：
   [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md)
   里的“路径 14：我想分清 root flags、root commands 和 slash commands”。
