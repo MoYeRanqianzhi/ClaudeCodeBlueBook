@@ -263,6 +263,7 @@
 - [259-2026-04-08-noninteractive task-matrix split 拆分记忆.md](./259-2026-04-08-noninteractive%20task-matrix%20split%20拆分记忆.md)
 - [260-2026-04-08-delivery topic-layer route split 拆分记忆.md](./260-2026-04-08-delivery%20topic-layer%20route%20split%20拆分记忆.md)
 - [261-2026-04-08-terminal efficiency topic-layer route split 拆分记忆.md](./261-2026-04-08-terminal%20efficiency%20topic-layer%20route%20split%20拆分记忆.md)
+- [262-2026-04-08-delivery task-matrix split 拆分记忆.md](./262-2026-04-08-delivery%20task-matrix%20split%20拆分记忆.md)
 
 用途：
 
