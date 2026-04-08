@@ -15,6 +15,12 @@
 
 - [多前端接续与条件远端/README.md](./%E5%A4%9A%E5%89%8D%E7%AB%AF%E6%8E%A5%E7%BB%AD%E4%B8%8E%E6%9D%A1%E4%BB%B6%E8%BF%9C%E7%AB%AF/README.md)
 
+如果你现在主要卡在“启动时决定什么，进会话后决定什么”，而不是 deeper command semantics，先看：
+
+- [../00-阅读路径.md](../00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md) 里的“路径 14：我想分清 root flags、root commands 和 slash commands”
+- [18-CLI 根入口、旗标与启动模式专题.md](./18-CLI%20%E6%A0%B9%E5%85%A5%E5%8F%A3%E3%80%81%E6%97%97%E6%A0%87%E4%B8%8E%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F%E4%B8%93%E9%A2%98.md)
+- 如果你卡住的是 `claude auth` / `claude mcp` / `claude plugin` / `claude doctor` 与 `/login` / `/mcp` / `/plugin` / `/status` 为什么不在一层，再接着看 [19-会外控制台与会内面板专题.md](./19-%E4%BC%9A%E5%A4%96%E6%8E%A7%E5%88%B6%E5%8F%B0%E4%B8%8E%E4%BC%9A%E5%86%85%E9%9D%A2%E6%9D%BF%E4%B8%93%E9%A2%98.md)
+
 - [01-代码工作流专题.md](./01-%E4%BB%A3%E7%A0%81%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%B8%93%E9%A2%98.md)
 - [02-连续性与记忆专题.md](./02-%E8%BF%9E%E7%BB%AD%E6%80%A7%E4%B8%8E%E8%AE%B0%E5%BF%86%E4%B8%93%E9%A2%98.md)
 - [03-治理与安全专题.md](./03-%E6%B2%BB%E7%90%86%E4%B8%8E%E5%AE%89%E5%85%A8%E4%B8%93%E9%A2%98.md)
