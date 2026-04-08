@@ -2,6 +2,10 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 继续把安全正文推进到 `321-327`，把附录推进到 `305-311`，把源码剖面推进到 `172-178`；链路从 `stronger-request cleanup-runtime-conformance-governance` 一直推进到 `stronger-request cleanup-resurrection-governance`，说明旧 cleanup carrier 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone 与 resurrection 仍是分层治理，而不是单一“cleanup done”结果词。
+- 本轮新的机制证据结论：新增证据继续把 `plans / diagnostics / orphan / tombstone / re-entry` 的关系压成更硬的制度边界。repo 现在已经把 migration clock、visibility cutoff、tombstone marker、remove-orphan marker 与 refresh / resume 路径拆成不同层 truth，因此 `旧对象还可见` 不等于 `旧对象仍被承认`，`留下墓碑` 也不等于 `已经具备复活资格`。
+- 本轮新的目录同步结论：安全目录与持久化记忆已对应到 `security=328 / appendix=311 / source-notes=178`；研究正文继续坚持“主目录只写机制本体，开放问题只留在隔离记忆层”的边界，不把开放问题回灌到安全前门。
+
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
 - 本轮新的 why-page 结论：`03` 与 `06` 现在更明确把高流量 why 页的最低自校写成一句硬规则：删掉 `next-hop / owner page / route note` 后若整段不成立，它就只是 route，不是 why。这让 `03` 更像制度因果页，`06` 更像可反驳自校页，而不是隐形导航页。
 - 本轮新的目录冻结结论：根层角色继续收紧成 `README = 唯一 frontdoor`、`navigation/README = 唯一路由反查`、`00-导读 = preface / locator`、`01-源码结构地图 = 唯一规范源码地图`。其中 `01-源码总地图` 已被正式收回成纯兼容别名页，不再发布独立源码判断。
