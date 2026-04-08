@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 entry-readmes-must-inherit-branch-reopen test live 记忆：
+  - `bluebook/README / philosophy/README` 现在也应直接继承 `84 / 15 / 41 / 03` 已写死的 Prompt 首问：later consumer 不只是不该重答世界定义、边界与继续资格，也不该把原本已排除的路径重新拉回候选集
+  - 更稳的默认写法是：高流量入口页只保留这句 first test，不自行扩成 Prompt owner 清单；若入口页还停在旧版“重谈世界”表述，就会把更早的 first reject 重新藏回抽象叙事
+- 当前批次继续新增一条 root-preflight-blocked-by-unmerged-root-ahead-2 live 记忆：
+  - 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败；`git status --short --branch` 同时显示 `main...origin/main [ahead 2]`
+  - 更稳的默认写法是：把这类根仓状态只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、提交与更新记忆
 - 当前批次继续新增一条 high-traffic-pages-must-inherit-branch-reopen wording live 记忆：
   - `03 / 41 / 81` 现在应直接继承 `84 / 06 / 15` 已写死的 Prompt 主句：Prompt 线值钱的不是“世界重判税”或 `message lineage` 这个前门词，而是 later consumer 不必把已排除路径重新拉回候选集，重开一轮冷启动动作搜索
   - 更稳的默认写法是：`84` 定锚 owner 主句，`81` 只展开机制对象，`03` 只做设计内涵压缩，`41` 只保留 why 问句与 first-reject 提示；高流量页若还沿用旧版抽象词，就继续把 later consumer 引回“重谈世界”而不是“排除分支回流”的更早反证

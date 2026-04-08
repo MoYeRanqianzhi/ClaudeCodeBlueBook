@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 这次没有快进成功，而是因根仓存在未解决冲突直接失败；`git status --short --branch` 同时显示 `main...origin/main [ahead 2]`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓收敛。
+- 本轮新的入口页结论：我把 Prompt 线的新首问继续抬到了 `bluebook/README / philosophy/README` 两个最高流量入口页，但仍只做一句 first test 的纠偏。现在根入口与哲学入口都不再只写“later consumer 还要重答世界定义、边界与继续资格”，而是更明确写成：一旦原本已排除的路径又被拉回候选集，Prompt 的 why / frontdoor 就已先失守。当前判断是，这一步能继续减少 later consumer 在第一次进蓝皮书时，把 Prompt 线读回抽象的 same-world 叙事，而更容易直接看见更早的首拒条件。
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 这次已直接返回 `Already up to date.`，`git status --short --branch` 当前为 `main...origin/main [ahead 49]`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓收敛。
 - 本轮新的高流量页结论：我把 Prompt 线的新主句从 owner/self-audit/route 页继续抬到了 `03 / 41 / 81` 三个高流量页，但仍只做句子级纠偏。`03` 现在不再把 Prompt 魔力概括成“预付世界重判税”，而是更明确写成 later consumer 不必把已排除路径重新拉回候选集、重开一轮冷启动动作搜索；`41` 则把 `first reject` 从“重述现场”继续压硬成“原本已排除的路径又被拉回候选集”；`81` 的标题也不再把 `message lineage` 放在 front-door，而是收回 `request assembly result`。当前判断是，这一步能继续减少 later consumer 在高流量页里把 Prompt 线读回抽象的重谈世界叙事，或把 `message lineage` 误读成整条 Prompt front door，而更容易在 why 层直接看见更早的失败信号。
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 这次没有进入快进，而是因根仓存在未解决冲突直接失败；`git status --short --branch` 同时显示 `main...origin/main [ahead 31]`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓收敛。

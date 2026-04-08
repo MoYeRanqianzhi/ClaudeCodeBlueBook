@@ -6,7 +6,7 @@
 ## 三条 Why 判据
 
 - Prompt 线
-  - 如果 `verify / delegate / resume / handoff` 后仍要重答世界定义、边界或继续资格，Prompt why 就还没成立
+  - 如果 `verify / delegate / resume / handoff` 后仍要重答世界定义、边界或继续资格，甚至把已排除路径重新拉回候选集，Prompt why 就还没成立
   - 缺 Prompt why 时看 `84`
 - 治理线
   - 如果解释答不出为什么 `unpaid expansion` 不能免费续租，治理 why 就还没成立
