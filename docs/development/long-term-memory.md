@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 governance-typed-tail-evidence live 记忆：
+  - `10 / 85 / 06` 现在应直接把治理尾链 typed 化：入口层唯一认 `reject trio`，usage/status/readback/reopen tail 一律先降回 `weak readback / tail evidence`；`reopen qualification` 与 `evidence binding` 只配当尾链证据；`approval fatigue` 则视为重判资格外泄
+  - 更稳的默认写法是：凡尾链对象不能补 `repricing proof / lease checkpoint / cleanup`，就不配代签继续、重试或 reopen 资格
 - 当前批次继续新增一条 public-artifact-overclaim-should-fail-low live 记忆：
   - `84 architecture / 87 / 102` 现在应直接把 public artifact 的 overclaim 写成低签字权层先失败：release-surface 争议先回 `compile-time gate / runtime gate / artifact surface`，`change-risk` 附表默认补 `signer + effect ceiling`，分不清时先降格回 `public artifact ceiling`
   - 更稳的默认写法是：later maintainer 不先问“到底有没有这个能力”，而先问“它到底没编进 build、没在 runtime 点亮，还是只没进入公开 artifact”
