@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 386 篇速查文档。
+`appendix/` 当前包含 387 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -801,6 +801,9 @@
 - `386`
   载体家族强请求清理step-up重授权治理与强请求清理续打治理分层。
   入口：[386-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：step-up reauthorization decision、same-request continuation decision、auth success ceiling与governor question](386-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：step-up reauthorization decision、same-request continuation decision、auth success ceiling与governor question.md)。
+- `387`
+  载体家族强请求清理续打治理与强请求清理完成治理分层。
+  入口：[387-安全载体家族强请求清理续打治理与强请求清理完成治理分层速查表：continuation decision、completion decision、result settlement与governor question](387-安全载体家族强请求清理续打治理与强请求清理完成治理分层速查表：continuation decision、completion decision、result settlement与governor question.md)。
 
 ## 怎么配合主线读
 
