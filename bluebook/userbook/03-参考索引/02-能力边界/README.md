@@ -234,5 +234,6 @@
 - [203-139-143 visibility、mirror runtime 与 remote truth split 索引.md](./203-139-143%20visibility%E3%80%81mirror%20runtime%20%E4%B8%8E%20remote%20truth%20split%20索引.md)
 - [204-144-149 coarse remote bit pair map 索引.md](./204-144-149%20coarse%20remote%20bit%20pair%20map%20索引.md)
 范围收束索引：`205 = 168-179`，`206 = 180-190`；两张接力范围图已经足够，不再另起 `168-190` 总索引页。
+这里的“稳定”优先指阅读骨架稳定，不等于这些页里的中间节点名都属于稳定公开能力。
 - [205-168-179 headless source、bridge authority 与 create-context 子树 索引.md](./205-168-179%20headless%20source、bridge%20authority%20与%20create-context%20子树%20索引.md)
 - [206-180-190 teleport、model 与 bridge branch map 索引.md](./206-180-190%20teleport、model%20与%20bridge%20branch%20map%20索引.md)

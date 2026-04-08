@@ -376,13 +376,23 @@
 - env claim
 - pointer cleanup
 
-## 第十层：稳定 / 条件 / 灰度保护
+## 第十层：稳定阅读骨架 / 条件公开 / 内部证据层
+
+这里的“稳定”只指：
+
+- `168-179` 作为阅读骨架已经收稳
+
+不指：
+
+- `bridge authority`、`env truth`、`session_context` 这些中间节点名本身已经变成稳定公开能力
+
+真正的稳定公开能力判断，仍应回到用户入口、公开主路径与能力边界写作规范。
 
 | 类型 | 对象 |
 | --- | --- |
-| 稳定可见 | `168` = 邻接前置厚度轴；`169` = continuation-source 根页；`170 -> 171` = headless source 分支；`172` = bridge-authority 根页；`173 -> 174` = env-truth / register-authority 主干；`175` 与 `176` = `174` 区域下的 sibling zoom；`177` = provenance 交叉 zoom；`178 -> 179` = `176` 下的 `session_context` / git-context 分支 |
+| 稳定阅读骨架 | 稳定的是这棵子树的走法：`168` 先固定邻接厚度轴，`169` 切 continuation-source 根页；然后分成 `170 -> 171` 的 headless source 分支、`172 -> 173 -> 174` 的 bridge-authority / env-truth 主干，以及 `174` 下继续长出的 `175 / 176 / 177 / 178 -> 179` 几类 zoom。 |
 | 条件公开 | `print --resume url` 的 remote materialization、CCR v2 internal-event thickness、`remote-control --continue` 的 pointer continuity、`.jsonl` 的 transcript-file provenance、assistant-mode `worker_type` label |
-| 内部/灰度层 | internal-event flush cadence、pointer fanout / cleanup heuristic、env mismatch fallback、`claude/${branch || 'task'}` 命名与部分 typed readback 面的具体暴露 |
+| 内部证据层 | `bridge authority`、`env truth`、`register authority`、`provenance zoom`、`session_context` / git-context 这些中间节点名，以及 internal-event flush cadence、pointer fanout / cleanup heuristic、env mismatch fallback、`claude/${branch || 'task'}` 命名与部分 typed readback 面的具体暴露 |
 
 ## 第十一层：这棵子树的前向接力在 `219`，不是另一张更大的总图
 
