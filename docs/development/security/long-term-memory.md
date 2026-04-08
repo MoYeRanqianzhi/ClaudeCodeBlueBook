@@ -6,6 +6,9 @@
 - `bluebook/security/appendix/` 只承载速查矩阵，不承载章节推进提示。
 - `bluebook/security/source-notes/` 只承载单机制源码剖面，不承载研究推进日志。
 - 安全专题后续候选、目录编排判断与编辑规则统一沉淀到 `docs/development/security/`。
+- `2026-04-08` 最新一轮已完成 `377 / 361 / 228`：主线把 stronger-request cleanup 从 `cleanup-audit-close-governance` 继续推进到 `cleanup-irreversible-erasure-governance`，附录把 `audit-close surface / irreversible-erasure surface / carrier destruction / governor question` 压成统一矩阵，源码剖面则把 debug file materialization、diagnostics logfile append、generic retention cleanup、transcript rewrite / truncate 与 workspace unlink 并排钉成 `carrier-destruction grammar`。这一轮稳定写出的新边界是：`out of the audit surface` 不等于 `out of the carrier`，`制度已经关闭观看权限` 不等于 `制度已经摧毁观看对象`。
+- `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-retention-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
 - `2026-04-08` 最新一轮已完成 `376 / 360 / 227`：主线把 stronger-request cleanup 从 `cleanup-archive-close-governance` 继续推进到 `cleanup-audit-close-governance`，附录把 `replay surface / debug trace / diagnostics / governor question` 压成统一矩阵，源码剖面则把 replay propagation、`control_response` replay enqueue、duplicate/orphan debug 轨迹与 diagnostics parse surface 并排钉成 `evidentiary-exit grammar`。这一轮稳定写出的新边界是：`off the active surface` 不等于 `out of the audit world`，`制度已经让旧回音退出当前秩序` 不等于 `制度已经免除了未来对它的追索权`。
 - `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-irreversible-erasure-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
