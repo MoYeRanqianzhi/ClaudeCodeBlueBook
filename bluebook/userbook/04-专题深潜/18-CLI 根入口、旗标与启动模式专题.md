@@ -27,6 +27,17 @@ Claude Code 的入口至少分成两层：
 - 把 `claude --resume` 写成 `/resume` 的语法糖
 - 把 `claude remote-control`、`--remote-control`、`/remote-control` 当成一条完全相同的链
 
+如果你真正卡住的不是启动 flags 本身，而是：
+
+- `claude auth` 与 `/login`
+- `claude mcp` 与 `/mcp`
+- `claude plugin` 与 `/plugin`
+- `claude doctor` 与 `/doctor` `/status`
+
+这些同名入口为什么不在一层，
+
+改读 [19-会外控制台与会内面板专题.md](./19-%E4%BC%9A%E5%A4%96%E6%8E%A7%E5%88%B6%E5%8F%B0%E4%B8%8E%E4%BC%9A%E5%86%85%E9%9D%A2%E6%9D%BF%E4%B8%93%E9%A2%98.md)。
+
 ## 先看真正的启动分流
 
 `src/entrypoints/cli.tsx` 显示，Claude Code 在加载完整 `main.tsx` 之前就会先看一轮 argv。

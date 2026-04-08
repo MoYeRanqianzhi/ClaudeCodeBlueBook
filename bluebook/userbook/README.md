@@ -51,6 +51,19 @@
 - 想先知道今天该怎么开工：
   [00-导读.md](./00-%E5%AF%BC%E8%AF%BB.md) ->
   [01-主线使用/README.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/README.md)
+- 分清启动时决定什么，进会话后决定什么：
+  [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md)
+  里的“路径 14：我想分清 root flags、root commands 和 slash commands”。
+  如果你主要卡在 `claude auth`、`claude mcp`、`claude plugin`、`claude doctor` 和 `/login`、`/mcp`、`/plugin`、`/status` 为什么不在同一层，再接着看里面的“路径 15：我想分清会外 root commands 和会内面板”。
+- 建立稳定工作流：
+  [01-主线使用/05-开工前自检：状态、诊断、额度与工作边界.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/05-%E5%BC%80%E5%B7%A5%E5%89%8D%E8%87%AA%E6%A3%80%EF%BC%9A%E7%8A%B6%E6%80%81%E3%80%81%E8%AF%8A%E6%96%AD%E3%80%81%E9%A2%9D%E5%BA%A6%E4%B8%8E%E5%B7%A5%E4%BD%9C%E8%BE%B9%E7%95%8C.md) ->
+  [04-专题深潜/README.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/README.md) ->
+  [05-控制面深挖/README.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/README.md)
+- 安全放大工作面，而不是一上来把行动半径开到最大：
+  [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md)
+  里的“路径 92：我想安全放大工作面，而不是一上来把行动半径开到最大”。
+  如果你只想先做第一跳分诊，再直接看
+  [04-专题深潜/安全放大工作面/README.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/%E5%AE%89%E5%85%A8%E6%94%BE%E5%A4%A7%E5%B7%A5%E4%BD%9C%E9%9D%A2/README.md)。
 - `上下文送错`：
   [01-主线使用/README.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/README.md) ->
   [04-专题深潜/README.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/README.md)
