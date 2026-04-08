@@ -25,6 +25,7 @@
 - [289-2026-04-08-path-90 routing flatten cleanup 拆分记忆.md](./289-2026-04-08-path-90%20routing%20flatten%20cleanup%20拆分记忆.md)
 - [290-2026-04-08-continuity topic boundary cleanup 拆分记忆.md](./290-2026-04-08-continuity%20topic%20boundary%20cleanup%20拆分记忆.md)
 - [291-2026-04-08-clear boundary cleanup 拆分记忆.md](./291-2026-04-08-clear%20boundary%20cleanup%20拆分记忆.md)
+- [292-2026-04-08-clear index sync cleanup 拆分记忆.md](./292-2026-04-08-clear%20index%20sync%20cleanup%20拆分记忆.md)
 
 ## 全量档案
 
