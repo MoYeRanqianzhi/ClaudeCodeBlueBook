@@ -2,6 +2,10 @@
 
 ## 当前稳定边界
 
+- `2026-04-08` 最新一轮已完成 `389 / 373 / 240`：主线把 stronger-request cleanup 从 `cleanup-sunset-governance` 继续推进到 `cleanup-tombstone-governance`，附录把 `positive control / marker type / consumer / future effect / governor question` 压成统一矩阵，源码剖面则把 tombstone message、bounded transcript rewrite、`.orphaned_at`、marker-driven visibility exclusion 与 migration timestamp trace artifact 并排钉成 `post-retirement residue grammar`。这一轮稳定写出的新边界是：`会退役` 不等于 `会留下可治理的最小残留事实`，`制度知道何时关门` 不等于 `制度知道门后还要挂什么告示`。
+- `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-resurrection-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
+
 - `2026-04-08` 最新一轮已完成 `388 / 372 / 239`：主线把 stronger-request cleanup 从 `cleanup-migration-governance` 继续推进到 `cleanup-sunset-governance`，附录把 `migration clock / sunset clock / visibility cutoff / hard-close signal / governor question` 压成统一矩阵，源码剖面则把 migration registry、provider-specific retirement date、migration timestamp、warning surface、compatibility residue、visibility cutoff 与 storage cutoff 并排钉成 `when-the-old-world-stops-counting grammar`。这一轮稳定写出的新边界是：`会迁` 不等于 `会退役`，`制度知道怎样带旧世界过桥` 不等于 `制度知道何时封桥`。
 - `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-tombstone-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
