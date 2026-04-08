@@ -6,6 +6,9 @@
 - `bluebook/security/appendix/` 只承载速查矩阵，不承载章节推进提示。
 - `bluebook/security/source-notes/` 只承载单机制源码剖面，不承载研究推进日志。
 - 安全专题后续候选、目录编排判断与编辑规则统一沉淀到 `docs/development/security/`。
+- `2026-04-08` 最新一轮已完成 `379 / 363 / 230`：主线把 stronger-request cleanup 从 `cleanup-retention-governance` 继续推进到 `cleanup-retention-enforcement-honesty-governance`，附录把 `surface / declared scope / runtime truth / honesty gap` 压成统一矩阵，源码剖面则把 declaration wording、future suppression、deferred execution、visible cleanup coverage、local receipt gap 与 uncovered diagnostics gap 并排钉成 `runtime-truthfulness grammar`。这一轮稳定写出的新边界是：`有时间法律` 不等于 `有时间法律的诚实执行说明`，`你本来该怎样` 不等于 `你已经诚实说明了自己做到哪一步`。
+- `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-isolation-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
 - `2026-04-08` 最新一轮已完成 `378 / 362 / 229`：主线把 stronger-request cleanup 从 `cleanup-irreversible-erasure-governance` 继续推进到 `cleanup-retention-governance`，附录把 `time law / validation veto / admission gate / coverage gap` 压成统一矩阵，源码剖面则把 retention declaration、validation veto、future-write suppression、housekeeping admission、visible cleanup stack 与 diagnostics coverage gap 并排钉成 `temporal-legitimacy grammar`。这一轮稳定写出的新边界是：`carrier destroyed` 不等于 `time law governed`，`你现在能删` 不等于 `你本来现在就该删`。
 - `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-retention-enforcement-honesty-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
