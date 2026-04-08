@@ -1,6 +1,6 @@
 # 安全专题索引
 
-`security/` 当前有 336 篇正文，范围 `00-335`；`appendix/` 当前有 319 篇速查文档；`source-notes/` 当前有 186 篇源码剖面。
+`security/` 当前有 343 篇正文，范围 `00-342`；`appendix/` 当前有 326 篇速查文档；`source-notes/` 当前有 193 篇源码剖面。
 
 `security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
 更短地说：安全与省 token 在这里保护的是同一个 model-reachable world；前者阻止免费危险扩张，后者阻止免费昂贵扩张。
@@ -83,7 +83,7 @@
 
 - Claude Code 的安全性不是单点沙箱，也不是单点分类器，而是一套分层 signer、ledger 与 lifecycle control plane。
 - 真正重要的不是把能力做得尽量小，而是让能力、声明、恢复权和清理权只能沿着正确边界流动。
-- `147-312` 这一整段已经证明：弱层只能说明局部事实，强层才有权宣布更高阶治理结果；任何弱层都不能越级冒充强层。
+- `147-342` 这一整段已经证明：弱层只能说明局部事实，强层才有权宣布更高阶治理结果；任何弱层都不能越级冒充强层。
 - 宿主如果绕过 runtime 已外化的 authority / status / verdict，自行从事件流回放拼“当前真相”，就会把安全控制面重新降成脆弱的局部推断。
 
 ## 什么时候进来
@@ -98,7 +98,7 @@
 
 - 如果你只先判断“哪种 signer 有资格改边界”，从 `00-29` 进入。失败信号：还在把 classifier、mode、allow 规则或单点沙箱当成最终主权。
 - 如果你只先判断“哪条真相链必须被宿主承认”，从 `30-138` 进入。失败信号：还在让宿主从事件流、usage 条或局部 status 自己回放拼治理真相。
-- 如果你只先判断“cleanup 与 forgetting 为什么不能混成一个结果词”，从 `147-312` 进入。失败信号：还在把完成、终局、遗忘、清理写成一个“已经没事了”的总结果。
+- 如果你只先判断“cleanup 与 forgetting 为什么不能混成一个结果词”，从 `147-342` 进入。失败信号：还在把完成、终局、遗忘、清理写成一个“已经没事了”的总结果。
 
 ## 目录分层
 
@@ -239,6 +239,13 @@
 - [333-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层：为什么artifact-family cleanup stronger-request cleanup-continuity-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-recovery-governor signer](333-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层.md)
 - [334-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层：为什么artifact-family cleanup stronger-request cleanup-recovery-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reintegration-governor signer](334-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层.md)
 - [335-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层：为什么artifact-family cleanup stronger-request cleanup-reintegration-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reprojection-governor signer](335-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层.md)
+- [336-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层：为什么artifact-family cleanup stronger-request cleanup-reprojection-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reassurance-governor signer](336-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层.md)
+- [337-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层：为什么artifact-family cleanup stronger-request cleanup-reassurance-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-use-time-revalidation-governor signer](337-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层.md)
+- [338-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层：为什么artifact-family cleanup stronger-request cleanup-use-time revalidation-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-step-up reauthorization-governor signer](338-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层.md)
+- [339-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层：为什么artifact-family cleanup stronger-request cleanup-step-up reauthorization-governor signer不能越级冒充artifact-family cleanup stronger-request continuation-governor signer](339-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层.md)
+- [340-安全载体家族强请求清理续打治理与强请求清理完成治理分层：为什么artifact-family cleanup stronger-request continuation-governor signer不能越级冒充artifact-family cleanup stronger-request completion-governor signer](340-安全载体家族强请求清理续打治理与强请求清理完成治理分层.md)
+- [341-安全载体家族强请求清理完成治理与强请求清理终局治理分层：为什么artifact-family cleanup stronger-request completion-governor signer不能越级冒充artifact-family cleanup stronger-request finality-governor signer](341-安全载体家族强请求清理完成治理与强请求清理终局治理分层.md)
+- [342-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层：为什么artifact-family cleanup stronger-request finality-governor signer不能越级冒充artifact-family cleanup stronger-request forgetting-governor signer](342-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层.md)
 
 ## 阅读顺序
 
