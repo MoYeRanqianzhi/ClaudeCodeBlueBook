@@ -282,6 +282,7 @@
 - [278-2026-04-08-topic README front-door split 拆分记忆.md](./278-2026-04-08-topic%20README%20front-door%20split%20拆分记忆.md)
 - [279-2026-04-08-control README front-door split 拆分记忆.md](./279-2026-04-08-control%20README%20front-door%20split%20拆分记忆.md)
 - [280-2026-04-08-skills vs plugin matrix fallback cleanup 拆分记忆.md](./280-2026-04-08-skills%20vs%20plugin%20matrix%20fallback%20cleanup%20拆分记忆.md)
+- [281-2026-04-08-memory root hub cleanup 拆分记忆.md](./281-2026-04-08-memory%20root%20hub%20cleanup%20拆分记忆.md)
 
 用途：
 
