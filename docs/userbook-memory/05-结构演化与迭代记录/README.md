@@ -241,6 +241,7 @@
 - [237-2026-04-08-startup entry mainline drift alignment 拆分记忆.md](./237-2026-04-08-startup%20entry%20mainline%20drift%20alignment%20拆分记忆.md)
 - [238-2026-04-08-startup entry index-layer routing split 拆分记忆.md](./238-2026-04-08-startup%20entry%20index-layer%20routing%20split%20拆分记忆.md)
 - [239-2026-04-08-startup command-index cross-routing split 拆分记忆.md](./239-2026-04-08-startup%20command-index%20cross-routing%20split%20拆分记忆.md)
+- [240-2026-04-08-settings status budget top-level lift 拆分记忆.md](./240-2026-04-08-settings%20status%20budget%20top-level%20lift%20拆分记忆.md)
 
 用途：
 
