@@ -253,6 +253,20 @@
 - [249-2026-04-08-long-task continuity contract table split 拆分记忆.md](./249-2026-04-08-long-task%20continuity%20contract%20table%20split%20拆分记忆.md)
 - [250-2026-04-08-long-task continuity contract table refinement 拆分记忆.md](./250-2026-04-08-long-task%20continuity%20contract%20table%20refinement%20拆分记忆.md)
 - [251-2026-04-08-session operations top-level lift 拆分记忆.md](./251-2026-04-08-session%20operations%20top-level%20lift%20拆分记忆.md)
+- [252-2026-04-08-session operations scope guard split 拆分记忆.md](./252-2026-04-08-session%20operations%20scope%20guard%20split%20拆分记忆.md)
+- [253-2026-04-08-session operations topic-layer route split 拆分记忆.md](./253-2026-04-08-session%20operations%20topic-layer%20route%20split%20拆分记忆.md)
+- [254-2026-04-08-session operations contract table split 拆分记忆.md](./254-2026-04-08-session%20operations%20contract%20table%20split%20拆分记忆.md)
+- [255-2026-04-08-session operations task-matrix split 拆分记忆.md](./255-2026-04-08-session%20operations%20task-matrix%20split%20拆分记忆.md)
+- [256-2026-04-08-context intake topic-layer route split 拆分记忆.md](./256-2026-04-08-context%20intake%20topic-layer%20route%20split%20拆分记忆.md)
+- [257-2026-04-08-noninteractive automation topic-layer route split 拆分记忆.md](./257-2026-04-08-noninteractive%20automation%20topic-layer%20route%20split%20拆分记忆.md)
+- [258-2026-04-08-context intake task-matrix split 拆分记忆.md](./258-2026-04-08-context%20intake%20task-matrix%20split%20拆分记忆.md)
+- [259-2026-04-08-noninteractive task-matrix split 拆分记忆.md](./259-2026-04-08-noninteractive%20task-matrix%20split%20拆分记忆.md)
+- [260-2026-04-08-delivery topic-layer route split 拆分记忆.md](./260-2026-04-08-delivery%20topic-layer%20route%20split%20拆分记忆.md)
+- [261-2026-04-08-terminal efficiency topic-layer route split 拆分记忆.md](./261-2026-04-08-terminal%20efficiency%20topic-layer%20route%20split%20拆分记忆.md)
+- [262-2026-04-08-delivery task-matrix split 拆分记忆.md](./262-2026-04-08-delivery%20task-matrix%20split%20拆分记忆.md)
+- [263-2026-04-08-context intake contract-table split 拆分记忆.md](./263-2026-04-08-context%20intake%20contract-table%20split%20拆分记忆.md)
+- [264-2026-04-08-terminal efficiency task-matrix split 拆分记忆.md](./264-2026-04-08-terminal%20efficiency%20task-matrix%20split%20拆分记忆.md)
+- [265-2026-04-08-terminal efficiency contract-table split 拆分记忆.md](./265-2026-04-08-terminal%20efficiency%20contract-table%20split%20拆分记忆.md)
 
 用途：
 
