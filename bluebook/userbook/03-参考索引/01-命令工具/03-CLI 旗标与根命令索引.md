@@ -8,6 +8,22 @@
 
 不重复 slash commands；斜杠命令请看 `01-命令索引.md`。
 
+如果你真正卡住的不是：
+
+- 启动时决定什么形态
+- root flags / root commands / fast-path 怎么分
+
+而是：
+
+- `claude auth` 与 `/login`
+- `claude mcp` 与 `/mcp`
+- `claude plugin` 与 `/plugin`
+- `claude doctor` 与 `/doctor` `/status`
+
+这些同名入口为什么不在一层，
+
+改看 [04-根命令与斜杠命令对照索引.md](./04-%E6%A0%B9%E5%91%BD%E4%BB%A4%E4%B8%8E%E6%96%9C%E6%9D%A0%E5%91%BD%E4%BB%A4%E5%AF%B9%E7%85%A7%E7%B4%A2%E5%BC%95.md)。
+
 ## 标记方法
 
 - `稳定公开`：默认帮助文本可见，适合写进普通用户主线
