@@ -1,6 +1,6 @@
 # 安全专题索引
 
-`security/` 当前有 381 篇正文，范围 `00-380`；`appendix/` 当前有 364 篇速查文档；`source-notes/` 当前有 231 篇源码剖面。
+`security/` 当前有 391 篇正文，范围 `00-390`；`appendix/` 当前有 374 篇速查文档；`source-notes/` 当前有 241 篇源码剖面。
 
 `security/` 首页默认先压回三类机制 ambiguity：`signer / verdict ledger / cleanup authority`。
 `security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
@@ -85,7 +85,7 @@
 
 - Claude Code 的安全性不是单点沙箱，也不是单点分类器，而是一套分层 signer、ledger 与 lifecycle control plane。
 - 真正重要的不是把能力做得尽量小，而是让能力、声明、恢复权和清理权只能沿着正确边界流动。
-- `147-380` 这一整段已经证明：弱层只能说明局部事实，强层才有权宣布更高阶治理结果；任何弱层都不能越级冒充强层。
+- `147-390` 这一整段已经证明：弱层只能说明局部事实，强层才有权宣布更高阶治理结果；任何弱层都不能越级冒充强层。
 - 宿主如果绕过 runtime 已外化的 authority / status / verdict，自行从事件流回放拼“当前真相”，就会把安全控制面重新降成脆弱的局部推断。
 
 ## 什么时候进来
@@ -100,7 +100,7 @@
 
 - 如果你只先判断“哪种 signer 有资格改边界”，从 `00-29` 进入。失败信号：还在把 classifier、mode、allow 规则或单点沙箱当成最终主权。
 - 如果你只先判断“哪条真相链必须被宿主承认”，从 `30-138` 进入。失败信号：还在让宿主从事件流、usage 条或局部 status 自己回放拼治理真相。
-- 如果你只先判断“cleanup 与 forgetting 为什么不能混成一个结果词”，从 `147-380` 进入。失败信号：还在把完成、终局、遗忘、清理写成一个“已经没事了”的总结果。
+- 如果你只先判断“cleanup 与 forgetting 为什么不能混成一个结果词”，从 `147-390` 进入。失败信号：还在把完成、终局、遗忘、清理写成一个“已经没事了”的总结果。
 
 ## 目录分层
 
@@ -109,7 +109,7 @@
 - `30-69`：真相源、账本、恢复闭环、清理纪律、词法、租约与 failure path。
 - `70-99`：能力发布、状态编辑、恢复资格、默认路由与 reject semantics。
 - `100-138`：完成权、字段生命周期、工程迁移、验证架构与制度化接口。
-- `139-380`：cleanup 契约与 signer/governor ladder，含 stronger-request cleanup 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone、resurrection、re-entitlement、reconfiguration、reactivation、readiness、continuity、recovery、reintegration、reprojection、reassurance、use-time revalidation、step-up reauthorization、continuation、completion、finality、forgetting、liability-release、archive-close、audit-close、irreversible-erasure、retention-governance、retention-enforcement-honesty、cleanup-isolation、cleanup-constitution、cleanup-rationale、cleanup-metadata、cleanup-runtime-conformance、cleanup-anti-drift-verification、cleanup-cleanup-repair、cleanup-cleanup-migration、cleanup-cleanup-sunset、cleanup-cleanup-tombstone、cleanup-cleanup-resurrection、cleanup-cleanup-re-entitlement、cleanup-cleanup-reconfiguration、cleanup-cleanup-reactivation、cleanup-cleanup-readiness、cleanup-cleanup-continuity、cleanup-cleanup-recovery、cleanup-cleanup-reintegration、cleanup-cleanup-reprojection、cleanup-cleanup-reassurance、cleanup-cleanup-use-time revalidation、cleanup-cleanup-step-up reauthorization、cleanup-cleanup-continuation、cleanup-cleanup-completion、cleanup-cleanup-finality、cleanup-cleanup-forgetting、cleanup-cleanup-liability-release、cleanup-cleanup-archive-close、cleanup-cleanup-audit-close、cleanup-cleanup-irreversible-erasure、cleanup-cleanup-retention-governance、cleanup-cleanup-retention-enforcement-honesty、cleanup-cleanup-isolation 等高阶治理分层，并继续推进到 `357-380` 的墓碑、复活、再赋权、重配置、重新激活、就绪、连续性、恢复、重新并入、重新投影、重新担保、用时重验证、step-up 重授权、续打、完成、终局、遗忘、免责释放、归档关闭、审计关闭、不可逆擦除、保留期、保留期执行诚实性与隔离治理分层。
+- `139-390`：cleanup 契约与 signer/governor ladder，含 stronger-request cleanup 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone、resurrection、re-entitlement、reconfiguration、reactivation、readiness、continuity、recovery、reintegration、reprojection、reassurance、use-time revalidation、step-up reauthorization、continuation、completion、finality、forgetting、liability-release、archive-close、audit-close、irreversible-erasure、retention-governance、retention-enforcement-honesty、cleanup-isolation、cleanup-constitution、cleanup-rationale、cleanup-metadata、cleanup-runtime-conformance、cleanup-anti-drift-verification、cleanup-cleanup-repair、cleanup-cleanup-migration、cleanup-cleanup-sunset、cleanup-cleanup-tombstone、cleanup-cleanup-resurrection、cleanup-cleanup-re-entitlement、cleanup-cleanup-reconfiguration、cleanup-cleanup-reactivation、cleanup-cleanup-readiness、cleanup-cleanup-continuity、cleanup-cleanup-recovery、cleanup-cleanup-reintegration、cleanup-cleanup-reprojection、cleanup-cleanup-reassurance、cleanup-cleanup-use-time revalidation、cleanup-cleanup-step-up reauthorization、cleanup-cleanup-continuation、cleanup-cleanup-completion、cleanup-cleanup-finality、cleanup-cleanup-forgetting、cleanup-cleanup-liability-release、cleanup-cleanup-archive-close、cleanup-cleanup-audit-close、cleanup-cleanup-irreversible-erasure、cleanup-cleanup-retention-governance、cleanup-cleanup-retention-enforcement-honesty、cleanup-cleanup-isolation 等高阶治理分层，并继续推进到 `357-390` 的墓碑、复活、再赋权、重配置、重新激活、就绪、连续性、恢复、重新并入、重新投影、重新担保、用时重验证、step-up 重授权、续打、完成、终局、遗忘、免责释放、归档关闭、审计关闭、不可逆擦除、保留期、保留期执行诚实性、隔离、家族宪法、制度理由、制度元数据、运行时符合性、反漂移验证、修复、迁移、退役、墓碑与复活治理分层。
 
 更稳的 first reject signal 还应先记三条：
 
@@ -269,6 +269,33 @@
 - [361-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层：为什么artifact-family cleanup stronger-request cleanup-reconfiguration-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reactivation-governor signer](361-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层.md)
 - [362-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层：为什么artifact-family cleanup stronger-request cleanup-reactivation-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-readiness-governor signer](362-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层.md)
 - [363-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层：为什么artifact-family cleanup stronger-request cleanup-readiness-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-continuity-governor signer](363-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层.md)
+- [364-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层：为什么artifact-family cleanup stronger-request cleanup-continuity-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-recovery-governor signer](364-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层.md)
+- [365-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层：为什么artifact-family cleanup stronger-request cleanup-recovery-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reintegration-governor signer](365-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层.md)
+- [366-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层：为什么artifact-family cleanup stronger-request cleanup-reintegration-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reprojection-governor signer](366-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层.md)
+- [367-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层：为什么artifact-family cleanup stronger-request cleanup-reprojection-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reassurance-governor signer](367-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层.md)
+- [368-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层：为什么artifact-family cleanup stronger-request cleanup-reassurance-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-use-time-revalidation-governor signer](368-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层.md)
+- [369-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层：为什么artifact-family cleanup stronger-request cleanup-use-time revalidation-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-step-up reauthorization-governor signer](369-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层.md)
+- [370-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层：为什么artifact-family cleanup stronger-request cleanup-step-up reauthorization-governor signer不能越级冒充artifact-family cleanup stronger-request continuation-governor signer](370-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层.md)
+- [371-安全载体家族强请求清理续打治理与强请求清理完成治理分层：为什么artifact-family cleanup stronger-request continuation-governor signer不能越级冒充artifact-family cleanup stronger-request completion-governor signer](371-安全载体家族强请求清理续打治理与强请求清理完成治理分层.md)
+- [372-安全载体家族强请求清理完成治理与强请求清理终局治理分层：为什么artifact-family cleanup stronger-request completion-governor signer不能越级冒充artifact-family cleanup stronger-request finality-governor signer](372-安全载体家族强请求清理完成治理与强请求清理终局治理分层.md)
+- [373-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层：为什么artifact-family cleanup stronger-request finality-governor signer不能越级冒充artifact-family cleanup stronger-request forgetting-governor signer](373-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层.md)
+- [374-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层：为什么artifact-family cleanup stronger-request forgetting-governor signer不能越级冒充artifact-family cleanup stronger-request liability-release-governor signer](374-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层.md)
+- [375-安全载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层：为什么artifact-family cleanup stronger-request liability-release-governor signer不能越级冒充artifact-family cleanup stronger-request archive-close-governor signer](375-安全载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层.md)
+- [376-安全载体家族强请求清理归档关闭治理与强请求清理审计关闭治理分层：为什么artifact-family cleanup stronger-request archive-close-governor signer不能越级冒充artifact-family cleanup stronger-request audit-close-governor signer](376-安全载体家族强请求清理归档关闭治理与强请求清理审计关闭治理分层.md)
+- [377-安全载体家族强请求清理审计关闭治理与强请求清理不可逆擦除治理分层：为什么artifact-family cleanup stronger-request audit-close-governor signer不能越级冒充artifact-family cleanup stronger-request irreversible-erasure-governor signer](377-安全载体家族强请求清理审计关闭治理与强请求清理不可逆擦除治理分层.md)
+- [378-安全载体家族强请求清理不可逆擦除治理与强请求清理保留期治理分层：为什么artifact-family cleanup stronger-request irreversible-erasure-governor signer不能越级冒充artifact-family cleanup stronger-request retention-governor signer](378-安全载体家族强请求清理不可逆擦除治理与强请求清理保留期治理分层.md)
+- [379-安全载体家族强请求清理保留期治理与强请求清理保留期执行诚实性治理分层：为什么artifact-family cleanup stronger-request retention-governor signer不能越级冒充artifact-family cleanup stronger-request retention-enforcement-honesty-governor signer](379-安全载体家族强请求清理保留期治理与强请求清理保留期执行诚实性治理分层.md)
+- [380-安全载体家族强请求清理保留期执行诚实性治理与强请求清理隔离治理分层：为什么artifact-family cleanup stronger-request retention-enforcement-honesty-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-isolation-governor signer](380-安全载体家族强请求清理保留期执行诚实性治理与强请求清理隔离治理分层.md)
+- [381-安全载体家族强请求清理隔离治理与强请求清理家族宪法治理分层：为什么artifact-family cleanup stronger-request cleanup-isolation-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-constitution-governor signer](381-安全载体家族强请求清理隔离治理与强请求清理家族宪法治理分层.md)
+- [382-安全载体家族强请求清理家族宪法治理与强请求清理制度理由治理分层：为什么artifact-family cleanup stronger-request cleanup-constitution-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-rationale-governor signer](382-安全载体家族强请求清理家族宪法治理与强请求清理制度理由治理分层.md)
+- [383-安全载体家族强请求清理制度理由治理与强请求清理元数据治理分层：为什么artifact-family cleanup stronger-request cleanup-rationale-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-metadata-governor signer](383-安全载体家族强请求清理制度理由治理与强请求清理元数据治理分层.md)
+- [384-安全载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层：为什么artifact-family cleanup stronger-request cleanup-metadata-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-runtime-conformance-governor signer](384-安全载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层.md)
+- [385-安全载体家族强请求清理运行时符合性治理与强请求清理反漂移验证治理分层：为什么artifact-family cleanup stronger-request cleanup-runtime-conformance-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-anti-drift-verifier signer](385-安全载体家族强请求清理运行时符合性治理与强请求清理反漂移验证治理分层.md)
+- [386-安全载体家族强请求清理反漂移验证治理与强请求清理修复治理分层：为什么artifact-family cleanup stronger-request cleanup-anti-drift-verifier signer不能越级冒充artifact-family cleanup stronger-request cleanup-repair-governor signer](386-安全载体家族强请求清理反漂移验证治理与强请求清理修复治理分层.md)
+- [387-安全载体家族强请求清理修复治理与强请求清理迁移治理分层：为什么artifact-family cleanup stronger-request cleanup-repair-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-migration-governor signer](387-安全载体家族强请求清理修复治理与强请求清理迁移治理分层.md)
+- [388-安全载体家族强请求清理迁移治理与强请求清理退役治理分层：为什么artifact-family cleanup stronger-request cleanup-migration-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-sunset-governor signer](388-安全载体家族强请求清理迁移治理与强请求清理退役治理分层.md)
+- [389-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层：为什么artifact-family cleanup stronger-request cleanup-sunset-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-tombstone-governor signer](389-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层.md)
+- [390-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层：为什么artifact-family cleanup stronger-request cleanup-tombstone-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-resurrection-governor signer](390-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层.md)
 
 ## 阅读顺序
 
@@ -276,7 +303,7 @@
 - 想定位“当前真相从哪里来、为什么恢复不等于完成”：先读 `30-69`。
 - 想看能力发布、状态编辑与恢复资格：先读 `70-99`。
 - 想看验证、迁移与工程化落地：先读 `100-138`。
-- 想直看治理链主干：先读 `147-363 -> appendix/131-347 -> source-notes/01-214`。
+- 想直看治理链主干：先读 `147-390 -> appendix/131-374 -> source-notes/01-241`。
 - 想快速查字段、词法、路由、签字权和速查表：直接去 [appendix/README.md](appendix/README.md)。
 - 想追具体源码证据簇：直接去 [source-notes/README.md](source-notes/README.md)。
 

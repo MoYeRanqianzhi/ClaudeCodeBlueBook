@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 231 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 241 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 源码剖面层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责把单机制证据拆开，不额外替主目录签治理 verdict。
 
 ## 这一子目录放什么
@@ -247,6 +247,33 @@
 212. [212-refreshActivePlugins、reload-plugins与refreshPluginState的强请求清理重新激活治理边界](212-refreshActivePlugins、reload-plugins与refreshPluginState的强请求清理重新激活治理边界.md)
 213. [213-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的强请求清理就绪治理边界](213-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的强请求清理就绪治理边界.md)
 214. [214-useManageMCPConnections、toolExecution与print的强请求清理连续性治理边界](214-useManageMCPConnections、toolExecution与print的强请求清理连续性治理边界.md)
+215. [215-handleRemoteAuthFailure、reconnectMcpServerImpl与performMCPOAuthFlow的强请求清理恢复治理边界](215-handleRemoteAuthFailure、reconnectMcpServerImpl与performMCPOAuthFlow的强请求清理恢复治理边界.md)
+216. [216-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的强请求清理重新并入治理边界](216-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的强请求清理重新并入治理边界.md)
+217. [217-buildMcpServerStatuses、useMcpConnectivityStatus与MCPReconnect的强请求清理重新投影治理边界](217-buildMcpServerStatuses、useMcpConnectivityStatus与MCPReconnect的强请求清理重新投影治理边界.md)
+218. [218-McpAuthTool、MCPRemoteServerMenu与print的强请求清理重新担保治理边界](218-McpAuthTool、MCPRemoteServerMenu与print的强请求清理重新担保治理边界.md)
+219. [219-ReadMcpResourceTool、ListMcpResourcesTool与toolExecution的强请求清理用时重验证治理边界](219-ReadMcpResourceTool、ListMcpResourcesTool与toolExecution的强请求清理用时重验证治理边界.md)
+220. [220-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的强请求清理step-up重授权治理边界](220-wrapFetchWithStepUpDetection、ClaudeAuthProvider与performMCPOAuthFlow的强请求清理step-up重授权治理边界.md)
+221. [221-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界](221-callMCPToolWithUrlElicitationRetry、toolExecution与MCP认证路径的强请求清理续打治理边界.md)
+222. [222-callMCPToolWithUrlElicitationRetry、callMCPTool与tool_result映射的强请求清理完成治理边界](222-callMCPToolWithUrlElicitationRetry、callMCPTool与tool_result映射的强请求清理完成治理边界.md)
+223. [223-addToolResult、print与CCRClient的强请求清理终局治理边界](223-addToolResult、print与CCRClient的强请求清理终局治理边界.md)
+224. [224-StructuredIO与orphaned permission处理链的强请求清理遗忘治理边界](224-StructuredIO与orphaned permission处理链的强请求清理遗忘治理边界.md)
+225. [225-duplicate与orphan response分流中的强请求清理免责释放治理边界](225-duplicate与orphan response分流中的强请求清理免责释放治理边界.md)
+226. [226-commandLifecycle与orphaned-permission队列的强请求清理归档关闭治理边界](226-commandLifecycle与orphaned-permission队列的强请求清理归档关闭治理边界.md)
+227. [227-control_response回放与日志面的强请求清理审计关闭治理边界](227-control_response回放与日志面的强请求清理审计关闭治理边界.md)
+228. [228-debug与diagnostics载体物化中的强请求清理不可逆擦除治理边界](228-debug与diagnostics载体物化中的强请求清理不可逆擦除治理边界.md)
+229. [229-cleanupPeriodDays、validation veto、housekeeping admission与diagnostics coverage中的强请求清理保留期治理边界](229-cleanupPeriodDays、validation veto、housekeeping admission与diagnostics coverage中的强请求清理保留期治理边界.md)
+230. [230-settings文案、shouldSkipPersistence、housekeeping与CleanupResult中的强请求清理保留期执行诚实性边界](230-settings文案、shouldSkipPersistence、housekeeping与CleanupResult中的强请求清理保留期执行诚实性边界.md)
+231. [231-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界](231-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界.md)
+232. [232-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug、diagLogs与cleanup的强请求清理家族宪法边界](232-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug、diagLogs与cleanup的强请求清理家族宪法边界.md)
+233. [233-diskOutput、toolResultStorage、sessionStorage、plans、fileHistory、sessionEnvironment、debug与diagLogs中的强请求清理制度理由边界](233-diskOutput、toolResultStorage、sessionStorage、plans、fileHistory、sessionEnvironment、debug与diagLogs中的强请求清理制度理由边界.md)
+234. [234-cleanup、settings、path helpers、permissions与env contract中的强请求清理制度元数据边界](234-cleanup、settings、path helpers、permissions与env contract中的强请求清理制度元数据边界.md)
+235. [235-cleanupPeriodDays、housekeeping、plansDirectory、diagLogs与CleanupResult的强请求清理运行时符合性缺口](235-cleanupPeriodDays、housekeeping、plansDirectory、diagLogs与CleanupResult的强请求清理运行时符合性缺口.md)
+236. [236-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口](236-microCompact、switchSession、verifyAutoModeGateAccess与强请求清理反漂移验证缺口.md)
+237. [237-verifyAutoModeGateAccess、checkAndDisableAutoModeIfNeeded、verifyAndDemote与强请求清理修复治理缺口](237-verifyAutoModeGateAccess、checkAndDisableAutoModeIfNeeded、verifyAndDemote与强请求清理修复治理缺口.md)
+238. [238-runMigrations、migrateLegacyOpusToCurrent、orphan宽限期与plans continuity的强请求清理迁移治理边界](238-runMigrations、migrateLegacyOpusToCurrent、orphan宽限期与plans continuity的强请求清理迁移治理边界.md)
+239. [239-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界](239-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界.md)
+240. [240-tombstone messages、.orphaned_at与migration timestamps的强请求清理墓碑治理边界](240-tombstone messages、.orphaned_at与migration timestamps的强请求清理墓碑治理边界.md)
+241. [241-removeOrphanedAtMarker、refreshActivePlugins、needsRefresh与copyPlanForResume的强请求清理复活治理边界](241-removeOrphanedAtMarker、refreshActivePlugins、needsRefresh与copyPlanForResume的强请求清理复活治理边界.md)
 
 ## 和其他目录的分工
 

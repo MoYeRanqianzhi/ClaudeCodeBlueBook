@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 364 篇速查文档。
+`appendix/` 当前包含 374 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 附录层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责核对字段、矩阵与速查对象，不额外签 signer / verdict。
 
@@ -750,6 +750,36 @@
 - `364`
   载体家族强请求清理保留期执行诚实性治理与强请求清理隔离治理分层。
   入口：[364-安全载体家族强请求清理保留期执行诚实性治理与强请求清理隔离治理分层速查表：surface、honesty answer、isolation question、positive control与gap](364-安全载体家族强请求清理保留期执行诚实性治理与强请求清理隔离治理分层速查表：surface、honesty answer、isolation question、positive control与gap.md)。
+- `365`
+  载体家族强请求清理隔离治理与强请求清理家族宪法治理分层。
+  入口：[365-安全载体家族强请求清理隔离治理与强请求清理家族宪法治理分层速查表：carrier family、constitution world、cleanup root、current gate与governor question](365-安全载体家族强请求清理隔离治理与强请求清理家族宪法治理分层速查表：carrier family、constitution world、cleanup root、current gate与governor question.md)。
+- `366`
+  载体家族强请求清理家族宪法治理与强请求清理制度理由治理分层。
+  入口：[366-安全载体家族强请求清理家族宪法治理与强请求清理制度理由治理分层速查表：carrier family、primary risk object、operational duty、host visibility与rationale drift](366-安全载体家族强请求清理家族宪法治理与强请求清理制度理由治理分层速查表：carrier family、primary risk object、operational duty、host visibility与rationale drift.md)。
+- `367`
+  载体家族强请求清理制度理由治理与强请求清理元数据治理分层。
+  入口：[367-安全载体家族强请求清理制度理由治理与强请求清理元数据治理分层速查表：carrier family、naming surface、path helper、env contract与gap](367-安全载体家族强请求清理制度理由治理与强请求清理元数据治理分层速查表：carrier family、naming surface、path helper、env contract与gap.md)。
+- `368`
+  载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层。
+  入口：[368-安全载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层速查表：metadata signal、runtime truth、gap type、receipt surface与governor question](368-安全载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层速查表：metadata signal、runtime truth、gap type、receipt surface与governor question.md)。
+- `369`
+  载体家族强请求清理运行时符合性治理与强请求清理反漂移验证治理分层。
+  入口：[369-安全载体家族强请求清理运行时符合性治理与强请求清理反漂移验证治理分层速查表：positive control、verifier pattern、cleanup current gap、drift risk与governor question](369-安全载体家族强请求清理运行时符合性治理与强请求清理反漂移验证治理分层速查表：positive control、verifier pattern、cleanup current gap、drift risk与governor question.md)。
+- `370`
+  载体家族强请求清理反漂移验证治理与强请求清理修复治理分层。
+  入口：[370-安全载体家族强请求清理反漂移验证治理与强请求清理修复治理分层速查表：verifier surface、governance consequence、repair scope、cleanup current gap与governor question](370-安全载体家族强请求清理反漂移验证治理与强请求清理修复治理分层速查表：verifier surface、governance consequence、repair scope、cleanup current gap与governor question.md)。
+- `371`
+  载体家族强请求清理修复治理与强请求清理迁移治理分层。
+  入口：[371-安全载体家族强请求清理修复治理与强请求清理迁移治理分层速查表：positive control、transition strategy、grace window、continuity policy与governor question](371-安全载体家族强请求清理修复治理与强请求清理迁移治理分层速查表：positive control、transition strategy、grace window、continuity policy与governor question.md)。
+- `372`
+  载体家族强请求清理迁移治理与强请求清理退役治理分层。
+  入口：[372-安全载体家族强请求清理迁移治理与强请求清理退役治理分层速查表：migration clock、sunset clock、visibility cutoff、hard-close signal与governor question](372-安全载体家族强请求清理迁移治理与强请求清理退役治理分层速查表：migration clock、sunset clock、visibility cutoff、hard-close signal与governor question.md)。
+- `373`
+  载体家族强请求清理退役治理与强请求清理墓碑治理分层。
+  入口：[373-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层速查表：positive control、marker type、consumer、future effect与governor question](373-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层速查表：positive control、marker type、consumer、future effect与governor question.md)。
+- `374`
+  载体家族强请求清理墓碑治理与强请求清理复活治理分层。
+  入口：[374-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层速查表：authoritative clearing、re-entry gate、identity policy、active layer与governor question](374-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层速查表：authoritative clearing、re-entry gate、identity policy、active layer与governor question.md)。
 
 ## 怎么配合主线读
 
