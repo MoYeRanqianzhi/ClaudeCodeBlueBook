@@ -27,7 +27,7 @@
 1. `signer ambiguity`
    - 谁配签字
 2. `ledger / verdict ambiguity`
-   - 谁在记账，谁在宣布治理事实
+   - 谁在记账（`verdict ledger`），谁在宣布治理事实
 3. `cleanup authority ambiguity`
    - 谁能收口
 

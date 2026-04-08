@@ -33,7 +33,7 @@
 - 谁在定义世界
   - 缺顶层主语与 `first-reject path`，回 `philosophy/84`
   - 若争的是继承是否越权、continue qualification 或续租是否合法，回 `84 -> 81`
-  - 缺“为什么这轮还只该 route trim”，回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md) 与 [../../docs/development/00-研究方法.md](../../docs/development/00-%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95.md)
+  - 缺“为什么这轮还不该重谈世界定义，而只该继续压回同一因果律”，回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md) 与 [../../docs/development/00-研究方法.md](../../docs/development/00-%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95.md)
 - 谁在为扩张定价
   - 缺治理首答，回 `../10`
   - 已确认主语，只缺 signer / mechanism，回 `security`；缺 tail readback / reopen qualification，回 `risk`；缺 execution / repair drill，回 `playbooks`

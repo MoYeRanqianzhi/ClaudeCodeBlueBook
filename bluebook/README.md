@@ -17,7 +17,7 @@
 - 治理
   - `10 -> security（mechanism） / risk（tail readback） / playbooks（execution）`
 - 当前真相保护
-  - `102（先判 evidence mode / public-artifact ceiling / official-vs-mirror）`
+  - `102（先判 evidence mode / public-artifact ceiling / official-vs-mirror，并产出 change-risk record）`
 
 ## 根入口只做三件事
 
@@ -28,10 +28,6 @@
 3. 先判是否要跨目录，最后才进入 route map。
    - 只有当问题已经变成“下一层证据该去哪里找”时，才转 [navigation/README.md](navigation/README.md)。
 
-这里还应再多记一句目录纪律：
-
-- `continuity` 不是第四条并列母线，而是 Prompt 的 `Continuation`、治理的 `continuation pricing` 与源码质量的 `recovery non-sovereignty / anti-zombie` 在时间维度的交汇；一旦把它单独写成新目录，就会重新把对象链拆散。
-
 ## 什么时候离开根入口
 
 - 缺 why 或苏格拉底式自校：
@@ -40,5 +36,3 @@
   - 回 `navigation/05 / 15 / 41`
 - 缺跨目录下一跳，而不是缺主语：
   - 回 [navigation/README.md](navigation/README.md)
-
-如果一个新结论第一次同时想落在 `README / navigation / guide` 三层，先回 [navigation/README.md](navigation/README.md) 的 ownership test；通常不是因为它太重要，而是因为你还没判清自己是在定义主语、解释 why、判证据，还是下执行 verdict。

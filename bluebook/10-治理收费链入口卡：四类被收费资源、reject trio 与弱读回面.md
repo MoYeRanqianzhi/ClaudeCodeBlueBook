@@ -45,6 +45,17 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
 
 如果一句治理说明答不上“这次在给哪类资源收费”，它通常还停在界面词、结果词或规则堆层。
 
+如果把 `authority lease accounting` 压成最短 crosswalk，也只剩四句：
+
+| priced resource | 谁开闸 | 谁记账 | 谁结算 |
+|---|---|---|---|
+| 动作 | signer | `externalized truth chain (verdict ledger)` | cleanup |
+| 能力 | signer | `externalized truth chain (verdict ledger)` | cleanup |
+| 上下文席位 | signer | `externalized truth chain (verdict ledger)` | cleanup |
+| 时间 | signer | `externalized truth chain (verdict ledger)` | cleanup |
+
+更硬一点说，signer 打开被定价的 authority，`externalized truth chain (verdict ledger)` 记录被定价的扩张，cleanup 负责把这份 lease 收口。
+
 ## reject trio
 
 这条链最短的 reject trio 只认：
@@ -53,9 +64,18 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
 2. `projection usurpation`
 3. `free-expansion relapse`
 
+这三条 reject 真正值钱，不在名字，而在它们各自固定追问哪条 seam：
+
+- `decision-window collapse`
+  - 定价是不是发生在暴露之后，而不是暴露之前
+- `projection usurpation`
+  - 弱层是不是替 signer 或 `verdict ledger` 说话了
+- `free-expansion relapse`
+  - lease 是不是在未重定价、未结算的情况下被默认续期了
+
 ## 弱读回面声明
 
-真正配签字的，只有 `governance key / externalized truth chain / typed ask / decision window / continuation pricing / durable-transient cleanup` 这组强面；其余对象最多只能做三件事：
+真正配签字的，只有 `governance key / externalized truth chain (verdict ledger) / typed ask / decision window / continuation pricing / durable-transient cleanup` 这组强面；其余对象最多只能做三件事：
 
 1. 触发怀疑
 2. 消费已外化 verdict
@@ -70,6 +90,7 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
 - cleanup 之后留下的是尾部责任与证据，不是可再次收费的 authority handle。
 
 它们之所以永远不配代签，不是因为“信息不够多”，而是因为一旦代签，observability 就会从 consumer 长成第二个 current-world compiler / host-truth source。
+更硬一点说，如果某个对象既不能改写 `authority allocation`，也不能改写价格、结算或继续资格，它就不是 signer；它顶多只是 projection、consumer 或触发怀疑的症状面。
 
 如果一句治理解释还必须把这些对象再分出第二张 taxonomy，说明你已经离开入口卡，进入 `risk/`、`playbooks/` 或 deeper owner pages 了。
 
