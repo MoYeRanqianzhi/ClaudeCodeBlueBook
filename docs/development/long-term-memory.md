@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 risk-readback-owner-over-tail-summary live 记忆：
+  - `risk/README` 现在应固定成纯 post-cleanup readback owner 页，只回答 `product promise readback / reopen eligibility readback / evidence receipt binding`
+  - 更稳的默认写法是：保留三类用户侧对象、失真信号、入场条件与离场条件；删掉重复的“不是第二套规则 / 不抢别页 / 先回治理前门”铺陈段
 - 当前批次继续新增一条 trim-owner-readmes-before-owner-family live 记忆：
   - 当前比新增 `owners/README` 更稳的动作，是继续压薄现有 owner README，尤其是 `api/README`
   - `api/README` 现在应固定成 `host-facing truth / consumer subset / contract truth` owner 页，不再在首页承担平面书架、推荐入口与长链 syllabus；owner 页越像书架，later maintainer 越会重新回到“先扫目录再定题”

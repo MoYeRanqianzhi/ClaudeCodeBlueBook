@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的治理 owner 结论：在 `api/README` 去库存之后，治理 owner 线里最值得继续压的确实是 `risk/README`。本轮已把它从“治理尾链总说明”压回纯 post-cleanup readback owner 页：只保留三类用户侧对象、用户侧失真信号以及最小入场/离场条件。当前判断是，`security/README` 与 `playbooks/README` 已经更接近目标态，而 `risk/README` 原先最容易把 owner 边界重复讲成第二套摘要。
 - 本轮新的 owner-page 结论：在 `meta/README` 落地之后，更高收益的下一刀不是继续加 `owners/README`，而是直接瘦身最偏厚的 owner README。于是本轮只动了 `api/README`：把它从“owner scope + 七个平面 + 推荐入口 + 适合谁先读”压回纯 owner 页，只保留 `host-facing truth / consumer subset / contract truth` 的 scope、最小进入法和离场条件。当前判断是：owner family 若未来真要做，也应建立在这些 README 已经足够瘦、足够单职之后，而不是拿一个新家族页去盖住现有 mixed-role。
 - 本轮新的目录元协议结论：根据并行 Agent 的回报，这次真正值得落地的是 `meta/README`，不是 `owners/README`。理由很具体：总控页之间的 mixed-role 争议目前还缺一个纯元协议页，所以根 `README`、`03`、`06`、`navigation` 都在轻度代写目录契约；新增 `meta/README` 能把这部分收口成“same-question 多页首答 / sibling 代签 / 删词还是退回哪层”的专门页。相反，`owners/README` 当前大概率只会重复根入口里已经存在的角色协议，并把 `architecture / security / risk / playbooks / api` 再讲成一遍总论，因此本轮刻意不建。
 - 本轮新的回链结论：`meta/README` 的最小回链集合先固定在四处高流量页：根 `README`、`03`、`06`、`navigation/README`。`philosophy/README` 这一轮不回链，因为 why-only 前门当前最值钱的特征就是不带 route 感；太早给它接 `meta`，会把 why 页重新拉回目录说明页。
