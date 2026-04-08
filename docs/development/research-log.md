@@ -2,6 +2,10 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `328`、附录推进到 `312`、源码剖面推进到 `179`，把 stronger-request cleanup 链从 resurrection 继续推进到 re-entitlement。
+- 本轮新的机制证据结论：最新证据继续证明 comeback fact 不等于 old entitlement return fact。`deletePluginOptions`、`setPluginEnabledOp` 与 `copyPlanForFork` 分别把旧配置/旧启用态/旧身份 seat 的恢复拆成不同层 truth，因此“对象回来了”仍不等于“原来的资格、配置与身份一起回来”。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=329 / appendix=312 / source-notes=179`；研究正文继续保持“主目录只写机制本体，开放问题只留在隔离记忆层”的写作边界。
+
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 继续把安全正文推进到 `321-327`，把附录推进到 `305-311`，把源码剖面推进到 `172-178`；链路从 `stronger-request cleanup-runtime-conformance-governance` 一直推进到 `stronger-request cleanup-resurrection-governance`，说明旧 cleanup carrier 的 runtime-conformance、anti-drift、repair、migration、sunset、tombstone 与 resurrection 仍是分层治理，而不是单一“cleanup done”结果词。
 - 本轮新的机制证据结论：新增证据继续把 `plans / diagnostics / orphan / tombstone / re-entry` 的关系压成更硬的制度边界。repo 现在已经把 migration clock、visibility cutoff、tombstone marker、remove-orphan marker 与 refresh / resume 路径拆成不同层 truth，因此 `旧对象还可见` 不等于 `旧对象仍被承认`，`留下墓碑` 也不等于 `已经具备复活资格`。
 - 本轮新的目录同步结论：安全目录与持久化记忆已对应到 `security=328 / appendix=311 / source-notes=178`；研究正文继续坚持“主目录只写机制本体，开放问题只留在隔离记忆层”的边界，不把开放问题回灌到安全前门。

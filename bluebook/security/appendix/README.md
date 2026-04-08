@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 311 篇速查文档。
+`appendix/` 当前包含 312 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 附录层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责核对字段、矩阵与速查对象，不额外签 signer / verdict。
 
@@ -591,6 +591,9 @@
 - `311`
   载体家族强请求清理墓碑治理与强请求清理复活治理分层。
   入口：[311-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层速查表：authoritative clearing、re-entry gate、identity policy、active layer与governor question](311-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层速查表：authoritative clearing、re-entry gate、identity policy、active layer与governor question.md)。
+- `312`
+  载体家族强请求清理复活治理与强请求清理再赋权治理分层。
+  入口：[312-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层速查表：return state、old entitlement、policy veto、identity fallback与governor question](312-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层速查表：return state、old entitlement、policy veto、identity fallback与governor question.md)。
 
 ## 怎么配合主线读
 

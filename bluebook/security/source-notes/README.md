@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 178 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 179 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 源码剖面层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责把单机制证据拆开，不额外替主目录签治理 verdict。
 
 ## 这一子目录放什么
@@ -31,7 +31,7 @@
 - `30-46` stronger-request settlement / cleanup 机制簇：先看续打、完成、终局、遗忘、免责释放、归档/审计/擦除，再看 retention、隔离、反漂移与修复。
 - `47-60` stronger-request migration 与 plugin/MCP re-entry 机制簇：先看迁移、退役、墓碑、复活、再赋权，再看 continuity、recovery、reintegration、reprojection 与 reassurance。
 - `61-75` stronger-request 续打、终局、retention 与制度元数据机制簇：先看 step-up、续打、终局/遗忘，再看 archive/audit、不可逆擦除、保留期执行诚实性、隔离、cleanup family constitution 与制度元数据。
-- `76-178` stronger-request 清理后半段与墓碑/re-entry 机制簇：先看迁移、退役、墓碑，再看复活、再赋权、重配置、重新激活、就绪、连续性、恢复、重新并入、重新投影、重新担保、用时重验证，以及续打、完成、终局、遗忘、免责释放、归档关闭、审计关闭、不可逆擦除、保留期、保留期执行诚实性、隔离、家族宪法/制度理由、制度元数据、运行时符合性、反漂移验证、修复、迁移、退役、墓碑、复活、再赋权、重配置、重新激活、就绪、连续性、恢复、重新并入、重新投影、重新担保、用时重验证、step-up 重授权、续打、完成、终局、遗忘、免责释放、归档关闭、审计关闭、不可逆擦除、保留期、保留期执行诚实性、隔离、家族宪法、制度理由、制度元数据、运行时符合性、反漂移验证、修复、迁移、退役、墓碑与复活。
+- `76-179` stronger-request 清理后半段与墓碑/re-entry 机制簇：先看迁移、退役、墓碑，再看复活、再赋权、重配置、重新激活、就绪、连续性、恢复、重新并入、重新投影、重新担保、用时重验证，以及续打、完成、终局、遗忘、免责释放、归档关闭、审计关闭、不可逆擦除、保留期、保留期执行诚实性、隔离、家族宪法/制度理由、制度元数据、运行时符合性、反漂移验证、修复、迁移、退役、墓碑、复活、再赋权、重配置、重新激活、就绪、连续性、恢复、重新并入、重新投影、重新担保、用时重验证、step-up 重授权、续打、完成、终局、遗忘、免责释放、归档关闭、审计关闭、不可逆擦除、保留期、保留期执行诚实性、隔离、家族宪法、制度理由、制度元数据、运行时符合性、反漂移验证、修复、迁移、退役、墓碑、复活与再赋权。
 
 1. [01-StructuredIO回执账本与签收边界](01-StructuredIO%E5%9B%9E%E6%89%A7%E8%B4%A6%E6%9C%AC%E4%B8%8E%E7%AD%BE%E6%94%B6%E8%BE%B9%E7%95%8C.md)
 2. [02-print与CCRClient的终局签字边界](02-print%E4%B8%8ECCRClient%E7%9A%84%E7%BB%88%E5%B1%80%E7%AD%BE%E5%AD%97%E8%BE%B9%E7%95%8C.md)
@@ -211,6 +211,7 @@
 176. [176-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界](176-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界.md)
 177. [177-tombstone messages、.orphaned_at与migration timestamps的强请求清理墓碑治理边界](177-tombstone messages、.orphaned_at与migration timestamps的强请求清理墓碑治理边界.md)
 178. [178-removeOrphanedAtMarker、refreshActivePlugins与copyPlanForResume的强请求清理复活治理边界](178-removeOrphanedAtMarker、refreshActivePlugins与copyPlanForResume的强请求清理复活治理边界.md)
+179. [179-deletePluginOptions、setPluginEnabledOp与copyPlanForFork的强请求清理再赋权治理边界](179-deletePluginOptions、setPluginEnabledOp与copyPlanForFork的强请求清理再赋权治理边界.md)
 
 ## 和其他目录的分工
 
