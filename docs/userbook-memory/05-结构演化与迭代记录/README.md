@@ -210,6 +210,7 @@
 - [206-2026-04-08-blocked-state publish ceiling split 拆分记忆.md](./206-2026-04-08-blocked-state%20publish%20ceiling%20split%20拆分记忆.md)
 - [207-2026-04-08-blocked-state topic projection split 拆分记忆.md](./207-2026-04-08-blocked-state%20topic%20projection%20split%20拆分记忆.md)
 - [208-2026-04-08-remote surface topic projection split 拆分记忆.md](./208-2026-04-08-remote%20surface%20topic%20projection%20split%20拆分记忆.md)
+- [209-2026-04-08-headless print convergence reading chain split 拆分记忆.md](./209-2026-04-08-headless%20print%20convergence%20reading%20chain%20split%20拆分记忆.md)
 
 用途：
 

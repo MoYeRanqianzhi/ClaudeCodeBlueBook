@@ -98,6 +98,7 @@
 79. 为什么 headless `print` 的 `task-notification` 不是普通进度提示，而是 SDK consumer 和模型双重消费的结果 envelope。
 80. 为什么 headless `print` 的 terminal XML、statusless ping 与 direct SDK emit 不是同一种关单信号。
 81. 为什么 headless `print` 的任务结果会同时落在 task bookend、command lifecycle 与 attachment 内容三套账本上。
+- 如果你已经在 81-88 之间迷路，先看 [02-能力边界/194-Headless print result-convergence reading chain 索引.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/194-Headless%20print%20result-convergence%20reading%20chain%20%E7%B4%A2%E5%BC%95.md)，再回到 81/82/84/85/86/87/88。
 82. 为什么 headless `print` 的 `task_started/task_progress/task_notification` 三段式 SDK 事件不是 queue lifecycle 那一层。
 83. 为什么 headless `print` 的 `task_progress/workflow_progress` 进展流属于宿主投影，而不是模型图层。
 84. 为什么 headless `print` 的 task result 会在 XML re-entry 路和 direct SDK close 路之间分叉，而不是统一回流。
