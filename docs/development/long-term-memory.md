@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 architecture-needs-first-retreat-layer live 记忆：
+  - `architecture/README` 现在应直接把 landing card 从 `local veto cue` 扩成 `local veto cue + first retreat layer`
+  - 更稳的默认写法是：对象层若答不出第一退回层，就还只是 locator，不配被 later maintainer 当成可继承的 `next-refactor entry`
+- 当前批次继续新增一条 change-risk-table-needs-retreat-layer live 记忆：
+  - `102` 里的 `change-risk` 模板现在默认也应带 `first retreat layer`
+  - 更稳的默认写法是：later maintainer 不只要知道第一条局部 veto 落哪，还要知道失败后第一退回层先落哪
 - 当前批次继续新增一条 law-follows-precedence-and-veto live 记忆：
   - `84` 现在应直接把 Prompt why 压成一句更硬的总律：runtime 里的 law 按优先级与 veto 能力生效，不按句子强弱生效
   - 更稳的默认写法是：不能 veto 的 surface 只配补 context，不配代签世界定义、权限边界与继续资格

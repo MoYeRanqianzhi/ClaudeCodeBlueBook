@@ -338,17 +338,18 @@ gap discipline 的价值不是“保守一点”，而是：
 
 更稳的记录模板至少应包含下面几列：
 
-| change-risk surface | protected invariant | minimum visible evidence | first local veto cue | common misread | downgrade note | unresolved-authority note |
+| change-risk surface | protected invariant | minimum visible evidence | first local veto cue | first retreat layer | common misread | downgrade note | unresolved-authority note |
 |---|---|---|---|---|---|
-| `<surface>` | `<what it protects>` | `<authoritative proof>` | `<where later maintainer first says no>` | `<usual wrong reading>` | `<why this stays provisional>` | `<what promotion still lacks>` |
+| `<surface>` | `<what it protects>` | `<authoritative proof>` | `<where later maintainer first says no>` | `<where the fallback lands first>` | `<usual wrong reading>` | `<why this stays provisional>` | `<what promotion still lacks>` |
 
 更短地说，这页真正要先写实的是：
 
 1. 这份 `change-risk` 附表该长什么样。
 2. 哪些 gap 必须显式保留。
 3. later maintainer 第一条局部 veto 应该落在哪。
-4. 为什么当前判断仍要降格。
-5. 哪些 authority 缺口必须继续显式保留。
+4. 第一退回层先落哪。
+5. 为什么当前判断仍要降格。
+6. 哪些 authority 缺口必须继续显式保留。
 
 对象层若还需要继续写 `writeback seam / first fallback / local veto cue`，统一留给 `architecture/README`；`102` 不代写对象摘要。
 
