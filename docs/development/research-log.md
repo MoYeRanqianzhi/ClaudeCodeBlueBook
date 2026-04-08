@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `371`、把附录推进到 `355`、把源码剖面推进到 `222`；链路从 `stronger-request cleanup-continuation-governance` 继续推进到 `stronger-request cleanup-completion-governance`，说明 stronger-request cleanup 已进一步进入“旧动作已经回到因果链”与“这条旧动作现在究竟有没有被结案”之间的治理分层。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=372 / appendix=355 / source-notes=222`；本轮开始前 fresh 复核根仓库，结果为 `main...origin/main = 0 0` 与 `## main...origin/main`，`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`。当前唯一 open question 已继续前推到 `stronger-request cleanup-finality-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
+
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `370`、把附录推进到 `354`、把源码剖面推进到 `221`；链路从 `stronger-request cleanup-step-up reauthorization-governance` 继续推进到 `stronger-request cleanup-continuation-governance`，说明 stronger-request cleanup 已进一步进入“主体现在已经够格”与“旧动作现在是否仍算同一件事继续”之间的治理分层。
 - 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=371 / appendix=354 / source-notes=221`；本轮开始前 fresh 复核根仓库，结果为 `main...origin/main = 0 0` 与 `## main...origin/main`，`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`。当前唯一 open question 已继续前推到 `stronger-request cleanup-completion-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `369`、把附录推进到 `353`、把源码剖面推进到 `220`；链路从 `stronger-request cleanup-use-time-revalidation-governance` 继续推进到 `stronger-request cleanup-step-up reauthorization-governance`，说明 stronger-request cleanup 已进一步进入“这一刻还能不能用”与“这一刻是否已经配去做更强的事”之间的治理分层。
