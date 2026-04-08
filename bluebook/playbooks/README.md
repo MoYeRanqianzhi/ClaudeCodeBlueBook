@@ -18,11 +18,7 @@
 - 当你需要把 later maintainer 的局部反对权转成正式拒收、回退与 reopen 顺序，而不再停在“看起来不对”的体感层。
 
 更稳一点说，入场前只确认主语、用户侧 readback 与对象边界都已定住；不要在执行首页重跑 first-answer 或 why。
-
-## 稳定手册索引
-
-- 现有执行手册稳定编号见 `29-31`、`65-67`、`77-79`
-- README 只承认这些编号存在，不再替它们预分场景；真正的 admission / repair / verification 判断留给具体手册
+稳定手册编号存在，但索引不在首页展开；README 只定义 `execution verdict / rollback / reopen` 的 owner scope。
 
 ## 这里不回答什么
 

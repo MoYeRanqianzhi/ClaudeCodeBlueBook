@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-why-equals-same-world-test live 记忆：
+  - `84` 默认继续只把 Prompt why 写成 `same-world failure test`，不再在 why 页页首预发 second-hop object nouns 或机制 inventory
+  - `03 / philosophy/README` 默认继续只复用这条 failure test，不再提前点名 repair object、witness 或 continuation 资产载体
+- 当前批次继续新增一条 governance-frontdoor-split live 记忆：
+  - 治理线默认继续固定成 `10 = 四问 first-answer`、`85 = why-proof`
+  - `reject seam / signer ambiguity / readback / execution verdict` 默认继续统一退回 `security / risk / playbooks`，不在 `10 / 85` 提前混写
+- 当前批次继续新增一条 security-playbooks-no-menu live 记忆：
+  - `security/README` 默认继续只定义 `signer / ledger / cleanup authority` 三类 ambiguity，不再提示 appendix/source-notes 材料菜单
+  - `playbooks/README` 默认继续只定义 `execution verdict / rollback / reopen` 的 owner scope，不再在首页展开稳定手册编号簇
+- 最新根仓同步记忆（2026-04-08，本批次本轮）继续保持阻塞态：`git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓 `/home/mo/m/projects/cc/analysis` 外层未解决冲突而失败；后续继续严格只在 `.worktrees/mainloop` 内推进。
 - 当前批次继续新增一条 source-quality-full-chain-at-root live 记忆：
   - 根 `README` 的源码质量线默认继续不用端点缩写；更稳的默认写法是完整链：`ceiling note / change-risk record / why-proof / landing card / local quality gate`
 - 最新根仓同步记忆（2026-04-08，本批次当前轮）更新为阻塞态：`git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓 `/home/mo/m/projects/cc/analysis` 存在未解决冲突而失败，错误为 `Merging is not possible because you have unmerged files.`；后续继续严格只在 `.worktrees/mainloop` 内推进。

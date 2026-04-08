@@ -2,6 +2,10 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 Prompt owner 结论：`84` 现在继续从“why + mechanism inventory”压回 `same-world failure test`。新的最稳口径只剩：later consumer 若在 `verify / delegate / resume / handoff` 后还要先重答世界、边界或继续资格，Prompt 就已经失败；`03` 与 `philosophy/README` 也同步改成只复用这条 failure test，不再提前点名 second-hop object noun。
+- 本轮新的治理 owner 结论：治理线当前更稳的默认分工已继续写死成 `10 = 四问 first-answer`、`85 = why-proof`。`10` 只保留 `earliest unpaid expansion / repricing proof / lease checkpoint / cleanup`，`85` 只证明为什么 expansion 必须先被定价；signer、readback 与 execution verdict 统一退回 `security / risk / playbooks`。
+- 本轮新的目录前门结论：`security/README` 与 `playbooks/README` 现在也继续从首页菜单页退回 owner scope 页。前者只保留 `signer / ledger / cleanup authority` 三类 ambiguity，后者只保留 `execution verdict / rollback / reopen` 的边界；首页不再展开 appendix/source-notes 或稳定手册编号簇。
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，`git merge --ff-only origin/main` 仍因根仓 `/home/mo/m/projects/cc/analysis` 外层未解决冲突失败，错误为 `Merging is not possible because you have unmerged files.`。本轮继续严格只在 `.worktrees/mainloop` 内推进，不碰根仓冲突。
 - 本轮新的根入口结论：根 `README` 的源码质量分流现在继续避免端点缩写，当前默认链显式保持为 `ceiling note / change-risk record / why-proof / landing card / local quality gate`，不再用 `ceiling note / record / gate` 之类短写给 later maintainer 留出跳级空间。
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，`git merge --ff-only origin/main` 因根仓 `/home/mo/m/projects/cc/analysis` 外部未解决冲突而失败，报错 `Merging is not possible because you have unmerged files.`。本轮继续严格只在 `.worktrees/mainloop` 内推进，不碰根仓冲突。
 - 本轮新的深段因果结论：`06` 的若干后段现在继续从“owner page 兜底”收回到更直接的 why。新的默认句法更明确地把 free exposure、free continuation、transient authority、same-world compiler 与 unified budgeting 为何不足以单独解释成熟度，写成联动因果，而不是写成术语出口。

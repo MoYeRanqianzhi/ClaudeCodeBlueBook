@@ -20,7 +20,7 @@
 3. `cleanup authority ambiguity`
    - 谁能收口
 
-如果一条安全判断还压不回这三类 ambiguity，它就还停在规则堆或工具堆层；如果已经开始重发 canonical chain 的 stage names，这页就又在代签 `10`。
+如果一条安全判断还压不回这三类 ambiguity，它就还停在规则堆或工具堆层；如果已经开始重发治理 stage names，这页就又在代签 `10`。
 
 ## 什么时候进来
 
@@ -29,7 +29,7 @@
 - 当 ledger 与 verdict 的边界模糊，结果词开始冒充治理事实。
 - 当 cleanup authority 到底落在哪仍不清楚，收口后谁还配负责也开始失真。
 
-更稳的读法是：若 projection、状态词或收口结果开始替 signer / verdict 说话，把它们先当安全症状，而不是治理事实；缺字段矩阵与源码证据簇时再去 appendix 或 source-notes，不在首页列材料菜单。
+更稳的读法是：若 projection、状态词或收口结果开始替 signer / verdict 说话，把它们先当安全症状，而不是治理事实；证据细节与材料分解不在首页展开。
 
 ## 维护约定
 

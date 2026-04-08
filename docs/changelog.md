@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/{10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面.md,03-设计哲学.md,philosophy/{84-世界如何合法进入模型：request assembly 与 six-stage assembly chain,85-真正成熟的治理，不是更会拦截，而是更会为扩张定价,README}.md,security/README.md,playbooks/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成两条更硬的前门纪律：治理线现已固定成 `10 = 四问 first-answer`、`85 = why-proof`，Prompt 线现已固定成 `84 = same-world failure test`、`03 / philosophy/README = 不预发 second-hop nouns`；同时记录了本轮根仓 `git fetch origin main` 成功、但 `git merge --ff-only origin/main` 因根仓外层未解决冲突而阻塞的 live 状态
 - 继续更新 `bluebook/{README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的源码质量纪律：根入口的源码质量链现已显式保留完整 handoff `ceiling note / change-risk record / why-proof / landing card / local quality gate`，不再用端点缩写
 - 继续更新 `bluebook/{06-第一性原理与苏格拉底反思.md,architecture/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成两条更硬的默认纪律：`06` 的后段继续把统一预算器、构建尾巴与 free-exposure 话题压回不靠 route note 站立的联动因果；`architecture/README` 也把源码质量 handoff 明写成唯一顺序 `102 -> 87 -> landing card -> local quality gate`。同时记录了本轮根仓 `merge --ff-only origin/main` 因根仓外部未解决冲突而阻塞的 live 状态
 - 继续更新 `bluebook/{01-源码结构地图.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成两条更硬的默认纪律：`06` 深段与 `7.2` 入口判据现已进一步改写成 later consumer 是否被迫重谈主语/证据/first-reject path 的自校问题；`01-源码结构地图` 顶部则继续收薄成纯 repo-specific map，不再长出额外前门语气
