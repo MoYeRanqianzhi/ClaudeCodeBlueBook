@@ -247,6 +247,7 @@
 - [243-2026-04-08-settings topic-layer first-hop split 拆分记忆.md](./243-2026-04-08-settings%20topic-layer%20first-hop%20split%20拆分记忆.md)
 - [244-2026-04-08-extension operations top-level lift 拆分记忆.md](./244-2026-04-08-extension%20operations%20top-level%20lift%20拆分记忆.md)
 - [245-2026-04-08-extension operations topic-layer first-hop split 拆分记忆.md](./245-2026-04-08-extension%20operations%20topic-layer%20first-hop%20split%20拆分记忆.md)
+- [246-2026-04-08-long-task continuity top-level lift 拆分记忆.md](./246-2026-04-08-long-task%20continuity%20top-level%20lift%20拆分记忆.md)
 
 用途：
 
