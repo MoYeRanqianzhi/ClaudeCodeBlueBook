@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的设计内涵结论：并行只读复查指出，`03` 开头最值钱的 residual 不是缺更多母线总论，而是治理线与当前线还没有像 Prompt 线那样被压成对象级 acid test。本轮已把这层判断补进 `03`：治理线先问 `earliest unpaid expansion / repricing proof / cleanup`，当前线先问 `local veto cue / first retreat layer`。当前判断是，这一步能明显减少 later consumer 把 why 页重新读成导航页或结论词页的概率，因为页内 now 先要求判失守点，再允许继续解释。
+- 本轮新的苏格拉底自校结论：这轮也把 `06` 的最小回退动作继续写硬。现在它不再只说“先降格哪层结论”，而是明确要求回答该降格哪层 claim、冻结哪类 `continuation`、撤回哪条 `maturity verdict`；边界混写时，则先把 `UI transcript / mode / usage / 作者说明` 一律降回 `projection / evidence`。当前判断是，这一步让 `06` 更像可执行的自校协议，而不再只是对 later maintainer 的抽象提醒。
 - 本轮新的治理对象层结论：沿着 `83` 已经写出的 signer hinge，这轮又把 signer ceiling 往前压硬了一层。`auto mode` 现在被明确压回“剩余 `ask` 压缩器”，不再和 `managed settings / permissions / sandboxing` 并排充当 signer peer；`/compact / /resume / /memory` 这些 continuation consumer 也只配消费已签边界、durable asset 与 pending action，不继承旧 `permission mode` 或批量 `ask` 的裁决权。当前判断是，这一步能明显减少 later consumer 把 auto mode 或 continuation loop 误读成再判一轮的主权面，而更容易把它们读成 verdict 之后的续租消费层。
 - 本轮新的 Prompt 对象层结论：`Bohr` 指出，`82` 真正还没写死的不是 section 或 projection，而是 `Authority` 本身的 signer 语义。本轮已把 `override -> coordinator -> agent -> custom -> default -> append` 明确压回 `world-definition signer` 的内部 precedence，不再让它继续冒充跨 `CLAUDE.md / settings / subagents / hooks` 的总 authority chain。当前判断是，这一步能明显减少 later consumer 把 `82` 的 signer 顺序误读成一条跨 surface 的平面主权链。
 - 本轮新的 Prompt 对象层结论：这轮没有再去补 `84` 的 why，而是把已经写死的 signer/precedence 纪律继续落到 `82`。本轮已把 `display transcript / control projection / continuation object` 越权代签 `protocol transcript` 明写成第一条 `local veto cue`，并把第一退回层写回 `protocol transcript + message lineage + section registry`。当前判断是，这一步让 `82` 第一次不只是在讲 projection consumer taxonomy，而是在给 later maintainer 一个对象层的 first reject 和 first retreat。

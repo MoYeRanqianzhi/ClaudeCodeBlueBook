@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 03-needs-acid-tests-for-pricing-and-present-veto live 记忆：
+  - `03` 现在应直接把治理线与当前线都压成最短 acid test：前者先问 `earliest unpaid expansion / repricing proof / cleanup`，后者先问 `local veto cue / first retreat layer`
+  - 更稳的默认写法是：若这些对象级反问答不出，就先把成熟度或当前判断降格，不再拿 route 句或结果词撑 why
+- 当前批次继续新增一条 06-minimum-retreat-must-name-downgrade-freeze-withdraw live 记忆：
+  - `06` 现在应直接把最小回退动作写成 `降格 claim -> 冻结 continuation -> 撤回 maturity verdict`
+  - 更稳的默认写法是：边界混写时先把 `UI transcript / mode / usage / 作者说明` 降回 `projection / evidence`，而不是先补更大的检查表
 - 当前批次继续新增一条 auto-mode-is-not-a-signer-peer live 记忆：
   - `83` 现在应直接把 `auto mode` 压回“剩余 `ask` 压缩器”，不再让它和 `managed settings / permissions / sandboxing` 并排冒充 signer peer
   - 更稳的默认写法是：`/compact / /resume / /memory` 这些 continuation consumer 最多消费已签边界、durable asset 与 pending action，不继承旧 `permission mode` 或批量 `ask` 的裁决权；凡要改写价格、继续资格或终局解释的动作，都必须回到 `repricing seam`
