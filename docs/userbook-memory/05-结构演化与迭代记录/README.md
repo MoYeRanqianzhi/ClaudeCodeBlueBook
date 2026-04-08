@@ -245,6 +245,7 @@
 - [241-2026-04-08-settings usage product-plane alignment 拆分记忆.md](./241-2026-04-08-settings%20usage%20product-plane%20alignment%20拆分记忆.md)
 - [242-2026-04-08-settings index to self-check handoff 拆分记忆.md](./242-2026-04-08-settings%20index%20to%20self-check%20handoff%20拆分记忆.md)
 - [243-2026-04-08-settings topic-layer first-hop split 拆分记忆.md](./243-2026-04-08-settings%20topic-layer%20first-hop%20split%20拆分记忆.md)
+- [244-2026-04-08-extension operations top-level lift 拆分记忆.md](./244-2026-04-08-extension%20operations%20top-level%20lift%20拆分记忆.md)
 
 用途：
 
