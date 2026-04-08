@@ -2,6 +2,26 @@
 
 这一层只记录维护 `bluebook/userbook/` 时形成的结构决策、批次边界和继续深入时的落笔纪律。
 
+## 最近批次
+
+如果你主要是在看最近这一轮继续深入是怎样切片、怎样提交、怎样做前门收敛和对象分诊的，先看下面这些最新条目：
+
+- [273-2026-04-08-reference index hub cleanup 拆分记忆.md](./273-2026-04-08-reference%20index%20hub%20cleanup%20拆分记忆.md)
+- [274-2026-04-08-init and setup contract-table split 拆分记忆.md](./274-2026-04-08-init%20and%20setup%20contract-table%20split%20拆分记忆.md)
+- [275-2026-04-08-root readme hub cleanup 拆分记忆.md](./275-2026-04-08-root%20readme%20hub%20cleanup%20拆分记忆.md)
+- [276-2026-04-08-task matrix object-triage cleanup 拆分记忆.md](./276-2026-04-08-task%20matrix%20object-triage%20cleanup%20拆分记忆.md)
+- [277-2026-04-08-object triage mini-tables split 拆分记忆.md](./277-2026-04-08-object%20triage%20mini-tables%20split%20拆分记忆.md)
+- [278-2026-04-08-topic README front-door split 拆分记忆.md](./278-2026-04-08-topic%20README%20front-door%20split%20拆分记忆.md)
+- [279-2026-04-08-control README front-door split 拆分记忆.md](./279-2026-04-08-control%20README%20front-door%20split%20拆分记忆.md)
+- [280-2026-04-08-skills vs plugin matrix fallback cleanup 拆分记忆.md](./280-2026-04-08-skills%20vs%20plugin%20matrix%20fallback%20cleanup%20拆分记忆.md)
+- [281-2026-04-08-memory root hub cleanup 拆分记忆.md](./281-2026-04-08-memory%20root%20hub%20cleanup%20拆分记忆.md)
+- [282-2026-04-08-evolution README recent-batch split 拆分记忆.md](./282-2026-04-08-evolution%20README%20recent-batch%20split%20拆分记忆.md)
+- [283-2026-04-08-mcp matrix fallback cleanup 拆分记忆.md](./283-2026-04-08-mcp%20matrix%20fallback%20cleanup%20拆分记忆.md)
+
+## 全量档案
+
+如果你是在追早期结构演化脉络、老批次切片依据或长期落笔纪律，再从下面这份全量档案继续往前翻：
+
 - [01-2026-04-06-目录、边界与运行时合同迭代记忆.md](./01-2026-04-06-%E7%9B%AE%E5%BD%95%E3%80%81%E8%BE%B9%E7%95%8C%E4%B8%8E%E8%BF%90%E8%A1%8C%E6%97%B6%E5%90%88%E5%90%8C%E8%BF%AD%E4%BB%A3%E8%AE%B0%E5%BF%86.md)
 - [02-2026-04-06-运行时深线扩容与正文去记忆化记忆.md](./02-2026-04-06-%E8%BF%90%E8%A1%8C%E6%97%B6%E6%B7%B1%E7%BA%BF%E6%89%A9%E5%AE%B9%E4%B8%8E%E6%AD%A3%E6%96%87%E5%8E%BB%E8%AE%B0%E5%BF%86%E5%8C%96%E8%AE%B0%E5%BF%86.md)
 - [03-2026-04-06-高频用户目标专题继续拆分记忆.md](./03-2026-04-06-%E9%AB%98%E9%A2%91%E7%94%A8%E6%88%B7%E7%9B%AE%E6%A0%87%E4%B8%93%E9%A2%98%E7%BB%A7%E7%BB%AD%E6%8B%86%E5%88%86%E8%AE%B0%E5%BF%86.md)
@@ -271,6 +291,18 @@
 - [267-2026-04-08-account topic-layer route split 拆分记忆.md](./267-2026-04-08-account%20topic-layer%20route%20split%20拆分记忆.md)
 - [268-2026-04-08-extension operations contract-table split 拆分记忆.md](./268-2026-04-08-extension%20operations%20contract-table%20split%20拆分记忆.md)
 - [269-2026-04-08-account contract-table split 拆分记忆.md](./269-2026-04-08-account%20contract-table%20split%20拆分记忆.md)
+- [270-2026-04-08-init and setup task-matrix split 拆分记忆.md](./270-2026-04-08-init%20and%20setup%20task-matrix%20split%20拆分记忆.md)
+- [271-2026-04-08-multi-frontend contract-table split 拆分记忆.md](./271-2026-04-08-multi-frontend%20contract-table%20split%20拆分记忆.md)
+- [272-2026-04-08-account task-matrix split 拆分记忆.md](./272-2026-04-08-account%20task-matrix%20split%20拆分记忆.md)
+- [273-2026-04-08-reference index hub cleanup 拆分记忆.md](./273-2026-04-08-reference%20index%20hub%20cleanup%20拆分记忆.md)
+- [274-2026-04-08-init and setup contract-table split 拆分记忆.md](./274-2026-04-08-init%20and%20setup%20contract-table%20split%20拆分记忆.md)
+- [275-2026-04-08-root readme hub cleanup 拆分记忆.md](./275-2026-04-08-root%20readme%20hub%20cleanup%20拆分记忆.md)
+- [276-2026-04-08-task matrix object-triage cleanup 拆分记忆.md](./276-2026-04-08-task%20matrix%20object-triage%20cleanup%20拆分记忆.md)
+- [277-2026-04-08-object triage mini-tables split 拆分记忆.md](./277-2026-04-08-object%20triage%20mini-tables%20split%20拆分记忆.md)
+- [278-2026-04-08-topic README front-door split 拆分记忆.md](./278-2026-04-08-topic%20README%20front-door%20split%20拆分记忆.md)
+- [279-2026-04-08-control README front-door split 拆分记忆.md](./279-2026-04-08-control%20README%20front-door%20split%20拆分记忆.md)
+- [280-2026-04-08-skills vs plugin matrix fallback cleanup 拆分记忆.md](./280-2026-04-08-skills%20vs%20plugin%20matrix%20fallback%20cleanup%20拆分记忆.md)
+- [281-2026-04-08-memory root hub cleanup 拆分记忆.md](./281-2026-04-08-memory%20root%20hub%20cleanup%20拆分记忆.md)
 
 用途：
 

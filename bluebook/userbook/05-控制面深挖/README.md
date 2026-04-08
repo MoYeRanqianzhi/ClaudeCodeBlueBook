@@ -104,6 +104,10 @@ Prompt 失真在这一层也只该继续消费同一张 user-facing witness pack
 3. 你在用目录体感、作者说明或“看起来能跑”直接判断当前真相边界。
 4. 你还没选定是该继续、降级、停止、清理后恢复还是升级给人，就已经在换入口。
 
+如果你还没分清当前要解决哪类工作，先回 [../README.md](../README.md) 的“按目标进入”；如果你主要缺的是工作主题 first-hop，而不是对象边界和控制面主权，再先看 [../04-专题深潜/README.md](../04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/README.md)。
+
+## 优先控制面
+
 - [01-权限、计划模式与 Worktree：如何安全放大行动范围.md](./01-%E6%9D%83%E9%99%90%E3%80%81%E8%AE%A1%E5%88%92%E6%A8%A1%E5%BC%8F%E4%B8%8E%20Worktree%EF%BC%9A%E5%A6%82%E4%BD%95%E5%AE%89%E5%85%A8%E6%94%BE%E5%A4%A7%E8%A1%8C%E5%8A%A8%E8%8C%83%E5%9B%B4.md)
 - [02-MCP、插件、技能与 Hooks：如何选择正确扩展层.md](./02-MCP%E3%80%81%E6%8F%92%E4%BB%B6%E3%80%81%E6%8A%80%E8%83%BD%E4%B8%8E%20Hooks%EF%BC%9A%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E6%AD%A3%E7%A1%AE%E6%89%A9%E5%B1%95%E5%B1%82.md)
 - [03-Compact、Resume、Memory：长任务连续性手册.md](./03-Compact%E3%80%81Resume%E3%80%81Memory%EF%BC%9A%E9%95%BF%E4%BB%BB%E5%8A%A1%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%89%8B%E5%86%8C.md)
@@ -123,6 +127,16 @@ Prompt 失真在这一层也只该继续消费同一张 user-facing witness pack
 - [17-MCP 配置、按名解析与 Agent 引用：为什么你看到的 server 不是 Agent 真能挂上的 server.md](./17-MCP%20%E9%85%8D%E7%BD%AE%E3%80%81%E6%8C%89%E5%90%8D%E8%A7%A3%E6%9E%90%E4%B8%8E%20Agent%20%E5%BC%95%E7%94%A8%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9C%8B%E5%88%B0%E7%9A%84%20server%20%E4%B8%8D%E6%98%AF%20Agent%20%E7%9C%9F%E8%83%BD%E6%8C%82%E4%B8%8A%E7%9A%84%20server.md)
 - [18-插件安装、待刷新与当前会话激活：为什么 `/reload-plugins` 不是安装器.md](./18-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E3%80%81%E5%BE%85%E5%88%B7%E6%96%B0%E4%B8%8E%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E6%BF%80%E6%B4%BB%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20slash-reload-plugins%20%E4%B8%8D%E6%98%AF%E5%AE%89%E8%A3%85%E5%99%A8.md)
 - [19-插件自动物化、Startup Trust 与 Headless 刷新：为什么插件有时会自己出现、有时只提示 `/reload-plugins`.md](./19-%E6%8F%92%E4%BB%B6%E8%87%AA%E5%8A%A8%E7%89%A9%E5%8C%96%E3%80%81Startup%20Trust%20%E4%B8%8E%20Headless%20%E5%88%B7%E6%96%B0%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8F%92%E4%BB%B6%E6%9C%89%E6%97%B6%E4%BC%9A%E8%87%AA%E5%B7%B1%E5%87%BA%E7%8E%B0%E3%80%81%E6%9C%89%E6%97%B6%E5%8F%AA%E6%8F%90%E7%A4%BA%20slash-reload-plugins.md)
+
+其中 `16/18/19` 可以按这条线读：
+
+- `16` 先分清 `/hooks` 的 UI 观察面与实际注册/执行面的错位。
+- `18` 再分清 `/reload-plugins` 作为当前 session 手动激活原语，而不是安装动作。
+- `19` 最后看宿主、trust 与 headless 路径为什么会自动推进或停在待刷新提示。
+
+## 完整控制面目录
+
+如果你已经确定要进入哪条控制面主线，而不是继续做高价值 first-hop 分诊，可以直接从下面这组完整目录进入：
 - [20-Headless 启动链、首问就绪与 StructuredIO：为什么 print 不是没有 UI 的 REPL.md](./20-Headless%20%E5%90%AF%E5%8A%A8%E9%93%BE%E3%80%81%E9%A6%96%E9%97%AE%E5%B0%B1%E7%BB%AA%E4%B8%8E%20StructuredIO%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20print%20%E4%B8%8D%E6%98%AF%E6%B2%A1%E6%9C%89%20UI%20%E7%9A%84%20REPL.md)
 - [21-Host、Viewer 与 Health Check：为什么 server、remote-control、assistant、doctor 不能写成同一类会外入口.md](./21-Host%E3%80%81Viewer%20%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20server%E3%80%81remote-control%E3%80%81assistant%E3%80%81doctor%20%E4%B8%8D%E8%83%BD%E5%86%99%E6%88%90%E5%90%8C%E4%B8%80%E7%B1%BB%E4%BC%9A%E5%A4%96%E5%85%A5%E5%8F%A3.md)
 - [22-Trust Dialog、项目级 .mcp.json 批准与 Health Check：为什么 skip trust dialog 不等于 project MCP 已被批准.md](./22-Trust%20Dialog%E3%80%81%E9%A1%B9%E7%9B%AE%E7%BA%A7%20.mcp.json%20%E6%89%B9%E5%87%86%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20skip%20trust%20dialog%20%E4%B8%8D%E7%AD%89%E4%BA%8E%20project%20MCP%20%E5%B7%B2%E8%A2%AB%E6%89%B9%E5%87%86.md)
