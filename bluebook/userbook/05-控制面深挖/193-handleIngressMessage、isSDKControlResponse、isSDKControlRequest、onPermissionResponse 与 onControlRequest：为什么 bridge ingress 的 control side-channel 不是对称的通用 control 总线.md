@@ -326,6 +326,14 @@
 
 又写成一句模糊的“bridge 的 control 面”。
 
+## 第七层：稳定 / 条件 / 灰度保护
+
+| 类型 | 对象 |
+| --- | --- |
+| 稳定可见 | `control_response` = permission-verdict 返回腿；`control_request` = session-control 请求腿；它们共用 ingress socket，不等于共用同一条 control 总线 |
+| 条件公开 | permission leg 只有在本地还挂着 pending verdict 时才真正被消费；env-less 额外那层 `reportState('running')` 只是特定宿主上的状态修复壳；server-side control 请求还受 subtype 与当前会话状态约束 |
+| 内部/灰度层 | `pendingPermissionHandlers`、`request_id` 查找顺序、env-less 的 repair wrapper、具体 callback wiring 与日志分支都只是证明 callback asymmetry 的证据，不是稳定公共合同 |
+
 ## 结论
 
 更稳的一句应该是：

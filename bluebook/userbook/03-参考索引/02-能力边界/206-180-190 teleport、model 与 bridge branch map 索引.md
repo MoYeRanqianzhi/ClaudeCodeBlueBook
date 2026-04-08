@@ -24,6 +24,7 @@
 - 这页保护的是 teleport runtime、model、bridge birth/hydrate/write 的主语切换，不把某个 helper、某个字段或某个 UUID 集合直接升级成稳定公共合同。
 - 这页承接 `205` 的三个出口：`179 -> 180`、`178 -> model line`、`176 -> bridge line`；因此 `205 -> 206` 就是 `168-190` 的接力关系，不需要第三张 `168-190` 伞形总页。
 - 如果接下来只想继续深读 model，也仍然留在这张 `180-190` branch map 下，不额外新建 model-only 范围页，更不把 `183/186` 误判成 model 线的缺口。
+- 如果接下来继续深读 post-`190` bridge descendants，重点应该落在 `193/206` 的合同厚度加固，而不是再补一张新的 umbrella map。
 
 ## 1. 结构总表
 
