@@ -7,6 +7,10 @@
 - 这里按“我要完成什么工作”来组织。
 - `05-控制面深挖` 按“哪些控制面决定了工作质量与边界”来组织。
 
+如果你现在主要卡在“怎样安全放大行动范围”，而不是 deeper control-plane 细节，先看：
+
+- [安全放大工作面/README.md](./%E5%AE%89%E5%85%A8%E6%94%BE%E5%A4%A7%E5%B7%A5%E4%BD%9C%E9%9D%A2/README.md)
+
 如果你现在主要卡在“稳定接续”和“条件远端”之间的分界，而不是 deeper remote runtime，先看：
 
 - [多前端接续与条件远端/README.md](./%E5%A4%9A%E5%89%8D%E7%AB%AF%E6%8E%A5%E7%BB%AD%E4%B8%8E%E6%9D%A1%E4%BB%B6%E8%BF%9C%E7%AB%AF/README.md)

@@ -231,6 +231,7 @@
 - [227-2026-04-08-headless noninteractive entry loop split 拆分记忆.md](./227-2026-04-08-headless%20noninteractive%20entry%20loop%20split%20拆分记忆.md)
 - [228-2026-04-08-headless result-summary-protocol physical entry split 拆分记忆.md](./228-2026-04-08-headless%20result-summary-protocol%20physical%20entry%20split%20拆分记忆.md)
 - [229-2026-04-08-multi-frontend continuity vs conditional-remote split 拆分记忆.md](./229-2026-04-08-multi-frontend%20continuity%20vs%20conditional-remote%20split%20拆分记忆.md)
+- [230-2026-04-08-safe action-radius front door split 拆分记忆.md](./230-2026-04-08-safe%20action-radius%20front%20door%20split%20拆分记忆.md)
 
 用途：
 
