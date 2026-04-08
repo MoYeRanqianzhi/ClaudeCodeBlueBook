@@ -2,6 +2,10 @@
 
 ## 当前稳定边界
 
+- `2026-04-08` 最新一轮已完成 `401 / 385 / 252`：主线把 stronger-request cleanup 从 `cleanup-use-time revalidation-governance` 继续推进到 `cleanup-step-up reauthorization-governance`，附录把 `scope gate / refresh suppression / step-up state / governor question` 压成统一矩阵，源码剖面则把 insufficient-scope detection、refresh suppression、step-up pending state、step-up continuation 与 live transport hook 并排钉成 `higher-authority step-up grammar`。这一轮稳定写出的新边界是：`fresh enough to use` 不等于 `authorized enough to upscope`，`制度知道你现在还能用` 不等于 `制度已经知道你现在配做更强的事。`
+- `2026-04-08` 本轮 fresh 复核根仓库时，`git fetch origin main` 成功，`git rev-list --left-right --count main...origin/main` 返回 `41 0`；但根仓库状态随后显示 `## main...origin/main [ahead 43]`，且存在 `UU bluebook/userbook/README.md` 与未结束的 `MERGE_HEAD`，因此 `git merge --ff-only origin/main` 失败并返回 `fatal: You have not concluded your merge (MERGE_HEAD exists).`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-08` 当前唯一 open question 已前推到 `stronger-request continuation-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
+
 - `2026-04-08` 最新一轮已完成 `400 / 384 / 251`：主线把 stronger-request cleanup 从 `cleanup-reassurance-governance` 继续推进到 `cleanup-use-time revalidation-governance`，附录把 `fresh gate / runtime revocation / consumer proof / governor question` 压成统一矩阵，源码剖面则把 consumer hard gate、fresh reconnect primitive、execution-context filter 与 runtime demotion 并排钉成 `fresh-at-use proof grammar`。这一轮稳定写出的新边界是：`被正向担保` 不等于 `已通过 live-use 重验证`，`制度知道现在可以说多放心` 不等于 `制度已经知道真正依赖这一刻这份放心话仍然值得被相信。`
 - `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-step-up reauthorization-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
