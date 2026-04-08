@@ -37,6 +37,7 @@
 - [301-2026-04-08-complete-nav second-hop clarification 拆分记忆.md](./301-2026-04-08-complete-nav%20second-hop%20clarification%20拆分记忆.md)
 - [302-2026-04-08-control continuity session-ops handoff cleanup 拆分记忆.md](./302-2026-04-08-control%20continuity%20session-ops%20handoff%20cleanup%20拆分记忆.md)
 - [303-2026-04-08-hooks matrix stability boundary cleanup 拆分记忆.md](./303-2026-04-08-hooks%20matrix%20stability%20boundary%20cleanup%20拆分记忆.md)
+- [304-2026-04-08-front-door routing metalanguage cleanup 拆分记忆.md](./304-2026-04-08-front-door%20routing%20metalanguage%20cleanup%20拆分记忆.md)
 
 ## 全量档案
 

@@ -8,7 +8,7 @@
 - 这里按控制面组织，专门回答“为什么同一目标不能随便走相邻入口”。
 - 这里不承担命令速查；速查页统一留在 `03-参考索引/`。
 
-如果你还没分清当前要解决哪类工作，先回 [../README.md](../README.md) 的“按目标进入”；如果你主要缺的是工作主题 first-hop，而不是对象边界和控制面主权，再先看 [../04-专题深潜/README.md](../04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/README.md)。
+如果你还没分清当前要解决哪类工作，先回 [../README.md](../README.md) 的“按目标进入”；如果你主要缺的是工作主题定位，而不是对象边界和控制面主权，再先看 [../04-专题深潜/README.md](../04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/README.md)。
 
 ## 优先控制面
 
@@ -40,7 +40,7 @@
 
 ## 完整控制面目录
 
-如果你已经确定要进入哪条控制面主线，而不是继续做高价值 first-hop 分诊，可以直接从下面这组完整目录进入：
+如果你已经确定要进入哪条控制面主线，可以直接从下面这组完整目录进入：
 
 - [20-Headless 启动链、首问就绪与 StructuredIO：为什么 print 不是没有 UI 的 REPL.md](./20-Headless%20%E5%90%AF%E5%8A%A8%E9%93%BE%E3%80%81%E9%A6%96%E9%97%AE%E5%B0%B1%E7%BB%AA%E4%B8%8E%20StructuredIO%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20print%20%E4%B8%8D%E6%98%AF%E6%B2%A1%E6%9C%89%20UI%20%E7%9A%84%20REPL.md)
 - [21-Host、Viewer 与 Health Check：为什么 server、remote-control、assistant、doctor 不能写成同一类会外入口.md](./21-Host%E3%80%81Viewer%20%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20server%E3%80%81remote-control%E3%80%81assistant%E3%80%81doctor%20%E4%B8%8D%E8%83%BD%E5%86%99%E6%88%90%E5%90%8C%E4%B8%80%E7%B1%BB%E4%BC%9A%E5%A4%96%E5%85%A5%E5%8F%A3.md)
