@@ -77,6 +77,7 @@
 - [341-2026-04-08-control-readme priority-heading cleanup 拆分记忆.md](./341-2026-04-08-control-readme%20priority-heading%20cleanup%20拆分记忆.md)
 - [342-2026-04-08-root path-90 local-direct cleanup 拆分记忆.md](./342-2026-04-08-root%20path-90%20local-direct%20cleanup%20拆分记忆.md)
 - [343-2026-04-08-root terminal-efficiency route re-narrowing after main fast-forward 拆分记忆.md](./343-2026-04-08-root%20terminal-efficiency%20route%20re-narrowing%20after%20main%20fast-forward%20拆分记忆.md)
+- [344-2026-04-08-root path-90 route re-lift after main fast-forward 拆分记忆.md](./344-2026-04-08-root%20path-90%20route%20re-lift%20after%20main%20fast-forward%20拆分记忆.md)
 
 ## 全量档案
 

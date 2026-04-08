@@ -124,7 +124,10 @@
 - 找回过去的会话与提问：
   [04-专题深潜/12-会话发现、历史检索与恢复选择专题.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/12-%E4%BC%9A%E8%AF%9D%E5%8F%91%E7%8E%B0%E3%80%81%E5%8E%86%E5%8F%B2%E6%A3%80%E7%B4%A2%E4%B8%8E%E6%81%A2%E5%A4%8D%E9%80%89%E6%8B%A9%E4%B8%93%E9%A2%98.md)
 - 在 IDE、Desktop、Mobile 之间继续同一工作：
-  [04-专题深潜/多前端接续与条件远端/README.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/%E5%A4%9A%E5%89%8D%E7%AB%AF%E6%8E%A5%E7%BB%AD%E4%B8%8E%E6%9D%A1%E4%BB%B6%E8%BF%9C%E7%AB%AF/README.md)
+  [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md)
+  里的“路径 90：我想在 IDE、Desktop 和移动端之间继续同一工作”。
+  如果你已经确认自己主要卡在多前端接续、条件远端或 viewer 对象差异，再继续看
+  [04-专题深潜/多前端接续与条件远端/README.md](./04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/%E5%A4%9A%E5%89%8D%E7%AB%AF%E6%8E%A5%E7%BB%AD%E4%B8%8E%E6%9D%A1%E4%BB%B6%E8%BF%9C%E7%AB%AF/README.md)。
 - 稳地管理插件、MCP、skills、hooks 和 agents：
   [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md)
   里的“路径 91：我想稳地管理插件、MCP、skills、hooks 和 agents”。
