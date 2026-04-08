@@ -19,6 +19,7 @@
 - [283-2026-04-08-mcp matrix fallback cleanup 拆分记忆.md](./283-2026-04-08-mcp%20matrix%20fallback%20cleanup%20拆分记忆.md)
 - [284-2026-04-08-capability map hub cleanup 拆分记忆.md](./284-2026-04-08-capability%20map%20hub%20cleanup%20拆分记忆.md)
 - [285-2026-04-08-hooks matrix fallback cleanup 拆分记忆.md](./285-2026-04-08-hooks%20matrix%20fallback%20cleanup%20拆分记忆.md)
+- [286-2026-04-08-session remote-control front-door split 拆分记忆.md](./286-2026-04-08-session%20remote-control%20front-door%20split%20拆分记忆.md)
 
 ## 全量档案
 
