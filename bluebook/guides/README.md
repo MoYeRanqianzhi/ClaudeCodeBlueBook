@@ -4,7 +4,8 @@
 如果你还没先完成 `05` 的模仿对象校正、`15` 的失稳前追问或 `41` 的第一性原理收束，不要在这里直接把模板当答案。
 
 本 README 只保留 `guides/` 的稳定入口与任务分流，不承担高阶主语改判权；跨目录执行链统一由 [../navigation/README.md](../navigation/README.md) 承担。
-其中源码质量线现在固定分成两种模板：`101` 只审 `one writable present`，`102` 只做公开镜像证据梯度。
+其中源码质量线现在固定分成两种模板：`101` 只审 `one writable present`，`102` 只做 `public artifact ceiling -> contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline -> change-risk record` 这条公开证据梯度。
+如果 `signer / effect ceiling / local veto cue / first retreat layer` 还答不清，也不要在 README 层把公开 artifact 写成 current truth；那时应先退回 `102` 的降格协议与 `architecture/README` 的对象摘要。
 
 这里还要再多记一句：
 
@@ -35,8 +36,8 @@
   - 失败信号：还在把权限投影、usage 读数或 token 百分比当成治理主键与 decision window 判断。
 - 如果你只先判断“当前真相保护怎样落成模板”，从 [101-如何用苏格拉底诘问法审读当前真相保护：current-truth surface、freshness gate与ghost capability](101-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BBone%20writable%20present%EF%BC%9Asingle-writer%E3%80%81recovery%20asset%E4%B8%8Eanti-zombie.md) 进入。
   - 失败信号：还在用更强 prompt、更严权限、更漂亮目录这种结果词替代 `one writable present` 与 later maintainer reject order。
-- 如果你只先判断“怎样给公开镜像做源码质量证据分级”，从 [102-公开镜像源码质量证据分级模板：contract、registry、current-truth surface、consumer subset 与 mirror gap discipline](102-%E5%A6%82%E4%BD%95%E7%BB%99%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E5%81%9A%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7%EF%BC%9Acontract%E3%80%81registry%E3%80%81authoritative%20surface%E3%80%81adapter%20subset%E4%B8%8Ehotspot%20gap%20discipline.md) 进入。
-  - 失败信号：还在靠热点文件体感、目录整齐度和作者光环做判断，还没按 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 点名证据断口。
+- 如果你只先判断“怎样给公开镜像做源码质量证据分级”，从 [102-公开镜像源码质量证据分级模板：public artifact ceiling、contract、registry、current-truth claim state、consumer subset、hotspot kernel、mirror gap discipline 与 change-risk record](102-%E5%A6%82%E4%BD%95%E7%BB%99%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E5%81%9A%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7%EF%BC%9Acontract%E3%80%81registry%E3%80%81authoritative%20surface%E3%80%81adapter%20subset%E4%B8%8Ehotspot%20gap%20discipline.md) 进入。
+  - 失败信号：还在靠热点文件体感、目录整齐度和作者光环做判断，还没按 `public artifact ceiling -> contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline -> change-risk record` 点名证据断口，也还答不出 `signer / effect ceiling / local veto cue / first retreat layer`。
 - 如果你只先判断“怎样把 future maintainer 的局部可反对性压成模板”，先从 `101 -> 102` 进入，再回 `../philosophy/80 / 59 / 53` 校正主语。
   - 失败信号：模板还在帮读者理解作者，而不是帮 later maintainer 正式指出 authority、truth plane、hotspot kernel / mirror gap discipline 与第一退回层。
 
