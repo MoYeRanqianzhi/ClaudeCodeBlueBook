@@ -19,6 +19,25 @@
 - 当前真相保护
   - `guides/102`
 
+## 目录角色协议
+
+第一次进入不必先背完整目录树，只要先记住：蓝皮书不是按题材分桶，而是按发言权分桶。
+
+- `README` 与 `userbook/`
+  - 只负责定题与 first answer typing，不提前代答 why-proof、对象摘要或执行 verdict。
+- `philosophy/`
+  - 只负责 why-proof，回答“为什么必须这样设计”。
+- `guides/`
+  - 只负责 evidence ladder、claim-state 与 promotion / demotion 条件。
+- `architecture/`
+  - 只负责对象、状态机、writeback seam 与 `landing card` 级摘要。
+- `navigation/`
+  - 只负责 artifact gap 与 route dispute，不重新发放 first answer。
+- `security / risk / playbooks/`
+  - 分别只负责治理机制、post-cleanup readback 与 execution verdict。
+
+目录优化真正要减少的，不是文件数，而是 later consumer 在两页里学到同一第一答案的概率。
+
 ## 根入口只做三件事
 
 1. 先定题，不先列 artifact 名。

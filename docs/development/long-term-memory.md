@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 directory-speaking-rights-over-taxonomy live 记忆：
+  - 蓝皮书目录现在应优先按发言权理解，而不是按题材理解：`README / userbook` 只定题，`philosophy` 只给 why-proof，`guides` 只给证据梯度，`architecture` 只给对象摘要，`navigation` 只补 artifact gap，`playbooks` 只发 execution verdict
+  - 更稳的目录优化默认不是先挪文件，而是先减少 later consumer 在两页里学到同一 first answer 的概率；若 speaking-rights 还未写死，物理重组只会把混权换个位置继续发生
+- 当前批次继续新增一条 parallel-findings-converge-on-role-protocol live 记忆：
+  - Prompt 线进一步确认“魔力”不是文案，而是 later consumer 在 `verify / delegate / resume / handoff` 时少重答世界定义、边界与工具资格
+  - 治理线进一步确认安全与省 token 只是同一条 `expansion pricing / authority lease` 链的两种投影
+  - 源码质量线进一步确认先进性不在小文件与细目录，而在合法复杂度中心、`one writable present` 与 later maintainer veto
+  - 目录线给出的更激进物理重组候选是 `meta / owners` 之类家族层；但当前更稳的顺序仍是先在高流量页把 speaking-rights 协议写死，再决定是否真要搬目录
+- 最新根仓同步记忆（2026-04-08，本批次当前 live 快照）继续保持健康态：本轮再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，随后根仓 `/home/mo/m/projects/cc/analysis` 的 `git status --short --branch` 为 `main...origin/main`。后续仍按外部状态处理：每批重新检查，但所有正文推进与提交继续只落在 `.worktrees/mainloop`。
 - 当前批次继续新增一条 03-tail-minimum-judgment live 记忆：
   - `03` 尾段的残余 slogan 现在默认继续只保留最短新增判断；`12 / 27 / 31 / 32` 这些节若仍在重发治理投影、future-maintainer 价值、制度自审或坏解对照的整段口号，就应继续压回一句 why-proof / self-audit / bad-solution 判断
   - 更稳的默认写法是：尾段只补“这一节新增了什么判断”，不再补第二遍 Prompt/治理/源码质量总论

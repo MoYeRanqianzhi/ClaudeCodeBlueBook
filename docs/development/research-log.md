@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的目录结论：这次不再把“目录优化”理解成挪更多文件，而是先把目录角色正式写成 speaking-rights protocol。根 `README` 现在直接声明蓝皮书不是按题材分桶，而是按发言权分桶；`03` 则把目录优化上升为固定发言权测试；`06` 新增的五个苏格拉底追问，专门抓 `first answer / second-hop inventory / why / object / verdict` 混权。当前判断是：只要 same question 还会在两页里第一次被回答，就还不配做物理重组。
+- 本轮新的并行研究结论：四条 Agent 线几乎给出了同一组支撑。Prompt 线把“魔力”压回 later consumer 少重答世界与 continuation object；治理线把安全与省 token 压回同一条 `repricing -> lease checkpoint -> cleanup` 链；源码质量线把先进性压回合法复杂度中心、`one writable present` 与 later maintainer veto；目录线则建议未来如要继续物理重组，可考虑 `meta / owners` 这类家族层，但当前批次更稳的动作仍是先在高流量页写死角色协议，而不是立刻搬树。
+- 本轮新的根仓同步结论：本轮再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；随后复核根仓 `/home/mo/m/projects/cc/analysis` 状态，`git status --short --branch` 为 `main...origin/main`。本轮未在根仓处理任何文件，正文仍严格只在 `mainloop` 内推进。
 - 本轮新的 `03` 尾段结论：在上一批已压掉大部分尾段 slogan echo 之后，这次又继续把 `12 / 27 / 31 / 32` 四处 residual 收成最短判断。治理段不再把安全/成本/体验重新写成治理主语，future-maintainer 段不再把结构价值扩写成第二套质量总论，自审与坏解段也只保留“制度何时失真”与“坏解为什么更贵、更脆、更难恢复”这两个最短判断。
 - 本轮新的根仓同步结论：本轮再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；随后复核根仓 `/home/mo/m/projects/cc/analysis` 状态，`git status --short --branch` 为 `main...origin/main`。本轮未在根仓处理任何文件，正文仍严格只在 `mainloop` 内推进。
 - 本轮新的 `03` 尾段结论：在上一批去掉 `03` 中后段的大块 slogan echo 之后，这次又继续把最容易复读口号的四段压短了。`runtime 是资源宪法` 现在只保留“模型不是资源的主人，runtime 才是”；“好架构不是更会重构”退回为一句关于保留重构可能性的判断；“制度升级必须保序迁移”收成单句自校；“不要把源码质量退回尺寸治理”也只保留 `尺寸治理不是 first test`。
