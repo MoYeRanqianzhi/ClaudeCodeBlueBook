@@ -35,6 +35,7 @@
 - [299-2026-04-08-resume matrix wording cleanup 拆分记忆.md](./299-2026-04-08-resume%20matrix%20wording%20cleanup%20拆分记忆.md)
 - [300-2026-04-08-control continuity export cleanup 拆分记忆.md](./300-2026-04-08-control%20continuity%20export%20cleanup%20拆分记忆.md)
 - [301-2026-04-08-complete-nav second-hop clarification 拆分记忆.md](./301-2026-04-08-complete-nav%20second-hop%20clarification%20拆分记忆.md)
+- [302-2026-04-08-control continuity session-ops handoff cleanup 拆分记忆.md](./302-2026-04-08-control%20continuity%20session-ops%20handoff%20cleanup%20拆分记忆.md)
 
 ## 全量档案
 
