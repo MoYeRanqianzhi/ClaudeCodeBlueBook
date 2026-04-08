@@ -29,7 +29,7 @@
 
 - `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
-这条 ladder 不是证据分类游戏，而是公开镜像里“谁配签现在”的 speaking-right protocol：你先判 authority 落在哪，再决定哪些对象只能降格成 candidate、subset 或 gap note。
+这条 ladder 不是证据分类游戏；本页只判断证据是否足以 promotion，还是必须 downgrade 成 candidate、subset 或 gap note。
 
 这里还应先多记一句：
 
@@ -61,7 +61,7 @@
 
 这一步不过，后面各级判断都会被写浅，因为你会先把“可见”误当成“已被完整证明”。
 更硬一点说，能把 `public artifact ceiling / downgrade / gap note / change-risk record` 固化成统一 speaking-rights protocol，本身就是公开可见的工程先进性，因为它降低的是过度主张、误改与制度失忆成本。
-目录优化在这条线上的成功标准，也不是专题更多，而是 artifact chain 能否一次走通：`ceiling note / downgrade note / unresolved-authority note -> change-risk record -> why-proof -> landing card -> quality gate`。任何一环缺失，都不该再被目录话术补成 certainty。
+本页只判断 promotion / downgrade，并要求记录 `dependency honesty / temporal honesty` 风险；这些风险为什么构成源码质量判断，统一回 `87`。
 
 更稳的公开镜像研究顺序，不是：
 

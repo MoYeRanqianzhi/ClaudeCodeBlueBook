@@ -7236,3 +7236,4 @@
 - 这一批随后的 follow-up 又只补了 `06` 一刀：把三条判断、三条拒错顺序与三条职责边界明确声明成“同一组四问在三条母线上的落点”，并把“八个不可约问题”继续压回“四问已经判到某一环失效后，才下钻的子层”。这一刀的目标不是新增术语，而是继续拆掉 `06` 里残留的并列总纲感。
 - 这一轮继续追打 Prompt potency 的动作成本句法，只动 `03 / 06 / 84`。`84` 现在把“真正值钱的”改成 later consumer 选下一步动作所需的世界定义、边界与继续资格已经被编译成受约束秩序；一句话总结也改成“Prompt 首先是替 later consumer 预付世界协商与边界重算成本的世界准入顺序”。`03` 的 same-world 判据也同步把收益压成“later consumer 可以直接沿同一份判决去选下一步动作”。`06` 则把多 Agent prompt / coordinator prompt / teammate addendum 的强点继续收成“不必重定义当前世界、重算边界与重判工具资格”。
 - `06` 这一轮还继续拆了更深一层的第二目录感：`## 1` 被改成“若四问已判到 runtime 对象层，再按八类失效面下钻”，`2.13` 改回“所有 drill-down 最后仍只回四问”，`3-5` 被并成“四问第 1 问后的三种常见误判”，`6` 的导语也明确说后面只是四桶样例，不是失真百科。
+- 这一轮最后又补了一个 source-quality micro batch，只动 `01 / 102 / 87`。`01` 现在不再列任何 evidence rung 名，只回答 repo path locator；`102` 把“为什么更成熟/更值钱”的口气继续压回 promotion / downgrade 判级页，并把源码质量 why 统一指回 `87`；`87` 则把高阶对象词再收回 why-proof，明确自己只负责 later-maintainer veto 这一层判断，不再让 truth plane / seam 口气提前长成 `architecture` 前门。
