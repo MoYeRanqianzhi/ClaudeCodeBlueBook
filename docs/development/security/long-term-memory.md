@@ -2,6 +2,10 @@
 
 ## 当前稳定边界
 
+- `2026-04-08` 最新一轮已完成 `397 / 381 / 248`：主线把 stronger-request cleanup 从 `cleanup-recovery-governance` 继续推进到 `cleanup-reintegration-governance`，附录把 `writeback / dynamic state / handler rebind / governor question` 压成统一矩阵，源码剖面则把 raw recovery result、state projection、dynamic read model、live handler re-entry 与 pseudo-tool replacement 并排钉成 `current-world reintegration grammar`。这一轮稳定写出的新边界是：`recovered` 不等于 `reintegrated`，`制度知道它已经回来` 不等于 `制度已经知道它该何时重新成为当前世界的一部分。`
+- `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-reprojection-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
+
 - `2026-04-08` 最新一轮已完成 `396 / 380 / 247`：主线把 stronger-request cleanup 从 `cleanup-continuity-governance` 继续推进到 `cleanup-recovery-governance`，附录把 `fresh proof / reconnect verdict / consumer discipline / governor question` 压成统一矩阵，源码剖面则把 auth-failure demotion、fresh reconnect verdict、formal auth proof collection、control-plane honesty 与 consumer-side real-tool return discipline 并排钉成 `fresh-proof recovery grammar`。这一轮稳定写出的新边界是：`还在恢复` 不等于 `已经恢复`，`制度知道旧线还要不要继续抢救` 不等于 `制度已经知道什么新证据足以宣布它真的回来了`。
 - `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-reintegration-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
