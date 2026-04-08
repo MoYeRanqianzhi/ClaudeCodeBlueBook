@@ -41,6 +41,7 @@
 - [305-2026-04-08-session plane copy inclusion cleanup 拆分记忆.md](./305-2026-04-08-session%20plane%20copy%20inclusion%20cleanup%20拆分记忆.md)
 - [306-2026-04-08-session-ops handoff copy-export wording sync 拆分记忆.md](./306-2026-04-08-session-ops%20handoff%20copy-export%20wording%20sync%20拆分记忆.md)
 - [307-2026-04-08-front-door link target repair 拆分记忆.md](./307-2026-04-08-front-door%20link%20target%20repair%20拆分记忆.md)
+- [308-2026-04-08-capability taxonomy top-level four-bucket sync 拆分记忆.md](./308-2026-04-08-capability%20taxonomy%20top-level%20four-bucket%20sync%20拆分记忆.md)
 
 ## 全量档案
 
