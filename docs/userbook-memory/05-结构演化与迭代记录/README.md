@@ -56,6 +56,7 @@
 - [320-2026-04-08-reference index hub role narrowing 拆分记忆.md](./320-2026-04-08-reference%20index%20hub%20role%20narrowing%20拆分记忆.md)
 - [321-2026-04-08-command-index status control-plane regroup 拆分记忆.md](./321-2026-04-08-command-index%20status%20control-plane%20regroup%20拆分记忆.md)
 - [322-2026-04-08-root stable-workflow route narrowing 拆分记忆.md](./322-2026-04-08-root%20stable-workflow%20route%20narrowing%20拆分记忆.md)
+- [323-2026-04-08-command-index desktop availability note 拆分记忆.md](./323-2026-04-08-command-index%20desktop%20availability%20note%20拆分记忆.md)
 
 ## 全量档案
 
