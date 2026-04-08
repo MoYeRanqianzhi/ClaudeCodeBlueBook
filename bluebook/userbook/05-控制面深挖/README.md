@@ -8,6 +8,10 @@
 - 这里按控制面组织，专门回答“为什么同一目标不能随便走相邻入口”。
 - 这里不承担命令速查；速查页统一留在 `03-参考索引/`。
 
+如果你还没分清当前要解决哪类工作，先回 [../README.md](../README.md) 的“按目标进入”；如果你主要缺的是工作主题 first-hop，而不是对象边界和控制面主权，再先看 [../04-专题深潜/README.md](../04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/README.md)。
+
+## 优先控制面
+
 - [01-权限、计划模式与 Worktree：如何安全放大行动范围.md](./01-%E6%9D%83%E9%99%90%E3%80%81%E8%AE%A1%E5%88%92%E6%A8%A1%E5%BC%8F%E4%B8%8E%20Worktree%EF%BC%9A%E5%A6%82%E4%BD%95%E5%AE%89%E5%85%A8%E6%94%BE%E5%A4%A7%E8%A1%8C%E5%8A%A8%E8%8C%83%E5%9B%B4.md)
 - [02-MCP、插件、技能与 Hooks：如何选择正确扩展层.md](./02-MCP%E3%80%81%E6%8F%92%E4%BB%B6%E3%80%81%E6%8A%80%E8%83%BD%E4%B8%8E%20Hooks%EF%BC%9A%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E6%AD%A3%E7%A1%AE%E6%89%A9%E5%B1%95%E5%B1%82.md)
 - [03-Compact、Resume、Memory：长任务连续性手册.md](./03-Compact%E3%80%81Resume%E3%80%81Memory%EF%BC%9A%E9%95%BF%E4%BB%BB%E5%8A%A1%E8%BF%9E%E7%BB%AD%E6%80%A7%E6%89%8B%E5%86%8C.md)
@@ -33,6 +37,11 @@
 - `16` 先分清 `/hooks` 的 UI 观察面与实际注册/执行面的错位。
 - `18` 再分清 `/reload-plugins` 作为当前 session 手动激活原语，而不是安装动作。
 - `19` 最后看宿主、trust 与 headless 路径为什么会自动推进或停在待刷新提示。
+
+## 完整控制面目录
+
+如果你已经确定要进入哪条控制面主线，而不是继续做高价值 first-hop 分诊，可以直接从下面这组完整目录进入：
+
 - [20-Headless 启动链、首问就绪与 StructuredIO：为什么 print 不是没有 UI 的 REPL.md](./20-Headless%20%E5%90%AF%E5%8A%A8%E9%93%BE%E3%80%81%E9%A6%96%E9%97%AE%E5%B0%B1%E7%BB%AA%E4%B8%8E%20StructuredIO%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20print%20%E4%B8%8D%E6%98%AF%E6%B2%A1%E6%9C%89%20UI%20%E7%9A%84%20REPL.md)
 - [21-Host、Viewer 与 Health Check：为什么 server、remote-control、assistant、doctor 不能写成同一类会外入口.md](./21-Host%E3%80%81Viewer%20%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20server%E3%80%81remote-control%E3%80%81assistant%E3%80%81doctor%20%E4%B8%8D%E8%83%BD%E5%86%99%E6%88%90%E5%90%8C%E4%B8%80%E7%B1%BB%E4%BC%9A%E5%A4%96%E5%85%A5%E5%8F%A3.md)
 - [22-Trust Dialog、项目级 .mcp.json 批准与 Health Check：为什么 skip trust dialog 不等于 project MCP 已被批准.md](./22-Trust%20Dialog%E3%80%81%E9%A1%B9%E7%9B%AE%E7%BA%A7%20.mcp.json%20%E6%89%B9%E5%87%86%E4%B8%8E%20Health%20Check%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20skip%20trust%20dialog%20%E4%B8%8D%E7%AD%89%E4%BA%8E%20project%20MCP%20%E5%B7%B2%E8%A2%AB%E6%89%B9%E5%87%86.md)
