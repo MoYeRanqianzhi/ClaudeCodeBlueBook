@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的源码质量纠偏结论：`87` 的正职继续明确为 `why-proof`，而不是 landing 之后再跳回去的后置 gate 页面。更稳的默认顺序已再次校正成 `102 -> 87 -> architecture landing card -> local quality gate`；其中 gate 只复用 `87` 的三条命题，不改变 `87` 的页职责。
+
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
 - 本轮新的深段自校结论：`06` 的 6.32、6.35、6.37-6.49 等深段现在进一步从 “统一回 owner page” 收回到真正的 why。新的默认句法是：如果一段解释删掉 route note 后就站不住，它只是 route，不是自校；每段都应直接回答一个可反驳对象，而不是把 owner nouns 当脚手架。
 - 本轮新的源码质量 handoff 结论：`87`、根 `README` 与 `navigation/README` 现在更明确把 later maintainer 的默认消费顺序固定成 `102 -> 87 -> architecture landing card -> local quality gate`。这意味着 `87` 的正职仍是 `why-proof`，而 landing 之后的 gate 只是复用 `87` 的三条命题，不再把 `87` 误读成后置验收页。

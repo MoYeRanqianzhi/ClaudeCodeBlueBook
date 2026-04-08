@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 why-proof-not-post-gate live 记忆：
+  - `87` 默认继续只承担 `why-proof`，不承担 landing 之后的后置验收页职责
+  - `quality gate` 默认继续发生在 `architecture landing card` 之后，但只复用 `87` 的三条命题，不把 `87` 再拉回成回跳页
 - 最新根仓同步记忆（2026-04-08，本批次四次深化）继续保持健康态：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
 - 当前批次继续新增一条 deep-why-no-route-scaffold live 记忆：
   - `06` 深段默认继续不再靠“统一回某页”支撑判断；若删掉 route note 后段落就不成立，默认判为 route masquerading as why

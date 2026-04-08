@@ -17,7 +17,7 @@
 - 治理
   - `10 -> security（mechanism） / risk（tail readback） / playbooks（execution）`
 - 当前真相保护
-  - `102（先写 ceiling note；candidate 必带 downgrade / unresolved-authority note；promotion 成立后再产出 change-risk record，并继续进入 why-proof / landing card / quality gate）`
+  - `102（先写 ceiling note；candidate 必带 downgrade / unresolved-authority note；promotion 成立后再产出 change-risk record，并继续进入 why-proof / landing card / local quality gate）`
 
 ## 根入口只做三件事
 
