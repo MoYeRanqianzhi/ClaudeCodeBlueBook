@@ -52,6 +52,7 @@
 - [316-2026-04-08-root path-15 handoff link repair 拆分记忆.md](./316-2026-04-08-root%20path-15%20handoff%20link%20repair%20拆分记忆.md)
 - [317-2026-04-08-command-index nonmainline bucket cleanup 拆分记忆.md](./317-2026-04-08-command-index%20nonmainline%20bucket%20cleanup%20拆分记忆.md)
 - [318-2026-04-08-root topic hub compression 拆分记忆.md](./318-2026-04-08-root%20topic%20hub%20compression%20拆分记忆.md)
+- [320-2026-04-08-reference index hub role narrowing 拆分记忆.md](./320-2026-04-08-reference%20index%20hub%20role%20narrowing%20拆分记忆.md)
 - [319-2026-04-08-cli assistant flag bucket split 拆分记忆.md](./319-2026-04-08-cli%20assistant%20flag%20bucket%20split%20拆分记忆.md)
 
 ## 全量档案
