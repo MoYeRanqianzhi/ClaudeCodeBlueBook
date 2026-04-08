@@ -72,6 +72,7 @@
 - [336-2026-04-08-command-index files visibility note 拆分记忆.md](./336-2026-04-08-command-index%20files%20visibility%20note%20拆分记忆.md)
 - [337-2026-04-08-root terminal-efficiency route narrowing 拆分记忆.md](./337-2026-04-08-root%20terminal-efficiency%20route%20narrowing%20拆分记忆.md)
 - [338-2026-04-08-command-index output-style visibility cleanup 拆分记忆.md](./338-2026-04-08-command-index%20output-style%20visibility%20cleanup%20拆分记忆.md)
+- [339-2026-04-08-reference-index task-entry wording cleanup 拆分记忆.md](./339-2026-04-08-reference-index%20task-entry%20wording%20cleanup%20拆分记忆.md)
 
 ## 全量档案
 
