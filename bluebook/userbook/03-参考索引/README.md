@@ -112,6 +112,7 @@
 - 如果你继续往 105-110 这组 completion / init / attach 页下钻，先看 [02-能力边界/198-Headless print completion-init-attach pair map 索引.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/198-Headless%20print%20completion-init-attach%20pair%20map%20%E7%B4%A2%E5%BC%95.md)，再回到 105/106/107/108/109/110。
 - 如果你继续往 111-116 这组 remote recovery / terminality / compaction 页下钻，先看 [02-能力边界/199-Headless print remote recovery branch map 索引.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/199-Headless%20print%20remote%20recovery%20branch%20map%20%E7%B4%A2%E5%BC%95.md)，再回到 111/112/113/114/115/116。
 - 如果你已经知道自己卡在 `122-127` 的前半段还是后半段，再看 [02-能力边界/200-Headless print remote recovery double-trunk map 索引.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/200-Headless%20print%20remote%20recovery%20double-trunk%20map%20%E7%B4%A2%E5%BC%95.md)，先判断你还在 owner-side recovery / signer 主干，还是已经降到 transport / compaction 主干。
+- 如果你已经在 `117-121` 这组索引之间来回跳，先看 [02-能力边界/201-128-132 contract、presence、ledger 与 front-state consumer topology 索引.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/201-128-132%20contract%E3%80%81presence%E3%80%81ledger%20%E4%B8%8E%20front-state%20consumer%20topology%20%E7%B4%A2%E5%BC%95.md)，再决定你要回到 transport contract、surface / status ledger，还是 `132` 的 front-state consumer topology。
 89. 为什么 `convertToolResults`、`convertUserTextMessages` 与 success `result` ignored 虽然同在 adapter，却不是同一种 UI consumer policy。
 90. 为什么 success `result` ignored、error `result` visible、turn-end 判定与 busy state 不是同一种 completion signal。
 91. 为什么 callback-visible init、transcript init 提示与 slash bootstrap 不是同一种初始化可见性。
