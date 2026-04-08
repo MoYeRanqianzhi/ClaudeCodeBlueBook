@@ -4217,3 +4217,15 @@
 - 源码质量线的页角色现可视为稳定四分：`navigation/README = artifact-gap 单跳`，`01 = repo locator`，`87 = why-proof`，`architecture/README = object owner summary`，`102 = evidence ceiling / promotion gate`。任何一句话若同时承担其中两种以上角色，应优先按 speaking-rights 回潮处理，而不是当作普通措辞问题。
 - `userbook/README` 的稳定职责也应继续写死：根页只做 `问题分型 -> 单跳`，不再默认 `01` 中转，也不再把 `10 / 85 / 61 / security / risk / playbooks` 预排成用户侧固定 deep chain。用户侧根页一旦开始替 why、truth 或恢复执行写 syllabus，就在长成第二蓝皮书。
 - 根仓库的同步纪律在 `2026-04-08` 这轮又验证了一次：继续只在根仓做 `fetch / ff-only merge` 前置检查，不处理根仓 dirty/conflicted 文件；所有正文推进、记忆更新与提交都只落在 `.worktrees/mainloop`。
+- `2026-04-08` 又固定了一条 why 页第一性原理：why 页的主句只配站在 consumer-visible failure test 上，不配靠 owner route、first-hop 或解释轴站立。更硬一点说，`Authority / Boundary / Transcript / Lineage / Continuation` 这类词只配在故障定位层出现；一旦跑回 why 主句，later consumer test 就会被术语链替代。
+- 治理线的新稳定页角色也应继续写死：`10 = earliest unpaid expansion 的 first-answer card`，`security = signer / ledger / cleanup ambiguity owner`，`risk = post-cleanup readback owner`，`playbooks = execution verdict owner`。任何一页若又开始预排另外三页的 syllabus、步骤或卡组，就说明治理线在回潮成链式讲义。
+- 源码质量线也再固定一条更硬的 promotion 纪律：artifact completeness 只决定 promotion eligibility，从不改写 page ownership；`102` 可以要求 `ceiling note / downgrade / unresolved-authority note / change-risk record` 写实，但不能把“谁补齐 artifact”改写成“谁暂时拥有升级结论资格”。
+- 本轮根仓同步检查的当前截面也应写死：`git fetch origin main` 成功，但根仓 `git merge --ff-only origin/main` 仍被未解决冲突阻断。该事实只作为外部状态写回记忆，不在根仓动手修；后续每批继续先查再做，不复用旧的阻断文件清单。
+- `2026-04-08` 的下一条结构纪律也应固定下来：高流量前门不该提前列 second-hop inventory。根 `README` 不该先列 artifact 名与离场清单，`userbook/README` 不该先列课程书架和专题分工，`06` 不该先列 runtime 桶位；这些都应在首跳之后由对应 owner README 自己展开。
+- 自校页的长期纪律也因此更明确：`06` 只配保留“四问 + 最小回退 + 何时退出到对象层”，不配再长出对象桶位、源码簇或阅读清单。一旦它重新开始说“先看哪些文件/哪些对象”，它就又在从 self-audit 滑回 second-hop atlas。
+- 治理 why 页也再固定一条边界：`85` 只回答“为什么 unpaid expansion 必须被定价”，不再承担 visible noun 对照表、长串机制巡览或执行接口翻译。只要 why 页开始逐项解释 `allow / ask / deny / compact / halt / handoff` 映射到哪条 chain，它就在从 why-proof 滑回机制导览。
+- `playbooks/README` 的稳定边界也应继续写死：它可以给扁平手册索引，但不该再把 admission、repair、verification 重新包装成首页场景卡。执行 owner 页一旦在 README 里替读者预分场景，就是在重做 second-hop syllabus。
+- `2026-04-08` 的源码质量线 speaking-rights 也应再固定一条：`102` 只判断 evidence 是否足以让 current-truth claim 维持 candidate 或 promotion，不回答“谁在写现在”；`01` 只回答“找哪类代码先看哪里”，不回答“谁是首落点”；`87` 只回答为什么必须保有 later-maintainer veto，不负责第一退回层；`architecture/README` 的 `landing card` 只做 object summary，不重编码 evidence ladder 字段。
+- `navigation/README` 的长期边界也因此更硬：它只配按 artifact noun 做单跳路由，不再摆稳定节点书架、reading map 或第二层索引。只要 `navigation` 又开始列“缺 reading map 时来这里”这类句子，就说明它在从 artifact-gap 反查滑回第二前门。
+
+- `2026-04-08` 的治理深页也应再固定一条：`10` 可以命名最短 reject seam 和弱读回面，但不再列判责对象清单；`85` 可以举原则级源码信号，但不再提供术语表、机制 inventory 或“复制能力清单”。更稳的分层是：入口卡只问 first-answer，why 页只答为什么，owner README 才答对象和菜单。

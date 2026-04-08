@@ -46,6 +46,8 @@
 
 更稳的默认二跳是：
 
+- 如果你已经明确只是 `扩张或权限判错` 或 `旧状态污染`，最短单跳仍可直接去 [05-控制面深挖/README.md](./05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/README.md)；下面保留的是更稳定的二跳起点。
+
 - 想先知道今天该怎么开工：
   [00-导读.md](./00-%E5%AF%BC%E8%AF%BB.md) ->
   [01-主线使用/README.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/README.md)
@@ -306,3 +308,5 @@
 1. 哪条控制面现在在说话。
 2. 哪些相邻入口只是 projection、continuation consumer 或 `Outside` handoff surface，不配改判。
 3. 什么时候该把问题退回 `09 / 10 / security / architecture` 的对应 owner，或退回 `risk / playbooks` 的 tail-readback / execution next-hop。
+
+`04` 与 `05` 的更细分工仍以各自 README 为准；根页只负责把你送到正确的一层，不提前库存另一份专题表。

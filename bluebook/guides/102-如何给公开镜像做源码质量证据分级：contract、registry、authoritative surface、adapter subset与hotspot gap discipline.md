@@ -35,7 +35,7 @@
 
 - 文件名保留旧词只是为了兼容检索；正文判断一律只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`。
 - 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航与对象展开即使被提及，也只算证据状态声明，不算新的 frontdoor。
-- 在这条线里，artifact completeness 就是唯一 ownership law：谁先补齐 artifact，谁才暂时拥有升级结论的资格；页面标题本身不构成签字权。
+- 在这条线里，artifact completeness 只决定 promotion eligibility，不重写 owner README 的稳定职责；页面标题与补写者都不额外增加签字权。
 - 凡正文把对象写成 `consumer subset` 或 `current-truth surface candidate`，必须同时把 `downgrade stamp` 与 `unresolved-authority note` 一起落页；只写“这里要保守”而不写这条说明，默认按证据纪律未落地处理。
 - 若对象层 authority 仍需细化，note 只说明“缺少 promotion 所需证明”，不附带任何路由义务。
 - 若 object-level authority 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
@@ -80,7 +80,7 @@
 所以当公开镜像里出现 `resume path / snapshot / pointer / archive / adapter replay` 这些 continuity 线索时，更稳的默认动作不是宣布“恢复机制很成熟”，而是先问：
 
 1. 它们只是 `recovery asset` 证据，还是已经足够支持 `current-truth surface candidate`。
-2. 它们有没有越位成 present truth signer。
+2. 它们有没有越位成当前写权 claim。
 3. 它们是否反而暴露了 `stale writer / stale snapshot / stale capability` 这类 temporal honesty 缺口。
 
 这七层必须严格分开。
@@ -172,17 +172,17 @@ registry 才回答：
 
 不能让两者互相替代。
 
-## 4. 第三级：锁定 current-truth surface 候选
+## 4. 第三级：判断 current-truth claim 是否只能保留 candidate
 
 contract 和 registry 都还不够。
 
 真正会决定源码质量判断稳定性的，是：
 
-- 当前谁有权宣布 present truth
+- 当前这份 claim 有没有足够可见证据支持 promotion
 
-这里的 `current-truth surface` 不是谁更重要，而是当前哪条 surface 被允许写当前真相。对象层 authority 证据在本页只作为判级触发条件，不在这里代行对象解释；若这些 object-level 证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate`，并同步附一条 unresolved-authority note。
+这里的 `current-truth surface` 不是在本页回答“谁在写现在”，而是在判断公开镜像里的可见证据是否已经足够支撑 `current-truth surface` claim。若这些 object-level 证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate`，并同步附一条 unresolved-authority note。
 
-典型信号只在证明“这里可能是 authority candidate”，不在本页直接升级成对象层 verdict。
+典型信号只在证明“这里可能支持 current-truth claim”，不在本页直接升级成对象层 verdict。
 
 如果这一层没有先锁定，你就很容易从：
 
@@ -195,7 +195,7 @@ contract 和 registry 都还不够。
 
 而 Claude Code 式的成熟度，正好体现在：
 
-- 它会主动把权威入口暴露出来
+- 它会主动暴露更接近权威 claim 的可见证据
 
 ## 5. 第四级：把 consumer subset 从协议全集里剥出来
 
@@ -332,20 +332,22 @@ gap discipline 的价值不是“保守一点”，而是：
 当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一份可交接的 `change-risk record`。
 
 `guides/` 在这里只负责 `change-risk record` 的字段与 gap note 写法；这张表也就是源码质量线唯一新增共享接口，不替其他目录代写具体危险面。
-这份 `change-risk record` 不是研究附表，而是 later maintainer 变更前的最小协议；如果改动前还写不出这张表，就还不配宣称自己已经看清 current-truth surface。更稳的 handoff 也不是“把 record 丢给下一页”，而是先在本页把 `ceiling note / downgrade note / unresolved-authority note / change-risk record` 写实。
+这份 `change-risk record` 不是研究附表，而是 later maintainer 变更前的最小协议；如果改动前还写不出这张表，current-truth 判断就应继续保持 provisional。更稳的 handoff 也不是“把 record 丢给下一页”，而是先在本页把 `ceiling note / downgrade note / unresolved-authority note / change-risk record` 写实。
 
 更稳的记录模板至少应包含下面几列：
 
-| change-risk surface | protected invariant | minimum visible evidence | common misread | replay obligation | second-truth risk |
+| change-risk surface | protected invariant | minimum visible evidence | common misread | downgrade note | unresolved-authority note |
 |---|---|---|---|---|---|
-| `<surface>` | `<what it protects>` | `<authoritative proof>` | `<usual wrong reading>` | `<what must be replayed before changing>` | `<which stale world returns if broken>` |
+| `<surface>` | `<what it protects>` | `<authoritative proof>` | `<usual wrong reading>` | `<why this stays provisional>` | `<what promotion still lacks>` |
 
 更短地说，这页真正要强迫 later maintainer 先回答的是：
 
 1. 这份 change-risk record 该长什么样。
 2. 哪些 gap 必须显式保留。
-3. 哪些 replay obligation 必须先完成。
-4. 哪些 second-truth risk 必须先点名。
+3. 为什么当前判断仍要降格。
+4. 哪些 authority 缺口必须继续显式保留。
+
+对象层若还需要继续写 `writeback seam / first fallback / local veto cue`，统一留给 `architecture/README`；`102` 不代写对象摘要。
 
 ## 11. 苏格拉底式检查清单
 

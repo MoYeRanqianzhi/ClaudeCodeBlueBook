@@ -6,6 +6,7 @@
 更短地说：安全与省 token 在这里保护的是同一个 model-reachable world；前者阻止免费危险扩张，后者阻止免费昂贵扩张。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶前门顺序，不要急着把安全页读成另一套规则堆。
 `security/` 内部也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`：先判这次在失真的到底是 signer、ledger 还是 cleanup 工作对象，再判它卡在治理收费链的哪一段，最后才决定读机制前门、速查表、源码证据簇还是具体编号正文。
+如果你只想把首页再压短一点，也只该压回 signer、`verdict ledger` 与 cleanup authority 这三根主轴；projection、状态词与收口结果一旦替它们说话，就先把它们当安全症状，不要误当治理事实。
 
 本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及从 `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention -> honesty -> isolation -> constitution -> rationale -> metadata -> runtime-conformance -> anti-drift verification -> repair -> migration -> sunset -> tombstone ...` 一路推进到 stronger-request cleanup 家族的同构治理链。
 
@@ -261,6 +262,8 @@
 
 ## 什么时候去 appendix / source-notes / docs
 
+若 projection、状态词或收口结果开始替 signer / verdict 说话，先回到正文判断对象与收费链，不要在首页继续把材料菜单当答案。
+
 - [appendix/README.md](appendix/README.md)
   想快速查矩阵、字段、词法、签字权与速查表。
 - [source-notes/README.md](source-notes/README.md)
@@ -277,6 +280,7 @@
 - 单机制、单协议、单文件群的源码剖面统一维护在 [source-notes/README.md](source-notes/README.md)。
 - 章节推进记忆、未来候选和目录编排提示统一写入 [../../docs/development/security/README.md](../../docs/development/security/README.md)，不再回写到正文尾段。
 - 需要失败样本、恢复演练、宿主接入、验收、修复与长期回归时，分别回到 [../casebooks/README.md](../casebooks/README.md)、[../playbooks/README.md](../playbooks/README.md) 与 [../risk/README.md](../risk/README.md)，不要继续停在安全首页摘要。
+- 相关对象页只保留代表性入口，不在安全首页再重建另一份正文库存。
 
 ## 相关目录
 

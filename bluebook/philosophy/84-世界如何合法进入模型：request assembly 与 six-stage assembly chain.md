@@ -100,9 +100,9 @@ Prompt potency 真正值钱的地方，也不是 prompt prose 更强，而是 la
 2. 边界内哪些动作和工具仍合法。
 3. `resume / handoff` 之后，哪些 transcript / lineage 仍绑定继续资格。
 
-这三问里只要有一问需要重答，就先按 same-world 失败处理。`Authority / Boundary / Transcript / Lineage / Continuation` 只是这三问在解释层的五个裁定轴，不该反过来抢主句。
+这三问里只要有一问需要重答，same-world 就已经失败；later consumer 此时不该先补摘要或重谈边界，而该先停止继续。`Authority / Boundary / Transcript / Lineage / Continuation` 只是故障定位时的诊断标签，不该反过来抢主句。
 
-若要继续核对更细的 same-world evidence，也只做一件事：沿 `82` 与本页锚点检查 `stable prefix / visibility pruning / advisory downgrade / continuation object` 是否仍共同指向同一份 verdict。
+若要继续核对更细的 same-world evidence，也只做一件事：沿 `82` 与本页锚点检查 `stable prefix / visibility pruning / advisory downgrade / continuation object` 是否仍共同指向同一份 verdict，不把它们再写成另一条入口链。
 
 这里还要再多记一句：
 
