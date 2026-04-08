@@ -22,7 +22,7 @@
 ## canonical chain
 
 - `governance key`
-- `externalized truth chain`
+- `externalized truth chain (verdict ledger)`
 - `typed ask`
 - `decision window`
 - `continuation pricing`
@@ -31,6 +31,7 @@
 这里还应先记一句：
 
 - `compact / resume / re-entry` 不构成第四条治理对象线；它们只是 `continuation pricing` 与 `durable-transient cleanup` 在时间轴上的消费点。
+- `continuity` 在治理线里也只是一道 lease checkpoint：`same scene? still priced? who settles?`；`compact / resume / re-entry` 只是这道 checkpoint 的三种入口形式。
 
 ## 四类被收费资源
 
@@ -44,6 +45,7 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
    - `authority lease` 的持续期，不是无限继续资格
 
 如果一句治理说明答不上“这次在给哪类资源收费”，它通常还停在界面词、结果词或规则堆层。
+更稳的诊断顺序也只认一句：先找最早那条 unpaid expansion，而不是先盯最吵的 surface noun。
 
 如果把 `authority lease accounting` 压成最短 crosswalk，也只剩四句：
 

@@ -8,6 +8,27 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 root-sync-healthy-again live 记忆：
+  - `2026-04-08` 这一轮起手再次执行 `fetch origin main` 与 `merge --ff-only origin/main`，结果为 `Already up to date.`
+  - 当前最新根仓状态为 `main...origin/main`；先前记录的 root-blocked snapshot 仍保留为历史截面，但不再是当前 live truth
+- 当前批次继续新增一条 prompt-law-counterfeit-template live 记忆：
+  - Prompt 线默认继续不只写 `compiled world verdict` 的 law，还要同时给出 `counterfeit / first reject / first reversible fix`
+  - 更稳的默认模板已经固定成：`lawful late binding rule -> mutation 判定表 -> counterfeit trio -> first reversible fix`
+- 当前批次继续新增一条 governance-repricing-template live 记忆：
+  - 治理线默认继续用 `earliest unpaid expansion` 作为第一诊断顺序，不先盯最吵的 surface noun
+  - `continuity` 默认继续不是第四类治理对象，而是一道 `lease checkpoint: same scene? still priced? who settles?`
+- 当前批次继续新增一条 security-intake-gate live 记忆：
+  - `security/README` 默认继续要求最小 intake object：`signer_ref / verdict_ledger_ref / cleanup_ref / lease_revocation_condition`
+  - 若四者点不出来，默认先按弱投影或读回面处理，不按安全真相处理
+- 当前批次继续新增一条 source-quality-artifact-chain live 记忆：
+  - 源码质量线默认继续按 artifact chain 而不是 page ownership 分流：`ceiling note -> change-risk record -> object landing card -> quality gate -> verdict/repair`
+  - 根 `README` 与 `navigation/README` 若再回到“缺哪一页”式分流，默认优先改回“缺哪一个 artifact”
+- 当前批次继续新增一条 architecture-landing-card live 记忆：
+  - `architecture/README` 默认继续把 `change-risk record` 的对象层落点写成六栏：`surface / protected invariant / writer truth plane / writeback seam / first fallback / unresolved authority`
+  - 若 later maintainer 还答不上这六栏，默认说明 source-quality line 还没真正进入 change control
+- 当前批次继续新增一条 87-quality-gate live 记忆：
+  - `87` 默认继续不再解释目录 ownership，而只验收 `change-risk record` 的三条最低标准：`合法复杂度中心 / one writable present / later-maintainer veto`
+  - `87` 后续若又开始大段解释“102 管什么 / architecture 管什么”，默认按 why 页密度回退处理
 - 当前批次继续新增一条 root-sync-blocked-outside-mainloop live 记忆：
   - `2026-04-08` 这一轮起手已再次执行 `fetch origin main`，但根仓 `merge --ff-only origin/main` 因 `/home/mo/m/projects/cc/analysis` 外层未解决冲突而失败
   - 这些 `UU` 状态位于 `.worktrees/mainloop` 之外；后续若用户仍要求“开始前先拉主分支”，默认先复核并明确记录阻塞，但不在未获指示前触碰根仓冲突

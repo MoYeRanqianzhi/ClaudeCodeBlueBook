@@ -9,12 +9,12 @@
 
 - Prompt 顶层主语与 first-reject path，直接回 `philosophy/84`
 - 治理首答，直接回 `../10`
-- 当前真相与 evidence ceiling，直接按 `../README.md -> guides/102`
+- 当前真相与 source-quality artifact chain，直接按 `../README.md -> guides/102`
 
 这里默认只回答 next-hop：
 
 - 缺目录法或入口升级规则，回 `../../docs/development/00-研究方法.md`
-- 缺当前真相的方法入口、evidence ceiling 或 owner 次序，回 `../README.md -> guides/102`
+- 缺当前真相的 artifact chain 起点、ceiling note 或 change-risk record，回 `../README.md -> guides/102`
 - 缺其他更细 route gap，再按下面三类分流
 
 一句话该落在哪层，只问它在做哪种动作：
@@ -39,8 +39,8 @@
   - 已确认主语，只缺 signer / mechanism，回 `security`；缺 tail readback / reopen qualification，回 `risk`；缺 execution / repair drill，回 `playbooks`
   - 还在争 mode、usage、approval 或 cleanup result 谁说了算，先退回 `../10`
 - 谁在宣布现在
-  - 缺方法入口或 evidence ceiling，回 `guides/102`
-  - 已确认 ceiling，缺 why 回 `philosophy/87`；缺 `sole writer / recovery asset / anti-zombie / writeback seam` 回 `architecture/README`
+  - 缺 `ceiling note / change-risk record`，回 `guides/102`
+  - 已有 `change-risk record`，缺 why gate 回 `philosophy/87`；缺 object landing card 回 `architecture/README`
   - 还在混 runtime-core evidence、operator-governance evidence 与公开镜像缺口，先退回 `06`
 
 ## 稳定节点

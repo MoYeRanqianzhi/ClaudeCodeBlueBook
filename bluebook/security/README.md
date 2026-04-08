@@ -13,7 +13,7 @@
 
 这里还应再多记一句：
 
-- `continuity` 在安全目录里也不是第四类安全主题；它只是安全侧的继续资格与清算资格。
+- `continuity` 在安全目录里也不是第四类安全主题；它只是一道 lease checkpoint，继续追问 `same scene? still priced? who settles?`，而不是另起一条安全对象线。
 
 ## 先记四句
 
@@ -30,6 +30,15 @@
    - 谁在记账（`verdict ledger`），谁在宣布治理事实
 3. `cleanup authority ambiguity`
    - 谁能收口
+
+若要把一条安全说法当成强结论，至少先能点名四个 intake object：
+
+- `signer_ref`
+- `verdict_ledger_ref`
+- `cleanup_ref`
+- `lease_revocation_condition`
+
+一个都点不出来时，先按弱投影或读回面处理，不按安全真相处理。
 
 如果你已经开始重发 canonical chain 的 stage names，说明这页又在代签 `10`。
 

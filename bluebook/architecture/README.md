@@ -26,6 +26,14 @@
 
 如果这四问还答不上，说明你缺的还是对象层，而不是新的目录路线。
 
+## landing card
+
+当 `102` 已经产出 `change-risk record`，对象层至少还要把它继续落成下面六栏：
+
+| surface | protected invariant | writer truth plane | writeback seam | first fallback | unresolved authority |
+|---|---|---|---|---|---|
+| `<surface>` | `<what it protects>` | `<who may write now>` | `<where current truth is committed>` | `<first retreat layer>` | `<what still lacks promotion proof>` |
+
 ## 什么时候进来
 
 - 当你已经知道某条高阶判断成立，但还没回答“它到底落成了哪些正式对象、状态机与 choke point”。

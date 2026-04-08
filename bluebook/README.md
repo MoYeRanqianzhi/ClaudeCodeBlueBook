@@ -17,7 +17,7 @@
 - 治理
   - `10 -> security（mechanism） / risk（tail readback） / playbooks（execution）`
 - 当前真相保护
-  - `102（先判 evidence mode / public-artifact ceiling / official-vs-mirror，并产出 change-risk record）`
+  - `102（先写 ceiling note，再产出 change-risk record，然后进入 object landing）`
 
 ## 根入口只做三件事
 

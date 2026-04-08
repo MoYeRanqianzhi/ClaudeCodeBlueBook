@@ -204,6 +204,7 @@ Claude Code 的很多高级设计都在强调：
 
 - 一旦继续还能改写 authority、价格或清算资格，它就仍是一笔待结算的治理对象。
 - 一旦继续已经不能改写这些东西，它就不该继续占据高价上下文与自动化权限。
+- 所以 `continuity` 也只是一道 lease checkpoint：`same scene? still priced? who settles?`；`compact / resume / re-entry` 只是这道 checkpoint 的三种入口形式。
 
 ## 8. 对 Agent 设计者的启发
 
