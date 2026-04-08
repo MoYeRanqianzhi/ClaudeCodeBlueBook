@@ -4562,3 +4562,6 @@
 - `navigation/README` 的 artifact-gap 规则现在也应继续记死：缺 `public artifact ceiling / signer / effect ceiling / downgrade / change-risk record` 统一先回 `guides/102`；缺 `release-surface shaping` 先回 `architecture/84`；缺 `local veto cue / first retreat layer` 先回 `architecture/README`。route 页只做回退分流，不代签 capability promise。
 - `02-使用指南` 的 usage bridge 边界也应继续记死：它可以回答“怎么进入正确使用入口”，但不拥有源码质量 verdict。凡问题已经变成公开 artifact 能写到哪一层、当前是 entry shadow 还是 runtime gate 未亮，就应立刻退回 `guides/102 / architecture/84`，而不是在使用层继续硬判支持面。
 - 本轮根仓同步前置检查再次验证了“外部状态漂移”纪律：`git fetch origin main` 成功，但根仓仍因未完成 merge/冲突状态而无法安全 fast-forward。长期记忆只保留“每批必须重查、只在 worktree 记账、不碰根仓冲突”的方法，不把具体阻断文件列表当稳定事实。
+- `2026-04-08` Prompt 时间轴又固定了一条更硬的定义：`continue qualification` 不是摘要是否“还够用”的感受分，而是 later consumer 重新读取 `lawful forgetting witness ABI` 后，是否还能在不重谈 `authority / boundary / lineage` 的前提下复现同一条 `continue-or-reject verdict`。只要继续前还得重谈世界主语、边界或 lineage，就应按资格失效处理，而不是按“摘要不够好”处理。
+- `84` 的长期主句也因此应继续记死：`continuation qualification` 裁定的是 later consumer 是否仍在消费同一份 `world-entry object`，而不是系统是否还能接着生成。若某个补丁、summary、delegated context 或 display transcript 会逼 consumer 重开世界协商，它就属于 renegotiation，不属于 continuation。
+- `navigation/15` 的 Prompt 线第一条 `first-reject` 也应继续记死：先问是不是某个更易读的 `projection / summary / delegated context` 正在越权代签 `continue qualification`；若是，先停在 `same-world failure verdict`，不要直接跳去补 witness 细节、compact 技巧或恢复手法。
