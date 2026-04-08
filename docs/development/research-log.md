@@ -3,6 +3,11 @@
 ## 2026-04-08 本轮增量
 
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
+- 本轮新的 why-page 结论：`03` 与 `06` 现在更明确把高流量 why 页的最低自校写成一句硬规则：删掉 `next-hop / owner page / route note` 后若整段不成立，它就只是 route，不是 why。这让 `03` 更像制度因果页，`06` 更像可反驳自校页，而不是隐形导航页。
+- 本轮新的目录冻结结论：根层角色继续收紧成 `README = 唯一 frontdoor`、`navigation/README = 唯一路由反查`、`00-导读 = preface / locator`、`01-源码结构地图 = 唯一规范源码地图`。其中 `01-源码总地图` 已被正式收回成纯兼容别名页，不再发布独立源码判断。
+- 本轮新的 architecture handoff 结论：`architecture/README` 现在更明确把 `landing card` 写成 change control 中间态，而不是对象层终局；更稳的默认顺序是 `102 artifact gate -> 87 why-proof -> architecture landing card -> 87 quality gate`。
+
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
 - 本轮新的 Prompt 因果结论：`84` 现已继续把 Claude Code prompt 的效力压成四个同时成立的制度动作：`stable prefix custody / visibility pruning / delegated-context downgrade / lawful continuation`。这意味着下一批若还出现“更会写 prompt / 更会协作”这类效果词，默认先按这四个动作逐项回查。
 - 本轮新的治理收束结论：`10` 现已把治理入口卡继续往 diagnosis-first 推进，显式把 `compact / resume / re-entry` 收编成 `lease checkpoint` 的三种入口；`61` 与 `security/README` 也继续收回“只复用 `10` 的 checkpoint，不在 why 页或安全入口页自造 continuity 理论”。
 - 本轮新的源码质量目录结论：`102` 现已明确写出 `artifact completeness is the only ownership law`，并把目录优化成功标准继续压成同一条 artifact chain：`ceiling note / downgrade note / unresolved-authority note -> change-risk record -> why-proof -> landing card -> quality gate`。这意味着 later maintainer 以后缺的应先被写成 artifact gap，而不是 page ownership 争议。

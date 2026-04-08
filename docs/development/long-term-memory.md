@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 最新根仓同步记忆（2026-04-08，本批次三次深化）继续保持健康态：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 why-survives-route-removal live 记忆：
+  - `03 / 06` 默认继续把 why 页自校压成一句硬规则：删掉 `next-hop / owner page / route note` 之后，整段若不成立，它就不是 why，而只是 route
+  - Prompt / 治理 / 源码质量三线默认继续分别回到 `compiled world verdict / lease checkpoint / artifact completeness` 这三个可反驳对象
+- 当前批次继续新增一条 root-role-freeze live 记忆：
+  - 根层角色默认继续冻结成：`README = 唯一 frontdoor`、`navigation/README = 唯一路由反查`、`00-导读 = preface / locator`、`01-源码结构地图 = 唯一规范源码地图`
+  - `00-总览 / 00-蓝皮书总览 / 01-源码总地图` 默认继续只保留兼容别名职责，不再承担首答
+- 当前批次继续新增一条 alias-page-must-be-thin live 记忆：
+  - `01-源码总地图` 默认继续不再承载任何独立源码判断；兼容别名页若正文开始输出 canonical conclusion，默认立即收回 stub-only 形态
+- 当前批次继续新增一条 landing-card-quality-gate live 记忆：
+  - `architecture/README` 默认继续不把 `landing card` 误写成终局；更稳的默认后继是 `landing card -> 87 quality gate`
+  - quality gate 默认继续只验三条：`合法复杂度中心 / one writable present / later-maintainer veto`
 - 最新根仓同步记忆（2026-04-08，本批次二次深化）继续保持健康态：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
 - 当前批次继续新增一条 prompt-four-moves live 记忆：
   - `84` 默认继续把 Prompt potency 压成四个制度动作：`stable prefix custody / visibility pruning / delegated-context downgrade / lawful continuation`
