@@ -8,6 +8,22 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 最新根仓同步记忆（2026-04-08，本批次二次深化）继续保持健康态：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
+- 当前批次继续新增一条 prompt-four-moves live 记忆：
+  - `84` 默认继续把 Prompt potency 压成四个制度动作：`stable prefix custody / visibility pruning / delegated-context downgrade / lawful continuation`
+  - 以后若再把 Prompt 强度写回文案效果、owner 口号或并行协作结果词，默认先改回这四个动作有没有同时成立
+- 当前批次继续新增一条 governance-diagnosis-loop live 记忆：
+  - `10` 默认继续把治理入口卡组织成单一 diagnosis loop：`symptom -> earliest unpaid expansion -> repricing proof -> lease checkpoint -> reject -> escalation`
+  - `canonical chain / 四类资源 / reject trio / 弱读回面` 默认继续只做 support cards，不再让标题结构看起来像 taxonomy first
+- 当前批次继续新增一条 continuity-reuses-10 live 记忆：
+  - `compact / resume / re-entry` 默认继续不单列成第四治理对象；它们只复用 `10` 的 lease checkpoint：`same scene? still priced? who settles?`
+  - `61 / security/README` 默认继续不自定义 continuity 解释，只消费 `10` 的 checkpoint
+- 当前批次继续新增一条 artifact-completeness-ownership live 记忆：
+  - `102` 默认继续明确：`artifact completeness` 是源码质量线唯一 ownership law
+  - 更稳的 artifact chain 默认继续写成：`ceiling note / downgrade note / unresolved-authority note -> change-risk record -> why-proof -> landing card -> quality gate`
+- 当前批次继续新增一条 root-and-nav-artifact-gate live 记忆：
+  - 根 `README` 与 `navigation/README` 默认继续不按页面归属分发，而按 artifact state 反查
+  - 根入口默认继续只判题目和 artifact 状态，不代签 artifact promotion；`navigation/README` 默认继续只回答 artifact gap，不再回答“哪页说了算”
 - 最新根仓同步记忆（2026-04-08，本批次继续深化）继续保持健康态：`git fetch origin main` 后再次执行 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
 - 当前批次继续新增一条 prompt-quartet-symmetry live 记忆：
   - `41` 与 `03` 默认继续把 Prompt why 写成与治理/当前真相对称的四联式：`law / counterfeit / first reject / reversible fix`

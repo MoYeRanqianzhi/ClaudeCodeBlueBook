@@ -11,15 +11,17 @@
 - 治理首答，直接回 `../10`
 - 当前真相与 source-quality artifact chain，直接按 `../README.md -> guides/102`
 
-这里默认只回答 next-hop：
+这里默认只回答 artifact gap，而不是页面归属：
 
 - 缺目录法或入口升级规则，回 `../../docs/development/00-研究方法.md`
 - 缺当前真相的 artifact chain 起点、`ceiling note`、`downgrade stamp`、`unresolved-authority note` 或 `change-risk record`，回 `../README.md -> guides/102`
 - 缺其他更细 route gap，再按下面三类分流
 
-一句话该落在哪层，只问它在做哪种动作：
+一句话该回哪层，先问它还缺哪种 artifact / verdict，而不是哪页“说了算”：
 
-- 定主语或给 first-hop，回根入口与对应 owner page
+- 缺 Prompt 的 `compiled world verdict / first reject`，回根入口与 `philosophy/84`
+- 缺治理的 `repricing proof / lease checkpoint / cleanup witness`，回 `../10`
+- 缺当前真相的 `ceiling note / unresolved-authority note / change-risk record / why-proof / landing card / quality gate`，回 `guides/102 -> philosophy/87 -> architecture/README`
 - 解释 why，回 `philosophy/`
 - 判 evidence ceiling / ladder / downgrade，回 `guides/`
 - 展开对象、状态机与 choke point，回 `architecture/`
@@ -64,6 +66,6 @@
 
 ## 维护约定
 
-- `navigation/` 只保留稳定节点与 route gap，不把每条深链重新摊平成首页。
-- 如果一个 route 句子开始代签 truth、owner law 或 verdict，它就已经越位。
-- 如果新的 route 提案还需要解释 canonical formula、治理 owner law、current-truth ladder 或目录法，就先退回 `../README`、`../10`、`guides/102` 与 `docs/development/00`，不要把 `navigation/` 变成第二 frontdoor。
+- `navigation/` 只保留稳定节点与 artifact gap，不把每条深链重新摊平成首页。
+- 如果一个 route 句子开始代签 truth、ownership law 或 verdict，它就已经越位。
+- 如果新的 route 提案删掉 artifact 名称后就不成立，说明它仍是页面归属说明，不是反查规则；先退回 `../README`、`../10`、`guides/102` 与 `docs/development/00`，不要把 `navigation/` 变成第二 frontdoor。

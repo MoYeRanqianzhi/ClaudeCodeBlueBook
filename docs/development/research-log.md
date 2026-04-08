@@ -3,6 +3,12 @@
 ## 2026-04-08 本轮增量
 
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
+- 本轮新的 Prompt 因果结论：`84` 现已继续把 Claude Code prompt 的效力压成四个同时成立的制度动作：`stable prefix custody / visibility pruning / delegated-context downgrade / lawful continuation`。这意味着下一批若还出现“更会写 prompt / 更会协作”这类效果词，默认先按这四个动作逐项回查。
+- 本轮新的治理收束结论：`10` 现已把治理入口卡继续往 diagnosis-first 推进，显式把 `compact / resume / re-entry` 收编成 `lease checkpoint` 的三种入口；`61` 与 `security/README` 也继续收回“只复用 `10` 的 checkpoint，不在 why 页或安全入口页自造 continuity 理论”。
+- 本轮新的源码质量目录结论：`102` 现已明确写出 `artifact completeness is the only ownership law`，并把目录优化成功标准继续压成同一条 artifact chain：`ceiling note / downgrade note / unresolved-authority note -> change-risk record -> why-proof -> landing card -> quality gate`。这意味着 later maintainer 以后缺的应先被写成 artifact gap，而不是 page ownership 争议。
+- 本轮新的入口结论：根 `README` 与 `navigation/README` 现已继续从“按页分发”收回“按 artifact state 反查”。根入口只判题目与 artifact 状态，不代签 promotion；`navigation/README` 只回答 artifact gap，不再把反查写成页面签字权分发表。
+
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。
 - 本轮新的 Prompt 收束结论：`bluebook/03` 与 `navigation/41` 现已把 Prompt why 收成和治理/当前真相对称的四联式：`law / counterfeit / first reject / reversible fix`。新的最短口径不再先说“Prompt 有魔力”，而是先说 `same-world compiler` 如何产出 `compiled world verdict`，以及 counterfeit 如何被 reject、如何被可逆修复。
 - 本轮新的 artifact-first 结论：`bluebook/03`、`06` 与 `navigation/41` 现已进一步把目录优化从 page ownership 压回 artifact completeness。源码质量线默认先问缺的是 `ceiling note / unresolved-authority note / change-risk record / why-proof / landing card / quality gate` 哪一个，而不是先争“哪页越位”。
 - 本轮新的 official-surface 结论：并行 agent 与外部公开面复核后，当前更稳的判断是 Claude Code 的 prompt potency 应优先写成 runtime contract，而不是猜内部 prompt 原文。尤其在当前 worktree 缺源码镜像、官方公开面主要暴露 agents / hooks / permissions / plugin / settings artifact 时，本批次继续按 `public-evidence / official-surface` 模式推进。

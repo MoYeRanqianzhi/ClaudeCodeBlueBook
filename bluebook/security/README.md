@@ -3,7 +3,7 @@
 `security/` 研究的不是“规则越多越安全”，而是 signer、ledger 与 cleanup authority 这三种不对称如何阻止免费危险扩张与免费昂贵扩张。
 更短地说：安全与省 token 在这里保护的是同一个 model-reachable world；前者拒绝未授权危险扩张，后者拒绝未定价昂贵扩张。
 如果你还没先经过 `09 / 05 / 15 / 41` 这组高阶入口顺序，不要急着把安全页读成另一套规则堆。
-`security/` 内部不先按主题桶分型，而先按症状走 intake triage：先记最显眼的异常，再点名缺失的 `signer_ref / verdict_ledger_ref / cleanup_ref / lease_revocation_condition`，再判它落向哪种 ambiguity，最后才决定读机制入口摘要、速查表、源码证据簇还是具体编号正文。
+`security/` 内部不先按主题桶分型，而先走同一条 diagnosis loop：`symptom -> signer_ref / verdict_ledger_ref / cleanup_ref / lease_revocation_condition -> ambiguity -> lease checkpoint -> handoff`。也就是说，先记最显眼的异常，再点名缺失的四个 intake ref，再判它落向哪种 ambiguity，再复用 `10` 的 `same scene? still priced? who settles?`，最后才决定读机制入口摘要、速查表、源码证据簇还是具体编号正文。
 
 如果只先记安全入口判定的一句话，也只记这句：
 
@@ -13,7 +13,7 @@
 
 这里还应再多记一句：
 
-- `continuity` 在安全目录里也不是第四类安全主题；它继续只复用治理线那道 lease checkpoint：`same scene? still priced? who settles?`
+- `continuity` 在安全目录里也不是第四类安全主题；它继续只复用 `10` 的 lease checkpoint：`same scene? still priced? who settles?`
 
 ## 先记四句
 

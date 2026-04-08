@@ -25,11 +25,22 @@
 
 ## 1. 先说结论
 
-`84` 在蓝皮书里只承担一件额外职责：
+`84` 在蓝皮书里只固定一条因果律：
 
-- 它是“谁有权把当前世界合法编译进模型”这条问题的 canonical source；`README / 06 / 81` 负责引用、回绑或展开机制，不再并列重写顶层公式。
+- 只有当 `stable prefix / visibility pruning / delegated-context downgrade / continuation qualification` 被同一条 authority order 编译成 `compiled world verdict`，当前世界才算被合法编译进模型。
 
 真正成立的世界准入，是 runtime 先把 `compiled world verdict` 编译成一个可被多 consumer 复用的合法输入秩序；后来的 `verify / delegate / tool choice / resume / handoff` 因此不必重谈“现在是什么世界”。
+
+Prompt potency 真正值钱的地方，也不是 prompt prose 更强，而是四个制度动作同时成立：
+
+1. `stable prefix custody`
+   - later consumer 继承的是已编译前缀，而不是自己补一套世界定义。
+2. `visibility pruning`
+   - 先裁可见面，再给行动权；模型不会先看见未定价、未定界的世界。
+3. `delegated-context downgrade`
+   - delegated context 只能当 advisory surface，不能长成第二个 `world-definition source`。
+4. `lawful continuation`
+   - `compact / fork / handoff / resume` 之后仍保住同一 `reject / continue verdict`，而不是靠重述现场续命。
 
 这里的“世界”不是抽象比喻，而是四件制度事实：
 
@@ -59,9 +70,9 @@
 
 1. `same lineage`
    - 都在同一条 `message lineage` 上取位。
-2. `named consumer`
-   - 每一层都只对自己的 projection consumer 负责，不偷渡给相邻 consumer 改判。
-3. `question-scoped source`
+2. `isolated delegation`
+   - child 只继承同一份 `compiled world verdict`，但上下文与工作现场仍保持隔离；它可以生产线索，不能自立世界。
+3. `single-source adjudication`
    - 每个问题都仍能指出唯一 `world-definition source`，而不是四层并列争主语。
 4. `mandatory downgrade path`
    - 任一 surface 若丢失 admissibility，就必须降格成 display / evidence / hint，不能硬升格成 protocol 或 continuation truth。
@@ -85,13 +96,13 @@
 能被忘掉的是叙事密度，不能被忘掉的是世界定义、边界与继续资格的裁决依据。
 
 这也是为什么很多团队模仿 Prompt 时，最容易复制到外观，复制不到这种世界准入能力：他们抄到了说明文本，却没有抄到“世界已被编译、consumer 无需重谈”的制度体。
-更硬一点说，later consumer 仍可继承同一份已编译世界判决，不是因为某句 prompt 更会说服模型，而是因为世界定义权、消费边界与继续资格被同一条证据链持续见证；一旦任何路径需要重新定义“现在是什么世界”，这条 contract 就已经失效。下面这句只是这条 judgment 的压缩，不是另一条 first answer。
+更硬一点说，later consumer 仍可继承同一份已编译世界判决，不是因为某句 prompt 更会说服模型，而是因为世界定义权、消费边界与继续资格被同一条证据链持续见证；一旦任何路径需要重新定义“现在是什么世界”，这条 contract 就已经失效。真正该被复用的 therefore，不是某句著名措辞，而是上面四个制度动作能否同时成立。
 
 如果把这章继续压成最短公式，只保留一句：
 
 - 只有同一条 `Authority -> Boundary -> Transcript -> Lineage -> Continuation` 仍能单源裁决谁在定义世界、谁在消费这份定义、谁在继续时重获资格，当前世界才算被合法编译进模型。
 
-若要继续核对更细的 object-level same-world evidence，统一回 `82` 与本页锚点；frontdoor、自校、host audit 与 userbook 都不在这里再并列重造第二组术语。
+若要继续核对更细的 same-world evidence，也只做一件事：沿 `82` 与本页锚点检查 `stable prefix / visibility pruning / advisory downgrade / continuation object` 是否仍共同指向同一份 verdict。
 
 这里还要再多记一句：
 

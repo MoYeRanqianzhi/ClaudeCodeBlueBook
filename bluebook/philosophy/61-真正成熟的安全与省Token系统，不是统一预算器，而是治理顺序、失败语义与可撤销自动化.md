@@ -116,11 +116,15 @@ Claude Code 明显在避免这一点：auto mode 不是永久授权，classifier
 
 Claude Code 并不追求“检查越多越安全”。
 
-它更像在问：
+它更像在走一道更硬的 diagnosis loop：
 
-- 这次检查还能改变决策吗
+1. 这次检查还能改写哪个 decision。
+2. 如果症状来自 `continue / compact / resume / re-entry`，旧 lease 有没有 `repricing proof`。
+3. 哪些 stable bytes 仍必须留下，才能继续支撑 `same scene / still priced`。
+4. 哪些 transient authority 必须被 cleanup 撤销，不能伪装成同一现场的合法继续。
 
-如果答案是否定的，系统就会停止继续烧 token。
+四问里只要有一问答不上，系统停掉的就不只是“额外检查”，而是一笔不该默认续租的 authority。
+更具体的 `lease checkpoint / repricing proof / cleanup` 对象链统一回 `10`；本页只保留 why：为什么决策增益一旦消失，就不该再免费续租 authority。
 
 更硬一点说，未被重新定价的继续会同时延长 authority 与成本在场；它不是便宜，而是把代价推迟到后面。
 
@@ -149,6 +153,7 @@ Claude Code 的很多高级设计都在强调：
 
 这里先只保留抽象判断：凡会同时改写治理、成本与解释一致性的字节，都应被当成制度资产稳定下来；更细的缓存、重放与 break 证据统一回源码锚点与对象页。
 它们不是第五类被收费资源，而是 `externalized truth chain (verdict ledger)` 的 durable form：正因为这些字节稳定，前面四类收费对象才可被重放、复核与结算。
+更硬一点说，stable bytes 保留的不是“更长缓存”，而是 `repricing / cleanup / continue verdict` 仍可被 later consumer 重放所需的最小证据。
 
 这说明对 Claude Code 来说，真正要被保护的不是“缓存命中率”这个结果，而是：
 
@@ -198,13 +203,20 @@ Claude Code 的很多高级设计都在强调：
 - 无意义的自动化重试
 - 已无收益的分类与审批
 
-### 7.4 为什么继续资格本身就是治理对象
+### 7.4 为什么 `compact / resume / re-entry` 也只是治理对象入口
 
 因为 continue 从来不是免费“下一轮”。
 
 - 一旦继续还能改写 authority、价格或清算资格，它就仍是一笔待结算的治理对象。
 - 一旦继续已经不能改写这些东西，它就不该继续占据高价上下文与自动化权限。
 - 所以 `continuity` 也只是一道 lease checkpoint：`same scene? still priced? who settles?`；`compact / resume / re-entry` 只是这道 checkpoint 的三种入口形式。
+- `compact`
+  - 只能保留仍足以支持 `same scene / repricing proof` 的 stable bytes；否则它只是摘要，不是合法继续。
+- `resume`
+  - 只有旧 `verdict ledger` 仍能证明 lease 未被撤销时，才算继续同一现场。
+- `re-entry`
+  - 先问谁为旧 authority 清账；旧 lease 若未先结算，就不是继续，而是重新开价。
+- 更具体的 checkpoint 拆解与拒收顺序统一回 `10`；本页只保留为什么这三种入口本质上仍是同一治理对象。
 
 ## 8. 对 Agent 设计者的启发
 
