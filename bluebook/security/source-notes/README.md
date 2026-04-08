@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 196 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 197 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -215,6 +215,7 @@
 194. [194-duplicate与orphan response分流中的强请求清理免责释放治理边界](194-duplicate与orphan response分流中的强请求清理免责释放治理边界.md)
 195. [195-commandLifecycle与orphaned-permission队列的强请求清理归档关闭治理边界](195-commandLifecycle与orphaned-permission队列的强请求清理归档关闭治理边界.md)
 196. [196-control_response回放与日志面的强请求清理审计关闭治理边界](196-control_response回放与日志面的强请求清理审计关闭治理边界.md)
+197. [197-debug与diagnostics载体物化中的强请求清理不可逆擦除治理边界](197-debug与diagnostics载体物化中的强请求清理不可逆擦除治理边界.md)
 
 ## 和其他目录的分工
 
