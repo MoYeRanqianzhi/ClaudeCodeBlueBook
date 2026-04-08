@@ -32,6 +32,7 @@
 - [296-2026-04-08-rename-export vs release-feedback split 拆分记忆.md](./296-2026-04-08-rename-export%20vs%20release-feedback%20split%20拆分记忆.md)
 - [297-2026-04-08-command-index resume grouping cleanup 拆分记忆.md](./297-2026-04-08-command-index%20resume%20grouping%20cleanup%20拆分记忆.md)
 - [298-2026-04-08-continuity contract table cleanup 拆分记忆.md](./298-2026-04-08-continuity%20contract%20table%20cleanup%20拆分记忆.md)
+- [299-2026-04-08-resume matrix wording cleanup 拆分记忆.md](./299-2026-04-08-resume%20matrix%20wording%20cleanup%20拆分记忆.md)
 
 ## 全量档案
 
