@@ -45,7 +45,7 @@
 - `replay obligation` -> `writeback seam / first fallback`
 - `second-truth risk` -> `first fallback / unresolved authority`
 
-`landing card` 写完后，默认下一步不是立刻展开更多对象专题，而是先在当前链内过一遍 `landing-card local gate`；`87` 只提供 why-proof 命题，本页只负责执行这道本地 gate：
+`landing card` 写完后，默认下一步不是立刻展开更多对象专题，而是先在当前链内过一遍 `landing-card local gate`；`87` 只提供 why-proof 命题，本页只负责执行这道 `landing-card local gate`：
 
 1. 这里是否仍是 `合法复杂度中心`
 2. 这里是否仍只承认 `one writable present`
@@ -59,7 +59,7 @@
 - 当你需要把 Prompt、治理或当前真相保护继续压到运行时结构，而不是停在哲学判断、模板或排错层。
 - 当你准备判断 later maintainer 拿什么局部反对当前实现，而不想把问题退回目录观感或作者说明。
 
-## quality gate 通过后的对象展开
+## landing-card local gate 通过后的对象展开
 
 - [82-请求装配流水线：world entry / request assembly / six-stage assembly chain](82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md)
   - 看 same-world compiler 怎样落成 request assembly 对象。
