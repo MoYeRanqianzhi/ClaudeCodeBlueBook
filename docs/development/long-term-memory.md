@@ -8,6 +8,54 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 03-prompt-tail-crossline-only live 记忆：
+  - `03` 的 Prompt 尾段现在应继续只保留 cross-line 原则与最短自校，不再长出第二遍 Prompt why / self-audit
+  - 尤其 `lawful forgetting`、人类接手路径、`continue verdict` 与 `same-world` 边界判断，这些节默认只保留一句判断；具体 continuation / world-entry owner 统一回 `84`
+- 当前批次继续新增一条 meta-backlinks-expand-to-speaking-right-pages live 记忆：
+  - `meta/README` 现在不再只被 `README / 03 / 06 / navigation` 回链；凡是正文已经开始直接解释“why / object / verdict 是否越位代签”的高流量页，也应显式把目录契约争议送回 `meta`
+  - 当前已补回链的新增页为 `philosophy/README`、`api/README` 与 `playbooks/README`
+- 当前批次继续新增一条 casebooks-sibling-not-route-guard live 记忆：
+  - `casebooks/README` 现在应固定成纯失败样本 sibling 页，不再在首页承担 `shared first-answer order` 或 route-guard 口气
+  - 更稳的默认写法是：只保留失真页自己的主语、基准样本、离场条件；若还在问正向对象链或第一条 reject path，统一回对应 owner README 与 why 页
+- 当前批次继续新增一条 risk-readback-owner-over-tail-summary live 记忆：
+  - `risk/README` 现在应固定成纯 post-cleanup readback owner 页，只回答 `product promise readback / reopen eligibility readback / evidence receipt binding`
+  - 更稳的默认写法是：保留三类用户侧对象、失真信号、入场条件与离场条件；删掉重复的“不是第二套规则 / 不抢别页 / 先回治理前门”铺陈段
+- 当前批次继续新增一条 trim-owner-readmes-before-owner-family live 记忆：
+  - 当前比新增 `owners/README` 更稳的动作，是继续压薄现有 owner README，尤其是 `api/README`
+  - `api/README` 现在应固定成 `host-facing truth / consumer subset / contract truth` owner 页，不再在首页承担平面书架、推荐入口与长链 syllabus；owner 页越像书架，later maintainer 越会重新回到“先扫目录再定题”
+- 当前批次继续新增一条 meta-readme-before-owner-family live 记忆：
+  - 当前更稳的目录结构增量是先新增 `bluebook/meta/README.md`，把总控页之间的目录契约单独收口；它只配处理 `same-question 多页首答 / mixed-role / 最小回退`，不配重发三条母线 first answer
+  - `owners/README` 当前暂缓更稳：并行研究给出的结论是，根入口已经有一张目录角色协议；现在再加 owner 家族总页，重复 frontdoor 的风险高于收益，除非未来真准备把根入口里的角色表整体迁出
+- 当前批次继续新增一条 meta-backlink-minimum-set live 记忆：
+  - `meta/README` 的最小回链集合先固定为 `bluebook/README`、`03`、`06`、`navigation/README`
+  - `philosophy/README` 这一轮不回链更稳；why-only 前门若过早引入 `meta`，容易重新长出 route 感
+- 最新根仓同步记忆（2026-04-08，本批次当前 live 快照）继续保持健康态：本轮再次复核根仓 `/home/mo/m/projects/cc/analysis`，`git status --short --branch` 仍为 `main...origin/main`。后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
+- 当前批次继续新增一条 owner-pages-absorb-parallel-findings live 记忆：
+  - `84` 现在应固定读成 multi-surface `world-entry object` 的 why-proof，而不是单段 system prompt 的效果页
+  - `61` 现在应固定把安全与省 token 的共同收费对象读成 `authority lease`，不要再把 continue / compact / resume 误写成体验连续性
+  - `87` 现在应固定把成熟源码质量读成 `dependency honesty + temporal honesty + one writable present + later-maintainer veto`
+- 最新根仓同步记忆（2026-04-08，本批次当前 live 快照）继续保持健康态：本轮再次复核根仓 `/home/mo/m/projects/cc/analysis`，`git status --short --branch` 仍为 `main...origin/main`。后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
+- 当前批次继续新增一条 directory-speaking-rights-over-taxonomy live 记忆：
+  - 蓝皮书目录现在应优先按发言权理解，而不是按题材理解：`README / userbook` 只定题，`philosophy` 只给 why-proof，`guides` 只给证据梯度，`architecture` 只给对象摘要，`navigation` 只补 artifact gap，`playbooks` 只发 execution verdict
+  - 更稳的目录优化默认不是先挪文件，而是先减少 later consumer 在两页里学到同一 first answer 的概率；若 speaking-rights 还未写死，物理重组只会把混权换个位置继续发生
+- 当前批次继续新增一条 parallel-findings-converge-on-role-protocol live 记忆：
+  - Prompt 线进一步确认“魔力”不是文案，而是 later consumer 在 `verify / delegate / resume / handoff` 时少重答世界定义、边界与工具资格
+  - 治理线进一步确认安全与省 token 只是同一条 `expansion pricing / authority lease` 链的两种投影
+  - 源码质量线进一步确认先进性不在小文件与细目录，而在合法复杂度中心、`one writable present` 与 later maintainer veto
+  - 目录线给出的更激进物理重组候选是 `meta / owners` 之类家族层；但当前更稳的顺序仍是先在高流量页把 speaking-rights 协议写死，再决定是否真要搬目录
+- 最新根仓同步记忆（2026-04-08，本批次当前 live 快照）继续保持健康态：本轮再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，随后根仓 `/home/mo/m/projects/cc/analysis` 的 `git status --short --branch` 为 `main...origin/main`。后续仍按外部状态处理：每批重新检查，但所有正文推进与提交继续只落在 `.worktrees/mainloop`。
+- 当前批次继续新增一条 03-tail-minimum-judgment live 记忆：
+  - `03` 尾段的残余 slogan 现在默认继续只保留最短新增判断；`12 / 27 / 31 / 32` 这些节若仍在重发治理投影、future-maintainer 价值、制度自审或坏解对照的整段口号，就应继续压回一句 why-proof / self-audit / bad-solution 判断
+  - 更稳的默认写法是：尾段只补“这一节新增了什么判断”，不再补第二遍 Prompt/治理/源码质量总论
+- 最新根仓同步记忆（2026-04-08，本批次当前 live 快照）已回到健康态：本轮再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，随后根仓 `/home/mo/m/projects/cc/analysis` 的 `git status --short --branch` 为 `main...origin/main`。后续仍按外部状态处理：每批重新检查，但所有正文推进与提交继续只落在 `.worktrees/mainloop`。
+- 当前批次继续新增一条 03-tail-observation-over-slogan live 记忆：
+  - `03` 尾段默认继续只保留新增观察或新增自校，不再把 `runtime 是资源宪法 / 好架构保留重构可能性 / 制度升级必须保序迁移 / 尺寸不是 first test` 写成完整 slogan 段
+  - 更稳的默认写法是：保留一句新增判断，删掉同义的铺陈段与 next-hop 提示
+- 最新根仓同步记忆（2026-04-08，本批次本轮再次漂移）继续保持外部阻塞态：本轮起手 `git fetch origin main` 成功，`git merge --ff-only origin/main` 一度成功；但随后根仓 `/home/mo/m/projects/cc/analysis` 又再次观测为 `main...origin/main [ahead 20]`，并伴随 `UU bluebook/security/README.md`、`UU bluebook/security/source-notes/README.md`、`UU docs/development/research-log.md` 等未解决冲突。后续继续严格只在 `.worktrees/mainloop` 内推进，不触碰根仓冲突。
+- 当前批次继续新增一条 03-rear-half-no-slogan-echo live 记忆：
+  - `03` 后半段默认继续只保留新增观察或新增自校，不再用多个“设计原则”重复发放 Prompt/治理/源码质量的同一条口号
+  - 尤其 `continue`、`安全与省 token`、`future maintainer`、`尺寸治理` 这些段落，默认继续只写“新增什么判断”，不再重说 already-settled first answer
+- 最新根仓同步记忆（2026-04-08，本批次本轮继续漂移）继续保持外部阻塞态：本轮起手再次执行 `git fetch origin main`，`git merge --ff-only origin/main` 一度成功；但随后根仓 `/home/mo/m/projects/cc/analysis` 再次观测为 `main...origin/main [ahead 20]`，并仍有 `UU bluebook/security/README.md`、`UU bluebook/security/source-notes/README.md`、`UU docs/development/research-log.md` 等未解决冲突。后续继续严格只在 `.worktrees/mainloop` 内推进，不触碰根仓冲突。
 - 当前批次继续新增一条 03-midsection-no-slogan-repeat live 记忆：
   - `03` 中后段默认继续不再用多个“设计原则”反复重发 Prompt/治理/源码质量的首问口号
   - 更稳的默认写法是：只保留一处 canonical why，后续章节只写新增观察或新增自校，不再重发 owner 结论

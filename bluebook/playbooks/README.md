@@ -9,6 +9,7 @@
 - 更具体地说，只有当 `10 / security / risk` 已经把主语、读回与对象边界定住，`playbooks/` 才开始决定验收、回退与 reopen 顺序。
 
 若你还在判母线、对象链或 `continuity` 到底是什么意思，先离开本目录；这些都还不是 execution question。
+若你在争的是 execution 页是否越位代签 why 或 object，回 [../meta/README.md](../meta/README.md)；那已是目录契约问题，不是 execution question。
 
 ## 什么时候进来
 

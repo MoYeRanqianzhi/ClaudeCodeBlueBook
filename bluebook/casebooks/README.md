@@ -1,7 +1,7 @@
 # 失败样本
 
 `casebooks/` 只收失败样本、反例对照与失真机制，不重讲正确答案。这里止于失真命名，不宣称修复 readiness。
-如果你还没先守住 `05 / 15 / 41` 的主语和问题梯子，案例页很容易再次被读成“更吓人的故事”。
+如果你还没先守住正向对象链，案例页很容易再次被读成“更吓人的故事”。
 
 更硬一点说：
 
@@ -16,8 +16,6 @@
 - 当你已经先知道对象链成立条件，准备判断“哪种伪证最像成功、最容易骗过 later maintainer”。
 - 当你需要保存“第二叙述者如何复活、truth plane 如何互相代写、投影体感如何冒充 authority”这类失真，而不想把这些伪证重新写回正解正文。
 
-更稳一点说，`casebooks/` 也必须继承 shared first-answer order：先判哪条母线被伪造、再判哪个正式对象被替代、最后才保存样本；如果顺序倒过来，案例页就会重新退回“更吓人的故事库”。
-
 ## 如果失真已经被点名为
 
 - 请求装配控制面伪装：以 [73-请求装配控制面验证失真反例：假lineage kernel、假protocol transcript与假continuation object](73-%E8%AF%B7%E6%B1%82%E8%A3%85%E9%85%8D%E6%8E%A7%E5%88%B6%E9%9D%A2%E9%AA%8C%E8%AF%81%E5%A4%B1%E7%9C%9F%E5%8F%8D%E4%BE%8B%EF%BC%9A%E5%81%87authority%20chain%E3%80%81%E5%81%87protocol%20transcript%E4%B8%8E%E5%81%87continuation%20object.md) 为基准样本。
@@ -31,7 +29,7 @@
 
 - 本目录不负责提供正向方法、执行顺序与修复工单。
 - 一旦问题变成修复顺序、执行门槛或跨目录编排，当前 casebook 判断就应结束，并统一回 [../navigation/README.md](../navigation/README.md) 分流。
-- 如果你还在问“真正对象链是什么”或“第一条 reject path 在哪”，先回 `../navigation/15`、`../navigation/41` 与对应目录 README。
+- 如果你还在问“真正对象链是什么”或“第一条 reject path 在哪”，先回对应 owner README 与 why 页。
 
 ## 维护约定
 
