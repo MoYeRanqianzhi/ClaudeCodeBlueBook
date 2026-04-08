@@ -17,6 +17,7 @@
 - [281-2026-04-08-memory root hub cleanup 拆分记忆.md](./281-2026-04-08-memory%20root%20hub%20cleanup%20拆分记忆.md)
 - [282-2026-04-08-evolution README recent-batch split 拆分记忆.md](./282-2026-04-08-evolution%20README%20recent-batch%20split%20拆分记忆.md)
 - [283-2026-04-08-mcp matrix fallback cleanup 拆分记忆.md](./283-2026-04-08-mcp%20matrix%20fallback%20cleanup%20拆分记忆.md)
+- [284-2026-04-08-capability map hub cleanup 拆分记忆.md](./284-2026-04-08-capability%20map%20hub%20cleanup%20拆分记忆.md)
 
 ## 全量档案
 
