@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 first-reject-and-retreat-defaults-need-owner-pages live 记忆：
+  - `81 / 85 / 87 / architecture/84` 现在应直接把 lawful forgetting、治理回炉、later maintainer rejectability 与 release-surface shaping 的默认 `first reject / first retreat` 句写在 owner 页里
+  - 更稳的默认写法是：Prompt 线退回 `protocol transcript / stable prefix / continuation object`，治理线把 no-decision-gain check 读成 `unpaid expansion`，源码质量线把第一 veto 先落在 `projection / provisional claim / recovery asset / stale capability`，发布面则显式区分 compile-time / runtime / artifact 三层可见性
 - 当前批次继续新增一条 public-artifacts-need-effect-ceilings live 记忆：
   - `84 / 87 / 102` 现在应直接把 public artifact 的先进性写成 `effect ceiling` 是否公开写死，而不只写成 artifact 是否存在
   - 更稳的默认写法是：managed settings 是否最高且不可覆盖、`CLAUDE.md` / auto memory 是否只配当 context、subagents 是否独立 context/permissions、async hooks 是否无权回头阻断，若答不清就继续停在 `public artifact ceiling`
