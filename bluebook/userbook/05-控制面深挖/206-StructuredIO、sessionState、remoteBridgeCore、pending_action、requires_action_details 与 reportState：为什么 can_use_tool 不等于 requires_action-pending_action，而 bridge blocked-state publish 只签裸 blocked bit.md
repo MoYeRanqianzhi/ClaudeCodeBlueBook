@@ -2,7 +2,12 @@
 
 ## 用户目标
 
-203 已经把 permission tail 收成：
+193 已经把 control side-channel 收成：
+
+- permission verdict 返回腿
+- session-control 请求腿
+
+203 又把 permission tail 收成：
 
 - verdict ledger
 - closeout
@@ -33,6 +38,21 @@
 - `reportState('requires_action')`
 
 重新压成一句模糊的“等待输入状态”。
+
+所以这页更准确的位置不是：
+
+- 203 的 permission tail sibling
+
+而是：
+
+- `190` 之后由 `193` 再继续长出来的 blocked-state publish zoom
+
+它和 203 会交叉，
+
+但不同根：
+
+- 203 追的是 verdict 之后怎么收口
+- 206 追的是 ask 如何先被提升成 blocked-state projection
 
 ## 第一性原理
 
@@ -291,6 +311,29 @@
 
 - 203 讲的是 verdict ledger 之后的 tail branches
 - 206 讲的是 verdict 之前，permission ask 如何先变成 blocked-state projection
+
+如果你的问题已经不是：
+
+- blocked-state 为什么这么薄
+
+而是：
+
+- verdict 回来后为什么系统还在收尾、重判、扫尾或写规则
+
+那就不该继续留在这页，
+
+而应该回到：
+
+- `21` 的用户分诊专题
+- 或 `203` 的 permission tail 结构页
+
+## 第八层：稳定 / 条件 / 灰度保护
+
+| 类型 | 对象 |
+| --- | --- |
+| 稳定可见 | `can_use_tool` 先是 permission ask transport，不自动等于 blocked session；`requires_action_details` 与 `pending_action` 不是同一张面；bridge 最稳定的承诺只是 coarse blocked-state publish |
+| 条件公开 | 只有 `stdio -> onPermissionPrompt -> notifySessionStateChanged` 这条更窄链路会把 ask 升级成厚 blocked context；foreground restore 是否真的重建这些上下文还取决于宿主与消费路径 |
+| 内部/灰度层 | `pending_action` 的具体存储位置、字段形状、env-less `reportState(...)` 细节、synthetic sandbox `can_use_tool`、restore gap 和各类 consumer path 都只是证据层实现 |
 
 ## 结论
 

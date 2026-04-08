@@ -384,6 +384,25 @@
 | 条件公开 | `print --resume url` 的 remote materialization、CCR v2 internal-event thickness、`remote-control --continue` 的 pointer continuity、`.jsonl` 的 transcript-file provenance、assistant-mode `worker_type` label |
 | 内部/灰度层 | internal-event flush cadence、pointer fanout / cleanup heuristic、env mismatch fallback、`claude/${branch || 'task'}` 命名与部分 typed readback 面的具体暴露 |
 
+## 第十一层：这棵子树的前向接力在 `219`，不是另一张更大的总图
+
+`218` 收到这里并没有闭环，
+
+因为 `168-179` 的子树会继续从三个出口长出去：
+
+- `179 -> 180` 继续长成 teleport runtime 线
+- `178 -> 182` 与 `184 -> 185 -> 187 -> 188` 继续长成 model ledger / resolution / allowlist 线
+- `176 -> 181 -> 183 -> 186 -> 189 -> 190` 继续长成 bridge birth / hydrate / replay / write 线
+
+所以更稳的 handoff 不是：
+
+- 再补一张 `168-190` 的更大总图
+
+而是：
+
+- 先用 `218` 固定 `168-179` 子树
+- 再用 `219` 承接这三个前向出口
+
 ## 苏格拉底式自审
 
 ### 问：我现在写的是 thickness、source，还是 createSession / `session_context`？

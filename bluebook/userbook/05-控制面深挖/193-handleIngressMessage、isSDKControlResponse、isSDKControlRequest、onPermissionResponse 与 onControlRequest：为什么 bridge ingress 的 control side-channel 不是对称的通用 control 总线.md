@@ -29,6 +29,11 @@
 1. `control_response -> onPermissionResponse`
 2. `control_request -> onControlRequest -> handleServerControlRequest(...)`
 
+而且这页之后还会继续长出一个更窄的后继问题：
+
+- `193` 先回答 control side-channel 为什么不对称
+- `206` 再回答同样会出现 `can_use_tool`，为什么 bridge 仍只发布裸 blocked bit，而不自动携带完整 `pending_action`
+
 如果这两腿不先拆开，后面就会把：
 
 - `control_response`
@@ -320,6 +325,14 @@
 - control callback ownership
 
 又写成一句模糊的“bridge 的 control 面”。
+
+## 第七层：稳定 / 条件 / 灰度保护
+
+| 类型 | 对象 |
+| --- | --- |
+| 稳定可见 | `control_response` = permission-verdict 返回腿；`control_request` = session-control 请求腿；它们共用 ingress socket，不等于共用同一条 control 总线 |
+| 条件公开 | permission leg 只有在本地还挂着 pending verdict 时才真正被消费；env-less 额外那层 `reportState('running')` 只是特定宿主上的状态修复壳；server-side control 请求还受 subtype 与当前会话状态约束 |
+| 内部/灰度层 | `pendingPermissionHandlers`、`request_id` 查找顺序、env-less 的 repair wrapper、具体 callback wiring 与日志分支都只是证明 callback asymmetry 的证据，不是稳定公共合同 |
 
 ## 结论
 

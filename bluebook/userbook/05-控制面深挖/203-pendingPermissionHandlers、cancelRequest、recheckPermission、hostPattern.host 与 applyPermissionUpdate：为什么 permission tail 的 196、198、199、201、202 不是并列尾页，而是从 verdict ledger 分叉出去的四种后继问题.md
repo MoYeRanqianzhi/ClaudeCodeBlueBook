@@ -269,6 +269,38 @@
 
 不是入口清单。
 
+## 第七层：稳定 / 条件 / 灰度保护
+
+| 类型 | 对象 |
+| --- | --- |
+| 稳定可见 | permission tail 至少稳定暴露了几种用户可观察后果：一个 prompt 可以被本地或远端收口；permission mode 变化后队列里的 ask 可能被重判；同 host 的 sandbox network 请求会成组 settle；用户选择 persist 后，当前上下文与 live sandbox 会立刻吃到新规则 |
+| 条件公开 | leader-local re-evaluation、sandbox network 同 host sweep、persist-to-settings 的多层传播，都依赖当前宿主、队列位置、是否选择 persist 与 sandbox 分支，不写成所有 permission update 的默认路径 |
+| 内部/灰度层 | `pendingPermissionHandlers`、`request_id`、unsubscribe / delete 的精确顺序、`sandboxBridgeCleanupRef`、queue filter 细节、`applyPermissionUpdate(...)` / `persistPermissionUpdate(...)` / `SandboxManager.refreshConfig()` 的具体联动，都是内部账本与 cleanup 机制 |
+
+更稳的落笔纪律是：
+
+- 先写用户会观察到哪种“收口 / 重判 / 成组 settle / 立即生效”。
+- 再把 leader、sandbox、persist 这些条件写清楚。
+- 最后才把 map、cleanup ref、delete 顺序和具体 helper 名留在证据层。
+
+## 第八层：苏格拉底式自审
+
+### 问：我现在写的是 verdict 之后的哪一种后继问题？
+
+答：如果说不清是 closeout、re-evaluation、host sweep 还是 persist propagation，就不要落字。
+
+### 问：我是不是把 same-host sibling sweep 写成 generic request closeout？
+
+答：201 的主语是 `hostPattern.host`，不是 `request_id`。
+
+### 问：我是不是把 persist-to-settings 写成所有 permission update 的总页？
+
+答：202 只处理本地 sandbox 响应之后的写面分叉，不代表整个仓库的全部 permission 写路径。
+
+### 问：我是不是把 `pendingPermissionHandlers` 这张账直接升级成用户可依赖对象？
+
+答：用户真正观察到的是 prompt 如何收口、规则何时生效；账本名字只是内部证据。
+
 ## 结论
 
 更稳的一句应该是：

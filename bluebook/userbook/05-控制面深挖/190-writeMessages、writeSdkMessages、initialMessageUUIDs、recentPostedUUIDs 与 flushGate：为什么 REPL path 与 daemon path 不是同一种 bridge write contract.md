@@ -286,6 +286,28 @@
 - 189 问 continuity contract
 - 190 问 write contract split
 
+## 第九层：`190` 只结束 outbound write trunk，不结束整条 bridge 线
+
+这页如果停在这里，
+
+读者最容易再犯一个结构误判：
+
+- `190` 既然已经写到 write contract，那 bridge 线应该就到此为止
+
+但更稳的 handoff 是：
+
+- `190` 只结束 outbound write trunk
+- 紧接着 bridge 会转入 `191` 的 ingress triage root
+- 再分到 `192` 的 read-side continuity 与 `193 -> 206` 的 control / blocked-state 分支
+
+所以 `190` 的正确位置不是：
+
+- bridge terminal
+
+而是：
+
+- 通往 post-connect runtime 问题的最后一个 outbound zoom
+
 ## 稳定面与灰度面
 
 本页只保护稳定不变量：

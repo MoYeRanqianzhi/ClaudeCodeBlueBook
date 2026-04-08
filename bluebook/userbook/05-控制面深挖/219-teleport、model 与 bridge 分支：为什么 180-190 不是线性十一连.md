@@ -31,7 +31,9 @@
 2. model line
    - `178 -> 182` = ledger trunk
    - `184 -> 185 -> 187 -> 188` = selection / source / allowlist trunk
-3. `176 -> 181 -> 183 -> 186 -> 189 -> 190` = createSession birth / hydrate / replay / write line
+3. bridge line
+   - `176 -> 181 -> 183 -> 186 -> 189 -> 190` = outbound birth / hydrate / replay / write trunk
+   - `190 -> 191 -> {192, 193 -> 206}` = post-connect ingress / control / blocked-state branch
 
 所以这页要补的不是更多 leaf-level 证明，
 
@@ -90,6 +92,10 @@
               └─ 186 bridge history projection vs model prompt authority
                   └─ 189 continuity ledger vs fresh-session replay
                       └─ 190 REPL path vs daemon path write contract
+                          └─ 191 ingress triage root
+                              ├─ 192 read-side continuity vs fresh-session reset
+                              └─ 193 control side-channel legs
+                                  └─ 206 blocked-state publish ceiling
 ```
 
 这里真正该记住的一句是：
@@ -244,7 +250,7 @@ model line
 - 再回各自 leaf page 里追局部证据
 - 不把 `183/186` 这类 bridge 节点误判成“model 线中间缺页”
 
-## 第五层：`181 -> 183 -> 186 -> 189 -> 190` 是 createSession birth / hydrate / replay / write 线
+## 第五层：`181 -> 183 -> 186 -> 189 -> 190` 是 bridge outbound trunk，不是 bridge 终点
 
 `176` 先把 `createBridgeSession(...)` 里的 field authority 拆开。
 
@@ -327,6 +333,19 @@ model line
 
 不是同一种 bridge write contract。
 
+但 `190` 仍然不是这条 bridge 线的终点。
+
+它更准确的位置是：
+
+- outbound write trunk 的末端
+
+因为写完之后，bridge 还会立刻长出下一段 post-connect runtime 问题：
+
+- `191` 先问 ingress triage root
+- `192` 再问 read-side continuity vs fresh-session reset
+- `193` 再问 control side-channel 两条 callback leg
+- `206` 最后继续只追 blocked-state publish ceiling
+
 所以这条线更稳的读法不是：
 
 - create / hydrate / replay / write 的线性自然展开
@@ -337,7 +356,8 @@ model line
 - `183` 追哪张 ledger 才算真实历史账
 - `186` 再追 replay object 与 prompt authority 的错位
 - `189` 再追 continuity inheritance
-- `190` 最后才落到 write contract split
+- `190` 先落到 outbound write contract split
+- 然后再从 `191 -> {192, 193 -> 206}` 转入 post-connect ingress / control / state 问题
 
 ## 第六层：这三条线不能互相偷换
 
@@ -375,9 +395,9 @@ model line
 
 | 类型 | 对象 |
 | --- | --- |
-| 稳定可见 | `180` = `179` 下的 teleport runtime zoom；model line 里真正该保护的是 `182` 的 ledger / `184` 的 authority layer 区分，以及 `188` 里显式拒绝、写入校验、选项隐藏且保留 `Default` 这类用户可观察 surface；bridge line = `181 -> 183 -> 186 -> 189 -> 190` |
-| 条件公开 | 显式 `environmentId` teleport path、`outcomes: []`、`ANTHROPIC_MODEL` / agent bootstrap / allowlist veto、v1 continuity 继承与 v2 fresh-session replay |
-| 内部/灰度层 | `session_context.model`、`metadata.model`、`lastModelUsage`、override slot 的具体存储形状、branch naming、history cap 数值、`previouslyFlushedUUIDs` reconnect 细节、provider / allowlist 细则、部分 UX surface 的报错文案 |
+| 稳定可见 | `180` = `179` 下的 teleport runtime zoom；model line 里真正该保护的是 `182` 的 ledger / `184` 的 authority layer 区分，以及 `188` 里显式拒绝、写入校验、选项隐藏且保留 `Default` 这类用户可观察 surface；bridge line 至少稳定分成 outbound trunk `181 -> 183 -> 186 -> 189 -> 190` 与紧贴其后的 ingress / control / blocked-state 后继问题 |
+| 条件公开 | 显式 `environmentId` teleport path、`outcomes: []`、`ANTHROPIC_MODEL` / agent bootstrap / allowlist veto、v1 continuity 继承与 v2 fresh-session replay、same-session carryover 与 foreground restore 厚度差异 |
+| 内部/灰度层 | `session_context.model`、`metadata.model`、`lastModelUsage`、override slot 的具体存储形状、`initialMessageUUIDs` / `recentPostedUUIDs` / `recentInboundUUIDs` / `lastTransportSequenceNum` 这些具体账本、branch naming、history cap 数值、provider / allowlist 细则、部分 UX surface 的报错文案 |
 
 ## 苏格拉底式自审
 
@@ -404,3 +424,7 @@ model line
 ### 问：我是不是把 `/model`、`/config`、picker 与 silent getter veto 写成同一种 allowlist 行为？
 
 答：先分 explicit rejection、write validator、option hiding、silent veto，再判断哪些属于稳定用户面。
+
+### 问：我是不是把 `190` 写成了 bridge 线的终点？
+
+答：`190` 只结束 outbound write trunk；post-connect 的 ingress / control / blocked-state 问题还会继续长到 `191/192/193/206`。

@@ -22,6 +22,7 @@
 - 这页不替代 218 的结构长文。
 - 这页只抓 `168` 这条邻接厚度轴、`169` 这条 source root、`170->171` 这条 headless source 分支，以及 `172 -> ... -> 179` 这棵 bridge create-context 子树。
 - 这页保护的是 thickness、source、authority、provenance、createSession field 与 `session_context` payload 的主语切换，不把某个 helper、某个变量名或某个 request 字段直接升级成稳定公共合同。
+- 这页不是自闭合子树；读到 `179` / `178` / `176` 这三个出口之后，下一步直接交给 `206` 去承接 `179 -> 180`、model line 与 bridge birth/hydrate/write line。
 
 ## 1. 结构总表
 

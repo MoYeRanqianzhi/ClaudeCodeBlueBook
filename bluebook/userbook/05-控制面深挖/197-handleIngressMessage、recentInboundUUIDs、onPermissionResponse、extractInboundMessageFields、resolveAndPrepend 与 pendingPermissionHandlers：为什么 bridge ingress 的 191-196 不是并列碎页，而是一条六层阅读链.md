@@ -275,6 +275,38 @@
 
 不是重复 00 的任务入口。
 
+## 第八层：稳定 / 条件 / 灰度保护
+
+| 类型 | 对象 |
+| --- | --- |
+| 稳定可见 | bridge ingress 至少稳定暴露了三种用户可观察 effect：server control request 会走独立 side-channel；真正进入 transcript / prompt 消费面的只有 user leg；permission verdict 会沿独立返回腿落回本地审批流 |
+| 条件公开 | same-session replay continuity、transport swap 后的重放抑制、attachment materialization 与 path-ref prepend、remote prompt 时序与 bridge permission 往返，都属于运行时条件明显的行为，不写成无前提承诺 |
+| 内部/灰度层 | `recentInboundUUIDs`、`recentPostedUUIDs`、`extractInboundMessageFields(...)`、`resolveAndPrepend(...)`、helper 调用顺序、buffer 大小、key normalization 细节，都更像 reader / adapter 内部证据，不该升级成稳定公共合同 |
+
+更稳的落笔纪律是：
+
+- 优先写“用户最后看到哪条腿真的出现在 prompt / transcript / permission flow 里”。
+- continuity、attachment 与 remote bridge 往返只能写成条件公开行为。
+- UUID 集、helper 名与前处理顺序只保留在证据层，不写成对外承诺。
+
+## 第九层：苏格拉底式自审
+
+### 问：我现在写的是用户真的看得到的 ingress effect，还是内部 dedup / normalization 账本？
+
+答：先分 effect，再分证据；不要把 `recentInboundUUIDs` 直接写成能力名。
+
+### 问：我是不是把 control leg、user leg 和 permission leg 又压回同一种“回调后处理”？
+
+答：如果一句话同时想解释 control request、prompt adapter 和 permission verdict，它大概率已经混层。
+
+### 问：我是不是把 attachment prepend、image repair 这些前处理写成新的 consumer 面？
+
+答：195 只属于 user leg 内部 normalization，不是第四条 ingress 腿。
+
+### 问：我是不是因为源码里到处都出现 `handleIngressMessage(...)`，就把 replay continuity 也写进 reader 本体？
+
+答：192 讨论的是 reader 外部的 continuity boundary，不是 reader 内部的第四种消费。
+
 ## 结论
 
 更稳的一句应该是：
