@@ -2,6 +2,10 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的源码质量 owner 结论：源码质量线这次继续被压回单点分工。`guides/102` 现在更明确只保留证据状态、降格规则与 `change-risk record` 附表写法；`philosophy/87` 继续只保留 why-proof；`architecture/README` 继续只保留对象摘要；`01-源码结构地图` 继续只保留 repo locator，不再顺手代发对象判断。
+- 本轮新的目录结构结论：`navigation/README` 的源码质量反查现在继续从按母线分段退回一张扁平 artifact-gap 规则表，不再像第二 frontdoor。`03 / 06` 的源码质量线也继续从 artifact-name-first 句法退回 `one writable present / later-maintainer veto` 这组 first test。
+- 本轮新的对象层结论：`architecture/README` 的 `landing card` 现在继续只是一张对象摘要卡，不再承担验收卡或准入卡；later maintainer 的局部 veto 只作为对象摘要字段保留。
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果为 `Already up to date.`；根仓当前不是阻塞态，正文继续只在 `.worktrees/mainloop` 内推进。
 - 本轮新的 Prompt owner 结论：`84` 现在继续从“why + mechanism inventory”压回 `same-world failure test`。新的最稳口径只剩：later consumer 若在 `verify / delegate / resume / handoff` 后还要先重答世界、边界或继续资格，Prompt 就已经失败；`03` 与 `philosophy/README` 也同步改成只复用这条 failure test，不再提前点名 second-hop object noun。
 - 本轮新的治理 owner 结论：治理线当前更稳的默认分工已继续写死成 `10 = 四问 first-answer`、`85 = why-proof`。`10` 只保留 `earliest unpaid expansion / repricing proof / lease checkpoint / cleanup`，`85` 只证明为什么 expansion 必须先被定价；signer、readback 与 execution verdict 统一退回 `security / risk / playbooks`。
 - 本轮新的目录前门结论：`security/README` 与 `playbooks/README` 现在也继续从首页菜单页退回 owner scope 页。前者只保留 `signer / ledger / cleanup authority` 三类 ambiguity，后者只保留 `execution verdict / rollback / reopen` 的边界；首页不再展开 appendix/source-notes 或稳定手册编号簇。

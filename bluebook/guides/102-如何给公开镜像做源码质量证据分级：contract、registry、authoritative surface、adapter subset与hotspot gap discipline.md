@@ -105,7 +105,7 @@
 2. `registry`
    - 当前 build / 当前 runtime 真的注册了哪些对象。
 3. `current-truth surface`
-   - 只有在 object-level authority 已锁定时，才配把当前 surface 升格成 present-truth signer；未锁定时只保留 unresolved-authority note。
+   - 在本页只指“current-truth claim 已获 promotion”的证据状态，不在这里回答对象层谁在写现在。
 4. `current-truth surface candidate`
    - 这不是独立 rung，而是 `current-truth surface` 在证据尚未满足 promotion 条件时的降格状态；此时只能保留 unresolved-authority note。
 5. `consumer subset`
@@ -119,7 +119,7 @@
 
 - 能证明 `current-truth surface` 就直接写 `current-truth surface`
 - 还不能证明时，就降格写 `current-truth surface candidate`
-- 不要反过来把所有权威入口都写成已经被完整证明的 present truth
+- 不要反过来把所有接近当前真相的线索都写成已经完成 promotion 的 claim
 
 这一页后面的所有降格规则都建立在这三句上，而不是建立在“我很熟源码”这种阅读体感上。
 
@@ -172,7 +172,7 @@ registry 才回答：
 
 不能让两者互相替代。
 
-## 4. 第三级：判断 current-truth claim 是否只能保留 candidate
+## 4. 第三级：判断 current-truth claim 还停在什么证据状态
 
 contract 和 registry 都还不够。
 
@@ -180,7 +180,7 @@ contract 和 registry 都还不够。
 
 - 当前这份 claim 有没有足够可见证据支持 promotion
 
-这里的 `current-truth surface` 不是在本页回答“谁在写现在”，而是在判断公开镜像里的可见证据是否已经足够支撑 `current-truth surface` claim。若这些 object-level 证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate`，并同步附一条 unresolved-authority note。
+这里的 `current-truth surface` 不是在本页回答“谁在写现在”，而是在判断公开镜像里的可见证据是否已经足够支撑 promotion。若这些证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate` 或 `provisional claim`，并同步附一条 unresolved-authority note。
 
 典型信号只在证明“这里可能支持 current-truth claim”，不在本页直接升级成对象层 verdict。
 
@@ -331,8 +331,8 @@ gap discipline 的价值不是“保守一点”，而是：
 
 当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一份可交接的 `change-risk record`。
 
-`guides/` 在这里只负责 `change-risk record` 的字段与 gap note 写法；这张表也就是源码质量线唯一新增共享接口，不替其他目录代写具体危险面。
-这份 `change-risk record` 不是研究附表，而是 later maintainer 变更前的最小协议；如果改动前还写不出这张表，current-truth 判断就应继续保持 provisional。更稳的 handoff 也不是“把 record 丢给下一页”，而是先在本页把 `ceiling note / downgrade note / unresolved-authority note / change-risk record` 写实。
+`guides/` 在这里只负责 `change-risk record` 的字段与 gap note 写法；这张表是源码质量线的共享记录接口，不替其他目录代写具体危险面。
+这份 `change-risk record` 也不是变更批准协议，而是把 visible evidence、常见误读、降格理由与 unresolved-authority 缺口写实的附表；如果改动前还写不出这张表，current-truth 判断就应继续保持 provisional。
 
 更稳的记录模板至少应包含下面几列：
 
@@ -340,7 +340,7 @@ gap discipline 的价值不是“保守一点”，而是：
 |---|---|---|---|---|---|
 | `<surface>` | `<what it protects>` | `<authoritative proof>` | `<usual wrong reading>` | `<why this stays provisional>` | `<what promotion still lacks>` |
 
-更短地说，这页真正要强迫 later maintainer 先回答的是：
+更短地说，这页真正要先写实的是：
 
 1. 这份 change-risk record 该长什么样。
 2. 哪些 gap 必须显式保留。

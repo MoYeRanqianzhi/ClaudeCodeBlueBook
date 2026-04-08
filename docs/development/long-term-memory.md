@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 source-quality-owner-split live 记忆：
+  - 源码质量线默认继续固定成 `guides/102 = evidence state / downgrade discipline`、`philosophy/87 = why-proof`、`architecture/README = object summary`、`01-源码结构地图 = repo locator`
+  - `navigation/README` 默认继续只做 artifact-gap 反查，不再把源码质量线拆成第二 frontdoor
+- 当前批次继续新增一条 source-quality-no-artifact-first live 记忆：
+  - `03 / 06` 默认继续不把源码质量线写成 `change-risk record / why-proof / landing card` 的 artifact-name-first 清单
+  - 更稳的默认主句是：先问 `one writable present` 是否仍成立、later maintainer 的第一条 veto 是否仍在
+- 当前批次继续新增一条 architecture-landing-card-summary-only live 记忆：
+  - `architecture/README` 的 `landing card` 默认继续只做对象摘要，不再承担验收卡、准入卡或流程门槛
+  - later maintainer 的局部 veto 继续只作为对象摘要字段出现，不再被对象 owner README 写成 protocol
+- 最新根仓同步记忆（2026-04-08，本批次本轮后续）更新为健康态：`git fetch origin main` 与 `git merge --ff-only origin/main` 均成功，结果为 `Already up to date.`；后续正文仍继续只在 `.worktrees/mainloop` 内推进。
 - 当前批次继续新增一条 prompt-why-equals-same-world-test live 记忆：
   - `84` 默认继续只把 Prompt why 写成 `same-world failure test`，不再在 why 页页首预发 second-hop object nouns 或机制 inventory
   - `03 / philosophy/README` 默认继续只复用这条 failure test，不再提前点名 repair object、witness 或 continuation 资产载体
