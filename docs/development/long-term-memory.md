@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 03-remove-standalone-source-quality-tail live 记忆：
+  - `03` 尾段原先独立的源码质量影子自校节现在已完全并掉，不再单列“尺寸治理不是 first test”
+  - 更稳的默认写法是：源码质量这条判断统一让回 `87 / 06`；`03` 只保留仍有 cross-line 增量的迁移、自审、坏解对照与目录单源化原则
 - 当前批次继续新增一条 governance-authority-lease-why live 记忆：
   - `85` 现在应直接承担一句更硬的治理第一性原理：真正被续租的不是一次动作或一次 token 花费，而是一条 `authority lease`
   - 更稳的默认写法是：世界准入、能力暴露、上下文占位与 continuation 都只是这条 lease 的收费节点；安全在阻止危险扩张免费续租，省 token 在阻止昂贵扩张免费续租
