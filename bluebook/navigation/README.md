@@ -21,6 +21,7 @@
 - 缺公开 artifact 的 `signer / effect ceiling`，也先回 `guides/102`，不要在 route 页硬判 capability
 - 缺 `release-surface shaping / compile-time gate / runtime gate / artifact surface`，回 `architecture/84`
 - 缺当前真相保护的 why-proof，回 `philosophy/86`；若继续追源码质量 why，再回 `philosophy/87`
+- 缺 repo-specific seam type locator（如 `generation guard / server-head adoption / host truth externalization / release-surface split`），先回 `../01-源码结构地图.md`
 - 缺当前真相线的对象、状态机、writeback seam、`local veto cue / first retreat layer` 或对象摘要（如 `landing card`），回 `architecture/README`
 - 缺 first no 之后最近的 `fail-closed seam`，也先回 `architecture/README`；若问题已经缩到 `release-surface split / recovery-eviction / server-head adoption` 这类对象型退回层，再回对应对象页
 
