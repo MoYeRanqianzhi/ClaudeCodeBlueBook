@@ -8,24 +8,10 @@
 4. 为什么“稳定字节”应被视作安全与成本共享的制度资产。
 5. 这对 agent runtime 设计者意味着什么。
 
-## 0. 代表性源码锚点
+## 0. 本页边界
 
-- `claude-code-source-code/src/utils/permissions/permissionSetup.ts:235-1033`
-- `claude-code-source-code/src/utils/permissions/filesystem.ts:1252-1302`
-- `claude-code-source-code/src/utils/permissions/permissions.ts:593-984`
-- `claude-code-source-code/src/services/remoteManagedSettings/index.ts:433-458`
-- `claude-code-source-code/src/services/policyLimits/index.ts:504-520`
-- `claude-code-source-code/src/services/compact/autoCompact.ts:257-338`
-- `claude-code-source-code/src/services/api/claude.ts:1405-1460`
-- `claude-code-source-code/src/services/api/promptCacheBreakDetection.ts:224-520`
-
-这些锚点共同说明：
-
-- Claude Code 的安全与省 token 不只共享“预算器”这个抽象，更共享一套治理顺序、失败语义、自动化撤销和稳定字节资产的运行时制度。
-
-> Evidence mode
-> - 当前 `.worktrees/mainloop` 若缺少本地 `claude-code-source-code/` 镜像，本页这些源码路径在本批只应读成 archival anchors，而不是 live mirror proof。
-> - 当前证据模式、镜像是否在场与更强 claim 的前置条件，统一回 `docs/development/02-证据索引.md`。
+`61` 只保留 why：为什么治理顺序、失败语义、可撤销自动化与稳定字节会同时决定安全与省 token 的成熟度。
+更细的治理对象、源码锚点、机制差异与执行尾链统一回 `10 / security / playbooks`；本页不再把这些材料写成第二套 owner taxonomy。
 
 ## 1. 先说结论
 
@@ -51,6 +37,7 @@
 - 在哪里该更早判断，在哪里该停止判断，在哪里该退回人工，在哪里必须把治理字节稳定下来
 
 更短地说，它在写的不是“安全 feature + 压缩 feature”，而是同一条治理秩序如何对 model-reachable world 的危险扩张与昂贵扩张同时收费。
+更硬一点说，真正统一的不是一个 budgeter，而是同一套 `authority lease accounting`。
 
 ## 2. 第一层：治理顺序优于检查数量
 

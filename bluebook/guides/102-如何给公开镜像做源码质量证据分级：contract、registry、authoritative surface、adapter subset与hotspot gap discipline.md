@@ -34,9 +34,9 @@
 这里还应先多记一句：
 
 - 文件名保留旧词只是为了兼容检索；正文判断一律只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`。
-- 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航、跳转关系与其他编排说明都不参与源码质量结论。
-- 凡正文把对象写成 `consumer subset` 或 `current-truth surface candidate`，必须同时把降格 stamp 与 unresolved-authority note 一起落页；只写“这里要保守”而不写这条说明，默认按证据纪律未落地处理。
-- 若对象层 authority 仍需细化，只补一句 unresolved-authority note 指向 `architecture/README`；这不是页面路由义务，而是证据状态声明。
+- 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航与对象展开即使被提及，也只算证据状态声明，不算新的 frontdoor。
+- 凡正文把对象写成 `consumer subset` 或 `current-truth surface candidate`，必须同时把 `downgrade stamp` 与 `unresolved-authority note` 一起落页；只写“这里要保守”而不写这条说明，默认按证据纪律未落地处理。
+- 若对象层 authority 仍需细化，note 只说明“缺少 promotion 所需证明”，不附带任何路由义务。
 - 若 object-level authority 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
 
 这条线最短的 reject trio 也只认：
@@ -60,6 +60,7 @@
 
 这一步不过，后面各级判断都会被写浅，因为你会先把“可见”误当成“已被完整证明”。
 更硬一点说，能把 `public artifact ceiling / downgrade / gap note / change-risk record` 固化成统一 speaking-rights protocol，本身就是公开可见的工程先进性，因为它降低的是过度主张、误改与制度失忆成本。
+目录优化在这条线上的成功标准，也不是专题更多，而是让 `ceiling / ladder / why / object / verdict` 各只在一个证据层首答。
 
 更稳的公开镜像研究顺序，不是：
 
@@ -105,7 +106,7 @@
 3. `current-truth surface`
    - 只有在 object-level authority 已锁定时，才配把当前 surface 升格成 present-truth signer；对象解释统一回 `architecture/README`。
 4. `current-truth surface candidate`
-   - 在公开镜像里你已经看到 authority 候选，但证据还不足以把它写死成完整 `current-truth surface`；这时只能保留 unresolved-authority note。
+   - 这不是独立 rung，而是 `current-truth surface` 在证据尚未满足 promotion 条件时的降格状态；此时只能保留 unresolved-authority note。
 5. `consumer subset`
    - 同一份权威真相对不同 host / adapter / projection 只暴露各自职责宽度。
 6. `hotspot kernel`
@@ -178,7 +179,7 @@ contract 和 registry 都还不够。
 
 - 当前谁有权宣布 present truth
 
-这里的 `current-truth surface` 不是谁更重要，而是当前哪条 surface 被允许写当前真相。对象层 authority 证据在本页只作为判级触发条件，不在这里代行对象解释；若这些 object-level 证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate`，并同步把 next hop 写成“先回 `architecture/README` 点名对象层”。
+这里的 `current-truth surface` 不是谁更重要，而是当前哪条 surface 被允许写当前真相。对象层 authority 证据在本页只作为判级触发条件，不在这里代行对象解释；若这些 object-level 证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate`，并同步附一条 unresolved-authority note。
 
 典型信号只在证明“这里可能是 authority candidate”，不在本页直接升级成对象层 verdict。
 

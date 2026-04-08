@@ -55,40 +55,23 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
 
 ## 弱读回面声明
 
-真正配签字的，只是 `governance key / externalized truth chain / typed ask / decision window / continuation pricing / durable-transient cleanup` 这组强面；下面这些对象最多只配做弱读回或 continuation consumer。
+真正配签字的，只有 `governance key / externalized truth chain / typed ask / decision window / continuation pricing / durable-transient cleanup` 这组强面；其余对象最多只能做三件事：
 
-下面这些对象都不配代签治理真相：
+1. 触发怀疑
+2. 消费已外化 verdict
+3. 承接继续动作
 
-- `approval / modal / mode / permission projection`
-  - 它们都只是 `typed ask verdict` 的弱投影，不是 ask signer
-- `/status / /doctor / /usage`
-- 用户可见 transcript、summary、dashboard 与类似状态文案
-- `cleanup result`
-
-下面这些对象也不配代签治理真相，但它们连弱读回面都不是；它们只是 continuation consumer：
-
-- `Compact / Resume / Memory`
-- 各类 `resume / re-entry` 入口与 continuation workflow 提示
+它们永远不配做第四件事：重新签治理真相。
 
 更稳一点说：
 
-- 它们只能帮助你触发怀疑、做二跳、消费已外化 verdict。
-- 它们不能替 `governance key / externalized truth chain / typed ask / decision window / continuation pricing` 说话。
-- 它们也不能把 `cleanup result`、continuation consumer 或用户侧 `product promise readback` 误写成 signer surface；cleanup 之后更细的 liability / reopen / finality 区分统一回 deeper owner pages。
+- 弱层可以提醒你去复核，但不能替 signer 改判。
+- 继续入口可以承接下一步，但不能替 ledger 回写 verdict。
+- cleanup 之后留下的是尾部责任与证据，不是可再次收费的 authority handle。
 
 它们之所以永远不配代签，不是因为“信息不够多”，而是因为一旦代签，observability 就会从 consumer 长成第二个 current-world compiler / host-truth source。
-更硬一点说，弱读回面不持有 `verdict seam`，也不承担 rollback / residual liability；允许它们代签，等于让权力脱离债务。cleanup 之后留下的是 liability / evidence，不是可再次收费的 authority handle。
 
-如果把这条非对称再压成最短 crosswalk，也只该剩三列：
-
-1. `strong signer surface`
-   - `governance key / externalized truth chain / typed ask / decision window / continuation pricing / durable-transient cleanup`
-2. `weak readback surface`
-   - `approval / mode / usage / transcript / dashboard / cleanup result / product promise readback`
-3. `continuation consumer`
-   - `Compact / Resume / Memory / re-entry`
-
-更细的 liability / reopen / finality 区分统一回 `risk/README` 与 deeper owner pages；入口卡不在这里继续生产第二层 readback taxonomy。
+如果一句治理解释还必须把这些对象再分出第二张 taxonomy，说明你已经离开入口卡，进入 `risk/`、`playbooks/` 或 deeper owner pages 了。
 
 ## 最短二跳
 
@@ -96,6 +79,6 @@ Claude Code 治理线真正统一收费的是四类稀缺资源：
 - 缺“为什么共用预算器还不够、为什么 token saving 实际是在重定价暴露”，回 [philosophy/61-真正成熟的安全与省Token系统，不是统一预算器，而是治理顺序、失败语义与可撤销自动化](philosophy/61-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E5%AE%89%E5%85%A8%E4%B8%8E%E7%9C%81Token%E7%B3%BB%E7%BB%9F%EF%BC%8C%E4%B8%8D%E6%98%AF%E7%BB%9F%E4%B8%80%E9%A2%84%E7%AE%97%E5%99%A8%EF%BC%8C%E8%80%8C%E6%98%AF%E6%B2%BB%E7%90%86%E9%A1%BA%E5%BA%8F%E3%80%81%E5%A4%B1%E8%B4%A5%E8%AF%AD%E4%B9%89%E4%B8%8E%E5%8F%AF%E6%92%A4%E9%94%80%E8%87%AA%E5%8A%A8%E5%8C%96.md)
 - 缺 runtime seam、typed transaction、外化真相链或 cleanup 运行时对象，回 [architecture/83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing](architecture/83-%E5%8F%8D%E6%89%A9%E5%BC%A0%E6%B2%BB%E7%90%86%E6%B5%81%E6%B0%B4%E7%BA%BF%EF%BC%9Atrusted%20inputs%E3%80%81distributed%20ask%20arbitration%E3%80%81deferred%20visibility%E4%B8%8Econtinuation%20pricing.md)
 - 缺失稳前问法、阈值矩阵或准入主权审读动作，回 [guides/100-如何用苏格拉底诘问法审读当前世界准入主权：trusted inputs、最小可见面与continuation pricing](guides/100-%E5%A6%82%E4%BD%95%E7%94%A8%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E8%AF%98%E9%97%AE%E6%B3%95%E5%AE%A1%E8%AF%BB%E5%BD%93%E5%89%8D%E4%B8%96%E7%95%8C%E5%87%86%E5%85%A5%E4%B8%BB%E6%9D%83%EF%BC%9Atrusted%20inputs%E3%80%81%E6%9C%80%E5%B0%8F%E5%8F%AF%E8%A7%81%E9%9D%A2%E4%B8%8Econtinuation%20pricing.md)
-- 缺 signer / ledger / cleanup 机制入口，或缺弱读回面为何永远不配越级代签，回 [security/README.md](security/README.md)
-- 缺用户侧 `product promise readback / reopen qualification / evidence binding`，回 [risk/README.md](risk/README.md)
-- 缺现场验收、回退、升级给人或 reopen drill，回 [playbooks/README.md](playbooks/README.md)
+- 缺 signer / ledger / cleanup 机制入口，或缺“为什么弱层永远不配越级代签”，回 [security/README.md](security/README.md)
+- 缺用户侧尾部读回、资格尾链或证据绑定，回 [risk/README.md](risk/README.md)
+- 缺现场验收、回退、人工接管或 reopen 执行，回 [playbooks/README.md](playbooks/README.md)
