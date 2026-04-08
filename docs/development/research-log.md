@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的自校协议结论：`06` 的 `7.2 入口判据` 与若干深段现在继续从 route-policing 转向更硬的因果检查。新的默认问法不再是“有没有新增入口”，而是“有没有逼 later consumer 重谈同一主语、证据级别或 first-reject path”；这让 `06` 更像一张最小可反驳对象卡，而不是一张隐形目录法。
+- 本轮新的源码地图结论：`01-源码结构地图` 顶部现已继续收成更薄的 repo-specific map，删掉了部分“更稳的读法 / 四步顺序”式前门语气，只保留地图页最少必要的定位公式与三条桥接句。
+
 - 本轮新的源码质量纠偏结论：`87` 的正职继续明确为 `why-proof`，而不是 landing 之后再跳回去的后置 gate 页面。更稳的默认顺序已再次校正成 `102 -> 87 -> architecture landing card -> local quality gate`；其中 gate 只复用 `87` 的三条命题，不改变 `87` 的页职责。
 
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果仍为 `Already up to date.`；根仓继续保持 `main...origin/main`，正文继续只在 `.worktrees/mainloop` 内推进。

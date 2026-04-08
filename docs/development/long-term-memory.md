@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 deep-self-audit-objects live 记忆：
+  - `06` 深段默认继续不再用 `owner page` 兜底，而是压回最小可反驳对象：Prompt 回 `compiled world verdict`，治理回 `lease checkpoint`，结构回 `later-maintainer veto`
+  - `7.2 入口判据` 默认继续不先问“有没有新增入口”，而先问是否逼 later consumer 重谈同一主语、证据级别或 first-reject path
+- 当前批次继续新增一条 repo-map-thin-top live 记忆：
+  - `01-源码结构地图` 顶部默认继续只保留两句：`repo-specific 定位与跳转`、`artifact gate 与 canonical ladder 回 README / 102`
+  - 地图页若再次长回“更稳读法 / 四步顺序 / 第二前门式桥接”开场，默认优先削掉
 - 当前批次继续新增一条 why-proof-not-post-gate live 记忆：
   - `87` 默认继续只承担 `why-proof`，不承担 landing 之后的后置验收页职责
   - `quality gate` 默认继续发生在 `architecture landing card` 之后，但只复用 `87` 的三条命题，不把 `87` 再拉回成回跳页

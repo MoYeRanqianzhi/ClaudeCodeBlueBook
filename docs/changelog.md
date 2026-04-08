@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/{01-源码结构地图.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成两条更硬的默认纪律：`06` 深段与 `7.2` 入口判据现已进一步改写成 later consumer 是否被迫重谈主语/证据/first-reject path 的自校问题；`01-源码结构地图` 顶部则继续收薄成纯 repo-specific map，不再长出额外前门语气
 - 继续更新 `bluebook/{README.md,philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮纠偏收成一条更硬的源码质量纪律：`87` 的正职继续固定为 `why-proof`，不再被误读成 landing 之后的后置验收页；later maintainer 的默认消费顺序仍是 `102 -> 87 -> architecture landing card -> local quality gate`
 - 继续更新 `bluebook/{06-第一性原理与苏格拉底反思.md,README.md,navigation/README.md,philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md,architecture/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一批“继续深入”继续收成两条更硬的默认纪律：`06` 深段现已进一步把多处 “统一回 owner page” 改写成删掉 route note 后仍成立的因果自校；源码质量线则把 later maintainer 的默认消费顺序继续写死成 `102 -> 87 -> architecture landing card -> local quality gate`，并明确 `87` 的正职仍是 why-proof，gate 只是在 landing 之后复用这三条命题
 - 继续更新 `bluebook/{00-导读.md,01-源码总地图.md,01-源码结构地图.md,03-设计哲学.md,06-第一性原理与苏格拉底反思.md,architecture/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一批“继续深入”继续收成两条更硬的目录纪律：高流量 why 页现已显式采用“删掉 `next-hop / owner page / route note` 后仍成立，才算 why”的最低自校；根层角色也进一步冻结成 `README = 唯一 frontdoor`、`navigation/README = 唯一路由反查`、`00-导读 = preface / locator`、`01-源码结构地图 = 唯一规范源码地图`，其中 `01-源码总地图` 已被收回成纯兼容别名，而 `architecture/README` 也把 `landing card -> quality gate` 绑定成默认后继
