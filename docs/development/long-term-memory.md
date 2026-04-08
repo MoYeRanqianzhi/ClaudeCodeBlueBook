@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-first-reject-means-excluded-branches-reopen live 记忆：
+  - `06 / 15 / 81 / 84` 现在应直接把 Prompt 线的 first reject 压成“已排除分支回流候选集”：later consumer 不只是在重搜动作空间，而是在重新证明哪些分支为何仍该被 `authority / boundary` 排除
+  - 更稳的默认写法是：若继续前还得重写排除理由，这消耗掉的就不只是 token，而是一轮没有新增决策增益的 branch re-adjudication；此时先判 `same-world / continue qualification` 失效，不把它包装成恢复技巧
+- 当前批次继续新增一条 root-preflight-blocked-by-unmerged-root live 记忆：
+  - 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败；`git status --short --branch` 同时显示 `main...origin/main [ahead 31]`
+  - 更稳的默认写法是：把这类根仓状态只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、提交与更新记忆
 - 当前批次继续新增一条 seam-locator-must-stop-before-object-page live 记忆：
   - `01 / architecture/README / navigation/README / philosophy/76` 现在应直接把源码地图协议写成 `repo seam locator -> object-level first no -> fail-closed seam -> object page`
   - 更稳的默认写法是：`01` 只把人送到 seam 类型门口，不越过 `architecture/README` 直跳对象页；`navigation/README` 只负责强制 later consumer 离开 locator、进入对象层；`76` 的苏格拉底自校则继续追问 locator 有没有真的把人送到“哪个对象面先失去写权”这道题门口

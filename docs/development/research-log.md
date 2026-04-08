@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 这次没有进入快进，而是因根仓存在未解决冲突直接失败；`git status --short --branch` 同时显示 `main...origin/main [ahead 31]`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓收敛。
+- 本轮新的 Prompt 失稳结论：我把 Prompt 线的 first reject 又往前压了一层，只改了 `06 / 15 / 81 / 84` 的一句主语：失稳不再只写成“later consumer 重新搜索动作空间”，而进一步写成“已排除分支回流候选集，且还得重新证明它们为何仍该被排除”。`06` 现在把这件事压回重判资格回流，`15` 只把它保留为失稳前问题，`84` 把它写成 same-world failure 早于回答质量下降成立的反证，`81` 则把它压回 `next-step guard / explainability` 的对象条件。当前判断是，这一步能继续减少 later consumer 把 Prompt 魔力误读成更会总结或更会选工具，而更容易把它读成：runtime 先替接手者付掉冷启动动作搜索与排除理由重写的成本。
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 这次已直接返回 `Already up to date.`，随后 `git status --short --branch` 也仍是干净的 `main...origin/main`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓正文。
 - 本轮新的源码地图协议结论：我把 source-quality 这条目录契约又往前压了一层，只改了 `01 / architecture/README / navigation/README / philosophy/76` 四页的交接句。`01` 现在更明确自己只做到 `repo seam locator`，完成条件不是给出候选文件，而是把 later maintainer 送到“哪一类 seam 会先丢写权”这道对象题门口；`architecture/README` 现在更明确 `first no` 问的不是修复顺序，而是哪个对象面正在先失去合法写权；`navigation/README` 现在则把 seam locator 与对象层之间的退出条件写死，避免 route 页继续兜目录；`76` 的苏格拉底自反也补了一问，强制自查 seam locator 有没有真的把 later maintainer 送到“哪个对象面先失去写权”这道题门口。当前判断是，这一步能继续减少 later consumer 在地图页里偷判对象 verdict，也能把 `seam type locator -> object-level first no -> fail-closed seam -> object page` 这条协议真正单源化。
 - 本轮新的并行侧线结论：三路只读 sidecar 给了两个高价值残差，但我刻意没有在本批扩写。Prompt 侧线指出，下一批若继续收 Prompt residual，更值得补的是 later consumer 何时开始重新生成“哪些分支已被排除”的理由；治理/安全侧线则再次证明 route 页最稳的职责仍是先剥夺 weak layer 的代签资格，而不是代发对象 verdict。当前判断是，这两条都更适合作为下一批 owner 页的窄收口，不适合在这批目录协议里继续扩面。

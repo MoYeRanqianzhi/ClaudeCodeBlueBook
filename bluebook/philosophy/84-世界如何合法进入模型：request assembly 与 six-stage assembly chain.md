@@ -137,7 +137,7 @@ Prompt 线也因此有自己的 `local veto`：凡是不能独立 veto 世界定
 ### first reject signal 比成功表述更值钱
 
 这条世界准入能力最先失稳时，第一条信号通常不是回答质量下降，而是世界定义权、展示边界与继续资格开始彼此脱钩。若这些失稳还不能在回答变差前被点名，那失去的也不是回答质感，而是这条世界准入顺序的先验反对权；这时更该先停在 same-world test 失败，而不是急着补更多 checklist。
-同样常见的第一反证也不是世界定义句突然消失，而是 `next-step choice` 又从“少数合法分支中的选择”退回“全量动作中的搜索”；一旦 later consumer 必须重新排除旧工具、旧摘要路线或旧 delegated path，same-world failure 就已先于回答质量下降成立。
+同样常见的第一反证也不是世界定义句突然消失，而是 `next-step choice` 又从“少数合法分支中的选择”退回“全量动作中的搜索”；一旦 later consumer 必须重新排除旧工具、旧摘要路线或旧 delegated path，甚至重新证明这些分支为何仍该被排除，same-world failure 就已先于回答质量下降成立。
 
 ## 5. 苏格拉底式追问
 
@@ -152,16 +152,17 @@ Prompt 线也因此有自己的 `local veto`：凡是不能独立 veto 世界定
 
 ## 6. 对 Agent Runtime 设计者的直接启发
 
-如果你想复制 Claude Code 的这条世界准入能力，先复制“替 later consumer 预付冷启动协商成本”的制度结果，而不是先复制某段著名措辞。
+如果你想复制 Claude Code 的这条世界准入能力，先复制“替 later consumer 预付对已排除分支的冷启动动作搜索成本”的制度结果，而不是先复制某段著名措辞。
 
 更具体地说，你要先保证：
 
 - 接手者拿到的是 same-world verdict，而不是另一轮世界协商
 - delegated context 只能给线索，不能给世界主语
 - compaction 保留的是继续依据，不只是阅读友好的摘要
+- 下一步只剩少数已授权分支，而不是再把原本已排除的路径拉回候选集重判
 
 对象链、字段名与实现对象统一留给 `82` 与源码锚点；why 页不再重发 inventory。
 
 ## 7. 一句话总结
 
-Prompt 首先是替 later consumer 预付冷启动协商成本的世界准入顺序；如果接手者还要先重谈世界、再决定动作，Prompt 就已经失败。
+Prompt 首先是替 later consumer 预付对已排除分支的冷启动动作搜索成本的世界准入顺序；如果接手者还要先重谈世界、再把已排除路径拉回候选集决定动作，Prompt 就已经失败。
