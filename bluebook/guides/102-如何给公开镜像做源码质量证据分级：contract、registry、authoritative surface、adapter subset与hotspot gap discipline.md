@@ -29,6 +29,8 @@
 
 - `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
+这条 ladder 不是证据分类游戏，而是公开镜像里“谁配签现在”的 speaking-right protocol：你先判 authority 落在哪，再决定哪些对象只能降格成 candidate、subset 或 gap note。
+
 这里还应先多记一句：
 
 - 文件名保留旧词只是为了兼容检索；正文判断一律只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`。

@@ -8,6 +8,25 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 最新根仓同步记忆（2026-04-08，本轮深化批次）继续保持健康态：`fetch origin main` 与 `merge --ff-only origin/main` 均再次成功，根仓当前仍是干净的 `main...origin/main`。
+- 当前批次继续新增一条 prompt-owner-invariant-only live 记忆：
+  - `84` 默认继续只保留 Prompt 顶层 owner 的两条 canonical fact：`frontdoor order` 与 `canonical Prompt ABI`
+  - `84` 默认继续不在页首保留额外动作链、reject trio、magic framing 或大段 surface inventory；更稳的默认修法是 `先写 invariant -> 再写 single-source pluralism -> 具体对象回 82 / anchors`
+- 当前批次继续新增一条 prompt-why-pointer-only live 记忆：
+  - `03` 的 Prompt 中后段默认继续不重发“连续性制度 / 组织制度边界”这类平行 first answer
+  - `03` 与 `41` 若继续谈 Prompt，只保留 why / self-audit / pointer；凡 owner-chain nouns、witness order、object inventory 再出现，默认退回 `84`
+- 当前批次继续新增一条 governance-61-why-only live 记忆：
+  - `61` 默认继续只保留“不同资产不共享同一种失败语义”“只在仍有决策增益时花 token”这组 why
+  - `61` 默认继续不重发 canonical chain、weak-readback law 或完整 case taxonomy；对象与机制差异统一回 `10 / security / playbooks`
+- 当前批次继续新增一条 source-quality-speaking-right-split live 记忆：
+  - `102` 默认继续独占 evidence ladder、降格规则与 speaking-right protocol，并明说这条 ladder 是“谁配签现在”的方法协议
+  - `87` 默认继续只保留 why：合法复杂度中心、failure honesty、later-maintainer rejectability 与 refactorability
+- 当前批次继续新增一条 architecture-object-expansion live 记忆：
+  - `architecture/README` 默认继续只把 `current-truth surface` 展开成对象层 `authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer`
+  - 若 `architecture/README` 再次开始发布 ingress sequence、平面库存、change-risk protocol 或目录法，默认按越位候选处理
+- 当前批次继续新增一条 41-philosophy-frontdoor live 记忆：
+  - `41` 默认继续只回答 why，不再持有三条母线的共享公式库
+  - source-quality 哲学前门默认继续先写“谁配写现在 + one writable present”，再 handoff 到 `102 / architecture/README`
 - 最新根仓同步记忆（2026-04-08，本轮收束批次）已再次更新为健康态：`fetch origin main` 与 `merge --ff-only origin/main` 均成功，根仓当前状态为干净的 `main...origin/main`；更早记录的 ahead / dirty / unmerged 快照只作历史观察保留。
 - 当前批次继续新增一条 03-single-constitutional-hook live 记忆：
   - `03` 默认继续只保留一组 Prompt / 治理 / 当前真相宪法钩子，不再允许第二组 `first-answer nouns`

@@ -2,6 +2,13 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的根仓同步结论：`fetch origin main` 与 `merge --ff-only origin/main` 已再次成功，根仓当前仍是干净的 `main...origin/main`；本轮继续严格只在 `.worktrees/mainloop` 内推进。
+- 本轮新的 prompt-owner 收束结论：`84` 现已继续把 Prompt 顶层 owner 压回 invariant，只保留 `frontdoor order` 与 `canonical Prompt ABI` 两条 canonical fact，不再在页首保留额外动作链、reject trio 或“magic”叙事；surface pluralism 也被明确收回“adjudication single-source”。
+- 本轮新的 prompt-why 收束结论：`03` 的 Prompt 中后段残片现在继续退回 pointer，`25 / 28` 不再重发“连续性制度 / 组织制度边界”这类平行 first answer；`41` 也继续退回 why-only 哲学导航，不再公开列 owner-chain nouns。
+- 本轮新的 governance-why 收束结论：`61` 现已把失败语义与 token 经济段继续压回“不同资产不共享同一种失败语义”与“只在仍有决策增益时花 token”两条 why，不再把 case list 与 chain/readback law 写成第二套 owner taxonomy。
+- 本轮新的 source-quality-frontdoor 结论：`102` 现在更明确把 canonical ladder 写成“谁配签现在”的 speaking-right protocol；`87` 则继续退回 why-only，明确把 evidence ladder、降格规则与 speaking-right protocol 还给 `102`。
+- 本轮新的 architecture-boundary 结论：`architecture/README` 现已继续压回 object-layer expansion，不再代发 ingress sequence、平面库存或 change-risk protocol；它现在更明确只回答 `current-truth surface` 怎样继续展开成 `authority surface -> truth planes -> current-truth writeback -> danger surface -> retreat layer`。
+- 本轮新的 philosophy-frontdoor 结论：`41` 的源码质量哲学入口现已继续改成“先确认谁配写现在，再让 ladder、writeback doctrine 与 failure honesty 保护 one writable present”，不再把 source-quality 哲学前门收窄成单纯 ladder 口号。
 - 本轮新的根仓同步结论：`fetch origin main` 与 `merge --ff-only origin/main` 已再次成功，根仓当前状态为干净的 `main...origin/main`；更早出现的 ahead / dirty / unmerged 快照不再适合作为当前起手假设。
 - 本轮新的前门收束结论：`03` 已继续收掉第二组 Prompt / 治理 / 当前真相 `first-answer nouns`，并把中后段 Prompt why、治理坏解与 failure-order 影子压回 owner redirect。当前更稳的写法是：`03` 只保留一组宪法钩子与 why / self-audit 句，不再重发 mini constitution。
 - 本轮新的总图结论：`09` 现在更明确只保留 mirror-level control-plane verdict，不再把 Prompt witness nouns、治理 canonical chain nouns 或 current-truth ladder nouns留在总图页；如果一段 `09` 已经开始点 `witness / pricing-right / current-truth surface`，默认按越位候选处理。

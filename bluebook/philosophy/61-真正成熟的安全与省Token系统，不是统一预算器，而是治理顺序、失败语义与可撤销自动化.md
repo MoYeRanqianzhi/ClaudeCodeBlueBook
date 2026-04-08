@@ -85,12 +85,11 @@ Claude Code 更成熟的地方在于：
 
 Claude Code 对失败并不追求一种统一美德。
 
-它会按资产类别分型：
+它只坚持一条更高的原则：
 
-1. 有些远程托管设置在无缓存时 fail-open，避免把非核心治理流量升级成全局阻断；
-2. 某些 policy limit 又会在关键路径上 fail-closed；
-3. classifier 遇到 transcript too long 时，交互模式退回人工，headless 直接终止；
-4. autocompact 在连续失败后触发 circuit breaker，而不是永远重试。
+- 不同资产不该共享同一种失败语义。
+
+远程托管设置、policy limit、classifier 与 autocompact 只是这条原则的不同例子；具体对象与机制差异统一回 `10 / security / playbooks`，本页不再把 case list写成第二套 owner taxonomy。
 
 这说明系统真正追求的不是：
 
@@ -175,9 +174,9 @@ Claude Code 并不追求“检查越多越安全”。
 这也是为什么安全与成本在这里并不冲突，而是共享同一条判断：
 
 - 决策增益是否仍存在
-- 也就是不为未经 `governance key / truth chain / typed ask / decision window / continuation / cleanup` 定价的动作、能力、上下文席位与时间续费
+- 也就是不让未被重新定价的动作、能力、上下文席位与时间续费继续免费扩张
 
-弱读回面若可代签，主工作集就必须长期保留更多回放与对账细节，`externalize / evict` 会立刻反转成证明成本。
+如果弱读回面开始代签，系统就必须长期保留更多回放与对账细节，省下来的不再是 token，而只是把证明成本挪到了以后。
 
 ## 6. 第五层：稳定字节是制度资产，不是实现细节
 
