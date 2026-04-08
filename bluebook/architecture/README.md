@@ -15,7 +15,7 @@
 - 这里说的 `局部可反对性` 不是“最后还能看懂”，而是拿不到作者时，later maintainer 仍能只凭局部对象与 seam 指出哪一处对象边界在越权。
 - 因而 `event truth / current truth / display truth` 的对象化分工，以及 `writeEvent / reportState / reportMetadata` 这类通道怎样落到 writeback seam，也统一由本目录负责，不在 `87` 这类 why 页重发对象矩阵。
 - 本 README 只收束对象层的稳定判断：谁在写现在、哪条 truth plane 在发言、writeback seam 在哪，以及 later maintainer 拿什么局部反对。
-- 如需把对象判断压成统一摘要，使用下文 `landing card` 六栏；它是对象 owner README 提供的固定表达，不是新的流程关卡。
+- 如需把对象判断压成统一摘要，使用下文 `landing card` 六栏；它是对象摘要页提供的固定表达，不是新的流程关卡。
 
 ## 四个对象问题
 
@@ -41,7 +41,7 @@
 
 ## 对象专题索引
 
-如果要继续展开某一个对象面，可按主题进入下面页面；这些链接只是对象 owner README 的专题索引，不构成固定顺序：
+如果要继续展开某一个对象面，可按主题进入下面页面；这些链接只是对象摘要页的专题索引，不构成固定顺序：
 
 - [82-请求装配流水线：world entry / request assembly / six-stage assembly chain](82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md)
   - 看 same-world compiler 怎样落成 request assembly 对象。

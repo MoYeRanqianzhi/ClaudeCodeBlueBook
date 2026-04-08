@@ -33,12 +33,12 @@
 
 这里还应先多记一句：
 
-- 文件名保留旧词只是为了兼容检索；正文判断一律只认 `current-truth surface / consumer subset / hotspot kernel / mirror gap discipline`。
+- 文件名保留旧词只是为了兼容检索；正文在这一级统一把 `current-truth surface` 读作 current-truth claim state，而不是对象层 surface verdict。
 - 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航与对象展开即使被提及，也只算证据状态声明，不算新的 frontdoor。
-- 在这条线里，artifact completeness 只决定 promotion eligibility，不重写 owner README 的稳定职责；页面标题与补写者都不额外增加签字权。
+- 在这条线里，artifact completeness 只决定 promotion eligibility，不重写下游页面的稳定职责；页面标题与补写者都不额外增加签字权。
 - 凡正文把对象写成 `consumer subset` 或 `current-truth surface candidate`，必须同时把 `downgrade stamp` 与 `unresolved-authority note` 一起落页；只写“这里要保守”而不写这条说明，默认按证据纪律未落地处理。
 - 若对象层 authority 仍需细化，note 只说明“缺少 promotion 所需证明”，不附带任何路由义务。
-- 若 object-level authority 还没锁定，就只配先写 `current-truth surface candidate`，不配提前写死 `current-truth surface`。
+- 若 object-level authority 还没锁定，就只配先写 `current-truth surface candidate` 这个兼容标签，并把它读作 provisional current-truth claim。
 
 这条线最短的 reject trio 也只认：
 
@@ -105,9 +105,9 @@
 2. `registry`
    - 当前 build / 当前 runtime 真的注册了哪些对象。
 3. `current-truth surface`
-   - 在本页只指“current-truth claim 已获 promotion”的证据状态，不在这里回答对象层谁在写现在。
+   - 在本页只指“current-truth claim 已获 promotion”的证据状态；`surface` 在这里只是兼容标签，不在这里回答对象层谁在写现在。
 4. `current-truth surface candidate`
-   - 这不是独立 rung，而是 `current-truth surface` 在证据尚未满足 promotion 条件时的降格状态；此时只能保留 unresolved-authority note。
+   - 这不是独立 rung，而是上一级在证据尚未满足 promotion 条件时的降格状态；此时只能保留 unresolved-authority note。
 5. `consumer subset`
    - 同一份权威真相对不同 host / adapter / projection 只暴露各自职责宽度。
 6. `hotspot kernel`
@@ -180,7 +180,7 @@ contract 和 registry 都还不够。
 
 - 当前这份 claim 有没有足够可见证据支持 promotion
 
-这里的 `current-truth surface` 不是在本页回答“谁在写现在”，而是在判断公开镜像里的可见证据是否已经足够支撑 promotion。若这些证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `current-truth surface candidate` 或 `provisional claim`，并同步附一条 unresolved-authority note。
+这里的 `current-truth surface` 不是在本页回答“谁在写现在”，而是在判断公开镜像里的可见证据是否已经足够支撑 promotion。若这些证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `provisional claim`，并同步附一条 unresolved-authority note；`current-truth surface candidate` 只保留为兼容标签。
 
 典型信号只在证明“这里可能支持 current-truth claim”，不在本页直接升级成对象层 verdict。
 
@@ -327,12 +327,12 @@ gap discipline 的价值不是“保守一点”，而是：
 
 - 形成一套可迁移的研究协议，去稳当地审任何公开镜像
 
-## 10. 危险改动面记录模板
+## 10. 危险改动面附表模板
 
-当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一份可交接的 `change-risk record`。
+当你已经完成 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel` 分级后，下一步最值钱的不是继续夸“结构很稳”，而是把危险改动面压成一张可交接的 `change-risk` 附表。
 
-`guides/` 在这里只负责 `change-risk record` 的字段与 gap note 写法；这张表是源码质量线的共享记录接口，不替其他目录代写具体危险面。
-这份 `change-risk record` 也不是变更批准协议，而是把 visible evidence、常见误读、降格理由与 unresolved-authority 缺口写实的附表；如果改动前还写不出这张表，current-truth 判断就应继续保持 provisional。
+`guides/` 在这里只负责这张附表的字段与 gap note 写法，不替其他目录代写具体危险面。
+这张附表也不是变更批准协议，而是把 visible evidence、常见误读、降格理由与 unresolved-authority 缺口写实；如果改动前还写不出这张表，current-truth 判断就应继续保持 provisional。
 
 更稳的记录模板至少应包含下面几列：
 

@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 speaking-right 结论：根 `README`、`navigation/README`、`102` 与 `architecture/README` 这次继续做了一轮 vocabulary cleanup。根入口现在把 `guides/102` 写回纯首跳句，不再用 `仲裁 / promotion` 语气；`navigation/README` 现在把 `artifact / verdict` 改回 `artifact / evidence`；`architecture/README` 现在也把自己收回 `对象摘要页`，不再自称 owner README。
+- 本轮新的 102 结论：`guides/102` 现在更明确把 `current-truth surface / candidate` 降成兼容标签，正文统一把这一级读作 `claim state / provisional claim`，同时把 `change-risk record` 再降一级收成附表模板，不再让它和 ladder 主轴并列。
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果继续是 `Already up to date.`；本轮没有根仓阻塞，正文仍继续只在 `.worktrees/mainloop` 内推进。
 - 本轮新的源码质量 owner 结论：源码质量线这次继续被压回单点分工。`guides/102` 现在更明确只保留证据状态、降格规则与 `change-risk record` 附表写法；`philosophy/87` 继续只保留 why-proof；`architecture/README` 继续只保留对象摘要；`01-源码结构地图` 继续只保留 repo locator，不再顺手代发对象判断。
 - 本轮新的目录结构结论：`navigation/README` 的源码质量反查现在继续从按母线分段退回一张扁平 artifact-gap 规则表，不再像第二 frontdoor。`03 / 06` 的源码质量线也继续从 artifact-name-first 句法退回 `one writable present / later-maintainer veto` 这组 first test。
 - 本轮新的对象层结论：`architecture/README` 的 `landing card` 现在继续只是一张对象摘要卡，不再承担验收卡或准入卡；later maintainer 的局部 veto 只作为对象摘要字段保留。

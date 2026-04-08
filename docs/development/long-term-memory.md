@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 source-quality-speaking-right-cleanup live 记忆：
+  - 根 `README` 默认继续只把 `guides/102` 写成源码质量线首跳，不再用 `仲裁 / promotion` 这类证据裁决语气
+  - `navigation/README` 默认继续只用 `artifact / evidence` 反查词，不再把自己写成 `verdict` 分发表
+- 当前批次继续新增一条 102-claim-state-compat live 记忆：
+  - `102` 默认继续允许保留 `current-truth surface / candidate` 这组兼容标签，但正文必须明确把它们读成 `claim state / provisional claim`
+  - `change-risk record` 默认继续只配做附表，不再和 ladder 主轴并列
+- 当前批次继续新增一条 architecture-object-summary-page live 记忆：
+  - `architecture/README` 默认继续自称 `对象摘要页`，不再自称 owner README
+  - `landing card` 默认继续是对象摘要模板，不承担 object-line speaking right
+- 最新根仓同步记忆（2026-04-08，本批次本轮继续深化）继续保持健康态：`git fetch origin main` 与 `git merge --ff-only origin/main` 均成功，结果为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
 - 当前批次继续新增一条 source-quality-owner-split live 记忆：
   - 源码质量线默认继续固定成 `guides/102 = evidence state / downgrade discipline`、`philosophy/87 = why-proof`、`architecture/README = object summary`、`01-源码结构地图 = repo locator`
   - `navigation/README` 默认继续只做 artifact-gap 反查，不再把源码质量线拆成第二 frontdoor
