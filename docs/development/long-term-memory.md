@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-magic-means-prepaid-rejudication-tax live 记忆：
+  - `03 / 84 / 15` 现在应直接把 Prompt “魔力”去魅成制度结果：runtime 先替 later consumer 预付世界重判税，prompt-side `local veto` 负责阻止 `display transcript / delegated context / summary` 越级，第一退回层则先把这些 surface 降回 `projection`
+  - 更稳的默认写法是：Prompt 线若答不出这条 `local veto + first retreat layer`，就先按 `same-world failure verdict` 处理，不再补摘要或补解释
 - 当前批次继续新增一条 owner-pages-need-veto-and-retreat-defaults live 记忆：
   - `81 / 85 / 87` 现在应直接在 owner why 页里保留最短的 `local veto cue + first retreat layer` 默认句，而不只把这组对象留给 `03 / 06 / 102`
   - 更稳的默认写法是：Prompt 线先问失稳时 `section registry / protocol transcript / continue qualification` 谁先失守；治理线先问 `weak readback / host replay / default continue / reopen tail evidence` 是否越权代签；源码质量线若答不出第一条局部 veto 与第一退回层，就先把 advancedness claim 降格成 `layout praise`

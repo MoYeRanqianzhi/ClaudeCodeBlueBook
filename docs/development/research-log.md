@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 Prompt why 结论：Prompt 侧线把“为什么它看起来有魔力”又压硬了一层。本轮已把这层去魅直接补进 `03 / 84 / 15`：所谓 Prompt 的“魔力”不再被写成更会说服，而被写成 runtime 先替 later consumer 预付世界重判税；`84` 同时把 prompt-side `local veto` 写死成“不能独立 veto 世界定义、权限边界与继续资格的 surface 只配补 context”，`15` 则把第一退回层固定成“先降回 `projection`，再停在 `same-world failure verdict`”。当前判断是，这一步能明显减少 later consumer 把 Prompt why 再读回风格优雅或指令强度，而更容易把它读成一条防重协商、防带病继续的制度结果。
 - 本轮新的 owner-page 结论：主线程继续把三条 why 页往“可执行判断”压了一层。本轮已把 `81 / 85 / 87` 都补上更短的默认句：Prompt 效力不只要求可解释失稳，还要求说得清第一条 `local veto cue` 与第一退回层；治理 why 不只要求 signer ceiling，还要求把 `weak readback / host replay / default continue / reopen tail evidence` 越权代签写成第一条局部 veto；源码先进性 claim 若答不出第一条局部 veto 与第一退回层，就必须先降格成 `layout praise`。当前判断是，这一步能继续减少 later consumer 把 owner why 页读成高阶赞美，而更容易把它们读成可落手的 first reject / first retreat 协议。
 - 本轮新的目录结构结论：并行只读复查确认，高价值残余已经不在 frontdoor 数量，而在 route page 还会不会先广播 owner chain。本轮已把这层纪律继续补进 `09 / 15 / 10`：`09` 的治理线先回 `10`，`15` 的治理与 current-truth 线都先离场到 `10 / guides/102`，只有离场后才按 why-proof、security 或对象镜像继续分流；`10` 也补出了缺失的 `architecture/83` 对象出口。当前判断是，这一步能继续减少 later consumer 在总图页和导航页里把“去哪一页”误读成“哪一页在代签 first answer”的概率。
 - 本轮新的设计内涵结论：并行只读复查指出，`03` 开头最值钱的 residual 不是缺更多母线总论，而是治理线与当前线还没有像 Prompt 线那样被压成对象级 acid test。本轮已把这层判断补进 `03`：治理线先问 `earliest unpaid expansion / repricing proof / cleanup`，当前线先问 `local veto cue / first retreat layer`。当前判断是，这一步能明显减少 later consumer 把 why 页重新读成导航页或结论词页的概率，因为页内 now 先要求判失守点，再允许继续解释。
