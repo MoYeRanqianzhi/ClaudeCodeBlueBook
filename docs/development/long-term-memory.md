@@ -3930,3 +3930,4 @@
 - current-truth 的长期默认公开首跳现在也应继续写死：根入口与 navigation frontdoor 一律直接回 `guides/102`；`09` 只做 cross-line mirror，不再出现在 `102` 之前充当方法入口。
 - `09` 的 Prompt 与治理 mirror 纪律现在也应继续写死：总图页不再保留 later-maintainer 排查顺序、治理 failure order 或 Prompt witness/object inventory；这些顺序统一回 `15` 与各 owner page。`09` 只保留 constitutional hook，`41` 只保留 first-principles 验收问句，不再增量持有 Prompt production heuristics。
 - `03` 中段的长期默认分析语法现在也应继续写死：`运行时平面` 只配做二级分析透镜，不再升级成顶层设计单位。later maintainer 的 first answer 仍只认三条母线，plane taxonomy 只在对象层帮助看见主权怎样协同。
+- `09` 的第二、三张图中段现在也应继续写死成 mirror-only：治理页不再在总图发布 `governance pricing chain / failure semantics / human fallback` 模板或 later-maintainer 排查顺序；源码质量页也不再在总图发布 current-truth 模板、later reject 规则或排查顺序。所有这些 object/verdict/order 都统一回各 owner page。
