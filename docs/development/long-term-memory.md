@@ -4212,3 +4212,8 @@
 - 安全与自校入口的最新压缩也应继续写死：`06` 不要再把 Prompt 自校写成 artifact 名称先行，先问 later consumer 是否还要重答世界定义、边界与工具资格；`security/README` 也只保留 signer / `verdict ledger` / `cleanup authority` 的机制分诊与离场条件，若没先在 `10` 定位 `earliest unpaid expansion`，安全首页不开始。
 - Prompt 前门的最新反术语化纪律也应继续写死：`README / 03 / 84` 要先写 skim reader 能观察到的失败态，再把 `same-world compiler / compiled world verdict / Authority-Boundary-Transcript-Lineage-Continuation` 放回解释层。若主句里先出现 contract 词、artifact 名或五轴公式，说明 later-consumer test 还没有真正站到前门。
 - 治理前门的最新压缩纪律也应继续写死：`10` 只保留“单入口 + 动作表”，不能再长回边界卡/Support Card/card-deck；`lease checkpoint` 缺失就先冻结 continuation，`cleanup` 缺失就先 `revoke / retire` 旧 authority、封存 `verdict / liability receipt`、停止默认续租。`85` 只保留 why-proof，不再重跑入口课；`security/README` 只保留入场条件、三类 ambiguity 与 handoff，不再重建 intake schema。
+- `2026-04-08` 起再固定一条前门第一性原理：frontdoor 只配回答“我现在在问哪一类问题，以及第一跳去哪”。如果一句高流量 README 同时写了第一跳之后的 why、mechanism、repair、quality-gate 或 deeper syllabus，它就在偷长第二 frontdoor。
+- 苏格拉底式自审也应继续固定成两个硬问题：删掉 artifact 名和页名后，一条 route 句若立不住，它其实在代签 owner；删掉解释词后，一条 locator 句若还在做 authority / pricing / magic 判断，它已经越过 locator 页边界。
+- 源码质量线的页角色现可视为稳定四分：`navigation/README = artifact-gap 单跳`，`01 = repo locator`，`87 = why-proof`，`architecture/README = object owner summary`，`102 = evidence ceiling / promotion gate`。任何一句话若同时承担其中两种以上角色，应优先按 speaking-rights 回潮处理，而不是当作普通措辞问题。
+- `userbook/README` 的稳定职责也应继续写死：根页只做 `问题分型 -> 单跳`，不再默认 `01` 中转，也不再把 `10 / 85 / 61 / security / risk / playbooks` 预排成用户侧固定 deep chain。用户侧根页一旦开始替 why、truth 或恢复执行写 syllabus，就在长成第二蓝皮书。
+- 根仓库的同步纪律在 `2026-04-08` 这轮又验证了一次：继续只在根仓做 `fetch / ff-only merge` 前置检查，不处理根仓 dirty/conflicted 文件；所有正文推进、记忆更新与提交都只落在 `.worktrees/mainloop`。
