@@ -2,6 +2,7 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的公开治理证据结论：我把最新官方 engineering 文里的两组数字直接收进了治理 why。`85` 现在不只说 auto mode 在压缩 approval fatigue，而是明确写出当前公开数据里的 `93%` permission prompts 最终只是批准，以及 sandboxing 在内部使用中能把 prompts 再压低 `84%`。当前判断是，这一步能继续减少 later consumer 把“安全”与“省 token”读成两套局部优化，而更容易把它们读成同一条 `boundary-first` 治理秩序的公开实绩。
 - 本轮新的 memory-boundary 结论：重新核对最新官方 docs 后，我把 auto memory 的边界又压硬了一层。本轮已把这层判断补进 `84 / 87 / 102`：auto memory 不只是不配代签 `world-definition / continue qualification`，它连 worktree-local witness 都不配，因为同一仓库下所有 worktrees 共享同一个 auto memory 目录，且 `autoMemoryDirectory` 不能由 project settings 指定。当前判断是，这一步能继续减少 later consumer 把 machine-local、repo-shared 的 memory layer 误读成 worktree-authored 或 repo-authored authority。
 - 本轮新的残余收口结论：主线程又把几条还没写硬的 first-reject / first-retreat 句子压回 owner 页了。本轮已把 `81` 的 lawful forgetting 退回层写回 `protocol transcript / stable prefix / continuation object`，把 `85` 的 no-decision-gain check 写成新的 `unpaid expansion`，把 `87` 的 later maintainer 默认 veto 层写死成 `projection / provisional claim / recovery asset / stale capability`，并把 `84 architecture` 的 release-surface shaping 写成 later maintainer 的可见性宪法。当前判断是，这一步能继续减少 later consumer 把这些 why 页读成原则口号，而更容易把它们读成出错时先在哪层说不、先退回哪层对象的可执行协议。
 - 本轮新的公开证据结论：我重新核了当前官方 docs 后，又把 public artifact 线往前压了一层。本轮已把这层判断补进 `84 / 87 / 102`：成熟 runtime 的公开 artifact 先进性，不只在“工件被看见”，而在 `effect ceiling` 已被公开写死，例如 managed settings 的最高优先、`CLAUDE.md` / auto memory 的 context-only、subagents 的独立 context/permissions、async hooks 的非阻断 ceiling。当前判断是，这一步能继续减少 later consumer 把“有这个工件”误读成“它能代签这一层”，而更容易把 public evidence 读成清晰的层级与效力边界。

@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 public-governance-metrics-prove-boundary-first live 记忆：
+  - `85` 现在应直接把官方工程文里的 `93%` approval 与 sandboxing `84%` prompt reduction 写成治理 why 的公开证据，而不只写成抽象的 approval fatigue 叙事
+  - 更稳的默认写法是：成熟治理不是“更少 prompts”或“更严审查”二选一，而是先把 boundary 写成可承受的自由区，再把人工批准留给真正还能改价的动作
 - 当前批次继续新增一条 auto-memory-is-not-worktree-local-witness live 记忆：
   - `84 / 87 / 102` 现在应直接写死：auto memory 不只是不配当 world-definition witness，它连 worktree-local witness 都不配；同一仓库下所有 worktrees 共享一个 auto memory 目录，且 `autoMemoryDirectory` 不能由 project settings 指定
   - 更稳的默认写法是：凡 machine-local、repo-shared、project-unwritable 的 memory layer，只配当 context，不配被 later consumer 误读成 repo-authored or worktree-authored authority
