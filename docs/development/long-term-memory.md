@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 governance-authority-lease-why live 记忆：
+  - `85` 现在应直接承担一句更硬的治理第一性原理：真正被续租的不是一次动作或一次 token 花费，而是一条 `authority lease`
+  - 更稳的默认写法是：世界准入、能力暴露、上下文占位与 continuation 都只是这条 lease 的收费节点；安全在阻止危险扩张免费续租，省 token 在阻止昂贵扩张免费续租
+- 最新根仓同步记忆（2026-04-08，本批次最终收尾 live 快照）已再次恢复健康态：在本轮中段 `git merge --ff-only origin/main` 一度因根仓未解决冲突而失败、状态也曾漂移为 `main...origin/main [ahead 47]` 之后，本轮最终复核根仓 `/home/mo/m/projects/cc/analysis` 时，`git status --short --branch` 又恢复为 `main...origin/main`。后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
 - 最新根仓同步记忆（2026-04-08，本批次最终收尾 live 快照）已再次恢复健康态：在本轮中段 `git merge --ff-only origin/main` 一度因根仓未解决冲突而失败、状态也曾漂移为 `main...origin/main [ahead 47]` 之后，本轮最终复核根仓 `/home/mo/m/projects/cc/analysis` 时，`git status --short --branch` 又恢复为 `main...origin/main`。后续继续每批重查，但所有正文推进与提交仍只落在 `.worktrees/mainloop`。
 - 当前批次继续新增一条 playbooks-execution-owner-only live 记忆：
   - `playbooks/README` 现在应固定成更纯的 execution owner 页，只回答 `execution verdict / rollback / reopen`

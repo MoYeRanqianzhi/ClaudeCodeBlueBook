@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的治理 why 结论：并行 Agent 指出，`authority lease` 这层更硬的第一性原理不该只留在 `61`。本轮已把它补进 `85` 的 why 段：真正被续租的不是一次动作或一次 token 花费，而是世界准入、能力暴露、上下文占位与 continuation 这条 lease；安全在阻止危险扩张免费续租，省 token 在阻止昂贵扩张免费续租。当前判断是，这一句让治理 why 自己就能解释“为什么安全与省 token 其实在问同一个续租问题”，而不只停在“同一投影秩序”。
+- 本轮新的根仓同步结论：在本轮中段 `git merge --ff-only origin/main` 一度因根仓未解决冲突而失败、状态也曾漂移为 `main...origin/main [ahead 47]` 之后，本轮最终收尾再次复核根仓 `/home/mo/m/projects/cc/analysis` 时，`git status --short --branch` 已恢复为 `main...origin/main`。该漂移继续只作为外部事实记录；本轮所有正文与提交始终只在 `mainloop` 内完成。
+
 - 本轮新的根仓同步结论：本轮中段 `git merge --ff-only origin/main` 一度因根仓未解决冲突而失败，状态也曾漂移为 `main...origin/main [ahead 47]`；但在本轮最终收尾再次复核根仓 `/home/mo/m/projects/cc/analysis` 时，`git status --short --branch` 又恢复为 `main...origin/main`。该漂移继续只作为外部事实记录；本轮所有正文与提交始终只在 `mainloop` 内完成。
 - 本轮新的 `playbooks` 结论：并行 Agent 进一步确认，`playbooks/README` 现在主要剩的不是 inventory，而是 family 解释重复。本轮已据此继续收口：开头不再重复解释 execution owner 的家族范围，`什么时候进来` 更聚焦在“正式对象已定、现在问的是 verdict/rollback/reopen”，维护约定里的重复 owner 边界也继续压薄。当前判断是，`playbooks/README` 现在更接近 `api / risk / security` 那类单职 owner 页。
 - 本轮新的根仓同步结论：本轮起手 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓未解决冲突而失败；复核根仓 `/home/mo/m/projects/cc/analysis` 时，当前为 `main...origin/main [ahead 47]`。该阻断发生在 `.worktrees/mainloop` 之外；本轮继续只在 `mainloop` 内推进与提交。

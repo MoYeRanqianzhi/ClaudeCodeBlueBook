@@ -2,6 +2,7 @@
 
 ## 2026-04-08
 
+- 继续更新 `bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的治理第一性原理：`85` 现在直接把治理 why 写成 `authority lease` 的续租问题，明确说明真正被续租的不是一次动作或一次 token 花费，而是世界准入、能力暴露、上下文占位与 continuation 这条 lease；安全在阻止危险扩张免费续租，省 token 在阻止昂贵扩张免费续租。本轮最终复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态已恢复为 `main...origin/main`。
 - 继续更新 `docs/development/{long-term-memory,research-log}.md`，补记本轮收尾的最新根仓 live 截面：在先前一次 `merge --ff-only` 被根仓未解决冲突阻断、状态一度漂移到 `main...origin/main [ahead 47]` 之后，本轮最终复核根仓 `/home/mo/m/projects/cc/analysis` 时，状态又恢复为 `main...origin/main`。该漂移继续只作为外部事实记录，不在根仓动手处理。
 - 继续更新 `bluebook/playbooks/README.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更稳的 execution-owner 纪律：`playbooks/README` 现已继续从“execution owner + family 解释重复”压回更纯的 `execution verdict / rollback / reopen` 入口，开头 family scope、`什么时候进来` 与维护约定里的重复 owner 边界都已收薄。本轮根仓前置检查中，`git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓未解决冲突而失败；当前根仓 live 状态为 `main...origin/main [ahead 47]`。
 - 继续更新 `bluebook/03-设计哲学.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更细的治理/源码质量 residual 纪律：`03` 第 29 节与第 34 节现已进一步压回最短自校句，不再保留“统一预算器口号”与“不要先按尺寸和目录体感判断”这类已经被 `85 / 87 / 06` 吸收的影子总论措辞。本轮根仓前置检查中，`git fetch origin main` 成功，但 `git merge --ff-only origin/main` 已被根仓未解决冲突直接阻断。
