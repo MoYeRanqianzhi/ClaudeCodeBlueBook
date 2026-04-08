@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 casebooks-sibling-not-route-guard live 记忆：
+  - `casebooks/README` 现在应固定成纯失败样本 sibling 页，不再在首页承担 `shared first-answer order` 或 route-guard 口气
+  - 更稳的默认写法是：只保留失真页自己的主语、基准样本、离场条件；若还在问正向对象链或第一条 reject path，统一回对应 owner README 与 why 页
 - 当前批次继续新增一条 risk-readback-owner-over-tail-summary live 记忆：
   - `risk/README` 现在应固定成纯 post-cleanup readback owner 页，只回答 `product promise readback / reopen eligibility readback / evidence receipt binding`
   - 更稳的默认写法是：保留三类用户侧对象、失真信号、入场条件与离场条件；删掉重复的“不是第二套规则 / 不抢别页 / 先回治理前门”铺陈段
