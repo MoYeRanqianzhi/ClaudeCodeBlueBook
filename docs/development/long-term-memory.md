@@ -4580,4 +4580,5 @@
 - `10 / 61 / 100` 的分工也因此更清楚：`10` 负责把 `zero-delta ask` 降格成 `weak readback`，`61` 负责说明为什么它不增加安全，`100` 负责把“这次 ask 是否真的收紧 signer ceiling”写成苏格拉底追问。
 - `2026-04-08` Prompt 线的零增益成本也应继续类型化：`84` 负责把“还要不要从头搜还能做什么”写成 acid test，`81` 负责把 stable prefix 与动作搜索成本挂钩，`15` 负责把“是否还要遍历哪些动作可能成立”写成失稳前问题梯子。三者共同保护的不是更顺的叙述，而是 later consumer 不再为下一步动作先做冷启动枚举。
 - `2026-04-08` Prompt 线还应继续再细一层：`84` 负责把 `next-step choice` 何时从“合法分支中的选择”退回“全量动作中的搜索”写成 first-reject 症状；`81` 负责把 `next-step guard` 明确成负向剪枝，而不只是正向建议。若 compact 后只剩“接下来建议做什么”，却没有保住“哪些分支已被 authority/boundary 排除”，later consumer 仍会重新打开全量动作搜索。
+- `2026-04-08` 目录契约线也应继续固定一条：`first retreat layer` 默认只配指向最近的 `fail-closed seam`，也就是 first no 之后先把错误 writer 降回 `no-authority / no-write` 的那一层，而不是修复计划、产品承诺或执行脚本。`architecture/README` 负责对象层定义这件事，`navigation/README` 只负责把缺这类 seam 的问题单跳送回对象层。
 - `2026-04-08` 源码地图线也应继续再细一层：`consumer subset / internal-only / projection` 最多只配告诉 later maintainer “别在这里改”，还不算真正的 `first no`。真正的单跳 veto 还必须继续落到某个 `local veto cue` 与最近的 fail-closed `first retreat layer`；若地图只能给出 grep 起点，却说不清 seam 类型与最近撤权层，它仍只是减搜索，不是减误改。

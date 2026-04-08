@@ -22,10 +22,12 @@
 - 缺 `release-surface shaping / compile-time gate / runtime gate / artifact surface`，回 `architecture/84`
 - 缺当前真相保护的 why-proof，回 `philosophy/86`；若继续追源码质量 why，再回 `philosophy/87`
 - 缺当前真相线的对象、状态机、writeback seam、`local veto cue / first retreat layer` 或对象摘要（如 `landing card`），回 `architecture/README`
+- 缺 first no 之后最近的 `fail-closed seam`，也先回 `architecture/README`；若问题已经缩到 `release-surface split / recovery-eviction / server-head adoption` 这类对象型退回层，再回对应对象页
 
 ## 维护约定
 
 - `navigation/` 只保留最小 artifact gap 规则，不把 reading map 或稳定书架重新摊平成首页。
 - 如果一个 route 句子开始代签 truth、ownership law 或 execution evidence，它就已经越位。
 - 如果一个 route 句子开始替公开 artifact 代签 support promise、`signer ceiling` 或 `effect ceiling`，它也已经越位；先退回 `guides/102` 与 `architecture/84`。
+- 如果一个 route 句子开始把 `first retreat layer` 直接写成修复计划、产品承诺或执行脚本，它也已经越位；route 只配指向最近的 fail-closed seam，不配代写修法。
 - 如果新的 route 提案删掉 artifact 名称后就不成立，说明它仍是页面归属说明，不是反查规则；先退回 `../README`、`../10`、`guides/102` 与 `docs/development/00`，不要把 `navigation/` 变成第二 frontdoor。
