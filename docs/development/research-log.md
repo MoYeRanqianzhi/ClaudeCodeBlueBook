@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 `03` 中后段结论：在上一批把 `03` 从“第二入口”收回 why 页之后，这次又继续清掉了更细的 slogan echo。`continue` 段不再重发 Prompt failure verdict，而改成“continue 只是 same-world 的时间轴自校”；future-maintainer 段不再重复 owner slogan，而改成“命名、注释与 seam 的价值在于提前写进反对权”；尺寸治理段也退回“尺寸不是 first test”的最小判断。
+- 本轮新的根仓同步结论：本轮起手再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 一度成功；但随后再次复核根仓状态时，已重新出现 `main...origin/main [ahead 20]` 与 `UU bluebook/security/README.md`、`UU bluebook/security/source-notes/README.md`、`UU docs/development/research-log.md` 等未解决冲突。该漂移发生在 `.worktrees/mainloop` 之外；本轮正文仍然严格只在 `mainloop` 内推进。
 - 本轮新的 `03` 结论：在完成 `README / 03 / 06` 的角色去重后，`03` 的中后段仍残留一类更细的重复，即在多个“设计原则”里反复重发治理与源码质量的 why slogan。这次已继续把这些段落压成新增观察或自校句，例如治理段退回“先外化当前真相再批准扩张”的抽象句，future-maintainer 段不再扩成第二套 quality verdict，审读顺序也统一退回 `06`。
 - 本轮新的根仓同步结论：本轮起手再次执行 `git fetch origin main` 与 `git merge --ff-only origin/main`，结果当时为 `Already up to date.`；但本轮后续再次观测根仓 `/home/mo/m/projects/cc/analysis` 状态时，已变成 `main...origin/main [ahead 20]`，并出现 `UU bluebook/security/README.md`、`UU bluebook/security/source-notes/README.md`、`UU docs/development/research-log.md` 等未解决冲突。该漂移发生在 `.worktrees/mainloop` 之外；本轮正文仍然严格只在 `mainloop` 内推进。
 - 本轮新的总控页结论：`README / 03 / 06` 这次继续完成了一轮真正的角色去重。根入口现在只做定题与首跳，不再二次解释三条目标页；`03` 开头不再重发三条母线的 `first test / counterfeit / minimum repair`，而是退回“本章只解释根入口已定三条母线为什么成立”；`06` 也不再把 owner 页的具体 first-test、artifact 与回退动作逐条重述，而改成只验三条 law 是否仍闭合、应先降格哪层结论。

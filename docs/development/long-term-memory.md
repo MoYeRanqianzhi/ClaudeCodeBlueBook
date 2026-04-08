@@ -8,6 +8,10 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 03-rear-half-no-slogan-echo live 记忆：
+  - `03` 后半段默认继续只保留新增观察或新增自校，不再用多个“设计原则”重复发放 Prompt/治理/源码质量的同一条口号
+  - 尤其 `continue`、`安全与省 token`、`future maintainer`、`尺寸治理` 这些段落，默认继续只写“新增什么判断”，不再重说 already-settled first answer
+- 最新根仓同步记忆（2026-04-08，本批次本轮继续漂移）继续保持外部阻塞态：本轮起手再次执行 `git fetch origin main`，`git merge --ff-only origin/main` 一度成功；但随后根仓 `/home/mo/m/projects/cc/analysis` 再次观测为 `main...origin/main [ahead 20]`，并仍有 `UU bluebook/security/README.md`、`UU bluebook/security/source-notes/README.md`、`UU docs/development/research-log.md` 等未解决冲突。后续继续严格只在 `.worktrees/mainloop` 内推进，不触碰根仓冲突。
 - 当前批次继续新增一条 03-midsection-no-slogan-repeat live 记忆：
   - `03` 中后段默认继续不再用多个“设计原则”反复重发 Prompt/治理/源码质量的首问口号
   - 更稳的默认写法是：只保留一处 canonical why，后续章节只写新增观察或新增自校，不再重发 owner 结论
