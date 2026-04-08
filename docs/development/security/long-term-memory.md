@@ -2,6 +2,10 @@
 
 ## 当前稳定边界
 
+- `2026-04-08` 最新一轮已完成 `392 / 376 / 243`：主线把 stronger-request cleanup 从 `cleanup-re-entitlement-governance` 继续推进到 `cleanup-reconfiguration-governance`，附录把 `seat truth / config truth / apply truth / needs-config / governor question` 压成统一矩阵，源码剖面则把 split-save、missing-config surfacing、`needs-config`、flow-level closure 与 save-vs-apply grammar 并排钉成 `current-input-truth grammar`。这一轮稳定写出的新边界是：`资格回来` 不等于 `配置也回来`，`制度知道谁还能坐回座位` 不等于 `制度已经知道这个座位现在该按哪组输入重新运转`。
+- `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-reactivation-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
+
 - `2026-04-08` 最新一轮已完成 `391 / 375 / 242`：主线把 stronger-request cleanup 从 `cleanup-resurrection-governance` 继续推进到 `cleanup-re-entitlement-governance`，附录把 `return state / old entitlement / policy veto / identity fallback / governor question` 压成统一矩阵，源码剖面则把 old config / secrets wipe、explicit enabled write、policy veto、installed-vs-enabled divergence、closure-level entitlement write 与 new-slug identity fallback 并排钉成 `post-return qualification grammar`。这一轮稳定写出的新边界是：`会回来` 不等于 `还是原来那个被授权的它`，`制度知道怎样让对象重新出现` 不等于 `制度已经知道该把哪些旧权利重新还给它`。
 - `2026-04-08` 本轮 fresh 复核根仓库时，`git fetch origin main` 成功，但根仓状态已推进到 `## main...origin/main [ahead 44]`，且仍存在未解决冲突；`git merge --ff-only origin/main` 返回 `Merging is not possible because you have unmerged files.`。这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-reconfiguration-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
