@@ -4574,3 +4574,5 @@
 - `guides/100` 的治理红线也应继续具体化：若 project/local settings 还能静默开启高风险自动化，或 repo-authored allow rules 还能替 managed deny / policy ceiling 改价，就应先按 `authority leak` 处理，而不是继续把问题写成 ask 体验优化。
 - `2026-04-08` Prompt 线还应继续固定一个更可观察的收益定义：Claude Code prompt 的效力不只是在删掉世界重谈，也是在删掉 later consumer 的冷启动动作搜索成本。若接手者仍要先枚举候选世界与候选动作，才能知道下一步做什么，那么 same-world 即使文面仍顺也已失效。
 - `81 / 84 / 15` 的长期分工也因此更硬：`81` 解释工具 ABI、输出法与用户可见面如何共同把下一步动作空间压成少数已授权分支； `84` 解释为什么同一份 `world-entry object` 能替 later consumer 省掉动作枚举； `15` 则只保留失稳前自检，追问一段“Prompt 很强”的分析是否真的指出删掉了哪段冷启动动作搜索，而不是重新罗列 artifact 库存。
+- `2026-04-08` 源码地图线也应继续固定一个更硬标准：later maintainer 的单跳 veto 地图必须同时暴露 `first local veto cue -> first retreat layer`。若源码地图只能帮助 grep 文件，却不能帮助 later maintainer 一跳回到 `hotspot kernel / sole writer / retreat layer`，它就还只是检索页，不算可继承的治理地图。
+- `01-源码结构地图` 的长期 locator 组也因此更明确：当问题从“代码在哪”升级成“第一条 veto 先落在哪”，优先看 `QueryGuard / sessionIngress / onChangeAppState / build.mjs` 这组 chokepoint，再回 `architecture/84` 判对象层，而不是先在 consumer subset 或 UI projection 上打补丁。
