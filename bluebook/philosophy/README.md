@@ -1,6 +1,6 @@
 # 哲学专题
 
-`philosophy/` 只回答三件事：世界如何合法进入模型，扩张为什么必须先被定价，过去为什么不得越权写回现在。这里不预排 first-hop，只保留 why 判据；若你缺的是证据 ceiling、对象摘要或执行 next hop，回对应 owner README，不在这里补 route。
+`philosophy/` 只回答三件事：世界如何合法进入模型，扩张为什么必须先被定价，过去为什么不得越权写回现在。这里不预排 first-hop，只保留 why 判据；若你缺的是证据 ceiling、对象摘要或执行 next hop，回对应归属页（owner page），不在这里补 route。
 
 ## 三条 Why 判据
 
@@ -44,4 +44,4 @@
 
 - `philosophy/` 只保留 why 判据，不重新库存 first-hop 或长链 route。
 - README 只暴露三条 why failure test 与最少量 owner 引用，不提前暴露 second-hop object nouns。
-- 需要对象、证据 ceiling、retreat layer 或 execution verdict，转对应 owner README；需要苏格拉底式自校，回 `06`；需要跨目录执行链，回 [../navigation/README.md](../navigation/README.md)。
+- 需要对象、证据 ceiling、retreat layer 或 execution verdict，转对应归属页 README；需要苏格拉底式自校，回 `06`；需要跨目录执行链，回 [../navigation/README.md](../navigation/README.md)。

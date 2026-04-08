@@ -8,6 +8,16 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 最新根仓同步记忆（2026-04-08，本批次起手 live 快照）继续保持外部阻塞态：`git fetch origin main` 成功，但 `git merge --ff-only origin/main` 仍因根仓 `/home/mo/m/projects/cc/analysis` 外部未解决冲突而失败；复核时根仓状态为 `main...origin/main [ahead 33]`，并伴随 root 工作区改动与 `UU docs/development/research-log.md`。该状态继续只作为外部事实记录；本轮所有编辑与提交仍严格只落在 `.worktrees/mainloop`。
+- 当前批次继续新增一条 subdir-claude-md-cannot-sign-world live 记忆：
+  - `84` 现在应直接写死：按需加载的子目录 `CLAUDE.md` 只能提供局部背景，不配承担 `world-definition / continue qualification` 的主签名
+  - 更稳的默认写法是：same-world 不能依赖“这次碰巧读到了哪些目录文件”，主权裁决必须由启动期可确定加载的 foundation 与执行侧 enforcement 共同签署
+- 当前批次继续新增一条 deny-first-boundary-first live 记忆：
+  - `85` 现在应直接把 `permissions` 与 `sandboxing` 压回两层不同边界：前者回答是否配尝试扩张，后者回答即便允许也最多能到哪里
+  - 更稳的默认写法是：成熟治理默认应是 `deny-first / boundary-first`，不要把两者误写成“多一道安全检查”
+- 当前批次继续新增一条 owner-page-to-guishuye live 记忆：
+  - 高流量入口里残留的 `owner page / why owner / owner README` 现在默认继续统一收敛成 `归属页（owner page）`
+  - 更稳的默认写法是：首次出现保留一次英文括注，后续只用 `归属页`
 - 当前批次继续新增一条 claude-md-foundation-not-enforcement live 记忆：
   - 官方 docs 现在已明确：`CLAUDE.md` / memory 文件是自动加载、分层叠加的 foundation，强制边界仍要靠 settings、permissions、sandboxing 与 hook veto 这类执行侧机制成立
   - 更稳的默认写法是：在 Prompt 线里把 `CLAUDE.md` 归入 foundation / context 层，不把它误写成 enforcement surface

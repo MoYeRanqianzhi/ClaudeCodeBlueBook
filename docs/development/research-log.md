@@ -2,6 +2,10 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的根仓同步结论：本轮起手 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 仍因根仓 `/home/mo/m/projects/cc/analysis` 外部未解决冲突而失败；复核时根仓状态为 `main...origin/main [ahead 33]`，并伴随 root 工作区改动与 `UU docs/development/research-log.md`。该漂移继续只作为外部事实记录；本轮所有正文与提交仍严格只在 `mainloop` 内完成。
+- 本轮新的 Prompt why 结论：并行 Agent 指出，`84` 还缺一条比“foundation 不是 enforcement”更硬的确定性边界。本轮已把它补进 `84`：按需加载的子目录 `CLAUDE.md` 只能提供局部背景，不配承担 `world-definition / continue qualification` 的主签名；否则 same-world 会被“这次碰巧读到了哪些目录文件”随机化。当前判断是，这一句直接把官方 memory hierarchy 的公开定义压成了 later consumer 能拿来拒收的 first test。
+- 本轮新的治理 why 结论：并行 Agent 继续把 `85` 压硬了一步。本轮已把 `permissions = 尝试资格裁决面`、`sandboxing = 即便允许也只能在边界内发生的硬约束面` 这组公开定义压回 why，并把它收成 `deny-first / boundary-first` 的治理秩序。当前判断是，这一步比再列一张 permissions/sandbox 机制表更值钱，因为它直接解释了为什么治理不是“多一道检查”，而是“防免费扩张先发生”。
+- 本轮新的目录结构结论：高流量入口里现在还残留两类会让 later consumer 多想一步的旧写法。本轮一方面继续把 `navigation/01 / 02 / 38` 里的 `86/87` 单出口拆开，另一方面也把 `owner page / why owner / owner README` 统一收敛成 `归属页（owner page）`。当前判断是，这类改动虽然很小，但收益高，因为它们正好处在 later consumer 的 first-hop 决策位。
 - 本轮新的 Prompt why 结论：官方 docs 进一步把 `84` 的跨组件主权继承写硬了。文档明确把 `CLAUDE.md` / memory 文件定义成自动加载、分层叠加的 foundation，而不是强制性 enforcement surface；强制边界仍要靠 settings、permissions、sandboxing 与 hook veto 这类执行侧机制成立。本轮已把这层判断补进 `84`。当前判断是，这一句能更稳地阻止 later maintainer 把 `CLAUDE.md` 误读成“安全边界本体”或“更强系统提示词”。
 - 本轮新的当前真相 why 结论：在高流量路由页开始拆 `86/87` 之后，`86` 自己也需要把职责边界写死。本轮已在 `86` 明确：本页只回答“过去为何不得越权写回现在”；若问题已经变成“源码质量为什么不能退回目录观感、文件大小与模块美学”，统一回 `87`。当前判断是，这一步能减少对象页、地图页和 why 页之间继续把 present-truth why 与 source-quality why 糊成一团。
 - 本轮新的目录结构结论：`architecture/README` 与 `01-源码结构地图` 仍残留把 why-proof 单写成 `87` 的高流量旧路由。本轮已把它们改成显式区分 `86 = 当前真相 why`、`87 = 源码质量 why`。当前判断是，这类修正虽然只改几句，但价值高于再补一个新 README，因为它直接修掉了 high-traffic 页把读者送错主语的问题。
