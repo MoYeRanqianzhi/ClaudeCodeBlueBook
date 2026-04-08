@@ -36,6 +36,7 @@
   里的“路径 14：我想分清 root flags、root commands 和 slash commands”。
   如果你主要卡在 `claude auth`、`claude mcp`、`claude plugin`、`claude doctor`
   和 `/login`、`/mcp`、`/plugin`、`/status` 为什么不在同一层，再接着看
+  [00-阅读路径.md](./00-%E9%98%85%E8%AF%BB%E8%B7%AF%E5%BE%84.md)
   里的“路径 15：我想分清会外 root commands 和会内面板”。
 - 建立稳定工作流：
   [01-主线使用/05-开工前自检：状态、诊断、额度与工作边界.md](./01-%E4%B8%BB%E7%BA%BF%E4%BD%BF%E7%94%A8/05-%E5%BC%80%E5%B7%A5%E5%89%8D%E8%87%AA%E6%A3%80%EF%BC%9A%E7%8A%B6%E6%80%81%E3%80%81%E8%AF%8A%E6%96%AD%E3%80%81%E9%A2%9D%E5%BA%A6%E4%B8%8E%E5%B7%A5%E4%BD%9C%E8%BE%B9%E7%95%8C.md) ->
