@@ -208,6 +208,9 @@
 - 想把 `111-115` 先还原成 builder transport、callback surface 与 UI consumer 的四层可见性表：
   [03-参考索引/02-能力边界/197-Headless print builder-callback-UI branch map 索引.md](./03-参考索引/02-能力边界/197-Headless%20print%20builder-callback-UI%20branch%20map%20索引.md) ->
   [05-控制面深挖/210-builder transport、callback surface、streamlined dual-entry 与 UI consumer policy：为什么 111、112、113、114、115 不是并列细页，而是先定四层可见性表，再分叉到 streamlined 与 adapter 两条后继线.md](./05-控制面深挖/210-builder%20transport、callback%20surface、streamlined%20dual-entry%20与%20UI%20consumer%20policy：为什么%20111、112、113、114、115%20不是并列细页，而是先定四层可见性表，再分叉到%20streamlined%20与%20adapter%20两条后继线.md)
+- 想把 `116-121` 先还原成 completion signal、system.init dual-axis 与 history attach restore 的三组相邻配对分叉：
+  [03-参考索引/02-能力边界/198-Headless print completion-init-attach pair map 索引.md](./03-参考索引/02-能力边界/198-Headless%20print%20completion-init-attach%20pair%20map%20索引.md) ->
+  [05-控制面深挖/211-completion signal、system.init dual-axis、history attach restore 与 loading edge：为什么 116、117、118、119、120、121 不是线性后续页，而是三组相邻配对分叉.md](./05-控制面深挖/211-completion%20signal、system.init%20dual-axis、history%20attach%20restore%20与%20loading%20edge：为什么%20116、117、118、119、120、121%20不是线性后续页，而是三组相邻配对分叉.md)
 
 如果你已经确定要读某个专题，请先到对应 README 再选深页，不要把根前门当默认深链库存。
 

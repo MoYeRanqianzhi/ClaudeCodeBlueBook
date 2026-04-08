@@ -220,3 +220,4 @@
 - [195-Headless print summary-tail and observer-restore branch map 索引.md](./195-Headless%20print%20summary-tail%20and%20observer-restore%20branch%20map%20索引.md)
 - [196-Headless print wire-visibility and projection branch map 索引.md](./196-Headless%20print%20wire-visibility%20and%20projection%20branch%20map%20索引.md)
 - [197-Headless print builder-callback-UI branch map 索引.md](./197-Headless%20print%20builder-callback-UI%20branch%20map%20索引.md)
+- [198-Headless print completion-init-attach pair map 索引.md](./198-Headless%20print%20completion-init-attach%20pair%20map%20索引.md)
