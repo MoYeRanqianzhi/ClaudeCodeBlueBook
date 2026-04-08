@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `402`、把附录推进到 `386`、把源码剖面推进到 `253`；链路从 `stronger-request cleanup-step-up reauthorization-governance` 继续推进到 `stronger-request continuation-governance`，说明 stronger-request cleanup 已进一步进入“现在够格再尝试”与“刚才那条被挡下的请求是否仍该算作同一条继续”之间的治理分层。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=403 / appendix=386 / source-notes=253`。当前唯一 open question 已继续前推到 `stronger-request completion-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `401`、把附录推进到 `385`、把源码剖面推进到 `252`；链路从 `stronger-request cleanup-use-time revalidation-governance` 继续推进到 `stronger-request cleanup-step-up reauthorization-governance`，说明 stronger-request cleanup 已进一步进入“现在还能不能用”与“这份 current proof 对更强请求是否仍然太弱”之间的治理分层。
 - 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=402 / appendix=385 / source-notes=252`。当前唯一 open question 已继续前推到 `stronger-request continuation-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `400`、把附录推进到 `384`、把源码剖面推进到 `251`；链路从 `stronger-request cleanup-reassurance-governance` 继续推进到 `stronger-request cleanup-use-time revalidation-governance`，说明 stronger-request cleanup 已进一步进入“这句 reassurance 现在敢担保到什么程度”与“真正 consumer 在 live use 那一刻是否仍配继续把它当真”之间的治理分层。
