@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的目录结构结论：并行 Agent 指出，`navigation/01` 里 `philosophy/84-87` 的写法更像伪路径而不是稳定归属目标。本轮已把它统一改成明确可点击的归属链接。当前判断是，这虽然只是入口层的小修正，但价值高，因为它直接减少了 later consumer 把 why-proof 当成 route 串去兜圈的概率。
+- 本轮新的根仓同步结论：本轮起手 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；复核时根仓 `/home/mo/m/projects/cc/analysis` 为 `main...origin/main`。本轮继续只在 `mainloop` 内推进与提交。
+- 本轮新的设计内涵结论：在多轮把 `CLAUDE.md / hooks / skills / sandboxing / permissions` 都写成 operator-governance 工件之后，`03` 还缺一条更硬的制度判断。本轮已把它补进 `03`：这些工件并不共享同一签字权，`CLAUDE.md` 这类 foundation 只配塑形上下文与偏好，permissions / sandboxing / hook veto 这类执行侧机制才配正式收紧与阻断。当前判断是，这一句能更直接阻止 later maintainer 把 foundation、裁决面与硬边界混写成同一层治理真相。
 - 本轮新的根仓同步结论：本轮起手 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 仍因根仓 `/home/mo/m/projects/cc/analysis` 外部未解决冲突而失败；复核时根仓状态为 `main...origin/main [ahead 33]`，并伴随 root 工作区改动与 `UU docs/development/research-log.md`。该漂移继续只作为外部事实记录；本轮所有正文与提交仍严格只在 `mainloop` 内完成。
 - 本轮新的 Prompt why 结论：并行 Agent 指出，`84` 还缺一条比“foundation 不是 enforcement”更硬的确定性边界。本轮已把它补进 `84`：按需加载的子目录 `CLAUDE.md` 只能提供局部背景，不配承担 `world-definition / continue qualification` 的主签名；否则 same-world 会被“这次碰巧读到了哪些目录文件”随机化。当前判断是，这一句直接把官方 memory hierarchy 的公开定义压成了 later consumer 能拿来拒收的 first test。
 - 本轮新的治理 why 结论：并行 Agent 继续把 `85` 压硬了一步。本轮已把 `permissions = 尝试资格裁决面`、`sandboxing = 即便允许也只能在边界内发生的硬约束面` 这组公开定义压回 why，并把它收成 `deny-first / boundary-first` 的治理秩序。当前判断是，这一步比再列一张 permissions/sandbox 机制表更值钱，因为它直接解释了为什么治理不是“多一道检查”，而是“防免费扩张先发生”。

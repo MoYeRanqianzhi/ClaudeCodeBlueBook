@@ -8,7 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
-- 最新根仓同步记忆（2026-04-08，本批次起手 live 快照）继续保持外部阻塞态：`git fetch origin main` 成功，但 `git merge --ff-only origin/main` 仍因根仓 `/home/mo/m/projects/cc/analysis` 外部未解决冲突而失败；复核时根仓状态为 `main...origin/main [ahead 33]`，并伴随 root 工作区改动与 `UU docs/development/research-log.md`。该状态继续只作为外部事实记录；本轮所有编辑与提交仍严格只落在 `.worktrees/mainloop`。
+- 当前批次继续新增一条 clickable-owner-links-over-pseudo-routes live 记忆：
+  - `navigation/01` 这类高流量页里，像 `philosophy/86`、`philosophy/87` 这样的编号索引默认继续优先改成明确可点击的归属链接，而不是保留“像路径的索引串”
+  - 更稳的默认写法是：later consumer 要看到的是 why-proof 的可点归属目标，而不是一串会被误读成目录 route 的伪路径
+- 最新根仓同步记忆（2026-04-08，本批次起手 live 快照）继续保持健康态：`git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；复核时根仓 `/home/mo/m/projects/cc/analysis` 为 `main...origin/main`。该状态继续只作为外部事实记录；本轮所有编辑与提交仍严格只落在 `.worktrees/mainloop`。
+- 当前批次继续新增一条 operator-artifacts-have-different-signing-rights live 记忆：
+  - `03` 现在应直接把 operator-governance 工件的签字权差异写死：`CLAUDE.md` 这类 foundation 只配塑形上下文与偏好，permissions / sandboxing / hook veto 这类执行侧机制才配正式收紧与阻断
+  - 更稳的默认写法是：成熟 runtime 的先进性不在于“工件更多”，而在于 later maintainer 不会把 foundation、裁决面和硬边界混成同一层治理真相
 - 当前批次继续新增一条 subdir-claude-md-cannot-sign-world live 记忆：
   - `84` 现在应直接写死：按需加载的子目录 `CLAUDE.md` 只能提供局部背景，不配承担 `world-definition / continue qualification` 的主签名
   - 更稳的默认写法是：same-world 不能依赖“这次碰巧读到了哪些目录文件”，主权裁决必须由启动期可确定加载的 foundation 与执行侧 enforcement 共同签署
