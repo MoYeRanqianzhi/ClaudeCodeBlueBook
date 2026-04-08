@@ -8,6 +8,13 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 102-claim-state-wording live 记忆：
+  - `102` 正文默认继续把 `current-truth surface / candidate` 只保留为兼容标签
+  - 更稳的默认主句是 `current-truth claim state / provisional claim`，避免证据梯度页重新长回 object-flavored wording
+- 当前批次继续新增一条 84-failure-before-diagnostics live 记忆：
+  - `84` 默认继续先停在 same-world failure test，再谈 `stable prefix / visibility pruning / delegated-context downgrade / lawful continuation` 这些兼容标签
+  - Prompt why 页若再把 diagnostic labels 贴回主测试前后，默认按 mechanism-inventory 回流处理
+- 最新根仓同步记忆（2026-04-08，本批次本轮再深化）继续保持健康态：`git fetch origin main` 与 `git merge --ff-only origin/main` 均成功，结果为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
 - 当前批次继续新增一条 source-quality-speaking-right-cleanup live 记忆：
   - 根 `README` 默认继续只把 `guides/102` 写成源码质量线首跳，不再用 `仲裁 / promotion` 这类证据裁决语气
   - `navigation/README` 默认继续只用 `artifact / evidence` 反查词，不再把自己写成 `verdict` 分发表

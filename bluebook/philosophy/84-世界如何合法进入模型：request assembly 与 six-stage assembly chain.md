@@ -37,7 +37,7 @@
 
 这三问里只要有一问需要 later consumer 重答，same-world test 就已经失败；此时不该先补摘要、补说明或补第二张检查表，而该先停止继续。
 
-`stable prefix / visibility pruning / delegated-context downgrade / lawful continuation` 这些词之所以值钱，不是因为术语齐，而是因为它们都在回答同一件事：later consumer 是否继承了同一份已编译世界判决。它们只能在 same-world failure 已经成立后充当诊断标签，不能反过来抢 why 页主句。
+如果 same-world failure 已经成立，才值得继续用 `stable prefix / visibility pruning / delegated-context downgrade / lawful continuation` 这些兼容标签去诊断断点；它们不配反过来抢 why 页主句。
 
 所谓合法复数，也只允许 surface pluralism，不允许 adjudication pluralism。多个 surface 只有在同时满足下列条件时，才仍算同一世界：
 
@@ -64,7 +64,7 @@ Claude Code 更深的一层是：
 
 这会把输入装配从“说服工具”改写成“准入顺序”。
 
-也就是说，这条世界准入能力首先不是表达能力，而是 later consumer 围绕同一条 `message lineage` 继续工作的能力。被外化的也不是“一段更完整的提示词文本”，而是哪些世界法必须先由正式对象持有、记录并可复核；否则 surface 再多，也只是在不同 consumer 之间重复协商同一现场。
+也就是说，这条世界准入能力首先不是表达能力，而是 later consumer 围绕同一现场继续工作的能力。被外化的也不是“一段更完整的提示词文本”，而是足以让接手者不用重谈世界就能继续动作的最小依据；否则 surface 再多，也只是在不同 consumer 之间重复协商同一现场。
 
 late binding 因此也只能发生在预授权槽位内。更硬一点说：
 

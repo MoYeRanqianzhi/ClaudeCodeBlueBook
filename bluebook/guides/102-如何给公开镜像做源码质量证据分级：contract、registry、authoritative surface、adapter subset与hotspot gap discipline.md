@@ -27,7 +27,7 @@
 
 如果只先记公开镜像的源码质量前门顺序，也只记这条：
 
-- `public artifact ceiling -> contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+- `public artifact ceiling -> contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
 这条 ladder 不是证据分类游戏；本页只判断证据是否足以 promotion，还是必须 downgrade 成 candidate、subset 或 gap note。
 
@@ -36,9 +36,9 @@
 - 文件名保留旧词只是为了兼容检索；正文在这一级统一把 `current-truth surface` 读作 current-truth claim state，而不是对象层 surface verdict。
 - 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航与对象展开即使被提及，也只算证据状态声明，不算新的 frontdoor。
 - 在这条线里，artifact completeness 只决定 promotion eligibility，不重写下游页面的稳定职责；页面标题与补写者都不额外增加签字权。
-- 凡正文把对象写成 `consumer subset` 或 `current-truth surface candidate`，必须同时把 `downgrade stamp` 与 `unresolved-authority note` 一起落页；只写“这里要保守”而不写这条说明，默认按证据纪律未落地处理。
+- 凡正文把对象写成 `consumer subset` 或 provisional current-truth claim，必须同时把 `downgrade stamp` 与 `unresolved-authority note` 一起落页；只写“这里要保守”而不写这条说明，默认按证据纪律未落地处理。
 - 若对象层 authority 仍需细化，note 只说明“缺少 promotion 所需证明”，不附带任何路由义务。
-- 若 object-level authority 还没锁定，就只配先写 `current-truth surface candidate` 这个兼容标签，并把它读作 provisional current-truth claim。
+- 若 object-level authority 还没锁定，就只配先写 provisional current-truth claim；`current-truth surface candidate` 只保留为兼容标签。
 
 这条线最短的 reject trio 也只认：
 
@@ -104,10 +104,10 @@
    - 系统正式承认哪些对象、状态和动作可以存在。
 2. `registry`
    - 当前 build / 当前 runtime 真的注册了哪些对象。
-3. `current-truth surface`
-   - 在本页只指“current-truth claim 已获 promotion”的证据状态；`surface` 在这里只是兼容标签，不在这里回答对象层谁在写现在。
-4. `current-truth surface candidate`
-   - 这不是独立 rung，而是上一级在证据尚未满足 promotion 条件时的降格状态；此时只能保留 unresolved-authority note。
+3. `current-truth claim state`
+   - 在本页只指“current-truth claim 已获 promotion”的证据状态；`current-truth surface` 在这里只是兼容标签，不在这里回答对象层谁在写现在。
+4. `provisional claim`
+   - 这不是独立 rung，而是上一级在证据尚未满足 promotion 条件时的降格状态；`current-truth surface candidate` 只保留为兼容标签。
 5. `consumer subset`
    - 同一份权威真相对不同 host / adapter / projection 只暴露各自职责宽度。
 6. `hotspot kernel`
@@ -117,8 +117,8 @@
 
 更稳的顺序是：
 
-- 能证明 `current-truth surface` 就直接写 `current-truth surface`
-- 还不能证明时，就降格写 `current-truth surface candidate`
+- 能证明 current-truth claim 已获 promotion，就直接按 claim state 写
+- 还不能证明时，就降格写 provisional claim
 - 不要反过来把所有接近当前真相的线索都写成已经完成 promotion 的 claim
 
 这一页后面的所有降格规则都建立在这三句上，而不是建立在“我很熟源码”这种阅读体感上。
@@ -180,7 +180,7 @@ contract 和 registry 都还不够。
 
 - 当前这份 claim 有没有足够可见证据支持 promotion
 
-这里的 `current-truth surface` 不是在本页回答“谁在写现在”，而是在判断公开镜像里的可见证据是否已经足够支撑 promotion。若这些证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `provisional claim`，并同步附一条 unresolved-authority note；`current-truth surface candidate` 只保留为兼容标签。
+这里的 `current-truth claim state` 不是在本页回答“谁在写现在”，而是在判断公开镜像里的可见证据是否已经足够支撑 promotion。若这些证据还没锁定，就不能宣布这层真相已经成立，在公开镜像里最多只能先把它记成 `provisional claim`，并同步附一条 unresolved-authority note；`current-truth surface / candidate` 只保留为兼容标签。
 
 典型信号只在证明“这里可能支持 current-truth claim”，不在本页直接升级成对象层 verdict。
 
