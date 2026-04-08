@@ -2,8 +2,14 @@
 
 这页只做速查，不替代长文专题。长文解释请结合：
 
-- `05-控制面深挖/16-Hooks 的加载、注册、执行与 UI：为什么 /hooks 看到的不是实际会跑的 hooks.md`
-- `05-控制面深挖/14-来源信任、Trust Dialog 与 Plugin-only Policy：扩展面为何分级信任.md`
+- [05-控制面深挖/16-Hooks 的加载、注册、执行与 UI：为什么 `/hooks` 看到的不是实际会跑的 hooks.md](../../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/16-Hooks%20%E7%9A%84%E5%8A%A0%E8%BD%BD%E3%80%81%E6%B3%A8%E5%86%8C%E3%80%81%E6%89%A7%E8%A1%8C%E4%B8%8E%20UI%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20slash-hooks%20%E7%9C%8B%E5%88%B0%E7%9A%84%E4%B8%8D%E6%98%AF%E5%AE%9E%E9%99%85%E4%BC%9A%E8%B7%91%E7%9A%84%20hooks.md)
+- [05-控制面深挖/14-来源信任、Trust Dialog 与 Plugin-only Policy：扩展面为何分级信任.md](../../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/14-%E6%9D%A5%E6%BA%90%E4%BF%A1%E4%BB%BB%E3%80%81Trust%20Dialog%20%E4%B8%8E%20Plugin-only%20Policy%EF%BC%9A%E6%89%A9%E5%B1%95%E9%9D%A2%E4%B8%BA%E4%BD%95%E5%88%86%E7%BA%A7%E4%BF%A1%E4%BB%BB.md)
+
+边界先压实：
+
+- 稳定可见：`/hooks` 是当前 session 的 UI 观察面，不是 hooks 权威总表。
+- 条件公开：registered plugin hooks、session hooks、`statusLine` / `fileSuggestion` 会随 trust、managed-only、plugin-only policy 改变。
+- 内部/灰度：UI grouping、modal banner 文案和底层注册数据结构只作证据，不升级成稳定合同。
 
 ## 1. hooks 的四层不同问题
 

@@ -2,8 +2,16 @@
 
 这页只做速查，不替代长文专题。长文解释请结合：
 
-- `05-控制面深挖/19-插件自动物化、Startup Trust 与 Headless 刷新：为什么插件有时会自己出现、有时只提示 /reload-plugins.md`
-- `05-控制面深挖/18-插件安装、待刷新与当前会话激活：为什么 /reload-plugins 不是安装器.md`
+- [05-控制面深挖/19-插件自动物化、Startup Trust 与 Headless 刷新：为什么插件有时会自己出现、有时只提示 `/reload-plugins`.md](../../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/19-%E6%8F%92%E4%BB%B6%E8%87%AA%E5%8A%A8%E7%89%A9%E5%8C%96%E3%80%81Startup%20Trust%20%E4%B8%8E%20Headless%20%E5%88%B7%E6%96%B0%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8F%92%E4%BB%B6%E6%9C%89%E6%97%B6%E4%BC%9A%E8%87%AA%E5%B7%B1%E5%87%BA%E7%8E%B0%E3%80%81%E6%9C%89%E6%97%B6%E5%8F%AA%E6%8F%90%E7%A4%BA%20slash-reload-plugins.md)
+- [05-控制面深挖/18-插件安装、待刷新与当前会话激活：为什么 `/reload-plugins` 不是安装器.md](../../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/18-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E3%80%81%E5%BE%85%E5%88%B7%E6%96%B0%E4%B8%8E%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E6%BF%80%E6%B4%BB%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20slash-reload-plugins%20%E4%B8%8D%E6%98%AF%E5%AE%89%E8%A3%85%E5%99%A8.md)
+
+这页默认你已经分清 `reload-plugins` 是当前 session 的手动激活原语；如果这一步还没压实，先回看 `07-插件安装、待刷新与当前会话激活索引.md`。
+
+边界先压实：
+
+- 稳定可见：interactive startup 会先过 trust，再决定是否只停在 `needsRefresh` 提示。
+- 条件公开：auto-refresh、sync install、headless refresh 取决于宿主、启动模式和后台链路，不是统一主线。
+- 内部/灰度：`skipPluginPrefetch`、seed install 时序、timeout 细节只作实现证据。
 
 ## 1. 自动链的四层对象
 

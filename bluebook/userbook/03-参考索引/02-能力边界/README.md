@@ -8,6 +8,12 @@
 - [06-MCP 总览、按名解析与 Agent 引用索引.md](./06-MCP%20%E6%80%BB%E8%A7%88%E3%80%81%E6%8C%89%E5%90%8D%E8%A7%A3%E6%9E%90%E4%B8%8E%20Agent%20%E5%BC%95%E7%94%A8%E7%B4%A2%E5%BC%95.md)
 - [07-插件安装、待刷新与当前会话激活索引.md](./07-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E3%80%81%E5%BE%85%E5%88%B7%E6%96%B0%E4%B8%8E%E5%BD%93%E5%89%8D%E4%BC%9A%E8%AF%9D%E6%BF%80%E6%B4%BB%E7%B4%A2%E5%BC%95.md)
 - [08-插件自动物化、Startup Trust 与 Headless 刷新索引.md](./08-%E6%8F%92%E4%BB%B6%E8%87%AA%E5%8A%A8%E7%89%A9%E5%8C%96%E3%80%81Startup%20Trust%20%E4%B8%8E%20Headless%20%E5%88%B7%E6%96%B0%E7%B4%A2%E5%BC%95.md)
+
+读这四页时，建议把边界先压实：
+
+- `05` 讲 `/hooks` 的 UI 观察面，不等于注册面和执行面。
+- `07` 讲 `/reload-plugins` 如何把磁盘变化手动激活到当前 session。
+- `08` 讲为什么自动链有时会前进到激活层，有时只停在待刷新提示。
 - [09-Headless 启动链、首问就绪与 StructuredIO 索引.md](./09-Headless%20%E5%90%AF%E5%8A%A8%E9%93%BE%E3%80%81%E9%A6%96%E9%97%AE%E5%B0%B1%E7%BB%AA%E4%B8%8E%20StructuredIO%20%E7%B4%A2%E5%BC%95.md)
 - [10-Host、Viewer 与 Health Check 索引.md](./10-Host%E3%80%81Viewer%20%E4%B8%8E%20Health%20Check%20%E7%B4%A2%E5%BC%95.md)
 - [11-Trust Dialog、项目级 .mcp.json 批准与 Health Check 索引.md](./11-Trust%20Dialog%E3%80%81%E9%A1%B9%E7%9B%AE%E7%BA%A7%20.mcp.json%20%E6%89%B9%E5%87%86%E4%B8%8E%20Health%20Check%20%E7%B4%A2%E5%BC%95.md)
