@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 landing-card-demoted-from-global-chain live 记忆：
+  - `landing card` 现在继续保留在 `architecture/README` 里，作为局部对象摘要模板
+  - 更稳的默认写法是：高层导航与 artifact chain 用 `object summary / local quality gate` 指代它，而不是把 `landing card` 自己抬成跨层 canonical token
 - 当前批次继续新增一条 03-remove-standalone-source-quality-tail live 记忆：
   - `03` 尾段原先独立的源码质量影子自校节现在已完全并掉，不再单列“尺寸治理不是 first test”
   - 更稳的默认写法是：源码质量这条判断统一让回 `87 / 06`；`03` 只保留仍有 cross-line 增量的迁移、自审、坏解对照与目录单源化原则
