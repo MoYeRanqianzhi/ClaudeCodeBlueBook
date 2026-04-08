@@ -8,6 +8,11 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 control-pages-no-second-frontdoor live 记忆：
+  - `README` 默认继续只做定题与首跳，不再用第二句解释 `84 / 10 / 102` 为什么回答同一个问题
+  - `03` 默认继续只解释三条母线为什么成立，不再在页首重发 `first test / counterfeit / minimum repair`
+  - `06` 默认继续只验三条母线是否仍闭合，不再把 owner 页的具体 first-test、artifact 与回退动作逐条重述
+- 最新根仓同步记忆（2026-04-08，本批次本轮继续深化）继续保持健康态：`git fetch origin main` 与 `git merge --ff-only origin/main` 均成功，结果为 `Already up to date.`；正文继续只在 `.worktrees/mainloop` 内推进。
 - 当前批次继续新增一条 84-failure-first-wording live 记忆：
   - `84` 默认继续先停在 same-world failure test，不在主测试后立刻摊开 `stable prefix / visibility pruning / delegated-context downgrade / lawful continuation`
   - `合法复数` 与 `late binding` 默认继续只用来解释“何时已经滑回重协商”，不再写成条件清单或对象约束表
