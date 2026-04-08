@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 250 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 251 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -269,6 +269,7 @@
 248. [248-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的强请求清理重新并入治理边界](248-onConnectionAttempt、dynamicMcpState与reregisterChannelHandlerAfterReconnect的强请求清理重新并入治理边界.md)
 249. [249-buildMcpServerStatuses、useMcpConnectivityStatus与MCPReconnect的强请求清理重新投影治理边界](249-buildMcpServerStatuses、useMcpConnectivityStatus与MCPReconnect的强请求清理重新投影治理边界.md)
 250. [250-McpAuthTool、MCPRemoteServerMenu与MCPReconnect的强请求清理重新担保治理边界](250-McpAuthTool、MCPRemoteServerMenu与MCPReconnect的强请求清理重新担保治理边界.md)
+251. [251-ensureConnectedClient、ReadMcpResourceTool与toolExecution的强请求清理用时重验证治理边界](251-ensureConnectedClient、ReadMcpResourceTool与toolExecution的强请求清理用时重验证治理边界.md)
 
 ## 和其他目录的分工
 
