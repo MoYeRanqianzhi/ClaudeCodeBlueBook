@@ -211,6 +211,7 @@
 - [167-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata 与 RemoteIO：为什么 CCR v2 的 metadata readback 不是 observer metadata 的同一种本地消费合同.md](./167-restoredWorkerState、externalMetadataToAppState、SessionExternalMetadata%20与%20RemoteIO：为什么%20CCR%20v2%20的%20metadata%20readback%20不是%20observer%20metadata%20的同一种本地消费合同.md)
 - [接续与桥接分叉/README.md](./接续与桥接分叉/README.md)
 范围收束页：`218` 固定 `168-179` 子树，`219` 承接它的三个前向出口；先看范围图，再回 168-190 叶子页。
+这里的“稳定”优先指阅读骨架稳定，不等于这些页里的 branch 节点都属于稳定公开能力。
 - [218-headless source、bridge authority 与 create-context 子树：为什么 168-179 不是线性十二连.md](./218-headless%20source、bridge%20authority%20与%20create-context%20子树：为什么%20168-179%20不是线性十二连.md)
 - [219-teleport、model 与 bridge 分支：为什么 180-190 不是线性十一连.md](./219-teleport、model%20与%20bridge%20分支：为什么%20180-190%20不是线性十一连.md)
 - [168-StructuredIO、RemoteIO、setInternalEventReader、setInternalEventWriter 与 flushInternalEvents：为什么 headless transport 的协议宿主不等于同一种恢复厚度.md](./168-StructuredIO、RemoteIO、setInternalEventReader、setInternalEventWriter%20与%20flushInternalEvents：为什么%20headless%20transport%20的协议宿主不等于同一种恢复厚度.md)

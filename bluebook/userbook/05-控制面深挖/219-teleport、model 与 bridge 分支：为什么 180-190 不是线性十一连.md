@@ -391,13 +391,23 @@ model line
 
 - `179` 的 git declaration / branch projection
 
-## 第七层：稳定 / 条件 / 灰度保护
+## 第七层：稳定阅读骨架 / 条件公开 / 内部证据层
+
+这里的“稳定”只指：
+
+- `180-190` 作为阅读骨架已经收稳
+
+不指：
+
+- `teleport runtime zoom`、`model ledger`、`bridge outbound trunk` 这些分析节点本身已经升级成稳定公开能力
+
+真正的稳定公开能力判断，仍应回到用户入口、公开主路径与能力边界写作规范。
 
 | 类型 | 对象 |
 | --- | --- |
-| 稳定可见 | `180` = `179` 下的 teleport runtime zoom；model line 里真正该保护的是 `182` 的 ledger / `184` 的 authority layer 区分，以及 `188` 里显式拒绝、写入校验、选项隐藏且保留 `Default` 这类用户可观察 surface；bridge line 至少稳定分成 outbound trunk `181 -> 183 -> 186 -> 189 -> 190` 与紧贴其后的 ingress / control / blocked-state 后继问题 |
+| 稳定阅读骨架 | 稳定的是三条后继线的分层读法：`180` 接 `179` 的 teleport runtime 线；`182 -> 184 -> 185 -> 187 -> 188` 组成 model ledger / resolution / allowlist 线；`181 -> 183 -> 186 -> 189 -> 190` 固定 bridge outbound trunk，并明确它会继续长向 post-190 的 ingress / control / blocked-state 后继问题。 |
 | 条件公开 | 显式 `environmentId` teleport path、`outcomes: []`、`ANTHROPIC_MODEL` / agent bootstrap / allowlist veto、v1 continuity 继承与 v2 fresh-session replay、same-session carryover 与 foreground restore 厚度差异 |
-| 内部/灰度层 | `session_context.model`、`metadata.model`、`lastModelUsage`、override slot 的具体存储形状、`initialMessageUUIDs` / `recentPostedUUIDs` / `recentInboundUUIDs` / `lastTransportSequenceNum` 这些具体账本、branch naming、history cap 数值、provider / allowlist 细则、部分 UX surface 的报错文案 |
+| 内部证据层 | `teleport runtime zoom`、`model ledger`、`session_context.model`、`metadata.model`、`lastModelUsage`、override slot 的具体存储形状、`initialMessageUUIDs` / `recentPostedUUIDs` / `recentInboundUUIDs` / `lastTransportSequenceNum` 这些具体账本、branch naming、history cap 数值、provider / allowlist 细则、部分 UX surface 的报错文案 |
 
 ## 苏格拉底式自审
 

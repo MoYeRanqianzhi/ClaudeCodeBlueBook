@@ -61,13 +61,27 @@
 | 只要看见 `can_use_tool`，就已经拿到了完整 blocked-state 合同 | 更稳的是 ask transport、blocked projection 与 bridge publish ceiling 三层分开 |
 | `createBridgeSession.events`、`initialMessageUUIDs`、`previouslyFlushedUUIDs` 只是在同一张历史账里取不同视角 | 它们分属 wire slot、local seed、success ledger、continuity ledger 等不同对象层 |
 
-## 3. stable / conditional / internal
+## 3. 稳定阅读骨架 / 条件公开 / 内部证据层
+
+这里的“稳定”只指：
+
+- `180-190` 这段阅读骨架已经稳定
+
+不指：
+
+- `teleport runtime zoom`、`bridge line`、`session_context.model` 这些分析节点已经变成稳定公开对象层
+
+真正判断对象是否属于稳定公开能力，仍应回到：
+
+- 明确用户入口
+- 发布主路径
+- `docs/userbook-memory/06-能力边界写作规范：稳定、条件、内部与影子.md`
 
 | 类型 | 对象 |
 | --- | --- |
-| 稳定可见 | `180` = teleport runtime zoom；model line 里更稳的是 saved preference vs live override 的层次、显式拒绝 / 写入校验 / 选项隐藏且保留 `Default` 的用户 surface；bridge line 里更稳的是 outbound trunk 与 post-190 ingress / control / blocked-state branch 的分层 |
+| 稳定阅读骨架 | 稳定的是三条后继线的读法：`180` 接 `179` 的 teleport runtime 线；`182 -> 184 -> 185 -> 187 -> 188` 组成 model ledger / resolution / allowlist 线；`181 -> 183 -> 186 -> 189 -> 190` 固定 bridge outbound trunk，并明确它还会继续长到 post-190 的 ingress / control / blocked-state 后继问题。 |
 | 条件公开 | 显式 `environmentId` teleport path、`outcomes: []`、`ANTHROPIC_MODEL` / agent bootstrap / allowlist veto、v1 continuity 继承与 v2 fresh-session replay、same-session carryover、foreground restore 厚度 |
-| 内部/灰度层 | `session_context.model`、`metadata.model`、`lastModelUsage`、override slot 的具体存储形状、`initialMessageUUIDs` / `recentPostedUUIDs` / `recentInboundUUIDs` / `lastTransportSequenceNum` 这些具体账本、branch naming、history cap 数值、provider / allowlist 细则、部分 UX surface 的报错文案 |
+| 内部证据层 | `teleport runtime zoom`、`model ledger trunk`、`session_context.model`、`metadata.model`、`lastModelUsage`、override slot 的具体存储形状、`initialMessageUUIDs` / `recentPostedUUIDs` / `recentInboundUUIDs` / `lastTransportSequenceNum` 这些具体账本、branch naming、history cap 数值、provider / allowlist 细则、部分 UX surface 的报错文案 |
 
 更稳的 model 落笔纪律：
 

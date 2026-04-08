@@ -54,13 +54,27 @@
 | `176/177/178/179` 只是 request body 从粗到细的线性展开 | `176` 是 createSession 子根页，下面分 `177` 与 `178->179` 两条子分支 |
 | `179` 只是给 `177` 补一点 git 信息 | `179` 更稳是 `178` 的 git-context zoom，不是 `source` field appendix |
 
-## 3. stable / conditional / internal
+## 3. 稳定阅读骨架 / 条件公开 / 内部证据层
+
+这里的“稳定”只指：
+
+- `168-179` 这段阅读骨架已经稳定
+
+不指：
+
+- 表里出现的中间节点名都已经升级成稳定公开能力
+
+真正判断对象是否属于稳定公开能力，仍应回到：
+
+- 明确用户入口
+- 发布主路径
+- `docs/userbook-memory/06-能力边界写作规范：稳定、条件、内部与影子.md`
 
 | 类型 | 对象 |
 | --- | --- |
-| 稳定可见 | `168` = 邻接前置厚度轴；`169` = continuation-source 根页；`170->171` = headless source 分支；`172` = bridge-authority 根页；`173->174` = env-truth / register-authority 主干；`175` 与 `176` = `174` 区域下的 sibling zoom；`177` = 交叉 zoom；`178->179` = `176` 下的 `session_context` / git-context 分支 |
+| 稳定阅读骨架 | 稳定的是这棵子树的读法：先用 `168` 固定厚度前置层，再用 `169` 切 continuation-source 根页；之后分成 `170 -> 171` 的 headless source 分支、`172 -> 173 -> 174` 的 bridge-authority / env-truth 主干，以及 `174` 下再长出的 `175 / 176 / 177 / 178 -> 179` 几种 zoom。 |
 | 条件公开 | `print --resume url` 的 remote materialization、CCR v2 internal-event thickness、`remote-control --continue` 的 pointer continuity、`.jsonl` 的 transcript-file provenance、assistant-mode `worker_type` label |
-| 内部/灰度层 | internal-event flush cadence、pointer fanout / cleanup heuristic、env mismatch fallback、`claude/${branch || 'task'}` 命名与部分 typed readback 面的具体暴露 |
+| 内部证据层 | `bridge authority`、`env truth`、`register authority`、`session_context`、git-context 这些中间节点名，以及 internal-event flush cadence、pointer fanout / cleanup heuristic、env mismatch fallback、`claude/${branch || 'task'}` 命名与部分 typed readback 面的具体暴露 |
 
 ## 4. 六个检查问题
 

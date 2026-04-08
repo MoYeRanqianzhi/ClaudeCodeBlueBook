@@ -227,6 +227,7 @@
 - [223-2026-04-08-remote topic quartet stable-gray hardening 拆分记忆.md](./223-2026-04-08-remote%20topic%20quartet%20stable-gray%20hardening%20拆分记忆.md)
 - [224-2026-04-08-handoff cluster physical entry split 拆分记忆.md](./224-2026-04-08-handoff%20cluster%20physical%20entry%20split%20拆分记忆.md)
 - [225-2026-04-08-slash-command path serialization and boundary hardening 拆分记忆.md](./225-2026-04-08-slash-command%20path%20serialization%20and%20boundary%20hardening%20拆分记忆.md)
+- [226-2026-04-08-range-map stable-reading-skeleton hardening 拆分记忆.md](./226-2026-04-08-range-map%20stable-reading-skeleton%20hardening%20拆分记忆.md)
 
 用途：
 
