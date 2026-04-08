@@ -59,6 +59,7 @@
 - [323-2026-04-08-command-index desktop availability note 拆分记忆.md](./323-2026-04-08-command-index%20desktop%20availability%20note%20拆分记忆.md)
 - [324-2026-04-08-root long-task continuity route narrowing 拆分记忆.md](./324-2026-04-08-root%20long-task%20continuity%20route%20narrowing%20拆分记忆.md)
 - [325-2026-04-08-root path-15 example scope cleanup 拆分记忆.md](./325-2026-04-08-root%20path-15%20example%20scope%20cleanup%20拆分记忆.md)
+- [326-2026-04-08-structured-output stability bucket cleanup 拆分记忆.md](./326-2026-04-08-structured-output%20stability%20bucket%20cleanup%20拆分记忆.md)
 
 ## 全量档案
 
