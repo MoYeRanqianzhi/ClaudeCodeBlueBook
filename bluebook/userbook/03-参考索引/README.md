@@ -1,6 +1,24 @@
 # 参考索引
 
-这一部分不讲长篇原理，直接回答四个问题：
+这一部分不讲长篇原理，而是先承担两个入口角色：
+
+- 先给出 section-level hub，方便按目录结构进入。
+- 再给出 deep inventory，方便带着具体误判回来定位。
+
+## 先按目录结构进入
+
+- [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
+- [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
+- [03-技能与扩展/README.md](./03-%E6%8A%80%E8%83%BD%E4%B8%8E%E6%89%A9%E5%B1%95/README.md)
+- [04-功能面七分法.md](./04-%E5%8A%9F%E8%83%BD%E9%9D%A2%E4%B8%83%E5%88%86%E6%B3%95.md)
+- [05-任务到入口速查矩阵.md](./05-%E4%BB%BB%E5%8A%A1%E5%88%B0%E5%85%A5%E5%8F%A3%E9%80%9F%E6%9F%A5%E7%9F%A9%E9%98%B5.md)
+- [06-高价值入口运行时合同速查.md](./06-%E9%AB%98%E4%BB%B7%E5%80%BC%E5%85%A5%E5%8F%A3%E8%BF%90%E8%A1%8C%E6%97%B6%E5%90%88%E5%90%8C%E9%80%9F%E6%9F%A5.md)
+
+如果你已经知道自己要找哪类叶子问题，再继续看下面这份清单。
+
+## 深问题清单
+
+这一层继续回答以下问题：
 
 1. 到底有哪些命令。
 2. 到底有哪些工具。
@@ -209,6 +227,8 @@
 176. 为什么 `pendingPermissionHandlers`、`cancelRequest`、`recheckPermission`、`hostPattern.host` 与 `applyPermissionUpdate` 说明 permission tail 的 196、198、199、201、202 不是并列尾页，而是从 verdict ledger 分叉出去的四种后继问题。
 177. 为什么 `activeRemote`、`remoteSessionUrl`、`outboundOnly`、`getIsRemoteMode` 与 `useReplBridge` 说明 remote surface 的 132、135、138、141、142、143 不是并列 remote 页，而是从 front-state consumer topology 分叉出去的五种后继问题。
 178. 为什么 `StructuredIO`、`sessionState`、`remoteBridgeCore`、`pending_action`、`requires_action_details` 与 `reportState` 说明 `can_use_tool` 不等于 `requires_action/pending_action`，而 bridge blocked-state publish 只签裸 blocked bit。
+
+## 对应目录入口
 
 - [01-命令工具/README.md](./01-%E5%91%BD%E4%BB%A4%E5%B7%A5%E5%85%B7/README.md)
 - [02-能力边界/README.md](./02-%E8%83%BD%E5%8A%9B%E8%BE%B9%E7%95%8C/README.md)
