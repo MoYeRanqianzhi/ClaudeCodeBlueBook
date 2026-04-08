@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 207 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 213 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 源码剖面层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责把单机制证据拆开，不额外替主目录签治理 verdict。
 
 ## 这一子目录放什么
@@ -240,6 +240,12 @@
 205. [205-verifyAutoModeGateAccess、checkAndDisableAutoModeIfNeeded、verifyAndDemote与强请求清理修复治理缺口](205-verifyAutoModeGateAccess、checkAndDisableAutoModeIfNeeded、verifyAndDemote与强请求清理修复治理缺口.md)
 206. [206-runMigrations、migrateLegacyOpusToCurrent、orphan宽限期与plans continuity的强请求清理迁移治理边界](206-runMigrations、migrateLegacyOpusToCurrent、orphan宽限期与plans continuity的强请求清理迁移治理边界.md)
 207. [207-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界](207-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界.md)
+208. [208-tombstone messages、.orphaned_at与migration timestamps的强请求清理墓碑治理边界](208-tombstone messages、.orphaned_at与migration timestamps的强请求清理墓碑治理边界.md)
+209. [209-removeOrphanedAtMarker、refreshActivePlugins与copyPlanForResume的强请求清理复活治理边界](209-removeOrphanedAtMarker、refreshActivePlugins与copyPlanForResume的强请求清理复活治理边界.md)
+210. [210-deletePluginOptions、setPluginEnabledOp与copyPlanForFork的强请求清理再赋权治理边界](210-deletePluginOptions、setPluginEnabledOp与copyPlanForFork的强请求清理再赋权治理边界.md)
+211. [211-savePluginOptions、saveMcpServerUserConfig与PluginOptionsFlow的强请求清理重配置治理边界](211-savePluginOptions、saveMcpServerUserConfig与PluginOptionsFlow的强请求清理重配置治理边界.md)
+212. [212-refreshActivePlugins、reload-plugins与refreshPluginState的强请求清理重新激活治理边界](212-refreshActivePlugins、reload-plugins与refreshPluginState的强请求清理重新激活治理边界.md)
+213. [213-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的强请求清理就绪治理边界](213-pluginReconnectKey、MCPServerConnection与ReadMcpResourceTool的强请求清理就绪治理边界.md)
 
 ## 和其他目录的分工
 

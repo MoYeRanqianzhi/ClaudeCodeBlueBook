@@ -2,6 +2,11 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `357-362`，把附录推进到 `341-346`，把源码剖面推进到 `208-213`；链路从 `stronger-request cleanup-tombstone-governance` 一直推进到 `stronger-request cleanup-readiness-governance`，说明 stronger-request cleanup 已经从“旧对象怎样留下痕迹、怎样回来”继续推进到“回来后它还算不算被重新授权、重新配置、重新激活并已经就绪”。
+- 本轮新的机制证据结论：新增 `208-213` 继续把 stronger-request cleanup 的后段边界压硬。`208` 把 `tombstone messages / .orphaned_at / migration timestamps` 压成墓碑治理边界；`209` 把 `removeOrphanedAtMarker / refreshActivePlugins / copyPlanForResume` 压成复活治理边界；`210` 把 `deletePluginOptions / setPluginEnabledOp / copyPlanForFork` 压成再赋权治理边界；`211` 把 `savePluginOptions / saveMcpServerUserConfig / PluginOptionsFlow` 压成重配置治理边界；`212` 把 `refreshActivePlugins / reload-plugins / refreshPluginState` 压成重新激活治理边界；`213` 再把 `pluginReconnectKey / MCPServerConnection / ReadMcpResourceTool` 压成就绪治理边界。
+- 本轮新的技术结论：这批新增证据继续证明 `会留墓碑` 不等于 `会让它回来`，`会回来` 不等于 `还是原来那个被授权的对象`，`配置写好了` 不等于 `已经重新生效`，`重新激活` 也不等于 `已经就绪`。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=363 / appendix=346 / source-notes=213`；本轮继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
+
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `356`、把附录推进到 `340`、把源码剖面推进到 `207`；链路从 `stronger-request cleanup-migration-governance` 继续推进到 `stronger-request cleanup-sunset-governance`，说明 stronger-request cleanup 已经开始进入“旧世界何时正式退役”的治理层。
 - 本轮新的机制证据结论：新增 `207` 把 `deprecation clock / migration timestamp / orphan visibility cutoff` 压成 stronger-request cleanup 的退役治理边界，继续证明 `会迁` 不等于 `会退役`，`旧世界正在过桥` 也不等于 `旧世界已经不再算当前世界`。
 - 本轮新的技术结论：这轮新增证据继续把 stronger-request cleanup 的深层命题往前推了一格: 系统已经知道怎样让旧世界过桥，但 cleanup 线仍未正式决定那座桥什么时候必须关停，哪些旧 wording / old path / old receipt 该在何时失去 current truth 资格。
