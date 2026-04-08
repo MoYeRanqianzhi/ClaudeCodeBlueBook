@@ -223,6 +223,9 @@
 - 想把 `133-138` 先看成 schema-store consumer、bridge chain split 与 shared remote shell 的三条两步后继线：
   [03-参考索引/02-能力边界/202-133-138 schema-store consumer、bridge chain 与 remote interaction shell 索引.md](./03-参考索引/02-能力边界/202-133-138%20schema-store%20consumer%E3%80%81bridge%20chain%20%E4%B8%8E%20remote%20interaction%20shell%20索引.md) ->
   [05-控制面深挖/215-schema-store consumer path、bridge chain split 与 remote interaction shell：为什么 133、134、135、136、137、138 不是线性六连，而是从 132 分出去的三条两步后继线.md](./05-控制面深挖/215-schema-store%20consumer%20path%E3%80%81bridge%20chain%20split%20%E4%B8%8E%20remote%20interaction%20shell%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20133%E3%80%81134%E3%80%81135%E3%80%81136%E3%80%81137%E3%80%81138%20%E4%B8%8D%E6%98%AF%E7%BA%BF%E6%80%A7%E5%85%AD%E8%BF%9E%EF%BC%8C%E8%80%8C%E6%98%AF%E4%BB%8E%20132%20%E5%88%86%E5%87%BA%E5%8E%BB%E7%9A%84%E4%B8%89%E6%9D%A1%E4%B8%A4%E6%AD%A5%E5%90%8E%E7%BB%A7%E7%BA%BF.md)
+- 想把 `139-143` 先看成 post-turn_summary 可见性、mirror gray runtime、remote-session ledger 与 global remote bit 的 remote truth split：
+  [03-参考索引/02-能力边界/203-139-143 visibility、mirror runtime 与 remote truth split 索引.md](./03-参考索引/02-能力边界/203-139-143%20visibility%E3%80%81mirror%20runtime%20%E4%B8%8E%20remote%20truth%20split%20索引.md) ->
+  [05-控制面深挖/216-post_turn_summary visibility、mirror gray runtime、remote-session ledger 与 global remote bit：为什么 139、140、141、142、143 不是线性五连，而是接在三条后继线上的三组问题.md](./05-控制面深挖/216-post_turn_summary%20visibility%E3%80%81mirror%20gray%20runtime%E3%80%81remote-session%20ledger%20%E4%B8%8E%20global%20remote%20bit%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%20139%E3%80%81140%E3%80%81141%E3%80%81142%E3%80%81143%20%E4%B8%8D%E6%98%AF%E7%BA%BF%E6%80%A7%E4%BA%94%E8%BF%9E%EF%BC%8C%E8%80%8C%E6%98%AF%E6%8E%A5%E5%9C%A8%E4%B8%89%E6%9D%A1%E5%90%8E%E7%BB%A7%E7%BA%BF%E4%B8%8A%E7%9A%84%E4%B8%89%E7%BB%84%E9%97%AE%E9%A2%98.md)
 
 如果你已经确定要读某个专题，请先到对应 README 再选深页，不要把根前门当默认深链库存。
 

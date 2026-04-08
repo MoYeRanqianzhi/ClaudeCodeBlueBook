@@ -97,6 +97,7 @@
 63. headless print 的 remote recovery、viewer ownership、transport terminality 与 compaction contract 看起来都落在 `122-127` 这一段时，应该先去 `02-能力边界/199-200` 的 branch map / double-trunk map，再跳 `05-控制面深挖/212-213`。
 64. remote 的 `4001 contract / surface presence / status ledger / front-state consumer topology` 看起来都压在 `128-132` 时，先去 `02-能力边界/201`，再跳 `05-控制面深挖/214`。
 65. schema-store consumer、bridge chain split 与 shared remote interaction shell 看起来都混在 `133-138` 时，先去 `02-能力边界/202`，再跳 `05-控制面深挖/215`。
+66. `post_turn_summary` 可见性、mirror gray runtime、remote-session ledger 与 global remote bit 看起来都混在 `139-143` 时，先去 `02-能力边界/203`，再跳 `05-控制面深挖/216`。
 
 更细的问题库存统一下沉到各子目录 README 和对应索引页，不再在根 README 里重写一长串 one-off 问句。
 
