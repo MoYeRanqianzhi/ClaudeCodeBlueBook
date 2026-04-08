@@ -2,6 +2,10 @@
 
 ## 当前稳定边界
 
+- `2026-04-08` 最新一轮已完成 `404 / 388 / 255`：主线把 stronger-request cleanup 从 `stronger-request completion-governance` 继续推进到 `stronger-request finality-governance`，附录把 `completion scope / finality scope / readback evidence / governor question` 压成统一矩阵，源码剖面则把 current message completion、files_persisted、idle choreography、delivery-only flush 与 future-readable state_restored 并排钉成 `future-readable finality grammar`。这一轮稳定写出的新边界是：`completed now` 不等于 `settled for future readers`，`制度知道它这次已经完成` 不等于 `制度已经知道它以后回来时仍然成立。`
+- `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-08` 当前唯一 open question 已前推到 `stronger-request forgetting-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
+
 - `2026-04-08` 最新一轮已完成 `403 / 387 / 254`：主线把 stronger-request cleanup 从 `stronger-request continuation-governance` 继续推进到 `stronger-request completion-governance`，附录把 `continuation decision / completion decision / result settlement / governor question` 压成统一矩阵，源码剖面则把 retry loop、could-not-complete、completed progress、normalized result 与 explicit success tool_result 并排钉成 `result-settlement grammar`。这一轮稳定写出的新边界是：`allowed to continue` 不等于 `already completed`，`制度知道旧请求还该不该继续` 不等于 `制度已经知道这条继续后的请求现在究竟有没有完成。`
 - `2026-04-08` 本轮 fresh 复核根仓库时，`git fetch origin main` 成功，`git rev-list --left-right --count main...origin/main` 返回 `49 0`；根仓库随后显示 `## main...origin/main [ahead 49]`，并存在 `UU docs/development/research-log.md` 与未结束的 merge，因此 `git merge --ff-only origin/main` 失败并返回 `error: Merging is not possible because you have unmerged files.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-08` 当前唯一 open question 已前推到 `stronger-request finality-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
