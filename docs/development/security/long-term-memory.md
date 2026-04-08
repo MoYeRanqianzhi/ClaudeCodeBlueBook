@@ -2,6 +2,9 @@
 
 ## 当前稳定边界
 
+- `2026-04-08` 最新一轮已完成 `382 / 366 / 233`：主线把 stronger-request cleanup 从 `cleanup-constitution-governance` 继续推进到 `cleanup-rationale-governance`，附录把 `carrier family / primary risk object / operational duty / host visibility / rationale drift` 压成统一矩阵，源码剖面则把 live non-clobber、persisted inspection、continuity / replay、planning recovery、restore backup、environment replay、operational debugging 与 host monitoring 并排钉成 `why-this-law grammar`。这一轮稳定写出的新边界是：`家法已分` 不等于 `家法理由已被诚实保存`，`你已经区分这些 family 活在哪个 law 里` 不等于 `你已经解释这些 law 为什么配存在`。
+- `2026-04-08` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-metadata-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
 - `2026-04-08` 最新一轮已完成 `381 / 365 / 232`：主线把 stronger-request cleanup 从 `cleanup-isolation-governance` 继续推进到 `cleanup-constitution-governance`，附录把 `carrier family / constitution world / cleanup root / current gate / governor question` 压成统一矩阵，源码剖面则把 repaired temp world、project-session sweep world、plural home-root worlds、host-external diagnostics world 与 hardcoded dispatcher 并排钉成 `legal-world grammar`。这一轮稳定写出的新边界是：`非干扰已追问` 不等于 `家法已收口`，`你开始证明自己没伤到谁` 不等于 `你已经回答这些不同 family 到底受哪部 cleanup 宪法统治`。
 - `2026-04-08` 本轮 fresh 复核根仓库结果为 `git fetch origin main` 成功，但根仓 `main...origin/main = 10 0`，且 `git status --short --branch` 显示存在 `UU bluebook/userbook/README.md` 等未解决冲突与无关改动；因此 `git merge --ff-only origin/main` 报错 `Merging is not possible because you have unmerged files.`。这些根仓冲突与当前安全专题轮次无关，本轮未触碰，并继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-08` 当前唯一 open question 已前推到 `stronger-request cleanup-rationale-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
