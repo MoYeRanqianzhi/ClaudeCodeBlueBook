@@ -1,6 +1,6 @@
 # 安全专题索引
 
-`security/` 当前有 329 篇正文，范围 `00-328`；`appendix/` 当前有 312 篇速查文档；`source-notes/` 当前有 179 篇源码剖面。
+`security/` 当前有 330 篇正文，范围 `00-329`；`appendix/` 当前有 313 篇速查文档；`source-notes/` 当前有 180 篇源码剖面。
 
 本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及从 `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention -> honesty -> isolation -> constitution -> rationale -> metadata -> runtime-conformance -> anti-drift verification -> repair -> migration -> sunset -> tombstone ...` 一路推进到 stronger-request cleanup 家族的同构治理链。
 
@@ -126,6 +126,7 @@
 - [326-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层：为什么artifact-family cleanup stronger-request cleanup-sunset-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-tombstone-governor signer](326-安全载体家族强请求清理退役治理与强请求清理墓碑治理分层.md)
 - [327-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层：为什么artifact-family cleanup stronger-request cleanup-tombstone-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-resurrection-governor signer](327-安全载体家族强请求清理墓碑治理与强请求清理复活治理分层.md)
 - [328-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层：为什么artifact-family cleanup stronger-request cleanup-resurrection-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-re-entitlement-governor signer](328-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层.md)
+- [329-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层：为什么artifact-family cleanup stronger-request cleanup-re-entitlement-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reconfiguration-governor signer](329-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层.md)
 
 ## 阅读顺序
 
