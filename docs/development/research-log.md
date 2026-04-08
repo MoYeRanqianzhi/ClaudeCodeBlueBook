@@ -2,6 +2,11 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `356`、把附录推进到 `340`、把源码剖面推进到 `207`；链路从 `stronger-request cleanup-migration-governance` 继续推进到 `stronger-request cleanup-sunset-governance`，说明 stronger-request cleanup 已经开始进入“旧世界何时正式退役”的治理层。
+- 本轮新的机制证据结论：新增 `207` 把 `deprecation clock / migration timestamp / orphan visibility cutoff` 压成 stronger-request cleanup 的退役治理边界，继续证明 `会迁` 不等于 `会退役`，`旧世界正在过桥` 也不等于 `旧世界已经不再算当前世界`。
+- 本轮新的技术结论：这轮新增证据继续把 stronger-request cleanup 的深层命题往前推了一格: 系统已经知道怎样让旧世界过桥，但 cleanup 线仍未正式决定那座桥什么时候必须关停，哪些旧 wording / old path / old receipt 该在何时失去 current truth 资格。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=357 / appendix=340 / source-notes=207`；本轮继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
+
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `351-355`，把附录推进到 `335-339`，把源码剖面推进到 `202-206`；链路从 `stronger-request cleanup-metadata-governance` 一直推进到 `stronger-request cleanup-migration-governance`，说明 stronger-request cleanup 已经从制度理由继续推进到制度元数据、运行时符合性、反漂移验证、修复与迁移治理。
 - 本轮新的机制证据结论：新增 `202-206` 继续把 stronger-request cleanup 的深层边界压硬。`202` 把 cleanup truth 写进 settings、path helpers、permissions 与 env contract 的 metadata boundary；`203` 把 `cleanupPeriodDays / housekeeping / plansDirectory / diagLogs / CleanupResult` 压成 runtime-conformance gap；`204` 把 `microCompact / switchSession / verifyAutoModeGateAccess` 压成 anti-drift verification gap；`205` 把 `verifyAutoModeGateAccess / checkAndDisableAutoModeIfNeeded / verifyAndDemote` 压成 repair-governance gap；`206` 再把 `runMigrations / migrateLegacyOpusToCurrent / orphan 宽限期 / plans continuity` 压成 migration-governance boundary。
 - 本轮新的技术结论：这批新增证据继续证明 `有 metadata` 不等于 `已按 runtime 兑现`，`这次看起来符合` 不等于 `以后不会漂移`，`检测到 drift` 不等于 `已经拥有 repair 主权`，`会修当前世界` 也不等于 `知道如何让旧世界有序退场`。
