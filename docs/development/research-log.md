@@ -2,6 +2,9 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的 Prompt why 结论：官方公开面与本地 userbook 交叉之后，`84` 还可以再压硬一步。本轮已把 `/add-dir / additionalDirectories` 明确降回 boundary expansion：它们只扩未来可发现事实面与文件/沙箱边界，不自动扩容 `world-definition` 的配置主权。当前判断是，这一句能更直接阻止 later consumer 把“多加了一个工作目录”误读成“多了一个新的配置主签名面”。
+- 本轮新的治理 why 结论：在 `permissions / sandboxing / auto mode / continuation consumer` 都已压回同一条 `authority lease` 之后，最值钱的新补丁不是再讲一个 mode，而是把 managed settings 定位写硬。本轮已把 `85` 明写成：managed settings 若能改写危险执行边界，就更接近待审签的治理命令通道，而不是普通 merge。当前判断是，这一句能明显减少 later consumer 把 policy channel 误读成 settings preference merge 的概率。
+- 本轮新的公开证据结论：并行 Agent 对源码质量线的最硬增量，不是再补一个对象词，而是把 later maintainer 的第一条局部拒收写成证据纪律。本轮已把它补进 `102`：凡公开 artifact 会改变运行时行为，却写不出 `signer + first local veto cue`，就只配停在 `public artifact ceiling`；`change-risk` 模板也据此新增了 `first local veto cue` 列。当前判断是，这一步把“public artifact ceiling”真正从保守口号压成了可执行的 promotion 门槛。
 - 本轮新的 frontdoor 结论：并行 Agent 证明，当前最高价值的目录问题已不再是“缺一个新入口页”，而是现有高流量入口彼此打架。本轮已把根 `README` 与 `bluebook/README` 统一收回同一条首跳协议：`README -> bluebook/README -> 84 / 10 / 102`，并把 `09` 明确降回可选总图而非必经前门。当前判断是，这比继续新增 frontdoor 更值钱，因为它直接减少了 later consumer 在第一跳上重判“到底先去哪”的次数。
 - 本轮新的 current-truth / source-quality 分工结论：在多轮拆分之后，真正还贵的 residual 已不再是术语本身，而是 `102 / 86 / 87` 在前门是否能一次看懂。本轮已把这条分工前置写进 `bluebook/README` 与 `philosophy/README`：`102` 先判证据 ceiling 与 current-truth 入口，`86` 只答过去为何不得越权写回现在，`87` 只答源码质量为何不能退回目录观感。当前判断是，这一步能明显降低 later consumer 在 why 层把 current-truth why 与 source-quality why 混成一条的概率。
 - 本轮新的治理 why 结论：官方公开的 `auto mode` 说明，把治理成熟度又压硬了一步。它证明成熟治理不该把人类反复拖回同一种 permission prompt，而应尽量减少没有新信息的人类重判；本轮已把这条 why 收进 `85`，并进一步把 `/compact / /resume / /memory` 压回 `authority lease` 的 continuation consumer。当前判断是，这比再列一张 permissions/sandbox/compact 机制表更稳，因为它直接回答了“为什么安全、省 token 与继续续租其实都在问同一笔 lease 该不该继续”。

@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 add-dir-is-boundary-expansion-not-config-sovereignty live 记忆：
+  - `84` 现在应直接写死：`/add-dir / additionalDirectories` 只是在扩大未来可发现事实面与文件/沙箱边界，不自动扩容 `world-definition` 的配置主权
+  - 更稳的默认写法是：boundary expansion 不等于 configuration root 扩张；否则 same-world 会重新退回“这次又多读到哪些局部规则”的随机协商
+- 当前批次继续新增一条 managed-settings-are-governance-channel live 记忆：
+  - `85` 现在可以继续把 managed settings 压回治理 why：它们若能改写危险执行边界，就更接近待审签的治理命令通道，而不是普通 merge
+  - 更稳的默认写法是：不要再问“谁的设置写得更晚”，而要问“哪条策略现在有资格改边界、危险 delta 是否已单独审签”
+- 当前批次继续新增一条 signer-plus-local-veto-cue live 记忆：
+  - `102` 现在应直接把公开 artifact promotion 的最低要求写成 `signer + first local veto cue`
+  - 更稳的默认写法是：凡公开 artifact 会改变运行时行为，却写不出 signer 与第一条局部拒收线索，就只配停在 `public artifact ceiling`
 - 当前批次继续新增一条 frontdoor-must-not-contradict-first-hop live 记忆：
   - 根 `README` 与 `bluebook/README` 现在默认必须共享同一条 first-hop 协议：`README -> bluebook/README -> 84 / 10 / 102`
   - 更稳的默认写法是：`09` 只当三条母线总图，不再冒充必经前门；根入口不再提前发 second-hop inventory 或抽象“归属页”占位符
