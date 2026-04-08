@@ -4227,3 +4227,5 @@
 - `playbooks/README` 的稳定边界也应继续写死：它可以给扁平手册索引，但不该再把 admission、repair、verification 重新包装成首页场景卡。执行 owner 页一旦在 README 里替读者预分场景，就是在重做 second-hop syllabus。
 - `2026-04-08` 的源码质量线 speaking-rights 也应再固定一条：`102` 只判断 evidence 是否足以让 current-truth claim 维持 candidate 或 promotion，不回答“谁在写现在”；`01` 只回答“找哪类代码先看哪里”，不回答“谁是首落点”；`87` 只回答为什么必须保有 later-maintainer veto，不负责第一退回层；`architecture/README` 的 `landing card` 只做 object summary，不重编码 evidence ladder 字段。
 - `navigation/README` 的长期边界也因此更硬：它只配按 artifact noun 做单跳路由，不再摆稳定节点书架、reading map 或第二层索引。只要 `navigation` 又开始列“缺 reading map 时来这里”这类句子，就说明它在从 artifact-gap 反查滑回第二前门。
+
+- `2026-04-08` 的治理深页也应再固定一条：`10` 可以命名最短 reject seam 和弱读回面，但不再列判责对象清单；`85` 可以举原则级源码信号，但不再提供术语表、机制 inventory 或“复制能力清单”。更稳的分层是：入口卡只问 first-answer，why 页只答为什么，owner README 才答对象和菜单。

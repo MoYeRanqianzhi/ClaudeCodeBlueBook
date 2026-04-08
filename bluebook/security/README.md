@@ -37,7 +37,6 @@
 - `security/README` 只负责治理 signer / ledger / cleanup 入口摘要，不和 `risk/` 抢用户侧恢复与入口差异摘要，也不和 `playbooks/` 抢执行链。
 - `security/README` 有 signer/ledger 机制解释权，但没有用户侧恢复签发权，也没有现场执行 verdict 的代签权。
 - 巨型目录库存、逐篇标题镜像和作者侧记忆不再回灌首页。
-- 深层速查表统一回 `appendix/README.md`，源码剖面统一回 `source-notes/README.md`。
 - 需要宿主接入、验收、修复与长期回归时，回 [../playbooks/README.md](../playbooks/README.md) 与 [../risk/README.md](../risk/README.md)，不要继续停在安全首页摘要。
 
 相关对象页与证据页统一留给对应目录；安全首页不再补充目录菜单。

@@ -11,7 +11,7 @@
 
 ## 一句话
 
-- 治理不是先认资源类目或更会拦截，而是先问最早 `unpaid expansion` 是什么，再核对 `repricing proof`、`lease checkpoint` 与 `cleanup`；`governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 只是这四问在对象层的正式落点。
+- 治理不是先认资源类目或更会拦截，而是先问最早 `unpaid expansion` 是什么，再核对 `repricing proof`、`lease checkpoint` 与 `cleanup`。
 - 因此省 token 不是压缩已准入世界，而是减少免费扩张、延后暴露、外置 durable asset，并在 cleanup 后杀死不该继续收费的 transient authority。
 
 ## 最短诊断环
@@ -27,31 +27,19 @@
 4. `cleanup`
    - 若这一步答不上，先 `revoke / retire` 旧 authority、封存 `verdict / liability receipt`、停止默认续租；若没完成，continue 一律不算合法续租
 
-若症状正好发生在 `compact / resume / re-entry`，也只把它们当成 lease 续租失败的暴露时刻：`compact` 核外置后是否还保住 `same scene / repricing proof`，`resume` 核旧 `verdict ledger` 是否仍能证明 lease 合法，`re-entry` 核旧 transient authority 是否已先被 `revoke / retire`。`reject trio` 只负责命名四问在哪条 seam 先暴露，不能反向长成第二套入口卡。
+若症状正好发生在 `compact / resume / re-entry`，也只把它们当成 lease 续租失败的暴露时刻；本页不继续展开这些时刻各自的对象清单。
 
 四问里只要有一问答不上，就先按 `free-expansion relapse` 处理。
 
-## 判责时只回看这些对象
-
-- `governance key`
-- `externalized truth chain (verdict ledger)`
-- `typed ask`
-- `decision window`
-- `continuation pricing`
-- `durable-transient cleanup`
-
-若需要继续判责，再额外确认这次 expansion 落在动作、能力、上下文席位还是时间；不要在入口卡先摆第二张 taxonomy。
+若需要继续判责对象、运行时 seam 或执行边界，统一退到对应 owner 页；不要在入口卡先摆第二张 taxonomy。
 
 ## reject trio
 
-这条链最短的 `reject trio` 只认：
+- `decision-window collapse`
+- `projection usurpation`
+- `free-expansion relapse`
 
-1. `decision-window collapse`
-   - 定价是不是发生在暴露之后，而不是暴露之前
-2. `projection usurpation`
-   - 弱层是不是替 signer 或 `verdict ledger` 说话了
-3. `free-expansion relapse`
-   - lease 是不是在未重定价、未结算的情况下被默认续期了
+这里只命名三类 first reject seam，不在入口卡继续解释每一条 seam 的对象细节。
 
 ## 弱读回面
 

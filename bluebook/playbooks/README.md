@@ -22,7 +22,7 @@
 ## 稳定手册索引
 
 - 现有执行手册稳定编号见 `29-31`、`65-67`、`77-79`
-- README 不在这里再把它们重分成场景卡组；真正的 admission / repair / verification 判断留给具体手册
+- README 只承认这些编号存在，不再替它们预分场景；真正的 admission / repair / verification 判断留给具体手册
 
 ## 这里不回答什么
 
