@@ -258,7 +258,29 @@
 
 而不是互为父子。
 
-## 第七层：稳定层、条件层与灰度层
+## 第七层：稳定阅读骨架 / 条件公开 / 内部证据层
+
+这里的“稳定”只指：
+
+- `122`
+- `123`
+- `124`
+- `125 -> 126 / 127`
+
+这张双根 + 降层主干结构图的阅读骨架已经收稳
+
+不指：
+
+- recovery edge
+- viewer ownership
+- signer family
+- transport authority
+- terminality bucket
+- compaction contract
+
+这些中间节点名本身已经升级成稳定公开能力
+
+真正的稳定公开能力判断，仍应回到用户入口、公开主路径与能力边界写作规范。
 
 ### 稳定可见
 
@@ -297,6 +319,16 @@
 再用 gate 名、常量名、当前 hook 顺序举证，
 
 不要反过来让实现常量替代结构主语。
+
+所以这页最稳的结论必须停在：
+
+- `122-127` 当前不是一条 recovery 后续链，而是双根 + 降层主干
+- `122` 处理 owner-side recovery 根页，`123` 处理 ownership 侧枝，`124` 处理 signer / proof zoom
+- `125` 是 transport authority 的降层根页，`126 / 127` 再从它分到 terminality 与 compaction 两侧
+
+而不能滑到：
+
+- 只要都在讲 remote recovery、warning、close、compacting，这六页本质上只是顺编号展开的同一张 recovery 表
 
 ## 第八层：苏格拉底式自审
 
@@ -338,5 +370,26 @@
 先退回：
 
 - 126
+
+## 结论
+
+所以这页能安全落下的结论应停在：
+
+- `122` 先把 owner-side recovery lifecycle 拆开，`123` 再把 viewer ownership 单列成侧枝，`124` 把 recovery signer 压成 zoom
+- `125` 先把问题降到 transport authority 层，`126` 再把 terminality 压成 zoom，`127` 把 compaction 固定成平行支线
+- `122-127` 因而不是从 recovery edge 顺编号一路细化到 compaction 的后续链
+
+一旦这句成立，
+
+就不会再把：
+
+- recovery edge
+- ownership
+- signer proof
+- transport authority
+- terminality
+- compaction
+
+写成同一种“remote recovery 后续页”。
 
 再回来继续看 compaction 这条线。

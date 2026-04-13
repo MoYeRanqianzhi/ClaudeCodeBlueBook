@@ -17,7 +17,7 @@
 - `command-index / capability map / range map`
   - 先看 [284-2026-04-08-capability map hub cleanup 拆分记忆.md](./284-2026-04-08-capability%20map%20hub%20cleanup%20拆分记忆.md)、[294-2026-04-08-command-index session-ops split 拆分记忆.md](./294-2026-04-08-command-index%20session-ops%20split%20拆分记忆.md)、[311-2026-04-08-reference hub range map sync 拆分记忆.md](./311-2026-04-08-reference%20hub%20range%20map%20sync%20拆分记忆.md)、[321-2026-04-08-command-index status control-plane regroup 拆分记忆.md](./321-2026-04-08-command-index%20status%20control-plane%20regroup%20拆分记忆.md)。
 - `2026-04-13-2026-04-14 scope guard / hub uplift / hardening 批次`
-  - 从 [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md) 一路看到 [443-2026-04-14-shell-memory skeleton hardening 拆分记忆.md](./443-2026-04-14-shell-memory%20skeleton%20hardening%20拆分记忆.md)。
+  - 从 [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md) 一路看到 [444-2026-04-14-recovery-root skeleton hardening 拆分记忆.md](./444-2026-04-14-recovery-root%20skeleton%20hardening%20拆分记忆.md)。
 - `更早批次`
   - 直接跳到下面的“全量档案”，按编号顺着翻。
 
@@ -196,6 +196,7 @@
 - [441-2026-04-14-remote-truth skeleton hardening 拆分记忆.md](./441-2026-04-14-remote-truth%20skeleton%20hardening%20拆分记忆.md)
 - [442-2026-04-14-remote-surface root skeleton hardening 拆分记忆.md](./442-2026-04-14-remote-surface%20root%20skeleton%20hardening%20拆分记忆.md)
 - [443-2026-04-14-shell-memory skeleton hardening 拆分记忆.md](./443-2026-04-14-shell-memory%20skeleton%20hardening%20拆分记忆.md)
+- [444-2026-04-14-recovery-root skeleton hardening 拆分记忆.md](./444-2026-04-14-recovery-root%20skeleton%20hardening%20拆分记忆.md)
 
 ## 全量档案
 
