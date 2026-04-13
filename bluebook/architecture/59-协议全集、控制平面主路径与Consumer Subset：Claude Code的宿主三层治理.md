@@ -41,6 +41,8 @@ Claude Code 的宿主设计，至少应按三层写：
 
 - 所有宿主共享同一份权威合同，再按对象和职责投射成不同宽度的消费面
 
+这里也要先压住一条 owner 边界：本页之所以仍保留 `Consumer Subset`，只是在 architecture 侧解释“为什么对象会被不同宿主读成不同宽度”，而不是在这里替 `api/` 重签 `host-facing truth claim-state / promise boundary`。若 later maintainer 需要正式判断宿主到底承认了什么、承诺了什么，统一退回 `api/README`。
+
 ## 2. 第一层：协议全集先固定语义坐标
 
 `controlSchemas.ts` 的作用，不是证明“所有宿主都已完整支持”，而是先把控制语义的坐标系固定下来。
@@ -157,7 +159,7 @@ Claude Code 的权威控制平面主路径，不在 schema 列表本身，而在
 - `evidence level = consumer subset`
 - `no global source-quality verdict`
 - `surface = candidate unless sole writer / writeback / freshness visible`
-- 本页只给 `consumer subset / status projection` 分级；底层 `current-truth surface` 仍按 `candidate` 处理，除非 sole writer / writeback / freshness 已可见。
+- 本页只给 `consumer subset / status projection` 做 bridge note；底层 `current-truth surface` 仍按 `candidate` 处理，除非 sole writer / writeback / freshness 已可见，而正式的 subset / promise boundary 结论统一留给 `api/`。
 
 ### 4.1 bridge 是中等宽度子集
 

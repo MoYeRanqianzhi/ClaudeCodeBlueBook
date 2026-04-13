@@ -1,5 +1,11 @@
 # 权威面与反僵尸图谱：current-truth surface、current-truth writeback、recovery asset non-sovereignty、freshness gate与ghost capability
 
+> Evidence stamp
+> - `evidence mode`: `public-evidence only`
+> - `rung`: `object-level claim`
+> - `verdict`: 本页对象默认只按 `writer claim state / provisional claim / promotion-passed object after 102` 读取
+> - `retreat`: 若 `signer / effect ceiling / local veto cue / first retreat layer` 仍未锁定，统一退回 `guides/102`
+
 这一章回答五个问题：
 
 1. 为什么 Claude Code 的源码先进性最终要回到 current-truth surface，而不是停在模块美学。
@@ -28,6 +34,7 @@
 这些锚点共同说明：
 
 - Claude Code 的源码先进性，不在于仓库“看起来更像教科书”，而在于系统先把 current-truth surface、陈旧写回拒绝、recovery asset non-sovereignty 与发布面边界都写进了结构。
+- 标题里的 `current-truth surface` 也只保留为兼容检索别名；在当前 worktree 的阅读纪律里，更前门的 owner 语言仍先回 `writer claim state / object-level claim / promotion-passed object after 102`。
 
 如果把这一章再压成 owner page 的一句约束，也只该剩：
 
