@@ -36,14 +36,9 @@
 
 - 文件路径保留旧词只是为了兼容检索；正文在这一级统一把 `current-truth surface` 读作 `current-truth claim state`，而不是对象层 surface verdict。
 - 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航与对象展开即使被提及，也只算证据状态声明，不算新的 frontdoor。
-- 本页也显式负责 handoff matrix：claim-state rung 一旦锁定，再决定问题该升级给 `architecture/README`、`api/README`、`philosophy/README` 还是 `navigation/README`；在本页锁定前，其他 owner README 都不该偷接。
-- handoff 一旦完成，owner page 只配消费这里已经锁定的 rung result，不得重述 canonical ladder、不得补判 promotion、也不得把 provisional claim 偷运成 landed truth；谁重开这三件事，谁就在目录上越位成第二个 gate。
-- 在这条线里，artifact completeness 只决定 promotion eligibility，不重写下游页面的稳定职责；页面标题与补写者都不额外增加签字权。
-- 凡正文把对象写成 `consumer subset` 或 provisional current-truth claim，必须同时把 `downgrade stamp` 与 `unresolved-authority note` 一起落页；只写“这里要保守”而不写这条说明，默认按证据纪律未落地处理。
-- 若对象层 authority 仍需细化，note 只说明“缺少 promotion 所需证明”，不附带任何路由义务。
-- 若 object-level authority 还没锁定，就只配先写 provisional current-truth claim；`current-truth surface candidate` 只保留为兼容标签。
-- 同理，公开 evidence 若声称存在 `next-refactor entry`，也必须同时说明它落在哪条签字权层级、能触发哪一条 `first local veto`、以及失败时先退回哪一层；做不到这三点，它就只配先写成 `seam candidate`。
-- 目录契约也因此只剩一条单向路：`102` 锁定 `object-level claim`，`architecture/` 才能展开 writer / invariant；`102` 锁定 `host-facing truth claim-state / consumer subset`，`api/` 才能展开宿主承认边界；`102` 锁定 `why`，`philosophy/` 才能解释第一性原理；`navigation/` 只在 subject 与 rung 都已知后负责路由，不代替任何一层重新分级。
+- handoff 一旦完成，owner page 只配消费这里已经锁定的 rung result，不得重述 canonical ladder、不得补判 promotion、也不得把 provisional claim 偷运成 landed truth。
+- 凡正文把对象写成 `consumer subset` 或 provisional current-truth claim，必须同时把 `downgrade stamp` 与 `unresolved-authority note` 一起落页；对象层 authority 若仍需细化，note 只说明“缺少 promotion 所需证明”，不附带任何路由义务。
+- 目录契约也只剩一条单向路：`102` 锁定 `object-level claim` 再交给 `architecture/`，锁定 `host-facing truth claim-state / consumer subset` 再交给 `api/`，锁定 `why` 再交给 `philosophy/`；`navigation/` 只在 subject 与 rung 都已知后负责路由。
 
 如果要把本页的 promotion verdict 再压成 later maintainer 可一眼复查的最小盒子，也只剩三种输出、四个硬条件：
 
@@ -53,16 +48,7 @@
 | `provisional claim` | 对象仍缺 promotion 所需证明，但缺口可被明确记成 `downgrade stamp + unresolved-authority note` |
 | `gap / candidate note` | 连对象层 authority、签字权层级或第一条回退都还说不清，只配停在 ceiling / gap / candidate |
 
-如果要把 owner page 的 handoff 继续压成统一可见的 `evidence stamp`，最小也只先写四格：
-
-| stamp field | 允许值 |
-|---|---|
-| `evidence mode` | `mirror present` / `mirror absent` / `public-evidence only` |
-| `rung` | `object-level claim` / `host-facing truth claim-state` / `consumer subset` / `why` / `gap` |
-| `verdict` | `promotion-passed` / `provisional claim` / `gap note` |
-| `retreat` | 当前最靠近的 `local veto cue / first retreat layer` |
-
-owner page 不必把这四格都做成固定卡片样式，但若 later maintainer 需要翻两段 prose 才看出这四项，handoff 就仍然太依赖作者解释。
+如果要把 owner page 的 handoff 继续压成统一可见的 `evidence stamp`，最小也只先写四件事：`evidence mode / rung / verdict / retreat`。owner page 不必把这四项都做成固定卡片样式，但若 later maintainer 需要翻两段 prose 才看出它们，handoff 就仍然太依赖作者解释。
 
 这条线最短的 reject trio 也只认：
 
@@ -395,22 +381,14 @@ gap discipline 的价值不是“保守一点”，而是：
 6. 哪些 authority 缺口必须继续显式保留。
 
 对象层若还需要继续写 `writeback seam / first fallback / local veto cue`，统一留给 `architecture/README`；`102` 不代写对象摘要。
-更明确地说，`102` 在目录里的 handoff matrix 只认下面四条：
+更明确地说，`102` 在目录里的 handoff matrix 只认四条映射：
 
-1. rung 已锁定为 object-level claim
-   - 再进 `architecture/README`
-   - 进入后只展开对象、writeback seam、local veto 与 first retreat layer，不重开 ladder，也不重做 promotion
-2. rung 已锁定为 host-facing truth claim-state / consumer subset
-   - 再进 `api/README`
-   - 进入后只展开宿主承认边界、consumer subset 与 promise boundary，不重开 rung 分类
-3. rung 已锁定为 why question，而不是 admissibility / promotion question
-   - 再进 `philosophy/README`
-   - 进入后只证明 why，不补 gate，也不把 claim-state 偷签成 landed truth
-4. 主语与 rung 都已锁定，只缺下一种 artifact、gap note 或最近的 fail-closed seam
-   - 再进 `navigation/README`
-   - 进入后只反查下一种 artifact / seam，不重做 first-hop 或 rung typing
+1. `object-level claim -> architecture/README`
+2. `host-facing truth claim-state / consumer subset -> api/README`
+3. `why question -> philosophy/README`
+4. `subject 与 rung 都已锁定，只缺下一种 artifact / gap / fail-closed seam -> navigation/README`
 
-若这四条里任何一条还答不上，就继续留在 `102`；这页先锁 rung，不让 owner noun 提前升级成 landed truth。更硬一点说，handoff 之后 owner page 只配消费这条已锁定的 rung，不得再重讲 canonical ladder、重开 promotion，或把 provisional claim 偷签成 landed object truth。
+若这四条里任何一条还答不上，就继续留在 `102`；这页先锁 rung，不让 owner noun 提前升级成 landed truth。handoff 之后 owner page 只配消费这条已锁定的 rung，不得再重讲 canonical ladder、重开 promotion，或把 provisional claim 偷签成 landed object truth。
 
 ## 11. 苏格拉底式检查清单
 
