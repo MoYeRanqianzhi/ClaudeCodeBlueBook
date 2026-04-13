@@ -308,29 +308,62 @@
 
 - “这些页都是 132 的连续细化，只是按不同对象轮流往下讲。”
 
-## 第八层：稳定层与灰度层
+## 第八层：稳定阅读骨架 / 条件公开 / 内部证据层
+
+这里的“稳定”只指：
+
+- `133 -> 137`
+- `134 -> 136`
+- `135 -> 138`
+
+这三条两步后继线的阅读骨架已经收稳
+
+不指：
+
+- `schema/store existence`
+- `cross-frontend consumer path`
+- `bridge consumer chain`
+- `v2 active surface`
+- `foreground remote runtime`
+- `shared interaction shell`
+
+这些中间节点名本身已经升级成稳定公开能力
+
+真正的稳定公开能力判断，仍应回到用户入口、公开主路径与能力边界写作规范。
 
 ### 稳定可见
 
-- schema/store existence 不等于当前 foreground consumer
-- `externalMetadataToAppState()` 当前只恢复极少子集
-- bridge v1 的 `report*` 当前是 no-op，v2 才真正接上 worker-side state / delivery chain
-- direct connect 当前更像 foreground runtime，不是 presence store
-- `activeRemote` 当前统一的是 interaction API，不是 presence truth
-- `pending_action/task_summary/post_turn_summary` 当前不能被写成同强度的“已落地 producer/store”事实
+- `133` 当前稳定回答的是 schema/store existence 不等于当前 foreground consumer
+- `137` 当前稳定回答的是“frontend 会读”更像跨前端 consumer path，不等于当前 CLI foreground contract
+- `134` 当前稳定回答的是 bridge v1/v2 不是同一种 front-state consumer chain
+- `136` 当前稳定回答的是同属 v2 的 bridge 也不是同一种活跃 front-state surface
+- `135` 当前稳定回答的是 direct connect 更像 foreground runtime，不是 presence store
+- `138` 当前稳定回答的是 `activeRemote` 统一的是 interaction shell，不是 presence ledger
 
 ### 条件公开
 
-- `task_summary`、`pending_action.input`、`post_turn_summary` 的真实 frontend consumer 仍带跨前端条件
-- bridge v2 之内还要再分 full / outboundOnly / mirror 的 active surface
-- direct connect / ssh 将来若写 authoritative state，才可能自然并入同一 presence ledger
+- `133/137` 这一线里，`task_summary`、`pending_action.input`、`post_turn_summary` 的真实 frontend consumer 仍带跨前端条件
+- `134/136` 这一线里，bridge v2 之内还要再分 full / outboundOnly / mirror 的 active surface
+- `135/138` 这一线里，direct connect / ssh 将来若写 authoritative state，才可能自然并入同一 presence ledger
 
-### 内部/灰度层
+### 内部证据层
 
+- `pending_action`、`task_summary`、`post_turn_summary` 的 exact producer / restore / filter 细节
 - `reportDelivery(received/processed)` 的具体节奏
 - `getLastSequenceNum()` / `flush()` 的恢复细节
 - direct connect 的 filter 列表与未来 reconnect 策略
 - `directConnectServerUrl`、`replBridgeSessionUrl` 等 display hint 的具体挂载时机
+
+所以这页最稳的结论必须停在：
+
+- `133-138` 当前已经形成三条有顺序的两步后继线
+- `133 -> 137` 处理 schema/store 到 cross-frontend consumer path
+- `134 -> 136` 处理 bridge chain 到 v2 active surface split
+- `135 -> 138` 处理 foreground runtime 到 shared interaction shell，并继续把问题交给 `204`
+
+而不能滑到：
+
+- 只要都和 metadata、bridge、direct connect 有关，这六页本质上只是 `132` 的线性连续细化
 
 ## 苏格拉底式自审
 
@@ -353,3 +386,24 @@
 ### 问：我是不是把 `138` 也当成普通 leaf，而忘了它会继续交给 `204`？
 
 答：如果一句话没有先回答 shared interaction shell 与 presence ledger 的边界，它就还没真正进入 `138` 的主语。
+
+## 结论
+
+所以这页能安全落下的结论应停在：
+
+- `133` 先把 schema/store existence 与当前 foreground consumer 拆开，`137` 再把“frontend 会读”收窄成 cross-frontend consumer path
+- `134` 先把 bridge v1/v2 拆成不同 consumer chain，`136` 再把 v2 内部拆成不同 active front-state surface
+- `135` 先把 direct connect 固定成 foreground remote runtime，`138` 再把 `activeRemote` 固定成 shared interaction shell
+- `138` 不是普通尾页，而是把 runtime / shell 这条后继线继续交给 `204`
+
+一旦这句成立，
+
+就不会再把：
+
+- metadata producer/store
+- bridge publish chain
+- v2 active surface
+- direct connect runtime
+- `activeRemote` shell
+
+写成同一种“132 的后续 remote 小文”。
