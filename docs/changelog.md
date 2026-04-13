@@ -2,6 +2,10 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/api/52-统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 governance claim-state 协议：`api/52` 现在补出 `public-evidence only` 护栏，并把 `governance key / continuation pricing verdict / rollback object` 明确收回 `host-facing truth claim-state / projection / candidate`；同时把 `zero-delta ask` 写进 `decision window` 的默认自检，不再把重复 ask / approval / continuation 解释包装成新治理对象。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在进入 `api/52` 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
+
 - 继续更新 `bluebook/api/53-故障模型宿主消费面手册：authority state、generation evidence、recovery boundary与anti-zombie projection.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 fault-surface candidate 协议：`api/53` 现在把 `freshness outcome projection / cleanup residue object / rollback legality snapshot` 明确降回 `host-facing candidate`，不再在 `public-evidence only` 下写成 landed surface；同时把 recovery / continue 的 `zero-delta` 花费判断显式接回 `api/52` 的 `decision window + context usage` 语言。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在进入 `api/53` 窄批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。

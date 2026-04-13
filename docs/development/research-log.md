@@ -2,6 +2,14 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/52` 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
+
+- 本轮新的 `api/52` claim-state 结论：我只对 `bluebook/api/52-统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`52` 现在补出了 `public-evidence only` 横幅，并把页首与 `§5` 中偏强的对象语气收回到 `host-facing truth claim-state / projection / candidate`：`governance key` 继续只当解释词，`continuation pricing verdict` 与 `rollback object` 继续只当 host-facing candidate，不再顺手被写成 landed object。当前判断是，这一步能把治理宿主面更稳地收在 `api/README` 已锁定的 claim-state 发言权里，而不是在 mirror absent 条件下提前发布对象事实。
+
+- 本轮新的安全 / 省 token 决策窗口结论：`52` 现在也把 `zero-delta ask` 明确压进 `decision window` 的自检问题里。新的默认问法不再是“这次继续还贵不贵”，而是“这次继续是否真的带来了新的 `decision delta`”；若 `pending_action / worker_status / context usage` 只是在重复同一条 ask、审批或 continuation 解释，它就更接近 `zero-delta ask`，不该再被包装成新治理窗口或新治理对象。当前判断是，这一步能把安全、治理与省 token 重新压回同一条 first-principles diagnosis loop。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一个治理 noun 听起来已经像正式对象时，更稳的默认追问不该是“这个名字顺不顺”，而应先问“它是 runtime 已外化的 surface，还是我给一组 surface 起的解释词”；如果还是后者，就不该被写成 landed object。当前判断是，这个问法能持续把治理线从“名词升级”拉回“证据升级”，也更贴近 Claude Code 对 fail-closed 与省 token 的真实约束。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/53` 窄批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
 
 - 本轮新的 `api/53` candidate-discipline 结论：我结合并行 agent 对 `api/52 / 53` 的复核，只对 `bluebook/api/53-故障模型宿主消费面手册：authority state、generation evidence、recovery boundary与anti-zombie projection.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`53` 现在更明确把结构故障模型写成“宿主消费候选”而不是“已稳定消费面”：页首不再说三层支持面已经被宿主“间接而稳定地消费”，而是承认它们当前只到 candidate 强度；`freshness outcome projection / cleanup residue object / rollback legality snapshot` 也统一先绑回 `state / pending_action / task_summary / recovery contract` 这些已外化 surface，再承认它们只是 host-facing candidate。当前判断是，这一步能减少 `public-evidence only` 条件下把推断型宿主投影误写成 landed surface 的概率。

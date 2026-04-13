@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-api52-claim-state-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/52` 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api52-must-carry-public-evidence-guard-and-zero-delta-window-discipline-apr13 live` 记忆：
+  - `bluebook/api/52-统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate.md` 现在也应直接写死：在 `public-evidence only` 条件下，`governance key / continuation pricing verdict / rollback object` 这类名字默认只按 `host-facing truth claim-state / projection / candidate` 读取，不再被顺手写成 landed object
+  - 更稳的默认写法是：宿主先消费 `control requests + settings truth + state + pending_action + context usage` 这几类已外化 surface，再追问这轮继续到底有没有新增 `decision delta`；若更像 `zero-delta ask`，就不该再把它包装成新的治理窗口或新治理对象
 - 当前批次继续新增一条 `root-sync-healthy-for-api53-candidate-discipline-batch-apr13 live` 记忆：
   - 2026-04-13 本轮进入 `api/53` 窄批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
