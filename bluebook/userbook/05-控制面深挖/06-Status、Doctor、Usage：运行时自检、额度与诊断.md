@@ -42,6 +42,7 @@
 - `/usage` 只投影预算窗口，不单独下“这轮还值得继续付费”的结论。
 - 更硬一点说，它们都是 weak readback surface：只暴露 drift 与 pressure，不代签 same-world、governance truth 或 continue qualification。
 - approval receipt、status green、usage 回单若没有新增 signer 证据、boundary delta 或 cleanup 结果，就只是 `zero-delta ask / weak readback`；它们只补回单，不补新的 `repricing proof`。
+- 反过来，只有当这些 surface 真新增 signer 证据、boundary delta 或 cleanup delta 时，它们才配从 runtime projection 升级成治理事实；否则一律停在 receipt-grade。
 
 对用户来说，这页最多只帮助你判断该继续、降级、停止、转入恢复链或升级给人；如果你已经在判恢复、cleanup 或 reopen，就不要继续停在本页。
 更稳一点说，`/status / /doctor / /usage` 只做 runtime projection；`Compact / Resume / Memory` 这些连续性动作另在相邻页处理；`Export` 另归 `Outside` handoff surface。若你在这里开始直接判断治理结论或恢复成立，先回 `../../10`、`../../risk/README.md` 或 `../../09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md`。
@@ -98,6 +99,7 @@
 - 是否继续仍要回 `continue qualification -> continuation pricing`，而不是让 `/usage` 自己把预算投影写成继续 verdict。
 - repeated allow、modal closeout 或 `Context Usage` 变绿，只要没有收紧边界、推进 cleanup 或改写 deny/allow 结论，就仍只是 `zero-delta ask / weak readback`，不是新的治理事实。
 - 是否继续仍只看正式对象有没有补齐 `repricing proof / lease checkpoint / cleanup`；`/status / /doctor / /usage` 最多提醒你该回哪层，不替 `continue qualification` 签字。
+- 更稳一点说，预算效率不是 `/usage` 变绿得更快，而是 delta-free approvals 与 zero-delta asks 更少；若只是回单更顺滑，治理成本并没有真的下降。
 
 误用边界：
 

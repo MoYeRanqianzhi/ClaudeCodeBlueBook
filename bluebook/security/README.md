@@ -20,6 +20,8 @@
 
 这里还应先压住一条分流纪律：`sandboxing` 不构成第四类 ambiguity，它只是 signer 已起租后的 boundary custody；而 `async hook / weak readback / host replay` 若开始改写 allow、continue 或 cleanup 结论，应先分别退回 `ledger / cleanup authority ambiguity`，而不是另发一条安全主线。
 还要再分清一层：`approval receipt / status green / modal closeout` 这类 readback surface 即使带着“已允许”措辞，也最多证明 ledger 上记过一次 verdict，不证明 signer ceiling 合法；若团队开始拿 receipt 反推“谁配批准”，应先按 `signer ambiguity` 处理。
+更硬一点说，任何 surface 只有在新增 signer 证据、boundary delta 或 cleanup delta 时，才配从安全 readback 升级成治理事实；否则就只配留在 receipt-grade。
+同理，安全效率也不是 approval 更快，而是 delta-free approvals 更少；若批准更快却没有减少零增量 ask，治理仍在为同一条 boundary decision 重复付费。
 
 如果一条安全判断还压不回这三类 ambiguity，它就还停在规则堆或工具堆层；如果已经开始重发治理 stage names，这页就又在代签 `10`。
 
