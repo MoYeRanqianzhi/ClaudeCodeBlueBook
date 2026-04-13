@@ -2,6 +2,10 @@
 
 ## 当前稳定边界
 
+- `2026-04-14` 最新一轮已完成 `469 / 453 / 320`：主线把 stronger-request cleanup 从 `stronger-request cleanup-finality-governance` 继续推进到 `stronger-request cleanup-forgetting-governance`，附录把 `finality scope / forgetting gate / retained memory / governor question` 压成统一矩阵，源码剖面则把 resolvedToolUseIds、trackResolvedToolUseId()、bounded oldest eviction、handledOrphanedToolUseIds 与 transcript-resolved anti-replay guard 并排钉成 `safe-forgetting threshold grammar`。这一轮稳定写出的新边界是：`会封卷` 不等于 `会忘卷`，`制度知道这份结果以后回来时仍然成立` 不等于 `制度已经知道现在可以不再记住与它相关的旧回音风险。`
+- `2026-04-14` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`。这些根仓状态与本轮安全专题写作保持隔离，本轮全部改写与提交继续严格限制在 `.worktrees/claude-code-risk-analysis` 内完成。
+- `2026-04-14` 当前唯一 open question 已前推到 `stronger-request cleanup-liability-release-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
+
 - `2026-04-13` 最新一轮已完成 `463 / 447 / 314`：主线把 stronger-request cleanup 从 `stronger-request cleanup-reprojection-governance` 继续推进到 `stronger-request cleanup-reassurance-governance`，附录把 `assurance ceiling / success silence / caveat budget / governor question` 压成统一矩阵，源码剖面则把 graded positive lexicon、auth-complete branching、operation-local reassurance、narrow health reassurance 与 selective positive silence 并排钉成 `assurance-ceiling grammar`。这一轮稳定写出的新边界是：`被重新讲述` 不等于 `已经被担保到足以承载依赖负荷`，`制度知道现在该怎样说它` 不等于 `制度已经知道这句话现在敢担保到什么程度。`
 - `2026-04-13` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`。这些根仓状态与本轮安全专题写作保持隔离，本轮全部改写与提交继续严格限制在 `.worktrees/claude-code-risk-analysis` 内完成。
 - `2026-04-13` 当前唯一 open question 已前推到 `stronger-request cleanup-use-time-revalidation-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
