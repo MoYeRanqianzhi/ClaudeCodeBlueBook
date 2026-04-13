@@ -83,6 +83,8 @@ Claude Code 的成熟，不在于：
 
 - 对时序复杂度的集中收口
 
+但这里也有一条硬降格线：如果一个热点答不出 `sole writer`、`forbidden substitute writer` 与最近的 `fail-closed seam`，它就还不配被叫作 lawful kernel，只配先算 `hotspot candidate` 或债务汇流点。
+
 ## 3. `REPL.tsx` 为什么也可以大
 
 `REPL.tsx` 的复杂度也不是任意膨胀。

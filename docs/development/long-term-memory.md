@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 source-quality-owner-pages-must-declare-evidence-ceiling-apr13 live 记忆：
+  - `philosophy/87`、`api/71` 与 `api/92` 现在也应直接写死：在 `.worktrees/mainloop` 的 `mirror absent / public-evidence only` 条件下，`src/...` 只算 archival anchors；涉及 writer、effect ceiling、packet field 的判断，默认先写 why-proof、review schema 或 candidate，不自动升级成 live ABI
+  - 更稳的默认写法是：owner 页先给 evidence-mode banner，再区分 `claim / candidate / review schema / live proof`；做不到这一层时，不得把对象词写成当前产品已公开签出的字段承诺
+- 当前批次继续新增一条 lawful-hotspot-needs-sole-writer-and-fail-closed-seam-apr13 live 记忆：
+  - `architecture/55` 与 `philosophy/87` 现在也应直接写死：热点文件若答不出 `sole writer`、`forbidden substitute writer` 与最近的 `fail-closed seam`，就还不配叫 lawful kernel，只配先算 `hotspot candidate` 或债务汇流点
+  - 更稳的默认写法是：先判 `one writable present + low-signature failure + local veto`，再决定热点是合法复杂度中心，还是只是在替 later maintainer 堆积搜索成本
 - 当前批次继续新增一条 prompt-why-must-name-search-pruning-apr13 live 记忆：
   - `philosophy/14` 与 `21` 现在也应直接写死：所谓 Prompt “更聪明”，不是模型被文案增强，而是 runtime 先裁掉了谁能发言、哪些动作合法、哪些分支已死、何时配继续这四类待判变量
   - 更稳的默认写法是：先写 `decision-retirement / search-pruning / renegotiation shrinkage`，再写 `lineage / boundary / transcript / continuation` 这些 runtime objects；否则 later consumer 仍会把 Prompt 魔力读回结构 inventory
