@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 userbook-frontdoor-must-align-three-first-tests live 记忆：
+  - `userbook/README / userbook/00-导读` 现在也应直接把用户第一跳三句对齐到三条母线，而不再让 `message lineage / stable bytes / working set` 这种旧版 Prompt/continuity 压缩链占住第三句
+  - 更稳的默认写法是：Prompt 句直接继承 `tool choice / compaction / 已排除路径回流候选集`，治理句直接继承 `earliest unpaid expansion + repricing proof / lease checkpoint / cleanup`，当前真相句直接继承“旧目录 / 旧恢复资产 / 旧权限 / replay 不得冒充当前”；userbook 根前门的证据顺序也应直接压成 `contract / registry / current-truth claim state`
+- 当前批次继续新增一条 root-sync-healthy-clean-apr13 live 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，`git status --short --branch` 当前为干净的 `main...origin/main`
+  - 更稳的默认写法是：根仓若健康且干净，只把预检结果记为外部事实；正文、记忆与提交继续只落在 `.worktrees/mainloop`
 - 当前批次继续新增一条 capability-bridge-must-balance-three-line-tests live 记忆：
   - `05 / 09` 现在也应直接继承最新的三线 first test：Prompt 桥接句不再只停在 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 的抽象顺序，而要直问 `tool choice / compaction / 已排除路径回流候选集`；治理桥接句要直问 `repricing proof / lease checkpoint / cleanup`；源码质量桥接句要直问 `合法复杂度中心 + one writable present + later-maintainer veto`
   - 更稳的默认写法是：`05` 只做 capability / API bridge，`09` 只做总图 hook，都不扩成对象或 verdict 页；但只要这些高流量页的 bridge judgment 比入口页更薄，later consumer 就会在桥接页和总图页重新学到一版更旧的 first test。宿主读回面若不能新增 `repricing / deny / cleanup` 决策增益，也一律只配当 `weak readback / tail evidence`，不配回判 `current admission`

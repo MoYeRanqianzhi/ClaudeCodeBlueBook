@@ -8,8 +8,8 @@
 
 如果只先记住三条使用判断，也只先记这三条：
 
-1. 好 Prompt 不是更像专家，而是先确认你还在同一件事上，附件、文件与 working set 仍服务同一现场。
-2. 扩张或权限判断不要先看弹窗、`status`、`usage` 或继续入口；先看这次动作、可见性或继续请求有没有被当前控制面准入。
+1. 好 Prompt 不是更像专家，而是先过 `same-world test`：later consumer 在 `verify / delegate / tool choice / resume / handoff` 时，不必重答谁在定义世界、边界内哪些动作和工具仍合法；`resume / handoff / compaction` 后也不必重判继续资格，更不必把已排除路径重新拉回候选集。
+2. 扩张或权限判断不要先看弹窗、`status`、`usage` 或继续入口；先找这次动作、可见性或继续请求里最早那条还没被定价的 `unpaid expansion`，再看它有没有补齐 `repricing proof / lease checkpoint / cleanup`。
 3. 若问题已经从“现在该怎么做”变成“为什么这么判 / 为什么会出现 `Later` 或 `Outside`”，先回蓝皮书根前门或对应母线入口；userbook 根页不展开 why syllabus。
 
 如果你只缺治理收费链的一屏速记，而不是用户侧动作分型，先回 [../10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；userbook 根入口只保留问题分型、用户侧最小顺序与单跳分流。
@@ -68,7 +68,7 @@
 ## 阅读原则
 
 - 本手册优先写“用户能做什么”和“先排查哪一格”，不承担 why 改判。
-- 所有关键结论尽量挂到源码注册点，而不是只挂到 UI 现象。
+- 所有关键结论优先挂到 `contract / registry / current-truth claim state` 这三类高签字权证据，而不是只挂到 UI 现象、adapter 子集或热点文件体感。
 - 功能按“稳定公开能力、灰度能力、内部能力”分层，不混写。
 - 入口页优先提醒你不要把 UI transcript、mode 条、token 百分比、长摘要或 slash 面板误当系统真相。
 - 入口页只负责问题分型、最小排查顺序与单跳；why、owner 与 truth 一律退回蓝皮书根前门或对应专题/owner README。
