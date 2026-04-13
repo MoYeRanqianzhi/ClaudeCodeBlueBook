@@ -22,6 +22,8 @@
 
 源码不是这样工作的。
 
+从 `task recovery` 轴看，这里最重要的不是“任务结果会不会回来”，而是“回来以后也不会并成同一本恢复账”。`task recovery` 恢复的是后台任务对象与结果回收能力，不是把 `task_id` 的 task bookend、queued command `uuid` 的消费生命周期、以及模型实际看见的 `<task-notification>` 内容压平成一张统一状态表。后面 93-99 对 triad、return-path 和 flush-ordering 的继续拆分，都建立在这个多账本前提上。
+
 ## 第一性原理
 
 更稳的提问不是：

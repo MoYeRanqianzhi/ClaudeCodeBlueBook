@@ -96,6 +96,7 @@
 - [360-2026-04-13-mainline-continuity preview-vs-restore echo 拆分记忆.md](./360-2026-04-13-mainline-continuity%20preview-vs-restore%20echo%20拆分记忆.md)
 - [361-2026-04-13-session-viewer continuation vs formal-restore echo 拆分记忆.md](./361-2026-04-13-session-viewer%20continuation%20vs%20formal-restore%20echo%20拆分记忆.md)
 - [362-2026-04-13-task-recovery vs worksite-restore echo 拆分记忆.md](./362-2026-04-13-task-recovery%20vs%20worksite-restore%20echo%20拆分记忆.md)
+- [363-2026-04-13-task-recovery multi-ledger premise echo 拆分记忆.md](./363-2026-04-13-task-recovery%20multi-ledger%20premise%20echo%20拆分记忆.md)
 
 ## 全量档案
 
