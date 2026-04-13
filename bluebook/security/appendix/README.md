@@ -888,12 +888,15 @@
 - `415`
   载体家族强请求清理重新投影治理与强请求清理重新担保治理分层。
   入口：[415-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层速查表：assurance ceiling、caveat budget、success silence与governor question](415-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层速查表：assurance ceiling、caveat budget、success silence与governor question.md)。
+- `416`
+  载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层。
+  入口：[416-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层速查表：fresh proof primitive、roster invalidation、runtime revocation与governor question](416-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层速查表：fresh proof primitive、roster invalidation、runtime revocation与governor question.md)。
 
 ## 怎么配合主线读
 
 - 读 [../README.md](../README.md) 时，把附录当速查卡，不当主阅读路径。
 - 想快速核对“字段从哪来、谁能签字、哪条路径被禁止、当前该看哪张卡”，优先来附录。
-- 想快速进入当前这段强请求清理子链，优先看 `411-415` 这一段。
+- 想快速进入当前这段强请求清理子链，优先看 `412-416` 这一段。
 - 需要完整论证、设计判断和章节间关系时，返回 [../README.md](../README.md)。
 
 ## 和主线、源码剖面的分工
