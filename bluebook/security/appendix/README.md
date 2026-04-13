@@ -894,12 +894,15 @@
 - `417`
   载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层。
   入口：[417-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gate、refresh suppression、step-up completion与governor question](417-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层速查表：scope gate、refresh suppression、step-up completion与governor question.md)。
+- `418`
+  载体家族强请求清理step-up重授权治理与强请求清理续打治理分层。
+  入口：[418-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：step-up reauthorization decision、same-request continuation decision、auth success ceiling与governor question](418-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层速查表：step-up reauthorization decision、same-request continuation decision、auth success ceiling与governor question.md)。
 
 ## 怎么配合主线读
 
 - 读 [../README.md](../README.md) 时，把附录当速查卡，不当主阅读路径。
 - 想快速核对“字段从哪来、谁能签字、哪条路径被禁止、当前该看哪张卡”，优先来附录。
-- 想快速进入当前这段强请求清理子链，优先看 `413-417` 这一段。
+- 想快速进入当前这段强请求清理子链，优先看 `414-418` 这一段。
 - 需要完整论证、设计判断和章节间关系时，返回 [../README.md](../README.md)。
 
 ## 和主线、源码剖面的分工
