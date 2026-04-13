@@ -11,6 +11,7 @@
 - `family hub`
   - 接续与桥接家族先看 [168-190-接续与桥接家族/README.md](./168-190-接续与桥接家族/README.md)。
   - 非交互、recovery 与 remote surface 家族先看 [100-149-非交互、recovery 与 remote surface 家族/README.md](./100-149-非交互、recovery%20与%20remote%20surface%20家族/README.md)。
+  - ingress、permission tail 与 blocked-state 家族先看 [191-206-bridge ingress、permission tail 与 blocked-state 家族/README.md](./191-206-bridge%20ingress、permission%20tail%20与%20blocked-state%20家族/README.md)。
 - `command-index / capability map / range map`
   - 先看 [284-2026-04-08-capability map hub cleanup 拆分记忆.md](./284-2026-04-08-capability%20map%20hub%20cleanup%20拆分记忆.md)、[294-2026-04-08-command-index session-ops split 拆分记忆.md](./294-2026-04-08-command-index%20session-ops%20split%20拆分记忆.md)、[311-2026-04-08-reference hub range map sync 拆分记忆.md](./311-2026-04-08-reference%20hub%20range%20map%20sync%20拆分记忆.md)、[321-2026-04-08-command-index status control-plane regroup 拆分记忆.md](./321-2026-04-08-command-index%20status%20control-plane%20regroup%20拆分记忆.md)。
 - `2026-04-13 structure-page scope guard 批次`
@@ -139,6 +140,7 @@
 - [387-2026-04-13-remote-surface legacy scope clarification 拆分记忆.md](./387-2026-04-13-remote-surface%20legacy%20scope%20clarification%20拆分记忆.md)
 - [388-2026-04-13-continuation-bridge family hub uplift 拆分记忆.md](./388-2026-04-13-continuation-bridge%20family%20hub%20uplift%20拆分记忆.md)
 - [389-2026-04-13-summary-recovery-remote family hub uplift 拆分记忆.md](./389-2026-04-13-summary-recovery-remote%20family%20hub%20uplift%20拆分记忆.md)
+- [390-2026-04-13-ingress-permission-blocked family hub uplift 拆分记忆.md](./390-2026-04-13-ingress-permission-blocked%20family%20hub%20uplift%20拆分记忆.md)
 
 ## 全量档案
 
