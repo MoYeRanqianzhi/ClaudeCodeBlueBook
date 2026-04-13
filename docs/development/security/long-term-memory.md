@@ -2,6 +2,10 @@
 
 ## 当前稳定边界
 
+- `2026-04-13` 最新一轮已完成 `407 / 391 / 258`：主线把 stronger-request cleanup 从 `stronger-request liability-release-governance` 继续推进到 `stronger-request archive-close-governance`，附录把 `active lifecycle / waiting surface / queue admission / governor question` 压成统一矩阵，源码剖面则把 lifecycle `completed`、stale prompt teardown、`orphaned-permission` queue non-admission 与 inline completed observability 并排钉成 `active-surface closure grammar`。这一轮稳定写出的新边界是：`no more duty` 不等于 `off the active surface`，`制度知道自己已经不再欠它` 不等于 `制度已经把它从当前世界的活跃位置上撤下。`
+- `2026-04-13` 本轮再次 fresh 复核根仓库时，`git fetch origin main` 成功，但根仓库随后显示 `main...origin/main = 8 0` 与 `## main...origin/main [ahead 8]`，并伴随 `A bluebook/security/403-405...`、`A bluebook/security/appendix/387-389...`、`A bluebook/security/source-notes/254-256...` 与多处既有 `M` 条目；为避免污染主分支与其他 worktree，本轮未在根仓库继续执行 merge/pull，而是把该状态隔离记录后仅在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-13` 当前唯一 open question 已前推到 `stronger-request audit-close-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
+
 - `2026-04-13` 最新一轮已完成 `406 / 390 / 257`：主线把 stronger-request cleanup 从 `stronger-request forgetting-governance` 继续推进到 `stronger-request liability-release-governance`，附录把 `forgetting gate / liability-release gate / compensate-or-refuse / governor question` 压成统一矩阵，源码剖面则把 duplicate ignore、unknown-response ignore、orphan compensate-or-refuse、transcript-resolved amnesty 与 stale prompt teardown 并排钉成 `no-more-duty grammar`。这一轮稳定写出的新边界是：`safe enough to forget` 不等于 `still owing no duty`，`制度知道现在可以慢慢忘掉它` 不等于 `制度已经知道现在彻底不再欠它任何责任。`
 - `2026-04-13` 本轮再次 fresh 复核根仓库时，`git fetch origin main` 成功，但根仓库随后显示 `main...origin/main = 8 0` 与 `## main...origin/main [ahead 8]`，并伴随 `UU bluebook/security/README.md`、`UU bluebook/security/source-notes/README.md`、`UU docs/development/research-log.md` 等未解决条目；为避免污染主分支与其他 worktree，本轮未在根仓库继续执行 merge/pull，而是把该状态隔离记录后仅在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-13` 当前唯一 open question 已前推到 `stronger-request archive-close-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
