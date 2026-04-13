@@ -145,6 +145,7 @@
 - [390-2026-04-13-ingress-permission-blocked family hub uplift 拆分记忆.md](./390-2026-04-13-ingress-permission-blocked%20family%20hub%20uplift%20拆分记忆.md)
 - [391-2026-04-13-remote recovery-to-shell subfamily hub uplift 拆分记忆.md](./391-2026-04-13-remote%20recovery-to-shell%20subfamily%20hub%20uplift%20拆分记忆.md)
 - [392-2026-04-13-remote truth-shell-memory subfamily hub uplift 拆分记忆.md](./392-2026-04-13-remote%20truth-shell-memory%20subfamily%20hub%20uplift%20拆分记忆.md)
+- [393-2026-04-13-remote-surface stable-gray hardening 拆分记忆.md](./393-2026-04-13-remote-surface%20stable-gray%20hardening%20拆分记忆.md)
 
 ## 全量档案
 
