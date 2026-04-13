@@ -4944,3 +4944,4 @@
 - `2026-04-13` 治理入口卡的最新稳定纪律也应继续写死：`10` 在 typed-state 表之后现在只配保留一条 verb ceiling。只要 `authority lease / decision delta / cleanup trigger state` 里有任一格不是正向值，当前 surface 一律只配停在 `checkpoint / receipt-grade projection`，不得自己改价；逐项列举哪些 tail surface 越位、以及继续资格由谁解释，统一回各归属页。
 - `2026-04-13` `api/README` 的最新稳定纪律也应继续写死：README 现在只配消费 `102` 已锁定的 `host-facing truth claim-state / consumer subset / promise boundary`，不再复述 Prompt / 治理母公式，也不再在 owner README 里重跑 `code present / registry listed / signed claim` 这类 ladder 格。
 - `2026-04-13` `09` 的最新稳定纪律也应继续写死：它现在只配保留三条宪法级判断、一个 continuity crosswalk 和三条 first-hop。`typed-state checkpoint law / verb ceiling` 继续回 `10`，`promotion / downgrade / unresolved-authority note` 继续回 `guides/102` 与 `architecture/84`；总图页不再抢入口卡或 ladder 页的首答权。
+- `2026-04-13` `userbook/README` 的最新稳定纪律也应继续写死：根页现在只配保留用户动作翻译、问题分型与单跳分流，不再本地重讲完整的 lease/delta/cleanup grammar。弹窗、`status`、`usage`、继续入口与摘要只继续被写成 route-only projection；若真要判断 ask 是否仍配继续，统一回 `05` 或治理 owner。
