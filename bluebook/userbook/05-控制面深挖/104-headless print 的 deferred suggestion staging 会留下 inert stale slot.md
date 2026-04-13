@@ -24,6 +24,8 @@
 
 从当前源码控制流看，这个结论太重了。
 
+本页不重讲 99 页的 staging creation / promotion，也不重讲 102 页的 delivered vs settled telemetry；这里只拆一条更窄的边界：当 `pendingSuggestion` 已被 cleanup 清掉而 `pendingLastEmittedEntry` 仍残留时，这个 deferred staging slot 为什么通常仍停留在 internal inert residue，而不会自动升级成新的 delivered suggestion、settled outcome 或外部协议 bug。换句话说，这里要裁定的是 cleanup asymmetry 能否通向 visible consequence，不是再论证 suggestion 是否已交付或 verdict 是否已结算。
+
 ## 第一性原理
 
 更稳的提问不是：
