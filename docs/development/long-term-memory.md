@@ -4939,3 +4939,5 @@
 - `2026-04-13` `architecture/84` 的最新稳定模板也应继续写死：page-top 也应显式挂出 `public-evidence only / object-level claim / retreat to 102` 的 evidence stamp，标题里的 `current-truth surface` 只保留为兼容检索别名，正文 owner 语言仍先回 `writer claim state / provisional claim / promotion-passed object after 102`。
 - `2026-04-13` `architecture/59` 的最新稳定边界也应继续写死：本页只允许把 `consumer subset / status projection` 当成 bridge note 解释“对象为什么会被不同宿主读成不同宽度”，不在这里替 `api/` 重签 `host-facing truth claim-state / promise boundary`。
 - `2026-04-13` persistent memory 的最新读取纪律也应继续写死：`docs/development/long-term-memory.md` 里互相冲突的根仓库同步快照只按时间点档案读，不得反向充当当前 live premise；当前 live preflight 一律只看最近一条同日记录与本轮实际检查结果。
+- `2026-04-13` Prompt builder-facing 机制页的最新稳定纪律也应继续写死：`philosophy/81` 的尾部现在只配回答三件事：哪一份 `required witness` 仍被显式携带、第一声 `no` 落在哪个 continuation surface、第一退回层该回哪一环补 witness；why/provisional/reject 风格的结论应继续留在 `84`，不再从 `81` 尾段回流。
+- `2026-04-13` 当前 live preflight 也应继续按最新检查读：根仓库 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；后续批次可继续只在 `.worktrees/mainloop` 推进，不得让旧同日阻断快照反向覆盖当前健康结果。
