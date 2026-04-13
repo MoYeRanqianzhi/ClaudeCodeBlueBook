@@ -17,6 +17,8 @@
 
 源码不是这样设计的。
 
+这里分的是单次 task result 的 runtime return path：XML queue、SDK `task_notification` event 与 model re-entry 只是同一条回流轴上的不同节点，不是 generic `resume / continue` source 或 bridge continuity 的来源问题。
+
 ## 第一性原理
 
 更稳的提问不是：

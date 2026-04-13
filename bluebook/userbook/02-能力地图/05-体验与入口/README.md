@@ -25,6 +25,7 @@
 - 争议若还停在“这是哪个 host、session、viewer、status surface”，先按 `control` 归位，再回 `../../05-控制面深挖/README.md`。
 - 只有争议已经落到 `decision window / continuation pricing / cleanup-before-resume`，才升级成 `governance`，再回 `../03-治理与边界/README.md`。
 - `/status / /doctor / /usage / /resume / /remote-control` 在这里都先只算 `projection / readback / consumer`，不单独签当前真相。
+- `viewer continuation / preview / history` 在这里都只算 consumption：不是 formal restore，也不是 current-truth signer。
 
 如果你还在把 UI 体感、状态词或平台入口当成 truth source，就先不要继续靠目录名碰运气。
 

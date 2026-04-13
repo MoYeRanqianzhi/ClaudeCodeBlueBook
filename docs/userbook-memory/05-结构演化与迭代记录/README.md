@@ -90,6 +90,15 @@
 - [354-2026-04-13-session-viewer vs remote-creation split 拆分记忆.md](./354-2026-04-13-session-viewer%20vs%20remote-creation%20split%20拆分记忆.md)
 - [355-2026-04-13-recovery-object crosswalk uplift 拆分记忆.md](./355-2026-04-13-recovery-object%20crosswalk%20uplift%20拆分记忆.md)
 - [356-2026-04-13-capability-map recovery-horizontal-axis uplift 拆分记忆.md](./356-2026-04-13-capability-map%20recovery-horizontal-axis%20uplift%20拆分记忆.md)
+- [357-2026-04-13-governance-readme recovery-routing handoff 拆分记忆.md](./357-2026-04-13-governance-readme%20recovery-routing%20handoff%20拆分记忆.md)
+- [358-2026-04-13-runtime-readme recovery-routing handoff 拆分记忆.md](./358-2026-04-13-runtime-readme%20recovery-routing%20handoff%20拆分记忆.md)
+- [359-2026-04-13-experience-readme recovery-consumption echo 拆分记忆.md](./359-2026-04-13-experience-readme%20recovery-consumption%20echo%20拆分记忆.md)
+- [360-2026-04-13-mainline-continuity preview-vs-restore echo 拆分记忆.md](./360-2026-04-13-mainline-continuity%20preview-vs-restore%20echo%20拆分记忆.md)
+- [361-2026-04-13-session-viewer continuation vs formal-restore echo 拆分记忆.md](./361-2026-04-13-session-viewer%20continuation%20vs%20formal-restore%20echo%20拆分记忆.md)
+- [362-2026-04-13-task-recovery vs worksite-restore echo 拆分记忆.md](./362-2026-04-13-task-recovery%20vs%20worksite-restore%20echo%20拆分记忆.md)
+- [363-2026-04-13-task-recovery multi-ledger premise echo 拆分记忆.md](./363-2026-04-13-task-recovery%20multi-ledger%20premise%20echo%20拆分记忆.md)
+- [364-2026-04-13-task-result return-path vs continuity-source echo 拆分记忆.md](./364-2026-04-13-task-result%20return-path%20vs%20continuity-source%20echo%20拆分记忆.md)
+- [365-2026-04-13-headless-print chain backbone clarification 拆分记忆.md](./365-2026-04-13-headless-print%20chain%20backbone%20clarification%20拆分记忆.md)
 
 ## 全量档案
 
