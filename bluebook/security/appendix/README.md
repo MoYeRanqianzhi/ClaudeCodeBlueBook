@@ -882,12 +882,15 @@
 - `413`
   载体家族强请求清理恢复治理与强请求清理重新并入治理分层。
   入口：[413-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question](413-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层速查表：writeback、dynamic state、handler rebind与governor question.md)。
+- `414`
+  载体家族强请求清理重新并入治理与强请求清理重新投影治理分层。
+  入口：[414-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question](414-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层速查表：status grammar、notification policy、control payload与governor question.md)。
 
 ## 怎么配合主线读
 
 - 读 [../README.md](../README.md) 时，把附录当速查卡，不当主阅读路径。
 - 想快速核对“字段从哪来、谁能签字、哪条路径被禁止、当前该看哪张卡”，优先来附录。
-- 想快速进入当前这段强请求清理子链，优先看 `409-413` 这一段。
+- 想快速进入当前这段强请求清理子链，优先看 `410-414` 这一段。
 - 需要完整论证、设计判断和章节间关系时，返回 [../README.md](../README.md)。
 
 ## 和主线、源码剖面的分工
