@@ -8,6 +8,18 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 governance-surfaces-upgrade-only-with-real-delta-apr13 live 记忆：
+  - `10`、`security/README` 与 `userbook/05/06-Status、Doctor、Usage` 现在也应直接写死：任何 surface 只有在新增 signer 证据、boundary delta 或 cleanup delta 时才配从 readback 升级成治理事实；否则一律只算 receipt-grade / `weak readback`
+  - 更稳的默认写法是：治理效率不是 approval 更快，而是 delta-free approvals 与 `zero-delta ask` 更少；若 ask 只是更顺滑地回单，却没新增定价/边界/cleanup 增量，就仍按 `approval fatigue / free-expansion relapse` 记账
+- 当前批次继续新增一条 authority-lease-expansion-must-name-four-fields-apr13 live 记忆：
+  - `userbook/05/01-权限、计划模式与 Worktree` 与 `07-Add-dir` 现在也应直接写死：每次扩张都至少点名 signer、scope delta、durability class 与 cleanup trigger；权限、计划模式、worktree 与 `/add-dir` 不是四个离散按钮，而是同一条 authority lease 的不同扩张动作
+  - 更稳的默认写法是：先分清谁在签这次扩张、边界放大到哪一圈、变化只留在 session 还是进入更 durable 的 local state、以及之后靠什么刷新/撤租把旧边界收口
+- 当前批次继续新增一条 source-quality-owner-pages-must-declare-evidence-ceiling-apr13 live 记忆：
+  - `philosophy/87`、`api/71` 与 `api/92` 现在也应直接写死：在 `.worktrees/mainloop` 的 `mirror absent / public-evidence only` 条件下，`src/...` 只算 archival anchors；涉及 writer、effect ceiling、packet field 的判断，默认先写 why-proof、review schema 或 candidate，不自动升级成 live ABI
+  - 更稳的默认写法是：owner 页先给 evidence-mode banner，再区分 `claim / candidate / review schema / live proof`；做不到这一层时，不得把对象词写成当前产品已公开签出的字段承诺
+- 当前批次继续新增一条 lawful-hotspot-needs-sole-writer-and-fail-closed-seam-apr13 live 记忆：
+  - `architecture/55` 与 `philosophy/87` 现在也应直接写死：热点文件若答不出 `sole writer`、`forbidden substitute writer` 与最近的 `fail-closed seam`，就还不配叫 lawful kernel，只配先算 `hotspot candidate` 或债务汇流点
+  - 更稳的默认写法是：先判 `one writable present + low-signature failure + local veto`，再决定热点是合法复杂度中心，还是只是在替 later maintainer 堆积搜索成本
 - 当前批次继续新增一条 prompt-why-must-name-search-pruning-apr13 live 记忆：
   - `philosophy/14` 与 `21` 现在也应直接写死：所谓 Prompt “更聪明”，不是模型被文案增强，而是 runtime 先裁掉了谁能发言、哪些动作合法、哪些分支已死、何时配继续这四类待判变量
   - 更稳的默认写法是：先写 `decision-retirement / search-pruning / renegotiation shrinkage`，再写 `lineage / boundary / transcript / continuation` 这些 runtime objects；否则 later consumer 仍会把 Prompt 魔力读回结构 inventory

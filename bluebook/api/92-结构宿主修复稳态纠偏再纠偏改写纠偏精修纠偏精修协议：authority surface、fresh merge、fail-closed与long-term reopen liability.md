@@ -2,7 +2,7 @@
 
 这一章回答五个问题：
 
-1. Claude Code 当前到底通过哪些 packet fields，让宿主、CI、评审与交接在结构 refinement correction 精修层继续消费同一个结构真相。
+1. 若要让宿主、CI、评审与交接在结构 refinement correction 精修层继续消费同一个结构真相，packet 至少该携带哪些 fields。
 2. 哪些字段属于必须共享的 packet field，哪些只属于 mirror gap、rewrite hint 或本地诊断。
 3. 为什么源码先进性来自 writer chokepoint、freshness gate、fail-closed 与 later rejectability，而不是“架构整洁度”。
 4. 宿主开发者该按什么顺序消费这套结构 refinement packet。
@@ -11,6 +11,7 @@
 ## 0. 第一性原理
 
 这一页不是新的 `ordered repair stream` 主权页，而是 [83](83-结构宿主修复稳态纠偏再纠偏改写纠偏协议：authority、lineage、transport与reopen%20liability.md) 在精修层的 packet 化延伸。
+在当前 `mirror absent / public-evidence only` worktree 里，`src/...` 只算 archival anchors；因此本页默认写的是 bluebook review schema，而不是当前产品已公开签出的 live packet ABI。
 
 因此它必须继续继承：
 

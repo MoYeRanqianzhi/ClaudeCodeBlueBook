@@ -27,6 +27,8 @@
 - 权限上下文。
 - shell / sandbox 的可达集合。
 
+更稳一点说，它也在同时暴露四个治理字段：谁在签这次目录扩张、scope delta 放大到了哪一圈、这次变化只留在 session 还是写进更 durable 的 local settings、以及之后该靠什么 cleanup / 刷新把旧边界撤租。
+
 ## 为什么这不是 shell 技巧
 
 如果只是在终端里 `cd` 到另一个目录：

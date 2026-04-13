@@ -13,6 +13,7 @@
 
 - 治理不是先认资源类目，也不是先看谁更会拦截，而是先问最早 `unpaid expansion` 是什么，再核对 `repricing proof`、`lease checkpoint` 与 `cleanup`。
 - 因此省 token 不是压缩已准入世界，而是减少免费扩张、延后暴露、外置 durable asset，并在 cleanup 后杀死不该默认续租的 transient authority。
+- 更硬一点说，任何 surface 只有在新增 signer 证据、boundary delta 或 cleanup delta 时才配升级成治理事实；否则一律只算 receipt-grade readback。
 
 ## 四问诊断
 
@@ -31,6 +32,7 @@
 这里的 `weak readback` 也应显式包含 settings diff、hook review、status snapshot 与 host replay：凡这些 surface 只能展示“刚才发生了什么”，却不能独立补齐 `repricing proof / lease checkpoint / cleanup`，就只配回单，不配回判。
 一旦某次 ask 只能产出 approval receipt，却没有新增 signer 证据、boundary delta 或 cleanup 结果，它也应视作 `weak readback`：这类 `zero-delta ask` 只会补一张回单，不会补一条 `repricing proof`。
 一旦这类 `zero-delta ask` 开始被拿来证明“已经够安全、可默认继续”，而不只是留下一张 approval receipt，它就不再只是成本噪音，而是 `projection usurpation`：tail evidence 正在越权代签 `continue qualification`。
+治理效率也不该被写成 approval 更快，而应写成 delta-free approvals 更少；若 ask 更频繁更顺滑，却仍没有新增 signer、边界或 cleanup 增量，入口层就仍按 `approval fatigue / free-expansion relapse` 记账。
 
 若症状正好发生在 `compact / resume / re-entry`，也只把它们当成 `lease checkpoint` 的暴露时刻；这页不继续展开这些入口各自的对象清单。
 

@@ -1,8 +1,9 @@
 # 结构宿主修复稳态协议：current-truth surface、writeback custody、lineage seal、anti-zombie dormancy 与 reopen reservation
 
-这一章也不是新的高阶前门，而是结构主链成立之后的一条结构 steady-side 旁证线：
+这一章也不是新的高阶前门，而是结构主链成立之后的一条结构 steady-side 评审 schema：
 
 - 它回答的不是“源码先进性为什么成立”，而是“在 steady 阶段，结构对象怎样保持唯一写回主语，并保留 structure-local reopen reservation”
+- 在当前 `mirror absent / public-evidence only` worktree 里，`src/...` 只算 archival anchors；本页对象词主要表达 review schema 与 candidate writer truth，不自动等于已公开承诺的 live ABI
 
 因此这页继续继承同一条结构真相梯度：
 
@@ -41,7 +42,7 @@
 
 ### 1.1 `contract`
 
-宿主至少应消费：
+若宿主想把这条 steady-side 判断共享给 later maintainer，review schema 至少应要求：
 
 1. `structure_object_type`
 2. `structure_object_id`
@@ -49,7 +50,7 @@
 
 ### 1.2 `registry`
 
-宿主还必须消费：
+review schema 还至少应要求：
 
 1. `registry_ref`
 2. `registry_generation`
@@ -57,7 +58,7 @@
 
 ### 1.3 `current-truth surface`
 
-宿主还必须消费：
+review schema 还至少应要求：
 
 1. `authority_object_id`
 2. `authoritative_path`
@@ -67,7 +68,7 @@
 
 ### 1.4 `consumer subset`
 
-宿主还必须消费：
+review schema 还至少应要求：
 
 1. `consumer_subset_ref`
 2. `bridge_pointer_scope`
@@ -75,7 +76,7 @@
 
 ### 1.5 `hotspot kernel`
 
-宿主还必须消费：
+review schema 还至少应要求：
 
 1. `resume_lineage_ref`
 2. `writeback_primary_path`
@@ -99,7 +100,7 @@
 
 ## 2. steady-state verdict：必须共享的结构 local 语义
 
-更成熟的结构宿主稳态 verdict 至少应共享下面枚举：
+若要共享这条结构宿主稳态 verdict，review schema 至少应能输出下面枚举：
 
 1. `steady_state`
 2. `steady_state_blocked`
