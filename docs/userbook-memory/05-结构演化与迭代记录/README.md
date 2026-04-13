@@ -131,6 +131,7 @@
 - [382-2026-04-13-shell-pair branch-map scope clarification 拆分记忆.md](./382-2026-04-13-shell-pair%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [383-2026-04-13-headless-subtree branch-map scope clarification 拆分记忆.md](./383-2026-04-13-headless-subtree%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [384-2026-04-13-readme second-layer navigation uplift 拆分记忆.md](./384-2026-04-13-readme%20second-layer%20navigation%20uplift%20拆分记忆.md)
+- [385-2026-04-13-teleport-model-bridge branch-map scope clarification 拆分记忆.md](./385-2026-04-13-teleport-model-bridge%20branch-map%20scope%20clarification%20拆分记忆.md)
 
 ## 全量档案
 
