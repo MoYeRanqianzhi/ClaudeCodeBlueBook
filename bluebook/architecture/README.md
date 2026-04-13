@@ -1,19 +1,19 @@
 # 架构专题
 
-`architecture/` 只负责对象层：哪个对象面在写现在，哪些 truth plane 在发言，writeback seam 在哪，局部 veto 该落在哪，第一退回层先落哪。
+`architecture/` 只负责对象层：哪个对象面在声称或竞争写现在，哪些 truth plane 在发言，writeback seam 在哪，局部 veto 该落在哪，第一退回层先落哪。若 promotion gate 还没过，这里只保留 `writer claim state / unresolved-authority snapshot`，不把对象候选提前升级成 landed truth。
 
 > Evidence mode
 > - 公开镜像的证据上限、canonical ladder 与降格规则统一回 [../guides/102](../guides/102-%E5%A6%82%E4%BD%95%E7%BB%99%E5%85%AC%E5%BC%80%E9%95%9C%E5%83%8F%E5%81%9A%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E8%AF%81%E6%8D%AE%E5%88%86%E7%BA%A7%EF%BC%9Acontract%E3%80%81registry%E3%80%81authoritative%20surface%E3%80%81adapter%20subset%E4%B8%8Ehotspot%20gap%20discipline.md)；本 README 只承接对象、状态机、writeback seam 与 choke point。
 
 如果只先记架构对象层的一句话，也只记这句：
 
-- 架构层不负责再判梯子，而负责把“四个对象问题”继续展开成正式对象、状态机与 choke point，并用它们保护 `one writable present`。
+- 架构层不负责再判梯子，而负责把“四个对象问题”继续展开成对象候选、状态机与 choke point；只有 promotion-passed object 才在这里升级成正式对象并承接 `one writable present`。
 
 这里也只再多记一句：`architecture/` 真正值钱的，不只是把对象链列出来，而是把 later maintainer 的局部可反对性落成可见对象与 seam。这里说的局部可反对性，不是“最后还能看懂”，而是拿不到作者时仍能只凭局部对象与 seam 指出哪一处对象边界在越权。
 
 ## 四个对象问题
 
-- 哪个对象面在写现在。
+- 哪个对象面在声称或竞争写现在。
 - 现在是哪条 truth plane 在发言。
 - writeback seam 在哪。
 - 局部 veto 该先落在哪。
@@ -28,11 +28,11 @@
 
 当对象层判断需要落成统一摘要时，至少写成下面七栏：
 
-| surface | protected invariant | writer truth plane | writeback seam | stale-writer risk | local veto cue | first retreat layer |
+| surface | protected invariant | writer claim plane / writer truth plane after promotion | writeback seam | stale-writer risk | local veto cue | first retreat layer |
 |---|---|---|---|---|---|
-| `<surface>` | `<what it protects>` | `<who may write now>` | `<where current truth is committed>` | `<which stale write most threatens this surface>` | `<what should trigger a local veto>` | `<where the fallback lands first>` |
+| `<surface>` | `<what it protects>` | `<who claims write now / who may write after promotion>` | `<where current truth is committed>` | `<which stale write most threatens this surface>` | `<what should trigger a local veto>` | `<where the fallback lands first>` |
 
-这七栏只做对象摘要，不复写 `ceiling / downgrade / unresolved-authority` 之类证据字段；那些 promotion 纪律统一留在 `102`，`landing card` 也不承担验收卡或准入判断。若 `surface` 本身是 operator artifact，也同样必须写清 `writer truth plane`、`local veto cue` 与 `first retreat layer`，否则 later maintainer 拿到的仍只是阅读体感，而不是正式反对路径；答不出退回层的 seam 也还不配被叫作可继承的 `next-refactor entry`。更硬一点说，`first retreat layer` 默认应指向最近的 `fail-closed seam`，也就是 first no 之后先把错误 writer 降回 `no-authority / no-write` 的那一层，而不是下一步修复计划。
+这七栏只做对象摘要，不复写 `ceiling / downgrade / unresolved-authority` 之类证据字段；那些 promotion 纪律统一留在 `102`，`landing card` 也不承担验收卡或准入判断。若对象仍未 promotion，就把第三栏明确写成 `writer claim state`，并在卡片旁补 `unresolved-authority note`，而不是预填 landed writer truth。若 `surface` 本身是 operator artifact，也同样必须写清 `writer claim plane`、`local veto cue` 与 `first retreat layer`，否则 later maintainer 拿到的仍只是阅读体感，而不是正式反对路径；答不出退回层的 seam 也还不配被叫作可继承的 `next-refactor entry`。更硬一点说，`first retreat layer` 默认应指向最近的 `fail-closed seam`，也就是 first no 之后先把错误 writer 降回 `no-authority / no-write` 的那一层，而不是下一步修复计划。
 
 ## 对象专题索引
 

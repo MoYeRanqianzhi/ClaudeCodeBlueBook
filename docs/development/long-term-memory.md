@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 source-frontdoors-must-speak-claim-state-before-object-truth-apr13 live 记忆：
+  - `architecture/README`、`api/README`、`architecture/84` 与 `philosophy/87` 现在也应直接写死：公开证据未 promotion 前，frontdoor 默认先说 `writer claim state / unresolved-authority / host-facing truth claim-state`，而不是直接把对象、writer 或 host-facing truth 写成 landed truth
+  - 更稳的默认写法是：`architecture/` 只让 promotion-passed object 升级成正式对象；`api/` 只说明 claim-state / admission boundary / consumer subset；`84 / 87` 则把 `sole writer` 收回 `writer claim state` 语境，直到 `guides/102` 的 promotion gate 真正放行
 - 当前批次继续新增一条 governance-bridges-must-name-same-lease-new-delta-apr13 live 记忆：
   - `bluebook/05`、`09`、`architecture/71`、`architecture/83` 与 `security/README` 现在也应直接写死：治理桥页和 runtime 对照表先问 `same authority lease / new decision delta / cleanup trigger`，而不是先让 `approval / modal / status / usage / compact / bypass` 这些 surface 抢答
   - 更稳的默认写法是：`status / usage / host replay / worker_status / permission_mode / pending_action` 默认都先按 `zero-delta ask / weak readback / receipt-grade evidence` 读；`bypass` 只是在同租约内压缩剩余 ask，不新增 signer、scope delta、durability class 或 cleanup trigger；`resume / continue / rewind` 只配当 recovery carrier，不自动续租旧 authority
