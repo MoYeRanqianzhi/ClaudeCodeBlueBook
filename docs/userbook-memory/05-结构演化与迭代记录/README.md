@@ -8,6 +8,8 @@
 
 - `README / hub / front-door`
   - 先看 [275-2026-04-08-root readme hub cleanup 拆分记忆.md](./275-2026-04-08-root%20readme%20hub%20cleanup%20拆分记忆.md)、[278-2026-04-08-topic README front-door split 拆分记忆.md](./278-2026-04-08-topic%20README%20front-door%20split%20拆分记忆.md)、[279-2026-04-08-control README front-door split 拆分记忆.md](./279-2026-04-08-control%20README%20front-door%20split%20拆分记忆.md)、[281-2026-04-08-memory root hub cleanup 拆分记忆.md](./281-2026-04-08-memory%20root%20hub%20cleanup%20拆分记忆.md)、[282-2026-04-08-evolution README recent-batch split 拆分记忆.md](./282-2026-04-08-evolution%20README%20recent-batch%20split%20拆分记忆.md)。
+- `family hub`
+  - 接续与桥接家族先看 [168-190-接续与桥接家族/README.md](./168-190-接续与桥接家族/README.md)。
 - `command-index / capability map / range map`
   - 先看 [284-2026-04-08-capability map hub cleanup 拆分记忆.md](./284-2026-04-08-capability%20map%20hub%20cleanup%20拆分记忆.md)、[294-2026-04-08-command-index session-ops split 拆分记忆.md](./294-2026-04-08-command-index%20session-ops%20split%20拆分记忆.md)、[311-2026-04-08-reference hub range map sync 拆分记忆.md](./311-2026-04-08-reference%20hub%20range%20map%20sync%20拆分记忆.md)、[321-2026-04-08-command-index status control-plane regroup 拆分记忆.md](./321-2026-04-08-command-index%20status%20control-plane%20regroup%20拆分记忆.md)。
 - `2026-04-13 structure-page scope guard 批次`
@@ -134,6 +136,7 @@
 - [385-2026-04-13-teleport-model-bridge branch-map scope clarification 拆分记忆.md](./385-2026-04-13-teleport-model-bridge%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [386-2026-04-13-permission-tail branch-map scope clarification 拆分记忆.md](./386-2026-04-13-permission-tail%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [387-2026-04-13-remote-surface legacy scope clarification 拆分记忆.md](./387-2026-04-13-remote-surface%20legacy%20scope%20clarification%20拆分记忆.md)
+- [388-2026-04-13-continuation-bridge family hub uplift 拆分记忆.md](./388-2026-04-13-continuation-bridge%20family%20hub%20uplift%20拆分记忆.md)
 
 ## 全量档案
 
