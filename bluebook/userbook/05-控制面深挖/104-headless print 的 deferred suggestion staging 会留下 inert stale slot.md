@@ -162,6 +162,18 @@
 3. 新 prompt 路径一开始又会把 `pendingLastEmittedEntry` 清掉
 4. closeout / `output.done()` 路径只是放弃 suggestion state，并不会拿这个 slot 单独做 emit 或 outcome logging
 
+这四点合起来，其实在回答三个更底层的问题：
+
+1. 它还有没有独立 promote gate？
+2. 它还有没有独立 emit 路径？
+3. 它还有没有独立 settlement sink？
+
+从当前正文已经拉出的控制流证据看，答案都偏向：
+
+- 没有 `pendingSuggestion`，它就缺少升级成 `lastEmitted` 的外层 gate
+- 没有单独 emit 路径，它就不会自己长成新的 `prompt_suggestion`
+- 没有单独 settlement sink，teardown / close 也不会拿它补记 accepted / ignored outcome
+
 因此更稳的说法不是：
 
 - “这完全没有问题”
@@ -253,7 +265,7 @@
 
 - 如果不单列，正文会继续把“内部残影”夸大成“外部协议缺陷”，或者反过来把清理不对称完全抹平
 
-## 第九层：稳定、条件与内部边界
+## 第九层：稳定层、条件层与灰度层
 
 ### 稳定可见
 
@@ -266,10 +278,18 @@
 - cleanup 非对称只会在先发生 deferred staging、随后又走特定 control/teardown 分支时出现。
 - 从当前控制流推断，这个 stale slot 是否会留下后果，取决于后续是否还存在 `pendingSuggestion` 或新 prompt cleanup。
 
-### 内部 / 灰度层
+### 内部/灰度层
 
 - `interrupt` / `end_session` 未同步清 `pendingLastEmittedEntry` 的 hygiene asymmetry。
 - 这条结论里“更像 inert stale staging”属于基于当前源码路径的推断，不应写成公开稳定合同。
+
+所以这页能安全落下的结论应停在：
+
+- cleanup asymmetry != visible protocol bug
+
+而不能继续滑成：
+
+- orphan `pendingLastEmittedEntry` 必然会重新长成 ghost suggestion
 
 ## 第十层：苏格拉底式自检
 

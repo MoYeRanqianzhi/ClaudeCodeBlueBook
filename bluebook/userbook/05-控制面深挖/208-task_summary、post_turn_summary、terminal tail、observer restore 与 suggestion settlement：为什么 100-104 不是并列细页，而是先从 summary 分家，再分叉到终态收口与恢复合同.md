@@ -256,13 +256,13 @@
 
 而是稳定对象分裂和实现路径名缠在一起。
 
-更稳的写法应先分三层：
+更稳的写法也该继续沿用这条分支里已经稳定下来的三层口径：
 
 | 类型 | 应该保住什么 |
 | --- | --- |
-| 稳定用户合同 | `task_summary` 是 freshness-first 的 mid-turn progress metadata；`post_turn_summary` 是 after-turn recap；`result` 主位不等于流终点；已交付 suggestion 不等于已结算；observer metadata 不等于 restore input |
-| 条件性可见合同 | 不同宿主看到的尾流厚度不同；cleanup 分支只在特定 control-path 下出现；一部分关于 inert stale slot 的结论依赖当前控制流推断 |
-| 灰度/实现证据 | `lastMessage`、`lastEmitted`、`pendingLastEmittedEntry`、`externalMetadataToAppState(...)`、worker init scrub、具体 cleanup 顺序与 helper 名 |
+| 稳定可见 | `task_summary` 是 freshness-first 的 mid-turn progress metadata；`post_turn_summary` 是 after-turn recap；`result` 主位不等于流终点；已交付 suggestion 不等于已结算；observer metadata 不等于 restore input |
+| 条件公开 | 不同宿主看到的尾流厚度不同；cleanup 分支只在特定 control-path 下出现；一部分关于 inert stale slot 的结论依赖当前控制流推断 |
+| 内部/灰度层 | `lastMessage`、`lastEmitted`、`pendingLastEmittedEntry`、`externalMetadataToAppState(...)`、worker init scrub、具体 cleanup 顺序与 helper 名 |
 
 这里最该保护的一句是：
 
