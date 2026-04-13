@@ -95,6 +95,7 @@
 - [359-2026-04-13-experience-readme recovery-consumption echo 拆分记忆.md](./359-2026-04-13-experience-readme%20recovery-consumption%20echo%20拆分记忆.md)
 - [360-2026-04-13-mainline-continuity preview-vs-restore echo 拆分记忆.md](./360-2026-04-13-mainline-continuity%20preview-vs-restore%20echo%20拆分记忆.md)
 - [361-2026-04-13-session-viewer continuation vs formal-restore echo 拆分记忆.md](./361-2026-04-13-session-viewer%20continuation%20vs%20formal-restore%20echo%20拆分记忆.md)
+- [362-2026-04-13-task-recovery vs worksite-restore echo 拆分记忆.md](./362-2026-04-13-task-recovery%20vs%20worksite-restore%20echo%20拆分记忆.md)
 
 ## 全量档案
 
