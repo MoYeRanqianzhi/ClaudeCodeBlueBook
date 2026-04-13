@@ -9,6 +9,8 @@
 
 - 本轮新的 `api/52` surface-first 结论：`api/52` 现已继续把 hidden ontology 往后压：页首不再先立 `governance key / typed ask / decision window / continuation pricing` 这套四句前门公式，而是先按 `control requests + settings / state / pending_action / usage surfaces` 说清宿主到底拿到了什么，再承认这些 nouns 只是解释词。当前判断是，这一步把治理宿主页继续拉回 concrete host-facing claim-state，而不是在 `public-evidence only` 下先发明一组近似 landed object。
 
+- 本轮新的 `api/46` atlas-locator 结论：`api/46` 现已把标题和题面进一步收回成 `atlas / locator` 强度，不再让“权威入口”继续抢本页首句；同时把 `services / tools` 从散文特例提升成和其他子系统同构的六格 runtime seam。当前判断是，这一步继续压低了 services atlas 的标题强度，也把 mixed seam drift 从“特殊目录旁注”收回到同一套结构语法里。
+
 - 本轮新的 `guides/30` verdict-plumbing 结论：`guides/30` 现已把 `effect ceiling` 从局部门槛接回整条 Prompt 审读协议，显式进入输入、verdict 与记录卡；新的 gate verdict 固定为 `pass / provisional / reject / unknown`，并补齐了 `effect-ceiling breach / carrier-only provisional / 本地 verdict` 这些失效类型。当前判断是，这一步把 Prompt 审读链从“知道有这个 gate”推进到了“整条判定流都能消费这个 gate”。
 
 - 本轮新的 `philosophy/54` carrier law 结论：`54` 现已把 `teammate navigation` 正式绑回同一条 `effect ceiling` 纪律，不再把“知道该找谁”默认为 same-world continuation 的签字能力；它与 `suggestion / sticky prompt / session memory / handoff note` 一样，最多只负责 route / carrier 价值。当前判断是，这一步继续削弱了 Prompt 魔力论证里“路由能力被误读成签字能力”的残余歧义。
