@@ -2,6 +2,10 @@
 
 ## 2026-04-14
 
+- 继续更新 `bluebook/{api/47-tools 二级目录地图：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md,api/46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md,navigation/35-源码地图导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md,02-使用指南.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 locator-split 协议：`api/47` 现在从 tools 侧显式承认 `definition plane / services-tools runtime plane` 分离；`api/46` 继续把 atlas 页语气收回 locator 强度，把 transport seam 还给 `30`；`navigation/35` 与 `02` 则把导航层残留的“权威入口”预期继续降回 `atlas locator / locator 段`。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `api/47 + api/46 + navigation/35 + 02` locator-split 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
 - 继续更新 `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 shared-evidence-order 协议：`api/36` 现在把四类消费者共享的 current-truth order 固定成 `对象 -> 状态链 -> ask 链 -> usage -> window -> diff/control -> rollback`，并明确写下拒收线：没有 `state + pending_action`，就不得把 usage 单独认成合法 `decision window / recovery / continuation` 解释。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `api/36` shared-order 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。

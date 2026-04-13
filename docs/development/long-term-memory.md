@@ -13,6 +13,18 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-api47-locator-split-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `api/47 + api/46 + navigation/35 + 02` locator-split 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `api47-must-explicitly-split-definition-plane-from-services-tools-runtime-apr14 live` 记忆：
+  - `bluebook/api/47-tools 二级目录地图：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md` 现在也应继续写死：`src/tools/` 这一侧只先回答 definition plane / visible-set registry；一旦问题进入 orchestration、hook boundary、execution ordering 或 runtime writeback，就应并读 `api/46` 的 `services/tools` runtime seam
+  - 更稳的默认写法是：tools 页负责 definition plane，services 页负责 runtime plane；later consumer 不该再从 `tools.ts` 一路读到 execution orchestration 还不离场
+- 当前批次继续新增一条 `navigation35-and-02-should-soften-authority-wording-to-atlas-locator-apr14 live` 记忆：
+  - `bluebook/navigation/35-源码地图导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md` 与 `bluebook/02-使用指南.md` 现在也应继续写死：目录地图线在导航层只配说 `atlas locator / locator 段`，不该在 route 页和入口指南里继续替 later consumer 抬高“权威入口”的预期
+  - 更稳的默认写法是：route page 只回答从哪进、哪一段危险、reject path 回哪；若问题已经升级成 authority dispute，就回 speaking-right 页，不在导航层预发 verdict
+- 当前批次继续新增一条 `parallel-deeper-scans-point-to-api13-81-architecture-readme-apr14 live` 记忆：
+  - 并行 Agent 的 deeper scan 现已把三条下一残留压成更具体的文件级入口：结构线优先回 `bluebook/api/13-StructuredIO与RemoteIO宿主协议手册.md` 收 transport seam；Prompt 线优先回 `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 固定 witness ownership；源码质量线优先回 `bluebook/architecture/README.md` 闭合 why-proof 到 object landing 的单源 handoff
+  - 更稳的默认写法是：目录结构先问 seam 到底属于 `services atlas` 还是 `host transport protocol`；Prompt 先问 canonical witness chain 是否已经逐跳写清 owner / producer / veto / consumer；源码质量先问 why-proof 有没有真正落到具体 architecture landing 文件
 - 当前批次继续新增一条 `root-sync-healthy-for-api36-shared-order-batch-apr14 live` 记忆：
   - 2026-04-14 本轮进入 `api/36` shared-order 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面

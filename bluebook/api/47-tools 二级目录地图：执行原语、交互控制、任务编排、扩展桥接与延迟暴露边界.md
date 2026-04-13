@@ -40,7 +40,7 @@
 
 - 哪些工具能直接进入 prompt surface，哪些工具会被 mode / deny rule / REPL / ToolSearch 裁剪掉
 
-## 2. 真正的权威入口不是工具目录，而是 `tools.ts`
+## 2. 真正的 locator 先看 `Tool.ts / tools.ts`，但 runtime seam 不在这里收口
 
 阅读 `tools/` 最稳的入口不是随机打开某个工具目录，而是先看：
 
@@ -58,8 +58,9 @@
 
 这意味着：
 
-- 工具目录只是定义层
+- `src/tools/` 这一侧主要还是 definition plane
 - 真正的工具可见面，要到 `tools.ts` 才能看清
+- 若问题已经变成 execution ordering、hook boundary、orchestration safety 或 tool runtime writeback，就不要继续停在本页，直接并读 `../api/46` 的 `services/tools` runtime seam
 
 ## 3. 工作区与 Shell 执行原语
 
@@ -170,11 +171,12 @@
 
 更稳的 `tools/` reject 顺序是：
 
-1. 先回 `Tool.ts / tools.ts`
-2. 再回 deferred visibility 与 execution 原语
-3. 再回 task / agent / team authority
-4. 最后才看扩展桥接和环境自动化子集
+1. 先回 `Tool.ts / tools.ts`，确认 definition plane 与 visible-set registry。
+2. 再问问题是不是已经进入 `services/tools` 的 runtime orchestration seam。
+3. 再回 deferred visibility 与 execution 原语。
+4. 再回 task / agent / team authority。
+5. 最后才看扩展桥接和环境自动化子集。
 
 ## 11. 一句话总结
 
-这页真正值钱的，不是把 `tools/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：哪些动作原语沿 `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline` 被看见和被允许。
+这页真正值钱的，不是把 `tools/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：`src/tools/` 这一侧哪些动作原语沿 `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline` 被看见和被允许；若问题已经变成 orchestration / hook / execution ordering，则离开 definition plane，去 `services/tools` runtime seam。

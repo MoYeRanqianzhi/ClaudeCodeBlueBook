@@ -2,6 +2,14 @@
 
 ## 2026-04-14 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `api/47 + api/46 + navigation/35 + 02` locator-split 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `api/47 + api/46 + navigation/35 + 02` locator-split 结论：我只对 `bluebook/{api/47-tools 二级目录地图：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md,api/46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md,navigation/35-源码地图导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md,02-使用指南.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`47` 现在从 tools 侧明确承认 `definition plane / services-tools runtime plane` 分离；`46` 则继续压低 atlas 页的 runtime 总论语气，把 API 子节收回 `Session Ingress` 强度，并把 transport seam 明确还给 `30`；`35` 与 `02` 也把导航层残留的“权威入口”预期继续降回 `atlas locator / locator 段`。当前判断是，这一步能把目录结构线继续从“哪页最像 authority”拉回“哪页只配负责哪一段定位”的 speaking-right discipline。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当两张兄弟地图页分别占据 definition plane 与 runtime plane 时，更稳的默认追问不该是“哪一张更像总入口”，而应先问“later consumer 在什么时刻必须离开 definition、转去 runtime seam”；如果答案仍不清楚，地图页就还在诱导读者把两个 plane 压回一张大图。当前判断是，这个问法能继续把目录结构优化从“名字更统一”拉回“切换成本何时发生、为什么必须发生”的 first-principles discipline。
+
+- 本轮新的并行 Agent deeper-scan 结论：Aquinas 的只读比对把 Prompt 线的下一高价值文件压到 `philosophy/81`，因为 canonical witness chain 还没写成逐跳 `owner / producer / veto / consumer` 表；Russell 的只读比对把源码质量线的下一高价值文件压到 `architecture/README`，因为 `87` 的 why-proof 还没有单源闭合到 object landing；Banach 的只读比对则把结构线的 transport seam 进一步压到 `api/13`，因为 `api/46` 虽然已经回收 atlas 强度，但 transport/handoff 仍需明确还给 host protocol owner。当前判断是，这三条并行结论都值得保留为下一轮切口记忆，但不阻塞本轮 `api/47 + 46 + navigation/35 + 02` 的 locator-split 提交。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `api/36` shared-order 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
 
 - 本轮新的 `api/36` shared-order 结论：我只对 `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`36` 现在把共享骨架继续压硬成同一条 current-truth order：先看 `object`，再看 `state chain`，再看 `ask chain`，之后才允许读 `Context Usage / observed window / diff/control / rollback`。同时也明确写下了拒收线：没有 `state + pending_action`，就不得把 usage 单独认成合法 `decision window / recovery / continuation` 解释。当前判断是，这一步能把安全、省 token、recovery 与治理宿主读面继续收回同一条 public-evidence order，不再让 `usage-first` 或 `diff-first` 在共享矩阵层复活。
