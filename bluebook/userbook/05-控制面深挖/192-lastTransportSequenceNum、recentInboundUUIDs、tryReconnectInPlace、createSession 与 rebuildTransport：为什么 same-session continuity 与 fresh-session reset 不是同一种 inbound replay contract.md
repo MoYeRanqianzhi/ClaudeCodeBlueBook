@@ -280,9 +280,40 @@ perpetual resume / crash recovery 真正从外部种回来的，是：
 
 又写回一句模糊的“bridge 的读侧去重逻辑”。
 
+## 第七层：稳定层、条件层与灰度层
+
+### 稳定可见
+
+- same-session continuity 当前要同时保留 `lastTransportSequenceNum` 与 `recentInboundUUIDs`。
+- fresh-session reset 当前必须把这两层 state 一起归零。
+- bridge re-init 即便复用 prior session，也不会恢复 `recentInboundUUIDs`。
+- `lastTransportSequenceNum` 当前更像主游标；`recentInboundUUIDs` 当前更像 replay safety net。
+- 这里保护的不是“transport 是否重建过”，而是当前 read-side continuity 是否仍属于同一个 session incarnation。
+
+### 条件公开
+
+- 某次 reconnect 最终落到 same-session continuity、bridge re-init，还是 fresh-session reset，仍取决于当前 session 身份是否延续。
+- `recentInboundUUIDs` 是否继续有效，也仍取决于当前 bridge 实例与 read-side continuity 是否还在描述同一个 inbound event stream。
+- future build 会不会把 replay state 再细分成更多层，仍取决于当前 host / transport / session route，而不是这页已经稳定暴露的 boundary。
+
+### 内部/灰度层
+
+- `tryReconnectInPlace(...)`、`createSession(...)`、`rebuildTransport(...)` 的 exact 调度顺序
+- `lastTransportSequenceNum` 与 `recentInboundUUIDs` 的具体存取 wiring
+- same-session carryover 与 fresh-session reset 的 helper 细节
+
+所以这页最稳的结论必须停在：
+
+- inbound replay continuity 跟 session incarnation 走，不跟 transport 实例字面走
+- same-session continuity 与 fresh-session reset 不是同一种 replay contract
+
+而不能滑到：
+
+- 只要 transport 换了，就都是同一种 reconnect/reset 语义
+
 ## 结论
 
-更稳的一句应该是：
+所以这页能安全落下的结论应停在：
 
 - 同一个 bridge 实例里的 same-session continuity 要保留 `lastTransportSequenceNum` 与 `recentInboundUUIDs`
 - fresh-session reset 必须把它们一起归零
