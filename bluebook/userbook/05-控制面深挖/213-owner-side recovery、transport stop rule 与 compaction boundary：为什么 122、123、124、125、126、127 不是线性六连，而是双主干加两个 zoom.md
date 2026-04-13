@@ -49,6 +49,8 @@
 
 - 双主干加两个 zoom
 
+本页不重讲 122、123、124、125、126、127 各页各自的页内证明，也不把 watchdog、warning、`viewerOnly`、`remoteConnectionStatus`、`handleClose(...)`、`reconnect()`、`PERMANENT_CLOSE_CODES`、`4001`、`COMPACTION_TIMEOUT_MS` 这些局部对象和 helper / 常量名重新升级成新的总纲主角；这里只把 `212` 那张 remote-recovery branch map 再收紧成“双主干 + 两个 zoom”的阅读拓扑：`122/123/124` 构成 owner-side recovery / ownership / signer 主干，`125/126/127` 构成 transport / terminality / compaction 主干，其中 `124` 与 `126` 只是 zoom，不是再长出的第三主干。换句话说，这里要裁定的是“哪一段是根页、哪一段是 zoom、哪一段是真正的降层点”，不是再把 leaf-level 的 recovery edge、proof surface、stop rule 或 compaction marker 写成一条连续细化链。
+
 ## 第一性原理
 
 更稳的提问不是：
