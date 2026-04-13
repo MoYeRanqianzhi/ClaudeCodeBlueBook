@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-preflight-blocked-by-unmerged-root-prompt-tail-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 仍因根仓存在未解决冲突而失败；`git status --short --branch` 显示 `main...origin/main [ahead 20]`，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 仍处于 `UU`
+  - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、更新记忆与提交
+- 当前批次继续新增一条 `81-tail-should-collapse-late-verdict-and-explainability-repetition-apr13 live` 记忆：
+  - `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 现在也应直接写死：晚段的 `lawful forgetting / continue qualification / explainability` 只保留一套最小 schema，不再在 `pass/reject` 表、explainability 段、苏格拉底追问与“对 Agent 设计者的启发”里重复同一套 verdict 逻辑
+  - 更稳的默认写法是：`81` 晚段优先保留 `required witness / carrier 越权 / reopened excluded branches / local veto cue` 这四类最小问题，再把工程启发收成 2-3 条版本化约束，不再重复 why-owner 语气
 - 当前批次继续新增一条 `root-preflight-blocked-by-unmerged-root-why-tail-batch-apr13 live` 记忆：
   - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败；`git status --short --branch` 显示 `main...origin/main [ahead 20]`，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 仍处于 `UU`
   - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、更新记忆与提交

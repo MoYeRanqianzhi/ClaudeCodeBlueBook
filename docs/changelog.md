@@ -2,6 +2,10 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 Prompt tail-residual 协议：`81` 现在把晚段 `lawful forgetting / continue qualification / explainability` 的重复 verdict 逻辑压回一套最小 schema，不再在 `pass/reject` 表、可解释失稳段、苏格拉底追问和“对 Agent 设计者的启发”里重复同一套判断。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight failure 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 仍因未解决冲突失败；`git status --short --branch` 显示 `main...origin/main [ahead 20]`，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 仍处于 `UU`；这次失败只作为外部事实记录，不在根仓做任何收敛动作。
+
 - 继续更新 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 deeper why-owner tail 协议：`87` 现在把 future-maintainer rejectability 进一步收薄，不再借 `operator artifacts / effect ceiling / local veto cue / fail-closed seam` 长成 review gate 或 route bridge，而是更明确停在 why-proof 与最低 change-control 标准。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight failure 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 因未解决冲突失败；`git status --short --branch` 显示 `main...origin/main [ahead 20]`，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 仍处于 `UU`；这次失败只作为外部事实记录，不在根仓做任何收敛动作。

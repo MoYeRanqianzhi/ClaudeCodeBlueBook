@@ -4,6 +4,10 @@
 
 - 本轮新的根仓预检失败结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，但 merge 仍因根仓存在未解决冲突失败。`git status --short --branch` 显示 `main...origin/main [ahead 20]`，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 仍处于 `UU`。当前判断是，这仍只应作为 root preflight 的外部事实记录，不触发任何根仓收敛动作；正文继续严格只在 `.worktrees/mainloop` 内推进与提交。
 
+- 本轮新的 `81` tail-residual 结论：我并行复核了 `81 / 85 / 87` 的更深尾段后，决定把这一批继续收成单文件正文改动：`bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 现在把晚段 `lawful forgetting / continue qualification / explainability` 的重复 verdict 逻辑压回一套最小 schema，不再在 `pass/reject` 表、可解释失稳段、苏格拉底追问和“对 Agent 设计者的启发”里重复同一套判断。当前判断是，这一步能继续减少 `81` 晚段长成 compact review course 或 why-owner 尾段复述的概率，同时又不去扰动已经基本收稳的 `85 / 87`。
+
+- 本轮新的根仓预检失败结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，但 merge 仍因根仓存在未解决冲突失败。`git status --short --branch` 显示 `main...origin/main [ahead 20]`，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 仍处于 `UU`。当前判断是，这仍只应作为 root preflight 的外部事实记录，不触发任何根仓收敛动作；正文继续严格只在 `.worktrees/mainloop` 内推进与提交。
+
 - 本轮新的 `87` deeper-tail 结论：我并行复核了 `81 / 85 / 86 / 87` 的更深尾段后，只对 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 落了正文修改。`87` 现在把 section 7 里的 route/gate/checklist 语气再收薄一层：可交接的 why-proof 不再显式指挥 later maintainer “去哪个 owner / 哪个 seam owner”，future-maintainer rejectability 也不再借 `operator artifacts / effect ceiling / local veto cue` 长成 review gate，而是更纯粹地停在 why-proof 与最低 change-control 标准。当前判断是，这一步能继续减少 `87` section 7 被 later consumer 误读成 compact review gate 或 route bridge 的概率。
 
 - 本轮新的根仓预检失败结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，但 merge 因根仓存在未解决冲突失败。`git status --short --branch` 显示 `main...origin/main`，并有多处根仓脏改动，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 处于 `UU`。当前判断是，这只应作为 root preflight 的外部事实记录，不触发任何根仓收敛动作；正文继续严格只在 `.worktrees/mainloop` 内推进与提交。
