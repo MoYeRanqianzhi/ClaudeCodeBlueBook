@@ -2,6 +2,10 @@
 
 ## 当前稳定边界
 
+- `2026-04-13` 最新一轮已完成 `412 / 396 / 263`：主线把 stronger-request cleanup 从 `stronger-request retention-enforcement-honesty-governance` 继续推进到 `stronger-request cleanup-isolation-governance`，附录把 `surface / honesty answer / isolation question / positive control / gap` 压成统一矩阵，源码剖面则把 historical task-output failure、family-specific isolation repair、shared-readable temp surface、older cleanup sweep world、live-session ledger 与 single-owner positive control 并排钉成 `noninterference-proof grammar`。这一轮稳定写出的新边界是：`执行状态已被更诚实地说明` 不等于 `非干扰性已被证明`，`你更诚实地说明了自己做到哪一步` 不等于 `你已经证明不会伤到别的活对象。`
+- `2026-04-13` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-13` 当前唯一 open question 已前推到 `stronger-request cleanup-constitution-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
+
 - `2026-04-13` 最新一轮已完成 `411 / 395 / 262`：主线把 stronger-request cleanup 从 `stronger-request retention-governance` 继续推进到 `stronger-request retention-enforcement-honesty-governance`，附录把 `surface / declared scope / runtime truth / honesty gap` 压成统一矩阵，源码剖面则把 transcript-centered wording、future suppression、delayed runtime admission、wider executor coverage、local receipt gap 与 uncovered diagnostics gap 并排钉成 `execution-truth grammar`。这一轮稳定写出的新边界是：`有时间法律` 不等于 `有时间法律的诚实执行说明`，`你本来该怎样` 不等于 `你已经诚实说明了自己做到哪一步。`
 - `2026-04-13` 本轮 fresh 复核根仓库时，`git fetch origin main` 成功，`git rev-list --left-right --count main...origin/main` 返回 `0 0`，且 `git status --short --branch` 显示 `## main...origin/main` 但同时伴随既有 `A/M` 条目；随后 `git merge --ff-only origin/main` 返回 `fatal: You have not concluded your merge (MERGE_HEAD exists).`。为避免污染主分支与其他 worktree，本轮未在根仓库做任何进一步处置，而是把该状态隔离记录后仅在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-13` 当前唯一 open question 已前推到 `stronger-request cleanup-isolation-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
