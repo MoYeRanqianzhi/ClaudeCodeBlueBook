@@ -107,6 +107,7 @@
 - [371-2026-04-13-staging-inertness scope clarification 拆分记忆.md](./371-2026-04-13-staging-inertness%20scope%20clarification%20拆分记忆.md)
 - [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md)
 - [373-2026-04-13-branch-map scope clarification 拆分记忆.md](./373-2026-04-13-branch-map%20scope%20clarification%20拆分记忆.md)
+- [374-2026-04-13-wire-visibility branch-map scope clarification 拆分记忆.md](./374-2026-04-13-wire-visibility%20branch-map%20scope%20clarification%20拆分记忆.md)
 
 ## 全量档案
 

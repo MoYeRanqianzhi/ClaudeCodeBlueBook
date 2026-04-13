@@ -38,6 +38,8 @@
 
 - 为什么 105、106、108、109、110 不是并列尾页，而是从 wider-wire visibility 分叉出去的四种后继问题
 
+本页不重讲 105、106、108、109、110 各页各自的页内证明，也不把 `post_turn_summary`、`stream-json --verbose`、`streamlined_*`、`isStdoutMessage(...)`、skip list 这些局部对象和 helper 名重新升级成新的总纲主角；这里只整理一张跨页拓扑图：105 先定 wider-wire visibility 根分裂，106、108、109 分成 raw wire / callback narrowing / pre-wire projection 三条后继线，110 再作为交叉叶子解释 same skip list 不等于 same suppress reason，并顺手把稳定用户合同、条件性可见合同与灰度实现证据分层。换句话说，这里要裁定的是“哪些页是什么关系、哪些判断属于哪一层合同”，不是再把 leaf-level 的局部 wire 证据写成整簇页面的统一运行时结论。
+
 ## 第一性原理
 
 更稳的提问不是：
