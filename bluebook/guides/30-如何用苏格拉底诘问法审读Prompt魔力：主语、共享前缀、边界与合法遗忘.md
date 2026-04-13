@@ -82,13 +82,13 @@
 
 - 这套 prompt 是否已经把 lineage kernel、projection consumer、continuation qualification 与 lawful forgetting 组织成同一条制度链
 
-凡声称“仍是同一世界”，都必须能点名 witness：authority owner、stable prefix ref、`protocol transcript` ref、`continuation object` ref、`continue-or-reject verdict`。没有 witness，就不是继承，只是叙述。
+凡声称“仍是同一世界”，都必须能点名 witness：authority owner、stable prefix ref、`protocol transcript` ref、`continuation object` ref、`continue-or-reject verdict`。没有 witness，就不是继承，只是叙述。更硬一点说，Prompt 审读最终也只在追三件事：`lawful inheritance` 有没有保住同一工作对象，`search-pruning` 有没有保住已排除分支，`decision-retirement` 有没有保住旧判断继续退役。
 
 ## 3. 苏格拉底可执行判定链
 
 执行协议先固定为五步：
 
-0. Gate-0：先写明这次系统试图退休的决策是什么、谁继承这项退休、下一位 consumer 凭什么拒绝重放。
+0. Gate-0：先写明这次系统试图退休的决策是什么、谁继承这项退休、哪一批分支继续保持被排除、以及没有新增 `decision delta` 时哪组旧判断必须继续退役，下一位 consumer 又凭什么拒绝重放。
 
 1. 输入：`compiled request truth`、`witness chain`、consumer matrix、当前 continuation object。
 2. 每个 gate 必须产出 `pass | fail | unknown`。

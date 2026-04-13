@@ -22,6 +22,7 @@ Claude Code 的 prompt 本质上，不是把规则拆成四层而已，而是把
 
 静态法、动态法、角色法与现场法之所以值钱，不是因为“分层”这个动作本身，而是因为它们共同服务同一套 `decision-retirement system`：稳定 law 不乱抖、动态事实晚绑定、角色边界不越权、现场对象可合法继承。
 更硬一点说，分层不是分桶，而是继承法：上层负责立法与排除，下层负责实例化、缩窄、委派与绑定对象，但不配把已退休的判断重新拉回候选集。
+再压一层，这四层真正共同保住的也只剩三条 Prompt owner law：`lawful inheritance` 让不同 consumer 继承同一工作对象，`search-pruning` 让上层已排除分支继续保持被排除，`decision-retirement` 让没有新增 `decision delta` 的旧判断继续退役。
 也就是说，prompt 并不是一段文本，而是一组约束在不同稳定度上的分层投影。
 
 代表性证据：
@@ -69,6 +70,8 @@ Claude Code 的做法更成熟：
 - 更稳
 - 更像在理解任务
 - 更少出现“看似会了，下一轮又忘了”的漂移
+
+更准确地说，它真正减少的不是“忘词”，而是 later consumer 再次重开世界协商、再次重搜动作空间，以及再次把旧判断从退役态拖回候选集的次数。
 
 ## 4. 为什么这比“更长的 prompt”更强
 
@@ -122,4 +125,4 @@ Claude Code 则在增加结构：
 
 ## 7. 一句话总结
 
-Claude Code 的 prompt 之所以有力量，不是因为它被分成几层，而是因为这些层一起保住 exclusion discipline、lawful inheritance 与 later-consumer rights，从而让世界重判不必在每轮重做。
+Claude Code 的 prompt 之所以有力量，不是因为它被分成几层，而是因为这些层一起保住 `lawful inheritance / search-pruning / decision-retirement` 与 later-consumer rights，从而让世界重判不必在每轮重做。

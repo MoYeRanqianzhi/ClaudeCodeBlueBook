@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-deep-pages-must-collapse-to-three-owner-laws-apr13 live 记忆：
+  - `bluebook/philosophy/{14,18,21,54}` 与 `guides/30` 现在也应直接写死：Prompt 深页不能再各自用“更稳 / 更聪明 / 更会继续 / 更会接手”分散解释同一件事，而要统一收回 `lawful inheritance / search-pruning / decision-retirement` 三条 owner law
+  - 更稳的默认写法是：Prompt 魔力页负责回答 runtime 替 later consumer 退休了哪些世界重谈、动作重搜与旧判断回流；苏格拉底审读页则把 Gate-0 先写成“哪一批分支继续保持被排除、哪组旧判断在无新增 `decision delta` 时必须继续退役”
 - 当前批次继续新增一条 hierarchy-gates-must-lock-rung-before-owner-entry-apr13 live 记忆：
   - `bluebook/{architecture/README,api/README,philosophy/README,navigation/README}.md` 现在也应直接写死：`guides/102` 先锁 claim-state rung，再进入 why / object / host-facing truth / artifact gap；如果 rung 还没锁，后续 owner 页都不该偷接
   - 更稳的默认写法是：`architecture/` 只接 object-level claim，`api/` 只接 host-facing truth claim-state / consumer subset，`philosophy/` 只证明 why 不补 promotion gate，`navigation/` 只在主语与 rung 都已确定后反查下一种 artifact 或最近的 fail-closed seam

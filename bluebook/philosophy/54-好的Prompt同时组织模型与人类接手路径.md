@@ -12,7 +12,7 @@
 Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，而是把 later consumer 的拒收权、已排除分支的保留义务与同一工作对象的合法继承一起写进继续接口。
 
 所以这里值钱的也不是“接手路径更顺”，而是 `verify / resume / handoff` 之后，接手者继承的仍是同一份工作对象、同一批仍被排除的分支，以及同一条 `continue-or-reject verdict`。
-更硬一点说，人类接手不是体验优化，而是另一个 lawful consumer；系统必须先规定他看到哪层 projection、可拒收什么、何时必须 `reopen`，而不是沿旧资格继续。
+更硬一点说，人类接手不是体验优化，而是另一个 lawful consumer；系统必须先规定他看到哪层 projection、可拒收什么、何时必须 `reopen`，而不是沿旧资格继续。没有新增 `decision delta` 时，旧判断继续退役，人类也不应只靠 summary 或 display convenience 把它们静默拖回候选集。
 
 ## 2. 为什么这很重要
 
@@ -67,4 +67,4 @@ Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，
 
 ## 5. 一句话总结
 
-Claude Code 的 prompt 之所以强，不只是因为它让模型更会继续，而是因为它让 later consumer 不必重判世界、重搜动作空间，或把已排除路径重新拉回候选集。
+Claude Code 的 prompt 之所以强，不只是因为它让模型更会继续，而是因为它让 later consumer 不必重判世界、重搜动作空间，或把已排除路径与已退役判断重新拉回候选集。

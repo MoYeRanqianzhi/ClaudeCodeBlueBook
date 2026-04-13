@@ -22,6 +22,7 @@
 Claude Code 的 prompt 魔力，如果从第一性原理收束，首先不是把模型说服得更彻底，而是把 later consumer 本来要重做的世界重判、动作搜索与排除理由重写提前退休。
 
 强 Prompt 因而首先是一个 `decision-retirement system`：`verify / delegate / tool choice / resume / handoff` 之后，接手者继承的必须是同一份工作对象、同一批仍被排除的分支，以及同一条 `continue-or-reject verdict`。
+更硬一点说，这套退休机制最后只落成三条 owner law：`lawful inheritance` 保护同一工作对象，`search-pruning` 保护已排除分支继续留在排除态，`decision-retirement` 保护没有新增 `decision delta` 的旧判断继续退役。
 
 所以用户感到它“更聪明”，往往不是回答能力凭空增强，而是 runtime 先裁掉了谁能发言、哪些动作合法、哪些分支已死、何时配继续这四类待判变量。
 
@@ -102,6 +103,8 @@ Claude Code 的源码更接近相反顺序：
 `filterToolsByDenyRules(...)` 与 `assembleToolPool(...)` 甚至连工具 ABI 都先做了 cache-safe shaping。模型看到的不是“系统本来能做什么”，而是：
 
 - 这一角色在这一世界里当前被允许看到什么
+
+所以 cache 稳定性真正保住的也不只是性能，而是“哪些边界不该再重谈、哪些分支不该再回流候选集、哪些旧判断不该因旁路重放而复活”。
 
 `stopHooks` 保存 `CacheSafeParams`，让 `/btw` 和 post-turn forks 复用同一前缀，也进一步说明：
 
@@ -185,4 +188,4 @@ Prompt 母线在这一页真正该守住的 reject trio 是：
 
 ## 7. 一句话总结
 
-Claude Code 的 prompt 魔力，不是神秘文案，而是系统把 exclusion discipline、lawful inheritance 与 later-consumer 的拒收权一起保住，从而持续退休掉没有新增决策增益的世界重判。
+Claude Code 的 prompt 魔力，不是神秘文案，而是系统把 `lawful inheritance / search-pruning / decision-retirement` 与 later-consumer 的拒收权一起保住，从而持续退休掉没有新增决策增益的世界重判。
