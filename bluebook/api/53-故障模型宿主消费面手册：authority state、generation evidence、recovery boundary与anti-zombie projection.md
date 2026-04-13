@@ -10,6 +10,8 @@
 
 ## 0. 关键源码锚点
 
+当前 `.worktrees/mainloop` 仍处于 `mirror absent / public-evidence only`，下列源码路径只能作为归档锚点与后续复核入口，不能写成当前 worktree 已直接验证的 live evidence。
+
 - `claude-code-source-code/src/entrypoints/sdk/controlSchemas.ts:308-360`
 - `claude-code-source-code/src/utils/sessionState.ts:92-149`
 - `claude-code-source-code/src/state/onChangeAppState.ts:43-92`
@@ -35,6 +37,10 @@ Claude Code 当前并没有公开一份名为：
    - 宿主能看到哪些当前权威状态、阻塞状态与合法消费宽度。
 3. `freshness-gate / stale-writer machinery`
    - 真正负责 generation guard、stale-safe merge、recovery asset non-sovereignty 与 anti-zombie 的内部机制。
+
+因此本页更稳的 claim state 只到这里：公开 artifact 与既有归档材料支持我们把 `rewind_files / seed_read_state`、`session_state_changed / pending_action / task_summary` 等面读成结构故障模型的宿主消费候选。
+像 `per-host authority width`、`freshness gate`、`recovery asset non-sovereignty` 这样的对象边界，当前仍应保留为 `host-facing truth candidate / internal-only candidate / unknown`，而不是升格成已核实的对象事实。
+待源码镜像回场后，再把这些候选从 public-evidence claim-state 升格为经本地镜像核验的 host-facing truth 与公共 ABI 边界。
 
 更成熟的接入方式不是：
 
