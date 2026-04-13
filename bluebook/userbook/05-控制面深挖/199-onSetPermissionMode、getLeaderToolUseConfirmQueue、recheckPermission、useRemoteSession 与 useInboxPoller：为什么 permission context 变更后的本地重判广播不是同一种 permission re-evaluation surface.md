@@ -11,6 +11,23 @@
 
 不是同一种 closeout contract。
 
+但这不表示 `199` 是 `198` 的线性下一步。
+
+按 permission tail 的 canonical 拓扑，
+
+- `198`
+- `199`
+
+都应回挂到 `196` 之后的不同后继问题；
+
+这里只是先借 `198` 的 request-level closeout 当反例，
+
+再继续追问：
+
+- permission context change 下的 leader-local re-evaluation
+
+到底为什么不能被写成 closeout 延长线。
+
 但如果正文停在这里，读者还是很容易把 `recheckPermission()` 这条线继续写平：
 
 - 既然 `set_permission_mode` 会触发 queue recheck，那是不是所有 pending permission ask 都会跟着本地 mode 变化一起重判？
@@ -239,9 +256,41 @@ CCR 只不过是其中一个触发源。
 
 写成同一张 permission lifecycle 表。
 
+## 第七层：稳定层、条件层与灰度层
+
+### 稳定可见
+
+- `onSetPermissionMode(...)` 改的是本地 leader 的 permission context，不是直接替 pending ask 出 verdict。
+- `getLeaderToolUseConfirmQueue()` fanout 到的，只是 leader queue 上那些真正挂在本地治理面里的 ask。
+- `interactiveHandler.ts` 的 `recheckPermission()` 当前是实义重判路径。
+- `useRemoteSession` 与 `useInboxPoller` 的 `recheckPermission()` 当前明确是 no-op。
+- CCR mode change 只是一个触发源，不是这条 surface 的唯一主语。
+
+### 条件公开
+
+- 其他 trigger 是否也会打到同一条 fanout surface，仍取决于本地 leader permission context 是否真的发生变化。
+- 某个 ask 会不会收到 recheck，也仍取决于它是否挂在当前 leader queue 上、并实现了本地实义 `recheckPermission()`。
+- remote / worker ask 将来会不会引入实义重判路径，仍取决于当前 host / ownership route，而不是这页已经稳定暴露的合同。
+
+### 内部/灰度层
+
+- `setImmediate(...)` 的 exact 调度顺序
+- `getLeaderToolUseConfirmQueue()` 的具体 wiring
+- `interactiveHandler.ts` 的本地规则重判细节
+- `useRemoteSession` / `useInboxPoller` 的 no-op helper 具体实现
+
+所以这页最稳的结论必须停在：
+
+- leader-local permission context change 会形成一条本地 re-evaluation fanout surface
+- 这条 surface 不等于所有 ask 共享的 generic permission reevaluation bus
+
+而不能滑到：
+
+- 只要 permission context 变了，所有 pending ask 都会统一重判
+
 ## 结论
 
-更稳的一句应该是：
+所以这页能安全落下的结论应停在：
 
 - `onSetPermissionMode(...)` 改的是本地 leader 的 permission context
 - `getLeaderToolUseConfirmQueue()` fanout 到的，只是 leader queue 上那些真正实现了本地 `recheckPermission()` 的 ask

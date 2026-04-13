@@ -17,7 +17,7 @@
 - `command-index / capability map / range map`
   - 先看 [284-2026-04-08-capability map hub cleanup 拆分记忆.md](./284-2026-04-08-capability%20map%20hub%20cleanup%20拆分记忆.md)、[294-2026-04-08-command-index session-ops split 拆分记忆.md](./294-2026-04-08-command-index%20session-ops%20split%20拆分记忆.md)、[311-2026-04-08-reference hub range map sync 拆分记忆.md](./311-2026-04-08-reference%20hub%20range%20map%20sync%20拆分记忆.md)、[321-2026-04-08-command-index status control-plane regroup 拆分记忆.md](./321-2026-04-08-command-index%20status%20control-plane%20regroup%20拆分记忆.md)。
 - `2026-04-13 scope guard / hub uplift / hardening 批次`
-  - 从 [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md) 一路看到 [411-2026-04-13-blocked-state ceiling contract hardening 拆分记忆.md](./411-2026-04-13-blocked-state%20ceiling%20contract%20hardening%20拆分记忆.md)。
+  - 从 [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md) 一路看到 [434-2026-04-13-inbound-replay continuity stable-gray hardening 拆分记忆.md](./434-2026-04-13-inbound-replay%20continuity%20stable-gray%20hardening%20拆分记忆.md)。
 - `更早批次`
   - 直接跳到下面的“全量档案”，按编号顺着翻。
 
@@ -164,6 +164,29 @@
 - [409-2026-04-13-result-passthrough stable-gray hardening 拆分记忆.md](./409-2026-04-13-result-passthrough%20stable-gray%20hardening%20拆分记忆.md)
 - [410-2026-04-13-inert-stale-slot contract hardening 拆分记忆.md](./410-2026-04-13-inert-stale-slot%20contract%20hardening%20拆分记忆.md)
 - [411-2026-04-13-blocked-state ceiling contract hardening 拆分记忆.md](./411-2026-04-13-blocked-state%20ceiling%20contract%20hardening%20拆分记忆.md)
+- [412-2026-04-13-visibility-table root hardening 拆分记忆.md](./412-2026-04-13-visibility-table%20root%20hardening%20拆分记忆.md)
+- [413-2026-04-13-streamlined-root hardening 拆分记忆.md](./413-2026-04-13-streamlined-root%20hardening%20拆分记忆.md)
+- [414-2026-04-13-callback-narrowing contract hardening 拆分记忆.md](./414-2026-04-13-callback-narrowing%20contract%20hardening%20拆分记忆.md)
+- [415-2026-04-13-completion-signal root hardening 拆分记忆.md](./415-2026-04-13-completion-signal%20root%20hardening%20拆分记忆.md)
+- [416-2026-04-13-init-visibility root hardening 拆分记忆.md](./416-2026-04-13-init-visibility%20root%20hardening%20拆分记忆.md)
+- [417-2026-04-13-replay-dedup branch hardening 拆分记忆.md](./417-2026-04-13-replay-dedup%20branch%20hardening%20拆分记忆.md)
+- [418-2026-04-13-init-payload thickness hardening 拆分记忆.md](./418-2026-04-13-init-payload%20thickness%20hardening%20拆分记忆.md)
+- [419-2026-04-13-attach-restore init semantics hardening 拆分记忆.md](./419-2026-04-13-attach-restore%20init%20semantics%20hardening%20拆分记忆.md)
+- [420-2026-04-13-loading-lifecycle branch hardening 拆分记忆.md](./420-2026-04-13-loading-lifecycle%20branch%20hardening%20拆分记忆.md)
+- [421-2026-04-13-suppress-reason split hardening 拆分记忆.md](./421-2026-04-13-suppress-reason%20split%20hardening%20拆分记忆.md)
+- [422-2026-04-13-recovery-lifecycle root hardening 拆分记忆.md](./422-2026-04-13-recovery-lifecycle%20root%20hardening%20拆分记忆.md)
+- [423-2026-04-13-control-side-channel root hardening 拆分记忆.md](./423-2026-04-13-control-side-channel%20root%20hardening%20拆分记忆.md)
+- [424-2026-04-13-permission-tail successor-skeleton hardening 拆分记忆.md](./424-2026-04-13-permission-tail%20successor-skeleton%20hardening%20拆分记忆.md)
+- [425-2026-04-13-permission-tail canonical-topology hardening 拆分记忆.md](./425-2026-04-13-permission-tail%20canonical-topology%20hardening%20拆分记忆.md)
+- [426-2026-04-13-permission-tail leaf-entry anti-linearity hardening 拆分记忆.md](./426-2026-04-13-permission-tail%20leaf-entry%20anti-linearity%20hardening%20拆分记忆.md)
+- [427-2026-04-13-sandbox-persist stable-gray hardening 拆分记忆.md](./427-2026-04-13-sandbox-persist%20stable-gray%20hardening%20拆分记忆.md)
+- [428-2026-04-13-permission-tail trigger-vs-successor hardening 拆分记忆.md](./428-2026-04-13-permission-tail%20trigger-vs-successor%20hardening%20拆分记忆.md)
+- [429-2026-04-13-permission-reevaluation stable-gray hardening 拆分记忆.md](./429-2026-04-13-permission-reevaluation%20stable-gray%20hardening%20拆分记忆.md)
+- [430-2026-04-13-sandbox-host-sweep stable-gray hardening 拆分记忆.md](./430-2026-04-13-sandbox-host-sweep%20stable-gray%20hardening%20拆分记忆.md)
+- [431-2026-04-13-permission-closeout stable-gray hardening 拆分记忆.md](./431-2026-04-13-permission-closeout%20stable-gray%20hardening%20拆分记忆.md)
+- [432-2026-04-13-permission-ledger stable-gray hardening 拆分记忆.md](./432-2026-04-13-permission-ledger%20stable-gray%20hardening%20拆分记忆.md)
+- [433-2026-04-13-ingress-reading-chain skeleton hardening 拆分记忆.md](./433-2026-04-13-ingress-reading-chain%20skeleton%20hardening%20拆分记忆.md)
+- [434-2026-04-13-inbound-replay continuity stable-gray hardening 拆分记忆.md](./434-2026-04-13-inbound-replay%20continuity%20stable-gray%20hardening%20拆分记忆.md)
 
 ## 全量档案
 

@@ -249,21 +249,28 @@ attach 后用户可能看到：
 
 source 和 path 都不同。
 
-## 第八层：当前源码能稳定证明什么，不能稳定证明什么
+## 第八层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
+- same init trace != same attach restore semantics
 - history attach 当前会把 latest page replay 成 transcript message
-- init 在 history path 上会被压成 banner
+- init 当前在 history path 上会被压成 banner
 - live remote session 当前会直接用 raw init 触发 `onInit(slash_commands)`
-- `handleRemoteInit(...)` 的作用是收窄本地 commands 可见集
-- history hook 本身没有 `onInit` 入口
+- `handleRemoteInit(...)` 当前的作用是收窄本地 commands 可见集
+- history hook 当前本身没有 `onInit` 入口
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- history replay 是否永远不该补跑任何 bootstrap side effect
-- attach 时 live init 是否一定还会再到一次
-- 如果未来给 history 路径加 metadata hydration，会不会改变当前结论
+- history replay 是否永远不该补跑任何 bootstrap side effect，仍取决于当前 attach/replay 设计边界
+- attach 时 live init 是否一定还会再到一次，仍取决于当前 attach/live sequencing
+- 如果未来给 history 路径加 metadata hydration，会不会改变当前结论，也仍是条件化实现选择
+
+### 内部/灰度层
+
+- `useAssistantHistory`、`pageToMessages(...)`、`useRemoteSession onInit` 与 `handleRemoteInit(...)` 的 exact helper 顺序
+- history banner collapse 与 live init bootstrap 的 exact host wiring
+- 未来 attach 路径是否会新增 metadata hydration 或别的 bootstrap side effect
 
 所以这页最稳的结论必须停在：
 

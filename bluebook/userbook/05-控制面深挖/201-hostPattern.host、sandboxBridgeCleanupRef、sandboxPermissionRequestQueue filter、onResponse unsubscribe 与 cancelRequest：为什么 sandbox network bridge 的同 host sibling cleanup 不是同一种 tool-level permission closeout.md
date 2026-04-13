@@ -9,6 +9,18 @@
 - late response 消费
 - 策略变化后的旧等待窗重判
 
+但这不表示 `201` 是 `198` 的 sandbox 版线性下一步。
+
+按 permission tail 的 canonical 拓扑，
+
+- `201`
+
+仍应回挂到 `196` 之后的 sandbox-network 分支；
+
+这里只是先借 `198` 的 request-level closeout 当反例，
+
+避免把 same-host sibling sweep 误写成单 ask 收口的放大版。
+
 但如果正文停在这里，读者还是很容易把 sandbox network bridge 这条线继续写平：
 
 - `SandboxNetworkAccess` 不就是 bridge 里另一个普通 `can_use_tool` ask 吗？
@@ -222,9 +234,41 @@ bridge 路径每发出一个同 host 的 network ask，就会登记一个 cleanu
 - 79 是 approval shell atlas，讲更高层的五张主权图
 - 201 只讲 atlas 里 sandbox host 这一张图内部，为什么还有 host-level cleanup contract
 
+## 第六层：稳定层、条件层与灰度层
+
+### 稳定可见
+
+- `SandboxNetworkAccess` 当前只是把 host verdict 装进 tool approval 协议里的 transport shell。
+- `sandboxPermissionRequestQueue` 当前按 `hostPattern.host` 成组 settle，不按单个 `request_id` settle。
+- `sandboxBridgeCleanupRef` 当前是 host-keyed sibling cleanup map，不是 request-id cleanup map。
+- 无论 verdict 来自远端 bridge response 还是本地 UI 响应，真正被 settle 的都是同一个 host family。
+- `unsubscribe()` 与 `cancelRequest(...)` 当前都只是 host sweep 里的局部 cleanup 动作，不是这条线的最终主语。
+
+### 条件公开
+
+- 某个 host verdict 最终会横扫多少 sibling asks，仍取决于当前 queue 中同 host 的挂起项分布。
+- 哪些 bridge prompt cleanup 会被一起扫掉，也仍取决于 `sandboxBridgeCleanupRef` 当前按 host 聚合的登记情况。
+- future build 会不会把 transport shell、queue settle 或 cleanup map 再细分，仍取决于当前 host / bridge route，而不是这页已经稳定暴露的合同。
+
+### 内部/灰度层
+
+- `sandboxPermissionRequestQueue` filter 的 exact 过滤顺序
+- `sandboxBridgeCleanupRef` 的具体登记/清空 wiring
+- 远端 response 与本地 UI response 路径上的 helper 调用细节
+- `unsubscribe()` 与 `cancelRequest(...)` 的 exact 执行时机
+
+所以这页最稳的结论必须停在：
+
+- sandbox network bridge 里存在一条 host-level sibling sweep 合同
+- 这条合同不等于 tool-level closeout 的放大版
+
+而不能滑到：
+
+- 只要 approve/deny 一次，就只是顺手多清了几条 request cleanup
+
 ## 结论
 
-更稳的一句应该是：
+所以这页能安全落下的结论应停在：
 
 - 在 sandbox network bridge 里，真正被 settle 的不是某个 `bridgeRequestId`
 - 而是某个 `hostPattern.host` 下面整组并发 sibling asks

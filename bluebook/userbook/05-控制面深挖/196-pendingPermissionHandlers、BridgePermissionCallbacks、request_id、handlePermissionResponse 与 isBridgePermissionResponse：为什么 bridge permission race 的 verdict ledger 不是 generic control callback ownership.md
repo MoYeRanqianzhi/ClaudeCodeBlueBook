@@ -265,9 +265,41 @@ Transport 层看上去：
 
 这句会把真正的 ownership 边界全部抹掉。
 
+## 第七层：稳定层、条件层与灰度层
+
+### 稳定可见
+
+- `pendingPermissionHandlers` 当前不是 generic control callback registry。
+- 它当前是一张以 `request_id` 为键的本地 pending verdict ledger。
+- `handlePermissionResponse(...)` 当前是这张 ledger 的 drain 点，不是通用 `control_response` dispatcher。
+- `isBridgePermissionResponse(...)` 当前又把 payload ownership 继续收窄到 `allow/deny` 这类 permission verdict。
+- `request_id` 在这里当前只服务 permission race 的 request / verdict 配对，不代表所有 control frame 的统一 ownership key。
+
+### 条件公开
+
+- 某个 pending verdict 最终何时被 drain，仍取决于当前 response arrival timing 与 race 路径。
+- 未来是否会在 permission leg 内再分更多 subtype gate，仍取决于当前 host / transport route，而不是这页已经稳定暴露的 ledger 合同。
+- `request_id` 在其他 control path 上是否承担别的相关角色，仍取决于那些路径自己的主语，不改变这页当前收住的 ownership 边界。
+
+### 内部/灰度层
+
+- `pendingPermissionHandlers` 的具体存取 wiring
+- `handlePermissionResponse(...)` 的 helper 调度细节
+- `isBridgePermissionResponse(...)` 的 exact payload gate 细节
+- permission leg 内部的 future branch / subtype 扩张
+
+所以这页最稳的结论必须停在：
+
+- permission leg 内部存在一张本地 pending verdict ledger
+- 这张 ledger 不等于 generic control callback registry
+
+而不能滑到：
+
+- 只要带 `request_id` 的 `control_response` 都会走同一张通用 registry
+
 ## 结论
 
-更稳的一句应该是：
+所以这页能安全落下的结论应停在：
 
 - `pendingPermissionHandlers` 不是 generic control callback registry
 - 它是一张以 `request_id` 为键的本地 pending verdict ledger

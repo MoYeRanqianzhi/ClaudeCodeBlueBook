@@ -258,21 +258,28 @@ bridge redaction 仍然保留一份结构化 init object，只是字段被裁了
 
 - same consumer contract
 
-## 第七层：当前源码能稳定证明什么，不能稳定证明什么
+## 第七层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
-- `buildSystemInitMessage(...)` 定义的是厚的 init metadata contract
+- same init builder != same payload thickness in practice
+- `buildSystemInitMessage(...)` 当前定义的是厚的 init metadata contract
 - QueryEngine 当前走 full inputs
 - bridge init 当前受 feature gate 控制，且输入被显式 redaction
-- transcript 侧最后只剩 model-only prompt
-- internal feature 下还能附着 public schema 外字段
+- transcript 侧当前最后只剩 model-only prompt
+- internal feature 下当前还能附着 public schema 外字段
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- 所有 build 都会开启 `tengu_bridge_system_init`
-- bridge redaction 策略未来不会继续调整
-- transcript prompt 永远只保留 model，不会加更多字段
+- 所有 build 是否都会开启 `tengu_bridge_system_init`，仍取决于当前 feature/build route
+- bridge redaction 策略未来会不会继续调整，仍取决于当前实现策略
+- transcript prompt 会不会永远只保留 model、不再加更多字段，也仍是条件化宿主选择
+
+### 内部/灰度层
+
+- `buildSystemInitMessage(...)`、QueryEngine、`useReplBridge` 与 `convertInitMessage(...)` 的 exact helper 顺序
+- bridge redaction 的 exact field list 与 build wiring
+- internal-only 附着字段未来会不会继续变化
 
 所以这页最稳的结论必须停在：
 

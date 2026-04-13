@@ -300,21 +300,28 @@ viewerOnly 则条件跳过。
 
 不是同一种 recovery lifecycle。
 
-## 第十层：当前源码能稳定证明什么，不能稳定证明什么
+## 第十层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
-- timeout、warning、reconnect、reconnecting、disconnected 是分层发生的
-- heartbeat clear 的位置刻意早于 echo filter
-- reconnecting 与 disconnected 都会保守清理局部账本，但语义不同
+- same recovery episode != same lifecycle edge
+- timeout、warning、reconnect、reconnecting、disconnected 当前是分层发生的
+- heartbeat clear 的位置当前刻意早于 echo filter
+- reconnecting 与 disconnected 当前都会保守清理局部账本，但语义不同
 - viewerOnly 当前会跳过 watchdog
-- compaction 会切换到更长 timeout
+- compaction 当前会切换到更长 timeout
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- reconnect 最终一定成功
-- 所有 host 都会维持同样的 recovery edges
-- future build 不会再把 reconnecting 细分成更多状态
+- reconnect 最终是否一定成功，仍取决于当前 transport/host 条件
+- 所有 host 是否都会维持同样的 recovery edges，仍取决于当前 host route
+- future build 会不会再把 reconnecting 细分成更多状态，也仍是条件化实现选择
+
+### 内部/灰度层
+
+- timeout watchdog、warning、reconnect action 与 heartbeat clear 的 exact helper 顺序
+- reconnecting / disconnected 的局部账本清理细节
+- compaction timeout 与 viewerOnly skip 的 exact wiring
 
 所以这页最稳的结论必须停在：
 

@@ -214,21 +214,28 @@
 - 106 讲 raw wire contract 面对的是哪一层对象
 - 109 讲当 streamlined gate 打开时，这条 wire contract 在写出前会被重写
 
-## 第七层：当前源码能稳定证明什么，不能稳定证明什么
+## 第七层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
-- streamlined gate 由 feature、env var 与 `outputFormat === 'stream-json'` 共同决定
-- transformer 在 streaming loop 内、`structuredIO.write(...)` 之前运行
-- transformer 的输入/输出是 `StdoutMessage -> StdoutMessage | null`
-- streamlined 分支写出的是 transformed message，而不是原始 message
-- `lastMessage` 过滤发生在写出之后，并明确排除 `streamlined_*`
+- conditional pre-wire rewrite != universal stream-json behavior
+- streamlined gate 当前由 feature、env var 与 `outputFormat === 'stream-json'` 共同决定
+- transformer 当前在 streaming loop 内、`structuredIO.write(...)` 之前运行
+- transformer 当前执行的是 `StdoutMessage -> StdoutMessage | null` 的 write-time projection
+- streamlined 分支当前写出的是 transformed message，而不是原始 message
+- `lastMessage` 过滤当前发生在写出之后，并明确排除 `streamlined_*`
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- 所有 `stream-json` 写出都一定经过主循环里的 streamlined transformer
-- 一旦进入 streamlined path，就一定能看到 `streamlined_text` 或 `streamlined_tool_use_summary`
-- streamlined output 代表 public SDK surface 的正式替代
+- 并不是所有 `stream-json` 写出都会进入这条 streamlined 分支；仍取决于当前 build flag、env var 与 output mode gate
+- 一旦进入 streamlined path，也不等于一定会看到 `streamlined_text` 或 `streamlined_tool_use_summary`；仍取决于当前 message 内容、transformer 分支与 `null` suppression
+- streamlined output 在当前 host 上表现成 write-time projection，但是否在别的宿主上继续扮演同一种替换角色，仍取决于当前 host/consumer route
+
+### 内部/灰度层
+
+- streamlined gate 的 exact feature wiring 与 env var naming
+- `transformToStreamlined(...)`、`structuredIO.write(...)` 与 `lastMessage` maintenance 的 exact helper 顺序
+- streamlined output 是否会在未来被继续包装成别的 consumer-specific surface
 
 所以更稳的结论必须停在：
 

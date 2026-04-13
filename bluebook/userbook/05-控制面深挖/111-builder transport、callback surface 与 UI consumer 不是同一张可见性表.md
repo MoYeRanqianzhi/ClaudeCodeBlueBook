@@ -222,20 +222,27 @@
 
 - “先说清当前问的是哪一张表，再谈该 family 在该表里的命运”
 
-## 第七层：当前源码能稳定证明什么，不能稳定证明什么
+## 第七层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
-- `controlSchemas.ts` 明确面向 builder/control protocol，且 `StdoutMessageSchema` 比 `SDKMessageSchema` 更宽
-- `agentSdkTypes.ts` 明确把 public API 锚在 `coreTypes` / `runtimeTypes`
-- `directConnectManager` 先按 `StdoutMessage` parse，再按 `SDKMessage` callback 暴露，并在中间继续过滤
-- `useDirectConnect` / `sdkMessageAdapter` 又会进一步把 callback surface 收窄成 UI consumer
+- multiple narrowing visibility tables != one universal message-visibility contract
+- `controlSchemas.ts` 当前明确面向 builder/control protocol，且 `StdoutMessageSchema` 比 `SDKMessageSchema` 更宽
+- `agentSdkTypes.ts` 当前明确把 public API 锚在 `coreTypes` / `runtimeTypes`
+- `directConnectManager` 当前先按 `StdoutMessage` parse，再按 `SDKMessage` callback 暴露，并在中间继续过滤
+- `useDirectConnect` / `sdkMessageAdapter` 当前又把 callback-visible object 继续收窄成 UI consumer result
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- 所有宿主路径都严格按这四层工作
-- 所有 `SDKMessage` family 在每一层都有完整一一对应表
-- manager / adapter 的收窄理由在源码里总是显式文档化
+- 这四层表现在能稳定在这页落下，是因为当前源码刚好把 transport、public/core、callback、UI consumer 并排露出；别的宿主路径是否严格沿同一梯子工作，仍取决于 host/consumer route
+- 哪些 `SDKMessage` family 会在每一层保留同样厚度，仍取决于当前 manager、adapter 与 hook sink 的具体消费方式
+- callback-visible object 最终会不会进入 transcript，也仍取决于当前 adapter policy 与 hook sink，而不是 callback membership 自己保证
+
+### 内部/灰度层
+
+- manager / adapter 的 exact helper 顺序与 host wiring
+- manager / adapter 的收窄理由是否在所有 family 上都被显式文档化
+- 未来宿主会不会在 transport、callback 与 UI 之间再插入第五张 consumer table
 
 所以更稳的结论必须停在：
 

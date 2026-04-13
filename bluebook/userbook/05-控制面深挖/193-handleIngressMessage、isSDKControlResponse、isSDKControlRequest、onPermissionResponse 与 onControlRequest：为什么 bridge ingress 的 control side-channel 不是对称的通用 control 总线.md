@@ -326,7 +326,7 @@
 
 又写成一句模糊的“bridge 的 control 面”。
 
-## 第七层：稳定 / 条件 / 灰度保护
+## 第七层：稳定层、条件层与灰度层
 
 | 类型 | 对象 |
 | --- | --- |
@@ -342,6 +342,10 @@
 - 它被硬编码成 `request_id -> pendingPermissionHandlers` 的 permission verdict 返回腿
 - 真正通用的 session-control bus 只存在于 `control_request -> onControlRequest -> handleServerControlRequest(...)` 这条腿
 - env-less 只是再给前者套了一层 `running` 状态修复壳
+
+所以这页能安全落下的结论应停在：
+
+- control side-channel != symmetric generic control bus
 
 一旦这句成立，就不会再把：
 

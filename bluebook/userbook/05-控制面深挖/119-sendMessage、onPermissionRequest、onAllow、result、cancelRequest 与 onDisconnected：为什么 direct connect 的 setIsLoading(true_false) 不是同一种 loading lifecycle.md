@@ -295,19 +295,26 @@ permission flow 里最容易被忽略的一点是：
 
 这些都不是同一种 loading lifecycle。
 
-## 第九层：当前源码能稳定证明什么，不能稳定证明什么
+## 第九层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
-- direct connect 里的 `setIsLoading(true/false)` 至少对应多种不同 edge
-- permission flow 明确把 pause 放在 request 到达时，而不是 reject/abort 按钮回调里
-- SSH sibling 上存在同构 loading edge family
+- same loading flag write != same lifecycle meaning
+- direct connect 里的 `setIsLoading(true/false)` 当前至少对应多种不同 edge
+- permission flow 当前明确把 pause 放在 request 到达时，而不是 reject/abort 按钮回调里
+- SSH sibling 当前存在同构 loading edge family
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- 所有 remote host 都严格共用这套 lifecycle
-- `loading` 是否在更高层还会被别的 source 合并覆写
-- 将来 direct connect 是否会引入 timeout/reconnect 这样的额外 edge
+- 所有 remote host 是否都严格共用这套 lifecycle，仍取决于当前 host/hook route
+- `loading` 是否在更高层还会被别的 source 合并覆写，仍取决于当前宿主实现
+- 将来 direct connect 是否会引入 timeout/reconnect 这样的额外 edge，也仍是条件化实现选择
+
+### 内部/灰度层
+
+- `sendMessage`、`onPermissionRequest`、`onAllow`、`cancelRequest`、`onDisconnected` 与 `setIsLoading(...)` 的 exact helper 顺序
+- loading flag 在不同 hook/host 上的完整状态机实现
+- 未来若引入额外 edge，它们会落在哪一层 consumer/hook 上
 
 所以这页最稳的结论必须停在：
 

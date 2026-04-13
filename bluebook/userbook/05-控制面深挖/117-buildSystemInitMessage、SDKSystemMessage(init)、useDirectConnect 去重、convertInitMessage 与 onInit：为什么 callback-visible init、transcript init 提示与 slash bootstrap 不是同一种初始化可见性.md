@@ -333,21 +333,28 @@ adapter 里的 `convertInitMessage(...)` 非常值得单列。
 
 不是同一种初始化可见性。
 
-## 第九层：当前源码能稳定证明什么，不能稳定证明什么
+## 第九层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
-- `system.init` 是 public SDK schema 的一部分，而不是 direct connect 私有消息
+- same init object != same initialization visibility
+- `system.init` 当前是 public SDK schema 的一部分，而不是 direct connect 私有消息
 - direct connect 当前会拿到 raw init object
 - `useDirectConnect` 当前会去掉后续重复 init
-- `convertInitMessage(...)` 只保留 model 提示，不镜像保留全量 metadata
-- `useRemoteSession` 会直接从 raw init 提取 `slash_commands`
+- `convertInitMessage(...)` 当前只保留 model 提示，不镜像保留全量 metadata
+- `useRemoteSession` 当前会直接从 raw init 提取 `slash_commands`
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- 所有宿主都会像 `useRemoteSession` 一样把 init 用作 bootstrap
-- viewer/history attach 一定会恢复同样的 bootstrap 副作用
-- REPL bridge 的 gated/redacted init 最终一定对所有 build 生效
+- 所有宿主是否都会像 `useRemoteSession` 一样把 init 用作 bootstrap，仍取决于当前 host/consumer route
+- viewer/history attach 是否一定恢复同样的 bootstrap 副作用，仍取决于当前 attach/replay path
+- REPL bridge 的 gated/redacted init 是否对所有 build 生效，也仍是条件化实现问题
+
+### 内部/灰度层
+
+- `useDirectConnect` 去重 init 的 exact helper 顺序与 host wiring
+- `convertInitMessage(...)` 的裁剪细节与未来 redaction 策略
+- REPL bridge 上 gated/redacted init 的 exact build wiring
 
 所以这页最稳的结论必须停在：
 

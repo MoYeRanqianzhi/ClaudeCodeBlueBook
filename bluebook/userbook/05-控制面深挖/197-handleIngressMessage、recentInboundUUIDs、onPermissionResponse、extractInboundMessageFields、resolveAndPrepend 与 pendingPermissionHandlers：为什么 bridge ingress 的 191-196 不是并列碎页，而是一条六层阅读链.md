@@ -275,19 +275,32 @@
 
 不是重复 00 的任务入口。
 
-## 第八层：稳定 / 条件 / 灰度保护
+## 第八层：稳定阅读骨架 / 条件公开 / 内部证据层
+
+这里的“稳定”只指：
+
+- `191-196` 这条 bridge ingress 阅读骨架已经收稳
+
+不指：
+
+- `reader boundary`、`continuity boundary`、`control leg`、`user leg normalization`、`permission-leg local ledger` 这些中间节点名本身已经升级成稳定公开能力
+
+真正的稳定公开能力判断，仍应回到用户入口、公开主路径与能力边界写作规范。
 
 | 类型 | 对象 |
 | --- | --- |
-| 稳定可见 | bridge ingress 至少稳定暴露了三种用户可观察 effect：server control request 会走独立 side-channel；真正进入 transcript / prompt 消费面的只有 user leg；permission verdict 会沿独立返回腿落回本地审批流 |
-| 条件公开 | same-session replay continuity、transport swap 后的重放抑制、attachment materialization 与 path-ref prepend、remote prompt 时序与 bridge permission 往返，都属于运行时条件明显的行为，不写成无前提承诺 |
-| 内部/灰度层 | `recentInboundUUIDs`、`recentPostedUUIDs`、`extractInboundMessageFields(...)`、`resolveAndPrepend(...)`、helper 调用顺序、buffer 大小、key normalization 细节，都更像 reader / adapter 内部证据，不该升级成稳定公共合同 |
+| 稳定阅读骨架 | 稳定的是这六层走法：`191` 先固定 reader boundary 与 consumer split；`192` 继续固定 replay continuity boundary；`193 -> 196` 组成 control / permission leg 的两层细化；`194 -> 195` 组成 user leg 与其 normalization 细化。 |
+| 条件公开 | same-session replay continuity、transport swap 后的重放抑制、attachment materialization 与 path-ref prepend、remote prompt 时序与 bridge permission 往返，都属于运行时条件明显的行为，不写成无前提承诺。 |
+| 内部证据层 | `recentInboundUUIDs`、`recentPostedUUIDs`、`extractInboundMessageFields(...)`、`resolveAndPrepend(...)`、helper 调用顺序、buffer 大小、key normalization 细节，都更像 reader / adapter 内部证据，不该升级成稳定公共合同。 |
 
-更稳的落笔纪律是：
+所以这页最稳的结论必须停在：
 
-- 优先写“用户最后看到哪条腿真的出现在 prompt / transcript / permission flow 里”。
-- continuity、attachment 与 remote bridge 往返只能写成条件公开行为。
-- UUID 集、helper 名与前处理顺序只保留在证据层，不写成对外承诺。
+- `191-196` 是一条有顺序的 ingress 阅读骨架
+- 它不是六篇可按兴趣任意抽读的并列碎页
+
+而不能滑到：
+
+- 只要知道 bridge ingress 在处理消息，读哪一页都差不多
 
 ## 第九层：苏格拉底式自审
 
@@ -309,7 +322,7 @@
 
 ## 结论
 
-更稳的一句应该是：
+所以这页能安全落下的结论应停在：
 
 - 191-196 不是六篇并列碎页
 - 它们是一条从 reader boundary 开始，依次经过 continuity、control leg、user leg、user-leg normalization、permission-leg local ledger 的六层阅读链

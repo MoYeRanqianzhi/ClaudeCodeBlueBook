@@ -194,21 +194,28 @@
 
 - 二者恰好都落在 direct-connect callback 不消费的那一侧，但来源与语义层级不同
 
-## 第六层：当前源码能稳定证明什么，不能稳定证明什么
+## 第六层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
-- `StdoutMessageSchema` 同时接纳 `streamlined_*` 与 `post_turn_summary`
-- `SDKMessageSchema` 不接纳它们
-- `directConnectManager` 会把它们一起挡在 `onMessage` callback 之外
-- `streamlined_*` 的来源是 `createStreamlinedTransformer()` 的条件性 rewrite path
-- `post_turn_summary` 的来源身份是单独定义的 background summary system family
+- same callback exclusion, different upstream provenance
+- `StdoutMessageSchema` 当前同时接纳 `streamlined_*` 与 `post_turn_summary`
+- `SDKMessageSchema` 当前不接纳它们
+- `directConnectManager` 当前会把它们一起挡在 `onMessage` callback 之外
+- `streamlined_*` 的来源当前是 `createStreamlinedTransformer()` 的条件性 rewrite path
+- `post_turn_summary` 的来源身份当前是单独定义的 background summary system family
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- direct connect 运行时总会遇到 `streamlined_*`
-- direct connect 运行时总会遇到 `post_turn_summary`
-- manager 本身“知道”这两种 family 的设计理由，并按不同理由执行不同分支
+- direct connect 运行时是否总会遇到 `streamlined_*`，仍取决于当前 feature/env/outputFormat gate 与 transformer 分支
+- direct connect 运行时是否总会遇到 `post_turn_summary`，仍取决于当前 upstream emit/cadence
+- manager 是否会继续按同一套 skip 逻辑排除这两类 family，也仍取决于当前 host wiring 与 callback contract
+
+### 内部/灰度层
+
+- manager 是否“知道”这两种 family 的设计理由，并按不同理由执行不同分支
+- skip-list 的 exact helper 顺序与 host wiring
+- callback 外是否还保留别的 pre-filter consumer
 
 所以更稳的结论必须停在：
 

@@ -157,20 +157,27 @@
 - 当前源码证明 direct connect 对 `post_turn_summary` 做了 consumer-specific callback filtering
 - 不是证明 direct connect 的 raw wire 永远不可能出现 `post_turn_summary`
 
-## 第五层：当前源码能稳定证明什么，不能稳定证明什么
+## 第五层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
-- direct connect 的 raw parse gate 看的是更宽 `StdoutMessage`
-- direct connect 的 callback contract 看的是更窄 `SDKMessage`
-- `post_turn_summary` 在 `StdoutMessage` 层可承载，却不在 core `SDKMessage` union 内
-- manager 会在 `onMessage` 暴露前显式 strip 掉 `system.post_turn_summary`
+- wider-wire admissibility + manager-side consumer narrowing != guaranteed arrival cadence
+- direct connect 的 raw parse gate 当前看的是更宽 `StdoutMessage`
+- direct connect 的 callback contract 当前看的是更窄 `SDKMessage`
+- `post_turn_summary` 当前在 `StdoutMessage` 层可承载，却不在 core `SDKMessage` union 内
+- manager 当前会在 `onMessage` 暴露前显式 strip 掉 `system.post_turn_summary`
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- 每一次 direct connect 运行时都一定会收到 `post_turn_summary`
-- 这条消息在所有宿主路径上都以同一种频率 emit
-- 除 callback 以外，当前 direct connect 宿主一定还保留别的 pre-filter consumer
+- 每一次 direct connect 运行时是否真的会收到 `post_turn_summary`，仍取决于当前 upstream emit path
+- 这条消息在不同宿主路径上会以怎样的频率或时机出现，仍取决于当前 host/consumer route
+- callback 之外当前是否还保留别的 pre-filter consumer，也仍是条件化实现问题，不能从这一页直接上升成稳定承诺
+
+### 内部/灰度层
+
+- manager 过滤 `post_turn_summary` 的 exact helper 顺序与 host wiring
+- direct connect 之外别的 consumer 是否会在 parse 之后、callback 之前保留不同厚度的预过滤通道
+- `post_turn_summary` 的具体 emitter 路径与运行时频率
 
 所以更稳的结论必须停在：
 
