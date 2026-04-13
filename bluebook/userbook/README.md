@@ -18,6 +18,7 @@
 
 - Prompt 线只翻 user-facing witness，不替 Prompt owner 页重判 `compiled world verdict`
 - 治理线只翻用户可见的 readback、恢复与继续信号；弹窗、`status`、`usage`、继续入口与摘要都只算 `receipt-grade lease-checkpoint projection`，没有新增 `decision delta` 时也只配留在 `receipt-grade`；why、mechanism 与 execution 由目标页继续分流，不在根页写死
+- `Compact / Resume / Memory` 都只是 continuation consumer，不是独立控制面，也不会替旧 `permission_mode / grants / visible set / decision window` 自动续租；凡要改写价格、继续资格、恢复签发或 reopen 责任，统一回治理 owner
 - `continuity` 不是第四类使用主题；它只是同一工作对象在时间轴上的继续条件
 
 ## 用户侧四问

@@ -36,6 +36,15 @@
 | `decision delta` | `new / zero / unknown` | `zero / unknown` 不配续租 authority，只配停在 checkpoint / receipt-grade readback |
 | `cleanup trigger state` | `fired / owed / failed / unknown` | `owed / failed / unknown` 一律不把当前 surface 读成已结算 truth |
 
+再往前压一步，typed-state 真正要导向的也不是更多术语，而是更少动作分叉：
+
+| state reading | 默认动作 |
+|---|---|
+| `authority lease = changed/unknown` | `reprice or suspend`，先回 `repricing seam`，不默认继续 |
+| `decision delta = zero` 且其余字段仍正向 | `do not reopen`，保留 receipt-grade projection，但不重开旧判断 |
+| `cleanup trigger state = owed/failed/unknown` | `suspend or reject`，先结清旧 authority，再谈继续 |
+| 三格都正向，且新增 delta 已被正式写回 | `continue / reopen`，但只开放新增 delta 真正触及的那部分动作空间 |
+
 `repricing seam` 不是一个补救动作名，而是这四问唯一允许改价的回炉口：凡要改写 continue、默认重试、usage 解读或 readback 结论的动作，都必须回到这里重开。若不同 surface 可以各自补签一点安全、一点成本，同一现场就会出现多头定价，`free-expansion relapse` 也会重新出现。这里入口层唯一认的 `reject trio` 也只剩：`decision-window collapse / projection usurpation / free-expansion relapse`；凡 usage、status、readback 或 reopen tail 不能补齐 `same authority lease / new decision delta / cleanup trigger state`，一律先降回 `receipt-grade checkpoint projection / tail evidence`，没有新增 `decision delta` 时也只算 `zero-delta ask / receipt-grade evidence`，不得在尾链补签继续、重试或 reopen 资格。若同类安全扩张在没有新增 `repricing / deny` 决策增益时仍反复 ask，入口层也先按 `approval fatigue` 记账，而不是按体验波动归档；这说明最早 `unpaid expansion` 已从动作本身转移到重复批准。
 更硬一点说，`receipt-grade projection` 也有稳定的 verb ceiling：它可以报告 drift、pressure、acknowledgement 与 aftermath，但不能代签 repricing、continue、retry、reopen 或 cleanup truth。
 这里的 `weak readback` 也应显式包含 settings diff、hook review、status snapshot 与 host replay：凡这些 surface 只能展示“刚才发生了什么”，却不能独立补齐 `same authority lease / new decision delta / cleanup trigger state`，就只配回单，不配回判。

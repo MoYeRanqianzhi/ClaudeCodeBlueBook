@@ -54,6 +54,15 @@
 
 遇到 `provisional / reject`，第一动作不是补 prose，而是回 `message lineage -> section registry -> stable prefix -> protocol transcript -> continuation object -> continue qualification verdict` 这条 witness ABI 补断点。
 
+如果只想先看一个最小 worked pair，也可以把 `carrier-only` 和 `witness-rebind` 压成下面这组对照：
+
+| case | 眼前拿到的东西 | 更稳的判读 | 结论 |
+|---|---|---|---|
+| `carrier-only handoff` | summary、sticky prompt、handoff prose、session memory 这类 orientation package | 它们只证明 belonging，说明“像是同一件事”，但还没有回绑 `message lineage / stable prefix / protocol transcript / continuation object / continue qualification verdict` | 只配判 `provisional`；later consumer 不得拿它直接续租 continue 资格 |
+| `witness-rebind handoff` | 上面的 carrier 之外，还能点名同一条 witness ABI，并且新增 delta 只触及局部边界 | later consumer 看到的不只是故事，而是同一份 `world-entry object` 仍可被继续消费 | 才配从 `provisional` 升回 `pass`，且只重开新增 delta 真正触及的那一小段判断 |
+
+从第一性原理看，这张 worked pair 真正保护的不是“handoff 写得够不够像原对话”，而是 later consumer 会不会因为 carrier 看起来顺手，就跳过 witness rebind，直接把旧判断重新带回 candidate set。
+
 所谓合法复数，也只允许这样一种复数：多个 surface 仍不逼 later consumer 重谈同一世界。只要接手者必须重新确认谁在定义世界、哪条历史还算数、继续资格是否仍成立，这个复数就已经不合法。
 
 更硬一点说，Prompt 真正先保护的也不是“同一段 prompt 还能继续被用”，而是同一份 `world-entry object` 必须能被不同 consumer class 继承而不重新夺回世界主语：模型、接手者、子代理与宿主侧消费者都只能消费同一份已裁定世界，而不能各自靠摘要、局部投影或补写 prompt 重新发明自己的主权版本。
