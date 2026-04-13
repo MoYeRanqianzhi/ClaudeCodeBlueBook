@@ -179,28 +179,37 @@
 
 这说明 passthrough 与 terminal primacy 之间不是互相替代关系，而是两个相邻但不同的层。
 
-## 第六层：当前源码能稳定证明什么，不能稳定证明什么
+## 第六层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
-- transformer 对 `result` passthrough 的理由直接写在注释里，主语是 `structured_output` / `permission_denials`
-- `lastMessage` 过滤尾流时的主语是让 `result` 保持 semantic last-message 主位
-- `json/default/gracefulShutdownSync` 都围绕 terminal `result` cursor 工作
-- `stream-json` 分支则不会再在结尾重复写 stream payload
+- same `result` preservation != same semantic role
+- transformer 对 `result` passthrough，当前稳定主语是 stream payload preservation，不是 terminal primacy preservation
+- `lastMessage` 当前维持 `result` 主位，稳定主语是 final semantic cursor，不是 per-message wire passthrough
+- `json/default/gracefulShutdownSync` 当前都围绕 terminal `result` cursor 工作，而不是围绕某次 transformer `return message`
+- `stream-json` 当前消费的是 already-logged stream payload；这再次说明 stream payload contract != final semantics contract
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- 所有宿主路径里 `result` 的保留理由都与这里相同
-- transformer passthrough 本身就足以保证 terminal semantic primacy
-- `structured_output` / `permission_denials` 是 transformer 保留 `result` 的全部理由
+- transformer 对 `result` 之所以原样透传，当前源码注释只直接公开了 `structured_output` / `permission_denials` 这组载荷理由
+- `result` 在别的宿主路径里会不会继续用同一种 passthrough rationale，仍取决于当前 host/consumer route
+- `stream-json`、`json`、default text 虽然都围绕 `result`，但各自消费 stream payload 还是 terminal cursor，仍取决于当前 output mode
+- passthrough 与 terminal primacy 会在同一条运行链里相邻出现，但是否被同一宿主同时消费，仍是条件化实现问题
 
-所以更稳的结论必须停在：
+### 内部/灰度层
+
+- 所有宿主未来是否仍让 `result` 同时保有这两种“保留原样”角色
+- transformer 保住 `structured_output` / `permission_denials` 是否已经穷尽了 `result` passthrough 的全部理由
+- passthrough、`lastMessage`、`gracefulShutdownSync(...)` 的 exact helper 顺序与 host wiring
+- 未来会不会出现新的 terminal consumer，继续消费 `result` 但不用当前这套 cursor 规则
+
+所以这页能安全落下的结论应停在：
 
 - passthrough != terminal primacy
 
-而不能滑到：
+而不能继续滑成：
 
-- one unified reason for keeping result unchanged
+- one unified reason for keeping `result` unchanged
 
 ## 第七层：为什么 113 不能并回 101
 
