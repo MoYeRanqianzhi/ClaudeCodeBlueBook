@@ -48,7 +48,7 @@
 | `provisional claim` | 对象仍缺 promotion 所需证明，但缺口可被明确记成 `downgrade stamp + unresolved-authority note` |
 | `gap / candidate note` | 连对象层 authority、签字权层级或第一条回退都还说不清，只配停在 ceiling / gap / candidate |
 
-如果要把 owner page 的 handoff 继续压成统一可见的 `evidence stamp`，最小也只先写四件事：`evidence mode / rung / verdict / retreat`。owner page 不必把这四项都做成固定卡片样式，但若 later maintainer 需要翻两段 prose 才看出它们，handoff 就仍然太依赖作者解释。
+如果要把 owner page 的 handoff 继续压成统一可见的 `evidence stamp`，最小也只先写四件事：`evidence mode / rung / verdict / retreat`。但只要 `verdict != promotion-passed`，`downgrade stamp + unresolved-authority note` 也必须一起显式可见，不能只藏在 prose 里。owner page 不必把这些项都做成固定卡片样式，但若 later maintainer 需要翻两段 prose 才看出它们，handoff 就仍然太依赖作者解释。
 
 这条线最短的 reject trio 也只认：
 

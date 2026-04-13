@@ -13,6 +13,18 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-prompt-architecture-usage-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `philosophy/84 + 06 + guides/30 + architecture/84 + architecture/README + guides/102 + 02` 收口批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `prompt-owner-must-collapse-gate-unknown-and-align-four-questions-with-two-guards-apr14 live` 记忆：
+  - `bluebook/{philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md,06-第一性原理与苏格拉底反思.md,guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md}` 现在也应继续写死：`84` 的 owner verdict 只保留 `pass / provisional / reject`，但必须显式吸收 `30` 的 `unknown` 折叠规则；`06` 则把四问、目录六问与持续审读六步压回同一套 `四问两守则`，并明确主语已锁定时直退 owner、route dispute 才退 `navigation`
+  - 更稳的默认写法是：Prompt 线只允许一条 speaking-right handoff；builder-facing gate 可以有更细粒度的 `unknown`，但 why owner 层不再另发第四 verdict，本页也不再把自校协议拆成三套平行章法
+- 当前批次继续新增一条 `source-quality-owner-must-carry-visible-unresolved-authority-note-apr14 live` 记忆：
+  - `bluebook/{architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md,architecture/README.md,guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md}` 现在也应继续写死：只要对象 verdict 不是 `promotion-passed`，`downgrade stamp + unresolved-authority note` 就必须进入 owner handoff 的显式字段；`public-evidence only` 下的 atlas row 只配读成 `post-promotion reading template`，而不是本地 landed truth
+  - 更稳的默认写法是：对象行可以先交出 row shape、local veto cue 与 first retreat layer，但 later maintainer 不该再自己从 prose 猜 unresolved authority 卡在哪；release-surface shaping 也应优先落成 `compile-time gate / runtime gate / artifact surface` 的 first-veto matrix，而不是停在概念 prose
+- 当前批次继续新增一条 `usage-bridge-must-return-to-root-first-hop-apr14 live` 记忆：
+  - `bluebook/02-使用指南.md` 现在也应继续写死：usage bridge 的最小 first-hop 先回 `bluebook/README` 锁定 Prompt / 治理 / 当前真相三条主语，再直退 `84 / 10 / 102`；`09` 只在需要三线对照时再看，`navigation` 只在 artifact gap / route dispute 已成立时再分流
+  - 更稳的默认写法是：目录优化真正要减少的，不是页面数量，而是 usage bridge、根入口与 route 页同时重发 first answer 的概率
 - 当前批次继续新增一条 `root-sync-healthy-for-api36-authority-source-batch-apr14 live` 记忆：
   - 2026-04-14 本轮进入 `api/36` authority-source 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面

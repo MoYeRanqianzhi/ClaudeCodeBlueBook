@@ -2,6 +2,14 @@
 
 ## 2026-04-14
 
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `philosophy/84 + 06 + guides/30 + architecture/84 + architecture/README + guides/102 + 02` 收口批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
+- 继续更新 `bluebook/{philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md,06-第一性原理与苏格拉底反思.md,guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 prompt-owner/self-audit 协议：`84` 现在显式吸收 `30` 的 `unknown` 折叠规则，`06` 现在把四问、目录六问与持续审读六步统一成 `四问两守则`，`30` 也把 canonical object chain 补回六跳，避免 stable prefix 再次被压扁成 boundary 附属词。
+
+- 继续更新 `bluebook/{architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md,architecture/README.md,guides/102-如何给公开镜像做源码质量证据分级：contract、registry、authoritative surface、adapter subset与hotspot gap discipline.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 source-quality handoff 协议：`architecture/84` 现在把 atlas 压成 `post-promotion reading template`，并把 release-surface 改成 first-veto matrix；`architecture/README` 与 `102` 则把非 `promotion-passed` 时必须显式露出 `downgrade stamp + unresolved-authority note` 写成统一 handoff 要求。
+
+- 继续更新 `bluebook/02-使用指南.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 usage-bridge 协议：`02` 现在把最小 first-hop 压回 `bluebook/README -> 84 / 10 / 102` 主链，`09` 只保留为三线对照，`navigation` 只在 artifact gap / route dispute 成立后再分流，不再让 usage bridge 自己长成目录前门。
+
 - 继续更新 `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 authority-source 协议：`api/36` 现在把 shared current-truth order 继续补齐成 `对象 -> authority source -> 状态链 -> ask 链 -> 事务身份 -> usage -> window -> diff/control -> rollback`，把治理主键与 ask 事务身份正式吸进四类消费者的共同骨架。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `api/36` authority-source 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。

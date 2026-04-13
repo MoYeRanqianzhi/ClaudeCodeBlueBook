@@ -60,10 +60,11 @@
 这也意味着，这篇允许保留旧助记词，但 Prompt 线真正唯一 canonical object chain 仍只认：
 
 1. `message lineage`
-2. `section registry / stable boundary`
-3. `protocol transcript`
-4. `continuation object`
-5. `continuation qualification`
+2. `section registry`
+3. `stable prefix`
+4. `protocol transcript`
+5. `continuation object`
+6. `continuation qualification`
 
 `compile -> protocolize -> preserve -> continue -> explain` 只是动作链；
 `world entry / request assembly / six-stage assembly chain` 与 `request-surface constitution / cognitive contract / byte boundary / continuation truth` 只是 route shorthand。
