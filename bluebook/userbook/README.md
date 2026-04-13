@@ -23,6 +23,8 @@
 - `Compact / Resume / Memory` 都只是 continuation consumer，不是独立控制面，也不会替旧 `permission_mode / grants / visible set / decision window` 自动续租；凡要改写价格、继续资格、恢复签发或 reopen 责任，统一回治理 owner
 - `continuity` 不是第四类使用主题；它只是同一工作对象在时间轴上的继续条件
 
+当弹窗、`status`、`usage`、继续入口与摘要都已被降成 `receipt-grade lease-checkpoint projection` 后，后续只再问两件事：要读 cleanup-aftermath 的样貌去 `risk/README`，要下 `execution verdict / rollback / reopen` 去 `playbooks/README`。
+
 ## 用户侧四问
 
 - 我是不是正在拿界面投影偷替工作对象或继续判断说话。

@@ -33,6 +33,7 @@
 - 当你需要判断某种现实入口选择会怎样改写 `product promise readback`、恢复资格读回或证据绑定时，再进入本目录。
 
 若还在判 signer、`verdict ledger`、`cleanup authority` 或治理 why，先回 [../security/README.md](../security/README.md)、[../10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md) 与对应 why 页；若问题已经进入恢复签发、责任划分与 reopen drill，统一回 [../playbooks/README.md](../playbooks/README.md)。
+更稳一点说，一旦问题已从 `reopen eligibility readback / evidence receipt binding` 进入“下一步该验什么、拒收什么、回退什么、按什么 reopen 顺序执行”，它就不再是 risk question，而是 execution question。
 
 ## 这里不回答什么
 

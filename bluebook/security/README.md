@@ -40,6 +40,7 @@
 - 当你已经定位到最早 `unpaid expansion`，但 signer、ledger 与 cleanup 责任还没落到具体对象上。
 - 当弱层开始替 signer 说话、结果词开始冒充治理事实，或 cleanup 之后谁还配负责开始失真。
 - 若问题已经进入 `reprice / suspend / reject / do-not-reopen / continue` 的动作分叉，本页不代判，统一回 `10` 的 typed-state 动作表；安全首页只负责 signer / ledger / cleanup authority。
+- 若问题已经不在判 signer / ledger / cleanup authority，而是在判 cleanup 之后还剩什么承诺、reopen 资格或 receipt 绑定，统一离场到 `risk/README`。
 
 ## 维护约定
 

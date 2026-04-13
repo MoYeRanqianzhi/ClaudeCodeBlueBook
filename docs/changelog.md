@@ -2,6 +2,9 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/{security/README.md,risk/README.md,playbooks/README.md,userbook/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 governance tail-chain split 协议：`security/README` 现在更明确把 cleanup 之后的承诺、reopen 资格与 receipt 绑定离场到 `risk/README`；`risk/README` 则补明一旦问题进入 `execution verdict / rollback / reopen` 顺序，就应离场到 `playbooks/README`；`playbooks/README` 也同步补出反向边界，不再受理 `product promise / reopen eligibility / evidence receipt binding` 的样貌问题；`userbook/README` 则把用户前门的治理尾链固定分成 `risk` 与 `playbooks` 两问。
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight failure 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 因未解决冲突失败，`git status --short --branch` 同时显示 `main...origin/main [ahead 32]` 与 `bluebook/security/{README.md,appendix/README.md,source-notes/README.md}`、`docs/development/research-log.md` 等未收敛文件；这次失败只作为外部事实记录，不在根仓做任何收敛动作。
+
 - 继续更新 `bluebook/{README.md,philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 Prompt frontdoor handoff 协议：根 `README` 现在更明确把 builder-facing 机制链固定分流到 `81`；`84` 现在更明确写死 `README -> 84 -> 81` 的标准 handoff；`06` 也补明 Prompt 自校一旦退化成 witness/object-chain 缺栏，就应退出 self-audit，回 `84 / 81`，不继续留在本页。
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight failure 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 因未解决冲突失败，`git status --short --branch` 同时显示 `main...origin/main [ahead 32]` 与 `bluebook/security/{README.md,appendix/README.md,source-notes/README.md}`、`docs/development/research-log.md` 等未收敛文件；这次失败只作为外部事实记录，不在根仓做任何收敛动作。
 
