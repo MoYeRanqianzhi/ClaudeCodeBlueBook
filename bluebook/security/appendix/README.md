@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 422 篇速查文档。
+`appendix/` 当前包含 423 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 
 ## 这一子目录放什么
@@ -909,12 +909,15 @@
 - `422`
   载体家族强请求清理遗忘治理与强请求清理免责释放治理分层。
   入口：[422-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层速查表：forgetting gate、liability-release gate、compensate-or-refuse与governor question](422-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层速查表：forgetting gate、liability-release gate、compensate-or-refuse与governor question.md)。
+- `423`
+  载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层。
+  入口：[423-安全载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层速查表：active lifecycle、waiting surface、queue admission与governor question](423-安全载体家族强请求清理免责释放治理与强请求清理归档关闭治理分层速查表：active lifecycle、waiting surface、queue admission与governor question.md)。
 
 ## 怎么配合主线读
 
 - 读 [../README.md](../README.md) 时，把附录当速查卡，不当主阅读路径。
 - 想快速核对“字段从哪来、谁能签字、哪条路径被禁止、当前该看哪张卡”，优先来附录。
-- 想快速进入当前这段强请求清理子链，优先看 `418-422` 这一段。
+- 想快速进入当前这段强请求清理子链，优先看 `419-423` 这一段。
 - 需要完整论证、设计判断和章节间关系时，返回 [../README.md](../README.md)。
 
 ## 和主线、源码剖面的分工
