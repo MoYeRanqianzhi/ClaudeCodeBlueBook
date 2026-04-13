@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-why-must-name-search-pruning-apr13 live 记忆：
+  - `philosophy/14` 与 `21` 现在也应直接写死：所谓 Prompt “更聪明”，不是模型被文案增强，而是 runtime 先裁掉了谁能发言、哪些动作合法、哪些分支已死、何时配继续这四类待判变量
+  - 更稳的默认写法是：先写 `decision-retirement / search-pruning / renegotiation shrinkage`，再写 `lineage / boundary / transcript / continuation` 这些 runtime objects；否则 later consumer 仍会把 Prompt 魔力读回结构 inventory
+- 当前批次继续新增一条 prompt-lawful-inheritance-must-be-written-as-law-apr13 live 记忆：
+  - `philosophy/18`、`54` 与 `guides/30` 现在也应直接写死：分层不是分桶，而是继承法；人类接手不是体验优化，而是另一个 lawful consumer；`same-world`、`lawful forgetting` 与 handoff 都必须点名 witness 与 continue/reject/reopen 条件
+  - 更稳的默认写法是：静态法负责立法与排除，动态法只实例化环境，角色法只能缩窄或显式委派，现场法只能绑定对象；`Gate-0` 先问“这次系统试图退休什么决策、谁继承、谁有权拒绝重放”，`lawful forgetting` 则必须写成“不改变 continuation object、已排除分支与 continue/reject verdict”
 - 当前批次继续新增一条 userbook-root-must-stay-route-only-on-governance-apr13 live 记忆：
   - `userbook/README` 现在也应直接写死：根前门只负责 `上下文送错 / 扩张或权限判错 / 旧状态污染` 的问题分型与单跳，不在根页代判这次 ask 是否仍属 `zero-delta`、继续资格是否仍成立
   - 更稳的默认写法是：弹窗、`status`、`usage`、继续入口与摘要统一只算 `weak readback / lease checkpoint`；一旦怀疑存在 `unpaid expansion`、`continuation lease` 漂移或旧 authority 未清空，就单跳回 `userbook/05` 或蓝皮书治理入口

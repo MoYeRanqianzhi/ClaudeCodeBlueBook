@@ -23,6 +23,8 @@ Claude Code 的 prompt 魔力，如果从第一性原理收束，首先不是把
 
 强 Prompt 因而首先是一个 `decision-retirement system`：`verify / delegate / tool choice / resume / handoff` 之后，接手者继承的必须是同一份工作对象、同一批仍被排除的分支，以及同一条 `continue-or-reject verdict`。
 
+所以用户感到它“更聪明”，往往不是回答能力凭空增强，而是 runtime 先裁掉了谁能发言、哪些动作合法、哪些分支已死、何时配继续这四类待判变量。
+
 “约束叠加与状态反馈”仍然成立，但它现在只是这套退休机制的 runtime 现象，而不是另一套 frontdoor。
 
 如果再把这套退休机制拆回旧的六个 nouns，大致对应成：
