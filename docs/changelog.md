@@ -2,6 +2,10 @@
 
 ## 2026-04-14
 
+- 继续更新 `bluebook/architecture/README.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 source-quality stamp-refine 协议：`architecture/README` 现在把 owner handoff 补成 `evidence mode / rung / verdict / downgrade stamp / retreat`，并把 landing card 直接绑回 `87` 的 `合法复杂度中心 / one writable present / later-maintainer veto` 三条 why-proof。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `architecture/README` stamp-refine 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
 - 继续更新 `bluebook/architecture/README.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 source-quality handoff 协议：`architecture/README` 现在把 `87` 的 why-proof 接成 file-level object landing，对 `63 / 60 / 69 / 72 / 84` 给出直接 handoff，并把 owner README 层必须显式可见的 `evidence mode / rung / verdict / retreat` 写成最小 `evidence stamp`。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `architecture/README` handoff 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。

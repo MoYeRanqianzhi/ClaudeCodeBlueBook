@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-architecture-readme-stamp-refine-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `architecture/README` stamp-refine 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `architecture-readme-must-show-downgrade-stamp-and-bind-card-to-87-apr14 live` 记忆：
+  - `bluebook/architecture/README.md` 现在也应继续写死：owner README 层不只要显式 `evidence mode / rung / verdict / retreat`，还要把 `downgrade stamp` 一起落页；landing card 也应直接绑回 `87` 的 `合法复杂度中心 / one writable present / later-maintainer veto`
+  - 更稳的默认写法是：只要对象尚未 promotion，later maintainer 就不该在 README 里自己脑补降格状态；只要 landing card 还没对齐 why-proof 三问，它就还更像对象库存而不是 why-proof handoff
 - 当前批次继续新增一条 `root-sync-healthy-for-architecture-readme-handoff-batch-apr14 live` 记忆：
   - 2026-04-14 本轮进入 `architecture/README` handoff 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
