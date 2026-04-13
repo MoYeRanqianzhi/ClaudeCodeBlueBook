@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 governance-bridges-must-name-same-lease-new-delta-apr13 live 记忆：
+  - `bluebook/05`、`09`、`architecture/71`、`architecture/83` 与 `security/README` 现在也应直接写死：治理桥页和 runtime 对照表先问 `same authority lease / new decision delta / cleanup trigger`，而不是先让 `approval / modal / status / usage / compact / bypass` 这些 surface 抢答
+  - 更稳的默认写法是：`status / usage / host replay / worker_status / permission_mode / pending_action` 默认都先按 `zero-delta ask / weak readback / receipt-grade evidence` 读；`bypass` 只是在同租约内压缩剩余 ask，不新增 signer、scope delta、durability class 或 cleanup trigger；`resume / continue / rewind` 只配当 recovery carrier，不自动续租旧 authority
 - 当前批次继续新增一条 frontdoor-must-separate-belonging-orientation-and-qualification-apr13 live 记忆：
   - `bluebook/README`、`navigation/15`、`userbook/00`、`userbook/01/{02,05}` 现在也应直接写死：`belonging != admissibility`，`orientation package != admissible witness package`，以及 `summary / title / last reply / display transcript / status / usage` 默认只配做 reminder、projection 或 checkpoint surface，不单独签发 `continue qualification` 或 host truth
   - 更稳的默认写法是：Prompt 继续先问 later consumer 是否仍不必重开 `world-definition / tool legality / next-action search`；开工前自检则把失败后的处理动作拆成 `suspend / reopen / final-but-retain / retire-with-marker`，而不是继续用“清理后恢复”把不同 failure mode 混成一句
