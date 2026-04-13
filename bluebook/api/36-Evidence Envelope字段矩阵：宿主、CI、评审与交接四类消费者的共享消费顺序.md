@@ -75,12 +75,12 @@
 | 字段组 | 宿主 | CI | 评审 | 交接 | 来源层 |
 |---|---|---|---|---|---|
 | 当前对象 | 必需 | 必需 | 必需 | 必需 | 宿主自建 envelope |
-| `session_state_changed` / `worker_status` | 必需 | 可选摘要 | 必需摘要 | 必需摘要 | 正式公共表面 |
-| `external_metadata.permission_mode / pending_action / task_summary` | 必需 | 可选摘要 | 必需摘要 | 必需 | 正式公共表面 |
+| `session_state_changed` / `worker_status` | 必需 | 必需摘要 | 必需摘要 | 必需摘要 | 正式公共表面 |
+| `external_metadata.permission_mode / pending_action / task_summary` | 必需 | 必需摘要 | 必需摘要 | 必需 | 正式公共表面 |
 | `Context Usage` / budget progress | 必需 | 必需 | 必需 | 可选摘要 | 正式公共表面 |
+| observed window / continuation judgement | 必需 | 必需 | 必需 | 必需摘要 | 宿主自建 envelope |
 | compiled request diff / cache-break summary | 可选摘要 | 必需 | 必需 | 可选摘要 | envelope + internal hint |
 | control arbitration evidence | 必需 | 必需摘要 | 必需 | 可选摘要 | 正式公共表面 + envelope |
-| observed window | 必需 | 必需 | 必需 | 必需 | 宿主自建 envelope |
 | rollback object boundary | 必需 | 必需 | 必需 | 必需 | 宿主自建 envelope |
 | retained assets / dropped stale writers | 可选 | 必需摘要 | 必需 | 必需 | envelope + internal hint |
 
@@ -93,58 +93,77 @@
 更稳的消费顺序应固定为：
 
 1. 当前对象
-2. 当前状态
-3. 当前 diff
-4. 当前决策窗口
-5. 当前 control evidence
-6. 当前 rollback boundary
+2. 当前状态链：`session_state_changed / worker_status / permission_mode`
+3. 当前 ask 链：`pending_action / task_summary`
+4. 当前 usage 链：`Context Usage / budget progress`
+5. 当前窗口：`observed window / continuation judgement`
+6. 当前 diff 与 control evidence
+7. 当前 rollback boundary
 
-这组顺序对四类消费者都成立，只是粒度不同。
+这组顺序对四类消费者都成立，只是粒度不同；它也应和 `35 / 52 / 53 / 55` 的宿主接入顺序互相对齐，而不是让不同页各发一条“看起来差不多”的局部顺序。
+
+更硬一点说：
+
+- 没有第 2 步，不得把第 3 步认成合法 ask。
+- 没有第 2-3 步，不得把第 4-5 步认成合法 `decision window / recovery / continuation` 解释。
+- 没有第 2-5 步，不得把 diff、control evidence 或 rollback boundary 单独升格成当前真相。
 
 ### 4.1 宿主
 
 宿主优先关心：
 
 1. 当前对象
-2. 当前状态
-3. 当前 pending action / permission mode
-4. 当前 budget 进度
+2. 当前状态链：`session_state_changed / worker_status / permission_mode`
+3. 当前 ask 链：`pending_action / task_summary`
+4. 当前 budget 进度与 `Context Usage`
+5. 当前 observed window 是否足以支撑继续 / compact / pause
+
+宿主最不该做的事是：
+
+- 只看 usage 百分比就宣布“窗口已经成立”。
 
 ### 4.2 CI
 
 CI 优先关心：
 
 1. 当前对象
-2. 当前 diff 是否越界
-3. 当前 observed window 是否满足门槛
-4. 当前 rollback boundary 是否明确
+2. 当前状态链与 ask 链是否仍绑定同一对象
+3. 当前 `Context Usage + observed window` 是否满足门槛
+4. 当前 diff / control evidence 是否越界
+5. 当前 rollback boundary 是否明确
+
+CI 最不该做的事是：
+
+- 先抓 diff，再回头猜当前状态是谁的状态。
 
 ### 4.3 评审
 
 评审优先关心：
 
 1. 当前对象是否定义清楚
-2. 当前 diff 是否是最小 diff
+2. 当前状态链、ask 链与 usage 链是否属于同一窗口
 3. 当前 judgement 是否由 observed window 支撑
-4. 当前 rollback target 是否过宽或过窄
+4. 当前 diff 是否是最小 diff
+5. 当前 rollback target 是否过宽或过窄
 
 ### 4.4 交接
 
 交接优先关心：
 
 1. 当前对象
-2. 当前状态摘要
-3. 当前 retained assets
-4. 当前 rollback boundary
+2. 当前状态链与 ask 链摘要
+3. 当前窗口为什么还成立，或为什么已经 collapse
+4. 当前 retained assets
+5. 当前 rollback boundary
 
 ## 5. 为什么不能各看各的 dashboard
 
 因为那样最容易发生四种失真：
 
-1. 宿主只看到状态，不知道为什么变。
-2. CI 只看到阈值，不知道对象是谁。
-3. 评审只看到总结，不知道当前窗口。
-4. 交接只看到 transcript，不知道回退边界。
+1. 宿主只看到 usage，不知道它是不是当前 ask 的 usage。
+2. CI 只看到 diff 或阈值，不知道对象与状态链是否一致。
+3. 评审只看到总结，不知道当前窗口究竟由哪条状态链支撑。
+4. 交接只看到 retained assets，不知道这批资产属于哪条 rollback boundary。
 
 这些失真一旦同时出现，系统就会重新退回：
 
@@ -156,19 +175,22 @@ CI 优先关心：
 
 如果你要最小化接入这套字段矩阵，建议按下面顺序做：
 
-1. 先消费正式公共表面的当前状态字段。
-2. 再补 observed window 与 rollback boundary 两个 envelope 字段。
-3. 再按需要引入 diff summary 与 control evidence。
-4. 最后再把 internal hints 变成 evidence refs，而不是直接上升成公共 schema。
+1. 先消费正式公共表面的状态链：`session_state_changed / worker_status / permission_mode`。
+2. 再消费 ask 链：`pending_action / task_summary`。
+3. 再消费 `Context Usage`，把 usage 绑定回同一条状态链与 ask 链。
+4. 再补 observed window / continuation judgement 与 rollback boundary 两个 envelope 字段。
+5. 再按需要引入 diff summary 与 control evidence。
+6. 最后再把 internal hints 变成 evidence refs，而不是直接上升成公共 schema。
 
 ## 7. 五条消费纪律
 
 1. 不要让任何消费者跳过“当前对象”直接看结果。
-2. 不要让任何消费者只看 transcript 不看状态与窗口。
-3. 不要把 internal hint 直接写成稳定公共字段。
-4. 不要让 rollback boundary 缺席。
-5. 不要为不同消费者制造不同字段骨架。
+2. 不要让任何消费者跳过状态链与 ask 链，直接把 usage 当窗口。
+3. 不要让任何消费者先抓 diff，再回头猜当前状态。
+4. 不要把 internal hint 直接写成稳定公共字段。
+5. 不要让 rollback boundary 缺席，或脱离当前窗口单独存在。
+6. 不要为不同消费者制造不同字段骨架。
 
 ## 8. 一句话总结
 
-Evidence Envelope 的字段矩阵真正统一的，不是大家看的页面，而是大家判断升级时依赖的字段顺序与真相骨架。
+Evidence Envelope 的字段矩阵真正统一的，不是大家看的页面，而是大家都按 `对象 -> 状态链 -> ask 链 -> usage -> window -> diff/control -> rollback` 这同一条顺序判断升级、暂停、compact 与恢复。

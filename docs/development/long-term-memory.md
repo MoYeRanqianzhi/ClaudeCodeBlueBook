@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-api36-shared-order-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `api/36` shared-order 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `api36-must-bind-window-to-state-ask-usage-order-apr14 live` 记忆：
+  - `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 现在也应继续写死：shared evidence matrix 不能再写成 `对象 -> 状态 -> diff -> 窗口` 一类软顺序，而要明确固定成 `对象 -> 状态链 -> ask 链 -> usage -> window -> diff/control -> rollback`
+  - 更稳的默认写法是：没有 `state + pending_action`，就不得把 `Context Usage` 升格成 `decision window / recovery / continuation` 解释；shared matrix 的价值不在字段更多，而在四类消费者都被同一条 current-truth order 约束
 - 当前批次继续新增一条 `root-sync-healthy-for-guides30-54-residual-cleanup-batch-apr14 live` 记忆：
   - 2026-04-14 本轮进入 `guides/30 + philosophy/54` residual-cleanup 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 `live premise`；更早的同日阻塞记录只保留为历史截面，不反过来支配本批次判断

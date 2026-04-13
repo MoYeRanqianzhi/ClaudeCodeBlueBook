@@ -2,6 +2,12 @@
 
 ## 2026-04-14 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `api/36` shared-order 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `api/36` shared-order 结论：我只对 `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`36` 现在把共享骨架继续压硬成同一条 current-truth order：先看 `object`，再看 `state chain`，再看 `ask chain`，之后才允许读 `Context Usage / observed window / diff/control / rollback`。同时也明确写下了拒收线：没有 `state + pending_action`，就不得把 usage 单独认成合法 `decision window / recovery / continuation` 解释。当前判断是，这一步能把安全、省 token、recovery 与治理宿主读面继续收回同一条 public-evidence order，不再让 `usage-first` 或 `diff-first` 在共享矩阵层复活。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一个共享矩阵页开始承载多个消费者时，更稳的默认追问不该是“字段够不够全”，而应先问“所有消费者是否都被同一条 current-truth order 约束”；只要还有任一消费者能跳过状态链、ask 链，直接把 usage、diff 或 rollback 升格成当前真相，这张矩阵就还没有真正统一。当前判断是，这个问法能继续把安全 / 省 token 线从“字段并排展示”拉回“谁有资格在什么前提下解释当前窗口”的 first-principles discipline。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `guides/30 + philosophy/54` residual-cleanup 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 live premise；更早的同日阻塞记录只保留为历史截面，不反过来支配本批次正文。
 
 - 本轮新的 `guides/30 + philosophy/54` ownership-cleanup 结论：我只对 `bluebook/{guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md,philosophy/54-好的Prompt同时组织模型与人类接手路径.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`30` 现在把 `effect ceiling` 的失败动作收回成“回 `84` 复核 verdict box、回 `77` 写正式字段”，不再在 guide 本页自带本地 verdict、drift typing 与第二张 record card；`54` 则保留五格 review object，但把正式 `pass / provisional / reject` 完全路由回 `84`。当前判断是，这一步能把 Prompt 魔力线继续压回单一 speaking-right 链：`84` 固定 why 与 verdict，`81` 固定 witness/object chain，`77` 固定复盘字段，guide/philosophy 页不再局部长出第二控制面。

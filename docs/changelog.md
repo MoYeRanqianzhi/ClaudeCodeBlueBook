@@ -2,6 +2,10 @@
 
 ## 2026-04-14
 
+- 继续更新 `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 shared-evidence-order 协议：`api/36` 现在把四类消费者共享的 current-truth order 固定成 `对象 -> 状态链 -> ask 链 -> usage -> window -> diff/control -> rollback`，并明确写下拒收线：没有 `state + pending_action`，就不得把 usage 单独认成合法 `decision window / recovery / continuation` 解释。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `api/36` shared-order 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
 - 继续更新 `bluebook/{guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md,philosophy/54-好的Prompt同时组织模型与人类接手路径.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 prompt ownership-cleanup 协议：`guides/30` 现在把 `effect ceiling` 的失败动作、正式 verdict 与复盘字段全部路由回 `84 / 77`，不再在本页重发本地 verdict、drift typing 与第二张记录卡；`54` 则保留五格 review grid，但把正式 `pass / provisional / reject` 统一收回 `84`，不再自带本地 verdict bridge。同时把并行 Agent 的下一残留结论写入持久化记忆：安全 / 省 token 线的最高价值切口已转向 `api/36` 的 shared evidence order，目录结构线则转向 `api/47` 的 services/tools split 收口与 `api/46` 降强外溢。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `guides/30 + philosophy/54` residual-cleanup 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 live premise。
