@@ -4657,3 +4657,5 @@
 - `2026-04-13` Prompt 样本页的下一残差也应继续记死：`14 / 18` 等相邻 why 页仍可能保留“咒语/分层 nouns 先于 later-consumer rights”的旧句法。后续应按样本页逐页收口，不要一次性把整条 Prompt why 语料做成 repo-wide mechanical rewrite。
 - `2026-04-13` userbook 运行时投影视图的最新稳定句法也应继续写死：`userbook/05` 与 `Status / Doctor / Usage` 页现在明确把 approval receipt、status green、usage 回单压成 `zero-delta ask / weak readback`。它们只补回单，不补新的 `repricing proof`，也不能替同一条 `authority lease` 的 continuation 续租。
 - `2026-04-13` 治理 userbook 的下一残差也应继续记死：后续若继续精修，应优先收 `compact / resume / memory` 在 userbook 投影视图中的 continuation-lease 表述，而不是重开 owner 页 taxonomy。高流量 user-facing 页只负责提示该退回哪层，不负责把 receipt/readback 写成 verdict signer。
+- `2026-04-13` 源码地图 why 页的最新稳定句法也应继续写死：`philosophy/76` 与 `navigation/07` 已把地图/方法层 canonical wording 收回 `current-truth claim state`，不再把 `current-truth surface` 当公开镜像证据梯度的默认 rung。地图 why 页现在只负责“证据是否够 promotion”的方法判断；对象层“谁在写现在”继续回 owner 页。
+- `2026-04-13` 这也固定了一条新的目录纪律：凡 `philosophy/76`、`navigation/07` 这类 map/why 页出现 `current-truth surface`，都先按 speaking-rights 漂移看待，而不是按对象 truth 补写。下一残差优先转向 `14 / 18` 这组 Prompt 样本页，或更深的 host-artifact/object 协议页分批清理。
