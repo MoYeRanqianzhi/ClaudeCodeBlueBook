@@ -2,6 +2,12 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `405`、把附录推进到 `389`、把源码剖面推进到 `256`；链路从 `stronger-request finality-governance` 继续推进到 `stronger-request forgetting-governance`，说明 stronger-request cleanup 已进一步进入“这份结果以后回来时是否仍然成立”与“它相关的旧回音风险什么时候已经低到可被遗忘”之间的治理分层。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=406 / appendix=389 / source-notes=256`。当前唯一 open question 已继续前推到 `stronger-request liability-release-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `404`、把附录推进到 `388`、把源码剖面推进到 `255`；链路从 `stronger-request completion-governance` 继续推进到 `stronger-request finality-governance`，说明 stronger-request cleanup 已进一步进入“它这次是否已经完成”与“这份完成以后回来时是否仍然成立”之间的治理分层。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=405 / appendix=388 / source-notes=255`。当前唯一 open question 已继续前推到 `stronger-request forgetting-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `403`、把附录推进到 `387`、把源码剖面推进到 `254`；链路从 `stronger-request continuation-governance` 继续推进到 `stronger-request completion-governance`，说明 stronger-request cleanup 已进一步进入“旧请求还该不该继续”与“这条继续后的请求现在究竟有没有完成”之间的治理分层。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=404 / appendix=387 / source-notes=254`。当前唯一 open question 已继续前推到 `stronger-request finality-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `402`、把附录推进到 `386`、把源码剖面推进到 `253`；链路从 `stronger-request cleanup-step-up reauthorization-governance` 继续推进到 `stronger-request continuation-governance`，说明 stronger-request cleanup 已进一步进入“现在够格再尝试”与“刚才那条被挡下的请求是否仍该算作同一条继续”之间的治理分层。
 - 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=403 / appendix=386 / source-notes=253`。当前唯一 open question 已继续前推到 `stronger-request completion-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `401`、把附录推进到 `385`、把源码剖面推进到 `252`；链路从 `stronger-request cleanup-use-time revalidation-governance` 继续推进到 `stronger-request cleanup-step-up reauthorization-governance`，说明 stronger-request cleanup 已进一步进入“现在还能不能用”与“这份 current proof 对更强请求是否仍然太弱”之间的治理分层。
