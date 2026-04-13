@@ -45,6 +45,8 @@
 
 - 一条线性十一连
 
+本页不重讲 `180/181/182/183/184/185/186/187/188/189/190` 各页各自的页内证明，也不把 `teleportToRemote(...)`、`writeBatch(...)`、`session_context.model`、`restoreAgentFromSession(...)`、`getUserSpecifiedModelSetting(...)`、`isModelAllowed(...)`、`flushHistory(...)`、`writeMessages(...)` 这些局部 helper / field / transport 名重新升级成新的总纲主角；这里只整理一张跨页拓扑图：`178→179→180` 这一支讨论 git-context 进入 teleport runtime contract，model line 分成 `178→182` 的 ledger trunk 与 `184→185→187→188` 的 selection / source / allowlist trunk，bridge line 是 `176→181→183→186→189→190` 的 outbound birth / hydrate / replay / write 主干，并顺手把 stable runtime contract、条件性 model / bridge authority 分支与局部 transport-evidence 分层，也把它和 `190→191→{192, 193→206}` 的前向 handoff 接上。换句话说，这里要裁定的是“哪一页属于 teleport、model 或 bridge 后继线，哪一页只是 trunk / zoom / handoff”，不是再把 leaf-level 的 repo admission、history hydrate、model ledger、allowlist veto 或 bridge write 证明写成一条从 `180` 顺编号展开的连续链。
+
 ## 第一性原理
 
 更稳的提问不是：

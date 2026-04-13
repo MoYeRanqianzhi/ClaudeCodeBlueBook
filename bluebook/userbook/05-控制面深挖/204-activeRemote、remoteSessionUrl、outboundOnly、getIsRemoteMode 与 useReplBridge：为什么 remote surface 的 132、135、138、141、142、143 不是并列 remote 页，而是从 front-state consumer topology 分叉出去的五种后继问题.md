@@ -39,6 +39,8 @@
 
 - 为什么 132、135、138、141、142、143 不是并列 remote 页，而是从 front-state consumer topology 分叉出去的五种后继问题
 
+本页不重讲 `132/135/138/141/142/143` 各页各自的页内证明，也不把 `activeRemote`、`remoteSessionUrl`、`outboundOnly`、`getIsRemoteMode()`、`useReplBridge(...)`、`remoteConnectionStatus`、`remoteBackgroundTaskCount` 这些局部 helper / state / projection 名重新升级成新的总纲主角；这里只整理一张跨页拓扑图：`132` 先固定 front-state consumer topology，`135` 先把 direct connect 钉成 foreground remote runtime，`138` 再把 REPL 顶层交互壳钉成 shared interaction shell，随后才从这里继续分叉到 `141` 的 remote-session presence ledger、`142` 的 bridge gray runtime 与 `143` 的 global remote behavior bit，并顺手把稳定的 consumer-topology 骨架、宿主条件性的 remote surface 分支与局部 projection-evidence 分层。换句话说，这里要裁定的是“哪一页还是根页、哪一页已经换成 foreground runtime / interaction shell / presence / gray runtime / behavior bit”，不是再把 leaf-level 的 event projection、URL / ledger、mirror overlay 或 remote bit 证明写成一串并排的 remote 细节。
+
 ## 第一性原理
 
 更稳的提问不是：

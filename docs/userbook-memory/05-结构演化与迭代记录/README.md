@@ -2,6 +2,19 @@
 
 这一层只记录维护 `bluebook/userbook/` 时形成的结构决策、批次边界和继续深入时的落笔纪律。
 
+## 快速索引
+
+如果你不是来顺着时间翻全表，先按影响对象进：
+
+- `README / hub / front-door`
+  - 先看 [275-2026-04-08-root readme hub cleanup 拆分记忆.md](./275-2026-04-08-root%20readme%20hub%20cleanup%20拆分记忆.md)、[278-2026-04-08-topic README front-door split 拆分记忆.md](./278-2026-04-08-topic%20README%20front-door%20split%20拆分记忆.md)、[279-2026-04-08-control README front-door split 拆分记忆.md](./279-2026-04-08-control%20README%20front-door%20split%20拆分记忆.md)、[281-2026-04-08-memory root hub cleanup 拆分记忆.md](./281-2026-04-08-memory%20root%20hub%20cleanup%20拆分记忆.md)、[282-2026-04-08-evolution README recent-batch split 拆分记忆.md](./282-2026-04-08-evolution%20README%20recent-batch%20split%20拆分记忆.md)。
+- `command-index / capability map / range map`
+  - 先看 [284-2026-04-08-capability map hub cleanup 拆分记忆.md](./284-2026-04-08-capability%20map%20hub%20cleanup%20拆分记忆.md)、[294-2026-04-08-command-index session-ops split 拆分记忆.md](./294-2026-04-08-command-index%20session-ops%20split%20拆分记忆.md)、[311-2026-04-08-reference hub range map sync 拆分记忆.md](./311-2026-04-08-reference%20hub%20range%20map%20sync%20拆分记忆.md)、[321-2026-04-08-command-index status control-plane regroup 拆分记忆.md](./321-2026-04-08-command-index%20status%20control-plane%20regroup%20拆分记忆.md)。
+- `2026-04-13 structure-page scope guard 批次`
+  - 从 [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md) 一路看到 [383-2026-04-13-headless-subtree branch-map scope clarification 拆分记忆.md](./383-2026-04-13-headless-subtree%20branch-map%20scope%20clarification%20拆分记忆.md)。
+- `更早批次`
+  - 直接跳到下面的“全量档案”，按编号顺着翻。
+
 ## 最近批次
 
 如果你主要是在看最近这一轮继续深入是怎样切片、怎样提交、怎样做前门收敛和对象分诊的，先看下面这些最新条目：
@@ -110,6 +123,17 @@
 - [374-2026-04-13-wire-visibility branch-map scope clarification 拆分记忆.md](./374-2026-04-13-wire-visibility%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [375-2026-04-13-builder-callback-ui branch-map scope clarification 拆分记忆.md](./375-2026-04-13-builder-callback-ui%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [376-2026-04-13-completion-init-attach branch-map scope clarification 拆分记忆.md](./376-2026-04-13-completion-init-attach%20branch-map%20scope%20clarification%20拆分记忆.md)
+- [377-2026-04-13-remote-recovery branch-map scope clarification 拆分记忆.md](./377-2026-04-13-remote-recovery%20branch-map%20scope%20clarification%20拆分记忆.md)
+- [378-2026-04-13-dual-trunk zoom-map scope clarification 拆分记忆.md](./378-2026-04-13-dual-trunk%20zoom-map%20scope%20clarification%20拆分记忆.md)
+- [379-2026-04-13-remote-surface branch-map scope clarification 拆分记忆.md](./379-2026-04-13-remote-surface%20branch-map%20scope%20clarification%20拆分记忆.md)
+- [380-2026-04-13-schema-store bridge-shell branch-map scope clarification 拆分记忆.md](./380-2026-04-13-schema-store%20bridge-shell%20branch-map%20scope%20clarification%20拆分记忆.md)
+- [381-2026-04-13-remote-truth branch-map scope clarification 拆分记忆.md](./381-2026-04-13-remote-truth%20branch-map%20scope%20clarification%20拆分记忆.md)
+- [382-2026-04-13-shell-pair branch-map scope clarification 拆分记忆.md](./382-2026-04-13-shell-pair%20branch-map%20scope%20clarification%20拆分记忆.md)
+- [383-2026-04-13-headless-subtree branch-map scope clarification 拆分记忆.md](./383-2026-04-13-headless-subtree%20branch-map%20scope%20clarification%20拆分记忆.md)
+- [384-2026-04-13-readme second-layer navigation uplift 拆分记忆.md](./384-2026-04-13-readme%20second-layer%20navigation%20uplift%20拆分记忆.md)
+- [385-2026-04-13-teleport-model-bridge branch-map scope clarification 拆分记忆.md](./385-2026-04-13-teleport-model-bridge%20branch-map%20scope%20clarification%20拆分记忆.md)
+- [386-2026-04-13-permission-tail branch-map scope clarification 拆分记忆.md](./386-2026-04-13-permission-tail%20branch-map%20scope%20clarification%20拆分记忆.md)
+- [387-2026-04-13-remote-surface legacy scope clarification 拆分记忆.md](./387-2026-04-13-remote-surface%20legacy%20scope%20clarification%20拆分记忆.md)
 
 ## 全量档案
 

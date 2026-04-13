@@ -39,6 +39,8 @@
 
 - 一条线性六连
 
+本页不重讲 `133/134/135/136/137/138` 各页各自的页内证明，也不把 `pending_action`、`post_turn_summary`、`task_summary`、`externalMetadataToAppState(...)`、`createV1ReplTransport`、`createV2ReplTransport`、`reportState`、`activeRemote`、`remoteSessionUrl` 这些局部对象和 helper / state 名重新升级成新的总纲主角；这里只整理一张跨页拓扑图：`133→137` 这一条讨论 schema/store existence 与 cross-frontend consumer path，`134→136` 这一条讨论 bridge chain split 与 v2 active surface，`135→138` 这一条讨论 foreground remote runtime 与 shared interaction shell，并顺手把稳定用户合同、条件性可见合同与灰度实现证据分层。换句话说，这里要裁定的是“哪几页属于同一条后继线、哪一步是在 zoom、哪一步已经把主语换成 interaction shell”，不是再把 leaf-level 的 metadata producer、bridge publish chain、runtime 壳或 remote presence 证明写成一条从 132 一路细化的连续链。
+
 ## 第一性原理
 
 更稳的提问不是：

@@ -37,6 +37,8 @@
 
 - 为什么 196、198、199、201、202 不是并列尾页，而是从 verdict ledger 分叉出去的四种后继问题
 
+本页不重讲 `196/198/199/201/202` 各页各自的页内证明，也不把 `pendingPermissionHandlers`、`request_id`、`cancelRequest(...)`、`recheckPermission(...)`、`hostPattern.host`、`applyPermissionUpdate(...)`、`persistPermissionUpdate(...)`、`SandboxManager.refreshConfig(...)` 这些局部 helper / field / queue / settings 名重新升级成新的总纲主角；这里只整理一张跨页拓扑图：`196` 先固定 verdict ledger ownership，随后才分叉出 `198` 的 request-level closeout、`199` 的 leader-local re-evaluation、`201` 的 sandbox-network host-level sibling sweep 与 `202` 的 persist-to-settings / runtime write surfaces，并顺手把稳定的 verdict ownership、宿主条件性的 host / queue 分支与局部 persist-evidence 分层。换句话说，这里要裁定的是“哪一页还是根页、哪一页已经换成 closeout / re-evaluation / host sweep / persist surfaces”，不是再把 leaf-level 的 response consume、queue recheck、host cleanup 或 settings refresh 证明写成一串并排的 permission 尾部细节。
+
 ## 第一性原理
 
 更稳的提问不是：

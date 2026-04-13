@@ -41,6 +41,8 @@
 
 - 一条线性十二连
 
+本页不重讲 `168/169/170/171/172/173/174/175/176/177/178/179` 各页各自的页内证明，也不把 `StructuredIO`、`RemoteIO`、`loadConversationForResume(...)`、`readBridgePointerAcrossWorktrees(...)`、`BridgePointer.environmentId`、`registerBridgeEnvironment(...)`、`createBridgeSession(...)`、`session_context` 这些局部 helper / field / type 名重新升级成新的总纲主角；这里只整理一张跨页拓扑图：`168` 是贴着 `169` 的 headless thickness 前置轴，`169` 是 continuation-source 根页，`170→171` 这一支讨论 headless source certainty 与 local artifact provenance，`172→173→174` 这一支打开 bridge continuity authority 与 environment truth 主干，`175/176→177` 则在 `174` 下拆成 provenance zoom、createSession field zoom 与交叉 zoom，`176→178→179` 再拆出 `session_context` / git-context 子支，并顺手把 stable continuation 基准项、条件性 source / authority 分支与局部 field-evidence 分层。换句话说，这里要裁定的是“哪一页是新根、哪一页只是 zoom、哪几页属于 create-context 子树”，不是再把 leaf-level 的 protocol thickness、source certainty、env truth、provenance label 或 `session_context` 证明写成一条从 `168` 顺编号展开的连续链。
+
 ## 第一性原理
 
 更稳的提问不是：
