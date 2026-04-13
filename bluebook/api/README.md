@@ -39,6 +39,15 @@
 
 代码里有，不等于 registry 承认；registry 承认，不等于 host-facing truth claim 已签发；claim 已签发，也不等于所有 consumer 都能合法消费。
 
+如果要把这五格再压成最小 case matrix，也只先保留一正一反两个读法示范；它们只示范“怎样问”，不代替 `102` 新签 verdict：
+
+| case | code present | registry listed | host-facing truth claim signed | consumer subset admitted | promise boundary declared | 更稳的读法 |
+|---|---|---|---|---|---|---|
+| `worker_status` 这类 host-facing status object | 可先是 `yes` | 可先是 `yes` | 只有 `102` 已锁定后才配写 `yes` | 常见是 `yes`，但只是一段 status width | 常见是 `yes`，但边界通常窄于 full transcript | 宿主消费的是 status subset，不是完整 runtime truth |
+| `status / usage / mode bar / summary` 这类 projection | 常见是 `yes` | 可能 `yes`，也可能只是 UI 装配 | 通常不该直接写 `yes` | 常见只配写 `projection / receipt-grade subset` | 若没有明确承诺边界，就不写 `yes` | 这类 surface 更接近 readback / projection，不该偷升成 host-facing signer |
+
+更硬一点说，这张矩阵最重要的不是对象名，而是 later maintainer 能不能一眼看出：`projection` 不等于 `signed claim`，`subset admitted` 也不等于 `full truth exported`。如果一页里的例子让你更想直接下 verdict，而不是先回 `102` 对齐 rung，那这个例子就还写得太像接口库存。
+
 如果一页开始替 `philosophy/` 重判必要性，替 `architecture/` 重新发明对象链，或替 `playbooks/` 直接下 verdict，它就已经越权。
 若争议已经变成“这个 owner 页是否越位、目录契约是否失真”，回 [../meta/README.md](../meta/README.md)；那已不是 host-facing truth 本身。
 

@@ -138,6 +138,22 @@
 
 这一页后面的所有降格规则都建立在这三句上，而不是建立在“我很熟源码”这种阅读体感上。
 
+## 1.2 Worked Example：不要一眼把 `permission_mode` 写成对象真相
+
+如果 later maintainer 只想先看一个对象怎样沿 ladder 被审读，可以先拿 `permission_mode` 这种高流量 noun 做演示，但也必须严格按 rung 走，而不是看见 mode 条、审批弹窗或 userbook 说明就直接宣布“这里已经有 sole writer”。
+
+| rung | 这一步只该问什么 | 对 `permission_mode` 更稳的写法 |
+|---|---|---|
+| `public artifact ceiling` | 公开工件到底只签出了什么 | 只能先说“公开材料显示存在 mode / approval surface”，不能先说谁在写现在 |
+| `contract` | 系统正式承认哪些 mode / state 可以存在 | 可以写“schema / contract 承认 permission-related state” |
+| `registry` | 当前 build / runtime 真的列出了哪些 mode 对象 | 可以写“当前 build 暴露了 mode-related registry / control surface” |
+| `current-truth claim state` | 公开证据是否已经足够 promotion | 只有能点名 `signer + effect ceiling + local veto cue + first retreat layer` 时，才配升级；否则继续停在 `provisional claim` |
+| `consumer subset` | 哪些 host / UI / status 只是在消费这份 truth | mode 条、面板、外部元数据往往更接近 subset / projection，而不是 sole writer |
+| `hotspot kernel` | 哪个 chokepoint 在集中维护 invariant | 只有前面 rung 已锁定，才值得继续问 mode 相关的 single-writer seam 在哪 |
+| `mirror gap discipline` | 还缺哪种证据不能脑补 | 若镜像缺席、writer seam 不明、或 host 只给 receipt-grade 投影，就继续保留 `unresolved-authority note` |
+
+从第一性原理再压一次，这个 worked example 真正要示范的不是 `permission_mode` 本身，而是一个更硬的阅读纪律：越是高流量对象，越不能靠 UI 熟悉感和文案体感跳过 promotion gate。后续若换成 `worker_status`、tool pool、session head 或 operator artifact，也仍应用同一张表，而不是各自发明一套“我大概知道它在干什么”的例外法。
+
 ## 2. 第一级：先找 contract
 
 先看：
