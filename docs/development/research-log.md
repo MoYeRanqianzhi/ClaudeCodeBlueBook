@@ -2,6 +2,12 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/30` deepen 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
+
+- 本轮新的 `api/30` repo-seam 结论：我只对 `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`30` 现在把原来的 `state / Task.ts / query / structuredIO` 混合簇拆成了四种更贴近真实 repo structure 的 seam：`state/` 负责 `host truth externalization`，`utils/task / Task.ts` 负责 `task runtime kernel`，`query.ts` 负责 `continuation kernel`，`structuredIO / transport` 负责 `host transport seam`。当前判断是，这一步能把源码结构先进性的论证从“作者如何归纳几类大文件”推进到“repo 里到底有哪些不同的复杂度中心”，也让 later maintainer 的 reject path 更贴近实际 seam。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一个 atlas 想用一个混合簇解释多组大文件时，更稳的默认追问不该是“这些文件是不是都很重要”，而应先问“它们是不是同一种 seam、同一种 writer risk、同一种 first retreat layer”；如果不是，就不该继续被一个标题打包。当前判断是，这个问法能继续把目录结构优化从“描述更省字”拉回“结构语义更单源”。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `philosophy/54 + guides/30` deepen 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
 
 - 本轮新的 `philosophy/54` magic-proof bridge 结论：我只对 `bluebook/philosophy/54-好的Prompt同时组织模型与人类接手路径.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`54` 现在把“为什么这很重要”那四类接手成本逐项回绑到了 `lawful inheritance / search-pruning / decision-retirement + effect ceiling` 这组最小法则上，不再只停在泛化的人机协调成本；`session memory` 与 `handoff note` 也补上了和 `suggestion / sticky prompt` 对称的 `effect ceiling` 解释。当前判断是，这一步能把 Prompt 魔力从压缩 slogan 推到更可复查的 why-proof bridge。

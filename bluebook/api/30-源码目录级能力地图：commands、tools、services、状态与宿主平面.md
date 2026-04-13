@@ -185,24 +185,75 @@ Claude Code 的目录先进性，首先不是：
 6. `mirror gap discipline`
    - 若要继续按服务二级目录展开，回 `46`；若要继续追对象法则，回 `../architecture/README.md`
 
-### 2.4 `state / Task.ts / query / structuredIO`
+### 2.4 `state/`
 
-这组文件最不该被目录地图边缘化，因为它们是最接近 `current-truth claim state` 与 `hotspot kernel` 的源码簇；但本页仍按同一条六格收口：
+`state/` 不该再和 `query / task / structuredIO` 混写，因为它最接近的 repo seam 是 `host truth externalization`：
 
 1. `contract`
-   - `SDKMessage`、task object、session / transcript、`StructuredIO` 的对象形状与消息边界
+   - `session_state_changed`、app state、host-facing state snapshot 的对象边界
 2. `registry`
-   - `TaskType`、`getAllTasks()`、event wiring、session state wiring、transport registration
+   - `sessionState`、`onChangeAppState`、notify / writeback wiring
 3. `current-truth claim state`
-   - 这是最接近 `current-truth claim state` 的目录簇；它足以支撑 claim-state 判断，但不在本页直接升级成 `sole writer / writeback seam`
+   - 这是源码树里最接近 host-facing `current-truth claim state` 的目录簇；它足以支撑 claim-state 判断，但不在本页直接升级成 `sole writer / writeback seam`
 4. `consumer subset`
-   - host、UI、bridge、CI、reviewer 只拿到不同 state / transcript / task projection
+   - host、UI、bridge、CI、reviewer 只拿到不同 state projection
 5. `hotspot kernel`
-   - task object truth、session / host writeback truth、continuation pricing truth 与 transport order truth的集中收口
+   - current-state externalization、writeback ordering 与 stale-state reject 的集中收口
 6. `mirror gap discipline`
-   - 若要继续追对象层 `writer claim plane / local veto / first retreat layer`，回 `../architecture/README.md`；若要继续看 host-facing claim-state / promise boundary，回 `./README.md`
+   - 若要继续追对象层 `writer claim plane / local veto / first retreat layer`，回 `../architecture/README.md`
 
-这也是 later maintainer 最该先学会 reject 的一组文件，而不是最后才顺手扫到的大文件。
+### 2.5 `utils/task / Task.ts`
+
+`Task.ts` 与 `utils/task/framework.ts` 也不该只当“状态文件旁边的大对象”，因为它们更接近 `task runtime kernel`：
+
+1. `contract`
+   - `TaskType`、task object、task event 的对象形状
+2. `registry`
+   - `getAllTasks()`、task registration、task event wiring
+3. `current-truth claim state`
+   - task runtime 对象当前只够写成 task claim-state，不在本页直接升级成 landed task authority
+4. `consumer subset`
+   - host、UI、bridge、CI 只拿到不同 task / progress / notification projection
+5. `hotspot kernel`
+   - task object truth、stale patch reject、task lifecycle ordering 的集中收口
+6. `mirror gap discipline`
+   - 若要继续看 task object-level writer / retreat layer，回 `../architecture/README.md`
+
+### 2.6 `query.ts`
+
+`query.ts` 最不该被退回“通用大循环”，因为它更接近 `continuation kernel`：
+
+1. `contract`
+   - query loop、tool-use turn、compact / retry / re-entry 的运行时边界
+2. `registry`
+   - query orchestration、continuation hook-up、retry / compact registration
+3. `current-truth claim state`
+   - 这里只先支撑 continuation / query-loop 的 claim-state，不代签最终 host truth
+4. `consumer subset`
+   - model、tool runtime、host、reviewer 只消费不同 loop projection
+5. `hotspot kernel`
+   - continuation pricing、reactive compact、retry ordering 与 fail-closed loop 的集中收口
+6. `mirror gap discipline`
+   - 若要继续看 decision window / continuation pricing 的 host-facing claim-state，回 `./52-统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate.md`
+
+### 2.7 `structuredIO / transport`
+
+`structuredIO` 也不该只被并入 “state + query” 混合簇，因为它更接近 `host transport seam`：
+
+1. `contract`
+   - `StructuredIO`、transport message、request / response envelope 的边界
+2. `registry`
+   - structured transport wiring、host ingress / egress registration
+3. `current-truth claim state`
+   - 这里只先支撑 transport / host handoff 的 claim-state，不代签 object-level authority
+4. `consumer subset`
+   - SDK、bridge、CLI、remote host 只拿到不同 transport projection
+5. `hotspot kernel`
+   - transport order、ask correlation、host writeback / replay boundary 的集中收口
+6. `mirror gap discipline`
+   - 若要继续看 host-facing claim-state / consumer subset / promise boundary，回 `./README.md`
+
+这四组 seam 都比“作者把几类大文件放在一起”更接近 repo structure；later maintainer 真正该先学会 reject 的，也不是“大文件太大”，而是混合簇有没有遮住 `host truth externalization / task runtime kernel / continuation kernel / host transport seam` 这四种不同的复杂度中心。
 
 ## 3. 本地扫描数字该停在哪一层
 

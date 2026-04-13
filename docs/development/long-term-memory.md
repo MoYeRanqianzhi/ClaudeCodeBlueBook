@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-api30-repo-seam-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/30` deepen 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api30-must-split-state-task-query-structuredio-cluster-into-real-repo-seams-apr13 live` 记忆：
+  - `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md` 现在也应继续写死：`state / Task.ts / query / structuredIO` 这一组不该再按作者混合簇写，而应拆回真实 repo seam：`host truth externalization / task runtime kernel / continuation kernel / host transport seam`
+  - 更稳的默认写法是：目录结构优化不先问“大文件能不能合并描述”，而先问“这组复杂度中心到底是不是同一类 seam”；若不是，就不该让 atlas 用一个混合簇替它们说话
 - 当前批次继续新增一条 `root-sync-healthy-for-prompt-magic-bridge-batch-apr13 live` 记忆：
   - 2026-04-13 本轮进入 `philosophy/54 + guides/30` deepen 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`

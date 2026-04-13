@@ -2,6 +2,10 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 repo-seam 协议：`api/30` 现在把 `state / Task.ts / query / structuredIO` 的混合簇拆成四类更贴近真实源码边界的复杂度中心：`host truth externalization / task runtime kernel / continuation kernel / host transport seam`，不再让 atlas 用一个作者分组替多类 seam 代言。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在进入 `api/30` deepen 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
+
 - 继续更新 `bluebook/{philosophy/54-好的Prompt同时组织模型与人类接手路径.md,guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 prompt-magic bridge 协议：`54` 现在把四类接手成本逐项回绑到 `lawful inheritance / search-pruning / decision-retirement + effect ceiling`，并补齐 `session memory / handoff note` 的 ceiling 解释；`guides/30` 则新增更早的 `effect ceiling` first-reject gate，让 carrier 越权先落 `provisional / reject`，不再等到更后的 witness 细检。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在进入 `philosophy/54 + guides/30` deepen 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
