@@ -4946,3 +4946,4 @@
 - `2026-04-13` `09` 的最新稳定纪律也应继续写死：它现在只配保留三条宪法级判断、一个 continuity crosswalk 和三条 first-hop。`typed-state checkpoint law / verb ceiling` 继续回 `10`，`promotion / downgrade / unresolved-authority note` 继续回 `guides/102` 与 `architecture/84`；总图页不再抢入口卡或 ladder 页的首答权。
 - `2026-04-13` `userbook/README` 的最新稳定纪律也应继续写死：根页现在只配保留用户动作翻译、问题分型与单跳分流，不再本地重讲完整的 lease/delta/cleanup grammar。弹窗、`status`、`usage`、继续入口与摘要只继续被写成 route-only projection；若真要判断 ask 是否仍配继续，统一回 `05` 或治理 owner。
 - `2026-04-13` `playbooks/09` 的最新稳定纪律也应继续写死：Prompt rollout 的目标态、phase 指标、评审卡与回退样例现在都应直接挂 `lawful inheritance / excluded-branch pruning / zero-delta judgment retirement`。`cache / handoff / summary` 仍可保留，但只作为辅证，不再允许它们单独充当 rollout 成功的主指标。
+- `2026-04-13` `philosophy/61` 的最新稳定纪律也应继续写死：why 页现在只配证明“为什么顺序、失败语义、可撤销自动化与可重放证据会同时决定安全与省 token 的成熟度”，不再在本地反复重讲 `same authority lease / new decision delta / cleanup trigger state` 的对象链。更细的 checkpoint 问句、compact/resume/re-entry 拆解与证据判格统一回 `10`。
