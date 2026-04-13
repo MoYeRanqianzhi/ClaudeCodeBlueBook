@@ -39,6 +39,8 @@
 
 - 一条线性六连
 
+本页不重讲 `144/145/146/147/148/149` 各页各自的页内证明，也不把 `getIsRemoteMode()`、`remoteSessionUrl`、`REMOTE_SAFE_COMMANDS`、`filterCommandsForRemoteMode(...)`、`CLAUDE_CODE_REMOTE`、`CLAUDE_CODE_REMOTE_MEMORY_DIR` 这些局部对象和 helper / env / state 名重新升级成新的总纲主角；这里只整理一张跨页拓扑图：`144→145` 这一对讨论 `/session` pane 与 URL affordance，`146→147` 这一对讨论 coarse remote 合同厚度与 remote-safe command shell，`148→149` 这一对讨论 env-driven headless remote 轴与 memory persistence，并顺手把稳定用户合同、条件性可见合同与灰度实现证据分层。换句话说，这里要裁定的是“哪两页属于同一组配对、哪一组已经把主语换到 command shell 或 env-driven persistence”，不是再把 leaf-level 的 pane gate、URL 缺席、safe command、env bit 或 remote memory 证明写成一条从 143 顺编号展开的连续链。
+
 ## 第一性原理
 
 更稳的提问不是：
