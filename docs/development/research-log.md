@@ -6,6 +6,9 @@
 - 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 直接返回 `Already up to date.`，`git status --short --branch` 也仍是干净的 `main...origin/main`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓正文。
 - 本轮新的 Prompt 迁移模板结论：我把 `bluebook/guides/57-如何把Prompt宿主迁移失真压回compiled request truth：固定纠偏顺序、拒收规则与模板骨架.md` 的前门从“几个 consumer 是否重新对齐”继续压回了 later-consumer 的合法继承。现在这页不再把 `shared_consumer_surface` 读成纠偏主语，而明确写成继承成立后的见证；`protocol transcript / stable prefix boundary / lawful forgetting boundary` 也被并列收成“哪些内容被正式继承、哪些判断已经退休”的联合证明。当前判断是，这一步能继续减少 later consumer 在修复模板页里把 surface 对齐误读成 handoff 真相的概率。
 - 本轮新的 userbook 根前门结论：我把 `bluebook/userbook/README.md` 再压回纯分型与单跳。根页现在不再代判 ask 是否仍属 `zero-delta`、继续资格是否仍成立，而更明确把弹窗、`status`、`usage`、继续入口与摘要统一压成 `weak readback / lease checkpoint`；一旦怀疑出现 `unpaid expansion`、`continuation lease` 漂移或旧 authority 未清空，就统一单跳进 `05-控制面深挖` 或蓝皮书治理入口。当前判断是，这一步能继续减少 later consumer 在 userbook 根页把控制面 readback 当成治理 verdict 的概率。
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `418`、把附录推进到 `402`、把源码剖面推进到 `269`；链路从 `stronger-request retention-enforcement-honesty-governance` 继续推进到 `stronger-request cleanup-repair-governance`，说明 stronger-request cleanup 已从“系统是否更诚实地说明自己做到哪一步”一路推进到“抓到 drift 之后谁配决定修 scheduler / executor / receipt / wording”这一 repair authority 问题。
+- 本轮新的 cleanup 分层结论：`412-418` 这一段进一步把 stronger-request cleanup 压成 `retention-enforcement honesty -> isolation -> constitution -> rationale -> metadata -> runtime-conformance -> anti-drift verification -> repair` 的连续治理梯子；它们共同说明 `有时间法律`、`有执行说明`、`不误伤活对象`、`家法已分`、`制度会记住自己`、`制度已被兑现`、`制度会发现漂移` 与 `制度配决定如何修复` 不是同一个 signer，也不该被任何单一结果词压扁。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=419 / appendix=402 / source-notes=269`；当前更值得继续追问的已不再是 metadata / conformance / anti-drift / repair 本身，而是 stronger-request cleanup repair 之后旧 promise world 该如何 phased exit，也就是更强的 `cleanup-migration-governance` 层。
 
 ## 2026-04-08 本轮增量
 
