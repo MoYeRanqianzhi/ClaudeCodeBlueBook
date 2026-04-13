@@ -7857,3 +7857,5 @@
 - 这一刀的第一性原理同样很窄：guide 层也必须先回答“为什么接手者不必重做世界重判”，否则苏格拉底审读很容易退回“审 lineage / prefix 这些构件是否存在”，而不是在审它们是否真的减少了 later-consumer 的重判成本。
 - `2026-04-13` 当前又起了第九个窄批次，只动 `api/53` 的 section 0/1 framing。修改后，这页不再把归档源码锚点与宿主消费候选写成当前 worktree 已核实的正式支持面，而是显式压回 `mirror absent / public-evidence only`：源码路径只算 archival anchors，host-facing 面只先算 candidate，待镜像回场后再升级为已核实 truth / ABI 边界。
 - 这一刀的第一性原理也很窄：在 evidence mode 不满足时，host-facing protocol 页也不能偷拿 object truth 的 certainty。只要 `api/53` 这种页还把 archival anchors 写成 live evidence，later maintainer 就会把 claim-state ceiling 错学成对象层已核实事实。
+- `2026-04-13` 当前又起了第十个窄批次，只动 `philosophy/54` 与 `playbooks/09` 的 Prompt 体验叙事前门。修改后，这两页不再把价值写成“人类更容易接手 / handoff continuity 更好”，而是明确 later consumer 不必重判世界、重搜动作空间，也不必把已排除分支重新拉回候选集。
+- 这一刀的第一性原理同样很窄：Prompt rollout 和 Prompt why 页都不能把“接手更顺”当前门，因为那会把合法继承退回体验叙事。只要 state / summary / handoff 还被写成被继承的本体，而不是继续资格的载体，later-consumer rights 就会再次退回 secondary effect。
