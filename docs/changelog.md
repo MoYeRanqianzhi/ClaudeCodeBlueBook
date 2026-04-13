@@ -2,6 +2,9 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/{security/README.md,10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面.md,userbook/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 security-frontdoor / typed-state-action 协议：`security/README` 现在补出了 `authority lease / decision delta / cleanup trigger state -> reprice or suspend / do not reopen / suspend or reject / continue or reopen` 的最小动作桥，并把 `pointer / summary / resume button / status green` 明确降回 `reopen eligibility`，不再默许它们代签 `reopen authority`；`userbook/README` 也把治理效率进一步压成 fewer `zero-delta asks`，而不是 fewer total asks。
+- 继续更新 `bluebook/{philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md,README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 Prompt frontdoor / advancedness ceiling 协议：`84` 现在更明确把 `carrier-only` reader 的下一跳指向 `81` 的 worked example，而不是继续在 why 页堆 mechanism inventory；根 `README` 也补出一条更硬的 ceiling：源码质量 advancedness 若还落不到 `why-proof + object landing`，就只配停在 `provisional`，不能在根入口被写成成熟 verdict。
+
 - 继续更新 `bluebook/{philosophy/81-请求编译链：可缓存、可转写、可继续.md,philosophy/README.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 Prompt mechanism / owner-boundary 协议：`81` 现在补出了 `carrier-only / witness-rebound / mixed` 的 worked example 与 `same-world / search-pruning / decision-retirement` 三格检查表；`philosophy/README` 现在把 why owner 与 `06` 的 self-audit 边界压成最小 owner matrix；`06` 现在补出 self-audit speaking-right matrix，明确自己不代写 why-proof、不补 `102` gate、不补 route。
 - 继续更新 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 source-quality advancedness verdict 协议：`87` 现在补出了 `reject(layout praise) / provisional(why-proof only) / pass(why + object landing)` 三格 verdict 表，并把 `future maintainer rejectability` 再压成 `local veto cue / first retreat layer / one writable present` 三问酸测试，防止 advancedness 继续被目录观感或文件大小代签。
 

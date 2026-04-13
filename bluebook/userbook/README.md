@@ -12,6 +12,8 @@
 2. 扩张或权限判断不要先看弹窗、`status`、`usage`、继续入口或摘要；这些都只算 route-only 的 `receipt-grade lease-checkpoint projection`，不是治理 checkpoint。除非它们在同一条 `authority lease` 上真的带来新的 `decision delta`，否则最多也只是 `receipt-grade` 证据。先找这次动作、可见性或继续请求里最早那条还没被定价的 `unpaid expansion`，再看它有没有补齐 `repricing proof / same authority lease / new decision delta / cleanup trigger state`。
 3. 若问题已经从“现在该怎么做”变成“为什么这么判 / 为什么会出现 `Later` 或 `Outside`”，先回蓝皮书根前门或对应母线入口；userbook 根页不展开 why syllabus。
 
+更硬一点说，省 token 追的不是 fewer total asks，而是 fewer `zero-delta asks`：没有新增 `decision delta` 的 approval、continue、compact 与 resume，都只配留在 `receipt-grade lease-checkpoint projection`，不配被写成治理进展。
+
 如果你只缺治理收费链的一屏速记，而不是用户侧动作分型，先回 [../10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；userbook 根入口只保留问题分型、用户侧最小顺序与单跳分流。
 
 这里也只先记三条边界：

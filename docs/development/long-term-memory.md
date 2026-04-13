@@ -13,6 +13,15 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 security-frontdoor-needs-typed-state-action-bridge-apr13 live 记忆：
+  - `bluebook/security/README` 现在也应直接写死：安全前门不能只说 `signer / ledger / cleanup authority` 三类 ambiguity，还要继承 `10` 的最小 typed-state 动作桥，把 `authority lease / decision delta / cleanup trigger state` 直接压成 `reprice or suspend / do not reopen / suspend or reject / continue or reopen`
+  - 更稳的默认写法是：pointer、summary、resume button、status green 最多只证明 `reopen eligibility`，绝不单独证明 `reopen authority`
+- 当前批次继续新增一条 prompt-frontdoor-should-send-carrier-only-readers-to-worked-example-apr13 live 记忆：
+  - `bluebook/philosophy/84` 现在也应直接写死：当 reader 只拿着 `carrier-only` 包却还想判 `pass / reject` 时，下一跳不是补更多定义，而是去 `81` 看 `carrier-only / witness-rebind / pass / provisional / reject` 的 worked example；`84` 只固定 owner law，不重发 mechanism inventory
+  - 更稳的默认写法是：frontdoor 负责裁定 owner law 与 verdict box，worked example 统一交给 `81`
+- 当前批次继续新增一条 root-and-user-frontdoors-should-name-provisional-advancedness-and-zero-delta-efficiency-apr13 live 记忆：
+  - `bluebook/README` 与 `userbook/README` 现在也应直接写死：源码质量 advancedness 若还落不到 `why-proof + object landing`，就只配停在 `provisional`；治理效率也不是 fewer total asks，而是 fewer `zero-delta asks`
+  - 更稳的默认写法是：根入口只给 `provisional` ceiling，用户前门只把 compact / resume / approval 一类零增量动作翻成 `receipt-grade lease-checkpoint projection`
 - 当前批次继续新增一条 prompt-mechanism-pages-need-carrier-to-witness-worked-example-apr13 live 记忆：
   - `bluebook/philosophy/81` 现在也应直接写死：Prompt 魔力不只要有 `carrier vs witness` 抽象表，还要给出 `carrier-only / witness-rebound / provisional` 的 worked example，把 `compact / resume / handoff` 的 `pass / reject` 规则落成 later maintainer 可直接复查的对象表
   - 更稳的默认写法是：只要 later consumer 还得重答 `world-definition / tool-legality / next-action search`，或已排除分支被重新拉回候选集，就先判 `continue qualification` 失效，不继续包装成 same-world

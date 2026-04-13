@@ -62,6 +62,7 @@
 | `witness-rebind handoff` | 上面的 carrier 之外，还能点名同一条 witness ABI，并且新增 delta 只触及局部边界 | later consumer 看到的不只是故事，而是同一份 `world-entry object` 仍可被继续消费 | 才配从 `provisional` 升回 `pass`，且只重开新增 delta 真正触及的那一小段判断 |
 
 从第一性原理看，这张 worked pair 真正保护的不是“handoff 写得够不够像原对话”，而是 later consumer 会不会因为 carrier 看起来顺手，就跳过 witness rebind，直接把旧判断重新带回 candidate set。
+若你只记得 `84` 的 verdict box，却不确定 `carrier-only / witness-rebind / pass / provisional / reject` 在对象层到底长什么样，下一跳不是补更多定义，而是直接去 `81` 看 worked example；`84` 只固定 owner law，不重发 mechanism inventory。
 
 ### `carrier-only` vs `witness-rebind` 最小复核块
 
