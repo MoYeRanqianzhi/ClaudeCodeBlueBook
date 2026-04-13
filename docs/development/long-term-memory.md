@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 userbook-map-and-index-must-inherit-three-first-tests live 记忆：
+  - `userbook/02-能力地图/README / userbook/03-参考索引/README` 现在也应直接继承三条母线的 first test，而不只停在“这是地图/这是索引”的薄桥接句
+  - 更稳的默认写法是：能力地图只桥接 `tool choice / compaction / 已排除路径回流候选集`、`repricing proof / lease checkpoint / cleanup`、`contract / registry / current-truth claim state + one writable present`；参考索引只桥接“projection / weak readback / tail evidence 不代签”，不扩成对象页或 verdict 页
+- 当前批次继续新增一条 root-sync-healthy-clean-apr13-batch2 live 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，`git status --short --branch` 当前为 `main...origin/main [ahead 12]`
+  - 更稳的默认写法是：根仓若仅 ahead 而未脏、不需收敛，则继续只把状态记作外部事实，正文与提交仍只落在 `.worktrees/mainloop`
 - 当前批次继续新增一条 userbook-frontdoor-must-align-three-first-tests live 记忆：
   - `userbook/README / userbook/00-导读` 现在也应直接把用户第一跳三句对齐到三条母线，而不再让 `message lineage / stable bytes / working set` 这种旧版 Prompt/continuity 压缩链占住第三句
   - 更稳的默认写法是：Prompt 句直接继承 `tool choice / compaction / 已排除路径回流候选集`，治理句直接继承 `earliest unpaid expansion + repricing proof / lease checkpoint / cleanup`，当前真相句直接继承“旧目录 / 旧恢复资产 / 旧权限 / replay 不得冒充当前”；userbook 根前门的证据顺序也应直接压成 `contract / registry / current-truth claim state`
