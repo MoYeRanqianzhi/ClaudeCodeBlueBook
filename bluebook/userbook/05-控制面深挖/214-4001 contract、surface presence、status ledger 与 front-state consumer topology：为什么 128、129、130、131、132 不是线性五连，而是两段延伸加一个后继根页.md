@@ -34,6 +34,8 @@
 - 两段 `root + zoom`
 - 再加一个后继根页
 
+本页不重讲 `128/129/130/131/132` 各页各自的页内证明，也不把 `4001`、`viewerOnly`、`remoteSessionUrl`、brief line、`remoteConnectionStatus`、`remoteBackgroundTaskCount`、`worker_status`、`external_metadata` 这些局部对象和 helper / state 名重新升级成新的总纲主角；这里只整理一张跨页拓扑图：`128/129` 是 contract / recovery ownership 这一段延伸，`130/131` 是 presence signer / status ledger 这一段延伸，而 `132` 再把主语抬升成 front-state consumer topology 的后继根页，并顺手把稳定用户合同、条件性可见合同与灰度实现证据分层。换句话说，这里要裁定的是“哪几页属于同一段延伸、哪一页已经换了上位问题”，不是再把 leaf-level 的 code contract、surface presence、ledger writer 或 runtime-state consumer 写成一条从 transport 走到 UI 的连续细化链。
+
 ## 第一性原理
 
 更稳的提问不是：

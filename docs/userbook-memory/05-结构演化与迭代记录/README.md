@@ -112,6 +112,7 @@
 - [376-2026-04-13-completion-init-attach branch-map scope clarification 拆分记忆.md](./376-2026-04-13-completion-init-attach%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [377-2026-04-13-remote-recovery branch-map scope clarification 拆分记忆.md](./377-2026-04-13-remote-recovery%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [378-2026-04-13-dual-trunk zoom-map scope clarification 拆分记忆.md](./378-2026-04-13-dual-trunk%20zoom-map%20scope%20clarification%20拆分记忆.md)
+- [379-2026-04-13-remote-surface branch-map scope clarification 拆分记忆.md](./379-2026-04-13-remote-surface%20branch-map%20scope%20clarification%20拆分记忆.md)
 
 ## 全量档案
 
