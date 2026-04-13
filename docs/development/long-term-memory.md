@@ -13,6 +13,15 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-mechanism-pages-need-carrier-to-witness-worked-example-apr13 live 记忆：
+  - `bluebook/philosophy/81` 现在也应直接写死：Prompt 魔力不只要有 `carrier vs witness` 抽象表，还要给出 `carrier-only / witness-rebound / provisional` 的 worked example，把 `compact / resume / handoff` 的 `pass / reject` 规则落成 later maintainer 可直接复查的对象表
+  - 更稳的默认写法是：只要 later consumer 还得重答 `world-definition / tool-legality / next-action search`，或已排除分支被重新拉回候选集，就先判 `continue qualification` 失效，不继续包装成 same-world
+- 当前批次继续新增一条 source-quality-advancedness-must-separate-layout-praise-from-why-and-object-proof-apr13 live 记忆：
+  - `bluebook/philosophy/87` 现在也应直接写死：源码先进性至少要分成 `reject(layout praise) / provisional(why-proof only) / pass(why + object landing)` 三格；没有 why-proof 不配夸 advanced，有 why 但落不到 `hotspot kernel / writer claim state / first retreat layer` 也只配停在 provisional
+  - 更稳的默认写法是：later maintainer 若还答不出 `local veto cue / first retreat layer / one writable present`，就先把成熟度降格，不继续拿目录观感、文件大小或模块体感代签
+- 当前批次继续新增一条 philosophy-readme-and-06-must-mechanize-owner-vs-self-audit-boundary-apr13 live 记忆：
+  - `bluebook/philosophy/README` 与 `06` 现在也应直接写死：`84 / 85 / 86 / 87` 是 why owner，`06` 只做 self-audit，不补 why-proof、不补 `102` gate、不补 route；一旦问题重新长成“为什么必须这样设计”或“下一跳去哪”，就该离开 `06`
+  - 更稳的默认写法是：`philosophy/README` 给最小 owner matrix，`06` 给最小 speaking-right matrix，防止总控自校页和 why owner 页再次混写
 - 当前批次继续新增一条 lifecycle-crosswalk-must-separate-reopen-eligibility-and-authority-apr13 live 记忆：
   - `bluebook/security/85` 现在也应直接写死：`authority lease / decision delta / cleanup trigger state` 不只服务治理入口，也要直接投到 `continuation / succession / suspension / retirement` 的 boundary lifecycle 交叉表里；`reopen eligibility` 与 `reopen authority` 必须分开，pointer、resume handle、summary 这类对象最多证明前者，不得自动证明后者
   - 更稳的默认写法是：`same + zero + fired` 最多只配写成 `continuation checkpoint`，`changed + new + fired` 才配写成 `succession`；凡 `cleanup` 仍是 `owed / failed / unknown`，一律先按 `suspension / freeze` 处理，而不是先写可 reopen
