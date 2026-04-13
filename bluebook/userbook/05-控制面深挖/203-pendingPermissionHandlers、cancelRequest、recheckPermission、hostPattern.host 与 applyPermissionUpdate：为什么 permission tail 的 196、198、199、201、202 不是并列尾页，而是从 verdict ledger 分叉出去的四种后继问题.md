@@ -37,7 +37,20 @@
 
 - 为什么 196、198、199、201、202 不是并列尾页，而是从 verdict ledger 分叉出去的四种后继问题
 
-本页不重讲 `196/198/199/201/202` 各页各自的页内证明，也不把 `pendingPermissionHandlers`、`request_id`、`cancelRequest(...)`、`recheckPermission(...)`、`hostPattern.host`、`applyPermissionUpdate(...)`、`persistPermissionUpdate(...)`、`SandboxManager.refreshConfig(...)` 这些局部 helper / field / queue / settings 名重新升级成新的总纲主角；这里只整理一张跨页拓扑图：`196` 先固定 verdict ledger ownership，随后才分叉出 `198` 的 request-level closeout、`199` 的 leader-local re-evaluation、`201` 的 sandbox-network host-level sibling sweep 与 `202` 的 persist-to-settings / runtime write surfaces，并顺手把稳定的 verdict ownership、宿主条件性的 host / queue 分支与局部 persist-evidence 分层。换句话说，这里要裁定的是“哪一页还是根页、哪一页已经换成 closeout / re-evaluation / host sweep / persist surfaces”，不是再把 leaf-level 的 response consume、queue recheck、host cleanup 或 settings refresh 证明写成一串并排的 permission 尾部细节。
+本页只做一件事：
+
+- 固定 `196 -> 198 / 199 / 201 / 202` 这张跨页分叉骨架
+
+它不重讲 `196/198/199/201/202` 各页自己的页内证明，
+
+也不把 `pendingPermissionHandlers`、`request_id`、`cancelRequest(...)`、`recheckPermission(...)`、`hostPattern.host`、`applyPermissionUpdate(...)`、`persistPermissionUpdate(...)`、`SandboxManager.refreshConfig(...)` 这些局部 helper / field / queue / settings 名重新升级成新的总纲主角。
+
+这里真正要裁定的是：
+
+- 哪一页还是根页
+- 哪一页已经换成 closeout / re-evaluation / host sweep / persist surfaces
+
+不是再把 leaf-level 的 response consume、queue recheck、host cleanup 或 settings refresh 证明写成一串并排的 permission 尾部细节。
 
 ## 第一性原理
 
@@ -228,11 +241,19 @@
 - 201 解释同 host 怎么 settle
 - 202 解释本地用户一旦选择 persist，这个 settle 还会牵出哪几层写面
 
-## 第六层：这页不是 197，也不是 20，更不是 `00-阅读路径.md` 的复制
+## 第六层：这页只处理 permission tail 子系统内的后继分叉，不回退到 ingress 链、用户目标层或阅读入口层
 
-这里还要再防三个结构误判。
+这里真正要防的，不只是“它不是谁”，
 
-### 不是 197
+而是别把不同位阶的问题重新拉回同一个前门。
+
+203 已经默认读者知道自己位于 permission tail 子系统里，
+
+它只负责固定 verdict ledger 之后的四条后继线。
+
+所以这页不回退到下面三种更上层的问题。
+
+### 不回退到 197
 
 197 的主语是：
 
@@ -242,7 +263,15 @@
 
 - `196` 之后 permission tail 如何继续分叉
 
-### 不是 20
+所以 197 解释的是：
+
+- 为什么要按 ingress 六层链条走进 `196`
+
+203 解释的则是：
+
+- 进到 `196` 之后，哪四种后继问题绝不能重新压扁
+
+### 不回退到 20
 
 20 的主语是：
 
@@ -254,7 +283,15 @@
 
 - 一个局部子系统里，verdict ledger 之后怎么继续往下分裂
 
-### 不是 `00-阅读路径.md`
+所以 20 负责的是：
+
+- continuation / host control / ingress input / permission verdict 的用户目标分工
+
+203 负责的是：
+
+- permission tail 内部的后继分叉骨架
+
+### 不回退到 `00-阅读路径.md`
 
 `00-阅读路径.md` 回答的是：
 
@@ -271,19 +308,36 @@
 
 不是入口清单。
 
-## 第七层：稳定 / 条件 / 灰度保护
+## 第七层：稳定阅读骨架 / 条件公开 / 内部证据层
+
+这里的“稳定”只指：
+
+- `196 -> 198 / 199 / 201 / 202` 这张 permission tail 分叉骨架已经收稳
+
+不指：
+
+- `pendingPermissionHandlers`、`cancelRequest(...)`、`recheckPermission(...)`、`hostPattern.host`、`applyPermissionUpdate(...)` 这些局部对象已经升级成稳定公开能力
+
+真正的稳定公开能力判断，
+
+仍应回到用户入口、公开主路径与能力边界写作规范。
 
 | 类型 | 对象 |
 | --- | --- |
-| 稳定可见 | permission tail 至少稳定暴露了几种用户可观察后果：一个 prompt 可以被本地或远端收口；permission mode 变化后队列里的 ask 可能被重判；同 host 的 sandbox network 请求会成组 settle；用户选择 persist 后，当前上下文与 live sandbox 会立刻吃到新规则 |
-| 条件公开 | leader-local re-evaluation、sandbox network 同 host sweep、persist-to-settings 的多层传播，都依赖当前宿主、队列位置、是否选择 persist 与 sandbox 分支，不写成所有 permission update 的默认路径 |
-| 内部/灰度层 | `pendingPermissionHandlers`、`request_id`、unsubscribe / delete 的精确顺序、`sandboxBridgeCleanupRef`、queue filter 细节、`applyPermissionUpdate(...)` / `persistPermissionUpdate(...)` / `SandboxManager.refreshConfig()` 的具体联动，都是内部账本与 cleanup 机制 |
+| 稳定阅读骨架 | 稳定的是这张分叉图的走法：`196` 先固定本地 verdict ledger；随后分出 `198` 的 request-level closeout、`199` 的 leader-local re-evaluation、`201` 的 sandbox-network host-level sibling sweep 与 `202` 的 persist write-surface propagation。 |
+| 条件公开 | 一个 prompt 最终是在本地还是远端收口、queue 中 ask 会不会因为 permission mode 变化而重判、same-host settle 会不会发生、persist 会不会继续打到 settings/runtime，都依赖当前宿主、队列位置、sandbox 分支与是否选择 persist，不写成所有 permission update 的默认路径。 |
+| 内部证据层 | `pendingPermissionHandlers`、`request_id`、unsubscribe / delete 顺序、`sandboxBridgeCleanupRef`、queue filter，以及 `applyPermissionUpdate(...)` / `persistPermissionUpdate(...)` / `SandboxManager.refreshConfig()` 的具体联动，都只是用来举证这张分叉图的内部账本与 cleanup 机制。 |
 
-更稳的落笔纪律是：
+所以这页最稳的落笔纪律必须先写：
 
-- 先写用户会观察到哪种“收口 / 重判 / 成组 settle / 立即生效”。
-- 再把 leader、sandbox、persist 这些条件写清楚。
-- 最后才把 map、cleanup ref、delete 顺序和具体 helper 名留在证据层。
+- `196` 是根页
+- `198 / 199 / 201 / 202` 是四种不同后继问题
+
+再写 queue / host / persist 的条件，
+
+最后才用 helper / ref / delete 顺序举证，
+
+不要反过来让实现名替代阅读骨架。
 
 ## 第八层：苏格拉底式自审
 
@@ -305,7 +359,7 @@
 
 ## 结论
 
-更稳的一句应该是：
+所以这页能安全落下的结论应停在：
 
 - 196 是 permission tail 的根页，因为它先定本地 verdict ledger
 - 198 只处理 request-level closeout
