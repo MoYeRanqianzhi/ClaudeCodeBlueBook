@@ -22,6 +22,9 @@
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `419`、把附录推进到 `403`、把源码剖面推进到 `270`；链路从 `stronger-request retention-enforcement-honesty-governance` 继续推进到 `stronger-request cleanup-migration-governance`，说明 stronger-request cleanup 已从“系统是否更诚实地说明自己做到哪一步”一路推进到“修完 drift 之后旧 promise world 应怎样 phased exit”这一 transition grammar 问题。
 - 本轮新的 cleanup 分层结论：`412-419` 这一段进一步把 stronger-request cleanup 压成 `retention-enforcement honesty -> isolation -> constitution -> rationale -> metadata -> runtime-conformance -> anti-drift verification -> repair -> migration` 的连续治理梯子；它们共同说明 `有时间法律`、`有执行说明`、`不误伤活对象`、`家法已分`、`制度会记住自己`、`制度已被兑现`、`制度会发现漂移`、`制度配决定如何修复` 与 `制度配决定旧世界如何过渡退出` 不是同一个 signer，也不该被任何单一结果词压扁。
 - 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=420 / appendix=403 / source-notes=270`；当前更值得继续追问的已不再是 metadata / conformance / anti-drift / repair / migration 本身，而是兼容期什么时候正式结束、哪些旧 law 何时不再算当前世界，也就是更强的 `cleanup-sunset-governance` 层。
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `425`、把附录推进到 `409`、把源码剖面推进到 `276`；链路从 `stronger-request cleanup-migration-governance` 继续推进到 `stronger-request cleanup-reactivation-governance`，说明 stronger-request cleanup 已从“旧世界怎样 phased exit”一路推进到“returned object 的新 truth 何时真正接管 active runtime world”这一 activation grammar 问题。
+- 本轮新的 cleanup 分层结论：`420-425` 这一段进一步把 stronger-request cleanup 压成 `migration -> sunset -> tombstone -> resurrection -> re-entitlement -> reconfiguration -> reactivation` 的连续治理梯子；它们共同说明 `旧世界怎样退出`、`何时正式退役`、`哪些对象只配留碑`、`谁配回来`、`回来后谁配重新拿资格`、`当前 config truth 如何重排` 与 `何时真正接管运行世界` 不是同一个 signer，也不该被任何单一“恢复了”结果词压扁。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=426 / appendix=409 / source-notes=276`；当前更值得继续追问的已不再是 sunset / tombstone / resurrection / re-entitlement / reconfiguration / reactivation 本身，而是 returned object 接管后何时才算真正 ready、stale retry line 与继续工作的预算怎样被治理，也就是更强的 `cleanup-readiness-governance` 层。
 
 ## 2026-04-08 本轮增量
 
