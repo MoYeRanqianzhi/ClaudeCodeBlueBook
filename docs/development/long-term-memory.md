@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 governance-runtime-must-name-authority-lease-and-decision-delta-apr13 live 记忆：
+  - `architecture/83` 与 `71` 现在也应直接写死：治理与省 token 的统一性，不只在 canonical chain，更在每次扩张都至少点名 `signer / scope delta / durability class / cleanup trigger`，并用 `decision delta / delta-free approvals` 而不是 approval latency 评估效率
+  - 更稳的默认写法是：authority lease 先于 UI/弹窗体感；continue gain 也不只看 token 比例，而要看这次续租有没有新增 decision delta，否则只是时间被免费烧掉
+- 当前批次继续新增一条 repair-schema-should-use-stale-writeback-not-stale-writer-apr13 live 记忆：
+  - `api/59` 现在也应直接写死：repair-surface evidence family 默认优先写 `projection / snapshot / legality witness / stale writeback`，而不是 `verdict / stale writer` 这类更像 live type 或 object writer 的命名
+  - 更稳的默认写法是：只要 worktree 仍是 `mirror absent / public-evidence only`，repair 页就先写 review schema 与 evidence family，不把 exported-type 口气偷渡进 host-facing 协议页
 - 当前批次继续新增一条 repair-pages-must-prefer-evidence-family-over-live-type-apr13 live 记忆：
   - `api/53` 与 `api/59` 现在也应直接写死：在 `mirror absent / public-evidence only` 条件下，host-facing repair 页优先写 `evidence / projection / snapshot / receipt candidate / object family / review schema`，不再把 `verdict`、field family 或 exported type 名字写成当前产品已公开签出的 live ABI
   - 更稳的默认写法是：`53` 用 `freshness evidence / rollback boundary receipt candidate`；`59` 用 `anti-zombie evidence / repair object family`；若还缺 live mirror，就先把页首 law 写明而不是靠正文自我降格

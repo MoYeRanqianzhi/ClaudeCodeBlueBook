@@ -105,8 +105,10 @@ Claude Code 当前并没有公开一份名为：
 
 ### 4.1 anti-zombie evidence
 
+这里的 `anti-zombie evidence` 也只指 repair-surface evidence family，不指当前产品已公开签出的 exported type；更稳的 host-facing 读法是 projection、snapshot 与 legality witness 的组合，而不是单个 `verdict` 字段。
+
 1. `anti_zombie_projection`
-2. `stale_writer_evidence`
+2. `stale_writeback_evidence`
 3. `duplicate_or_orphan_control_state`
 4. `transition_legality_snapshot`
 5. `degraded_path`
@@ -137,7 +139,7 @@ Claude Code 当前并没有公开一份名为：
 3. `writeback_not_authoritative`
 4. `anti_zombie_not_evidenced`
 5. `reconnect_as_rollback`
-6. `stale_writer_unblocked`
+6. `stale_writeback_unblocked`
 7. `boundary_reset_missing`
 8. `telemetry_only_health`
 
