@@ -47,18 +47,19 @@ evidence mode:
 rung:
 verdict:
 downgrade stamp:
+unresolved-authority note:
 retreat:
 ```
 
-这五项不代替 `102` 的 promotion gate；它们只是在 owner README 层把 handoff 压成 later maintainer 一眼可见的最小摘要。若 reader 还要翻两段 prose 才看出对象现在只是 `provisional claim`，还是已经 `promotion-passed`，对象 landing 就还太依赖作者解释。
+这六项不代替 `102` 的 promotion gate；它们只是在 owner README 层把 handoff 压成 later maintainer 一眼可见的最小摘要。若 reader 还要翻两段 prose 才看出对象现在只是 `provisional claim`，还是已经 `promotion-passed`，或还得自己猜 unresolved authority 到底卡在哪，对象 landing 就还太依赖作者解释。
 
 真正的对象摘要仍至少写成下面七栏：
 
 | surface | protected invariant | writer claim plane / writer truth plane after promotion | writeback seam | stale-writer risk | local veto cue | first retreat layer |
-|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 | `<surface>` | `<what it protects>` | `<who claims write now / who may write after promotion>` | `<where current truth is committed>` | `<which stale write most threatens this surface>` | `<what should trigger a local veto>` | `<where the fallback lands first>` |
 
-这七栏只做对象摘要，不复写 `102` 的 promotion 规则本体；但 handoff 所需的 `evidence mode / rung / verdict / downgrade stamp / retreat` 必须显式可见。若对象仍未 promotion，就把第三栏明确写成 `writer claim state`，把 `verdict` 明写成 `provisional claim`，并把 `downgrade stamp` 与 `unresolved-authority note` 一起落页，而不是预填 landed writer truth。更稳一点说，claim-state 不应只躲在表外 prose；如果 later consumer 还要靠旁注才看出对象尚未 promotion，这张 card 仍会被误读成 object truth。若 `surface` 本身是 operator artifact，也同样必须写清 `writer claim plane`、`local veto cue` 与 `first retreat layer`，否则 later maintainer 拿到的仍只是阅读体感，而不是正式反对路径；答不出退回层的 seam 也还不配被叫作可继承的 `next-refactor entry`。更硬一点说，`first retreat layer` 默认应指向最近的 `fail-closed seam`，也就是 first no 之后先把错误 writer 降回 `no-authority / no-write` 的那一层，而不是下一步修复计划。
+这七栏只做对象摘要，不复写 `102` 的 promotion 规则本体；但 handoff 所需的 `evidence mode / rung / verdict / downgrade stamp / unresolved-authority note / retreat` 必须显式可见。若对象仍未 promotion，就把第三栏明确写成 `writer claim state`，把 `verdict` 明写成 `provisional claim`，并把 `downgrade stamp` 与 `unresolved-authority note` 一起落页，而不是预填 landed writer truth。更稳一点说，claim-state 不应只躲在表外 prose；如果 later consumer 还要靠旁注才看出对象尚未 promotion，这张 card 仍会被误读成 object truth。若 `surface` 本身是 operator artifact，也同样必须写清 `writer claim plane`、`local veto cue` 与 `first retreat layer`，否则 later maintainer 拿到的仍只是阅读体感，而不是正式反对路径；答不出退回层的 seam 也还不配被叫作可继承的 `next-refactor entry`。更硬一点说，`first retreat layer` 默认应指向最近的 `fail-closed seam`，也就是 first no 之后先把错误 writer 降回 `no-authority / no-write` 的那一层，而不是下一步修复计划。
 
 如果把这张 card 再压成和 `87` 的最短对照，也只剩三条绑定：
 
