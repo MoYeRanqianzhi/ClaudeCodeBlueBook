@@ -3,6 +3,7 @@
 ## 2026-04-13 本轮增量
 
 - 本轮新的安全目录同步结论：已把 stronger-request cleanup 最新一段并入主线索引，当前计数同步到 `security=451 / appendix=434 / source-notes=301`，对应范围分别为 `00-450 / 01-434 / 01-301`；这次并入只吸收可长期复用的目录与研究结论，不把 worktree 局部同步噪音带回主分支日志。
+- 本轮新的 `87` deeper-tail 结论：我并行复核了 `81 / 85 / 86 / 87` 的更深尾段后，只对 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 落了正文修改。`87` 现在把 section 7 里的 route/gate/checklist 语气再收薄一层：可交接的 why-proof 不再显式指挥 later maintainer “去哪个 owner / 哪个 seam owner”，future-maintainer rejectability 也不再借 `operator artifacts / effect ceiling / local veto cue` 长成 review gate，而是更纯粹地停在 why-proof 与最低 change-control 标准。当前判断是，这一步能继续减少 `87` section 7 被 later consumer 误读成 compact review gate 或 route bridge 的概率。
 
 - 本轮新的 cleanup 尾链结论：安全链已从 `cleanup-audit-close-governance` 继续推进到 `cleanup-repair-governance`，最新十段顺序现稳定为 `irreversible erasure -> retention -> retention-enforcement honesty -> isolation -> constitution -> rationale -> metadata -> runtime-conformance -> anti-drift verification -> repair`；它们共同说明“制度允许删除”“制度允许保留”“制度诚实说明自己做到了什么”“制度不会误伤活对象”“制度知道哪些 family 活在哪套家法里”“制度解释这些家法为什么成立”“制度把理由登记成可传播的自我记忆”“制度在运行时真的兑现这些记忆”“制度会在未来继续抓漂移并阻止旧 truth 沉默失效”与“制度会决定由哪一层付费、以什么范围把 drift 拉回正确状态”不是同一个 signer。
 

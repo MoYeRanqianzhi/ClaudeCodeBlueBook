@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-preflight-blocked-by-unmerged-root-why-tail-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败；`git status --short --branch` 显示 `main...origin/main [ahead 20]`，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 仍处于 `UU`
+  - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、更新记忆与提交
+- 当前批次继续新增一条 `87-future-maintainer-section-should-stop-at-why-proof-apr13 live` 记忆：
+  - `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 现在也应直接写死：section 7 只保留 future-maintainer rejectability 的 why-proof，不再借 `operator artifacts / effect ceiling / local veto cue / fail-closed seam` 长成 review gate 或 route bridge
+  - 更稳的默认写法是：`87` 只提醒 later maintainer 不要把 foundation/context 工件误读成 signer，并把最低标准压成“拿不到作者时仍能正式反对”；对象级 cue、退回层与 owner handoff 统一留给后续 owner 页
 - 当前批次继续新增一条 `root-preflight-blocked-by-unmerged-root-owner-batch-apr13 live` 记忆：
   - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败；`git status --short --branch` 显示 `main...origin/main`，并有多处根仓脏改动，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 处于 `UU`
   - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、更新记忆与提交
