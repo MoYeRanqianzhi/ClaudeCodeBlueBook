@@ -2,6 +2,8 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检失败结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/52` surface-first 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，但 merge 因根仓存在未解决冲突失败，错误为 `Merging is not possible because you have unmerged files.`。当前判断是，这次失败只应作为 root preflight 的外部事实记录，不触发任何根仓收敛动作；正文继续严格只在 `.worktrees/mainloop` 内推进与提交。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/52` surface-first 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
 
 - 本轮新的 `api/52` surface-first 结论：我只对 `bluebook/api/52-统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`52` 现在继续把 hidden ontology 往后压：页首不再先立 `governance key / typed ask / decision window / continuation pricing` 这套四句前门公式，而是先按 `control requests + settings / state / pending_action / usage surfaces` 说清宿主到底拿到了什么，再承认这些 nouns 只是解释词。`§1` 与 `§5.1` 也同步改成 `surface first / interpretation second`。当前判断是，这一步能把治理宿主页继续拉回 concrete host-facing claim-state，而不是在 `public-evidence only` 下先发明一组近似 landed object。

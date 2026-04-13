@@ -13,6 +13,9 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-preflight-blocked-for-api52-surface-first-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/52` surface-first 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败，报错 `Merging is not possible because you have unmerged files.`
+  - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作；正文、记忆与提交继续只落在 `.worktrees/mainloop`
 - 当前批次继续新增一条 `root-sync-healthy-for-api52-surface-first-batch-apr13 live` 记忆：
   - 2026-04-13 本轮进入 `api/52` surface-first 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`

@@ -2,6 +2,8 @@
 
 ## 2026-04-13
 
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight failure 记录：2026-04-13 本轮在进入 `api/52` surface-first 批次前，根仓 `/home/mo/m/projects/cc/analysis` 的 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因未解决冲突失败，错误为 `Merging is not possible because you have unmerged files.`；这次失败只作为外部事实记录，不在根仓做任何收敛动作。
+
 - 继续更新 `bluebook/api/52-统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 governance surface-first 协议：`api/52` 现在把页首和 `§5.1` 继续从 hidden ontology 收回 concrete public surfaces，先说 `control requests + settings / state / pending_action / usage surfaces`，再把 `governance key / externalized truth chain / typed ask / continuation pricing` 明确降格成解释词，而不是前门 ontology。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在进入 `api/52` surface-first 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
