@@ -2,6 +2,10 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/api/23-能力平面、公开度与宿主支持矩阵.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 matrix singular-label 协议：`api/23` 现在把 mixed-width 明确压回四列，结果栏只保留单一最终标签；`任务对象面` 收成 `宿主主路径`，`团队与 mailbox 面` 与 `多 Agent 面` 收成 `gate / internal`，`执行环境对象面` 收成 `产品受限`，不再在标签栏并排写 `公共主路径 + ...` 组合结果。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
+
 - 继续更新 `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 Prompt tail-residual 协议：`81` 现在把晚段 `lawful forgetting / continue qualification / explainability` 的重复 verdict 逻辑压回一套最小 schema，不再在 `pass/reject` 表、可解释失稳段、苏格拉底追问和“对 Agent 设计者的启发”里重复同一套判断。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight failure 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 仍因未解决冲突失败；`git status --short --branch` 显示 `main...origin/main [ahead 20]`，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 仍处于 `UU`；这次失败只作为外部事实记录，不在根仓做任何收敛动作。

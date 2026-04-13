@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-api23-single-label-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api23-matrix-must-keep-single-final-label-and-push-mixed-width-back-into-columns-apr13 live` 记忆：
+  - `bluebook/api/23-能力平面、公开度与宿主支持矩阵.md` 现在也应直接写死：矩阵四列负责承载 `CLI / host / gate / product` 的混合事实，结果栏只保留一个最终标签，不再把 `公共主路径 + 宿主主路径`、`公共主路径 + gate 边界`、`公共主路径 + 产品受限` 这类组合写法留在表里
+  - 更稳的默认写法是：当一行看起来像“双归属”时，先反问“混合性到底属于 existence / visibility / current admission / product promise 哪一列”，再把 mixed-width 写回列内；结果栏只负责压缩当前主承诺面，不再自造第二层 classifier
 - 当前批次继续新增一条 `root-preflight-blocked-by-unmerged-root-prompt-tail-batch-apr13 live` 记忆：
   - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 仍因根仓存在未解决冲突而失败；`git status --short --branch` 显示 `main...origin/main [ahead 20]`，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 仍处于 `UU`
   - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、更新记忆与提交

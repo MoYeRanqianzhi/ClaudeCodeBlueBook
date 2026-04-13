@@ -2,6 +2,12 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
+
+- 本轮新的 `api/23` singular-label 结论：我复核了 `bluebook/api/23-能力平面、公开度与宿主支持矩阵.md` 的矩阵 schema 后，只对这一页与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`23` 现在把“结果标签”更明确收成 `single final label`：`任务对象面` 改按 `宿主主路径` 压缩，`团队与 mailbox 面` 与 `多 Agent 面` 改按 `gate / internal` 压缩，`执行环境对象面` 改按 `产品受限` 压缩；四列继续承载 mixed-width，不再让结果栏并排摆 `公共主路径 + 宿主主路径`、`公共主路径 + gate 边界`、`公共主路径 + 产品受限`。当前判断是，这一步能把 `api/23` 更硬地固定成 matrix owner，而不是让结果栏再长成第二层 classifier。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当某一行看起来需要“双标签”时，更稳的默认问法不该是“能不能在结果栏再拼一个标签”，而应先追问“混合性到底属于 existence、implementation visibility、current admission / consumer subset 还是 product promise”；只有四列回答完后，最终标签才有资格收口。当前判断是，这个问法能把 later maintainer 从“组合命名”拉回“逐列定责”，避免矩阵页再次把局部含混包装成形式上的精确。
+
 - 本轮新的根仓预检失败结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，但 merge 仍因根仓存在未解决冲突失败。`git status --short --branch` 显示 `main...origin/main [ahead 20]`，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 仍处于 `UU`。当前判断是，这仍只应作为 root preflight 的外部事实记录，不触发任何根仓收敛动作；正文继续严格只在 `.worktrees/mainloop` 内推进与提交。
 
 - 本轮新的 `81` tail-residual 结论：我并行复核了 `81 / 85 / 87` 的更深尾段后，决定把这一批继续收成单文件正文改动：`bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 现在把晚段 `lawful forgetting / continue qualification / explainability` 的重复 verdict 逻辑压回一套最小 schema，不再在 `pass/reject` 表、可解释失稳段、苏格拉底追问和“对 Agent 设计者的启发”里重复同一套判断。当前判断是，这一步能继续减少 `81` 晚段长成 compact review course 或 why-owner 尾段复述的概率，同时又不去扰动已经基本收稳的 `85 / 87`。
