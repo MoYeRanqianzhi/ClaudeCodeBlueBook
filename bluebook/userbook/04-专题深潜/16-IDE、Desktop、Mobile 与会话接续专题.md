@@ -86,9 +86,15 @@
 
 它的公开合同非常明确：
 
-- 只在 `getIsRemoteMode()` 为真时启用
+- 只有在 remote session URL 已就绪时，才真正交付 URL / QR 这一类 viewer 接续对象
 - 未进入 remote mode 时会直接提示先用 `claude --remote`
 - 有 URL 时会尽量生成 QR code，但二维码失败并不阻断 URL 交付
+
+更稳的理解是：
+
+- `getIsRemoteMode()` 为真，说明你已经站在 remote 语境里
+- 但这不自动等于 remote session URL 一定已经可交付
+- attached viewer 一类场景也可能 remote bit 为真，但当前前端并不拥有那条可继续分享的 URL
 
 所以 `/session` 的主对象是：
 
