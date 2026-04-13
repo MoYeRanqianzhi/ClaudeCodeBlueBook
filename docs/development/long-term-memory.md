@@ -13,6 +13,9 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 source-quality-frontdoors-must-stop-at-first-test-under-public-evidence-apr13 live 记忆：
+  - `bluebook/README`、`philosophy/87` 与 `navigation/README` 现在也应直接写死：源码质量线在 `mirror absent / public-evidence only` 下，根入口只配做 `合法复杂度中心 / one writable present / later-maintainer veto` 的 first test，`87` 最强只到 why-proof / review standard，`navigation` 只处理 artifact gap，不代判 advancedness 是否成立
+  - 更稳的默认写法是：`writer / effect ceiling / first retreat layer / fail-closed seam` 在 `87` 里都只先当 next-hop noun；若还在争成熟度是否成立，就离开 route 页，回 `README -> guides/102 -> philosophy/87 或 architecture/README`
 - 当前批次继续新增一条 security-frontdoor-needs-typed-state-action-bridge-apr13 live 记忆：
   - `bluebook/security/README` 现在也应直接写死：安全前门不能只说 `signer / ledger / cleanup authority` 三类 ambiguity，还要继承 `10` 的最小 typed-state 动作桥，把 `authority lease / decision delta / cleanup trigger state` 直接压成 `reprice or suspend / do not reopen / suspend or reject / continue or reopen`
   - 更稳的默认写法是：pointer、summary、resume button、status green 最多只证明 `reopen eligibility`，绝不单独证明 `reopen authority`
