@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 promotion-gate-must-require-signer-effect-ceiling-veto-apr13 live 记忆：
+  - `guides/102`、`architecture/84` 与 `architecture/38` 现在也应直接写死：公开 artifact / operator artifact 的 promotion gate 不只看 `signer` 与 `local veto cue`，还必须同时点名 `effect ceiling`；`runtime-core evidence` 与 `operator-governance evidence` 也只构成交叉 evidence family，不额外升格成新 rung 或更高 signer class
+  - 更稳的默认写法是：atlas 只收 promotion-passed objects；若对象仍缺 writer promotion 所需证明，就补 `writer claim state / unresolved-authority` note，而不是让 atlas 或 evidence family 自己代行 promotion
+- 当前批次继续新增一条 governance-runtime-needs-durability-and-cleanup-trigger-apr13 live 记忆：
+  - `security/README`、`architecture/71` 与 `83` 现在也应直接写死：`approval receipt / status / host replay` 若没有新增 `decision delta`，就是 `zero-delta ask / weak readback`；结果外置必须显式写成 `durability class + cleanup trigger`，continuation gain 也必须绑定在同一条 authority lease 上
+  - 更稳的默认写法是：治理效率不是 approval latency，而是 `delta-free approvals` 更少；continuation 若只是在重复保留旧边界、旧结果与旧 readback，就应按 requalification / cleanup 处理，而不是按 progress 记账
+- 当前批次继续新增一条 prompt-witness-must-be-admissible-not-reminding-apr13 live 记忆：
+  - `architecture/82`、`guides/39`、`philosophy/84` 与 `userbook/01/02` 现在也应直接写死：witness 的最低标准不是“能帮人回忆”，而是 later consumer 不重读全文、不重建 authority / lineage 也能继续；projection 越权因此不只是混写，而是 witness forgery
+  - 更稳的默认写法是：`lawful forgetting` 先按“删掉后还会不会逼 later consumer 重开 world-definition / tool legality / next-action search”来定义可忘集合，再从这条法推出 `current work / next-step guard / rollback boundary / qualification` 等最小 witness；摘要、标题、最后一条消息最多只算 reminder
 - 当前批次继续新增一条 governance-runtime-must-name-authority-lease-and-decision-delta-apr13 live 记忆：
   - `architecture/83` 与 `71` 现在也应直接写死：治理与省 token 的统一性，不只在 canonical chain，更在每次扩张都至少点名 `signer / scope delta / durability class / cleanup trigger`，并用 `decision delta / delta-free approvals` 而不是 approval latency 评估效率
   - 更稳的默认写法是：authority lease 先于 UI/弹窗体感；continue gain 也不只看 token 比例，而要看这次续租有没有新增 decision delta，否则只是时间被免费烧掉

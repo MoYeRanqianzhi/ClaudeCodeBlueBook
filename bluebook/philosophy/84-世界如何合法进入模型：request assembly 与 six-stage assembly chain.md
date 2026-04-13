@@ -153,6 +153,7 @@ Prompt 线也因此有自己的 `local veto`：凡是不能独立 veto 世界定
 ## 6. 对 Agent Runtime 设计者的直接启发
 
 如果你想复制 Claude Code 的这条世界准入能力，先复制“替 later consumer 预付对已排除分支的冷启动动作搜索成本”的制度结果，而不是先复制某段著名措辞。
+它显得聪明，也不是因为主循环更会猜，而是 request assembly 先替 later consumer 付掉了被排除分支的搜索成本，`lawful forgetting` 又保住了让这些分支继续被排除的 witness；一旦 witness 丢失，runtime 就会重新变回“边读边猜世界”。
 
 更具体地说，你要先保证：
 

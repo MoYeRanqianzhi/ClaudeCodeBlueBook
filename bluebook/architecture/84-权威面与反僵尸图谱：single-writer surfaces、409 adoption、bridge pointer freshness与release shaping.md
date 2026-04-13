@@ -128,9 +128,11 @@ Claude Code 的高级点，在于它不断把 current-truth surface 做显式化
 
 - 后来者知道谁能写、谁只能读
 
-这里也要再压住一条对象层准入纪律：公开 operator artifact 先只有 `surface candidate`。除非公开证据已经足够说清它的 signer、作用域与第一条 `local veto cue`，否则对象层不该替它预填 `sole writer`；`CLAUDE.md`、hooks、skills、settings 这些 surface 可以先进入 atlas，但不能因为公开可见就自动升级成 current-truth writer。
+这里也要再压住一条对象层准入纪律：公开 operator artifact 先只有 `surface candidate`。除非公开证据已经足够说清它的 `signer`、`effect ceiling` 与第一条 `local veto cue`，否则对象层不该替它预填 `sole writer`；`CLAUDE.md`、hooks、skills、settings 这些 surface 可以先进入 atlas，但不能因为公开可见就自动升级成 current-truth writer。
 
 更稳的 current-truth surface atlas 至少该能被压成下面这张表：
+
+这张 atlas 也只配收 promotion-passed objects；若某个对象仍缺 writer promotion 所需证明，就应同时补 `writer claim state / unresolved-authority` note，而不是让 atlas 本身代行 promotion。
 
 | current-truth object | sole writer | per-host width | forbidden substitute writer | freshness / eviction guard |
 |---|---|---|---|---|

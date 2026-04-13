@@ -130,9 +130,9 @@ Claude Code 当前并没有公开一份名为：
 - stale path 是否已被正式清退
 - 当前回退是否仍围绕同一个结构真相面发生
 
-## 5. reject escalation：必须共享的升级语义
+## 5. reject escalation：review-schema 的升级语义族
 
-更成熟的结构宿主修复 escalation 至少应共享下面枚举：
+更成熟的结构宿主修复 escalation，至少应把下面这组 reject reason family 写进 review-schema / handoff / CI vocabulary：
 
 1. `breadcrumb_as_authority`
 2. `resume_order_implicit`
