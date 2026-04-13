@@ -18,20 +18,10 @@
 3. `cleanup authority ambiguity`
    - 谁能收口
 
-这里还应先压住一条分流纪律：`sandboxing` 不构成第四类 ambiguity，它只是 signer 已起租后的 boundary custody；而 `async hook / weak readback / host replay` 若开始改写 allow、continue 或 cleanup 结论，应先分别退回 `ledger / cleanup authority ambiguity`，而不是另发一条安全主线。更硬一点说，`approval receipt / status / host replay` 若没有新增 `decision delta`，就只是在重复同一条 boundary decision 或同一段 lease checkpoint，因此一律按 `zero-delta ask / weak readback / receipt-grade evidence` 处理；除非它同时带来明确的 `cleanup trigger` 执行或新的 `cleanup delta`，否则既不能改写 cleanup authority，也不能倒推 signer ceiling。
-还要再分清一层：`approval receipt / status green / modal closeout` 这类 readback surface 即使带着“已允许”措辞，也最多证明 ledger 上记过一次 verdict，不证明 signer ceiling 合法；若团队开始拿 receipt 反推“谁配批准”，应先按 `signer ambiguity` 处理。
-更硬一点说，任何 surface 只有在新增 signer 证据、boundary delta 或 cleanup delta 时，才配从安全 readback 升级成治理事实；否则就只配留在 receipt-grade。
+这里还应先压住一条分流纪律：`sandboxing` 不构成第四类 ambiguity，它只是 signer 已起租后的 boundary custody；而 `async hook / weak readback / host replay` 若开始改写 allow、continue 或 cleanup 结论，应先分别退回 `ledger / cleanup authority ambiguity`，而不是另发一条安全主线。
+更硬一点说，`approval receipt / status / host replay` 若没有新增 `decision delta`，就只是在重复同一条 boundary decision 或同一段 lease checkpoint，因此一律按 `zero-delta ask / weak readback / receipt-grade evidence` 处理；除非它同时带来新的 signer 证据、boundary delta 或 cleanup delta，否则既不能改写 cleanup authority，也不能倒推 signer ceiling。
+还要再分清一层：`approval receipt / status green / modal closeout` 这类 readback surface 即使带着“已允许”措辞，也最多证明 ledger 上记过一次 verdict，不证明 signer ceiling 合法；pointer、summary、resume button 与 status green 这类 surface 最多也只证明 `reopen eligibility`，绝不单独证明 `reopen authority`。
 同理，安全效率也不是 approval 更快，而是 delta-free approvals 更少；若批准更快却没有减少零增量 ask，治理仍在为同一条 boundary decision 重复付费。
-如果继续把 `10` 的 typed-state 读法压到安全前门，也只先保留下面这张动作桥表：
-
-| typed-state signal | 更稳的安全读法 | 默认动作 |
-|---|---|---|
-| `authority lease = changed / unknown` | signer chain 已经断开或未证成 | `reprice or suspend`，不默认继续 |
-| `decision delta = zero` 且其余字段仍正向 | 这里只有 checkpoint，没有新 authority | `do not reopen`；保留 receipt-grade projection，但不重签旧判断 |
-| `cleanup trigger state = owed / failed / unknown` | cleanup authority 仍未结清 | `suspend or reject`；先收口，再谈继续 |
-| 三格都正向，且新增 delta 已写回 | signer、ledger 与 cleanup authority 暂时一致 | `continue / reopen`，但只开放新增 delta 真正触及的那部分动作空间 |
-
-更硬一点说，pointer、summary、resume button、status green 这类 surface 最多只证明 `reopen eligibility`，绝不单独证明 `reopen authority`；能重新找到入口，不等于仍有权沿旧 authority 继续写现在。
 
 如果一条安全判断还压不回这三类 ambiguity，它就还停在规则堆或工具堆层；如果已经开始重发治理 stage names，这页就又在代签 `10`。
 
@@ -39,7 +29,7 @@
 
 - 当你已经定位到最早 `unpaid expansion`，但 signer、ledger 与 cleanup 责任还没落到具体对象上。
 - 当弱层开始替 signer 说话、结果词开始冒充治理事实，或 cleanup 之后谁还配负责开始失真。
-- 若问题已经进入 `reprice / suspend / reject / do-not-reopen / continue` 的动作分叉，本页不代判，统一回 `10` 的 typed-state 动作表；安全首页只负责 signer / ledger / cleanup authority。
+- 若问题已经进入 `reprice / suspend / reject / do-not-reopen / continue` 的动作分叉，本页不代判，统一回 `10`；安全首页只负责 signer / ledger / cleanup authority。
 - 若问题已经不在判 signer / ledger / cleanup authority，而是在判 cleanup 之后还剩什么承诺、reopen 资格或 receipt 绑定，统一离场到 `risk/README`。
 
 ## 维护约定

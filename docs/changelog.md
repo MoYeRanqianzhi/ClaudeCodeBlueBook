@@ -2,6 +2,10 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/{philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md,philosophy/81-请求编译链：可缓存、可转写、可继续.md,10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面.md,security/README.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 owner-page boundary 协议：`84` 现在只固定 Prompt why、owner law 与 verdict box，不再自己带字段级 worked example；`81` 现在开门就展开 canonical witness chain，不再先罗列更像前门压缩路由的 noun inventory；`10` 现在只保留治理四问、三格 typed-state 与 `reject trio`，不再自己发布 tail-action matrix；`security/README` 也同步退回 `signer / verdict ledger / cleanup authority` 三类 ambiguity，不再自己带 typed-state bridge。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
+
 - 继续更新 `bluebook/{README.md,03-设计哲学.md,06-第一性原理与苏格拉底反思.md,philosophy/README.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 high-traffic why/frontdoor 协议：根 `README` 现在把源码质量线更明确收回 typing，不再在入口内浓缩 mini-doctrine；`03` 现在只解释制度 why，不再顺手补 owner shorthand；`06` 现在只追问有没有把 projection、目录观感或作者体感误读成正式拒收能力，不再自己复述 compact doctrine；`philosophy/README` 则把 owner table 收回成最小 owner 索引。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。

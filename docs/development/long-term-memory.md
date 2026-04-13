@@ -13,6 +13,21 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-owner-page-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `84-should-own-verdict-box-not-builder-worked-example-apr13 live` 记忆：
+  - `bluebook/philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md` 现在也应直接写死：`84` 只固定 Prompt why、owner law 与 verdict box，不再自己带 `carrier-only / witness-rebind` 的字段级 worked example
+  - 更稳的默认写法是：`84` 只说明 `carrier-only -> provisional`、`witness-rebind -> pass`、carrier 越权 -> `reject`；字段级 builder-facing case 一律离场给 `81`
+- 当前批次继续新增一条 `81-should-open-with-canonical-object-chain-not-route-noun-inventory-apr13 live` 记忆：
+  - `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 现在也应直接写死：mechanism owner 页顶部直接展开 canonical witness chain，不再先罗列 `Authority / Boundary / Transcript / Lineage / Continuation / Explainability` 这类更像前门压缩路由的 noun inventory
+  - 更稳的默认写法是：`81` 开门就声明 `84` 管 why 与 verdict box，本页只管 `message_lineage_ref -> ... -> continue_qualification_verdict`
+- 当前批次继续新增一条 `10-should-own-governance-first-answer-without-tail-action-matrix-apr13 live` 记忆：
+  - `bluebook/10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面.md` 现在也应直接写死：治理入口卡只保留四问诊断、三格 typed-state 与 `reject trio`，不再自己发布 `reprice / suspend / reject / continue` 动作矩阵
+  - 更稳的默认写法是：`10` 只写明“非正向值不得自己改价，必须回 `repricing seam`”；更细动作分叉统一留给后续 owner / execution 页
+- 当前批次继续新增一条 `security-readme-should-own-three-ambiguities-not-typed-state-bridge-apr13 live` 记忆：
+  - `bluebook/security/README.md` 现在也应直接写死：安全首页只处理 `signer / verdict ledger / cleanup authority` 三类 ambiguity，不再自己带 `typed-state` 动作桥表
+  - 更稳的默认写法是：`security` 只说明 readback surface 不能倒推 signer truth 或 `reopen authority`；若问题已进入 `reprice / suspend / continue / do-not-reopen`，统一回 `10`
 - 当前批次继续新增一条 `root-sync-healthy-for-high-traffic-why-batch-apr13 live` 记忆：
   - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
