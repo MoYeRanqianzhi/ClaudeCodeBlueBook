@@ -19,6 +19,8 @@
 
 源码不是这么设计的。
 
+本页只抓 headless print 如何在默认 text/json 收口里以 `lastMessage` 保持 terminal cursor、以 `result` 决定 final payload 与 exit semantics，并说明这套 terminal contract 不等于“最后一个 raw stream frame”；`session_state_changed('idle')`、late `task_notification` 与条件启用的 `prompt_suggestion` 仅作 settled / tail / terminal-inert 的边界参照，`outputFormat` switch 与 `gracefulShutdownSync` 仅作收口证据，不把它们写成同一类稳定公开对象。
+
 ## 第一性原理
 
 更稳的提问不是：

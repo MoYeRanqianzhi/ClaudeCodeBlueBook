@@ -38,6 +38,8 @@
 
 - 为什么 100-104 不是并列细页，而是先从 summary 分家，再分叉到终态收口与恢复合同
 
+本页不重讲 100-104 各页各自的页内证明，也不把 `lastMessage`、`lastEmitted`、`pendingLastEmittedEntry`、`externalMetadataToAppState(...)` 这些 helper / ledger 名重新升级成新的主角；这里只整理一张跨页拓扑图：100 先定 summary contract split，`101→102→104` 形成终态收口主干，103 单独构成 observer-restore 侧枝，并顺手把稳定用户合同、条件性可见合同与灰度实现证据分层。换句话说，这里要裁定的是“哪些页是什么关系、哪些判断属于哪一层合同”，不是再把 leaf-level 的局部 gray inference 写成整个分叉树的统一运行时结论。
+
 ## 第一性原理
 
 更稳的提问不是：

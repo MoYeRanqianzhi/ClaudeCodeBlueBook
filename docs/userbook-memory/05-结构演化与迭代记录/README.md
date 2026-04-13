@@ -100,6 +100,15 @@
 - [364-2026-04-13-task-result return-path vs continuity-source echo 拆分记忆.md](./364-2026-04-13-task-result%20return-path%20vs%20continuity-source%20echo%20拆分记忆.md)
 - [365-2026-04-13-headless-print chain backbone clarification 拆分记忆.md](./365-2026-04-13-headless-print%20chain%20backbone%20clarification%20拆分记忆.md)
 - [366-2026-04-13-semantic-last-result vs delivery-accounting echo 拆分记忆.md](./366-2026-04-13-semantic-last-result%20vs%20delivery-accounting%20echo%20拆分记忆.md)
+- [367-2026-04-13-suggestion delivery-accounting scope clarification 拆分记忆.md](./367-2026-04-13-suggestion%20delivery-accounting%20scope%20clarification%20拆分记忆.md)
+- [368-2026-04-13-summary-contract split scope clarification 拆分记忆.md](./368-2026-04-13-summary-contract%20split%20scope%20clarification%20拆分记忆.md)
+- [369-2026-04-13-terminal-cursor vs raw-tail scope clarification 拆分记忆.md](./369-2026-04-13-terminal-cursor%20vs%20raw-tail%20scope%20clarification%20拆分记忆.md)
+- [370-2026-04-13-delivered-ledger vs settlement-gate scope clarification 拆分记忆.md](./370-2026-04-13-delivered-ledger%20vs%20settlement-gate%20scope%20clarification%20拆分记忆.md)
+- [371-2026-04-13-staging-inertness scope clarification 拆分记忆.md](./371-2026-04-13-staging-inertness%20scope%20clarification%20拆分记忆.md)
+- [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md)
+- [373-2026-04-13-branch-map scope clarification 拆分记忆.md](./373-2026-04-13-branch-map%20scope%20clarification%20拆分记忆.md)
+- [374-2026-04-13-wire-visibility branch-map scope clarification 拆分记忆.md](./374-2026-04-13-wire-visibility%20branch-map%20scope%20clarification%20拆分记忆.md)
+- [375-2026-04-13-builder-callback-ui branch-map scope clarification 拆分记忆.md](./375-2026-04-13-builder-callback-ui%20branch-map%20scope%20clarification%20拆分记忆.md)
 
 ## 全量档案
 
