@@ -8,6 +8,24 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 usage-bridge-must-inherit-latest-prompt-test live 记忆：
+  - `02` 现在也应直接继承 `84 / 81 / 15 / 41 / bluebook/README` 已写死的 Prompt 首句：usage bridge 不再用 `message lineage` 当 bridge front door，而是直接问 later consumer 在 `tool choice / resume / handoff / compaction` 后是否还要重判继续资格、是否还会把已排除路径拉回候选集
+  - 更稳的默认写法是：`02` 只做 usage bridge，不重发 owner 对象链；但只要桥接首句仍停在旧版 `message lineage -> protocol transcript -> stable bytes` 压缩链，later consumer 就会在高流量桥接页重新学到上一版 Prompt 前门
+- 当前批次继续新增一条 root-sync-healthy-clean-again live 记忆：
+  - 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，`git status --short --branch` 当前仍为干净的 `main...origin/main`
+  - 更稳的默认写法是：根仓若健康且干净，只把预检结果记为外部事实；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 entry-pages-need-symmetric-governance-and-source-quality-tests live 记忆：
+  - `bluebook/README / philosophy/README` 现在应直接让三条母线在高流量入口页更对称：Prompt 线已有“已排除路径回流候选集”的首拒句，且入口页也应补齐 `tool choice / compaction` 这层继续资格测试；治理线则至少要露出“最早 unpaid expansion + repricing proof / lease checkpoint / cleanup + 风险提前收费 + 自动化可撤销”，源码质量线至少要露出“合法复杂度中心 + one writable present + later-maintainer veto”
+  - 更稳的默认写法是：入口页只补 first test，不扩成 second-hop inventory；`87` 在入口页也要有正面判据，而不只剩“不能退回目录观感”这类负面口号，治理线也不应只剩“扩张如何被定价”这类薄摘要，否则 Prompt 仍会看起来像唯一“有判据”的母线
+- 当前批次继续新增一条 root-sync-healthy-clean live 记忆：
+  - 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，`git status --short --branch` 当前为干净的 `main...origin/main`
+  - 更稳的默认写法是：根仓若健康且干净，只把预检结果记为外部事实；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 entry-readmes-must-inherit-branch-reopen test live 记忆：
+  - `bluebook/README / philosophy/README` 现在也应直接继承 `84 / 15 / 41 / 03` 已写死的 Prompt 首问：later consumer 不只是不该重答世界定义、边界与继续资格，也不该把原本已排除的路径重新拉回候选集
+  - 更稳的默认写法是：高流量入口页只保留这句 first test，不自行扩成 Prompt owner 清单；若入口页还停在旧版“重谈世界”表述，就会把更早的 first reject 重新藏回抽象叙事
+- 当前批次继续新增一条 root-preflight-blocked-by-unmerged-root-ahead-2 live 记忆：
+  - 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败；`git status --short --branch` 同时显示 `main...origin/main [ahead 2]`
+  - 更稳的默认写法是：把这类根仓状态只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、提交与更新记忆
 - 当前批次继续新增一条 high-traffic-pages-must-inherit-branch-reopen wording live 记忆：
   - `03 / 41 / 81` 现在应直接继承 `84 / 06 / 15` 已写死的 Prompt 主句：Prompt 线值钱的不是“世界重判税”或 `message lineage` 这个前门词，而是 later consumer 不必把已排除路径重新拉回候选集，重开一轮冷启动动作搜索
   - 更稳的默认写法是：`84` 定锚 owner 主句，`81` 只展开机制对象，`03` 只做设计内涵压缩，`41` 只保留 why 问句与 first-reject 提示；高流量页若还沿用旧版抽象词，就继续把 later consumer 引回“重谈世界”而不是“排除分支回流”的更早反证

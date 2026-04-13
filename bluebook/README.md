@@ -6,7 +6,7 @@
 - 扩张如何被定价
 - 当前如何不被过去写坏
 
-第一次进入先在本页定题：Prompt 线先问 later consumer 在 `verify / delegate / resume / handoff` 时是否还要重答“谁定义世界、边界在哪、工具还能不能用”；治理线先问最早 `unpaid expansion` 是什么；当前真相保护线先问当前为何不被过去写坏。定清这三个第一问题后，根入口只做一次首跳：Prompt 去 `philosophy/84`，治理去 [10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，当前真相保护去 `guides/102`。根入口不再提前列 second-hop artifact 或归属目录。
+第一次进入先在本页定题：Prompt 线先问 later consumer 在 `verify / delegate / tool choice / resume / handoff` 时是否还要重答“谁定义世界、边界在哪、工具还能不能用”，以及 `resume / handoff / compaction` 后哪些 transcript / lineage 仍绑定继续资格，甚至把原本已排除的路径重新拉回候选集重判；治理线先问最早 `unpaid expansion` 是什么、继续前有没有补齐 `repricing proof / lease checkpoint / cleanup`、检查顺序是否已把风险提前收费、自动化是否仍可撤销；当前真相保护线先问当前为何不被过去写坏，若继续追源码质量 why，再问复杂度是否落在合法中心、现在是否仍只有一个可写现在、later maintainer 是否仍保有正式 veto。定清这三个第一问题后，根入口只做一次首跳：Prompt 去 `philosophy/84`，治理去 [10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，当前真相保护去 `guides/102`。根入口不再提前列 second-hop artifact 或归属目录。
 当前真相保护线也只先判证据 ceiling 与 current-truth 入口：`102` 先回答公开证据够不够支撑当前真相主张；若问题已经不在首跳，而是在分辨 why、object 或 verdict，再由对应归属页继续接手。
 
 证据上限也先记一句：凡涉及路径级源码 certainty 的判断，首跳一律先去 `guides/102`；根入口不在这里继续判断证据状态。
@@ -45,7 +45,7 @@
 ## 根入口只做三件事
 
 1. 先定题，不先列 artifact 名。
-   - 先判断自己究竟在问请求装配、扩张定价，还是当前真相保护；再判断自己卡住的是“接手者还要重答世界/边界/工具资格”“扩张还没完成 repricing / cleanup”，还是“当前真相还没被显式保护”。
+   - 先判断自己究竟在问请求装配、扩张定价，还是当前真相保护；再判断自己卡住的是“接手者还要重答世界/边界/工具资格”“最早 `unpaid expansion` 还没补齐 `repricing proof / lease checkpoint / cleanup`，或当前只剩尾链回单、没有新增决策增益”，还是“当前真相还没被显式保护”。
 2. 先给第一跳，不先摊 deep chain。
    - 根页只给 `84 / 10 / 102` 三个首跳；治理与当前真相保护线的后续 syllabus 一律交给目标页。
 3. 先判是否要跨目录，最后才进入 route map。
