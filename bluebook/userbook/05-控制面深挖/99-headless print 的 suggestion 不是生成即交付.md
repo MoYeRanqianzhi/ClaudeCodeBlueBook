@@ -19,6 +19,8 @@
 
 源码不是这样设计的。
 
+本页不重新裁定 98 页已钉住的 `semantic last-message` 主位；这里只拆 suggestion 何时从 generated / pending 升格为 delivered，以及何时才有资格进入 acceptance tracking。`heldBackResult`、新命令与 prompt 分支在这里改写的是 suggestion 的交付顺序与 tracking 准入时机，不改写 result 的主结果语义。
+
 ## 第一性原理
 
 更稳的提问不是：
