@@ -25,6 +25,8 @@
 - 如果你只先判断“验证现在已闭环还是仍属轶事”，看 [77-请求装配控制面验证手册：message lineage、projection consumer、continuation object与cache-safe fork回归](77-%E8%AF%B7%E6%B1%82%E8%A3%85%E9%85%8D%E6%8E%A7%E5%88%B6%E9%9D%A2%E9%AA%8C%E8%AF%81%E6%89%8B%E5%86%8C%EF%BC%9Aauthority%20chain%E3%80%81protocol%20transcript%E3%80%81continuation%20object%E4%B8%8Ecache-safe%20fork%E5%9B%9E%E5%BD%92.md)、[78-当前世界准入主权验证手册：governance key、externalized truth chain、typed ask、decision window、continuation pricing与durable-transient cleanup回归](78-%E5%BD%93%E5%89%8D%E4%B8%96%E7%95%8C%E5%87%86%E5%85%A5%E4%B8%BB%E6%9D%83%E9%AA%8C%E8%AF%81%E6%89%8B%E5%86%8C%EF%BC%9Atrusted%20inputs%E3%80%81typed%20ask%E3%80%81%E6%9C%80%E5%B0%8F%E5%8F%AF%E8%A7%81%E9%9D%A2%E4%B8%8Econtinuation%20gate%E5%9B%9E%E5%BD%92.md)、[79-one writable present验证手册：current-truth surface、freshness gate、stale worldview与ghost capability回归](79-one%20writable%20present%E9%AA%8C%E8%AF%81%E6%89%8B%E5%86%8C%EF%BC%9Asingle-writer%20authority%E3%80%81recovery%20asset%E4%B8%8Eanti-zombie%E5%9B%9E%E5%BD%92.md)。
   - 失败信号：还在用“跑过一遍 / 看起来稳定 / 体感恢复正常”代替回归证据，或还说不清当前 drift 对应哪一种 verdict。
 
+若你还在问 `product promise readback / reopen eligibility readback / evidence receipt binding` 的样貌，而不是已经要下 `execution verdict / rollback / reopen`，本页也不开始；那仍是 `risk/` 的 speaking right。
+
 ## 这里不回答什么
 
 - 本目录不负责解释第一性原理，也不负责展开失败样本库。

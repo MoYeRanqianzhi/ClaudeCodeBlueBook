@@ -15,11 +15,10 @@
 
 - 这不是第二套安全故事，而是同一条 `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup` 收费链在安全目录里的机制翻译。
 
-这里还应先压住一条分流纪律：`sandboxing` 不构成第四类 ambiguity，它只是 signer 已起租后的 boundary custody；而 `async hook / weak readback / host replay` 若开始改写 allow、continue 或 cleanup 结论，应先分别退回 `ledger / cleanup authority ambiguity`，而不是另发一条安全主线。更硬一点说，`approval receipt / status / host replay` 若没有新增 `decision delta`，就只是在重复同一条 boundary decision 或同一段 lease checkpoint，因此一律按 `zero-delta ask / weak readback / receipt-grade evidence` 处理；除非它同时带来明确的 `cleanup trigger` 执行或新的 `cleanup delta`，否则既不能改写 cleanup authority，也不能倒推 signer ceiling。
-还要再分清一层：`approval receipt / status green / modal closeout` 这类 readback surface 即使带着“已允许”措辞，也最多证明 ledger 上记过一次 verdict，不证明 signer ceiling 合法；若团队开始拿 receipt 反推“谁配批准”，应先按 `signer ambiguity` 处理。
-更硬一点说，任何 surface 只有在新增 signer 证据、boundary delta 或 cleanup delta 时，才配从安全 readback 升级成治理事实；否则就只配留在 receipt-grade。
+这里还应先压住一条分流纪律：`sandboxing` 不构成第四类 ambiguity，它只是 signer 已起租后的 boundary custody；而 `async hook / weak readback / host replay` 若开始改写 allow、continue 或 cleanup 结论，应先分别退回 `ledger / cleanup authority ambiguity`，而不是另发一条安全主线。
+更硬一点说，`approval receipt / status / host replay` 若没有新增 `decision delta`，就只是在重复同一条 boundary decision 或同一段 lease checkpoint，因此一律按 `zero-delta ask / weak readback / receipt-grade evidence` 处理；除非它同时带来新的 signer 证据、boundary delta 或 cleanup delta，否则既不能改写 cleanup authority，也不能倒推 signer ceiling。
+还要再分清一层：`approval receipt / status green / modal closeout` 这类 readback surface 即使带着“已允许”措辞，也最多证明 ledger 上记过一次 verdict，不证明 signer ceiling 合法；pointer、summary、resume button 与 status green 这类 surface 最多也只证明 `reopen eligibility`，绝不单独证明 `reopen authority`。
 同理，安全效率也不是 approval 更快，而是 delta-free approvals 更少；若批准更快却没有减少零增量 ask，治理仍在为同一条 boundary decision 重复付费。
-
 如果你只缺治理收费链的一屏速记，而不是安全侧机制翻译，先回 [../10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；`security/` 只保留 signer / ledger / cleanup authority 的安全侧翻译。
 
 这里还应再多记一句：
@@ -101,6 +100,7 @@
 - 当你需要把 user-facing 的 runtime readback consumer 与 continuation consumer 退回它们各自只配消费的治理阶段，而不是再让 projection 词或 consumer 词冒充治理主语。
 - 当你需要判断哪个对象只是弱读回面、哪个对象仍保留 signer authority，以及 cleanup 之后谁还配留下 reopen liability。
 - 若问题已经进入 `reprice / suspend / reject / do-not-reopen / continue` 的动作分叉，本页不代判，统一回 `10` 的 typed-state 动作表；安全首页只负责 signer / ledger / cleanup authority。
+- 若问题已经不在判 signer / ledger / cleanup authority，而是在判 cleanup 之后还剩什么承诺、reopen 资格或 receipt 绑定，统一离场到 `risk/README`。
 
 ## 如果你只先判断一件事
 

@@ -13,6 +13,87 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-why-owner-residual-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `81-should-keep-one-canonical-witness-schema-apr13 live` 记忆：
+  - `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 现在也应直接写死：builder-facing mechanism 页不再并列保留 signer/carrier 表、handoff package 表、lawful forgetting ABI 表与 pass/reject 表这四组近似矩阵
+  - 更稳的默认写法是：`81` 只保留一条 canonical witness chain，加一套最必要的 builder-facing schema；其余 worked example 与 verdict 规则不得重复叠表
+- 当前批次继续新增一条 `85-should-state-single-pricing-law-without-tail-chain-species-list-apr13 live` 记忆：
+  - `bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md` 现在也应直接写死：why owner 页可以固定 `single pricing order / single repricing furnace`，但不再展开长串 `weak readback / host replay / reopen eligibility / cleanup receipt / auto mode / settings` species list
+  - 更稳的默认写法是：`85` 只说安全阻止危险扩张免费续租，省 token 阻止昂贵扩张免费续租；任何尾链越权统一回 `repricing seam`
+- 当前批次继续新增一条 `86-should-answer-one-writable-present-not-reissue-ladder-apr13 live` 记忆：
+  - `bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md` 现在也应直接写死：`86` 只回答为什么必须先守住 `one writable present`，不再在 why 页重发 `contract -> registry -> claim-state -> consumer subset -> hotspot kernel` 这类外层 ladder
+  - 更稳的默认写法是：外层顺序统一回 `guides/102` 与 `architecture/README`，`86` 只消费那条顺序最终交到这里的 why 问题
+- 当前批次继续新增一条 `87-should-use-overread-standard-not-compact-gate-table-apr13 live` 记忆：
+  - `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 现在也应直接写死：`layout praise / provisional why / object-check ready` 更适合作为 prose review standard，而不是一张过于紧凑的 compact gate 表
+  - 更稳的默认写法是：`87` 只阻止 later consumer overread，不用表格暗示 why owner 正在代行第二张 gate
+- 当前批次继续新增一条 `root-sync-healthy-for-owner-page-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `84-should-own-verdict-box-not-builder-worked-example-apr13 live` 记忆：
+  - `bluebook/philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md` 现在也应直接写死：`84` 只固定 Prompt why、owner law 与 verdict box，不再自己带 `carrier-only / witness-rebind` 的字段级 worked example
+  - 更稳的默认写法是：`84` 只说明 `carrier-only -> provisional`、`witness-rebind -> pass`、carrier 越权 -> `reject`；字段级 builder-facing case 一律离场给 `81`
+- 当前批次继续新增一条 `81-should-open-with-canonical-object-chain-not-route-noun-inventory-apr13 live` 记忆：
+  - `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 现在也应直接写死：mechanism owner 页顶部直接展开 canonical witness chain，不再先罗列 `Authority / Boundary / Transcript / Lineage / Continuation / Explainability` 这类更像前门压缩路由的 noun inventory
+  - 更稳的默认写法是：`81` 开门就声明 `84` 管 why 与 verdict box，本页只管 `message_lineage_ref -> ... -> continue_qualification_verdict`
+- 当前批次继续新增一条 `10-should-own-governance-first-answer-without-tail-action-matrix-apr13 live` 记忆：
+  - `bluebook/10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面.md` 现在也应直接写死：治理入口卡只保留四问诊断、三格 typed-state 与 `reject trio`，不再自己发布 `reprice / suspend / reject / continue` 动作矩阵
+  - 更稳的默认写法是：`10` 只写明“非正向值不得自己改价，必须回 `repricing seam`”；更细动作分叉统一留给后续 owner / execution 页
+- 当前批次继续新增一条 `security-readme-should-own-three-ambiguities-not-typed-state-bridge-apr13 live` 记忆：
+  - `bluebook/security/README.md` 现在也应直接写死：安全首页只处理 `signer / verdict ledger / cleanup authority` 三类 ambiguity，不再自己带 `typed-state` 动作桥表
+  - 更稳的默认写法是：`security` 只说明 readback surface 不能倒推 signer truth 或 `reopen authority`；若问题已进入 `reprice / suspend / continue / do-not-reopen`，统一回 `10`
+- 当前批次继续新增一条 `root-sync-healthy-for-high-traffic-why-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `root-readme-should-type-not-teach-source-quality-doctrine-apr13 live` 记忆：
+  - `bluebook/README.md` 现在也应直接写死：根入口对源码质量线只做 typing，不再内嵌 `provisional / 合法复杂度中心 / one writable present / later-maintainer veto` 这类 mini-doctrine；root 只把 evidence ceiling 问题送去 `guides/102`
+  - 更稳的默认写法是：根入口只问 Prompt 是否还在重谈世界、治理是否仍有新增 delta、当前是否先被正式保护；why / object / verdict 一律离场给 owner 页
+- 当前批次继续新增一条 `03-should-explain-constitutional-why-without-owner-shorthand-apr13 live` 记忆：
+  - `bluebook/03-设计哲学.md` 现在也应直接写死：高流量哲学页可以解释三条母线为什么成立，但不再顺手补 `repricing / cleanup` owner 责任、present writer / veto owner、operator artifact `effect ceiling` 这类 owner shorthand
+  - 更稳的默认写法是：`03` 只讲制度 why 与去魅，不讲 owner nouns；一旦问题开始转成 signer、cleanup、truth plane 或 `effect ceiling`，就离场回对应 owner 页
+- 当前批次继续新增一条 `06-should-audit-overreach-not-restage-doctrine-apr13 live` 记忆：
+  - `bluebook/06-第一性原理与苏格拉底反思.md` 现在也应直接写死：自校页只追问有没有把目录观感、作者体感或 projection 冒充正式拒收能力，不再自己复述 `present-veto / one writable present / maturity verdict` 这类 doctrine shorthand
+  - 更稳的默认写法是：`06` 只给降格、回退与离场条件；一旦自校问题长成 why、gate 或 object proof，就退出到 `84 / 85 / 86 / 87 / 102 / architecture`
+- 当前批次继续新增一条 `philosophy-readme-should-use-minimal-owner-index-not-table-inventory-apr13 live` 记忆：
+  - `bluebook/philosophy/README.md` 现在也应直接写死：哲学目录页只保留最小 owner 索引，不再用一张更像 inventory 的 owner table 拉长 why 入口
+  - 更稳的默认写法是：Prompt why 只认 `84`，必要时再去 `81`；治理 why 只认 `85`，earliest `unpaid expansion` 未定位时先回 `10`；自校只认 `06`
+- 当前批次继续新增一条 `root-sync-healthy-for-route-constitution-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `navigation-should-route-by-question-type-not-owner-nouns-apr13 live` 记忆：
+  - `bluebook/navigation/README.md` 现在也应直接写死：route 页不再罗列 Prompt / source-quality doctrine nouns，而是先按主语与缺口类型做 first matching exit；Prompt 只分成 `84` 的 why 与 `81` 的 builder-facing worked example，源码质量只分成 `102` 的 evidence grading、`87` 的 why 与 `architecture` 的 object seam
+  - 更稳的默认写法是：`navigation` 只问“你缺 why、mechanism、artifact ceiling、object seam 还是 execution evidence”，不问“哪一页更像 owner”
+- 当前批次继续新增一条 `09-should-stay-constitutional-and-explicitly-bridge-84-to-81-apr13 live` 记忆：
+  - `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md` 现在也应直接写死：总图页只保留 first answer、最短动作链与 cross-line mirror；Prompt hook 要显式写成 `84 -> 81`，治理 hook 只保留 single pricing order，当前真相 hook 只保留 `guides/102`
+  - 更稳的默认写法是：`09` 不再发布 mechanism inventory、治理尾链模板或源码质量 ladder；若 later consumer 已开始追 reject path、claim-state 或 cleanup authority，就应离开总图页
+- 当前批次继续新增一条 `05-bridge-should-only-sign-surface-exists-and-implementation-visible-apr13 live` 记忆：
+  - `bluebook/05-功能全景与API支持.md` 现在也应直接写死：功能/API 全景页只签 `surface exists / implementation visible`，不再自己重跑 `authority lease / decision delta / repricing proof / cleanup` 这套治理测试
+  - 更稳的默认写法是：`05` 只负责列 surface 与代表入口；`admitted / repriced / promised` 统一外包给 `09 / 10 / api/README`，`Context Usage` 一类 surface 只按 projection / readback 读取
+- 当前批次继续新增一条 `87-should-offer-overread-discipline-not-object-verdict-apr13 live` 记忆：
+  - `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 现在也应直接写死：`layout praise / provisional why / object-check ready` 是 why owner 的 overread discipline，不是第二张 gate；`object-check ready` 只说明 reader 已可离场去对象页，不等于对象证明已经成立
+  - 更稳的默认写法是：`87` 只给 review standard 与 next-hop question，不把 why 读成 object truth；`operator artifacts` 在 `public-evidence only` 下也只先算高风险 review surface / `surface candidate`
+- 当前批次继续新增一条 root-frontdoor-should-not-ship-prompt-or-source-quality-second-hop-syllabus-apr13 live 记忆：
+  - `bluebook/README` 现在也应直接写死：根前门对 Prompt 与源码质量线只给 first test 与第一跳，不再在首段预发源码质量 why，也不再在首跳列表里发 Prompt playbook syllabus
+  - 更稳的默认写法是：Prompt 只给 `84 -> 81`，源码质量只给 `102`；examples、why-proof 与 object landing 统一留给后续 owner 页接手
+- 当前批次继续新增一条 source-quality-why-table-should-read-as-downgrade-not-gate-apr13 live 记忆：
+  - `bluebook/philosophy/87` 现在也应直接写死：那张三格表不是 `reject / provisional / pass` 的 gate，而是 why owner 的最小降格表；更稳的读法应是 `layout praise / provisional why / object-check ready`
+  - 更稳的默认写法是：why owner 只阻止 later consumer 读得过高，不在 `87` 内直接代行 `102` 的 promotion
+- 当前批次继续新增一条 prompt-navigation-must-route-why-to-84-and-mechanism-to-81-apr13 live 记忆：
+  - `bluebook/navigation/README` 与 `philosophy/81` 现在也应直接写死：Prompt 线在 route-only 层不只要有 `84 / 06`，还要显式给出 `84 -> 81` 的 builder-facing 出口；`84` 固定 why owner law 与 verdict box，`81` 只展开同一条 `same-world request object` 的 object chain
+  - 更稳的默认写法是：若你缺的是 Prompt why，回 `84`；若 why 已站住，但还缺 `carrier / witness / continuation object` 的正式链路，就回 `81`
+- 当前批次继续新增一条 governance-tail-chain-must-split-aftermath-readback-from-execution-apr13 live 记忆：
+  - `bluebook/security/README`、`risk/README`、`playbooks/README` 与 `userbook/README` 现在也应直接写死：治理尾链一旦离开 `signer / ledger / cleanup authority`，就要先分成 `cleanup-aftermath readback` 与 `execution verdict` 两问；前者只去 `risk`，后者只去 `playbooks`
+  - 更稳的默认写法是：`security` 只负责机制 ambiguity，`risk` 只负责 `product promise / reopen eligibility / evidence receipt binding` 的 receipt-grade aftermath，`playbooks` 只消费这些输入去下 `execution verdict / rollback / reopen`
+- 当前批次继续新增一条 root-preflight-blocked-by-unmerged-security-docs-apr13-batch8 live 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因未解决冲突失败；`git status --short --branch` 显示 `main...origin/main [ahead 32]`，并出现 `bluebook/security/{README.md,appendix/README.md,source-notes/README.md}` 与 `docs/development/research-log.md` 等根仓未收敛文件
+  - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、更新记忆与提交
+- 当前批次继续新增一条 prompt-frontdoor-should-route-builder-facing-readers-to-81-apr13 live 记忆：
+  - `bluebook/README`、`philosophy/84` 与 `06` 现在也应直接写死：Prompt 线的标准 handoff 只认 `README -> 84 -> 81`；`84` 负责 why 与 verdict box，`81` 负责 builder-facing object chain，`06` 若已退化成 witness/object-chain 缺栏，就应退出 self-audit，回这条链
+  - 更稳的默认写法是：根前门不直接把 builder-facing 机制链塞进首跳说明；why owner 不偷补 object inventory；self-audit 不代写机制页
+- 当前批次继续新增一条 root-preflight-blocked-by-unmerged-security-docs-apr13-batch6 live 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因未解决冲突失败；`git status --short --branch` 显示 `main...origin/main [ahead 32]`，并出现 `bluebook/security/{README.md,appendix/README.md,source-notes/README.md}` 与 `docs/development/research-log.md` 等 `UU` / 脏改动
+  - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、更新记忆与提交
 - 当前批次继续新增一条 source-quality-route-pages-must-stop-before-object-truth-apr13 live 记忆：
   - `bluebook/README`、`philosophy/87` 与 `navigation/README` 现在也应直接写死：源码质量线一旦开始追 `writer claim state / first retreat layer / fail-closed seam`，就已经离开 root frontdoor 与 why owner；`navigation/` 也不配把 `layout praise / provisional / pass` 这种成熟度 verdict 当成 route clue
   - 更稳的默认写法是：根入口只做 `合法复杂度中心 / one writable present / later-maintainer veto` 的 first test，`87` 只做到 why-proof / review standard，`navigation` 只回答缺哪种 artifact，不回答 advancedness 是否已成立

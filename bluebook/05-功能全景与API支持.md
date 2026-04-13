@@ -5,19 +5,18 @@
 1. Claude Code 到底支持哪些能力面。
 2. 这些能力分别通过什么接口暴露出来。
 
-为了避免“看到一点功能就写一点功能”的碎片化，本章按 runtime 表面来组织；但它不再承担 capability 首答权，只承担 capability / API bridge。
-能力全景层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责把正式 surface 与代表入口列成索引，不额外改判 `current admission` 或 `product promise`。用户侧能力地图统一回 `userbook/02`，host-facing truth 与 contract 统一回 `api/README`。
+这一章不是 capability 首答页，也不代签 `current admission / product promise`。更稳的职责只有一句：把正式 surface 与代表入口列成索引。用户侧能力地图统一回 `userbook/02`，host-facing truth 与 contract 统一回 `api/README`，支持/承诺争议统一回 `09`，route dispute 再回 `navigation/README`。
 
-## 0. 先带着三条判断读功能表
+## 0. 先守住 bridge 页纪律
 
 这一章虽然在列能力面，但更稳的读法不是把它当“功能总清单”，而是先带着三句 bridge judgment 来读：
 
 1. Prompt 线
-   - 这些接口最终在帮助 later consumer 于 `verify / delegate / tool choice / resume / handoff` 时继续消费同一份 `compiled request truth`，而不是在 `resume / handoff / compaction` 后重判继续资格、把已排除路径重新拉回候选集
+   - 这些入口最终都在服务同一份 `compiled request truth`；若 `resume / handoff / compaction` 之后还要重谈世界、重搜动作或重判继续资格，那份 verdict 不由本页代签
 2. 治理线
-   - 这些接口最终在决定什么扩张配进入当前世界，以及这次继续是否仍落在同一条 `authority lease` 上、有没有新增 `decision delta`、有没有补齐 `repricing proof / lease checkpoint / cleanup`；`Context Usage` 不是功能前门答案，而只是 `decision window` 投影
+   - 这些入口最终都落在同一条 pricing order 上；`Context Usage`、mode 条、token 百分比与 dashboard 投影都只是 `decision window` projection，不在本页代签 repricing
 3. 源码质量线
-   - 这些接口是主路径能力、稳定 `consumer subset`、hotspot kernel 入口，还是公开证据还只够把它们记成 `provisional current-truth claim / mirror gap discipline`；若继续追源码质量，还要先问复杂度是否落在合法中心、现在是否仍只有一个可写现在、later maintainer 是否仍保有正式 veto
+   - 这些入口只回答 `surface exists / implementation visible`；它们是稳定 `consumer subset` 还是只够写成 `provisional claim`，应交给 current-truth / source-quality owner 页
 
 如果不先带着这三句判断，本章就很容易重新退回：
 
@@ -27,52 +26,38 @@
 
 第一性原理上，接口面不是功能炫耀，而是 runtime 决定什么能进入模型、什么能进入当前世界、什么又能以何种代价持续存在的合法入口。
 
-这里还应再多记一句：
+这里还应再多记一句：`continuity` 在功能表里也不是第九类接口表面；它只是交互、状态、远程与协作这些 surface 在 `Continuation / continuation pricing / re-entry` 上的时间轴读法。
 
-- `continuity` 在功能表里也不是第九类接口表面；它只是交互、状态、远程与协作这些 surface 在 `Continuation / continuation pricing / re-entry` 上的时间轴读法。
-
-所以本章里每列出一个“能力面”，都还要继续追问四次。最小顺序应固定为：
-
-1. 入口是否存在
-2. 当前公开实现是否闭合
-3. 当前是否进入主路径或至少进入稳定子集
-4. 当前是否已被允许，并且已形成可对外承诺的产品面
-
-如果把功能表前门继续压成最短公式，也只剩三句：
+如果把本页继续压成最短出口，也只剩四句：
 
 1. 用户在问“我能看到什么、能怎么进入”时，先回 `userbook/02`。
 2. 宿主在问“contract / schema / host-facing truth 是什么”时，先回 `api/README`。
-3. 若还在问“到底算不算支持、算不算承诺”，先回 `09` 定控制面；若问题已经变成 route dispute，再回 `navigation/README` 分流，不要在 taxonomy 里找 verdict。
+3. 若还在问“到底算不算支持、算不算承诺”，先回 `09`，不要在 taxonomy 里找 verdict。
+4. 若争议已经变成 route dispute，再回 `navigation/README`。
 
-如果这四问还回答不清，就不要继续停在功能总览页：
+如果删掉这四个出口后，本页还想自己给出“已支持 / 已承诺”的 yes/no verdict，说明 bridge 页已经越位成前门。
 
-1. 回 `09`
-   - 先定义世界进入模型、扩张定价与当前真相保护。
-2. 若争议已经变成 route dispute
-   - 回 `navigation/README`；功能总览页不再替 later consumer 预排固定导航顺序。
+## 1. 进入长表前只做一次资格检查
 
-## 1. 前门首答：先治理判定，再查接口索引
+本页在长表开始前只回答两件事：
 
-这一章的前门首答不再是“有多少接口层”，而是先回答三件事：
+1. `surface exists`
+   - 这组入口是否真的存在，且仍属于同一份 `compiled request truth`
+2. `implementation visible`
+   - 当前公开实现是否足够把它写成 visible surface / representative entry
 
-1. 这组入口是否仍在同一个 `compiled request truth` 内
-2. 它当前是否仍在同一条 `authority lease` 里，通过 `decision window` 并补齐 `repricing proof / lease checkpoint / cleanup`，且这次继续确实带来新的 `decision delta`，进入 `current admission`
-3. 它是否已经从实现事实上升为可对外承诺的 `product promise`，且仍不逼 later consumer 重判继续资格，也不破坏 `one writable present`
+`admitted / repriced / promised` 不由本页代签。更细的 `authority lease / decision delta / repricing proof / cleanup` 统一外包给 `09 / 10 / api/README`；本页不重跑这套治理测试。
 
-只有这三问先稳定，接口 taxonomy 才有阅读价值。为避免“接口表面”抢占首答权，本章把接口面降格为四组索引：
+为避免接口表面抢占首答权，下面长表只保留四组索引：
 
 1. 交互与执行
 2. 宿主与控制
 3. 远程与状态
 4. 协作与扩展
 
-它们只用于定位对象与源码证据，不直接产出“已支持/已承诺”的结论。真正的支持结论，仍由上面的治理判定给出；本页自己只做 bridge，不重发 capability first answer。
+它们只用于定位对象与源码证据，不直接产出“已支持/已承诺”的结论。本页自己只做 bridge，不重发 capability first answer。
 
-治理线里还要额外补一句：
-
-- `Context Usage`、mode 条、token 百分比与 dashboard 投影都不是功能前门答案；它们只能在 `decision window / current admission / product promise` 已经分清后，作为宿主消费投影继续出现
-- `Context Usage`、mode 条、token 百分比、dashboard 投影与 host replay 也不是治理说话面；若不能新增 `repricing / deny / cleanup` 决策增益，就只配当 `weak readback / tail evidence`，不配回判 `current admission`
-- 若这些 surface 只是重复同一条 boundary decision、同一段 lease checkpoint 或同一条 cleanup 回单，它们就只算 `zero-delta ask / weak readback / receipt-grade evidence`，不构成新的 host truth
+- `Context Usage`、mode 条、token 百分比、dashboard 投影与 host replay 都只是 projection / readback；它们不能单独代签 `current admission` 或 pricing verdict。
 
 因此下面的长表只负责给出代表入口与对象 truth，不再抢答“是否支持到哪一层”。更细的矩阵与对象总表，统一回到 `08`、`api/23`、`api/24` 与 `api/30`。
 若当前公开树还不能支持 promotion，这些长表也只配把对象写成 `provisional claim / consumer subset`，并带一条 unresolved-authority note，不借 taxonomy 代签 current truth。
