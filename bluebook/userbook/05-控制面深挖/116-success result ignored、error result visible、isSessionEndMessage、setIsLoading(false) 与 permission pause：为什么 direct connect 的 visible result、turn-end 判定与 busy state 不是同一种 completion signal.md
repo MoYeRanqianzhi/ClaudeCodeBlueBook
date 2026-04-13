@@ -258,20 +258,27 @@ error `result` 则是另一组对照：
 
 三者都与“完成”有关，但不是同一种 completion signal。
 
-## 第七层：当前源码能稳定证明什么，不能稳定证明什么
+## 第七层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
+- same result family != same completion semantics
 - success `result` transcript 静默，不等于它不参与 turn-end 收口
-- error / success 在 `isSessionEndMessage(...)` 上没有区别
-- `setIsLoading(false)` 的触发面比 `result` 更宽，至少还覆盖 permission pause、disconnect 和 cancel
-- `converted.type === 'message'` 只是正文追加条件，不是 turn-end 或 busy-state 的唯一来源
+- error / success 当前在 `isSessionEndMessage(...)` 上没有区别
+- `setIsLoading(false)` 当前的触发面比 `result` 更宽，至少还覆盖 permission pause、disconnect 和 cancel
+- `converted.type === 'message'` 当前只是正文追加条件，不是 turn-end 或 busy-state 的唯一来源
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- 所有宿主都用同样的 busy-state machine
-- 将来 `isSessionEndMessage(...)` 不会变得比 `msg.type === 'result'` 更细
-- 其他 UI consumer 不会给 success `result` 单独加可见壳
+- 所有宿主是否都用同样的 busy-state machine，仍取决于当前 host/hook route
+- 将来 `isSessionEndMessage(...)` 会不会比 `msg.type === 'result'` 更细，仍取决于当前实现策略
+- 其他 UI consumer 会不会给 success `result` 单独再包一层可见壳，也仍是条件化宿主选择
+
+### 内部/灰度层
+
+- `isSessionEndMessage(...)`、`setIsLoading(false)`、`converted.type === 'message'` 与 permission pause 的 exact helper 顺序
+- busy-state machine 的完整宿主实现与未来分支扩张
+- 其他 hook/UI 是否会再引入第四种 completion-related consumer
 
 所以这页最稳的结论必须停在：
 
