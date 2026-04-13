@@ -2,6 +2,7 @@
 
 这一层只继承 [../README.md](../README.md) 已判清的工作对象分型：按“我要推进什么工作”组织专题，再按需把你送去 `05-控制面深挖` 或更深的 owner 页。
 它不再重写 speaking-rights、申诉链或专题层的 first-answer law。
+专题首页按工作对象聚类，不等于该专题已经拥有 current truth；若这页还答不出它靠的是 `contract / registry / current-truth claim state` 哪一级证据，以及何时先退回控制面或 owner 页，它就只该按 `provisional current-truth claim / consumer subset` 阅读。
 
 ## 按工作对象分组，不按专题名平铺
 
@@ -105,6 +106,8 @@
 - [08-上下文接入、附件与提示编译专题.md](./08-%E4%B8%8A%E4%B8%8B%E6%96%87%E6%8E%A5%E5%85%A5%E3%80%81%E9%99%84%E4%BB%B6%E4%B8%8E%E6%8F%90%E7%A4%BA%E7%BC%96%E8%AF%91%E4%B8%93%E9%A2%98.md)
 - [12-会话发现、历史检索与恢复选择专题.md](./12-%E4%BC%9A%E8%AF%9D%E5%8F%91%E7%8E%B0%E3%80%81%E5%8E%86%E5%8F%B2%E6%A3%80%E7%B4%A2%E4%B8%8E%E6%81%A2%E5%A4%8D%E9%80%89%E6%8B%A9%E4%B8%93%E9%A2%98.md)
 
+若 `verify / delegate / tool choice / resume / handoff` 前，接手者还得重答谁在定义当前工作对象、边界内哪些动作仍合法，或继续资格是否仍成立，就先按 `same-world test` 失败处理，优先回 `08-上下文接入、附件与提示编译专题`，不要把 `02 / 12` 当成并列补救线。
+
 ### 2. 给当前工作对象扩权、接外部能力或并行隔离
 
 如果你现在卡在“怎么把行动面铺开但不丢边界”，先读这组：
@@ -114,6 +117,8 @@
 - [05-并行执行与隔离专题.md](./05-%E5%B9%B6%E8%A1%8C%E6%89%A7%E8%A1%8C%E4%B8%8E%E9%9A%94%E7%A6%BB%E4%B8%93%E9%A2%98.md)
 - [13-非交互、后台会话与自动化专题.md](./13-%E9%9D%9E%E4%BA%A4%E4%BA%92%E3%80%81%E5%90%8E%E5%8F%B0%E4%BC%9A%E8%AF%9D%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%93%E9%A2%98.md)
 - [17-插件、MCP、技能、Hooks 与 Agents 运维专题.md](./17-%E6%8F%92%E4%BB%B6%E3%80%81MCP%E3%80%81%E6%8A%80%E8%83%BD%E3%80%81Hooks%20%E4%B8%8E%20Agents%20%E8%BF%90%E7%BB%B4%E4%B8%93%E9%A2%98.md)
+
+这四组只负责把你送到正确的工作对象，不负责在专题层内补签 `continue / retry / reopen / exposure` 资格；若你是被 `mode / status / usage / hook review / host replay` 一类 surface 带进来的，这些信号在本层最多只算 `weak readback / lease checkpoint` 的暴露时刻，不能单独证明继续成立。答不上 `earliest unpaid expansion -> repricing proof -> lease checkpoint -> cleanup` 时，先退回 `05-控制面深挖`。
 
 ### 3. 让当前工作对象跨宿主、跨时间、跨现场继续存在
 
@@ -146,3 +151,5 @@
 1. 这类工作对象是什么。
 2. 这类工作先按哪组最小顺序排。
 3. 什么时候该退出专题，退回 `05-控制面深挖` 或主线使用重新校正边界。
+
+`02-连续性与记忆`、`08-上下文接入、附件与提示编译`、`12-会话发现、历史检索与恢复选择` 也只是在同一工作对象的时间轴上提供不同接手入口，不是三套各自改判的 first answer。

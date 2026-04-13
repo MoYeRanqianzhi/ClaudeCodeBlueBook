@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 topic-layer-must-not-regrant-prompt-or-governance-verdicts live 记忆：
+  - `userbook/04-专题深潜/README` 现在也应直接写死：专题页按工作对象聚类，不等于 current truth 已被 promotion；`02 / 08 / 12` 只是同一工作对象的不同接手入口，不是三套各自改判的 first answer；`mode / status / usage / hook review / host replay` 这类专题入口信号最多只算 `weak readback / lease checkpoint`
+  - 更稳的默认写法是：专题层只负责工作对象翻译、最小顺序提示与退出条件；若 `same-world test` 失败，就先回 `08`；若治理尾链答不出 `earliest unpaid expansion -> repricing proof -> lease checkpoint -> cleanup`，就先回 `05`
+- 当前批次继续新增一条 root-sync-healthy-clean-apr13-batch3 live 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，`git status --short --branch` 当前为 `main...origin/main [ahead 23]`
+  - 更稳的默认写法是：根仓若仅 ahead 而未脏、不需收敛，则继续只把状态记作外部事实，正文与提交仍只落在 `.worktrees/mainloop`
 - 当前批次继续新增一条 userbook-map-and-index-must-inherit-three-first-tests live 记忆：
   - `userbook/02-能力地图/README / userbook/03-参考索引/README` 现在也应直接继承三条母线的 first test，而不只停在“这是地图/这是索引”的薄桥接句
   - 更稳的默认写法是：能力地图只桥接 `tool choice / compaction / 已排除路径回流候选集`、`repricing proof / lease checkpoint / cleanup`、`contract / registry / current-truth claim state + one writable present`；参考索引只桥接“projection / weak readback / tail evidence 不代签”，不扩成对象页或 verdict 页
