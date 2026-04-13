@@ -7861,3 +7861,5 @@
 - 这一刀的第一性原理同样很窄：Prompt rollout 和 Prompt why 页都不能把“接手更顺”当前门，因为那会把合法继承退回体验叙事。只要 state / summary / handoff 还被写成被继承的本体，而不是继续资格的载体，later-consumer rights 就会再次退回 secondary effect。
 - `2026-04-13` 当前又起了第十一个窄批次，只动 `userbook/05-控制面深挖/README.md`。这批继续做 route-only 减法：把本地复述的 `weak readback / continuation consumer / reopen tail evidence / authority lease` 解释压回分流句，只保留“回 `10` 判 repricing / cleanup、回相邻 `03` 看 continuation consumer、回 `risk/README` 看 cleanup 后读回”的最小路由。
 - 这一刀的第一性原理也很窄：section README 只能回答“你现在该退回哪层”，不该重复 owner 页已经稳定下来的解释。只要 README 还在本地重讲 lease、readback 与 reopen taxonomy，它就仍会偷拿治理与风险页的发言权。
+- `2026-04-13` 当前又起了第十二个窄批次，只动 `api/39` 与 `api/42` 的开头/总结口径。修改后，这两页不再把共享 artifact 字段与 rule packet 写成“对象真相已经成立”，而是明确：它们当前只共享一组可公开复核的源码锚点，帮助外部读者判断是否仍在指向同一 `current-truth surface`。
+- 这一刀的第一性原理也很窄：artifact/rule 协议页只负责“如何复核到同一 current-truth surface”，不负责代替对象页宣布 writer truth。只要 `same-current-truth` 被写成对象真相本身，而不是可公开检查的见证条件，later maintainer 就会把 packet-level evidence 错读成 object-level certainty。

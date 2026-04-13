@@ -16,7 +16,7 @@
 
 而是：
 
-- 不同消费者围绕同一条源码真相链共享同一组拒收条件
+- 不同消费者围绕同一组当前可公开检查的源码锚点共享同一组拒收条件
 
 因此 packet header 的第一页，必须先固定：
 
@@ -63,14 +63,14 @@ packet_header:
 
 而是：
 
-- 让不同消费者围绕同一条源码真相链共享同一套 reject semantics
+- 让不同消费者围绕同一组可公开复核的锚点共享同一套 reject semantics
 
 ## 2. Rule Body 应检查什么
 
 更稳的 `rule body` 不该先发明大量结构对象名，而应先检查三件事：
 
 1. `same-current-truth`
-   - 当前工件是不是仍锚定同一 `current-truth surface`。
+   - 当前工件是不是仍提供了足以让外部读者复核到同一 `current-truth surface` 的公开见证。
 2. `subset-not-sovereign`
    - `consumer subset`、结构图、恢复资产、镜像提示有没有越权成主语。
 3. `mirror-gap-explicit`
@@ -207,4 +207,4 @@ rules:
 
 ## 8. 一句话总结
 
-结构 Artifact Rule ABI 真正统一的，不是不同消费者的检查话术，而是它们都围绕 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 共享同一套结构拒收语义。
+结构 Artifact Rule ABI 真正统一的，不是不同消费者的检查话术，而是它们都围绕 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 这条链上当前可公开复核的见证，共享同一套结构拒收语义。
