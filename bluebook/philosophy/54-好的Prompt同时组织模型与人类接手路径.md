@@ -32,6 +32,18 @@ Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，
 
 如果这些成本不被主动压低，再强的模型也会在长期协作里显得笨重。
 这些成本之所以必须被压低，也不是为了“更顺手”而已，而是为了让 later consumer 不必重读全量 transcript、不必重做 `world-definition / tool-legality / next-action search`，就能对旧资格做 `continue / reject / reopen` 的正式判断。
+更硬一点说，这四类成本其实都只是三条母法则的不同症状：
+
+1. `人类是否还能快速理解现场`
+   - 本质上在问 `lawful inheritance` 有没有保住同一工作对象，而不是只留下更顺手的摘要。
+2. `人类是否知道该从哪里继续`
+   - 本质上在问 `search-pruning` 有没有保住已排除分支与 next-action search 的退休结果。
+3. `人类是否能低成本切回另一条执行链`
+   - 本质上在问 `decision-retirement` 有没有保住旧判断继续退役，而不是把被排除路径重新拖回候选集。
+4. `人类是否能用最少反馈把模型重新导回正轨`
+   - 本质上在问 carrier 是否仍守住自己的 `effect ceiling`，没有在无 witness rebind 的前提下偷偷代签 continue qualification。
+
+所以这节真正要证明的不是“人机协作更顺”，而是：只要三条母法则还成立，later consumer 面对的就不再是一次冷启动，而是一次有正式继承边界的 continuation。
 
 ## 3. 苏格拉底式追问
 
@@ -51,7 +63,19 @@ Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，
 
 它更像在维护“下一步从哪里继续”的行动锚点；但它最多只配当锚点，不配越权改写世界主语、边界或继续资格。
 
-### 3.4 真正强的 prompt 更像什么
+### 3.4 session memory 是“记住更多”吗
+
+不是。
+
+它真正值钱的地方，不是多保留一些可读回内容，而是让 later consumer 不必重新整理 continuation object；但它也只配保存 continuation 相关的 carrier / receipt，不配在缺少 witness rebind 时单独代签 same-world 资格。
+
+### 3.5 handoff note 是再写一段更好的总结吗
+
+也不是。
+
+它真正值钱的地方，是把接手者需要的最小 carrier 收到一次交接里；但只要 handoff note 开始单独代签 `world-definition / boundary / continue qualification`，它就已经从交接辅助物越权成伪 witness。
+
+### 3.6 真正强的 prompt 更像什么
 
 更像：
 
@@ -81,6 +105,7 @@ Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，
 | `delta scope` | 旧判断被整包拖回候选集 | 只重开新增 `decision delta` 真正触及的局部问题 |
 
 这五格不是第二条 Prompt ABI；它只是在本页局部消费 `84` 的 owner law 与 `81` 的 witness chain。只要前面三格里任一格仍停在 carrier 体感，人类接手就还不算 lawful consumer 接手，而只是更顺手地阅读了旧叙事。
+如果只想在本页保留一条最小本地 verdict bridge，也只记这一句：`carrier-only` 先落 `provisional`，`carrier 越权代签 continue qualification` 直接落 `reject`；只有 `witness rebind` 完成后，same-world continuation 才配升回 `pass`。
 
 ## 5. 一句话总结
 

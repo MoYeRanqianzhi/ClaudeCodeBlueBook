@@ -2,6 +2,10 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/{philosophy/54-好的Prompt同时组织模型与人类接手路径.md,guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 prompt-magic bridge 协议：`54` 现在把四类接手成本逐项回绑到 `lawful inheritance / search-pruning / decision-retirement + effect ceiling`，并补齐 `session memory / handoff note` 的 ceiling 解释；`guides/30` 则新增更早的 `effect ceiling` first-reject gate，让 carrier 越权先落 `provisional / reject`，不再等到更后的 witness 细检。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在进入 `philosophy/54 + guides/30` deepen 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
+
 - 继续更新 `bluebook/api/46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 services-atlas 协议：`api/46` 现在补出 `public-evidence only` 护栏，并把文件名里的 `权威入口` 收回 `atlas / locator / bridge` 强度，不再把 `services/` 写成对象层落点；同时也把第三 rung 的统一约束写硬，明确 `budget / continuation / capability-boundary / bridge / recovery` 这些局部 nouns 仍只是同一条 `current-truth claim state` 的方言。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在进入 `api/46` 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。

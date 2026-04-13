@@ -121,6 +121,13 @@
 - reject signal：入口间出现 path parity split
 - 失败动作：标记 projection-consumer split 并停止继续
 
+### 3.3A Gate-3A：carrier 是否越权突破 `effect ceiling`
+
+- 输入：summary / sticky prompt / session memory / handoff prose / display transcript 等 carrier surface
+- 通过条件：这些 surface 只负责定位、提醒、展示或 receipt，不单独改判 `world-definition / boundary / continue qualification`
+- reject signal：任一 carrier 在无 witness rebind 的前提下开始替 later consumer 代签 same-world continuation
+- 失败动作：先记成 `effect-ceiling breach`，本地 verdict 至少落 `provisional`；若 carrier 已实际代签 continue 资格，则直接升格成 `reject`
+
 ### 3.4 Gate-4：`same-world witness` 是否可点名
 
 - 输入：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`

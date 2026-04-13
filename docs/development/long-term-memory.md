@@ -13,6 +13,15 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-prompt-magic-bridge-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `philosophy/54 + guides/30` deepen 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `prompt-magic-why-proof-must-map-human-handoff-costs-back-to-three-laws-apr13 live` 记忆：
+  - `bluebook/philosophy/54-好的Prompt同时组织模型与人类接手路径.md` 现在也应继续写死：`人类是否还能快速理解现场 / 知道从哪继续 / 低成本切回执行链 / 用最少反馈纠偏` 这四类接手成本，本质上都只是在复核 `lawful inheritance / search-pruning / decision-retirement + effect ceiling` 有没有守住
+  - 更稳的默认写法是：Prompt “魔力”不再先按体验词讲，而是先把每种接手成本逐项压回三条母法则；`session memory` 与 `handoff note` 也和 `suggestion / sticky prompt` 一样，先按 `effect ceiling` 读
+- 当前批次继续新增一条 `guides30-should-run-effect-ceiling-first-reject-before-witness-check-apr13 live` 记忆：
+  - `bluebook/guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md` 现在也应直接写死：在 builder-facing gate chain 里，carrier 越权应比 witness 细检更早暴露
+  - 更稳的默认写法是：先跑 `effect ceiling` first-reject gate；`carrier-only` 先落 `provisional`，carrier 已代签 continue 资格则直接 `reject`，再进入后续 witness / consumer / forgetting 细检
 - 当前批次继续新增一条 `root-sync-healthy-for-api46-atlas-batch-apr13 live` 记忆：
   - 2026-04-13 本轮进入 `api/46` 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`

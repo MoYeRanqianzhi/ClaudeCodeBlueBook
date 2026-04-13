@@ -2,6 +2,14 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `philosophy/54 + guides/30` deepen 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
+
+- 本轮新的 `philosophy/54` magic-proof bridge 结论：我只对 `bluebook/philosophy/54-好的Prompt同时组织模型与人类接手路径.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`54` 现在把“为什么这很重要”那四类接手成本逐项回绑到了 `lawful inheritance / search-pruning / decision-retirement + effect ceiling` 这组最小法则上，不再只停在泛化的人机协调成本；`session memory` 与 `handoff note` 也补上了和 `suggestion / sticky prompt` 对称的 `effect ceiling` 解释。当前判断是，这一步能把 Prompt 魔力从压缩 slogan 推到更可复查的 why-proof bridge。
+
+- 本轮新的 `guides/30` effect-ceiling 结论：`30` 现在补出了一道更早的 `Gate-3A`，专门检查 carrier 是否越权突破 `effect ceiling`。新的默认顺序是：carrier 若只停在搬运定位和 receipt，就先落 `provisional`；若已在无 witness rebind 下代签 same-world continuation，则直接 `reject`，不必等到更后的 witness / forgetting gate 才暴露问题。当前判断是，这一步能把 Prompt 线最关键的 first-reject 分界点提前，减少 builder-facing 审读链把“越权代签”拖到过晚阶段才暴露的概率。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一个 carrier 看起来“足够有用”时，更稳的默认追问不该是“它能不能帮助接手”，而应先问“它是在继续搬运 witness，还是已经开始代签 qualification”；如果答案是后者，它就已经从有用的 projection 退化成有害的伪 signer。当前判断是，这个问法能继续把 Prompt 哲学从“更好摘要”拉回“更准的制度边界”。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/46` 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
 
 - 本轮新的 `api/46` atlas-strength 结论：我只对 `bluebook/api/46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`46` 现在补出了 `Evidence mode` 横幅，并明确把文件名里的 `权威入口` 收回成 `atlas / locator / bridge` 强度：本页只回答哪个子系统更接近 `contract / registry / current-truth claim state`、主要 consumer 是谁、危险 seam 在哪，不再把 `services/` 写成“统一扩张定价秩序落成对象层的地方”。当前判断是，这一步能把 `46` 从容易越位的子系统 owner 页，收回成更稳定的 services atlas。
