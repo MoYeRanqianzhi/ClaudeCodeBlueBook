@@ -447,6 +447,17 @@
 
 - 适合直接对读者承诺的稳定产品语义
 
+所以这页最稳的结论必须停在：
+
+- `scheduleReconnect(...)`、`reconnect()`、`onReconnecting`、`onClose`、`onDisconnected` 当前不是同一种 action-state contract
+- timeout warning 之后最多只能稳说 force reconnect action 已发起，不能稳说共享状态面一定已经先投成 `reconnecting`
+- `125` 到这里为止；recovery lifecycle 语义层应回到 `122`，recovery signer / projection ceiling 应回到 `124`
+
+而不能滑到：
+
+- 只要 transport 想恢复，所有 path 最终都会先统一走一遍 `reconnecting`
+- `disconnected` 只是 reconnect action 的最后一步
+
 ## 第十二层：苏格拉底式自审
 
 ### 问：我现在写的是 close-driven backoff，还是 force reconnect？
@@ -458,6 +469,32 @@
 答：如果是，就把 authority path 写错了。
 
 ### 问：我是不是把 `onClose` 写成了“所有 close 的直译”？
+
+答：如果是，就把 terminal projection 和 raw close event 混了。
+
+### 问：我是不是把 timeout warning 后的 UI 变化写成了必然共享状态？
+
+答：如果是，就把当前实现路径推断误写成了稳定用户合同。
+
+## 结论
+
+所以这页能安全落下的结论应停在：
+
+- `scheduleReconnect(...)` 才是 `onReconnecting()` 的 authority path，`reconnect()` 不是它的别名
+- `onClose` / `onDisconnected` 属于 terminal projection，不是任何 reconnect action 的自然下一步
+- timeout warning 之后当前更稳的判断只是 force reconnect action 已发起，而不是 `reconnecting` 必然已经成立
+- `125` 因而只裁定 transport close-path 分叉，不裁定一般 recovery 真相
+
+一旦这句成立，
+
+就不会再把：
+
+- close-driven backoff
+- force reconnect
+- `reconnecting`
+- `disconnected`
+
+写成同一种 transport 状态机。
 
 答：如果是，就把 terminal projection 和 raw close event 混了。
 
