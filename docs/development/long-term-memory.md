@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-philosophy81-witness-ownership-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `philosophy/81` witness-ownership 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `philosophy81-must-pin-owner-producer-veto-consumer-per-witness-hop-apr14 live` 记忆：
+  - `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 现在也应继续写死：canonical witness chain 不只要给 object chain，还要给逐跳 `owner / producer / local veto / consumer` 表，防止 `guides/30`、`philosophy/54`、`06` 再局部代持 ownership 语义
+  - 更稳的默认写法是：若问题已经变成“谁能签哪一跳 witness、谁只是 carrier、第一声 no 落在哪里”，canonical first answer 统一回 `81`；why owner 留在 `84`，审读协议留在 `30`，review grid 留在 `54`
 - 当前批次继续新增一条 `root-sync-healthy-for-api47-locator-split-batch-apr14 live` 记忆：
   - 2026-04-14 本轮进入 `api/47 + api/46 + navigation/35 + 02` locator-split 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面

@@ -2,6 +2,12 @@
 
 ## 2026-04-14 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `philosophy/81` witness-ownership 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `philosophy/81` witness-ownership 结论：我只对 `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`81` 现在把 canonical witness chain 继续压硬成逐跳 `owner / producer / local veto / consumer` 表，明确 `message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict` 各自签什么、谁生产、第一声 `no` 落在哪、哪些 surface 只配当 carrier。当前判断是，这一步能把 Prompt 魔力线继续从“signer vs carrier 的 general slogan”推进到 builder-facing ownership map，减少 `30 / 54 / 06` 在下游页重发半套 witness semantics 的诱因。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当 canonical object chain 已经成立后，更稳的默认追问不该是“还缺不缺更多 effect-ceiling 标签”，而应先问“哪一跳 witness 到底由谁签、谁只负责生产、谁能发第一声 veto、谁只是在消费”；只要这个 ownership map 还没钉死，later consumer 迟早会在别的页重新发明 signer 语义。当前判断是，这个问法能继续把 Prompt 设计内涵从“概念说明更完整”拉回“主权、生产、否决与消费是否已经单源闭合”的 first-principles discipline。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `api/47 + api/46 + navigation/35 + 02` locator-split 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
 
 - 本轮新的 `api/47 + api/46 + navigation/35 + 02` locator-split 结论：我只对 `bluebook/{api/47-tools 二级目录地图：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md,api/46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md,navigation/35-源码地图导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md,02-使用指南.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`47` 现在从 tools 侧明确承认 `definition plane / services-tools runtime plane` 分离；`46` 则继续压低 atlas 页的 runtime 总论语气，把 API 子节收回 `Session Ingress` 强度，并把 transport seam 明确还给 `30`；`35` 与 `02` 也把导航层残留的“权威入口”预期继续降回 `atlas locator / locator 段`。当前判断是，这一步能把目录结构线继续从“哪页最像 authority”拉回“哪页只配负责哪一段定位”的 speaking-right discipline。
