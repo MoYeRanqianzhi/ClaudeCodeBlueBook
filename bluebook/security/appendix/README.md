@@ -1,6 +1,6 @@
 # 安全专题附录
 
-`appendix/` 当前包含 424 篇速查文档。
+`appendix/` 当前包含 432 篇速查文档。
 这里不展开主论证，只提供证据索引、字段矩阵、状态语义、恢复/续租速查和工程迁移检查表；安全主线仍以 [../README.md](../README.md) 为准，源码剖面见 [../source-notes/README.md](../source-notes/README.md)。
 附录层也继续继承 `问题分型 -> 工作对象 -> 控制面 -> 入口`；它只负责核对字段、矩阵与速查对象，不额外签 signer / verdict。
 
@@ -930,12 +930,36 @@
 - `424`
   载体家族强请求清理归档关闭治理与强请求清理审计关闭治理分层。
   入口：[424-安全载体家族强请求清理归档关闭治理与强请求清理审计关闭治理分层速查表：active-surface retirement、replay world、debug trace、diagnostics observability与governor question](424-安全载体家族强请求清理归档关闭治理与强请求清理审计关闭治理分层速查表：active-surface retirement、replay world、debug trace、diagnostics observability与governor question.md)。
+- `425`
+  载体家族强请求清理审计关闭治理与强请求清理不可逆擦除治理分层。
+  入口：[425-安全载体家族强请求清理审计关闭治理与强请求清理不可逆擦除治理分层速查表：audit-close surface、irreversible-erasure surface、carrier destruction与governor question](425-安全载体家族强请求清理审计关闭治理与强请求清理不可逆擦除治理分层速查表：audit-close surface、irreversible-erasure surface、carrier destruction与governor question.md)。
+- `426`
+  载体家族强请求清理不可逆擦除治理与强请求清理保留期治理分层。
+  入口：[426-安全载体家族强请求清理不可逆擦除治理与强请求清理保留期治理分层速查表：time law、validation veto、admission gate与coverage gap](426-安全载体家族强请求清理不可逆擦除治理与强请求清理保留期治理分层速查表：time law、validation veto、admission gate与coverage gap.md)。
+- `427`
+  载体家族强请求清理保留期治理与强请求清理保留期执行诚实性治理分层。
+  入口：[427-安全载体家族强请求清理保留期治理与强请求清理保留期执行诚实性治理分层速查表：surface、declared scope、runtime truth与honesty gap](427-安全载体家族强请求清理保留期治理与强请求清理保留期执行诚实性治理分层速查表：surface、declared scope、runtime truth与honesty gap.md)。
+- `428`
+  载体家族强请求清理保留期执行诚实性治理与强请求清理隔离治理分层。
+  入口：[428-安全载体家族强请求清理保留期执行诚实性治理与强请求清理隔离治理分层速查表：surface、honesty answer、isolation question、positive control与gap](428-安全载体家族强请求清理保留期执行诚实性治理与强请求清理隔离治理分层速查表：surface、honesty answer、isolation question、positive control与gap.md)。
+- `429`
+  载体家族强请求清理隔离治理与强请求清理家族宪法治理分层。
+  入口：[429-安全载体家族强请求清理隔离治理与强请求清理家族宪法治理分层速查表：carrier family、constitution world、cleanup root、current gate与governor question](429-安全载体家族强请求清理隔离治理与强请求清理家族宪法治理分层速查表：carrier family、constitution world、cleanup root、current gate与governor question.md)。
+- `430`
+  载体家族强请求清理家族宪法治理与强请求清理制度理由治理分层。
+  入口：[430-安全载体家族强请求清理家族宪法治理与强请求清理制度理由治理分层速查表：carrier family、primary risk object、operational duty、host visibility与rationale drift](430-安全载体家族强请求清理家族宪法治理与强请求清理制度理由治理分层速查表：carrier family、primary risk object、operational duty、host visibility与rationale drift.md)。
+- `431`
+  载体家族强请求清理制度理由治理与强请求清理元数据治理分层。
+  入口：[431-安全载体家族强请求清理制度理由治理与强请求清理元数据治理分层速查表：carrier family、naming surface、path helper、projection surface与gap](431-安全载体家族强请求清理制度理由治理与强请求清理元数据治理分层速查表：carrier family、naming surface、path helper、projection surface与gap.md)。
+- `432`
+  载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层。
+  入口：[432-安全载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层速查表：metadata signal、runtime truth、gap type、receipt surface与governor question](432-安全载体家族强请求清理制度元数据治理与强请求清理运行时符合性治理分层速查表：metadata signal、runtime truth、gap type、receipt surface与governor question.md)。
 
 ## 怎么配合主线读
 
 - 读 [../README.md](../README.md) 时，把附录当速查卡，不当主阅读路径。
 - 想快速核对“字段从哪来、谁能签字、哪条路径被禁止、当前该看哪张卡”，优先来附录。
-- 想快速进入当前这段强请求清理子链，优先看 `420-424` 这一段。
+- 想快速进入当前这段强请求清理子链，优先看 `425-432` 这一段。
 - 需要完整论证、设计判断和章节间关系时，返回 [../README.md](../README.md)。
 
 ## 和主线、源码剖面的分工
