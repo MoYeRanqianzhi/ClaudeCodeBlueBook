@@ -1,7 +1,7 @@
 # 治理收费链入口卡：最早 unpaid expansion 与四问诊断
 
 这页只压治理入口第一问，不重做 why、机制 inventory 或执行 verdict。
-它只补一件最容易被写浅的事实：进入诊断时先找 `earliest unpaid expansion`，再看 `repricing proof / lease checkpoint / cleanup`；更硬一点说，真正要问的是这次继续是否仍在同一条 `authority lease` 上、是否真的新增 `decision delta`、以及 `cleanup trigger state` 是否已明确触发或仍被明确欠账。危险、花费与体验波动，只是这次扩张在判责时回看的投影，不是入口第一主语。
+它只补一件最容易被写浅的事实：进入诊断时先找 `earliest unpaid expansion`，再核对 `same authority lease / new decision delta / cleanup trigger state` 是否仍成立；`repricing proof / checkpoint / cleanup` 只是这条硬公式在现场里的旧简称。危险、花费与体验波动，只是这次扩张在判责时回看的投影，不是入口第一主语。
 
 ## 只在这里回答什么
 

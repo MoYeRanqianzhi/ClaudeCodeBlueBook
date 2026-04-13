@@ -7,7 +7,7 @@
 
 如果只先记架构对象层的一句话，也只记这句：
 
-- 架构层不负责再判梯子，而负责把“四个对象问题”继续展开成对象候选、状态机与 choke point；只有 promotion-passed object 才在这里升级成正式对象并承接 `one writable present`。
+- 架构层不负责再判梯子，而负责把“四个对象问题”继续展开成对象候选、状态机与 choke point；只有 promotion-passed object 才在这里按已锁定的 object claim 展开 `one writable present` 等 object law，升级本身不发生在这里。
 
 这里也只再多记一句：`architecture/` 真正值钱的，不只是把对象链列出来，而是把 later maintainer 的局部可反对性落成可见对象与 seam。这里说的局部可反对性，不是“最后还能看懂”，而是拿不到作者时仍能只凭局部对象与 seam 指出哪一处对象边界在越权。
 
@@ -52,7 +52,7 @@
 - 当前真相 why-proof 由 `../philosophy/86` 负责，源码质量 why-proof 由 `../philosophy/87` 负责；跨专题反查由 `../navigation/README` 负责。
 - 本目录也不负责把 seam type 先翻成 repo path locator；如果你还分不清该先找 `QueryGuard`、`sessionIngress`、`onChangeAppState` 还是 `build.mjs`，先回 `../01-源码结构地图.md`。
 
-更准确地说，`architecture/` 负责把对象链、chokepoint 与 current-truth writeback 说清，但不负责替 `playbooks/` 直接发 verdict，也不替 `philosophy/` 重判为什么必须如此。
+更准确地说，`architecture/` 负责把对象链、chokepoint 与 current-truth writeback 说清，但不负责替 `playbooks/` 直接发 verdict，也不替 `philosophy/` 重判为什么必须如此。若对象专题页还要先判断“这到底是不是 object-level family / promotion-passed object”，也应先退回 `../guides/102`，而不是在 owner 页里补开第二张 gate。
 
 ## 维护约定
 

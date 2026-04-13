@@ -42,7 +42,7 @@
 如果一页开始替 `philosophy/` 重判必要性，替 `architecture/` 重新发明对象链，或替 `playbooks/` 直接下 verdict，它就已经越权。
 若争议已经变成“这个 owner 页是否越位、目录契约是否失真”，回 [../meta/README.md](../meta/README.md)；那已不是 host-facing truth 本身。
 
-更稳一点说，`api/` 也必须继承 shared first-answer order：先判是 Prompt witness、治理外化，还是 current-truth exposure，再决定去看 contract、registry、host-facing truth claim-state 还是 consumer subset；顺序没先站住时，API README 也会退回接口库存。若 `guides/102` 还没先把这条问题 typing 成 `host-facing truth claim-state / consumer subset`，本页也不该先开。
+更稳一点说，shared first-answer order 仍属于上游 frontdoor；`api/` 只在 `guides/102` 已先把问题 typing 成 `host-facing truth claim-state / consumer subset` 后才入场。若还要先判这是 Prompt、治理还是 current-truth exposure family，说明本页开早了，API README 也会退回接口库存。
 再硬一点说，`api/` 不是 `102` 的快捷方式：它不负责把 `code present -> registry listed -> host-facing truth claim signed -> consumer subset admitted` 这条链再跑一遍；它只消费已经锁定的 rung result，并把宿主承认边界写清。
 
 如果一个 API 判断还压不回这三条，它就还停在接口库存层。

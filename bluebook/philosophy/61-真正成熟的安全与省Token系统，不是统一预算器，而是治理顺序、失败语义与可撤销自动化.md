@@ -244,7 +244,7 @@ Claude Code 的很多高级设计都在强调：
 2. 先把失败语义压回 `立即 reject / cleanup 后重开价 / 退回人工` 这三类现场判据。
 3. 让自动化始终可撤销，而不是只可升级。
 4. 用“是否仍有决策增益”来决定是否继续花 token。
-5. 把 `repricing / cleanup / continue verdict` 所需的最小证据当成正式制度资产管理。
+5. 把 `same authority lease / new decision delta / cleanup trigger state` 所需的最小证据当成正式制度资产管理。
 
 ## 9. 一句话总结
 

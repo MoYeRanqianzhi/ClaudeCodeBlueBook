@@ -4767,3 +4767,5 @@
 - `2026-04-13` 源码质量线的最新可复查化也应继续写死：`guides/102` 现在适合固定成 `promotion verdict box` 语法，至少同时检查 `signer / effect ceiling / local veto cue / first retreat layer`，并只输出 `promotion-passed / provisional claim / gap-candidate note` 三种 verdict。
 - `2026-04-13` `architecture/84` 的 atlas 现在也应继续保留 `evidence status` 维度：即便对象已经进 atlas，表格仍显式写明它依赖的是 `promotion-passed in 102`，避免 skim reader 把对象表再次误读成自带 promotion authority。
 - `2026-04-13` Prompt 线的最新可复查化也应继续写死：`philosophy/21` 与 `guides/30` 现已明确 carrier 不能把已退役判断重新带回 candidate set；`compact / summary / resume` 若让旧判断回流，就直接算违反 lawful forgetting，而不是“摘要质量一般”。
+- `2026-04-13` owner README 的最新残差也应继续写死：`architecture/README` 只按已锁定 object claim 展开 object law，升级本身不发生在这里；`api/README` 只在 `102` 已先 typing 成 `host-facing truth claim-state / consumer subset` 后才入场，若还要先判 family，就说明 owner 页开早了。
+- `2026-04-13` 治理高流量前门的最新残差也应继续写死：`10 / 61 / userbook/README` 里的 `repricing proof / checkpoint / cleanup` 只配当旧简称；真正的硬公式始终是 `same authority lease / new decision delta / cleanup trigger state`。弹窗、`status`、`usage`、继续入口与摘要都只算 route-only 的 `receipt-grade lease-checkpoint projection`，不是治理 checkpoint。
