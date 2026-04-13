@@ -873,12 +873,15 @@
 - `410`
   载体家族强请求清理重新激活治理与强请求清理就绪治理分层。
   入口：[410-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层速查表：activation truth、readiness state、consumer gate、runtime revocation与governor question](410-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层速查表：activation truth、readiness state、consumer gate、runtime revocation与governor question.md)。
+- `411`
+  载体家族强请求清理就绪治理与强请求清理连续性治理分层。
+  入口：[411-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层速查表：continuity budget、stale retry line、pool repair与governor question](411-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层速查表：continuity budget、stale retry line、pool repair与governor question.md)。
 
 ## 怎么配合主线读
 
 - 读 [../README.md](../README.md) 时，把附录当速查卡，不当主阅读路径。
 - 想快速核对“字段从哪来、谁能签字、哪条路径被禁止、当前该看哪张卡”，优先来附录。
-- 想快速进入当前这段强请求清理子链，优先看 `406-410` 这一段。
+- 想快速进入当前这段强请求清理子链，优先看 `407-411` 这一段。
 - 需要完整论证、设计判断和章节间关系时，返回 [../README.md](../README.md)。
 
 ## 和主线、源码剖面的分工
