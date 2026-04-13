@@ -205,20 +205,28 @@
 
 - callback membership surface
 
-## 第六层：当前源码能稳定证明什么，不能稳定证明什么
+## 第六层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
-- `useDirectConnect` 先拿 callback-visible `sdkMessage`，再调 `convertSDKMessage(...)`
-- `convertSDKMessage(...)` 至少产出 `message` / `stream_event` / `ignored` 三类 consumer result
-- success `result` 是 callback-visible，但会被 triad 判成 `ignored`
-- `stream_event` 是 triad 的一类结果，但 `useDirectConnect` 当前并不把它喂进正文消息列表
+- triad != callback mirror
+- `useDirectConnect` 当前先拿 callback-visible `sdkMessage`，再调 `convertSDKMessage(...)`
+- `convertSDKMessage(...)` 当前至少产出 `message` / `stream_event` / `ignored` 三类 consumer result
+- success `result` 当前明明 callback-visible，却仍会被 triad 判成 `ignored`
+- `stream_event` 当前是 triad 的一类结果，但并不自动等于当前 hook sink 一定消费
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- 所有宿主都按这套 triad 消费 callback-visible `SDKMessage`
-- `stream_event` 在别的 hook 或 UI 上一定不会被消费
-- 当前 triad 已经穷尽了所有 UI consumer 分类
+- `useDirectConnect` 当前只把 `message` 喂进正文消息列表
+- `user` / `system` 的一些 subtype 映射到 `message` 或 `ignored`，仍取决于当前 host、adapter policy 与具体 subtype
+- triad 之后还有 hook-specific sink decision；哪类 triad 结果会在别的 hook/UI 上继续被消费，仍是条件化实现选择
+
+### 内部/灰度层
+
+- 所有宿主未来是否都会按这套 triad 消费 callback-visible `SDKMessage`
+- `stream_event` 在别的 hook 或 UI 上会不会继续被消费
+- 当前 triad 是否已经穷尽了所有 UI consumer 分类
+- `convertSDKMessage(...)`、`useDirectConnect`、hook sink 的 exact helper 顺序与 host wiring
 
 所以更稳的结论必须停在：
 
