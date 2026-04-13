@@ -85,6 +85,7 @@
 - [349-2026-04-13-session-url-readiness wording alignment 拆分记忆.md](./349-2026-04-13-session-url-readiness%20wording%20alignment%20拆分记忆.md)
 - [350-2026-04-13-control-vs-governance crosswalk uplift 拆分记忆.md](./350-2026-04-13-control-vs-governance%20crosswalk%20uplift%20拆分记忆.md)
 - [351-2026-04-13-recovery-object taxonomy uplift 拆分记忆.md](./351-2026-04-13-recovery-object%20taxonomy%20uplift%20拆分记忆.md)
+- [352-2026-04-13-governance-readme control-crosswalk echo 拆分记忆.md](./352-2026-04-13-governance-readme%20control-crosswalk%20echo%20拆分记忆.md)
 
 ## 全量档案
 

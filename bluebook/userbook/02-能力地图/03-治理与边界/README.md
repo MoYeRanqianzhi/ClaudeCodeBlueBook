@@ -10,5 +10,14 @@
 
 更稳一点说，这一层也必须继承 `问题分型 -> 工作对象 -> 控制面 -> 入口` 的 first-answer order；治理页若不能先把用户送回 `pricing-right / decision window / cleanup` 这组顺序，就会重新退回“看弹窗和 mode 猜结论”。
 
+## control vs governance
+
+- `control`
+  - 先分 `host / session / sandbox / worktree / viewer` 这些对象，以及谁只是 projection / readback。
+- `governance`
+  - 再判这次继续、扩张、降级或停止是否已经拿到 `pricing-right`，并站在 `truth-surface` 上裁决。
+- `/status / /usage / /resume / /remote-control`
+  - 这些词若还没先归 control，对用户就最容易被误写成 governance verdict。
+
 - [01-权限、沙箱、审批与安全边界.md](./01-%E6%9D%83%E9%99%90%E3%80%81%E6%B2%99%E7%AE%B1%E3%80%81%E5%AE%A1%E6%89%B9%E4%B8%8E%E5%AE%89%E5%85%A8%E8%BE%B9%E7%95%8C.md)
 - [02-多 Agent、任务、团队、计划模式与 Worktree.md](./02-%E5%A4%9A%20Agent%E3%80%81%E4%BB%BB%E5%8A%A1%E3%80%81%E5%9B%A2%E9%98%9F%E3%80%81%E8%AE%A1%E5%88%92%E6%A8%A1%E5%BC%8F%E4%B8%8E%20Worktree.md)
