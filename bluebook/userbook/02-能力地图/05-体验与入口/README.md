@@ -20,6 +20,12 @@
 3. `无真相签发权`
    - 它不替 runtime-core 重签当前世界，也不替控制面页改判治理 verdict。
 
+更具体地说，这一层只翻译 `host / session / projection / display`，不代签 `control / governance` verdict。
+
+- 争议若还停在“这是哪个 host、session、viewer、status surface”，先按 `control` 归位，再回 `../../05-控制面深挖/README.md`。
+- 只有争议已经落到 `decision window / continuation pricing / cleanup-before-resume`，才升级成 `governance`，再回 `../03-治理与边界/README.md`。
+- `/status / /doctor / /usage / /resume / /remote-control` 在这里都先只算 `projection / readback / consumer`，不单独签当前真相。
+
 如果你还在把 UI 体感、状态词或平台入口当成 truth source，就先不要继续靠目录名碰运气。
 
 如果这一层不能和根 `userbook/README`、`01-主线使用` 以及本层 `03-Session 与 Remote-control` 共享同一组 first-answer order，它就会把平台入口重新写成真相入口。

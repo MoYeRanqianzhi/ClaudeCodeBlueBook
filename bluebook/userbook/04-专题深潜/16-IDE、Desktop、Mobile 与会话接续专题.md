@@ -109,6 +109,7 @@
 
 - `/session` 的 alias 里有 `/remote`
 - 但“创建远程会话”真正对应的是 CLI `--remote`
+- `/session` 是稳定 viewer 接续面；`--remote` 则是把这条会话物化出来的灰度创建面
 
 不要把 slash command 和 CLI flag 写成同一条链。
 
