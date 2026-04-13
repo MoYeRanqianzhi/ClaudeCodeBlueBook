@@ -287,21 +287,28 @@ live append 也是：
 
 - one replayed message across multiple origins and dedup layers
 
-## 第八层：当前源码能稳定证明什么，不能稳定证明什么
+## 第八层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
-- `convertUserTextMessages` 只是在 live viewer/history path 上打开 replay visibility
-- `sentUUIDsRef` 只由 `sendMessage(..., { uuid })` 写入
-- 这个 ring 只针对本地 POST 之后的 WS echo
-- 代码明确声明它不处理 attach-time history-vs-live overlap
+- same replay duplication symptom != same dedup mechanism
+- `convertUserTextMessages` 当前只是在 live viewer/history path 上打开 replay visibility
+- `sentUUIDsRef` 当前只由 `sendMessage(..., { uuid })` 写入
+- 这个 ring 当前只针对本地 POST 之后的 WS echo
+- 代码当前明确声明它不处理 attach-time history-vs-live overlap
 - transcript prepend/append 当前没有跨来源 UUID/source 对账层
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- `/subscribe` 在 attach/reconnect 时一定带 backlog replay
-- 实际线上 overlap 的频率有多高
-- future build 不会新增跨来源 dedup index
+- `/subscribe` 在 attach/reconnect 时是否一定带 backlog replay，仍取决于当前 transport/host path
+- 实际线上 overlap 的频率与具体症状，仍取决于当前 attach/live mixing 的运行时条件
+- future build 会不会新增跨来源 dedup index，也仍是条件化实现选择
+
+### 内部/灰度层
+
+- `sentUUIDsRef` 的 exact write/read helper 顺序
+- history page 播种、live append 与 prepend/append sink 的 exact host wiring
+- 未来若引入跨来源 dedup index，会落在哪一层 consumer 里
 
 所以这页最稳的结论必须停在：
 
