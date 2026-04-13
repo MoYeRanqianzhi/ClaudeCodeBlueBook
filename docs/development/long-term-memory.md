@@ -8,6 +8,15 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 userbook-root-must-stay-route-only-on-governance-apr13 live 记忆：
+  - `userbook/README` 现在也应直接写死：根前门只负责 `上下文送错 / 扩张或权限判错 / 旧状态污染` 的问题分型与单跳，不在根页代判这次 ask 是否仍属 `zero-delta`、继续资格是否仍成立
+  - 更稳的默认写法是：弹窗、`status`、`usage`、继续入口与摘要统一只算 `weak readback / lease checkpoint`；一旦怀疑存在 `unpaid expansion`、`continuation lease` 漂移或旧 authority 未清空，就单跳回 `userbook/05` 或蓝皮书治理入口
+- 当前批次继续新增一条 prompt-migration-guide-must-frontdoor-lawful-inheritance-apr13 live 记忆：
+  - `guides/57` 现在也应直接写死：Prompt 宿主迁移纠偏先救回的不是几个 consumer 的对齐感，而是 later consumer 对同一工作对象、继续资格与已排除分支的正式继承权；`shared_consumer_surface` 只配当继承成立后的 witness
+  - 更稳的默认写法是：`protocol transcript / stable prefix boundary / lawful forgetting boundary` 必须一起说明哪些内容被正式继承、哪些判断已经退休；若 later consumer 仍需作者口述才能继续，修好的仍只是展示一致性
+- 当前批次继续新增一条 root-sync-healthy-clean-apr13-batch4 live 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，`git status --short --branch` 当前为干净的 `main...origin/main`
+  - 更稳的默认写法是：根仓若健康且干净，只把预检结果记作外部事实；正文、记忆与提交继续只落在 `.worktrees/mainloop`
 - 当前批次继续新增一条 topic-layer-must-not-regrant-prompt-or-governance-verdicts live 记忆：
   - `userbook/04-专题深潜/README` 现在也应直接写死：专题页按工作对象聚类，不等于 current truth 已被 promotion；`02 / 08 / 12` 只是同一工作对象的不同接手入口，不是三套各自改判的 first answer；`mode / status / usage / hook review / host replay` 这类专题入口信号最多只算 `weak readback / lease checkpoint`
   - 更稳的默认写法是：专题层只负责工作对象翻译、最小顺序提示与退出条件；若 `same-world test` 失败，就先回 `08`；若治理尾链答不出 `earliest unpaid expansion -> repricing proof -> lease checkpoint -> cleanup`，就先回 `05`

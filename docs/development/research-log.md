@@ -1,5 +1,11 @@
 # 研究日志
 
+## 2026-04-13 本轮增量
+
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 直接返回 `Already up to date.`，`git status --short --branch` 也仍是干净的 `main...origin/main`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓正文。
+- 本轮新的 Prompt 迁移模板结论：我把 `bluebook/guides/57-如何把Prompt宿主迁移失真压回compiled request truth：固定纠偏顺序、拒收规则与模板骨架.md` 的前门从“几个 consumer 是否重新对齐”继续压回了 later-consumer 的合法继承。现在这页不再把 `shared_consumer_surface` 读成纠偏主语，而明确写成继承成立后的见证；`protocol transcript / stable prefix boundary / lawful forgetting boundary` 也被并列收成“哪些内容被正式继承、哪些判断已经退休”的联合证明。当前判断是，这一步能继续减少 later consumer 在修复模板页里把 surface 对齐误读成 handoff 真相的概率。
+- 本轮新的 userbook 根前门结论：我把 `bluebook/userbook/README.md` 再压回纯分型与单跳。根页现在不再代判 ask 是否仍属 `zero-delta`、继续资格是否仍成立，而更明确把弹窗、`status`、`usage`、继续入口与摘要统一压成 `weak readback / lease checkpoint`；一旦怀疑出现 `unpaid expansion`、`continuation lease` 漂移或旧 authority 未清空，就统一单跳进 `05-控制面深挖` 或蓝皮书治理入口。当前判断是，这一步能继续减少 later consumer 在 userbook 根页把控制面 readback 当成治理 verdict 的概率。
+
 ## 2026-04-08 本轮增量
 
 - 本轮新的专题层结论：我把 `userbook/04-专题深潜/README` 的桥句继续补齐到和根前门同强度，但仍只做专题层 frontdoor 纠偏。现在专题页不再默认把 `02-连续性与记忆`、`08-上下文接入、附件与提示编译`、`12-会话发现、历史检索与恢复选择` 读成三套并列补救线，而是明确写成同一工作对象在时间轴上的不同接手入口；同时也把 `mode / status / usage / hook review / host replay` 降回 `weak readback / lease checkpoint` 暴露时刻，要求专题层一旦答不出 `earliest unpaid expansion -> repricing proof -> lease checkpoint -> cleanup`，就先退回 `05-控制面深挖`。当前判断是，这一步能继续减少 later consumer 在专题层把 consumer readback 写成治理说话面、或把专题分组误读成 current truth promotion 的概率。

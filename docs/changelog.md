@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-04-13
+
+- 继续更新 `bluebook/guides/57-如何把Prompt宿主迁移失真压回compiled request truth：固定纠偏顺序、拒收规则与模板骨架.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 Prompt 迁移模板协议：这页现在不再把 `shared_consumer_surface` 或 consumer 对齐感当前门，而是先回答 later consumer 是否仍在合法继承同一工作对象、继续资格与已排除分支；`protocol transcript / stable prefix boundary / lawful forgetting boundary` 也被明确并列成继承证明，而不只是展示修复材料。
+- 继续更新 `bluebook/userbook/README.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 userbook 根前门 route-only 协议：根页现在不再代判 ask 是否仍属 `zero-delta` 或继续资格是否仍成立，而更明确把弹窗、`status`、`usage`、继续入口与摘要统一降成 `weak readback / lease checkpoint`；一旦怀疑存在 `unpaid expansion`、`continuation lease` 漂移或旧 authority 未清空，就统一单跳进 `05-控制面深挖` 或蓝皮书治理入口。
+
 ## 2026-04-08
 
 - 继续更新 `bluebook/userbook/04-专题深潜/README.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的专题层 bridge 协议：`04-专题深潜` 现在不再默认把 `02 / 08 / 12` 读成三套并列补救线，而是明确写成同一工作对象在时间轴上的不同接手入口；同时也把 `mode / status / usage / hook review / host replay` 降回 `weak readback / lease checkpoint` 暴露时刻，要求专题层一旦答不出 `earliest unpaid expansion -> repricing proof -> lease checkpoint -> cleanup`，就先退回 `05-控制面深挖`。
