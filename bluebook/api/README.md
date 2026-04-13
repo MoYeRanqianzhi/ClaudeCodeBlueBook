@@ -7,6 +7,7 @@
 
 - `api/` 不是接口清单层，而是 host-facing truth claim-state 暴露层；更稳的读法不是先按编号扫平面，而是在 `102` 已完成 rung classification 后，再问哪些 contract 被外化、哪些 registry 在列出对象、哪些公开证据已经足够支持 `current-truth claim state`、哪些对象在公开镜像里还只配停在 `provisional claim`，宿主自己只是哪个 `consumer subset`，以及哪些热点只能在 `hotspot kernel / mirror gap discipline` 的约束下被消费。
 - 本页不拥有平行 classifier 权；`contract / registry / promotion / downgrade` 这些 noun 在这里都只配按 `102` 已锁定的 typing 被消费，不在这里重排 ladder，也不在这里补签 host-facing truth。
+- 若当前 evidence mode 仍是 `public-evidence only`，本页所有 host-facing noun 也一律只按 `claim-state / consumer subset` 读取，不偷升格成 object-level certainty。
 
 如果把 API 前门继续压成最短公式，也只剩三条：
 

@@ -45,6 +45,14 @@
 - 同理，公开 evidence 若声称存在 `next-refactor entry`，也必须同时说明它落在哪条签字权层级、能触发哪一条 `first local veto`、以及失败时先退回哪一层；做不到这三点，它就只配先写成 `seam candidate`。
 - 目录契约也因此只剩一条单向路：`102` 锁定 `object-level claim`，`architecture/` 才能展开 writer / invariant；`102` 锁定 `host-facing truth claim-state / consumer subset`，`api/` 才能展开宿主承认边界；`102` 锁定 `why`，`philosophy/` 才能解释第一性原理；`navigation/` 只在 subject 与 rung 都已知后负责路由，不代替任何一层重新分级。
 
+如果要把本页的 promotion verdict 再压成 later maintainer 可一眼复查的最小盒子，也只剩三种输出、四个硬条件：
+
+| verdict | 最小硬条件 |
+|---|---|
+| `promotion-passed` | `signer + effect ceiling + local veto cue + first retreat layer` 四项都能点名 |
+| `provisional claim` | 对象仍缺 promotion 所需证明，但缺口可被明确记成 `downgrade stamp + unresolved-authority note` |
+| `gap / candidate note` | 连对象层 authority、签字权层级或第一条回退都还说不清，只配停在 ceiling / gap / candidate |
+
 这条线最短的 reject trio 也只认：
 
 1. `layout-first drift`

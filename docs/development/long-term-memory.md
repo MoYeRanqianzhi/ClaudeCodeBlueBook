@@ -4764,3 +4764,6 @@
 - `2026-04-13` Prompt 高流量页的最新稳定句法也应继续写死：`summary / session memory / handoff prose / sticky prompt / suggestion` 统一只配先写成 continuation carrier / projection，而不是 witness；只有重新回绑 `message lineage / stable prefix / protocol transcript / continuation object / continue-or-reject verdict` 后，才可能通过 admissibility gate。
 - `2026-04-13` Prompt 苏格拉底审读链的最新稳定句法也应继续写死：`guides/30` 的 Gate-4 / Gate-11 / Gate-12 现已明确，只有 belonging 没有 admissibility 不算 lawful inheritance；没有新增 `decision delta` 时旧判断与已排除分支继续退役；旁路若只搬运 carrier 而不重绑 witness，一律按 fail 处理。
 - `2026-04-13` 安全与省 token 的最新稳定句法也应继续写死：`compact / resume / re-entry` 只是 continuation lease checkpoint 的三种入口；`summary / status / usage / memory` 若只提供 receipt-grade carrier，就不配补签 continue，也不配替同一条 `authority lease` 续租。
+- `2026-04-13` 源码质量线的最新可复查化也应继续写死：`guides/102` 现在适合固定成 `promotion verdict box` 语法，至少同时检查 `signer / effect ceiling / local veto cue / first retreat layer`，并只输出 `promotion-passed / provisional claim / gap-candidate note` 三种 verdict。
+- `2026-04-13` `architecture/84` 的 atlas 现在也应继续保留 `evidence status` 维度：即便对象已经进 atlas，表格仍显式写明它依赖的是 `promotion-passed in 102`，避免 skim reader 把对象表再次误读成自带 promotion authority。
+- `2026-04-13` Prompt 线的最新可复查化也应继续写死：`philosophy/21` 与 `guides/30` 现已明确 carrier 不能把已退役判断重新带回 candidate set；`compact / summary / resume` 若让旧判断回流，就直接算违反 lawful forgetting，而不是“摘要质量一般”。

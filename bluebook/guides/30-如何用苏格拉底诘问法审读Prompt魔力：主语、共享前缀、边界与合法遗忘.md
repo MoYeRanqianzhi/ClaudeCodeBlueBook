@@ -162,7 +162,7 @@
 ### 3.10 Gate-10：lawful forgetting 后是否仍保留 continuation object
 
 - 输入：compact / summary / resume 前后对象对照
-- 通过条件：forgetting 后删掉的字节不改变 `continuation object`、已排除分支与 `continue-or-reject verdict`，且仍可点名 continuation object、lineage ref 与资格；没有新增 `decision delta` 时，旧判断也继续保持退役
+- 通过条件：forgetting 后删掉的字节不改变 `continuation object`、已排除分支与 `continue-or-reject verdict`，且仍可点名 continuation object、lineage ref 与资格；没有新增 `decision delta` 时，旧判断也继续保持退役，不得因 `compact / summary / resume` 重新进入 candidate set
 - reject signal：只剩“发生过什么”的摘要叙事
 - 失败动作：回退至 forgetting 前版本并重做 compact；若只能压缩 display，而不能保住执行真相，就禁止把这次 compact 记成 lawful forgetting
 
