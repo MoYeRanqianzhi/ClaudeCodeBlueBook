@@ -24,6 +24,15 @@ Claude Code 的 prompt 魔力，如果从第一性原理收束，首先不是把
 强 Prompt 因而首先是一个 `decision-retirement system`：`verify / delegate / tool choice / resume / handoff` 之后，接手者继承的必须是同一份工作对象、同一批仍被排除的分支，以及同一条 `continue-or-reject verdict`。
 更硬一点说，这套退休机制最后只落成三条 owner law：`lawful inheritance` 保护同一工作对象，`search-pruning` 保护已排除分支继续留在排除态，`decision-retirement` 保护没有新增 `decision delta` 的旧判断继续退役。
 
+如果只想先看一个最小 worked pair，也可以把 `decision-retirement` 压成下面这组对照：
+
+| case | 更稳的读法 | 结论 |
+|---|---|---|
+| `zero-delta revisit` | `/btw`、summary、handoff、side loop 只是把旧判断换一种 carrier 再搬运一次，没有新增 `decision delta`，也没有重绑新的 witness | 旧判断继续退役；不得因为 carrier 更顺手就把已排除分支或旧 tool choice 拉回 candidate set |
+| `new-delta revisit` | later consumer 拿到了新的 boundary、asset、tool legality 或 rollback 变化，并且这些变化已被写回 witness chain | 可以重新打开对应判断，但只重开真正新增 delta 触及的那一小段世界，不回滚整套已退休结论 |
+
+从第一性原理看，这组 worked pair 真正要保护的不是“什么时候允许改判”，而是 later consumer 不必因为每次 handoff / compaction / fork 都重新付一次全量世界重判税。
+
 所以用户感到它“更聪明”，往往不是回答能力凭空增强，而是 runtime 先裁掉了谁能发言、哪些动作合法、哪些分支已死、何时配继续这四类待判变量。
 
 “约束叠加与状态反馈”仍然成立，但它现在只是这套退休机制的 runtime 现象，而不是另一套 frontdoor。
