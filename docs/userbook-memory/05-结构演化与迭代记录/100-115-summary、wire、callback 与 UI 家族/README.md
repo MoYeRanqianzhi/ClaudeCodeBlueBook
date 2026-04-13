@@ -98,6 +98,14 @@
 
 - [../375-2026-04-13-builder-callback-ui branch-map scope clarification 拆分记忆.md](../375-2026-04-13-builder-callback-ui%20branch-map%20scope%20clarification%20拆分记忆.md)
 
+如果你已经确认自己不只是看 `210` 这一张结构页，
+
+而是要在这一簇内部继续按 builder / callback / streamlined / UI consumer 浏览，
+
+直接进：
+
+- [../111-115-builder、callback、streamlined 与 UI consumer 家族/README.md](../111-115-builder、callback、streamlined%20与%20UI%20consumer%20家族/README.md)
+
 如果你已经确认自己不只是看 `208/209/210` 这组结构页，
 
 而是要回到更上游的 family-level 分流，
