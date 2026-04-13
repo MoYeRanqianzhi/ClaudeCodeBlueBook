@@ -2,11 +2,11 @@
 
 ## 2026-04-13 本轮增量
 
-- 本轮新的安全目录同步结论：已把 stronger-request cleanup 最新一段并入主线索引，当前计数同步到 `security=449 / appendix=432 / source-notes=299`，对应范围分别为 `00-448 / 01-432 / 01-299`；这次并入只吸收可长期复用的目录与研究结论，不把 worktree 局部同步噪音带回主分支日志。
+- 本轮新的安全目录同步结论：已把 stronger-request cleanup 最新一段并入主线索引，当前计数同步到 `security=450 / appendix=433 / source-notes=300`，对应范围分别为 `00-449 / 01-433 / 01-300`；这次并入只吸收可长期复用的目录与研究结论，不把 worktree 局部同步噪音带回主分支日志。
 
-- 本轮新的 cleanup 尾链结论：安全链已从 `cleanup-audit-close-governance` 继续推进到 `cleanup-runtime-conformance-governance`，最新八段顺序现稳定为 `irreversible erasure -> retention -> retention-enforcement honesty -> isolation -> constitution -> rationale -> metadata -> runtime-conformance`；它们共同说明“制度允许删除”“制度允许保留”“制度诚实说明自己做到了什么”“制度不会误伤活对象”“制度知道哪些 family 活在哪套家法里”“制度解释这些家法为什么成立”“制度把理由登记成可传播的自我记忆”与“制度在运行时真的兑现这些记忆”不是同一个 signer。
+- 本轮新的 cleanup 尾链结论：安全链已从 `cleanup-audit-close-governance` 继续推进到 `cleanup-anti-drift-verification-governance`，最新九段顺序现稳定为 `irreversible erasure -> retention -> retention-enforcement honesty -> isolation -> constitution -> rationale -> metadata -> runtime-conformance -> anti-drift verification`；它们共同说明“制度允许删除”“制度允许保留”“制度诚实说明自己做到了什么”“制度不会误伤活对象”“制度知道哪些 family 活在哪套家法里”“制度解释这些家法为什么成立”“制度把理由登记成可传播的自我记忆”“制度在运行时真的兑现这些记忆”与“制度会在未来继续抓漂移并阻止旧 truth 沉默失效”不是同一个 signer。
 
-- 本轮新的下一问结论：在 `cleanup-runtime-conformance-governance` 之后，更值得继续追问的已不再是 metadata 是否存在，而是 conform 是否能被持续重验、谁来抓漂移、谁来阻止旧 truth 悄悄失效，也就是更强的 `cleanup-anti-drift-verification-governance` 层。
+- 本轮新的下一问结论：在 `cleanup-anti-drift-verification-governance` 之后，更值得继续追问的已不再是 conform 会不会再漂移，而是 drift 一旦被抓住以后谁来决定修哪层、怎么修、谁有权把 drift 从报警转成后果，也就是更强的 `cleanup-repair-governance` 层。
 - 本轮新的 deeper why-owner residual 结论：我并行复核了 `bluebook/philosophy/{81-请求编译链：可缓存、可转写、可继续.md,85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md,86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md,87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md}`，然后只对仍有高价值 residual 的 `85 / 86 / 87` 落了正文修改。`85` 现在把 why 页里的治理尾链收回成更纯的 `single pricing order / single repricing furnace`，不再顺手带出过长的尾链 inventory；`86` 现在补出了 `public-evidence only` 的 why-owner ceiling，明确本页只解释 later maintainer 为什么必须先守住 `one writable present`；`87` 则把 future-maintainer rejectability 再压薄一层，去掉更像 operator-artifact review gate 的酸测试清单。`81` 本轮只做复核未再动。当前判断是，这一步能继续减少 why owner 页深段再次长成 bridge、review gate 或 owner-level checklist 的概率。
 
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
