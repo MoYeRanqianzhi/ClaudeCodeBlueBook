@@ -374,7 +374,7 @@
 
 - parse layer 和 callback layer 之间还有主动 narrowing
 
-## 第十一层：stable / conditional / internal
+## 第十一层：稳定层、条件层与灰度层
 
 ### 稳定可见
 
@@ -395,6 +395,17 @@
 - `@internal` 本身就是灰度信号
 - 它的 wide-wire visibility 与 foreground narrowing 之间的张力，说明这类 summary family 仍在演化带
 - 当前仓内并没有把它提升为稳定 public SDK/CLI foreground contract
+
+所以这页最稳的结论必须停在：
+
+- `post_turn_summary` 当前更适合被理解成一条 visibility ladder，而不是“可见/不可见”的二元判断
+- 这页只裁定 schema / stdout wire / core SDK / callback / terminal semantics 之间的可见性分层
+- `140` 到这里为止；consumer attribution 应回到 `137`，remote-truth 分支接力应回到 `216`
+
+而不能滑到：
+
+- 只要 `@internal`，它就完全不可见
+- 只要 raw stream 看得到，它就已经属于当前 CLI foreground 主合同
 
 ## 第十二层：苏格拉底式自审
 
@@ -417,6 +428,26 @@
 ### 问：我是不是又回到 105/108 的二选一，而没有真正把它写成 visibility ladder？
 
 答：如果是，就还没真正进入 140。
+
+## 结论
+
+所以这页能安全落下的结论应停在：
+
+- `SDKPostTurnSummaryMessageSchema` 的存在证明了 schema-level visibility
+- `StdoutMessageSchema` 接纳它而 `SDKMessageSchema` 不接纳它，证明了 wide-wire visibility 与 core SDK visibility 不是同一层
+- `print.ts` 与 `directConnectManager.ts` 的主动 narrowing，又进一步说明 terminal / callback foreground consumer path 不是 raw wire 的自然直译
+- `140` 因而只负责把 `post_turn_summary` 收窄成 visibility ladder，而不是当前 CLI foreground contract
+
+一旦这句成立，
+
+就不会再把：
+
+- `@internal`
+- stdout wire
+- core SDK
+- foreground narrowing
+
+写成同一种可见性。
 
 ## 源码锚点
 

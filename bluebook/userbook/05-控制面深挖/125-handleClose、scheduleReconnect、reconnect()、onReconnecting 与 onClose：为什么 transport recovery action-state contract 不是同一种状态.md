@@ -496,16 +496,6 @@
 
 写成同一种 transport 状态机。
 
-答：如果是，就把 terminal projection 和 raw close event 混了。
-
-### 问：我是不是把 timeout warning 之后的 UI 文案变化写成必然？
-
-答：如果是，就把 gray implementation 写成了 stable contract。
-
-### 问：我是不是又把 122/124 的 signer 视角和这页的 transport 视角混回去了？
-
-答：如果是，就说明这页还不够窄。
-
 ## 源码锚点
 
 - `claude-code-source-code/src/remote/SessionsWebSocket.ts`
