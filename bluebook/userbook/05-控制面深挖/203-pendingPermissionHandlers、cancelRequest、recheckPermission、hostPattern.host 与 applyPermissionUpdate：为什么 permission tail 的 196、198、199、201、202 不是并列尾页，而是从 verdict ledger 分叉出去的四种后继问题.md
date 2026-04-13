@@ -64,16 +64,17 @@
 
 - “这五页都在讲 permission 尾部，我该先看哪篇？”
 
-而是先问六个更底层的问题：
+而是先问七个更底层的问题：
 
 1. 我现在卡住的是 verdict 记账本身，还是 verdict 之后的某种后继问题？
 2. 我现在问的是 `request_id` 的 request-level closeout，还是 leader queue 的本地重判？
 3. 我现在问的是 generic bridge permission 尾部，还是 sandbox network 这一条更窄的 host 分支？
 4. 我现在关心的是一次 host verdict 的批量 settle，还是一次 persist 手势的多层写面传播？
-5. 我现在需要的是一个用户目标入口，还是一个局部子系统的 anti-overlap map？
-6. 我是不是已经把 “closeout / re-evaluation / host sweep / persist surfaces” 混成同一种尾巴？
+5. 同一次 `persistToSettings` 手势虽然会改本地 `toolPermissionContext`、并可能顺手触发 queue recheck，但这是不是就说明 `199` 和 `202` 在讲同一条后继线？
+6. 我现在需要的是一个用户目标入口，还是一个局部子系统的 anti-overlap map？
+7. 我是不是已经把 “closeout / re-evaluation / host sweep / persist surfaces” 混成同一种尾巴？
 
-只要这六轴不先拆开，
+只要这七轴不先拆开，
 
 后面就会把：
 
@@ -359,6 +360,10 @@
 ### 问：我是不是把 persist-to-settings 写成所有 permission update 的总页？
 
 答：202 只处理本地 sandbox 响应之后的写面分叉，不代表整个仓库的全部 permission 写路径。
+
+### 问：我是不是因为 `persistToSettings` 会改本地 context、也可能顺手触发 queue recheck，就把 `199` 和 `202` 写成同一条后继线？
+
+答：共享触发源不等于共享主语。`199` 讲的是 permission context change 下的 leader-local re-evaluation；`202` 讲的是 persist 手势跨 context / settings / runtime 的 write-surface propagation。
 
 ### 问：我是不是把 `pendingPermissionHandlers` 这张账直接升级成用户可依赖对象？
 
