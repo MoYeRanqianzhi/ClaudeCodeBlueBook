@@ -7849,3 +7849,5 @@
 - 这一刀的第一性原理同样很窄：地图页与方法页只负责告诉读者“是否已经够 promotion / 应先沿哪条方法线审读”，不负责替对象页宣布 present writer。只要 why 页还在用 `current-truth surface` 当 canonical rung，读者就仍可能把对象层 writer truth 错读成公开镜像默认结论。
 - `2026-04-13` 当前又起了第五个窄批次，只动 `philosophy/14` 的两处“魔力”句子位。修改后，这页不再把 `message lineage / handoff truth` 直接当 Prompt 魔力本体，而把它们降回 runtime 保住 `decision-retirement / exclusion preservation / lawful inheritance` 之后显现出来的表现层。
 - 这一刀的第一性原理也很窄：Prompt 样本页的前门必须先回答 later consumer 为什么不必重做世界重判；`lineage / handoff truth` 这类 nouns 只配回答这套退休机制怎样被保住。只要样本页还先讲 nouns，再讲 later-consumer rights，Prompt 魔力就会再次退回结构 inventory。
+- `2026-04-13` 当前又起了第六个窄批次，只动 `navigation/07` 的合同优先方法线。这里把上一刀误灌进去的 `current-truth claim state` 撤回对象层 `current-truth surface / host-facing truth`，因为这条方法线在讲 contract-first 的对象阅读顺序，不在讲公开镜像证据分级。
+- 这一刀的第一性原理是术语归位：`claim state` 只回答“公开证据是否够 promotion”，而 `current-truth surface / host-facing truth` 才回答对象层“谁在说现在”。只要把两者并排写成同一方法链，later maintainer 就会把 source-quality rung 错学成 contract-first 常规对象入口。
