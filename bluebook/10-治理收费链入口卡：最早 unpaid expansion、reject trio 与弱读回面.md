@@ -36,11 +36,11 @@
 | `decision delta` | `new / zero / unknown` | `zero / unknown` 不配续租 authority，只配停在 checkpoint / receipt-grade readback |
 | `cleanup trigger state` | `fired / owed / failed / unknown` | `owed / failed / unknown` 一律不把当前 surface 读成已结算 truth |
 
-再往前压一步，typed-state 真正要导向的也不是更多术语，而是更少越权：只要三格里有任一格不是正向值，continue、默认重试、usage 解读与 tail readback 都不得自己改价，必须回 `repricing seam` 重开。这里入口层唯一认的 `reject trio` 也只剩：`decision-window collapse / projection usurpation / free-expansion relapse`。
-更硬一点说，`weak readback / receipt-grade projection` 也有稳定的 verb ceiling：它们可以报告 drift、pressure、acknowledgement 与 aftermath，但不能代签 repricing、continue、retry、reopen 或 cleanup truth。凡 usage、status、settings diff、hook review、host replay 或 reopen tail 不能补齐 `same authority lease / new decision delta / cleanup trigger state`，都只配回单，不配回判。
+再往前压一步，typed-state 真正要导向的也不是更多术语，而是一条更短的 verb ceiling：只要三格里有任一格不是正向值，当前 surface 一律只配停在 `checkpoint / receipt-grade projection`，不得自己改价，必须回 `repricing seam`。这里入口层唯一认的 `reject trio` 也只剩：`decision-window collapse / projection usurpation / free-expansion relapse`。
+更硬一点说，`weak readback / receipt-grade projection` 也只剩一句稳定纪律：它们可以报告 drift、pressure、acknowledgement 与 aftermath，但不能代签 repricing、continue、retry、reopen 或 cleanup truth。至于哪些 surface 最常越位，统一留给各归属页，不在入口卡逐项开名单。
 治理效率也不该被写成 approval 更快，而应写成 delta-free approvals 更少；若同类 ask 更频繁更顺滑，却仍没有新增 signer、边界或 cleanup 增量，入口层就仍按 `approval fatigue / free-expansion relapse` 记账。
 
-若症状正好发生在 `compact / resume / re-entry`，也只把它们当成 `lease checkpoint` 的暴露时刻；它们可以搬运或恢复状态，但不自动续租旧 authority。这页不继续展开这些入口各自的对象清单。
+若症状正好发生在 `compact / resume / re-entry`，本页也只把它们当成 `lease checkpoint` 的暴露时刻；是否构成合法继续、谁配解释 tail surface，统一回 continuity、risk 与 playbook owner。
 
 四问里只要有一问答不上，就先按 `free-expansion relapse` 处理，而不是继续补第二套术语表。
 
