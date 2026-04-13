@@ -6,10 +6,11 @@
 - 扩张如何被定价
 - 当前如何不被过去写坏
 
-第一次进入先在本页定题：Prompt 线先问 later consumer 在 `verify / delegate / tool choice / resume / handoff` 时是否还要重答“谁定义世界、边界在哪、工具还能不能用”，以及 `resume / handoff / compaction` 后哪些 transcript / lineage 仍绑定继续资格，甚至把原本已排除的路径重新拉回候选集重判；治理线先问最早 `unpaid expansion` 是什么、继续前有没有补齐 `repricing proof / lease checkpoint / cleanup`、检查顺序是否已把风险提前收费、自动化是否仍可撤销；当前真相保护线先问当前为何不被过去写坏，若继续追源码质量 why，再问复杂度是否落在合法中心、现在是否仍只有一个可写现在、later maintainer 是否仍保有正式 veto。定清这三个第一问题后，根入口只做一次首跳：Prompt 去 `philosophy/84`，治理去 [10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，当前真相保护去 `guides/102`。根入口不再提前列 second-hop artifact 或归属目录。
+第一次进入先在本页定题：Prompt 线先问 later consumer 在 `verify / delegate / tool choice / resume / handoff` 时是否还要重答“谁定义世界、边界在哪、工具还能不能用”，以及 `resume / handoff / compaction` 后留下来的 transcript / lineage 是否不仅“还像同一段故事”，还足以让后来者继续继承同一工作对象、同一批仍被排除或已退役的分支，以及同一条 `continue / reject verdict`，而不必重开 `world-definition / tool legality / next-action search`；若只剩 summary、标题、最后一条消息之类更易读 surface，它们最多证明 belonging，不证明 admissibility。治理线先问最早 `unpaid expansion` 是什么、现在是不是仍在同一 `authority lease` 里、继续前有没有补齐 `repricing proof / lease checkpoint / cleanup`；若没有新增 `decision delta`，审批回单、状态面板与 usage 尾链都只算 `receipt-grade / weak readback`。当前真相保护线先问当前为何不被过去写坏，若继续追源码质量 why，再问复杂度是否落在合法中心、现在是否仍只有一个可写现在、later maintainer 是否仍保有正式 veto。定清这三个第一问题后，根入口只做一次首跳：Prompt 去 `philosophy/84`，治理去 [10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，当前真相保护去 `guides/102`。根入口不再提前列 second-hop artifact 或归属目录。
 当前真相保护线也只先判证据 ceiling 与 current-truth 入口：`102` 先回答公开证据够不够支撑当前真相主张；若问题已经不在首跳，而是在分辨 why、object 或 verdict，再由对应归属页继续接手。
 
 证据上限也先记一句：凡涉及路径级源码 certainty 的判断，首跳一律先去 `guides/102`；根入口不在这里继续判断证据状态。
+目录升级顺序也只认一条：`根入口 -> guides/102 -> owner page`。没有经过 `102` 的 claim-state / promotion gate，`architecture/`、`api/` 与其他 frontdoor 页里的 noun 都不能自动读成 landed truth。
 
 ## 三条首跳
 
@@ -27,13 +28,13 @@
 第一次进入不必先背完整目录树，只要先记住：蓝皮书不是按题材分桶，而是按发言权分桶。
 
 - `README` 与 `userbook/`
-  - 只负责定题与 first answer typing，不提前代答 why-proof、对象摘要或执行 verdict。
+  - 只负责定题与 first answer typing，不提前代答 why-proof、对象摘要或执行 verdict；若问题已经转成 admissibility、promotion 或 claim-state，就不再继续留在入口层。
 - `philosophy/`
   - 只负责 why-proof，回答“为什么必须这样设计”。
 - `guides/`
-  - 只负责 evidence ladder、claim-state 与 promotion / demotion 条件。
+  - 只负责 evidence ladder、claim-state 与 promotion / demotion 条件；`102` 是“根入口如何把 object claim 正式升级给 owner page”的唯一前门。
 - `architecture/`
-  - 只负责对象、状态机、writeback seam 与 `landing card` 级摘要。
+  - 只负责 promotion-passed 对象、对象态、writeback seam 与 `landing card` 级摘要；未过 promotion gate 的对象只保留 `writer claim state / unresolved-authority snapshot`，不提前升级成 landed truth。
 - `navigation/`
   - 只负责 artifact gap 与 route dispute，不重新发放 first answer。
 - `security / risk / playbooks/`

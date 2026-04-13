@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 frontdoor-must-separate-belonging-orientation-and-qualification-apr13 live 记忆：
+  - `bluebook/README`、`navigation/15`、`userbook/00`、`userbook/01/{02,05}` 现在也应直接写死：`belonging != admissibility`，`orientation package != admissible witness package`，以及 `summary / title / last reply / display transcript / status / usage` 默认只配做 reminder、projection 或 checkpoint surface，不单独签发 `continue qualification` 或 host truth
+  - 更稳的默认写法是：Prompt 继续先问 later consumer 是否仍不必重开 `world-definition / tool legality / next-action search`；开工前自检则把失败后的处理动作拆成 `suspend / reopen / final-but-retain / retire-with-marker`，而不是继续用“清理后恢复”把不同 failure mode 混成一句
 - 当前批次继续新增一条 promotion-gate-must-require-signer-effect-ceiling-veto-apr13 live 记忆：
   - `guides/102`、`architecture/84` 与 `architecture/38` 现在也应直接写死：公开 artifact / operator artifact 的 promotion gate 不只看 `signer` 与 `local veto cue`，还必须同时点名 `effect ceiling`；`runtime-core evidence` 与 `operator-governance evidence` 也只构成交叉 evidence family，不额外升格成新 rung 或更高 signer class
   - 更稳的默认写法是：atlas 只收 promotion-passed objects；若对象仍缺 writer promotion 所需证明，就补 `writer claim state / unresolved-authority` note，而不是让 atlas 或 evidence family 自己代行 promotion
