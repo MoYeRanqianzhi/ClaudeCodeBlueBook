@@ -4655,3 +4655,5 @@
 - `2026-04-13` 本轮搜索后的下一残差也应继续记死：`philosophy/76` 与一组 host-artifact / structure 协议页仍保留 `current-truth surface` 旧词簇，但它们不全是同一类 speaking-rights 问题。后续应拆成单独批次，优先分开“地图 why 页 canonical ladder 旧词”和“对象/宿主协议页确实在谈 writer truth”的两类情况，不要混改。
 - `2026-04-13` Prompt why 页的最新稳定句法也应继续写死：`philosophy/21` 不再把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 当 Prompt 魔力的前门，而把它降回退休机制的解释层。当前 frontdoor 应固定为 `decision-retirement system + exclusion preservation + lawful inheritance + later-consumer veto`。
 - `2026-04-13` Prompt 样本页的下一残差也应继续记死：`14 / 18` 等相邻 why 页仍可能保留“咒语/分层 nouns 先于 later-consumer rights”的旧句法。后续应按样本页逐页收口，不要一次性把整条 Prompt why 语料做成 repo-wide mechanical rewrite。
+- `2026-04-13` userbook 运行时投影视图的最新稳定句法也应继续写死：`userbook/05` 与 `Status / Doctor / Usage` 页现在明确把 approval receipt、status green、usage 回单压成 `zero-delta ask / weak readback`。它们只补回单，不补新的 `repricing proof`，也不能替同一条 `authority lease` 的 continuation 续租。
+- `2026-04-13` 治理 userbook 的下一残差也应继续记死：后续若继续精修，应优先收 `compact / resume / memory` 在 userbook 投影视图中的 continuation-lease 表述，而不是重开 owner 页 taxonomy。高流量 user-facing 页只负责提示该退回哪层，不负责把 receipt/readback 写成 verdict signer。
