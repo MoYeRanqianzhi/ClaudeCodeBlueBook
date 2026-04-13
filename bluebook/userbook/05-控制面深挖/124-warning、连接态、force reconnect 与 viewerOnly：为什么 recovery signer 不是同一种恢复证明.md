@@ -512,6 +512,18 @@ brief 投影也并不保证一定在当前帧出现。
 
 - 给读者承诺的稳定证明
 
+所以这页最稳的结论必须停在：
+
+- warning、`remoteConnectionStatus`、`reconnect()`、brief 行与 surface absence 当前不是同一种 recovery signer
+- `viewerOnly` 切掉的是 owner-side warning signer，不等于 shared transport reconnect 消失
+- `124` 到这里为止；owner-side recovery lifecycle 应回到 `122`，transport action-state contract 应回到 `125`
+
+而不能滑到：
+
+- warning 出现就等于 recovery 已成立
+- 没看到某张 surface，就等于 opposite state 已被证成
+- bridge surface 的显隐能直接替 remote session recovery 签字
+
 ## 第十二层：苏格拉底式自审
 
 ### 问：我现在写的是 authority、prompt、action，还是 projection？
@@ -533,6 +545,27 @@ brief 投影也并不保证一定在当前帧出现。
 ### 问：我是不是把 bridge surface 拿来给 remote session 签字了？
 
 答：如果是，就混了两套状态家族。
+
+## 结论
+
+所以这页能安全落下的结论应停在：
+
+- `warning` 当前是 owner-side timeout prompt，不是 durable authority
+- `remoteConnectionStatus` 更接近 shared authority projection，但它也只签 WS lifecycle，不签 recovery 的全部真相
+- `reconnect()` 是 transport action edge，不是 recovery signer；brief 行与其他 surface 只是 projection
+- `124` 因而只负责把 recovery signer ceiling 与 absence semantics 拆开，而不是把所有恢复信号压成一张证明表
+
+一旦这句成立，
+
+就不会再把：
+
+- prompt
+- durable authority
+- action edge
+- projection
+- absence semantics
+
+写成同一种 recovery 证明。
 
 ## 源码锚点
 
