@@ -30,6 +30,8 @@
 
 源码不是这么设计的。
 
+本页不重讲 52 页的 durable parameter restore 差异，也不重讲 transcript/internal-event resume 的内容恢复真相；这里只拆一条更窄的边界：`pending_action` / `task_summary` 虽然也挂在 `SessionExternalMetadata` 这个 bag 上，为什么却只享有 stale scrub first 的观察面合同，而不进入 `externalMetadataToAppState(...)` 或 `model` 那种本地 restore path。换句话说，这里要裁定的是 observer metadata 是否构成可信 restore input，以及 `GET /worker` readback、worker startup scrub、local restore adoption 分别属于哪一层恢复合同，不是再把 metadata bag 宽度写成单一对称恢复路径。
+
 ## 第一性原理
 
 更稳的提问不是：
