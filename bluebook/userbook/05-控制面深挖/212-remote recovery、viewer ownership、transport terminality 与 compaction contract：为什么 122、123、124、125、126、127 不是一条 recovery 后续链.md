@@ -27,6 +27,8 @@
 
 - 为什么 122、123、124、125、126、127 不是一条 recovery 后续链
 
+本页不重讲 122、123、124、125、126、127 各页各自的页内证明，也不把 watchdog、warning、`viewerOnly`、`remoteConnectionStatus`、`handleClose(...)`、`PERMANENT_CLOSE_CODES`、`4001`、`COMPACTION_TIMEOUT_MS` 这些局部对象和 helper / 常量名重新升级成新的总纲主角；这里只整理一张跨页拓扑图：122 是 owner-side recovery 根页，123 是 ownership 侧枝，124 是 signer / proof zoom，125 是 transport authority 的降层根页，126 与 127 再从 125 分到 terminality 与 compaction 两侧，并顺手把稳定用户合同、条件性可见合同与灰度实现证据分层。换句话说，这里要裁定的是“哪些页是什么关系、哪些判断属于哪一层合同”，不是再把 leaf-level 的 recovery edge、ownership gate、stop rule 或 compaction 信号写成整簇页面的统一运行时结论。
+
 ## 第一性原理
 
 更稳的提问不是：
