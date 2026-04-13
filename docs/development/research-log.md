@@ -7847,3 +7847,5 @@
 - 这一刀的第一性原理也很窄：runtime projection 页只该帮助用户知道“该退回哪层”，不该把 repeated allow、modal closeout 或 `Context Usage` 变绿写成新的治理事实。若 projection 开始代签 continue，就说明 consumer 又长成了 shadow compiler / shadow pricing surface。
 - `2026-04-13` 当前又起了第四个窄批次，只动 `philosophy/76` 与 `navigation/07`。这批把 map/why 页里的 canonical wording 从 `current-truth surface` 收回 `current-truth claim state`，并把 “哪个对象面更接近 sole writer” 明确和公开镜像 promotion 问题拆开，防止 later maintainer 在 why 页把证据梯度和对象 truth 混成一层。
 - 这一刀的第一性原理同样很窄：地图页与方法页只负责告诉读者“是否已经够 promotion / 应先沿哪条方法线审读”，不负责替对象页宣布 present writer。只要 why 页还在用 `current-truth surface` 当 canonical rung，读者就仍可能把对象层 writer truth 错读成公开镜像默认结论。
+- `2026-04-13` 当前又起了第五个窄批次，只动 `philosophy/14` 的两处“魔力”句子位。修改后，这页不再把 `message lineage / handoff truth` 直接当 Prompt 魔力本体，而把它们降回 runtime 保住 `decision-retirement / exclusion preservation / lawful inheritance` 之后显现出来的表现层。
+- 这一刀的第一性原理也很窄：Prompt 样本页的前门必须先回答 later consumer 为什么不必重做世界重判；`lineage / handoff truth` 这类 nouns 只配回答这套退休机制怎样被保住。只要样本页还先讲 nouns，再讲 later-consumer rights，Prompt 魔力就会再次退回结构 inventory。
