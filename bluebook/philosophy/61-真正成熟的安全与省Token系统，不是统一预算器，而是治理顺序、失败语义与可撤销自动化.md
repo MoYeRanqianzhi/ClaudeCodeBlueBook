@@ -223,7 +223,7 @@ Claude Code 的很多高级设计都在强调：
 
 - 一旦继续还能改写 authority、价格或清算资格，它就仍是一笔待结算的治理对象。
 - 一旦继续已经不能改写这些东西，它就不该继续占据高价上下文与自动化权限。
-- 所以 `continuity` 也只是一道 lease checkpoint：`same authority lease? new decision delta? cleanup trigger fired or still owed?`；`compact / resume / re-entry` 只是这道 checkpoint 的三种入口形式。
+- 所以 continuation 也只是一道 lease checkpoint：`same authority lease? new decision delta? cleanup trigger fired or still owed?`；`compact / resume / re-entry` 只是这道 checkpoint 的三种入口形式，summary / status / usage / memory 若只提供 receipt-grade carrier，就不配在这里补签 continue。
 - `compact`
   - 只能保留仍足以支持 `same authority lease / new decision delta / cleanup trigger state` 的 stable bytes；否则它只是摘要，不是合法继续。
 - `resume`

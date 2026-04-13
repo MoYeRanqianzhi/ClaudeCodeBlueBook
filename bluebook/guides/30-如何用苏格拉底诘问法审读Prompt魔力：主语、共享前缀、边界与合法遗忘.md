@@ -45,6 +45,7 @@
    - 现在更接近 `lawful forgetting + search-pruning preservation + decision-retirement preservation`
 6. `接手连续性`
    - 现在更接近 `later-consumer lawful inheritance + admissibility-tested continuation qualification`
+   - 更准确地说，这里保留旧词只是为了检索；若只有 continuity feeling、belonging 或 carrier，而没有 admissibility-tested witness，就还不算合法继承
 
 所以真正要审的不是一组旧词，而是：
 
@@ -119,7 +120,7 @@
 ### 3.4 Gate-4：`same-world witness` 是否可点名
 
 - 输入：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`
-- 通过条件：六项 witness 可被独立验证且互相一致，并且能区分哪些只证明 belonging、哪些已经通过 admissibility gate
+- 通过条件：六项 witness 可被独立验证且互相一致，并且能区分哪些只证明 belonging、哪些已经通过 admissibility gate；若对象只证明 belonging 而未过 admissibility，它仍不是 lawful inheritance
 - reject signal：任一 witness 无法点名或互相冲突
 - 失败动作：进入 rollback，禁止用总结 prose 代替 witness
 
@@ -168,14 +169,14 @@
 ### 3.11 Gate-11：handoff 是否无需重读全量 transcript 即可判定继续资格
 
 - 输入：handoff 包、约束清单、next action
-- 通过条件：接手方可直接判断 continuation / reopen / new task，而不必重做 `world-definition / tool-legality / next-action search`
+- 通过条件：接手方可直接判断 continuation / reopen / new task，而不必重做 `world-definition / tool-legality / next-action search`，且没有新增 `decision delta` 时，旧判断与已排除分支继续保持退役
 - reject signal：必须扫长历史才能继续
 - 失败动作：补 continuation qualification card
 
 ### 3.12 Gate-12：旁路流程是否在重绑 witness，而不是静默重造世界
 
 - 输入：`compact / resume / fork / handoff` 的重绑记录
-- 通过条件：旁路只重绑 witness，不新造第二套 truth
+- 通过条件：旁路只重绑 witness，不新造第二套 truth；若旁路只搬运 carrier / summary / display convenience，而无 witness rebind，仍判 fail
 - reject signal：旁路可在无 witness 重绑下继续行动
 - 失败动作：标记 continuation-story-only，拒绝放行
 

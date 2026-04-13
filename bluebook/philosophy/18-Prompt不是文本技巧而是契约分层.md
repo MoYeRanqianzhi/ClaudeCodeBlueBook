@@ -18,10 +18,11 @@ Claude Code 的 prompt 本质上，不是把规则拆成四层而已，而是把
 3. 角色法：
    - coordinator、worker、custom agent、proactive agent；它只能缩窄或显式委派，不凭空重开动作空间
 4. 现场法：
-   - attachments、nested memory、mailbox、plan/auto mode；它只能绑定当前对象与时点，不能复活上层已排除分支
+   - attachments、nested memory、mailbox、plan/auto mode；它只能绑定当前对象与时点，不能复活上层已排除分支，也不能把 summary / session memory / handoff card 这类 belonging-only carrier 自升为 witness
 
 静态法、动态法、角色法与现场法之所以值钱，不是因为“分层”这个动作本身，而是因为它们共同服务同一套 `decision-retirement system`：稳定 law 不乱抖、动态事实晚绑定、角色边界不越权、现场对象可合法继承。
 更硬一点说，分层不是分桶，而是继承法：上层负责立法与排除，下层负责实例化、缩窄、委派与绑定对象，但不配把已退休的判断重新拉回候选集。
+再补一条更硬的 admissibility 纪律：下层 carrier 只有在显式回绑 witness chain 后，才可能获得继续资格；晚绑定不等于自带签字权，现场对象也不配因为“更接近当前”就自动升级成 witness。
 再压一层，这四层真正共同保住的也只剩三条 Prompt owner law：`lawful inheritance` 让不同 consumer 继承同一工作对象，`search-pruning` 让上层已排除分支继续保持被排除，`decision-retirement` 让没有新增 `decision delta` 的旧判断继续退役。
 也就是说，prompt 并不是一段文本，而是一组约束在不同稳定度上的分层投影。
 
@@ -53,7 +54,7 @@ Claude Code 的做法更成熟：
 - 让动态规则动态
 - 让角色合同按角色拆开
 - 让高波动信息通过附件晚绑定
-- 让每一层都继承上层 exclusion discipline，而不是把分层写成四份彼此独立的提示词
+- 让每一层都继承上层 exclusion discipline，而不是把分层写成四份彼此独立的提示词；若下层只能提供 carrier 而不能提供 witness，就不配改写继续资格
 
 ## 3. “提示词魔力”真正来自哪里
 
