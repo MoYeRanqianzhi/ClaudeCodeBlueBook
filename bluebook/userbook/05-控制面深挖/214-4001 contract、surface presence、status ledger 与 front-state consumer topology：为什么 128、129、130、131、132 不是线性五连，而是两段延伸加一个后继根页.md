@@ -287,31 +287,60 @@
 
 - “这些页都是在讲 remote status / remote UI，只是越往后越细。”
 
-## 第九层：稳定层与灰度层
+## 第九层：稳定阅读骨架 / 条件公开 / 内部证据层
+
+这里的“稳定”只指：
+
+- `128 / 129`
+- `130 / 131`
+- `132`
+
+这两段延伸加一个后继根页的阅读骨架已经收稳
+
+不指：
+
+- `4001` contract
+- `surface presence`
+- `status ledger`
+- `front-state consumer topology`
+
+这些中间节点名本身已经升级成稳定公开能力
+
+真正的稳定公开能力判断，仍应回到用户入口、公开主路径与能力边界写作规范。
 
 ### 稳定可见
 
-- `4001` 的 meaning 仍然必须按 component / contract owner 来读
-- `WebSocketTransport` 的恢复主权是分层的，不等于 `SessionsWebSocket` 的镜像
-- `remoteSessionUrl`、attachment fact、bridge state 与 brief projection 不是同一种 presence
-- warning transcript、`remoteConnectionStatus`、`remoteBackgroundTaskCount` 与 brief line 不是同一张状态表
-- `SessionState` / `SessionExternalMetadata` 才更接近 formal runtime state 的定义面
-- bridge 当前确实拥有 dedicated local shadow，而 remote session 只有 partial shadow
+- `128` 当前稳定回答的是 `4001` 仍然必须按 component / contract owner 来读
+- `129` 当前稳定回答的是 `WebSocketTransport` 的恢复主权是分层的，不等于 `SessionsWebSocket` 的镜像
+- `130` 当前稳定回答的是 `remoteSessionUrl`、attachment fact、bridge state 与 brief projection 不是同一种 presence
+- `131` 当前稳定回答的是 warning transcript、`remoteConnectionStatus`、`remoteBackgroundTaskCount` 与 brief line 不是同一张状态表
+- `132` 当前稳定回答的是 `SessionState / SessionExternalMetadata` 更接近 formal runtime state 的定义面，bridge 当前确实拥有 dedicated local shadow，而 remote session 只有 partial shadow
 
 ### 条件公开
 
-- footer `remote` 当前是 mount-time lazy capture，不是 live health indicator
-- brief line 只在 brief-only idle 条件下挂载，而且把 local / remote background count 合并
-- warning transcript 只在 non-`viewerOnly` watchdog 路径里出现
-- bridge 的 transcript / footer / dialog 对齐当前还受 v1 / v2、env-less 与 render gate 约束
+- `130/131` 这一段里，footer `remote` 当前是 mount-time lazy capture，不是 live health indicator
+- `130/131` 这一段里，brief line 只在 brief-only idle 条件下挂载，而且把 local / remote background count 合并
+- `131` 当前的 warning transcript 只在 non-`viewerOnly` watchdog 路径里出现
+- `132` 当前 bridge 的 transcript / footer / dialog 对齐还受 v1 / v2、env-less 与 render gate 约束
 
-### 内部/灰度层
+### 内部证据层
 
 - timeout / retry / sleep 常量
 - exact `4003` refresh sequencing
 - bridge failure dismiss timer
 - `session_state_changed` SDK event 的 env gate
 - exact pill / dialog render condition 与 upgrade nudge 文案
+
+所以这页最稳的结论必须停在：
+
+- `128-132` 当前不是线性五连，而是两段延伸加一个后继根页
+- `128 / 129` 处理 transport contract 与 recovery ownership
+- `130 / 131` 处理 surface presence 与 status ledger
+- `132` 再把问题抬升成 front-state consumer topology
+
+而不能滑到：
+
+- 只要都和 remote status / remote UI 有关，这五页本质上只是同一条连续细化链
 
 ## 苏格拉底式自审
 
@@ -330,3 +359,24 @@
 ### 问：我是不是把 `132` 还写成了“bridge 更厚的 UI 页”？
 
 答：如果一句话没有先回答谁在消费 formal runtime state，它就还没真正进入 `132` 的主语。
+
+## 结论
+
+所以这页能安全落下的结论应停在：
+
+- `128` 先把 same `4001` 与 same contract owner 拆开，`129` 再把 recovery ownership 压成 zoom
+- `130` 先把 presence signer 拆开，`131` 再把 status ledger 压成 zoom
+- `132` 不再是上一段的尾页，而是把问题抬升成 front-state consumer topology 的后继根页
+- `128-132` 因而不是从 transport error 顺编号一路细化到 remote UI 的五连页
+
+一旦这句成立，
+
+就不会再把：
+
+- contract owner
+- recovery ownership
+- presence signer
+- status ledger
+- consumer topology
+
+写成同一种“remote surface 后续细页”。
