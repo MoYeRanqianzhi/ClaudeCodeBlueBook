@@ -257,6 +257,23 @@
 
 - transport contract 自己就把 publish ceiling 压在了 coarse blocked bit
 
+这里其实还能再往下问三个更硬的问题：
+
+1. 它有没有 details-carrying state publish 签名？
+2. 它有没有和 `reportState(...)` 同步出现的 pending-object mirror？
+3. 它有没有前台恢复时必须接回完整 blocked context 的承诺？
+
+从当前源码证据看，这三问都偏向：
+
+- `reportState(state: SessionState)` 本身不承载 details
+- bridge 这条线当前也没有与之并列的 `pending_action` mirror publish
+- foreground consumer 看到的更像 coarse blocked phase，而不是可还原的完整 pending object
+
+所以这页更稳的理解必须再往前迈一步：
+
+- bridge blocked-state publish ceiling 不是“刚好少传了几个字段”
+- 而是 contract 自己就只签了 blocked bit
+
 ## 第六层：同样复用 `can_use_tool` 的 sandbox network access，也不会自动进入同一条 blocked-state 升级链
 
 `structuredIO.ts` 里 `createSandboxAskCallback()` 也会发：
@@ -327,13 +344,21 @@
 - `21` 的用户分诊专题
 - 或 `203` 的 permission tail 结构页
 
-## 第八层：稳定 / 条件 / 灰度保护
+## 第八层：稳定层、条件层与灰度层
 
 | 类型 | 对象 |
 | --- | --- |
 | 稳定可见 | `can_use_tool` 先是 permission ask transport，不自动等于 blocked session；`requires_action_details` 与 `pending_action` 不是同一张面；bridge 最稳定的承诺只是 coarse blocked-state publish |
 | 条件公开 | 只有 `stdio -> onPermissionPrompt -> notifySessionStateChanged` 这条更窄链路会把 ask 升级成厚 blocked context；foreground restore 是否真的重建这些上下文还取决于宿主与消费路径 |
 | 内部/灰度层 | `pending_action` 的具体存储位置、字段形状、env-less `reportState(...)` 细节、synthetic sandbox `can_use_tool`、restore gap 和各类 consumer path 都只是证据层实现 |
+
+所以这页能安全落下的结论应停在：
+
+- bridge blocked-state publish ceiling != accidental missing details
+
+而不能继续滑成：
+
+- bridge 本来就应该像 `stdio` 一样自然发布完整 `pending_action`
 
 ## 结论
 
@@ -356,3 +381,17 @@
 - bridge state publish
 
 写成同一种“等待输入状态”。
+
+## 第九层：苏格拉底式自检
+
+### 问：我是不是把 `can_use_tool` transport、blocked projection、worker metadata 和 bridge publish 又写回了同一个 waiting 状态？
+
+答：如果是，就说明还没把 ask transport、双轨投影和 coarse blocked bit 三层重新拆开。
+
+### 问：我是不是把 worker-side metadata existence 误写成 foreground restore promise？
+
+答：如果是，就漏掉了 `externalMetadataToAppState(...)` 当前只接窄子集这一层。
+
+### 问：我是不是把 bridge 缺 details 写成了“暂时少传几个字段”，却没先问 transport contract 有没有承载 details 的签名？
+
+答：如果是，就还没把 publish ceiling 写成合同边界，只是停在实现现象。
