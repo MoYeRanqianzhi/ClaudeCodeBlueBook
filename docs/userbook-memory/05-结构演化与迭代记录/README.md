@@ -83,6 +83,7 @@
 - [347-2026-04-08-noninteractive hidden-flag visibility alignment 拆分记忆.md](./347-2026-04-08-noninteractive%20hidden-flag%20visibility%20alignment%20拆分记忆.md)
 - [348-2026-04-08-frontend conditional-surface wording alignment 拆分记忆.md](./348-2026-04-08-frontend%20conditional-surface%20wording%20alignment%20拆分记忆.md)
 - [349-2026-04-13-session-url-readiness wording alignment 拆分记忆.md](./349-2026-04-13-session-url-readiness%20wording%20alignment%20拆分记忆.md)
+- [350-2026-04-13-control-vs-governance crosswalk uplift 拆分记忆.md](./350-2026-04-13-control-vs-governance%20crosswalk%20uplift%20拆分记忆.md)
 
 ## 全量档案
 

@@ -83,14 +83,27 @@ Prompt 失真在这一层也只该继续消费同一张 user-facing witness pack
 更硬一点说，`/status / /doctor / /usage / product promise readback / cleanup result / handoff promise` 这些都只是 weak readback surface；`/compact / /resume / /memory` 这些都只是 continuation consumer；`reopen qualification` 只读 residual liability 是否足以重开；`evidence binding` 才是 reopen tail evidence。谁拿它们直接代签 same-world、治理真相或继续资格，谁就在把 consumer 写成 compiler。
 续租也只延长仍合法的同一 lease；`resume / heartbeat / keep_alive / token refresh` 都不能替代 `re-entry / reopen / rebinding`。
 
+## control vs governance
+
+- `control`
+  - 先回答：我现在在看哪条控制面，哪些词只是 projection / readback / consumer。
+- `governance`
+  - 再回答：这次继续、扩张、降级或停止，是否已拿到 `pricing-right`，并站在 `truth-surface` 上裁决。
+- `/status / /doctor / /usage / /resume / /remote-control`
+  - 这类词先按 control 归位，不直接代签 governance verdict。
+- 只要争议还停在 `host / session / sandbox / worktree / viewer`
+  - 它首先是 control 问题。
+- 只有争议已经落到 `decision window / continuation pricing / cleanup-before-resume`
+  - 它才升级成 governance 问题。
+
 如果还想要一张最小正向 crosswalk，也只记三行：
 
 - `这还是同一件工作吗`
-  - 正式过关条件是 `continue qualification`；packet 只负责 same-work prefilter
+  - 正式过关条件是 `continue qualification`；packet 只负责 same-work prefilter。
 - `这是治理裁决吗`
-  - 过关条件是 `pricing-right + truth-surface attestation`
+  - 过关条件是 `pricing-right + truth-surface attestation`。
 - `这是旧状态污染吗`
-  - 过关条件是 `sole writer + freshness`
+  - 过关条件是 `sole writer + freshness`。
 
 如果还要继续追问这三项过关条件背后的 shared runtime correctness / continuity budget，而不是停在用户动作层，固定回 `../../07-运行时契约、知识层与生态边界.md`。
 
