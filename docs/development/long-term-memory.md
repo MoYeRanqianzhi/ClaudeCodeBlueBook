@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 why-owners-must-name-retired-repricing-and-time-travel-rejudication-apr13 live 记忆：
+  - `bluebook/philosophy/{85,86}` 与 `guides/102` 现在也应直接写死：`85` 不只答“扩张为何要先被定价”，还要答 runtime 正在退休哪些无新增 `decision delta` 的重复重定价 / 重批准 / 重资格判断；`86` 不只答“过去为什么不能写坏现在”，还要答内核正在退休哪些过去对象、恢复资产与旧视角的时间旅行式重判；`102` 则明确自己是 `根入口 -> guides/102 -> owner page` 里的唯一 promotion gate
+  - 更稳的默认写法是：why-owner 页负责说清系统退休了哪类重判，`102` 负责说清这些主张何时才配升级给 owner page；未过 `102` 之前，owner noun 一律先按 claim-state 读
 - 当前批次继续新增一条 governance-aftermath-pages-must-keep-receipt-grade-tail-apr13 live 记忆：
   - `bluebook/userbook/README`、`10`、`risk/README` 与 `playbooks/README` 现在也应直接写死：用户侧 readback、reopen 资格与 cleanup-aftermath 只能沿着 `same authority lease / decision delta / explicit cleanup trigger` 这条尾链读，未带来新增 delta 的 surface 一律只算 `receipt-grade`
   - 更稳的默认写法是：`userbook` 只把治理界面翻译成 `weak readback / lease checkpoint / receipt-grade evidence`；`10` 只把 `lease checkpoint` 读成“同租约 + 有无新 delta”；`risk` 只读 `product promise readback / reopen eligibility readback / evidence receipt binding`；`playbooks` 只消费这些 receipt-grade inputs，不倒放回治理层重签当前事实
