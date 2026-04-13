@@ -2,6 +2,12 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检失败结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/53` candidate-family 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，但 merge 因根仓存在未解决冲突失败，错误为 `Merging is not possible because you have unmerged files.`。当前判断是，这次失败只应作为 root preflight 的外部事实记录，不触发任何根仓收敛动作；正文继续严格只在 `.worktrees/mainloop` 内推进与提交。
+
+- 本轮新的 `api/53` candidate-family 结论：我只对 `bluebook/api/53-故障模型宿主消费面手册：authority state、generation evidence、recovery boundary与anti-zombie projection.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`53` 现在把 `anti-zombie projection` 再降一层：不再说宿主“必须看到”三类近似独立对象化投影，而是承认宿主当前只该围绕 `freshness / cleanup / rollback` 这三类 host-facing candidate family 组织读面，并把它们继续绑定回已外化 surface。当前判断是，这一步能继续压低 `public-evidence only` 下的对象化语气，让故障模型宿主页更稳定地停在 candidate / projection 层。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一个宿主页已经把 noun 降成 candidate 后，更稳的默认追问不该是“还要不要保留这三个 noun”，而应先问“它们是在帮助 later consumer 压缩阅读，还是已经开始伪装成独立 surface”；如果是后者，就还没真正降格。当前判断是，这个问法能继续把安全 / 省 token 线从“对象名字更好记”拉回“宿主究竟看到了哪些已外化 surface”。
+
 - 本轮新的根仓预检失败结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/52` surface-first 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，但 merge 因根仓存在未解决冲突失败，错误为 `Merging is not possible because you have unmerged files.`。当前判断是，这次失败只应作为 root preflight 的外部事实记录，不触发任何根仓收敛动作；正文继续严格只在 `.worktrees/mainloop` 内推进与提交。
 
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/52` surface-first 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。

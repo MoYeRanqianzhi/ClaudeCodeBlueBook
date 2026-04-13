@@ -142,16 +142,16 @@ Claude Code 当前并没有公开一份名为：
 2. mtime / fanout 细节
 3. append-chain 内部重试实现
 
-## 6. anti-zombie projection：宿主真正该看到什么
+## 6. anti-zombie projection：宿主更稳地该围绕什么 candidate family 组织读面
 
-宿主并不需要看到所有 anti-zombie 内部细节，但必须看到其结果投影：
+宿主并不需要看到所有 anti-zombie 内部细节；在 `public-evidence only` 下，更稳的写法也不是宣布三类独立 landed projection，而是承认宿主当前只应围绕下面这组三类 host-facing candidate family 组织读面：
 
 1. `freshness evidence / projection`
-   - 当前状态有没有被 stale writer 拒绝。
+   - 只先帮助宿主判断当前状态有没有 stale-writer 风险迹象。
 2. `cleanup witness / residue object`
-   - 当前恢复边界有没有清掉陈旧资产。
+   - 只先帮助宿主判断当前恢复边界是否清掉了陈旧资产。
 3. `rollback witness / boundary receipt candidate`
-   - 当前回退动作能否围绕对象进行，而不是围绕文件列表瞎猜。
+   - 只先帮助宿主判断当前回退动作能否围绕对象进行，而不是围绕文件列表瞎猜。
 
 这意味着更成熟的支持面不该只是：
 
@@ -159,7 +159,7 @@ Claude Code 当前并没有公开一份名为：
 
 而应是：
 
-- stale writer evidence / recovery asset non-sovereignty / rollback outcome 的对象化投影
+- stale-writer risk、recovery-asset non-sovereignty 与 rollback outcome 这三类 candidate family 被稳定绑定回已外化 surface
 
 ## 7. 三层支持矩阵
 
