@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 governance-why-pages-must-name-retired-repeat-pricing-apr13 live 记忆：
+  - `bluebook/philosophy/61` 现在也应直接写死：安全与省 token 共用同一条治理收费链，不只是在共享 budget，而是在持续退休没有新增 `decision delta` 的重复 repricing / reapproval / requalification
+  - 更稳的默认写法是：`61` 的 lease checkpoint 统一收回 `same authority lease / new decision delta / cleanup trigger state`，并把 `weak readback` 明确降到 `receipt-grade` 尾链，不进入重新定价所需的最小证据集
 - 当前批次继续新增一条 prompt-deep-pages-must-collapse-to-three-owner-laws-apr13 live 记忆：
   - `bluebook/philosophy/{14,18,21,54}` 与 `guides/30` 现在也应直接写死：Prompt 深页不能再各自用“更稳 / 更聪明 / 更会继续 / 更会接手”分散解释同一件事，而要统一收回 `lawful inheritance / search-pruning / decision-retirement` 三条 owner law
   - 更稳的默认写法是：Prompt 魔力页负责回答 runtime 替 later consumer 退休了哪些世界重谈、动作重搜与旧判断回流；苏格拉底审读页则把 Gate-0 先写成“哪一批分支继续保持被排除、哪组旧判断在无新增 `decision delta` 时必须继续退役”
