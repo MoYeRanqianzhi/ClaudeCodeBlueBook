@@ -13,6 +13,21 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-route-constitution-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `navigation-should-route-by-question-type-not-owner-nouns-apr13 live` 记忆：
+  - `bluebook/navigation/README.md` 现在也应直接写死：route 页不再罗列 Prompt / source-quality doctrine nouns，而是先按主语与缺口类型做 first matching exit；Prompt 只分成 `84` 的 why 与 `81` 的 builder-facing worked example，源码质量只分成 `102` 的 evidence grading、`87` 的 why 与 `architecture` 的 object seam
+  - 更稳的默认写法是：`navigation` 只问“你缺 why、mechanism、artifact ceiling、object seam 还是 execution evidence”，不问“哪一页更像 owner”
+- 当前批次继续新增一条 `09-should-stay-constitutional-and-explicitly-bridge-84-to-81-apr13 live` 记忆：
+  - `bluebook/09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md` 现在也应直接写死：总图页只保留 first answer、最短动作链与 cross-line mirror；Prompt hook 要显式写成 `84 -> 81`，治理 hook 只保留 single pricing order，当前真相 hook 只保留 `guides/102`
+  - 更稳的默认写法是：`09` 不再发布 mechanism inventory、治理尾链模板或源码质量 ladder；若 later consumer 已开始追 reject path、claim-state 或 cleanup authority，就应离开总图页
+- 当前批次继续新增一条 `05-bridge-should-only-sign-surface-exists-and-implementation-visible-apr13 live` 记忆：
+  - `bluebook/05-功能全景与API支持.md` 现在也应直接写死：功能/API 全景页只签 `surface exists / implementation visible`，不再自己重跑 `authority lease / decision delta / repricing proof / cleanup` 这套治理测试
+  - 更稳的默认写法是：`05` 只负责列 surface 与代表入口；`admitted / repriced / promised` 统一外包给 `09 / 10 / api/README`，`Context Usage` 一类 surface 只按 projection / readback 读取
+- 当前批次继续新增一条 `87-should-offer-overread-discipline-not-object-verdict-apr13 live` 记忆：
+  - `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 现在也应直接写死：`layout praise / provisional why / object-check ready` 是 why owner 的 overread discipline，不是第二张 gate；`object-check ready` 只说明 reader 已可离场去对象页，不等于对象证明已经成立
+  - 更稳的默认写法是：`87` 只给 review standard 与 next-hop question，不把 why 读成 object truth；`operator artifacts` 在 `public-evidence only` 下也只先算高风险 review surface / `surface candidate`
 - 当前批次继续新增一条 root-frontdoor-should-not-ship-prompt-or-source-quality-second-hop-syllabus-apr13 live 记忆：
   - `bluebook/README` 现在也应直接写死：根前门对 Prompt 与源码质量线只给 first test 与第一跳，不再在首段预发源码质量 why，也不再在首跳列表里发 Prompt playbook syllabus
   - 更稳的默认写法是：Prompt 只给 `84 -> 81`，源码质量只给 `102`；examples、why-proof 与 object landing 统一留给后续 owner 页接手
