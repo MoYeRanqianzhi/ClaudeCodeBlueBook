@@ -103,7 +103,7 @@ Claude Code 更值得学的一点是：
 
 ## 4. Current-Truth Surface Atlas：当前谁配写当前真相
 
-Claude Code 的高级点，在于它不断把 current-truth surface 做显式化。
+Claude Code 的高级点，在于它不断把 `current-truth claim / surface` 做显式化。公开证据还没 promotion 通过前，对象先写成 claim-state，而不是提前冒充 landed writer truth。
 
 最值得抓的几类 surface 是：
 
@@ -128,18 +128,20 @@ Claude Code 的高级点，在于它不断把 current-truth surface 做显式化
 
 - 后来者知道谁能写、谁只能读
 
-这里也要再压住一条对象层准入纪律：公开 operator artifact 先只有 `surface candidate`。除非公开证据已经足够说清它的 signer、作用域与第一条 `local veto cue`，否则对象层不该替它预填 `sole writer`；`CLAUDE.md`、hooks、skills、settings 这些 surface 可以先进入 atlas，但不能因为公开可见就自动升级成 current-truth writer。
+这里也要再压住一条对象层准入纪律：公开 operator artifact 先只有 `surface candidate`。除非公开证据已经足够说清它的 `signer`、`effect ceiling` 与第一条 `local veto cue`，否则对象层不该替它预填 `sole writer`；`CLAUDE.md`、hooks、skills、settings 这些 surface 可以先进入 atlas，但不能因为公开可见就自动升级成 current-truth writer。
 
 更稳的 current-truth surface atlas 至少该能被压成下面这张表：
 
-| current-truth object | sole writer | per-host width | forbidden substitute writer | freshness / eviction guard |
+这张 atlas 也只配收 promotion-passed objects；若某个对象仍缺 writer promotion 所需证明，就应同时补 `writer claim state / unresolved-authority` note，而不是让 atlas 本身代行 promotion。
+
+| current-truth object | writer claim state / sole writer after promotion | per-host width | forbidden substitute writer | freshness / eviction guard |
 |---|---|---|---|---|
 | `permission_mode` | `onChangeAppState` | CLI / SDK / external metadata projection | 任意 UI 本地猜测 mode | runtime externalization only |
 | `pending_action` | `sessionState + external_metadata` | host-facing status width | transcript replay / tool log prose | stale field cleanup before reuse |
 | `worker_status` | `reportState/reportMetadata` | CCR / SDK status width | event timeline / print log | coalesced uploader + flush discipline |
 | `bridge pointer vs session head` | server/session head | bridge freshness pointer | pointer 直接宣布 current truth | TTL + head adoption |
 
-按 landing card 语法再压一层，这张表里的 `forbidden substitute writer` 就是各 current-truth object 的第一条 `local veto cue`，而离它最近、能重新取回 sole writer 资格的 `freshness / recovery / eviction` seam，就是 `first retreat layer`。
+按 landing card 语法再压一层，这张表里的 `forbidden substitute writer` 就是各 current-truth object 的第一条 `local veto cue`，而离它最近、能重新取回 writer claim 合法性的 `freshness / recovery / eviction` seam，就是 `first retreat layer`。若对象仍未 promotion，就把第二栏写成 `writer claim state` 并显式附上 `unresolved-authority note`，而不是急着预填 sole writer。
 
 ## 5. Anti-Zombie Pattern Catalog：过去不能把自己写回现在
 

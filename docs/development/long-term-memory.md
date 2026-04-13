@@ -8,6 +8,45 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 governance-aftermath-pages-must-keep-receipt-grade-tail-apr13 live 记忆：
+  - `bluebook/userbook/README`、`10`、`risk/README` 与 `playbooks/README` 现在也应直接写死：用户侧 readback、reopen 资格与 cleanup-aftermath 只能沿着 `same authority lease / decision delta / explicit cleanup trigger` 这条尾链读，未带来新增 delta 的 surface 一律只算 `receipt-grade`
+  - 更稳的默认写法是：`userbook` 只把治理界面翻译成 `weak readback / lease checkpoint / receipt-grade evidence`；`10` 只把 `lease checkpoint` 读成“同租约 + 有无新 delta”；`risk` 只读 `product promise readback / reopen eligibility readback / evidence receipt binding`；`playbooks` 只消费这些 receipt-grade inputs，不倒放回治理层重签当前事实
+- 当前批次继续新增一条 prompt-frontdoors-must-name-retired-rejudications-apr13 live 记忆：
+  - `bluebook/README`、`philosophy/README`、`navigation/README` 与 `philosophy/84` 现在也应直接写死：Prompt 前门和 why owner page 不只说 `same-world`，还要显式点名 `lawful inheritance / search-pruning / decision-retirement` 三条 owner law，说明 runtime 到底替 later consumer 退休了哪些世界、动作与继续资格重判
+  - 更稳的默认写法是：根前门先问 later consumer 继承的是否仍是同一工作对象、同一批仍被排除的分支、以及同一组继续退役的旧判断；`navigation/` 则只在 first-hop 已成立后反查 artifact gap，不再用 `compiled world basis / first reject` 这类缩写黑话和 owner page 竞争
+- 当前批次继续新增一条 source-frontdoors-must-speak-claim-state-before-object-truth-apr13 live 记忆：
+  - `architecture/README`、`api/README`、`architecture/84` 与 `philosophy/87` 现在也应直接写死：公开证据未 promotion 前，frontdoor 默认先说 `writer claim state / unresolved-authority / host-facing truth claim-state`，而不是直接把对象、writer 或 host-facing truth 写成 landed truth
+  - 更稳的默认写法是：`architecture/` 只让 promotion-passed object 升级成正式对象；`api/` 只说明 claim-state / admission boundary / consumer subset；`84 / 87` 则把 `sole writer` 收回 `writer claim state` 语境，直到 `guides/102` 的 promotion gate 真正放行
+- 当前批次继续新增一条 governance-bridges-must-name-same-lease-new-delta-apr13 live 记忆：
+  - `bluebook/05`、`09`、`architecture/71`、`architecture/83` 与 `security/README` 现在也应直接写死：治理桥页和 runtime 对照表先问 `same authority lease / new decision delta / cleanup trigger`，而不是先让 `approval / modal / status / usage / compact / bypass` 这些 surface 抢答
+  - 更稳的默认写法是：`status / usage / host replay / worker_status / permission_mode / pending_action` 默认都先按 `zero-delta ask / weak readback / receipt-grade evidence` 读；`bypass` 只是在同租约内压缩剩余 ask，不新增 signer、scope delta、durability class 或 cleanup trigger；`resume / continue / rewind` 只配当 recovery carrier，不自动续租旧 authority
+- 当前批次继续新增一条 frontdoor-must-separate-belonging-orientation-and-qualification-apr13 live 记忆：
+  - `bluebook/README`、`navigation/15`、`userbook/00`、`userbook/01/{02,05}` 现在也应直接写死：`belonging != admissibility`，`orientation package != admissible witness package`，以及 `summary / title / last reply / display transcript / status / usage` 默认只配做 reminder、projection 或 checkpoint surface，不单独签发 `continue qualification` 或 host truth
+  - 更稳的默认写法是：Prompt 继续先问 later consumer 是否仍不必重开 `world-definition / tool legality / next-action search`；开工前自检则把失败后的处理动作拆成 `suspend / reopen / final-but-retain / retire-with-marker`，而不是继续用“清理后恢复”把不同 failure mode 混成一句
+- 当前批次继续新增一条 promotion-gate-must-require-signer-effect-ceiling-veto-apr13 live 记忆：
+  - `guides/102`、`architecture/84` 与 `architecture/38` 现在也应直接写死：公开 artifact / operator artifact 的 promotion gate 不只看 `signer` 与 `local veto cue`，还必须同时点名 `effect ceiling`；`runtime-core evidence` 与 `operator-governance evidence` 也只构成交叉 evidence family，不额外升格成新 rung 或更高 signer class
+  - 更稳的默认写法是：atlas 只收 promotion-passed objects；若对象仍缺 writer promotion 所需证明，就补 `writer claim state / unresolved-authority` note，而不是让 atlas 或 evidence family 自己代行 promotion
+- 当前批次继续新增一条 governance-runtime-needs-durability-and-cleanup-trigger-apr13 live 记忆：
+  - `security/README`、`architecture/71` 与 `83` 现在也应直接写死：`approval receipt / status / host replay` 若没有新增 `decision delta`，就是 `zero-delta ask / weak readback`；结果外置必须显式写成 `durability class + cleanup trigger`，continuation gain 也必须绑定在同一条 authority lease 上
+  - 更稳的默认写法是：治理效率不是 approval latency，而是 `delta-free approvals` 更少；continuation 若只是在重复保留旧边界、旧结果与旧 readback，就应按 requalification / cleanup 处理，而不是按 progress 记账
+- 当前批次继续新增一条 prompt-witness-must-be-admissible-not-reminding-apr13 live 记忆：
+  - `architecture/82`、`guides/39`、`philosophy/84` 与 `userbook/01/02` 现在也应直接写死：witness 的最低标准不是“能帮人回忆”，而是 later consumer 不重读全文、不重建 authority / lineage 也能继续；projection 越权因此不只是混写，而是 witness forgery
+  - 更稳的默认写法是：`lawful forgetting` 先按“删掉后还会不会逼 later consumer 重开 world-definition / tool legality / next-action search”来定义可忘集合，再从这条法推出 `current work / next-step guard / rollback boundary / qualification` 等最小 witness；摘要、标题、最后一条消息最多只算 reminder
+- 当前批次继续新增一条 governance-runtime-must-name-authority-lease-and-decision-delta-apr13 live 记忆：
+  - `architecture/83` 与 `71` 现在也应直接写死：治理与省 token 的统一性，不只在 canonical chain，更在每次扩张都至少点名 `signer / scope delta / durability class / cleanup trigger`，并用 `decision delta / delta-free approvals` 而不是 approval latency 评估效率
+  - 更稳的默认写法是：authority lease 先于 UI/弹窗体感；continue gain 也不只看 token 比例，而要看这次续租有没有新增 decision delta，否则只是时间被免费烧掉
+- 当前批次继续新增一条 repair-schema-should-use-stale-writeback-not-stale-writer-apr13 live 记忆：
+  - `api/59` 现在也应直接写死：repair-surface evidence family 默认优先写 `projection / snapshot / legality witness / stale writeback`，而不是 `verdict / stale writer` 这类更像 live type 或 object writer 的命名
+  - 更稳的默认写法是：只要 worktree 仍是 `mirror absent / public-evidence only`，repair 页就先写 review schema 与 evidence family，不把 exported-type 口气偷渡进 host-facing 协议页
+- 当前批次继续新增一条 repair-pages-must-prefer-evidence-family-over-live-type-apr13 live 记忆：
+  - `api/53` 与 `api/59` 现在也应直接写死：在 `mirror absent / public-evidence only` 条件下，host-facing repair 页优先写 `evidence / projection / snapshot / receipt candidate / object family / review schema`，不再把 `verdict`、field family 或 exported type 名字写成当前产品已公开签出的 live ABI
+  - 更稳的默认写法是：`53` 用 `freshness evidence / rollback boundary receipt candidate`；`59` 用 `anti-zombie evidence / repair object family`；若还缺 live mirror，就先把页首 law 写明而不是靠正文自我降格
+- 当前批次继续新增一条 mirror-absent-claim-state-and-aftermath-receipts-apr13 live 记忆：
+  - `guides/102`、`api/53`、`risk/README` 与 `playbooks/README` 现在也应直接写死：公开镜像页先回答 `claim state / provisional claim / receipt-grade aftermath`，不再把 `surface`、freshness 内部机制或 aftermath 读回误写成当前对象 truth 或 live ABI
+  - 更稳的默认写法是：`102` 统一把 `current-truth surface` 收回 `current-truth claim state / provisional claim`；`api/53` 先外化 `freshness evidence / cleanup witness / rollback boundary receipt candidate`；`risk/README` 只读 cleanup-aftermath 的 `receipt-grade` residues；`playbooks/README` 只消费这些 aftermath objects，不重解释它们
+- 当前批次继续新增一条 root-preflight-blocked-by-unmerged-root-ahead-apr13-batch5 live 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败；`git status --short --branch` 同时显示 `main...origin/main [ahead 43]` 与多处 root-level 未收敛改动
+  - 更稳的默认写法是：把这类根仓状态只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、更新记忆与提交
 - 当前批次继续新增一条 governance-surfaces-upgrade-only-with-real-delta-apr13 live 记忆：
   - `10`、`security/README` 与 `userbook/05/06-Status、Doctor、Usage` 现在也应直接写死：任何 surface 只有在新增 signer 证据、boundary delta 或 cleanup delta 时才配从 readback 升级成治理事实；否则一律只算 receipt-grade / `weak readback`
   - 更稳的默认写法是：治理效率不是 approval 更快，而是 delta-free approvals 与 `zero-delta ask` 更少；若 ask 只是更顺滑地回单，却没新增定价/边界/cleanup 增量，就仍按 `approval fatigue / free-expansion relapse` 记账

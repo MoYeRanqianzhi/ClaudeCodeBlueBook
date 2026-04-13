@@ -135,11 +135,14 @@ next_step_guard:
 [ ] 不读全文时，接手者是否仍能继续
 ```
 
+更硬一点说，这一关审的不是字段有没有出现，而是这些字段是否已经证明成立：`lawful_forgetting_abi_ref` 与 `next_step_guard` 只有在 later consumer 不重读全文、不重建 authority / lineage 也能继续时才算有效；否则这些 ref 只是装饰字段，应该直接 reject。
+
 直接拒收条件：
 
 1. 交接包只有摘要和 transcript 索引，没有 `current_object`。
 2. 交接包没有 `next_step_guard`，却要求后来者继续。
 3. compact 之后没有 `lawful_forgetting_abi_ref`，只剩口头描述。
+4. `lawful_forgetting_abi_ref` 或 `next_step_guard` 虽然出现，但 later consumer 仍必须重建 authority / lineage 才能继续。
 
 ## 7. Validator 输出等级
 

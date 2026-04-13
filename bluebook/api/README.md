@@ -1,11 +1,11 @@
 # API 文档
 
-`api/` 不先回答“接口有多少”，而先回答：Claude Code 哪些 truth 会被正式暴露给宿主，哪些 consumer 只配消费哪一层 truth，哪些危险面必须被显式承认。
+`api/` 不先回答“接口有多少”，而先回答：Claude Code 哪些 host-facing truth claim / admission boundary 会被正式暴露给宿主，哪些 consumer 只配消费哪一层 truth，哪些危险面必须被显式承认。
 如果你还没先定清主语或 first-hop，不要急着把这里读成接口库存；那时你缺的还是根入口，不是 API owner page。
 
 还要先记一句：
 
-- `api/` 不是接口清单层，而是真相暴露层；更稳的读法不是先按编号扫平面，而是先问哪些 contract 被外化、哪些 registry 在列出对象、哪些公开证据已经足够支持 `current-truth claim state`、哪些对象在公开镜像里还只配停在 `provisional claim`，宿主自己只是哪个 `consumer subset`，以及哪些热点只能在 `hotspot kernel / mirror gap discipline` 的约束下被消费。
+- `api/` 不是接口清单层，而是 host-facing truth claim-state 暴露层；更稳的读法不是先按编号扫平面，而是先问哪些 contract 被外化、哪些 registry 在列出对象、哪些公开证据已经足够支持 `current-truth claim state`、哪些对象在公开镜像里还只配停在 `provisional claim`，宿主自己只是哪个 `consumer subset`，以及哪些热点只能在 `hotspot kernel / mirror gap discipline` 的约束下被消费。
 
 如果把 API 前门继续压成最短公式，也只剩三条：
 
@@ -20,8 +20,8 @@
 
 更硬一点说，`api/` 在目录里的发言权也只该剩三条：
 
-1. `承认权`
-   - 哪些 contract / schema / host-facing truth 被正式承认。
+1. `claim-state / 承认边界`
+   - 哪些 contract / schema / host-facing truth claim 被正式承认，哪些还只停在 admission boundary。
 2. `消费边界`
    - 哪些 host / adapter / consumer 只配消费哪一层 truth。
 3. `危险面暴露`
@@ -31,11 +31,11 @@
 
 1. `code present`
 2. `registry listed`
-3. `host-facing truth signed`
+3. `host-facing truth claim signed / promotion-passed`
 4. `consumer subset admitted`
 5. `promise boundary declared`
 
-代码里有，不等于 registry 承认；registry 承认，不等于 host-facing truth 已签发；truth 已签发，也不等于所有 consumer 都能合法消费。
+代码里有，不等于 registry 承认；registry 承认，不等于 host-facing truth claim 已签发；claim 已签发，也不等于所有 consumer 都能合法消费。
 
 如果一页开始替 `philosophy/` 重判必要性，替 `architecture/` 重新发明对象链，或替 `playbooks/` 直接下 verdict，它就已经越权。
 若争议已经变成“这个 owner 页是否越位、目录契约是否失真”，回 [../meta/README.md](../meta/README.md)；那已不是 host-facing truth 本身。
@@ -75,7 +75,7 @@
 - 如果你还在问“为什么必须如此设计”或“第一条反证信号是什么”，先回 `../navigation/15` 与 `../navigation/41`。
 - 如果你在争的是目录发言权而不是 host-facing truth，回 [../meta/README.md](../meta/README.md)。
 
-更准确地说，`api/` 有正式承认权与消费边界说明权，但没有第一性原理改判权，也没有现场 verdict 签发权。
+更准确地说，`api/` 有 host-facing truth claim-state 与消费边界说明权，但没有第一性原理改判权，也没有现场 verdict 签发权。
 
 ## 维护约定
 

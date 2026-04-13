@@ -12,6 +12,7 @@
 - 当你需要把 later maintainer 的局部反对权转成正式拒收、回退与 reopen 顺序，而不再停在“看起来不对”的体感层。
 
 更稳一点说，`playbooks/` 也必须继承 shared first-answer order：先确认母线、对象与用户侧 readback 都已定住，再判 `execution verdict`、rollback 与 reopen；如果顺序倒过来，执行手册就会重新退回“按模板代替对象链”。
+更硬一点说，`playbooks/` 的起点应是：`risk/` 已先把 cleanup-aftermath 的 readback、receipt-grade inputs / evidence bindings 与 reopen eligibility 整理成可执行输入；执行页只消费它们，不重解释它们。
 
 ## 只在 verdict 已定后再选执行入口
 
