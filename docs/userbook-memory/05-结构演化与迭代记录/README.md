@@ -81,6 +81,7 @@
 - [345-2026-04-08-path-90 stable-vs-conditional frontend split 拆分记忆.md](./345-2026-04-08-path-90%20stable-vs-conditional%20frontend%20split%20拆分记忆.md)
 - [346-2026-04-08-root second-hop hub contraction after main merge 拆分记忆.md](./346-2026-04-08-root%20second-hop%20hub%20contraction%20after%20main%20merge%20拆分记忆.md)
 - [347-2026-04-08-noninteractive hidden-flag visibility alignment 拆分记忆.md](./347-2026-04-08-noninteractive%20hidden-flag%20visibility%20alignment%20拆分记忆.md)
+- [348-2026-04-08-frontend conditional-surface wording alignment 拆分记忆.md](./348-2026-04-08-frontend%20conditional-surface%20wording%20alignment%20拆分记忆.md)
 
 ## 全量档案
 
