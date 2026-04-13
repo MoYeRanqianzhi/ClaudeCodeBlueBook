@@ -30,6 +30,7 @@
 - `public artifact ceiling -> contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
 这条 ladder 不是证据分类游戏；本页只判断证据是否足以 promotion，还是必须 downgrade 成 candidate、subset 或 gap note。
+在目录契约上，本页也是 `根入口 -> guides/102 -> owner page` 里的唯一 promotion gate：没有经过这一页的 claim-state / downgrade discipline，`architecture/`、`api/`、`philosophy/` 与其他 frontdoor 页里的 noun 都只配先按 claim-state 读，不能自动升级成 landed truth。
 
 这里还应先多记一句：
 
@@ -63,7 +64,7 @@
 
 这一步不过，后面各级判断都会被写浅，因为你会先把“可见”误当成“已被完整证明”。
 更硬一点说，能把 `public artifact ceiling / downgrade / gap note / change-risk record` 固化成统一 speaking-rights protocol，本身就是公开可见的工程先进性，因为它降低的是过度主张、误改与制度失忆成本。
-本页只判断 promotion / downgrade，并要求记录 `dependency honesty / temporal honesty` 风险；这些风险为什么构成源码质量判断，统一回 `87`。
+本页只判断 promotion / downgrade，并要求记录 `dependency honesty / temporal honesty` 风险；这些风险为什么构成源码质量判断，统一回 `87`。更稳一点说，`102` 负责回答“公开证据够不够把 claim-state 升级给 owner page”，owner page 再回答 why、object 或 host-facing consumption；本页本身不越位成对象页，也不把 owner noun 预先签成 landed truth。
 
 更稳的公开镜像研究顺序，不是：
 
