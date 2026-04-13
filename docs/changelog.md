@@ -2,7 +2,7 @@
 
 ## 2026-04-13
 
-- 继续更新 `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 deeper why-owner residual 协议：`81` 现在把中后段的 lawful-forgetting / continuation 规则压回单一 schema，不再并列堆叠近似矩阵；同批对 `85 / 86 / 87` 做了并行复核，但未再做低收益正文改动。
+- 继续更新 `bluebook/philosophy/{85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md,86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md,87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 deeper why-owner residual 协议：`85` 现在把 why 页里的治理尾链收回成更纯的 `single pricing order / single repricing furnace`，不再顺手带出过长的尾链 inventory；`86` 现在补出了 `public-evidence only` 的 why-owner ceiling；`87` 则把 future-maintainer rejectability 再压薄一层，去掉更像 operator-artifact review gate 的酸测试清单。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight failure 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 因未解决冲突失败；`git status --short --branch` 同时显示根仓多处脏改动，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 处于 `UU`；这次失败只作为外部事实记录，不在根仓做任何收敛动作。
 
