@@ -2,6 +2,9 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/{README.md,philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 Prompt frontdoor handoff 协议：根 `README` 现在更明确把 builder-facing 机制链固定分流到 `81`；`84` 现在更明确写死 `README -> 84 -> 81` 的标准 handoff；`06` 也补明 Prompt 自校一旦退化成 witness/object-chain 缺栏，就应退出 self-audit，回 `84 / 81`，不继续留在本页。
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight failure 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 因未解决冲突失败，`git status --short --branch` 同时显示 `main...origin/main [ahead 32]` 与 `bluebook/security/{README.md,appendix/README.md,source-notes/README.md}`、`docs/development/research-log.md` 等未收敛文件；这次失败只作为外部事实记录，不在根仓做任何收敛动作。
+
 - 继续更新 `bluebook/{README.md,philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md,navigation/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 source-quality stop-before-object-truth 协议：根 `README` 现在更明确写死源码质量线一旦开始追 `writer claim state / first retreat layer / fail-closed seam`，就已离开 root frontdoor；`87` 现在把离场条件写得更硬，reader 一旦从 why-proof 切到 object truth，本页必须停止；`navigation/README` 也同步写死，route 页不配把 `layout praise / provisional / pass` 这种成熟度 verdict 当成 route clue。
 
 - 继续更新 `bluebook/{README.md,philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md,navigation/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 source-quality frontdoor / route ceiling 协议：根 `README` 现在更明确把源码质量线压回 `合法复杂度中心 / one writable present / later-maintainer veto` 的 first test；`87` 现在更明确写死在 `public-evidence only` 下，本页最强只到 why-proof / review standard，`writer / effect ceiling / first retreat layer / fail-closed seam` 都只先算 next-hop noun；`navigation/README` 也补明：若还在判断 advancedness 本身是否成立，而不是只缺下一种 artifact / seam，就应离开 route 页。

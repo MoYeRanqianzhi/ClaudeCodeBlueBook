@@ -63,6 +63,7 @@
 
 从第一性原理看，这张 worked pair 真正保护的不是“handoff 写得够不够像原对话”，而是 later consumer 会不会因为 carrier 看起来顺手，就跳过 witness rebind，直接把旧判断重新带回 candidate set。
 若你只记得 `84` 的 verdict box，却不确定 `carrier-only / witness-rebind / pass / provisional / reject` 在对象层到底长什么样，下一跳不是补更多定义，而是直接去 `81` 看 worked example；`84` 只固定 owner law，不重发 mechanism inventory。
+更硬一点说，Prompt 线的标准前门 handoff 也只认一条：`README -> 84 -> 81`。`84` 负责 why 与 verdict box，`81` 负责 builder-facing object chain；若一页同时想把这两份 speaking right 都留下来，它就会重新长成第二前门。
 
 ### `carrier-only` vs `witness-rebind` 最小复核块
 

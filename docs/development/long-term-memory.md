@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-frontdoor-should-route-builder-facing-readers-to-81-apr13 live 记忆：
+  - `bluebook/README`、`philosophy/84` 与 `06` 现在也应直接写死：Prompt 线的标准 handoff 只认 `README -> 84 -> 81`；`84` 负责 why 与 verdict box，`81` 负责 builder-facing object chain，`06` 若已退化成 witness/object-chain 缺栏，就应退出 self-audit，回这条链
+  - 更稳的默认写法是：根前门不直接把 builder-facing 机制链塞进首跳说明；why owner 不偷补 object inventory；self-audit 不代写机制页
+- 当前批次继续新增一条 root-preflight-blocked-by-unmerged-security-docs-apr13-batch6 live 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因未解决冲突失败；`git status --short --branch` 显示 `main...origin/main [ahead 32]`，并出现 `bluebook/security/{README.md,appendix/README.md,source-notes/README.md}` 与 `docs/development/research-log.md` 等 `UU` / 脏改动
+  - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、更新记忆与提交
 - 当前批次继续新增一条 source-quality-route-pages-must-stop-before-object-truth-apr13 live 记忆：
   - `bluebook/README`、`philosophy/87` 与 `navigation/README` 现在也应直接写死：源码质量线一旦开始追 `writer claim state / first retreat layer / fail-closed seam`，就已经离开 root frontdoor 与 why owner；`navigation/` 也不配把 `layout praise / provisional / pass` 这种成熟度 verdict 当成 route clue
   - 更稳的默认写法是：根入口只做 `合法复杂度中心 / one writable present / later-maintainer veto` 的 first test，`87` 只做到 why-proof / review standard，`navigation` 只回答缺哪种 artifact，不回答 advancedness 是否已成立

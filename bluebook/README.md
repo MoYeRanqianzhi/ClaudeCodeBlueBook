@@ -19,6 +19,7 @@
 
 - Prompt
   - `philosophy/84`
+  - 若 first principles 已站住、你需要 builder-facing 机制链、`carrier / witness` 区分或 worked example，下一跳固定去 `philosophy/81`
   - 若 first principles 已站住、你需要 worked examples 或验证样例，再顺跳 `playbooks/09 / 20 / 23 / 26 / 77`
 - 治理
   - [10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)
