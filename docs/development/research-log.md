@@ -2,6 +2,10 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `407`、把附录推进到 `391`、把源码剖面推进到 `258`；链路从 `stronger-request liability-release-governance` 继续推进到 `stronger-request archive-close-governance`，说明 stronger-request cleanup 已进一步进入“系统是否已经不再欠它责任”与“它是否已经从当前世界的活跃位置上撤下”之间的治理分层。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=408 / appendix=391 / source-notes=258`。当前唯一 open question 已继续前推到 `stronger-request audit-close-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `406`、把附录推进到 `390`、把源码剖面推进到 `257`；链路从 `stronger-request forgetting-governance` 继续推进到 `stronger-request liability-release-governance`，说明 stronger-request cleanup 已进一步进入“旧回音风险什么时候已经低到可被遗忘”与“系统什么时候已经不再欠它责任”之间的治理分层。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=407 / appendix=390 / source-notes=257`。当前唯一 open question 已继续前推到 `stronger-request archive-close-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 - 本轮新的 userbook frontdoor 结论：我把 `userbook/00-导读.md` 与 `userbook/README.md` 的用户第一跳重新对齐到了三条母线，但仍只做 frontdoor 纠偏。现在 `userbook/README` 不再把 Prompt 首句压成“同一件事 + 附件 + working set”，而是更明确写成 `same-world test`；治理首句也补齐到了 `earliest unpaid expansion + repricing proof / lease checkpoint / cleanup`；证据顺序桥则继续压回 `contract / registry / current-truth claim state`。当前判断是，这一步能继续减少 later consumer 在 userbook 根前门里把 continuity、旧版 Prompt 压缩链或 UI/adapter 体感误读成第一判断的概率。
 - 本轮新的 capability bridge 结论：我把 `05-功能全景与API支持.md` 的三句 bridge judgment 继续补齐到和入口页同强度，并顺手把 `09-三张控制面总图` 里 Prompt 线仍停在旧版六段对象链的首答句收回 `same-world test`。当前判断是，这一步能继续减少 later consumer 在功能总览页和总图页里重新学到一版比入口页更薄的 first test。
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `405`、把附录推进到 `389`、把源码剖面推进到 `256`；链路从 `stronger-request finality-governance` 继续推进到 `stronger-request forgetting-governance`，说明 stronger-request cleanup 已进一步进入“这份结果以后回来时是否仍然成立”与“它相关的旧回音风险什么时候已经低到可被遗忘”之间的治理分层。
