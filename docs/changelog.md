@@ -2,6 +2,10 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/{README.md,03-设计哲学.md,06-第一性原理与苏格拉底反思.md,philosophy/README.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 high-traffic why/frontdoor 协议：根 `README` 现在把源码质量线更明确收回 typing，不再在入口内浓缩 mini-doctrine；`03` 现在只解释制度 why，不再顺手补 owner shorthand；`06` 现在只追问有没有把 projection、目录观感或作者体感误读成正式拒收能力，不再自己复述 compact doctrine；`philosophy/README` 则把 owner table 收回成最小 owner 索引。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
+
 - 继续更新 `bluebook/{navigation/README.md,09-三张控制面总图：世界进入模型、扩张定价与防过去写坏现在.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 route-only / constitutional-hook 协议：`navigation/README` 现在按“主语 + 缺口类型 + first matching exit”机械分流，不再罗列 Prompt / source-quality doctrine nouns；`09` 现在则更明确只保留 first answer、最短动作链与 cross-line mirror，Prompt hook 直接显式成 `84 -> 81`，治理 hook 只保留 single pricing order，当前真相 hook 只保留 `guides/102`。
 
 - 继续更新 `bluebook/{05-功能全景与API支持.md,philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 bridge-only / why-owner 协议：`05` 现在只签 `surface exists / implementation visible`，不再自己重跑 `authority lease / decision delta / repricing proof / cleanup`；`87` 则把 `layout praise / provisional why / object-check ready` 更明确收回成 why owner 的 overread discipline，不再让 `object-check ready` 被读成对象证明已经成立。

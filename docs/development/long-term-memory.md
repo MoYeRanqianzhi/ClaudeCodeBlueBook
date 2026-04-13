@@ -13,6 +13,21 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-high-traffic-why-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `root-readme-should-type-not-teach-source-quality-doctrine-apr13 live` 记忆：
+  - `bluebook/README.md` 现在也应直接写死：根入口对源码质量线只做 typing，不再内嵌 `provisional / 合法复杂度中心 / one writable present / later-maintainer veto` 这类 mini-doctrine；root 只把 evidence ceiling 问题送去 `guides/102`
+  - 更稳的默认写法是：根入口只问 Prompt 是否还在重谈世界、治理是否仍有新增 delta、当前是否先被正式保护；why / object / verdict 一律离场给 owner 页
+- 当前批次继续新增一条 `03-should-explain-constitutional-why-without-owner-shorthand-apr13 live` 记忆：
+  - `bluebook/03-设计哲学.md` 现在也应直接写死：高流量哲学页可以解释三条母线为什么成立，但不再顺手补 `repricing / cleanup` owner 责任、present writer / veto owner、operator artifact `effect ceiling` 这类 owner shorthand
+  - 更稳的默认写法是：`03` 只讲制度 why 与去魅，不讲 owner nouns；一旦问题开始转成 signer、cleanup、truth plane 或 `effect ceiling`，就离场回对应 owner 页
+- 当前批次继续新增一条 `06-should-audit-overreach-not-restage-doctrine-apr13 live` 记忆：
+  - `bluebook/06-第一性原理与苏格拉底反思.md` 现在也应直接写死：自校页只追问有没有把目录观感、作者体感或 projection 冒充正式拒收能力，不再自己复述 `present-veto / one writable present / maturity verdict` 这类 doctrine shorthand
+  - 更稳的默认写法是：`06` 只给降格、回退与离场条件；一旦自校问题长成 why、gate 或 object proof，就退出到 `84 / 85 / 86 / 87 / 102 / architecture`
+- 当前批次继续新增一条 `philosophy-readme-should-use-minimal-owner-index-not-table-inventory-apr13 live` 记忆：
+  - `bluebook/philosophy/README.md` 现在也应直接写死：哲学目录页只保留最小 owner 索引，不再用一张更像 inventory 的 owner table 拉长 why 入口
+  - 更稳的默认写法是：Prompt why 只认 `84`，必要时再去 `81`；治理 why 只认 `85`，earliest `unpaid expansion` 未定位时先回 `10`；自校只认 `06`
 - 当前批次继续新增一条 `root-sync-healthy-for-route-constitution-batch-apr13 live` 记忆：
   - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：把这次 root preflight 只记作 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`

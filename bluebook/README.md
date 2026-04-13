@@ -6,11 +6,14 @@
 - 扩张如何被定价
 - 当前如何不被过去写坏
 
-第一次进入先在本页定题：Prompt 线先问 later consumer 在 `verify / delegate / tool choice / resume / handoff` 时是否还要重答“谁定义世界、边界在哪、工具还能不能用”，以及 `resume / handoff / compaction` 后留下来的 transcript / lineage 是否不仅“还像同一段故事”，还足以继续完成同一条 `lawful inheritance`：继续继承同一工作对象，让 `search-pruning` 维持同一批仍被排除的分支，让 `decision-retirement` 维持已退役判断不被 summary / 标题 / 最后一条消息之类 surface 静默带回候选集，并复现同一条 `continue / reject verdict`；若只剩易读 surface，它们最多证明 belonging，不证明 admissibility。治理线先问最早 `unpaid expansion` 是什么、现在是不是仍在同一 `authority lease` 里、这次是否真的新增 `decision delta`、继续前有没有补齐 `repricing proof / lease checkpoint / explicit cleanup trigger`；若没有新增 delta，审批回单、状态面板与 usage 尾链都只算 `receipt-grade / weak readback`。当前真相保护线只先问当前为何不被过去写坏；源码质量 why、对象摘要与 fail-closed seam 统一留给后续 owner 页接手。定清这三个第一问题后，根入口只做一次首跳：Prompt 去 `philosophy/84`，治理去 [10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，当前真相保护去 `guides/102`。根入口不再提前列 second-hop artifact 或归属目录。
-当前真相保护线也只先判证据 ceiling 与 current-truth 入口：`102` 先回答公开证据够不够支撑当前真相主张；若问题已经不在首跳，而是在分辨 why、object 或 verdict，再由对应归属页继续接手。
-更稳一点说，源码质量 advancedness 若还落不到 `why-proof + object landing`，就只配停在 `provisional`，不能在根入口被写成成熟 verdict。
-更硬一点说，源码质量线在根入口只配先做 `合法复杂度中心 / one writable present / later-maintainer veto` 的 first test；若开始展开 why-proof、对象摘要或 fail-closed seam，根页就已经越位。
-如果这三问已经答出“是”，但你还在追 `writer claim state / first retreat layer / fail-closed seam`，那就已经离开根入口，下一跳统一回 `guides/102 -> philosophy/87 或 architecture/README`，而不是继续留在 frontdoor。
+第一次进入先在本页定题，不先学 second-hop inventory：
+
+- Prompt 线只先问 later consumer 在 `verify / delegate / tool choice / resume / handoff` 后，是否还要重谈世界、重搜动作或重判继续资格；若要，先回 `philosophy/84`
+- 治理线只先问最早 `unpaid expansion` 是什么、这次继续是否仍在同一 `authority lease` 里且真的新增了 `decision delta`；若没有新增 delta，审批回单、状态面板与 usage 尾链都只算 `receipt-grade / weak readback`
+- 当前真相保护线只先问当前是否先被正式保护；源码质量 why、object landing 与 fail-closed seam 不在根入口展开
+
+定清这三个第一问题后，根入口只做一次首跳：Prompt 去 `philosophy/84`，治理去 [10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)，当前真相保护去 `guides/102`。根入口不再提前列 second-hop artifact 或归属目录。
+当前真相保护与源码质量线在根入口也只先做 typing：`102` 先回答公开证据 ceiling；若问题已经长成 why、object 或 verdict，就直接离开根入口，交给对应 owner 页。
 
 证据上限也先记一句：凡涉及路径级源码 certainty 的判断，首跳一律先去 `guides/102`；根入口不在这里继续判断证据状态。
 目录升级顺序也只认一条：`根入口 -> guides/102 -> owner page`。没有经过 `102` 的 claim-state / promotion gate，`architecture/`、`api/` 与其他 frontdoor 页里的 noun 都不能自动读成 landed truth。

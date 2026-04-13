@@ -3,24 +3,21 @@
 `philosophy/` 只回答三件事：世界如何合法进入模型，扩张为什么必须先被定价，过去为什么不得越权写回现在。这里不预排 first-hop，只保留 why 判据；若你缺的是证据 ceiling、对象摘要或执行 next hop，回对应归属页，不在这里补 route。更硬一点说，`philosophy/` 真正回答的是：Claude Code 分别替 later consumer 退休了哪些世界重判、扩张重判与当前真相重判。
 其中 `86` 只回答“为什么过去不得越权写回现在、为什么 `one writable present` 这条 claim 必须成立”，`87` 只回答“为什么源码质量要看合法复杂度中心、边界可证、下一次重构仍有路”；不要把 current-truth why 与 source-quality why 再压回同一条首答。若问题已经变成 admissibility、promotion 或 claim-state，统一先回 `guides/102`，而不是在 why 页里偷补 gate。
 
-如果继续把目录边界压成一张最小 owner 表，也只先看下面这张：
+如果继续把目录边界压成最小 owner 索引，也只记五句：
 
-| 你现在缺的是什么 | 更稳的 owner | 不该误进哪里 |
-|---|---|---|
-| Prompt 为什么有魔力 | `84`，必要时再读 `81` 的 mechanism worked example | `06` 不是 Prompt why owner |
-| 治理为什么先收费 | `85` | `userbook / security` 不代写 why |
-| 当前为什么不能被过去写坏 | `86` | `architecture/README` 不是 why owner |
-| 源码先进性为什么不等于 layout praise | `87` | `06` 不是 advancedness why owner |
-| 只是想自问这段论证有没有越位、混层或偷换主语 | `06` | `philosophy/README` 不把自校页升格成 why page |
+- Prompt why 看 `84`；若 why 已站住、只缺 builder-facing worked example，再去 `81`
+- 治理 why 看 `85`；若 earliest `unpaid expansion` 还没定位，先回 `10`
+- 当前真相 why 看 `86`
+- 源码质量 why 看 `87`
+- 只是想自问这段论证有没有越位、混层或偷换主语，看 `06`
 
 ## 三条 Why 判据
 
 - Prompt 线
-  - 如果 `verify / delegate / tool choice / resume / handoff` 后仍要重答世界定义、边界或继续资格，或在 `resume / handoff / compaction` 后重新判哪些 transcript / lineage 仍绑定继续资格，甚至把已排除或已退役分支重新拉回候选集，Prompt why 就还没成立
-  - 换句话说，Prompt why 先问 runtime 到底替 later consumer 退休了哪一段动作搜索、世界重谈与继续资格重判；答不出这条 `decision-retirement / search-pruning / lawful inheritance`，Prompt why 仍只是效果描述
-  - 缺 Prompt why 时看 `84`
+  - 如果 `verify / delegate / tool choice / resume / handoff` 后仍要重答世界定义、边界或继续资格，甚至把已排除或已退役分支重新拉回候选集，Prompt why 就还没成立
+  - 缺 Prompt why 时看 `84`；若 why 已站住、只缺 builder-facing mechanism worked example，再去 `81`
 - 治理线
-  - 如果解释答不出为什么 `unpaid expansion` 不能免费续租、为什么继续前必须先补齐 `same authority lease / new decision delta / cleanup trigger state`、检查顺序为什么必须把风险提前收费，以及为什么无新增决策增益时应撤销自动化或退回人工，治理 why 就还没成立；`repricing proof / checkpoint / cleanup` 在这里最多只是这条硬公式的旧简称
+  - 如果解释答不出为什么 `unpaid expansion` 不能免费续租、为什么继续前必须先补齐 `same authority lease / new decision delta / cleanup trigger state`，治理 why 就还没成立
   - 缺治理 why 时看 `85`；若 earliest `unpaid expansion` 还没定位，先回 `10`
 - 当前真相线
   - 如果解释答不出为什么 current truth 不能让过去或投影代签，这条 why 就还没成立
