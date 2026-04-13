@@ -2,6 +2,12 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/52` surface-first 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
+
+- 本轮新的 `api/52` surface-first 结论：我只对 `bluebook/api/52-统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`52` 现在继续把 hidden ontology 往后压：页首不再先立 `governance key / typed ask / decision window / continuation pricing` 这套四句前门公式，而是先按 `control requests + settings / state / pending_action / usage surfaces` 说清宿主到底拿到了什么，再承认这些 nouns 只是解释词。`§1` 与 `§5.1` 也同步改成 `surface first / interpretation second`。当前判断是，这一步能把治理宿主页继续拉回 concrete host-facing claim-state，而不是在 `public-evidence only` 下先发明一组近似 landed object。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一个治理页已经补了降格横幅后，更稳的默认追问不该是“这些 noun 还能不能保留”，而应先问“首句到底是 surface 在说话，还是解释词在说话”；只要还是后者，claim ceiling 其实还没真正降下来。当前判断是，这个问法能继续把安全 / 省 token 线从“概念解释得更完整”拉回“宿主先看见了什么，之后才允许怎样解释”。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `guides/30 + philosophy/54` verdict-plumbing 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
 
 - 本轮新的 `guides/30` verdict-plumbing 结论：我只对 `bluebook/guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`30` 现在把 `effect ceiling` 从局部门槛接回了顶层协议：执行协议的输入显式加入 `carrier surface inventory / effect ceiling`，gate verdict 统一成 `pass / provisional / reject / unknown`，审读记录卡与失效类型也补进了 `effect-ceiling breach / carrier-only provisional / 本地 verdict`。当前判断是，这一步能把 Prompt 审读链从“知道有这个 gate”推进到“整条判定流都能消费这个 gate”。
