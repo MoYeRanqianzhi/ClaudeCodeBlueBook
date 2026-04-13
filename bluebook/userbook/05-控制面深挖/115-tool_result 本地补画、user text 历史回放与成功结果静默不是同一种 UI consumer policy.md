@@ -274,20 +274,29 @@
 
 这三者不是同一种 UI consumer policy。
 
-## 第六层：当前源码能稳定证明什么，不能稳定证明什么
+## 第六层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
+
+- same adapter layer != same consumer rationale
+- `convertToolResults` 当前在补 render parity，而不是 generic user replay
+- `convertUserTextMessages` 当前在补 replay completeness，而不是 live transcript 默认开关
+- success `result -> ignored` 当前在做 success-noise suppression，不是 replay/backfill 的第三种写法
+- success `result` 可以在 transcript adapter 里静默，但仍在 hook 状态层触发 `setIsLoading(false)`；这说明 transcript policy != completion handling
+
+### 条件公开
 
 - direct connect 当前只打开 `convertToolResults`
-- assistant history 与 remote viewerOnly 会同时打开 `convertToolResults` 和 `convertUserTextMessages`
+- assistant history 与 remote viewerOnly 当前会同时打开 `convertToolResults` 和 `convertUserTextMessages`
 - `convertUserTextMessages` 不是 live path 默认策略，而是 replay/history/viewer 相关策略
-- success `result` 会在 transcript adapter 里静默，但仍可在 hook 状态层参与收口
+- 哪些宿主会补 user text、哪些宿主只保 tool_result parity，仍取决于当前 host、history 与 attach path
 
-从当前源码不能在这页稳定证明的是：
+### 内部/灰度层
 
-- 所有宿主未来都只会维持这三类 policy
-- success `result` 的静默规则永远不会被产品策略调整
-- 其他 hook/UI 不会给 `result` 再加第四种 consumer
+- 所有宿主未来是否仍只维持这三类 policy
+- success `result` 的静默规则会不会被产品策略调整
+- 其他 hook/UI 会不会再给 `result` 加第四种 consumer
+- `convertToolResults`、`convertUserTextMessages`、`isSessionEndMessage(...)`、`setIsLoading(false)` 的 exact helper 顺序与 host wiring
 
 所以这页能安全落下的结论应停在：
 

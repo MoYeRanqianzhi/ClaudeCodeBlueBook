@@ -206,21 +206,28 @@
 
 就会再次把层级写平。
 
-## 第七层：当前源码能稳定证明什么，不能稳定证明什么
+## 第七层：稳定层、条件层与灰度层
 
-从当前源码可以稳定证明的是：
+### 稳定可见
 
-- `shouldIncludeInStreamlined(...)` 只纳入 `assistant` 与 `result`
-- `assistant` 分支会在 `streamlined_text`、`streamlined_tool_use_summary` 与 `null` 之间分流
-- `result` 分支是原样 passthrough
-- 大量其他 family 直接 suppression
-- `print.ts` 只有拿到非空 transformed object 才会写出
+- inclusion gate != transformation action
+- `shouldIncludeInStreamlined(...)` 当前只纳入 `assistant` 与 `result`
+- `assistant` 分支当前会在 `streamlined_text`、`streamlined_tool_use_summary` 与 `null` 之间分流
+- `result` 分支当前是原样 passthrough，而大量其他 family 当前直接 suppression
+- `print.ts` 当前只有拿到非空 transformed object 才会写出；这说明 passthrough != suppression
 
-从当前源码不能在这页稳定证明的是：
+### 条件公开
 
-- helper 一定参与当前主流程的实际 gating
-- 所有 `assistant` 最终都会有 streamlined 输出
-- 所有 `result` 都在所有宿主路径里扮演同一种保留角色
+- `assistant` 最终会不会真的得到 streamlined 输出，仍取决于当前 message 内容、tool 使用情况与 transformer 分支
+- `result` 在别的宿主路径里会不会继续扮演同一种保留角色，仍取决于当前 host/consumer route
+- helper 表达的 family gate intuition 与当前主流程实际 emit contract 之间，仍存在条件化实现差异
+
+### 内部/灰度层
+
+- `shouldIncludeInStreamlined(...)` 是否一定参与当前主流程的实际 gating
+- `createStreamlinedTransformer(...)` 的 exact helper 顺序与 host wiring
+- 所有 `assistant` 最终都会不会有 streamlined 输出
+- 所有 `result` 都会不会在所有宿主路径里扮演同一种保留角色
 
 所以更稳的结论必须停在：
 

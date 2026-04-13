@@ -29,6 +29,16 @@
 
 这里应该先于平铺编号列表阅读。
 
+如果你是从 `memory/05` 根 `README` 或主时间流继续收窄，
+
+默认也应在这里完成下一次 family-level 分流：
+
+- `100-115`
+- `116-127`
+- `128-149`
+
+而不是再回根索引或上游时间流重找更深入口。
+
 ## 第一性原理
 
 这组记忆真正想回答的不是：
@@ -65,6 +75,14 @@
 - [../374-2026-04-13-wire-visibility branch-map scope clarification 拆分记忆.md](../374-2026-04-13-wire-visibility%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [../375-2026-04-13-builder-callback-ui branch-map scope clarification 拆分记忆.md](../375-2026-04-13-builder-callback-ui%20branch-map%20scope%20clarification%20拆分记忆.md)
 
+如果你已经确认自己不只是看 `208/209/210` 这组结构页，
+
+而是要在这一半段内部继续按 summary / wire / callback / UI 的子家族浏览，
+
+直接进：
+
+- [../100-115-summary、wire、callback 与 UI 家族/README.md](../100-115-summary、wire、callback%20与%20UI%20家族/README.md)
+
 ### 2. 我已经进入 completion / attach / recovery（`116-127`）
 
 先读蓝皮书结构页：
@@ -95,9 +113,18 @@
 - [../381-2026-04-13-remote-truth branch-map scope clarification 拆分记忆.md](../381-2026-04-13-remote-truth%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [../382-2026-04-13-shell-pair branch-map scope clarification 拆分记忆.md](../382-2026-04-13-shell-pair%20branch-map%20scope%20clarification%20拆分记忆.md)
 
+如果你已经确认自己不只是看 `214/215/216/217` 这组结构页，
+
+而是要在这半段内部继续按 remote recovery / surface / truth / shell 的子家族浏览，
+
+直接进：
+
+- [../122-149-remote recovery、surface truth 与 shell 家族/README.md](../122-149-remote%20recovery、surface%20truth%20与%20shell%20家族/README.md)
+
 ## 这层入口保护什么
 
 - 保护的是 `100-149` 这簇记忆的家族入口，不是新的编号总图。
 - 保护的是 `208 -> 209 -> 210`、`211 -> 212 -> 213`、`214 -> 215 -> 216 -> 217` 三段接力关系。
 - 不把 `100-115`、`116-127`、`128-149` 误写成三份互不相干的旧批次。
+- 不让根索引或时间流继续代替这里完成 `100-149 -> 122-149` 这一步 family-level handoff。
 - 不在这一轮移动或重命名任何现有记忆文件。
