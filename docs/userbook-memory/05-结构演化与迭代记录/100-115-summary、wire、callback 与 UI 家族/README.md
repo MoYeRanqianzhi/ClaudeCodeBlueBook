@@ -80,6 +80,14 @@
 
 - [../374-2026-04-13-wire-visibility branch-map scope clarification 拆分记忆.md](../374-2026-04-13-wire-visibility%20branch-map%20scope%20clarification%20拆分记忆.md)
 
+如果你已经确认自己不只是看 `209` 这一张结构页，
+
+而是要在这一簇内部继续按 wider-wire / raw wire / callback narrowing / projection 浏览，
+
+直接进：
+
+- [../105-110-wider wire、callback narrowing 与 projection 家族/README.md](../105-110-wider%20wire、callback%20narrowing%20与%20projection%20家族/README.md)
+
 ### 3. 我已经进入 builder / callback / streamlined / UI（`111-115`）
 
 先读蓝皮书结构页：
