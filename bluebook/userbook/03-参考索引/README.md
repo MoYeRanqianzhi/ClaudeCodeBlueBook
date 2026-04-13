@@ -17,6 +17,15 @@
 
 如果你已经带着具体误判或叶子问题回来回查，再继续看下面这份清单。
 
+如果只先记住速查前三句，也只先记这三句：
+
+1. Prompt
+   - 这里最多帮你定位入口，不帮你重判 `same-world test`；若某个索引项逼你重新回答世界主语、工具合法性或继续资格，它就不是速查，而是在越位代签。
+2. 治理
+   - 这里最多帮你定位可见面，不帮你替 `unpaid expansion` 补票；`status / usage / dashboard / host replay` 一类索引若不能新增 `repricing / deny / cleanup` 决策增益，就只配当 `weak readback / tail evidence`。
+3. 当前真相
+   - 这里最多帮你定位证据与 danger surface，不帮你宣布现在；若一个列表项还答不出它靠的是 `contract / registry / current-truth claim state`，就不要把 projection、子集或热点文件体感误读成 signer。
+
 ## 最短路由
 
 别把这层当问题库存。更稳的默认用法是：

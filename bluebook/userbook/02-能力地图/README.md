@@ -3,6 +3,15 @@
 这一部分只承接 [../README.md](../README.md) 已判清的用户问题分型，按运行时主链拆成五个子层，帮助你理解“能力在哪一层暴露、边界在哪一层收紧”。
 它只做 capability map 与退层提示，不重签 host-facing truth，也不重判 why。
 
+如果只先记住读图前三句，也只先记这三句：
+
+1. Prompt
+   - 能力出现不等于 later consumer 可以在 `tool choice / resume / handoff / compaction` 后继续消费同一件事；若它还会逼你重答世界主语、重判继续资格或把已排除路径拉回候选集，这层就不是 Prompt 正常桥接。
+2. 治理
+   - 能力可见不等于扩张已被允许；继续前若还答不出 `repricing proof / lease checkpoint / cleanup`，就不要把当前层的按钮、面板或设置项误读成治理 verdict。
+3. 当前真相
+   - 能力挂在哪层，不等于它能宣布现在；若解释答不出它靠的是 `contract / registry / current-truth claim state`，以及如何不破坏 `one writable present`，这层就还只是地图，不是当前真相。
+
 如果你还没分清自己现在更需要工作主题前门、任务入口速查，还是控制面分诊，先回 [../README.md](../README.md) 的“按目标进入”；需要速查入口时再看 [../03-参考索引/README.md](../03-%E5%8F%82%E8%80%83%E7%B4%A2%E5%BC%95/README.md)，需要控制面主权时再看 [../05-控制面深挖/README.md](../05-%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%B7%B1%E6%8C%96/README.md)。
 
 ## 五个子层分别回答什么
