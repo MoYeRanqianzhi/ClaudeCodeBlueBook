@@ -9,6 +9,18 @@
 - late response 消费
 - 策略变化后的旧等待窗重判
 
+但这不表示 `201` 是 `198` 的 sandbox 版线性下一步。
+
+按 permission tail 的 canonical 拓扑，
+
+- `201`
+
+仍应回挂到 `196` 之后的 sandbox-network 分支；
+
+这里只是先借 `198` 的 request-level closeout 当反例，
+
+避免把 same-host sibling sweep 误写成单 ask 收口的放大版。
+
 但如果正文停在这里，读者还是很容易把 sandbox network bridge 这条线继续写平：
 
 - `SandboxNetworkAccess` 不就是 bridge 里另一个普通 `can_use_tool` ask 吗？

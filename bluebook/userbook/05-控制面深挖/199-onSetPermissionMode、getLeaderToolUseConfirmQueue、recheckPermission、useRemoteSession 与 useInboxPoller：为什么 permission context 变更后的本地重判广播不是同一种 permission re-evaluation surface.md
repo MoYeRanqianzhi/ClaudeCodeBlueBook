@@ -11,6 +11,23 @@
 
 不是同一种 closeout contract。
 
+但这不表示 `199` 是 `198` 的线性下一步。
+
+按 permission tail 的 canonical 拓扑，
+
+- `198`
+- `199`
+
+都应回挂到 `196` 之后的不同后继问题；
+
+这里只是先借 `198` 的 request-level closeout 当反例，
+
+再继续追问：
+
+- permission context change 下的 leader-local re-evaluation
+
+到底为什么不能被写成 closeout 延长线。
+
 但如果正文停在这里，读者还是很容易把 `recheckPermission()` 这条线继续写平：
 
 - 既然 `set_permission_mode` 会触发 queue recheck，那是不是所有 pending permission ask 都会跟着本地 mode 变化一起重判？
