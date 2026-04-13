@@ -23,6 +23,8 @@
 
 源码不是这么设计的。
 
+本页不重讲 99 页的 suggestion delivery，也不重讲 101 页的 session settle 与 raw stream tail；这里只拆一条更窄的边界：某条 suggestion 在进入 `lastEmitted` 之后，何时才有资格通过 `logSuggestionOutcome(...)` 结算为 accepted / ignored，以及为什么 `interrupt`、`end_session` 与 `output.done()` 这类收口路径可以结束 cleanup，却仍不替这条已交付 suggestion 补做 telemetry verdict。换句话说，delivered 只说明 consumer 已经见过 suggestion，accepted / ignored 仍取决于后续 prompt evidence；会话是否 settle、尾流是否清完，是相邻页讨论的另一层合同。
+
 ## 第一性原理
 
 更稳的提问不是：

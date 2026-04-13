@@ -103,6 +103,7 @@
 - [367-2026-04-13-suggestion delivery-accounting scope clarification 拆分记忆.md](./367-2026-04-13-suggestion%20delivery-accounting%20scope%20clarification%20拆分记忆.md)
 - [368-2026-04-13-summary-contract split scope clarification 拆分记忆.md](./368-2026-04-13-summary-contract%20split%20scope%20clarification%20拆分记忆.md)
 - [369-2026-04-13-terminal-cursor vs raw-tail scope clarification 拆分记忆.md](./369-2026-04-13-terminal-cursor%20vs%20raw-tail%20scope%20clarification%20拆分记忆.md)
+- [370-2026-04-13-delivered-ledger vs settlement-gate scope clarification 拆分记忆.md](./370-2026-04-13-delivered-ledger%20vs%20settlement-gate%20scope%20clarification%20拆分记忆.md)
 
 ## 全量档案
 
