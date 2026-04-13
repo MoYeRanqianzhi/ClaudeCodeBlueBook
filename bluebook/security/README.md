@@ -1,6 +1,6 @@
 # 安全专题索引
 
-`security/` 当前有 470 篇正文，范围 `00-469`；`appendix/` 当前有 453 篇速查文档；`source-notes/` 当前有 320 篇源码剖面。
+`security/` 当前有 471 篇正文，范围 `00-470`；`appendix/` 当前有 454 篇速查文档；`source-notes/` 当前有 321 篇源码剖面。
 
 `security/` 首页默认先压回三类机制 ambiguity：`signer / verdict ledger / cleanup authority`。
 `security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
@@ -385,6 +385,7 @@
 - [467-安全载体家族强请求清理续打治理与强请求清理完成治理分层：为什么artifact-family cleanup stronger-request continuation-governor signer不能越级冒充artifact-family cleanup stronger-request completion-governor signer](467-安全载体家族强请求清理续打治理与强请求清理完成治理分层.md)
 - [468-安全载体家族强请求清理完成治理与强请求清理终局治理分层：为什么artifact-family cleanup stronger-request completion-governor signer不能越级冒充artifact-family cleanup stronger-request finality-governor signer](468-安全载体家族强请求清理完成治理与强请求清理终局治理分层.md)
 - [469-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层：为什么artifact-family cleanup stronger-request finality-governor signer不能越级冒充artifact-family cleanup stronger-request forgetting-governor signer](469-安全载体家族强请求清理终局治理与强请求清理遗忘治理分层.md)
+- [470-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层：为什么artifact-family cleanup stronger-request forgetting-governor signer不能越级冒充artifact-family cleanup stronger-request liability-release-governor signer](470-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层.md)
 
 ## 阅读顺序
 
@@ -392,8 +393,8 @@
 - 想定位“当前真相从哪里来、为什么恢复不等于完成”：先读 `30-69`。
 - 想看能力发布、状态编辑与恢复资格：先读 `70-99`。
 - 想看验证、迁移与工程化落地：先读 `100-138`。
-- 想直看治理链主干：先读 `147-469 -> appendix/131-453 -> source-notes/01-320`。
-- 想快速进入当前这段强请求清理子链：先读 `465-469 -> appendix/449-453 -> source-notes/316-320`。
+- 想直看治理链主干：先读 `147-470 -> appendix/131-454 -> source-notes/01-321`。
+- 想快速进入当前这段强请求清理子链：先读 `466-470 -> appendix/450-454 -> source-notes/317-321`。
 - 想快速查字段、词法、路由、签字权和速查表：直接去 [appendix/README.md](appendix/README.md)。
 - 想追具体源码证据簇：直接去 [source-notes/README.md](source-notes/README.md)。
 
