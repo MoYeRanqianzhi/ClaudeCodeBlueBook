@@ -2,6 +2,14 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/30 + 46/47/48` 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
+
+- 本轮新的 `api/30` owner-law 结论：我结合并行 agent 对 `api/30 / 46 / 47 / 48` 的复核，只对 `bluebook/api/{30,46,47,48}` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`30` 现在更明确只负责固定源码质量 canonical ladder：页首不再自己重开 frontdoor，而是直接声明若问题还在 `promotion / unresolved-authority` 回 `guides/102`，若问题已经进入 `one writable present / sole writer / writeback seam` 回 `architecture/README`；`2.1-2.4` 也统一补齐成同一套六格，不再让 `commands / tools / services / state` 各自缺格或换格。当前判断是，这一步能把 `api/30` 更硬地收成 source-quality ladder owner，而不是半张目录导读、半张对象层预告。
+
+- 本轮新的二级目录对齐结论：`bluebook/api/{46,47,48}` 现在把第三 rung 统一收回 `current-truth claim state`，不再各自漂成 `当前准入工具面 / 当前准入命令面 / 当前暴露层 / 续接资产 / 桥接能力子集`。新的默认写法是：第三 rung 先承认“这里只到 claim-state”，再在描述里补充是 assembled tool pool、command surface、continuation asset、bridge surface 或 capability-boundary 的哪一种 claim-state。当前判断是，这一步能减少 later maintainer 把 source-quality canonical ladder 误读成“父页一套、子页再造一套”的概率。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当某个二级目录页想把第三 rung 改名时，更稳的默认追问不是“这个 plane 有没有自己更顺手的名字”，而是“你是在声明新的对象 truth，还是只是在描述同一条 claim-state 的局部方言”；如果答案仍是后者，就不该改 rung 名。当前判断是，这个问法能持续把目录结构优化从“术语更顺口”拉回“语义边界有没有变”，避免蓝皮书目录树继续长出并行 schema。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
 
 - 本轮新的 `api/23` singular-label 结论：我复核了 `bluebook/api/23-能力平面、公开度与宿主支持矩阵.md` 的矩阵 schema 后，只对这一页与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`23` 现在把“结果标签”更明确收成 `single final label`：`任务对象面` 改按 `宿主主路径` 压缩，`团队与 mailbox 面` 与 `多 Agent 面` 改按 `gate / internal` 压缩，`执行环境对象面` 改按 `产品受限` 压缩；四列继续承载 mixed-width，不再让结果栏并排摆 `公共主路径 + 宿主主路径`、`公共主路径 + gate 边界`、`公共主路径 + 产品受限`。当前判断是，这一步能把 `api/23` 更硬地固定成 matrix owner，而不是让结果栏再长成第二层 classifier。

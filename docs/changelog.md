@@ -2,6 +2,10 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/api/{30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md,46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md,47-tools 二级目录地图：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md,48-commands 二级目录地图：会话控制、模式治理、扩展装配、交付诊断与内部命令边界.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 source-quality ladder 对齐协议：`api/30` 现在更明确只拥有 canonical ladder，不再在源码质量 owner 页展开对象层 `writer / writeback seam` 法则；`46/47/48` 则把第三 rung 统一收回 `current-truth claim state`，不再各自漂成 `当前准入... / 当前暴露层 / 续接资产` 等并行 schema。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在进入 `api/30 + 46/47/48` 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
+
 - 继续更新 `bluebook/api/23-能力平面、公开度与宿主支持矩阵.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 matrix singular-label 协议：`api/23` 现在把 mixed-width 明确压回四列，结果栏只保留单一最终标签；`任务对象面` 收成 `宿主主路径`，`团队与 mailbox 面` 与 `多 Agent 面` 收成 `gate / internal`，`执行环境对象面` 收成 `产品受限`，不再在标签栏并排写 `公共主路径 + ...` 组合结果。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。

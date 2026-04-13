@@ -13,6 +13,15 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-source-quality-ladder-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/30 + 46/47/48` 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api30-must-own-the-canonical-source-quality-ladder-and-keep-object-law-outside-apr13 live` 记忆：
+  - `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md` 现在也应直接写死：它只负责锁定 `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline` 这条 canonical ladder，不再在源码质量 owner 页内部展开 `one writable present / sole writer / writeback seam`
+  - 更稳的默认写法是：若问题还在 `claim-state / provisional claim / unresolved-authority note`，继续留在 `api/30`；若问题已经进入 writer / writeback / local veto，统一退回 `architecture/README`
+- 当前批次继续新增一条 `api46-48-must-use-current-truth-claim-state-as-the-third-rung-apr13 live` 记忆：
+  - `bluebook/api/{46,47,48}` 现在也应直接写死：二级目录地图可以保留各自的 plane nouns，但第三 rung 不再各自漂成 `当前准入工具面 / 当前准入命令面 / 当前暴露层 / 续接资产 / 桥接能力子集`
+  - 更稳的默认写法是：第三 rung 统一先写 `current-truth claim state`，再在描述里说清它属于 assembled tool pool、command surface、continuation asset、bridge surface 或 capability-boundary 哪一种 claim-state，而不是另起 schema
 - 当前批次继续新增一条 `root-sync-healthy-for-api23-single-label-batch-apr13 live` 记忆：
   - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`

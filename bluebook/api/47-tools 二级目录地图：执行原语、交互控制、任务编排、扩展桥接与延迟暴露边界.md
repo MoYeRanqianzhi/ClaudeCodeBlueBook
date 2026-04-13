@@ -67,8 +67,8 @@
   - `BashTool`、`PowerShellTool`、`FileRead/Edit/Write`
 - `registry`：
   - `Tool.ts`、`tools.ts`、tool registration / assembly
-- `当前准入工具面`：
-  - 当前被装进工具池的 built-in visible set，以及随之暴露的 primitive execution shape
+- `current-truth claim state`：
+  - 当前被装进工具池的 built-in visible set 与 primitive execution shape 只先构成 assembled tool-pool claim-state
 - `consumer subset`：
   - REPL primitive VM、mode-specific 隐藏工具只是特殊子集
 - `hotspot kernel`：
@@ -82,8 +82,8 @@
   - `ToolSearchTool`、`GlobTool`、`GrepTool`、`WebFetchTool`、`WebSearchTool`
 - `registry`：
   - visible-set assembly、deferred visibility、ToolSearch registration
-- `当前准入工具面`：
-  - 当前被准入的搜索原语子集，以及当前已暴露的 deferred 能力
+- `current-truth claim state`：
+  - 当前被准入的搜索原语子集与已暴露的 deferred 能力只先构成 search-surface claim-state
 - `consumer subset`：
   - deferred tools、embedded search、host-specific web 能力都只是可见性子集
 - `hotspot kernel`：
@@ -97,8 +97,8 @@
   - `TodoWriteTool`、`AskUserQuestionTool`、`ConfigTool`、`Enter/ExitPlanModeTool`、`Enter/ExitWorktreeTool`
 - `registry`：
   - control tool registration、mode gating、plan/worktree assembly
-- `当前准入工具面`：
-  - 当前真正被准入的控制原语子集
+- `current-truth claim state`：
+  - 当前真正被准入的控制原语子集只先构成 control-tool claim-state
 - `consumer subset`：
   - 用户类型、mode 与对象边界决定当前哪些控制原语可见
 - `hotspot kernel`：
@@ -112,8 +112,8 @@
   - `AgentTool`、`Task*`、`Team*`、`SendMessageTool`
 - `registry`：
   - task/team/worker registration、visibility gating、mailbox wiring
-- `当前准入工具面`：
-  - 当前被装进工具池的 task / team / worker 工具子集
+- `current-truth claim state`：
+  - 当前被装进工具池的 task / team / worker 工具子集只先构成 collaboration-tool claim-state
 - `consumer subset`：
   - feature / mode / host 决定 task、team、worker 细节是否进入当前工具池
 - `hotspot kernel`：
@@ -127,8 +127,8 @@
   - `MCPTool`、`McpAuthTool`、`SkillTool`、`LSPTool`
 - `registry`：
   - bridge tool registration、scope / policy / feature gating、visible-set assembly
-- `当前准入工具面`：
-  - 当前被准入的 bridge / extension 工具子集
+- `current-truth claim state`：
+  - 当前被准入的 bridge / extension 工具子集只先构成 bridge-tool claim-state
 - `consumer subset`：
   - host、scope、policy、feature 决定扩展桥接是否进入当前世界
 - `hotspot kernel`：
@@ -142,8 +142,8 @@
   - `RemoteTriggerTool`、`ScheduleCronTool`、`SleepTool`
 - `registry`：
   - runtime automation registration、internal-only / testing subset wiring
-- `当前准入工具面`：
-  - 当前真正对外暴露的 automation 工具子集
+- `current-truth claim state`：
+  - 当前真正对外暴露的 automation 工具子集只先构成 automation-surface claim-state
 - `consumer subset`：
   - `testing/`、`SyntheticOutputTool`、`shared/` 只构成内部或辅助子集
 - `hotspot kernel`：
@@ -177,4 +177,4 @@
 
 ## 11. 一句话总结
 
-这页真正值钱的，不是把 `tools/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：哪些动作原语沿 `contract -> registry -> 当前准入工具面 -> consumer subset -> hotspot kernel -> mirror gap discipline` 被看见和被允许。
+这页真正值钱的，不是把 `tools/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：哪些动作原语沿 `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline` 被看见和被允许。

@@ -99,8 +99,8 @@
   - `compact/compact.ts`、`compact/postCompactCleanup.ts`
 - `registry`：
   - compact pipeline、budget hookup、cleanup registration
-- `续接定价 / cleanup 状态`：
-  - 当前 compact 结果、post-compact state 与 continuation pricing 结算状态
+- `current-truth claim state`：
+  - 当前 compact 结果、post-compact state 与 continuation pricing 只先构成 budget / writeback claim-state，不代签完整 budget authority
 - `consumer subset`：
   - `claudeAiLimits.ts`、`rateLimitMessages.ts` 更多是消费者可见投影，不是 budget authority
 - `hotspot kernel`：
@@ -114,8 +114,8 @@
   - `SessionMemory/sessionMemory.ts`、`PromptSuggestion/promptSuggestion.ts`
 - `registry`：
   - memory extraction、prompt suggestion、summary/dream/fork wiring
-- `续接资产 / 读回面`：
-  - 当前可被读回的 session memory、suggestion output 与 continuation asset
+- `current-truth claim state`：
+  - 当前可被读回的 session memory、suggestion output 与 continuation asset 只先构成 continuation claim-state，不直接代签 continue qualification
 - `consumer subset`：
   - `AgentSummary`、`toolUseSummary`、team 记忆同步更像 continuation 投影
 - `hotspot kernel`：
@@ -129,8 +129,8 @@
   - `mcp/config.ts`、`MCPConnectionManager.tsx`、`PluginInstallationManager.ts`
 - `registry`：
   - config merge、connection registry、plugin lifecycle registration
-- `当前准入能力状态`：
-  - 当前已被准入、批准并对外暴露的外部能力状态
+- `current-truth claim state`：
+  - 当前已被准入、批准并对外暴露的外部能力状态只先构成 capability-boundary claim-state，不等于每个 host promise 都已经落地
 - `consumer subset`：
   - `commands/mcp`、`commands/plugin`、host / bridge / channel 路径只是控制壳层
 - `hotspot kernel`：
@@ -144,8 +144,8 @@
   - `lsp/LSPServerManager.ts`、`voice.ts`
 - `registry`：
   - LSP bridge registration、voice integration wiring
-- `桥接能力子集`：
-  - 当前 bridge 已承接的 capability 子集与 host handoff 状态
+- `current-truth claim state`：
+  - 当前 bridge 已承接的 capability 子集与 host handoff 状态只先构成 bridge claim-state，不是独立 capability authority
 - `consumer subset`：
   - `LSPTool`、mobile / desktop / voice 前台只拿桥接投影
 - `hotspot kernel`：
@@ -159,8 +159,8 @@
   - `analytics/index.ts`、`internalLogging.ts`
 - `registry`：
   - diagnostic / logging / recovery evidence registration
-- `诊断 / 恢复读回面`：
-  - 当前可被读回的 diagnostic ledger、internal logs 与 recovery evidence
+- `current-truth claim state`：
+  - 当前可被读回的 diagnostic ledger、internal logs 与 recovery evidence 只先构成 diagnostic / recovery claim-state，不代签最终恢复 verdict
 - `consumer subset`：
   - notifier、tips、部分前台通知只拿用户可见辅助投影
 - `hotspot kernel`：
@@ -200,4 +200,4 @@
 
 ## 10. 一句话总结
 
-这页真正值钱的，不是把 `services/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：每个长期子系统究竟沿 `contract -> registry -> 当前暴露层 -> consumer subset -> hotspot kernel -> mirror gap discipline` 的哪一段暴露正式入口；services 页只做 bridge，不代签对象级 verdict。
+这页真正值钱的，不是把 `services/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：每个长期子系统究竟沿 `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline` 的哪一段暴露正式入口；services 页只做 bridge，不代签对象级 verdict。
