@@ -2,6 +2,14 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/46` 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
+
+- 本轮新的 `api/46` atlas-strength 结论：我只对 `bluebook/api/46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`46` 现在补出了 `Evidence mode` 横幅，并明确把文件名里的 `权威入口` 收回成 `atlas / locator / bridge` 强度：本页只回答哪个子系统更接近 `contract / registry / current-truth claim state`、主要 consumer 是谁、危险 seam 在哪，不再把 `services/` 写成“统一扩张定价秩序落成对象层的地方”。当前判断是，这一步能把 `46` 从容易越位的子系统 owner 页，收回成更稳定的 services atlas。
+
+- 本轮新的第三 rung singularity 结论：`46` 现在也把一句统一约束写硬了：子页即使要保留 `budget / continuation / capability-boundary / bridge / recovery` 这些局部 nouns，它们也只是同一条 `current-truth claim state` 的局部方言，而不是新的 rung 名。当前判断是，这一步能继续压制二级目录页围绕第三 rung 各说各话的趋势，让蓝皮书目录结构更接近一套单源语法，而不是 atlas + 方言并存的半稳定状态。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一个目录页的标题已经带 `权威` 二字时，更稳的默认追问不该是“它能不能再多承担一点 verdict”，而应先问“它此刻到底是在做 atlas 定位，还是已经在越权代签对象层 authority”；如果它回答不了第二问，就不该再升级说话强度。当前判断是，这个问法能继续把目录结构优化从“标题更硬”拉回“发言权是否更准”。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/52` 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
 
 - 本轮新的 `api/52` claim-state 结论：我只对 `bluebook/api/52-统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`52` 现在补出了 `public-evidence only` 横幅，并把页首与 `§5` 中偏强的对象语气收回到 `host-facing truth claim-state / projection / candidate`：`governance key` 继续只当解释词，`continuation pricing verdict` 与 `rollback object` 继续只当 host-facing candidate，不再顺手被写成 landed object。当前判断是，这一步能把治理宿主面更稳地收在 `api/README` 已锁定的 claim-state 发言权里，而不是在 mirror absent 条件下提前发布对象事实。

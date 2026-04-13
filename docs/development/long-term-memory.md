@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-api46-atlas-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/46` 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api46-must-treat-authoritative-entry-as-atlas-strength-and-keep-third-rung-singular-apr13 live` 记忆：
+  - `bluebook/api/46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md` 现在也应直接写死：`权威入口` 在这页只配按 `atlas / locator / bridge` 读取，不代签 object-level verdict，也不把 `services/` 写成“落成对象层的地方”
+  - 更稳的默认写法是：本页只回答哪个子系统更接近 `contract / registry / current-truth claim state`、主要 consumer 是谁、危险 seam 在哪；第三 rung 即使要补 `budget / continuation / capability-boundary / bridge / recovery` 这些局部方言，也仍只是在解释同一条 `current-truth claim state`
 - 当前批次继续新增一条 `root-sync-healthy-for-api52-claim-state-batch-apr13 live` 记忆：
   - 2026-04-13 本轮进入 `api/52` 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
