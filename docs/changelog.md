@@ -2,6 +2,10 @@
 
 ## 2026-04-14
 
+- 继续更新 `bluebook/{philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 prompt-why-boundary 协议：`84` 现在把 component-level 例子收回成同一条 `主权单调律`，不再在 why owner 里铺开 component inventory；`06` 则把结尾从可独立传播的 doctrine 收回成纯 self-audit 退出条件。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `philosophy/84 + 06` prompt-why-boundary 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
 - 继续更新 `bluebook/api/13-StructuredIO与RemoteIO宿主协议手册.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 transport-owner 协议：`api/13` 现在明确自任 `host transport seam` owner page，并新增与 `36 / 55` 对齐的宿主接入顺序与 reject 顺序，把 envelope、request correlation、arbitration、状态/usage 投影与 remote-only transport 增量写成单条协议顺序。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `api/13` transport-owner 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。

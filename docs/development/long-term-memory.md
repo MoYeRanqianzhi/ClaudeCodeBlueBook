@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-prompt-why-boundary-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `philosophy/84 + 06` prompt-why-boundary 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `prompt-why-owner-must-stop-before-component-inventory-apr14 live` 记忆：
+  - `bluebook/philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md` 现在也应继续写死：why owner 只保留 `same-world` 因果律与 verdict box，自校页只保留 first reject / artifact gap / minimal retreat；`CLAUDE.md / hooks / settings / auto memory` 这类 component-level 组合律与 meta doctrine 不应再在这两页展开成第二前门
+  - 更稳的默认写法是：`84` 只保住 `主权单调律` 这类 why 句，具体 component semantics 统一回 `81` 或对应 owner page；`06` 若一句话还能单独被摘成 doctrine，就说明它已经越位
 - 当前批次继续新增一条 `root-sync-healthy-for-api13-transport-owner-batch-apr14 live` 记忆：
   - 2026-04-14 本轮进入 `api/13` transport-owner 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面

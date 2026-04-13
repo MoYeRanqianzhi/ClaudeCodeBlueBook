@@ -2,6 +2,12 @@
 
 ## 2026-04-14 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `philosophy/84 + 06` prompt-why-boundary 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `philosophy/84 + 06` prompt-why-boundary 结论：我只对 `bluebook/{philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`84` 现在把 `CLAUDE.md / hooks / settings / auto memory` 这些 component-level 例子继续收回成同一条 `主权单调律`，不再在 why owner 里铺开 component inventory；`06` 则把结尾从可独立传播的 doctrine 收回成“若开始重发 why，就退出本页”的自校提醒。当前判断是，这一步能继续压低 Prompt 线的 second-frontdoor 风险，让 why owner、自校页与 builder-facing 机制页重新各守一段 speaking right。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当 why owner 已经能回答“为什么 same-world 会失败”时，更稳的默认追问不该是“还能不能再举更多组件例子”，而应先问“这些例子是不是已经在偷发 mechanism inventory”；同理，当自校页的最后一句还能独立流通成 doctrine 时，也说明它已经从 self-audit 重新长回 why owner。当前判断是，这个问法能继续把 Prompt 线从“解释更全”拉回“哪一页只配说哪一类 first answer”的 first-principles discipline。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `api/13` transport-owner 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
 
 - 本轮新的 `api/13` transport-owner 结论：我只对 `bluebook/api/13-StructuredIO与RemoteIO宿主协议手册.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`13` 现在把自己继续压成 `host transport seam` owner page，不再只是协议总览；它新增了与 `36 / 55` 对齐的宿主接入顺序与 reject 顺序，把 envelope、request correlation、arbitration、状态/usage 投影与 remote-only transport 增量写成单条宿主协议顺序。当前判断是，这一步能把 transport 问题继续从 `services/api` atlas 或 UI dashboard 猜测里拉出来，交还给 protocol owner。

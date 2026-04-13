@@ -84,16 +84,9 @@ Claude Code 更深的一层是：
 
 late binding 因此也只能发生在不触发重协商的前提下。更硬一点说：凡是会逼 later consumer 重新定义世界、重画边界、重接历史或重判继续资格的补写，都不再是 continue，而是 renegotiation。
 
-再往前追一层，这也解释了为什么 `CLAUDE.md / commands / hooks / skills / subagents` 不是 Prompt 外挂，而是世界准入顺序在不同生命周期里的局部承接：它们只能在各自组件边界内提供背景、约束、证据或动作入口，却不能重写 `world-definition source`。
-公开 docs 也把这层边界钉得更清楚：`CLAUDE.md` / memory 文件是自动加载、分层叠加的 foundation，真正的强制边界仍要靠 settings、permissions、sandboxing 与 hook veto 这类执行侧机制来成立。把 `CLAUDE.md` 自己误写成 enforcement surface，本身就是把 foundation 冒充成治理主权。
-同一批公开 docs 还把这些 artifact 的 `effect ceiling` 写得更死：managed settings 最高且不可覆盖，subagents 各自运行在独立 context window 与独立 permissions 里，async hooks 不能回头阻断已发生的动作；成熟 runtime 值钱的地方，因此不只在“工件可见”，而在“工件各自最多能写到哪里”被提前公开。
-更硬一点说，runtime 里的 law 也不是按句子强弱生效，而是按优先级与 veto 能力生效：不能 veto 的 surface 只配补 context，不配代签世界定义、权限边界与继续资格。
-同一组 `managed / user / project / local` scope 名词，在 `CLAUDE.md / settings / subagents / hooks` 上也根本不是同一种组合律：`CLAUDE.md` 是拼接加载，settings 是显式覆盖链，subagents 更接近同名遮蔽，hooks 则是先合并再过 managed-only 与 runtime veto gate；共享 scope 词不等于共享 signer 语义。
-同样更硬的边界还在于：任何 `world-definition / continue qualification` 都不能依赖按需加载的子目录 `CLAUDE.md`。这类记忆层只配提供局部背景，不配承担世界准入主签名；否则 same-world 会被“这次读到了哪些目录文件”随机化，later consumer 也就不可能稳定继承同一份世界准入证据。
-同理，`/add-dir` 或 `additionalDirectories` 也只是在扩大未来可发现事实面与文件/沙箱边界，不等于自动扩容 `world-definition` 的配置主权；除非另有显式加载规则，它们都不配升级成新的世界准入主签名。若一次 boundary expansion 被误写成 configuration root 扩张，same-world 仍会退回“这次又多读到哪些局部规则”的随机协商。
-同理，`auto memory` 这类机器本地、不可跨环境继承的记忆层，也只配当 foundation/context，不配当 `world-definition / continue qualification` 的 witness。若一次继续只有靠这台机器的本地记忆才成立，它就还没有被写成 later consumer 能稳定继承的 same-world evidence。公开 docs 还把这层边界继续钉死了一层：同一仓库下所有 worktrees 共享同一个 auto memory 目录，且 `autoMemoryDirectory` 不能由 project settings 指定；这说明它连 worktree-local witness 都不配充当，更不配被 repo-authored artifact 静默改写成世界准入依据。
-更硬一点说，这种跨组件承接还必须满足一条 `主权单调律`：越靠近执行面，组件越只配收紧、阻断、要求证明；越靠近文本与偏好面，组件越只配提供背景与偏好，不能自立为新的判决面。任何需要靠组件重新重述现场才能继续的补写，都不是 continuation，而是 renegotiation；一旦某个组件级 prompt、hook 或 delegated context 可以各自改判世界主语，系统就不再是在做 lawful continuation，而是在做分布式重协商。
-Prompt 线也因此有自己的 `local veto`：凡是不能独立 veto 世界定义、权限边界与继续资格的 surface，一律只配补 context，不配代签 verdict；`display transcript / delegated context / summary` 一旦越级，第一动作不是补文案，而是先把它们降回 `projection`。
+再往前追一层，这也解释了为什么 `CLAUDE.md / commands / hooks / skills / subagents / auto memory` 这些 artifact 不能被读成第二套 Prompt 主权：它们只是在不同生命周期里局部承接背景、约束、证据或动作入口，却都不配重写 `world-definition source`。
+公开 docs 继续支持的也只是同一条 why，而不是另一套 component inventory：越靠近文本、偏好与按需加载的 surface，越只配补 context；越靠近显式 veto、权限与执行边界的 surface，越只配收紧、阻断、要求证明。共享 scope 词、共享加载入口或共享配置名，并不自动生成共享 signer 语义。
+更硬一点说，本页在这些 artifact 上真正只想保住一句 `主权单调律`：不能独立 veto 世界定义、权限边界与继续资格的 surface，一律只配补 context，不配代签 verdict；一旦 `display transcript / delegated context / summary` 或某类 component-level prompt 越级，第一动作不是补更多 why，而是先把它降回 `projection`。若你已经开始追具体组件的加载、合并、遮蔽或 effect-ceiling 细则，下一跳应回 `81` 或对应 owner page；`84` 不再把 why owner 重新长成 mechanism frontdoor。
 
 ### 更硬一点的源码证据
 
