@@ -2,6 +2,8 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `408`、把附录推进到 `392`、把源码剖面推进到 `259`；链路从 `stronger-request archive-close-governance` 继续推进到 `stronger-request audit-close-governance`，说明 stronger-request cleanup 已进一步进入“它是否已经离开当前世界的活跃位置”与“它是否也已经离开未来的解释与追索世界”之间的治理分层。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=409 / appendix=392 / source-notes=259`。当前唯一 open question 已继续前推到 `stronger-request irreversible-erasure-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 - 本轮新的 userbook map/index 结论：我把 `userbook/02-能力地图/README` 与 `userbook/03-参考索引/README` 也拉回到和根前门一致的桥接强度，但仍只做 README 级前门纠偏。`02` 现在先补齐 Prompt、治理、当前真相三句 first test；`03` 也更明确写出 projection、`weak readback / tail evidence` 与 `current-truth claim state` 的降格边界。当前判断是，这一步能继续减少 later consumer 在 userbook 地图层和索引层重新学到一版更薄的 first test 的概率。
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `407`、把附录推进到 `391`、把源码剖面推进到 `258`；链路从 `stronger-request liability-release-governance` 继续推进到 `stronger-request archive-close-governance`，说明 stronger-request cleanup 已进一步进入“系统是否已经不再欠它责任”与“它是否已经从当前世界的活跃位置上撤下”之间的治理分层。
 - 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=408 / appendix=391 / source-notes=258`。当前唯一 open question 已继续前推到 `stronger-request audit-close-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
