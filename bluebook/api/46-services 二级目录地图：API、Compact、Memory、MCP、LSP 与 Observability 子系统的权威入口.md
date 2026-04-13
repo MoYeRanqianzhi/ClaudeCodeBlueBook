@@ -14,7 +14,7 @@
 
 1. `contract`
 2. `registry`
-3. `current-truth surface`
+3. `current-truth claim state`
 4. `consumer subset`
 5. `hotspot kernel`
 6. `mirror gap discipline`
@@ -52,11 +52,11 @@
 
 - 不同子系统暴露了不同的权威入口、不同的消费者，以及不同的危险改动面
 
-也就是说，读 `services/` 的顺序首先是证据更硬不更硬，而不是目录拆得更细不更细。每个子系统都至少要先回答四件事：
+也就是说，读 `services/` 的顺序首先是证据更硬不更硬，而不是目录拆得更细不更细。每个子系统都至少要先回答六件事：
 
 1. `contract`
 2. `registry`
-3. `current-truth surface`
+3. `current-truth claim state`
 4. `consumer subset`
 5. `hotspot kernel`
 6. `mirror gap discipline`
@@ -84,7 +84,7 @@
   - `claude.ts`、`sessionIngress.ts`
 - `registry`：
   - `client.ts`、transport assembly、append-chain 入口
-- `current-truth surface`：
+- `current-truth claim state`：
   - append-chain ingress、session ingress、host writeback
 - `consumer subset`：
   - 远程恢复路径、host projection、client shell 只消费部分请求与恢复真相
@@ -99,8 +99,8 @@
   - `compact/compact.ts`、`compact/postCompactCleanup.ts`
 - `registry`：
   - compact pipeline、budget hookup、cleanup registration
-- `current-truth surface`：
-  - compact result、post-compact state、continuation pricing verdict
+- `续接定价 / cleanup 状态`：
+  - 当前 compact 结果、post-compact state 与 continuation pricing 结算状态
 - `consumer subset`：
   - `claudeAiLimits.ts`、`rateLimitMessages.ts` 更多是消费者可见投影，不是 budget authority
 - `hotspot kernel`：
@@ -114,8 +114,8 @@
   - `SessionMemory/sessionMemory.ts`、`PromptSuggestion/promptSuggestion.ts`
 - `registry`：
   - memory extraction、prompt suggestion、summary/dream/fork wiring
-- `current-truth surface`：
-  - session memory、suggestion output、continuation asset readback
+- `续接资产 / 读回面`：
+  - 当前可被读回的 session memory、suggestion output 与 continuation asset
 - `consumer subset`：
   - `AgentSummary`、`toolUseSummary`、team 记忆同步更像 continuation 投影
 - `hotspot kernel`：
@@ -129,8 +129,8 @@
   - `mcp/config.ts`、`MCPConnectionManager.tsx`、`PluginInstallationManager.ts`
 - `registry`：
   - config merge、connection registry、plugin lifecycle registration
-- `current-truth surface`：
-  - 当前已连接、已批准、已暴露的外部能力真相
+- `当前准入能力状态`：
+  - 当前已被准入、批准并对外暴露的外部能力状态
 - `consumer subset`：
   - `commands/mcp`、`commands/plugin`、host / bridge / channel 路径只是控制壳层
 - `hotspot kernel`：
@@ -144,8 +144,8 @@
   - `lsp/LSPServerManager.ts`、`voice.ts`
 - `registry`：
   - LSP bridge registration、voice integration wiring
-- `current-truth surface`：
-  - 当前 live capability bridge 与 host handoff state
+- `桥接能力子集`：
+  - 当前 bridge 已承接的 capability 子集与 host handoff 状态
 - `consumer subset`：
   - `LSPTool`、mobile / desktop / voice 前台只拿桥接投影
 - `hotspot kernel`：
@@ -159,8 +159,8 @@
   - `analytics/index.ts`、`internalLogging.ts`
 - `registry`：
   - diagnostic / logging / recovery evidence registration
-- `current-truth surface`：
-  - 当前 diagnostic ledger、internal logs、recovery evidence readback
+- `诊断 / 恢复读回面`：
+  - 当前可被读回的 diagnostic ledger、internal logs 与 recovery evidence
 - `consumer subset`：
   - notifier、tips、部分前台通知只拿用户可见辅助投影
 - `hotspot kernel`：
@@ -200,4 +200,4 @@
 
 ## 10. 一句话总结
 
-这页真正值钱的，不是把 `services/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：每个长期子系统究竟沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 哪一段暴露正式入口。
+这页真正值钱的，不是把 `services/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：每个长期子系统究竟沿 `contract -> registry -> 当前暴露层 -> consumer subset -> hotspot kernel -> mirror gap discipline` 的哪一段暴露正式入口；services 页只做 bridge，不代签对象级 verdict。
