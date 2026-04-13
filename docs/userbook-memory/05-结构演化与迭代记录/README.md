@@ -89,6 +89,7 @@
 - [353-2026-04-13-experience-readme control-governance handoff 拆分记忆.md](./353-2026-04-13-experience-readme%20control-governance%20handoff%20拆分记忆.md)
 - [354-2026-04-13-session-viewer vs remote-creation split 拆分记忆.md](./354-2026-04-13-session-viewer%20vs%20remote-creation%20split%20拆分记忆.md)
 - [355-2026-04-13-recovery-object crosswalk uplift 拆分记忆.md](./355-2026-04-13-recovery-object%20crosswalk%20uplift%20拆分记忆.md)
+- [356-2026-04-13-capability-map recovery-horizontal-axis uplift 拆分记忆.md](./356-2026-04-13-capability-map%20recovery-horizontal-axis%20uplift%20拆分记忆.md)
 
 ## 全量档案
 

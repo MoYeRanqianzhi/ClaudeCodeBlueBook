@@ -27,6 +27,22 @@
 - [05-体验与入口/README.md](./05-%E4%BD%93%E9%AA%8C%E4%B8%8E%E5%85%A5%E5%8F%A3/README.md)
   回答终端、IDE、多前端和入口层是怎样把运行时投影给用户的。
 
+## 恢复与连续性的横坐标
+
+如果你问的不是“功能在哪一层暴露”，而是“恢复到底在恢复什么对象、消费什么资产、又不该越权恢复什么”，不要把连续性重新误读成第六类目录；先用这张横坐标决定下一跳。
+
+| 恢复对象 | 主要消费资产 | 不恢复 / 不签什么 | 下一跳 |
+| --- | --- | --- | --- |
+| `resume` / worksite restore | transcript 主链、尾部 metadata | 不回灌旧 pending state、旧权限或旧 verdict；也不单独签当前真相 | [01-运行时主链/04-会话真相层：实时状态、Transcript 与恢复账本.md](./01-%E8%BF%90%E8%A1%8C%E6%97%B6%E4%B8%BB%E9%93%BE/04-%E4%BC%9A%E8%AF%9D%E7%9C%9F%E7%9B%B8%E5%B1%82%EF%BC%9A%E5%AE%9E%E6%97%B6%E7%8A%B6%E6%80%81%E3%80%81Transcript%20%E4%B8%8E%E6%81%A2%E5%A4%8D%E8%B4%A6%E6%9C%AC.md) |
+| `compact` / ledger rewrite | boundary、summary、必要附件、session metadata | 不补 runtime 当前态，不回填旧 progress、旧 blocker 或旧推导 | [01-运行时主链/05-压缩、恢复与记忆：如何维持可继续工作的现场.md](./01-%E8%BF%90%E8%A1%8C%E6%97%B6%E4%B8%BB%E9%93%BE/05-%E5%8E%8B%E7%BC%A9%E3%80%81%E6%81%A2%E5%A4%8D%E4%B8%8E%E8%AE%B0%E5%BF%86%EF%BC%9A%E5%A6%82%E4%BD%95%E7%BB%B4%E6%8C%81%E5%8F%AF%E7%BB%A7%E7%BB%AD%E5%B7%A5%E4%BD%9C%E7%9A%84%E7%8E%B0%E5%9C%BA.md) |
+| `memory` / stable-bytes reload | 长期稳定规则、memory file、reload 资产 | 不代签当前 working set、blocker 或 authority | [01-运行时主链/05-压缩、恢复与记忆：如何维持可继续工作的现场.md](./01-%E8%BF%90%E8%A1%8C%E6%97%B6%E4%B8%BB%E9%93%BE/05-%E5%8E%8B%E7%BC%A9%E3%80%81%E6%81%A2%E5%A4%8D%E4%B8%8E%E8%AE%B0%E5%BF%86%EF%BC%9A%E5%A6%82%E4%BD%95%E7%BB%B4%E6%8C%81%E5%8F%AF%E7%BB%A7%E7%BB%AD%E5%B7%A5%E4%BD%9C%E7%9A%84%E7%8E%B0%E5%9C%BA.md) |
+| `task recovery` / background object | 任务对象、output file、notification；远端还会消费 sidecar identity | 不等于稳定 `/resume` 本体；也不把 `local_agent` 和 `remote_agent` 写成同一种自动接回 | [02-执行与工具/02-任务对象、输出回流、通知与恢复.md](./02-%E6%89%A7%E8%A1%8C%E4%B8%8E%E5%B7%A5%E5%85%B7/02-%E4%BB%BB%E5%8A%A1%E5%AF%B9%E8%B1%A1%E3%80%81%E8%BE%93%E5%87%BA%E5%9B%9E%E6%B5%81%E3%80%81%E9%80%9A%E7%9F%A5%E4%B8%8E%E6%81%A2%E5%A4%8D.md) |
+| viewer / preview / history consumption | session URL、preview transcript、attached history、viewer attach | 不是 formal restore，也不是 current-truth signer | [05-体验与入口/README.md](./05-%E4%BD%93%E9%AA%8C%E4%B8%8E%E5%85%A5%E5%8F%A3/README.md) |
+
+如果你争议的不是“恢复什么对象”，而是“这次继续是否仍被允许、是否要重过 `repricing / lease checkpoint / cleanup`”，下一跳直接转 [03-治理与边界/README.md](./03-%E6%B2%BB%E7%90%86%E4%B8%8E%E8%BE%B9%E7%95%8C/README.md)。
+
+连续性之所以不该在这里重新长成第六类目录，正是因为同一个“继续”问题会分别落到真相层、执行层、治理层与体验层；能力地图更应该提供横向路由，而不是再造一棵平行目录树。
+
 ## 使用边界
 
 - 想判“为什么必须如此设计”，退回 `../../philosophy/README.md`
