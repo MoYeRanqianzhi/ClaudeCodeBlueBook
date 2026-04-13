@@ -1,5 +1,9 @@
 # Services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口
 
+> Evidence mode
+> - 当前 worktree 若仍缺 `claude-code-source-code/` 镜像，本页所有 `src/...` 路径都只按 archival anchors 读取。
+> - `权威入口` 在这页只配按 `atlas / locator / bridge` 读取，不代签 object-level verdict；若问题已经进入对象层 authority、writeback seam 或 local veto，统一回 `../architecture/README.md`。
+
 这一章回答五个问题：
 
 1. `services/` 往二级目录拆开后，到底分成了哪些正式子系统。
@@ -7,6 +11,8 @@
 3. 哪些目录是核心控制平面，哪些只是壳层、投影层或辅助消费者。
 4. 哪些目录最容易被误读，从而把 Prompt、安全、恢复或治理写坏。
 5. 平台设计者该按什么顺序阅读 `services/`。
+
+这里也先固定一句：文件名里的 `权威入口` 只保留为检索兼容词。对本页来说，更稳的 speaking right 只有三条：指出哪个二级目录更接近 `contract / registry / current-truth claim state`，指出主要 consumer 是谁，指出危险改动面在哪；它不负责把 `services/` 升格成对象层 verdict 页。
 
 ## 0. 代表性锚点与证据梯度
 
@@ -42,7 +48,7 @@
 
 ## 1. 先说结论
 
-`services/` 不是“剩余杂项”目录，而是统一扩张定价秩序落成对象层的地方。
+`services/` 不是“剩余杂项”目录，而是长生命周期子系统的 atlas：它负责把请求进入、上下文续存、外部能力、桥接暴露与观测追责这些 runtime 平面挂回同一条源码质量 canonical ladder，但不在这里代签 object-level authority。
 
 这张源码地图最关键的意义不是：
 
@@ -61,7 +67,9 @@
 5. `hotspot kernel`
 6. `mirror gap discipline`
 
-再往上收一层，`services/` 也不是模块清单，而是 runtime 对请求进入、上下文续存、继续资产、外部能力、桥接暴露与观测追责逐项收费的对象层：
+更硬一点说，子页可以在第三 rung 的描述里保留 `budget / continuation / capability-boundary / bridge / recovery` 这些局部 nouns，但它们都只是在解释同一条 `current-truth claim state` 的局部方言，不是新的 rung 名。
+
+再往上收一层，`services/` 也不是模块清单，而是 runtime 对请求进入、上下文续存、继续资产、外部能力、桥接暴露与观测追责逐项收费的子系统 atlas：
 
 - `api` 守请求真相
 - `compact` 与 budget 子系统守上下文与时间边界
@@ -99,8 +107,8 @@
   - `compact/compact.ts`、`compact/postCompactCleanup.ts`
 - `registry`：
   - compact pipeline、budget hookup、cleanup registration
-- `续接定价 / cleanup 状态`：
-  - 当前 compact 结果、post-compact state 与 continuation pricing 结算状态
+- `current-truth claim state`：
+  - 当前 compact 结果、post-compact state 与 continuation pricing 只先构成 budget / writeback claim-state，不代签完整 budget authority
 - `consumer subset`：
   - `claudeAiLimits.ts`、`rateLimitMessages.ts` 更多是消费者可见投影，不是 budget authority
 - `hotspot kernel`：
@@ -114,8 +122,8 @@
   - `SessionMemory/sessionMemory.ts`、`PromptSuggestion/promptSuggestion.ts`
 - `registry`：
   - memory extraction、prompt suggestion、summary/dream/fork wiring
-- `续接资产 / 读回面`：
-  - 当前可被读回的 session memory、suggestion output 与 continuation asset
+- `current-truth claim state`：
+  - 当前可被读回的 session memory、suggestion output 与 continuation asset 只先构成 continuation claim-state，不直接代签 continue qualification
 - `consumer subset`：
   - `AgentSummary`、`toolUseSummary`、team 记忆同步更像 continuation 投影
 - `hotspot kernel`：
@@ -129,8 +137,8 @@
   - `mcp/config.ts`、`MCPConnectionManager.tsx`、`PluginInstallationManager.ts`
 - `registry`：
   - config merge、connection registry、plugin lifecycle registration
-- `当前准入能力状态`：
-  - 当前已被准入、批准并对外暴露的外部能力状态
+- `current-truth claim state`：
+  - 当前已被准入、批准并对外暴露的外部能力状态只先构成 capability-boundary claim-state，不等于每个 host promise 都已经落地
 - `consumer subset`：
   - `commands/mcp`、`commands/plugin`、host / bridge / channel 路径只是控制壳层
 - `hotspot kernel`：
@@ -144,8 +152,8 @@
   - `lsp/LSPServerManager.ts`、`voice.ts`
 - `registry`：
   - LSP bridge registration、voice integration wiring
-- `桥接能力子集`：
-  - 当前 bridge 已承接的 capability 子集与 host handoff 状态
+- `current-truth claim state`：
+  - 当前 bridge 已承接的 capability 子集与 host handoff 状态只先构成 bridge claim-state，不是独立 capability authority
 - `consumer subset`：
   - `LSPTool`、mobile / desktop / voice 前台只拿桥接投影
 - `hotspot kernel`：
@@ -159,8 +167,8 @@
   - `analytics/index.ts`、`internalLogging.ts`
 - `registry`：
   - diagnostic / logging / recovery evidence registration
-- `诊断 / 恢复读回面`：
-  - 当前可被读回的 diagnostic ledger、internal logs 与 recovery evidence
+- `current-truth claim state`：
+  - 当前可被读回的 diagnostic ledger、internal logs 与 recovery evidence 只先构成 diagnostic / recovery claim-state，不代签最终恢复 verdict
 - `consumer subset`：
   - notifier、tips、部分前台通知只拿用户可见辅助投影
 - `hotspot kernel`：
@@ -200,4 +208,4 @@
 
 ## 10. 一句话总结
 
-这页真正值钱的，不是把 `services/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：每个长期子系统究竟沿 `contract -> registry -> 当前暴露层 -> consumer subset -> hotspot kernel -> mirror gap discipline` 的哪一段暴露正式入口；services 页只做 bridge，不代签对象级 verdict。
+这页真正值钱的，不是把 `services/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：每个长期子系统究竟沿 `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline` 的哪一段暴露 atlas-level locator、主要 consumer 与危险 seam；services 页只做 bridge，不代签对象级 verdict。

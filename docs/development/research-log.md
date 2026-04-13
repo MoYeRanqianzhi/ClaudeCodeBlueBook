@@ -5,6 +5,12 @@
 - 本轮新的安全目录同步结论：已把 stronger-request cleanup 最新一段并入主线索引，当前计数同步到 `security=451 / appendix=434 / source-notes=301`，对应范围分别为 `00-450 / 01-434 / 01-301`；这次并入只吸收可长期复用的目录与研究结论，不把 worktree 局部同步噪音带回主分支日志。
 - 本轮新的 `87` deeper-tail 结论：我并行复核了 `81 / 85 / 86 / 87` 的更深尾段后，只对 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 落了正文修改。`87` 现在把 section 7 里的 route/gate/checklist 语气再收薄一层：可交接的 why-proof 不再显式指挥 later maintainer “去哪个 owner / 哪个 seam owner”，future-maintainer rejectability 也不再借 `operator artifacts / effect ceiling / local veto cue` 长成 review gate，而是更纯粹地停在 why-proof 与最低 change-control 标准。当前判断是，这一步能继续减少 `87` section 7 被 later consumer 误读成 compact review gate 或 route bridge 的概率。
 
+- 本轮新的 `guides/30` verdict-plumbing 结论：`guides/30` 现已把 `effect ceiling` 从局部门槛接回整条 Prompt 审读协议，显式进入输入、verdict 与记录卡；新的 gate verdict 固定为 `pass / provisional / reject / unknown`，并补齐了 `effect-ceiling breach / carrier-only provisional / 本地 verdict` 这些失效类型。当前判断是，这一步把 Prompt 审读链从“知道有这个 gate”推进到了“整条判定流都能消费这个 gate”。
+
+- 本轮新的 `philosophy/54` carrier law 结论：`54` 现已把 `teammate navigation` 正式绑回同一条 `effect ceiling` 纪律，不再把“知道该找谁”默认为 same-world continuation 的签字能力；它与 `suggestion / sticky prompt / session memory / handoff note` 一样，最多只负责 route / carrier 价值。当前判断是，这一步继续削弱了 Prompt 魔力论证里“路由能力被误读成签字能力”的残余歧义。
+
+- 本轮新的 `api/30` repo-seam 结论：`api/30` 现已把原先混在一个 atlas 里的 `state / Task.ts / query / structuredIO` 拆成四类更贴近实际代码结构的 seam：`state/` 负责 `host truth externalization`，`utils/task / Task.ts` 负责 `task runtime kernel`，`query.ts` 负责 `continuation kernel`，`structuredIO / transport` 负责 `host transport seam`。当前判断是，这一步把源码结构先进性的论证继续压回“repo 里到底有哪些不同复杂度中心”，也让 later maintainer 的 reject path 更贴近真实 seam。
+
 - 本轮新的 cleanup 尾链结论：安全链已从 `cleanup-audit-close-governance` 继续推进到 `cleanup-repair-governance`，最新十段顺序现稳定为 `irreversible erasure -> retention -> retention-enforcement honesty -> isolation -> constitution -> rationale -> metadata -> runtime-conformance -> anti-drift verification -> repair`；它们共同说明“制度允许删除”“制度允许保留”“制度诚实说明自己做到了什么”“制度不会误伤活对象”“制度知道哪些 family 活在哪套家法里”“制度解释这些家法为什么成立”“制度把理由登记成可传播的自我记忆”“制度在运行时真的兑现这些记忆”“制度会在未来继续抓漂移并阻止旧 truth 沉默失效”与“制度会决定由哪一层付费、以什么范围把 drift 拉回正确状态”不是同一个 signer。
 
 - 本轮新的下一问结论：在 `cleanup-repair-governance` 之后，更值得继续追问的已不再是谁来修，而是 repair grammar 一旦成立以后旧世界应如何有秩序地过渡到新世界、哪些旧 law 仍被承认、哪些旧承诺只该活在 grace window，也就是更强的 `cleanup-migration-governance` 层。

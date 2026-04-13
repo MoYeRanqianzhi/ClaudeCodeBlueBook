@@ -32,7 +32,7 @@
 3. stable prefix 与 dynamic boundary 分开。
 4. 共享前缀生产权单一。
 5. lawful forgetting ABI 成立。
-6. state 与 summary 只作为载体，而真正被合法继承的是同一工作对象、同一组排除结果与同一条继续资格判定。
+6. state 与 summary 只作为载体，而真正被合法继承的是同一工作对象、同一组排除分支与同一条继续资格判定；没有新增 `decision delta` 时，旧判断继续退役，不再被 rollout 偷拉回候选集。
 
 ## 2. 最小 diff 样例
 
@@ -60,7 +60,7 @@
 - 临时观测、一次性结果与高波动状态不得进入稳定前缀
 
 [Lawful Forgetting ABI]
-- compact 后必须保住当前主语、当前对象、pending action 与下一步约束
+- compact 后必须保住当前主语、当前工作对象、已排除分支、pending action、next-step guard 与 continue qualification verdict
 ```
 
 ### 这段 diff 的意义
@@ -107,7 +107,7 @@
 观测指标：
 
 - suggestion 命中率
-- summary 后接手成功率
+- summary 后同一工作对象 / 已排除分支继承成功率
 - 旁路路径 cache break 变化
 
 回退条件：
@@ -145,6 +145,7 @@
 - dynamic tail token 规模
 - handoff 连续性
 - externalized state 的读取正确率
+- 已排除分支重新回流次数
 
 回退条件：
 
@@ -163,6 +164,7 @@
 - compact 后续行成功率
 - replay mismatch 次数
 - resume 后主语漂移次数
+- zero-delta judgment relapse 次数
 
 回退条件：
 
@@ -173,7 +175,7 @@
 
 ```text
 这次迁移先收口了什么:
-- 主语 / section / boundary / forgetting / handoff
+- 主语 / section / boundary / inheritance / pruning / retirement
 
 当前仍保留的旧路径:
 
@@ -184,7 +186,7 @@
 如果指标恶化，先回退哪一层:
 
 当前最像哪类风险:
-- section drift / boundary drift / path parity split / lawful-forgetting failure / invalidation drift
+- section drift / boundary drift / same-world inheritance failure / branch-pruning relapse / decision-retirement relapse
 ```
 
 ## 5. 灰度结果样例
@@ -198,6 +200,7 @@ Phase 2 stable prefix cutover
 - cache read ratio +11%
 - side query parity stable
 - handoff continuity unchanged
+- excluded-branch reopen = 0
 
 结论:
 - constitution 拆分开始带来成本收益
@@ -211,14 +214,14 @@ Phase 2 stable prefix cutover
 - compact 后 resume 失败率从 2% 升到 9%
 
 定位:
-- lawful forgetting ABI 丢失 pending action
+- lawful forgetting ABI 丢失 pending action，且把一条已排除分支重新拉回候选集
 
 回退动作:
 - 回退 Phase 4 handoff/compact 切换
 - 保留 Phase 0-3 的 section / boundary / shadow assembly 成果
 
 防再发:
-- 给 summary 增加 pending action 校验
+- 给 summary 增加 pending action 与 excluded-branch 校验
 - 把这次失败写入 casebooks/10 对照样例
 ```
 
@@ -227,7 +230,7 @@ Phase 2 stable prefix cutover
 在你准备宣布 Prompt rollout 完成前，先问自己：
 
 1. 我改变的是文案，还是改变了制度体。
-2. 这轮 rollout 保住的是 cache、handoff，还是只是主观效果。
+2. 这轮 rollout 保住的是 lawful inheritance、排除分支继续退役与 zero-delta judgment retirement，还是只是 cache / handoff 体感。
 3. 哪一层最适合 shadow，哪一层必须最后切换。
 4. 如果今天回退，我回退的是哪段 assembly，而不是整个 Prompt Constitution。
 5. 这份样例能否让后来者复现同样的迁移判断。

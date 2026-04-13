@@ -13,6 +13,78 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-guides30-verdict-plumbing-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `guides/30 + philosophy/54` verdict-plumbing 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `guides30-must-plumb-effect-ceiling-through-input-verdict-and-record-card-apr13 live` 记忆：
+  - `bluebook/guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md` 现在也应继续写死：`effect ceiling` 不能只停在局部门槛里，必须贯穿顶层输入、verdict 语义与审读记录卡
+  - 更稳的默认写法是：执行协议先显式纳入 `carrier surface inventory / effect ceiling`，verdict 统一先写成 `pass / provisional / reject / unknown`；`carrier-only` 默认落 `provisional`，`effect-ceiling breach` 进入独立故障类型与记录卡字段
+- 当前批次继续新增一条 `philosophy54-should-bind-teammate-navigation-to-the-same-effect-ceiling-law-apr13 live` 记忆：
+  - `bluebook/philosophy/54-好的Prompt同时组织模型与人类接手路径.md` 现在也应直接写死：`teammate navigation` 和 `suggestion / sticky prompt / session memory / handoff note` 一样，都是 carrier / route surface，不配替接手者代签 same-world continuation
+  - 更稳的默认写法是：route value != signer value；知道下一跳只减少路由成本，不自动生成 `continue qualification`
+- 当前批次继续新增一条 `root-sync-healthy-for-api30-repo-seam-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/30` deepen 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api30-must-split-state-task-query-structuredio-cluster-into-real-repo-seams-apr13 live` 记忆：
+  - `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md` 现在也应继续写死：`state / Task.ts / query / structuredIO` 这一组不该再按作者混合簇写，而应拆回真实 repo seam：`host truth externalization / task runtime kernel / continuation kernel / host transport seam`
+  - 更稳的默认写法是：目录结构优化不先问“大文件能不能合并描述”，而先问“这组复杂度中心到底是不是同一类 seam”；若不是，就不该让 atlas 用一个混合簇替它们说话
+- 当前批次继续新增一条 `root-sync-healthy-for-prompt-magic-bridge-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `philosophy/54 + guides/30` deepen 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `prompt-magic-why-proof-must-map-human-handoff-costs-back-to-three-laws-apr13 live` 记忆：
+  - `bluebook/philosophy/54-好的Prompt同时组织模型与人类接手路径.md` 现在也应继续写死：`人类是否还能快速理解现场 / 知道从哪继续 / 低成本切回执行链 / 用最少反馈纠偏` 这四类接手成本，本质上都只是在复核 `lawful inheritance / search-pruning / decision-retirement + effect ceiling` 有没有守住
+  - 更稳的默认写法是：Prompt “魔力”不再先按体验词讲，而是先把每种接手成本逐项压回三条母法则；`session memory` 与 `handoff note` 也和 `suggestion / sticky prompt` 一样，先按 `effect ceiling` 读
+- 当前批次继续新增一条 `guides30-should-run-effect-ceiling-first-reject-before-witness-check-apr13 live` 记忆：
+  - `bluebook/guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md` 现在也应直接写死：在 builder-facing gate chain 里，carrier 越权应比 witness 细检更早暴露
+  - 更稳的默认写法是：先跑 `effect ceiling` first-reject gate；`carrier-only` 先落 `provisional`，carrier 已代签 continue 资格则直接 `reject`，再进入后续 witness / consumer / forgetting 细检
+- 当前批次继续新增一条 `root-sync-healthy-for-api46-atlas-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/46` 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api46-must-treat-authoritative-entry-as-atlas-strength-and-keep-third-rung-singular-apr13 live` 记忆：
+  - `bluebook/api/46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md` 现在也应直接写死：`权威入口` 在这页只配按 `atlas / locator / bridge` 读取，不代签 object-level verdict，也不把 `services/` 写成“落成对象层的地方”
+  - 更稳的默认写法是：本页只回答哪个子系统更接近 `contract / registry / current-truth claim state`、主要 consumer 是谁、危险 seam 在哪；第三 rung 即使要补 `budget / continuation / capability-boundary / bridge / recovery` 这些局部方言，也仍只是在解释同一条 `current-truth claim state`
+- 当前批次继续新增一条 `root-sync-healthy-for-api52-claim-state-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/52` 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api52-must-carry-public-evidence-guard-and-zero-delta-window-discipline-apr13 live` 记忆：
+  - `bluebook/api/52-统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate.md` 现在也应直接写死：在 `public-evidence only` 条件下，`governance key / continuation pricing verdict / rollback object` 这类名字默认只按 `host-facing truth claim-state / projection / candidate` 读取，不再被顺手写成 landed object
+  - 更稳的默认写法是：宿主先消费 `control requests + settings truth + state + pending_action + context usage` 这几类已外化 surface，再追问这轮继续到底有没有新增 `decision delta`；若更像 `zero-delta ask`，就不该再把它包装成新的治理窗口或新治理对象
+- 当前批次继续新增一条 `root-sync-healthy-for-api53-candidate-discipline-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/53` 窄批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api53-must-demote-inferred-fault-projections-to-host-facing-candidates-and-rejoin-api52-apr13 live` 记忆：
+  - `bluebook/api/53-故障模型宿主消费面手册：authority state、generation evidence、recovery boundary与anti-zombie projection.md` 现在也应直接写死：在 `public-evidence only` 条件下，`freshness outcome projection / cleanup residue object / rollback legality snapshot` 这类名字默认只按 `host-facing candidate` 读取，不再直接写成宿主已稳定消费的 landed surface
+  - 更稳的默认写法是：`53` 先把宿主真正已外化的面收在 `state / pending_action / task_summary / recovery contract`；若还要判断 recovery / continue 是否已进入 `zero-delta` 花费或窗口失效，统一回 `api/52` 把 `get_context_usage + pending_action + worker_status` 一起读
+- 当前批次继续新增一条 `root-sync-healthy-for-prompt-lawful-consumer-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `philosophy/54 + guides/30` 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `prompt-magic-must-bind-back-to-owner-law-effect-ceiling-and-witness-tax-apr13 live` 记忆：
+  - `bluebook/philosophy/54-好的Prompt同时组织模型与人类接手路径.md` 现在也应直接写死：Prompt 的“魔力”不是 carrier 更顺，而是 `lawful inheritance / search-pruning / decision-retirement` 三条母法则让 later consumer 不必重付“重谈世界、重搜动作、重判旧结论”这三笔税
+  - 更稳的默认写法是：`54` 只消费 `84` 的 owner law 与 `81` 的 witness chain；sticky prompt、suggestion、session memory、handoff note 统一先按 `effect ceiling` 读，最多只配搬运定位与提醒，不配单独代签 `world-definition / boundary / continue qualification`
+- 当前批次继续新增一条 `guides30-must-carry-public-evidence-guard-and-type-drift-before-routing-apr13 live` 记忆：
+  - `bluebook/guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md` 现在也应直接写死：无源码镜像时先挂 `Evidence mode`，并在失败后先在本页把 drift typing 清楚，再只路由到一个 owner page
+  - 更稳的默认写法是：builder-facing frontdoor 不再一开始就把 later maintainer 丢进多页跳转；先问 drift 是 `lineage / consumer / boundary / forgetting / continuation` 哪一类，再决定回 `81`、`82/99` 还是 `77`
+- 当前批次继续新增一条 `root-sync-healthy-for-source-quality-ladder-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/30 + 46/47/48` 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api30-must-own-the-canonical-source-quality-ladder-and-keep-object-law-outside-apr13 live` 记忆：
+  - `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md` 现在也应直接写死：它只负责锁定 `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline` 这条 canonical ladder，不再在源码质量 owner 页内部展开 `one writable present / sole writer / writeback seam`
+  - 更稳的默认写法是：若问题还在 `claim-state / provisional claim / unresolved-authority note`，继续留在 `api/30`；若问题已经进入 writer / writeback / local veto，统一退回 `architecture/README`
+- 当前批次继续新增一条 `api46-48-must-use-current-truth-claim-state-as-the-third-rung-apr13 live` 记忆：
+  - `bluebook/api/{46,47,48}` 现在也应直接写死：二级目录地图可以保留各自的 plane nouns，但第三 rung 不再各自漂成 `当前准入工具面 / 当前准入命令面 / 当前暴露层 / 续接资产 / 桥接能力子集`
+  - 更稳的默认写法是：第三 rung 统一先写 `current-truth claim state`，再在描述里说清它属于 assembled tool pool、command surface、continuation asset、bridge surface 或 capability-boundary 哪一种 claim-state，而不是另起 schema
+- 当前批次继续新增一条 `root-sync-healthy-for-api23-single-label-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api23-matrix-must-keep-single-final-label-and-push-mixed-width-back-into-columns-apr13 live` 记忆：
+  - `bluebook/api/23-能力平面、公开度与宿主支持矩阵.md` 现在也应直接写死：矩阵四列负责承载 `CLI / host / gate / product` 的混合事实，结果栏只保留一个最终标签，不再把 `公共主路径 + 宿主主路径`、`公共主路径 + gate 边界`、`公共主路径 + 产品受限` 这类组合写法留在表里
+  - 更稳的默认写法是：当一行看起来像“双归属”时，先反问“混合性到底属于 existence / visibility / current admission / product promise 哪一列”，再把 mixed-width 写回列内；结果栏只负责压缩当前主承诺面，不再自造第二层 classifier
+- 当前批次继续新增一条 `root-preflight-blocked-by-unmerged-root-prompt-tail-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 仍因根仓存在未解决冲突而失败；`git status --short --branch` 显示 `main...origin/main [ahead 20]`，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 仍处于 `UU`
+  - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、更新记忆与提交
+- 当前批次继续新增一条 `81-tail-should-collapse-late-verdict-and-explainability-repetition-apr13 live` 记忆：
+  - `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 现在也应直接写死：晚段的 `lawful forgetting / continue qualification / explainability` 只保留一套最小 schema，不再在 `pass/reject` 表、explainability 段、苏格拉底追问与“对 Agent 设计者的启发”里重复同一套 verdict 逻辑
+  - 更稳的默认写法是：`81` 晚段优先保留 `required witness / carrier 越权 / reopened excluded branches / local veto cue` 这四类最小问题，再把工程启发收成 2-3 条版本化约束，不再重复 why-owner 语气
 - 当前批次继续新增一条 `root-preflight-blocked-by-unmerged-root-why-tail-batch-apr13 live` 记忆：
   - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败；`git status --short --branch` 显示 `main...origin/main [ahead 20]`，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 仍处于 `UU`
   - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、更新记忆与提交
@@ -4933,3 +5005,18 @@
 - `2026-04-13` `architecture/84` 的最新稳定模板也应继续写死：page-top 也应显式挂出 `public-evidence only / object-level claim / retreat to 102` 的 evidence stamp，标题里的 `current-truth surface` 只保留为兼容检索别名，正文 owner 语言仍先回 `writer claim state / provisional claim / promotion-passed object after 102`。
 - `2026-04-13` `architecture/59` 的最新稳定边界也应继续写死：本页只允许把 `consumer subset / status projection` 当成 bridge note 解释“对象为什么会被不同宿主读成不同宽度”，不在这里替 `api/` 重签 `host-facing truth claim-state / promise boundary`。
 - `2026-04-13` persistent memory 的最新读取纪律也应继续写死：`docs/development/long-term-memory.md` 里互相冲突的根仓库同步快照只按时间点档案读，不得反向充当当前 live premise；当前 live preflight 一律只看最近一条同日记录与本轮实际检查结果。
+- `2026-04-13` Prompt builder-facing 机制页的最新稳定纪律也应继续写死：`philosophy/81` 的尾部现在只配回答三件事：哪一份 `required witness` 仍被显式携带、第一声 `no` 落在哪个 continuation surface、第一退回层该回哪一环补 witness；why/provisional/reject 风格的结论应继续留在 `84`，不再从 `81` 尾段回流。
+- `2026-04-13` 当前 live preflight 也应继续按最新检查读：根仓库 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；后续批次可继续只在 `.worktrees/mainloop` 推进，不得让旧同日阻断快照反向覆盖当前健康结果。
+- `2026-04-13` 治理入口卡的最新稳定纪律也应继续写死：`10` 在 typed-state 表之后现在只配保留一条 verb ceiling。只要 `authority lease / decision delta / cleanup trigger state` 里有任一格不是正向值，当前 surface 一律只配停在 `checkpoint / receipt-grade projection`，不得自己改价；逐项列举哪些 tail surface 越位、以及继续资格由谁解释，统一回各归属页。
+- `2026-04-13` `api/README` 的最新稳定纪律也应继续写死：README 现在只配消费 `102` 已锁定的 `host-facing truth claim-state / consumer subset / promise boundary`，不再复述 Prompt / 治理母公式，也不再在 owner README 里重跑 `code present / registry listed / signed claim` 这类 ladder 格。
+- `2026-04-13` `09` 的最新稳定纪律也应继续写死：它现在只配保留三条宪法级判断、一个 continuity crosswalk 和三条 first-hop。`typed-state checkpoint law / verb ceiling` 继续回 `10`，`promotion / downgrade / unresolved-authority note` 继续回 `guides/102` 与 `architecture/84`；总图页不再抢入口卡或 ladder 页的首答权。
+- `2026-04-13` `userbook/README` 的最新稳定纪律也应继续写死：根页现在只配保留用户动作翻译、问题分型与单跳分流，不再本地重讲完整的 lease/delta/cleanup grammar。弹窗、`status`、`usage`、继续入口与摘要只继续被写成 route-only projection；若真要判断 ask 是否仍配继续，统一回 `05` 或治理 owner。
+- `2026-04-13` `playbooks/09` 的最新稳定纪律也应继续写死：Prompt rollout 的目标态、phase 指标、评审卡与回退样例现在都应直接挂 `lawful inheritance / excluded-branch pruning / zero-delta judgment retirement`。`cache / handoff / summary` 仍可保留，但只作为辅证，不再允许它们单独充当 rollout 成功的主指标。
+- `2026-04-13` `philosophy/61` 的最新稳定纪律也应继续写死：why 页现在只配证明“为什么顺序、失败语义、可撤销自动化与可重放证据会同时决定安全与省 token 的成熟度”，不再在本地反复重讲 `same authority lease / new decision delta / cleanup trigger state` 的对象链。更细的 checkpoint 问句、compact/resume/re-entry 拆解与证据判格统一回 `10`。
+- `2026-04-13` `api/README` 的下一层稳定纪律也应继续写死：README 现在不仅不再重跑 ladder，也不再保留本地三格 checker 与路径 syllabus。它只保留 owner law、最小进入提示、离场条件与维护约定；凡还要细分“哪种 host-facing 对象该进哪串页号”，统一退回 deeper API 页与 `navigation/README`。
+- `2026-04-13` `architecture/84` 的下一层稳定纪律也应继续写死：atlas 页现在只继续展开 promotion-passed objects 的 `sole writer / per-host width / forbidden substitute writer / freshness guard`，不再让表格自带 `evidence status`，也不再让 operator artifact triage 在本页长成半张 claim-state 页。凡还要讲 admission/promotion，统一退回 `102`。
+- `2026-04-13` `guides/102` 的下一层稳定纪律也应继续写死：gate 页现在也不该同时长成 stamp schema 模板库和 route constitution。它仍是唯一 promotion gate，但 front block 只保留 canonical ladder、downgrade discipline、统一 handoff 句和最小 verdict box；stamp 字段压成一句，late-page handoff matrix 也只保留四条映射，不再展开带页号的长 syllabus。
+- `2026-04-13` `api/23` 的下一层稳定纪律也应继续写死：矩阵页现在只配解释 `existence -> implementation visibility -> current admission / consumer subset -> product promise` 这四层怎样落成支持标签，不再在页首复述 Prompt / 治理母公式，也不再在页尾展开长阅读链。矩阵 owner 页真正值钱的是写清 host-facing support width，而不是再长一张 frontdoor syllabus。
+- `2026-04-13` `api/29` 的下一层稳定纪律也应继续写死：这页现在只配继续拆 `存在 / 可见 / 可调用` 三层与裁剪链本身，不再在开场把 owner 边界挤成一整句，也不再把“模型可见”和“UI 可见”混成同一个出口。工具裁剪层数也应一次写定，不再先写八层再补两层。
+- `2026-04-13` `api/23` 的再下一层稳定纪律也应继续写死：这页不只不再复述 frontdoor，也不该继续长成局部 classifier pipeline。`§1 / §2 / §6` 现在只配解释矩阵列和标签的读法，不再写“前门顺序”“走完四层再贴标签”或“最小判断算法”这类流程语气。
+- `2026-04-13` `api/23` 的 third-pass 稳定纪律也应继续写死：矩阵页里的降格行现在也应显式带最小 `downgrade note`，并把 `23 -> 29` / `architecture/README` / `api/README` 的下钻关系写成 object-truth drill-down，而不是笼统说“以后再补对象 truth”。support matrix 若只给标签、不写降格原因和 drill-down，later maintainer 仍会把它读成 overview。

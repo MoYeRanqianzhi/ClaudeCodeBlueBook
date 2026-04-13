@@ -1,5 +1,9 @@
 # 如何用苏格拉底诘问法审读Prompt效力：lineage kernel、projection consumers与lawful forgetting
 
+> Evidence mode
+> - 当前 worktree 若仍缺 `claude-code-source-code/` 镜像，本页所有 `src/...` 路径都只按 archival anchors 读取。
+> - 本页只负责 builder-facing 审读链，不把这些锚点单独写成 live runtime proof；owner law 继续回 `../philosophy/84`，canonical witness chain 继续回 `../philosophy/81`。
+
 这一章不再解释 Prompt 为什么强，而是把“怎么审它是否具备稳定 Prompt效力”压成一套 builder-facing 审读框架。
 
 它主要回答五个问题：
@@ -91,9 +95,9 @@
 
 0. Gate-0：先写明这次系统试图退休的决策是什么、谁继承这项退休、哪一批分支继续保持被排除、以及没有新增 `decision delta` 时哪组旧判断必须继续退役，下一位 consumer 又凭什么拒绝重放。
 
-1. 输入：`compiled request truth`、`witness chain`、consumer matrix、当前 continuation object。
-2. 每个 gate 必须产出 `pass | fail | unknown`。
-3. `fail` 与 `unknown` 一律视为不可继续，必须写出 `reject signal + rollback object + next action`。
+1. 输入：`compiled request truth`、`witness chain`、consumer matrix、carrier surface inventory / effect ceiling、当前 continuation object。
+2. 每个 gate 必须产出 `pass | provisional | reject | unknown`。
+3. `provisional / reject / unknown` 一律视为当前不可继续，必须写出 `reject signal + rollback object + next action`；其中 `provisional` 默认表示 carrier-only 或 witness 尚未回绑，`reject` 则表示已出现明确越权或制度冲突。
 4. 仅当关键 gate 全部 `pass`，才允许产出 `continuation qualification = continue`。
 
 ### 3.1 Gate-1：`message lineage` 还是三键内核吗
@@ -116,6 +120,13 @@
 - 通过条件：不同入口只显示差异，不改变 same-world truth
 - reject signal：入口间出现 path parity split
 - 失败动作：标记 projection-consumer split 并停止继续
+
+### 3.3A Gate-3A：carrier 是否越权突破 `effect ceiling`
+
+- 输入：summary / sticky prompt / session memory / handoff prose / display transcript 等 carrier surface
+- 通过条件：这些 surface 只负责定位、提醒、展示或 receipt，不单独改判 `world-definition / boundary / continue qualification`
+- reject signal：任一 carrier 在无 witness rebind 的前提下开始替 later consumer 代签 same-world continuation
+- 失败动作：先记成 `effect-ceiling breach`，本地 verdict 至少落 `provisional`；若 carrier 已实际代签 continue 资格，则直接升格成 `reject`
 
 ### 3.4 Gate-4：`same-world witness` 是否可点名
 
@@ -209,13 +220,12 @@
 
 ## 5. 更好的迭代顺序
 
-当这组问题里有任何一个答不清时，优先做下面五步，而不是继续微调 prompt 文案：
+当这组问题里有任何一个答不清时，优先做下面四步，而不是继续微调 prompt 文案：
 
-1. 先回 `../philosophy/81`，判断自己改坏的是主权、lineage、consumer、boundary、protocol 还是 lawful forgetting。
-2. 再回 `../architecture/82` 与 `../guides/99`，检查请求装配控制面和苏格拉底审读链哪里被重新拆散。
-3. 再回 `../casebooks/73`，检查自己是不是已经把 lineage kernel、projection consumer 或 continuation object 偷换成更会解释的替身。
-4. 再回 `../playbooks/77`，把 drift 写成正式的 verification 字段、reject 条件与 rollback object。
-5. 最后才决定是修正文案、重画 boundary，还是修改 compact / recovery / fork 协议。
+1. 先在本页把问题 typing 成 `lineage / consumer / boundary / forgetting / continuation` 哪一类 drift，而不是先跳页找答案。
+2. 若 drift 落在 canonical witness chain，回 `../philosophy/81`；若 drift 落在 request assembly / object seam，再只选一个 `../architecture/82` 或 `../guides/99` 继续下钻。
+3. 若怀疑自己已经把 witness 偷换成更会解释的替身，再回 `../casebooks/73` 做反例核对。
+4. 只有 drift 类型与 owner page 都锁定后，才回 `../playbooks/77` 把它写成正式 verification 字段、reject 条件与 rollback object。
 
 ## 6. 审读记录卡
 
@@ -223,6 +233,8 @@
 审读对象:
 compiled request truth:
 message lineage ref:
+carrier surface inventory:
+effect ceiling 是否守住:
 lineage kernel 是否完整:
 当前主语:
 projection consumer matrix 是否对齐:
@@ -233,11 +245,12 @@ dynamic boundary 是否稳定:
 continuation object 最小对象是否完整:
 invalidation 触发器是否明确:
 continuation qualification 是否可点名:
+本地 verdict:
 lawful forgetting ABI 是否成立:
 当前最像哪类失效:
-- lineage-kernel shadow / section drift / boundary drift / projection-consumer split / transcript conflation / continuation-story-only / continuation-unqualified / lawful-forgetting failure / invalidation drift
+- effect-ceiling breach / carrier-only provisional / lineage-kernel shadow / section drift / boundary drift / projection-consumer split / transcript conflation / continuation-story-only / continuation-unqualified / lawful-forgetting failure / invalidation drift
 下一步该重写的是:
-- 主语 / lineage kernel / 前缀 / 边界 / consumer matrix / continuation object / 恢复
+- 主语 / effect ceiling / lineage kernel / 前缀 / 边界 / consumer matrix / continuation object / 恢复
 ```
 
 ## 7. 苏格拉底式检查清单
@@ -247,6 +260,7 @@ lawful forgetting ABI 是否成立:
 1. 我是在增强制度，还是在堆更长的文本。
 2. 我改的是当前回合效果，还是跨回合继续工作的条件。
 3. 我保住的是共享前缀和同一条 `message lineage`，还是只是保住了一段看起来熟悉的话。
-4. 我是在减少 projection consumer 的分叉，还是在把接手代价推给未来的人。
-5. 我能否解释这次强或弱是由哪类制度字节、哪条 continuation qualification 决定的。
-6. 我删掉 `systemPrompt` 截图、最后一条回复和 summary prose 后，这条 Prompt 论证还成立吗。
+4. 我现在依赖的是 witness，还是某个 carrier 已经在偷偷越权代签 `continue qualification`。
+5. 我是在减少 projection consumer 的分叉，还是在把接手代价推给未来的人。
+6. 我能否解释这次强或弱是由哪类制度字节、哪条 continuation qualification 决定的。
+7. 我删掉 `systemPrompt` 截图、最后一条回复和 summary prose 后，这条 Prompt 论证还成立吗。

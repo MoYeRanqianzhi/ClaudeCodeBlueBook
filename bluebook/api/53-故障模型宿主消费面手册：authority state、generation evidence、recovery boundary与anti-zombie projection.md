@@ -34,14 +34,14 @@ Claude Code 当前并没有公开一份名为：
 
 的单独公共对象。
 
-但结构故障模型已经通过三层支持面被宿主间接而稳定地消费：
+但结构故障模型当前更稳地只呈现为三层宿主消费候选，而不是已核实的 landed surface：
 
 1. `rollback / recovery requests`
    - 宿主能写哪些恢复与回退动作。
 2. `current-truth claim / per-host authority width projections`
    - 宿主能看到哪些当前权威状态、阻塞状态与合法消费宽度。
 3. `freshness evidence / stale-writer machinery`
-   - 真正负责 generation guard、stale-safe merge、recovery asset non-sovereignty 与 anti-zombie 的内部机制，但宿主更该消费其 host-facing projection、cleanup witness 与 rollback receipt candidate。
+   - 真正负责 generation guard、stale-safe merge、recovery asset non-sovereignty 与 anti-zombie 的内部机制；在 `public-evidence only` 下，宿主目前更稳地只把它们读成 host-facing candidate，而不是已核实的独立支持面。
 
 因此本页更稳的 claim state 只到这里：公开 artifact 与既有归档材料支持我们把 `rewind_files / seed_read_state`、`session_state_changed / pending_action / task_summary` 等面读成结构故障模型的宿主消费候选。
 像 `per-host authority width`、`freshness gate`、`recovery asset non-sovereignty` 这样的对象边界，当前仍应保留为 `host-facing truth candidate / internal-only candidate / unknown`，而不是升格成已核实的对象事实。
@@ -53,7 +53,7 @@ Claude Code 当前并没有公开一份名为：
 
 而是：
 
-- 消费已经外化出来的 `current-truth claim / per-host authority width` 投影、recovery contract、freshness evidence、cleanup witness 与 rollback boundary receipt candidate
+- 消费已经外化出来的 `current-truth claim / per-host authority width` 投影、recovery contract，以及与 freshness / cleanup / rollback 相关的 host-facing candidate
 
 ## 2. rollback / recovery requests：宿主可写恢复边界
 
@@ -112,19 +112,20 @@ Claude Code 当前并没有公开一份名为：
 宿主最成熟的消费方式是：
 
 1. 通过 `state + pending_action + task_summary` 消费它们的结果。
-2. 通过 `freshness outcome projection / cleanup residue object / rollback legality snapshot` 消费其结果对象，而不是自己推断 stale writer 是否发生。
+2. 对 `freshness outcome projection / cleanup residue object / rollback legality snapshot` 这类名字，只先按 `host-facing candidate` 读取，并绑定回 `state / pending_action / task_summary / recovery contract` 这类已外化 surface，而不是自己推断 stale writer 是否发生。
 3. 通过回退 contract 和恢复 contract 消费其边界。
 4. 不把 `_generation`、`updatedTaskOffsets`、`evictedTaskIds` 等内部字段当公共 ABI。
+5. 若还要继续判断一次 recovery / continue 是否已经变成 `zero-delta` 花费，统一回 `52` 结合 `get_context_usage + pending_action + worker_status` 一起读。
 
 ## 5. recovery asset non-sovereignty：宿主可见边界、cleanup witness 与 internal-only 细节
 
-Claude Code 的恢复边界真正依赖：
+当前归档锚点把恢复边界继续指向同一类 provenance family：
 
-1. `bridgePointer` 的 TTL 与 freshness。
-2. `sessionIngress` 的 append-chain adopt / retry。
-3. 读状态 cache 的 `seed_read_state` 边界。
+1. `bridgePointer`
+2. `sessionIngress`
+3. 读状态 cache / `seed_read_state`
 
-这些都说明：
+在 `public-evidence only` 下，这里更稳的写法不是展开 TTL、adopt / retry 或 cache 内部细节，而是先承认：
 
 - `recovery asset` 更稳地说只先构成 `recovery-asset boundary / asset-class evidence candidate`
 
@@ -175,8 +176,8 @@ Claude Code 的恢复边界真正依赖：
 2. `permission_mode`
 3. `pending_action`
 4. `task_summary`
-5. `freshness outcome projection`
-6. `cleanup residue object`
+5. `freshness outcome projection` 候选
+6. `cleanup residue object` 候选
 7. `rollback / rewind boundary receipt candidate`
 
 ### 7.3 不应直接依赖为公共 ABI
@@ -193,8 +194,9 @@ Claude Code 的恢复边界真正依赖：
 
 1. 先接 `rewind_files / seed_read_state` 这类恢复与回退入口。
 2. 再接 `session_state_changed / pending_action / task_summary` 这类 current-truth claim 投影。
-3. 再把 `freshness outcome projection / cleanup residue object / rollback boundary receipt candidate` 组织进自己的 CI、交接与恢复面板。
-4. 最后才把内部 generation / pointer / merge 细节当调试参考，而不是公共 ABI。
+3. 再接 `get_context_usage + pending_action + worker_status`，判断一次 recovery / continue 是否已经进入 `52` 所说的 decision-window / continuation-pricing 语境，而不是把额外花费静默写成“继续还有意义”。
+4. 再把 `freshness outcome projection / cleanup residue object / rollback boundary receipt candidate` 这些 candidate 组织进自己的 CI、交接与恢复面板，并明确它们仍绑定回已外化 surface。
+5. 最后才把内部 generation / pointer / merge 细节当调试参考，而不是公共 ABI。
 
 不要做的事：
 
@@ -205,4 +207,4 @@ Claude Code 的恢复边界真正依赖：
 
 ## 9. 一句话总结
 
-Claude Code 的故障模型支持面，不是目录说明书，而是“恢复 / 回退入口 + current-truth claim 投影 + freshness evidence / cleanup witness / rollback boundary receipt candidate + recovery asset non-sovereignty 边界”共同组成的分层宿主消费面。
+Claude Code 的故障模型支持面，不是目录说明书，而是“恢复 / 回退入口 + current-truth claim 投影 + 与 freshness / cleanup / rollback 相关的 host-facing candidate + recovery asset non-sovereignty 边界 + decision-window / continuation-pricing 接缝”共同组成的分层宿主消费面。
