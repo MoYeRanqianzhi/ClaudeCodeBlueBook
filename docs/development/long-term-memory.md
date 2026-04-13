@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-frontdoors-must-name-retired-rejudications-apr13 live 记忆：
+  - `bluebook/README`、`philosophy/README`、`navigation/README` 与 `philosophy/84` 现在也应直接写死：Prompt 前门和 why owner page 不只说 `same-world`，还要显式点名 `lawful inheritance / search-pruning / decision-retirement` 三条 owner law，说明 runtime 到底替 later consumer 退休了哪些世界、动作与继续资格重判
+  - 更稳的默认写法是：根前门先问 later consumer 继承的是否仍是同一工作对象、同一批仍被排除的分支、以及同一组继续退役的旧判断；`navigation/` 则只在 first-hop 已成立后反查 artifact gap，不再用 `compiled world basis / first reject` 这类缩写黑话和 owner page 竞争
 - 当前批次继续新增一条 source-frontdoors-must-speak-claim-state-before-object-truth-apr13 live 记忆：
   - `architecture/README`、`api/README`、`architecture/84` 与 `philosophy/87` 现在也应直接写死：公开证据未 promotion 前，frontdoor 默认先说 `writer claim state / unresolved-authority / host-facing truth claim-state`，而不是直接把对象、writer 或 host-facing truth 写成 landed truth
   - 更稳的默认写法是：`architecture/` 只让 promotion-passed object 升级成正式对象；`api/` 只说明 claim-state / admission boundary / consumer subset；`84 / 87` 则把 `sole writer` 收回 `writer claim state` 语境，直到 `guides/102` 的 promotion gate 真正放行

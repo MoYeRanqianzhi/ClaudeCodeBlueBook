@@ -1,12 +1,13 @@
 # 哲学专题
 
-`philosophy/` 只回答三件事：世界如何合法进入模型，扩张为什么必须先被定价，过去为什么不得越权写回现在。这里不预排 first-hop，只保留 why 判据；若你缺的是证据 ceiling、对象摘要或执行 next hop，回对应归属页，不在这里补 route。
+`philosophy/` 只回答三件事：世界如何合法进入模型，扩张为什么必须先被定价，过去为什么不得越权写回现在。这里不预排 first-hop，只保留 why 判据；若你缺的是证据 ceiling、对象摘要或执行 next hop，回对应归属页，不在这里补 route。更硬一点说，`philosophy/` 真正回答的是：Claude Code 分别替 later consumer 退休了哪些世界重判、扩张重判与当前真相重判。
 其中 `86` 只回答“为什么过去不得越权写回现在、为什么 present 只能单写”，`87` 只回答“为什么源码质量要看合法复杂度中心、边界可证、下一次重构仍有路”；不要把 current-truth why 与 source-quality why 再压回同一条首答。
 
 ## 三条 Why 判据
 
 - Prompt 线
-  - 如果 `verify / delegate / tool choice / resume / handoff` 后仍要重答世界定义、边界或继续资格，或在 `resume / handoff / compaction` 后重新判哪些 transcript / lineage 仍绑定继续资格，甚至把已排除路径重新拉回候选集，Prompt why 就还没成立
+  - 如果 `verify / delegate / tool choice / resume / handoff` 后仍要重答世界定义、边界或继续资格，或在 `resume / handoff / compaction` 后重新判哪些 transcript / lineage 仍绑定继续资格，甚至把已排除或已退役分支重新拉回候选集，Prompt why 就还没成立
+  - 换句话说，Prompt why 先问 runtime 到底替 later consumer 退休了哪一段动作搜索、世界重谈与继续资格重判；答不出这条 `decision-retirement / search-pruning / lawful inheritance`，Prompt why 仍只是效果描述
   - 缺 Prompt why 时看 `84`
 - 治理线
   - 如果解释答不出为什么 `unpaid expansion` 不能免费续租、为什么继续前必须先补齐 `repricing proof / lease checkpoint / cleanup`、检查顺序为什么必须把风险提前收费，以及为什么无新增决策增益时应撤销自动化或退回人工，治理 why 就还没成立
@@ -20,6 +21,7 @@
 
 - 当你已经知道功能或机制存在，但还没回答“为什么必须这样设计”。
 - 当你要把 Prompt 效力、治理成熟度或源码先进性，从结果词压回不可约判断。
+- 当你要用第一性原理追问“这套制度到底替 later consumer 退休了哪类重判”，而不是继续在结果词里打转。
 - 当你需要区分什么是 why、什么是 object、什么是 verdict，而不想在 route 页里反复兜圈。
 - 若争议已经变成“哪一页在越位代签 why / object / verdict”，回 [../meta/README.md](../meta/README.md)；那已不是 why 本身。
 
@@ -34,7 +36,7 @@
 - 缺源码质量 why（还在按文件大小、目录观感或模块体感判断先进性）：
   - 看 [87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md](87-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E5%88%A4%E6%96%AD%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%96%87%E4%BB%B6%E6%9B%B4%E5%B0%8F%EF%BC%8C%E8%80%8C%E6%98%AF%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%AD%E5%BF%83%E5%90%88%E6%B3%95%E3%80%81%E8%BE%B9%E7%95%8C%E5%8F%AF%E8%AF%81%E3%80%81%E4%B8%8B%E4%B8%80%E6%AC%A1%E9%87%8D%E6%9E%84%E4%BB%8D%E6%9C%89%E8%B7%AF.md>)
 - `continuity` 时间轴自校：
-  - 看 `06`；一旦主语重新落回 Prompt / 治理 / 源码质量，仍回各自归属页
+  - 看 `06`；但 `06` 只做苏格拉底式自校，不代替 `84 / 85 / 86 / 87` 的 why-proof 归属页。一旦主语重新落回 Prompt / 治理 / 源码质量，仍回各自归属页
 
 ## 这里不回答什么
 
@@ -45,5 +47,5 @@
 ## 维护约定
 
 - `philosophy/` 只保留 why 判据，不重新库存 first-hop 或长链 route。
-- README 只暴露三条 why failure test 与最少量归属页引用，不提前暴露 second-hop object nouns。
+- README 只暴露三条 why failure test 与最少量归属页引用，不提前暴露 second-hop object nouns，也不把 `06` 这类自校页升格成 why owner。
 - 需要对象、证据 ceiling、retreat layer 或 execution verdict，转对应归属页 README；需要苏格拉底式自校，回 `06`；需要跨目录执行链，回 [../navigation/README.md](../navigation/README.md)。

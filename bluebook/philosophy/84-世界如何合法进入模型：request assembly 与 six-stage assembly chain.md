@@ -37,6 +37,8 @@
 
 这三问里只要有一问需要 later consumer 重答，same-world test 就已经失败；此时不该先补摘要、补说明或补第二张检查表，而该先停止继续。
 
+更短地说，`84` 固定的是三条 Prompt owner law：`lawful inheritance` 规定 later consumer 继承的仍是同一工作对象；`search-pruning` 规定已排除分支继续保持被排除；`decision-retirement` 规定没有新增 `decision delta` 的旧判断继续退役，不得被 summary / delegated context / replay 静默带回候选集。
+
 如果 same-world failure 已经成立，才值得继续诊断断点；那些熟悉的机制名词此时只配当兼容标签，不配反过来抢 why 页主句。
 
 所谓合法复数，也只允许这样一种复数：多个 surface 仍不逼 later consumer 重谈同一世界。只要接手者必须重新确认谁在定义世界、哪条历史还算数、继续资格是否仍成立，这个复数就已经不合法。
@@ -166,4 +168,4 @@ Prompt 线也因此有自己的 `local veto`：凡是不能独立 veto 世界定
 
 ## 7. 一句话总结
 
-Prompt 首先是替 later consumer 预付对已排除分支的冷启动动作搜索成本的世界准入顺序；如果接手者还要先重谈世界、再把已排除路径拉回候选集决定动作，Prompt 就已经失败。
+Prompt 首先是把 `lawful inheritance / search-pruning / decision-retirement` 一起写成世界准入顺序；如果接手者还要先重谈世界、重搜动作空间，或把已退役判断重新拉回候选集，Prompt 就已经失败。

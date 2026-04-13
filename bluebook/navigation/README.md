@@ -7,12 +7,13 @@
 
 如果你还缺主语或最小顺序，先回 [../README.md](../README.md)；这里不再重做 first-hop 判定，只负责在主语已知后指出缺的是哪种 artifact / 证据。
 如果争议已经变成“总控页之间谁在越位代签、目录契约是否失真”，先回 [../meta/README.md](../meta/README.md)；那不是 artifact gap。
+目录层级也先认一条：`根入口 -> guides/102 -> owner page`。`navigation/` 只在这条 first-hop 已经成立之后，继续指出下一种 artifact 或最近的 fail-closed seam；它不是第四个 frontdoor。
 
 这里默认只回答 artifact gap，而不是页面归属。扁平反查规则如下：
 
 - 缺目录法或入口升级规则，回 `../../docs/development/00-研究方法.md`
-- 缺 Prompt 的 `compiled world basis / first reject`，回 `philosophy/84`
-- 缺 Prompt why / 自校，回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md)
+- 缺 Prompt 的 `lawful inheritance / search-pruning / decision-retirement / belonging-vs-admissibility` 首答，回 `philosophy/84`
+- 缺 Prompt why，先回 `philosophy/84`；若只缺苏格拉底式自校，再回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md)
 - 缺治理的 `repricing proof / lease checkpoint / cleanup witness`，回 `../10`
 - 缺 signer / ledger / cleanup authority ambiguity，回 `security`
 - 缺 post-cleanup readback，回 `risk`
@@ -29,6 +30,7 @@
 ## 维护约定
 
 - `navigation/` 只保留最小 artifact gap 规则，不把 reading map 或稳定书架重新摊平成首页。
+- `navigation/` 只在 first-hop 已成立后工作；若一句 route 还能单独决定 first answer，它就已经越位成第二 frontdoor。
 - 如果一个 route 句子开始代签 truth、ownership law 或 execution evidence，它就已经越位。
 - 如果一个 route 句子开始替公开 artifact 代签 support promise、`signer ceiling` 或 `effect ceiling`，它也已经越位；先退回 `guides/102` 与 `architecture/84`。
 - 如果一个 route 句子开始把 `first retreat layer` 直接写成修复计划、产品承诺或执行脚本，它也已经越位；route 只配指向最近的 fail-closed seam，不配代写修法。
