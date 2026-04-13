@@ -109,6 +109,7 @@
 - [373-2026-04-13-branch-map scope clarification 拆分记忆.md](./373-2026-04-13-branch-map%20scope%20clarification%20拆分记忆.md)
 - [374-2026-04-13-wire-visibility branch-map scope clarification 拆分记忆.md](./374-2026-04-13-wire-visibility%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [375-2026-04-13-builder-callback-ui branch-map scope clarification 拆分记忆.md](./375-2026-04-13-builder-callback-ui%20branch-map%20scope%20clarification%20拆分记忆.md)
+- [376-2026-04-13-completion-init-attach branch-map scope clarification 拆分记忆.md](./376-2026-04-13-completion-init-attach%20branch-map%20scope%20clarification%20拆分记忆.md)
 
 ## 全量档案
 
