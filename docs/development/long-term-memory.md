@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 repair-pages-must-prefer-evidence-family-over-live-type-apr13 live 记忆：
+  - `api/53` 与 `api/59` 现在也应直接写死：在 `mirror absent / public-evidence only` 条件下，host-facing repair 页优先写 `evidence / projection / snapshot / receipt candidate / object family / review schema`，不再把 `verdict`、field family 或 exported type 名字写成当前产品已公开签出的 live ABI
+  - 更稳的默认写法是：`53` 用 `freshness evidence / rollback boundary receipt candidate`；`59` 用 `anti-zombie evidence / repair object family`；若还缺 live mirror，就先把页首 law 写明而不是靠正文自我降格
 - 当前批次继续新增一条 mirror-absent-claim-state-and-aftermath-receipts-apr13 live 记忆：
   - `guides/102`、`api/53`、`risk/README` 与 `playbooks/README` 现在也应直接写死：公开镜像页先回答 `claim state / provisional claim / receipt-grade aftermath`，不再把 `surface`、freshness 内部机制或 aftermath 读回误写成当前对象 truth 或 live ABI
   - 更稳的默认写法是：`102` 统一把 `current-truth surface` 收回 `current-truth claim state / provisional claim`；`api/53` 先外化 `freshness evidence / cleanup witness / rollback boundary receipt candidate`；`risk/README` 只读 cleanup-aftermath 的 `receipt-grade` residues；`playbooks/README` 只消费这些 aftermath objects，不重解释它们

@@ -1,14 +1,16 @@
-# 结构宿主修复协议：authority recovery、resume replay order、writeback restoration、anti-zombie verdict与boundary reset
+# 结构宿主修复协议：authority recovery、resume replay order、writeback restoration、anti-zombie evidence与boundary reset
 
 这一章回答五个问题：
 
-1. Claude Code 当前到底通过哪些正式对象让宿主、SDK、CI、评审与交接系统消费结构执行纠偏。
+1. 若要让宿主、SDK、CI、评审与交接系统消费结构执行纠偏，至少应围绕哪些 repair object family 组织 review schema。
 2. 哪些字段属于必须消费的结构 repair object，哪些属于 reject escalation 语义，哪些仍然不应被绑定成公共 ABI。
 3. 为什么结构修复协议不应退回 pointer 修补、重连碰碰运气与日志繁荣。
 4. 宿主开发者该按什么顺序消费这套结构修复规则面。
 5. 哪些现象一旦出现应被直接升级为 hard reject 或 rollback required，而不是继续灰度。
 
 ## 0. 关键源码锚点
+
+当前 `.worktrees/mainloop` 仍处于 `mirror absent / public-evidence only`；下列 `src/...` 只算 archival anchors，不算当前 worktree 已直接核实的 live ABI。本页默认写的是 bluebook review schema 与 repair-surface object family，不是当前产品已公开签出的 exported type。
 
 - `claude-code-source-code/src/utils/QueryGuard.ts:1-121`
 - `claude-code-source-code/src/utils/handlePromptSubmit.ts:430-517`
@@ -31,12 +33,12 @@ Claude Code 当前并没有公开一份名为：
 
 的单独公共对象。
 
-但结构宿主修复实际上已经能围绕五类正式对象稳定成立：
+但结构宿主修复实际上已经能围绕五类 repair-surface object family 稳定成立：
 
 1. `authority_recovery`
 2. `resume_replay_order`
 3. `writeback_restoration`
-4. `anti_zombie_verdict`
+4. `anti_zombie_evidence`
 5. `boundary_reset`
 
 更成熟的修复方式不是：
@@ -97,11 +99,11 @@ Claude Code 当前并没有公开一份名为：
 
 - `resume_replay_order + writeback_restoration` 共同组成的结构修复对象
 
-## 4. anti-zombie verdict 与 boundary reset
+## 4. anti-zombie evidence 与 boundary reset
 
 结构修复还必须消费：
 
-### 4.1 anti-zombie verdict
+### 4.1 anti-zombie evidence
 
 1. `anti_zombie_projection`
 2. `stale_writer_evidence`
@@ -165,7 +167,7 @@ Claude Code 当前并没有公开一份名为：
 1. 先验 `authority_recovery`
 2. 再验 `resume_replay_order`
 3. 再验 `writeback_restoration`
-4. 再验 `anti_zombie_verdict`
+4. 再验 `anti_zombie_evidence`
 5. 最后验 `boundary_reset`
 
 不要反过来做：
@@ -176,4 +178,4 @@ Claude Code 当前并没有公开一份名为：
 
 ## 8. 一句话总结
 
-Claude Code 的结构宿主修复协议，不是 pointer / reconnect 修补 API，而是 `authority recovery + resume replay order + writeback restoration + anti-zombie verdict + boundary reset` 共同组成的规则面。
+Claude Code 的结构宿主修复协议，不是 pointer / reconnect 修补 API，而是 `authority recovery + resume replay order + writeback restoration + anti-zombie evidence + boundary reset` 共同组成的规则面。

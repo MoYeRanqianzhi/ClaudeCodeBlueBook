@@ -1,4 +1,4 @@
-# 故障模型宿主消费面手册：current-truth claim projection、authority-width candidate、freshness verdict、rollback receipts 与 anti-zombie evidence
+# 故障模型宿主消费面手册：current-truth claim projection、authority-width candidate、freshness evidence、rollback boundary receipts 与 anti-zombie evidence
 
 这一章回答五个问题：
 
