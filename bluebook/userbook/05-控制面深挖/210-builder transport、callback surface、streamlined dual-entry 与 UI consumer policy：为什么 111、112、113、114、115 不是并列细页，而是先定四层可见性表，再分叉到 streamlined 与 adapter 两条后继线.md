@@ -36,6 +36,8 @@
 
 - 为什么 111、112、113、114、115 不是并列细页，而是先定四层可见性表，再分叉到 streamlined 与 adapter 两条后继线
 
+本页不重讲 111、112、113、114、115 各页各自的页内证明，也不把 `builder transport`、callback surface、`streamlined_*`、adapter triad、hook sink、`convertSDKMessage(...)` 这些局部对象和 helper 名重新升级成新的总纲主角；这里只整理一张跨页拓扑图：111 先定四层可见性表，`112→113` 形成 streamlined 支线，`114→115` 形成 adapter / UI consumer 支线，并顺手把稳定用户合同、条件性可见合同与灰度实现证据分层。换句话说，这里要裁定的是“哪些页是什么关系、哪些判断属于哪一层合同”，不是再把 leaf-level 的 dual-entry gate、passthrough reason、adapter policy 或 host wiring 写成整簇页面的统一运行时结论。
+
 ## 稳定主干与灰度证据
 
 这页故意同时保护两件事：
