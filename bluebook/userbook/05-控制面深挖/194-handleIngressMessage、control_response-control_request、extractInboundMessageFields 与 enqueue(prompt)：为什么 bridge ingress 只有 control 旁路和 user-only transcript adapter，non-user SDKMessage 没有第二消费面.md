@@ -277,9 +277,41 @@
 
 又写成一句模糊的“bridge 在处理 inbound SDKMessage”。
 
+## 第七层：稳定层、条件层与灰度层
+
+### 稳定可见
+
+- bridge ingress 当前只有 control 旁路和 user-only transcript adapter，没有第四条 non-user `SDKMessage` 消费面。
+- `onInboundMessage` 当前不是通用 SDK consumer，而是 user leg 的 transcript callback slot。
+- `extractInboundMessageFields(...)` 当前是 user-only transcript adapter 的第二道 narrowing，不是可有可无的小工具。
+- hook / print 当前共享同一个 `enqueue(prompt)` sink，只是在入队前有不同厚度的预处理。
+- attachment resolve 当前只是 transcript adapter 的前处理，不是新的第二消费面。
+
+### 条件公开
+
+- hook / print 的前处理厚度差异，仍取决于当前宿主与消费路径。
+- attachment resolve、webhook sanitize 等 richer pre-processing 是否参与，仍取决于当前 adapter route，而不是这页已经稳定暴露的 user-only consumer 合同。
+- future build 会不会给 non-user `SDKMessage` 新开第二消费面，仍取决于当前 ingress consumer 设计，而不是这页已经稳定暴露的边界。
+
+### 内部/灰度层
+
+- `extractInboundMessageFields(...)` 的 exact 抽取细节
+- `enqueue(prompt)` 之前的 helper 调用顺序
+- hook / print 各自 richer pre-processing 的具体 wiring
+- attachment resolve 与其他 normalization 的内部组合细节
+
+所以这页最稳的结论必须停在：
+
+- bridge ingress 的消息面只兑现 user-only transcript adapter
+- non-user `SDKMessage` 在这里没有第二消费面
+
+而不能滑到：
+
+- 这里只是暂时没处理 non-user `SDKMessage`，以后自然会接到同一条通用 consumer 上
+
 ## 结论
 
-更稳的一句应该是：
+所以这页能安全落下的结论应停在：
 
 - `SDKMessage` 在 bridge ingress 上只是边界处的宽类型外壳
 - 系统真正兑现的只有 `user -> extractInboundMessageFields(...) -> enqueue(prompt)` 这一条 transcript adapter
