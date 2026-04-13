@@ -29,6 +29,8 @@
 
 - 为什么 116、117、118、119、120、121 不是线性后续页，而是三组相邻配对分叉
 
+本页不重讲 116、117、118、119、120、121 各页各自的页内证明，也不把 success `result` ignored、`isSessionEndMessage(...)`、`setIsLoading(true/false)`、`system.init`、`convertInitMessage(...)`、`sentUUIDsRef`、`onInit(...)` 这些局部对象和 helper 名重新升级成新的总纲主角；这里只整理一张跨页拓扑图：116/119 组成 completion / waiting 配对，117/120 组成 `system.init` 双轴配对，118/121 组成 attach / replay 配对，并顺手把稳定用户合同、条件性可见合同与灰度实现证据分层。换句话说，这里要裁定的是“哪些页是什么关系、哪些判断属于哪一层合同”，不是再把 leaf-level 的 edge、payload thickness、dedup 或 bootstrap side effect 写成整簇页面的统一运行时结论。
+
 ## 第一性原理
 
 更稳的提问不是：
