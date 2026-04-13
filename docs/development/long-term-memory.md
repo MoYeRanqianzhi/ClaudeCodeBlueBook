@@ -8,6 +8,12 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 mirror-absent-claim-state-and-aftermath-receipts-apr13 live 记忆：
+  - `guides/102`、`api/53`、`risk/README` 与 `playbooks/README` 现在也应直接写死：公开镜像页先回答 `claim state / provisional claim / receipt-grade aftermath`，不再把 `surface`、freshness 内部机制或 aftermath 读回误写成当前对象 truth 或 live ABI
+  - 更稳的默认写法是：`102` 统一把 `current-truth surface` 收回 `current-truth claim state / provisional claim`；`api/53` 先外化 `freshness evidence / cleanup witness / rollback boundary receipt candidate`；`risk/README` 只读 cleanup-aftermath 的 `receipt-grade` residues；`playbooks/README` 只消费这些 aftermath objects，不重解释它们
+- 当前批次继续新增一条 root-preflight-blocked-by-unmerged-root-ahead-apr13-batch5 live 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败；`git status --short --branch` 同时显示 `main...origin/main [ahead 43]` 与多处 root-level 未收敛改动
+  - 更稳的默认写法是：把这类根仓状态只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、更新记忆与提交
 - 当前批次继续新增一条 governance-surfaces-upgrade-only-with-real-delta-apr13 live 记忆：
   - `10`、`security/README` 与 `userbook/05/06-Status、Doctor、Usage` 现在也应直接写死：任何 surface 只有在新增 signer 证据、boundary delta 或 cleanup delta 时才配从 readback 升级成治理事实；否则一律只算 receipt-grade / `weak readback`
   - 更稳的默认写法是：治理效率不是 approval 更快，而是 delta-free approvals 与 `zero-delta ask` 更少；若 ask 只是更顺滑地回单，却没新增定价/边界/cleanup 增量，就仍按 `approval fatigue / free-expansion relapse` 记账

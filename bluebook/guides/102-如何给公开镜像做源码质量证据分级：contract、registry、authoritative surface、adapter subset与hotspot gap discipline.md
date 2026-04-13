@@ -1,4 +1,4 @@
-# 如何给公开镜像做源码质量证据分级：public artifact ceiling、contract、registry、current-truth surface、consumer subset、hotspot kernel 与 mirror gap discipline
+# 如何给公开镜像做源码质量证据分级：public artifact ceiling、contract、registry、current-truth claim state、consumer subset、hotspot kernel 与 mirror gap discipline
 
 这一章回答五个问题：
 
@@ -33,7 +33,7 @@
 
 这里还应先多记一句：
 
-- 文件名保留旧词只是为了兼容检索；正文在这一级统一把 `current-truth surface` 读作 current-truth claim state，而不是对象层 surface verdict。
+- 文件路径保留旧词只是为了兼容检索；正文在这一级统一把 `current-truth surface` 读作 `current-truth claim state`，而不是对象层 surface verdict。
 - 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航与对象展开即使被提及，也只算证据状态声明，不算新的 frontdoor。
 - 在这条线里，artifact completeness 只决定 promotion eligibility，不重写下游页面的稳定职责；页面标题与补写者都不额外增加签字权。
 - 凡正文把对象写成 `consumer subset` 或 provisional current-truth claim，必须同时把 `downgrade stamp` 与 `unresolved-authority note` 一起落页；只写“这里要保守”而不写这条说明，默认按证据纪律未落地处理。
@@ -262,7 +262,7 @@ contract 和 registry 都还不够。
 你可以稳定判断：
 
 1. 当前可见 contract 的成熟度
-2. 当前 registry / current-truth surface 候选的清晰度
+2. 当前 registry / provisional current-truth claim 的清晰度
 3. 当前 hotspot kernel 的职责是否可辩护
 4. 当前 seam、命名、注释、state machine 是否足够诚实
 
@@ -272,7 +272,7 @@ contract 和 registry 都还不够。
 2. 测试体系一定如何组织
 3. feature-gated 能力在内部是否都和公开树同构
 
-公开镜像最该保留的 unknown，不是“内部也许还有更多实现”，而是 current-truth authority、跨时回写约束与 eviction rule 是否可见；这些证据不可见时，只能写 unknown，不能从 replay asset、UI snapshot 或 adapter cache 反推 current truth。
+公开镜像最该保留的 unknown，不是“内部也许还有更多实现”，而是 current-truth claim promotion 所需的 authority evidence、跨时回写约束与 eviction rule 是否可见；这些证据不可见时，只能写 unknown，不能从 replay asset、UI snapshot 或 adapter cache 反推 current-truth claim。
 
 gap discipline 的价值不是“保守一点”，而是：
 
@@ -298,7 +298,7 @@ gap discipline 的价值不是“保守一点”，而是：
 
 - stale snapshot 会不会重写 fresh state
 - recovery asset 会不会篡位为 authority
-- stale writer 是否仍可达
+- stale writeback path / stale writeback capability 是否仍可达
 - 过去对象会不会重新写坏现在
 - stale capability / stale credential 会不会继续把 ghost tools 或 ghost auth 留在当前世界里
 
@@ -317,7 +317,7 @@ gap discipline 的价值不是“保守一点”，而是：
 
 1. 先列 contract，不先列目录树。
 2. 再列 registry，不先夸能力全集。
-3. 再锁定 `current-truth surface` 或至少 `current-truth surface candidate`，不从 UI 投影反推真相。
+3. 再锁定 `current-truth claim state`，或至少落成 `provisional claim`，不从 UI 投影反推真相。
 4. 再区分 `consumer subset`，不把协议全集和宿主子集混写。
 5. 最后才审 hotspot kernel 是否是合法复杂度中心。
 6. 每一步都保留 gap note，不让缺失部分被脑补补齐。
