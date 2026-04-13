@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-deep-pages-must-separate-carriers-from-witnesses-apr13 live 记忆：
+  - `bluebook/philosophy/{14,18,21,54}` 与 `guides/30` 现在也应直接写死：summary、memory、handoff prose、session memory 这类对象默认更接近 continuation carrier / belonging carrier，而不是 admissible continuation witness
+  - 更稳的默认写法是：Prompt 深页一律继续区分 `carrier vs witness`、`belonging vs admissibility`，并要求 `lawful forgetting`、handoff 与 resume 都不能逼 later consumer 重做 `world-definition / tool-legality / next-action search`
 - 当前批次继续新增一条 102-must-own-handoff-matrix-after-rung-lock-apr13 live 记忆：
   - `guides/102` 现在也应直接写死：它不只定义 claim-state rung，还要定义 handoff matrix。只有在 `102` 先锁定这是 object-level claim、host-facing truth claim-state / consumer subset、why question，或纯 artifact gap 之后，`architecture / api / philosophy / navigation` 才配接手
   - 更稳的默认写法是：`102` 先锁 rung，再分派 owner；owner README 若在 rung 未锁定前就开门，默认按目录契约越位处理

@@ -26,7 +26,7 @@ Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，
 4. 人类是否能用最少反馈把模型重新导回正轨。
 
 如果这些成本不被主动压低，再强的模型也会在长期协作里显得笨重。
-这些成本之所以必须被压低，也不是为了“更顺手”而已，而是为了让 later consumer 不必重读全量 transcript，就能对旧资格做 `continue / reject / reopen` 的正式判断。
+这些成本之所以必须被压低，也不是为了“更顺手”而已，而是为了让 later consumer 不必重读全量 transcript、不必重做 `world-definition / tool-legality / next-action search`，就能对旧资格做 `continue / reject / reopen` 的正式判断。
 
 ## 3. 苏格拉底式追问
 

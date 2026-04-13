@@ -42,9 +42,9 @@
 4. `边界`
    - 现在更接近 `dynamic boundary + protocol transcript legality + projection boundary`
 5. `合法遗忘`
-   - 现在更接近 `lawful forgetting + continuation object continuity`
+   - 现在更接近 `lawful forgetting + search-pruning preservation + decision-retirement preservation`
 6. `接手连续性`
-   - 现在更接近 `projection consumer matrix + continuation qualification`
+   - 现在更接近 `later-consumer lawful inheritance + admissibility-tested continuation qualification`
 
 所以真正要审的不是一组旧词，而是：
 
@@ -119,7 +119,7 @@
 ### 3.4 Gate-4：`same-world witness` 是否可点名
 
 - 输入：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`
-- 通过条件：六项 witness 可被独立验证且互相一致
+- 通过条件：六项 witness 可被独立验证且互相一致，并且能区分哪些只证明 belonging、哪些已经通过 admissibility gate
 - reject signal：任一 witness 无法点名或互相冲突
 - 失败动作：进入 rollback，禁止用总结 prose 代替 witness
 
@@ -161,14 +161,14 @@
 ### 3.10 Gate-10：lawful forgetting 后是否仍保留 continuation object
 
 - 输入：compact / summary / resume 前后对象对照
-- 通过条件：forgetting 后删掉的字节不改变 `continuation object`、已排除分支与 `continue-or-reject verdict`，且仍可点名 continuation object、lineage ref 与资格
+- 通过条件：forgetting 后删掉的字节不改变 `continuation object`、已排除分支与 `continue-or-reject verdict`，且仍可点名 continuation object、lineage ref 与资格；没有新增 `decision delta` 时，旧判断也继续保持退役
 - reject signal：只剩“发生过什么”的摘要叙事
 - 失败动作：回退至 forgetting 前版本并重做 compact；若只能压缩 display，而不能保住执行真相，就禁止把这次 compact 记成 lawful forgetting
 
 ### 3.11 Gate-11：handoff 是否无需重读全量 transcript 即可判定继续资格
 
 - 输入：handoff 包、约束清单、next action
-- 通过条件：接手方可直接判断 continuation / reopen / new task
+- 通过条件：接手方可直接判断 continuation / reopen / new task，而不必重做 `world-definition / tool-legality / next-action search`
 - reject signal：必须扫长历史才能继续
 - 失败动作：补 continuation qualification card
 

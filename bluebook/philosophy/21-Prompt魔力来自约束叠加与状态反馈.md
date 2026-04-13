@@ -66,7 +66,7 @@ Claude Code 的强点在于，这六个问题并不都由静态文本承担：
 
 - `Authority` 与 `Boundary` 来自角色化 prompt、tool pool、deny 规则和缓存边界。
 - `Transcript` 来自 protocol transcript、attachments 与 lawful forgetting。
-- `Lineage` 与 `Continuation` 来自 task 对象、mailbox、sticky prompt、summary 与 session memory。
+- `Lineage` 与 `Continuation` 来自 task 对象、mailbox、sticky prompt，以及被 admissibility gate 放行的 continuation object；summary 与 session memory 更接近 continuation carrier，而不是 continuation witness 本身。
 - `Explainability` 来自 context usage 与 prompt cache break naming。
 
 也就是说，这里的 prompt 更像：

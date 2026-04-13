@@ -14,7 +14,7 @@ Claude Code 的 prompt 本质上，不是把规则拆成四层而已，而是把
 1. 静态法：
    - 角色基本法、做任务原则、工具使用原则；它定义不可重写约束与上层已排除分支
 2. 动态法：
-   - language、output style、memory、scratchpad、token budget、MCP instructions；它只实例化环境，不改写静态法已封口的边界
+   - language、output style、memory、scratchpad、token budget、MCP instructions；它只实例化环境，不改写静态法已封口的边界，也不把 belonging-only 的 memory / style / scratchpad 升格成可改判的 witness
 3. 角色法：
    - coordinator、worker、custom agent、proactive agent；它只能缩窄或显式委派，不凭空重开动作空间
 4. 现场法：
