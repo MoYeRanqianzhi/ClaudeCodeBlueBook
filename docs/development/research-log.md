@@ -2,6 +2,13 @@
 
 ## 当前基线
 
+- 日期: `2026-04-13`
+- 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/claude-code-risk-analysis`
+- 研究源码: `claude-code-source-code/`
+- 目标版本: `v2.1.88`
+- 本轮继续向下推进: 已新增 `406-安全载体家族强请求清理遗忘治理与强请求清理免责释放治理分层`、`appendix/390` 与 `source-notes/257`，把安全链从 `stronger-request forgetting-governance` 继续推进到 `stronger-request liability-release-governance`。最硬的新证据不是再证明“old request identity 什么时候开始可以安全淡出”，而是继续证明 safe-to-forget memory 不等于 no-more-duty residual closure：`processLine()` 会对 resolved duplicate `control_response` 直接 ignore，对 unknown response 保持 no-op，并把仍需补偿的 orphan/unknown case 交给 `unexpectedResponseCallback`；`handleOrphanedPermissionResponse()` 又把 orphaned permission 明确分成 compensate-or-refuse 与 `already handled` / `already resolved in transcript` 两类免责分流；`onControlRequestResolved(...)` 最后再主动取消 stale permission prompt，说明 release 还包括对旧 waiting surface 的责任关闭。 这些证据合在一起已经很清楚地说明：Claude Code 不只把 stronger-request forgetting 与 stronger-request liability release 拆开，而且已经把这一层的技术先进性与边界同时收束到“系统已经知道现在可以开始忘掉它，却还必须正式决定现在是否已经彻底不再欠它任何责任”这一更深命题；其哲学本质也进一步显露为 `safe enough to forget` 不等于 `still owing no duty`，`制度知道现在可以慢慢忘掉它` 不等于 `制度已经知道现在彻底不再欠它任何责任。`
+- 本轮继续同步目录与记忆: 已同步更新 `security/README.md`、`appendix/README.md`、`source-notes/README.md`、`docs/development/security/long-term-memory.md` 与本日志，确认当前索引计数为 `security=407`、`appendix=390`、`source-notes=257`；本轮开始前再次 fresh 复核根仓库，`git fetch origin main` 成功，但根仓库随后显示 `main...origin/main = 8 0` 与 `## main...origin/main [ahead 8]`，并伴随 `UU bluebook/security/README.md`、`UU bluebook/security/source-notes/README.md`、`UU docs/development/research-log.md` 等未解决条目。为避免污染主分支与其他 worktree，本轮未在根仓库继续执行 `git merge --ff-only origin/main` 或其他 pull 动作，而是把该状态显式记入隔离记忆层后，继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。本轮同时把目录入口继续前推到 `406 / 390 / 257`，保持 `主线论证 -> 附录矩阵 -> 源码剖面` 三层结构。当前唯一 open question 已继续前推到 `stronger-request archive-close-governance for old cleanup carriers`，继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
+
 - 日期: `2026-04-08`
 - 工作目录: `/home/mo/m/projects/cc/analysis/.worktrees/claude-code-risk-analysis`
 - 研究源码: `claude-code-source-code/`
