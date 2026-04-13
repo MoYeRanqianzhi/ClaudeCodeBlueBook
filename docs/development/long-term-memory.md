@@ -13,6 +13,24 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-preflight-blocked-by-unmerged-root-owner-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败；`git status --short --branch` 显示 `main...origin/main`，并有多处根仓脏改动，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 处于 `UU`
+  - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作，继续只在 `.worktrees/mainloop` 推进、更新记忆与提交
+- 当前批次继续新增一条 `85-should-keep-single-pricing-law-and-minimal-tail-boundary-apr13 live` 记忆：
+  - `bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md` 现在也应直接写死：why owner 页只固定 `single pricing order / single repricing furnace` 与最小 tail-boundary，不再顺手带出过长的尾链 inventory 或战术数字
+  - 更稳的默认写法是：`85` 只说安全阻止危险扩张免费续租，省 token 阻止昂贵扩张免费续租；凡尾链开始越权代签 `repricing proof / continue qualification / cleanup truth`，统一回 `repricing seam`
+- 当前批次继续新增一条 `86-should-carry-public-evidence-ceiling-as-why-owner-apr13 live` 记忆：
+  - `bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md` 现在也应直接写死：`86` 应显式带出 `mirror absent / public-evidence only` 的 evidence-mode banner，防止 later consumer 把 why owner 页误读成 object truth 页
+  - 更稳的默认写法是：`86` 只回答 later maintainer 为什么必须先守住 `one writable present`；claim-state、object certainty 与更强的 writer truth 一律退回 `guides/102 / architecture/README`
+- 当前批次继续新增一条 `87-future-maintainer-section-should-stay-why-proof-apr13 live` 记忆：
+  - `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 现在也应继续写死：future-maintainer rejectability 章节只提醒 later maintainer 不要把 foundation/context 工件误读成 signer，不再长成 operator-artifact review checklist 或对象级酸测试清单
+  - 更稳的默认写法是：`87` 可以保留 why-proof 层的最低标准，但不再把 `surface candidate / local veto cue / negative capability` 压成另一张紧凑 gate
+- 当前批次继续新增一条 `81-late-sections-should-collapse-duplicate-lawful-forgetting-matrices-apr13 live` 记忆：
+  - `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 现在也应直接写死：`lawful forgetting witness ABI`、`continuation object` 与 pass/reject 规则在中后段不再各自维护独立矩阵
+  - 更稳的默认写法是：`81` 中后段只保留一套最小 schema，优先写 `required / derivable / narrative-only / forbidden-as-sole-witness` 与最小 `continuation object`，不要再叠加近似判定表
+- 当前批次继续新增一条 `why-owner-deep-review-found-81-highest-value-residual-apr13 live` 记忆：
+  - 本轮对 `81 / 85 / 86 / 87` 的并行复核里，真正仍值得收口的高价值残点主要集中在 `81` 中后段的 `lawful forgetting / continuation ABI` 重复矩阵；`85 / 86 / 87` 本轮更多是确认现有写法已足够贴近 why-owner speaking right
+  - 更稳的默认写法是：继续深化时，优先先收 `81` 的 duplicate schema，而不要为了“每轮都改三条线”硬改已基本收稳的 why owner 页
 - 当前批次继续新增一条 `root-sync-healthy-for-why-owner-residual-batch-apr13 live` 记忆：
   - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
