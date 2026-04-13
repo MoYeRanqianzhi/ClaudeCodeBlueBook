@@ -291,28 +291,57 @@
 
 - “这些页都在讲同一个 remote bit，只是顺着编号一路往下拆。”
 
-## 第八层：稳定层与灰度层
+## 第八层：稳定阅读骨架 / 条件公开 / 内部证据层
+
+这里的“稳定”只指：
+
+- `144 -> 145`
+- `146 -> 147`
+- `148 -> 149`
+
+这三组相邻配对的阅读骨架已经收稳
+
+不指：
+
+- session pane / URL affordance
+- contract thickness / remote-safe command shell
+- headless remote env / remote memory persistence
+
+这些中间节点名本身已经升级成稳定公开能力
+
+真正的稳定公开能力判断，仍应回到用户入口、公开主路径与能力边界写作规范。
 
 ### 稳定可见
 
-- `/session` 的命令显隐与 pane 内容当前就是双重 gate
-- `remote bit = true, URL = absent` 时，CCR runtime 仍可能继续，而 URL / QR affordance 会停摆
-- assistant viewer 与 `--remote` TUI 共享 coarse bit，但合同厚度不同
-- remote-safe command surface 当前回答的是 affordance，不是 runtime readiness
-- `CLAUDE_CODE_REMOTE` 与 `getIsRemoteMode()` 当前不是同一 remote 轴
-- remote memory 持久化当前不是单根目录，而是 memdir / auto-memory 与 session ledger 双轨
+- `144` 当前稳定回答的是 `/session` 的命令显隐与 pane 内容是双重 gate
+- `145` 当前稳定回答的是 `remote bit = true, URL = absent` 时，CCR runtime 仍可能继续，而 URL / QR affordance 会停摆
+- `146` 当前稳定回答的是 assistant viewer 与 `--remote` TUI 共享 coarse bit，但合同厚度不同
+- `147` 当前稳定回答的是 remote-safe command surface 当前回答的是 affordance，不是 runtime readiness
+- `148` 当前稳定回答的是 `CLAUDE_CODE_REMOTE` 与 `getIsRemoteMode()` 当前不是同一 remote 轴
+- `149` 当前稳定回答的是 remote memory 持久化当前不是单根目录，而是 memdir / auto-memory 与 session ledger 双轨
 
 ### 条件公开
 
-- `REMOTE_SAFE_COMMANDS` 的具体成员与不同入口下的保留策略仍会变化
-- `remoteSessionUrl` 当前更像 `--remote` path 的展示载荷，是否未来扩大仍属演化空间
-- headless remote memory 仍受 persistent storage、remote bit 与宿主类型共同影响
+- `144/145` 这一组里，`remoteSessionUrl` 当前更像 `--remote` path 的展示载荷，是否未来扩大仍属演化空间
+- `146/147` 这一组里，`REMOTE_SAFE_COMMANDS` 的具体成员与不同入口下的保留策略仍会变化
+- `148/149` 这一组里，headless remote memory 仍受 persistent storage、remote bit 与宿主类型共同影响
 
-### 内部/灰度层
+### 内部证据层
 
 - 哪些命令在不同 remote 入口下最终本地执行或远端发送
 - `CLAUDE_CODE_REMOTE` 出现的具体 env 分支与 timeout / plugin / settingsSync 细节
 - `SessionMemory`、`extractMemories` 与 auto-memory 的未来整合方式
+
+所以这页最稳的结论必须停在：
+
+- `144-149` 当前不是线性六连，而是三组相邻配对
+- `144 -> 145` 处理 session pane 与 URL affordance
+- `146 -> 147` 处理 contract thickness 与 remote-safe command shell
+- `148 -> 149` 处理 headless remote env 与 remote memory persistence
+
+而不能滑到：
+
+- 只要都和 remote bit、URL、command、memory 有关，这六页本质上只是顺编号一路往下拆的同一条线
 
 ## 苏格拉底式自审
 
@@ -331,3 +360,24 @@
 ### 问：我是不是把 `149` 当成了“remote memory 都落一根目录”的补充页？
 
 答：先问它讲的是 memdir 根，还是 session ledger；这两者本来就不是同一账。
+
+## 结论
+
+所以这页能安全落下的结论应停在：
+
+- `144` 先把 `/session` pane 的双重 gate 拆开，`145` 再把 remote bit 与 URL 缺席的反重叠压成 zoom
+- `146` 先把 coarse remote 合同厚度拆开，`147` 再把 remote-safe command shell 收窄成 affordance 问题
+- `148` 先把 env-driven remote 轴拆开，`149` 再把 remote memory persistence 收窄成双轨问题
+- `144-149` 因而不是从 `143` 顺编号展开的六连页，而是三组相邻配对
+
+一旦这句成立，
+
+就不会再把：
+
+- pane gate
+- URL affordance
+- command shell
+- env-driven remote
+- remote memory persistence
+
+写成同一种“coarse remote bit 的后续细化页”。
