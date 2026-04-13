@@ -9,6 +9,7 @@
 如果争议已经变成“总控页之间谁在越位代签、目录契约是否失真”，先回 [../meta/README.md](../meta/README.md)；那不是 artifact gap。
 目录层级也先认一条：`根入口 -> guides/102 -> owner page`。`navigation/` 只在这条 first-hop 已经成立之后，继续指出下一种 artifact 或最近的 fail-closed seam；它不是第四个 frontdoor。
 如果你还在判断源码质量 advancedness 本身是否成立，而不是只缺下一种 artifact / seam，就应离开 `navigation/`；源码质量 first answer 只认 `README -> guides/102 -> philosophy/87 或 architecture/README`。
+更硬一点说，`navigation/` 不能把 `layout praise / provisional / pass` 这种成熟度 verdict 当成 route clue；route 页只配回答“缺哪种 artifact”，不配回答“advancedness 是否已经成立”。
 
 这里默认只回答 artifact gap，而不是页面归属。扁平反查规则如下：
 

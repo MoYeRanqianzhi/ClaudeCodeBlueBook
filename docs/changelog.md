@@ -2,6 +2,8 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/{README.md,philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md,navigation/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 source-quality stop-before-object-truth 协议：根 `README` 现在更明确写死源码质量线一旦开始追 `writer claim state / first retreat layer / fail-closed seam`，就已离开 root frontdoor；`87` 现在把离场条件写得更硬，reader 一旦从 why-proof 切到 object truth，本页必须停止；`navigation/README` 也同步写死，route 页不配把 `layout praise / provisional / pass` 这种成熟度 verdict 当成 route clue。
+
 - 继续更新 `bluebook/{README.md,philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md,navigation/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 source-quality frontdoor / route ceiling 协议：根 `README` 现在更明确把源码质量线压回 `合法复杂度中心 / one writable present / later-maintainer veto` 的 first test；`87` 现在更明确写死在 `public-evidence only` 下，本页最强只到 why-proof / review standard，`writer / effect ceiling / first retreat layer / fail-closed seam` 都只先算 next-hop noun；`navigation/README` 也补明：若还在判断 advancedness 本身是否成立，而不是只缺下一种 artifact / seam，就应离开 route 页。
 
 - 继续更新 `bluebook/{security/README.md,10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面.md,userbook/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 security-frontdoor / typed-state-action 协议：`security/README` 现在补出了 `authority lease / decision delta / cleanup trigger state -> reprice or suspend / do not reopen / suspend or reject / continue or reopen` 的最小动作桥，并把 `pointer / summary / resume button / status green` 明确降回 `reopen eligibility`，不再默许它们代签 `reopen authority`；`userbook/README` 也把治理效率进一步压成 fewer `zero-delta asks`，而不是 fewer total asks。

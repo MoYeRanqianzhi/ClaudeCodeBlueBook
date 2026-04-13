@@ -10,6 +10,7 @@
 当前真相保护线也只先判证据 ceiling 与 current-truth 入口：`102` 先回答公开证据够不够支撑当前真相主张；若问题已经不在首跳，而是在分辨 why、object 或 verdict，再由对应归属页继续接手。
 更稳一点说，源码质量 advancedness 若还落不到 `why-proof + object landing`，就只配停在 `provisional`，不能在根入口被写成成熟 verdict。
 更硬一点说，源码质量线在根入口只配先做 `合法复杂度中心 / one writable present / later-maintainer veto` 的 first test；若开始展开 why-proof、对象摘要或 fail-closed seam，根页就已经越位。
+如果这三问已经答出“是”，但你还在追 `writer claim state / first retreat layer / fail-closed seam`，那就已经离开根入口，下一跳统一回 `guides/102 -> philosophy/87 或 architecture/README`，而不是继续留在 frontdoor。
 
 证据上限也先记一句：凡涉及路径级源码 certainty 的判断，首跳一律先去 `guides/102`；根入口不在这里继续判断证据状态。
 目录升级顺序也只认一条：`根入口 -> guides/102 -> owner page`。没有经过 `102` 的 claim-state / promotion gate，`architecture/`、`api/` 与其他 frontdoor 页里的 noun 都不能自动读成 landed truth。

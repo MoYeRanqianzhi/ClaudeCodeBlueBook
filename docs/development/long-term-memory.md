@@ -13,6 +13,9 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 source-quality-route-pages-must-stop-before-object-truth-apr13 live 记忆：
+  - `bluebook/README`、`philosophy/87` 与 `navigation/README` 现在也应直接写死：源码质量线一旦开始追 `writer claim state / first retreat layer / fail-closed seam`，就已经离开 root frontdoor 与 why owner；`navigation/` 也不配把 `layout praise / provisional / pass` 这种成熟度 verdict 当成 route clue
+  - 更稳的默认写法是：根入口只做 `合法复杂度中心 / one writable present / later-maintainer veto` 的 first test，`87` 只做到 why-proof / review standard，`navigation` 只回答缺哪种 artifact，不回答 advancedness 是否已成立
 - 当前批次继续新增一条 source-quality-frontdoors-must-stop-at-first-test-under-public-evidence-apr13 live 记忆：
   - `bluebook/README`、`philosophy/87` 与 `navigation/README` 现在也应直接写死：源码质量线在 `mirror absent / public-evidence only` 下，根入口只配做 `合法复杂度中心 / one writable present / later-maintainer veto` 的 first test，`87` 最强只到 why-proof / review standard，`navigation` 只处理 artifact gap，不代判 advancedness 是否成立
   - 更稳的默认写法是：`writer / effect ceiling / first retreat layer / fail-closed seam` 在 `87` 里都只先当 next-hop noun；若还在争成熟度是否成立，就离开 route 页，回 `README -> guides/102 -> philosophy/87 或 architecture/README`
