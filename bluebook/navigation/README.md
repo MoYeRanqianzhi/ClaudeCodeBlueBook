@@ -16,6 +16,7 @@
 - 缺目录法或入口升级规则，回 `../../docs/development/00-研究方法.md`
 - 缺 Prompt 的 `lawful inheritance / search-pruning / decision-retirement / belonging-vs-admissibility` 首答，回 `philosophy/84`
 - 缺 Prompt why，先回 `philosophy/84`；若只缺苏格拉底式自校，再回 [../06-第一性原理与苏格拉底反思.md](../06-%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E8%8B%8F%E6%A0%BC%E6%8B%89%E5%BA%95%E5%8F%8D%E6%80%9D.md)
+- 若 Prompt why 已站住，但你缺的是 builder-facing object chain、`carrier / witness` 区分或 worked example，回 `philosophy/81`
 - 缺治理的 `repricing proof / lease checkpoint / cleanup witness`，回 `../10`
 - 缺 signer / ledger / cleanup authority ambiguity，回 `security`
 - 缺 post-cleanup readback，回 `risk`

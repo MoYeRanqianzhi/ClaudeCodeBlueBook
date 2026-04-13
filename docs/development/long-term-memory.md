@@ -13,6 +13,9 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-navigation-must-route-why-to-84-and-mechanism-to-81-apr13 live 记忆：
+  - `bluebook/navigation/README` 与 `philosophy/81` 现在也应直接写死：Prompt 线在 route-only 层不只要有 `84 / 06`，还要显式给出 `84 -> 81` 的 builder-facing 出口；`84` 固定 why owner law 与 verdict box，`81` 只展开同一条 `same-world request object` 的 object chain
+  - 更稳的默认写法是：若你缺的是 Prompt why，回 `84`；若 why 已站住，但还缺 `carrier / witness / continuation object` 的正式链路，就回 `81`
 - 当前批次继续新增一条 governance-tail-chain-must-split-aftermath-readback-from-execution-apr13 live 记忆：
   - `bluebook/security/README`、`risk/README`、`playbooks/README` 与 `userbook/README` 现在也应直接写死：治理尾链一旦离开 `signer / ledger / cleanup authority`，就要先分成 `cleanup-aftermath readback` 与 `execution verdict` 两问；前者只去 `risk`，后者只去 `playbooks`
   - 更稳的默认写法是：`security` 只负责机制 ambiguity，`risk` 只负责 `product promise / reopen eligibility / evidence receipt binding` 的 receipt-grade aftermath，`playbooks` 只消费这些输入去下 `execution verdict / rollback / reopen`

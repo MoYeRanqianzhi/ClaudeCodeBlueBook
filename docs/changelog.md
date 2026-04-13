@@ -2,6 +2,8 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/{navigation/README.md,philosophy/81-请求编译链：可缓存、可转写、可继续.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 Prompt route-only 协议：`navigation/README` 现在更明确补出 `84 -> 81` 的 builder-facing 出口；`81` 也同步把自己与 `84` 的 speaking right 再切清一层，明确 `84` 只固定 why owner law 与 verdict box，本页只展开同一条 `same-world request object` 的机制对象链。
+
 - 继续更新 `bluebook/{security/README.md,risk/README.md,playbooks/README.md,userbook/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 governance tail-chain split 协议：`security/README` 现在更明确把 cleanup 之后的承诺、reopen 资格与 receipt 绑定离场到 `risk/README`；`risk/README` 则补明一旦问题进入 `execution verdict / rollback / reopen` 顺序，就应离场到 `playbooks/README`；`playbooks/README` 也同步补出反向边界，不再受理 `product promise / reopen eligibility / evidence receipt binding` 的样貌问题；`userbook/README` 则把用户前门的治理尾链固定分成 `risk` 与 `playbooks` 两问。
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight failure 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 因未解决冲突失败，`git status --short --branch` 同时显示 `main...origin/main [ahead 32]` 与 `bluebook/security/{README.md,appendix/README.md,source-notes/README.md}`、`docs/development/research-log.md` 等未收敛文件；这次失败只作为外部事实记录，不在根仓做任何收敛动作。
 
