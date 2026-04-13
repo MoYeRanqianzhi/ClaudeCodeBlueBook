@@ -2,6 +2,14 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/53` 窄批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
+
+- 本轮新的 `api/53` candidate-discipline 结论：我结合并行 agent 对 `api/52 / 53` 的复核，只对 `bluebook/api/53-故障模型宿主消费面手册：authority state、generation evidence、recovery boundary与anti-zombie projection.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`53` 现在更明确把结构故障模型写成“宿主消费候选”而不是“已稳定消费面”：页首不再说三层支持面已经被宿主“间接而稳定地消费”，而是承认它们当前只到 candidate 强度；`freshness outcome projection / cleanup residue object / rollback legality snapshot` 也统一先绑回 `state / pending_action / task_summary / recovery contract` 这些已外化 surface，再承认它们只是 host-facing candidate。当前判断是，这一步能减少 `public-evidence only` 条件下把推断型宿主投影误写成 landed surface 的概率。
+
+- 本轮新的安全 / 省 token 接缝结论：`53` 现在也补出了和 `api/52` 的默认 handoff：若宿主还要判断一次 recovery / continue 是否已经进入 `zero-delta` 花费或窗口失效，不再在 `53` 内部单独猜，而是统一回 `52` 把 `get_context_usage + pending_action + worker_status` 一起读。当前判断是，这一步能把故障恢复与治理定价重新接回同一 decision-window 语言，避免“恢复成功”与“继续还值不值得”继续被拆成两张孤立图。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一个 recovery-facing 名词听起来已经很像正式对象时，更稳的默认追问不该是“它能不能直接进宿主面板”，而应先问“这是不是 runtime 已外化 surface，还是我从多条 surface 推出来的 candidate”；如果是后者，就不该被写成 landed surface。当前判断是，这个问法能把安全与省 token 反思从“名字像对象”拉回“证据到底落在哪”，也更贴近 Claude Code fail-closed 的设计纪律。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `philosophy/54 + guides/30` 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
 
 - 本轮新的 Prompt lawful-consumer 结论：我结合并行 agent 对 `philosophy/54` 与 `guides/30` 的复核，只对这两页与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`54` 现在更明确把“Prompt 为什么有魔力”回绑到 `84` 的 owner law 与 `81` 的 witness chain：所谓魔力不再停在 lawful-consumer slogan，而是直接压成 `lawful inheritance / search-pruning / decision-retirement` 三条母法则让 later consumer 不必重付“重谈世界、重搜动作、重判旧结论”这三笔税；同时也把 sticky prompt、suggestion、session memory、handoff note 的 `effect ceiling` 写死，只允许它们当 carrier / projection，不再默认能代签 continue 资格。当前判断是，这一步能把 `54` 从“Prompt 很强”的压缩结论页，推进成真正可复查的 why-proof。

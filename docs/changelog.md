@@ -2,6 +2,10 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/api/53-故障模型宿主消费面手册：authority state、generation evidence、recovery boundary与anti-zombie projection.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 fault-surface candidate 协议：`api/53` 现在把 `freshness outcome projection / cleanup residue object / rollback legality snapshot` 明确降回 `host-facing candidate`，不再在 `public-evidence only` 下写成 landed surface；同时把 recovery / continue 的 `zero-delta` 花费判断显式接回 `api/52` 的 `decision window + context usage` 语言。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在进入 `api/53` 窄批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
+
 - 继续更新 `bluebook/{philosophy/54-好的Prompt同时组织模型与人类接手路径.md,guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 Prompt lawful-consumer 协议：`54` 现在把“Prompt 为什么有魔力”明确回绑到 `84` 的 owner law 与 `81` 的 witness chain，并把 sticky prompt、suggestion、session memory、handoff note 的 `effect ceiling` 写死；`guides/30` 则补出 `public-evidence only` 护栏，并把失败后的默认顺序收成“先做 drift typing，再只选一个 owner page”。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在进入 `philosophy/54 + guides/30` 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
