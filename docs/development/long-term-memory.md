@@ -13,6 +13,21 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-preflight-blocked-for-api53-candidate-family-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/53` candidate-family 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败，报错 `Merging is not possible because you have unmerged files.`
+  - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api53-should-describe-antizombie-as-candidate-family-not-landed-projection-apr13 live` 记忆：
+  - `bluebook/api/53-故障模型宿主消费面手册：authority state、generation evidence、recovery boundary与anti-zombie projection.md` 现在也应继续写死：在 `public-evidence only` 条件下，`freshness evidence / cleanup witness / rollback witness` 更稳地只按 `host-facing candidate family` 读取，不再说成宿主“必须看到”的三类近似独立对象化投影
+  - 更稳的默认写法是：宿主先围绕 `state / pending_action / task_summary / recovery contract` 这些已外化 surface 组织读面，再用 `stale-writer risk / recovery-asset boundary / rollback receipt` 这些解释词压缩阅读，不把它们预写成 landed surface
+- 当前批次继续新增一条 `root-preflight-blocked-for-api52-surface-first-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/52` surface-first 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败，报错 `Merging is not possible because you have unmerged files.`
+  - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `root-sync-healthy-for-api52-surface-first-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/52` surface-first 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api52-must-say-concrete-surfaces-first-and-treat-governance-nouns-as-interpretation-terms-apr13 live` 记忆：
+  - `bluebook/api/52-统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate.md` 现在也应继续写死：在 `public-evidence only` 条件下，宿主页先说 `control requests + settings / state / pending_action / usage surfaces`，再说 `governance key / externalized truth chain / typed ask / continuation pricing`
+  - 更稳的默认写法是：`surface first / interpretation second`；只要一页还需要靠解释词抢首句，它就还在 hidden ontology spillover，而不是在写 host-facing claim-state
 - 当前批次继续新增一条 `root-sync-healthy-for-guides30-verdict-plumbing-batch-apr13 live` 记忆：
   - 2026-04-13 本轮进入 `guides/30 + philosophy/54` verdict-plumbing 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`

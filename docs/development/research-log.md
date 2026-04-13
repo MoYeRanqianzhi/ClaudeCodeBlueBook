@@ -5,6 +5,10 @@
 - 本轮新的安全目录同步结论：已把 stronger-request cleanup 最新一段并入主线索引，当前计数同步到 `security=462 / appendix=445 / source-notes=312`，对应范围分别为 `00-461 / 01-445 / 01-312`；这次并入只吸收可长期复用的目录与研究结论，不把 worktree 局部同步噪音带回主分支日志。
 - 本轮新的 `87` deeper-tail 结论：我并行复核了 `81 / 85 / 86 / 87` 的更深尾段后，只对 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 落了正文修改。`87` 现在把 section 7 里的 route/gate/checklist 语气再收薄一层：可交接的 why-proof 不再显式指挥 later maintainer “去哪个 owner / 哪个 seam owner”，future-maintainer rejectability 也不再借 `operator artifacts / effect ceiling / local veto cue` 长成 review gate，而是更纯粹地停在 why-proof 与最低 change-control 标准。当前判断是，这一步能继续减少 `87` section 7 被 later consumer 误读成 compact review gate 或 route bridge 的概率。
 
+- 本轮新的 `api/53` candidate-family 结论：`api/53` 现已把 `anti-zombie projection` 再降一层：不再把宿主读面写成三类近似独立对象化投影，而是承认宿主当前只该围绕 `freshness / cleanup / rollback` 这三类 host-facing candidate family 组织读取，并继续把它们绑定回已外化 surface。当前判断是，这一步继续压低了 `public-evidence only` 下的对象化语气，让故障模型宿主页更稳定地停在 candidate / projection 层。
+
+- 本轮新的 `api/52` surface-first 结论：`api/52` 现已继续把 hidden ontology 往后压：页首不再先立 `governance key / typed ask / decision window / continuation pricing` 这套四句前门公式，而是先按 `control requests + settings / state / pending_action / usage surfaces` 说清宿主到底拿到了什么，再承认这些 nouns 只是解释词。当前判断是，这一步把治理宿主页继续拉回 concrete host-facing claim-state，而不是在 `public-evidence only` 下先发明一组近似 landed object。
+
 - 本轮新的 `guides/30` verdict-plumbing 结论：`guides/30` 现已把 `effect ceiling` 从局部门槛接回整条 Prompt 审读协议，显式进入输入、verdict 与记录卡；新的 gate verdict 固定为 `pass / provisional / reject / unknown`，并补齐了 `effect-ceiling breach / carrier-only provisional / 本地 verdict` 这些失效类型。当前判断是，这一步把 Prompt 审读链从“知道有这个 gate”推进到了“整条判定流都能消费这个 gate”。
 
 - 本轮新的 `philosophy/54` carrier law 结论：`54` 现已把 `teammate navigation` 正式绑回同一条 `effect ceiling` 纪律，不再把“知道该找谁”默认为 same-world continuation 的签字能力；它与 `suggestion / sticky prompt / session memory / handoff note` 一样，最多只负责 route / carrier 价值。当前判断是，这一步继续削弱了 Prompt 魔力论证里“路由能力被误读成签字能力”的残余歧义。

@@ -2,6 +2,16 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/api/53-故障模型宿主消费面手册：authority state、generation evidence、recovery boundary与anti-zombie projection.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 anti-zombie candidate-family 协议：`api/53` 现在把 `freshness / cleanup / rollback` 三类读面继续从“宿主必须看到的对象化投影”降回 `host-facing candidate family`，明确它们只是帮助 later consumer 围绕已外化 surface 组织阅读，而不是 landed surface。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight failure 记录：2026-04-13 本轮在进入 `api/53` candidate-family 批次前，根仓 `/home/mo/m/projects/cc/analysis` 的 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因未解决冲突失败，错误为 `Merging is not possible because you have unmerged files.`；这次失败只作为外部事实记录，不在根仓做任何收敛动作。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight failure 记录：2026-04-13 本轮在进入 `api/52` surface-first 批次前，根仓 `/home/mo/m/projects/cc/analysis` 的 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因未解决冲突失败，错误为 `Merging is not possible because you have unmerged files.`；这次失败只作为外部事实记录，不在根仓做任何收敛动作。
+
+- 继续更新 `bluebook/api/52-统一定价治理宿主消费面手册：authority source、decision window、pending action、rollback object与continuation gate.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 governance surface-first 协议：`api/52` 现在把页首和 `§5.1` 继续从 hidden ontology 收回 concrete public surfaces，先说 `control requests + settings / state / pending_action / usage surfaces`，再把 `governance key / externalized truth chain / typed ask / continuation pricing` 明确降格成解释词，而不是前门 ontology。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在进入 `api/52` surface-first 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
+
 - 继续更新 `bluebook/{guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md,philosophy/54-好的Prompt同时组织模型与人类接手路径.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 prompt verdict-plumbing 协议：`guides/30` 现在把 `effect ceiling` 接回了执行协议输入、verdict 语义与审读记录卡；`54` 则把 `teammate navigation` 也正式绑回同一条 carrier / route `effect ceiling` 纪律，不再只停在题面。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在进入 `guides/30 + philosophy/54` verdict-plumbing 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
