@@ -1,6 +1,6 @@
 # 安全专题索引
 
-`security/` 当前有 463 篇正文，范围 `00-462`；`appendix/` 当前有 446 篇速查文档；`source-notes/` 当前有 313 篇源码剖面。
+`security/` 当前有 464 篇正文，范围 `00-463`；`appendix/` 当前有 447 篇速查文档；`source-notes/` 当前有 314 篇源码剖面。
 
 `security/` 首页默认先压回三类机制 ambiguity：`signer / verdict ledger / cleanup authority`。
 `security/` 研究的不是“规则越多越安全”，而是动作、权威、上下文与时间四种扩张如何被同一条治理秩序收费，以及弱 signer 为什么永远不配越级冒充强 signer。
@@ -89,6 +89,7 @@
 
 - Claude Code 的安全性不是单点沙箱，也不是单点分类器，而是一套分层 signer、ledger 与 lifecycle control plane。
 - 真正重要的不是把能力做得尽量小，而是让能力、声明、恢复权和清理权只能沿着正确边界流动。
+<<<<<<< HEAD
 - `147-462` 这一整段已经证明：弱层只能说明局部事实，强层才有权宣布更高阶治理结果；任何弱层都不能越级冒充强层。
 - 宿主如果绕过 runtime 已外化的 authority / status / verdict，自行从事件流回放拼“当前真相”，就会把安全控制面重新降成脆弱的局部推断。
 
@@ -107,6 +108,9 @@
 - 如果你只先判断“哪种 signer 有资格改边界”，从 `00-29` 进入。失败信号：还在把 classifier、mode、allow 规则或单点沙箱当成最终主权。
 - 如果你只先判断“哪条真相链必须被宿主承认”，从 `30-138` 进入。失败信号：还在让宿主从事件流、usage 条或局部 status 自己回放拼治理真相。
 - 如果你只先判断“cleanup 与 forgetting 为什么不能混成一个结果词”，从 `147-462` 进入。失败信号：还在把完成、终局、遗忘、清理写成一个“已经没事了”的总结果。
+=======
+- `147-463` 这一整段已经证明：弱层只能说明局部事实，强层才有权宣布更高阶治理结果；任何弱层都不能越级冒充强层。
+>>>>>>> research/claude-code-risk-analysis
 
 ## 目录分层
 
@@ -378,6 +382,7 @@
 - [460-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层：为什么artifact-family cleanup stronger-request cleanup-continuity-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-recovery-governor signer](460-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层.md)
 - [461-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层：为什么artifact-family cleanup stronger-request cleanup-recovery-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reintegration-governor signer](461-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层.md)
 - [462-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层：为什么artifact-family cleanup stronger-request cleanup-reintegration-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reprojection-governor signer](462-安全载体家族强请求清理重新并入治理与强请求清理重新投影治理分层.md)
+- [463-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层：为什么artifact-family cleanup stronger-request cleanup-reprojection-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reassurance-governor signer](463-安全载体家族强请求清理重新投影治理与强请求清理重新担保治理分层.md)
 
 ## 阅读顺序
 
@@ -385,8 +390,8 @@
 - 想定位“当前真相从哪里来、为什么恢复不等于完成”：先读 `30-69`。
 - 想看能力发布、状态编辑与恢复资格：先读 `70-99`。
 - 想看验证、迁移与工程化落地：先读 `100-138`。
-- 想直看治理链主干：先读 `147-462 -> appendix/131-446 -> source-notes/01-313`。
-- 想快速进入当前这段强请求清理子链：先读 `458-462 -> appendix/442-446 -> source-notes/309-313`。
+- 想直看治理链主干：先读 `147-463 -> appendix/131-447 -> source-notes/01-314`。
+- 想快速进入当前这段强请求清理子链：先读 `459-463 -> appendix/443-447 -> source-notes/310-314`。
 - 想快速查字段、词法、路由、签字权和速查表：直接去 [appendix/README.md](appendix/README.md)。
 - 想追具体源码证据簇：直接去 [source-notes/README.md](source-notes/README.md)。
 
