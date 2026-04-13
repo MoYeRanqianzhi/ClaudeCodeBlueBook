@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 governance-checkpoint-law-must-use-receipt-grade-projection-apr13 live 记忆：
+  - `bluebook/philosophy/61`、`10` 与 `userbook/README` 现在也应直接写死：没有新增 `decision delta` 的 `status / usage / reopen tail / summary` 不是 governance checkpoint，只是 `receipt-grade lease-checkpoint projection`
+  - 更稳的默认写法是：治理页里的真正 checkpoint law 一律写成 `same authority lease / new decision delta / cleanup trigger state`；凡读回面不能独立补齐这三件事，就只配回单，不配回判
 - 当前批次继续新增一条 prompt-deep-pages-must-separate-carriers-from-witnesses-apr13 live 记忆：
   - `bluebook/philosophy/{14,18,21,54}` 与 `guides/30` 现在也应直接写死：summary、memory、handoff prose、session memory 这类对象默认更接近 continuation carrier / belonging carrier，而不是 admissible continuation witness
   - 更稳的默认写法是：Prompt 深页一律继续区分 `carrier vs witness`、`belonging vs admissibility`，并要求 `lawful forgetting`、handoff 与 resume 都不能逼 later consumer 重做 `world-definition / tool-legality / next-action search`

@@ -5,7 +5,7 @@
 1. 为什么仅仅说“安全、成本与体验共用预算器”还不够。
 2. 为什么 Claude Code 真正成熟的地方，在于检查顺序、失败语义分型和自动化撤销路径。
 3. 为什么系统只该在“仍有决策增益”的地方继续花 token。
-4. 为什么继续前必须先证明 `repricing / lease checkpoint / cleanup` 仍成立。
+4. 为什么继续前必须先证明 `same authority lease / new decision delta / cleanup trigger state` 仍成立。
 5. 这对 agent runtime 设计者意味着什么。
 
 ## 0. 本页边界
@@ -22,10 +22,10 @@
 而是：
 
 1. 先找最早的 unpaid expansion。
-2. 再证明 repricing 发生在继续或暴露之前。
+2. 再证明 repricing 发生在继续或暴露之前，并且留下的是同一条 `authority lease` 上新的 `decision delta` 与明确的 `cleanup trigger state`。
 3. 证明不了时，只能立即 reject、cleanup 后重开价，或退回人工。
 4. 自动化必须随时可撤销，而不是单向升级。
-5. 只有仍能支撑 `repricing / cleanup / continue verdict` 的证据才值得被稳定留下。
+5. 只有仍能支撑 `same authority lease / new decision delta / cleanup trigger state` 的证据才值得被稳定留下。
 
 更硬一点说，这套治理成熟度也在持续替 later consumer 退休三类没有新增 `decision delta` 的重判：
 
@@ -129,12 +129,12 @@ Claude Code 并不追求“检查越多越安全”。
 它更像在走一道更硬的 diagnosis loop：
 
 1. 这次检查还能改写哪个 decision。
-2. 如果症状来自 `continue / compact / resume / re-entry`，旧 lease 有没有 `repricing proof`。
+2. 如果症状来自 `continue / compact / resume / re-entry`，旧 lease 有没有 `repricing proof`，以及这次是否真的新增 `decision delta`。
 3. 哪些证据仍必须留下，才能继续支撑 `same authority lease / new decision delta / cleanup trigger state`。
 4. 哪些 transient authority 必须被 cleanup 撤销，不能伪装成同一现场的合法继续。
 
 四问里只要有一问答不上，系统停掉的就不只是“额外检查”，而是一笔不该默认续租的 authority。
-更具体的 `lease checkpoint / repricing proof / cleanup` 对象链统一回 `10`；本页只保留 why：为什么决策增益一旦消失，就不该再免费续租 authority。
+更具体的 `same authority lease / new decision delta / cleanup trigger state` 对象链统一回 `10`；本页只保留 why：为什么决策增益一旦消失，就不该再免费续租 authority。
 
 更硬一点说，未被重新定价的继续会同时延长 authority 与成本在场；它不是便宜，而是把代价推迟到后面。
 
@@ -225,7 +225,7 @@ Claude Code 的很多高级设计都在强调：
 - 一旦继续已经不能改写这些东西，它就不该继续占据高价上下文与自动化权限。
 - 所以 `continuity` 也只是一道 lease checkpoint：`same authority lease? new decision delta? cleanup trigger fired or still owed?`；`compact / resume / re-entry` 只是这道 checkpoint 的三种入口形式。
 - `compact`
-  - 只能保留仍足以支持 `same authority lease / repricing proof / cleanup trigger state` 的 stable bytes；否则它只是摘要，不是合法继续。
+  - 只能保留仍足以支持 `same authority lease / new decision delta / cleanup trigger state` 的 stable bytes；否则它只是摘要，不是合法继续。
 - `resume`
   - 只有旧 `verdict ledger` 仍能证明 lease 未被撤销时，才算继续同一现场。
 - `re-entry`

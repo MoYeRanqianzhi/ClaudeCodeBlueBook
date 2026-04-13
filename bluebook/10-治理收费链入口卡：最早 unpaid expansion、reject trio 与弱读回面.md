@@ -1,17 +1,17 @@
 # 治理收费链入口卡：最早 unpaid expansion 与四问诊断
 
 这页只压治理入口第一问，不重做 why、机制 inventory 或执行 verdict。
-它只补一件最容易被写浅的事实：进入诊断时先找 `earliest unpaid expansion`，再看 `repricing proof / lease checkpoint / cleanup`；更硬一点说，真正要问的是这次继续是否仍在同一条 `authority lease` 上、是否真的新增 `decision delta`、以及 `cleanup trigger` 是否已明确触发。危险、花费与体验波动，只是这次扩张在判责时回看的投影，不是入口第一主语。
+它只补一件最容易被写浅的事实：进入诊断时先找 `earliest unpaid expansion`，再看 `repricing proof / lease checkpoint / cleanup`；更硬一点说，真正要问的是这次继续是否仍在同一条 `authority lease` 上、是否真的新增 `decision delta`、以及 `cleanup trigger state` 是否已明确触发或仍被明确欠账。危险、花费与体验波动，只是这次扩张在判责时回看的投影，不是入口第一主语。
 
 ## 只在这里回答什么
 
-- 这页只压缩 `earliest unpaid expansion -> repricing proof -> lease checkpoint -> cleanup` 这一条最短诊断环。
+- 这页只压缩 `earliest unpaid expansion -> repricing proof -> same authority lease / new decision delta / cleanup trigger state` 这一条最短诊断环。
 - 这页不替 `85 / security / risk / playbooks` 重判 why、安全主语、用户侧 readback 或现场执行顺序。
 - 若你已经开始追问 signer、readback、rollback、reopen 或 execution next hop，说明你已经离开入口卡。
 
 ## 一句话
 
-- 治理不是先认资源类目，也不是先看谁更会拦截，而是先问最早 `unpaid expansion` 是什么，再核对 `repricing proof`、`lease checkpoint` 与 `cleanup`。
+- 治理不是先认资源类目，也不是先看谁更会拦截，而是先问最早 `unpaid expansion` 是什么，再核对 `repricing proof`、`same authority lease / new decision delta / cleanup trigger state`。
 - 因此省 token 不是压缩已准入世界，而是减少免费扩张、延后暴露、外置 durable asset，并在 cleanup 后杀死不该默认续租的 transient authority。
 - 更硬一点说，任何 surface 只有在新增 signer 证据、boundary delta 或 cleanup delta 时才配升级成治理事实；否则一律只算 receipt-grade readback。
 
@@ -28,8 +28,8 @@
 4. `cleanup`
    - 旧 authority 是否已经撤租、归档、停用，以及显式 `cleanup trigger` 是否已触发；若没有，继续一律不算合法续租。
 
-`repricing seam` 不是一个补救动作名，而是这四问唯一允许改价的回炉口：凡要改写 continue、默认重试、usage 解读或 readback 结论的动作，都必须回到这里重开。若不同 surface 可以各自补签一点安全、一点成本，同一现场就会出现多头定价，`free-expansion relapse` 也会重新出现。这里入口层唯一认的 `reject trio` 也只剩：`decision-window collapse / projection usurpation / free-expansion relapse`；凡 usage、status、readback 或 reopen tail 不能补齐 `repricing proof / lease checkpoint / cleanup`，一律先降回 `weak readback / tail evidence`，没有新增 `decision delta` 时也只算 `zero-delta ask / receipt-grade evidence`，不得在尾链补签继续、重试或 reopen 资格。若同类安全扩张在没有新增 `repricing / deny` 决策增益时仍反复 ask，入口层也先按 `approval fatigue` 记账，而不是按体验波动归档；这说明最早 `unpaid expansion` 已从动作本身转移到重复批准。
-这里的 `weak readback` 也应显式包含 settings diff、hook review、status snapshot 与 host replay：凡这些 surface 只能展示“刚才发生了什么”，却不能独立补齐 `repricing proof / lease checkpoint / cleanup`，就只配回单，不配回判。
+`repricing seam` 不是一个补救动作名，而是这四问唯一允许改价的回炉口：凡要改写 continue、默认重试、usage 解读或 readback 结论的动作，都必须回到这里重开。若不同 surface 可以各自补签一点安全、一点成本，同一现场就会出现多头定价，`free-expansion relapse` 也会重新出现。这里入口层唯一认的 `reject trio` 也只剩：`decision-window collapse / projection usurpation / free-expansion relapse`；凡 usage、status、readback 或 reopen tail 不能补齐 `same authority lease / new decision delta / cleanup trigger state`，一律先降回 `receipt-grade checkpoint projection / tail evidence`，没有新增 `decision delta` 时也只算 `zero-delta ask / receipt-grade evidence`，不得在尾链补签继续、重试或 reopen 资格。若同类安全扩张在没有新增 `repricing / deny` 决策增益时仍反复 ask，入口层也先按 `approval fatigue` 记账，而不是按体验波动归档；这说明最早 `unpaid expansion` 已从动作本身转移到重复批准。
+这里的 `weak readback` 也应显式包含 settings diff、hook review、status snapshot 与 host replay：凡这些 surface 只能展示“刚才发生了什么”，却不能独立补齐 `same authority lease / new decision delta / cleanup trigger state`，就只配回单，不配回判。
 一旦某次 ask 只能产出 approval receipt，却没有新增 signer 证据、boundary delta 或 cleanup 结果，它也应视作 `weak readback`：这类 `zero-delta ask` 只会补一张回单，不会补一条 `repricing proof`。
 一旦这类 `zero-delta ask` 开始被拿来证明“已经够安全、可默认继续”，而不只是留下一张 approval receipt，它就不再只是成本噪音，而是 `projection usurpation`：tail evidence 正在越权代签 `continue qualification`。
 治理效率也不该被写成 approval 更快，而应写成 delta-free approvals 更少；若 ask 更频繁更顺滑，却仍没有新增 signer、边界或 cleanup 增量，入口层就仍按 `approval fatigue / free-expansion relapse` 记账。
