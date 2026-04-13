@@ -28,6 +28,16 @@
 
 这里应该先于平铺编号列表阅读。
 
+如果你是从 `memory/05` 根 `README` 直接跳进来，
+
+默认也应在这里完成第二次分流：
+
+- `122-127`
+- `128-138`
+- `139-149`
+
+而不是再回根索引追更深的 `128-138 / 133-138 / 139-149 / 144-149` 子家族入口。
+
 ## 第一性原理
 
 这组记忆真正想回答的不是：
@@ -74,6 +84,15 @@
 - [../379-2026-04-13-remote-surface branch-map scope clarification 拆分记忆.md](../379-2026-04-13-remote-surface%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [../380-2026-04-13-schema-store bridge-shell branch-map scope clarification 拆分记忆.md](../380-2026-04-13-schema-store%20bridge-shell%20branch-map%20scope%20clarification%20拆分记忆.md)
 
+如果你已经确认自己不只是看 `214 / 215` 两张结构页，
+
+而是要在这一簇内部继续按子家族浏览，
+
+直接进：
+
+- [../128-138-surface presence、bridge chain 与 interaction shell 家族/README.md](../128-138-surface%20presence、bridge%20chain%20与%20interaction%20shell%20家族/README.md)
+- [../133-138-schema-store、bridge chain 与 interaction shell 家族/README.md](../133-138-schema-store、bridge%20chain%20与%20interaction%20shell%20家族/README.md)
+
 ### 3. 我已经进入 remote truth / shell pair / env-driven memory（`139-149`）
 
 先读蓝皮书结构页：
@@ -86,9 +105,20 @@
 - [../381-2026-04-13-remote-truth branch-map scope clarification 拆分记忆.md](../381-2026-04-13-remote-truth%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [../382-2026-04-13-shell-pair branch-map scope clarification 拆分记忆.md](../382-2026-04-13-shell-pair%20branch-map%20scope%20clarification%20拆分记忆.md)
 
+如果你已经确认自己在追的是：
+
+- `139-149` 这一整簇的 truth / shell / memory
+- 或更窄的 `144-149` shell / memory pair
+
+直接进：
+
+- [../139-149-remote truth、shell 与 memory 家族/README.md](../139-149-remote%20truth、shell%20与%20memory%20家族/README.md)
+- [../144-149-session pane、command shell 与 remote memory 家族/README.md](../144-149-session%20pane、command%20shell%20与%20remote%20memory%20家族/README.md)
+
 ## 这层入口保护什么
 
 - 保护的是 `122-149` 这簇记忆的子家族入口，不是新的编号总图。
 - 保护的是 `212 -> 213`、`214 -> 215`、`216 -> 217` 三段接力关系。
 - 不把 `122-127`、`128-138`、`139-149` 误写成三份互不相干的旧批次。
+- 不让根索引继续复制这层已经足够完成的第二次分流。
 - 不在这一轮移动或重命名任何现有记忆文件。

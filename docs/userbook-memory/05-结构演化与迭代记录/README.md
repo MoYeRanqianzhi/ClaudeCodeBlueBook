@@ -13,14 +13,11 @@
   - 非交互、recovery 与 remote surface 家族先看 [100-149-非交互、recovery 与 remote surface 家族/README.md](./100-149-非交互、recovery%20与%20remote%20surface%20家族/README.md)。
   - ingress、permission tail 与 blocked-state 家族先看 [191-206-bridge ingress、permission tail 与 blocked-state 家族/README.md](./191-206-bridge%20ingress、permission%20tail%20与%20blocked-state%20家族/README.md)。
   - remote recovery、surface truth 与 shell 子家族先看 [122-149-remote recovery、surface truth 与 shell 家族/README.md](./122-149-remote%20recovery、surface%20truth%20与%20shell%20家族/README.md)。
-  - remote truth、shell 与 memory 子家族先看 [139-149-remote truth、shell 与 memory 家族/README.md](./139-149-remote%20truth、shell%20与%20memory%20家族/README.md)。
-  - session pane、command shell 与 remote memory 子家族先看 [144-149-session pane、command shell 与 remote memory 家族/README.md](./144-149-session%20pane、command%20shell%20与%20remote%20memory%20家族/README.md)。
-  - surface presence、bridge chain 与 interaction shell 子家族先看 [128-138-surface presence、bridge chain 与 interaction shell 家族/README.md](./128-138-surface%20presence、bridge%20chain%20与%20interaction%20shell%20家族/README.md)。
-  - schema-store、bridge chain 与 interaction shell 子家族先看 [133-138-schema-store、bridge chain 与 interaction shell 家族/README.md](./133-138-schema-store、bridge%20chain%20与%20interaction%20shell%20家族/README.md)。
+    进到这个子家族后，再按 `122-127 recovery`、`128-138 surface / interaction shell`、`139-149 truth / shell / memory` 继续分流；更深的子家族入口不再回挂根索引。
 - `command-index / capability map / range map`
   - 先看 [284-2026-04-08-capability map hub cleanup 拆分记忆.md](./284-2026-04-08-capability%20map%20hub%20cleanup%20拆分记忆.md)、[294-2026-04-08-command-index session-ops split 拆分记忆.md](./294-2026-04-08-command-index%20session-ops%20split%20拆分记忆.md)、[311-2026-04-08-reference hub range map sync 拆分记忆.md](./311-2026-04-08-reference%20hub%20range%20map%20sync%20拆分记忆.md)、[321-2026-04-08-command-index status control-plane regroup 拆分记忆.md](./321-2026-04-08-command-index%20status%20control-plane%20regroup%20拆分记忆.md)。
-- `2026-04-13 structure-page scope guard 批次`
-  - 从 [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md) 一路看到 [398-2026-04-13-remote-recovery stable-gray hardening 拆分记忆.md](./398-2026-04-13-remote-recovery%20stable-gray%20hardening%20拆分记忆.md)。
+- `2026-04-13 scope guard / hub uplift / hardening 批次`
+  - 从 [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md) 一路看到 [399-2026-04-13-memory-root subfamily exposure narrowing 拆分记忆.md](./399-2026-04-13-memory-root%20subfamily%20exposure%20narrowing%20拆分记忆.md)。
 - `更早批次`
   - 直接跳到下面的“全量档案”，按编号顺着翻。
 
@@ -154,6 +151,7 @@
 - [396-2026-04-13-dual-trunk stable-gray hardening 拆分记忆.md](./396-2026-04-13-dual-trunk%20stable-gray%20hardening%20拆分记忆.md)
 - [397-2026-04-13-schema-store-shell subfamily hub uplift 拆分记忆.md](./397-2026-04-13-schema-store-shell%20subfamily%20hub%20uplift%20拆分记忆.md)
 - [398-2026-04-13-remote-recovery stable-gray hardening 拆分记忆.md](./398-2026-04-13-remote-recovery%20stable-gray%20hardening%20拆分记忆.md)
+- [399-2026-04-13-memory-root subfamily exposure narrowing 拆分记忆.md](./399-2026-04-13-memory-root%20subfamily%20exposure%20narrowing%20拆分记忆.md)
 
 ## 全量档案
 
