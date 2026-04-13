@@ -1,6 +1,6 @@
 # 安全专题索引
 
-`security/` 当前有 458 篇正文，范围 `00-457`；`appendix/` 当前有 441 篇速查文档；`source-notes/` 当前有 308 篇源码剖面。
+`security/` 当前有 459 篇正文，范围 `00-458`；`appendix/` 当前有 442 篇速查文档；`source-notes/` 当前有 309 篇源码剖面。
 
 本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及从 `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention -> honesty -> isolation -> constitution -> rationale -> metadata -> runtime-conformance -> anti-drift verification -> repair -> migration -> sunset -> tombstone ...` 一路推进到 stronger-request cleanup 家族的同构治理链。
 
@@ -8,7 +8,7 @@
 
 - Claude Code 的安全性不是单点沙箱，也不是单点分类器，而是一套分层 signer、ledger 与 lifecycle control plane。
 - 真正重要的不是把能力做得尽量小，而是让能力、声明、恢复权和清理权只能沿着正确边界流动。
-- `147-457` 这一整段已经证明：弱层只能说明局部事实，强层才有权宣布更高阶治理结果；任何弱层都不能越级冒充强层。
+- `147-458` 这一整段已经证明：弱层只能说明局部事实，强层才有权宣布更高阶治理结果；任何弱层都不能越级冒充强层。
 
 ## 目录分层
 
@@ -255,6 +255,7 @@
 - [455-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层：为什么artifact-family cleanup stronger-request cleanup-resurrection-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-re-entitlement-governor signer](455-安全载体家族强请求清理复活治理与强请求清理再赋权治理分层.md)
 - [456-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层：为什么artifact-family cleanup stronger-request cleanup-re-entitlement-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reconfiguration-governor signer](456-安全载体家族强请求清理再赋权治理与强请求清理重配置治理分层.md)
 - [457-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层：为什么artifact-family cleanup stronger-request cleanup-reconfiguration-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reactivation-governor signer](457-安全载体家族强请求清理重配置治理与强请求清理重新激活治理分层.md)
+- [458-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层：为什么artifact-family cleanup stronger-request cleanup-reactivation-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-readiness-governor signer](458-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层.md)
 
 ## 阅读顺序
 
@@ -262,8 +263,8 @@
 - 想定位“当前真相从哪里来、为什么恢复不等于完成”：先读 `30-69`。
 - 想看能力发布、状态编辑与恢复资格：先读 `70-99`。
 - 想看验证、迁移与工程化落地：先读 `100-138`。
-- 想直看治理链主干：先读 `147-457 -> appendix/131-441 -> source-notes/01-308`。
-- 想快速进入当前这段强请求清理子链：先读 `453-457 -> appendix/437-441 -> source-notes/304-308`。
+- 想直看治理链主干：先读 `147-458 -> appendix/131-442 -> source-notes/01-309`。
+- 想快速进入当前这段强请求清理子链：先读 `454-458 -> appendix/438-442 -> source-notes/305-309`。
 - 想快速查字段、词法、路由、签字权和速查表：直接去 [appendix/README.md](appendix/README.md)。
 - 想追具体源码证据簇：直接去 [source-notes/README.md](source-notes/README.md)。
 
