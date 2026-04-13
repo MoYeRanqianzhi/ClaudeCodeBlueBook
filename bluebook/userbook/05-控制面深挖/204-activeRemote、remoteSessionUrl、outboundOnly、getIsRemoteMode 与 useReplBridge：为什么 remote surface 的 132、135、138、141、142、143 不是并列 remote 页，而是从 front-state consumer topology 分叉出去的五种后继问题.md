@@ -302,6 +302,32 @@
 
 不是入口清单。
 
+## 第八层：稳定层与灰度层
+
+### 稳定可见
+
+- `132` 当前稳定回答的是三条 remote 链路在消费 formal runtime state、partial shadow 还是前台 projection
+- `135` 当前稳定回答的是 direct connect 更像 foreground remote runtime，而不是 presence ledger
+- `138` 当前稳定回答的是 `activeRemote` 只是一层 shared interaction shell，不是 authoritative state store
+- `141` 当前稳定回答的是 `remoteSessionUrl / remoteConnectionStatus / remoteBackgroundTaskCount` 组成 remote-session presence ledger
+- `142` 当前稳定回答的是 bridge mirror 仍应读作 gray runtime topology，而不是另一张 presence truth
+- `143` 当前稳定回答的是 `getIsRemoteMode()` 更像 global remote behavior bit，不等于 presence truth
+
+### 条件公开
+
+- `135` 的 connect status、`sessionUrl/connectUrl` 与 interactive affordance 仍受当前宿主、attach 形态与连接路径影响
+- `138` 的 shared shell 能覆盖哪些 consumer，仍取决于 frontend host、session family 与 current hook mounting
+- `141` 的 ledger 可见面仍受 footer、status line、pane 内容和 host gate 约束
+- `142` 的 mirror gray runtime 仍受 `outboundOnly`、`useReplBridge(...)`、env-less / env-based 选路与 rollout 条件影响
+- `143` 的 behavior bit 被谁读取、会投影到哪些命令显隐或 status surface，仍取决于具体 consumer gate
+
+### 内部/灰度层
+
+- direct connect 的 exact ingress / control wiring、connection sequencing 与 reconnect 细节
+- bridge mirror core 的 exact `session_state_changed`、transport rebuild 与 render gate 顺序
+- footer、brief line、remote pill、dialog 的具体 mount / capture / dismiss 条件
+- `activeRemote`、`remoteSessionUrl`、`getIsRemoteMode()` 未来是否继续维持当前投影边界
+
 ## 结论
 
 更稳的一句应该是：
