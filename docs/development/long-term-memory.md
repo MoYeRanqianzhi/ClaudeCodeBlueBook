@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 hierarchy-gates-must-lock-rung-before-owner-entry-apr13 live 记忆：
+  - `bluebook/{architecture/README,api/README,philosophy/README,navigation/README}.md` 现在也应直接写死：`guides/102` 先锁 claim-state rung，再进入 why / object / host-facing truth / artifact gap；如果 rung 还没锁，后续 owner 页都不该偷接
+  - 更稳的默认写法是：`architecture/` 只接 object-level claim，`api/` 只接 host-facing truth claim-state / consumer subset，`philosophy/` 只证明 why 不补 promotion gate，`navigation/` 只在主语与 rung 都已确定后反查下一种 artifact 或最近的 fail-closed seam
 - 当前批次继续新增一条 why-owners-must-name-retired-repricing-and-time-travel-rejudication-apr13 live 记忆：
   - `bluebook/philosophy/{85,86}` 与 `guides/102` 现在也应直接写死：`85` 不只答“扩张为何要先被定价”，还要答 runtime 正在退休哪些无新增 `decision delta` 的重复重定价 / 重批准 / 重资格判断；`86` 不只答“过去为什么不能写坏现在”，还要答内核正在退休哪些过去对象、恢复资产与旧视角的时间旅行式重判；`102` 则明确自己是 `根入口 -> guides/102 -> owner page` 里的唯一 promotion gate
   - 更稳的默认写法是：why-owner 页负责说清系统退休了哪类重判，`102` 负责说清这些主张何时才配升级给 owner page；未过 `102` 之前，owner noun 一律先按 claim-state 读

@@ -1,7 +1,7 @@
 # 哲学专题
 
 `philosophy/` 只回答三件事：世界如何合法进入模型，扩张为什么必须先被定价，过去为什么不得越权写回现在。这里不预排 first-hop，只保留 why 判据；若你缺的是证据 ceiling、对象摘要或执行 next hop，回对应归属页，不在这里补 route。更硬一点说，`philosophy/` 真正回答的是：Claude Code 分别替 later consumer 退休了哪些世界重判、扩张重判与当前真相重判。
-其中 `86` 只回答“为什么过去不得越权写回现在、为什么 present 只能单写”，`87` 只回答“为什么源码质量要看合法复杂度中心、边界可证、下一次重构仍有路”；不要把 current-truth why 与 source-quality why 再压回同一条首答。
+其中 `86` 只回答“为什么过去不得越权写回现在、为什么 `one writable present` 这条 claim 必须成立”，`87` 只回答“为什么源码质量要看合法复杂度中心、边界可证、下一次重构仍有路”；不要把 current-truth why 与 source-quality why 再压回同一条首答。若问题已经变成 admissibility、promotion 或 claim-state，统一先回 `guides/102`，而不是在 why 页里偷补 gate。
 
 ## 三条 Why 判据
 
@@ -14,7 +14,7 @@
   - 缺治理 why 时看 `85`；若 earliest `unpaid expansion` 还没定位，先回 `10`
 - 当前真相线
   - 如果解释答不出为什么 current truth 不能让过去或投影代签，这条 why 就还没成立
-  - 若继续追源码质量 why，还要先答复杂度是否落在合法中心、现在是否仍只有一个可写现在，以及 later maintainer 是否仍保有正式 veto
+  - 若继续追源码质量 why，还要先答复杂度是否落在合法中心、`one writable present` 这条 claim 为什么仍站得住，以及 later maintainer 是否仍保有正式 veto
   - 缺当前真相 why 时看 `86`；若已经承认 present 必须单写，但还要追源码质量为什么不能退回文件大小、目录观感与模块体感，再看 `87`
 
 ## 什么时候进来
