@@ -2,6 +2,10 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检失败结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，但 merge 仍因根仓存在未解决冲突失败。`git status --short --branch` 显示 `main...origin/main [ahead 20]`，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 仍处于 `UU`。当前判断是，这仍只应作为 root preflight 的外部事实记录，不触发任何根仓收敛动作；正文继续严格只在 `.worktrees/mainloop` 内推进与提交。
+
+- 本轮新的 `87` deeper-tail 结论：我并行复核了 `81 / 85 / 86 / 87` 的更深尾段后，只对 `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 落了正文修改。`87` 现在把 section 7 里的 route/gate/checklist 语气再收薄一层：可交接的 why-proof 不再显式指挥 later maintainer “去哪个 owner / 哪个 seam owner”，future-maintainer rejectability 也不再借 `operator artifacts / effect ceiling / local veto cue` 长成 review gate，而是更纯粹地停在 why-proof 与最低 change-control 标准。当前判断是，这一步能继续减少 `87` section 7 被 later consumer 误读成 compact review gate 或 route bridge 的概率。
+
 - 本轮新的根仓预检失败结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，但 merge 因根仓存在未解决冲突失败。`git status --short --branch` 显示 `main...origin/main`，并有多处根仓脏改动，且 `bluebook/playbooks/README.md`、`bluebook/security/README.md` 处于 `UU`。当前判断是，这只应作为 root preflight 的外部事实记录，不触发任何根仓收敛动作；正文继续严格只在 `.worktrees/mainloop` 内推进与提交。
 
 - 本轮新的 deeper why-owner residual 结论：我并行复核了 `bluebook/philosophy/{81-请求编译链：可缓存、可转写、可继续.md,85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md,86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md,87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md}`，然后只对仍有高价值 residual 的 `85 / 86 / 87` 落了正文修改。`85` 现在把 why 页里的治理尾链收回成更纯的 `single pricing order / single repricing furnace`，不再顺手带出过长的尾链 inventory；`86` 现在补出了 `public-evidence only` 的 why-owner ceiling，明确本页只解释 later maintainer 为什么必须先守住 `one writable present`；`87` 则把 future-maintainer rejectability 再压薄一层，去掉更像 operator-artifact review gate 的酸测试清单。`81` 本轮只做复核未再动。当前判断是，这一步能继续减少 why owner 页深段再次长成 bridge、review gate 或 owner-level checklist 的概率。
