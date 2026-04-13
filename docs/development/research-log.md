@@ -7851,3 +7851,5 @@
 - 这一刀的第一性原理也很窄：Prompt 样本页的前门必须先回答 later consumer 为什么不必重做世界重判；`lineage / handoff truth` 这类 nouns 只配回答这套退休机制怎样被保住。只要样本页还先讲 nouns，再讲 later-consumer rights，Prompt 魔力就会再次退回结构 inventory。
 - `2026-04-13` 当前又起了第六个窄批次，只动 `navigation/07` 的合同优先方法线。这里把上一刀误灌进去的 `current-truth claim state` 撤回对象层 `current-truth surface / host-facing truth`，因为这条方法线在讲 contract-first 的对象阅读顺序，不在讲公开镜像证据分级。
 - 这一刀的第一性原理是术语归位：`claim state` 只回答“公开证据是否够 promotion”，而 `current-truth surface / host-facing truth` 才回答对象层“谁在说现在”。只要把两者并排写成同一方法链，later maintainer 就会把 source-quality rung 错学成 contract-first 常规对象入口。
+- `2026-04-13` 当前又起了第七个窄批次，只动 `philosophy/18` 首尾结论块。修改后，这页不再把“分层契约”本身当前门，而是明确这些层在不同稳定度上共同服务 same-world 的 `decision-retirement system`；中段四层结构继续保留为解释层，不重写为另一套 owner 页。
+- 这一刀的第一性原理也很窄：Prompt 分层之所以值钱，不在“分层”本身，而在 later consumer 不必每轮重做世界重判。只要样本页还把 layering 先于 later-consumer rights 说成 Prompt 本体，它就仍会把 Prompt 魔力误读成结构分层体感。
