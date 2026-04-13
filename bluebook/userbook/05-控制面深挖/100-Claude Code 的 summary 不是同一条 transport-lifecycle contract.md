@@ -25,6 +25,8 @@
 
 如果这些边界不先拆开，正文就会把这里写成一条模糊的 summary 总线。
 
+这页只抓 `task_summary` / `post_turn_summary` 的 summary contract split；`result` terminal semantics、observer restore 与 suggestion settlement 在这里只作为边界参照，不另起主语。
+
 ## 第一性原理
 
 更稳的提问不是：

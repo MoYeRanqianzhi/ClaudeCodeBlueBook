@@ -101,6 +101,7 @@
 - [365-2026-04-13-headless-print chain backbone clarification 拆分记忆.md](./365-2026-04-13-headless-print%20chain%20backbone%20clarification%20拆分记忆.md)
 - [366-2026-04-13-semantic-last-result vs delivery-accounting echo 拆分记忆.md](./366-2026-04-13-semantic-last-result%20vs%20delivery-accounting%20echo%20拆分记忆.md)
 - [367-2026-04-13-suggestion delivery-accounting scope clarification 拆分记忆.md](./367-2026-04-13-suggestion%20delivery-accounting%20scope%20clarification%20拆分记忆.md)
+- [368-2026-04-13-summary-contract split scope clarification 拆分记忆.md](./368-2026-04-13-summary-contract%20split%20scope%20clarification%20拆分记忆.md)
 
 ## 全量档案
 
