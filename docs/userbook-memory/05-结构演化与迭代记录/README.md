@@ -98,6 +98,7 @@
 - [362-2026-04-13-task-recovery vs worksite-restore echo 拆分记忆.md](./362-2026-04-13-task-recovery%20vs%20worksite-restore%20echo%20拆分记忆.md)
 - [363-2026-04-13-task-recovery multi-ledger premise echo 拆分记忆.md](./363-2026-04-13-task-recovery%20multi-ledger%20premise%20echo%20拆分记忆.md)
 - [364-2026-04-13-task-result return-path vs continuity-source echo 拆分记忆.md](./364-2026-04-13-task-result%20return-path%20vs%20continuity-source%20echo%20拆分记忆.md)
+- [365-2026-04-13-headless-print chain backbone clarification 拆分记忆.md](./365-2026-04-13-headless-print%20chain%20backbone%20clarification%20拆分记忆.md)
 
 ## 全量档案
 
