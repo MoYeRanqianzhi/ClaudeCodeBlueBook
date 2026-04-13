@@ -1,4 +1,4 @@
-# Services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口
+# Services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统定位图
 
 > Evidence mode
 > - 当前 worktree 若仍缺 `claude-code-source-code/` 镜像，本页所有 `src/...` 路径都只按 archival anchors 读取。
@@ -7,7 +7,7 @@
 这一章回答五个问题：
 
 1. `services/` 往二级目录拆开后，到底分成了哪些正式子系统。
-2. 每个子系统的权威入口在哪里，主要消费者是谁。
+2. 每个子系统的 atlas 入口在哪里，主要消费者是谁。
 3. 哪些目录是核心控制平面，哪些只是壳层、投影层或辅助消费者。
 4. 哪些目录最容易被误读，从而把 Prompt、安全、恢复或治理写坏。
 5. 平台设计者该按什么顺序阅读 `services/`。
@@ -56,7 +56,7 @@
 
 而是：
 
-- 不同子系统暴露了不同的权威入口、不同的消费者，以及不同的危险改动面
+- 不同子系统暴露了不同的 atlas locator、不同的消费者，以及不同的危险改动面
 
 也就是说，读 `services/` 的顺序首先是证据更硬不更硬，而不是目录拆得更细不更细。每个子系统都至少要先回答六件事：
 
@@ -93,7 +93,7 @@
 - `registry`：
   - `client.ts`、transport assembly、append-chain 入口
 - `current-truth claim state`：
-  - append-chain ingress、session ingress、host writeback
+  - append-chain ingress、session ingress 与 transport-side claim-state
 - `consumer subset`：
   - 远程恢复路径、host projection、client shell 只消费部分请求与恢复真相
 - `hotspot kernel`：
@@ -176,26 +176,22 @@
 - `mirror gap discipline`：
   - 一旦观测又被写成“附属统计”，先回 `analytics`、`internalLogging` 与 recovery evidence 这一侧
 
-## 8. Services 里的特殊目录：`services/tools`
+## 8. `services/tools` runtime 子系统
 
-这组目录最容易被忽略，因为名字看起来像重复：
+`services/tools` 不该只作为散文旁注保留，因为它同样是一条真实 seam，只是它回答的不是 tool definition，而是 tool runtime orchestration：
 
-- `services/tools/toolOrchestration.ts`
-- `services/tools/toolExecution.ts`
-- `services/tools/toolHooks.ts`
-
-它真正代表的是：
-
-- tool runtime orchestration，而不是 tool definition
-
-也就是说：
-
-1. `src/tools/` 负责定义工具族群与 prompt surface
-2. `src/services/tools/` 负责真正编排执行、并发、安全上下文与 hook
-
-这是一个典型的：
-
-- definition plane / runtime plane 分离
+- `contract`：
+  - `toolOrchestration.ts`、`toolExecution.ts`、`toolHooks.ts`
+- `registry`：
+  - tool runtime wiring、hook registration、execution pipeline registration
+- `current-truth claim state`：
+  - 当前 tool runtime orchestration 只先构成 execution-side claim-state，不代签 `src/tools/` 那一侧的 definition truth
+- `consumer subset`：
+  - model、host、hook、tool runtime 只消费不同 orchestration projection
+- `hotspot kernel`：
+  - execution ordering、hook boundary、安全上下文与并发 discipline 的集中收口
+- `mirror gap discipline`：
+  - 一旦 `services/tools` 看起来像“重复工具目录”，先回 `src/tools/` 与 `services/tools/` 的 definition plane / runtime plane 分离，而不是把两者继续写成同一组职责
 
 ## 9. Reject 顺序
 

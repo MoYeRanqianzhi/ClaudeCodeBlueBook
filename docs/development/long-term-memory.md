@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-preflight-blocked-for-api46-atlas-locator-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `api/46` atlas-locator 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败，报错 `Merging is not possible because you have unmerged files.`
+  - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `api46-should-demote-authoritative-entry-to-atlas-locator-and-give-services-tools-a-full-ladder-apr13 live` 记忆：
+  - `bluebook/api/46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md` 现在也应继续写死：在这页里，`权威入口` 只配作为文件名兼容词，本体应按 `atlas / locator / bridge` 读取；`services/tools` 也不再只当散文特例，而要和其他子系统一样沿同一条六格展开
+  - 更稳的默认写法是：标题和题面先收回 atlas 强度；若一个子系统确实是 repo 里的真实 seam，就不该长期停在“特殊目录”旁注，而应和其他 plane 一样进入同一套 ladder
 - 当前批次继续新增一条 `root-preflight-blocked-for-api53-candidate-family-batch-apr13 live` 记忆：
   - 2026-04-13 本轮进入 `api/53` candidate-family 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败，报错 `Merging is not possible because you have unmerged files.`
   - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作；正文、记忆与提交继续只落在 `.worktrees/mainloop`

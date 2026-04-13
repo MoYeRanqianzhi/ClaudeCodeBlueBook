@@ -2,6 +2,12 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检失败结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/46` atlas-locator 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，但 merge 因根仓存在未解决冲突失败，错误为 `Merging is not possible because you have unmerged files.`。当前判断是，这次失败只应作为 root preflight 的外部事实记录，不触发任何根仓收敛动作；正文继续严格只在 `.worktrees/mainloop` 内推进与提交。
+
+- 本轮新的 `api/46` atlas-locator 结论：我只对 `bluebook/api/46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`46` 现在把标题和题面进一步收回成 `atlas / locator` 强度，不再让“权威入口”继续抢本页首句；同时把 `services/tools` 从散文特例提升成和其他子系统同构的六格 runtime seam。当前判断是，这一步能继续压低 services atlas 的标题强度，也把 mixed seam drift 从“特殊目录旁注”收回到同一套结构语法里。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一个子系统已经是真实 runtime seam 时，更稳的默认追问不该是“它要不要当特例单讲”，而应先问“它是不是也该沿同一条 ladder 写清 contract / registry / claim-state / subset / hotspot / gap”；如果答案是是，就不该再让它长期停在旁注里。当前判断是，这个问法能继续把目录结构优化从“例外说明”拉回“单源结构语法”。
+
 - 本轮新的根仓预检失败结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/53` candidate-family 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，但 merge 因根仓存在未解决冲突失败，错误为 `Merging is not possible because you have unmerged files.`。当前判断是，这次失败只应作为 root preflight 的外部事实记录，不触发任何根仓收敛动作；正文继续严格只在 `.worktrees/mainloop` 内推进与提交。
 
 - 本轮新的 `api/53` candidate-family 结论：我只对 `bluebook/api/53-故障模型宿主消费面手册：authority state、generation evidence、recovery boundary与anti-zombie projection.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`53` 现在把 `anti-zombie projection` 再降一层：不再说宿主“必须看到”三类近似独立对象化投影，而是承认宿主当前只该围绕 `freshness / cleanup / rollback` 这三类 host-facing candidate family 组织读面，并把它们继续绑定回已外化 surface。当前判断是，这一步能继续压低 `public-evidence only` 下的对象化语气，让故障模型宿主页更稳定地停在 candidate / projection 层。
