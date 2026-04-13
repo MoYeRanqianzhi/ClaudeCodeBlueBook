@@ -276,7 +276,25 @@
 
 - 126 的继续页
 
-## 第七层：稳定层与灰度层
+## 第七层：稳定阅读骨架 / 条件公开 / 内部证据层
+
+这里的“稳定”只指：
+
+- `122 / 123 / 124`
+- `125 / 126 / 127`
+- `124 / 126`
+
+这张双主干加两个 zoom 的阅读骨架已经收稳
+
+不指：
+
+- owner-side recovery
+- transport stop rule
+- compaction boundary
+
+这些中间节点名本身已经升级成稳定公开能力
+
+真正的稳定公开能力判断，仍应回到用户入口、公开主路径与能力边界写作规范。
 
 ### 稳定可见
 
@@ -313,6 +331,17 @@
 - compaction-signal 分裂
 
 再用常量、gate、当前 hook 顺序举证。
+
+所以这页最稳的结论必须停在：
+
+- `122-127` 当前不是线性六连，而是双主干加两个 zoom
+- `122 / 123 / 124` 处理 owner-side recovery、ownership 与 signer
+- `125 / 126 / 127` 处理 transport、terminality 与 compaction
+- `124` 与 `126` 是 zoom，不是再长出的第三主干
+
+而不能滑到：
+
+- 只要都在讲 remote recovery、warning、close、compacting，这六页本质上只是同一张 recovery 表不断细化
 
 ## 第八层：苏格拉底式自审
 
@@ -356,3 +385,24 @@
 - 126
 
 再回来继续看 compaction 支线。
+
+## 结论
+
+所以这页能安全落下的结论应停在：
+
+- `122` 先把 owner-side recovery lifecycle 拆开，`123` 再把 viewer ownership 单列成并列根页，`124` 把 recovery signer 压成 zoom
+- `125` 先把问题降到 transport / stop-rule 层，`126` 再把 terminality 压成 zoom，`127` 把 compaction 固定成平行支线
+- `122-127` 因而不是一条 recovery 主干不断细化的线性六连，而是双主干加两个 zoom
+
+一旦这句成立，
+
+就不会再把：
+
+- owner-side recovery
+- ownership
+- signer
+- transport authority
+- terminality
+- compaction
+
+写成同一种“remote recovery 细化页”。

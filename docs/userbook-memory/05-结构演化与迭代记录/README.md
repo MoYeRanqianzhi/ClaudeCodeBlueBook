@@ -16,8 +16,8 @@
     进到这个子家族后，再按 `122-127 recovery`、`128-138 surface / interaction shell`、`139-149 truth / shell / memory` 继续分流；更深的子家族入口不再回挂根索引。
 - `command-index / capability map / range map`
   - 先看 [284-2026-04-08-capability map hub cleanup 拆分记忆.md](./284-2026-04-08-capability%20map%20hub%20cleanup%20拆分记忆.md)、[294-2026-04-08-command-index session-ops split 拆分记忆.md](./294-2026-04-08-command-index%20session-ops%20split%20拆分记忆.md)、[311-2026-04-08-reference hub range map sync 拆分记忆.md](./311-2026-04-08-reference%20hub%20range%20map%20sync%20拆分记忆.md)、[321-2026-04-08-command-index status control-plane regroup 拆分记忆.md](./321-2026-04-08-command-index%20status%20control-plane%20regroup%20拆分记忆.md)。
-- `2026-04-13 scope guard / hub uplift / hardening 批次`
-  - 从 [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md) 一路看到 [437-2026-04-13-inbound-normalization stable-gray hardening 拆分记忆.md](./437-2026-04-13-inbound-normalization%20stable-gray%20hardening%20拆分记忆.md)。
+- `2026-04-13-2026-04-14 scope guard / hub uplift / hardening 批次`
+  - 从 [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md) 一路看到 [448-2026-04-14-post-turn-summary visibility stop-line hardening 拆分记忆.md](./448-2026-04-14-post-turn-summary%20visibility%20stop-line%20hardening%20拆分记忆.md)。
 - `更早批次`
   - 直接跳到下面的“全量档案”，按编号顺着翻。
 
@@ -190,6 +190,17 @@
 - [435-2026-04-13-ingress-consumer stable-gray hardening 拆分记忆.md](./435-2026-04-13-ingress-consumer%20stable-gray%20hardening%20拆分记忆.md)
 - [436-2026-04-13-user-only transcript adapter stable-gray hardening 拆分记忆.md](./436-2026-04-13-user-only%20transcript%20adapter%20stable-gray%20hardening%20拆分记忆.md)
 - [437-2026-04-13-inbound-normalization stable-gray hardening 拆分记忆.md](./437-2026-04-13-inbound-normalization%20stable-gray%20hardening%20拆分记忆.md)
+- [438-2026-04-13-remote-surface skeleton hardening 拆分记忆.md](./438-2026-04-13-remote-surface%20skeleton%20hardening%20拆分记忆.md)
+- [439-2026-04-14-front-state consumer root stop-line hardening 拆分记忆.md](./439-2026-04-14-front-state%20consumer%20root%20stop-line%20hardening%20拆分记忆.md)
+- [440-2026-04-14-schema-store bridge-shell skeleton hardening 拆分记忆.md](./440-2026-04-14-schema-store%20bridge-shell%20skeleton%20hardening%20拆分记忆.md)
+- [441-2026-04-14-remote-truth skeleton hardening 拆分记忆.md](./441-2026-04-14-remote-truth%20skeleton%20hardening%20拆分记忆.md)
+- [442-2026-04-14-remote-surface root skeleton hardening 拆分记忆.md](./442-2026-04-14-remote-surface%20root%20skeleton%20hardening%20拆分记忆.md)
+- [443-2026-04-14-shell-memory skeleton hardening 拆分记忆.md](./443-2026-04-14-shell-memory%20skeleton%20hardening%20拆分记忆.md)
+- [444-2026-04-14-recovery-root skeleton hardening 拆分记忆.md](./444-2026-04-14-recovery-root%20skeleton%20hardening%20拆分记忆.md)
+- [445-2026-04-14-dual-trunk skeleton hardening 拆分记忆.md](./445-2026-04-14-dual-trunk%20skeleton%20hardening%20拆分记忆.md)
+- [446-2026-04-14-cross-frontend consumer stop-line hardening 拆分记忆.md](./446-2026-04-14-cross-frontend%20consumer%20stop-line%20hardening%20拆分记忆.md)
+- [447-2026-04-14-transport action-state stop-line hardening 拆分记忆.md](./447-2026-04-14-transport%20action-state%20stop-line%20hardening%20拆分记忆.md)
+- [448-2026-04-14-post-turn-summary visibility stop-line hardening 拆分记忆.md](./448-2026-04-14-post-turn-summary%20visibility%20stop-line%20hardening%20拆分记忆.md)
 
 ## 全量档案
 

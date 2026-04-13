@@ -271,28 +271,58 @@
 
 - “这些页都在讲 remote truth，只是越往后越细。”
 
-## 第八层：稳定层与灰度层
+## 第八层：稳定阅读骨架 / 条件公开 / 内部证据层
+
+这里的“稳定”只指：
+
+- `140`
+- `139 -> 142`
+- `141 / 143`
+
+这三组后继问题的阅读骨架已经收稳
+
+不指：
+
+- `post_turn_summary` visibility ladder
+- mirror intent / gray runtime
+- remote-session ledger
+- global remote behavior bit
+
+这些中间节点名本身已经升级成稳定公开能力
+
+真正的稳定公开能力判断，仍应回到用户入口、公开主路径与能力边界写作规范。
 
 ### 稳定可见
 
-- `post_turn_summary` 当前同时存在 schema / wide-wire / internal / foreground narrowing 多层可见性
-- mirror intent、implementation route 与 runtime topology 当前确实不是同一层
-- hook side `outboundOnly` 与 core side runtime topology 当前可能分叉
-- `remoteSessionUrl / remoteConnectionStatus / remoteBackgroundTaskCount` 当前是 remote-session ledger
-- `getIsRemoteMode()` 当前更像 global behavior bit，不是 presence truth
+- `140` 当前稳定回答的是 `post_turn_summary` 的 visibility ladder，不等于 foreground consumer contract
+- `139` 当前稳定回答的是 mirror intent、implementation route 与 runtime topology 不是同一层
+- `142` 当前稳定回答的是 hook side mirror 与 core side gray runtime 仍可能分叉
+- `141` 当前稳定回答的是 `remoteSessionUrl / remoteConnectionStatus / remoteBackgroundTaskCount` 组成 remote-session ledger
+- `143` 当前稳定回答的是 `getIsRemoteMode()` 更像 global behavior bit，不是 presence truth
 
 ### 条件公开
 
 - `140` 的 raw wire 可见性仍取决于上游是否 emit 以及当前 output/consumer 选择
-- `139/142` 的 gray runtime 仍依赖 env-less / env-based 选路与 rollout
-- `141/143` 的 consumer 范围仍会受命令显隐、pane 内容与 UI gate 影响
+- `139/142` 这一线里的 gray runtime 仍依赖 env-less / env-based 选路与 rollout
+- `141/143` 这一线里的 consumer 范围仍会受命令显隐、pane 内容与 UI gate 影响
 
-### 内部/灰度层
+### 内部证据层
 
 - `post_turn_summary` 未来是否进入 core SDK contract
 - env-based core 是否会真正吃到 `outboundOnly`
 - `getIsRemoteMode()` 未来是否继续只保留 behavior 语义
 - `directConnectServerUrl`、`remoteSessionUrl`、status line tag 的具体挂载策略
+
+所以这页最稳的结论必须停在：
+
+- `139-143` 当前不是线性五连，而是三组接在不同后继线上的问题
+- `140` 接在 `133 -> 137` 这条 consumer-boundary 线后面
+- `139 -> 142` 接在 `134 -> 136` 这条 mirror/runtime 线后面
+- `141 / 143` 接在 `138 -> 204` 这条 interaction-shell / remote-trunk 线后面
+
+而不能滑到：
+
+- 只要都和 remote truth、mirror、post_turn_summary 有关，这五页本质上只是同一条 remote 尾线的顺序展开
 
 ## 苏格拉底式自审
 
@@ -311,3 +341,23 @@
 ### 问：我是不是把 `143` 写成了 `141` 的布尔版？
 
 答：先分 ledger truth 与 behavior bit；这两者不共享同一张账。
+
+## 结论
+
+所以这页能安全落下的结论应停在：
+
+- `140` 不是普通 remote truth 页，而是 `137` 之后的 visibility zoom
+- `139` 先把 mirror contract layers 拆开，`142` 再把 hook-mirror 与 gray runtime 的分叉压实
+- `141` 处理 remote-session ledger truth，`143` 处理 global behavior bit
+- `139-143` 因而不是顺编号展开的 remote 五连，而是三组接在不同后继线后的问题
+
+一旦这句成立，
+
+就不会再把：
+
+- visibility ladder
+- mirror gray runtime
+- remote-session ledger
+- global remote behavior bit
+
+写成同一种“后续 remote truth 页”。

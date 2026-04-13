@@ -302,7 +302,17 @@
 
 不是入口清单。
 
-## 第八层：稳定层与灰度层
+## 第八层：稳定阅读骨架 / 条件公开 / 内部证据层
+
+这里的“稳定”只指：
+
+- `132 -> 135 / 138 / 141 / 142 / 143` 这张 remote surface 分叉骨架已经收稳
+
+不指：
+
+- `foreground remote runtime`、`shared interaction shell`、`presence ledger`、`gray runtime`、`behavior bit` 这些中间节点名本身已经升级成稳定公开能力
+
+真正的稳定公开能力判断，仍应回到用户入口、公开主路径与能力边界写作规范。
 
 ### 稳定可见
 
@@ -328,9 +338,18 @@
 - footer、brief line、remote pill、dialog 的具体 mount / capture / dismiss 条件
 - `activeRemote`、`remoteSessionUrl`、`getIsRemoteMode()` 未来是否继续维持当前投影边界
 
+所以这页最稳的结论必须停在：
+
+- `132-143` 之间已经形成一张有顺序的 remote surface 分叉骨架
+- 它不是几张可按兴趣任意抽读的并列 remote 页
+
+而不能滑到：
+
+- 只要都和 remote 有关，这几页本质上只是不同写法的同一层说明
+
 ## 结论
 
-更稳的一句应该是：
+所以这页能安全落下的结论应停在：
 
 - 132 是 remote surface 的根页，因为它先定三条链路的 front-state consumer topology
 - 135 先把 direct connect 固定成 foreground remote runtime

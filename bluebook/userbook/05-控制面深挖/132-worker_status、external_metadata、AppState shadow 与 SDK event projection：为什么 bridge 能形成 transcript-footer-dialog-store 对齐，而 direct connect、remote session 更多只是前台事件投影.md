@@ -34,6 +34,22 @@
 
 - “哪条链路到底有没有把正式运行态真正消费到前台”
 
+本页不继续展开：
+
+- direct connect 为什么会被进一步收束成 foreground remote runtime
+- `activeRemote` 为什么只是 shared interaction shell
+- `remoteSessionUrl / remoteConnectionStatus / remoteBackgroundTaskCount` 为什么会被固定成 presence ledger
+- bridge mirror 为什么仍应读作 gray runtime
+- `getIsRemoteMode()` 为什么只是 global remote behavior bit
+
+这里先把这些后继问题都降回一句：
+
+- 谁在消费 formal runtime state，谁只有 partial shadow 或 event projection
+
+也就是说，这页只钉三条链路的 front-state consumer topology，
+
+不提前代讲 `135/138/141/142/143` 各自的后继根句。
+
 ## 第一性原理
 
 更稳的提问不是：
@@ -399,20 +415,22 @@ bridge 还会把自己的状态再分别喂给：
 
 - schema/store 存在不等于前台 consumer 已接上
 
-## 第九层：stable / conditional / internal
+## 第九层：稳定层、条件层与灰度层
 
 ### 稳定可见
 
-- `SessionState` 与 `SessionExternalMetadata` 当前构成正式运行态账本
-- direct connect 当前主要消费 transcript + permission queue
+- `SessionState` 与 `SessionExternalMetadata` 当前构成 formal runtime state 的最稳起点
+- direct connect 当前主要消费 transcript + permission queue，不构成 dedicated front-state store
 - remote session 当前主要消费 event projection + partial `AppState` shadow
 - bridge 当前最接近形成 transcript/footer/dialog/store 的多面对齐
+- 这页当前稳定回答的是三条链路在 formal runtime state、partial shadow 与 event projection 之间的 consumer topology，不提前展开后继 remote-surface 分叉
 
 ### 条件公开
 
 - bridge 的 worker-side state upload 当前依赖 v2；v1 是 no-op
 - remote session 的 transcript thickness 还受 `viewerOnly` 与 adapter 过滤规则影响
 - direct connect 当前显式过滤 `post_turn_summary`
+- 后继页会不会继续把这些差异收束成 foreground runtime、shared shell、presence ledger、gray runtime 或 behavior bit，仍取决于各自 consumer 与 host gate，不是这页已经稳定公开的合同
 
 ### 内部 / 灰度层
 
@@ -427,6 +445,16 @@ bridge 还会把自己的状态再分别喂给：
 而不是：
 
 - 对外稳定承诺
+
+所以这页最稳的结论必须停在：
+
+- 三条链路在 front-state consumer topology 上并不共享同一种 formal runtime-state 消费合同
+- direct connect 当前更像 transcript + permission projection，remote session 当前更像 event projection + partial shadow，bridge 当前最接近 multi-surface alignment
+- `132` 到这里为止；foreground runtime、shared interaction shell、presence ledger、gray runtime、behavior bit 这些更窄主语应交给后继页
+
+而不能滑到：
+
+- 只要 bridge UI 更厚，这页就已经替 `135/138/141/142/143` 把后续 remote-surface 细分一并讲完
 
 ## 第十层：苏格拉底式自审
 
@@ -449,6 +477,29 @@ bridge 还会把自己的状态再分别喂给：
 ### 问：我是不是又把 130 的 surface presence 或 131 的 ledger 细拆，重复写成这页的主结论？
 
 答：如果是，就还没有把“surface / ledger / consumer topology”三层分开。
+
+## 结论
+
+所以这页能安全落下的结论应停在：
+
+- `SessionState + SessionExternalMetadata` 当前是 formal runtime state 的最稳起点
+- direct connect 当前更像 transcript + permission projection
+- remote session 当前更像 event projection + partial `AppState` shadow
+- bridge 当前最接近 transcript/footer/dialog/store 对齐，但 worker-side authoritative state upload 仍受 v2 限定
+- `132` 因而只负责钉死三条链路的 front-state consumer topology，并把 foreground runtime、shared interaction shell、presence ledger、gray runtime、behavior bit 留给后继页
+
+一旦这句成立，
+
+就不会再把：
+
+- bridge 更厚的 UI
+- direct connect 的 foreground runtime
+- `activeRemote` 的 shared shell
+- remote-session presence ledger
+- bridge mirror 的 gray runtime
+- `getIsRemoteMode()` 的 behavior bit
+
+写成同一层 remote surface 结论。
 
 ## 源码锚点
 

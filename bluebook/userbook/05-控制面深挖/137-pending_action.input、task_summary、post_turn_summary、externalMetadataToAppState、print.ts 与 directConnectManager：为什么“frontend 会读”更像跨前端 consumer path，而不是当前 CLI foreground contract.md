@@ -330,7 +330,7 @@
 - `print` 和 `directConnect` 已经在主动绕开 `post_turn_summary`
 - 这不是单纯“尚未接线”
 
-## 第十层：stable / conditional / internal
+## 第十层：稳定层、条件层与灰度层
 
 ### 稳定可见
 
@@ -351,6 +351,17 @@
 - `post_turn_summary` 描述本身带 `@internal`
 - 它在 wire 层的可见性和未来 consumer 扩展仍带明显灰度
 - 哪个 frontend 最终会把 `pending_action.input` / `task_summary` 做成稳定 UI，当前并不是 CLI 仓内公开合同
+
+所以这页最稳的结论必须停在：
+
+- “frontend 会读”当前更像跨前端 consumer path，不等于当前 CLI foreground contract
+- `pending_action.input`、`task_summary`、`post_turn_summary` 当前不能被压成“CLI 只是还没把 UI 做出来”的 backlog
+- `137` 到这里为止；字段级 producer/store/restore 分离应回到 `133`，可见性梯子应回到 `140`
+
+而不能滑到：
+
+- 只要注释里提到 frontend，当前 CLI foreground 就已经是默认 consumer
+- 只要 raw wire 或 worker-side store 里存在字段，它们就只差一个本地 UI 面板
 
 ## 第十一层：苏格拉底式自审
 
@@ -373,6 +384,26 @@
 ### 问：我是不是又回到 133 的“四层拆分”，而没有真正回答“frontend 指向谁”？
 
 答：如果是，就还没真正进入 137。
+
+## 结论
+
+所以这页能安全落下的结论应停在：
+
+- `pending_action.input` 的注释证明了 frontend consumer intent，但没有证明当前 CLI foreground 就是这个 frontend
+- `task_summary` 当前更像外部 frontend / remote frontend 会读的中途进展字段，而不是当前 CLI foreground contract
+- `post_turn_summary` 当前更像 wide stdout wire 上的 internal tail summary，且已被 `print` / `directConnect` 主 consumer path 主动 narrowing
+- `137` 因而只负责把“frontend 会读”收窄成 cross-frontend consumer path，而不是当前 CLI foreground contract
+
+一旦这句成立，
+
+就不会再把：
+
+- frontend intent
+- CLI foreground contract
+- worker-side store presence
+- wide-wire visibility
+
+写成同一层 consumer 结论。
 
 ## 源码锚点
 
