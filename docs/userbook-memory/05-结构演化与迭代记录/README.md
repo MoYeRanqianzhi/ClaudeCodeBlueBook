@@ -114,6 +114,7 @@
 - [378-2026-04-13-dual-trunk zoom-map scope clarification 拆分记忆.md](./378-2026-04-13-dual-trunk%20zoom-map%20scope%20clarification%20拆分记忆.md)
 - [379-2026-04-13-remote-surface branch-map scope clarification 拆分记忆.md](./379-2026-04-13-remote-surface%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [380-2026-04-13-schema-store bridge-shell branch-map scope clarification 拆分记忆.md](./380-2026-04-13-schema-store%20bridge-shell%20branch-map%20scope%20clarification%20拆分记忆.md)
+- [381-2026-04-13-remote-truth branch-map scope clarification 拆分记忆.md](./381-2026-04-13-remote-truth%20branch-map%20scope%20clarification%20拆分记忆.md)
 
 ## 全量档案
 

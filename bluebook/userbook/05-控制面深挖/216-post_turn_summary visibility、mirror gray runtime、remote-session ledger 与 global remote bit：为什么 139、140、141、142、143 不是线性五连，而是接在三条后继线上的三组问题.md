@@ -40,6 +40,8 @@
 
 - 一条线性五连
 
+本页不重讲 `139/140/141/142/143` 各页各自的页内证明，也不把 `post_turn_summary`、`ccrMirrorEnabled`、`outboundOnly`、`remoteSessionUrl`、`remoteConnectionStatus`、`remoteBackgroundTaskCount`、`getIsRemoteMode()` 这些局部对象和 helper / state 名重新升级成新的总纲主角；这里只整理一张跨页拓扑图：`140` 接在 `133→137` 这条 consumer-boundary 线后面，`139→142` 接在 `134→136` 这条 mirror/runtime 线后面，`141/143` 接在 `138→204` 这条 interaction-shell / remote-trunk 线后面，并顺手把稳定用户合同、条件性可见合同与灰度实现证据分层。换句话说，这里要裁定的是“哪一页接在哪条后继线后面、哪一页是 zoom、哪一页已经切到 truth / behavior-bit 问题”，不是再把 leaf-level 的 visibility ladder、mirror gray runtime、presence ledger 或 global bit 证明写成一条从 remote 词域顺编号展开的连续链。
+
 ## 第一性原理
 
 更稳的提问不是：
