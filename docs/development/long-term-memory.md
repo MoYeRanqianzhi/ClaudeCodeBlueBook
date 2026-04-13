@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 102-handoff-matrix-must-bind-owner-obligations-apr13 live 记忆：
+  - `guides/102`、`architecture/84` 与 `api/README` 现在也应直接写死：handoff matrix 不只发目的地，还要约束 owner page 接手后的职责边界；接手后的 owner page 只能消费已锁定的 rung，不得重开 ladder、promotion 或 first-hop
+  - 更稳的默认写法是：`102` 明说 `architecture` 只展开 object-level writer claim / writeback seam / anti-zombie，`api` 只展开 host-facing truth claim-state / consumer subset / promise boundary；`84` 与 `api/README` 则主动声明自己不再重做 sorter
 - 当前批次继续新增一条 governance-checkpoint-law-must-use-receipt-grade-projection-apr13 live 记忆：
   - `bluebook/philosophy/61`、`10` 与 `userbook/README` 现在也应直接写死：没有新增 `decision delta` 的 `status / usage / reopen tail / summary` 不是 governance checkpoint，只是 `receipt-grade lease-checkpoint projection`
   - 更稳的默认写法是：治理页里的真正 checkpoint law 一律写成 `same authority lease / new decision delta / cleanup trigger state`；凡读回面不能独立补齐这三件事，就只配回单，不配回判

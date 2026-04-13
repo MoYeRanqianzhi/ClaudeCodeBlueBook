@@ -361,12 +361,16 @@ gap discipline 的价值不是“保守一点”，而是：
 
 1. rung 已锁定为 object-level claim
    - 再进 `architecture/README`
+   - 进入后只展开对象、writeback seam、local veto 与 first retreat layer，不重开 ladder，也不重做 promotion
 2. rung 已锁定为 host-facing truth claim-state / consumer subset
    - 再进 `api/README`
+   - 进入后只展开宿主承认边界、consumer subset 与 promise boundary，不重开 rung 分类
 3. rung 已锁定为 why question，而不是 admissibility / promotion question
    - 再进 `philosophy/README`
+   - 进入后只证明 why，不补 gate，也不把 claim-state 偷签成 landed truth
 4. 主语与 rung 都已锁定，只缺下一种 artifact、gap note 或最近的 fail-closed seam
    - 再进 `navigation/README`
+   - 进入后只反查下一种 artifact / seam，不重做 first-hop 或 rung typing
 
 若这四条里任何一条还答不上，就继续留在 `102`；这页先锁 rung，不让 owner noun 提前升级成 landed truth。
 

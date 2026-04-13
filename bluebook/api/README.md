@@ -13,8 +13,8 @@
    - 宿主到底承认了哪一段请求编译链
 2. `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
    - 宿主到底承认了哪一条治理外化真相
-3. `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline`
-   - 宿主到底在消费哪一层 truth、哪一层热点、哪一层镜像缺口；若问题升级成“谁在写现在”，统一回 current-truth owner 页
+3. `host-facing truth claim-state -> consumer subset -> promise boundary`
+   - 在 `102` 已完成 rung classification 后，宿主到底在消费哪一层 truth、哪一层子集、哪一层承认边界；若问题升级成“谁在写现在”，统一回 current-truth owner 页
 
 这里也要先压住一个常见误读：`continuity` 不是第四类 API 平面；它只是 Prompt `Continuation`、治理 `continuation pricing` 与源码质量 `recovery non-sovereignty / anti-zombie` 在 host-facing truth 上的共同时间轴。
 
@@ -47,7 +47,7 @@
 ## 什么时候进来
 
 - 当 `guides/102` 已经把问题 typing 成 `host-facing truth claim-state / consumer subset`，准备判断宿主究竟承认了哪些 truth、哪些只配做 consumer subset。
-- 当 `guides/102` 已经把问题 typing 成 `host-facing truth claim-state / consumer subset`，你需要把运行时对象压成 command、tool、state message、artifact contract 或 host-facing truth。
+- 当 `guides/102` 已经把问题 typing 成 `host-facing truth claim-state / consumer subset`，你需要把运行时对象压成 command、tool、state message、artifact contract 或 host-facing truth，并消费这条已锁定的 rung，而不是重开分类。
 - 当 `guides/102` 已经锁定这是 host-facing truth 问题，而不是 object 或 why 问题，你需要判断“谁在宣布真相、谁只是在消费真相”。
 
 ## 如果你只先判断一件事
