@@ -2,6 +2,7 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/philosophy/{14-提示词魔力来自运行时而非咒语.md,18-Prompt不是文本技巧而是契约分层.md,21-Prompt魔力来自约束叠加与状态反馈.md,54-好的Prompt同时组织模型与人类接手路径.md}`、`bluebook/guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 Prompt why / guide 协议：`14 / 21` 现在更明确把“更聪明”的体感压回 runtime 先裁掉四类待判变量；`18` 把分层压回继承法，不再像 taxonomy；`54` 把人类接手压回 lawful consumer；`30` 则补上 `Gate-0`、same-world witness 与 lawful forgetting 不变量，要求 handoff / forgetting 都先保住 `continuation object + excluded branches + continue/reject verdict`。
 - 继续更新 `bluebook/guides/57-如何把Prompt宿主迁移失真压回compiled request truth：固定纠偏顺序、拒收规则与模板骨架.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 Prompt 迁移模板协议：这页现在不再把 `shared_consumer_surface` 或 consumer 对齐感当前门，而是先回答 later consumer 是否仍在合法继承同一工作对象、继续资格与已排除分支；`protocol transcript / stable prefix boundary / lawful forgetting boundary` 也被明确并列成继承证明，而不只是展示修复材料。
 - 继续更新 `bluebook/userbook/README.md` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 userbook 根前门 route-only 协议：根页现在不再代判 ask 是否仍属 `zero-delta` 或继续资格是否仍成立，而更明确把弹窗、`status`、`usage`、继续入口与摘要统一降成 `weak readback / lease checkpoint`；一旦怀疑存在 `unpaid expansion`、`continuation lease` 漂移或旧 authority 未清空，就统一单跳进 `05-控制面深挖` 或蓝皮书治理入口。
 
