@@ -1,11 +1,12 @@
 # API 文档
 
-`api/` 不先回答“接口有多少”，而先回答：Claude Code 哪些 host-facing truth claim / admission boundary 会被正式暴露给宿主，哪些 consumer 只配消费哪一层 truth，哪些危险面必须被显式承认。
+`api/` 不先回答“接口有多少”，而先回答：在 `guides/102` 已经锁定为 `host-facing truth claim-state / consumer subset` 之后，Claude Code 哪些宿主承认边界会被正式暴露给宿主，哪些 consumer 只配消费哪一层 truth，哪些危险面必须被显式承认。
 如果你还没先定清主语或 first-hop，不要急着把这里读成接口库存；那时你缺的还是根入口，不是 API owner page。
 
 还要先记一句：
 
-- `api/` 不是接口清单层，而是 host-facing truth claim-state 暴露层；更稳的读法不是先按编号扫平面，而是先问哪些 contract 被外化、哪些 registry 在列出对象、哪些公开证据已经足够支持 `current-truth claim state`、哪些对象在公开镜像里还只配停在 `provisional claim`，宿主自己只是哪个 `consumer subset`，以及哪些热点只能在 `hotspot kernel / mirror gap discipline` 的约束下被消费。
+- `api/` 不是接口清单层，而是 host-facing truth claim-state 暴露层；更稳的读法不是先按编号扫平面，而是在 `102` 已完成 rung classification 后，再问哪些 contract 被外化、哪些 registry 在列出对象、哪些公开证据已经足够支持 `current-truth claim state`、哪些对象在公开镜像里还只配停在 `provisional claim`，宿主自己只是哪个 `consumer subset`，以及哪些热点只能在 `hotspot kernel / mirror gap discipline` 的约束下被消费。
+- 本页不拥有平行 classifier 权；`contract / registry / promotion / downgrade` 这些 noun 在这里都只配按 `102` 已锁定的 typing 被消费，不在这里重排 ladder，也不在这里补签 host-facing truth。
 
 如果把 API 前门继续压成最短公式，也只剩三条：
 
@@ -41,6 +42,7 @@
 若争议已经变成“这个 owner 页是否越位、目录契约是否失真”，回 [../meta/README.md](../meta/README.md)；那已不是 host-facing truth 本身。
 
 更稳一点说，`api/` 也必须继承 shared first-answer order：先判是 Prompt witness、治理外化，还是 current-truth exposure，再决定去看 contract、registry、host-facing truth claim-state 还是 consumer subset；顺序没先站住时，API README 也会退回接口库存。若 `guides/102` 还没先把这条问题 typing 成 `host-facing truth claim-state / consumer subset`，本页也不该先开。
+再硬一点说，`api/` 不是 `102` 的快捷方式：它不负责把 `code present -> registry listed -> host-facing truth claim signed -> consumer subset admitted` 这条链再跑一遍；它只消费已经锁定的 rung result，并把宿主承认边界写清。
 
 如果一个 API 判断还压不回这三条，它就还停在接口库存层。
 
@@ -82,5 +84,6 @@
 - README 只保留 owner scope、入场条件、最小对象与离场条件，不再在首页展开平面书架、推荐入口或长链 syllabus。
 - `api/` 的前门判断优先级，应始终是“谁在说真话、谁有子集、哪里最危险”，而不是“目录怎么分得更细”。
 - README 只负责 contract truth / host-facing truth claim-state 前门，不和 `architecture/` 抢对象前门，不和 `playbooks/` 抢执行 verdict。
+- README 不重述 canonical ladder，也不补判 promotion；凡还要回答“这条 claim 到底够不够升级”时，先回 `guides/102`。
 - 需要跨目录理解运行时机制时，回到 [../architecture/README.md](../architecture/README.md)。
 - 需要跨主题反查时，回到 [../navigation/README.md](../navigation/README.md)。

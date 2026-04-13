@@ -37,11 +37,13 @@
 - 文件路径保留旧词只是为了兼容检索；正文在这一级统一把 `current-truth surface` 读作 `current-truth claim state`，而不是对象层 surface verdict。
 - 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航与对象展开即使被提及，也只算证据状态声明，不算新的 frontdoor。
 - 本页也显式负责 handoff matrix：claim-state rung 一旦锁定，再决定问题该升级给 `architecture/README`、`api/README`、`philosophy/README` 还是 `navigation/README`；在本页锁定前，其他 owner README 都不该偷接。
+- handoff 一旦完成，owner page 只配消费这里已经锁定的 rung result，不得重述 canonical ladder、不得补判 promotion、也不得把 provisional claim 偷运成 landed truth；谁重开这三件事，谁就在目录上越位成第二个 gate。
 - 在这条线里，artifact completeness 只决定 promotion eligibility，不重写下游页面的稳定职责；页面标题与补写者都不额外增加签字权。
 - 凡正文把对象写成 `consumer subset` 或 provisional current-truth claim，必须同时把 `downgrade stamp` 与 `unresolved-authority note` 一起落页；只写“这里要保守”而不写这条说明，默认按证据纪律未落地处理。
 - 若对象层 authority 仍需细化，note 只说明“缺少 promotion 所需证明”，不附带任何路由义务。
 - 若 object-level authority 还没锁定，就只配先写 provisional current-truth claim；`current-truth surface candidate` 只保留为兼容标签。
 - 同理，公开 evidence 若声称存在 `next-refactor entry`，也必须同时说明它落在哪条签字权层级、能触发哪一条 `first local veto`、以及失败时先退回哪一层；做不到这三点，它就只配先写成 `seam candidate`。
+- 目录契约也因此只剩一条单向路：`102` 锁定 `object-level claim`，`architecture/` 才能展开 writer / invariant；`102` 锁定 `host-facing truth claim-state / consumer subset`，`api/` 才能展开宿主承认边界；`102` 锁定 `why`，`philosophy/` 才能解释第一性原理；`navigation/` 只在 subject 与 rung 都已知后负责路由，不代替任何一层重新分级。
 
 这条线最短的 reject trio 也只认：
 
@@ -66,6 +68,7 @@
 这一步不过，后面各级判断都会被写浅，因为你会先把“可见”误当成“已被完整证明”。
 更硬一点说，能把 `public artifact ceiling / downgrade / gap note / change-risk record` 固化成统一 speaking-rights protocol，本身就是公开可见的工程先进性，因为它降低的是过度主张、误改与制度失忆成本。
 本页只判断 promotion / downgrade，并要求记录 `dependency honesty / temporal honesty` 风险；这些风险为什么构成源码质量判断，统一回 `87`。更稳一点说，`102` 负责回答“公开证据够不够把 claim-state 升级给 owner page”，owner page 再回答 why、object 或 host-facing consumption；本页本身不越位成对象页，也不把 owner noun 预先签成 landed truth。
+从第一性原理再压一次，这种目录设计并不是为了“把文档写得更细”，而是为了退休重复分级：promotion 只做一次，owner page 只消费一次锁定结果，later maintainer 就不用在每个 frontdoor 里反复重判 admissibility、重判 authority、重判 downgrade。
 
 更稳的公开镜像研究顺序，不是：
 
@@ -372,7 +375,7 @@ gap discipline 的价值不是“保守一点”，而是：
    - 再进 `navigation/README`
    - 进入后只反查下一种 artifact / seam，不重做 first-hop 或 rung typing
 
-若这四条里任何一条还答不上，就继续留在 `102`；这页先锁 rung，不让 owner noun 提前升级成 landed truth。
+若这四条里任何一条还答不上，就继续留在 `102`；这页先锁 rung，不让 owner noun 提前升级成 landed truth。更硬一点说，handoff 之后 owner page 只配消费这条已锁定的 rung，不得再重讲 canonical ladder、重开 promotion，或把 provisional claim 偷签成 landed object truth。
 
 ## 11. 苏格拉底式检查清单
 

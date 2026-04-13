@@ -4758,3 +4758,6 @@
 - `2026-04-13` Prompt 体验叙事线的最新稳定句法也应继续写死：`philosophy/54` 与 `playbooks/09` 现在不再把 Prompt 价值写成“人类更容易接手 / handoff continuity 更好”，而改写成 later consumer 的合法继承条件更稳。state、summary 与 handoff 只作为载体；真正被继承的是同一工作对象、已排除分支与继续资格判定。
 - `2026-04-13` userbook 控制面 README 的最新稳定边界也应继续写死：`userbook/05/README` 只做 route-only，不再本地复述 `weak readback / continuation consumer / reopen tail evidence / authority lease` 的 owner 解释。README 现在只负责把读者送回 `10`、相邻 `03` 与 `risk/README`，不再把 section README 写成第二套治理说明书。
 - `2026-04-13` 更深的 host-artifact/object 协议页也应继续记住一条 speaking-rights 边界：`api/39` 与 `api/42` 现在不再把共享字段或 rule packet 直接写成“对象真相已经成立”，而是只写成当前公开可复核到的源码锚点/见证。对象层 writer truth 仍留在 object page；artifact/rule 页当前只共享“如何复核到同一 current-truth surface”的公共字段。
+- `2026-04-13` 源码质量线的最新目录契约也应继续写死：`guides/102` 不只是 evidence ladder，更是唯一 promotion gate 与 handoff gate；owner page 只消费这里已经锁定的 rung result，不得重述 canonical ladder、不得补判 promotion、也不得把 provisional claim 偷运成 landed truth。
+- `2026-04-13` `architecture/84` 的最新稳定边界也应继续写死：它只收 promotion-passed object 的 atlas row，不再容纳半填的 provisional object；凡 writer authority 仍未锁定，就继续留在 `102` 的 `writer claim state / unresolved-authority note`，而不是借 atlas row 代行 promotion。
+- `2026-04-13` `api/README` 的最新稳定边界也应继续写死：`api/` 不拥有平行 classifier 权；`contract / registry / promotion / downgrade` 在这里都只配按 `102` 已锁定的 typing 被消费。README 若又开始回答“这条 claim 到底够不够升级”，就应先回 `guides/102`。
