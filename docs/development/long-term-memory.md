@@ -4951,3 +4951,4 @@
 - `2026-04-13` `architecture/84` 的下一层稳定纪律也应继续写死：atlas 页现在只继续展开 promotion-passed objects 的 `sole writer / per-host width / forbidden substitute writer / freshness guard`，不再让表格自带 `evidence status`，也不再让 operator artifact triage 在本页长成半张 claim-state 页。凡还要讲 admission/promotion，统一退回 `102`。
 - `2026-04-13` `guides/102` 的下一层稳定纪律也应继续写死：gate 页现在也不该同时长成 stamp schema 模板库和 route constitution。它仍是唯一 promotion gate，但 front block 只保留 canonical ladder、downgrade discipline、统一 handoff 句和最小 verdict box；stamp 字段压成一句，late-page handoff matrix 也只保留四条映射，不再展开带页号的长 syllabus。
 - `2026-04-13` `api/23` 的下一层稳定纪律也应继续写死：矩阵页现在只配解释 `existence -> implementation visibility -> current admission / consumer subset -> product promise` 这四层怎样落成支持标签，不再在页首复述 Prompt / 治理母公式，也不再在页尾展开长阅读链。矩阵 owner 页真正值钱的是写清 host-facing support width，而不是再长一张 frontdoor syllabus。
+- `2026-04-13` `api/29` 的下一层稳定纪律也应继续写死：这页现在只配继续拆 `存在 / 可见 / 可调用` 三层与裁剪链本身，不再在开场把 owner 边界挤成一整句，也不再把“模型可见”和“UI 可见”混成同一个出口。工具裁剪层数也应一次写定，不再先写八层再补两层。
