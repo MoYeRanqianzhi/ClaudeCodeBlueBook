@@ -30,7 +30,7 @@
 
 - 当你已经知道统一定价治理成立，并且 cleanup 已经把旧 authority 收口，准备判断它怎样落到误伤、恢复、支持链路与入口语义差上。
 - 当你需要从用户侧读回面理解 `product promise / reopen / evidence` 的样貌，而不是继续停在安全控制面。
-- 当你需要判断某种现实入口选择会怎样改写 `product promise`、恢复资格或证据绑定时，再进入本目录。
+- 当你需要判断某种现实入口选择会怎样改写 `product promise readback`、恢复资格读回或证据绑定时，再进入本目录。
 
 若还在判 signer、`verdict ledger`、`cleanup authority` 或治理 why，先回 [../security/README.md](../security/README.md)、[../10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md) 与对应 why 页；若问题已经进入恢复签发、责任划分与 reopen drill，统一回 [../playbooks/README.md](../playbooks/README.md)。
 

@@ -9,7 +9,7 @@
 如果只先记住三条使用判断，也只先记这三条：
 
 1. 好 Prompt 不是更像专家，而是先过 `same-world test`：later consumer 在 `verify / delegate / tool choice / resume / handoff` 时，不必重答谁在定义世界、边界内哪些动作和工具仍合法；`resume / handoff / compaction` 后也不必重判继续资格，更不必把已排除路径重新拉回候选集。
-2. 扩张或权限判断不要先看弹窗、`status`、`usage`、继续入口或摘要；这些都只算 `weak readback / lease checkpoint`。先找这次动作、可见性或继续请求里最早那条还没被定价的 `unpaid expansion`，再看它有没有补齐 `repricing proof / lease checkpoint / cleanup`。
+2. 扩张或权限判断不要先看弹窗、`status`、`usage`、继续入口或摘要；这些都只算 `weak readback / lease checkpoint`。除非它们在同一条 `authority lease` 上真的带来新的 `decision delta`，否则最多也只是 `receipt-grade` 证据。先找这次动作、可见性或继续请求里最早那条还没被定价的 `unpaid expansion`，再看它有没有补齐 `repricing proof / lease checkpoint / explicit cleanup trigger`。
 3. 若问题已经从“现在该怎么做”变成“为什么这么判 / 为什么会出现 `Later` 或 `Outside`”，先回蓝皮书根前门或对应母线入口；userbook 根页不展开 why syllabus。
 
 如果你只缺治理收费链的一屏速记，而不是用户侧动作分型，先回 [../10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面](../10-%E6%B2%BB%E7%90%86%E6%94%B6%E8%B4%B9%E9%93%BE%E5%85%A5%E5%8F%A3%E5%8D%A1%EF%BC%9A%E6%9C%80%E6%97%A9%20unpaid%20expansion%E3%80%81reject%20trio%20%E4%B8%8E%E5%BC%B1%E8%AF%BB%E5%9B%9E%E9%9D%A2.md)；userbook 根入口只保留问题分型、用户侧最小顺序与单跳分流。
@@ -17,7 +17,7 @@
 这里也只先记三条边界：
 
 - Prompt 线只翻 user-facing witness，不替 Prompt owner 页重判 `compiled world verdict`
-- 治理线只翻用户可见的 readback、恢复与继续信号；弹窗、`status`、`usage`、继续入口与摘要都只算 `weak readback / lease checkpoint`，why、mechanism 与 execution 由目标页继续分流，不在根页写死
+- 治理线只翻用户可见的 readback、恢复与继续信号；弹窗、`status`、`usage`、继续入口与摘要都只算 `weak readback / lease checkpoint`，没有新增 `decision delta` 时也只配留在 `receipt-grade`；why、mechanism 与 execution 由目标页继续分流，不在根页写死
 - `continuity` 不是第四类使用主题；它只是同一工作对象在时间轴上的继续条件
 
 ## 用户侧四问

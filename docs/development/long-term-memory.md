@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 governance-aftermath-pages-must-keep-receipt-grade-tail-apr13 live 记忆：
+  - `bluebook/userbook/README`、`10`、`risk/README` 与 `playbooks/README` 现在也应直接写死：用户侧 readback、reopen 资格与 cleanup-aftermath 只能沿着 `same authority lease / decision delta / explicit cleanup trigger` 这条尾链读，未带来新增 delta 的 surface 一律只算 `receipt-grade`
+  - 更稳的默认写法是：`userbook` 只把治理界面翻译成 `weak readback / lease checkpoint / receipt-grade evidence`；`10` 只把 `lease checkpoint` 读成“同租约 + 有无新 delta”；`risk` 只读 `product promise readback / reopen eligibility readback / evidence receipt binding`；`playbooks` 只消费这些 receipt-grade inputs，不倒放回治理层重签当前事实
 - 当前批次继续新增一条 prompt-frontdoors-must-name-retired-rejudications-apr13 live 记忆：
   - `bluebook/README`、`philosophy/README`、`navigation/README` 与 `philosophy/84` 现在也应直接写死：Prompt 前门和 why owner page 不只说 `same-world`，还要显式点名 `lawful inheritance / search-pruning / decision-retirement` 三条 owner law，说明 runtime 到底替 later consumer 退休了哪些世界、动作与继续资格重判
   - 更稳的默认写法是：根前门先问 later consumer 继承的是否仍是同一工作对象、同一批仍被排除的分支、以及同一组继续退役的旧判断；`navigation/` 则只在 first-hop 已成立后反查 artifact gap，不再用 `compiled world basis / first reject` 这类缩写黑话和 owner page 竞争

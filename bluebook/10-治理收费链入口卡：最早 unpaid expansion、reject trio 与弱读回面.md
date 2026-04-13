@@ -1,7 +1,7 @@
 # 治理收费链入口卡：最早 unpaid expansion 与四问诊断
 
 这页只压治理入口第一问，不重做 why、机制 inventory 或执行 verdict。
-它只补一件最容易被写浅的事实：进入诊断时先找 `earliest unpaid expansion`，再看 `repricing proof / lease checkpoint / cleanup`；危险、花费与体验波动，只是这次扩张在判责时回看的投影，不是入口第一主语。
+它只补一件最容易被写浅的事实：进入诊断时先找 `earliest unpaid expansion`，再看 `repricing proof / lease checkpoint / cleanup`；更硬一点说，真正要问的是这次继续是否仍在同一条 `authority lease` 上、是否真的新增 `decision delta`、以及 `cleanup trigger` 是否已明确触发。危险、花费与体验波动，只是这次扩张在判责时回看的投影，不是入口第一主语。
 
 ## 只在这里回答什么
 
@@ -24,11 +24,11 @@
 2. `repricing proof`
    - 谁重新定价，这次重定价由哪条 `verdict ledger` 或等价正式对象证明。
 3. `lease checkpoint`
-   - 这次继续是否仍在同一现场、仍已定价、也仍知道该由谁结算。
+   - 这次继续是否仍在同一条 `authority lease` 上、仍已定价、也仍知道该由谁结算；若没有新增 `decision delta`，就只是 checkpoint，不是续租。
 4. `cleanup`
-   - 旧 authority 是否已经撤租、归档、停用；若没有，继续一律不算合法续租。
+   - 旧 authority 是否已经撤租、归档、停用，以及显式 `cleanup trigger` 是否已触发；若没有，继续一律不算合法续租。
 
-`repricing seam` 不是一个补救动作名，而是这四问唯一允许改价的回炉口：凡要改写 continue、默认重试、usage 解读或 readback 结论的动作，都必须回到这里重开。若不同 surface 可以各自补签一点安全、一点成本，同一现场就会出现多头定价，`free-expansion relapse` 也会重新出现。这里入口层唯一认的 `reject trio` 也只剩：`decision-window collapse / projection usurpation / free-expansion relapse`；凡 usage、status、readback 或 reopen tail 不能补齐 `repricing proof / lease checkpoint / cleanup`，一律先降回 `weak readback / tail evidence`，不得在尾链补签继续、重试或 reopen 资格。若同类安全扩张在没有新增 `repricing / deny` 决策增益时仍反复 ask，入口层也先按 `approval fatigue` 记账，而不是按体验波动归档；这说明最早 `unpaid expansion` 已从动作本身转移到重复批准。
+`repricing seam` 不是一个补救动作名，而是这四问唯一允许改价的回炉口：凡要改写 continue、默认重试、usage 解读或 readback 结论的动作，都必须回到这里重开。若不同 surface 可以各自补签一点安全、一点成本，同一现场就会出现多头定价，`free-expansion relapse` 也会重新出现。这里入口层唯一认的 `reject trio` 也只剩：`decision-window collapse / projection usurpation / free-expansion relapse`；凡 usage、status、readback 或 reopen tail 不能补齐 `repricing proof / lease checkpoint / cleanup`，一律先降回 `weak readback / tail evidence`，没有新增 `decision delta` 时也只算 `zero-delta ask / receipt-grade evidence`，不得在尾链补签继续、重试或 reopen 资格。若同类安全扩张在没有新增 `repricing / deny` 决策增益时仍反复 ask，入口层也先按 `approval fatigue` 记账，而不是按体验波动归档；这说明最早 `unpaid expansion` 已从动作本身转移到重复批准。
 这里的 `weak readback` 也应显式包含 settings diff、hook review、status snapshot 与 host replay：凡这些 surface 只能展示“刚才发生了什么”，却不能独立补齐 `repricing proof / lease checkpoint / cleanup`，就只配回单，不配回判。
 一旦某次 ask 只能产出 approval receipt，却没有新增 signer 证据、boundary delta 或 cleanup 结果，它也应视作 `weak readback`：这类 `zero-delta ask` 只会补一张回单，不会补一条 `repricing proof`。
 一旦这类 `zero-delta ask` 开始被拿来证明“已经够安全、可默认继续”，而不只是留下一张 approval receipt，它就不再只是成本噪音，而是 `projection usurpation`：tail evidence 正在越权代签 `continue qualification`。
