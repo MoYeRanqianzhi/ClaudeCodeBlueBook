@@ -279,23 +279,37 @@ handler 里只有在：
 - 142 讲这条 reader 有没有被挂上去
 - 191 讲挂上去之后，这条 reader 自己怎样再分合同
 
-## 稳定面与灰度面
+## 第九层：稳定层、条件层与灰度层
 
-本页只保护稳定不变量：
+### 稳定可见
 
-- control payload 不进入 SDK message consumer
-- `recentPostedUUIDs` = outbound echo drop
-- `recentInboundUUIDs` = inbound replay guard
-- `onInboundMessage` 只消费 user message
+- control payload 当前不进入 SDK message consumer，而是先走 side-channel bypass。
+- `recentPostedUUIDs` 当前签的是 outbound echo drop，不是 generic UUID dedup。
+- `recentInboundUUIDs` 当前签的是 inbound replay guard，不是“已读即丢”的总账。
+- `onInboundMessage` 当前只消费 user message，non-user ignore 是 consumer-domain narrowing，不是 dedup 特例。
+- `handleIngressMessage(...)` 当前更像一个多合同 triage reader，而不是单一 dedup gate。
 
-本页刻意不展开的灰度层包括：
+### 条件公开
+
+- `recentInboundUUIDs` 是否真的拦到 replay，仍取决于当前 same-session continuity、transport swap 与 replay path。
+- outboundOnly / gray runtime 下这条 reader 的更大运行态分叉，仍取决于当前宿主与 wiring route。
+- viewer 侧是否会通过并行 consumer 路径再看到相邻 surface，也仍取决于当前 consumer 组合，而不是这页已经稳定暴露的合同。
+
+### 内部/灰度层
 
 - `recentInboundUUIDs` 与 sequence handoff 的完整 edge-case 谱系
-- outboundOnly / gray runtime 的更大 runtime 分叉
-- REPL / daemon 共享这条 reader 的所有 wiring 细节
+- REPL / daemon 共享这条 reader 的具体 wiring 细节
 - viewer 侧 `sentUUIDsRef` 的并行 consumer 路径
+- helper 调用顺序与其他 reader-side 实现细节
 
-这些都相关，但不属于本页的 hard sentence。
+所以这页最稳的结论必须停在：
+
+- ingress reader 内部至少已经分成 control bypass、outbound echo drop、inbound replay guard 与 user-only consumer domain 四种合同
+- 这不等于一张统一的 ingress 去重/过滤表
+
+而不能滑到：
+
+- 所有没进 REPL 的 ingress message，本质上都只是同一种“被过滤掉”
 
 ## 苏格拉底式自审
 
@@ -310,3 +324,10 @@ handler 里只有在：
 ### 问：为什么这页不该继续写成 55 的家族总表？
 
 答：因为 55 已经做完 taxonomy；191 的新增价值在于：同一个 ingress reader 里，家族、类型路由和 callback 域是如何交错分工的。
+
+## 结论
+
+所以这页能安全落下的结论应停在：
+
+- `handleIngressMessage(...)` 不是单一 dedup gate
+- 它把 control bypass、outbound echo drop、inbound replay guard 与 user-only consumer domain 四层合同串在同一个 triage reader 里
