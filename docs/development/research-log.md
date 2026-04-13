@@ -2,6 +2,14 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `guides/30 + philosophy/54` verdict-plumbing 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
+
+- 本轮新的 `guides/30` verdict-plumbing 结论：我只对 `bluebook/guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`30` 现在把 `effect ceiling` 从局部门槛接回了顶层协议：执行协议的输入显式加入 `carrier surface inventory / effect ceiling`，gate verdict 统一成 `pass / provisional / reject / unknown`，审读记录卡与失效类型也补进了 `effect-ceiling breach / carrier-only provisional / 本地 verdict`。当前判断是，这一步能把 Prompt 审读链从“知道有这个 gate”推进到“整条判定流都能消费这个 gate”。
+
+- 本轮新的 `philosophy/54` carrier law 结论：`54` 现在也把 `teammate navigation` 正式绑回同一条 `effect ceiling` 纪律，不再只停在题面。新的默认写法是：它和 `suggestion / sticky prompt / session memory / handoff note` 一样，最多只负责 route / carrier 价值，不配因为“知道该找谁”就自动代签 same-world continuation。当前判断是，这一步能减少 Prompt 魔力论证里“路由能力”被误读成“签字能力”的剩余歧义。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一个 builder-facing gate 已经被加到中段时，更稳的默认追问不该是“有没有写上这个 gate”，而应先问“它有没有进入输入、verdict 和记录卡”；如果没有，它仍只是局部提醒，而不是制度链的一部分。当前判断是，这个问法能继续把 Prompt 设计反思从“多一个好概念”拉回“整条协议是否真的闭合”。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/30` deepen 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
 
 - 本轮新的 `api/30` repo-seam 结论：我只对 `bluebook/api/30-源码目录级能力地图：commands、tools、services、状态与宿主平面.md` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`30` 现在把原来的 `state / Task.ts / query / structuredIO` 混合簇拆成了四种更贴近真实 repo structure 的 seam：`state/` 负责 `host truth externalization`，`utils/task / Task.ts` 负责 `task runtime kernel`，`query.ts` 负责 `continuation kernel`，`structuredIO / transport` 负责 `host transport seam`。当前判断是，这一步能把源码结构先进性的论证从“作者如何归纳几类大文件”推进到“repo 里到底有哪些不同的复杂度中心”，也让 later maintainer 的 reject path 更贴近实际 seam。

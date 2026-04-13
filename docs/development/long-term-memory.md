@@ -13,6 +13,15 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-guides30-verdict-plumbing-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `guides/30 + philosophy/54` verdict-plumbing 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `guides30-must-plumb-effect-ceiling-through-input-verdict-and-record-card-apr13 live` 记忆：
+  - `bluebook/guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md` 现在也应继续写死：`effect ceiling` 不能只停在局部门槛里，必须贯穿顶层输入、verdict 语义与审读记录卡
+  - 更稳的默认写法是：执行协议先显式纳入 `carrier surface inventory / effect ceiling`，verdict 统一先写成 `pass / provisional / reject / unknown`；`carrier-only` 默认落 `provisional`，`effect-ceiling breach` 进入独立故障类型与记录卡字段
+- 当前批次继续新增一条 `philosophy54-should-bind-teammate-navigation-to-the-same-effect-ceiling-law-apr13 live` 记忆：
+  - `bluebook/philosophy/54-好的Prompt同时组织模型与人类接手路径.md` 现在也应直接写死：`teammate navigation` 和 `suggestion / sticky prompt / session memory / handoff note` 一样，都是 carrier / route surface，不配替接手者代签 same-world continuation
+  - 更稳的默认写法是：route value != signer value；知道下一跳只减少路由成本，不自动生成 `continue qualification`
 - 当前批次继续新增一条 `root-sync-healthy-for-api30-repo-seam-batch-apr13 live` 记忆：
   - 2026-04-13 本轮进入 `api/30` deepen 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`

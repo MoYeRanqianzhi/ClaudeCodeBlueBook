@@ -95,9 +95,9 @@
 
 0. Gate-0：先写明这次系统试图退休的决策是什么、谁继承这项退休、哪一批分支继续保持被排除、以及没有新增 `decision delta` 时哪组旧判断必须继续退役，下一位 consumer 又凭什么拒绝重放。
 
-1. 输入：`compiled request truth`、`witness chain`、consumer matrix、当前 continuation object。
-2. 每个 gate 必须产出 `pass | fail | unknown`。
-3. `fail` 与 `unknown` 一律视为不可继续，必须写出 `reject signal + rollback object + next action`。
+1. 输入：`compiled request truth`、`witness chain`、consumer matrix、carrier surface inventory / effect ceiling、当前 continuation object。
+2. 每个 gate 必须产出 `pass | provisional | reject | unknown`。
+3. `provisional / reject / unknown` 一律视为当前不可继续，必须写出 `reject signal + rollback object + next action`；其中 `provisional` 默认表示 carrier-only 或 witness 尚未回绑，`reject` 则表示已出现明确越权或制度冲突。
 4. 仅当关键 gate 全部 `pass`，才允许产出 `continuation qualification = continue`。
 
 ### 3.1 Gate-1：`message lineage` 还是三键内核吗
@@ -233,6 +233,8 @@
 审读对象:
 compiled request truth:
 message lineage ref:
+carrier surface inventory:
+effect ceiling 是否守住:
 lineage kernel 是否完整:
 当前主语:
 projection consumer matrix 是否对齐:
@@ -243,11 +245,12 @@ dynamic boundary 是否稳定:
 continuation object 最小对象是否完整:
 invalidation 触发器是否明确:
 continuation qualification 是否可点名:
+本地 verdict:
 lawful forgetting ABI 是否成立:
 当前最像哪类失效:
-- lineage-kernel shadow / section drift / boundary drift / projection-consumer split / transcript conflation / continuation-story-only / continuation-unqualified / lawful-forgetting failure / invalidation drift
+- effect-ceiling breach / carrier-only provisional / lineage-kernel shadow / section drift / boundary drift / projection-consumer split / transcript conflation / continuation-story-only / continuation-unqualified / lawful-forgetting failure / invalidation drift
 下一步该重写的是:
-- 主语 / lineage kernel / 前缀 / 边界 / consumer matrix / continuation object / 恢复
+- 主语 / effect ceiling / lineage kernel / 前缀 / 边界 / consumer matrix / continuation object / 恢复
 ```
 
 ## 7. 苏格拉底式检查清单
@@ -257,6 +260,7 @@ lawful forgetting ABI 是否成立:
 1. 我是在增强制度，还是在堆更长的文本。
 2. 我改的是当前回合效果，还是跨回合继续工作的条件。
 3. 我保住的是共享前缀和同一条 `message lineage`，还是只是保住了一段看起来熟悉的话。
-4. 我是在减少 projection consumer 的分叉，还是在把接手代价推给未来的人。
-5. 我能否解释这次强或弱是由哪类制度字节、哪条 continuation qualification 决定的。
-6. 我删掉 `systemPrompt` 截图、最后一条回复和 summary prose 后，这条 Prompt 论证还成立吗。
+4. 我现在依赖的是 witness，还是某个 carrier 已经在偷偷越权代签 `continue qualification`。
+5. 我是在减少 projection consumer 的分叉，还是在把接手代价推给未来的人。
+6. 我能否解释这次强或弱是由哪类制度字节、哪条 continuation qualification 决定的。
+7. 我删掉 `systemPrompt` 截图、最后一条回复和 summary prose 后，这条 Prompt 论证还成立吗。

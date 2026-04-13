@@ -6,7 +6,7 @@
 
 1. 为什么 Claude Code 的 prompt 不只在组织模型，也在组织人类下一步如何接手。
 2. 为什么真正强的 agent runtime 会主动降低人类-模型协调成本。
-3. 为什么 suggestion、sticky prompt、session memory、teammate navigation 都该和 prompt 一起理解。
+3. 为什么 suggestion、sticky prompt、session memory、handoff / teammate navigation 都该和 prompt 一起理解。
 4. 这对 agent 设计者意味着什么。
 
 ## 1. 先说结论
@@ -15,9 +15,9 @@ Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，
 
 所以这里值钱的也不是“接手路径更顺”，而是 `verify / resume / handoff` 之后，接手者继承的仍是同一份工作对象、同一批仍被排除的分支，以及同一条 `continue-or-reject verdict`。
 更硬一点说，人类接手不是体验优化，而是另一个 lawful consumer；系统必须先规定他看到哪层 projection、可拒收什么、何时必须 `reopen`，而不是沿旧资格继续。没有新增 `decision delta` 时，旧判断继续退役，人类也不应只靠 summary 或 display convenience 把它们静默拖回候选集。
-这里也要先压住一个常见误读：sticky prompt、suggestion、session memory、handoff note 都更接近 carrier / projection，而不是 witness 本身；它们能帮 later consumer 更快定位现场，但不能绕过 admissibility gate 直接续租 continue 资格。
+这里也要先压住一个常见误读：sticky prompt、suggestion、session memory、handoff note 与 teammate navigation 都更接近 carrier / projection，而不是 witness 本身；它们能帮 later consumer 更快定位现场，但不能绕过 admissibility gate 直接续租 continue 资格。
 如果把“Prompt 为什么强”继续压成第一性原理，本页也只认三条 why-proof：`lawful inheritance` 让接手者继承的仍是同一工作对象；`search-pruning` 让已排除分支继续保持被排除；`decision-retirement` 让没有新增 `decision delta` 的旧判断继续退役。所谓 Prompt 魔力，只是系统提前替 later consumer 付掉了“重谈世界、重搜动作、重判旧结论”这三笔税。
-也因此，sticky prompt、suggestion、session memory、handoff note 的真正 `effect ceiling` 也该写死：它们最多只配搬运定位、方向、提醒与局部 projection，不配单独改判 `world-definition`、`boundary` 或 `continue qualification`。一旦 later consumer 只能靠这些 carrier 判断“应该还能继续”，Prompt 的强度就应先降回 `provisional`，而不是继续包装成顺滑体验。
+也因此，sticky prompt、suggestion、session memory、handoff note 与 teammate navigation 的真正 `effect ceiling` 也该写死：它们最多只配搬运定位、方向、提醒、路由与局部 projection，不配单独改判 `world-definition`、`boundary` 或 `continue qualification`。一旦 later consumer 只能靠这些 carrier 判断“应该还能继续”，Prompt 的强度就应先降回 `provisional`，而不是继续包装成顺滑体验。
 
 ## 2. 为什么这很重要
 
@@ -75,7 +75,13 @@ Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，
 
 它真正值钱的地方，是把接手者需要的最小 carrier 收到一次交接里；但只要 handoff note 开始单独代签 `world-definition / boundary / continue qualification`，它就已经从交接辅助物越权成伪 witness。
 
-### 3.6 真正强的 prompt 更像什么
+### 3.6 teammate navigation 是替你决定该找谁吗
+
+也不是。
+
+它真正值钱的地方，是降低切回另一条执行链或另一个 consumer 时的路由成本；但它最多只配指出 next hop，不配替接手者代签 same-world continuation，更不配因为“知道该找谁”就自动放行 continue qualification。
+
+### 3.7 真正强的 prompt 更像什么
 
 更像：
 
@@ -94,7 +100,7 @@ Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，
 3. 人类如何低成本给出纠偏反馈，同时保留正式 reject 权。
 4. 多执行链之间如何切换而不丢现场，并在必要时明确 `reopen` 而不是偷续旧资格。
 
-如果只想先看一个最小 lawful-consumer review object，也只先问四格：
+如果只想先看一个最小 lawful-consumer review object，也只先问五格：
 
 | field | fail signal | pass signal |
 |---|---|---|
