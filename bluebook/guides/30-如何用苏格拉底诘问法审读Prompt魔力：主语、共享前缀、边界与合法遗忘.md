@@ -1,5 +1,9 @@
 # 如何用苏格拉底诘问法审读Prompt效力：lineage kernel、projection consumers与lawful forgetting
 
+> Evidence mode
+> - 当前 worktree 若仍缺 `claude-code-source-code/` 镜像，本页所有 `src/...` 路径都只按 archival anchors 读取。
+> - 本页只负责 builder-facing 审读链，不把这些锚点单独写成 live runtime proof；owner law 继续回 `../philosophy/84`，canonical witness chain 继续回 `../philosophy/81`。
+
 这一章不再解释 Prompt 为什么强，而是把“怎么审它是否具备稳定 Prompt效力”压成一套 builder-facing 审读框架。
 
 它主要回答五个问题：
@@ -209,13 +213,12 @@
 
 ## 5. 更好的迭代顺序
 
-当这组问题里有任何一个答不清时，优先做下面五步，而不是继续微调 prompt 文案：
+当这组问题里有任何一个答不清时，优先做下面四步，而不是继续微调 prompt 文案：
 
-1. 先回 `../philosophy/81`，判断自己改坏的是主权、lineage、consumer、boundary、protocol 还是 lawful forgetting。
-2. 再回 `../architecture/82` 与 `../guides/99`，检查请求装配控制面和苏格拉底审读链哪里被重新拆散。
-3. 再回 `../casebooks/73`，检查自己是不是已经把 lineage kernel、projection consumer 或 continuation object 偷换成更会解释的替身。
-4. 再回 `../playbooks/77`，把 drift 写成正式的 verification 字段、reject 条件与 rollback object。
-5. 最后才决定是修正文案、重画 boundary，还是修改 compact / recovery / fork 协议。
+1. 先在本页把问题 typing 成 `lineage / consumer / boundary / forgetting / continuation` 哪一类 drift，而不是先跳页找答案。
+2. 若 drift 落在 canonical witness chain，回 `../philosophy/81`；若 drift 落在 request assembly / object seam，再只选一个 `../architecture/82` 或 `../guides/99` 继续下钻。
+3. 若怀疑自己已经把 witness 偷换成更会解释的替身，再回 `../casebooks/73` 做反例核对。
+4. 只有 drift 类型与 owner page 都锁定后，才回 `../playbooks/77` 把它写成正式 verification 字段、reject 条件与 rollback object。
 
 ## 6. 审读记录卡
 

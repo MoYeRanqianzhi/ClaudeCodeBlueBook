@@ -13,6 +13,15 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-prompt-lawful-consumer-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮进入 `philosophy/54 + guides/30` 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `prompt-magic-must-bind-back-to-owner-law-effect-ceiling-and-witness-tax-apr13 live` 记忆：
+  - `bluebook/philosophy/54-好的Prompt同时组织模型与人类接手路径.md` 现在也应直接写死：Prompt 的“魔力”不是 carrier 更顺，而是 `lawful inheritance / search-pruning / decision-retirement` 三条母法则让 later consumer 不必重付“重谈世界、重搜动作、重判旧结论”这三笔税
+  - 更稳的默认写法是：`54` 只消费 `84` 的 owner law 与 `81` 的 witness chain；sticky prompt、suggestion、session memory、handoff note 统一先按 `effect ceiling` 读，最多只配搬运定位与提醒，不配单独代签 `world-definition / boundary / continue qualification`
+- 当前批次继续新增一条 `guides30-must-carry-public-evidence-guard-and-type-drift-before-routing-apr13 live` 记忆：
+  - `bluebook/guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md` 现在也应直接写死：无源码镜像时先挂 `Evidence mode`，并在失败后先在本页把 drift typing 清楚，再只路由到一个 owner page
+  - 更稳的默认写法是：builder-facing frontdoor 不再一开始就把 later maintainer 丢进多页跳转；先问 drift 是 `lineage / consumer / boundary / forgetting / continuation` 哪一类，再决定回 `81`、`82/99` 还是 `77`
 - 当前批次继续新增一条 `root-sync-healthy-for-source-quality-ladder-batch-apr13 live` 记忆：
   - 2026-04-13 本轮进入 `api/30 + 46/47/48` 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 再次执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`

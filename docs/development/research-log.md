@@ -2,6 +2,14 @@
 
 ## 2026-04-13 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `philosophy/54 + guides/30` 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
+
+- 本轮新的 Prompt lawful-consumer 结论：我结合并行 agent 对 `philosophy/54` 与 `guides/30` 的复核，只对这两页与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`54` 现在更明确把“Prompt 为什么有魔力”回绑到 `84` 的 owner law 与 `81` 的 witness chain：所谓魔力不再停在 lawful-consumer slogan，而是直接压成 `lawful inheritance / search-pruning / decision-retirement` 三条母法则让 later consumer 不必重付“重谈世界、重搜动作、重判旧结论”这三笔税；同时也把 sticky prompt、suggestion、session memory、handoff note 的 `effect ceiling` 写死，只允许它们当 carrier / projection，不再默认能代签 continue 资格。当前判断是，这一步能把 `54` 从“Prompt 很强”的压缩结论页，推进成真正可复查的 why-proof。
+
+- 本轮新的 `guides/30` 审读护栏结论：`30` 现在补出了 `Evidence mode` 横幅，并把失败后的默认迭代顺序收成“先在本页完成 drift typing，再只选一个 owner page”。新的默认问法是：问题到底落在 `lineage / consumer / boundary / forgetting / continuation` 哪一种 drift；只有 drift 类型锁定后，才继续回 `81`、`82/99` 或 `77`。当前判断是，这一步能减少 builder-facing frontdoor 在无源码镜像前提下把 archival anchors 误读成 live proof、或把 later maintainer 一次抛进多页路由的概率。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一个 surface 看起来“很有帮助”时，更稳的默认追问不该是“它能不能帮助继续”，而应先问“它是在搬运 witness，还是在偷偷代签 qualification”；如果答案是后者，它就已经越过了自己的 `effect ceiling`。当前判断是，这个问法能把 Prompt 设计反思从“文案是否顺手”重新压回“制度对象有没有越权”，也更贴近 Claude Code prompt potency 的真正来源。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/30 + 46/47/48` 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，这次同步结果只应作为本批次的 live premise；正文、记忆与提交继续严格只落在 `.worktrees/mainloop`。
 
 - 本轮新的 `api/30` owner-law 结论：我结合并行 agent 对 `api/30 / 46 / 47 / 48` 的复核，只对 `bluebook/api/{30,46,47,48}` 与 `docs/development/{long-term-memory,research-log}.md` 落了正文修改。`30` 现在更明确只负责固定源码质量 canonical ladder：页首不再自己重开 frontdoor，而是直接声明若问题还在 `promotion / unresolved-authority` 回 `guides/102`，若问题已经进入 `one writable present / sole writer / writeback seam` 回 `architecture/README`；`2.1-2.4` 也统一补齐成同一套六格，不再让 `commands / tools / services / state` 各自缺格或换格。当前判断是，这一步能把 `api/30` 更硬地收成 source-quality ladder owner，而不是半张目录导读、半张对象层预告。
