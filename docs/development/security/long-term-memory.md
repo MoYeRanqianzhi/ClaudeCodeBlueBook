@@ -2,6 +2,10 @@
 
 ## 当前稳定边界
 
+- `2026-04-13` 最新一轮已完成 `448 / 432 / 299`：主线把 stronger-request cleanup 从 `stronger-request cleanup-metadata-governance` 继续推进到 `stronger-request cleanup-runtime-conformance-governance`，附录把 `metadata signal / runtime truth / gap type / receipt surface / governor question` 压成统一矩阵，源码剖面则把 strong wording、write suppression、deferred housekeeping、intentional skip、propagation gap、local outcome vocabulary 与 uncovered diagnostics coverage 并排钉成 `runtime-conformance grammar`。这一轮稳定写出的新边界是：`制度会记住自己` 不等于 `制度会执行并签收自己`，`制度已经把自己写下来` 不等于 `制度已经把自己活出来。`
+- `2026-04-13` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-13` 当前唯一 open question 已前推到 `stronger-request cleanup-anti-drift-verification-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
+
 - `2026-04-13` 最新一轮已完成 `447 / 431 / 298`：主线把 stronger-request cleanup 从 `stronger-request cleanup-rationale-governance` 继续推进到 `stronger-request cleanup-metadata-governance`，附录把 `carrier family / naming surface / path helper / projection surface / metadata gap` 压成统一矩阵，源码剖面则把 dispatcher literal、settings knobs、path grammar、permission projection、env contract 与 propagation gap 并排钉成 `metadata-self-memory grammar`。这一轮稳定写出的新边界是：`理由已知` 不等于 `理由已被系统登记成制度自我记忆`，`制度会解释自己` 不等于 `制度会记住自己。`
 - `2026-04-13` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-13` 当前唯一 open question 已前推到 `stronger-request cleanup-runtime-conformance-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
