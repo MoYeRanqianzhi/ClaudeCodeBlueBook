@@ -258,29 +258,35 @@
 
 而不是互为父子。
 
-## 第七层：这组页最该保护的稳定主干
+## 第七层：稳定层、条件层与灰度层
 
-| 节点 | 稳定主干 |
-| --- | --- |
-| 122 | warning、reconnect action、reconnecting、disconnected 不是同一状态；warning 更像 remediation prompt，不是 durable authority |
-| 123 | `viewerOnly` 不是“完全只读”，而是 non-owning interactive client：能发 prompt，但不拥有 title / timeout / interrupt 这组三权 |
-| 124 | `remoteConnectionStatus` 比 warning / brief 更接近 shared durable authority；absence 不等于 opposite；bridge 与 remote session 不是同一 signer family |
-| 125 | `handleClose(...)` 才是 transport authority path；`scheduleReconnect(...)`、`reconnect()`、`onClose`、`onReconnecting` 不应被写成同一种状态 |
-| 126 | terminality 至少分成 permanent rejection、`4001` stale exception、ordinary post-connected retry 三桶 |
-| 127 | compaction 至少分成 progress/status、keep-alive、local patience、transport exception、rewrite completion 五种信号 |
+### 稳定可见
+
+- `122 / 123 / 124` 当前稳定回答的是 recovery edge、ownership 与 signer family 不是同一层
+- warning、reconnect action、reconnecting、disconnected 当前不能被压成同一状态词；warning 更像 remediation prompt，不是 durable authority
+- `viewerOnly` 当前稳定回答的是 non-owning interactive client，而不是 attached owner 的弱版本：能发 prompt，但不拥有 title / timeout / interrupt 这组三权
+- `remoteConnectionStatus` 比 warning / brief 更接近 shared durable authority；absence 不等于 opposite；bridge 与 remote session 不是同一 signer family
+- `125 / 126 / 127` 当前稳定回答的是 transport authority path、terminality bucket 与 compaction signal 也不是同一张表
+- `handleClose(...)` 当前更像 transport authority path；`scheduleReconnect(...)`、`reconnect()`、`onClose`、`onReconnecting` 不应被写成同一种状态
+- `4001` 在当前 remote-session 栈里只该读作 stale-window exception，不等于所有 transport 的统一协议真义
 
 这里最该保住的一句是：
 
 - recovery、ownership、proof、transport、terminality、compaction 不是一张表
 
-## 第八层：哪些点必须降级为条件或灰度实现证据
+### 条件公开
 
-| 节点 | 条件 / 灰度证据 |
-| --- | --- |
-| 122-124 | timeout 后出现 warning 只能证明 watchdog fired；brief 文案、remote pill、history gate、warning 缺席都受挂载条件 / `viewerOnly` / `KAIROS` / UI 投影限制 |
-| 125-126 | `60s / 180s` timeout、`500ms` force reconnect、`MAX_RECONNECT_ATTEMPTS`、`MAX_SESSION_NOT_FOUND_RETRIES`、`RECONNECT_DELAY_MS` 都只是当前实现常量 |
-| 126-127 | `4001` 只在当前 `SessionsWebSocket` 栈里被当成 stale-window exception；另一层 `WebSocketTransport` 可以把 `4001` 视为 permanent close code |
-| 127 | repeated `compacting` 的 keep-alive cadence、`compact_boundary.preserved_segment`、session activity tracking 是否启用，都不该被抬成稳定公共合同 |
+- timeout 后出现 warning 只能证明 watchdog fired；brief 文案、remote pill、history gate、warning 缺席仍受挂载条件、`viewerOnly`、`KAIROS` 与 UI 投影限制
+- terminality 三桶怎样显影、compaction 五类信号怎样进入不同 surface，仍取决于具体 host、hook 与 transport route
+- `4001` 被谁当成 stale-window exception、谁直接当 permanent close，仍取决于当前 remote-session 栈与 transport 族别
+- compaction 这条线虽然会复用 `126` 的一个 stop-rule 子结论，但它对外显露的仍是条件化 surface，不是跨 transport 的稳定统一读法
+
+### 内部/灰度层
+
+- `60s / 180s` timeout、`500ms` force reconnect、`MAX_RECONNECT_ATTEMPTS`、`MAX_SESSION_NOT_FOUND_RETRIES`、`RECONNECT_DELAY_MS`
+- repeated `compacting` 的 keep-alive cadence 与 reconnect scheduler 的具体节奏
+- `compact_boundary.preserved_segment`、rewrite completion 的内部 bookkeeping，以及 session activity tracking 是否启用
+- warning / timeout / reconnect / compaction 的具体 hook 顺序与显示层投影细节
 
 更稳的写法应先写：
 
@@ -292,7 +298,7 @@
 
 不要反过来让实现常量替代结构主语。
 
-## 第九层：苏格拉底式自审
+## 第八层：苏格拉底式自审
 
 每次继续深挖 122-127，先追问自己：
 
@@ -312,7 +318,7 @@
 
 而应该先回到这张结构页重找主语。
 
-## 第十层：阅读建议
+## 第九层：阅读建议
 
 如果你现在的问题是：
 
