@@ -39,7 +39,13 @@
 
 本页只做一件事：
 
-- 固定 `196 -> 198 / 199 / 201 / 202` 这张跨页分叉骨架
+- 固定 `196 -> 198 / 199 / (201 -> 202)` 这张跨页分叉骨架
+
+其中 `198` 与 `199` 不是彼此后继，
+
+`202` 也不是第五个同层尾页，
+
+而是 sandbox-network 分支里在 `201` 之后才显形的 persist 后继问题。
 
 它不重讲 `196/198/199/201/202` 各页自己的页内证明，
 
@@ -312,7 +318,7 @@
 
 这里的“稳定”只指：
 
-- `196 -> 198 / 199 / 201 / 202` 这张 permission tail 分叉骨架已经收稳
+- `196 -> 198 / 199 / (201 -> 202)` 这张 permission tail 分叉骨架已经收稳
 
 不指：
 
@@ -324,14 +330,15 @@
 
 | 类型 | 对象 |
 | --- | --- |
-| 稳定阅读骨架 | 稳定的是这张分叉图的走法：`196` 先固定本地 verdict ledger；随后分出 `198` 的 request-level closeout、`199` 的 leader-local re-evaluation、`201` 的 sandbox-network host-level sibling sweep 与 `202` 的 persist write-surface propagation。 |
+| 稳定阅读骨架 | 稳定的是这张分叉图的走法：`196` 先固定本地 verdict ledger；随后分出 `198` 的 request-level closeout、`199` 的 leader-local re-evaluation，以及 `201 -> 202` 这条 sandbox-network host sweep 继续长向 persist write-surface propagation 的后继线。 |
 | 条件公开 | 一个 prompt 最终是在本地还是远端收口、queue 中 ask 会不会因为 permission mode 变化而重判、same-host settle 会不会发生、persist 会不会继续打到 settings/runtime，都依赖当前宿主、队列位置、sandbox 分支与是否选择 persist，不写成所有 permission update 的默认路径。 |
 | 内部证据层 | `pendingPermissionHandlers`、`request_id`、unsubscribe / delete 顺序、`sandboxBridgeCleanupRef`、queue filter，以及 `applyPermissionUpdate(...)` / `persistPermissionUpdate(...)` / `SandboxManager.refreshConfig()` 的具体联动，都只是用来举证这张分叉图的内部账本与 cleanup 机制。 |
 
 所以这页最稳的落笔纪律必须先写：
 
 - `196` 是根页
-- `198 / 199 / 201 / 202` 是四种不同后继问题
+- `198 / 199` 是直接后继问题
+- `201 -> 202` 是 sandbox-network 分支里继续长出的后继线
 
 再写 queue / host / persist 的条件，
 
@@ -365,7 +372,7 @@
 - 198 只处理 request-level closeout
 - 199 处理 permission context change 下的 leader-local re-evaluation
 - 201 处理 sandbox network 分支里的 host-level sibling sweep
-- 202 处理本地 sandbox persist 之后的 write-surface propagation
+- 202 不是第五个同层尾页，而是 201 之后才显形的 persist write-surface zoom
 
 一旦这句成立，
 
