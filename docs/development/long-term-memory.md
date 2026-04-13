@@ -4942,3 +4942,4 @@
 - `2026-04-13` Prompt builder-facing 机制页的最新稳定纪律也应继续写死：`philosophy/81` 的尾部现在只配回答三件事：哪一份 `required witness` 仍被显式携带、第一声 `no` 落在哪个 continuation surface、第一退回层该回哪一环补 witness；why/provisional/reject 风格的结论应继续留在 `84`，不再从 `81` 尾段回流。
 - `2026-04-13` 当前 live preflight 也应继续按最新检查读：根仓库 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；后续批次可继续只在 `.worktrees/mainloop` 推进，不得让旧同日阻断快照反向覆盖当前健康结果。
 - `2026-04-13` 治理入口卡的最新稳定纪律也应继续写死：`10` 在 typed-state 表之后现在只配保留一条 verb ceiling。只要 `authority lease / decision delta / cleanup trigger state` 里有任一格不是正向值，当前 surface 一律只配停在 `checkpoint / receipt-grade projection`，不得自己改价；逐项列举哪些 tail surface 越位、以及继续资格由谁解释，统一回各归属页。
+- `2026-04-13` `api/README` 的最新稳定纪律也应继续写死：README 现在只配消费 `102` 已锁定的 `host-facing truth claim-state / consumer subset / promise boundary`，不再复述 Prompt / 治理母公式，也不再在 owner README 里重跑 `code present / registry listed / signed claim` 这类 ladder 格。

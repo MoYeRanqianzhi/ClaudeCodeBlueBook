@@ -9,14 +9,7 @@
 - 本页不拥有平行 classifier 权；`contract / registry / promotion / downgrade` 这些 noun 在这里都只配按 `102` 已锁定的 typing 被消费，不在这里重排 ladder，也不在这里补签 host-facing truth。
 - 若当前 evidence mode 仍是 `public-evidence only`，本页所有 host-facing noun 也一律只按 `claim-state / consumer subset` 读取，不偷升格成 object-level certainty。
 
-如果把 API 前门继续压成最短公式，也只剩三条：
-
-1. `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
-   - 宿主到底承认了哪一段请求编译链
-2. `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
-   - 宿主到底承认了哪一条治理外化真相
-3. `host-facing truth claim-state -> consumer subset -> promise boundary`
-   - 在 `102` 已完成 rung classification 后，宿主到底在消费哪一层 truth、哪一层子集、哪一层承认边界；若问题升级成“谁在写现在”，统一回 current-truth owner 页
+如果把 API 前门继续压成最短公式，也只剩一句：在 `102` 已完成 rung classification 后，本目录只继续回答三件事: `host-facing truth claim-state / consumer subset / promise boundary`。若问题还停在“Prompt 链哪一段成立”或“治理链哪一环先说了算”，说明你还在上游 frontdoor，不在 API owner 页。
 
 这里也要先压住一个常见误读：`continuity` 不是第四类 API 平面；它只是 Prompt `Continuation`、治理 `continuation pricing` 与源码质量 `recovery non-sovereignty / anti-zombie` 在 host-facing truth 上的共同时间轴。
 
@@ -29,30 +22,19 @@
 3. `危险面暴露`
    - 哪些 seam、rollback object、reopen boundary 与 hotspot 必须被显式对外。
 
-如果继续把 `consumer subset` 再压成 later maintainer 可直接复查的一张最小矩阵，也只先问五格：
+如果继续把 `consumer subset` 再压成 later maintainer 可直接复查的最小检查，本页也只先问三格：
 
-1. `code present`
-2. `registry listed`
-3. `host-facing truth claim signed / promotion-passed`
-4. `consumer subset admitted`
-5. `promise boundary declared`
+1. `host-facing truth claim-state` 是否已经由 `102` 锁定为 admitted claim，而不是仍停在 `provisional / projection`
+2. `consumer subset` 到底只承认哪一段 truth width，而不是把 readback 当 full truth export
+3. `promise boundary` 是否已经被显式声明，还是仍只停在“能看见一些东西”的弱暴露
 
-代码里有，不等于 registry 承认；registry 承认，不等于 host-facing truth claim 已签发；claim 已签发，也不等于所有 consumer 都能合法消费。
-
-如果要把这五格再压成最小 case matrix，也只先保留一正一反两个读法示范；它们只示范“怎样问”，不代替 `102` 新签 verdict：
-
-| case | code present | registry listed | host-facing truth claim signed | consumer subset admitted | promise boundary declared | 更稳的读法 |
-|---|---|---|---|---|---|---|
-| `worker_status` 这类 host-facing status object | 可先是 `yes` | 可先是 `yes` | 只有 `102` 已锁定后才配写 `yes` | 常见是 `yes`，但只是一段 status width | 常见是 `yes`，但边界通常窄于 full transcript | 宿主消费的是 status subset，不是完整 runtime truth |
-| `status / usage / mode bar / summary` 这类 projection | 常见是 `yes` | 可能 `yes`，也可能只是 UI 装配 | 通常不该直接写 `yes` | 常见只配写 `projection / receipt-grade subset` | 若没有明确承诺边界，就不写 `yes` | 这类 surface 更接近 readback / projection，不该偷升成 host-facing signer |
-
-更硬一点说，这张矩阵最重要的不是对象名，而是 later maintainer 能不能一眼看出：`projection` 不等于 `signed claim`，`subset admitted` 也不等于 `full truth exported`。如果一页里的例子让你更想直接下 verdict，而不是先回 `102` 对齐 rung，那这个例子就还写得太像接口库存。
+`code present / registry listed` 这些证据格继续留在 `102` 的 ladder 里，不在 README 里再跑一遍。README 只消费已经锁定的 rung result，帮助 later maintainer 先分清：`projection` 不等于 `signed claim`，`subset admitted` 也不等于 `full truth exported`。
 
 如果一页开始替 `philosophy/` 重判必要性，替 `architecture/` 重新发明对象链，或替 `playbooks/` 直接下 verdict，它就已经越权。
 若争议已经变成“这个 owner 页是否越位、目录契约是否失真”，回 [../meta/README.md](../meta/README.md)；那已不是 host-facing truth 本身。
 
 更稳一点说，shared first-answer order 仍属于上游 frontdoor；`api/` 只在 `guides/102` 已先把问题 typing 成 `host-facing truth claim-state / consumer subset` 后才入场。若还要先判这是 Prompt、治理还是 current-truth exposure family，说明本页开早了，API README 也会退回接口库存。
-再硬一点说，`api/` 不是 `102` 的快捷方式：它不负责把 `code present -> registry listed -> host-facing truth claim signed -> consumer subset admitted` 这条链再跑一遍；它只消费已经锁定的 rung result，并把宿主承认边界写清。
+再硬一点说，`api/` 不是 `102` 的快捷方式：它不负责把 ladder 再跑一遍，只负责消费已经锁定的 rung result，并把宿主承认边界写清。
 operator artifact 若问的是“宿主当前到底被正式允许消费什么、边界宽到哪里、有没有 promise boundary”，才进入 `api/`；若问题其实是“它能不能写现在、哪里 first no、哪里先退回”，统一回 `architecture/`。若两边都还没锁定，先回 `102`。
 
 如果一个 API 判断还压不回这三条，它就还停在接口库存层。
