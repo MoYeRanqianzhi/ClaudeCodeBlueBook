@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-architecture84-worked-pattern-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `architecture/84` worked-pattern 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `architecture84-must-turn-atlas-into-object-level-worked-pattern-apr14 live` 记忆：
+  - `bluebook/architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md` 现在也应继续写死：current-truth atlas 不该只停在 `object / writer / forbidden substitute` 这种对象名录，而要显式给出 `writeback seam / local veto cue / first retreat layer`
+  - 更稳的默认写法是：对象层 worked pattern 先让 later maintainer 一眼看到谁写现在、谁在冒充 writer、第一声 no 落在哪、先退回哪一层；若还需要自己把 atlas 翻译成 landing card，这页就还没有真正完成 object handoff
 - 当前批次继续新增一条 `root-sync-healthy-for-prompt-why-boundary-batch-apr14 live` 记忆：
   - 2026-04-14 本轮进入 `philosophy/84 + 06` prompt-why-boundary 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面

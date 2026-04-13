@@ -2,6 +2,10 @@
 
 ## 2026-04-14
 
+- 继续更新 `bluebook/architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 object-pattern 协议：`architecture/84` 现在把 current-truth atlas 继续压成 worked pattern，在 object row 里显式给出 `writeback seam / local veto cue / first retreat layer`，不再让 later maintainer 自己从 atlas 反推对象级 reject path。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `architecture/84` worked-pattern 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
 - 继续更新 `bluebook/{philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 prompt-why-boundary 协议：`84` 现在把 component-level 例子收回成同一条 `主权单调律`，不再在 why owner 里铺开 component inventory；`06` 则把结尾从可独立传播的 doctrine 收回成纯 self-audit 退出条件。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `philosophy/84 + 06` prompt-why-boundary 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
