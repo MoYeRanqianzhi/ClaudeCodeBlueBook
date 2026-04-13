@@ -243,9 +243,40 @@
 
 - “permission race 的本地状态管理”
 
+## 第七层：稳定层、条件层与灰度层
+
+### 稳定可见
+
+- `claim()` 只关闭“谁还能改 verdict”的 race，不自动完成其他 closeout 层。
+- `cancelRequest(...)` 当前负责的是远端 stale prompt 撤场。
+- unsubscribe 当前退役的是本地 response subscription。
+- `pendingPermissionHandlers.delete(...)` 当前更像晚到 response 到场时的 arrival-side consume，不等于本地胜出时立刻出账。
+- leader queue recheck 当前关的是策略变化后的旧等待窗，不是 generic callback cleanup。
+
+### 条件公开
+
+- 某个 late response 最终会不会到场，仍取决于当前 transport timing 与 race path。
+- queue recheck 会不会真的改写某个挂起 ask 的命运，仍取决于当前 leader queue 中的等待项与本地 permission context 是否变化。
+- remote / inbox 路径会不会参与同一层重判，仍取决于当前 host / ownership route，而不是这页已经稳定暴露的 closeout 合同。
+
+### 内部/灰度层
+
+- `claim()`、`cancelRequest(...)`、unsubscribe、`pendingPermissionHandlers.delete(...)`、leader queue recheck 的 exact 执行顺序
+- late response consume 的具体 wiring 与 race window
+- 本地 / 远端宿主路径上的 helper 调度细节
+
+所以这页最稳的结论必须停在：
+
+- permission race 在 verdict 之后至少还有多层 closeout contract
+- `claim()`、prompt 撤场、订阅退役、响应消费与策略重判不是同一种动作
+
+而不能滑到：
+
+- 本地一旦赢了 verdict，其他 cleanup 就算自动做完
+
 ## 结论
 
-更稳的一句应该是：
+所以这页能安全落下的结论应停在：
 
 - `claim()` 只关闭“谁还能改 verdict”的 race
 - `cancelRequest(...)` 关闭的是远端 stale prompt
