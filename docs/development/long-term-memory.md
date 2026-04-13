@@ -13,6 +13,21 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-guides30-54-residual-cleanup-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `guides/30 + philosophy/54` residual-cleanup 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 `live premise`；更早的同日阻塞记录只保留为历史截面，不反过来支配本批次判断
+- 当前批次继续新增一条 `guides30-should-route-verdict-and-record-ownership-back-to-84-and-77-apr14 live` 记忆：
+  - `bluebook/guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md` 现在也应继续写死：本页只保留苏格拉底式审读 gate 与 first-principles 追问，不再自己发布 `effect-ceiling` 本地 verdict、drift typing 或第二张 `record card`
+  - 更稳的默认写法是：`84` 固定 `pass / provisional / reject`，`81` 固定 witness/object chain，`77` 固定正式复盘字段；guide 只负责把 reader 送回正确归属链
+- 当前批次继续新增一条 `philosophy54-should-keep-review-grid-but-route-verdict-to-84-apr14 live` 记忆：
+  - `bluebook/philosophy/54-好的Prompt同时组织模型与人类接手路径.md` 现在也应继续写死：五格 review object 只说明 later consumer 先该问什么，不再自带“最小本地 verdict bridge”
+  - 更稳的默认写法是：`54` 只保留 review grid；正式 verdict box 统一回 `84`，builder-facing object chain 统一回 `81`
+- 当前批次继续新增一条 `api36-should-harden-shared-state-pendingaction-usage-order-apr14 live` 记忆：
+  - 并行 Agent 对 `api/32 / 52 / 53 / 36` 的交叉扫描表明，当前安全 / 省 token 线的最高价值 residual 已转向 `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md`：共享骨架仍未把 `state -> pending_action -> usage/window` 写成单一路径
+  - 更稳的默认写法是：shared evidence matrix 先锁 current truth，再消费 ask / pending_action，最后才读 usage / window；缺前置面就不得算 `decision window / recovery / budget continuation`
+- 当前批次继续新增一条 `api47-should-close-services-tools-split-and-finish-46-softening-apr14 live` 记忆：
+  - 并行 Agent 对 `api/46 / 47 / 30 / 02 / navigation/35` 的交叉扫描表明，当前目录结构线的最高价值 residual 已转向 `bluebook/api/47-tools 二级目录地图：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md`：`tools` 侧仍未对称写回 `services/tools` 的 definition plane / runtime plane 分离，而 `api/46` 的降强也还没有穿透到导航与入口文案
+  - 更稳的默认写法是：当 atlas / locator 页已经自降 speaking right，兄弟页与导航页也必须同步降强；`tools` 侧要显式回指 `services/tools` runtime seam，而不是把 definition 与 orchestration 再压成同一平面
 - 当前批次继续新增一条 `root-preflight-blocked-for-api46-atlas-locator-batch-apr13 live` 记忆：
   - 2026-04-13 本轮进入 `api/46` atlas-locator 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败，报错 `Merging is not possible because you have unmerged files.`
   - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作；正文、记忆与提交继续只落在 `.worktrees/mainloop`

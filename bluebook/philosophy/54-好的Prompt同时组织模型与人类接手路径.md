@@ -111,7 +111,7 @@ Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，
 | `delta scope` | 旧判断被整包拖回候选集 | 只重开新增 `decision delta` 真正触及的局部问题 |
 
 这五格不是第二条 Prompt ABI；它只是在本页局部消费 `84` 的 owner law 与 `81` 的 witness chain。只要前面三格里任一格仍停在 carrier 体感，人类接手就还不算 lawful consumer 接手，而只是更顺手地阅读了旧叙事。
-如果只想在本页保留一条最小本地 verdict bridge，也只记这一句：`carrier-only` 先落 `provisional`，`carrier 越权代签 continue qualification` 直接落 `reject`；只有 `witness rebind` 完成后，same-world continuation 才配升回 `pass`。
+如果要把这五格正式落成 `pass / provisional / reject`，直接回 `84` 的 verdict box；若还需要 builder-facing witness/object chain，再去 `81`。本页只保留接手者最先该问的 review grid，不再重发本地 verdict bridge。
 
 ## 5. 一句话总结
 

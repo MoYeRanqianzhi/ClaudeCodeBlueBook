@@ -126,7 +126,7 @@
 - 输入：summary / sticky prompt / session memory / handoff prose / display transcript 等 carrier surface
 - 通过条件：这些 surface 只负责定位、提醒、展示或 receipt，不单独改判 `world-definition / boundary / continue qualification`
 - reject signal：任一 carrier 在无 witness rebind 的前提下开始替 later consumer 代签 same-world continuation
-- 失败动作：先记成 `effect-ceiling breach`，本地 verdict 至少落 `provisional`；若 carrier 已实际代签 continue 资格，则直接升格成 `reject`
+- 失败动作：先停止继续，并回 `../philosophy/84` 复核同一条 `pass / provisional / reject` verdict box；若已需要正式写下 `reject_reason / rollback_object`，再交给 `../playbooks/77` 记录，不在本页另发本地 verdict
 
 ### 3.4 Gate-4：`same-world witness` 是否可点名
 
@@ -222,36 +222,16 @@
 
 当这组问题里有任何一个答不清时，优先做下面四步，而不是继续微调 prompt 文案：
 
-1. 先在本页把问题 typing 成 `lineage / consumer / boundary / forgetting / continuation` 哪一类 drift，而不是先跳页找答案。
-2. 若 drift 落在 canonical witness chain，回 `../philosophy/81`；若 drift 落在 request assembly / object seam，再只选一个 `../architecture/82` 或 `../guides/99` 继续下钻。
-3. 若怀疑自己已经把 witness 偷换成更会解释的替身，再回 `../casebooks/73` 做反例核对。
-4. 只有 drift 类型与 owner page 都锁定后，才回 `../playbooks/77` 把它写成正式 verification 字段、reject 条件与 rollback object。
+1. 先只问：断点更像是 `84` 的 same-world owner law、`81` 的 witness chain，还是 `73` 的反例核对；不要先在本页发布正式 drift 类型。
+2. 若 later consumer 已经需要重谈 `work object / excluded branches / continue qualification`，先回 `../philosophy/84`；若 why 已成立但 `message lineage / protocol transcript / continuation object` 还点不清，再回 `../philosophy/81`。
+3. 若怀疑自己已经把 witness 偷换成更会解释的替身，再回 `../casebooks/73` 做反例核对；若真正卡在 request assembly / object seam，再只选一个 `../architecture/82` 或 `../guides/99` 继续下钻。
+4. 只有归属页已经锁定后，才回 `../playbooks/77` 把 `symptom / reject_reason / rollback_object` 写成正式 verification 字段。
 
-## 6. 审读记录卡
+## 6. 正式记录只回 playbook
 
-```text
-审读对象:
-compiled request truth:
-message lineage ref:
-carrier surface inventory:
-effect ceiling 是否守住:
-lineage kernel 是否完整:
-当前主语:
-projection consumer matrix 是否对齐:
-same-world witness 是否完整:
-共享前缀生产者:
-section 宪法是否明确:
-dynamic boundary 是否稳定:
-continuation object 最小对象是否完整:
-invalidation 触发器是否明确:
-continuation qualification 是否可点名:
-本地 verdict:
-lawful forgetting ABI 是否成立:
-当前最像哪类失效:
-- effect-ceiling breach / carrier-only provisional / lineage-kernel shadow / section drift / boundary drift / projection-consumer split / transcript conflation / continuation-story-only / continuation-unqualified / lawful-forgetting failure / invalidation drift
-下一步该重写的是:
-- 主语 / effect ceiling / lineage kernel / 前缀 / 边界 / consumer matrix / continuation object / 恢复
-```
+- 本页只保留审读问题，不再维护第二张 `record card`。
+- 真正需要留痕时，统一回 `../playbooks/77` 的最少字段：`message_lineage_ref / protocol_transcript_health / continuation_object_ref / continuation_qualification_ref / reject_reason / rollback_object`。
+- 若 verdict 还拿不稳，先回 `../philosophy/84`；若 witness/object chain 还点不清，先回 `../philosophy/81`。
 
 ## 7. 苏格拉底式检查清单
 

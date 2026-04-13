@@ -1,5 +1,15 @@
 # 研究日志
 
+## 2026-04-14 本轮增量
+
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `guides/30 + philosophy/54` residual-cleanup 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 live premise；更早的同日阻塞记录只保留为历史截面，不反过来支配本批次正文。
+
+- 本轮新的 `guides/30 + philosophy/54` ownership-cleanup 结论：我只对 `bluebook/{guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md,philosophy/54-好的Prompt同时组织模型与人类接手路径.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`30` 现在把 `effect ceiling` 的失败动作收回成“回 `84` 复核 verdict box、回 `77` 写正式字段”，不再在 guide 本页自带本地 verdict、drift typing 与第二张 record card；`54` 则保留五格 review object，但把正式 `pass / provisional / reject` 完全路由回 `84`。当前判断是，这一步能把 Prompt 魔力线继续压回单一 speaking-right 链：`84` 固定 why 与 verdict，`81` 固定 witness/object chain，`77` 固定复盘字段，guide/philosophy 页不再局部长出第二控制面。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一页已经有足够多的 gate 与 review 问题后，更稳的默认追问不该是“还能不能再补一个本地标签、表格或记录卡”，而应先问“这页是在帮助 later consumer 找到归属链，还是已经开始替归属链重新发 verdict / 发字段 / 发对象名”；如果答案是后者，就说明它正在长成 second control plane。当前判断是，这个问法能继续把 Prompt 设计内涵从“写得更全”拉回“谁配说哪句话”的 first-principles discipline。
+
+- 本轮新的并行 Agent 扫描结论：Galileo 的只读比对证明，`guides/30` 与 `54` 的最高价值 residual 正是 `effect-ceiling` verdict、drift typing 与 record-card speaking right 外溢；Rawls 的交叉扫描则表明，安全 / 省 token 线当前最高价值 residual 已转向 `api/36` 的 shared evidence matrix，因为它仍未把 `state -> pending_action -> usage/window` 固化成单一路径；Anscombe 的交叉扫描则表明，目录结构线当前最高价值 residual 已转向 `api/47`，因为 `tools` 侧仍未对称写回 `services/tools` 的 definition/runtime 分离，而 `api/46` 的降强也尚未穿透到导航与入口文案。当前判断是，Prompt 线这一轮收完以后，下一批最值钱的切口应优先在 `api/36` 与 `api/47` 之间二选一。
+
 ## 2026-04-13 本轮增量
 
 - 本轮新的根仓预检失败结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-13 进入 `api/46` atlas-locator 批次前再次执行了 `git fetch origin main` 与 `git merge --ff-only origin/main`；fetch 成功，但 merge 因根仓存在未解决冲突失败，错误为 `Merging is not possible because you have unmerged files.`。当前判断是，这次失败只应作为 root preflight 的外部事实记录，不触发任何根仓收敛动作；正文继续严格只在 `.worktrees/mainloop` 内推进与提交。
