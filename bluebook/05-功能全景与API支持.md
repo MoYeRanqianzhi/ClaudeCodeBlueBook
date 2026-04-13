@@ -13,11 +13,11 @@
 这一章虽然在列能力面，但更稳的读法不是把它当“功能总清单”，而是先带着三句 bridge judgment 来读：
 
 1. Prompt 线
-   - 这些接口最终在帮助 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 的哪一段合法进入模型
+   - 这些接口最终在帮助 later consumer 于 `verify / delegate / tool choice / resume / handoff` 时继续消费同一份 `compiled request truth`，而不是在 `resume / handoff / compaction` 后重判继续资格、把已排除路径重新拉回候选集
 2. 治理线
-   - 这些接口最终在决定什么扩张配进入当前世界；`Context Usage` 不是功能前门答案，而是 `decision window` 投影
+   - 这些接口最终在决定什么扩张配进入当前世界，以及继续前有没有补齐 `repricing proof / lease checkpoint / cleanup`；`Context Usage` 不是功能前门答案，而是 `decision window` 投影
 3. 源码质量线
-   - 这些接口是主路径能力、consumer subset、hotspot kernel 入口，还是仍只配停在 mirror gap discipline 层
+   - 这些接口是主路径能力、consumer subset、hotspot kernel 入口，还是仍只配停在 mirror gap discipline 层；若继续追源码质量，还要先问复杂度是否落在合法中心、现在是否仍只有一个可写现在、later maintainer 是否仍保有正式 veto
 
 如果不先带着这三句判断，本章就很容易重新退回：
 
@@ -56,8 +56,8 @@
 这一章的前门首答不再是“有多少接口层”，而是先回答三件事：
 
 1. 这组入口是否仍在同一个 `compiled request truth` 内
-2. 它当前是否通过 `decision window`，进入 `current admission`
-3. 它是否已经从实现事实上升为可对外承诺的 `product promise`
+2. 它当前是否通过 `decision window`，并在继续前补齐 `repricing proof / lease checkpoint / cleanup`，进入 `current admission`
+3. 它是否已经从实现事实上升为可对外承诺的 `product promise`，且仍不逼 later consumer 重判继续资格，也不破坏 `one writable present`
 
 只有这三问先稳定，接口 taxonomy 才有阅读价值。为避免“接口表面”抢占首答权，本章把接口面降格为四组索引：
 
@@ -71,6 +71,7 @@
 治理线里还要额外补一句：
 
 - `Context Usage`、mode 条、token 百分比与 dashboard 投影都不是功能前门答案；它们只能在 `decision window / current admission / product promise` 已经分清后，作为宿主消费投影继续出现
+- `Context Usage`、mode 条、token 百分比、dashboard 投影与 host replay 也不是治理说话面；若不能新增 `repricing / deny / cleanup` 决策增益，就只配当 `weak readback / tail evidence`，不配回判 `current admission`
 
 因此下面的长表只负责给出代表入口与对象 truth，不再抢答“是否支持到哪一层”。更细的矩阵与对象总表，统一回到 `08`、`api/23`、`api/24` 与 `api/30`。
 
