@@ -150,6 +150,7 @@
 - [393-2026-04-13-remote-surface stable-gray hardening 拆分记忆.md](./393-2026-04-13-remote-surface%20stable-gray%20hardening%20拆分记忆.md)
 - [394-2026-04-13-shell-memory pair subfamily hub uplift 拆分记忆.md](./394-2026-04-13-shell-memory%20pair%20subfamily%20hub%20uplift%20拆分记忆.md)
 - [395-2026-04-13-surface-shell subfamily hub uplift 拆分记忆.md](./395-2026-04-13-surface-shell%20subfamily%20hub%20uplift%20拆分记忆.md)
+- [396-2026-04-13-dual-trunk stable-gray hardening 拆分记忆.md](./396-2026-04-13-dual-trunk%20stable-gray%20hardening%20拆分记忆.md)
 
 ## 全量档案
 

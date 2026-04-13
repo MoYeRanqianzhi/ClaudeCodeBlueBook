@@ -276,24 +276,34 @@
 
 - 126 的继续页
 
-## 第七层：双主干最该保护的稳定主干
+## 第七层：稳定层与灰度层
 
-| 区段 | 稳定主干 |
-| --- | --- |
-| 122 / 123 / 124 | warning、reconnect action、reconnecting、disconnected 不是同一状态；`viewerOnly` 是 non-owning interactive client；absence 不等于 opposite；bridge 与 remote session 不是同一 signer family |
-| 125 / 126 / 127 | `handleClose(...)` 是 transport authority path；`scheduleReconnect(...)`、`reconnect()`、`onClose` / `onReconnecting` 不等于同一状态；terminality 至少分三桶；compaction 至少分五类信号 |
+### 稳定可见
+
+- `122 / 123 / 124` 当前稳定回答的是 recovery edge、ownership 与 signer family 不是同一层
+- warning、reconnect action、reconnecting、disconnected 当前不能被压成同一状态词
+- `viewerOnly` 当前稳定回答的是 non-owning interactive client，而不是 attached owner 的弱版本
+- `125 / 126 / 127` 当前稳定回答的是 transport authority path、terminality bucket 与 compaction signal 也不是同一张表
+- `handleClose(...)` 当前更像 transport authority path；`scheduleReconnect(...)`、`reconnect()`、`onClose` / `onReconnecting` 不是同一状态腿
+- `4001` 在当前 remote-session 栈里只该读作 stale-window exception，不等于所有 transport 的统一协议真义
 
 这里最该保住的一句是：
 
 - recovery edge、ownership、signer、transport authority、terminality、compaction 不是一张表
 
-## 第八层：哪些点必须降级为条件或灰度实现证据
+### 条件公开
 
-| 区段 | 条件 / 灰度证据 |
-| --- | --- |
-| 122 / 123 / 124 | `60s / 180s` timeout、`500ms` force reconnect、brief 行挂载条件、`remote` pill 的 presence 条件、`KAIROS`、warning 是否出现，都不该抬成稳定合同 |
-| 125 / 126 / 127 | `MAX_RECONNECT_ATTEMPTS`、`MAX_SESSION_NOT_FOUND_RETRIES`、`RECONNECT_DELAY_MS`、keep-alive cadence、`compact_boundary.preserved_segment` 都是当前实现证据 |
-| 跨区段 | `4001` 只在当前 remote-session 栈里被当 stale-window exception；别的 transport 可以把同一 code 当 permanent close |
+- `60s / 180s` timeout、`500ms` force reconnect 与 brief 行挂载条件，都仍受宿主和当前 transport path 约束
+- `remote` pill 的 presence 条件、warning 是否出现、`KAIROS` 的参与方式，仍是条件化投影，不是普适 signer 合同
+- terminality 三桶怎样显影、compaction 五类信号怎样进入不同 surface，仍取决于具体 host / hook / transport route
+- `4001` 被谁当成 stale-window exception、谁直接当 permanent close，仍取决于当前 remote-session 栈与 transport 族别
+
+### 内部/灰度层
+
+- `MAX_RECONNECT_ATTEMPTS`、`MAX_SESSION_NOT_FOUND_RETRIES`、`RECONNECT_DELAY_MS`
+- keep-alive cadence 与 reconnect scheduler 的具体节奏
+- `compact_boundary.preserved_segment` 与 rewrite completion 的内部 bookkeeping
+- warning / timeout / reconnect 的具体 hook 顺序与显示层投影细节
 
 更稳的写法应先写：
 
@@ -304,7 +314,7 @@
 
 再用常量、gate、当前 hook 顺序举证。
 
-## 第九层：苏格拉底式自审
+## 第八层：苏格拉底式自审
 
 每次继续深挖 122-127，先追问自己：
 
@@ -324,7 +334,7 @@
 
 而应该先回到这张结构页重找主语。
 
-## 第十层：阅读建议
+## 第九层：阅读建议
 
 如果你现在的问题是：
 
