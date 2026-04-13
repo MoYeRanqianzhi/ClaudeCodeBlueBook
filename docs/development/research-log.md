@@ -7859,3 +7859,5 @@
 - 这一刀的第一性原理也很窄：在 evidence mode 不满足时，host-facing protocol 页也不能偷拿 object truth 的 certainty。只要 `api/53` 这种页还把 archival anchors 写成 live evidence，later maintainer 就会把 claim-state ceiling 错学成对象层已核实事实。
 - `2026-04-13` 当前又起了第十个窄批次，只动 `philosophy/54` 与 `playbooks/09` 的 Prompt 体验叙事前门。修改后，这两页不再把价值写成“人类更容易接手 / handoff continuity 更好”，而是明确 later consumer 不必重判世界、重搜动作空间，也不必把已排除分支重新拉回候选集。
 - 这一刀的第一性原理同样很窄：Prompt rollout 和 Prompt why 页都不能把“接手更顺”当前门，因为那会把合法继承退回体验叙事。只要 state / summary / handoff 还被写成被继承的本体，而不是继续资格的载体，later-consumer rights 就会再次退回 secondary effect。
+- `2026-04-13` 当前又起了第十一个窄批次，只动 `userbook/05-控制面深挖/README.md`。这批继续做 route-only 减法：把本地复述的 `weak readback / continuation consumer / reopen tail evidence / authority lease` 解释压回分流句，只保留“回 `10` 判 repricing / cleanup、回相邻 `03` 看 continuation consumer、回 `risk/README` 看 cleanup 后读回”的最小路由。
+- 这一刀的第一性原理也很窄：section README 只能回答“你现在该退回哪层”，不该重复 owner 页已经稳定下来的解释。只要 README 还在本地重讲 lease、readback 与 reopen taxonomy，它就仍会偷拿治理与风险页的发言权。
