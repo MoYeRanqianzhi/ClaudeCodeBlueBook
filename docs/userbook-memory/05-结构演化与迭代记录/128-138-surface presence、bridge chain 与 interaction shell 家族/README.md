@@ -26,6 +26,15 @@
 
 这里应该先于平铺编号列表阅读。
 
+如果你是从 `122-149` hub 往下继续收窄，
+
+默认也应在这里完成下一次分流：
+
+- `128-132`
+- `133-138`
+
+而不是再回根索引或上游 hub 重找更深入口。
+
 ## 第一性原理
 
 这组记忆真正想回答的不是：
@@ -79,6 +88,14 @@
 - [../138-2026-04-07-activeRemote interaction shell split 拆分记忆.md](../138-2026-04-07-activeRemote%20interaction%20shell%20split%20拆分记忆.md)
 - [../380-2026-04-13-schema-store bridge-shell branch-map scope clarification 拆分记忆.md](../380-2026-04-13-schema-store%20bridge-shell%20branch-map%20scope%20clarification%20拆分记忆.md)
 
+如果你已经确认自己不只是看 `215` 这一张结构页，
+
+而是要在这一簇内部继续按更窄的 schema-store / bridge-shell 子家族浏览，
+
+直接进：
+
+- [../133-138-schema-store、bridge chain 与 interaction shell 家族/README.md](../133-138-schema-store、bridge%20chain%20与%20interaction%20shell%20家族/README.md)
+
 ### 3. 我想继续看这条线怎样向 remote truth 送出后继
 
 先看：
@@ -98,4 +115,5 @@
 - 保护的是 `128-138` 这簇记忆的子家族入口，不是新的编号总图。
 - 保护的是 `214 -> 215 -> 204` 的接力关系。
 - 不把 `128-132` 与 `133-138` 误写成两份互不相干的旧批次。
+- 不让上游 `122-149` hub 或根索引继续代替这里完成 `128-138 -> 133-138` 的下一次 handoff。
 - 不在这一轮移动或重命名任何现有记忆文件。
