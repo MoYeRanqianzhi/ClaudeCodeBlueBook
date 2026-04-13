@@ -5,7 +5,7 @@
 
 还要先记一句：
 
-- `api/` 不是接口清单层，而是真相暴露层；更稳的读法不是先按编号扫平面，而是先问哪些 contract 被外化、哪些 registry 在列出对象、哪个 `current-truth surface` 在宣布现在、宿主自己只是哪个 `consumer subset`，以及哪些热点只能在 `hotspot kernel / mirror gap discipline` 的约束下被消费。
+- `api/` 不是接口清单层，而是真相暴露层；更稳的读法不是先按编号扫平面，而是先问哪些 contract 被外化、哪些 registry 在列出对象、哪些公开证据已经足够支持 `current-truth claim state`、哪些对象在公开镜像里还只配停在 `provisional claim`，宿主自己只是哪个 `consumer subset`，以及哪些热点只能在 `hotspot kernel / mirror gap discipline` 的约束下被消费。
 
 如果把 API 前门继续压成最短公式，也只剩三条：
 
@@ -13,8 +13,8 @@
    - 宿主到底承认了哪一段请求编译链
 2. `governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
    - 宿主到底承认了哪一条治理外化真相
-3. `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
-   - 宿主到底在消费哪一层 truth、哪一层热点、哪一层镜像缺口
+3. `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline`
+   - 宿主到底在消费哪一层 truth、哪一层热点、哪一层镜像缺口；若问题升级成“谁在写现在”，统一回 current-truth owner 页
 
 这里也要先压住一个常见误读：`continuity` 不是第四类 API 平面；它只是 Prompt `Continuation`、治理 `continuation pricing` 与源码质量 `recovery non-sovereignty / anti-zombie` 在 host-facing truth 上的共同时间轴。
 
@@ -58,8 +58,8 @@
   - 失败信号：还在把 `systemPrompt`、UI transcript、最后一条消息或 display summary 当成宿主应消费的主语。
 - 如果你只先判断“治理真相怎样外化给宿主”，从 `28 -> 32 -> 52 -> 55` 进入。
   - 失败信号：还在把 `Context Usage` 当成本面板，把 mode 条、弹窗和 token 条当治理真相。
-- 如果你只先判断“结构工件、规则包与目录地图怎样回到 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 这条 canonical ladder”，从 `30 -> 39 -> 42 -> 46-50` 进入。
-  - 失败信号：还在把目录图、恢复成功率、bridge 指针或作者说明当成 `current-truth surface`。
+- 如果你只先判断“结构工件、规则包与目录地图怎样回到 `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline` 这条 canonical ladder”，从 `30 -> 39 -> 42 -> 46-50` 进入。
+  - 失败信号：还在把目录图、恢复成功率、bridge 指针或作者说明当成已 promotion 的 `current-truth claim state`。
 
 ## 离场条件
 

@@ -10,7 +10,7 @@
 
 ## 0. 第一性原理
 
-结构线真正成熟的 artifact contract，不是四类角色各自维护结构图、恢复日志和交接说明，而是四类工件共享同一条源码真相链：
+结构线真正成熟的 artifact contract，不是四类角色各自维护结构图、恢复日志和交接说明，而是四类工件至少共享一组可公开复核的源码锚点，供读者判断它们是否在指向同一条源码真相链：
 
 1. `contract`
 2. `registry`
@@ -60,7 +60,7 @@ artifact_header:
 
 而是：
 
-- 让四类工件都从同一条源码真相链起手
+- 把当前公开可见的 `contract -> registry -> current-truth surface` 见证压成共同起手字段，供四类工件共享复核
 
 ## 2. 四类工件的最小投影
 
@@ -160,7 +160,7 @@ artifact_header:
 
 - 现在谁有权写现在
 
-如果工件围绕的不是 `current-truth surface`：
+如果工件围绕的不是足以复核到 `current-truth surface` 的公开见证：
 
 1. 宿主卡会退回目录图。
 2. CI 附件会退回恢复结果面。
@@ -198,4 +198,4 @@ artifact_header:
 
 ## 7. 一句话总结
 
-结构 Host Artifact Contract 真正统一的，不是四类工件的展示格式，而是它们都必须从 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 这条源码真相链起手，再把旧结构名词降回局部见证。
+结构 Host Artifact Contract 真正统一的，不是四类工件的展示格式，而是它们都必须从 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 这条源码真相链的公开见证起手，再把旧结构名词降回局部见证。

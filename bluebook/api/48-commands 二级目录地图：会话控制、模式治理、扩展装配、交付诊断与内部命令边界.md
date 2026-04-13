@@ -62,8 +62,8 @@
   - `resume`、`compact`、`session`、`context`
 - `registry`：
   - `INTERNAL_ONLY_COMMANDS`、`COMMANDS()`、runtime command assembly
-- `current-truth surface`：
-  - 当前 live session / context / resume command surface
+- `当前准入命令面`：
+  - 当前被装进公开命令面的 session / context / resume 命令子集
 - `consumer subset`：
   - 交互式与非交互式路径、不同 host shell 只拿部分控制投影
 - `hotspot kernel`：
@@ -77,8 +77,8 @@
   - `permissions`、`plan`、`model`、`config`、`hooks`
 - `registry`：
   - command gating、mode assembly、user-type/build registration
-- `current-truth surface`：
-  - 当前 live governance command surface
+- `当前准入命令面`：
+  - 当前被准入的治理命令子集
 - `consumer subset`：
   - user type、mode 与 build 目标决定部分治理命令是否出现
 - `hotspot kernel`：
@@ -92,8 +92,8 @@
   - `mcp`、`plugin`、`remote-env`、`bridge`
 - `registry`：
   - runtime command assembly、service bridge registration
-- `current-truth surface`：
-  - 当前 live connection / plugin control surface
+- `当前准入命令面`：
+  - 当前被准入的 connection / plugin 控制命令子集
 - `consumer subset`：
   - desktop、mobile、IDE、安装器与 wrapper 更多只是控制壳层
 - `hotspot kernel`：
@@ -107,8 +107,8 @@
   - `review`、`security-review`、`doctor`、`cost / stats / usage`
 - `registry`：
   - review/diagnostic command registration、runtime assembly
-- `current-truth surface`：
-  - 当前 live diagnostic / review command surface
+- `当前准入命令面`：
+  - 当前被准入的 diagnostic / review 命令子集
 - `consumer subset`：
   - 成本、统计、诊断大多是消费者可见投影，不是 budget / review authority 本身
 - `hotspot kernel`：
@@ -122,8 +122,8 @@
   - `agents`、`tasks`、`btw`、`brief.ts`
 - `registry`：
   - workflow / task / agent command registration
-- `current-truth surface`：
-  - 当前 live collaboration command surface
+- `当前准入命令面`：
+  - 当前被装进公开命令面的 collaboration 命令子集
 - `consumer subset`：
   - branch / tag / files / passes 只覆盖协作工作流的某些外部控制动作
 - `hotspot kernel`：
@@ -139,8 +139,8 @@
   - `INTERNAL_ONLY_COMMANDS`
 - `registry`：
   - build elimination、feature gate、user-type-gated command registration
-- `current-truth surface`：
-  - 当前真正已公开的 command surface
+- `当前准入命令面`：
+  - 当前真正对外公开的命令子集
 - `consumer subset`：
   - feature-gated、user-type-gated、external build eliminated 都只是特殊命令子集
 - `hotspot kernel`：
@@ -173,4 +173,4 @@
 
 ## 11. 一句话总结
 
-这页真正值钱的，不是把 `commands/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：哪些显式控制动作沿 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 被公开承诺、被裁切或被拒收。
+这页真正值钱的，不是把 `commands/` 二级目录再排成一张更细的地图，而是把 later maintainer 拉回：哪些显式控制动作沿 `contract -> registry -> 当前准入命令面 -> consumer subset -> hotspot kernel -> mirror gap discipline` 被公开承诺、被裁切或被拒收。

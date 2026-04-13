@@ -9,7 +9,7 @@
 
 ## 1. 先说结论
 
-Claude Code 的 prompt 本质上是一套分层契约：
+Claude Code 的 prompt 本质上，不是把规则拆成四层而已，而是把 later consumer 原本要重做的世界重判、动作搜索与排除理由重写分配到不同稳定度的契约层里：
 
 1. 静态法：
    - 角色基本法、做任务原则、工具使用原则
@@ -20,7 +20,8 @@ Claude Code 的 prompt 本质上是一套分层契约：
 4. 现场法：
    - attachments、nested memory、mailbox、plan/auto mode
 
-也就是说，prompt 并不是一段文本，而是一组约束在不同稳定度上的投影。
+静态法、动态法、角色法与现场法之所以值钱，不是因为“分层”这个动作本身，而是因为它们共同服务同一套 `decision-retirement system`：稳定 law 不乱抖、动态事实晚绑定、角色边界不越权、现场对象可合法继承。
+也就是说，prompt 并不是一段文本，而是一组约束在不同稳定度上的分层投影。
 
 代表性证据：
 
@@ -119,4 +120,4 @@ Claude Code 则在增加结构：
 
 ## 7. 一句话总结
 
-Claude Code 的 prompt 之所以有力量，不是因为它更像咒语，而是因为它被组织成了一套分层契约。
+Claude Code 的 prompt 之所以有力量，不是因为它被分成几层，而是因为这些层一起保住 exclusion discipline、lawful inheritance 与 later-consumer rights，从而让世界重判不必在每轮重做。
