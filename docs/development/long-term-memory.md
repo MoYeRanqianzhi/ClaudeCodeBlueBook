@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-api13-transport-owner-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `api/13` transport-owner 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `api13-must-own-host-transport-seam-and-reject-order-apr14 live` 记忆：
+  - `bluebook/api/13-StructuredIO与RemoteIO宿主协议手册.md` 现在也应继续写死：这页不只是在列宿主协议子类型，而要明确自己就是 `host transport seam` owner page，并给出与 `36 / 55` 对齐的宿主接入顺序与 reject 顺序
+  - 更稳的默认写法是：先验 envelope 与 request correlation，再验 arbitration，再在同一条协议面上消费状态链 / ask 链 / usage；direct connect / remote session 这类窄面不配被误写成完整协议支持
 - 当前批次继续新增一条 `root-sync-healthy-for-architecture-readme-stamp-refine-batch-apr14 live` 记忆：
   - 2026-04-14 本轮进入 `architecture/README` stamp-refine 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面

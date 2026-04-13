@@ -2,6 +2,10 @@
 
 ## 2026-04-14
 
+- 继续更新 `bluebook/api/13-StructuredIO与RemoteIO宿主协议手册.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 transport-owner 协议：`api/13` 现在明确自任 `host transport seam` owner page，并新增与 `36 / 55` 对齐的宿主接入顺序与 reject 顺序，把 envelope、request correlation、arbitration、状态/usage 投影与 remote-only transport 增量写成单条协议顺序。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `api/13` transport-owner 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
 - 继续更新 `bluebook/architecture/README.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 source-quality stamp-refine 协议：`architecture/README` 现在把 owner handoff 补成 `evidence mode / rung / verdict / downgrade stamp / retreat`，并把 landing card 直接绑回 `87` 的 `合法复杂度中心 / one writable present / later-maintainer veto` 三条 why-proof。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `architecture/README` stamp-refine 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。

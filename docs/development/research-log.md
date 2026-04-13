@@ -2,6 +2,12 @@
 
 ## 2026-04-14 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `api/13` transport-owner 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `api/13` transport-owner 结论：我只对 `bluebook/api/13-StructuredIO与RemoteIO宿主协议手册.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`13` 现在把自己继续压成 `host transport seam` owner page，不再只是协议总览；它新增了与 `36 / 55` 对齐的宿主接入顺序与 reject 顺序，把 envelope、request correlation、arbitration、状态/usage 投影与 remote-only transport 增量写成单条宿主协议顺序。当前判断是，这一步能把 transport 问题继续从 `services/api` atlas 或 UI dashboard 猜测里拉出来，交还给 protocol owner。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当宿主协议已经有很多 subtype 时，更稳的默认追问不该是“schema 列得全不全”，而应先问“later consumer 现在到底是在消费哪一条正式 ask correlation / arbitration chain”；只要这条链还没锁住，状态链、usage 链与 decision window 都迟早会退回 dashboard 体感。当前判断是，这个问法能继续把安全 / 省 token / host integration 线从“控制 request 更丰富”拉回“谁配先定义 transport truth”的 first-principles discipline。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `architecture/README` stamp-refine 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
 
 - 本轮新的 `architecture/README` stamp-refine 结论：我只对 `bluebook/architecture/README.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`README` 现在把 owner handoff 继续压硬：最小 `evidence stamp` 显式补进 `downgrade stamp`，而 landing card 也直接说明自己分别承接 `87` 的 `合法复杂度中心 / one writable present / later-maintainer veto` 三条 why-proof。当前判断是，这一步能继续减少 later maintainer 在对象层 README 里自己脑补“现在到底是 provisional 还是 landed”的次数，也把源码质量 handoff 从对象索引继续压成 why-proof 对象化。
