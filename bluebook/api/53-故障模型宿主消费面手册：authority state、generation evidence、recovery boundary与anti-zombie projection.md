@@ -1,5 +1,10 @@
 # 故障模型宿主消费面手册：current-truth claim projection、authority-width candidate、freshness evidence、rollback boundary receipts 与 anti-zombie evidence
 
+> Evidence mode
+> - 当前 worktree 仍是 `mirror absent / public-evidence only`。
+> - 本页所有 `src/...` 路径都只按 archival anchors 读取，不单独构成 live runtime proof。
+> - 除非 `guides/102` 已先锁定 `promotion-passed` 结果，否则下面所有 host-facing noun 只按 `current-truth claim projection / host-facing truth candidate / internal-only candidate / rollback receipt candidate` 读取，不偷升格成已核实 ABI。
+
 这一章回答五个问题：
 
 1. Claude Code 当前到底通过哪些正式支持面让宿主消费结构故障模型的 `current-truth claim projection`、`per-host authority width` 候选与 `freshness evidence`。

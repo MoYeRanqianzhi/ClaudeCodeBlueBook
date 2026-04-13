@@ -1,5 +1,9 @@
 # 安全边界换届协议：为什么连续性一旦断裂，系统必须显式archive旧边界、重绑新边界并重置所有会话级账本
 
+> Evidence mode
+> - 当前 worktree 仍是 `mirror absent / public-evidence only`；本页继续消费既有归档源码锚点与前序研究结论，不把这里的源码行号冒充成本轮重新验证过的 live mirror。
+> - 更稳的默认口径是：先把 `continuation / succession / suspension / retirement` 当作 boundary lifecycle 的 typed reading，再决定什么只算 `reopen eligibility`，什么才真能构成 `reopen authority`。
+
 ## 1. 为什么在 `84` 之后还要继续写“边界换届协议”
 
 `84-安全失效边界复活禁令` 已经回答了：
@@ -71,6 +75,17 @@
    - result、archive、deregister、clear pointer 全部完成；旧边界不再拥有继续发言权。
 
 更硬一点说，成熟控制面不只要会“保持同一边界”，还要会在这四个 lifecycle state 之间合法切换，避免 suspension 冒充 continuation、succession 冒充自然延长、retirement 冒充可恢复挂起。
+
+如果继续把这四格和治理入口的 typed-state 一起读，最稳的最小交叉表也只先写成下面这样：
+
+| authority lease | decision delta | cleanup trigger state | 更稳的 lifecycle 读法 | `reopen eligibility` | `reopen authority` |
+|---|---|---|---|---|---|
+| `same` | `zero` | `fired` | `continuation checkpoint`：还是同一边界，但没有新增 delta | 可以有；例如 resume handle、pointer 或 transcript 仍能把你带回原现场 | 没有新增 authority；只是继续消费原租约，不是重签 |
+| `same` | `zero` | `owed / failed / unknown` | `suspension / freeze`：边界也许还活着，但收口条件未清 | 可以暂时存在，但只说明“有得回去看” | 不成立；先补 cleanup，再谈继续 |
+| `changed` | `new` | `fired` | `succession`：旧边界已处置，新边界正式上任 | 可以有，但它只指向新边界 | 只能来自新 signer chain，不能继承旧 receipt |
+| `changed / unknown` | `zero` | `fired` | `retirement`：旧边界已结束，没有合法续租 | 不应再写成 `yes`；最多只剩历史可读性 | 不成立；任何后续动作都要 fresh repricing / fresh authority |
+
+更硬一点说，这张表故意把 `reopen eligibility` 和 `reopen authority` 拆开，是为了防止 pointer、summary、resume handle 或 status green 这类 carrier 偷偷代签 continue truth。能重新找到入口，不等于仍有权沿旧边界继续写现在。
 
 ## 3. 源码已经说明：成熟控制面必须把“续接失败”升级成“正式换届”
 
@@ -304,6 +319,7 @@ Claude Code 实际上已经在源码里隐含地区分了四种制度状态：
 5. 旧 transport、旧 handshake、旧 timer 都必须被剥夺继续代表新边界的资格
 6. suspend 与 retire 必须严格区分，不能继续共用一种 teardown 语义
 7. 真正成熟的 reconnect 系统，本质上是 succession protocol，而不是网络补丁
+8. `reopen eligibility` 与 `reopen authority` 必须分开；resume handle、pointer freshness 与摘要存在最多证明前者，绝不自动证明后者
 
 ## 5. 苏格拉底式追问：这套系统还能怎样再向前推进
 
@@ -313,6 +329,12 @@ Claude Code 实际上已经在源码里隐含地区分了四种制度状态：
 1. 把 `continuation / succession / suspension / retirement` 做成显式 boundary lifecycle enum，而不只靠注释分辨
 2. 给 pointer、transport 与 session 统一增加 `epoch` / `boundary_generation`，把“谁已失效”从评论变成类型系统对象
 3. 给统一安全控制台增加一张 boundary lifecycle 卡片，明确显示当前到底是在续接、换届、挂起还是退役
+
+若再把自问压成更硬的三句，也只该剩：
+
+1. 如果现在只剩 pointer、summary 或 resume button，我拥有的是入口资格，还是继续写权。
+2. 如果 `decision delta = zero`，我是在 checkpoint 同一条 lease，还是在偷把旧 verdict 重新签一遍。
+3. 如果 cleanup 还 `owed / failed / unknown`，为什么我还敢把这个状态写成“已可 reopen”。
 
 所以这一章最终沉淀出的设计启示是：
 

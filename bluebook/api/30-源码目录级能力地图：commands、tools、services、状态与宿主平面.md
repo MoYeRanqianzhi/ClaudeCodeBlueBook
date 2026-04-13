@@ -1,5 +1,9 @@
 # 源码目录级能力地图：commands、tools、services、状态与宿主平面
 
+> Evidence mode
+> - 当前 worktree 若仍缺 `claude-code-source-code/` 镜像，本页所有 `src/...` 路径都只按 archival anchors 读取。
+> - 除非 `guides/102` 已先锁定 `promotion-passed` 结果，否则下面的命令、工具、服务、状态与宿主面都只按 `claim-state / provisional claim / consumer subset / gap note` 读取，不偷升成 live runtime certainty。
+
 这页不该被读成“目录级能力大全”。
 
 更稳的读法是先过两道入口纪律：

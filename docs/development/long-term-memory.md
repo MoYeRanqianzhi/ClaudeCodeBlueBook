@@ -7,7 +7,36 @@
 - 提炼 Agent 设计原则与设计哲学
 - 所有结论保持可追溯、可验证、可解释
 
+## Live Premise Discipline
+
+- 只有最近一次同日 root preflight 才算 `live premise`；更早的根仓同步记录默认只保留为历史截面，不再反过来支配当前批次判断。
+- 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
+
 ## 最新推进
+- 当前批次继续新增一条 security-frontdoor-needs-typed-state-action-bridge-apr13 live 记忆：
+  - `bluebook/security/README` 现在也应直接写死：安全前门不能只说 `signer / ledger / cleanup authority` 三类 ambiguity，还要继承 `10` 的最小 typed-state 动作桥，把 `authority lease / decision delta / cleanup trigger state` 直接压成 `reprice or suspend / do not reopen / suspend or reject / continue or reopen`
+  - 更稳的默认写法是：pointer、summary、resume button、status green 最多只证明 `reopen eligibility`，绝不单独证明 `reopen authority`
+- 当前批次继续新增一条 prompt-frontdoor-should-send-carrier-only-readers-to-worked-example-apr13 live 记忆：
+  - `bluebook/philosophy/84` 现在也应直接写死：当 reader 只拿着 `carrier-only` 包却还想判 `pass / reject` 时，下一跳不是补更多定义，而是去 `81` 看 `carrier-only / witness-rebind / pass / provisional / reject` 的 worked example；`84` 只固定 owner law，不重发 mechanism inventory
+  - 更稳的默认写法是：frontdoor 负责裁定 owner law 与 verdict box，worked example 统一交给 `81`
+- 当前批次继续新增一条 root-and-user-frontdoors-should-name-provisional-advancedness-and-zero-delta-efficiency-apr13 live 记忆：
+  - `bluebook/README` 与 `userbook/README` 现在也应直接写死：源码质量 advancedness 若还落不到 `why-proof + object landing`，就只配停在 `provisional`；治理效率也不是 fewer total asks，而是 fewer `zero-delta asks`
+  - 更稳的默认写法是：根入口只给 `provisional` ceiling，用户前门只把 compact / resume / approval 一类零增量动作翻成 `receipt-grade lease-checkpoint projection`
+- 当前批次继续新增一条 prompt-mechanism-pages-need-carrier-to-witness-worked-example-apr13 live 记忆：
+  - `bluebook/philosophy/81` 现在也应直接写死：Prompt 魔力不只要有 `carrier vs witness` 抽象表，还要给出 `carrier-only / witness-rebound / provisional` 的 worked example，把 `compact / resume / handoff` 的 `pass / reject` 规则落成 later maintainer 可直接复查的对象表
+  - 更稳的默认写法是：只要 later consumer 还得重答 `world-definition / tool-legality / next-action search`，或已排除分支被重新拉回候选集，就先判 `continue qualification` 失效，不继续包装成 same-world
+- 当前批次继续新增一条 source-quality-advancedness-must-separate-layout-praise-from-why-and-object-proof-apr13 live 记忆：
+  - `bluebook/philosophy/87` 现在也应直接写死：源码先进性至少要分成 `reject(layout praise) / provisional(why-proof only) / pass(why + object landing)` 三格；没有 why-proof 不配夸 advanced，有 why 但落不到 `hotspot kernel / writer claim state / first retreat layer` 也只配停在 provisional
+  - 更稳的默认写法是：later maintainer 若还答不出 `local veto cue / first retreat layer / one writable present`，就先把成熟度降格，不继续拿目录观感、文件大小或模块体感代签
+- 当前批次继续新增一条 philosophy-readme-and-06-must-mechanize-owner-vs-self-audit-boundary-apr13 live 记忆：
+  - `bluebook/philosophy/README` 与 `06` 现在也应直接写死：`84 / 85 / 86 / 87` 是 why owner，`06` 只做 self-audit，不补 why-proof、不补 `102` gate、不补 route；一旦问题重新长成“为什么必须这样设计”或“下一跳去哪”，就该离开 `06`
+  - 更稳的默认写法是：`philosophy/README` 给最小 owner matrix，`06` 给最小 speaking-right matrix，防止总控自校页和 why owner 页再次混写
+- 当前批次继续新增一条 lifecycle-crosswalk-must-separate-reopen-eligibility-and-authority-apr13 live 记忆：
+  - `bluebook/security/85` 现在也应直接写死：`authority lease / decision delta / cleanup trigger state` 不只服务治理入口，也要直接投到 `continuation / succession / suspension / retirement` 的 boundary lifecycle 交叉表里；`reopen eligibility` 与 `reopen authority` 必须分开，pointer、resume handle、summary 这类对象最多证明前者，不得自动证明后者
+  - 更稳的默认写法是：`same + zero + fired` 最多只配写成 `continuation checkpoint`，`changed + new + fired` 才配写成 `succession`；凡 `cleanup` 仍是 `owed / failed / unknown`，一律先按 `suspension / freeze` 处理，而不是先写可 reopen
+- 当前批次继续新增一条 memory-surfaces-must-be-demoted-to-context-artifacts-or-carriers-under-public-evidence-apr13 live 记忆：
+  - `bluebook/api/21` 与 `architecture/29` 现在也应直接写死：`CLAUDE.md / typed memory / session memory / relevant memories / attachments` 不该再被写成“五类同级正式 API”或“四层同级 canonical memory stack”，而要先拆成 `host-facing formal surfaces / context artifacts / runtime carriers / relevance projections`
+  - 更稳的默认写法是：`CLAUDE.md` 与 typed memory 先按 `context artifact` 读，session memory 先按 `continuation carrier` 读，nested/relevant memories 先按 `projection` 读；later consumer 只要还得重开 `world-definition / tool-legality / next-action search`，这层对象就还不配升成 witness
 - 当前批次继续新增一条 102-handoff-matrix-must-bind-owner-obligations-apr13 live 记忆：
   - `guides/102`、`architecture/84` 与 `api/README` 现在也应直接写死：handoff matrix 不只发目的地，还要约束 owner page 接手后的职责边界；接手后的 owner page 只能消费已锁定的 rung，不得重开 ladder、promotion 或 first-hop
   - 更稳的默认写法是：`102` 明说 `architecture` 只展开 object-level writer claim / writeback seam / anti-zombie，`api` 只展开 host-facing truth claim-state / consumer subset / promise boundary；`84` 与 `api/README` 则主动声明自己不再重做 sorter
@@ -1301,7 +1330,7 @@
   - `philosophy/76` 默认只做 atlas / projection 暴露，不再给源码质量线另写一套 rung
   - `navigation/README` 默认只做 route，不再在本页定义 `truth-plane order / public-evidence ceiling / continuity crosswalk`
   - `navigation/README` 默认不再把 `philosophy/76` 写进源码质量 canonical chain
-  - `guides/102` 默认只负责 canonical rung、降格规则与 change-risk record 模板，不再宣布 atlas 宿主选择与 handoff route
+  - `guides/102` 默认只负责 canonical rung、降格规则、change-risk record 与 handoff matrix；它先锁 rung 再分派 owner，但 owner page 只消费结果，不得把 handoff route 反写成第二张 gate
   - 这三页默认统一拒收 source-quality frontdoor 再次长回第二 authority
 - `bluebook/06`、`bluebook/userbook/05-控制面深挖/README` 与 `05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md` 的长期默认 user-facing-runtime-projection language 现已继续写死：
   - `bluebook/06` 默认继续把治理线最小顺序写成 `governance key -> truth-surface attestation -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
@@ -4780,3 +4809,16 @@
 - `2026-04-13` 治理前门的最新稳定纪律也应继续写死：`10` 现在适合保留 typed-state + verb ceiling 语法，至少同时区分 `authority lease = same/changed/unknown`、`decision delta = new/zero/unknown`、`cleanup trigger state = fired/owed/failed/unknown`，并明确 `receipt-grade projection` 只能说 drift/pressure/acknowledgement/aftermath，不能代签 repricing、continue、retry、reopen 或 cleanup truth。
 - `2026-04-13` continuity/control 面的最新稳定纪律也应继续写死：`/compact`、`/resume` 与 file checkpointing 都不自动重新授权；它们最多搬运、恢复或回滚状态，继续前仍必须重新过 `same authority lease / new decision delta / cleanup trigger state`。
 - `2026-04-13` 研究方法文件的最新 canonical vocabulary 也应继续写死：`public-evidence only` 现在只签 `contract / registry / current-truth claim state / provisional claim / consumer subset / gap note`，不再回退到 `current-truth surface candidate / unknown` 旧词。
+- `2026-04-13` source-quality deep pages 的最新稳定模板也应继续写死：`architecture/README` 现在应保留一正一反 object-level worked example，帮助 later maintainer 区分 `permission_mode` 这类 promotion-passed writer object 与 `CLAUDE.md / hooks / skills / permission schemas` 这类仍可能只是 `surface candidate` 的 operator artifact。
+- `2026-04-13` API deep map 的最新稳定模板也应继续写死：`api/30` 这类高流量 deep page 也应显式挂出 `mirror absent / public-evidence only` banner；只要 `guides/102` 还没先锁 `promotion-passed`，命令、工具、服务、状态与宿主面都默认只按 `claim-state / provisional claim / consumer subset / gap note` 读取。
+- `2026-04-13` Prompt worked-example 的最新稳定模板也应继续写死：`philosophy/21` 现在适合保留一个 `zero-delta revisit / new-delta revisit` 的最小对照，明确 `/btw / summary / handoff / side loop` 在没有新增 `decision delta` 且没有新 witness rebind 时，旧判断继续退役，不得把已排除分支重新拉回 candidate set。
+- `2026-04-13` host-facing fault-model 页的最新稳定模板也应继续写死：`api/53` 这类高流量 deep page 也应显式挂出 `mirror absent / public-evidence only` evidence stamp，并把 host-facing noun 继续压成 `current-truth claim projection / host-facing truth candidate / internal-only candidate / rollback receipt candidate`，避免 archival anchors 在 deep page 里被误读成 live ABI。
+- `2026-04-13` governance frontdoor bridge 的最新稳定纪律也应继续写死：`09` 现在也应显式挂出 `typed-state checkpoint law`，至少把 `authority lease = same/changed/unknown`、`decision delta = new/zero/unknown`、`cleanup trigger state = fired/owed/failed/unknown` 与 `receipt-grade projection` 的 verb ceiling 一起压在高流量总图页。
+- `2026-04-13` user-facing continuity bridge 的最新稳定纪律也应继续写死：`userbook/README` 与 `02-使用指南` 现在也应直接写明 `Compact / Resume / Memory / Rewind` 都不自动重新授权；它们最多搬运、恢复或回滚状态，不能替旧 `permission_mode / grants / visible set / decision window` 续租。
+- `2026-04-13` Prompt owner path 的最新可复查模板也应继续写死：`philosophy/84` 现在适合保留 `carrier-only vs witness-rebind` 的最小复核块，把 `message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict / delta_scope` 七格直接摊开，不再只靠 prose 说明。
+- `2026-04-13` Prompt builder-facing 命名桥也应继续写死：`guides/51` 现在应显式声明 `same-world compiler` 只是 builder-facing alias，canonical chain 仍只认 `message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`；`world-entry object / same-world request object / compiled request truth` 只保留为视角词或旧总称。
+- `2026-04-13` human-handoff why 页的最新稳定模板也应继续写死：`philosophy/54` 现在适合保留一个最小 lawful-consumer review object，至少同时检查 `projection kind / witness rebind / reject right / delta scope`，避免人类接手页继续只靠抽象 prose 维持发言权。
+- `2026-04-13` source-quality owner-boundary 的最新稳定模板也应继续写死：`api/23` 与 `api/29` 这类高流量 API 可见性页也应显式挂出 `evidence stamp`，并明确自己只消费 `102` 已锁定的 `host-facing truth claim-state / consumer subset / callability`，不重开 family、ladder 或 promotion。
+- `2026-04-13` `architecture/84` 的最新稳定模板也应继续写死：page-top 也应显式挂出 `public-evidence only / object-level claim / retreat to 102` 的 evidence stamp，标题里的 `current-truth surface` 只保留为兼容检索别名，正文 owner 语言仍先回 `writer claim state / provisional claim / promotion-passed object after 102`。
+- `2026-04-13` `architecture/59` 的最新稳定边界也应继续写死：本页只允许把 `consumer subset / status projection` 当成 bridge note 解释“对象为什么会被不同宿主读成不同宽度”，不在这里替 `api/` 重签 `host-facing truth claim-state / promise boundary`。
+- `2026-04-13` persistent memory 的最新读取纪律也应继续写死：`docs/development/long-term-memory.md` 里互相冲突的根仓库同步快照只按时间点档案读，不得反向充当当前 live premise；当前 live preflight 一律只看最近一条同日记录与本轮实际检查结果。

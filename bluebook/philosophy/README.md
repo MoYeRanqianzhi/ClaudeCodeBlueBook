@@ -3,6 +3,16 @@
 `philosophy/` 只回答三件事：世界如何合法进入模型，扩张为什么必须先被定价，过去为什么不得越权写回现在。这里不预排 first-hop，只保留 why 判据；若你缺的是证据 ceiling、对象摘要或执行 next hop，回对应归属页，不在这里补 route。更硬一点说，`philosophy/` 真正回答的是：Claude Code 分别替 later consumer 退休了哪些世界重判、扩张重判与当前真相重判。
 其中 `86` 只回答“为什么过去不得越权写回现在、为什么 `one writable present` 这条 claim 必须成立”，`87` 只回答“为什么源码质量要看合法复杂度中心、边界可证、下一次重构仍有路”；不要把 current-truth why 与 source-quality why 再压回同一条首答。若问题已经变成 admissibility、promotion 或 claim-state，统一先回 `guides/102`，而不是在 why 页里偷补 gate。
 
+如果继续把目录边界压成一张最小 owner 表，也只先看下面这张：
+
+| 你现在缺的是什么 | 更稳的 owner | 不该误进哪里 |
+|---|---|---|
+| Prompt 为什么有魔力 | `84`，必要时再读 `81` 的 mechanism worked example | `06` 不是 Prompt why owner |
+| 治理为什么先收费 | `85` | `userbook / security` 不代写 why |
+| 当前为什么不能被过去写坏 | `86` | `architecture/README` 不是 why owner |
+| 源码先进性为什么不等于 layout praise | `87` | `06` 不是 advancedness why owner |
+| 只是想自问这段论证有没有越位、混层或偷换主语 | `06` | `philosophy/README` 不把自校页升格成 why page |
+
 ## 三条 Why 判据
 
 - Prompt 线
@@ -37,6 +47,8 @@
   - 看 [87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md](87-%E7%9C%9F%E6%AD%A3%E6%88%90%E7%86%9F%E7%9A%84%E6%BA%90%E7%A0%81%E8%B4%A8%E9%87%8F%E5%88%A4%E6%96%AD%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%96%87%E4%BB%B6%E6%9B%B4%E5%B0%8F%EF%BC%8C%E8%80%8C%E6%98%AF%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%AD%E5%BF%83%E5%90%88%E6%B3%95%E3%80%81%E8%BE%B9%E7%95%8C%E5%8F%AF%E8%AF%81%E3%80%81%E4%B8%8B%E4%B8%80%E6%AC%A1%E9%87%8D%E6%9E%84%E4%BB%8D%E6%9C%89%E8%B7%AF.md>)
 - `continuity` 时间轴自校：
   - 看 `06`；但 `06` 只做苏格拉底式自校，不代替 `84 / 85 / 86 / 87` 的 why-proof 归属页。一旦主语重新落回 Prompt / 治理 / 源码质量，仍回各自归属页
+
+更稳一点说，`06` 的发言权只到“这段 why 是否还在同一主语、第一反证与最小回退上”；一旦自校问题重新长成“为什么必须这样设计”，就应退出自校，回归对应 why owner。
 
 ## 这里不回答什么
 

@@ -100,6 +100,7 @@
 - 当你需要把“安全”和“省 token”继续压成同一治理纪律，而不是并列专题。
 - 当你需要把 user-facing 的 runtime readback consumer 与 continuation consumer 退回它们各自只配消费的治理阶段，而不是再让 projection 词或 consumer 词冒充治理主语。
 - 当你需要判断哪个对象只是弱读回面、哪个对象仍保留 signer authority，以及 cleanup 之后谁还配留下 reopen liability。
+- 若问题已经进入 `reprice / suspend / reject / do-not-reopen / continue` 的动作分叉，本页不代判，统一回 `10` 的 typed-state 动作表；安全首页只负责 signer / ledger / cleanup authority。
 
 ## 如果你只先判断一件事
 

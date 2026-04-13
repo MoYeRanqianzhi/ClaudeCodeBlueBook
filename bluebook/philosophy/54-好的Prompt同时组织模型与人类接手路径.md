@@ -66,6 +66,17 @@ Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，
 3. 人类如何低成本给出纠偏反馈，同时保留正式 reject 权。
 4. 多执行链之间如何切换而不丢现场，并在必要时明确 `reopen` 而不是偷续旧资格。
 
+如果只想先看一个最小 lawful-consumer review object，也只先问四格：
+
+| field | fail signal | pass signal |
+|---|---|---|
+| `projection kind` | 只拿到 summary / sticky prompt / handoff prose 这类 carrier | 能明确自己看到的是哪层 projection，且没有越权代签 |
+| `witness rebind` | 只能靠体感判断“应该还能继续” | 能点名 `lineage / boundary / continuation verdict` 已回绑 |
+| `reject right` | 接手者只能顺着旧资格继续 | 接手者仍可正式做 `continue / reject / reopen` 判断 |
+| `delta scope` | 旧判断被整包拖回候选集 | 只重开新增 `decision delta` 真正触及的局部问题 |
+
+只要前两格里任一格仍停在 carrier 体感，人类接手就还不算 lawful consumer 接手，而只是更顺手地阅读了旧叙事。
+
 ## 5. 一句话总结
 
 Claude Code 的 prompt 之所以强，不只是因为它让模型更会继续，而是因为它让 later consumer 不必重判世界、重搜动作空间，或把已排除路径与已退役判断重新拉回候选集。
