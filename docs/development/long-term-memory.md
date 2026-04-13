@@ -7,7 +7,18 @@
 - 提炼 Agent 设计原则与设计哲学
 - 所有结论保持可追溯、可验证、可解释
 
+## Live Premise Discipline
+
+- 只有最近一次同日 root preflight 才算 `live premise`；更早的根仓同步记录默认只保留为历史截面，不再反过来支配当前批次判断。
+- 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
+
 ## 最新推进
+- 当前批次继续新增一条 lifecycle-crosswalk-must-separate-reopen-eligibility-and-authority-apr13 live 记忆：
+  - `bluebook/security/85` 现在也应直接写死：`authority lease / decision delta / cleanup trigger state` 不只服务治理入口，也要直接投到 `continuation / succession / suspension / retirement` 的 boundary lifecycle 交叉表里；`reopen eligibility` 与 `reopen authority` 必须分开，pointer、resume handle、summary 这类对象最多证明前者，不得自动证明后者
+  - 更稳的默认写法是：`same + zero + fired` 最多只配写成 `continuation checkpoint`，`changed + new + fired` 才配写成 `succession`；凡 `cleanup` 仍是 `owed / failed / unknown`，一律先按 `suspension / freeze` 处理，而不是先写可 reopen
+- 当前批次继续新增一条 memory-surfaces-must-be-demoted-to-context-artifacts-or-carriers-under-public-evidence-apr13 live 记忆：
+  - `bluebook/api/21` 与 `architecture/29` 现在也应直接写死：`CLAUDE.md / typed memory / session memory / relevant memories / attachments` 不该再被写成“五类同级正式 API”或“四层同级 canonical memory stack”，而要先拆成 `host-facing formal surfaces / context artifacts / runtime carriers / relevance projections`
+  - 更稳的默认写法是：`CLAUDE.md` 与 typed memory 先按 `context artifact` 读，session memory 先按 `continuation carrier` 读，nested/relevant memories 先按 `projection` 读；later consumer 只要还得重开 `world-definition / tool-legality / next-action search`，这层对象就还不配升成 witness
 - 当前批次继续新增一条 102-handoff-matrix-must-bind-owner-obligations-apr13 live 记忆：
   - `guides/102`、`architecture/84` 与 `api/README` 现在也应直接写死：handoff matrix 不只发目的地，还要约束 owner page 接手后的职责边界；接手后的 owner page 只能消费已锁定的 rung，不得重开 ladder、promotion 或 first-hop
   - 更稳的默认写法是：`102` 明说 `architecture` 只展开 object-level writer claim / writeback seam / anti-zombie，`api` 只展开 host-facing truth claim-state / consumer subset / promise boundary；`84` 与 `api/README` 则主动声明自己不再重做 sorter
