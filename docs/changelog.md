@@ -2,6 +2,10 @@
 
 ## 2026-04-14
 
+- 继续更新 `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 authority-source 协议：`api/36` 现在把 shared current-truth order 继续补齐成 `对象 -> authority source -> 状态链 -> ask 链 -> 事务身份 -> usage -> window -> diff/control -> rollback`，把治理主键与 ask 事务身份正式吸进四类消费者的共同骨架。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `api/36` authority-source 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
 - 继续更新 `bluebook/architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 object-pattern 协议：`architecture/84` 现在把 current-truth atlas 继续压成 worked pattern，在 object row 里显式给出 `writeback seam / local veto cue / first retreat layer`，不再让 later maintainer 自己从 atlas 反推对象级 reject path。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `architecture/84` worked-pattern 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。

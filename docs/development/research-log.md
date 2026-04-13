@@ -2,6 +2,12 @@
 
 ## 2026-04-14 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `api/36` authority-source 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `api/36` authority-source 结论：我只对 `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`36` 现在把 shared evidence order 继续补齐：在对象、状态链、ask 链和 usage 之间插入了 `authority source` 与 `typed ask transaction identity`，让 `settings.sources / effective / applied / externalized_mode`、`request_id / tool_use_id / duplicate_or_orphan_state` 也成为四类消费者的共享骨架。当前判断是，这一步能把 `13` 的 transport seam 和 `55` 的治理验收继续接进同一条 shared order，不再让 later consumer 从 mode 面板或 ask 体感里猜当前正式事务。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当 shared order 已经收住 `state / ask / usage` 后，更稳的默认追问不该是“还缺不缺更多 dashboard 指标”，而应先问“谁在定义当前边界、哪条 ask 仍是同一事务”；只要 authority source 与 ask transaction identity 还缺席，治理与省 token 线就迟早会退回 UI 体感，而不是正式 current-truth order。当前判断是，这个问法能继续把安全 / 省 token 线从“更多状态字段”拉回“哪条事务与哪条治理主键仍在说真话”的 first-principles discipline。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `architecture/84` worked-pattern 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
 
 - 本轮新的 `architecture/84` worked-pattern 结论：我只对 `bluebook/architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`84` 现在把 current-truth surface atlas 继续压成 object-level worked pattern：不再只列 object / writer / substitute，而是把 `writeback seam / local veto cue / first retreat layer` 一起写进 object row。当前判断是，这一步能把源码质量对象层从“知道有哪些 current-truth object”推进到“later maintainer 能直接拿对象行去拒收第二真相”的 pattern-grade handoff。

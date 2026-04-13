@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-api36-authority-source-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `api/36` authority-source 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `api36-must-carry-authority-source-and-ask-transaction-identity-apr14 live` 记忆：
+  - `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 现在也应继续写死：共享骨架不只要有 state / ask / usage，还要把 `authority source` 与 `request_id / tool_use_id / duplicate_or_orphan_state` 这种 ask transaction identity 吸进来
+  - 更稳的默认写法是：没有 authority source，就不得把 mode 样式读成治理主键；没有 transaction identity，就不得把 ask 读成同一条正式事务；`36` 也应显式和 `13 / 55` 对齐，而不是只和 window/usage 页对齐
 - 当前批次继续新增一条 `root-sync-healthy-for-architecture84-worked-pattern-batch-apr14 live` 记忆：
   - 2026-04-14 本轮进入 `architecture/84` worked-pattern 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
