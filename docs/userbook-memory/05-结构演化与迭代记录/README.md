@@ -17,7 +17,7 @@
 - `command-index / capability map / range map`
   - 先看 [284-2026-04-08-capability map hub cleanup 拆分记忆.md](./284-2026-04-08-capability%20map%20hub%20cleanup%20拆分记忆.md)、[294-2026-04-08-command-index session-ops split 拆分记忆.md](./294-2026-04-08-command-index%20session-ops%20split%20拆分记忆.md)、[311-2026-04-08-reference hub range map sync 拆分记忆.md](./311-2026-04-08-reference%20hub%20range%20map%20sync%20拆分记忆.md)、[321-2026-04-08-command-index status control-plane regroup 拆分记忆.md](./321-2026-04-08-command-index%20status%20control-plane%20regroup%20拆分记忆.md)。
 - `2026-04-13 scope guard / hub uplift / hardening 批次`
-  - 从 [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md) 一路看到 [426-2026-04-13-permission-tail leaf-entry anti-linearity hardening 拆分记忆.md](./426-2026-04-13-permission-tail%20leaf-entry%20anti-linearity%20hardening%20拆分记忆.md)。
+  - 从 [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md) 一路看到 [427-2026-04-13-sandbox-persist stable-gray hardening 拆分记忆.md](./427-2026-04-13-sandbox-persist%20stable-gray%20hardening%20拆分记忆.md)。
 - `更早批次`
   - 直接跳到下面的“全量档案”，按编号顺着翻。
 
@@ -179,6 +179,7 @@
 - [424-2026-04-13-permission-tail successor-skeleton hardening 拆分记忆.md](./424-2026-04-13-permission-tail%20successor-skeleton%20hardening%20拆分记忆.md)
 - [425-2026-04-13-permission-tail canonical-topology hardening 拆分记忆.md](./425-2026-04-13-permission-tail%20canonical-topology%20hardening%20拆分记忆.md)
 - [426-2026-04-13-permission-tail leaf-entry anti-linearity hardening 拆分记忆.md](./426-2026-04-13-permission-tail%20leaf-entry%20anti-linearity%20hardening%20拆分记忆.md)
+- [427-2026-04-13-sandbox-persist stable-gray hardening 拆分记忆.md](./427-2026-04-13-sandbox-persist%20stable-gray%20hardening%20拆分记忆.md)
 
 ## 全量档案
 

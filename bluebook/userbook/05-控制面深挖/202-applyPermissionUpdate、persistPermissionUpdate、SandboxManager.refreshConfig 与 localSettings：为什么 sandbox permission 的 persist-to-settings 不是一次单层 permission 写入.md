@@ -208,11 +208,9 @@
 - 它们共享三层写面模型
 - 但不共享完全相同的行为边界
 
-## 第六层：稳定、条件与灰度边界也不是同一层
+## 第六层：稳定层、条件层与灰度层
 
-更稳的拆法是：
-
-### 稳定不变量
+### 稳定可见
 
 - persist 手势会同时牵动本地 context、durable settings 与 live sandbox runtime 三层对象。
 - `persistPermissionUpdate(...)` 与 `refreshConfig()` 不是替代关系。
@@ -222,14 +220,24 @@
 - worker sandbox 那条线只有 allow 时才会把规则写进 `localSettings`。
 - `SandboxManager.refreshConfig()` 只有 sandbox 真正启用时才会生效；函数自身也会先检查 `isSandboxingEnabled()`。
 
-### 灰度 / 内部层
+### 内部/灰度层
 
 - `settingsChangeDetector.subscribe(...)` 的异步追平节奏
 - `BaseSandboxManager.updateConfig(...)` 的内部实现
+- local sandbox 与 worker sandbox persist 分支的 exact wiring 与 helper 顺序
 
 这些都说明这里不是单纯的“写规则”动作，
 
 而是一组跨 store / settings / runtime 的同步合同。
+
+所以这页最稳的结论必须停在：
+
+- persist 手势会跨 context / settings / runtime 三层传播
+- `persistPermissionUpdate(...)` 与 `refreshConfig()` 不是替代关系
+
+而不能滑到：
+
+- sandbox permission persist = 一次单层 settings write
 
 ## 第七层：这页不是 201，也不是 73 / 78
 
@@ -258,7 +266,7 @@
 
 ## 结论
 
-更稳的一句应该是：
+所以这页能安全落下的结论应停在：
 
 - sandbox permission 的 `persist-to-settings` 不是一次单层写入
 - `applyPermissionUpdate(...)` 改的是 leader 本地 permission context
