@@ -23,6 +23,7 @@
 若你已经知道自己在找 `first no / first retreat layer`，却还说不清它落在哪类 seam，上游先回 `../01-源码结构地图.md` 定位 `generation guard / server-head adoption / host truth externalization / release-surface split` 这类 repo-specific locator；对象层不代做 repo grep。更硬一点说，这里的 `first no` 问的不是修复顺序，而是此刻哪一个对象面、哪一类 seam 正在先失去合法写权；若这个主语还没答出，任何 remediation checklist 都还太早。
 
 这里的 `surface` 也不只指 runtime state surface；凡是会改变运行时行为、权限裁决、上下文注入或代理装配的 `operator artifacts`，例如 `CLAUDE.md`、hooks、skills、agent defs 与 permission schemas，也都属于对象层要点名的 `surface`。但这也仍以后置条件为前提：只有当 `guides/102` 已先把它 typing 成 object-level claim，而不是仍停在 `public artifact ceiling / provisional claim / consumer subset`，它才配进入对象层。它们之所以算对象层，不是因为它们更像文档，而是因为 later maintainer 也必须能在这些工件上定位第一条局部 veto。
+如果问题问的是 `signer / effect ceiling / local veto cue / first retreat layer`，operator artifact 继续留在 `architecture/`；如果问题问的是 `host-facing truth claim-state / consumer subset / promise boundary`，再转去 `api/`。若这两个方向都还没被 `102` 锁定，它就继续只配叫 `surface candidate`。
 
 ## landing card（对象摘要）
 

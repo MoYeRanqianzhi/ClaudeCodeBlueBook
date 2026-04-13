@@ -23,6 +23,9 @@
 - `claude-code-source-code/src/utils/forkedAgent.ts:46-126`
 - `bluebook/architecture/82-请求装配流水线：authority chain、section registry、protocol transcript、lawful forgetting与cache-safe forks.md`
 
+> Evidence mode
+> - 当前 worktree 若仍缺 `claude-code-source-code/` 镜像，上面这些源码路径只按 archival anchors 读取；对象 certainty 仍先经过 `guides/102` 的 claim-state / promotion gate，本页只消费 why 与机制层解释，不借源码锚点偷升 object-level certainty。
+
 ## 1. 先说结论
 
 `84` 在蓝皮书里只固定一条因果律：
@@ -40,6 +43,16 @@
 更短地说，`84` 固定的是三条 Prompt owner law：`lawful inheritance` 规定 later consumer 继承的仍是同一工作对象；`search-pruning` 规定已排除分支继续保持被排除；`decision-retirement` 规定没有新增 `decision delta` 的旧判断继续退役，不得被 summary / delegated context / replay 静默带回候选集。
 
 如果 same-world failure 已经成立，才值得继续诊断断点；那些熟悉的机制名词此时只配当兼容标签，不配反过来抢 why 页主句。
+
+如果要把这条 why 再压成 later maintainer 可直接复查的最小 verdict box，也只剩三种输出：
+
+| verdict | 最小条件 |
+|---|---|
+| `pass` | later consumer 仍能继承同一 `work object + excluded branches + continue/reject verdict`，不必重谈世界、边界、lineage 与继续资格 |
+| `provisional` | 当前只看到了 summary / sticky prompt / handoff prose / session memory 这类 carrier，尚未回绑 witness chain |
+| `reject` | carrier 被迫单独代签继续资格，或已退役判断在无新增 `decision delta` 时回流 candidate set |
+
+遇到 `provisional / reject`，第一动作不是补 prose，而是回 `message lineage -> section registry -> stable prefix -> protocol transcript -> continuation object -> continue qualification verdict` 这条 witness ABI 补断点。
 
 所谓合法复数，也只允许这样一种复数：多个 surface 仍不逼 later consumer 重谈同一世界。只要接手者必须重新确认谁在定义世界、哪条历史还算数、继续资格是否仍成立，这个复数就已经不合法。
 

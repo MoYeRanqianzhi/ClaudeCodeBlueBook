@@ -12,6 +12,7 @@
 “行动语义更密”现在不再单独充当前门，而是六级编译链跑通后的结果，尤其是：
 
 - `Continuation`
+- 更准确地说，它只是 `same-world compiler` 跑通后的结果词，不是 Prompt magic 的 owner definition；若把这个结果词重新当前门，读者又会把症状当原因。
 
 Claude Code 的 prompt 之所以强，不是因为塞进了更多原文，而是因为同样的 token 更努力保住了 continuation 真正需要的四类对象：
 

@@ -53,6 +53,7 @@
 
 更稳一点说，shared first-answer order 仍属于上游 frontdoor；`api/` 只在 `guides/102` 已先把问题 typing 成 `host-facing truth claim-state / consumer subset` 后才入场。若还要先判这是 Prompt、治理还是 current-truth exposure family，说明本页开早了，API README 也会退回接口库存。
 再硬一点说，`api/` 不是 `102` 的快捷方式：它不负责把 `code present -> registry listed -> host-facing truth claim signed -> consumer subset admitted` 这条链再跑一遍；它只消费已经锁定的 rung result，并把宿主承认边界写清。
+operator artifact 若问的是“宿主当前到底被正式允许消费什么、边界宽到哪里、有没有 promise boundary”，才进入 `api/`；若问题其实是“它能不能写现在、哪里 first no、哪里先退回”，统一回 `architecture/`。若两边都还没锁定，先回 `102`。
 
 如果一个 API 判断还压不回这三条，它就还停在接口库存层。
 

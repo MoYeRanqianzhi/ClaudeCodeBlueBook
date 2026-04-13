@@ -10,7 +10,7 @@
   - 换句话说，Prompt why 先问 runtime 到底替 later consumer 退休了哪一段动作搜索、世界重谈与继续资格重判；答不出这条 `decision-retirement / search-pruning / lawful inheritance`，Prompt why 仍只是效果描述
   - 缺 Prompt why 时看 `84`
 - 治理线
-  - 如果解释答不出为什么 `unpaid expansion` 不能免费续租、为什么继续前必须先补齐 `repricing proof / lease checkpoint / cleanup`、检查顺序为什么必须把风险提前收费，以及为什么无新增决策增益时应撤销自动化或退回人工，治理 why 就还没成立
+  - 如果解释答不出为什么 `unpaid expansion` 不能免费续租、为什么继续前必须先补齐 `same authority lease / new decision delta / cleanup trigger state`、检查顺序为什么必须把风险提前收费，以及为什么无新增决策增益时应撤销自动化或退回人工，治理 why 就还没成立；`repricing proof / checkpoint / cleanup` 在这里最多只是这条硬公式的旧简称
   - 缺治理 why 时看 `85`；若 earliest `unpaid expansion` 还没定位，先回 `10`
 - 当前真相线
   - 如果解释答不出为什么 current truth 不能让过去或投影代签，这条 why 就还没成立
