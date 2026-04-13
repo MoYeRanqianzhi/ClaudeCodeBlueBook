@@ -19,6 +19,8 @@
 
 源码不是这样设计的。
 
+这里分的不是 suggestion 到底何时交付，而是同一份 task result 在 idle、late `task_notification` 与 `post_turn_summary` 都按时落流之后，为什么仍保住 semantic last-message 主位。`pendingSuggestion` 在这里只是证明“晚到很重要，但不能篡位”；真正的 delivery/accounting 记账，要到 99 再继续拆。
+
 ## 第一性原理
 
 更稳的提问不是：
