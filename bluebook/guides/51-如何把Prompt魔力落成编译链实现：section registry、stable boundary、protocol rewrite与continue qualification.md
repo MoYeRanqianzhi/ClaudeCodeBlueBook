@@ -31,6 +31,18 @@
 - Claude Code 的 Prompt 魔力，不在“更会写”，而在“更会把世界编译成可缓存、可转写、可继续的请求对象”。
 - 更准确地说，builder-facing 的正式对象链仍只认 `message lineage -> section registry / stable boundary -> protocol transcript -> continuation object -> continuation qualification`；`compiled request truth` 在这里最多只是旧总称。
 
+### 命名桥：`same-world compiler` 不是第二套对象名
+
+本页的 `same-world compiler` 只是 builder-facing 叫法，指的仍是 `philosophy/84` 所说的 `request assembly / six-stage assembly chain`。若把名字压成 formal object naming，唯一 canonical chain 仍只认：
+
+`message_lineage_ref -> section_registry_ref -> stable_prefix_ref -> protocol_transcript_ref -> continuation_object_ref -> continue_qualification_verdict`
+
+因此：
+
+- `same-world request object` 是这条链在 builder 侧被成功编译后的消费对象。
+- `world-entry object` 是同一对象在 why 页强调“世界如何进入模型”时的叫法。
+- `compiled request truth` 只保留为旧总称，不再单独充当一级主语。
+
 ## 1. 第一性原理
 
 更成熟的 Prompt 实现，不是：
