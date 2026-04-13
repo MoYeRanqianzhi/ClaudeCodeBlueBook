@@ -4948,3 +4948,4 @@
 - `2026-04-13` `playbooks/09` 的最新稳定纪律也应继续写死：Prompt rollout 的目标态、phase 指标、评审卡与回退样例现在都应直接挂 `lawful inheritance / excluded-branch pruning / zero-delta judgment retirement`。`cache / handoff / summary` 仍可保留，但只作为辅证，不再允许它们单独充当 rollout 成功的主指标。
 - `2026-04-13` `philosophy/61` 的最新稳定纪律也应继续写死：why 页现在只配证明“为什么顺序、失败语义、可撤销自动化与可重放证据会同时决定安全与省 token 的成熟度”，不再在本地反复重讲 `same authority lease / new decision delta / cleanup trigger state` 的对象链。更细的 checkpoint 问句、compact/resume/re-entry 拆解与证据判格统一回 `10`。
 - `2026-04-13` `api/README` 的下一层稳定纪律也应继续写死：README 现在不仅不再重跑 ladder，也不再保留本地三格 checker 与路径 syllabus。它只保留 owner law、最小进入提示、离场条件与维护约定；凡还要细分“哪种 host-facing 对象该进哪串页号”，统一退回 deeper API 页与 `navigation/README`。
+- `2026-04-13` `architecture/84` 的下一层稳定纪律也应继续写死：atlas 页现在只继续展开 promotion-passed objects 的 `sole writer / per-host width / forbidden substitute writer / freshness guard`，不再让表格自带 `evidence status`，也不再让 operator artifact triage 在本页长成半张 claim-state 页。凡还要讲 admission/promotion，统一退回 `102`。
