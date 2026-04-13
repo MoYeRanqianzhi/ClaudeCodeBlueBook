@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 295 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 296 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -314,11 +314,12 @@
 293. [293-cleanupPeriodDays、validation veto、housekeeping admission与diagnostics coverage中的强请求清理保留期治理边界](293-cleanupPeriodDays、validation veto、housekeeping admission与diagnostics coverage中的强请求清理保留期治理边界.md)
 294. [294-settings文案、shouldSkipPersistence、housekeeping与CleanupResult中的强请求清理保留期执行诚实性边界](294-settings文案、shouldSkipPersistence、housekeeping与CleanupResult中的强请求清理保留期执行诚实性边界.md)
 295. [295-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界](295-TaskOutput、diskOutput、toolResultStorage、concurrentSessions与cronTasksLock中的强请求清理隔离边界.md)
+296. [296-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug、diagLogs与cleanup的强请求清理家族宪法边界](296-diskOutput、sessionStorage、toolResultStorage、plans、fileHistory、sessionEnvironment、debug、diagLogs与cleanup的强请求清理家族宪法边界.md)
 
 ## 和其他目录的分工
 
 - 与 `security/` 主目录的关系：`source-notes/` 负责贴近源码拆机制，主目录负责把这些机制压成更高阶判断。
 - 与 `appendix/` 的关系：`appendix/` 负责短表、矩阵和索引；`source-notes/` 负责长一点的证据剖面，不把速查卡撑成半篇长文。
 - 与 `docs/development/research-log.md` 的关系：research log 负责记录研究推进；`source-notes/` 负责留下可以长期复用的源码剖面资产。
-- 想顺着当前这一段强请求清理子链看源码证据，优先读 `291-295`。
+- 想顺着当前这一段强请求清理子链看源码证据，优先读 `292-296`。
 - 与 [../../docs/development/security/README.md](../../docs/development/security/README.md) 的关系：安全专题的后续候选、章节推进和写作边界放到隔离记忆层，不再混回 `source-notes/`。

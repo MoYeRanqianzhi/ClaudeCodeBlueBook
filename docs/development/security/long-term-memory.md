@@ -2,6 +2,10 @@
 
 ## 当前稳定边界
 
+- `2026-04-13` 最新一轮已完成 `445 / 429 / 296`：主线把 stronger-request cleanup 从 `stronger-request cleanup-isolation-governance` 继续推进到 `stronger-request cleanup-constitution-governance`，附录把 `carrier family / constitution world / cleanup root / current gate / governor question` 压成统一矩阵，源码剖面则把 repaired session temp、project-session sweep、plural home-root worlds、host-external diagnostics world 与 hardcoded dispatcher 并排钉成 `legal-world grammar`。这一轮稳定写出的新边界是：`非干扰已追问` 不等于 `家法已收口`，`你开始证明自己没伤到谁` 不等于 `你已经回答这些不同 family 到底受哪部 cleanup 宪法统治。`
+- `2026-04-13` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
+- `2026-04-13` 当前唯一 open question 已前推到 `stronger-request cleanup-rationale-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
+
 - `2026-04-13` 最新一轮已完成 `414 / 398 / 265`：主线把 stronger-request cleanup 从 `stronger-request cleanup-constitution-governance` 继续推进到 `stronger-request cleanup-rationale-governance`，附录把 `carrier family / primary risk object / operational duty / host visibility / rationale drift` 压成统一矩阵，源码剖面则把 live non-clobber、persisted inspection、continuity / replay、planning recovery、restore backup、environment replay、operational debugging 与 host monitoring 并排钉成 `rationale-proof grammar`。这一轮稳定写出的新边界是：`家法已分` 不等于 `家法理由已被诚实保存`，`你已经区分这些 family 活在哪个 law 里` 不等于 `你已经解释这些 law 为什么配存在。`
 - `2026-04-13` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`；这些根仓状态与当前安全专题轮次保持隔离，本轮继续严格限制在 `.worktrees/claude-code-risk-analysis` 内推进。
 - `2026-04-13` 当前唯一 open question 已前推到 `stronger-request cleanup-metadata-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
