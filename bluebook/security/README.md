@@ -1,6 +1,6 @@
 # 安全专题索引
 
-`security/` 当前有 467 篇正文，范围 `00-466`；`appendix/` 当前有 450 篇速查文档；`source-notes/` 当前有 317 篇源码剖面。
+`security/` 当前有 468 篇正文，范围 `00-467`；`appendix/` 当前有 451 篇速查文档；`source-notes/` 当前有 318 篇源码剖面。
 
 本目录研究 Claude Code 的分层安全控制面：来源主权、权限模式、外部能力收口、恢复语义、能力发布、状态编辑、签字权分层，以及从 `receipt -> completion -> finality -> forgetting -> liability release -> archive close -> audit close -> irreversible erasure -> retention -> honesty -> isolation -> constitution -> rationale -> metadata -> runtime-conformance -> anti-drift verification -> repair -> migration -> sunset -> tombstone ...` 一路推进到 stronger-request cleanup 家族的同构治理链。
 
@@ -264,6 +264,7 @@
 - [464-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层：为什么artifact-family cleanup stronger-request cleanup-reassurance-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-use-time revalidation-governor signer](464-安全载体家族强请求清理重新担保治理与强请求清理用时重验证治理分层.md)
 - [465-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层：为什么artifact-family cleanup stronger-request cleanup-use-time revalidation-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-step-up reauthorization-governor signer](465-安全载体家族强请求清理用时重验证治理与强请求清理step-up重授权治理分层.md)
 - [466-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层：为什么artifact-family cleanup stronger-request cleanup-step-up reauthorization-governor signer不能越级冒充artifact-family cleanup stronger-request continuation-governor signer](466-安全载体家族强请求清理step-up重授权治理与强请求清理续打治理分层.md)
+- [467-安全载体家族强请求清理续打治理与强请求清理完成治理分层：为什么artifact-family cleanup stronger-request continuation-governor signer不能越级冒充artifact-family cleanup stronger-request completion-governor signer](467-安全载体家族强请求清理续打治理与强请求清理完成治理分层.md)
 
 ## 阅读顺序
 
@@ -271,8 +272,8 @@
 - 想定位“当前真相从哪里来、为什么恢复不等于完成”：先读 `30-69`。
 - 想看能力发布、状态编辑与恢复资格：先读 `70-99`。
 - 想看验证、迁移与工程化落地：先读 `100-138`。
-- 想直看治理链主干：先读 `147-466 -> appendix/131-450 -> source-notes/01-317`。
-- 想快速进入当前这段强请求清理子链：先读 `462-466 -> appendix/446-450 -> source-notes/313-317`。
+- 想直看治理链主干：先读 `147-467 -> appendix/131-451 -> source-notes/01-318`。
+- 想快速进入当前这段强请求清理子链：先读 `463-467 -> appendix/447-451 -> source-notes/314-318`。
 - 想快速查字段、词法、路由、签字权和速查表：直接去 [appendix/README.md](appendix/README.md)。
 - 想追具体源码证据簇：直接去 [source-notes/README.md](source-notes/README.md)。
 
