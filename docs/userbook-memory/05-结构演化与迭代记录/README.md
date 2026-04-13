@@ -16,10 +16,11 @@
   - remote truth、shell 与 memory 子家族先看 [139-149-remote truth、shell 与 memory 家族/README.md](./139-149-remote%20truth、shell%20与%20memory%20家族/README.md)。
   - session pane、command shell 与 remote memory 子家族先看 [144-149-session pane、command shell 与 remote memory 家族/README.md](./144-149-session%20pane、command%20shell%20与%20remote%20memory%20家族/README.md)。
   - surface presence、bridge chain 与 interaction shell 子家族先看 [128-138-surface presence、bridge chain 与 interaction shell 家族/README.md](./128-138-surface%20presence、bridge%20chain%20与%20interaction%20shell%20家族/README.md)。
+  - schema-store、bridge chain 与 interaction shell 子家族先看 [133-138-schema-store、bridge chain 与 interaction shell 家族/README.md](./133-138-schema-store、bridge%20chain%20与%20interaction%20shell%20家族/README.md)。
 - `command-index / capability map / range map`
   - 先看 [284-2026-04-08-capability map hub cleanup 拆分记忆.md](./284-2026-04-08-capability%20map%20hub%20cleanup%20拆分记忆.md)、[294-2026-04-08-command-index session-ops split 拆分记忆.md](./294-2026-04-08-command-index%20session-ops%20split%20拆分记忆.md)、[311-2026-04-08-reference hub range map sync 拆分记忆.md](./311-2026-04-08-reference%20hub%20range%20map%20sync%20拆分记忆.md)、[321-2026-04-08-command-index status control-plane regroup 拆分记忆.md](./321-2026-04-08-command-index%20status%20control-plane%20regroup%20拆分记忆.md)。
 - `2026-04-13 structure-page scope guard 批次`
-  - 从 [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md) 一路看到 [383-2026-04-13-headless-subtree branch-map scope clarification 拆分记忆.md](./383-2026-04-13-headless-subtree%20branch-map%20scope%20clarification%20拆分记忆.md)。
+  - 从 [372-2026-04-13-observer-restore scope clarification 拆分记忆.md](./372-2026-04-13-observer-restore%20scope%20clarification%20拆分记忆.md) 一路看到 [397-2026-04-13-schema-store-shell subfamily hub uplift 拆分记忆.md](./397-2026-04-13-schema-store-shell%20subfamily%20hub%20uplift%20拆分记忆.md)。
 - `更早批次`
   - 直接跳到下面的“全量档案”，按编号顺着翻。
 
@@ -151,6 +152,7 @@
 - [394-2026-04-13-shell-memory pair subfamily hub uplift 拆分记忆.md](./394-2026-04-13-shell-memory%20pair%20subfamily%20hub%20uplift%20拆分记忆.md)
 - [395-2026-04-13-surface-shell subfamily hub uplift 拆分记忆.md](./395-2026-04-13-surface-shell%20subfamily%20hub%20uplift%20拆分记忆.md)
 - [396-2026-04-13-dual-trunk stable-gray hardening 拆分记忆.md](./396-2026-04-13-dual-trunk%20stable-gray%20hardening%20拆分记忆.md)
+- [397-2026-04-13-schema-store-shell subfamily hub uplift 拆分记忆.md](./397-2026-04-13-schema-store-shell%20subfamily%20hub%20uplift%20拆分记忆.md)
 
 ## 全量档案
 
