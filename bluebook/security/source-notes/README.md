@@ -1,6 +1,6 @@
 # 安全源码剖面索引
 
-`source-notes/` 当前包含 304 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
+`source-notes/` 当前包含 305 篇源码剖面。它专门承接单机制、单协议、单文件群的长证据拆解，不与主线论证层和附录速查层混写。
 
 ## 这一子目录放什么
 
@@ -323,11 +323,12 @@
 302. [302-runMigrations、migrateLegacyOpusToCurrent、orphan宽限期与plans continuity的强请求清理迁移治理边界](302-runMigrations、migrateLegacyOpusToCurrent、orphan宽限期与plans continuity的强请求清理迁移治理边界.md)
 303. [303-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界](303-deprecation clock、migration timestamp、orphan visibility cutoff与强请求清理退役治理边界.md)
 304. [304-tombstone messages、.orphaned_at与migration timestamps的强请求清理墓碑治理边界](304-tombstone messages、.orphaned_at与migration timestamps的强请求清理墓碑治理边界.md)
+305. [305-removeOrphanedAtMarker、refreshActivePlugins、needsRefresh与copyPlanForResume的强请求清理复活治理边界](305-removeOrphanedAtMarker、refreshActivePlugins、needsRefresh与copyPlanForResume的强请求清理复活治理边界.md)
 
 ## 和其他目录的分工
 
 - 与 `security/` 主目录的关系：`source-notes/` 负责贴近源码拆机制，主目录负责把这些机制压成更高阶判断。
 - 与 `appendix/` 的关系：`appendix/` 负责短表、矩阵和索引；`source-notes/` 负责长一点的证据剖面，不把速查卡撑成半篇长文。
 - 与 `docs/development/research-log.md` 的关系：research log 负责记录研究推进；`source-notes/` 负责留下可以长期复用的源码剖面资产。
-- 想顺着当前这一段强请求清理子链看源码证据，优先读 `300-304`。
+- 想顺着当前这一段强请求清理子链看源码证据，优先读 `301-305`。
 - 与 [../../docs/development/security/README.md](../../docs/development/security/README.md) 的关系：安全专题的后续候选、章节推进和写作边界放到隔离记忆层，不再混回 `source-notes/`。
