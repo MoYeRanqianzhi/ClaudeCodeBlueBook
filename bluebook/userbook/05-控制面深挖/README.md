@@ -119,6 +119,31 @@ Prompt 失真在这一层也只该继续消费同一张 user-facing witness pack
 
 如果你还没分清当前要解决哪类工作，先回 [../README.md](../README.md) 的“按目标进入”；如果你主要缺的是工作主题 first-hop，而不是对象边界和控制面主权，再先看 [../04-专题深潜/README.md](../04-%E4%B8%93%E9%A2%98%E6%B7%B1%E6%BD%9C/README.md)。
 
+## 范围图总表
+
+`05` 当前覆盖 `1-219` 里的 `217` 个编号页；缺号只有 `200` 与 `205`，这两格当前没有物理叶页，不是目录漏链。
+
+如果你不是来逐页顺读，先按范围进：
+
+- `01-19`
+  - 起手控制面。权限、计划模式、扩展层、信任、health-check 与 host 入口先在这里定 first-hop。
+- `20-67`
+  - remote / bridge 主线。入口矩阵、生命周期、direct connect、remote session 与多消费面从这里展开。
+- `68-88`
+  - 命令面、approval shell、mailbox 与 shutdown 族；如果你已经确认问题落在 headless print / noninteractive 结果，再跳 `92-121`。
+- `92-121`
+  - 非交互结果、summary 与协议流。先看 [非交互结果、summary 与协议流/README.md](./非交互结果、summary%20与协议流/README.md)，再决定走 `207-211` 的哪条收束线。
+- `122-149`
+  - remote recovery / surface / truth / shell pair。阅读骨架优先看 `212-217`，再回具体 leaf。
+- `150-167`
+  - resume / restore / metadata readback。`159` 先切 fork-session，`161-167` 再往 host、stage 与 readback 尾链推进。
+- `168-190`
+  - 接续与桥接分叉。先看 [接续与桥接分叉/README.md](./接续与桥接分叉/README.md)；范围收束页是 `218/219`，不要直接把 `168-190` 读成一条线性长链。
+- `191-206`
+  - bridge ingress / permission tail。先用 `197` 看六层阅读链，再用 `203/206` 看后继收束。
+- `207-219`
+  - 范围收束页。`207-211` 收束 noninteractive / signal / summary，`212-217` 收束 remote truth / surface，`218-219` 收束 bridge source / authority / subtree。
+
 ## 常见起手控制面
 
 - [01-权限、计划模式与 Worktree：如何安全放大行动范围.md](./01-%E6%9D%83%E9%99%90%E3%80%81%E8%AE%A1%E5%88%92%E6%A8%A1%E5%BC%8F%E4%B8%8E%20Worktree%EF%BC%9A%E5%A6%82%E4%BD%95%E5%AE%89%E5%85%A8%E6%94%BE%E5%A4%A7%E8%A1%8C%E5%8A%A8%E8%8C%83%E5%9B%B4.md)
