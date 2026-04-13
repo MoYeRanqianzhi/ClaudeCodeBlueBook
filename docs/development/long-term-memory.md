@@ -13,6 +13,12 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 root-frontdoor-should-not-ship-prompt-or-source-quality-second-hop-syllabus-apr13 live 记忆：
+  - `bluebook/README` 现在也应直接写死：根前门对 Prompt 与源码质量线只给 first test 与第一跳，不再在首段预发源码质量 why，也不再在首跳列表里发 Prompt playbook syllabus
+  - 更稳的默认写法是：Prompt 只给 `84 -> 81`，源码质量只给 `102`；examples、why-proof 与 object landing 统一留给后续 owner 页接手
+- 当前批次继续新增一条 source-quality-why-table-should-read-as-downgrade-not-gate-apr13 live 记忆：
+  - `bluebook/philosophy/87` 现在也应直接写死：那张三格表不是 `reject / provisional / pass` 的 gate，而是 why owner 的最小降格表；更稳的读法应是 `layout praise / provisional why / object-check ready`
+  - 更稳的默认写法是：why owner 只阻止 later consumer 读得过高，不在 `87` 内直接代行 `102` 的 promotion
 - 当前批次继续新增一条 prompt-navigation-must-route-why-to-84-and-mechanism-to-81-apr13 live 记忆：
   - `bluebook/navigation/README` 与 `philosophy/81` 现在也应直接写死：Prompt 线在 route-only 层不只要有 `84 / 06`，还要显式给出 `84 -> 81` 的 builder-facing 出口；`84` 固定 why owner law 与 verdict box，`81` 只展开同一条 `same-world request object` 的 object chain
   - 更稳的默认写法是：若你缺的是 Prompt why，回 `84`；若 why 已站住，但还缺 `carrier / witness / continuation object` 的正式链路，就回 `81`

@@ -2,6 +2,8 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/{README.md,philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 frontdoor de-syllabus 协议：根 `README` 现在不再在首段预发源码质量 why，也不再在 Prompt 首跳列表里发 playbook 式 second-hop syllabus，只保留 `84 -> 81`；`87` 也把那张更像 gate 的 `reject / provisional / pass` 表收回成 why owner 的最小降格表：`layout praise / provisional why / object-check ready`。
+
 - 继续更新 `bluebook/{navigation/README.md,philosophy/81-请求编译链：可缓存、可转写、可继续.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 Prompt route-only 协议：`navigation/README` 现在更明确补出 `84 -> 81` 的 builder-facing 出口；`81` 也同步把自己与 `84` 的 speaking right 再切清一层，明确 `84` 只固定 why owner law 与 verdict box，本页只展开同一条 `same-world request object` 的机制对象链。
 
 - 继续更新 `bluebook/{security/README.md,risk/README.md,playbooks/README.md,userbook/README.md}` 与 `docs/development/{long-term-memory,research-log}.md`，把这一小轮继续收成一条更硬的 governance tail-chain split 协议：`security/README` 现在更明确把 cleanup 之后的承诺、reopen 资格与 receipt 绑定离场到 `risk/README`；`risk/README` 则补明一旦问题进入 `execution verdict / rollback / reopen` 顺序，就应离场到 `playbooks/README`；`playbooks/README` 也同步补出反向边界，不再受理 `product promise / reopen eligibility / evidence receipt binding` 的样貌问题；`userbook/README` 则把用户前门的治理尾链固定分成 `risk` 与 `playbooks` 两问。
