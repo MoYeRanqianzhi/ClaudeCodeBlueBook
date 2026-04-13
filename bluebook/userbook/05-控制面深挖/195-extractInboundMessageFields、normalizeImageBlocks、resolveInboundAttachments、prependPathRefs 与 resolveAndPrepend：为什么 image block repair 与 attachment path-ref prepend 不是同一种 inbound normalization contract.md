@@ -253,9 +253,41 @@ attachment 层进一步分成两步：
 
 这句会把真实的正确性边界、失败语义和 sink 对齐合同全部抹掉。
 
+## 第七层：稳定层、条件层与灰度层
+
+### 稳定可见
+
+- `normalizeImageBlocks(...)` 当前修的是 `message.content` 内部坏块，属于 correctness-first 的 schema repair。
+- `resolveInboundAttachments(...)` / `prependPathRefs(...)` 当前处理的是 `file_attachments`，属于 best-effort 的 path-ref materialization。
+- `resolveAndPrepend(...)` 当前只是 attachment pipeline 的 convenience wrapper，不会把它和 content repair 合并成一层。
+- hook / print 的接法差异当前恰好说明 attachment 层是可组合的前处理，而不是 transcript adapter 的唯一主句。
+- 这里保护的不是“都叫 normalize”，而是 user leg 内部至少已经分成 content repair 与 attachment materialization 两层合同。
+
+### 条件公开
+
+- attachment materialization 是否真的参与，仍取决于当前 message 上是否带 `file_attachments`。
+- attachment 下载与 path-ref prepend 是否成功，仍取决于当前宿主、下载路径与 best-effort 降级条件。
+- hook / print 会不会走同样厚度的前处理，也仍取决于当前 consumer route，而不是这页已经稳定暴露的 normalization 边界。
+
+### 内部/灰度层
+
+- `normalizeImageBlocks(...)` 的 exact block rewrite 细节
+- `resolveInboundAttachments(...)` 的下载/落盘 wiring
+- `prependPathRefs(...)` 与 `resolveAndPrepend(...)` 的 helper 调用顺序
+- 其他 normalization 细节与 future pipeline 扩张
+
+所以这页最稳的结论必须停在：
+
+- user leg 内部至少已经分成 correctness repair 与 best-effort materialization 两层 normalization contract
+- image block repair 与 attachment path-ref prepend 不是同一种 inbound normalization
+
+而不能滑到：
+
+- 消息在 enqueue 前只是统一做一点清洗
+
 ## 结论
 
-更稳的一句应该是：
+所以这页能安全落下的结论应停在：
 
 - `normalizeImageBlocks(...)` 修的是 `message.content` 内部坏块，属于 correctness-first 的 schema repair
 - `resolveInboundAttachments(...)` / `prependPathRefs(...)` 处理的是 `file_attachments`，属于 best-effort 的 path-ref materialization
