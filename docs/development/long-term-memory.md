@@ -1301,7 +1301,7 @@
   - `philosophy/76` 默认只做 atlas / projection 暴露，不再给源码质量线另写一套 rung
   - `navigation/README` 默认只做 route，不再在本页定义 `truth-plane order / public-evidence ceiling / continuity crosswalk`
   - `navigation/README` 默认不再把 `philosophy/76` 写进源码质量 canonical chain
-  - `guides/102` 默认只负责 canonical rung、降格规则与 change-risk record 模板，不再宣布 atlas 宿主选择与 handoff route
+  - `guides/102` 默认只负责 canonical rung、降格规则、change-risk record 与 handoff matrix；它先锁 rung 再分派 owner，但 owner page 只消费结果，不得把 handoff route 反写成第二张 gate
   - 这三页默认统一拒收 source-quality frontdoor 再次长回第二 authority
 - `bluebook/06`、`bluebook/userbook/05-控制面深挖/README` 与 `05-控制面深挖/06-Status、Doctor、Usage：运行时自检、额度与诊断.md` 的长期默认 user-facing-runtime-projection language 现已继续写死：
   - `bluebook/06` 默认继续把治理线最小顺序写成 `governance key -> truth-surface attestation -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup`
@@ -4780,3 +4780,5 @@
 - `2026-04-13` 治理前门的最新稳定纪律也应继续写死：`10` 现在适合保留 typed-state + verb ceiling 语法，至少同时区分 `authority lease = same/changed/unknown`、`decision delta = new/zero/unknown`、`cleanup trigger state = fired/owed/failed/unknown`，并明确 `receipt-grade projection` 只能说 drift/pressure/acknowledgement/aftermath，不能代签 repricing、continue、retry、reopen 或 cleanup truth。
 - `2026-04-13` continuity/control 面的最新稳定纪律也应继续写死：`/compact`、`/resume` 与 file checkpointing 都不自动重新授权；它们最多搬运、恢复或回滚状态，继续前仍必须重新过 `same authority lease / new decision delta / cleanup trigger state`。
 - `2026-04-13` 研究方法文件的最新 canonical vocabulary 也应继续写死：`public-evidence only` 现在只签 `contract / registry / current-truth claim state / provisional claim / consumer subset / gap note`，不再回退到 `current-truth surface candidate / unknown` 旧词。
+- `2026-04-13` source-quality deep pages 的最新稳定模板也应继续写死：`architecture/README` 现在应保留一正一反 object-level worked example，帮助 later maintainer 区分 `permission_mode` 这类 promotion-passed writer object 与 `CLAUDE.md / hooks / skills / permission schemas` 这类仍可能只是 `surface candidate` 的 operator artifact。
+- `2026-04-13` API deep map 的最新稳定模板也应继续写死：`api/30` 这类高流量 deep page 也应显式挂出 `mirror absent / public-evidence only` banner；只要 `guides/102` 还没先锁 `promotion-passed`，命令、工具、服务、状态与宿主面都默认只按 `claim-state / provisional claim / consumer subset / gap note` 读取。

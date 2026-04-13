@@ -35,6 +35,15 @@
 
 这七栏只做对象摘要，不复写 `ceiling / downgrade / unresolved-authority` 之类证据字段；那些 promotion 纪律统一留在 `102`，`landing card` 也不承担验收卡或准入判断。若对象仍未 promotion，就把第三栏明确写成 `writer claim state`，并在卡片旁补 `unresolved-authority note`，而不是预填 landed writer truth。更稳一点说，claim-state 不应只躲在表外 prose；如果 later consumer 还要靠旁注才看出对象尚未 promotion，这张 card 仍会被误读成 object truth。若 `surface` 本身是 operator artifact，也同样必须写清 `writer claim plane`、`local veto cue` 与 `first retreat layer`，否则 later maintainer 拿到的仍只是阅读体感，而不是正式反对路径；答不出退回层的 seam 也还不配被叫作可继承的 `next-refactor entry`。更硬一点说，`first retreat layer` 默认应指向最近的 `fail-closed seam`，也就是 first no 之后先把错误 writer 降回 `no-authority / no-write` 的那一层，而不是下一步修复计划。
 
+如果只想先看一个 object-level worked example，也只先看一正一反两格：
+
+| case | 现在最该问什么 | 更稳的对象层读法 |
+|---|---|---|
+| `permission_mode` 这类 high-flow writer object | `谁在写现在 / 第一条 local veto 在哪 / stale writer 最先从哪层被拒收` | 若 `102` 已 promotion-passed，就继续把它写成 object row，去点名 `sole writer / writeback seam / first retreat layer` |
+| `CLAUDE.md / hooks / skills / permission schemas` 这类 operator artifact | `它是在签当前 present，还是只是在提供 context / gate / artifact contract` | 若 `102` 还没锁定成 object-level claim，就继续只叫 `surface candidate`；即使 later maintainer 很熟，也不能先把它预填成 `sole writer` |
+
+这张 worked example 真正要保护的也不是两个对象本身，而是 later maintainer 的阅读顺序：熟悉对象越容易诱发跳步，越要先回到 `102` 的 rung，再决定这里到底是在展开 object law，还是该把 artifact 退回 `surface candidate`。
+
 ## 对象专题索引
 
 如果要继续展开某一个对象面，可按主题进入下面页面；这些链接只是对象摘要页的专题索引，不构成固定顺序：
