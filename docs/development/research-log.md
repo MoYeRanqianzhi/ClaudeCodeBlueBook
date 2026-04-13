@@ -2,6 +2,10 @@
 
 ## 2026-04-08 本轮增量
 
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `410`、把附录推进到 `394`、把源码剖面推进到 `261`；链路从 `stronger-request irreversible-erasure-governance` 继续推进到 `stronger-request retention-governance`，说明 stronger-request cleanup 已进一步进入“现在能不能删”与“本来该保留多久、现在准不准删、哪些载体是否真的处在同一条时间法律里”之间的治理分层。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=411 / appendix=394 / source-notes=261`。当前唯一 open question 已继续前推到 `stronger-request retention-enforcement-honesty-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
+- 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `409`、把附录推进到 `393`、把源码剖面推进到 `260`；链路从 `stronger-request audit-close-governance` 继续推进到 `stronger-request irreversible-erasure-governance`，说明 stronger-request cleanup 已进一步进入“它是否已经离开未来的解释与追索世界”与“那些已经落地出来的载体现在是否也已经不在了”之间的治理分层。
+- 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=410 / appendix=393 / source-notes=260`。当前唯一 open question 已继续前推到 `stronger-request retention-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `408`、把附录推进到 `392`、把源码剖面推进到 `259`；链路从 `stronger-request archive-close-governance` 继续推进到 `stronger-request audit-close-governance`，说明 stronger-request cleanup 已进一步进入“它是否已经离开当前世界的活跃位置”与“它是否也已经离开未来的解释与追索世界”之间的治理分层。
 - 本轮新的目录同步结论：安全目录与持久化记忆现已对应到 `security=409 / appendix=392 / source-notes=259`。当前唯一 open question 已继续前推到 `stronger-request irreversible-erasure-governance for old cleanup carriers`，并继续维持“正文只写机制本体，开放问题只留在隔离记忆层”的写作边界。
 - 本轮新的专题层结论：我把 `userbook/04-专题深潜/README` 的桥句继续补齐到和根前门同强度，但仍只做专题层 frontdoor 纠偏。现在专题页更明确把 `02-连续性与记忆`、`08-上下文接入、附件与提示编译`、`12-会话发现、历史检索与恢复选择` 写成同一工作对象在时间轴上的不同接手入口；同时也把 `mode / status / usage / hook review / host replay` 降回 `weak readback / lease checkpoint` 暴露时刻，要求专题层一旦答不出 `earliest unpaid expansion -> repricing proof -> lease checkpoint -> cleanup`，就先退回 `05-控制面深挖`。当前判断是，这一步能继续减少 later consumer 在专题层把 consumer readback 写成治理说话面、或把专题分组误读成 current truth promotion 的概率。
