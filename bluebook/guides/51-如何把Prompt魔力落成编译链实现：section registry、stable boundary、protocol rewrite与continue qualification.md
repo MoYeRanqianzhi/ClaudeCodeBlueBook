@@ -1,6 +1,6 @@
 # 如何把Prompt魔力落成编译链实现：section registry、stable boundary、protocol rewrite与continue qualification
 
-这一章不再解释 Prompt 为什么有魔力，而是把 Claude Code 式 Prompt 编译链压成一张可实现的 builder-facing 手册。
+这一章不再解释 Prompt 为什么有魔力，而是把 Claude Code 式 same-world compiler 压成一张可实现的 builder-facing 手册；文件名里的“Prompt 魔力”只保留为检索 alias，不再充当实现主语。
 
 它主要回答五个问题：
 
@@ -29,6 +29,7 @@
 这些锚点共同说明：
 
 - Claude Code 的 Prompt 魔力，不在“更会写”，而在“更会把世界编译成可缓存、可转写、可继续的请求对象”。
+- 更准确地说，builder-facing 的正式对象链仍只认 `message lineage -> section registry / stable boundary -> protocol transcript -> continuation object -> continuation qualification`；`compiled request truth` 在这里最多只是旧总称。
 
 ## 1. 第一性原理
 
@@ -74,9 +75,9 @@ Claude Code 真正先固定的不是措辞，而是 Prompt 资产的组织法：
 2. 不要让多个入口同时改写 section 主权。
 3. 不要把 `/clear`、`/compact`、resume 等重置点写成隐式副作用。
 
-## 3. 第二步：只允许一个 compiled request truth 生产者
+## 3. 第二步：只允许一个 same-world request producer
 
-Claude Code 真正复用的不是聊天历史，而是主线程留下的 cache-safe 请求对象。
+Claude Code 真正复用的不是聊天历史，而是主线程留下的 cache-safe same-world request object；`compiled request truth` 在这里最多只是这个对象的旧总称。
 
 这意味着：
 
@@ -86,7 +87,7 @@ Claude Code 真正复用的不是聊天历史，而是主线程留下的 cache-s
 
 构建动作：
 
-1. 先定义唯一 compiled request truth producer。
+1. 先定义唯一 same-world request producer。
 2. 先把 tool schema 当作 Prompt ABI，而不是外围细节。
 3. 先定义谁可以补边，谁只能继承。
 

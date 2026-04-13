@@ -53,6 +53,17 @@
 | `provisional claim` | 对象仍缺 promotion 所需证明，但缺口可被明确记成 `downgrade stamp + unresolved-authority note` |
 | `gap / candidate note` | 连对象层 authority、签字权层级或第一条回退都还说不清，只配停在 ceiling / gap / candidate |
 
+如果要把 owner page 的 handoff 继续压成统一可见的 `evidence stamp`，最小也只先写四格：
+
+| stamp field | 允许值 |
+|---|---|
+| `evidence mode` | `mirror present` / `mirror absent` / `public-evidence only` |
+| `rung` | `object-level claim` / `host-facing truth claim-state` / `consumer subset` / `why` / `gap` |
+| `verdict` | `promotion-passed` / `provisional claim` / `gap note` |
+| `retreat` | 当前最靠近的 `local veto cue / first retreat layer` |
+
+owner page 不必把这四格都做成固定卡片样式，但若 later maintainer 需要翻两段 prose 才看出这四项，handoff 就仍然太依赖作者解释。
+
 这条线最短的 reject trio 也只认：
 
 1. `layout-first drift`
