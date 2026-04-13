@@ -2,6 +2,10 @@
 
 ## 2026-04-14
 
+- 继续更新 `bluebook/architecture/README.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 source-quality handoff 协议：`architecture/README` 现在把 `87` 的 why-proof 接成 file-level object landing，对 `63 / 60 / 69 / 72 / 84` 给出直接 handoff，并把 owner README 层必须显式可见的 `evidence mode / rung / verdict / retreat` 写成最小 `evidence stamp`。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `architecture/README` handoff 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
 - 继续更新 `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 witness-ownership 协议：`philosophy/81` 现在把 canonical witness chain 固定成逐跳 `owner / producer / local veto / consumer` 表，明确哪一跳配签世界连续性、哪一跳只负责生产、哪一声 `no` 应先落在哪里，并把 summary / session memory / handoff prose / sticky prompt 等 surface 继续压回 carrier。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `philosophy/81` witness-ownership 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。

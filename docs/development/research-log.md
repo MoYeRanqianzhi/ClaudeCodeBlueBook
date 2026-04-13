@@ -2,6 +2,12 @@
 
 ## 2026-04-14 本轮增量
 
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `architecture/README` handoff 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `architecture/README` handoff 结论：我只对 `bluebook/architecture/README.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`architecture/README` 现在把源码质量线继续压成单源 handoff：新增 `why-proof -> object landing` 的 file-level 对照，把 `87` 的三条 why-proof 直接接到 `63 / 60 / 69 / 72 / 84` 这些对象卡；同时也把 owner README 层必须显式可见的 `evidence mode / rung / verdict / retreat` 写成最小 `evidence stamp`。当前判断是，这一步能把源码质量线继续从“目录级 handoff”推进到“later maintainer 一眼就能离场去具体对象卡”的 file-level landing。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当 why-proof 已经成立后，更稳的默认追问不该是“README 里还要不要再多列一些对象名”，而应先问“later maintainer 能不能不做二次映射，就直接从 why-proof 落到最近的对象卡”；若还要靠目录体感自己猜 landing，handoff 就仍然太依赖作者脑内地图。当前判断是，这个问法能继续把源码质量线从“索引更全”拉回“handoff 是否真正降低 later-maintainer 重判成本”的 first-principles discipline。
+
 - 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `philosophy/81` witness-ownership 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
 
 - 本轮新的 `philosophy/81` witness-ownership 结论：我只对 `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`81` 现在把 canonical witness chain 继续压硬成逐跳 `owner / producer / local veto / consumer` 表，明确 `message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict` 各自签什么、谁生产、第一声 `no` 落在哪、哪些 surface 只配当 carrier。当前判断是，这一步能把 Prompt 魔力线继续从“signer vs carrier 的 general slogan”推进到 builder-facing ownership map，减少 `30 / 54 / 06` 在下游页重发半套 witness semantics 的诱因。
