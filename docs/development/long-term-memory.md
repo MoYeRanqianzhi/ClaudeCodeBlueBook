@@ -13,6 +13,21 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-why-owner-residual-batch-apr13 live` 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`
+- 当前批次继续新增一条 `81-should-keep-one-canonical-witness-schema-apr13 live` 记忆：
+  - `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 现在也应直接写死：builder-facing mechanism 页不再并列保留 signer/carrier 表、handoff package 表、lawful forgetting ABI 表与 pass/reject 表这四组近似矩阵
+  - 更稳的默认写法是：`81` 只保留一条 canonical witness chain，加一套最必要的 builder-facing schema；其余 worked example 与 verdict 规则不得重复叠表
+- 当前批次继续新增一条 `85-should-state-single-pricing-law-without-tail-chain-species-list-apr13 live` 记忆：
+  - `bluebook/philosophy/85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md` 现在也应直接写死：why owner 页可以固定 `single pricing order / single repricing furnace`，但不再展开长串 `weak readback / host replay / reopen eligibility / cleanup receipt / auto mode / settings` species list
+  - 更稳的默认写法是：`85` 只说安全阻止危险扩张免费续租，省 token 阻止昂贵扩张免费续租；任何尾链越权统一回 `repricing seam`
+- 当前批次继续新增一条 `86-should-answer-one-writable-present-not-reissue-ladder-apr13 live` 记忆：
+  - `bluebook/philosophy/86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md` 现在也应直接写死：`86` 只回答为什么必须先守住 `one writable present`，不再在 why 页重发 `contract -> registry -> claim-state -> consumer subset -> hotspot kernel` 这类外层 ladder
+  - 更稳的默认写法是：外层顺序统一回 `guides/102` 与 `architecture/README`，`86` 只消费那条顺序最终交到这里的 why 问题
+- 当前批次继续新增一条 `87-should-use-overread-standard-not-compact-gate-table-apr13 live` 记忆：
+  - `bluebook/philosophy/87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md` 现在也应直接写死：`layout praise / provisional why / object-check ready` 更适合作为 prose review standard，而不是一张过于紧凑的 compact gate 表
+  - 更稳的默认写法是：`87` 只阻止 later consumer overread，不用表格暗示 why owner 正在代行第二张 gate
 - 当前批次继续新增一条 `root-sync-healthy-for-owner-page-batch-apr13 live` 记忆：
   - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
   - 更稳的默认写法是：把这次 root preflight 只记作本批次 live premise；正文、记忆与提交继续只落在 `.worktrees/mainloop`

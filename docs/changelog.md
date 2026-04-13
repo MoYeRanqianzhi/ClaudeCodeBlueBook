@@ -2,6 +2,10 @@
 
 ## 2026-04-13
 
+- 继续更新 `bluebook/philosophy/{81-请求编译链：可缓存、可转写、可继续.md,85-真正成熟的治理，不是更会拦截，而是更会为扩张定价.md,86-真正先进的内核，不是更会分层，而是更会阻止过去写坏现在.md,87-真正成熟的源码质量判断，不是文件更小，而是复杂度中心合法、边界可证、下一次重构仍有路.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 why-owner residual 协议：`81` 现在只保留一条 canonical witness chain，不再堆叠多组近似矩阵；`85` 现在更纯粹地固定 `single pricing order / single repricing furnace`，不再展开长串 tail-chain species list；`86` 现在退出外层 ladder，只回答为什么 later maintainer 必须先守住 `one writable present`；`87` 则把 `layout praise / provisional why / object-check ready` 收回成 prose review standard，不再像 compact gate 表。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
+
 - 继续更新 `bluebook/{philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md,philosophy/81-请求编译链：可缓存、可转写、可继续.md,10-治理收费链入口卡：最早 unpaid expansion、reject trio 与弱读回面.md,security/README.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 owner-page boundary 协议：`84` 现在只固定 Prompt why、owner law 与 verdict box，不再自己带字段级 worked example；`81` 现在开门就展开 canonical witness chain，不再先罗列更像前门压缩路由的 noun inventory；`10` 现在只保留治理四问、三格 typed-state 与 `reject trio`，不再自己发布 tail-action matrix；`security/README` 也同步退回 `signer / verdict ledger / cleanup authority` 三类 ambiguity，不再自己带 typed-state bridge。
 
 - 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-13 本轮在根仓 `/home/mo/m/projects/cc/analysis` 的 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；这次同步只作为 live premise 记录，正文与提交继续只落在 `.worktrees/mainloop`。
