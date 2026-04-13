@@ -19,13 +19,15 @@
 
 ## 1. 先说结论
 
-Claude Code 的 prompt 魔力，如果从第一性原理收束，最稳的前门不是“七层叠加”，而是：
+Claude Code 的 prompt 魔力，如果从第一性原理收束，首先不是把模型说服得更彻底，而是把 later consumer 本来要重做的世界重判、动作搜索与排除理由重写提前退休。
 
-- `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability`
+强 Prompt 因而首先是一个 `decision-retirement system`：`verify / delegate / tool choice / resume / handoff` 之后，接手者继承的必须是同一份工作对象、同一批仍被排除的分支，以及同一条 `continue-or-reject verdict`。
 
-“约束叠加与状态反馈”仍然成立，但它现在只是这六个 nouns 的 runtime 现象，而不是另一套 frontdoor。
+所以用户感到它“更聪明”，往往不是回答能力凭空增强，而是 runtime 先裁掉了谁能发言、哪些动作合法、哪些分支已死、何时配继续这四类待判变量。
 
-把旧的“七层叠加”回译回这六个 nouns，大致对应成：
+“约束叠加与状态反馈”仍然成立，但它现在只是这套退休机制的 runtime 现象，而不是另一套 frontdoor。
+
+如果再把这套退休机制拆回旧的六个 nouns，大致对应成：
 
 1. 装配顺序：
    - `Authority`
@@ -183,4 +185,4 @@ Prompt 母线在这一页真正该守住的 reject trio 是：
 
 ## 7. 一句话总结
 
-Claude Code 的 prompt 魔力，不是神秘文案，而是把“约束叠加与状态反馈”正式压回 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 这一条同一世界编译链。
+Claude Code 的 prompt 魔力，不是神秘文案，而是系统把 exclusion discipline、lawful inheritance 与 later-consumer 的拒收权一起保住，从而持续退休掉没有新增决策增益的世界重判。

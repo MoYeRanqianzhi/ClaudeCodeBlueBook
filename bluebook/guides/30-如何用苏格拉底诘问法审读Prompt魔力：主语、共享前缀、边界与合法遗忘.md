@@ -27,7 +27,7 @@
 
 这些锚点共同说明：
 
-- Claude Code 的 Prompt效力不是某段文案写得更凶，而是 `message lineage`、共享前缀、consumer 分层、合法遗忘与 continuation qualification 被共同治理。
+- Claude Code 的 Prompt效力不是某段文案写得更凶，而是 later consumer 原本要重做的世界重判、动作搜索与排除理由重写被系统提前退休；`message lineage`、共享前缀、consumer 分层、合法遗忘与 continuation qualification 只是这套退休机制被保住的实现对象。
 
 ## 1. 对象对照：旧词汇与当前审读对象
 
@@ -82,9 +82,13 @@
 
 - 这套 prompt 是否已经把 lineage kernel、projection consumer、continuation qualification 与 lawful forgetting 组织成同一条制度链
 
+凡声称“仍是同一世界”，都必须能点名 witness：authority owner、stable prefix ref、`protocol transcript` ref、`continuation object` ref、`continue-or-reject verdict`。没有 witness，就不是继承，只是叙述。
+
 ## 3. 苏格拉底可执行判定链
 
-执行协议先固定为四步：
+执行协议先固定为五步：
+
+0. Gate-0：先写明这次系统试图退休的决策是什么、谁继承这项退休、下一位 consumer 凭什么拒绝重放。
 
 1. 输入：`compiled request truth`、`witness chain`、consumer matrix、当前 continuation object。
 2. 每个 gate 必须产出 `pass | fail | unknown`。
@@ -157,9 +161,9 @@
 ### 3.10 Gate-10：lawful forgetting 后是否仍保留 continuation object
 
 - 输入：compact / summary / resume 前后对象对照
-- 通过条件：forgetting 后仍可点名 continuation object、lineage ref 与资格
+- 通过条件：forgetting 后删掉的字节不改变 `continuation object`、已排除分支与 `continue-or-reject verdict`，且仍可点名 continuation object、lineage ref 与资格
 - reject signal：只剩“发生过什么”的摘要叙事
-- 失败动作：回退至 forgetting 前版本并重做 compact
+- 失败动作：回退至 forgetting 前版本并重做 compact；若只能压缩 display，而不能保住执行真相，就禁止把这次 compact 记成 lawful forgetting
 
 ### 3.11 Gate-11：handoff 是否无需重读全量 transcript 即可判定继续资格
 

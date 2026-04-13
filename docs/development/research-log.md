@@ -1,5 +1,12 @@
 # 研究日志
 
+## 2026-04-13 本轮增量
+
+- 本轮新的 Prompt why 结论：我把 `bluebook/philosophy/{14-提示词魔力来自运行时而非咒语.md,18-Prompt不是文本技巧而是契约分层.md,21-Prompt魔力来自约束叠加与状态反馈.md,54-好的Prompt同时组织模型与人类接手路径.md}` 与 `bluebook/guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md` 一起再压硬了一轮，但仍只做 why/frontdoor 级收束。`14 / 21` 现在不再只说 `decision-retirement system`，而更明确把“更聪明”的体感写成 runtime 先裁掉谁能发言、哪些动作合法、哪些分支已死、何时配继续这四类待判变量；`18` 现在把分层从 taxonomy 压回继承法，明写各层能立法、实例化、缩窄、委派或绑定对象，但不配复活已退休分支；`54` 则把人类接手写成另一个 lawful consumer，而不只是体验更顺；`30` 还补上了 `Gate-0` 与合法遗忘不变量，要求 same-world、handoff 与 lawful forgetting 必须点名 witness、`continue / reject / reopen` 条件。当前判断是，这一步能继续减少 later consumer 把 Prompt 魔力读回语气、结构 inventory 或 UX 体感的概率。
+- 本轮新的根仓同步结论：再次执行 `git fetch origin main` 后，根仓 `/home/mo/m/projects/cc/analysis` 的 `git merge --ff-only origin/main` 直接返回 `Already up to date.`，`git status --short --branch` 也仍是干净的 `main...origin/main`。本轮继续严格只在 `.worktrees/mainloop` 内推进与提交，不触碰根仓正文。
+- 本轮新的 Prompt 迁移模板结论：我把 `bluebook/guides/57-如何把Prompt宿主迁移失真压回compiled request truth：固定纠偏顺序、拒收规则与模板骨架.md` 的前门从“几个 consumer 是否重新对齐”继续压回了 later-consumer 的合法继承。现在这页不再把 `shared_consumer_surface` 读成纠偏主语，而明确写成继承成立后的见证；`protocol transcript / stable prefix boundary / lawful forgetting boundary` 也被并列收成“哪些内容被正式继承、哪些判断已经退休”的联合证明。当前判断是，这一步能继续减少 later consumer 在修复模板页里把 surface 对齐误读成 handoff 真相的概率。
+- 本轮新的 userbook 根前门结论：我把 `bluebook/userbook/README.md` 再压回纯分型与单跳。根页现在不再代判 ask 是否仍属 `zero-delta`、继续资格是否仍成立，而更明确把弹窗、`status`、`usage`、继续入口与摘要统一压成 `weak readback / lease checkpoint`；一旦怀疑出现 `unpaid expansion`、`continuation lease` 漂移或旧 authority 未清空，就统一单跳进 `05-控制面深挖` 或蓝皮书治理入口。当前判断是，这一步能继续减少 later consumer 在 userbook 根页把控制面 readback 当成治理 verdict 的概率。
+
 ## 2026-04-08 本轮增量
 
 - 本轮新的安全研究结论：`.worktrees/claude-code-risk-analysis` 已继续把安全正文推进到 `410`、把附录推进到 `394`、把源码剖面推进到 `261`；链路从 `stronger-request irreversible-erasure-governance` 继续推进到 `stronger-request retention-governance`，说明 stronger-request cleanup 已进一步进入“现在能不能删”与“本来该保留多久、现在准不准删、哪些载体是否真的处在同一条时间法律里”之间的治理分层。
@@ -7898,3 +7905,34 @@
 - `2026-04-08` 本轮最后又收了一个更窄的源码地图 fail-closed 批次，只动 `76 / 01 / 84 / 87`。这批没有再扩 later maintainer 的 why，而是继续把“先去哪说不”压到最近的 fail-closed seam：`76` 把 `consumer subset / internal-only / projection` 继续降格成“别在这里改”的提示层，`01` 把四个 chokepoint 压成四类 veto seam，`architecture/84` 把 `first retreat layer` 从修复计划收回最近撤权层，`87` 则把 why-proof 压成 first no 之后能直接跳到 fail-closed seam。
 - `2026-04-08` 随后又补了一刀更窄的治理回单越权残差，只动 `10 / security/README`。这批真正补的不是新对象，而是回单面何时越位：`10` 现在明确 `zero-delta ask` 一旦被拿来证明“已经够安全、可默认继续”，就从成本噪音升级成 `projection usurpation`；`security/README` 也把 `approval receipt / status green / modal closeout` 明确压回 ledger 读回，而不是 signer ceiling 证明。
 - `2026-04-08` 本轮再收一个更窄的 seam-type 分流批次，只动 `architecture/README / navigation/README / philosophy/76`。这一刀没有再增对象，也没有再写 why，而是继续把目录协议从“知道该去哪页”压到“知道该先找哪类 seam”：对象层 README 只负责对象级 first no 和最近 fail-closed seam，repo-specific seam type locator 则继续压回 `01`，而 `76` 把“能否给出 seam type locator”补成源码地图是否真的在减误改的自校条件。
+- `2026-04-13` 根仓预检再次执行：`git fetch origin main && git merge --ff-only origin/main` 返回 `Already up to date.`，随后仅在 `.worktrees/mainloop` 工作。
+- 本批只收 `05` 与 `09` 的源码质量 bridge residual：`05` 顶部第三条判断、长表前说明与 API 四问已统一收回 `current-truth claim state -> provisional claim + unresolved-authority note` 的 promotion 纪律；`09` 则把 `current-truth surface` 明确降成兼容旧词，只保留 current-truth crosswalk / mirror，并把 `promotion / downgrade / unresolved-authority note` 明确回链到 `guides/102`。
+- 这一刀的第一性原理很窄：bridge 页只能判断“公开证据是否足够 promotion”，不能代答“谁在写现在”；凡 summary / taxonomy 还想越位代签 current truth，都应先按 speaking-rights 回潮处理。
+- 并行 sidecar 的 Prompt 深挖也回收了一条更硬的稳定句法：Prompt 的“魔力”来自删掉重判成本，而不是增强说服力。更具体地说，强 Prompt 是 `decision-retirement system`，它要求 later consumer 继承同一份工作对象以及同一批被排除分支；若 handoff 只剩更短叙述，却没有保住 exclusion discipline，就仍会掉回 same-world failure。
+- 并行 sidecar 的安全/省 token 深挖则把第二条母线继续压硬：最先该问的不是 ask 多不多，而是 `earliest unpaid expansion` 是什么；任何不能新增 `repricing / deny / cleanup` 决策增益的 ask 都应记成 `zero-delta ask`。`compact / resume / memory` 也只消费 continuation lease，不重签 `world-definition` 或 reopen signer。
+- 并行 sidecar 的源码质量深挖进一步确认：目录价值只在于更快把 later maintainer 送到 authority file、seam type、`first local veto cue` 与 `first retreat layer`。因此本批又追加收了 `api/README`、`api/30` 与 `navigation/35`：前两者把 canonical ladder 从 `current-truth surface` 收回 `current-truth claim state`，后者把 reject handoff 从 why 页收回 repo seam locator + object owner。
+- sidecar 也暴露了下一批更窄 residual：`api/46-48` 仍把不少 registry / consumer subset / continuation asset 说成 `current-truth surface`。这批先不在模板页大改，只把它记成后续优先残差，避免在同一轮把分类图写回 owner 页。
+- `2026-04-13` 当前批次继续前推这一刀，只动 `api/46-48`。`services` 页现在把第三格拆成 `current-truth claim state / continuation pricing-cleanup state / continuation asset-readback / admitted capability state / bridge capability subset / diagnostic-recovery readback`；`tools` 与 `commands` 页则统一改成 `admitted tool surface / admitted command surface`，把 visible set、command shell 与 readback 面从 signer 词法里降出来。
+- 本批后做了一次剩余旧词扫描：`philosophy/76`、`navigation/07` 以及 `api/39/42/53/71/92` 仍有 `current-truth surface` 簇。但它们混合了地图 why、host artifact contract 与 object/protocol 页，不适合在同一批里机械全替；下一步应先拆 speaking-rights，再决定哪些该升级成 `claim state`，哪些本来就在讲对象层 writer truth。
+- `2026-04-13` 当前又起了第二个窄批次，只动 `philosophy/21` 首尾结论块。修改后，这页不再把六个 nouns 当 Prompt 魔力的前门，而是把 Prompt frontdoor 固定成 later consumer 的世界重判退休、排除分支继承与 `continue-or-reject verdict` 继承；中段旧 `Authority / Boundary / Transcript / Lineage / Continuation / Explainability` 结构则继续保留为解释层。
+- 这一刀的第一性原理同样很窄：不是否定六个 nouns，而是把它们从 frontdoor 降成 runtime phenomena。只要 Prompt why 还把 nouns 链条放在 later-consumer rights 之前，读者就仍会把 Prompt 魔力误读成结构 inventory，而不是 decision-retirement。
+- `2026-04-13` 当前又起了第三个窄批次，只动 `userbook/05-控制面深挖/README.md` 与 `06-Status、Doctor、Usage：运行时自检、额度与诊断.md`。这批把 `approval receipt / status green / usage readback` 正式压成 `zero-delta ask / weak readback`，并明确：它们不新增 signer 证据、不补 `repricing proof`、不替同一条 `authority lease` 续租。
+- 这一刀的第一性原理也很窄：runtime projection 页只该帮助用户知道“该退回哪层”，不该把 repeated allow、modal closeout 或 `Context Usage` 变绿写成新的治理事实。若 projection 开始代签 continue，就说明 consumer 又长成了 shadow compiler / shadow pricing surface。
+- `2026-04-13` 当前又起了第四个窄批次，只动 `philosophy/76` 与 `navigation/07`。这批把 map/why 页里的 canonical wording 从 `current-truth surface` 收回 `current-truth claim state`，并把 “哪个对象面更接近 sole writer” 明确和公开镜像 promotion 问题拆开，防止 later maintainer 在 why 页把证据梯度和对象 truth 混成一层。
+- 这一刀的第一性原理同样很窄：地图页与方法页只负责告诉读者“是否已经够 promotion / 应先沿哪条方法线审读”，不负责替对象页宣布 present writer。只要 why 页还在用 `current-truth surface` 当 canonical rung，读者就仍可能把对象层 writer truth 错读成公开镜像默认结论。
+- `2026-04-13` 当前又起了第五个窄批次，只动 `philosophy/14` 的两处“魔力”句子位。修改后，这页不再把 `message lineage / handoff truth` 直接当 Prompt 魔力本体，而把它们降回 runtime 保住 `decision-retirement / exclusion preservation / lawful inheritance` 之后显现出来的表现层。
+- 这一刀的第一性原理也很窄：Prompt 样本页的前门必须先回答 later consumer 为什么不必重做世界重判；`lineage / handoff truth` 这类 nouns 只配回答这套退休机制怎样被保住。只要样本页还先讲 nouns，再讲 later-consumer rights，Prompt 魔力就会再次退回结构 inventory。
+- `2026-04-13` 当前又起了第六个窄批次，只动 `navigation/07` 的合同优先方法线。这里把上一刀误灌进去的 `current-truth claim state` 撤回对象层 `current-truth surface / host-facing truth`，因为这条方法线在讲 contract-first 的对象阅读顺序，不在讲公开镜像证据分级。
+- 这一刀的第一性原理是术语归位：`claim state` 只回答“公开证据是否够 promotion”，而 `current-truth surface / host-facing truth` 才回答对象层“谁在说现在”。只要把两者并排写成同一方法链，later maintainer 就会把 source-quality rung 错学成 contract-first 常规对象入口。
+- `2026-04-13` 当前又起了第七个窄批次，只动 `philosophy/18` 首尾结论块。修改后，这页不再把“分层契约”本身当前门，而是明确这些层在不同稳定度上共同服务 same-world 的 `decision-retirement system`；中段四层结构继续保留为解释层，不重写为另一套 owner 页。
+- 这一刀的第一性原理也很窄：Prompt 分层之所以值钱，不在“分层”本身，而在 later consumer 不必每轮重做世界重判。只要样本页还把 layering 先于 later-consumer rights 说成 Prompt 本体，它就仍会把 Prompt 魔力误读成结构分层体感。
+- `2026-04-13` 当前又起了第八个窄批次，只动 `guides/30` 的页首结论句。修改后，这页不再把 `message lineage` 当前门，而是先把 Prompt 效力写成 later consumer 的世界重判退休，再把 `message lineage / prefix / lawful forgetting / continuation qualification` 降回支撑这套退休机制的实现对象。
+- 这一刀的第一性原理同样很窄：guide 层也必须先回答“为什么接手者不必重做世界重判”，否则苏格拉底审读很容易退回“审 lineage / prefix 这些构件是否存在”，而不是在审它们是否真的减少了 later-consumer 的重判成本。
+- `2026-04-13` 当前又起了第九个窄批次，只动 `api/53` 的 section 0/1 framing。修改后，这页不再把归档源码锚点与宿主消费候选写成当前 worktree 已核实的正式支持面，而是显式压回 `mirror absent / public-evidence only`：源码路径只算 archival anchors，host-facing 面只先算 candidate，待镜像回场后再升级为已核实 truth / ABI 边界。
+- 这一刀的第一性原理也很窄：在 evidence mode 不满足时，host-facing protocol 页也不能偷拿 object truth 的 certainty。只要 `api/53` 这种页还把 archival anchors 写成 live evidence，later maintainer 就会把 claim-state ceiling 错学成对象层已核实事实。
+- `2026-04-13` 当前又起了第十个窄批次，只动 `philosophy/54` 与 `playbooks/09` 的 Prompt 体验叙事前门。修改后，这两页不再把价值写成“人类更容易接手 / handoff continuity 更好”，而是明确 later consumer 不必重判世界、重搜动作空间，也不必把已排除分支重新拉回候选集。
+- 这一刀的第一性原理同样很窄：Prompt rollout 和 Prompt why 页都不能把“接手更顺”当前门，因为那会把合法继承退回体验叙事。只要 state / summary / handoff 还被写成被继承的本体，而不是继续资格的载体，later-consumer rights 就会再次退回 secondary effect。
+- `2026-04-13` 当前又起了第十一个窄批次，只动 `userbook/05-控制面深挖/README.md`。这批继续做 route-only 减法：把本地复述的 `weak readback / continuation consumer / reopen tail evidence / authority lease` 解释压回分流句，只保留“回 `10` 判 repricing / cleanup、回相邻 `03` 看 continuation consumer、回 `risk/README` 看 cleanup 后读回”的最小路由。
+- 这一刀的第一性原理也很窄：section README 只能回答“你现在该退回哪层”，不该重复 owner 页已经稳定下来的解释。只要 README 还在本地重讲 lease、readback 与 reopen taxonomy，它就仍会偷拿治理与风险页的发言权。
+- `2026-04-13` 当前又起了第十二个窄批次，只动 `api/39` 与 `api/42` 的开头/总结口径。修改后，这两页不再把共享 artifact 字段与 rule packet 写成“对象真相已经成立”，而是明确：它们当前只共享一组可公开复核的源码锚点，帮助外部读者判断是否仍在指向同一 `current-truth surface`。
+- 这一刀的第一性原理也很窄：artifact/rule 协议页只负责“如何复核到同一 current-truth surface”，不负责代替对象页宣布 writer truth。只要 `same-current-truth` 被写成对象真相本身，而不是可公开检查的见证条件，later maintainer 就会把 packet-level evidence 错读成 object-level certainty。

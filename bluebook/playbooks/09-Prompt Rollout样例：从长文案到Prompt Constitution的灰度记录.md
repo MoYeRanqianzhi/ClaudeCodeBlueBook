@@ -6,7 +6,7 @@
 
 1. 一套旧式长文案 prompt 系统如何渐进迁到 Prompt Constitution。
 2. rollout 期间应留下哪些可复查的 diff、指标和回退记录。
-3. 怎样判断 section、边界、共享前缀与 handoff 连续性是否真的变好。
+3. 怎样判断 section、边界、共享前缀与 later-consumer 继续资格是否真的变稳。
 4. 怎样避免“文案变了很多，但制度并没有稳定下来”的假迁移。
 5. 怎样用苏格拉底式追问避免把 rollout 样例写成成功学故事。
 
@@ -32,7 +32,7 @@
 3. stable prefix 与 dynamic boundary 分开。
 4. 共享前缀生产权单一。
 5. lawful forgetting ABI 成立。
-6. handoff continuity 可被状态与摘要共同继承。
+6. state 与 summary 只作为载体，而真正被合法继承的是同一工作对象、同一组排除结果与同一条继续资格判定。
 
 ## 2. 最小 diff 样例
 

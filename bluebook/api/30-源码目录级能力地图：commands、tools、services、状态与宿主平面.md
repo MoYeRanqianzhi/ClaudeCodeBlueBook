@@ -7,7 +7,7 @@
 1. `public artifact ceiling`
    - 先分清公开镜像到底签到了什么 contract、哪些只是 operator-governance artifact、哪些还处在 runtime-core 缺口里。
 2. 源码真相顺序
-   - `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline`
+   - `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline`
 
 文件名里的 `authoritative surface / adapter subset / hotspot gap discipline` 只保留为兼容检索别名，不再拥有首答权。
 
@@ -15,7 +15,7 @@
 
 1. `contract`
 2. `registry`
-3. `current-truth surface`
+3. `current-truth claim state`
 4. `consumer subset`
 5. `hotspot kernel`
 6. `mirror gap discipline`
@@ -74,12 +74,12 @@ Claude Code 的目录先进性，首先不是：
 
 这层不等于当前真相面。它回答的是存在面和装配面，不回答谁现在有写权。
 
-### 1.3 `current-truth surface`
+### 1.3 `current-truth claim state`
 
-`current-truth surface` 再回答：
+`current-truth claim state` 再回答：
 
-- 谁在宣布现在
-- 谁在写回 now
+- 哪些公开入口已经足够支持“谁在宣布现在、谁在写回 now”的 claim
+- 哪些入口在公开镜像里还只配停在 `provisional current-truth claim`
 
 代表性入口：
 
@@ -88,8 +88,8 @@ Claude Code 的目录先进性，首先不是：
 3. `src/services/api/sessionIngress.ts`
 4. `src/cli/structuredIO.ts`
 
-这层是 `one writable present` 的正式入口。只要 stale snapshot、event replay 或 UI 投影还能越权写现在，这层就还没有站稳。
-若 sole writer、writeback seam 与 freshness guard 还没锁定，在公开镜像里最多只能先把它写成 `current-truth surface candidate`，不能提前宣布 present truth 已经成立。
+这层是在公开镜像里判断 `one writable present` 是否已经够 promotion 的证据状态。只要 stale snapshot、event replay 或 UI 投影还能越权写现在，这层就还没有站稳。
+若 sole writer、writeback seam 与 freshness guard 还没锁定，在公开镜像里最多只能先把它写成 `provisional current-truth claim`，并同步补一条 unresolved-authority note，不能提前宣布 present truth 已经成立。
 
 ### 1.4 `consumer subset`
 
@@ -178,7 +178,7 @@ Claude Code 的目录先进性，首先不是：
 
 这组文件最不该被目录地图边缘化，因为它们更接近：
 
-- current-truth surface
+- current-truth claim state
 - hotspot kernel
 
 它们共同保护的，是：
@@ -226,7 +226,7 @@ later maintainer 最该先学会的，不是“有哪些目录”，而是：
 
 1. 先找到 contract。
 2. 再找到 registry。
-3. 再找到 current-truth surface。
+3. 再判断 current-truth claim state 是否已经够 promotion。
 4. 再问自己现在看到的是不是只是 consumer subset。
 5. 再判断哪个 hotspot kernel 是合法复杂度中心。
 6. 最后再决定哪些结论只能在 mirror gap discipline 下保守表达。
@@ -247,4 +247,4 @@ later maintainer 最该先学会的，不是“有哪些目录”，而是：
 
 ## 7. 一句话总结
 
-源码目录级能力地图真正值钱的，不是把 `commands / tools / services / 状态 / 宿主` 排成几列，而是持续把 later maintainer 拉回 `contract -> registry -> current-truth surface -> consumer subset -> hotspot kernel -> mirror gap discipline` 这条 canonical ladder。
+源码目录级能力地图真正值钱的，不是把 `commands / tools / services / 状态 / 宿主` 排成几列，而是持续把 later maintainer 拉回 `contract -> registry -> current-truth claim state -> consumer subset -> hotspot kernel -> mirror gap discipline` 这条 canonical ladder。

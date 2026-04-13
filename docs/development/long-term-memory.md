@@ -8,6 +8,21 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 prompt-why-must-name-search-pruning-apr13 live 记忆：
+  - `philosophy/14` 与 `21` 现在也应直接写死：所谓 Prompt “更聪明”，不是模型被文案增强，而是 runtime 先裁掉了谁能发言、哪些动作合法、哪些分支已死、何时配继续这四类待判变量
+  - 更稳的默认写法是：先写 `decision-retirement / search-pruning / renegotiation shrinkage`，再写 `lineage / boundary / transcript / continuation` 这些 runtime objects；否则 later consumer 仍会把 Prompt 魔力读回结构 inventory
+- 当前批次继续新增一条 prompt-lawful-inheritance-must-be-written-as-law-apr13 live 记忆：
+  - `philosophy/18`、`54` 与 `guides/30` 现在也应直接写死：分层不是分桶，而是继承法；人类接手不是体验优化，而是另一个 lawful consumer；`same-world`、`lawful forgetting` 与 handoff 都必须点名 witness 与 continue/reject/reopen 条件
+  - 更稳的默认写法是：静态法负责立法与排除，动态法只实例化环境，角色法只能缩窄或显式委派，现场法只能绑定对象；`Gate-0` 先问“这次系统试图退休什么决策、谁继承、谁有权拒绝重放”，`lawful forgetting` 则必须写成“不改变 continuation object、已排除分支与 continue/reject verdict”
+- 当前批次继续新增一条 userbook-root-must-stay-route-only-on-governance-apr13 live 记忆：
+  - `userbook/README` 现在也应直接写死：根前门只负责 `上下文送错 / 扩张或权限判错 / 旧状态污染` 的问题分型与单跳，不在根页代判这次 ask 是否仍属 `zero-delta`、继续资格是否仍成立
+  - 更稳的默认写法是：弹窗、`status`、`usage`、继续入口与摘要统一只算 `weak readback / lease checkpoint`；一旦怀疑存在 `unpaid expansion`、`continuation lease` 漂移或旧 authority 未清空，就单跳回 `userbook/05` 或蓝皮书治理入口
+- 当前批次继续新增一条 prompt-migration-guide-must-frontdoor-lawful-inheritance-apr13 live 记忆：
+  - `guides/57` 现在也应直接写死：Prompt 宿主迁移纠偏先救回的不是几个 consumer 的对齐感，而是 later consumer 对同一工作对象、继续资格与已排除分支的正式继承权；`shared_consumer_surface` 只配当继承成立后的 witness
+  - 更稳的默认写法是：`protocol transcript / stable prefix boundary / lawful forgetting boundary` 必须一起说明哪些内容被正式继承、哪些判断已经退休；若 later consumer 仍需作者口述才能继续，修好的仍只是展示一致性
+- 当前批次继续新增一条 root-sync-healthy-clean-apr13-batch4 live 记忆：
+  - 2026-04-13 本轮起手在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`，`git status --short --branch` 当前为干净的 `main...origin/main`
+  - 更稳的默认写法是：根仓若健康且干净，只把预检结果记作外部事实；正文、记忆与提交继续只落在 `.worktrees/mainloop`
 - 当前批次继续新增一条 topic-layer-must-not-regrant-prompt-or-governance-verdicts live 记忆：
   - `userbook/04-专题深潜/README` 现在也应直接写死：专题页按工作对象聚类，不等于 current truth 已被 promotion；`02 / 08 / 12` 只是同一工作对象的不同接手入口，不是三套各自改判的 first answer；`mode / status / usage / hook review / host replay` 这类专题入口信号最多只算 `weak readback / lease checkpoint`
   - 更稳的默认写法是：专题层只负责工作对象翻译、最小顺序提示与退出条件；若 `same-world test` 失败，就先回 `08`；若治理尾链答不出 `earliest unpaid expansion -> repricing proof -> lease checkpoint -> cleanup`，就先回 `05`
@@ -4644,3 +4659,27 @@
 - `2026-04-08` 源码地图线也应继续再细一层：`consumer subset / internal-only / projection` 最多只配告诉 later maintainer “别在这里改”，还不算真正的 `first no`。真正的单跳 veto 还必须继续落到某个 `local veto cue` 与最近的 fail-closed `first retreat layer`；若地图只能给出 grep 起点，却说不清 seam 类型与最近撤权层，它仍只是减搜索，不是减误改。
 - `2026-04-08` 治理线也应继续固定一条更细的越权边界：`approval receipt / status green / modal closeout` 这类回单面即使带着“已允许”措辞，也最多证明 ledger 上记过一次 verdict，不证明 signer ceiling 合法。若团队开始拿这类 receipt 反推“谁配批准”或“已可默认继续”，就应先按 `signer ambiguity` 或 `projection usurpation` 处理。
 - `2026-04-08` 目录协议还应继续固定一条 seam-type 分流：`architecture/README` 负责对象层的 `local veto cue / first retreat layer / fail-closed seam`，`01-源码结构地图` 负责 repo-specific seam type locator。若 later maintainer 还分不清该先落到 `generation guard / server-head adoption / host truth externalization / release-surface split` 哪类 seam，就先回 `01`，而不是要求对象层 README 代做 repo grep。
+- `2026-04-13` 源码质量 bridge 页的最新稳定句法也应继续写死：`05` 与 `09` 不再把高流量 summary 页写成对象层 `current-truth surface` 判词；bridge 页只认 `current-truth claim state` 的 promotion 问题，证据不足时统一降成 `provisional claim / unresolved-authority note`，真正的 `promotion / downgrade` 纪律统一回 `guides/102`。
+- `2026-04-13` 功能/API 总览页的最新四问也应继续写死：先判入口是否存在，再判公开实现是否足够支持 `current-truth claim state`，再判是否进入稳定 `consumer subset`，最后才判 `product promise`；第二问答不清时，不得借 taxonomy 或长表代签 current truth。
+- `2026-04-13` `09` 的 current-truth crosswalk 也应继续保持 compat-only：`current-truth surface` 只保留为旧词兼容，`09` 只保留 crosswalk / mirror，不再并排发布源码质量 canonical ladder、promotion 纪律或对象层排查顺序。
+- `2026-04-13` Prompt potency 的最新稳定解释也应继续写死：强 Prompt 不是修辞强化，而是 `decision-retirement system`；它先缩掉 generation 前的 branch set，并要求 handoff / compaction 连同已排除分支一起继承。凡 later consumer 拿到的只是更短过去，而不是继续资格，就还没有拿到同一对象。
+- `2026-04-13` 安全与省 token 的最新稳定解释也应继续写死：两者不是权衡，而是同一条治理收费链的两种外观；默认顺序固定为 `earliest unpaid expansion -> repricing proof -> lease checkpoint -> cleanup`。凡 ask 不能新增 `repricing / deny / cleanup` 决策增益，就只算 `zero-delta ask`；凡 readback 只能暴露 drift / pressure，就不得代签 continue。
+- `2026-04-13` API / 源码地图层的最新稳定句法也应继续写死：`api/README`、`api/30` 与 `navigation/35` 的 canonical ladder 已统一改成 `current-truth claim state`，对象层“谁在写现在”统一回 owner 页；地图层只判断 promotion 是否够证据，不代写 present writer verdict。
+- `2026-04-13` 源码地图的最新稳定优化也应继续写死：比 file locator 更值钱的是 seam type locator。`navigation/35` 的 reject handoff 不再默认回 why 页，而先回 `01-源码结构地图` 与 `architecture/84` 这组 seam / object owner；后续若继续精修，优先收 `api/46-48` 的模板残差，不要再把分类页写成 current-truth signer。
+- `2026-04-13` `api/46-48` 的最新稳定模板也应继续写死：services 页第三格只在 `api/sessionIngress` 这类真正接近 writer seam 的位置保留 `current-truth claim state`，其余统一按 `continuation pricing / cleanup state`、`continuation asset / readback`、`admitted capability state`、`bridge capability subset`、`diagnostic / recovery readback` 降格；`tools/commands` 二级目录图则统一改写成 `admitted tool surface / admitted command surface`，不再把 visible set、command shell 或 readback 面写成 signer。
+- `2026-04-13` 本轮搜索后的下一残差也应继续记死：`philosophy/76` 与一组 host-artifact / structure 协议页仍保留 `current-truth surface` 旧词簇，但它们不全是同一类 speaking-rights 问题。后续应拆成单独批次，优先分开“地图 why 页 canonical ladder 旧词”和“对象/宿主协议页确实在谈 writer truth”的两类情况，不要混改。
+- `2026-04-13` Prompt why 页的最新稳定句法也应继续写死：`philosophy/21` 不再把 `Authority -> Boundary -> Transcript -> Lineage -> Continuation -> Explainability` 当 Prompt 魔力的前门，而把它降回退休机制的解释层。当前 frontdoor 应固定为 `decision-retirement system + exclusion preservation + lawful inheritance + later-consumer veto`。
+- `2026-04-13` Prompt 样本页的下一残差也应继续记死：`14 / 18` 等相邻 why 页仍可能保留“咒语/分层 nouns 先于 later-consumer rights”的旧句法。后续应按样本页逐页收口，不要一次性把整条 Prompt why 语料做成 repo-wide mechanical rewrite。
+- `2026-04-13` userbook 运行时投影视图的最新稳定句法也应继续写死：`userbook/05` 与 `Status / Doctor / Usage` 页现在明确把 approval receipt、status green、usage 回单压成 `zero-delta ask / weak readback`。它们只补回单，不补新的 `repricing proof`，也不能替同一条 `authority lease` 的 continuation 续租。
+- `2026-04-13` 治理 userbook 的下一残差也应继续记死：后续若继续精修，应优先收 `compact / resume / memory` 在 userbook 投影视图中的 continuation-lease 表述，而不是重开 owner 页 taxonomy。高流量 user-facing 页只负责提示该退回哪层，不负责把 receipt/readback 写成 verdict signer。
+- `2026-04-13` 源码地图 why 页的最新稳定句法也应继续写死：`philosophy/76` 与 `navigation/07` 已把地图/方法层 canonical wording 收回 `current-truth claim state`，不再把 `current-truth surface` 当公开镜像证据梯度的默认 rung。地图 why 页现在只负责“证据是否够 promotion”的方法判断；对象层“谁在写现在”继续回 owner 页。
+- `2026-04-13` 这也固定了一条新的目录纪律：凡 `philosophy/76`、`navigation/07` 这类 map/why 页出现 `current-truth surface`，都先按 speaking-rights 漂移看待，而不是按对象 truth 补写。下一残差优先转向 `14 / 18` 这组 Prompt 样本页，或更深的 host-artifact/object 协议页分批清理。
+- `2026-04-13` Prompt 样本页的最新稳定句法也应继续写死：`philosophy/14` 现在和 `21` 对齐，不再把 `message lineage / handoff truth` 直接当“Prompt 魔力”的前门，而把它降回 later-consumer 退休机制生效后的表现层。Prompt frontdoor 应继续固定为 `decision-retirement + exclusion preservation + lawful inheritance + continue-or-reject verdict inheritance`。
+- `2026-04-13` Prompt 样本页的下一残差也应继续记死：`18` 仍更像分层解释页，后续若继续精修，应优先只收它的首尾前门句法，不重写中段 contract layering 结构，也不把 `14 / 18 / 21` 再混成一次 repo-wide prompt 大清洗。
+- `2026-04-13` 还应继续记住一条术语边界纠偏：`current-truth claim state` 只属于公开镜像证据梯度与地图 why 页；`navigation/07` 这类合同优先方法线仍应回到对象层 `current-truth surface / host-facing truth`。以后若看到 `claim state / host-facing truth` 这种混写，优先按主语越界处理。
+- `2026-04-13` Prompt 样本页的最新稳定句法还应继续推进到 `philosophy/18`：分层契约不再自己充当前门，而应被写成 later-consumer 退休机制的承载层。静态法、动态法、角色法、现场法只是在不同稳定度上共同保住 exclusion discipline、lawful inheritance 与 continue-or-reject verdict inheritance。
+- `2026-04-13` Prompt guide 层的最新稳定句法也应继续写死：`guides/30` 不再把 `message lineage` 当 Prompt 效力本体，而把它降回 `decision-retirement` 被 runtime 保住的实现对象。guide 层当前门也应先回答 later consumer 为什么不必重做世界重判，再解释 lineage / prefix / forgetting 怎样共同保住这一点。
+- `2026-04-13` 更深的 host-facing/source-quality 协议页也应继续记住 evidence mode ceiling：`api/53` 现在已明确，在 `.worktrees/mainloop` 的 `mirror absent / public-evidence only` 条件下，源码路径只算 archival anchors，`rewind_files / seed_read_state / session_state_changed / pending_action / task_summary` 只先算宿主消费候选；`per-host authority width / freshness gate / recovery asset non-sovereignty` 仍只配写成 `candidate / internal-only / unknown`。
+- `2026-04-13` Prompt 体验叙事线的最新稳定句法也应继续写死：`philosophy/54` 与 `playbooks/09` 现在不再把 Prompt 价值写成“人类更容易接手 / handoff continuity 更好”，而改写成 later consumer 的合法继承条件更稳。state、summary 与 handoff 只作为载体；真正被继承的是同一工作对象、已排除分支与继续资格判定。
+- `2026-04-13` userbook 控制面 README 的最新稳定边界也应继续写死：`userbook/05/README` 只做 route-only，不再本地复述 `weak readback / continuation consumer / reopen tail evidence / authority lease` 的 owner 解释。README 现在只负责把读者送回 `10`、相邻 `03` 与 `risk/README`，不再把 section README 写成第二套治理说明书。
+- `2026-04-13` 更深的 host-artifact/object 协议页也应继续记住一条 speaking-rights 边界：`api/39` 与 `api/42` 现在不再把共享字段或 rule packet 直接写成“对象真相已经成立”，而是只写成当前公开可复核到的源码锚点/见证。对象层 writer truth 仍留在 object page；artifact/rule 页当前只共享“如何复核到同一 current-truth surface”的公共字段。
