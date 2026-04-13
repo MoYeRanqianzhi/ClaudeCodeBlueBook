@@ -92,6 +92,7 @@
 - [356-2026-04-13-capability-map recovery-horizontal-axis uplift 拆分记忆.md](./356-2026-04-13-capability-map%20recovery-horizontal-axis%20uplift%20拆分记忆.md)
 - [357-2026-04-13-governance-readme recovery-routing handoff 拆分记忆.md](./357-2026-04-13-governance-readme%20recovery-routing%20handoff%20拆分记忆.md)
 - [358-2026-04-13-runtime-readme recovery-routing handoff 拆分记忆.md](./358-2026-04-13-runtime-readme%20recovery-routing%20handoff%20拆分记忆.md)
+- [359-2026-04-13-experience-readme recovery-consumption echo 拆分记忆.md](./359-2026-04-13-experience-readme%20recovery-consumption%20echo%20拆分记忆.md)
 
 ## 全量档案
 
