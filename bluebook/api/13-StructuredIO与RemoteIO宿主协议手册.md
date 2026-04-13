@@ -1,5 +1,9 @@
 # StructuredIO 与 RemoteIO 宿主协议手册
 
+> Evidence mode
+> - 当前 worktree 若缺 `claude-code-source-code/` 镜像，这些 `src/...` 路径都只按 archival anchors 读取。
+> - 本页只回答 `host transport seam / host protocol owner / transport-side reject order`；若问题已经退回 `services/api` atlas、`state` claim-state 或 `decision window` 解释词，统一回 `30 / 36 / 55` 重新对齐 speaking right。
+
 这一章回答五个问题：
 
 1. Claude Code 的 SDK host 到底通过什么协议和 CLI worker 协作。
@@ -19,6 +23,8 @@ Claude Code 的宿主协议面至少有五层：
 5. 传输层：`StructuredIO`、`RemoteIO`、direct connect、`RemoteSessionManager`、`SessionsWebSocket`。
 
 所以宿主接入 Claude Code 时，拿到的不是“回答流接口”，而是一条双向控制协议。
+
+更硬一点说，这页不只是在列协议层数，而是在固定 `host transport seam` 的 owner page：只要 later consumer 追问的是 request/response envelope、request correlation、cancel semantics、bridge echo、remote transport reliability 或 `keep_alive` 的 effect ceiling，第一站都不该再回 `services/api` atlas，而该先回这里。
 
 关键证据：
 
@@ -358,12 +364,41 @@ direct connect 侧只做几件事：
 
 ## 8. 当前边界
 
+在边界之前，先把宿主真正该怎么读这条 seam 写死：
+
+## 8. 宿主接入顺序与 reject 顺序
+
+更稳的宿主接入顺序是：
+
+1. 先验 transport envelope：`StdinMessage / StdoutMessage / control_request / control_response / control_cancel_request` 是否还在同一条协议面里。
+2. 再验 request correlation：`request_id / pendingRequests / resolvedToolUseIds / outbound FIFO` 是否仍在维持同一条 ask。
+3. 再验 arbitration semantics：`can_use_tool / abort / hook race / bridge inject` 是否仍先落在正式仲裁对象，而不是 UI 体感。
+4. 再在这条协议面上消费 `session_state_changed / pending_action / Context Usage / worker_status` 这类状态、ask 与 usage 投影；不要反过来从 dashboard 猜 transport truth。
+5. 最后才验 remote-only 增量：header refresh、CCR internal events、direct connect / remote session 的窄化 surface。
+
+这条顺序也应和 `36` 的 shared order、`55` 的 reject order 对齐：transport seam 先负责把 ask correlation 与控制协议站住，之后状态链、usage 链与 decision window 才配成立。
+
+更稳的 reject 顺序是：
+
+1. `transport_envelope_split`
+   - stdin / stdout 联合协议被误读成“只有 assistant 文本流”。
+2. `request_correlation_missing`
+   - `request_id / pendingRequests / resolvedToolUseIds` 不再属于同一条 ask。
+3. `arbitration_race_blur`
+   - abort、hook、SDK host、bridge echo 的胜负开始靠 UI 时序猜。
+4. `keep_alive_or_internal_event_usurpation`
+   - 保活或 internal events 开始越权进入用户真相或公共承诺。
+5. `narrow_host_overclaim`
+   - direct connect / remote session 的窄 surface 被误写成完整宿主协议支持面。
+
+## 9. 当前边界
+
 需要明确三点：
 
 1. `StructuredIO` 是最完整的宿主协议层，但 direct connect 与 remote session manager 当前只实现了其中较窄的一部分，尤其聚焦 `can_use_tool` 与 `interrupt`。
 2. `update_environment_variables`、CCR internal events、bridge echo、streamlined output 里混有明显 host-specific 或 internal 语义，不能直接写成稳定公共承诺。
 3. 看到 control subtype schema，不等于每个宿主都已完整支持这一 subtype。
 
-## 9. 一句话总结
+## 10. 一句话总结
 
-Claude Code 的宿主集成面，本质上不是“assistant 文本怎么输出”，而是“runtime 如何通过显式控制协议把权限、状态、取消、扩展和远程输运统一暴露给外部宿主”。
+Claude Code 的宿主集成面，本质上不是“assistant 文本怎么输出”，而是 `host transport seam` 如何通过显式控制协议把 envelope、request correlation、仲裁、状态投影与远程输运统一暴露给外部宿主。

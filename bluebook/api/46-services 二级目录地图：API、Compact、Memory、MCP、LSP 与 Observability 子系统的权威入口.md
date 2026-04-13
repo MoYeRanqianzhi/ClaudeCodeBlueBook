@@ -69,37 +69,24 @@
 
 更硬一点说，子页可以在第三 rung 的描述里保留 `budget / continuation / capability-boundary / bridge / recovery` 这些局部 nouns，但它们都只是在解释同一条 `current-truth claim state` 的局部方言，不是新的 rung 名。
 
-再往上收一层，`services/` 也不是模块清单，而是 runtime 对请求进入、上下文续存、继续资产、外部能力、桥接暴露与观测追责逐项收费的子系统 atlas：
+再往上收一层，`services/` 也不是模块清单，而是 later consumer 在 runtime 议题上最先该回的子系统 atlas：它只帮助读者先把“请求进入、上下文续存、继续资产、外部能力、桥接暴露、观测追责”这些问题挂回对应 seam，不在本页预发 append-chain transcript、drift ledger、signer readback 或 recovery output 的对象层总论。
 
-- `api` 守请求真相
-- `compact` 与 budget 子系统守上下文与时间边界
-- `SessionMemory` 与 `PromptSuggestion` 守 continuation 资产
-- `mcp` 与 `remoteManagedSettings` 守外部能力边界
-- `analytics / logging / recovery evidence` 守执行后的结算、追责与连续性重绑
+如果问题已经进入这些对象层 artifact，就离开 atlas 页，回对应子页或 `../architecture/README.md`，不要继续让本页代签 runtime 真相。
 
-最值得先记住的 evidence object 原型至少有四个：
-
-1. append-chain transcript
-2. prompt / cache drift ledger
-3. diagnostic / internal logs
-4. signer / readback / recovery outputs
-
-如果不先看到这条主线，读者就会重新把 `services/` 误读成后台杂项集合。
-
-## 2. API / Transport 子系统
+## 2. API / Session Ingress 子系统
 
 - `contract`：
   - `claude.ts`、`sessionIngress.ts`
 - `registry`：
-  - `client.ts`、transport assembly、append-chain 入口
+  - `client.ts`、session ingress wiring、append-chain 入口
 - `current-truth claim state`：
-  - append-chain ingress、session ingress 与 transport-side claim-state
+  - append-chain ingress 与 session ingress 只先构成 API-side claim-state；若问题已经进入 `structuredIO / transport` 细缝，统一回 `30` 的 `host transport seam`
 - `consumer subset`：
   - 远程恢复路径、host projection、client shell 只消费部分请求与恢复真相
 - `hotspot kernel`：
   - append-chain 恢复对象、prompt/cache 漂移账本、retry / ingress 乱序最容易把请求真相写坏
 - `mirror gap discipline`：
-  - 一旦请求或恢复行为开始可疑，先回 `claude.ts` 与 `sessionIngress.ts`，不要先在 client shell 或 host projection 层补丁
+  - 一旦请求或恢复行为开始可疑，先回 `claude.ts` 与 `sessionIngress.ts`；若争议其实是 host transport seam，而不是 services atlas，就回 `30` 与 `../api/13-StructuredIO与RemoteIO宿主协议手册.md`
 
 ## 3. Compact / Budget / Context Maintenance 子系统
 
@@ -191,7 +178,7 @@
 - `hotspot kernel`：
   - execution ordering、hook boundary、安全上下文与并发 discipline 的集中收口
 - `mirror gap discipline`：
-  - 一旦 `services/tools` 看起来像“重复工具目录”，先回 `src/tools/` 与 `services/tools/` 的 definition plane / runtime plane 分离，而不是把两者继续写成同一组职责
+  - 一旦 `services/tools` 看起来像“重复工具目录”，先回 `../api/47` 与本节之间的 `definition plane / runtime plane` 分离，而不是把两者继续写成同一组职责
 
 ## 9. Reject 顺序
 

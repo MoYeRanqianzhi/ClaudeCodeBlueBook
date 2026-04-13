@@ -1,5 +1,69 @@
 # 研究日志
 
+## 2026-04-14 本轮增量
+
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `api/36` authority-source 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `api/36` authority-source 结论：我只对 `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`36` 现在把 shared evidence order 继续补齐：在对象、状态链、ask 链和 usage 之间插入了 `authority source` 与 `typed ask transaction identity`，让 `settings.sources / effective / applied / externalized_mode`、`request_id / tool_use_id / duplicate_or_orphan_state` 也成为四类消费者的共享骨架。当前判断是，这一步能把 `13` 的 transport seam 和 `55` 的治理验收继续接进同一条 shared order，不再让 later consumer 从 mode 面板或 ask 体感里猜当前正式事务。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当 shared order 已经收住 `state / ask / usage` 后，更稳的默认追问不该是“还缺不缺更多 dashboard 指标”，而应先问“谁在定义当前边界、哪条 ask 仍是同一事务”；只要 authority source 与 ask transaction identity 还缺席，治理与省 token 线就迟早会退回 UI 体感，而不是正式 current-truth order。当前判断是，这个问法能继续把安全 / 省 token 线从“更多状态字段”拉回“哪条事务与哪条治理主键仍在说真话”的 first-principles discipline。
+
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `architecture/84` worked-pattern 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `architecture/84` worked-pattern 结论：我只对 `bluebook/architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`84` 现在把 current-truth surface atlas 继续压成 object-level worked pattern：不再只列 object / writer / substitute，而是把 `writeback seam / local veto cue / first retreat layer` 一起写进 object row。当前判断是，这一步能把源码质量对象层从“知道有哪些 current-truth object”推进到“later maintainer 能直接拿对象行去拒收第二真相”的 pattern-grade handoff。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一张 atlas 已经能说出“谁写现在”时，更稳的默认追问不该是“还能不能再列更多对象名”，而应先问“later maintainer 能不能不做二次翻译，就直接从 object row 看出 first no 与 first retreat”；只要还要自己补这一步，atlas 就仍更像目录图，而不是对象层 worked pattern。当前判断是，这个问法能继续把源码质量线从 object inventory 拉回 object-level rejectability 的 first-principles discipline。
+
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `philosophy/84 + 06` prompt-why-boundary 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `philosophy/84 + 06` prompt-why-boundary 结论：我只对 `bluebook/{philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`84` 现在把 `CLAUDE.md / hooks / settings / auto memory` 这些 component-level 例子继续收回成同一条 `主权单调律`，不再在 why owner 里铺开 component inventory；`06` 则把结尾从可独立传播的 doctrine 收回成“若开始重发 why，就退出本页”的自校提醒。当前判断是，这一步能继续压低 Prompt 线的 second-frontdoor 风险，让 why owner、自校页与 builder-facing 机制页重新各守一段 speaking right。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当 why owner 已经能回答“为什么 same-world 会失败”时，更稳的默认追问不该是“还能不能再举更多组件例子”，而应先问“这些例子是不是已经在偷发 mechanism inventory”；同理，当自校页的最后一句还能独立流通成 doctrine 时，也说明它已经从 self-audit 重新长回 why owner。当前判断是，这个问法能继续把 Prompt 线从“解释更全”拉回“哪一页只配说哪一类 first answer”的 first-principles discipline。
+
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `api/13` transport-owner 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `api/13` transport-owner 结论：我只对 `bluebook/api/13-StructuredIO与RemoteIO宿主协议手册.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`13` 现在把自己继续压成 `host transport seam` owner page，不再只是协议总览；它新增了与 `36 / 55` 对齐的宿主接入顺序与 reject 顺序，把 envelope、request correlation、arbitration、状态/usage 投影与 remote-only transport 增量写成单条宿主协议顺序。当前判断是，这一步能把 transport 问题继续从 `services/api` atlas 或 UI dashboard 猜测里拉出来，交还给 protocol owner。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当宿主协议已经有很多 subtype 时，更稳的默认追问不该是“schema 列得全不全”，而应先问“later consumer 现在到底是在消费哪一条正式 ask correlation / arbitration chain”；只要这条链还没锁住，状态链、usage 链与 decision window 都迟早会退回 dashboard 体感。当前判断是，这个问法能继续把安全 / 省 token / host integration 线从“控制 request 更丰富”拉回“谁配先定义 transport truth”的 first-principles discipline。
+
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `architecture/README` stamp-refine 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `architecture/README` stamp-refine 结论：我只对 `bluebook/architecture/README.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`README` 现在把 owner handoff 继续压硬：最小 `evidence stamp` 显式补进 `downgrade stamp`，而 landing card 也直接说明自己分别承接 `87` 的 `合法复杂度中心 / one writable present / later-maintainer veto` 三条 why-proof。当前判断是，这一步能继续减少 later maintainer 在对象层 README 里自己脑补“现在到底是 provisional 还是 landed”的次数，也把源码质量 handoff 从对象索引继续压成 why-proof 对象化。
+
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `architecture/README` handoff 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `architecture/README` handoff 结论：我只对 `bluebook/architecture/README.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`architecture/README` 现在把源码质量线继续压成单源 handoff：新增 `why-proof -> object landing` 的 file-level 对照，把 `87` 的三条 why-proof 直接接到 `63 / 60 / 69 / 72 / 84` 这些对象卡；同时也把 owner README 层必须显式可见的 `evidence mode / rung / verdict / retreat` 写成最小 `evidence stamp`。当前判断是，这一步能把源码质量线继续从“目录级 handoff”推进到“later maintainer 一眼就能离场去具体对象卡”的 file-level landing。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当 why-proof 已经成立后，更稳的默认追问不该是“README 里还要不要再多列一些对象名”，而应先问“later maintainer 能不能不做二次映射，就直接从 why-proof 落到最近的对象卡”；若还要靠目录体感自己猜 landing，handoff 就仍然太依赖作者脑内地图。当前判断是，这个问法能继续把源码质量线从“索引更全”拉回“handoff 是否真正降低 later-maintainer 重判成本”的 first-principles discipline。
+
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `philosophy/81` witness-ownership 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `philosophy/81` witness-ownership 结论：我只对 `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`81` 现在把 canonical witness chain 继续压硬成逐跳 `owner / producer / local veto / consumer` 表，明确 `message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict` 各自签什么、谁生产、第一声 `no` 落在哪、哪些 surface 只配当 carrier。当前判断是，这一步能把 Prompt 魔力线继续从“signer vs carrier 的 general slogan”推进到 builder-facing ownership map，减少 `30 / 54 / 06` 在下游页重发半套 witness semantics 的诱因。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当 canonical object chain 已经成立后，更稳的默认追问不该是“还缺不缺更多 effect-ceiling 标签”，而应先问“哪一跳 witness 到底由谁签、谁只负责生产、谁能发第一声 veto、谁只是在消费”；只要这个 ownership map 还没钉死，later consumer 迟早会在别的页重新发明 signer 语义。当前判断是，这个问法能继续把 Prompt 设计内涵从“概念说明更完整”拉回“主权、生产、否决与消费是否已经单源闭合”的 first-principles discipline。
+
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `api/47 + api/46 + navigation/35 + 02` locator-split 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `api/47 + api/46 + navigation/35 + 02` locator-split 结论：我只对 `bluebook/{api/47-tools 二级目录地图：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md,api/46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md,navigation/35-源码地图导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md,02-使用指南.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`47` 现在从 tools 侧明确承认 `definition plane / services-tools runtime plane` 分离；`46` 则继续压低 atlas 页的 runtime 总论语气，把 API 子节收回 `Session Ingress` 强度，并把 transport seam 明确还给 `30`；`35` 与 `02` 也把导航层残留的“权威入口”预期继续降回 `atlas locator / locator 段`。当前判断是，这一步能把目录结构线继续从“哪页最像 authority”拉回“哪页只配负责哪一段定位”的 speaking-right discipline。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当两张兄弟地图页分别占据 definition plane 与 runtime plane 时，更稳的默认追问不该是“哪一张更像总入口”，而应先问“later consumer 在什么时刻必须离开 definition、转去 runtime seam”；如果答案仍不清楚，地图页就还在诱导读者把两个 plane 压回一张大图。当前判断是，这个问法能继续把目录结构优化从“名字更统一”拉回“切换成本何时发生、为什么必须发生”的 first-principles discipline。
+
+- 本轮新的并行 Agent deeper-scan 结论：Aquinas 的只读比对把 Prompt 线的下一高价值文件压到 `philosophy/81`，因为 canonical witness chain 还没写成逐跳 `owner / producer / veto / consumer` 表；Russell 的只读比对把源码质量线的下一高价值文件压到 `architecture/README`，因为 `87` 的 why-proof 还没有单源闭合到 object landing；Banach 的只读比对则把结构线的 transport seam 进一步压到 `api/13`，因为 `api/46` 虽然已经回收 atlas 强度，但 transport/handoff 仍需明确还给 host protocol owner。当前判断是，这三条并行结论都值得保留为下一轮切口记忆，但不阻塞本轮 `api/47 + 46 + navigation/35 + 02` 的 locator-split 提交。
+
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `api/36` shared-order 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 batch 的 live premise；同日更早的成功记录只保留为已完成批次的历史截面。
+
+- 本轮新的 `api/36` shared-order 结论：我只对 `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`36` 现在把共享骨架继续压硬成同一条 current-truth order：先看 `object`，再看 `state chain`，再看 `ask chain`，之后才允许读 `Context Usage / observed window / diff/control / rollback`。同时也明确写下了拒收线：没有 `state + pending_action`，就不得把 usage 单独认成合法 `decision window / recovery / continuation` 解释。当前判断是，这一步能把安全、省 token、recovery 与治理宿主读面继续收回同一条 public-evidence order，不再让 `usage-first` 或 `diff-first` 在共享矩阵层复活。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一个共享矩阵页开始承载多个消费者时，更稳的默认追问不该是“字段够不够全”，而应先问“所有消费者是否都被同一条 current-truth order 约束”；只要还有任一消费者能跳过状态链、ask 链，直接把 usage、diff 或 rollback 升格成当前真相，这张矩阵就还没有真正统一。当前判断是，这个问法能继续把安全 / 省 token 线从“字段并排展示”拉回“谁有资格在什么前提下解释当前窗口”的 first-principles discipline。
+
+- 本轮新的根仓预检成功结论：我在根仓 `/home/mo/m/projects/cc/analysis` 于 2026-04-14 进入 `guides/30 + philosophy/54` residual-cleanup 批次前执行了 `git fetch origin` 与 `git merge --ff-only origin/main`；fetch 成功，merge 返回 `Already up to date.`。当前判断是，只有这次同日成功同步才算当前 live premise；更早的同日阻塞记录只保留为历史截面，不反过来支配本批次正文。
+
+- 本轮新的 `guides/30 + philosophy/54` ownership-cleanup 结论：我只对 `bluebook/{guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md,philosophy/54-好的Prompt同时组织模型与人类接手路径.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md` 落了正文修改。`30` 现在把 `effect ceiling` 的失败动作收回成“回 `84` 复核 verdict box、回 `77` 写正式字段”，不再在 guide 本页自带本地 verdict、drift typing 与第二张 record card；`54` 则保留五格 review object，但把正式 `pass / provisional / reject` 完全路由回 `84`。当前判断是，这一步能把 Prompt 魔力线继续压回单一 speaking-right 链：`84` 固定 why 与 verdict，`81` 固定 witness/object chain，`77` 固定复盘字段，guide/philosophy 页不再局部长出第二控制面。
+
+- 本轮新的第一性原理 / 苏格拉底追问结论：当一页已经有足够多的 gate 与 review 问题后，更稳的默认追问不该是“还能不能再补一个本地标签、表格或记录卡”，而应先问“这页是在帮助 later consumer 找到归属链，还是已经开始替归属链重新发 verdict / 发字段 / 发对象名”；如果答案是后者，就说明它正在长成 second control plane。当前判断是，这个问法能继续把 Prompt 设计内涵从“写得更全”拉回“谁配说哪句话”的 first-principles discipline。
+
+- 本轮新的并行 Agent 扫描结论：Galileo 的只读比对证明，`guides/30` 与 `54` 的最高价值 residual 正是 `effect-ceiling` verdict、drift typing 与 record-card speaking right 外溢；Rawls 的交叉扫描则表明，安全 / 省 token 线当前最高价值 residual 已转向 `api/36` 的 shared evidence matrix，因为它仍未把 `state -> pending_action -> usage/window` 固化成单一路径；Anscombe 的交叉扫描则表明，目录结构线当前最高价值 residual 已转向 `api/47`，因为 `tools` 侧仍未对称写回 `services/tools` 的 definition/runtime 分离，而 `api/46` 的降强也尚未穿透到导航与入口文案。当前判断是，Prompt 线这一轮收完以后，下一批最值钱的切口应优先在 `api/36` 与 `api/47` 之间二选一。
+
 ## 2026-04-13 本轮增量
 
 - 本轮新的安全目录同步结论：已把 stronger-request cleanup 最新一段并入主线索引，当前计数同步到 `security=464 / appendix=447 / source-notes=314`，对应范围分别为 `00-463 / 01-447 / 01-314`；这次并入只吸收可长期复用的目录与研究结论，不把 worktree 局部同步噪音带回主分支日志。

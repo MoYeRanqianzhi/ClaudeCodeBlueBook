@@ -25,15 +25,46 @@
 这里的 `surface` 也不只指 runtime state surface；凡是会改变运行时行为、权限裁决、上下文注入或代理装配的 `operator artifacts`，例如 `CLAUDE.md`、hooks、skills、agent defs 与 permission schemas，也都属于对象层要点名的 `surface`。但这也仍以后置条件为前提：只有当 `guides/102` 已先把它 typing 成 object-level claim，而不是仍停在 `public artifact ceiling / provisional claim / consumer subset`，它才配进入对象层。它们之所以算对象层，不是因为它们更像文档，而是因为 later maintainer 也必须能在这些工件上定位第一条局部 veto。
 如果问题问的是 `signer / effect ceiling / local veto cue / first retreat layer`，operator artifact 继续留在 `architecture/`；如果问题问的是 `host-facing truth claim-state / consumer subset / promise boundary`，再转去 `api/`。若这两个方向都还没被 `102` 锁定，它就继续只配叫 `surface candidate`。
 
+## why-proof handoff（从 87 到对象层）
+
+若你已经从 `../philosophy/87` 拿到了 why-proof，但还没落到具体对象卡，默认先用这张 file-level handoff 表，而不是继续停在目录级 README：
+
+| why-proof 追问 | 默认 object landing | 在 landing 里先追什么 |
+|---|---|---|
+| `合法复杂度中心` 到底落在哪个 hotspot kernel | [63](63-可演化内核：Claude%20Code如何在持续增长中维持不变量.md) / [69](69-源码即治理界面：注释、命名与显式边界如何降低误改成本.md) | kernel 为什么配集中、共享规则为何必须保持小而硬 |
+| `one writable present` 到底由哪条对象面与 writeback seam 保住 | [60](60-恢复优先的双通道状态面：writeback、resume与reconnect一体化.md) / [84](84-权威面与反僵尸图谱：single-writer%20surfaces、409%20adoption、bridge%20pointer%20freshness与release%20shaping.md) | current writer、writeback seam、fail-closed retreat |
+| `later-maintainer veto` 到底靠哪类对象、注释或状态机成立 | [69](69-源码即治理界面：注释、命名与显式边界如何降低误改成本.md) / [72](72-未来维护者消费者控制面：风险命名、制度注释、seam与状态机如何共同服务演化.md) | local veto cue、first retreat layer、next-refactor entry |
+| 问题其实仍停在 repo-specific seam type，还没锁到对象卡 | 先回 [../01-源码结构地图.md](../01-%E6%BA%90%E7%A0%81%E7%BB%93%E6%9E%84%E5%9C%B0%E5%9B%BE.md) | 先定位 `generation guard / host truth externalization / release-surface split`，再回对象层 |
+
+更稳一点说，`87` 只负责 why-proof，不替你选对象卡；`architecture/README` 则必须把 why-proof 继续接成 file-level landing。若 later maintainer 还要自己从目录体感二次猜“下一张对象卡在哪”，handoff 就还没有真正完成。
+
 ## landing card（对象摘要）
 
-当对象层判断需要落成统一摘要时，至少写成下面七栏：
+当对象层判断需要落成统一摘要时，至少先给一枚 `evidence stamp`，再写下面七栏：
+
+```text
+evidence mode:
+rung:
+verdict:
+downgrade stamp:
+retreat:
+```
+
+这五项不代替 `102` 的 promotion gate；它们只是在 owner README 层把 handoff 压成 later maintainer 一眼可见的最小摘要。若 reader 还要翻两段 prose 才看出对象现在只是 `provisional claim`，还是已经 `promotion-passed`，对象 landing 就还太依赖作者解释。
+
+真正的对象摘要仍至少写成下面七栏：
 
 | surface | protected invariant | writer claim plane / writer truth plane after promotion | writeback seam | stale-writer risk | local veto cue | first retreat layer |
 |---|---|---|---|---|---|
 | `<surface>` | `<what it protects>` | `<who claims write now / who may write after promotion>` | `<where current truth is committed>` | `<which stale write most threatens this surface>` | `<what should trigger a local veto>` | `<where the fallback lands first>` |
 
-这七栏只做对象摘要，不复写 `ceiling / downgrade / unresolved-authority` 之类证据字段；那些 promotion 纪律统一留在 `102`，`landing card` 也不承担验收卡或准入判断。若对象仍未 promotion，就把第三栏明确写成 `writer claim state`，并在卡片旁补 `unresolved-authority note`，而不是预填 landed writer truth。更稳一点说，claim-state 不应只躲在表外 prose；如果 later consumer 还要靠旁注才看出对象尚未 promotion，这张 card 仍会被误读成 object truth。若 `surface` 本身是 operator artifact，也同样必须写清 `writer claim plane`、`local veto cue` 与 `first retreat layer`，否则 later maintainer 拿到的仍只是阅读体感，而不是正式反对路径；答不出退回层的 seam 也还不配被叫作可继承的 `next-refactor entry`。更硬一点说，`first retreat layer` 默认应指向最近的 `fail-closed seam`，也就是 first no 之后先把错误 writer 降回 `no-authority / no-write` 的那一层，而不是下一步修复计划。
+这七栏只做对象摘要，不复写 `102` 的 promotion 规则本体；但 handoff 所需的 `evidence mode / rung / verdict / downgrade stamp / retreat` 必须显式可见。若对象仍未 promotion，就把第三栏明确写成 `writer claim state`，把 `verdict` 明写成 `provisional claim`，并把 `downgrade stamp` 与 `unresolved-authority note` 一起落页，而不是预填 landed writer truth。更稳一点说，claim-state 不应只躲在表外 prose；如果 later consumer 还要靠旁注才看出对象尚未 promotion，这张 card 仍会被误读成 object truth。若 `surface` 本身是 operator artifact，也同样必须写清 `writer claim plane`、`local veto cue` 与 `first retreat layer`，否则 later maintainer 拿到的仍只是阅读体感，而不是正式反对路径；答不出退回层的 seam 也还不配被叫作可继承的 `next-refactor entry`。更硬一点说，`first retreat layer` 默认应指向最近的 `fail-closed seam`，也就是 first no 之后先把错误 writer 降回 `no-authority / no-write` 的那一层，而不是下一步修复计划。
+
+如果把这张 card 再压成和 `87` 的最短对照，也只剩三条绑定：
+
+- `protected invariant` 回答为什么这里确实是 `合法复杂度中心`，而不是目录体感里的热点错觉。
+- `writer claim plane / writeback seam` 回答为什么这里仍只有 `one writable present`，而不是让投影面或恢复资产越权写回现在。
+- `local veto cue + first retreat layer` 回答为什么 `later-maintainer veto` 仍有正式落点，而不是只能事后翻译成修复计划。
 
 如果只想先看一个 object-level worked example，也只先看一正一反两格：
 
@@ -52,6 +83,8 @@
 - [83-反扩张治理流水线：governance key -> externalized truth chain -> typed ask -> decision window -> continuation pricing -> durable-transient cleanup](83-反扩张治理流水线：trusted inputs、distributed ask arbitration、deferred visibility与continuation pricing.md)
 - [60-恢复优先的双通道状态面：writeback、resume与reconnect一体化](60-恢复优先的双通道状态面：writeback、resume与reconnect一体化.md)
 - [63-可演化内核：Claude Code如何在持续增长中维持不变量](63-可演化内核：Claude Code如何在持续增长中维持不变量.md)
+- [69-源码即治理界面：注释、命名与显式边界如何降低误改成本](69-源码即治理界面：注释、命名与显式边界如何降低误改成本.md)
+- [72-未来维护者消费者控制面：风险命名、制度注释、seam与状态机如何共同服务演化](72-未来维护者消费者控制面：风险命名、制度注释、seam与状态机如何共同服务演化.md)
 - [84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping](84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md)
 
 ## 这里不回答什么

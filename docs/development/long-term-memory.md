@@ -13,6 +13,81 @@
 - 若当前 worktree 仍是 `mirror absent / public-evidence only`，则源码路径只先按 `archived anchor / claim-state` 读取；任何 owner 页都不应把这类锚点偷写成本轮 live verification。
 
 ## 最新推进
+- 当前批次继续新增一条 `root-sync-healthy-for-api36-authority-source-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `api/36` authority-source 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `api36-must-carry-authority-source-and-ask-transaction-identity-apr14 live` 记忆：
+  - `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 现在也应继续写死：共享骨架不只要有 state / ask / usage，还要把 `authority source` 与 `request_id / tool_use_id / duplicate_or_orphan_state` 这种 ask transaction identity 吸进来
+  - 更稳的默认写法是：没有 authority source，就不得把 mode 样式读成治理主键；没有 transaction identity，就不得把 ask 读成同一条正式事务；`36` 也应显式和 `13 / 55` 对齐，而不是只和 window/usage 页对齐
+- 当前批次继续新增一条 `root-sync-healthy-for-architecture84-worked-pattern-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `architecture/84` worked-pattern 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `architecture84-must-turn-atlas-into-object-level-worked-pattern-apr14 live` 记忆：
+  - `bluebook/architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md` 现在也应继续写死：current-truth atlas 不该只停在 `object / writer / forbidden substitute` 这种对象名录，而要显式给出 `writeback seam / local veto cue / first retreat layer`
+  - 更稳的默认写法是：对象层 worked pattern 先让 later maintainer 一眼看到谁写现在、谁在冒充 writer、第一声 no 落在哪、先退回哪一层；若还需要自己把 atlas 翻译成 landing card，这页就还没有真正完成 object handoff
+- 当前批次继续新增一条 `root-sync-healthy-for-prompt-why-boundary-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `philosophy/84 + 06` prompt-why-boundary 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `prompt-why-owner-must-stop-before-component-inventory-apr14 live` 记忆：
+  - `bluebook/philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md` 与 `bluebook/06-第一性原理与苏格拉底反思.md` 现在也应继续写死：why owner 只保留 `same-world` 因果律与 verdict box，自校页只保留 first reject / artifact gap / minimal retreat；`CLAUDE.md / hooks / settings / auto memory` 这类 component-level 组合律与 meta doctrine 不应再在这两页展开成第二前门
+  - 更稳的默认写法是：`84` 只保住 `主权单调律` 这类 why 句，具体 component semantics 统一回 `81` 或对应 owner page；`06` 若一句话还能单独被摘成 doctrine，就说明它已经越位
+- 当前批次继续新增一条 `root-sync-healthy-for-api13-transport-owner-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `api/13` transport-owner 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `api13-must-own-host-transport-seam-and-reject-order-apr14 live` 记忆：
+  - `bluebook/api/13-StructuredIO与RemoteIO宿主协议手册.md` 现在也应继续写死：这页不只是在列宿主协议子类型，而要明确自己就是 `host transport seam` owner page，并给出与 `36 / 55` 对齐的宿主接入顺序与 reject 顺序
+  - 更稳的默认写法是：先验 envelope 与 request correlation，再验 arbitration，再在同一条协议面上消费状态链 / ask 链 / usage；direct connect / remote session 这类窄面不配被误写成完整协议支持
+- 当前批次继续新增一条 `root-sync-healthy-for-architecture-readme-stamp-refine-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `architecture/README` stamp-refine 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `architecture-readme-must-show-downgrade-stamp-and-bind-card-to-87-apr14 live` 记忆：
+  - `bluebook/architecture/README.md` 现在也应继续写死：owner README 层不只要显式 `evidence mode / rung / verdict / retreat`，还要把 `downgrade stamp` 一起落页；landing card 也应直接绑回 `87` 的 `合法复杂度中心 / one writable present / later-maintainer veto`
+  - 更稳的默认写法是：只要对象尚未 promotion，later maintainer 就不该在 README 里自己脑补降格状态；只要 landing card 还没对齐 why-proof 三问，它就还更像对象库存而不是 why-proof handoff
+- 当前批次继续新增一条 `root-sync-healthy-for-architecture-readme-handoff-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `architecture/README` handoff 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `architecture-readme-must-wire-87-why-proof-to-file-level-landings-apr14 live` 记忆：
+  - `bluebook/architecture/README.md` 现在也应继续写死：源码质量线在对象层不该只停在目录 README，而要显式把 `87` 的 why-proof 接成 file-level landing，并让 owner README 直接可见 `evidence mode / rung / verdict / retreat`
+  - 更稳的默认写法是：`87` 负责 why-proof，`102` 负责 evidence ladder，`architecture/README` 负责 why-proof 到 object landing 的 handoff；later maintainer 不该再自己从目录体感猜下一张对象卡
+- 当前批次继续新增一条 `root-sync-healthy-for-philosophy81-witness-ownership-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `philosophy/81` witness-ownership 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `philosophy81-must-pin-owner-producer-veto-consumer-per-witness-hop-apr14 live` 记忆：
+  - `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 现在也应继续写死：canonical witness chain 不只要给 object chain，还要给逐跳 `owner / producer / local veto / consumer` 表，防止 `guides/30`、`philosophy/54`、`06` 再局部代持 ownership 语义
+  - 更稳的默认写法是：若问题已经变成“谁能签哪一跳 witness、谁只是 carrier、第一声 no 落在哪里”，canonical first answer 统一回 `81`；why owner 留在 `84`，审读协议留在 `30`，review grid 留在 `54`
+- 当前批次继续新增一条 `root-sync-healthy-for-api47-locator-split-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `api/47 + api/46 + navigation/35 + 02` locator-split 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 batch 的 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `api47-must-explicitly-split-definition-plane-from-services-tools-runtime-apr14 live` 记忆：
+  - `bluebook/api/47-tools 二级目录地图：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md` 现在也应继续写死：`src/tools/` 这一侧只先回答 definition plane / visible-set registry；一旦问题进入 orchestration、hook boundary、execution ordering 或 runtime writeback，就应并读 `api/46` 的 `services/tools` runtime seam
+  - 更稳的默认写法是：tools 页负责 definition plane，services 页负责 runtime plane；later consumer 不该再从 `tools.ts` 一路读到 execution orchestration 还不离场
+- 当前批次继续新增一条 `navigation35-and-02-should-soften-authority-wording-to-atlas-locator-apr14 live` 记忆：
+  - `bluebook/navigation/35-源码地图导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md` 与 `bluebook/02-使用指南.md` 现在也应继续写死：目录地图线在导航层只配说 `atlas locator / locator 段`，不该在 route 页和入口指南里继续替 later consumer 抬高“权威入口”的预期
+  - 更稳的默认写法是：route page 只回答从哪进、哪一段危险、reject path 回哪；若问题已经升级成 authority dispute，就回 speaking-right 页，不在导航层预发 verdict
+- 当前批次继续新增一条 `parallel-deeper-scans-point-to-api13-81-architecture-readme-apr14 live` 记忆：
+  - 并行 Agent 的 deeper scan 现已把三条下一残留压成更具体的文件级入口：结构线优先回 `bluebook/api/13-StructuredIO与RemoteIO宿主协议手册.md` 收 transport seam；Prompt 线优先回 `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 固定 witness ownership；源码质量线优先回 `bluebook/architecture/README.md` 闭合 why-proof 到 object landing 的单源 handoff
+  - 更稳的默认写法是：目录结构先问 seam 到底属于 `services atlas` 还是 `host transport protocol`；Prompt 先问 canonical witness chain 是否已经逐跳写清 owner / producer / veto / consumer；源码质量先问 why-proof 有没有真正落到具体 architecture landing 文件
+- 当前批次继续新增一条 `root-sync-healthy-for-api36-shared-order-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `api/36` shared-order 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 `live premise`；同日更早的成功记录继续只保留为已完成批次的历史截面
+- 当前批次继续新增一条 `api36-must-bind-window-to-state-ask-usage-order-apr14 live` 记忆：
+  - `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 现在也应继续写死：shared evidence matrix 不能再写成 `对象 -> 状态 -> diff -> 窗口` 一类软顺序，而要明确固定成 `对象 -> 状态链 -> ask 链 -> usage -> window -> diff/control -> rollback`
+  - 更稳的默认写法是：没有 `state + pending_action`，就不得把 `Context Usage` 升格成 `decision window / recovery / continuation` 解释；shared matrix 的价值不在字段更多，而在四类消费者都被同一条 current-truth order 约束
+- 当前批次继续新增一条 `root-sync-healthy-for-guides30-54-residual-cleanup-batch-apr14 live` 记忆：
+  - 2026-04-14 本轮进入 `guides/30 + philosophy/54` residual-cleanup 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`
+  - 更稳的默认写法是：只有这次同日 root preflight 成功才算当前 `live premise`；更早的同日阻塞记录只保留为历史截面，不反过来支配本批次判断
+- 当前批次继续新增一条 `guides30-should-route-verdict-and-record-ownership-back-to-84-and-77-apr14 live` 记忆：
+  - `bluebook/guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md` 现在也应继续写死：本页只保留苏格拉底式审读 gate 与 first-principles 追问，不再自己发布 `effect-ceiling` 本地 verdict、drift typing 或第二张 `record card`
+  - 更稳的默认写法是：`84` 固定 `pass / provisional / reject`，`81` 固定 witness/object chain，`77` 固定正式复盘字段；guide 只负责把 reader 送回正确归属链
+- 当前批次继续新增一条 `philosophy54-should-keep-review-grid-but-route-verdict-to-84-apr14 live` 记忆：
+  - `bluebook/philosophy/54-好的Prompt同时组织模型与人类接手路径.md` 现在也应继续写死：五格 review object 只说明 later consumer 先该问什么，不再自带“最小本地 verdict bridge”
+  - 更稳的默认写法是：`54` 只保留 review grid；正式 verdict box 统一回 `84`，builder-facing object chain 统一回 `81`
+- 当前批次继续新增一条 `api36-should-harden-shared-state-pendingaction-usage-order-apr14 live` 记忆：
+  - 并行 Agent 对 `api/32 / 52 / 53 / 36` 的交叉扫描表明，当前安全 / 省 token 线的最高价值 residual 已转向 `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md`：共享骨架仍未把 `state -> pending_action -> usage/window` 写成单一路径
+  - 更稳的默认写法是：shared evidence matrix 先锁 current truth，再消费 ask / pending_action，最后才读 usage / window；缺前置面就不得算 `decision window / recovery / budget continuation`
+- 当前批次继续新增一条 `api47-should-close-services-tools-split-and-finish-46-softening-apr14 live` 记忆：
+  - 并行 Agent 对 `api/46 / 47 / 30 / 02 / navigation/35` 的交叉扫描表明，当前目录结构线的最高价值 residual 已转向 `bluebook/api/47-tools 二级目录地图：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md`：`tools` 侧仍未对称写回 `services/tools` 的 definition plane / runtime plane 分离，而 `api/46` 的降强也还没有穿透到导航与入口文案
+  - 更稳的默认写法是：当 atlas / locator 页已经自降 speaking right，兄弟页与导航页也必须同步降强；`tools` 侧要显式回指 `services/tools` runtime seam，而不是把 definition 与 orchestration 再压成同一平面
 - 当前批次继续新增一条 `root-preflight-blocked-for-api46-atlas-locator-batch-apr13 live` 记忆：
   - 2026-04-13 本轮进入 `api/46` atlas-locator 批次前，我在根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin main` 成功，但 `git merge --ff-only origin/main` 因根仓存在未解决冲突而失败，报错 `Merging is not possible because you have unmerged files.`
   - 更稳的默认写法是：把这次 root preflight 失败只当外部事实记录，不在根仓做任何收敛动作；正文、记忆与提交继续只落在 `.worktrees/mainloop`

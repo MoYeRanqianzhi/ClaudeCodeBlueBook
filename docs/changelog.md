@@ -1,5 +1,47 @@
 # Changelog
 
+## 2026-04-14
+
+- 继续更新 `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 authority-source 协议：`api/36` 现在把 shared current-truth order 继续补齐成 `对象 -> authority source -> 状态链 -> ask 链 -> 事务身份 -> usage -> window -> diff/control -> rollback`，把治理主键与 ask 事务身份正式吸进四类消费者的共同骨架。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `api/36` authority-source 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
+- 继续更新 `bluebook/architecture/84-权威面与反僵尸图谱：single-writer surfaces、409 adoption、bridge pointer freshness与release shaping.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 object-pattern 协议：`architecture/84` 现在把 current-truth atlas 继续压成 worked pattern，在 object row 里显式给出 `writeback seam / local veto cue / first retreat layer`，不再让 later maintainer 自己从 atlas 反推对象级 reject path。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `architecture/84` worked-pattern 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
+- 继续更新 `bluebook/{philosophy/84-世界如何合法进入模型：request assembly 与 six-stage assembly chain.md,06-第一性原理与苏格拉底反思.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 prompt-why-boundary 协议：`84` 现在把 component-level 例子收回成同一条 `主权单调律`，不再在 why owner 里铺开 component inventory；`06` 则把结尾从可独立传播的 doctrine 收回成纯 self-audit 退出条件。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `philosophy/84 + 06` prompt-why-boundary 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
+- 继续更新 `bluebook/api/13-StructuredIO与RemoteIO宿主协议手册.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 transport-owner 协议：`api/13` 现在明确自任 `host transport seam` owner page，并新增与 `36 / 55` 对齐的宿主接入顺序与 reject 顺序，把 envelope、request correlation、arbitration、状态/usage 投影与 remote-only transport 增量写成单条协议顺序。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `api/13` transport-owner 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
+- 继续更新 `bluebook/architecture/README.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 source-quality stamp-refine 协议：`architecture/README` 现在把 owner handoff 补成 `evidence mode / rung / verdict / downgrade stamp / retreat`，并把 landing card 直接绑回 `87` 的 `合法复杂度中心 / one writable present / later-maintainer veto` 三条 why-proof。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `architecture/README` stamp-refine 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
+- 继续更新 `bluebook/architecture/README.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 source-quality handoff 协议：`architecture/README` 现在把 `87` 的 why-proof 接成 file-level object landing，对 `63 / 60 / 69 / 72 / 84` 给出直接 handoff，并把 owner README 层必须显式可见的 `evidence mode / rung / verdict / retreat` 写成最小 `evidence stamp`。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `architecture/README` handoff 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
+- 继续更新 `bluebook/philosophy/81-请求编译链：可缓存、可转写、可继续.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 witness-ownership 协议：`philosophy/81` 现在把 canonical witness chain 固定成逐跳 `owner / producer / local veto / consumer` 表，明确哪一跳配签世界连续性、哪一跳只负责生产、哪一声 `no` 应先落在哪里，并把 summary / session memory / handoff prose / sticky prompt 等 surface 继续压回 carrier。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `philosophy/81` witness-ownership 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
+- 继续更新 `bluebook/{api/47-tools 二级目录地图：执行原语、交互控制、任务编排、扩展桥接与延迟暴露边界.md,api/46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md,navigation/35-源码地图导航：services、tools、commands 二级目录如何回到权威入口与消费者边界.md,02-使用指南.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 locator-split 协议：`api/47` 现在从 tools 侧显式承认 `definition plane / services-tools runtime plane` 分离；`api/46` 继续把 atlas 页语气收回 locator 强度，把 transport seam 还给 `30`；`navigation/35` 与 `02` 则把导航层残留的“权威入口”预期继续降回 `atlas locator / locator 段`。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `api/47 + api/46 + navigation/35 + 02` locator-split 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
+- 继续更新 `bluebook/api/36-Evidence Envelope字段矩阵：宿主、CI、评审与交接四类消费者的共享消费顺序.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 shared-evidence-order 协议：`api/36` 现在把四类消费者共享的 current-truth order 固定成 `对象 -> 状态链 -> ask 链 -> usage -> window -> diff/control -> rollback`，并明确写下拒收线：没有 `state + pending_action`，就不得把 usage 单独认成合法 `decision window / recovery / continuation` 解释。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `api/36` shared-order 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 batch 的 live premise。
+
+- 继续更新 `bluebook/{guides/30-如何用苏格拉底诘问法审读Prompt魔力：主语、共享前缀、边界与合法遗忘.md,philosophy/54-好的Prompt同时组织模型与人类接手路径.md}` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 prompt ownership-cleanup 协议：`guides/30` 现在把 `effect ceiling` 的失败动作、正式 verdict 与复盘字段全部路由回 `84 / 77`，不再在本页重发本地 verdict、drift typing 与第二张记录卡；`54` 则保留五格 review grid，但把正式 `pass / provisional / reject` 统一收回 `84`，不再自带本地 verdict bridge。同时把并行 Agent 的下一残留结论写入持久化记忆：安全 / 省 token 线的最高价值切口已转向 `api/36` 的 shared evidence order，目录结构线则转向 `api/47` 的 services/tools split 收口与 `api/46` 降强外溢。
+
+- 继续更新 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 root-preflight success 记录：2026-04-14 本轮在进入 `guides/30 + philosophy/54` residual-cleanup 批次前于根仓 `/home/mo/m/projects/cc/analysis` 执行 `git fetch origin` 成功，`git merge --ff-only origin/main` 返回 `Already up to date.`；只有这次同日成功同步才算当前 live premise。
+
 ## 2026-04-13
 
 - 继续更新 `bluebook/api/46-services 二级目录地图：API、Compact、Memory、MCP、LSP 与 Observability 子系统的权威入口.md` 与 `docs/development/{long-term-memory,research-log,changelog}.md`，把这一小轮继续收成一条更硬的 services-atlas locator 协议：`api/46` 现在把标题与题面的 “权威入口” 继续收回 atlas / locator 强度，并把 `services/tools` 从散文特例改成同一套六格 runtime seam，不再让真实结构中心长期停在旁注里。
