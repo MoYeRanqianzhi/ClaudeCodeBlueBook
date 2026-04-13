@@ -226,6 +226,7 @@
 - [426-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层：为什么artifact-family cleanup stronger-request cleanup-reactivation-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-readiness-governor signer](426-安全载体家族强请求清理重新激活治理与强请求清理就绪治理分层.md)
 - [427-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层：为什么artifact-family cleanup stronger-request cleanup-readiness-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-continuity-governor signer](427-安全载体家族强请求清理就绪治理与强请求清理连续性治理分层.md)
 - [428-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层：为什么artifact-family cleanup stronger-request cleanup-continuity-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-recovery-governor signer](428-安全载体家族强请求清理连续性治理与强请求清理恢复治理分层.md)
+- [429-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层：为什么artifact-family cleanup stronger-request cleanup-recovery-governor signer不能越级冒充artifact-family cleanup stronger-request cleanup-reintegration-governor signer](429-安全载体家族强请求清理恢复治理与强请求清理重新并入治理分层.md)
 
 ## 阅读顺序
 
@@ -233,8 +234,8 @@
 - 想定位“当前真相从哪里来、为什么恢复不等于完成”：先读 `30-69`。
 - 想看能力发布、状态编辑与恢复资格：先读 `70-99`。
 - 想看验证、迁移与工程化落地：先读 `100-138`。
-- 想直看治理链主干：先读 `147-428 -> appendix/131-412 -> source-notes/01-279`。
-- 想快速进入当前这段强请求清理子链：先读 `424-428 -> appendix/408-412 -> source-notes/275-279`。
+- 想直看治理链主干：先读 `147-429 -> appendix/131-413 -> source-notes/01-280`。
+- 想快速进入当前这段强请求清理子链：先读 `425-429 -> appendix/409-413 -> source-notes/276-280`。
 - 想快速查字段、词法、路由、签字权和速查表：直接去 [appendix/README.md](appendix/README.md)。
 - 想追具体源码证据簇：直接去 [source-notes/README.md](source-notes/README.md)。
 
