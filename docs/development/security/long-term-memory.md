@@ -2,6 +2,10 @@
 
 ## 当前稳定边界
 
+- `2026-04-13` 最新一轮已完成 `460 / 444 / 311`：主线把 stronger-request cleanup 从 `stronger-request cleanup-continuity-governance` 继续推进到 `stronger-request cleanup-recovery-governance`，附录把 `fresh proof / reconnect verdict / consumer discipline / governor question` 压成统一矩阵，源码剖面则把 auth-failure demotion、fresh reconnect、OAuth proof collection、control-plane honesty 与 real-tool return discipline 并排钉成 `fresh-proof recovery grammar`。这一轮稳定写出的新边界是：`还在恢复` 不等于 `已经恢复`，`制度知道旧线还要不要继续抢救` 不等于 `制度已经知道什么新证据足以宣布它真的回来了。`
+- `2026-04-13` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`。这些根仓状态与本轮安全专题写作保持隔离，本轮全部改写与提交继续严格限制在 `.worktrees/claude-code-risk-analysis` 内完成。
+- `2026-04-13` 当前唯一 open question 已前推到 `stronger-request cleanup-reintegration-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
+
 - `2026-04-13` 最新一轮已完成 `459 / 443 / 310`：主线把 stronger-request cleanup 从 `stronger-request cleanup-readiness-governance` 继续推进到 `stronger-request cleanup-continuity-governance`，附录把 `continuity budget / stale retry line / pool repair / governor question` 压成统一矩阵，源码剖面则把 retry budget、disconnect retry lifecycle、stale reconnect timer cleanup、operator stop-restart control、runtime downgrade 与 SDK pool re-init 并排钉成 `temporal dependability grammar`。这一轮稳定写出的新边界是：`现在可用` 不等于 `持续可用`，`制度知道此刻敢不敢用它` 不等于 `制度已经知道这份可用性在时间里怎样继续成立。`
 - `2026-04-13` 本轮 fresh 复核根仓库结果为 `main...origin/main = 0 0` 与 `## main...origin/main`；`git fetch origin main` 成功，且 `git merge --ff-only origin/main` 返回 `Already up to date.`。这些根仓状态与本轮安全专题写作保持隔离，本轮全部改写与提交继续严格限制在 `.worktrees/claude-code-risk-analysis` 内完成。
 - `2026-04-13` 当前唯一 open question 已前推到 `stronger-request cleanup-recovery-governance for old cleanup carriers`；正文继续只写机制本体，开放问题只留在隔离记忆层。
