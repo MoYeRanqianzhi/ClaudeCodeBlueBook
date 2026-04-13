@@ -75,6 +75,14 @@
 - [../374-2026-04-13-wire-visibility branch-map scope clarification 拆分记忆.md](../374-2026-04-13-wire-visibility%20branch-map%20scope%20clarification%20拆分记忆.md)
 - [../375-2026-04-13-builder-callback-ui branch-map scope clarification 拆分记忆.md](../375-2026-04-13-builder-callback-ui%20branch-map%20scope%20clarification%20拆分记忆.md)
 
+如果你已经确认自己不只是看 `208/209/210` 这组结构页，
+
+而是要在这一半段内部继续按 summary / wire / callback / UI 的子家族浏览，
+
+直接进：
+
+- [../100-115-summary、wire、callback 与 UI 家族/README.md](../100-115-summary、wire、callback%20与%20UI%20家族/README.md)
+
 ### 2. 我已经进入 completion / attach / recovery（`116-127`）
 
 先读蓝皮书结构页：
