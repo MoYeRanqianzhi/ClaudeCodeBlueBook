@@ -8,6 +8,9 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 102-must-own-handoff-matrix-after-rung-lock-apr13 live 记忆：
+  - `guides/102` 现在也应直接写死：它不只定义 claim-state rung，还要定义 handoff matrix。只有在 `102` 先锁定这是 object-level claim、host-facing truth claim-state / consumer subset、why question，或纯 artifact gap 之后，`architecture / api / philosophy / navigation` 才配接手
+  - 更稳的默认写法是：`102` 先锁 rung，再分派 owner；owner README 若在 rung 未锁定前就开门，默认按目录契约越位处理
 - 当前批次继续新增一条 governance-why-pages-must-name-retired-repeat-pricing-apr13 live 记忆：
   - `bluebook/philosophy/61` 现在也应直接写死：安全与省 token 共用同一条治理收费链，不只是在共享 budget，而是在持续退休没有新增 `decision delta` 的重复 repricing / reapproval / requalification
   - 更稳的默认写法是：`61` 的 lease checkpoint 统一收回 `same authority lease / new decision delta / cleanup trigger state`，并把 `weak readback` 明确降到 `receipt-grade` 尾链，不进入重新定价所需的最小证据集

@@ -36,6 +36,7 @@
 
 - 文件路径保留旧词只是为了兼容检索；正文在这一级统一把 `current-truth surface` 读作 `current-truth claim state`，而不是对象层 surface verdict。
 - 本页只定义 canonical ladder、降格规则与 `change-risk record` 模板；目录导航与对象展开即使被提及，也只算证据状态声明，不算新的 frontdoor。
+- 本页也显式负责 handoff matrix：claim-state rung 一旦锁定，再决定问题该升级给 `architecture/README`、`api/README`、`philosophy/README` 还是 `navigation/README`；在本页锁定前，其他 owner README 都不该偷接。
 - 在这条线里，artifact completeness 只决定 promotion eligibility，不重写下游页面的稳定职责；页面标题与补写者都不额外增加签字权。
 - 凡正文把对象写成 `consumer subset` 或 provisional current-truth claim，必须同时把 `downgrade stamp` 与 `unresolved-authority note` 一起落页；只写“这里要保守”而不写这条说明，默认按证据纪律未落地处理。
 - 若对象层 authority 仍需细化，note 只说明“缺少 promotion 所需证明”，不附带任何路由义务。
@@ -356,6 +357,18 @@ gap discipline 的价值不是“保守一点”，而是：
 6. 哪些 authority 缺口必须继续显式保留。
 
 对象层若还需要继续写 `writeback seam / first fallback / local veto cue`，统一留给 `architecture/README`；`102` 不代写对象摘要。
+更明确地说，`102` 在目录里的 handoff matrix 只认下面四条：
+
+1. rung 已锁定为 object-level claim
+   - 再进 `architecture/README`
+2. rung 已锁定为 host-facing truth claim-state / consumer subset
+   - 再进 `api/README`
+3. rung 已锁定为 why question，而不是 admissibility / promotion question
+   - 再进 `philosophy/README`
+4. 主语与 rung 都已锁定，只缺下一种 artifact、gap note 或最近的 fail-closed seam
+   - 再进 `navigation/README`
+
+若这四条里任何一条还答不上，就继续留在 `102`；这页先锁 rung，不让 owner noun 提前升级成 landed truth。
 
 ## 11. 苏格拉底式检查清单
 

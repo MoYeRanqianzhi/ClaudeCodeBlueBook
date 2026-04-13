@@ -20,11 +20,11 @@
 - 缺 execution evidence / reopen drill，回 `playbooks`
 - 缺当前真相线的 `public artifact ceiling / ceiling note / downgrade stamp / unresolved-authority note / change-risk record`，回 `guides/102`
 - 缺公开 artifact 的 `signer / effect ceiling`，也先回 `guides/102`，不要在 route 页硬判 capability
-- 缺 `release-surface shaping / compile-time gate / runtime gate / artifact surface`，回 `architecture/84`
+- 缺 `release-surface shaping / compile-time gate / runtime gate / artifact surface`，且当前 rung 已锁定为 object claim 时，回 `architecture/84`
 - 缺当前真相保护的 why-proof，回 `philosophy/86`；若继续追源码质量 why，再回 `philosophy/87`
 - 缺 repo-specific seam type locator（如 `generation guard / server-head adoption / host truth externalization / release-surface split`），先回 `../01-源码结构地图.md`
 - 若 seam type 已能定位，却还答不出“现在是哪一个对象面先失去写权”，先再问这是不是 promotion-passed object 还是仍停在 provisional claim；claim-state 未锁定时先回 `guides/102`，锁定后再回 `architecture/README`
-- 缺当前真相线的对象、状态机、writeback seam、`local veto cue / first retreat layer` 或对象摘要（如 `landing card`），回 `architecture/README`
+- 缺当前真相线的对象、状态机、writeback seam、`local veto cue / first retreat layer` 或对象摘要（如 `landing card`），且当前 rung 已锁定为 object claim 时，回 `architecture/README`
 - 缺 first no 之后最近的 `fail-closed seam`，也先回 `architecture/README`；若问题已经缩到 `release-surface split / recovery-eviction / server-head adoption` 这类对象型退回层，再回对应对象页
 
 ## 维护约定

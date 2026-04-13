@@ -47,8 +47,8 @@
 ## 什么时候进来
 
 - 当 `guides/102` 已经把问题 typing 成 `host-facing truth claim-state / consumer subset`，准备判断宿主究竟承认了哪些 truth、哪些只配做 consumer subset。
-- 当你需要把运行时对象压成 command、tool、state message、artifact contract 或 host-facing truth。
-- 当你需要判断“谁在宣布真相、谁只是在消费真相”，而不是继续看源码结构或哲学解释。
+- 当 `guides/102` 已经把问题 typing 成 `host-facing truth claim-state / consumer subset`，你需要把运行时对象压成 command、tool、state message、artifact contract 或 host-facing truth。
+- 当 `guides/102` 已经锁定这是 host-facing truth 问题，而不是 object 或 why 问题，你需要判断“谁在宣布真相、谁只是在消费真相”。
 
 ## 如果你只先判断一件事
 
