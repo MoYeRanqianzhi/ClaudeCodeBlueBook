@@ -27,7 +27,7 @@
 
 这些锚点共同说明：
 
-- Claude Code 的 Prompt效力不是某段文案写得更凶，而是 `message lineage`、共享前缀、consumer 分层、合法遗忘与 continuation qualification 被共同治理。
+- Claude Code 的 Prompt效力不是某段文案写得更凶，而是 later consumer 原本要重做的世界重判、动作搜索与排除理由重写被系统提前退休；`message lineage`、共享前缀、consumer 分层、合法遗忘与 continuation qualification 只是这套退休机制被保住的实现对象。
 
 ## 1. 对象对照：旧词汇与当前审读对象
 

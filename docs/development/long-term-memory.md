@@ -4663,3 +4663,4 @@
 - `2026-04-13` Prompt 样本页的下一残差也应继续记死：`18` 仍更像分层解释页，后续若继续精修，应优先只收它的首尾前门句法，不重写中段 contract layering 结构，也不把 `14 / 18 / 21` 再混成一次 repo-wide prompt 大清洗。
 - `2026-04-13` 还应继续记住一条术语边界纠偏：`current-truth claim state` 只属于公开镜像证据梯度与地图 why 页；`navigation/07` 这类合同优先方法线仍应回到对象层 `current-truth surface / host-facing truth`。以后若看到 `claim state / host-facing truth` 这种混写，优先按主语越界处理。
 - `2026-04-13` Prompt 样本页的最新稳定句法还应继续推进到 `philosophy/18`：分层契约不再自己充当前门，而应被写成 later-consumer 退休机制的承载层。静态法、动态法、角色法、现场法只是在不同稳定度上共同保住 exclusion discipline、lawful inheritance 与 continue-or-reject verdict inheritance。
+- `2026-04-13` Prompt guide 层的最新稳定句法也应继续写死：`guides/30` 不再把 `message lineage` 当 Prompt 效力本体，而把它降回 `decision-retirement` 被 runtime 保住的实现对象。guide 层当前门也应先回答 later consumer 为什么不必重做世界重判，再解释 lineage / prefix / forgetting 怎样共同保住这一点。

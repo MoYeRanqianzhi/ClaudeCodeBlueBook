@@ -7853,3 +7853,5 @@
 - 这一刀的第一性原理是术语归位：`claim state` 只回答“公开证据是否够 promotion”，而 `current-truth surface / host-facing truth` 才回答对象层“谁在说现在”。只要把两者并排写成同一方法链，later maintainer 就会把 source-quality rung 错学成 contract-first 常规对象入口。
 - `2026-04-13` 当前又起了第七个窄批次，只动 `philosophy/18` 首尾结论块。修改后，这页不再把“分层契约”本身当前门，而是明确这些层在不同稳定度上共同服务 same-world 的 `decision-retirement system`；中段四层结构继续保留为解释层，不重写为另一套 owner 页。
 - 这一刀的第一性原理也很窄：Prompt 分层之所以值钱，不在“分层”本身，而在 later consumer 不必每轮重做世界重判。只要样本页还把 layering 先于 later-consumer rights 说成 Prompt 本体，它就仍会把 Prompt 魔力误读成结构分层体感。
+- `2026-04-13` 当前又起了第八个窄批次，只动 `guides/30` 的页首结论句。修改后，这页不再把 `message lineage` 当前门，而是先把 Prompt 效力写成 later consumer 的世界重判退休，再把 `message lineage / prefix / lawful forgetting / continuation qualification` 降回支撑这套退休机制的实现对象。
+- 这一刀的第一性原理同样很窄：guide 层也必须先回答“为什么接手者不必重做世界重判”，否则苏格拉底审读很容易退回“审 lineage / prefix 这些构件是否存在”，而不是在审它们是否真的减少了 later-consumer 的重判成本。
