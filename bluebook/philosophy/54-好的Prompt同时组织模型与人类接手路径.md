@@ -12,7 +12,8 @@
 Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，而是把 later consumer 的拒收权、已排除分支的保留义务与同一工作对象的合法继承一起写进继续接口。
 
 所以这里值钱的也不是“接手路径更顺”，而是 `verify / resume / handoff` 之后，接手者继承的仍是同一份工作对象、同一批仍被排除的分支，以及同一条 `continue-or-reject verdict`。
-更硬一点说，人类接手不是体验优化，而是另一个 lawful consumer；系统必须先规定他看到哪层 projection、可拒收什么、何时必须 `reopen`，而不是沿旧资格继续。
+更硬一点说，人类接手不是体验优化，而是另一个 lawful consumer；系统必须先规定他看到哪层 projection、可拒收什么、何时必须 `reopen`，而不是沿旧资格继续。没有新增 `decision delta` 时，旧判断继续退役，人类也不应只靠 summary 或 display convenience 把它们静默拖回候选集。
+这里也要先压住一个常见误读：sticky prompt、suggestion、session memory、handoff note 都更接近 carrier / projection，而不是 witness 本身；它们能帮 later consumer 更快定位现场，但不能绕过 admissibility gate 直接续租 continue 资格。
 
 ## 2. 为什么这很重要
 
@@ -26,7 +27,7 @@ Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，
 4. 人类是否能用最少反馈把模型重新导回正轨。
 
 如果这些成本不被主动压低，再强的模型也会在长期协作里显得笨重。
-这些成本之所以必须被压低，也不是为了“更顺手”而已，而是为了让 later consumer 不必重读全量 transcript，就能对旧资格做 `continue / reject / reopen` 的正式判断。
+这些成本之所以必须被压低，也不是为了“更顺手”而已，而是为了让 later consumer 不必重读全量 transcript、不必重做 `world-definition / tool-legality / next-action search`，就能对旧资格做 `continue / reject / reopen` 的正式判断。
 
 ## 3. 苏格拉底式追问
 
@@ -61,10 +62,10 @@ Claude Code 的 prompt 真正高级的一层，不是让人类更容易接手，
 还要问：
 
 1. 人类接手时会看见什么。
-2. 人类接手时看到的是哪层 projection，而不是哪份 summary 体感。
+2. 人类接手时看到的是哪层 projection，而不是哪份 summary 体感；如果看到的只是一份 carrier，却没有 witness rebind，人类接手仍然不算合法继承。
 3. 人类如何低成本给出纠偏反馈，同时保留正式 reject 权。
 4. 多执行链之间如何切换而不丢现场，并在必要时明确 `reopen` 而不是偷续旧资格。
 
 ## 5. 一句话总结
 
-Claude Code 的 prompt 之所以强，不只是因为它让模型更会继续，而是因为它让 later consumer 不必重判世界、重搜动作空间，或把已排除路径重新拉回候选集。
+Claude Code 的 prompt 之所以强，不只是因为它让模型更会继续，而是因为它让 later consumer 不必重判世界、重搜动作空间，或把已排除路径与已退役判断重新拉回候选集。

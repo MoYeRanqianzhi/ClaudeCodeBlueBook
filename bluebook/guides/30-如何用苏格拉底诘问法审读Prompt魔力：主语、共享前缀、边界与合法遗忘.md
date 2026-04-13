@@ -42,9 +42,10 @@
 4. `边界`
    - 现在更接近 `dynamic boundary + protocol transcript legality + projection boundary`
 5. `合法遗忘`
-   - 现在更接近 `lawful forgetting + continuation object continuity`
+   - 现在更接近 `lawful forgetting + search-pruning preservation + decision-retirement preservation`
 6. `接手连续性`
-   - 现在更接近 `projection consumer matrix + continuation qualification`
+   - 现在更接近 `later-consumer lawful inheritance + admissibility-tested continuation qualification`
+   - 更准确地说，这里保留旧词只是为了检索；若只有 continuity feeling、belonging 或 carrier，而没有 admissibility-tested witness，就还不算合法继承
 
 所以真正要审的不是一组旧词，而是：
 
@@ -82,13 +83,13 @@
 
 - 这套 prompt 是否已经把 lineage kernel、projection consumer、continuation qualification 与 lawful forgetting 组织成同一条制度链
 
-凡声称“仍是同一世界”，都必须能点名 witness：authority owner、stable prefix ref、`protocol transcript` ref、`continuation object` ref、`continue-or-reject verdict`。没有 witness，就不是继承，只是叙述。
+凡声称“仍是同一世界”，都必须能点名 witness：authority owner、stable prefix ref、`protocol transcript` ref、`continuation object` ref、`continue-or-reject verdict`。没有 witness，就不是继承，只是叙述。更硬一点说，Prompt 审读最终也只在追三件事：`lawful inheritance` 有没有保住同一工作对象，`search-pruning` 有没有保住已排除分支，`decision-retirement` 有没有保住旧判断继续退役。
 
 ## 3. 苏格拉底可执行判定链
 
 执行协议先固定为五步：
 
-0. Gate-0：先写明这次系统试图退休的决策是什么、谁继承这项退休、下一位 consumer 凭什么拒绝重放。
+0. Gate-0：先写明这次系统试图退休的决策是什么、谁继承这项退休、哪一批分支继续保持被排除、以及没有新增 `decision delta` 时哪组旧判断必须继续退役，下一位 consumer 又凭什么拒绝重放。
 
 1. 输入：`compiled request truth`、`witness chain`、consumer matrix、当前 continuation object。
 2. 每个 gate 必须产出 `pass | fail | unknown`。
@@ -119,7 +120,7 @@
 ### 3.4 Gate-4：`same-world witness` 是否可点名
 
 - 输入：`message_lineage_ref / section_registry_ref / stable_prefix_ref / protocol_transcript_ref / continuation_object_ref / continue_qualification_verdict`
-- 通过条件：六项 witness 可被独立验证且互相一致
+- 通过条件：六项 witness 可被独立验证且互相一致，并且能区分哪些只证明 belonging、哪些已经通过 admissibility gate；若对象只证明 belonging 而未过 admissibility，它仍不是 lawful inheritance
 - reject signal：任一 witness 无法点名或互相冲突
 - 失败动作：进入 rollback，禁止用总结 prose 代替 witness
 
@@ -161,21 +162,21 @@
 ### 3.10 Gate-10：lawful forgetting 后是否仍保留 continuation object
 
 - 输入：compact / summary / resume 前后对象对照
-- 通过条件：forgetting 后删掉的字节不改变 `continuation object`、已排除分支与 `continue-or-reject verdict`，且仍可点名 continuation object、lineage ref 与资格
+- 通过条件：forgetting 后删掉的字节不改变 `continuation object`、已排除分支与 `continue-or-reject verdict`，且仍可点名 continuation object、lineage ref 与资格；没有新增 `decision delta` 时，旧判断也继续保持退役，不得因 `compact / summary / resume` 重新进入 candidate set
 - reject signal：只剩“发生过什么”的摘要叙事
 - 失败动作：回退至 forgetting 前版本并重做 compact；若只能压缩 display，而不能保住执行真相，就禁止把这次 compact 记成 lawful forgetting
 
 ### 3.11 Gate-11：handoff 是否无需重读全量 transcript 即可判定继续资格
 
 - 输入：handoff 包、约束清单、next action
-- 通过条件：接手方可直接判断 continuation / reopen / new task
+- 通过条件：接手方可直接判断 continuation / reopen / new task，而不必重做 `world-definition / tool-legality / next-action search`，且没有新增 `decision delta` 时，旧判断与已排除分支继续保持退役
 - reject signal：必须扫长历史才能继续
 - 失败动作：补 continuation qualification card
 
 ### 3.12 Gate-12：旁路流程是否在重绑 witness，而不是静默重造世界
 
 - 输入：`compact / resume / fork / handoff` 的重绑记录
-- 通过条件：旁路只重绑 witness，不新造第二套 truth
+- 通过条件：旁路只重绑 witness，不新造第二套 truth；若旁路只搬运 carrier / summary / display convenience，而无 witness rebind，仍判 fail
 - reject signal：旁路可在无 witness 重绑下继续行动
 - 失败动作：标记 continuation-story-only，拒绝放行
 

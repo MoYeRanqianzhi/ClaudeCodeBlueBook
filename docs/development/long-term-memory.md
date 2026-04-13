@@ -8,6 +8,27 @@
 - 所有结论保持可追溯、可验证、可解释
 
 ## 最新推进
+- 当前批次继续新增一条 102-handoff-matrix-must-bind-owner-obligations-apr13 live 记忆：
+  - `guides/102`、`architecture/84` 与 `api/README` 现在也应直接写死：handoff matrix 不只发目的地，还要约束 owner page 接手后的职责边界；接手后的 owner page 只能消费已锁定的 rung，不得重开 ladder、promotion 或 first-hop
+  - 更稳的默认写法是：`102` 明说 `architecture` 只展开 object-level writer claim / writeback seam / anti-zombie，`api` 只展开 host-facing truth claim-state / consumer subset / promise boundary；`84` 与 `api/README` 则主动声明自己不再重做 sorter
+- 当前批次继续新增一条 governance-checkpoint-law-must-use-receipt-grade-projection-apr13 live 记忆：
+  - `bluebook/philosophy/61`、`10` 与 `userbook/README` 现在也应直接写死：没有新增 `decision delta` 的 `status / usage / reopen tail / summary` 不是 governance checkpoint，只是 `receipt-grade lease-checkpoint projection`
+  - 更稳的默认写法是：治理页里的真正 checkpoint law 一律写成 `same authority lease / new decision delta / cleanup trigger state`；凡读回面不能独立补齐这三件事，就只配回单，不配回判
+- 当前批次继续新增一条 prompt-deep-pages-must-separate-carriers-from-witnesses-apr13 live 记忆：
+  - `bluebook/philosophy/{14,18,21,54}` 与 `guides/30` 现在也应直接写死：summary、memory、handoff prose、session memory 这类对象默认更接近 continuation carrier / belonging carrier，而不是 admissible continuation witness
+  - 更稳的默认写法是：Prompt 深页一律继续区分 `carrier vs witness`、`belonging vs admissibility`，并要求 `lawful forgetting`、handoff 与 resume 都不能逼 later consumer 重做 `world-definition / tool-legality / next-action search`
+- 当前批次继续新增一条 102-must-own-handoff-matrix-after-rung-lock-apr13 live 记忆：
+  - `guides/102` 现在也应直接写死：它不只定义 claim-state rung，还要定义 handoff matrix。只有在 `102` 先锁定这是 object-level claim、host-facing truth claim-state / consumer subset、why question，或纯 artifact gap 之后，`architecture / api / philosophy / navigation` 才配接手
+  - 更稳的默认写法是：`102` 先锁 rung，再分派 owner；owner README 若在 rung 未锁定前就开门，默认按目录契约越位处理
+- 当前批次继续新增一条 governance-why-pages-must-name-retired-repeat-pricing-apr13 live 记忆：
+  - `bluebook/philosophy/61` 现在也应直接写死：安全与省 token 共用同一条治理收费链，不只是在共享 budget，而是在持续退休没有新增 `decision delta` 的重复 repricing / reapproval / requalification
+  - 更稳的默认写法是：`61` 的 lease checkpoint 统一收回 `same authority lease / new decision delta / cleanup trigger state`，并把 `weak readback` 明确降到 `receipt-grade` 尾链，不进入重新定价所需的最小证据集
+- 当前批次继续新增一条 prompt-deep-pages-must-collapse-to-three-owner-laws-apr13 live 记忆：
+  - `bluebook/philosophy/{14,18,21,54}` 与 `guides/30` 现在也应直接写死：Prompt 深页不能再各自用“更稳 / 更聪明 / 更会继续 / 更会接手”分散解释同一件事，而要统一收回 `lawful inheritance / search-pruning / decision-retirement` 三条 owner law
+  - 更稳的默认写法是：Prompt 魔力页负责回答 runtime 替 later consumer 退休了哪些世界重谈、动作重搜与旧判断回流；苏格拉底审读页则把 Gate-0 先写成“哪一批分支继续保持被排除、哪组旧判断在无新增 `decision delta` 时必须继续退役”
+- 当前批次继续新增一条 hierarchy-gates-must-lock-rung-before-owner-entry-apr13 live 记忆：
+  - `bluebook/{architecture/README,api/README,philosophy/README,navigation/README}.md` 现在也应直接写死：`guides/102` 先锁 claim-state rung，再进入 why / object / host-facing truth / artifact gap；如果 rung 还没锁，后续 owner 页都不该偷接
+  - 更稳的默认写法是：`architecture/` 只接 object-level claim，`api/` 只接 host-facing truth claim-state / consumer subset，`philosophy/` 只证明 why 不补 promotion gate，`navigation/` 只在主语与 rung 都已确定后反查下一种 artifact 或最近的 fail-closed seam
 - 当前批次继续新增一条 why-owners-must-name-retired-repricing-and-time-travel-rejudication-apr13 live 记忆：
   - `bluebook/philosophy/{85,86}` 与 `guides/102` 现在也应直接写死：`85` 不只答“扩张为何要先被定价”，还要答 runtime 正在退休哪些无新增 `decision delta` 的重复重定价 / 重批准 / 重资格判断；`86` 不只答“过去为什么不能写坏现在”，还要答内核正在退休哪些过去对象、恢复资产与旧视角的时间旅行式重判；`102` 则明确自己是 `根入口 -> guides/102 -> owner page` 里的唯一 promotion gate
   - 更稳的默认写法是：why-owner 页负责说清系统退休了哪类重判，`102` 负责说清这些主张何时才配升级给 owner page；未过 `102` 之前，owner noun 一律先按 claim-state 读
@@ -4737,3 +4758,17 @@
 - `2026-04-13` Prompt 体验叙事线的最新稳定句法也应继续写死：`philosophy/54` 与 `playbooks/09` 现在不再把 Prompt 价值写成“人类更容易接手 / handoff continuity 更好”，而改写成 later consumer 的合法继承条件更稳。state、summary 与 handoff 只作为载体；真正被继承的是同一工作对象、已排除分支与继续资格判定。
 - `2026-04-13` userbook 控制面 README 的最新稳定边界也应继续写死：`userbook/05/README` 只做 route-only，不再本地复述 `weak readback / continuation consumer / reopen tail evidence / authority lease` 的 owner 解释。README 现在只负责把读者送回 `10`、相邻 `03` 与 `risk/README`，不再把 section README 写成第二套治理说明书。
 - `2026-04-13` 更深的 host-artifact/object 协议页也应继续记住一条 speaking-rights 边界：`api/39` 与 `api/42` 现在不再把共享字段或 rule packet 直接写成“对象真相已经成立”，而是只写成当前公开可复核到的源码锚点/见证。对象层 writer truth 仍留在 object page；artifact/rule 页当前只共享“如何复核到同一 current-truth surface”的公共字段。
+- `2026-04-13` 源码质量线的最新目录契约也应继续写死：`guides/102` 不只是 evidence ladder，更是唯一 promotion gate 与 handoff gate；owner page 只消费这里已经锁定的 rung result，不得重述 canonical ladder、不得补判 promotion、也不得把 provisional claim 偷运成 landed truth。
+- `2026-04-13` `architecture/84` 的最新稳定边界也应继续写死：它只收 promotion-passed object 的 atlas row，不再容纳半填的 provisional object；凡 writer authority 仍未锁定，就继续留在 `102` 的 `writer claim state / unresolved-authority note`，而不是借 atlas row 代行 promotion。
+- `2026-04-13` `api/README` 的最新稳定边界也应继续写死：`api/` 不拥有平行 classifier 权；`contract / registry / promotion / downgrade` 在这里都只配按 `102` 已锁定的 typing 被消费。README 若又开始回答“这条 claim 到底够不够升级”，就应先回 `guides/102`。
+- `2026-04-13` Prompt 高流量页的最新稳定句法也应继续写死：`summary / session memory / handoff prose / sticky prompt / suggestion` 统一只配先写成 continuation carrier / projection，而不是 witness；只有重新回绑 `message lineage / stable prefix / protocol transcript / continuation object / continue-or-reject verdict` 后，才可能通过 admissibility gate。
+- `2026-04-13` Prompt 苏格拉底审读链的最新稳定句法也应继续写死：`guides/30` 的 Gate-4 / Gate-11 / Gate-12 现已明确，只有 belonging 没有 admissibility 不算 lawful inheritance；没有新增 `decision delta` 时旧判断与已排除分支继续退役；旁路若只搬运 carrier 而不重绑 witness，一律按 fail 处理。
+- `2026-04-13` 安全与省 token 的最新稳定句法也应继续写死：`compact / resume / re-entry` 只是 continuation lease checkpoint 的三种入口；`summary / status / usage / memory` 若只提供 receipt-grade carrier，就不配补签 continue，也不配替同一条 `authority lease` 续租。
+- `2026-04-13` 源码质量线的最新可复查化也应继续写死：`guides/102` 现在适合固定成 `promotion verdict box` 语法，至少同时检查 `signer / effect ceiling / local veto cue / first retreat layer`，并只输出 `promotion-passed / provisional claim / gap-candidate note` 三种 verdict。
+- `2026-04-13` `architecture/84` 的 atlas 现在也应继续保留 `evidence status` 维度：即便对象已经进 atlas，表格仍显式写明它依赖的是 `promotion-passed in 102`，避免 skim reader 把对象表再次误读成自带 promotion authority。
+- `2026-04-13` Prompt 线的最新可复查化也应继续写死：`philosophy/21` 与 `guides/30` 现已明确 carrier 不能把已退役判断重新带回 candidate set；`compact / summary / resume` 若让旧判断回流，就直接算违反 lawful forgetting，而不是“摘要质量一般”。
+- `2026-04-13` owner README 的最新残差也应继续写死：`architecture/README` 只按已锁定 object claim 展开 object law，升级本身不发生在这里；`api/README` 只在 `102` 已先 typing 成 `host-facing truth claim-state / consumer subset` 后才入场，若还要先判 family，就说明 owner 页开早了。
+- `2026-04-13` 治理高流量前门的最新残差也应继续写死：`10 / 61 / userbook/README` 里的 `repricing proof / checkpoint / cleanup` 只配当旧简称；真正的硬公式始终是 `same authority lease / new decision delta / cleanup trigger state`。弹窗、`status`、`usage`、继续入口与摘要都只算 route-only 的 `receipt-grade lease-checkpoint projection`，不是治理 checkpoint。
+- `2026-04-13` 源码质量线的下一步稳定模板也应继续写死：`guides/102` 现在适合保留单对象 worked example，优先拿高流量 noun 演示怎样沿 `public artifact ceiling -> contract -> registry -> claim-state -> subset -> hotspot -> gap` 逐级审读，明确 UI 熟悉感不等于 promotion。
+- `2026-04-13` `architecture/84` 的 operator artifact 语义也应继续写死：`CLAUDE.md / hooks / skills / settings / permission schemas` 这类对象先只按 `surface candidate` 入场；若答不出 `signer / effect ceiling / local veto cue / first retreat layer`，就直接退回 `102`，不得借 atlas row 代行 promotion。
+- `2026-04-13` `api/README` 的最新稳定模板也应继续写死：host-facing case matrix 只示范“怎样问”，不代替 `102` 新签 verdict；`projection` 不等于 `signed claim`，`subset admitted` 也不等于 `full truth exported`。

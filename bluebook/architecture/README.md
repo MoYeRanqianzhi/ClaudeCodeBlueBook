@@ -7,7 +7,7 @@
 
 如果只先记架构对象层的一句话，也只记这句：
 
-- 架构层不负责再判梯子，而负责把“四个对象问题”继续展开成对象候选、状态机与 choke point；只有 promotion-passed object 才在这里升级成正式对象并承接 `one writable present`。
+- 架构层不负责再判梯子，而负责把“四个对象问题”继续展开成对象候选、状态机与 choke point；只有 promotion-passed object 才在这里按已锁定的 object claim 展开 `one writable present` 等 object law，升级本身不发生在这里。
 
 这里也只再多记一句：`architecture/` 真正值钱的，不只是把对象链列出来，而是把 later maintainer 的局部可反对性落成可见对象与 seam。这里说的局部可反对性，不是“最后还能看懂”，而是拿不到作者时仍能只凭局部对象与 seam 指出哪一处对象边界在越权。
 
@@ -19,10 +19,10 @@
 - 局部 veto 该先落在哪。
 - 第一退回层先落哪。
 
-如果这四问还答不上，说明你缺的还是对象层，而不是新的目录路线。
+如果这四问还答不上，说明你缺的还是对象层，而不是新的目录路线。若此刻卡住的其实还是“这是不是 promotion-passed object、还是只配停在 `writer claim state / unresolved-authority`”，先回 `../guides/102` 锁定 claim-state rung，再回来读对象层。
 若你已经知道自己在找 `first no / first retreat layer`，却还说不清它落在哪类 seam，上游先回 `../01-源码结构地图.md` 定位 `generation guard / server-head adoption / host truth externalization / release-surface split` 这类 repo-specific locator；对象层不代做 repo grep。更硬一点说，这里的 `first no` 问的不是修复顺序，而是此刻哪一个对象面、哪一类 seam 正在先失去合法写权；若这个主语还没答出，任何 remediation checklist 都还太早。
 
-这里的 `surface` 也不只指 runtime state surface；凡是会改变运行时行为、权限裁决、上下文注入或代理装配的 `operator artifacts`，例如 `CLAUDE.md`、hooks、skills、agent defs 与 permission schemas，也都属于对象层要点名的 `surface`。它们之所以算对象层，不是因为它们更像文档，而是因为 later maintainer 也必须能在这些工件上定位第一条局部 veto。
+这里的 `surface` 也不只指 runtime state surface；凡是会改变运行时行为、权限裁决、上下文注入或代理装配的 `operator artifacts`，例如 `CLAUDE.md`、hooks、skills、agent defs 与 permission schemas，也都属于对象层要点名的 `surface`。但这也仍以后置条件为前提：只有当 `guides/102` 已先把它 typing 成 object-level claim，而不是仍停在 `public artifact ceiling / provisional claim / consumer subset`，它才配进入对象层。它们之所以算对象层，不是因为它们更像文档，而是因为 later maintainer 也必须能在这些工件上定位第一条局部 veto。
 
 ## landing card（对象摘要）
 
@@ -32,7 +32,7 @@
 |---|---|---|---|---|---|
 | `<surface>` | `<what it protects>` | `<who claims write now / who may write after promotion>` | `<where current truth is committed>` | `<which stale write most threatens this surface>` | `<what should trigger a local veto>` | `<where the fallback lands first>` |
 
-这七栏只做对象摘要，不复写 `ceiling / downgrade / unresolved-authority` 之类证据字段；那些 promotion 纪律统一留在 `102`，`landing card` 也不承担验收卡或准入判断。若对象仍未 promotion，就把第三栏明确写成 `writer claim state`，并在卡片旁补 `unresolved-authority note`，而不是预填 landed writer truth。若 `surface` 本身是 operator artifact，也同样必须写清 `writer claim plane`、`local veto cue` 与 `first retreat layer`，否则 later maintainer 拿到的仍只是阅读体感，而不是正式反对路径；答不出退回层的 seam 也还不配被叫作可继承的 `next-refactor entry`。更硬一点说，`first retreat layer` 默认应指向最近的 `fail-closed seam`，也就是 first no 之后先把错误 writer 降回 `no-authority / no-write` 的那一层，而不是下一步修复计划。
+这七栏只做对象摘要，不复写 `ceiling / downgrade / unresolved-authority` 之类证据字段；那些 promotion 纪律统一留在 `102`，`landing card` 也不承担验收卡或准入判断。若对象仍未 promotion，就把第三栏明确写成 `writer claim state`，并在卡片旁补 `unresolved-authority note`，而不是预填 landed writer truth。更稳一点说，claim-state 不应只躲在表外 prose；如果 later consumer 还要靠旁注才看出对象尚未 promotion，这张 card 仍会被误读成 object truth。若 `surface` 本身是 operator artifact，也同样必须写清 `writer claim plane`、`local veto cue` 与 `first retreat layer`，否则 later maintainer 拿到的仍只是阅读体感，而不是正式反对路径；答不出退回层的 seam 也还不配被叫作可继承的 `next-refactor entry`。更硬一点说，`first retreat layer` 默认应指向最近的 `fail-closed seam`，也就是 first no 之后先把错误 writer 降回 `no-authority / no-write` 的那一层，而不是下一步修复计划。
 
 ## 对象专题索引
 
@@ -52,7 +52,7 @@
 - 当前真相 why-proof 由 `../philosophy/86` 负责，源码质量 why-proof 由 `../philosophy/87` 负责；跨专题反查由 `../navigation/README` 负责。
 - 本目录也不负责把 seam type 先翻成 repo path locator；如果你还分不清该先找 `QueryGuard`、`sessionIngress`、`onChangeAppState` 还是 `build.mjs`，先回 `../01-源码结构地图.md`。
 
-更准确地说，`architecture/` 负责把对象链、chokepoint 与 current-truth writeback 说清，但不负责替 `playbooks/` 直接发 verdict，也不替 `philosophy/` 重判为什么必须如此。
+更准确地说，`architecture/` 负责把对象链、chokepoint 与 current-truth writeback 说清，但不负责替 `playbooks/` 直接发 verdict，也不替 `philosophy/` 重判为什么必须如此。若对象专题页还要先判断“这到底是不是 object-level family / promotion-passed object”，也应先退回 `../guides/102`，而不是在 owner 页里补开第二张 gate。
 
 ## 维护约定
 

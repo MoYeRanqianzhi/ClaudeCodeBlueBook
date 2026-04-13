@@ -5,7 +5,7 @@
 1. 为什么仅仅说“安全、成本与体验共用预算器”还不够。
 2. 为什么 Claude Code 真正成熟的地方，在于检查顺序、失败语义分型和自动化撤销路径。
 3. 为什么系统只该在“仍有决策增益”的地方继续花 token。
-4. 为什么继续前必须先证明 `repricing / lease checkpoint / cleanup` 仍成立。
+4. 为什么继续前必须先证明 `same authority lease / new decision delta / cleanup trigger state` 仍成立。
 5. 这对 agent runtime 设计者意味着什么。
 
 ## 0. 本页边界
@@ -22,10 +22,16 @@
 而是：
 
 1. 先找最早的 unpaid expansion。
-2. 再证明 repricing 发生在继续或暴露之前。
+2. 再证明 repricing 发生在继续或暴露之前，并且留下的是同一条 `authority lease` 上新的 `decision delta` 与明确的 `cleanup trigger state`。
 3. 证明不了时，只能立即 reject、cleanup 后重开价，或退回人工。
 4. 自动化必须随时可撤销，而不是单向升级。
-5. 只有仍能支撑 `repricing / cleanup / continue verdict` 的证据才值得被稳定留下。
+5. 只有仍能支撑 `same authority lease / new decision delta / cleanup trigger state` 的证据才值得被稳定留下。
+
+更硬一点说，这套治理成熟度也在持续替 later consumer 退休三类没有新增 `decision delta` 的重判：
+
+1. 重复 repricing
+2. 重复 reapproval
+3. 重复 requalification
 
 从第一性原理看，Claude Code 真正在回答的不是：
 
@@ -38,8 +44,9 @@
 
 更短地说，它在写的不是“安全 feature + 压缩 feature”，而是同一条治理秩序如何对 model-reachable world 的危险扩张与昂贵扩张同时收费。
 因此真正被续租的不是一次动作，而是一条 `authority lease`：世界准入、能力暴露、上下文占位与 continuation，只是这条 lease 在不同节点上的收费与 checkpoint。
-更硬一点说，真正统一的不是一个 budgeter 或角色表，而是同一条诊断环：先找 `earliest unpaid expansion`，再证明它已被 repriced、仍可续租、且旧 authority 已 cleanup；证明不了就不续租。
+更硬一点说，真正统一的不是一个 budgeter 或角色表，而是同一条诊断环：先找 `earliest unpaid expansion`，再证明它仍在同一条 `authority lease` 上、这次真的新增了 `decision delta`、且旧 authority 的 `cleanup trigger` 已明确触发或仍被明确欠账；证明不了就不续租。
 这条线再压一层，其实只剩一句：错误顺序的检查与未结算的继续，本质上是同一种制度错误，都是把本该重定价的 authority 当成默认续期。
+没有新的 `decision delta` 时，重复 repricing / reapproval / requalification 不是更谨慎，而是在把同一条 `authority lease` 重新当成未结算对象。
 
 ## 2. 测试一：是不是定价得太晚
 
@@ -122,12 +129,12 @@ Claude Code 并不追求“检查越多越安全”。
 它更像在走一道更硬的 diagnosis loop：
 
 1. 这次检查还能改写哪个 decision。
-2. 如果症状来自 `continue / compact / resume / re-entry`，旧 lease 有没有 `repricing proof`。
-3. 哪些证据仍必须留下，才能继续支撑 `same scene / still priced`。
+2. 如果症状来自 `continue / compact / resume / re-entry`，旧 lease 有没有 `repricing proof`，以及这次是否真的新增 `decision delta`。
+3. 哪些证据仍必须留下，才能继续支撑 `same authority lease / new decision delta / cleanup trigger state`。
 4. 哪些 transient authority 必须被 cleanup 撤销，不能伪装成同一现场的合法继续。
 
 四问里只要有一问答不上，系统停掉的就不只是“额外检查”，而是一笔不该默认续租的 authority。
-更具体的 `lease checkpoint / repricing proof / cleanup` 对象链统一回 `10`；本页只保留 why：为什么决策增益一旦消失，就不该再免费续租 authority。
+更具体的 `same authority lease / new decision delta / cleanup trigger state` 对象链统一回 `10`；本页只保留 why：为什么决策增益一旦消失，就不该再免费续租 authority。
 
 更硬一点说，未被重新定价的继续会同时延长 authority 与成本在场；它不是便宜，而是把代价推迟到后面。
 
@@ -146,7 +153,7 @@ Claude Code 并不追求“检查越多越安全”。
 - 决策增益是否仍存在
 - 也就是不让未被重新定价的动作、能力、上下文席位与时间续费继续免费扩张
 
-更稳一点说，省 token 追的不是 `fewer total asks`，而是 `fewer zero-delta asks`：凡不会新增 `repricing / deny / cleanup` 决策增益的重复批准、重复分类或重复 compact，都只是在把 `authority lease` 的结算成本往后拖。
+更稳一点说，省 token 追的不是 `fewer total asks`，而是 `fewer zero-delta asks`：凡不会新增 `repricing / deny / cleanup` 决策增益的重复批准、重复分类或重复 compact，都只是在把 `authority lease` 的结算成本往后拖。换句话说，系统真正退休的是没有新增 `decision delta` 的重复 repricing、重复 approval 与重复 qualification。
 更细一点说，重复 ask、无增益 classifier 与默认重试一旦只是在重演同一类批准，它们就不再是“更谨慎的检查”，而是把最早 `unpaid expansion` 转移到了审批面与判断面本身。
 更硬一点说，没有新增 signer ceiling、没有收紧 boundary、也没有推进 cleanup 的 ask，不会因为多过一遍 classifier 或 modal 就更安全；它只是把 `zero-delta ask` 伪装成谨慎。
 
@@ -160,7 +167,7 @@ Claude Code 的很多高级设计都在强调：
 
 这里先只保留抽象判断：凡会同时改写治理、成本与解释一致性的证据，都应被当成制度资产稳定下来；更细的缓存、重放与 break 证据统一回源码锚点与对象页。
 它们不是第五类被收费资源，而是 `externalized truth chain (verdict ledger)` 的 durable form：正因为这些证据稳定，前面那条 `repricing / cleanup / continue verdict` 才可被重放、复核与结算。
-更硬一点说，真正要保留的不是“更长缓存”，而是 later consumer 仍能重放 `repricing / cleanup / continue verdict` 所需的最小证据。
+更硬一点说，真正要保留的不是“更长缓存”，而是 later consumer 仍能重放 `same authority lease / new decision delta / cleanup trigger state` 所需的最小证据；`weak readback` 只配留在 `receipt-grade` 尾链，不进入重新定价所需的最小证据集。
 
 这说明对 Claude Code 来说，真正要被保护的不是“缓存命中率”这个结果，而是：
 
@@ -216,9 +223,9 @@ Claude Code 的很多高级设计都在强调：
 
 - 一旦继续还能改写 authority、价格或清算资格，它就仍是一笔待结算的治理对象。
 - 一旦继续已经不能改写这些东西，它就不该继续占据高价上下文与自动化权限。
-- 所以 `continuity` 也只是一道 lease checkpoint：`same scene? still priced? who settles?`；`compact / resume / re-entry` 只是这道 checkpoint 的三种入口形式。
+- 所以 continuation 也只是一道 lease checkpoint：`same authority lease? new decision delta? cleanup trigger fired or still owed?`；`compact / resume / re-entry` 只是这道 checkpoint 的三种入口形式，summary / status / usage / memory 若只提供 receipt-grade carrier，就不配在这里补签 continue。
 - `compact`
-  - 只能保留仍足以支持 `same scene / repricing proof` 的 stable bytes；否则它只是摘要，不是合法继续。
+  - 只能保留仍足以支持 `same authority lease / new decision delta / cleanup trigger state` 的 stable bytes；否则它只是摘要，不是合法继续。
 - `resume`
   - 只有旧 `verdict ledger` 仍能证明 lease 未被撤销时，才算继续同一现场。
 - `re-entry`
@@ -237,7 +244,7 @@ Claude Code 的很多高级设计都在强调：
 2. 先把失败语义压回 `立即 reject / cleanup 后重开价 / 退回人工` 这三类现场判据。
 3. 让自动化始终可撤销，而不是只可升级。
 4. 用“是否仍有决策增益”来决定是否继续花 token。
-5. 把 `repricing / cleanup / continue verdict` 所需的最小证据当成正式制度资产管理。
+5. 把 `same authority lease / new decision delta / cleanup trigger state` 所需的最小证据当成正式制度资产管理。
 
 ## 9. 一句话总结
 
